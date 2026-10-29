@@ -1,0 +1,206 @@
+{
+  "id": "sc-u11-a",
+  "unit": "u11",
+  "title": "Notes for Mariana",
+  "brief": "You're Tomás. Mariana is writing an article about the old Candelaria, and she wants your memories of the café when you were a boy. Tell her what Sundays used to be like and how the street has changed. She's your childhood friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, estoy escribiendo un artículo sobre la calle y sobre el café. ¿Cómo era todo antes?",
+      "npcEn": "Tomás, I'm writing an article about the street and the café. What was everything like before?",
+      "intent": "Say that when you were a kid you used to come to the café every Sunday.",
+      "accept": [
+        "Cuando era niño venía al café todos los domingos.",
+        "De niño venía aquí todos los domingos.",
+        "Cuando era niño, venía todos los domingos con mi papá."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "venir",
+          "tense": "imperfecto",
+          "label": "used to come: venía"
+        }
+      ],
+      "focus": "c:cuando-era-nino",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Y qué hacía tu abuela los domingos?",
+      "npcEn": "And what did your grandmother use to do on Sundays?",
+      "intent": "Say she used to sing and make buñuelos.",
+      "accept": [
+        "Cantaba y hacía buñuelos.",
+        "Mi abuela cantaba y hacía buñuelos.",
+        "Siempre cantaba, y hacía buñuelos."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "cantar",
+          "tense": "imperfecto",
+          "person": "él/ella",
+          "label": "she used to sing: cantaba"
+        }
+      ],
+      "focus": "g:imperfect-habitual",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Qué bonito! ¿Y por qué dejaste de venir?",
+      "npcEn": "How lovely! And why did you stop coming?",
+      "intent": "Say you stopped coming because your family went to Toronto.",
+      "accept": [
+        "Dejé de venir porque nos fuimos a Toronto.",
+        "Mi familia se fue a Toronto y dejé de venir.",
+        "Dejé de venir a los siete años. Mi familia se fue a Toronto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdej[eé] de venir\\b",
+          "flags": "i",
+          "label": "I stopped coming: dejé de venir"
+        }
+      ],
+      "focus": "p:dejar-de-inf",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Y la calle? ¿Es más bonita ahora o antes?",
+      "npcEn": "And the street? Is it prettier now or before?",
+      "intent": "Say it was quieter before, and now there are more cars.",
+      "accept": [
+        "Antes era más tranquila. Ahora hay más carros.",
+        "Era más tranquila antes. Ahora hay más carros.",
+        "Antes era más tranquila, y ahora hay más carros."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "más tranquila",
+          "label": "quieter: más tranquila (la calle is feminine)"
+        }
+      ],
+      "focus": "g:comparatives",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Tú buscaste el contrato del café? Altamira está comprando todas las casas.",
+      "npcEn": "Did you look for the café's contract? Altamira is buying all the houses.",
+      "intent": "Say yes, you looked for it yesterday, but you didn't find it.",
+      "accept": [
+        "Sí, lo busqué ayer, pero no lo encontré.",
+        "Busqué el contrato ayer, pero no lo encontré.",
+        "Sí, lo busqué ayer. No lo encontré."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "buscar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I looked for: busqué (with qu)"
+        },
+        {
+          "type": "negation",
+          "label": "say you didn't find it: no lo encontré"
+        }
+      ],
+      "focus": "g:preterite-spelling-stem",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Bueno, gracias, Tomás. ¿Un tinto o un jugo? Yo pago.",
+      "npcEn": "OK, thanks, Tomás. A coffee or a juice? I'm paying.",
+      "intent": "Thank her and say you'll go with the coffee.",
+      "accept": [
+        "Gracias. Me quedo con el tinto.",
+        "Me quedo con el tinto, gracias.",
+        "Gracias, Mariana. Me quedo con el tinto."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "me quedo con",
+          "label": "I'll go with: me quedo con"
+        }
+      ],
+      "focus": "c:me-quedo-con",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:como-era",
+    "c:cuando-era-nino",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:me-quedo-con",
+    "c:porque",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:ser-identity",
+    "l:abuela",
+    "l:ahora",
+    "l:antes",
+    "l:aquí",
+    "l:artículo",
+    "l:ayer",
+    "l:año",
+    "l:bonito",
+    "l:bueno",
+    "l:buscar",
+    "l:buñuelo",
+    "l:café",
+    "l:calle",
+    "l:cantar",
+    "l:carro",
+    "l:casa",
+    "l:comprar",
+    "l:contrato",
+    "l:cómo",
+    "l:dejar",
+    "l:domingo",
+    "l:encontrar",
+    "l:escribir",
+    "l:estar",
+    "l:familia",
+    "l:hacer",
+    "l:irse",
+    "l:jugo",
+    "l:niño",
+    "l:pagar",
+    "l:papá",
+    "l:quedarse",
+    "l:qué",
+    "l:ser",
+    "l:siempre",
+    "l:tinto",
+    "l:tranquilo",
+    "l:venir",
+    "p:dejar-de-inf",
+    "p:exclamations-basic",
+    "p:possessives-basic"
+  ]
+}

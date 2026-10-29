@@ -1,0 +1,214 @@
+{
+  "id": "sc-u11-c",
+  "unit": "u11",
+  "title": "The health check",
+  "brief": "You're Tomás. Everyone who works with food in Bogotá needs a health check, so you're at the clinic with a nurse you've never met. Answer her questions about your job, your body and your habits. She's a stranger, so use usted with her.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, señor. Usted trabaja en un café, ¿cierto? ¿Cuándo empezó a trabajar allá?",
+      "npcEn": "Good morning, sir. You work in a café, right? When did you start working there?",
+      "intent": "Say you started working there in March.",
+      "accept": [
+        "Empecé a trabajar en marzo.",
+        "Empecé en marzo.",
+        "En marzo. Empecé a trabajar allá en marzo."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "empezar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I started: empecé (z becomes c)"
+        }
+      ],
+      "focus": "g:preterite-spelling-stem",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Bien. Usted pesa setenta y ocho kilos. ¿Y cuánto mide?",
+      "npcEn": "Good. You weigh seventy eight kilos. And how tall are you?",
+      "intent": "Say you're one metre eighty two.",
+      "accept": [
+        "Mido un metro ochenta y dos.",
+        "Mido uno ochenta y dos.",
+        "Un metro ochenta y dos. Mido un metro ochenta y dos."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "medir",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I'm (so tall): mido"
+        }
+      ],
+      "focus": "p:medir-pesar",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Usted fuma?",
+      "npcEn": "Do you smoke?",
+      "intent": "Say no, you stopped smoking two years ago.",
+      "accept": [
+        "No, dejé de fumar hace dos años.",
+        "Ya no. Dejé de fumar hace dos años.",
+        "No, señora. Dejé de fumar hace dos años."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdej[eé] de fumar\\b",
+          "flags": "i",
+          "label": "I stopped smoking: dejé de fumar"
+        }
+      ],
+      "focus": "p:dejar-de-inf",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Muy bien. ¿Y cómo come? ¿Come mejor ahora que antes?",
+      "npcEn": "Very good. And how do you eat? Do you eat better now than before?",
+      "intent": "Say yes: before you used to eat a lot of meat, and now you eat more fruit.",
+      "accept": [
+        "Sí. Antes comía mucha carne. Ahora, en cambio, como más fruta.",
+        "Sí. Antes comía mucha carne, y ahora como más fruta.",
+        "Antes comía mucha carne. Ahora como más fruta."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "comer",
+          "tense": "imperfecto",
+          "person": "yo",
+          "label": "I used to eat: comía"
+        }
+      ],
+      "focus": "g:imperfect-habitual",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bueno. Aquí dice: La Esquina de Rosa, en La Candelaria. ¡Yo iba allá de niña con mi mamá! ¿Los buñuelos son iguales?",
+      "npcEn": "OK. It says here: La Esquina de Rosa, in La Candelaria. I used to go there as a little girl with my mum! Are the buñuelos the same?",
+      "intent": "Say no, it's not the same: now they're bigger.",
+      "accept": [
+        "No, no es lo mismo. Ahora son más grandes.",
+        "No es lo mismo, señora. Ahora son más grandes.",
+        "No es lo mismo. Ahora los buñuelos son más grandes."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "no es lo mismo",
+            "no es igual",
+            "no son iguales"
+          ],
+          "label": "it's not the same: no es lo mismo"
+        }
+      ],
+      "focus": "c:es-lo-mismo",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Listo, señor. Todo está bien. ¡Y el domingo voy a probar esos buñuelos!",
+      "npcEn": "All done, sir. Everything's fine. And on Sunday I'm going to try those buñuelos!",
+      "intent": "Thank her and say you'll be expecting her on Sunday.",
+      "accept": [
+        "Gracias. La esperamos el domingo.",
+        "Muchas gracias, señora. La esperamos el domingo en el café.",
+        "¡Gracias! Entonces la esperamos el domingo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bla esperamos\\b",
+          "flags": "i",
+          "label": "we'll expect you (usted, a woman): la esperamos"
+        }
+      ],
+      "focus": "g:direct-objects",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:en-cambio",
+    "c:entonces-bueno",
+    "c:es-lo-mismo",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:no-cierto",
+    "c:voy-a",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:verb-infinitive",
+    "l:ahora",
+    "l:allá",
+    "l:antes",
+    "l:aquí",
+    "l:año",
+    "l:bien",
+    "l:bueno",
+    "l:buñuelo",
+    "l:café",
+    "l:cambio",
+    "l:carne",
+    "l:comer",
+    "l:cuándo",
+    "l:cuánto",
+    "l:cómo",
+    "l:decir",
+    "l:dejar",
+    "l:domingo",
+    "l:día",
+    "l:empezar",
+    "l:esperar",
+    "l:estar",
+    "l:fruta",
+    "l:fumar",
+    "l:grande",
+    "l:hacer",
+    "l:igual",
+    "l:ir",
+    "l:kilo",
+    "l:listo",
+    "l:mamá",
+    "l:marzo",
+    "l:medir",
+    "l:mejor",
+    "l:metro",
+    "l:niña",
+    "l:pesar",
+    "l:probarse",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:trabajar",
+    "p:dejar-de-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic"
+  ]
+}
