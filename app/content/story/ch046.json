@@ -1,0 +1,247 @@
+{
+  "id": "ch046",
+  "unit": "u17",
+  "title": "Boleros y salsa",
+  "text": "Los tres papeles amarillos de Hernando eran boletas para el estadio.\nHernando: Santa Fe y Millonarios, el domingo a las cuatro. Sector norte, el sector de Santa Fe.\nTomás: ¿Y la entrada? ¿Cuánto vale?\nHernando: Yo te invito, mijo. Pero hay que ser puntual: a las tres, en la entrada del estadio.\nSimón: ¡Gol! ¡Gol!\nHernando: Simón no va. La última vez gritó gol en un gol de Millonarios.\nEsa tarde entró doña Gloria con otras dos boletas.\nGloria: Tomás, ¿qué plan tiene el viernes? Tengo boletas para un concierto de boleros en el Teatro Colón. La función empieza a las siete.\nTomás: ¿El viernes?\nGloria: Mi esposo y yo íbamos todos los años, pero él ya no sale de noche. Tengo muchas ganas de ir, mijo.\nTomás no sabía rechazar una invitación.\nTomás: Me encantaría, Gloria.\nVale lo miró desde el mostrador.\nVale: Tomás, el viernes a las ocho tienes la rumba con Mariana. Ella ya reservó una mesa en la discoteca.\nTomás: ¿Y ahora qué hago?\nVale: Pues cancelas una cosa. ¿Por qué no rechazas el concierto?\nTomás: No puedo cancelar a Gloria. Y no puedo cancelar la salsa.\nVale: ¿La salsa es una cita?\nTomás: ¿Una cita? No. Es una rumba con una amiga.\nVale: Una rumba con una amiga, en una discoteca, con mesa reservada. Claro.\nVale: ¿Y tú tienes ganas de bailar, o dices que sí a todos?\nTomás: Mira. Si salgo de la función a las ocho y cuarto, llego a la discoteca a las ocho y media.\nHernando: Mijo, en Bogotá el único puntual eres tú.\nVale: Entonces quedamos así: el viernes, boleros y salsa. El domingo, fútbol. ¿Y cuándo duermes?\nSimón: ¡Gol!\nEsa noche llegó un mensaje de Mariana: «Mañana te mando tres clases en el celular. Si no aprendes las vueltas, no hay rumba».",
+  "gloss": [
+    {
+      "es": "boleros",
+      "en": "boleros (slow, romantic Latin American love songs)"
+    },
+    {
+      "es": "mostrador",
+      "en": "counter"
+    },
+    {
+      "es": "Sector norte, el sector de Santa Fe.",
+      "en": "The north stand, Santa Fe's end."
+    },
+    {
+      "es": "Yo te invito, mijo.",
+      "en": "It's on me, son."
+    },
+    {
+      "es": "La última vez gritó gol en un gol de Millonarios.",
+      "en": "Last time he shouted «goal» when Millonarios scored."
+    },
+    {
+      "es": "él ya no sale de noche",
+      "en": "he doesn't go out at night any more"
+    },
+    {
+      "es": "Tomás no sabía rechazar una invitación.",
+      "en": "Tomás didn't know how to turn down an invitation."
+    },
+    {
+      "es": "rumba",
+      "en": "night out, party (Colombian)"
+    },
+    {
+      "es": "con mesa reservada",
+      "en": "with a table booked"
+    },
+    {
+      "es": "el único puntual eres tú",
+      "en": "you're the only one who's on time"
+    },
+    {
+      "es": "Entonces quedamos así",
+      "en": "So that's the plan, then"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why can't Tomás say no to Gloria?",
+      "options": [
+        "She really wants to go, and her husband doesn't go out at night any more",
+        "She paid for his room",
+        "Vale tells him to go",
+        "The concert is free"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Tomás's plan for Friday?",
+      "options": [
+        "Leave the concert at a quarter past eight and get to the salsa by half past",
+        "Skip the concert",
+        "Take Gloria to the salsa",
+        "Cancel Mariana"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale really want to know when she asks about the salsa?",
+      "options": [
+        "Whether it is a date",
+        "How much the tickets cost",
+        "Where the club is",
+        "What Mariana is wearing"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Por qué Simón no va al estadio?",
+      "options": [
+        "Porque gritó gol en un gol de Millonarios",
+        "Porque está enfermo",
+        "Porque no tiene boleta",
+        "Porque va al concierto"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What time does Hernando want everyone at the stadium entrance?",
+      "options": [
+        "At three",
+        "At four",
+        "At eight",
+        "At seven"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where is Gloria's concert?",
+      "options": [
+        "At the Teatro Colón",
+        "At the stadium",
+        "At the club",
+        "At the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando say about being on time in Bogotá?",
+      "options": [
+        "Tomás is the only one who is",
+        "Everybody is",
+        "Only Vale is",
+        "Nobody at the stadium is"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Boleros at seven, salsa at eight, football on Sunday, and Tomás still hasn't learned a single turn. Tomorrow three online salsa classes arrive, and Friday arrives right behind them.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:cuanto-cuesta",
+    "c:entonces-bueno",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hay-que",
+    "c:me-encantaria",
+    "c:oye-mira",
+    "c:puedo",
+    "c:pues",
+    "c:que-plan",
+    "c:tengo",
+    "c:tienes",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:days-el-lunes",
+    "p:me-te-nos-objects",
+    "p:nos-vemos-a-las",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:por-que-no",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:tener-ganas-de",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ],
+  "lexemes": [
+    "l:ahora",
+    "l:amarillo",
+    "l:amiga",
+    "l:aprender",
+    "l:año",
+    "l:bailar",
+    "l:bolero",
+    "l:boleta",
+    "l:cancelar",
+    "l:celular",
+    "l:cita",
+    "l:claro",
+    "l:clase",
+    "l:concierto",
+    "l:cosa",
+    "l:cuándo",
+    "l:cuánto",
+    "l:decir",
+    "l:discoteca",
+    "l:domingo",
+    "l:dormir",
+    "l:empezar",
+    "l:encantar",
+    "l:entrada",
+    "l:entrar",
+    "l:esposo",
+    "l:estadio",
+    "l:función",
+    "l:fútbol",
+    "l:ganas",
+    "l:gol",
+    "l:gritar",
+    "l:hacer",
+    "l:invitación",
+    "l:invitar",
+    "l:ir",
+    "l:llegar",
+    "l:mandar",
+    "l:mañana",
+    "l:mensaje",
+    "l:mesa",
+    "l:mirar",
+    "l:mostrador",
+    "l:noche",
+    "l:norte",
+    "l:papel",
+    "l:plan",
+    "l:poder",
+    "l:puntual",
+    "l:quedar",
+    "l:qué",
+    "l:rechazar",
+    "l:reservar",
+    "l:rumba",
+    "l:saber",
+    "l:salir",
+    "l:salsa",
+    "l:sector",
+    "l:ser",
+    "l:tarde",
+    "l:tener",
+    "l:valer",
+    "l:vez",
+    "l:viernes",
+    "l:vuelta",
+    "l:único"
+  ]
+}
