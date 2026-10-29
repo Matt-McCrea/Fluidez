@@ -1,0 +1,179 @@
+{
+  "id": "ch007",
+  "unit": "u04",
+  "title": "Cuarenta libras de mango",
+  "text": "Sábado, cinco de la mañana. Hay mangos aquí, mangos ahí, mangos allá.\nVale: Tomás... ¿y los mangos?\nTomás: ¡Compré mango! Ayer fui a Paloquemao.\nVale: ¿Cuántas libras?\nTomás: Cuarenta.\nVale: ¿Cuarenta libras de mango? ¿Y la fresa? ¿Y la naranja? ¿Y el aguacate?\nTomás: Yo: «¿A cómo está el mango?». El señor: «A dos mil la libra». Yo: «¿Me hace una rebajita?». El señor: «¿Cuarenta libras? ¡Claro!».\nSimón: ¡Me hace una rebajita! ¡Me hace una rebajita, señor!\nTomás deja una flor con la fotografía de Rosa. Vale no habla.\n7:05. ¡Pum! La cafetera no trabaja.\nTomás: ¿Y ahora? ¿Y los dos millones?\nVale hace tinto en el chocolatero de Rosa, como Rosa.\nHernando llegó a las siete y diez. Tomó el tinto y no habló.\nHernando: Es el tinto de Rosa. Ya llamé a los taxistas.\nA las ocho llegaron cinco taxistas. A las nueve, doce. Tomaron tinto y jugo de mango.\nVale: Tomás, ¿te gusta el mango?\nTomás: Hoy, sí. ¡Me encanta el mango!\nUn taxista paga.\nSimón: ¿Y me hace una rebajita?\nY los doce taxistas: ¿Me hace una rebajita, Tomás?\nHernando: Y mañana llegan las señoras de los taxistas.",
+  "gloss": [
+    {
+      "es": "la cafetera",
+      "en": "the espresso machine"
+    },
+    {
+      "es": "¡Pum!",
+      "en": "Bang!"
+    },
+    {
+      "es": "el chocolatero de Rosa",
+      "en": "Rosa's old metal jug for hot chocolate"
+    },
+    {
+      "es": "Yo: «¿A cómo está el mango?». El señor: «A dos mil la libra».",
+      "en": "Me: \"How much are the mangoes?\" The man: \"Two thousand a pound.\""
+    },
+    {
+      "es": "¿Me hace una rebajita?",
+      "en": "Can you give me a little discount?"
+    },
+    {
+      "es": "La cafetera no trabaja.",
+      "en": "The espresso machine has stopped working."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why is the café full of mangoes?",
+      "options": [
+        "Tomás asked for a discount and ended up buying forty pounds",
+        "Vale ordered them for a cake",
+        "Hernando brought them from his garden",
+        "Simón likes mangoes"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What goes wrong at 7:05?",
+      "options": [
+        "The espresso machine stops working",
+        "Simón escapes",
+        "Hernando is late",
+        "The mangoes go bad"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Hernando go quiet when he tastes the coffee?",
+      "options": [
+        "It tastes like Rosa's",
+        "It's terrible",
+        "It's too hot",
+        "He's angry with Tomás"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué toman los taxistas?",
+      "options": [
+        "Tinto y jugo de mango",
+        "Cerveza",
+        "Agua y leche"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Simón's «¿Me hace una rebajita?» bad news for Tomás?",
+      "options": [
+        "Now all twelve taxi drivers ask for a discount",
+        "It scares the customers away",
+        "Vale gets angry with Simón",
+        "Nobody understands him"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Twelve taxi drivers want a discount, there are still mangoes everywhere, and tomorrow their wives are coming. Nobody has bought a single vegetable.",
+  "rereadQuestions": [
+    {
+      "q": "What does Tomás put next to Rosa's photo?",
+      "options": [
+        "A flower",
+        "A mango",
+        "A coffee",
+        "A letter"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cuántos taxistas llegaron a las ocho?",
+      "options": [
+        "Cinco",
+        "Doce",
+        "Dos"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How much did the man say a pound of mango cost?",
+      "options": [
+        "Two thousand pesos",
+        "Forty thousand pesos",
+        "Five thousand pesos",
+        "Twelve thousand pesos"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:a-como-esta",
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:como-estas",
+    "c:compre-trabaje",
+    "c:fui",
+    "c:hay",
+    "c:me-encanta",
+    "c:me-gusta",
+    "c:me-hace-una-rebajita",
+    "g:diminutives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity"
+  ],
+  "lexemes": [
+    "l:aguacate",
+    "l:ahora",
+    "l:ahí",
+    "l:allá",
+    "l:aquí",
+    "l:ayer",
+    "l:cafetera",
+    "l:claro",
+    "l:comprar",
+    "l:cuánto",
+    "l:cómo",
+    "l:dejar",
+    "l:encantar",
+    "l:estar",
+    "l:flor",
+    "l:fotografía",
+    "l:fresa",
+    "l:gustar",
+    "l:hablar",
+    "l:hacer",
+    "l:hoy",
+    "l:ir",
+    "l:jugo",
+    "l:libra",
+    "l:llamar",
+    "l:llegar",
+    "l:mango",
+    "l:mañana",
+    "l:naranja",
+    "l:pagar",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sábado",
+    "l:taxista",
+    "l:tinto",
+    "l:tomar",
+    "l:trabajar"
+  ]
+}

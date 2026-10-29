@@ -1,0 +1,185 @@
+{
+  "id": "ch008",
+  "unit": "u04",
+  "title": "El señor Mango",
+  "text": "Domingo. Llegaron las señoras de los taxistas.\nDoña Marta: Vale, ¿hay verdura? ¿Papa, tomate, cebolla?\nVale: No hay verdura. Solo mango.\nDoña Marta: ¿Mango? Tomás, vamos a la plaza de mercado.\nEn la plaza de mercado, doña Marta habla de precios.\nDoña Marta: ¿A cómo está el kilo de papa?\nVendedor: A dos mil pesos. Aquí vendo barato, señora.\nDoña Marta: ¿Barato? ¡Qué caro! ¿Y la libra de tomate?\nVendedor: Mil quinientos pesos.\nDoña Marta: ¿Y cuánto cuestan los bananos?\nVendedor: El banano está caro.\nTomás: El precio es bueno. El viernes pasado compré cuarenta libras de mango aquí.\nVendedor: ¡Ah! ¿Usted es el señor Mango?\nDoña Marta: Dos kilos de papa y una libra de cebolla. Barato, ¿no?\nDoña Marta pagó con la plata de Vale. Tomás llevó las bolsas: cinco bolsas.\nDiez de la noche. Vale suma la plata.\nVale: Vendimos trescientos tintos, jugo de mango y papa con tomate y cebolla.\nTomás escribe en la pizarra: $412.000.\nTomás: Gracias por todo, Don Hernando.\nHernando: Gracias por el tinto de Rosa.\nSimón: ¿Qué tal el fin de semana? ¿Qué tal el fin de semana?\nTomás: Veintiocho días. Y mañana, ¿la cafetera?",
+  "gloss": [
+    {
+      "es": "la pizarra",
+      "en": "the chalkboard"
+    },
+    {
+      "es": "la plaza de mercado",
+      "en": "the market hall (what Colombians call a covered food market)"
+    },
+    {
+      "es": "¿Usted es el señor Mango?",
+      "en": "So you're Mr Mango?"
+    },
+    {
+      "es": "Barato, ¿no?",
+      "en": "Cheap, right? (she wants a better price)"
+    },
+    {
+      "es": "la cafetera",
+      "en": "the espresso machine"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does doña Marta take Tomás to the market?",
+      "options": [
+        "The café has no vegetables, only mangoes",
+        "She wants to sell mangoes",
+        "Vale is ill",
+        "Hernando asked her to buy flowers"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is doña Marta's answer when the seller says his prices are cheap?",
+      "options": [
+        "She says they're expensive",
+        "She pays at once",
+        "She leaves the market",
+        "She asks for mangoes"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does the seller call Tomás «el señor Mango»?",
+      "options": [
+        "Tomás bought forty pounds of mango from him on Friday",
+        "Tomás is wearing a yellow shirt",
+        "Tomás sells mangoes",
+        "Simón told him to"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cuánta plata hizo el café el fin de semana?",
+      "options": [
+        "$412.000",
+        "$2.000.000",
+        "$1.500"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Tomás worried about at the end?",
+      "options": [
+        "Whether the espresso machine will work tomorrow",
+        "Whether doña Marta will come back",
+        "Simón's health",
+        "The price of bananas"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Monday morning: twenty-eight days left, $1.588.000 still to make, and the espresso machine is still dead. Then Vale's phone rings, and it's Medellín.",
+  "rereadQuestions": [
+    {
+      "q": "¿A cómo está el kilo de papa?",
+      "options": [
+        "A dos mil pesos",
+        "A mil quinientos pesos",
+        "A cuarenta mil pesos"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Whose money does doña Marta pay with?",
+      "options": [
+        "Vale's",
+        "Her own",
+        "Tomás's",
+        "Hernando's"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many bags does Tomás carry?",
+      "options": [
+        "Five",
+        "Two",
+        "Twelve",
+        "Forty"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:a-como-esta",
+    "c:como-estas",
+    "c:compre-trabaje",
+    "c:hay",
+    "c:no-cierto",
+    "c:que-tal-el-fin",
+    "c:vamos-a",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "p:exclamations-basic",
+    "p:gracias-por"
+  ],
+  "lexemes": [
+    "l:aquí",
+    "l:banano",
+    "l:barato",
+    "l:bolsa",
+    "l:bueno",
+    "l:cafetera",
+    "l:caro",
+    "l:cebolla",
+    "l:comprar",
+    "l:costar",
+    "l:cuánto",
+    "l:cómo",
+    "l:domingo",
+    "l:día",
+    "l:escribir",
+    "l:estar",
+    "l:fin",
+    "l:hablar",
+    "l:ir",
+    "l:jugo",
+    "l:kilo",
+    "l:libra",
+    "l:llegar",
+    "l:llevar",
+    "l:mango",
+    "l:mañana",
+    "l:mercado",
+    "l:noche",
+    "l:pagar",
+    "l:papa",
+    "l:pasado",
+    "l:peso",
+    "l:pizarra",
+    "l:plata",
+    "l:plaza",
+    "l:precio",
+    "l:qué",
+    "l:semana",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sumar",
+    "l:taxista",
+    "l:tinto",
+    "l:tomate",
+    "l:vendedor",
+    "l:vender",
+    "l:verdura",
+    "l:viernes"
+  ]
+}
