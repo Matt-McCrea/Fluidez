@@ -5,18 +5,18 @@
   "brief": "You're Tomás. Mariana has heard about the night the power went out and wants the whole story for her article. Tell her what happened and what you think. She's your friend, so use tú.",
   "turns": [
     {
-      "npc": "Tomás, Gloria me contó todo. ¿Un hombre entró al café? ¿Es verdad?",
-      "npcEn": "Tomás, Gloria told me everything. A man got into the café? Is it true?",
-      "intent": "Say no, it isn't true: he didn't get in.",
+      "npc": "Tomás, es para mi artículo. Gloria dice que el hombre entró a las doce. ¿Es verdad?",
+      "npcEn": "Tomás, it's for my article. Gloria says the man got in at twelve. Is that true?",
+      "intent": "Say no, it isn't true: he got in at nine.",
       "accept": [
-        "No, no es verdad. No entró.",
-        "No es verdad, Mariana. El hombre no entró.",
-        "No, no entró al café."
+        "No, no es verdad. Entró a las nueve.",
+        "No es verdad, Mariana. El hombre entró a las nueve.",
+        "No, entró a las nueve, no a las doce."
       ],
       "require": [
         {
           "type": "negation",
-          "label": "he didn't get in: no entró"
+          "label": "it isn't true: no es verdad"
         },
         {
           "type": "verbForm",
@@ -31,13 +31,13 @@
       "next": "t2"
     },
     {
-      "npc": "¿No? Entonces, ¿qué estaba haciendo?",
-      "npcEn": "No? So what was he doing?",
-      "intent": "Say he was taking bricks out of the kitchen wall.",
+      "npc": "¿No? ¿Y qué estaba haciendo en el café?",
+      "npcEn": "No? And what was he doing in the café?",
+      "intent": "Say he was taking bricks out.",
       "accept": [
-        "Estaba sacando ladrillos de la pared de la cocina.",
-        "Estaba sacando ladrillos de la pared.",
-        "El hombre estaba sacando ladrillos de la pared de la cocina."
+        "Estaba sacando ladrillos.",
+        "El hombre estaba sacando ladrillos.",
+        "Estaba sacando unos ladrillos."
       ],
       "require": [
         {
@@ -145,7 +145,6 @@
     "c:bien-y-tu",
     "c:creo-que",
     "c:en-serio",
-    "c:entonces-bueno",
     "c:no-cierto",
     "c:pues",
     "c:que-mas",
@@ -166,13 +165,12 @@
     "g:stem-e-i",
     "g:that-clauses",
     "l:ahora",
+    "l:artículo",
     "l:asustado",
     "l:bien",
     "l:buscar",
     "l:café",
     "l:calle",
-    "l:cocina",
-    "l:contar",
     "l:creer",
     "l:cuaderno",
     "l:decir",
@@ -183,7 +181,6 @@
     "l:ladrillo",
     "l:miedo",
     "l:noche",
-    "l:pared",
     "l:policía",
     "l:qué",
     "l:saber",
@@ -196,11 +193,13 @@
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
     "p:demonstratives-basic",
-    "p:me-te-nos-objects",
     "p:no-es-x-es-y",
+    "p:para-inf",
     "p:personal-a",
+    "p:possessives-basic",
     "p:prep-questions-basic",
     "p:saber-conocer",
+    "p:telling-time",
     "p:tener-hambre"
   ]
 }

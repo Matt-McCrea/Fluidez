@@ -11,7 +11,8 @@
       "accept": [
         "Sí, llamé a las diez de la noche.",
         "Sí, señor. Llamé a las diez.",
-        "Llamé a la policía a las diez de la noche."
+        "Llamé a la policía a las diez de la noche.",
+        "Sí, llamé a las diez."
       ],
       "require": [
         {
@@ -98,8 +99,8 @@
       "next": "t5"
     },
     {
-      "npc": "¿Una gorra como esta? Estaba en la calle, delante del café. Es una gorra de Altamira.",
-      "npcEn": "A cap like this one? It was in the street, in front of the café. It's an Altamira cap.",
+      "npc": "¿Una gorra como esta? Estaba en la cocina del café. Es una gorra de Altamira.",
+      "npcEn": "A cap like this one? It was in the café kitchen. It's an Altamira cap.",
       "intent": "Say you think the man is from Altamira.",
       "accept": [
         "Creo que el hombre es de Altamira.",
@@ -171,14 +172,12 @@
     "l:bien",
     "l:bueno",
     "l:café",
-    "l:calle",
     "l:cara",
     "l:cerrar",
     "l:cocina",
     "l:creer",
     "l:cuenta",
     "l:cómo",
-    "l:delante",
     "l:día",
     "l:dónde",
     "l:estar",
@@ -200,13 +199,11 @@
     "l:ver",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
-    "p:cerca-de",
     "p:cuando-basic",
     "p:demonstratives-basic",
     "p:es-tiene-lleva",
     "p:personal-a",
     "p:por-la-manana",
-    "p:position-de",
     "p:possessives-basic",
     "p:question-word-order",
     "p:telling-time"

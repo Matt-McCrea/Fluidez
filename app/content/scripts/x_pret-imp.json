@@ -32,13 +32,13 @@
     {
       "prompt": "Pick and type the whole sentence: *De niño, ___ fútbol todos los días.* (*jugué* or *jugaba*) As a boy, I played football every day.",
       "answer": "De niño, jugaba fútbol todos los días.",
-      "accept": ["De niño jugaba fútbol todos los días."],
+      "accept": ["De niño jugaba fútbol todos los días.", "De niño, jugaba al fútbol todos los días."],
       "why": "Every day as a boy is a habit, so *jugaba*."
     },
     {
       "prompt": "Pick and type the whole sentence: *Ayer ___ fútbol con Tomás.* (*jugué* or *jugaba*) Yesterday I played football with Tomás.",
       "answer": "Ayer jugué fútbol con Tomás.",
-      "accept": [],
+      "accept": ["Ayer jugué al fútbol con Tomás."],
       "why": "One game, yesterday: the event past *jugué*."
     },
     {
@@ -50,13 +50,13 @@
     {
       "prompt": "We used to go to the beach every year.",
       "answer": "Íbamos a la playa todos los años.",
-      "accept": ["Todos los años íbamos a la playa."],
+      "accept": ["Todos los años íbamos a la playa.", "Íbamos a la playa cada año.", "Cada año íbamos a la playa."],
       "why": "Used to, every year: the describing past *íbamos*."
     },
     {
       "prompt": "Last night it rained a lot.",
       "answer": "Anoche llovió mucho.",
-      "accept": [],
+      "accept": ["Llovió mucho anoche."],
       "why": "*Anoche* wraps it up as one finished night: *llovió*."
     },
     {
@@ -84,9 +84,9 @@
       "why": "Every year as a child is a habit, so the describing past *iba*."
     },
     {
-      "wrong": "Llovió cuando llegué.",
-      "right": "Llovía cuando llegué.",
-      "why": "The rain had already started when you got there, so it's the scene: *llovía*."
+      "wrong": "Antes vivió en Toronto.",
+      "right": "Antes vivía en Toronto.",
+      "why": "*Antes*, back then, paints how life used to be, so the describing past: *vivía*."
     }
   ],
   "personal": "Write one thing you used to do as a child (*-aba* or *-ía*) and one thing you did last weekend (*-é* or *-í*)."

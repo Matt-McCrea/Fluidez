@@ -43,7 +43,7 @@
   {
     "id": "w-u12-02",
     "unit": "u12",
-    "prompt": "Vale calls you while you are working, but you don't answer. Text her two short sentences, someone your age: what you were doing when she called, and how you felt.",
+    "prompt": "Vale called while you were working, and you didn't answer. Text her two short sentences (she's your age, so tú): what you were doing when she called, and how you felt.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -85,7 +85,7 @@
   {
     "id": "w-u12-03",
     "unit": "u12",
-    "prompt": "Your older neighbour, whom you call usted, asks what you were doing when the power went out. Answer her in two short sentences.",
+    "prompt": "Your older neighbour, whom you call usted, saw you running down the street at seven this morning with a tinto in your hand. Explain in two short sentences what you were doing and why.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -110,23 +110,26 @@
         "label": "past, not present"
       }
     ],
-    "model": "Estaba leyendo en mi apartamento cuando se fue la luz. Y no tenía celular.",
+    "model": "Estaba corriendo detrás del bus. Era muy tarde y tenía una reunión.",
     "focus": "g:imperfect-progressive",
     "requires": [
+      "c:era",
       "g:gender-articles",
       "g:imperfect-progressive",
       "g:imperfect-states",
-      "g:pret-vs-imperfect",
-      "g:preterite-ser-ir-hacer",
-      "l:apartamento",
-      "l:celular",
+      "g:ser-identity",
+      "l:bus",
+      "l:correr",
+      "l:detrás",
       "l:estar",
-      "l:irse",
-      "l:leer",
-      "l:luz",
+      "l:reunión",
+      "l:ser",
+      "l:tarde",
       "l:tener",
-      "p:cuando-basic",
-      "p:possessives-basic"
+      "p:cerca-de",
+      "p:es-de-noche-tarde",
+      "p:position-de",
+      "p:quantifiers-basic"
     ]
   },
   {
@@ -151,12 +154,12 @@
         "word": "Mariana"
       }
     ],
-    "model": "Creo que mañana va a llover. Mariana dice que hace mucho frío.",
+    "model": "Creo que mañana va a llover. Mariana dice que va a hacer mucho frío.",
     "focus": "g:that-clauses",
     "requires": [
       "c:creo-que",
+      "c:que-va",
       "g:ir-a-plans",
-      "g:present-er-ir",
       "g:stem-e-i",
       "g:that-clauses",
       "l:creer",
@@ -220,13 +223,13 @@
   {
     "id": "w-u12-06",
     "unit": "u12",
-    "prompt": "The man came back to the back of the café again. Text Vale in two short sentences, someone your age, that it happened again and that you won't do something again.",
+    "prompt": "Last night you heard the noise at the back of the café again. Text Vale two short sentences (she's your age, so tú): say it happened again, and name one thing you will never do again.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\bvolv[a-zóé]* a [a-zóé]+(ar|er|ir)\\b",
+        "pattern": "\\b(volv|vuelv)[a-záéíóú]* a [a-záéíóú]+(ar|er|ir)\\b",
         "label": "use volver a + infinitive for again"
       },
       {
@@ -252,7 +255,7 @@
   {
     "id": "w-u12-07",
     "unit": "u12",
-    "prompt": "Mariana is in Medellín and asks what Bogotá is like today. Text her two short sentences about the weather, someone your age.",
+    "prompt": "Mariana is in Medellín and asks what Bogotá is like today. Text her two short sentences about the weather (she's your age, so tú).",
     "minWords": 6,
     "maxWords": 30,
     "constraints": [
@@ -368,7 +371,7 @@
   {
     "id": "w-u12-10",
     "unit": "u12",
-    "prompt": "You tell Vale about the night of the noise. In two short sentences, say what you knew and what you believed was happening, someone your age.",
+    "prompt": "You tell Vale (she's your age, so tú) about the night of the noise. In two short sentences, say what you knew and what you thought was going on.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -387,19 +390,23 @@
         "n": 2
       }
     ],
-    "model": "Sabía que Vale estaba en el café. Creía que Mariana no venía.",
+    "model": "Sabía que alguien estaba en la cocina. Creía que era un cliente.",
     "focus": "g:that-clauses",
     "requires": [
+      "c:era",
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:imperfect-states",
+      "g:ser-identity",
       "g:that-clauses",
-      "l:café",
+      "l:cliente",
+      "l:cocina",
       "l:creer",
       "l:estar",
       "l:saber",
-      "l:venir",
+      "l:ser",
+      "p:indefinites-basic",
       "p:saber-conocer"
     ]
   },
@@ -445,7 +452,7 @@
   {
     "id": "w-u12-12",
     "unit": "u12",
-    "prompt": "Vale tells you that Simón talked to the stranger last night. Text her back, someone your age: show surprise, ask what happened, and say thank goodness.",
+    "prompt": "Vale tells you that Simón talked to the stranger last night. Text her back (she's your age, so tú): show surprise, ask what happened, and say thank goodness.",
     "minWords": 6,
     "maxWords": 30,
     "constraints": [
@@ -525,7 +532,7 @@
   {
     "id": "w-u12-14",
     "unit": "u12",
-    "prompt": "Mariana asks how you felt when you heard the noise. Text her two short sentences, someone your age: how you felt, and what was going on.",
+    "prompt": "Mariana asks how you felt when you heard the noise. Text her two short sentences (she's your age, so tú): how you felt, and what was going on.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [

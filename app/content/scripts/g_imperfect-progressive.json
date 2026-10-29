@@ -64,7 +64,7 @@
       "why": "Only *estar* moves: *estoy* becomes *estaba*. *Esperando* stays."
     },
     {
-      "prompt": "Make it about they: *Estaba durmiendo cuando se fue la luz.*",
+      "prompt": "Change I to they: *Estaba durmiendo cuando se fue la luz.*",
       "answer": "Estaban durmiendo cuando se fue la luz.",
       "accept": ["Ellos estaban durmiendo cuando se fue la luz."],
       "why": "They were is *estaban*; the power cut stays the same."
@@ -82,9 +82,9 @@
       "why": "The interruption is a single moment, so it takes the event past: *sonó*."
     },
     {
-      "wrong": "Fui cocinando cuando sonó el teléfono.",
+      "wrong": "Era cocinando cuando sonó el teléfono.",
       "right": "Estaba cocinando cuando sonó el teléfono.",
-      "why": "This was is *estar*, in the describing past: *estaba*."
+      "why": "The was in was cooking is always *estar*, never *ser*: *estaba cocinando*."
     }
   ],
   "personal": "Think about yesterday at eight in the evening. Write what you were doing (*Estaba ...ando*) and something that happened while you were doing it."

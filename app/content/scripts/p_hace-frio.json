@@ -47,7 +47,7 @@
     {
       "prompt": "Ask a friend: What's the weather like in Toronto?",
       "answer": "¿Qué tiempo hace en Toronto?",
-      "accept": ["¿Cómo está el clima en Toronto?"],
+      "accept": ["¿Cómo está el clima en Toronto?", "¿Cómo está el tiempo en Toronto?"],
       "why": "Spanish asks what weather it makes: *¿qué tiempo hace?*"
     },
     {
@@ -65,7 +65,7 @@
     {
       "prompt": "Make it negative: *Hoy hace calor.*",
       "answer": "Hoy no hace calor.",
-      "accept": [],
+      "accept": ["No hace calor hoy."],
       "why": "*No* goes right before *hace*."
     }
   ],

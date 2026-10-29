@@ -98,8 +98,8 @@
       "next": "t5"
     },
     {
-      "npc": "Bien. Y otra cosa. ¿Por qué Simón gritaba a la orden toda la noche?",
-      "npcEn": "Good. And another thing. Why was Simón shouting \"a la orden\" all night?",
+      "npc": "Bien. Y otra cosa. ¿Por qué Simón gritaba «¡A la orden!» toda la noche?",
+      "npcEn": "Good. And another thing. Why was Simón shouting \"¡A la orden!\" all night?",
       "intent": "Say Rosa always used to say that to the customers.",
       "accept": [
         "Rosa siempre decía eso a los clientes.",
@@ -213,7 +213,6 @@
     "l:vez",
     "l:volver",
     "p:demonstratives-basic",
-    "p:el-orden-la-orden",
     "p:es-de-noche-tarde",
     "p:frequency-scale",
     "p:ordinal-floor",

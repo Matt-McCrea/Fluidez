@@ -12,7 +12,7 @@
     { "es": "Eran las once y no había nadie en la calle.", "en": "It was eleven o'clock and there was nobody in the street." },
     { "es": "¿Dónde estabas cuando se fue la luz?", "en": "Where were you when the power went out? (to a friend)" },
     { "es": "Abrí la puerta y no había nadie.", "en": "I opened the door and there was nobody there." },
-    { "es": "Tomás tenía diez años cuando se fue a Toronto.", "en": "Tomás was ten when he left for Toronto." },
+    { "es": "Tomás tenía siete años cuando se fue a Toronto.", "en": "Tomás was seven when he left for Toronto." },
     { "es": "No fui a la fiesta porque estaba enferma.", "en": "I didn't go to the party because I was sick. (a woman speaking)" }
   ],
   "rule": "A story has two layers.\n\nThe scene answers what was it like, or what was going on: the time, the weather, where people were, how they felt, how old they were. That's the describing past you know: *era*, *estaba*, *tenía*, *había*, *llovía*.\n\nThe events answer and then what happened? Each one moves the story forward. That's the plain past: *llegué*, *sonó*, *abrí*, *se fue la luz*.\n\nTogether, the scene is the stage and the events walk onto it: *Llovía cuando llegué*, it was raining when I arrived.\n\nA quick test: try putting and then in front. And then the phone rang works, so *sonó*. And then it was late sounds odd, so *era tarde*.\n\nEnglish uses was and -ed for both layers. Spanish makes you pick.",
@@ -24,7 +24,7 @@
     { "es": "De repente se fue la luz.", "options": ["An event: what happened next", "The scene: what it was like"], "answer": 0 },
     { "es": "Llovía cuando llegué.", "options": ["It rained, and then I arrived.", "It was raining when I arrived."], "answer": 1 },
     { "es": "Estaba en la cocina cuando se fue la luz.", "options": ["I was in the kitchen when the power went out.", "I went to the kitchen when the power went out."], "answer": 0 },
-    { "es": "Tomás tenía diez años cuando se fue a Toronto.", "options": ["Tomás turned ten when he left for Toronto.", "Tomás was ten when he left for Toronto."], "answer": 1 },
+    { "es": "Tomás tenía siete años cuando se fue a Toronto.", "options": ["Tomás turned seven when he left for Toronto.", "Tomás was seven when he left for Toronto."], "answer": 1 },
     { "es": "Cuando llegué, Vale estaba cansada.", "options": ["When I arrived, Vale was tired.", "When I arrived, Vale got tired.", "When I arrived, Vale is tired."], "answer": 0 },
     { "es": "Eran las diez cuando sonó el teléfono.", "options": ["The phone was ringing at ten.", "It's ten and the phone is ringing.", "It was ten o'clock when the phone rang."], "answer": 2 }
   ],
@@ -62,7 +62,7 @@
     {
       "prompt": "I opened the door and there was nobody there.",
       "answer": "Abrí la puerta y no había nadie.",
-      "accept": ["Abrí la puerta y no había nadie ahí."],
+      "accept": ["Abrí la puerta y no había nadie ahí.", "Abrí la puerta y no había nadie allí."],
       "why": "Opening the door is an event, *abrí*; the empty doorway is the scene, *había*."
     },
     {
@@ -90,8 +90,8 @@
       "why": "*De repente* means something happened, so use the event past *se fue*."
     },
     {
-      "wrong": "Tomás tuvo diez años cuando se fue a Toronto.",
-      "right": "Tomás tenía diez años cuando se fue a Toronto.",
+      "wrong": "Tomás tuvo siete años cuando se fue a Toronto.",
+      "right": "Tomás tenía siete años cuando se fue a Toronto.",
       "why": "Age in a story is part of the scene: *tenía*."
     },
     {

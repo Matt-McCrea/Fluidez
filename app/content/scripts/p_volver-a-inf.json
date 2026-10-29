@@ -13,7 +13,7 @@
     { "es": "Nunca volvió a llamar.", "en": "He never called again." },
     { "es": "¿Vas a volver a llamar?", "en": "Are you going to call again? (to a friend)" }
   ],
-  "rule": "English adds again at the end. Spanish often puts *volver a* in front: *volvió a llamar*, he called again.\n\nOnly *volver* changes: *vuelvo*, *vuelves*, *vuelve*, *volvemos*, *vuelven*; in the past *volví*, *volviste*, *volvió*, *volvimos*, *volvieron*. The second verb stays plain.\n\nKeep the *a*. Without a verb after it, *volver* just means to come back: *Volvió al café*, she came back to the café.\n\n*Nunca volvió a llamar* is never again. *Otra vez* works too, but *volver a* sounds more natural.",
+  "rule": "English adds again at the end. Spanish often puts *volver a* in front: *volvió a llamar*, he called again.\n\nOnly *volver* changes: *vuelvo*, *vuelves*, *vuelve*, *volvemos*, *vuelven*; in the past *volví*, *volviste*, *volvió*, *volvimos*, *volvieron*. The second verb stays plain.\n\nKeep the *a*. Without a verb after it, *volver* just means to come back: *Volvió al café*, she came back to the café.\n\n*Nunca volvió a llamar* is never again. *Otra vez* works too; *volver a* is the one you hear in every good story.",
   "smallPrint": "Teachers file *volver a* plus an infinitive with the verbal periphrases, alongside *dejar de* and *empezar a*.",
   "readAndPick": [
     { "es": "Volvió a llamar.", "options": ["He called again.", "He came back."], "answer": 0 },
@@ -53,7 +53,7 @@
     {
       "prompt": "Ask a friend: Are you going to call again?",
       "answer": "¿Vas a volver a llamar?",
-      "accept": ["¿Vas a volver a llamar a Vale?"],
+      "accept": [],
       "why": "*Vas a* plus *volver a llamar*: after each *a*, the verb stays plain."
     },
     {
