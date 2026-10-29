@@ -1,0 +1,43 @@
+{
+  "node": "p:unos-approx",
+  "hook": {
+    "line": "Half the numbers in real life are guesses: how old the neighbour is, what the rent costs, how many people came. Spanish turns any number into a guess with one small word in front.",
+    "es": "El arriendo cuesta unos quinientos mil pesos.",
+    "en": "The rent costs about five hundred thousand pesos."
+  },
+  "examples": [
+    { "es": "Había unas veinte personas.", "en": "There were about twenty people." },
+    { "es": "Cuesta unos diez mil pesos.", "en": "It costs about ten thousand pesos." },
+    { "es": "El vecino tiene unos sesenta años.", "en": "The neighbour is about sixty." },
+    { "es": "El café tiene unas diez mesas.", "en": "The café has about ten tables." },
+    { "es": "Vale llegó hace unos veinte minutos.", "en": "Vale arrived about twenty minutes ago." },
+    { "es": "Vivo en Bogotá hace unos tres años.", "en": "I've lived in Bogotá for about three years." }
+  ],
+  "rule": "Put *unos* or *unas* in front of a number and it becomes \"about\":\n\n*veinte personas* = twenty people\n*unas veinte personas* = about twenty people\n\nIt matches the thing you're counting: *unos* for masculine (*unos diez mil pesos*, *unos sesenta años*), *unas* for feminine (*unas veinte personas*, *unas diez mesas*).\n\nEnglish says \"about\" or \"roughly\". Spanish uses the same little word as \"some\" (*unos amigos*), and the number tells you it's a guess. *Más o menos* works too.",
+  "smallPrint": "Teachers call this the approximate use of the indefinite article *unos, unas*.",
+  "readAndPick": [
+    { "es": "Hay unas veinte personas.", "options": ["There are exactly twenty people.", "There are about twenty people."], "answer": 1 },
+    { "es": "Hay veinte personas.", "options": ["There are twenty people.", "There are about twenty people."], "answer": 0 },
+    { "es": "Tengo unos amigos en Cali.", "options": ["I have about ten friends in Cali.", "I have some friends in Cali.", "I have one friend in Cali."], "answer": 1 },
+    { "es": "Tengo unos diez amigos en Cali.", "options": ["I have about ten friends in Cali.", "I have some friends in Cali."], "answer": 0 },
+    { "es": "Gloria tiene unos cincuenta años.", "options": ["Gloria is fifty.", "Gloria has fifty years left.", "Gloria is about fifty."], "answer": 2 },
+    { "es": "Cuesta unos cinco mil pesos.", "options": ["It costs about five thousand pesos.", "It costs five thousand pesos."], "answer": 0 },
+    { "es": "Hay doce sillas.", "options": ["There are about twelve chairs.", "There are twelve chairs."], "answer": 1 },
+    { "es": "Trabajé unas diez horas.", "options": ["I worked ten hours.", "I worked about ten hours.", "I worked for some hours."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *unos* or *unas*: Hay ___ treinta personas.", "answer": "Hay unas treinta personas.", "accept": [], "why": "*Personas* is feminine, so *unas*." },
+    { "prompt": "Choose *unos* or *unas*: Cuesta ___ cinco mil pesos.", "answer": "Cuesta unos cinco mil pesos.", "accept": [], "why": "*Pesos* is masculine, so *unos*." },
+    { "prompt": "Say: It costs about ten thousand pesos.", "answer": "Cuesta unos diez mil pesos.", "accept": ["Cuesta más o menos diez mil pesos."], "why": "About ten thousand pesos is *unos diez mil pesos*." },
+    { "prompt": "Say: She's about forty.", "answer": "Tiene unos cuarenta años.", "accept": [], "why": "Age uses *tener*, and *unos* goes before the number: *unos cuarenta años*." },
+    { "prompt": "Say: There are about fifteen tables.", "answer": "Hay unas quince mesas.", "accept": [], "why": "*Mesas* is feminine, so *unas quince mesas*." },
+    { "prompt": "Make it a guess: Hay doce sillas.", "answer": "Hay unas doce sillas.", "accept": [], "why": "Add *unas* before the number and it means about twelve." },
+    { "prompt": "Say: Hernando arrived about ten minutes ago.", "answer": "Hernando llegó hace unos diez minutos.", "accept": [], "why": "*Minutos* is masculine: *hace unos diez minutos*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Hay unos veinte personas.", "right": "Hay unas veinte personas.", "why": "Almost. *Unos* matches the thing you count, and *personas* is feminine: *unas*." },
+    { "wrong": "Cuesta acerca de diez mil pesos.", "right": "Cuesta unos diez mil pesos.", "why": "*Acerca de* means about in the sense of a topic. For a rough number, use *unos* or *más o menos*." },
+    { "wrong": "Es unos sesenta años.", "right": "Tiene unos sesenta años.", "why": "Age always goes with *tener*, guess or no guess." }
+  ],
+  "personal": "Make three honest guesses with *unos* or *unas*: how many people live on your street, what your coffee costs, and how old someone you know is."
+}

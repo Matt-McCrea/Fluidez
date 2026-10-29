@@ -1,0 +1,43 @@
+{
+  "node": "p:poco-un-poco",
+  "hook": {
+    "line": "When someone asks if you speak Spanish, the right answer is modest but positive. One tiny word decides whether you sound modest or gloomy: *un*.",
+    "es": "Hablo un poco de español.",
+    "en": "I speak a little Spanish."
+  },
+  "examples": [
+    { "es": "Hablo un poco de español.", "en": "I speak a little Spanish." },
+    { "es": "Duermo poco.", "en": "I don't sleep much." },
+    { "es": "Estudié poco para el examen.", "en": "I didn't study much for the exam." },
+    { "es": "Estoy un poco cansada.", "en": "I'm a little tired." },
+    { "es": "Hernando habla poco.", "en": "Hernando doesn't talk much." },
+    { "es": "¿Me da un poco de agua?", "en": "Could I have a little water?" }
+  ],
+  "rule": "*Un poco* = a little. It's neutral or positive: there is some.\n*Poco* = not much. It's the glass half empty: less than you'd want.\n\n*Hablo un poco de español* (I can get by)\n*Hablo poco español* (sorry, not much)\n\nWith a thing, *un poco* needs *de*: *un poco de agua*, *un poco de café*. It never changes to *un poca*.\nPlain *poco* matches the thing, like *mucho*: *poca gente*, *pocos clientes*.\n\nEnglish does the same with \"a little\" and \"little\", but in Spanish you hear the difference every day.",
+  "smallPrint": "Teachers call *poco* and *un poco* quantifiers of degree: *poco* is negative in tone, *un poco* is neutral.",
+  "readAndPick": [
+    { "es": "Hablo un poco de inglés.", "options": ["I speak a little English.", "I don't speak much English."], "answer": 0 },
+    { "es": "Hablo poco inglés.", "options": ["I speak a little English.", "I don't speak much English."], "answer": 1 },
+    { "es": "Tomás duerme poco.", "options": ["Tomás sleeps a little.", "Tomás sleeps a lot.", "Tomás doesn't sleep much."], "answer": 2 },
+    { "es": "Estoy un poco cansado.", "options": ["I'm a little tired.", "I'm not very tired."], "answer": 0 },
+    { "es": "Tengo poco tiempo.", "options": ["I have a little time.", "I don't have much time."], "answer": 1 },
+    { "es": "Necesito un poco de tiempo.", "options": ["I need a little time.", "I don't need much time.", "I need a lot of time."], "answer": 0 },
+    { "es": "Mariana sale poco.", "options": ["Mariana goes out a little.", "Mariana doesn't go out much."], "answer": 1 },
+    { "es": "El apartamento es un poco caro.", "options": ["The apartment isn't very expensive.", "The apartment is a bit expensive."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *poco* or *un poco* (a man speaking, mildly tired): Estoy ___ cansado.", "answer": "Estoy un poco cansado.", "accept": [], "why": "A little tired is *un poco*: there is some tiredness." },
+    { "prompt": "Choose *poco* or *un poco* (he doesn't sleep much): Tomás duerme ___.", "answer": "Tomás duerme poco.", "accept": [], "why": "Not much is plain *poco*, without *un*." },
+    { "prompt": "Say: I speak a little Spanish.", "answer": "Hablo un poco de español.", "accept": ["Yo hablo un poco de español."], "why": "A little of a thing is *un poco de*." },
+    { "prompt": "Say: I didn't study much.", "answer": "Estudié poco.", "accept": ["Yo estudié poco."], "why": "Didn't do much is *poco* after the verb." },
+    { "prompt": "Say: I need a little coffee.", "answer": "Necesito un poco de café.", "accept": [], "why": "*Un poco de* plus the thing, and *poco* never changes." },
+    { "prompt": "Say: There isn't much milk.", "answer": "Hay poca leche.", "accept": [], "why": "Before a thing, *poco* matches it: *leche* is feminine, so *poca*." },
+    { "prompt": "Say the opposite: Trabajo mucho.", "answer": "Trabajo poco.", "accept": ["Yo trabajo poco."], "why": "The opposite of *mucho* is *poco*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Hablo poco español.", "right": "Hablo un poco de español.", "why": "Almost. Without *un* it sounds like a complaint. *Un poco de* says you can get by." },
+    { "wrong": "Necesito un poca de agua.", "right": "Necesito un poco de agua.", "why": "*Un poco* never changes, even before a feminine word like *agua*." },
+    { "wrong": "Necesito un poco agua.", "right": "Necesito un poco de agua.", "why": "Before a thing, *un poco* needs *de*: *un poco de agua*." }
+  ],
+  "personal": "Write two true lines: something you do *un poco* (and are happy about), and something you do *poco* (and wish you did more)."
+}

@@ -1,0 +1,42 @@
+{
+  "node": "p:la-gente-singular",
+  "hook": {
+    "line": "Sooner or later someone will ask what you think of Bogotá, and the honest answer is usually about the people. Spanish has a small surprise here: *gente* is one word for a whole crowd, and it acts like one thing.",
+    "es": "La gente aquí es muy amable.",
+    "en": "People here are really friendly."
+  },
+  "examples": [
+    { "es": "La gente aquí es muy amable.", "en": "People here are really friendly." },
+    { "es": "Hay mucha gente en TransMilenio.", "en": "There are lots of people on TransMilenio." },
+    { "es": "Hoy hay poca gente en el café.", "en": "There aren't many people in the café today." },
+    { "es": "La gente de Bogotá trabaja mucho.", "en": "People in Bogotá work a lot." },
+    { "es": "¿Toda la gente está de acuerdo?", "en": "Does everyone agree?" },
+    { "es": "Las personas del tercer piso son muy amables.", "en": "The people on the third floor are very friendly." }
+  ],
+  "rule": "In English, \"people\" is plural: people *are*. In Spanish, *gente* is a single word for the whole crowd, so it takes the same forms as one thing:\n\n*la gente es*, *la gente trabaja*, *la gente está*\n*mucha gente*, *poca gente*, *toda la gente*\n\nIt is also feminine, so it's *la gente*, *mucha gente*, and the describing word stays singular: *amable*, not *amables*.\n\nWhen you mean several separate people you could count, use *personas*, which is plural like English: *Las personas del tercer piso son muy amables*.",
+  "smallPrint": "Teachers call *gente* a collective noun: one singular word that names a group.",
+  "readAndPick": [
+    { "es": "La gente del barrio es amable.", "options": ["The person in the neighbourhood is friendly.", "People in the neighbourhood are friendly."], "answer": 1 },
+    { "es": "La persona del segundo piso es amable.", "options": ["The person on the second floor is friendly.", "People on the second floor are friendly."], "answer": 0 },
+    { "es": "Hay mucha gente en la panadería.", "options": ["There are lots of people in the bakery.", "There's one person in the bakery.", "There aren't many people in the bakery."], "answer": 0 },
+    { "es": "Mucha gente habla inglés.", "options": ["One person speaks a lot of English.", "Lots of people speak English."], "answer": 1 },
+    { "es": "La gente aquí come tarde.", "options": ["The person here eats late.", "The people eat here late.", "People here eat late."], "answer": 2 },
+    { "es": "Hay poca gente hoy.", "options": ["There aren't many people today.", "There's a little person today."], "answer": 0 },
+    { "es": "Toda la gente está en la plaza.", "options": ["The whole family is in the square.", "Everyone is in the square."], "answer": 1 },
+    { "es": "Esa gente es de Altamira.", "options": ["Those people are from Altamira.", "That person is from Altamira."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *es* or *son*: La gente aquí ___ muy amable.", "answer": "La gente aquí es muy amable.", "accept": [], "why": "*Gente* acts like one thing, so it takes *es*." },
+    { "prompt": "Choose *mucha* or *muchos*: Hay ___ gente en el parque.", "answer": "Hay mucha gente en el parque.", "accept": [], "why": "*Gente* is one feminine word, so *mucha*." },
+    { "prompt": "Say: People in Medellín are very friendly.", "answer": "La gente de Medellín es muy amable.", "accept": ["La gente en Medellín es muy amable."], "why": "*La gente* plus *es*, and *amable* stays singular." },
+    { "prompt": "Say: There aren't many people today.", "answer": "Hoy hay poca gente.", "accept": ["Hay poca gente hoy."], "why": "Not many people is *poca gente*: singular and feminine." },
+    { "prompt": "Say: Lots of people speak English.", "answer": "Mucha gente habla inglés.", "accept": [], "why": "*Mucha gente* takes the verb form for one person: *habla*." },
+    { "prompt": "Rewrite with *gente*: Las personas del barrio son muy amables.", "answer": "La gente del barrio es muy amable.", "accept": [], "why": "Swap in *la gente* and everything after it goes singular: *es*, *amable*." }
+  ],
+  "pitfalls": [
+    { "wrong": "La gente son muy amables.", "right": "La gente es muy amable.", "why": "Almost. *Gente* is one word for the crowd, so it takes *es* and a singular *amable*." },
+    { "wrong": "Hay muchos gente.", "right": "Hay mucha gente.", "why": "*Gente* is feminine and singular, so *mucho* becomes *mucha*." },
+    { "wrong": "Mucha gente hablan inglés.", "right": "Mucha gente habla inglés.", "why": "The verb follows *gente*, which counts as one: *habla*, not *hablan*." }
+  ],
+  "personal": "Write two true lines about the people where you live: what *la gente* is like, and whether there's *mucha gente* or *poca gente* on your street."
+}
