@@ -1,0 +1,95 @@
+{
+  "node": "g:possessives-stressed",
+  "hook": {
+    "line": "At the Medellín terminal, fifty suitcases come off the bus and none of them is Tomás's. A man holds one up and asks him. You can't answer with *mi*: it needs a thing after it. You need mine.",
+    "es": "¿Esta maleta es suya?\nNo, la mía es la roja.",
+    "en": "Is this suitcase yours? (formal)\nNo, mine is the red one."
+  },
+  "examples": [
+    { "es": "Ese celular es tuyo, ¿no?", "en": "That phone is yours, isn't it? (to a friend)" },
+    { "es": "¿De quién es esta maleta?\nEs mía.", "en": "Whose suitcase is this?\nIt's mine." },
+    { "es": "Un amigo mío vive en Santa Marta.", "en": "A friend of mine lives in Santa Marta." },
+    { "es": "¿Estas llaves son tuyas?\nSí, son mías.", "en": "Are these keys yours? (to a friend)\nYes, they're mine." },
+    { "es": "Mi maleta es azul y la tuya es negra.", "en": "My suitcase is blue and yours is black. (to a friend)" },
+    { "es": "Esos asientos son nuestros.", "en": "Those seats are ours." }
+  ],
+  "rule": "*mi*, *tu* and *su* only work in front of a thing. The long forms work everywhere else:\nafter *es* or *son*: *Es mía.* It's mine.\nafter the thing: *un amigo mío*, a friend of mine.\nwith *el* or *la* and no thing: *la mía*, mine.\n\nThe set:\n*mío*: mine\n*tuyo*: yours (to a friend)\n*suyo*: his, hers, theirs, yours (formal)\n*nuestro*: ours\n\nThey match the thing, not the owner, like any adjective: *mío*, *mía*, *míos*, *mías*. Tomás says *la maleta es mía* because *maleta* is a *la* word, even though he's a man.\n\nEnglish says a friend of mine. Spanish needs no extra word: *un amigo mío*.\n\nAnd when someone asks whose, one word does it: *Mía.*",
+  "smallPrint": "Teachers call these stressed possessives (or tonic possessives), as opposed to the short ones, *mi*, *tu*, *su*, that go in front.",
+  "readAndPick": [
+    { "es": "Ese celular es tuyo, ¿no?", "options": ["That phone is mine, isn't it?", "That phone is yours, isn't it?", "That phone is ours, isn't it?"], "answer": 1 },
+    { "es": "Esos asientos son nuestros.", "options": ["Those seats are ours.", "Those seats are yours."], "answer": 0 },
+    { "es": "¿Esta maleta es suya, señor?", "options": ["Is this suitcase mine, sir?", "Is this suitcase yours, sir?"], "answer": 1 },
+    { "es": "La mía es la roja.", "options": ["Mine is the red one.", "Yours is the red one.", "Ours is the red one."], "answer": 0 },
+    { "es": "Los tuyos están aquí.", "options": ["Yours is here.", "Mine are here.", "Yours are here."], "answer": 2 },
+    { "es": "Las mías están en el bus.", "options": ["Mine are on the bus.", "Mine is on the bus."], "answer": 0 },
+    { "es": "¿Cuál es el tuyo?", "options": ["Which one is mine?", "Which one is yours?"], "answer": 1 },
+    { "es": "Una prima mía vive en Cali.", "options": ["A cousin of mine lives in Cali.", "A cousin of yours lives in Cali."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *mío* or *mía* and type the whole sentence: ¿La maleta? Es ___.",
+      "answer": "¿La maleta? Es mía.",
+      "accept": [],
+      "why": "*Maleta* is a *la* word, so mine is *mía*, whoever owns it."
+    },
+    {
+      "prompt": "Choose *tuyo* or *tuyos* and type the whole sentence: ¿Estos tiquetes son ___?",
+      "answer": "¿Estos tiquetes son tuyos?",
+      "accept": [],
+      "why": "More than one ticket, so *tuyos*."
+    },
+    {
+      "prompt": "Choose *mía* or *la mía* and type the whole sentence: Tu maleta es negra y ___ es azul.",
+      "answer": "Tu maleta es negra y la mía es azul.",
+      "accept": [],
+      "why": "Standing in for the suitcase, mine needs its *la*."
+    },
+    {
+      "prompt": "Say: A friend of mine lives in Santa Marta.",
+      "answer": "Un amigo mío vive en Santa Marta.",
+      "accept": [],
+      "why": "Of mine is just *mío* after the noun, no *de*."
+    },
+    {
+      "prompt": "Ask a stranger (*usted*): Is this suitcase yours?",
+      "answer": "¿Esta maleta es suya?",
+      "accept": [],
+      "why": "Yours to *usted* is *suyo*, and *maleta* makes it *suya*."
+    },
+    {
+      "prompt": "Someone asks *¿De quién es esta maleta?* It's yours. Answer in one word.",
+      "answer": "Mía.",
+      "accept": ["Mía", "Es mía."],
+      "why": "To a whose question, the long form can stand alone, no *la*."
+    },
+    {
+      "prompt": "Make it plural: *Esta llave es mía.*",
+      "answer": "Estas llaves son mías.",
+      "accept": [],
+      "why": "Everything that points at the keys goes plural, *mías* too."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿El celular? Es mi.",
+      "right": "¿El celular? Es mío.",
+      "why": "Almost. *Mi* always needs a thing after it; on its own, mine is *mío*."
+    },
+    {
+      "wrong": "Un amigo de mí vive en Cali.",
+      "right": "Un amigo mío vive en Cali.",
+      "why": "Spanish has no of me for owning: put *mío* after the noun."
+    },
+    {
+      "wrong": "¿La maleta? Es mío.",
+      "right": "¿La maleta? Es mía.",
+      "why": "It matches the suitcase, a *la* word, not the person who owns it."
+    },
+    {
+      "wrong": "Mi maleta es azul y tuya es negra.",
+      "right": "Mi maleta es azul y la tuya es negra.",
+      "why": "Standing in for a thing, yours needs *la* or *el* in front."
+    }
+  ],
+  "personal": "Compare something of yours with a friend's: *Mi celular es… y el tuyo es…* Then name a friend of yours who lives far away: *Un amigo mío vive en…*"
+}

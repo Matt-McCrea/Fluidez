@@ -1,0 +1,95 @@
+{
+  "node": "x:mi-mio",
+  "hook": {
+    "line": "Vale's family is asking who everyone in the photos is. Tomás points at Hernando and says *un amigo de mí*. Polite smiles. Spanish has a word for of mine, and it isn't *de mí*.",
+    "es": "Hernando es un amigo mío de Bogotá.",
+    "en": "Hernando is a friend of mine from Bogotá."
+  },
+  "examples": [
+    { "es": "Es mi amigo.", "en": "He's my friend." },
+    { "es": "Es un amigo mío.", "en": "He's a friend of mine." },
+    { "es": "¿El tinto? Es mío.", "en": "The black coffee? It's mine." },
+    { "es": "Tu celular es negro. El mío es azul.", "en": "Your phone is black. Mine is blue. (to a friend)" },
+    { "es": "Mis papás viven en Toronto. ¿Y los tuyos?", "en": "My parents live in Toronto. And yours? (to a friend)" },
+    { "es": "Una prima mía trabaja en Medellín.", "en": "A cousin of mine works in Medellín." }
+  ],
+  "rule": "Same owner, two shapes, two places.\n\n*mi*, *tu*, *su* (and *mis*, *tus*, *sus*): right in front of the thing, never alone. *mi amigo*, *mis papás*.\n\n*mío*, *tuyo*, *suyo*: everywhere else. After the thing: *un amigo mío*. After *es*: *es mío*. With *el* or *la* when the thing is dropped: *el mío*.\n\nSo the test is simple: is the thing right after? Then *mi*. No thing after? Then *mío*.\n\nThe meaning shift is the same as in English. *Es mi amigo* is my friend, the one we both know about. *Es un amigo mío* is a friend of mine, one of several.\n\nTwo things Spanish never says: *es mi* with nothing after, and *el mi libro*. The short one never takes *el*; the long one needs it when it stands in for a thing.",
+  "smallPrint": "Teachers call *mi*, *tu*, *su* unstressed possessives and *mío*, *tuyo*, *suyo* stressed possessives.",
+  "readAndPick": [
+    { "es": "Es mi amigo.", "options": ["He's my friend.", "He's a friend of mine."], "answer": 0 },
+    { "es": "Es un amigo mío.", "options": ["He's my friend.", "He's a friend of mine."], "answer": 1 },
+    { "es": "Una prima mía trabaja en Medellín.", "options": ["My cousin works in Medellín.", "A cousin of mine works in Medellín."], "answer": 1 },
+    { "es": "Mi prima trabaja en Medellín.", "options": ["My cousin works in Medellín.", "A cousin of mine works in Medellín."], "answer": 0 },
+    { "es": "Esa es mi maleta. La tuya es la roja.", "options": ["That's my suitcase. Yours is the red one.", "That's your suitcase. Mine is the red one."], "answer": 0 },
+    { "es": "Esa es tu maleta. La mía es la roja.", "options": ["That's my suitcase. Yours is the red one.", "That's your suitcase. Mine is the red one."], "answer": 1 },
+    { "es": "El mío es azul.", "options": ["My blue one.", "Mine is blue.", "It's my blue."], "answer": 1 },
+    { "es": "Mis papás viven en Toronto. ¿Y los tuyos?", "options": ["My parents live in Toronto. And yours?", "My parents live in Toronto. And you?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *mi* or *mío* and type the whole sentence: Es un amigo ___.",
+      "answer": "Es un amigo mío.",
+      "accept": [],
+      "why": "Nothing comes after, so the long form: *mío*."
+    },
+    {
+      "prompt": "Choose *mi* or *mío* and type the whole sentence: Hernando es ___ amigo.",
+      "answer": "Hernando es mi amigo.",
+      "accept": [],
+      "why": "The thing comes right after, so the short form: *mi*."
+    },
+    {
+      "prompt": "Choose *mi* or *mía* and type the whole sentence: ¿La llave? Es ___.",
+      "answer": "¿La llave? Es mía.",
+      "accept": [],
+      "why": "No thing after *es*, so the long form, matching *llave*: *mía*."
+    },
+    {
+      "prompt": "Say: A cousin of mine works in Medellín. (a woman cousin)",
+      "answer": "Una prima mía trabaja en Medellín.",
+      "accept": [],
+      "why": "Of mine is *mía* after the noun, matching *prima*."
+    },
+    {
+      "prompt": "Say to a friend: My parents live in Toronto. And yours?",
+      "answer": "Mis papás viven en Toronto. ¿Y los tuyos?",
+      "accept": [],
+      "why": "*Mis* goes in front of *papás*; yours alone is *los tuyos*."
+    },
+    {
+      "prompt": "Drop the phone and just say mine: *Mi celular es azul.*",
+      "answer": "El mío es azul.",
+      "accept": [],
+      "why": "With no thing after, *mi* becomes *el mío*."
+    },
+    {
+      "prompt": "Make Hernando a friend of yours, one of several: *Hernando es mi amigo.*",
+      "answer": "Hernando es un amigo mío.",
+      "accept": [],
+      "why": "A friend of mine is *un amigo mío*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿El tinto? Es mi.",
+      "right": "¿El tinto? Es mío.",
+      "why": "Almost. *Mi* needs a thing after it; alone, it's *mío*."
+    },
+    {
+      "wrong": "Es un amigo de mí.",
+      "right": "Es un amigo mío.",
+      "why": "Spanish never says of me for owning; *mío* after the noun does the job."
+    },
+    {
+      "wrong": "El mi libro es nuevo.",
+      "right": "Mi libro es nuevo.",
+      "why": "The short form never takes *el*: just *mi libro*."
+    },
+    {
+      "wrong": "Tu celular es negro. Mi es azul.",
+      "right": "Tu celular es negro. El mío es azul.",
+      "why": "Standing in for the phone, mine is *el mío*."
+    }
+  ],
+  "personal": "Name someone close to you with *mi*, then someone you know less well with *mío* or *mía*: *Mi hermana vive en… Un amigo mío trabaja en…*"
+}

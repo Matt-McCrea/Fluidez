@@ -1,0 +1,97 @@
+{
+  "node": "g:por-para-1",
+  "hook": {
+    "line": "Tomás is at the Salitre bus terminal at dawn, buying the tickets to Medellín. In English nearly everything at the window is for: for Medellín, for Friday, for the rain, for the ticket. Spanish splits that one word in two.",
+    "es": "Un tiquete de ida y vuelta para Medellín, por favor.",
+    "en": "A return ticket to Medellín, please."
+  },
+  "examples": [
+    { "es": "Salimos para Medellín el viernes.", "en": "We're leaving for Medellín on Friday." },
+    { "es": "¿La tarea? Es para mañana.", "en": "The homework? It's due tomorrow." },
+    { "es": "El bus pasa por Honda.", "en": "The bus goes through Honda." },
+    { "es": "Hernando no vino por la lluvia.", "en": "Hernando didn't come because of the rain." },
+    { "es": "¿Cuánto pagaste por el tiquete?", "en": "How much did you pay for the ticket? (to a friend)" },
+    { "es": "Cuesta treinta mil pesos por persona.", "en": "It costs thirty thousand pesos per person." },
+    { "es": "Lo necesito para el lunes.", "en": "I need it by Monday." }
+  ],
+  "rule": "You already use *para* for who something is for and what it's for. Think of *para* as an arrow pointing ahead, at a goal. It also does two new jobs:\n*para* + a place: where you're heading. *Salimos para Medellín.*\n*para* + a day: the deadline. *Es para mañana.*\n\n*por* looks at what's along the way, or behind it:\n*por* + a place: through it, past it. *El bus pasa por Honda.*\n*por* + a reason: because of. *No vino por la lluvia.*\n*por* + a price: what you swap for it. *Pagué cien mil por el tiquete.*\n*por* + a unit: per. *treinta mil por persona*.\n\nYou've met *por* already in *gracias por*, *por la mañana* and *por favor*.\n\nEnglish says for in almost all of these. So ask: is it heading somewhere, to someone, by a day? *para*. Is it the reason, the route or the price? *por*.",
+  "smallPrint": "Teachers call *por* and *para* prepositions. This is the first pass with rules of thumb; both come back at B1 with more uses.",
+  "readAndPick": [
+    { "es": "Salimos para Medellín.", "options": ["We're leaving for Medellín.", "We're going through Medellín."], "answer": 0 },
+    { "es": "El bus va por Honda.", "options": ["The bus is heading to Honda.", "The bus goes via Honda."], "answer": 1 },
+    { "es": "Cuesta treinta mil pesos por persona.", "options": ["It costs thirty thousand pesos for one person.", "It costs thirty thousand pesos per person."], "answer": 1 },
+    { "es": "Hernando no vino por la lluvia.", "options": ["Hernando didn't come because of the rain.", "Hernando didn't come to get the rain."], "answer": 0 },
+    { "es": "Lo necesito para el lunes.", "options": ["I need it because of Monday.", "I need it on Mondays.", "I need it by Monday."], "answer": 2 },
+    { "es": "El bus va para Honda.", "options": ["The bus is heading to Honda.", "The bus goes via Honda."], "answer": 0 },
+    { "es": "Pagamos doscientos mil por la habitación.", "options": ["We paid two hundred thousand for the room.", "We paid two hundred thousand to book the room for someone."], "answer": 0 },
+    { "es": "No dormí por el ruido.", "options": ["I didn't sleep, to make noise.", "I didn't sleep because of the noise."], "answer": 1 },
+    { "es": "Mañana salimos para la costa.", "options": ["Tomorrow we're going along the coast.", "Tomorrow we're leaving for the coast."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *por* or *para* and type the whole sentence: Salimos ___ Medellín el viernes.",
+      "answer": "Salimos para Medellín el viernes.",
+      "accept": [],
+      "why": "Medellín is where you're heading, so *para*."
+    },
+    {
+      "prompt": "Choose *por* or *para* and type the whole sentence: Pagué cien mil pesos ___ el tiquete.",
+      "answer": "Pagué cien mil pesos por el tiquete.",
+      "accept": [],
+      "why": "The money is swapped for the ticket: a price takes *por*."
+    },
+    {
+      "prompt": "Choose *por* or *para* and type the whole sentence: El hotel cuesta ochenta mil pesos ___ noche.",
+      "answer": "El hotel cuesta ochenta mil pesos por noche.",
+      "accept": [],
+      "why": "Per night is *por noche*, with no article."
+    },
+    {
+      "prompt": "Say: I need it by Monday.",
+      "answer": "Lo necesito para el lunes.",
+      "accept": ["La necesito para el lunes."],
+      "why": "A deadline is where the arrow points, so *para el lunes*."
+    },
+    {
+      "prompt": "Say: Hernando didn't come because of the rain.",
+      "answer": "Hernando no vino por la lluvia.",
+      "accept": [],
+      "why": "The rain is the reason, so *por*."
+    },
+    {
+      "prompt": "Say: The bus goes through Honda.",
+      "answer": "El bus pasa por Honda.",
+      "accept": ["El bus va por Honda."],
+      "why": "Honda is on the way, not the end of the trip, so *por*."
+    },
+    {
+      "prompt": "Turn it into a question to a friend: *Pagué cien mil pesos por el tiquete.* (How much did you pay for the ticket?)",
+      "answer": "¿Cuánto pagaste por el tiquete?",
+      "accept": [],
+      "why": "Still a price, so *por* stays; only the question changes."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Gracias para todo.",
+      "right": "Gracias por todo.",
+      "why": "Almost. Thanks always looks back at what someone did, so it's *gracias por*."
+    },
+    {
+      "wrong": "Pagué cien mil para el tiquete.",
+      "right": "Pagué cien mil por el tiquete.",
+      "why": "Paying for something is a swap, money for ticket, so *por*."
+    },
+    {
+      "wrong": "Cuesta treinta mil para persona.",
+      "right": "Cuesta treinta mil por persona.",
+      "why": "Per is always *por*: *por persona*, *por noche*."
+    },
+    {
+      "wrong": "Salimos por Medellín el viernes.",
+      "right": "Salimos para Medellín el viernes.",
+      "why": "With *por* you'd only be passing through. Heading there is *para*."
+    }
+  ],
+  "personal": "Think of a trip you've taken. Say where you went with *para* and one thing you paid with *por*: *Salí para… Pagué… por…*"
+}

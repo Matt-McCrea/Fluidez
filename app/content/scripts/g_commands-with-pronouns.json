@@ -1,0 +1,103 @@
+{
+  "node": "g:commands-with-pronouns",
+  "hook": {
+    "line": "Nine hours on a bus to Medellín, and the driver's helper runs the whole thing with short commands. The little words you put in front of verbs are still there, but in these orders they've moved to the end.",
+    "es": "Siéntese, señor. ¿La maleta? Démela.",
+    "en": "Sit down, sir. The suitcase? Give it to me."
+  },
+  "examples": [
+    { "es": "Siéntese, por favor.", "en": "Sit down, please. (formal)" },
+    { "es": "¿La maleta? Déjela aquí, señor.", "en": "The suitcase? Leave it here, sir." },
+    { "es": "Llámame mañana.", "en": "Call me tomorrow. (to a friend)" },
+    { "es": "Ayúdame con la maleta.", "en": "Help me with the suitcase. (to a friend)" },
+    { "es": "¿Qué pasa? Dímelo.", "en": "What's wrong? Tell me. (to a friend)" },
+    { "es": "Espérenme aquí.", "en": "Wait for me here. (you all)" },
+    { "es": "¿Las llaves? Dáselas a Vale.", "en": "The keys? Give them to Vale. (to a friend)" }
+  ],
+  "rule": "In a do-it command, the little words leave their usual spot in front of the verb and glue onto the end, as one word:\n*me llamas* becomes *llámame*\n*se sienta* becomes *siéntese*\n*la deja* becomes *déjela*\n\nWith two of them, the order is the one you know: person first, then thing. *Dímelo*, *démela*. And *le* or *les* in front of *lo* or *la* still turns into *se*: *dáselas a Vale*.\n\nThe accent: gluing on adds syllables, and the stress would slide. Spanish writes an accent to hold it where it was: *llama*, *llámame*; *deje*, *déjela*; *di*, *dímelo*. A short verb with just one little word often needs none: *dame*, *dime*.\n\nFor a group, the *n* stays before the glued words: *espérenme*, *siéntense*.\n\nThis is only for do it. Don't do it puts the little words back in front; that's a later lesson.",
+  "smallPrint": "Teachers call these affirmative imperatives with enclitic pronouns: the object and reflexive pronouns are attached to the end of the verb.",
+  "readAndPick": [
+    { "es": "Llámame mañana.", "options": ["Call me tomorrow.", "Call him tomorrow.", "I'll call you tomorrow."], "answer": 0 },
+    { "es": "Llámelo mañana.", "options": ["Call me tomorrow. (formal)", "Call him tomorrow. (formal)"], "answer": 1 },
+    { "es": "Siéntense, por favor.", "options": ["Sit down, please. (to a stranger)", "Sit down, please. (to a friend)", "Sit down, please. (you all)"], "answer": 2 },
+    { "es": "Siéntese, por favor.", "options": ["Sit down, please. (to a stranger)", "Sit down, please. (to a friend)", "Sit down, please. (you all)"], "answer": 0 },
+    { "es": "¿El celular? Dáselo a Vale.", "options": ["The phone? Give it to me.", "The phone? Give it to Vale."], "answer": 1 },
+    { "es": "¿El celular? Dámelo.", "options": ["The phone? Give it to me.", "The phone? Give it to Vale."], "answer": 0 },
+    { "es": "¿Las maletas? Déjelas aquí.", "options": ["The suitcases? Leave it here.", "The suitcases? Leave them here."], "answer": 1 },
+    { "es": "Espérennos aquí.", "options": ["Wait for me here. (you all)", "Wait for us here. (you all)"], "answer": 1 },
+    { "es": "Ayúdame con la maleta.", "options": ["I'll help you with the suitcase.", "Help me with the suitcase."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *Llámame* or *Me llama* and type the whole sentence: ___ mañana, Vale. (Call me tomorrow, Vale.)",
+      "answer": "Llámame mañana, Vale.",
+      "accept": [],
+      "why": "In a do-it command the little word goes on the end, and the accent keeps the stress on *lla*."
+    },
+    {
+      "prompt": "Choose *Déjela* or *Dejela* and type the whole sentence: ¿La maleta? ___ aquí, señor.",
+      "answer": "¿La maleta? Déjela aquí, señor.",
+      "accept": [],
+      "why": "*Deje* is stressed on *de*; adding *la* needs the accent to keep it there."
+    },
+    {
+      "prompt": "Choose *Dímelo* or *Me lo di* and type the whole sentence: ¿Qué pasa? ___. (to a friend: Tell me.)",
+      "answer": "¿Qué pasa? Dímelo.",
+      "accept": [],
+      "why": "Command first, then *me*, then *lo*, all one word."
+    },
+    {
+      "prompt": "Say to a friend: Help me with the suitcase.",
+      "answer": "Ayúdame con la maleta.",
+      "accept": [],
+      "why": "*Ayuda* plus *me* on the end, with an accent on *yú*."
+    },
+    {
+      "prompt": "Say to a stranger (*usted*): Sit down, please.",
+      "answer": "Siéntese, por favor.",
+      "accept": ["Por favor, siéntese."],
+      "why": "The *usted* form *siente* takes *se* on the end: *siéntese*."
+    },
+    {
+      "prompt": "Say it to a group (*ustedes*): *Espérame aquí.*",
+      "answer": "Espérenme aquí.",
+      "accept": [],
+      "why": "The group form *esperen* keeps its *n*, then *me* goes on."
+    },
+    {
+      "prompt": "Make it formal (to *usted*): *Llámame mañana.*",
+      "answer": "Llámeme mañana.",
+      "accept": [],
+      "why": "Swap the vowel for *usted* (*llame*) and glue *me* on."
+    },
+    {
+      "prompt": "Give them to Vale instead of to you: *¿Las llaves? Dámelas.*",
+      "answer": "¿Las llaves? Dáselas a Vale.",
+      "accept": [],
+      "why": "To her would be *le*, but before *las* it turns into *se*: *dáselas*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me llame mañana.",
+      "right": "Llámeme mañana.",
+      "why": "Almost. In a do-it command the little word goes on the end, not in front."
+    },
+    {
+      "wrong": "Llamame mañana.",
+      "right": "Llámame mañana.",
+      "why": "Gluing on *me* would move the stress, so *llámame* needs its accent."
+    },
+    {
+      "wrong": "Dalome.",
+      "right": "Dámelo.",
+      "why": "Person first, then thing: *me* before *lo*."
+    },
+    {
+      "wrong": "Dálelo a Vale.",
+      "right": "Dáselo a Vale.",
+      "why": "*Le* can't sit before *lo*; it turns into *se*."
+    }
+  ],
+  "personal": "Think of a friend who'd help you pack for a trip. Ask them for two things with the little words on the end: *Ayúdame con…*, *Llámame…*"
+}

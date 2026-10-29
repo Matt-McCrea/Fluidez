@@ -1,0 +1,83 @@
+{
+  "node": "p:llevar-traer",
+  "hook": {
+    "line": "Tonight Tomás meets Vale's whole family, and he wants to arrive with something in his hands. English would say bring. Spanish wants to know which way the thing is moving.",
+    "es": "¿Qué llevo a la casa de tu mamá?",
+    "en": "What shall I take to your mum's house?"
+  },
+  "examples": [
+    { "es": "Tráeme un tinto, por favor.", "en": "Bring me a black coffee, please. (to a friend)" },
+    { "es": "¿Me trae la cuenta?", "en": "Could you bring me the bill? (formal)" },
+    { "es": "Lleva esto a la cocina.", "en": "Take this to the kitchen. (to a friend)" },
+    { "es": "¿Me llevas al aeropuerto?", "en": "Will you take me to the airport? (to a friend)" },
+    { "es": "Vale trajo arepas de Medellín.", "en": "Vale brought arepas from Medellín." }
+  ],
+  "rule": "These two split exactly like *venir* and *ir*.\n*traer*: towards here, where the speaker is. *Tráeme un tinto.*\n*llevar*: away from here, to somewhere else. *Lleva esto a la cocina.*\n\nEnglish bring also goes to where the other person is. Spanish usually doesn't: going to Vale's mum's house, it's *¿Qué llevo?* Only when you ask the host directly can you borrow their here: *¿Qué traigo?*\n\nTwo odd forms: I bring is *traigo* (like *tengo*, *hago*), and brought is *trajo*, *traje*.",
+  "smallPrint": "Teachers call this deixis: words whose meaning depends on where the speaker stands, like *aquí*, *venir* and *traer*.",
+  "readAndPick": [
+    { "es": "Tráeme un vaso de agua.", "options": ["Bring me a glass of water.", "Take a glass of water for me."], "answer": 0 },
+    { "es": "Lleva esto a la cocina.", "options": ["Bring this from the kitchen.", "Take this to the kitchen."], "answer": 1 },
+    { "es": "¿Me llevas al aeropuerto?", "options": ["Will you take me to the airport?", "Will you bring me back from the airport?"], "answer": 0 },
+    { "es": "Vale llevó arepas a la fiesta.", "options": ["Vale brought arepas here.", "Vale took arepas to the party.", "Vale asked for arepas at the party."], "answer": 1 },
+    { "es": "Vale trajo arepas de Medellín.", "options": ["Vale took arepas to Medellín.", "Vale brought arepas from Medellín."], "answer": 1 },
+    { "es": "Mañana te llevo el libro.", "options": ["I'll take the book over to you tomorrow.", "Bring me the book tomorrow."], "answer": 0 },
+    { "es": "Te llevo a casa.", "options": ["Take me home.", "Bring me home.", "I'll take you home."], "answer": 2 },
+    { "es": "¿Trajiste el pasaporte?", "options": ["Did you take the passport away?", "Did you bring the passport?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *Tráeme* or *Llévame* and type the whole sentence: ___ un tinto, por favor. (to a friend: Bring me a black coffee, please.)",
+      "answer": "Tráeme un tinto, por favor.",
+      "accept": [],
+      "why": "The coffee comes towards you, so *traer*."
+    },
+    {
+      "prompt": "Choose *Lleva* or *Trae* and type the whole sentence: ___ esto a la cocina. (to a friend: Take this to the kitchen.)",
+      "answer": "Lleva esto a la cocina.",
+      "accept": [],
+      "why": "It's going away from you, to the kitchen: *llevar*."
+    },
+    {
+      "prompt": "Ask a waiter (*usted*): Could you bring me the bill?",
+      "answer": "¿Me trae la cuenta?",
+      "accept": ["¿Me trae la cuenta, por favor?"],
+      "why": "The bill comes to your table, so *traer*, in the *usted* form *trae*."
+    },
+    {
+      "prompt": "Ask a friend: Will you take me to the airport?",
+      "answer": "¿Me llevas al aeropuerto?",
+      "accept": [],
+      "why": "You're going away from here, to the airport: *llevar*."
+    },
+    {
+      "prompt": "Say: Vale brought arepas from Medellín.",
+      "answer": "Vale trajo arepas de Medellín.",
+      "accept": [],
+      "why": "They came here, so *traer*, and brought is the odd form *trajo*."
+    },
+    {
+      "prompt": "Make it formal (to *usted*): *Tráeme un tinto, por favor.*",
+      "answer": "Tráigame un tinto, por favor.",
+      "accept": [],
+      "why": "The *usted* command builds on *traigo*: *traiga*, then *me* on the end."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Llévame un vaso de agua, por favor.",
+      "right": "Tráeme un vaso de agua, por favor.",
+      "why": "Almost. The water comes towards you, so it's *traer*."
+    },
+    {
+      "wrong": "¿Me traes al aeropuerto?",
+      "right": "¿Me llevas al aeropuerto?",
+      "why": "The airport is away from here, so *llevar*, just as you'd say *ir*."
+    },
+    {
+      "wrong": "¿Qué trao a la fiesta?",
+      "right": "¿Qué traigo a la fiesta?",
+      "why": "I bring is irregular: *traigo*, like *tengo* and *hago*."
+    }
+  ],
+  "personal": "Think of the last time you visited someone. Say what you took: *Llevé…* And something someone once brought you: *Me trajo…*"
+}
