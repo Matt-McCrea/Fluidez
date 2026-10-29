@@ -6,7 +6,7 @@
   "turns": [
     {
       "id": "t1",
-      "npc": "Tomás, ¿qué planes tienes el sábado 15 de noviembre?",
+      "npc": "Tomás, ¿qué planes tienes para el sábado 15 de noviembre?",
       "npcEn": "Tomás, what plans do you have for Saturday the 15th of November?",
       "intent": "Say you don't have any plans yet, and ask why.",
       "accept": [
@@ -56,12 +56,13 @@
       "accept": [
         "Si el avión es caro, prefiero ir en bus.",
         "Si el avión es muy caro, prefiero el bus.",
-        "Prefiero ir en bus si el avión es caro."
+        "Prefiero ir en bus si el avión es caro.",
+        "Si es muy caro, prefiero ir en bus."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bsi el avi[oó]n es\\b",
+          "pattern": "\\bsi (el avi[oó]n )?(es|cuesta)\\b",
           "flags": "i",
           "label": "if the plane is expensive: si el avión es caro (present after si)"
         }
@@ -82,7 +83,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "cuando hablo de ti",
+          "pattern": "cuando (yo )?hablo de ti",
           "flags": "i",
           "label": "when I talk about you: cuando hablo de ti (present, because it happens every time)"
         }
@@ -98,12 +99,13 @@
       "accept": [
         "Sí, voy. Mañana te la doy.",
         "Listo, voy. Te la doy mañana.",
-        "Sí, claro. Te la doy mañana, ¿listo?"
+        "Sí, claro. Te la doy mañana, ¿listo?",
+        "Sí, voy. Mañana te la devuelvo."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bte la doy\\b",
+          "pattern": "\\bte la (doy|pago|devuelvo|mando)\\b",
           "flags": "i",
           "label": "I'll give it to you: te la doy (te first, then la for la plata)"
         }
@@ -119,7 +121,7 @@
       "accept": [
         "Estoy aprendiendo. Me avisas la hora de la fiesta, ¿listo?",
         "Todavía no, pero estoy aprendiendo. Me avisas la hora, ¿listo?",
-        "Estoy aprendiendo con Mariana. Me avisas la hora de la fiesta."
+        "Estoy aprendiendo en YouTube. Me avisas la hora de la fiesta."
       ],
       "require": [
         {
@@ -180,6 +182,7 @@
     "l:cuánto",
     "l:dar",
     "l:después",
+    "l:devolver",
     "l:diciembre",
     "l:durar",
     "l:encantar",

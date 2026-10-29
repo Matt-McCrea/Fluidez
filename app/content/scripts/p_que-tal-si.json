@@ -6,60 +6,153 @@
     "en": "How about going to the cinema on Saturday?"
   },
   "examples": [
-    { "es": "¿Qué tal si vamos a cine el sábado?", "en": "How about going to the cinema on Saturday?" },
-    { "es": "¿Y si pedimos una pizza?", "en": "What if we order a pizza?" },
-    { "es": "¿Qué tal si nos vemos mañana?", "en": "How about we meet tomorrow?" },
-    { "es": "¿Qué tal si le preguntamos a don Hernando?", "en": "How about we ask don Hernando?" },
-    { "es": "¿Y si cerramos el café temprano hoy?", "en": "What if we close the café early today?" },
-    { "es": "¿Qué tal si invitas a Mariana?", "en": "How about you invite Mariana? (to a friend)" }
+    {
+      "es": "¿Qué tal si vamos a cine el sábado?",
+      "en": "How about going to the cinema on Saturday?"
+    },
+    {
+      "es": "¿Y si pedimos una pizza?",
+      "en": "What if we order a pizza?"
+    },
+    {
+      "es": "¿Qué tal si nos vemos mañana?",
+      "en": "How about we meet tomorrow?"
+    },
+    {
+      "es": "¿Qué tal si le preguntamos a don Hernando?",
+      "en": "How about we ask don Hernando?"
+    },
+    {
+      "es": "¿Y si cerramos el café temprano hoy?",
+      "en": "What if we close the café early today?"
+    },
+    {
+      "es": "¿Qué tal si invitas a Mariana?",
+      "en": "How about you invite Mariana? (to a friend)"
+    }
   ],
   "rule": "Two easy openers for a proposal:\n*¿Qué tal si...?* How about...?\n*¿Y si...?* What if...?\n\nAfter them comes the plain present, usually the we form: *vamos*, *pedimos*, *nos vemos*. Use the you form to suggest something the other person could do: *¿Qué tal si invitas a Mariana?*\n\nEnglish says how about going, with -ing. Spanish never does that here: it's *si vamos*, not *yendo*.\n\nWithout *si*, *¿Qué tal?* is just how's it going. The *si* is what turns it into a plan.",
   "smallPrint": "Teachers file this under proposing and suggesting. Colombians usually say *ir a cine*, with no *el*.",
   "readAndPick": [
-    { "es": "¿Qué tal si vamos a cine?", "options": ["How about we go to the cinema?", "How about you go to the cinema?"], "answer": 0 },
-    { "es": "¿Qué tal?", "options": ["How about it?", "How's it going?"], "answer": 1 },
-    { "es": "¿Y si llamas a Vale?", "options": ["What if we call Vale?", "What if Vale calls?", "What if you call Vale?"], "answer": 2 },
-    { "es": "¿Qué tal si cocinamos esta noche?", "options": ["How about you cook tonight?", "How about we cook tonight?"], "answer": 1 },
-    { "es": "¿Qué tal si cocinas esta noche?", "options": ["How about you cook tonight?", "How about we cook tonight?"], "answer": 0 },
-    { "es": "¿Y si no viene Tomás?", "options": ["What if we don't come?", "What if Tomás doesn't come?"], "answer": 1 },
-    { "es": "Si quieres, vamos el sábado.", "options": ["If you want, we'll go on Saturday.", "How about going on Saturday?"], "answer": 0 },
-    { "es": "¿Qué tal si tomamos un tinto?", "options": ["Shall I make you a coffee?", "How about we have a coffee?", "How was the coffee?"], "answer": 1 }
+    {
+      "es": "¿Qué tal si vamos a cine?",
+      "options": [
+        "How about we go to the cinema?",
+        "How about you go to the cinema?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué tal?",
+      "options": [
+        "How about it?",
+        "How's it going?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Y si llamas a Vale?",
+      "options": [
+        "What if we call Vale?",
+        "What if Vale calls?",
+        "What if you call Vale?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Qué tal si cocinamos esta noche?",
+      "options": [
+        "How about you cook tonight?",
+        "How about we cook tonight?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué tal si cocinas esta noche?",
+      "options": [
+        "How about you cook tonight?",
+        "How about we cook tonight?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Y si no viene Tomás?",
+      "options": [
+        "What if we don't come?",
+        "What if Tomás doesn't come?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si quieres, vamos el sábado.",
+      "options": [
+        "If you want, we'll go on Saturday.",
+        "How about going on Saturday?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué tal si tomamos un tinto?",
+      "options": [
+        "Shall I make you a coffee?",
+        "How about we have a coffee?",
+        "How was the coffee?"
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
       "prompt": "Choose *vamos* or *ir* and type the whole sentence: ¿Qué tal si ___ a cine? (How about we go to the cinema?)",
       "answer": "¿Qué tal si vamos a cine?",
-      "accept": ["¿Qué tal si vamos al cine?", "¿Y si vamos a cine?"],
+      "accept": [
+        "¿Qué tal si vamos al cine?",
+        "¿Y si vamos a cine?"
+      ],
       "why": "After *si* comes a real present form: *vamos*, not the dictionary form."
     },
     {
       "prompt": "Ask a friend: How about we meet tomorrow?",
       "answer": "¿Qué tal si nos vemos mañana?",
-      "accept": ["¿Y si nos vemos mañana?"],
+      "accept": [
+        "¿Y si nos vemos mañana?"
+      ],
       "why": "We meet is *nos vemos*, right after *¿Qué tal si...?*"
     },
     {
       "prompt": "Ask: What if we order a pizza?",
       "answer": "¿Y si pedimos una pizza?",
-      "accept": ["¿Qué tal si pedimos una pizza?"],
+      "accept": [
+        "¿Qué tal si pedimos una pizza?",
+        "¿Y si pedimos pizza?",
+        "¿Qué tal si pedimos pizza?"
+      ],
       "why": "*¿Y si...?* plus the we form: *pedimos*."
     },
     {
       "prompt": "Turn this plan into a gentle proposal with *¿Qué tal si...?*: *Vamos a Monserrate el domingo.*",
       "answer": "¿Qué tal si vamos a Monserrate el domingo?",
-      "accept": ["¿Y si vamos a Monserrate el domingo?"],
+      "accept": [
+        "¿Y si vamos a Monserrate el domingo?"
+      ],
       "why": "The plan stays exactly the same; the opener makes it a question they can say no to."
     },
     {
       "prompt": "Suggest it for your friend, not for both of you: *¿Qué tal si llamamos a Vale?*",
       "answer": "¿Qué tal si llamas a Vale?",
-      "accept": ["¿Y si llamas a Vale?"],
+      "accept": [
+        "¿Y si llamas a Vale?"
+      ],
       "why": "The verb ending says who: *llamamos* is we, *llamas* is you."
     },
     {
       "prompt": "Ask a friend: How about we have a coffee?",
       "answer": "¿Qué tal si tomamos un tinto?",
-      "accept": ["¿Y si tomamos un tinto?", "¿Qué tal si tomamos un café?", "¿Y si tomamos un café?"],
+      "accept": [
+        "¿Y si tomamos un tinto?",
+        "¿Qué tal si tomamos un café?",
+        "¿Y si tomamos un café?"
+      ],
       "why": "How about we is *¿Qué tal si...?* plus the we form: *tomamos*."
     }
   ],

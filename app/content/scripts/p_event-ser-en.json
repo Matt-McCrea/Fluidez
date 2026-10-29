@@ -141,7 +141,9 @@
     {
       "prompt": "Correct the day: the meeting isn't today, it's tomorrow.",
       "answer": "La reunión no es hoy, es mañana.",
-      "accept": [],
+      "accept": [
+        "La reunión es mañana, no hoy."
+      ],
       "why": "Both halves are about when the meeting happens, so *es* twice."
     }
   ],
@@ -157,9 +159,9 @@
       "why": "For one event that happened and is over, Spanish uses *hubo*."
     },
     {
-      "wrong": "El partido es en tres.",
-      "right": "El partido es a las tres.",
-      "why": "Clock times take *a las*: *a las tres*, *a las ocho*."
+      "wrong": "La fiesta está en mi casa.",
+      "right": "La fiesta es en mi casa.",
+      "why": "You learned *está* for where things are. A party doesn't sit somewhere, it happens there, so *es*."
     }
   ],
   "personal": "What's the next plan in your diary? Say what it is, when it is and where it is, all with *es*."

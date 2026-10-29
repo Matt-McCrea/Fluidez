@@ -24,7 +24,7 @@
         "label": "mention a friend"
       }
     ],
-    "model": "¡Hola, Mariana! Me encantaría ir a la salsa el viernes. ¿A qué hora es? Si quieres, llevo a un amigo. Él baila muy bien y es muy simpático. ¿Te parece bien?",
+    "model": "¡Hola, Mariana! Me encantaría ir a la salsa el viernes. ¿A qué hora es? Si quieres, llevo a un amigo. Él baila muy bien y es muy simpático. ¿Él también puede ir?",
     "focus": "c:me-encantaria",
     "requires": [
       "c:a-que-hora",
@@ -35,11 +35,11 @@
       "c:si-quieres",
       "g:conditional",
       "g:gender-articles",
-      "g:parecer-quedar",
       "g:present-ar",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:si-present",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:amigo",
       "l:bailar",
       "l:bien",
@@ -47,7 +47,7 @@
       "l:hora",
       "l:ir",
       "l:llevar",
-      "l:parecer",
+      "l:poder",
       "l:querer",
       "l:qué",
       "l:salsa",
@@ -59,10 +59,9 @@
       "p:days-el-lunes",
       "p:hedge-knowledge",
       "p:ir-a-venir-de-place",
-      "p:me-parece-bien-que",
       "p:personal-a",
       "p:quantifiers-basic",
-      "p:te-parece-bien-que"
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -156,44 +155,39 @@
         "label": "say Saturday"
       }
     ],
-    "model": "Tomás, ¿qué tal si vamos al cine el sábado? Hay una película nueva que dura dos horas. Luego comemos algo en un restaurante cerca. ¿Te parece bien?",
+    "model": "Tomás, ¿qué tal si vamos a cine el sábado? Hay una película nueva que dura dos horas. Y después comemos algo en un restaurante cerca. ¿Qué dices?",
     "focus": "p:que-tal-si",
     "requires": [
-      "c:bien-y-tu",
       "c:hay",
+      "c:vamos-a",
       "g:adjective-agreement",
       "g:gender-articles",
       "g:hay-vs-esta",
       "g:ir-a-plans",
-      "g:parecer-quedar",
       "g:present-ar",
       "g:present-er-ir",
       "g:questions",
       "g:relative-que",
       "g:si-present",
-      "l:bien",
+      "g:stem-e-i",
       "l:cerca",
       "l:cine",
       "l:comer",
+      "l:decir",
+      "l:después",
       "l:durar",
       "l:hora",
       "l:ir",
       "l:nuevo",
-      "l:parecer",
       "l:película",
       "l:qué",
       "l:restaurante",
       "l:sábado",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
       "p:days-el-lunes",
       "p:durar-durante",
-      "p:entonces-de-repente",
       "p:indefinites-basic",
       "p:ir-a-venir-de-place",
-      "p:me-parece-bien-que",
       "p:que-tal-si",
-      "p:te-parece-bien-que",
       "p:time-sequence-basic"
     ]
   },
@@ -263,7 +257,7 @@
   {
     "id": "w-u17-05",
     "unit": "u17",
-    "prompt": "You want to thank your neighbour Jhon Fredy for helping you move. Write him a short message (tú): invite him to something with te invito a… and say when.",
+    "prompt": "You want to thank your neighbour Andrés for helping you move. Write him a short message (tú): invite him to something with te invito a… and say when.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -292,7 +286,7 @@
         "label": "say thank you"
       }
     ],
-    "model": "Jhon Fredy, muchas gracias, eres un amigo muy bueno. Te invito a almorzar el sábado, ¿listo? No es nada formal. Si no puedes, no hay problema.",
+    "model": "Andrés, muchas gracias, eres un amigo muy bueno. Te invito a almorzar el sábado, ¿listo? No es nada formal. Si no puedes, no hay problema.",
     "focus": "p:te-invito-a",
     "requires": [
       "c:claro-listo",
@@ -308,6 +302,7 @@
       "g:stem-boot",
       "l:almorzar",
       "l:amigo",
+      "l:andrés",
       "l:bueno",
       "l:formal",
       "l:invitar",
@@ -328,7 +323,7 @@
   {
     "id": "w-u17-06",
     "unit": "u17",
-    "prompt": "Hernando asks if you will come to the football on Sunday. You will only go if something happens. Write back (he is older but you call him tú): say yes with a condition using si + present, and say what you do if it does not happen.",
+    "prompt": "Don Hernando asks if you will come to the football on Sunday. You will only go if something happens. Write back (he is older, so use usted): say yes with a condition using si + present, and say what you do if it does not happen.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -353,7 +348,7 @@
         "label": "name the condition"
       }
     ],
-    "model": "Hernando, voy al estadio el domingo si no llueve. Si llueve, me quedo en casa y veo el partido en la televisión. ¿Y tú? ¿Vas con tu hijo?",
+    "model": "Don Hernando, voy al estadio el domingo si no llueve. Si llueve, me quedo en casa y veo el partido en la televisión. ¿Y usted? ¿Va con sus nietos?",
     "focus": "g:si-present",
     "requires": [
       "c:bien-y-tu",
@@ -368,16 +363,19 @@
       "l:casa",
       "l:domingo",
       "l:estadio",
-      "l:hijo",
       "l:ir",
       "l:llover",
+      "l:nieto",
       "l:partido",
       "l:quedarse",
       "l:televisión",
       "l:ver",
       "p:days-el-lunes",
+      "p:don-dona-nombre",
       "p:ir-a-venir-de-place",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:senor-don-article"
     ]
   },
   {
@@ -466,7 +464,7 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Buenas tardes, señora Rosa. La fiesta es en mi casa, el sábado a las ocho. Habrá música y comida. ¿Puede venir? Me gustaría mucho verla ahí.",
+    "model": "Buenas tardes, doña Gloria. La fiesta es en mi casa, el sábado a las ocho. Va a haber música y comida. ¿Puede venir? Me gustaría mucho verla ahí.",
     "focus": "p:event-ser-en",
     "requires": [
       "c:hola-buenos-dias",
@@ -474,7 +472,7 @@
       "g:conditional",
       "g:direct-objects",
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:ir-a-plans",
       "g:object-pronoun-position",
       "g:ser-identity",
       "g:stem-boot",
@@ -485,16 +483,18 @@
       "l:comida",
       "l:fiesta",
       "l:gustar",
+      "l:haber",
+      "l:ir",
       "l:música",
       "l:poder",
       "l:ser",
-      "l:señora",
       "l:sábado",
       "l:tarde",
       "l:venir",
       "l:ver",
       "p:aqui-ahi-alla",
       "p:days-el-lunes",
+      "p:don-dona-nombre",
       "p:event-ser-en",
       "p:nos-vemos-a-las",
       "p:possessives-basic",
@@ -714,18 +714,17 @@
         "label": "ask a question"
       }
     ],
-    "model": "Tomás, ¿vienes a cenar el viernes? Si puedes, me avisas hoy, ¿listo? Si vienes, hago la reserva en el restaurante. Yo te aviso a qué hora llegamos.",
+    "model": "Tomás, ¿vienes a cenar el viernes? Si puedes, me avisas hoy, ¿listo? Si vienes, hago la reserva en el restaurante. Yo te aviso la hora más tarde.",
     "focus": "c:me-avisas",
     "requires": [
-      "c:a-que-hora",
       "c:claro-listo",
       "c:hago-salgo-vengo",
       "c:me-avisas",
       "c:si-quieres",
       "g:gender-articles",
-      "g:present-ar",
       "g:si-present",
       "g:stem-boot",
+      "g:superlatives",
       "g:yo-irregular",
       "l:avisar",
       "l:cenar",
@@ -733,11 +732,10 @@
       "l:hora",
       "l:hoy",
       "l:listo",
-      "l:llegar",
       "l:poder",
-      "l:qué",
       "l:reserva",
       "l:restaurante",
+      "l:tarde",
       "l:venir",
       "l:viernes",
       "p:days-el-lunes"

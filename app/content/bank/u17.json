@@ -689,12 +689,13 @@
   },
   {
     "id": "u17-0028",
-    "es": "Si me confirman la hora, aviso a todos.",
-    "en": "If they confirm the time to me, I'll tell everyone.",
+    "es": "Si me confirman la hora, les aviso a todos.",
+    "en": "If they confirm the time to me, I'll let everyone know.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
       "g:present-ar",
       "g:si-present",
       "l:avisar",
@@ -4796,7 +4797,7 @@
   },
   {
     "id": "u17-0197",
-    "es": "¿Por qué no usted decide el menú?",
+    "es": "¿Por qué no decide usted el menú?",
     "en": "Why don't you decide the menu? (polite)",
     "accept": [],
     "acceptEn": [],
@@ -4806,6 +4807,7 @@
       "l:decidir",
       "l:menú",
       "l:qué",
+      "p:por-que-no",
       "p:prep-questions-basic"
     ],
     "targets": [],
@@ -5104,17 +5106,16 @@
   },
   {
     "id": "u17-0210",
-    "es": "La invito a una función de cine, si quiere.",
-    "en": "I'd like to take you to the cinema, if you like. (to a woman, polite)",
+    "es": "La invito a la función de las ocho, si quiere.",
+    "en": "Let me take you to the eight o'clock show, if you'd like. (to a woman, polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:a-cuantas-cuotas",
       "g:direct-objects",
+      "g:gender-articles",
       "g:present-ar",
       "g:si-present",
       "g:stem-boot",
-      "l:cine",
       "l:función",
       "l:invitar",
       "l:querer",
@@ -5578,7 +5579,7 @@
   },
   {
     "id": "u17-0228",
-    "es": "Me parece bien a las ocho, pero no más tarde.",
+    "es": "A las ocho me parece bien, pero no más tarde.",
     "en": "Eight sounds good to me, but not later.",
     "accept": [],
     "acceptEn": [],
@@ -5586,6 +5587,7 @@
       "c:bien-y-tu",
       "c:me-parece-bien",
       "g:gender-articles",
+      "g:gustar-full",
       "l:bien",
       "l:parecer",
       "l:tarde",
@@ -5601,7 +5603,7 @@
   },
   {
     "id": "u17-0229",
-    "es": "Me parece perfecto el sitio.",
+    "es": "El sitio me parece perfecto.",
     "en": "The place sounds perfect to me.",
     "accept": [],
     "acceptEn": [],
@@ -5833,20 +5835,17 @@
   },
   {
     "id": "u17-0239",
-    "es": "¿Qué planes tienen ustedes para hoy?",
-    "en": "What plans do you all have for today? (you all)",
+    "es": "¿Ustedes ya tienen planes para hoy?",
+    "en": "Do you all have plans for today yet? (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
-      "g:present-ar",
-      "g:questions",
       "g:stem-boot",
       "l:hoy",
-      "l:parar",
       "l:plan",
-      "l:qué",
-      "l:tener"
+      "l:tener",
+      "p:para-inf"
     ],
     "targets": [],
     "kind": "question",
@@ -6168,7 +6167,7 @@
   },
   {
     "id": "u17-0255",
-    "es": "¿Te llamo a las nueve?\nDale, hasta ahí.",
+    "es": "¿Te llamo a las nueve?\nDale, hablamos.",
     "en": "Shall I call you at nine?\nSure, talk then.",
     "accept": [],
     "acceptEn": [],
@@ -6176,10 +6175,9 @@
       "c:dale",
       "g:gender-articles",
       "g:present-ar",
-      "l:ahí",
       "l:dale",
+      "l:hablar",
       "l:llamar",
-      "p:aqui-ahi-alla",
       "p:me-te-nos-objects",
       "p:telling-time"
     ],
@@ -7110,8 +7108,8 @@
   },
   {
     "id": "u17-0291",
-    "es": "¿Sabes cuándo es la entrada?\nNo sé cuándo comprarla.",
-    "en": "Do you know when the tickets go on sale?\nI don't know when to buy it.",
+    "es": "¿Ya compraste la entrada?\nNo, no sé dónde comprarla.",
+    "en": "Have you bought the ticket yet? (to a friend)\nNo, I don't know where to buy it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7120,17 +7118,14 @@
       "g:gender-articles",
       "g:indirect-questions",
       "g:object-pronoun-position",
-      "g:present-er-ir",
-      "g:questions",
-      "g:ser-identity",
+      "g:preterite-ar",
       "g:yo-irregular",
       "l:comprar",
-      "l:cuándo",
+      "l:dónde",
       "l:entrada",
       "l:saber",
-      "l:ser",
-      "p:no-se-que-hacer",
-      "p:saber-conocer"
+      "p:no-es-x-es-y",
+      "p:no-se-que-hacer"
     ],
     "targets": [
       "l:entrada",
@@ -7227,12 +7222,13 @@
   },
   {
     "id": "u17-0295",
-    "es": "No sé qué hacer con tantas ganas de bailar.",
-    "en": "I don't know what to do with so much urge to dance.",
+    "es": "No sé qué hacer con estas ganas de bailar.",
+    "en": "I don't know what to do with this urge to dance.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
+      "g:demonstratives",
       "g:indirect-questions",
       "g:yo-irregular",
       "l:bailar",
@@ -7495,8 +7491,8 @@
   },
   {
     "id": "u17-0307",
-    "es": "¿Vamos al estadio el domingo?\nQué pena, es que tengo que trabajar.",
-    "en": "Shall we go to the stadium on Sunday?\nSorry, it's just that I have to work.",
+    "es": "¿Me acompañas al estadio?\nQué pena, es que tengo que trabajar.",
+    "en": "Will you come with me to the stadium? (to a friend)\nSorry, it's just that I have to work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7505,19 +7501,18 @@
       "c:tengo",
       "c:tengo-que",
       "g:gender-articles",
-      "g:ir-a-plans",
+      "g:present-ar",
       "g:verb-infinitive",
       "g:yo-irregular",
-      "l:domingo",
+      "l:acompañar",
       "l:estadio",
-      "l:ir",
       "l:pena",
       "l:qué",
       "l:ser",
       "l:tener",
       "l:trabajar",
-      "p:days-el-lunes",
-      "p:ir-a-venir-de-place"
+      "p:me-te-nos-objects",
+      "p:personal-a"
     ],
     "targets": [
       "l:estadio"
@@ -8466,8 +8461,8 @@
   },
   {
     "id": "u17-0344",
-    "es": "¿A qué hora es la función?",
-    "en": "What time is the show?",
+    "es": "¿A qué hora es la función de hoy?",
+    "en": "What time is today's show?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8477,6 +8472,7 @@
       "g:ser-identity",
       "l:función",
       "l:hora",
+      "l:hoy",
       "l:qué",
       "l:ser",
       "p:event-ser-en",
@@ -8775,8 +8771,8 @@
   },
   {
     "id": "u17-0357",
-    "es": "El almuerzo es a la una, y llegan todos.",
-    "en": "Lunch is at one, and everyone's coming.",
+    "es": "El almuerzo es a la una en casa de Vale, pero Hernando siempre llega a las doce.",
+    "en": "Lunch is at one at Vale's place, but Hernando always arrives at twelve.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8784,9 +8780,12 @@
       "g:present-ar",
       "g:ser-identity",
       "l:almuerzo",
+      "l:casa",
       "l:llegar",
       "l:ser",
+      "l:siempre",
       "p:event-ser-en",
+      "p:frequency-scale",
       "p:telling-time"
     ],
     "targets": [
@@ -8851,19 +8850,24 @@
   },
   {
     "id": "u17-0360",
-    "es": "El concierto está en el estadio, pero es mañana.",
-    "en": "The concert venue is the stadium, but it's tomorrow.",
+    "es": "El concierto es en el estadio, y las boletas están en mi celular.",
+    "en": "The concert is at the stadium, and the tickets are on my phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
       "g:ser-identity",
+      "l:boleta",
+      "l:celular",
       "l:concierto",
       "l:estadio",
       "l:estar",
-      "l:mañana",
-      "l:ser"
+      "l:ser",
+      "p:event-ser-en",
+      "p:possessives-basic",
+      "p:ser-event-location",
+      "p:tener-lugar"
     ],
     "targets": [
       "l:concierto",
@@ -9937,15 +9941,20 @@
   },
   {
     "id": "u17-0406",
-    "es": "Hubo una película de Almodóvar en la función de las ocho.",
-    "en": "There was a Almodóvar film at the eight o'clock showing.",
+    "es": "Anoche la función fue en el teatro del centro.",
+    "en": "Last night the show was at the theatre downtown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:anoche",
+      "l:centro",
       "l:función",
-      "l:película",
+      "l:ser",
+      "l:teatro",
       "p:event-ser-en"
     ],
     "targets": [
@@ -9959,21 +9968,23 @@
   },
   {
     "id": "u17-0407",
-    "es": "La fiesta es esta noche y estoy sin ropa.",
-    "en": "The party is tonight and I have nothing to wear.",
+    "es": "La fiesta es esta noche y Tomás todavía no sabe bailar.",
+    "en": "The party is tonight and Tomás still can't dance.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
+      "c:todavia-no",
       "g:gender-articles",
+      "g:present-er-ir",
       "g:ser-identity",
-      "l:estar",
+      "l:bailar",
       "l:fiesta",
       "l:noche",
-      "l:ropa",
+      "l:saber",
       "l:ser",
       "p:demonstratives-basic",
-      "p:event-ser-en"
+      "p:event-ser-en",
+      "p:saber-conocer"
     ],
     "targets": [
       "p:event-ser-en"
@@ -10236,21 +10247,17 @@
   },
   {
     "id": "u17-0418",
-    "es": "¿A qué hora es la cena?",
-    "en": "What time is dinner?",
+    "es": "¿La cena es a las siete o a las ocho?",
+    "en": "Is dinner at seven or at eight?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:a-que-hora",
-      "c:que-hora-es",
       "g:gender-articles",
       "g:ser-identity",
       "l:cena",
-      "l:hora",
-      "l:qué",
       "l:ser",
       "p:event-ser-en",
-      "p:question-word-order"
+      "p:telling-time"
     ],
     "targets": [
       "p:event-ser-en"
@@ -10617,8 +10624,8 @@
   },
   {
     "id": "u17-0433",
-    "es": "Las invito a cenar, Vale y Mariana.",
-    "en": "I'm inviting you to dinner, Vale and Mariana. (two women)",
+    "es": "Vale, Mariana, las invito a cenar.",
+    "en": "Vale, Mariana, I'm inviting you to dinner. (two women)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13251,7 +13258,7 @@
   {
     "id": "u17-0539",
     "es": "No me la vendas tan cara.",
-    "en": "Don't sell it to me so expensive.",
+    "en": "Don't charge me so much for it. (a feminine item, to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13267,19 +13274,21 @@
   },
   {
     "id": "u17-0540",
-    "es": "Quiero obtener una entrada para el concierto.",
-    "en": "I want to get a ticket for the concert.",
+    "es": "¿Cómo puedo obtener una entrada para el concierto?",
+    "en": "How can I get a ticket for the concert?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
+      "c:puedo",
       "g:gender-articles",
+      "g:questions",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:concierto",
+      "l:cómo",
       "l:entrada",
       "l:obtener",
-      "l:querer",
+      "l:poder",
       "p:para-inf"
     ],
     "targets": [
@@ -13415,8 +13424,8 @@
   },
   {
     "id": "u17-0546",
-    "es": "Si el precio es real, compro dos.",
-    "en": "If the price is real, I'll buy two.",
+    "es": "Si el descuento es real, compro dos.",
+    "en": "If the discount is real, I'll buy two.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13425,7 +13434,7 @@
       "g:ser-identity",
       "g:si-present",
       "l:comprar",
-      "l:precio",
+      "l:descuento",
       "l:real",
       "l:ser"
     ],
@@ -13440,18 +13449,22 @@
   },
   {
     "id": "u17-0547",
-    "es": "Sus palabras suenan muy reales.",
-    "en": "Her words sound very real.",
+    "es": "No es un sueño, es real: Vale me invitó a Medellín.",
+    "en": "It's not a dream, it's real: Vale invited me to Medellín.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
-      "g:stem-boot",
-      "l:palabra",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "l:invitar",
       "l:real",
-      "l:sonar",
-      "p:possessives-basic",
-      "p:quantifiers-basic"
+      "l:ser",
+      "l:sueño",
+      "p:me-te-nos-objects",
+      "p:no-es-x-es-y",
+      "p:personal-a",
+      "p:te-invito-a"
     ],
     "targets": [
       "l:real"
@@ -13485,12 +13498,11 @@
   },
   {
     "id": "u17-0549",
-    "es": "Si lo considero bien, creo que voy.",
-    "en": "If I think it over carefully, I think I'm going.",
+    "es": "Si lo considero con calma, creo que sí voy.",
+    "en": "If I think it over calmly, I think I will go.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "c:creo-que",
       "c:voy-vas",
       "g:direct-objects",
@@ -13498,12 +13510,10 @@
       "g:present-ar",
       "g:si-present",
       "g:that-clauses",
-      "l:bien",
+      "l:calma",
       "l:considerar",
       "l:creer",
-      "l:ir",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:ir"
     ],
     "targets": [
       "g:si-present",
@@ -13539,19 +13549,19 @@
   },
   {
     "id": "u17-0551",
-    "es": "Hay una línea muy larga en la taquilla.",
-    "en": "There's a very long line at the box office.",
+    "es": "Escribe tu nombre en la primera línea.",
+    "en": "Write your name on the first line. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "g:adjective-agreement",
       "g:gender-articles",
-      "g:hay-vs-esta",
-      "l:largo",
+      "g:present-er-ir",
+      "l:escribir",
       "l:línea",
-      "l:taquilla",
-      "p:quantifiers-basic"
+      "l:nombre",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:línea"
@@ -13563,19 +13573,18 @@
   },
   {
     "id": "u17-0552",
-    "es": "Hay mucha gente en la línea del estadio.",
-    "en": "There are lots of people in the stadium queue.",
+    "es": "Esta línea de bus llega hasta el estadio.",
+    "en": "This bus line goes all the way to the stadium.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:gender-articles",
-      "g:hay-vs-esta",
+      "g:present-ar",
+      "l:bus",
       "l:estadio",
-      "l:gente",
+      "l:llegar",
       "l:línea",
-      "p:la-gente-singular",
-      "p:quantifiers-basic"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "l:estadio",
@@ -13638,19 +13647,16 @@
   },
   {
     "id": "u17-0555",
-    "es": "Cuando termina la línea, empieza la fila del cine.",
-    "en": "When the line ends, the cinema queue begins.",
+    "es": "Cuando escribo una invitación, escribo dos o tres líneas, no más.",
+    "en": "When I write an invitation, I write two or three lines, no more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "g:stem-boot",
-      "l:cine",
-      "l:empezar",
-      "l:fila",
+      "g:present-er-ir",
+      "l:escribir",
+      "l:invitación",
       "l:línea",
-      "l:terminar",
       "p:cuando-basic"
     ],
     "targets": [
@@ -13837,17 +13843,18 @@
   },
   {
     "id": "u17-0563",
-    "es": "Perfecto, nos vemos a las ocho.",
-    "en": "Perfect, see you at eight.",
+    "es": "Perfecto, te espero en la puerta del estadio.",
+    "en": "Perfect, I'll wait for you at the stadium gate.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:chao-nos-vemos",
       "g:gender-articles",
+      "g:present-ar",
+      "l:esperar",
+      "l:estadio",
       "l:perfecto",
-      "l:ver",
-      "p:nos-vemos-a-las",
-      "p:telling-time"
+      "l:puerta",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:perfecto"
@@ -13905,8 +13912,8 @@
   },
   {
     "id": "u17-0566",
-    "es": "Con atención, Tomás leyó la invitación otra vez.",
-    "en": "Carefully, Tomás read the invitation again.",
+    "es": "Tomás leyó la invitación otra vez, con mucha atención.",
+    "en": "Tomás read the invitation again, very carefully.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13916,7 +13923,8 @@
       "l:invitación",
       "l:leer",
       "l:vez",
-      "p:otro-no-article"
+      "p:otro-no-article",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:atención"
@@ -14468,7 +14476,7 @@
   },
   {
     "id": "u17-0589",
-    "es": "¡Qué suerte! Me ganaron un viaje a Cartagena.",
+    "es": "¡Qué suerte! Me gané un viaje a Cartagena.",
     "en": "What luck! I won a trip to Cartagena.",
     "accept": [],
     "acceptEn": [],
@@ -14492,8 +14500,8 @@
   },
   {
     "id": "u17-0590",
-    "es": "Con un poco de suerte, llegamos antes del gol.",
-    "en": "With a bit of luck, we'll get there before the goal.",
+    "es": "Con un poco de suerte, llegamos antes del primer gol.",
+    "en": "With a bit of luck, we'll get there before the first goal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14503,7 +14511,9 @@
       "l:antes",
       "l:gol",
       "l:llegar",
-      "l:suerte"
+      "l:suerte",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "l:gol",
@@ -14621,13 +14631,13 @@
   },
   {
     "id": "u17-0596",
-    "es": "La investigación dura casi un año.",
-    "en": "The investigation lasts almost a year.",
+    "es": "La investigación duró casi un año.",
+    "en": "The investigation lasted almost a year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:preterite-ar",
       "l:año",
       "l:durar",
       "l:investigación",
@@ -14785,20 +14795,20 @@
   },
   {
     "id": "u17-0603",
-    "es": "Cuando la función es puntual, salgo contento.",
-    "en": "When the show is on time, I leave happy.",
+    "es": "Cuando la función empieza puntual, salgo contento.",
+    "en": "When the show starts on time, I leave happy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hago-salgo-vengo",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
       "g:yo-irregular",
       "l:contento",
+      "l:empezar",
       "l:función",
       "l:puntual",
       "l:salir",
-      "l:ser",
       "p:cuando-basic"
     ],
     "targets": [
@@ -14812,19 +14822,21 @@
   },
   {
     "id": "u17-0604",
-    "es": "Si llueve, tenemos que cancelar el picnic.",
-    "en": "If it rains, we'll have to cancel the picnic.",
+    "es": "Si Vale está enferma, tenemos que cancelar la cena.",
+    "en": "If Vale is ill, we'll have to cancel the dinner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:adjective-agreement",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:si-present",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:cancelar",
-      "l:llover",
-      "l:picnic",
+      "l:cena",
+      "l:enfermo",
+      "l:estar",
       "l:tener"
     ],
     "targets": [
@@ -15515,17 +15527,18 @@
   },
   {
     "id": "u17-0633",
-    "es": "A Vale la preocupa la fiesta de su hermana.",
+    "es": "A Vale le preocupa la fiesta de su hermana.",
     "en": "Vale is worried about her sister's party.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:gender-articles",
+      "g:gustar-full",
       "g:present-ar",
       "l:fiesta",
       "l:hermana",
       "l:preocupar",
+      "p:me-preocupa-que",
       "p:possessives-basic"
     ],
     "targets": [
@@ -15557,8 +15570,8 @@
   },
   {
     "id": "u17-0635",
-    "es": "Hernando quiere acción: un partido, una salsa, algo.",
-    "en": "Hernando wants action: a match, a salsa, something.",
+    "es": "Hernando quiere acción: un partido, una rumba, algo.",
+    "en": "Hernando wants action: a match, a party, something.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15567,7 +15580,7 @@
       "l:acción",
       "l:partido",
       "l:querer",
-      "l:salsa",
+      "l:rumba",
       "p:indefinites-basic"
     ],
     "targets": [
@@ -15697,8 +15710,8 @@
   },
   {
     "id": "u17-0641",
-    "es": "La niña de Vale tiene cinco años.",
-    "en": "Vale's little girl is five years old.",
+    "es": "La niña de los vecinos tiene cinco años.",
+    "en": "The neighbours' little girl is five years old.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15708,6 +15721,7 @@
       "l:año",
       "l:niña",
       "l:tener",
+      "l:vecino",
       "p:tener-anos"
     ],
     "targets": [
@@ -15792,18 +15806,21 @@
   },
   {
     "id": "u17-0645",
-    "es": "Si marcas mal, contesta Simón.",
-    "en": "If you dial wrong, Simón answers. (to a friend)",
+    "es": "Si marcas antes de las ocho, Vale todavía está dormida.",
+    "en": "If you ring before eight, Vale is still asleep. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
+      "g:estar-participle",
+      "g:gender-articles",
       "g:present-ar",
       "g:si-present",
-      "l:contestar",
-      "l:mal",
+      "l:antes",
+      "l:dormir",
+      "l:estar",
       "l:marcar",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "g:si-present",
@@ -15934,18 +15951,20 @@
   },
   {
     "id": "u17-0651",
-    "es": "¿Qué plan para mañana en la mañana?",
-    "en": "What's the plan for tomorrow morning?",
+    "es": "¿Qué plan para mañana? Yo estoy libre desde las diez.",
+    "en": "What's the plan for tomorrow? I'm free from ten.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-plan",
+      "g:estar-location-states",
       "g:gender-articles",
+      "l:estar",
+      "l:libre",
       "l:mañana",
       "l:plan",
       "l:qué",
-      "p:para-inf",
-      "p:por-la-manana"
+      "p:para-inf"
     ],
     "targets": [
       "c:que-plan"
@@ -15982,17 +16001,22 @@
   },
   {
     "id": "u17-0653",
-    "es": "¿Qué plan para el almuerzo?",
-    "en": "What's the plan for lunch?",
+    "es": "Tengo hambre. ¿Qué plan para el almuerzo?",
+    "en": "I'm hungry. What's the plan for lunch?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-plan",
+      "c:tengo",
       "g:gender-articles",
+      "g:yo-irregular",
       "l:almuerzo",
+      "l:hambre",
       "l:plan",
       "l:qué",
-      "p:para-inf"
+      "l:tener",
+      "p:para-inf",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:que-plan"
@@ -16026,17 +16050,18 @@
   },
   {
     "id": "u17-0655",
-    "es": "¿Qué plan para el partido?",
-    "en": "What's the plan for the match?",
+    "es": "¿Y después del partido qué plan?",
+    "en": "And what's the plan after the match?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-plan",
       "g:gender-articles",
+      "l:después",
       "l:partido",
       "l:plan",
       "l:qué",
-      "p:para-inf"
+      "p:time-sequence-basic"
     ],
     "targets": [
       "c:que-plan"
@@ -16048,8 +16073,8 @@
   },
   {
     "id": "u17-0656",
-    "es": "¿Qué planes tienen ustedes para diciembre?",
-    "en": "What plans do you all have for December? (you all)",
+    "es": "En diciembre todos viajan. ¿Ustedes qué planes tienen?",
+    "en": "Everyone travels in December. What plans do you all have? (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16058,10 +16083,10 @@
       "g:questions",
       "g:stem-boot",
       "l:diciembre",
-      "l:parar",
       "l:plan",
       "l:qué",
-      "l:tener"
+      "l:tener",
+      "l:viajar"
     ],
     "targets": [],
     "kind": "question",
@@ -16117,18 +16142,21 @@
   },
   {
     "id": "u17-0659",
-    "es": "¿Qué planes tienen Vale y su hermana?",
-    "en": "What plans do Vale and her sister have?",
+    "es": "Vale y su hermana siempre tienen planes, nunca están en casa.",
+    "en": "Vale and her sister always have plans, they're never at home.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
-      "g:questions",
+      "g:estar-location-states",
       "g:stem-boot",
+      "l:casa",
+      "l:estar",
       "l:hermana",
       "l:plan",
-      "l:qué",
+      "l:siempre",
       "l:tener",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -16164,18 +16192,24 @@
   },
   {
     "id": "u17-0661",
-    "es": "Tengo un plan chévere con mi hermana.",
-    "en": "I've got a cool plan with my sister.",
+    "es": "Mi hermana siempre tiene un plan chévere para el fin de semana.",
+    "en": "My sister always has a cool plan for the weekend.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "c:tienes",
       "g:gender-articles",
-      "g:yo-irregular",
+      "g:stem-boot",
       "l:chévere",
+      "l:fin",
       "l:hermana",
       "l:plan",
+      "l:semana",
+      "l:siempre",
       "l:tener",
+      "p:days-el-lunes",
+      "p:frequency-scale",
+      "p:para-inf",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -16208,20 +16242,20 @@
   },
   {
     "id": "u17-0663",
-    "es": "Mariana tiene un plan chévere para el viernes.",
-    "en": "Mariana has a cool plan for Friday.",
+    "es": "¿Estás libre? Tengo un plan chévere.",
+    "en": "Are you free? I've got a cool plan. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
+      "c:tengo",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:yo-irregular",
       "l:chévere",
+      "l:estar",
+      "l:libre",
       "l:plan",
-      "l:tener",
-      "l:viernes",
-      "p:days-el-lunes",
-      "p:para-inf"
+      "l:tener"
     ],
     "targets": [],
     "kind": "statement",
@@ -16252,17 +16286,20 @@
   },
   {
     "id": "u17-0665",
-    "es": "¿Cuadramos para el jueves a las siete?",
-    "en": "Shall we arrange something for Thursday at seven?",
+    "es": "¿Cuadramos para el jueves? Hoy no puedo.",
+    "en": "Shall we arrange something for Thursday? I can't today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:puedo",
       "g:gender-articles",
+      "g:stem-boot",
+      "l:hoy",
       "l:jueves",
+      "l:poder",
       "p:days-el-lunes",
       "p:nos-vemos-a-las",
-      "p:para-inf",
-      "p:telling-time"
+      "p:para-inf"
     ],
     "targets": [],
     "kind": "question",
@@ -16291,17 +16328,20 @@
   },
   {
     "id": "u17-0667",
-    "es": "¿Cuadramos para después del partido?",
-    "en": "Shall we arrange something for after the match?",
+    "es": "¿Cuadramos para el viernes en la noche? Mariana también viene.",
+    "en": "Shall we arrange something for Friday night? Mariana is coming too.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "l:después",
-      "l:partido",
+      "g:stem-boot",
+      "l:noche",
+      "l:venir",
+      "l:viernes",
+      "p:days-el-lunes",
       "p:nos-vemos-a-las",
       "p:para-inf",
-      "p:time-sequence-basic"
+      "p:por-la-manana"
     ],
     "targets": [],
     "kind": "question",
@@ -16331,15 +16371,19 @@
   },
   {
     "id": "u17-0669",
-    "es": "Cuadremos la hora de la cena con Vale.",
-    "en": "Let's fix a time for dinner with Vale.",
+    "es": "Vale llega el sábado. Cuadremos algo con ella.",
+    "en": "Vale arrives on Saturday. Let's arrange something with her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:con-el-ella",
       "c:cuadremos",
       "g:gender-articles",
-      "l:cena",
-      "l:hora"
+      "g:present-ar",
+      "l:llegar",
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:indefinites-basic"
     ],
     "targets": [
       "c:cuadremos"
@@ -16351,17 +16395,22 @@
   },
   {
     "id": "u17-0670",
-    "es": "Cuadremos la hora para el lunes.",
-    "en": "Let's fix a time for Monday.",
+    "es": "Cuadremos bien la hora: no queremos esperar a nadie.",
+    "en": "Let's fix the time properly: we don't want to wait for anyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "c:cuadremos",
       "g:gender-articles",
+      "g:negation-words",
+      "g:present-er-ir",
+      "g:verb-infinitive",
+      "l:bien",
+      "l:esperar",
       "l:hora",
-      "l:lunes",
-      "p:days-el-lunes",
-      "p:para-inf"
+      "l:querer",
+      "p:personal-a"
     ],
     "targets": [
       "c:cuadremos"
@@ -16394,16 +16443,17 @@
   },
   {
     "id": "u17-0672",
-    "es": "Cuadremos la hora antes de salir.",
-    "en": "Let's fix a time before we leave.",
+    "es": "Cuadremos todo ahorita, ¿listo?",
+    "en": "Let's sort it all out right now, OK?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ahorita",
+      "c:claro-listo",
       "c:cuadremos",
-      "g:prep-infinitive",
-      "l:antes",
-      "l:hora",
-      "l:salir"
+      "g:diminutives",
+      "l:ahorita",
+      "l:listo"
     ],
     "targets": [
       "c:cuadremos"
@@ -16434,20 +16484,19 @@
   },
   {
     "id": "u17-0674",
-    "es": "Cuadramos para el viernes, entonces.",
-    "en": "We'll arrange it for Friday, then.",
+    "es": "¿Cuadramos con Hernando para el domingo?",
+    "en": "Shall we set something up with Hernando for Sunday?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:entonces-bueno",
       "g:gender-articles",
-      "l:viernes",
+      "l:domingo",
       "p:days-el-lunes",
       "p:nos-vemos-a-las",
       "p:para-inf"
     ],
     "targets": [],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
     "source": "gen"
@@ -16507,16 +16556,17 @@
   },
   {
     "id": "u17-0677",
-    "es": "Yo te aviso en la noche.",
-    "en": "I'll let you know tonight.",
+    "es": "Todavía no sé. Yo te aviso.",
+    "en": "I don't know yet. I'll let you know.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-avisas",
-      "g:gender-articles",
+      "c:no-se",
+      "c:todavia-no",
+      "g:yo-irregular",
       "l:avisar",
-      "l:noche",
-      "p:por-la-manana"
+      "l:saber"
     ],
     "targets": [
       "c:me-avisas",
@@ -16529,16 +16579,17 @@
   },
   {
     "id": "u17-0678",
-    "es": "Yo te aviso el lunes.",
-    "en": "I'll let you know on Monday.",
+    "es": "Si hay boletas, yo te aviso.",
+    "en": "If there are tickets, I'll let you know.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "c:me-avisas",
-      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:si-present",
       "l:avisar",
-      "l:lunes",
-      "p:days-el-lunes"
+      "l:boleta"
     ],
     "targets": [
       "c:me-avisas",
@@ -16574,16 +16625,17 @@
   },
   {
     "id": "u17-0680",
-    "es": "Me avisas mañana, ¿listo?",
-    "en": "Let me know tomorrow, OK? (to a friend)",
+    "es": "No es urgente: me avisas mañana.",
+    "en": "It's not urgent: let me know tomorrow. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
       "c:me-avisas",
+      "g:ser-identity",
       "l:avisar",
-      "l:listo",
-      "l:mañana"
+      "l:mañana",
+      "l:ser",
+      "l:urgente"
     ],
     "targets": [
       "c:me-avisas",
@@ -16621,18 +16673,17 @@
   },
   {
     "id": "u17-0682",
-    "es": "¿Nos vemos a las nueve?\n¡Dale!",
-    "en": "Shall we meet at nine?\nSure!",
+    "es": "¿Pedimos un taxi?\n¡Dale!",
+    "en": "Shall we get a taxi?\nSure!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:chao-nos-vemos",
       "c:dale",
       "g:gender-articles",
+      "g:present-er-ir",
       "l:dale",
-      "l:ver",
-      "p:nos-vemos-a-las",
-      "p:telling-time"
+      "l:pedir",
+      "l:taxi"
     ],
     "targets": [
       "c:dale"
@@ -16887,8 +16938,8 @@
   },
   {
     "id": "u17-0693",
-    "es": "Me parece bien el horario de las cinco.",
-    "en": "The five o'clock time sounds good to me.",
+    "es": "El horario de las cinco me parece bien.",
+    "en": "The five o'clock slot sounds good to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16909,13 +16960,13 @@
   },
   {
     "id": "u17-0694",
-    "es": "Me parece perfecto el precio.",
-    "en": "The price sounds perfect to me.",
+    "es": "Con ese precio, me parece perfecto.",
+    "en": "At that price, it sounds perfect.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-parece-bien",
-      "g:gender-articles",
+      "g:demonstratives",
       "l:parecer",
       "l:perfecto",
       "l:precio"
@@ -17439,20 +17490,21 @@
   },
   {
     "id": "u17-0716",
-    "es": "Qué pena, pero hoy tengo mucho trabajo.",
-    "en": "Sorry, but I've got a lot of work today.",
+    "es": "Qué pena, pero es que hoy cierro yo el café.",
+    "en": "Sorry, but the thing is I'm closing the café today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:es-que",
       "c:que-pena",
-      "c:tengo",
-      "g:yo-irregular",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:café",
+      "l:cerrar",
       "l:hoy",
       "l:pena",
       "l:qué",
-      "l:tener",
-      "l:trabajo",
-      "p:quantifiers-basic",
+      "l:ser",
       "p:refuse-es-que"
     ],
     "targets": [
@@ -17465,15 +17517,17 @@
   },
   {
     "id": "u17-0717",
-    "es": "Qué pena, pero el sábado no puedo.",
-    "en": "Sorry, but I can't on Saturday.",
+    "es": "El sábado no puedo, qué pena. ¿Qué tal el domingo?",
+    "en": "I can't on Saturday, sorry. How about Sunday?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:puedo",
       "c:que-pena",
       "g:gender-articles",
+      "g:questions",
       "g:stem-boot",
+      "l:domingo",
       "l:pena",
       "l:poder",
       "l:qué",
@@ -17517,19 +17571,21 @@
   },
   {
     "id": "u17-0719",
-    "es": "Qué pena, pero mis padres vienen de visita.",
-    "en": "Sorry, but my parents are coming to visit.",
+    "es": "Ay, qué pena, pero es que ese día llegan mis padres de Cali.",
+    "en": "Oh, sorry, but the thing is my parents arrive from Cali that day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:es-que",
       "c:que-pena",
-      "g:stem-boot",
+      "g:demonstratives",
+      "g:present-ar",
+      "l:día",
+      "l:llegar",
       "l:padres",
       "l:pena",
       "l:qué",
-      "l:venir",
-      "l:visita",
-      "p:ir-a-venir-de-place",
+      "l:ser",
       "p:masculine-plural-mixed",
       "p:possessives-basic",
       "p:refuse-es-que"
@@ -17569,25 +17625,26 @@
   },
   {
     "id": "u17-0721",
-    "es": "Qué pena, pero mañana tengo una cita.",
-    "en": "Sorry, but I have an appointment tomorrow.",
+    "es": "Mañana tengo cita con el médico, qué pena. ¿Otro día?",
+    "en": "Tomorrow I have a doctor's appointment, sorry. Another day?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-pena",
+      "c:sera-otro-dia",
       "c:tengo",
       "g:gender-articles",
       "g:yo-irregular",
       "l:cita",
+      "l:día",
       "l:mañana",
+      "l:médico",
       "l:pena",
       "l:qué",
-      "l:tener",
-      "p:refuse-es-que"
+      "l:tener"
     ],
     "targets": [
-      "l:cita",
-      "p:refuse-es-que"
+      "l:cita"
     ],
     "kind": "statement",
     "unit": "u17",
@@ -17620,20 +17677,22 @@
   },
   {
     "id": "u17-0723",
-    "es": "Lo siento, pero prefiero ver el partido en casa.",
-    "en": "I'm sorry, but I prefer to watch the match at home.",
+    "es": "Gracias, pero es que el partido lo veo en casa con mi papá.",
+    "en": "Thanks, but the thing is I'm watching the match at home with my dad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:lo-siento-pero-no-puedo",
+      "c:es-que",
+      "c:gracias-de-nada",
+      "g:direct-objects",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:yo-irregular",
       "l:casa",
+      "l:papá",
       "l:partido",
-      "l:preferir",
-      "l:sentir",
+      "l:ser",
       "l:ver",
-      "p:prefieres-x-o-y",
+      "p:possessives-basic",
       "p:refuse-es-que"
     ],
     "targets": [
@@ -17694,11 +17753,12 @@
   },
   {
     "id": "u17-0726",
-    "es": "Lo siento, pero no voy a poder ir.",
-    "en": "I'm sorry, but I won't be able to go.",
+    "es": "De verdad lo siento, pero no voy a poder ir.",
+    "en": "I'm really sorry, but I won't be able to go.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:en-serio",
       "c:lo-siento-pero-no-puedo",
       "c:voy-a",
       "g:ir-a-plans",
@@ -17706,6 +17766,7 @@
       "l:ir",
       "l:poder",
       "l:sentir",
+      "l:verdad",
       "p:refuse-es-que"
     ],
     "targets": [
@@ -17927,20 +17988,24 @@
   },
   {
     "id": "u17-0736",
-    "es": "¿Vas a ir a la rumba?\nNo, pero es que mañana trabajo.",
-    "en": "Are you going to the party? (to a friend)\nNo, it's just that I work tomorrow.",
+    "es": "¿Vas a ir a la rumba?\nQué pena, pero es que mañana trabajo temprano.",
+    "en": "Are you going to the party? (to a friend)\nSorry, but the thing is I work early tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:es-que",
+      "c:que-pena",
       "c:voy-vas",
       "g:gender-articles",
       "g:ir-a-plans",
       "g:present-ar",
       "l:ir",
       "l:mañana",
+      "l:pena",
+      "l:qué",
       "l:rumba",
       "l:ser",
+      "l:temprano",
       "l:trabajar",
       "p:ir-a-venir-de-place",
       "p:refuse-es-que"
@@ -17956,21 +18021,24 @@
   },
   {
     "id": "u17-0737",
-    "es": "¿Hoy no vas al estadio?\nNo, es que llueve mucho.",
+    "es": "¿Hoy no vas al estadio?\nNo, es que está lloviendo mucho.",
     "en": "You're not going to the stadium today? (to a friend)\nNo, it's just that it's raining hard.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:es-que",
       "c:voy-vas",
+      "g:estar-gerund",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:ir-a-plans",
-      "g:stem-boot",
       "l:estadio",
+      "l:estar",
       "l:hoy",
       "l:ir",
       "l:llover",
       "l:ser",
+      "p:hace-frio",
       "p:ir-a-venir-de-place",
       "p:quantifiers-basic"
     ],
@@ -18054,16 +18122,20 @@
   },
   {
     "id": "u17-0741",
-    "es": "¿Qué tal el domingo en la mañana?",
-    "en": "How about Sunday morning?",
+    "es": "Si el sábado no puedes, ¿qué tal el domingo en la mañana?",
+    "en": "If you can't on Saturday, how about Sunday morning? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:questions",
+      "g:si-present",
+      "g:stem-boot",
       "l:domingo",
       "l:mañana",
+      "l:poder",
       "l:qué",
+      "l:sábado",
       "p:days-el-lunes",
       "p:por-la-manana"
     ],
@@ -18094,17 +18166,18 @@
   },
   {
     "id": "u17-0743",
-    "es": "¿Qué tal otro día de la semana?",
-    "en": "How about another day of the week?",
+    "es": "Este fin de semana no, pero otro día, ¿listo?",
+    "en": "Not this weekend, but another day, OK?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
       "c:sera-otro-dia",
-      "g:gender-articles",
-      "g:questions",
       "l:día",
-      "l:qué",
-      "l:semana"
+      "l:fin",
+      "l:listo",
+      "l:semana",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "c:sera-otro-dia"
@@ -18116,16 +18189,22 @@
   },
   {
     "id": "u17-0744",
-    "es": "¿Qué tal pasado mañana?",
-    "en": "How about the day after tomorrow?",
+    "es": "Uy, mañana trabajo todo el día. ¿Qué tal el jueves?",
+    "en": "Ugh, I'm working all day tomorrow. How about Thursday?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:present-ar",
       "g:questions",
+      "l:día",
+      "l:jueves",
       "l:mañana",
-      "l:pasado",
       "l:qué",
-      "p:refuse-es-que"
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:refuse-es-que",
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:refuse-es-que"
@@ -18666,14 +18745,15 @@
   },
   {
     "id": "u17-0766",
-    "es": "Las invito a un helado, Vale y Mariana.",
-    "en": "I'll treat you to an ice cream, Vale and Mariana. (two women)",
+    "es": "Chicas, las invito a un helado.",
+    "en": "Girls, I'll treat you to an ice cream. (two women)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
+      "l:chica",
       "l:helado",
       "l:invitar",
       "p:personal-a",
@@ -18834,16 +18914,23 @@
   },
   {
     "id": "u17-0773",
-    "es": "No sé qué hacer con tantas entradas.",
-    "en": "I don't know what to do with so many tickets.",
+    "es": "Compré seis entradas y nadie puede ir. No sé qué hacer.",
+    "en": "I bought six tickets and nobody can go. I don't know what to do.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:compre-trabaje",
       "c:no-se",
       "g:indirect-questions",
+      "g:preterite-ar",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "g:yo-irregular",
+      "l:comprar",
       "l:entrada",
       "l:hacer",
+      "l:ir",
+      "l:poder",
       "l:qué",
       "l:saber",
       "p:no-se-que-hacer"
@@ -18969,16 +19056,16 @@
   },
   {
     "id": "u17-0779",
-    "es": "¡Qué pesado eres, Simón!",
-    "en": "You're so annoying, Simón!",
+    "es": "Simón está muy pesado hoy.",
+    "en": "Simón is being really annoying today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
+      "g:estar-location-states",
+      "l:estar",
+      "l:hoy",
       "l:pesar",
-      "l:qué",
-      "l:ser",
-      "p:exclamations-basic"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:pesar"
@@ -19091,21 +19178,16 @@
   },
   {
     "id": "u17-0784",
-    "es": "Tomás refiere una historia sobre su abuela.",
-    "en": "Tomás relates a story about his grandmother.",
+    "es": "¿Te refieres a Mariana o a Vale?",
+    "en": "Do you mean Mariana or Vale? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:reflexive-routine",
       "g:stem-boot",
-      "l:abuela",
-      "l:historia",
-      "l:referir",
-      "p:possessives-basic"
+      "l:referirse"
     ],
-    "targets": [
-      "l:referir"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
@@ -19113,21 +19195,20 @@
   },
   {
     "id": "u17-0785",
-    "es": "Mariana refiere el problema a su jefe.",
-    "en": "Mariana refers the problem to her boss.",
+    "es": "Mariana se refiere a Altamira, pero no dice el nombre.",
+    "en": "Mariana means Altamira, but she doesn't say the name.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:reflexive-routine",
       "g:stem-boot",
-      "l:jefe",
-      "l:problema",
-      "l:referir",
-      "p:possessives-basic"
+      "g:stem-e-i",
+      "l:decir",
+      "l:nombre",
+      "l:referirse"
     ],
-    "targets": [
-      "l:referir"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
@@ -19135,24 +19216,24 @@
   },
   {
     "id": "u17-0786",
-    "es": "Si el cliente refiere un problema, lo anotamos.",
-    "en": "If the customer reports a problem, we write it down.",
+    "es": "Si te refieres a la plata, ya la tengo.",
+    "en": "If you mean the money, I've already got it. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tengo",
       "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
+      "g:reflexive-routine",
       "g:si-present",
       "g:stem-boot",
-      "l:anotar",
-      "l:cliente",
-      "l:problema",
-      "l:referir"
+      "g:yo-irregular",
+      "l:plata",
+      "l:referirse",
+      "l:tener"
     ],
     "targets": [
-      "g:si-present",
-      "l:referir"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u17",
@@ -19211,13 +19292,13 @@
   },
   {
     "id": "u17-0789",
-    "es": "El hotel rechaza mi tarjeta.",
-    "en": "The hotel rejects my card.",
+    "es": "En el hotel rechazaron mi tarjeta.",
+    "en": "At the hotel they declined my card.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:preterite-ar",
       "l:hotel",
       "l:rechazar",
       "l:tarjeta",
@@ -19310,19 +19391,19 @@
   },
   {
     "id": "u17-0793",
-    "es": "Mi sector favorito del café es la ventana.",
-    "en": "My favourite section of the café is the window.",
+    "es": "Las boletas del sector norte son más baratas.",
+    "en": "Tickets in the north section are cheaper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
-      "l:café",
-      "l:favorito",
+      "l:barato",
+      "l:boleta",
+      "l:norte",
       "l:sector",
-      "l:ser",
-      "l:ventana",
-      "p:possessives-basic"
+      "l:ser"
     ],
     "targets": [
       "l:sector"
@@ -19432,21 +19513,22 @@
   },
   {
     "id": "u17-0798",
-    "es": "Si tengo dólares, los cambio antes de viajar.",
-    "en": "If I have dollars, I change them before travelling.",
+    "es": "Si pagas en dólares, el hotel te hace descuento.",
+    "en": "If you pay in dollars, the hotel gives you a discount. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
       "g:gender-articles",
-      "g:prep-infinitive",
+      "g:present-ar",
+      "g:present-er-ir",
       "g:si-present",
-      "g:yo-irregular",
-      "l:antes",
-      "l:cambio",
+      "l:descuento",
       "l:dólar",
-      "l:tener",
-      "l:viajar"
+      "l:hacer",
+      "l:hotel",
+      "l:pagar",
+      "p:costar-pagar",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:si-present",
@@ -19504,24 +19586,24 @@
   },
   {
     "id": "u17-0801",
-    "es": "Cuando obtengo una buena noticia, llamo a mis padres.",
-    "en": "When I get good news, I call my parents.",
+    "es": "Cuando obtengo un buen precio, se lo cuento a mis padres.",
+    "en": "When I get a good price, I tell my parents.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:double-pronouns",
       "g:gender-articles",
-      "g:present-ar",
+      "g:stem-boot",
       "g:yo-irregular",
-      "l:buena",
-      "l:llamar",
-      "l:noticia",
+      "l:buen",
+      "l:contar",
       "l:obtener",
       "l:padres",
+      "l:precio",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
       "p:cuando-basic",
       "p:masculine-plural-mixed",
-      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19602,22 +19684,18 @@
   },
   {
     "id": "u17-0805",
-    "es": "Si lo considero, la idea de Mariana es buena.",
-    "en": "If I think about it, Mariana's idea is good.",
+    "es": "Si Tomás considera vender, Hernando se va a molestar.",
+    "en": "If Tomás considers selling, Hernando is going to be upset.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
-      "g:gender-articles",
+      "g:ir-a-plans",
       "g:present-ar",
-      "g:ser-identity",
       "g:si-present",
-      "l:buena",
       "l:considerar",
-      "l:idea",
-      "l:ser",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:irse",
+      "l:molestar",
+      "l:vender"
     ],
     "targets": [
       "g:si-present",
@@ -19630,17 +19708,19 @@
   },
   {
     "id": "u17-0806",
-    "es": "Mi favorito es el pan de la línea de Vale.",
-    "en": "My favourite is the bread from Vale's range.",
+    "es": "Vale tiene una línea nueva de postres.",
+    "en": "Vale has a new line of desserts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "l:e",
-      "l:favorito",
+      "g:stem-boot",
       "l:línea",
-      "l:pan",
-      "p:possessives-basic"
+      "l:nuevo",
+      "l:postre",
+      "l:tener"
     ],
     "targets": [
       "l:línea"
@@ -19674,16 +19754,17 @@
   },
   {
     "id": "u17-0808",
-    "es": "Vale y yo esperamos en la línea del bus.",
-    "en": "Vale and I wait in the bus line.",
+    "es": "Leí todas las líneas de la invitación dos veces.",
+    "en": "I read every line of the invitation twice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "l:bus",
-      "l:esperar",
-      "l:línea"
+      "g:preterite-er-ir",
+      "l:invitación",
+      "l:leer",
+      "l:línea",
+      "l:vez"
     ],
     "targets": [
       "l:línea"
@@ -19738,17 +19819,19 @@
   },
   {
     "id": "u17-0811",
-    "es": "Atención: el concierto empieza en cinco minutos.",
-    "en": "Attention: the concert starts in five minutes.",
+    "es": "Durante el concierto, Tomás no pone atención: mira a Mariana.",
+    "en": "During the concert, Tomás isn't paying attention: he's looking at Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:oye-mira",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:present-er-ir",
       "l:atención",
       "l:concierto",
-      "l:empezar",
-      "l:minuto"
+      "l:mirar",
+      "l:poner",
+      "p:durar-durante"
     ],
     "targets": [
       "l:atención",
@@ -19784,14 +19867,12 @@
   },
   {
     "id": "u17-0813",
-    "es": "Hay otro asunto que quiero hablar contigo.",
-    "en": "There's another matter I want to talk to you about.",
+    "es": "Quiero hablar contigo de otro asunto.",
+    "en": "I want to talk to you about another matter. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "c:quiero",
-      "g:hay-vs-esta",
       "g:prep-pronouns",
       "g:stem-boot",
       "g:verb-infinitive",
@@ -19855,21 +19936,25 @@
   },
   {
     "id": "u17-0816",
-    "es": "Hubo una decisión en la reunión de vecinos.",
-    "en": "A decision was made at the residents' meeting.",
+    "es": "La reunión de vecinos es mañana, y ahí tomamos la decisión.",
+    "en": "The residents' meeting is tomorrow, and that's where we'll make the decision.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:ahí",
       "l:decisión",
+      "l:mañana",
       "l:reunión",
+      "l:ser",
+      "l:tomar",
       "l:vecino",
-      "p:event-ser-en"
+      "p:aqui-ahi-alla"
     ],
     "targets": [
-      "l:decisión",
-      "p:event-ser-en"
+      "l:decisión"
     ],
     "kind": "statement",
     "unit": "u17",
@@ -19972,8 +20057,8 @@
   },
   {
     "id": "u17-0821",
-    "es": "Tiene una voz hermosa.",
-    "en": "She has a beautiful voice.",
+    "es": "Tu hermana tiene una voz hermosa.",
+    "en": "Your sister has a beautiful voice. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19981,9 +20066,11 @@
       "g:adjective-agreement",
       "g:gender-articles",
       "g:stem-boot",
+      "l:hermana",
       "l:hermoso",
       "l:tener",
-      "l:voz"
+      "l:voz",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:hermoso"
@@ -20171,26 +20258,25 @@
   },
   {
     "id": "u17-0829",
-    "es": "Cancelamos el plan si llueve, ¿listo?",
-    "en": "We cancel the plan if it rains, OK?",
+    "es": "Si el equipo pierde, Hernando cancela la fiesta.",
+    "en": "If the team loses, Hernando cancels the party.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
       "g:gender-articles",
       "g:present-ar",
       "g:si-present",
       "g:stem-boot",
       "l:cancelar",
-      "l:listo",
-      "l:llover",
-      "l:plan"
+      "l:equipo",
+      "l:fiesta",
+      "l:perder"
     ],
     "targets": [
       "g:si-present",
       "l:cancelar"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
     "source": "gen"
@@ -20218,19 +20304,20 @@
   },
   {
     "id": "u17-0831",
-    "es": "Cuando hay acción en el partido, Hernando se levanta.",
-    "en": "When there's action in the match, Hernando stands up.",
+    "es": "El partido no tiene acción, y Hernando mira el celular.",
+    "en": "The match has no action, and Hernando is looking at his phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
+      "c:oye-mira",
+      "c:tienes",
       "g:gender-articles",
-      "g:hay-vs-esta",
-      "g:present-ar",
-      "g:reflexive-routine",
+      "g:stem-boot",
       "l:acción",
-      "l:levantarse",
-      "l:partido"
+      "l:celular",
+      "l:mirar",
+      "l:partido",
+      "l:tener"
     ],
     "targets": [
       "l:acción"
@@ -20242,8 +20329,8 @@
   },
   {
     "id": "u17-0832",
-    "es": "La hermosa niña de Vale baila sola.",
-    "en": "Vale's beautiful little girl dances alone.",
+    "es": "Una niña hermosa baila sola en la plaza.",
+    "en": "A beautiful little girl is dancing alone in the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20252,7 +20339,8 @@
       "g:present-ar",
       "l:bailar",
       "l:hermoso",
-      "l:niña"
+      "l:niña",
+      "l:plaza"
     ],
     "targets": [
       "l:hermoso",
@@ -20438,8 +20526,8 @@
   },
   {
     "id": "u17-0840",
-    "es": "Duran poco las fiestas en mi barrio.",
-    "en": "Parties in my neighbourhood don't last long.",
+    "es": "En mi barrio las fiestas duran poco.",
+    "en": "In my neighbourhood parties don't last long.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20804,8 +20892,8 @@
   },
   {
     "id": "u17-0856",
-    "es": "Mi madre me lo dice todos los días.",
-    "en": "My mother tells me every day.",
+    "es": "Mi mamá me lo dice todos los días.",
+    "en": "My mum tells me every day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20815,7 +20903,7 @@
       "g:stem-e-i",
       "l:decir",
       "l:día",
-      "l:madre",
+      "l:mamá",
       "p:me-te-nos-objects",
       "p:possessives-basic",
       "p:todos-los-dias",
@@ -20990,8 +21078,8 @@
   },
   {
     "id": "u17-0864",
-    "es": "Ya te lo reservé: mesa para cuatro.",
-    "en": "I've already booked it for you: a table for four.",
+    "es": "Mesa para cuatro: Vale ya nos la reservó.",
+    "en": "A table for four: Vale has already booked it for us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21014,14 +21102,17 @@
   },
   {
     "id": "u17-0865",
-    "es": "Ya se la reservé a Mariana.",
-    "en": "I've already booked it for Mariana. (a feminine item)",
+    "es": "¿La mesa de la ventana? Se la reservé a Mariana.",
+    "en": "The window table? I booked it for Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:double-pronouns",
+      "g:gender-articles",
       "g:preterite-ar",
-      "l:reservar"
+      "l:mesa",
+      "l:reservar",
+      "l:ventana"
     ],
     "targets": [
       "g:double-pronouns",
@@ -21230,19 +21321,20 @@
   },
   {
     "id": "u17-0875",
-    "es": "Mariana me la pidió y se la di.",
-    "en": "Mariana asked me for it and I gave it to her.",
+    "es": "Mariana quería la foto, así que se la mandé.",
+    "en": "Mariana wanted the photo, so I sent it to her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
+      "g:cause-result",
       "g:double-pronouns",
-      "g:preterite-irregular-strong",
-      "g:preterite-spelling-stem",
-      "l:dar",
-      "l:pedir",
-      "p:me-te-nos-objects",
-      "p:preguntar-pedir"
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:foto",
+      "l:mandar",
+      "l:querer"
     ],
     "targets": [
       "g:double-pronouns"
@@ -21395,36 +21487,41 @@
   },
   {
     "id": "u17-0882",
-    "es": "Cuadremos el viernes, ¿listo?",
-    "en": "Let's sort out Friday, OK?",
+    "es": "Cuadremos algo el viernes, si tienes tiempo.",
+    "en": "Let's arrange something on Friday, if you've got time. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
       "c:cuadremos",
+      "c:tienes",
       "g:gender-articles",
-      "l:listo",
+      "g:si-present",
+      "g:stem-boot",
+      "l:tener",
+      "l:tiempo",
       "l:viernes",
-      "p:days-el-lunes"
+      "p:days-el-lunes",
+      "p:indefinites-basic"
     ],
     "targets": [
       "c:cuadremos"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
     "source": "gen"
   },
   {
     "id": "u17-0883",
-    "es": "Cuadremos la hora con los vecinos.",
-    "en": "Let's fix a time with the neighbours.",
+    "es": "Cuadremos la hora de la reunión con los vecinos.",
+    "en": "Let's fix a time for the meeting with the neighbours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:cuadremos",
       "g:gender-articles",
       "l:hora",
+      "l:reunión",
       "l:vecino"
     ],
     "targets": [
@@ -21437,20 +21534,20 @@
   },
   {
     "id": "u17-0884",
-    "es": "Mariana refiere el asunto a la policía.",
-    "en": "Mariana refers the matter to the police.",
+    "es": "Me refiero al asunto de Altamira, no a la fiesta.",
+    "en": "I mean the Altamira matter, not the party.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:reflexive-routine",
       "g:stem-boot",
       "l:asunto",
-      "l:policía",
-      "l:referir"
+      "l:fiesta",
+      "l:referirse"
     ],
     "targets": [
-      "l:asunto",
-      "l:referir"
+      "l:asunto"
     ],
     "kind": "statement",
     "unit": "u17",
@@ -21581,42 +21678,38 @@
   },
   {
     "id": "u17-0890",
-    "es": "Hernando refiere cuánto cuesta el taxi ahora.",
-    "en": "Hernando mentions how much a taxi costs now.",
+    "es": "¿A qué se refiere usted, don Hernando?",
+    "en": "What do you mean, don Hernando? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:cuanto-cuesta",
-      "g:gender-articles",
+      "g:reflexive-routine",
       "g:stem-boot",
-      "l:ahora",
-      "l:costar",
-      "l:cuánto",
-      "l:referir",
-      "l:taxi"
+      "l:qué",
+      "l:referirse",
+      "p:don-dona-nombre",
+      "p:prep-questions-basic",
+      "p:senor-don-article"
     ],
-    "targets": [
-      "l:referir"
-    ],
-    "kind": "statement",
+    "targets": [],
+    "kind": "question",
     "unit": "u17",
     "theme": "leftovers 2",
     "source": "gen"
   },
   {
     "id": "u17-0891",
-    "es": "Tomás se preocupa y no puede dormir.",
-    "en": "Tomás worries and can't sleep.",
+    "es": "Tomás se preocupa y llama a Vale tres veces.",
+    "en": "Tomás gets worried and calls Vale three times.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
       "g:reflexive-routine",
-      "g:stem-boot",
-      "g:verb-infinitive",
-      "l:dormir",
-      "l:poder",
-      "l:preocuparse"
+      "l:llamar",
+      "l:preocuparse",
+      "l:vez",
+      "p:personal-a"
     ],
     "targets": [],
     "kind": "statement",
@@ -21651,16 +21744,23 @@
   },
   {
     "id": "u17-0893",
-    "es": "Si no llamas, Vale se preocupa.",
-    "en": "If you don't call, Vale worries. (to a friend)",
+    "es": "Si el café no tiene clientes un martes, nadie se preocupa.",
+    "en": "If the café has no customers on a Tuesday, nobody worries.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
+      "g:gender-articles",
+      "g:negation-words",
       "g:present-ar",
       "g:reflexive-routine",
       "g:si-present",
-      "l:llamar",
-      "l:preocuparse"
+      "g:stem-boot",
+      "l:café",
+      "l:cliente",
+      "l:martes",
+      "l:preocuparse",
+      "l:tener"
     ],
     "targets": [
       "g:si-present"
@@ -21766,17 +21866,18 @@
   },
   {
     "id": "u17-0898",
-    "es": "Mariana me preocupa cuando no come.",
-    "en": "Mariana worries me when she doesn't eat.",
+    "es": "Mariana me preocupa: trabaja hasta las dos de la mañana.",
+    "en": "Mariana worries me: she works until two in the morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:gustar-full",
       "g:present-ar",
-      "g:present-er-ir",
-      "l:comer",
+      "l:mañana",
       "l:preocupar",
-      "p:cuando-basic"
+      "l:trabajar",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:preocupar"
@@ -21810,18 +21911,17 @@
   },
   {
     "id": "u17-0900",
-    "es": "El gato de Rosa se murió ayer.",
-    "en": "Rosa's cat died yesterday.",
+    "es": "Se murió el perro de los vecinos.",
+    "en": "The neighbours' dog died.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
       "g:gender-articles",
       "g:preterite-spelling-stem",
       "g:reflexive-routine",
-      "l:ayer",
-      "l:gato",
       "l:morirse",
+      "l:perro",
+      "l:vecino",
       "p:naci-en"
     ],
     "targets": [
@@ -21834,17 +21934,19 @@
   },
   {
     "id": "u17-0901",
-    "es": "Rechazo la invitación, lo siento mucho.",
-    "en": "I decline the invitation, I'm very sorry.",
+    "es": "Rechacé la invitación de Hernando, y ahora no me habla.",
+    "en": "I turned down Hernando's invitation, and now he's not speaking to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:sentido-pesame",
       "g:gender-articles",
       "g:present-ar",
+      "g:preterite-spelling-stem",
+      "l:ahora",
+      "l:hablar",
       "l:invitación",
       "l:rechazar",
-      "l:sentir"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:rechazar"
@@ -22172,7 +22274,7 @@
   },
   {
     "id": "u17-0915",
-    "es": "No sé cómo pagar tanta cuenta.",
+    "es": "No sé cómo pagar esta cuenta tan grande.",
     "en": "I don't know how to pay such a big bill.",
     "accept": [],
     "acceptEn": [],
@@ -22182,8 +22284,10 @@
       "g:yo-irregular",
       "l:cuenta",
       "l:cómo",
+      "l:grande",
       "l:pagar",
       "l:saber",
+      "p:demonstratives-basic",
       "p:no-se-que-hacer"
     ],
     "targets": [
@@ -22222,19 +22326,17 @@
   },
   {
     "id": "u17-0917",
-    "es": "Hernando refiere la historia de su primer taxi.",
-    "en": "Hernando relates the story of his first taxi.",
+    "es": "La doctora refirió a Hernando a otro médico.",
+    "en": "The doctor referred Hernando to another doctor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:stem-boot",
-      "l:historia",
+      "g:preterite-spelling-stem",
+      "l:doctor",
+      "l:médico",
       "l:referir",
-      "l:taxi",
-      "p:ordinal-floor",
-      "p:ordinals-primer-tercer",
-      "p:possessives-basic"
+      "p:otro-no-article"
     ],
     "targets": [
       "l:referir"

@@ -6,18 +6,19 @@
   "turns": [
     {
       "id": "t1",
-      "npc": "Tomás, el domingo juega Santa Fe en El Campín. Ya tengo cuatro boletas. ¿Usted viene?",
-      "npcEn": "Tomás, on Sunday Santa Fe is playing at El Campín. I already have four tickets. Are you coming?",
+      "npc": "Tomás, el domingo juega Santa Fe en El Campín. Ya tengo tres boletas. ¿Usted viene?",
+      "npcEn": "Tomás, on Sunday Santa Fe is playing at El Campín. I already have three tickets. Are you coming?",
       "intent": "Say that sounds good, and ask what time the match is.",
       "accept": [
         "Me parece bien. ¿A qué hora es el partido?",
         "Me encantaría. ¿A qué hora es el partido?",
-        "Me parece perfecto. ¿Y el partido es a qué hora?"
+        "Me parece perfecto. ¿Y el partido es a qué hora?",
+        "Me parece bien. ¿A qué hora es?"
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "es el partido|el partido es",
+          "pattern": "a qu[eé] hora es|es el partido|el partido es",
           "flags": "i",
           "label": "when an event happens: es (¿a qué hora es el partido?)"
         },
@@ -31,13 +32,13 @@
     },
     {
       "id": "t2",
-      "npc": "A las tres y media. Una boleta para usted, una para Vale, una para Mariana y una para mí.",
-      "npcEn": "At half past three. One ticket for you, one for Vale, one for Mariana and one for me.",
-      "intent": "Say sorry, the thing is you work until three on Sundays.",
+      "npc": "A las cuatro. Una boleta para usted, una para Vale y una para mí.",
+      "npcEn": "At four. One ticket for you, one for Vale and one for me.",
+      "intent": "Say sorry, the thing is you work until five on Sundays.",
       "accept": [
-        "Qué pena, es que los domingos trabajo hasta las tres.",
-        "Qué pena. Es que los domingos trabajo en el café hasta las tres.",
-        "Lo siento, es que los domingos trabajo hasta las tres."
+        "Qué pena, es que los domingos trabajo hasta las cinco.",
+        "Qué pena. Es que los domingos trabajo en el café hasta las cinco.",
+        "Lo siento, es que los domingos trabajo hasta las cinco."
       ],
       "require": [
         {
@@ -59,8 +60,8 @@
     },
     {
       "id": "t3",
-      "npc": "¡Ay, Tomás! Vale tampoco puede, y Mariana tiene una cita. ¿Y ahora qué hacemos?",
-      "npcEn": "Oh, Tomás! Vale can't either, and Mariana has a date. So what do we do now?",
+      "npc": "¡Ay, Tomás! Y Vale tampoco puede, se va para Medellín. ¿Y ahora qué hacemos?",
+      "npcEn": "Oh, Tomás! And Vale can't either, she's off to Medellín. So what do we do now?",
       "intent": "Suggest watching the match at the café instead.",
       "accept": [
         "¿Qué tal si vemos el partido en el café?",
@@ -105,8 +106,8 @@
     },
     {
       "id": "t5",
-      "npc": "Bueno, ¿y las cuatro boletas? Ya las compré.",
-      "npcEn": "Well, and the four tickets? I already bought them.",
+      "npc": "Bueno, ¿y las tres boletas? Ya las compré.",
+      "npcEn": "Well, and the three tickets? I already bought them.",
       "intent": "Suggest he give them to his grandchildren.",
       "accept": [
         "¿Por qué no se las da a sus nietos?",
@@ -161,12 +162,12 @@
     "c:que-hora-es",
     "c:que-pena",
     "c:tengo",
-    "c:tienes",
     "c:trabajo-en",
     "g:conditional",
     "g:direct-objects",
     "g:double-pronouns",
     "g:gender-articles",
+    "g:ir-a-plans",
     "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
@@ -184,7 +185,6 @@
     "l:boleta",
     "l:bueno",
     "l:café",
-    "l:cita",
     "l:comprar",
     "l:dar",
     "l:darse",
@@ -199,6 +199,7 @@
     "l:idea",
     "l:importar",
     "l:invitar",
+    "l:irse",
     "l:jugar",
     "l:listo",
     "l:nieto",

@@ -11,8 +11,8 @@
       "en": "Shall we go to the cinema on Saturday?\nSorry, it's just that I have to work."
     },
     {
-      "es": "Lo siento, pero no puedo, es que tengo una cita.",
-      "en": "I'm sorry, but I can't, it's just that I have an appointment."
+      "es": "Lo siento, pero no puedo. Es que tengo una cita.",
+      "en": "I'm sorry, but I can't. It's just that I have an appointment."
     },
     {
       "es": "Me encantaría, pero es que el domingo hay partido.",
@@ -117,7 +117,8 @@
       "accept": [
         "Lo siento, es que tengo una cita.",
         "Qué pena, es que tengo cita.",
-        "Lo siento, pero es que tengo una cita."
+        "Lo siento, pero es que tengo una cita.",
+        "Qué pena, pero es que tengo una cita."
       ],
       "why": "Cushion first, then *es que* and the reason."
     },
@@ -139,8 +140,10 @@
     },
     {
       "prompt": "Make it kinder by adding *Lo siento* and *es que*: *No puedo. Tengo una cita.*",
-      "answer": "Lo siento, pero no puedo, es que tengo una cita.",
+      "answer": "Lo siento, pero no puedo. Es que tengo una cita.",
       "accept": [
+        "Lo siento, pero no puedo, es que tengo una cita.",
+        "Lo siento, no puedo. Es que tengo una cita.",
         "Lo siento, no puedo, es que tengo una cita."
       ],
       "why": "Same facts, but now there's an apology and the reason sounds like an explanation, not a wall."
@@ -149,7 +152,9 @@
       "prompt": "Say it to an older man you call *usted*: I'm so sorry, it's just that I already have plans.",
       "answer": "Qué pena con usted, es que ya tengo planes.",
       "accept": [
-        "Lo siento, es que ya tengo planes."
+        "Lo siento, es que ya tengo planes.",
+        "Qué pena, es que ya tengo planes.",
+        "Qué pena con usted, pero es que ya tengo planes."
       ],
       "why": "*Qué pena con usted* is the respectful Colombian way to apologise to someone you call *usted*."
     },

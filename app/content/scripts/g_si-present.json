@@ -6,26 +6,112 @@
     "en": "If it rains, we're not going to the match."
   },
   "examples": [
-    { "es": "Si quieres, vamos al cine.", "en": "If you want, we'll go to the cinema. (to a friend)" },
-    { "es": "Si llueve mañana, nos quedamos en el café.", "en": "If it rains tomorrow, we'll stay at the café." },
-    { "es": "Si tienes tiempo esta tarde, ven al café.", "en": "If you have time this afternoon, come to the café. (to a friend)" },
-    { "es": "Si no entiendes, pregunta.", "en": "If you don't understand, ask. (to a friend)" },
-    { "es": "Si tú vas, yo voy.", "en": "If you go, I'll go. (to a friend)" },
-    { "es": "No vamos al partido si llueve.", "en": "We're not going to the match if it rains." },
-    { "es": "Si viene don Hernando, le hago un tinto.", "en": "If don Hernando comes, I'll make him a coffee." }
+    {
+      "es": "Si quieres, vamos al cine.",
+      "en": "If you want, we'll go to the cinema. (to a friend)"
+    },
+    {
+      "es": "Si llueve mañana, nos quedamos en el café.",
+      "en": "If it rains tomorrow, we'll stay at the café."
+    },
+    {
+      "es": "Si tienes tiempo esta tarde, ven al café.",
+      "en": "If you have time this afternoon, come to the café. (to a friend)"
+    },
+    {
+      "es": "Si no entiendes, pregunta.",
+      "en": "If you don't understand, ask. (to a friend)"
+    },
+    {
+      "es": "Si tú vas, yo voy.",
+      "en": "If you go, I'll go. (to a friend)"
+    },
+    {
+      "es": "No vamos al partido si llueve.",
+      "en": "We're not going to the match if it rains."
+    },
+    {
+      "es": "Si viene don Hernando, le hago un tinto.",
+      "en": "If don Hernando comes, I'll make him a coffee."
+    }
   ],
   "rule": "*Si* plus the plain present sets up the condition: *si quieres*, *si llueve*, *si tienes tiempo*.\n\nThe other half can be:\nthe present: *Si llueve, nos quedamos.*\n*ir a*: *Si llueve, vamos a ver una película.*\nan instruction: *Si tienes tiempo, ven.*\n\nEnglish says if it rains, we'll stay. Spanish usually drops the will and just says we stay: *nos quedamos*. That's normal, not lazy.\n\nThe *si* half can go first (with a comma) or second (no comma): *No vamos si llueve.*\n\nOne spelling trap: *si* with no accent is if. *Sí* with an accent is yes. They sound the same.",
   "smallPrint": "Teachers call this a real or open conditional: *si* plus the present indicative, for something that might really happen.",
   "readAndPick": [
-    { "es": "Si quieres, vamos.", "options": ["If we want, you'll go.", "If you want, we'll go."], "answer": 1 },
-    { "es": "Sí, vamos.", "options": ["Yes, let's go.", "If we go."], "answer": 0 },
-    { "es": "Si llueve, no salimos.", "options": ["It's raining, so we're not going out.", "If it rains, we're not going out.", "If it doesn't rain, we're going out."], "answer": 1 },
-    { "es": "Si tienes hambre, hay arepas en la cocina.", "options": ["If I'm hungry, there are arepas in the kitchen.", "If you're hungry, there are arepas in the kitchen."], "answer": 1 },
-    { "es": "Si tú vas, yo voy.", "options": ["If you go, I'll go.", "If I go, you'll go."], "answer": 0 },
-    { "es": "Si me llamas, voy.", "options": ["If I call you, you'll come.", "If you call me, I'll come."], "answer": 1 },
-    { "es": "Hace sol, así que salimos.", "options": ["If it's sunny, we'll go out.", "It's sunny, so we're going out."], "answer": 1 },
-    { "es": "Si no puedes ir, llama a Mariana.", "options": ["If you can't go, call Mariana.", "If you can go, call Mariana.", "If Mariana can't go, call her."], "answer": 0 },
-    { "es": "No vamos al partido si llueve.", "options": ["We're not going to the match if it rains.", "We're going to the match if it rains."], "answer": 0 }
+    {
+      "es": "Si quieres, vamos.",
+      "options": [
+        "If we want, you'll go.",
+        "If you want, we'll go."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Sí, vamos.",
+      "options": [
+        "Yes, let's go.",
+        "If we go."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si llueve, no salimos.",
+      "options": [
+        "It's raining, so we're not going out.",
+        "If it rains, we're not going out.",
+        "If it doesn't rain, we're going out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si tienes hambre, hay arepas en la cocina.",
+      "options": [
+        "If I'm hungry, there are arepas in the kitchen.",
+        "If you're hungry, there are arepas in the kitchen."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si tú vas, yo voy.",
+      "options": [
+        "If you go, I'll go.",
+        "If I go, you'll go."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si me llamas, voy.",
+      "options": [
+        "If I call you, you'll come.",
+        "If you call me, I'll come."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hace sol, así que salimos.",
+      "options": [
+        "If it's sunny, we'll go out.",
+        "It's sunny, so we're going out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si no puedes ir, llama a Mariana.",
+      "options": [
+        "If you can't go, call Mariana.",
+        "If you can go, call Mariana.",
+        "If Mariana can't go, call her."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No vamos al partido si llueve.",
+      "options": [
+        "We're not going to the match if it rains.",
+        "We're going to the match if it rains."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
     {
@@ -37,25 +123,35 @@
     {
       "prompt": "Choose *llueve* or *llover* and type the whole sentence: Si ___, nos quedamos en casa. (If it rains, we'll stay at home.)",
       "answer": "Si llueve, nos quedamos en casa.",
-      "accept": ["Nos quedamos en casa si llueve."],
+      "accept": [
+        "Nos quedamos en casa si llueve."
+      ],
       "why": "*Si* needs a real present form after it, like *llueve*, not the dictionary form."
     },
     {
       "prompt": "Say to a friend: If you want, we'll go dancing on Friday.",
       "answer": "Si quieres, vamos a bailar el viernes.",
-      "accept": ["Vamos a bailar el viernes si quieres.", "Si quieres, el viernes vamos a bailar."],
+      "accept": [
+        "Vamos a bailar el viernes si quieres.",
+        "Si quieres, el viernes vamos a bailar."
+      ],
       "why": "*Si quieres* sets the condition, and the plan stays in the present: *vamos*."
     },
     {
       "prompt": "Say to a friend: If you have time this afternoon, come to the café.",
       "answer": "Si tienes tiempo esta tarde, ven al café.",
-      "accept": ["Ven al café si tienes tiempo esta tarde."],
+      "accept": [
+        "Ven al café si tienes tiempo esta tarde."
+      ],
       "why": "Condition in the present, then a plain instruction: *ven*."
     },
     {
       "prompt": "Say: If it rains, we're not going to the match.",
       "answer": "Si llueve, no vamos al partido.",
-      "accept": ["No vamos al partido si llueve."],
+      "accept": [
+        "No vamos al partido si llueve.",
+        "Si llueve, no vamos a ir al partido."
+      ],
       "why": "English adds a going to or a will; Spanish is happy with the plain present: *no vamos*."
     },
     {
@@ -67,7 +163,9 @@
     {
       "prompt": "Make the condition negative: *Si puedes ir, llama a Mariana.* (If you can't go...)",
       "answer": "Si no puedes ir, llama a Mariana.",
-      "accept": ["Llama a Mariana si no puedes ir."],
+      "accept": [
+        "Llama a Mariana si no puedes ir."
+      ],
       "why": "*No* goes right before the verb, inside the *si* half: *si no puedes*."
     }
   ],

@@ -58,8 +58,8 @@
     },
     {
       "id": "t3",
-      "npc": "Es en una discoteca de la calle 60, a las nueve. ¿Y si no aprendes?",
-      "npcEn": "It's at a club on Calle 60, at nine. And if you don't learn?",
+      "npc": "Es en una discoteca de la calle 60, a las ocho. ¿Y si no aprendes?",
+      "npcEn": "It's at a club on Calle 60, at eight. And if you don't learn?",
       "intent": "Say that if you don't learn, you'll take her out to dinner.",
       "accept": [
         "Si no aprendo, te invito a comer.",
@@ -85,12 +85,13 @@
       "accept": [
         "Sí, ¿me la mandas hoy?",
         "Sí, por favor. ¿Me la mandas hoy?",
-        "Claro. Me la mandas hoy, ¿listo?"
+        "Claro. Me la mandas hoy, ¿listo?",
+        "Sí, ¿me la envías hoy?"
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bme la mandas\\b",
+          "pattern": "\\bme la (mandas|envías|envias|pasas)\\b",
           "flags": "i",
           "label": "send it to me: me la mandas (me first, then la)"
         }
@@ -200,6 +201,7 @@
     "l:encantar",
     "l:enseñar",
     "l:entrada",
+    "l:envío",
     "l:excelente",
     "l:favor",
     "l:hoy",

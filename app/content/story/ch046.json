@@ -2,7 +2,7 @@
   "id": "ch046",
   "unit": "u17",
   "title": "Boleros y salsa",
-  "text": "Los tres papeles amarillos de Hernando eran boletas para el estadio.\nHernando: Santa Fe y Millonarios, el domingo a las cuatro. Sector norte, el sector de Santa Fe.\nTomás: ¿Y la entrada? ¿Cuánto vale?\nHernando: Yo te invito, mijo. Pero hay que ser puntual: a las tres, en la entrada del estadio.\nSimón: ¡Gol! ¡Gol!\nHernando: Simón no va. La última vez gritó gol en un gol de Millonarios.\nEsa tarde entró doña Gloria con otras dos boletas.\nGloria: Tomás, ¿qué plan tiene el viernes? Tengo boletas para un concierto de boleros en el Teatro Colón. La función empieza a las siete.\nTomás: ¿El viernes?\nGloria: Mi esposo y yo íbamos todos los años, pero él ya no sale de noche. Tengo muchas ganas de ir, mijo.\nTomás no sabía rechazar una invitación.\nTomás: Me encantaría, Gloria.\nVale lo miró desde el mostrador.\nVale: Tomás, el viernes a las ocho tienes la rumba con Mariana. Ella ya reservó una mesa en la discoteca.\nTomás: ¿Y ahora qué hago?\nVale: Pues cancelas una cosa. ¿Por qué no rechazas el concierto?\nTomás: No puedo cancelar a Gloria. Y no puedo cancelar la salsa.\nVale: ¿La salsa es una cita?\nTomás: ¿Una cita? No. Es una rumba con una amiga.\nVale: Una rumba con una amiga, en una discoteca, con mesa reservada. Claro.\nVale: ¿Y tú tienes ganas de bailar, o dices que sí a todos?\nTomás: Mira. Si salgo de la función a las ocho y cuarto, llego a la discoteca a las ocho y media.\nHernando: Mijo, en Bogotá el único puntual eres tú.\nVale: Entonces quedamos así: el viernes, boleros y salsa. El domingo, fútbol. ¿Y cuándo duermes?\nSimón: ¡Gol!\nEsa noche llegó un mensaje de Mariana: «Mañana te mando tres clases en el celular. Si no aprendes las vueltas, no hay rumba».",
+  "text": "Los tres papeles amarillos de Hernando eran boletas para el estadio.\nHernando: Santa Fe y Millonarios, el domingo a las cuatro. Sector sur, el sector de Santa Fe.\nTomás: ¿Y la entrada? ¿Cuánto vale?\nHernando: Yo lo invito, mijo. Pero hay que ser puntual: a las tres, en la entrada del estadio.\nSimón: ¡Gol! ¡Gol!\nHernando: Simón no va. La última vez gritó gol en un gol de Millonarios.\nEsa tarde entró doña Gloria con otras dos boletas.\nGloria: Tomás, ¿qué plan tiene el viernes? Tengo boletas para un concierto de boleros en el Teatro Colón. La función empieza a las siete.\nTomás: ¿El viernes?\nGloria: Mi esposo y yo íbamos todos los años, pero él ya no sale de noche. Tengo muchas ganas de ir, mijo.\nTomás no sabía rechazar una invitación.\nTomás: Me encantaría, Gloria.\nVale lo miró desde el mostrador.\nVale: Tomás, el viernes a las ocho tienes la rumba con Mariana. Ella ya reservó una mesa en la discoteca.\nTomás: ¿Y ahora qué hago?\nVale: Pues cancelas una cosa. ¿Por qué no rechazas el concierto?\nTomás: No puedo cancelar a Gloria. Y no puedo cancelar la salsa.\nVale: ¿La salsa es una cita?\nTomás: ¿Una cita? No. Es una rumba con una amiga.\nVale: Una rumba con una amiga, en una discoteca, con mesa reservada. Claro.\nVale: ¿Y tú tienes ganas de bailar, o dices que sí a todos?\nTomás: Mira. Si salgo de la función a las ocho y cuarto, llego a la discoteca a las ocho y media.\nHernando: Mijo, en Bogotá el único puntual es usted.\nVale: Entonces quedamos así: el viernes, boleros y salsa. El domingo, fútbol. ¿Y cuándo duermes?\nSimón: ¡Gol!\nEsa noche llegó un mensaje de Mariana: «Mañana te mando tres clases en el celular. Si no aprendes las vueltas, no hay rumba».",
   "gloss": [
     {
       "es": "boleros",
@@ -13,11 +13,11 @@
       "en": "counter"
     },
     {
-      "es": "Sector norte, el sector de Santa Fe.",
+      "es": "Sector sur, el sector de Santa Fe.",
       "en": "The north stand, Santa Fe's end."
     },
     {
-      "es": "Yo te invito, mijo.",
+      "es": "Yo lo invito, mijo.",
       "en": "It's on me, son."
     },
     {
@@ -41,7 +41,7 @@
       "en": "with a table booked"
     },
     {
-      "es": "el único puntual eres tú",
+      "es": "el único puntual es usted",
       "en": "you're the only one who's on time"
     },
     {
@@ -222,7 +222,6 @@
     "l:mirar",
     "l:mostrador",
     "l:noche",
-    "l:norte",
     "l:papel",
     "l:plan",
     "l:poder",
@@ -237,6 +236,7 @@
     "l:salsa",
     "l:sector",
     "l:ser",
+    "l:sur",
     "l:tarde",
     "l:tener",
     "l:valer",
