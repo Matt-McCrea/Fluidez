@@ -29,8 +29,8 @@
     },
     {
       "id": "t2",
-      "npc": "¿Veinte? ¡Son demasiadas! ¿Y la leche? ¿Hay mucha?",
-      "npcEn": "Twenty? That's too many! And the milk? Is there a lot?",
+      "npc": "¿Veinte? ¡Y pocos clientes! ¿Y la leche? ¿Hay mucha?",
+      "npcEn": "Twenty? And so few customers! And the milk? Is there a lot?",
       "intent": "Say no, there's very little milk.",
       "accept": [
         "No, hay muy poca leche.",

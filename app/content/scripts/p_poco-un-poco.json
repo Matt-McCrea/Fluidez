@@ -35,7 +35,7 @@
     { "prompt": "Say the opposite: Trabajo mucho.", "answer": "Trabajo poco.", "accept": ["Yo trabajo poco."], "why": "The opposite of *mucho* is *poco*." }
   ],
   "pitfalls": [
-    { "wrong": "Hablo poco español.", "right": "Hablo un poco de español.", "why": "Almost. Without *un* it sounds like a complaint. *Un poco de* says you can get by." },
+    { "wrong": "Estoy un poco de cansado.", "right": "Estoy un poco cansado.", "why": "Almost. *De* only comes before a thing, like *un poco de agua*. Before a describing word, just *un poco*." },
     { "wrong": "Necesito un poca de agua.", "right": "Necesito un poco de agua.", "why": "*Un poco* never changes, even before a feminine word like *agua*." },
     { "wrong": "Necesito un poco agua.", "right": "Necesito un poco de agua.", "why": "Before a thing, *un poco* needs *de*: *un poco de agua*." }
   ],

@@ -533,7 +533,7 @@
   {
     "id": "u07-0024",
     "es": "Hay poca luz en este cuarto.",
-    "en": "There's little light in this room.",
+    "en": "There isn't much light in this room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -668,8 +668,8 @@
   },
   {
     "id": "u07-0030",
-    "es": "¿Dónde está mi celular? Está debajo de la silla.",
-    "en": "Where's my cell phone? It's under the chair.",
+    "es": "¿Dónde está mi celular?\nEstá debajo de la silla.",
+    "en": "Where's my cell phone?\nIt's under the chair.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -684,7 +684,7 @@
       "p:possessives-basic"
     ],
     "targets": [],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u07",
     "theme": "my room",
     "source": "gen"
@@ -2675,7 +2675,7 @@
   {
     "id": "u07-0116",
     "es": "Estos muebles son de doña Gloria.",
-    "en": "These pieces of furniture are doña Gloria's.",
+    "en": "This furniture is doña Gloria's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2874,7 +2874,7 @@
   {
     "id": "u07-0125",
     "es": "Esas llaves son del portero.",
-    "en": "Those keys are the porter's.",
+    "en": "Those keys are the doorman's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2944,7 +2944,7 @@
   {
     "id": "u07-0128",
     "es": "Ese portero siempre tiene las llaves de todo.",
-    "en": "That porter always has the keys to everything.",
+    "en": "That doorman always has the keys to everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3014,7 +3014,7 @@
   {
     "id": "u07-0131",
     "es": "Ese número es de mi celular.",
-    "en": "That number is my cell phone's.",
+    "en": "That number is for my cell phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3057,7 +3057,7 @@
   {
     "id": "u07-0133",
     "es": "Aquel número es del portero.",
-    "en": "That number is the porter's.",
+    "en": "That number is the doorman's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3105,7 +3105,7 @@
   {
     "id": "u07-0135",
     "es": "Estos números son de la oficina.",
-    "en": "These numbers are the office's.",
+    "en": "These numbers are for the office.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3128,7 +3128,7 @@
   {
     "id": "u07-0136",
     "es": "¿Esa mujer es la portera?",
-    "en": "Is that woman the porter?",
+    "en": "Is that woman the doorkeeper?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3338,19 +3338,18 @@
   },
   {
     "id": "u07-0145",
-    "es": "Mis vecinos miran esa película todas las noches.",
-    "en": "My neighbours watch that film every night.",
+    "es": "Esos vecinos miran la calle todas las noches.",
+    "en": "Those neighbours watch the street every night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:gender-articles",
       "g:present-ar",
+      "l:calle",
       "l:mirar",
       "l:noche",
-      "l:película",
-      "l:vecino",
-      "p:possessives-basic"
+      "l:vecino"
     ],
     "targets": [
       "g:demonstratives",
@@ -3755,7 +3754,7 @@
   {
     "id": "u07-0163",
     "es": "Eso es un cuadro de mi abuela.",
-    "en": "That's a picture by my grandmother.",
+    "en": "That's a picture of my grandmother's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3796,8 +3795,8 @@
   },
   {
     "id": "u07-0165",
-    "es": "¿Qué es aquello? Es un edificio nuevo.",
-    "en": "What's that over there? It's a new building.",
+    "es": "¿Qué es aquello?\nEs un edificio nuevo.",
+    "en": "What's that over there?\nIt's a new building.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3982,7 +3981,7 @@
   },
   {
     "id": "u07-0173",
-    "es": "Estos pisos son grandes y baratos.",
+    "es": "Estos apartamentos son grandes y baratos.",
     "en": "These apartments are big and cheap.",
     "accept": [],
     "acceptEn": [],
@@ -3990,14 +3989,13 @@
       "g:adjective-agreement",
       "g:demonstratives",
       "g:ser-identity",
+      "l:apartamento",
       "l:barato",
       "l:grande",
-      "l:piso",
       "l:ser"
     ],
     "targets": [
-      "g:demonstratives",
-      "l:piso"
+      "g:demonstratives"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -4844,7 +4842,7 @@
   {
     "id": "u07-0210",
     "es": "Allá está el portero con sus llaves.",
-    "en": "The porter is over there with his keys.",
+    "en": "The doorman is over there with his keys.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5043,7 +5041,7 @@
   {
     "id": "u07-0219",
     "es": "Ahí vive el portero.",
-    "en": "The porter lives there.",
+    "en": "The doorman lives there.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5428,7 +5426,7 @@
   {
     "id": "u07-0236",
     "es": "Hace un rato llegó el portero.",
-    "en": "The porter arrived a little while ago.",
+    "en": "The doorman arrived a little while ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5720,17 +5718,19 @@
   },
   {
     "id": "u07-0248",
-    "es": "¿Hace cuánto vives aquí?",
-    "en": "How long ago did you move here? (to a friend)",
+    "es": "¿Hace cuánto llegaste al barrio?",
+    "en": "How long ago did you arrive in the neighbourhood? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-er-ir",
+      "g:preterite-ar",
       "g:questions",
-      "l:aquí",
+      "l:barrio",
       "l:cuánto",
       "l:hacer",
-      "l:vivir"
+      "l:llegar"
     ],
     "targets": [],
     "kind": "question",
@@ -5855,8 +5855,8 @@
   },
   {
     "id": "u07-0254",
-    "es": "¿Ya comiste? Hace una hora comí un poco.",
-    "en": "Have you eaten? An hour ago I had a little something.",
+    "es": "¿Ya comiste?\nSí, comí un poco hace una hora.",
+    "en": "Have you eaten?\nYes, I had a little something an hour ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5957,7 +5957,7 @@
   {
     "id": "u07-0258",
     "es": "El portero abrió la puerta hace un momento.",
-    "en": "The porter opened the door a moment ago.",
+    "en": "The doorman opened the door a moment ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6135,24 +6135,23 @@
   },
   {
     "id": "u07-0265",
-    "es": "Hace una semana no hay agua en la escalera.",
-    "en": "There's been no water on the staircase for a week.",
+    "es": "Hace una semana no funciona la lámpara de la escalera.",
+    "en": "The staircase lamp hasn't worked for a week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:gender-articles",
       "g:hace-ago",
-      "g:hay-vs-esta",
+      "g:present-ar",
       "g:present-er-ir",
-      "l:agua",
       "l:escalera",
+      "l:funcionar",
       "l:hacer",
+      "l:lámpara",
       "l:semana"
     ],
     "targets": [
       "g:hace-ago",
-      "g:hay-vs-esta",
       "l:escalera"
     ],
     "kind": "statement",
@@ -6312,7 +6311,7 @@
   {
     "id": "u07-0272",
     "es": "Hace cuatro días hablé con el portero.",
-    "en": "Four days ago I talked to the porter.",
+    "en": "Four days ago I talked to the doorman.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6641,14 +6640,14 @@
   },
   {
     "id": "u07-0285",
-    "es": "¿Hace cuánto pagas el arriendo?",
-    "en": "How long have you been paying the rent? (to a friend)",
+    "es": "¿Hace cuánto pagaste el arriendo?",
+    "en": "How long ago did you pay the rent? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
       "g:present-er-ir",
+      "g:preterite-ar",
       "g:questions",
       "l:arriendo",
       "l:cuánto",
@@ -7211,7 +7210,7 @@
   },
   {
     "id": "u07-0309",
-    "es": "El vecino nuevo es del Canadá.",
+    "es": "El vecino nuevo es de Canadá.",
     "en": "The new neighbour is from Canada.",
     "accept": [],
     "acceptEn": [],
@@ -7470,7 +7469,7 @@
   {
     "id": "u07-0320",
     "es": "Un rato después, el portero salió con las llaves.",
-    "en": "A while later, the porter came out with the keys.",
+    "en": "A while later, the doorman came out with the keys.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7564,7 +7563,7 @@
   {
     "id": "u07-0324",
     "es": "Espero al portero hace un rato.",
-    "en": "I've been waiting for the porter for a while.",
+    "en": "I've been waiting for the doorman for a while.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8481,7 +8480,7 @@
   {
     "id": "u07-0364",
     "es": "La cuarta puerta es la del portero.",
-    "en": "The fourth door is the porter's.",
+    "en": "The fourth door is the doorman's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9024,13 +9023,13 @@
   },
   {
     "id": "u07-0388",
-    "es": "Mi vecina sube la escalera diez veces hoy.",
-    "en": "My neighbour climbs the stairs ten times today.",
+    "es": "Hoy mi vecina subió la escalera diez veces.",
+    "en": "Today my neighbour climbed the stairs ten times.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:preterite-er-ir",
       "l:escalera",
       "l:hoy",
       "l:subir",
@@ -9050,7 +9049,7 @@
   {
     "id": "u07-0389",
     "es": "Siempre bajo al primer piso para hablar con el portero.",
-    "en": "I always go down to the first floor to talk to the porter.",
+    "en": "I always go down to the first floor to talk to the doorman.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9711,7 +9710,7 @@
   {
     "id": "u07-0419",
     "es": "¿Dónde está el portero?",
-    "en": "Where's the porter?",
+    "en": "Where's the doorman?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10590,16 +10589,14 @@
   },
   {
     "id": "u07-0460",
-    "es": "No, no es lejos, queda cerquita.",
-    "en": "No, it's not far, it's really close.",
+    "es": "No, para nada, queda cerquita.",
+    "en": "No, not at all, it's really close.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:para-nada",
       "c:queda-cerquita",
-      "g:ser-identity",
-      "l:lejos",
-      "l:quedar",
-      "l:ser"
+      "l:quedar"
     ],
     "targets": [
       "c:queda-cerquita"
@@ -10635,15 +10632,15 @@
   },
   {
     "id": "u07-0462",
-    "es": "Sí, queda al lado del banco.",
-    "en": "Yes, it's next to the bank.",
+    "es": "Sí, queda entre el banco y la panadería.",
+    "en": "Yes, it's between the bank and the bakery.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:banco",
-      "l:lado",
+      "l:panadería",
       "l:quedar"
     ],
     "targets": [],
@@ -10777,18 +10774,19 @@
   },
   {
     "id": "u07-0469",
-    "es": "¿Cuánto queda de aquí a la estación?",
-    "en": "How far is it from here to the station?",
+    "es": "¿Cuántas cuadras hay de aquí a la estación?",
+    "en": "How many blocks is it from here to the station?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
-      "g:present-ar",
+      "g:hay-vs-esta",
       "g:questions",
       "l:aquí",
+      "l:cuadra",
       "l:cuánto",
-      "l:estación",
-      "l:quedar"
+      "l:estación"
     ],
     "targets": [],
     "kind": "question",
@@ -11200,8 +11198,8 @@
   },
   {
     "id": "u07-0490",
-    "es": "Hay demasiada gente en el trancón.",
-    "en": "There are too many people in the traffic jam.",
+    "es": "Hay demasiada gente en la droguería hoy.",
+    "en": "There are too many people in the pharmacy today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11209,8 +11207,9 @@
       "g:gender-articles",
       "g:hay-vs-esta",
       "g:quantifiers",
+      "l:droguería",
       "l:gente",
-      "l:trancón"
+      "l:hoy"
     ],
     "targets": [
       "g:hay-vs-esta",
@@ -11483,7 +11482,7 @@
   {
     "id": "u07-0502",
     "es": "No, hoy hay poco trancón.",
-    "en": "No, today there's little traffic.",
+    "en": "No, there isn't much traffic today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12090,15 +12089,15 @@
   },
   {
     "id": "u07-0528",
-    "es": "Es demasiado lejos.",
+    "es": "Queda demasiado lejos.",
     "en": "It's too far.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:present-ar",
       "g:quantifiers",
-      "g:ser-identity",
       "l:lejos",
-      "l:ser"
+      "l:quedar"
     ],
     "targets": [
       "g:quantifiers"
@@ -12110,15 +12109,16 @@
   },
   {
     "id": "u07-0529",
-    "es": "Es bastante cerca.",
+    "es": "Queda bastante cerca.",
     "en": "It's quite close.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:present-ar",
       "g:quantifiers",
-      "g:ser-identity",
       "l:cerca",
-      "l:ser"
+      "l:quedar",
+      "p:quedar-cerca"
     ],
     "targets": [
       "g:quantifiers",
@@ -12309,7 +12309,7 @@
   {
     "id": "u07-0538",
     "es": "Entiendo bastante, pero hablo poco.",
-    "en": "I understand quite a lot, but I speak little.",
+    "en": "I understand quite a lot, but I don't speak much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12351,7 +12351,7 @@
   {
     "id": "u07-0540",
     "es": "Tomás estudia demasiado y duerme poco.",
-    "en": "Tomás studies too much and sleeps little.",
+    "en": "Tomás studies too much and doesn't sleep much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14266,8 +14266,8 @@
   },
   {
     "id": "u07-0623",
-    "es": "¿Vive cerca? Sí, vivo por acá.",
-    "en": "Do you live nearby? Yes, I live round here.",
+    "es": "¿Vive cerca?\nSí, vivo por acá.",
+    "en": "Do you live nearby? (polite)\nYes, I live round here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14289,8 +14289,8 @@
   },
   {
     "id": "u07-0624",
-    "es": "¿Cuánto cuesta el arriendo? Más o menos trescientos mil.",
-    "en": "How much is the rent? About three hundred thousand.",
+    "es": "¿Cuánto cuesta el arriendo?\nMás o menos trescientos mil.",
+    "en": "How much is the rent?\nAbout three hundred thousand.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14333,17 +14333,18 @@
   },
   {
     "id": "u07-0626",
-    "es": "Mi cuarto tiene más o menos tres metros.",
-    "en": "My room is more or less three metres.",
+    "es": "La ducha funciona más o menos dos horas al día.",
+    "en": "The shower works for about two hours a day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:mas-o-menos",
-      "c:tienes",
-      "g:stem-boot",
-      "l:metro",
-      "l:tener",
-      "p:possessives-basic"
+      "g:gender-articles",
+      "g:present-ar",
+      "l:ducha",
+      "l:día",
+      "l:funcionar",
+      "l:hora"
     ],
     "targets": [
       "c:mas-o-menos"
@@ -14356,7 +14357,7 @@
   {
     "id": "u07-0627",
     "es": "El apartamento tiene más o menos cincuenta metros.",
-    "en": "The apartment is more or less fifty metres.",
+    "en": "The apartment is more or less fifty square metres.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14697,8 +14698,8 @@
   },
   {
     "id": "u07-0642",
-    "es": "Pago más o menos doscientos mil pesos de agua.",
-    "en": "I pay about two hundred thousand pesos for water.",
+    "es": "Pago más o menos cincuenta mil pesos de agua.",
+    "en": "I pay about fifty thousand pesos for water.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14787,7 +14788,7 @@
   {
     "id": "u07-0646",
     "es": "Caminamos más o menos diez minutos.",
-    "en": "We walked about ten minutes.",
+    "en": "We walked for about ten minutes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14829,8 +14830,8 @@
   },
   {
     "id": "u07-0648",
-    "es": "¿Cuántos pisos tiene? Más o menos seis.",
-    "en": "How many floors does it have? About six.",
+    "es": "¿Cuántos pisos tiene?\nMás o menos seis.",
+    "en": "How many floors does it have?\nAbout six.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14853,8 +14854,8 @@
   },
   {
     "id": "u07-0649",
-    "es": "¿Cuántas cuadras son? Más o menos tres.",
-    "en": "How many blocks is it? About three.",
+    "es": "¿Cuántas cuadras son?\nMás o menos tres.",
+    "en": "How many blocks is it?\nAbout three.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14875,8 +14876,8 @@
   },
   {
     "id": "u07-0650",
-    "es": "¿A qué hora llegas? Más o menos a las ocho.",
-    "en": "What time do you arrive? Around eight.",
+    "es": "¿A qué hora llegas?\nMás o menos a las ocho.",
+    "en": "What time do you arrive? (to a friend)\nAround eight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14968,7 +14969,7 @@
   {
     "id": "u07-0654",
     "es": "Hace dos días hablé con el portero del edificio.",
-    "en": "Two days ago I talked to the building's porter.",
+    "en": "Two days ago I talked to the building's doorman.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15138,16 +15139,15 @@
   },
   {
     "id": "u07-0661",
-    "es": "Vale cocinó el pan hace una hora.",
-    "en": "Vale baked the bread an hour ago.",
+    "es": "Vale hizo el pan hace una hora.",
+    "en": "Vale made the bread an hour ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-ago",
       "g:present-er-ir",
-      "g:preterite-ar",
-      "l:cocinar",
+      "g:preterite-ser-ir-hacer",
       "l:hacer",
       "l:hora",
       "l:pan"
@@ -15479,8 +15479,8 @@
   },
   {
     "id": "u07-0675",
-    "es": "Mariana escribió el reporte hace una semana.",
-    "en": "Mariana wrote the report a week ago.",
+    "es": "Mariana escribió el artículo hace una semana.",
+    "en": "Mariana wrote the article a week ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15488,9 +15488,9 @@
       "g:hace-ago",
       "g:present-er-ir",
       "g:preterite-er-ir",
+      "l:artículo",
       "l:escribir",
       "l:hacer",
-      "l:reporte",
       "l:semana"
     ],
     "targets": [
@@ -15674,7 +15674,7 @@
   {
     "id": "u07-0683",
     "es": "¿Cuándo llegó el portero?\nHace un momento.",
-    "en": "When did the porter arrive?\nA moment ago.",
+    "en": "When did the doorman arrive?\nA moment ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15951,7 +15951,7 @@
   {
     "id": "u07-0694",
     "es": "¿Hace cuánto llegó el portero?",
-    "en": "How long ago did the porter arrive?",
+    "en": "How long ago did the doorman arrive?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16638,7 +16638,7 @@
   {
     "id": "u07-0722",
     "es": "Mis vecinos cambiaron la puerta hace un mes.",
-    "en": "My neighbours changed the door a month ago.",
+    "en": "My neighbours replaced the door a month ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16691,7 +16691,7 @@
   {
     "id": "u07-0724",
     "es": "Cambiamos la estufa hace un año.",
-    "en": "We changed the stove a year ago.",
+    "en": "We replaced the stove a year ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17425,20 +17425,20 @@
   },
   {
     "id": "u07-0754",
-    "es": "Hace un mes no hablé español con nadie.",
-    "en": "A month ago I didn't speak Spanish with anyone.",
+    "es": "Hace un mes Tomás llegó a Bogotá sin plata y sin casa.",
+    "en": "A month ago Tomás arrived in Bogotá with no money and no home.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-ago",
-      "g:negation-words",
       "g:present-er-ir",
       "g:preterite-ar",
-      "l:español",
-      "l:hablar",
+      "l:casa",
       "l:hacer",
-      "l:mes"
+      "l:llegar",
+      "l:mes",
+      "l:plata"
     ],
     "targets": [
       "g:hace-ago"
@@ -17474,25 +17474,24 @@
   },
   {
     "id": "u07-0756",
-    "es": "Hace un mes no tenía casa en este barrio.",
-    "en": "A month ago I had no house in this neighbourhood.",
+    "es": "Hace un mes vi este barrio por primera vez.",
+    "en": "A month ago I saw this neighbourhood for the first time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-ago",
-      "g:imperfect-states",
       "g:present-er-ir",
+      "g:preterite-er-ir",
       "l:barrio",
-      "l:casa",
       "l:hacer",
       "l:mes",
-      "l:tener",
+      "l:ver",
+      "l:vez",
       "p:demonstratives-basic"
     ],
     "targets": [
-      "g:hace-ago",
-      "l:casa"
+      "g:hace-ago"
     ],
     "kind": "dialogue",
     "unit": "u07",
@@ -17525,23 +17524,23 @@
   },
   {
     "id": "u07-0758",
-    "es": "Hace un año no tenía casa.",
-    "en": "A year ago I had no house.",
+    "es": "Hace un año visité Bogotá con mi papá.",
+    "en": "A year ago I visited Bogotá with my dad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-ago",
-      "g:imperfect-states",
       "g:present-er-ir",
+      "g:preterite-ar",
       "l:año",
-      "l:casa",
       "l:hacer",
-      "l:tener"
+      "l:papá",
+      "l:visitar",
+      "p:possessives-basic"
     ],
     "targets": [
-      "g:hace-ago",
-      "l:casa"
+      "g:hace-ago"
     ],
     "kind": "dialogue",
     "unit": "u07",
@@ -17743,12 +17742,12 @@
   },
   {
     "id": "u07-0768",
-    "es": "¿Toda la gente vive en este edificio?",
-    "en": "Do all the people live in this building?",
+    "es": "¿Toda esa gente vive en este edificio?",
+    "en": "Do all those people live in this building?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:demonstratives",
       "g:present-er-ir",
       "l:edificio",
       "l:gente",
@@ -17845,19 +17844,18 @@
   },
   {
     "id": "u07-0773",
-    "es": "La gente aquí es muy simpática.",
-    "en": "People here are very nice.",
+    "es": "La gente aquí toma tinto todo el día.",
+    "en": "People here drink black coffee all day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:present-ar",
       "l:aquí",
+      "l:día",
       "l:gente",
-      "l:ser",
-      "l:simpático",
-      "p:quantifiers-basic"
+      "l:tinto",
+      "l:tomar"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -18737,7 +18735,7 @@
   {
     "id": "u07-0813",
     "es": "Mi vecino conoce a medio mundo.",
-    "en": "My neighbour knows half the world.",
+    "en": "My neighbour knows half the town.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19357,8 +19355,8 @@
   },
   {
     "id": "u07-0841",
-    "es": "Vamos a encontrarnos aquí a las ocho.",
-    "en": "We're going to meet here at eight.",
+    "es": "¿Vamos a encontrarnos aquí o en el café?",
+    "en": "Are we going to meet here or at the café?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19368,6 +19366,7 @@
       "g:object-pronoun-position",
       "g:reflexive-routine",
       "l:aquí",
+      "l:café",
       "l:encontrar",
       "l:ir"
     ],
@@ -19380,7 +19379,7 @@
   {
     "id": "u07-0842",
     "es": "Gloria y yo vamos a encontrarnos con el portero.",
-    "en": "Gloria and I are going to meet the porter.",
+    "en": "Gloria and I are going to meet the doorman.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19403,22 +19402,22 @@
   },
   {
     "id": "u07-0843",
-    "es": "Voy a encontrarme con el portero porque trabaja en la noche.",
-    "en": "I'm going to meet the porter because he works at night.",
+    "es": "Hoy no puedo encontrarme con el portero; trabaja en la noche.",
+    "en": "I can't meet the doorman today; he works at night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:porque",
-      "c:voy-a",
-      "g:cause-result",
+      "c:puedo",
       "g:gender-articles",
-      "g:ir-a-plans",
       "g:object-pronoun-position",
       "g:present-ar",
       "g:reflexive-routine",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:encontrar",
-      "l:ir",
+      "l:hoy",
       "l:noche",
+      "l:poder",
       "l:portero",
       "l:trabajar"
     ],
@@ -19505,25 +19504,24 @@
   },
   {
     "id": "u07-0847",
-    "es": "Quiero sentirme bien en casa.",
-    "en": "I want to feel good at home.",
+    "es": "No puedo sentirme bien en un cuarto sin ventana.",
+    "en": "I can't feel good in a room with no window.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "c:quiero",
+      "c:puedo",
+      "g:gender-articles",
       "g:object-pronoun-position",
       "g:reflexive-routine",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:bien",
-      "l:casa",
-      "l:querer",
-      "l:sentir"
+      "l:poder",
+      "l:sentir",
+      "l:ventana"
     ],
-    "targets": [
-      "l:casa"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u07",
     "theme": "playing, meeting, feeling at home",
@@ -19557,22 +19555,22 @@
   },
   {
     "id": "u07-0849",
-    "es": "Quiero sentirme en casa en un país nuevo.",
-    "en": "I want to feel at home in a new country.",
+    "es": "Con Simón en la casa, no puedo sentirme tranquila.",
+    "en": "With Simón in the house, I can't feel calm. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
+      "c:puedo",
+      "c:tranquilo",
       "g:gender-articles",
       "g:object-pronoun-position",
       "g:reflexive-routine",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:casa",
-      "l:nuevo",
-      "l:país",
-      "l:querer",
-      "l:sentir"
+      "l:poder",
+      "l:sentir",
+      "l:tranquilo"
     ],
     "targets": [
       "l:casa"
@@ -19584,8 +19582,8 @@
   },
   {
     "id": "u07-0850",
-    "es": "Gloria quiere una casa tranquila para sus clientes.",
-    "en": "Gloria wants a calm house for her customers.",
+    "es": "Doña Gloria quiere una casa tranquila, sin fiestas.",
+    "en": "Doña Gloria wants a quiet house, with no parties.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19593,11 +19591,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:casa",
-      "l:cliente",
+      "l:fiesta",
       "l:querer",
-      "l:tranquilo",
-      "p:para-inf",
-      "p:possessives-basic"
+      "l:tranquilo"
     ],
     "targets": [
       "l:casa"
@@ -19632,18 +19628,21 @@
   },
   {
     "id": "u07-0852",
-    "es": "Voy a sentirme en casa aquí.",
-    "en": "I'm going to feel at home here.",
+    "es": "¿Cómo voy a sentirme en casa en un cuarto tan pequeño?",
+    "en": "How am I going to feel at home in such a small room?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:voy-a",
+      "g:gender-articles",
       "g:ir-a-plans",
       "g:object-pronoun-position",
+      "g:questions",
       "g:reflexive-routine",
-      "l:aquí",
       "l:casa",
+      "l:cómo",
       "l:ir",
+      "l:pequeño",
       "l:sentir"
     ],
     "targets": [
@@ -19852,25 +19851,26 @@
   },
   {
     "id": "u07-0861",
-    "es": "Mi trabajo queda cerca de la estación.",
-    "en": "My job is near the station.",
+    "es": "Mi oficina está cerca de la estación y siempre camino.",
+    "en": "My office is near the station and I always walk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:gender-articles",
       "g:present-ar",
+      "l:caminar",
       "l:cerca",
       "l:estación",
-      "l:quedar",
-      "l:trabajo",
+      "l:estar",
+      "l:oficina",
+      "l:siempre",
       "p:cerca-de",
-      "p:possessives-basic",
-      "p:quedar-cerca"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:cerca",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "p:cerca-de"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -19905,8 +19905,8 @@
   },
   {
     "id": "u07-0863",
-    "es": "El mercado queda cerca de mi casa.",
-    "en": "The market is near my house.",
+    "es": "Los domingos compro fruta en un mercado cerca de mi casa.",
+    "en": "On Sundays I buy fruit at a market near my house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19914,17 +19914,17 @@
       "g:present-ar",
       "l:casa",
       "l:cerca",
+      "l:comprar",
+      "l:domingo",
+      "l:fruta",
       "l:mercado",
-      "l:quedar",
       "p:cerca-de",
-      "p:possessives-basic",
-      "p:quedar-cerca"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:casa",
       "l:cerca",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "p:cerca-de"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -19959,22 +19959,23 @@
   },
   {
     "id": "u07-0865",
-    "es": "El colegio queda cerca del parque.",
-    "en": "The school is near the park.",
+    "es": "Los niños del colegio juegan en un parque cerca de aquí.",
+    "en": "The schoolchildren play in a park near here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:stem-boot",
+      "l:aquí",
       "l:cerca",
       "l:colegio",
+      "l:jugar",
+      "l:niño",
       "l:parque",
-      "l:quedar",
-      "p:quedar-cerca"
+      "p:cerca-de"
     ],
     "targets": [
-      "l:cerca",
-      "p:quedar-cerca"
+      "l:cerca"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -19983,22 +19984,20 @@
   },
   {
     "id": "u07-0866",
-    "es": "La universidad queda cerca del centro.",
-    "en": "The university is near downtown.",
+    "es": "Busco un cuarto cerca de la universidad.",
+    "en": "I'm looking for a room near the university.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:centro",
+      "l:buscar",
       "l:cerca",
-      "l:quedar",
       "l:universidad",
-      "p:quedar-cerca"
+      "p:cerca-de"
     ],
     "targets": [
-      "l:cerca",
-      "p:quedar-cerca"
+      "l:cerca"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -20007,24 +20006,23 @@
   },
   {
     "id": "u07-0867",
-    "es": "El hospital queda cerca de la estación.",
-    "en": "The hospital is near the station.",
+    "es": "Mi mamá quiere vivir cerca del hospital.",
+    "en": "My mom wants to live near the hospital.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:cerca",
-      "l:estación",
       "l:hospital",
-      "l:quedar",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "l:mamá",
+      "l:querer",
+      "l:vivir",
+      "p:possessives-basic"
     ],
     "targets": [
-      "l:cerca",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "l:cerca"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -20033,26 +20031,28 @@
   },
   {
     "id": "u07-0868",
-    "es": "La tienda de mi tío queda cerca de la esquina.",
-    "en": "My uncle's shop is near the corner.",
+    "es": "Mi tío abrió una tienda cerca de la esquina hace un año.",
+    "en": "My uncle opened a shop near the corner a year ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:hace-ago",
+      "g:present-er-ir",
+      "g:preterite-er-ir",
+      "l:abrir",
+      "l:año",
       "l:cerca",
       "l:esquina",
-      "l:quedar",
+      "l:hacer",
       "l:tienda",
       "l:tío",
       "p:cerca-de",
-      "p:possessives-basic",
-      "p:quedar-cerca"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:cerca",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "p:cerca-de"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -20085,8 +20085,8 @@
   },
   {
     "id": "u07-0870",
-    "es": "Mi apartamento queda cerca del parque.",
-    "en": "My apartment is near the park.",
+    "es": "Mi apartamento queda cerca del parque, pero lejos del trabajo.",
+    "en": "My apartment is near the park, but far from work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20094,8 +20094,10 @@
       "g:present-ar",
       "l:apartamento",
       "l:cerca",
+      "l:lejos",
       "l:parque",
       "l:quedar",
+      "l:trabajo",
       "p:possessives-basic",
       "p:quedar-cerca"
     ],
@@ -20111,25 +20113,19 @@
   },
   {
     "id": "u07-0871",
-    "es": "Su casa queda cerca de la casa de Vale.",
-    "en": "His house is near Vale's house.",
+    "es": "Hernando vive cerca de Vale, a tres cuadras.",
+    "en": "Hernando lives near Vale, three blocks away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:present-ar",
-      "l:casa",
+      "g:present-er-ir",
       "l:cerca",
-      "l:quedar",
-      "p:cerca-de",
-      "p:possessives-basic",
-      "p:quedar-cerca"
+      "l:cuadra",
+      "l:vivir",
+      "p:cerca-de"
     ],
     "targets": [
-      "l:casa",
-      "l:cerca",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "p:cerca-de"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -20138,25 +20134,25 @@
   },
   {
     "id": "u07-0872",
-    "es": "El cajero queda cerca de la droguería.",
-    "en": "The cash machine is near the pharmacy.",
+    "es": "Hay un cajero cerca de la droguería, pero no funciona.",
+    "en": "There's a cash machine near the pharmacy, but it doesn't work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:present-ar",
       "l:cajero",
       "l:cerca",
       "l:droguería",
-      "l:quedar",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "l:funcionar",
+      "p:cerca-de"
     ],
     "targets": [
       "l:cerca",
       "l:droguería",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "p:cerca-de"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -20165,25 +20161,23 @@
   },
   {
     "id": "u07-0873",
-    "es": "El parqueadero queda cerca de la plaza.",
-    "en": "The car park is near the square.",
+    "es": "No hay parqueadero cerca de la plaza.",
+    "en": "There's no car park near the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
-      "g:present-ar",
+      "g:hay-vs-esta",
       "l:cerca",
       "l:parqueadero",
       "l:plaza",
-      "l:quedar",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "p:cerca-de"
     ],
     "targets": [
       "l:cerca",
       "l:parqueadero",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "p:cerca-de"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -20192,25 +20186,27 @@
   },
   {
     "id": "u07-0874",
-    "es": "El cine queda cerca de mi oficina.",
-    "en": "The cinema is near my office.",
+    "es": "Después del trabajo vamos a un cine cerca de mi oficina.",
+    "en": "After work we go to a cinema near my office.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:vamos-a",
       "g:gender-articles",
-      "g:present-ar",
+      "g:ir-a-plans",
       "l:cerca",
       "l:cine",
+      "l:después",
+      "l:ir",
       "l:oficina",
-      "l:quedar",
+      "l:trabajo",
       "p:cerca-de",
       "p:possessives-basic",
-      "p:quedar-cerca"
+      "p:time-sequence-basic"
     ],
     "targets": [
       "l:cerca",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "p:cerca-de"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -20273,26 +20269,28 @@
   },
   {
     "id": "u07-0877",
-    "es": "Ese banco queda cerca de la oficina.",
-    "en": "That bank is near the office.",
+    "es": "Ese banco cerca de la oficina siempre tiene mucha gente.",
+    "en": "That bank near the office always has a lot of people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:demonstratives",
       "g:gender-articles",
-      "g:present-ar",
+      "g:stem-boot",
       "l:banco",
       "l:cerca",
+      "l:gente",
       "l:oficina",
-      "l:quedar",
+      "l:siempre",
+      "l:tener",
       "p:cerca-de",
-      "p:quedar-cerca"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:demonstratives",
       "l:cerca",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "p:cerca-de"
     ],
     "kind": "statement",
     "unit": "u07",
@@ -20734,14 +20732,16 @@
   },
   {
     "id": "u07-0895",
-    "es": "Vivo cerca del mercado.",
-    "en": "I live near the market.",
+    "es": "Vivo cerca del mercado, pero casi nunca cocino.",
+    "en": "I live near the market, but I almost never cook.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-ar",
       "g:present-er-ir",
       "l:cerca",
+      "l:cocinar",
       "l:mercado",
       "l:vivir"
     ],
@@ -20755,17 +20755,20 @@
   },
   {
     "id": "u07-0896",
-    "es": "Vivo cerca de una droguería.",
-    "en": "I live near a pharmacy.",
+    "es": "Mi vecina trabaja en una droguería cerca de aquí.",
+    "en": "My neighbour works at a pharmacy near here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
-      "g:present-er-ir",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:aquí",
       "l:cerca",
       "l:droguería",
-      "l:vivir",
-      "p:cerca-de"
+      "l:trabajar",
+      "l:vecino",
+      "p:cerca-de",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:cerca",
@@ -20823,19 +20826,23 @@
   },
   {
     "id": "u07-0899",
-    "es": "Mi tía vive cerca de la plaza.",
-    "en": "My aunt lives near the square.",
+    "es": "Mi tía vive cerca de la plaza y nos visita mucho.",
+    "en": "My aunt lives near the square and visits us a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-ar",
       "g:present-er-ir",
       "l:cerca",
       "l:plaza",
       "l:tía",
+      "l:visitar",
       "l:vivir",
       "p:cerca-de",
-      "p:possessives-basic"
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:cerca",
@@ -20848,8 +20855,8 @@
   },
   {
     "id": "u07-0900",
-    "es": "Mis padres viven cerca del colegio.",
-    "en": "My parents live near the school.",
+    "es": "Mis padres viven cerca del colegio de mi hermano.",
+    "en": "My parents live near my brother's school.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20857,6 +20864,7 @@
       "g:present-er-ir",
       "l:cerca",
       "l:colegio",
+      "l:hermano",
       "l:padres",
       "l:vivir",
       "p:possessives-basic"
@@ -20918,8 +20926,8 @@
   },
   {
     "id": "u07-0903",
-    "es": "Estudio cerca del centro.",
-    "en": "I study near downtown.",
+    "es": "Estudio en una universidad cerca del centro.",
+    "en": "I study at a university near downtown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20927,7 +20935,8 @@
       "g:present-ar",
       "l:centro",
       "l:cerca",
-      "l:estudiar"
+      "l:estudiar",
+      "l:universidad"
     ],
     "targets": [
       "l:cerca"
@@ -20963,8 +20972,8 @@
   },
   {
     "id": "u07-0905",
-    "es": "Siempre duermo cerca de la puerta.",
-    "en": "I always sleep near the door.",
+    "es": "El perro siempre duerme cerca de la puerta.",
+    "en": "The dog always sleeps near the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20972,6 +20981,7 @@
       "g:stem-boot",
       "l:cerca",
       "l:dormir",
+      "l:perro",
       "l:puerta",
       "l:siempre",
       "p:cerca-de"
@@ -21269,8 +21279,8 @@
   },
   {
     "id": "u07-0919",
-    "es": "No queda cerca de un banco.",
-    "en": "It's not near a bank.",
+    "es": "No queda cerca del banco.",
+    "en": "It's not near the bank.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21279,12 +21289,10 @@
       "l:banco",
       "l:cerca",
       "l:quedar",
-      "p:cerca-de",
       "p:quedar-cerca"
     ],
     "targets": [
       "l:cerca",
-      "p:cerca-de",
       "p:quedar-cerca"
     ],
     "kind": "statement",
@@ -22057,8 +22065,8 @@
   },
   {
     "id": "u07-0956",
-    "es": "¿Cuántos son? Unos veinte.",
-    "en": "How many are there? About twenty.",
+    "es": "¿Cuántos son?\nUnos veinte.",
+    "en": "How many are there?\nAbout twenty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22076,8 +22084,8 @@
   },
   {
     "id": "u07-0957",
-    "es": "¿Cuánto cuesta? Unos diez mil pesos.",
-    "en": "How much is it? About ten thousand pesos.",
+    "es": "¿Cuánto cuesta?\nUnos diez mil pesos.",
+    "en": "How much is it?\nAbout ten thousand pesos.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22096,8 +22104,8 @@
   },
   {
     "id": "u07-0958",
-    "es": "¿Cuántos años tiene? Unos sesenta.",
-    "en": "How old is he? About sixty.",
+    "es": "¿Cuántos años tiene?\nUnos sesenta.",
+    "en": "How old is he?\nAbout sixty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22117,8 +22125,8 @@
   },
   {
     "id": "u07-0959",
-    "es": "¿Cuánto es el arriendo? Unos quinientos mil.",
-    "en": "How much is the rent? About five hundred thousand.",
+    "es": "¿Cuánto es el arriendo?\nUnos quinientos mil.",
+    "en": "How much is the rent?\nAbout five hundred thousand.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22140,18 +22148,20 @@
   },
   {
     "id": "u07-0960",
-    "es": "¿Cuánto tiempo hace? Unos tres años.",
-    "en": "How long ago was it? About three years.",
+    "es": "¿Hace cuánto llegaste?\nHace unos tres años.",
+    "en": "How long ago did you arrive? (to a friend)\nAbout three years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:cuanto-tiempo",
       "g:gender-articles",
+      "g:hace-ago",
       "g:present-er-ir",
+      "g:preterite-ar",
+      "g:questions",
       "l:año",
       "l:cuánto",
       "l:hacer",
-      "l:tiempo"
+      "l:llegar"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -22162,7 +22172,7 @@
   {
     "id": "u07-0961",
     "es": "Duermo poco en esta casa.",
-    "en": "I sleep little in this house.",
+    "en": "I don't sleep much in this house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22182,8 +22192,8 @@
   },
   {
     "id": "u07-0962",
-    "es": "Como poco en la mañana.",
-    "en": "I eat little in the morning.",
+    "es": "En la mañana solo como un poco de pan.",
+    "en": "In the morning I only eat a little bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22191,6 +22201,7 @@
       "g:present-er-ir",
       "l:comer",
       "l:mañana",
+      "l:pan",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -22201,20 +22212,18 @@
   },
   {
     "id": "u07-0963",
-    "es": "Hablo poco con mis vecinos.",
-    "en": "I talk little with my neighbours.",
+    "es": "Hernando habla poco de su familia.",
+    "en": "Hernando doesn't talk much about his family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
+      "l:familia",
       "l:hablar",
-      "l:vecino",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
-    "targets": [
-      "l:vecino"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u07",
     "theme": "roughly, a little, not much",
@@ -22286,7 +22295,7 @@
   {
     "id": "u07-0967",
     "es": "Entiendo un poco, pero hablo poco.",
-    "en": "I understand a little, but I speak little.",
+    "en": "I understand a little, but I don't speak much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22628,7 +22637,7 @@
   {
     "id": "u07-0984",
     "es": "Tengo poco tiempo, perdón.",
-    "en": "I have little time, sorry.",
+    "en": "I don't have much time, sorry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22649,7 +22658,7 @@
   {
     "id": "u07-0985",
     "es": "Tengo poca plata este mes.",
-    "en": "I have little money this month.",
+    "en": "I don't have much money this month.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22689,7 +22698,7 @@
   {
     "id": "u07-0987",
     "es": "Hay pocos muebles en mi cuarto.",
-    "en": "There's little furniture in my room.",
+    "en": "There isn't much furniture in my room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22711,7 +22720,7 @@
   {
     "id": "u07-0988",
     "es": "Hay poca luz en la escalera.",
-    "en": "There's little light on the staircase.",
+    "en": "There isn't much light on the staircase.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22803,16 +22812,16 @@
   },
   {
     "id": "u07-0992",
-    "es": "Hay un poco de gente en la calle.",
-    "en": "There are a few people in the street.",
+    "es": "Hay un poco de harina en la mesa.",
+    "en": "There's a bit of flour on the table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "l:calle",
-      "l:gente",
+      "l:harina",
+      "l:mesa",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -23071,7 +23080,7 @@
   {
     "id": "u07-1003",
     "es": "Hay un portero en el edificio. El portero está en el primer piso.",
-    "en": "There's a porter in the building. The porter is on the first floor.",
+    "en": "There's a doorman in the building. The doorman is on the first floor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23122,8 +23131,8 @@
   },
   {
     "id": "u07-1005",
-    "es": "¿Hay una lámpara? Sí, la lámpara está encima de la mesa.",
-    "en": "Is there a lamp? Yes, the lamp is on the table.",
+    "es": "¿Hay una lámpara?\nSí, la lámpara está al lado de la cama.",
+    "en": "Is there a lamp?\nYes, the lamp is next to the bed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23131,24 +23140,24 @@
       "g:estar-location-states",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "l:encima",
+      "l:cama",
       "l:estar",
-      "l:lámpara",
-      "l:mesa"
+      "l:lado",
+      "l:lámpara"
     ],
     "targets": [
       "g:hay-vs-esta",
       "l:lámpara"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u07",
     "theme": "is there one, where is it",
     "source": "gen"
   },
   {
     "id": "u07-1006",
-    "es": "¿Hay un cajero? Sí, el cajero está allá.",
-    "en": "Is there a cash machine? Yes, the cash machine is over there.",
+    "es": "¿Hay un cajero?\nSí, está allá.",
+    "en": "Is there a cash machine?\nYes, it's over there.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23171,8 +23180,8 @@
   },
   {
     "id": "u07-1007",
-    "es": "¿Hay un parqueadero? Sí, el parqueadero está debajo del edificio.",
-    "en": "Is there a car park? Yes, the car park is under the building.",
+    "es": "¿Hay un parqueadero?\nSí, el parqueadero está debajo del edificio.",
+    "en": "Is there a car park?\nYes, the car park is under the building.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23197,7 +23206,7 @@
   {
     "id": "u07-1008",
     "es": "Hay un problema: el portero no está.",
-    "en": "There's a problem: the porter isn't here.",
+    "en": "There's a problem: the doorman isn't here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23326,8 +23335,8 @@
   },
   {
     "id": "u07-1013",
-    "es": "¿Dónde está Pacho? Está debajo del sofá.",
-    "en": "Where's Pacho? He's under the sofa.",
+    "es": "¿Dónde está Pacho?\nEstá debajo del sofá.",
+    "en": "Where's Pacho?\nHe's under the sofa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23349,8 +23358,8 @@
   },
   {
     "id": "u07-1014",
-    "es": "¿Dónde está Simón? Está encima del armario.",
-    "en": "Where's Simón? He's on top of the wardrobe.",
+    "es": "¿Dónde está Simón?\nEstá encima del armario.",
+    "en": "Where's Simón?\nHe's on top of the wardrobe.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23372,8 +23381,8 @@
   },
   {
     "id": "u07-1015",
-    "es": "¿Está Gloria? No, no está.",
-    "en": "Is Gloria in? No, she's not in.",
+    "es": "¿Está Gloria?\nNo, no está.",
+    "en": "Is Gloria in?\nNo, she's not in.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23388,8 +23397,8 @@
   },
   {
     "id": "u07-1016",
-    "es": "¿Está el portero? Sí, está allá.",
-    "en": "Is the porter in? Yes, he's over there.",
+    "es": "¿Está el portero?\nSí, está allá.",
+    "en": "Is the doorman in?\nYes, he's over there.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23410,8 +23419,8 @@
   },
   {
     "id": "u07-1017",
-    "es": "¿Está el dueño? No, el dueño no está hoy.",
-    "en": "Is the owner in? No, the owner isn't in today.",
+    "es": "¿Está el dueño?\nNo, hoy no está.",
+    "en": "Is the owner in?\nNo, he isn't in today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23816,8 +23825,8 @@
   },
   {
     "id": "u07-1036",
-    "es": "¿Duermes mucho? No, duermo poco.",
-    "en": "Do you sleep a lot? No, I sleep little. (to a friend)",
+    "es": "¿Duermes mucho?\nNo, duermo poco.",
+    "en": "Do you sleep a lot? (to a friend)\nNo, I don't sleep much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23833,8 +23842,8 @@
   },
   {
     "id": "u07-1037",
-    "es": "¿Hay mucho ruido? Sí, mucho.",
-    "en": "Is there a lot of noise? Yes, a lot.",
+    "es": "¿Hay mucho ruido?\nSí, mucho.",
+    "en": "Is there a lot of noise?\nYes, a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24261,8 +24270,8 @@
   },
   {
     "id": "u07-1057",
-    "es": "¿Dónde estás? Estoy acá, en la sala.",
-    "en": "Where are you? I'm here, in the living room. (to a friend)",
+    "es": "¿Dónde estás?\nEstoy acá, en la sala.",
+    "en": "Where are you? (to a friend)\nI'm here, in the living room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24285,8 +24294,8 @@
   },
   {
     "id": "u07-1058",
-    "es": "¿Dónde pongo las cajas? Ahí, al lado de la puerta.",
-    "en": "Where do I put the boxes? There, next to the door.",
+    "es": "¿Dónde pongo las cajas?\nAhí, al lado de la puerta.",
+    "en": "Where do I put the boxes?\nThere, next to the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24311,8 +24320,8 @@
   },
   {
     "id": "u07-1059",
-    "es": "¿Dónde queda el baño? Allá, a la derecha.",
-    "en": "Where's the bathroom? Over there, on the right.",
+    "es": "¿Dónde queda el baño?\nAllá, a la derecha.",
+    "en": "Where's the bathroom?\nOver there, on the right.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24336,8 +24345,8 @@
   },
   {
     "id": "u07-1060",
-    "es": "¿Dónde vive su tío? Allá, cerca del parque.",
-    "en": "Where does your uncle live? Over there, near the park.",
+    "es": "¿Dónde vive su tío?\nAllá, cerca del parque.",
+    "en": "Where does your uncle live? (polite)\nOver there, near the park.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24477,22 +24486,19 @@
   },
   {
     "id": "u07-1066",
-    "es": "Muy lejos de acá hay un mar azul.",
-    "en": "Very far from here there's a blue sea.",
+    "es": "Muy lejos de acá, en Toronto, hace mucho frío.",
+    "en": "Very far from here, in Toronto, it's very cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "g:gender-articles",
-      "g:hay-vs-esta",
+      "g:present-er-ir",
       "l:acá",
-      "l:azul",
+      "l:frío",
+      "l:hacer",
       "l:lejos",
-      "l:mar",
       "p:quantifiers-basic"
     ],
     "targets": [
-      "g:hay-vs-esta",
       "l:acá"
     ],
     "kind": "statement",
@@ -24725,7 +24731,7 @@
   {
     "id": "u07-1076",
     "es": "Estas llaves de aquí son del portero.",
-    "en": "These keys here are the porter's.",
+    "en": "These keys here are the doorman's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25118,7 +25124,7 @@
   {
     "id": "u07-1093",
     "es": "¿Hay portero en el edificio?",
-    "en": "Is there a porter in the building?",
+    "en": "Is there a doorman in the building?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25234,18 +25240,19 @@
   },
   {
     "id": "u07-1098",
-    "es": "¿Cuál es el número del apartamento?",
-    "en": "What's the apartment number?",
+    "es": "¿Qué número tiene el apartamento de Gloria?",
+    "en": "What number is Gloria's apartment?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
       "g:questions",
-      "g:ser-identity",
+      "g:stem-boot",
       "l:apartamento",
-      "l:cuál",
       "l:número",
-      "l:ser"
+      "l:qué",
+      "l:tener"
     ],
     "targets": [
       "l:apartamento",
@@ -25753,14 +25760,13 @@
   },
   {
     "id": "u07-1121",
-    "es": "¿Cuánto tiempo viven aquí?",
-    "en": "How long have they lived here?",
+    "es": "¿Cuánto tiempo vivieron en Toronto?",
+    "en": "How long did they live in Toronto?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:cuanto-tiempo",
-      "g:present-er-ir",
-      "l:aquí",
+      "g:preterite-er-ir",
       "l:cuánto",
       "l:tiempo",
       "l:vivir"
@@ -25774,7 +25780,7 @@
   {
     "id": "u07-1122",
     "es": "¿Dónde vive el portero?",
-    "en": "Where does the porter live?",
+    "en": "Where does the doorman live?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26060,7 +26066,7 @@
   {
     "id": "u07-1135",
     "es": "¿Dónde está el portero hoy?",
-    "en": "Where's the porter today?",
+    "en": "Where's the doorman today?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26174,7 +26180,7 @@
   {
     "id": "u07-1140",
     "es": "¿Cuándo llega el portero?",
-    "en": "When does the porter arrive?",
+    "en": "When does the doorman arrive?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26699,7 +26705,7 @@
   {
     "id": "u07-1164",
     "es": "¿Y ese cuarto?\nEs el del portero.",
-    "en": "And that room?\nIt's the porter's.",
+    "en": "And that room?\nIt's the doorman's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26720,14 +26726,17 @@
   },
   {
     "id": "u07-1165",
-    "es": "¿Ese gato es de doña Gloria?\nNo, es de Tomás.",
-    "en": "Is that cat doña Gloria's?\nNo, it's Tomás's.",
+    "es": "¿Ese gato es de doña Gloria?\nSí, se llama Pacho.",
+    "en": "Is that cat doña Gloria's?\nYes, his name is Pacho.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:se-llama",
       "g:demonstratives",
+      "g:reflexive-routine",
       "g:ser-identity",
       "l:gato",
+      "l:llamarse",
       "l:ser"
     ],
     "targets": [
@@ -27133,23 +27142,20 @@
   },
   {
     "id": "u07-1182",
-    "es": "Permiso.\nSiga, está en su casa.",
-    "en": "Excuse me.\nCome in, make yourself at home.",
+    "es": "Permiso.\nClaro, siga.",
+    "en": "Excuse me.\nOf course, come in.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:esta-en-su-casa",
+      "c:claro-listo",
       "c:siga",
       "g:commands-usted",
-      "l:casa",
-      "l:estar",
+      "l:claro",
       "l:permiso",
       "l:seguir"
     ],
     "targets": [
-      "c:esta-en-su-casa",
-      "c:siga",
-      "l:casa"
+      "c:siga"
     ],
     "kind": "dialogue",
     "unit": "u07",
@@ -27208,16 +27214,21 @@
   },
   {
     "id": "u07-1185",
-    "es": "¿Un tinto?\nSí, gracias, está en su casa.",
-    "en": "A black coffee?\nYes, thanks, you're very welcome.",
+    "es": "Siga, está en su casa. ¿Un tinto?\nSí, gracias, muy amable.",
+    "en": "Come in, make yourself at home. A black coffee? (formal)\nYes, thanks, that's very kind.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:esta-en-su-casa",
       "c:gracias-de-nada",
+      "c:muy-amable",
+      "c:siga",
+      "g:commands-usted",
       "g:gender-articles",
+      "l:amable",
       "l:casa",
       "l:estar",
+      "l:seguir",
       "l:tinto"
     ],
     "targets": [
@@ -27400,18 +27411,18 @@
   },
   {
     "id": "u07-1193",
-    "es": "¿Es lejos?\nNo, queda cerquita de la plaza.",
+    "es": "¿Está lejos?\nNo, queda cerquita de la plaza.",
     "en": "Is it far?\nNo, it's really close to the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:queda-cerquita",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:ser-identity",
+      "l:estar",
       "l:lejos",
       "l:plaza",
-      "l:quedar",
-      "l:ser"
+      "l:quedar"
     ],
     "targets": [
       "c:queda-cerquita"
@@ -27618,7 +27629,7 @@
   },
   {
     "id": "u07-1202",
-    "es": "Mariana, ¿vive cerca?\nSí, a cinco cuadras de aquí.",
+    "es": "Mariana, ¿vives cerca?\nSí, a cinco cuadras de aquí.",
     "en": "Mariana, do you live nearby?\nYes, five blocks from here.",
     "accept": [],
     "acceptEn": [],

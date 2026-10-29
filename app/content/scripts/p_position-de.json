@@ -32,7 +32,7 @@
     { "prompt": "Say: The keys are on the table.", "answer": "Las llaves están encima de la mesa.", "accept": [], "why": "On top of is *encima de*; more than one key, so *están*." },
     { "prompt": "Say: The car park is behind the building.", "answer": "El parqueadero está detrás del edificio.", "accept": [], "why": "*Detrás de* plus *el edificio* gives *detrás del edificio*." },
     { "prompt": "Say: I live between the bakery and the café.", "answer": "Vivo entre la panadería y el café.", "accept": [], "why": "*Entre* takes no *de*: just *entre* one *y* the other." },
-    { "prompt": "Swap *the bank* for *the park*: La tienda está al lado de la droguería.", "answer": "La tienda está al lado del parque.", "accept": [], "why": "*El parque* is masculine, so *de la* becomes *del*." }
+    { "prompt": "Swap *la droguería* for *el parque*: La tienda está al lado de la droguería.", "answer": "La tienda está al lado del parque.", "accept": [], "why": "*El parque* is masculine, so *de la* becomes *del*." }
   ],
   "pitfalls": [
     { "wrong": "La droguería está al lado de el banco.", "right": "La droguería está al lado del banco.", "why": "Almost. *De* and *el* always merge into *del*." },

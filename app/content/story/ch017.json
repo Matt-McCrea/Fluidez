@@ -2,7 +2,7 @@
   "id": "ch017",
   "unit": "u07",
   "title": "Ocho metros",
-  "text": "Hombre: La casa de doña Gloria: doce metros.\nOtro hombre: Y el café de la esquina: ocho metros.\nEn la calle, dos hombres cuentan metros. En las camisas hay un nombre: Grupo Altamira.\nTomás: Buenos días. ¿Qué hacen acá?\nHombre: Trabajamos, señor. El señor Altamira quiere toda la cuadra.\nTomás está nervioso. Abre la boca, y sale el español de ayer.\nTomás: ¡Siga, siga! Está en su casa.\nVale: ¡Tomás! No es su casa. Es la casa de Rosa.\nHernando mira el nombre de Altamira y escupe en la calle.\nSimón: ¡Altamira no, Altamira no, Altamira no!\nLos hombres de Altamira se van.\nHernando: En este barrio hay mucha gente amable, Tomás, y muchas casas viejas.\nVale: Hay bastantes tiendas, una droguería y pocos bancos. Todo queda cerquita.\nTomás: Y hay demasiados hombres de Altamira.\nHernando mira la calle un momento.\nHernando: En esta calle, Joaquín y yo jugamos fútbol muchas noches.\nTomás: ¿Usted conoce a Joaquín?\nHernando: Conocí a Joaquín, sí. Era el amigo de todo el mundo.\nTomás: ¿Y dónde está ahora?\nHernando: Un momento, Tomás. Hoy no puedo.\nVale: Tomás, quedan veinte días, y necesitamos mucha plata.\nTomás mira el café. Ocho metros. Cuarenta y siete años.",
+  "text": "Hombre: La casa de doña Gloria: doce metros.\nOtro hombre: Y el café de la esquina: ocho metros.\nEn la calle, dos hombres cuentan metros. En las camisas hay un nombre: Grupo Altamira.\nTomás: Buenos días. ¿Qué hacen acá?\nHombre: Trabajamos, señor. El señor Altamira quiere toda la cuadra.\nTomás está nervioso. Abre la boca, y sale el español de ayer.\nTomás: ¡Siga, siga! Está en su casa.\nVale: ¡Tomás! No es su casa. Es la casa de Rosa.\nHernando mira el nombre de Altamira y escupe en la calle.\nSimón: ¡Altamira no, Altamira no, Altamira no!\nLos hombres de Altamira se van.\nHernando: En este barrio hay mucha gente amable, Tomás, y muchas casas viejas.\nVale: Hay bastantes tiendas, una droguería y pocos bancos. Todo queda cerquita.\nTomás: Y hay demasiados hombres de Altamira.\nHernando mira la calle un momento.\nHernando: En esta calle, Joaquín y yo jugamos fútbol muchas noches.\nTomás: ¿Joaquín era su amigo?\nHernando: Sí, mi amigo. Era el amigo de todo el mundo.\nTomás: ¿Y dónde está ahora?\nHernando: Un momento, Tomás. Hoy no puedo.\nVale: Tomás, quedan veinte días, y necesitamos mucha plata.\nTomás mira el café. Ocho metros. Cuarenta y siete años.",
   "gloss": [
     {
       "es": "doce metros",
@@ -128,7 +128,6 @@
     "g:ir-a-plans",
     "g:present-ar",
     "g:present-er-ir",
-    "g:preterite-er-ir",
     "g:quantifiers",
     "g:questions",
     "g:ser-identity",
@@ -154,7 +153,6 @@
     "l:calle",
     "l:camisa",
     "l:casa",
-    "l:conocer",
     "l:contar",
     "l:cuadra",
     "l:droguería",

@@ -41,7 +41,7 @@
     { "wrong": "Hay demasiado gente.", "right": "Hay demasiada gente.", "why": "Almost. Before a thing, *demasiado* matches it, and *gente* is feminine." },
     { "wrong": "La sala es demasiada pequeña.", "right": "La sala es demasiado pequeña.", "why": "Before a describing word *demasiado* never changes, even next to a feminine one." },
     { "wrong": "No hay bastante sillas.", "right": "No hay bastantes sillas.", "why": "Before a plural thing, *bastante* adds an *s*." },
-    { "wrong": "El pan de Vale es demasiado bueno.", "right": "El pan de Vale es muy bueno.", "why": "*Demasiado* means more than you want. For a compliment, use *muy*." }
+    { "wrong": "El arriendo es también caro.", "right": "El arriendo es demasiado caro.", "why": "*También* is too in the sense of also. Too much, more than you want, is *demasiado*." }
   ],
   "personal": "Describe your own home honestly in three lines: one thing that's *bastante* good, one thing that's *demasiado* something, and one thing there's *poco* of."
 }

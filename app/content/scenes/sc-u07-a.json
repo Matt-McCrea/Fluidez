@@ -12,7 +12,8 @@
       "accept": [
         "Sí, hay una droguería en esta calle.",
         "Sí, señora. Hay una droguería en esta calle.",
-        "Hay una en esta calle, señora."
+        "Hay una en esta calle, señora.",
+        "Sí, hay una en esta calle."
       ],
       "require": [
         {

@@ -42,7 +42,7 @@
     { "wrong": "Hay el banco en la calle.", "right": "El banco está en la calle.", "why": "Almost. *El* means you already know the bank, so say where it is with *está*." },
     { "wrong": "Es una panadería en la esquina.", "right": "Hay una panadería en la esquina.", "why": "\"There is\" is *hay*. *Es* says what something is, not that it's there." },
     { "wrong": "No hay Vale en el café.", "right": "Vale no está en el café.", "why": "A name is someone known, so it takes *está*: *Vale no está*." },
-    { "wrong": "Mi barrio hay dos parques.", "right": "En mi barrio hay dos parques.", "why": "*Hay* has no subject. Start with where: *en mi barrio hay*." }
+    { "wrong": "Están dos bancos en esta calle.", "right": "Hay dos bancos en esta calle.", "why": "English says \"there are\", but Spanish keeps *hay* for more than one. *Están* is only for banks you already know about." }
   ],
   "personal": "Think of your street. Write one thing there is on it with *hay*, and then say where one place you know is with *está*."
 }

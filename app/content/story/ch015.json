@@ -2,7 +2,7 @@
   "id": "ch015",
   "unit": "u07",
   "title": "Joaquín, mi hermano",
-  "text": "«Joaquín, mi hermano:». Tomás lee la frase otra vez.\nTomás: ¿Hermano? ¿Rosa tenía un hermano?\nVale: Rosa nunca habló de un hermano.\nHernando: Es el chico de la foto, Tomás. Tiene tu nariz.\nTomás pone la carta en el cuaderno.\nTomás: Hoy no puedo.\nVale: Tomás, ¿dónde duermes? Tienes cara de perro triste.\nTomás: En el hostel. Doce camas, doce hombres, y yo estoy en la cama doce.\nHernando: Doña Gloria arrienda un cuarto. Su casa está en la otra cuadra, arriba de la panadería.\nEn la puerta está doña Gloria, con harina en las manos.\nGloria: ¡Siga, siga! Está en su casa.\nTomás: Gracias, señora. ¿Hay ducha?\nGloria: Hay ducha, hay una cama, hay una lámpara y hay un balcón. El patio está allá.\nTomás: ¿Y el arriendo?\nGloria: Seiscientos mil pesos al mes.\nTomás sale al balcón. Allá está la catedral. Y acá, en la esquina, está el café de Rosa.\nTomás: Vale, ¿yo puedo vivir acá?\nVale: Tú eres de acá, Tomás.\nMás tarde, en el café:\nSimón: ¡Siga, siga! ¡Está en su casa!\nTomás: Quedan tres semanas, Simón, y ya tengo casa.\nHernando: ¿Y la ducha?\nTomás: Funciona un día, y dos días no.",
+  "text": "«Joaquín, mi hermano:». Tomás lee la frase otra vez.\nTomás: ¿Hermano? ¿Rosa tenía un hermano?\nVale: Rosa nunca habló de un hermano.\nHernando: Es el chico de la foto, Tomás. Tiene tu nariz.\nTomás pone la carta en el cuaderno.\nTomás: Hoy no puedo.\nVale: Tomás, ¿dónde duermes? Tienes cara de perro triste.\nTomás: En el hostel. Doce camas, doce hombres, y yo estoy en la cama doce.\nHernando: Doña Gloria arrienda un cuarto. Su casa está a dos cuadras, arriba de la panadería.\nEn la puerta está doña Gloria, con harina en las manos.\nGloria: ¡Siga, siga! Está en su casa.\nTomás: Gracias, señora. ¿Hay ducha?\nGloria: Hay ducha, hay una cama, hay una lámpara y hay un balcón. El patio está allá.\nTomás: ¿Y el arriendo?\nGloria: Seiscientos mil pesos al mes.\nTomás sale al balcón. Allá está la catedral. Y allá, en la esquina, está el café de Rosa.\nTomás: Vale, ¿yo puedo vivir acá?\nVale: Tú eres de acá, Tomás.\nMás tarde, en el café:\nSimón: ¡Siga, siga! ¡Está en su casa!\nTomás: Quedan tres semanas, Simón, y ya tengo casa.\nHernando: ¿Y la ducha?\nTomás: Funciona un día, y dos días no.",
   "gloss": [
     {
       "es": "«Joaquín, mi hermano:»",
@@ -117,7 +117,7 @@
     {
       "q": "¿Dónde está la casa de doña Gloria?",
       "options": [
-        "En la otra cuadra, arriba de la panadería",
+        "A dos cuadras, arriba de la panadería",
         "En Toronto",
         "En el café de Rosa"
       ],

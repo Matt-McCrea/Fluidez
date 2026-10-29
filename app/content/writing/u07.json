@@ -147,28 +147,29 @@
         "type": "avoidsAny",
         "words": [
           "tercero piso",
-          "primero piso",
-          "el tercer piso a"
+          "primero piso"
         ],
         "label": "primer and tercer lose their o before a masculine noun"
       }
     ],
-    "model": "Vivo en el tercer piso, en la puerta de la derecha.",
+    "model": "Vivo en el tercer piso. Es la segunda puerta a la derecha.",
     "focus": "p:ordinal-floor",
     "requires": [
       "c:vivo-en",
       "g:gender-articles",
       "g:present-er-ir",
+      "g:ser-identity",
       "l:derecha",
       "l:piso",
       "l:puerta",
+      "l:ser",
       "l:vivir"
     ]
   },
   {
     "id": "w-u07-06",
     "unit": "u07",
-    "prompt": "You are on the street and need a pharmacy. Ask an older stranger, someone you would call usted, if there is one round here.",
+    "prompt": "You need cash. You are on the street, so ask an older stranger, someone you would call usted, if there is a cash machine round here.",
     "minWords": 5,
     "maxWords": 20,
     "constraints": [
@@ -197,16 +198,15 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Perdón, señor, ¿hay una droguería por acá?",
+    "model": "Perdón, señor, ¿hay un cajero por acá?",
     "focus": "c:por-aca",
     "requires": [
       "c:hay",
       "c:perdon-disculpe",
       "c:por-aca",
-      "g:gender-articles",
       "g:hay-vs-esta",
       "l:acá",
-      "l:droguería",
+      "l:cajero",
       "l:perdón",
       "l:señor"
     ]
@@ -262,7 +262,7 @@
   {
     "id": "w-u07-08",
     "unit": "u07",
-    "prompt": "Vale asks where the bakery and the chemist's are, because she wants to buy flour and aspirin. Answer in two short sentences using next to, opposite or near.",
+    "prompt": "A new tenant at Doña Gloria's needs bread and aspirin, and asks you where the bakery and the chemist's are. Answer in two short sentences using next to, opposite or near.",
     "minWords": 8,
     "maxWords": 26,
     "constraints": [
@@ -280,9 +280,14 @@
         "label": "say where with al lado de, enfrente de or cerca de"
       },
       {
-        "type": "verbFormAny",
-        "inf": "estar",
-        "tense": "presente"
+        "type": "containsAny",
+        "words": [
+          "está",
+          "están",
+          "queda",
+          "quedan"
+        ],
+        "label": "say where a place is with está or queda"
       },
       {
         "type": "minSentences",
@@ -305,7 +310,7 @@
   {
     "id": "w-u07-09",
     "unit": "u07",
-    "prompt": "Don Hernando asks how long you have lived in your new room. Answer in one or two short sentences with hace.",
+    "prompt": "Don Hernando asks when you moved into your new room. Answer in one or two short sentences with hace.",
     "minWords": 5,
     "maxWords": 20,
     "constraints": [
@@ -315,9 +320,9 @@
         "label": "say how long ago with hace"
       },
       {
-        "type": "verbFormAny",
-        "inf": "venir",
-        "tense": "preterito"
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "say when it happened in the past: llegué, vine"
       }
     ],
     "model": "Vine hace tres días. Todavía no tengo muchos amigos aquí.",
@@ -380,7 +385,7 @@
   {
     "id": "w-u07-11",
     "unit": "u07",
-    "prompt": "Mariana asks if the bakery where you buy bread is far from your room. Reassure her in a short sentence or two.",
+    "prompt": "Mariana asks if the café is far from your new room. Reassure her in a short sentence or two.",
     "minWords": 5,
     "maxWords": 20,
     "constraints": [
