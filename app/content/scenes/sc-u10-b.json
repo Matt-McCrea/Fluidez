@@ -1,0 +1,199 @@
+{
+  "id": "sc-u10-b",
+  "unit": "u10",
+  "title": "The juice tasting",
+  "brief": "You're Tomás. Vale is choosing the juices for the new Saturday menu, and you're her taster. Say what you like and don't, what Don Hernando likes, and sort out what's missing. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Prueba, Tomás. Jugo de mango en leche. ¿Te gusta?",
+      "npcEn": "Try it, Tomás. Mango juice made with milk. Do you like it?",
+      "intent": "Say you love it: it's delicious.",
+      "accept": [
+        "¡Me encanta! ¡Qué rico!",
+        "Me encanta. Está delicioso.",
+        "¡Qué rico! Me encanta el jugo en leche."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "me encanta",
+          "label": "I love it: me encanta"
+        }
+      ],
+      "focus": "g:gustar-full",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Ahora este, de fresa. A mí no me gusta mucho.",
+      "npcEn": "Now this one, strawberry. I don't like it much.",
+      "intent": "Say you don't like it either.",
+      "accept": [
+        "A mí tampoco.",
+        "A mí tampoco. Es muy dulce.",
+        "No, a mí tampoco me gusta."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "a mí tampoco",
+          "label": "me neither (after a gustar sentence): a mí tampoco"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "yo tampoco"
+          ],
+          "label": "after me gusta, say a mí tampoco, not yo tampoco"
+        }
+      ],
+      "focus": "x:yo-vs-a-mi-tambien",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y a don Hernando? ¿Qué jugo le gusta?",
+      "npcEn": "And Don Hernando? Which juice does he like?",
+      "intent": "Say he likes orange juice.",
+      "accept": [
+        "A don Hernando le gusta el jugo de naranja.",
+        "Le encanta el de naranja.",
+        "A él le gusta el jugo de naranja, sin azúcar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ble (gusta|encanta)\\b",
+          "flags": "i",
+          "label": "he likes: le gusta"
+        }
+      ],
+      "focus": "g:gustar-full",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Bueno. ¿Y cuántos jugos servimos los sábados?",
+      "npcEn": "Fine. And how many juices do we serve on Saturdays?",
+      "intent": "Say you serve three: mango, orange and strawberry.",
+      "accept": [
+        "Servimos tres jugos: de mango, de naranja y de fresa.",
+        "Servimos tres: mango, naranja y fresa.",
+        "Tres. Servimos jugo de mango, de naranja y de fresa."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "servir",
+          "tense": "presente",
+          "person": "nosotros",
+          "label": "we serve: servimos"
+        }
+      ],
+      "focus": "g:stem-e-i",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Listo. Uy, no hay azúcar.",
+      "npcEn": "Done. Oh, there's no sugar.",
+      "intent": "Say you have to buy sugar, and ask if she's coming with you.",
+      "accept": [
+        "Tengo que comprar azúcar. ¿Vienes conmigo?",
+        "Hay que comprar azúcar. ¿Vienes conmigo?",
+        "Entonces tengo que comprar azúcar. ¿Vienes conmigo, Vale?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(tengo|hay) que comprar\\b",
+          "flags": "i",
+          "label": "have to buy: tengo que comprar"
+        }
+      ],
+      "focus": "g:tener-que-hay-que",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¿Contigo? No, gracias. Yo tengo que lavar los vasos. ¿Me traes un tinto?",
+      "npcEn": "With you? No, thanks. I have to wash the glasses. Will you bring me a coffee?",
+      "intent": "Say yes, of course: a coffee for her.",
+      "accept": [
+        "Claro, un tinto para ti.",
+        "Listo. Un tinto para ti, Vale.",
+        "Sí, claro. Para ti, un tinto."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "para ti",
+          "label": "for you: para ti"
+        }
+      ],
+      "focus": "g:prep-pronouns",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-mi-tambien",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:me-encanta",
+    "c:me-gusta",
+    "c:no-me-gusta-nada",
+    "c:que-rico",
+    "c:tengo",
+    "c:tengo-que",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:azúcar",
+    "l:bueno",
+    "l:claro",
+    "l:comprar",
+    "l:cuánto",
+    "l:delicioso",
+    "l:dulce",
+    "l:encantar",
+    "l:estar",
+    "l:fresa",
+    "l:gustar",
+    "l:jugo",
+    "l:lavar",
+    "l:leche",
+    "l:listo",
+    "l:mango",
+    "l:naranja",
+    "l:parar",
+    "l:probar",
+    "l:qué",
+    "l:rico",
+    "l:ser",
+    "l:servir",
+    "l:sábado",
+    "l:tener",
+    "l:tinto",
+    "l:traer",
+    "l:vaso",
+    "l:venir",
+    "p:demonstratives-basic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:quantifiers-basic"
+  ]
+}

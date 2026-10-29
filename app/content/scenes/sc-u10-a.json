@@ -1,0 +1,222 @@
+{
+  "id": "sc-u10-a",
+  "unit": "u10",
+  "title": "Table for two",
+  "brief": "You're Tomás. It's Monday at seven, and you and Vale are out at a little restaurant in Chapinero, your first evening out together. Order for the two of you, ask for what's missing, and get the bill. The waiter is a stranger, so use usted with him.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas noches. Aquí tienen la carta. ¿Les provoca algo de tomar?",
+      "npcEn": "Good evening. Here's the menu. Would you like something to drink?",
+      "intent": "Order two lemonades, one of them without sugar.",
+      "accept": [
+        "Dos limonadas, por favor. Una sin azúcar.",
+        "Dos limonadas, una sin azúcar, por favor.",
+        "Sí, dos limonadas. Una con azúcar y una sin azúcar."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "sin azúcar",
+          "label": "without sugar: sin azúcar"
+        }
+      ],
+      "focus": "p:con-sin",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Muy bien. ¿Y de comer? ¿Ya saben qué quieren?",
+      "npcEn": "Very good. And to eat? Do you know what you want yet?",
+      "intent": "Say not yet, and ask him what he recommends.",
+      "accept": [
+        "Todavía no. ¿Qué me recomienda?",
+        "¿Qué me recomienda, señor?",
+        "A ver. ¿Qué me recomienda?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bme recomienda\\b",
+          "flags": "i",
+          "label": "what do you recommend (to him, usted): ¿qué me recomienda?"
+        }
+      ],
+      "focus": "c:que-me-recomienda",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Bueno, ¿y a ella le gusta la carne? La bandeja es rica, pero es muy grande.",
+      "npcEn": "Well, and does she like meat? The bandeja is delicious, but it's very big.",
+      "intent": "Say no, she doesn't like meat, but she loves fish.",
+      "accept": [
+        "No, no le gusta la carne. Le encanta el pescado.",
+        "No. A ella no le gusta la carne, pero le encanta el pescado.",
+        "No le gusta mucho la carne. Le encanta el pescado."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "le encanta",
+          "label": "she loves: le encanta"
+        },
+        {
+          "type": "negation",
+          "label": "say she doesn't: no le gusta"
+        }
+      ],
+      "focus": "g:gustar-full",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Entonces, pescado para ella. ¿Y usted qué pide?",
+      "npcEn": "Fish for her, then. And what are you having?",
+      "intent": "Say you're having the ajiaco.",
+      "accept": [
+        "Yo pido el ajiaco.",
+        "Pido el ajiaco, por favor.",
+        "El ajiaco. Siempre pido ajiaco."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "pedir",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I order: pido (the e changes to i)"
+        }
+      ],
+      "focus": "g:stem-e-i",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Aquí está el ajiaco. ¡Buen provecho!",
+      "npcEn": "Here's the ajiaco. Enjoy your meal!",
+      "intent": "There's no spoon. Thank him and ask him to bring you one.",
+      "accept": [
+        "Gracias. ¿Me trae una cuchara, por favor?",
+        "Gracias, pero no tengo cuchara. ¿Me trae una cuchara?",
+        "Perdón, no hay cuchara. ¿Me trae una, por favor?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bme trae\\b",
+          "flags": "i",
+          "label": "could you bring me: ¿me trae…?"
+        }
+      ],
+      "focus": "p:me-trae",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Qué pena con ustedes! Aquí tiene. ¿Algo más? ¿Un postre?",
+      "npcEn": "So sorry! Here you are. Anything else? A dessert?",
+      "intent": "Say no thanks, everything was delicious, and ask for the bill.",
+      "accept": [
+        "No, gracias. Todo muy rico. La cuenta, por favor.",
+        "Todo muy rico, gracias. ¿Me trae la cuenta, por favor?",
+        "No, gracias. ¡Qué rico todo! La cuenta, por favor."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "cuenta",
+          "label": "the bill: la cuenta"
+        }
+      ],
+      "focus": "c:la-cuenta",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:algo-mas",
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:buen-provecho",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:la-cuenta",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:que-me-recomienda",
+    "c:que-pena",
+    "c:que-rico",
+    "c:tengo",
+    "c:tienes",
+    "c:todavia-no",
+    "g:adjective-agreement",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:yo-irregular",
+    "l:ajiaco",
+    "l:aquí",
+    "l:azúcar",
+    "l:bandeja",
+    "l:bien",
+    "l:buen",
+    "l:buena",
+    "l:bueno",
+    "l:carne",
+    "l:carta",
+    "l:comer",
+    "l:cuchara",
+    "l:cuenta",
+    "l:encantar",
+    "l:estar",
+    "l:favor",
+    "l:grande",
+    "l:gustar",
+    "l:limonada",
+    "l:noche",
+    "l:pedir",
+    "l:pena",
+    "l:perdón",
+    "l:pescado",
+    "l:postre",
+    "l:provecho",
+    "l:provocar",
+    "l:querer",
+    "l:qué",
+    "l:recomendar",
+    "l:rico",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:siempre",
+    "l:tener",
+    "l:tomar",
+    "l:traer",
+    "l:ver",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:para-inf",
+    "p:quantifiers-basic"
+  ]
+}

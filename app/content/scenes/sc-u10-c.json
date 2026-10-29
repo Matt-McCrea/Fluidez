@@ -1,0 +1,207 @@
+{
+  "id": "sc-u10-c",
+  "unit": "u10",
+  "title": "Lunch for the grandchildren",
+  "brief": "You're Tomás. Don Hernando's three grandchildren are coming to the café for lunch, and he wants your help to get the order right. Find out what they like and plan their plates. He's older than you, so use usted with him; he uses tú with you.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, hoy vienen mis nietos a almorzar aquí. Son tres, y no comen de todo.",
+      "npcEn": "Tomás, my grandchildren are coming to have lunch here today. There are three of them, and they don't eat everything.",
+      "intent": "Ask him what they like.",
+      "accept": [
+        "¿Y qué les gusta?",
+        "¿Qué les gusta a sus nietos?",
+        "Bueno, ¿qué les gusta, don Hernando?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bles (gusta|encanta)n?\\b",
+          "flags": "i",
+          "label": "they like: les gusta"
+        }
+      ],
+      "focus": "g:gustar-full",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "A Camilo le encantan las arepas. A Sara y a Pablo les gusta el pollo, pero no les gusta la sopa.",
+      "npcEn": "Camilo loves arepas. Sara and Pablo like chicken, but they don't like soup.",
+      "intent": "Suggest arepas for him (Camilo) and rice with chicken for them (Sara and Pablo), without their names.",
+      "accept": [
+        "Las arepas para él, y arroz con pollo para ellos.",
+        "Entonces, arepas para él y arroz con pollo para ellos.",
+        "Para él, arepas. Y para ellos, arroz con pollo."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "para él",
+          "label": "for him: para él"
+        },
+        {
+          "type": "containsWord",
+          "word": "para ellos",
+          "label": "for them: para ellos"
+        }
+      ],
+      "focus": "g:prep-pronouns",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Listo. Yo siempre pido la bandeja. ¿Y tú qué pides los domingos?",
+      "npcEn": "OK. I always order the bandeja. And what do you order on Sundays?",
+      "intent": "Say you order a pandebono and a coffee.",
+      "accept": [
+        "Yo siempre pido un pandebono y un tinto.",
+        "Pido un pandebono y un tinto.",
+        "Los domingos pido un pandebono con un tinto."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "pedir",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I order: pido (the e changes to i)"
+        }
+      ],
+      "focus": "g:stem-e-i",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ay, una cosa. Mi nieto Camilo no come queso. ¿Las arepas tienen queso?",
+      "npcEn": "Oh, one thing. My grandson Camilo doesn't eat cheese. Do the arepas have cheese?",
+      "intent": "Say yes, but there are arepas without cheese.",
+      "accept": [
+        "Sí, tienen queso. Pero hay arepas sin queso.",
+        "Sí, pero hay arepas sin queso.",
+        "Sí. Entonces, para él, una arepa sin queso."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "sin queso",
+          "label": "without cheese: sin queso"
+        }
+      ],
+      "focus": "p:con-sin",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Qué bien! Y de tomar, a mí me gusta el tinto, pero a ellos no.",
+      "npcEn": "Great! And to drink, I like coffee, but they don't.",
+      "intent": "Suggest lemonade for them, and offer him another coffee.",
+      "accept": [
+        "Para ellos, limonada. ¿Y le provoca otro tinto?",
+        "Limonada para ellos. ¿Le provoca otro tinto, don Hernando?",
+        "Tres limonadas. ¿Y otro tinto para usted?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "otro tinto",
+          "label": "another coffee: otro tinto"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "un otro"
+          ],
+          "label": "otro takes no un: otro tinto"
+        }
+      ],
+      "focus": "p:otro-no-article",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "No, gracias. Ya tomé dos. ¿Cuánto te debo?",
+      "npcEn": "No, thanks. I've already had two. How much do I owe you?",
+      "intent": "Tell him he owes you nothing today: without him there's no café.",
+      "accept": [
+        "Hoy no me debe nada, don Hernando. Sin usted no hay café.",
+        "No me debe nada. Sin usted no hay café, don Hernando.",
+        "Hoy nada. Sin usted no hay café."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "sin usted",
+          "label": "without you: sin usted"
+        }
+      ],
+      "focus": "g:prep-pronouns",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-mi-tambien",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:me-gusta",
+    "c:que-bien",
+    "c:tienes",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:negation-words",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "l:almorzar",
+    "l:aquí",
+    "l:arepa",
+    "l:arroz",
+    "l:bandeja",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:comer",
+    "l:cosa",
+    "l:cuánto",
+    "l:deber",
+    "l:domingo",
+    "l:encantar",
+    "l:gustar",
+    "l:hoy",
+    "l:limonada",
+    "l:listo",
+    "l:nieto",
+    "l:pandebono",
+    "l:parar",
+    "l:pedir",
+    "l:pollo",
+    "l:provocar",
+    "l:queso",
+    "l:qué",
+    "l:ser",
+    "l:siempre",
+    "l:sopa",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:venir",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:possessives-basic"
+  ]
+}
