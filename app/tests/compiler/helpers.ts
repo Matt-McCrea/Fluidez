@@ -4,7 +4,7 @@
 import { expect } from 'vitest';
 import type { NodeId } from '../../src/content/schema';
 import {
-  buildContentIndex, buildCourse, contrastSides, servedRefs, budget,
+  buildContentIndex, buildCourse, contrastSides, servedRefs, budget, reviewTargets,
   type CompileInput, type ContentIndex, type Course, type SessionPlan,
 } from '../../src/compiler';
 import type { Profile } from '../../tools/sim/profiles';
@@ -118,14 +118,82 @@ export function checkNoRepeats({ plan, input }: Seen) {
   for (const b of plan.blocks) if (b.kind === 'reread' || b.kind === 'sceneRerun' || b.kind === 'ruleRecall' || b.kind === 'timedRecall') expect(b.deliberate).toBe(true);
 }
 
-/** Review budget: never trimmed. Unthrottled → everything due is served; throttled → at least the budget's worth. */
+/**
+ * Review budget: never trimmed. Unthrottled → everything due is served;
+ * throttled → at least the budget's worth (in single-review units; a
+ * multi-target item costs MULTI_REVIEW_COST and covers ≥ 2 due cards).
+ */
 export function checkReviews({ plan }: Seen) {
   const w = plan.blocks[0];
   if (w.kind !== 'warmup') throw new Error('no warmup');
   const fit = Math.floor((w.budgetMinutes * 60) / plan.budget.secondsPerReview);
-  expect(w.items.length).toBeGreaterThanOrEqual(Math.min(plan.budget.due, fit));
+  // the compiler always sets targets and productive explicitly
+  for (const it of w.items) expect(it.targets).toBeDefined();
+  const covered = w.items.reduce((a, it) => a + reviewTargets(it).length, 0);
+  expect(w.covered).toBe(covered);
+  expect(covered).toBeGreaterThanOrEqual(Math.min(plan.budget.due, fit));
   if (!plan.budget.throttled) expect(w.carried).toBe(0);
-  expect(w.carried + w.items.length).toBe(plan.budget.due);
+  expect(w.carried + covered).toBe(plan.budget.due);
+}
+
+/**
+ * Multi-item reviews: ≤ MULTI_REVIEW_MAX targets, all distinct, all due in the
+ * item's direction, every target in the sentence; no due card reviewed twice.
+ */
+export function checkMultiReviews({ plan, input }: Seen) {
+  const w = plan.blocks[0];
+  if (w.kind !== 'warmup') return;
+  const due = new Set(input.learner.due(input.now).map((d) => `${d.node}|${d.direction}`));
+  const seen = new Set<string>();
+  for (const it of w.items) {
+    const targets = reviewTargets(it);
+    expect(targets[0]).toBe(it.node);
+    expect(targets.length).toBeLessThanOrEqual(budget.MULTI_REVIEW_MAX);
+    if (!it.sentence) expect(targets).toEqual([it.node]);
+    const req = it.sentence ? input.content.sentences.get(it.sentence)!.requires : [it.node];
+    for (const t of targets) {
+      const key = `${t}|${it.direction}`;
+      expect(due.has(key), `${key} not due`).toBe(true);
+      expect(seen.has(key), `${key} reviewed twice`).toBe(false);
+      seen.add(key);
+      expect(req, `${t} not in ${it.sentence}`).toContain(t);
+      expect(it.credit).toContain(t);
+    }
+  }
+}
+
+/**
+ * Review-context reuse: only warm-up review items may re-serve a seen
+ * sentence, only one that was ONLY ever a review context and last shown
+ * ≥ REVIEW_REUSE_DAYS ago, labelled deliberate with the reuse reason.
+ */
+export function checkReviewReuse({ plan, input }: Seen) {
+  for (const r of servedRefs(plan)) {
+    if (r.reason === budget.REVIEW_REUSE_REASON) {
+      expect(r.deliberate).toBe(true);
+      expect(r.review).toBe(true);
+      if (r.kind === 'sentence') {
+        const views = input.learner.ledger.views('sentence', r.id);
+        expect(views.length).toBeGreaterThan(0);
+        expect(views.every((v) => v.review === true), `${r.id} was shown outside a review`).toBe(true);
+        expect(input.now - Math.max(...views.map((v) => v.at))).toBeGreaterThanOrEqual(budget.REVIEW_REUSE_DAYS * 86_400_000);
+      }
+    }
+  }
+  for (const b of plan.blocks) {
+    if (b.kind !== 'warmup' && 'items' in b) for (const it of b.items) expect((it as { reused?: boolean }).reused ?? false).toBe(false);
+    if (b.kind === 'warmup') for (const it of b.items) if (it.reused) expect(it.novel).toBe(false);
+  }
+}
+
+/** Receptive-only new nodes follow productivePolicy (and only lexemes are ever receptive-only). */
+export function checkProductivePolicy({ plan, input }: Seen) {
+  const all = new Set(Object.values(plan.newNodes).flat());
+  for (const id of plan.receptiveOnly) {
+    expect(all.has(id)).toBe(true);
+    expect(plan.newNodes.lexemes).toContain(id);
+  }
+  for (const b of plan.blocks) if (b.kind === 'learn') for (const it of b.items) expect(it.productive).toBe(!plan.receptiveOnly.includes(it.node));
 }
 
 /** Throttle: an input/patterns day with a backlog becomes review and does not advance (unless a spacing rule took the session). */
@@ -138,7 +206,7 @@ export function checkThrottle({ plan }: Seen) {
   if (plan.mode === 'another' && plan.converted?.reason !== 'spacing') expect(plan.type).toBe('review');
 }
 
-export const ALL_CHECKS = [checkFrame, checkMinimum, checkBudgets, checkContrasts, checkGate, checkNoRepeats, checkReviews, checkThrottle];
+export const ALL_CHECKS = [checkFrame, checkMinimum, checkBudgets, checkContrasts, checkGate, checkNoRepeats, checkReviews, checkThrottle, checkMultiReviews, checkReviewReuse, checkProductivePolicy];
 
 /** Spacing across a walk: grammar intros never in consecutive core sessions; each drilled within 1–3 core sessions. */
 export function checkSpacing(plans: Seen[]) {

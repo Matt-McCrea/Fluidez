@@ -1,12 +1,13 @@
 // Aggregate profile runs into the per-band report and the per-unit quotas.
 import type { Band, Unit } from '../../src/content/schema';
-import type { Demand, ProfileRun } from './run';
+import { zeroDemand, type Demand, type ProfileRun } from './run';
 
 const BANDS: Band[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
 export const QUOTA_FACTOR = 3;
 
 export interface BandRow {
   profile: string;
+  tier: string;
   band: Band;
   startDay?: number;
   finishDay?: number;
@@ -23,6 +24,7 @@ export interface BandRow {
   throttledPct: number;
   minimumPct: number;
   under4: string;
+  recvUnder3: string;
 }
 
 export function bandRows(runs: ProfileRun[]): BandRow[] {
@@ -33,8 +35,9 @@ export function bandRows(runs: ProfileRun[]): BandRow[] {
       const ss = run.sessions.filter((s) => s.band === band);
       const finish = run.bandFinish[band];
       const ur = run.underReviewed[band];
+      const rr = run.underReviewedRecv[band];
       rows.push({
-        profile: run.profile, band,
+        profile: run.profile, tier: run.tier, band,
         startDay: run.bandStart[band],
         finishDay: finish,
         calendarDays: finish !== undefined ? finish - prevFinish : undefined,
@@ -46,6 +49,7 @@ export function bandRows(runs: ProfileRun[]): BandRow[] {
         throttledPct: pct(ss.filter((s) => s.converted === 'throttle').length, ss.length),
         minimumPct: pct(ss.filter((s) => s.type === 'minimum').length, ss.length),
         under4: ur ? `${ur.under4}/${ur.judged} (${pct(ur.under4, ur.judged).toFixed(1)}%)` : '-',
+        recvUnder3: rr ? `${rr.under3}/${rr.judged} (${pct(rr.under3, rr.judged).toFixed(1)}%)` : '-',
       });
       if (finish !== undefined) prevFinish = finish;
     }
@@ -55,10 +59,13 @@ export function bandRows(runs: ProfileRun[]): BandRow[] {
 
 export interface UnitQuota {
   bankSentences: number;
+  /** of bankSentences, the part first used as review contexts (reused after REVIEW_REUSE_DAYS) */
+  reviewSentences: number;
   chapters: number;
   scenes: number;
   writingTasks: number;
-  /** max demand across profiles that reached the unit */
+  /** p95 (nearest rank) demand across the runs (profiles × tiers) that finished the unit */
+  p95Demand: Demand;
   maxDemand: Demand;
   /** true = no profile reached this unit; extrapolated from its band (or the course) */
   estimated: boolean;
@@ -68,23 +75,28 @@ export interface UnitQuota {
 export interface Quotas {
   generatedAt: string;
   factor: number;
+  /** what the factor multiplies */
+  basis: 'p95 across runs';
   source: 'synthetic' | 'real';
   days: number;
   tier: string;
   profiles: string[];
+  /** review-context reuse rule in force when the demand was measured */
+  reviewContextReuseDays: number;
+  totals: { bankSentences: number; reviewSentences: number; chapters: number; scenes: number; writingTasks: number; byBand: Record<string, { bankSentences: number; reviewSentences: number; chapters: number; scenes: number; writingTasks: number; units: number }> };
   units: Record<string, UnitQuota>;
   /** sentences consumed with the node as the item's node, by node kind; quota = factor × p95 (the max is a leech outlier) */
   perNode: Record<string, { maxDemand: number; p95Demand: number; meanDemand: number; quota: number }>;
 }
 
-export function computeQuotas(runs: ProfileRun[], units: Unit[], meta: Omit<Quotas, 'units' | 'perNode' | 'factor' | 'generatedAt'>): Quotas {
+export function computeQuotas(runs: ProfileRun[], units: Unit[], meta: Omit<Quotas, 'units' | 'perNode' | 'factor' | 'generatedAt' | 'basis' | 'totals' | 'reviewContextReuseDays'> & { reviewContextReuseDays?: number }): Quotas {
   const out: Record<string, UnitQuota> = {};
   const measured = new Map<string, Demand>();
+  const measuredMax = new Map<string, Demand>();
   for (const u of units) {
-    const ds = runs.map((r) => r.demand[u.id]).filter((d): d is Demand => !!d && d.sentences + d.chapters + d.scenes + d.tasks > 0);
-    // only count a unit as measured when some profile finished it
-    const finished = runs.some((r) => r.finalUnit > units.indexOf(u));
-    if (ds.length && finished) measured.set(u.id, maxDemand(ds));
+    // only runs that finished the unit measure it
+    const ds = runs.filter((r) => r.finalUnit > units.indexOf(u)).map((r) => r.demand[u.id] ?? zeroDemand());
+    if (ds.some((d) => d.sentences + d.chapters + d.scenes + d.tasks > 0)) { measured.set(u.id, p95Demand(ds)); measuredMax.set(u.id, maxDemand(ds)); }
   }
   const bandMax = new Map<Band, Demand>();
   for (const u of units) {
@@ -100,11 +112,13 @@ export function computeQuotas(runs: ProfileRun[], units: Unit[], meta: Omit<Quot
     const listed = u.days.filter((x) => x.chapter).length;
     out[u.id] = {
       bankSentences: Math.ceil(QUOTA_FACTOR * d.sentences),
+      reviewSentences: Math.ceil(QUOTA_FACTOR * d.reviewSentences),
       // the story is linear: every chapter is read exactly once, so no multiplier — one per chapter slot
       chapters: Math.max(listed, d.chapters),
       scenes: Math.ceil(QUOTA_FACTOR * d.scenes),
       writingTasks: Math.ceil(QUOTA_FACTOR * d.tasks),
-      maxDemand: d,
+      p95Demand: d,
+      maxDemand: measuredMax.get(u.id) ?? d,
       estimated: !m,
       shortages: Math.max(0, ...runs.map((r) => r.shortages[u.id] ?? 0)),
     };
@@ -116,7 +130,26 @@ export function computeQuotas(runs: ProfileRun[], units: Unit[], meta: Omit<Quot
     const mean = Math.max(...runs.map((r) => r.nodeDemand[k]?.mean ?? 0));
     perNode[k] = { maxDemand: max, p95Demand: p95, meanDemand: round1(mean), quota: Math.ceil(QUOTA_FACTOR * p95) };
   }
-  return { generatedAt: new Date().toISOString(), factor: QUOTA_FACTOR, ...meta, units: out, perNode };
+  const totals: Quotas['totals'] = { bankSentences: 0, reviewSentences: 0, chapters: 0, scenes: 0, writingTasks: 0, byBand: {} };
+  for (const u of units) {
+    const q = out[u.id];
+    const b = (totals.byBand[u.band] ??= { bankSentences: 0, reviewSentences: 0, chapters: 0, scenes: 0, writingTasks: 0, units: 0 });
+    b.units++;
+    for (const k of ['bankSentences', 'reviewSentences', 'chapters', 'scenes', 'writingTasks'] as const) { b[k] += q[k]; totals[k] += q[k]; }
+  }
+  return {
+    generatedAt: new Date().toISOString(), factor: QUOTA_FACTOR, basis: 'p95 across runs', ...meta,
+    reviewContextReuseDays: meta.reviewContextReuseDays ?? 0, totals, units: out, perNode,
+  };
+}
+
+/** Nearest-rank p95 of each field. */
+function p95Demand(ds: Demand[]): Demand {
+  const pick = (k: keyof Demand) => {
+    const xs = ds.map((d) => d[k]).sort((a, b) => a - b);
+    return xs[Math.max(0, Math.ceil(0.95 * xs.length) - 1)] ?? 0;
+  };
+  return { sentences: pick('sentences'), reviewSentences: pick('reviewSentences'), chapters: pick('chapters'), scenes: pick('scenes'), tasks: pick('tasks') };
 }
 
 export function formatReport(runs: ProfileRun[], quotas: Quotas): string {
@@ -124,45 +157,124 @@ export function formatReport(runs: ProfileRun[], quotas: Quotas): string {
   const rows = bandRows(runs);
   lines.push(`Fluidez simulator — ${quotas.source} content, ${quotas.days} days, tier ${quotas.tier}`);
   lines.push('');
-  lines.push(table(
-    ['profile', 'band', 'start', 'finish', 'cal.days', 'sessions', 'est.min', 'sim.min', 'load/budget', '%over', '%throttled', '%minimum', '<4 rev/60d'],
-    rows.map((r) => [r.profile, r.band, fmt(r.startDay), fmt(r.finishDay), fmt(r.calendarDays), String(r.sessions),
-      r.avgEstMinutes.toFixed(1), r.avgSimMinutes.toFixed(1), r.reviewLoad.toFixed(2), r.overBudgetPct.toFixed(1),
-      r.throttledPct.toFixed(1), r.minimumPct.toFixed(1), r.under4]),
-  ));
+  lines.push(table(BAND_HEAD, rows.map(bandCells)));
   lines.push('');
-  lines.push(table(
-    ['profile', 'sessions', 'course done', 'unit reached', 'UNINTENDED REPEATS', 'item rep.60d %', '(deliberate)', 'shortages', 'bare reviews', 'owed at end'],
-    runs.map((r) => {
-      const unintended = Object.values(r.unintendedRepeats).reduce((a, b) => a + b, 0);
-      return [r.profile, String(r.sessions.length), fmt(r.courseFinishedDay), String(r.finalUnit),
-        `${unintended}${unintended ? ' ✗' : ''}`, pct(r.itemRepeats60, r.itemServes).toFixed(2), String(r.itemRepeats60Deliberate),
-        String(sum(Object.values(r.shortages))), String(sum(Object.values(r.bareReviews))), String(r.owedAtEnd)];
-    }),
-  ));
+  lines.push(table(RUN_HEAD, runs.map(runCells)));
   lines.push('');
-  lines.push('Shortages by block:what (per profile):');
-  for (const r of runs) lines.push(`  ${r.profile.padEnd(9)} ${Object.entries(r.shortageKinds).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${k} ${n}`).join(', ') || 'none'}`);
+  lines.push('Shortages by block:what (per run):');
+  for (const r of runs) lines.push(`  ${`${r.profile}/${r.tier}`.padEnd(18)} ${Object.entries(r.shortageKinds).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${k} ${n}`).join(', ') || 'none'}`);
   lines.push('');
-  lines.push('Sentences consumed per node (as the item\'s node), worst profile:');
+  lines.push('Sentences consumed per node (as the item\'s node, fresh only), worst run:');
   for (const [k, v] of Object.entries(quotas.perNode)) lines.push(`  ${k.padEnd(9)} mean ${v.meanDemand}  p95 ${v.p95Demand}  max ${v.maxDemand}  → quota ≥ ${v.quota} per node (${quotas.factor} × p95)`);
   lines.push('');
-  lines.push(`Quotas per unit (sentences/scenes/tasks = ${quotas.factor} × max demand across profiles; chapters = chapter slots, read once; * = extrapolated, unit not reached):`);
-  lines.push(table(
-    ['unit', 'sentences', 'chapters', 'scenes', 'tasks', 'max demand s/c/sc/t', 'shortages'],
-    Object.entries(quotas.units).map(([id, q]) => [`${id}${q.estimated ? '*' : ''}`, String(q.bankSentences), String(q.chapters), String(q.scenes), String(q.writingTasks),
-      `${q.maxDemand.sentences}/${q.maxDemand.chapters}/${q.maxDemand.scenes}/${q.maxDemand.tasks}`, String(q.shortages)]),
-  ));
+  lines.push(`Quotas per unit (${quotas.factor} × p95 demand across runs; chapters = chapter slots, read once; * = extrapolated, unit not finished by any run):`);
+  lines.push(table(QUOTA_HEAD, quotaRows(quotas)));
+  lines.push('');
+  lines.push(totalsText(quotas));
   return lines.join('\n');
+}
+
+const BAND_HEAD = ['profile', 'tier', 'band', 'start', 'finish', 'cal.days', 'sessions', 'est.min', 'sim.min', 'load/budget', '%over', '%throttled', '%minimum', '<4 rev/60d', 'recv-only <3/60d'];
+function bandCells(r: BandRow): string[] {
+  return [r.profile, r.tier, r.band, fmt(r.startDay), fmt(r.finishDay), fmt(r.calendarDays), String(r.sessions),
+    r.avgEstMinutes.toFixed(1), r.avgSimMinutes.toFixed(1), r.reviewLoad.toFixed(2), r.overBudgetPct.toFixed(1),
+    r.throttledPct.toFixed(1), r.minimumPct.toFixed(1), r.under4, r.recvUnder3];
+}
+
+const RUN_HEAD = ['profile', 'tier', 'sessions', 'course done', 'unit reached', 'UNINTENDED REPEATS', 'item rep.60d %', '(deliberate)',
+  'fresh sents', 'reused ctx', 'review items', 'multi %', 'targets/item', 'bare', 'shortages', 'recv-only', 'suspended', 'learned', 'owed'];
+function runCells(r: ProfileRun): string[] {
+  const unintended = Object.values(r.unintendedRepeats).reduce((a, b) => a + b, 0);
+  const ri = r.reviewItems;
+  return [r.profile, r.tier, String(r.sessions.length), fmt(r.courseFinishedDay), String(r.finalUnit),
+    `${unintended}${unintended ? ' ✗' : ''}`, pct(r.itemRepeats60, r.itemServes).toFixed(2), String(r.itemRepeats60Deliberate),
+    String(r.freshSentences), String(r.reusedSentences), String(ri.items), pct(ri.multi, ri.items).toFixed(1),
+    (ri.items ? ri.targets / ri.items : 0).toFixed(2), String(ri.bare),
+    String(sum(Object.values(r.shortages))), String(r.receptiveOnly), String(r.suspendedReceptive), String(r.learned), String(r.owedAtEnd)];
+}
+
+const QUOTA_HEAD = ['unit', 'sentences', '(review ctx)', 'chapters', 'scenes', 'tasks', 'p95 demand s/c/sc/t', 'max demand s', 'shortages'];
+function quotaRows(q: Quotas): string[][] {
+  return Object.entries(q.units).map(([id, u]) => [`${id}${u.estimated ? '*' : ''}`, String(u.bankSentences), String(u.reviewSentences),
+    String(u.chapters), String(u.scenes), String(u.writingTasks),
+    `${u.p95Demand.sentences}/${u.p95Demand.chapters}/${u.p95Demand.scenes}/${u.p95Demand.tasks}`, String(u.maxDemand.sentences), String(u.shortages)]);
+}
+
+function totalsText(q: Quotas): string {
+  const t = q.totals;
+  const out = [`TOTAL quotas: ${t.bankSentences} bank sentences (${t.reviewSentences} of them review contexts), ${t.chapters} chapters, ${t.scenes} scenes, ${t.writingTasks} writing tasks`];
+  for (const [b, x] of Object.entries(t.byBand)) out.push(`  ${b}: ${x.bankSentences} sentences (${x.reviewSentences} review ctx) over ${x.units} units, ${x.chapters} chapters, ${x.scenes} scenes, ${x.writingTasks} tasks`);
+  return out.join('\n');
+}
+
+/** The markdown summary (content/_reports/sim-summary.md). `notes` are prepended verbatim. */
+export function formatMarkdown(runs: ProfileRun[], quotas: Quotas, notes: string, units?: Unit[]): string {
+  const md = (head: string[], rows: string[][]) => [`| ${head.join(' | ')} |`, `|${head.map(() => '---').join('|')}|`, ...rows.map((r) => `| ${r.join(' | ')} |`)].join('\n');
+  const L: string[] = [notes.trim(), ''];
+  if (units) {
+    const t = targets(runs, units);
+    L.push('## Targets', '');
+    L.push('Targets: average-profile A1 ≤ ~140 calendar days, fast ≤ ~112; B2 throttle conversions < 25%.', '');
+    L.push(md(['profile', 'tier', 'A1 days', 'A1 target', 'B2 %throttled', '< 25%?'], t.rows), '');
+    L.push(`**Where the A1 days go** (A1 path = ${t.pathDays} unit days; a day advances only on a completed non-minimum, non-converted session):`, '');
+    L.push(md(['profile', 'tier', 'A1 cal. days', 'days studied', 'sessions', '"another"', 'minimum', 'throttle conv.', 'other conv.', 'advancing / cal. day', 'A1 days at 0 throttle', 'A1 path days for the target'], t.decomp), '');
+    L.push('`A1 days at 0 throttle` = (A1 path days) ÷ (advancing sessions per calendar day, had the throttle conversions advanced). `A1 path days for the target` = what the A1 unit map would have to shrink to for this profile to meet its target (average ≤ 140, fast ≤ 112) at its attendance.', '');
+  }
+  L.push('## Calendar and load per profile, band and tier', '');
+  L.push('`cal.days` = calendar days to finish the band (from the previous band\'s finish). `%throttled` = sessions converted to review by the backlog throttle. `load/budget` = mean due-review minutes ÷ the throttle threshold.', '');
+  L.push(md(BAND_HEAD, bandRows(runs).map(bandCells)), '');
+  L.push('## Repeats, reviews and supply per run', '');
+  L.push('`UNINTENDED REPEATS` must be 0 (stories, scenes, tasks, items, sentences re-shown without a label). `item rep.60d %` = non-deliberate exercise items repeated within 60 days (must be < 2%). `reused ctx` = review contexts re-served after ≥ 120 days (deliberate, `review-context-120d`). `multi %` = warm-up items reviewing 2–3 due nodes in one sentence.', '');
+  L.push(md(RUN_HEAD, runs.map(runCells)), '');
+  L.push('## Sentences consumed per node (fresh), worst run', '');
+  L.push(md(['kind', 'mean', 'p95', 'max', `quota (${quotas.factor} × p95)`], Object.entries(quotas.perNode).map(([k, v]) => [k, String(v.meanDemand), String(v.p95Demand), String(v.maxDemand), String(v.quota)])), '');
+  L.push('## Quota totals', '');
+  const t = quotas.totals;
+  L.push(md(['band', 'units', 'bank sentences', 'of which review ctx', 'chapters', 'scenes', 'writing tasks'], [
+    ...Object.entries(t.byBand).map(([b, x]) => [b, String(x.units), String(x.bankSentences), String(x.reviewSentences), String(x.chapters), String(x.scenes), String(x.writingTasks)]),
+    ['**all**', String(Object.values(t.byBand).reduce((a, x) => a + x.units, 0)), `**${t.bankSentences}**`, String(t.reviewSentences), String(t.chapters), String(t.scenes), String(t.writingTasks)],
+  ]), '');
+  L.push(`## Quotas per unit (${quotas.factor} × p95 demand across ${runs.length} runs; * = extrapolated)`, '');
+  L.push(md(QUOTA_HEAD, quotaRows(quotas)), '');
+  return L.join('\n');
 }
 
 function maxDemand(ds: Demand[]): Demand {
   return ds.reduce((a, d) => ({
-    sentences: Math.max(a.sentences, d.sentences), chapters: Math.max(a.chapters, d.chapters),
-    scenes: Math.max(a.scenes, d.scenes), tasks: Math.max(a.tasks, d.tasks),
+    sentences: Math.max(a.sentences, d.sentences), reviewSentences: Math.max(a.reviewSentences, d.reviewSentences),
+    chapters: Math.max(a.chapters, d.chapters), scenes: Math.max(a.scenes, d.scenes), tasks: Math.max(a.tasks, d.tasks),
   }), zero());
 }
-function zero(): Demand { return { sentences: 0, chapters: 0, scenes: 0, tasks: 0 }; }
+const zero = zeroDemand;
+
+const A1_TARGET: Record<string, number> = { average: 140, fast: 112 };
+
+function targets(runs: ProfileRun[], units: Unit[]): { rows: string[][]; decomp: string[][]; pathDays: number } {
+  const pathDays = units.filter((u) => u.band === 'A1').reduce((a, u) => a + u.days.length, 0);
+  const rows: string[][] = [];
+  const decomp: string[][] = [];
+  for (const r of runs) {
+    const a1 = r.bandFinish.A1;
+    const tgt = A1_TARGET[r.profile];
+    const b2 = r.sessions.filter((s) => s.band === 'B2');
+    const b2t = pct(b2.filter((s) => s.converted === 'throttle').length, b2.length);
+    rows.push([r.profile, r.tier, fmt(a1 === undefined ? undefined : a1 + 1),
+      tgt === undefined ? '-' : a1 === undefined ? '✗ not reached' : a1 + 1 <= tgt ? `✓ ≤ ${tgt}` : `✗ > ${tgt}`,
+      b2.length ? b2t.toFixed(1) : '-', b2.length ? (b2t < 25 ? '✓' : '✗') : '-']);
+    if (a1 === undefined) continue;
+    const ss = r.sessions.filter((s) => s.day <= a1);
+    const cal = a1 + 1;
+    const adv = ss.filter((s) => s.advanced).length;
+    const thr = ss.filter((s) => s.converted === 'throttle').length;
+    const perDay = (adv + thr) / cal;
+    decomp.push([r.profile, r.tier, String(cal), String(new Set(ss.map((s) => s.day)).size), String(ss.length),
+      String(ss.filter((s) => s.mode === 'another').length), String(ss.filter((s) => s.type === 'minimum').length), String(thr),
+      String(ss.filter((s) => s.converted && s.converted !== 'throttle').length),
+      (adv / cal).toFixed(2), String(Math.round(pathDays / perDay)),
+      tgt === undefined ? '-' : String(Math.floor(tgt * adv / cal))]);
+  }
+  return { rows, decomp, pathDays };
+}
 function avg(xs: number[]) { return xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0; }
 function sum(xs: number[]) { return xs.reduce((a, b) => a + b, 0); }
 function pct(a: number, b: number) { return b ? (100 * a) / b : 0; }

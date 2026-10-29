@@ -71,6 +71,7 @@ export function fromCard(c: Card, keep?: Partial<CardJSON>): CardJSON {
   if (keep?.baseStability !== undefined) out.baseStability = keep.baseStability;
   if (keep?.lastPartialDay !== undefined) out.lastPartialDay = keep.lastPartialDay;
   if (keep?.partials !== undefined) out.partials = keep.partials;
+  if (keep?.suspended) out.suspended = true;
   return out;
 }
 

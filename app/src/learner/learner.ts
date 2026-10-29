@@ -21,6 +21,21 @@ export type { Grade };
 /** Productive stability (days) an item needs before it counts as learned. */
 export const LEARNED_STABILITY_DAYS = 60;
 
+/**
+ * Recognition-only maintenance. Once a node is learned:
+ *  - its productive card may grow to MAINTENANCE_MAX_INTERVAL_DAYS (or
+ *    settings.maximumInterval, if that is larger), so a learned word comes
+ *    back about once a year at most;
+ *  - its receptive card is suspended: never due again and no partial credit.
+ *    Production subsumes recognition (if you can say it, you can read it), so
+ *    the en→es card alone maintains the item. A later productive lapse is
+ *    handled by the productive card's own relearning; the receptive card stays
+ *    suspended (it is kept, never deleted).
+ * Receptive-only nodes (see productivePolicy) are learned on their receptive
+ * card (stability ≥ 60 d and a novel pass) and get the maintenance cap there.
+ */
+export const MAINTENANCE_MAX_INTERVAL_DAYS = 365;
+
 /** In-lesson retrievals: at least MIN, at most MAX (BLUEPRINT's 3–5 spaced retrievals). */
 export const LEARNING_STEPS_MIN = 3;
 export const LEARNING_STEPS_MAX = 5;
@@ -64,6 +79,15 @@ export interface ReviewOptions {
   novel?: boolean;      // a recombination: the learner had never seen this sentence
 }
 
+export interface SentenceCreditOptions extends ReviewOptions {
+  /** the single target (default: the first id) */
+  target?: NodeId;
+  /** several targets in one sentence (multi-item review): each gets a full review; overrides `target` */
+  targets?: NodeId[];
+  /** per-target grades (default: `grade` for every target) */
+  grades?: Partial<Record<NodeId, Grade>>;
+}
+
 export interface ReviewResult {
   node: NodeId;
   direction: Direction;
@@ -91,6 +115,8 @@ export interface LearnerOptions {
 export class Learner {
   private state: LearnerState;
   private scheduler: FSRS;
+  /** same parameters, maximum interval = the maintenance cap (learned cards) */
+  private maintenanceScheduler: FSRS;
   private readonly now: () => number;
   private saving: Promise<void> = Promise.resolve();
   private dirty = false;
@@ -101,6 +127,7 @@ export class Learner {
     this.state = state;
     this.now = opts.now ?? Date.now;
     this.scheduler = makeScheduler(state.settings, state.weights);
+    this.maintenanceScheduler = this.makeMaintenance();
     this.ledger = new Ledger(() => this.state, () => this.touch(), this.now);
   }
 
@@ -155,13 +182,20 @@ export class Learner {
     if (!(s.retention > 0.7 && s.retention < 0.99)) throw new Error(`retention out of range: ${s.retention}`);
     this.state.settings = s;
     this.scheduler = makeScheduler(s, this.state.weights);
+    this.maintenanceScheduler = this.makeMaintenance();
     this.touch();
+  }
+
+  private makeMaintenance(): FSRS {
+    const s = this.state.settings;
+    return makeScheduler({ ...s, maximumInterval: Math.max(s.maximumInterval, MAINTENANCE_MAX_INTERVAL_DAYS) }, this.state.weights);
   }
 
   /** Install fitted FSRS weights (19 or 21 numbers). undefined restores FSRS-5 defaults. */
   setWeights(w: number[] | undefined): void {
     this.state.weights = w ? [...w] : undefined;
     this.scheduler = makeScheduler(this.state.settings, this.state.weights);
+    this.maintenanceScheduler = this.makeMaintenance();
     this.touch();
   }
 
@@ -191,6 +225,8 @@ export class Learner {
   isLearning(id: NodeId): boolean { return !!this.state.nodes[id]?.learning; }
   hasCard(id: NodeId, direction: Direction): boolean { return !!this.state.nodes[id]?.[direction]; }
   isProductiveUnlocked(id: NodeId): boolean { return this.hasCard(id, 'productive'); }
+  /** Whether the node has (or will unlock) a production card. Absent flag = true. */
+  hasProductiveTrack(id: NodeId): boolean { return this.state.nodes[id]?.productiveTrack !== false; }
 
   private rec(id: NodeId): NodeRecord {
     const r = this.state.nodes[id];
@@ -205,11 +241,13 @@ export class Learner {
    * outcomes in order), records them and hands the node to FSRS at once;
    * otherwise the session calls `learningStep` per retrieval and then
    * `completeIntroduction`. Re-introducing a known node is a no-op.
+   * `productive` (default true) fixes, once, whether the node will ever get a
+   * production card (see productivePolicy); it is not changed by a re-introduce.
    */
-  introduce(id: NodeId, opts: { at?: number; results?: boolean[]; ms?: number[] } = {}): NodeRecord {
+  introduce(id: NodeId, opts: { at?: number; results?: boolean[]; ms?: number[]; productive?: boolean } = {}): NodeRecord {
     const at = opts.at ?? this.now();
     if (!this.state.nodes[id]) {
-      this.state.nodes[id] = { id, introducedAt: at, introDay: this.day(at), learning: { steps: [] }, novelPasses: 0, exposures: 0 };
+      this.state.nodes[id] = { id, introducedAt: at, introDay: this.day(at), learning: { steps: [] }, novelPasses: 0, exposures: 0, productiveTrack: opts.productive ?? true };
       this.touch();
     }
     if (opts.results && this.state.nodes[id].learning) {
@@ -266,16 +304,18 @@ export class Learner {
     const card = r[direction];
     if (!card) throw new Error(`no ${direction} card for ${id}${direction === 'productive' ? ' (still locked)' : ''}`);
     const at = opts.at ?? this.now();
-    const next = this.capInterval(this.scheduler.next(toCard(card), new Date(at), grade).card);
-    r[direction] = fromCard(next, { baseStability: next.stability, partials: card.partials });
+    const maint = this.isMaintenanceCard(r, direction);
+    const next = this.capInterval((maint ? this.maintenanceScheduler : this.scheduler).next(toCard(card), new Date(at), grade).card, this.maxInterval(r, direction));
+    r[direction] = fromCard(next, { baseStability: next.stability, partials: card.partials, suspended: card.suspended });
     if (opts.ms !== undefined) this.recordTime(direction, opts.ms);
     if (opts.novel && grade !== Rating.Again) r.novelPasses += 1;
     let unlocked = false;
-    if (direction === 'receptive' && grade !== Rating.Again && !r.productive && this.day(at) > r.introDay) {
+    if (direction === 'receptive' && grade !== Rating.Again && !r.productive && r.productiveTrack !== false && this.day(at) > r.introDay) {
       r.productive = newCard(at);
       r.productiveUnlockedAt = at;
       unlocked = true;
     }
+    this.maintain(r);
     this.touch();
     return this.result(id, direction, grade, r[direction]!, unlocked);
   }
@@ -285,27 +325,35 @@ export class Learner {
    * id) gets a full review; the others get bounded partial credit, see
    * PARTIAL_WEIGHT. Ids without a usable card are skipped silently.
    */
-  creditSentence(nodeIds: NodeId[], direction: Direction, grade: Grade, opts: ReviewOptions & { target?: NodeId } = {}): { target?: ReviewResult; partial: PartialResult[] } {
+  creditSentence(nodeIds: NodeId[], direction: Direction, grade: Grade, opts: SentenceCreditOptions = {}): { target?: ReviewResult; targets: ReviewResult[]; partial: PartialResult[] } {
     const at = opts.at ?? this.now();
-    const target = opts.target ?? nodeIds[0];
-    const out: { target?: ReviewResult; partial: PartialResult[] } = { partial: [] };
-    if (target !== undefined && this.state.nodes[target]?.[direction]) {
-      out.target = this.review(target, direction, grade, { ...opts, at });
-    }
-    if (grade !== Rating.Good && grade !== Rating.Easy) return out;
+    const targets = [...new Set(opts.targets ?? [opts.target ?? nodeIds[0]])].filter((x): x is NodeId => x !== undefined);
+    const out: { target?: ReviewResult; targets: ReviewResult[]; partial: PartialResult[] } = { targets: [], partial: [] };
+    // Multi-item review: every target gets its own full review (its own grade);
+    // only the first target's time is recorded (the item was answered once).
+    let allPassed = true;
+    targets.forEach((t, i) => {
+      const g = opts.grades?.[t] ?? grade;
+      if (g !== Rating.Good && g !== Rating.Easy) allPassed = false;
+      if (!this.state.nodes[t]?.[direction]) return;
+      out.targets.push(this.review(t, direction, g, { ...opts, at, ms: i === 0 ? opts.ms : undefined }));
+    });
+    out.target = out.targets[0];
+    if (!allPassed) return out;
     const today = this.day(at);
     for (const id of new Set(nodeIds)) {
-      if (id === target) continue;
+      if (targets.includes(id)) continue;
       const card = this.state.nodes[id]?.[direction];
-      if (!card || card.state !== State.Review || card.last_review === undefined) continue;
+      if (!card || card.suspended || card.state !== State.Review || card.last_review === undefined) continue;
       if (card.lastPartialDay === today || this.day(card.last_review) === today) continue;
-      const full = this.scheduler.next(toCard(card), new Date(at), Rating.Good).card.stability;
+      const rec = this.state.nodes[id]!;
+      const full = (this.isMaintenanceCard(rec, direction) ? this.maintenanceScheduler : this.scheduler).next(toCard(card), new Date(at), Rating.Good).card.stability;
       const s = card.stability;
       const base = card.baseStability ?? s;
       let ns = s + PARTIAL_WEIGHT * Math.max(0, full - s);
       ns = Math.min(ns, s * PARTIAL_STEP_CAP, Math.max(s, base * PARTIAL_TOTAL_CAP));
       if (ns <= s) { card.lastPartialDay = today; continue; }
-      const days = Math.min(this.scheduler.next_interval(ns, 0), this.state.settings.maximumInterval);
+      const days = Math.min(this.maintenanceScheduler.next_interval(ns, 0), this.maxInterval(rec, direction));
       card.stability = ns;
       card.scheduled_days = days;
       card.due = card.last_review + days * DAY_MS;
@@ -339,7 +387,7 @@ export class Learner {
     for (const r of Object.values(this.state.nodes)) {
       for (const d of direction ? [direction] : DIRECTIONS) {
         const c = r[d];
-        if (c && c.due <= at) out.push({ node: r.id, direction: d, due: c.due, state: c.state as State, stability: c.stability });
+        if (c && !c.suspended && c.due <= at) out.push({ node: r.id, direction: d, due: c.due, state: c.state as State, stability: c.stability });
       }
     }
     return out.sort((a, b) => a.due - b.due);
@@ -358,11 +406,42 @@ export class Learner {
     return c && { ...c };
   }
 
-  /** Learned = productive stability ≥ 60 days AND ≥ 1 passed recombination review. */
+  /**
+   * Learned = productive stability ≥ 60 days AND ≥ 1 passed recombination
+   * review. A receptive-only node is learned on its receptive card instead.
+   */
   isLearned(id: NodeId): boolean {
     const r = this.state.nodes[id];
-    return !!r?.productive && r.productive.stability >= LEARNED_STABILITY_DAYS && r.novelPasses >= 1;
+    return !!r && this.learnedRec(r);
   }
+
+  private learnedRec(r: NodeRecord): boolean {
+    const card = r.productiveTrack === false ? r.receptive : r.productive;
+    return !!card && card.stability >= LEARNED_STABILITY_DAYS && r.novelPasses >= 1;
+  }
+
+  /** The card that maintains a learned node: productive, or receptive for receptive-only nodes. */
+  private maintenanceDirection(r: NodeRecord): Direction {
+    return r.productiveTrack === false ? 'receptive' : 'productive';
+  }
+
+  private isMaintenanceCard(r: NodeRecord, direction: Direction): boolean {
+    return direction === this.maintenanceDirection(r) && this.learnedRec(r);
+  }
+
+  private maxInterval(r: NodeRecord, direction: Direction): number {
+    const max = this.state.settings.maximumInterval;
+    return this.isMaintenanceCard(r, direction) ? Math.max(max, MAINTENANCE_MAX_INTERVAL_DAYS) : max;
+  }
+
+  /** Recognition-only maintenance: once learned, the receptive card of a productive node is suspended. */
+  private maintain(r: NodeRecord): void {
+    if (r.productiveTrack === false || !r.receptive || r.receptive.suspended) return;
+    if (this.learnedRec(r)) r.receptive.suspended = true;
+  }
+
+  /** Whether the card is suspended (recognition-only maintenance). */
+  isSuspended(id: NodeId, direction: Direction): boolean { return !!this.state.nodes[id]?.[direction]?.suspended; }
 
   learnedCount(): number { return Object.keys(this.state.nodes).filter((id) => this.isLearned(id)).length; }
 
@@ -390,8 +469,7 @@ export class Learner {
   // ---------------------------------------------------------------- helpers
 
   /** ts-fsrs lets Easy exceed maximum_interval by a day or two (easy ≥ good + 1); hold the line. */
-  private capInterval(c: Card): Card {
-    const max = this.state.settings.maximumInterval;
+  private capInterval(c: Card, max = this.state.settings.maximumInterval): Card {
     if (c.scheduled_days > max && c.last_review) {
       c.scheduled_days = max;
       c.due = new Date(c.last_review.getTime() + max * DAY_MS);

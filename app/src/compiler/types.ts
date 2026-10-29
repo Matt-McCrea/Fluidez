@@ -15,8 +15,8 @@
 //
 // Everything here is plain JSON (no Dates, no class instances, no Sets) so a
 // plan or a path can be logged, stored and diffed.
-import type { GraphNode, LessonType, NodeId, Unit } from '../content/schema';
-import type { CardJSON, Direction, DueCard, LedgerKind, NodeRecord, Settings, Tier } from '../learner';
+import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schema';
+import type { CardJSON, Direction, DueCard, LedgerKind, LedgerView, NodeRecord, Settings, Tier } from '../learner';
 
 // ------------------------------------------------------------------ inputs
 
@@ -31,8 +31,9 @@ export interface LearnerView {
     hasSeen(kind: LedgerKind, id: string): boolean;
     firstSeen(kind: LedgerKind, id: string): Date | undefined;
     lastSeen(kind: LedgerKind, id: string): Date | undefined;
-    views(kind: LedgerKind, id: string): readonly { at: number; deliberate: boolean }[];
+    views(kind: LedgerKind, id: string): readonly LedgerView[];
     seenBetween(kind: LedgerKind, from: number, to: number): string[];
+    reviewReusable(id: string, at: number, minDays: number): boolean;
   };
   nodes(): NodeId[];
   node(id: NodeId): NodeRecord | undefined;
@@ -179,15 +180,32 @@ interface ItemBase {
   credit: NodeId[];
 }
 
-/** An SRS review: `node` in `direction`, in an UNSEEN sentence that contains it (or bare when none is left). */
+/**
+ * An SRS review: `node` in `direction`, in a sentence that contains it: an
+ * UNSEEN one, or (warm-up only) a review context last shown ≥ REVIEW_REUSE_DAYS
+ * ago (`reused`), or bare when neither is left.
+ *
+ * Multi-item review: `targets` lists every due node (same direction) this one
+ * sentence reviews, `node` first, at most MULTI_REVIEW_MAX. Each target gets a
+ * full review: learner.creditSentence(credit, direction, grade, { targets,
+ * grades, novel }). The other nodes in `credit` get the usual partial credit.
+ */
 export interface ReviewItem extends ItemBase {
   op: 'review';
   node: NodeId;
+  /**
+   * Due nodes reviewed by this item, `node` first (length 1 = a single
+   * review). The compiler always sets it; absent (hand-built items) = [node].
+   * Read it with `reviewTargets(item)`.
+   */
+  targets?: NodeId[];
   direction: Direction;
-  /** bank sentence id; undefined = bare card (no fresh context left: a 'shortage' diagnostic is logged) */
+  /** bank sentence id; undefined = bare card (no fresh context left: a 'bareReview' diagnostic is logged) */
   sentence?: string;
   /** true when the sentence is new to the learner (a recombination) */
   novel: boolean;
+  /** a review context re-served after ≥ REVIEW_REUSE_DAYS: ledgered deliberate, reason REVIEW_REUSE_REASON */
+  reused?: boolean;
 }
 
 /** A new chunk/lexeme/pattern/contrast: present with an example, then 3–5 interleaved retrievals. */
@@ -198,6 +216,11 @@ export interface LearnItem extends ItemBase {
   /** an unseen gated example sentence, if one exists */
   example?: string;
   retrievals: number;
+  /**
+   * Whether the node gets a production card (productivePolicy); the runner
+   * passes it to learner.introduce. The compiler always sets it; absent = true.
+   */
+  productive?: boolean;
 }
 
 /**
@@ -259,6 +282,8 @@ export interface WarmupBlock extends BlockBase {
   items: ReviewItem[];
   /** cards due at compile time */
   due: number;
+  /** due cards reviewed by the items (multi-target items review several) */
+  covered: number;
   /** due cards not served in this session (stay due; never dropped) */
   carried: number;
   /** minute budget this block was planned to */
@@ -406,11 +431,17 @@ export interface SessionPlan {
   blocks: Block[];
   /** nodes this session introduces (the runner calls learner.introduce for each) */
   newNodes: { grammar: NodeId[]; patterns: NodeId[]; chunks: NodeId[]; lexemes: NodeId[]; contrasts: NodeId[] };
+  /** of newNodes, those introduced receptive-only: learner.introduce(id, { productive: false }) */
+  receptiveOnly: NodeId[];
   budget: {
+    /** band the session's budgets were taken from */
+    band: Band;
     minutes: number;
+    /** the backlog-throttle threshold (warm-up budget; + the extra core minutes on the extended tier) */
     reviewMinutes: number;
     secondsPerReview: number;
     due: number;
+    /** minutes to review everything due, with multi-target items costed at MULTI_REVIEW_COST */
     dueMinutes: number;
     throttled: boolean;
     severe: boolean;
@@ -421,5 +452,9 @@ export interface SessionPlan {
   pathAfter: PathState;
 }
 
-/** One thing to record in the exposure ledger after it is shown. */
-export interface ServedRef { kind: LedgerKind; id: string; deliberate: boolean }
+/**
+ * One thing to record in the exposure ledger after it is shown:
+ * learner.ledger.markSeen(kind, id, { deliberate, review, reason }).
+ * `review`: shown as an SRS review context (makes it eligible for reuse later).
+ */
+export interface ServedRef { kind: LedgerKind; id: string; deliberate: boolean; review?: boolean; reason?: string }

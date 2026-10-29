@@ -1,18 +1,88 @@
 // Minute budgets and per-item time estimates. Design heuristics from
 // BLUEPRINT "Anatomy of the daily lesson" (20-minute lesson, A1–B1); the
 // simulator reports how plans built from them actually land.
-import type { LessonType } from '../content/schema';
+import type { Band, LessonType } from '../content/schema';
 import type { Tier } from '../learner';
 
-/** Session length in minutes by tier (standard uses settings.minutes). */
-export const TIER_MINUTES: Record<Tier, number> = { minimum: 10, standard: 20, extended: 40 };
+// ---------------------------------------------------------------- session & review budgets
+//
+// Defaults decided 29 Oct 2026 (coordinator), after the simulator showed a flat
+// 4.5-minute warm-up cannot carry the unit map's intake (average A1 = 211 days).
+// Every value below is config: the simulator's report says how plans built from
+// them land. Changes made while tuning are listed in TUNING_LOG at the end.
 
-/** The SRS warm-up budget in minutes ("constant 4–5 min"), by tier. */
-export const WARMUP_MINUTES: Record<Tier, number> = { minimum: 5, standard: 4.5, extended: 8 };
+/** Standard-tier session length in minutes, by the band of the unit being studied. */
+export const SESSION_MINUTES: Record<Band, number> = { A1: 20, A2: 22, B1: 25, B2: 28, C1: 30 };
 
-/** Review day: the extended SRS block. Checkpoint: shortened. */
-export const REVIEW_DAY_MINUTES: Record<Tier, number> = { minimum: 5, standard: 8, extended: 12 };
-export const CHECKPOINT_WARMUP_MINUTES = 3.5;
+/**
+ * Standard-tier SRS warm-up budget in minutes, by band (part of the session
+ * minutes above). Coordinator default A1 6 / A2 6 / B1 7 / B2 8 / C1 8; tuned
+ * +1 per band (see TUNING_LOG): the core's planned content already ends under
+ * the session minutes in A1–B1, so the extra warm-up minute comes out of slack.
+ */
+export const BAND_WARMUP_MINUTES: Record<Band, number> = { A1: 7, A2: 7, B1: 8, B2: 9, C1: 9 };
+
+/** Minimum tier: a 10-minute streak saver (warm-up + re-read + timed recall, nothing new). */
+export const MINIMUM_MINUTES = 10;
+export const MINIMUM_WARMUP_MINUTES = 5;
+
+/**
+ * Extended tier: the standard session plus this many CORE minutes. No extra
+ * new grammar (the one-grammar-point rule is unchanged). The extra minutes go,
+ * in order, to due reviews beyond the warm-up budget (so a backlog that fits in
+ * them does not convert the day), then to extra reading from the unit bank.
+ */
+export const EXTENDED_EXTRA_MINUTES = 15;
+/** Cap on extended-tier extra-reading sentences per session (bounds bank demand). */
+export const EXTRA_READING_MAX = 24;
+
+/** Band used once the course is finished (maintenance sessions). */
+export const DONE_BAND: Band = 'C1';
+
+export function sessionMinutes(tier: Tier, band: Band): number {
+  if (tier === 'minimum') return MINIMUM_MINUTES;
+  return SESSION_MINUTES[band] + (tier === 'extended' ? EXTENDED_EXTRA_MINUTES : 0);
+}
+
+/** The warm-up's review budget in minutes (what the warm-up block is planned to). */
+export function warmupMinutes(tier: Tier, band: Band): number {
+  return tier === 'minimum' ? MINIMUM_WARMUP_MINUTES : BAND_WARMUP_MINUTES[band];
+}
+
+/**
+ * The backlog-throttle threshold in minutes: due reviews above it throttle the
+ * session. Extended learners may spend their extra core minutes on reviews.
+ */
+export function throttleMinutes(tier: Tier, band: Band): number {
+  return warmupMinutes(tier, band) + (tier === 'extended' ? EXTENDED_EXTRA_MINUTES : 0);
+}
+
+/** Review day: the extended SRS block = warm-up + this many minutes. Checkpoint: warm-up × this factor. */
+export const REVIEW_DAY_EXTRA_MINUTES = 4;
+export const CHECKPOINT_WARMUP_FACTOR = 0.75;
+
+// ---------------------------------------------------------------- reviews
+
+/**
+ * Multi-item sentence reviews (the research doc's "one sentence retrieves 3–5
+ * known words"): one review item may target up to MULTI_REVIEW_MAX due nodes
+ * (same direction) when one usable sentence contains them all. Each target
+ * gets a full review. A multi-target item costs MULTI_REVIEW_COST × a single
+ * review's time (learner.secondsPerReview), whatever its target count.
+ */
+export const MULTI_REVIEW_MAX = 3;
+export const MULTI_REVIEW_COST = 1.4;
+/** Candidate sentences examined per due card when grouping (bounds compile time). */
+export const MULTI_REVIEW_SCAN = 80;
+
+/**
+ * Review-context reuse: a bank sentence only ever shown as an SRS review
+ * context may be served as a review context again after this many days
+ * (labelled deliberate, reason REVIEW_REUSE_REASON). Unseen sentences are
+ * still preferred while a target needs its first recombination pass.
+ */
+export const REVIEW_REUSE_DAYS = 120;
+export const REVIEW_REUSE_REASON = 'review-context-120d';
 
 /** Throttle: due minutes > budget. Severe: > SEVERE_FACTOR × budget (introduce days convert too). */
 export const SEVERE_FACTOR = 2;
@@ -89,3 +159,15 @@ export const REMIX_WINDOW_DAYS = 28;
 export const CHECKPOINT_WINDOW_DAYS: [number, number] = [14, 28];
 /** Drill must follow an introduce within this many core sessions. */
 export const DRILL_WITHIN = 3;
+
+/**
+ * Every parameter change made while tuning against the simulator, newest
+ * last (also printed into content/_reports/sim-summary.md).
+ */
+export const TUNING_LOG: readonly string[] = [
+  '2026-10-29 coordinator defaults: session minutes A1 20 / A2 22 / B1 25 / B2 28 / C1 30; warm-up A1 6 / A2 6 / B1 7 / B2 8 / C1 8; minimum 10; extended +15 core; multi-item reviews (≤ 3, cost 1.4×); review-context reuse after 120 d; production cards by policy; recognition-only maintenance. Result (seed 1, standard): average A1 176 d (was 211), B2 throttle 12.8% (was 51.7%); fast A1 116 d.',
+  '2026-10-29 canDoAnother costs due reviews the way the warm-up will (multi-target groups) when given the content index, instead of one review per due card; "another" is offered exactly when it would not throttle.',
+  '2026-10-29 BAND_WARMUP_MINUTES +1 per band → A1 7 / A2 7 / B1 8 / B2 9 / C1 9. 3-seed means, standard tier: average throttle A1 9→6%, A2 18→10%, B1 16→13%, B2 11→7%, C1 17→10%; fast A1 114→108 d with 0% throttle (target ≤ ~112 met). Average A1 stays ~160–172 d: see the summary, it is attendance-bound, not review-bound.',
+  '2026-10-29 tried and rejected: MULTI_REVIEW_SCAN 80→250 (targets/item +0.05, calendar change within seed noise, compile cost ×2.5); B2/C1 warm-up 10–12. Forgetful B2 throttle (2 seeds) 31% at 9 min, 25% at 10, 24.5% at 11, 17% at 12; the average profile is already ~5% at 9 and gains nothing. Kept 9: a 10–12 min warm-up turns the 28-min B2 session into a 16–18 min core for every learner to help only the forgetful one.',
+  '2026-10-29 simulator: synthetic supply 2× (32 sentences per lexeme) for the quota run, so measured demand is not capped by the synthetic bank (bare reviews 0–4 instead of hundreds for forgetful).',
+];

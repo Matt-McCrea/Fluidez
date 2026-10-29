@@ -24,6 +24,12 @@ export interface CardJSON {
   baseStability?: number;     // stability right after the last *full* review (caps partial credit)
   lastPartialDay?: string;    // day key of the last partial credit (one per day)
   partials?: number;          // partial credits received, lifetime
+  /**
+   * Suspended cards are never due and get no partial credit. Set on the
+   * receptive card once the node is learned (production subsumes recognition,
+   * see Learner.maintain). A review of a suspended card still updates it.
+   */
+  suspended?: boolean;
 }
 
 export interface LearningStep { at: number; correct: boolean; ms?: number }
@@ -37,6 +43,13 @@ export interface NodeRecord {
   receptive?: CardJSON;
   productive?: CardJSON;      // absent until unlocked
   productiveUnlockedAt?: number;
+  /**
+   * Whether this node ever gets a production (en→es) card. Decided once, at
+   * introduce time, by `productivePolicy` (the caller passes it); absent in
+   * older documents = true. This is the plan's node-level `productive` flag,
+   * named apart from the `productive` card field above.
+   */
+  productiveTrack?: boolean;
   novelPasses: number;        // passed reviews flagged novel (recombination)
   exposures: number;          // reading / context encounters, never scored
   lastExposedAt?: number;
@@ -45,7 +58,11 @@ export interface NodeRecord {
 export type LedgerKind = 'chapter' | 'reading' | 'scene' | 'item' | 'sentence';
 export const LEDGER_KINDS: readonly LedgerKind[] = ['chapter', 'reading', 'scene', 'item', 'sentence'];
 
-export interface LedgerView { at: number; deliberate: boolean }
+/**
+ * One showing. `review`: shown as an SRS review context (warm-up). `reason`
+ * labels a deliberate re-show (e.g. 'review-context-120d').
+ */
+export interface LedgerView { at: number; deliberate: boolean; review?: boolean; reason?: string }
 export interface LedgerEntry { first: number; last: number; views: LedgerView[] }
 
 export interface TimingStats { count: number; totalMs: number }

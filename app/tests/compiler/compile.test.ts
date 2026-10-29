@@ -141,9 +141,10 @@ describe('backlog throttle', () => {
     expect(Object.values(plan.newNodes).flat()).toEqual([]);
     const w = plan.blocks[0];
     if (w.kind !== 'warmup') throw new Error('warmup first');
-    // the whole session goes to reviews, far over the 4.5-minute warm-up budget
-    expect(w.items.length * plan.budget.secondsPerReview / 60).toBeGreaterThan(budget.WARMUP_MINUTES.standard * 2);
-    expect(w.carried + w.items.length).toBe(plan.budget.due);
+    // the whole session goes to reviews, far over the band's warm-up budget
+    expect(w.minutes).toBeGreaterThan(budget.warmupMinutes('standard', plan.budget.band) * 2);
+    expect(w.carried + w.covered).toBe(plan.budget.due);
+    expect(w.covered).toBe(w.items.reduce((a, it) => a + it.targets!.length, 0));
     expect(plan.pathAfter.day).toBe(path.day);
     expect(canDoAnother(s.input(path))).toBe(false);
     expect(compileSession(s.input(path, { mode: 'another' })).type).toBe('review');

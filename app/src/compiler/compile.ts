@@ -11,19 +11,25 @@
 //  - contrasts only once both sides are known
 //  - content gate: everything served has requires ⊆ known ∪ introduced-this-session
 //    (non-transitive: a known chunk satisfies itself, never the grammar it unpacks)
-//  - review budget in minutes (learner.secondsPerReview); backlog throttle cuts
+//  - review budget in minutes by band and tier (budget.ts; learner.secondsPerReview);
+//    multi-target review items (≤ 3 due nodes in one sentence) cost
+//    MULTI_REVIEW_COST × a single review; backlog throttle cuts
 //    new items first, converts input/patterns days (and introduce days when
 //    severe) into review, never trims reviews
-//  - no repeats: nothing in the ledger is served unless its block is deliberate;
+//  - no repeats: nothing in the ledger is served unless its block is deliberate,
+//    except a warm-up review context only ever used as one, last shown
+//    ≥ REVIEW_REUSE_DAYS ago (ledgered deliberate, reason 'review-context-120d');
 //    when supply runs short the block/session converts and a 'shortage' is logged;
 //    there is no fallback to ungated or seen content
 //  - deterministic: the RNG seed is learner id + session index
-import type { GraphNode, LessonType, NodeId, Unit } from '../content/schema';
-import type { DueCard, Tier } from '../learner';
+import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schema';
+import { productivePolicy, type Direction, type DueCard, type Tier } from '../learner';
 import {
-  CHECKPOINT_WARMUP_MINUTES, CHECKPOINT_WINDOW_DAYS, CHUNK_CAP, CONTRAST_CAP, COUNTS, DRILL_WITHIN,
-  LEXEME_CAP, PATTERN_CAP, PATTERNS_DAY_CAP, PATTERNS_TAUGHT, REMIX_WINDOW_DAYS, REPAY_CAP, REREAD_WIDE_DAYS, REREAD_WINDOW_DAYS, REVIEW_DAY_MINUTES,
-  SECONDS, SEVERE_FACTOR, THROTTLED_WARMUP_FACTOR, TIER_MINUTES, WARMUP_MINUTES,
+  CHECKPOINT_WARMUP_FACTOR, CHECKPOINT_WINDOW_DAYS, CHUNK_CAP, CONTRAST_CAP, COUNTS, DONE_BAND, DRILL_WITHIN,
+  EXTENDED_EXTRA_MINUTES, EXTRA_READING_MAX, LEXEME_CAP, MINIMUM_WARMUP_MINUTES, MULTI_REVIEW_COST, MULTI_REVIEW_MAX, MULTI_REVIEW_SCAN,
+  PATTERN_CAP, PATTERNS_DAY_CAP, PATTERNS_TAUGHT, REMIX_WINDOW_DAYS, REPAY_CAP, REREAD_WIDE_DAYS, REREAD_WINDOW_DAYS,
+  REVIEW_DAY_EXTRA_MINUTES, REVIEW_REUSE_DAYS, REVIEW_REUSE_REASON,
+  SECONDS, SEVERE_FACTOR, THROTTLED_WARMUP_FACTOR, sessionMinutes, throttleMinutes, warmupMinutes,
 } from './budget';
 import { dayPos, makeRng, sessionSeed, type Rng } from './content';
 import type {
@@ -49,12 +55,32 @@ export function advancePath(path: PathState, plan: SessionPlan, coreCompleted: b
 }
 
 /** Whether "do another" should be offered now: not minimum, course not finished, and no backlog over budget. */
-export function canDoAnother(input: Pick<CompileInput, 'learner' | 'path' | 'course' | 'now' | 'tier'>): boolean {
+export function canDoAnother(input: Pick<CompileInput, 'learner' | 'path' | 'course' | 'now' | 'tier'> & { content?: CompileInput['content']; learnerId?: string }): boolean {
   const tier = input.tier ?? input.learner.settings.tier;
   if (tier === 'minimum') return false;
   if (input.path.unit >= input.course.units.length) return false;
-  const dueMin = input.learner.due(input.now).length * input.learner.secondsPerReview() / 60;
-  return dueMin <= WARMUP_MINUTES[tier];
+  // With the content index: the same grouped (multi-target) cost the compiler
+  // will see, so "another" is offered exactly when it would not be throttled.
+  // Without it: every due card costed as a single review (an upper bound).
+  const dueMin = input.content
+    ? new Compiler({ learnerId: input.learnerId ?? '', learner: input.learner, path: input.path, course: input.course, content: input.content, now: input.now, tier, mode: 'another' }).dueReviewMinutes()
+    : input.learner.due(input.now).length * input.learner.secondsPerReview() / 60;
+  return dueMin <= throttleMinutes(tier, bandAt(input.course, input.path));
+}
+
+/** The band whose budgets apply on this path position (the last band once the course is finished). */
+export function bandAt(course: { units: Unit[] }, path: Pick<PathState, 'unit'>): Band {
+  return course.units[path.unit]?.band ?? course.units[course.units.length - 1]?.band ?? DONE_BAND;
+}
+
+/** The due nodes a review item reviews (`targets`, or just `node` on a hand-built item). */
+export function reviewTargets(it: Pick<ReviewItem, 'node' | 'targets'>): NodeId[] {
+  return it.targets?.length ? it.targets : [it.node];
+}
+
+/** Time cost of one review item, in single-review units. */
+export function reviewCost(targets: number): number {
+  return targets > 1 ? MULTI_REVIEW_COST : 1;
 }
 
 /** Every ledger entry the runner records once the plan's content is shown. */
@@ -63,7 +89,19 @@ export function servedRefs(plan: SessionPlan): ServedRef[] {
   const add = (kind: ServedRef['kind'], id: string | undefined, deliberate: boolean) => { if (id) out.push({ kind, id, deliberate }); };
   for (const b of plan.blocks) {
     switch (b.kind) {
-      case 'warmup': case 'leech':
+      case 'warmup':
+        for (const it of b.items) {
+          if (!it.sentence) continue;
+          if (it.reused) {
+            out.push({ kind: 'sentence', id: it.sentence, deliberate: true, review: true, reason: REVIEW_REUSE_REASON });
+            out.push({ kind: 'item', id: it.id, deliberate: true, review: true, reason: REVIEW_REUSE_REASON });
+          } else {
+            out.push({ kind: 'sentence', id: it.sentence, deliberate: false, review: true });
+            out.push({ kind: 'item', id: it.id, deliberate: false, review: true });
+          }
+        }
+        break;
+      case 'leech':
         for (const it of b.items) if (it.sentence) { add('sentence', it.sentence, false); add('item', it.id, false); }
         break;
       case 'learn':
@@ -101,6 +139,14 @@ export function contrastSides(n: GraphNode | undefined): NodeId[] {
   return n.contrasts.length ? n.contrasts : n.requires;
 }
 
+/** A planned review item: due cards of one direction sharing one sentence (or one bare card). */
+interface ReviewGroup {
+  direction: Direction;
+  targets: NodeId[];
+  sentence?: SentenceRef;
+  reused: boolean;
+}
+
 interface Decision {
   type: LessonType;
   advances: boolean;
@@ -121,6 +167,7 @@ class Compiler {
   private readonly spr: number;
   private readonly known: Set<NodeId>;
   private readonly sessionNew = new Set<NodeId>();
+  private readonly receptiveOnly: NodeId[] = [];
   private readonly usedSentences = new Set<string>();
   private readonly diags: Diagnostic[] = [];
   private readonly blocks: Block[] = [];
@@ -129,7 +176,10 @@ class Compiler {
   /** minutes the warm-up ran over its budget (throttled sessions) */
   private warmupOverrun = 0;
   private due: DueCard[] = [];
+  /** every due card grouped into review items, most overdue first; the warm-up serves a prefix */
+  private groups: ReviewGroup[] = [];
   private dueMinutes = 0;
+  private band: Band = DONE_BAND;
   private minutes = 0;
   private throttled = false;
   private severe = false;
@@ -155,19 +205,27 @@ class Compiler {
   }
 
   private get course() { return this.input.course; }
+
+  /** Minutes to review everything due, grouped as the warm-up would serve it. */
+  dueReviewMinutes(): number {
+    this.due = this.L.due(this.now);
+    return this.planReviews().reduce((a, g) => a + reviewCost(g.targets.length), 0) * this.spr / 60;
+  }
   private get content() { return this.input.content; }
 
   // ---------------------------------------------------------------- top level
 
   compile(): SessionPlan {
-    this.minutes = this.tier === 'standard' ? this.L.settings.minutes
-      : this.tier === 'extended' ? Math.max(TIER_MINUTES.extended, this.L.settings.minutes) : TIER_MINUTES.minimum;
+    this.unit = this.course.units[this.path.unit];
+    this.band = bandAt(this.course, this.path);
+    // session length by band and tier (budget.ts); settings.minutes is not used for planning
+    this.minutes = sessionMinutes(this.tier, this.band);
     this.due = this.L.due(this.now);
-    this.dueMinutes = this.due.length * this.spr / 60;
-    const reviewBudget = WARMUP_MINUTES[this.tier];
+    this.groups = this.planReviews();
+    this.dueMinutes = this.groups.reduce((a, g) => a + reviewCost(g.targets.length), 0) * this.spr / 60;
+    const reviewBudget = throttleMinutes(this.tier, this.band);
     this.throttled = this.dueMinutes > reviewBudget;
     this.severe = this.dueMinutes > SEVERE_FACTOR * reviewBudget;
-    this.unit = this.course.units[this.path.unit];
     const day = this.unit?.days[this.path.day];
 
     if (this.tier === 'minimum') return this.minimum(day);
@@ -203,8 +261,9 @@ class Compiler {
       advancesPath: d.advances,
       blocks: this.blocks,
       newNodes: this.newNodes,
+      receptiveOnly: this.receptiveOnly,
       budget: {
-        minutes: this.minutes, reviewMinutes: reviewBudget, secondsPerReview: this.spr,
+        band: this.band, minutes: this.minutes, reviewMinutes: reviewBudget, secondsPerReview: this.spr,
         due: this.due.length, dueMinutes: this.dueMinutes, throttled: this.throttled, severe: this.severe,
       },
       estimatedMinutes: round1(this.blocks.reduce((a, b) => a + b.minutes, 0)),
@@ -284,17 +343,28 @@ class Compiler {
 
   // ---------------------------------------------------------------- warm-up
 
+  /**
+   * Serve review items (planned groups, most overdue first) while the cost so
+   * far is under the cap. A group may overshoot the cap by < MULTI_REVIEW_COST
+   * units; reviews are never trimmed below the cap.
+   */
   private warmup(capMinutes: number, budgetMinutes: number, extended: boolean): WarmupBlock {
-    const n = Math.min(this.due.length, Math.max(0, Math.floor((capMinutes * 60) / this.spr + 1e-6)));
+    const capUnits = (capMinutes * 60) / this.spr - 1e-6;
     const items: ReviewItem[] = [];
-    for (const card of this.due.slice(0, n)) {
-      items.push(this.reviewItem(card.node, card.direction, 'review', 'warmup'));
-      this.warmupKeys.add(card.node);
+    let units = 0;
+    let covered = 0;
+    for (const g of this.groups) {
+      if (units >= capUnits) break;
+      items.push(this.reviewItem(g));
+      units += reviewCost(g.targets.length);
+      covered += g.targets.length;
+      for (const t of g.targets) this.warmupKeys.add(t);
     }
-    this.warmupOverrun = Math.max(0, items.length * this.spr / 60 - budgetMinutes);
+    const minutes = units * this.spr / 60;
+    this.warmupOverrun = Math.max(0, minutes - budgetMinutes);
     const b: WarmupBlock = {
       kind: 'warmup', part: 'warmup', deliberate: false, items,
-      minutes: round1(items.length * this.spr / 60), due: this.due.length, carried: this.due.length - items.length,
+      minutes: round1(minutes), due: this.due.length, covered, carried: this.due.length - covered,
       budgetMinutes, extended,
     };
     this.blocks.push(b);
@@ -302,18 +372,84 @@ class Compiler {
   }
 
   /** Standard warm-up: everything due fits unless throttled; throttled lets it run over by the cut new items' time. */
-  private warmupStd(budget = WARMUP_MINUTES[this.tier]) {
+  private warmupStd(budget = throttleMinutes(this.tier, this.band)) {
     const cap = this.throttled ? Math.max(budget * THROTTLED_WARMUP_FACTOR, budget) : Math.max(budget, this.dueMinutes);
     return this.warmup(cap, budget, false);
   }
 
-  private reviewItem(node: NodeId, direction: 'receptive' | 'productive', scoring: 'review' | 'exposure', block: 'warmup' | 'leech'): ReviewItem {
-    const [s] = this.pickSentences(node, 1);
+  private reviewItem(g: ReviewGroup): ReviewItem {
+    const node = g.targets[0];
+    const s = g.sentence;
     if (s) {
-      return { op: 'review', id: `rv:${s.id}`, node, direction, sentence: s.id, novel: true, scoring, credit: creditOf(node, s) };
+      this.usedSentences.add(s.id);
+      return {
+        op: 'review', id: `rv:${s.id}`, node, targets: [...g.targets], direction: g.direction, sentence: s.id,
+        novel: !g.reused, ...(g.reused ? { reused: true } : {}), scoring: 'review', credit: creditOf(node, s),
+      };
     }
-    this.diag({ code: 'bareReview', block, node, what: 'sentence', wanted: 1, got: 0, message: `no unseen gated sentence for ${node}: bare card` });
-    return { op: 'review', id: `rv:${node}:${direction}:bare`, node, direction, novel: false, scoring, credit: [node] };
+    this.diag({ code: 'bareReview', block: 'warmup', node, what: 'sentence', wanted: 1, got: 0, message: `no usable sentence for ${node}: bare card` });
+    return { op: 'review', id: `rv:${node}:${g.direction}:bare`, node, targets: [node], direction: g.direction, novel: false, scoring: 'review', credit: [node] };
+  }
+
+  /**
+   * Group every due card into review items. For each card (most overdue
+   * first) not yet covered, look at up to MULTI_REVIEW_SCAN usable sentences
+   * containing it — unseen, or a review context reusable after
+   * REVIEW_REUSE_DAYS — and take the one that also contains the most other
+   * uncovered due cards of the same direction (≤ MULTI_REVIEW_MAX targets in
+   * all). Ties: an unseen sentence while some target still needs its first
+   * recombination pass (novelPasses = 0), else a reused one (saves supply);
+   * then scan order. No usable sentence: a bare card.
+   */
+  private planReviews(): ReviewGroup[] {
+    const open: Record<Direction, Set<NodeId>> = { receptive: new Set(), productive: new Set() };
+    for (const c of this.due) open[c.direction].add(c.node);
+    const reserved = new Set<string>();
+    const novelMemo = new Map<NodeId, boolean>();
+    const needsNovel = (id: NodeId) => {
+      let v = novelMemo.get(id);
+      if (v === undefined) { v = (this.L.node(id)?.novelPasses ?? 0) === 0; novelMemo.set(id, v); }
+      return v;
+    };
+    const groups: ReviewGroup[] = [];
+    for (const card of this.due) {
+      const pool = open[card.direction];
+      if (!pool.has(card.node)) continue;
+      pool.delete(card.node);
+      let best: { s: SentenceRef; extras: NodeId[]; reused: boolean; score: number } | undefined;
+      let scanned = 0;
+      const novelWanted = needsNovel(card.node);
+      outer: for (const list of [this.content.byTarget.get(card.node), this.content.byRequire.get(card.node)]) {
+        if (!list) continue;
+        for (const id of list) {
+          if (scanned >= MULTI_REVIEW_SCAN) break outer;
+          if (reserved.has(id) || this.usedSentences.has(id)) continue;
+          let reused = false;
+          if (this.L.ledger.hasSeen('sentence', id)) {
+            if (!this.L.ledger.reviewReusable(id, this.now, REVIEW_REUSE_DAYS)) continue;
+            reused = true;
+          }
+          const s = this.content.sentences.get(id)!;
+          if (!this.gated(s.requires)) continue;
+          scanned++;
+          const extras: NodeId[] = [];
+          for (const r of s.requires) {
+            if (extras.length >= MULTI_REVIEW_MAX - 1) break;
+            if (r !== card.node && pool.has(r)) extras.push(r);
+          }
+          const wantNovel = novelWanted || (extras.length > 0 && extras.some(needsNovel));
+          const fresh = reused ? (wantNovel ? 0 : 1) : (wantNovel ? 1 : 0);
+          const score = extras.length * 2 + fresh;
+          if (!best || score > best.score) best = { s, extras, reused, score };
+          if (extras.length >= MULTI_REVIEW_MAX - 1 && fresh === 1) break outer;
+        }
+      }
+      if (!best) { groups.push({ direction: card.direction, targets: [card.node], reused: false }); continue; }
+      reserved.add(best.s.id);
+      for (const x of best.extras) pool.delete(x);
+      groups.push({ direction: card.direction, targets: [card.node, ...best.extras], sentence: best.s, reused: best.reused });
+    }
+    return groups;
   }
 
   // ---------------------------------------------------------------- content selection
@@ -489,13 +625,21 @@ class Compiler {
       else if (k === 'pattern') this.newNodes.patterns.push(id);
       else if (k === 'contrast') this.newNodes.contrasts.push(id);
       else this.newNodes.lexemes.push(id);
-      return { op: 'learn', id: `ln:${id}`, node: id, nodeKind: k, retrievals: 4, scoring: 'learning', credit: [id] } as LearnItem;
+      const productive = this.productive(id, k);
+      if (!productive) this.receptiveOnly.push(id);
+      return { op: 'learn', id: `ln:${id}`, node: id, nodeKind: k, retrievals: 4, productive, scoring: 'learning', credit: [id] } as LearnItem;
     });
     for (const it of items) {
       const [s] = this.pickSentences(it.node, 1);
       if (s) { it.example = s.id; it.credit = creditOf(it.node, s); }
     }
     return items;
+  }
+
+  /** productivePolicy for a node; a lexeme absent from the graph takes the band of the unit teaching it. */
+  private productive(id: NodeId, kind: GraphNode['kind']): boolean {
+    const n = this.course.nodes.get(id);
+    return productivePolicy({ kind, band: n?.band ?? this.unit?.band, freqRank: n?.freqRank });
   }
 
   private contrastReady(id: NodeId): boolean {
@@ -730,7 +874,7 @@ class Compiler {
   }
 
   private checkpointDay() {
-    this.warmupStd(CHECKPOINT_WARMUP_MINUTES);
+    this.warmupStd(warmupMinutes(this.tier, this.band) * CHECKPOINT_WARMUP_FACTOR);
     this.pushLearn(this.takeNew('checkpoint', undefined, false));
     const [lo, hi] = CHECKPOINT_WINDOW_DAYS;
     const window = this.L.nodes().filter((id) => {
@@ -757,7 +901,7 @@ class Compiler {
   }
 
   private reviewDay(d: Decision, day: Unit['days'][number] | undefined) {
-    const budget = REVIEW_DAY_MINUTES[this.tier];
+    const budget = throttleMinutes(this.tier, this.band) + REVIEW_DAY_EXTRA_MINUTES;
     // With a backlog the whole session goes to reviews; otherwise the extended SRS budget (everything due fits).
     const cap = this.throttled ? Math.max(budget, this.minutes - 1) : Math.max(budget, this.dueMinutes);
     const w = this.warmup(cap, budget, true);
@@ -834,16 +978,22 @@ class Compiler {
       const [s] = this.pickSentences(node, 1);
       if (!s) continue; // a leech without a fresh context waits; never a seen sentence
       const dir = this.L.hasCard(node, 'productive') ? 'productive' : 'receptive';
-      items.push({ op: 'review', id: `lr:${s.id}`, node, direction: dir, sentence: s.id, novel: true, scoring: 'exposure', credit: creditOf(node, s) });
+      items.push({ op: 'review', id: `lr:${s.id}`, node, targets: [node], direction: dir, sentence: s.id, novel: true, scoring: 'exposure', credit: creditOf(node, s) });
     }
     if (items.length) this.blocks.push({ kind: 'leech', part: 'core', deliberate: false, items, minutes: round1(items.length * this.spr * 2 / 60) });
   }
 
+  /** Extended tier: the extra core minutes left after over-budget reviews go to reading from the unit bank. */
   private extraReading() {
     if (!this.unit) return;
-    const sents = this.pickFromUnit(this.unit.id, COUNTS.extraReading);
+    const w = this.blocks[0];
+    const reviewOverflow = w?.kind === 'warmup' ? Math.max(0, w.minutes - warmupMinutes(this.tier, this.band)) : 0;
+    const left = EXTENDED_EXTRA_MINUTES - reviewOverflow;
+    const want = Math.min(EXTRA_READING_MAX, Math.floor((left * 60) / SECONDS.read));
+    if (want <= 0) return;
+    const sents = this.pickFromUnit(this.unit.id, want);
     const prev = this.course.units[this.path.unit - 1];
-    if (sents.length < COUNTS.extraReading && prev) sents.push(...this.pickFromUnit(prev.id, COUNTS.extraReading - sents.length));
+    if (sents.length < want && prev) sents.push(...this.pickFromUnit(prev.id, want - sents.length));
     const items = sents.filter((s) => s.requires.length).map((s) => this.practiceItem('read', s.targets[0] ?? s.requires[0], s, 'receptive', 'exposure'));
     if (!items.length) return;
     this.blocks.push({ kind: 'extraReading', part: 'core', deliberate: false, items, minutes: round1(items.length * SECONDS.read / 60) });
@@ -852,7 +1002,7 @@ class Compiler {
   // ---------------------------------------------------------------- minimum
 
   private minimum(day: Unit['days'][number] | undefined): SessionPlan {
-    this.warmup(WARMUP_MINUTES.minimum, WARMUP_MINUTES.minimum, false);
+    this.warmup(MINIMUM_WARMUP_MINUTES, MINIMUM_WARMUP_MINUTES, false);
     const ch = this.rereadCandidate([0, 0], 1);
     if (ch) this.blocks.push({ kind: 'reread', part: 'core', deliberate: true, chapter: ch.id, purpose: 'minimum', timed: false, minutes: Math.min(3, ch.minutes) });
     else this.diag({ code: 'noReread', block: 'reread', message: 'no known chapter to re-read yet' });
@@ -873,10 +1023,10 @@ class Compiler {
     return {
       sessionIndex: this.sessionIndex, seed: this.seed, tier: 'minimum', mode: this.mode, type: 'minimum',
       dayType: day?.type, unit: this.unit?.id, day: day ? this.path.day : undefined,
-      advancesPath: false, blocks: this.blocks, newNodes: this.newNodes,
+      advancesPath: false, blocks: this.blocks, newNodes: this.newNodes, receptiveOnly: this.receptiveOnly,
       budget: {
-        minutes: this.minutes, reviewMinutes: WARMUP_MINUTES.minimum, secondsPerReview: this.spr,
-        due: this.due.length, dueMinutes: this.dueMinutes, throttled: this.dueMinutes > WARMUP_MINUTES.minimum, severe: false,
+        band: this.band, minutes: this.minutes, reviewMinutes: MINIMUM_WARMUP_MINUTES, secondsPerReview: this.spr,
+        due: this.due.length, dueMinutes: this.dueMinutes, throttled: this.dueMinutes > MINIMUM_WARMUP_MINUTES, severe: false,
       },
       estimatedMinutes: round1(this.blocks.reduce((a, b) => a + b.minutes, 0)),
       diagnostics: this.diags, pathAfter: path,

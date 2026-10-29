@@ -3,8 +3,8 @@
 // Collects everything the report needs. Deterministic for (seed, profile).
 import type { Band, NodeId } from '../../src/content/schema';
 import {
-  advancePath, canDoAnother, compileSession, initialPath, makeRng, servedRefs,
-  type Block, type CompileInput, type ContentIndex, type Course, type Item, type PathState, type SessionPlan,
+  advancePath, budget, canDoAnother, compileSession, initialPath, makeRng, reviewCost, reviewTargets, servedRefs,
+  type Block, type CompileInput, type ContentIndex, type Course, type Item, type PathState, type ReviewItem, type SessionPlan,
 } from '../../src/compiler';
 import { Learner, LEDGER_KINDS, Rating, type Direction, type Grade, type Tier } from '../../src/learner';
 import type { Profile } from './profiles';
@@ -38,12 +38,22 @@ export interface SessionStat {
   throttled: boolean;
   converted?: string;
   newItems: number;
+  /** the session moved the path to the next day */
+  advanced: boolean;
 }
 
-export interface Demand { sentences: number; chapters: number; scenes: number; tasks: number }
+/**
+ * Fresh (first-time) content consumed. Sentences are attributed to the unit
+ * that OWNS the sentence (its bank file), since that is where the burn writes
+ * them; `reviewSentences` is the part first used as a warm-up review context.
+ * Chapters to their unit; scenes/tasks to the unit being studied.
+ */
+export interface Demand { sentences: number; reviewSentences: number; chapters: number; scenes: number; tasks: number }
+export const zeroDemand = (): Demand => ({ sentences: 0, reviewSentences: 0, chapters: 0, scenes: 0, tasks: 0 });
 
 export interface ProfileRun {
   profile: string;
+  tier: Tier;
   days: number;
   sessions: SessionStat[];
   /** first day index a session ran in the band, and the day the band's last unit was completed */
@@ -62,9 +72,24 @@ export interface ProfileRun {
   itemServes: number;
   itemRepeats60: number;
   itemRepeats60Deliberate: number;
-  /** by band of the node: nodes old enough to judge, and how many got < 4 scored reviews in their first 60 days */
+  /**
+   * By band of the node: nodes old enough to judge, and how many got < 4 scored
+   * reviews in their first 60 days. Productive-track nodes only: a
+   * receptive-only lexeme has one card (≈ 3 d, 11 d, 35 d → 3 reviews in 60 d
+   * by design), judged separately in `underReviewedRecv` against < 3.
+   */
   underReviewed: Record<string, { judged: number; under4: number }>;
+  underReviewedRecv: Record<string, { judged: number; under3: number }>;
   owedAtEnd: number;
+  /** warm-up review items: total, multi-target, targets covered, reused contexts, bare */
+  reviewItems: { items: number; multi: number; targets: number; reused: number; bare: number };
+  /** nodes introduced receptive-only; receptive cards suspended at the end (recognition-only maintenance) */
+  receptiveOnly: number;
+  suspendedReceptive: number;
+  learned: number;
+  /** total fresh sentences consumed (non-deliberate), and deliberate review-context reuses */
+  freshSentences: number;
+  reusedSentences: number;
 }
 
 export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun {
@@ -79,10 +104,13 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
   const { course, content } = opts;
 
   const run: ProfileRun = {
-    profile: profile.name, days: opts.days, sessions: [], bandStart: {}, bandFinish: {}, finalUnit: 0,
+    profile: profile.name, tier: opts.tier, days: opts.days, sessions: [], bandStart: {}, bandFinish: {}, finalUnit: 0,
     demand: {}, shortages: {}, shortageKinds: {}, bareReviews: {}, nodeDemand: {}, unintendedRepeats: {},
-    itemServes: 0, itemRepeats60: 0, itemRepeats60Deliberate: 0, underReviewed: {}, owedAtEnd: 0,
+    itemServes: 0, itemRepeats60: 0, itemRepeats60Deliberate: 0, underReviewed: {}, underReviewedRecv: {}, owedAtEnd: 0,
+    reviewItems: { items: 0, multi: 0, targets: 0, reused: 0, bare: 0 }, receptiveOnly: 0, suspendedReceptive: 0, learned: 0,
+    freshSentences: 0, reusedSentences: 0,
   };
+  let receptiveOnly = new Set<NodeId>();
   const reviews = new Map<NodeId, number[]>();
   const nodeSentences = new Map<NodeId, number>();
   const itemLast = new Map<string, number>();
@@ -99,7 +127,9 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
   const introduce = (node: NodeId, n = 4) => {
     if (L.isIntroduced(node)) return;
     const results = steps(n);
-    L.introduce(node, { at: t, results });
+    const productive = !receptiveOnly.has(node);
+    if (!productive) run.receptiveOnly++;
+    L.introduce(node, { at: t, results, productive });
     t += results.length * 8_000;
   };
   const answer = (node: NodeId, dir: Direction, credit: NodeId[], sentence: string | undefined, novel: boolean) => {
@@ -116,7 +146,28 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     return ms;
   };
 
+  /** A (multi-target) warm-up review: every target answered on its own retrievability, one item's time. */
+  const answerReview = (it: ReviewItem): number => {
+    const all = reviewTargets(it);
+    const targets = all.filter((n) => L.hasCard(n, it.direction));
+    const ms = profile.secs * 1000 * reviewCost(all.length) * (0.6 + 0.8 * r.next());
+    if (!targets.length) { L.expose(it.credit, { at: t }); t += ms; return ms; }
+    const grades: Record<NodeId, Grade> = {};
+    for (const n of targets) {
+      const ok = r.next() < pCorrect(n, it.direction);
+      grades[n] = ok ? (r.next() < profile.easyP ? Rating.Easy : Rating.Good) : Rating.Again;
+      const list = reviews.get(n) ?? [];
+      list.push(t);
+      reviews.set(n, list);
+    }
+    if (it.sentence) L.creditSentence(it.credit, it.direction, grades[targets[0]], { targets, grades, novel: it.novel, at: t, ms });
+    else L.review(targets[0], it.direction, grades[targets[0]], { at: t, ms });
+    t += ms;
+    return ms;
+  };
+
   const runItem = (it: Item): number => {
+    if (it.op === 'review' && it.scoring === 'review') return answerReview(it);
     if (it.scoring === 'review' && (it.op === 'review' || 'direction' in it)) {
       const dir = (it as { direction: Direction }).direction;
       return answer(it.node, dir, it.credit, (it as { sentence?: string }).sentence, (it as { novel?: boolean }).novel ?? true);
@@ -131,7 +182,15 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     let reviewMs = 0;
     switch (b.kind) {
       case 'warmup':
-        for (const it of b.items) reviewMs += runItem(it);
+        for (const it of b.items) {
+          reviewMs += runItem(it);
+          run.reviewItems.items++;
+          const n = reviewTargets(it).length;
+          run.reviewItems.targets += n;
+          if (n > 1) run.reviewItems.multi++;
+          if (it.reused) run.reviewItems.reused++;
+          if (!it.sentence) run.reviewItems.bare++;
+        }
         break;
       case 'learn':
         for (const it of b.items) { introduce(it.node, it.retrievals); t += 15_000; }
@@ -177,6 +236,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     const input: CompileInput = { learnerId, learner: L, path, course, content, now: t, tier, mode };
     const plan = compileSession(input);
     opts.onPlan?.(plan, input);
+    receptiveOnly = new Set(plan.receptiveOnly);
     L.startSession(t);
     const start = t;
     let reviewMs = 0;
@@ -184,9 +244,11 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     for (const b of plan.blocks) reviewMs += runBlock(b);
     for (const n of newNodes) introduce(n); // anything a block did not introduce (e.g. script-less fallback)
     const unitKey = plan.unit ?? 'done';
-    const dem = (run.demand[unitKey] ??= { sentences: 0, chapters: 0, scenes: 0, tasks: 0 });
+    const demOf = (u: string) => (run.demand[u] ??= zeroDemand());
+    const dem = demOf(unitKey);
     for (const ref of servedRefs(plan)) {
-      L.ledger.markSeen(ref.kind, ref.id, { deliberate: ref.deliberate, at: t });
+      L.ledger.markSeen(ref.kind, ref.id, { deliberate: ref.deliberate, review: ref.review, reason: ref.reason, at: t });
+      if (ref.kind === 'sentence') { if (ref.deliberate) run.reusedSentences += ref.reason === budget.REVIEW_REUSE_REASON ? 1 : 0; else run.freshSentences++; }
       if (ref.kind === 'item') {
         run.itemServes++;
         const last = itemLast.get(ref.id);
@@ -194,17 +256,19 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
         itemLast.set(ref.id, t);
       }
       if (ref.deliberate) continue;
-      if (ref.kind === 'sentence') dem.sentences++;
-      else if (ref.kind === 'chapter') {
-        const owner = content.chapterById.get(ref.id)?.unit ?? unitKey;
-        (run.demand[owner] ??= { sentences: 0, chapters: 0, scenes: 0, tasks: 0 }).chapters++;
+      if (ref.kind === 'sentence') {
+        const d = demOf(content.sentences.get(ref.id)?.unit ?? unitKey);
+        d.sentences++;
+        if (ref.review) d.reviewSentences++;
       }
+      else if (ref.kind === 'chapter') demOf(content.chapterById.get(ref.id)?.unit ?? unitKey).chapters++;
       else if (ref.kind === 'scene') dem.scenes++;
       else if (ref.kind === 'item' && ref.id.startsWith('wt:')) dem.tasks++;
     }
     for (const b of plan.blocks) {
       if (!('items' in b)) continue;
       for (const it of b.items as Item[]) {
+        if ((it as { reused?: boolean }).reused) continue; // re-served review contexts are not new supply
         const s = (it as { sentence?: string; example?: string }).sentence ?? (it as { example?: string }).example;
         if (s) nodeSentences.set(it.node, (nodeSentences.get(it.node) ?? 0) + 1);
       }
@@ -223,6 +287,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
       estMinutes: plan.estimatedMinutes, simMinutes: (t - start) / 60_000, reviewMinutes: reviewMs / 60_000,
       due: plan.budget.due, dueMinutes: plan.budget.dueMinutes, budgetMinutes: plan.budget.reviewMinutes,
       throttled: plan.budget.throttled, converted: plan.converted?.reason, newItems: newNodes.length,
+      advanced: plan.advancesPath,
     });
     // band finished?
     for (let u = unitBefore; u < path.unit; u++) {
@@ -246,7 +311,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     session(d, tier, 'next');
     if (tier !== 'minimum' && r.next() < profile.doubleP) {
       t += 45 * 60_000;
-      if (canDoAnother({ learner: L, path, course, now: t, tier })) session(d, tier, 'another');
+      if (canDoAnother({ learner: L, path, course, content, now: t, tier, learnerId })) session(d, tier, 'another');
     }
   }
 
@@ -258,9 +323,15 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     const kind = course.nodes.get(id)?.kind ?? id[0];
     if (rec.introducedAt > end - 60 * DAY_MS || kind === 'cando') continue;
     const band = course.nodes.get(id)?.band ?? '?';
+    const n = (reviews.get(id) ?? []).filter((x) => x <= rec.introducedAt + 60 * DAY_MS).length;
+    if (rec.productiveTrack === false) {
+      const u = (run.underReviewedRecv[band] ??= { judged: 0, under3: 0 });
+      u.judged++;
+      if (n < 3) u.under3++;
+      continue;
+    }
     const u = (run.underReviewed[band] ??= { judged: 0, under4: 0 });
     u.judged++;
-    const n = (reviews.get(id) ?? []).filter((x) => x <= rec.introducedAt + 60 * DAY_MS).length;
     if (n < 4) u.under4++;
   }
   const byKind = new Map<string, number[]>();
@@ -273,6 +344,10 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
   for (const [k, list] of byKind) {
     list.sort((a, b) => a - b);
     run.nodeDemand[k] = { max: list[list.length - 1], p95: list[Math.min(list.length - 1, Math.floor(list.length * 0.95))], mean: list.reduce((a, b) => a + b, 0) / list.length, nodes: list.length };
+  }
+  for (const id of L.nodes()) {
+    if (L.isSuspended(id, 'receptive')) run.suspendedReceptive++;
+    if (L.isLearned(id)) run.learned++;
   }
   run.finalUnit = path.unit;
   run.owedAtEnd = path.owedNew.length + path.owedGrammar.length;

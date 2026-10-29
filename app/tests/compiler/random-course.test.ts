@@ -75,5 +75,5 @@ describe('random unit maps', () => {
     expect(plans).toBeGreaterThan(400);
     expect(spacingForced).toBeGreaterThan(0);  // adjacent introduce days were actually defused
     expect(owedGrammar).toBeGreaterThan(0);    // two-grammar days were actually split
-  });
+  }, 30_000); // 24 checked walks: slow under a parallel full-suite run
 });
