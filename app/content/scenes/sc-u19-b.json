@@ -1,0 +1,257 @@
+{
+  "id": "sc-u19-b",
+  "unit": "u19",
+  "title": "Ricardo Peña, from the council",
+  "brief": "You're Tomás. A man with a folder is standing at the café door on a quiet Tuesday morning. Find out what he wants and what you have to do. He's a stranger on official business, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¿Se puede? Buenos días. Soy Ricardo Peña, inspector de la Alcaldía. Busco al dueño del café.",
+      "npcEn": "May I come in? Good morning. I'm Ricardo Peña, an inspector from the council. I'm looking for the owner of the café.",
+      "intent": "Tell him to come in, and say you're the owner.",
+      "accept": [
+        "Siga, siga. Yo soy el dueño.",
+        "Sí, siga. Soy el dueño.",
+        "Buenos días. Siga, por favor. El dueño soy yo."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "siga"
+          ],
+          "label": "come in (to usted): siga"
+        }
+      ],
+      "focus": "c:se-puede",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mucho gusto. Vengo a ver los permisos del café. ¿Me los puede mostrar, por favor?",
+      "npcEn": "Pleased to meet you. I've come to see the café's permits. Can you show them to me, please?",
+      "intent": "Ask him what is needed.",
+      "accept": [
+        "¿Qué se necesita?",
+        "Perdón, ¿qué se necesita?",
+        "¿Y qué se necesita para un café?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse necesita\\b",
+          "flags": "i",
+          "label": "what's needed (in general): ¿qué se necesita?"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:se-impersonal",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Primero, el permiso de la Alcaldía. ¿Dónde está?",
+      "npcEn": "First, the council permit. Where is it?",
+      "intent": "Say it's in the office where your grandmother kept her papers.",
+      "accept": [
+        "Está en la oficina donde mi abuela tenía sus papeles.",
+        "Creo que está en la oficina, donde mi abuela tenía sus papeles.",
+        "El permiso está en la oficina donde mi abuela tenía sus papeles."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdonde\\b",
+          "flags": "i",
+          "label": "the place where: donde, with no accent when it isn't a question"
+        }
+      ],
+      "focus": "g:relatives-donde-lo-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "A ver. Este permiso es de 2009. Ya no sirve. Sin un permiso al día, se puede cerrar el café.",
+      "npcEn": "Let's see. This permit is from 2009. It's no good any more. Without an up-to-date permit, the café can be closed.",
+      "intent": "Say you don't understand what's happening, and ask what you have to do.",
+      "accept": [
+        "No entiendo lo que pasa. ¿Qué tengo que hacer?",
+        "Perdón, no entiendo lo que está pasando. ¿Qué tengo que hacer?",
+        "No entiendo lo que pasa, señor. ¿Qué tengo que hacer ahora?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo que\\b",
+          "flags": "i",
+          "label": "what (in a statement): lo que, not qué"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:relatives-donde-lo-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Tiene treinta días. Aquí está la lista. Los papeles se piden en la Alcaldía, de lunes a viernes.",
+      "npcEn": "You have thirty days. Here's the list. You apply for the papers at the council, Monday to Friday.",
+      "intent": "Ask if it can be done online.",
+      "accept": [
+        "¿Se puede hacer por internet?",
+        "Perdón, ¿se puede hacer por internet?",
+        "¿Y se puede pedir por internet?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse puede\\b",
+          "flags": "i",
+          "label": "can it be done: ¿se puede…?"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:se-impersonal",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "No, señor. Hay que ir en persona. Y ahora me voy.",
+      "npcEn": "No, sir. You have to go in person. And now I'm off.",
+      "intent": "Thank him and offer him a tinto before he goes.",
+      "accept": [
+        "Muchas gracias. ¿Quiere un tinto?",
+        "Gracias, señor. ¿Quiere un tinto antes de irse?",
+        "Bueno, gracias. ¿Un tinto antes de irse?"
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "quieres",
+            "te vas"
+          ],
+          "label": "use usted (quiere), not tú (quieres)"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "c:gracias-de-nada",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:creo-que",
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hay-que",
+    "c:hola-buenos-dias",
+    "c:mucho-gusto",
+    "c:no-entiendo",
+    "c:no-sirve",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:que-tengo-que-hacer",
+    "c:se-puede",
+    "c:si-soy-yo",
+    "c:siga",
+    "c:siga-siga",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "c:voy-vas",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:passive-se",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:ahora",
+    "l:antes",
+    "l:aquí",
+    "l:bueno",
+    "l:buscar",
+    "l:café",
+    "l:cerrar",
+    "l:creer",
+    "l:dueño",
+    "l:día",
+    "l:dónde",
+    "l:entender",
+    "l:estar",
+    "l:favor",
+    "l:gusto",
+    "l:hacer",
+    "l:inspector",
+    "l:internet",
+    "l:ir",
+    "l:irse",
+    "l:listo",
+    "l:lunes",
+    "l:mostrar",
+    "l:necesitar",
+    "l:oficina",
+    "l:papel",
+    "l:pasar",
+    "l:pedir",
+    "l:perdón",
+    "l:permiso",
+    "l:persona",
+    "l:poder",
+    "l:querer",
+    "l:qué",
+    "l:seguir",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:tener",
+    "l:tinto",
+    "l:venir",
+    "l:ver",
+    "l:viernes",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:desde-hasta",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:request-ladder",
+    "p:se-puede-me-dejas",
+    "p:time-sequence-basic"
+  ]
+}

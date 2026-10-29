@@ -1,0 +1,234 @@
+{
+  "id": "sc-u19-a",
+  "unit": "u19",
+  "title": "Nineteen and in a hurry",
+  "brief": "You're Tomás. The sign in the café window says the café needs a waiter, and a young man has just walked in about it. Interview him and agree when he starts. He's nineteen and you're the boss, so use tú with him; he'll call you usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes. Vengo por el letrero de la ventana. ¿Todavía se busca mesero?",
+      "npcEn": "Good afternoon. I've come about the sign in the window. Is a waiter still wanted?",
+      "intent": "Say yes, a waiter is needed, and ask his name.",
+      "accept": [
+        "Sí, se necesita mesero. ¿Cómo te llamas?",
+        "Sí, todavía se busca mesero. ¿Cómo te llamas?",
+        "Sí, se necesita un mesero. ¿Cómo te llamas tú?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse (necesita|busca)\\b",
+          "flags": "i",
+          "label": "waiter needed: se necesita mesero (nobody in particular needs it)"
+        }
+      ],
+      "focus": "g:se-impersonal",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Me llamo Jhon Fredy. Tengo diecinueve años y estoy estudiando para ser ingeniero en la Nacional. ¿Y usted? ¿Siempre trabajó de mesero?",
+      "npcEn": "My name's Jhon Fredy. I'm nineteen and I'm studying to be an engineer at the Nacional. And you? Have you always worked as a waiter?",
+      "intent": "Say no: in Toronto you were an engineer.",
+      "accept": [
+        "No, en Toronto era ingeniero.",
+        "No. Yo era ingeniero, en Toronto.",
+        "No, en Toronto trabajaba de ingeniero."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "un ingeniero"
+          ],
+          "label": "a job after ser takes no un: era ingeniero"
+        }
+      ],
+      "focus": "g:article-uses",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Uy, qué chévere! Yo también voy a ser ingeniero. Bueno, ¿qué más quiere saber?",
+      "npcEn": "Wow, how cool! I'm going to be an engineer too. Right, what else do you want to know?",
+      "intent": "Ask if he has worked as a waiter before.",
+      "accept": [
+        "¿Trabajaste de mesero antes?",
+        "¿Ya trabajaste de mesero?",
+        "¿Has trabajado de mesero?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "trabaj\\w* de mesero",
+          "flags": "i",
+          "label": "working as a waiter: trabajar de mesero, with de and no un"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "p:trabajar-de",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Sí, señor. Trabajé de mesero dos años, en un restaurante de Chapinero. ¿Y aquí qué necesitan?",
+      "npcEn": "Yes, sir. I worked as a waiter for two years, in a restaurant in Chapinero. And what do you need here?",
+      "intent": "Say what you need is a waiter for the weekends.",
+      "accept": [
+        "Lo que necesitamos es un mesero para los fines de semana.",
+        "Lo que necesito es un mesero para los fines de semana.",
+        "Necesitamos un mesero para los fines de semana. Eso es lo que necesitamos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo que necesit",
+          "flags": "i",
+          "label": "what we need: lo que necesitamos (not qué)"
+        }
+      ],
+      "focus": "g:relatives-donde-lo-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Perfecto! Los fines de semana no tengo clases. ¿Y cuándo empiezo? ¿Hoy? Puedo empezar ya mismo.",
+      "npcEn": "Perfect! I don't have classes at weekends. And when do I start? Today? I can start right now.",
+      "intent": "Say not today: he starts on Saturday at seven.",
+      "accept": [
+        "Hoy no. Empiezas el sábado a las siete.",
+        "No, hoy no. El sábado a las siete.",
+        "Hoy no, Jhon Fredy. Empiezas el sábado, a las siete."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bel s[aá]bado\\b",
+          "flags": "i",
+          "label": "on Saturday: el sábado, with el and no word for on"
+        }
+      ],
+      "focus": "g:article-uses",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Listo! Ah, una pregunta más. ¿Se puede estudiar aquí cuando no hay clientes? Tengo exámenes.",
+      "npcEn": "Great! Oh, one more question. Can people study here when there are no customers? I have exams.",
+      "intent": "Say yes, he can, but customers come first.",
+      "accept": [
+        "Sí, se puede. Pero primero los clientes.",
+        "Sí, se puede, pero primero los clientes.",
+        "Claro, se puede. Pero primero los clientes, Jhon Fredy."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse puede\\b",
+          "flags": "i",
+          "label": "yes, it's allowed: sí, se puede"
+        }
+      ],
+      "focus": "c:se-puede",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:compre-trabaje",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-llamo",
+    "c:puedo",
+    "c:que-chevere",
+    "c:que-mas",
+    "c:se-busca",
+    "c:se-puede",
+    "c:tengo",
+    "c:voy-a",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:antes",
+    "l:aquí",
+    "l:año",
+    "l:buena",
+    "l:bueno",
+    "l:buscar",
+    "l:chévere",
+    "l:claro",
+    "l:clase",
+    "l:cliente",
+    "l:cuándo",
+    "l:cómo",
+    "l:empezar",
+    "l:estar",
+    "l:estudiar",
+    "l:examen",
+    "l:fin",
+    "l:hoy",
+    "l:ingeniero",
+    "l:ir",
+    "l:letrero",
+    "l:listo",
+    "l:llamarse",
+    "l:mesero",
+    "l:necesitar",
+    "l:perfecto",
+    "l:poder",
+    "l:pregunta",
+    "l:querer",
+    "l:qué",
+    "l:restaurante",
+    "l:saber",
+    "l:semana",
+    "l:ser",
+    "l:señor",
+    "l:siempre",
+    "l:sábado",
+    "l:tarde",
+    "l:tener",
+    "l:trabajar",
+    "l:venir",
+    "l:ventana",
+    "p:aqui-ahi-alla",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:nos-vemos-a-las",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:saber-conocer",
+    "p:se-puede-me-dejas",
+    "p:ser-profession-no-article",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:tener-anos",
+    "p:time-sequence-basic",
+    "p:trabajar-de",
+    "p:ya-todavia-basic"
+  ]
+}

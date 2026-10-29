@@ -1,0 +1,244 @@
+{
+  "id": "sc-u19-c",
+  "unit": "u19",
+  "title": "A number you don't know",
+  "brief": "You're Tomás. The café phone rings and the caller asks for you by name. Answer it, take a message if you need to, and listen to what she has to say. She's a friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¿Aló? Buenas tardes. ¿Está Tomás, por favor?",
+      "npcEn": "Hello? Good afternoon. Is Tomás there, please?",
+      "intent": "Say it's you speaking, and ask who's calling.",
+      "accept": [
+        "Sí, con él. ¿De parte de quién?",
+        "Con él. ¿De parte de quién?",
+        "¿Aló? Sí, con él. ¿De parte de quién?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcon [eé]l\\b",
+          "flags": "i",
+          "label": "speaking (on the phone): sí, con él"
+        },
+        {
+          "type": "regex",
+          "pattern": "de parte de qui[eé]n",
+          "flags": "i",
+          "label": "who's calling: ¿de parte de quién?"
+        }
+      ],
+      "focus": "c:con-el-ella",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¡Tomás, soy Mariana! Es mi celular nuevo. ¿Está Vale ahí?",
+      "npcEn": "Tomás, it's Mariana! It's my new phone. Is Vale there?",
+      "intent": "Say no, Vale went out, and ask if she wants to leave her a message.",
+      "accept": [
+        "No, Vale salió. ¿Le dejo razón?",
+        "Vale no está, salió. ¿Le dejo razón?",
+        "No, salió. ¿Quieres dejarle un mensaje?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(dejo raz[oó]n|dejarle un mensaje)",
+          "flags": "i",
+          "label": "taking a message: ¿le dejo razón?"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "c:le-dejo-razon",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "No. Mejor te cuento a ti. Hoy vino un inspector de la Alcaldía, ¿cierto?",
+      "npcEn": "No. I'd better tell you. An inspector from the council came today, didn't he?",
+      "intent": "Say yes, and that a new permit is needed.",
+      "accept": [
+        "Sí. Se necesita un permiso nuevo.",
+        "Sí, vino esta mañana. Se necesita un permiso nuevo.",
+        "Sí. Dice que se necesita un permiso nuevo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse necesita\\b",
+          "flags": "i",
+          "label": "a permit is needed: se necesita un permiso"
+        }
+      ],
+      "focus": "g:se-impersonal",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Pues escucha. Una persona de Altamira vino a tu café el lunes, y hoy llegó el inspector. No es casualidad.",
+      "npcEn": "Well, listen. Someone from Altamira came to your café on Monday, and today the inspector turned up. It's no coincidence.",
+      "intent": "Say what she's telling you is very serious, and ask what you can do.",
+      "accept": [
+        "Lo que dices es muy serio. ¿Qué puedo hacer?",
+        "Lo que me cuentas es muy serio. ¿Qué puedo hacer?",
+        "Lo que dices es muy serio. ¿Qué hago?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo que\\b",
+          "flags": "i",
+          "label": "what you're saying: lo que dices, not qué dices"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:relatives-donde-lo-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Primero, los permisos. Conozco a una señora en la Alcaldía. ¿Puedes ir conmigo el jueves a las nueve?",
+      "npcEn": "First, the permits. I know a woman at the council. Can you go with me on Thursday at nine?",
+      "intent": "Say you can't on Thursday, because on Thursdays you work alone, and suggest Friday.",
+      "accept": [
+        "El jueves no puedo. Los jueves trabajo solo. ¿El viernes?",
+        "El jueves no, porque los jueves trabajo solo. ¿Puede ser el viernes?",
+        "No puedo. Los jueves trabajo solo en el café. ¿Y el viernes?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blos jueves\\b",
+          "flags": "i",
+          "label": "every Thursday: los jueves, with los and no word for on"
+        }
+      ],
+      "focus": "g:article-uses",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Listo, el viernes. Y tranquilo, Tomás. No estás solo.",
+      "npcEn": "OK, Friday. And don't worry, Tomás. You're not alone.",
+      "intent": "Thank her for calling and say see you on Friday.",
+      "accept": [
+        "Gracias por llamar, Mariana. Hasta el viernes.",
+        "Mil gracias por llamar. Chao, nos vemos el viernes.",
+        "Muchas gracias por llamar. ¡Hasta el viernes!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "gracias por llamar",
+          "flags": "i",
+          "label": "thanks for calling: gracias por llamar"
+        }
+      ],
+      "focus": "p:gracias-por",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-cuantas-cuotas",
+    "c:alo",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:con-el-ella",
+    "c:de-parte-de-quien",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hola-buenos-dias",
+    "c:le-dejo-razon",
+    "c:no-cierto",
+    "c:por-favor",
+    "c:porque",
+    "c:puede-ser",
+    "c:puedo",
+    "c:pues",
+    "c:tranquilo",
+    "g:cause-result",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahí",
+    "l:buena",
+    "l:café",
+    "l:casualidad",
+    "l:celular",
+    "l:conocer",
+    "l:contar",
+    "l:decir",
+    "l:dejar",
+    "l:escuchar",
+    "l:estar",
+    "l:favor",
+    "l:hacer",
+    "l:hoy",
+    "l:inspector",
+    "l:ir",
+    "l:jueves",
+    "l:listo",
+    "l:llamar",
+    "l:llegar",
+    "l:lunes",
+    "l:mañana",
+    "l:mejor",
+    "l:mensaje",
+    "l:necesitar",
+    "l:nuevo",
+    "l:parte",
+    "l:permiso",
+    "l:persona",
+    "l:poder",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:razón",
+    "l:salir",
+    "l:ser",
+    "l:serio",
+    "l:señora",
+    "l:tarde",
+    "l:trabajar",
+    "l:tranquilo",
+    "l:venir",
+    "l:ver",
+    "l:viernes",
+    "p:aqui-ahi-alla",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:ir-venir",
+    "p:me-te-nos-objects",
+    "p:nos-vemos-a-las",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ]
+}
