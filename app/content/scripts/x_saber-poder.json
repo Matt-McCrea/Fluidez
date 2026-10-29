@@ -1,0 +1,43 @@
+{
+  "node": "x:saber-poder",
+  "hook": {
+    "line": "Vale invites Tomás to the river on Sunday and asks if he can swim. English can covers two different questions here: do you know how, and are you free. Spanish keeps them apart.",
+    "es": "Sé nadar, pero hoy no puedo.",
+    "en": "I know how to swim, but today I can't."
+  },
+  "examples": [
+    { "es": "¿Sabes bailar?", "en": "Can you dance? (to a friend)" },
+    { "es": "No puedo ir, tengo que trabajar.", "en": "I can't go, I have to work." },
+    { "es": "Tomás no sabe montar a caballo.", "en": "Tomás doesn't know how to ride a horse." },
+    { "es": "¿Puedes venir mañana?", "en": "Can you come tomorrow? (to a friend)" },
+    { "es": "Hernando sabe hacer ajiaco.", "en": "Hernando knows how to make ajiaco." },
+    { "es": "Vale sabe cocinar, pero hoy no puede.", "en": "Vale can cook, but today she can't." }
+  ],
+  "rule": "English can does two jobs. Spanish splits them.\n\nA skill you learned, know how to: *saber*. *Sé nadar.* I can swim.\nFree, able or allowed, on a given day: *poder*. *Hoy no puedo.* I can't today.\n\nA quick test: could you say I know how to? Then it's *saber*.\n\n*sé*, *sabes*, *sabe*, *sabemos*, *saben*\n*puedo*, *puedes*, *puede*, *podemos*, *pueden*\n\nBoth go straight into the plain verb ending in *-r*, with nothing between: *sé cocinar*, *puedo venir*.\n\nThey meet when you have the skill but not the chance: *Sé nadar, pero hoy no puedo.*",
+  "smallPrint": "Grammar books describe *saber* plus an infinitive as knowing how (an ability you learned), and *poder* plus an infinitive as possibility or permission.",
+  "readAndPick": [
+    { "es": "No sé nadar.", "options": ["I don't know how to swim.", "I can't swim today."], "answer": 0 },
+    { "es": "Hoy no puedo nadar.", "options": ["I don't know how to swim.", "I can't swim today."], "answer": 1 },
+    { "es": "¿Puedes venir mañana?", "options": ["Do you know how to get here tomorrow?", "Can you come tomorrow?"], "answer": 1 },
+    { "es": "¿Sabes bailar?", "options": ["Do you know how to dance?", "Are you free to dance?"], "answer": 0 },
+    { "es": "Mariana no puede venir hoy.", "options": ["Mariana doesn't know how to come.", "Mariana can't come today.", "Mariana doesn't want to come today."], "answer": 1 },
+    { "es": "Sabemos bucear.", "options": ["We can go diving today.", "We want to dive.", "We know how to dive."], "answer": 2 },
+    { "es": "¿Usted sabe montar a caballo?", "options": ["Can you ride a horse (do you know how)?", "Can you ride a horse today (are you free)?"], "answer": 0 },
+    { "es": "No podemos abrir mañana.", "options": ["We don't know how to open tomorrow.", "We don't want to open tomorrow.", "We can't open tomorrow."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *No ___ nadar.* (*sé* or *puedo*) I don't know how to swim.", "answer": "No sé nadar.", "accept": [], "why": "It's a skill you never learned, so *saber*." },
+    { "prompt": "Pick and type the whole sentence: *Hoy no ___ ir.* (*sé* or *puedo*) I can't go today.", "answer": "Hoy no puedo ir.", "accept": ["No puedo ir hoy."], "why": "It's about today, not a skill, so *poder*." },
+    { "prompt": "Ask a friend: Can you dance? (do you know how)", "answer": "¿Sabes bailar?", "accept": [], "why": "Dancing is a skill: *sabes*." },
+    { "prompt": "Ask a friend: Can you come tomorrow?", "answer": "¿Puedes venir mañana?", "accept": ["¿Mañana puedes venir?"], "why": "Being free on a day is *poder*." },
+    { "prompt": "Ask Don Hernando, politely: Can you ride a horse? (do you know how)", "answer": "¿Usted sabe montar a caballo?", "accept": ["¿Sabe montar a caballo?", "¿Sabe usted montar a caballo?"], "why": "A skill, and for *usted* it's *sabe*." },
+    { "prompt": "Say: Vale can cook, but today she can't.", "answer": "Vale sabe cocinar, pero hoy no puede.", "accept": ["Vale sabe cocinar pero hoy no puede."], "why": "The skill is *sabe*; today's chance is *puede*." },
+    { "prompt": "Make it about we: *Sé nadar, pero hoy no puedo.*", "answer": "Sabemos nadar, pero hoy no podemos.", "accept": ["Sabemos nadar pero hoy no podemos."], "why": "We is *sabemos* and *podemos*." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Puedes nadar?", "right": "¿Sabes nadar?", "why": "Close. To ask if someone knows how, use *saber*; *¿Puedes nadar?* sounds like you're asking if they're allowed today." },
+    { "wrong": "No sé ir mañana.", "right": "No puedo ir mañana.", "why": "Going tomorrow isn't a skill; for being free or able, use *poder*." },
+    { "wrong": "Sé a nadar.", "right": "Sé nadar.", "why": "Nothing goes between *sé* and the verb: no *a*, no *to*." }
+  ],
+  "personal": "Write one thing you know how to do (*sé*), and one thing you can't do this week, even though you'd like to (*no puedo*)."
+}

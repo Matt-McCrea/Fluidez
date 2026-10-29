@@ -1,0 +1,45 @@
+{
+  "node": "x:pret-perfecto-latam",
+  "hook": {
+    "line": "English says have done for things that just happened: I've eaten, she's arrived. In Bogotá people use the plain past for all of that. Get this right and you sound like you learned your Spanish here.",
+    "es": "¿Ya comiste?\nSí, ya comí.",
+    "en": "Have you eaten yet?\nYes, I've already eaten."
+  },
+  "examples": [
+    { "es": "Hoy fui al banco.", "en": "I went to the bank today." },
+    { "es": "¿Ya comiste?", "en": "Have you eaten yet? (to a friend)" },
+    { "es": "Vale ya llegó.", "en": "Vale has already arrived." },
+    { "es": "Esta mañana hice el café.", "en": "I made the coffee this morning." },
+    { "es": "¿Has ido a Leticia?", "en": "Have you been to Leticia? (to a friend)" },
+    { "es": "Nunca he estado en Leticia.", "en": "I've never been to Leticia." },
+    { "es": "Todavía no he terminado.", "en": "I haven't finished yet." }
+  ],
+  "rule": "English uses have done for lots of things that are over: I've eaten, she's arrived, I've been to the bank today. Colombian Spanish doesn't. If it happened and it's finished, even five minutes ago, use the plain past:\n*Hoy fui al banco.* I went to the bank today.\n*¿Ya comiste?* Have you eaten yet?\n*Vale ya llegó.* Vale has already arrived.\n\nSave *he*, *has*, *ha* for two jobs:\nyour life so far, with no time attached: *¿Has ido a Leticia?* *Nunca he estado allá.*\nthings that haven't happened yet: *Todavía no he terminado.* (The plain past works here too: *Todavía no terminé.*)\n\nA quick test: can you point to when it happened (today, this morning, at six, yesterday)? Then it's the plain past.",
+  "smallPrint": "Teachers call this the split between the preterite (*pretérito indefinido*) and the present perfect (*pretérito perfecto*). Spain uses the perfect for today's events; most of Latin America doesn't.",
+  "readAndPick": [
+    { "es": "¿Has ido a Leticia?", "options": ["Have you been to Leticia?", "Did you go to Leticia today?"], "answer": 0 },
+    { "es": "¿Fuiste a Leticia?", "options": ["Have you ever been to Leticia?", "Did you go to Leticia?"], "answer": 1 },
+    { "es": "Nunca he comido ajiaco.", "options": ["I didn't eat the ajiaco.", "I've never eaten ajiaco."], "answer": 1 },
+    { "es": "No comí ajiaco.", "options": ["I didn't eat ajiaco.", "I've never eaten ajiaco."], "answer": 0 },
+    { "es": "Todavía no ha llegado.", "options": ["She hasn't arrived yet.", "She didn't come."], "answer": 0 },
+    { "es": "No llegó.", "options": ["She hasn't arrived yet.", "She didn't come."], "answer": 1 },
+    { "es": "He estado en Cartagena dos veces.", "options": ["I went to Cartagena on two days.", "I've been to Cartagena twice.", "I'm in Cartagena for two days."], "answer": 1 },
+    { "es": "Nunca he hablado con Mariana.", "options": ["I spoke to Mariana today.", "I don't speak to Mariana.", "I've never spoken to Mariana."], "answer": 2 },
+    { "es": "Hoy hablé con Mariana.", "options": ["I spoke to Mariana today.", "I've never spoken to Mariana.", "I speak to Mariana every day."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Hoy ___ al banco.* (*fui* or *he ido*) I went to the bank today.", "answer": "Hoy fui al banco.", "accept": ["Fui al banco hoy."], "why": "It's over and it happened today, so the plain past: *fui*." },
+    { "prompt": "Pick and type the whole sentence: *¿___ a Leticia?* (*Fuiste* or *Has ido*) Asking a friend if she's ever been.", "answer": "¿Has ido a Leticia?", "accept": [], "why": "Ever, in your life, with no time attached: *has ido*." },
+    { "prompt": "Ask a friend: Have you eaten yet?", "answer": "¿Ya comiste?", "accept": ["¿Comiste ya?"], "why": "In Colombia, have you eaten yet is the plain past with *ya*." },
+    { "prompt": "Tell Vale: I've already made the coffee.", "answer": "Ya hice el café.", "accept": ["Ya hice el tinto."], "why": "It's done, so the plain past, even though English says I've." },
+    { "prompt": "Say: I've never been to Leticia.", "answer": "Nunca he estado en Leticia.", "accept": ["Nunca he ido a Leticia.", "No he estado nunca en Leticia."], "why": "Never, across your whole life: *nunca he*." },
+    { "prompt": "Say: Hernando has already arrived.", "answer": "Hernando ya llegó.", "accept": ["Ya llegó Hernando."], "why": "Arriving is over and done, so the plain past: *llegó*." },
+    { "prompt": "Turn it into your whole life: *No comí ajiaco.* (I've never eaten ajiaco.)", "answer": "Nunca he comido ajiaco.", "accept": ["No he comido nunca ajiaco.", "No he comido ajiaco nunca."], "why": "Never, with no day attached, takes *nunca he* and *comido*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Hoy he ido al banco.", "right": "Hoy fui al banco.", "why": "Fine in Madrid, but in Colombia something finished takes the plain past, even today." },
+    { "wrong": "¿Ya has comido?", "right": "¿Ya comiste?", "why": "People will understand you, but here they ask it with the plain past." },
+    { "wrong": "Ayer he visto a Vale.", "right": "Ayer vi a Vale.", "why": "A time that's over, like *ayer* or *anoche*, never takes *he*, anywhere." }
+  ],
+  "personal": "Write two true lines: something you did today (plain past) and a place you've never been (*nunca he*)."
+}
