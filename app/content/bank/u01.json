@@ -362,9 +362,7 @@
     "id": "u01-0018",
     "es": "Ella es Vale.",
     "en": "This is Vale.",
-    "accept": [
-      "Ella es Vale."
-    ],
+    "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
@@ -714,19 +712,18 @@
   },
   {
     "id": "u01-0035",
-    "es": "Usted es la señora Gómez, ¿no?",
-    "en": "You're Mrs Gómez, aren't you?",
+    "es": "Usted es la profesora, ¿no?",
+    "en": "You're the teacher, aren't you? (to a woman, polite)",
     "accept": [
-      "Es la señora Gómez, ¿no?"
+      "Es la profesora, ¿no?"
     ],
     "acceptEn": [],
     "requires": [
       "c:no-cierto",
       "g:gender-articles",
       "g:ser-identity",
-      "l:ser",
-      "l:señora",
-      "p:senor-don-article"
+      "l:profesora",
+      "l:ser"
     ],
     "targets": [
       "g:gender-articles",
@@ -739,21 +736,20 @@
   },
   {
     "id": "u01-0036",
-    "es": "Soy el señor Pérez.",
-    "en": "I'm Mr Pérez.",
+    "es": "Soy el profesor de inglés.",
+    "en": "I'm the English teacher. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:ser",
-      "l:señor",
-      "p:senor-don-article"
+      "l:inglés",
+      "l:profesor",
+      "l:ser"
     ],
     "targets": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:señor"
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -762,19 +758,15 @@
   },
   {
     "id": "u01-0037",
-    "es": "Ella es la señora Rosa.",
-    "en": "That's Mrs Rosa.",
+    "es": "Ella es Rosa.",
+    "en": "That's Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:ser-identity",
-      "l:ser",
-      "l:señora",
-      "p:senor-don-article"
+      "l:ser"
     ],
     "targets": [
-      "g:gender-articles",
       "g:ser-identity"
     ],
     "kind": "statement",
@@ -1174,15 +1166,14 @@
   },
   {
     "id": "u01-0057",
-    "es": "Buenos días a todos.",
-    "en": "Good morning, everyone.",
+    "es": "Buenos días, Vale. Buenos días, Simón.",
+    "en": "Good morning, Vale. Good morning, Simón.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hola-buenos-dias",
       "l:bueno",
-      "l:día",
-      "p:presentation-frame"
+      "l:día"
     ],
     "targets": [
       "c:hola-buenos-dias",
@@ -1264,15 +1255,15 @@
   },
   {
     "id": "u01-0061",
-    "es": "Soy Tomás y él es Simón. Simón no es mesero.",
-    "en": "I'm Tomás and this is Simón. Simón isn't a waiter.",
+    "es": "Soy Tomás, y él es Simón, el loro.",
+    "en": "I'm Tomás, and this is Simón, the parrot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
-      "l:mesero",
-      "l:ser",
-      "p:ser-profession-no-article"
+      "l:loro",
+      "l:ser"
     ],
     "targets": [
       "g:ser-identity"
@@ -2067,11 +2058,13 @@
   },
   {
     "id": "u01-0099",
-    "es": "Tomás es de Toronto, pero Rosa es de Bogotá.",
-    "en": "Tomás is from Toronto, but Rosa is from Bogotá.",
+    "es": "Tomás es de Toronto, pero Rosa era de Bogotá.",
+    "en": "Tomás is from Toronto, but Rosa was from Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
+      "g:imperfect-states",
       "g:ser-identity",
       "l:ser"
     ],
@@ -2528,13 +2521,14 @@
   },
   {
     "id": "u01-0121",
-    "es": "El jugo es de Cali.",
-    "en": "The juice is from Cali.",
+    "es": "¿El jugo? Es de hoy.",
+    "en": "The juice? It's today's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:hoy",
       "l:jugo",
       "l:ser"
     ],
@@ -2712,14 +2706,13 @@
   },
   {
     "id": "u01-0130",
-    "es": "Ella es de Bogotá, y él también.",
-    "en": "She's from Bogotá, and so is he.",
+    "es": "Ella es de Bogotá, y él es de Cali.",
+    "en": "She's from Bogotá, and he's from Cali.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:ser",
-      "p:tambien-tampoco"
+      "l:ser"
     ],
     "targets": [
       "g:ser-identity"
@@ -2731,14 +2724,13 @@
   },
   {
     "id": "u01-0131",
-    "es": "Nosotros también somos de Medellín.",
-    "en": "We're from Medellín too.",
+    "es": "Nosotros somos de Medellín, como Vale.",
+    "en": "We're from Medellín, like Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:ser",
-      "p:tambien-tampoco"
+      "l:ser"
     ],
     "targets": [
       "g:ser-identity"
@@ -2768,16 +2760,16 @@
   },
   {
     "id": "u01-0133",
-    "es": "¿Ustedes también son de Canadá?",
-    "en": "Are you all from Canada too?",
+    "es": "¿Ustedes son de Canadá, como Tomás?",
+    "en": "Are you all from Canada, like Tomás?",
     "accept": [
-      "¿También son de Canadá?"
+      "¿Son de Canadá, como Tomás?",
+      "¿Son ustedes de Canadá, como Tomás?"
     ],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:ser",
-      "p:tambien-tampoco"
+      "l:ser"
     ],
     "targets": [
       "g:ser-identity"
@@ -2971,20 +2963,16 @@
   },
   {
     "id": "u01-0143",
-    "es": "El país de Vale es Colombia.",
-    "en": "Vale's country is Colombia.",
+    "es": "Vale es de Colombia, no de Canadá.",
+    "en": "Vale is from Colombia, not from Canada.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:ser-identity",
-      "l:país",
       "l:ser"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:país"
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -3061,20 +3049,17 @@
   },
   {
     "id": "u01-0147",
-    "es": "La ciudad de Andrés es Lima.",
-    "en": "Andrés's city is Lima.",
+    "es": "Andrés es de Madrid, no de Lima.",
+    "en": "Andrés is from Madrid, not from Lima.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:ser-identity",
-      "l:ciudad",
+      "l:andrés",
       "l:ser"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:ciudad"
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -3083,8 +3068,8 @@
   },
   {
     "id": "u01-0148",
-    "es": "¿Bogotá es un país? No, es una ciudad.",
-    "en": "Is Bogotá a country? No, it's a city.",
+    "es": "¿Bogotá es un país?\nNo, es una ciudad.",
+    "en": "Is Bogotá a country?\nNo, it's a city.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3100,15 +3085,15 @@
       "l:ciudad",
       "l:país"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u01",
     "theme": "origin and nationality",
     "source": "gen"
   },
   {
     "id": "u01-0149",
-    "es": "Canadá es un país, no una ciudad.",
-    "en": "Canada is a country, not a city.",
+    "es": "¿Es un país o una ciudad?",
+    "en": "Is it a country or a city?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3131,21 +3116,20 @@
   },
   {
     "id": "u01-0150",
-    "es": "El país es Colombia, y la ciudad es Bogotá.",
-    "en": "The country is Colombia, and the city is Bogotá.",
+    "es": "Canadá es un país con dos idiomas.",
+    "en": "Canada is a country with two languages.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:ciudad",
+      "l:idioma",
       "l:país",
       "l:ser"
     ],
     "targets": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:ciudad",
       "l:país"
     ],
     "kind": "statement",
@@ -3199,12 +3183,14 @@
   },
   {
     "id": "u01-0153",
-    "es": "Rosa es de La Candelaria, y el café también.",
-    "en": "Rosa is from La Candelaria, and so is the café.",
+    "es": "Rosa era de La Candelaria, como el café.",
+    "en": "Rosa was from La Candelaria, like the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:ser-identity",
       "l:café",
       "l:ser"
@@ -3446,22 +3432,20 @@
   },
   {
     "id": "u01-0164",
-    "es": "Canadá es un país, y Toronto es la ciudad de Tomás.",
-    "en": "Canada is a country, and Toronto is Tomás's city.",
+    "es": "Toronto es la ciudad de Tomás.",
+    "en": "Toronto is Tomás's city.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:ciudad",
-      "l:país",
       "l:ser"
     ],
     "targets": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:ciudad",
-      "l:país"
+      "l:ciudad"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -3555,22 +3539,16 @@
   },
   {
     "id": "u01-0169",
-    "es": "Medellín es una ciudad, no un país.",
-    "en": "Medellín is a city, not a country.",
+    "es": "Medellín no es Bogotá, Tomás.",
+    "en": "Medellín isn't Bogotá, Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:ser-identity",
-      "l:ciudad",
-      "l:país",
       "l:ser"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:ciudad",
-      "l:país"
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -3646,20 +3624,17 @@
   },
   {
     "id": "u01-0173",
-    "es": "En Toronto, el idioma es el inglés.",
-    "en": "In Toronto, the language is English.",
+    "es": "En Toronto, Tomás habla inglés.",
+    "en": "In Toronto, Tomás speaks English.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:idioma",
-      "l:inglés",
-      "l:ser"
+      "g:present-ar",
+      "l:hablar",
+      "l:inglés"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -3668,20 +3643,18 @@
   },
   {
     "id": "u01-0174",
-    "es": "El japonés es un idioma de Japón.",
-    "en": "Japanese is a language from Japan.",
+    "es": "Kenji habla japonés y español.",
+    "en": "Kenji speaks Japanese and Spanish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:idioma",
-      "l:japonés",
-      "l:ser"
+      "g:present-ar",
+      "l:español",
+      "l:hablar",
+      "l:japonés"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -3690,20 +3663,16 @@
   },
   {
     "id": "u01-0175",
-    "es": "¿El idioma de Brasil es el español? No.",
-    "en": "Is the language of Brazil Spanish? No.",
+    "es": "¿En Brasil hablan español? No.",
+    "en": "Do they speak Spanish in Brazil? No.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
+      "g:present-ar",
       "l:español",
-      "l:idioma",
-      "l:ser"
+      "l:hablar"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
       "l:español"
     ],
     "kind": "question",
@@ -3753,14 +3722,18 @@
   },
   {
     "id": "u01-0178",
-    "es": "Vale es mesera, pero es de Medellín.",
-    "en": "Vale is a waitress, but she's from Medellín.",
+    "es": "Vale no es mesera, pero trabaja en el café.",
+    "en": "Vale isn't a waitress, but she works in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:present-ar",
       "g:ser-identity",
+      "l:café",
       "l:mesero",
       "l:ser",
+      "l:trabajar",
       "p:ser-profession-no-article"
     ],
     "targets": [
@@ -4003,24 +3976,21 @@
   },
   {
     "id": "u01-0190",
-    "es": "Tomás no es mesero. ¡Es el señor del café!",
-    "en": "Tomás isn't a waiter. He's the owner of the café!",
+    "es": "Tomás no es mesero. ¡Es el nieto de Rosa!",
+    "en": "Tomás isn't a waiter. He's Rosa's grandson!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:café",
       "l:mesero",
+      "l:nieto",
       "l:ser",
-      "l:señor",
       "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:café",
-      "l:señor"
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -4029,20 +3999,17 @@
   },
   {
     "id": "u01-0191",
-    "es": "Hernando no es médico, pero es un cliente.",
-    "en": "Hernando isn't a doctor, but he's a customer.",
+    "es": "Hernando no es médico, Simón.",
+    "en": "Hernando isn't a doctor, Simón.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:ser-identity",
-      "l:cliente",
       "l:médico",
       "l:ser",
       "p:ser-profession-no-article"
     ],
     "targets": [
-      "g:gender-articles",
       "g:ser-identity"
     ],
     "kind": "statement",
@@ -4145,8 +4112,8 @@
   },
   {
     "id": "u01-0196",
-    "es": "Ella es ingeniera, y trabaja con Altamira.",
-    "en": "She's an engineer, and she works with Altamira.",
+    "es": "Ella es ingeniera, y trabaja en Altamira.",
+    "en": "She's an engineer, and she works at Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4344,16 +4311,15 @@
   },
   {
     "id": "u01-0205",
-    "es": "Vale no es ingeniera, es mesera.",
-    "en": "Vale isn't an engineer, she's a waitress.",
+    "es": "Vale no es ingeniera, y Tomás no es médico.",
+    "en": "Vale isn't an engineer, and Tomás isn't a doctor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
       "l:ingeniero",
-      "l:mesero",
+      "l:médico",
       "l:ser",
-      "p:no-es-x-es-y",
       "p:ser-profession-no-article"
     ],
     "targets": [
@@ -4559,21 +4525,19 @@
   },
   {
     "id": "u01-0215",
-    "es": "Unos ingenieros son clientes del café.",
-    "en": "Some engineers are customers at the café.",
+    "es": "Hay unos ingenieros en el café.",
+    "en": "There are some engineers in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:hay-vs-esta",
       "l:café",
-      "l:cliente",
-      "l:ingeniero",
-      "l:ser"
+      "l:ingeniero"
     ],
     "targets": [
       "g:gender-articles",
-      "g:ser-identity",
       "l:café"
     ],
     "kind": "statement",
@@ -4583,20 +4547,20 @@
   },
   {
     "id": "u01-0216",
-    "es": "Unas estudiantes son clientes de Vale.",
-    "en": "Some students are Vale's customers.",
+    "es": "Unas estudiantes compran pan en el café.",
+    "en": "Some students are buying bread in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:cliente",
+      "g:present-ar",
+      "l:café",
+      "l:comprar",
       "l:estudiante",
-      "l:ser"
+      "l:pan"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -4605,23 +4569,21 @@
   },
   {
     "id": "u01-0217",
-    "es": "Trabajo de mesero en un café.",
-    "en": "I work as a waiter in a café.",
+    "es": "Soy mesero en un café.",
+    "en": "I'm a waiter in a café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:ser-identity",
       "l:café",
       "l:mesero",
-      "l:trabajar",
-      "p:trabajar-de"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
-      "g:present-ar",
-      "l:café",
-      "l:trabajar"
+      "l:café"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -4630,19 +4592,20 @@
   },
   {
     "id": "u01-0218",
-    "es": "Vale trabaja de mesera.",
-    "en": "Vale works as a waitress.",
+    "es": "Andrés es mesero en Chapinero.",
+    "en": "Andrés is a waiter in Chapinero.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:ser-identity",
+      "l:andrés",
       "l:mesero",
-      "l:trabajar",
-      "p:trabajar-de"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
-      "g:present-ar",
-      "l:trabajar"
+      "g:ser-identity",
+      "p:ser-profession-no-article"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -4651,19 +4614,20 @@
   },
   {
     "id": "u01-0219",
-    "es": "Mariana no trabaja de mesera.",
-    "en": "Mariana doesn't work as a waitress.",
+    "es": "Mariana es periodista, no mesera.",
+    "en": "Mariana is a journalist, not a waitress.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:ser-identity",
       "l:mesero",
-      "l:trabajar",
-      "p:trabajar-de"
+      "l:periodista",
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
-      "g:present-ar",
-      "l:trabajar"
+      "g:ser-identity",
+      "p:ser-profession-no-article"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -4672,15 +4636,15 @@
   },
   {
     "id": "u01-0220",
-    "es": "¿Trabajas de mesero?",
-    "en": "Do you work as a waiter? (to a friend)",
+    "es": "¿Trabajas en un café?",
+    "en": "Do you work in a café? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-ar",
-      "l:mesero",
-      "l:trabajar",
-      "p:trabajar-de"
+      "l:café",
+      "l:trabajar"
     ],
     "targets": [
       "g:present-ar",
@@ -4693,15 +4657,16 @@
   },
   {
     "id": "u01-0221",
-    "es": "No, trabajo de ingeniero.",
-    "en": "No, I work as an engineer.",
+    "es": "No, trabajo en Bogotá, pero no en un café.",
+    "en": "No, I work in Bogotá, but not in a café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:trabajo-en",
+      "g:gender-articles",
       "g:present-ar",
-      "l:ingeniero",
-      "l:trabajar",
-      "p:trabajar-de"
+      "l:café",
+      "l:trabajar"
     ],
     "targets": [
       "g:present-ar",
@@ -4860,21 +4825,17 @@
   },
   {
     "id": "u01-0228",
-    "es": "La profesión de Tomás es ingeniero.",
-    "en": "Tomás's profession is engineer.",
+    "es": "¿La profesión de Tomás? Ingeniero.",
+    "en": "Tomás's profession? Engineer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
       "l:ingeniero",
-      "l:profesión",
-      "l:ser",
-      "p:ser-profession-no-article"
+      "l:profesión"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -4954,23 +4915,20 @@
   },
   {
     "id": "u01-0232",
-    "es": "Es un trabajo bueno.",
-    "en": "It's a good job.",
+    "es": "Tengo un trabajo en Toronto.",
+    "en": "I have a job in Toronto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tengo",
+      "c:trabajo-en",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:bueno",
-      "l:ser",
-      "l:trabajo",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "g:yo-irregular",
+      "l:tener",
+      "l:trabajo"
     ],
     "targets": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:bueno",
       "l:trabajo"
     ],
     "kind": "statement",
@@ -4980,23 +4938,18 @@
   },
   {
     "id": "u01-0233",
-    "es": "Es un trabajo, y es bueno.",
-    "en": "It's a job, and it's a good one.",
+    "es": "No tengo trabajo en Bogotá.",
+    "en": "I don't have a job in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:bueno",
-      "l:ser",
-      "l:trabajo",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "c:tengo",
+      "c:trabajo-en",
+      "g:yo-irregular",
+      "l:tener",
+      "l:trabajo"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:bueno",
       "l:trabajo"
     ],
     "kind": "statement",
@@ -5006,25 +4959,21 @@
   },
   {
     "id": "u01-0234",
-    "es": "Simón no trabaja de mesero. Es un loro.",
-    "en": "Simón doesn't work as a waiter. He's a parrot.",
+    "es": "Simón no es mesero. Es un loro.",
+    "en": "Simón isn't a waiter. He's a parrot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
       "g:ser-identity",
       "l:loro",
       "l:mesero",
       "l:ser",
-      "l:trabajar",
-      "p:trabajar-de"
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
-      "g:present-ar",
-      "g:ser-identity",
-      "l:trabajar"
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -5628,19 +5577,17 @@
   },
   {
     "id": "u01-0263",
-    "es": "Soy estudiante, pero trabajo de mesero.",
-    "en": "I'm a student, but I work as a waiter.",
+    "es": "Soy estudiante, y trabajo con Vale.",
+    "en": "I'm a student, and I work with Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
       "g:ser-identity",
       "l:estudiante",
-      "l:mesero",
       "l:ser",
       "l:trabajar",
-      "p:ser-profession-no-article",
-      "p:trabajar-de"
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-ar",
@@ -5762,7 +5709,7 @@
   {
     "id": "u01-0269",
     "es": "Un café con leche, por favor.",
-    "en": "A white coffee, please.",
+    "en": "A coffee with milk, please.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5860,7 +5807,7 @@
   {
     "id": "u01-0273",
     "es": "Quiero un café con leche y dos panes.",
-    "en": "I want a white coffee and two bread rolls.",
+    "en": "I want a coffee with milk and two bread rolls.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6001,7 +5948,7 @@
   {
     "id": "u01-0279",
     "es": "Me gustaría un café con leche.",
-    "en": "I'd like a white coffee.",
+    "en": "I'd like a coffee with milk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6355,7 +6302,7 @@
   {
     "id": "u01-0293",
     "es": "¿Cuánto cuesta un café con leche?",
-    "en": "How much is a white coffee?",
+    "en": "How much is a coffee with milk?",
     "accept": [
       "¿Cuánto vale un café con leche?"
     ],
@@ -6567,14 +6514,14 @@
   },
   {
     "id": "u01-0302",
-    "es": "¿Otro tinto? No, gracias.",
-    "en": "Another coffee? No, thanks.",
+    "es": "¿Un tinto más?\nNo, gracias.",
+    "en": "One more coffee?\nNo, thanks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:gracias-de-nada",
-      "l:tinto",
-      "p:otro-no-article"
+      "g:gender-articles",
+      "l:tinto"
     ],
     "targets": [
       "l:tinto"
@@ -7000,23 +6947,19 @@
   },
   {
     "id": "u01-0322",
-    "es": "El tinto de Rosa es bueno.",
-    "en": "Rosa's coffee is good.",
+    "es": "El tinto de Vale es de Huila.",
+    "en": "Vale's coffee is from Huila.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:bueno",
       "l:ser",
-      "l:tinto",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:tinto"
     ],
     "targets": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:bueno",
       "l:tinto"
     ],
     "kind": "statement",
@@ -7026,23 +6969,19 @@
   },
   {
     "id": "u01-0323",
-    "es": "El pan de Vale es bueno.",
-    "en": "Vale's bread is good.",
+    "es": "Vale es de Medellín, y el pan también.",
+    "en": "Vale is from Medellín, and so is the bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:bueno",
       "l:pan",
-      "l:ser",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:ser"
     ],
     "targets": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:bueno",
       "l:pan"
     ],
     "kind": "statement",
@@ -7099,19 +7038,16 @@
   },
   {
     "id": "u01-0326",
-    "es": "El jugo es de Vale.",
-    "en": "The juice is Vale's.",
+    "es": "¿Jugo? No, gracias. Tinto.",
+    "en": "Juice? No, thanks. Coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
+      "c:gracias-de-nada",
       "l:jugo",
-      "l:ser"
+      "l:tinto"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
       "l:jugo"
     ],
     "kind": "statement",
@@ -7174,7 +7110,7 @@
   {
     "id": "u01-0329",
     "es": "El café con leche no es un tinto.",
-    "en": "A white coffee isn't a tinto.",
+    "en": "A coffee with milk isn't a tinto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7244,21 +7180,17 @@
   },
   {
     "id": "u01-0332",
-    "es": "Las aguas son de los clientes.",
-    "en": "The waters are the customers'.",
+    "es": "No hay agua, pero hay jugo.",
+    "en": "There's no water, but there's juice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
+      "c:hay",
+      "g:hay-vs-esta",
       "l:agua",
-      "l:cliente",
-      "l:ser",
-      "p:el-agua-fria"
+      "l:jugo"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
       "l:agua"
     ],
     "kind": "statement",
@@ -7390,18 +7322,16 @@
   },
   {
     "id": "u01-0338",
-    "es": "Vale compra la leche en Boyacá.",
-    "en": "Vale buys the milk in Boyacá.",
+    "es": "Vale compra leche de Boyacá.",
+    "en": "Vale buys milk from Boyacá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
       "l:comprar",
       "l:leche"
     ],
     "targets": [
-      "g:gender-articles",
       "g:present-ar",
       "l:comprar",
       "l:leche"
@@ -7413,21 +7343,19 @@
   },
   {
     "id": "u01-0339",
-    "es": "Hernando compra un tinto.",
-    "en": "Hernando buys a black coffee.",
+    "es": "Hernando no compra jugo. ¡Tinto!",
+    "en": "Hernando doesn't buy juice. Coffee!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
       "l:comprar",
+      "l:jugo",
       "l:tinto"
     ],
     "targets": [
-      "g:gender-articles",
       "g:present-ar",
-      "l:comprar",
-      "l:tinto"
+      "l:comprar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -7436,15 +7364,17 @@
   },
   {
     "id": "u01-0340",
-    "es": "Compramos el café en Huila.",
-    "en": "We buy the coffee in Huila.",
+    "es": "Compramos el café a una señora de Huila.",
+    "en": "We buy the coffee from a lady from Huila.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-cuantas-cuotas",
       "g:gender-articles",
       "g:present-ar",
       "l:café",
-      "l:comprar"
+      "l:comprar",
+      "l:señora"
     ],
     "targets": [
       "g:gender-articles",
@@ -7532,21 +7462,20 @@
   },
   {
     "id": "u01-0344",
-    "es": "Rosa regala un pan a los clientes.",
-    "en": "Rosa gives the customers a free bread roll.",
+    "es": "Hoy regalamos el tinto.",
+    "en": "Today we're giving the coffee away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:cliente",
-      "l:pan",
-      "l:regalar"
+      "l:hoy",
+      "l:regalar",
+      "l:tinto"
     ],
     "targets": [
       "g:gender-articles",
       "g:present-ar",
-      "l:pan",
       "l:regalar"
     ],
     "kind": "statement",
@@ -7582,18 +7511,16 @@
   },
   {
     "id": "u01-0346",
-    "es": "Tomás regala un tinto a Hernando.",
-    "en": "Tomás gives Hernando a free coffee.",
+    "es": "Tomás regala tintos, y Vale no.",
+    "en": "Tomás gives coffees away, and Vale doesn't.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
       "l:regalar",
       "l:tinto"
     ],
     "targets": [
-      "g:gender-articles",
       "g:present-ar",
       "l:regalar",
       "l:tinto"
@@ -7763,8 +7690,8 @@
   },
   {
     "id": "u01-0354",
-    "es": "Me encanta el tinto de Hernando.",
-    "en": "I love Hernando's coffee.",
+    "es": "Me encanta el tinto de Vale.",
+    "en": "I love Vale's coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7810,8 +7737,8 @@
   },
   {
     "id": "u01-0356",
-    "es": "Gracias. De nada.",
-    "en": "Thanks. You're welcome.",
+    "es": "Gracias.\nDe nada.",
+    "en": "Thanks.\nYou're welcome.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7827,8 +7754,8 @@
   },
   {
     "id": "u01-0357",
-    "es": "Muchas gracias, Vale. Con mucho gusto.",
-    "en": "Thank you very much, Vale. My pleasure.",
+    "es": "Muchas gracias, Vale.\nCon mucho gusto.",
+    "en": "Thank you very much, Vale.\nMy pleasure.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8834,18 +8761,16 @@
   },
   {
     "id": "u01-0404",
-    "es": "Tomás compra el café de Rosa.",
-    "en": "Tomás buys Rosa's café.",
+    "es": "Tomás no compra cafés. ¡Altamira sí!",
+    "en": "Tomás doesn't buy cafés. Altamira does!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
       "l:café",
       "l:comprar"
     ],
     "targets": [
-      "g:gender-articles",
       "g:present-ar",
       "l:café",
       "l:comprar"
@@ -8924,16 +8849,15 @@
   },
   {
     "id": "u01-0408",
-    "es": "Ayudo a Vale con el pan.",
-    "en": "I help Vale with the bread.",
+    "es": "Ayudo con el pan.",
+    "en": "I help with the bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "l:pan",
-      "p:personal-a"
+      "l:pan"
     ],
     "targets": [
       "g:present-ar",
@@ -8947,14 +8871,15 @@
   },
   {
     "id": "u01-0409",
-    "es": "¿Tú ayudas a Tomás?",
-    "en": "Are you helping Tomás? (to a friend)",
+    "es": "¿Tú ayudas con los clientes?",
+    "en": "Do you help with the customers? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "p:personal-a"
+      "l:cliente"
     ],
     "targets": [
       "g:present-ar",
@@ -8967,16 +8892,15 @@
   },
   {
     "id": "u01-0410",
-    "es": "Vale ayuda a Tomás con el español.",
-    "en": "Vale helps Tomás with his Spanish.",
+    "es": "Vale ayuda con el español de Tomás.",
+    "en": "Vale helps with Tomás's Spanish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "l:español",
-      "p:personal-a"
+      "l:español"
     ],
     "targets": [
       "g:present-ar",
@@ -8990,19 +8914,16 @@
   },
   {
     "id": "u01-0411",
-    "es": "Hernando ayuda a los clientes.",
-    "en": "Hernando helps the customers.",
+    "es": "Hernando no ayuda: habla.",
+    "en": "Hernando doesn't help: he talks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "l:cliente",
-      "p:personal-a"
+      "l:hablar"
     ],
     "targets": [
-      "g:gender-articles",
       "g:present-ar",
       "l:ayudar"
     ],
@@ -9013,16 +8934,16 @@
   },
   {
     "id": "u01-0412",
-    "es": "Ayudamos a la señora.",
-    "en": "We help the lady.",
+    "es": "Ayudamos con el café, pero no con el pan.",
+    "en": "We help with the coffee, but not with the bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "l:señora",
-      "p:personal-a"
+      "l:café",
+      "l:pan"
     ],
     "targets": [
       "g:gender-articles",
@@ -9036,8 +8957,8 @@
   },
   {
     "id": "u01-0413",
-    "es": "Los meseros ayudan a Vale.",
-    "en": "The waiters help Vale.",
+    "es": "Los meseros ayudan con los tintos.",
+    "en": "The waiters help with the coffees.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9045,7 +8966,7 @@
       "g:present-ar",
       "l:ayudar",
       "l:mesero",
-      "p:personal-a"
+      "l:tinto"
     ],
     "targets": [
       "g:gender-articles",
@@ -9084,14 +9005,13 @@
   },
   {
     "id": "u01-0415",
-    "es": "Mariana ayuda a Tomás.",
-    "en": "Mariana helps Tomás.",
+    "es": "Mariana ayuda con Altamira.",
+    "en": "Mariana helps with Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:ayudar",
-      "p:personal-a"
+      "l:ayudar"
     ],
     "targets": [
       "g:present-ar",
@@ -9104,18 +9024,16 @@
   },
   {
     "id": "u01-0416",
-    "es": "No ayudo a Altamira.",
-    "en": "I don't help Altamira.",
+    "es": "No trabajo con Altamira.",
+    "en": "I don't work with Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:ayudar",
-      "p:personal-a"
+      "l:trabajar"
     ],
     "targets": [
-      "g:present-ar",
-      "l:ayudar"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -9124,15 +9042,18 @@
   },
   {
     "id": "u01-0417",
-    "es": "Usted ayuda a Simón, ¿no?",
-    "en": "You help Simón, don't you? (polite)",
-    "accept": [],
+    "es": "Usted ayuda en el café, ¿no?",
+    "en": "You help out at the café, don't you? (polite)",
+    "accept": [
+      "Ayuda en el café, ¿no?"
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-cierto",
+      "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "p:personal-a"
+      "l:café"
     ],
     "targets": [
       "g:present-ar",
@@ -9164,14 +9085,14 @@
   },
   {
     "id": "u01-0419",
-    "es": "Llamo a Vale.",
-    "en": "I call Vale.",
+    "es": "Llamo mañana.",
+    "en": "I'll call tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
       "l:llamar",
-      "p:personal-a"
+      "l:mañana"
     ],
     "targets": [
       "g:present-ar"
@@ -9183,14 +9104,13 @@
   },
   {
     "id": "u01-0420",
-    "es": "¿Llamas a Mariana?",
-    "en": "Are you calling Mariana? (to a friend)",
+    "es": "¿Llamas tú o llamo yo?",
+    "en": "Are you calling, or am I? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:llamar",
-      "p:personal-a"
+      "l:llamar"
     ],
     "targets": [
       "g:present-ar"
@@ -9202,19 +9122,17 @@
   },
   {
     "id": "u01-0421",
-    "es": "Tomás llama a la señora de Altamira.",
-    "en": "Tomás calls the lady from Altamira.",
+    "es": "Altamira llama, y Tomás habla en inglés.",
+    "en": "Altamira calls, and Tomás talks in English.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
-      "l:llamar",
-      "l:señora",
-      "p:personal-a"
+      "l:hablar",
+      "l:inglés",
+      "l:llamar"
     ],
     "targets": [
-      "g:gender-articles",
       "g:present-ar"
     ],
     "kind": "statement",
@@ -9224,14 +9142,16 @@
   },
   {
     "id": "u01-0422",
-    "es": "Hernando llama a Tomás.",
-    "en": "Hernando calls Tomás.",
+    "es": "Hernando llama: ¿hay tinto?",
+    "en": "Hernando calls: is there any coffee?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "g:hay-vs-esta",
       "g:present-ar",
       "l:llamar",
-      "p:personal-a"
+      "l:tinto"
     ],
     "targets": [
       "g:present-ar"
@@ -9243,19 +9163,16 @@
   },
   {
     "id": "u01-0423",
-    "es": "Llamamos a los clientes.",
-    "en": "We call the customers.",
+    "es": "¿Llamamos o esperamos?",
+    "en": "Shall we call, or wait?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
-      "l:cliente",
-      "l:llamar",
-      "p:personal-a"
+      "l:esperar",
+      "l:llamar"
     ],
     "targets": [
-      "g:gender-articles",
       "g:present-ar"
     ],
     "kind": "statement",
@@ -9265,16 +9182,16 @@
   },
   {
     "id": "u01-0424",
-    "es": "Los clientes llaman a Vale.",
-    "en": "The customers call Vale.",
+    "es": "Los clientes llaman y hablan con Vale.",
+    "en": "The customers call and talk to Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:cliente",
-      "l:llamar",
-      "p:personal-a"
+      "l:hablar",
+      "l:llamar"
     ],
     "targets": [
       "g:gender-articles",
@@ -9287,14 +9204,17 @@
   },
   {
     "id": "u01-0425",
-    "es": "No llamo a Altamira.",
-    "en": "I'm not calling Altamira.",
+    "es": "No llamo. Es que no hablo español.",
+    "en": "I'm not calling. The thing is, I don't speak Spanish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:es-que",
       "g:present-ar",
+      "l:español",
+      "l:hablar",
       "l:llamar",
-      "p:personal-a"
+      "l:ser"
     ],
     "targets": [
       "g:present-ar"
@@ -9306,17 +9226,17 @@
   },
   {
     "id": "u01-0426",
-    "es": "¿Usted llama a Tomás?",
-    "en": "Are you calling Tomás? (polite)",
+    "es": "¿Usted llama mañana?",
+    "en": "Are you calling tomorrow? (polite)",
     "accept": [
-      "¿Llama usted a Tomás?",
-      "¿Llama a Tomás?"
+      "¿Llama usted mañana?",
+      "¿Llama mañana?"
     ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
       "l:llamar",
-      "p:personal-a"
+      "l:mañana"
     ],
     "targets": [
       "g:present-ar"
@@ -9328,20 +9248,19 @@
   },
   {
     "id": "u01-0427",
-    "es": "Regalo un pan a Hernando.",
-    "en": "I give Hernando a free bread roll.",
+    "es": "No regalo el tinto, Hernando.",
+    "en": "I'm not giving the coffee away, Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:pan",
-      "l:regalar"
+      "l:regalar",
+      "l:tinto"
     ],
     "targets": [
       "g:gender-articles",
       "g:present-ar",
-      "l:pan",
       "l:regalar"
     ],
     "kind": "statement",
@@ -9374,20 +9293,21 @@
   },
   {
     "id": "u01-0429",
-    "es": "Vale regala un jugo a Simón.",
-    "en": "Vale gives Simón a juice.",
+    "es": "Vale regala un pan, y Hernando paga el tinto.",
+    "en": "Vale gives away a bread roll, and Hernando pays for the coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:jugo",
-      "l:regalar"
+      "l:pagar",
+      "l:pan",
+      "l:regalar",
+      "l:tinto"
     ],
     "targets": [
       "g:gender-articles",
       "g:present-ar",
-      "l:jugo",
       "l:regalar"
     ],
     "kind": "statement",
@@ -9397,14 +9317,14 @@
   },
   {
     "id": "u01-0430",
-    "es": "Regalamos tintos a los clientes.",
-    "en": "We give the customers free coffees.",
+    "es": "Regalamos el tinto, pero no el pan.",
+    "en": "We give the coffee away, but not the bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:cliente",
+      "l:pan",
       "l:regalar",
       "l:tinto"
     ],
@@ -9421,20 +9341,20 @@
   },
   {
     "id": "u01-0431",
-    "es": "Rosa regala el café a Tomás.",
-    "en": "Rosa gives the café to Tomás.",
+    "es": "Vale no regala el pan de hoy.",
+    "en": "Vale doesn't give away today's bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:café",
+      "l:hoy",
+      "l:pan",
       "l:regalar"
     ],
     "targets": [
       "g:gender-articles",
       "g:present-ar",
-      "l:café",
       "l:regalar"
     ],
     "kind": "statement",
@@ -9491,18 +9411,18 @@
   },
   {
     "id": "u01-0434",
-    "es": "Plantan café en Huila.",
-    "en": "They grow coffee in Huila.",
+    "es": "¿Pagas con tarjeta?",
+    "en": "Are you paying by card? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tarjeta-o-efectivo",
       "g:present-ar",
-      "l:café",
-      "l:plantar"
+      "l:pagar",
+      "l:tarjeta"
     ],
     "targets": [
-      "g:present-ar",
-      "l:café"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -9511,18 +9431,18 @@
   },
   {
     "id": "u01-0435",
-    "es": "Plantamos café en Colombia.",
-    "en": "We grow coffee in Colombia.",
+    "es": "Pagamos el tinto de Hernando.",
+    "en": "We pay for Hernando's coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-ar",
-      "l:café",
-      "l:plantar"
+      "l:pagar",
+      "l:tinto"
     ],
     "targets": [
-      "g:present-ar",
-      "l:café"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -9531,18 +9451,19 @@
   },
   {
     "id": "u01-0436",
-    "es": "Hernando planta café en Boyacá.",
-    "en": "Hernando plants coffee in Boyacá.",
+    "es": "Hernando no paga: es amigo de Rosa.",
+    "en": "Hernando doesn't pay: he's Rosa's friend.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:café",
-      "l:plantar"
+      "g:ser-identity",
+      "l:amigo",
+      "l:pagar",
+      "l:ser"
     ],
     "targets": [
-      "g:present-ar",
-      "l:café"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -9551,20 +9472,20 @@
   },
   {
     "id": "u01-0437",
-    "es": "¿Ustedes plantan café?",
-    "en": "Do you all grow coffee?",
+    "es": "¿Ustedes trabajan tarde?",
+    "en": "Do you all work late?",
     "accept": [
-      "¿Plantan café?"
+      "¿Trabajan tarde?",
+      "¿Trabajan ustedes tarde?"
     ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:café",
-      "l:plantar"
+      "l:tarde",
+      "l:trabajar"
     ],
     "targets": [
-      "g:present-ar",
-      "l:café"
+      "g:present-ar"
     ],
     "kind": "question",
     "unit": "u01",
@@ -9617,22 +9538,21 @@
   },
   {
     "id": "u01-0440",
-    "es": "Separamos el pan y el café.",
-    "en": "We keep the bread and the coffee apart.",
+    "es": "Cerramos el café, Hernando. ¡Chao!",
+    "en": "We're closing the café, Hernando. Bye!",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:chao-nos-vemos",
       "g:gender-articles",
       "g:present-ar",
       "l:café",
-      "l:pan",
-      "l:separar"
+      "l:cerrar"
     ],
     "targets": [
       "g:gender-articles",
       "g:present-ar",
-      "l:café",
-      "l:pan"
+      "l:café"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -9641,20 +9561,17 @@
   },
   {
     "id": "u01-0441",
-    "es": "¿Separas los tintos?",
-    "en": "Are you setting the coffees aside? (to a friend)",
+    "es": "¿Separas dos panes, Vale?",
+    "en": "Are you setting two bread rolls aside, Vale?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
-      "l:separar",
-      "l:tinto"
+      "l:pan",
+      "l:separar"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:present-ar",
-      "l:tinto"
+      "g:present-ar"
     ],
     "kind": "question",
     "unit": "u01",
@@ -9663,15 +9580,16 @@
   },
   {
     "id": "u01-0442",
-    "es": "Inventas un apellido.",
-    "en": "You make up a surname. (to a friend)",
+    "es": "Tú inventas los nombres, ¿no?",
+    "en": "You make up the names, don't you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:present-ar",
-      "l:apellido",
-      "l:inventar"
+      "l:inventar",
+      "l:nombre"
     ],
     "targets": [
       "g:gender-articles",
@@ -9956,16 +9874,22 @@
   },
   {
     "id": "u01-0456",
-    "es": "Disculpamos a Hernando.",
-    "en": "We forgive Hernando.",
+    "es": "Disculpe, ¿me regala un agua?",
+    "en": "Excuse me, could I have a water?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:disculpar"
+      "c:me-regala",
+      "c:perdon-disculpe",
+      "g:commands-usted",
+      "g:gender-articles",
+      "l:agua",
+      "l:disculpar",
+      "l:regalar",
+      "p:el-agua-fria",
+      "p:me-trae"
     ],
     "targets": [
-      "g:present-ar",
       "l:disculpar"
     ],
     "kind": "statement",
@@ -10079,8 +10003,8 @@
   },
   {
     "id": "u01-0461",
-    "es": "Ayudo a Hernando porque es un amigo.",
-    "en": "I help Hernando because he's a friend.",
+    "es": "Ayudo con el pan porque Vale es amiga.",
+    "en": "I help with the bread because Vale's a friend.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10089,10 +10013,10 @@
       "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
-      "l:amigo",
+      "l:amiga",
       "l:ayudar",
-      "l:ser",
-      "p:personal-a"
+      "l:pan",
+      "l:ser"
     ],
     "targets": [
       "c:porque",
@@ -10184,13 +10108,14 @@
   },
   {
     "id": "u01-0465",
-    "es": "Es que trabajo con Hernando.",
-    "en": "It's just that I work with Hernando.",
+    "es": "Es que mañana trabajo.",
+    "en": "It's just that I'm working tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:es-que",
       "g:present-ar",
+      "l:mañana",
       "l:ser",
       "l:trabajar"
     ],
@@ -10206,21 +10131,20 @@
   },
   {
     "id": "u01-0466",
-    "es": "Es que no compro leche.",
-    "en": "The thing is, I don't buy milk.",
+    "es": "Es que no tomo leche.",
+    "en": "The thing is, I don't drink milk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:es-que",
       "g:present-ar",
-      "l:comprar",
       "l:leche",
-      "l:ser"
+      "l:ser",
+      "l:tomar"
     ],
     "targets": [
       "c:es-que",
       "g:present-ar",
-      "l:comprar",
       "l:leche"
     ],
     "kind": "statement",
@@ -10302,14 +10226,14 @@
   },
   {
     "id": "u01-0470",
-    "es": "Vale trabaja, y yo también.",
-    "en": "Vale works, and so do I.",
+    "es": "Vale trabaja, y Simón habla.",
+    "en": "Vale works, and Simón talks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:trabajar",
-      "p:tambien-tampoco"
+      "l:hablar",
+      "l:trabajar"
     ],
     "targets": [
       "g:present-ar",
@@ -10322,24 +10246,17 @@
   },
   {
     "id": "u01-0471",
-    "es": "Yo compro el pan, y tú el café.",
-    "en": "I buy the bread, and you the coffee.",
+    "es": "Yo hablo con Vale, y tú con Hernando.",
+    "en": "I talk to Vale, and you talk to Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "g:gender-articles",
       "g:present-ar",
-      "l:café",
-      "l:comprar",
-      "l:pan"
+      "l:hablar"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:present-ar",
-      "l:café",
-      "l:comprar",
-      "l:pan"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -10529,14 +10446,17 @@
   },
   {
     "id": "u01-0480",
-    "es": "Tomás compra un tinto a Vale.",
-    "en": "Tomás buys a coffee from Vale.",
+    "es": "Tomás compra un tinto y paga con tarjeta.",
+    "en": "Tomás buys a coffee and pays by card.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tarjeta-o-efectivo",
       "g:gender-articles",
       "g:present-ar",
       "l:comprar",
+      "l:pagar",
+      "l:tarjeta",
       "l:tinto"
     ],
     "targets": [
@@ -10552,19 +10472,23 @@
   },
   {
     "id": "u01-0481",
-    "es": "Hernando no trabaja de mesero.",
-    "en": "Hernando doesn't work as a waiter.",
+    "es": "Hernando era taxista en Bogotá.",
+    "en": "Hernando was a taxi driver in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:mesero",
-      "l:trabajar",
-      "p:trabajar-de"
+      "c:era",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:ser",
+      "l:taxista",
+      "p:ser-profession-no-article"
     ],
     "targets": [
-      "g:present-ar",
-      "l:trabajar"
+      "c:era",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "p:ser-profession-no-article"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -10637,19 +10561,18 @@
   },
   {
     "id": "u01-0485",
-    "es": "No, señor, no trabajamos.",
-    "en": "No, sir, we don't work.",
+    "es": "No, señor, somos clientes.",
+    "en": "No, sir, we're customers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:señor",
-      "l:trabajar"
+      "g:ser-identity",
+      "l:cliente",
+      "l:ser",
+      "l:señor"
     ],
     "targets": [
-      "g:present-ar",
-      "l:señor",
-      "l:trabajar"
+      "l:señor"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -10829,16 +10752,17 @@
   },
   {
     "id": "u01-0493",
-    "es": "Claro que sí, ayudo a Vale.",
-    "en": "Of course, I'll help Vale.",
+    "es": "Claro que sí, ayudo con los tintos.",
+    "en": "Of course, I'll help with the coffees.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
+      "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
       "l:claro",
-      "p:personal-a"
+      "l:tinto"
     ],
     "targets": [
       "c:claro-listo",
@@ -11128,8 +11052,8 @@
   },
   {
     "id": "u01-0505",
-    "es": "Perdón, ¿cómo se dice nacionalidad en inglés?",
-    "en": "Sorry, how do you say \"nacionalidad\" in English?",
+    "es": "Perdón, ¿cómo se dice «surname» en español?",
+    "en": "Sorry, how do you say \"surname\" in Spanish?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11138,8 +11062,7 @@
       "g:se-impersonal",
       "l:cómo",
       "l:decir",
-      "l:inglés",
-      "l:nacionalidad",
+      "l:español",
       "l:perdón"
     ],
     "targets": [
@@ -11179,8 +11102,8 @@
   },
   {
     "id": "u01-0507",
-    "es": "¿Cómo se dice mesero en inglés?",
-    "en": "How do you say \"mesero\" in English?",
+    "es": "¿Cómo se dice «waiter»? ¿Mesero?",
+    "en": "How do you say \"waiter\"? Mesero?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11188,7 +11111,6 @@
       "g:se-impersonal",
       "l:cómo",
       "l:decir",
-      "l:inglés",
       "l:mesero"
     ],
     "targets": [
@@ -11202,22 +11124,21 @@
   },
   {
     "id": "u01-0508",
-    "es": "¿Cómo se dice pan en inglés?",
-    "en": "How do you say \"pan\" in English?",
+    "es": "¿Cómo se dice «juice» aquí?",
+    "en": "How do you say \"juice\" here?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:como-se-dice",
       "g:se-impersonal",
+      "l:aquí",
       "l:cómo",
       "l:decir",
-      "l:inglés",
-      "l:pan"
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:como-se-dice",
-      "l:decir",
-      "l:pan"
+      "l:decir"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -11226,8 +11147,8 @@
   },
   {
     "id": "u01-0509",
-    "es": "Perdón, ¿cómo se dice leche en inglés?",
-    "en": "Sorry, how do you say \"leche\" in English?",
+    "es": "Perdón, ¿cómo se dice «milk»?",
+    "en": "Sorry, how do you say \"milk\"?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11236,15 +11157,12 @@
       "g:se-impersonal",
       "l:cómo",
       "l:decir",
-      "l:inglés",
-      "l:leche",
       "l:perdón"
     ],
     "targets": [
       "c:como-se-dice",
       "c:perdon-disculpe",
       "l:decir",
-      "l:leche",
       "l:perdón"
     ],
     "kind": "dialogue",
@@ -11254,8 +11172,8 @@
   },
   {
     "id": "u01-0510",
-    "es": "Vale, ¿cómo se dice jugo en inglés?",
-    "en": "Vale, how do you say \"jugo\" in English?",
+    "es": "Tomás, ¿cómo se dice jugo en inglés?",
+    "en": "Tomás, how do you say \"jugo\" in English?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11372,11 +11290,11 @@
   },
   {
     "id": "u01-0515",
-    "es": "Perdón, ¿usted es Vale?",
-    "en": "Excuse me, are you Vale?",
+    "es": "Perdón, ¿usted es Mariana?",
+    "en": "Excuse me, are you Mariana?",
     "accept": [
-      "Perdón, ¿es usted Vale?",
-      "Perdón, ¿es Vale?"
+      "Perdón, ¿es usted Mariana?",
+      "Perdón, ¿es Mariana?"
     ],
     "acceptEn": [],
     "requires": [
@@ -11397,26 +11315,20 @@
   },
   {
     "id": "u01-0516",
-    "es": "Perdón, soy Tomás, el señor del café.",
-    "en": "Sorry, I'm Tomás, the owner of the café.",
+    "es": "Perdón, soy Tomás Herrera, de Toronto.",
+    "en": "Sorry, I'm Tomás Herrera, from Toronto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:perdon-disculpe",
-      "g:gender-articles",
       "g:ser-identity",
-      "l:café",
       "l:perdón",
-      "l:ser",
-      "l:señor"
+      "l:ser"
     ],
     "targets": [
       "c:perdon-disculpe",
-      "g:gender-articles",
       "g:ser-identity",
-      "l:café",
-      "l:perdón",
-      "l:señor"
+      "l:perdón"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -11996,8 +11908,8 @@
   },
   {
     "id": "u01-0540",
-    "es": "¿Dónde está el señor Hernando?",
-    "en": "Where's Mr Hernando?",
+    "es": "¿Dónde está el señor del pan?",
+    "en": "Where's the bread man?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12006,9 +11918,9 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
+      "l:pan",
       "l:señor",
-      "p:question-word-order",
-      "p:senor-don-article"
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta",
@@ -12764,25 +12676,25 @@
   },
   {
     "id": "u01-0573",
-    "es": "No, gracias. Tengo que trabajar mañana.",
-    "en": "No, thanks. I have to work tomorrow.",
+    "es": "No, gracias. Tengo que ayudar con el pan.",
+    "en": "No, thanks. I have to help with the bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:gracias-de-nada",
       "c:tengo",
       "c:tengo-que",
+      "g:gender-articles",
+      "g:verb-infinitive",
       "g:yo-irregular",
-      "l:mañana",
-      "l:tener",
-      "l:trabajar"
+      "l:ayudar",
+      "l:pan",
+      "l:tener"
     ],
     "targets": [
       "c:tengo",
       "c:tengo-que",
-      "l:mañana",
-      "l:tener",
-      "l:trabajar"
+      "l:tener"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -12791,27 +12703,27 @@
   },
   {
     "id": "u01-0574",
-    "es": "Es que tengo que trabajar mañana.",
-    "en": "It's just that I have to work tomorrow.",
+    "es": "Es que tengo que cerrar el café.",
+    "en": "It's just that I have to close the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:es-que",
       "c:tengo",
       "c:tengo-que",
+      "g:gender-articles",
+      "g:verb-infinitive",
       "g:yo-irregular",
-      "l:mañana",
+      "l:café",
+      "l:cerrar",
       "l:ser",
-      "l:tener",
-      "l:trabajar"
+      "l:tener"
     ],
     "targets": [
       "c:es-que",
       "c:tengo",
       "c:tengo-que",
-      "l:mañana",
-      "l:tener",
-      "l:trabajar"
+      "l:tener"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -12820,8 +12732,8 @@
   },
   {
     "id": "u01-0575",
-    "es": "Bueno, tengo que trabajar mañana. Chao.",
-    "en": "Well, I have to work tomorrow. Bye.",
+    "es": "Bueno, tengo que hablar con Vale. Chao.",
+    "en": "Well, I have to talk to Vale. Bye.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12829,11 +12741,11 @@
       "c:entonces-bueno",
       "c:tengo",
       "c:tengo-que",
+      "g:verb-infinitive",
       "g:yo-irregular",
       "l:bueno",
-      "l:mañana",
-      "l:tener",
-      "l:trabajar"
+      "l:hablar",
+      "l:tener"
     ],
     "targets": [
       "c:chao-nos-vemos",
@@ -12841,9 +12753,7 @@
       "c:tengo",
       "c:tengo-que",
       "l:bueno",
-      "l:mañana",
-      "l:tener",
-      "l:trabajar"
+      "l:tener"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -13526,8 +13436,8 @@
   },
   {
     "id": "u01-0606",
-    "es": "Tengo quince años.",
-    "en": "I'm fifteen.",
+    "es": "¿Yo? Tengo setenta años.",
+    "en": "Me? I'm seventy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13539,7 +13449,6 @@
     ],
     "targets": [
       "c:tengo",
-      "l:año",
       "l:tener"
     ],
     "kind": "statement",
@@ -13549,8 +13458,8 @@
   },
   {
     "id": "u01-0607",
-    "es": "Tengo diecisiete años.",
-    "en": "I'm seventeen.",
+    "es": "No tengo veinte años, tengo diecisiete.",
+    "en": "I'm not twenty, I'm seventeen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13872,26 +13781,25 @@
   },
   {
     "id": "u01-0621",
-    "es": "No puedo. Mañana voy a trabajar.",
-    "en": "I can't. Tomorrow I'm going to work.",
+    "es": "No puedo, qué pena. Tengo clientes.",
+    "en": "I can't, sorry. I have customers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:puedo",
-      "c:voy-a",
-      "g:ir-a-plans",
+      "c:que-pena",
+      "c:tengo",
       "g:stem-boot",
-      "l:ir",
-      "l:mañana",
+      "g:yo-irregular",
+      "l:cliente",
+      "l:pena",
       "l:poder",
-      "l:trabajar"
+      "l:qué",
+      "l:tener"
     ],
     "targets": [
       "c:puedo",
-      "c:voy-a",
-      "l:mañana",
-      "l:poder",
-      "l:trabajar"
+      "l:poder"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -13994,19 +13902,20 @@
   },
   {
     "id": "u01-0626",
-    "es": "Tomás, vamos a tomar algo.",
-    "en": "Tomás, let's get a drink.",
+    "es": "Bueno, Tomás, vamos a trabajar.",
+    "en": "Right, Tomás, let's get to work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:entonces-bueno",
       "c:vamos-a",
       "g:ir-a-plans",
+      "l:bueno",
       "l:ir",
-      "l:tomar"
+      "l:trabajar"
     ],
     "targets": [
-      "c:vamos-a",
-      "l:tomar"
+      "c:vamos-a"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -14255,20 +14164,22 @@
   },
   {
     "id": "u01-0638",
-    "es": "Ayer trabajé mucho, y anoche comí pan.",
-    "en": "Yesterday I worked a lot, and last night I had bread.",
+    "es": "Ayer trabajé en el café, y anoche comí una arepa.",
+    "en": "Yesterday I worked in the café, and last night I had an arepa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "c:comi",
       "c:compre-trabaje",
+      "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-er-ir",
       "l:anoche",
+      "l:arepa",
       "l:ayer",
+      "l:café",
       "l:comer",
-      "l:pan",
       "l:trabajar"
     ],
     "targets": [
@@ -14278,7 +14189,6 @@
       "l:anoche",
       "l:ayer",
       "l:comer",
-      "l:pan",
       "l:trabajar"
     ],
     "kind": "statement",
@@ -14288,22 +14198,19 @@
   },
   {
     "id": "u01-0639",
-    "es": "Compré pan y leche.",
-    "en": "I bought bread and milk.",
+    "es": "Compré café de Huila.",
+    "en": "I bought coffee from Huila.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:compre-trabaje",
       "g:preterite-ar",
-      "l:comprar",
-      "l:leche",
-      "l:pan"
+      "l:café",
+      "l:comprar"
     ],
     "targets": [
       "c:compre-trabaje",
-      "l:comprar",
-      "l:leche",
-      "l:pan"
+      "l:comprar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -14546,8 +14453,8 @@
   },
   {
     "id": "u01-0651",
-    "es": "Era un café bueno.",
-    "en": "It was a good café.",
+    "es": "Era el tinto de Hernando.",
+    "en": "It was Hernando's coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14555,16 +14462,11 @@
       "g:gender-articles",
       "g:imperfect-states",
       "g:ser-identity",
-      "l:bueno",
-      "l:café",
       "l:ser",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:tinto"
     ],
     "targets": [
-      "c:era",
-      "l:bueno",
-      "l:café"
+      "c:era"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -14573,8 +14475,8 @@
   },
   {
     "id": "u01-0652",
-    "es": "Era el café de Rosa.",
-    "en": "It was Rosa's café.",
+    "es": "Era Hernando, con un tinto.",
+    "en": "It was Hernando, with a coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14582,12 +14484,11 @@
       "g:gender-articles",
       "g:imperfect-states",
       "g:ser-identity",
-      "l:café",
-      "l:ser"
+      "l:ser",
+      "l:tinto"
     ],
     "targets": [
-      "c:era",
-      "l:café"
+      "c:era"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -14775,22 +14676,19 @@
   },
   {
     "id": "u01-0661",
-    "es": "Creo que Hernando es un cliente.",
-    "en": "I think Hernando is a customer.",
+    "es": "Creo que Hernando no es de Altamira.",
+    "en": "I don't think Hernando is from Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
-      "l:cliente",
       "l:creer",
       "l:ser"
     ],
     "targets": [
       "c:creo-que",
-      "g:gender-articles",
       "g:ser-identity",
       "l:creer"
     ],
@@ -14852,8 +14750,8 @@
   },
   {
     "id": "u01-0664",
-    "es": "¿Hay leche? Creo que no.",
-    "en": "Is there milk? I don't think so.",
+    "es": "¿Hay leche?\nCreo que no.",
+    "en": "Is there any milk?\nI don't think so.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14877,8 +14775,8 @@
   },
   {
     "id": "u01-0665",
-    "es": "¿Es de Toronto? Creo que sí.",
-    "en": "Is he from Toronto? I think so.",
+    "es": "¿Es de Toronto?\nCreo que sí.",
+    "en": "Is he from Toronto?\nI think so.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15007,26 +14905,23 @@
   },
   {
     "id": "u01-0670",
-    "es": "Vale trabaja con Tomás porque el café es de Rosa.",
-    "en": "Vale works with Tomás because the café is Rosa's.",
+    "es": "Vale habla despacio con Tomás, porque es de Toronto.",
+    "en": "Vale speaks slowly with Tomás, because he's from Toronto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:porque",
       "g:cause-result",
-      "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
-      "l:café",
-      "l:ser",
-      "l:trabajar"
+      "l:despacio",
+      "l:hablar",
+      "l:ser"
     ],
     "targets": [
       "c:porque",
       "g:present-ar",
-      "g:ser-identity",
-      "l:café",
-      "l:trabajar"
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -15279,14 +15174,15 @@
   },
   {
     "id": "u01-0682",
-    "es": "Bueno, bueno.",
-    "en": "All right, all right.",
+    "es": "Bueno, listo.",
+    "en": "OK, fine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
       "c:entonces-bueno",
       "l:bueno",
-      "p:repeticion-claro-claro"
+      "l:listo"
     ],
     "targets": [
       "c:entonces-bueno",
@@ -15414,14 +15310,13 @@
   },
   {
     "id": "u01-0689",
-    "es": "Claro, claro.",
-    "en": "Sure, sure.",
+    "es": "Claro, Vale.",
+    "en": "Sure, Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
-      "l:claro",
-      "p:repeticion-claro-claro"
+      "l:claro"
     ],
     "targets": [
       "c:claro-listo",
@@ -15640,8 +15535,8 @@
   },
   {
     "id": "u01-0701",
-    "es": "Muchas gracias, Mariana. De nada.",
-    "en": "Thank you very much, Mariana. You're welcome.",
+    "es": "Muchas gracias, Mariana.\nDe nada.",
+    "en": "Thank you very much, Mariana.\nYou're welcome.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15679,8 +15574,8 @@
   },
   {
     "id": "u01-0703",
-    "es": "Muchas gracias, Hernando. Con mucho gusto.",
-    "en": "Thanks a lot, Hernando. My pleasure.",
+    "es": "Muchas gracias, Hernando.\nCon mucho gusto.",
+    "en": "Thanks a lot, Hernando.\nMy pleasure.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15760,23 +15655,23 @@
   },
   {
     "id": "u01-0707",
-    "es": "Perdón, disculpe, ¿usted es Vale?",
-    "en": "Sorry, excuse me, are you Vale?",
-    "accept": [],
+    "es": "Disculpe, ¿usted es Vale?",
+    "en": "Excuse me, are you Vale?",
+    "accept": [
+      "Disculpe, ¿es usted Vale?"
+    ],
     "acceptEn": [],
     "requires": [
       "c:perdon-disculpe",
       "g:commands-usted",
       "g:ser-identity",
       "l:disculpar",
-      "l:perdón",
       "l:ser"
     ],
     "targets": [
       "c:perdon-disculpe",
       "g:ser-identity",
-      "l:disculpar",
-      "l:perdón"
+      "l:disculpar"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -15809,8 +15704,8 @@
   },
   {
     "id": "u01-0709",
-    "es": "Perdón, disculpe, ¿dónde está el café de Rosa?",
-    "en": "Sorry, excuse me, where's Rosa's café?",
+    "es": "Disculpe, ¿dónde está el café de Rosa?",
+    "en": "Excuse me, where's Rosa's café?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15823,15 +15718,13 @@
       "l:disculpar",
       "l:dónde",
       "l:estar",
-      "l:perdón",
       "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta",
       "c:perdon-disculpe",
       "l:café",
-      "l:disculpar",
-      "l:perdón"
+      "l:disculpar"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -15840,24 +15733,18 @@
   },
   {
     "id": "u01-0710",
-    "es": "Perdón, disculpe, ¿hay tinto?",
-    "en": "Excuse me, sorry, is there any coffee?",
+    "es": "¿Hay tinto, señora?",
+    "en": "Is there any coffee, ma'am?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
-      "c:perdon-disculpe",
-      "g:commands-usted",
       "g:hay-vs-esta",
-      "l:disculpar",
-      "l:perdón",
+      "l:señora",
       "l:tinto"
     ],
     "targets": [
       "c:hay",
-      "c:perdon-disculpe",
-      "l:disculpar",
-      "l:perdón",
       "l:tinto"
     ],
     "kind": "dialogue",
@@ -15867,25 +15754,21 @@
   },
   {
     "id": "u01-0711",
-    "es": "Perdón, disculpe, no entiendo.",
-    "en": "Sorry, excuse me, I don't understand.",
+    "es": "No entiendo, señora. ¿Más despacio?",
+    "en": "I don't understand, ma'am. Slower?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:mas-despacio",
       "c:no-entiendo",
-      "c:perdon-disculpe",
-      "g:commands-usted",
       "g:stem-boot",
-      "l:disculpar",
+      "l:despacio",
       "l:entender",
-      "l:perdón"
+      "l:señora"
     ],
     "targets": [
       "c:no-entiendo",
-      "c:perdon-disculpe",
-      "l:disculpar",
-      "l:entender",
-      "l:perdón"
+      "l:entender"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -15917,26 +15800,29 @@
   },
   {
     "id": "u01-0713",
-    "es": "Perdón, disculpe. ¿Me puede ayudar?",
-    "en": "Sorry, excuse me. Can you help me?",
+    "es": "Disculpe, ¿me puede ayudar? No soy de aquí.",
+    "en": "Excuse me, can you help me? I'm not from around here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
       "c:perdon-disculpe",
+      "c:soy-de",
       "g:commands-usted",
+      "g:ser-identity",
       "g:verb-infinitive",
+      "l:aquí",
       "l:ayudar",
       "l:disculpar",
-      "l:perdón",
-      "l:poder"
+      "l:poder",
+      "l:ser",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:me-puede-ayudar",
       "c:perdon-disculpe",
       "l:ayudar",
       "l:disculpar",
-      "l:perdón",
       "l:poder"
     ],
     "kind": "dialogue",
@@ -15946,29 +15832,23 @@
   },
   {
     "id": "u01-0714",
-    "es": "Perdón, disculpe, ¿cuánto cuesta el pan?",
-    "en": "Excuse me, how much is the bread?",
+    "es": "Señor, ¿cuánto cuesta el pan?",
+    "en": "Sir, how much is the bread?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:cuanto-cuesta",
-      "c:perdon-disculpe",
-      "g:commands-usted",
       "g:gender-articles",
       "g:questions",
       "l:costar",
       "l:cuánto",
-      "l:disculpar",
       "l:pan",
-      "l:perdón",
+      "l:señor",
       "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta",
-      "c:perdon-disculpe",
-      "l:disculpar",
-      "l:pan",
-      "l:perdón"
+      "l:pan"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -15977,23 +15857,22 @@
   },
   {
     "id": "u01-0715",
-    "es": "Perdón, disculpe, soy Tomás.",
-    "en": "Sorry, excuse me, I'm Tomás.",
+    "es": "Disculpe, soy Tomás, de La Esquina de Rosa.",
+    "en": "Excuse me, I'm Tomás, from La Esquina de Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:perdon-disculpe",
       "g:commands-usted",
+      "g:gender-articles",
       "g:ser-identity",
       "l:disculpar",
-      "l:perdón",
       "l:ser"
     ],
     "targets": [
       "c:perdon-disculpe",
       "g:ser-identity",
-      "l:disculpar",
-      "l:perdón"
+      "l:disculpar"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -16002,24 +15881,22 @@
   },
   {
     "id": "u01-0716",
-    "es": "Perdón, disculpe, ¿usted trabaja con Altamira?",
-    "en": "Excuse me, do you work for Altamira?",
-    "accept": [],
+    "es": "Disculpe, ¿usted es de Altamira?",
+    "en": "Excuse me, are you from Altamira?",
+    "accept": [
+      "Disculpe, ¿es usted de Altamira?"
+    ],
     "acceptEn": [],
     "requires": [
       "c:perdon-disculpe",
       "g:commands-usted",
-      "g:present-ar",
+      "g:ser-identity",
       "l:disculpar",
-      "l:perdón",
-      "l:trabajar"
+      "l:ser"
     ],
     "targets": [
       "c:perdon-disculpe",
-      "g:present-ar",
-      "l:disculpar",
-      "l:perdón",
-      "l:trabajar"
+      "l:disculpar"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -16093,8 +15970,8 @@
   },
   {
     "id": "u01-0720",
-    "es": "¿Fui ayer o anoche? Anoche.",
-    "en": "Did I go yesterday or last night? Last night.",
+    "es": "¿Ayer? No, fui anoche.",
+    "en": "Yesterday? No, I went last night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16144,27 +16021,24 @@
   },
   {
     "id": "u01-0722",
-    "es": "Ayer comí pan, anoche comí ajiaco.",
-    "en": "Yesterday I had bread, last night I had ajiaco.",
+    "es": "Ayer comí con Vale, y anoche con Hernando.",
+    "en": "Yesterday I ate with Vale, and last night with Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "c:comi",
       "g:preterite-er-ir",
-      "l:ajiaco",
       "l:anoche",
       "l:ayer",
-      "l:comer",
-      "l:pan"
+      "l:comer"
     ],
     "targets": [
       "c:ayer-anoche",
       "c:comi",
       "l:anoche",
       "l:ayer",
-      "l:comer",
-      "l:pan"
+      "l:comer"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -16270,21 +16144,18 @@
   },
   {
     "id": "u01-0727",
-    "es": "Entonces, bueno, nos vemos.",
-    "en": "So, well, see you.",
+    "es": "Entonces, ¿Simón habla inglés?",
+    "en": "So Simón speaks English?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:chao-nos-vemos",
       "c:entonces-bueno",
-      "l:bueno",
-      "l:ver"
+      "g:present-ar",
+      "l:hablar",
+      "l:inglés"
     ],
     "targets": [
-      "c:chao-nos-vemos",
-      "c:entonces-bueno",
-      "l:bueno",
-      "l:ver"
+      "c:entonces-bueno"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -16293,27 +16164,21 @@
   },
   {
     "id": "u01-0728",
-    "es": "Vale, bueno, entonces nos vemos mañana en el café.",
-    "en": "Vale, well, see you tomorrow at the café then.",
+    "es": "Bueno, Vale, hasta mañana.",
+    "en": "OK, Vale, see you tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:chao-nos-vemos",
       "c:entonces-bueno",
-      "g:gender-articles",
       "l:bueno",
-      "l:café",
-      "l:mañana",
-      "l:ver"
+      "l:mañana"
     ],
     "targets": [
       "c:chao-nos-vemos",
       "c:entonces-bueno",
-      "g:gender-articles",
       "l:bueno",
-      "l:café",
-      "l:mañana",
-      "l:ver"
+      "l:mañana"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -16322,23 +16187,19 @@
   },
   {
     "id": "u01-0729",
-    "es": "Entonces, bueno, un tinto y un pan.",
-    "en": "So, OK, a coffee and a bread roll.",
+    "es": "Entonces, ¿no hay pan?",
+    "en": "So there's no bread?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:entonces-bueno",
-      "g:gender-articles",
-      "l:bueno",
-      "l:pan",
-      "l:tinto"
+      "c:hay",
+      "g:hay-vs-esta",
+      "l:pan"
     ],
     "targets": [
       "c:entonces-bueno",
-      "g:gender-articles",
-      "l:bueno",
-      "l:pan",
-      "l:tinto"
+      "l:pan"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -16370,8 +16231,8 @@
   },
   {
     "id": "u01-0731",
-    "es": "Entonces el café es de Tomás. Bueno, bueno.",
-    "en": "So the café is Tomás's. Well, well.",
+    "es": "Entonces el café es de Tomás. Bueno.",
+    "en": "So the café is Tomás's. OK.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16380,8 +16241,7 @@
       "g:ser-identity",
       "l:bueno",
       "l:café",
-      "l:ser",
-      "p:repeticion-claro-claro"
+      "l:ser"
     ],
     "targets": [
       "c:entonces-bueno",
@@ -16396,14 +16256,15 @@
   },
   {
     "id": "u01-0732",
-    "es": "Entonces, bueno, chao.",
-    "en": "So, well, bye.",
+    "es": "Bueno, entonces hasta mañana.",
+    "en": "Well, see you tomorrow then.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:chao-nos-vemos",
       "c:entonces-bueno",
-      "l:bueno"
+      "l:bueno",
+      "l:mañana"
     ],
     "targets": [
       "c:entonces-bueno",
@@ -16416,23 +16277,17 @@
   },
   {
     "id": "u01-0733",
-    "es": "Bueno, Hernando, entonces nos vemos mañana.",
-    "en": "Well, Hernando, see you tomorrow then.",
+    "es": "Entonces, Hernando, ¿un tinto o dos?",
+    "en": "So, Hernando, one coffee or two?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:chao-nos-vemos",
       "c:entonces-bueno",
-      "l:bueno",
-      "l:mañana",
-      "l:ver"
+      "g:gender-articles",
+      "l:tinto"
     ],
     "targets": [
-      "c:chao-nos-vemos",
-      "c:entonces-bueno",
-      "l:bueno",
-      "l:mañana",
-      "l:ver"
+      "c:entonces-bueno"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -16467,14 +16322,15 @@
   },
   {
     "id": "u01-0735",
-    "es": "Entonces, bueno, ¿qué hiciste ayer?",
-    "en": "So, well, what did you do yesterday?",
+    "es": "Bueno, ¿y qué hiciste ayer?",
+    "en": "OK, and what did you do yesterday?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "c:entonces-bueno",
       "c:que-hiciste",
+      "c:y-que-paso",
       "g:preterite-ser-ir-hacer",
       "l:ayer",
       "l:bueno",
@@ -16495,21 +16351,19 @@
   },
   {
     "id": "u01-0736",
-    "es": "¡Estuvo buenísimo! Gracias, Vale.",
-    "en": "It was great! Thanks, Vale.",
+    "es": "¿El pan? Fue un desastre.",
+    "en": "The bread? It was a disaster.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:estuvo",
-      "c:gracias-de-nada",
-      "g:preterite-irregular-strong",
-      "l:bueno",
-      "l:estar"
+      "g:gender-articles",
+      "l:desastre",
+      "l:pan",
+      "l:ser"
     ],
     "targets": [
-      "c:estuvo",
-      "c:gracias-de-nada",
-      "l:bueno"
+      "c:estuvo"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -16543,20 +16397,19 @@
   },
   {
     "id": "u01-0738",
-    "es": "¡Estuvo buenísimo, señora!",
-    "en": "It was great, ma'am!",
+    "es": "Ayer fue un desastre.",
+    "en": "Yesterday was a disaster.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:estuvo",
-      "g:preterite-irregular-strong",
-      "l:bueno",
-      "l:estar",
-      "l:señora"
+      "l:ayer",
+      "l:desastre",
+      "l:ser"
     ],
     "targets": [
-      "c:estuvo",
-      "l:bueno"
+      "c:estuvo"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -16623,22 +16476,20 @@
   },
   {
     "id": "u01-0741",
-    "es": "¿Y el jugo? ¡Estuvo buenísimo!",
-    "en": "And the juice? It was delicious!",
+    "es": "El jugo de Simón fue un desastre.",
+    "en": "Simón's juice was a disaster.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:estuvo",
       "g:gender-articles",
-      "g:preterite-irregular-strong",
-      "l:bueno",
-      "l:estar",
-      "l:jugo"
+      "l:desastre",
+      "l:jugo",
+      "l:ser"
     ],
     "targets": [
       "c:estuvo",
       "g:gender-articles",
-      "l:bueno",
       "l:jugo"
     ],
     "kind": "dialogue",
@@ -16648,8 +16499,27 @@
   },
   {
     "id": "u01-0742",
-    "es": "¡Estuvo buenísimo, Simón!",
-    "en": "That was great, Simón!",
+    "es": "Fue un desastre, Simón.",
+    "en": "It was a disaster, Simón.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:estuvo",
+      "l:desastre",
+      "l:ser"
+    ],
+    "targets": [
+      "c:estuvo"
+    ],
+    "kind": "dialogue",
+    "unit": "u01",
+    "theme": "at the café door (mixed)",
+    "source": "gen"
+  },
+  {
+    "id": "u01-0743",
+    "es": "¿Medellín? ¡Estuvo buenísimo!",
+    "en": "Medellín? It was great!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16668,49 +16538,19 @@
     "source": "gen"
   },
   {
-    "id": "u01-0743",
-    "es": "¿El tinto de Hernando? ¡Estuvo buenísimo!",
-    "en": "Hernando's coffee? It was great!",
-    "accept": [],
-    "acceptEn": [],
-    "requires": [
-      "c:estuvo",
-      "g:gender-articles",
-      "g:preterite-irregular-strong",
-      "l:bueno",
-      "l:estar",
-      "l:tinto"
-    ],
-    "targets": [
-      "c:estuvo",
-      "g:gender-articles",
-      "l:bueno",
-      "l:tinto"
-    ],
-    "kind": "dialogue",
-    "unit": "u01",
-    "theme": "at the café door (mixed)",
-    "source": "gen"
-  },
-  {
     "id": "u01-0744",
-    "es": "Era tarde, y no hay pan.",
-    "en": "It was late, and there's no bread.",
+    "es": "Era tarde, Hernando.",
+    "en": "It was late, Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
-      "c:hay",
-      "g:hay-vs-esta",
       "g:imperfect-states",
-      "l:pan",
       "l:ser",
       "l:tarde"
     ],
     "targets": [
-      "c:era",
-      "c:hay",
-      "l:pan"
+      "c:era"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -16744,8 +16584,8 @@
   },
   {
     "id": "u01-0746",
-    "es": "Era un día bueno.",
-    "en": "It was a good day.",
+    "es": "Era un día bonito.",
+    "en": "It was a lovely day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16753,15 +16593,12 @@
       "g:gender-articles",
       "g:imperfect-states",
       "g:ser-identity",
-      "l:bueno",
+      "l:bonito",
       "l:día",
-      "l:ser",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:ser"
     ],
     "targets": [
       "c:era",
-      "l:bueno",
       "l:día"
     ],
     "kind": "statement",
@@ -16792,8 +16629,8 @@
   },
   {
     "id": "u01-0748",
-    "es": "Era muy bonito, el café.",
-    "en": "It was really lovely, the café.",
+    "es": "El café de Rosa era muy bonito.",
+    "en": "Rosa's café was really lovely.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16816,8 +16653,8 @@
   },
   {
     "id": "u01-0749",
-    "es": "¿Era Vale? Creo que sí.",
-    "en": "Was it Vale? I think so.",
+    "es": "¿Era Vale?\nCreo que sí.",
+    "en": "Was it Vale?\nI think so.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16934,8 +16771,8 @@
   },
   {
     "id": "u01-0754",
-    "es": "¿Ya comiste? Sí, ya. Gracias.",
-    "en": "Have you eaten yet? Yes, I have. Thanks.",
+    "es": "¿Ya comiste?\nSí, ya. Gracias.",
+    "en": "Have you eaten yet?\nYes, I have. Thanks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16997,8 +16834,8 @@
   },
   {
     "id": "u01-0757",
-    "es": "Mariana, ¿ya comiste? Vamos a tomar algo.",
-    "en": "Mariana, have you eaten yet? Let's get a drink.",
+    "es": "Mariana, ¿ya comiste? Vamos a comer.",
+    "en": "Mariana, have you eaten yet? Let's eat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17006,14 +16843,12 @@
       "c:ya-comiste",
       "g:ir-a-plans",
       "l:comer",
-      "l:ir",
-      "l:tomar"
+      "l:ir"
     ],
     "targets": [
       "c:vamos-a",
       "c:ya-comiste",
-      "l:comer",
-      "l:tomar"
+      "l:comer"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -17096,8 +16931,8 @@
   },
   {
     "id": "u01-0761",
-    "es": "¿Qué hiciste ayer? Fui a Monserrate.",
-    "en": "What did you do yesterday? I went to Monserrate.",
+    "es": "¿Qué hiciste ayer?\nFui a Monserrate.",
+    "en": "What did you do yesterday?\nI went to Monserrate.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17169,8 +17004,8 @@
   },
   {
     "id": "u01-0764",
-    "es": "Compré pan y trabajé en el café.",
-    "en": "I bought bread and worked in the café.",
+    "es": "Compré leche y trabajé en el café.",
+    "en": "I bought milk and worked in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17179,7 +17014,7 @@
       "g:preterite-ar",
       "l:café",
       "l:comprar",
-      "l:pan",
+      "l:leche",
       "l:trabajar"
     ],
     "targets": [
@@ -17187,7 +17022,6 @@
       "g:gender-articles",
       "l:café",
       "l:comprar",
-      "l:pan",
       "l:trabajar"
     ],
     "kind": "statement",
@@ -17219,23 +17053,20 @@
   },
   {
     "id": "u01-0766",
-    "es": "Ayer trabajé mucho en el café.",
-    "en": "Yesterday I worked a lot in the café.",
+    "es": "Ayer trabajé con Vale.",
+    "en": "Yesterday I worked with Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:compre-trabaje",
-      "g:gender-articles",
       "g:preterite-ar",
       "l:ayer",
-      "l:café",
       "l:trabajar"
     ],
     "targets": [
       "c:compre-trabaje",
-      "g:gender-articles",
       "l:ayer",
-      "l:café",
       "l:trabajar"
     ],
     "kind": "statement",
@@ -17245,11 +17076,12 @@
   },
   {
     "id": "u01-0767",
-    "es": "Ayer trabajé mucho, Vale.",
-    "en": "I worked a lot yesterday, Vale.",
+    "es": "Ayer no trabajé, Vale.",
+    "en": "I didn't work yesterday, Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:compre-trabaje",
       "g:preterite-ar",
       "l:ayer",
@@ -17290,20 +17122,20 @@
   },
   {
     "id": "u01-0769",
-    "es": "Compré pan de Vale.",
-    "en": "I bought some of Vale's bread.",
+    "es": "Compré leche y jugo.",
+    "en": "I bought milk and juice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:compre-trabaje",
       "g:preterite-ar",
       "l:comprar",
-      "l:pan"
+      "l:jugo",
+      "l:leche"
     ],
     "targets": [
       "c:compre-trabaje",
-      "l:comprar",
-      "l:pan"
+      "l:comprar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -17445,15 +17277,15 @@
   },
   {
     "id": "u01-0776",
-    "es": "Comí ajiaco en La Candelaria.",
-    "en": "I had ajiaco in La Candelaria.",
+    "es": "Comí una arepa en La Candelaria.",
+    "en": "I had an arepa in La Candelaria.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:comi",
       "g:gender-articles",
       "g:preterite-er-ir",
-      "l:ajiaco",
+      "l:arepa",
       "l:comer"
     ],
     "targets": [
@@ -17553,8 +17385,8 @@
   },
   {
     "id": "u01-0781",
-    "es": "Bueno, mañana voy a trabajar.",
-    "en": "Well, tomorrow I'm going to work.",
+    "es": "Bueno, mañana voy a hablar con Altamira.",
+    "en": "Well, tomorrow I'm going to talk to Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17562,16 +17394,15 @@
       "c:voy-a",
       "g:ir-a-plans",
       "l:bueno",
+      "l:hablar",
       "l:ir",
-      "l:mañana",
-      "l:trabajar"
+      "l:mañana"
     ],
     "targets": [
       "c:entonces-bueno",
       "c:voy-a",
       "l:bueno",
-      "l:mañana",
-      "l:trabajar"
+      "l:mañana"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -17603,25 +17434,21 @@
   },
   {
     "id": "u01-0783",
-    "es": "Mañana voy a trabajar en el café.",
-    "en": "Tomorrow I'm going to work in the café.",
+    "es": "Mañana voy a comprar leche.",
+    "en": "Tomorrow I'm going to buy milk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:voy-a",
-      "g:gender-articles",
       "g:ir-a-plans",
-      "l:café",
+      "l:comprar",
       "l:ir",
-      "l:mañana",
-      "l:trabajar"
+      "l:leche",
+      "l:mañana"
     ],
     "targets": [
       "c:voy-a",
-      "g:gender-articles",
-      "l:café",
-      "l:mañana",
-      "l:trabajar"
+      "l:mañana"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -17630,14 +17457,16 @@
   },
   {
     "id": "u01-0784",
-    "es": "Vamos a tomar algo con Hernando.",
-    "en": "Let's get a drink with Hernando.",
+    "es": "Vamos a tomar un tinto con Hernando.",
+    "en": "Let's have a coffee with Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:vamos-a",
+      "g:gender-articles",
       "g:ir-a-plans",
       "l:ir",
+      "l:tinto",
       "l:tomar"
     ],
     "targets": [
@@ -17651,19 +17480,18 @@
   },
   {
     "id": "u01-0785",
-    "es": "Vale, vamos a tomar algo.",
-    "en": "Vale, let's get a drink.",
+    "es": "Vale, vamos a hablar con Tomás.",
+    "en": "Vale, let's talk to Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:vamos-a",
       "g:ir-a-plans",
-      "l:ir",
-      "l:tomar"
+      "l:hablar",
+      "l:ir"
     ],
     "targets": [
-      "c:vamos-a",
-      "l:tomar"
+      "c:vamos-a"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -17722,19 +17550,18 @@
   },
   {
     "id": "u01-0788",
-    "es": "Hernando, ¿vamos a tomar algo?",
-    "en": "Hernando, shall we get a drink?",
+    "es": "Hernando, ¿vamos a comer?",
+    "en": "Hernando, shall we eat?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:vamos-a",
       "g:ir-a-plans",
-      "l:ir",
-      "l:tomar"
+      "l:comer",
+      "l:ir"
     ],
     "targets": [
-      "c:vamos-a",
-      "l:tomar"
+      "c:vamos-a"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -17988,7 +17815,7 @@
   {
     "id": "u01-0799",
     "es": "¿Me regala un café con leche?",
-    "en": "Could I have a white coffee?",
+    "en": "Could I have a coffee with milk?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18367,14 +18194,17 @@
   },
   {
     "id": "u01-0815",
-    "es": "Tengo catorce años.",
-    "en": "I'm fourteen.",
+    "es": "Tengo veintiocho años y soy de Medellín.",
+    "en": "I'm twenty-eight and I'm from Medellín.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:soy-de",
       "c:tengo",
+      "g:ser-identity",
       "g:yo-irregular",
       "l:año",
+      "l:ser",
       "l:tener",
       "p:tener-anos"
     ],
@@ -18412,17 +18242,16 @@
   },
   {
     "id": "u01-0817",
-    "es": "¿Cómo se dice cliente en inglés?",
-    "en": "How do you say \"cliente\" in English?",
+    "es": "¿Cómo se dice «customer» en español?",
+    "en": "How do you say \"customer\" in Spanish?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:como-se-dice",
       "g:se-impersonal",
-      "l:cliente",
       "l:cómo",
       "l:decir",
-      "l:inglés"
+      "l:español"
     ],
     "targets": [
       "c:como-se-dice",
@@ -18435,8 +18264,8 @@
   },
   {
     "id": "u01-0818",
-    "es": "¿Cómo se dice a la orden en inglés?",
-    "en": "How do you say \"a la orden\" in English?",
+    "es": "«A la orden», ¿cómo se dice en inglés?",
+    "en": "\"A la orden\": how do you say it in English?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18446,8 +18275,7 @@
       "l:cómo",
       "l:decir",
       "l:inglés",
-      "l:orden",
-      "p:el-orden-la-orden"
+      "l:orden"
     ],
     "targets": [
       "c:a-la-orden",
@@ -18693,28 +18521,24 @@
   },
   {
     "id": "u01-0829",
-    "es": "Trabajo con Vale porque el pan es bueno.",
-    "en": "I work with Vale because the bread is good.",
+    "es": "Trabajo con Vale porque me encanta el pan.",
+    "en": "I work with Vale because I love the bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-encanta",
       "c:porque",
       "g:cause-result",
       "g:gender-articles",
+      "g:gustar-full",
       "g:present-ar",
-      "g:ser-identity",
-      "l:bueno",
+      "l:encantar",
       "l:pan",
-      "l:ser",
-      "l:trabajar",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:trabajar"
     ],
     "targets": [
       "c:porque",
       "g:present-ar",
-      "g:ser-identity",
-      "l:bueno",
       "l:pan",
       "l:trabajar"
     ],
@@ -18748,8 +18572,8 @@
   },
   {
     "id": "u01-0831",
-    "es": "¿Listo? Listo.",
-    "en": "Ready? Ready.",
+    "es": "¿Listo?\nListo.",
+    "en": "Ready?\nReady.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18941,8 +18765,8 @@
   },
   {
     "id": "u01-0840",
-    "es": "¿El apellido, por favor? Herrera.",
-    "en": "Surname, please? Herrera.",
+    "es": "¿El apellido, por favor?\nHerrera.",
+    "en": "Surname, please?\nHerrera.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18986,18 +18810,15 @@
   },
   {
     "id": "u01-0842",
-    "es": "Ospina es un apellido de Medellín, como Vale.",
-    "en": "Ospina is a Medellín surname, like Vale.",
+    "es": "Vale Ospina es de Medellín.",
+    "en": "Vale Ospina is from Medellín.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:ser-identity",
-      "l:apellido",
       "l:ser"
     ],
     "targets": [
-      "g:gender-articles",
       "g:ser-identity"
     ],
     "kind": "statement",
@@ -19007,19 +18828,16 @@
   },
   {
     "id": "u01-0843",
-    "es": "El apellido de Rosa es Herrera, como Tomás.",
-    "en": "Rosa's surname is Herrera, like Tomás's.",
+    "es": "¿Herrera? Como el apellido de Tomás.",
+    "en": "Herrera? Like Tomás's surname.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:apellido",
-      "l:ser"
+      "l:apellido"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -19116,23 +18934,20 @@
   },
   {
     "id": "u01-0848",
-    "es": "Simón es un nombre bueno.",
-    "en": "Simón is a good name.",
+    "es": "Simón es un nombre bonito.",
+    "en": "Simón is a lovely name.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:bueno",
+      "l:bonito",
       "l:nombre",
-      "l:ser",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:ser"
     ],
     "targets": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:bueno"
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -19187,31 +19002,27 @@
   },
   {
     "id": "u01-0851",
-    "es": "La profesión de Vale es el pan.",
-    "en": "Vale's profession is bread.",
+    "es": "¿Profesión, señora?\nProfesora.",
+    "en": "Profession, ma'am?\nTeacher.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:pan",
       "l:profesión",
-      "l:ser"
+      "l:profesora",
+      "l:señora"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:pan"
+      "l:profesión"
     ],
-    "kind": "statement",
+    "kind": "dialogue",
     "unit": "u01",
     "theme": "names, papers and things (articles and gender)",
     "source": "gen"
   },
   {
     "id": "u01-0852",
-    "es": "¿Profesión? Mesero. ¿Nacionalidad? Colombiano.",
-    "en": "Profession? Waiter. Nationality? Colombian.",
+    "es": "¿Profesión?\nMesero.\n¿Nacionalidad?\nColombiano.",
+    "en": "Profession?\nWaiter.\nNationality?\nColombian.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19220,7 +19031,10 @@
       "l:nacionalidad",
       "l:profesión"
     ],
-    "targets": [],
+    "targets": [
+      "l:mesero",
+      "l:nacionalidad"
+    ],
     "kind": "dialogue",
     "unit": "u01",
     "theme": "names, papers and things (articles and gender)",
@@ -19250,15 +19064,14 @@
   },
   {
     "id": "u01-0854",
-    "es": "Mesero es una profesión, y estudiante no.",
-    "en": "Waiter is a profession, and student isn't.",
+    "es": "Estudiante no es una profesión, Hernando.",
+    "en": "Student isn't a profession, Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:estudiante",
-      "l:mesero",
       "l:profesión",
       "l:ser"
     ],
@@ -19295,13 +19108,13 @@
   },
   {
     "id": "u01-0856",
-    "es": "¿La nacionalidad de Vale? Colombia.",
-    "en": "Vale's nationality? Colombia.",
+    "es": "¿El país de Vale? Colombia.",
+    "en": "Vale's country? Colombia.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "l:nacionalidad"
+      "l:país"
     ],
     "targets": [
       "g:gender-articles"
@@ -19333,17 +19146,16 @@
   },
   {
     "id": "u01-0858",
-    "es": "Dos nacionalidades: Tomás es canadiense y colombiano.",
-    "en": "Two nationalities: Tomás is Canadian and Colombian.",
+    "es": "Soy de Toronto, pero el apellido es de Bogotá.",
+    "en": "I'm from Toronto, but the surname is from Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:soy-de",
+      "g:gender-articles",
       "g:ser-identity",
-      "l:canadiense",
-      "l:colombiano",
-      "l:nacionalidad",
-      "l:ser",
-      "p:ser-profession-no-article"
+      "l:apellido",
+      "l:ser"
     ],
     "targets": [
       "g:ser-identity"
@@ -19373,19 +19185,20 @@
   },
   {
     "id": "u01-0860",
-    "es": "Una nacionalidad, un país, un idioma.",
-    "en": "One nationality, one country, one language.",
+    "es": "Un nombre, un apellido y una nacionalidad, por favor.",
+    "en": "A first name, a surname and a nationality, please.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:por-favor",
       "g:gender-articles",
-      "l:idioma",
+      "l:apellido",
+      "l:favor",
       "l:nacionalidad",
-      "l:país"
+      "l:nombre"
     ],
     "targets": [
-      "g:gender-articles",
-      "l:país"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -19417,21 +19230,17 @@
   },
   {
     "id": "u01-0862",
-    "es": "El idioma de Rosa es el español.",
-    "en": "Rosa's language is Spanish.",
+    "es": "Tomás habla inglés con Simón.",
+    "en": "Tomás speaks English to Simón.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:español",
-      "l:idioma",
-      "l:ser"
+      "g:present-ar",
+      "l:hablar",
+      "l:inglés"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:español"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -19440,20 +19249,15 @@
   },
   {
     "id": "u01-0863",
-    "es": "El inglés no es el idioma de Vale.",
-    "en": "English isn't Vale's language.",
+    "es": "¿Inglés? Vale no, pero Mariana sí.",
+    "en": "English? Not Vale, but Mariana does.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:idioma",
-      "l:inglés",
-      "l:ser"
+      "l:inglés"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity"
+      "l:inglés"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -19462,21 +19266,18 @@
   },
   {
     "id": "u01-0864",
-    "es": "Los idiomas de Tomás son el inglés y el español.",
-    "en": "Tomás's languages are English and Spanish.",
+    "es": "Tomás habla dos idiomas: inglés y español.",
+    "en": "Tomás speaks two languages: English and Spanish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
+      "g:present-ar",
       "l:español",
+      "l:hablar",
       "l:idioma",
-      "l:inglés",
-      "l:ser"
+      "l:inglés"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
       "l:español"
     ],
     "kind": "statement",
@@ -19510,22 +19311,17 @@
   },
   {
     "id": "u01-0866",
-    "es": "Japonés es un idioma de Japón, y español es un idioma de Colombia.",
-    "en": "Japanese is a language from Japan, and Spanish is a language from Colombia.",
+    "es": "¿Japonés? No, Simón no habla japonés.",
+    "en": "Japanese? No, Simón doesn't speak Japanese.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:español",
-      "l:idioma",
-      "l:japonés",
-      "l:ser"
+      "g:present-ar",
+      "l:hablar",
+      "l:japonés"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:español"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -19534,26 +19330,21 @@
   },
   {
     "id": "u01-0867",
-    "es": "El día es bueno, y el tinto también.",
-    "en": "The day is good, and so is the coffee.",
+    "es": "Hoy es el día de Tomás.",
+    "en": "Today is Tomás's day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:bueno",
       "l:día",
-      "l:ser",
-      "l:tinto",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:hoy",
+      "l:ser"
     ],
     "targets": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:bueno",
-      "l:día",
-      "l:tinto"
+      "l:día"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -19562,20 +19353,17 @@
   },
   {
     "id": "u01-0868",
-    "es": "Buenos días, buenos días a todos.",
-    "en": "Good morning, good morning, everyone.",
+    "es": "Buenas, Hernando. ¿Tinto?",
+    "en": "Morning, Hernando. Coffee?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hola-buenos-dias",
-      "l:bueno",
-      "l:día",
-      "p:presentation-frame"
+      "c:alo",
+      "l:buena",
+      "l:tinto"
     ],
     "targets": [
-      "c:hola-buenos-dias",
-      "l:bueno",
-      "l:día"
+      "c:alo"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -19676,19 +19464,20 @@
   },
   {
     "id": "u01-0873",
-    "es": "La banda de Mariana es de Bogotá.",
-    "en": "Mariana's band is from Bogotá.",
+    "es": "¿Una banda en el café? ¡Me encanta!",
+    "en": "A band in the café? I love it!",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-encanta",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:gustar-full",
       "l:banda",
-      "l:ser"
+      "l:café",
+      "l:encantar"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -19804,14 +19593,15 @@
   },
   {
     "id": "u01-0879",
-    "es": "Hay una fotografía de Rosa y Hernando.",
-    "en": "There's a photograph of Rosa and Hernando.",
+    "es": "Hay una fotografía de Rosa en el café.",
+    "en": "There's a photograph of Rosa in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "g:gender-articles",
       "g:hay-vs-esta",
+      "l:café",
       "l:fotografía"
     ],
     "targets": [
@@ -19887,8 +19677,8 @@
   },
   {
     "id": "u01-0883",
-    "es": "Es una explicación buena, pero no entiendo.",
-    "en": "It's a good explanation, but I don't understand.",
+    "es": "Es una explicación, pero no entiendo.",
+    "en": "It's an explanation, but I don't understand.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19896,7 +19686,6 @@
       "g:gender-articles",
       "g:ser-identity",
       "g:stem-boot",
-      "l:buena",
       "l:entender",
       "l:explicación",
       "l:ser"
@@ -20040,8 +19829,8 @@
   },
   {
     "id": "u01-0890",
-    "es": "¿Es urgente? Creo que sí.",
-    "en": "Is it urgent? I think so.",
+    "es": "¿Es urgente?\nCreo que sí.",
+    "en": "Is it urgent?\nI think so.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20064,20 +19853,17 @@
   },
   {
     "id": "u01-0891",
-    "es": "Hay un círculo de clientes en el café.",
-    "en": "There's a circle of customers in the café.",
+    "es": "Un círculo de amigos en el café.",
+    "en": "A circle of friends in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:gender-articles",
-      "g:hay-vs-esta",
+      "l:amigo",
       "l:café",
-      "l:cliente",
       "l:círculo"
     ],
     "targets": [
-      "c:hay",
       "g:gender-articles",
       "l:café"
     ],
@@ -20088,21 +19874,21 @@
   },
   {
     "id": "u01-0892",
-    "es": "Es un círculo, no un café.",
-    "en": "It's a circle, not a café.",
+    "es": "¿Es un círculo o es un pan?",
+    "en": "Is it a circle or a bread roll?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:café",
       "l:círculo",
-      "l:ser"
+      "l:pan",
+      "l:ser",
+      "p:ser-un-noun"
     ],
     "targets": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:café"
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -20222,14 +20008,18 @@
   },
   {
     "id": "u01-0898",
-    "es": "Una pena, señora.",
-    "en": "What a shame, ma'am.",
+    "es": "Es una pena, pero no hay pan.",
+    "en": "It's a shame, but there's no bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:ser-identity",
+      "l:pan",
       "l:pena",
-      "l:señora"
+      "l:ser"
     ],
     "targets": [
       "g:gender-articles",
@@ -20420,21 +20210,19 @@
   },
   {
     "id": "u01-0907",
-    "es": "Es una orden de Altamira.",
-    "en": "It's an order from Altamira.",
+    "es": "Altamira es un problema.",
+    "en": "Altamira is a problem.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:orden",
-      "l:ser",
-      "p:el-orden-la-orden"
+      "l:problema",
+      "l:ser"
     ],
     "targets": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:orden"
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -20443,22 +20231,18 @@
   },
   {
     "id": "u01-0908",
-    "es": "Es una orden de cinco tintos.",
-    "en": "It's an order of five coffees.",
+    "es": "Son cinco tintos, señora.",
+    "en": "That's five coffees, ma'am.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:ser-identity",
-      "l:orden",
       "l:ser",
-      "l:tinto",
-      "p:el-orden-la-orden"
+      "l:señora",
+      "l:tinto"
     ],
     "targets": [
-      "g:gender-articles",
       "g:ser-identity",
-      "l:orden",
       "l:tinto"
     ],
     "kind": "statement",
@@ -20468,24 +20252,16 @@
   },
   {
     "id": "u01-0909",
-    "es": "Una orden de pan, por favor.",
-    "en": "An order of bread, please.",
+    "es": "¿Un problema? No, dos problemas.",
+    "en": "One problem? No, two problems.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:por-favor",
       "g:gender-articles",
-      "l:favor",
-      "l:orden",
-      "l:pan",
-      "p:el-orden-la-orden"
+      "l:problema"
     ],
     "targets": [
-      "c:por-favor",
-      "g:gender-articles",
-      "l:favor",
-      "l:orden",
-      "l:pan"
+      "g:gender-articles"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -20516,21 +20292,18 @@
   },
   {
     "id": "u01-0911",
-    "es": "Quiero un favor, Vale.",
-    "en": "I need a favor, Vale.",
+    "es": "Vale, necesito un favor.",
+    "en": "Vale, I need a favor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:present-ar",
       "l:favor",
-      "l:querer"
+      "l:necesitar"
     ],
     "targets": [
-      "c:quiero",
-      "l:favor",
-      "l:querer"
+      "l:favor"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -20608,22 +20381,20 @@
   },
   {
     "id": "u01-0915",
-    "es": "Disculpo a Hernando, es un amigo.",
-    "en": "I forgive Hernando, he's a friend.",
+    "es": "Disculpe, Hernando. Hoy no hay pan.",
+    "en": "Sorry, Hernando. There's no bread today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:present-ar",
-      "g:ser-identity",
-      "l:amigo",
+      "c:hay",
+      "c:perdon-disculpe",
+      "g:commands-usted",
+      "g:hay-vs-esta",
       "l:disculpar",
-      "l:ser"
+      "l:hoy",
+      "l:pan"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:present-ar",
-      "g:ser-identity",
       "l:disculpar"
     ],
     "kind": "statement",
@@ -20633,17 +20404,24 @@
   },
   {
     "id": "u01-0916",
-    "es": "Disculpas a Simón, ¿no?",
-    "en": "You forgive Simón, don't you? (to a friend)",
-    "accept": [],
+    "es": "Disculpe, señora, ¿usted es de aquí?",
+    "en": "Excuse me, ma'am, are you from around here?",
+    "accept": [
+      "Disculpe, señora, ¿es usted de aquí?",
+      "Disculpe, señora, ¿es de aquí?"
+    ],
     "acceptEn": [],
     "requires": [
-      "c:no-cierto",
-      "g:present-ar",
-      "l:disculpar"
+      "c:perdon-disculpe",
+      "g:commands-usted",
+      "g:ser-identity",
+      "l:aquí",
+      "l:disculpar",
+      "l:ser",
+      "l:señora",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
-      "g:present-ar",
       "l:disculpar"
     ],
     "kind": "question",
@@ -20698,14 +20476,20 @@
   },
   {
     "id": "u01-0919",
-    "es": "Ustedes disculpan a Vale, ¿no?",
-    "en": "You all forgive Vale, don't you?",
-    "accept": [],
+    "es": "Disculpe, ¿habla inglés?",
+    "en": "Excuse me, do you speak English? (polite)",
+    "accept": [
+      "Disculpe, ¿usted habla inglés?",
+      "Disculpe, ¿habla usted inglés?"
+    ],
     "acceptEn": [],
     "requires": [
-      "c:no-cierto",
+      "c:perdon-disculpe",
+      "g:commands-usted",
       "g:present-ar",
-      "l:disculpar"
+      "l:disculpar",
+      "l:hablar",
+      "l:inglés"
     ],
     "targets": [
       "g:present-ar",
@@ -20916,14 +20700,15 @@
   },
   {
     "id": "u01-0928",
-    "es": "Listo, señora. Son tres.",
-    "en": "There you go, ma'am. That's three.",
+    "es": "Listo, señora. Son tres panes.",
+    "en": "There you go, ma'am. That's three bread rolls.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
       "g:ser-identity",
       "l:listo",
+      "l:pan",
       "l:ser",
       "l:señora"
     ],
@@ -20939,8 +20724,8 @@
   },
   {
     "id": "u01-0929",
-    "es": "¿Listo, Tomás? ¡Listo!",
-    "en": "Ready, Tomás? Ready!",
+    "es": "¿Listo, Tomás?\n¡Listo!",
+    "en": "Ready, Tomás?\nReady!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21002,19 +20787,16 @@
   },
   {
     "id": "u01-0932",
-    "es": "La ciudad de Rosa es Bogotá.",
-    "en": "Rosa's city is Bogotá.",
+    "es": "¿Una ciudad de Colombia? Cali.",
+    "en": "A city in Colombia? Cali.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:ciudad",
-      "l:ser"
+      "l:ciudad"
     ],
     "targets": [
       "g:gender-articles",
-      "g:ser-identity",
       "l:ciudad"
     ],
     "kind": "statement",
@@ -21044,19 +20826,16 @@
   },
   {
     "id": "u01-0934",
-    "es": "Los países de Sudamérica son doce.",
+    "es": "En Sudamérica hay doce países.",
     "en": "There are twelve countries in South America.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:país",
-      "l:ser"
+      "c:hay",
+      "g:hay-vs-esta",
+      "l:país"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
       "l:país"
     ],
     "kind": "statement",
@@ -21133,19 +20912,19 @@
   },
   {
     "id": "u01-0938",
-    "es": "Unas señoras son de Medellín.",
-    "en": "Some ladies are from Medellín.",
+    "es": "Hay unas señoras de Medellín en el café.",
+    "en": "There are some ladies from Medellín in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:ser",
+      "g:hay-vs-esta",
+      "l:café",
       "l:señora"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -21265,8 +21044,8 @@
   },
   {
     "id": "u01-0944",
-    "es": "La señora es la cliente de Vale.",
-    "en": "The lady is Vale's customer.",
+    "es": "La señora es cliente de Vale.",
+    "en": "The lady is one of Vale's customers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21287,22 +21066,19 @@
   },
   {
     "id": "u01-0945",
-    "es": "El cliente es el señor Hernando.",
-    "en": "The customer is Mr Hernando.",
+    "es": "El cliente es Hernando.",
+    "en": "The customer is Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:cliente",
-      "l:ser",
-      "l:señor",
-      "p:senor-don-article"
+      "l:ser"
     ],
     "targets": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:señor"
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -21467,8 +21243,8 @@
   },
   {
     "id": "u01-0953",
-    "es": "Los jugos son de Vale y el pan es de Tomás.",
-    "en": "The juices are Vale's and the bread is Tomás's.",
+    "es": "El pan es de Vale, y los jugos son de Tomás.",
+    "en": "The bread is Vale's, and the juices are Tomás's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21492,7 +21268,7 @@
   {
     "id": "u01-0954",
     "es": "Es café con leche, no tinto.",
-    "en": "It's white coffee, not black.",
+    "en": "It's coffee with milk, not black coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21517,7 +21293,7 @@
   {
     "id": "u01-0955",
     "es": "Es un tinto, no un café con leche.",
-    "en": "It's a black coffee, not a white coffee.",
+    "en": "It's a black coffee, not a coffee with milk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21847,20 +21623,20 @@
   },
   {
     "id": "u01-0970",
-    "es": "No, soy Tomás. El café es de Tomás.",
-    "en": "No, I'm Tomás. The café is Tomás's.",
+    "es": "No, no soy el mesero. Soy Tomás.",
+    "en": "No, I'm not the waiter. I'm Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:café",
-      "l:ser"
+      "l:mesero",
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:café"
+      "g:ser-identity"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -21909,8 +21685,8 @@
   },
   {
     "id": "u01-0973",
-    "es": "¿Usted es de Canadá? Sí, soy Tomás.",
-    "en": "Are you from Canada? Yes, I'm Tomás.",
+    "es": "¿Usted es de Canadá?\nSí, de Toronto.",
+    "en": "Are you from Canada?\nYes, from Toronto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21927,17 +21703,12 @@
   },
   {
     "id": "u01-0974",
-    "es": "¿Tomás? ¿Tomás Herrera? ¿El de Toronto?",
-    "en": "Tomás? Tomás Herrera? The one from Toronto?",
+    "es": "¿Tomás? ¿Tomás Herrera? ¿De Toronto?",
+    "en": "Tomás? Tomás Herrera? From Toronto?",
     "accept": [],
     "acceptEn": [],
-    "requires": [
-      "g:gender-articles",
-      "p:los-de-la-camiseta"
-    ],
-    "targets": [
-      "g:gender-articles"
-    ],
+    "requires": [],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u01",
     "theme": "Tomás's first week (story-flavoured lines)",
@@ -22136,7 +21907,7 @@
   {
     "id": "u01-0983",
     "es": "¿Ingeniero? ¿Y un café? ¡Claro que sí!",
-    "en": "An engineer? And a café? Why not!",
+    "en": "An engineer? And a café? Of course!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22267,21 +22038,19 @@
   },
   {
     "id": "u01-0989",
-    "es": "Entonces, bueno, ¿un tinto, Hernando?",
-    "en": "So, well, a coffee, Hernando?",
+    "es": "Bueno, entonces trabajo con Vale.",
+    "en": "OK, then I'll work with Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:entonces-bueno",
-      "g:gender-articles",
+      "g:present-ar",
       "l:bueno",
-      "l:tinto"
+      "l:trabajar"
     ],
     "targets": [
       "c:entonces-bueno",
-      "g:gender-articles",
-      "l:bueno",
-      "l:tinto"
+      "l:bueno"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -22290,26 +22059,23 @@
   },
   {
     "id": "u01-0990",
-    "es": "Entonces, ¿eres el señor del café? Bueno.",
-    "en": "So you're the owner of the café? OK.",
+    "es": "Entonces, ¿eres el nieto de Rosa? Mucho gusto.",
+    "en": "So you're Rosa's grandson? Nice to meet you.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:entonces-bueno",
+      "c:mucho-gusto",
       "g:gender-articles",
       "g:ser-identity",
-      "l:bueno",
-      "l:café",
-      "l:ser",
-      "l:señor"
+      "l:gusto",
+      "l:nieto",
+      "l:ser"
     ],
     "targets": [
       "c:entonces-bueno",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:bueno",
-      "l:café",
-      "l:señor"
+      "g:ser-identity"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -22318,8 +22084,8 @@
   },
   {
     "id": "u01-0991",
-    "es": "Un café en La Candelaria es un café con clientes.",
-    "en": "A café in La Candelaria is a café with customers.",
+    "es": "Un café sin clientes no es un café.",
+    "en": "A café without customers isn't a café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22391,20 +22157,17 @@
   },
   {
     "id": "u01-0994",
-    "es": "Ayudamos a Tomás con el español.",
-    "en": "We help Tomás with his Spanish.",
+    "es": "Hablamos español con Tomás.",
+    "en": "We speak Spanish with Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
-      "l:ayudar",
       "l:español",
-      "p:personal-a"
+      "l:hablar"
     ],
     "targets": [
       "g:present-ar",
-      "l:ayudar",
       "l:español"
     ],
     "kind": "statement",
@@ -22414,8 +22177,8 @@
   },
   {
     "id": "u01-0995",
-    "es": "Los clientes ayudan a Tomás con los nombres.",
-    "en": "The customers help Tomás with the names.",
+    "es": "Los clientes ayudan con los nombres.",
+    "en": "The customers help with the names.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22423,8 +22186,7 @@
       "g:present-ar",
       "l:ayudar",
       "l:cliente",
-      "l:nombre",
-      "p:personal-a"
+      "l:nombre"
     ],
     "targets": [
       "g:gender-articles",
@@ -22438,20 +22200,19 @@
   },
   {
     "id": "u01-0996",
-    "es": "Hernando llama a Tomás \"el canadiense\".",
-    "en": "Hernando calls Tomás \"the Canadian\".",
+    "es": "Tomás es «el canadiense» en el café.",
+    "en": "At the café, Tomás is \"the Canadian\".",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:ser-identity",
+      "l:café",
       "l:canadiense",
-      "l:llamar",
-      "p:personal-a"
+      "l:ser"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:present-ar"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -22460,21 +22221,19 @@
   },
   {
     "id": "u01-0997",
-    "es": "Vale llama a Simón \"el señor Simón\".",
-    "en": "Vale calls Simón \"Mr Simón\".",
+    "es": "¿Simón? Es «el señor» del café.",
+    "en": "Simón? He's \"the gentleman\" of the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:es-que",
       "g:gender-articles",
-      "g:present-ar",
-      "l:llamar",
-      "l:señor",
-      "p:personal-a",
-      "p:senor-don-article"
+      "l:café",
+      "l:ser",
+      "l:señor"
     ],
     "targets": [
       "g:gender-articles",
-      "g:present-ar",
       "l:señor"
     ],
     "kind": "statement",
@@ -22484,8 +22243,8 @@
   },
   {
     "id": "u01-0998",
-    "es": "¿El señor Simón? Simón es un loro, señora.",
-    "en": "Mr Simón? Simón is a parrot, ma'am.",
+    "es": "¿Señor? Simón es un loro, señora.",
+    "en": "Sir? Simón is a parrot, ma'am.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22494,8 +22253,7 @@
       "l:loro",
       "l:ser",
       "l:señor",
-      "l:señora",
-      "p:senor-don-article"
+      "l:señora"
     ],
     "targets": [
       "g:gender-articles",
@@ -22531,20 +22289,18 @@
   },
   {
     "id": "u01-1000",
-    "es": "Gracias, Hernando. ¿Un tinto? Con mucho gusto.",
-    "en": "Thanks, Hernando. A coffee? My pleasure.",
+    "es": "¿Un tinto, Hernando?\n¡Con mucho gusto!",
+    "en": "A coffee, Hernando?\nWith pleasure!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:con-mucho-gusto",
-      "c:gracias-de-nada",
       "c:mucho-gusto",
       "g:gender-articles",
       "l:gusto",
       "l:tinto"
     ],
     "targets": [
-      "c:gracias-de-nada",
       "c:mucho-gusto",
       "g:gender-articles",
       "l:gusto",
@@ -22583,14 +22339,14 @@
   },
   {
     "id": "u01-1002",
-    "es": "Somos cuatro: Tomás, Vale, Hernando y Simón.",
-    "en": "There are four of us: Tomás, Vale, Hernando and Simón.",
+    "es": "Tomás, Vale, Hernando y Simón son de La Esquina de Rosa.",
+    "en": "Tomás, Vale, Hernando and Simón belong to La Esquina de Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
-      "l:ser",
-      "p:somos-cuatro"
+      "l:ser"
     ],
     "targets": [
       "g:ser-identity"
@@ -22665,26 +22421,25 @@
   },
   {
     "id": "u01-1006",
-    "es": "Perdón, ¿usted es el señor del café?",
-    "en": "Excuse me, are you the owner of the café?",
-    "accept": [],
+    "es": "Perdón, ¿usted es el nieto de Rosa?",
+    "en": "Excuse me, are you Rosa's grandson?",
+    "accept": [
+      "Perdón, ¿es usted el nieto de Rosa?"
+    ],
     "acceptEn": [],
     "requires": [
       "c:perdon-disculpe",
       "g:gender-articles",
       "g:ser-identity",
-      "l:café",
+      "l:nieto",
       "l:perdón",
-      "l:ser",
-      "l:señor"
+      "l:ser"
     ],
     "targets": [
       "c:perdon-disculpe",
       "g:gender-articles",
       "g:ser-identity",
-      "l:café",
-      "l:perdón",
-      "l:señor"
+      "l:perdón"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -22712,21 +22467,19 @@
   },
   {
     "id": "u01-1008",
-    "es": "Tomás inventa una explicación, y Vale no compra.",
-    "en": "Tomás makes up an explanation, and Vale isn't buying it.",
+    "es": "Tomás inventa una explicación, y Simón también.",
+    "en": "Tomás makes up an explanation, and so does Simón.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:comprar",
       "l:explicación",
       "l:inventar"
     ],
     "targets": [
       "g:gender-articles",
-      "g:present-ar",
-      "l:comprar"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -22735,21 +22488,18 @@
   },
   {
     "id": "u01-1009",
-    "es": "El café de Rosa no es una banda. Es un café.",
-    "en": "Rosa's café isn't a band. It's a café.",
+    "es": "Hernando baila con la banda.",
+    "en": "Hernando dances with the band.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:banda",
-      "l:café",
-      "l:ser"
+      "g:present-ar",
+      "l:bailar",
+      "l:banda"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:café"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -23211,18 +22961,16 @@
   },
   {
     "id": "u01-1031",
-    "es": "Estudiamos el apellido de Rosa.",
-    "en": "We're looking into Rosa's surname.",
+    "es": "Estudiamos español con Vale.",
+    "en": "We study Spanish with Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
-      "l:apellido",
+      "l:español",
       "l:estudiar"
     ],
     "targets": [
-      "g:gender-articles",
       "g:present-ar",
       "l:estudiar"
     ],
@@ -23362,14 +23110,14 @@
   },
   {
     "id": "u01-1038",
-    "es": "Espero a Vale.",
-    "en": "I'm waiting for Vale.",
+    "es": "Espero, gracias.",
+    "en": "I'll wait, thanks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
       "g:present-ar",
-      "l:esperar",
-      "p:personal-a"
+      "l:esperar"
     ],
     "targets": [
       "g:present-ar",
@@ -23405,14 +23153,15 @@
   },
   {
     "id": "u01-1040",
-    "es": "¿Esperas a Mariana?",
-    "en": "Are you waiting for Mariana? (to a friend)",
+    "es": "¿Esperas un tinto?",
+    "en": "Are you waiting for a coffee? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-ar",
       "l:esperar",
-      "p:personal-a"
+      "l:tinto"
     ],
     "targets": [
       "g:present-ar",
@@ -23787,7 +23536,7 @@
   {
     "id": "u01-1057",
     "es": "Mañana compramos pan.",
-    "en": "Tomorrow we buy bread.",
+    "en": "We're buying bread tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23928,21 +23677,19 @@
   },
   {
     "id": "u01-1063",
-    "es": "Creo que está cerrado, Hernando.",
-    "en": "I think it's closed, Hernando.",
+    "es": "Hernando, no hay pan, pero hay tinto.",
+    "en": "Hernando, there's no bread, but there's coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:creo-que",
-      "g:that-clauses",
-      "l:cerrar",
-      "l:creer",
-      "l:estar"
+      "c:hay",
+      "g:hay-vs-esta",
+      "l:pan",
+      "l:tinto"
     ],
     "targets": [
-      "c:creo-que",
-      "l:cerrar",
-      "l:creer"
+      "c:hay",
+      "g:hay-vs-esta"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -24002,14 +23749,13 @@
   },
   {
     "id": "u01-1066",
-    "es": "Pasa, pasa.",
-    "en": "Come in, come in.",
+    "es": "Pasa, Mariana.",
+    "en": "Come in, Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:pasar",
-      "p:repeticion-claro-claro"
+      "l:pasar"
     ],
     "targets": [
       "g:present-ar",
@@ -24046,23 +23792,19 @@
   },
   {
     "id": "u01-1068",
-    "es": "La semana pasada compré pan.",
-    "en": "Last week I bought bread.",
+    "es": "La semana pasada fui a Usaquén con Mariana.",
+    "en": "Last week I went to Usaquén with Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
-      "c:compre-trabaje",
-      "g:preterite-ar",
-      "l:comprar",
-      "l:pan",
+      "c:fui",
+      "g:preterite-ser-ir-hacer",
+      "l:ir",
       "l:pasar",
       "l:semana"
     ],
     "targets": [
-      "c:compre-trabaje",
-      "l:comprar",
-      "l:pan",
       "l:pasar",
       "l:semana"
     ],
@@ -24099,8 +23841,8 @@
   },
   {
     "id": "u01-1070",
-    "es": "El fin de semana trabajo en el café.",
-    "en": "At the weekend I work in the café.",
+    "es": "Hoy trabajo en el café.",
+    "en": "Today I'm working in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24108,18 +23850,14 @@
       "g:gender-articles",
       "g:present-ar",
       "l:café",
-      "l:fin",
-      "l:semana",
-      "l:trabajar",
-      "p:days-el-lunes"
+      "l:hoy",
+      "l:trabajar"
     ],
     "targets": [
       "c:trabajo-en",
       "g:gender-articles",
       "g:present-ar",
       "l:café",
-      "l:fin",
-      "l:semana",
       "l:trabajar"
     ],
     "kind": "statement",
@@ -24173,22 +23911,19 @@
   },
   {
     "id": "u01-1073",
-    "es": "La noche en La Candelaria es buena.",
-    "en": "Night-time in La Candelaria is good.",
+    "es": "En La Candelaria hay bandas de noche.",
+    "en": "In La Candelaria there are bands at night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:buena",
-      "l:noche",
-      "l:ser",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "g:hay-vs-esta",
+      "l:banda",
+      "l:noche"
     ],
     "targets": [
       "g:gender-articles",
-      "g:ser-identity",
       "l:noche"
     ],
     "kind": "statement",
@@ -24221,23 +23956,18 @@
   },
   {
     "id": "u01-1075",
-    "es": "Es de noche, y Hernando espera.",
-    "en": "It's night-time, and Hernando is waiting.",
+    "es": "Hernando espera, y Simón habla.",
+    "en": "Hernando waits, and Simón talks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "g:ser-identity",
       "l:esperar",
-      "l:noche",
-      "l:ser",
-      "p:es-de-noche-tarde"
+      "l:hablar"
     ],
     "targets": [
       "g:present-ar",
-      "g:ser-identity",
-      "l:esperar",
-      "l:noche"
+      "l:esperar"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -24312,22 +24042,20 @@
   },
   {
     "id": "u01-1079",
-    "es": "El café queda en La Candelaria.",
-    "en": "The café is in La Candelaria.",
+    "es": "¿Dónde está el baño, Vale?",
+    "en": "Where's the bathroom, Vale?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:present-ar",
-      "l:café",
-      "l:quedar",
-      "p:quedar-cerca"
+      "c:donde-esta",
+      "g:estar-location-states",
+      "l:baño",
+      "l:dónde",
+      "l:estar"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:present-ar",
-      "l:café",
-      "l:quedar"
+      "c:donde-esta",
+      "g:estar-location-states"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -24357,18 +24085,18 @@
   },
   {
     "id": "u01-1081",
-    "es": "Monserrate queda en Bogotá.",
-    "en": "Monserrate is in Bogotá.",
+    "es": "Monserrate me encanta.",
+    "en": "I love Monserrate.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:quedar",
-      "p:quedar-cerca"
+      "c:me-encanta",
+      "g:gustar-full",
+      "l:encantar"
     ],
     "targets": [
-      "g:present-ar",
-      "l:quedar"
+      "c:me-encanta",
+      "g:gustar-full"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -24377,20 +24105,18 @@
   },
   {
     "id": "u01-1082",
-    "es": "La Esquina de Rosa queda en La Candelaria.",
-    "en": "La Esquina de Rosa is in La Candelaria.",
+    "es": "La Esquina de Rosa es un café de La Candelaria.",
+    "en": "La Esquina de Rosa is a café in La Candelaria.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "l:quedar",
-      "p:quedar-cerca"
+      "g:ser-identity",
+      "l:café",
+      "l:ser"
     ],
     "targets": [
-      "g:gender-articles",
-      "g:present-ar",
-      "l:quedar"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -24399,18 +24125,23 @@
   },
   {
     "id": "u01-1083",
-    "es": "Vale, ¿me da la cuenta?",
-    "en": "Vale, could I have the bill?",
+    "es": "¿La cuenta? Son tres tintos y un pan.",
+    "en": "The bill? That's three coffees and a bread roll.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-regala",
+      "c:la-cuenta",
+      "g:gender-articles",
+      "g:ser-identity",
       "l:cuenta",
-      "l:dar"
+      "l:pan",
+      "l:ser",
+      "l:tinto"
     ],
     "targets": [
-      "c:me-regala",
-      "l:dar"
+      "c:la-cuenta",
+      "g:gender-articles",
+      "g:ser-identity"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -24450,17 +24181,20 @@
   },
   {
     "id": "u01-1085",
-    "es": "Perdón, ¿me da la cuenta, señora?",
-    "en": "Excuse me, could I have the bill, ma'am?",
+    "es": "Perdón, ¿me da un agua, señora?",
+    "en": "Excuse me, could I have a water, ma'am?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-regala",
       "c:perdon-disculpe",
-      "l:cuenta",
+      "g:gender-articles",
+      "l:agua",
       "l:dar",
       "l:perdón",
-      "l:señora"
+      "l:señora",
+      "p:el-agua-fria",
+      "p:me-trae"
     ],
     "targets": [
       "c:me-regala",
@@ -24475,21 +24209,21 @@
   },
   {
     "id": "u01-1086",
-    "es": "¿Dónde queda la estación, señor?",
-    "en": "Where's the station, sir?",
+    "es": "¿Dónde está Monserrate?",
+    "en": "Where's Monserrate?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:donde-esta",
+      "g:estar-location-states",
       "l:dónde",
-      "l:estación",
-      "l:quedar",
-      "l:señor"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta",
-      "l:quedar",
-      "l:señor"
+      "g:estar-location-states",
+      "p:question-word-order"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -24498,18 +24232,21 @@
   },
   {
     "id": "u01-1087",
-    "es": "Toronto queda en Canadá.",
-    "en": "Toronto is in Canada.",
+    "es": "¿Dónde está Toronto? ¿En Canadá?",
+    "en": "Where's Toronto? In Canada?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:quedar",
-      "p:quedar-cerca"
+      "c:donde-esta",
+      "g:estar-location-states",
+      "l:dónde",
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
-      "g:present-ar",
-      "l:quedar"
+      "c:donde-esta",
+      "g:estar-location-states",
+      "p:question-word-order"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -24518,18 +24255,19 @@
   },
   {
     "id": "u01-1088",
-    "es": "Medellín queda en Colombia, como Bogotá.",
-    "en": "Medellín is in Colombia, like Bogotá.",
+    "es": "¿Medellín? Es la ciudad de Vale.",
+    "en": "Medellín? It's Vale's city.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:quedar",
-      "p:quedar-cerca"
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:ciudad",
+      "l:ser"
     ],
     "targets": [
-      "g:present-ar",
-      "l:quedar"
+      "g:gender-articles",
+      "g:ser-identity"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -24591,25 +24329,22 @@
   },
   {
     "id": "u01-1091",
-    "es": "El fin de semana pasado compré pan.",
-    "en": "Last weekend I bought bread.",
+    "es": "El fin de semana pasado trabajé.",
+    "en": "Last weekend I worked.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "c:compre-trabaje",
       "g:preterite-ar",
-      "l:comprar",
       "l:fin",
-      "l:pan",
       "l:pasado",
-      "l:semana"
+      "l:semana",
+      "l:trabajar"
     ],
     "targets": [
       "c:compre-trabaje",
-      "l:comprar",
       "l:fin",
-      "l:pan",
       "l:pasado",
       "l:semana"
     ],
@@ -24620,15 +24355,18 @@
   },
   {
     "id": "u01-1092",
-    "es": "Con Vale, el fin de semana pasado: Monserrate.",
-    "en": "With Vale, last weekend: Monserrate.",
+    "es": "¿Monserrate? Fui con Vale el fin de semana pasado.",
+    "en": "Monserrate? I went with Vale last weekend.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
+      "c:fui",
+      "g:preterite-ser-ir-hacer",
       "l:fin",
       "l:pasado",
-      "l:semana"
+      "l:semana",
+      "l:ser"
     ],
     "targets": [
       "l:fin",
@@ -24666,15 +24404,14 @@
   },
   {
     "id": "u01-1094",
-    "es": "La semana pasada comí ajiaco.",
-    "en": "Last week I had ajiaco.",
+    "es": "La semana pasada comí con Hernando.",
+    "en": "Last week I ate with Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "c:comi",
       "g:preterite-er-ir",
-      "l:ajiaco",
       "l:comer",
       "l:pasar",
       "l:semana"

@@ -99,7 +99,7 @@
       "accept": [
         "No, trabajo en Toronto.",
         "No, señora, trabajo en Toronto.",
-        "No, no trabajo en Bogotá. Trabajo en Toronto."
+        "No. Trabajo en Toronto, en Canadá."
       ],
       "require": [
         {
@@ -117,8 +117,8 @@
     },
     {
       "id": "t6",
-      "npc": "Bueno, señor Herrera. La Esquina de Rosa es el café de Tomás Herrera.",
-      "npcEn": "Very well, Mr Herrera. La Esquina de Rosa is Tomás Herrera's café.",
+      "npc": "Bueno, señor. La Esquina de Rosa es el café de Tomás Herrera.",
+      "npcEn": "Very well, sir. La Esquina de Rosa is Tomás Herrera's café.",
       "intent": "Thank her politely and say goodbye.",
       "accept": [
         "Muchas gracias, señora. Chao.",
@@ -171,8 +171,6 @@
     "l:señora",
     "l:trabajar",
     "l:ver",
-    "p:no-es-x-es-y",
-    "p:senor-don-article",
     "p:ser-profession-no-article"
   ]
 }

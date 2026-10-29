@@ -23,8 +23,8 @@
       "en": "We buy bread and juice."
     },
     {
-      "es": "Ustedes ayudan a Tomás.",
-      "en": "You all help Tomás."
+      "es": "Ustedes compran el pan, ¿no?",
+      "en": "You all buy the bread, don't you?"
     },
     {
       "es": "Los meseros no hablan inglés.",
@@ -54,11 +54,11 @@
       "answer": 0
     },
     {
-      "es": "Ayudan a Vale.",
+      "es": "Compran tinto.",
       "options": [
-        "He helps Vale.",
-        "We help Vale.",
-        "They help Vale."
+        "He buys coffee.",
+        "We buy coffee.",
+        "They buy coffee."
       ],
       "answer": 2
     },
@@ -90,13 +90,13 @@
       "answer": 2
     },
     {
-      "es": "Vale regala pan.",
+      "es": "Regalamos pan.",
       "options": [
         "Vale gives bread away.",
-        "I give bread away.",
-        "We give bread away."
+        "We give bread away.",
+        "I give bread away."
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "es": "Hablan inglés.",
@@ -149,8 +149,8 @@
       "why": "*-an* is \"they\". There's no word for \"do\" or \"some\" to add."
     },
     {
-      "prompt": "Make it about \"we\": \"*Ayudo a Tomás.*\"",
-      "answer": "Ayudamos a Tomás.",
+      "prompt": "Make it about \"we\": \"*Compro el pan.*\"",
+      "answer": "Compramos el pan.",
       "accept": [],
       "why": "Swap *-o* for *-amos*. Everything else stays."
     },
@@ -170,10 +170,12 @@
       "why": "*Usted* takes the he/she form, *trabaja*, not *trabajas*."
     },
     {
-      "prompt": "Type in Spanish: You all help the waiters.",
-      "answer": "Ustedes ayudan a los meseros.",
-      "accept": [],
-      "why": "*Ustedes* takes the they form, *ayudan*. And people you help get *a* in front: *a los meseros*."
+      "prompt": "Type in Spanish, to a group: You all speak Spanish.",
+      "answer": "Ustedes hablan español.",
+      "accept": [
+        "Hablan español."
+      ],
+      "why": "*Ustedes* takes the they form, *hablan*."
     }
   ],
   "pitfalls": [
@@ -183,14 +185,14 @@
       "why": "*Trabajar* is the dictionary form. To say who, swap *-ar* for an ending: *trabajo*."
     },
     {
-      "wrong": "¿Tú haces hablar inglés?",
-      "right": "¿Hablas inglés?",
-      "why": "Spanish has no helper \"do\". The question marks are enough."
+      "wrong": "Soy trabajo en un café.",
+      "right": "Trabajo en un café.",
+      "why": "*Trabajo* already means \"I work\" or \"I'm working\". There's no extra \"am\" to add."
     },
     {
-      "wrong": "Ustedes trabajamos mucho.",
-      "right": "Ustedes trabajan.",
-      "why": "*Ustedes* means \"you all\" but takes the they ending: *-an*."
+      "wrong": "Ustedes trabajas en Bogotá.",
+      "right": "Ustedes trabajan en Bogotá.",
+      "why": "*Ustedes* means \"you all\", but it takes the they ending: *-an*."
     },
     {
       "wrong": "Ella trabajo en un café.",

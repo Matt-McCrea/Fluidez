@@ -76,7 +76,7 @@
   {
     "id": "w-u01-03",
     "unit": "u01",
-    "prompt": "A customer thinks you're the waiter. Tell him politely that you're not, and say who you are.",
+    "prompt": "An older neighbour keeps calling you \"Andrés\". Tell him politely that it isn't your name, and say who you are.",
     "minWords": 6,
     "maxWords": 25,
     "constraints": [
@@ -90,13 +90,15 @@
         "person": "yo"
       }
     ],
-    "model": "No, señor, no soy el mesero. Soy Tomás, el señor del café.",
+    "model": "No, señor, no me llamo Andrés. Soy Tomás, el nieto de Rosa.",
     "focus": "g:ser-identity",
     "requires": [
+      "c:me-llamo",
       "g:gender-articles",
+      "g:reflexive-routine",
       "g:ser-identity",
-      "l:café",
-      "l:mesero",
+      "l:llamarse",
+      "l:nieto",
       "l:ser",
       "l:señor"
     ]
@@ -118,19 +120,17 @@
         "label": "order two things, each with un or una"
       }
     ],
-    "model": "Buenos días. Un tinto y un café con leche, por favor.",
+    "model": "Buenos días. Un tinto y un jugo, por favor.",
     "focus": "g:gender-articles",
     "requires": [
       "c:hola-buenos-dias",
       "c:por-favor",
       "g:gender-articles",
       "l:bueno",
-      "l:café",
       "l:día",
       "l:favor",
-      "l:leche",
-      "l:tinto",
-      "p:con-sin"
+      "l:jugo",
+      "l:tinto"
     ]
   },
   {
@@ -170,12 +170,12 @@
         "label": "no un or una before the job"
       }
     ],
-    "model": "Soy ingeniero, y Vale es mesera.",
+    "model": "Soy ingeniero, y Mariana es periodista.",
     "focus": "p:ser-profession-no-article",
     "requires": [
       "g:ser-identity",
       "l:ingeniero",
-      "l:mesero",
+      "l:periodista",
       "l:ser",
       "p:ser-profession-no-article"
     ]
@@ -287,7 +287,7 @@
   {
     "id": "w-u01-09",
     "unit": "u01",
-    "prompt": "Mariana invites you for a drink, but you can't make it today. Write her a short, polite text.",
+    "prompt": "Vale invites you to dinner with her friends tonight, but you can't make it. Write her a short, polite text.",
     "minWords": 5,
     "maxWords": 25,
     "constraints": [
@@ -309,19 +309,20 @@
         "label": "give a reason with es que… or tengo que…"
       }
     ],
-    "model": "Qué pena, Mariana. Hoy no puedo, es que tengo que trabajar mañana. ¡Chao!",
+    "model": "Qué pena, Vale. Hoy no puedo, es que tengo que trabajar. ¡Gracias! Chao.",
     "focus": "c:es-que",
     "requires": [
       "c:chao-nos-vemos",
       "c:es-que",
+      "c:gracias-de-nada",
       "c:puedo",
       "c:que-pena",
       "c:tengo",
       "c:tengo-que",
       "g:stem-boot",
+      "g:verb-infinitive",
       "g:yo-irregular",
       "l:hoy",
-      "l:mañana",
       "l:pena",
       "l:poder",
       "l:qué",
@@ -463,33 +464,44 @@
   {
     "id": "w-u01-14",
     "unit": "u01",
-    "prompt": "Fill in a form for the notary in full sentences: your name, your surname, your nationality.",
+    "prompt": "A language-exchange app asks for a short profile in Spanish. Write it: your name, your nationality, your job and the languages you speak.",
     "minWords": 8,
-    "maxWords": 30,
+    "maxWords": 35,
     "constraints": [
-      {
-        "type": "containsWord",
-        "word": "nombre"
-      },
-      {
-        "type": "containsWord",
-        "word": "apellido"
-      },
       {
         "type": "verbForm",
         "inf": "ser",
         "tense": "presente",
-        "person": "yo"
+        "person": "yo",
+        "label": "say what you are (soy…)"
+      },
+      {
+        "type": "verbForm",
+        "inf": "hablar",
+        "tense": "presente",
+        "person": "yo",
+        "label": "say which languages you speak (hablo…)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
       }
     ],
-    "model": "El nombre es Tomás, y el apellido es Herrera. Soy canadiense.",
-    "focus": "g:gender-articles",
+    "model": "Hola. Me llamo Tomás Herrera. Soy canadiense y colombiano, y soy ingeniero. Hablo inglés y español.",
+    "focus": "g:present-ar",
     "requires": [
-      "g:gender-articles",
+      "c:hola-buenos-dias",
+      "c:me-llamo",
+      "g:present-ar",
+      "g:reflexive-routine",
       "g:ser-identity",
-      "l:apellido",
       "l:canadiense",
-      "l:nombre",
+      "l:colombiano",
+      "l:español",
+      "l:hablar",
+      "l:ingeniero",
+      "l:inglés",
+      "l:llamarse",
       "l:ser",
       "p:ser-profession-no-article"
     ]
@@ -517,17 +529,20 @@
         "n": 2
       }
     ],
-    "model": "Muchas gracias, Vale. Tengo que trabajar mañana. ¡Chao, nos vemos!",
+    "model": "Muchas gracias, Vale. Mañana tengo que comprar leche y jugo. ¡Chao, nos vemos!",
     "focus": "c:chao-nos-vemos",
     "requires": [
       "c:chao-nos-vemos",
       "c:gracias-de-nada",
       "c:tengo",
       "c:tengo-que",
+      "g:verb-infinitive",
       "g:yo-irregular",
+      "l:comprar",
+      "l:jugo",
+      "l:leche",
       "l:mañana",
       "l:tener",
-      "l:trabajar",
       "l:ver"
     ]
   }

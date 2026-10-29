@@ -6,39 +6,174 @@
     "en": "I'm an engineer."
   },
   "examples": [
-    { "es": "Soy estudiante.", "en": "I'm a student." },
-    { "es": "Él es Andrés, y es médico.", "en": "This is Andrés, and he's a doctor." },
-    { "es": "Usted es profesor, ¿no?", "en": "You're a teacher, aren't you? (polite)" },
-    { "es": "Ella es ingeniera y él es mesero.", "en": "She's an engineer and he's a waiter." },
-    { "es": "Somos estudiantes.", "en": "We're students." },
-    { "es": "Es un médico colombiano.", "en": "He's a Colombian doctor." }
+    {
+      "es": "Soy estudiante.",
+      "en": "I'm a student."
+    },
+    {
+      "es": "Él es Andrés, y es médico.",
+      "en": "This is Andrés, and he's a doctor."
+    },
+    {
+      "es": "Usted es profesor, ¿no?",
+      "en": "You're a teacher, aren't you? (polite)"
+    },
+    {
+      "es": "Ella es ingeniera y él es mesero.",
+      "en": "She's an engineer and he's a waiter."
+    },
+    {
+      "es": "Somos estudiantes.",
+      "en": "We're students."
+    },
+    {
+      "es": "Es un médico colombiano.",
+      "en": "He's a Colombian doctor."
+    }
   ],
   "rule": "In English a job needs \"a\": I'm a doctor. In Spanish, after *soy*, *eres*, *es*, *somos* or *son*, the job stands alone: *Soy médico. Es ingeniera. Son estudiantes.* The same goes for nationality: *Soy canadiense.*\n\n*Un* or *una* comes back only when you add something about the person, because then you're describing what kind: *Es un médico colombiano.*\n\nAnd *el* or *la* means \"the\" one you both know: *Soy el mesero* means \"I'm the waiter\", the one serving you, not just my job.\n\nJobs usually change for a woman: *ingeniero*, *ingeniera*; *mesero*, *mesera*. *Estudiante* stays the same.",
   "smallPrint": "Grammar books say a noun after *ser* that classifies someone (job, nationality, religion) goes without an article.",
   "readAndPick": [
-    { "es": "Soy mesero.", "options": ["I'm a waiter.", "I'm the waiter."], "answer": 0 },
-    { "es": "Soy el mesero.", "options": ["I'm a waiter.", "I'm the waiter."], "answer": 1 },
-    { "es": "Es médico.", "options": ["He's a doctor.", "He's the doctor.", "He's a good doctor."], "answer": 0 },
-    { "es": "Es un médico colombiano.", "options": ["He's a doctor in Colombia.", "He's the Colombian doctor.", "He's a Colombian doctor."], "answer": 2 },
-    { "es": "Somos estudiantes.", "options": ["They're students.", "We're students.", "We're the students."], "answer": 1 },
-    { "es": "Son los ingenieros.", "options": ["They're the engineers.", "They're engineers.", "We're engineers."], "answer": 0 },
-    { "es": "¿Eres profesor?", "options": ["Are you the teacher?", "Is he a teacher?", "Are you a teacher?"], "answer": 2 },
-    { "es": "Es la ingeniera.", "options": ["She's an engineer.", "She's the engineer.", "He's the engineer."], "answer": 1 },
-    { "es": "Usted es médico, ¿no?", "options": ["You're a doctor, aren't you?", "I'm a doctor, you know.", "He's not a doctor."], "answer": 0 }
+    {
+      "es": "Soy mesero.",
+      "options": [
+        "I'm a waiter.",
+        "I'm the waiter."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Soy el mesero.",
+      "options": [
+        "I'm a waiter.",
+        "I'm the waiter."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es médico.",
+      "options": [
+        "He's a doctor.",
+        "He's the doctor.",
+        "He's a good doctor."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es un médico colombiano.",
+      "options": [
+        "He's a doctor in Colombia.",
+        "He's the Colombian doctor.",
+        "He's a Colombian doctor."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Somos estudiantes.",
+      "options": [
+        "They're students.",
+        "We're students.",
+        "We're the students."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Son los ingenieros.",
+      "options": [
+        "They're the engineers.",
+        "They're engineers.",
+        "We're engineers."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Eres profesor?",
+      "options": [
+        "Are you the teacher?",
+        "Is he a teacher?",
+        "Are you a teacher?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es la ingeniera.",
+      "options": [
+        "She's an engineer.",
+        "She's the engineer.",
+        "He's the engineer."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Usted es médico, ¿no?",
+      "options": [
+        "You're a doctor, aren't you?",
+        "You're the doctor, aren't you?",
+        "He's a doctor, isn't he?"
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Type in Spanish: I'm a student.", "answer": "Soy estudiante.", "accept": [], "why": "No *un* after *soy* when you name what someone does." },
-    { "prompt": "Type in Spanish: She's an engineer.", "answer": "Es ingeniera.", "accept": [], "why": "No *una*, and the job takes *-a* for a woman." },
-    { "prompt": "Type in Spanish, to a friend: You're a waiter, aren't you?", "answer": "Eres mesero, ¿no?", "accept": [], "why": "*Eres* for a friend, then the job on its own. Adding *¿no?* turns it into \"aren't you?\"." },
-    { "prompt": "Take out the extra word: \"*Soy un médico.*\"", "answer": "Soy médico.", "accept": [], "why": "*Un* makes it sound as if you're picking yourself out of a line-up of doctors." },
-    { "prompt": "Make it about a woman: \"*Es ingeniero.*\"", "answer": "Es ingeniera.", "accept": [], "why": "*Ingeniero* becomes *ingeniera*, like most *-o* jobs." },
-    { "prompt": "Type in Spanish, about a mixed group: We're teachers.", "answer": "Somos profesores.", "accept": [], "why": "Plural job, still no article. A mixed group takes the masculine plural." },
-    { "prompt": "Type in Spanish: He's a Colombian engineer.", "answer": "Es un ingeniero colombiano.", "accept": [], "why": "Once you add something about him (*colombiano*), *un* comes back." }
+    {
+      "prompt": "Type in Spanish: I'm a student.",
+      "answer": "Soy estudiante.",
+      "accept": [],
+      "why": "No *un* after *soy* when you name what someone does."
+    },
+    {
+      "prompt": "Type in Spanish: She's an engineer.",
+      "answer": "Es ingeniera.",
+      "accept": [],
+      "why": "No *una*, and the job takes *-a* for a woman."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You're a waiter, aren't you?",
+      "answer": "Eres mesero, ¿no?",
+      "accept": [],
+      "why": "*Eres* for a friend, then the job on its own. Adding *¿no?* turns it into \"aren't you?\"."
+    },
+    {
+      "prompt": "Take out the extra word: \"*Soy un médico.*\"",
+      "answer": "Soy médico.",
+      "accept": [],
+      "why": "*Un* makes it sound as if you're picking yourself out of a line-up of doctors."
+    },
+    {
+      "prompt": "Make it about a woman: \"*Es ingeniero.*\"",
+      "answer": "Es ingeniera.",
+      "accept": [],
+      "why": "*Ingeniero* becomes *ingeniera*, like most *-o* jobs."
+    },
+    {
+      "prompt": "Type in Spanish, about a mixed group: We're teachers.",
+      "answer": "Somos profesores.",
+      "accept": [],
+      "why": "Plural job, still no article. A mixed group takes the masculine plural."
+    },
+    {
+      "prompt": "Type in Spanish: He's a Colombian engineer.",
+      "answer": "Es un ingeniero colombiano.",
+      "accept": [],
+      "why": "Once you add something about him (*colombiano*), *un* comes back."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Soy un estudiante.", "right": "Soy estudiante.", "why": "Naming what you do takes no *un* or *una*." },
-    { "wrong": "Ella es un ingeniero.", "right": "Ella es ingeniera.", "why": "No article, and the job changes for a woman." },
-    { "wrong": "Es médico colombiano.", "right": "Es un médico colombiano.", "why": "With something added about him, *un* comes back." }
+    {
+      "wrong": "Soy un estudiante.",
+      "right": "Soy estudiante.",
+      "why": "Naming what you do takes no *un* or *una*."
+    },
+    {
+      "wrong": "Ella es un ingeniero.",
+      "right": "Ella es ingeniera.",
+      "why": "No article, and the job changes for a woman."
+    },
+    {
+      "wrong": "Es médico colombiano.",
+      "right": "Es un médico colombiano.",
+      "why": "With something added about him, *un* comes back."
+    }
   ],
   "personal": "What do you do? Write it the Spanish way, with no *un* or *una*: *Soy…*"
 }

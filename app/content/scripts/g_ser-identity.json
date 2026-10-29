@@ -6,43 +6,203 @@
     "en": "Hi, I'm Tomás. I'm from Toronto."
   },
   "examples": [
-    { "es": "Soy Tomás.", "en": "I'm Tomás." },
-    { "es": "Ella es Vale. Es de Medellín.", "en": "She's Vale. She's from Medellín." },
-    { "es": "¿Eres de Bogotá?", "en": "Are you from Bogotá? (to a friend)" },
-    { "es": "Usted es de Cali, ¿no?", "en": "You're from Cali, aren't you? (polite)" },
-    { "es": "Somos de Canadá.", "en": "We're from Canada." },
-    { "es": "Ellos son de Lima, y ustedes son de Quito.", "en": "They're from Lima, and you all are from Quito." }
+    {
+      "es": "Soy Tomás.",
+      "en": "I'm Tomás."
+    },
+    {
+      "es": "Ella es Vale. Es de Medellín.",
+      "en": "She's Vale. She's from Medellín."
+    },
+    {
+      "es": "¿Eres de Bogotá?",
+      "en": "Are you from Bogotá? (to a friend)"
+    },
+    {
+      "es": "Usted es de Cali, ¿no?",
+      "en": "You're from Cali, aren't you? (polite)"
+    },
+    {
+      "es": "Somos de Canadá.",
+      "en": "We're from Canada."
+    },
+    {
+      "es": "Ellos son de Lima, y ustedes son de Quito.",
+      "en": "They're from Lima, and you all are from Quito."
+    }
   ],
   "rule": "To say who someone is or where they're from, Spanish uses one verb and changes its ending for each person: *soy* (I am), *eres* (you are, to a friend), *es* (he is, she is, and also \"you are\" to someone you call *usted*), *somos* (we are), *son* (they are, and \"you all are\").\n\nFor where someone is from, add *de* and the place: *Soy de Toronto.*\n\nNotice what's missing: Spanish usually drops \"I\", \"she\" and \"we\". The ending already says who, so *Soy Tomás* is a whole sentence. Keep *yo*, *tú* or *ella* for contrast: *Yo soy de Toronto, ella es de Medellín.*\n\nQuestions don't swap the words round the way English does. *¿Eres de Bogotá?* is the statement with question marks, and the first one is upside down.",
   "smallPrint": "Teachers call this verb *ser* (to be), used here for identity and origin. Its present forms are *soy*, *eres*, *es*, *somos*, *son*.",
   "soundTip": "*Soy* rhymes with English \"boy\". In *eres*, both e's are the short e of \"bed\", and the single *r* is a quick tap, like the tt in an American \"better\".",
   "readAndPick": [
-    { "es": "Somos de Cali.", "options": ["We're from Cali.", "They're from Cali.", "I'm from Cali."], "answer": 0 },
-    { "es": "Son de Medellín.", "options": ["She's from Medellín.", "We're from Medellín.", "They're from Medellín."], "answer": 2 },
-    { "es": "¿Eres de Toronto?", "options": ["I'm from Toronto.", "Are you from Toronto?", "Is he from Toronto?"], "answer": 1 },
-    { "es": "Es de Bogotá.", "options": ["I'm from Bogotá.", "We're from Bogotá.", "He's from Bogotá."], "answer": 2 },
-    { "es": "Soy mesero.", "options": ["I'm a waiter.", "You're a waiter.", "He's a waiter."], "answer": 0 },
-    { "es": "Usted es colombiano, ¿no?", "options": ["I'm Colombian, aren't I?", "You're Colombian, aren't you?", "They're Colombian, aren't they?"], "answer": 1 },
-    { "es": "Yo soy de Toronto, ella es de Medellín.", "options": ["I'm from Toronto; she's from Medellín.", "She's from Toronto; I'm from Medellín.", "We're both from Medellín."], "answer": 0 },
-    { "es": "¿Ustedes son de Bogotá?", "options": ["Are we from Bogotá?", "Are you all from Bogotá?", "Is she from Bogotá?"], "answer": 1 },
-    { "es": "No soy de Bogotá.", "options": ["I'm from Bogotá.", "He isn't from Bogotá.", "I'm not from Bogotá."], "answer": 2 },
-    { "es": "Él es Simón.", "options": ["This is Simón.", "I'm Simón.", "You're Simón."], "answer": 0 }
+    {
+      "es": "Somos de Cali.",
+      "options": [
+        "We're from Cali.",
+        "They're from Cali.",
+        "I'm from Cali."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Son de Medellín.",
+      "options": [
+        "She's from Medellín.",
+        "We're from Medellín.",
+        "They're from Medellín."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Eres de Toronto?",
+      "options": [
+        "I'm from Toronto.",
+        "Are you from Toronto?",
+        "Is he from Toronto?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es de Bogotá.",
+      "options": [
+        "I'm from Bogotá.",
+        "We're from Bogotá.",
+        "He's from Bogotá."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Soy Vale.",
+      "options": [
+        "I'm Vale.",
+        "You're Vale.",
+        "She's Vale."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Usted es de Pasto, ¿no?",
+      "options": [
+        "I'm from Pasto, aren't I?",
+        "You're from Pasto, aren't you?",
+        "They're from Pasto, aren't they?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Yo soy de Toronto, ella es de Medellín.",
+      "options": [
+        "I'm from Toronto; she's from Medellín.",
+        "She's from Toronto; I'm from Medellín.",
+        "We're both from Medellín."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Ustedes son de Bogotá?",
+      "options": [
+        "Are we from Bogotá?",
+        "Are you all from Bogotá?",
+        "Is she from Bogotá?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No soy de Bogotá.",
+      "options": [
+        "I'm from Bogotá.",
+        "He isn't from Bogotá.",
+        "I'm not from Bogotá."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Él es Simón.",
+      "options": [
+        "This is Simón.",
+        "I'm Simón.",
+        "You're Simón."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Fill the gap with *soy* or *es*, then type the whole sentence: \"*Vale ___ de Medellín.*\"", "answer": "Vale es de Medellín.", "accept": [], "why": "You're talking about Vale, not yourself, so it's *es*." },
-    { "prompt": "Fill the gap with *eres* or *es*. You're asking a friend: \"*¿___ de Bogotá?*\"", "answer": "¿Eres de Bogotá?", "accept": [], "why": "To a friend (*tú*) it's *eres*. *Es* would sound like you're asking about someone else, or speaking very formally." },
-    { "prompt": "Type in Spanish: We're from Canada.", "answer": "Somos de Canadá.", "accept": [], "why": "*Somos* already means \"we are\"; you don't need *nosotros*." },
-    { "prompt": "Type in Spanish: They're from Lima.", "answer": "Son de Lima.", "accept": [], "why": "*Son* is the form for they, and the place goes after *de*." },
-    { "prompt": "Make it about yourself. Tomás says: \"*Es de Toronto.*\" Change it to \"I'm from Toronto.\"", "answer": "Soy de Toronto.", "accept": [], "why": "Only the ending changes: *es* becomes *soy*." },
-    { "prompt": "Turn it into a question for a stranger you call *usted*: \"*Usted es de Cali.*\"", "answer": "¿Usted es de Cali?", "accept": ["¿Es usted de Cali?", "¿Es de Cali?"], "why": "The words can stay where they are. The question marks, and your voice, do the asking." },
-    { "prompt": "Make it negative: \"*Soy de Bogotá.*\"", "answer": "No soy de Bogotá.", "accept": [], "why": "*No* goes straight before the verb. There's no \"do\" or \"am not\" to add." },
-    { "prompt": "Type in Spanish: Hi, my name's Ana and I'm from Cali.", "answer": "Hola, me llamo Ana y soy de Cali.", "accept": ["Hola, soy Ana y soy de Cali.", "Hola, me llamo Ana. Soy de Cali."], "why": "*Me llamo* gives your name; *soy de* gives your city." }
+    {
+      "prompt": "Fill the gap with *soy* or *es*, then type the whole sentence: \"*Vale ___ de Medellín.*\"",
+      "answer": "Vale es de Medellín.",
+      "accept": [],
+      "why": "You're talking about Vale, not yourself, so it's *es*."
+    },
+    {
+      "prompt": "Fill the gap with *eres* or *es*. You're asking a friend: \"*¿___ de Bogotá?*\"",
+      "answer": "¿Eres de Bogotá?",
+      "accept": [],
+      "why": "To a friend (*tú*) it's *eres*. *Es* would sound like you're asking about someone else, or speaking very formally."
+    },
+    {
+      "prompt": "Type in Spanish: We're from Canada.",
+      "answer": "Somos de Canadá.",
+      "accept": [],
+      "why": "*Somos* already means \"we are\"; you don't need *nosotros*."
+    },
+    {
+      "prompt": "Type in Spanish: They're from Lima.",
+      "answer": "Son de Lima.",
+      "accept": [],
+      "why": "*Son* is the form for they, and the place goes after *de*."
+    },
+    {
+      "prompt": "Make it about yourself. Tomás says: \"*Es de Toronto.*\" Change it to \"I'm from Toronto.\"",
+      "answer": "Soy de Toronto.",
+      "accept": [],
+      "why": "Only the ending changes: *es* becomes *soy*."
+    },
+    {
+      "prompt": "Turn it into a question for a stranger you call *usted*: \"*Usted es de Cali.*\"",
+      "answer": "¿Usted es de Cali?",
+      "accept": [
+        "¿Es usted de Cali?",
+        "¿Es de Cali?"
+      ],
+      "why": "The words can stay where they are. The question marks, and your voice, do the asking."
+    },
+    {
+      "prompt": "Make it negative: \"*Soy de Bogotá.*\"",
+      "answer": "No soy de Bogotá.",
+      "accept": [],
+      "why": "*No* goes straight before the verb. There's no \"do\" or \"am not\" to add."
+    },
+    {
+      "prompt": "Type in Spanish: Hi, my name's Ana and I'm from Cali.",
+      "answer": "Hola, me llamo Ana y soy de Cali.",
+      "accept": [
+        "Hola, soy Ana y soy de Cali.",
+        "Hola, me llamo Ana. Soy de Cali."
+      ],
+      "why": "*Me llamo* gives your name; *soy de* gives your city."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Yo soy Tomás, yo soy de Toronto, yo soy mesero.", "right": "Soy Tomás. Soy de Toronto. Soy mesero.", "why": "The ending already says \"I\". Repeating *yo* in every sentence sounds as if you're insisting." },
-    { "wrong": "¿Es tú de Bogotá?", "right": "¿Eres de Bogotá?", "why": "Each person has its own form, and *tú* goes with *eres*." },
-    { "wrong": "¿Usted eres de Cali?", "right": "¿Usted es de Cali?", "why": "*Usted* takes the same form as he and she: *es*." },
-    { "wrong": "Soy desde Toronto.", "right": "Soy de Toronto.", "why": "\"From\" a place is *de*." }
+    {
+      "wrong": "Yo soy Tomás, yo soy de Toronto.",
+      "right": "Soy Tomás. Soy de Toronto.",
+      "why": "The ending already says \"I\". Repeating *yo* in every sentence sounds as if you're insisting."
+    },
+    {
+      "wrong": "¿Es tú de Bogotá?",
+      "right": "¿Eres de Bogotá?",
+      "why": "Each person has its own form, and *tú* goes with *eres*."
+    },
+    {
+      "wrong": "¿Usted eres de Cali?",
+      "right": "¿Usted es de Cali?",
+      "why": "*Usted* takes the same form as he and she: *es*."
+    },
+    {
+      "wrong": "Soy desde Toronto.",
+      "right": "Soy de Toronto.",
+      "why": "\"From\" a place is *de*."
+    }
   ],
   "personal": "Who are you, and where are you from? Write it the way you'd say it at a café door: your name first, then your city."
 }
