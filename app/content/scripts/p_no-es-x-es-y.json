@@ -1,0 +1,90 @@
+{
+  "node": "p:no-es-x-es-y",
+  "hook": {
+    "line": "Vale's mother has a few facts wrong about the new café owner. A bare *no* just starts an argument; a correction says what's wrong and then what's right.",
+    "es": "No, no es de Estados Unidos, es de Canadá.",
+    "en": "No, he's not from the United States, he's from Canada."
+  },
+  "examples": [
+    { "es": "Vale es de Cali.\nNo, no es de Cali, es de Medellín.", "en": "Vale is from Cali.\nNo, she's not from Cali, she's from Medellín." },
+    { "es": "Hernando es periodista.\nNo, no es periodista, es taxista.", "en": "Hernando is a journalist.\nNo, he's not a journalist, he's a taxi driver." },
+    { "es": "Rosa es tu mamá, ¿no?\nNo, no es mi mamá, es mi abuela.", "en": "Rosa is your mom, right?\nNo, she's not my mom, she's my grandmother." },
+    { "es": "El café abre a las siete.\nNo, abre a las ocho.", "en": "The café opens at seven.\nNo, it opens at eight." },
+    { "es": "No hablas inglés, ¿no?\nSí, sí hablo.", "en": "You don't speak English, do you?\nYes, I do." },
+    { "es": "Simón no habla.\nSí, sí habla. Habla mucho.", "en": "Simón doesn't talk.\nYes, he does. He talks a lot." }
+  ],
+  "rule": "A correction has two moves: deny the wrong fact, then give the right one. *No, no es de Cali, es de Medellín.* The first *no* answers them; the second belongs to the verb.\n\nIf someone says something negative that isn't true, flip it with *sí*: *No hablas inglés, ¿no? Sí, sí hablo.* English says yes, I do; Spanish repeats the real verb: *sí hablo*, *sí tengo*.\n\nA bare *no* isn't a correction. Add the fact.",
+  "smallPrint": "The doubled *sí, sí* is emphasis, like stressing I DO in English. Careful: a doubled *no, no* can also agree with a negative (*No es difícil. No, no es difícil.*); what came before tells you which.",
+  "readAndPick": [
+    { "es": "No, no es de Cali, es de Medellín.", "options": ["Yes, she's from Cali.", "No, she's not from Cali, she's from Medellín.", "No, she's from Cali, not Medellín."], "answer": 1 },
+    { "es": "No tienes hermanos, ¿no?\nSí, sí tengo.", "options": ["You don't have siblings, do you?\nNo, I don't.", "You don't have siblings, do you?\nYes, I do."], "answer": 1 },
+    { "es": "No, no soy de Bogotá, soy de Toronto.", "options": ["No, I'm not from Bogotá, I'm from Toronto.", "No, he's not from Bogotá, he's from Toronto."], "answer": 0 },
+    { "es": "No vives en Bogotá, ¿no?\nNo, no vivo en Bogotá.", "options": ["You don't live in Bogotá, do you?\nYes, I do live in Bogotá.", "You don't live in Bogotá, do you?\nNo, I don't live in Bogotá."], "answer": 1 },
+    { "es": "El café abre a las siete.\nNo, abre a las ocho.", "options": ["The café opens at seven.\nNo, it opens at eight.", "The café opens at seven.\nNo, it doesn't open at eight."], "answer": 0 },
+    { "es": "Tu abuela es alta.\nNo, no es alta, es baja.", "options": ["Your grandmother is short.\nNo, she's tall.", "Your grandmother is tall.\nNo, she's not short, she's tall.", "Your grandmother is tall.\nNo, she's not tall, she's short."], "answer": 2 },
+    { "es": "No, no es mi hermano, es mi primo.", "options": ["No, he's not my cousin, he's my brother.", "No, he's not my brother, he's my cousin."], "answer": 1 },
+    { "es": "No eres colombiano, ¿no?\nSí, sí soy colombiano.", "options": ["You're not Colombian, are you?\nYes, I am Colombian.", "You're not Colombian, are you?\nNo, I'm not Colombian."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Someone says *Tomás es de Estados Unidos.* Choose *Sí* or *No* to start, then fix it: ___, no es de Estados Unidos, es de Canadá. Type the whole sentence.",
+      "answer": "No, no es de Estados Unidos, es de Canadá.",
+      "accept": [],
+      "why": "They said something wrong, so you start with *no* and then give the right country."
+    },
+    {
+      "prompt": "Someone says *No hablas español, ¿no?* You do. Choose *Sí, sí hablo* or *No, no hablo* and type it.",
+      "answer": "Sí, sí hablo.",
+      "accept": ["Sí, sí hablo español."],
+      "why": "To contradict a negative, use *sí* and repeat the verb."
+    },
+    {
+      "prompt": "Someone says *Hernando es periodista.* Correct them: no, he's not a journalist, he's a taxi driver.",
+      "answer": "No, no es periodista, es taxista.",
+      "accept": [],
+      "why": "Deny the wrong job, then give the right one."
+    },
+    {
+      "prompt": "Someone says *Vale es de Cali.* Correct them: she's from Medellín.",
+      "answer": "No, no es de Cali, es de Medellín.",
+      "accept": ["No, es de Medellín."],
+      "why": "The second *no* goes right before *es*; then the right city."
+    },
+    {
+      "prompt": "Someone asks you (a man) *¿Eres el novio de Vale?* You're not; you're her friend. Correct them.",
+      "answer": "No, no soy el novio de Vale, soy su amigo.",
+      "accept": ["No, no soy su novio, soy su amigo."],
+      "why": "Same two moves, about you: *no soy*, then *soy*."
+    },
+    {
+      "prompt": "Someone says *No tienes hermanos, ¿no?* You have a sister. Contradict them, then add the fact.",
+      "answer": "Sí, sí tengo. Tengo una hermana.",
+      "accept": ["Sí, tengo una hermana."],
+      "why": "*Sí* flips their negative; then say what you have."
+    },
+    {
+      "prompt": "Someone says *El examen es el lunes.* It's on Tuesday. Correct them.",
+      "answer": "No, no es el lunes, es el martes.",
+      "accept": ["No, es el martes."],
+      "why": "Deny the wrong day, then give the right one."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No.",
+      "right": "No, no es de Cali, es de Medellín.",
+      "why": "A bare *no* leaves them guessing. Add the right fact."
+    },
+    {
+      "wrong": "Sí, yo hago.",
+      "right": "Sí, sí hablo.",
+      "why": "English says I do; Spanish repeats the real verb: *sí hablo*."
+    },
+    {
+      "wrong": "No, es no de Cali, es de Medellín.",
+      "right": "No, no es de Cali, es de Medellín.",
+      "why": "Almost. *No* always goes before the verb: *no es*, never *es no*."
+    }
+  ],
+  "personal": "Think of something people often get wrong about you: where you're from, your job, even your name. Write the correction: *No, no soy…, soy…*"
+}

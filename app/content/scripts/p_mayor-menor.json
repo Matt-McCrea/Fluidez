@@ -1,0 +1,90 @@
+{
+  "node": "p:mayor-menor",
+  "hook": {
+    "line": "Mention a brother or sister and the next question is always: older or younger? Spanish doesn't say big or old here; it has two words just for this.",
+    "es": "Tengo un hermano mayor y una hermana menor.",
+    "en": "I have an older brother and a younger sister."
+  },
+  "examples": [
+    { "es": "Mi hermano mayor vive en Cali.", "en": "My older brother lives in Cali." },
+    { "es": "Mi hermana menor tiene veinte años.", "en": "My younger sister is twenty." },
+    { "es": "Soy el menor.", "en": "I'm the youngest." },
+    { "es": "¿Eres el mayor o el menor?\nSoy la mayor.", "en": "Are you the eldest or the youngest?\nI'm the eldest." },
+    { "es": "Mi abuela ya es mayor.", "en": "My grandmother is elderly now." },
+    { "es": "Hernando es un señor mayor.", "en": "Hernando is an older gentleman." }
+  ],
+  "rule": "For age order in a family, Spanish uses *mayor* (older) and *menor* (younger). They go after the word, like colours: *mi hermana mayor*, *mi primo menor*. Same form for men and women; add *es* for more than one: *mis primos mayores*.\n\nWith *el* or *la* in front they mean the eldest or the youngest: *Soy el menor*, *Soy la mayor*.\n\nFor an elderly person, *mayor* is the kind word: *un señor mayor*. *Viejo* can sound blunt.",
+  "smallPrint": "*Mayor* and *menor* are the old comparison forms of *grande* and *pequeño*. Later you'll use them to compare two people.",
+  "readAndPick": [
+    { "es": "Tengo una hermana mayor.", "options": ["I have a younger sister.", "I have an older sister.", "I have an older brother."], "answer": 1 },
+    { "es": "Mi primo menor vive en Cali.", "options": ["My younger cousin lives in Cali.", "My older cousin lives in Cali."], "answer": 0 },
+    { "es": "Soy la mayor.", "options": ["I'm the youngest.", "I'm the eldest."], "answer": 1 },
+    { "es": "Mi abuelo ya es mayor.", "options": ["My grandfather is elderly now.", "My grandfather is the eldest."], "answer": 0 },
+    { "es": "Hernando es un señor mayor.", "options": ["Hernando is a big man.", "Hernando is an older gentleman."], "answer": 1 },
+    { "es": "Mis hermanos menores son muy simpáticos.", "options": ["My younger brother is really nice.", "My older brothers are really nice.", "My younger brothers are really nice."], "answer": 2 },
+    { "es": "¿Eres el mayor?", "options": ["Are you the eldest?", "Are you the youngest?"], "answer": 0 },
+    { "es": "Mi hermana menor tiene diez años.", "options": ["My older sister is ten.", "My younger sister is ten."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *mayor* or *menor*: Tengo un hermano ___. (I have an older brother.) Type the whole sentence.",
+      "answer": "Tengo un hermano mayor.",
+      "accept": [],
+      "why": "Older is *mayor*, and it goes after *hermano*."
+    },
+    {
+      "prompt": "A man speaking. Choose *el menor* or *menor*: Soy ___ de la familia. (I'm the youngest in the family.) Type the whole sentence.",
+      "answer": "Soy el menor de la familia.",
+      "accept": [],
+      "why": "The youngest needs *el* in front: *el menor*."
+    },
+    {
+      "prompt": "My younger sister lives in Medellín.",
+      "answer": "Mi hermana menor vive en Medellín.",
+      "accept": [],
+      "why": "*Menor* comes after *hermana*, and it doesn't change for a woman."
+    },
+    {
+      "prompt": "I have an older sister and a younger brother.",
+      "answer": "Tengo una hermana mayor y un hermano menor.",
+      "accept": [],
+      "why": "Each one gets its own word, after the noun."
+    },
+    {
+      "prompt": "My grandmother is elderly now.",
+      "answer": "Mi abuela ya es mayor.",
+      "accept": ["Mi abuela es mayor."],
+      "why": "*Mayor* is the polite word for an elderly person; *ya* adds now."
+    },
+    {
+      "prompt": "Make it plural: *Mi primo mayor es médico.*",
+      "answer": "Mis primos mayores son médicos.",
+      "accept": [],
+      "why": "*Mayor* adds *es* for more than one, like *mayores*."
+    },
+    {
+      "prompt": "Say it the kind way: *Hernando es viejo.*",
+      "answer": "Hernando es un señor mayor.",
+      "accept": ["Hernando es mayor."],
+      "why": "*Viejo* can sound blunt about a person; *mayor* is respectful."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tengo un mayor hermano.",
+      "right": "Tengo un hermano mayor.",
+      "why": "Almost. *Mayor* and *menor* go after the noun, like colours."
+    },
+    {
+      "wrong": "Tengo una hermana vieja.",
+      "right": "Tengo una hermana mayor.",
+      "why": "*Vieja* means old, as in elderly, and she won't thank you. Siblings are *mayor* or *menor*."
+    },
+    {
+      "wrong": "Mis primos mayors son médicos.",
+      "right": "Mis primos mayores son médicos.",
+      "why": "*Mayor* ends in a consonant, so the plural adds *es*: *mayores*."
+    }
+  ],
+  "personal": "Where do you fall in your family? Write one sentence with *soy el mayor*, *soy la menor* or *soy hijo único* (or *hija única*), and one about a brother, sister or cousin with *mayor* or *menor*."
+}

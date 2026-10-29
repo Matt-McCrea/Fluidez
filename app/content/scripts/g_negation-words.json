@@ -1,0 +1,115 @@
+{
+  "node": "g:negation-words",
+  "hook": {
+    "line": "Tomás asks everyone about the young man in Rosa's photo. Nobody knows anything, or nobody will say. Spanish has a handful of small words for that kind of answer, and it says *no* twice.",
+    "es": "No sé nada, Tomás.",
+    "en": "I don't know anything, Tomás."
+  },
+  "examples": [
+    { "es": "No hay nadie.", "en": "There's nobody here." },
+    { "es": "No sé nada.", "en": "I don't know anything." },
+    { "es": "Nadie habla del joven de la foto.", "en": "Nobody talks about the young man in the photo." },
+    { "es": "Hernando nunca llega tarde.", "en": "Hernando never arrives late." },
+    { "es": "No tomo cerveza nunca.", "en": "I never drink beer." },
+    { "es": "No tengo ninguna foto de mi abuelo.", "en": "I don't have a single photo of my grandfather." },
+    { "es": "No tengo hambre.\nYo tampoco.", "en": "I'm not hungry.\nMe neither." },
+    { "es": "¿Conoces a alguien en Bogotá?\nNo, a nadie.", "en": "Do you know anyone in Bogotá?\nNo, nobody." }
+  ],
+  "rule": "Five words do the saying-no work:\n\n*nada*: nothing, anything\n*nadie*: nobody, anybody\n*nunca*: never\n*tampoco*: not either, neither\n*ningún*, *ninguna*: not one, no\n\nThe surprise: Spanish doubles up. If one of these words comes after the verb, *no* still goes in front: *No sé nada*, literally I don't know nothing. That isn't sloppy; it's the only right way.\n\nIf the word comes first, drop the *no*: *Nadie sabe*. *Nunca tomo cerveza* and *No tomo cerveza nunca* mean the same.\n\n*Ningún* goes before a masculine word, *ninguna* before a feminine one, and both stay singular: *ningún problema*, *ninguna foto*.\n\n*Tampoco* is the negative *también*: when someone says something negative that's true for you too, say *Yo tampoco*.",
+  "smallPrint": "Teachers call this double negation. Standard English forbids it; Spanish requires it.",
+  "readAndPick": [
+    { "es": "No hay nadie.", "options": ["There's nobody here.", "There's nothing here.", "There's somebody here."], "answer": 0 },
+    { "es": "Tomás no sabe nada.", "options": ["Tomás knows something.", "Nobody knows Tomás.", "Tomás doesn't know anything."], "answer": 2 },
+    { "es": "Nadie sabe nada.", "options": ["Nobody knows anything.", "He never knows anything.", "Nobody knows him."], "answer": 0 },
+    { "es": "Vale nunca llega tarde.", "options": ["Vale always arrives late.", "Vale never arrives late.", "Nobody arrives late."], "answer": 1 },
+    { "es": "No tengo ningún problema.", "options": ["Nobody has a problem.", "I have a small problem.", "I don't have any problem."], "answer": 2 },
+    { "es": "No me gusta el té.\nA mí tampoco.", "options": ["I don't like tea.\nI do.", "I don't like tea.\nMe neither.", "I don't like tea.\nMe too."], "answer": 1 },
+    { "es": "Alguien está en la puerta.", "options": ["Nobody's at the door.", "Somebody's at the door."], "answer": 1 },
+    { "es": "No conozco a nadie aquí.", "options": ["I don't know anybody here.", "Nobody knows me here.", "I know somebody here."], "answer": 0 },
+    { "es": "No compré nada ayer.", "options": ["I bought something yesterday.", "Nobody bought anything yesterday.", "I didn't buy anything yesterday."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *nada* or *nadie*: No hay ___ en el café. (There's nobody in the café.) Type the whole sentence.",
+      "answer": "No hay nadie en el café.",
+      "accept": [],
+      "why": "People: *nadie*. Things: *nada*."
+    },
+    {
+      "prompt": "Choose *nada* or *nadie*: Tomás no sabe ___. (Tomás doesn't know anything.) Type the whole sentence.",
+      "answer": "Tomás no sabe nada.",
+      "accept": [],
+      "why": "Anything, a thing, is *nada*, with *no* before the verb as well."
+    },
+    {
+      "prompt": "Someone says *No tengo hambre.* You're not hungry either. Choose *también* or *tampoco*: Yo ___.",
+      "answer": "Yo tampoco.",
+      "accept": [],
+      "why": "Agreeing with a negative takes *tampoco*."
+    },
+    {
+      "prompt": "I don't know anything.",
+      "answer": "No sé nada.",
+      "accept": ["Yo no sé nada."],
+      "why": "*No* before the verb, *nada* after it."
+    },
+    {
+      "prompt": "Nobody knows.",
+      "answer": "Nadie sabe.",
+      "accept": ["No sabe nadie."],
+      "why": "With *nadie* first, you don't need *no*."
+    },
+    {
+      "prompt": "Vale never arrives late.",
+      "answer": "Vale nunca llega tarde.",
+      "accept": ["Vale no llega nunca tarde.", "Vale no llega tarde nunca."],
+      "why": "*Nunca* before the verb works alone; after it, add *no*."
+    },
+    {
+      "prompt": "I don't have a single photo of my grandfather. (Use *ninguna*.)",
+      "answer": "No tengo ninguna foto de mi abuelo.",
+      "accept": [],
+      "why": "*Foto* is feminine, so *ninguna*, and it stays singular."
+    },
+    {
+      "prompt": "Make it negative with *nunca*: *Hernando siempre habla de su esposa.*",
+      "answer": "Hernando nunca habla de su esposa.",
+      "accept": ["Hernando no habla nunca de su esposa."],
+      "why": "*Nunca* takes the place of *siempre*; before the verb, no extra *no*."
+    },
+    {
+      "prompt": "Make it negative: *Conozco a alguien en Bogotá.*",
+      "answer": "No conozco a nadie en Bogotá.",
+      "accept": [],
+      "why": "*Alguien* flips to *nadie*, and *no* goes before the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Sé nada.",
+      "right": "No sé nada.",
+      "why": "Almost. After the verb, *nada* needs a *no* in front too: two negatives, one meaning."
+    },
+    {
+      "wrong": "Nadie no sabe.",
+      "right": "Nadie sabe.",
+      "why": "When *nadie* comes first, it does the job alone."
+    },
+    {
+      "wrong": "No sé algo.",
+      "right": "No sé nada.",
+      "why": "After *no*, anything is *nada*, not *algo*."
+    },
+    {
+      "wrong": "No tengo ningunos problemas.",
+      "right": "No tengo ningún problema.",
+      "why": "*Ningún* stays singular: not a single problem."
+    },
+    {
+      "wrong": "No tengo hambre.\nYo también.",
+      "right": "No tengo hambre.\nYo tampoco.",
+      "why": "Agreeing with a negative takes *tampoco*; *también* is for positive ones."
+    }
+  ],
+  "personal": "Write three true sentences: something you never do (*nunca*), something nobody in your family does (*nadie*), and something you don't know anything about (*no sé nada de…*)."
+}
