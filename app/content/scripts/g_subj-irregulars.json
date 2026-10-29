@@ -1,0 +1,191 @@
+{
+  "node": "g:subj-irregulars",
+  "hook": {
+    "line": "Vale's biggest conditions use the most ordinary verbs: be, go, know, be there. Those are exactly the verbs that break the pattern, so they get their own short list.",
+    "es": "Quiero que seas honesto conmigo.",
+    "en": "I want you to be honest with me. (to a friend, a man)"
+  },
+  "examples": [
+    {
+      "es": "Necesito que vayas al banco hoy.",
+      "en": "I need you to go to the bank today. (to a friend)"
+    },
+    {
+      "es": "Quiero que sepas algo, Tomás.",
+      "en": "I want you to know something, Tomás."
+    },
+    {
+      "es": "Quiero que el café sea de los dos.",
+      "en": "I want the café to belong to both of us."
+    },
+    {
+      "es": "Hernando quiere que estemos tranquilos.",
+      "en": "Hernando wants us to be calm."
+    },
+    {
+      "es": "Necesito que me des una respuesta hoy.",
+      "en": "I need you to give me an answer today. (to a friend)"
+    },
+    {
+      "es": "Quiero que haya café para todos.",
+      "en": "I want there to be coffee for everyone."
+    },
+    {
+      "es": "No quiero que tengas problemas.",
+      "en": "I don't want you to have problems. (to a friend)"
+    }
+  ],
+  "rule": "Most wish forms come straight from the I form, the way your *usted* commands do:\n*tengo*: *tenga*\n*hago*: *haga*\n*digo*: *diga*\n*salgo*: *salga*\n*conozco*: *conozca*\n\nSix verbs can't do that, because their I form doesn't end in *-o*: *soy*, *voy*, *estoy*, *sé*, *doy*, *he*. Learn their wish forms as a set:\n\n*ser*: *sea*\n*ir*: *vaya*\n*estar*: *esté*\n*saber*: *sepa*\n*dar*: *dé*\n*haber* (there is): *haya*\n\nAfter that they behave: *seas*, *sea*, *seamos*, *sean*. *Esté* keeps its accent in every person except we: *estés*, *estemos*, *estén*. *Dé* has an accent only so you don't confuse it with *de* (of). *Haya* has just the one form: *Quiero que haya café.*",
+  "smallPrint": "Teachers call these the irregular present subjunctive forms.",
+  "readAndPick": [
+    {
+      "es": "Necesito que vayas al banco.",
+      "options": [
+        "I need you to go to the bank.",
+        "I need you to be at the bank.",
+        "I need to go to the bank."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quiero que estés aquí el lunes.",
+      "options": [
+        "I want you to go there on Monday.",
+        "I want you to be here on Monday.",
+        "I want to be here on Monday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No quiero que Altamira sepa nada.",
+      "options": [
+        "I don't want Altamira to know anything.",
+        "I don't want to know anything about Altamira.",
+        "Altamira doesn't want me to know anything."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quiero que haya café para todos.",
+      "options": [
+        "I want to have coffee with everyone.",
+        "I want there to be coffee for everyone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quiero que me des la llave.",
+      "options": [
+        "I want to give you the key.",
+        "I want you to give me the key."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Queremos que sean puntuales.",
+      "options": [
+        "We want to be on time.",
+        "They want us to be on time.",
+        "We want them to be on time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Quieres que vaya contigo?",
+      "options": [
+        "Do you want to go with me?",
+        "Do you want me to go with you?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quiero que estemos juntos en esto.",
+      "options": [
+        "I want us to be in this together.",
+        "I want you to be in this together."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Necesito que me digas la verdad.",
+      "options": [
+        "I need to tell you the truth.",
+        "I need you to tell me the truth."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *eres* or *seas* and type the whole sentence, to a friend: *Quiero que ___ honesto conmigo.* (I want you to be honest with me.)",
+      "answer": "Quiero que seas honesto conmigo.",
+      "accept": [],
+      "why": "After *quiero que*, *ser* becomes *sea*, and for you, *seas*."
+    },
+    {
+      "prompt": "Pick *vas* or *vayas* and type the whole sentence, to a friend: *No quiero que ___ solo.* (I don't want you to go alone.)",
+      "answer": "No quiero que vayas solo.",
+      "accept": [],
+      "why": "*Ir* turns into *vaya* when you want someone to go: *vayas*."
+    },
+    {
+      "prompt": "Tell a friend: I need you to give me the key.",
+      "answer": "Necesito que me des la llave.",
+      "accept": [],
+      "why": "*Dar* becomes *dé*, and for you it's *des*, no accent needed."
+    },
+    {
+      "prompt": "Tell a friend: I want you to know something.",
+      "answer": "Quiero que sepas algo.",
+      "accept": [],
+      "why": "*Saber* has its own wish form: *sepa*, so *sepas* for you."
+    },
+    {
+      "prompt": "Say: I want there to be coffee for everyone.",
+      "answer": "Quiero que haya café para todos.",
+      "accept": [],
+      "why": "There is is *hay*, and the wish form is *haya*."
+    },
+    {
+      "prompt": "Make it about you all (a group): *Necesito que estés aquí a las siete.*",
+      "answer": "Necesito que estén aquí a las siete.",
+      "accept": [],
+      "why": "For you all, add *n*, and the accent stays: *estén*."
+    },
+    {
+      "prompt": "Make it formal, to Hernando (*usted*): *Quiero que me digas la verdad.*",
+      "answer": "Quiero que me diga la verdad.",
+      "accept": [],
+      "why": "For *usted*, drop the *s*: *diga*, the same as the command."
+    },
+    {
+      "prompt": "Make it negative: *Quiero que tengas problemas.* Then it finally sounds kind.",
+      "answer": "No quiero que tengas problemas.",
+      "accept": [],
+      "why": "*No* goes before *quiero*; *tengas* comes from *tengo*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Quiero que eres honesto.",
+      "right": "Quiero que seas honesto.",
+      "why": "Almost. *Eres* states a fact; what you want someone to be is *seas*."
+    },
+    {
+      "wrong": "Necesito que vas al banco.",
+      "right": "Necesito que vayas al banco.",
+      "why": "*Ir* has its own wish form, *vaya*, so for you it's *vayas*."
+    },
+    {
+      "wrong": "Quiero que estes aquí.",
+      "right": "Quiero que estés aquí.",
+      "why": "*Estés* needs its accent, like *está* does."
+    },
+    {
+      "wrong": "Quiero que me de la llave.",
+      "right": "Quiero que me dé la llave.",
+      "why": "Without the accent, *de* means of. The verb is *dé*."
+    }
+  ],
+  "personal": "Write one sentence about something you want for someone you care about, using *sea*, *esté*, *vaya* or *sepa*. For example, what you want your best friend to know."
+}

@@ -1,0 +1,195 @@
+{
+  "node": "g:subj-wanting",
+  "hook": {
+    "line": "Tomás has asked Vale to run the café with him, fifty-fifty. She's in, on conditions, and every condition is something she wants *him* to do. English says I want you to. Spanish needs one small word and a new ending.",
+    "es": "Quiero que lo pongas en un papel.",
+    "en": "I want you to put it on paper. (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "Quiero que trabajes conmigo.",
+      "en": "I want you to work with me. (to a friend)"
+    },
+    {
+      "es": "Necesito que me ayudes con la cocina.",
+      "en": "I need you to help me with the kitchen. (to a friend)"
+    },
+    {
+      "es": "¿Quieres que te llame mañana?",
+      "en": "Do you want me to call you tomorrow? (to a friend)"
+    },
+    {
+      "es": "No quiero que hables con Altamira.",
+      "en": "I don't want you to talk to Altamira. (to a friend)"
+    },
+    {
+      "es": "Hernando no quiere que griten delante de los clientes.",
+      "en": "Hernando doesn't want them to shout in front of the customers."
+    },
+    {
+      "es": "Necesito que vengas temprano.",
+      "en": "I need you to come early. (to a friend)"
+    },
+    {
+      "es": "Quiero trabajar contigo.",
+      "en": "I want to work with you. (to a friend)"
+    }
+  ],
+  "rule": "English says I want you to come. Spanish can't build it that way. It says I want that you come: *Quiero que vengas.*\n\nTwo pieces: *que*, then the verb in a new shape. You already know that shape. It's the *usted* command, with the usual ending for the person:\n\n*hable*: *que hables*, *que hable*, *que hablemos*, *que hablen*\n*coma*: *que comas*, *que coma*, *que comamos*, *que coman*\n*venga*: *que vengas*, *que venga*, *que vengamos*, *que vengan*\n\n*-ar* verbs get an *e*, *-er* and *-ir* verbs get an *a*: the opposite vowel. For I, it's the same as for he or she: *¿Quieres que te llame?*\n\nThe test is one question: is it the same person? I want, I work: *Quiero trabajar.* I want, you work: *Quiero que trabajes.* Only when the person changes do you need *que* and the new ending. Today it follows *quiero que* and *necesito que*.",
+  "smallPrint": "Teachers call this new shape the present subjunctive (*presente de subjuntivo*). Wanting is just the first door into it.",
+  "readAndPick": [
+    {
+      "es": "Quiero que trabajes conmigo.",
+      "options": [
+        "I want to work with you.",
+        "I want you to work with me.",
+        "I want him to work with me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quiero trabajar contigo.",
+      "options": [
+        "I want to work with you.",
+        "I want you to work with me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Quieres que te llame mañana?",
+      "options": [
+        "Do you want to call me tomorrow?",
+        "Do you want me to call you tomorrow?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quieren que trabajemos el domingo.",
+      "options": [
+        "They want to work on Sunday.",
+        "We want them to work on Sunday.",
+        "They want us to work on Sunday."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Necesito que comas algo.",
+      "options": [
+        "I need you to eat something.",
+        "I need to eat something."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale quiere que Tomás se quede.",
+      "options": [
+        "Vale wants to stay with Tomás.",
+        "Vale wants Tomás to stay.",
+        "Tomás wants Vale to stay."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Necesito hablar con Vale.",
+      "options": [
+        "I need to talk to Vale.",
+        "I need Vale to talk."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando quiere que lo escuchen.",
+      "options": [
+        "Hernando wants to listen to them.",
+        "Hernando wants them to listen to him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No quiero que hables con Altamira.",
+      "options": [
+        "I don't want to talk to Altamira.",
+        "Altamira doesn't want to talk to you.",
+        "I don't want you to talk to Altamira."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *trabajas* or *trabajes* and type the whole sentence, to a friend: *Quiero que ___ conmigo.* (I want you to work with me.)",
+      "answer": "Quiero que trabajes conmigo.",
+      "accept": [],
+      "why": "After *quiero que*, the verb takes the opposite vowel: *trabajes*."
+    },
+    {
+      "prompt": "Pick *comer* or *que comas* and type the whole sentence: *Necesito ___ algo.* (I need to eat something.)",
+      "answer": "Necesito comer algo.",
+      "accept": [],
+      "why": "You need and you eat: same person, so the plain form."
+    },
+    {
+      "prompt": "Tell a friend: I need you to help me.",
+      "answer": "Necesito que me ayudes.",
+      "accept": [
+        "Necesito que tú me ayudes."
+      ],
+      "why": "Two people, so *que* plus the new ending: *ayudes*."
+    },
+    {
+      "prompt": "Ask a friend: Do you want me to call you tomorrow?",
+      "answer": "¿Quieres que te llame mañana?",
+      "accept": [
+        "¿Quieres que yo te llame mañana?"
+      ],
+      "why": "You're the one calling, and for I the form is the same as for he or she: *llame*."
+    },
+    {
+      "prompt": "Say: Vale wants Tomás to stay.",
+      "answer": "Vale quiere que Tomás se quede.",
+      "accept": [],
+      "why": "Vale wants, Tomás stays: two people, so *que se quede*."
+    },
+    {
+      "prompt": "Make it negative: *Quiero que hables con Altamira.*",
+      "answer": "No quiero que hables con Altamira.",
+      "accept": [],
+      "why": "The *no* goes before *quiero*; the rest stays the same."
+    },
+    {
+      "prompt": "Say it to a group (you all) instead of one friend: *Necesito que vengas temprano.*",
+      "answer": "Necesito que vengan temprano.",
+      "accept": [],
+      "why": "For you all, add *n*: *vengan*."
+    },
+    {
+      "prompt": "Now you want a friend to do it, not you: *Quiero leer el contrato.* (I want you to read the contract.)",
+      "answer": "Quiero que leas el contrato.",
+      "accept": [],
+      "why": "The reader changed, so add *que* and swap the vowel: *leas*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Quiero tú trabajar conmigo.",
+      "right": "Quiero que trabajes conmigo.",
+      "why": "Almost. Spanish can't copy I want you to; it says I want that you work: *quiero que trabajes*."
+    },
+    {
+      "wrong": "Quiero que trabajas conmigo.",
+      "right": "Quiero que trabajes conmigo.",
+      "why": "*Trabajas* states a fact. What you want someone to do takes the opposite vowel: *trabajes*."
+    },
+    {
+      "wrong": "Quiero que yo hable con él.",
+      "right": "Quiero hablar con él.",
+      "why": "You want and you talk: same person, so no *que*, just *hablar*."
+    },
+    {
+      "wrong": "Necesito que vienes temprano.",
+      "right": "Necesito que vengas temprano.",
+      "why": "Build it like the command *venga*, from *vengo*: *vengas*."
+    }
+  ],
+  "personal": "Think of someone in your life. Tell them one thing you really want them to do, starting with *Quiero que* or *Necesito que*."
+}

@@ -1,0 +1,171 @@
+{
+  "node": "p:te-importaria",
+  "hook": {
+    "line": "Tomás and Vale are arguing at full volume, and the customers can hear every word. A command from Hernando would start a third argument, so he asks the soft way.",
+    "es": "¿Les importaría hablar más bajo?",
+    "en": "Would you all mind talking more quietly?"
+  },
+  "examples": [
+    {
+      "es": "¿Te importaría esperar un momento?",
+      "en": "Would you mind waiting a moment? (to a friend)"
+    },
+    {
+      "es": "¿Le importaría cerrar la ventana?",
+      "en": "Would you mind closing the window? (formal)"
+    },
+    {
+      "es": "¿Podrías ayudarme con las sillas?",
+      "en": "Could you help me with the chairs? (to a friend)"
+    },
+    {
+      "es": "¿Podría repetir, por favor?",
+      "en": "Could you repeat that, please? (formal)"
+    },
+    {
+      "es": "¿Te importaría cuidar a Simón el sábado?\nNo, para nada.",
+      "en": "Would you mind looking after Simón on Saturday? (to a friend)\nNot at all."
+    }
+  ],
+  "rule": "To ask a favour gently, pick an opener and add the dictionary form:\n\n*¿Te importaría…?* Would you mind…? (*le* for *usted*, *les* for a group)\n*¿Podrías…?* Could you…? (*podría* for *usted*, *podrían* for a group)\n\nBoth are softer than *¿Puedes…?*, and far softer than a command.\n\nWatch the answer. Would you mind? hopes for a no, just like in English. *No, para nada* means happy to. *Claro* works too. A plain *sí* means yes, I would mind.",
+  "smallPrint": "Teachers call this the conditional of courtesy (*condicional de cortesía*).",
+  "readAndPick": [
+    {
+      "es": "¿Te importaría esperar un momento?",
+      "options": [
+        "Wait a moment.",
+        "Would you mind waiting a moment?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Le importaría cerrar la ventana?",
+      "options": [
+        "Would you mind closing the window? (formal)",
+        "Would you mind closing the window? (to a friend)",
+        "Would you mind closing the window? (you all)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Les importaría hablar más bajo?",
+      "options": [
+        "Would you mind talking more quietly? (to a friend)",
+        "Would you mind talking more quietly? (formal)",
+        "Would you all mind talking more quietly?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Puedes cerrar la ventana?",
+      "options": [
+        "Can you close the window?",
+        "Would you mind closing the window?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Podrías ayudarme con las sillas?",
+      "options": [
+        "Could I help you with the chairs?",
+        "Could you help me with the chairs?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te importaría cuidar a Simón el sábado?\nNo, para nada.",
+      "options": [
+        "Yes, they'll look after Simón.",
+        "No, they won't look after Simón."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te importaría cerrar la puerta?\nPues sí, un poco.",
+      "options": [
+        "They're happy to close the door.",
+        "They'd rather not close the door."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Podrían bajar la voz, por favor?",
+      "options": [
+        "Could you lower your voice, please? (to a friend)",
+        "Could you all keep your voices down, please?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *importa* or *importaría* and type the whole sentence, to a friend: *¿Te ___ esperar un momento?* (Would you mind waiting a moment?)",
+      "answer": "¿Te importaría esperar un momento?",
+      "accept": [],
+      "why": "Would you mind is *importaría*, with the *-ría* of would."
+    },
+    {
+      "prompt": "Pick *Puedes* or *Podrías* and type the whole sentence, asking a friend gently: *¿___ ayudarme con las sillas?*",
+      "answer": "¿Podrías ayudarme con las sillas?",
+      "accept": [
+        "¿Me podrías ayudar con las sillas?"
+      ],
+      "why": "Could you is *podrías*: softer than *puedes*."
+    },
+    {
+      "prompt": "Ask a stranger (formal): Would you mind closing the window?",
+      "answer": "¿Le importaría cerrar la ventana?",
+      "accept": [],
+      "why": "For *usted*, the opener is *le importaría*."
+    },
+    {
+      "prompt": "Ask a friend: Could you lend me your phone?",
+      "answer": "¿Podrías prestarme tu celular?",
+      "accept": [
+        "¿Me podrías prestar tu celular?"
+      ],
+      "why": "*Podrías* plus the dictionary form, with *me* on the end or up front."
+    },
+    {
+      "prompt": "A friend asks: *¿Te importaría cuidar a Simón el sábado?* Say you're happy to: Not at all.",
+      "answer": "No, para nada.",
+      "accept": [
+        "Para nada.",
+        "No, claro que no."
+      ],
+      "why": "Would you mind hopes for a no, so a happy yes starts with *no*."
+    },
+    {
+      "prompt": "Soften the order for a group (you all), with *importaría*: *Hablen más bajo.*",
+      "answer": "¿Les importaría hablar más bajo?",
+      "accept": [],
+      "why": "For a group, *les importaría*, then the dictionary form *hablar*."
+    },
+    {
+      "prompt": "Soften it for Hernando (*usted*), with *podría*: *Repita, por favor.*",
+      "answer": "¿Podría repetir, por favor?",
+      "accept": [
+        "¿Me podría repetir, por favor?"
+      ],
+      "why": "For *usted*, *podría* with no *s*, then *repetir*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Me importaría cerrar la ventana?",
+      "right": "¿Te importaría cerrar la ventana?",
+      "why": "Almost. The one who might mind is the person you're asking: *te*, not *me*."
+    },
+    {
+      "wrong": "¿Te importaría esperando un momento?",
+      "right": "¿Te importaría esperar un momento?",
+      "why": "English says waiting, but Spanish always uses the dictionary form here: *esperar*."
+    },
+    {
+      "wrong": "¿Te importaría ayudarme?\nSí.",
+      "right": "¿Te importaría ayudarme?\nNo, para nada.",
+      "why": "A plain *sí* answers the question as asked: yes, I'd mind. To say you're glad to help, start with *no*."
+    }
+  ],
+  "personal": "Think of a small favour you need this week. Ask the person in Spanish with *¿Te importaría…?* or *¿Le importaría…?*, whichever fits them."
+}

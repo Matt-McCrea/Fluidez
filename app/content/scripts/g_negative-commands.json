@@ -1,0 +1,189 @@
+{
+  "node": "g:negative-commands",
+  "hook": {
+    "line": "Vale's last condition is the one she says twice. It isn't something she wants Tomás to do. It's something she wants him never to do.",
+    "es": "No firmes nada de Altamira.",
+    "en": "Don't sign anything from Altamira. (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "No toques eso.",
+      "en": "Don't touch that. (to a friend)"
+    },
+    {
+      "es": "No te preocupes.",
+      "en": "Don't worry. (to a friend)"
+    },
+    {
+      "es": "No se preocupe, don Hernando.",
+      "en": "Don't worry, don Hernando. (formal)"
+    },
+    {
+      "es": "No lo firmes todavía.",
+      "en": "Don't sign it yet. (to a friend)"
+    },
+    {
+      "es": "No griten delante de los clientes.",
+      "en": "Don't shout in front of the customers. (you all)"
+    },
+    {
+      "es": "No vayas solo.",
+      "en": "Don't go alone. (to a friend, a man)"
+    },
+    {
+      "es": "No me digas.",
+      "en": "You don't say. (to a friend)"
+    }
+  ],
+  "rule": "To tell someone not to do something, put *no* in front of the wish forms you learned this week.\n\nFor *usted* and for a group, nothing new: *No firme.* *No firmen.* It's the command you know, plus *no*.\n\nThe surprise is *tú*. The positive command has its own shape (*firma*, *ven*, *di*), but the negative switches to the wish form: *no firmes*, *no vengas*, *no digas*. Think of it as *no quiero que firmes* with the first part cut off.\n\nPronouns move, too. In a positive command they stick to the end: *Fírmalo.* *Dímelo.* Add *no* and they jump in front of the verb: *No lo firmes.* *No me lo digas.* The written accent you needed on the long word goes away with them.",
+  "smallPrint": "Teachers call this the negative imperative (*imperativo negativo*). It's built from the present subjunctive.",
+  "readAndPick": [
+    {
+      "es": "No firmes nada.",
+      "options": [
+        "Don't sign anything. (to a friend)",
+        "Don't sign anything. (formal)",
+        "You don't sign anything."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No firman nada.",
+      "options": [
+        "Don't sign anything. (you all)",
+        "They don't sign anything."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No firmen nada.",
+      "options": [
+        "Don't sign anything. (you all)",
+        "They don't sign anything."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No vayas solo.",
+      "options": [
+        "You're not going alone.",
+        "Don't go alone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tócalo.",
+      "options": [
+        "Don't touch it.",
+        "Touch it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No lo toques.",
+      "options": [
+        "Don't touch it.",
+        "Touch it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No te vas.",
+      "options": [
+        "Don't go.",
+        "You're not leaving."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No se preocupe.",
+      "options": [
+        "Don't worry. (to a friend)",
+        "He doesn't worry.",
+        "Don't worry. (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No me lo digas.",
+      "options": [
+        "Don't tell me.",
+        "Tell me."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *firmas* or *firmes* and type the whole sentence, to a friend: *No ___ nada de Altamira.* (Don't sign anything from Altamira.)",
+      "answer": "No firmes nada de Altamira.",
+      "accept": [],
+      "why": "Telling a friend not to uses the wish form: *firmes*."
+    },
+    {
+      "prompt": "Pick *ven* or *vengas* and type the whole sentence, to a friend: *No ___ mañana.* (Don't come tomorrow.)",
+      "answer": "No vengas mañana.",
+      "accept": [],
+      "why": "*Ven* only works without *no*. With it, *vengas*."
+    },
+    {
+      "prompt": "Tell a friend: Don't worry.",
+      "answer": "No te preocupes.",
+      "accept": [],
+      "why": "*No*, then *te*, then the wish form *preocupes*."
+    },
+    {
+      "prompt": "Tell a customer (formal): Don't worry.",
+      "answer": "No se preocupe.",
+      "accept": [],
+      "why": "For *usted*, *se* and *preocupe*."
+    },
+    {
+      "prompt": "Make it negative, to a friend: *Fírmalo.*",
+      "answer": "No lo firmes.",
+      "accept": [],
+      "why": "With *no*, *lo* jumps in front and the accent goes."
+    },
+    {
+      "prompt": "Make it negative, to a friend: *Dímelo.*",
+      "answer": "No me lo digas.",
+      "accept": [],
+      "why": "Both pronouns move in front, in the same order: *me lo*."
+    },
+    {
+      "prompt": "Make it negative, to a friend: *Ve solo.*",
+      "answer": "No vayas solo.",
+      "accept": [],
+      "why": "*Ir* has its own wish form, *vaya*, so *no vayas*."
+    },
+    {
+      "prompt": "Say it to a group (you all): *No grites delante de los clientes.*",
+      "answer": "No griten delante de los clientes.",
+      "accept": [],
+      "why": "For you all, the *usted* form plus *n*: *griten*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No firma nada.",
+      "right": "No firmes nada.",
+      "why": "Almost. *No firma* means he doesn't sign. To tell a friend not to, use the wish form: *no firmes*."
+    },
+    {
+      "wrong": "No fírmalo.",
+      "right": "No lo firmes.",
+      "why": "With *no*, the pronoun goes in front of the verb: *no lo firmes*."
+    },
+    {
+      "wrong": "No ve solo.",
+      "right": "No vayas solo.",
+      "why": "The short *tú* commands (*ve*, *ven*, *di*) only work without *no*. Negative: *no vayas*."
+    },
+    {
+      "wrong": "No te preocupas.",
+      "right": "No te preocupes.",
+      "why": "*Te preocupas* is you worry. Don't worry swaps the vowel: *no te preocupes*."
+    }
+  ],
+  "personal": "Think of a friend who's about to make a mistake. Write them two pieces of advice, both starting with *No*."
+}

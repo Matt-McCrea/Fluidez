@@ -1,0 +1,181 @@
+{
+  "node": "x:inf-vs-que-subj",
+  "hook": {
+    "line": "Vale knows what she wants for herself, and she knows what she wants from Tomás. In Spanish those two wants sound different, and mixing them up changes who is doing what.",
+    "es": "Quiero quedarme, pero quiero que tú te quedes también.",
+    "en": "I want to stay, but I want you to stay too. (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "Quiero salir temprano hoy.",
+      "en": "I want to leave early today."
+    },
+    {
+      "es": "Quiero que salgas temprano hoy.",
+      "en": "I want you to leave early today. (to a friend)"
+    },
+    {
+      "es": "No quiero firmar nada.",
+      "en": "I don't want to sign anything."
+    },
+    {
+      "es": "No quiero que firmes nada.",
+      "en": "I don't want you to sign anything. (to a friend)"
+    },
+    {
+      "es": "¿Quieres cocinar esta noche?",
+      "en": "Do you want to cook tonight? (to a friend)"
+    },
+    {
+      "es": "¿Quieres que cocine esta noche?",
+      "en": "Do you want me to cook tonight? (to a friend)"
+    },
+    {
+      "es": "Hernando quiere que le traigas un tinto.",
+      "en": "Hernando wants you to bring him a black coffee. (to a friend)"
+    }
+  ],
+  "rule": "Before you choose, ask one question: who does the second thing?\n\nThe same person who wants it: plain dictionary form, no *que*.\n*Quiero salir.* I want, I leave.\n*¿Quieres cocinar?* You want, you cook.\n\nSomeone else: *que* plus the opposite vowel.\n*Quiero que salgas.* I want, you leave.\n*¿Quieres que cocine?* You want, I cook.\n\nEnglish hides the switch. I want to go and I want you to go look almost the same, with just a you in the middle. Spanish makes you rebuild the sentence: *que*, a new person, a new ending.\n\nThe mistake to avoid runs both ways. Never put *que* when it's the same person (*quiero que yo salga* sounds broken), and never leave the plain form when it's someone else (*quiero tú salir* doesn't exist).",
+  "smallPrint": "Teachers call this the same subject or different subject rule: infinitive versus *que* plus subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Quiero que salgas temprano.",
+      "options": [
+        "I want to leave early.",
+        "I want you to leave early."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quiero salir temprano.",
+      "options": [
+        "I want to leave early.",
+        "I want you to leave early."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Quieres que cocine esta noche?",
+      "options": [
+        "Do you want to cook tonight?",
+        "Do you want me to cook tonight?",
+        "Do they want to cook tonight?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Necesito descansar.",
+      "options": [
+        "I need you to rest.",
+        "I need to rest."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Necesito que descanses.",
+      "options": [
+        "I need you to rest.",
+        "I need to rest."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale quiere que Tomás abra la panadería con ella.",
+      "options": [
+        "Vale wants to open the bakery with Tomás.",
+        "Tomás wants to open the bakery with Vale.",
+        "Vale wants Tomás to open the bakery with her."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Queremos quedarnos en el barrio.",
+      "options": [
+        "We want to stay in the neighbourhood.",
+        "We want you all to stay in the neighbourhood."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Queremos que ustedes se queden en el barrio.",
+      "options": [
+        "We want to stay in the neighbourhood.",
+        "We want you all to stay in the neighbourhood."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Necesitas que te ayude?",
+      "options": [
+        "Do you need me to help you?",
+        "Do you need to help me?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *dormir* or *que duermas* and type the whole sentence: *Quiero ___.* (I want to sleep.)",
+      "answer": "Quiero dormir.",
+      "accept": [],
+      "why": "You want and you sleep: same person, so the plain form."
+    },
+    {
+      "prompt": "Pick *ayudarme* or *que me ayudes* and type the whole sentence, to a friend: *Quiero ___.* (I want you to help me.)",
+      "answer": "Quiero que me ayudes.",
+      "accept": [],
+      "why": "You want, your friend helps: two people, so *que me ayudes*."
+    },
+    {
+      "prompt": "Say: I need to talk to you. (to a friend)",
+      "answer": "Necesito hablar contigo.",
+      "accept": [],
+      "why": "You need and you talk: one person, no *que*."
+    },
+    {
+      "prompt": "Tell a friend: I need you to talk to Hernando.",
+      "answer": "Necesito que hables con Hernando.",
+      "accept": [],
+      "why": "Your friend does the talking, so *que hables*."
+    },
+    {
+      "prompt": "Ask a friend: Do you want me to cook tonight?",
+      "answer": "¿Quieres que cocine esta noche?",
+      "accept": [
+        "¿Quieres que yo cocine esta noche?",
+        "¿Quieres que cocine hoy en la noche?"
+      ],
+      "why": "Your friend wants, you cook: *que cocine*."
+    },
+    {
+      "prompt": "Change who does it. Now you want your friend to sign, not you: *No quiero firmar nada.*",
+      "answer": "No quiero que firmes nada.",
+      "accept": [],
+      "why": "A second person appears, so *que* and the opposite vowel: *firmes*."
+    },
+    {
+      "prompt": "Change who does it. Now it's you who wants to learn: *Quiero que Simón aprenda otra frase.* (I want to learn another phrase.)",
+      "answer": "Quiero aprender otra frase.",
+      "accept": [],
+      "why": "Back to one person, so drop *que* and use the plain form."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Quiero que yo me quede.",
+      "right": "Quiero quedarme.",
+      "why": "Almost. You want and you stay, so Spanish uses the plain form: *quedarme*."
+    },
+    {
+      "wrong": "Quiero tú quedarte.",
+      "right": "Quiero que te quedes.",
+      "why": "When someone else stays, Spanish needs *que* and the new ending: *que te quedes*."
+    },
+    {
+      "wrong": "Necesito que salgo temprano.",
+      "right": "Necesito salir temprano.",
+      "why": "If you're the one leaving, there's no *que*: just *salir*."
+    }
+  ],
+  "personal": "Write two true lines: one thing you want to do this week, and one thing you want someone else to do. Start both with *Quiero*."
+}
