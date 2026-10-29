@@ -1,0 +1,168 @@
+{
+  "node": "p:siento-llegar-tarde",
+  "hook": {
+    "line": "A plain 'sorry' works, but saying what you're sorry for sounds like you mean it. Tomás comes back from the bakery forty minutes late, and Vale is waiting.",
+    "es": "Siento llegar tarde, Vale.",
+    "en": "Sorry I'm late, Vale."
+  },
+  "examples": [
+    {
+      "es": "Siento llegar tarde.",
+      "en": "Sorry I'm late."
+    },
+    {
+      "es": "Siento llegar sin pan.",
+      "en": "Sorry I've turned up without bread."
+    },
+    {
+      "es": "Disculpe la demora, señora.",
+      "en": "Sorry for the delay, ma'am."
+    },
+    {
+      "es": "Disculpe la molestia.",
+      "en": "Sorry to bother you."
+    },
+    {
+      "es": "Lo siento mucho, Tomás.",
+      "en": "I'm really sorry, Tomás."
+    },
+    {
+      "es": "Tranquilo, no pasa nada.",
+      "en": "Don't worry, it's fine."
+    }
+  ],
+  "rule": "Three ways to say sorry, from small to big:\n*Disculpe* (to a stranger) or *disculpa* (to a friend) + the thing: *Disculpe la demora.* Also *Perdón por la demora.*\n*Siento* + a plain verb, for what you did: *Siento llegar tarde.*\n*Lo siento (mucho)*, for real bad news or real harm.\n\nEnglish says 'sorry I'm late'; Spanish says 'I regret arriving late', with the verb in its plain form.\n\nThe usual reply: *Tranquilo, no pasa nada.* (*Tranquila* to a woman.)",
+  "smallPrint": "Teachers call this apologising: sentir + infinitive.",
+  "readAndPick": [
+    {
+      "es": "Siento llegar tarde.",
+      "options": [
+        "Sorry I'm late.",
+        "I feel late.",
+        "I'm arriving late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Disculpe la molestia.",
+      "options": [
+        "Sorry to bother you.",
+        "Sorry I'm late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Disculpe la demora.",
+      "options": [
+        "Sorry to bother you.",
+        "Sorry for the delay."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo siento mucho.",
+      "options": [
+        "I feel a lot.",
+        "I'm really sorry.",
+        "Excuse me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento llegar sin pan.",
+      "options": [
+        "Sorry I'm late with the bread.",
+        "Sorry I've turned up without bread."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tranquila, no pasa nada.",
+      "options": [
+        "Sorry, nothing happened.",
+        "I'm calm, nothing's wrong.",
+        "Don't worry, it's fine."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Disculpa la demora, Vale.",
+      "options": [
+        "Sorry for the delay, Vale.",
+        "Sorry to bother you, Vale."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siento no ir a la fiesta.",
+      "options": [
+        "Sorry I'm going to the party.",
+        "Sorry about the party.",
+        "Sorry I'm not going to the party."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Siento ___ tarde.* (*llegar* or *llego*)",
+      "answer": "Siento llegar tarde.",
+      "accept": [],
+      "why": "After *siento*, the next verb stays plain: *llegar*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence, to a stranger: *___ la molestia.* (*Disculpe* or *Disculpa*)",
+      "answer": "Disculpe la molestia.",
+      "accept": [],
+      "why": "*Disculpe* is the polite one, for someone you'd call *usted*."
+    },
+    {
+      "prompt": "Say: Sorry I'm late.",
+      "answer": "Siento llegar tarde.",
+      "accept": [],
+      "why": "Name what you're sorry for: *siento* + *llegar tarde*."
+    },
+    {
+      "prompt": "Say it to a friend: Sorry for the delay.",
+      "answer": "Disculpa la demora.",
+      "accept": [],
+      "why": "*Disculpa* is the friendly form, then the thing you're sorry for."
+    },
+    {
+      "prompt": "A friend just heard bad news. Say: I'm really sorry.",
+      "answer": "Lo siento mucho.",
+      "accept": [],
+      "why": "For real bad news, *lo siento mucho*."
+    },
+    {
+      "prompt": "Reply to a man who apologised: Don't worry, it's fine.",
+      "answer": "Tranquilo, no pasa nada.",
+      "accept": [],
+      "why": "*Tranquilo* to a man; *no pasa nada* means it's fine."
+    },
+    {
+      "prompt": "Make it polite, for a customer: *Disculpa la demora.*",
+      "answer": "Disculpe la demora.",
+      "accept": [],
+      "why": "*Disculpe* is the *usted* form."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Siento llego tarde.",
+      "right": "Siento llegar tarde.",
+      "why": "Almost. After *siento*, use the plain verb: *llegar*, not *llego*."
+    },
+    {
+      "wrong": "Lo siento llegar tarde.",
+      "right": "Siento llegar tarde.",
+      "why": "When you name what you did, drop the *lo*: just *Siento llegar tarde*."
+    },
+    {
+      "wrong": "Lo siento, ¿dónde está el baño?",
+      "right": "Disculpe, ¿dónde está el baño?",
+      "why": "To get someone's attention, *disculpe* or *perdón*. *Lo siento* is for real regret."
+    }
+  ],
+  "personal": "Think of the last time you were late or forgot something. Say sorry for it in Spanish: *Siento…*"
+}

@@ -1,0 +1,173 @@
+{
+  "node": "p:veces-al",
+  "hook": {
+    "line": "'How often?' comes up all the time: the gym, your mum, the café down the street. Spanish counts it in times per day, week, month or year.",
+    "es": "Hernando viene al café todos los días, y yo voy al gimnasio dos veces a la semana.",
+    "en": "Hernando comes to the café every day, and I go to the gym twice a week."
+  },
+  "examples": [
+    {
+      "es": "Voy al gimnasio tres veces a la semana.",
+      "en": "I go to the gym three times a week."
+    },
+    {
+      "es": "Llamo a mi mamá todos los días.",
+      "en": "I call my mum every day."
+    },
+    {
+      "es": "Una vez al mes salgo a comer.",
+      "en": "Once a month I eat out."
+    },
+    {
+      "es": "Tomo tinto dos veces al día.",
+      "en": "I have a black coffee twice a day."
+    },
+    {
+      "es": "Mariana viaja a Medellín dos veces al año.",
+      "en": "Mariana travels to Medellín twice a year."
+    },
+    {
+      "es": "¿Cuántas veces a la semana vas al gimnasio?",
+      "en": "How many times a week do you go to the gym?"
+    }
+  ],
+  "rule": "Count the times, then say per what:\n*una vez*: once\n*dos veces*: twice\n*tres veces*: three times\n\nThen *al día*, *a la semana*, *al mes*, *al año*. It's *a la* only for *semana*, because it's a 'la' word; the others are 'el' words, and *a el* always becomes *al*.\n\nOne *vez*, two *veces*: the z turns into c.\n\n*Todos los días* is every single day. To ask, use *¿Cuántas veces…?*",
+  "smallPrint": "Teachers call these frequency expressions.",
+  "readAndPick": [
+    {
+      "es": "Voy al gimnasio una vez a la semana.",
+      "options": [
+        "I go to the gym once a week.",
+        "I go to the gym once a month."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Voy al gimnasio una vez al mes.",
+      "options": [
+        "I go to the gym once a week.",
+        "I go to the gym once a month."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomo tinto tres veces al día.",
+      "options": [
+        "I have a black coffee three times a week.",
+        "I have a black coffee three times a day.",
+        "I have a black coffee three times a year."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale hace arepas dos veces a la semana.",
+      "options": [
+        "Vale makes arepas twice a week.",
+        "Vale makes arepas once a week."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Viajamos a Cartagena una vez al año.",
+      "options": [
+        "We travel to Cartagena once a month.",
+        "We travel to Cartagena twice a year.",
+        "We travel to Cartagena once a year."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hernando viene todos los días.",
+      "options": [
+        "Hernando comes some days.",
+        "Hernando comes every day."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Barremos el café dos veces al día.",
+      "options": [
+        "We sweep the café twice a day.",
+        "We sweep the café twice a week."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Pago el arriendo una vez al mes.",
+      "options": [
+        "I pay the rent once a year.",
+        "I pay the rent every day.",
+        "I pay the rent once a month."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Voy al gimnasio dos veces ___ semana.* (*al* or *a la*)",
+      "answer": "Voy al gimnasio dos veces a la semana.",
+      "accept": [],
+      "why": "*Semana* is a 'la' word, so it's *a la semana*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Tomo tinto tres ___ al día.* (*vez* or *veces*)",
+      "answer": "Tomo tinto tres veces al día.",
+      "accept": [],
+      "why": "More than one time is *veces*, with a c."
+    },
+    {
+      "prompt": "Say: I call my mum every day.",
+      "answer": "Llamo a mi mamá todos los días.",
+      "accept": [
+        "Todos los días llamo a mi mamá."
+      ],
+      "why": "Every single day is *todos los días*."
+    },
+    {
+      "prompt": "Say: Once a month I eat out.",
+      "answer": "Una vez al mes salgo a comer.",
+      "accept": [
+        "Salgo a comer una vez al mes."
+      ],
+      "why": "One time is *una vez*, and *mes* is an 'el' word, so *al mes*."
+    },
+    {
+      "prompt": "Ask a friend: How many times a week do you go to the gym?",
+      "answer": "¿Cuántas veces a la semana vas al gimnasio?",
+      "accept": [
+        "¿Cuántas veces vas al gimnasio a la semana?"
+      ],
+      "why": "*¿Cuántas veces…?* asks how many times; *vas* is 'you go' to a friend."
+    },
+    {
+      "prompt": "Make it more often: *Vale hace pan una vez al día.* (twice a day)",
+      "answer": "Vale hace pan dos veces al día.",
+      "accept": [],
+      "why": "From one to two, *vez* becomes *veces*."
+    },
+    {
+      "prompt": "Make it about 'we': *Voy a Cartagena una vez al año.*",
+      "answer": "Vamos a Cartagena una vez al año.",
+      "accept": [],
+      "why": "Only the verb changes, to *vamos*; the how-often part stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Voy al gimnasio dos vez a la semana.",
+      "right": "Voy al gimnasio dos veces a la semana.",
+      "why": "Almost. More than once needs the plural, *veces*, with a c."
+    },
+    {
+      "wrong": "Pago el arriendo una vez a el mes.",
+      "right": "Pago el arriendo una vez al mes.",
+      "why": "So close. *A* plus *el* always melts into *al*."
+    },
+    {
+      "wrong": "Llamo a mi mamá cada día.",
+      "right": "Llamo a mi mamá todos los días.",
+      "why": "'Every day' as a habit sounds most natural as *todos los días*."
+    }
+  ],
+  "personal": "Pick three things you do and say how often: *…una vez a la semana*, *…dos veces al día*, *…todos los días*."
+}

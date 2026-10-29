@@ -1,0 +1,48 @@
+{
+  "node": "g:tener-que-hay-que",
+  "hook": {
+    "line": "Half of any day is the things you have to do. You already say *tengo que*; now you'll tell apart your duties, everyone's rules, good advice, and the things you don't need to do at all.",
+    "es": "Mañana tengo que abrir el café a las seis.",
+    "en": "Tomorrow I have to open the café at six."
+  },
+  "examples": [
+    { "es": "Tengo que abrir el café a las seis.", "en": "I have to open the café at six." },
+    { "es": "Vale tiene que hacer pan a las cinco.", "en": "Vale has to make bread at five." },
+    { "es": "Hay que barrer el café todos los días.", "en": "The café has to be swept every day." },
+    { "es": "Tienes que descansar.", "en": "You have to rest." },
+    { "es": "Debes ir al médico.", "en": "You should go to the doctor." },
+    { "es": "Mañana no tienes que venir.", "en": "You don't have to come tomorrow." },
+    { "es": "No debes llegar tarde.", "en": "You mustn't be late." }
+  ],
+  "rule": "Three ways to say what has to happen, all followed by a plain verb:\n\n*tener que*: a person has to. *Tener* changes for who: *tengo que*, *tienes que*, *tiene que*, *tenemos que*, *tienen que*.\n\n*hay que*: it has to be done, by anyone. It never changes: *Hay que pagar antes.* There's no person in it, like English 'you have to' meaning people in general.\n\n*deber*: should, the advice word. *Debes ir al médico.*\n\nThe trap is the negative. *No tienes que venir* means you don't need to come: you're free. *No debes venir* means you mustn't come.",
+  "smallPrint": "Teachers call these verb phrases of obligation: tener que, hay que and deber + infinitive.",
+  "readAndPick": [
+    { "es": "Tengo que trabajar el sábado.", "options": ["I have to work on Saturday.", "You have to work on Saturday.", "We have to work on Saturday."], "answer": 0 },
+    { "es": "Tenemos que comprar pan.", "options": ["I have to buy bread.", "They have to buy bread.", "We have to buy bread."], "answer": 2 },
+    { "es": "Hay que pagar antes.", "options": ["I have to pay first.", "You have to pay first (everyone does)."], "answer": 1 },
+    { "es": "No tienes que pagar.", "options": ["You don't have to pay.", "You mustn't pay."], "answer": 0 },
+    { "es": "No debes pagar.", "options": ["You don't have to pay.", "You mustn't pay."], "answer": 1 },
+    { "es": "Debes descansar más.", "options": ["You should rest more.", "You don't have to rest more."], "answer": 0 },
+    { "es": "Ustedes tienen que llegar temprano.", "options": ["You all have to arrive early.", "You have to arrive early (to one friend).", "They had to arrive early."], "answer": 0 },
+    { "es": "¿Tienes que trabajar mañana?", "options": ["Do I have to work tomorrow?", "Do you have to work tomorrow?"], "answer": 1 },
+    { "es": "No tengo que trabajar mañana.", "options": ["I can't work tomorrow.", "I don't have to work tomorrow.", "I mustn't work tomorrow."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Tomás ___ que hacer las cuentas.* (*tiene* or *tengo*)", "answer": "Tomás tiene que hacer las cuentas.", "accept": [], "why": "Tomás is 'he', so *tiene que*." },
+    { "prompt": "Pick and type the whole sentence, a rule for everyone: *___ que pagar antes.* (*Hay* or *Tengo*)", "answer": "Hay que pagar antes.", "accept": [], "why": "A rule for anyone, with no person, is *hay que*." },
+    { "prompt": "Say: We have to buy bread.", "answer": "Tenemos que comprar pan.", "accept": [], "why": "'We' is *tenemos que*, then the plain verb." },
+    { "prompt": "Tell a friend: You should go to the doctor.", "answer": "Debes ir al médico.", "accept": ["Tienes que ir al médico."], "why": "Advice is *debes* plus the plain verb." },
+    { "prompt": "Tell a friend they're free: You don't have to come tomorrow.", "answer": "Mañana no tienes que venir.", "accept": ["No tienes que venir mañana."], "why": "*No tienes que* means there's no need." },
+    { "prompt": "Tell a friend it's not allowed: You mustn't be late.", "answer": "No debes llegar tarde.", "accept": [], "why": "'Mustn't' is *no debes*, not *no tienes que*." },
+    { "prompt": "Ask a friend: Do you have to work on Saturday?", "answer": "¿Tienes que trabajar el sábado?", "accept": [], "why": "*Tienes que* for 'you', and the question marks do the asking." },
+    { "prompt": "Make it negative: *Tengo que trabajar mañana.*", "answer": "No tengo que trabajar mañana.", "accept": ["Mañana no tengo que trabajar."], "why": "*No* goes before *tengo*; now it means you're free." },
+    { "prompt": "Make it about 'you all': *Tienes que llegar temprano.*", "answer": "Ustedes tienen que llegar temprano.", "accept": ["Tienen que llegar temprano."], "why": "For 'you all', *tener* becomes *tienen*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Tengo trabajar mañana.", "right": "Tengo que trabajar mañana.", "why": "Almost. 'Have to' needs the *que*: *tengo que*." },
+    { "wrong": "No tienes que llegar tarde.", "right": "No debes llegar tarde.", "why": "Careful. *No tienes que* means you don't need to; for 'you mustn't', say *no debes*." },
+    { "wrong": "Hay que yo pago antes.", "right": "Tengo que pagar antes.", "why": "*Hay que* has no person in it. For 'I have to', use *tengo que* plus the plain verb." },
+    { "wrong": "Tengo que trabajo mañana.", "right": "Tengo que trabajar mañana.", "why": "After *que*, the verb stays plain: *trabajar*." }
+  ],
+  "personal": "What's on your list this week? Write one thing you *tienes que* do, one rule where *hay que* fits, and one thing you *no tienes que* do."
+}

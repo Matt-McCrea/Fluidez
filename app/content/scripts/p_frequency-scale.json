@@ -1,0 +1,176 @@
+{
+  "node": "p:frequency-scale",
+  "hook": {
+    "line": "Describing your routine is mostly about how often: what you always do, what you sometimes skip, what you never touch. Tomás has one habit he'd rather not have.",
+    "es": "Siempre me ducho con agua fría. Nunca hay otra.",
+    "en": "I always shower with cold water. There's never any other kind."
+  },
+  "examples": [
+    {
+      "es": "Siempre desayuno arepa.",
+      "en": "I always have an arepa for breakfast."
+    },
+    {
+      "es": "Normalmente almorzamos a la una.",
+      "en": "We usually have lunch at one."
+    },
+    {
+      "es": "A veces Simón canta por la mañana.",
+      "en": "Sometimes Simón sings in the morning."
+    },
+    {
+      "es": "Vale casi nunca descansa.",
+      "en": "Vale hardly ever rests."
+    },
+    {
+      "es": "Nunca como pescado.",
+      "en": "I never eat fish."
+    },
+    {
+      "es": "No como pescado nunca.",
+      "en": "I don't ever eat fish."
+    }
+  ],
+  "rule": "From most to least:\n*siempre*: always\n*casi siempre*: almost always\n*normalmente*: usually\n*a veces*: sometimes\n*casi nunca*: hardly ever\n*nunca*: never\n\nThey usually go before the verb, or at the very start: *Siempre desayuno arepa.*\n\n*Nunca* can also go after the verb, but then you need *no* in front: *No como pescado nunca.* Two negatives are correct Spanish, not a mistake.",
+  "smallPrint": "Teachers call these adverbs of frequency.",
+  "readAndPick": [
+    {
+      "es": "Siempre llego tarde.",
+      "options": [
+        "I'm always late.",
+        "I'm never late.",
+        "I'm sometimes late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nunca llego tarde.",
+      "options": [
+        "I'm always late.",
+        "I'm never late.",
+        "I'm sometimes late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A veces llego tarde.",
+      "options": [
+        "I'm always late.",
+        "I'm never late.",
+        "I'm sometimes late."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hernando casi nunca toma té.",
+      "options": [
+        "Hernando hardly ever drinks tea.",
+        "Hernando almost always drinks tea."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Casi siempre cenamos en casa.",
+      "options": [
+        "We hardly ever have dinner at home.",
+        "We almost always have dinner at home."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No bailo nunca.",
+      "options": [
+        "I always dance.",
+        "I never dance.",
+        "I sometimes dance."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Normalmente me levanto a las cinco.",
+      "options": [
+        "I usually get up at five.",
+        "I never get up at five."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana a veces escribe en el café.",
+      "options": [
+        "Mariana always writes in the café.",
+        "Mariana never writes in the café.",
+        "Mariana sometimes writes in the café."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ desayuno arepa.* (*Siempre* or *Nunca*), meaning 'I always have an arepa for breakfast'.",
+      "answer": "Siempre desayuno arepa.",
+      "accept": [],
+      "why": "*Siempre* is 'always'."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Vale ___ descansa.* (*casi nunca* or *casi siempre*), meaning 'Vale hardly ever rests'.",
+      "answer": "Vale casi nunca descansa.",
+      "accept": [],
+      "why": "'Hardly ever' is *casi nunca*: almost never."
+    },
+    {
+      "prompt": "Say: Sometimes I don't have breakfast.",
+      "answer": "A veces no desayuno.",
+      "accept": [],
+      "why": "*A veces* goes first, then the *no* and the verb."
+    },
+    {
+      "prompt": "Say: We usually have lunch at one.",
+      "answer": "Normalmente almorzamos a la una.",
+      "accept": [
+        "Almorzamos a la una normalmente."
+      ],
+      "why": "*Normalmente* is the everyday 'usually'."
+    },
+    {
+      "prompt": "Ask a friend: Do you always work on Saturdays?",
+      "answer": "¿Siempre trabajas los sábados?",
+      "accept": [
+        "¿Tú siempre trabajas los sábados?",
+        "¿Trabajas siempre los sábados?"
+      ],
+      "why": "*Siempre* sits before the verb in a question too."
+    },
+    {
+      "prompt": "Move *nunca* after the verb: *Nunca bailo.*",
+      "answer": "No bailo nunca.",
+      "accept": [],
+      "why": "When *nunca* comes after the verb, *no* goes in front."
+    },
+    {
+      "prompt": "Make it the opposite: *Siempre llego tarde.*",
+      "answer": "Nunca llego tarde.",
+      "accept": [
+        "No llego tarde nunca."
+      ],
+      "why": "The opposite of *siempre* is *nunca*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Bailo nunca.",
+      "right": "No bailo nunca.",
+      "why": "Almost. If *nunca* comes after the verb, put *no* before it: *No bailo nunca*, or just *Nunca bailo*."
+    },
+    {
+      "wrong": "Yo usualmente desayuno en casa.",
+      "right": "Normalmente desayuno en casa.",
+      "why": "'Usually' looks like *usualmente*, but people say *normalmente*."
+    },
+    {
+      "wrong": "Nunca no como pescado.",
+      "right": "Nunca como pescado.",
+      "why": "Close. When *nunca* comes first, it does the job alone; the *no* only appears when *nunca* goes after the verb."
+    }
+  ],
+  "personal": "Tell the truth about your mornings: one thing you *siempre* do, one you do *a veces*, and one you *nunca* do."
+}

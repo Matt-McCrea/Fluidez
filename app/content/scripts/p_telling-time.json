@@ -1,0 +1,172 @@
+{
+  "node": "p:telling-time",
+  "hook": {
+    "line": "In a café, the clock runs everything: when you open, when the bread arrives, when Hernando turns up. Tomás's alarm goes off before the sun.",
+    "es": "Son las cinco. Abrimos a las seis.",
+    "en": "It's five o'clock. We open at six."
+  },
+  "examples": [
+    {
+      "es": "Es la una.",
+      "en": "It's one o'clock."
+    },
+    {
+      "es": "Son las dos y media.",
+      "en": "It's half past two."
+    },
+    {
+      "es": "Son las ocho y cuarto.",
+      "en": "It's quarter past eight."
+    },
+    {
+      "es": "Son las tres menos cuarto.",
+      "en": "It's quarter to three."
+    },
+    {
+      "es": "¿A qué hora abre el café?\nA las seis y media.",
+      "en": "What time does the café open?\nAt half past six."
+    },
+    {
+      "es": "Hernando llega a las siete de la mañana.",
+      "en": "Hernando arrives at seven in the morning."
+    }
+  ],
+  "rule": "Spanish counts hours with *la* or *las*, because *hora* (hour) is understood.\n*Es la una*: only one o'clock takes *es*.\n*Son las dos, son las tres…*: every other hour takes *son*.\n\nAdd minutes with *y* (past) and *menos* (to): *y cuarto*, *y media*, *menos cuarto*, *y diez*. Many Colombians say quarter to eight as *un cuarto para las ocho*.\n\nFor when something happens, use *a las*: *a las ocho*, *a la una*. To ask: *¿A qué hora…?*\n\nAdd *de la mañana*, *de la tarde*, *de la noche* for a.m. and p.m.",
+  "smallPrint": "Teachers call this telling the time with ser and the definite article.",
+  "readAndPick": [
+    {
+      "es": "Son las dos y media.",
+      "options": [
+        "It's half past two.",
+        "It's quarter past two.",
+        "It's two thirty in the morning."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Son las dos y cuarto.",
+      "options": [
+        "It's half past two.",
+        "It's quarter past two."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Son las cuatro menos cuarto.",
+      "options": [
+        "It's quarter past four.",
+        "It's quarter to four."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es la una y media.",
+      "options": [
+        "It's half past one.",
+        "It's one o'clock.",
+        "It's half past twelve."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Abrimos a las seis.",
+      "options": [
+        "It's six o'clock.",
+        "We open at six."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Son las diez de la noche.",
+      "options": [
+        "It's ten in the morning.",
+        "It's ten at night."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Son las nueve y veinte.",
+      "options": [
+        "It's twenty to nine.",
+        "It's nine twenty."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cerramos a las siete de la noche.",
+      "options": [
+        "We open at seven in the morning.",
+        "It's seven at night.",
+        "We close at seven at night."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ la una.* (*Es* or *Son*)",
+      "answer": "Es la una.",
+      "accept": [],
+      "why": "One o'clock is a single hour, so *es la una*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ las tres.* (*Es* or *Son*)",
+      "answer": "Son las tres.",
+      "accept": [],
+      "why": "Two o'clock and up are plural: *son las*."
+    },
+    {
+      "prompt": "Say: It's half past four.",
+      "answer": "Son las cuatro y media.",
+      "accept": [],
+      "why": "Half past is *y media*, after the hour."
+    },
+    {
+      "prompt": "Say: It's quarter to eight.",
+      "answer": "Son las ocho menos cuarto.",
+      "accept": [
+        "Es un cuarto para las ocho.",
+        "Son un cuarto para las ocho."
+      ],
+      "why": "Quarter to is *menos cuarto*: eight minus a quarter."
+    },
+    {
+      "prompt": "Ask: What time does the café open?",
+      "answer": "¿A qué hora abre el café?",
+      "accept": [],
+      "why": "*¿A qué hora…?* asks when something happens."
+    },
+    {
+      "prompt": "Say: I get up at five in the morning.",
+      "answer": "Me levanto a las cinco de la mañana.",
+      "accept": [
+        "A las cinco de la mañana me levanto."
+      ],
+      "why": "*A las* for the time something happens, then *de la mañana*."
+    },
+    {
+      "prompt": "Change the time to one o'clock: *Son las dos.*",
+      "answer": "Es la una.",
+      "accept": [],
+      "why": "One is the only hour with *es la*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Son la una.",
+      "right": "Es la una.",
+      "why": "Almost. One o'clock is singular, so it takes *es la*."
+    },
+    {
+      "wrong": "Es las tres.",
+      "right": "Son las tres.",
+      "why": "Close. More than one hour is plural: *son las tres*."
+    },
+    {
+      "wrong": "Abrimos en las seis.",
+      "right": "Abrimos a las seis.",
+      "why": "'At six' is *a las seis*, never *en*."
+    }
+  ],
+  "personal": "What time do you get up, and what time do you go to bed? Write both: *Me levanto a las…* *Me acuesto a las…*"
+}

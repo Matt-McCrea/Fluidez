@@ -1,0 +1,43 @@
+{
+  "node": "p:empezar-terminar",
+  "hook": {
+    "line": "Every routine has a start and an end, and people ask about both: when your day starts, when you finally stop. Tomás's day starts very early.",
+    "es": "Empiezo a trabajar a las cinco y termino de trabajar muy tarde.",
+    "en": "I start work at five and I finish work very late."
+  },
+  "examples": [
+    { "es": "Empiezo a trabajar a las ocho.", "en": "I start work at eight." },
+    { "es": "Termino de trabajar a las cinco.", "en": "I finish work at five." },
+    { "es": "Vale empieza a hacer pan muy temprano.", "en": "Vale starts making bread very early." },
+    { "es": "¿A qué hora terminas de trabajar?", "en": "What time do you finish work?" },
+    { "es": "Hernando terminó de leer y empezó a hablar.", "en": "Hernando finished reading and started talking." },
+    { "es": "Empezó a llover.", "en": "It started to rain." }
+  ],
+  "rule": "Each verb brings its own little word before the next verb:\n*empezar a* + verb: start doing\n*terminar de* + verb: finish doing\n\nThe second verb stays in its plain form (*trabajar*, *comer*), never an *-ing* form: 'start working' is *empezar a trabajar*.\n\n*Empezar* changes inside: *empiezo*, *empiezas*, *empieza*, *empiezan*, but *empezamos*.\n\nWith no verb after it, drop the little word: *Empiezo a las ocho.* *¿Ya terminaste?*",
+  "smallPrint": "Teachers call these verb + preposition + infinitive phrases.",
+  "readAndPick": [
+    { "es": "Empiezo a cocinar a las seis.", "options": ["I start cooking at six.", "I finish cooking at six."], "answer": 0 },
+    { "es": "Termino de cocinar a las seis.", "options": ["I start cooking at six.", "I finish cooking at six."], "answer": 1 },
+    { "es": "Vale terminó de hacer las arepas.", "options": ["Vale started making the arepas.", "Vale finished making the arepas.", "Vale is making the arepas."], "answer": 1 },
+    { "es": "Empezamos a estudiar.", "options": ["We started studying.", "They started studying.", "I started studying."], "answer": 0 },
+    { "es": "¿A qué hora empiezas a trabajar?", "options": ["What time do you finish work?", "What time do you start work?"], "answer": 1 },
+    { "es": "Tomás empieza a barrer.", "options": ["Tomás finishes sweeping.", "Tomás starts sweeping."], "answer": 1 },
+    { "es": "Ustedes terminan de comer a la una.", "options": ["You all finish eating at one.", "You all start eating at one.", "We finish eating at one."], "answer": 0 },
+    { "es": "Mariana empezó a escribir.", "options": ["Mariana finished writing.", "Mariana is going to write.", "Mariana started writing."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Empiezo ___ trabajar a las ocho.* (*a* or *de*)", "answer": "Empiezo a trabajar a las ocho.", "accept": [], "why": "*Empezar* always takes *a* before the next verb." },
+    { "prompt": "Pick and type the whole sentence: *Termino ___ trabajar a las cinco.* (*a* or *de*)", "answer": "Termino de trabajar a las cinco.", "accept": [], "why": "*Terminar* takes *de* before the next verb." },
+    { "prompt": "Say: I start studying at seven.", "answer": "Empiezo a estudiar a las siete.", "accept": ["A las siete empiezo a estudiar."], "why": "*Empiezo a* plus the plain verb *estudiar*." },
+    { "prompt": "Ask a friend: What time do you finish work?", "answer": "¿A qué hora terminas de trabajar?", "accept": [], "why": "*Terminas de* for 'you finish', then the plain verb." },
+    { "prompt": "Say: It started to rain.", "answer": "Empezó a llover.", "accept": [], "why": "*Empezó a* is 'it started to', and *llover* stays plain." },
+    { "prompt": "Make it about 'we': *Empiezo a trabajar a las nueve.*", "answer": "Empezamos a trabajar a las nueve.", "accept": ["A las nueve empezamos a trabajar."], "why": "With 'we' the verb doesn't change inside: *empezamos*, not *empiezamos*." },
+    { "prompt": "Change start to finish: *Vale empieza a hacer pan a las seis.*", "answer": "Vale termina de hacer pan a las seis.", "accept": [], "why": "Swap *empieza a* for *termina de*; the rest stays." }
+  ],
+  "pitfalls": [
+    { "wrong": "Empiezo trabajar a las ocho.", "right": "Empiezo a trabajar a las ocho.", "why": "Almost. *Empezar* needs its little *a* before the next verb." },
+    { "wrong": "Termino a trabajar a las cinco.", "right": "Termino de trabajar a las cinco.", "why": "Close. Finishing takes *de*, starting takes *a*." },
+    { "wrong": "Empiezo a trabajando a las ocho.", "right": "Empiezo a trabajar a las ocho.", "why": "English says 'start working', but Spanish keeps the plain verb: *trabajar*." }
+  ],
+  "personal": "When does your day really start and end? Write two lines: *Empiezo a trabajar a las…* and *Termino de trabajar a las…*"
+}
