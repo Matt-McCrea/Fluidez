@@ -1,0 +1,102 @@
+{
+  "node": "g:object-pronoun-position",
+  "hook": {
+    "line": "You've been putting *lo*, *te* and *le* in front of the verb. With two verbs together, Spanish gives you a second place to put them, and you'll see both in every chat.",
+    "es": "Te voy a llamar mañana.",
+    "en": "I'm going to call you tomorrow."
+  },
+  "examples": [
+    { "es": "Voy a llamarte mañana.", "en": "I'm going to call you tomorrow." },
+    { "es": "¿El contrato? Lo voy a leer esta noche.", "en": "The contract? I'm going to read it tonight." },
+    { "es": "¿El contrato? Voy a leerlo esta noche.", "en": "The contract? I'm going to read it tonight." },
+    { "es": "Quiero verte el sábado.", "en": "I want to see you on Saturday. (to a friend)" },
+    { "es": "¿Me estás escuchando?", "en": "Are you listening to me? (to a friend)" },
+    { "es": "No puedo creerlo.", "en": "I can't believe it." },
+    { "es": "¿Las llaves? Voy a buscarlas.", "en": "The keys? I'm going to look for them." }
+  ],
+  "rule": "With one verb, nothing changes: the little word goes in front. *Te llamo.*\n\nWith a verb plus a basic -ar, -er, -ir verb (*voy a llamar*, *quiero ver*, *puedo creer*), you choose:\nin front of the first verb: *Te voy a llamar.*\nglued onto the end of the second: *Voy a llamarte.*\nSame meaning, both everyday Spanish.\n\nThe same goes for *estoy* + an -ando or -iendo verb: *Me estás escuchando* or *Estás escuchándome*. When you glue it onto -ando or -iendo, add an accent to keep the stress where it was: *escuchándome*, *leyéndola*.\n\nThe one place it can never go is between the two verbs: not *voy a te llamar*. And with *no*, the *no* stays in front: *No lo puedo creer*, *No puedo creerlo*.",
+  "smallPrint": "Teachers call these unstressed object pronouns (*pronombres átonos*); glued to the end of a verb they are enclitic.",
+  "readAndPick": [
+    { "es": "Voy a llamarte mañana.", "options": ["You're going to call me tomorrow.", "I'm going to call you tomorrow.", "I'm going to call him tomorrow."], "answer": 1 },
+    { "es": "Te voy a llamar mañana.", "options": ["I'm going to call you tomorrow.", "You're going to call me tomorrow."], "answer": 0 },
+    { "es": "Quiero verla.", "options": ["I want to see him.", "She wants to see me.", "I want to see her."], "answer": 2 },
+    { "es": "Voy a llamarlo.", "options": ["I'm going to call him.", "I'm going to call her.", "He's going to call me."], "answer": 0 },
+    { "es": "Nos van a llamar.", "options": ["We're going to call them.", "They're going to call us."], "answer": 1 },
+    { "es": "¿Puedes ayudarme?", "options": ["Can I help you?", "Can you help me?", "Can you help him?"], "answer": 1 },
+    { "es": "¿La carta? Vale está leyéndola.", "options": ["The letter? Vale is reading it.", "The letter? Vale is going to read it.", "The letter? Vale read it."], "answer": 0 },
+    { "es": "No lo quiero ver.", "options": ["He doesn't want to see me.", "I don't want to see her.", "I don't want to see him."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Voy a ___ mañana.* (*te llamar* or *llamarte*) I'm going to call you tomorrow.",
+      "answer": "Voy a llamarte mañana.",
+      "accept": ["Te voy a llamar mañana."],
+      "why": "It can't sit between the verbs, so it glues onto *llamar*."
+    },
+    {
+      "prompt": "Pick the right one and type it: *¿Me estás escuchando?* or *¿Estás me escuchando?* Are you listening to me? (to a friend)",
+      "answer": "¿Me estás escuchando?",
+      "accept": ["¿Estás escuchándome?"],
+      "why": "In front of the first verb is always safe: *¿Me estás…?*"
+    },
+    {
+      "prompt": "I want to see you on Saturday. (to a friend)",
+      "answer": "Quiero verte el sábado.",
+      "accept": ["Te quiero ver el sábado."],
+      "why": "*Te* goes in front of *quiero* or on the end of *ver*."
+    },
+    {
+      "prompt": "The contract? I'm going to read it tonight.",
+      "answer": "¿El contrato? Voy a leerlo esta noche.",
+      "accept": ["¿El contrato? Lo voy a leer esta noche."],
+      "why": "*El contrato* is a *lo* word, and *lo* can go in either place."
+    },
+    {
+      "prompt": "Ask a friend: Can you help me?",
+      "answer": "¿Puedes ayudarme?",
+      "accept": ["¿Me puedes ayudar?"],
+      "why": "Help me: *me* in front of *puedes*, or on the end of *ayudar*."
+    },
+    {
+      "prompt": "Move the little word to the end: *Lo voy a pensar.*",
+      "answer": "Voy a pensarlo.",
+      "accept": [],
+      "why": "Glued onto the basic verb, same meaning."
+    },
+    {
+      "prompt": "Move the little word to the front: *No puedo creerlo.*",
+      "answer": "No lo puedo creer.",
+      "accept": [],
+      "why": "In front of the first verb, with *no* still leading."
+    },
+    {
+      "prompt": "Move the little word to the end: *Te estoy escuchando.*",
+      "answer": "Estoy escuchándote.",
+      "accept": [],
+      "why": "On the end of an -ando verb, add the accent: *escuchándote*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Voy a te llamar.",
+      "right": "Voy a llamarte.",
+      "why": "Almost. It goes in front of *voy* or on the end of *llamar*, never in between."
+    },
+    {
+      "wrong": "Quiero te ver.",
+      "right": "Quiero verte.",
+      "why": "English says want to see you; Spanish glues *te* onto *ver*, or puts it before *quiero*."
+    },
+    {
+      "wrong": "Estoy escuchandote.",
+      "right": "Estoy escuchándote.",
+      "why": "Gluing a word on moves the stress, so *escuchándote* needs its accent."
+    },
+    {
+      "wrong": "Voy a llamar te.",
+      "right": "Voy a llamarte.",
+      "why": "On the end means one word: *llamarte*, no space."
+    }
+  ],
+  "personal": "Write two plans for this week about people you know, one each way: *Voy a llamar…* with the little word glued on, and *Lo voy a…* or *La voy a…* with it in front."
+}

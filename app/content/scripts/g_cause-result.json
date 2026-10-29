@@ -1,0 +1,91 @@
+{
+  "node": "g:cause-result",
+  "hook": {
+    "line": "A message that says what happened is fine. A message that says why, and what happens next, is one people actually answer. Spanish has four little joiners for that.",
+    "es": "Como Altamira compró el edificio, Tomás está preocupado.",
+    "en": "Since Altamira bought the building, Tomás is worried."
+  },
+  "examples": [
+    { "es": "No voy porque no tengo plata.", "en": "I'm not going because I don't have any money." },
+    { "es": "Como llovía, no salimos.", "en": "As it was raining, we didn't go out." },
+    { "es": "No tengo plata, por eso no voy.", "en": "I don't have any money, that's why I'm not going." },
+    { "es": "Estoy cansado, así que me voy.", "en": "I'm tired, so I'm leaving. (a man speaking)" },
+    { "es": "El café cerró temprano porque no había clientes.", "en": "The café closed early because there were no customers." },
+    { "es": "¿Por qué estás cansada?\nPorque trabajé mucho.", "en": "Why are you tired? (to a woman friend)\nBecause I worked a lot." }
+  ],
+  "rule": "Two words give the reason:\n*porque*, because: after the main news. *No voy porque no tengo plata.*\n*como*, since or as: at the very start. *Como llovía, no salimos.*\n\nTwo words give the result:\n*por eso*, that's why\n*así que*, so\nThey come second, after a comma: *No tengo plata, por eso no voy.*\n\nThe one to watch is *como*. English can put since at the end; Spanish *como* only works at the front. If the reason comes second, switch to *porque*.\n\nAnd don't mix up the question with the answer. *¿Por qué?* is two words with an accent: why. *Porque* is one word, no accent: because.",
+  "smallPrint": "Teachers call *porque* and *como* causal connectors, and *por eso* and *así que* consecutive (result) connectors.",
+  "readAndPick": [
+    { "es": "Tomás está cansado, por eso Vale abre el café.", "options": ["Tomás is tired, that's why Vale is opening the café.", "Vale is opening the café, that's why Tomás is tired."], "answer": 0 },
+    { "es": "Vale está cansada porque abre el café.", "options": ["Vale is opening the café because she's tired.", "Vale is tired because she opens the café."], "answer": 1 },
+    { "es": "Como Hernando no vino, Mariana trabajó en el café.", "options": ["Since Mariana worked at the café, Hernando didn't come.", "Since Hernando didn't come, Mariana worked at the café."], "answer": 1 },
+    { "es": "Mariana no vino porque trabajó mucho.", "options": ["Mariana didn't come because she worked a lot.", "Mariana worked a lot because she didn't come."], "answer": 0 },
+    { "es": "Hernando no vino, así que Mariana trabajó en el café.", "options": ["Mariana worked at the café, so Hernando didn't come.", "Hernando came, but Mariana worked at the café.", "Hernando didn't come, so Mariana worked at the café."], "answer": 2 },
+    { "es": "¿Por qué estás triste?", "options": ["Why are you sad?", "Because you're sad."], "answer": 0 },
+    { "es": "Porque estás triste.", "options": ["Why are you sad?", "Because you're sad."], "answer": 1 },
+    { "es": "Como no tengo plata, no compro el carro.", "options": ["I'm not buying the car, so I have money.", "Since I don't have any money, I'm not buying the car.", "I don't have money because I bought the car."], "answer": 1 },
+    { "es": "El negocio no va bien, así que Tomás necesita un plan.", "options": ["Tomás needs a plan because the business is doing well.", "Tomás has a plan, so the business is doing well.", "The business isn't doing well, so Tomás needs a plan."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ llovía, no salimos.* (*Como* or *Porque*) As it was raining, we didn't go out.",
+      "answer": "Como llovía, no salimos.",
+      "accept": [],
+      "why": "The reason comes first, so it's *como*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *No salimos ___ llovía.* (*como* or *porque*) We didn't go out because it was raining.",
+      "answer": "No salimos porque llovía.",
+      "accept": [],
+      "why": "The reason comes second, so it's *porque*."
+    },
+    {
+      "prompt": "I don't have any money, that's why I'm not going.",
+      "answer": "No tengo plata, por eso no voy.",
+      "accept": ["No tengo dinero, por eso no voy."],
+      "why": "That's why is *por eso*, after a comma."
+    },
+    {
+      "prompt": "I'm tired, so I'm going home. (a man speaking)",
+      "answer": "Estoy cansado, así que voy a la casa.",
+      "accept": ["Estoy cansado, así que voy a casa.", "Estoy cansado, así que me voy a la casa.", "Estoy cansado, así que me voy a casa."],
+      "why": "So, for a result, is *así que*."
+    },
+    {
+      "prompt": "Ask a woman friend: Why are you tired?",
+      "answer": "¿Por qué estás cansada?",
+      "accept": [],
+      "why": "Why is two words with an accent: *¿Por qué…?*"
+    },
+    {
+      "prompt": "Start with *como*: *No fui porque estaba enfermo.*",
+      "answer": "Como estaba enfermo, no fui.",
+      "accept": [],
+      "why": "*Como* puts the reason first, then a comma, then what happened."
+    },
+    {
+      "prompt": "Use *por eso*: *Vale abre el café porque Tomás está cansado.*",
+      "answer": "Tomás está cansado, por eso Vale abre el café.",
+      "accept": [],
+      "why": "With *por eso* you start from the reason and land on the result."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No salimos, como llovía.",
+      "right": "No salimos porque llovía.",
+      "why": "Almost. *Como* only works at the front; when the reason comes second, use *porque*."
+    },
+    {
+      "wrong": "¿Porque estás cansada?",
+      "right": "¿Por qué estás cansada?",
+      "why": "Why, the question, is two words with an accent: *por qué*."
+    },
+    {
+      "wrong": "Estoy cansado, así me voy.",
+      "right": "Estoy cansado, así que me voy.",
+      "why": "So is *así que*; *así* on its own means like this."
+    }
+  ],
+  "personal": "Write one true sentence with a reason (*…porque…*) and one with a result (*…, así que…*) about your week."
+}

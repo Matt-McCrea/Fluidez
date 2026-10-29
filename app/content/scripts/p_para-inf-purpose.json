@@ -1,0 +1,88 @@
+{
+  "node": "p:para-inf-purpose",
+  "hook": {
+    "line": "You already say why with *porque*. Often, though, the real answer is a goal: what you're doing it for. Spanish gives goals their own word, *para*, and it's the shorter road.",
+    "es": "Tomás compró un celular nuevo para hablar con Vale.",
+    "en": "Tomás bought a new phone to talk to Vale."
+  },
+  "examples": [
+    { "es": "Estudio español para vivir aquí.", "en": "I'm studying Spanish to live here." },
+    { "es": "Estudio español porque quiero vivir aquí.", "en": "I'm studying Spanish because I want to live here." },
+    { "es": "Uso esta aplicación para mandar audios.", "en": "I use this app to send voice messages." },
+    { "es": "Vale abre temprano para hacer los pandebonos.", "en": "Vale opens early to make the pandebonos." },
+    { "es": "¿Para qué necesitas internet?\nPara mandar el mensaje.", "en": "What do you need the internet for? (to a friend)\nTo send the message." }
+  ],
+  "rule": "Two ways to explain why:\n*para* + the basic verb: the goal. *Estudio para vivir aquí.*\n*porque* + a full sentence with its own conjugated verb: the reason. *Estudio porque quiero vivir aquí.*\n\nAfter *para*, the verb stays in its dictionary form, never conjugated: *para mandar*, not *para mando*. After *porque*, you need a whole sentence: *porque quiero…*, *porque tengo…*.\n\nEnglish uses plain to for goals (to send, to live). In Spanish that to is always *para*. Ask about the goal with *¿Para qué…?*",
+  "readAndPick": [
+    { "es": "Tomás vino al café para hablar con Vale.", "options": ["Tomás came to the café to talk to Vale.", "Tomás came to the café because Vale called him."], "answer": 0 },
+    { "es": "Tomás vino al café porque Vale lo llamó.", "options": ["Tomás came to the café to call Vale.", "Tomás came to the café because Vale called him."], "answer": 1 },
+    { "es": "Mariana vino porque habló con Tomás.", "options": ["Mariana came to talk to Tomás.", "Mariana came because she talked to Tomás."], "answer": 1 },
+    { "es": "Mariana vino para hablar con Tomás.", "options": ["Mariana came to talk to Tomás.", "Mariana came because she talked to Tomás."], "answer": 0 },
+    { "es": "Vale abre temprano porque hace los pandebonos.", "options": ["Vale opens early to make the pandebonos.", "Vale opens early because she makes the pandebonos."], "answer": 1 },
+    { "es": "Mariana usa el celular para mandar audios.", "options": ["Mariana uses her phone because she sends voice messages.", "Mariana uses her phone to send voice messages.", "Mariana sends her phone in a voice message."], "answer": 1 },
+    { "es": "¿Para qué necesitas internet?", "options": ["Why don't you have internet?", "Do you need the internet?", "What do you need the internet for?"], "answer": 2 },
+    { "es": "Necesito la computadora para responder los mensajes.", "options": ["I need the computer to answer the messages.", "I need the computer because I have messages.", "The messages need the computer."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Estudio español ___ vivir aquí.* (*para* or *porque*) I'm studying Spanish to live here.",
+      "answer": "Estudio español para vivir aquí.",
+      "accept": [],
+      "why": "A goal with a basic verb (*vivir*) takes *para*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Ahorro ___ quiero viajar.* (*para* or *porque*) I'm saving because I want to travel.",
+      "answer": "Ahorro porque quiero viajar.",
+      "accept": [],
+      "why": "*Quiero* is a conjugated verb, so the reason needs *porque*."
+    },
+    {
+      "prompt": "I use this app to send voice messages.",
+      "answer": "Uso esta aplicación para mandar audios.",
+      "accept": [],
+      "why": "To send, as a goal, is *para mandar*."
+    },
+    {
+      "prompt": "Ask a friend: What do you need the internet for?",
+      "answer": "¿Para qué necesitas internet?",
+      "accept": [],
+      "why": "What for is *¿Para qué…?*, at the front."
+    },
+    {
+      "prompt": "Tomás came to the café to talk to Vale.",
+      "answer": "Tomás vino al café para hablar con Vale.",
+      "accept": [],
+      "why": "His goal: *para* + *hablar*."
+    },
+    {
+      "prompt": "Say it with *para* instead: *Tomás aprende español porque quiere hablar con los clientes.*",
+      "answer": "Tomás aprende español para hablar con los clientes.",
+      "accept": [],
+      "why": "With *para*, drop *quiere* and keep the basic verb."
+    },
+    {
+      "prompt": "Say it with *porque* instead: *Estudio español para vivir aquí.*",
+      "answer": "Estudio español porque quiero vivir aquí.",
+      "accept": [],
+      "why": "*Porque* needs a full sentence, so add *quiero*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estudio español para quiero vivir aquí.",
+      "right": "Estudio español para vivir aquí.",
+      "why": "Almost. *Para* takes the basic verb directly; a conjugated verb like *quiero* goes after *porque*."
+    },
+    {
+      "wrong": "Uso esta aplicación para mando audios.",
+      "right": "Uso esta aplicación para mandar audios.",
+      "why": "After *para*, the verb keeps its dictionary form: *mandar*."
+    },
+    {
+      "wrong": "Uso esta aplicación mandar audios.",
+      "right": "Uso esta aplicación para mandar audios.",
+      "why": "English says just to send; Spanish needs *para* in front."
+    }
+  ],
+  "personal": "Pick one thing you do every day and give both kinds of why: the goal with *para…* and the reason with *porque…*."
+}

@@ -1,0 +1,92 @@
+{
+  "node": "g:relative-que",
+  "hook": {
+    "line": "Tomás has news for Vale, and short separate sentences won't carry it. To say which letter, which man, which building, Spanish hangs the detail on the noun with one small word: *que*.",
+    "es": "La carta que encontré dice algo importante.",
+    "en": "The letter I found says something important."
+  },
+  "examples": [
+    { "es": "El señor que vende arepas es mi vecino.", "en": "The man who sells arepas is my neighbour." },
+    { "es": "La carta que encontré es de Rosa.", "en": "The letter I found is from Rosa." },
+    { "es": "Tengo una amiga que vive en Medellín.", "en": "I have a friend who lives in Medellín." },
+    { "es": "¿Dónde está el libro que te di?", "en": "Where's the book I gave you? (to a friend)" },
+    { "es": "No me gusta el café que venden aquí.", "en": "I don't like the coffee they sell here." },
+    { "es": "¿Conoces a la mujer que trabaja en la panadería?", "en": "Do you know the woman who works at the bakery? (to a friend)" },
+    { "es": "Los pandebonos que hace Vale son deliciosos.", "en": "The pandebonos Vale makes are delicious." }
+  ],
+  "rule": "To add detail to a person or a thing, put *que* right after it, then a little sentence about it:\n*el señor que vende arepas*, the man who sells arepas\n*la carta que encontré*, the letter I found\n\nEnglish has a choice of who, which, that, or nothing at all. Spanish has one word for every case: *que*. People, things, one or many, it never changes.\n\nThe big trap: English loves to drop it. The letter I found, the book I gave you. Spanish never drops it: *la carta que encontré*, *el libro que te di*.\n\nThe verb after *que* tells you who did it. *La carta que encontré* is the letter I found; *la carta que encontró* is the letter he or she found.",
+  "smallPrint": "Teachers call this a relative clause (*oración de relativo*), and *que* is the relative pronoun.",
+  "readAndPick": [
+    { "es": "El señor que vende arepas es mi vecino.", "options": ["The man who sells arepas is my neighbour.", "The man sells arepas to my neighbour.", "My neighbour sells arepas to the man."], "answer": 0 },
+    { "es": "La carta que encontré es de Rosa.", "options": ["The letter Rosa found is mine.", "The letter I found is from Rosa.", "I found a letter for Rosa."], "answer": 1 },
+    { "es": "La carta que encontró es de Rosa.", "options": ["The letter I found is from Rosa.", "The letter he found is from Rosa."], "answer": 1 },
+    { "es": "El señor que conoce a Vale vive aquí.", "options": ["The man who knows Vale lives here.", "The man Vale knows lives here."], "answer": 0 },
+    { "es": "Tengo una amiga que vive en Medellín.", "options": ["My friend and I live in Medellín.", "I have a friend in Medellín who has a house.", "I have a friend who lives in Medellín."], "answer": 2 },
+    { "es": "Los pandebonos que hace Vale son deliciosos.", "options": ["Vale says the pandebonos are delicious.", "The pandebonos Vale makes are delicious."], "answer": 1 },
+    { "es": "¿Dónde está el libro que te di?", "options": ["Where's the book I gave you?", "Where's the book you gave me?"], "answer": 0 },
+    { "es": "No me gusta el café que venden aquí.", "options": ["I don't like the coffee I sell here.", "They don't like the coffee here.", "I don't like the coffee they sell here."], "answer": 2 },
+    { "es": "El taxi que maneja Hernando es muy viejo.", "options": ["Hernando drives a very old taxi to work.", "The taxi Hernando drives is very old."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *La carta ___ encontré es de Rosa.* (*que* or nothing) The letter I found is from Rosa.",
+      "answer": "La carta que encontré es de Rosa.",
+      "accept": [],
+      "why": "English can drop the that; Spanish always keeps *que*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *La carta que ___ es de Rosa.* (*encontré* or *encontró*) The letter he found is from Rosa.",
+      "answer": "La carta que encontró es de Rosa.",
+      "accept": [],
+      "why": "He found is *encontró*; the verb after *que* shows who did it."
+    },
+    {
+      "prompt": "The man who sells arepas is my neighbour.",
+      "answer": "El señor que vende arepas es mi vecino.",
+      "accept": [],
+      "why": "Who, for a person, is still *que*."
+    },
+    {
+      "prompt": "I have a friend who lives in Medellín. (the friend is a woman)",
+      "answer": "Tengo una amiga que vive en Medellín.",
+      "accept": [],
+      "why": "*Que* follows the person straight away, then her verb: *vive*."
+    },
+    {
+      "prompt": "Ask a friend: Where's the book I gave you?",
+      "answer": "¿Dónde está el libro que te di?",
+      "accept": [],
+      "why": "The book I gave you: the book, then *que*, then *te di*."
+    },
+    {
+      "prompt": "Join them into one sentence: *Vale hace pandebonos. Los pandebonos son deliciosos.*",
+      "answer": "Los pandebonos que hace Vale son deliciosos.",
+      "accept": ["Los pandebonos que Vale hace son deliciosos."],
+      "why": "*Que* takes the place of the second *pandebonos* and joins the two ideas."
+    },
+    {
+      "prompt": "Make it plural: *El señor que vende arepas es mi vecino.*",
+      "answer": "Los señores que venden arepas son mis vecinos.",
+      "accept": [],
+      "why": "Everything around it becomes plural, but *que* stays exactly the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La carta encontré es de Rosa.",
+      "right": "La carta que encontré es de Rosa.",
+      "why": "Almost. English drops the that in the letter I found; Spanish can't drop *que*."
+    },
+    {
+      "wrong": "El señor quien vende arepas es mi vecino.",
+      "right": "El señor que vende arepas es mi vecino.",
+      "why": "Right after a person, who is plain *que*."
+    },
+    {
+      "wrong": "La mujer qué trabaja aquí es de Cali.",
+      "right": "La mujer que trabaja aquí es de Cali.",
+      "why": "This *que* adds detail, it doesn't ask anything, so it has no accent."
+    }
+  ],
+  "personal": "Write two sentences: one about a person you know (*Tengo un amigo que…* or *Tengo una amiga que…*) and one about something you own (*El celular que tengo…*)."
+}

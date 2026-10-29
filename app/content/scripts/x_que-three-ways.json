@@ -1,0 +1,91 @@
+{
+  "node": "x:que-three-ways",
+  "hook": {
+    "line": "Vale's messages are full of *que*, and it isn't always the same word. One asks, one adds detail, one passes on what someone thinks or says. The accent tells you which one is asking.",
+    "es": "¿Qué carta encontraste?",
+    "en": "Which letter did you find? (to a friend)"
+  },
+  "examples": [
+    { "es": "¿Qué libro quieres?", "en": "Which book do you want? (to a friend)" },
+    { "es": "El libro que quiero es de Rosa.", "en": "The book I want is Rosa's." },
+    { "es": "Creo que el libro es de Rosa.", "en": "I think the book is Rosa's." },
+    { "es": "¿Qué te dijo Vale?", "en": "What did Vale tell you? (to a friend)" },
+    { "es": "Vale dijo que viene mañana.", "en": "Vale said she's coming tomorrow." },
+    { "es": "La torta que hizo Vale está deliciosa.", "en": "The cake Vale made is delicious." }
+  ],
+  "rule": "Same sound, three jobs.\n\n*¿Qué…?* asks: what, which. This one, and only this one, wears an accent: *¿Qué libro quieres?*\n\n*que* after a person or thing adds detail: who, which, that. *El libro que quiero.*\n\n*que* after think, say or know joins on the thought: that. *Creo que es de Rosa.*\n\nA quick test: if you're asking, write *qué*. If it comes right after a noun, or after *creo*, *dice*, *sé*, it's *que* with no accent.\n\nThe last two have one more thing in common: English often leaves them out (the book I want, I think it's hers). Spanish never does.",
+  "smallPrint": "Teachers call these the interrogative *qué*, the relative *que* and the conjunction *que*.",
+  "readAndPick": [
+    { "es": "¿Qué pan compró Tomás?", "options": ["The bread Tomás bought.", "I think Tomás bought bread.", "Which bread did Tomás buy?"], "answer": 2 },
+    { "es": "El pan que compró Tomás está rico.", "options": ["The bread Tomás bought is tasty.", "Tomás says the bread is tasty.", "Which bread did Tomás buy?"], "answer": 0 },
+    { "es": "Tomás dice que el pan está rico.", "options": ["The bread Tomás bought is tasty.", "Tomás says the bread is tasty.", "Is the bread tasty, Tomás?"], "answer": 1 },
+    { "es": "¿Qué señora vino ayer?", "options": ["The lady who came yesterday is from Cali.", "I think the lady came yesterday.", "Which lady came yesterday?"], "answer": 2 },
+    { "es": "La señora que vino ayer es de Cali.", "options": ["The lady who came yesterday is from Cali.", "Which lady from Cali came yesterday?"], "answer": 0 },
+    { "es": "Creo que la señora vino ayer.", "options": ["The lady who came yesterday.", "I think the lady came yesterday.", "Which lady came yesterday?"], "answer": 1 },
+    { "es": "¿Qué escribió Mariana?", "options": ["What did Mariana write?", "Mariana wrote that.", "The thing Mariana wrote."], "answer": 0 },
+    { "es": "El libro que quiero es de Rosa.", "options": ["Which of Rosa's books do I want?", "The book I want is Rosa's.", "I think the book is Rosa's."], "answer": 1 },
+    { "es": "Creo que el libro es de Rosa.", "options": ["The book I want is Rosa's.", "Which book is Rosa's?", "I think the book is Rosa's."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *¿___ quieres tomar?* (*Que* or *Qué*) What do you want to drink? (to a friend)",
+      "answer": "¿Qué quieres tomar?",
+      "accept": [],
+      "why": "It's a question, so it takes the accent: *¿Qué…?*"
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Creo ___ tienes razón.* (*que* or *qué*) I think you're right.",
+      "answer": "Creo que tienes razón.",
+      "accept": [],
+      "why": "After *creo* it joins on the thought, so no accent."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *El café ___ venden aquí es muy bueno.* (*que* or *qué*) The coffee they sell here is very good.",
+      "answer": "El café que venden aquí es muy bueno.",
+      "accept": [],
+      "why": "Right after a thing, it adds detail: plain *que*."
+    },
+    {
+      "prompt": "Ask a friend: Which book do you want?",
+      "answer": "¿Qué libro quieres?",
+      "accept": [],
+      "why": "Which, in a question, is *¿Qué…?* with the accent."
+    },
+    {
+      "prompt": "The book I want is on the table.",
+      "answer": "El libro que quiero está en la mesa.",
+      "accept": [],
+      "why": "The book I want: English drops the that, Spanish keeps *que*."
+    },
+    {
+      "prompt": "Join them into one sentence: *Creo. Vale tiene razón.*",
+      "answer": "Creo que Vale tiene razón.",
+      "accept": [],
+      "why": "*Que* joins what you think to the thought, no accent."
+    },
+    {
+      "prompt": "Turn it into a question about which letter, to a friend: *Encontré una carta.*",
+      "answer": "¿Qué carta encontraste?",
+      "accept": [],
+      "why": "Asking which: *¿Qué carta…?*, with the accent and the verb for *tú*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Creo qué tienes razón.",
+      "right": "Creo que tienes razón.",
+      "why": "Almost. Nothing is being asked here, so *que* has no accent."
+    },
+    {
+      "wrong": "¿Que quieres tomar?",
+      "right": "¿Qué quieres tomar?",
+      "why": "A question word always carries its accent: *¿Qué…?*"
+    },
+    {
+      "wrong": "El libro quiero es de Rosa.",
+      "right": "El libro que quiero es de Rosa.",
+      "why": "The book I want: Spanish can't leave out *que*."
+    }
+  ],
+  "personal": "Write three short lines with three *que*'s: ask a friend a question with *¿Qué…?*, name something you like with *el… que…*, and say what you think with *Creo que…*."
+}
