@@ -2,7 +2,7 @@
   "id": "ch022",
   "unit": "u09",
   "title": "La rutina de la pizarra",
-  "text": "Día quince. En la pizarra del café no hay precios: hay una rutina.\n«5:00: me despierto y me levanto. 5:05: me ducho, me afeito y me peino. 5:15: desayuno. 12:00: almuerzo. 21:00: cena. 21:30: me cepillo los dientes. 22:00: me acuesto y duermo».\nVale: ¿Y no te vas a vestir?\nTomás: Me voy a vestir después del desayuno.\nHernando: Yo me despierto a las cinco y me levanto a las siete. Y no me peino: no tengo pelo.\nVale: ¿Y no te maquillas, Tomás?\nSimón: ¡Me maquillo! ¡Me maquillo!\nHernando: Yo me baño los domingos y me ducho los miércoles.\nVale: ¿Se baña solo dos días, don Hernando?\nHernando: Y me cepillo los dientes. Los seis.\nVale: Tomás, tu desayuno, tu almuerzo y tu cena son pan. Yo almuerzo a las tres, y cuando llego a casa, me acuesto y duermo.\nTomás toma la pizarra y escribe: «21:00: cena con Vale».\nVale mira la pizarra y no cambia nada.\nHernando: ¿Y los jueves, Tomás? Todos los jueves a las ocho, entras al cuarto de la harina y cierras la puerta.\nTomás: Hago las cuentas.\nVale: Las cuentas son a las cuatro.\nJueves, ocho menos cinco. Tomás entra con la computadora y cierra la puerta.",
+  "text": "Día quince. Hoy en la pizarra del café no hay precios. Tomás escribe su rutina:\n«5:00: me despierto y me levanto. 5:05: me ducho, me afeito y me peino. 5:15: desayuno. 12:00: almuerzo. 21:00: cena. 21:30: me cepillo los dientes. 22:00: me acuesto y duermo».\nVale: ¿Y no te vas a vestir?\nTomás: Me voy a vestir después del desayuno.\nHernando: Yo me despierto a las cinco y me levanto a las siete. Y no me peino: no tengo pelo.\nVale: ¿Y no te maquillas, Tomás?\nSimón: ¡Me maquillo! ¡Me maquillo!\nHernando: Yo me baño los domingos y me ducho los miércoles.\nVale: ¿Se baña solo dos días, don Hernando?\nHernando: Y me cepillo los dientes. Los seis.\nVale: Tomás, tu desayuno, tu almuerzo y tu cena son pan. Yo almuerzo a las tres, y cuando llego a casa, me acuesto y duermo.\nTomás toma la pizarra y escribe: «21:00: cena con Vale».\nVale mira la pizarra y no cambia nada.\nHernando: ¿Y los jueves, Tomás? Todos los jueves a las ocho, entras al cuarto de la harina y cierras la puerta.\nTomás: Hago las cuentas.\nVale: Las cuentas son a las cuatro.\nJueves, ocho menos cinco. Tomás entra con la computadora y cierra la puerta.",
   "gloss": [
     {
       "es": "la pizarra",
@@ -148,6 +148,7 @@
     "l:escribir",
     "l:hacer",
     "l:harina",
+    "l:hoy",
     "l:irse",
     "l:jueves",
     "l:levantarse",

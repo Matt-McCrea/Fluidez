@@ -2,11 +2,11 @@
   "id": "sc-u09-a",
   "unit": "u09",
   "title": "One bathroom, six people",
-  "brief": "You're Tomás. It's early at Doña Gloria's house, there is one bathroom for six people, and she wants a timetable. Tell her when you get up, shower, leave and go to bed, and find out what to do about the cold water. She's older than you, so use usted with her; she uses tú with you.",
+  "brief": "You're Tomás. It's early at Doña Gloria's house, there is one bathroom for six people, and she wants a timetable. Tell her when you get up, shower, leave and go to bed, and find out what to do about the cold water. She's older than you, so use usted with her; she uses usted with you too.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Tomás, buenos días. En esta casa hay un baño y somos seis. ¿A qué hora te levantas?",
+      "npc": "Tomás, buenos días. En esta casa hay un baño y somos seis. ¿A qué hora se levanta?",
       "npcEn": "Tomás, good morning. There's one bathroom in this house and there are six of us. What time do you get up?",
       "intent": "Say you get up at five.",
       "accept": [
@@ -28,7 +28,7 @@
     },
     {
       "id": "t2",
-      "npc": "¿A las cinco? ¿Y te duchas por la mañana o por la noche?",
+      "npc": "¿A las cinco? ¿Y se ducha por la mañana o por la noche?",
       "npcEn": "At five? And do you shower in the morning or at night?",
       "intent": "Say you shower in the morning, before going to the café.",
       "accept": [
@@ -49,7 +49,7 @@
     },
     {
       "id": "t3",
-      "npc": "Samuel se ducha a las seis y media, y mi esposo a las siete. ¿A qué hora sales de la casa?",
+      "npc": "Samuel se ducha a las seis y media, y mi esposo a las siete. ¿A qué hora sale de la casa?",
       "npcEn": "Samuel showers at half past six, and my husband at seven. What time do you leave the house?",
       "intent": "Say you leave at a quarter to six: you have to buy the bread.",
       "accept": [
@@ -95,13 +95,13 @@
     },
     {
       "id": "t5",
-      "npc": "Hay que esperar, o hay que ducharse por la noche. ¿A qué hora te acuestas?",
+      "npc": "Hay que esperar, o hay que ducharse por la noche. ¿A qué hora se acuesta?",
       "npcEn": "You have to wait, or you have to shower at night. What time do you go to bed?",
-      "intent": "Say you go to bed at ten, and you'll shower after dinner.",
+      "intent": "Say you go to bed at ten, so you shower after dinner.",
       "accept": [
         "Me acuesto a las diez. Me ducho después de cenar.",
         "A las diez. Me ducho después de cenar y me acuesto.",
-        "Me acuesto a las diez, entonces me ducho después de cenar."
+        "Me acuesto a las diez. Entonces me ducho después de cenar."
       ],
       "require": [
         {
@@ -123,8 +123,8 @@
     },
     {
       "id": "t6",
-      "npc": "Listo, te duchas a las nueve. Oye, ¿y el pan del café?",
-      "npcEn": "Done, you shower at nine. Hey, what about the bread for the café?",
+      "npc": "Listo, usted se ducha a las nueve. ¿Y el pan del café, Tomás?",
+      "npcEn": "Done, you shower at nine. And the bread for the café, Tomás?",
       "intent": "Say you're running late, and thank her.",
       "accept": [
         "¡Uy, se me hizo tarde! Gracias, doña Gloria.",
@@ -152,7 +152,6 @@
     "c:hay-que",
     "c:hola-buenos-dias",
     "c:normalmente",
-    "c:oiga-oye",
     "c:que-tengo-que-hacer",
     "c:se-me-hizo-tarde",
     "c:tengo",
@@ -195,7 +194,6 @@
     "l:mañana",
     "l:noche",
     "l:normalmente",
-    "l:oír",
     "l:pan",
     "l:qué",
     "l:salir",

@@ -2,7 +2,7 @@
   {
     "id": "w-u09-01",
     "unit": "u09",
-    "prompt": "Mariana asks what your mornings are like now that you run the café. Text her back, someone your age, in two short sentences.",
+    "prompt": "Mariana, a friend your age, asks what your mornings are like now that you run the café. Text her back in two short sentences.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -78,7 +78,7 @@
   {
     "id": "w-u09-03",
     "unit": "u09",
-    "prompt": "Don Hernando, an older man you would call usted, invites you to play chess tonight. You cannot: you have work to finish. Reply politely in two short sentences.",
+    "prompt": "Don Hernando, an older man you call usted, invites you to play parqués tonight. You can't: you have work to finish. Reply politely in two short sentences.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -131,21 +131,21 @@
         "label": "what they don't have to do with no tienes que"
       }
     ],
-    "model": "Hay que barrer antes de abrir. No tienes que planchar nada.",
+    "model": "Hay que barrer antes de abrir. No tienes que llegar a las cinco.",
     "focus": "g:tener-que-hay-que",
     "requires": [
       "c:hay",
       "c:hay-que",
       "c:tienes",
+      "g:gender-articles",
       "g:hay-vs-esta",
-      "g:negation-words",
       "g:prep-infinitive",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:abrir",
       "l:antes",
       "l:barrer",
-      "l:planchar",
+      "l:llegar",
       "l:tener"
     ]
   },
@@ -318,7 +318,7 @@
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\b(una|dos|tres|cuatro|cinco) veces (a|por) la semana\\b",
+        "pattern": "\\b(una vez|(dos|tres|cuatro|cinco|seis|siete) veces) (a|por) la semana\\b",
         "label": "say how many times a week"
       },
       {
@@ -419,7 +419,7 @@
   {
     "id": "w-u09-12",
     "unit": "u09",
-    "prompt": "A friend texts you: \"Is it true you get up at five every day?\" Answer with how you feel about it and when you go to bed. Someone your age, two sentences.",
+    "prompt": "A friend your age texts you: \"Is it true you get up at five every day?\" Answer in two sentences: react to it, and say when you go to bed.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [

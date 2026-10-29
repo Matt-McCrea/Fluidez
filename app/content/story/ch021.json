@@ -2,7 +2,7 @@
   "id": "ch021",
   "unit": "u09",
   "title": "Agua fría",
-  "text": "Tomás: ¡Aaay!\nGloria: ¡Hoy sí hay agua, Tomás!\nTomás: ¡Pero está fría! ¿Y el jabón? ¿Y la toalla?\nGloria: El jabón y la toalla están en el armario.\nTomás mira el reloj: son las cinco y veinte. Es el día uno.\nTomás: ¡Uy, se me hizo tarde!\nGloria: ¡Tomás! ¡El pan del café!\nTomás: ¡Ya voy, ya voy!\nTomás baja la escalera con la toalla en la cabeza.\nSon las seis menos cinco. Vale mira el reloj de la pared.\nVale: Llegas temprano, Tomás. Muy temprano.\nTomás: Mañana llego a las cinco.\nSimón: ¡Qué pereza! ¡Qué pereza!\nHernando: ¿Y esa cara, Tomás?\nTomás: Agua fría, don Hernando.\nA las cuatro, Tomás hace las cuentas en la computadora. A las cinco juega parqués con Hernando, y pierde.\nVale saca un reloj viejo de la vitrina.\nVale: Es el reloj de Rosa. Rosa nunca llegó tarde. Ni un día en cuarenta años.\nEn su cuarto, Tomás tiene dos correos. Uno es de Altamira, y Tomás no lo abre. El otro es de Toronto: «Entrevista de trabajo. Jueves, ocho de la noche».\nTomás mira el reloj de Rosa. Después escribe una palabra: «Sí».\nY se va a la cama.",
+  "text": "Tomás: ¡Aaay!\nGloria: ¡Hoy sí hay agua, Tomás!\nTomás: ¡Pero está fría! ¿Y el jabón? ¿Y la toalla?\nGloria: El jabón y la toalla están en el armario.\nTomás mira el reloj: son las cinco y veinte. Es el día uno.\nTomás: ¡Uy, se me hizo tarde!\nGloria: ¡Tomás! ¡El pan del café!\nTomás: ¡Ya voy, ya voy!\nTomás baja la escalera con la toalla en la cabeza.\nSon las seis menos cinco. Vale mira el reloj de la pared.\nVale: Llegas temprano, Tomás. Muy temprano.\nTomás: Mañana llego a las cinco.\nSimón: ¡Qué pereza! ¡Qué pereza!\nHernando: ¿Y esa cara, Tomás?\nTomás: Agua fría, don Hernando.\nA las cuatro, Tomás hace las cuentas en la computadora. A las cinco juega parqués con Hernando, y pierde.\nVale saca un reloj viejo de la vitrina.\nVale: Es el reloj de Rosa. Rosa nunca llegó tarde. Ni un día en cuarenta años.\nVale: Ahora es tu reloj, Tomás.\nEn su cuarto, Tomás tiene dos correos. Uno es de Altamira, y Tomás no lo abre. El otro es de Toronto: «Entrevista de trabajo. Jueves, ocho de la noche».\nTomás mira el reloj de Rosa. Después escribe una palabra: «Sí».\nY se va a la cama.",
   "gloss": [
     {
       "es": "¡Aaay!",
@@ -144,6 +144,7 @@
   "lexemes": [
     "l:abrir",
     "l:agua",
+    "l:ahora",
     "l:armario",
     "l:año",
     "l:bajar",

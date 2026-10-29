@@ -333,7 +333,7 @@
   {
     "id": "u09-0015",
     "es": "Tomás, ¿te peinas o qué?\nMe peino, me peino.",
-    "en": "Tomás, are you going to comb your hair or what?\nI'm combing it, I'm combing it.",
+    "en": "Tomás, are you combing your hair or what?\nI'm combing it, I'm combing it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -476,7 +476,7 @@
   {
     "id": "u09-0021",
     "es": "Me limpio las manos con la toalla.",
-    "en": "I dry my hands on the towel.",
+    "en": "I wipe my hands on the towel.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -839,19 +839,18 @@
   },
   {
     "id": "u09-0037",
-    "es": "Ayer me levanté a las cinco y estoy cansado.",
-    "en": "Yesterday I got up at five and I'm tired.",
+    "es": "Hoy me levanté a las cinco y estoy cansado.",
+    "en": "Today I got up at five and I'm tired.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
       "g:estar-location-states",
       "g:gender-articles",
       "g:preterite-ar",
       "g:reflexive-routine",
-      "l:ayer",
       "l:cansado",
       "l:estar",
+      "l:hoy",
       "l:levantarse"
     ],
     "targets": [
@@ -891,16 +890,17 @@
   },
   {
     "id": "u09-0039",
-    "es": "Hoy me bañé en la noche.",
-    "en": "Today I took a bath at night.",
+    "es": "Ayer me bañé por la noche.",
+    "en": "Yesterday I bathed at night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "g:gender-articles",
       "g:preterite-ar",
       "g:reflexive-routine",
+      "l:ayer",
       "l:bañarse",
-      "l:hoy",
       "l:noche"
     ],
     "targets": [
@@ -1770,19 +1770,18 @@
   },
   {
     "id": "u09-0077",
-    "es": "Hay que pedir la cuenta en la caja.",
-    "en": "You have to ask for the bill at the register.",
+    "es": "Aquí hay que pedir y pagar primero.",
+    "en": "Here you have to order and pay first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "c:hay-que",
-      "c:la-cuenta",
-      "g:gender-articles",
       "g:verb-infinitive",
-      "l:caja",
-      "l:cuenta",
-      "l:pedir"
+      "l:aquí",
+      "l:pagar",
+      "l:pedir",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "l:pedir"
@@ -1866,21 +1865,17 @@
   },
   {
     "id": "u09-0081",
-    "es": "Hoy tengo que perder cinco minutos en el banco.",
-    "en": "Today I have to waste five minutes at the bank.",
+    "es": "Siempre pierdo media hora en el banco.",
+    "en": "I always waste half an hour at the bank.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
-      "c:tengo-que",
       "g:gender-articles",
-      "g:verb-infinitive",
-      "g:yo-irregular",
+      "g:stem-boot",
       "l:banco",
-      "l:hoy",
-      "l:minuto",
+      "l:hora",
       "l:perder",
-      "l:tener"
+      "l:siempre"
     ],
     "targets": [
       "l:perder"
@@ -1959,7 +1954,7 @@
   },
   {
     "id": "u09-0085",
-    "es": "El oficio de la casa es de todos.",
+    "es": "Los oficios de la casa son de todos.",
     "en": "The housework is everybody's job.",
     "accept": [],
     "acceptEn": [],
@@ -2261,14 +2256,14 @@
   },
   {
     "id": "u09-0099",
-    "es": "Es medio día, hora de almorzar.",
-    "en": "It's midday, time for lunch.",
+    "es": "Son las doce y media: hora de almorzar.",
+    "en": "It's half past twelve: time for lunch.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
       "l:almorzar",
-      "l:día",
       "l:hora",
       "l:ser"
     ],
@@ -2282,19 +2277,20 @@
   },
   {
     "id": "u09-0100",
-    "es": "Tomás tiene medio café lleno de cuentas.",
-    "en": "Tomás has half a café full of bills.",
+    "es": "Tomás solo come medio pan en el desayuno.",
+    "en": "Tomás only eats half a bread roll for breakfast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
-      "g:stem-boot",
-      "l:café",
-      "l:cuenta",
-      "l:lleno",
-      "l:tener"
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:comer",
+      "l:desayuno",
+      "l:pan"
     ],
-    "targets": [],
+    "targets": [
+      "g:present-er-ir"
+    ],
     "kind": "statement",
     "unit": "u09",
     "theme": "obligations and chores",
@@ -3481,17 +3477,20 @@
   },
   {
     "id": "u09-0155",
-    "es": "El partido empieza a las cuatro.",
-    "en": "The game starts at four.",
+    "es": "La reunión de vecinos empieza a las cuatro.",
+    "en": "The neighbors' meeting starts at four.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
       "l:empezar",
-      "l:partido"
+      "l:reunión",
+      "l:vecino"
     ],
-    "targets": [],
+    "targets": [
+      "g:stem-boot"
+    ],
     "kind": "statement",
     "unit": "u09",
     "theme": "telling the time",
@@ -4195,7 +4194,7 @@
   {
     "id": "u09-0189",
     "es": "Por la tarde llueve casi siempre en Bogotá.",
-    "en": "In the afternoon it rains almost always in Bogotá.",
+    "en": "In the afternoon it almost always rains in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4588,8 +4587,8 @@
   },
   {
     "id": "u09-0209",
-    "es": "Tomás empezó a entender el reloj de Rosa.",
-    "en": "Tomás started to understand Rosa's clock.",
+    "es": "Tomás empezó a usar el reloj de Rosa.",
+    "en": "Tomás started wearing Rosa's watch.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4597,8 +4596,8 @@
       "g:preterite-ar",
       "g:verb-infinitive",
       "l:empezar",
-      "l:entender",
-      "l:reloj"
+      "l:reloj",
+      "l:usar"
     ],
     "targets": [
       "l:reloj"
@@ -4920,7 +4919,7 @@
   {
     "id": "u09-0225",
     "es": "No como pescado nunca.",
-    "en": "I never eat fish. (with the verb first)",
+    "en": "I don't ever eat fish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4929,7 +4928,9 @@
       "l:comer",
       "l:pescado"
     ],
-    "targets": [],
+    "targets": [
+      "g:negation-words"
+    ],
     "kind": "statement",
     "unit": "u09",
     "theme": "how often",
@@ -5562,7 +5563,7 @@
   {
     "id": "u09-0255",
     "es": "Todos los días son iguales aquí.",
-    "en": "All the days are the same here.",
+    "en": "Every day is the same here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5935,7 +5936,7 @@
   {
     "id": "u09-0271",
     "es": "Cuando Vale cocina, toda la calle lo sabe.",
-    "en": "When Vale bakes, the whole street knows it.",
+    "en": "When Vale cooks, the whole street knows it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6460,17 +6461,19 @@
   },
   {
     "id": "u09-0296",
-    "es": "Siento no llamar antes.",
-    "en": "Sorry I didn't call earlier.",
+    "es": "Siento llamar tan tarde.",
+    "en": "Sorry for calling so late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
-      "l:antes",
       "l:llamar",
-      "l:sentir"
+      "l:sentir",
+      "l:tarde"
     ],
-    "targets": [],
+    "targets": [
+      "g:stem-boot"
+    ],
     "kind": "statement",
     "unit": "u09",
     "theme": "how often",
@@ -6786,7 +6789,7 @@
   {
     "id": "u09-0311",
     "es": "¿Vamos a correr?\nQué pereza.",
-    "en": "Shall we go for a run?\nUgh, no.",
+    "en": "Shall we go for a run?\nUgh, can't be bothered.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6971,18 +6974,19 @@
   },
   {
     "id": "u09-0319",
-    "es": "Al abrir el café, Vale ya está en la cocina.",
-    "en": "When I open the café, Vale is already in the kitchen.",
+    "es": "Al abrir el café, Tomás ya tiene el pan.",
+    "en": "When he opens the café, Tomás already has the bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
+      "c:tienes",
       "g:gender-articles",
       "g:prep-infinitive",
+      "g:stem-boot",
       "l:abrir",
       "l:café",
-      "l:cocina",
-      "l:estar"
+      "l:pan",
+      "l:tener"
     ],
     "targets": [
       "g:prep-infinitive"
@@ -6994,18 +6998,18 @@
   },
   {
     "id": "u09-0320",
-    "es": "Antes de dormir, leo un rato.",
-    "en": "Before sleeping, I read for a while.",
+    "es": "Antes de dormir, escribo en mi cuaderno.",
+    "en": "Before sleeping, I write in my notebook.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:prep-infinitive",
       "g:present-er-ir",
       "l:antes",
+      "l:cuaderno",
       "l:dormir",
-      "l:leer",
-      "l:rato"
+      "l:escribir",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:prep-infinitive",
@@ -7198,7 +7202,7 @@
   {
     "id": "u09-0328",
     "es": "Al oír el reloj, Tomás se levanta.",
-    "en": "On hearing the alarm, Tomás gets up.",
+    "en": "When he hears the clock, Tomás gets up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7223,24 +7227,19 @@
   },
   {
     "id": "u09-0329",
-    "es": "Al despertar, no sé qué hora es.",
-    "en": "On waking up, I don't know what time it is.",
+    "es": "Al despertar, busco el reloj.",
+    "en": "On waking up, I look for the clock.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
-      "c:que-hora-es",
       "g:gender-articles",
       "g:prep-infinitive",
-      "g:yo-irregular",
+      "g:present-ar",
+      "l:buscar",
       "l:despertarse",
-      "l:hora",
-      "l:qué",
-      "l:saber",
-      "l:ser"
+      "l:reloj"
     ],
     "targets": [
-      "c:que-hora-es",
       "g:prep-infinitive",
       "l:despertarse"
     ],
@@ -7317,7 +7316,7 @@
   {
     "id": "u09-0333",
     "es": "Vale cocina sin hablar.",
-    "en": "Vale bakes without talking.",
+    "en": "Vale cooks without talking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7387,8 +7386,8 @@
   },
   {
     "id": "u09-0336",
-    "es": "Salí del banco sin pagar la cuenta.",
-    "en": "I left the bank without paying the bill.",
+    "es": "Salí del café sin pagar la cuenta.",
+    "en": "I left the café without paying the bill.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7396,7 +7395,7 @@
       "g:gender-articles",
       "g:prep-infinitive",
       "g:preterite-er-ir",
-      "l:banco",
+      "l:café",
       "l:cuenta",
       "l:pagar",
       "l:salir"
@@ -7916,7 +7915,7 @@
   },
   {
     "id": "u09-0357",
-    "es": "Antes de maquillarse, Vale lava la cara.",
+    "es": "Antes de maquillarse, Vale se lava la cara.",
     "en": "Before putting on make-up, Vale washes her face.",
     "accept": [],
     "acceptEn": [],
@@ -7927,13 +7926,12 @@
       "g:reflexive-routine",
       "l:antes",
       "l:cara",
-      "l:lavar",
+      "l:lavarse",
       "l:maquillarse"
     ],
     "targets": [
       "g:prep-infinitive",
       "g:reflexive-routine",
-      "l:lavar",
       "l:maquillarse"
     ],
     "kind": "statement",
@@ -8050,18 +8048,19 @@
   },
   {
     "id": "u09-0362",
-    "es": "Antes de acostarse, Tomás mira el reloj de Rosa.",
-    "en": "Before going to bed, Tomás looks at Rosa's clock.",
+    "es": "Antes de acostarse, Tomás deja el reloj de Rosa en la mesa.",
+    "en": "Before going to bed, Tomás leaves Rosa's watch on the table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:oye-mira",
       "g:gender-articles",
       "g:prep-infinitive",
+      "g:present-ar",
       "g:reflexive-routine",
       "l:acostarse",
       "l:antes",
-      "l:mirar",
+      "l:dejar",
+      "l:mesa",
       "l:reloj"
     ],
     "targets": [
@@ -8325,20 +8324,20 @@
   },
   {
     "id": "u09-0373",
-    "es": "¿Dónde estás al salir del banco?\nEn el centro.",
-    "en": "Where are you when you leave the bank?\nDowntown.",
+    "es": "¿Me llamas al salir del banco?\nSí, claro.",
+    "en": "Will you call me when you leave the bank?\nYes, of course.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
+      "c:claro-listo",
       "g:gender-articles",
       "g:prep-infinitive",
-      "g:questions",
+      "g:present-ar",
       "l:banco",
-      "l:centro",
-      "l:dónde",
-      "l:estar",
-      "l:salir"
+      "l:claro",
+      "l:llamar",
+      "l:salir",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:prep-infinitive"
@@ -8536,8 +8535,8 @@
   },
   {
     "id": "u09-0381",
-    "es": "No me lavo las manos en el baño del café.",
-    "en": "I don't wash my hands in the café's bathroom.",
+    "es": "Me lavo las manos en la cocina, no en el baño.",
+    "en": "I wash my hands in the kitchen, not in the bathroom.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8545,7 +8544,7 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:baño",
-      "l:café",
+      "l:cocina",
       "l:lavarse",
       "l:mano",
       "p:lavarse-las-manos"
@@ -8761,8 +8760,8 @@
   },
   {
     "id": "u09-0390",
-    "es": "Tomás se cepilla los dientes en la cocina.",
-    "en": "Tomás brushes his teeth in the kitchen.",
+    "es": "Tomás se cepilla los dientes en dos minutos.",
+    "en": "Tomás brushes his teeth in two minutes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8770,8 +8769,8 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:cepillarse",
-      "l:cocina",
-      "l:diente"
+      "l:diente",
+      "l:minuto"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -9023,8 +9022,8 @@
   },
   {
     "id": "u09-0401",
-    "es": "Me lavo el pelo con champú.",
-    "en": "I wash my hair with shampoo.",
+    "es": "¿Con qué champú te lavas el pelo?",
+    "en": "What shampoo do you wash your hair with? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9033,30 +9032,29 @@
       "g:reflexive-routine",
       "l:champú",
       "l:lavarse",
-      "l:pelo"
+      "l:pelo",
+      "l:qué",
+      "p:prep-questions-basic"
     ],
     "targets": [
       "g:reflexive-routine",
       "l:champú"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u09",
     "theme": "washing hands and teeth",
     "source": "gen"
   },
   {
     "id": "u09-0402",
-    "es": "Hernando no usa champú: no tiene pelo.",
-    "en": "Hernando doesn't use shampoo: he has no hair.",
+    "es": "Hernando no usa champú: usa jabón.",
+    "en": "Hernando doesn't use shampoo: he uses soap.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:present-ar",
-      "g:stem-boot",
       "l:champú",
-      "l:pelo",
-      "l:tener",
+      "l:jabón",
       "l:usar"
     ],
     "targets": [
@@ -9185,8 +9183,8 @@
   },
   {
     "id": "u09-0408",
-    "es": "¿Me pasa un jabón, por favor?",
-    "en": "Could you pass me a soap, please? (polite)",
+    "es": "¿Me pasa el jabón, por favor?",
+    "en": "Could you pass me the soap, please? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9707,8 +9705,8 @@
   },
   {
     "id": "u09-0431",
-    "es": "Debe llegar a las cinco.",
-    "en": "He should arrive at five.",
+    "es": "Vale debe llegar a las cinco.",
+    "en": "Vale should arrive at five.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9906,7 +9904,7 @@
   {
     "id": "u09-0440",
     "es": "Vale no debe cocinar sola.",
-    "en": "Vale shouldn't bake alone.",
+    "en": "Vale shouldn't cook alone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10409,8 +10407,8 @@
   },
   {
     "id": "u09-0462",
-    "es": "Debe estar en la oficina a las ocho.",
-    "en": "He has to be at the office at eight.",
+    "es": "Mi papá debe estar en la oficina a las ocho.",
+    "en": "My dad has to be at the office at eight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10420,7 +10418,9 @@
       "g:tener-que-hay-que",
       "l:deber",
       "l:estar",
-      "l:oficina"
+      "l:oficina",
+      "l:papá",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10507,8 +10507,8 @@
   },
   {
     "id": "u09-0466",
-    "es": "Debemos vender el café o no.",
-    "en": "We should sell the café or not.",
+    "es": "¿Debemos vender el café o no?",
+    "en": "Should we sell the café or not?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10522,7 +10522,7 @@
     "targets": [
       "g:tener-que-hay-que"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u09",
     "theme": "should and must",
     "source": "gen"
@@ -10572,22 +10572,21 @@
   },
   {
     "id": "u09-0469",
-    "es": "Los clientes deben pagar en la caja.",
-    "en": "Customers must pay at the register.",
+    "es": "Los clientes no deben entrar a la cocina.",
+    "en": "Customers mustn't go into the kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
       "g:tener-que-hay-que",
-      "l:caja",
       "l:cliente",
+      "l:cocina",
       "l:deber",
-      "l:pagar"
+      "l:entrar"
     ],
     "targets": [
-      "g:tener-que-hay-que",
-      "l:pagar"
+      "g:tener-que-hay-que"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -10806,8 +10805,8 @@
   },
   {
     "id": "u09-0479",
-    "es": "Debo recordar las llaves.",
-    "en": "I must remember the keys.",
+    "es": "No debo perder las llaves otra vez.",
+    "en": "I mustn't lose the keys again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10816,7 +10815,8 @@
       "g:tener-que-hay-que",
       "l:deber",
       "l:llave",
-      "l:recordar"
+      "l:perder",
+      "l:vez"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10896,15 +10896,17 @@
   },
   {
     "id": "u09-0483",
-    "es": "Debe explicar eso otra vez.",
-    "en": "He should explain that again.",
+    "es": "El profesor debe explicar eso otra vez.",
+    "en": "The teacher should explain that again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-er-ir",
       "g:tener-que-hay-que",
       "l:deber",
       "l:explicar",
+      "l:profesor",
       "l:vez",
       "p:demonstratives-basic"
     ],
@@ -11185,7 +11187,7 @@
   {
     "id": "u09-0496",
     "es": "¿El champú? Lo uso poco.",
-    "en": "The shampoo? I use it little.",
+    "en": "The shampoo? I don't use it much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11275,17 +11277,16 @@
   },
   {
     "id": "u09-0500",
-    "es": "Los quiero grandes.",
-    "en": "I want them big.",
+    "es": "Los quiero mucho.",
+    "en": "I love them very much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quiero",
-      "g:adjective-agreement",
       "g:direct-objects",
       "g:stem-boot",
-      "l:grande",
-      "l:querer"
+      "l:querer",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:direct-objects"
@@ -11297,14 +11298,18 @@
   },
   {
     "id": "u09-0501",
-    "es": "Las quiero frías.",
-    "en": "I want them cold.",
+    "es": "¿Las cervezas? Las quiero bien frías.",
+    "en": "The beers? I want them really cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "c:quiero",
       "g:direct-objects",
+      "g:gender-articles",
       "g:stem-boot",
+      "l:bien",
+      "l:cerveza",
       "l:frío",
       "l:querer"
     ],
@@ -11339,17 +11344,17 @@
   },
   {
     "id": "u09-0503",
-    "es": "La tengo en la oficina.",
-    "en": "I have it at the office.",
+    "es": "¿Tu chaqueta? La tiene Vale.",
+    "en": "Your jacket? Vale has it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "c:tienes",
       "g:direct-objects",
-      "g:gender-articles",
-      "g:yo-irregular",
-      "l:oficina",
-      "l:tener"
+      "g:stem-boot",
+      "l:chaqueta",
+      "l:tener",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:direct-objects"
@@ -11799,22 +11804,19 @@
   },
   {
     "id": "u09-0524",
-    "es": "Siento llegar tarde a la reunión.",
-    "en": "Sorry I'm late for the meeting.",
+    "es": "Siento llamar a esta hora.",
+    "en": "Sorry for calling at this hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:stem-boot",
-      "l:llegar",
-      "l:reunión",
+      "l:hora",
+      "l:llamar",
       "l:sentir",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "p:demonstratives-basic"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -11823,23 +11825,21 @@
   },
   {
     "id": "u09-0525",
-    "es": "Siento llegar tarde a la cena.",
-    "en": "Sorry I'm late for dinner.",
+    "es": "Siento no poder ir a cenar.",
+    "en": "Sorry I can't come to dinner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:ir-a-plans",
       "g:stem-boot",
-      "l:cena",
-      "l:llegar",
-      "l:sentir",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:verb-infinitive",
+      "l:cenar",
+      "l:ir",
+      "l:poder",
+      "l:sentir"
     ],
     "targets": [
-      "l:cena",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:ir-a-plans"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -11848,22 +11848,17 @@
   },
   {
     "id": "u09-0526",
-    "es": "Siento llegar tarde a la clase.",
-    "en": "Sorry I'm late for class.",
+    "es": "Siento hablar tanto.",
+    "en": "Sorry for talking so much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:stem-boot",
-      "l:clase",
-      "l:llegar",
-      "l:sentir",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "l:hablar",
+      "l:sentir"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -11872,21 +11867,21 @@
   },
   {
     "id": "u09-0527",
-    "es": "Siento llegar tarde hoy.",
-    "en": "Sorry I'm late today.",
+    "es": "Siento llamar tan temprano, pero hay un problema.",
+    "en": "Sorry for calling so early, but there's a problem.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "g:hay-vs-esta",
       "g:stem-boot",
-      "l:hoy",
-      "l:llegar",
+      "l:llamar",
+      "l:problema",
       "l:sentir",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "l:temprano"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "c:hay"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -11895,21 +11890,19 @@
   },
   {
     "id": "u09-0528",
-    "es": "Siento llegar muy tarde.",
-    "en": "I'm sorry I'm arriving so late.",
+    "es": "Siento no tener pan hoy.",
+    "en": "Sorry I don't have any bread today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
-      "l:llegar",
+      "l:hoy",
+      "l:pan",
       "l:sentir",
-      "l:tarde",
-      "p:quantifiers-basic",
-      "p:siento-llegar-tarde"
+      "l:tener"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -11992,25 +11985,23 @@
   },
   {
     "id": "u09-0532",
-    "es": "Siento llegar tarde, pero hoy tuve mucho trabajo.",
-    "en": "Sorry I'm late, but I had a lot of work today.",
+    "es": "Siento decir esto, pero el tinto está frío.",
+    "en": "Sorry to say this, but the coffee is cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-irregular-strong",
+      "g:estar-location-states",
+      "g:gender-articles",
       "g:stem-boot",
-      "l:hoy",
-      "l:llegar",
+      "l:decir",
+      "l:estar",
+      "l:frío",
       "l:sentir",
-      "l:tarde",
-      "l:tener",
-      "l:trabajo",
-      "p:quantifiers-basic",
-      "p:siento-llegar-tarde"
+      "l:tinto",
+      "p:demonstratives-basic"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:estar-location-states"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12019,26 +12010,25 @@
   },
   {
     "id": "u09-0533",
-    "es": "Siento llegar tarde: se me hizo tarde en el banco.",
-    "en": "Sorry I'm late: I got held up at the bank.",
+    "es": "Siento irme tan temprano: mañana tengo que madrugar.",
+    "en": "Sorry to leave so early: tomorrow I have to get up early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:se-me-hizo-tarde",
-      "g:gender-articles",
-      "g:se-accidental",
+      "c:tengo",
+      "c:tengo-que",
       "g:stem-boot",
-      "l:banco",
-      "l:hacerse",
-      "l:llegar",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:irse",
+      "l:madrugar",
+      "l:mañana",
       "l:sentir",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "l:temprano",
+      "l:tener"
     ],
     "targets": [
-      "c:se-me-hizo-tarde",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "c:tengo"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12102,22 +12092,20 @@
   },
   {
     "id": "u09-0536",
-    "es": "Siento llegar tarde al café.",
-    "en": "Sorry I'm late to the café.",
+    "es": "Disculpe la demora, señor.",
+    "en": "Sorry for the delay, sir.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:perdon-disculpe",
+      "g:commands-usted",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:café",
-      "l:llegar",
-      "l:sentir",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "l:demora",
+      "l:disculpar",
+      "l:señor"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "c:perdon-disculpe"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12126,22 +12114,19 @@
   },
   {
     "id": "u09-0537",
-    "es": "Siento llegar tarde a la panadería.",
-    "en": "Sorry I'm late to the bakery.",
+    "es": "Disculpe la hora, doña Gloria.",
+    "en": "Sorry about the time, doña Gloria.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:perdon-disculpe",
+      "g:commands-usted",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:llegar",
-      "l:panadería",
-      "l:sentir",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "l:disculpar",
+      "l:hora"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "c:perdon-disculpe"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12150,22 +12135,22 @@
   },
   {
     "id": "u09-0538",
-    "es": "Siento llegar tarde a la oficina.",
-    "en": "Sorry I'm late to the office.",
+    "es": "Disculpa la demora, ya voy.",
+    "en": "Sorry for the delay, I'm coming. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:voy-vas",
+      "c:ya-voy",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:llegar",
-      "l:oficina",
-      "l:sentir",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:ir-a-plans",
+      "g:present-ar",
+      "l:demora",
+      "l:disculpar",
+      "l:ir"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "c:ya-voy"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12174,22 +12159,19 @@
   },
   {
     "id": "u09-0539",
-    "es": "Siento llegar tarde a tu fiesta.",
-    "en": "Sorry I'm late to your party.",
+    "es": "Siento no ir a tu fiesta.",
+    "en": "Sorry I'm not going to your party. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
       "l:fiesta",
-      "l:llegar",
+      "l:ir",
       "l:sentir",
-      "l:tarde",
-      "p:possessives-basic",
-      "p:siento-llegar-tarde"
+      "p:possessives-basic"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12224,21 +12206,19 @@
   },
   {
     "id": "u09-0541",
-    "es": "Siento llegar tarde, mamá.",
-    "en": "Sorry I'm late, Mom.",
+    "es": "Siento llamar poco, mamá.",
+    "en": "Sorry I don't call much, Mom.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
-      "l:llegar",
+      "l:llamar",
       "l:mamá",
       "l:sentir",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12247,20 +12227,19 @@
   },
   {
     "id": "u09-0542",
-    "es": "Siento llegar tarde, Mariana.",
-    "en": "Sorry I'm late, Mariana.",
+    "es": "Siento no saber tu nombre.",
+    "en": "Sorry I don't know your name. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
-      "l:llegar",
+      "l:nombre",
+      "l:saber",
       "l:sentir",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "p:possessives-basic"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12269,21 +12248,19 @@
   },
   {
     "id": "u09-0543",
-    "es": "Siento llegar tarde, señora Gloria.",
-    "en": "Sorry I'm late, Mrs. Gloria.",
+    "es": "Siento usar su toalla, doña Gloria.",
+    "en": "Sorry for using your towel, doña Gloria.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
-      "l:llegar",
       "l:sentir",
-      "l:señora",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "l:toalla",
+      "l:usar",
+      "p:possessives-basic"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12363,23 +12340,24 @@
   },
   {
     "id": "u09-0547",
-    "es": "Siento llegar tarde.\nNo pasa nada.",
-    "en": "Sorry I'm late.\nIt's nothing.",
+    "es": "Disculpa la hora.\nTranquila, todavía no me acuesto.",
+    "en": "Sorry about the time.\nDon't worry, I'm not in bed yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negation-words",
+      "c:todavia-no",
+      "c:tranquilo",
+      "g:gender-articles",
       "g:present-ar",
+      "g:reflexive-routine",
       "g:stem-boot",
-      "l:llegar",
-      "l:pasar",
-      "l:sentir",
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "l:acostarse",
+      "l:disculpar",
+      "l:hora",
+      "l:tranquilo"
     ],
     "targets": [
-      "l:tarde",
-      "p:siento-llegar-tarde"
+      "g:reflexive-routine"
     ],
     "kind": "dialogue",
     "unit": "u09",
@@ -12462,22 +12440,20 @@
   },
   {
     "id": "u09-0551",
-    "es": "Desde ayer hasta hoy no dormí nada.",
-    "en": "From yesterday until today I haven't slept at all.",
+    "es": "No duermo bien desde el lunes.",
+    "en": "I haven't slept well since Monday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
-      "g:negation-words",
-      "g:preterite-er-ir",
-      "l:ayer",
+      "c:bien-y-tu",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:bien",
       "l:dormir",
-      "l:hoy",
-      "p:desde-hasta"
+      "l:lunes"
     ],
     "targets": [
-      "l:dormir",
-      "p:desde-hasta"
+      "l:dormir"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12574,17 +12550,20 @@
   },
   {
     "id": "u09-0556",
-    "es": "Viajamos desde Cartagena hasta Santa Marta.",
-    "en": "We traveled from Cartagena to Santa Marta.",
+    "es": "El mercado abre de martes a domingo.",
+    "en": "The market is open Tuesday to Sunday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:viajar",
-      "p:desde-hasta"
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:abrir",
+      "l:domingo",
+      "l:martes",
+      "l:mercado"
     ],
     "targets": [
-      "p:desde-hasta"
+      "g:present-er-ir"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12616,20 +12595,18 @@
   },
   {
     "id": "u09-0558",
-    "es": "Vale camina desde casa hasta la panadería.",
-    "en": "Vale walks from home to the bakery.",
+    "es": "Vale está en la cocina de cinco a once.",
+    "en": "Vale is in the kitchen from five to eleven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:present-ar",
-      "l:caminar",
-      "l:casa",
-      "l:panadería",
-      "p:desde-hasta"
+      "l:cocina",
+      "l:estar"
     ],
     "targets": [
-      "p:desde-hasta"
+      "g:estar-location-states"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12638,21 +12615,19 @@
   },
   {
     "id": "u09-0559",
-    "es": "Desde allí hasta el parque hay cinco cuadras.",
-    "en": "From there to the park it's five blocks.",
+    "es": "La droguería abre desde las ocho hasta las diez de la noche.",
+    "en": "The pharmacy is open from eight until ten at night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:gender-articles",
-      "g:hay-vs-esta",
-      "l:allí",
-      "l:cuadra",
-      "l:parque",
-      "p:desde-hasta"
+      "g:present-er-ir",
+      "l:abrir",
+      "l:droguería",
+      "l:noche"
     ],
     "targets": [
-      "p:desde-hasta"
+      "g:present-er-ir"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12684,22 +12659,18 @@
   },
   {
     "id": "u09-0561",
-    "es": "Desde lunes hasta viernes trabajo en el banco.",
-    "en": "From Monday to Friday I work at the bank.",
+    "es": "Hernando juega cartas desde las dos hasta las cuatro.",
+    "en": "Hernando plays cards from two until four.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:trabajo-en",
       "g:gender-articles",
-      "g:present-ar",
-      "l:banco",
-      "l:lunes",
-      "l:trabajar",
-      "l:viernes",
-      "p:desde-hasta"
+      "g:stem-boot",
+      "l:carta",
+      "l:jugar"
     ],
     "targets": [
-      "p:desde-hasta"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12708,22 +12679,17 @@
   },
   {
     "id": "u09-0562",
-    "es": "Desde febrero hasta noviembre pagamos el arriendo.",
-    "en": "From February to November we pay the rent.",
+    "es": "Estoy en Bogotá desde enero.",
+    "en": "I've been in Bogotá since January.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:present-ar",
-      "l:arriendo",
-      "l:febrero",
-      "l:noviembre",
-      "l:pagar",
-      "p:desde-hasta"
+      "g:estar-location-states",
+      "l:enero",
+      "l:estar"
     ],
     "targets": [
-      "l:pagar",
-      "p:desde-hasta"
+      "g:estar-location-states"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12755,19 +12721,19 @@
   },
   {
     "id": "u09-0564",
-    "es": "Hernando espera desde ahora hasta las cinco.",
-    "en": "Hernando waits from now until five.",
+    "es": "Hernando espera su tinto desde las seis.",
+    "en": "Hernando has been waiting for his coffee since six.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:ahora",
       "l:esperar",
-      "p:desde-hasta"
+      "l:tinto",
+      "p:possessives-basic"
     ],
     "targets": [
-      "p:desde-hasta"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12796,20 +12762,19 @@
   },
   {
     "id": "u09-0566",
-    "es": "Desde allá hasta aquí son dos horas.",
-    "en": "From over there to here it's two hours.",
+    "es": "El banco está abierto hasta las cuatro.",
+    "en": "The bank is open until four.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
-      "l:allá",
-      "l:aquí",
-      "l:hora",
-      "l:ser",
-      "p:desde-hasta"
+      "c:abierto-cerrado",
+      "g:gender-articles",
+      "l:abrir",
+      "l:banco",
+      "l:estar"
     ],
     "targets": [
-      "p:desde-hasta"
+      "c:abierto-cerrado"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12882,21 +12847,16 @@
   },
   {
     "id": "u09-0570",
-    "es": "Desde julio hasta agosto cerramos una semana.",
-    "en": "From July to August we close for a week.",
+    "es": "Simón duerme de ocho a cinco.",
+    "en": "Simón sleeps from eight to five.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:present-ar",
-      "l:agosto",
-      "l:cerrar",
-      "l:julio",
-      "l:semana",
-      "p:desde-hasta"
+      "g:stem-boot",
+      "l:dormir"
     ],
     "targets": [
-      "p:desde-hasta"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12905,20 +12865,19 @@
   },
   {
     "id": "u09-0571",
-    "es": "Desde octubre hasta noviembre hace frío.",
-    "en": "From October to November it's cold.",
+    "es": "Hace frío desde el lunes.",
+    "en": "It's been cold since Monday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-er-ir",
       "l:frío",
       "l:hacer",
-      "l:noviembre",
-      "l:octubre",
-      "p:desde-hasta"
+      "l:lunes"
     ],
     "targets": [
-      "p:desde-hasta"
+      "g:present-er-ir"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12927,20 +12886,19 @@
   },
   {
     "id": "u09-0572",
-    "es": "Desde sábado hasta domingo no hay clases.",
-    "en": "From Saturday to Sunday there are no classes.",
+    "es": "No hay clases hasta el lunes.",
+    "en": "There are no classes until Monday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hasta-el-lunes",
       "c:hay",
       "g:hay-vs-esta",
       "l:clase",
-      "l:domingo",
-      "l:sábado",
-      "p:desde-hasta"
+      "l:lunes"
     ],
     "targets": [
-      "p:desde-hasta"
+      "c:hasta-el-lunes"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12949,24 +12907,20 @@
   },
   {
     "id": "u09-0573",
-    "es": "Mi tío vive desde siempre hasta hoy en esta calle.",
-    "en": "My uncle has lived on this street from always until today.",
+    "es": "Mi tío vive en esta calle desde 1980.",
+    "en": "My uncle has lived on this street since 1980.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-er-ir",
       "l:calle",
-      "l:hoy",
-      "l:siempre",
       "l:tío",
       "l:vivir",
       "p:demonstratives-basic",
-      "p:desde-hasta",
       "p:possessives-basic"
     ],
     "targets": [
-      "l:calle",
-      "p:desde-hasta"
+      "l:calle"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -12975,21 +12929,20 @@
   },
   {
     "id": "u09-0574",
-    "es": "Desde miércoles hasta jueves llueve.",
-    "en": "From Wednesday to Thursday it rains.",
+    "es": "¿Desde cuándo llueve así?",
+    "en": "Since when has it been raining like this?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
-      "l:jueves",
+      "l:cuándo",
       "l:llover",
-      "l:miércoles",
-      "p:desde-hasta"
+      "p:prep-questions-basic"
     ],
     "targets": [
-      "p:desde-hasta"
+      "g:stem-boot"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u09",
     "theme": "from and until",
     "source": "gen"
@@ -13016,23 +12969,19 @@
   },
   {
     "id": "u09-0576",
-    "es": "Desde ahí hasta el final de la calle hay un taxi.",
-    "en": "From there to the end of the street there's a taxi.",
+    "es": "Los lunes estoy en el café de seis a dos.",
+    "en": "On Mondays I'm at the café from six to two.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:hay-vs-esta",
-      "l:ahí",
-      "l:calle",
-      "l:final",
-      "l:taxi",
-      "p:desde-hasta"
+      "l:café",
+      "l:estar",
+      "l:lunes"
     ],
     "targets": [
-      "l:calle",
-      "p:desde-hasta"
+      "g:estar-location-states"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -13202,20 +13151,18 @@
   },
   {
     "id": "u09-0585",
-    "es": "Empiezo y termino a las ocho.",
-    "en": "I start and finish at eight.",
+    "es": "Empiezo a barrer a las cinco y media.",
+    "en": "I start sweeping at half past five.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
       "g:stem-boot",
-      "l:empezar",
-      "l:terminar",
-      "p:empezar-terminar"
+      "l:barrer",
+      "l:empezar"
     ],
     "targets": [
-      "p:empezar-terminar"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -13224,20 +13171,21 @@
   },
   {
     "id": "u09-0586",
-    "es": "Vale empieza y termina antes que yo.",
-    "en": "Vale starts and finishes before I do.",
+    "es": "Vale termina de hacer el pan antes que yo.",
+    "en": "Vale finishes making the bread before I do.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-ar",
-      "g:stem-boot",
+      "g:verb-infinitive",
       "l:antes",
-      "l:empezar",
-      "l:terminar",
-      "p:empezar-terminar"
+      "l:hacer",
+      "l:pan",
+      "l:terminar"
     ],
     "targets": [
-      "p:empezar-terminar"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -13246,20 +13194,20 @@
   },
   {
     "id": "u09-0587",
-    "es": "Empezó y terminó en una hora.",
-    "en": "He started and finished in an hour.",
+    "es": "Mariana empezó a escribir a las diez y terminó a las dos.",
+    "en": "Mariana started writing at ten and finished at two.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "g:verb-infinitive",
       "l:empezar",
-      "l:hora",
-      "l:terminar",
-      "p:empezar-terminar"
+      "l:escribir",
+      "l:terminar"
     ],
     "targets": [
-      "p:empezar-terminar"
+      "g:preterite-ar"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -13268,19 +13216,21 @@
   },
   {
     "id": "u09-0588",
-    "es": "Empezamos y terminamos a tiempo.",
-    "en": "We started and finished on time.",
+    "es": "Terminamos de comer y salimos a caminar.",
+    "en": "We finish eating and go out for a walk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:empezar",
-      "l:terminar",
-      "l:tiempo",
-      "p:empezar-terminar"
+      "g:present-er-ir",
+      "g:verb-infinitive",
+      "l:caminar",
+      "l:comer",
+      "l:salir",
+      "l:terminar"
     ],
     "targets": [
-      "p:empezar-terminar"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -13289,23 +13239,21 @@
   },
   {
     "id": "u09-0589",
-    "es": "La película empieza y termina tarde.",
-    "en": "The movie starts and ends late.",
+    "es": "Hernando empieza una historia y nunca la termina.",
+    "en": "Hernando starts a story and never finishes it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
       "g:stem-boot",
       "l:empezar",
-      "l:película",
-      "l:tarde",
-      "l:terminar",
-      "p:empezar-terminar"
+      "l:historia",
+      "l:terminar"
     ],
     "targets": [
-      "l:tarde",
-      "p:empezar-terminar"
+      "g:present-ar"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -13362,22 +13310,19 @@
   },
   {
     "id": "u09-0592",
-    "es": "La clase empieza y termina en la misma sala.",
-    "en": "The class starts and ends in the same room.",
+    "es": "Simón empieza a gritar a las seis.",
+    "en": "Simón starts screaming at six.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
       "g:stem-boot",
-      "l:clase",
+      "g:verb-infinitive",
       "l:empezar",
-      "l:sala",
-      "l:terminar",
-      "p:empezar-terminar"
+      "l:gritar"
     ],
     "targets": [
-      "p:empezar-terminar"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -13409,21 +13354,20 @@
   },
   {
     "id": "u09-0594",
-    "es": "Empiezas y terminas muy rápido.",
-    "en": "You start and finish very quickly. (to a friend)",
+    "es": "Terminas de planchar y nos vamos.",
+    "en": "You finish ironing and we leave. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:ir-a-plans",
       "g:present-ar",
-      "g:stem-boot",
-      "l:empezar",
-      "l:rápido",
-      "l:terminar",
-      "p:empezar-terminar",
-      "p:quantifiers-basic"
+      "g:verb-infinitive",
+      "l:irse",
+      "l:planchar",
+      "l:terminar"
     ],
     "targets": [
-      "p:empezar-terminar"
+      "g:ir-a-plans"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -13432,23 +13376,22 @@
   },
   {
     "id": "u09-0595",
-    "es": "Los jueves empiezo y termino tarde.",
-    "en": "On Thursdays I start and finish late.",
+    "es": "Los jueves termino de trabajar muy tarde.",
+    "en": "On Thursdays I finish work very late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:stem-boot",
-      "l:empezar",
+      "g:verb-infinitive",
       "l:jueves",
       "l:tarde",
       "l:terminar",
-      "p:empezar-terminar"
+      "l:trabajar",
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "l:tarde",
-      "p:empezar-terminar"
+      "l:tarde"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -13457,22 +13400,20 @@
   },
   {
     "id": "u09-0596",
-    "es": "Mariana empieza y termina el artículo en un día.",
-    "en": "Mariana starts and finishes the article in a day.",
+    "es": "Tomás empieza a leer la carta de Rosa.",
+    "en": "Tomás starts reading Rosa's letter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
       "g:stem-boot",
-      "l:artículo",
-      "l:día",
+      "g:verb-infinitive",
+      "l:carta",
       "l:empezar",
-      "l:terminar",
-      "p:empezar-terminar"
+      "l:leer"
     ],
     "targets": [
-      "p:empezar-terminar"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -15045,18 +14986,19 @@
   },
   {
     "id": "u09-0664",
-    "es": "¿Dónde se queda Hernando?\nSe queda en el parque.",
-    "en": "Where is Hernando staying?\nHe's staying in the park.",
+    "es": "¿Hernando se queda a cenar?\nNo, se va temprano.",
+    "en": "Is Hernando staying for dinner?\nNo, he's leaving early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:no-se",
+      "g:ir-a-plans",
       "g:present-ar",
-      "g:questions",
       "g:reflexive-routine",
-      "l:dónde",
-      "l:parque",
-      "l:quedarse"
+      "l:cenar",
+      "l:irse",
+      "l:quedarse",
+      "l:temprano"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -15960,17 +15902,17 @@
   },
   {
     "id": "u09-0705",
-    "es": "Los oficios de la casa son muchos.",
-    "en": "The household chores are many.",
+    "es": "Hoy el oficio de Tomás es planchar.",
+    "en": "Today Tomás's chore is ironing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:casa",
+      "l:hoy",
       "l:oficio",
-      "l:ser",
-      "p:quantifiers-basic"
+      "l:planchar",
+      "l:ser"
     ],
     "targets": [
       "l:oficio"
@@ -16030,20 +15972,21 @@
   },
   {
     "id": "u09-0708",
-    "es": "El año pasado fui a Cali.",
-    "en": "Last year I went to Cali.",
+    "es": "El domingo pasado fuimos a Monserrate.",
+    "en": "Last Sunday we went to Monserrate.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:fui",
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
-      "l:año",
+      "l:domingo",
       "l:ir",
       "l:pasado",
       "p:time-pasado-que-viene"
     ],
-    "targets": [],
+    "targets": [
+      "g:preterite-ser-ir-hacer"
+    ],
     "kind": "statement",
     "unit": "u09",
     "theme": "words of the week",
@@ -16051,21 +15994,21 @@
   },
   {
     "id": "u09-0709",
-    "es": "El fin de semana pasado trabajé mucho.",
-    "en": "Last weekend I worked a lot.",
+    "es": "El lunes pasado Simón no habló.",
+    "en": "Last Monday Simón didn't talk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
-      "c:compre-trabaje",
+      "g:gender-articles",
       "g:preterite-ar",
-      "l:fin",
+      "l:hablar",
+      "l:lunes",
       "l:pasado",
-      "l:semana",
-      "l:trabajar",
-      "p:quantifiers-basic"
+      "p:time-pasado-que-viene"
     ],
-    "targets": [],
+    "targets": [
+      "g:preterite-ar"
+    ],
     "kind": "statement",
     "unit": "u09",
     "theme": "words of the week",
@@ -16073,22 +16016,21 @@
   },
   {
     "id": "u09-0710",
-    "es": "La semana pasada llovió todos los días.",
-    "en": "Last week it rained every day.",
+    "es": "El jueves pasado Tomás no salió del cuarto pequeño.",
+    "en": "Last Thursday Tomás didn't come out of the little room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
       "g:gender-articles",
       "g:preterite-er-ir",
-      "l:día",
-      "l:llover",
-      "l:pasar",
-      "l:semana",
-      "p:todos-los-dias"
+      "l:jueves",
+      "l:pasado",
+      "l:pequeño",
+      "l:salir",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
-      "p:todos-los-dias"
+      "g:preterite-er-ir"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -16097,21 +16039,22 @@
   },
   {
     "id": "u09-0711",
-    "es": "El mes pasado vendimos mucho pan.",
-    "en": "Last month we sold a lot of bread.",
+    "es": "El año pasado Tomás no habló español.",
+    "en": "Last year Tomás didn't speak Spanish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
-      "l:mes",
-      "l:pan",
+      "g:preterite-ar",
+      "l:año",
+      "l:español",
+      "l:hablar",
       "l:pasado",
-      "l:vender",
-      "p:quantifiers-basic",
       "p:time-pasado-que-viene"
     ],
-    "targets": [],
+    "targets": [
+      "g:preterite-ar"
+    ],
     "kind": "statement",
     "unit": "u09",
     "theme": "words of the week",
@@ -16419,17 +16362,20 @@
   },
   {
     "id": "u09-0725",
-    "es": "Mi servicio de agua no funciona hoy.",
-    "en": "My water service isn't working today.",
+    "es": "Hoy tengo que pagar los servicios.",
+    "en": "Today I have to pay the utility bills.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:agua",
-      "l:funcionar",
+      "c:tengo",
+      "c:tengo-que",
+      "g:gender-articles",
+      "g:verb-infinitive",
+      "g:yo-irregular",
       "l:hoy",
+      "l:pagar",
       "l:servicio",
-      "p:possessives-basic"
+      "l:tener"
     ],
     "targets": [
       "l:servicio"
@@ -16486,21 +16432,22 @@
   },
   {
     "id": "u09-0728",
-    "es": "El servicio de bus llega tarde.",
-    "en": "The bus service arrives late.",
+    "es": "En este barrio el servicio de bus es malo.",
+    "en": "The bus service in this neighborhood is bad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:ser-identity",
+      "l:barrio",
       "l:bus",
-      "l:llegar",
+      "l:malo",
+      "l:ser",
       "l:servicio",
-      "l:tarde"
+      "p:demonstratives-basic"
     ],
     "targets": [
-      "l:servicio",
-      "l:tarde"
+      "l:servicio"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -16567,22 +16514,20 @@
   },
   {
     "id": "u09-0732",
-    "es": "Voy a pedir un jugo.",
-    "en": "I'm going to order a juice.",
+    "es": "¿Pedimos algo de comer?",
+    "en": "Shall we order something to eat?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
-      "g:gender-articles",
-      "g:ir-a-plans",
-      "l:ir",
-      "l:jugo",
-      "l:pedir"
+      "g:present-er-ir",
+      "l:comer",
+      "l:pedir",
+      "p:indefinites-basic"
     ],
     "targets": [
       "l:pedir"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u09",
     "theme": "words of the week",
     "source": "gen"
@@ -16652,22 +16597,23 @@
   },
   {
     "id": "u09-0736",
-    "es": "Hay que pedir en la caja.",
-    "en": "You have to order at the register.",
+    "es": "¿Hay que pedir permiso para entrar?",
+    "en": "Do you have to ask permission to go in?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "c:hay-que",
-      "g:gender-articles",
       "g:verb-infinitive",
-      "l:caja",
-      "l:pedir"
+      "l:entrar",
+      "l:pedir",
+      "l:permiso",
+      "p:para-inf"
     ],
     "targets": [
       "l:pedir"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u09",
     "theme": "words of the week",
     "source": "gen"
@@ -16741,8 +16687,8 @@
   },
   {
     "id": "u09-0740",
-    "es": "Voy a mostrar mi cuarto.",
-    "en": "I'm going to show my room.",
+    "es": "Te voy a mostrar mi cuarto.",
+    "en": "I'm going to show you my room. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16750,6 +16696,7 @@
       "g:ir-a-plans",
       "l:ir",
       "l:mostrar",
+      "p:me-te-nos-objects",
       "p:possessives-basic"
     ],
     "targets": [
@@ -16783,15 +16730,17 @@
   },
   {
     "id": "u09-0742",
-    "es": "Entro al café a las cinco y media.",
-    "en": "I go into the café at five thirty.",
+    "es": "Siempre entro al café antes que Vale.",
+    "en": "I always go into the café before Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "l:antes",
       "l:café",
-      "l:entrar"
+      "l:entrar",
+      "l:siempre"
     ],
     "targets": [
       "l:entrar"
@@ -17769,20 +17718,19 @@
   },
   {
     "id": "u09-0783",
-    "es": "¿Vale hace pan todos los días?",
-    "en": "Does Vale make bread every day?",
+    "es": "¿Vale hace pan los domingos?",
+    "en": "Does Vale make bread on Sundays?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "l:día",
+      "l:domingo",
       "l:hacer",
-      "l:pan",
-      "p:todos-los-dias"
+      "l:pan"
     ],
     "targets": [
-      "p:todos-los-dias"
+      "g:present-er-ir"
     ],
     "kind": "question",
     "unit": "u09",
@@ -18959,18 +18907,22 @@
   },
   {
     "id": "u09-0835",
-    "es": "¿Terminas de trabajar a las cinco?",
-    "en": "Do you finish work at five? (to a friend)",
+    "es": "¿Terminas de trabajar antes del almuerzo?",
+    "en": "Do you finish work before lunch? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "g:verb-infinitive",
+      "l:almuerzo",
+      "l:antes",
       "l:terminar",
       "l:trabajar"
     ],
-    "targets": [],
+    "targets": [
+      "g:present-ar"
+    ],
     "kind": "question",
     "unit": "u09",
     "theme": "questions about the day",
@@ -19348,8 +19300,8 @@
   },
   {
     "id": "u09-0854",
-    "es": "¿Tienes que irte ya?",
-    "en": "Do you have to go now? (to a friend)",
+    "es": "¿Tienes que irte tan temprano?",
+    "en": "Do you have to leave so early? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19357,9 +19309,12 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:irse",
+      "l:temprano",
       "l:tener"
     ],
-    "targets": [],
+    "targets": [
+      "c:tienes"
+    ],
     "kind": "question",
     "unit": "u09",
     "theme": "questions about the day",
@@ -19662,19 +19617,19 @@
   },
   {
     "id": "u09-0867",
-    "es": "¿Vamos al banco?\nMe da pereza ir hoy.",
-    "en": "Shall we go to the bank?\nI can't be bothered to go today.",
+    "es": "¿Vamos al banco?\n¡Qué pereza! Mejor mañana.",
+    "en": "Shall we go to the bank?\nUgh! Better tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-regala",
       "c:que-pereza",
       "g:gender-articles",
       "g:ir-a-plans",
       "l:banco",
-      "l:dar",
-      "l:hoy",
-      "l:ir"
+      "l:ir",
+      "l:mañana",
+      "l:mejor",
+      "l:qué"
     ],
     "targets": [
       "c:que-pereza"
@@ -21110,26 +21065,22 @@
   },
   {
     "id": "u09-0930",
-    "es": "Ellas se lavan las manos antes de cocinar.",
-    "en": "They wash their hands before cooking.",
+    "es": "Mis hermanas se lavan el pelo los sábados.",
+    "en": "My sisters wash their hair on Saturdays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:prep-infinitive",
       "g:present-ar",
       "g:reflexive-routine",
-      "l:antes",
-      "l:cocinar",
+      "l:hermana",
       "l:lavarse",
-      "l:mano",
-      "p:lavarse-las-manos"
+      "l:pelo",
+      "l:sábado",
+      "p:possessives-basic"
     ],
     "targets": [
-      "g:prep-infinitive",
-      "g:reflexive-routine",
-      "l:mano",
-      "p:lavarse-las-manos"
+      "g:reflexive-routine"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -21273,7 +21224,7 @@
   {
     "id": "u09-0936",
     "es": "Vale suele cantar mientras cocina.",
-    "en": "Vale usually sings while she bakes.",
+    "en": "Vale usually sings while she cooks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22010,20 +21961,21 @@
   },
   {
     "id": "u09-0969",
-    "es": "Duermo siete horas, seis veces a la semana.",
-    "en": "I sleep seven hours, six times a week.",
+    "es": "Como pescado una vez a la semana.",
+    "en": "I eat fish once a week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:una-vez",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:dormir",
-      "l:hora",
+      "g:present-er-ir",
+      "l:comer",
+      "l:pescado",
       "l:semana",
       "l:vez"
     ],
     "targets": [
-      "l:dormir"
+      "c:una-vez"
     ],
     "kind": "statement",
     "unit": "u09",
@@ -22746,13 +22698,15 @@
   },
   {
     "id": "u09-1000",
-    "es": "Mi hermano come sin mirar.",
-    "en": "My brother eats without looking.",
+    "es": "Mi hermano nunca come sin mirar el celular.",
+    "en": "My brother never eats without looking at his phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:prep-infinitive",
       "g:present-er-ir",
+      "l:celular",
       "l:comer",
       "l:hermano",
       "l:mirar",
@@ -22813,18 +22767,19 @@
   },
   {
     "id": "u09-1003",
-    "es": "Llegamos al centro sin perder el bus.",
-    "en": "We got downtown without missing the bus.",
+    "es": "Hoy salí de casa sin perder las llaves.",
+    "en": "Today I left home without losing my keys.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:prep-infinitive",
-      "g:present-ar",
-      "l:bus",
-      "l:centro",
-      "l:llegar",
-      "l:perder"
+      "g:preterite-er-ir",
+      "l:casa",
+      "l:hoy",
+      "l:llave",
+      "l:perder",
+      "l:salir"
     ],
     "targets": [
       "g:prep-infinitive",
@@ -22837,15 +22792,15 @@
   },
   {
     "id": "u09-1004",
-    "es": "Entro al banco sin pedir permiso.",
-    "en": "I walk into the bank without asking permission.",
+    "es": "Hernando entra a la cocina sin pedir permiso.",
+    "en": "Hernando walks into the kitchen without asking permission.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:prep-infinitive",
       "g:present-ar",
-      "l:banco",
+      "l:cocina",
       "l:entrar",
       "l:pedir",
       "l:permiso"

@@ -6,42 +6,185 @@
     "en": "I work in a café. I'm working right now, I'll call you later."
   },
   "examples": [
-    { "es": "Trabajo en un café.", "en": "I work in a café." },
-    { "es": "No puedo, estoy trabajando.", "en": "I can't, I'm working." },
-    { "es": "Simón habla mucho.", "en": "Simón talks a lot." },
-    { "es": "Simón está hablando otra vez.", "en": "Simón is talking again." },
-    { "es": "Cerramos a las ocho.", "en": "We close at eight." },
-    { "es": "Ya estamos cerrando.", "en": "We're closing now." },
-    { "es": "¿Qué haces los sábados?", "en": "What do you do on Saturdays? (to a friend)" },
-    { "es": "Mañana voy a Medellín.", "en": "I'm going to Medellín tomorrow." }
+    {
+      "es": "Trabajo en un café.",
+      "en": "I work in a café."
+    },
+    {
+      "es": "No puedo, estoy trabajando.",
+      "en": "I can't, I'm working."
+    },
+    {
+      "es": "Simón habla mucho.",
+      "en": "Simón talks a lot."
+    },
+    {
+      "es": "Simón está hablando otra vez.",
+      "en": "Simón is talking again."
+    },
+    {
+      "es": "Cerramos a las ocho.",
+      "en": "We close at eight."
+    },
+    {
+      "es": "Ya estamos cerrando.",
+      "en": "We're closing now."
+    },
+    {
+      "es": "¿Qué haces los sábados?",
+      "en": "What do you do on Saturdays? (to a friend)"
+    },
+    {
+      "es": "Mañana voy a Medellín.",
+      "en": "I'm going to Medellín tomorrow."
+    }
   ],
   "rule": "Spanish has two ways to talk about now, and it leans hard on the first.\n\nThe plain present covers what you do in general, habits, timetables and plans: *Trabajo en un café.* *Cerramos a las ocho.* *Mañana voy a Medellín.*\n\n*Estar* plus *-ando* or *-iendo* is for something in the middle of happening, right as you speak: *Estoy trabajando.* *Simón está hablando otra vez.*\n\nThe trap is English, which uses -ing for both. I'm going to Medellín tomorrow is a plan, so Spanish uses the plain present: *Mañana voy*. Ask yourself: is it happening at this very moment? If not, drop the *estoy*.\n\nAnd *¿Qué haces?* can mean what are you doing right now, too. The plain present often does that job in conversation.",
   "smallPrint": "Teachers call these the simple present (*presente*) and the present progressive (*estar* + gerund).",
   "readAndPick": [
-    { "es": "Simón habla mucho.", "options": ["Simón talks a lot.", "Simón is talking right now."], "answer": 0 },
-    { "es": "Simón está hablando otra vez.", "options": ["Simón talks a lot.", "Simón is talking again."], "answer": 1 },
-    { "es": "Mariana escribe mucho.", "options": ["Mariana is writing right now.", "Mariana writes a lot."], "answer": 1 },
-    { "es": "Mariana está escribiendo.", "options": ["Mariana is writing.", "Mariana writes for a living."], "answer": 0 },
-    { "es": "Cerramos a las ocho.", "options": ["We're closing right now.", "We close at eight."], "answer": 1 },
-    { "es": "No puedo, estoy trabajando.", "options": ["I can't, I'm working.", "I can't, I work there."], "answer": 0 },
-    { "es": "Tomás duerme poco.", "options": ["Tomás is sleeping a little.", "Tomás doesn't sleep much."], "answer": 1 },
-    { "es": "Vale está lavando las toallas.", "options": ["Vale is washing the towels.", "Vale washes the towels on Mondays."], "answer": 0 },
-    { "es": "Leo mucho.", "options": ["I read a lot.", "I'm reading right now."], "answer": 0 }
+    {
+      "es": "Simón habla mucho.",
+      "options": [
+        "Simón talks a lot.",
+        "Simón is talking right now."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Simón está hablando otra vez.",
+      "options": [
+        "Simón talks a lot.",
+        "Simón is talking again."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana escribe mucho.",
+      "options": [
+        "Mariana is writing right now.",
+        "Mariana writes a lot."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana está escribiendo.",
+      "options": [
+        "Mariana is writing.",
+        "Mariana writes for a living."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cerramos a las ocho.",
+      "options": [
+        "We're closing right now.",
+        "We close at eight."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No puedo, estoy trabajando.",
+      "options": [
+        "I can't, I'm working.",
+        "I can't, I work there."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás duerme poco.",
+      "options": [
+        "Tomás is sleeping a little.",
+        "Tomás doesn't sleep much."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale está lavando las toallas.",
+      "options": [
+        "Vale is washing the towels.",
+        "Vale washes the towels on Mondays."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Leo mucho.",
+      "options": [
+        "I read a lot.",
+        "I'm reading right now."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *trabajo* or *estoy trabajando*, then type the whole sentence: \"*___ en un café.*\" (I work in a café: it's your job.)", "answer": "Trabajo en un café.", "accept": [], "why": "It's what you do in general, so the plain present." },
-    { "prompt": "Pick *duerme* or *está durmiendo*, then type the whole sentence: \"*Simón ___.*\" (Simón is asleep right now.)", "answer": "Simón está durmiendo.", "accept": [], "why": "It's happening right now, so *está* plus *durmiendo*." },
-    { "prompt": "Type in Spanish: I can't, I'm working.", "answer": "No puedo, estoy trabajando.", "accept": ["No puedo. Estoy trabajando."], "why": "In the middle of it right now: *estoy trabajando*." },
-    { "prompt": "Type in Spanish: We close at eight.", "answer": "Cerramos a las ocho.", "accept": [], "why": "A timetable is a general fact, so the plain present." },
-    { "prompt": "Type in Spanish: I'm going to Medellín tomorrow.", "answer": "Mañana voy a Medellín.", "accept": ["Voy a Medellín mañana."], "why": "It's a plan, not something happening now: the plain present." },
-    { "prompt": "Make it right now: \"*Hernando toma un tinto.*\" (Hernando is having a coffee at this moment.)", "answer": "Hernando está tomando un tinto.", "accept": [], "why": "*Está* plus *tomando* puts it in the middle of happening." },
-    { "prompt": "Make it a habit: \"*Vale está haciendo pan.*\" (Vale makes bread: it's her job.)", "answer": "Vale hace pan.", "accept": [], "why": "In general, so drop *está* and use *hace*." },
-    { "prompt": "Ask a friend what they do on Saturdays.", "answer": "¿Qué haces los sábados?", "accept": [], "why": "A regular habit takes the plain present: *haces*." }
+    {
+      "prompt": "Pick *trabajo* or *estoy trabajando*, then type the whole sentence: \"*___ en un café.*\" (I work in a café: it's your job.)",
+      "answer": "Trabajo en un café.",
+      "accept": [],
+      "why": "It's what you do in general, so the plain present."
+    },
+    {
+      "prompt": "Pick *duerme* or *está durmiendo*, then type the whole sentence: \"*Simón ___.*\" (Simón is asleep right now.)",
+      "answer": "Simón está durmiendo.",
+      "accept": [],
+      "why": "It's happening right now, so *está* plus *durmiendo*."
+    },
+    {
+      "prompt": "Type in Spanish: I can't, I'm working.",
+      "answer": "No puedo, estoy trabajando.",
+      "accept": [
+        "No puedo. Estoy trabajando."
+      ],
+      "why": "In the middle of it right now: *estoy trabajando*."
+    },
+    {
+      "prompt": "Type in Spanish: We close at eight.",
+      "answer": "Cerramos a las ocho.",
+      "accept": [],
+      "why": "A timetable is a general fact, so the plain present."
+    },
+    {
+      "prompt": "Type in Spanish: I'm going to Medellín tomorrow.",
+      "answer": "Mañana voy a Medellín.",
+      "accept": [
+        "Voy a Medellín mañana."
+      ],
+      "why": "It's a plan, not something happening now: the plain present."
+    },
+    {
+      "prompt": "Make it right now: \"*Hernando toma un tinto.*\" (Hernando is having a coffee at this moment.)",
+      "answer": "Hernando está tomando un tinto.",
+      "accept": [],
+      "why": "*Está* plus *tomando* puts it in the middle of happening."
+    },
+    {
+      "prompt": "Make it a habit: \"*Vale está haciendo pan.*\" (Vale makes bread: it's her job.)",
+      "answer": "Vale hace pan.",
+      "accept": [],
+      "why": "In general, so drop *está* and use *hace*."
+    },
+    {
+      "prompt": "Ask a friend what they do on Saturdays.",
+      "answer": "¿Qué haces los sábados?",
+      "accept": [],
+      "why": "A regular habit takes the plain present: *haces*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Mañana estoy trabajando en el café.", "right": "Mañana trabajo en el café.", "why": "Almost. English uses -ing for plans, but Spanish uses the plain present." },
-    { "wrong": "Estoy trabajando en un café.", "right": "Trabajo en un café.", "why": "If it's your job, say it in the plain present; *estoy trabajando* sounds like right this minute." },
-    { "wrong": "Simón es hablando otra vez.", "right": "Simón está hablando otra vez.", "why": "The *-ando* form always goes with *estar*, never *ser*." }
+    {
+      "wrong": "Mañana estoy trabajando en el café.",
+      "right": "Mañana trabajo en el café.",
+      "why": "Almost. English uses -ing for plans, but Spanish uses the plain present."
+    },
+    {
+      "wrong": "¿Qué estás haciendo los sábados?",
+      "right": "¿Qué haces los sábados?",
+      "why": "Saturdays are a habit, so the plain present. *Estás haciendo* means right this minute."
+    },
+    {
+      "wrong": "Simón es hablando otra vez.",
+      "right": "Simón está hablando otra vez.",
+      "why": "The *-ando* form always goes with *estar*, never *ser*."
+    }
   ],
   "personal": "Write one line about what you do every day, and one about what you're doing right now, as you read this."
 }

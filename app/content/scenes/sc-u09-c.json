@@ -2,7 +2,7 @@
   "id": "sc-u09-c",
   "unit": "u09",
   "title": "Parqués at four",
-  "brief": "You're Tomás. It's four in the afternoon, you're doing the café's accounts, and Don Hernando wants his game of parqués. Tell him what you're doing and what you still have to do, and don't let him do your work. He's older than you, so use usted.",
+  "brief": "You're Tomás. It's four in the afternoon, you're doing the café's accounts, and Don Hernando wants his game of parqués. Tell him what you're doing and what you still have to do, and don't let him do your work. He's older than you, so use usted with him; he calls you tú.",
   "turns": [
     {
       "id": "t1",
@@ -27,7 +27,7 @@
     },
     {
       "id": "t2",
-      "npc": "¿Otra vez las cuentas? ¿Y a qué hora termina?",
+      "npc": "¿Otra vez las cuentas? ¿Y a qué hora terminas?",
       "npcEn": "The accounts again? And what time do you finish?",
       "intent": "Say you finish at five.",
       "accept": [
@@ -70,7 +70,7 @@
     },
     {
       "id": "t4",
-      "npc": "Usted trabaja desde las cinco de la mañana hasta las nueve de la noche. ¿Cuándo descansa?",
+      "npc": "Trabajas desde las cinco de la mañana hasta las nueve de la noche. ¿Cuándo descansas?",
       "npcEn": "You work from five in the morning until nine at night. When do you rest?",
       "intent": "Say you almost never rest.",
       "accept": [
@@ -90,7 +90,7 @@
     },
     {
       "id": "t5",
-      "npc": "Bueno, entonces yo voy a barrer el café y usted termina las cuentas. Después, parqués.",
+      "npc": "Bueno, entonces yo voy a barrer el café y tú terminas las cuentas. Después, parqués.",
       "npcEn": "Right, so I'm going to sweep the café and you finish the accounts. Then, parqués.",
       "intent": "Tell him he doesn't have to sweep.",
       "accept": [
@@ -116,8 +116,8 @@
     },
     {
       "id": "t6",
-      "npc": "Muy tarde. Ya terminé la cocina, Tomás. ¿Y usted? ¿Las cuentas?",
-      "npcEn": "Too late. I've already finished the kitchen, Tomás. And you? The accounts?",
+      "npc": "Muy tarde, Tomás. Ya barrí todo el café. ¿Y tú? ¿Las cuentas?",
+      "npcEn": "Too late, Tomás. I already swept the whole café. And you? The accounts?",
       "intent": "Say you're coming: you're finishing the accounts now.",
       "accept": [
         "¡Ya voy! Estoy terminando las cuentas.",
@@ -155,7 +155,6 @@
     "g:negation-words",
     "g:prep-infinitive",
     "g:present-ar",
-    "g:preterite-ar",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
@@ -165,7 +164,6 @@
     "l:barrer",
     "l:bueno",
     "l:café",
-    "l:cocina",
     "l:cuenta",
     "l:cuándo",
     "l:descansar",

@@ -6,39 +6,173 @@
     "en": "I wash my hands and go home."
   },
   "examples": [
-    { "es": "Me lavo las manos.", "en": "I wash my hands." },
-    { "es": "Mi casa es grande.", "en": "My house is big." },
-    { "es": "Me lavo el pelo.", "en": "I wash my hair." },
-    { "es": "Mi café es pequeño.", "en": "My café is small." },
-    { "es": "Vale tiene el pelo largo.", "en": "Vale has long hair." },
-    { "es": "Tomás cierra los ojos.", "en": "Tomás closes his eyes." },
-    { "es": "Me pruebo tu chaqueta.", "en": "I try your jacket on. (to a friend)" }
+    {
+      "es": "Me lavo las manos.",
+      "en": "I wash my hands."
+    },
+    {
+      "es": "Mi casa es grande.",
+      "en": "My house is big."
+    },
+    {
+      "es": "Me lavo el pelo.",
+      "en": "I wash my hair."
+    },
+    {
+      "es": "Mi café es pequeño.",
+      "en": "My café is small."
+    },
+    {
+      "es": "Vale tiene el pelo largo.",
+      "en": "Vale has long hair."
+    },
+    {
+      "es": "Tomás cierra los ojos.",
+      "en": "Tomás closes his eyes."
+    },
+    {
+      "es": "Me pruebo tu chaqueta.",
+      "en": "I try your jacket on. (to a friend)"
+    }
   ],
-  "rule": "Your body, and the clothes you have on, already belong to you. Spanish doesn't bother saying so with *mi* or *mis*; the little word *me*, *te* or *se*, or simply who the sentence is about, does that job. The body part gets *el*, *la*, *los* or *las*:\n\n*Me lavo las manos.* I wash my hands.\n*Tomás cierra los ojos.* Tomás closes his eyes.\n*Vale tiene el pelo largo.* Vale has long hair.\n\nEverything else, the things you own but aren't part of you, keeps *mi*, *tu*, *su*: *mi casa*, *mi café*, *tu celular*.\n\nAnd when the body part or the jacket belongs to someone else, say so: *Me pruebo tu chaqueta* is I try your jacket on.",
+  "rule": "Your body, and the clothes you have on, already belong to you. Spanish doesn't bother saying so with *mi* or *mis*; the little word *me*, *te* or *se*, or simply who the sentence is about, does that job. The body part gets *el*, *la*, *los* or *las*:\n\n*Me lavo las manos.* I wash my hands.\n*Tomás cierra los ojos.* Tomás closes his eyes.\n*Vale tiene el pelo largo.* Vale has long hair.\n\nEverything else, the things you own but aren't part of you, keeps *mi*, *tu*, *su*: *mi casa*, *mi café*, *tu celular*.\n\nWhen it's someone else's body, the little word changes instead: *Te lavo el pelo* is I wash your hair. When it's someone else's jacket, say whose: *Me pruebo tu chaqueta* is I try your jacket on.",
   "smallPrint": "With body parts and clothing, Spanish uses the definite article where English uses a possessive; the pronoun (or the subject) marks the owner.",
   "readAndPick": [
-    { "es": "Me lavo el pelo.", "options": ["I wash my hair.", "I wash your hair.", "She washes her hair."], "answer": 0 },
-    { "es": "Me pruebo tu chaqueta.", "options": ["I try my jacket on.", "I try your jacket on.", "You try my jacket on."], "answer": 1 },
-    { "es": "Te lavo el pelo.", "options": ["You wash my hair.", "I wash my hair.", "I wash your hair."], "answer": 2 },
-    { "es": "Tienes las manos frías.", "options": ["Your hands are cold.", "My hands are cold.", "Her hands are cold."], "answer": 0 },
-    { "es": "Tomás cierra los ojos.", "options": ["Tomás closes your eyes.", "Tomás closes his eyes.", "I close my eyes."], "answer": 1 },
-    { "es": "¿Te lavaste la cara?", "options": ["Did I wash my face?", "Did she wash her face?", "Did you wash your face? (to a friend)"], "answer": 2 },
-    { "es": "Vale se lava el pelo con mi champú.", "options": ["Vale washes her hair with my shampoo.", "Vale washes my hair with her shampoo.", "I wash my hair with Vale's shampoo."], "answer": 0 },
-    { "es": "Me llevo tu toalla.", "options": ["I take my towel.", "I take your towel.", "You take my towel."], "answer": 1 }
+    {
+      "es": "Me lavo el pelo.",
+      "options": [
+        "I wash my hair.",
+        "I wash your hair.",
+        "She washes her hair."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me pruebo tu chaqueta.",
+      "options": [
+        "I try my jacket on.",
+        "I try your jacket on.",
+        "You try my jacket on."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te lavo el pelo.",
+      "options": [
+        "You wash my hair.",
+        "I wash my hair.",
+        "I wash your hair."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tienes las manos frías.",
+      "options": [
+        "Your hands are cold.",
+        "My hands are cold.",
+        "Her hands are cold."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás cierra los ojos.",
+      "options": [
+        "Tomás closes your eyes.",
+        "Tomás closes his eyes.",
+        "I close my eyes."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te lavaste la cara?",
+      "options": [
+        "Did I wash my face?",
+        "Did she wash her face?",
+        "Did you wash your face? (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale se lava el pelo con mi champú.",
+      "options": [
+        "Vale washes her hair with my shampoo.",
+        "Vale washes my hair with her shampoo.",
+        "I wash my hair with Vale's shampoo."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me llevo tu toalla.",
+      "options": [
+        "I take my towel.",
+        "I take your towel.",
+        "You take my towel."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Fill the gap with *el* or *mi*, then type the whole sentence: \"*Me lavo ___ pelo.*\"", "answer": "Me lavo el pelo.", "accept": [], "why": "*Me* already says it's your hair, so just *el*." },
-    { "prompt": "Fill the gap with *la* or *mi*, then type the whole sentence: \"*___ casa es grande.*\" (My house is big.)", "answer": "Mi casa es grande.", "accept": [], "why": "A house isn't part of you, and nothing else says whose, so keep *mi*." },
-    { "prompt": "Type in Spanish: Tomás closes his eyes.", "answer": "Tomás cierra los ojos.", "accept": [], "why": "They're Tomás's own eyes, so *los ojos* is enough." },
-    { "prompt": "Type in Spanish: Vale has long hair.", "answer": "Vale tiene el pelo largo.", "accept": [], "why": "Spanish says she has the hair long: *el pelo*, not *su pelo*." },
-    { "prompt": "Type in Spanish: My café is small.", "answer": "Mi café es pequeño.", "accept": [], "why": "A café belongs to you but isn't part of you: *mi*." },
-    { "prompt": "Make it about we: \"*Me lavo la cara.*\"", "answer": "Nos lavamos la cara.", "accept": ["Nosotros nos lavamos la cara."], "why": "*Nos* says whose faces; each of us has one, so it stays *la cara*." },
-    { "prompt": "Make the jacket a friend's: \"*Me pruebo la chaqueta.*\" Say: I try your jacket on.", "answer": "Me pruebo tu chaqueta.", "accept": [], "why": "When it's someone else's, Spanish says so with *tu*." }
+    {
+      "prompt": "Fill the gap with *el* or *mi*, then type the whole sentence: \"*Me lavo ___ pelo.*\"",
+      "answer": "Me lavo el pelo.",
+      "accept": [],
+      "why": "*Me* already says it's your hair, so just *el*."
+    },
+    {
+      "prompt": "Fill the gap with *la* or *mi*, then type the whole sentence: \"*___ casa es grande.*\" (My house is big.)",
+      "answer": "Mi casa es grande.",
+      "accept": [],
+      "why": "A house isn't part of you, and nothing else says whose, so keep *mi*."
+    },
+    {
+      "prompt": "Type in Spanish: Tomás closes his eyes.",
+      "answer": "Tomás cierra los ojos.",
+      "accept": [],
+      "why": "They're Tomás's own eyes, so *los ojos* is enough."
+    },
+    {
+      "prompt": "Type in Spanish: Vale has long hair.",
+      "answer": "Vale tiene el pelo largo.",
+      "accept": [],
+      "why": "Spanish says she has the hair long: *el pelo*, not *su pelo*."
+    },
+    {
+      "prompt": "Type in Spanish: My café is small.",
+      "answer": "Mi café es pequeño.",
+      "accept": [],
+      "why": "A café belongs to you but isn't part of you: *mi*."
+    },
+    {
+      "prompt": "Make it about we: \"*Me lavo la cara.*\"",
+      "answer": "Nos lavamos la cara.",
+      "accept": [
+        "Nosotros nos lavamos la cara."
+      ],
+      "why": "*Nos* says whose faces; each of us has one, so it stays *la cara*."
+    },
+    {
+      "prompt": "Make the jacket a friend's: \"*Me pruebo la chaqueta.*\" Say: I try your jacket on.",
+      "answer": "Me pruebo tu chaqueta.",
+      "accept": [],
+      "why": "When it's someone else's, Spanish says so with *tu*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Me lavo mis manos.", "right": "Me lavo las manos.", "why": "Almost. *Me* already says they're your hands; *mis* says it twice." },
-    { "wrong": "Vale tiene su pelo largo.", "right": "Vale tiene el pelo largo.", "why": "Her own hair just takes *el*." },
-    { "wrong": "Tomás cierra sus ojos.", "right": "Tomás cierra los ojos.", "why": "His own eyes need no *sus*; *Tomás* already says whose." }
+    {
+      "wrong": "Me lavo mis manos.",
+      "right": "Me lavo las manos.",
+      "why": "Almost. *Me* already says they're your hands; *mis* says it twice."
+    },
+    {
+      "wrong": "Vale tiene su pelo largo.",
+      "right": "Vale tiene el pelo largo.",
+      "why": "Her own hair just takes *el*."
+    },
+    {
+      "wrong": "Tomás cierra sus ojos.",
+      "right": "Tomás cierra los ojos.",
+      "why": "His own eyes need no *sus*; *Tomás* already says whose."
+    }
   ],
   "personal": "Describe yourself in one line with *tengo* and a body part (*Tengo el pelo...*), then one line about something you own with *mi*."
 }
