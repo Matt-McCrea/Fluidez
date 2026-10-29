@@ -1,0 +1,241 @@
+{
+ "id": "ch036",
+ "unit": "u14",
+ "title": "La última frase",
+ "text": "La Burra volvió despacio a La Candelaria, y por fin Hernando habló.\nHernando: Joaquín me dio esta llave en 1978, antes de su viaje. Es la llave de la puerta de la cocina.\nTomás: ¿Y la escritura?\nHernando: La escritura no sé dónde está, mijo. Es la verdad. Pero Rosa escribía todo. Lea la carta otra vez.\nHernando puso la llave en la mano de Tomás.\nHernando: Ahora la llave es de usted.\nEn el café, Mariana esperaba con una noticia terrible.\nMariana: Altamira compró el contrato de arriendo del café. El contrato termina en un año.\nTomás: O sea, en un año no hay café.\nSimón: ¡O sea! ¡O sea!\nHernando: Simón, por favor. Hoy no.\nTomás nunca leyó la carta de Rosa hasta el final. Era muy difícil. Hoy sí la leyó. Al final había una frase que nadie conocía.\nTomás: «Joaquín, el edificio que compramos tú y yo en 1977 es de los dos».\nMariana: ¿El edificio que compramos tú y yo? ¿Rosa y Joaquín compraron el edificio?\nHernando cerró los ojos un momento.\nMariana: Entonces el contrato que compró Altamira es una cosa, y el edificio es otra cosa. No es fácil, Tomás. Pero es posible.\nTomás: Tengo que llamar a Vale.\nVale estaba en Medellín, en el cumpleaños de su mamá. Tomás la llamó.\nVale: ¿Aló? ¿Tomás? Estoy en el bus, en la montaña.\nTomás: Vale, el edificio... Rosa... Joaquín... ¡el contrato! Es especial, es terrible, es...\nVale: Tomás, no entiendo. ¿Es bueno o es terrible?\nY la llamada terminó.\nHernando: Un ejemplo perfecto de español, mijo.\nMariana: Escribe un mensaje, Tomás. Un mensaje largo, con detalles. Además, escribes mejor que hablas.\nTomás miró su celular. Escribir en español era difícil. Escribir a Vale era más difícil.\nSimón: ¡Por ejemplo! ¡Por ejemplo!",
+ "gloss": [
+  {
+   "es": "mijo",
+   "en": "son (a fond way to talk to a younger man)"
+  },
+  {
+   "es": "La Burra volvió despacio a La Candelaria",
+   "en": "The Burra drove slowly back to La Candelaria"
+  },
+  {
+   "es": "antes de su viaje",
+   "en": "before he went away"
+  },
+  {
+   "es": "Ahora la llave es de usted.",
+   "en": "Now the key is yours."
+  },
+  {
+   "es": "el contrato de arriendo",
+   "en": "the lease (the rental contract)"
+  },
+  {
+   "es": "Tomás nunca leyó la carta de Rosa hasta el final.",
+   "en": "Tomás never read Rosa's letter to the end."
+  },
+  {
+   "es": "es de los dos",
+   "en": "belongs to both of us"
+  },
+  {
+   "es": "Hernando cerró los ojos un momento.",
+   "en": "Hernando closed his eyes for a moment."
+  },
+  {
+   "es": "Y la llamada terminó.",
+   "en": "And the call cut out."
+  },
+  {
+   "es": "Además, escribes mejor que hablas.",
+   "en": "Besides, you write better than you speak."
+  }
+ ],
+ "questions": [
+  {
+   "q": "What does Hernando finally tell Tomás about the key?",
+   "options": [
+    "Joaquín gave it to him in 1978, and it opens the kitchen door",
+    "It opens the notary's office",
+    "Rosa lost it in 1978",
+    "It belongs to Altamira"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is Mariana's terrible news?",
+   "options": [
+    "Altamira bought the café's lease, and it ends in a year",
+    "Altamira bought Gloria's house",
+    "The notary has closed",
+    "Vale is leaving the café"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Why does the last line of Rosa's letter change things?",
+   "options": [
+    "It says Rosa and Joaquín bought the building, so the lease is not the whole story",
+    "It says where the deed is",
+    "It says Rosa wanted to sell",
+    "It says Joaquín is coming back"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "¿Por qué Tomás no habla bien con Vale?",
+   "options": [
+    "Porque Vale está en el bus, en la montaña, y la llamada termina",
+    "Porque Vale no contesta",
+    "Porque Simón tiene el celular",
+    "Porque Vale está en Toronto"
+   ],
+   "answer": 0
+  }
+ ],
+ "rereadQuestions": [
+  {
+   "q": "Why is Vale in Medellín?",
+   "options": [
+    "For her mother's birthday",
+    "For a pastry course",
+    "To visit Joaquín",
+    "To buy a new oven"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "In what year did Rosa and Joaquín buy the building?",
+   "options": [
+    "1977",
+    "1978",
+    "1979",
+    "1995"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What does Hernando say to Simón after he shouts «¡O sea!»?",
+   "options": [
+    "Please, Simón. Not today.",
+    "Very funny, Simón.",
+    "Quiet, Simón.",
+    "Good morning, Simón."
+   ],
+   "answer": 0
+  }
+ ],
+ "hook": "Vale is on a mountain road with no signal, and Tomás has news too big for his phone Spanish. Tonight he tries to write her the longest message of his life.",
+ "requires": [
+  "c:ademas",
+  "c:al-final",
+  "c:alo",
+  "c:donde-esta",
+  "c:entonces-bueno",
+  "c:era",
+  "c:es-que",
+  "c:hay",
+  "c:la-verdad",
+  "c:no-entiendo",
+  "c:no-se",
+  "c:o-sea",
+  "c:por-ejemplo",
+  "c:por-favor",
+  "c:tengo",
+  "c:tengo-que",
+  "g:commands-usted",
+  "g:comparatives",
+  "g:direct-objects",
+  "g:estar-location-states",
+  "g:gender-articles",
+  "g:hay-vs-esta",
+  "g:imperfect-habitual",
+  "g:imperfect-states",
+  "g:prep-pronouns",
+  "g:present-ar",
+  "g:present-er-ir",
+  "g:preterite-ar",
+  "g:preterite-er-ir",
+  "g:preterite-irregular-strong",
+  "g:preterite-spelling-stem",
+  "g:reformulation",
+  "g:relative-que",
+  "g:ser-identity",
+  "g:stem-boot",
+  "g:verb-infinitive",
+  "g:yo-irregular",
+  "p:bien-bueno",
+  "p:bien-mal-vs-bueno-malo",
+  "p:dates-years",
+  "p:demonstratives-basic",
+  "p:es-adj-inf",
+  "p:frequency-scale",
+  "p:me-te-nos-objects",
+  "p:otro-no-article",
+  "p:personal-a",
+  "p:possessives-basic",
+  "p:quantifiers-basic",
+  "p:saber-conocer"
+ ],
+ "lexemes": [
+  "l:además",
+  "l:ahora",
+  "l:antes",
+  "l:arriendo",
+  "l:año",
+  "l:bueno",
+  "l:bus",
+  "l:café",
+  "l:carta",
+  "l:celular",
+  "l:cerrar",
+  "l:cocina",
+  "l:comprar",
+  "l:conocer",
+  "l:contrato",
+  "l:cosa",
+  "l:cumpleaños",
+  "l:dar",
+  "l:despacio",
+  "l:detalle",
+  "l:difícil",
+  "l:dónde",
+  "l:edificio",
+  "l:ejemplo",
+  "l:entender",
+  "l:escribir",
+  "l:escritura",
+  "l:español",
+  "l:especial",
+  "l:esperar",
+  "l:estar",
+  "l:favor",
+  "l:fin",
+  "l:final",
+  "l:frase",
+  "l:fácil",
+  "l:hablar",
+  "l:hoy",
+  "l:largo",
+  "l:leer",
+  "l:llamada",
+  "l:llamar",
+  "l:llave",
+  "l:mamá",
+  "l:mano",
+  "l:mejor",
+  "l:mensaje",
+  "l:mirar",
+  "l:momento",
+  "l:montaña",
+  "l:noticia",
+  "l:ojo",
+  "l:perfecto",
+  "l:poner",
+  "l:posible",
+  "l:puerta",
+  "l:saber",
+  "l:ser",
+  "l:tener",
+  "l:terminar",
+  "l:terrible",
+  "l:verdad",
+  "l:vez",
+  "l:viaje",
+  "l:volver"
+ ]
+}
