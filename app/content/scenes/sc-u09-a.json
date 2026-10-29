@@ -1,0 +1,211 @@
+{
+  "id": "sc-u09-a",
+  "unit": "u09",
+  "title": "One bathroom, six people",
+  "brief": "You're Tomás. It's early at Doña Gloria's house, there is one bathroom for six people, and she wants a timetable. Tell her when you get up, shower, leave and go to bed, and find out what to do about the cold water. She's older than you, so use usted with her; she uses tú with you.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, buenos días. En esta casa hay un baño y somos seis. ¿A qué hora te levantas?",
+      "npcEn": "Tomás, good morning. There's one bathroom in this house and there are six of us. What time do you get up?",
+      "intent": "Say you get up at five.",
+      "accept": [
+        "Me levanto a las cinco.",
+        "A las cinco. Me levanto muy temprano.",
+        "Normalmente me levanto a las cinco, doña Gloria."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "levantarse",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I get up: me levanto"
+        }
+      ],
+      "focus": "g:reflexive-routine",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿A las cinco? ¿Y te duchas por la mañana o por la noche?",
+      "npcEn": "At five? And do you shower in the morning or at night?",
+      "intent": "Say you shower in the morning, before going to the café.",
+      "accept": [
+        "Me ducho por la mañana, antes de ir al café.",
+        "Por la mañana. Me ducho antes de ir al café.",
+        "Por la mañana, antes de ir al café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bantes de ir\\b",
+          "flags": "i",
+          "label": "before going: antes de ir (the verb stays as it is in the dictionary)"
+        }
+      ],
+      "focus": "g:prep-infinitive",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Samuel se ducha a las seis y media, y mi esposo a las siete. ¿A qué hora sales de la casa?",
+      "npcEn": "Samuel showers at half past six, and my husband at seven. What time do you leave the house?",
+      "intent": "Say you leave at a quarter to six: you have to buy the bread.",
+      "accept": [
+        "Salgo a las seis menos cuarto. Tengo que comprar el pan.",
+        "A las seis menos cuarto. Tengo que comprar el pan.",
+        "Salgo a las seis menos cuarto. Tengo que comprar el pan del café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btengo que comprar\\b",
+          "flags": "i",
+          "label": "I have to buy: tengo que comprar"
+        }
+      ],
+      "focus": "g:tener-que-hay-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ay, Tomás. El agua está fría hasta las seis.",
+      "npcEn": "Oh, Tomás. The water is cold until six.",
+      "intent": "Ask her what you have to do, then.",
+      "accept": [
+        "¿Y qué tengo que hacer?",
+        "Entonces, ¿qué tengo que hacer?",
+        "¿Qué tengo que hacer, doña Gloria?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\btengo que hacer\\b",
+          "flags": "i",
+          "label": "what do I have to do: ¿qué tengo que hacer?"
+        }
+      ],
+      "focus": "g:tener-que-hay-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hay que esperar, o hay que ducharse por la noche. ¿A qué hora te acuestas?",
+      "npcEn": "You have to wait, or you have to shower at night. What time do you go to bed?",
+      "intent": "Say you go to bed at ten, and you'll shower after dinner.",
+      "accept": [
+        "Me acuesto a las diez. Me ducho después de cenar.",
+        "A las diez. Me ducho después de cenar y me acuesto.",
+        "Me acuesto a las diez, entonces me ducho después de cenar."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ducharse",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I shower: me ducho"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bdespués de cenar\\b",
+          "flags": "i",
+          "label": "after dinner: después de cenar"
+        }
+      ],
+      "focus": "g:prep-infinitive",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Listo, te duchas a las nueve. Oye, ¿y el pan del café?",
+      "npcEn": "Done, you shower at nine. Hey, what about the bread for the café?",
+      "intent": "Say you're running late, and thank her.",
+      "accept": [
+        "¡Uy, se me hizo tarde! Gracias, doña Gloria.",
+        "Muchas gracias, doña Gloria. ¡Se me hizo tarde!",
+        "¡Se me hizo tarde! Gracias."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "se me hizo tarde",
+          "label": "I'm running late: se me hizo tarde"
+        }
+      ],
+      "focus": "c:se-me-hizo-tarde",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-que-hora",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hay-que",
+    "c:hola-buenos-dias",
+    "c:normalmente",
+    "c:oiga-oye",
+    "c:que-tengo-que-hacer",
+    "c:se-me-hizo-tarde",
+    "c:tengo",
+    "c:tengo-que",
+    "g:adverbs-mente",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:reflexive-routine",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acostarse",
+    "l:agua",
+    "l:antes",
+    "l:baño",
+    "l:bueno",
+    "l:café",
+    "l:casa",
+    "l:cenar",
+    "l:comprar",
+    "l:después",
+    "l:ducharse",
+    "l:día",
+    "l:esperar",
+    "l:esposo",
+    "l:estar",
+    "l:frío",
+    "l:hacer",
+    "l:hacerse",
+    "l:hora",
+    "l:ir",
+    "l:levantarse",
+    "l:listo",
+    "l:mañana",
+    "l:noche",
+    "l:normalmente",
+    "l:oír",
+    "l:pan",
+    "l:qué",
+    "l:salir",
+    "l:ser",
+    "l:tarde",
+    "l:temprano",
+    "l:tener",
+    "p:demonstratives-basic",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic"
+  ]
+}

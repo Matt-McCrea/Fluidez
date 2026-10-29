@@ -1,0 +1,195 @@
+{
+  "id": "sc-u09-c",
+  "unit": "u09",
+  "title": "Parqués at four",
+  "brief": "You're Tomás. It's four in the afternoon, you're doing the café's accounts, and Don Hernando wants his game of parqués. Tell him what you're doing and what you still have to do, and don't let him do your work. He's older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, son las cuatro. ¿Jugamos parqués?",
+      "npcEn": "Tomás, it's four o'clock. Shall we play parqués?",
+      "intent": "Say not now: you're doing the accounts.",
+      "accept": [
+        "Ahora no, don Hernando. Estoy haciendo las cuentas.",
+        "Lo siento, estoy haciendo las cuentas.",
+        "Ahora no. Estoy haciendo las cuentas del café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bestoy haciendo\\b",
+          "flags": "i",
+          "label": "right now: estoy haciendo"
+        }
+      ],
+      "focus": "x:present-progressive",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Otra vez las cuentas? ¿Y a qué hora termina?",
+      "npcEn": "The accounts again? And what time do you finish?",
+      "intent": "Say you finish at five.",
+      "accept": [
+        "Termino a las cinco.",
+        "Termino de hacer las cuentas a las cinco.",
+        "Normalmente termino a las cinco, don Hernando."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "terminar",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I finish: termino"
+        }
+      ],
+      "focus": "p:empezar-terminar",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "A las cinco, entonces. ¿Y después jugamos?",
+      "npcEn": "At five, then. And afterwards we play?",
+      "intent": "Say no: after the accounts you have to sweep.",
+      "accept": [
+        "No, después de las cuentas tengo que barrer.",
+        "No, después de las cuentas tengo que barrer y limpiar las mesas.",
+        "Lo siento, después de terminar tengo que barrer."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btengo que barrer\\b",
+          "flags": "i",
+          "label": "I have to sweep: tengo que barrer"
+        }
+      ],
+      "focus": "g:tener-que-hay-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Usted trabaja desde las cinco de la mañana hasta las nueve de la noche. ¿Cuándo descansa?",
+      "npcEn": "You work from five in the morning until nine at night. When do you rest?",
+      "intent": "Say you almost never rest.",
+      "accept": [
+        "Casi nunca descanso.",
+        "No descanso casi nunca, don Hernando.",
+        "Casi nunca descanso, don Hernando."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "casi nunca",
+          "label": "almost never: casi nunca"
+        }
+      ],
+      "focus": "p:frequency-scale",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bueno, entonces yo voy a barrer el café y usted termina las cuentas. Después, parqués.",
+      "npcEn": "Right, so I'm going to sweep the café and you finish the accounts. Then, parqués.",
+      "intent": "Tell him he doesn't have to sweep.",
+      "accept": [
+        "No, don Hernando, usted no tiene que barrer.",
+        "Usted no tiene que barrer, don Hernando.",
+        "No, no. Usted no tiene que barrer el café."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say it with no"
+        },
+        {
+          "type": "verbForm",
+          "inf": "tener",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "you (usted) don't have to: usted no tiene que"
+        }
+      ],
+      "focus": "g:tener-que-hay-que",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Muy tarde. Ya terminé la cocina, Tomás. ¿Y usted? ¿Las cuentas?",
+      "npcEn": "Too late. I've already finished the kitchen, Tomás. And you? The accounts?",
+      "intent": "Say you're coming: you're finishing the accounts now.",
+      "accept": [
+        "¡Ya voy! Estoy terminando las cuentas.",
+        "Ya voy, ya voy. Estoy terminando las cuentas.",
+        "¡Ya voy, don Hernando! Estoy terminando las cuentas."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ya voy",
+          "label": "coming: ¡ya voy!"
+        }
+      ],
+      "focus": "c:ya-voy",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-que-hora",
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:lo-siento-pero-no-puedo",
+    "c:normalmente",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "c:voy-a",
+    "c:voy-vas",
+    "c:ya-voy",
+    "g:adverbs-mente",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:barrer",
+    "l:bueno",
+    "l:café",
+    "l:cocina",
+    "l:cuenta",
+    "l:cuándo",
+    "l:descansar",
+    "l:después",
+    "l:estar",
+    "l:hacer",
+    "l:hora",
+    "l:ir",
+    "l:jugar",
+    "l:limpiar",
+    "l:mañana",
+    "l:mesa",
+    "l:noche",
+    "l:normalmente",
+    "l:parque",
+    "l:qué",
+    "l:sentir",
+    "l:ser",
+    "l:tarde",
+    "l:tener",
+    "l:terminar",
+    "l:trabajar",
+    "l:vez",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic"
+  ]
+}

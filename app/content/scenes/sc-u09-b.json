@@ -1,0 +1,208 @@
+{
+  "id": "sc-u09-b",
+  "unit": "u09",
+  "title": "The night pharmacist",
+  "brief": "You're Tomás. You haven't slept properly in days, so you walk into the droguería on the corner after work. Tell the pharmacist about your evenings and your coffee, and find out what you have to do. She's a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes, señor. ¿Qué necesita?",
+      "npcEn": "Good afternoon, sir. What do you need?",
+      "intent": "Say you don't sleep well.",
+      "accept": [
+        "Buenas tardes. No duermo bien.",
+        "No duermo bien, señora.",
+        "Buenas tardes, señora. No duermo bien por la noche."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say it with no"
+        },
+        {
+          "type": "verbForm",
+          "inf": "dormir",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I sleep: duermo"
+        }
+      ],
+      "focus": "g:stem-boot",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Uy, qué cara. ¿A qué hora se acuesta usted?",
+      "npcEn": "Oh, look at your face. What time do you go to bed?",
+      "intent": "Say you go to bed at ten, but you sleep very little.",
+      "accept": [
+        "Me acuesto a las diez, pero duermo muy poco.",
+        "Normalmente me acuesto a las diez, pero duermo muy poco.",
+        "A las diez. Me acuesto a las diez, pero duermo muy poco."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "acostarse",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I go to bed: me acuesto"
+        }
+      ],
+      "focus": "g:reflexive-routine",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y qué hace antes de dormir?",
+      "npcEn": "And what do you do before you sleep?",
+      "intent": "Say that before sleeping you do the café's accounts on the computer.",
+      "accept": [
+        "Antes de dormir, hago las cuentas del café en la computadora.",
+        "Hago las cuentas del café en la computadora antes de dormir.",
+        "Antes de dormir, hago las cuentas en la computadora."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bantes de dormir\\b",
+          "flags": "i",
+          "label": "before sleeping: antes de dormir"
+        }
+      ],
+      "focus": "g:prep-infinitive",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Y toma café?",
+      "npcEn": "And do you drink coffee?",
+      "intent": "Say yes, five black coffees a day.",
+      "accept": [
+        "Sí, tomo cinco tintos al día.",
+        "Sí, cinco tintos al día.",
+        "Claro, tomo cinco tintos al día. Trabajo en un café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bal día\\b",
+          "flags": "i",
+          "label": "a day: al día"
+        }
+      ],
+      "focus": "p:veces-al",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Cinco tintos? Señor, usted no necesita nada de la droguería. Usted no debe tomar café por la tarde.",
+      "npcEn": "Five black coffees? Sir, you don't need anything from the pharmacy. You shouldn't drink coffee in the afternoon.",
+      "intent": "Ask her if you have to drink juice, then.",
+      "accept": [
+        "¿Entonces tengo que tomar jugo?",
+        "¿Tengo que tomar jugo, entonces?",
+        "Entonces, ¿tengo que tomar jugo por la tarde?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\btengo que tomar\\b",
+          "flags": "i",
+          "label": "do I have to drink: ¿tengo que tomar?"
+        }
+      ],
+      "focus": "g:tener-que-hay-que",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Jugo o agua. Y las cuentas, por la mañana. ¿Algo más?",
+      "npcEn": "Juice or water. And the accounts, in the morning. Anything else?",
+      "intent": "Say no, thanks: it's late and you have to close the café.",
+      "accept": [
+        "No, gracias, señora. Ya es tarde y tengo que cerrar el café.",
+        "Muchas gracias. Es tarde y tengo que cerrar el café.",
+        "No, gracias. Ya es tarde. Tengo que cerrar el café."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "es tarde",
+          "label": "it's late: es tarde"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\btengo que cerrar\\b",
+          "flags": "i",
+          "label": "I have to close: tengo que cerrar"
+        }
+      ],
+      "focus": "p:es-de-noche-tarde",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-que-hora",
+    "c:algo-mas",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hola-buenos-dias",
+    "c:normalmente",
+    "c:tengo",
+    "c:tengo-que",
+    "c:trabajo-en",
+    "g:adverbs-mente",
+    "g:gender-articles",
+    "g:negation-words",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:tener-que-hay-que",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acostarse",
+    "l:agua",
+    "l:antes",
+    "l:bien",
+    "l:buena",
+    "l:café",
+    "l:cara",
+    "l:cerrar",
+    "l:claro",
+    "l:computadora",
+    "l:cuenta",
+    "l:deber",
+    "l:dormir",
+    "l:droguería",
+    "l:día",
+    "l:hacer",
+    "l:hora",
+    "l:jugo",
+    "l:mañana",
+    "l:necesitar",
+    "l:noche",
+    "l:normalmente",
+    "l:qué",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:tarde",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:trabajar",
+    "p:quantifiers-basic"
+  ]
+}
