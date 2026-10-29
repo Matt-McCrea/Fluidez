@@ -1,0 +1,42 @@
+{
+  "node": "p:prefieres-x-o-y",
+  "hook": {
+    "line": "Hosts in Colombia will offer you a choice every five minutes. Here's how to ask one, and how to answer it without a speech.",
+    "es": "—¿Prefieres tinto o jugo? —Jugo, gracias.",
+    "en": "—Would you rather have black coffee or juice? —Juice, thanks."
+  },
+  "examples": [
+    { "es": "¿Prefieres cine o fútbol?", "en": "Do you prefer the cinema or football?" },
+    { "es": "Prefiero cocinar.", "en": "I'd rather cook." },
+    { "es": "¿Cerveza o jugo?", "en": "Beer or juice?" },
+    { "es": "¿Cuál prefieres, el jugo de fruta o el chocolate?", "en": "Which one do you prefer, the fruit juice or the hot chocolate?" },
+    { "es": "Vale prefiere el sábado.", "en": "Vale prefers Saturday." }
+  ],
+  "rule": "Preferir is a boot verb: prefiero, prefieres, prefiere, preferimos, prefieren.\n\nTo offer a choice, name both things with o in the middle: ¿Prefieres tinto o jugo? Among friends you can drop the verb: ¿Tinto o jugo?\n\nTo answer, just pick one. Jugo, gracias is a full, polite answer. If you want a sentence: Prefiero el jugo.\n\nPrefiero can be followed by a thing (Prefiero el cine) or by an action (Prefiero caminar).\n\nWhen the two things are already on the table, ask with cuál: ¿Cuál prefieres? = Which one do you prefer?\n\nDon't mind? Say me da igual.",
+  "smallPrint": "Preferir is an e→ie stem-changing verb. ¿Cuál…? asks for a choice from a set; ¿Qué…? is more open.",
+  "readAndPick": [
+    { "es": "—¿Prefieres tinto o jugo? —Jugo.", "options": ["They choose juice.", "They choose coffee.", "They want both."], "answer": 0 },
+    { "es": "—¿Cine o fútbol? —Me da igual.", "options": ["They don't mind.", "They want the cinema.", "They hate football."], "answer": 0 },
+    { "es": "Preferimos caminar.", "options": ["We'd rather walk.", "They'd rather walk.", "I'd rather walk."], "answer": 0 },
+    { "es": "¿Cuál prefieres?", "options": ["Which one do you prefer?", "Do you prefer it?", "What do you like?"], "answer": 0 },
+    { "es": "Los clientes prefieren el café de Vale.", "options": ["The customers prefer Vale's coffee.", "Vale prefers the customers' coffee.", "A customer prefers coffee."], "answer": 0 },
+    { "es": "—¿Bailar o cantar? —¡Bailar!", "options": ["They'd rather dance.", "They'd rather sing.", "They don't mind."], "answer": 0 },
+    { "es": "¿Ustedes prefieren pizza o fruta?", "options": ["Do you all prefer pizza or fruit?", "Do you prefer pizza or fruit? (one friend)", "Do we prefer pizza or fruit?"], "answer": 0 },
+    { "es": "Prefiero el sábado.", "options": ["I'd rather do Saturday.", "I like Saturdays.", "Saturday is better for her."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Ask a friend: beer or juice? Use preferir.", "answer": "¿Prefieres cerveza o jugo?", "accept": ["¿Prefieres una cerveza o un jugo?"], "why": "Prefieres is the tú form of the boot verb: e becomes ie." },
+    { "prompt": "Answer: you'd rather have juice. Keep it short.", "answer": "Jugo, gracias.", "accept": ["Prefiero jugo.", "Prefiero el jugo.", "Un jugo, gracias."], "why": "Naming the thing you want is a complete answer." },
+    { "prompt": "Say: I'd rather walk.", "answer": "Prefiero caminar.", "accept": [], "why": "Prefiero can go straight before an action." },
+    { "prompt": "Ask a friend which one they prefer.", "answer": "¿Cuál prefieres?", "accept": [], "why": "When the options are already in front of you, ask with cuál." },
+    { "prompt": "Say: We prefer Saturday.", "answer": "Preferimos el sábado.", "accept": [], "why": "Nosotros is outside the boot: preferimos keeps the e." },
+    { "prompt": "Ask a stranger politely: cinema or football?", "answer": "¿Prefiere cine o fútbol?", "accept": ["¿Usted prefiere cine o fútbol?", "¿Prefiere el cine o el fútbol?"], "why": "Usted takes the él/ella form: prefiere." },
+    { "prompt": "Someone asks ¿Pizza o fruta? Say you don't mind.", "answer": "Me da igual.", "accept": [], "why": "Me da igual is the easy way out of any either-or question." }
+  ],
+  "pitfalls": [
+    { "wrong": "Prefero el jugo.", "right": "Prefiero el jugo.", "why": "Preferir is a boot verb: prefiero." },
+    { "wrong": "Prefieremos caminar.", "right": "Preferimos caminar.", "why": "Nosotros is outside the boot, and it's an -ir verb: preferimos." },
+    { "wrong": "—¿Tinto o jugo? —Sí.", "right": "—¿Tinto o jugo? —Tinto, gracias.", "why": "An either-or question wants one of the two, not yes." }
+  ],
+  "personal": "Pick a side: cinema or football, beer or juice, Saturday or Sunday? Write three answers that start with Prefiero…"
+}

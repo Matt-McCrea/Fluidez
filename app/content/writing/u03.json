@@ -1,0 +1,173 @@
+[
+  {
+    "id": "w-u03-01",
+    "unit": "u03",
+    "prompt": "A new friend in Bogotá asks what you're into. Write three things you like and one thing you don't like. Use me gusta at least once and me gustan at least once.",
+    "minWords": 15,
+    "maxWords": 45,
+    "constraints": [
+      { "type": "containsWord", "word": "me gusta " },
+      { "type": "containsWord", "word": "me gustan" },
+      { "type": "negation" },
+      { "type": "minSentences", "n": 3 }
+    ],
+    "model": "Me gusta el café de Colombia. Me gustan los parques de Bogotá y me gusta caminar los domingos. No me gustan las reuniones de los lunes.",
+    "focus": "g:gustar-basic"
+  },
+  {
+    "id": "w-u03-02",
+    "unit": "u03",
+    "prompt": "Ask a classmate three questions about what they like. One of them should ask what kind of something they like.",
+    "minWords": 10,
+    "maxWords": 35,
+    "constraints": [
+      { "type": "question" },
+      { "type": "containsWord", "word": "te gusta" },
+      { "type": "containsWord", "word": "tipo de" },
+      { "type": "minSentences", "n": 3 }
+    ],
+    "model": "¿Te gusta bailar? ¿Qué tipo de música te gusta? ¿Te gustan las películas en español?",
+    "focus": "p:que-tipo-de"
+  },
+  {
+    "id": "w-u03-03",
+    "unit": "u03",
+    "prompt": "Tell a friend your plans for the weekend: three things you're going to do, and one thing you're not going to do.",
+    "minWords": 18,
+    "maxWords": 50,
+    "constraints": [
+      { "type": "verbForm", "inf": "ir", "tense": "presente", "person": "yo" },
+      { "type": "regex", "pattern": "\\bvoy a [a-záéíóúñ]+(ar|er|ir)\\b" },
+      { "type": "negation" },
+      { "type": "minSentences", "n": 3 }
+    ],
+    "model": "El sábado voy a jugar al fútbol en el parque. El domingo voy a comer pizza con Mariana y voy a leer. No voy a trabajar.",
+    "focus": "g:ir-a-plans"
+  },
+  {
+    "id": "w-u03-04",
+    "unit": "u03",
+    "prompt": "Describe your week: what you do on certain days every week, and one thing that's happening on one particular day soon.",
+    "minWords": 18,
+    "maxWords": 50,
+    "constraints": [
+      { "type": "regex", "pattern": "\\blos (lunes|martes|miércoles|jueves|viernes|sábados|domingos)\\b" },
+      { "type": "regex", "pattern": "\\bel (lunes|martes|miércoles|jueves|viernes|sábado|domingo)\\b" },
+      { "type": "minSentences", "n": 3 }
+    ],
+    "model": "Los lunes trabajo en la oficina. Los miércoles nado en la universidad. Los sábados bailo en el centro con Vale. El viernes hay una fiesta en el café.",
+    "focus": "p:days-el-lunes"
+  },
+  {
+    "id": "w-u03-05",
+    "unit": "u03",
+    "prompt": "Your friend Mariana writes: \"Trabajo los sábados. No juego al fútbol. Estudio inglés. No como pizza.\" Answer each line with me too, me neither, or the opposite.",
+    "minWords": 8,
+    "maxWords": 35,
+    "constraints": [
+      { "type": "containsWord", "word": "también" },
+      { "type": "containsWord", "word": "tampoco" },
+      { "type": "minSentences", "n": 3 }
+    ],
+    "model": "Yo también trabajo los sábados. Yo tampoco juego al fútbol. Yo no: estudio español. Yo sí, ¡me encanta la pizza!",
+    "focus": "p:tambien-tampoco"
+  },
+  {
+    "id": "w-u03-06",
+    "unit": "u03",
+    "prompt": "You're at Vale's café. Order something to drink and something to eat, and say which of two drinks you prefer.",
+    "minWords": 10,
+    "maxWords": 35,
+    "constraints": [
+      { "type": "containsWord", "word": "quiero" },
+      { "type": "verbForm", "inf": "preferir", "tense": "presente", "person": "yo" },
+      { "type": "containsWord", "word": "por favor" }
+    ],
+    "model": "Buenos días, Vale. Quiero un jugo de fruta y pan, por favor. No quiero tinto: prefiero el chocolate.",
+    "focus": "g:stem-boot"
+  },
+  {
+    "id": "w-u03-07",
+    "unit": "u03",
+    "prompt": "A friend wants to meet up this week. Tell them which days you can't make and which day you can.",
+    "minWords": 10,
+    "maxWords": 40,
+    "constraints": [
+      { "type": "verbForm", "inf": "poder", "tense": "presente", "person": "yo" },
+      { "type": "negation" },
+      { "type": "containsAny", "words": ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"] }
+    ],
+    "model": "Perdón, el lunes no puedo: trabajo. El martes tampoco puedo. Puedo el jueves a las seis. ¿Puedes tú?",
+    "focus": "g:stem-boot"
+  },
+  {
+    "id": "w-u03-08",
+    "unit": "u03",
+    "prompt": "Write about sport: what you play (or don't), when, and with whom.",
+    "minWords": 12,
+    "maxWords": 40,
+    "constraints": [
+      { "type": "verbFormAny", "inf": "jugar", "tense": "presente" },
+      { "type": "regex", "pattern": "\\b(al|a la|a las|a los)\\b" }
+    ],
+    "model": "Juego al fútbol los domingos con los compañeros de la oficina. Jugamos en el parque del barrio. Vale no juega: prefiere nadar.",
+    "focus": "p:jugar-a"
+  },
+  {
+    "id": "w-u03-09",
+    "unit": "u03",
+    "prompt": "It's Saturday afternoon in La Candelaria. Write where three people are going or coming from. Use al or a la, and del or de la.",
+    "minWords": 12,
+    "maxWords": 40,
+    "constraints": [
+      { "type": "regex", "pattern": "\\b(al|a la)\\b" },
+      { "type": "regex", "pattern": "\\b(del|de la)\\b" },
+      { "type": "minSentences", "n": 3 }
+    ],
+    "model": "Vale va al banco. Mariana viene de la universidad con un libro. Don Hernando viene del parque y va al café.",
+    "focus": "p:ir-a-venir-de-place"
+  },
+  {
+    "id": "w-u03-10",
+    "unit": "u03",
+    "prompt": "Write a message inviting a friend to do something on Saturday. Offer them a choice between two plans.",
+    "minWords": 12,
+    "maxWords": 40,
+    "constraints": [
+      { "type": "question" },
+      { "type": "containsWord", "word": "prefieres" },
+      { "type": "containsWord", "word": "sábado" }
+    ],
+    "model": "¡Quiubo, Mariana! El sábado vamos a salir con Vale. ¿Prefieres el cine o el partido de fútbol? ¿Puedes a las cinco?",
+    "focus": "p:prefieres-x-o-y"
+  },
+  {
+    "id": "w-u03-11",
+    "unit": "u03",
+    "prompt": "You're Tomás. Write a short message to a friend in Toronto about Vale's plan for the café: what you like, what you don't, and what you're going to do on Saturday.",
+    "minWords": 20,
+    "maxWords": 55,
+    "constraints": [
+      { "type": "containsWord", "word": "gusta" },
+      { "type": "verbFormAny", "inf": "ir", "tense": "presente" },
+      { "type": "negation" },
+      { "type": "minSentences", "n": 3 }
+    ],
+    "model": "Hola, Sam. Vale tiene un plan: un año con el café. No me gusta el plan, pero me gusta el pan de Vale. El sábado vamos a empezar. Voy a ser el mesero. ¡Qué pena!",
+    "focus": "g:ir-a-plans"
+  },
+  {
+    "id": "w-u03-12",
+    "unit": "u03",
+    "prompt": "A friend asks you to choose: cinema or football, pizza or fruit, Saturday or Sunday. Answer each one. For one of them, say you don't mind.",
+    "minWords": 10,
+    "maxWords": 35,
+    "constraints": [
+      { "type": "containsWord", "word": "prefiero" },
+      { "type": "containsWord", "word": "me da igual" },
+      { "type": "minSentences", "n": 3 }
+    ],
+    "model": "Prefiero el cine: no me gusta el fútbol. Pizza o fruta, me da igual. Prefiero el domingo, porque el sábado trabajo.",
+    "focus": "c:me-da-igual"
+  }
+]

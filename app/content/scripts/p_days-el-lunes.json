@@ -1,0 +1,42 @@
+{
+  "node": "p:days-el-lunes",
+  "hook": {
+    "line": "Making any plan means naming a day. Spanish does it with one little word instead of 'on'.",
+    "es": "—¿Vamos a cine el sábado? —No puedo el sábado. ¿El domingo?",
+    "en": "—Shall we go to the cinema on Saturday? —I can't on Saturday. Sunday?"
+  },
+  "examples": [
+    { "es": "El lunes tengo una reunión.", "en": "On Monday I have a meeting." },
+    { "es": "Los sábados juego al fútbol.", "en": "On Saturdays I play football." },
+    { "es": "La fiesta es el viernes.", "en": "The party is on Friday." },
+    { "es": "Vale no trabaja los domingos.", "en": "Vale doesn't work on Sundays." },
+    { "es": "El partido es el miércoles.", "en": "The match is on Wednesday." }
+  ],
+  "rule": "Spanish has no word for 'on' with days. It uses el or los instead.\n\nel + day = one particular day: El lunes tengo una reunión (this coming Monday).\nlos + day = every week: Los sábados juego al fútbol (on Saturdays).\n\nThe days from lunes to viernes end in -s already, so they don't change: el lunes, los lunes. Sábado and domingo add an -s: los sábados, los domingos.\n\nDays are written with a small letter: el martes, not el Martes.\n\nNo en: el lunes, never en lunes.\n\nlunes, martes, miércoles, jueves, viernes, sábado, domingo.",
+  "smallPrint": "The definite article before a day does the job of a preposition of time.",
+  "soundTip": "Miércoles is stressed on MIÉR: MIÉR-co-les. Sábado on SÁ: SÁ-ba-do.",
+  "readAndPick": [
+    { "es": "Los domingos camino en el parque.", "options": ["On Sundays I walk in the park.", "This Sunday I'm walking in the park."], "answer": 0 },
+    { "es": "El domingo camino en el parque.", "options": ["On Sundays I walk in the park.", "On Sunday I'm walking in the park."], "answer": 1 },
+    { "es": "La reunión es el jueves.", "options": ["The meeting is on Thursday.", "The meeting is every Thursday."], "answer": 0 },
+    { "es": "Mariana no trabaja los viernes.", "options": ["Mariana doesn't work on Fridays.", "Mariana isn't working this Friday."], "answer": 0 },
+    { "es": "El sábado es la fiesta de Vale.", "options": ["Vale's party is on Saturday.", "Vale has a party every Saturday."], "answer": 0 },
+    { "es": "Los martes Tomás estudia español.", "options": ["Tomás studies Spanish on Tuesdays.", "Tomás is studying Spanish this Tuesday."], "answer": 0 },
+    { "es": "¿Trabajas el miércoles?", "options": ["Are you working on Wednesday?", "Do you work on Wednesdays?"], "answer": 0 },
+    { "es": "¿Qué haces los fines de semana?", "options": ["What do you do at weekends?", "What are you doing this weekend?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Say: The party is on Friday.", "answer": "La fiesta es el viernes.", "accept": [], "why": "One particular Friday: el viernes, no word for 'on'." },
+    { "prompt": "Say: On Saturdays I play football.", "answer": "Los sábados juego al fútbol.", "accept": ["Juego al fútbol los sábados.", "Los sábados juego fútbol.", "Juego fútbol los sábados."], "why": "Every week: los sábados, with an -s." },
+    { "prompt": "Say: I don't work on Mondays.", "answer": "No trabajo los lunes.", "accept": ["Los lunes no trabajo."], "why": "Every Monday: los lunes. Lunes doesn't change." },
+    { "prompt": "Say: The match is on Sunday.", "answer": "El partido es el domingo.", "accept": [], "why": "One Sunday: el domingo." },
+    { "prompt": "Ask a friend if they work on Saturday (this one).", "answer": "¿Trabajas el sábado?", "accept": [], "why": "One Saturday: el sábado." },
+    { "prompt": "Say: On Thursdays Vale cooks.", "answer": "Los jueves Vale cocina.", "accept": ["Vale cocina los jueves."], "why": "Every Thursday: los jueves." }
+  ],
+  "pitfalls": [
+    { "wrong": "Trabajo en lunes.", "right": "Trabajo el lunes.", "why": "No en with days: the article does the work." },
+    { "wrong": "La fiesta es el Viernes.", "right": "La fiesta es el viernes.", "why": "Days take a small letter in Spanish." },
+    { "wrong": "Los sábado juego al fútbol.", "right": "Los sábados juego al fútbol.", "why": "Sábado and domingo add an -s after los." }
+  ],
+  "personal": "What do you do every week, and what's happening on one particular day soon? Write one line with los + day and one with el + day."
+}
