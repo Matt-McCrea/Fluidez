@@ -1,0 +1,78 @@
+{
+  "node": "p:tener-anos",
+  "hook": {
+    "line": "Vale's mother has questions about the new owner of the café, and the first one is his age. In Spanish you don't are an age, you have it.",
+    "es": "¿Y cuántos años tiene el canadiense?\nTreinta y cuatro, mamá.",
+    "en": "And how old is the Canadian?\nThirty-four, Mum."
+  },
+  "examples": [
+    { "es": "Mi mamá tiene sesenta años.", "en": "My mum is sixty." },
+    { "es": "¿Cuántos años tiene tu hijo?", "en": "How old is your son? (to a friend)" },
+    { "es": "Tengo treinta y cuatro años.", "en": "I'm thirty-four." },
+    { "es": "Vale tiene veintiocho años.", "en": "Vale is twenty-eight." },
+    { "es": "Mi hermana tiene treinta años y yo tengo treinta y dos.", "en": "My sister is thirty and I'm thirty-two." },
+    { "es": "¿Cuántos años tienes?", "en": "How old are you? (to a friend)" }
+  ],
+  "rule": "Age is something you have: *tener*, the number, then *años* (years).\n*Tengo treinta años.* I'm thirty.\n*Mi abuela tiene noventa años.* My grandmother is ninety.\n\nTo ask: *¿Cuántos años tienes?* (to a friend) or *¿Cuántos años tiene?* (about someone, or to someone you call *usted*).\n\nIn an answer you can drop *años*: *Tengo treinta y dos.* What you can't do is use *ser*: *soy treinta* means nothing.\n\nOne tip: people don't ask an older adult's age straight out. Ask about the kids instead.",
+  "smallPrint": "This is *tener* used for age, one of several things Spanish has rather than is: hunger, cold, age.",
+  "readAndPick": [
+    { "es": "Tiene treinta años.", "options": ["I'm thirty.", "She's thirty.", "We're thirty."], "answer": 1 },
+    { "es": "¿Cuántos años tienes?", "options": ["How old are you? (to a friend)", "How old is he?", "How many years have you lived here?"], "answer": 0 },
+    { "es": "Tengo veintidós.", "options": ["She's twenty-two.", "You're twenty-two. (to a friend)", "I'm twenty-two."], "answer": 2 },
+    { "es": "Mis papás tienen sesenta años.", "options": ["My dad is sixty.", "My parents are sixty.", "My parents have sixty years in Cali."], "answer": 1 },
+    { "es": "¿Cuántos años tiene tu hija?", "options": ["How old is your daughter? (to a friend)", "How old are you? (to a friend)", "How many daughters do you have? (to a friend)"], "answer": 0 },
+    { "es": "Tenemos la misma edad.", "options": ["We have the same name.", "They're the same age.", "We're the same age."], "answer": 2 },
+    { "es": "Hernando tiene setenta y un años.", "options": ["Hernando is seventy-one.", "Hernando is seventy.", "Hernando has seventy-one grandchildren."], "answer": 0 },
+    { "es": "¿Cuántos años tiene usted?", "options": ["How old is she?", "How old are you? (formal)", "How old are they?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Mi mamá ___ sesenta años. (es / tiene)",
+      "answer": "Mi mamá tiene sesenta años.",
+      "accept": [],
+      "why": "Age is something you have: *tiene*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: Yo ___ treinta años. (tengo / soy)",
+      "answer": "Yo tengo treinta años.",
+      "accept": ["Tengo treinta años."],
+      "why": "I am thirty is *tengo*, never *soy*."
+    },
+    {
+      "prompt": "Vale is twenty-eight.",
+      "answer": "Vale tiene veintiocho años.",
+      "accept": ["Vale tiene veintiocho."],
+      "why": "*Tener*, the number, then *años*."
+    },
+    {
+      "prompt": "Ask a friend: How old is your son?",
+      "answer": "¿Cuántos años tiene tu hijo?",
+      "accept": [],
+      "why": "Ask with *¿Cuántos años tiene…?* and the person."
+    },
+    {
+      "prompt": "Ask a friend: How old are you?",
+      "answer": "¿Cuántos años tienes?",
+      "accept": ["¿Cuántos años tienes tú?"],
+      "why": "To a friend, you have is *tienes*."
+    },
+    {
+      "prompt": "Make it about we: Tengo treinta años.",
+      "answer": "Tenemos treinta años.",
+      "accept": ["Nosotros tenemos treinta años."],
+      "why": "We have is *tenemos*."
+    },
+    {
+      "prompt": "Make it polite: ask Don Hernando how old he is.",
+      "answer": "¿Cuántos años tiene usted?",
+      "accept": ["¿Cuántos años tiene?", "Don Hernando, ¿cuántos años tiene?", "Don Hernando, ¿cuántos años tiene usted?"],
+      "why": "With *usted*, it's *tiene*. (Polite, but only if you know him well.)"
+    }
+  ],
+  "pitfalls": [
+    { "wrong": "Soy treinta años.", "right": "Tengo treinta años.", "why": "Almost. In Spanish you have your years: *tengo*." },
+    { "wrong": "Mi mamá es sesenta.", "right": "Mi mamá tiene sesenta años.", "why": "Age goes with *tener*, not *ser*." },
+    { "wrong": "¿Qué edad eres?", "right": "¿Cuántos años tienes?", "why": "Ask how many years you have: *¿Cuántos años tienes?*" }
+  ],
+  "personal": "Write the ages of three people in your life, starting with your own: *Tengo…*, then *Mi … tiene…*."
+}

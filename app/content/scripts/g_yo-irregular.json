@@ -1,0 +1,89 @@
+{
+  "node": "g:yo-irregular",
+  "hook": {
+    "line": "When you meet someone's family, the questions are all about you: brothers or sisters, what you do, who you know. Every answer starts with I, and the I form of the busiest verbs is a little odd.",
+    "es": "¿Tienes hermanos?\nNo, soy hijo único. Y no conozco a mi familia de Bogotá.",
+    "en": "Do you have any brothers or sisters?\nNo, I'm an only child. And I don't know my family in Bogotá."
+  },
+  "examples": [
+    { "es": "Tengo una hermana en Medellín.", "en": "I have a sister in Medellín." },
+    { "es": "Hago el pan los lunes.", "en": "I make the bread on Mondays." },
+    { "es": "Salgo del café a las seis.", "en": "I leave the café at six." },
+    { "es": "No conozco Medellín.", "en": "I don't know Medellín." },
+    { "es": "No sé dónde está mi abuela.", "en": "I don't know where my grandmother is." },
+    { "es": "Pongo la mesa y traigo el pan.", "en": "I set the table and I bring the bread." },
+    { "es": "¿Qué haces los sábados?", "en": "What do you do on Saturdays? (to a friend)" },
+    { "es": "Tomás conoce a Hernando, pero no conoce a su familia.", "en": "Tomás knows Hernando, but he doesn't know his family." }
+  ],
+  "rule": "Most verbs make I by swapping the ending for -o: *hablo*, *como*, *vivo*. A handful of everyday verbs do something odd in that one spot.\n\nSome slip in a *g*:\n*tener*: *tengo* (I have)\n*hacer*: *hago* (I do, I make)\n*salir*: *salgo* (I leave, I go out)\n*poner*: *pongo* (I put)\n*traer*: *traigo* (I bring)\n*venir*: *vengo* (I come)\n\n*Conocer* (to know a person or a place) adds a *z*: *conozco*.\n*Saber* (to know a fact) shrinks to *sé*, with an accent.\n\nThat's the whole trick: only I is odd. The rest is normal again: *haces*, *hace*, *hacemos*; *conoces*, *conoce*. *Tener* and *venir* also do the boot change you already know: *tienes*, *tiene*, *vienes*.\n\nYou've been saying *tengo* and *no sé* for weeks. Now you know why they look like that.",
+  "smallPrint": "Teachers call these verbs irregular in the first person (*yo*): the *-go* verbs and the *-zco* verbs.",
+  "soundTip": "*Conozco* is spelled with a *z* and then a *c*, but in Colombia the *z* is a plain *s* and the *c* is a *k*: *ko-NOS-ko*.",
+  "readAndPick": [
+    { "es": "Salgo a las seis.", "options": ["She leaves at six.", "I leave at six.", "We leave at six."], "answer": 1 },
+    { "es": "Hace el pan los lunes.", "options": ["She makes the bread on Mondays.", "I make the bread on Mondays.", "You make the bread on Mondays. (to a friend)"], "answer": 0 },
+    { "es": "No conozco Cartagena.", "options": ["He doesn't know Cartagena.", "We don't know Cartagena.", "I don't know Cartagena."], "answer": 2 },
+    { "es": "¿Conoces a Mariana?", "options": ["Do you know Mariana? (to a friend)", "I know Mariana.", "Does he know Mariana?"], "answer": 0 },
+    { "es": "Traigo el pan.", "options": ["He brings the bread.", "I bring the bread.", "They bring the bread."], "answer": 1 },
+    { "es": "No sé.", "options": ["He doesn't know.", "You don't know. (to a friend)", "I don't know."], "answer": 2 },
+    { "es": "Tienes una hermana en Cali.", "options": ["You have a sister in Cali. (to a friend)", "I have a sister in Cali.", "She has a sister in Cali."], "answer": 0 },
+    { "es": "Hacemos el café.", "options": ["I make the coffee.", "We make the coffee.", "They make the coffee."], "answer": 1 },
+    { "es": "Vengo mañana.", "options": ["He's coming tomorrow.", "We're coming tomorrow.", "I'm coming tomorrow."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Yo ___ el pan los lunes. (hago / hace)",
+      "answer": "Yo hago el pan los lunes.",
+      "accept": ["Hago el pan los lunes."],
+      "why": "With I, *hacer* becomes *hago*; *hace* is he or she."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: No ___ Medellín. (conozco / conoce) I don't know it.",
+      "answer": "No conozco Medellín.",
+      "accept": ["Yo no conozco Medellín."],
+      "why": "I know is *conozco*, with that extra *z*."
+    },
+    {
+      "prompt": "I leave at six.",
+      "answer": "Salgo a las seis.",
+      "accept": ["Yo salgo a las seis."],
+      "why": "I leave is *salgo*: the *g* slips in."
+    },
+    {
+      "prompt": "I have a sister in Medellín.",
+      "answer": "Tengo una hermana en Medellín.",
+      "accept": ["Yo tengo una hermana en Medellín."],
+      "why": "I have is *tengo*, the one you already know."
+    },
+    {
+      "prompt": "I don't know where the café is.",
+      "answer": "No sé dónde está el café.",
+      "accept": ["Yo no sé dónde está el café."],
+      "why": "A fact you don't know takes *no sé*, with the accent on *sé*."
+    },
+    {
+      "prompt": "Make it about I: Vale trae el pan.",
+      "answer": "Traigo el pan.",
+      "accept": ["Yo traigo el pan."],
+      "why": "From she to I: *trae* becomes *traigo*."
+    },
+    {
+      "prompt": "Make it about I: Tomás conoce a Hernando.",
+      "answer": "Conozco a Hernando.",
+      "accept": ["Yo conozco a Hernando."],
+      "why": "From he to I: *conoce* becomes *conozco*."
+    },
+    {
+      "prompt": "Make it negative: Salgo esta noche.",
+      "answer": "No salgo esta noche.",
+      "accept": ["Esta noche no salgo."],
+      "why": "*No* goes right before the verb."
+    }
+  ],
+  "pitfalls": [
+    { "wrong": "Yo teno dos hermanas.", "right": "Yo tengo dos hermanas.", "why": "Almost. *Tener* slips a *g* into the I form: *tengo*." },
+    { "wrong": "Yo conoco a Vale.", "right": "Yo conozco a Vale.", "why": "Close. *Conocer* adds a *z* for I: *conozco*." },
+    { "wrong": "No se.", "right": "No sé.", "why": "Nearly. I know needs the accent: *sé*. Without it, *se* is a different little word." },
+    { "wrong": "Nosotros hagemos el café.", "right": "Nosotros hacemos el café.", "why": "Only I is odd. For we, *hacer* is regular: *hacemos*." }
+  ],
+  "personal": "Write three true lines about you: something you have (*tengo*), when you leave home in the morning (*salgo*), and a city you know or don't know (*conozco*)."
+}

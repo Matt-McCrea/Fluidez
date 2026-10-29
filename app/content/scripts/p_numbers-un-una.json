@@ -1,0 +1,79 @@
+{
+  "node": "p:numbers-un-una",
+  "hook": {
+    "line": "Ages, prices, people at a party: the numbers that trip people up are the ones ending in one, and the hundred. Two small rules sort them out.",
+    "es": "¿Cuántos años tiene Camila?\nTreinta y uno. Y Vale tiene veintiocho.",
+    "en": "How old is Camila?\nThirty-one. And Vale is twenty-eight."
+  },
+  "examples": [
+    { "es": "Hay veintiún clientes en el café.", "en": "There are twenty-one customers in the café." },
+    { "es": "Hernando tiene setenta y un años.", "en": "Hernando is seventy-one." },
+    { "es": "Hay treinta y una personas en el café.", "en": "There are thirty-one people in the café." },
+    { "es": "Cuesta cien mil pesos.", "en": "It costs a hundred thousand pesos." },
+    { "es": "Son ciento veinte mil pesos.", "en": "That's a hundred and twenty thousand pesos." },
+    { "es": "Cuesta mil pesos.", "en": "It costs a thousand pesos." }
+  ],
+  "rule": "*Uno* acts like *un* and *una*, even at the end of a bigger number. Before a noun it shortens or matches:\n*veintiún clientes*, *treinta y un años*\n*veintiuna personas*, *treinta y una personas*\nCounting on its own, it stays *uno*: *¿Cuántos años tiene? Veintiuno.*\n\nA hundred on the dot is *cien*: *cien pesos*, *cien mil*. Add anything and it grows to *ciento*: *ciento diez*, *ciento veinte*. There's no *y* after the hundred.\n\nAnd a thousand is just *mil*, never *un mil*.",
+  "smallPrint": "Teachers call these cardinal numbers (*numerales cardinales*). *Uno* and its compounds are the only ones that change for masculine and feminine below two hundred.",
+  "readAndPick": [
+    { "es": "Son veintiún mil pesos.", "options": ["That's twenty thousand pesos.", "That's twenty-one thousand pesos.", "That's thirty-one thousand pesos."], "answer": 1 },
+    { "es": "Hay treinta y una personas.", "options": ["There are thirty-one people.", "There are thirty people.", "There are twenty-one people."], "answer": 0 },
+    { "es": "Cuesta cien mil pesos.", "options": ["It costs a thousand pesos.", "It costs a hundred and ten thousand pesos.", "It costs a hundred thousand pesos."], "answer": 2 },
+    { "es": "Son ciento veinte mil pesos.", "options": ["That's a hundred and twenty thousand pesos.", "That's twenty thousand pesos.", "That's two hundred thousand pesos."], "answer": 0 },
+    { "es": "Hernando tiene setenta y un años.", "options": ["Hernando is seventy.", "Hernando is sixty-one.", "Hernando is seventy-one."], "answer": 2 },
+    { "es": "Cuesta mil pesos.", "options": ["It costs a hundred pesos.", "It costs a thousand pesos.", "It costs a million pesos."], "answer": 1 },
+    { "es": "Mi abuela tiene cien años.", "options": ["My grandmother is a hundred.", "My grandmother is a hundred and one.", "My grandmother is ninety."], "answer": 0 },
+    { "es": "Son ciento diez mil pesos.", "options": ["That's ten thousand pesos.", "That's a hundred thousand pesos.", "That's a hundred and ten thousand pesos."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Hay ___ clientes. (veintiún / veintiuno) Twenty-one customers.",
+      "answer": "Hay veintiún clientes.",
+      "accept": [],
+      "why": "Before a noun, *veintiuno* shortens to *veintiún*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: Cuesta ___ mil pesos. (cien / ciento) A hundred thousand.",
+      "answer": "Cuesta cien mil pesos.",
+      "accept": [],
+      "why": "A hundred on the dot is *cien*."
+    },
+    {
+      "prompt": "There are thirty-one people in the café.",
+      "answer": "Hay treinta y una personas en el café.",
+      "accept": ["En el café hay treinta y una personas."],
+      "why": "*Personas* is feminine, so one becomes *una*."
+    },
+    {
+      "prompt": "That's a hundred and twenty thousand pesos.",
+      "answer": "Son ciento veinte mil pesos.",
+      "accept": [],
+      "why": "A hundred plus more is *ciento*, with no *y* after it."
+    },
+    {
+      "prompt": "Hernando is seventy-one.",
+      "answer": "Hernando tiene setenta y un años.",
+      "accept": ["Don Hernando tiene setenta y un años."],
+      "why": "Before *años*, the one becomes *un*."
+    },
+    {
+      "prompt": "Add one year: Tengo treinta años.",
+      "answer": "Tengo treinta y un años.",
+      "accept": [],
+      "why": "Before *años*, the one at the end becomes *un*."
+    },
+    {
+      "prompt": "Make it a hundred thousand: Cuesta noventa mil pesos.",
+      "answer": "Cuesta cien mil pesos.",
+      "accept": [],
+      "why": "Exactly a hundred is *cien*, even before *mil*."
+    }
+  ],
+  "pitfalls": [
+    { "wrong": "Hay veintiuno clientes.", "right": "Hay veintiún clientes.", "why": "Almost. Before a noun, the one shortens: *veintiún clientes*." },
+    { "wrong": "Cuesta ciento pesos.", "right": "Cuesta cien pesos.", "why": "Close. Exactly a hundred is *cien*; *ciento* only comes with more after it." },
+    { "wrong": "Son ciento y veinte mil pesos.", "right": "Son ciento veinte mil pesos.", "why": "No *y* after the hundred. *Y* only joins tens and ones: *treinta y uno*." },
+    { "wrong": "Cuesta un mil pesos.", "right": "Cuesta mil pesos.", "why": "A thousand is just *mil*, with no *un*." }
+  ],
+  "personal": "Write two true lines with numbers: how old someone in your family is, and what something you bought this week cost."
+}

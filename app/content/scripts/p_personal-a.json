@@ -1,0 +1,78 @@
+{
+  "node": "p:personal-a",
+  "hook": {
+    "line": "Tomás finds a photo of a young man in Rosa's album and shows it to everyone at the café. Spanish puts a tiny *a* in front of a person you know, look for or visit.",
+    "es": "Don Hernando, ¿conoce a este señor?",
+    "en": "Don Hernando, do you know this man? (formal)"
+  },
+  "examples": [
+    { "es": "¿Conoces a mi hermano?", "en": "Do you know my brother? (to a friend)" },
+    { "es": "Busco a mi hija.", "en": "I'm looking for my daughter." },
+    { "es": "Visito a mis papás los domingos.", "en": "I visit my parents on Sundays." },
+    { "es": "Vale llama a su hermana.", "en": "Vale calls her sister." },
+    { "es": "Tengo dos hermanas.", "en": "I have two sisters." },
+    { "es": "Busco un mesero.", "en": "I'm looking for a waiter." }
+  ],
+  "rule": "When the verb lands on a specific person, Spanish puts *a* in front of them. English has nothing there, so just leave it untranslated:\n*Conozco a Vale.* I know Vale.\n*Visito a mi abuela.* I visit my grandmother.\n\nThings and places don't get it: *Conozco Medellín. Busco el baño.*\n\nTwo cases skip it even with people. After *tener*: *Tengo dos hermanas*. And when it's any person, not a particular one: *Busco un mesero* (any waiter will do).\n\nRemember *a* plus *el* makes *al*: *Busco al señor Gómez*.",
+  "smallPrint": "Teachers call this the personal *a* (*a personal*).",
+  "readAndPick": [
+    { "es": "Tomás busca a Vale.", "options": ["Tomás is looking for Vale.", "Vale is looking for Tomás."], "answer": 0 },
+    { "es": "Busco a la mesera.", "options": ["I'm looking for a waitress, any waitress.", "I'm looking for the waitress, a particular one."], "answer": 1 },
+    { "es": "Busco una mesera.", "options": ["I'm looking for a waitress, any waitress.", "I'm looking for the waitress, a particular one."], "answer": 0 },
+    { "es": "Mariana llama a Tomás.", "options": ["Tomás calls Mariana.", "Mariana calls Tomás."], "answer": 1 },
+    { "es": "¿Conoces a mi abuela?", "options": ["Does my grandmother know you?", "Do you know my grandmother? (to a friend)"], "answer": 1 },
+    { "es": "Hernando visita a sus nietos.", "options": ["Hernando visits his grandchildren.", "His grandchildren visit Hernando."], "answer": 0 },
+    { "es": "Su mamá llama a Vale.", "options": ["Vale calls her mum.", "Her mum calls Vale."], "answer": 1 },
+    { "es": "¿A quién buscas?", "options": ["Who are you looking for? (to a friend)", "Who is looking for you? (to a friend)"], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Visito ___ mi abuela. (a / nothing)",
+      "answer": "Visito a mi abuela.",
+      "accept": [],
+      "why": "Your grandmother is a specific person, so she gets *a*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: Tengo ___ dos hermanos. (a / nothing)",
+      "answer": "Tengo dos hermanos.",
+      "accept": [],
+      "why": "After *tener*, no *a*, even for people."
+    },
+    {
+      "prompt": "Do you know Mariana? (to a friend)",
+      "answer": "¿Conoces a Mariana?",
+      "accept": [],
+      "why": "Mariana is a specific person: *a Mariana*."
+    },
+    {
+      "prompt": "I know Medellín, but I don't know your family. (to a friend)",
+      "answer": "Conozco Medellín, pero no conozco a tu familia.",
+      "accept": [],
+      "why": "A city gets no *a*; people you mean do."
+    },
+    {
+      "prompt": "I'm looking for my daughter.",
+      "answer": "Busco a mi hija.",
+      "accept": [],
+      "why": "One particular daughter, so *a*."
+    },
+    {
+      "prompt": "Swap the thing for a person: Busco el café. Now you're looking for Vale.",
+      "answer": "Busco a Vale.",
+      "accept": [],
+      "why": "A thing takes no *a*; a person does."
+    },
+    {
+      "prompt": "Make it about Hernando: Vale llama a su hermana. (Hernando calls his grandchildren.)",
+      "answer": "Hernando llama a sus nietos.",
+      "accept": [],
+      "why": "Grandchildren are people, so the *a* stays."
+    }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Conoces Vale?", "right": "¿Conoces a Vale?", "why": "Almost. Vale is a person, so Spanish wants *a* in front." },
+    { "wrong": "Tengo a dos hermanos.", "right": "Tengo dos hermanos.", "why": "*Tener* is the exception: no *a*, even for people." },
+    { "wrong": "Visito a Cartagena.", "right": "Visito Cartagena.", "why": "Cities and things don't get the *a*; only people do." }
+  ],
+  "personal": "Write two true lines: someone you visit often (*Visito a…*) and someone famous you'd like to know (*No conozco a…*)."
+}
