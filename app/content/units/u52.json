@@ -38,8 +38,8 @@
   {
    "type": "output",
    "focus": [
-    "g:tense-modal-uses",
-    "g:mood-choice-fine"
+    "g:spain-pasts",
+    "g:se-form-recognition"
    ],
    "chunks": [],
    "lexemes": [],
@@ -117,8 +117,7 @@
   {
    "type": "output",
    "focus": [
-    "g:tense-modal-uses",
-    "g:mood-choice-fine"
+    "g:tense-modal-uses"
    ],
    "chunks": [],
    "lexemes": [],

@@ -34,10 +34,12 @@
       "c:hola-buenos-dias",
       "c:me-llamo",
       "c:soy-de",
-      "g:adjective-agreement",
-      "g:present-ar",
       "g:reflexive-routine",
-      "g:ser-identity"
+      "g:ser-identity",
+      "l:bueno",
+      "l:día",
+      "l:llamarse",
+      "l:ser"
     ]
   },
   {
@@ -65,7 +67,10 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:ser-identity"
+      "g:ser-identity",
+      "l:café",
+      "l:ser",
+      "l:trabajar"
     ]
   },
   {
@@ -89,7 +94,11 @@
     "focus": "g:ser-identity",
     "requires": [
       "g:gender-articles",
-      "g:ser-identity"
+      "g:ser-identity",
+      "l:café",
+      "l:mesero",
+      "l:ser",
+      "l:señor"
     ]
   },
   {
@@ -114,8 +123,13 @@
     "requires": [
       "c:hola-buenos-dias",
       "c:por-favor",
-      "g:adjective-agreement",
-      "g:gender-articles"
+      "g:gender-articles",
+      "l:bueno",
+      "l:café",
+      "l:día",
+      "l:favor",
+      "l:leche",
+      "l:tinto"
     ]
   },
   {
@@ -158,7 +172,10 @@
     "model": "Soy ingeniero, y Vale es mesera.",
     "focus": "p:ser-profession-no-article",
     "requires": [
-      "g:ser-identity"
+      "g:ser-identity",
+      "l:ingeniero",
+      "l:mesero",
+      "l:ser"
     ]
   },
   {
@@ -196,7 +213,10 @@
       "c:perdon-disculpe",
       "g:gender-articles",
       "g:present-ar",
-      "g:ser-identity"
+      "g:ser-identity",
+      "l:perdón",
+      "l:ser",
+      "l:trabajar"
     ]
   },
   {
@@ -221,7 +241,9 @@
     "focus": "g:present-ar",
     "requires": [
       "c:trabajo-en",
-      "g:present-ar"
+      "g:present-ar",
+      "l:ingeniero",
+      "l:trabajar"
     ]
   },
   {
@@ -254,7 +276,10 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:ser-identity"
+      "g:ser-identity",
+      "l:café",
+      "l:ser",
+      "l:trabajar"
     ]
   },
   {
@@ -288,16 +313,19 @@
       "c:chao-nos-vemos",
       "c:es-que",
       "c:puedo",
-      "c:que-oso",
       "c:que-pena",
       "c:tengo",
       "c:tengo-que",
-      "g:questions",
-      "g:ser-identity",
       "g:stem-boot",
-      "g:tener-que-hay-que",
-      "g:that-clauses",
-      "g:yo-irregular"
+      "g:yo-irregular",
+      "l:hoy",
+      "l:mañana",
+      "l:pena",
+      "l:poder",
+      "l:qué",
+      "l:ser",
+      "l:tener",
+      "l:trabajar"
     ]
   },
   {
@@ -323,7 +351,12 @@
     "requires": [
       "c:claro-listo",
       "g:gender-articles",
-      "g:present-ar"
+      "g:present-ar",
+      "l:comprar",
+      "l:jugo",
+      "l:leche",
+      "l:listo",
+      "l:pan"
     ]
   },
   {
@@ -351,7 +384,12 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:ser-identity"
+      "g:ser-identity",
+      "l:cliente",
+      "l:comprar",
+      "l:pan",
+      "l:ser",
+      "l:tinto"
     ]
   },
   {
@@ -374,10 +412,16 @@
     "model": "Ayer fui a Monserrate. Anoche comí ajiaco con Vale.",
     "focus": "c:fui",
     "requires": [
+      "c:ayer-anoche",
       "c:comi",
       "c:fui",
       "g:preterite-er-ir",
-      "g:preterite-ser-ir-hacer"
+      "g:preterite-ser-ir-hacer",
+      "l:ajiaco",
+      "l:anoche",
+      "l:ayer",
+      "l:comer",
+      "l:ir"
     ]
   },
   {
@@ -408,8 +452,10 @@
       "c:hola-buenos-dias",
       "c:soy-de",
       "g:present-ar",
-      "g:questions-prepositions",
-      "g:ser-identity"
+      "g:ser-identity",
+      "l:dónde",
+      "l:ser",
+      "l:trabajar"
     ]
   },
   {
@@ -438,7 +484,11 @@
     "focus": "g:gender-articles",
     "requires": [
       "g:gender-articles",
-      "g:ser-identity"
+      "g:ser-identity",
+      "l:apellido",
+      "l:canadiense",
+      "l:nombre",
+      "l:ser"
     ]
   },
   {
@@ -471,10 +521,11 @@
       "c:gracias-de-nada",
       "c:tengo",
       "c:tengo-que",
-      "g:direct-objects",
-      "g:present-er-ir",
-      "g:tener-que-hay-que",
-      "g:yo-irregular"
+      "g:yo-irregular",
+      "l:mañana",
+      "l:tener",
+      "l:trabajar",
+      "l:ver"
     ]
   }
 ]

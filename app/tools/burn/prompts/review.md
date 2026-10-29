@@ -38,3 +38,9 @@ You are the senior reviewer for unit `{UNIT}` of Fluidez. You are a Colombian-Sp
 - Edit only the files listed above. Keep ids stable: change text, never renumber. You may delete a bad bank sentence only if the bank stays at or above its count when you started.
 - After editing, run `cd {APP} && npm run gate -- --fix <every file you touched>` until it shows 0 errors.
 - Finish with a short review note: what you changed and why, by category with counts, plus the 3 best and 3 worst items you found before fixing. Return it as your summary.
+
+## Rules added after the first playtest (binding; the gate enforces the first two)
+- **No dashes.** No em dash (—), en dash (–) or spaced hyphen ( - ) in any learner-facing string, Spanish or English. The gate check `dashes` fails them. Dialogue turns are separate lines: `"¿Ya comiste?\nTodavía no."`, or `Vale: ¿Ya comiste?`. English prose uses commas, colons, brackets or full stops.
+- **One exact pair.** Every English string is the exact translation of the Spanish beside it: same person, number, tense and formality. Never pack variants with " / ". A two-turn Spanish string has a two-line English string.
+- **Graph nodes carry `forms`.** When you want a node's example lines, read its `forms` (aligned `{es, en}` pairs), not `es` split by hand. The chunk tagger matches every form, so a chunk's wording in `forms` is what it recognises.
+- **Chunks gate as wholes.** A sentence inside a taught chunk requires the chunk, not the grammar it seeds; the chunk's `unpacks` node stays in `requires` and a taught chunk stands in for it. Write early content with the chunks the day has taught.

@@ -1,0 +1,43 @@
+{
+  "node": "p:quantifiers-basic",
+  "hook": {
+    "line": "Three small words let you say how much: *muy*, *mucho* and *poco*. With them, \"I speak Spanish\" turns into \"I speak a little Spanish\", which is the honest version for now.",
+    "es": "Hablo poco español, pero hablo muy despacio.",
+    "en": "I don't speak much Spanish, but I speak very slowly."
+  },
+  "examples": [
+    { "es": "Hablas muy bien.", "en": "You speak very well." },
+    { "es": "Tomás habla mucho.", "en": "Tomás talks a lot." },
+    { "es": "Tengo muchas preguntas.", "en": "I have a lot of questions." },
+    { "es": "Hoy hay pocos clientes.", "en": "There aren't many customers today." },
+    { "es": "No hay mucha leche.", "en": "There isn't much milk." },
+    { "es": "Necesito mucho café.", "en": "I need a lot of coffee." }
+  ],
+  "rule": "Three jobs, three words.\n\n*muy* = very. It goes before a describing word, and it never changes: *muy bien*, *muy bonito*, *muy despacio*.\n\n*mucho* = a lot, much, many. Before a thing, it matches the thing: *mucho café*, *mucha leche*, *muchos clientes*, *muchas preguntas*.\nAfter a verb, it stays *mucho*: *Tomás habla mucho*.\n\n*poco* = not much, little. It works the same way: *poco pan*, *pocos clientes*, *como poco*.\n\nEnglish uses \"very\" and \"a lot\" a bit loosely. Spanish keeps them apart: very good is *muy bueno*, a lot of work is *mucho trabajo*, never *muy trabajo*.",
+  "smallPrint": "Teachers call these quantifiers: *muy* is an adverb, *mucho* and *poco* agree with the noun they count.",
+  "readAndPick": [
+    { "es": "Hablas muy bien.", "options": ["You speak very well.", "You speak a lot."], "answer": 0 },
+    { "es": "Don Hernando habla mucho.", "options": ["Don Hernando speaks very well.", "Don Hernando talks a lot."], "answer": 1 },
+    { "es": "Hay poco pan.", "options": ["There's a lot of bread.", "There isn't much bread.", "The bread is very good."], "answer": 1 },
+    { "es": "Hay muchas arepas.", "options": ["There are a lot of arepas.", "There aren't many arepas."], "answer": 0 },
+    { "es": "Como poco.", "options": ["I eat a lot.", "I eat a little.", "I eat very slowly."], "answer": 1 },
+    { "es": "El pan es muy bueno.", "options": ["There's a lot of good bread.", "The bread is very good."], "answer": 1 },
+    { "es": "Vale toma mucha agua.", "options": ["Vale drinks a lot of water.", "Vale drinks a little water.", "Vale's water is very cold."], "answer": 0 },
+    { "es": "Tengo mucho trabajo.", "options": ["I work very well.", "I have a lot of work."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *muy* or *mucho*: Hablas ___ bien.", "answer": "Hablas muy bien.", "accept": [], "why": "*Bien* describes how you speak, so it takes *muy*." },
+    { "prompt": "Choose *mucha* or *muchas*: Tengo ___ preguntas.", "answer": "Tengo muchas preguntas.", "accept": [], "why": "*Preguntas* is plural and feminine, so *muchas*." },
+    { "prompt": "Say: I need a lot of coffee.", "answer": "Necesito mucho café.", "accept": [], "why": "*Café* is one masculine thing: *mucho café*." },
+    { "prompt": "Say: There isn't much milk.", "answer": "No hay mucha leche.", "accept": [], "why": "*Leche* is feminine, so *mucha*." },
+    { "prompt": "Say: Tomás talks a lot.", "answer": "Tomás habla mucho.", "accept": [], "why": "After a verb, *mucho* never changes." },
+    { "prompt": "Say: I speak very slowly.", "answer": "Hablo muy despacio.", "accept": ["Yo hablo muy despacio."], "why": "*Despacio* says how, so *muy* goes in front." },
+    { "prompt": "Turn it around: Hay muchos clientes hoy. Say there aren't many.", "answer": "Hay pocos clientes hoy.", "accept": ["Hoy hay pocos clientes."], "why": "*Poco* matches its noun just like *mucho*: *pocos clientes*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Tengo muy trabajo.", "right": "Tengo mucho trabajo.", "why": "*Trabajo* is a thing, and you count things with *mucho*. *Muy* only goes before a describing word." },
+    { "wrong": "Hablas mucho bien.", "right": "Hablas muy bien.", "why": "Very well is *muy bien*. *Mucho* never sits in front of *bien*." },
+    { "wrong": "Tengo mucho preguntas.", "right": "Tengo muchas preguntas.", "why": "Before a thing, *mucho* takes its ending: *preguntas* needs *muchas*." }
+  ],
+  "personal": "Write three true lines about yourself: something you do a lot (*mucho*), something you do a little (*poco*), and something you do very well (*muy bien*)."
+}

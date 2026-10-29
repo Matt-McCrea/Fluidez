@@ -2,8 +2,8 @@
   "node": "p:ir-a-venir-de-place",
   "hook": {
     "line": "Running into someone on the street, you'll be asked where you're going and where you've been. Two little words do all the work.",
-    "es": "—¿Adónde vas? —Voy al banco. ¿Y Vale? —Viene del parque.",
-    "en": "—Where are you going? —I'm going to the bank. And Vale? —She's coming from the park."
+    "es": "¿Adónde vas?\nVoy al banco. ¿Y Vale?\nViene del parque.",
+    "en": "Where are you going?\nI'm going to the bank. And Vale?\nShe's coming from the park."
   },
   "examples": [
     { "es": "Vamos al cine el viernes.", "en": "We're going to the cinema on Friday." },
@@ -13,8 +13,8 @@
     { "es": "¿Adónde van ustedes?", "en": "Where are you all going?" },
     { "es": "Tomás viene de Toronto.", "en": "Tomás comes from Toronto." }
   ],
-  "rule": "Going somewhere: ir a. Coming from somewhere: venir de.\n\nWhen the place has el in front, the words join up:\na + el = al: Voy al banco.\nde + el = del: Vengo del parque.\n\nWith la, nothing joins: Voy a la tienda. Vengo de la oficina. With names, no article at all: Viene de Toronto.\n\nVenir is a boot verb: vienes, viene, vienen, but venimos. (Its yo form, vengo, is odd; you'll meet it soon.)\n\nTo ask where someone is going, use ¿Adónde?: ¿Adónde vas? For where someone is right now, it's just ¿Dónde?: ¿Dónde estás?\n\nCareful: ir a + a place is where you're going (Voy al cine). Ir a + a verb is a plan (Voy a bailar). Same a, two jobs.",
-  "smallPrint": "Al and del are the only two contractions in Spanish, and they're obligatory.",
+  "rule": "Going somewhere: *ir a*. Coming from somewhere: *venir de*.\n\nWhen the place has *el* in front, the words join up:\n*a* + *el* = *al*: *Voy al banco.*\n*de* + *el* = *del*: *Vengo del parque.*\n\nWith *la*, nothing joins: *Voy a la tienda. Vengo de la oficina.* With names, no article at all: *Viene de Toronto.*\n\n*Venir* is a boot verb: *vienes*, *viene*, *vienen*, but *venimos*. (Its *yo* form, *vengo*, is odd; you'll meet it soon.)\n\nTo ask where someone is going, use *¿Adónde?*: *¿Adónde vas?* For where someone is right now, it's just *¿Dónde?*: *¿Dónde estás?*\n\nCareful: *ir a* + a place is where you're going (*Voy al cine*). *Ir a* + a verb is a plan (*Voy a bailar*). Same *a*, two jobs.",
+  "smallPrint": "*Al* and *del* are the only two contractions in Spanish, and they're obligatory.",
   "readAndPick": [
     { "es": "Voy al parque.", "options": ["I'm going to the park.", "I'm coming from the park.", "I'm in the park."], "answer": 0 },
     { "es": "Vale viene del banco.", "options": ["Vale is coming from the bank.", "Vale is going to the bank.", "Vale is at the bank."], "answer": 0 },
@@ -27,19 +27,19 @@
     { "es": "Don Hernando va al centro los lunes.", "options": ["Don Hernando goes downtown on Mondays.", "Don Hernando comes from downtown on Mondays.", "Don Hernando lives downtown."], "answer": 0 }
   ],
   "yourTurn": [
-    { "prompt": "Say: I'm going to the bank.", "answer": "Voy al banco.", "accept": [], "why": "A + el joins up: al banco." },
-    { "prompt": "Ask a friend where they're going.", "answer": "¿Adónde vas?", "accept": [], "why": "Movement takes ¿Adónde?" },
-    { "prompt": "Say: Vale is coming from the park.", "answer": "Vale viene del parque.", "accept": [], "why": "De + el joins up: del parque. Venir is a boot verb: viene." },
-    { "prompt": "Say: We're going to the shop.", "answer": "Vamos a la tienda.", "accept": [], "why": "With la, nothing joins: a la tienda." },
-    { "prompt": "Ask a friend if they're coming from the office.", "answer": "¿Vienes de la oficina?", "accept": [], "why": "Tú is inside the boot: vienes. De la doesn't join." },
-    { "prompt": "Say: The customers are coming from the cinema.", "answer": "Los clientes vienen del cine.", "accept": [], "why": "De + el = del; ellos is inside the boot: vienen." },
-    { "prompt": "Say: Mariana is going to the hospital.", "answer": "Mariana va al hospital.", "accept": [], "why": "A + el = al." }
+    { "prompt": "Say: I'm going to the bank.", "answer": "Voy al banco.", "accept": [], "why": "*A* + *el* joins up: *al banco*." },
+    { "prompt": "Ask a friend where they're going.", "answer": "¿Adónde vas?", "accept": [], "why": "Movement takes *¿Adónde?*" },
+    { "prompt": "Say: Vale is coming from the park.", "answer": "Vale viene del parque.", "accept": [], "why": "*De* + *el* joins up: *del parque*. *Venir* is a boot verb: *viene*." },
+    { "prompt": "Say: We're going to the shop.", "answer": "Vamos a la tienda.", "accept": [], "why": "With *la*, nothing joins: *a la tienda*." },
+    { "prompt": "Ask a friend if they're coming from the office.", "answer": "¿Vienes de la oficina?", "accept": [], "why": "*Tú* is inside the boot: *vienes*. *De la* doesn't join." },
+    { "prompt": "Say: The customers are coming from the cinema.", "answer": "Los clientes vienen del cine.", "accept": [], "why": "*De* + *el* = *del*; *ellos* is inside the boot: *vienen*." },
+    { "prompt": "Say: Mariana is going to the hospital.", "answer": "Mariana va al hospital.", "accept": [], "why": "*A* + *el* = *al*." }
   ],
   "pitfalls": [
-    { "wrong": "Voy a el banco.", "right": "Voy al banco.", "why": "A + el always joins: al." },
-    { "wrong": "Vale viene de el parque.", "right": "Vale viene del parque.", "why": "De + el always joins: del." },
-    { "wrong": "¿Dónde vas?", "right": "¿Adónde vas?", "why": "Going somewhere is movement: adónde." },
-    { "wrong": "Venemos del cine.", "right": "Venimos del cine.", "why": "Venir is an -ir verb: venimos." }
+    { "wrong": "Voy a el banco.", "right": "Voy al banco.", "why": "*A* + *el* always joins: *al*." },
+    { "wrong": "Vale viene de el parque.", "right": "Vale viene del parque.", "why": "*De* + *el* always joins: *del*." },
+    { "wrong": "¿Dónde vas?", "right": "¿Adónde vas?", "why": "Going somewhere is movement: *adónde*." },
+    { "wrong": "Venemos del cine.", "right": "Venimos del cine.", "why": "*Venir* is an *-ir* verb: *venimos*." }
   ],
-  "personal": "Where do you go on Saturdays, and where are you coming from right now? Write one line with al or a la and one with del or de la."
+  "personal": "Where do you go on Saturdays, and where are you coming from right now? Write one line with *al* or *a la* and one with *del* or *de la*."
 }

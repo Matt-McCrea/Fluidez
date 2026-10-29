@@ -52,6 +52,10 @@ export type { AccentFinding } from './accent';
  *     names, numbers, "y", don/doña ("Tengo treinta y dos años", "Don Hernando")
  *     or any one word. No other gaps: "¿Hay leche? Creo que no." is not c:hay-que,
  *     "Soy el nieto de Rosa" is not c:soy-de.
+ * A one-word fragment that is a content word matches anywhere only when it shares the
+ * id's stem or verb (Voy for c:voy-vas, Tenemos for c:tienes); a variant or reply turn
+ * that does not (Listo. for c:me-parece-bien) matches only standing alone, and the
+ * first word of a spelled-out id phrase (Bueno, in "Bueno, no sé") never alone.
  * A one-word fragment that is a function word (¿no?; adverbs such as ayer, anoche
  * match anywhere) or the head of a
  * "… que" chunk (", creo." for c:creo-que) matches only standing alone: nothing
@@ -62,20 +66,29 @@ export type { AccentFinding } from './accent';
  * words still have to be known.
  * Matching ignores accents, ñ and case. */
 const fold = (s: string) => deaccent(s.toLowerCase()).replace(/ñ/g, 'n');
-type Pattern = string[] & { alone?: boolean };   // '*' = slot; alone: a one-word fragment standing by itself
+type Pattern = string[] & { alone?: boolean; q?: boolean };   // q: a tag question, followed by '?'   // '*' = slot; alone: a one-word fragment standing by itself
 const PATTERNS = new WeakMap<readonly ChunkSpec[], Array<{ id: string; pats: Pattern[] }>>();
 const SLOT_RUN = new Set(['y', 'don', 'dona', 'senor', 'senora']);
 const SLOTS = new Set(['*', '#', '@']);
+/** Words told apart only by their accent: a chunk written with one matches only that one. */
+const TILDE_PAIRS = new Set(['él', 'tú', 'mí', 'sí', 'sé', 'té', 'dé', 'más', 'qué', 'cómo', 'dónde', 'cuándo', 'quién', 'cuánto', 'cuál']);
+/** Words used as tag questions (¿no?, ¿verdad?, ¿cierto?, ¿sí?, ¿eh?). */
+const TAG_WORDS = new Set(['no', 'verdad', 'cierto', 'si', 'sí', 'eh', 'ya', 'oyes', 'ves']);
+/** Is `frag` written as a tag question (", ¿no?", ", ¿verdad?") in `alt`? */
+const tagQ = (frag: string, alt: string) => new RegExp('¿\\s*' + frag.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*\\?').test(alt);
 function compile(chunks: readonly ChunkSpec[]): Array<{ id: string; pats: Pattern[] }> {
   const hit = PATTERNS.get(chunks);
   if (hit) return hit;
   const out = chunks.map((c) => {
     const pats: Pattern[] = [];
     const seen = new Set<string>();
-    const push = (p: Pattern) => { const k = (p.alone ? '!' : '') + p.join(' '); if (p.length && p.some((t) => t !== '*') && !seen.has(k)) { seen.add(k); pats.push(p); } };
+    const push = (p: Pattern) => { const k = (p.alone ? '!' : '') + (p.q ? '?' : '') + p.join(' '); if (p.length && p.some((t) => t !== '*') && !seen.has(k)) { seen.add(k); pats.push(p); } };
     const slug = fold(c.id.replace(/^c:/, '').replace(/#.*/, '')).split('-').filter(Boolean);
     const inSlug = new Set(slug);
-    const shares = (t: string) => inSlug.has(t) || (t.length >= 4 && slug.some((sl) => sl.length >= 4 && sl.slice(0, 4) === t.slice(0, 4)));
+    const verbLemma = (w: string) => { const a = analyzeWords(w)[0]; return a && a.pos === 'verb' ? a.lemma ?? '' : ''; };
+    const slugLemmas = new Set(slug.map(verbLemma).filter(Boolean));
+    // a word of the id, its first four letters, or another person of the id's verb (Tenemos for c:tienes)
+    const shares = (t0: string) => { const t = t0.replace(/^=/, ''); return inSlug.has(t) || (t.length >= 4 && slug.some((sl) => sl.length >= 4 && sl.slice(0, 4) === t.slice(0, 4))) || (slugLemmas.size > 0 && slugLemmas.has(verbLemma(t))); };
     push(slug);
     const es = c.es.replace(/«[^»]*»|"[^"]*"|“[^”]*”/g, ' QQQ ');          // quoted words are slots
     const flat = ' ' + fold(c.es).replace(/[/—–]/g, ' | ').replace(/[^a-z|\s]/g, ' ').replace(/\s+/g, ' ') + ' ';
@@ -87,7 +100,8 @@ function compile(chunks: readonly ChunkSpec[]): Array<{ id: string; pats: Patter
         const toks: string[] = [];
         raw.forEach((t, k) => {
           // slots: '#' numbers, '@' names, '*' a quoted word
-          const f = t === 'QQQ' ? '*' : /^\d/.test(t) || closedClass(t.toLowerCase()) === 'num' ? '#' : k > 0 && /^[A-ZÁÉÍÓÚÑ]/.test(t) ? '@' : fold(t);
+          // a diacritic minimal pair keeps its accent: "con él" is not "con el jefe"
+          const f = t === 'QQQ' ? '*' : /^\d/.test(t) || closedClass(t.toLowerCase()) === 'num' ? '#' : k > 0 && /^[A-ZÁÉÍÓÚÑ]/.test(t) ? '@' : TILDE_PAIRS.has(t.toLowerCase()) ? '=' + t.toLowerCase() : fold(t);
           if ((f === '#' || f === '@') && toks[toks.length - 1] === f) return;   // one slot for "treinta y cuatro", "Don Hernando"
           if (f === 'y' && toks[toks.length - 1] === '#' && k + 1 < raw.length && closedClass(raw[k + 1].toLowerCase()) === 'num') return;
           toks.push(f);
@@ -100,8 +114,28 @@ function compile(chunks: readonly ChunkSpec[]): Array<{ id: string; pats: Patter
           if ((cc && cc !== 'adv') || w.length <= 2) {
             // "No." in an answer line is every chunk's; ¿no? is c:no-cierto's because its id says so
             // and not when the id is a phrase it begins ("Sí, soy yo": "Sí" alone is not c:si-soy-yo)
-            if (!inSlug.has(toks[0]) || phrase) continue;
+            if (!inSlug.has(toks[0].replace(/^=/, '')) || phrase) continue;
             p.alone = true;
+            // written as a tag question (¿no?), it is the chunk only as one: "No." and "No, gracias" are not
+            if (TAG_WORDS.has(toks[0].replace(/^=/, '')) && tagQ(frag, alt)) p.q = true;
+          } else if (slug.length >= 2 || !inSlug.has(toks[0].replace(/^=/, ''))) {   // (a one-word id, c:tranquilo, matches anywhere)
+            // a content word that is one of several variants or reply turns ("Listo." for
+            // c:me-parece-bien, "Tranquilo." for c:no-tiene-importancia, "Bueno," for
+            // c:bueno-no-se) is the chunk only standing alone ("listo el pan" is not). The
+            // first word of an id phrase the es spells out is covered by the phrase itself.
+            // A bare frame that shares the id's stem (Voy / Vas, Tenemos, Hago) still matches anywhere;
+            // a whole alternative that is the id's first word ("¡Vamos!") matches standing alone.
+            // A one-word fragment beside others that is not the id's ("Bueno," before "ya veremos") is context.
+            // A reply turn of its own ("Mucho gusto — Igualmente.") or a tag question (", ¿verdad?") is kept.
+            const idWord = inSlug.has(toks[0].replace(/^=/, '')) && phrase;
+            const q = TAG_WORDS.has(toks[0].replace(/^=/, '')) && tagQ(frag, alt);
+            const ownTurn = alt.split(/—|–/).some((turn) => turn.replace(/[.,?!¿¡;:…\s]/g, '') === frag.replace(/[.,?!¿¡;:…\s]/g, ''));
+            if (frags.length > 1 && !q && !ownTurn && (idWord || !shares(toks[0]))) continue;
+            // only a verb frame of the id's (Voy, Tenemos, Hago, Compré) or one of its time
+            // adverbs (ayer, anoche) matches inside a sentence
+            const frame = shares(toks[0]) && (!!verbLemma(toks[0].replace(/^=/, '')) || cc === 'adv' || slug.length === 1) && !idWord;
+            if (!frame) p.alone = true;
+            if (q) p.q = true;
           }
           push(p);
           continue;
@@ -119,7 +153,7 @@ function compile(chunks: readonly ChunkSpec[]): Array<{ id: string; pats: Patter
       }
     }
     // the head of a "… que" chunk standing alone: ", creo." is c:creo-que
-    if (slug.length >= 2 && slug[1] === 'que') { const p: Pattern = [slug[0]]; p.alone = true; push(p); }
+    if (slug.length >= 2 && slug[1] === 'que' && verbLemma(slug[0])) { const p: Pattern = [slug[0]]; p.alone = true; push(p); }
     return { id: c.id, pats };
   });
   PATTERNS.set(chunks, out);
@@ -128,10 +162,11 @@ function compile(chunks: readonly ChunkSpec[]): Array<{ id: string; pats: Patter
 
 /** Match `pat` at ws[k]; returns the index after the match or -1. A slot takes a run of
  *  names/numbers/"y"/titles, or exactly one other word. */
-type MW = { w: string; i: number; num: boolean; name: boolean };
+type MW = { w: string; i: number; num: boolean; name: boolean; a: string };
 function matchAt(ws: MW[], pat: string[], k: number, m = 0): number {
   if (m === pat.length) return k;
   if (k >= ws.length) return -1;
+  if (pat[m][0] === '=') return ws[k].a === pat[m].slice(1) ? matchAt(ws, pat, k + 1, m + 1) : -1;
   if (!SLOTS.has(pat[m])) return ws[k].w === pat[m] ? matchAt(ws, pat, k + 1, m + 1) : -1;
   const fits = (x: { w: string; num: boolean; name: boolean }) => pat[m] === '#' ? x.num || x.w === 'y' : pat[m] === '@' ? x.name : x.num || x.name;
   if (!fits(ws[k])) return pat[m] === '*' ? matchAt(ws, pat, k + 1, m + 1) : -1;
@@ -164,7 +199,7 @@ function chunkPass(words: Word[], chunks: readonly ChunkSpec[], out: Feature[]):
     // a cast name or a mid-sentence capital is only ever a slot; an unknown capitalised first word
     // (¿Cuadramos…?, Dizque…) may still be the chunk's word
     const nameTok = w.pos === 'propn' && (w.capMid || isName(w.w));
-    sentences[sentences.length - 1].push({ w: nameTok ? '\u0000' : f, i: w.i, num: w.pos === 'num' || closedClass(w.w) === 'num', name: w.pos === 'propn' || (SLOT_RUN.has(f) && f !== 'y') });
+    sentences[sentences.length - 1].push({ a: w.w.toLowerCase(), w: nameTok ? '\u0000' : f, i: w.i, num: w.pos === 'num' || closedClass(w.w) === 'num', name: w.pos === 'propn' || (SLOT_RUN.has(f) && f !== 'y') });
   }
   const isPunct = (k: number) => k < 0 || k >= words.length || words[k].punct;
   for (const c of compile(chunks)) {
@@ -172,11 +207,12 @@ function chunkPass(words: Word[], chunks: readonly ChunkSpec[], out: Feature[]):
       for (const pat of c.pats) {
         for (let k = 0; k < ws.length; k++) {
           if (pat.alone && !(isPunct(ws[k].i - 1) && isPunct(ws[k].i + 1))) continue;
+          if (pat.q && words[ws[k].i + 1]?.w !== '?') continue;
           const e = matchAt(ws, pat, k);
           if (e < 0 || e === k) continue;
           const a = ws[k].i;
           const b = slotEnd(words, ws[e - 1].i);
-          out.push({ key: 'chunk.' + c.id, node: c.id, span: [a, b], text: words.slice(a, b + 1).filter((w) => !w.punct).map((w) => w.text).join(' ') });
+          out.push({ key: 'chunk.' + c.id, node: c.id, span: [a, b], core: [a, ws[e - 1].i], text: words.slice(a, b + 1).filter((w) => !w.punct).map((w) => w.text).join(' ') });
         }
       }
     }
@@ -202,7 +238,8 @@ function compilePatterns(specs: readonly PatternSpec[]): PatMatcher[] {
   const out: PatMatcher[] = [];
   for (const p of specs) {
     if (p.match?.length) {
-      const seqs = p.match.map((m) => [...m.matchAll(/"[^"]*"|“[^”]*”|[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+|\d+/g)].map((x, k) => (/^["“\d]/.test(x[0]) || (k > 0 && /^[A-ZÁÉÍÓÚÑ]/.test(x[0])) ? '*' : fold(x[0])))).filter((q) => q.some((t) => t !== '*'));
+      // as in chunks, a diacritic minimal pair keeps its accent ("para mí" is not "para mi abuela")
+      const seqs = p.match.map((m) => [...m.matchAll(/"[^"]*"|“[^”]*”|[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+|\d+/g)].map((x, k) => (/^["“\d]/.test(x[0]) || (k > 0 && /^[A-ZÁÉÍÓÚÑ]/.test(x[0])) ? '*' : TILDE_PAIRS.has(x[0].toLowerCase()) ? '=' + x[0].toLowerCase() : fold(x[0])))).filter((q) => q.some((t) => t !== '*'));
       if (seqs.length) out.push({ id: p.id, seqs, gaps: 0 });
       continue;
     }
@@ -224,7 +261,7 @@ function patternPass(words: Word[], specs: readonly PatternSpec[], out: Feature[
   for (const ws of clauses) if (ws.length) patternClause(ws, words, specs, out);
 }
 function patternClause(ws: Word[], words: Word[], specs: readonly PatternSpec[], out: Feature[]): void {
-  const is = (w: Word, t: string) => t === '*' || fold(w.w) === t || fold(w.lemma || '') === t;
+  const is = (w: Word, t: string) => t === '*' || (t[0] === '=' ? w.w.toLowerCase() === t.slice(1) : fold(w.w) === t || fold(w.lemma || '') === t);
   for (const p of compilePatterns(specs)) {
     let done = false;
     for (const seq of p.seqs) {
@@ -258,11 +295,30 @@ export function tagSentence(es: string, opts: TagOptions = {}): TagResult {
   const imp = ctx.features.find((f) => f.key.startsWith('tense.imperfecto') || f.key === 'peri.estar-ger.past');
   if (pret && imp) ctx.features.push({ key: 'tense.mix', node: null, span: [Math.min(pret.span[0], imp.span[0]), Math.max(pret.span[1], imp.span[1])], text: `${pret.text} … ${imp.text}` });
   const lexemes = opts.lexemes !== false;
+  // A chunk is known as a whole phrase, not as grammar: what lies inside a matched chunk's own
+  // words ("Buenos días", "¿Me regala…?") requires the chunk, plus its words, not the grammar it
+  // seeds. What reaches into the slot it takes ("Quiero ir": verb + infinitive) is still required.
+  // The gate's legality check still sees every feature.
   const req = new Set<string>();
+  for (const f of ctx.features) f.node = resolveNode(f.key, opts);
+  // The grammar a chunk seeds (its `unpacks`) stays: "¿Te gusta el café?" practises g:gustar-basic
+  // once that is taught, and a taught chunk that unpacks a node stands in for it until then.
+  const unpacks = new Map((opts.chunks ?? []).filter((c) => c.unpacks).map((c) => [c.id, c.unpacks!]));
+  // several chunks matching the same words ("Qué pena" is c:que-pena's and c:que-oso's): the
+  // earliest taught is the one the sentence needs
+  const prio = new Map((opts.chunks ?? []).map((c) => [c.id, c.priority ?? 0]));
+  // (and a chunk inside one taught no later, "igual" in "Me da igual", is part of it)
+  const sameSpan = (a: Feature, b: Feature) => a.span[0] === b.span[0] && a.span[1] === b.span[1];
+  const within = (a: Feature, b: Feature) => a.span[0] >= b.span[0] && a.span[1] <= b.span[1] && !sameSpan(a, b);
+  const pr = (f: Feature) => prio.get(f.node!) ?? 0;
+  const chunkFts = ctx.features.filter((f) => f.key.startsWith('chunk.') && f.node && !ctx.features.some((g) => g !== f && g.key.startsWith('chunk.') && g.node && g.node !== f.node && (
+    (sameSpan(f, g) && (pr(g) < pr(f) || (pr(g) === pr(f) && g.node < f.node!))) || (within(f, g) && pr(g) <= pr(f)))));
+  const dropped = new Set(ctx.features.filter((f) => f.key.startsWith('chunk.') && !chunkFts.includes(f)));
   for (const f of ctx.features) {
-    f.node = resolveNode(f.key, opts);
     if (!f.node) continue;
     if (!lexemes && f.node.startsWith('l:')) continue;
+    if (dropped.has(f)) continue;
+    if (!f.node.startsWith('l:') && !f.key.startsWith('chunk.') && chunkFts.some((c) => f.span[0] >= (c.core ?? c.span)[0] && f.span[1] <= (c.core ?? c.span)[1]) && !chunkFts.some((c) => unpacks.get(c.node!) === f.node)) continue;
     req.add(f.node);
   }
   const lowReasons = [...new Set(ctx.low)];

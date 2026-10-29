@@ -31,9 +31,9 @@
       "en": "I'm in a hurry: the meeting is at nine."
     }
   ],
-  "rule": "For a handful of body feelings, Spanish uses tener (to have) plus a noun, where English uses \"to be\" plus an adjective:\n\ntengo hambre: I'm hungry (I have hunger)\ntengo sed: I'm thirsty\ntengo frío / calor: I'm cold / hot\ntengo sueño: I'm sleepy\ntengo miedo: I'm scared\ntengo prisa: I'm in a hurry\n\nSo never estoy hambre. Think of it as carrying the feeling around for a while.\n\nFor we, it's tenemos: Tenemos hambre. The forms for you and she (tienes, tiene) arrive soon, with the other verbs that change inside.\n\nBecause these are nouns, \"very\" is mucho or mucha, not muy: tengo mucha hambre, tengo mucho frío. You'll use that once mucho joins your toolkit.",
-  "smallPrint": "These are fixed expressions with tener + noun (expresiones con tener).",
-  "soundTip": "Hambre starts with a silent h: AM-bre. And in frío the í carries the stress: FRÍ-o, two syllables.",
+  "rule": "For a handful of body feelings, Spanish uses *tener* (to have) plus a noun, where English uses \"to be\" plus an adjective:\n\n*tengo hambre*: I'm hungry (I have hunger)\n*tengo sed*: I'm thirsty\n*tengo frío* / *calor*: I'm cold / hot\n*tengo sueño*: I'm sleepy\n*tengo miedo*: I'm scared\n*tengo prisa*: I'm in a hurry\n\nSo never *estoy hambre*. Think of it as carrying the feeling around for a while.\n\nFor we, it's *tenemos*: *Tenemos hambre.* The forms for you and she (*tienes*, *tiene*) arrive soon, with the other verbs that change inside.\n\nBecause these are nouns, \"very\" is *mucho* or *mucha*, not *muy*: *tengo mucha hambre*, *tengo mucho frío*. You'll use that once *mucho* joins your toolkit.",
+  "smallPrint": "These are fixed expressions with *tener* + noun (*expresiones con tener*).",
+  "soundTip": "*Hambre* starts with a silent *h*: *AM-bre*. And in *frío* the *í* carries the stress: *FRÍ-o*, two syllables.",
   "readAndPick": [
     {
       "es": "Tengo hambre.",
@@ -81,11 +81,11 @@
       "answer": 1
     },
     {
-      "es": "Tengo calor en el carro.",
+      "es": "Tengo calor en la oficina.",
       "options": [
-        "I'm cold in the car.",
-        "I have a hot car.",
-        "I'm hot in the car."
+        "I'm cold in the office.",
+        "I have a hot office.",
+        "I'm hot in the office."
       ],
       "answer": 2
     },
@@ -115,7 +115,7 @@
       "accept": [
         "Yo tengo hambre."
       ],
-      "why": "Hunger is something you have in Spanish: tengo hambre."
+      "why": "Hunger is something you have in Spanish: *tengo hambre*."
     },
     {
       "prompt": "I'm cold.",
@@ -123,7 +123,7 @@
       "accept": [
         "Yo tengo frío."
       ],
-      "why": "Cold, the feeling, is a noun: tengo frío."
+      "why": "Cold, the feeling, is a noun: *tengo frío*."
     },
     {
       "prompt": "We're sleepy.",
@@ -131,7 +131,7 @@
       "accept": [
         "Nosotros tenemos sueño."
       ],
-      "why": "We have = tenemos."
+      "why": "We have = *tenemos*."
     },
     {
       "prompt": "I'm not scared.",
@@ -139,7 +139,7 @@
       "accept": [
         "Yo no tengo miedo."
       ],
-      "why": "No goes before tengo."
+      "why": "*No* goes before *tengo*."
     },
     {
       "prompt": "I'm thirsty. Is there any water?",
@@ -147,7 +147,7 @@
       "accept": [
         "Tengo sed. ¿Hay agua, por favor?"
       ],
-      "why": "Tengo sed, then hay for \"is there\"."
+      "why": "*Tengo sed*, then *hay* for \"is there\"."
     },
     {
       "prompt": "I'm in a hurry: the meeting is at nine.",
@@ -155,31 +155,31 @@
       "accept": [
         "Tengo prisa. La reunión es a las nueve."
       ],
-      "why": "Prisa is a noun too: tengo prisa."
+      "why": "*Prisa* is a noun too: *tengo prisa*."
     },
     {
       "prompt": "I'm fine, but I'm hungry.",
       "answer": "Estoy bien, pero tengo hambre.",
       "accept": [],
-      "why": "How you are uses estar; hunger uses tener."
+      "why": "How you are uses *estar*; hunger uses *tener*."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Estoy hambre.",
       "right": "Tengo hambre.",
-      "why": "Hambre is a thing, not a description, so you have it: tengo hambre."
+      "why": "*Hambre* is a thing, not a description, so you have it: *tengo hambre*."
     },
     {
       "wrong": "Soy frío.",
       "right": "Tengo frío.",
-      "why": "Soy frío means you're a cold person. Feeling cold is tengo frío."
+      "why": "*Soy frío* means you're a cold person. Feeling cold is *tengo frío*."
     },
     {
       "wrong": "Tengo muy hambre.",
       "right": "Tengo hambre.",
-      "why": "Muy goes with describing words. With a noun like hambre, Spanish says mucha hambre; for now, tengo hambre is perfect."
+      "why": "*Muy* goes with describing words. With a noun like *hambre*, Spanish says *mucha hambre*; for now, *tengo hambre* is perfect."
     }
   ],
-  "personal": "How do you feel right now: hungry, thirsty, cold, sleepy? Write two sentences with tengo, and one with no tengo."
+  "personal": "How do you feel right now: hungry, thirsty, cold, sleepy? Write two sentences with *tengo*, and one with *no tengo*."
 }

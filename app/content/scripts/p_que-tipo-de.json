@@ -2,8 +2,8 @@
   "node": "p:que-tipo-de",
   "hook": {
     "line": "'Do you like music?' gets you a yes. 'What kind of music?' gets you a conversation.",
-    "es": "—¿Qué tipo de música te gusta? —Me gusta la música de Medellín.",
-    "en": "—What kind of music do you like? —I like music from Medellín."
+    "es": "¿Qué tipo de música te gusta?\nMe gusta la música de Medellín.",
+    "en": "What kind of music do you like?\nI like music from Medellín."
   },
   "examples": [
     { "es": "¿Qué tipo de películas te gustan?", "en": "What kind of films do you like?" },
@@ -12,30 +12,30 @@
     { "es": "Me gusta todo tipo de música.", "en": "I like all kinds of music." },
     { "es": "¿Qué tipo de café quieres?", "en": "What kind of coffee do you want?" }
   ],
-  "rule": "To ask about a kind of thing, put ¿Qué tipo de…? in front of the thing, with no el or la: ¿Qué tipo de música…?, not ¿Qué tipo de la música…?\n\nThen carry on with the verb you need: te gusta, prefieres, quieres.\n\nWatch gustar: if the thing is plural, the verb is too. ¿Qué tipo de películas te gustan?\n\nThe answer is a kind, not one single song or film: Me gusta el rock. Me gustan las películas colombianas.\n\nLike everything? Me gusta todo tipo de música.",
-  "smallPrint": "In ¿Qué tipo de + noun?, the noun has no article because it names a category, not a particular thing.",
+  "rule": "To ask about a kind of thing, put *¿Qué tipo de…?* in front of the thing, with no *el* or *la*: *¿Qué tipo de música…?*, not *¿Qué tipo de la música…?*\n\nThen carry on with the verb you need: *te gusta*, *prefieres*, *quieres*.\n\nWatch *gustar*: if the thing is plural, the verb is too. *¿Qué tipo de películas te gustan?*\n\nThe answer is a kind, not one single song or film: *Me gusta el rock. Me gustan las películas colombianas.*\n\nLike everything? *Me gusta todo tipo de música.*",
+  "smallPrint": "In *¿Qué tipo de* + noun*?*, the noun has no article because it names a category, not a particular thing.",
   "readAndPick": [
     { "es": "¿Qué tipo de música te gusta?", "options": ["What kind of music do you like?", "Do you like music?", "What music is playing?"], "answer": 0 },
     { "es": "¿Qué tipo de películas te gustan?", "options": ["What kind of films do you like?", "Which film do you like?", "Do films like you?"], "answer": 0 },
     { "es": "Me gusta todo tipo de deporte.", "options": ["I like all kinds of sport.", "I like one sport.", "I don't like sport."], "answer": 0 },
     { "es": "¿Qué tipo de comida prefieren?", "options": ["What kind of food do you all prefer?", "What kind of food do I prefer?", "Which dish does he want?"], "answer": 0 },
-    { "es": "—¿Qué tipo de libros te gustan? —Los libros en inglés.", "options": ["A kind of book: books in English.", "One single book.", "No books at all."], "answer": 0 },
+    { "es": "¿Qué tipo de libros te gustan?\nLos libros en inglés.", "options": ["A kind of book: books in English.", "One single book.", "No books at all."], "answer": 0 },
     { "es": "¿Qué tipo de fiesta es?", "options": ["What kind of party is it?", "Where is the party?", "When is the party?"], "answer": 0 },
     { "es": "¿Qué tipo de cerveza quiere, señor?", "options": ["What kind of beer would you like, sir?", "Do you want a beer, sir?", "What kind of beer does she want?"], "answer": 0 },
     { "es": "¿Qué tipo de jugo prefieres?", "options": ["What kind of juice do you prefer?", "Do you prefer juice?", "Who prefers juice?"], "answer": 0 }
   ],
   "yourTurn": [
-    { "prompt": "Ask a friend what kind of music they like.", "answer": "¿Qué tipo de música te gusta?", "accept": [], "why": "No article after tipo de, and música is one thing: gusta." },
-    { "prompt": "Ask a friend what kind of films they like.", "answer": "¿Qué tipo de películas te gustan?", "accept": ["¿Qué tipo de película te gusta?"], "why": "Películas is plural, so gustan." },
-    { "prompt": "Say you like all kinds of music.", "answer": "Me gusta todo tipo de música.", "accept": [], "why": "Todo tipo de is 'all kinds of'." },
-    { "prompt": "Ask a friend what kind of food they prefer.", "answer": "¿Qué tipo de comida prefieres?", "accept": [], "why": "Tipo de goes with any verb: here, prefieres." },
-    { "prompt": "Ask a customer (formal) what kind of coffee they want.", "answer": "¿Qué tipo de café quiere?", "accept": ["¿Qué tipo de café quiere usted?"], "why": "Usted takes the él/ella form of the boot verb: quiere." },
-    { "prompt": "Ask a friend what kind of sport they play.", "answer": "¿Qué tipo de deporte practicas?", "accept": [], "why": "Practicar works for sports, like 'do' in English." }
+    { "prompt": "Ask a friend what kind of music they like.", "answer": "¿Qué tipo de música te gusta?", "accept": [], "why": "No article after *tipo de*, and *música* is one thing: *gusta*." },
+    { "prompt": "Ask a friend what kind of films they like.", "answer": "¿Qué tipo de películas te gustan?", "accept": ["¿Qué tipo de película te gusta?"], "why": "*Películas* is plural, so *gustan*." },
+    { "prompt": "Say you like all kinds of music.", "answer": "Me gusta todo tipo de música.", "accept": [], "why": "*Todo tipo de* is 'all kinds of'." },
+    { "prompt": "Ask a friend what kind of food they prefer.", "answer": "¿Qué tipo de comida prefieres?", "accept": [], "why": "*Tipo de* goes with any verb: here, *prefieres*." },
+    { "prompt": "Ask a customer (formal) what kind of coffee they want.", "answer": "¿Qué tipo de café quiere?", "accept": ["¿Qué tipo de café quiere usted?"], "why": "*Usted* takes the *él*/*ella* form of the boot verb: *quiere*." },
+    { "prompt": "Ask a friend what kind of sport they play.", "answer": "¿Qué tipo de deporte practicas?", "accept": [], "why": "*Practicar* works for sports, like 'do' in English." }
   ],
   "pitfalls": [
-    { "wrong": "¿Qué tipo de la música te gusta?", "right": "¿Qué tipo de música te gusta?", "why": "No el or la after tipo de: it names a kind." },
-    { "wrong": "¿Qué tipo de películas te gusta?", "right": "¿Qué tipo de películas te gustan?", "why": "The verb agrees with películas, which is plural." },
-    { "wrong": "¿Qué clase música te gusta?", "right": "¿Qué tipo de música te gusta?", "why": "You need de: tipo de." }
+    { "wrong": "¿Qué tipo de la música te gusta?", "right": "¿Qué tipo de música te gusta?", "why": "No *el* or *la* after *tipo de*: it names a kind." },
+    { "wrong": "¿Qué tipo de películas te gusta?", "right": "¿Qué tipo de películas te gustan?", "why": "The verb agrees with *películas*, which is plural." },
+    { "wrong": "¿Qué clase música te gusta?", "right": "¿Qué tipo de música te gusta?", "why": "You need *de*: *tipo de*." }
   ],
-  "personal": "What kind of music, food and films do you like? Write three short answers, and then ask someone the same with ¿Qué tipo de…?"
+  "personal": "What kind of music, food and films do you like? Write three short answers, and then ask someone the same with *¿Qué tipo de…?*"
 }

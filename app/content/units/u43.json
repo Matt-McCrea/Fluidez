@@ -119,8 +119,7 @@
    "type": "output",
    "focus": [
     "g:pluperfect-subj",
-    "g:conditional-perfect",
-    "g:si-past-unreal"
+    "g:conditional-perfect"
    ],
    "chunks": [],
    "lexemes": [],

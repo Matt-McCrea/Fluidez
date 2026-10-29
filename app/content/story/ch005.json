@@ -2,7 +2,7 @@
   "id": "ch005",
   "unit": "u03",
   "title": "Treinta días",
-  "text": "6:00. Vale está en el café, pero no hace pan. No hace tinto. Vale está con Tomás. Hernando también.\nVale: Tomás, ¿quién es el señor Ruiz?\nTomás: Un señor de una empresa.\nVale: ¿Cuál empresa? ¿Altamira?\nTomás: No sé, Vale. De verdad.\nVale: ¿Y por qué llamas al señor Ruiz?\nTomás: Porque no tengo trabajo. No hay oficina, no hay jefe. En Toronto no tengo trabajo.\nHernando: ¿Y el café, Tomás? ¿Y Rosa?\nTomás: Me da igual.\nVale: ¿Igual? ¿El café de Rosa, igual?\nTomás: ...\nVale: Bueno. Un pacto.\nTomás: ¿Un pacto?\nVale: Treinta días. ¿El café hace $2.000.000? Tú trabajas aquí trescientos sesenta y cinco días. ¿El café no hace $2.000.000? Llamas al señor Ruiz.\nTomás: ¿Trescientos sesenta y cinco días? ¿Aquí? ¿Con Simón? No me gusta el pacto.\nVale: ¿Te gusta el pan, Tomás?\nTomás: El pan... sí. El pan, sí.\nHernando: ¡Qué chévere! Y yo cocino. Me gusta cocinar.\nTomás: No, no, Hernando. Es que...\nHernando: ¡De una!\nSimón: ¡De una! ¡De una!\nVale: Listo. Treinta días, Tomás.",
+  "text": "6:00. Vale está en el café, pero no hace pan. No hace tinto. Vale está con Tomás. Hernando también.\nVale: Tomás, ¿quién es el señor Ruiz?\nTomás: Un señor de una empresa.\nVale: ¿Cuál empresa? ¿Altamira?\nTomás: No sé, Vale. No sé.\nVale: ¿Y por qué llamas al señor Ruiz?\nTomás: Porque no tengo trabajo. No hay oficina, no hay jefe. En Toronto no tengo trabajo.\nHernando: ¿Y el café, Tomás? ¿Y Rosa?\nTomás: Me da igual.\nVale: ¿Qué? ¿Y el café de Rosa, Tomás?\nTomás: ...\nVale: Bueno. Un pacto.\nTomás: ¿Un pacto?\nVale: Treinta días. ¿El café hace $2.000.000? Tú trabajas aquí trescientos sesenta y cinco días. ¿El café no hace $2.000.000? Llamas al señor Ruiz.\nTomás: ¿Trescientos sesenta y cinco días? ¿Aquí? ¿Con Simón? No me gusta el pacto.\nVale: ¿Te gusta el pan, Tomás?\nTomás: El pan... sí. El pan, sí.\nHernando: ¡Qué chévere! Y yo cocino. Me gusta cocinar.\nTomás: No, no, Hernando. Es que...\nHernando: ¡De una!\nSimón: ¡De una! ¡De una!\nVale: Listo. Treinta días, Tomás.",
   "gloss": [
     {
       "es": "un pacto",
@@ -64,7 +64,7 @@
     {
       "q": "Does Tomás actually agree to the deal?",
       "options": [
-        "Not really — he's still saying no when Hernando says yes for him",
+        "Not really. He's still saying no when Hernando says yes for him",
         "Yes, immediately",
         "No, and Vale cancels it",
         "Yes, but only for thirty days"
@@ -85,9 +85,9 @@
     {
       "q": "What does Tomás say when Hernando asks about Rosa and the café?",
       "options": [
-        "«Me da igual» — I don't care",
-        "«Me gusta» — I like it",
-        "«No sé» — I don't know",
+        "«Me da igual»: I don't care",
+        "«Me gusta»: I like it",
+        "«No sé»: I don't know",
         "Nothing at all"
       ],
       "answer": 0
@@ -104,40 +104,19 @@
     }
   ],
   "requires": [
-    "c:aqui-tiene",
-    "c:bueno-no-se",
-    "c:bueno-si-insistes",
-    "c:bueno-te-dejo",
     "c:claro-listo",
-    "c:de-una",
-    "c:en-serio",
     "c:entonces-bueno",
     "c:es-que",
-    "c:eso-seria-todo",
     "c:hay",
-    "c:igual",
-    "c:me-avisas",
     "c:me-da-igual",
     "c:me-gusta",
-    "c:me-parece-bien",
     "c:me-regala",
-    "c:no-cierto",
-    "c:no-creas",
-    "c:no-hablemos-de-eso",
     "c:no-se",
     "c:porque",
-    "c:pues",
     "c:que-chevere",
-    "c:que-descanses",
-    "c:que-sea-la-ultima-vez",
-    "c:sera-otro-dia",
-    "c:si-no-hay-mas-remedio",
     "c:tengo",
-    "c:ya-veremos",
     "g:cause-result",
-    "g:direct-objects",
     "g:estar-location-states",
-    "g:exclamations",
     "g:gender-articles",
     "g:gustar-basic",
     "g:hay-vs-esta",
@@ -145,9 +124,7 @@
     "g:present-er-ir",
     "g:questions",
     "g:ser-identity",
-    "g:that-clauses",
-    "g:yo-irregular",
-    "p:dar-igual"
+    "g:yo-irregular"
   ],
   "lexemes": [
     "l:aquí",
@@ -177,7 +154,6 @@
     "l:tener",
     "l:tinto",
     "l:trabajar",
-    "l:trabajo",
-    "l:verdad"
+    "l:trabajo"
   ]
 }

@@ -58,9 +58,9 @@
       "npcEn": "From Toronto? So you're Canadian.",
       "intent": "Say yes, you're Canadian, and ask where she's from.",
       "accept": [
-        "Sí, soy canadiense. ¿Y tú, de dónde eres?",
+        "Sí, soy canadiense. ¿Eres de Bogotá?",
         "Sí, soy canadiense. ¿De dónde eres?",
-        "Sí. ¿Y tú? ¿De dónde eres?"
+        "Sí. ¿De dónde eres?"
       ],
       "require": [
         {
@@ -72,7 +72,7 @@
     },
     {
       "id": "t4",
-      "npc": "Soy de Medellín, pero trabajo en Bogotá, en el café. ¿Y tú? ¿Trabajas en Toronto?",
+      "npc": "Soy de Medellín, pero trabajo en Bogotá, en el café. ¿Trabajas en Toronto?",
       "npcEn": "I'm from Medellín, but I work in Bogotá, at the café. And you? Do you work in Toronto?",
       "intent": "Tell her yes: you work in Toronto, and you're an engineer.",
       "accept": [
@@ -137,28 +137,39 @@
     }
   ],
   "requires": [
-    "c:bien-y-tu",
     "c:claro-listo",
-    "c:con-el-ella",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
     "c:hola-buenos-dias",
     "c:me-llamo",
     "c:me-puede-ayudar",
     "c:mucho-gusto",
     "c:por-favor",
-    "c:que-oso",
     "c:que-pena",
     "c:soy-de",
     "c:trabajo-en",
-    "g:adjective-agreement",
-    "g:direct-objects",
     "g:gender-articles",
     "g:present-ar",
-    "g:questions",
-    "g:questions-prepositions",
     "g:reflexive-routine",
     "g:ser-identity",
-    "g:stem-boot",
-    "g:that-clauses",
-    "g:verb-infinitive"
+    "g:verb-infinitive",
+    "l:apellido",
+    "l:ayudar",
+    "l:bueno",
+    "l:café",
+    "l:canadiense",
+    "l:claro",
+    "l:día",
+    "l:dónde",
+    "l:favor",
+    "l:gusto",
+    "l:ingeniero",
+    "l:llamarse",
+    "l:pena",
+    "l:poder",
+    "l:qué",
+    "l:ser",
+    "l:tinto",
+    "l:trabajar"
   ]
 }

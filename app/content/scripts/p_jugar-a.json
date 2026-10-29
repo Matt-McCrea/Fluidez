@@ -2,8 +2,8 @@
   "node": "p:jugar-a",
   "hook": {
     "line": "In Bogotá, the question isn't whether you like football. It's whether you play, and when.",
-    "es": "—¿Juegas al fútbol? —Sí, los domingos.",
-    "en": "—Do you play football? —Yes, on Sundays."
+    "es": "¿Juegas al fútbol?\nSí, los domingos.",
+    "en": "Do you play football?\nYes, on Sundays."
   },
   "examples": [
     { "es": "Juego al fútbol los sábados.", "en": "I play football on Saturdays." },
@@ -12,9 +12,9 @@
     { "es": "Jugamos al fútbol en el barrio.", "en": "We play football in the neighbourhood." },
     { "es": "Vale no juega al fútbol: prefiere nadar.", "en": "Vale doesn't play football: she'd rather swim." }
   ],
-  "rule": "To play a sport or a game, Spanish says jugar a, and a + el becomes al: juego al fútbol, juegan al tenis.\n\nJugar is a boot verb with a twist: the u becomes ue. Juego, juegas, juega, jugamos, juegan. Nosotros stays jugamos.\n\nYou'll often hear juego fútbol with no al in Latin America, and that's fine to understand. Saying juego al fútbol is always right.\n\nOne thing jugar never does: instruments. A guitar or a piano is tocar, which you'll meet later.",
-  "smallPrint": "Jugar is the only u→ue stem-changer. Al is the contraction of a + el.",
-  "soundTip": "Jue- sounds like 'hweh': HWEH-go.",
+  "rule": "To play a sport or a game, Spanish says *jugar a*, and *a* + *el* becomes *al*: *juego al fútbol*, *juegan al tenis*.\n\n*Jugar* is a boot verb with a twist: the *u* becomes *ue*. *Juego, juegas, juega, jugamos, juegan.* *Nosotros* stays *jugamos*.\n\nYou'll often hear *juego fútbol* with no *al* in Latin America, and that's fine to understand. Saying *juego al fútbol* is always right.\n\nOne thing *jugar* never does: instruments. A guitar or a piano is *tocar*, which you'll meet later.",
+  "smallPrint": "*Jugar* is the only *u*→*ue* stem-changer. *Al* is the contraction of *a* + *el*.",
+  "soundTip": "*Jue-* sounds like 'hweh': HWEH-go.",
   "readAndPick": [
     { "es": "Juego al fútbol los domingos.", "options": ["I play football on Sundays.", "He plays football on Sundays.", "We play football on Sundays."], "answer": 0 },
     { "es": "Jugamos al fútbol en el parque.", "options": ["We play football in the park.", "They play football in the park.", "I play football in the park."], "answer": 0 },
@@ -23,20 +23,20 @@
     { "es": "Los estudiantes juegan al fútbol los viernes.", "options": ["The students play football on Fridays.", "The student plays football on Fridays.", "We play football on Fridays."], "answer": 0 },
     { "es": "Juega al fútbol con los amigos del barrio.", "options": ["He plays football with his friends from the neighbourhood.", "I play football with friends from the neighbourhood.", "They watch football in the neighbourhood."], "answer": 0 },
     { "es": "¿Usted juega al fútbol, don Hernando?", "options": ["Do you play football, don Hernando?", "Does he play football, don Hernando?", "Do we play football, don Hernando?"], "answer": 0 },
-    { "es": "Vale prefiere nadar; no juega al fútbol.", "options": ["Vale swims; she doesn't play football.", "Vale plays football.", "Vale hates swimming."], "answer": 0 }
+    { "es": "Vale prefiere nadar; no juega al fútbol.", "options": ["Vale would rather swim; she doesn't play football.", "Vale plays football.", "Vale hates swimming."], "answer": 0 }
   ],
   "yourTurn": [
-    { "prompt": "Say: I play football on Saturdays.", "answer": "Juego al fútbol los sábados.", "accept": ["Juego fútbol los sábados."], "why": "Jugar a + el = al fútbol; yo is inside the boot: juego." },
-    { "prompt": "Ask a friend if they play football.", "answer": "¿Juegas al fútbol?", "accept": ["¿Juegas fútbol?"], "why": "Tú is inside the boot: juegas." },
-    { "prompt": "Say: We play football in the park.", "answer": "Jugamos al fútbol en el parque.", "accept": ["Jugamos fútbol en el parque."], "why": "Nosotros keeps the u: jugamos." },
-    { "prompt": "Say: Tomás doesn't play football.", "answer": "Tomás no juega al fútbol.", "accept": ["Tomás no juega fútbol."], "why": "Él/ella is inside the boot: juega." },
-    { "prompt": "Ask a group of friends if they play football on Sundays.", "answer": "¿Juegan al fútbol los domingos?", "accept": ["¿Ustedes juegan al fútbol los domingos?", "¿Juegan fútbol los domingos?"], "why": "Ustedes is inside the boot: juegan." },
-    { "prompt": "Say: Vale and I play football on Fridays.", "answer": "Vale y yo jugamos al fútbol los viernes.", "accept": ["Vale y yo jugamos fútbol los viernes."], "why": "Vale y yo is 'we': jugamos." }
+    { "prompt": "Say: I play football on Saturdays.", "answer": "Juego al fútbol los sábados.", "accept": ["Juego fútbol los sábados."], "why": "*Jugar a* + *el* = *al fútbol*; *yo* is inside the boot: *juego*." },
+    { "prompt": "Ask a friend if they play football.", "answer": "¿Juegas al fútbol?", "accept": ["¿Juegas fútbol?"], "why": "*Tú* is inside the boot: *juegas*." },
+    { "prompt": "Say: We play football in the park.", "answer": "Jugamos al fútbol en el parque.", "accept": ["Jugamos fútbol en el parque."], "why": "*Nosotros* keeps the *u*: *jugamos*." },
+    { "prompt": "Say: Tomás doesn't play football.", "answer": "Tomás no juega al fútbol.", "accept": ["Tomás no juega fútbol."], "why": "*Él*/*ella* is inside the boot: *juega*." },
+    { "prompt": "Ask a group of friends if they play football on Sundays.", "answer": "¿Juegan al fútbol los domingos?", "accept": ["¿Ustedes juegan al fútbol los domingos?", "¿Juegan fútbol los domingos?"], "why": "*Ustedes* is inside the boot: *juegan*." },
+    { "prompt": "Say: Vale and I play football on Fridays.", "answer": "Vale y yo jugamos al fútbol los viernes.", "accept": ["Vale y yo jugamos fútbol los viernes."], "why": "*Vale y yo* is 'we': *jugamos*." }
   ],
   "pitfalls": [
-    { "wrong": "Jugo al fútbol.", "right": "Juego al fútbol.", "why": "Jugo is juice. The verb needs the ue: juego." },
-    { "wrong": "Juego a el fútbol.", "right": "Juego al fútbol.", "why": "A + el always joins up: al." },
-    { "wrong": "Juegamos al fútbol.", "right": "Jugamos al fútbol.", "why": "Nosotros is outside the boot: jugamos." }
+    { "wrong": "Jugo al fútbol.", "right": "Juego al fútbol.", "why": "*Jugo* is juice. The verb needs the *ue*: *juego*." },
+    { "wrong": "Juego a el fútbol.", "right": "Juego al fútbol.", "why": "*A* + *el* always joins up: *al*." },
+    { "wrong": "Juegamos al fútbol.", "right": "Jugamos al fútbol.", "why": "*Nosotros* is outside the boot: *jugamos*." }
   ],
-  "personal": "Do you play anything? Write what you play and when, or what you'd rather do instead: Juego al… los… / No juego al…: prefiero…"
+  "personal": "Do you play anything? Write what you play and when, or what you'd rather do instead: *Juego al… los…* / *No juego al…: prefiero…*"
 }

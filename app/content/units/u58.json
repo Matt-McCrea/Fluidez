@@ -126,8 +126,7 @@
    "type": "output",
    "focus": [
     "g:temporal-advanced",
-    "g:agreement-tricky",
-    "g:ser-estar-c1"
+    "g:agreement-tricky"
    ],
    "chunks": [],
    "lexemes": [],

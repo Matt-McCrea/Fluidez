@@ -43,8 +43,8 @@
   {
    "type": "output",
    "focus": [
-    "g:emphatic-structures",
-    "g:wish-exclamatives"
+    "g:hedging-distance",
+    "g:reformulation"
    ],
    "chunks": [],
    "lexemes": [],
@@ -140,8 +140,7 @@
   {
    "type": "output",
    "focus": [
-    "g:emphatic-structures",
-    "g:wish-exclamatives"
+    "g:emphatic-structures"
    ],
    "chunks": [],
    "lexemes": [],

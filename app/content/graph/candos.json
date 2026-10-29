@@ -484,8 +484,22 @@
   "band": "A1",
   "priority": 46,
   "title": "I can ask and say whose something is.",
-  "es": "¿De quién es? —Es de mi hermana. Es mío.",
-  "en": "",
+  "es": "¿De quién es?",
+  "en": "Whose is it?",
+  "forms": [
+   {
+    "es": "¿De quién es?",
+    "en": "Whose is it?"
+   },
+   {
+    "es": "Es de mi hermana.",
+    "en": "It's my sister's."
+   },
+   {
+    "es": "Es mío.",
+    "en": "It's mine."
+   }
+  ],
   "requires": [
    "g:possessives"
   ],
@@ -822,8 +836,22 @@
   "band": "A1",
   "priority": 84,
   "title": "I can ask and tell the time and say when things happen in my day.",
-  "es": "¿Qué hora es? —Son las tres y media. ¿A qué hora…? —A las ocho de la mañana.",
-  "en": "",
+  "es": "¿Qué hora es?",
+  "en": "What time is it?",
+  "forms": [
+   {
+    "es": "¿Qué hora es?",
+    "en": "What time is it?"
+   },
+   {
+    "es": "Son las tres y media.",
+    "en": "It's half past three."
+   },
+   {
+    "es": "¿A qué hora empieza la clase?\nA las ocho de la mañana.",
+    "en": "What time does the class start?\nAt eight in the morning."
+   }
+  ],
   "requires": [
    "g:ser-identity"
   ],
@@ -2102,8 +2130,22 @@
   "band": "B1",
   "priority": 272,
   "title": "I can give my opinion, ask for someone else's, and say what I don't think.",
-  "es": "En mi opinión… / ¿Tú qué piensas? / No creo que sea así.",
-  "en": "In my opinion… / What do you think? / I don't think it's like that.",
+  "es": "En mi opinión, es demasiado caro.",
+  "en": "In my opinion, it's too expensive.",
+  "forms": [
+   {
+    "es": "En mi opinión, es demasiado caro.",
+    "en": "In my opinion, it's too expensive."
+   },
+   {
+    "es": "¿Tú qué piensas?",
+    "en": "What do you think?"
+   },
+   {
+    "es": "No creo que sea así.",
+    "en": "I don't think it's like that."
+   }
+  ],
   "requires": [
    "g:subj-opinion-negated"
   ],
@@ -2139,8 +2181,18 @@
   "band": "B1",
   "priority": 272,
   "title": "I can say whether I approve of what someone did, and ask what they made of something.",
-  "es": "Me parece muy bien que hayas venido. / ¿Qué te pareció?",
-  "en": "I think it's great you came. / What did you think of it?",
+  "es": "Me parece muy bien que hayas venido.",
+  "en": "I think it's great that you came.",
+  "forms": [
+   {
+    "es": "Me parece muy bien que hayas venido.",
+    "en": "I think it's great that you came."
+   },
+   {
+    "es": "¿Qué te pareció?",
+    "en": "What did you think of it?"
+   }
+  ],
   "requires": [
    "g:subj-value"
   ],
@@ -2224,8 +2276,18 @@
   "band": "B1",
   "priority": 272,
   "title": "I can come down for or against an issue and say why.",
-  "es": "Estoy en contra de que cierren el parque, porque…",
-  "en": "I'm against them closing the park, because…",
+  "es": "Estoy en contra de que cierren el parque, porque los niños no tienen otro lugar para jugar.",
+  "en": "I'm against them closing the park, because the children have nowhere else to play.",
+  "forms": [
+   {
+    "es": "Estoy en contra de que cierren el parque, porque los niños no tienen otro lugar para jugar.",
+    "en": "I'm against them closing the park, because the children have nowhere else to play."
+   },
+   {
+    "es": "Estoy a favor de la idea, porque es más barata.",
+    "en": "I'm in favour of the idea, because it's cheaper."
+   }
+  ],
   "requires": [
    "g:subj-value"
   ],
@@ -2266,8 +2328,18 @@
   "band": "B1",
   "priority": 282,
   "title": "I can agree and disagree with a reason attached, from mildly to emphatically.",
-  "es": "Estoy de acuerdo contigo en que es caro, pero… / ¡Para nada!",
-  "en": "I agree with you that it's expensive, but… / Not at all!",
+  "es": "Estoy de acuerdo contigo en que es caro, pero vale la pena.",
+  "en": "I agree with you that it's expensive, but it's worth it.",
+  "forms": [
+   {
+    "es": "Estoy de acuerdo contigo en que es caro, pero vale la pena.",
+    "en": "I agree with you that it's expensive, but it's worth it."
+   },
+   {
+    "es": "¡Para nada!",
+    "en": "Not at all!"
+   }
+  ],
   "requires": [
    "g:subj-opinion-negated"
   ],
@@ -2301,8 +2373,18 @@
   "band": "B1",
   "priority": 282,
   "title": "I can say how sure I am, and show that I don't quite believe something.",
-  "es": "Estoy seguro de que viene. / ¿Tú crees? Lo dudo.",
-  "en": "I'm sure he's coming. / You think so? I doubt it.",
+  "es": "Estoy seguro de que viene.",
+  "en": "I'm sure he's coming.",
+  "forms": [
+   {
+    "es": "Estoy seguro de que viene.",
+    "en": "I'm sure he's coming."
+   },
+   {
+    "es": "¿Tú crees? Lo dudo.",
+    "en": "You think so? I doubt it."
+   }
+  ],
   "requires": [
    "g:subj-doubt"
   ],
@@ -2682,8 +2764,22 @@
   "band": "B1",
   "priority": 302,
   "title": "I can grab attention before a story and close it so people know it's over.",
-  "es": "¿Sabes qué pasó? No te lo vas a creer… Total, que al final todo salió bien.",
-  "en": "You know what happened? You won't believe it… So anyway, in the end it all worked out.",
+  "es": "¿Sabes qué pasó?",
+  "en": "Do you know what happened?",
+  "forms": [
+   {
+    "es": "¿Sabes qué pasó?",
+    "en": "Do you know what happened?"
+   },
+   {
+    "es": "No te lo vas a creer.",
+    "en": "You won't believe it."
+   },
+   {
+    "es": "Total, que al final todo salió bien.",
+    "en": "So anyway, in the end it all worked out."
+   }
+  ],
   "requires": [
    "g:narrative-pasts"
   ],
@@ -2711,9 +2807,19 @@
   "kind": "cando",
   "band": "B1",
   "priority": 302,
-  "title": "I can tell a story with a real shape — scene, complication, what we did, how it ended — reaching back before its beginning.",
-  "es": "Aquella tarde todo estaba tranquilo hasta que… Resulta que ya se habían ido.",
-  "en": "That afternoon everything was calm until… It turns out they'd already left.",
+  "title": "I can tell a story with a real shape (scene, complication, what we did, how it ended), reaching back before its beginning.",
+  "es": "Aquella tarde todo estaba tranquilo hasta que sonó el teléfono.",
+  "en": "That afternoon everything was calm until the phone rang.",
+  "forms": [
+   {
+    "es": "Aquella tarde todo estaba tranquilo hasta que sonó el teléfono.",
+    "en": "That afternoon everything was calm until the phone rang."
+   },
+   {
+    "es": "Resulta que ya se habían ido.",
+    "en": "It turns out they'd already left."
+   }
+  ],
   "requires": [
    "g:pluperfect",
    "g:narrative-pasts"
@@ -2772,8 +2878,22 @@
   "band": "B1",
   "priority": 302,
   "title": "I can write a personal letter or long message that opens, says why I'm writing, and signs off at the right register.",
-  "es": "Querida Vale: ¿Cómo estás? Te escribo para contarte… Un abrazo,",
-  "en": "Dear Vale, how are you? I'm writing to tell you… Hugs,",
+  "es": "Querida Vale: ¿Cómo estás?",
+  "en": "Dear Vale, how are you?",
+  "forms": [
+   {
+    "es": "Querida Vale: ¿Cómo estás?",
+    "en": "Dear Vale, how are you?"
+   },
+   {
+    "es": "Te escribo para contarte que me voy a casar.",
+    "en": "I'm writing to tell you that I'm getting married."
+   },
+   {
+    "es": "Un abrazo.",
+    "en": "Hugs."
+   }
+  ],
   "requires": [
    "g:written-register-a2"
   ],
@@ -2841,8 +2961,22 @@
   "band": "B1",
   "priority": 312,
   "title": "I can ask for a favour or help directly, softly, or just by mentioning the problem.",
-  "es": "Tengo que pedirte un favor… ¿Me harías el favor de recoger a la niña?",
-  "en": "I need to ask you a favour… Would you do me the favour of picking up my daughter?",
+  "es": "Tengo que pedirte un favor.",
+  "en": "I need to ask you a favour.",
+  "forms": [
+   {
+    "es": "Tengo que pedirte un favor.",
+    "en": "I need to ask you a favour."
+   },
+   {
+    "es": "¿Me harías el favor de recoger a la niña?",
+    "en": "Would you do me the favour of picking up the little girl?"
+   },
+   {
+    "es": "Es que no tengo cómo llegar al aeropuerto.",
+    "en": "The thing is, I've got no way of getting to the airport."
+   }
+  ],
   "requires": [
    "g:subj-influence"
   ],
@@ -2991,8 +3125,22 @@
   "band": "B1",
   "priority": 312,
   "title": "I can propose a plan at the right strength, and accept with enthusiasm or with reservations.",
-  "es": "¿Qué tal si vamos el sábado? — ¡De una! / Bueno, si insistes…",
-  "en": "How about we go on Saturday? — Let's do it! / Well, if you insist…",
+  "es": "¿Qué tal si vamos el sábado?",
+  "en": "How about we go on Saturday?",
+  "forms": [
+   {
+    "es": "¿Qué tal si vamos el sábado?",
+    "en": "How about we go on Saturday?"
+   },
+   {
+    "es": "¡De una!",
+    "en": "Let's do it!"
+   },
+   {
+    "es": "Bueno, si insistes.",
+    "en": "Well, if you insist."
+   }
+  ],
   "requires": [
    "g:subj-influence"
   ],
@@ -3112,9 +3260,19 @@
   "kind": "cando",
   "band": "B1",
   "priority": 322,
-  "title": "I can describe an object precisely — size, material, state, use — so someone could pick it out, or turn it into a riddle.",
-  "es": "Es una caja de madera que mide unos treinta centímetros; está llena de cartas viejas.",
-  "en": "It's a wooden box about thirty centimetres long; it's full of old letters.",
+  "title": "I can describe an object precisely (size, material, state, use) so someone could pick it out, or turn it into a riddle.",
+  "es": "Es una caja de madera que mide unos treinta centímetros.",
+  "en": "It's a wooden box that measures about thirty centimetres.",
+  "forms": [
+   {
+    "es": "Es una caja de madera que mide unos treinta centímetros.",
+    "en": "It's a wooden box that measures about thirty centimetres."
+   },
+   {
+    "es": "Está llena de cartas viejas.",
+    "en": "It's full of old letters."
+   }
+  ],
   "requires": [
    "g:relative-que",
    "g:estar-participle"
@@ -3143,8 +3301,18 @@
   "band": "B1",
   "priority": 322,
   "title": "I can sustain a description of a place for a paragraph and say why it matters to me.",
-  "es": "Es un apartamento pequeño donde entra mucha luz por dos razones: por una parte… y por otra…",
-  "en": "It's a small flat that gets a lot of light, for two reasons: on the one hand… and on the other…",
+  "es": "Es un apartamento pequeño donde entra mucha luz.",
+  "en": "It's a small flat that gets a lot of light.",
+  "forms": [
+   {
+    "es": "Es un apartamento pequeño donde entra mucha luz.",
+    "en": "It's a small flat that gets a lot of light."
+   },
+   {
+    "es": "Me gusta por dos razones: por una parte, está cerca del trabajo y, por otra, es muy tranquilo.",
+    "en": "I like it for two reasons: on the one hand, it's close to work and, on the other, it's very quiet."
+   }
+  ],
   "requires": [
    "g:relatives-prepositions"
   ],
@@ -3198,8 +3366,18 @@
   "band": "B1",
   "priority": 322,
   "title": "I can pick out exactly which one I mean with a relative clause.",
-  "es": "¿Cuál? — La que tiene el techo rojo.",
-  "en": "Which one? — The one with the red roof.",
+  "es": "¿Cuál?\nLa que tiene el techo rojo.",
+  "en": "Which one?\nThe one with the red roof.",
+  "forms": [
+   {
+    "es": "¿Cuál?\nLa que tiene el techo rojo.",
+    "en": "Which one?\nThe one with the red roof."
+   },
+   {
+    "es": "El señor que vive al lado es médico.",
+    "en": "The man who lives next door is a doctor."
+   }
+  ],
   "requires": [
    "g:relative-que"
   ],
@@ -3240,8 +3418,18 @@
   "band": "B1",
   "priority": 332,
   "title": "I can apologise with a reason, and accept someone else's apology gracefully.",
-  "es": "Perdóname, es que se me olvidó por completo. — Tranquilo, no tiene importancia.",
-  "en": "Sorry, I completely forgot. — Don't worry, it's nothing.",
+  "es": "Perdóname, es que se me olvidó por completo.",
+  "en": "Sorry, I just completely forgot.",
+  "forms": [
+   {
+    "es": "Perdóname, es que se me olvidó por completo.",
+    "en": "Sorry, I just completely forgot."
+   },
+   {
+    "es": "Tranquilo, no tiene importancia.",
+    "en": "Don't worry, it doesn't matter. (to a man)"
+   }
+  ],
   "requires": [
    "g:se-accidental"
   ],
@@ -3541,8 +3729,22 @@
   "band": "B1",
   "priority": 362,
   "title": "I can interrupt politely, check the other person is following, and hold the floor while I think.",
-  "es": "Perdona que te interrumpa, pero… ¿Me explico?",
-  "en": "Sorry to interrupt, but… Do you see what I mean?",
+  "es": "Perdona que te interrumpa, pero tengo que irme.",
+  "en": "Sorry to interrupt, but I have to go.",
+  "forms": [
+   {
+    "es": "Perdona que te interrumpa, pero tengo que irme.",
+    "en": "Sorry to interrupt, but I have to go."
+   },
+   {
+    "es": "¿Me explico?",
+    "en": "Do you see what I mean?"
+   },
+   {
+    "es": "A ver, ¿cómo te digo?",
+    "en": "Let's see, how can I put it?"
+   }
+  ],
   "requires": [
    "g:subj-emotion"
   ],
@@ -3585,8 +3787,22 @@
   "band": "B1",
   "priority": 362,
   "title": "I can show I'm listening, react to a story and keep the other person talking without taking over.",
-  "es": "¿En serio? ¿Y entonces qué pasó? No me digas…",
-  "en": "Seriously? And then what happened? You don't say…",
+  "es": "¿En serio?",
+  "en": "Seriously?",
+  "forms": [
+   {
+    "es": "¿En serio?",
+    "en": "Seriously?"
+   },
+   {
+    "es": "¿Y entonces qué pasó?",
+    "en": "And then what happened?"
+   },
+   {
+    "es": "¡No me digas!",
+    "en": "You don't say!"
+   }
+  ],
   "requires": [
    "g:questions-prepositions"
   ],
@@ -3613,8 +3829,18 @@
   "band": "B1",
   "priority": 362,
   "title": "I can handle a phone call that has to get something done: ask for someone, take or leave a message, compare options and close properly.",
-  "es": "¿Aló? ¿Podría hablar con la doctora Ruiz? — En este momento no se encuentra. ¿Quiere dejarle un mensaje?",
-  "en": "Hello? Could I speak to Dr Ruiz? — She's not in right now. Would you like to leave a message?",
+  "es": "¿Aló? ¿Podría hablar con la doctora Ruiz?",
+  "en": "Hello? Could I speak to Dr Ruiz?",
+  "forms": [
+   {
+    "es": "¿Aló? ¿Podría hablar con la doctora Ruiz?",
+    "en": "Hello? Could I speak to Dr Ruiz?"
+   },
+   {
+    "es": "En este momento no se encuentra. ¿Quiere dejarle un mensaje?",
+    "en": "She's not in right now. Would you like to leave her a message?"
+   }
+  ],
   "requires": [
    "g:reported-requests"
   ],
@@ -3791,8 +4017,22 @@
   "band": "B1",
   "priority": 372,
   "title": "I can bring up news I've heard, say what I know or have no idea about, and react to news.",
-  "es": "¿Supiste que cerraron la panadería? — No tenía ni idea. Que yo sepa, seguía abierta.",
-  "en": "Did you hear they closed the bakery? — I had no idea. As far as I know, it was still open.",
+  "es": "¿Supiste que cerraron la panadería?",
+  "en": "Did you hear they closed the bakery?",
+  "forms": [
+   {
+    "es": "¿Supiste que cerraron la panadería?",
+    "en": "Did you hear they closed the bakery?"
+   },
+   {
+    "es": "No tenía ni idea.",
+    "en": "I had no idea."
+   },
+   {
+    "es": "Que yo sepa, seguía abierta.",
+    "en": "As far as I know, it was still open."
+   }
+  ],
   "requires": [
    "g:passive-se"
   ],
@@ -3846,8 +4086,26 @@
   "band": "B1",
   "priority": 382,
   "title": "I can explain a topic in writing with definitions, examples, classification and a clear layout.",
-  "es": "Se trata de… Hay tres tipos: el primero… Por ejemplo… Es como…",
-  "en": "It's about… There are three kinds: the first… For example… It's like…",
+  "es": "Se trata de un proceso sencillo.",
+  "en": "It's a simple process.",
+  "forms": [
+   {
+    "es": "Se trata de un proceso sencillo.",
+    "en": "It's a simple process."
+   },
+   {
+    "es": "Hay tres tipos de residuos: el primero es el orgánico.",
+    "en": "There are three kinds of waste: the first is organic waste."
+   },
+   {
+    "es": "Por ejemplo, el papel se puede reciclar.",
+    "en": "For example, paper can be recycled."
+   },
+   {
+    "es": "Es como darles una segunda vida a las cosas.",
+    "en": "It's like giving things a second life."
+   }
+  ],
   "requires": [
    "g:discourse-structure"
   ],
@@ -3875,7 +4133,7 @@
    "generos_discursivos:B1:962"
   ],
   "placement": "pcic",
-  "note": "",
+  "note": "Frame: Se trata de… Hay tres tipos: el primero… Por ejemplo… Es como…",
   "sources": [
    "gn-exponer-tema-b1",
    "fn-destacar-elemento-b1"
@@ -3918,8 +4176,26 @@
   "band": "B1",
   "priority": 382,
   "title": "I can give a short prepared talk: hook the audience, map the talk, develop it and close memorably.",
-  "es": "¿Sabían que…? Hoy les voy a hablar de… Primero… Para terminar…",
-  "en": "Did you know that…? Today I'm going to talk to you about… First… To finish…",
+  "es": "¿Sabían que el café llegó a Colombia hace casi trescientos años?",
+  "en": "Did you know that coffee arrived in Colombia almost three hundred years ago? (to an audience)",
+  "forms": [
+   {
+    "es": "¿Sabían que el café llegó a Colombia hace casi trescientos años?",
+    "en": "Did you know that coffee arrived in Colombia almost three hundred years ago? (to an audience)"
+   },
+   {
+    "es": "Hoy les voy a hablar del café colombiano.",
+    "en": "Today I'm going to talk to you about Colombian coffee."
+   },
+   {
+    "es": "Primero, les voy a contar un poco de historia.",
+    "en": "First, I'm going to tell you a bit of history."
+   },
+   {
+    "es": "Para terminar, quiero dejarles una pregunta.",
+    "en": "To finish, I want to leave you with a question."
+   }
+  ],
   "requires": [
    "g:discourse-structure"
   ],
@@ -3965,7 +4241,7 @@
    "generos_discursivos:C1:249"
   ],
   "placement": "pcic",
-  "note": "",
+  "note": "Frame: ¿Sabían que…? Hoy les voy a hablar de… Primero… Para terminar…",
   "sources": [
    "gn-presentacion-publica-b1",
    "gn-presentacion-publica-c1",
@@ -3978,8 +4254,22 @@
   "band": "B1",
   "priority": 382,
   "title": "I can make a point land harder: repeat, pile up, single something out.",
-  "es": "Caminamos horas y horas. Me gusta todo, sobre todo el mar. —¿Vienes? —¡Claro, claro!",
-  "en": "We walked for hours and hours. I like it all, above all the sea. —Coming? —Of course!",
+  "es": "Caminamos horas y horas.",
+  "en": "We walked for hours and hours.",
+  "forms": [
+   {
+    "es": "Caminamos horas y horas.",
+    "en": "We walked for hours and hours."
+   },
+   {
+    "es": "Me gusta todo, sobre todo el mar.",
+    "en": "I like everything, above all the sea."
+   },
+   {
+    "es": "¿Vienes?\n¡Claro, claro!",
+    "en": "Are you coming?\nOf course, of course!"
+   }
+  ],
   "requires": [
    "g:superlatives"
   ],
@@ -4019,8 +4309,22 @@
   "band": "B1",
   "priority": 382,
   "title": "I can join ideas with cause, result, concession and contrast, and signpost where my text is going.",
-  "es": "Como llovía, nos quedamos; sin embargo, al final salimos, así que…",
-  "en": "Since it was raining we stayed; however, in the end we went out, so…",
+  "es": "Como llovía, nos quedamos en casa; sin embargo, al final salimos.",
+  "en": "Since it was raining, we stayed at home; however, in the end we went out.",
+  "forms": [
+   {
+    "es": "Como llovía, nos quedamos en casa; sin embargo, al final salimos.",
+    "en": "Since it was raining, we stayed at home; however, in the end we went out."
+   },
+   {
+    "es": "Se nos hizo tarde, así que tomamos un taxi.",
+    "en": "It got late, so we took a taxi."
+   },
+   {
+    "es": "En primer lugar, hablaré de las causas.",
+    "en": "First of all, I'll talk about the causes."
+   }
+  ],
   "requires": [
    "g:discourse-structure"
   ],
@@ -4076,9 +4380,27 @@
   "kind": "cando",
   "band": "B1",
   "priority": 382,
-  "title": "I can write a 300–400-word composition with a title, an introduction, a development (with the counter-argument) and a conclusion.",
-  "es": "Título. Introducción: la pregunta. Desarrollo: razones y contraargumento. Conclusión.",
-  "en": "Title. Introduction: the question. Development: reasons and counter-argument. Conclusion.",
+  "title": "I can write a 300 to 400 word composition with a title, an introduction, a development (with the counter-argument) and a conclusion.",
+  "es": "En este texto voy a responder a una pregunta: ¿deberían prohibirse los carros en el centro de la ciudad?",
+  "en": "In this text I'm going to answer one question: should cars be banned from the city centre?",
+  "forms": [
+   {
+    "es": "En este texto voy a responder a una pregunta: ¿deberían prohibirse los carros en el centro de la ciudad?",
+    "en": "In this text I'm going to answer one question: should cars be banned from the city centre?"
+   },
+   {
+    "es": "La razón principal es que el aire está cada vez más contaminado.",
+    "en": "The main reason is that the air is more and more polluted."
+   },
+   {
+    "es": "Es cierto que muchas personas necesitan el carro para trabajar.",
+    "en": "It's true that many people need their car for work."
+   },
+   {
+    "es": "En conclusión, creo que los beneficios son mayores que los problemas.",
+    "en": "In conclusion, I think the benefits are greater than the problems."
+   }
+  ],
   "requires": [
    "g:discourse-structure",
    "g:referring-back"
@@ -4095,7 +4417,7 @@
    "generos_discursivos:B1:668"
   ],
   "placement": "pcic",
-  "note": "",
+  "note": "Frame: Título. Introducción: la pregunta. Desarrollo: razones y contraargumento. Conclusión.",
   "sources": [
    "task-b1-escribir",
    "gn-composicion-escrita-b1"
@@ -4170,8 +4492,26 @@
   "band": "B1",
   "priority": 402,
   "title": "I can congratulate, wish people well, propose a toast and reply to good wishes.",
-  "es": "¡Felicitaciones! Que cumplas muchos más. Brindo por los novios. — Igualmente.",
-  "en": "Congratulations! Many happy returns. A toast to the bride and groom. — Same to you.",
+  "es": "¡Felicitaciones!",
+  "en": "Congratulations!",
+  "forms": [
+   {
+    "es": "¡Felicitaciones!",
+    "en": "Congratulations!"
+   },
+   {
+    "es": "¡Que cumplas muchos más!",
+    "en": "Many happy returns!"
+   },
+   {
+    "es": "Brindo por los novios.",
+    "en": "A toast to the bride and groom."
+   },
+   {
+    "es": "¡Feliz Navidad!\nIgualmente.",
+    "en": "Happy Christmas!\nSame to you."
+   }
+  ],
   "requires": [
    "g:subj-wishes"
   ],
@@ -4256,8 +4596,30 @@
   "band": "B2",
   "priority": 408,
   "title": "I can say yes gladly, yes reluctantly, yes-but-only-if, or no with a reason or an alternative.",
-  "es": "Con mucho gusto. / Bueno, si no hay más remedio… / Sí, pero solo si… / Preferiría que…",
-  "en": "Gladly. / Well, if there's no other way… / Yes, but only if… / I'd rather…",
+  "es": "Con mucho gusto.",
+  "en": "With pleasure.",
+  "forms": [
+   {
+    "es": "Con mucho gusto.",
+    "en": "With pleasure."
+   },
+   {
+    "es": "Bueno, si no hay más remedio.",
+    "en": "Well, if there's no other way."
+   },
+   {
+    "es": "Sí, pero solo si me ayudas tú también.",
+    "en": "Yes, but only if you help me too."
+   },
+   {
+    "es": "Lo siento, no puedo porque tengo una reunión.",
+    "en": "Sorry, I can't because I have a meeting."
+   },
+   {
+    "es": "Preferiría que lo hiciéramos mañana.",
+    "en": "I'd rather we did it tomorrow."
+   }
+  ],
   "requires": [
    "g:imperfect-subj"
   ],
@@ -4286,9 +4648,23 @@
   "kind": "cando",
   "band": "B2",
   "priority": 408,
-  "title": "I can ask for help, favours and things — directly or by hinting — and offer my own help politely.",
-  "es": "¿Me echas una mano? / Necesito que alguien me revise esto. / Déjeme que la ayude.",
-  "en": "Can you give me a hand? / I need someone to check this. / Let me help you.",
+  "title": "I can ask for help, favours and things, directly or by hinting, and offer my own help politely.",
+  "es": "¿Me echas una mano?",
+  "en": "Can you give me a hand?",
+  "forms": [
+   {
+    "es": "¿Me echas una mano?",
+    "en": "Can you give me a hand?"
+   },
+   {
+    "es": "Necesito que alguien me revise esto.",
+    "en": "I need someone to check this for me."
+   },
+   {
+    "es": "Déjeme que la ayude.",
+    "en": "Let me help you. (formal, to a woman)"
+   }
+  ],
   "requires": [
    "g:subj-wanting",
    "g:imperfect-subj"
@@ -4320,8 +4696,26 @@
   "band": "B2",
   "priority": 408,
   "title": "I can greet someone warmly after a long time, address people with the right title, and welcome them.",
-  "es": "¡Qué milagro! ¡Cuánto tiempo! / Doña Rosa, la buscan. / ¡Qué bueno que hayas venido!",
-  "en": "Long time no see! / Doña Rosa, someone's asking for you. / So glad you came!",
+  "es": "¡Qué milagro!",
+  "en": "Well, look who it is!",
+  "forms": [
+   {
+    "es": "¡Qué milagro!",
+    "en": "Well, look who it is!"
+   },
+   {
+    "es": "¡Cuánto tiempo!",
+    "en": "Long time no see!"
+   },
+   {
+    "es": "Doña Rosa, la buscan.",
+    "en": "Doña Rosa, someone's asking for you."
+   },
+   {
+    "es": "¡Qué bueno que hayas venido!",
+    "en": "I'm so glad you came!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -4348,8 +4742,22 @@
   "band": "B2",
   "priority": 408,
   "title": "I can carry a longer phone call: get put through, ask a chain of questions in usted, and close it.",
-  "es": "¿Me comunica con la señora Gómez? … Una cosa más: ¿puedo pagar con tarjeta? … Muy amable, que tenga buen día.",
-  "en": "Could you put me through to Mrs Gómez? … One more thing: can I pay by card? … Very kind, have a good day.",
+  "es": "¿Me comunica con la señora Gómez?",
+  "en": "Could you put me through to Mrs Gómez?",
+  "forms": [
+   {
+    "es": "¿Me comunica con la señora Gómez?",
+    "en": "Could you put me through to Mrs Gómez?"
+   },
+   {
+    "es": "Una cosa más: ¿puedo pagar con tarjeta?",
+    "en": "One more thing: can I pay by card?"
+   },
+   {
+    "es": "Muy amable, que tenga buen día.",
+    "en": "Very kind of you, have a good day."
+   }
+  ],
   "requires": [
    "g:commands-usted"
   ],
@@ -4378,8 +4786,22 @@
   "band": "B2",
   "priority": 408,
   "title": "I can thank someone properly, wish them well for the occasion and pass on greetings.",
-  "es": "No sé cómo agradecértelo. / Le deseo lo mejor. / Dale saludos a tu mamá de mi parte.",
-  "en": "I don't know how to thank you. / I wish you all the best. / Say hi to your mom for me.",
+  "es": "No sé cómo agradecértelo.",
+  "en": "I don't know how to thank you.",
+  "forms": [
+   {
+    "es": "No sé cómo agradecértelo.",
+    "en": "I don't know how to thank you."
+   },
+   {
+    "es": "Le deseo lo mejor.",
+    "en": "I wish you all the best. (formal)"
+   },
+   {
+    "es": "Dale saludos a tu mamá de mi parte.",
+    "en": "Say hello to your mum for me."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -4435,8 +4857,22 @@
   "band": "B2",
   "priority": 410,
   "title": "I can cushion advice, criticism or bad news so it lands without offence.",
-  "es": "¿Puedo decirte una cosa? Yo diría que… Me temo que no va a ser posible.",
-  "en": "Can I tell you something? I'd say that… I'm afraid that won't be possible.",
+  "es": "¿Puedo decirte una cosa?",
+  "en": "Can I tell you something?",
+  "forms": [
+   {
+    "es": "¿Puedo decirte una cosa?",
+    "en": "Can I tell you something?"
+   },
+   {
+    "es": "Yo diría que el informe está un poco largo.",
+    "en": "I'd say the report is a bit long."
+   },
+   {
+    "es": "Me temo que no va a ser posible.",
+    "en": "I'm afraid that won't be possible."
+   }
+  ],
   "requires": [
    "g:softening"
   ],
@@ -4507,9 +4943,23 @@
   "kind": "cando",
   "band": "B2",
   "priority": 420,
-  "title": "I can express regret, sadness, hurt and disappointment about how things turned out — at the right strength.",
-  "es": "Es una lástima que no hubiéramos reservado. / Me dolió que no me invitaran. / Me decepcionó su actitud.",
-  "en": "It's a shame we hadn't booked. / It hurt that they didn't invite me. / Their attitude let me down.",
+  "title": "I can express regret, sadness, hurt and disappointment about how things turned out, at the right strength.",
+  "es": "Es una lástima que no hubiéramos reservado.",
+  "en": "It's a shame we hadn't booked.",
+  "forms": [
+   {
+    "es": "Es una lástima que no hubiéramos reservado.",
+    "en": "It's a shame we hadn't booked."
+   },
+   {
+    "es": "Me dolió que no me invitaran.",
+    "en": "It hurt that they didn't invite me."
+   },
+   {
+    "es": "Me decepcionó su actitud.",
+    "en": "I was disappointed by their attitude."
+   }
+  ],
   "requires": [
    "g:pluperfect-subj",
    "g:subj-past-triggers"
@@ -4541,8 +4991,22 @@
   "band": "B2",
   "priority": 420,
   "title": "I can express relief, hope and resignation.",
-  "es": "¡Menos mal que llegaste! / —¿Llegaremos a tiempo? —Eso espero. / Ni modo, otra vez será.",
-  "en": "Thank goodness you made it! / —Will we make it? —I hope so. / Oh well, next time.",
+  "es": "¡Menos mal que llegaste!",
+  "en": "Thank goodness you made it!",
+  "forms": [
+   {
+    "es": "¡Menos mal que llegaste!",
+    "en": "Thank goodness you made it!"
+   },
+   {
+    "es": "¿Llegaremos a tiempo?\nEso espero.",
+    "en": "Will we make it in time?\nI hope so."
+   },
+   {
+    "es": "Ni modo, otra vez será.",
+    "en": "Oh well, maybe next time."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -4569,9 +5033,23 @@
   "kind": "cando",
   "band": "B2",
   "priority": 420,
-  "title": "I can approve, disapprove and reproach someone for what they did — or didn't do.",
-  "es": "Me pareció muy bien que se lo dijeras. / No deberías haberle contestado así. / ¿A qué esperas para llamarla?",
-  "en": "I thought it was right that you told him. / You shouldn't have answered like that. / What are you waiting for?",
+  "title": "I can approve, disapprove and reproach someone for what they did or didn't do.",
+  "es": "Me pareció muy bien que se lo dijeras.",
+  "en": "I thought it was right that you told him.",
+  "forms": [
+   {
+    "es": "Me pareció muy bien que se lo dijeras.",
+    "en": "I thought it was right that you told him."
+   },
+   {
+    "es": "No deberías haberle contestado así.",
+    "en": "You shouldn't have answered her like that."
+   },
+   {
+    "es": "¿A qué esperas para llamarla?",
+    "en": "What are you waiting for? Call her."
+   }
+  ],
   "requires": [
    "g:conditional-perfect",
    "g:subj-past-triggers"
@@ -4600,9 +5078,23 @@
   "kind": "cando",
   "band": "B2",
   "priority": 420,
-  "title": "I can talk about wishes and plans — including the ones that never happened.",
-  "es": "Sueño con tener una finca. / Tenía pensado viajar, pero al final no pude. / ¿Te habría gustado estudiar otra cosa?",
-  "en": "I dream of having a farm. / I'd planned to travel, but in the end I couldn't. / Would you have liked to study something else?",
+  "title": "I can talk about wishes and plans, including the ones that never happened.",
+  "es": "Sueño con tener una finca.",
+  "en": "I dream of having a farm.",
+  "forms": [
+   {
+    "es": "Sueño con tener una finca.",
+    "en": "I dream of having a farm."
+   },
+   {
+    "es": "Tenía pensado viajar, pero al final no pude.",
+    "en": "I'd planned to travel, but in the end I couldn't."
+   },
+   {
+    "es": "¿Te habría gustado estudiar otra cosa?",
+    "en": "Would you have liked to study something else?"
+   }
+  ],
   "requires": [
    "g:conditional-perfect"
   ],
@@ -4677,8 +5169,30 @@
   "band": "B2",
   "priority": 430,
   "title": "I can agree and disagree anywhere on the scale, from a casual 'pues sí' to a formal 'no comparto en absoluto'.",
-  "es": "Pues sí. / En líneas generales estoy de acuerdo, pero… / Comparto su punto de vista. / No estoy en absoluto de acuerdo.",
-  "en": "Yeah, true. / Broadly I agree, but… / I share your view. / I don't agree at all.",
+  "es": "Pues sí.",
+  "en": "Yeah, true.",
+  "forms": [
+   {
+    "es": "Pues sí.",
+    "en": "Yeah, true."
+   },
+   {
+    "es": "En líneas generales estoy de acuerdo, pero hay un detalle que me preocupa.",
+    "en": "Broadly I agree, but there's one detail that worries me."
+   },
+   {
+    "es": "Comparto su punto de vista.",
+    "en": "I share your view. (formal)"
+   },
+   {
+    "es": "No estoy en absoluto de acuerdo.",
+    "en": "I don't agree at all."
+   },
+   {
+    "es": "No comparto en absoluto esa idea.",
+    "en": "I don't share that idea at all."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -4732,8 +5246,26 @@
   "band": "B2",
   "priority": 430,
   "title": "I can give, ask for and grade opinions and evaluations, from assertive to tentative.",
-  "es": "A mi modo de ver… / Yo diría que… / ¿Qué opinas de que hayan cerrado la biblioteca? / Lo veo difícil.",
-  "en": "The way I see it… / I'd say… / What do you think of them closing the library? / I don't see it happening.",
+  "es": "A mi modo de ver, es un error.",
+  "en": "The way I see it, it's a mistake.",
+  "forms": [
+   {
+    "es": "A mi modo de ver, es un error.",
+    "en": "The way I see it, it's a mistake."
+   },
+   {
+    "es": "Yo diría que tiene razón.",
+    "en": "I'd say she's right."
+   },
+   {
+    "es": "¿Qué opinas de que hayan cerrado la biblioteca?",
+    "en": "What do you think of them closing the library?"
+   },
+   {
+    "es": "Lo veo difícil.",
+    "en": "I don't see it happening."
+   }
+  ],
   "requires": [
    "g:subj-value"
   ],
@@ -4764,8 +5296,26 @@
   "band": "B2",
   "priority": 430,
   "title": "I can propose and suggest things gently, and put conditions on what I agree to.",
-  "es": "Habría que hablar con ella. / Estaría bien que saliéramos más. / ¿Y si fuéramos a la costa? / Sí, siempre y cuando…",
-  "en": "Someone ought to talk to her. / It'd be nice to go out more. / What if we went to the coast? / Yes, as long as…",
+  "es": "Habría que hablar con ella.",
+  "en": "Someone ought to talk to her.",
+  "forms": [
+   {
+    "es": "Habría que hablar con ella.",
+    "en": "Someone ought to talk to her."
+   },
+   {
+    "es": "Estaría bien que saliéramos más.",
+    "en": "It'd be nice if we went out more."
+   },
+   {
+    "es": "¿Y si fuéramos a la costa?",
+    "en": "What if we went to the coast?"
+   },
+   {
+    "es": "Sí, siempre y cuando me avises antes.",
+    "en": "Yes, as long as you let me know beforehand."
+   }
+  ],
   "requires": [
    "g:imperfect-subj",
    "g:subj-conditions"
@@ -4790,8 +5340,30 @@
   "band": "B2",
   "priority": 432,
   "title": "I can write a full argumentative text: thesis, cited evidence, the strongest objection answered, and a reservation.",
-  "es": "Voy a defender que… Un estudio de… muestra que… Se podría objetar que… Sin embargo… Dicho esto, habría que matizar…",
-  "en": "I will argue that… A study by… shows… One could object that… However… That said, it should be qualified…",
+  "es": "Voy a defender que el transporte público debería ser gratuito.",
+  "en": "I will argue that public transport should be free.",
+  "forms": [
+   {
+    "es": "Voy a defender que el transporte público debería ser gratuito.",
+    "en": "I will argue that public transport should be free."
+   },
+   {
+    "es": "Un estudio de la alcaldía muestra que el tráfico bajaría un veinte por ciento.",
+    "en": "A study by the mayor's office shows that traffic would fall by twenty per cent."
+   },
+   {
+    "es": "Se podría objetar que es demasiado caro.",
+    "en": "One could object that it's too expensive."
+   },
+   {
+    "es": "Sin embargo, el ahorro en salud compensaría ese gasto.",
+    "en": "However, the savings on health would make up for that cost."
+   },
+   {
+    "es": "Dicho esto, habría que matizar algunos puntos.",
+    "en": "That said, some points would need to be qualified."
+   }
+  ],
   "requires": [
    "g:argument-markers",
    "g:discourse-structure"
@@ -4809,7 +5381,7 @@
    "generos_discursivos:B2:1001"
   ],
   "placement": "pcic",
-  "note": "",
+  "note": "Frame: Voy a defender que… Un estudio de… muestra que… Se podría objetar que… Sin embargo… Dicho esto, habría que matizar…",
   "sources": [
    "task-b2-argumento",
    "gn-composicion-argumentativa-b2",
@@ -4822,8 +5394,18 @@
   "band": "B2",
   "priority": 432,
   "title": "I can concede a point and then push back, choosing how much ground I give.",
-  "es": "Puede que tengas razón, pero… / No dudo que sea útil; no obstante…",
-  "en": "You may be right, but… / I don't doubt it's useful; nevertheless…",
+  "es": "Puede que tengas razón, pero no es tan sencillo.",
+  "en": "You may be right, but it's not that simple.",
+  "forms": [
+   {
+    "es": "Puede que tengas razón, pero no es tan sencillo.",
+    "en": "You may be right, but it's not that simple."
+   },
+   {
+    "es": "No dudo que sea útil; no obstante, cuesta demasiado.",
+    "en": "I don't doubt it's useful; nevertheless, it costs too much."
+   }
+  ],
   "requires": [
    "g:argument-markers",
    "g:subj-concessive"
@@ -4871,8 +5453,26 @@
   "band": "B2",
   "priority": 440,
   "title": "I can check a claim, fish for confirmation without asking, confirm firmly, and question something I don't believe.",
-  "es": "¿Es verdad eso de que…? / Me contaron que te vas… / Pues claro que sí. / ¡¿De verdad que…?!",
-  "en": "Is it true that…? / I heard you're leaving… / Of course. / You really…?!",
+  "es": "¿Es verdad eso de que te vas a vivir a Medellín?",
+  "en": "Is it true that you're moving to Medellín?",
+  "forms": [
+   {
+    "es": "¿Es verdad eso de que te vas a vivir a Medellín?",
+    "en": "Is it true that you're moving to Medellín?"
+   },
+   {
+    "es": "Me contaron que te vas.",
+    "en": "I heard you're leaving."
+   },
+   {
+    "es": "Pues claro que sí.",
+    "en": "Well, of course."
+   },
+   {
+    "es": "¿¡De verdad que te ganaste la lotería!?",
+    "en": "You really won the lottery?!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -4901,8 +5501,18 @@
   "band": "B2",
   "priority": 440,
   "title": "I can guess about what has probably happened, with the verb carrying how sure I am.",
-  "es": "Se habrá quedado dormido. / Lo más probable es que ya se haya ido.",
-  "en": "He's probably overslept. / Most likely she's already left.",
+  "es": "Se habrá quedado dormido.",
+  "en": "He must have overslept.",
+  "forms": [
+   {
+    "es": "Se habrá quedado dormido.",
+    "en": "He must have overslept."
+   },
+   {
+    "es": "Lo más probable es que ya se haya ido.",
+    "en": "Most likely she's already left."
+   }
+  ],
   "requires": [
    "g:future-perfect",
    "g:conditional-past-guess"
@@ -4957,9 +5567,23 @@
   "kind": "cando",
   "band": "B2",
   "priority": 440,
-  "title": "I can say what I know, how I found out, and what I have no idea about — and ask others the same.",
-  "es": "Me enteré por un amigo. / ¿Estás al tanto de los cambios? / No tengo ni idea de dónde está.",
-  "en": "I found out from a friend. / Are you up to date on the changes? / I have no idea where it is.",
+  "title": "I can say what I know, how I found out, and what I have no idea about, and ask others the same.",
+  "es": "Me enteré por un amigo.",
+  "en": "I found out from a friend.",
+  "forms": [
+   {
+    "es": "Me enteré por un amigo.",
+    "en": "I found out from a friend."
+   },
+   {
+    "es": "¿Estás al tanto de los cambios?",
+    "en": "Are you up to date on the changes?"
+   },
+   {
+    "es": "No tengo ni idea de dónde está.",
+    "en": "I have no idea where it is."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -4986,9 +5610,19 @@
   "kind": "cando",
   "band": "B2",
   "priority": 442,
-  "title": "I can follow a news story, summarise it in my own words, and comment on it — including what is only alleged.",
-  "es": "Según fuentes de la Fiscalía, el concejal habría recibido dinero. Cabe destacar que…",
-  "en": "According to sources in the Prosecutor's Office, the councillor allegedly received money. It's worth noting…",
+  "title": "I can follow a news story, summarise it in my own words, and comment on it, including what is only alleged.",
+  "es": "Según fuentes de la Fiscalía, el concejal habría recibido dinero.",
+  "en": "According to sources in the Prosecutor's Office, the councillor allegedly received money.",
+  "forms": [
+   {
+    "es": "Según fuentes de la Fiscalía, el concejal habría recibido dinero.",
+    "en": "According to sources in the Prosecutor's Office, the councillor allegedly received money."
+   },
+   {
+    "es": "Cabe destacar que el concejal niega las acusaciones.",
+    "en": "It's worth noting that the councillor denies the accusations."
+   }
+  ],
   "requires": [
    "g:conditional-rumour",
    "g:impersonal-register"
@@ -5050,9 +5684,27 @@
   "kind": "cando",
   "band": "B2",
   "priority": 450,
-  "title": "I can say I remember, half-remember, haven't forgotten, or don't recall — and gently dispute someone's version.",
-  "es": "Me acuerdo perfectamente. / Me suena. / No recuerdo que dijera eso.",
-  "en": "I remember perfectly. / It rings a bell. / I don't recall her saying that.",
+  "title": "I can say I remember, half-remember, haven't forgotten, or don't recall, and gently dispute someone's version.",
+  "es": "Me acuerdo perfectamente.",
+  "en": "I remember perfectly.",
+  "forms": [
+   {
+    "es": "Me acuerdo perfectamente.",
+    "en": "I remember perfectly."
+   },
+   {
+    "es": "Me suena.",
+    "en": "It rings a bell."
+   },
+   {
+    "es": "No se me ha olvidado.",
+    "en": "I haven't forgotten."
+   },
+   {
+    "es": "No recuerdo que dijera eso.",
+    "en": "I don't recall her saying that."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -5083,8 +5735,26 @@
   "band": "B2",
   "priority": 450,
   "title": "I can report what people said directly, indirectly and covertly, and choose a reporting verb that shows my stance.",
-  "es": "Dijo que vendría al día siguiente. / —¿Qué dijo? —Que no. / Reconoció que… / Parece que ya terminaron, según dicen.",
-  "en": "He said he'd come the next day. / —What did she say? —No. / He admitted… / Apparently they've finished.",
+  "es": "Dijo que vendría al día siguiente.",
+  "en": "He said he'd come the next day.",
+  "forms": [
+   {
+    "es": "Dijo que vendría al día siguiente.",
+    "en": "He said he'd come the next day."
+   },
+   {
+    "es": "¿Qué dijo?\nQue no.",
+    "en": "What did she say?\nShe said no."
+   },
+   {
+    "es": "Reconoció que se había equivocado.",
+    "en": "He admitted he'd made a mistake."
+   },
+   {
+    "es": "Parece que ya terminaron, según dicen.",
+    "en": "Apparently they've already finished, so they say."
+   }
+  ],
   "requires": [
    "g:reported-speech-full",
    "g:reporting-verbs-mood"
@@ -5110,8 +5780,26 @@
   "band": "B2",
   "priority": 450,
   "title": "I can change topic, interrupt politely, hold the floor, and bring a meeting back on track.",
-  "es": "Por cierto… / Perdone que lo interrumpa, pero… / Déjame terminar. / Como decía…",
-  "en": "By the way… / Sorry to interrupt, but… / Let me finish. / As I was saying…",
+  "es": "Por cierto, ¿viste el partido?",
+  "en": "By the way, did you see the match?",
+  "forms": [
+   {
+    "es": "Por cierto, ¿viste el partido?",
+    "en": "By the way, did you see the match?"
+   },
+   {
+    "es": "Perdone que lo interrumpa, pero ya es hora de votar.",
+    "en": "Sorry to interrupt you, but it's time to vote. (formal)"
+   },
+   {
+    "es": "Déjame terminar.",
+    "en": "Let me finish."
+   },
+   {
+    "es": "Como decía, el presupuesto no alcanza.",
+    "en": "As I was saying, the budget isn't enough."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -5159,8 +5847,26 @@
   "band": "B2",
   "priority": 460,
   "title": "I can turn the volume up or down: intensify, insist, deny flatly, or deny cautiously.",
-  "es": "Es superbueno. / Te juro que… / ¡Que no, te digo! / No, que yo sepa.",
-  "en": "It's really good. / I swear… / No, I said! / Not as far as I know.",
+  "es": "Es superbueno.",
+  "en": "It's really good.",
+  "forms": [
+   {
+    "es": "Es superbueno.",
+    "en": "It's really good."
+   },
+   {
+    "es": "Te juro que no fui yo.",
+    "en": "I swear it wasn't me."
+   },
+   {
+    "es": "¡Que no, te digo!",
+    "en": "I'm telling you, no!"
+   },
+   {
+    "es": "No, que yo sepa.",
+    "en": "Not as far as I know."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -5188,9 +5894,23 @@
   "kind": "cando",
   "band": "B2",
   "priority": 460,
-  "title": "I can move the emphasis in a sentence — clefts, fronting, lo de, focus words — so my point lands where I want it.",
-  "es": "Lo que pasa es que… / Lo de la financiación es un lío. / Precisamente por eso…",
-  "en": "The thing is… / The funding business is a mess. / That's exactly why…",
+  "title": "I can move the emphasis in a sentence (clefts, fronting, lo de, focus words) so my point lands where I want it.",
+  "es": "Lo que pasa es que no tengo tiempo.",
+  "en": "The thing is, I don't have time.",
+  "forms": [
+   {
+    "es": "Lo que pasa es que no tengo tiempo.",
+    "en": "The thing is, I don't have time."
+   },
+   {
+    "es": "Lo de la financiación es un lío.",
+    "en": "The funding business is a mess."
+   },
+   {
+    "es": "Precisamente por eso no vine.",
+    "en": "That's exactly why I didn't come."
+   }
+  ],
   "requires": [
    "g:cleft-focus",
    "g:topic-fronting"
@@ -5223,8 +5943,26 @@
   "band": "B2",
   "priority": 460,
   "title": "I can write a story in five stages, with a description and some reported speech folded in.",
-  "es": "De niña siempre íbamos a la playa… De repente… Llamamos al salvavidas… Al final, todo fue un susto.",
-  "en": "As a girl we always went to the beach… Suddenly… We called the lifeguard… In the end it was just a scare.",
+  "es": "De niña siempre íbamos a la playa en diciembre.",
+  "en": "When I was a girl we always went to the beach in December.",
+  "forms": [
+   {
+    "es": "De niña siempre íbamos a la playa en diciembre.",
+    "en": "When I was a girl we always went to the beach in December."
+   },
+   {
+    "es": "De repente, mi hermano desapareció entre las olas.",
+    "en": "Suddenly, my brother disappeared among the waves."
+   },
+   {
+    "es": "Llamamos al salvavidas, que lo sacó del agua.",
+    "en": "We called the lifeguard, who pulled him out of the water."
+   },
+   {
+    "es": "Al final, todo fue un susto.",
+    "en": "In the end, it was just a scare."
+   }
+  ],
   "requires": [
    "g:narrative-pasts",
    "g:reported-speech-full"
@@ -5249,8 +5987,22 @@
   "band": "B2",
   "priority": 460,
   "title": "I can express joy, excitement, pride, admiration and surprise precisely, not just loudly.",
-  "es": "Me emociona que vengas. / Estoy orgullosa de ti. / Me extraña que no haya llamado.",
-  "en": "I'm thrilled you're coming. / I'm proud of you. / It's odd she hasn't called.",
+  "es": "Me emociona que vengas.",
+  "en": "I'm thrilled you're coming.",
+  "forms": [
+   {
+    "es": "Me emociona que vengas.",
+    "en": "I'm thrilled you're coming."
+   },
+   {
+    "es": "Estoy orgullosa de ti.",
+    "en": "I'm proud of you. (said by a woman)"
+   },
+   {
+    "es": "Me extraña que no haya llamado.",
+    "en": "It's odd she hasn't called."
+   }
+  ],
   "requires": [
    "g:subj-emotion"
   ],
@@ -5282,8 +6034,22 @@
   "band": "B2",
   "priority": 460,
   "title": "I can talk about what fascinates, bores or disgusts me and which of two things I'd rather have happen.",
-  "es": "Me apasiona que toquen en vivo. / ¡Qué pereza! / Prefiero que me digan la verdad a que me mientan.",
-  "en": "I love it when they play live. / Ugh, can't be bothered. / I'd rather they told me the truth than lied.",
+  "es": "Me apasiona que toquen en vivo.",
+  "en": "I love it when they play live.",
+  "forms": [
+   {
+    "es": "Me apasiona que toquen en vivo.",
+    "en": "I love it when they play live."
+   },
+   {
+    "es": "¡Qué pereza!",
+    "en": "Ugh, I can't be bothered!"
+   },
+   {
+    "es": "Prefiero que me digan la verdad a que me mientan.",
+    "en": "I prefer people to tell me the truth rather than lie to me."
+   }
+  ],
   "requires": [
    "g:subj-emotion"
   ],
@@ -5315,8 +6081,26 @@
   "band": "B2",
   "priority": 460,
   "title": "I can open a story, keep a listener hooked, react as a listener, and wrap it up.",
-  "es": "¿Sabes qué? Te cuento… / —¿Que te compraste qué? / Ya me imagino. / Total que…",
-  "en": "Guess what? Let me tell you… / You bought WHAT? / I can imagine. / So anyway…",
+  "es": "¿Sabes qué? Te cuento lo que me pasó ayer.",
+  "en": "Guess what? Let me tell you what happened to me yesterday.",
+  "forms": [
+   {
+    "es": "¿Sabes qué? Te cuento lo que me pasó ayer.",
+    "en": "Guess what? Let me tell you what happened to me yesterday."
+   },
+   {
+    "es": "¿¡Que te compraste qué!?",
+    "en": "You bought what?!"
+   },
+   {
+    "es": "Ya me imagino.",
+    "en": "I can imagine."
+   },
+   {
+    "es": "Total, que al final no fuimos.",
+    "en": "So anyway, in the end we didn't go."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -5363,9 +6147,19 @@
   "kind": "cando",
   "band": "B2",
   "priority": 470,
-  "title": "I can describe a person, an object or a place precisely — what it is, its parts, and how it compares.",
-  "es": "Se trata de una casa de dos pisos que se compone de… A diferencia de la mía, es muy luminosa.",
-  "en": "It's a two-storey house made up of… Unlike mine, it's very bright.",
+  "title": "I can describe a person, an object or a place precisely: what it is, its parts, and how it compares.",
+  "es": "Se trata de una casa de dos pisos que se compone de cocina, sala y tres cuartos.",
+  "en": "It's a two-storey house made up of a kitchen, a living room and three bedrooms.",
+  "forms": [
+   {
+    "es": "Se trata de una casa de dos pisos que se compone de cocina, sala y tres cuartos.",
+    "en": "It's a two-storey house made up of a kitchen, a living room and three bedrooms."
+   },
+   {
+    "es": "A diferencia de la mía, es muy luminosa.",
+    "en": "Unlike mine, it's very bright."
+   }
+  ],
   "requires": [
    "g:relatives-formal",
    "g:participle-gerund-clauses"
@@ -5426,8 +6220,22 @@
   "band": "B2",
   "priority": 470,
   "title": "I can present a topic to an audience: open it, develop it by parts, point to the slides, and conclude.",
-  "es": "Muchos de ustedes seguramente conocerán… Como pueden ver en la pantalla… En definitiva…",
-  "en": "Many of you will probably know… As you can see on the screen… In short…",
+  "es": "Muchos de ustedes seguramente conocerán el problema del agua en la ciudad.",
+  "en": "Many of you will probably know about the water problem in the city.",
+  "forms": [
+   {
+    "es": "Muchos de ustedes seguramente conocerán el problema del agua en la ciudad.",
+    "en": "Many of you will probably know about the water problem in the city."
+   },
+   {
+    "es": "Como pueden ver en la pantalla, el consumo subió.",
+    "en": "As you can see on the screen, consumption went up."
+   },
+   {
+    "es": "En definitiva, tenemos que ahorrar más.",
+    "en": "In short, we need to save more."
+   }
+  ],
   "requires": [
    "g:discourse-structure"
   ],
@@ -5456,14 +6264,32 @@
   "band": "B2",
   "priority": 470,
   "title": "I can say exactly what a job or process involves, what it depends on and what it needs.",
-  "es": "Consiste en…, depende de…, cuenta con…",
-  "en": "",
+  "es": "Mi trabajo consiste en atender a los clientes.",
+  "en": "My job consists of dealing with customers.",
+  "forms": [
+   {
+    "es": "Mi trabajo consiste en atender a los clientes.",
+    "en": "My job consists of dealing with customers."
+   },
+   {
+    "es": "Todo depende del clima.",
+    "en": "It all depends on the weather."
+   },
+   {
+    "es": "El proyecto cuenta con el apoyo de la alcaldía.",
+    "en": "The project has the support of the mayor's office."
+   },
+   {
+    "es": "Para este trabajo se necesita mucha paciencia.",
+    "en": "For this job you need a lot of patience."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
   "pcic": [],
   "placement": "pcic",
-  "note": "",
+  "note": "Frame: Consiste en…, depende de…, cuenta con…",
   "sources": [
    "gr-complemento-preposicional-regido-b2"
   ]
@@ -5492,8 +6318,30 @@
   "band": "B2",
   "priority": 478,
   "title": "I can write a job application, a complaint that gets results, and a formal request.",
-  "es": "Estimada señora Rodríguez: Me dirijo a usted para… Por todo lo anterior, solicito… Quedo atenta a su respuesta. Cordialmente,",
-  "en": "Dear Mrs Rodríguez: I am writing to… For all these reasons I request… I look forward to your reply. Regards,",
+  "es": "Estimada señora Rodríguez:",
+  "en": "Dear Mrs Rodríguez,",
+  "forms": [
+   {
+    "es": "Estimada señora Rodríguez:",
+    "en": "Dear Mrs Rodríguez,"
+   },
+   {
+    "es": "Me dirijo a usted para solicitar el puesto de recepcionista.",
+    "en": "I am writing to you to apply for the receptionist post."
+   },
+   {
+    "es": "Por todo lo anterior, solicito el reembolso del dinero.",
+    "en": "For all these reasons, I request a refund of the money."
+   },
+   {
+    "es": "Quedo atenta a su respuesta.",
+    "en": "I look forward to your reply. (said by a woman)"
+   },
+   {
+    "es": "Cordialmente,",
+    "en": "Kind regards,"
+   }
+  ],
   "requires": [
    "g:formal-letter-grammar"
   ],
@@ -5578,8 +6426,22 @@
   "band": "B2",
   "priority": 478,
   "title": "I can write a letter to the editor and a short report weighing the pros and cons of an option.",
-  "es": "Me dirijo a ustedes en relación con el artículo publicado el… Entre las ventajas destaca…",
-  "en": "I am writing regarding the article published on… Among the advantages…",
+  "es": "Me dirijo a ustedes en relación con el artículo publicado el pasado lunes.",
+  "en": "I am writing to you regarding the article published last Monday.",
+  "forms": [
+   {
+    "es": "Me dirijo a ustedes en relación con el artículo publicado el pasado lunes.",
+    "en": "I am writing to you regarding the article published last Monday."
+   },
+   {
+    "es": "Entre las ventajas destaca el bajo costo.",
+    "en": "Among the advantages, the low cost stands out."
+   },
+   {
+    "es": "El principal inconveniente es el tiempo de espera.",
+    "en": "The main drawback is the waiting time."
+   }
+  ],
   "requires": [
    "g:formal-letter-grammar",
    "g:argument-markers"
@@ -5620,9 +6482,27 @@
   "kind": "cando",
   "band": "B2",
   "priority": 490,
-  "title": "I can advise, warn and — if it comes to it — threaten.",
-  "es": "Lo mejor sería que fueras al médico. / ¡Ojo con…! / Te advierto que… / Si no lo terminas, …",
-  "en": "It'd be best if you saw a doctor. / Watch out for…! / I'm warning you… / If you don't finish it, …",
+  "title": "I can advise, warn and, if it comes to it, threaten.",
+  "es": "Lo mejor sería que fueras al médico.",
+  "en": "It'd be best if you went to the doctor.",
+  "forms": [
+   {
+    "es": "Lo mejor sería que fueras al médico.",
+    "en": "It'd be best if you went to the doctor."
+   },
+   {
+    "es": "¡Ojo con el perro!",
+    "en": "Watch out for the dog!"
+   },
+   {
+    "es": "Te advierto que no lo voy a repetir.",
+    "en": "I'm warning you, I'm not going to say it again."
+   },
+   {
+    "es": "Si no lo terminas, no sales.",
+    "en": "If you don't finish it, you're not going out."
+   }
+  ],
   "requires": [
    "g:imperfect-subj",
    "g:si-present"
@@ -5653,8 +6533,26 @@
   "band": "B2",
   "priority": 490,
   "title": "I can express annoyance, exasperation, nerves and outrage at the right pitch.",
-  "es": "Me da rabia que… / Me indigna que… / Estoy harta de que… / ¡Ya basta!",
-  "en": "It annoys me that… / It outrages me that… / I'm fed up with… / Enough!",
+  "es": "Me da rabia que siempre llegue tarde.",
+  "en": "It makes me angry that he's always late.",
+  "forms": [
+   {
+    "es": "Me da rabia que siempre llegue tarde.",
+    "en": "It makes me angry that he's always late."
+   },
+   {
+    "es": "Me indigna que nadie haga nada.",
+    "en": "It outrages me that nobody does anything."
+   },
+   {
+    "es": "Estoy harta de que me interrumpan.",
+    "en": "I'm fed up with being interrupted. (said by a woman)"
+   },
+   {
+    "es": "¡Ya basta!",
+    "en": "That's enough!"
+   }
+  ],
   "requires": [
    "g:subj-emotion"
   ],
@@ -5671,7 +6569,7 @@
    "funciones:B2:805"
   ],
   "placement": "pcic",
-  "note": "",
+  "note": "Frame: Me da rabia que… / Me indigna que… / Estoy harta de que… / ¡Ya basta!",
   "sources": [
    "fn-expresar-hartazgo-b2",
    "fn-expresar-nerviosismo-b2",
@@ -5684,8 +6582,22 @@
   "band": "B2",
   "priority": 490,
   "title": "I can console, reassure and encourage someone, and show I'm on their side.",
-  "es": "Te entiendo perfectamente. / Ya pasó. / No tengas miedo de equivocarte.",
-  "en": "I completely understand. / It's over now. / Don't be afraid of getting it wrong.",
+  "es": "Te entiendo perfectamente.",
+  "en": "I understand you completely.",
+  "forms": [
+   {
+    "es": "Te entiendo perfectamente.",
+    "en": "I understand you completely."
+   },
+   {
+    "es": "Ya pasó.",
+    "en": "It's over now."
+   },
+   {
+    "es": "No tengas miedo de equivocarte.",
+    "en": "Don't be afraid of getting it wrong."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -5713,8 +6625,22 @@
   "band": "B2",
   "priority": 490,
   "title": "I can express worry, fear and embarrassment, from mild to extreme.",
-  "es": "Me preocupa que… / Me da pánico que… / Me da vergüenza pedirle otra vez.",
-  "en": "It worries me that… / I'm terrified that… / I'm embarrassed to ask him again.",
+  "es": "Me preocupa que no tengamos suficiente plata.",
+  "en": "It worries me that we don't have enough money.",
+  "forms": [
+   {
+    "es": "Me preocupa que no tengamos suficiente plata.",
+    "en": "It worries me that we don't have enough money."
+   },
+   {
+    "es": "Me da pánico que me pregunten en clase.",
+    "en": "I'm terrified they'll ask me in class."
+   },
+   {
+    "es": "Me da vergüenza pedirle otra vez.",
+    "en": "I'm embarrassed to ask him again."
+   }
+  ],
   "requires": [
    "g:subj-emotion"
   ],
@@ -5743,14 +6669,36 @@
   "band": "B2",
   "priority": 490,
   "title": "I can set conditions and limits and hold my position, politely, whatever happens.",
-  "es": "Mientras…, hasta que no…, pase lo que pase…, estoy dispuesto a…, ni aunque…",
-  "en": "",
+  "es": "Mientras no me paguen, no voy a seguir trabajando.",
+  "en": "As long as they don't pay me, I'm not going to keep working.",
+  "forms": [
+   {
+    "es": "Mientras no me paguen, no voy a seguir trabajando.",
+    "en": "As long as they don't pay me, I'm not going to keep working."
+   },
+   {
+    "es": "Hasta que no me lo pidas bien, no te lo doy.",
+    "en": "Until you ask me nicely, I'm not giving it to you."
+   },
+   {
+    "es": "Pase lo que pase, voy a terminar la carrera.",
+    "en": "Whatever happens, I'm going to finish my degree."
+   },
+   {
+    "es": "Estoy dispuesto a negociar el precio, pero no la fecha.",
+    "en": "I'm willing to negotiate the price, but not the date."
+   },
+   {
+    "es": "Ni aunque me lo pidas de rodillas.",
+    "en": "Not even if you beg me on your knees."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
   "pcic": [],
   "placement": "pcic",
-  "note": "",
+  "note": "Frame: Mientras…, hasta que no…, pase lo que pase…, estoy dispuesto a…, ni aunque…",
   "sources": [
    "gr-sub-adv-concesivas-c1"
   ]
@@ -5761,8 +6709,26 @@
   "band": "B2",
   "priority": 492,
   "title": "I can handle a conversation where we want different things: soften, concede, hold my ground and agree an outcome.",
-  "es": "Lamento lo del otro día… No es que no quiera, es que… Puede que tengas razón, pero… ¿Y si lo dejamos así?",
-  "en": "I'm sorry about the other day… It's not that I don't want to, it's that… You may be right, but… What if we leave it like this?",
+  "es": "Lamento lo del otro día.",
+  "en": "I'm sorry about the other day.",
+  "forms": [
+   {
+    "es": "Lamento lo del otro día.",
+    "en": "I'm sorry about the other day."
+   },
+   {
+    "es": "No es que no quiera, es que no tengo tiempo.",
+    "en": "It's not that I don't want to, it's that I don't have time."
+   },
+   {
+    "es": "Puede que tengas razón, pero yo también tengo mis motivos.",
+    "en": "You may be right, but I have my reasons too."
+   },
+   {
+    "es": "¿Y si lo dejamos así?",
+    "en": "What if we leave it at that?"
+   }
+  ],
   "requires": [
    "g:subj-free-relatives",
    "g:que-wishes-commands"
@@ -5801,8 +6767,26 @@
   "band": "B2",
   "priority": 500,
   "title": "I can recognise everyday Spain-Spanish reactions in what I read and know the Latin American equivalent.",
-  "es": "vale = listo / qué rollo = qué pereza / echar de menos = extrañar / ¡anda! = ¡uy!",
-  "en": "Spain's everyday words mapped to ours.",
+  "es": "¡Vale!",
+  "en": "OK! (Spain, for «listo»)",
+  "forms": [
+   {
+    "es": "¡Vale!",
+    "en": "OK! (Spain, for «listo»)"
+   },
+   {
+    "es": "¡Qué rollo!",
+    "en": "What a drag! (Spain, for «qué pereza»)"
+   },
+   {
+    "es": "Te echo de menos.",
+    "en": "I miss you. (Spain, for «te extraño»)"
+   },
+   {
+    "es": "¡Anda!",
+    "en": "Oh, wow! (Spain, for «¡uy!»)"
+   }
+  ],
   "requires": [
    "g:vosotros-recognition"
   ],
@@ -5819,7 +6803,7 @@
    "funciones:B2:910"
   ],
   "placement": "pcic",
-  "note": "Recognition only; the B2 lessons were written in Peninsular Spanish and these are the items converted elsewhere.",
+  "note": "Recognition only; the B2 lessons were written in Peninsular Spanish and these are the items converted elsewhere. Frame: vale = listo / qué rollo = qué pereza / echar de menos = extrañar / ¡anda! = ¡uy!",
   "sources": [
    "fn-aburrimiento-b2",
    "fn-afecto-b2",
@@ -5850,9 +6834,9 @@
   "kind": "cando",
   "band": "C1",
   "priority": 505,
-  "title": "I can tell a life story with precise time markers and vivid turns: back in the day, it broke out, I ended up…",
+  "title": "I can tell a life story with precise time markers and vivid turns, like 'back in the day', 'it broke out' and 'I ended up'.",
   "es": "",
-  "en": "I can tell a life story with precise time markers and vivid turns: back in the day, it broke out, I ended up…",
+  "en": "I can tell a life story with precise time markers and vivid turns, like 'back in the day', 'it broke out' and 'I ended up'.",
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -6129,7 +7113,7 @@
   "kind": "cando",
   "band": "C1",
   "priority": 515,
-  "title": "I can say exactly how sure I am — from proven fact to hunch — and what I do and don't know.",
+  "title": "I can say exactly how sure I am, from proven fact to hunch, and what I do and don't know.",
   "es": "",
   "en": "",
   "requires": [],
@@ -6265,9 +7249,9 @@
   "kind": "cando",
   "band": "C1",
   "priority": 525,
-  "title": "I can use colourful exaggeration and ironic idioms — and catch them when others use them on me.",
+  "title": "I can use colourful exaggeration and ironic idioms, and catch them when others use them on me.",
   "es": "",
-  "en": "I can use colourful exaggeration and ironic idioms — and catch them when others use them on me.",
+  "en": "I can use colourful exaggeration and ironic idioms, and catch them when others use them on me.",
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -6329,8 +7313,30 @@
   "band": "C1",
   "priority": 525,
   "title": "I can react to people and news the way Colombians do: exclamations, ironic imperatives and understatement.",
-  "es": "¡Mira que…!, ¡la cara que puso!, tiene su truco, ¿cómo así?, ¡dale!",
-  "en": "",
+  "es": "¡Mira que te lo dije!",
+  "en": "I did tell you!",
+  "forms": [
+   {
+    "es": "¡Mira que te lo dije!",
+    "en": "I did tell you!"
+   },
+   {
+    "es": "¡La cara que puso!",
+    "en": "You should have seen the face he made!"
+   },
+   {
+    "es": "Tiene su truco.",
+    "en": "There's a knack to it."
+   },
+   {
+    "es": "¿Cómo así?",
+    "en": "What do you mean?"
+   },
+   {
+    "es": "¡Dale!",
+    "en": "OK, go for it!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -6347,7 +7353,7 @@
   "kind": "cando",
   "band": "C1",
   "priority": 525,
-  "title": "I can say something with real force — or with pointed understatement — and judge people in a single image.",
+  "title": "I can say something with real force, or with pointed understatement, and judge people in a single image.",
   "es": "",
   "en": "",
   "requires": [],
@@ -6383,7 +7389,7 @@
   "kind": "cando",
   "band": "C1",
   "priority": 525,
-  "title": "I can deny, refuse or contradict without a plain 'no' — from a softened 'no digo que…' to '¡ni loco!'.",
+  "title": "I can deny, refuse or contradict without a plain 'no', from a softened 'no digo que' to '¡ni loco!'.",
   "es": "",
   "en": "",
   "requires": [],
@@ -6794,9 +7800,9 @@
   "kind": "cando",
   "band": "C1",
   "priority": 545,
-  "title": "I can describe how things rise, fall and change — gradually, suddenly or completely.",
+  "title": "I can describe how things rise, fall and change: gradually, suddenly or completely.",
   "es": "",
-  "en": "I can describe how things rise, fall and change — gradually, suddenly or completely.",
+  "en": "I can describe how things rise, fall and change: gradually, suddenly or completely.",
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -7298,9 +8304,9 @@
   "kind": "cando",
   "band": "C1",
   "priority": 570,
-  "title": "I can describe how things feel, sit, move and where they are — texture, temperature, position, distance.",
+  "title": "I can describe how things feel, sit, move and where they are: texture, temperature, position, distance.",
   "es": "",
-  "en": "I can describe how things feel, sit, move and where they are — texture, temperature, position, distance.",
+  "en": "I can describe how things feel, sit, move and where they are: texture, temperature, position, distance.",
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -7736,7 +8742,7 @@
   "kind": "cando",
   "band": "C1",
   "priority": 585,
-  "title": "I can judge something publicly — approve it, find it in poor taste, or condemn it.",
+  "title": "I can judge something publicly: approve it, find it in poor taste, or condemn it.",
   "es": "",
   "en": "",
   "requires": [],
@@ -7768,9 +8774,9 @@
   "kind": "cando",
   "band": "C1",
   "priority": 585,
-  "title": "I can rate a work or a place on a fine scale in a review — from 'leaves a lot to be desired' to 'one of a kind'.",
+  "title": "I can rate a work or a place on a fine scale in a review, from 'leaves a lot to be desired' to 'one of a kind'.",
   "es": "",
-  "en": "I can rate a work or a place on a fine scale in a review — from 'leaves a lot to be desired' to 'one of a kind'.",
+  "en": "I can rate a work or a place on a fine scale in a review, from 'leaves a lot to be desired' to 'one of a kind'.",
   "requires": [],
   "contrasts": [],
   "serves": [],

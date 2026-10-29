@@ -24,7 +24,27 @@
       }
     ],
     "model": "Buenos días, don Hernando. Me llamo Ana y soy de Toronto. Vivo en el centro, en La Candelaria. Trabajo en una empresa de software.",
-    "focus": "g:present-er-ir"
+    "focus": "g:present-er-ir",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:me-llamo",
+      "c:soy-de",
+      "c:trabajo-en",
+      "c:vivo-en",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "l:bueno",
+      "l:centro",
+      "l:día",
+      "l:empresa",
+      "l:llamarse",
+      "l:ser",
+      "l:trabajar",
+      "l:vivir"
+    ]
   },
   {
     "id": "w-u02-02",
@@ -51,7 +71,23 @@
       }
     ],
     "model": "Llego a la oficina a las ocho. Leo el correo con un tinto. A las diez escribo un reporte y hablo con el jefe. Como con los compañeros a la una y termino a las cinco.",
-    "focus": "g:present-er-ir"
+    "focus": "g:present-er-ir",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:compañero",
+      "l:correo",
+      "l:escribir",
+      "l:hablar",
+      "l:jefe",
+      "l:leer",
+      "l:llegar",
+      "l:oficina",
+      "l:reporte",
+      "l:terminar",
+      "l:tinto"
+    ]
   },
   {
     "id": "w-u02-03",
@@ -82,7 +118,22 @@
       }
     ],
     "model": "Vale vive en Chapinero. Llega al café a las cinco y media y hace el pan. Come a la una con Simón. A las dos lee el horario y escribe los números.",
-    "focus": "g:present-er-ir"
+    "focus": "g:present-er-ir",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:café",
+      "l:comer",
+      "l:escribir",
+      "l:hacer",
+      "l:horario",
+      "l:leer",
+      "l:llegar",
+      "l:número",
+      "l:pan",
+      "l:vivir"
+    ]
   },
   {
     "id": "w-u02-04",
@@ -105,7 +156,22 @@
       }
     ],
     "model": "Un compañero y yo vivimos en el centro. Llegamos a la oficina a las nueve. Escribimos correos en inglés y comemos pan a las once.",
-    "focus": "g:present-er-ir"
+    "focus": "g:present-er-ir",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:centro",
+      "l:comer",
+      "l:compañero",
+      "l:correo",
+      "l:escribir",
+      "l:inglés",
+      "l:llegar",
+      "l:oficina",
+      "l:pan",
+      "l:vivir"
+    ]
   },
   {
     "id": "w-u02-05",
@@ -130,7 +196,18 @@
       }
     ],
     "model": "Hola, Vale. Estoy en el banco con el señor Ruiz. Estoy bien, pero nervioso.",
-    "focus": "g:estar-location-states"
+    "focus": "g:estar-location-states",
+    "requires": [
+      "c:bien-y-tu",
+      "c:hola-buenos-dias",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:banco",
+      "l:bien",
+      "l:estar",
+      "l:nervioso",
+      "l:señor"
+    ]
   },
   {
     "id": "w-u02-06",
@@ -161,7 +238,19 @@
       }
     ],
     "model": "El banco está en la calle doce. El parque está a dos calles del café. El hospital está en el centro, con la universidad.",
-    "focus": "g:estar-location-states"
+    "focus": "g:estar-location-states",
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:banco",
+      "l:café",
+      "l:calle",
+      "l:centro",
+      "l:estar",
+      "l:hospital",
+      "l:parque",
+      "l:universidad"
+    ]
   },
   {
     "id": "w-u02-07",
@@ -186,7 +275,25 @@
       }
     ],
     "model": "Don Hernando, estoy bien. No estoy enfermo, tranquilo. Tengo sed, nada más: ¿me regala un jugo?",
-    "focus": "x:tener-estar-states"
+    "focus": "x:tener-estar-states",
+    "requires": [
+      "c:bien-y-tu",
+      "c:me-regala",
+      "c:me-siento-mal",
+      "c:tengo",
+      "c:tranquilo",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:yo-irregular",
+      "l:bien",
+      "l:enfermo",
+      "l:estar",
+      "l:jugo",
+      "l:regalar",
+      "l:sed",
+      "l:tener",
+      "l:tranquilo"
+    ]
   },
   {
     "id": "w-u02-08",
@@ -216,7 +323,27 @@
       }
     ],
     "model": "¿Dónde vives? ¿Cuándo llegas a la oficina? ¿Quién es el jefe? ¿Cuántos correos escribes en un día?",
-    "focus": "g:questions"
+    "focus": "g:questions",
+    "requires": [
+      "c:vivo-en",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:questions",
+      "g:ser-identity",
+      "l:correo",
+      "l:cuándo",
+      "l:cuánto",
+      "l:día",
+      "l:dónde",
+      "l:escribir",
+      "l:jefe",
+      "l:llegar",
+      "l:oficina",
+      "l:quién",
+      "l:ser",
+      "l:vivir"
+    ]
   },
   {
     "id": "w-u02-09",
@@ -239,7 +366,20 @@
       }
     ],
     "model": "¿Dónde vive Vale? ¿Qué come Simón? ¿Cuándo llegan los clientes, don Hernando?",
-    "focus": "p:question-word-order"
+    "focus": "p:question-word-order",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:questions",
+      "l:cliente",
+      "l:comer",
+      "l:cuándo",
+      "l:dónde",
+      "l:llegar",
+      "l:qué",
+      "l:vivir"
+    ]
   },
   {
     "id": "w-u02-10",
@@ -268,7 +408,22 @@
       }
     ],
     "model": "El pan de Vale es bueno y el tinto es bueno. Vale habla bien inglés, y Simón habla mal, pero es amable.",
-    "focus": "p:bien-mal-vs-bueno-malo"
+    "focus": "p:bien-mal-vs-bueno-malo",
+    "requires": [
+      "c:bien-y-tu",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:amable",
+      "l:bien",
+      "l:bueno",
+      "l:hablar",
+      "l:inglés",
+      "l:mal",
+      "l:pan",
+      "l:ser",
+      "l:tinto"
+    ]
   },
   {
     "id": "w-u02-11",
@@ -296,7 +451,21 @@
       }
     ],
     "model": "Vale: el señor Ruiz del banco llega a las once. Buenos días, don Hernando: el tinto está listo.",
-    "focus": "p:senor-don-article"
+    "focus": "p:senor-don-article",
+    "requires": [
+      "c:hola-buenos-dias",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:banco",
+      "l:bueno",
+      "l:día",
+      "l:estar",
+      "l:listo",
+      "l:llegar",
+      "l:señor",
+      "l:tinto"
+    ]
   },
   {
     "id": "w-u02-12",
@@ -320,6 +489,18 @@
       }
     ],
     "model": "¡Quiubo, Mariana! Estoy bien, gracias. Estoy en el café con Vale y Simón. ¿Y tú? ¿Dónde estás?",
-    "focus": "g:questions"
+    "focus": "g:questions",
+    "requires": [
+      "c:bien-y-tu",
+      "c:gracias-de-nada",
+      "c:quiubo",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:questions",
+      "l:bien",
+      "l:café",
+      "l:dónde",
+      "l:estar"
+    ]
   }
 ]

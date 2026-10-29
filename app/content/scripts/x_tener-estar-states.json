@@ -31,8 +31,8 @@
       "en": "I'm tired, but I'm not sleepy."
     }
   ],
-  "rule": "Two ways to say how you feel, and English uses \"I'm\" for both.\n\nWith a describing word (an adjective), use estar:\nestoy cansado, estoy enfermo, estoy nervioso, estoy ocupado, estoy bien\n\nWith a noun, the feeling is something you have, so use tener:\ntengo sed, tengo hambre, tengo frío, tengo sueño, tengo miedo\n\nThe test: could you put \"a lot of\" in front of it in English? A lot of thirst works, so tener. A lot of ill doesn't, so estar.\n\nAnd remember: describing words change for a woman (enferma, contenta), but sed never changes.",
-  "smallPrint": "Estar + adjective vs tener + noun for physical and emotional states.",
+  "rule": "Two ways to say how you feel, and English uses \"I'm\" for both.\n\nWith a describing word (an adjective), use *estar*:\n*estoy cansado*, *estoy enfermo*, *estoy nervioso*, *estoy ocupado*, *estoy bien*\n\nWith a noun, the feeling is something you have, so use *tener*:\n*tengo sed*, *tengo hambre*, *tengo frío*, *tengo sueño*, *tengo miedo*\n\nThe test: could you put \"a lot of\" in front of it in English? A lot of thirst works, so *tener*. A lot of ill doesn't, so *estar*.\n\nAnd remember: describing words change for a woman (*enferma*, *contenta*), but *sed* never changes.",
+  "smallPrint": "*Estar* + adjective vs *tener* + noun for physical and emotional states.",
   "readAndPick": [
     {
       "es": "Tengo sed.",
@@ -112,19 +112,19 @@
       "prompt": "I'm thirsty.",
       "answer": "Tengo sed.",
       "accept": [],
-      "why": "Sed is a noun, so you have it."
+      "why": "*Sed* is a noun, so you have it."
     },
     {
       "prompt": "I'm ill.",
       "answer": "Estoy enfermo.",
       "accept": [],
-      "why": "Enfermo describes you: estar."
+      "why": "*Enfermo* describes you: *estar*."
     },
     {
       "prompt": "I'm bored.",
       "answer": "Estoy aburrido.",
       "accept": [],
-      "why": "Aburrido describes you: estar."
+      "why": "*Aburrido* describes you: *estar*."
     },
     {
       "prompt": "I'm not nervous; I'm thirsty.",
@@ -132,19 +132,19 @@
       "accept": [
         "No estoy nervioso, tengo sed."
       ],
-      "why": "Nervous takes estar; thirst takes tener."
+      "why": "Nervous takes *estar*; thirst takes *tener*."
     },
     {
       "prompt": "We're fine, but we're thirsty.",
       "answer": "Estamos bien, pero tenemos sed.",
       "accept": [],
-      "why": "Estamos for how you are, tenemos for the thirst."
+      "why": "*Estamos* for how you are, *tenemos* for the thirst."
     },
     {
       "prompt": "I'm tired and hungry.",
       "answer": "Estoy cansado y tengo hambre.",
       "accept": [],
-      "why": "Cansado describes you (estar); hambre is a thing you have (tener)."
+      "why": "*Cansado* describes you (*estar*); *hambre* is a thing you have (*tener*)."
     },
     {
       "prompt": "I'm not busy; I'm cold.",
@@ -152,37 +152,37 @@
       "accept": [
         "No estoy ocupado, tengo frío."
       ],
-      "why": "Ocupado describes you; frío is a noun."
+      "why": "*Ocupado* describes you; *frío* is a noun."
     },
     {
       "prompt": "Don Hernando is calm.",
       "answer": "Don Hernando está tranquilo.",
       "accept": [],
-      "why": "Tranquilo describes him: está."
+      "why": "*Tranquilo* describes him: *está*."
     },
     {
       "prompt": "Simón is nervous, but he's not ill.",
       "answer": "Simón está nervioso, pero no está enfermo.",
       "accept": [],
-      "why": "Both are describing words, so both take estar."
+      "why": "Both are describing words, so both take *estar*."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Estoy sed.",
       "right": "Tengo sed.",
-      "why": "Sed is a noun: you have it. Tengo sed."
+      "why": "*Sed* is a noun: you have it. *Tengo sed.*"
     },
     {
       "wrong": "Tengo enfermo.",
       "right": "Estoy enfermo.",
-      "why": "Enfermo describes you, so it goes with estar."
+      "why": "*Enfermo* describes you, so it goes with *estar*."
     },
     {
       "wrong": "Tengo cansado.",
       "right": "Estoy cansado.",
-      "why": "Cansado is a describing word: estoy cansado."
+      "why": "*Cansado* is a describing word: *estoy cansado*."
     }
   ],
-  "personal": "How are you right now? Write one sentence with estoy and one with tengo."
+  "personal": "How are you right now? Write one sentence with *estoy* and one with *tengo*."
 }

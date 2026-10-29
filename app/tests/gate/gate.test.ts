@@ -305,3 +305,44 @@ describe('(l) targets are author intent', () => {
     expect(by(r, 'requires', 'warning')).toHaveLength(2);
   });
 });
+
+describe('(m) dashes and packed variants', () => {
+  test('an em dash, en dash or spaced hyphen in learner-facing text is an error; notes are not checked', () => {
+    const fx = makeFixture();
+    const p = fx.write('bank/u01.json', [
+      bank('u01-1', '¿Quiero un café? —Sí.', 'u01'),
+      bank('u01-2', 'Quiero un café.', 'u01', { en: 'I want a coffee – now.' }),
+      bank('u01-3', 'Quiero un café.\nMe llamo Tomás.', 'u01', { en: 'I want a coffee - thanks.' }),
+      bank('u01-4', 'Me llamo Tomás.', 'u01', { en: 'My name is Tomás.', theme: 'names — intro' }),
+    ]);
+    const r = runGate({ appDir: fx.app, paths: [p] });
+    const paths = by(r, 'dashes', 'error').map((f) => f.path);
+    expect(paths).toEqual(expect.arrayContaining(['[0].es', '[1].en', '[2].en']));
+    expect(paths.some((x) => x?.startsWith('[3]'))).toBe(false);
+  });
+  test('a graph node packing variants with " / " fails; es/en must be forms[0]', () => {
+    const fx = makeFixture();
+    const p = fx.write('graph/chunks.json', [
+      { id: 'c:quiero', kind: 'chunk', band: 'A1', priority: 1, title: 'Wanting', es: 'Quiero un café. / Quiero té.', en: 'I want a coffee.' },
+      { id: 'c:me-llamo', kind: 'chunk', band: 'A1', priority: 1, title: 'Names', es: 'Me llamo Tomás.', en: 'My name is Tomás.',
+        forms: [{ es: '¿Cómo te llamas?', en: "What's your name?" }, { es: 'Me llamo Tomás.', en: 'My name is Tomás.' }] },
+    ]);
+    const r = runGate({ appDir: fx.app, paths: [p] });
+    const msgs = by(r, 'dashes', 'error').map((f) => `${f.path} ${f.problem}`).join(' | ');
+    expect(msgs).toMatch(/\[0\]\.es c:quiero packs variants/);
+    expect(msgs).toMatch(/\[1\]\.forms\[0\] c:me-llamo: es\/en must be the main form/);
+  });
+  test('a chunk is matched by its aligned forms, not only its es', () => {
+    const run = (forms: boolean) => {
+      const fx = makeFixture();
+      fx.write('graph/chunks.json', [
+        { id: 'c:me-llamo', kind: 'chunk', band: 'A1', priority: 1, title: 'Names', es: 'Me llamo Tomás.', en: 'My name is Tomás.',
+          ...(forms ? { forms: [{ es: 'Me llamo Tomás.', en: 'My name is Tomás.' }, { es: 'Quiero hablar con Vale.', en: 'I want to talk to Vale.' }] } : {}) },
+      ]);
+      const p = fx.write('bank/u01.json', [bank('u01-1', 'Quiero hablar con Vale.', 'u01')]);
+      return by(runGate({ appDir: fx.app, paths: [p] }), 'legality', 'error');
+    };
+    expect(run(false).length).toBeGreaterThan(0);
+    expect(run(true)).toEqual([]);
+  });
+});

@@ -1,9 +1,9 @@
 {
   "node": "g:estar-location-states",
   "hook": {
-    "line": "Where is everybody? Where's the bank? And how are you today, really? Spanish answers all of these with one verb, and it's not soy.",
-    "es": "¿Dónde está Vale? —Está en el café.",
-    "en": "Where's Vale? —She's at the café."
+    "line": "Where is everybody? Where's the bank? And how are you today, really? Spanish answers all of these with one verb, and it's not *soy*.",
+    "es": "¿Dónde está Vale?\nEstá en el café.",
+    "en": "Where's Vale?\nShe's at the café."
   },
   "examples": [
     {
@@ -19,8 +19,8 @@
       "en": "Vale isn't at the café; she's downtown."
     },
     {
-      "es": "¿Cómo estás? —Estoy bien.",
-      "en": "How are you? —I'm fine."
+      "es": "¿Cómo estás?\nEstoy bien.",
+      "en": "How are you?\nI'm fine."
     },
     {
       "es": "Estamos en la universidad.",
@@ -35,9 +35,9 @@
       "en": "The bread is ready."
     }
   ],
-  "rule": "English uses \"to be\" for everything. Spanish splits it. You already know soy, eres, es for who and what someone is. For two other jobs, Spanish uses estar:\n\nWhere something or someone is: El banco está en el centro.\nHow someone is right now: Estoy bien. Estoy cansado.\n\nestoy: I am\nestás: you are (a friend)\nestá: he, she, it is; you are (usted)\nestamos: we are\nestán: they are; you all are\n\nA quick test: if the answer is a place, or how you feel today, reach for estar. Tomás es canadiense (who he is), but Tomás está en Bogotá (where he is).",
-  "smallPrint": "Teachers call this estar for location and states.",
-  "soundTip": "The stress sits at the end: es-TOY, es-TÁS, es-TÁ, es-TÁN. The written accent shows it, and it also tells está (is) apart from esta (this).",
+  "rule": "English uses \"to be\" for everything. Spanish splits it. You already know *soy*, *eres*, *es* for who and what someone is. For two other jobs, Spanish uses *estar*:\n\nWhere something or someone is: *El banco está en el centro.*\nHow someone is right now: *Estoy bien. Estoy cansado.*\n\n*estoy*: I am\n*estás*: you are (a friend)\n*está*: he, she, it is; you are (*usted*)\n*estamos*: we are\n*están*: they are; you all are\n\nA quick test: if the answer is a place, or how you feel today, reach for *estar*. *Tomás es canadiense* (who he is), but *Tomás está en Bogotá* (where he is).",
+  "smallPrint": "Teachers call this *estar* for location and states.",
+  "soundTip": "The stress sits at the end: *es-TOY*, *es-TÁS*, *es-TÁ*, *es-TÁN*. The written accent shows it, and it also tells *está* (is) apart from *esta* (this).",
   "readAndPick": [
     {
       "es": "Vale está en el café.",
@@ -137,13 +137,13 @@
       "accept": [
         "Yo estoy en la universidad."
       ],
-      "why": "Where you are uses estar: estoy."
+      "why": "Where you are uses *estar*: *estoy*."
     },
     {
       "prompt": "The café is in La Candelaria.",
       "answer": "El café está en La Candelaria.",
       "accept": [],
-      "why": "A place is a where, so it's está, not es."
+      "why": "A place is a where, so it's *está*, not *es*."
     },
     {
       "prompt": "We're in the park.",
@@ -151,13 +151,13 @@
       "accept": [
         "Nosotros estamos en el parque."
       ],
-      "why": "We = estamos."
+      "why": "We = *estamos*."
     },
     {
       "prompt": "How are you? (to a friend)",
       "answer": "¿Cómo estás?",
       "accept": [],
-      "why": "How you are right now uses estar."
+      "why": "How you are right now uses *estar*."
     },
     {
       "prompt": "I'm fine.",
@@ -165,7 +165,7 @@
       "accept": [
         "Yo estoy bien."
       ],
-      "why": "Bien is how you are, so estar."
+      "why": "*Bien* is how you are, so *estar*."
     },
     {
       "prompt": "I'm tired.",
@@ -173,43 +173,43 @@
       "accept": [
         "Yo estoy cansado."
       ],
-      "why": "How you feel today takes estar."
+      "why": "How you feel today takes *estar*."
     },
     {
       "prompt": "Vale isn't in Medellín.",
       "answer": "Vale no está en Medellín.",
       "accept": [],
-      "why": "No goes right before está."
+      "why": "*No* goes right before *está*."
     },
     {
       "prompt": "The students are at the hospital.",
       "answer": "Los estudiantes están en el hospital.",
       "accept": [],
-      "why": "They = están."
+      "why": "They = *están*."
     },
     {
       "prompt": "Tomás is Canadian, but he's in Bogotá.",
       "answer": "Tomás es canadiense, pero está en Bogotá.",
       "accept": [],
-      "why": "Es for who he is, está for where he is."
+      "why": "*Es* for who he is, *está* for where he is."
     }
   ],
   "pitfalls": [
     {
       "wrong": "El café es en La Candelaria.",
       "right": "El café está en La Candelaria.",
-      "why": "Almost. Es tells you what something is. For where it is, Spanish uses está."
+      "why": "Almost. *Es* tells you what something is. For where it is, Spanish uses *está*."
     },
     {
       "wrong": "Soy bien.",
       "right": "Estoy bien.",
-      "why": "How you are today takes estar: estoy bien."
+      "why": "How you are today takes *estar*: *estoy bien*."
     },
     {
       "wrong": "Vale esta en el colegio.",
       "right": "Vale está en el colegio.",
-      "why": "Without the accent, esta means this. The verb is está."
+      "why": "Without the accent, *esta* means this. The verb is *está*."
     }
   ],
-  "personal": "Where are you right now, and how are you? Write it in two short sentences with estoy."
+  "personal": "Where are you right now, and how are you? Write it in two short sentences with *estoy*."
 }

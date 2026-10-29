@@ -124,8 +124,7 @@
    "type": "output",
    "focus": [
     "g:subj-free-relatives",
-    "g:subj-future-in-past",
-    "g:que-wishes-commands"
+    "g:subj-future-in-past"
    ],
    "chunks": [],
    "lexemes": [],

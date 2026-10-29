@@ -101,8 +101,7 @@
    "type": "output",
    "focus": [
     "g:vosotros-recognition",
-    "g:spain-pasts",
-    "g:se-form-recognition"
+    "g:spain-pasts"
    ],
    "chunks": [],
    "lexemes": [],

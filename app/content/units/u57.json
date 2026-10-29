@@ -43,8 +43,8 @@
   {
    "type": "output",
    "focus": [
-    "g:conditional-advanced",
-    "g:comparative-advanced-c1"
+    "g:concessive-advanced",
+    "g:consecutive-advanced"
    ],
    "chunks": [],
    "lexemes": [],
@@ -138,8 +138,7 @@
   {
    "type": "output",
    "focus": [
-    "g:conditional-advanced",
-    "g:comparative-advanced-c1"
+    "g:conditional-advanced"
    ],
    "chunks": [],
    "lexemes": [],

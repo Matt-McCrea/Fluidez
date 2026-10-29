@@ -40,8 +40,8 @@
   {
    "type": "output",
    "focus": [
-    "g:concessive-advanced",
-    "g:consecutive-advanced"
+    "g:nominalisation",
+    "g:absolute-constructions"
    ],
    "chunks": [],
    "lexemes": [],
@@ -122,8 +122,7 @@
   {
    "type": "output",
    "focus": [
-    "g:concessive-advanced",
-    "g:consecutive-advanced"
+    "g:concessive-advanced"
    ],
    "chunks": [],
    "lexemes": [],

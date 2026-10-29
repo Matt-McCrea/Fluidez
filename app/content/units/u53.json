@@ -43,8 +43,8 @@
   {
    "type": "output",
    "focus": [
-    "g:hedging-distance",
-    "g:reformulation"
+    "g:tense-modal-uses",
+    "g:mood-choice-fine"
    ],
    "chunks": [],
    "lexemes": [],
@@ -128,8 +128,7 @@
   {
    "type": "output",
    "focus": [
-    "g:hedging-distance",
-    "g:reformulation"
+    "g:hedging-distance"
    ],
    "chunks": [],
    "lexemes": [],

@@ -1,7 +1,7 @@
 {
   "node": "g:present-ar",
   "hook": {
-    "line": "Where you work, which languages you speak, what you buy: everyday life runs on verbs ending in -ar. Learn five endings once and they fit hundreds of verbs.",
+    "line": "Where you work, which languages you speak, what you buy: everyday life runs on verbs ending in *-ar*. Learn five endings once and they fit hundreds of verbs.",
     "es": "Hablo inglés, y trabajo en un café en La Candelaria.",
     "en": "I speak English, and I work in a café in La Candelaria."
   },
@@ -31,9 +31,9 @@
       "en": "The waiters don't speak English."
     }
   ],
-  "rule": "Verbs that end in -ar, like hablar (to speak), trabajar (to work) and comprar (to buy), drop the -ar and add an ending that says who:\n\nhablo: I speak\nhablas: you speak (a friend)\nhabla: he, she speaks; you speak (usted)\nhablamos: we speak\nhablan: they speak; you all speak\n\nAs with soy, the ending does the work, so you usually leave out yo, tú and ella.\n\nOne Spanish form covers three English ones: hablo is \"I speak\", \"I'm speaking\" and \"I do speak\". So the English helpers disappear. For a question, just add question marks: ¿Hablas inglés? For \"not\", put no before the verb: No hablo japonés.",
-  "smallPrint": "This is the present tense (presente) of regular -ar verbs.",
-  "soundTip": "Every form stresses the same syllable as the I-form: HA-blo, HA-blas, HA-blan. Only the we-form moves: ha-BLA-mos.",
+  "rule": "Verbs that end in *-ar*, like *hablar* (to speak), *trabajar* (to work) and *comprar* (to buy), drop the *-ar* and add an ending that says who:\n\n*hablo*: I speak\n*hablas*: you speak (a friend)\n*habla*: he, she speaks; you speak (*usted*)\n*hablamos*: we speak\n*hablan*: they speak; you all speak\n\nAs with *soy*, the ending does the work, so you usually leave out *yo*, *tú* and *ella*.\n\nOne Spanish form covers three English ones: *hablo* is \"I speak\", \"I'm speaking\" and \"I do speak\". So the English helpers disappear. For a question, just add question marks: *¿Hablas inglés?* For \"not\", put *no* before the verb: *No hablo japonés.*",
+  "smallPrint": "This is the present tense (*presente*) of regular *-ar* verbs.",
+  "soundTip": "Every form stresses the same syllable as the I-form: *HA-blo*, *HA-blas*, *HA-blan*. Only the we-form moves: *ha-BLA-mos*.",
   "readAndPick": [
     {
       "es": "Hablamos español en el café.",
@@ -119,68 +119,68 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Hablo or habla? Type the whole sentence: \"Vale no ___ inglés.\"",
+      "prompt": "*Hablo* or *habla*? Type the whole sentence: \"*Vale no ___ inglés.*\"",
       "answer": "Vale no habla inglés.",
       "accept": [],
-      "why": "Vale is she, so the ending is -a. No goes before the verb."
+      "why": "Vale is she, so the ending is *-a*. *No* goes before the verb."
     },
     {
-      "prompt": "Trabajo or trabaja? Type the whole sentence: \"Vale ___ en el café.\"",
+      "prompt": "*Trabajo* or *trabaja*? Type the whole sentence: \"*Vale ___ en el café.*\"",
       "answer": "Vale trabaja en el café.",
       "accept": [],
-      "why": "Vale is she, so the ending is -a."
+      "why": "Vale is she, so the ending is *-a*."
     },
     {
-      "prompt": "Compras or compran? You're asking a friend: \"¿___ el pan?\"",
+      "prompt": "*Compras* or *compran*? You're asking a friend: \"*¿___ el pan?*\"",
       "answer": "¿Compras el pan?",
       "accept": [],
-      "why": "One friend (tú) takes -as."
+      "why": "One friend (*tú*) takes *-as*."
     },
     {
       "prompt": "Type in Spanish: We speak English with Tomás.",
       "answer": "Hablamos inglés con Tomás.",
       "accept": [],
-      "why": "-amos is \"we\", so you don't need nosotros."
+      "why": "*-amos* is \"we\", so you don't need *nosotros*."
     },
     {
       "prompt": "Type in Spanish: They buy bread.",
       "answer": "Compran pan.",
       "accept": [],
-      "why": "-an is \"they\". There's no word for \"do\" or \"some\" to add."
+      "why": "*-an* is \"they\". There's no word for \"do\" or \"some\" to add."
     },
     {
-      "prompt": "Make it about \"we\": \"Ayudo a Tomás.\"",
+      "prompt": "Make it about \"we\": \"*Ayudo a Tomás.*\"",
       "answer": "Ayudamos a Tomás.",
       "accept": [],
-      "why": "Swap -o for -amos. Everything else stays."
+      "why": "Swap *-o* for *-amos*. Everything else stays."
     },
     {
-      "prompt": "Make it negative: \"Trabajo en Bogotá.\"",
+      "prompt": "Make it negative: \"*Trabajo en Bogotá.*\"",
       "answer": "No trabajo en Bogotá.",
       "accept": [],
-      "why": "No goes before the verb. There's no \"don't\" to add."
+      "why": "*No* goes before the verb. There's no \"don't\" to add."
     },
     {
-      "prompt": "Ask a stranger you call usted: \"Trabajas en el café.\"",
+      "prompt": "Ask a stranger you call *usted*: \"*Trabajas en el café.*\"",
       "answer": "¿Usted trabaja en el café?",
       "accept": [
         "¿Trabaja usted en el café?",
         "¿Trabaja en el café?"
       ],
-      "why": "Usted takes the he/she form, trabaja, not trabajas."
+      "why": "*Usted* takes the he/she form, *trabaja*, not *trabajas*."
     },
     {
       "prompt": "Type in Spanish: You all help the waiters.",
       "answer": "Ustedes ayudan a los meseros.",
       "accept": [],
-      "why": "Ustedes takes the they form, ayudan. And people you help get a in front: a los meseros."
+      "why": "*Ustedes* takes the they form, *ayudan*. And people you help get *a* in front: *a los meseros*."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Yo trabajar en Bogotá.",
       "right": "Trabajo en Bogotá.",
-      "why": "Trabajar is the dictionary form. To say who, swap -ar for an ending: trabajo."
+      "why": "*Trabajar* is the dictionary form. To say who, swap *-ar* for an ending: *trabajo*."
     },
     {
       "wrong": "¿Tú haces hablar inglés?",
@@ -190,13 +190,13 @@
     {
       "wrong": "Ustedes trabajamos mucho.",
       "right": "Ustedes trabajan.",
-      "why": "Ustedes means \"you all\" but takes the they ending: -an."
+      "why": "*Ustedes* means \"you all\" but takes the they ending: *-an*."
     },
     {
       "wrong": "Ella trabajo en un café.",
       "right": "Ella trabaja en un café.",
-      "why": "-o is only for \"I\". She takes -a."
+      "why": "*-o* is only for \"I\". She takes *-a*."
     }
   ],
-  "personal": "Which languages do you speak, and where do you work? One or two true sentences with -ar verbs."
+  "personal": "Which languages do you speak, and where do you work? One or two true sentences with *-ar* verbs."
 }

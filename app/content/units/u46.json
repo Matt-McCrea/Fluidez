@@ -119,8 +119,7 @@
    "type": "output",
    "focus": [
     "g:reported-speech-full",
-    "g:reporting-verbs-mood",
-    "g:subj-perception-negated"
+    "g:reporting-verbs-mood"
    ],
    "chunks": [],
    "lexemes": [],

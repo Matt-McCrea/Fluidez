@@ -2,8 +2,8 @@
   "node": "g:ir-a-plans",
   "hook": {
     "line": "Every weekend starts with the same question. Today you can answer it, and ask it back.",
-    "es": "—¿Qué vas a hacer el sábado? —Voy a bailar con Vale.",
-    "en": "—What are you going to do on Saturday? —I'm going to dance with Vale."
+    "es": "¿Qué vas a hacer el sábado?\nVoy a bailar con Vale.",
+    "en": "What are you going to do on Saturday?\nI'm going to dance with Vale."
   },
   "examples": [
     { "es": "Voy a cocinar el domingo.", "en": "I'm going to cook on Sunday." },
@@ -13,9 +13,9 @@
     { "es": "Los clientes van a pasar el día en el café.", "en": "The customers are going to spend the day at the café." },
     { "es": "No voy a cantar.", "en": "I'm not going to sing." }
   ],
-  "rule": "To talk about plans, use ir (to go) + a + the plain verb. It's exactly 'going to' in English.\n\nvoy a, vas a, va a, vamos a, van a + cocinar, bailar, hacer…\n\nVoy a cocinar el domingo. ¿Vas a ver el partido? Vamos a caminar.\n\nThe second verb never changes: it's always the form ending in -ar, -er or -ir.\n\nTo say no, put no before the ir part: No voy a cantar.\n\nTo ask someone their plans: ¿Qué vas a hacer el sábado?\n\nIn Latin America this is the everyday way to talk about the future. You'll hear it far more than any other future form.\n\nAnd vamos a + verb on its own, with the right tone, is also 'let's': ¡Vamos a bailar!",
-  "smallPrint": "This is the periphrastic future: ir a + infinitive.",
-  "soundTip": "In fast speech voy a sounds like one word, 'voya', and vamos a like 'vamosa'.",
+  "rule": "To talk about plans, use *ir* (to go) + *a* + the plain verb. It's exactly 'going to' in English.\n\n*voy a*, *vas a*, *va a*, *vamos a*, *van a* + *cocinar*, *bailar*, *hacer…*\n\n*Voy a cocinar el domingo. ¿Vas a ver el partido? Vamos a caminar.*\n\nThe second verb never changes: it's always the form ending in *-ar*, *-er* or *-ir*.\n\nTo say no, put *no* before the *ir* part: *No voy a cantar.*\n\nTo ask someone their plans: *¿Qué vas a hacer el sábado?*\n\nIn Latin America this is the everyday way to talk about the future. You'll hear it far more than any other future form.\n\nAnd *vamos a* + verb on its own, with the right tone, is also 'let's': *¡Vamos a bailar!*",
+  "smallPrint": "This is the periphrastic future: *ir a* + infinitive.",
+  "soundTip": "In fast speech *voy a* sounds like one word, '*voya*', and *vamos a* like '*vamosa*'.",
   "readAndPick": [
     { "es": "Voy a nadar el sábado.", "options": ["I'm going to swim on Saturday.", "I swim on Saturdays.", "I'm going to the pool on Saturday."], "answer": 0 },
     { "es": "¿Vas a cocinar?", "options": ["Are you going to cook?", "Do you cook?", "Is she going to cook?"], "answer": 0 },
@@ -28,19 +28,19 @@
     { "es": "Simón va a cantar ahora.", "options": ["Simón is going to sing now.", "Simón sings every day.", "Simón doesn't sing."], "answer": 0 }
   ],
   "yourTurn": [
-    { "prompt": "Say: I'm going to cook on Sunday.", "answer": "Voy a cocinar el domingo.", "accept": ["El domingo voy a cocinar."], "why": "Voy a + the plain verb: cocinar." },
-    { "prompt": "Ask a friend: what are you going to do on Saturday?", "answer": "¿Qué vas a hacer el sábado?", "accept": [], "why": "Tú is vas; the second verb stays plain: hacer." },
-    { "prompt": "Say: We're going to dance.", "answer": "Vamos a bailar.", "accept": [], "why": "Nosotros is vamos." },
-    { "prompt": "Say: Mariana is going to watch the match.", "answer": "Mariana va a ver el partido.", "accept": [], "why": "Él/ella is va." },
-    { "prompt": "Say: I'm not going to sing.", "answer": "No voy a cantar.", "accept": [], "why": "No goes before voy." },
-    { "prompt": "Ask a group of friends if they're going to walk in the park.", "answer": "¿Van a caminar en el parque?", "accept": ["¿Ustedes van a caminar en el parque?"], "why": "Ustedes is van." },
-    { "prompt": "Say: It's going to be a great party.", "answer": "Va a ser una fiesta chévere.", "accept": [], "why": "Ir a works with ser too: va a ser." }
+    { "prompt": "Say: I'm going to cook on Sunday.", "answer": "Voy a cocinar el domingo.", "accept": ["El domingo voy a cocinar."], "why": "*Voy a* + the plain verb: *cocinar*." },
+    { "prompt": "Ask a friend: what are you going to do on Saturday?", "answer": "¿Qué vas a hacer el sábado?", "accept": [], "why": "*Tú* is *vas*; the second verb stays plain: *hacer*." },
+    { "prompt": "Say: We're going to dance.", "answer": "Vamos a bailar.", "accept": [], "why": "*Nosotros* is *vamos*." },
+    { "prompt": "Say: Mariana is going to watch the match.", "answer": "Mariana va a ver el partido.", "accept": [], "why": "*Él*/*ella* is *va*." },
+    { "prompt": "Say: I'm not going to sing.", "answer": "No voy a cantar.", "accept": [], "why": "*No* goes before *voy*." },
+    { "prompt": "Ask a group of friends if they're going to walk in the park.", "answer": "¿Van a caminar en el parque?", "accept": ["¿Ustedes van a caminar en el parque?"], "why": "*Ustedes* is *van*." },
+    { "prompt": "Say: It's going to be a great party.", "answer": "Va a ser una fiesta chévere.", "accept": [], "why": "*Ir a* works with *ser* too: *va a ser*." }
   ],
   "pitfalls": [
-    { "wrong": "Voy cocinar el domingo.", "right": "Voy a cocinar el domingo.", "why": "The a is not optional: voy a + verb." },
-    { "wrong": "Voy a cocino el domingo.", "right": "Voy a cocinar el domingo.", "why": "After voy a the verb stays plain, ending in -ar, -er or -ir." },
-    { "wrong": "Yo va a bailar.", "right": "Voy a bailar.", "why": "Ir changes for each person: voy, vas, va, vamos, van." },
-    { "wrong": "Voy a no trabajar.", "right": "No voy a trabajar.", "why": "No goes in front of the ir part." }
+    { "wrong": "Voy cocinar el domingo.", "right": "Voy a cocinar el domingo.", "why": "The *a* is not optional: *voy a* + verb." },
+    { "wrong": "Voy a cocino el domingo.", "right": "Voy a cocinar el domingo.", "why": "After *voy a* the verb stays plain, ending in *-ar*, *-er* or *-ir*." },
+    { "wrong": "Yo va a bailar.", "right": "Voy a bailar.", "why": "*Ir* changes for each person: *voy*, *vas*, *va*, *vamos*, *van*." },
+    { "wrong": "Voy a no trabajar.", "right": "No voy a trabajar.", "why": "*No* goes in front of the *ir* part." }
   ],
-  "personal": "What are you going to do this weekend? Write two plans with Voy a…, and one thing you're not going to do."
+  "personal": "What are you going to do this weekend? Write two plans with *Voy a…*, and one thing you're not going to do."
 }

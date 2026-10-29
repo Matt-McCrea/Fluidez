@@ -84,7 +84,11 @@ export function extractSpanish(file: string, data: any, kind: Kind = kindOf(file
       arr(data).forEach((w, i) => add(`[${i}].model`, w?.model, { unit: w?.unit }));
       break;
     case 'graph':
-      arr(data).forEach((n, i) => { if (n?.kind === 'chunk') add(`[${i}].es`, n?.es); });
+      arr(data).forEach((n, i) => {
+        if (n?.kind === 'chunk') add(`[${i}].es`, n?.es);
+        // every aligned form is Spanish a learner is shown: linted like a chunk's es
+        if (n?.kind !== 'lexeme') arr(n?.forms).forEach((f, k) => add(`[${i}].forms[${k}].es`, f?.es));
+      });
       break;
     default:
       break;

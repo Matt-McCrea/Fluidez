@@ -13,37 +13,37 @@
     { "es": "Más despacio, por favor.", "en": "Slower, please. (\"des-PAH-syoh\": c before i is an s)" },
     { "es": "Soy Tomás Herrera.", "en": "I'm Tomás Herrera. (the rr is rolled, the last r is one quick tap)" }
   ],
-  "rule": "Five vowels, one sound each, every time: a as in \"father\", e as in \"bed\", i as in \"machine\", o as in \"or\", u as in \"rule\". Never the lazy \"uh\" English uses.\n\nThe surprises: h is silent. j, and g before e or i, are a breathy h. ll and y sound like the y in \"yes\". ñ is the ny in \"canyon\". b and v are the same sound. c before e or i, and z, are a plain s in Latin America. A single r is a quick tap; rr, and r at the start of a word, are rolled. In que, qui, gue and gui the u is silent.\n\nStress: words ending in a vowel, n or s stress the second-to-last syllable (co-lom-BIA-no). Words ending in any other letter stress the last one (us-TED, fa-VOR). A written mark means \"stress here instead\": Bogotá, Medellín, Tomás. The mark is part of the spelling, and the app will hold you to it.",
-  "smallPrint": "The written mark is called a tilde (la tilde). It also tells apart pairs like tú (you) and tu (your), sí (yes) and si (if).",
-  "soundTip": "Spanish vowels never glide. English \"no\" ends in a little \"w\"; Spanish no is clipped short: \"noh\", not \"noh-oo\". Same with the e in me: \"meh\", never \"may\".",
+  "rule": "Five vowels, one sound each, every time: *a* as in \"father\", *e* as in \"bed\", *i* as in \"machine\", *o* as in \"or\", *u* as in \"rule\". Never the lazy \"uh\" English uses.\n\nThe surprises: *h* is silent. *j*, and *g* before *e* or *i*, are a breathy h. *ll* and *y* sound like the y in \"yes\". *ñ* is the ny in \"canyon\". *b* and *v* are the same sound. *c* before *e* or *i*, and *z*, are a plain s in Latin America. A single *r* is a quick tap; *rr*, and *r* at the start of a word, are rolled. In *que*, *qui*, *gue* and *gui* the *u* is silent.\n\nStress: words ending in a vowel, *n* or *s* stress the second-to-last syllable (*co-lom-BIA-no*). Words ending in any other letter stress the last one (*us-TED*, *fa-VOR*). A written mark means \"stress here instead\": *Bogotá*, *Medellín*, *Tomás*. The mark is part of the spelling, and the app will hold you to it.",
+  "smallPrint": "The written mark is called a tilde (*la tilde*). It also tells apart pairs like *tú* (you) and *tu* (your), *sí* (yes) and *si* (if).",
+  "soundTip": "Spanish vowels never glide. English \"no\" ends in a little \"w\"; Spanish *no* is clipped short: \"noh\", not \"noh-oo\". Same with the e in *me*: \"meh\", never \"may\".",
   "readAndPick": [
     { "es": "Hola.", "options": ["OH-lah", "HOH-lah", "OH-lay"], "answer": 0 },
     { "es": "Me llamo Guillermo.", "options": ["meh LAH-moh gwil-EHR-moh", "meh YAH-moh ghee-YEHR-moh", "mee LYAH-moh jil-EHR-moh"], "answer": 1 },
     { "es": "Soy de Medellín.", "options": ["MEH-deh-yin", "meh-DEH-yin", "meh-deh-YEEN"], "answer": 2 },
     { "es": "Mucho gusto, Jorge.", "options": ["JOR-jee", "HOR-heh", "YOR-geh"], "answer": 1 },
     { "es": "Soy Vale, de Bogotá.", "options": ["Vale starts with the same sound as Bogotá", "Vale starts like English \"vase\"", "Vale rhymes with \"pale\""], "answer": 0 },
-    { "es": "Soy Tomás Herrera.", "options": ["The rr is rolled; the last r is one quick tap", "Both r's sound the same", "The H of Herrera is pronounced"], "answer": 0 },
+    { "es": "Soy Tomás Herrera.", "options": ["The *rr* is rolled; the last *r* is one quick tap", "Both *r*'s sound the same", "The *H* of *Herrera* is pronounced"], "answer": 0 },
     { "es": "Muchas gracias, Cecilia.", "options": ["GRAH-kyahs, keh-KEE-lyah", "GRAY-shus, seh-SIL-yah", "GRAH-syahs, seh-SEE-lyah"], "answer": 2 },
-    { "es": "Quiero.", "options": ["KYEH-roh: the u is silent", "KWEE-roh", "kee-WEH-roh"], "answer": 0 },
+    { "es": "Quiero.", "options": ["KYEH-roh: the *u* is silent", "KWEE-roh", "kee-WEH-roh"], "answer": 0 },
     { "es": "Me llamo Toño.", "options": ["TOH-noh", "TOH-nyoh, like the ny in \"canyon\"", "TOHN-yoo"], "answer": 1 },
-    { "es": "Soy colombiano.", "options": ["co-lom-BIA-no: it ends in a vowel, so the second-to-last syllable", "CO-lom-bia-no", "co-lom-bia-NO"], "answer": 0 },
-    { "es": "Yo también.", "options": ["TAM-byen", "tam-BYEN: the mark moves the stress to the end", "tam-byen, no stress"], "answer": 1 }
+    { "es": "Soy colombiano.", "options": ["*co-lom-BIA-no*: it ends in a vowel, so the second-to-last syllable", "CO-lom-bia-no", "co-lom-bia-NO"], "answer": 0 },
+    { "es": "Yo también.", "options": ["TAM-byen", "*tam-BYEN*: the mark moves the stress to the end", "tam-byen, no stress"], "answer": 1 }
   ],
   "yourTurn": [
-    { "prompt": "Type in Spanish: Me too. (The stress falls on the last syllable, so the word needs its mark.)", "answer": "Yo también.", "accept": [], "why": "También ends in n, so it would normally stress TAM. The mark on é moves it to the end." },
-    { "prompt": "Type in Spanish: I'm from Bogotá.", "answer": "Soy de Bogotá.", "accept": [], "why": "Bogotá ends in a vowel but is stressed on the last syllable, so the á needs its mark." },
-    { "prompt": "Type in Spanish: My name's Tomás.", "answer": "Me llamo Tomás.", "accept": ["Soy Tomás."], "why": "llamo is spelled with ll (said like \"y\"), and Tomás ends in s but stresses the last syllable, so it takes a mark." },
-    { "prompt": "Type in Spanish: Slower, please.", "answer": "Más despacio, por favor.", "accept": [], "why": "Más (more) carries a mark. Despacio has none: it ends in a vowel and stresses PA, as expected." },
-    { "prompt": "Type in Spanish: Nice to meet you, Simón.", "answer": "Mucho gusto, Simón.", "accept": [], "why": "Simón ends in n but stresses the last syllable, so it needs the mark." },
-    { "prompt": "Type in Spanish, with both question marks: How are you? (to a friend)", "answer": "¿Cómo estás?", "accept": [], "why": "Questions open with ¿. Cómo takes a mark when it asks, and estás stresses its last syllable." },
-    { "prompt": "Type in Spanish: Thank you very much.", "answer": "Muchas gracias.", "accept": [], "why": "In Latin America the c of gracias is a plain s: GRAH-syahs." },
-    { "prompt": "Type in Spanish: I don't understand.", "answer": "No entiendo.", "accept": [], "why": "No accents here: entiendo ends in a vowel and stresses TIEN, as the rule predicts." }
+    { "prompt": "Type in Spanish: Me too. (The stress falls on the last syllable, so the word needs its mark.)", "answer": "Yo también.", "accept": [], "why": "*También* ends in *n*, so it would normally stress TAM. The mark on *é* moves it to the end." },
+    { "prompt": "Type in Spanish: I'm from Bogotá.", "answer": "Soy de Bogotá.", "accept": [], "why": "*Bogotá* ends in a vowel but is stressed on the last syllable, so the *á* needs its mark." },
+    { "prompt": "Type in Spanish: My name's Tomás.", "answer": "Me llamo Tomás.", "accept": ["Soy Tomás."], "why": "*llamo* is spelled with *ll* (said like \"y\"), and *Tomás* ends in *s* but stresses the last syllable, so it takes a mark." },
+    { "prompt": "Type in Spanish: Slower, please.", "answer": "Más despacio, por favor.", "accept": [], "why": "*Más* (more) carries a mark. *Despacio* has none: it ends in a vowel and stresses PA, as expected." },
+    { "prompt": "Type in Spanish: Nice to meet you, Simón.", "answer": "Mucho gusto, Simón.", "accept": [], "why": "*Simón* ends in *n* but stresses the last syllable, so it needs the mark." },
+    { "prompt": "Type in Spanish, with both question marks: How are you? (to a friend)", "answer": "¿Cómo estás?", "accept": [], "why": "Questions open with *¿*. *Cómo* takes a mark when it asks, and *estás* stresses its last syllable." },
+    { "prompt": "Type in Spanish: Thank you very much.", "answer": "Muchas gracias.", "accept": [], "why": "In Latin America the *c* of *gracias* is a plain s: GRAH-syahs." },
+    { "prompt": "Type in Spanish: I don't understand.", "answer": "No entiendo.", "accept": [], "why": "No accents here: *entiendo* ends in a vowel and stresses TIEN, as the rule predicts." }
   ],
   "pitfalls": [
     { "wrong": "Soy de Bogota.", "right": "Soy de Bogotá.", "why": "Without the mark, a Spanish reader says BO-go-ta. The mark is part of the spelling, and the checker reads it like a Bogotano would." },
-    { "wrong": "Me yamo Tomás.", "right": "Me llamo Tomás.", "why": "ll and y sound the same in most of Latin America, but the spelling still matters." },
-    { "wrong": "Como estas?", "right": "¿Cómo estás?", "why": "A question opens with ¿, and cómo takes a mark when it's asking." },
-    { "wrong": "Mas despacio, por favor.", "right": "Más despacio, por favor.", "why": "\"More\" is más, with a mark." }
+    { "wrong": "Me yamo Tomás.", "right": "Me llamo Tomás.", "why": "*ll* and *y* sound the same in most of Latin America, but the spelling still matters." },
+    { "wrong": "Como estas?", "right": "¿Cómo estás?", "why": "A question opens with *¿*, and *cómo* takes a mark when it's asking." },
+    { "wrong": "Mas despacio, por favor.", "right": "Más despacio, por favor.", "why": "\"More\" is *más*, with a mark." }
   ],
-  "personal": "Type your own name and your city the Spanish way: Me llamo… Soy de… Then say it out loud once. Where would a Bogotano put the stress?"
+  "personal": "Type your own name and your city the Spanish way: *Me llamo… Soy de…* Then say it out loud once. Where would a Bogotano put the stress?"
 }

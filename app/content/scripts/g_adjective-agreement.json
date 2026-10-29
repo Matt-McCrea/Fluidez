@@ -1,0 +1,47 @@
+{
+  "node": "g:adjective-agreement",
+  "hook": {
+    "line": "You can already say *Tomás está cansado*. But Vale has been up since five, and she's tired too. Today you learn why her tiredness ends in *a*, and how to describe anyone and anything around you.",
+    "es": "¿Cómo está Vale?\nEstá cansada, pero contenta.",
+    "en": "How's Vale?\nShe's tired, but happy."
+  },
+  "examples": [
+    { "es": "Tomás está cansado y Vale está cansada.", "en": "Tomás is tired and Vale is tired." },
+    { "es": "Mariana es colombiana. Tomás es canadiense.", "en": "Mariana is Colombian. Tomás is Canadian." },
+    { "es": "Los clientes están contentos.", "en": "The customers are happy." },
+    { "es": "¿Estás ocupada, Vale?", "en": "Are you busy, Vale? (to a woman)" },
+    { "es": "Mi jefe es muy amable, pero los correos son urgentes.", "en": "My boss is very kind, but the emails are urgent." },
+    { "es": "Vale es una cocinera excelente.", "en": "Vale is an excellent cook." }
+  ],
+  "rule": "In Spanish, a describing word matches the person or thing it describes. Two things can change: the ending for a man or a woman, and an s for more than one.\n\nWords ending in *o* switch to *a*: *cansado*, *cansada*. *Colombiano*, *colombiana*.\nWords ending in *e* or most consonants stay the same for both: *amable*, *canadiense*, *excelente*.\nNationalities ending in a consonant add *a*: *inglés*, *inglesa*. *Español*, *española*.\n\nFor more than one, add *s* after a vowel and *es* after a consonant: *contentos*, *amables*, *españoles*. *Inglés* becomes *ingleses* and loses its accent mark.\n\nA mixed group of men and women uses the *o* form: *Tomás y Vale están cansados*.\n\nThe describing word usually comes after the noun, the other way round from English: *una cocinera excelente*, an excellent cook. English never changes 'tired', so this is the bit to watch.",
+  "smallPrint": "Teachers call this adjective agreement: an adjective agrees in gender and number with its noun.",
+  "readAndPick": [
+    { "es": "Está cansada.", "options": ["He's tired.", "She's tired."], "answer": 1 },
+    { "es": "Es mexicano.", "options": ["He's Mexican.", "She's Mexican."], "answer": 0 },
+    { "es": "Estoy lista.", "options": ["I'm ready (a man speaking).", "I'm ready (a woman speaking)."], "answer": 1 },
+    { "es": "Están contentos.", "options": ["She's happy.", "They're happy.", "He's happy."], "answer": 1 },
+    { "es": "Somos colombianas.", "options": ["We're Colombian (a group of women).", "We're Colombian (a group of men).", "I'm Colombian."], "answer": 0 },
+    { "es": "Mi compañera es japonesa.", "options": ["My colleague is Japanese, and she's a man.", "My colleague is Japanese, and she's a woman."], "answer": 1 },
+    { "es": "Los jefes están ocupados.", "options": ["The boss is busy.", "The bosses are busy."], "answer": 1 },
+    { "es": "¿Estás ocupado?", "options": ["Are you busy? (to a woman)", "Are you busy? (to a man)"], "answer": 1 },
+    { "es": "Tomás y Mariana son amables.", "options": ["Tomás and Mariana are kind.", "Tomás is kind and Mariana isn't."], "answer": 0 },
+    { "es": "Las profesoras son inglesas.", "options": ["The teacher is English.", "The teachers are English.", "The teachers are Spanish."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Fill the gap with *cansado* or *cansada*, and type the whole sentence: *Vale está ___.*", "answer": "Vale está cansada.", "accept": [], "why": "Vale is a woman, so the *o* becomes *a*." },
+    { "prompt": "Fill the gap with *contento* or *contentos*, and type the whole sentence: *Los clientes están ___.*", "answer": "Los clientes están contentos.", "accept": [], "why": "More than one customer, so the describing word takes an *s* too." },
+    { "prompt": "Say: Mariana is Colombian.", "answer": "Mariana es colombiana.", "accept": [], "why": "*Colombiano* ends in *o*, so for a woman it becomes *colombiana*. Nationalities take no capital letter in Spanish." },
+    { "prompt": "Say: My boss is very kind.", "answer": "Mi jefe es muy amable.", "accept": [], "why": "*Amable* ends in *e*, so it's the same for a man or a woman." },
+    { "prompt": "Ask a woman friend: Are you busy?", "answer": "¿Estás ocupada?", "accept": [], "why": "You're talking to a woman, so *ocupada*." },
+    { "prompt": "Make it about more than one: *El cliente es mexicano.*", "answer": "Los clientes son mexicanos.", "accept": [], "why": "Everything that points at the customers changes: *los*, *clientes*, *son*, *mexicanos*." },
+    { "prompt": "Make it about a woman: *Mi amigo es inglés.*", "answer": "Mi amiga es inglesa.", "accept": [], "why": "*Inglés* adds *a* for a woman and drops its accent mark: *inglesa*." },
+    { "prompt": "Say: Tomás and Vale are tired.", "answer": "Tomás y Vale están cansados.", "accept": [], "why": "A man and a woman together take the *o* form, plus *s*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Vale está cansado.", "right": "Vale está cansada.", "why": "Almost. The word follows Vale, not you: she's a woman, so *cansada*." },
+    { "wrong": "Los clientes están contento.", "right": "Los clientes están contentos.", "why": "In Spanish the *s* travels: more than one customer, so *contentos*." },
+    { "wrong": "Es una excelenta profesora.", "right": "Es una profesora excelente.", "why": "*Excelente* ends in *e* and never changes, and it usually goes after the noun." },
+    { "wrong": "Mariana es Colombiana.", "right": "Mariana es colombiana.", "why": "Nationalities are written without a capital letter in Spanish." }
+  ],
+  "personal": "Describe yourself and two people you know with *es* or *está*: where they're from, and how they are today. Watch every ending: *Mi amiga es…*, *Estoy…*"
+}

@@ -1,0 +1,43 @@
+{
+  "node": "p:para-inf",
+  "hook": {
+    "line": "Behind the counter, Vale writes a name on every cup, because each one is for someone. And ask Tomás why he studies Spanish and he has an answer ready. Both jobs use one word: *para*.",
+    "es": "Este tinto es para Don Hernando, y este helado es para Simón.",
+    "en": "This black coffee is for Don Hernando, and this ice cream is for Simón."
+  },
+  "examples": [
+    { "es": "Esta carta es para Rosa.", "en": "This letter is for Rosa." },
+    { "es": "Vale cocina para los clientes.", "en": "Vale cooks for the customers." },
+    { "es": "Estudio español para trabajar en Bogotá.", "en": "I'm studying Spanish to work in Bogotá." },
+    { "es": "Necesito una computadora para trabajar.", "en": "I need a computer for work." },
+    { "es": "¿Para qué estudias español?\nPara hablar con mi abuela.", "en": "What are you studying Spanish for?\nTo talk to my grandmother." },
+    { "es": "Salimos el sábado para bailar.", "en": "We're going out on Saturday to dance." }
+  ],
+  "rule": "*para* + a person or a thing = for:\n*Este helado es para Simón.* This ice cream is for Simón.\n*Este pan es para la fiesta.* This bread is for the party.\n\n*para* + a verb = to, in order to. The verb stays in its basic -ar, -er or -ir form, the one in the dictionary:\n*Estudio para trabajar en Bogotá.*\n\nEnglish often drops \"in order\" and just says \"to\". Spanish can't drop *para*: *Salimos para bailar*, never *Salimos bailar*.\n\nTo ask the reason, use *¿Para qué…?* (what for?). The answer starts with *para*: *Para hablar con mi abuela.*",
+  "smallPrint": "*Para* + infinitive expresses purpose (oraciones finales).",
+  "readAndPick": [
+    { "es": "Este helado es para Simón.", "options": ["This ice cream is Simón's idea.", "This ice cream is for Simón."], "answer": 1 },
+    { "es": "Estudio español para trabajar en Bogotá.", "options": ["I'm studying Spanish because I work in Bogotá.", "I'm studying Spanish to work in Bogotá.", "I study and work in Bogotá."], "answer": 1 },
+    { "es": "Vale cocina para los clientes.", "options": ["Vale cooks for the customers.", "Vale cooks with the customers."], "answer": 0 },
+    { "es": "¿Para qué estudias español?", "options": ["Why are you studying Spanish (to a friend)?", "What are you studying (to a friend)?"], "answer": 0 },
+    { "es": "Salgo al parque para caminar.", "options": ["I go out to the park to walk.", "I walk out of the park.", "I go to the park and then walk."], "answer": 0 },
+    { "es": "Este pan es para la fiesta.", "options": ["This bread is from the party.", "This bread is for the party."], "answer": 1 },
+    { "es": "Tomás estudia para hablar con sus clientes.", "options": ["Tomás studies to talk to his customers.", "Tomás studies and talks with his customers."], "answer": 0 },
+    { "es": "Hay arepas para todos.", "options": ["Everyone has arepas.", "There are arepas for everyone.", "The arepas are for Vale."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Say: This letter is for Rosa.", "answer": "Esta carta es para Rosa.", "accept": [], "why": "For a person: *para* + the name." },
+    { "prompt": "Choose *trabajar* or *trabajo*: Necesito una computadora para ___.", "answer": "Necesito una computadora para trabajar.", "accept": [], "why": "After *para*, the verb stays in its basic form: *trabajar*." },
+    { "prompt": "Say: I'm studying Spanish to work in Bogotá.", "answer": "Estudio español para trabajar en Bogotá.", "accept": ["Yo estudio español para trabajar en Bogotá."], "why": "In order to = *para* + the basic verb." },
+    { "prompt": "Ask a friend: What are you studying Spanish for?", "answer": "¿Para qué estudias español?", "accept": [], "why": "What for = *¿Para qué?*, at the front." },
+    { "prompt": "Answer the last question: To talk to my grandmother.", "answer": "Para hablar con mi abuela.", "accept": [], "why": "The answer to *¿Para qué?* starts with *para*." },
+    { "prompt": "Say: Vale cooks for the customers.", "answer": "Vale cocina para los clientes.", "accept": [], "why": "For people: *para los clientes*." },
+    { "prompt": "Say: We're going out on Saturday to dance.", "answer": "Salimos el sábado para bailar.", "accept": ["El sábado salimos para bailar.", "Salimos para bailar el sábado."], "why": "To dance, as a reason: *para bailar*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Estudio para trabajo en Bogotá.", "right": "Estudio para trabajar en Bogotá.", "why": "After *para*, the verb keeps its -ar ending: *trabajar*, not *trabajo*." },
+    { "wrong": "Salimos el sábado bailar.", "right": "Salimos el sábado para bailar.", "why": "English can say just \"to dance\", but Spanish needs *para* in front." },
+    { "wrong": "Estudio español por trabajar en Bogotá.", "right": "Estudio español para trabajar en Bogotá.", "why": "For a goal, Spanish uses *para*. *Por* is a different word you'll meet later." }
+  ],
+  "personal": "Why are you learning Spanish? Write *Estudio español para…* and finish it with a verb, then add one thing you have that is *para* someone you know."
+}

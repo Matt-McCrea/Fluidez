@@ -1,0 +1,43 @@
+{
+  "node": "p:exclamations-basic",
+  "hook": {
+    "line": "A good listener reacts. In Bogotá the reaction is one tiny frame, *¡Qué…!*, and you'll hear it a hundred times a day at Rosa's café.",
+    "es": "Vale, el pan está listo.\n¡Qué bueno! Tengo hambre.",
+    "en": "Vale, the bread is ready.\nGreat! I'm hungry."
+  },
+  "examples": [
+    { "es": "¡Qué bonito!", "en": "How pretty!" },
+    { "es": "¡Qué chévere!", "en": "How cool!" },
+    { "es": "¡Qué frío!", "en": "It's so cold!" },
+    { "es": "¡Qué caro!", "en": "That's so expensive!" },
+    { "es": "¡Qué amable eres!", "en": "You're so kind (to a friend)!" },
+    { "es": "¡Qué tranquilo está el café hoy!", "en": "The café is so quiet today!" }
+  ],
+  "rule": "To react, put a describing word inside *¡Qué…!*:\n*¡Qué bonito!* How pretty!\n*¡Qué caro!* That's so expensive!\n\nThe word agrees with what you're reacting to: a pretty neighbourhood is *¡Qué bonito!*, a pretty house is *¡Qué bonita!*, pretty shoes or arepas take -s.\n\nIt also works with a feeling or a thing: *¡Qué frío!*, *¡Qué hambre!*, *¡Qué desastre!*\n\nTo say what's so pretty, add it after, verb first: *¡Qué bonito es tu barrio!*\n\nEnglish has many ways in (how, so, what a). Spanish has one: *qué*, always with an accent, and the upside down *¡* at the start. You'll soon add *¡Qué rico!* (delicious) for food.",
+  "smallPrint": "These are exclamatives with *qué*.",
+  "readAndPick": [
+    { "es": "¡Qué bonita!", "options": ["How pretty! (about a house)", "How pretty! (about a neighbourhood)"], "answer": 0 },
+    { "es": "¡Qué caros!", "options": ["That one's so expensive!", "Those are so expensive!"], "answer": 1 },
+    { "es": "¡Qué frío!", "options": ["It's so cold!", "What a cold coffee!", "Is it cold?"], "answer": 0 },
+    { "es": "¡Qué aburrido!", "options": ["How boring!", "I'm bored."], "answer": 0 },
+    { "es": "¡Qué amables son!", "options": ["How kind he is!", "How kind they are!"], "answer": 1 },
+    { "es": "¡Qué cansada estoy!", "options": ["I'm so tired! (a man speaking)", "I'm so tired! (a woman speaking)"], "answer": 1 },
+    { "es": "¡Qué desastre!", "options": ["What a disaster!", "Is it a disaster?", "That's not a disaster."], "answer": 0 },
+    { "es": "¡Qué bonito es tu barrio!", "options": ["Is your neighbourhood pretty?", "Your neighbourhood is so pretty!", "My neighbourhood is so pretty!"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *bonito* or *bonita*: Mariana shows you her house. ¡Qué ___!", "answer": "¡Qué bonita!", "accept": ["Qué bonita."], "why": "*La casa* is feminine, so *bonita*." },
+    { "prompt": "React to a pricey bill: That's so expensive!", "answer": "¡Qué caro!", "accept": ["Qué caro."], "why": "*¡Qué* + the describing word, nothing else needed." },
+    { "prompt": "It's six in the morning in Bogotá. React: It's so cold!", "answer": "¡Qué frío!", "accept": ["Qué frío."], "why": "*Frío* works on its own after *qué*." },
+    { "prompt": "Tell a friend: You're so kind!", "answer": "¡Qué amable eres!", "accept": ["Qué amable eres."], "why": "Add the verb after the describing word: *amable eres*." },
+    { "prompt": "Vale has a party on Saturday. React: How cool!", "answer": "¡Qué chévere!", "accept": ["Qué chévere."], "why": "*Chévere* is the Colombian cool." },
+    { "prompt": "Say: The café is so quiet today!", "answer": "¡Qué tranquilo está el café hoy!", "accept": ["¡Qué tranquilo está hoy el café!"], "why": "*Qué* + word first, then the verb, then what you mean." },
+    { "prompt": "Make it about a woman: ¡Qué nervioso estoy! (a woman speaking)", "answer": "¡Qué nerviosa estoy!", "accept": ["Qué nerviosa estoy."], "why": "A woman speaking: *nerviosa*." }
+  ],
+  "pitfalls": [
+    { "wrong": "¡Que bonito!", "right": "¡Qué bonito!", "why": "In a reaction, *qué* always has its accent." },
+    { "wrong": "¡Qué bonito es la casa!", "right": "¡Qué bonita es la casa!", "why": "The word agrees with what you mean: *la casa*, so *bonita*." },
+    { "wrong": "¡Cómo bonito!", "right": "¡Qué bonito!", "why": "English says how pretty, but Spanish reacts with *qué*, not *cómo*." }
+  ],
+  "personal": "Think of three things from your day: something pretty, something expensive, something boring. React to each with *¡Qué…!*"
+}

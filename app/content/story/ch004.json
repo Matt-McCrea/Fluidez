@@ -2,15 +2,11 @@
   "id": "ch004",
   "unit": "u02",
   "title": "El señor Ruiz",
-  "text": "Vale llega de la tienda y del banco. Hernando está con un tinto, como todos los días.\nHernando: Tomás, tú no hablas español. ¡Tú lees español! Hablas como un profesor de la universidad.\nTomás: Es que estudio español en la computadora.\nHernando: ¿En la computadora? Yo estudio con Simón. ¿Y en Toronto? ¿Trabajas en una oficina?\nTomás: Sí, claro. Trabajo en software, en una empresa de Toronto. Llego a la oficina a las nueve. Leo correos en la computadora. Hablo con el jefe y con los compañeros. Termino a las cinco.\nHernando: El horario de Rosa era de seis a seis.\nLa verdad: no hay oficina. No hay jefe, no hay compañeros, no hay reuniones. No hay trabajo.\nRiiing.\nTomás: ¿Aló? Sí, buenos días, señor Ruiz. Sí, el café de Rosa. ¿Un cliente? ¿Una empresa? ¿Y la empresa compra el café ya? Claro. Listo. Chao, señor Ruiz.\nTomás termina. Vale está en el café, con el pan. Vale está mal.\nVale: ¿Una empresa compra el café, Tomás?\nTomás: Es que... Vale...\nHernando: ¿El señor Ruiz? ¿El señor Ruiz de Altamira?\nTomás: No sé.\nSimón: ¡Chao, señor Ruiz! ¡Chao, chao!",
+  "text": "Vale llega de la tienda y del banco. Hernando está con un tinto.\nHernando: Tomás, tú no hablas español. ¡Tú lees español! Hablas como un profesor de la universidad.\nTomás: Es que estudio español en la computadora.\nHernando: ¿En la computadora? Yo estudio con Simón. ¿Y en Toronto? ¿Trabajas en una oficina?\nTomás: Sí, claro. Trabajo en software, en una empresa de Toronto. Llego a la oficina a las nueve. Leo correos en la computadora. Hablo con el jefe y con los compañeros. Termino a las cinco.\nHernando: El horario de Rosa era de seis a seis.\nLa verdad: no hay oficina. No hay jefe, no hay compañeros, no hay reuniones. No hay trabajo.\nRiiing.\nTomás: ¿Sí? Buenos días, señor Ruiz. Sí, el café de Rosa. ¿Un cliente? ¿Una empresa? ¿Y la empresa compra el café ya? Claro. Listo. Chao, señor Ruiz.\nTomás termina. Vale está en el café, con el pan. Vale está mal.\nVale: ¿Una empresa compra el café, Tomás?\nTomás: Es que... Vale...\nHernando: ¿El señor Ruiz? ¿El señor Ruiz de Altamira?\nTomás: No sé.\nSimón: ¡Chao, señor Ruiz! ¡Chao, chao!",
   "gloss": [
     {
       "es": "Riiing",
       "en": "(the phone rings)"
-    },
-    {
-      "es": "¿Aló?",
-      "en": "Hello? (on the phone, in Colombia)"
     },
     {
       "es": "¿Y la empresa compra el café ya?",
@@ -35,7 +31,7 @@
     {
       "q": "What is the truth about Tomás's job in Toronto?",
       "options": [
-        "There is no job — no office, no boss, no colleagues",
+        "There is no job: no office, no boss, no colleagues",
         "He works from nine to five in an office",
         "He is a doctor",
         "He works for Altamira"
@@ -95,27 +91,15 @@
     }
   ],
   "requires": [
-    "c:alo",
-    "c:aqui-tiene",
-    "c:bueno-no-se",
     "c:chao-nos-vemos",
     "c:claro-listo",
-    "c:con-el-ella",
     "c:era",
     "c:es-que",
-    "c:eso-seria-todo",
     "c:hay",
     "c:hola-buenos-dias",
     "c:la-verdad",
-    "c:me-avisas",
-    "c:me-parece-bien",
-    "c:no-cierto",
-    "c:no-hablemos-de-eso",
     "c:no-se",
-    "c:sabes-que-me-paso",
-    "c:sera-otro-dia",
     "c:trabajo-en",
-    "g:adjective-agreement",
     "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
@@ -123,9 +107,7 @@
     "g:present-ar",
     "g:present-er-ir",
     "g:ser-identity",
-    "g:that-clauses",
-    "g:yo-irregular",
-    "p:todos-los-dias"
+    "g:yo-irregular"
   ],
   "lexemes": [
     "l:banco",

@@ -48,6 +48,14 @@ The developer Altamira is buying up the block. Each unit's `storyArc` says what 
 - No two chapters or scenes may share a plot device or an opening.
 - The gate's near-duplicate check fails pairs over 0.6 4-gram overlap. Aim far below it.
 
+## No dashes
+Never use em dashes, en dashes or spaced hyphens anywhere: not in Spanish, not in English, not in dialogue.
+- For dialogue, write each speaker's line as its own sentence, or as `Vale: ¿Ya comiste?`. In a bank `dialogue` sentence, separate the turns with a newline: `¿Ya comiste?\nTodavía no.`
+- In English prose, use a full stop, comma, colon or brackets instead.
+
+## Chunks and variants
+A Spanish string and its English must be one exact translation pair. Never pack variants into one string with `/`. If a phrase has variants, they are separate pairs.
+
 ## Answers people type
 - Every `answer`/`accept` must be typeable as written. List real alternatives in `accept`, e.g. "Me llamo Ana" and "Soy Ana" for "My name is Ana" where both are natural.
 - Never write a gap with more than one valid answer unless every one of them is listed.

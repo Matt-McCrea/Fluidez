@@ -31,7 +31,6 @@
     "acceptEn": [],
     "requires": [
       "c:hola-buenos-dias",
-      "g:adjective-agreement",
       "g:ser-identity",
       "l:bueno",
       "l:día",
@@ -75,15 +74,12 @@
     "acceptEn": [],
     "requires": [
       "c:me-llamo",
-      "g:present-ar",
-      "g:questions",
       "g:reflexive-routine",
       "l:cómo",
       "l:llamarse"
     ],
     "targets": [
-      "c:me-llamo",
-      "g:present-ar"
+      "c:me-llamo"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -98,15 +94,12 @@
     "acceptEn": [],
     "requires": [
       "c:me-llamo",
-      "g:present-ar",
-      "g:questions",
       "g:reflexive-routine",
       "l:cómo",
       "l:llamarse"
     ],
     "targets": [
-      "c:me-llamo",
-      "g:present-ar"
+      "c:me-llamo"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -124,13 +117,11 @@
     "requires": [
       "c:bien-y-tu",
       "c:me-llamo",
-      "g:present-ar",
       "g:reflexive-routine",
       "l:llamarse"
     ],
     "targets": [
-      "c:me-llamo",
-      "g:present-ar"
+      "c:me-llamo"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -210,7 +201,6 @@
       "c:como-estas",
       "c:hola-buenos-dias",
       "g:estar-location-states",
-      "g:questions",
       "l:cómo",
       "l:estar"
     ],
@@ -234,9 +224,7 @@
     "requires": [
       "c:como-estas",
       "c:hola-buenos-dias",
-      "g:adjective-agreement",
       "g:estar-location-states",
-      "g:questions",
       "l:bueno",
       "l:cómo",
       "l:día",
@@ -360,12 +348,9 @@
     "acceptEn": [],
     "requires": [
       "c:si-soy-yo",
-      "g:ser-identity",
       "l:ser"
     ],
-    "targets": [
-      "g:ser-identity"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u01",
     "theme": "greetings and names",
@@ -417,7 +402,6 @@
     "acceptEn": [],
     "requires": [
       "c:hola-buenos-dias",
-      "g:adjective-agreement",
       "l:bueno",
       "l:día"
     ],
@@ -476,6 +460,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:ser-identity",
       "l:ser"
     ],
@@ -533,15 +518,12 @@
     "acceptEn": [],
     "requires": [
       "c:me-llamo",
-      "g:present-ar",
-      "g:questions",
       "g:reflexive-routine",
       "l:cómo",
       "l:llamarse"
     ],
     "targets": [
-      "c:me-llamo",
-      "g:present-ar"
+      "c:me-llamo"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -579,7 +561,6 @@
     "requires": [
       "c:me-llamo",
       "c:mucho-gusto",
-      "g:present-ar",
       "g:reflexive-routine",
       "l:gusto",
       "l:llamarse",
@@ -588,7 +569,6 @@
     "targets": [
       "c:me-llamo",
       "c:mucho-gusto",
-      "g:present-ar",
       "l:gusto",
       "l:señor"
     ],
@@ -629,13 +609,11 @@
     "acceptEn": [],
     "requires": [
       "c:me-llamo",
-      "g:present-ar",
       "g:reflexive-routine",
       "l:llamarse"
     ],
     "targets": [
-      "c:me-llamo",
-      "g:present-ar"
+      "c:me-llamo"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -653,16 +631,13 @@
     "requires": [
       "c:hola-buenos-dias",
       "c:me-llamo",
-      "g:present-ar",
-      "g:questions",
       "g:reflexive-routine",
       "l:cómo",
       "l:llamarse"
     ],
     "targets": [
       "c:hola-buenos-dias",
-      "c:me-llamo",
-      "g:present-ar"
+      "c:me-llamo"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -678,9 +653,6 @@
     "requires": [
       "c:hola-buenos-dias",
       "c:me-llamo",
-      "g:adjective-agreement",
-      "g:present-ar",
-      "g:questions",
       "g:reflexive-routine",
       "l:bueno",
       "l:cómo",
@@ -690,7 +662,6 @@
     "targets": [
       "c:hola-buenos-dias",
       "c:me-llamo",
-      "g:present-ar",
       "l:bueno",
       "l:día"
     ],
@@ -727,6 +698,7 @@
     ],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:ser-identity",
       "l:ser"
     ],
@@ -747,6 +719,7 @@
     ],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
@@ -811,9 +784,9 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:alo",
       "c:como-estas",
       "g:estar-location-states",
-      "g:questions",
       "l:buena",
       "l:cómo",
       "l:estar"
@@ -836,7 +809,6 @@
       "c:como-estas",
       "c:hola-buenos-dias",
       "g:estar-location-states",
-      "g:questions",
       "l:cómo",
       "l:estar"
     ],
@@ -857,7 +829,6 @@
     "acceptEn": [],
     "requires": [
       "c:hola-buenos-dias",
-      "g:adjective-agreement",
       "l:bueno",
       "l:día",
       "l:señor"
@@ -903,7 +874,6 @@
       "c:bien-y-tu",
       "c:como-estas",
       "g:estar-location-states",
-      "g:questions",
       "l:cómo",
       "l:estar"
     ],
@@ -988,8 +958,6 @@
     "requires": [
       "c:me-llamo",
       "c:mucho-gusto",
-      "g:present-ar",
-      "g:questions",
       "g:reflexive-routine",
       "l:cómo",
       "l:gusto",
@@ -998,7 +966,6 @@
     "targets": [
       "c:me-llamo",
       "c:mucho-gusto",
-      "g:present-ar",
       "l:gusto"
     ],
     "kind": "dialogue",
@@ -1014,13 +981,11 @@
     "acceptEn": [],
     "requires": [
       "c:me-llamo",
-      "g:present-ar",
       "g:reflexive-routine",
       "l:llamarse"
     ],
     "targets": [
-      "c:me-llamo",
-      "g:present-ar"
+      "c:me-llamo"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -1036,15 +1001,12 @@
     "requires": [
       "c:bien-y-tu",
       "c:me-llamo",
-      "g:present-ar",
-      "g:questions",
       "g:reflexive-routine",
       "l:cómo",
       "l:llamarse"
     ],
     "targets": [
-      "c:me-llamo",
-      "g:present-ar"
+      "c:me-llamo"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -1150,12 +1112,9 @@
     "acceptEn": [],
     "requires": [
       "c:si-soy-yo",
-      "g:ser-identity",
       "l:ser"
     ],
-    "targets": [
-      "g:ser-identity"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u01",
     "theme": "greetings and names",
@@ -1171,7 +1130,6 @@
     "acceptEn": [],
     "requires": [
       "c:hola-buenos-dias",
-      "g:adjective-agreement",
       "g:ser-identity",
       "l:bueno",
       "l:día",
@@ -1215,7 +1173,6 @@
     "acceptEn": [],
     "requires": [
       "c:hola-buenos-dias",
-      "g:adjective-agreement",
       "l:bueno",
       "l:día"
     ],
@@ -1238,7 +1195,6 @@
     "requires": [
       "c:me-llamo",
       "c:soy-de",
-      "g:present-ar",
       "g:reflexive-routine",
       "g:ser-identity",
       "l:llamarse",
@@ -1247,7 +1203,6 @@
     "targets": [
       "c:me-llamo",
       "c:soy-de",
-      "g:present-ar",
       "g:ser-identity"
     ],
     "kind": "statement",
@@ -1264,7 +1219,6 @@
     "requires": [
       "c:me-llamo",
       "g:gender-articles",
-      "g:present-ar",
       "g:reflexive-routine",
       "l:café",
       "l:llamarse",
@@ -1273,7 +1227,6 @@
     "targets": [
       "c:me-llamo",
       "g:gender-articles",
-      "g:present-ar",
       "l:café"
     ],
     "kind": "statement",
@@ -1290,7 +1243,6 @@
     "requires": [
       "c:como-estas",
       "g:estar-location-states",
-      "g:questions",
       "l:cómo",
       "l:estar"
     ],
@@ -1357,9 +1309,7 @@
     "requires": [
       "c:como-estas",
       "c:hola-buenos-dias",
-      "g:adjective-agreement",
       "g:estar-location-states",
-      "g:questions",
       "l:bueno",
       "l:cómo",
       "l:día",
@@ -1414,7 +1364,6 @@
       "c:hola-buenos-dias",
       "c:me-llamo",
       "c:soy-de",
-      "g:present-ar",
       "g:reflexive-routine",
       "g:ser-identity",
       "l:llamarse",
@@ -1424,7 +1373,6 @@
       "c:hola-buenos-dias",
       "c:me-llamo",
       "c:soy-de",
-      "g:present-ar",
       "g:ser-identity"
     ],
     "kind": "statement",
@@ -1519,8 +1467,6 @@
     "acceptEn": [],
     "requires": [
       "c:chao-nos-vemos",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:ver"
     ],
     "targets": [
@@ -1539,6 +1485,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:chao-nos-vemos",
       "c:entonces-bueno",
       "l:bueno"
     ],
@@ -1559,8 +1506,6 @@
     "acceptEn": [],
     "requires": [
       "c:chao-nos-vemos",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:señora",
       "l:ver"
     ],
@@ -1582,9 +1527,7 @@
     "requires": [
       "c:como-estas",
       "c:hola-buenos-dias",
-      "g:adjective-agreement",
       "g:estar-location-states",
-      "g:questions",
       "l:bueno",
       "l:cómo",
       "l:día",
@@ -1613,7 +1556,6 @@
       "c:bien-y-tu",
       "c:como-estas",
       "g:estar-location-states",
-      "g:questions",
       "l:cómo",
       "l:estar",
       "l:señora"
@@ -1696,7 +1638,6 @@
     "acceptEn": [],
     "requires": [
       "c:soy-de",
-      "g:questions-prepositions",
       "g:ser-identity",
       "l:dónde",
       "l:ser"
@@ -1797,7 +1738,6 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:that-clauses",
       "l:creer",
@@ -1897,6 +1837,7 @@
     ],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:ser-identity",
       "l:ser"
     ],
@@ -2051,6 +1992,7 @@
     ],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:ser-identity",
       "l:inglés",
       "l:ser"
@@ -2149,6 +2091,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:ser-identity",
       "l:ser"
     ],
@@ -2168,7 +2111,6 @@
     "acceptEn": [],
     "requires": [
       "c:soy-de",
-      "g:questions-prepositions",
       "g:ser-identity",
       "l:dónde",
       "l:ser"
@@ -2478,13 +2420,11 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:soy-de",
       "g:ser-identity",
       "l:colombiano",
       "l:ser"
     ],
     "targets": [
-      "c:soy-de",
       "g:ser-identity"
     ],
     "kind": "statement",
@@ -3460,8 +3400,7 @@
       "l:vivir"
     ],
     "targets": [
-      "c:vivo-en",
-      "g:gender-articles"
+      "c:vivo-en"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -3818,13 +3757,11 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:soy-de",
       "g:ser-identity",
       "l:ingeniero",
       "l:ser"
     ],
     "targets": [
-      "c:soy-de",
       "g:ser-identity"
     ],
     "kind": "statement",
@@ -3880,6 +3817,7 @@
     ],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:ser-identity",
       "l:médico",
       "l:ser"
@@ -3979,6 +3917,7 @@
     ],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:ser-identity",
       "l:ingeniero",
       "l:ser"
@@ -4603,15 +4542,14 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:trabajo-en",
       "g:gender-articles",
       "g:present-ar",
       "l:café",
       "l:mesero",
-      "l:trabajar"
+      "l:trabajar",
+      "p:trabajar-de"
     ],
     "targets": [
-      "c:trabajo-en",
       "g:gender-articles",
       "g:present-ar",
       "l:café",
@@ -4631,7 +4569,8 @@
     "requires": [
       "g:present-ar",
       "l:mesero",
-      "l:trabajar"
+      "l:trabajar",
+      "p:trabajar-de"
     ],
     "targets": [
       "g:present-ar",
@@ -4651,7 +4590,8 @@
     "requires": [
       "g:present-ar",
       "l:mesero",
-      "l:trabajar"
+      "l:trabajar",
+      "p:trabajar-de"
     ],
     "targets": [
       "g:present-ar",
@@ -4671,7 +4611,8 @@
     "requires": [
       "g:present-ar",
       "l:mesero",
-      "l:trabajar"
+      "l:trabajar",
+      "p:trabajar-de"
     ],
     "targets": [
       "g:present-ar",
@@ -4691,7 +4632,8 @@
     "requires": [
       "g:present-ar",
       "l:ingeniero",
-      "l:trabajar"
+      "l:trabajar",
+      "p:trabajar-de"
     ],
     "targets": [
       "g:present-ar",
@@ -4710,7 +4652,6 @@
     "acceptEn": [],
     "requires": [
       "c:trabajo-en",
-      "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
       "l:café",
@@ -4720,7 +4661,6 @@
     ],
     "targets": [
       "c:trabajo-en",
-      "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
       "l:café",
@@ -4898,14 +4838,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:trabajo-en",
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
       "l:trabajo"
     ],
     "targets": [
-      "c:trabajo-en",
       "g:gender-articles",
       "g:ser-identity",
       "l:trabajo"
@@ -5000,7 +4938,8 @@
       "l:loro",
       "l:mesero",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:trabajar-de"
     ],
     "targets": [
       "g:gender-articles",
@@ -5150,14 +5089,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:soy-de",
       "g:ser-identity",
       "l:inglés",
       "l:profesor",
       "l:ser"
     ],
     "targets": [
-      "c:soy-de",
       "g:ser-identity"
     ],
     "kind": "dialogue",
@@ -5172,14 +5109,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:soy-de",
       "g:ser-identity",
       "l:español",
       "l:profesor",
       "l:ser"
     ],
     "targets": [
-      "c:soy-de",
       "g:ser-identity",
       "l:español"
     ],
@@ -5482,13 +5417,11 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:soy-de",
       "g:ser-identity",
       "l:amigo",
       "l:ser"
     ],
     "targets": [
-      "c:soy-de",
       "g:ser-identity"
     ],
     "kind": "statement",
@@ -5611,16 +5544,15 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:soy-de",
       "g:present-ar",
       "g:ser-identity",
       "l:estudiante",
       "l:mesero",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:trabajar-de"
     ],
     "targets": [
-      "c:soy-de",
       "g:present-ar",
       "g:ser-identity",
       "l:trabajar"
@@ -5821,7 +5753,6 @@
     ],
     "targets": [
       "c:quiero",
-      "g:gender-articles",
       "l:jugo",
       "l:querer"
     ],
@@ -5847,7 +5778,6 @@
     ],
     "targets": [
       "c:quiero",
-      "g:gender-articles",
       "l:café",
       "l:leche",
       "l:pan",
@@ -5865,6 +5795,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
       "c:quiero",
       "g:stem-boot",
       "l:leche",
@@ -5906,6 +5837,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
       "g:gender-articles",
       "l:tinto"
     ],
@@ -5925,6 +5857,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
       "c:quiero",
       "g:gender-articles",
       "g:stem-boot",
@@ -5933,7 +5866,6 @@
     ],
     "targets": [
       "c:quiero",
-      "g:gender-articles",
       "l:agua",
       "l:querer"
     ],
@@ -5953,7 +5885,6 @@
       "c:por-favor",
       "g:conditional",
       "g:gender-articles",
-      "g:gustar-basic",
       "l:favor",
       "l:gustar",
       "l:jugo"
@@ -5961,7 +5892,6 @@
     "targets": [
       "c:me-gustaria",
       "c:por-favor",
-      "g:gender-articles",
       "l:favor",
       "l:jugo"
     ],
@@ -5979,15 +5909,12 @@
     "requires": [
       "c:me-gustaria",
       "g:conditional",
-      "g:gender-articles",
-      "g:gustar-basic",
       "l:café",
       "l:gustar",
       "l:leche"
     ],
     "targets": [
       "c:me-gustaria",
-      "g:gender-articles",
       "l:café",
       "l:leche"
     ],
@@ -6006,7 +5933,6 @@
       "c:me-gustaria",
       "g:conditional",
       "g:gender-articles",
-      "g:gustar-basic",
       "l:agua",
       "l:gustar",
       "l:pan"
@@ -6031,9 +5957,7 @@
     "requires": [
       "c:me-regala",
       "c:por-favor",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
       "l:agua",
       "l:favor",
       "l:regalar",
@@ -6043,7 +5967,6 @@
       "c:me-regala",
       "c:por-favor",
       "g:gender-articles",
-      "g:present-ar",
       "l:agua",
       "l:favor",
       "l:regalar",
@@ -6062,16 +5985,12 @@
     "acceptEn": [],
     "requires": [
       "c:me-regala",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
       "l:agua",
       "l:regalar"
     ],
     "targets": [
       "c:me-regala",
-      "g:gender-articles",
-      "g:present-ar",
       "l:agua",
       "l:regalar"
     ],
@@ -6089,8 +6008,6 @@
     "requires": [
       "c:me-regala",
       "c:por-favor",
-      "g:direct-objects",
-      "g:present-ar",
       "l:favor",
       "l:pan",
       "l:regalar"
@@ -6098,7 +6015,6 @@
     "targets": [
       "c:me-regala",
       "c:por-favor",
-      "g:present-ar",
       "l:favor",
       "l:pan",
       "l:regalar"
@@ -6116,9 +6032,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-regala",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
       "l:jugo",
       "l:pan",
       "l:regalar"
@@ -6126,7 +6040,6 @@
     "targets": [
       "c:me-regala",
       "g:gender-articles",
-      "g:present-ar",
       "l:jugo",
       "l:pan",
       "l:regalar"
@@ -6145,9 +6058,7 @@
     "requires": [
       "c:me-regala",
       "c:por-favor",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
       "l:favor",
       "l:leche",
       "l:regalar"
@@ -6155,8 +6066,6 @@
     "targets": [
       "c:me-regala",
       "c:por-favor",
-      "g:gender-articles",
-      "g:present-ar",
       "l:favor",
       "l:leche",
       "l:regalar"
@@ -6175,9 +6084,7 @@
     "requires": [
       "c:me-regala",
       "c:por-favor",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
       "l:favor",
       "l:nombre",
       "l:regalar"
@@ -6185,8 +6092,6 @@
     "targets": [
       "c:me-regala",
       "c:por-favor",
-      "g:gender-articles",
-      "g:present-ar",
       "l:favor",
       "l:regalar"
     ],
@@ -6203,16 +6108,12 @@
     "acceptEn": [],
     "requires": [
       "c:me-regala",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
       "l:apellido",
       "l:regalar"
     ],
     "targets": [
       "c:me-regala",
-      "g:gender-articles",
-      "g:present-ar",
       "l:regalar"
     ],
     "kind": "question",
@@ -6238,7 +6139,6 @@
     ],
     "targets": [
       "c:cuanto-cuesta",
-      "g:gender-articles",
       "l:tinto"
     ],
     "kind": "question",
@@ -6264,7 +6164,6 @@
     ],
     "targets": [
       "c:cuanto-cuesta",
-      "g:gender-articles",
       "l:pan"
     ],
     "kind": "question",
@@ -6283,15 +6182,12 @@
     "acceptEn": [],
     "requires": [
       "c:cuanto-cuesta",
-      "c:cuanto-le-debo",
       "g:questions",
-      "g:ser-identity",
       "l:cuánto",
       "l:ser"
     ],
     "targets": [
-      "c:cuanto-cuesta",
-      "g:ser-identity"
+      "c:cuanto-cuesta"
     ],
     "kind": "question",
     "unit": "u01",
@@ -6306,7 +6202,6 @@
     "acceptEn": [],
     "requires": [
       "c:cuanto-cuesta",
-      "c:cuanto-le-debo",
       "g:questions",
       "g:ser-identity",
       "l:cuánto",
@@ -6332,7 +6227,6 @@
     "requires": [
       "c:cuanto-cuesta",
       "g:gender-articles",
-      "g:present-er-ir",
       "g:questions",
       "l:cuánto",
       "l:jugo",
@@ -6340,7 +6234,6 @@
     ],
     "targets": [
       "c:cuanto-cuesta",
-      "g:gender-articles",
       "l:jugo"
     ],
     "kind": "question",
@@ -6367,7 +6260,6 @@
     ],
     "targets": [
       "c:cuanto-cuesta",
-      "g:gender-articles",
       "l:café",
       "l:leche"
     ],
@@ -6409,13 +6301,11 @@
     "acceptEn": [],
     "requires": [
       "c:a-la-orden",
-      "g:gender-articles",
       "l:orden",
       "l:señora"
     ],
     "targets": [
       "c:a-la-orden",
-      "g:gender-articles",
       "l:orden"
     ],
     "kind": "dialogue",
@@ -6431,7 +6321,6 @@
     "acceptEn": [],
     "requires": [
       "c:a-la-orden",
-      "g:gender-articles",
       "l:jugo",
       "l:orden",
       "l:pan",
@@ -6439,7 +6328,6 @@
     ],
     "targets": [
       "c:a-la-orden",
-      "g:gender-articles",
       "l:jugo",
       "l:orden",
       "l:pan",
@@ -6484,7 +6372,6 @@
     "requires": [
       "c:claro-listo",
       "g:gender-articles",
-      "g:that-clauses",
       "l:claro",
       "l:jugo"
     ],
@@ -6507,7 +6394,6 @@
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
-      "g:that-clauses",
       "l:claro",
       "l:señora"
     ],
@@ -6573,6 +6459,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
       "l:tinto"
     ],
     "targets": [
@@ -6631,18 +6518,14 @@
     "acceptEn": [],
     "requires": [
       "c:hay",
-      "c:hay-que",
-      "c:que-oso",
       "c:que-pena",
       "g:hay-vs-esta",
-      "g:questions",
       "l:leche",
       "l:pena",
       "l:qué"
     ],
     "targets": [
       "c:hay",
-      "c:hay-que",
       "c:que-pena",
       "l:leche",
       "l:pena"
@@ -6792,8 +6675,7 @@
       "l:cliente"
     ],
     "targets": [
-      "c:hay",
-      "g:gender-articles"
+      "c:hay"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -6899,14 +6781,12 @@
     "acceptEn": [],
     "requires": [
       "c:tengo",
-      "g:gender-articles",
       "g:yo-irregular",
       "l:pregunta",
       "l:tener"
     ],
     "targets": [
       "c:tengo",
-      "g:gender-articles",
       "l:tener"
     ],
     "kind": "statement",
@@ -6929,7 +6809,6 @@
     ],
     "targets": [
       "c:tengo",
-      "g:gender-articles",
       "l:tener"
     ],
     "kind": "statement",
@@ -7128,6 +7007,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:ser-identity",
       "l:café",
@@ -7557,6 +7437,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "g:gender-articles",
       "g:present-ar",
       "l:ayer",
@@ -7631,14 +7512,11 @@
       "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
       "l:gustar",
       "l:tinto"
     ],
     "targets": [
       "c:me-gusta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:tinto"
     ],
     "kind": "statement",
@@ -7656,14 +7534,11 @@
       "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
       "l:gustar",
       "l:leche"
     ],
     "targets": [
       "c:me-gusta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:leche"
     ],
     "kind": "statement",
@@ -7681,14 +7556,11 @@
       "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
       "l:gustar",
       "l:pan"
     ],
     "targets": [
       "c:me-gusta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:pan"
     ],
     "kind": "question",
@@ -7706,14 +7578,11 @@
       "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
       "l:gustar",
       "l:jugo"
     ],
     "targets": [
       "c:me-gusta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:jugo"
     ],
     "kind": "statement",
@@ -7731,14 +7600,11 @@
       "c:me-encanta",
       "g:gender-articles",
       "g:gustar-full",
-      "g:present-ar",
       "l:café",
       "l:encantar"
     ],
     "targets": [
       "c:me-encanta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:café",
       "l:encantar"
     ],
@@ -7757,14 +7623,12 @@
       "c:me-encanta",
       "g:gender-articles",
       "g:gustar-full",
-      "g:present-ar",
       "l:encantar",
       "l:pan"
     ],
     "targets": [
       "c:me-encanta",
       "g:gender-articles",
-      "g:present-ar",
       "l:encantar",
       "l:pan"
     ],
@@ -7783,14 +7647,11 @@
       "c:me-encanta",
       "g:gender-articles",
       "g:gustar-full",
-      "g:present-ar",
       "l:encantar",
       "l:tinto"
     ],
     "targets": [
       "c:me-encanta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:encantar",
       "l:tinto"
     ],
@@ -7809,14 +7670,12 @@
       "c:me-encanta",
       "g:gender-articles",
       "g:gustar-full",
-      "g:present-ar",
       "l:encantar",
       "l:tinto"
     ],
     "targets": [
       "c:me-encanta",
       "g:gender-articles",
-      "g:present-ar",
       "l:encantar",
       "l:tinto"
     ],
@@ -7873,14 +7732,12 @@
     "requires": [
       "c:a-la-orden",
       "c:gracias-de-nada",
-      "g:gender-articles",
       "l:orden",
       "l:señor"
     ],
     "targets": [
       "c:a-la-orden",
       "c:gracias-de-nada",
-      "g:gender-articles",
       "l:orden",
       "l:señor"
     ],
@@ -8140,7 +7997,6 @@
     "acceptEn": [],
     "requires": [
       "c:cuanto-cuesta",
-      "c:cuanto-le-debo",
       "g:questions",
       "g:ser-identity",
       "l:cuánto",
@@ -8164,7 +8020,6 @@
     "requires": [
       "c:cuanto-cuesta",
       "g:gender-articles",
-      "g:present-er-ir",
       "g:questions",
       "l:agua",
       "l:cuánto",
@@ -8172,7 +8027,6 @@
     ],
     "targets": [
       "c:cuanto-cuesta",
-      "g:gender-articles",
       "l:agua"
     ],
     "kind": "dialogue",
@@ -8208,14 +8062,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:trabajo-en",
       "g:gender-articles",
       "g:present-ar",
       "l:café",
       "l:trabajar"
     ],
     "targets": [
-      "c:trabajo-en",
       "g:gender-articles",
       "g:present-ar",
       "l:café",
@@ -8344,6 +8196,7 @@
     ],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:present-ar",
       "l:trabajar"
     ],
@@ -8536,6 +8389,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:present-ar",
       "l:amigo",
       "l:trabajar"
@@ -8947,14 +8801,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
       "l:pan"
     ],
     "targets": [
-      "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
       "l:pan"
@@ -8990,14 +8842,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
       "l:español"
     ],
     "targets": [
-      "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
       "l:español"
@@ -9143,6 +8993,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:present-ar",
       "l:ayudar"
     ],
@@ -9453,6 +9304,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:present-ar",
       "l:pan",
@@ -9818,6 +9670,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:present-ar",
       "l:café",
@@ -10043,7 +9896,6 @@
       "c:me-encanta",
       "c:porque",
       "c:trabajo-en",
-      "g:gender-articles",
       "g:present-ar",
       "l:café",
       "l:encantar",
@@ -10118,7 +9970,6 @@
       "c:creo-que",
       "g:gender-articles",
       "g:present-ar",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:comprar",
       "l:creer",
@@ -10146,7 +9997,6 @@
     "requires": [
       "c:creo-que",
       "g:present-ar",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:creer",
       "l:trabajar"
@@ -10171,7 +10021,6 @@
     "requires": [
       "c:creo-que",
       "g:present-ar",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:creer",
       "l:trabajar"
@@ -10196,15 +10045,12 @@
     "requires": [
       "c:es-que",
       "g:present-ar",
-      "g:ser-identity",
-      "g:that-clauses",
       "l:ser",
       "l:trabajar"
     ],
     "targets": [
       "c:es-que",
       "g:present-ar",
-      "g:ser-identity",
       "l:trabajar"
     ],
     "kind": "statement",
@@ -10221,8 +10067,6 @@
     "requires": [
       "c:es-que",
       "g:present-ar",
-      "g:ser-identity",
-      "g:that-clauses",
       "l:comprar",
       "l:leche",
       "l:ser"
@@ -10230,7 +10074,6 @@
     "targets": [
       "c:es-que",
       "g:present-ar",
-      "g:ser-identity",
       "l:comprar",
       "l:leche"
     ],
@@ -10248,15 +10091,12 @@
     "requires": [
       "c:es-que",
       "g:present-ar",
-      "g:ser-identity",
-      "g:that-clauses",
       "l:ayudar",
       "l:ser"
     ],
     "targets": [
       "c:es-que",
       "g:present-ar",
-      "g:ser-identity",
       "l:ayudar"
     ],
     "kind": "statement",
@@ -10449,7 +10289,6 @@
     "acceptEn": [],
     "requires": [
       "c:trabajo-en",
-      "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
       "l:café",
@@ -10459,7 +10298,6 @@
     ],
     "targets": [
       "c:trabajo-en",
-      "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
       "l:café",
@@ -10572,7 +10410,8 @@
     "requires": [
       "g:present-ar",
       "l:mesero",
-      "l:trabajar"
+      "l:trabajar",
+      "p:trabajar-de"
     ],
     "targets": [
       "g:present-ar",
@@ -10701,7 +10540,6 @@
       "c:claro-listo",
       "g:gender-articles",
       "g:present-ar",
-      "g:that-clauses",
       "l:claro",
       "l:comprar",
       "l:pan"
@@ -10727,8 +10565,6 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:direct-objects",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
       "l:poder"
@@ -10750,11 +10586,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "c:me-puede-ayudar",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
       "l:pan",
@@ -10762,7 +10595,6 @@
     ],
     "targets": [
       "c:me-puede-ayudar",
-      "g:gender-articles",
       "l:ayudar",
       "l:pan",
       "l:poder"
@@ -10780,8 +10612,6 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:direct-objects",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
       "l:poder",
@@ -10804,11 +10634,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "c:me-puede-ayudar",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
       "l:español",
@@ -10816,7 +10643,6 @@
     ],
     "targets": [
       "c:me-puede-ayudar",
-      "g:gender-articles",
       "l:ayudar",
       "l:español",
       "l:poder"
@@ -10834,17 +10660,14 @@
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
-      "c:con-el-ella",
       "g:gender-articles",
       "g:present-ar",
-      "g:that-clauses",
       "l:ayudar",
       "l:claro",
       "l:pan"
     ],
     "targets": [
       "c:claro-listo",
-      "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
       "l:claro",
@@ -10864,7 +10687,6 @@
     "requires": [
       "c:claro-listo",
       "g:present-ar",
-      "g:that-clauses",
       "l:ayudar",
       "l:claro"
     ],
@@ -10889,10 +10711,7 @@
       "c:es-que",
       "c:me-puede-ayudar",
       "c:no-entiendo",
-      "g:direct-objects",
-      "g:ser-identity",
       "g:stem-boot",
-      "g:that-clauses",
       "g:verb-infinitive",
       "l:ayudar",
       "l:entender",
@@ -10903,7 +10722,6 @@
       "c:es-que",
       "c:me-puede-ayudar",
       "c:no-entiendo",
-      "g:ser-identity",
       "l:ayudar",
       "l:entender",
       "l:poder"
@@ -10967,7 +10785,6 @@
     "acceptEn": [],
     "requires": [
       "c:no-entiendo",
-      "g:direct-objects",
       "g:stem-boot",
       "l:entender"
     ],
@@ -10988,9 +10805,7 @@
     "acceptEn": [],
     "requires": [
       "c:no-entiendo",
-      "c:que-oso",
       "c:que-pena",
-      "g:questions",
       "g:stem-boot",
       "l:entender",
       "l:pena",
@@ -11123,7 +10938,6 @@
     "requires": [
       "c:mas-despacio",
       "c:no-entiendo",
-      "g:direct-objects",
       "g:stem-boot",
       "l:despacio",
       "l:entender"
@@ -11171,9 +10985,7 @@
     "requires": [
       "c:como-se-dice",
       "c:perdon-disculpe",
-      "g:questions",
       "g:se-impersonal",
-      "g:stem-e-i",
       "l:cómo",
       "l:decir",
       "l:inglés",
@@ -11199,9 +11011,7 @@
     "acceptEn": [],
     "requires": [
       "c:como-se-dice",
-      "g:questions",
       "g:se-impersonal",
-      "g:stem-e-i",
       "l:cómo",
       "l:decir",
       "l:inglés",
@@ -11225,9 +11035,7 @@
     "acceptEn": [],
     "requires": [
       "c:como-se-dice",
-      "g:questions",
       "g:se-impersonal",
-      "g:stem-e-i",
       "l:cómo",
       "l:decir",
       "l:inglés",
@@ -11250,9 +11058,7 @@
     "acceptEn": [],
     "requires": [
       "c:como-se-dice",
-      "g:questions",
       "g:se-impersonal",
-      "g:stem-e-i",
       "l:cómo",
       "l:decir",
       "l:inglés",
@@ -11277,9 +11083,7 @@
     "requires": [
       "c:como-se-dice",
       "c:perdon-disculpe",
-      "g:questions",
       "g:se-impersonal",
-      "g:stem-e-i",
       "l:cómo",
       "l:decir",
       "l:inglés",
@@ -11306,9 +11110,7 @@
     "acceptEn": [],
     "requires": [
       "c:como-se-dice",
-      "g:questions",
       "g:se-impersonal",
-      "g:stem-e-i",
       "l:cómo",
       "l:decir",
       "l:inglés",
@@ -11333,9 +11135,7 @@
     "requires": [
       "c:como-se-dice",
       "c:mucho-gusto",
-      "g:questions",
       "g:se-impersonal",
-      "g:stem-e-i",
       "l:cómo",
       "l:decir",
       "l:gusto",
@@ -11360,11 +11160,8 @@
     "acceptEn": [],
     "requires": [
       "c:como-se-dice",
-      "c:que-oso",
       "c:que-pena",
-      "g:questions",
       "g:se-impersonal",
-      "g:stem-e-i",
       "l:cómo",
       "l:decir",
       "l:inglés",
@@ -11502,9 +11299,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-oso",
       "c:que-pena",
-      "g:exclamations",
       "l:pena",
       "l:qué"
     ],
@@ -11524,11 +11319,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-oso",
       "c:que-pena",
-      "c:que-pena-molestarlo",
-      "g:prep-pronouns",
-      "g:questions",
       "l:pena",
       "l:qué"
     ],
@@ -11549,12 +11340,8 @@
     "acceptEn": [],
     "requires": [
       "c:hay",
-      "c:que-oso",
       "c:que-pena",
-      "c:que-pena-molestarlo",
       "g:hay-vs-esta",
-      "g:prep-pronouns",
-      "g:questions",
       "l:pan",
       "l:pena",
       "l:qué",
@@ -11579,9 +11366,7 @@
     "acceptEn": [],
     "requires": [
       "c:hay",
-      "c:que-oso",
       "c:que-pena",
-      "g:exclamations",
       "g:hay-vs-esta",
       "l:pena",
       "l:qué",
@@ -11605,10 +11390,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-oso",
       "c:que-pena",
       "c:soy-de",
-      "g:questions",
       "g:ser-identity",
       "l:aquí",
       "l:pena",
@@ -11635,10 +11418,8 @@
     "acceptEn": [],
     "requires": [
       "c:no-entiendo",
-      "c:que-oso",
       "c:que-pena",
       "g:gender-articles",
-      "g:questions",
       "g:stem-boot",
       "l:entender",
       "l:español",
@@ -11648,7 +11429,6 @@
     "targets": [
       "c:no-entiendo",
       "c:que-pena",
-      "g:gender-articles",
       "l:entender",
       "l:español",
       "l:pena"
@@ -11666,13 +11446,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "c:que-oso",
       "c:que-pena",
-      "c:que-pena-molestarlo",
-      "g:direct-objects",
-      "g:exclamations",
-      "g:prep-pronouns",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
       "l:pena",
@@ -11699,12 +11473,8 @@
     "acceptEn": [],
     "requires": [
       "c:me-regala",
-      "c:que-oso",
       "c:que-pena",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
-      "g:questions",
       "l:agua",
       "l:pena",
       "l:qué",
@@ -11713,8 +11483,6 @@
     "targets": [
       "c:me-regala",
       "c:que-pena",
-      "g:gender-articles",
-      "g:present-ar",
       "l:agua",
       "l:pena",
       "l:regalar"
@@ -11731,13 +11499,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:es-que",
-      "c:que-oso",
       "c:que-pena",
-      "c:que-pena-molestarlo",
-      "g:exclamations",
       "g:gender-articles",
-      "g:prep-pronouns",
       "g:ser-identity",
       "l:loro",
       "l:pena",
@@ -11745,7 +11508,6 @@
       "l:ser"
     ],
     "targets": [
-      "c:es-que",
       "c:que-pena",
       "g:gender-articles",
       "g:ser-identity",
@@ -11765,8 +11527,6 @@
     "requires": [
       "c:me-puede-ayudar",
       "c:por-favor",
-      "g:direct-objects",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
       "l:favor",
@@ -11793,7 +11553,6 @@
     "requires": [
       "c:me-puede-ayudar",
       "c:no-entiendo",
-      "g:direct-objects",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
@@ -11822,8 +11581,6 @@
     "requires": [
       "c:me-puede-ayudar",
       "c:perdon-disculpe",
-      "g:direct-objects",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
       "l:perdón",
@@ -11848,11 +11605,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "c:me-puede-ayudar",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
       "l:cliente",
@@ -11879,9 +11633,7 @@
     "requires": [
       "c:hay",
       "c:me-puede-ayudar",
-      "g:direct-objects",
       "g:hay-vs-esta",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
       "l:cliente",
@@ -11906,9 +11658,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
       "l:pan",
@@ -11937,15 +11687,12 @@
     "requires": [
       "c:a-la-orden",
       "c:claro-listo",
-      "g:gender-articles",
-      "g:that-clauses",
       "l:claro",
       "l:orden"
     ],
     "targets": [
       "c:a-la-orden",
       "c:claro-listo",
-      "g:gender-articles",
       "l:claro",
       "l:orden"
     ],
@@ -11964,14 +11711,12 @@
       "c:donde-esta",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:questions",
       "l:café",
       "l:dónde",
       "l:estar"
     ],
     "targets": [
       "c:donde-esta",
-      "g:gender-articles",
       "l:café"
     ],
     "kind": "question",
@@ -11988,7 +11733,6 @@
     "requires": [
       "c:donde-esta",
       "g:estar-location-states",
-      "g:questions",
       "l:dónde",
       "l:estar"
     ],
@@ -12009,7 +11753,6 @@
     "requires": [
       "c:donde-esta",
       "g:estar-location-states",
-      "g:questions",
       "l:dónde",
       "l:estar"
     ],
@@ -12032,7 +11775,6 @@
       "c:perdon-disculpe",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:questions",
       "l:dónde",
       "l:estar",
       "l:perdón"
@@ -12040,7 +11782,6 @@
     "targets": [
       "c:donde-esta",
       "c:perdon-disculpe",
-      "g:gender-articles",
       "l:perdón"
     ],
     "kind": "dialogue",
@@ -12058,14 +11799,12 @@
       "c:donde-esta",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:questions",
       "l:dónde",
       "l:estar",
       "l:leche"
     ],
     "targets": [
       "c:donde-esta",
-      "g:gender-articles",
       "l:leche"
     ],
     "kind": "question",
@@ -12083,14 +11822,12 @@
       "c:donde-esta",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:questions",
       "l:dónde",
       "l:estar",
       "l:pan"
     ],
     "targets": [
       "c:donde-esta",
-      "g:gender-articles",
       "l:pan"
     ],
     "kind": "question",
@@ -12108,14 +11845,12 @@
       "c:donde-esta",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:questions",
       "l:dónde",
       "l:estar",
       "l:señor"
     ],
     "targets": [
       "c:donde-esta",
-      "g:gender-articles",
       "l:señor"
     ],
     "kind": "dialogue",
@@ -12131,11 +11866,8 @@
     "acceptEn": [],
     "requires": [
       "c:donde-esta",
-      "c:que-oso",
       "c:que-pena",
       "g:estar-location-states",
-      "g:gender-articles",
-      "g:questions",
       "l:baño",
       "l:dónde",
       "l:estar",
@@ -12145,7 +11877,6 @@
     "targets": [
       "c:donde-esta",
       "c:que-pena",
-      "g:gender-articles",
       "l:pena"
     ],
     "kind": "dialogue",
@@ -12163,14 +11894,12 @@
       "c:donde-esta",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:questions",
       "l:agua",
       "l:dónde",
       "l:estar"
     ],
     "targets": [
       "c:donde-esta",
-      "g:gender-articles",
       "l:agua"
     ],
     "kind": "question",
@@ -12226,9 +11955,7 @@
     "acceptEn": [],
     "requires": [
       "c:puedo",
-      "c:que-oso",
       "c:que-pena",
-      "g:questions",
       "g:stem-boot",
       "l:hoy",
       "l:pena",
@@ -12256,9 +11983,7 @@
       "c:es-que",
       "c:puedo",
       "g:present-ar",
-      "g:ser-identity",
       "g:stem-boot",
-      "g:that-clauses",
       "l:hoy",
       "l:poder",
       "l:ser",
@@ -12268,7 +11993,6 @@
       "c:es-que",
       "c:puedo",
       "g:present-ar",
-      "g:ser-identity",
       "l:poder",
       "l:trabajar"
     ],
@@ -12285,9 +12009,7 @@
     "acceptEn": [],
     "requires": [
       "c:puedo",
-      "c:tarjeta-o-efectivo",
       "g:stem-boot",
-      "g:verb-infinitive",
       "l:pagar",
       "l:poder",
       "l:tarjeta"
@@ -12310,9 +12032,7 @@
     "requires": [
       "c:perdon-disculpe",
       "c:puedo",
-      "c:tarjeta-o-efectivo",
       "g:stem-boot",
-      "g:verb-infinitive",
       "l:pagar",
       "l:perdón",
       "l:poder",
@@ -12363,9 +12083,7 @@
       "c:hay",
       "c:puedo",
       "g:hay-vs-esta",
-      "g:ser-identity",
       "g:stem-boot",
-      "g:that-clauses",
       "l:poder",
       "l:ser",
       "l:tinto"
@@ -12374,7 +12092,6 @@
       "c:es-que",
       "c:hay",
       "c:puedo",
-      "g:ser-identity",
       "l:poder",
       "l:tinto"
     ],
@@ -12413,13 +12130,11 @@
     "acceptEn": [],
     "requires": [
       "c:hay",
-      "g:gender-articles",
       "g:hay-vs-esta",
       "l:problema"
     ],
     "targets": [
-      "c:hay",
-      "g:gender-articles"
+      "c:hay"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -12439,8 +12154,7 @@
       "l:cliente"
     ],
     "targets": [
-      "c:hay",
-      "g:gender-articles"
+      "c:hay"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -12502,8 +12216,7 @@
       "l:mesero"
     ],
     "targets": [
-      "c:hay",
-      "g:gender-articles"
+      "c:hay"
     ],
     "kind": "question",
     "unit": "u01",
@@ -12523,8 +12236,7 @@
       "l:señora"
     ],
     "targets": [
-      "c:hay",
-      "g:gender-articles"
+      "c:hay"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -12629,8 +12341,6 @@
     "requires": [
       "c:hay",
       "c:hay-que",
-      "g:tener-que-hay-que",
-      "g:time-sequence",
       "l:pagar"
     ],
     "targets": [
@@ -12652,8 +12362,6 @@
       "c:hay",
       "c:hay-que",
       "c:perdon-disculpe",
-      "g:tener-que-hay-que",
-      "g:time-sequence",
       "l:pagar",
       "l:perdón",
       "l:señor"
@@ -12679,7 +12387,6 @@
     "requires": [
       "c:hay",
       "c:hay-que",
-      "g:tener-que-hay-que",
       "l:esperar"
     ],
     "targets": [
@@ -12701,10 +12408,7 @@
     "requires": [
       "c:hay",
       "c:hay-que",
-      "c:que-oso",
       "c:que-pena",
-      "g:questions",
-      "g:tener-que-hay-que",
       "l:esperar",
       "l:pena",
       "l:qué"
@@ -12731,7 +12435,6 @@
       "c:hay",
       "c:hay-que",
       "g:hay-vs-esta",
-      "g:tener-que-hay-que",
       "l:esperar",
       "l:tinto"
     ],
@@ -12756,7 +12459,6 @@
       "c:entonces-bueno",
       "c:hay",
       "c:hay-que",
-      "g:tener-que-hay-que",
       "l:bueno",
       "l:esperar"
     ],
@@ -12782,7 +12484,6 @@
       "c:gracias-de-nada",
       "c:hay",
       "c:hay-que",
-      "g:tener-que-hay-que",
       "l:esperar"
     ],
     "targets": [
@@ -12806,7 +12507,7 @@
       "c:tengo",
       "c:tengo-que",
       "g:yo-irregular",
-      "l:irme",
+      "l:irse",
       "l:tener"
     ],
     "targets": [
@@ -12826,13 +12527,11 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-oso",
       "c:que-pena",
       "c:tengo",
       "c:tengo-que",
-      "g:questions",
       "g:yo-irregular",
-      "l:irme",
+      "l:irse",
       "l:pena",
       "l:qué",
       "l:tener"
@@ -12860,7 +12559,7 @@
       "c:tengo",
       "c:tengo-que",
       "g:yo-irregular",
-      "l:irme",
+      "l:irse",
       "l:tener"
     ],
     "targets": [
@@ -12883,7 +12582,6 @@
     "requires": [
       "c:tengo",
       "c:tengo-que",
-      "g:tener-que-hay-que",
       "g:yo-irregular",
       "l:mañana",
       "l:tener",
@@ -12908,9 +12606,9 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
       "c:tengo",
       "c:tengo-que",
-      "g:tener-que-hay-que",
       "g:yo-irregular",
       "l:mañana",
       "l:tener",
@@ -12938,9 +12636,6 @@
       "c:es-que",
       "c:tengo",
       "c:tengo-que",
-      "g:ser-identity",
-      "g:tener-que-hay-que",
-      "g:that-clauses",
       "g:yo-irregular",
       "l:mañana",
       "l:ser",
@@ -12951,7 +12646,6 @@
       "c:es-que",
       "c:tengo",
       "c:tengo-que",
-      "g:ser-identity",
       "l:mañana",
       "l:tener",
       "l:trabajar"
@@ -12972,7 +12666,6 @@
       "c:entonces-bueno",
       "c:tengo",
       "c:tengo-que",
-      "g:tener-que-hay-que",
       "g:yo-irregular",
       "l:bueno",
       "l:mañana",
@@ -13005,7 +12698,7 @@
       "c:tengo",
       "c:tengo-que",
       "g:yo-irregular",
-      "l:irme",
+      "l:irse",
       "l:tener"
     ],
     "targets": [
@@ -13031,7 +12724,7 @@
       "c:tengo-que",
       "g:yo-irregular",
       "l:bueno",
-      "l:irme",
+      "l:irse",
       "l:tener"
     ],
     "targets": [
@@ -13055,12 +12748,10 @@
     "requires": [
       "c:me-gusta",
       "g:gustar-basic",
-      "g:present-ar",
       "l:gustar"
     ],
     "targets": [
-      "c:me-gusta",
-      "g:present-ar"
+      "c:me-gusta"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -13075,16 +12766,12 @@
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
-      "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
       "l:frío",
       "l:gustar"
     ],
     "targets": [
-      "c:me-gusta",
-      "g:gender-articles",
-      "g:present-ar"
+      "c:me-gusta"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -13099,16 +12786,12 @@
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
-      "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
       "l:café",
       "l:gustar"
     ],
     "targets": [
       "c:me-gusta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:café"
     ],
     "kind": "statement",
@@ -13126,14 +12809,11 @@
       "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
       "l:gustar",
       "l:tinto"
     ],
     "targets": [
       "c:me-gusta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:tinto"
     ],
     "kind": "question",
@@ -13150,12 +12830,10 @@
     "requires": [
       "c:me-gusta",
       "g:gustar-basic",
-      "g:present-ar",
       "l:gustar"
     ],
     "targets": [
-      "c:me-gusta",
-      "g:present-ar"
+      "c:me-gusta"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -13172,13 +12850,10 @@
       "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
       "l:gustar"
     ],
     "targets": [
-      "c:me-gusta",
-      "g:gender-articles",
-      "g:present-ar"
+      "c:me-gusta"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -13195,14 +12870,11 @@
       "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
       "l:gustar",
       "l:jugo"
     ],
     "targets": [
       "c:me-gusta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:jugo"
     ],
     "kind": "statement",
@@ -13219,13 +12891,11 @@
     "requires": [
       "c:me-gusta",
       "g:gustar-basic",
-      "g:present-ar",
       "l:gustar",
       "l:trabajar"
     ],
     "targets": [
       "c:me-gusta",
-      "g:present-ar",
       "l:trabajar"
     ],
     "kind": "statement",
@@ -13243,7 +12913,6 @@
       "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
       "l:café",
       "l:gustar",
       "l:nombre"
@@ -13251,7 +12920,6 @@
     "targets": [
       "c:me-gusta",
       "g:gender-articles",
-      "g:present-ar",
       "l:café"
     ],
     "kind": "statement",
@@ -13268,12 +12936,10 @@
     "requires": [
       "c:me-gusta",
       "g:gustar-basic",
-      "g:present-ar",
       "l:gustar"
     ],
     "targets": [
-      "c:me-gusta",
-      "g:present-ar"
+      "c:me-gusta"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -13289,12 +12955,10 @@
     "requires": [
       "c:me-encanta",
       "g:gustar-full",
-      "g:present-ar",
       "l:encantar"
     ],
     "targets": [
       "c:me-encanta",
-      "g:present-ar",
       "l:encantar"
     ],
     "kind": "statement",
@@ -13311,12 +12975,10 @@
     "requires": [
       "c:me-encanta",
       "g:gustar-full",
-      "g:present-ar",
       "l:encantar"
     ],
     "targets": [
       "c:me-encanta",
-      "g:present-ar",
       "l:encantar"
     ],
     "kind": "statement",
@@ -13334,14 +12996,12 @@
       "c:me-encanta",
       "g:gender-articles",
       "g:gustar-full",
-      "g:present-ar",
       "l:encantar",
       "l:pan"
     ],
     "targets": [
       "c:me-encanta",
       "g:gender-articles",
-      "g:present-ar",
       "l:encantar",
       "l:pan"
     ],
@@ -13359,13 +13019,11 @@
     "requires": [
       "c:me-encanta",
       "g:gustar-full",
-      "g:present-ar",
       "l:bailar",
       "l:encantar"
     ],
     "targets": [
       "c:me-encanta",
-      "g:present-ar",
       "l:bailar",
       "l:encantar"
     ],
@@ -13384,7 +13042,6 @@
       "c:me-encanta",
       "g:gender-articles",
       "g:gustar-full",
-      "g:present-ar",
       "l:café",
       "l:encantar",
       "l:trabajar"
@@ -13392,7 +13049,6 @@
     "targets": [
       "c:me-encanta",
       "g:gender-articles",
-      "g:present-ar",
       "l:café",
       "l:encantar",
       "l:trabajar"
@@ -13412,14 +13068,11 @@
       "c:me-encanta",
       "g:gender-articles",
       "g:gustar-full",
-      "g:present-ar",
       "l:encantar",
       "l:español"
     ],
     "targets": [
       "c:me-encanta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:encantar",
       "l:español"
     ],
@@ -13438,14 +13091,11 @@
       "c:me-encanta",
       "g:gender-articles",
       "g:gustar-full",
-      "g:present-ar",
       "l:encantar",
       "l:nombre"
     ],
     "targets": [
       "c:me-encanta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:encantar"
     ],
     "kind": "statement",
@@ -13463,14 +13113,12 @@
       "c:me-encanta",
       "g:gender-articles",
       "g:gustar-full",
-      "g:present-ar",
       "l:café",
       "l:encantar"
     ],
     "targets": [
       "c:me-encanta",
       "g:gender-articles",
-      "g:present-ar",
       "l:café",
       "l:encantar"
     ],
@@ -13490,7 +13138,6 @@
       "c:por-favor",
       "g:conditional",
       "g:gender-articles",
-      "g:gustar-basic",
       "l:café",
       "l:favor",
       "l:gustar"
@@ -13498,7 +13145,6 @@
     "targets": [
       "c:me-gustaria",
       "c:por-favor",
-      "g:gender-articles",
       "l:café",
       "l:favor"
     ],
@@ -13516,7 +13162,6 @@
     "requires": [
       "c:me-gustaria",
       "g:conditional",
-      "g:gustar-basic",
       "l:gustar",
       "l:ir"
     ],
@@ -13537,7 +13182,6 @@
     "requires": [
       "c:me-gustaria",
       "g:conditional",
-      "g:gustar-basic",
       "l:gustar",
       "l:ir"
     ],
@@ -13559,7 +13203,6 @@
       "c:me-gustaria",
       "g:conditional",
       "g:gender-articles",
-      "g:gustar-basic",
       "l:café",
       "l:gustar",
       "l:trabajar"
@@ -13607,14 +13250,13 @@
     "acceptEn": [],
     "requires": [
       "c:tengo",
-      "c:tengo-anos",
       "g:yo-irregular",
       "l:año",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "c:tengo",
-      "c:tengo-anos",
       "l:año",
       "l:tener"
     ],
@@ -13631,17 +13273,16 @@
     "acceptEn": [],
     "requires": [
       "c:tengo",
-      "c:tengo-anos",
       "g:ser-identity",
       "g:yo-irregular",
       "l:año",
       "l:estudiante",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "c:tengo",
-      "c:tengo-anos",
       "g:ser-identity",
       "l:año",
       "l:tener"
@@ -13659,8 +13300,6 @@
     "acceptEn": [],
     "requires": [
       "c:tengo-anos",
-      "g:questions",
-      "g:stem-boot",
       "l:año",
       "l:cuánto",
       "l:tener"
@@ -13683,8 +13322,6 @@
     "acceptEn": [],
     "requires": [
       "c:tengo-anos",
-      "g:questions",
-      "g:stem-boot",
       "l:año",
       "l:cuánto",
       "l:tener"
@@ -13708,14 +13345,13 @@
     "requires": [
       "c:bien-y-tu",
       "c:tengo",
-      "c:tengo-anos",
       "g:yo-irregular",
       "l:año",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "c:tengo",
-      "c:tengo-anos",
       "l:año",
       "l:tener"
     ],
@@ -13732,14 +13368,13 @@
     "acceptEn": [],
     "requires": [
       "c:tengo",
-      "c:tengo-anos",
       "g:yo-irregular",
       "l:año",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "c:tengo",
-      "c:tengo-anos",
       "l:año",
       "l:tener"
     ],
@@ -13756,14 +13391,13 @@
     "acceptEn": [],
     "requires": [
       "c:tengo",
-      "c:tengo-anos",
       "g:yo-irregular",
       "l:año",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "c:tengo",
-      "c:tengo-anos",
       "l:año",
       "l:tener"
     ],
@@ -13781,17 +13415,16 @@
     "requires": [
       "c:soy-de",
       "c:tengo",
-      "c:tengo-anos",
       "g:ser-identity",
       "g:yo-irregular",
       "l:año",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "c:soy-de",
       "c:tengo",
-      "c:tengo-anos",
       "g:ser-identity",
       "l:año",
       "l:tener"
@@ -13814,8 +13447,7 @@
       "l:vivir"
     ],
     "targets": [
-      "c:vivo-en",
-      "g:gender-articles"
+      "c:vivo-en"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -13876,7 +13508,6 @@
       "c:me-encanta",
       "c:vivo-en",
       "g:gustar-full",
-      "g:present-ar",
       "g:present-er-ir",
       "l:encantar",
       "l:vivir"
@@ -13884,7 +13515,6 @@
     "targets": [
       "c:me-encanta",
       "c:vivo-en",
-      "g:present-ar",
       "l:encantar"
     ],
     "kind": "statement",
@@ -13906,8 +13536,7 @@
       "l:vivir"
     ],
     "targets": [
-      "c:vivo-en",
-      "g:gender-articles"
+      "c:vivo-en"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -13922,14 +13551,12 @@
     "acceptEn": [],
     "requires": [
       "c:trabajo-en",
-      "g:gender-articles",
       "g:present-ar",
       "l:café",
       "l:trabajar"
     ],
     "targets": [
       "c:trabajo-en",
-      "g:gender-articles",
       "g:present-ar",
       "l:café",
       "l:trabajar"
@@ -13946,10 +13573,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-oso",
       "c:que-pena",
       "c:trabajo-en",
-      "g:exclamations",
       "g:present-ar",
       "l:pena",
       "l:qué",
@@ -14188,7 +13813,6 @@
       "c:claro-listo",
       "c:vamos-a",
       "g:ir-a-plans",
-      "g:that-clauses",
       "l:claro",
       "l:ir",
       "l:tomar"
@@ -14233,7 +13857,6 @@
     "acceptEn": [],
     "requires": [
       "c:fui",
-      "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:ayer",
       "l:centro",
@@ -14241,7 +13864,6 @@
     ],
     "targets": [
       "c:fui",
-      "g:gender-articles",
       "l:ayer"
     ],
     "kind": "statement",
@@ -14313,6 +13935,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:fui",
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
@@ -14379,6 +14002,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:comi",
       "g:preterite-er-ir",
       "l:ajiaco",
@@ -14402,6 +14026,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:comi",
       "g:preterite-er-ir",
       "l:ayer",
@@ -14527,6 +14152,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:fui",
       "g:preterite-ser-ir-hacer",
       "l:ayer",
@@ -14548,9 +14174,9 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:ayer",
       "l:hacer",
       "l:qué"
@@ -14573,9 +14199,7 @@
     "acceptEn": [],
     "requires": [
       "c:que-hiciste",
-      "g:gender-articles",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:fin",
       "l:hacer",
       "l:qué",
@@ -14583,7 +14207,6 @@
     ],
     "targets": [
       "c:que-hiciste",
-      "g:gender-articles",
       "l:fin",
       "l:hacer",
       "l:semana"
@@ -14600,9 +14223,9 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:anoche",
       "l:hacer",
       "l:qué"
@@ -14624,9 +14247,9 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:ayer",
       "l:hacer",
       "l:qué"
@@ -14649,7 +14272,6 @@
     "acceptEn": [],
     "requires": [
       "c:ya-comiste",
-      "g:preterite-er-ir",
       "l:comer"
     ],
     "targets": [
@@ -14669,7 +14291,6 @@
     "acceptEn": [],
     "requires": [
       "c:ya-comiste",
-      "g:preterite-er-ir",
       "l:comer"
     ],
     "targets": [
@@ -14704,7 +14325,6 @@
       "c:hay",
       "c:ya-comiste",
       "g:hay-vs-esta",
-      "g:preterite-er-ir",
       "l:comer",
       "l:pan"
     ],
@@ -14728,13 +14348,11 @@
     "requires": [
       "c:era",
       "g:imperfect-states",
-      "g:ser-identity",
       "l:ser",
       "l:tarde"
     ],
     "targets": [
-      "c:era",
-      "g:ser-identity"
+      "c:era"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -14750,13 +14368,11 @@
     "requires": [
       "c:era",
       "g:imperfect-states",
-      "g:ser-identity",
       "l:bonito",
       "l:ser"
     ],
     "targets": [
-      "c:era",
-      "g:ser-identity"
+      "c:era"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -14780,8 +14396,6 @@
     ],
     "targets": [
       "c:era",
-      "g:gender-articles",
-      "g:ser-identity",
       "l:bueno",
       "l:café"
     ],
@@ -14806,8 +14420,6 @@
     ],
     "targets": [
       "c:era",
-      "g:gender-articles",
-      "g:ser-identity",
       "l:café"
     ],
     "kind": "statement",
@@ -14823,10 +14435,7 @@
     "acceptEn": [],
     "requires": [
       "c:estuvo",
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:preterite-irregular-strong",
-      "g:superlatives",
       "l:bueno",
       "l:estar"
     ],
@@ -14847,10 +14456,7 @@
     "acceptEn": [],
     "requires": [
       "c:estuvo",
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:preterite-irregular-strong",
-      "g:superlatives",
       "l:bueno",
       "l:estar"
     ],
@@ -14871,7 +14477,6 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:creer"
     ],
@@ -14892,7 +14497,6 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:creer"
     ],
@@ -14913,8 +14517,6 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:estar-location-states",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:cerrar",
       "l:creer",
@@ -14938,7 +14540,6 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:that-clauses",
       "l:colombiano",
@@ -14963,7 +14564,6 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:that-clauses",
       "l:creer",
@@ -14988,7 +14588,6 @@
     "requires": [
       "c:creo-que",
       "g:gender-articles",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:that-clauses",
       "l:café",
@@ -14997,7 +14596,6 @@
     ],
     "targets": [
       "c:creo-que",
-      "g:gender-articles",
       "g:ser-identity",
       "l:café",
       "l:creer"
@@ -15016,7 +14614,6 @@
     "requires": [
       "c:creo-que",
       "g:gender-articles",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:that-clauses",
       "l:cliente",
@@ -15043,7 +14640,6 @@
     "requires": [
       "c:creo-que",
       "g:gender-articles",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:that-clauses",
       "l:creer",
@@ -15052,7 +14648,6 @@
     ],
     "targets": [
       "c:creo-que",
-      "g:gender-articles",
       "g:ser-identity",
       "l:creer",
       "l:señor"
@@ -15072,7 +14667,6 @@
       "c:creo-que",
       "c:hay",
       "g:hay-vs-esta",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:creer",
       "l:pan"
@@ -15097,9 +14691,7 @@
     "requires": [
       "c:creo-que",
       "c:hay",
-      "c:hay-que",
       "g:hay-vs-esta",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:creer",
       "l:leche"
@@ -15107,7 +14699,6 @@
     "targets": [
       "c:creo-que",
       "c:hay",
-      "c:hay-que",
       "l:creer",
       "l:leche"
     ],
@@ -15124,8 +14715,6 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "c:es-que",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:that-clauses",
       "l:creer",
@@ -15133,7 +14722,6 @@
     ],
     "targets": [
       "c:creo-que",
-      "c:es-que",
       "g:ser-identity",
       "l:creer"
     ],
@@ -15231,7 +14819,6 @@
       "g:cause-result",
       "g:gender-articles",
       "g:gustar-full",
-      "g:present-ar",
       "g:ser-identity",
       "l:ciudad",
       "l:encantar",
@@ -15241,7 +14828,6 @@
       "c:me-encanta",
       "c:porque",
       "g:gender-articles",
-      "g:present-ar",
       "g:ser-identity",
       "l:ciudad",
       "l:encantar"
@@ -15269,7 +14855,6 @@
     ],
     "targets": [
       "c:porque",
-      "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
       "l:café",
@@ -15289,8 +14874,6 @@
     "requires": [
       "c:es-que",
       "c:tengo",
-      "g:ser-identity",
-      "g:that-clauses",
       "g:yo-irregular",
       "l:ser",
       "l:tener",
@@ -15299,7 +14882,6 @@
     "targets": [
       "c:es-que",
       "c:tengo",
-      "g:ser-identity",
       "l:tener",
       "l:tiempo"
     ],
@@ -15316,16 +14898,12 @@
     "acceptEn": [],
     "requires": [
       "c:es-que",
-      "g:estar-location-states",
-      "g:ser-identity",
-      "g:that-clauses",
       "l:estar",
       "l:ocupado",
       "l:ser"
     ],
     "targets": [
-      "c:es-que",
-      "g:ser-identity"
+      "c:es-que"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -15341,16 +14919,13 @@
     "requires": [
       "c:es-que",
       "c:no-entiendo",
-      "g:ser-identity",
       "g:stem-boot",
-      "g:that-clauses",
       "l:entender",
       "l:ser"
     ],
     "targets": [
       "c:es-que",
       "c:no-entiendo",
-      "g:ser-identity",
       "l:entender"
     ],
     "kind": "dialogue",
@@ -15368,7 +14943,6 @@
       "c:es-que",
       "c:soy-de",
       "g:ser-identity",
-      "g:that-clauses",
       "l:ser"
     ],
     "targets": [
@@ -15391,15 +14965,12 @@
       "c:es-que",
       "c:hay",
       "g:hay-vs-esta",
-      "g:ser-identity",
-      "g:that-clauses",
       "l:pan",
       "l:ser"
     ],
     "targets": [
       "c:es-que",
       "c:hay",
-      "g:ser-identity",
       "l:pan"
     ],
     "kind": "dialogue",
@@ -15416,7 +14987,6 @@
     "requires": [
       "c:es-que",
       "g:ser-identity",
-      "g:that-clauses",
       "l:mesero",
       "l:ser"
     ],
@@ -15438,8 +15008,6 @@
     "requires": [
       "c:chao-nos-vemos",
       "c:entonces-bueno",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:bueno",
       "l:mañana",
       "l:ver"
@@ -15532,7 +15100,6 @@
     ],
     "targets": [
       "c:entonces-bueno",
-      "g:gender-articles",
       "l:bueno",
       "l:tinto"
     ],
@@ -15587,7 +15154,6 @@
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
-      "g:that-clauses",
       "l:claro"
     ],
     "targets": [
@@ -15625,12 +15191,9 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:de-una",
-      "g:gender-articles"
+      "c:claro-listo"
     ],
-    "targets": [
-      "g:gender-articles"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u01",
     "theme": "likes, age, home, plans, yesterday, small talk",
@@ -15645,8 +15208,6 @@
     "requires": [
       "c:chao-nos-vemos",
       "c:claro-listo",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:listo",
       "l:ver"
     ],
@@ -15668,7 +15229,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:de-una",
+      "c:claro-listo",
       "g:gender-articles",
       "l:tinto"
     ],
@@ -15708,8 +15269,6 @@
     "acceptEn": [],
     "requires": [
       "c:chao-nos-vemos",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:ver"
     ],
     "targets": [
@@ -15746,8 +15305,6 @@
     "acceptEn": [],
     "requires": [
       "c:chao-nos-vemos",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:ver"
     ],
     "targets": [
@@ -15785,8 +15342,6 @@
     "requires": [
       "c:chao-nos-vemos",
       "c:entonces-bueno",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:bueno",
       "l:ver"
     ],
@@ -15809,8 +15364,6 @@
     "acceptEn": [],
     "requires": [
       "c:chao-nos-vemos",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:señora",
       "l:ver"
     ],
@@ -15830,6 +15383,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:chao-nos-vemos",
       "c:claro-listo",
       "l:listo"
     ],
@@ -16004,13 +15558,11 @@
     "requires": [
       "c:a-la-orden",
       "c:gracias-de-nada",
-      "g:gender-articles",
       "l:orden"
     ],
     "targets": [
       "c:a-la-orden",
       "c:gracias-de-nada",
-      "g:gender-articles",
       "l:orden"
     ],
     "kind": "dialogue",
@@ -16096,7 +15648,6 @@
       "g:commands-usted",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:questions",
       "l:café",
       "l:disculpar",
       "l:dónde",
@@ -16106,7 +15657,6 @@
     "targets": [
       "c:donde-esta",
       "c:perdon-disculpe",
-      "g:gender-articles",
       "l:café",
       "l:disculpar",
       "l:perdón"
@@ -16203,8 +15753,6 @@
       "c:me-puede-ayudar",
       "c:perdon-disculpe",
       "g:commands-usted",
-      "g:direct-objects",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:ayudar",
       "l:disculpar",
@@ -16245,7 +15793,6 @@
     "targets": [
       "c:cuanto-cuesta",
       "c:perdon-disculpe",
-      "g:gender-articles",
       "l:disculpar",
       "l:pan",
       "l:perdón"
@@ -16381,7 +15928,6 @@
       "c:ayer-anoche",
       "c:fui",
       "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
       "l:anoche",
       "l:ayer",
       "l:ser"
@@ -16389,7 +15935,6 @@
     "targets": [
       "c:ayer-anoche",
       "c:fui",
-      "g:ser-identity",
       "l:anoche",
       "l:ayer"
     ],
@@ -16460,6 +16005,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:fui",
       "g:preterite-ser-ir-hacer",
       "l:anoche",
@@ -16483,6 +16029,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:fui",
       "g:preterite-ser-ir-hacer",
       "l:anoche",
@@ -16531,7 +16078,6 @@
       "c:ayer-anoche",
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:anoche",
       "l:ayer",
       "l:hacer",
@@ -16558,8 +16104,6 @@
     "requires": [
       "c:chao-nos-vemos",
       "c:entonces-bueno",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:bueno",
       "l:ver"
     ],
@@ -16583,9 +16127,7 @@
     "requires": [
       "c:chao-nos-vemos",
       "c:entonces-bueno",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-er-ir",
       "l:bueno",
       "l:café",
       "l:mañana",
@@ -16669,7 +16211,6 @@
     ],
     "targets": [
       "c:entonces-bueno",
-      "g:gender-articles",
       "g:ser-identity",
       "l:bueno",
       "l:café"
@@ -16686,6 +16227,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:chao-nos-vemos",
       "c:entonces-bueno",
       "l:bueno"
     ],
@@ -16707,8 +16249,6 @@
     "requires": [
       "c:chao-nos-vemos",
       "c:entonces-bueno",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:bueno",
       "l:mañana",
       "l:ver"
@@ -16758,10 +16298,10 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:entonces-bueno",
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:ayer",
       "l:bueno",
       "l:hacer",
@@ -16788,10 +16328,7 @@
     "requires": [
       "c:estuvo",
       "c:gracias-de-nada",
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:preterite-irregular-strong",
-      "g:superlatives",
       "l:bueno",
       "l:estar"
     ],
@@ -16813,11 +16350,8 @@
     "acceptEn": [],
     "requires": [
       "c:estuvo",
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:preterite-irregular-strong",
-      "g:superlatives",
       "l:bueno",
       "l:estar",
       "l:pan"
@@ -16841,10 +16375,7 @@
     "acceptEn": [],
     "requires": [
       "c:estuvo",
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:preterite-irregular-strong",
-      "g:superlatives",
       "l:bueno",
       "l:estar",
       "l:señora"
@@ -16865,13 +16396,11 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:estuvo",
       "c:fui",
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:preterite-irregular-strong",
       "g:preterite-ser-ir-hacer",
-      "g:superlatives",
       "l:ayer",
       "l:bueno",
       "l:estar",
@@ -16895,13 +16424,11 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:comi",
       "c:estuvo",
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:preterite-er-ir",
       "g:preterite-irregular-strong",
-      "g:superlatives",
       "l:ajiaco",
       "l:anoche",
       "l:bueno",
@@ -16928,11 +16455,8 @@
     "acceptEn": [],
     "requires": [
       "c:estuvo",
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:preterite-irregular-strong",
-      "g:superlatives",
       "l:bueno",
       "l:estar",
       "l:jugo"
@@ -16956,10 +16480,7 @@
     "acceptEn": [],
     "requires": [
       "c:estuvo",
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:preterite-irregular-strong",
-      "g:superlatives",
       "l:bueno",
       "l:estar"
     ],
@@ -16980,11 +16501,8 @@
     "acceptEn": [],
     "requires": [
       "c:estuvo",
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:preterite-irregular-strong",
-      "g:superlatives",
       "l:bueno",
       "l:estar",
       "l:tinto"
@@ -17011,7 +16529,6 @@
       "c:hay",
       "g:hay-vs-esta",
       "g:imperfect-states",
-      "g:ser-identity",
       "l:pan",
       "l:ser",
       "l:tarde"
@@ -17019,7 +16536,6 @@
     "targets": [
       "c:era",
       "c:hay",
-      "g:ser-identity",
       "l:pan"
     ],
     "kind": "statement",
@@ -17069,8 +16585,6 @@
     ],
     "targets": [
       "c:era",
-      "g:gender-articles",
-      "g:ser-identity",
       "l:bueno",
       "l:día"
     ],
@@ -17110,7 +16624,6 @@
       "c:era",
       "g:gender-articles",
       "g:imperfect-states",
-      "g:ser-identity",
       "l:bonito",
       "l:café",
       "l:ser"
@@ -17118,7 +16631,6 @@
     "targets": [
       "c:era",
       "g:gender-articles",
-      "g:ser-identity",
       "l:café"
     ],
     "kind": "statement",
@@ -17136,7 +16648,6 @@
       "c:creo-que",
       "c:era",
       "g:imperfect-states",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:that-clauses",
       "l:creer",
@@ -17185,7 +16696,6 @@
       "c:hay",
       "c:ya-comiste",
       "g:hay-vs-esta",
-      "g:preterite-er-ir",
       "l:bueno",
       "l:comer",
       "l:pan"
@@ -17211,7 +16721,6 @@
     "acceptEn": [],
     "requires": [
       "c:ya-comiste",
-      "g:preterite-er-ir",
       "l:comer"
     ],
     "targets": [
@@ -17233,7 +16742,6 @@
       "c:hay",
       "c:ya-comiste",
       "g:hay-vs-esta",
-      "g:preterite-er-ir",
       "l:comer",
       "l:pan"
     ],
@@ -17257,7 +16765,6 @@
     "requires": [
       "c:gracias-de-nada",
       "c:ya-comiste",
-      "g:preterite-er-ir",
       "l:comer"
     ],
     "targets": [
@@ -17278,7 +16785,6 @@
     "acceptEn": [],
     "requires": [
       "c:ya-comiste",
-      "g:preterite-er-ir",
       "l:comer"
     ],
     "targets": [
@@ -17299,7 +16805,6 @@
     "requires": [
       "c:ya-comiste",
       "g:gender-articles",
-      "g:preterite-er-ir",
       "l:comer",
       "l:pan"
     ],
@@ -17324,7 +16829,6 @@
       "c:vamos-a",
       "c:ya-comiste",
       "g:ir-a-plans",
-      "g:preterite-er-ir",
       "l:comer",
       "l:ir",
       "l:tomar"
@@ -17347,9 +16851,9 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:ayer",
       "l:hacer",
       "l:qué"
@@ -17371,9 +16875,9 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:anoche",
       "l:hacer",
       "l:qué",
@@ -17397,9 +16901,9 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:anoche",
       "l:hacer",
       "l:qué"
@@ -17421,10 +16925,10 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:fui",
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:ayer",
       "l:hacer",
       "l:ir",
@@ -17450,7 +16954,6 @@
     "requires": [
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:hacer",
       "l:qué"
     ],
@@ -17470,10 +16973,10 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:bien-y-tu",
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:ayer",
       "l:hacer",
       "l:qué"
@@ -17588,23 +17091,21 @@
   },
   {
     "id": "u01-0768",
-    "es": "Compré pan, y luego trabajé.",
-    "en": "I bought bread, and then I worked.",
+    "es": "Hablé con Vale y compré pan.",
+    "en": "I talked to Vale and bought bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:compre-trabaje",
       "g:preterite-ar",
-      "g:time-sequence",
       "l:comprar",
-      "l:pan",
-      "l:trabajar"
+      "l:hablar",
+      "l:pan"
     ],
     "targets": [
       "c:compre-trabaje",
       "l:comprar",
-      "l:pan",
-      "l:trabajar"
+      "l:pan"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -17999,16 +17500,14 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:de-una",
+      "c:claro-listo",
       "c:vamos-a",
-      "g:gender-articles",
       "g:ir-a-plans",
       "l:ir",
       "l:tomar"
     ],
     "targets": [
       "c:vamos-a",
-      "g:gender-articles",
       "l:tomar"
     ],
     "kind": "dialogue",
@@ -18028,8 +17527,6 @@
       "c:vamos-a",
       "g:hay-vs-esta",
       "g:ir-a-plans",
-      "g:ser-identity",
-      "g:that-clauses",
       "l:cliente",
       "l:ir",
       "l:ser",
@@ -18039,7 +17536,6 @@
       "c:es-que",
       "c:hay",
       "c:vamos-a",
-      "g:ser-identity",
       "l:tomar"
     ],
     "kind": "dialogue",
@@ -18083,7 +17579,6 @@
     ],
     "targets": [
       "c:quiero",
-      "g:gender-articles",
       "l:querer",
       "l:tinto"
     ],
@@ -18127,7 +17622,6 @@
     "requires": [
       "c:quiero",
       "g:stem-boot",
-      "g:verb-infinitive",
       "l:hablar",
       "l:querer"
     ],
@@ -18156,7 +17650,6 @@
     ],
     "targets": [
       "c:quiero",
-      "g:gender-articles",
       "l:jugo",
       "l:querer",
       "l:tinto"
@@ -18173,6 +17666,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
       "c:quiero",
       "g:stem-boot",
       "l:leche",
@@ -18203,7 +17697,6 @@
     ],
     "targets": [
       "c:quiero",
-      "g:gender-articles",
       "l:café",
       "l:querer"
     ],
@@ -18230,7 +17723,6 @@
     "targets": [
       "c:por-favor",
       "c:quiero",
-      "g:gender-articles",
       "l:favor",
       "l:pan",
       "l:querer"
@@ -18250,7 +17742,6 @@
       "c:me-gustaria",
       "g:conditional",
       "g:gender-articles",
-      "g:gustar-basic",
       "l:gustar",
       "l:jugo",
       "l:tinto"
@@ -18277,7 +17768,6 @@
       "c:por-favor",
       "g:conditional",
       "g:gender-articles",
-      "g:gustar-basic",
       "l:agua",
       "l:favor",
       "l:gustar",
@@ -18286,7 +17776,6 @@
     "targets": [
       "c:me-gustaria",
       "c:por-favor",
-      "g:gender-articles",
       "l:agua",
       "l:favor",
       "l:señor"
@@ -18305,7 +17794,6 @@
     "requires": [
       "c:me-gustaria",
       "g:conditional",
-      "g:gustar-basic",
       "l:gustar",
       "l:ir"
     ],
@@ -18325,17 +17813,13 @@
     "acceptEn": [],
     "requires": [
       "c:me-regala",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
       "l:café",
       "l:leche",
       "l:regalar"
     ],
     "targets": [
       "c:me-regala",
-      "g:gender-articles",
-      "g:present-ar",
       "l:café",
       "l:leche",
       "l:regalar"
@@ -18353,17 +17837,13 @@
     "acceptEn": [],
     "requires": [
       "c:me-regala",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
       "l:pan",
       "l:regalar",
       "l:señora"
     ],
     "targets": [
       "c:me-regala",
-      "g:gender-articles",
-      "g:present-ar",
       "l:pan",
       "l:regalar"
     ],
@@ -18380,16 +17860,11 @@
     "acceptEn": [],
     "requires": [
       "c:me-regala",
-      "g:direct-objects",
-      "g:gender-articles",
-      "g:present-ar",
       "l:regalar",
       "l:tinto"
     ],
     "targets": [
       "c:me-regala",
-      "g:gender-articles",
-      "g:present-ar",
       "l:regalar",
       "l:tinto"
     ],
@@ -18407,9 +17882,7 @@
     "requires": [
       "c:me-regala",
       "c:por-favor",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
       "l:favor",
       "l:jugo",
       "l:pan",
@@ -18419,7 +17892,6 @@
       "c:me-regala",
       "c:por-favor",
       "g:gender-articles",
-      "g:present-ar",
       "l:favor",
       "l:jugo",
       "l:pan",
@@ -18446,7 +17918,6 @@
     ],
     "targets": [
       "c:cuanto-cuesta",
-      "g:gender-articles",
       "l:jugo"
     ],
     "kind": "dialogue",
@@ -18462,16 +17933,13 @@
     "acceptEn": [],
     "requires": [
       "c:cuanto-cuesta",
-      "c:cuanto-le-debo",
       "g:questions",
-      "g:ser-identity",
       "l:cuánto",
       "l:ser",
       "l:señor"
     ],
     "targets": [
       "c:cuanto-cuesta",
-      "g:ser-identity",
       "l:señor"
     ],
     "kind": "dialogue",
@@ -18488,7 +17956,6 @@
     "requires": [
       "c:cuanto-cuesta",
       "g:gender-articles",
-      "g:present-er-ir",
       "g:questions",
       "l:cuánto",
       "l:pan",
@@ -18496,7 +17963,6 @@
     ],
     "targets": [
       "c:cuanto-cuesta",
-      "g:gender-articles",
       "l:pan"
     ],
     "kind": "dialogue",
@@ -18537,7 +18003,6 @@
     "requires": [
       "c:como-estas",
       "g:estar-location-states",
-      "g:questions",
       "l:cómo",
       "l:estar"
     ],
@@ -18558,7 +18023,6 @@
     "requires": [
       "c:como-estas",
       "g:estar-location-states",
-      "g:questions",
       "l:cómo",
       "l:estar",
       "l:señora"
@@ -18580,7 +18044,6 @@
     "requires": [
       "c:como-estas",
       "g:estar-location-states",
-      "g:questions",
       "l:cómo",
       "l:estar"
     ],
@@ -18601,7 +18064,6 @@
     "requires": [
       "c:donde-esta",
       "g:estar-location-states",
-      "g:questions",
       "l:dónde",
       "l:estar"
     ],
@@ -18623,14 +18085,12 @@
       "c:donde-esta",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:questions",
       "l:dónde",
       "l:estar",
       "l:tinto"
     ],
     "targets": [
       "c:donde-esta",
-      "g:gender-articles",
       "l:tinto"
     ],
     "kind": "dialogue",
@@ -18646,8 +18106,6 @@
     "acceptEn": [],
     "requires": [
       "c:tengo-anos",
-      "g:questions",
-      "g:stem-boot",
       "l:año",
       "l:cuánto",
       "l:tener"
@@ -18671,17 +18129,16 @@
     "requires": [
       "c:soy-de",
       "c:tengo",
-      "c:tengo-anos",
       "g:ser-identity",
       "g:yo-irregular",
       "l:año",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "c:soy-de",
       "c:tengo",
-      "c:tengo-anos",
       "g:ser-identity",
       "l:año",
       "l:tener"
@@ -18699,17 +18156,16 @@
     "acceptEn": [],
     "requires": [
       "c:tengo",
-      "c:tengo-anos",
       "g:ser-identity",
       "g:yo-irregular",
       "l:año",
       "l:estudiante",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "c:tengo",
-      "c:tengo-anos",
       "g:ser-identity",
       "l:año",
       "l:tener"
@@ -18727,14 +18183,13 @@
     "acceptEn": [],
     "requires": [
       "c:tengo",
-      "c:tengo-anos",
       "g:yo-irregular",
       "l:año",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "c:tengo",
-      "c:tengo-anos",
       "l:año",
       "l:tener"
     ],
@@ -18751,8 +18206,6 @@
     "acceptEn": [],
     "requires": [
       "c:tengo-anos",
-      "g:questions",
-      "g:stem-boot",
       "l:año",
       "l:cuánto",
       "l:tener"
@@ -18775,9 +18228,7 @@
     "acceptEn": [],
     "requires": [
       "c:como-se-dice",
-      "g:questions",
       "g:se-impersonal",
-      "g:stem-e-i",
       "l:cliente",
       "l:cómo",
       "l:decir",
@@ -18801,10 +18252,7 @@
     "requires": [
       "c:a-la-orden",
       "c:como-se-dice",
-      "g:gender-articles",
-      "g:questions",
       "g:se-impersonal",
-      "g:stem-e-i",
       "l:cómo",
       "l:decir",
       "l:inglés",
@@ -18813,7 +18261,6 @@
     "targets": [
       "c:a-la-orden",
       "c:como-se-dice",
-      "g:gender-articles",
       "l:decir",
       "l:orden"
     ],
@@ -18931,10 +18378,8 @@
       "c:chao-nos-vemos",
       "c:tengo",
       "c:tengo-que",
-      "g:direct-objects",
-      "g:present-er-ir",
       "g:yo-irregular",
-      "l:irme",
+      "l:irse",
       "l:tener",
       "l:ver"
     ],
@@ -18959,8 +18404,6 @@
     "requires": [
       "c:hay",
       "c:hay-que",
-      "g:tener-que-hay-que",
-      "g:time-sequence",
       "l:pagar",
       "l:señora"
     ],
@@ -18981,8 +18424,6 @@
     "acceptEn": [],
     "requires": [
       "c:chao-nos-vemos",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:ver"
     ],
     "targets": [
@@ -19002,8 +18443,6 @@
     "acceptEn": [],
     "requires": [
       "c:chao-nos-vemos",
-      "g:direct-objects",
-      "g:present-er-ir",
       "l:ver"
     ],
     "targets": [
@@ -19024,18 +18463,13 @@
     "requires": [
       "c:es-que",
       "c:hay",
-      "g:gender-articles",
       "g:hay-vs-esta",
-      "g:ser-identity",
-      "g:that-clauses",
       "l:problema",
       "l:ser"
     ],
     "targets": [
       "c:es-que",
-      "c:hay",
-      "g:gender-articles",
-      "g:ser-identity"
+      "c:hay"
     ],
     "kind": "dialogue",
     "unit": "u01",
@@ -19052,15 +18486,12 @@
       "c:es-que",
       "c:hay",
       "g:hay-vs-esta",
-      "g:ser-identity",
-      "g:that-clauses",
       "l:leche",
       "l:ser"
     ],
     "targets": [
       "c:es-que",
       "c:hay",
-      "g:ser-identity",
       "l:leche"
     ],
     "kind": "dialogue",
@@ -19087,7 +18518,6 @@
     ],
     "targets": [
       "c:porque",
-      "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
       "l:bueno",
@@ -19172,7 +18602,6 @@
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
-      "g:that-clauses",
       "l:claro",
       "l:listo"
     ],
@@ -19215,7 +18644,6 @@
     "acceptEn": [],
     "requires": [
       "c:a-la-orden",
-      "g:gender-articles",
       "l:orden",
       "l:pan",
       "l:señora",
@@ -19223,7 +18651,6 @@
     ],
     "targets": [
       "c:a-la-orden",
-      "g:gender-articles",
       "l:orden",
       "l:pan",
       "l:tinto"
@@ -19241,12 +18668,10 @@
     "acceptEn": [],
     "requires": [
       "c:a-la-orden",
-      "g:gender-articles",
       "l:orden"
     ],
     "targets": [
       "c:a-la-orden",
-      "g:gender-articles",
       "l:orden"
     ],
     "kind": "dialogue",
@@ -19262,12 +18687,10 @@
     "acceptEn": [],
     "requires": [
       "c:a-la-orden",
-      "g:gender-articles",
       "l:orden"
     ],
     "targets": [
       "c:a-la-orden",
-      "g:gender-articles",
       "l:orden"
     ],
     "kind": "dialogue",
@@ -19438,6 +18861,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:ser-identity",
       "l:apellido",
@@ -19945,7 +19369,6 @@
     "acceptEn": [],
     "requires": [
       "c:hola-buenos-dias",
-      "g:adjective-agreement",
       "l:bueno",
       "l:día"
     ],
@@ -20192,8 +19615,7 @@
       "l:fotografía"
     ],
     "targets": [
-      "c:hay",
-      "g:gender-articles"
+      "c:hay"
     ],
     "kind": "statement",
     "unit": "u01",
@@ -20249,7 +19671,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:de-una",
       "g:gender-articles",
       "g:ser-identity",
       "l:explicación",
@@ -20306,7 +19727,6 @@
     ],
     "targets": [
       "c:tengo",
-      "g:gender-articles",
       "l:tener"
     ],
     "kind": "statement",
@@ -20426,8 +19846,6 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "c:es-que",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:that-clauses",
       "l:creer",
@@ -20436,7 +19854,6 @@
     ],
     "targets": [
       "c:creo-que",
-      "c:es-que",
       "g:ser-identity",
       "l:creer"
     ],
@@ -20716,7 +20133,6 @@
     "requires": [
       "c:claro-listo",
       "g:gender-articles",
-      "g:that-clauses",
       "l:claro",
       "l:favor"
     ],
@@ -20887,7 +20303,6 @@
     ],
     "targets": [
       "c:quiero",
-      "g:gender-articles",
       "l:querer"
     ],
     "kind": "statement",
@@ -20910,7 +20325,6 @@
     ],
     "targets": [
       "c:quiero",
-      "g:gender-articles",
       "l:favor",
       "l:querer"
     ],
@@ -20934,7 +20348,6 @@
     ],
     "targets": [
       "c:quiero",
-      "g:gender-articles",
       "l:café",
       "l:querer"
     ],
@@ -20958,7 +20371,6 @@
     ],
     "targets": [
       "c:quiero",
-      "g:gender-articles",
       "l:querer",
       "l:tinto"
     ],
@@ -20982,7 +20394,6 @@
     ],
     "targets": [
       "c:quiero",
-      "g:gender-articles",
       "l:café",
       "l:querer"
     ],
@@ -21023,6 +20434,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:present-ar",
       "l:disculpar"
     ],
@@ -21066,7 +20478,6 @@
     "requires": [
       "c:claro-listo",
       "g:present-ar",
-      "g:that-clauses",
       "l:claro",
       "l:disculpar"
     ],
@@ -21088,6 +20499,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:present-ar",
       "l:disculpar"
     ],
@@ -21109,7 +20521,6 @@
     "requires": [
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:hacer",
       "l:qué"
     ],
@@ -21129,18 +20540,15 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "c:que-hiciste",
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:hacer",
       "l:pan",
       "l:qué"
     ],
     "targets": [
       "c:que-hiciste",
-      "g:gender-articles",
       "l:hacer",
       "l:pan"
     ],
@@ -21156,18 +20564,15 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "c:que-hiciste",
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:hacer",
       "l:qué",
       "l:tinto"
     ],
     "targets": [
       "c:que-hiciste",
-      "g:gender-articles",
       "l:hacer",
       "l:tinto"
     ],
@@ -21183,10 +20588,10 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:que-hiciste",
       "g:present-ar",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
       "l:anoche",
       "l:hacer",
       "l:qué",
@@ -21211,6 +20616,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:comi",
       "g:preterite-er-ir",
       "l:anoche",
@@ -21233,6 +20639,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:fui",
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
@@ -21832,6 +21239,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "g:gender-articles",
       "g:ser-identity",
       "l:ayer",
@@ -22060,6 +21468,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:ser-identity",
       "l:ingeniero",
@@ -22081,6 +21490,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:ser-identity",
       "l:español",
@@ -22146,14 +21556,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:soy-de",
       "g:gender-articles",
       "g:ser-identity",
       "l:ingeniero",
       "l:ser"
     ],
     "targets": [
-      "c:soy-de",
       "g:gender-articles",
       "g:ser-identity"
     ],
@@ -22333,13 +21741,11 @@
     "requires": [
       "c:mucho-gusto",
       "c:si-soy-yo",
-      "g:ser-identity",
       "l:gusto",
       "l:ser"
     ],
     "targets": [
       "c:mucho-gusto",
-      "g:ser-identity",
       "l:gusto"
     ],
     "kind": "dialogue",
@@ -22400,13 +21806,8 @@
     "acceptEn": [],
     "requires": [
       "c:como-estas",
-      "c:que-oso",
       "c:que-pena",
-      "c:que-pena-molestarlo",
       "g:estar-location-states",
-      "g:exclamations",
-      "g:prep-pronouns",
-      "g:questions",
       "l:cómo",
       "l:estar",
       "l:pena",
@@ -22452,9 +21853,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-oso",
       "c:que-pena",
-      "g:exclamations",
       "g:gender-articles",
       "l:café",
       "l:loro",
@@ -22480,7 +21879,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "g:gender-articles",
       "g:present-ar",
       "l:cliente",
@@ -22510,7 +21908,8 @@
       "l:ingeniero",
       "l:mesero",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:trabajar-de"
     ],
     "targets": [
       "g:present-ar",
@@ -22531,7 +21930,6 @@
     "requires": [
       "c:claro-listo",
       "g:gender-articles",
-      "g:that-clauses",
       "l:café",
       "l:claro",
       "l:ingeniero"
@@ -22597,7 +21995,9 @@
     "en": "Altamira? No, thanks.",
     "accept": [],
     "acceptEn": [],
-    "requires": [],
+    "requires": [
+      "c:gracias-de-nada"
+    ],
     "targets": [],
     "kind": "dialogue",
     "unit": "u01",
@@ -22783,14 +22183,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
       "l:español"
     ],
     "targets": [
-      "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
       "l:español"
@@ -22946,8 +22344,6 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "c:es-que",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:that-clauses",
       "l:canadiense",
@@ -22957,7 +22353,6 @@
     ],
     "targets": [
       "c:creo-que",
-      "c:es-que",
       "g:ser-identity",
       "l:creer"
     ],
@@ -22974,7 +22369,8 @@
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:somos-cuatro"
     ],
     "targets": [
       "g:ser-identity"
@@ -23030,6 +22426,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:entonces-bueno",
       "c:hay",
       "g:hay-vs-esta",
       "g:ser-identity",
@@ -23081,13 +22478,11 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:soy-de",
       "g:ser-identity",
       "l:ser",
       "l:señora"
     ],
     "targets": [
-      "c:soy-de",
       "g:ser-identity"
     ],
     "kind": "dialogue",
@@ -23125,7 +22520,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:de-una",
       "g:gender-articles",
       "g:ser-identity",
       "l:banda",
@@ -23198,6 +22592,7 @@
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "c:gracias-de-nada",
       "l:bien"
     ],
     "targets": [
@@ -23234,6 +22629,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "l:bien"
     ],
     "targets": [
@@ -23272,8 +22668,8 @@
       "c:bien-y-tu",
       "c:como-estas",
       "c:hola-buenos-dias",
+      "c:no-cierto",
       "g:estar-location-states",
-      "g:questions",
       "l:bien",
       "l:cómo",
       "l:estar"
@@ -23296,6 +22692,7 @@
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "c:gracias-de-nada",
       "c:por-favor",
       "g:gender-articles",
       "l:bien",
@@ -23647,13 +23044,11 @@
     "requires": [
       "c:me-encanta",
       "g:gustar-full",
-      "g:present-ar",
       "l:bailar",
       "l:encantar"
     ],
     "targets": [
       "c:me-encanta",
-      "g:present-ar",
       "l:bailar",
       "l:encantar"
     ],
@@ -24018,14 +23413,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:trabajo-en",
       "g:gender-articles",
       "g:present-ar",
       "l:aquí",
       "l:trabajar"
     ],
     "targets": [
-      "c:trabajo-en",
       "g:gender-articles",
       "g:present-ar",
       "l:aquí",
@@ -24152,7 +23545,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hasta-el-lunes",
+      "c:chao-nos-vemos",
       "l:mañana"
     ],
     "targets": [
@@ -24259,10 +23652,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-oso",
       "c:que-pena",
       "c:tengo",
-      "g:questions",
       "g:yo-irregular",
       "l:pena",
       "l:qué",
@@ -24315,8 +23706,6 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:estar-location-states",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:cerrar",
       "l:creer",
@@ -24340,9 +23729,7 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:estar-location-states",
       "g:gender-articles",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:café",
       "l:cerrar",
@@ -24435,8 +23822,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:compre-trabaje",
-      "g:gender-articles",
       "g:preterite-ar",
       "l:comprar",
       "l:pan",
@@ -24445,7 +23832,6 @@
     ],
     "targets": [
       "c:compre-trabaje",
-      "g:gender-articles",
       "l:comprar",
       "l:pan",
       "l:pasar",
@@ -24463,8 +23849,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:fui",
-      "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:fin",
       "l:ir",
@@ -24473,7 +23859,6 @@
     ],
     "targets": [
       "c:fui",
-      "g:gender-articles",
       "l:fin",
       "l:pasado",
       "l:semana"
@@ -24633,18 +24018,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-cuenta",
       "c:me-regala",
-      "g:direct-objects",
-      "g:gender-articles",
-      "g:present-ar",
       "l:cuenta",
       "l:dar"
     ],
     "targets": [
       "c:me-regala",
-      "g:gender-articles",
-      "g:present-ar",
       "l:dar"
     ],
     "kind": "question",
@@ -24659,12 +24038,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-cuenta",
       "c:me-regala",
       "c:por-favor",
-      "g:direct-objects",
-      "g:gender-articles",
-      "g:present-ar",
       "l:cuenta",
       "l:dar",
       "l:favor"
@@ -24672,8 +24047,6 @@
     "targets": [
       "c:me-regala",
       "c:por-favor",
-      "g:gender-articles",
-      "g:present-ar",
       "l:dar",
       "l:favor"
     ],
@@ -24689,19 +24062,13 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-cuenta",
       "c:me-regala",
-      "g:direct-objects",
-      "g:gender-articles",
-      "g:present-ar",
       "l:cuenta",
       "l:dar",
       "l:señor"
     ],
     "targets": [
       "c:me-regala",
-      "g:gender-articles",
-      "g:present-ar",
       "l:dar",
       "l:señor"
     ],
@@ -24720,7 +24087,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:café",
-      "l:quedar"
+      "l:quedar",
+      "p:quedar-en"
     ],
     "targets": [
       "g:gender-articles",
@@ -24741,17 +24109,12 @@
     "acceptEn": [],
     "requires": [
       "c:donde-esta",
-      "g:gender-articles",
-      "g:present-ar",
-      "g:questions",
       "l:dónde",
       "l:estación",
       "l:quedar"
     ],
     "targets": [
       "c:donde-esta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:quedar"
     ],
     "kind": "question",
@@ -24767,7 +24130,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:quedar"
+      "l:quedar",
+      "p:quedar-en"
     ],
     "targets": [
       "g:present-ar",
@@ -24787,7 +24151,8 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:quedar"
+      "l:quedar",
+      "p:quedar-en"
     ],
     "targets": [
       "g:gender-articles",
@@ -24806,18 +24171,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-cuenta",
       "c:me-regala",
-      "g:direct-objects",
-      "g:gender-articles",
-      "g:present-ar",
       "l:cuenta",
       "l:dar"
     ],
     "targets": [
       "c:me-regala",
-      "g:gender-articles",
-      "g:present-ar",
       "l:dar"
     ],
     "kind": "dialogue",
@@ -24833,19 +24192,13 @@
     "acceptEn": [],
     "requires": [
       "c:es-que",
-      "c:la-cuenta",
       "c:me-regala",
       "c:tengo",
       "c:tengo-que",
-      "g:direct-objects",
-      "g:gender-articles",
-      "g:present-ar",
-      "g:ser-identity",
-      "g:that-clauses",
       "g:yo-irregular",
       "l:cuenta",
       "l:dar",
-      "l:irme",
+      "l:irse",
       "l:ser",
       "l:tener"
     ],
@@ -24854,9 +24207,6 @@
       "c:me-regala",
       "c:tengo",
       "c:tengo-que",
-      "g:gender-articles",
-      "g:present-ar",
-      "g:ser-identity",
       "l:dar",
       "l:tener"
     ],
@@ -24872,12 +24222,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-cuenta",
       "c:me-regala",
       "c:perdon-disculpe",
-      "g:direct-objects",
-      "g:gender-articles",
-      "g:present-ar",
       "l:cuenta",
       "l:dar",
       "l:perdón",
@@ -24886,8 +24232,6 @@
     "targets": [
       "c:me-regala",
       "c:perdon-disculpe",
-      "g:gender-articles",
-      "g:present-ar",
       "l:dar",
       "l:perdón"
     ],
@@ -24904,9 +24248,6 @@
     "acceptEn": [],
     "requires": [
       "c:donde-esta",
-      "g:gender-articles",
-      "g:present-ar",
-      "g:questions",
       "l:dónde",
       "l:estación",
       "l:quedar",
@@ -24914,8 +24255,6 @@
     ],
     "targets": [
       "c:donde-esta",
-      "g:gender-articles",
-      "g:present-ar",
       "l:quedar",
       "l:señor"
     ],
@@ -24932,7 +24271,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:quedar"
+      "l:quedar",
+      "p:quedar-en"
     ],
     "targets": [
       "g:present-ar",
@@ -24951,7 +24291,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:quedar"
+      "l:quedar",
+      "p:quedar-en"
     ],
     "targets": [
       "g:present-ar",
@@ -24994,8 +24335,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:comi",
-      "g:gender-articles",
       "g:preterite-er-ir",
       "l:ajiaco",
       "l:comer",
@@ -25005,7 +24346,6 @@
     ],
     "targets": [
       "c:comi",
-      "g:gender-articles",
       "l:comer",
       "l:fin",
       "l:pasado",
@@ -25023,8 +24363,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:compre-trabaje",
-      "g:gender-articles",
       "g:preterite-ar",
       "l:comprar",
       "l:fin",
@@ -25034,7 +24374,6 @@
     ],
     "targets": [
       "c:compre-trabaje",
-      "g:gender-articles",
       "l:comprar",
       "l:fin",
       "l:pan",
@@ -25053,13 +24392,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:ayer-anoche",
       "l:fin",
       "l:pasado",
       "l:semana"
     ],
     "targets": [
-      "g:gender-articles",
       "l:fin",
       "l:pasado",
       "l:semana"
@@ -25076,8 +24414,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:fui",
-      "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:ir",
       "l:pasar",
@@ -25085,7 +24423,6 @@
     ],
     "targets": [
       "c:fui",
-      "g:gender-articles",
       "l:pasar",
       "l:semana"
     ],
@@ -25101,8 +24438,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:comi",
-      "g:gender-articles",
       "g:preterite-er-ir",
       "l:ajiaco",
       "l:comer",
@@ -25111,7 +24448,6 @@
     ],
     "targets": [
       "c:comi",
-      "g:gender-articles",
       "l:comer",
       "l:pasar",
       "l:semana"
@@ -25129,7 +24465,6 @@
     "acceptEn": [],
     "requires": [
       "c:hola-buenos-dias",
-      "g:adjective-agreement",
       "g:present-ar",
       "l:bueno",
       "l:día",
@@ -25154,6 +24489,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
       "g:present-ar",
       "l:leche",
       "l:necesitar"
@@ -25176,7 +24512,6 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:cerrar",
       "l:creer"
@@ -25198,8 +24533,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:comi",
-      "g:gender-articles",
       "g:preterite-er-ir",
       "l:comer",
       "l:fin",
@@ -25209,7 +24544,6 @@
     ],
     "targets": [
       "c:comi",
-      "g:gender-articles",
       "l:comer",
       "l:fin",
       "l:pan",
@@ -25228,13 +24562,12 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:ayer-anoche",
       "l:fin",
       "l:pasado",
       "l:semana"
     ],
     "targets": [
-      "g:gender-articles",
       "l:fin",
       "l:pasado",
       "l:semana"
@@ -25252,11 +24585,7 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "c:que-oso",
       "c:que-pena",
-      "g:estar-location-states",
-      "g:exclamations",
-      "g:present-er-ir",
       "g:that-clauses",
       "l:cerrar",
       "l:creer",
@@ -25286,7 +24615,6 @@
       "c:claro-listo",
       "c:trabajo-en",
       "g:gender-articles",
-      "g:that-clauses",
       "l:café",
       "l:claro",
       "l:trabajo"

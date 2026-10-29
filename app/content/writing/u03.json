@@ -6,13 +6,37 @@
     "minWords": 15,
     "maxWords": 45,
     "constraints": [
-      { "type": "containsWord", "word": "me gusta " },
-      { "type": "containsWord", "word": "me gustan" },
-      { "type": "negation" },
-      { "type": "minSentences", "n": 3 }
+      {
+        "type": "containsWord",
+        "word": "me gusta "
+      },
+      {
+        "type": "containsWord",
+        "word": "me gustan"
+      },
+      {
+        "type": "negation"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
     ],
     "model": "Me gusta el café de Colombia. Me gustan los parques de Bogotá y me gusta caminar los domingos. No me gustan las reuniones de los lunes.",
-    "focus": "g:gustar-basic"
+    "focus": "g:gustar-basic",
+    "requires": [
+      "c:me-gusta",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "l:café",
+      "l:caminar",
+      "l:domingo",
+      "l:gustar",
+      "l:lunes",
+      "l:parque",
+      "l:reunión"
+    ]
   },
   {
     "id": "w-u03-02",
@@ -21,13 +45,39 @@
     "minWords": 10,
     "maxWords": 35,
     "constraints": [
-      { "type": "question" },
-      { "type": "containsWord", "word": "te gusta" },
-      { "type": "containsWord", "word": "tipo de" },
-      { "type": "minSentences", "n": 3 }
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "te gusta"
+      },
+      {
+        "type": "containsWord",
+        "word": "tipo de"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
     ],
     "model": "¿Te gusta bailar? ¿Qué tipo de música te gusta? ¿Te gustan las películas en español?",
-    "focus": "p:que-tipo-de"
+    "focus": "p:que-tipo-de",
+    "requires": [
+      "c:me-gusta",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:questions",
+      "l:bailar",
+      "l:español",
+      "l:gustar",
+      "l:música",
+      "l:película",
+      "l:qué",
+      "l:tipo",
+      "p:que-tipo-de"
+    ]
   },
   {
     "id": "w-u03-03",
@@ -36,13 +86,41 @@
     "minWords": 18,
     "maxWords": 50,
     "constraints": [
-      { "type": "verbForm", "inf": "ir", "tense": "presente", "person": "yo" },
-      { "type": "regex", "pattern": "\\bvoy a [a-záéíóúñ]+(ar|er|ir)\\b" },
-      { "type": "negation" },
-      { "type": "minSentences", "n": 3 }
+      {
+        "type": "verbForm",
+        "inf": "ir",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bvoy a [a-záéíóúñ]+(ar|er|ir)\\b"
+      },
+      {
+        "type": "negation"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
     ],
     "model": "El sábado voy a jugar al fútbol en el parque. El domingo voy a comer pizza con Mariana y voy a leer. No voy a trabajar.",
-    "focus": "g:ir-a-plans"
+    "focus": "g:ir-a-plans",
+    "requires": [
+      "c:voy-a",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:comer",
+      "l:domingo",
+      "l:fútbol",
+      "l:ir",
+      "l:jugar",
+      "l:leer",
+      "l:parque",
+      "l:pizza",
+      "l:sábado",
+      "l:trabajar"
+    ]
   },
   {
     "id": "w-u03-04",
@@ -51,12 +129,40 @@
     "minWords": 18,
     "maxWords": 50,
     "constraints": [
-      { "type": "regex", "pattern": "\\blos (lunes|martes|miércoles|jueves|viernes|sábados|domingos)\\b" },
-      { "type": "regex", "pattern": "\\bel (lunes|martes|miércoles|jueves|viernes|sábado|domingo)\\b" },
-      { "type": "minSentences", "n": 3 }
+      {
+        "type": "regex",
+        "pattern": "\\blos (lunes|martes|miércoles|jueves|viernes|sábados|domingos)\\b"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bel (lunes|martes|miércoles|jueves|viernes|sábado|domingo)\\b"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
     ],
     "model": "Los lunes trabajo en la oficina. Los miércoles nado en la universidad. Los sábados bailo en el centro con Vale. El viernes hay una fiesta en el café.",
-    "focus": "p:days-el-lunes"
+    "focus": "p:days-el-lunes",
+    "requires": [
+      "c:hay",
+      "c:trabajo-en",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:present-ar",
+      "l:bailar",
+      "l:café",
+      "l:centro",
+      "l:fiesta",
+      "l:lunes",
+      "l:miércoles",
+      "l:nadar",
+      "l:oficina",
+      "l:sábado",
+      "l:trabajar",
+      "l:universidad",
+      "l:viernes"
+    ]
   },
   {
     "id": "w-u03-05",
@@ -65,12 +171,36 @@
     "minWords": 8,
     "maxWords": 35,
     "constraints": [
-      { "type": "containsWord", "word": "también" },
-      { "type": "containsWord", "word": "tampoco" },
-      { "type": "minSentences", "n": 3 }
+      {
+        "type": "containsWord",
+        "word": "también"
+      },
+      {
+        "type": "containsWord",
+        "word": "tampoco"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
     ],
     "model": "Yo también trabajo los sábados. Yo tampoco juego al fútbol. Yo no: estudio español. Yo sí, ¡me encanta la pizza!",
-    "focus": "p:tambien-tampoco"
+    "focus": "p:tambien-tampoco",
+    "requires": [
+      "c:me-encanta",
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:encantar",
+      "l:español",
+      "l:estudiar",
+      "l:fútbol",
+      "l:jugar",
+      "l:pizza",
+      "l:sábado",
+      "l:trabajar"
+    ]
   },
   {
     "id": "w-u03-06",
@@ -79,12 +209,40 @@
     "minWords": 10,
     "maxWords": 35,
     "constraints": [
-      { "type": "containsWord", "word": "quiero" },
-      { "type": "verbForm", "inf": "preferir", "tense": "presente", "person": "yo" },
-      { "type": "containsWord", "word": "por favor" }
+      {
+        "type": "containsWord",
+        "word": "quiero"
+      },
+      {
+        "type": "verbForm",
+        "inf": "preferir",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "containsWord",
+        "word": "por favor"
+      }
     ],
     "model": "Buenos días, Vale. Quiero un jugo de fruta y pan, por favor. No quiero tinto: prefiero el chocolate.",
-    "focus": "g:stem-boot"
+    "focus": "g:stem-boot",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:por-favor",
+      "c:quiero",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:bueno",
+      "l:chocolate",
+      "l:día",
+      "l:favor",
+      "l:fruta",
+      "l:jugo",
+      "l:pan",
+      "l:preferir",
+      "l:querer",
+      "l:tinto"
+    ]
   },
   {
     "id": "w-u03-07",
@@ -93,12 +251,43 @@
     "minWords": 10,
     "maxWords": 40,
     "constraints": [
-      { "type": "verbForm", "inf": "poder", "tense": "presente", "person": "yo" },
-      { "type": "negation" },
-      { "type": "containsAny", "words": ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"] }
+      {
+        "type": "verbForm",
+        "inf": "poder",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "negation"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "lunes",
+          "martes",
+          "miércoles",
+          "jueves",
+          "viernes",
+          "sábado",
+          "domingo"
+        ]
+      }
     ],
     "model": "Perdón, el lunes no puedo: trabajo. El martes tampoco puedo. Puedo el jueves a las seis. ¿Puedes tú?",
-    "focus": "g:stem-boot"
+    "focus": "g:stem-boot",
+    "requires": [
+      "c:perdon-disculpe",
+      "c:puedo",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:jueves",
+      "l:lunes",
+      "l:martes",
+      "l:perdón",
+      "l:poder",
+      "l:trabajar"
+    ]
   },
   {
     "id": "w-u03-08",
@@ -107,11 +296,32 @@
     "minWords": 12,
     "maxWords": 40,
     "constraints": [
-      { "type": "verbFormAny", "inf": "jugar", "tense": "presente" },
-      { "type": "regex", "pattern": "\\b(al|a la|a las|a los)\\b" }
+      {
+        "type": "verbFormAny",
+        "inf": "jugar",
+        "tense": "presente"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(al|a la|a las|a los)\\b"
+      }
     ],
     "model": "Juego al fútbol los domingos con los compañeros de la oficina. Jugamos en el parque del barrio. Vale no juega: prefiere nadar.",
-    "focus": "p:jugar-a"
+    "focus": "p:jugar-a",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:barrio",
+      "l:compañero",
+      "l:domingo",
+      "l:fútbol",
+      "l:jugar",
+      "l:nadar",
+      "l:oficina",
+      "l:parque",
+      "l:preferir"
+    ]
   },
   {
     "id": "w-u03-09",
@@ -120,12 +330,33 @@
     "minWords": 12,
     "maxWords": 40,
     "constraints": [
-      { "type": "regex", "pattern": "\\b(al|a la)\\b" },
-      { "type": "regex", "pattern": "\\b(del|de la)\\b" },
-      { "type": "minSentences", "n": 3 }
+      {
+        "type": "regex",
+        "pattern": "\\b(al|a la)\\b"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(del|de la)\\b"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
     ],
     "model": "Vale va al banco. Mariana viene de la universidad con un libro. Don Hernando viene del parque y va al café.",
-    "focus": "p:ir-a-venir-de-place"
+    "focus": "p:ir-a-venir-de-place",
+    "requires": [
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:stem-boot",
+      "l:banco",
+      "l:café",
+      "l:ir",
+      "l:libro",
+      "l:parque",
+      "l:universidad",
+      "l:venir"
+    ]
   },
   {
     "id": "w-u03-10",
@@ -134,12 +365,35 @@
     "minWords": 12,
     "maxWords": 40,
     "constraints": [
-      { "type": "question" },
-      { "type": "containsWord", "word": "prefieres" },
-      { "type": "containsWord", "word": "sábado" }
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "prefieres"
+      },
+      {
+        "type": "containsWord",
+        "word": "sábado"
+      }
     ],
     "model": "¡Quiubo, Mariana! El sábado vamos a salir con Vale. ¿Prefieres el cine o el partido de fútbol? ¿Puedes a las cinco?",
-    "focus": "p:prefieres-x-o-y"
+    "focus": "p:prefieres-x-o-y",
+    "requires": [
+      "c:quiubo",
+      "c:vamos-a",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:stem-boot",
+      "l:cine",
+      "l:fútbol",
+      "l:ir",
+      "l:partido",
+      "l:poder",
+      "l:preferir",
+      "l:salir",
+      "l:sábado"
+    ]
   },
   {
     "id": "w-u03-11",
@@ -148,13 +402,51 @@
     "minWords": 20,
     "maxWords": 55,
     "constraints": [
-      { "type": "containsWord", "word": "gusta" },
-      { "type": "verbFormAny", "inf": "ir", "tense": "presente" },
-      { "type": "negation" },
-      { "type": "minSentences", "n": 3 }
+      {
+        "type": "containsWord",
+        "word": "gusta"
+      },
+      {
+        "type": "verbFormAny",
+        "inf": "ir",
+        "tense": "presente"
+      },
+      {
+        "type": "negation"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
     ],
     "model": "Hola, Sam. Vale tiene un plan: un año con el café. No me gusta el plan, pero me gusta el pan de Vale. El sábado vamos a empezar. Voy a ser el mesero. ¡Qué pena!",
-    "focus": "g:ir-a-plans"
+    "focus": "g:ir-a-plans",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:me-gusta",
+      "c:que-pena",
+      "c:tienes",
+      "c:vamos-a",
+      "c:voy-a",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:ir-a-plans",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
+      "l:café",
+      "l:empezar",
+      "l:gustar",
+      "l:ir",
+      "l:mesero",
+      "l:pan",
+      "l:pena",
+      "l:plan",
+      "l:qué",
+      "l:ser",
+      "l:sábado",
+      "l:tener"
+    ]
   },
   {
     "id": "w-u03-12",
@@ -163,11 +455,42 @@
     "minWords": 10,
     "maxWords": 35,
     "constraints": [
-      { "type": "containsWord", "word": "prefiero" },
-      { "type": "containsWord", "word": "me da igual" },
-      { "type": "minSentences", "n": 3 }
+      {
+        "type": "containsWord",
+        "word": "prefiero"
+      },
+      {
+        "type": "containsWord",
+        "word": "me da igual"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
     ],
     "model": "Prefiero el cine: no me gusta el fútbol. Pizza o fruta, me da igual. Prefiero el domingo, porque el sábado trabajo.",
-    "focus": "c:me-da-igual"
+    "focus": "c:me-da-igual",
+    "requires": [
+      "c:me-da-igual",
+      "c:me-gusta",
+      "c:me-regala",
+      "c:porque",
+      "g:cause-result",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:cine",
+      "l:dar",
+      "l:domingo",
+      "l:fruta",
+      "l:fútbol",
+      "l:gustar",
+      "l:igual",
+      "l:pizza",
+      "l:preferir",
+      "l:sábado",
+      "l:trabajar"
+    ]
   }
 ]

@@ -2,8 +2,8 @@
   "node": "g:gustar-basic",
   "hook": {
     "line": "Today you'll be able to tell someone what you like and don't like, and ask them back. It's the fastest way to turn small talk into a real conversation.",
-    "es": "—¿Te gusta Bogotá? —Sí, me gusta el barrio. No me gustan las reuniones.",
-    "en": "—Do you like Bogotá? —Yes, I like the neighbourhood. I don't like meetings."
+    "es": "¿Te gusta Bogotá?\nSí, me gusta el barrio. No me gustan las reuniones.",
+    "en": "Do you like Bogotá?\nYes, I like the neighbourhood. I don't like meetings."
   },
   "examples": [
     { "es": "Me gusta el tinto.", "en": "I like black coffee." },
@@ -13,9 +13,9 @@
     { "es": "Me gusta nadar y leer.", "en": "I like swimming and reading." },
     { "es": "¿Te gustan los deportes?", "en": "Do you like sports?" }
   ],
-  "rule": "Spanish says 'I like coffee' the other way round: 'coffee pleases me'. So the thing you like does the verb, and you are the little word in front: me (me), te (you).\n\nOne thing you like: gusta. Me gusta el tinto.\nSeveral things: gustan. Me gustan los parques.\nAn activity (a verb): always gusta, even two of them. Me gusta nadar y leer.\n\nTo say no, put no first: No me gusta el horario.\nTo ask, keep the same words and raise your voice: ¿Te gusta cocinar?\n\nThe thing usually keeps its el, la, los or las: Me gusta el café, not me gusta café. And never put yo in front: it's me gusta, not yo gusto.",
-  "smallPrint": "Teachers call gustar a 'reverse' verb: the thing liked is the grammatical subject, and me/te is an indirect object pronoun. Here you only need me and te; le, nos and les come later.",
-  "soundTip": "Gusta has a hard g, as in 'go'. Stress the first syllable: GUS-ta, GUS-tan.",
+  "rule": "Spanish says 'I like coffee' the other way round: 'coffee pleases me'. So the thing you like does the verb, and you are the little word in front: *me* (me), *te* (you).\n\nOne thing you like: *gusta*. *Me gusta el tinto.*\nSeveral things: *gustan*. *Me gustan los parques.*\nAn activity (a verb): always *gusta*, even two of them. *Me gusta nadar y leer.*\n\nTo say no, put *no* first: *No me gusta el horario.*\nTo ask, keep the same words and raise your voice: *¿Te gusta cocinar?*\n\nThe thing usually keeps its *el*, *la*, *los* or *las*: *Me gusta el café*, not *me gusta café*. And never put *yo* in front: it's *me gusta*, not *yo gusto*.",
+  "smallPrint": "Teachers call *gustar* a 'reverse' verb: the thing liked is the grammatical subject, and *me*/*te* is an indirect object pronoun. Here you only need *me* and *te*; *le*, *nos* and *les* come later.",
+  "soundTip": "*Gusta* has a hard g, as in 'go'. Stress the first syllable: *GUS-ta*, *GUS-tan*.",
   "readAndPick": [
     { "es": "Me gusta Tomás.", "options": ["I like Tomás.", "Tomás likes me."], "answer": 0 },
     { "es": "¿Te gusta Mariana?", "options": ["Does Mariana like you?", "Do you like Mariana?"], "answer": 1 },
@@ -29,21 +29,21 @@
     { "es": "No me gusta la leche.", "options": ["Who doesn't like milk? Me.", "Who doesn't like milk? The milk."], "answer": 0 }
   ],
   "yourTurn": [
-    { "prompt": "Say you like water.", "answer": "Me gusta el agua.", "accept": [], "why": "One thing you like takes gusta, and agua keeps its el." },
-    { "prompt": "Say you like sports.", "answer": "Me gustan los deportes.", "accept": [], "why": "Deportes is more than one thing, so the verb becomes gustan." },
-    { "prompt": "Say you don't like meetings.", "answer": "No me gustan las reuniones.", "accept": [], "why": "No goes right at the front, before me. Reuniones is plural, so gustan." },
-    { "prompt": "Ask a friend if they like cooking.", "answer": "¿Te gusta cocinar?", "accept": [], "why": "Te is 'you' for a friend. An activity always takes gusta." },
-    { "prompt": "Say you like reading and writing.", "answer": "Me gusta leer y escribir.", "accept": [], "why": "Two activities still take gusta: with verbs it never becomes gustan." },
-    { "prompt": "Ask a friend if they like the parks in Bogotá.", "answer": "¿Te gustan los parques de Bogotá?", "accept": [], "why": "Parques is plural, so gustan. The question is the same words with question marks." },
-    { "prompt": "Say you don't like black coffee.", "answer": "No me gusta el tinto.", "accept": [], "why": "One thing, gusta; no in front of me." },
-    { "prompt": "Say you like Bogotá.", "answer": "Me gusta Bogotá.", "accept": [], "why": "A city name takes no article: just Me gusta Bogotá." }
+    { "prompt": "Say you like water.", "answer": "Me gusta el agua.", "accept": [], "why": "One thing you like takes *gusta*, and *agua* keeps its *el*." },
+    { "prompt": "Say you like sports.", "answer": "Me gustan los deportes.", "accept": [], "why": "*Deportes* is more than one thing, so the verb becomes *gustan*." },
+    { "prompt": "Say you don't like meetings.", "answer": "No me gustan las reuniones.", "accept": [], "why": "*No* goes right at the front, before *me*. *Reuniones* is plural, so *gustan*." },
+    { "prompt": "Ask a friend if they like cooking.", "answer": "¿Te gusta cocinar?", "accept": [], "why": "*Te* is 'you' for a friend. An activity always takes *gusta*." },
+    { "prompt": "Say you like reading and writing.", "answer": "Me gusta leer y escribir.", "accept": [], "why": "Two activities still take *gusta*: with verbs it never becomes *gustan*." },
+    { "prompt": "Ask a friend if they like the parks in Bogotá.", "answer": "¿Te gustan los parques de Bogotá?", "accept": [], "why": "*Parques* is plural, so *gustan*. The question is the same words with question marks." },
+    { "prompt": "Say you don't like black coffee.", "answer": "No me gusta el tinto.", "accept": [], "why": "One thing, *gusta*; *no* in front of *me*." },
+    { "prompt": "Say you like Bogotá.", "answer": "Me gusta Bogotá.", "accept": [], "why": "A city name takes no article: just *Me gusta Bogotá*." }
   ],
   "pitfalls": [
-    { "wrong": "Yo gusto el café.", "right": "Me gusta el café.", "why": "Yo gusto means 'I am pleasing'. The coffee does the pleasing, so: me gusta." },
-    { "wrong": "Me gusto el café.", "right": "Me gusta el café.", "why": "Gusto is about you. The verb follows the coffee: gusta." },
-    { "wrong": "Me gusta los deportes.", "right": "Me gustan los deportes.", "why": "Several things take gustan." },
-    { "wrong": "Me gustan nadar y cocinar.", "right": "Me gusta nadar y cocinar.", "why": "Activities always take gusta, however many there are." },
-    { "wrong": "Me gusta café.", "right": "Me gusta el café.", "why": "Things you like in general keep el or la in Spanish." }
+    { "wrong": "Yo gusto el café.", "right": "Me gusta el café.", "why": "*Yo gusto* means 'I am pleasing'. The coffee does the pleasing, so: *me gusta*." },
+    { "wrong": "Me gusto el café.", "right": "Me gusta el café.", "why": "*Gusto* is about you. The verb follows the coffee: *gusta*." },
+    { "wrong": "Me gusta los deportes.", "right": "Me gustan los deportes.", "why": "Several things take *gustan*." },
+    { "wrong": "Me gustan nadar y cocinar.", "right": "Me gusta nadar y cocinar.", "why": "Activities always take *gusta*, however many there are." },
+    { "wrong": "Me gusta café.", "right": "Me gusta el café.", "why": "Things you like in general keep *el* or *la* in Spanish." }
   ],
-  "personal": "Tell us two things you like and one you don't. Start with Me gusta…, Me gustan… and No me gusta…"
+  "personal": "Tell us two things you like and one you don't. Start with *Me gusta…*, *Me gustan…* and *No me gusta…*"
 }

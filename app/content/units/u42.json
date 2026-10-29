@@ -97,8 +97,7 @@
   {
    "type": "output",
    "focus": [
-    "g:register-ladder",
-    "g:softening"
+    "g:register-ladder"
    ],
    "chunks": [],
    "lexemes": [],

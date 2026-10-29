@@ -1,0 +1,49 @@
+{
+  "node": "g:verb-infinitive",
+  "hook": {
+    "line": "Most of what you'll want to say this week has two verbs in it: I want to go, I can't stay, I have to work. You already have the first verb. Today you add the second one, and the good news is that it never changes.",
+    "es": "¿Quieres bailar el sábado?\nNo puedo. Tengo que trabajar.",
+    "en": "Do you want to dance on Saturday?\nI can't. I have to work."
+  },
+  "examples": [
+    { "es": "¿Quieres comer algo?", "en": "Do you want to eat something?" },
+    { "es": "Hoy no puedo salir: tengo que cerrar el café.", "en": "I can't go out today: I have to close the café." },
+    { "es": "Este fin de semana necesito dormir mucho.", "en": "This weekend I need to sleep a lot." },
+    { "es": "¿Con quién quieres ver el partido?", "en": "Who do you want to watch the match with?" },
+    { "es": "Mariana prefiere escribir en el café.", "en": "Mariana prefers to write in the café." },
+    { "es": "En La Candelaria hay que caminar mucho.", "en": "In La Candelaria you have to walk a lot." },
+    { "es": "Me gusta bailar.\nA mí también, pero hoy no puedo.", "en": "I like dancing.\nMe too, but I can't today." },
+    { "es": "Cocinar con Vale es muy chévere.", "en": "Cooking with Vale is really great." }
+  ],
+  "rule": "When two verbs sit together, only the first one changes for the person. The second stays in its plain dictionary form, ending in *ar*, *er* or *ir*.\n\n*Quiero bailar*. *Vale quiere bailar*. *Queremos bailar*.\n\nEnglish puts 'to' in front: 'I want to dance'. Spanish has no word for that 'to'. The plain form already means it.\n\nThe verbs that do this most: *quiero* (want), *puedo* (can), *prefiero* (prefer), *necesito* (need) + verb.\n*Tengo que* + verb: I have to. Don't drop the *que*.\n*Hay que* + verb: you have to, said about everyone in general, nobody in particular.\n\nTo say no, put *no* before the first verb: *No puedo dormir*.\n\nWhen an activity is the subject, English often uses 'ing' and Spanish uses the plain form: *Bailar es muy chévere*, dancing is really great. You've done this since *me gusta bailar*.",
+  "smallPrint": "The plain form is the infinitive. Verbs like *querer* and *poder* that take one are sometimes called modal verbs.",
+  "readAndPick": [
+    { "es": "Vale puede cocinar.", "options": ["Vale cooks.", "Vale can cook.", "I can cook."], "answer": 1 },
+    { "es": "Necesitamos comprar pan.", "options": ["We need to buy bread.", "We buy bread.", "They need to buy bread."], "answer": 0 },
+    { "es": "No quiero cantar.", "options": ["I don't sing.", "I want to sing.", "I don't want to sing."], "answer": 2 },
+    { "es": "Hay que esperar.", "options": ["I have to wait.", "You have to wait (everyone does).", "There's a wait for you."], "answer": 1 },
+    { "es": "Mariana tiene que escribir su artículo.", "options": ["Mariana is writing her article.", "I have to write my article.", "Mariana has to write her article."], "answer": 2 },
+    { "es": "Bailar es muy chévere.", "options": ["Dancing is really great.", "She dances really well.", "I'm dancing, it's great."], "answer": 0 },
+    { "es": "¿Prefieres caminar?", "options": ["Do you prefer to walk?", "Do you walk?", "Does she prefer to walk?"], "answer": 0 },
+    { "es": "Tomás no puede dormir.", "options": ["Tomás doesn't sleep.", "Tomás can't sleep.", "Tomás doesn't want to sleep."], "answer": 1 },
+    { "es": "¿Quieren ver una película?", "options": ["Do you want to see a film? (to a friend)", "Do you all want to see a film?", "Do you all see films?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Fill the gap with *cierra* or *cerrar*, and type the whole sentence: *Vale tiene que ___ el café.*", "answer": "Vale tiene que cerrar el café.", "accept": [], "why": "*Tiene que* already says who. The second verb stays plain: *cerrar*." },
+    { "prompt": "Fill the gap with *tomas* or *tomar*, and type the whole question: *¿Quieres ___ algo?*", "answer": "¿Quieres tomar algo?", "accept": [], "why": "*Quieres* does the work for 'you'. The verb after it stays plain." },
+    { "prompt": "Say: I can't sleep.", "answer": "No puedo dormir.", "accept": [], "why": "*No* goes before the first verb, and *dormir* stays plain." },
+    { "prompt": "Say: We need to buy bread.", "answer": "Necesitamos comprar pan.", "accept": [], "why": "No word for 'to': *necesitamos* plus the plain verb." },
+    { "prompt": "Ask a friend who they want to dance with.", "answer": "¿Con quién quieres bailar?", "accept": ["¿Con quién quieres bailar tú?"], "why": "*Con quién* goes at the front, then *quieres* + the plain verb." },
+    { "prompt": "Say that in this café you have to pay first (everyone does).", "answer": "En este café hay que pagar primero.", "accept": ["Hay que pagar primero en este café."], "why": "*Hay que* is for a rule about everyone, not one person." },
+    { "prompt": "Make it negative: *Quiero ver el partido.*", "answer": "No quiero ver el partido.", "accept": [], "why": "Only one *no*, before the first verb." },
+    { "prompt": "Make it about Vale: *Prefiero caminar.*", "answer": "Vale prefiere caminar.", "accept": [], "why": "The first verb changes for Vale; *caminar* stays exactly as it was." },
+    { "prompt": "Say: I have to work on Saturday.", "answer": "Tengo que trabajar el sábado.", "accept": ["El sábado tengo que trabajar."], "why": "'Have to' is *tengo que*, and the *que* never drops out." }
+  ],
+  "pitfalls": [
+    { "wrong": "Quiero a bailar.", "right": "Quiero bailar.", "why": "Almost. Spanish has no word for that 'to': the plain verb already carries it." },
+    { "wrong": "Puedo bailo.", "right": "Puedo bailar.", "why": "Only the first verb changes. The second one stays plain." },
+    { "wrong": "Tengo trabajar el sábado.", "right": "Tengo que trabajar el sábado.", "why": "'Have to' needs *que*: *tengo que* + verb." },
+    { "wrong": "Bailando es muy chévere.", "right": "Bailar es muy chévere.", "why": "English says 'dancing is great', but Spanish uses the plain form for an activity." }
+  ],
+  "personal": "What do you want to do this weekend, and what do you have to do instead? Write two lines that start with *Quiero…* and *Tengo que…*, then add one thing you can't do: *No puedo…*"
+}

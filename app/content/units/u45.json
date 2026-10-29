@@ -115,8 +115,7 @@
    "type": "output",
    "focus": [
     "g:future-perfect",
-    "g:conditional-rumour",
-    "g:impersonal-register"
+    "g:conditional-rumour"
    ],
    "chunks": [],
    "lexemes": [],

@@ -9,8 +9,22 @@
       "npc": "¡Buenos días, Tomás! ¿Qué más?",
       "npcEn": "Morning, Tomás! How's it going?",
       "intent": "He's your customer. Ask him politely what he'd like, using usted.",
-      "accept": ["¿Qué quiere usted, don Hernando?", "¿Qué quiere, don Hernando?", "¿Usted qué quiere, don Hernando?"],
-      "require": [{ "type": "question" }, { "type": "verbForm", "inf": "querer", "tense": "presente", "person": "él/ella" }],
+      "accept": [
+        "¿Qué quiere usted, don Hernando?",
+        "¿Qué quiere, don Hernando?",
+        "¿Usted qué quiere, don Hernando?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "verbForm",
+          "inf": "querer",
+          "tense": "presente",
+          "person": "él/ella"
+        }
+      ],
       "focus": "g:stem-boot",
       "next": "t2"
     },
@@ -19,8 +33,22 @@
       "npc": "Un tinto, claro. ¿Y a usted? ¿Le gusta el tinto?",
       "npcEn": "A black coffee, of course. And you? Do you like black coffee?",
       "intent": "Say you don't like black coffee: you prefer hot chocolate.",
-      "accept": ["No me gusta el tinto. Prefiero el chocolate.", "No, no me gusta. Prefiero el chocolate.", "No me gusta mucho. Prefiero el chocolate."],
-      "require": [{ "type": "negation" }, { "type": "verbForm", "inf": "preferir", "tense": "presente", "person": "yo" }],
+      "accept": [
+        "No me gusta el tinto. Prefiero el chocolate.",
+        "No, no me gusta. Prefiero el chocolate.",
+        "No me gusta mucho. Prefiero el chocolate."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "verbForm",
+          "inf": "preferir",
+          "tense": "presente",
+          "person": "yo"
+        }
+      ],
       "focus": "g:gustar-basic",
       "next": "t3"
     },
@@ -29,8 +57,23 @@
       "npc": "¿Chocolate? ¡Ay, no! ¿Y usted juega al fútbol?",
       "npcEn": "Hot chocolate? Oh, no! And do you play football?",
       "intent": "Say yes, you play football on Sundays.",
-      "accept": ["Sí, juego al fútbol los domingos.", "Sí, juego fútbol los domingos.", "Sí, los domingos juego al fútbol."],
-      "require": [{ "type": "verbForm", "inf": "jugar", "tense": "presente", "person": "yo" }, { "type": "containsWord", "word": "los domingos" }],
+      "accept": [
+        "Sí, juego al fútbol los domingos.",
+        "Sí, juego fútbol los domingos.",
+        "Sí, los domingos juego al fútbol."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "jugar",
+          "tense": "presente",
+          "person": "yo"
+        },
+        {
+          "type": "containsWord",
+          "word": "los domingos"
+        }
+      ],
       "focus": "p:jugar-a",
       "next": "t4"
     },
@@ -39,8 +82,17 @@
       "npc": "Yo no juego. Yo camino. ¿Y adónde va el domingo?",
       "npcEn": "I don't play. I walk. And where are you going on Sunday?",
       "intent": "Say you're going to the park with Vale.",
-      "accept": ["Voy al parque con Vale.", "El domingo voy al parque con Vale.", "Voy a ir al parque con Vale."],
-      "require": [{ "type": "containsWord", "word": "al parque" }],
+      "accept": [
+        "Voy al parque con Vale.",
+        "El domingo voy al parque con Vale.",
+        "Voy a ir al parque con Vale."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "al parque"
+        }
+      ],
       "focus": "p:ir-a-venir-de-place",
       "next": "t5"
     },
@@ -49,10 +101,54 @@
       "npc": "¿Con Vale? ¡Qué chévere! Los domingos no trabajo. Simón tampoco.",
       "npcEn": "With Vale? How nice! I don't work on Sundays. Neither does Simón.",
       "intent": "Say 'me neither'.",
-      "accept": ["Yo tampoco.", "Yo tampoco trabajo los domingos.", "Tampoco trabajo los domingos."],
-      "require": [{ "type": "containsWord", "word": "tampoco" }],
+      "accept": [
+        "Yo tampoco.",
+        "Yo tampoco trabajo los domingos.",
+        "Tampoco trabajo los domingos."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "tampoco"
+        }
+      ],
       "focus": "p:tambien-tampoco",
       "next": null
     }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:hola-buenos-dias",
+    "c:me-gusta",
+    "c:no-me-gusta-nada",
+    "c:que-chevere",
+    "c:que-mas",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:questions",
+    "g:stem-boot",
+    "l:adónde",
+    "l:bueno",
+    "l:caminar",
+    "l:chocolate",
+    "l:chévere",
+    "l:claro",
+    "l:domingo",
+    "l:día",
+    "l:fútbol",
+    "l:gustar",
+    "l:ir",
+    "l:jugar",
+    "l:parque",
+    "l:preferir",
+    "l:querer",
+    "l:qué",
+    "l:tinto",
+    "l:trabajar"
   ]
 }

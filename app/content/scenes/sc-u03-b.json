@@ -9,8 +9,18 @@
       "npc": "¡Quiubo! ¿Qué te gusta hacer los fines de semana?",
       "npcEn": "Hey! What do you like doing at weekends?",
       "intent": "Say two things you like doing.",
-      "accept": ["Me gusta bailar y caminar.", "Me gusta nadar y leer.", "Me gusta jugar al fútbol y cocinar.", "Me gusta ver películas y bailar."],
-      "require": [{ "type": "containsWord", "word": "me gusta" }],
+      "accept": [
+        "Me gusta bailar y caminar.",
+        "Me gusta nadar y leer.",
+        "Me gusta jugar al fútbol y cocinar.",
+        "Me gusta ver películas y bailar."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "me gusta"
+        }
+      ],
       "focus": "g:gustar-basic",
       "next": "t2"
     },
@@ -19,8 +29,20 @@
       "npc": "Yo prefiero el cine. ¿Y tú? ¿Te gustan las películas?",
       "npcEn": "I prefer the cinema. What about you? Do you like films?",
       "intent": "Say yes, and ask her what kind of films she likes.",
-      "accept": ["Sí, me gustan. ¿Qué tipo de películas te gustan?", "Sí. ¿Qué tipo de películas te gustan?", "Sí, claro. ¿Qué tipo de películas te gustan?"],
-      "require": [{ "type": "question" }, { "type": "containsWord", "word": "tipo de" }],
+      "accept": [
+        "Sí, me gustan. ¿Qué tipo de películas te gustan?",
+        "Sí. ¿Qué tipo de películas te gustan?",
+        "Sí, claro. ¿Qué tipo de películas te gustan?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "containsWord",
+          "word": "tipo de"
+        }
+      ],
       "focus": "g:questions",
       "next": "t3"
     },
@@ -29,8 +51,23 @@
       "npc": "Las películas de fútbol, ¡claro! Hay una el sábado en el cine del centro. ¿Vamos?",
       "npcEn": "Football films, of course! There's one on Saturday at the cinema downtown. Shall we go?",
       "intent": "Accept enthusiastically, the Colombian way.",
-      "accept": ["¡De una!", "¡De una! ¿Vamos el sábado?", "¡Qué chévere! ¡De una!", "Claro, vamos."],
-      "require": [{ "type": "containsAny", "words": ["de una", "claro", "vamos", "chévere"] }],
+      "accept": [
+        "¡De una!",
+        "¡De una! ¿Vamos el sábado?",
+        "¡Qué chévere! ¡De una!",
+        "Claro, vamos."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "de una",
+            "claro",
+            "vamos",
+            "chévere"
+          ]
+        }
+      ],
       "focus": "c:de-una",
       "next": "t4"
     },
@@ -39,8 +76,17 @@
       "npc": "Listo. El sábado no puedo a las cinco. ¿Puedes a las ocho?",
       "npcEn": "Great. On Saturday I can't make five. Can you do eight?",
       "intent": "Say yes, you can at eight.",
-      "accept": ["Sí, puedo a las ocho.", "Sí, a las ocho puedo.", "Sí, a las ocho."],
-      "require": [{ "type": "containsWord", "word": "ocho" }],
+      "accept": [
+        "Sí, puedo a las ocho.",
+        "Sí, a las ocho puedo.",
+        "Sí, a las ocho."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ocho"
+        }
+      ],
       "focus": "g:stem-boot",
       "next": "t5"
     },
@@ -49,10 +95,72 @@
       "npc": "Listo. Yo voy del trabajo al cine. ¿Y tú?",
       "npcEn": "Great. I'm going from work to the cinema. And you?",
       "intent": "Say you're going from the park to the cinema.",
-      "accept": ["Voy al cine del parque.", "Voy del parque al cine.", "Del parque voy al cine."],
-      "require": [{ "type": "containsWord", "word": "parque" }, { "type": "containsAny", "words": ["al cine", "del parque"] }],
+      "accept": [
+        "Voy al cine del parque.",
+        "Voy del parque al cine.",
+        "Del parque voy al cine."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "parque"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "al cine",
+            "del parque"
+          ]
+        }
+      ],
       "focus": "p:ir-a-venir-de-place",
       "next": null
     }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:hay",
+    "c:me-gusta",
+    "c:puedo",
+    "c:que-chevere",
+    "c:que-te-gusta-hacer",
+    "c:quiubo",
+    "c:vamos-a",
+    "c:voy-vas",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:questions",
+    "g:stem-boot",
+    "l:bailar",
+    "l:caminar",
+    "l:centro",
+    "l:chévere",
+    "l:cine",
+    "l:claro",
+    "l:cocinar",
+    "l:fin",
+    "l:fútbol",
+    "l:gustar",
+    "l:hacer",
+    "l:ir",
+    "l:jugar",
+    "l:leer",
+    "l:listo",
+    "l:nadar",
+    "l:parque",
+    "l:película",
+    "l:poder",
+    "l:preferir",
+    "l:qué",
+    "l:semana",
+    "l:sábado",
+    "l:tipo",
+    "l:trabajo",
+    "l:ver",
+    "p:que-tipo-de"
   ]
 }

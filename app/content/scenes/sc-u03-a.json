@@ -9,8 +9,20 @@
       "npc": "Bueno, Tomás. El sábado es la fiesta del café. ¿Te gusta cocinar?",
       "npcEn": "OK, Tomás. Saturday is the café's party. Do you like cooking?",
       "intent": "Tell Vale you don't like cooking, but you like talking to customers.",
-      "accept": ["No me gusta cocinar, pero me gusta hablar con los clientes.", "No me gusta cocinar. Me gusta hablar con los clientes.", "No, no me gusta cocinar, pero me gusta hablar con los clientes."],
-      "require": [{ "type": "containsWord", "word": "me gusta" }, { "type": "negation" }],
+      "accept": [
+        "No me gusta cocinar, pero me gusta hablar con los clientes.",
+        "No me gusta cocinar. Me gusta hablar con los clientes.",
+        "No, no me gusta cocinar, pero me gusta hablar con los clientes."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "me gusta"
+        },
+        {
+          "type": "negation"
+        }
+      ],
       "focus": "g:gustar-basic",
       "next": "t2"
     },
@@ -19,8 +31,23 @@
       "npc": "Listo, entonces vas a ser el mesero. ¿Prefieres el tinto o el chocolate?",
       "npcEn": "Right, so you're going to be the waiter. Do you prefer black coffee or hot chocolate?",
       "intent": "Choose one of the two.",
-      "accept": ["Prefiero el tinto.", "Prefiero el chocolate.", "El tinto.", "El chocolate.", "Tinto, gracias.", "Chocolate, gracias."],
-      "require": [{ "type": "containsAny", "words": ["tinto", "chocolate"] }],
+      "accept": [
+        "Prefiero el tinto.",
+        "Prefiero el chocolate.",
+        "El tinto.",
+        "El chocolate.",
+        "Tinto, gracias.",
+        "Chocolate, gracias."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "tinto",
+            "chocolate"
+          ]
+        }
+      ],
       "focus": "g:stem-boot",
       "next": "t3"
     },
@@ -29,8 +56,23 @@
       "npc": "Yo también. Don Hernando viene con los amigos del parque, y Simón quiere la pizza de todos. ¿Puedes a las seis?",
       "npcEn": "Me too. Don Hernando is coming with his friends from the park, and Simón wants everyone's pizza. Can you make it at six?",
       "intent": "Say you can't at six, but you can at seven.",
-      "accept": ["No puedo a las seis, pero puedo a las siete.", "A las seis no puedo, pero a las siete sí.", "No puedo a las seis. Puedo a las siete."],
-      "require": [{ "type": "verbForm", "inf": "poder", "tense": "presente", "person": "yo" }, { "type": "containsWord", "word": "siete" }],
+      "accept": [
+        "No puedo a las seis, pero puedo a las siete.",
+        "A las seis no puedo, pero a las siete sí.",
+        "No puedo a las seis. Puedo a las siete."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "poder",
+          "tense": "presente",
+          "person": "yo"
+        },
+        {
+          "type": "containsWord",
+          "word": "siete"
+        }
+      ],
       "focus": "g:stem-boot",
       "next": "t4"
     },
@@ -39,8 +81,23 @@
       "npc": "¿A las siete? Bueno. ¿Y qué vas a hacer el domingo?",
       "npcEn": "At seven? Fine. And what are you going to do on Sunday?",
       "intent": "Tell her two things you're going to do on Sunday.",
-      "accept": ["Voy a caminar en el parque y voy a leer.", "El domingo voy a nadar y voy a caminar.", "Voy a pasar el día en el parque y voy a llamar a Mariana."],
-      "require": [{ "type": "verbForm", "inf": "ir", "tense": "presente", "person": "yo" }, { "type": "regex", "pattern": "voy a [a-záéíóú]+(ar|er|ir)\\b" }],
+      "accept": [
+        "Voy a caminar en el parque y voy a leer.",
+        "El domingo voy a nadar y voy a caminar.",
+        "Voy a pasar el día en el parque y voy a llamar a Mariana."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ir",
+          "tense": "presente",
+          "person": "yo"
+        },
+        {
+          "type": "regex",
+          "pattern": "voy a [a-záéíóú]+(ar|er|ir)\\b"
+        }
+      ],
       "focus": "g:ir-a-plans",
       "next": "t5"
     },
@@ -49,10 +106,68 @@
       "npc": "¡Qué chévere! Entonces nos vemos el sábado a las siete.",
       "npcEn": "Great! So see you on Saturday at seven.",
       "intent": "Say goodbye until Saturday.",
-      "accept": ["Listo, nos vemos el sábado.", "Chao, Vale. ¡Hasta el sábado!", "Bueno, hasta el sábado."],
-      "require": [{ "type": "containsWord", "word": "sábado" }],
+      "accept": [
+        "Listo, nos vemos el sábado.",
+        "Chao, Vale. ¡Hasta el sábado!",
+        "Bueno, hasta el sábado."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "sábado"
+        }
+      ],
       "focus": "c:hasta-el-lunes",
       "next": null
     }
+  ],
+  "requires": [
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:me-gusta",
+    "c:puedo",
+    "c:que-chevere",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:ir-a-plans",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "l:amigo",
+    "l:bueno",
+    "l:café",
+    "l:caminar",
+    "l:chocolate",
+    "l:chévere",
+    "l:cliente",
+    "l:cocinar",
+    "l:domingo",
+    "l:día",
+    "l:fiesta",
+    "l:gustar",
+    "l:hablar",
+    "l:hacer",
+    "l:ir",
+    "l:leer",
+    "l:listo",
+    "l:llamar",
+    "l:mesero",
+    "l:nadar",
+    "l:parque",
+    "l:pasar",
+    "l:pizza",
+    "l:poder",
+    "l:preferir",
+    "l:querer",
+    "l:qué",
+    "l:ser",
+    "l:sábado",
+    "l:tinto",
+    "l:venir",
+    "l:ver"
   ]
 }

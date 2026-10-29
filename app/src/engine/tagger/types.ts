@@ -52,6 +52,8 @@ export interface Feature {
   node: NodeId | null;
   /** Inclusive token span (indices into TagResult.tokens). */
   span: [number, number];
+  /** Chunks: the span of the chunk's own words, before the slot it takes (span covers both). */
+  core?: [number, number];
   text: string;
   lemma?: string;
   /** For subjunctives: the licensing trigger, e.g. "quiero que". */
@@ -67,7 +69,9 @@ export interface TagResult {
   tokens: Word[];
 }
 
-export interface ChunkSpec { id: NodeId; es: string }
+/** A chunk node: its Spanish, and the grammar node it seeds (`unpacks`), which a sentence
+ *  using the chunk still requires, so it is practised once that grammar is taught. */
+export interface ChunkSpec { id: NodeId; es: string; unpacks?: NodeId; priority?: number }
 /** A pattern node: matched by its `match` surface patterns, else by its id's words (lemma or form). */
 export interface PatternSpec { id: NodeId; match?: readonly string[] }
 

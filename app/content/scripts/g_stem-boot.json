@@ -1,48 +1,48 @@
 {
   "node": "g:stem-boot",
   "hook": {
-    "line": "You already say quiero and puedo. Today you find out why they look so odd next to querer and poder, and you get every other person for free.",
-    "es": "—¿Quieres un tinto? —No, gracias. ¿Puedes el lunes?",
-    "en": "—Do you want a coffee? —No, thanks. Can you do Monday?"
+    "line": "You already say *quiero*, *puedo* and *no entiendo*. Today you find out why they look so odd next to *querer*, *poder* and *entender*, and you get every other person for free.",
+    "es": "¿Quieres un tinto?\nNo, gracias. Hoy no puedo: empiezo a las seis.",
+    "en": "Do you want a coffee?\nNo, thanks. I can't today: I start at six."
   },
   "examples": [
     { "es": "¿Quieres un café?", "en": "Do you want a coffee?" },
     { "es": "Queremos un jugo de fruta.", "en": "We want a fruit juice." },
-    { "es": "Tomás no puede el lunes.", "en": "Tomás can't make it on Monday." },
-    { "es": "Podemos a las diez.", "en": "We can do ten o'clock." },
+    { "es": "Mañana no puedo, pero Vale sí puede.", "en": "I can't tomorrow, but Vale can." },
     { "es": "La reunión empieza a las once.", "en": "The meeting starts at eleven." },
-    { "es": "No entiendo el correo, ¿y tú?", "en": "I don't understand the email, do you?" }
+    { "es": "No entiendo el correo, ¿y tú?", "en": "I don't understand the email, do you?" },
+    { "es": "Don Hernando duerme poco.", "en": "Don Hernando doesn't sleep much." }
   ],
-  "rule": "Some verbs change a vowel in the middle when you stress it.\n\nquerer: quiero, quieres, quiere, queremos, quieren\npoder: puedo, puedes, puede, podemos, pueden\n\ne becomes ie, o becomes ue. The endings are the ones you already know.\n\nThe change happens in four forms: yo, tú, él/ella/usted and ellos/ustedes. Nosotros keeps the plain vowel: queremos, podemos. Write the four changed forms in a list and they make the shape of a boot, with nosotros sticking out on its own.\n\nSame pattern: empezar (empiezo, empezamos), entender (entiendo, entendemos), and soon preferir (prefiero), jugar (juego) and venir (vienes). Tener does it too, except in tengo: tienes, tiene, tienen, but tenemos.\n\nThe dictionary won't warn you. When you meet a new verb, check its yo form once.",
-  "smallPrint": "These are stem-changing verbs (e→ie, o→ue, and u→ue in jugar). Some teachers call them boot verbs.",
-  "soundTip": "Say ie as one quick syllable: QUIE-ro, not ki-E-ro. Ue is like the 'we' in 'well': PUE-do.",
+  "rule": "Some verbs change a vowel in the middle when you stress it.\n\n*querer*: *quiero*, *quieres*, *quiere*, *queremos*, *quieren*\n*poder*: *puedo*, *puedes*, *puede*, *podemos*, *pueden*\n\n*e* becomes *ie*, *o* becomes *ue*. The endings are the ones you already know.\n\nThe change happens in four forms: *yo*, *tú*, *él*/*ella*/*usted* and *ellos*/*ustedes*. *Nosotros* keeps the plain vowel: *queremos*, *podemos*. Write the four changed forms in a list and they make the shape of a boot, with *nosotros* sticking out on its own.\n\nSame pattern: *empezar* (*empiezo*, *empezamos*), *entender* (*entiendo*, *entendemos*), *cerrar* (*cierra*, *cerramos*), *dormir* (*duermo*, *dormimos*), and soon *preferir* (*prefiero*) and *jugar* (*juego*). *Tener* does it too, except in *tengo*: *tienes*, *tiene*, *tienen*, but *tenemos*.\n\nFor now, use *poder* on its own when everyone knows what you mean: *Hoy no puedo*. *¿Puedes?* In two days you'll add a second verb.\n\nThe dictionary won't warn you. When you meet a new verb, check its *yo* form once.",
+  "smallPrint": "These are stem-changing verbs (*e* to *ie*, *o* to *ue*, and *u* to *ue* in *jugar*). Some teachers call them boot verbs.",
+  "soundTip": "Say *ie* as one quick syllable: QUIE-ro, not ki-E-ro. *Ue* is like the 'we' in 'well': PUE-do.",
   "readAndPick": [
     { "es": "Queremos un tinto.", "options": ["We want a black coffee.", "They want a black coffee.", "I want a black coffee."], "answer": 0 },
-    { "es": "¿Quieren agua?", "options": ["Do you all want water?", "Do we want water?", "Does she want water?"], "answer": 0 },
-    { "es": "Mariana no puede a las ocho.", "options": ["Mariana can't make it at eight.", "I can't make it at eight.", "We can't make it at eight."], "answer": 0 },
-    { "es": "Podemos el lunes.", "options": ["We can do Monday.", "They can do Monday.", "You can do Monday."], "answer": 0 },
-    { "es": "¿Entiendes el plan?", "options": ["Do you understand the plan?", "Do they understand the plan?", "I understand the plan."], "answer": 0 },
-    { "es": "Empiezo el trabajo el lunes.", "options": ["I start work on Monday.", "She starts work on Monday.", "We start work on Monday."], "answer": 0 },
+    { "es": "¿Quieren agua?", "options": ["Do we want water?", "Do you all want water?", "Does she want water?"], "answer": 1 },
+    { "es": "Hoy Mariana no puede.", "options": ["I can't today.", "We can't today.", "Mariana can't today."], "answer": 2 },
+    { "es": "Mañana podemos.", "options": ["We can tomorrow.", "They can tomorrow.", "You can tomorrow."], "answer": 0 },
+    { "es": "¿Entiendes el plan?", "options": ["I understand the plan.", "Do you understand the plan?", "Do they understand the plan?"], "answer": 1 },
+    { "es": "Empiezo el trabajo el lunes.", "options": ["She starts work on Monday.", "We start work on Monday.", "I start work on Monday."], "answer": 2 },
     { "es": "Los clientes quieren pan.", "options": ["The customers want bread.", "The customer wants bread.", "We want bread."], "answer": 0 },
-    { "es": "Vale y yo entendemos el horario.", "options": ["Vale and I understand the timetable.", "Vale understands the timetable.", "They understand the timetable."], "answer": 0 },
-    { "es": "¿Me puede ayudar, señora?", "options": ["Can you help me, madam?", "Can I help you, madam?", "Can we help, madam?"], "answer": 0 },
-    { "es": "La fiesta empieza a las ocho.", "options": ["The party starts at eight.", "I start the party at eight.", "We start at eight."], "answer": 0 }
+    { "es": "Vale y yo entendemos el horario.", "options": ["Vale understands the timetable.", "Vale and I understand the timetable.", "They understand the timetable."], "answer": 1 },
+    { "es": "El café cierra a las ocho.", "options": ["The café closes at eight.", "I close the café at eight.", "We close the café at eight."], "answer": 0 },
+    { "es": "¿Duermes bien?", "options": ["Do I sleep well?", "Does he sleep well?", "Do you sleep well?"], "answer": 2 }
   ],
   "yourTurn": [
-    { "prompt": "Ask a friend if they want a coffee.", "answer": "¿Quieres un café?", "accept": ["¿Quieres un tinto?"], "why": "Tú is inside the boot: e becomes ie, quieres." },
-    { "prompt": "Say: We want a juice.", "answer": "Queremos un jugo.", "accept": [], "why": "Nosotros is outside the boot, so no change: queremos." },
-    { "prompt": "Say: Vale can't make it on Monday.", "answer": "Vale no puede el lunes.", "accept": [], "why": "Él/ella is inside the boot: o becomes ue, puede." },
-    { "prompt": "Say: We can do Monday.", "answer": "Podemos el lunes.", "accept": [], "why": "Nosotros keeps the o: podemos." },
-    { "prompt": "Say: I don't understand the email.", "answer": "No entiendo el correo.", "accept": [], "why": "Yo is inside the boot: entender becomes entiendo." },
-    { "prompt": "Say: The meeting starts at nine.", "answer": "La reunión empieza a las nueve.", "accept": [], "why": "Empezar changes e to ie: empieza." },
-    { "prompt": "Ask a group of friends if they want bread.", "answer": "¿Quieren pan?", "accept": ["¿Ustedes quieren pan?"], "why": "Ustedes is inside the boot: quieren." },
-    { "prompt": "Ask a stranger politely if they can help you.", "answer": "¿Me puede ayudar?", "accept": ["¿Usted me puede ayudar?"], "why": "Usted uses the él/ella form, which is inside the boot: puede." }
+    { "prompt": "Fill the gap with *quieres* or *queres*, and type the whole question to a friend: *¿___ un café?*", "answer": "¿Quieres un café?", "accept": [], "why": "*Tú* is inside the boot: *e* becomes *ie*, *quieres*." },
+    { "prompt": "Fill the gap with *queremos* or *quieremos*, and type the whole sentence: *___ un jugo.*", "answer": "Queremos un jugo.", "accept": [], "why": "*Nosotros* is outside the boot, so no change: *queremos*." },
+    { "prompt": "Say: Vale can't today.", "answer": "Vale no puede hoy.", "accept": ["Hoy Vale no puede.", "Vale hoy no puede."], "why": "*Ella* is inside the boot: *o* becomes *ue*, *puede*." },
+    { "prompt": "Say: We can tomorrow.", "answer": "Mañana podemos.", "accept": ["Podemos mañana."], "why": "*Nosotros* keeps the *o*: *podemos*." },
+    { "prompt": "Say: I don't understand the email.", "answer": "No entiendo el correo.", "accept": [], "why": "*Yo* is inside the boot: *entender* becomes *entiendo*." },
+    { "prompt": "Say: The meeting starts at nine.", "answer": "La reunión empieza a las nueve.", "accept": [], "why": "*Empezar* changes *e* to *ie*: *empieza*." },
+    { "prompt": "Ask a group of friends if they want bread.", "answer": "¿Quieren pan?", "accept": ["¿Ustedes quieren pan?"], "why": "*Ustedes* is inside the boot: *quieren*." },
+    { "prompt": "Make it about *nosotros*: *Duermo poco.*", "answer": "Dormimos poco.", "accept": [], "why": "*Nosotros* sits outside the boot, so *duermo* goes back to the plain *o*: *dormimos*." }
   ],
   "pitfalls": [
-    { "wrong": "Quieremos un café.", "right": "Queremos un café.", "why": "Nosotros sits outside the boot: the vowel stays e." },
-    { "wrong": "Puedemos el lunes.", "right": "Podemos el lunes.", "why": "Nosotros keeps the plain o." },
-    { "wrong": "Yo quero un jugo.", "right": "Quiero un jugo.", "why": "The yo form is inside the boot: quiero." },
-    { "wrong": "Vale empeza el lunes.", "right": "Vale empieza el lunes.", "why": "Empezar is a boot verb: empieza." }
+    { "wrong": "Quieremos un café.", "right": "Queremos un café.", "why": "*Nosotros* sits outside the boot: the vowel stays *e*." },
+    { "wrong": "Mañana puedemos.", "right": "Mañana podemos.", "why": "*Nosotros* keeps the plain *o*." },
+    { "wrong": "Yo quero un jugo.", "right": "Quiero un jugo.", "why": "The *yo* form is inside the boot: *quiero*." },
+    { "wrong": "Vale empeza el lunes.", "right": "Vale empieza el lunes.", "why": "*Empezar* is a boot verb: *empieza*." }
   ],
-  "personal": "What do you want right now, and what can't you do this week? Write two lines: Quiero… and No puedo el…"
+  "personal": "What do you want right now, and who in your life never sleeps enough? Write two lines: *Quiero…* and *Mi… duerme poco.*"
 }

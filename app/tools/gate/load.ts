@@ -139,7 +139,7 @@ export function buildCurriculum(files: Loaded[], contentDir: string, findings: F
   }
   // nodes no unit schedules fall back to their graph priority
   for (const n of nodes.values()) if (!taughtAt.has(n.id) && units.length) { taughtAt.set(n.id, Math.max(1, n.priority)); taughtWhere.set(n.id, `priority ${n.priority} (not in any unit)`); }
-  const chunks: ChunkSpec[] = [...nodes.values()].filter((n) => n.kind === 'chunk' && n.es).map((n) => ({ id: n.id, es: n.es! }));
+  const chunks: ChunkSpec[] = [...nodes.values()].filter((n) => n.kind === 'chunk' && n.es).map(chunkSpec);
   const patterns: PatternSpec[] = [...nodes.values()].filter((n) => n.kind === 'pattern').map((n) => ({ id: n.id, ...(n.match ? { match: n.match } : {}) }));
   let featureMap: Record<string, string | null> | undefined;
   const fm = join(contentDir, 'graph', '_featuremap.json');
@@ -161,6 +161,15 @@ export function buildCurriculum(files: Loaded[], contentDir: string, findings: F
     hasLexemes, completeBands,
     tagOpts: { graphIds, featureMap, chunks, patterns },
   };
+}
+
+/** A chunk's tagger spec: `es`, every aligned form's Spanish and every `match` surface are
+ *  "/" alternatives. A two-turn form's turns are joined as the tagger's reply turns ("A — B"),
+ *  so a set-up line is context, not the chunk. `match` holds bare frames ("Voy", "¿Tienes?")
+ *  that are no learner-facing form but must still be recognised. */
+export function chunkSpec(n: Pick<GraphNode, 'id' | 'es' | 'forms' | 'match' | 'unpacks'> & { priority?: number }): ChunkSpec {
+  const alts = [n.es ?? '', ...(n.forms ?? []).map((f) => f.es), ...(n.match ?? [])].map((x) => x.replace(/\s*\n\s*/g, ' — ').trim()).filter(Boolean);
+  return { id: n.id, es: [...new Set(alts)].join(' / '), ...(n.unpacks ? { unpacks: n.unpacks } : {}), ...(n.priority !== undefined ? { priority: n.priority } : {}) };
 }
 
 export function resolveTargets(args: string[], appDir: string, contentDir: string): string[] {

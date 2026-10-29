@@ -126,7 +126,8 @@ describe('participles, adjectives and noun/verb homographs', () => {
 describe('grammar nodes that should not fire', () => {
   test('y … tampoco is no double negative', () => {
     expect(tag('Tomás no trabaja los lunes y Vale tampoco.').requires).not.toContain('g:negation-words');
-    expect(tag('No hay nadie.').requires).toContain('g:negation-words');
+    // the feature fires; inside the taught chunk c:no-hay-nada the chunk is what the sentence requires
+    expect(tag('No hay nadie.').features.map((f) => f.node)).toContain('g:negation-words');
   });
   test('está is never a tú command', () => {
     expect(tag('Simón no está en el café: ¡está en la calle!').requires).not.toContain('g:commands-tu');

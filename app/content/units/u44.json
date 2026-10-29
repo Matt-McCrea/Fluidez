@@ -124,8 +124,7 @@
    "type": "output",
    "focus": [
     "g:subj-concessive",
-    "g:subj-conditions",
-    "g:argument-markers"
+    "g:subj-conditions"
    ],
    "chunks": [],
    "lexemes": [],

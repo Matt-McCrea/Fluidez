@@ -4,9 +4,23 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 1,
-  "title": "How are you? — Fine, and you?",
-  "es": "¿Cómo estás? / ¿Cómo está? — Bien, gracias, ¿y tú?",
-  "en": "How are you? — Fine, thanks, and you?",
+  "title": "How are you? Fine, and you?",
+  "es": "¿Cómo estás?",
+  "en": "How are you?",
+  "forms": [
+   {
+    "es": "¿Cómo estás?",
+    "en": "How are you?"
+   },
+   {
+    "es": "¿Cómo está?",
+    "en": "How are you? (formal)"
+   },
+   {
+    "es": "Bien, gracias, ¿y tú?",
+    "en": "Fine, thanks, and you?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:estar-location-states",
@@ -24,8 +38,26 @@
   "band": "A1",
   "priority": 1,
   "title": "Saying hello at any time of day",
-  "es": "Hola. / Buenos días. / Buenas tardes. / Buenas noches.",
-  "en": "Hi. / Good morning. / Good afternoon. / Good evening.",
+  "es": "Hola.",
+  "en": "Hi.",
+  "forms": [
+   {
+    "es": "Hola.",
+    "en": "Hi."
+   },
+   {
+    "es": "Buenos días.",
+    "en": "Good morning."
+   },
+   {
+    "es": "Buenas tardes.",
+    "en": "Good afternoon."
+   },
+   {
+    "es": "Buenas noches.",
+    "en": "Good evening."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -42,8 +74,22 @@
   "band": "A1",
   "priority": 1,
   "title": "Saying your name and asking theirs",
-  "es": "Me llamo Tomás. ¿Cómo te llamas? / ¿Cómo se llama usted?",
-  "en": "My name is Tomás. What's your name?",
+  "es": "Me llamo Tomás.",
+  "en": "My name is Tomás.",
+  "forms": [
+   {
+    "es": "Me llamo Tomás.",
+    "en": "My name is Tomás."
+   },
+   {
+    "es": "¿Cómo te llamas?",
+    "en": "What's your name?"
+   },
+   {
+    "es": "¿Cómo se llama usted?",
+    "en": "What's your name? (formal)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:reflexive-routine",
@@ -61,8 +107,22 @@
   "band": "A1",
   "priority": 1,
   "title": "Nice to meet you",
-  "es": "Mucho gusto. — Igualmente. / Encantada.",
-  "en": "Nice to meet you. — Likewise.",
+  "es": "Mucho gusto.",
+  "en": "Nice to meet you.",
+  "forms": [
+   {
+    "es": "Mucho gusto.",
+    "en": "Nice to meet you."
+   },
+   {
+    "es": "Mucho gusto.\nIgualmente.",
+    "en": "Nice to meet you.\nLikewise."
+   },
+   {
+    "es": "Encantada.",
+    "en": "Pleased to meet you. (said by a woman)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -102,8 +162,18 @@
   "band": "A1",
   "priority": 2,
   "title": "How do you say…? What does … mean?",
-  "es": "¿Cómo se dice \"receipt\" en español? / ¿Qué significa \"tinto\"?",
-  "en": "How do you say \"receipt\" in Spanish? / What does \"tinto\" mean?",
+  "es": "¿Cómo se dice \"receipt\" en español?",
+  "en": "How do you say \"receipt\" in Spanish?",
+  "forms": [
+   {
+    "es": "¿Cómo se dice \"receipt\" en español?",
+    "en": "How do you say \"receipt\" in Spanish?"
+   },
+   {
+    "es": "¿Qué significa \"tinto\"?",
+    "en": "What does \"tinto\" mean?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:se-impersonal",
@@ -121,8 +191,26 @@
   "band": "A1",
   "priority": 2,
   "title": "Thanks, and the answer to thanks",
-  "es": "Gracias. / Muchas gracias. — Con mucho gusto. / De nada.",
-  "en": "Thanks. / Thank you very much. — My pleasure. / You're welcome.",
+  "es": "Gracias.",
+  "en": "Thanks.",
+  "forms": [
+   {
+    "es": "Gracias.",
+    "en": "Thanks."
+   },
+   {
+    "es": "Muchas gracias.",
+    "en": "Thank you very much."
+   },
+   {
+    "es": "Muchas gracias.\nCon mucho gusto.",
+    "en": "Thank you very much.\nMy pleasure."
+   },
+   {
+    "es": "Gracias.\nDe nada.",
+    "en": "Thanks.\nYou're welcome."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -138,9 +226,23 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 2,
-  "title": "Slower, please / Can you repeat?",
-  "es": "Más despacio, por favor. / ¿Puede repetir? / ¿Me repites?",
-  "en": "Slower, please. / Can you repeat that?",
+  "title": "Slower, please. Can you repeat?",
+  "es": "Más despacio, por favor.",
+  "en": "Slower, please.",
+  "forms": [
+   {
+    "es": "Más despacio, por favor.",
+    "en": "Slower, please."
+   },
+   {
+    "es": "¿Puede repetir?",
+    "en": "Can you repeat that? (formal)"
+   },
+   {
+    "es": "¿Me repites?",
+    "en": "Can you say that again? (to a friend)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:verb-infinitive",
@@ -158,8 +260,22 @@
   "band": "A1",
   "priority": 2,
   "title": "I don't understand",
-  "es": "No entiendo. / No te entiendo. / ¿Entiendes?",
-  "en": "I don't understand. / I don't understand you. / Do you understand?",
+  "es": "No entiendo.",
+  "en": "I don't understand.",
+  "forms": [
+   {
+    "es": "No entiendo.",
+    "en": "I don't understand."
+   },
+   {
+    "es": "No te entiendo.",
+    "en": "I don't understand you."
+   },
+   {
+    "es": "¿Entiendes?",
+    "en": "Do you understand?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:stem-boot",
@@ -177,8 +293,18 @@
   "band": "A1",
   "priority": 2,
   "title": "Please (and the soft way to ask)",
-  "es": "Un tinto, por favor. / Por favor, ¿me ayuda?",
-  "en": "A coffee, please. / Could you help me, please?",
+  "es": "Un tinto, por favor.",
+  "en": "A black coffee, please.",
+  "forms": [
+   {
+    "es": "Un tinto, por favor.",
+    "en": "A black coffee, please."
+   },
+   {
+    "es": "Por favor, ¿me ayuda?",
+    "en": "Please, could you help me? (formal)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -195,8 +321,22 @@
   "band": "A1",
   "priority": 3,
   "title": "How much is it?",
-  "es": "¿Cuánto cuesta? / ¿Cuánto es? / ¿Cuánto vale?",
-  "en": "How much does it cost? / How much is it?",
+  "es": "¿Cuánto cuesta?",
+  "en": "How much does it cost?",
+  "forms": [
+   {
+    "es": "¿Cuánto cuesta?",
+    "en": "How much does it cost?"
+   },
+   {
+    "es": "¿Cuánto es?",
+    "en": "How much is it?"
+   },
+   {
+    "es": "¿Cuánto vale?",
+    "en": "How much is it?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:questions",
@@ -214,8 +354,18 @@
   "band": "A1",
   "priority": 3,
   "title": "I'd like… (polite)",
-  "es": "Me gustaría un café con leche. / Me gustaría ir.",
-  "en": "I'd like a white coffee. / I'd like to go.",
+  "es": "Me gustaría un café con leche.",
+  "en": "I'd like a white coffee.",
+  "forms": [
+   {
+    "es": "Me gustaría un café con leche.",
+    "en": "I'd like a white coffee."
+   },
+   {
+    "es": "Me gustaría ir.",
+    "en": "I'd like to go."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:conditional",
@@ -233,8 +383,18 @@
   "band": "A1",
   "priority": 3,
   "title": "Could I have…? (the Colombian way to ask in a shop)",
-  "es": "¿Me regala un tinto, por favor? / ¿Me da la cuenta?",
-  "en": "Could I have a coffee, please? / Could I have the bill?",
+  "es": "¿Me regala un tinto, por favor?",
+  "en": "Could I have a black coffee, please?",
+  "forms": [
+   {
+    "es": "¿Me regala un tinto, por favor?",
+    "en": "Could I have a black coffee, please?"
+   },
+   {
+    "es": "¿Me da la cuenta?",
+    "en": "Could I have the bill?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:indirect-objects",
@@ -252,8 +412,18 @@
   "band": "A1",
   "priority": 3,
   "title": "I want…",
-  "es": "Quiero un jugo de mora. / Quiero hablar con Vale.",
-  "en": "I want a blackberry juice. / I want to talk to Vale.",
+  "es": "Quiero un jugo de mora.",
+  "en": "I want a blackberry juice.",
+  "forms": [
+   {
+    "es": "Quiero un jugo de mora.",
+    "en": "I want a blackberry juice."
+   },
+   {
+    "es": "Quiero hablar con Vale.",
+    "en": "I want to talk to Vale."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:stem-boot",
@@ -270,9 +440,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 3,
-  "title": "I have… / I don't have…",
-  "es": "Tengo una pregunta. / No tengo efectivo.",
-  "en": "I have a question. / I don't have cash.",
+  "title": "I have, I don't have",
+  "es": "Tengo una pregunta.",
+  "en": "I have a question.",
+  "forms": [
+   {
+    "es": "Tengo una pregunta.",
+    "en": "I have a question."
+   },
+   {
+    "es": "No tengo efectivo.",
+    "en": "I don't have any cash."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:yo-irregular",
@@ -290,8 +470,18 @@
   "band": "A1",
   "priority": 4,
   "title": "Where is…?",
-  "es": "¿Dónde está el baño? / ¿Dónde queda la estación?",
-  "en": "Where is the bathroom? / Where is the station?",
+  "es": "¿Dónde está el baño?",
+  "en": "Where's the toilet?",
+  "forms": [
+   {
+    "es": "¿Dónde está el baño?",
+    "en": "Where's the toilet?"
+   },
+   {
+    "es": "¿Dónde queda la estación?",
+    "en": "Where's the station?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:estar-location-states",
@@ -308,9 +498,23 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 4,
-  "title": "There is / Is there…?",
-  "es": "¿Hay wifi? / No hay pan. / Hay un problema.",
-  "en": "Is there wifi? / There's no bread. / There's a problem.",
+  "title": "There is, is there?",
+  "es": "¿Hay wifi?",
+  "en": "Is there wifi?",
+  "forms": [
+   {
+    "es": "¿Hay wifi?",
+    "en": "Is there wifi?"
+   },
+   {
+    "es": "No hay pan.",
+    "en": "There's no bread."
+   },
+   {
+    "es": "Hay un problema.",
+    "en": "There's a problem."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:hay-vs-esta",
@@ -328,8 +532,18 @@
   "band": "A1",
   "priority": 4,
   "title": "Can you help me?",
-  "es": "¿Me puede ayudar? / ¿Me puedes ayudar?",
-  "en": "Can you help me?",
+  "es": "¿Me puede ayudar?",
+  "en": "Can you help me? (formal)",
+  "forms": [
+   {
+    "es": "¿Me puede ayudar?",
+    "en": "Can you help me? (formal)"
+   },
+   {
+    "es": "¿Me puedes ayudar?",
+    "en": "Can you help me? (to a friend)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:verb-infinitive",
@@ -346,9 +560,23 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 4,
-  "title": "Excuse me / Sorry",
-  "es": "Perdón. / Disculpe, ¿dónde…? / Con permiso.",
-  "en": "Sorry. / Excuse me, where…? / Excuse me (passing).",
+  "title": "Excuse me, sorry",
+  "es": "Perdón.",
+  "en": "Sorry.",
+  "forms": [
+   {
+    "es": "Perdón.",
+    "en": "Sorry."
+   },
+   {
+    "es": "Disculpe, ¿dónde está el baño?",
+    "en": "Excuse me, where's the toilet? (formal)"
+   },
+   {
+    "es": "Con permiso.",
+    "en": "Excuse me. (to get past)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:commands-usted",
@@ -365,9 +593,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 4,
-  "title": "Can I…? / I can't",
-  "es": "¿Puedo pagar con tarjeta? / Hoy no puedo.",
-  "en": "Can I pay by card? / I can't today.",
+  "title": "Can I? I can't",
+  "es": "¿Puedo pagar con tarjeta?",
+  "en": "Can I pay by card?",
+  "forms": [
+   {
+    "es": "¿Puedo pagar con tarjeta?",
+    "en": "Can I pay by card?"
+   },
+   {
+    "es": "Hoy no puedo.",
+    "en": "I can't today."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:stem-boot",
@@ -385,8 +623,18 @@
   "band": "A1",
   "priority": 5,
   "title": "I love it",
-  "es": "¡Me encanta Bogotá! / Me encanta bailar.",
-  "en": "I love Bogotá! / I love dancing.",
+  "es": "¡Me encanta Bogotá!",
+  "en": "I love Bogotá!",
+  "forms": [
+   {
+    "es": "¡Me encanta Bogotá!",
+    "en": "I love Bogotá!"
+   },
+   {
+    "es": "Me encanta bailar.",
+    "en": "I love dancing."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:gustar-full",
@@ -403,9 +651,23 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 5,
-  "title": "I like… / I don't like…",
-  "es": "Me gusta el café. / No me gusta el frío. / ¿Te gusta?",
-  "en": "I like coffee. / I don't like the cold. / Do you like it?",
+  "title": "I like, I don't like",
+  "es": "Me gusta el café.",
+  "en": "I like coffee.",
+  "forms": [
+   {
+    "es": "Me gusta el café.",
+    "en": "I like coffee."
+   },
+   {
+    "es": "No me gusta el frío.",
+    "en": "I don't like the cold."
+   },
+   {
+    "es": "¿Te gusta?",
+    "en": "Do you like it?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:gustar-basic",
@@ -423,8 +685,18 @@
   "band": "A1",
   "priority": 5,
   "title": "Saying how old you are",
-  "es": "Tengo treinta y cuatro años. / ¿Cuántos años tienes?",
-  "en": "I'm thirty-four. / How old are you?",
+  "es": "Tengo treinta y cuatro años.",
+  "en": "I'm thirty-four.",
+  "forms": [
+   {
+    "es": "Tengo treinta y cuatro años.",
+    "en": "I'm thirty-four."
+   },
+   {
+    "es": "¿Cuántos años tienes?",
+    "en": "How old are you?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:yo-irregular",
@@ -441,9 +713,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 5,
-  "title": "I work in… / I study…",
-  "es": "Trabajo en un café. / Estudio diseño.",
-  "en": "I work in a café. / I study design.",
+  "title": "I work in, I study",
+  "es": "Trabajo en un café.",
+  "en": "I work in a café.",
+  "forms": [
+   {
+    "es": "Trabajo en un café.",
+    "en": "I work in a café."
+   },
+   {
+    "es": "Estudio diseño.",
+    "en": "I study design."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:present-ar",
@@ -461,8 +743,18 @@
   "band": "A1",
   "priority": 5,
   "title": "I live in…",
-  "es": "Vivo en La Candelaria. / ¿Dónde vives?",
-  "en": "I live in La Candelaria. / Where do you live?",
+  "es": "Vivo en La Candelaria.",
+  "en": "I live in La Candelaria.",
+  "forms": [
+   {
+    "es": "Vivo en La Candelaria.",
+    "en": "I live in La Candelaria."
+   },
+   {
+    "es": "¿Dónde vives?",
+    "en": "Where do you live?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:present-er-ir",
@@ -480,8 +772,26 @@
   "band": "A1",
   "priority": 6,
   "title": "Bye, see you",
-  "es": "Chao. / Nos vemos. / Hasta mañana. / Que estés bien.",
-  "en": "Bye. / See you. / See you tomorrow. / Take care.",
+  "es": "Chao.",
+  "en": "Bye.",
+  "forms": [
+   {
+    "es": "Chao.",
+    "en": "Bye."
+   },
+   {
+    "es": "Nos vemos.",
+    "en": "See you."
+   },
+   {
+    "es": "Hasta mañana.",
+    "en": "See you tomorrow."
+   },
+   {
+    "es": "Que estés bien.",
+    "en": "Take care."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:reflexive-routine",
@@ -499,8 +809,18 @@
   "band": "A1",
   "priority": 6,
   "title": "Sorry / how embarrassing (Colombia's everyday apology)",
-  "es": "¡Qué pena! / Qué pena con usted, ¿me ayuda?",
-  "en": "Sorry! / Sorry to bother you, could you help me?",
+  "es": "¡Qué pena!",
+  "en": "Sorry! How embarrassing!",
+  "forms": [
+   {
+    "es": "¡Qué pena!",
+    "en": "Sorry! How embarrassing!"
+   },
+   {
+    "es": "Qué pena con usted, ¿me ayuda?",
+    "en": "Sorry to bother you, could you help me? (formal)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:exclamations",
@@ -518,8 +838,18 @@
   "band": "A1",
   "priority": 6,
   "title": "I have to…",
-  "es": "Tengo que irme. / Tengo que trabajar mañana.",
-  "en": "I have to go. / I have to work tomorrow.",
+  "es": "Tengo que irme.",
+  "en": "I have to go.",
+  "forms": [
+   {
+    "es": "Tengo que irme.",
+    "en": "I have to go."
+   },
+   {
+    "es": "Tengo que trabajar mañana.",
+    "en": "I have to work tomorrow."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:tener-que-hay-que",
@@ -537,8 +867,18 @@
   "band": "A1",
   "priority": 6,
   "title": "Let's…",
-  "es": "¡Vamos! / Vamos a tomar algo.",
-  "en": "Let's go! / Let's get a drink.",
+  "es": "¡Vamos!",
+  "en": "Let's go!",
+  "forms": [
+   {
+    "es": "¡Vamos!",
+    "en": "Let's go!"
+   },
+   {
+    "es": "Vamos a tomar algo.",
+    "en": "Let's get a drink."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:ir-a-plans",
@@ -556,8 +896,18 @@
   "band": "A1",
   "priority": 6,
   "title": "I'm going to… (your plans, today)",
-  "es": "Voy a comer. / Mañana voy a trabajar.",
-  "en": "I'm going to eat. / Tomorrow I'm going to work.",
+  "es": "Voy a comer.",
+  "en": "I'm going to eat.",
+  "forms": [
+   {
+    "es": "Voy a comer.",
+    "en": "I'm going to eat."
+   },
+   {
+    "es": "Mañana voy a trabajar.",
+    "en": "Tomorrow I'm going to work."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:ir-a-plans",
@@ -575,8 +925,26 @@
   "band": "A1",
   "priority": 7,
   "title": "Yesterday, last night, last week",
-  "es": "ayer / anoche / la semana pasada / el fin de semana pasado",
-  "en": "yesterday / last night / last week / last weekend",
+  "es": "Ayer.",
+  "en": "Yesterday.",
+  "forms": [
+   {
+    "es": "Ayer.",
+    "en": "Yesterday."
+   },
+   {
+    "es": "Anoche.",
+    "en": "Last night."
+   },
+   {
+    "es": "La semana pasada.",
+    "en": "Last week."
+   },
+   {
+    "es": "El fin de semana pasado.",
+    "en": "Last weekend."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:preterite-ar",
@@ -593,9 +961,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 7,
-  "title": "I ate… / I had…",
-  "es": "Comí ajiaco. / Comí muy bien.",
-  "en": "I had ajiaco. / I ate really well.",
+  "title": "I ate, I had",
+  "es": "Comí ajiaco.",
+  "en": "I had ajiaco.",
+  "forms": [
+   {
+    "es": "Comí ajiaco.",
+    "en": "I had ajiaco."
+   },
+   {
+    "es": "Comí muy bien.",
+    "en": "I ate really well."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:preterite-er-ir",
@@ -612,9 +990,23 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 7,
-  "title": "I bought… / I worked… (the -é past)",
-  "es": "Compré pan. / Ayer trabajé mucho. / Hablé con Vale.",
-  "en": "I bought bread. / Yesterday I worked a lot. / I talked to Vale.",
+  "title": "I bought, I worked (the -é past)",
+  "es": "Compré pan.",
+  "en": "I bought bread.",
+  "forms": [
+   {
+    "es": "Compré pan.",
+    "en": "I bought bread."
+   },
+   {
+    "es": "Ayer trabajé mucho.",
+    "en": "Yesterday I worked a lot."
+   },
+   {
+    "es": "Hablé con Vale.",
+    "en": "I talked to Vale."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:preterite-ar",
@@ -624,7 +1016,12 @@
   "pcic": [],
   "placement": "pcic",
   "note": "Survival kit (sessions 1–11): learned whole, unpacked later.",
-  "sources": []
+  "sources": [],
+  "match": [
+   "Compré",
+   "Trabajé",
+   "Hablé"
+  ]
  },
  {
   "id": "c:fui",
@@ -632,8 +1029,18 @@
   "band": "A1",
   "priority": 7,
   "title": "I went…",
-  "es": "Ayer fui al centro. / Fui a Monserrate.",
-  "en": "Yesterday I went downtown. / I went to Monserrate.",
+  "es": "Ayer fui al centro.",
+  "en": "Yesterday I went into town.",
+  "forms": [
+   {
+    "es": "Ayer fui al centro.",
+    "en": "Yesterday I went into town."
+   },
+   {
+    "es": "Fui a Monserrate.",
+    "en": "I went to Monserrate."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:preterite-ser-ir-hacer",
@@ -651,8 +1058,18 @@
   "band": "A1",
   "priority": 7,
   "title": "You have to… (in general)",
-  "es": "Hay que pagar primero. / Hay que esperar.",
-  "en": "You have to pay first. / We have to wait.",
+  "es": "Hay que pagar primero.",
+  "en": "You have to pay first.",
+  "forms": [
+   {
+    "es": "Hay que pagar primero.",
+    "en": "You have to pay first."
+   },
+   {
+    "es": "Hay que esperar.",
+    "en": "You have to wait."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:tener-que-hay-que",
@@ -669,9 +1086,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 8,
-  "title": "At your service / Can I help you? (shops, Colombia)",
-  "es": "¡A la orden! / ¿Qué necesita? A la orden.",
-  "en": "Can I help you? / At your service.",
+  "title": "At your service, can I help you? (shops, Colombia)",
+  "es": "¡A la orden!",
+  "en": "Can I help you?",
+  "forms": [
+   {
+    "es": "¡A la orden!",
+    "en": "Can I help you?"
+   },
+   {
+    "es": "¿Qué necesita? A la orden.",
+    "en": "What do you need? I'm at your service. (formal)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -688,8 +1115,18 @@
   "band": "A1",
   "priority": 8,
   "title": "It was… (describing)",
-  "es": "Era muy bonito. / Era tarde.",
-  "en": "It was very nice. / It was late.",
+  "es": "Era muy bonito.",
+  "en": "It was very nice.",
+  "forms": [
+   {
+    "es": "Era muy bonito.",
+    "en": "It was very nice."
+   },
+   {
+    "es": "Era tarde.",
+    "en": "It was late."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:imperfect-states",
@@ -706,9 +1143,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 8,
-  "title": "It was great / terrible (how it went)",
-  "es": "¡Estuvo buenísimo! / Fue un desastre.",
-  "en": "It was great! / It was a disaster.",
+  "title": "It was great or terrible (how it went)",
+  "es": "¡Estuvo buenísimo!",
+  "en": "It was great!",
+  "forms": [
+   {
+    "es": "¡Estuvo buenísimo!",
+    "en": "It was great!"
+   },
+   {
+    "es": "Fue un desastre.",
+    "en": "It was a disaster."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:preterite-irregular-strong",
@@ -726,8 +1173,18 @@
   "band": "A1",
   "priority": 8,
   "title": "What did you do?",
-  "es": "¿Qué hiciste ayer? / ¿Qué hiciste el fin de semana?",
-  "en": "What did you do yesterday? / What did you do at the weekend?",
+  "es": "¿Qué hiciste ayer?",
+  "en": "What did you do yesterday?",
+  "forms": [
+   {
+    "es": "¿Qué hiciste ayer?",
+    "en": "What did you do yesterday?"
+   },
+   {
+    "es": "¿Qué hiciste el fin de semana?",
+    "en": "What did you do at the weekend?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:preterite-ser-ir-hacer",
@@ -744,9 +1201,23 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 8,
-  "title": "Have you eaten yet? — Not yet",
-  "es": "¿Ya comiste? — Todavía no. / Sí, ya.",
-  "en": "Have you eaten yet? — Not yet. / Yes, already.",
+  "title": "Have you eaten yet? Not yet",
+  "es": "¿Ya comiste?",
+  "en": "Have you eaten yet?",
+  "forms": [
+   {
+    "es": "¿Ya comiste?",
+    "en": "Have you eaten yet?"
+   },
+   {
+    "es": "¿Ya comiste?\nTodavía no.",
+    "en": "Have you eaten yet?\nNot yet."
+   },
+   {
+    "es": "¿Ya comiste?\nSí, ya.",
+    "en": "Have you eaten yet?\nYes, I have."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:acabar-de-ya-todavia",
@@ -763,9 +1234,27 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 9,
-  "title": "Sure / OK / Deal",
-  "es": "¡Claro! / Claro que sí. / Listo. / ¡De una!",
-  "en": "Sure! / Of course. / OK. / Let's do it!",
+  "title": "Sure, OK, deal",
+  "es": "¡Claro!",
+  "en": "Sure!",
+  "forms": [
+   {
+    "es": "¡Claro!",
+    "en": "Sure!"
+   },
+   {
+    "es": "Claro que sí.",
+    "en": "Of course."
+   },
+   {
+    "es": "Listo.",
+    "en": "OK."
+   },
+   {
+    "es": "¡De una!",
+    "en": "Let's do it!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -782,8 +1271,22 @@
   "band": "A1",
   "priority": 9,
   "title": "I think…",
-  "es": "Creo que sí. / Creo que no. / Creo que está cerrado.",
-  "en": "I think so. / I don't think so. / I think it's closed.",
+  "es": "Creo que sí.",
+  "en": "I think so.",
+  "forms": [
+   {
+    "es": "Creo que sí.",
+    "en": "I think so."
+   },
+   {
+    "es": "Creo que no.",
+    "en": "I don't think so."
+   },
+   {
+    "es": "Creo que está cerrado.",
+    "en": "I think it's closed."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:that-clauses",
@@ -805,8 +1308,18 @@
   "band": "A1",
   "priority": 9,
   "title": "So… / Well…",
-  "es": "Bueno, entonces nos vemos mañana. / Entonces, ¿qué hacemos?",
-  "en": "Well, see you tomorrow then. / So, what do we do?",
+  "es": "Bueno, entonces nos vemos mañana.",
+  "en": "Well, see you tomorrow then.",
+  "forms": [
+   {
+    "es": "Bueno, entonces nos vemos mañana.",
+    "en": "Well, see you tomorrow then."
+   },
+   {
+    "es": "Entonces, ¿qué hacemos?",
+    "en": "So, what shall we do?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:cause-result",
@@ -824,8 +1337,18 @@
   "band": "A1",
   "priority": 9,
   "title": "The thing is… (the polite excuse)",
-  "es": "Es que no tengo tiempo. / Es que estoy ocupado.",
-  "en": "The thing is, I don't have time. / It's just that I'm busy.",
+  "es": "Es que no tengo tiempo.",
+  "en": "The thing is, I don't have time.",
+  "forms": [
+   {
+    "es": "Es que no tengo tiempo.",
+    "en": "The thing is, I don't have time."
+   },
+   {
+    "es": "Es que estoy ocupado.",
+    "en": "It's just that I'm busy."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:cause-result",
@@ -850,9 +1373,9 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 9,
-  "title": "Why? — Because…",
-  "es": "¿Por qué? — Porque estoy cansado.",
-  "en": "Why? — Because I'm tired.",
+  "title": "Why? Because",
+  "es": "¿Por qué?\nPorque estoy cansado.",
+  "en": "Why?\nBecause I'm tired.",
   "requires": [],
   "contrasts": [],
   "unpacks": "g:cause-result",
@@ -870,8 +1393,18 @@
   "band": "A1",
   "priority": 11,
   "title": "Have you ever been to…?",
-  "es": "¿Has estado en Cartagena? — No, nunca.",
-  "en": "Have you ever been to Cartagena? — No, never.",
+  "es": "¿Has estado en Cartagena?",
+  "en": "Have you been to Cartagena?",
+  "forms": [
+   {
+    "es": "¿Has estado en Cartagena?",
+    "en": "Have you been to Cartagena?"
+   },
+   {
+    "es": "¿Has estado en Cartagena?\nNo, nunca.",
+    "en": "Have you been to Cartagena?\nNo, never."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:perfecto-experience",
@@ -888,9 +1421,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 11,
-  "title": "Honestly… / To tell the truth",
-  "es": "La verdad, no sé. / La verdad es que me encanta.",
-  "en": "Honestly, I don't know. / The truth is I love it.",
+  "title": "Honestly, to tell the truth",
+  "es": "La verdad, no sé.",
+  "en": "Honestly, I don't know.",
+  "forms": [
+   {
+    "es": "La verdad, no sé.",
+    "en": "Honestly, I don't know."
+   },
+   {
+    "es": "La verdad es que me encanta.",
+    "en": "The truth is I love it."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -909,8 +1452,22 @@
   "band": "A1",
   "priority": 11,
   "title": "I don't know",
-  "es": "No sé. / No sé dónde está. / ¿Sabes?",
-  "en": "I don't know. / I don't know where it is. / Do you know?",
+  "es": "No sé.",
+  "en": "I don't know.",
+  "forms": [
+   {
+    "es": "No sé.",
+    "en": "I don't know."
+   },
+   {
+    "es": "No sé dónde está.",
+    "en": "I don't know where it is."
+   },
+   {
+    "es": "¿Sabes?",
+    "en": "Do you know?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:yo-irregular",
@@ -927,9 +1484,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 11,
-  "title": "I hope so / Let's hope (recognition)",
-  "es": "¡Ojalá! / Ojalá que sí.",
-  "en": "I hope so! / Let's hope so.",
+  "title": "I hope so, let's hope (recognition)",
+  "es": "¡Ojalá!",
+  "en": "I hope so!",
+  "forms": [
+   {
+    "es": "¡Ojalá!",
+    "en": "I hope so!"
+   },
+   {
+    "es": "Ojalá que sí.",
+    "en": "Let's hope so."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:subj-wishes",
@@ -947,8 +1514,18 @@
   "band": "A1",
   "priority": 11,
   "title": "Get well soon (recognise it now, understand it later)",
-  "es": "¡Que te mejores! / ¡Que le vaya bien!",
-  "en": "Get well soon! / All the best!",
+  "es": "¡Que te mejores!",
+  "en": "Get well soon!",
+  "forms": [
+   {
+    "es": "¡Que te mejores!",
+    "en": "Get well soon!"
+   },
+   {
+    "es": "¡Que le vaya bien!",
+    "en": "All the best! (formal)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:subj-wishes",
@@ -966,8 +1543,26 @@
   "band": "A1",
   "priority": 12,
   "title": "Answering and bouncing it back: bien, ¿y tú?",
-  "es": "Bien, gracias, ¿y tú? / Muy bien, ¿y usted? / Regular, la verdad. / Ahí vamos.",
-  "en": "Fine, thanks, and you? / Very well, and you? / So-so, to be honest. / Getting by.",
+  "es": "Bien, gracias, ¿y tú?",
+  "en": "Fine, thanks, and you?",
+  "forms": [
+   {
+    "es": "Bien, gracias, ¿y tú?",
+    "en": "Fine, thanks, and you?"
+   },
+   {
+    "es": "Muy bien, ¿y usted?",
+    "en": "Very well, and you? (formal)"
+   },
+   {
+    "es": "Regular, la verdad.",
+    "en": "So-so, to be honest."
+   },
+   {
+    "es": "Ahí vamos.",
+    "en": "Getting by."
+   }
+  ],
   "requires": [
    "c:como-estas"
   ],
@@ -993,8 +1588,18 @@
   "band": "A1",
   "priority": 12,
   "title": "How do you spell it?: ¿cómo se escribe?",
-  "es": "¿Cómo se escribe? / ¿Me lo deletrea, por favor?",
-  "en": "How do you spell it? / Could you spell it for me, please?",
+  "es": "¿Cómo se escribe?",
+  "en": "How do you spell it?",
+  "forms": [
+   {
+    "es": "¿Cómo se escribe?",
+    "en": "How do you spell it?"
+   },
+   {
+    "es": "¿Me lo deletrea, por favor?",
+    "en": "Could you spell it for me, please? (formal)"
+   }
+  ],
   "requires": [
    "g:sounds-letters"
   ],
@@ -1021,8 +1626,22 @@
   "band": "A1",
   "priority": 12,
   "title": "How's it going? (Colombian): ¿qué más?",
-  "es": "¿Qué más? / ¿Qué más, cómo vas? — Bien, ¿y tú? / Todo bien.",
-  "en": "How's it going? — Fine, you? / All good.",
+  "es": "¿Qué más?",
+  "en": "How's it going?",
+  "forms": [
+   {
+    "es": "¿Qué más?",
+    "en": "How's it going?"
+   },
+   {
+    "es": "¿Qué más, cómo vas?\nBien, ¿y tú?",
+    "en": "How's it going, how are you doing?\nFine, and you?"
+   },
+   {
+    "es": "¿Qué más?\nTodo bien.",
+    "en": "How's it going?\nAll good."
+   }
+  ],
   "requires": [
    "c:como-estas"
   ],
@@ -1047,8 +1666,18 @@
   "band": "A1",
   "priority": 12,
   "title": "What does it mean?: ¿qué significa…?",
-  "es": "¿Qué significa «trancón»? / ¿Qué quiere decir esto?",
-  "en": "What does 'trancón' mean? / What does this mean?",
+  "es": "¿Qué significa «trancón»?",
+  "en": "What does \"trancón\" mean?",
+  "forms": [
+   {
+    "es": "¿Qué significa «trancón»?",
+    "en": "What does \"trancón\" mean?"
+   },
+   {
+    "es": "¿Qué quiere decir esto?",
+    "en": "What does this mean?"
+   }
+  ],
   "requires": [
    "c:no-entiendo"
   ],
@@ -1074,8 +1703,26 @@
   "band": "A1",
   "priority": 13,
   "title": "Sorry? Could you say that again?: ¿me repite?",
-  "es": "¿Me repite, por favor? / ¿Puede repetir? / ¿Cómo? / ¿Perdón?",
-  "en": "Could you repeat that, please? / Sorry?",
+  "es": "¿Me repite, por favor?",
+  "en": "Could you say that again, please? (formal)",
+  "forms": [
+   {
+    "es": "¿Me repite, por favor?",
+    "en": "Could you say that again, please? (formal)"
+   },
+   {
+    "es": "¿Puede repetir?",
+    "en": "Can you repeat that? (formal)"
+   },
+   {
+    "es": "¿Cómo?",
+    "en": "Pardon?"
+   },
+   {
+    "es": "¿Perdón?",
+    "en": "Sorry?"
+   }
+  ],
   "requires": [
    "c:no-entiendo"
   ],
@@ -1097,8 +1744,18 @@
   "band": "A1",
   "priority": 13,
   "title": "That's very kind: muy amable",
-  "es": "Muy amable, gracias. / ¡Qué amable!",
+  "es": "Muy amable, gracias.",
   "en": "That's very kind of you, thanks.",
+  "forms": [
+   {
+    "es": "Muy amable, gracias.",
+    "en": "That's very kind of you, thanks."
+   },
+   {
+    "es": "¡Qué amable!",
+    "en": "How kind!"
+   }
+  ],
   "requires": [
    "c:gracias-de-nada"
   ],
@@ -1119,8 +1776,22 @@
   "band": "A1",
   "priority": 13,
   "title": "Right?: ¿no?, ¿cierto?, ¿verdad?",
-  "es": "Hace frío, ¿no? / Tú eres de Cali, ¿cierto? / Es caro, ¿verdad?",
-  "en": "It's cold, isn't it? / You're from Cali, right? / It's expensive, isn't it?",
+  "es": "Hace frío, ¿no?",
+  "en": "It's cold, isn't it?",
+  "forms": [
+   {
+    "es": "Hace frío, ¿no?",
+    "en": "It's cold, isn't it?"
+   },
+   {
+    "es": "Tú eres de Cali, ¿cierto?",
+    "en": "You're from Cali, right?"
+   },
+   {
+    "es": "Es caro, ¿verdad?",
+    "en": "It's expensive, isn't it?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -1147,8 +1818,22 @@
   "band": "A1",
   "priority": 14,
   "title": "My pleasure (Colombian 'you're welcome'): con mucho gusto",
-  "es": "—Gracias. —Con mucho gusto. / Con gusto. / A la orden.",
-  "en": "—Thanks. —My pleasure.",
+  "es": "Gracias.\nCon mucho gusto.",
+  "en": "Thanks.\nMy pleasure.",
+  "forms": [
+   {
+    "es": "Gracias.\nCon mucho gusto.",
+    "en": "Thanks.\nMy pleasure."
+   },
+   {
+    "es": "Con gusto.",
+    "en": "With pleasure."
+   },
+   {
+    "es": "A la orden.",
+    "en": "At your service."
+   }
+  ],
   "requires": [
    "c:gracias-de-nada"
   ],
@@ -1169,8 +1854,18 @@
   "band": "A1",
   "priority": 14,
   "title": "Hey, what's up? (Colombian street greeting): ¿quiubo?",
-  "es": "¡Quiubo! ¿Qué más? / ¿Quiubo, parce?",
-  "en": "Hey, what's up?",
+  "es": "¡Quiubo! ¿Qué más?",
+  "en": "Hey! How's it going?",
+  "forms": [
+   {
+    "es": "¡Quiubo! ¿Qué más?",
+    "en": "Hey! How's it going?"
+   },
+   {
+    "es": "¿Quiubo, parce?",
+    "en": "What's up, mate?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -1193,17 +1888,41 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 14,
-  "title": "Have you got…? — tener with everyone",
-  "es": "¿Tienes…? / ¿Tiene…? / Tenemos… / Tienen… — ¿Tienes tiempo? ¿Tiene wifi?",
-  "en": "Have you got…? / Has he/she/have you (usted) got…? / We have… / They have… — Have you got time? Has it got wifi?",
+  "title": "Have you got it? (tener with everyone)",
+  "es": "¿Tienes tiempo?",
+  "en": "Have you got time?",
+  "forms": [
+   {
+    "es": "¿Tienes tiempo?",
+    "en": "Have you got time?"
+   },
+   {
+    "es": "¿Tiene wifi?",
+    "en": "Have you got wifi? (formal)"
+   },
+   {
+    "es": "Tenemos tiempo.",
+    "en": "We have time."
+   },
+   {
+    "es": "Tienen dos hijos.",
+    "en": "They have two children."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:stem-boot",
   "serves": [],
   "pcic": [],
   "placement": "teaching_choice",
-  "note": "Pull-forward pass (Oct 2026): tener's present for every person before the boot verbs (22) explain it; tengo is c:tengo (session 3).",
-  "sources": []
+  "note": "Pull-forward pass (Oct 2026): tener's present for every person before the boot verbs (22) explain it; tengo is c:tengo (session 3). Frame: ¿Tienes…? / ¿Tiene…? / Tenemos… / Tienen…",
+  "sources": [],
+  "match": [
+   "¿Tienes?",
+   "¿Tiene?",
+   "Tenemos",
+   "Tienen"
+  ]
  },
  {
   "id": "c:se-llama",
@@ -1211,16 +1930,33 @@
   "band": "A1",
   "priority": 14,
   "title": "His name is…, what's it called?: se llama",
-  "es": "Se llama… / ¿Cómo se llama? / Se llaman… — Se llama Simón.",
-  "en": "His / her name is… / What's his name? What's it called? / Their names are… — His name is Simón.",
+  "es": "Se llama Simón.",
+  "en": "His name is Simón.",
+  "forms": [
+   {
+    "es": "Se llama Simón.",
+    "en": "His name is Simón."
+   },
+   {
+    "es": "¿Cómo se llama?",
+    "en": "What's his name?"
+   },
+   {
+    "es": "Se llaman Ana y Luis.",
+    "en": "Their names are Ana and Luis."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:reflexive-routine",
   "serves": [],
   "pcic": [],
   "placement": "teaching_choice",
-  "note": "Pull-forward pass (Oct 2026): talking about other people's names (mi hermana se llama Ana) long before reflexives (76).",
-  "sources": []
+  "note": "Pull-forward pass (Oct 2026): talking about other people's names (mi hermana se llama Ana) long before reflexives (76). Frame: Se llama… / ¿Cómo se llama? / Se llaman…",
+  "sources": [],
+  "match": [
+   "Se llaman"
+  ]
  },
  {
   "id": "c:que-es-esto",
@@ -1228,8 +1964,26 @@
   "band": "A1",
   "priority": 16,
   "title": "What's this?: ¿qué es esto?",
-  "es": "¿Qué es esto? / ¿Qué es eso? / ¿Cómo se llama esto en español? — Es un colador.",
-  "en": "What's this? / What's that? / What's this called in Spanish? — It's a strainer.",
+  "es": "¿Qué es esto?",
+  "en": "What's this?",
+  "forms": [
+   {
+    "es": "¿Qué es esto?",
+    "en": "What's this?"
+   },
+   {
+    "es": "¿Qué es eso?",
+    "en": "What's that?"
+   },
+   {
+    "es": "¿Cómo se llama esto en español?",
+    "en": "What's this called in Spanish?"
+   },
+   {
+    "es": "¿Qué es esto?\nEs un colador.",
+    "en": "What's this?\nIt's a strainer."
+   }
+  ],
   "requires": [
    "p:demonstratives-basic"
   ],
@@ -1257,8 +2011,30 @@
   "band": "A1",
   "priority": 16,
   "title": "It's open, it's closed",
-  "es": "Está abierto. / Está abierta. / Está cerrado. / Está cerrada. / ¿Está abierto?",
-  "en": "It's open. / It's closed. / Is it open?",
+  "es": "Está abierto.",
+  "en": "It's open.",
+  "forms": [
+   {
+    "es": "Está abierto.",
+    "en": "It's open."
+   },
+   {
+    "es": "Está abierta.",
+    "en": "It's open. (of a feminine noun)"
+   },
+   {
+    "es": "Está cerrado.",
+    "en": "It's closed."
+   },
+   {
+    "es": "Está cerrada.",
+    "en": "It's closed. (of a feminine noun)"
+   },
+   {
+    "es": "¿Está abierto?",
+    "en": "Is it open?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:estar-participle",
@@ -1274,16 +2050,34 @@
   "band": "A1",
   "priority": 16,
   "title": "I'm going, are you going?: voy, vas",
-  "es": "Voy… / ¿Vas…? / ¿Adónde vas? / Voy al centro.",
-  "en": "I'm going… / Are you going…? / Where are you going? / I'm going downtown.",
+  "es": "Voy al centro.",
+  "en": "I'm going into town.",
+  "forms": [
+   {
+    "es": "Voy al centro.",
+    "en": "I'm going into town."
+   },
+   {
+    "es": "¿Vas al centro?",
+    "en": "Are you going into town?"
+   },
+   {
+    "es": "¿Adónde vas?",
+    "en": "Where are you going?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:ir-a-plans",
   "serves": [],
   "pcic": [],
   "placement": "teaching_choice",
-  "note": "Pull-forward pass (Oct 2026): ir is a top-30 verb and u02 is the day-to-day unit (voy al café a las seis); the system arrives with g:ir-a-plans (26).",
-  "sources": []
+  "note": "Pull-forward pass (Oct 2026): ir is a top-30 verb and u02 is the day-to-day unit (voy al café a las seis); the system arrives with g:ir-a-plans (26). Frame: Voy… / ¿Vas…?",
+  "sources": [],
+  "match": [
+   "Voy",
+   "¿Vas?"
+  ]
  },
  {
   "id": "c:a-que-te-dedicas",
@@ -1291,8 +2085,22 @@
   "band": "A1",
   "priority": 18,
   "title": "What do you do?: ¿a qué te dedicas?",
-  "es": "¿A qué te dedicas? / ¿A qué se dedica? / ¿En qué trabajas?",
-  "en": "What do you do (for a living)?",
+  "es": "¿A qué te dedicas?",
+  "en": "What do you do for a living?",
+  "forms": [
+   {
+    "es": "¿A qué te dedicas?",
+    "en": "What do you do for a living?"
+   },
+   {
+    "es": "¿A qué se dedica?",
+    "en": "What do you do for a living? (formal)"
+   },
+   {
+    "es": "¿En qué trabajas?",
+    "en": "What do you do for work?"
+   }
+  ],
   "requires": [
    "g:questions"
   ],
@@ -1319,8 +2127,8 @@
   "band": "A1",
   "priority": 20,
   "title": "Sure, let's go!: ¡de una!",
-  "es": "—¿Vamos a cine? —¡De una!",
-  "en": "—Shall we go to the cinema? —Absolutely!",
+  "es": "¿Vamos a cine?\n¡De una!",
+  "en": "Shall we go to the cinema?\nAbsolutely!",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -1371,8 +2179,18 @@
   "band": "A1",
   "priority": 20,
   "title": "I don't mind: me da igual",
-  "es": "—¿Té o café? —Me da igual. / Lo que quieras.",
-  "en": "—Tea or coffee? —I don't mind. / Whatever you like.",
+  "es": "¿Té o café?\nMe da igual.",
+  "en": "Tea or coffee?\nI don't mind.",
+  "forms": [
+   {
+    "es": "¿Té o café?\nMe da igual.",
+    "en": "Tea or coffee?\nI don't mind."
+   },
+   {
+    "es": "Lo que quieras.",
+    "en": "Whatever you like."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -1401,8 +2219,22 @@
   "band": "A1",
   "priority": 20,
   "title": "Cool!: ¡qué chévere!",
-  "es": "¡Qué chévere! / ¡Chévere! / Está muy chévere.",
-  "en": "Great! / Cool! / It's really nice.",
+  "es": "¡Qué chévere!",
+  "en": "How cool!",
+  "forms": [
+   {
+    "es": "¡Qué chévere!",
+    "en": "How cool!"
+   },
+   {
+    "es": "¡Chévere!",
+    "en": "Cool!"
+   },
+   {
+    "es": "Está muy chévere.",
+    "en": "It's really cool."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:exclamations",
@@ -1426,8 +2258,22 @@
   "band": "A1",
   "priority": 21,
   "title": "See you on Monday: hasta el lunes",
-  "es": "¡Hasta el lunes! / Hasta mañana. / Nos vemos el sábado.",
-  "en": "See you on Monday! / See you tomorrow. / See you on Saturday.",
+  "es": "¡Hasta el lunes!",
+  "en": "See you on Monday!",
+  "forms": [
+   {
+    "es": "¡Hasta el lunes!",
+    "en": "See you on Monday!"
+   },
+   {
+    "es": "Hasta mañana.",
+    "en": "See you tomorrow."
+   },
+   {
+    "es": "Nos vemos el sábado.",
+    "en": "See you on Saturday."
+   }
+  ],
   "requires": [
    "c:chao-nos-vemos"
   ],
@@ -1455,8 +2301,18 @@
   "band": "A1",
   "priority": 21,
   "title": "I don't like it at all: no me gusta nada",
-  "es": "No me gusta nada el frío. / No me gusta mucho.",
-  "en": "I don't like the cold at all. / I'm not keen.",
+  "es": "No me gusta nada el frío.",
+  "en": "I don't like the cold at all.",
+  "forms": [
+   {
+    "es": "No me gusta nada el frío.",
+    "en": "I don't like the cold at all."
+   },
+   {
+    "es": "No me gusta mucho.",
+    "en": "I don't like it much."
+   }
+  ],
   "requires": [
    "c:me-gusta",
    "g:gustar-basic"
@@ -1480,8 +2336,18 @@
   "band": "A1",
   "priority": 21,
   "title": "What do you like doing?: ¿qué te gusta hacer?",
-  "es": "¿Qué te gusta hacer en tu tiempo libre? / ¿Qué haces los fines de semana?",
-  "en": "What do you like doing in your free time? / What do you do at weekends?",
+  "es": "¿Qué te gusta hacer en tu tiempo libre?",
+  "en": "What do you like doing in your free time?",
+  "forms": [
+   {
+    "es": "¿Qué te gusta hacer en tu tiempo libre?",
+    "en": "What do you like doing in your free time?"
+   },
+   {
+    "es": "¿Qué haces los fines de semana?",
+    "en": "What do you do at weekends?"
+   }
+  ],
   "requires": [
    "g:gustar-basic"
   ],
@@ -1505,9 +2371,35 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 21,
-  "title": "Me too, me neither, and you? — with gustar",
-  "es": "A mí también. / A mí tampoco. / A mí no. / A mí sí. / ¿Y a ti? / A mí me gusta.",
-  "en": "Me too. / Me neither. / Not me. / I do. / And you? / I like it.",
+  "title": "Me too, me neither, and you? (with gustar)",
+  "es": "A mí también.",
+  "en": "Me too.",
+  "forms": [
+   {
+    "es": "A mí también.",
+    "en": "Me too."
+   },
+   {
+    "es": "A mí tampoco.",
+    "en": "Me neither."
+   },
+   {
+    "es": "A mí no.",
+    "en": "Not me."
+   },
+   {
+    "es": "A mí sí.",
+    "en": "I do."
+   },
+   {
+    "es": "¿Y a ti?",
+    "en": "And you?"
+   },
+   {
+    "es": "A mí me gusta.",
+    "en": "I like it."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:prep-pronouns",
@@ -1523,25 +2415,64 @@
   "band": "A1",
   "priority": 22,
   "title": "The odd 'I' forms you need now: hago, salgo, vengo, pongo, traigo",
-  "es": "Hago… / Salgo… / Vengo… / Pongo… / Traigo… — Salgo a las seis. Vengo mañana.",
-  "en": "I do / make… / I go out / leave… / I come… / I put… / I bring… — I leave at six. I'm coming tomorrow.",
+  "es": "Salgo a las seis.",
+  "en": "I leave at six.",
+  "forms": [
+   {
+    "es": "Salgo a las seis.",
+    "en": "I leave at six."
+   },
+   {
+    "es": "Vengo mañana.",
+    "en": "I'm coming tomorrow."
+   },
+   {
+    "es": "Hago ejercicio.",
+    "en": "I exercise."
+   },
+   {
+    "es": "Pongo la mesa.",
+    "en": "I set the table."
+   },
+   {
+    "es": "Traigo el pan.",
+    "en": "I'm bringing the bread."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:yo-irregular",
   "serves": [],
   "pcic": [],
   "placement": "teaching_choice",
-  "note": "Pull-forward pass (Oct 2026): u03 teaches salir and venir as verbs; the -go forms ride as a chunk family until g:yo-irregular (38) explains them.",
-  "sources": []
+  "note": "Pull-forward pass (Oct 2026): u03 teaches salir and venir as verbs; the -go forms ride as a chunk family until g:yo-irregular (38) explains them. Frame: Hago… / Salgo… / Vengo… / Pongo… / Traigo…",
+  "sources": [],
+  "match": [
+   "Hago",
+   "Salgo",
+   "Vengo",
+   "Pongo",
+   "Traigo"
+  ]
  },
  {
   "id": "c:ahorita",
   "kind": "chunk",
   "band": "A2",
   "priority": 23,
-  "title": "In a bit / just now: ahorita",
-  "es": "Ahorita lo atiendo. / Ahorita vengo.",
-  "en": "I'll be with you in a moment. / I'll be back in a bit.",
+  "title": "In a bit, just now: ahorita",
+  "es": "Ahorita lo atiendo.",
+  "en": "I'll be with you in a moment. (formal)",
+  "forms": [
+   {
+    "es": "Ahorita lo atiendo.",
+    "en": "I'll be with you in a moment. (formal)"
+   },
+   {
+    "es": "Ahorita vengo.",
+    "en": "I'll be back in a bit."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -1566,8 +2497,22 @@
   "band": "A1",
   "priority": 23,
   "title": "If you like: si quieres",
-  "es": "Si quieres. / Si quieres, vamos mañana. / Si puedes.",
-  "en": "If you like. / If you like, let's go tomorrow. / If you can.",
+  "es": "Si quieres.",
+  "en": "If you like.",
+  "forms": [
+   {
+    "es": "Si quieres.",
+    "en": "If you like."
+   },
+   {
+    "es": "Si quieres, vamos mañana.",
+    "en": "If you like, let's go tomorrow."
+   },
+   {
+    "es": "Si puedes.",
+    "en": "If you can."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:si-present",
@@ -1583,8 +2528,26 @@
   "band": "A1",
   "priority": 23,
   "title": "There's nothing, there's nobody: no hay nada, no sé nada",
-  "es": "No hay nada. / No hay nadie. / No sé nada. / No tengo nada.",
-  "en": "There's nothing. / There's nobody here. / I don't know anything. / I've got nothing.",
+  "es": "No hay nada.",
+  "en": "There's nothing.",
+  "forms": [
+   {
+    "es": "No hay nada.",
+    "en": "There's nothing."
+   },
+   {
+    "es": "No hay nadie.",
+    "en": "There's nobody."
+   },
+   {
+    "es": "No sé nada.",
+    "en": "I don't know anything."
+   },
+   {
+    "es": "No tengo nada.",
+    "en": "I haven't got anything."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:negation-words",
@@ -1600,8 +2563,18 @@
   "band": "A1",
   "priority": 29,
   "title": "What's the price today?: ¿a cómo está…?",
-  "es": "¿A cómo está el aguacate? / ¿A cómo la libra? — A cuatro mil.",
-  "en": "How much are the avocados today? / How much a pound? — Four thousand.",
+  "es": "¿A cómo está el aguacate?",
+  "en": "How much is the avocado today?",
+  "forms": [
+   {
+    "es": "¿A cómo está el aguacate?",
+    "en": "How much is the avocado today?"
+   },
+   {
+    "es": "¿A cómo la libra?\nA cuatro mil.",
+    "en": "How much a pound?\nFour thousand."
+   }
+  ],
   "requires": [
    "c:cuanto-cuesta"
   ],
@@ -1628,8 +2601,18 @@
   "band": "A1",
   "priority": 29,
   "title": "Can you do me a deal?: ¿me hace una rebajita?",
-  "es": "¿Me hace una rebajita? / ¿Me lo deja en diez mil?",
-  "en": "Can you give me a little discount? / Will you let me have it for ten thousand?",
+  "es": "¿Me hace una rebajita?",
+  "en": "Can you give me a little discount?",
+  "forms": [
+   {
+    "es": "¿Me hace una rebajita?",
+    "en": "Can you give me a little discount?"
+   },
+   {
+    "es": "¿Me lo deja en diez mil?",
+    "en": "Will you let me have it for ten thousand?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:diminutives",
@@ -1654,8 +2637,26 @@
   "band": "A1",
   "priority": 29,
   "title": "How was your weekend?: ¿qué tal el fin de semana?",
-  "es": "¿Qué tal el fin de semana? / ¿Qué tal el paseo? — Muy bien. / Bien, tranquilo. / Nada especial.",
-  "en": "How was the weekend? / the trip? — Great. / Fine, quiet. / Nothing special.",
+  "es": "¿Qué tal el fin de semana?",
+  "en": "How was the weekend?",
+  "forms": [
+   {
+    "es": "¿Qué tal el fin de semana?",
+    "en": "How was the weekend?"
+   },
+   {
+    "es": "¿Qué tal el fin de semana?\nMuy bien.",
+    "en": "How was the weekend?\nReally good."
+   },
+   {
+    "es": "¿Qué tal el paseo?\nBien, tranquilo.",
+    "en": "How was the day out?\nGood, relaxed."
+   },
+   {
+    "es": "¿Qué tal el fin de semana?\nNada especial.",
+    "en": "How was the weekend?\nNothing special."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -1674,9 +2675,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 30,
-  "title": "Anything else? — That's all: ¿algo más?",
-  "es": "—¿Algo más? —No, nada más, gracias. / Eso es todo.",
-  "en": "—Anything else? —No, that's all, thanks.",
+  "title": "Anything else? That's all: ¿algo más?",
+  "es": "¿Algo más?\nNo, nada más, gracias.",
+  "en": "Anything else?\nNo, nothing else, thanks.",
+  "forms": [
+   {
+    "es": "¿Algo más?\nNo, nada más, gracias.",
+    "en": "Anything else?\nNo, nothing else, thanks."
+   },
+   {
+    "es": "Eso es todo.",
+    "en": "That's all."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -1696,8 +2707,22 @@
   "band": "A1",
   "priority": 30,
   "title": "Here you are: aquí tiene",
-  "es": "Aquí tiene. / Tenga. / Listo, aquí están sus vueltas.",
-  "en": "Here you are. / There you go. / Right, here's your change.",
+  "es": "Aquí tiene.",
+  "en": "Here you are. (formal)",
+  "forms": [
+   {
+    "es": "Aquí tiene.",
+    "en": "Here you are. (formal)"
+   },
+   {
+    "es": "Tenga.",
+    "en": "Here you go. (formal)"
+   },
+   {
+    "es": "Listo, aquí están sus vueltas.",
+    "en": "Right, here's your change."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:commands-usted",
@@ -1722,8 +2747,22 @@
   "band": "A1",
   "priority": 35,
   "title": "How did it go?: ¿cómo te fue?",
-  "es": "¿Cómo te fue en el examen? — Me fue muy bien. / Me fue mal.",
-  "en": "How did the exam go? — It went really well. / It went badly.",
+  "es": "¿Cómo te fue en el examen?",
+  "en": "How did you do in the exam?",
+  "forms": [
+   {
+    "es": "¿Cómo te fue en el examen?",
+    "en": "How did you do in the exam?"
+   },
+   {
+    "es": "Me fue muy bien.",
+    "en": "It went really well."
+   },
+   {
+    "es": "Me fue mal.",
+    "en": "It went badly."
+   }
+  ],
   "requires": [
    "g:preterite-ser-ir-hacer"
   ],
@@ -1745,8 +2784,18 @@
   "band": "A1",
   "priority": 38,
   "title": "What's he like?: ¿cómo es?",
-  "es": "¿Cómo es tu novio? — Es alto y muy simpático. / ¿Cómo está tu mamá? — Bien, gracias.",
-  "en": "What's your boyfriend like? — Tall and really nice. / How's your mum? — Fine, thanks.",
+  "es": "¿Cómo es tu novio?\nEs alto y muy simpático.",
+  "en": "What's your boyfriend like?\nHe's tall and really nice.",
+  "forms": [
+   {
+    "es": "¿Cómo es tu novio?\nEs alto y muy simpático.",
+    "en": "What's your boyfriend like?\nHe's tall and really nice."
+   },
+   {
+    "es": "¿Cómo está tu mamá?\nBien, gracias.",
+    "en": "How's your mum?\nFine, thanks."
+   }
+  ],
   "requires": [
    "g:ser-identity",
    "g:estar-location-states"
@@ -1770,8 +2819,18 @@
   "band": "A1",
   "priority": 38,
   "title": "I'm an only child: soy hijo único",
-  "es": "Soy hijo único. / Soy hija única.",
-  "en": "I'm an only child.",
+  "es": "Soy hijo único.",
+  "en": "I'm an only child. (said by a man)",
+  "forms": [
+   {
+    "es": "Soy hijo único.",
+    "en": "I'm an only child. (said by a man)"
+   },
+   {
+    "es": "Soy hija única.",
+    "en": "I'm an only child. (said by a woman)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -1790,8 +2849,18 @@
   "band": "A1",
   "priority": 38,
   "title": "Do you have brothers and sisters?: ¿tienes hermanos?",
-  "es": "¿Tienes hermanos? — Sí, dos: una hermana mayor y un hermano menor.",
-  "en": "Do you have any siblings? — Yes, two: an older sister and a younger brother.",
+  "es": "¿Tienes hermanos?",
+  "en": "Have you got any brothers or sisters?",
+  "forms": [
+   {
+    "es": "¿Tienes hermanos?",
+    "en": "Have you got any brothers or sisters?"
+   },
+   {
+    "es": "¿Tienes hermanos?\nSí, dos: una hermana mayor y un hermano menor.",
+    "en": "Have you got any brothers or sisters?\nYes, two: an older sister and a younger brother."
+   }
+  ],
   "requires": [
    "c:tengo"
   ],
@@ -1812,8 +2881,18 @@
   "band": "A1",
   "priority": 39,
   "title": "A really nice person: es muy buena gente",
-  "es": "Mi jefe es muy buena gente. / Son muy buena gente.",
-  "en": "My boss is a really good guy. / They're lovely people.",
+  "es": "Mi jefe es muy buena gente.",
+  "en": "My boss is a really nice person.",
+  "forms": [
+   {
+    "es": "Mi jefe es muy buena gente.",
+    "en": "My boss is a really nice person."
+   },
+   {
+    "es": "Son muy buena gente.",
+    "en": "They're really nice people."
+   }
+  ],
   "requires": [
    "g:ser-identity"
   ],
@@ -1839,8 +2918,8 @@
   "band": "A1",
   "priority": 39,
   "title": "Yes, that's me: sí, soy yo",
-  "es": "—¿Valentina Rojas? —Sí, soy yo.",
-  "en": "—Valentina Rojas? —Yes, that's me.",
+  "es": "¿Valentina Rojas?\nSí, soy yo.",
+  "en": "Valentina Rojas?\nYes, that's me.",
   "requires": [
    "g:ser-identity"
   ],
@@ -1899,8 +2978,18 @@
   "band": "A1",
   "priority": 49,
   "title": "What was it like?: ¿cómo era?",
-  "es": "¿Cómo era el barrio antes? — Era muy tranquilo, había muchos árboles.",
-  "en": "What was the neighbourhood like before? — It was very quiet; there were lots of trees.",
+  "es": "¿Cómo era el barrio antes?",
+  "en": "What was the neighbourhood like before?",
+  "forms": [
+   {
+    "es": "¿Cómo era el barrio antes?",
+    "en": "What was the neighbourhood like before?"
+   },
+   {
+    "es": "¿Cómo era el barrio antes?\nEra muy tranquilo, había muchos árboles.",
+    "en": "What was the neighbourhood like before?\nIt was very quiet; there were lots of trees."
+   }
+  ],
   "requires": [
    "g:imperfect-states"
   ],
@@ -1922,8 +3011,18 @@
   "band": "A1",
   "priority": 49,
   "title": "Back then: en esa época",
-  "es": "En esa época no había TransMilenio. / En ese entonces vivíamos en Chapinero.",
-  "en": "Back then there was no TransMilenio. / At that time we lived in Chapinero.",
+  "es": "En esa época no había TransMilenio.",
+  "en": "Back then there was no TransMilenio.",
+  "forms": [
+   {
+    "es": "En esa época no había TransMilenio.",
+    "en": "Back then there was no TransMilenio."
+   },
+   {
+    "es": "En ese entonces vivíamos en Chapinero.",
+    "en": "At that time we lived in Chapinero."
+   }
+  ],
   "requires": [
    "g:imperfect-states"
   ],
@@ -1945,8 +3044,18 @@
   "band": "A1",
   "priority": 49,
   "title": "Not any more: ya no",
-  "es": "Ese café ya no existe. / Ya no vivo allá.",
-  "en": "That café doesn't exist any more. / I don't live there any more.",
+  "es": "Ese café ya no existe.",
+  "en": "That café doesn't exist any more.",
+  "forms": [
+   {
+    "es": "Ese café ya no existe.",
+    "en": "That café doesn't exist any more."
+   },
+   {
+    "es": "Ya no vivo allá.",
+    "en": "I don't live there any more."
+   }
+  ],
   "requires": [
    "g:imperfect-states"
   ],
@@ -1969,8 +3078,22 @@
   "band": "A1",
   "priority": 54,
   "title": "Ages ago, for ages: hace mucho, hace rato",
-  "es": "Eso fue hace mucho tiempo. / Hace rato no te veía. / Hace poco.",
-  "en": "That was a long time ago. / I haven't seen you in ages. / Recently.",
+  "es": "Eso fue hace mucho tiempo.",
+  "en": "That was a long time ago.",
+  "forms": [
+   {
+    "es": "Eso fue hace mucho tiempo.",
+    "en": "That was a long time ago."
+   },
+   {
+    "es": "Hace rato no te veía.",
+    "en": "I haven't seen you in ages."
+   },
+   {
+    "es": "Hace poco.",
+    "en": "Not long ago."
+   }
+  ],
   "requires": [
    "g:hace-ago"
   ],
@@ -1996,8 +3119,22 @@
   "band": "A1",
   "priority": 57,
   "title": "Make yourself at home: está en su casa",
-  "es": "Está en su casa. / Estás en tu casa. / Mi casa es su casa.",
-  "en": "Make yourself at home.",
+  "es": "Está en su casa.",
+  "en": "Make yourself at home. (formal)",
+  "forms": [
+   {
+    "es": "Está en su casa.",
+    "en": "Make yourself at home. (formal)"
+   },
+   {
+    "es": "Estás en tu casa.",
+    "en": "Make yourself at home. (to a friend)"
+   },
+   {
+    "es": "Mi casa es su casa.",
+    "en": "My home is your home."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -2027,8 +3164,18 @@
   "band": "A1",
   "priority": 57,
   "title": "Around here: ¿hay un cajero por acá?",
-  "es": "¿Hay un cajero por acá? / ¿Hay una droguería por aquí cerca?",
-  "en": "Is there a cash machine round here? / Is there a pharmacy near here?",
+  "es": "¿Hay un cajero por acá?",
+  "en": "Is there a cash machine round here?",
+  "forms": [
+   {
+    "es": "¿Hay un cajero por acá?",
+    "en": "Is there a cash machine round here?"
+   },
+   {
+    "es": "¿Hay una droguería por aquí cerca?",
+    "en": "Is there a chemist's near here?"
+   }
+  ],
   "requires": [
    "c:hay"
   ],
@@ -2051,8 +3198,18 @@
   "band": "A1",
   "priority": 57,
   "title": "Come in!: ¡siga!",
-  "es": "¡Siga, siga! / Siga, está en su casa.",
-  "en": "Come in, come in! / Come in, make yourself at home.",
+  "es": "¡Siga, siga!",
+  "en": "Come in, come in!",
+  "forms": [
+   {
+    "es": "¡Siga, siga!",
+    "en": "Come in, come in!"
+   },
+   {
+    "es": "Siga, está en su casa.",
+    "en": "Come in, make yourself at home. (formal)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:commands-usted",
@@ -2077,8 +3234,22 @@
   "band": "A1",
   "priority": 58,
   "title": "More or less: más o menos",
-  "es": "Son más o menos cien metros. / Tiene más o menos ocho millones de habitantes. / —¿Te gusta? —Más o menos.",
-  "en": "It's about a hundred metres. / It has roughly eight million inhabitants. / —Do you like it? —Sort of.",
+  "es": "Son más o menos cien metros.",
+  "en": "It's more or less a hundred metres.",
+  "forms": [
+   {
+    "es": "Son más o menos cien metros.",
+    "en": "It's more or less a hundred metres."
+   },
+   {
+    "es": "Tiene más o menos ocho millones de habitantes.",
+    "en": "It has more or less eight million inhabitants."
+   },
+   {
+    "es": "¿Te gusta?\nMás o menos.",
+    "en": "Do you like it?\nSo-so."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -2104,8 +3275,18 @@
   "band": "A1",
   "priority": 63,
   "title": "It's really close: queda cerquita",
-  "es": "No, queda cerquita. / Uy, queda lejísimos.",
-  "en": "No, it's really close. / Oh, it's miles away.",
+  "es": "No, queda cerquita.",
+  "en": "No, it's really close.",
+  "forms": [
+   {
+    "es": "No, queda cerquita.",
+    "en": "No, it's really close."
+   },
+   {
+    "es": "Uy, queda lejísimos.",
+    "en": "Oh, it's miles away."
+   }
+  ],
   "requires": [
    "p:quedar-cerca"
   ],
@@ -2131,8 +3312,18 @@
   "band": "A1",
   "priority": 67,
   "title": "No idea: ni idea",
-  "es": "Ni idea. / No tengo ni idea.",
-  "en": "No idea. / I haven't got a clue.",
+  "es": "Ni idea.",
+  "en": "No idea.",
+  "forms": [
+   {
+    "es": "Ni idea.",
+    "en": "No idea."
+   },
+   {
+    "es": "No tengo ni idea.",
+    "en": "I haven't got a clue."
+   }
+  ],
   "requires": [
    "c:no-se"
   ],
@@ -2171,8 +3362,18 @@
   "band": "A1",
   "priority": 67,
   "title": "I'm so jealous!: ¡qué envidia!",
-  "es": "¡Qué envidia! / ¡Qué suerte!",
-  "en": "I'm so jealous! / Lucky you!",
+  "es": "¡Qué envidia!",
+  "en": "I'm so jealous!",
+  "forms": [
+   {
+    "es": "¡Qué envidia!",
+    "en": "I'm so jealous!"
+   },
+   {
+    "es": "¡Qué suerte!",
+    "en": "Lucky you!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:exclamations",
@@ -2192,9 +3393,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 68,
-  "title": "Not yet / already: todavía no, ya",
-  "es": "—¿Has ido a Cartagena? —Todavía no. / —Sí, ya fui el año pasado.",
-  "en": "—Have you been to Cartagena? —Not yet. / —Yes, I went last year.",
+  "title": "Not yet, already: todavía no, ya",
+  "es": "¿Has ido a Cartagena?\nTodavía no.",
+  "en": "Have you been to Cartagena?\nNot yet.",
+  "forms": [
+   {
+    "es": "¿Has ido a Cartagena?\nTodavía no.",
+    "en": "Have you been to Cartagena?\nNot yet."
+   },
+   {
+    "es": "¿Has ido a Cartagena?\nSí, ya fui el año pasado.",
+    "en": "Have you been to Cartagena?\nYes, I went last year."
+   }
+  ],
   "requires": [
    "g:perfecto-experience"
   ],
@@ -2218,8 +3429,22 @@
   "band": "A1",
   "priority": 68,
   "title": "Once, twice, lots of times: una vez, dos veces",
-  "es": "He estado en Medellín una vez. / Fui dos veces. / Muchas veces.",
-  "en": "I've been to Medellín once. / I went twice. / Lots of times.",
+  "es": "He estado en Medellín una vez.",
+  "en": "I've been to Medellín once.",
+  "forms": [
+   {
+    "es": "He estado en Medellín una vez.",
+    "en": "I've been to Medellín once."
+   },
+   {
+    "es": "Fui dos veces.",
+    "en": "I went twice."
+   },
+   {
+    "es": "Muchas veces.",
+    "en": "Lots of times."
+   }
+  ],
   "requires": [
    "g:perfecto-experience"
   ],
@@ -2241,8 +3466,18 @@
   "band": "A1",
   "priority": 70,
   "title": "Never ever: nunca en la vida",
-  "es": "Nunca en la vida he probado el chontaduro. / Jamás.",
-  "en": "I've never in my life tried chontaduro. / Never.",
+  "es": "Nunca en la vida he probado el chontaduro.",
+  "en": "I've never in my life tried chontaduro.",
+  "forms": [
+   {
+    "es": "Nunca en la vida he probado el chontaduro.",
+    "en": "I've never in my life tried chontaduro."
+   },
+   {
+    "es": "Jamás.",
+    "en": "Never."
+   }
+  ],
   "requires": [
    "g:negation-words",
    "g:perfecto-experience"
@@ -2267,8 +3502,18 @@
   "band": "A1",
   "priority": 73,
   "title": "It's worth it: vale la pena",
-  "es": "Vale la pena ir. / No vale la pena.",
-  "en": "It's worth going. / It's not worth it.",
+  "es": "Vale la pena ir.",
+  "en": "It's worth going.",
+  "forms": [
+   {
+    "es": "Vale la pena ir.",
+    "en": "It's worth going."
+   },
+   {
+    "es": "No vale la pena.",
+    "en": "It's not worth it."
+   }
+  ],
   "requires": [
    "g:verb-infinitive"
   ],
@@ -2290,8 +3535,18 @@
   "band": "A1",
   "priority": 76,
   "title": "Ugh, I can't be bothered: ¡qué pereza!",
-  "es": "¡Qué pereza madrugar! / Me da pereza.",
-  "en": "Ugh, getting up early! / I can't be bothered.",
+  "es": "¡Qué pereza madrugar!",
+  "en": "Ugh, I can't be bothered to get up early!",
+  "forms": [
+   {
+    "es": "¡Qué pereza madrugar!",
+    "en": "Ugh, I can't be bothered to get up early!"
+   },
+   {
+    "es": "Me da pereza.",
+    "en": "I can't be bothered."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:exclamations",
@@ -2318,8 +3573,18 @@
   "band": "A1",
   "priority": 76,
   "title": "I'm running late: se me hizo tarde",
-  "es": "¡Uy, se me hizo tarde! / Voy tarde.",
-  "en": "Oh no, I've lost track of time! / I'm late.",
+  "es": "¡Uy, se me hizo tarde!",
+  "en": "Oh no, I'm running late!",
+  "forms": [
+   {
+    "es": "¡Uy, se me hizo tarde!",
+    "en": "Oh no, I'm running late!"
+   },
+   {
+    "es": "Voy tarde.",
+    "en": "I'm late."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:se-accidental",
@@ -2347,9 +3612,23 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 76,
-  "title": "Coming! / Be right back: ¡ya voy!, ya vengo",
-  "es": "¡Ya voy! / Ya vengo. / Ya salgo.",
-  "en": "Coming! / I'll be right back. / I'm leaving now.",
+  "title": "Coming! Be right back: ¡ya voy!, ya vengo",
+  "es": "¡Ya voy!",
+  "en": "Coming!",
+  "forms": [
+   {
+    "es": "¡Ya voy!",
+    "en": "Coming!"
+   },
+   {
+    "es": "Ya vengo.",
+    "en": "I'll be right back."
+   },
+   {
+    "es": "Ya salgo.",
+    "en": "I'm just leaving."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -2375,25 +3654,63 @@
   "band": "A1",
   "priority": 81,
   "title": "Usually, really, only: normalmente, realmente, solamente",
-  "es": "Normalmente… / Generalmente… / Realmente… / Solamente…",
-  "en": "Usually… / Generally… / Really… / Only…",
+  "es": "Normalmente desayuno en casa.",
+  "en": "I usually have breakfast at home.",
+  "forms": [
+   {
+    "es": "Normalmente desayuno en casa.",
+    "en": "I usually have breakfast at home."
+   },
+   {
+    "es": "Generalmente salgo a las seis.",
+    "en": "I generally leave at six."
+   },
+   {
+    "es": "Realmente no sé.",
+    "en": "I really don't know."
+   },
+   {
+    "es": "Solamente tengo diez mil.",
+    "en": "I've only got ten thousand."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:adverbs-mente",
   "serves": [],
   "pcic": [],
   "placement": "teaching_choice",
-  "note": "Pull-forward pass (Oct 2026): p:frequency-scale needs normalmente in u09; -mente as a system is g:adverbs-mente (236).",
-  "sources": []
+  "note": "Pull-forward pass (Oct 2026): p:frequency-scale needs normalmente in u09; -mente as a system is g:adverbs-mente (236). Frame: Normalmente… / Generalmente… / Realmente… / Solamente…",
+  "sources": [],
+  "match": [
+   "Normalmente",
+   "Generalmente",
+   "Realmente",
+   "Solamente"
+  ]
  },
  {
   "id": "c:a-que-hora",
   "kind": "chunk",
   "band": "A1",
-  "priority": 82,
+  "priority": 18,
   "title": "At what time?: ¿a qué hora…?",
-  "es": "¿A qué hora abren? / ¿A qué hora sales del trabajo? / ¿A qué hora nos vemos?",
-  "en": "What time do you open? / What time do you finish work? / What time shall we meet?",
+  "es": "¿A qué hora abren?",
+  "en": "What time do you open?",
+  "forms": [
+   {
+    "es": "¿A qué hora abren?",
+    "en": "What time do you open?"
+   },
+   {
+    "es": "¿A qué hora sales del trabajo?",
+    "en": "What time do you leave work?"
+   },
+   {
+    "es": "¿A qué hora nos vemos?",
+    "en": "What time shall we meet?"
+   }
+  ],
   "requires": [
    "p:telling-time"
   ],
@@ -2404,7 +3721,7 @@
   ],
   "pcic": [],
   "placement": "pcic",
-  "note": "Abrir / cerrar for the action (abre a las nueve); estar abierto / cerrado for the state.",
+  "note": "Abrir / cerrar for the action (abre a las nueve); estar abierto / cerrado for the state. Moved from u09 day 7 (82) to u02 day 8 (18) with p:prep-questions-basic, Oct 2026.",
   "sources": [
    "task-quedar",
    "nt-accesibilidad-a1"
@@ -2416,8 +3733,22 @@
   "band": "A1",
   "priority": 82,
   "title": "What time is it?: ¿qué hora es?",
-  "es": "¿Qué hora es? / ¿Tiene la hora? / ¿Me regala la hora?",
-  "en": "What time is it? / Have you got the time?",
+  "es": "¿Qué hora es?",
+  "en": "What time is it?",
+  "forms": [
+   {
+    "es": "¿Qué hora es?",
+    "en": "What time is it?"
+   },
+   {
+    "es": "¿Tiene la hora?",
+    "en": "Have you got the time? (formal)"
+   },
+   {
+    "es": "¿Me regala la hora?",
+    "en": "Could you tell me the time? (formal)"
+   }
+  ],
   "requires": [
    "p:telling-time"
   ],
@@ -2444,8 +3775,22 @@
   "band": "A1",
   "priority": 86,
   "title": "The bill, please: la cuenta, por favor",
-  "es": "La cuenta, por favor. / ¿Me trae la cuenta? / ¿Nos regala la cuenta?",
-  "en": "The bill, please. / Could you bring me the bill?",
+  "es": "La cuenta, por favor.",
+  "en": "The bill, please.",
+  "forms": [
+   {
+    "es": "La cuenta, por favor.",
+    "en": "The bill, please."
+   },
+   {
+    "es": "¿Me trae la cuenta?",
+    "en": "Could you bring me the bill? (formal)"
+   },
+   {
+    "es": "¿Nos regala la cuenta?",
+    "en": "Could we have the bill? (formal)"
+   }
+  ],
   "requires": [
    "c:por-favor"
   ],
@@ -2466,8 +3811,8 @@
   "band": "A1",
   "priority": 86,
   "title": "Eat in or take away?: ¿para llevar?",
-  "es": "¿Para comer aquí o para llevar? — Para llevar, por favor.",
-  "en": "To eat in or take away? — Take away, please.",
+  "es": "¿Para comer aquí o para llevar?\nPara llevar, por favor.",
+  "en": "To eat here or to take away?\nTo take away, please.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -2485,8 +3830,18 @@
   "band": "A1",
   "priority": 86,
   "title": "What do you recommend?: ¿qué me recomienda?",
-  "es": "¿Qué me recomienda? / ¿Cuál es la especialidad de la casa?",
-  "en": "What do you recommend? / What's the house speciality?",
+  "es": "¿Qué me recomienda?",
+  "en": "What do you recommend? (formal)",
+  "forms": [
+   {
+    "es": "¿Qué me recomienda?",
+    "en": "What do you recommend? (formal)"
+   },
+   {
+    "es": "¿Cuál es la especialidad de la casa?",
+    "en": "What's the house speciality?"
+   }
+  ],
   "requires": [
    "g:stem-boot"
   ],
@@ -2511,8 +3866,18 @@
   "band": "A1",
   "priority": 87,
   "title": "Enjoy your meal: buen provecho",
-  "es": "¡Buen provecho! — Gracias, igualmente.",
-  "en": "Enjoy your meal! — Thanks, you too.",
+  "es": "¡Buen provecho!",
+  "en": "Enjoy your meal!",
+  "forms": [
+   {
+    "es": "¡Buen provecho!",
+    "en": "Enjoy your meal!"
+   },
+   {
+    "es": "¡Buen provecho!\nGracias, igualmente.",
+    "en": "Enjoy your meal!\nThanks, you too."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -2538,8 +3903,18 @@
   "band": "A1",
   "priority": 87,
   "title": "What do I owe you?: ¿cuánto le debo?",
-  "es": "¿Cuánto le debo? / ¿Cuánto es?",
-  "en": "What do I owe you? / How much is it?",
+  "es": "¿Cuánto le debo?",
+  "en": "What do I owe you? (formal)",
+  "forms": [
+   {
+    "es": "¿Cuánto le debo?",
+    "en": "What do I owe you? (formal)"
+   },
+   {
+    "es": "¿Cuánto es?",
+    "en": "How much is it?"
+   }
+  ],
   "requires": [
    "c:cuanto-cuesta"
   ],
@@ -2560,8 +3935,22 @@
   "band": "A1",
   "priority": 87,
   "title": "Delicious!: ¡qué rico!",
-  "es": "¡Qué rico! / ¡Está delicioso! / Está muy bueno.",
-  "en": "Delicious! / It's delicious! / It's really good.",
+  "es": "¡Qué rico!",
+  "en": "Delicious!",
+  "forms": [
+   {
+    "es": "¡Qué rico!",
+    "en": "Delicious!"
+   },
+   {
+    "es": "¡Está delicioso!",
+    "en": "It's delicious!"
+   },
+   {
+    "es": "Está muy bueno.",
+    "en": "It's really good."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:exclamations",
@@ -2590,8 +3979,22 @@
   "band": "A1",
   "priority": 87,
   "title": "Do you fancy…?: ¿te provoca un tinto?",
-  "es": "¿Te provoca un tinto? / ¿Le provoca algo de tomar? / No me provoca.",
-  "en": "Do you fancy a coffee? / Would you like something to drink? / I don't feel like it.",
+  "es": "¿Te provoca un tinto?",
+  "en": "Do you fancy a coffee?",
+  "forms": [
+   {
+    "es": "¿Te provoca un tinto?",
+    "en": "Do you fancy a coffee?"
+   },
+   {
+    "es": "¿Le provoca algo de tomar?",
+    "en": "Would you like something to drink? (formal)"
+   },
+   {
+    "es": "No me provoca.",
+    "en": "I don't feel like it."
+   }
+  ],
   "requires": [
    "g:gustar-full"
   ],
@@ -2631,8 +4034,18 @@
   "band": "A1",
   "priority": 88,
   "title": "Let's see…: a ver",
-  "es": "A ver… un jugo de mora y una empanada. / A ver, muéstrame.",
-  "en": "Let's see… a blackberry juice and an empanada. / Let me see.",
+  "es": "A ver, un jugo de mora y una empanada.",
+  "en": "Let's see, a blackberry juice and an empanada.",
+  "forms": [
+   {
+    "es": "A ver, un jugo de mora y una empanada.",
+    "en": "Let's see, a blackberry juice and an empanada."
+   },
+   {
+    "es": "A ver, muéstrame.",
+    "en": "Let's see, show me."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -2658,8 +4071,22 @@
   "band": "A1",
   "priority": 96,
   "title": "It's the same: es lo mismo, es igual",
-  "es": "Es lo mismo. / Es igual. / Da lo mismo.",
-  "en": "It's the same. / It makes no difference.",
+  "es": "Es lo mismo.",
+  "en": "It's the same.",
+  "forms": [
+   {
+    "es": "Es lo mismo.",
+    "en": "It's the same."
+   },
+   {
+    "es": "Es igual.",
+    "en": "It's all the same."
+   },
+   {
+    "es": "Da lo mismo.",
+    "en": "It makes no difference."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -2679,8 +4106,18 @@
   "band": "A1",
   "priority": 96,
   "title": "I'll go with…: me quedo con este",
-  "es": "Me quedo con el apartamento de Chapinero. / Me quedo con el azul.",
-  "en": "I'll go with the flat in Chapinero. / I'll take the blue one.",
+  "es": "Me quedo con el apartamento de Chapinero.",
+  "en": "I'll go with the flat in Chapinero.",
+  "forms": [
+   {
+    "es": "Me quedo con el apartamento de Chapinero.",
+    "en": "I'll go with the flat in Chapinero."
+   },
+   {
+    "es": "Me quedo con el azul.",
+    "en": "I'll take the blue one."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:se-meaning-change",
@@ -2701,8 +4138,18 @@
   "band": "A1",
   "priority": 97,
   "title": "When I was a kid: cuando era niño",
-  "es": "Cuando era niña vivía en Tunja. / De niño jugaba fútbol en la calle.",
-  "en": "When I was little I lived in Tunja. / As a kid I played football in the street.",
+  "es": "Cuando era niña vivía en Tunja.",
+  "en": "When I was a little girl, I lived in Tunja.",
+  "forms": [
+   {
+    "es": "Cuando era niña vivía en Tunja.",
+    "en": "When I was a little girl, I lived in Tunja."
+   },
+   {
+    "es": "De niño jugaba fútbol en la calle.",
+    "en": "As a boy, I used to play football in the street."
+   }
+  ],
   "requires": [
    "g:imperfect-habitual"
   ],
@@ -2724,7 +4171,7 @@
   "priority": 102,
   "title": "Whereas: en cambio",
   "es": "Antes caminaba mucho; ahora, en cambio, todo lo hago en carro.",
-  "en": "I used to walk a lot; now, on the other hand, I go everywhere by car.",
+  "en": "I used to walk a lot; now, on the other hand, I do everything by car.",
   "requires": [
    "g:comparatives"
   ],
@@ -2746,8 +4193,18 @@
   "band": "A1",
   "priority": 102,
   "title": "There's no comparison: no hay comparación",
-  "es": "No hay comparación. / Es mucho mejor, sin duda.",
-  "en": "There's no comparison. / It's much better, no doubt.",
+  "es": "No hay comparación.",
+  "en": "There's no comparison.",
+  "forms": [
+   {
+    "es": "No hay comparación.",
+    "en": "There's no comparison."
+   },
+   {
+    "es": "Es mucho mejor, sin duda.",
+    "en": "It's much better, no doubt about it."
+   }
+  ],
   "requires": [
    "g:comparatives"
   ],
@@ -2768,8 +4225,18 @@
   "band": "A1",
   "priority": 105,
   "title": "Suddenly: de repente",
-  "es": "De repente se fue la luz. / De repente sonó el teléfono.",
-  "en": "Suddenly the power went off. / Suddenly the phone rang.",
+  "es": "De repente se fue la luz.",
+  "en": "Suddenly the power went out.",
+  "forms": [
+   {
+    "es": "De repente se fue la luz.",
+    "en": "Suddenly the power went out."
+   },
+   {
+    "es": "De repente sonó el teléfono.",
+    "en": "Suddenly the phone rang."
+   }
+  ],
   "requires": [
    "g:preterite-er-ir"
   ],
@@ -2792,8 +4259,22 @@
   "band": "A1",
   "priority": 105,
   "title": "Really?: ¿en serio?",
-  "es": "¿En serio? / ¿De verdad? / ¿Ah, sí?",
-  "en": "Really? / Seriously? / Oh yeah?",
+  "es": "¿En serio?",
+  "en": "Seriously?",
+  "forms": [
+   {
+    "es": "¿En serio?",
+    "en": "Seriously?"
+   },
+   {
+    "es": "¿De verdad?",
+    "en": "Really?"
+   },
+   {
+    "es": "¿Ah, sí?",
+    "en": "Oh yeah?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -2837,8 +4318,22 @@
   "band": "A1",
   "priority": 105,
   "title": "And then what?: ¿y qué pasó?",
-  "es": "¿Y qué pasó? / ¿Y entonces? / ¿Y qué hiciste?",
-  "en": "And what happened? / And then? / And what did you do?",
+  "es": "¿Y qué pasó?",
+  "en": "And what happened?",
+  "forms": [
+   {
+    "es": "¿Y qué pasó?",
+    "en": "And what happened?"
+   },
+   {
+    "es": "¿Y entonces?",
+    "en": "And then?"
+   },
+   {
+    "es": "¿Y qué hiciste?",
+    "en": "And what did you do?"
+   }
+  ],
   "requires": [
    "c:que-hiciste"
   ],
@@ -2864,8 +4359,18 @@
   "band": "A1",
   "priority": 106,
   "title": "In the end: al final",
-  "es": "Al final no fuimos. / Al final todo salió bien.",
-  "en": "In the end we didn't go. / In the end it all worked out.",
+  "es": "Al final no fuimos.",
+  "en": "In the end we didn't go.",
+  "forms": [
+   {
+    "es": "Al final no fuimos.",
+    "en": "In the end we didn't go."
+   },
+   {
+    "es": "Al final todo salió bien.",
+    "en": "In the end it all worked out."
+   }
+  ],
   "requires": [
    "g:preterite-ar"
   ],
@@ -2889,8 +4394,18 @@
   "band": "A1",
   "priority": 106,
   "title": "Thank goodness: menos mal",
-  "es": "¡Menos mal! / Menos mal que llegaste.",
-  "en": "Thank goodness! / Thank goodness you got here.",
+  "es": "¡Menos mal!",
+  "en": "Thank goodness!",
+  "forms": [
+   {
+    "es": "¡Menos mal!",
+    "en": "Thank goodness!"
+   },
+   {
+    "es": "Menos mal que llegaste.",
+    "en": "Thank goodness you got here."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -2918,9 +4433,27 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 106,
-  "title": "Great! / That's awful!: ¡qué bien!, ¡qué mal!",
-  "es": "¡Qué bien! / ¡Qué bueno! / ¡Qué mal! / ¡Qué horror!",
-  "en": "Great! / How nice! / That's bad! / How awful!",
+  "title": "Great! and That's bad!: ¡qué bien!, ¡qué mal!",
+  "es": "¡Qué bien!",
+  "en": "Great!",
+  "forms": [
+   {
+    "es": "¡Qué bien!",
+    "en": "Great!"
+   },
+   {
+    "es": "¡Qué bueno!",
+    "en": "How nice!"
+   },
+   {
+    "es": "¡Qué mal!",
+    "en": "That's bad!"
+   },
+   {
+    "es": "¡Qué horror!",
+    "en": "How awful!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:exclamations",
@@ -2945,8 +4478,18 @@
   "band": "A1",
   "priority": 106,
   "title": "Opening a story: una vez…, un día…",
-  "es": "Una vez, en Cartagena, me pasó algo increíble. / Un día estaba en el bus y…",
-  "en": "Once, in Cartagena, something amazing happened to me. / One day I was on the bus and…",
+  "es": "Una vez, en Cartagena, me pasó algo increíble.",
+  "en": "Once, in Cartagena, something amazing happened to me.",
+  "forms": [
+   {
+    "es": "Una vez, en Cartagena, me pasó algo increíble.",
+    "en": "Once, in Cartagena, something amazing happened to me."
+   },
+   {
+    "es": "Un día estaba en el bus y se subió un señor con una gallina.",
+    "en": "One day I was on the bus and a man got on with a hen."
+   }
+  ],
   "requires": [
    "g:pret-vs-imperfect"
   ],
@@ -2968,8 +4511,18 @@
   "band": "A1",
   "priority": 115,
   "title": "Excuse me (coming through): con permiso",
-  "es": "Con permiso. — Siga.",
-  "en": "Excuse me (passing / leaving). — Go ahead.",
+  "es": "Con permiso.",
+  "en": "Excuse me.",
+  "forms": [
+   {
+    "es": "Con permiso.",
+    "en": "Excuse me."
+   },
+   {
+    "es": "Con permiso.\nSiga.",
+    "en": "Excuse me.\nGo ahead."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -2994,8 +4547,22 @@
   "band": "A1",
   "priority": 115,
   "title": "Drop me at…: ¿me deja en la esquina?",
-  "es": "¿Me deja en la esquina, por favor? / Aquí está bien, gracias. / ¡Me deja en la próxima!",
-  "en": "Can you drop me at the corner, please? / Here's fine, thanks. / Next stop, please!",
+  "es": "¿Me deja en la esquina, por favor?",
+  "en": "Could you drop me at the corner, please?",
+  "forms": [
+   {
+    "es": "¿Me deja en la esquina, por favor?",
+    "en": "Could you drop me at the corner, please?"
+   },
+   {
+    "es": "Aquí está bien, gracias.",
+    "en": "Here's fine, thanks."
+   },
+   {
+    "es": "¡Me deja en la próxima!",
+    "en": "Drop me at the next one!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3019,9 +4586,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 115,
-  "title": "Excuse me! / Hey!: ¡oiga!, ¡oye!",
-  "es": "Oiga, disculpe, ¿sabe dónde queda la estación? / Oye, ¿tienes un minuto?",
-  "en": "Excuse me, do you know where the station is? / Hey, have you got a minute?",
+  "title": "Excuse me! or Hey!: ¡oiga!, ¡oye!",
+  "es": "Oiga, disculpe, ¿sabe dónde queda la estación?",
+  "en": "Excuse me, sorry, do you know where the station is? (formal)",
+  "forms": [
+   {
+    "es": "Oiga, disculpe, ¿sabe dónde queda la estación?",
+    "en": "Excuse me, sorry, do you know where the station is? (formal)"
+   },
+   {
+    "es": "Oye, ¿tienes un minuto?",
+    "en": "Hey, have you got a minute? (to a friend)"
+   }
+  ],
   "requires": [
    "c:perdon-disculpe"
   ],
@@ -3048,8 +4625,18 @@
   "band": "A1",
   "priority": 116,
   "title": "Watch out!: ¡ojo!",
-  "es": "¡Ojo con el celular! / ¡Cuidado!",
-  "en": "Watch your phone! / Careful!",
+  "es": "¡Ojo con el celular!",
+  "en": "Watch your phone!",
+  "forms": [
+   {
+    "es": "¡Ojo con el celular!",
+    "en": "Watch your phone!"
+   },
+   {
+    "es": "¡Cuidado!",
+    "en": "Careful!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3076,8 +4663,22 @@
   "band": "A1",
   "priority": 116,
   "title": "Getting attention: oye, mira, dime",
-  "es": "Oye, ¿tienes un minuto? Mira, el problema es… —Laura. —Dime.",
-  "en": "Hey, have you got a minute? Look, the thing is… — Go ahead.",
+  "es": "Oye, ¿tienes un minuto?",
+  "en": "Hey, have you got a minute?",
+  "forms": [
+   {
+    "es": "Oye, ¿tienes un minuto?",
+    "en": "Hey, have you got a minute?"
+   },
+   {
+    "es": "Mira, el problema es que no tengo plata.",
+    "en": "Look, the problem is I haven't got any money."
+   },
+   {
+    "es": "Laura.\nDime.",
+    "en": "Laura.\nTell me."
+   }
+  ],
   "requires": [
    "g:commands-tu"
   ],
@@ -3095,9 +4696,23 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 118,
-  "title": "Come in! Siga, siga / Pase, pase",
-  "es": "¡Siga, siga! ¡Pase! ¡Siga, por favor!",
-  "en": "Come in! Go ahead! (welcoming someone)",
+  "title": "Come in!: siga, siga, or pase, pase",
+  "es": "¡Siga, siga!",
+  "en": "Come in, come in!",
+  "forms": [
+   {
+    "es": "¡Siga, siga!",
+    "en": "Come in, come in!"
+   },
+   {
+    "es": "¡Pase!",
+    "en": "Come in!"
+   },
+   {
+    "es": "¡Siga, por favor!",
+    "en": "Come in, please!"
+   }
+  ],
   "requires": [
    "g:commands-usted"
   ],
@@ -3120,8 +4735,18 @@
   "band": "A1",
   "priority": 121,
   "title": "How long does it take?: ¿cuánto se demora?",
-  "es": "¿Cuánto se demora? / ¿Cuánto se demora el bus hasta el centro?",
-  "en": "How long does it take? / How long does the bus take to get downtown?",
+  "es": "¿Cuánto se demora?",
+  "en": "How long does it take?",
+  "forms": [
+   {
+    "es": "¿Cuánto se demora?",
+    "en": "How long does it take?"
+   },
+   {
+    "es": "¿Cuánto se demora el bus hasta el centro?",
+    "en": "How long does the bus take to get to the centre?"
+   }
+  ],
   "requires": [
    "p:tardar-en"
   ],
@@ -3176,8 +4801,18 @@
   "band": "A1",
   "priority": 125,
   "title": "I mean: o sea",
-  "es": "O sea, que no vienes. / Llega el martes, o sea, pasado mañana.",
-  "en": "So you're not coming, then. / She arrives on Tuesday, I mean, the day after tomorrow.",
+  "es": "O sea, que no vienes.",
+  "en": "So you're not coming, then.",
+  "forms": [
+   {
+    "es": "O sea, que no vienes.",
+    "en": "So you're not coming, then."
+   },
+   {
+    "es": "Llega el martes, o sea, pasado mañana.",
+    "en": "She arrives on Tuesday, I mean, the day after tomorrow."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:reformulation",
@@ -3246,8 +4881,22 @@
   "band": "A1",
   "priority": 126,
   "title": "Well…: pues",
-  "es": "Pues no sé. / Pues sí. / Bueno, pues, nos vemos.",
-  "en": "Well, I don't know. / Well, yes. / Right then, see you.",
+  "es": "Pues no sé.",
+  "en": "Well, I don't know.",
+  "forms": [
+   {
+    "es": "Pues no sé.",
+    "en": "Well, I don't know."
+   },
+   {
+    "es": "Pues sí.",
+    "en": "Well, yes."
+   },
+   {
+    "es": "Bueno, pues, nos vemos.",
+    "en": "Right then, see you."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3273,8 +4922,22 @@
   "band": "A1",
   "priority": 126,
   "title": "Dear…: querida Vale",
-  "es": "Querida Vale: / Querido Andrés, / Hola, Vale:",
-  "en": "Dear Vale, / Dear Andrés, / Hi Vale,",
+  "es": "Querida Vale:",
+  "en": "Dear Vale,",
+  "forms": [
+   {
+    "es": "Querida Vale:",
+    "en": "Dear Vale,"
+   },
+   {
+    "es": "Querido Andrés,",
+    "en": "Dear Andrés,"
+   },
+   {
+    "es": "Hola, Vale:",
+    "en": "Hi Vale,"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:written-register-a2",
@@ -3299,9 +4962,19 @@
   "kind": "chunk",
   "band": "A1",
   "priority": 126,
-  "title": "Guess what / Just so you know: te cuento que…",
-  "es": "Te cuento que me cambié de trabajo. / Les cuento que…",
-  "en": "Guess what, I've changed jobs. / I wanted to tell you all that…",
+  "title": "Guess what, or Just so you know: te cuento que",
+  "es": "Te cuento que me cambié de trabajo.",
+  "en": "Guess what, I've changed jobs.",
+  "forms": [
+   {
+    "es": "Te cuento que me cambié de trabajo.",
+    "en": "Guess what, I've changed jobs."
+   },
+   {
+    "es": "Les cuento que nos vamos a casar.",
+    "en": "Just so you all know, we're getting married."
+   }
+  ],
   "requires": [
    "g:that-clauses"
   ],
@@ -3324,6 +4997,9 @@
    "fn-solicitar-comienzo-relato-b2",
    "fn-introducir-tema-relato-b2",
    "task-b2-conversar"
+  ],
+  "match": [
+   "Les cuento que"
   ]
  },
  {
@@ -3332,8 +5008,26 @@
   "band": "A1",
   "priority": 126,
   "title": "Signing off: un abrazo, saludos",
-  "es": "Un abrazo. / Besos. / Saludos. / Un saludo.",
-  "en": "Hugs. / Love. / Best wishes. / Regards.",
+  "es": "Un abrazo.",
+  "en": "Hugs.",
+  "forms": [
+   {
+    "es": "Un abrazo.",
+    "en": "Hugs."
+   },
+   {
+    "es": "Besos.",
+    "en": "Kisses."
+   },
+   {
+    "es": "Saludos.",
+    "en": "Best wishes."
+   },
+   {
+    "es": "Un saludo.",
+    "en": "Regards."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:written-register-a2",
@@ -3354,8 +5048,18 @@
   "band": "A2",
   "priority": 134,
   "title": "It depends: depende",
-  "es": "—¿Es caro? —Depende. / Sí, pero…",
-  "en": "—Is it expensive? —It depends. / Yes, but…",
+  "es": "¿Es caro?\nDepende.",
+  "en": "Is it expensive?\nIt depends.",
+  "forms": [
+   {
+    "es": "¿Es caro?\nDepende.",
+    "en": "Is it expensive?\nIt depends."
+   },
+   {
+    "es": "Sí, pero depende del día.",
+    "en": "Yes, but it depends on the day."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3379,8 +5083,26 @@
   "band": "A2",
   "priority": 134,
   "title": "I agree: estoy de acuerdo",
-  "es": "Estoy de acuerdo (contigo). / No estoy de acuerdo. / Sí, es verdad.",
-  "en": "I agree (with you). / I don't agree. / Yes, that's true.",
+  "es": "Estoy de acuerdo.",
+  "en": "I agree.",
+  "forms": [
+   {
+    "es": "Estoy de acuerdo.",
+    "en": "I agree."
+   },
+   {
+    "es": "Estoy de acuerdo contigo.",
+    "en": "I agree with you."
+   },
+   {
+    "es": "No estoy de acuerdo.",
+    "en": "I don't agree."
+   },
+   {
+    "es": "Sí, es verdad.",
+    "en": "Yes, that's true."
+   }
+  ],
   "requires": [
    "g:prep-pronouns"
   ],
@@ -3406,8 +5128,22 @@
   "band": "A2",
   "priority": 134,
   "title": "Is something wrong?: ¿te pasa algo?",
-  "es": "¿Te pasa algo? / ¿Estás bien? / ¿Qué te pasa?",
-  "en": "Is something wrong? / Are you OK? / What's the matter?",
+  "es": "¿Te pasa algo?",
+  "en": "Is something wrong?",
+  "forms": [
+   {
+    "es": "¿Te pasa algo?",
+    "en": "Is something wrong?"
+   },
+   {
+    "es": "¿Estás bien?",
+    "en": "Are you OK?"
+   },
+   {
+    "es": "¿Qué te pasa?",
+    "en": "What's the matter?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3437,9 +5173,27 @@
   "kind": "chunk",
   "band": "A2",
   "priority": 135,
-  "title": "I feel ill / better: me siento mal",
-  "es": "Me siento mal. / Me siento mucho mejor. / Estoy enfermo / enferma.",
-  "en": "I feel ill. / I feel much better. / I'm ill.",
+  "title": "I feel ill, or better: me siento mal",
+  "es": "Me siento mal.",
+  "en": "I feel ill.",
+  "forms": [
+   {
+    "es": "Me siento mal.",
+    "en": "I feel ill."
+   },
+   {
+    "es": "Me siento mucho mejor.",
+    "en": "I feel much better."
+   },
+   {
+    "es": "Estoy enfermo.",
+    "en": "I'm ill. (a man speaking)"
+   },
+   {
+    "es": "Estoy enferma.",
+    "en": "I'm ill. (a woman speaking)"
+   }
+  ],
   "requires": [
    "g:reflexive-routine"
   ],
@@ -3466,8 +5220,18 @@
   "band": "A2",
   "priority": 135,
   "title": "Not at all: para nada",
-  "es": "—¿Te molesta? —Para nada. / No es para nada caro.",
-  "en": "—Does it bother you? —Not at all. / It's not expensive at all.",
+  "es": "¿Te molesta?\nPara nada.",
+  "en": "Does it bother you?\nNot at all.",
+  "forms": [
+   {
+    "es": "¿Te molesta?\nPara nada.",
+    "en": "Does it bother you?\nNot at all."
+   },
+   {
+    "es": "No es para nada caro.",
+    "en": "It's not expensive at all."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3500,8 +5264,26 @@
   "band": "A2",
   "priority": 135,
   "title": "What a fright! How annoying!: ¡qué susto!, ¡qué rabia!",
-  "es": "¡Qué susto! / ¡Qué rabia! / ¡Qué miedo! / ¡Qué vergüenza!",
-  "en": "What a fright! / How infuriating! / How scary! / How embarrassing!",
+  "es": "¡Qué susto!",
+  "en": "What a fright!",
+  "forms": [
+   {
+    "es": "¡Qué susto!",
+    "en": "What a fright!"
+   },
+   {
+    "es": "¡Qué rabia!",
+    "en": "How infuriating!"
+   },
+   {
+    "es": "¡Qué miedo!",
+    "en": "How scary!"
+   },
+   {
+    "es": "¡Qué vergüenza!",
+    "en": "How embarrassing!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:exclamations",
@@ -3526,8 +5308,18 @@
   "band": "A2",
   "priority": 135,
   "title": "Don't worry, it's fine: tranquilo",
-  "es": "Tranquilo, no pasa nada. / Tranquila, no hay problema.",
-  "en": "Don't worry, it's fine. / Relax, no problem.",
+  "es": "Tranquilo, no pasa nada.",
+  "en": "Don't worry, it's fine. (to a man)",
+  "forms": [
+   {
+    "es": "Tranquilo, no pasa nada.",
+    "en": "Don't worry, it's fine. (to a man)"
+   },
+   {
+    "es": "Tranquila, no hay problema.",
+    "en": "Relax, it's no problem. (to a woman)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3550,8 +5342,22 @@
   "band": "A2",
   "priority": 144,
   "title": "How can I help you? (shop): ¿en qué le puedo servir?",
-  "es": "¿En qué le puedo servir? / ¿Le puedo colaborar en algo? / ¿Qué está buscando?",
-  "en": "How can I help you? / Can I help you with anything? / What are you looking for?",
+  "es": "¿En qué le puedo servir?",
+  "en": "How can I help you?",
+  "forms": [
+   {
+    "es": "¿En qué le puedo servir?",
+    "en": "How can I help you?"
+   },
+   {
+    "es": "¿Le puedo colaborar en algo?",
+    "en": "Can I help you with anything?"
+   },
+   {
+    "es": "¿Qué está buscando?",
+    "en": "What are you looking for?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3576,8 +5382,22 @@
   "band": "A2",
   "priority": 144,
   "title": "I'll take it: me lo llevo",
-  "es": "Me lo llevo. / Me la llevo. / Me los llevo.",
-  "en": "I'll take it. / I'll take them.",
+  "es": "Me lo llevo.",
+  "en": "I'll take it.",
+  "forms": [
+   {
+    "es": "Me lo llevo.",
+    "en": "I'll take it."
+   },
+   {
+    "es": "Me la llevo.",
+    "en": "I'll take it. (a feminine noun)"
+   },
+   {
+    "es": "Me los llevo.",
+    "en": "I'll take them."
+   }
+  ],
   "requires": [
    "g:direct-objects"
   ],
@@ -3630,8 +5450,18 @@
   "band": "A2",
   "priority": 145,
   "title": "How many instalments?: ¿a cuántas cuotas?",
-  "es": "—Crédito. —¿A cuántas cuotas? —A una.",
-  "en": "—Credit. —How many instalments? —One.",
+  "es": "¿A cuántas cuotas?",
+  "en": "How many instalments?",
+  "forms": [
+   {
+    "es": "¿A cuántas cuotas?",
+    "en": "How many instalments?"
+   },
+   {
+    "es": "Crédito.\n¿A cuántas cuotas?\nA una.",
+    "en": "Credit.\nHow many instalments?\nOne."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3655,8 +5485,22 @@
   "band": "A2",
   "priority": 145,
   "title": "Can I try it on?: ¿me lo puedo medir?",
-  "es": "¿Me lo puedo medir? / ¿Me la puedo probar? / ¿Dónde está el vestier?",
-  "en": "Can I try it on? / Where's the fitting room?",
+  "es": "¿Me lo puedo medir?",
+  "en": "Can I try it on?",
+  "forms": [
+   {
+    "es": "¿Me lo puedo medir?",
+    "en": "Can I try it on?"
+   },
+   {
+    "es": "¿Me la puedo probar?",
+    "en": "Can I try it on? (a feminine noun)"
+   },
+   {
+    "es": "¿Dónde está el vestier?",
+    "en": "Where's the fitting room?"
+   }
+  ],
   "requires": [
    "g:object-pronoun-position"
   ],
@@ -3683,8 +5527,22 @@
   "band": "A2",
   "priority": 145,
   "title": "Take care (goodbye): que esté bien",
-  "es": "Que esté muy bien. / Que estés bien. / Que le vaya bien.",
-  "en": "Take care. / Have a good one.",
+  "es": "Que esté muy bien.",
+  "en": "Take good care. (formal)",
+  "forms": [
+   {
+    "es": "Que esté muy bien.",
+    "en": "Take good care. (formal)"
+   },
+   {
+    "es": "Que estés bien.",
+    "en": "Take care. (to a friend)"
+   },
+   {
+    "es": "Que le vaya bien.",
+    "en": "All the best. (formal)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:subj-wishes",
@@ -3711,8 +5569,18 @@
   "band": "A2",
   "priority": 145,
   "title": "Card or cash?: ¿tarjeta o efectivo?",
-  "es": "¿Puedo pagar con tarjeta? / ¿Efectivo o tarjeta? — Con tarjeta, débito.",
-  "en": "Can I pay by card? / Cash or card? — Card, debit.",
+  "es": "¿Puedo pagar con tarjeta?",
+  "en": "Can I pay by card?",
+  "forms": [
+   {
+    "es": "¿Puedo pagar con tarjeta?",
+    "en": "Can I pay by card?"
+   },
+   {
+    "es": "¿Efectivo o tarjeta?\nCon tarjeta, débito.",
+    "en": "Cash or card?\nBy card, debit."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3735,8 +5603,22 @@
   "band": "A2",
   "priority": 150,
   "title": "Do you have it in another size?: ¿lo tiene en otra talla?",
-  "es": "¿Lo tiene en otra talla? / ¿Lo tiene en negro? / ¿Hay en M?",
-  "en": "Do you have it in another size? / in black? / in medium?",
+  "es": "¿Lo tiene en otra talla?",
+  "en": "Do you have it in another size?",
+  "forms": [
+   {
+    "es": "¿Lo tiene en otra talla?",
+    "en": "Do you have it in another size?"
+   },
+   {
+    "es": "¿Lo tiene en negro?",
+    "en": "Do you have it in black?"
+   },
+   {
+    "es": "¿Hay en M?",
+    "en": "Is there one in M?"
+   }
+  ],
   "requires": [
    "p:talla-numero"
   ],
@@ -3761,8 +5643,18 @@
   "band": "A2",
   "priority": 154,
   "title": "I'd love to: me encantaría",
-  "es": "Me encantaría. / Me encantaría, pero no puedo.",
-  "en": "I'd love to. / I'd love to, but I can't.",
+  "es": "Me encantaría.",
+  "en": "I'd love to.",
+  "forms": [
+   {
+    "es": "Me encantaría.",
+    "en": "I'd love to."
+   },
+   {
+    "es": "Me encantaría, pero no puedo.",
+    "en": "I'd love to, but I can't."
+   }
+  ],
   "requires": [
    "c:me-gustaria"
   ],
@@ -3789,8 +5681,22 @@
   "band": "A2",
   "priority": 154,
   "title": "Sounds good: me parece bien",
-  "es": "Me parece bien. / Me parece perfecto. / Listo.",
-  "en": "Sounds good. / Perfect. / OK.",
+  "es": "Me parece bien.",
+  "en": "Sounds good.",
+  "forms": [
+   {
+    "es": "Me parece bien.",
+    "en": "Sounds good."
+   },
+   {
+    "es": "Me parece perfecto.",
+    "en": "Sounds perfect."
+   },
+   {
+    "es": "Listo.",
+    "en": "OK."
+   }
+  ],
   "requires": [
    "g:parecer-quedar"
   ],
@@ -3818,8 +5724,22 @@
   "band": "A2",
   "priority": 154,
   "title": "Maybe another time: será otro día",
-  "es": "Será otro día. / Otro día, ¿listo? / Será para la próxima.",
-  "en": "Another time, then. / Some other day, OK? / Next time.",
+  "es": "Será otro día.",
+  "en": "Another time, then.",
+  "forms": [
+   {
+    "es": "Será otro día.",
+    "en": "Another time, then."
+   },
+   {
+    "es": "Otro día, ¿listo?",
+    "en": "Another day, OK?"
+   },
+   {
+    "es": "Será para la próxima.",
+    "en": "Next time, then."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:future-promises",
@@ -3845,8 +5765,18 @@
   "band": "A2",
   "priority": 155,
   "title": "Let's set it up: ¿cuadramos?",
-  "es": "¿Cuadramos para el sábado? / Cuadremos la hora.",
-  "en": "Shall we sort out Saturday? / Let's fix a time.",
+  "es": "¿Cuadramos para el sábado?",
+  "en": "Shall we arrange something for Saturday?",
+  "forms": [
+   {
+    "es": "¿Cuadramos para el sábado?",
+    "en": "Shall we arrange something for Saturday?"
+   },
+   {
+    "es": "Cuadremos la hora.",
+    "en": "Let's fix a time."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3866,8 +5796,8 @@
   "band": "A2",
   "priority": 155,
   "title": "OK, go for it: ¡dale!",
-  "es": "—¿Nos vemos a las ocho? —¡Dale!",
-  "en": "—Shall we meet at eight? —Sure!",
+  "es": "¿Nos vemos a las ocho?\n¡Dale!",
+  "en": "Shall we meet at eight?\nSure!",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3912,8 +5842,22 @@
   "band": "A2",
   "priority": 155,
   "title": "Let me know: me avisas",
-  "es": "Me avisas, ¿listo? / Yo te aviso. / Avísame cuando llegues.",
-  "en": "Let me know, OK? / I'll let you know. / Let me know when you get there.",
+  "es": "Me avisas, ¿listo?",
+  "en": "Let me know, OK?",
+  "forms": [
+   {
+    "es": "Me avisas, ¿listo?",
+    "en": "Let me know, OK?"
+   },
+   {
+    "es": "Yo te aviso.",
+    "en": "I'll let you know."
+   },
+   {
+    "es": "Avísame cuando llegues.",
+    "en": "Let me know when you get there."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:commands-with-pronouns",
@@ -3933,8 +5877,22 @@
   "band": "A2",
   "priority": 155,
   "title": "What's the plan?: ¿qué plan?",
-  "es": "¿Qué plan para hoy? / ¿Qué planes tienes? / Tengo un plan chévere.",
-  "en": "What's the plan for today? / What are your plans? / I've got something fun lined up.",
+  "es": "¿Qué plan para hoy?",
+  "en": "What's the plan for today?",
+  "forms": [
+   {
+    "es": "¿Qué plan para hoy?",
+    "en": "What's the plan for today?"
+   },
+   {
+    "es": "¿Qué planes tienes?",
+    "en": "What plans have you got?"
+   },
+   {
+    "es": "Tengo un plan chévere.",
+    "en": "I've got a cool plan."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3960,8 +5918,18 @@
   "band": "A2",
   "priority": 164,
   "title": "In the name of…: a nombre de",
-  "es": "Tengo una reserva a nombre de Matthew. / ¿A nombre de quién?",
-  "en": "I have a booking in the name of Matthew. / In whose name?",
+  "es": "Tengo una reserva a nombre de Matthew.",
+  "en": "I have a booking in Matthew's name.",
+  "forms": [
+   {
+    "es": "Tengo una reserva a nombre de Matthew.",
+    "en": "I have a booking in Matthew's name."
+   },
+   {
+    "es": "¿A nombre de quién?",
+    "en": "In whose name?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -3984,8 +5952,22 @@
   "band": "A2",
   "priority": 164,
   "title": "Have a good trip: ¡buen viaje!",
-  "es": "¡Buen viaje! / ¡Feliz viaje! / Que te vaya bien.",
-  "en": "Have a good trip! / Safe travels.",
+  "es": "¡Buen viaje!",
+  "en": "Have a good trip!",
+  "forms": [
+   {
+    "es": "¡Buen viaje!",
+    "en": "Have a good trip!"
+   },
+   {
+    "es": "¡Feliz viaje!",
+    "en": "Have a nice trip!"
+   },
+   {
+    "es": "Que te vaya bien.",
+    "en": "All the best. (to a friend)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4010,8 +5992,18 @@
   "band": "A2",
   "priority": 164,
   "title": "One way or return?: ¿ida y vuelta?",
-  "es": "¿Sencillo o ida y vuelta? / Un pasaje de ida y vuelta a Medellín.",
-  "en": "Single or return? / A return ticket to Medellín.",
+  "es": "¿Sencillo o ida y vuelta?",
+  "en": "Single or return?",
+  "forms": [
+   {
+    "es": "¿Sencillo o ida y vuelta?",
+    "en": "Single or return?"
+   },
+   {
+    "es": "Un pasaje de ida y vuelta a Medellín.",
+    "en": "A return ticket to Medellín."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4035,8 +6027,22 @@
   "band": "A2",
   "priority": 165,
   "title": "Can I help you with that?: ¿le ayudo?",
-  "es": "¿Le ayudo con la maleta? / ¿Te ayudo? / ¿Necesita ayuda?",
-  "en": "Can I help you with your suitcase? / Shall I help? / Do you need help?",
+  "es": "¿Le ayudo con la maleta?",
+  "en": "Can I help you with your suitcase? (formal)",
+  "forms": [
+   {
+    "es": "¿Le ayudo con la maleta?",
+    "en": "Can I help you with your suitcase? (formal)"
+   },
+   {
+    "es": "¿Te ayudo?",
+    "en": "Shall I help you? (to a friend)"
+   },
+   {
+    "es": "¿Necesita ayuda?",
+    "en": "Do you need help? (formal)"
+   }
+  ],
   "requires": [
    "g:indirect-objects"
   ],
@@ -4061,8 +6067,18 @@
   "band": "A2",
   "priority": 165,
   "title": "Do you want me to help?: ¿quieres que te ayude?",
-  "es": "¿Quieres que te ayude? / ¿Quiere que le pida un taxi?",
-  "en": "Do you want me to help you? / Would you like me to get you a taxi?",
+  "es": "¿Quieres que te ayude?",
+  "en": "Do you want me to help you?",
+  "forms": [
+   {
+    "es": "¿Quieres que te ayude?",
+    "en": "Do you want me to help you?"
+   },
+   {
+    "es": "¿Quiere que le pida un taxi?",
+    "en": "Would you like me to get you a taxi? (formal)"
+   }
+  ],
   "requires": [
    "g:indirect-objects"
   ],
@@ -4088,8 +6104,18 @@
   "band": "A2",
   "priority": 165,
   "title": "I'm here (safely): ya llegué",
-  "es": "Ya llegué. / Llegamos bien, gracias a Dios.",
-  "en": "I've arrived. / We got here fine, thank God.",
+  "es": "Ya llegué.",
+  "en": "I've arrived.",
+  "forms": [
+   {
+    "es": "Ya llegué.",
+    "en": "I've arrived."
+   },
+   {
+    "es": "Llegamos bien, gracias a Dios.",
+    "en": "We got here safely, thank God."
+   }
+  ],
   "requires": [
    "g:preterite-spelling-stem"
   ],
@@ -4116,8 +6142,22 @@
   "band": "A2",
   "priority": 174,
   "title": "Hello? (phone): ¿aló?",
-  "es": "¿Aló? / ¿Sí? / ¿Buenas?",
+  "es": "¿Aló?",
   "en": "Hello?",
+  "forms": [
+   {
+    "es": "¿Aló?",
+    "en": "Hello?"
+   },
+   {
+    "es": "¿Sí?",
+    "en": "Yes?"
+   },
+   {
+    "es": "¿Buenas?",
+    "en": "Hi?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4160,8 +6200,18 @@
   "band": "A2",
   "priority": 174,
   "title": "Speaking: sí, con ella",
-  "es": "—¿Está Valentina? —Sí, con ella. / Sí, con él.",
-  "en": "—Is Valentina there? —Speaking.",
+  "es": "¿Está Valentina?\nSí, con ella.",
+  "en": "Is Valentina there?\nYes, speaking.",
+  "forms": [
+   {
+    "es": "¿Está Valentina?\nSí, con ella.",
+    "en": "Is Valentina there?\nYes, speaking."
+   },
+   {
+    "es": "¿Está Andrés?\nSí, con él.",
+    "en": "Is Andrés there?\nYes, speaking."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4186,8 +6236,18 @@
   "band": "A2",
   "priority": 174,
   "title": "Who's calling?: ¿de parte de quién?",
-  "es": "¿De parte de quién? — De parte de Matthew.",
-  "en": "Who's calling? — It's Matthew.",
+  "es": "¿De parte de quién?",
+  "en": "Who's calling?",
+  "forms": [
+   {
+    "es": "¿De parte de quién?",
+    "en": "Who's calling?"
+   },
+   {
+    "es": "¿De parte de quién?\nDe parte de Matthew.",
+    "en": "Who's calling?\nIt's Matthew."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4250,8 +6310,22 @@
   "band": "A2",
   "priority": 175,
   "title": "Can I take a message?: ¿quiere dejarle un mensaje?",
-  "es": "¿Quiere dejarle un mensaje? / ¿Le dejo razón? / En este momento no puede pasar.",
-  "en": "Would you like to leave a message? / Shall I pass on a message? / She can't come to the phone right now.",
+  "es": "¿Quiere dejarle un mensaje?",
+  "en": "Would you like to leave her a message?",
+  "forms": [
+   {
+    "es": "¿Quiere dejarle un mensaje?",
+    "en": "Would you like to leave her a message?"
+   },
+   {
+    "es": "¿Le dejo razón?",
+    "en": "Shall I pass on a message?"
+   },
+   {
+    "es": "En este momento no puede pasar.",
+    "en": "She can't come to the phone right now."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4275,8 +6349,18 @@
   "band": "A2",
   "priority": 175,
   "title": "Hiring: se necesita, se busca",
-  "es": "Se necesita mesero. / Se busca vendedora con experiencia.",
-  "en": "Waiter wanted. / Experienced saleswoman wanted.",
+  "es": "Se necesita mesero.",
+  "en": "Waiter needed.",
+  "forms": [
+   {
+    "es": "Se necesita mesero.",
+    "en": "Waiter needed."
+   },
+   {
+    "es": "Se busca vendedora con experiencia.",
+    "en": "Experienced saleswoman wanted."
+   }
+  ],
   "requires": [
    "g:se-impersonal"
   ],
@@ -4303,8 +6387,22 @@
   "band": "A2",
   "priority": 175,
   "title": "May I come in?: ¿se puede?",
-  "es": "¿Se puede? / ¿Se puede pasar? / ¿Se puede pagar con tarjeta?",
-  "en": "May I (come in)? / Can I go through? / Can you pay by card?",
+  "es": "¿Se puede?",
+  "en": "May I?",
+  "forms": [
+   {
+    "es": "¿Se puede?",
+    "en": "May I?"
+   },
+   {
+    "es": "¿Se puede pasar?",
+    "en": "Is it OK to come in?"
+   },
+   {
+    "es": "¿Se puede pagar con tarjeta?",
+    "en": "Can you pay by card?"
+   }
+  ],
   "requires": [
    "g:se-impersonal"
   ],
@@ -4328,8 +6426,22 @@
   "band": "A2",
   "priority": 175,
   "title": "Just a moment: un momentico",
-  "es": "Un momentico, por favor. / Ya se lo paso. / Espere un momento.",
-  "en": "Just a moment, please. / I'll put you through. / Hold on a moment.",
+  "es": "Un momentico, por favor.",
+  "en": "Just a moment, please.",
+  "forms": [
+   {
+    "es": "Un momentico, por favor.",
+    "en": "Just a moment, please."
+   },
+   {
+    "es": "Ya se lo paso.",
+    "en": "I'll put you through now."
+   },
+   {
+    "es": "Espere un momento.",
+    "en": "Hold on a moment. (formal)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:diminutives",
@@ -4354,8 +6466,18 @@
   "band": "A2",
   "priority": 184,
   "title": "Maybe: a lo mejor",
-  "es": "A lo mejor viene mañana. / Quizás.",
-  "en": "Maybe she'll come tomorrow. / Perhaps.",
+  "es": "A lo mejor viene mañana.",
+  "en": "Maybe she'll come tomorrow.",
+  "forms": [
+   {
+    "es": "A lo mejor viene mañana.",
+    "en": "Maybe she'll come tomorrow."
+   },
+   {
+    "es": "Quizás.",
+    "en": "Perhaps."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:quizas-a-lo-mejor",
@@ -4380,8 +6502,18 @@
   "band": "A2",
   "priority": 184,
   "title": "Could be: puede ser",
-  "es": "—Va a llover. —Puede ser. / Es probable.",
-  "en": "—It's going to rain. —Could be. / Probably.",
+  "es": "Va a llover.\nPuede ser.",
+  "en": "It's going to rain.\nCould be.",
+  "forms": [
+   {
+    "es": "Va a llover.\nPuede ser.",
+    "en": "It's going to rain.\nCould be."
+   },
+   {
+    "es": "Es probable.",
+    "en": "It's likely."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:subj-doubt",
@@ -4405,8 +6537,18 @@
   "band": "A2",
   "priority": 184,
   "title": "I suppose so: supongo que sí",
-  "es": "Supongo que sí. / Supongo que está en la oficina.",
-  "en": "I suppose so. / I suppose she's at the office.",
+  "es": "Supongo que sí.",
+  "en": "I suppose so.",
+  "forms": [
+   {
+    "es": "Supongo que sí.",
+    "en": "I suppose so."
+   },
+   {
+    "es": "Supongo que está en la oficina.",
+    "en": "I suppose she's at the office."
+   }
+  ],
   "requires": [
    "g:that-clauses"
   ],
@@ -4432,8 +6574,18 @@
   "band": "A2",
   "priority": 185,
   "title": "Maybe (Colombian): de pronto",
-  "es": "De pronto llueve, lleva paraguas. / De pronto nos vemos allá.",
-  "en": "It might rain, take an umbrella. / Maybe we'll see each other there.",
+  "es": "De pronto llueve, lleva paraguas.",
+  "en": "It might rain, take an umbrella.",
+  "forms": [
+   {
+    "es": "De pronto llueve, lleva paraguas.",
+    "en": "It might rain, take an umbrella."
+   },
+   {
+    "es": "De pronto nos vemos allá.",
+    "en": "Maybe we'll see each other there."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4456,8 +6608,18 @@
   "band": "A2",
   "priority": 185,
   "title": "The best thing is to…: lo mejor es…",
-  "es": "Lo mejor es salir temprano. / Lo mejor es descansar.",
-  "en": "The best thing is to leave early. / The best thing is to rest.",
+  "es": "Lo mejor es salir temprano.",
+  "en": "The best thing is to leave early.",
+  "forms": [
+   {
+    "es": "Lo mejor es salir temprano.",
+    "en": "The best thing is to leave early."
+   },
+   {
+    "es": "Lo mejor es descansar.",
+    "en": "The best thing is to rest."
+   }
+  ],
   "requires": [
    "g:verb-infinitive"
   ],
@@ -4479,8 +6641,18 @@
   "band": "A2",
   "priority": 185,
   "title": "I promise: te lo prometo",
-  "es": "Te lo prometo. / Mañana te llamo, en serio.",
-  "en": "I promise. / I'll call you tomorrow, honestly.",
+  "es": "Te lo prometo.",
+  "en": "I promise.",
+  "forms": [
+   {
+    "es": "Te lo prometo.",
+    "en": "I promise."
+   },
+   {
+    "es": "Mañana te llamo, en serio.",
+    "en": "I'll call you tomorrow, seriously."
+   }
+  ],
   "requires": [
    "g:double-pronouns"
   ],
@@ -4524,8 +6696,18 @@
   "band": "A2",
   "priority": 191,
   "title": "If I were you…: yo que tú…",
-  "es": "Yo que tú, iría en bus. / Yo en tu lugar, no compraría eso.",
-  "en": "If I were you, I'd go by bus. / In your shoes I wouldn't buy that.",
+  "es": "Yo que tú, iría en bus.",
+  "en": "If I were you, I'd go by bus.",
+  "forms": [
+   {
+    "es": "Yo que tú, iría en bus.",
+    "en": "If I were you, I'd go by bus."
+   },
+   {
+    "es": "Yo en tu lugar, no compraría eso.",
+    "en": "In your shoes, I wouldn't buy that."
+   }
+  ],
   "requires": [
    "g:conditional"
   ],
@@ -4546,8 +6728,22 @@
   "band": "A2",
   "priority": 194,
   "title": "Can you do me a favour?: ¿me haces un favor?",
-  "es": "¿Me haces un favor? / ¿Me hace un favor? / ¿Te puedo pedir un favor?",
-  "en": "Can you do me a favour? / Can I ask you a favour?",
+  "es": "¿Me haces un favor?",
+  "en": "Can you do me a favour?",
+  "forms": [
+   {
+    "es": "¿Me haces un favor?",
+    "en": "Can you do me a favour?"
+   },
+   {
+    "es": "¿Me hace un favor?",
+    "en": "Can you do me a favour? (formal)"
+   },
+   {
+    "es": "¿Te puedo pedir un favor?",
+    "en": "Can I ask you a favour?"
+   }
+  ],
   "requires": [
    "g:indirect-objects"
   ],
@@ -4574,8 +6770,22 @@
   "band": "A2",
   "priority": 194,
   "title": "Don't worry: no te preocupes",
-  "es": "No te preocupes. / No se preocupe. / No hay problema.",
-  "en": "Don't worry. / No problem.",
+  "es": "No te preocupes.",
+  "en": "Don't worry.",
+  "forms": [
+   {
+    "es": "No te preocupes.",
+    "en": "Don't worry."
+   },
+   {
+    "es": "No se preocupe.",
+    "en": "Don't worry. (formal)"
+   },
+   {
+    "es": "No hay problema.",
+    "en": "No problem."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4600,8 +6810,22 @@
   "band": "A2",
   "priority": 194,
   "title": "No problem: sin problema",
-  "es": "Sin problema. / Claro que sí. / Con gusto.",
-  "en": "No problem. / Of course. / Happy to.",
+  "es": "Sin problema.",
+  "en": "No problem.",
+  "forms": [
+   {
+    "es": "Sin problema.",
+    "en": "No problem."
+   },
+   {
+    "es": "Claro que sí.",
+    "en": "Of course."
+   },
+   {
+    "es": "Con gusto.",
+    "en": "Gladly."
+   }
+  ],
   "requires": [
    "c:claro-listo"
   ],
@@ -4627,8 +6851,8 @@
   "band": "A2",
   "priority": 195,
   "title": "Well, I don't know…: bueno, no sé…",
-  "es": "—¿Me ayudas a trastear el sábado? —Bueno, no sé…",
-  "en": "—Can you help me move on Saturday? —Well, I don't know…",
+  "es": "¿Me ayudas a trastear el sábado?\nBueno, no sé.",
+  "en": "Can you help me move house on Saturday?\nWell, I don't know.",
   "requires": [
    "c:no-se"
   ],
@@ -4654,8 +6878,22 @@
   "band": "A2",
   "priority": 195,
   "title": "Please would you…: hágame el favor",
-  "es": "Hágame el favor y me espera. / Hágame el favor de cerrar la puerta. / Hazme un favor: llama a Vale.",
-  "en": "Would you please wait for me. / Please close the door. / Do me a favour: call Vale.",
+  "es": "Hágame el favor y me espera.",
+  "en": "Please wait for me. (formal)",
+  "forms": [
+   {
+    "es": "Hágame el favor y me espera.",
+    "en": "Please wait for me. (formal)"
+   },
+   {
+    "es": "Hágame el favor de cerrar la puerta.",
+    "en": "Please close the door. (formal)"
+   },
+   {
+    "es": "Hazme un favor: llama a Vale.",
+    "en": "Do me a favour: call Vale."
+   }
+  ],
   "requires": [
    "g:commands-usted"
   ],
@@ -4680,8 +6918,18 @@
   "band": "A2",
   "priority": 195,
   "title": "Sorry to bother you, but…: qué pena molestarlo",
-  "es": "Qué pena molestarlo, pero… / Qué pena con usted, ¿me podría…?",
-  "en": "Sorry to bother you, but… / I'm so sorry, could you…?",
+  "es": "Qué pena molestarlo, pero ¿sabe dónde queda el banco?",
+  "en": "Sorry to bother you, but do you know where the bank is? (to a man)",
+  "forms": [
+   {
+    "es": "Qué pena molestarlo, pero ¿sabe dónde queda el banco?",
+    "en": "Sorry to bother you, but do you know where the bank is? (to a man)"
+   },
+   {
+    "es": "Qué pena con usted, ¿me podría ayudar con la maleta?",
+    "en": "I'm so sorry, could you help me with my suitcase? (formal)"
+   }
+  ],
   "requires": [
    "c:que-pena"
   ],
@@ -4704,8 +6952,22 @@
   "band": "A2",
   "priority": 204,
   "title": "Happy birthday: ¡feliz cumpleaños!",
-  "es": "¡Feliz cumpleaños! / ¡Feliz cumple! / ¡Que cumplas muchos más!",
-  "en": "Happy birthday! / Many happy returns!",
+  "es": "¡Feliz cumpleaños!",
+  "en": "Happy birthday!",
+  "forms": [
+   {
+    "es": "¡Feliz cumpleaños!",
+    "en": "Happy birthday!"
+   },
+   {
+    "es": "¡Feliz cumple!",
+    "en": "Happy birthday! (casual)"
+   },
+   {
+    "es": "¡Que cumplas muchos más!",
+    "en": "Here's to many more!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:subj-wishes",
@@ -4730,8 +6992,18 @@
   "band": "A2",
   "priority": 204,
   "title": "Have fun: ¡que la pases bien!",
-  "es": "¡Que la pases bien! / ¡Que se diviertan!",
-  "en": "Have fun! / Enjoy yourselves!",
+  "es": "¡Que la pases bien!",
+  "en": "Have fun!",
+  "forms": [
+   {
+    "es": "¡Que la pases bien!",
+    "en": "Have fun!"
+   },
+   {
+    "es": "¡Que se diviertan!",
+    "en": "Enjoy yourselves! (you all)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:subj-wishes",
@@ -4757,8 +7029,18 @@
   "band": "A2",
   "priority": 204,
   "title": "All the best: ¡que te vaya bien!",
-  "es": "¡Que te vaya bien! / ¡Que le vaya muy bien!",
-  "en": "All the best! / Good luck!",
+  "es": "¡Que te vaya bien!",
+  "en": "All the best!",
+  "forms": [
+   {
+    "es": "¡Que te vaya bien!",
+    "en": "All the best!"
+   },
+   {
+    "es": "¡Que le vaya muy bien!",
+    "en": "All the very best! (formal)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:subj-wishes",
@@ -4783,8 +7065,26 @@
   "band": "A2",
   "priority": 205,
   "title": "Season's greetings: ¡feliz Navidad!",
-  "es": "¡Feliz Navidad! / ¡Feliz año! / ¡Próspero año nuevo! / ¡Felices fiestas!",
-  "en": "Merry Christmas! / Happy New Year! / Happy holidays!",
+  "es": "¡Feliz Navidad!",
+  "en": "Merry Christmas!",
+  "forms": [
+   {
+    "es": "¡Feliz Navidad!",
+    "en": "Merry Christmas!"
+   },
+   {
+    "es": "¡Feliz año!",
+    "en": "Happy New Year!"
+   },
+   {
+    "es": "¡Próspero año nuevo!",
+    "en": "Have a prosperous New Year!"
+   },
+   {
+    "es": "¡Felices fiestas!",
+    "en": "Happy holidays!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4808,8 +7108,18 @@
   "band": "A2",
   "priority": 205,
   "title": "I'm so glad: me alegro mucho",
-  "es": "¡Me alegro mucho! / Me alegro por ti.",
-  "en": "I'm really glad! / I'm happy for you.",
+  "es": "¡Me alegro mucho!",
+  "en": "I'm really glad!",
+  "forms": [
+   {
+    "es": "¡Me alegro mucho!",
+    "en": "I'm really glad!"
+   },
+   {
+    "es": "Me alegro por ti.",
+    "en": "I'm happy for you."
+   }
+  ],
   "requires": [
    "g:reflexive-routine"
   ],
@@ -4836,8 +7146,18 @@
   "band": "A2",
   "priority": 205,
   "title": "Good luck!: ¡mucha suerte!",
-  "es": "¡Mucha suerte! / ¡Éxitos!",
-  "en": "Good luck! / All the best!",
+  "es": "¡Mucha suerte!",
+  "en": "Good luck!",
+  "forms": [
+   {
+    "es": "¡Mucha suerte!",
+    "en": "Good luck!"
+   },
+   {
+    "es": "¡Éxitos!",
+    "en": "Every success!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4862,8 +7182,22 @@
   "band": "A2",
   "priority": 205,
   "title": "My condolences: mi sentido pésame",
-  "es": "Lo siento mucho. / Mi más sentido pésame. / Te acompaño en este momento.",
-  "en": "I'm so sorry. / My deepest sympathy. / I'm thinking of you.",
+  "es": "Lo siento mucho.",
+  "en": "I'm so sorry.",
+  "forms": [
+   {
+    "es": "Lo siento mucho.",
+    "en": "I'm so sorry."
+   },
+   {
+    "es": "Mi más sentido pésame.",
+    "en": "My deepest condolences."
+   },
+   {
+    "es": "Te acompaño en este momento.",
+    "en": "I'm here for you at this time."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4888,8 +7222,22 @@
   "band": "A2",
   "priority": 206,
   "title": "Have a good day: ¡que tengas un buen día!",
-  "es": "¡Que tengas un buen día! / ¡Feliz día! / ¡Buen fin de semana!",
-  "en": "Have a good day! / Have a nice weekend!",
+  "es": "¡Que tengas un buen día!",
+  "en": "Have a good day!",
+  "forms": [
+   {
+    "es": "¡Que tengas un buen día!",
+    "en": "Have a good day!"
+   },
+   {
+    "es": "¡Feliz día!",
+    "en": "Have a nice day!"
+   },
+   {
+    "es": "¡Buen fin de semana!",
+    "en": "Have a good weekend!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -4914,8 +7262,22 @@
   "band": "A2",
   "priority": 214,
   "title": "It doesn't work: no funciona, no sirve",
-  "es": "El celular no sirve. / La ducha no funciona. / Se dañó la nevera.",
-  "en": "My phone's broken. / The shower doesn't work. / The fridge has broken down.",
+  "es": "El celular no sirve.",
+  "en": "The phone doesn't work.",
+  "forms": [
+   {
+    "es": "El celular no sirve.",
+    "en": "The phone doesn't work."
+   },
+   {
+    "es": "La ducha no funciona.",
+    "en": "The shower doesn't work."
+   },
+   {
+    "es": "Se dañó la nevera.",
+    "en": "The fridge has broken down."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:se-accidental",
@@ -4935,8 +7297,22 @@
   "band": "A2",
   "priority": 214,
   "title": "What do I need to do?: ¿qué tengo que hacer?",
-  "es": "¿Qué tengo que hacer? / ¿Qué papeles necesito? / ¿Dónde tengo que firmar?",
-  "en": "What do I have to do? / What documents do I need? / Where do I sign?",
+  "es": "¿Qué tengo que hacer?",
+  "en": "What do I have to do?",
+  "forms": [
+   {
+    "es": "¿Qué tengo que hacer?",
+    "en": "What do I have to do?"
+   },
+   {
+    "es": "¿Qué papeles necesito?",
+    "en": "What documents do I need?"
+   },
+   {
+    "es": "¿Dónde tengo que firmar?",
+    "en": "Where do I have to sign?"
+   }
+  ],
   "requires": [
    "c:tengo-que"
   ],
@@ -4956,8 +7332,18 @@
   "band": "A2",
   "priority": 214,
   "title": "I wanted to ask…: quería…",
-  "es": "Quería preguntar por mi pedido. / Quería cambiar esto, es que no funciona.",
-  "en": "I'd like to ask about my order. / I'd like to change this; it doesn't work.",
+  "es": "Quería preguntar por mi pedido.",
+  "en": "I wanted to ask about my order.",
+  "forms": [
+   {
+    "es": "Quería preguntar por mi pedido.",
+    "en": "I wanted to ask about my order."
+   },
+   {
+    "es": "Quería cambiar esto, es que no funciona.",
+    "en": "I wanted to exchange this; it's just that it doesn't work."
+   }
+  ],
   "requires": [
    "g:imperfect-states"
   ],
@@ -4980,8 +7366,18 @@
   "band": "A2",
   "priority": 215,
   "title": "Could you help me with…?: ¿me colabora?",
-  "es": "¿Me colabora con el número de cédula? / ¿Me colabora con una firma aquí?",
-  "en": "Could you give me your ID number? / Could you sign here for me?",
+  "es": "¿Me colabora con el número de cédula?",
+  "en": "Could you give me your ID number?",
+  "forms": [
+   {
+    "es": "¿Me colabora con el número de cédula?",
+    "en": "Could you give me your ID number?"
+   },
+   {
+    "es": "¿Me colabora con una firma aquí?",
+    "en": "Could you sign here for me?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5000,8 +7396,22 @@
   "band": "A2",
   "priority": 215,
   "title": "I have to / It's my turn: me toca",
-  "es": "Me toca esperar. / Toca volver mañana. / ¿A quién le toca?",
-  "en": "I'll have to wait. / We'll have to come back tomorrow. / Whose turn is it?",
+  "es": "Me toca esperar.",
+  "en": "I have to wait.",
+  "forms": [
+   {
+    "es": "Me toca esperar.",
+    "en": "I have to wait."
+   },
+   {
+    "es": "Toca volver mañana.",
+    "en": "We have to come back tomorrow."
+   },
+   {
+    "es": "¿A quién le toca?",
+    "en": "Whose turn is it?"
+   }
+  ],
   "requires": [
    "g:indirect-objects"
   ],
@@ -5023,8 +7433,18 @@
   "band": "A2",
   "priority": 224,
   "title": "The good thing is…: lo bueno es que…",
-  "es": "Lo bueno es que queda cerca. / Lo malo es que es caro.",
-  "en": "The good thing is it's close. / The bad thing is it's expensive.",
+  "es": "Lo bueno es que queda cerca.",
+  "en": "The good thing is it's close by.",
+  "forms": [
+   {
+    "es": "Lo bueno es que queda cerca.",
+    "en": "The good thing is it's close by."
+   },
+   {
+    "es": "Lo malo es que es caro.",
+    "en": "The bad thing is it's expensive."
+   }
+  ],
   "requires": [
    "g:that-clauses"
   ],
@@ -5045,8 +7465,18 @@
   "band": "A2",
   "priority": 224,
   "title": "I'm not convinced: no me convence",
-  "es": "No me convence. / No me termina de convencer.",
-  "en": "I'm not convinced. / I'm not totally sold on it.",
+  "es": "No me convence.",
+  "en": "I'm not convinced.",
+  "forms": [
+   {
+    "es": "No me convence.",
+    "en": "I'm not convinced."
+   },
+   {
+    "es": "No me termina de convencer.",
+    "en": "I'm not fully convinced."
+   }
+  ],
   "requires": [
    "g:direct-objects"
   ],
@@ -5074,8 +7504,18 @@
   "band": "A2",
   "priority": 224,
   "title": "On the one hand… on the other: por un lado… por otro",
-  "es": "Por un lado, es más barato; por otro (lado), queda lejos.",
-  "en": "On the one hand it's cheaper; on the other, it's far away.",
+  "es": "Por un lado, es más barato; por otro, queda lejos.",
+  "en": "On the one hand, it's cheaper; on the other, it's far away.",
+  "forms": [
+   {
+    "es": "Por un lado, es más barato; por otro, queda lejos.",
+    "en": "On the one hand, it's cheaper; on the other, it's far away."
+   },
+   {
+    "es": "Por un lado, es más barato; por otro lado, queda lejos.",
+    "en": "On the one hand, it's cheaper; on the other hand, it's far away."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:discourse-structure",
@@ -5100,8 +7540,18 @@
   "band": "A2",
   "priority": 225,
   "title": "The plan is to…: la idea es…",
-  "es": "La idea es mudarnos en enero. / La idea es ahorrar.",
-  "en": "The plan is to move in January. / The idea is to save money.",
+  "es": "La idea es mudarnos en enero.",
+  "en": "The idea is to move in January.",
+  "forms": [
+   {
+    "es": "La idea es mudarnos en enero.",
+    "en": "The idea is to move in January."
+   },
+   {
+    "es": "La idea es ahorrar.",
+    "en": "The idea is to save money."
+   }
+  ],
   "requires": [
    "g:verb-infinitive"
   ],
@@ -5122,8 +7572,18 @@
   "band": "A2",
   "priority": 225,
   "title": "Not at all!: ¡qué va!",
-  "es": "—¿Estás cansado? —¡Qué va! / ¡Nada que ver!",
-  "en": "—Are you tired? —Not at all! / —Nothing of the sort!",
+  "es": "¿Estás cansado?\n¡Qué va!",
+  "en": "Are you tired?\nNot at all!",
+  "forms": [
+   {
+    "es": "¿Estás cansado?\n¡Qué va!",
+    "en": "Are you tired?\nNot at all!"
+   },
+   {
+    "es": "¡Nada que ver!",
+    "en": "Nothing of the sort!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:emphatic-structures",
@@ -5154,8 +7614,18 @@
   "band": "A2",
   "priority": 227,
   "title": "Anyway, still: igual",
-  "es": "Es caro, pero igual lo voy a tomar. / Igual, gracias.",
-  "en": "It's expensive, but I'm going to take it anyway. / Thanks anyway.",
+  "es": "Es caro, pero igual lo voy a tomar.",
+  "en": "It's expensive, but I'm going to take it anyway.",
+  "forms": [
+   {
+    "es": "Es caro, pero igual lo voy a tomar.",
+    "en": "It's expensive, but I'm going to take it anyway."
+   },
+   {
+    "es": "Igual, gracias.",
+    "en": "Thanks anyway."
+   }
+  ],
   "requires": [
    "g:aunque-indicative"
   ],
@@ -5176,8 +7646,22 @@
   "band": "A2",
   "priority": 234,
   "title": "The weather's lovely there: tiene buen clima",
-  "es": "Medellín tiene muy buen clima. / Es tierra caliente. / Allá hace un clima delicioso.",
-  "en": "Medellín has great weather. / It's hot lowland country. / The weather there is lovely.",
+  "es": "Medellín tiene muy buen clima.",
+  "en": "Medellín has very good weather.",
+  "forms": [
+   {
+    "es": "Medellín tiene muy buen clima.",
+    "en": "Medellín has very good weather."
+   },
+   {
+    "es": "Es tierra caliente.",
+    "en": "It's a hot lowland area."
+   },
+   {
+    "es": "Allá hace un clima delicioso.",
+    "en": "The weather there is lovely."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5201,8 +7685,18 @@
   "band": "A2",
   "priority": 234,
   "title": "A really kind person: es un pan de Dios",
-  "es": "Es un pan de Dios. / Es un amor.",
-  "en": "He's a real sweetheart. / She's lovely.",
+  "es": "Es un pan de Dios.",
+  "en": "He's a real sweetheart.",
+  "forms": [
+   {
+    "es": "Es un pan de Dios.",
+    "en": "He's a real sweetheart."
+   },
+   {
+    "es": "Es un amor.",
+    "en": "She's lovely."
+   }
+  ],
   "requires": [
    "g:ser-identity"
   ],
@@ -5229,8 +7723,18 @@
   "band": "A2",
   "priority": 234,
   "title": "According to…: según",
-  "es": "Según Vale, el clima allá es delicioso. / Según el pronóstico, va a llover.",
-  "en": "According to Vale, the weather there is lovely. / According to the forecast, it's going to rain.",
+  "es": "Según Vale, el clima allá es delicioso.",
+  "en": "According to Vale, the weather there is lovely.",
+  "forms": [
+   {
+    "es": "Según Vale, el clima allá es delicioso.",
+    "en": "According to Vale, the weather there is lovely."
+   },
+   {
+    "es": "Según el pronóstico, va a llover.",
+    "en": "According to the forecast, it's going to rain."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5280,8 +7784,18 @@
   "band": "A2",
   "priority": 235,
   "title": "It's an hour away: queda a una hora",
-  "es": "Queda a una hora de Medellín. / Queda a diez minutos caminando.",
-  "en": "It's an hour from Medellín. / It's ten minutes' walk.",
+  "es": "Queda a una hora de Medellín.",
+  "en": "It's an hour from Medellín.",
+  "forms": [
+   {
+    "es": "Queda a una hora de Medellín.",
+    "en": "It's an hour from Medellín."
+   },
+   {
+    "es": "Queda a diez minutos caminando.",
+    "en": "It's ten minutes' walk away."
+   }
+  ],
   "requires": [
    "p:quedar-cerca"
   ],
@@ -5303,8 +7817,18 @@
   "band": "A2",
   "priority": 241,
   "title": "She told me that…: me contó que",
-  "es": "Me contó que se iba a vivir a Medellín. / Me dijo que estaba cansado.",
-  "en": "She told me she was moving to Medellín. / He told me he was tired.",
+  "es": "Me contó que se iba a vivir a Medellín.",
+  "en": "She told me she was moving to Medellín.",
+  "forms": [
+   {
+    "es": "Me contó que se iba a vivir a Medellín.",
+    "en": "She told me she was moving to Medellín."
+   },
+   {
+    "es": "Me dijo que estaba cansado.",
+    "en": "He told me he was tired."
+   }
+  ],
   "requires": [
    "g:reported-past-basic"
   ],
@@ -5330,8 +7854,22 @@
   "band": "A2",
   "priority": 244,
   "title": "No way!: ¡no me digas!",
-  "es": "¡No me digas! / ¡No puede ser! / ¡Mentiras!",
-  "en": "You're kidding! / It can't be! / No way!",
+  "es": "¡No me digas!",
+  "en": "You don't say!",
+  "forms": [
+   {
+    "es": "¡No me digas!",
+    "en": "You don't say!"
+   },
+   {
+    "es": "¡No puede ser!",
+    "en": "It can't be!"
+   },
+   {
+    "es": "¡Mentiras!",
+    "en": "No way!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5364,8 +7902,18 @@
   "band": "A2",
   "priority": 244,
   "title": "It turns out that…: resulta que",
-  "es": "Resulta que el bus nunca llegó. / Y resulta que era su hermana.",
-  "en": "It turns out the bus never came. / And it turned out she was his sister.",
+  "es": "Resulta que el bus nunca llegó.",
+  "en": "It turns out the bus never came.",
+  "forms": [
+   {
+    "es": "Resulta que el bus nunca llegó.",
+    "en": "It turns out the bus never came."
+   },
+   {
+    "es": "Y resulta que era su hermana.",
+    "en": "And it turned out she was his sister."
+   }
+  ],
   "requires": [
    "g:that-clauses"
   ],
@@ -5397,8 +7945,18 @@
   "band": "A2",
   "priority": 244,
   "title": "Guess what happened to me?: ¿sabes qué me pasó?",
-  "es": "¿Sabes qué me pasó? / ¿Te cuento una cosa? — Sí, claro, cuéntame.",
-  "en": "Guess what happened to me? / Can I tell you something? — Sure, go on.",
+  "es": "¿Sabes qué me pasó?",
+  "en": "Guess what happened to me?",
+  "forms": [
+   {
+    "es": "¿Sabes qué me pasó?",
+    "en": "Guess what happened to me?"
+   },
+   {
+    "es": "¿Te cuento una cosa?\nSí, claro, cuéntame.",
+    "en": "Can I tell you something?\nYes, of course, tell me."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5421,8 +7979,18 @@
   "band": "A2",
   "priority": 245,
   "title": "Imagine!: ¡imagínate!",
-  "es": "¡Imagínate! / ¡Imagínese!",
-  "en": "Can you imagine! / Just imagine!",
+  "es": "¡Imagínate!",
+  "en": "Just imagine!",
+  "forms": [
+   {
+    "es": "¡Imagínate!",
+    "en": "Just imagine!"
+   },
+   {
+    "es": "¡Imagínese!",
+    "en": "Just imagine! (formal)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5444,8 +8012,18 @@
   "band": "A2",
   "priority": 245,
   "title": "What bad luck!: ¡qué de malas!",
-  "es": "¡Qué mala suerte! / ¡Qué de malas!",
-  "en": "What bad luck!",
+  "es": "¡Qué de malas!",
+  "en": "How unlucky!",
+  "forms": [
+   {
+    "es": "¡Qué de malas!",
+    "en": "How unlucky!"
+   },
+   {
+    "es": "¡Qué mala suerte!",
+    "en": "What bad luck!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5465,8 +8043,18 @@
   "band": "A2",
   "priority": 245,
   "title": "How embarrassing!: ¡qué oso!",
-  "es": "¡Qué oso! / ¡Qué pena!",
+  "es": "¡Qué oso!",
   "en": "How embarrassing!",
+  "forms": [
+   {
+    "es": "¡Qué oso!",
+    "en": "How embarrassing!"
+   },
+   {
+    "es": "¡Qué pena!",
+    "en": "So embarrassing!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5524,8 +8112,22 @@
   "band": "A2",
   "priority": 254,
   "title": "Email opening: cordial saludo",
-  "es": "Cordial saludo. / Buenos días, señora Rojas: / Estimado señor Pérez:",
-  "en": "Dear… (formal opening). / Good morning, Mrs Rojas. / Dear Mr Pérez,",
+  "es": "Cordial saludo.",
+  "en": "Cordial greetings.",
+  "forms": [
+   {
+    "es": "Cordial saludo.",
+    "en": "Cordial greetings."
+   },
+   {
+    "es": "Buenos días, señora Rojas:",
+    "en": "Good morning, Mrs Rojas,"
+   },
+   {
+    "es": "Estimado señor Pérez:",
+    "en": "Dear Mr Pérez,"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:written-register-a2",
@@ -5547,8 +8149,18 @@
   "band": "A2",
   "priority": 254,
   "title": "Thanks in advance: gracias de antemano",
-  "es": "Gracias de antemano. / Muchas gracias por su atención.",
-  "en": "Thanks in advance. / Thank you for your attention.",
+  "es": "Gracias de antemano.",
+  "en": "Thanks in advance.",
+  "forms": [
+   {
+    "es": "Gracias de antemano.",
+    "en": "Thanks in advance."
+   },
+   {
+    "es": "Muchas gracias por su atención.",
+    "en": "Thank you very much for your attention."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5577,8 +8189,22 @@
   "band": "A2",
   "priority": 254,
   "title": "I look forward to hearing from you: quedo atento",
-  "es": "Quedo atento a su respuesta. / Quedo atenta. / Quedamos atentos.",
-  "en": "I look forward to your reply.",
+  "es": "Quedo atento a su respuesta.",
+  "en": "I look forward to your reply. (a man writing)",
+  "forms": [
+   {
+    "es": "Quedo atento a su respuesta.",
+    "en": "I look forward to your reply. (a man writing)"
+   },
+   {
+    "es": "Quedo atenta.",
+    "en": "I look forward to hearing from you. (a woman writing)"
+   },
+   {
+    "es": "Quedamos atentos.",
+    "en": "We look forward to hearing from you."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5638,8 +8264,18 @@
   "band": "A2",
   "priority": 255,
   "title": "Please find attached: adjunto le envío",
-  "es": "Adjunto le envío el documento. / Le adjunto la factura.",
-  "en": "Please find the document attached. / I'm attaching the invoice.",
+  "es": "Adjunto le envío el documento.",
+  "en": "I'm sending you the document attached.",
+  "forms": [
+   {
+    "es": "Adjunto le envío el documento.",
+    "en": "I'm sending you the document attached."
+   },
+   {
+    "es": "Le adjunto la factura.",
+    "en": "I'm attaching the invoice."
+   }
+  ],
   "requires": [
    "g:indirect-objects"
   ],
@@ -5665,8 +8301,22 @@
   "band": "A2",
   "priority": 255,
   "title": "Yours sincerely: atentamente",
-  "es": "Atentamente, / Un cordial saludo, / Saludos,",
-  "en": "Yours sincerely, / Kind regards, / Best,",
+  "es": "Atentamente,",
+  "en": "Yours sincerely,",
+  "forms": [
+   {
+    "es": "Atentamente,",
+    "en": "Yours sincerely,"
+   },
+   {
+    "es": "Un cordial saludo,",
+    "en": "Kind regards,"
+   },
+   {
+    "es": "Saludos,",
+    "en": "Regards,"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5685,8 +8335,22 @@
   "band": "A2",
   "priority": 255,
   "title": "I recommend it: lo recomiendo",
-  "es": "Lo recomiendo totalmente. / No lo recomiendo. / Vale la pena.",
-  "en": "I totally recommend it. / I don't recommend it. / It's worth it.",
+  "es": "Lo recomiendo totalmente.",
+  "en": "I totally recommend it.",
+  "forms": [
+   {
+    "es": "Lo recomiendo totalmente.",
+    "en": "I totally recommend it."
+   },
+   {
+    "es": "No lo recomiendo.",
+    "en": "I don't recommend it."
+   },
+   {
+    "es": "Vale la pena.",
+    "en": "It's worth it."
+   }
+  ],
   "requires": [
    "g:direct-objects"
   ],
@@ -5707,8 +8371,18 @@
   "band": "A2",
   "priority": 255,
   "title": "So glad that…: ¡qué bueno que…!",
-  "es": "¡Qué bueno que viniste! / Qué bueno saber de ti.",
-  "en": "So glad you came! / Great to hear from you.",
+  "es": "¡Qué bueno que viniste!",
+  "en": "So glad you came!",
+  "forms": [
+   {
+    "es": "¡Qué bueno que viniste!",
+    "en": "So glad you came!"
+   },
+   {
+    "es": "Qué bueno saber de ti.",
+    "en": "Great to hear from you."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:subj-emotion-intro",
@@ -5761,7 +8435,7 @@
   "kind": "chunk",
   "band": "A2",
   "priority": 256,
-  "title": "Sleep well / Rest up: Que descanses",
+  "title": "Sleep well, or Rest up: que descanses",
   "es": "Bueno, me voy. ¡Que descanses!",
   "en": "Right, I'm off. Sleep well!",
   "requires": [
@@ -5791,9 +8465,19 @@
   "kind": "chunk",
   "band": "A2",
   "priority": 256,
-  "title": "Have fun: Que te diviertas / Que la pases bien",
+  "title": "Have fun: que te diviertas, que la pases bien",
   "es": "¡Que la pases bien en la fiesta!",
-  "en": "Have a great time at the party!",
+  "en": "Have a good time at the party!",
+  "forms": [
+   {
+    "es": "¡Que la pases bien en la fiesta!",
+    "en": "Have a good time at the party!"
+   },
+   {
+    "es": "¡Que te diviertas!",
+    "en": "Have fun!"
+   }
+  ],
   "requires": [
    "g:subj-wishes"
   ],
@@ -5924,8 +8608,8 @@
   "band": "B1",
   "priority": 274,
   "title": "Doubtful echo: ¿Tú crees?",
-  "es": "—Vamos a ganar. —¿Tú crees?",
-  "en": "—We're going to win. —You think so?",
+  "es": "Vamos a ganar.\n¿Tú crees?",
+  "en": "We're going to win.\nYou think so?",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -5949,8 +8633,8 @@
   "band": "B1",
   "priority": 284,
   "title": "I can imagine: Me imagino",
-  "es": "—Estuve en el hospital toda la noche. —Me imagino, qué cansancio.",
-  "en": "—I was at the hospital all night. —I can imagine, you must be exhausted.",
+  "es": "Estuve en el hospital toda la noche.\nMe imagino, qué cansancio.",
+  "en": "I was at the hospital all night.\nI can imagine, how exhausting.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -6025,8 +8709,8 @@
   "band": "B1",
   "priority": 285,
   "title": "Getting by: Ahí vamos",
-  "es": "—¿Cómo va todo? —Ahí vamos, ¿y tú?",
-  "en": "—How's everything? —Getting by, and you?",
+  "es": "¿Cómo va todo?\nAhí vamos, ¿y tú?",
+  "en": "How's everything going?\nGetting by, and you?",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -6067,7 +8751,7 @@
   "kind": "chunk",
   "band": "B1",
   "priority": 285,
-  "title": "Chin up / You can do it: ¡Ánimo! ¡Tú puedes!",
+  "title": "Chin up, you can do it: ¡Ánimo! ¡Tú puedes!",
   "es": "¡Ánimo, tú puedes!",
   "en": "Come on, you can do it!",
   "requires": [],
@@ -6237,8 +8921,8 @@
   "band": "B1",
   "priority": 304,
   "title": "I need to ask you a favour: Tengo que pedirte un favor",
-  "es": "Tengo que pedirte un favor… ¿podrías…?",
-  "en": "I need to ask you a favour… could you…?",
+  "es": "Tengo que pedirte un favor: ¿podrías cuidarme el perro este fin de semana?",
+  "en": "I need to ask you a favour: could you look after my dog this weekend?",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -6292,8 +8976,8 @@
   "band": "B1",
   "priority": 305,
   "title": "Well, if you insist: Bueno, si insistes…",
-  "es": "—Quédate a comer. —Bueno, si insistes…",
-  "en": "—Stay for lunch. —Well, if you insist…",
+  "es": "Quédate a comer.\nBueno, si insistes.",
+  "en": "Stay for lunch.\nWell, if you insist.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -6536,9 +9220,19 @@
   "kind": "chunk",
   "band": "B1",
   "priority": 344,
-  "title": "Well done: ¡Bien hecho! / ¡Buen trabajo!",
+  "title": "Well done: ¡Bien hecho!, ¡Buen trabajo!",
   "es": "¡Buen trabajo, equipo!",
   "en": "Good job, team!",
+  "forms": [
+   {
+    "es": "¡Buen trabajo, equipo!",
+    "en": "Good job, team!"
+   },
+   {
+    "es": "¡Bien hecho!",
+    "en": "Well done!"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -6817,8 +9511,18 @@
   "band": "B1",
   "priority": 356,
   "title": "Closing politely: No, así está bien, gracias",
-  "es": "—¿Algo más? —No, así está bien, gracias. / Nada más, gracias.",
-  "en": "No, that's fine, thanks. / That's all, thanks.",
+  "es": "¿Algo más?\nNo, así está bien, gracias.",
+  "en": "Anything else?\nNo, that's fine, thanks.",
+  "forms": [
+   {
+    "es": "¿Algo más?\nNo, así está bien, gracias.",
+    "en": "Anything else?\nNo, that's fine, thanks."
+   },
+   {
+    "es": "Nada más, gracias.",
+    "en": "Nothing else, thanks."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -6840,9 +9544,19 @@
   "kind": "chunk",
   "band": "B1",
   "priority": 356,
-  "title": "¿Cómo así? — what do you mean?",
-  "es": "¿Cómo así? / ¿Cómo así que se fue?",
-  "en": "how so? / what do you mean?: What do you mean, he left?",
+  "title": "What do you mean?: ¿cómo así?",
+  "es": "¿Cómo así?",
+  "en": "What do you mean?",
+  "forms": [
+   {
+    "es": "¿Cómo así?",
+    "en": "What do you mean?"
+   },
+   {
+    "es": "¿Cómo así que se fue?",
+    "en": "What do you mean, he left?"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -6863,9 +9577,19 @@
   "kind": "chunk",
   "band": "B1",
   "priority": 356,
-  "title": "Fíjese que… — guess what / you know what",
-  "es": "Fíjese que… / Fíjate que…: Fíjese que no pude ir. Fíjate que se casó Juliana.",
-  "en": "you know what / imagine: You know, I couldn't make it. Guess what — Juliana got married.",
+  "title": "Guess what, or You know what: fíjese que",
+  "es": "Fíjese que no pude ir.",
+  "en": "You know what, I couldn't make it. (formal)",
+  "forms": [
+   {
+    "es": "Fíjese que no pude ir.",
+    "en": "You know what, I couldn't make it. (formal)"
+   },
+   {
+    "es": "Fíjate que se casó Juliana.",
+    "en": "Guess what, Juliana got married. (to a friend)"
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -6877,6 +9601,9 @@
   "note": "Imperative used as a news opener, no command. Common in Colombia and Central America. Related p:fijarse-reparar-en (to notice). Source lesson is B2; taught at B1 here.",
   "sources": [
    "gr-imperativo-valores-b2"
+  ],
+  "match": [
+   "Fíjate que"
   ]
  },
  {
@@ -6885,8 +9612,18 @@
   "band": "B1",
   "priority": 356,
   "title": "That rings a bell: me suena",
-  "es": "Ese nombre me suena. —¿Conoces a Andrés? —No me suena.",
-  "en": "That name rings a bell. — No, doesn't ring a bell.",
+  "es": "Ese nombre me suena.",
+  "en": "That name rings a bell.",
+  "forms": [
+   {
+    "es": "Ese nombre me suena.",
+    "en": "That name rings a bell."
+   },
+   {
+    "es": "¿Conoces a Andrés?\nNo me suena.",
+    "en": "Do you know Andrés?\nHe doesn't ring a bell."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -6955,7 +9692,7 @@
   "priority": 374,
   "title": "Did you know…? (to an audience): ¿Sabían que…?",
   "es": "¿Sabían que Bogotá tiene más de 500 kilómetros de ciclorrutas?",
-  "en": "Did you know Bogotá has over 500 km of bike paths?",
+  "en": "Did you know that Bogotá has more than 500 kilometres of cycle lanes? (you all)",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7051,8 +9788,18 @@
   "band": "B2",
   "priority": 404,
   "title": "Whenever you like: cuando quieras",
-  "es": "Cuando quieras. / Como quieras.",
-  "en": "Whenever / however you like.",
+  "es": "Cuando quieras.",
+  "en": "Whenever you like.",
+  "forms": [
+   {
+    "es": "Cuando quieras.",
+    "en": "Whenever you like."
+   },
+   {
+    "es": "Como quieras.",
+    "en": "As you like."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:subj-free-relatives",
@@ -7082,9 +9829,23 @@
   "kind": "chunk",
   "band": "B2",
   "priority": 404,
-  "title": "Door signs: Empuje / Hale",
-  "es": "EMPUJE / HALE. Para abrir hay que halar.",
-  "en": "PUSH / PULL.",
+  "title": "Door signs: Empuje and Hale",
+  "es": "EMPUJE",
+  "en": "PUSH",
+  "forms": [
+   {
+    "es": "EMPUJE",
+    "en": "PUSH"
+   },
+   {
+    "es": "HALE",
+    "en": "PULL"
+   },
+   {
+    "es": "Para abrir hay que halar.",
+    "en": "To open it, you have to pull."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -7183,8 +9944,18 @@
   "band": "B2",
   "priority": 405,
   "title": "Reluctant yes: bueno, si no hay más remedio",
-  "es": "Bueno, si no hay más remedio… / Bueno, está bien, si insistes…",
-  "en": "Well, if there's no other way… / OK, if you insist…",
+  "es": "Bueno, si no hay más remedio.",
+  "en": "Well, if there's no other way.",
+  "forms": [
+   {
+    "es": "Bueno, si no hay más remedio.",
+    "en": "Well, if there's no other way."
+   },
+   {
+    "es": "Bueno, está bien, si insistes.",
+    "en": "OK, fine, if you insist."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7213,8 +9984,8 @@
   "band": "B2",
   "priority": 405,
   "title": "We'll see: ya veremos",
-  "es": "—¿Me compras uno? —Bueno, ya veremos.",
-  "en": "We'll see.",
+  "es": "¿Me compras uno?\nBueno, ya veremos.",
+  "en": "Will you buy me one?\nWell, we'll see.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7287,9 +10058,27 @@
   "kind": "chunk",
   "band": "B2",
   "priority": 406,
-  "title": "Para serte sincero… — to be honest",
-  "es": "Para serte sincero/a, … / Para ser sinceros, … / Para que sepas, …",
-  "en": "to be honest / just so you know: To be honest, I didn't like it. Just so you know, I already paid.",
+  "title": "To be honest: para serte sincero",
+  "es": "Para serte sincero, no me gustó.",
+  "en": "To be honest, I didn't like it.",
+  "forms": [
+   {
+    "es": "Para serte sincero, no me gustó.",
+    "en": "To be honest, I didn't like it."
+   },
+   {
+    "es": "Para serte sincera, no me gustó.",
+    "en": "To be honest, I didn't like it. (said by a woman)"
+   },
+   {
+    "es": "Para ser sinceros, no nos gustó.",
+    "en": "To be honest, we didn't like it."
+   },
+   {
+    "es": "Para que sepas, ya pagué.",
+    "en": "Just so you know, I've already paid."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -7340,7 +10129,7 @@
   "priority": 414,
   "title": "Oh well, nothing to be done: ni modo",
   "es": "Se canceló el vuelo. Ni modo, nos toca esperar.",
-  "en": "Oh well. / Nothing we can do.",
+  "en": "The flight was cancelled. Oh well, we'll have to wait.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7428,8 +10217,8 @@
   "band": "B2",
   "priority": 415,
   "title": "Hoping, as a reply: eso espero",
-  "es": "—¿Crees que lleguemos a tiempo? —Eso espero.",
-  "en": "I hope so.",
+  "es": "¿Crees que lleguemos a tiempo?\nEso espero.",
+  "en": "Do you think we'll get there in time?\nI hope so.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7453,7 +10242,7 @@
   "priority": 415,
   "title": "Promising effort: voy a hacer todo lo posible",
   "es": "Voy a hacer todo lo posible por conseguir las boletas.",
-  "en": "I'll do my best to…",
+  "en": "I'm going to do everything I can to get the tickets.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7478,7 +10267,7 @@
   "priority": 415,
   "title": "It's hopeless: no hay nada que hacer",
   "es": "Esto no tiene arreglo; no hay nada que hacer.",
-  "en": "There's nothing to be done.",
+  "en": "This can't be fixed; there's nothing to be done.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7658,8 +10447,18 @@
   "band": "B2",
   "priority": 425,
   "title": "Polite disagreement: yo no lo veo así",
-  "es": "Yo no lo veo así. / Yo no lo veo tan claro.",
-  "en": "I don't see it that way. / I'm not so sure.",
+  "es": "Yo no lo veo así.",
+  "en": "I don't see it that way.",
+  "forms": [
+   {
+    "es": "Yo no lo veo así.",
+    "en": "I don't see it that way."
+   },
+   {
+    "es": "Yo no lo veo tan claro.",
+    "en": "I don't see it as that clear."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7690,7 +10489,7 @@
   "priority": 426,
   "title": "Admitting you might be wrong first: puede que me equivoque, pero…",
   "es": "Puede que me equivoque, pero yo lo veo de otra manera.",
-  "en": "I may be wrong, but…",
+  "en": "I may be wrong, but I see it differently.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7715,8 +10514,8 @@
   "band": "B2",
   "priority": 426,
   "title": "Polite scepticism: si tú lo dices",
-  "es": "—Juan está estudiando muchísimo. —Si tú lo dices…",
-  "en": "If you say so…",
+  "es": "Juan está estudiando muchísimo.\nSi tú lo dices.",
+  "en": "Juan is studying really hard.\nIf you say so.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7740,8 +10539,8 @@
   "band": "B2",
   "priority": 434,
   "title": "Who knows: quién sabe",
-  "es": "—¿Volverá? —Quién sabe.",
-  "en": "Who knows.",
+  "es": "¿Volverá?\nQuién sabe.",
+  "en": "Will he come back?\nWho knows.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7767,7 +10566,7 @@
   "priority": 444,
   "title": "Before I forget: antes de que se me olvide",
   "es": "Antes de que se me olvide: el viernes no hay clase.",
-  "en": "Before I forget…",
+  "en": "Before I forget: there's no class on Friday.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7791,8 +10590,18 @@
   "band": "B2",
   "priority": 444,
   "title": "Holding the floor: déjame terminar",
-  "es": "Espera, déjame terminar. / Ya termino.",
-  "en": "Let me finish. / I'm nearly done.",
+  "es": "Espera, déjame terminar.",
+  "en": "Wait, let me finish.",
+  "forms": [
+   {
+    "es": "Espera, déjame terminar.",
+    "en": "Wait, let me finish."
+   },
+   {
+    "es": "Ya termino.",
+    "en": "I'm nearly done."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7920,8 +10729,8 @@
   "band": "B2",
   "priority": 454,
   "title": "Following along: ya me imagino",
-  "es": "—Y claro, Carlos no hizo nada. —Sí, ya me imagino.",
-  "en": "I can imagine.",
+  "es": "Y claro, Carlos no hizo nada.\nSí, ya me imagino.",
+  "en": "And of course, Carlos didn't do anything.\nYes, I can imagine.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -7997,7 +10806,7 @@
   "priority": 484,
   "title": "Flat defiance: no me da la gana",
   "es": "No pienso ir. No me da la gana.",
-  "en": "I just don't feel like it / I won't.",
+  "en": "I'm not going. I just don't feel like it.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -8102,8 +10911,18 @@
   "band": "B2",
   "priority": 485,
   "title": "Showing you understand: te entiendo perfectamente",
-  "es": "Te entiendo perfectamente. / Sé lo que se siente.",
-  "en": "I completely understand.",
+  "es": "Te entiendo perfectamente.",
+  "en": "I understand you perfectly.",
+  "forms": [
+   {
+    "es": "Te entiendo perfectamente.",
+    "en": "I understand you perfectly."
+   },
+   {
+    "es": "Sé lo que se siente.",
+    "en": "I know how it feels."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -8206,9 +11025,9 @@
   "kind": "chunk",
   "band": "B2",
   "priority": 486,
-  "title": "Hablando se entiende la gente — let's talk it through",
+  "title": "Hablando se entiende la gente: let's talk it through",
   "es": "Hablando se entiende la gente.",
-  "en": "people understand each other by talking: Let's talk it through.",
+  "en": "People understand each other by talking.",
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -8230,9 +11049,9 @@
   "kind": "chunk",
   "band": "B2",
   "priority": 494,
-  "title": "Spain's '¡anda!' = ¡uy! / ¡no me digas!",
+  "title": "Spain's ¡anda!, meaning ¡uy! or ¡no me digas!",
   "es": "¡Anda, te llamas como mi padre!",
-  "en": "Oh! / No way!",
+  "en": "Oh! You've got the same name as my dad!",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -8280,9 +11099,9 @@
   "kind": "chunk",
   "band": "B2",
   "priority": 494,
-  "title": "Spain's 'vale' = listo / de acuerdo",
-  "es": "—Nos vemos a las ocho. —Vale.",
-  "en": "OK.",
+  "title": "Spain's vale, meaning listo or de acuerdo",
+  "es": "Nos vemos a las ocho.\nVale.",
+  "en": "See you at eight.\nOK.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -8447,8 +11266,18 @@
   "band": "C1",
   "priority": 504,
   "title": "By a hair: por un pelo",
-  "es": "Llegué por un pelo. Se salvó por un pelo.",
-  "en": "by the skin of my teeth / just barely",
+  "es": "Llegué por un pelo.",
+  "en": "I only just made it.",
+  "forms": [
+   {
+    "es": "Llegué por un pelo.",
+    "en": "I only just made it."
+   },
+   {
+    "es": "Se salvó por un pelo.",
+    "en": "He escaped by the skin of his teeth."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -8522,8 +11351,18 @@
   "band": "C1",
   "priority": 506,
   "title": "Let's get to work: ¡manos a la obra!",
-  "es": "¡Manos a la obra! / ponerse manos a la obra",
-  "en": "Let's get to it! / to get down to work",
+  "es": "¡Manos a la obra!",
+  "en": "Let's get to work!",
+  "forms": [
+   {
+    "es": "¡Manos a la obra!",
+    "en": "Let's get to work!"
+   },
+   {
+    "es": "Nos pusimos manos a la obra.",
+    "en": "We got down to work."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -8628,9 +11467,19 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 514,
-  "title": "Bueno, no creas… / Tanto como eso, no",
-  "es": "—Debe estar destapada la carretera. —Bueno, no creas, está bastante bien. / Tanto como eso, no.",
-  "en": "Well, I wouldn't say that… / Not THAT much.",
+  "title": "Bueno, no creas, or tanto como eso, no",
+  "es": "Debe estar destapada la carretera.\nBueno, no creas, está bastante bien.",
+  "en": "The road must be a dirt track by now.\nWell, not really, it's in pretty good shape.",
+  "forms": [
+   {
+    "es": "Debe estar destapada la carretera.\nBueno, no creas, está bastante bien.",
+    "en": "The road must be a dirt track by now.\nWell, not really, it's in pretty good shape."
+   },
+   {
+    "es": "Debe estar destapada la carretera.\nTanto como eso, no.",
+    "en": "The road must be a dirt track by now.\nI wouldn't go that far."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -8652,7 +11501,7 @@
   "priority": 514,
   "title": "No es por nada, pero…",
   "es": "No es por nada, pero ese color no te queda.",
-  "en": "I'm not saying it for any reason, but that colour doesn't suit you.",
+  "en": "Don't take this the wrong way, but that colour doesn't suit you.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -8671,8 +11520,18 @@
   "band": "C1",
   "priority": 514,
   "title": "Unprecedented: sin precedentes",
-  "es": "una crisis / una reacción sin precedentes",
-  "en": "unprecedented",
+  "es": "Fue una crisis sin precedentes.",
+  "en": "It was an unprecedented crisis.",
+  "forms": [
+   {
+    "es": "Fue una crisis sin precedentes.",
+    "en": "It was an unprecedented crisis."
+   },
+   {
+    "es": "Hubo una reacción sin precedentes.",
+    "en": "There was an unprecedented reaction."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -8706,9 +11565,9 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 516,
-  "title": "Así es. / Efectivamente.",
-  "es": "—¿Ya lo sabe? —Así es, se lo dijeron ayer.",
-  "en": "That's right. / Precisely.",
+  "title": "Así es, or efectivamente",
+  "es": "¿Ya lo sabe?\nAsí es, se lo dijeron ayer.",
+  "en": "Does he know already?\nThat's right, they told him yesterday.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -8726,9 +11585,19 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 516,
-  "title": "De ser así… — if that's the case",
-  "es": "De ser así, … / De no ser así, …: De ser así, tendríamos que repetir la votación.",
-  "en": "if so / if that's the case: If so, we'd have to repeat the vote.",
+  "title": "De ser así: if that's the case",
+  "es": "De ser así, tendríamos que repetir la votación.",
+  "en": "If so, we'd have to repeat the vote.",
+  "forms": [
+   {
+    "es": "De ser así, tendríamos que repetir la votación.",
+    "en": "If so, we'd have to repeat the vote."
+   },
+   {
+    "es": "De no ser así, seguimos con el plan.",
+    "en": "If not, we carry on with the plan."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "unpacks": "g:conditional-advanced",
@@ -8738,7 +11607,7 @@
    "gramatica:C1:518"
   ],
   "placement": "pcic",
-  "note": "Formal conditional with de + infinitive; unpacked by g:conditional-advanced (u57: de haberlo sabido).",
+  "note": "Formal conditional with de + infinitive; unpacked by g:conditional-advanced (u57: de haberlo sabido). Frame: De ser así, … / De no ser así, …",
   "sources": [
    "gr-formas-no-personales-c1"
   ]
@@ -8846,8 +11715,18 @@
   "band": "C1",
   "priority": 524,
   "title": "On and on about the same thing: ¡y dale con lo mismo!",
-  "es": "¡Y dale con lo mismo! / dale que dale",
-  "en": "There you go again! / on and on",
+  "es": "¡Y dale con lo mismo!",
+  "en": "There you go again!",
+  "forms": [
+   {
+    "es": "¡Y dale con lo mismo!",
+    "en": "There you go again!"
+   },
+   {
+    "es": "Y él, dale que dale con el tema.",
+    "en": "And he just kept going on and on about it."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -8917,7 +11796,7 @@
   "priority": 524,
   "title": "Ironic 'for a change': para variar",
   "es": "Llegó tarde, para variar.",
-  "en": "He was late — what a surprise (for a change).",
+  "en": "He was late, for a change.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9138,8 +12017,18 @@
   "band": "C1",
   "priority": 527,
   "title": "What an outrage: ¡qué barbaridad!",
-  "es": "¡Qué barbaridad! / Eso es una barbaridad.",
-  "en": "That's outrageous!",
+  "es": "¡Qué barbaridad!",
+  "en": "How outrageous!",
+  "forms": [
+   {
+    "es": "¡Qué barbaridad!",
+    "en": "How outrageous!"
+   },
+   {
+    "es": "Eso es una barbaridad.",
+    "en": "That's outrageous."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9204,9 +12093,9 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 528,
-  "title": "Mamar gallo / tomar el pelo",
+  "title": "Mamar gallo or tomar el pelo",
   "es": "Tranquilo, te estoy mamando gallo.",
-  "en": "To pull someone's leg.",
+  "en": "Relax, I'm pulling your leg.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9245,9 +12134,19 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 528,
-  "title": "No se queda atrás — doesn't lag behind",
-  "es": "X tampoco se queda atrás. / Y ella no se queda atrás.",
-  "en": "is just as good / gives as good as she gets: And she's no slouch either.",
+  "title": "No se queda atrás: doesn't lag behind",
+  "es": "Y ella no se queda atrás.",
+  "en": "And she's no slouch either.",
+  "forms": [
+   {
+    "es": "Y ella no se queda atrás.",
+    "en": "And she's no slouch either."
+   },
+   {
+    "es": "Su hermano tampoco se queda atrás.",
+    "en": "Her brother is no slouch either."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -9268,7 +12167,7 @@
   "priority": 528,
   "title": "…, que ya es algo.",
   "es": "Al menos llegó, que ya es algo.",
-  "en": "…, which is something.",
+  "en": "At least he came, which is something.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9347,7 +12246,7 @@
   "priority": 534,
   "title": "Sin otro particular…",
   "es": "Sin otro particular, me despido atentamente.",
-  "en": "With nothing further to add…",
+  "en": "With nothing further to add, I remain yours sincerely.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9481,7 +12380,7 @@
   "priority": 554,
   "title": "You've got nothing to lose: el no ya lo tienes",
   "es": "Pregúntale. El no ya lo tienes.",
-  "en": "Ask — the worst she can say is no.",
+  "en": "Ask her. The worst she can say is no.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9544,7 +12443,7 @@
   "priority": 554,
   "title": "That's where I draw the line: ¡eso sí que no!",
   "es": "¡Eso sí que no!",
-  "en": "No way — that's where I draw the line.",
+  "en": "Now that, no way!",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9646,7 +12545,7 @@
   "priority": 556,
   "title": "Que sea lo que Dios quiera.",
   "es": "Ya hice todo lo que pude; que sea lo que Dios quiera.",
-  "en": "Whatever will be, will be.",
+  "en": "I've done all I could; whatever will be, will be.",
   "requires": [
    "g:que-wishes-commands"
   ],
@@ -9666,9 +12565,9 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 557,
-  "title": "Cruzo los dedos. / Toco madera.",
+  "title": "Cruzo los dedos, or toco madera",
   "es": "Cruzo los dedos para que todo salga bien mañana.",
-  "en": "Fingers crossed. / Touch wood.",
+  "en": "I'm keeping my fingers crossed that everything goes well tomorrow.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9687,9 +12586,9 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 557,
-  "title": "Estoy molido. / Estoy muerto.",
+  "title": "Estoy molido, or estoy muerto",
   "es": "Estoy molido después del trasteo.",
-  "en": "I'm wiped out.",
+  "en": "I'm wiped out after the move.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9708,9 +12607,9 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 557,
-  "title": "¡Dale! / ¡Hágale!",
-  "es": "¿Te da miedo? ¡Hágale, que usted puede!",
-  "en": "Go for it!",
+  "title": "¡Dale! or ¡Hágale!",
+  "es": "¿Le da miedo? ¡Hágale, que usted puede!",
+  "en": "Are you scared? Go for it, you can do it! (formal)",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9749,9 +12648,19 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 558,
-  "title": "Como el que más — as much as anyone",
-  "es": "Trabaja como el que más. / Sufrió como el que más.",
-  "en": "as hard as anyone / like nobody's business: She works as hard as anyone.",
+  "title": "Como el que más: as much as anyone",
+  "es": "Trabaja como el que más.",
+  "en": "She works as hard as anyone.",
+  "forms": [
+   {
+    "es": "Trabaja como el que más.",
+    "en": "She works as hard as anyone."
+   },
+   {
+    "es": "Sufrió como el que más.",
+    "en": "He suffered as much as anyone."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -9770,9 +12679,19 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 558,
-  "title": "Está que arde — is fuming / it's heated",
-  "es": "Está que arde. / Mi mamá está que echa chispas.",
-  "en": "he's fuming / things are heated: My mum is absolutely fuming.",
+  "title": "Está que arde: fuming, or things are heated",
+  "es": "Está que arde.",
+  "en": "He's fuming.",
+  "forms": [
+   {
+    "es": "Está que arde.",
+    "en": "He's fuming."
+   },
+   {
+    "es": "Mi mamá está que echa chispas.",
+    "en": "My mum is absolutely fuming."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -9850,8 +12769,18 @@
   "band": "C1",
   "priority": 564,
   "title": "A diamond in the rough: un diamante en bruto",
-  "es": "Es un diamante en bruto. / Dejaron la madera al natural.",
-  "en": "He's a diamond in the rough. / They left the wood untreated.",
+  "es": "Es un diamante en bruto.",
+  "en": "He's a diamond in the rough.",
+  "forms": [
+   {
+    "es": "Es un diamante en bruto.",
+    "en": "He's a diamond in the rough."
+   },
+   {
+    "es": "Dejaron la madera al natural.",
+    "en": "They left the wood untreated."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10043,8 +12972,18 @@
   "band": "C1",
   "priority": 565,
   "title": "Soaked to the skin: quedé ensopado",
-  "es": "Me agarró el aguacero y quedé ensopado / hecho una sopa.",
+  "es": "Me agarró el aguacero y quedé ensopado.",
   "en": "I got caught in the downpour and got soaked.",
+  "forms": [
+   {
+    "es": "Me agarró el aguacero y quedé ensopado.",
+    "en": "I got caught in the downpour and got soaked."
+   },
+   {
+    "es": "Me agarró el aguacero y quedé hecho una sopa.",
+    "en": "I got caught in the downpour and got soaked to the skin."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10074,6 +13013,9 @@
   "note": "Replaces Peninsular 'ponerse como una sopa'. 'Ensopado' (Col./Ven.) and 'hecho una sopa' are both natural; 'aguacero' = downpour.",
   "sources": [
    "nt-humedad-sequedad-c1"
+  ],
+  "match": [
+   "hecho una sopa"
   ]
  },
  {
@@ -10081,9 +13023,19 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 566,
-  "title": "A simple vista / al ojo",
-  "es": "A simple vista parece nuevo. / Lo calculé al ojo.",
-  "en": "At a glance / by eye.",
+  "title": "A simple vista and al ojo",
+  "es": "A simple vista parece nuevo.",
+  "en": "At a glance it looks new.",
+  "forms": [
+   {
+    "es": "A simple vista parece nuevo.",
+    "en": "At a glance it looks new."
+   },
+   {
+    "es": "Lo calculé al ojo.",
+    "en": "I worked it out by eye."
+   }
+  ],
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10153,7 +13105,7 @@
   "priority": 574,
   "title": "Colombian time: la hora colombiana",
   "es": "Llegó a la hora colombiana, una hora tarde.",
-  "en": "He arrived on 'Colombian time' — an hour late.",
+  "en": "He arrived on Colombian time, an hour late.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10419,8 +13371,8 @@
   "band": "C1",
   "priority": 577,
   "title": "¡Faltaba más!",
-  "es": "—¿Me ayudas? —¡Faltaba más!",
-  "en": "Of course! / Don't mention it!",
+  "es": "¿Me ayudas?\n¡Faltaba más!",
+  "en": "Will you help me?\nOf course!",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10503,9 +13455,9 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 578,
-  "title": "¿Me sigues? / ¿No te enredé?",
+  "title": "¿Me sigues? or ¿No te enredé?",
   "es": "¿Me sigues, o te enredé con tanto detalle?",
-  "en": "Are you with me? / Have I lost you?",
+  "en": "Are you following me, or have I lost you with all this detail?",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10563,9 +13515,9 @@
   "kind": "chunk",
   "band": "C1",
   "priority": 578,
-  "title": "¿Te animas? / ¿Te le mides?",
+  "title": "¿Te animas? or ¿Te le mides?",
   "es": "Vamos a cine el viernes, ¿te animas?",
-  "en": "Are you in?",
+  "en": "We're going to the cinema on Friday, are you in?",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10605,7 +13557,7 @@
   "priority": 579,
   "title": "Sin ir más lejos…",
   "es": "Sin ir más lejos, esta misma mañana lo hablé con él.",
-  "en": "To take an obvious example…",
+  "en": "Without looking any further, I talked it over with him this very morning.",
   "requires": [],
   "contrasts": [],
   "serves": [

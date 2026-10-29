@@ -6,14 +6,18 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { tagSentence, type ChunkSpec } from '../../src/engine/tagger';
 import { APP_DIR } from '../../tools/gate';
+import { chunkSpec } from '../../tools/gate/load';
 
-const chunks = JSON.parse(readFileSync(join(APP_DIR, 'content/graph/chunks.json'), 'utf8')) as Array<{ id: string; es?: string }>;
-const specs: ChunkSpec[] = chunks.filter((c) => c.es).map((c) => ({ id: c.id, es: c.es! }));
+// the spec the gate tags with: es, every aligned form and every match frame as alternatives
+const chunks = JSON.parse(readFileSync(join(APP_DIR, 'content/graph/chunks.json'), 'utf8')) as Array<{ id: string; es?: string; forms?: Array<{ es: string; en: string }>; match?: string[] }>;
+const specs: ChunkSpec[] = chunks.filter((c) => c.es).map(chunkSpec);
 
 /** The chunk's example forms: fragments between / — … and punctuation, as the matcher cuts them
  *  ("Es caro, ¿verdad?" gives "Es caro" — context, not the chunk — and "verdad", the chunk). */
 function examples(es: string): string[] {
-  return es.replace(/\([^)]*\)/g, ' ').split(/\s*\/\s*|—|–|…|[.,?!¿¡;:]/).map((s) => s.trim()).filter((s) => /[A-Za-zÁÉÍÓÚÑáéíóúñ]/.test(s));
+  // a short tag question keeps its marks (¿no?, ¿verdad?): it is the chunk only as a question
+  const tags = [...es.matchAll(/¿\s*[^¿?\s]+\s*\?/g)].map((m) => m[0]);
+  return [...tags, ...es.replace(/\([^)]*\)/g, ' ').split(/\s*\/\s*|—|–|…|[.,?!¿¡;:]/).map((s) => s.trim()).filter((s) => /[A-Za-zÁÉÍÓÚÑáéíóúñ]/.test(s))];
 }
 
 describe('every chunk matches its own es', () => {

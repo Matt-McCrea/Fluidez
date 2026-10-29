@@ -364,6 +364,36 @@ export function checkStructure(st: RunState, f: Loaded): void {
   }
 }
 
+/* ---- dashes and packed variants ----------------------------------------------
+ * Learners never see an em dash, an en dash or a spaced hyphen: dialogue turns are
+ * separate lines ("¿Ya comiste?\nTodavía no.") or "Vale: ¿Ya comiste?", and English
+ * prose uses commas, colons, brackets and full stops. A node's es/en is ONE exact
+ * translation pair: variants go in forms[], never packed with " / ". */
+const AUTHOR_ONLY = new Set(['note', 'storyArc', 'theme', 'sources', 'pcic', 'source', 'id', 'node', 'unit', 'chapter', 'scene', 'requires', 'lexemes', 'targets', 'focus', 'chunks', 'serves', 'contrasts', 'unpacks', 'tags', 'match', 'peninsular', 'next', 'kind', 'band', 'type', 'placement', 'variety', 'pos', 'gender']);
+const DASH = /[\u2014\u2013]|\s-\s|^-\s|\s-$/;
+export function checkDashes(st: RunState, f: Loaded): void {
+  if (!['graph', 'unit', 'bank', 'script', 'story', 'scene', 'writing'].includes(f.kind)) return;
+  const push = (path: string, problem: string, fix: string) => st.findings.push({ severity: 'error', check: 'dashes', file: f.rel, path, problem, fix });
+  const walk = (x: unknown, path: string, key: string): void => {
+    if (typeof x === 'string') {
+      if (DASH.test(x)) push(path, `dash in learner-facing text: "${clip(x, 60)}"`, 'no em dashes, en dashes or spaced hyphens: put dialogue turns on separate lines (\\n) or "Name: line"; in English use a comma, colon, brackets or a full stop');
+      return;
+    }
+    if (Array.isArray(x)) { x.forEach((y, i) => walk(y, `${path}[${i}]`, key)); return; }
+    if (x && typeof x === 'object') for (const [k, v] of Object.entries(x)) if (!AUTHOR_ONLY.has(k)) walk(v, path ? `${path}.${k}` : k, k);
+  };
+  walk(f.raw, '', '');
+  if (f.kind === 'graph') {
+    (f.raw as Array<Record<string, unknown>>).forEach((n, i) => {
+      if (n.kind === 'lexeme' || n.kind === 'cando') return;
+      const strs: Array<[string, unknown]> = [[`[${i}].es`, n.es], [`[${i}].en`, n.en], ...((n.forms as Array<{ es: string; en: string }> | undefined) ?? []).flatMap((p, k) => [[`[${i}].forms[${k}].es`, p.es], [`[${i}].forms[${k}].en`, p.en]] as Array<[string, unknown]>)];
+      for (const [path, v] of strs) if (typeof v === 'string' && /\s\/\s/.test(v)) push(path, `${n.id} packs variants with " / ": "${clip(v, 60)}"`, 'one exact es/en pair per string: put each variant in forms[] as its own {es, en}');
+      const forms = n.forms as Array<{ es: string; en: string }> | undefined;
+      if (forms?.length && (forms[0].es !== n.es || forms[0].en !== n.en)) push(`[${i}].forms[0]`, `${n.id}: es/en must be the main form, forms[0]`, 'copy forms[0] into es and en');
+    });
+  }
+}
+
 /* ---- reading coverage --------------------------------------------------------- */
 export function readingCoverage(st: RunState, f: Loaded): void {
   const c = f.data as StoryChapter;

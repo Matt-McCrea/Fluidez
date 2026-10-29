@@ -80,8 +80,7 @@
   {
    "type": "output",
    "focus": [
-    "g:formal-letter-grammar",
-    "g:verbs-prepositions"
+    "g:formal-letter-grammar"
    ],
    "chunks": [],
    "lexemes": [],

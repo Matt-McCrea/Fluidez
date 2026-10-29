@@ -2,7 +2,7 @@
   "id": "ch003",
   "unit": "u02",
   "title": "Las seis",
-  "text": "6:00. Vale ya trabaja. Tomás no.\nVale: ¡Tomás! ¡Buenos días! ¡A trabajar!\nTomás: ¿A las seis? En Toronto no trabajo a las seis.\nVale: En Toronto no. En La Esquina de Rosa, sí.\nVale hace el pan. Vale hace el tinto. Vale compra la leche en el barrio. Tomás hace un café.\nVale: Tomás... ¿has estado en un café colombiano?\nTomás: La verdad... no sé.\n7:00. Es Don Hernando, como todos los días.\nHernando: ¡Buenos días! Un tinto, por favor.\nTomás: ¡A la orden, Don Hernando!\nTomás hace el tinto de Don Hernando: un tinto colombiano, de Toronto.\nHernando: ¡Que te mejores, Tomás!\nSimón: ¡Qué pena con usted! ¡Qué pena con usted!\nVale: Tomás, Don Hernando vive en el centro, en un barrio con parque. Pero, la verdad, vive en el café.\nHernando: Claro. Y tú, Tomás, ¿vives en Bogotá?\nTomás: Vivo en un hostel.\nHernando: ¿En un hostel? Pero Rosa... Rosa era el café.\nTomás: La verdad, no sé.",
+  "text": "6:00. Vale ya trabaja. Tomás no.\nVale: ¡Tomás! ¡Buenos días! ¡A trabajar!\nTomás: ¿A las seis? En Toronto no trabajo a las seis.\nVale: En Toronto no. En La Esquina de Rosa, sí.\nVale hace el pan. Vale hace el tinto. Vale compra la leche en el barrio. Tomás hace un café.\nVale: Tomás... ¿has estado en un café colombiano?\nTomás: La verdad... no sé.\n7:00. Es Don Hernando.\nHernando: ¡Buenos días! Un tinto, por favor.\nTomás: ¡A la orden, Don Hernando!\nTomás hace el tinto de Don Hernando: un tinto colombiano, de Toronto.\nHernando: ¡Que te mejores, Tomás!\nSimón: ¡Qué pena con usted! ¡Qué pena con usted!\nVale: Tomás, Don Hernando vive en el centro, en un barrio con parque. Pero, la verdad, vive en el café.\nHernando: Claro. Tomás, ¿tú vives en Bogotá?\nTomás: Vivo en un hostel.\nHernando: ¿En un hostel? Pero Rosa... Rosa era el café.\nTomás: La verdad, no sé.",
   "gloss": [
     {
       "es": "¡A trabajar!",
@@ -49,7 +49,7 @@
     {
       "q": "What does Hernando really think of Tomás's coffee?",
       "options": [
-        "It's bad — he tells it to get well soon",
+        "It's bad: he tells it to get well soon",
         "It's better than Rosa's",
         "It's too strong for him",
         "He doesn't drink it"
@@ -110,37 +110,24 @@
   ],
   "requires": [
     "c:a-la-orden",
-    "c:bien-y-tu",
-    "c:bueno-no-se",
     "c:claro-listo",
-    "c:con-mucho-gusto",
     "c:era",
     "c:has-estado",
     "c:hola-buenos-dias",
     "c:la-verdad",
-    "c:no-cierto",
     "c:no-se",
     "c:por-favor",
-    "c:que-oso",
     "c:que-pena",
-    "c:que-pena-molestarlo",
     "c:que-te-mejores",
-    "c:sabes-que-me-paso",
     "c:vivo-en",
-    "g:adjective-agreement",
-    "g:direct-objects",
-    "g:exclamations",
     "g:gender-articles",
     "g:imperfect-states",
     "g:perfecto-experience",
-    "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:ser-identity",
-    "g:subj-wanting",
     "g:subj-wishes",
-    "g:yo-irregular",
-    "p:todos-los-dias"
+    "g:yo-irregular"
   ],
   "lexemes": [
     "l:barrio",

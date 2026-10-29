@@ -40,8 +40,8 @@
   {
    "type": "output",
    "focus": [
-    "g:voseo-recognition",
-    "g:future-subj-recognition"
+    "g:agreement-tricky",
+    "g:ser-estar-c1"
    ],
    "chunks": [],
    "lexemes": [],
@@ -133,8 +133,7 @@
   {
    "type": "output",
    "focus": [
-    "g:voseo-recognition",
-    "g:future-subj-recognition"
+    "g:voseo-recognition"
    ],
    "chunks": [],
    "lexemes": [],

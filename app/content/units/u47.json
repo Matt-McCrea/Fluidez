@@ -120,8 +120,7 @@
    "type": "output",
    "focus": [
     "g:cleft-focus",
-    "g:topic-fronting",
-    "g:lo-que-intensity"
+    "g:topic-fronting"
    ],
    "chunks": [],
    "lexemes": [],

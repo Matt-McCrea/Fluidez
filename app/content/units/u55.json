@@ -118,8 +118,7 @@
    "type": "output",
    "focus": [
     "g:cuyo-relatives",
-    "g:nominalisation",
-    "g:absolute-constructions"
+    "g:nominalisation"
    ],
    "chunks": [],
    "lexemes": [],

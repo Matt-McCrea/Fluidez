@@ -35,9 +35,9 @@
       "en": "What's the bank's number?"
     }
   ],
-  "rule": "The question words:\n\nqué: what\nquién (quiénes): who\ndónde: where\ncuándo: when\ncómo: how, what … like\ncuánto, cuánta, cuántos, cuántas: how much, how many\ncuál: which, what (picking one)\npor qué: why (two words; the answer porque is one)\n\nThree rules. Every question word has an accent. A question opens with ¿ and closes with ?. And there's no do or does: ¿Dónde vives? is just Where live-you?\n\nCuánto agrees with what you count: cuántos clientes, cuántas computadoras.\n\nFor a yes/no question, keep the sentence and add the marks: ¿Vives en el centro? Your voice rises at the end.",
-  "smallPrint": "These are interrogative words (interrogativos).",
-  "soundTip": "In a question-word question your voice falls at the end: ¿Dónde VIves↘? In a yes/no question it rises: ¿Vives en el CENtro↗?",
+  "rule": "The question words:\n\n*qué*: what\n*quién* (*quiénes*): who\n*dónde*: where\n*cuándo*: when\n*cómo*: how, what … like\n*cuánto*, *cuánta*, *cuántos*, *cuántas*: how much, how many\n*cuál*: which, what (picking one)\n*por qué*: why (two words; the answer *porque* is one)\n\nThree rules. Every question word has an accent. A question opens with *¿* and closes with *?*. And there's no do or does: *¿Dónde vives?* is just Where live-you?\n\n*Cuánto* agrees with what you count: *cuántos clientes*, *cuántas computadoras*.\n\nFor a yes/no question, keep the sentence and add the marks: *¿Vives en el centro?* Your voice rises at the end.",
+  "smallPrint": "These are interrogative words (*interrogativos*).",
+  "soundTip": "In a question-word question your voice falls at the end: *¿Dónde VIves↘?* In a yes/no question it rises: *¿Vives en el CENtro↗?*",
   "readAndPick": [
     {
       "es": "¿Dónde trabajas?",
@@ -126,19 +126,19 @@
       "prompt": "Where do you live? (to a friend)",
       "answer": "¿Dónde vives?",
       "accept": [],
-      "why": "Dónde = where, with its accent, then the verb."
+      "why": "*Dónde* = where, with its accent, then the verb."
     },
     {
       "prompt": "What are you studying? (to a friend)",
       "answer": "¿Qué estudias?",
       "accept": [],
-      "why": "Qué = what. No do in Spanish."
+      "why": "*Qué* = what. No do in Spanish."
     },
     {
       "prompt": "Who is the boss?",
       "answer": "¿Quién es el jefe?",
       "accept": [],
-      "why": "Quién = who, with an accent."
+      "why": "*Quién* = who, with an accent."
     },
     {
       "prompt": "How much is a juice?",
@@ -146,48 +146,48 @@
       "accept": [
         "¿Cuánto cuesta un jugo?"
       ],
-      "why": "Cuánto = how much."
+      "why": "*Cuánto* = how much."
     },
     {
       "prompt": "How are you? (to a friend)",
       "answer": "¿Cómo estás?",
       "accept": [],
-      "why": "Cómo = how, and estar for how you are."
+      "why": "*Cómo* = how, and *estar* for how you are."
     },
     {
       "prompt": "How many customers are there?",
       "answer": "¿Cuántos clientes hay?",
       "accept": [],
-      "why": "Cuántos agrees with clientes."
+      "why": "*Cuántos* agrees with *clientes*."
     },
     {
       "prompt": "What's the bank's number?",
       "answer": "¿Cuál es el número del banco?",
       "accept": [],
-      "why": "With es, what = cuál when you pick one thing from many."
+      "why": "With *es*, what = *cuál* when you pick one thing from many."
     },
     {
       "prompt": "Do you eat at the office? (to a friend)",
       "answer": "¿Comes en la oficina?",
       "accept": [],
-      "why": "Yes/no question: same order, add ¿ ?."
+      "why": "Yes/no question: same order, add *¿ ?*."
     }
   ],
   "pitfalls": [
     {
       "wrong": "¿Donde vives?",
       "right": "¿Dónde vives?",
-      "why": "Question words always carry their accent: dónde."
+      "why": "Question words always carry their accent: *dónde*."
     },
     {
       "wrong": "Dónde vives?",
       "right": "¿Dónde vives?",
-      "why": "Spanish opens the question too: ¿ at the start."
+      "why": "Spanish opens the question too: *¿* at the start."
     },
     {
       "wrong": "¿Qué es el número del banco?",
       "right": "¿Cuál es el número del banco?",
-      "why": "Before es, what is usually cuál: you're picking one number out of many."
+      "why": "Before *es*, what is usually *cuál*: you're picking one number out of many."
     }
   ],
   "personal": "Write three questions you'd ask a new neighbour, using three different question words."

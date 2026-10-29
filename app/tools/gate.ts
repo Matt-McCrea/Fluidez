@@ -28,6 +28,8 @@
  *   dupe       exact and near-duplicates (token 4-gram Jaccard) corpus-wide
  *   frames     template-frame overuse per unit (warning; error with --strict)
  *   typeable   every answer/accept has a form a learner can type
+ *   dashes     no em/en dash or spaced hyphen in any learner-facing string; graph
+ *              node es/en/forms never pack variants with " / ", and es/en == forms[0]
  *   requires   bank requires, and chapter/scene/writing requires (+ chapter lexemes),
  *              == tagger output (--fix writes them); targets ⊆ requires (patterns,
  *              contrasts and undetectable nodes only warn)
@@ -38,7 +40,7 @@
 import { existsSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { checkBank, checkComputed, checkStrings, checkStructure, readingCoverage, type RunState } from './gate/checks';
+import { checkBank, checkComputed, checkDashes, checkStrings, checkStructure, readingCoverage, type RunState } from './gate/checks';
 import { collectItems, frameOveruse, nearDuplicates, supply } from './gate/corpus';
 import { render, type Finding } from './gate/findings';
 import { buildCurriculum, listJson, loadFile, resolveTargets, type Loaded } from './gate/load';
@@ -91,6 +93,7 @@ export function runGate(o: GateOptions = {}): GateResult {
     if (!f.ok) continue;
     checkStructure(st, f);
     checkStrings(st, f);
+    checkDashes(st, f);
     if (f.kind === 'bank') {
       const rewrite = checkBank(st, f, !!o.fix);
       if (rewrite) { writeFileSync(f.abs, JSON.stringify(rewrite, null, 2) + '\n'); fixed.push(f.rel); }

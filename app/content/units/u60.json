@@ -38,8 +38,8 @@
   {
    "type": "output",
    "focus": [
-    "g:word-order-style",
-    "g:evaluative-adverbs"
+    "g:voseo-recognition",
+    "g:future-subj-recognition"
    ],
    "chunks": [],
    "lexemes": [],
@@ -116,8 +116,7 @@
   {
    "type": "output",
    "focus": [
-    "g:word-order-style",
-    "g:evaluative-adverbs"
+    "g:word-order-style"
    ],
    "chunks": [],
    "lexemes": [],
