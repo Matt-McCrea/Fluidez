@@ -1,0 +1,167 @@
+{
+  "node": "p:me-da-miedo",
+  "hook": {
+    "line": "Don Hernando, the calmest man in Bogotá, has a doctor's appointment and won't say a word about it. Maybe the reason is simple.",
+    "es": "Me dan miedo los médicos.",
+    "en": "Doctors scare me."
+  },
+  "examples": [
+    {
+      "es": "Me da miedo manejar en Bogotá.",
+      "en": "I'm scared of driving in Bogotá."
+    },
+    {
+      "es": "¿Te dan miedo las alturas?",
+      "en": "Are you scared of heights? (to a friend)"
+    },
+    {
+      "es": "A Vale no le da miedo nada.",
+      "en": "Nothing scares Vale."
+    },
+    {
+      "es": "Me da pena molestarte.",
+      "en": "I feel bad about bothering you."
+    },
+    {
+      "es": "A Tomás le da rabia esperar tanto.",
+      "en": "Waiting so long makes Tomás angry."
+    },
+    {
+      "es": "Me da pena bailar.",
+      "en": "I'm embarrassed to dance."
+    }
+  ],
+  "rule": "English says *I'm scared of*. Spanish says the thing gives you fear: *me da miedo*.\nSwap the feeling: *miedo* (fear), *pena* (embarrassment, or feeling bad about something), *rabia* (anger).\nThe verb follows what causes the feeling. One thing or an action takes *da*: *Me da miedo manejar.* Several things take *dan*: *Me dan miedo los perros.*\nThe little word in front says who feels it: *me*, *te*, *le*, *nos*, *les*, just like *me gusta*.\nIn Colombia *me da pena* usually means I'm embarrassed, not sad.",
+  "smallPrint": "Teachers call this a *gustar*-type construction: what scares you is the grammatical subject. You'll also hear *tengo miedo*, which works the English way round.",
+  "readAndPick": [
+    {
+      "es": "Me dan miedo los perros.",
+      "options": [
+        "I scare dogs.",
+        "Dogs scare me.",
+        "Dogs scare her."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le da miedo manejar.",
+      "options": [
+        "He's scared of driving.",
+        "I'm scared of driving."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te dan miedo las alturas?",
+      "options": [
+        "Do heights scare me?",
+        "Do heights scare you? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos da pena molestarlo.",
+      "options": [
+        "We feel bad about bothering him.",
+        "He feels bad about bothering us."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A Tomás le da rabia esperar.",
+      "options": [
+        "Tomás makes people angry when he waits.",
+        "Waiting makes Tomás angry."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da pena bailar.",
+      "options": [
+        "I'm embarrassed to dance.",
+        "You're embarrassed to dance."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No les da miedo la noche.",
+      "options": [
+        "The night doesn't scare them.",
+        "The night doesn't scare us."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A don Hernando le dan miedo los médicos.",
+      "options": [
+        "Don Hernando scares the doctors.",
+        "Doctors scare Don Hernando."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *da* or *dan* and type the whole sentence: *Me ___ miedo los perros.* (Dogs scare me.)",
+      "answer": "Me dan miedo los perros.",
+      "accept": [],
+      "why": "Several dogs, so *dan*. The verb follows what scares you."
+    },
+    {
+      "prompt": "Pick *da* or *dan* and type the whole sentence: *Me ___ miedo manejar.* (I'm scared of driving.)",
+      "answer": "Me da miedo manejar.",
+      "accept": [],
+      "why": "An action counts as one thing, so *da*."
+    },
+    {
+      "prompt": "Say: I'm scared of heights.",
+      "answer": "Me dan miedo las alturas.",
+      "accept": [],
+      "why": "Heights are several things, so *dan*, and they come after *miedo*."
+    },
+    {
+      "prompt": "Ask a friend: Are you scared of driving in Bogotá?",
+      "answer": "¿Te da miedo manejar en Bogotá?",
+      "accept": [],
+      "why": "A friend takes *te*, and driving is one action, so *da*."
+    },
+    {
+      "prompt": "Say: Waiting makes Tomás angry.",
+      "answer": "A Tomás le da rabia esperar.",
+      "accept": [],
+      "why": "Name him with *a*, keep the *le*, and anger is *rabia*."
+    },
+    {
+      "prompt": "Make it negative: *Me dan miedo los médicos.*",
+      "answer": "No me dan miedo los médicos.",
+      "accept": [],
+      "why": "*No* goes in front of *me*."
+    },
+    {
+      "prompt": "Make it about Don Hernando: *Me da miedo la cita.*",
+      "answer": "A don Hernando le da miedo la cita.",
+      "accept": [
+        "A Hernando le da miedo la cita."
+      ],
+      "why": "*Me* becomes *le*, and one appointment still takes *da*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me dan miedo manejar.",
+      "right": "Me da miedo manejar.",
+      "why": "Close. An action counts as one thing, so *da*."
+    },
+    {
+      "wrong": "Me da miedo de los perros.",
+      "right": "Me dan miedo los perros.",
+      "why": "With *me da miedo*, the thing comes straight after with no *de*, and several dogs take *dan*."
+    },
+    {
+      "wrong": "Yo me da miedo manejar.",
+      "right": "Me da miedo manejar.",
+      "why": "*Yo* doesn't fit this shape, because you aren't doing the verb. For weight on *me*, say *A mí me da miedo*."
+    }
+  ],
+  "personal": "What scares you, and what makes you feel *pena*? Write one sentence with *me da miedo* (or *me dan miedo*) and one with *me da pena*."
+}

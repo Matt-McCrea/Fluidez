@@ -1,0 +1,205 @@
+{
+  "node": "g:parecer-quedar",
+  "hook": {
+    "line": "Three days in bed at Doña Gloria's, three days of aguapanela and gossip. Tomás now has opinions about everyone on the block, and these verbs let him share them.",
+    "es": "Doña Gloria me cae muy bien.",
+    "en": "I really like Doña Gloria."
+  },
+  "examples": [
+    {
+      "es": "¿Qué te parece el plan?",
+      "en": "What do you think of the plan? (to a friend)"
+    },
+    {
+      "es": "Me parece una buena idea.",
+      "en": "It seems like a good idea to me."
+    },
+    {
+      "es": "Esa chaqueta te queda grande.",
+      "en": "That jacket is too big for you."
+    },
+    {
+      "es": "Las camisas me quedan pequeñas.",
+      "en": "The shirts are too small for me."
+    },
+    {
+      "es": "Tu amigo me cae muy bien.",
+      "en": "I really like your friend."
+    },
+    {
+      "es": "Los vecinos nuevos me caen mal.",
+      "en": "I don't like the new neighbours."
+    },
+    {
+      "es": "Me hace falta un café.",
+      "en": "I need a coffee."
+    },
+    {
+      "es": "¿Te hace falta algo?",
+      "en": "Do you need anything? (to a friend)"
+    }
+  ],
+  "rule": "You know *me gusta*. These four work the same way: the thing or person comes after, the verb agrees with it, and *me*, *te*, *le*, *nos*, *les* say who.\n\n*me parece*: what I think of something. *Me parece caro.* It seems expensive to me. *¿Qué te parece?* What do you think?\n*me queda*: how clothes fit. *Me queda grande.* It's too big for me. *Te queda bien.* It looks good on you.\n*me cae bien* or *mal*: whether you like a person. *Mariana me cae bien.* I like Mariana.\n*me hace falta*: what you need or miss. *Me hace falta dormir.* I need sleep.\n\nSeveral things, plural verb: *Me parecen caros. Te quedan bien. Me caen mal.*\n\n*Me cae bien* is for people. For food and things, stay with *me gusta*.",
+  "smallPrint": "Teachers call these *gustar*-type verbs: the thing is the grammatical subject and the person is the indirect object. Without *me*, *parecer* simply means to seem: *Parece caro.*",
+  "readAndPick": [
+    {
+      "es": "Me parece caro.",
+      "options": [
+        "It seems expensive to me.",
+        "It seems expensive to her."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué te parece?",
+      "options": [
+        "What does she think?",
+        "What do you think? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me parecen caros.",
+      "options": [
+        "It seems expensive to me.",
+        "They seem expensive to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esa chaqueta te queda grande.",
+      "options": [
+        "That jacket is too big for you.",
+        "That jacket is too big for me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las camisas me quedan bien.",
+      "options": [
+        "The shirt looks good on me.",
+        "The shirts look good on me.",
+        "The shirts look good on you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale me cae bien.",
+      "options": [
+        "Vale likes me.",
+        "I like Vale."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Simón no le cae bien don Hernando.",
+      "options": [
+        "Simón doesn't like Don Hernando.",
+        "Don Hernando doesn't like Simón."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me hace falta un café.",
+      "options": [
+        "You need a coffee.",
+        "I made a coffee.",
+        "I need a coffee."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Nos hace falta plata.",
+      "options": [
+        "They need money.",
+        "We need money."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los vecinos me caen mal.",
+      "options": [
+        "I don't like the neighbours.",
+        "The neighbours don't like me."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *queda* or *quedan* and type the whole sentence: *Esa chaqueta te ___ grande.* (That jacket is too big for you.)",
+      "answer": "Esa chaqueta te queda grande.",
+      "accept": [],
+      "why": "One jacket, so *queda*."
+    },
+    {
+      "prompt": "Pick *cae* or *gusta* and type the whole sentence: *Mariana me ___ muy bien.* (I really like Mariana as a person.)",
+      "answer": "Mariana me cae muy bien.",
+      "accept": [],
+      "why": "Liking someone as a person is *me cae bien*."
+    },
+    {
+      "prompt": "Ask a friend: What do you think of the plan?",
+      "answer": "¿Qué te parece el plan?",
+      "accept": [],
+      "why": "A friend takes *te*, and one plan takes *parece*."
+    },
+    {
+      "prompt": "Say: It seems like a good idea to me.",
+      "answer": "Me parece una buena idea.",
+      "accept": [
+        "Me parece buena idea."
+      ],
+      "why": "*Me parece* plus the verdict. No *que* needed."
+    },
+    {
+      "prompt": "Say: I need a coffee.",
+      "answer": "Me hace falta un café.",
+      "accept": [],
+      "why": "What you need comes after *me hace falta*."
+    },
+    {
+      "prompt": "Make it plural: *La camisa me queda pequeña.*",
+      "answer": "Las camisas me quedan pequeñas.",
+      "accept": [],
+      "why": "Several shirts, so *quedan*, and the adjective goes plural too."
+    },
+    {
+      "prompt": "Make it about Tomás: *Me hace falta descansar.*",
+      "answer": "A Tomás le hace falta descansar.",
+      "accept": [],
+      "why": "*Me* becomes *le*, with *a Tomás* to say who."
+    },
+    {
+      "prompt": "Make it negative: *El vecino me cae bien.*",
+      "answer": "El vecino no me cae bien.",
+      "accept": [
+        "El vecino me cae mal."
+      ],
+      "why": "*No* goes in front of *me*. *Me cae mal* says it more bluntly."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me parece caros.",
+      "right": "Me parecen caros.",
+      "why": "Several things, so *parecen*. The verb follows the things, not you."
+    },
+    {
+      "wrong": "Tu amigo me cae bueno.",
+      "right": "Tu amigo me cae bien.",
+      "why": "Almost. It's always *bien* or *mal* here, never *bueno*."
+    },
+    {
+      "wrong": "Me cae bien el café.",
+      "right": "Me gusta el café.",
+      "why": "*Me cae bien* is for people. For food and things, use *me gusta*."
+    },
+    {
+      "wrong": "Me hace falta de dormir.",
+      "right": "Me hace falta dormir.",
+      "why": "No *de*: the action comes straight after *falta*."
+    }
+  ],
+  "personal": "Write three sentences about your week: something you have an opinion on (*Me parece…*), someone you like (*… me cae bien*), and something you need (*Me hace falta…*)."
+}

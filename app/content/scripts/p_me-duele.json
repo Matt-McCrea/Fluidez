@@ -1,0 +1,171 @@
+{
+  "node": "p:me-duele",
+  "hook": {
+    "line": "Tomás has the flu, and Doña Gloria wants a full report: what hurts, and where. Spanish says it the *gustar* way.",
+    "es": "Me duele todo.",
+    "en": "Everything hurts."
+  },
+  "examples": [
+    {
+      "es": "Me duele la cabeza.",
+      "en": "My head hurts."
+    },
+    {
+      "es": "Me duelen las piernas.",
+      "en": "My legs hurt."
+    },
+    {
+      "es": "¿Te duele el estómago?",
+      "en": "Does your stomach hurt? (to a friend)"
+    },
+    {
+      "es": "A don Hernando le duele la rodilla.",
+      "en": "Don Hernando's knee hurts."
+    },
+    {
+      "es": "¿Le duele algo, señor?",
+      "en": "Does anything hurt, sir?"
+    },
+    {
+      "es": "Me duele un dedo.",
+      "en": "One of my fingers hurts."
+    }
+  ],
+  "rule": "This works like *me gusta*: the body part does the hurting, and the little word in front says whose it is.\n*me duele*, *te duele*, *le duele*, *nos duele*, *les duele*\nOne body part takes *duele*. Two or more take *duelen*: *Me duelen los pies.*\nBecause *me* already says it's yours, the body part takes *el*, *la*, *los*, *las*, not *mi* or *tu*: *Me duele la cabeza.*\n*Un* or *una* means one of several: *Me duele un dedo*, one of my fingers.",
+  "smallPrint": "Teachers call *doler* a *gustar*-type verb: the body part is the grammatical subject, and the person who feels it is the indirect object.",
+  "readAndPick": [
+    {
+      "es": "Le duelen los pies.",
+      "options": [
+        "His feet hurt.",
+        "My feet hurt.",
+        "His foot hurts."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te duele la espalda?",
+      "options": [
+        "Does my back hurt?",
+        "Does your back hurt? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me duele un dedo.",
+      "options": [
+        "My fingers hurt.",
+        "One of my fingers hurts."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me duelen los ojos.",
+      "options": [
+        "My eyes hurt.",
+        "My eye hurts."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos duelen los brazos.",
+      "options": [
+        "Their arms hurt.",
+        "My arms hurt.",
+        "Our arms hurt."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Te duele algo?",
+      "options": [
+        "Does anything hurt? (to a friend)",
+        "Does anything hurt, sir?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A Vale le duelen las piernas.",
+      "options": [
+        "Vale's leg hurts.",
+        "Vale's legs hurt."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me duele la mano.",
+      "options": [
+        "Her hand hurts.",
+        "My hands hurt.",
+        "My hand hurts."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *duele* or *duelen* and type the whole sentence: *Me ___ los pies.* (My feet hurt.)",
+      "answer": "Me duelen los pies.",
+      "accept": [],
+      "why": "Two feet, so *duelen*. The verb follows the body part."
+    },
+    {
+      "prompt": "Pick *la* or *mi* and type the whole sentence: *Me duele ___ espalda.* (My back hurts.)",
+      "answer": "Me duele la espalda.",
+      "accept": [],
+      "why": "*Me* already says whose back it is, so just *la*."
+    },
+    {
+      "prompt": "Say: My knee hurts.",
+      "answer": "Me duele la rodilla.",
+      "accept": [],
+      "why": "One knee, so *duele*, and *la*, not *mi*."
+    },
+    {
+      "prompt": "Ask a friend: Does your head hurt?",
+      "answer": "¿Te duele la cabeza?",
+      "accept": [],
+      "why": "A friend takes *te*, and the head is still *la cabeza*."
+    },
+    {
+      "prompt": "Say: Don Hernando's back hurts.",
+      "answer": "A don Hernando le duele la espalda.",
+      "accept": [
+        "A Hernando le duele la espalda."
+      ],
+      "why": "Name him with *a*, keep the *le*, and one back takes *duele*."
+    },
+    {
+      "prompt": "Make it plural: *Me duele el pie.*",
+      "answer": "Me duelen los pies.",
+      "accept": [],
+      "why": "*El pie* becomes *los pies*, so *duele* becomes *duelen*."
+    },
+    {
+      "prompt": "Ask a customer (formal) instead: *¿Te duele algo?*",
+      "answer": "¿Le duele algo?",
+      "accept": [
+        "¿A usted le duele algo?"
+      ],
+      "why": "Formal *you* takes *le*, the same word as him or her."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me duele mi cabeza.",
+      "right": "Me duele la cabeza.",
+      "why": "Almost. *Me* already says whose head it is, so it's *la cabeza*."
+    },
+    {
+      "wrong": "Me duele los pies.",
+      "right": "Me duelen los pies.",
+      "why": "Two feet, so *duelen*. The verb follows the body part, not you."
+    },
+    {
+      "wrong": "Mi espalda duele.",
+      "right": "Me duele la espalda.",
+      "why": "English starts with *my back*. Spanish starts with *me duele* and puts the body part after."
+    }
+  ],
+  "personal": "How's your body today? Say one thing that hurts (or *No me duele nada* if you're lucky), then ask a friend about theirs with *¿Te duele…?*"
+}

@@ -1,0 +1,176 @@
+{
+  "node": "p:no-es-nada-adj",
+  "hook": {
+    "line": "Tomás is in bed with the flu, and Vale keeps phoning to tell him how relaxed she is. Four times a day. Here's how to say *not at all*, and *too much*.",
+    "es": "No estoy nada preocupada.",
+    "en": "I'm not worried at all."
+  },
+  "examples": [
+    {
+      "es": "El arriendo es demasiado caro.",
+      "en": "The rent is too expensive."
+    },
+    {
+      "es": "La sopa no es muy rica.",
+      "en": "The soup isn't very good."
+    },
+    {
+      "es": "El examen no fue nada fácil.",
+      "en": "The exam wasn't easy at all."
+    },
+    {
+      "es": "¿No es demasiado larga la película?",
+      "en": "Isn't the film too long?"
+    },
+    {
+      "es": "Don Hernando no está nada tranquilo.",
+      "en": "Don Hernando isn't calm at all."
+    },
+    {
+      "es": "El barrio es muy tranquilo.",
+      "en": "The neighbourhood is very quiet."
+    }
+  ],
+  "rule": "Four ways to grade an adjective, from fact to complaint:\n*muy caro*: very expensive. Just a fact.\n*demasiado caro*: too expensive. More than you want, so it's always a complaint.\n*no es muy caro*: not very expensive. A soft verdict.\n*no es nada caro*: not expensive at all. Strong.\nEnglish puts *at all* at the end. Spanish puts *nada* right before the adjective and keeps *no* before the verb.\n*Demasiado* and *nada* never change. Only the adjective agrees: *demasiado caras*, *nada preocupada*.",
+  "smallPrint": "Teachers call *muy*, *demasiado* and *nada* in this spot degree words, or intensifiers. Here *demasiado* works as an adverb, which is why it never takes *-a* or *-s*.",
+  "readAndPick": [
+    {
+      "es": "Es demasiado caro.",
+      "options": [
+        "It's very expensive.",
+        "It's too expensive."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es muy caro.",
+      "options": [
+        "It's very expensive.",
+        "It's too expensive."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No es nada caro.",
+      "options": [
+        "It isn't very expensive.",
+        "It isn't expensive at all."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No es muy fácil.",
+      "options": [
+        "It isn't easy at all.",
+        "It isn't very easy."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La clase no es nada interesante.",
+      "options": [
+        "The class is very interesting.",
+        "The class isn't very interesting.",
+        "The class isn't interesting at all."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El apartamento es demasiado pequeño.",
+      "options": [
+        "The apartment is too small.",
+        "The apartment is very small."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La música está muy fuerte.",
+      "options": [
+        "The music is too loud.",
+        "The music is very loud."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale no está nada preocupada.",
+      "options": [
+        "Vale isn't very worried.",
+        "Vale isn't worried at all."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El hotel no es muy bonito.",
+      "options": [
+        "The hotel isn't very nice.",
+        "The hotel isn't nice at all.",
+        "The hotel is too nice."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *muy* or *demasiado* and type the whole sentence. It's a complaint: you can't pay it. *El arriendo es ___ caro.*",
+      "answer": "El arriendo es demasiado caro.",
+      "accept": [],
+      "why": "More than you want is *demasiado*. *Muy caro* would just be a fact."
+    },
+    {
+      "prompt": "Pick *muy* or *nada* and type the whole sentence: *El examen no es ___ fácil.* (The exam isn't easy at all.)",
+      "answer": "El examen no es nada fácil.",
+      "accept": [],
+      "why": "*At all* is *nada*, right before the adjective."
+    },
+    {
+      "prompt": "Say: The apartment is too small.",
+      "answer": "El apartamento es demasiado pequeño.",
+      "accept": [],
+      "why": "Too small is a complaint, so *demasiado*."
+    },
+    {
+      "prompt": "Give a soft verdict: The hotel isn't very nice.",
+      "answer": "El hotel no es muy bonito.",
+      "accept": [],
+      "why": "*No es muy* is the gentle way to criticise."
+    },
+    {
+      "prompt": "A woman speaking: I'm not worried at all.",
+      "answer": "No estoy nada preocupada.",
+      "accept": [
+        "Yo no estoy nada preocupada."
+      ],
+      "why": "*Nada* goes right before the adjective, and *preocupada* ends in *-a* because a woman is speaking."
+    },
+    {
+      "prompt": "Make it stronger: *La película no es muy larga.*",
+      "answer": "La película no es nada larga.",
+      "accept": [],
+      "why": "Swap *muy* for *nada* and the soft verdict becomes a strong one."
+    },
+    {
+      "prompt": "Make it plural: *La camisa es demasiado cara.*",
+      "answer": "Las camisas son demasiado caras.",
+      "accept": [],
+      "why": "The adjective goes plural, but *demasiado* stays exactly as it is."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Las camisas son demasiadas caras.",
+      "right": "Las camisas son demasiado caras.",
+      "why": "Close. Before an adjective, *demasiado* never changes. Only *caras* agrees."
+    },
+    {
+      "wrong": "La camisa es demasiado bonita.",
+      "right": "La camisa es muy bonita.",
+      "why": "Careful. *Demasiado* is always a complaint, so this sounds like a problem. For praise, use *muy*."
+    },
+    {
+      "wrong": "No es fácil nada.",
+      "right": "No es nada fácil.",
+      "why": "English puts *at all* at the end. Spanish puts *nada* right before the adjective."
+    }
+  ],
+  "personal": "Give two quick verdicts on your own life: one thing that is *demasiado* something (your rent, your commute, your phone) and one thing that *no es nada* something."
+}
