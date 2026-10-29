@@ -1,0 +1,220 @@
+{
+  "id": "sc-u14-b",
+  "unit": "u14",
+  "title": "Hernando goes digital",
+  "brief": "You're Tomás. Don Hernando's grandchildren have sent him a new phone, and he has no idea how it works. Explain what things are for and help him send his first audio. He's older than you, so use usted with him.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, mire. Mis nietos me mandaron un celular nuevo. ¿Qué es esta aplicación verde?",
+      "npcEn": "Tomás, look. My grandchildren sent me a new phone. What's this green app?",
+      "intent": "Say it's the app that you use to send messages.",
+      "accept": [
+        "Es la aplicación que uso para mandar mensajes.",
+        "Es una aplicación que sirve para mandar mensajes.",
+        "Esa es la aplicación que usamos para los mensajes."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "aplicación que",
+          "flags": "i",
+          "label": "the app that you use: la aplicación que…"
+        }
+      ],
+      "focus": "g:relative-que",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Y esto de aquí? ¿Para qué es esto?",
+      "npcEn": "And this thing here? What's this for?",
+      "intent": "Say it's for sending audios.",
+      "accept": [
+        "Es para mandar audios.",
+        "Eso es para mandar un audio.",
+        "Para mandar audios, señor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "para mandar",
+          "flags": "i",
+          "label": "for sending: para mandar"
+        }
+      ],
+      "focus": "p:para-inf-purpose",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mi nieto Juan no lee los mensajes largos.",
+      "npcEn": "My grandson Juan doesn't read long messages.",
+      "intent": "Say that's why he can send him an audio.",
+      "accept": [
+        "Por eso le puede mandar un audio.",
+        "Entonces puede mandarle un audio.",
+        "Pues, por eso puede mandarle un audio corto."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "por eso",
+            "entonces"
+          ],
+          "label": "that's why: por eso"
+        },
+        {
+          "type": "regex",
+          "pattern": "(le puede mandar|puede mandarle)",
+          "flags": "i",
+          "label": "send him: le puede mandar, or puede mandarle"
+        }
+      ],
+      "focus": "g:cause-result",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ya está. ¡Ay, no! Lo mandé al chat de Gloria.",
+      "npcEn": "Done. Oh, no! I sent it to Gloria's chat.",
+      "intent": "Calm him down: Gloria isn't going to listen to it today, because she doesn't have internet.",
+      "accept": [
+        "Tranquilo. Como Gloria no tiene internet, no lo va a escuchar hoy.",
+        "Tranquilo, Hernando. Gloria no va a escucharlo hoy, porque no tiene internet.",
+        "Tranquilo. Gloria no lo va a escuchar hoy, porque no tiene internet."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(lo va a escuchar|va a escucharlo)",
+          "flags": "i",
+          "label": "listen to it: lo va a escuchar, or va a escucharlo"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Oiga, ¿qué es mejor, un audio o una foto?",
+      "npcEn": "Hey, what's better, an audio or a photo?",
+      "intent": "Say that for you, a photo is better.",
+      "accept": [
+        "Para mí, una foto es mejor.",
+        "Para mí, es mejor una foto.",
+        "Pues, para mí, una foto es mejor que un audio."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "para mí",
+          "label": "for me: para mí"
+        }
+      ],
+      "focus": "p:para-mi",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Gracias, Tomás. Usted es un profesor excelente.",
+      "npcEn": "Thank you, Tomás. You're an excellent teacher.",
+      "intent": "Say you're welcome, and he can send you an audio tomorrow.",
+      "accept": [
+        "Con gusto. Mañana me manda un audio.",
+        "De nada. Puede mandarme un audio mañana.",
+        "Con gusto. Me puede mandar un audio mañana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(me manda|me puede mandar|puede mandarme)",
+          "flags": "i",
+          "label": "send me: me manda, me puede mandar, or puede mandarme"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:me-puede-ayudar",
+    "c:oiga-oye",
+    "c:porque",
+    "c:pues",
+    "c:que-es-esto",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:verb-infinitive",
+    "l:aplicación",
+    "l:aquí",
+    "l:audio",
+    "l:celular",
+    "l:chat",
+    "l:corto",
+    "l:escuchar",
+    "l:estar",
+    "l:excelente",
+    "l:foto",
+    "l:gusto",
+    "l:hoy",
+    "l:internet",
+    "l:ir",
+    "l:largo",
+    "l:leer",
+    "l:mandar",
+    "l:mañana",
+    "l:mejor",
+    "l:mensaje",
+    "l:mirar",
+    "l:nieto",
+    "l:nuevo",
+    "l:oír",
+    "l:poder",
+    "l:profesor",
+    "l:qué",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:tener",
+    "l:tranquilo",
+    "l:usar",
+    "l:verde",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:masculine-plural-mixed",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:para-mi",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:question-word-order",
+    "p:request-ladder",
+    "p:ser-profession-no-article",
+    "p:servir-para"
+  ]
+}

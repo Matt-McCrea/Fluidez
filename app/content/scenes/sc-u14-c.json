@@ -1,0 +1,241 @@
+{
+  "id": "sc-u14-c",
+  "unit": "u14",
+  "title": "Daniela from Altamira",
+  "brief": "You're Tomás. Rosa's old phone rings at the café, and it's a woman from Altamira with an offer. Say no, give your reasons, and keep your secrets. She's a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días. Habla Daniela Rojas, de la empresa Altamira. ¿Hablo con el señor Tomás?",
+      "npcEn": "Good morning. This is Daniela Rojas, from the company Altamira. Am I speaking to Mr Tomás?",
+      "intent": "Say yes, it's you, and ask what she needs.",
+      "accept": [
+        "Sí, soy yo. ¿Qué necesita?",
+        "Buenos días. Sí, soy Tomás. ¿Qué necesita?",
+        "Sí, con él. ¿Qué necesita, señora?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask her what she needs"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "necesitas"
+          ],
+          "label": "use usted (necesita), not tú (necesitas)"
+        }
+      ],
+      "focus": "g:questions",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Tenemos una oferta especial para usted. Altamira quiere comprar el café.",
+      "npcEn": "We have a special offer for you. Altamira wants to buy the café.",
+      "intent": "Say no, thank you: you're not selling the café, because it was your grandmother's.",
+      "accept": [
+        "No, gracias. No vendo el café, porque era de mi abuela.",
+        "Como el café era de mi abuela, no lo vendo.",
+        "No, gracias. El café era de mi abuela, y por eso no lo vendo."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say you're not selling: no vendo"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "porque",
+            "como",
+            "por eso"
+          ],
+          "label": "give the reason: porque, como or por eso"
+        }
+      ],
+      "focus": "g:cause-result",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Pero el contrato de arriendo es de Altamira, señor. Termina en un año.",
+      "npcEn": "But the lease belongs to Altamira, sir. It ends in a year.",
+      "intent": "Say you know, but the building that Rosa and Joaquín bought is another thing.",
+      "accept": [
+        "Ya lo sé, pero el edificio que compraron Rosa y Joaquín es otra cosa.",
+        "Sí, pero el edificio que compraron mi abuela y Joaquín es otra cosa.",
+        "Lo sé. Pero el edificio que compraron Rosa y Joaquín es otra cosa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "edificio que",
+          "flags": "i",
+          "label": "the building that they bought: el edificio que…"
+        }
+      ],
+      "focus": "g:relative-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿El edificio? ¿Y usted tiene los papeles de ese edificio?",
+      "npcEn": "The building? And do you have the papers for that building?",
+      "intent": "Say it's a detail that you're not going to share with her.",
+      "accept": [
+        "Es un detalle que no voy a compartir con usted.",
+        "Eso es un detalle que no voy a compartir.",
+        "Lo siento, es un detalle que no voy a compartir con usted."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "detalle que",
+          "flags": "i",
+          "label": "a detail that…: un detalle que"
+        },
+        {
+          "type": "negation",
+          "label": "you're not going to share it: no voy a compartir"
+        }
+      ],
+      "focus": "g:relative-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bueno, señor. Lo voy a llamar otra vez el lunes.",
+      "npcEn": "All right, sir. I'll call you again on Monday.",
+      "intent": "Say she doesn't need to call you, because your answer is no.",
+      "accept": [
+        "No necesita llamarme, porque mi respuesta es no.",
+        "No necesita llamarme el lunes. Mi respuesta es no.",
+        "Gracias, pero no necesita llamarme. Mi respuesta es no."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(llamarme|me necesita llamar)",
+          "flags": "i",
+          "label": "call me: llamarme"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "necesitas"
+          ],
+          "label": "use usted (necesita), not tú (necesitas)"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Muy bien, señor. Hasta luego.",
+      "npcEn": "Very well, sir. Goodbye.",
+      "intent": "Say goodbye, and tell her to come to the café one day to have a tinto.",
+      "accept": [
+        "Hasta luego, señora. Venga un día al café para tomar un tinto.",
+        "Hasta luego. Venga al café un día para tomar un tinto.",
+        "Adiós, señora. Venga un día a La Candelaria para tomar un tinto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "para tomar",
+          "flags": "i",
+          "label": "to have a tinto: para tomar"
+        },
+        {
+          "type": "verbForm",
+          "inf": "venir",
+          "tense": "imperativo",
+          "person": "usted",
+          "label": "come (usted): venga"
+        }
+      ],
+      "focus": "p:para-inf-purpose",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:con-el-ella",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:lo-siento-pero-no-puedo",
+    "c:porque",
+    "c:si-soy-yo",
+    "c:tienes",
+    "c:voy-a",
+    "g:cause-result",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:arriendo",
+    "l:año",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:compartir",
+    "l:comprar",
+    "l:contrato",
+    "l:cosa",
+    "l:detalle",
+    "l:día",
+    "l:edificio",
+    "l:empresa",
+    "l:especial",
+    "l:hablar",
+    "l:ir",
+    "l:llamar",
+    "l:lunes",
+    "l:necesitar",
+    "l:oferta",
+    "l:papel",
+    "l:querer",
+    "l:qué",
+    "l:respuesta",
+    "l:saber",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:tener",
+    "l:terminar",
+    "l:tinto",
+    "l:tomar",
+    "l:vender",
+    "l:venir",
+    "l:vez",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:possessives-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:time-sequence-basic"
+  ]
+}

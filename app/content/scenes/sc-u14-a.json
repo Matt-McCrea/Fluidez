@@ -1,0 +1,234 @@
+{
+  "id": "sc-u14-a",
+  "unit": "u14",
+  "title": "Six in the morning",
+  "brief": "You're Tomás. Vale has just come back from Medellín on the night bus, and you're waiting for her at the café with a tinto. She read your long message, and now she wants the whole story, with reasons. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Por fin, Tomás! Nueve horas de bus. ¿Ese tinto es para mí?",
+      "npcEn": "At last, Tomás! Nine hours on the bus. Is that tinto for me?",
+      "intent": "Say yes, it's the tinto that you made for her.",
+      "accept": [
+        "Sí, es el tinto que hice para ti.",
+        "Claro, es el tinto que te hice.",
+        "Sí. Es un tinto que hice para ti, Vale."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "tinto que",
+          "flags": "i",
+          "label": "the tinto that you made: el tinto que…"
+        }
+      ],
+      "focus": "g:relative-que",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Gracias. Bueno, ¿dónde está la famosa carta?",
+      "npcEn": "Thanks. Right, where's this famous letter?",
+      "intent": "Say you have it here, and she can read it now.",
+      "accept": [
+        "La tengo aquí. Puedes leerla ahora.",
+        "Aquí la tengo. La puedes leer ahora.",
+        "Está aquí. Puedes leerla ya."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(puedes leerla|la puedes leer)",
+          "flags": "i",
+          "label": "you can read it: puedes leerla, or la puedes leer"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Bueno, a ver. ¿Y por qué es tan importante esta frase?",
+      "npcEn": "OK, let's see. And why is this sentence so important?",
+      "intent": "Explain: Rosa and Joaquín bought the building, so the building belongs to the family.",
+      "accept": [
+        "Porque Rosa y Joaquín compraron el edificio. Por eso el edificio es de la familia.",
+        "Rosa y Joaquín compraron el edificio, así que es de la familia.",
+        "Como Rosa y Joaquín compraron el edificio, el edificio es de la familia."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "por eso",
+            "así que",
+            "como"
+          ],
+          "label": "join the reason and the result: por eso, así que, or como at the start"
+        }
+      ],
+      "focus": "g:cause-result",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Pero sin la escritura no hay nada, Tomás.",
+      "npcEn": "But without the deed there's nothing, Tomás.",
+      "intent": "Say you don't know where it is, and ask if she's going to help you look for it.",
+      "accept": [
+        "No sé dónde está. ¿Me vas a ayudar a buscarla?",
+        "No sé dónde está. ¿Me ayudas a buscarla?",
+        "No sé dónde está, pero la vamos a buscar, ¿verdad?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask her: end with a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "(buscarla|la vamos a buscar)",
+          "flags": "i",
+          "label": "look for it: buscarla"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Una pregunta. ¿Por qué Simón dice «querida» todo el día?",
+      "npcEn": "One question. Why does Simón say \"querida\" all day?",
+      "intent": "Say it's a word from an audio that you didn't send.",
+      "accept": [
+        "Es una palabra de un audio que no mandé.",
+        "Pues, es de un audio que no te mandé.",
+        "Es una palabra de un audio que no te mandé."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "audio que",
+          "flags": "i",
+          "label": "an audio that you didn't send: un audio que…"
+        },
+        {
+          "type": "negation",
+          "label": "you didn't send it: no mandé"
+        }
+      ],
+      "focus": "g:relative-que",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Bueno. ¿Y qué hacemos primero?",
+      "npcEn": "OK. So what do we do first?",
+      "intent": "Say first you open the café, to sell tintos.",
+      "accept": [
+        "Primero abrimos el café para vender tintos.",
+        "Primero abrimos el café, para vender tintos.",
+        "Abrimos el café primero, para vender tintos y almojábanas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "para vender",
+          "flags": "i",
+          "label": "to sell: para vender"
+        }
+      ],
+      "focus": "p:para-inf-purpose",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:claro-listo",
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:no-cierto",
+    "c:no-hay-nada",
+    "c:no-se",
+    "c:porque",
+    "c:pues",
+    "c:tengo",
+    "c:vamos-a",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:ahora",
+    "l:almojábana",
+    "l:aquí",
+    "l:audio",
+    "l:ayudar",
+    "l:bueno",
+    "l:bus",
+    "l:buscar",
+    "l:café",
+    "l:carta",
+    "l:claro",
+    "l:comprar",
+    "l:decir",
+    "l:día",
+    "l:dónde",
+    "l:edificio",
+    "l:escritura",
+    "l:estar",
+    "l:familia",
+    "l:famoso",
+    "l:fin",
+    "l:frase",
+    "l:hacer",
+    "l:hora",
+    "l:importante",
+    "l:ir",
+    "l:leer",
+    "l:mandar",
+    "l:palabra",
+    "l:poder",
+    "l:pregunta",
+    "l:querer",
+    "l:qué",
+    "l:saber",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:vender",
+    "l:ver",
+    "l:verdad",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:prep-questions-basic",
+    "p:question-word-order",
+    "p:request-ladder",
+    "p:time-sequence-basic",
+    "p:todos-los-dias"
+  ]
+}
