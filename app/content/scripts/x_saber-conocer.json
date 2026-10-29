@@ -1,0 +1,195 @@
+{
+  "node": "x:saber-conocer",
+  "hook": {
+    "line": "Vale is horrified: Tomás has lived in Bogotá for weeks and still hasn't been up Monserrate. English has one verb for know. Spanish has two, and this little exchange needs both.",
+    "es": "¿Conoces Monserrate?\nNo, pero sé llegar.",
+    "en": "Have you been up Monserrate?\nNo, but I know how to get there."
+  },
+  "examples": [
+    {
+      "es": "Conozco a Vale.",
+      "en": "I know Vale."
+    },
+    {
+      "es": "Vale sabe hacer pan.",
+      "en": "Vale knows how to make bread."
+    },
+    {
+      "es": "Hernando conoce Bogotá muy bien.",
+      "en": "Hernando knows Bogotá very well."
+    },
+    {
+      "es": "¿Sabes cuánto cuesta el tinto?",
+      "en": "Do you know how much the black coffee costs? (to a friend)"
+    },
+    {
+      "es": "¿Usted conoce a Ricardo Altamira?\nNo, no lo conozco.",
+      "en": "Do you know Ricardo Altamira? (formal)\nNo, I don't know him."
+    },
+    {
+      "es": "¿Conoces Medellín?",
+      "en": "Have you been to Medellín? (to a friend)"
+    }
+  ],
+  "rule": "English has one know. Spanish splits it in two.\n\n*Saber* is for things in your head: facts, answers, how to do something.\n*Sé nadar.* *¿Sabes cuánto cuesta?*\n\n*Conocer* is for things you've met: people, places, a restaurant, a neighbourhood.\n*Conozco a Vale.* *Hernando conoce Bogotá.*\n\nThe test: could you look it up, or learn it as a skill? *Saber*. Could you shake its hand or walk around it? *Conocer*.\n\nTwo extras. A person after *conocer* gets a little *a*: *conozco a Vale*. And *¿Conoces Medellín?* is how Colombians ask have you been to Medellín?\n\nBoth verbs are odd only in the I form: *sé*, *conozco*. The rest are regular: *sabes*, *sabe*, *conoces*, *conoce*.",
+  "smallPrint": "Teachers call this the contrast between *saber* (knowing facts and skills) and *conocer* (being familiar with people and places).",
+  "readAndPick": [
+    {
+      "es": "Conozco a Mariana.",
+      "options": [
+        "I know Mariana.",
+        "I know where Mariana is."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Sabes dónde queda el hotel?",
+      "options": [
+        "Have you been to the hotel?",
+        "Do you know where the hotel is?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Conoces Medellín?",
+      "options": [
+        "Do you know where Medellín is?",
+        "Do you know how far Medellín is?",
+        "Have you been to Medellín?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale sabe bailar.",
+      "options": [
+        "Vale knows how to dance.",
+        "Vale knows the dancer."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No conozco el barrio.",
+      "options": [
+        "I don't know what the neighbourhood is called.",
+        "I don't know the neighbourhood."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Usted conoce a don Hernando?",
+      "options": [
+        "Do you know Don Hernando? (formal)",
+        "Do you know where Don Hernando is? (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No sé nadar.",
+      "options": [
+        "I don't know the swimmer.",
+        "I can't swim.",
+        "I don't know the pool."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás todavía no conoce Monserrate.",
+      "options": [
+        "Tomás doesn't know how to get to Monserrate yet.",
+        "Tomás hasn't been up Monserrate yet."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando sabe mucho de Bogotá.",
+      "options": [
+        "Hernando knows a lot about Bogotá.",
+        "Hernando has met a lot of people in Bogotá."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ a Vale.* (*Sé* or *Conozco*) I know Vale.",
+      "answer": "Conozco a Vale.",
+      "accept": [],
+      "why": "Vale is a person you've met, so it's *conozco*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *¿___ cocinar?* (*Sabes* or *Conoces*) Can you cook? (to a friend)",
+      "answer": "¿Sabes cocinar?",
+      "accept": [],
+      "why": "Cooking is a skill, and skills go with *saber*."
+    },
+    {
+      "prompt": "Ask a friend: Have you been to Medellín?",
+      "answer": "¿Conoces Medellín?",
+      "accept": [],
+      "why": "A place you could visit takes *conocer*."
+    },
+    {
+      "prompt": "I don't know how much it costs.",
+      "answer": "No sé cuánto cuesta.",
+      "accept": [],
+      "why": "A price is a fact you could look up: *saber*."
+    },
+    {
+      "prompt": "Hernando knows Bogotá very well.",
+      "answer": "Hernando conoce Bogotá muy bien.",
+      "accept": [
+        "Hernando conoce muy bien Bogotá."
+      ],
+      "why": "A city is a place you know by walking around it: *conoce*."
+    },
+    {
+      "prompt": "Ask Don Hernando (formal) instead of a friend: *¿Conoces a Mariana?*",
+      "answer": "¿Usted conoce a Mariana?",
+      "accept": [
+        "¿Conoce a Mariana?",
+        "¿Conoce usted a Mariana?"
+      ],
+      "why": "For *usted*, *conoces* becomes *conoce*."
+    },
+    {
+      "prompt": "Make it negative: *Sé nadar.*",
+      "answer": "No sé nadar.",
+      "accept": [],
+      "why": "*No* goes right before *sé*."
+    },
+    {
+      "prompt": "Make it about we: *Conozco el barrio.*",
+      "answer": "Conocemos el barrio.",
+      "accept": [],
+      "why": "Only the I form is odd; *conocemos* is regular."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Sé a Vale.",
+      "right": "Conozco a Vale.",
+      "why": "Almost. Vale is a person you've met, so it's *conozco*; *sé* is for facts and skills."
+    },
+    {
+      "wrong": "Conozco nadar.",
+      "right": "Sé nadar.",
+      "why": "Swimming is a skill, and skills go with *saber*."
+    },
+    {
+      "wrong": "Conozco Vale.",
+      "right": "Conozco a Vale.",
+      "why": "A person after *conocer* needs a little *a* in front."
+    },
+    {
+      "wrong": "No conozco cuánto cuesta.",
+      "right": "No sé cuánto cuesta.",
+      "why": "A price is a fact, not a place or a person: *no sé*."
+    },
+    {
+      "wrong": "Sabo nadar.",
+      "right": "Sé nadar.",
+      "why": "The I form of *saber* is just *sé*, with an accent."
+    }
+  ],
+  "personal": "Write one place you know with *conozco* and one thing you know how to do with *sé*."
+}

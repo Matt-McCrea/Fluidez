@@ -1,0 +1,169 @@
+{
+  "node": "p:tener-ganas-de",
+  "hook": {
+    "line": "After a long day at the café, nobody in Bogotá says I want to cook. They say what they feel like doing, or, more often, what they don't.",
+    "es": "Hoy no tengo ganas de cocinar.",
+    "en": "I don't feel like cooking today."
+  },
+  "examples": [
+    {
+      "es": "Tengo ganas de salir.",
+      "en": "I feel like going out."
+    },
+    {
+      "es": "¿Tienes ganas de subir a Monserrate?",
+      "en": "Do you feel like going up Monserrate? (to a friend)"
+    },
+    {
+      "es": "Hernando no tiene ganas de trabajar.",
+      "en": "Hernando doesn't feel like working."
+    },
+    {
+      "es": "Tenemos muchas ganas de conocer Cartagena.",
+      "en": "We really want to visit Cartagena."
+    },
+    {
+      "es": "Tengo ganas de un tinto.",
+      "en": "I feel like a black coffee."
+    },
+    {
+      "es": "¿Tiene ganas de un café, don Hernando?",
+      "en": "Do you feel like a coffee, Don Hernando? (formal)"
+    }
+  ],
+  "rule": "English feels like something. Spanish has the urge: *tener ganas de*.\n\n*tengo ganas de* + the plain verb: *Tengo ganas de salir*. English adds -ing (going out); Spanish never does.\nOr + a thing: *Tengo ganas de un tinto*.\n\nOnly *tener* changes: *tienes*, *tiene*, *tenemos*. *Ganas* is always plural and always followed by *de*.\n\nFor really, add *muchas*: *Tenemos muchas ganas de viajar*. And *no tengo ganas* on its own is I'm not in the mood.",
+  "smallPrint": "In Spain you'll hear *me apetece* for this. In Colombia, *tener ganas de* is the everyday choice, and *¿te provoca?* is a very local alternative.",
+  "readAndPick": [
+    {
+      "es": "Tengo ganas de salir.",
+      "options": [
+        "I feel like going out.",
+        "I have to go out.",
+        "I went out."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No tengo ganas de cocinar.",
+      "options": [
+        "I can't cook.",
+        "I don't feel like cooking."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Tienes ganas de bailar?",
+      "options": [
+        "Do you have to dance?",
+        "Do you feel like dancing?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale tiene ganas de ir a la playa.",
+      "options": [
+        "Vale has to go to the beach.",
+        "Vale went to the beach.",
+        "Vale feels like going to the beach."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tenemos muchas ganas de viajar.",
+      "options": [
+        "We really want to travel.",
+        "We travel a lot."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando tiene que trabajar.",
+      "options": [
+        "Hernando feels like working.",
+        "Hernando has to work."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Tienen ganas de un jugo?",
+      "options": [
+        "Do you all feel like a juice?",
+        "Do you all have juice?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hoy no tengo ganas.",
+      "options": [
+        "I'm not hungry today.",
+        "I'm not in the mood today."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Tengo ganas ___ salir.* (*de* or *que*) I feel like going out.",
+      "answer": "Tengo ganas de salir.",
+      "accept": [],
+      "why": "*Ganas* always takes *de*; *tengo que* means have to."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *No ___ ganas de cocinar.* (*tengo* or *estoy*) I don't feel like cooking.",
+      "answer": "No tengo ganas de cocinar.",
+      "accept": [],
+      "why": "You have the urge, so it's *tener*."
+    },
+    {
+      "prompt": "Ask a friend: Do you feel like going up Monserrate?",
+      "answer": "¿Tienes ganas de subir a Monserrate?",
+      "accept": [],
+      "why": "*Tienes* for a friend, then *de* + the plain verb."
+    },
+    {
+      "prompt": "I feel like a black coffee. (use the Colombian word)",
+      "answer": "Tengo ganas de un tinto.",
+      "accept": [],
+      "why": "*Ganas de* can take a thing as well as a verb."
+    },
+    {
+      "prompt": "Hernando doesn't feel like working.",
+      "answer": "Hernando no tiene ganas de trabajar.",
+      "accept": [],
+      "why": "*No* before *tiene*; the verb after *de* stays plain."
+    },
+    {
+      "prompt": "Make it about we, and say you really want to: *Tengo ganas de viajar.*",
+      "answer": "Tenemos muchas ganas de viajar.",
+      "accept": [],
+      "why": "*Tenemos* for we, *muchas* for really."
+    },
+    {
+      "prompt": "Ask Don Hernando (formal): *¿Tienes ganas de un café?*",
+      "answer": "¿Tiene ganas de un café?",
+      "accept": [
+        "¿Usted tiene ganas de un café?",
+        "¿Tiene usted ganas de un café?"
+      ],
+      "why": "For *usted*, *tienes* becomes *tiene*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tengo ganas de saliendo.",
+      "right": "Tengo ganas de salir.",
+      "why": "English says going; after *de*, Spanish uses the plain verb *salir*."
+    },
+    {
+      "wrong": "Tengo gana de salir.",
+      "right": "Tengo ganas de salir.",
+      "why": "*Ganas* is always plural here."
+    },
+    {
+      "wrong": "Tengo ganas salir.",
+      "right": "Tengo ganas de salir.",
+      "why": "Don't drop the *de*: it links *ganas* to the verb."
+    }
+  ],
+  "personal": "What do you feel like doing this weekend, and what don't you feel like doing? Write both with *tengo ganas de*."
+}

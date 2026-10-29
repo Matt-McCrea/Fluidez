@@ -1,0 +1,161 @@
+{
+  "node": "p:saber-conocer",
+  "hook": {
+    "line": "On a trip, two questions come up all the time: have you been there, and do you know when it opens? Both are know questions in Spanish, and the word after the verb tells you which one.",
+    "es": "¿Conoces Cartagena?\nSí, una vez.",
+    "en": "Have you been to Cartagena?\nYes, once."
+  },
+  "examples": [
+    {
+      "es": "Sé nadar.",
+      "en": "I can swim."
+    },
+    {
+      "es": "¿Sabes a qué hora abre la panadería?",
+      "en": "Do you know what time the bakery opens? (to a friend)"
+    },
+    {
+      "es": "No conozco a tu hermano.",
+      "en": "I don't know your brother."
+    },
+    {
+      "es": "Mariana no sabe cocinar.",
+      "en": "Mariana can't cook."
+    },
+    {
+      "es": "¿Conoces bien a Hernando?",
+      "en": "Do you know Hernando well? (to a friend)"
+    }
+  ],
+  "rule": "Look at what comes right after the verb.\n\n*saber* + a verb: a skill. *Sé nadar* is I can swim.\n*saber* + *cuánto*, *cómo*, *a qué hora*: a piece of information. *¿Sabes a qué hora abre?*\n*conocer* + a place: you've been there. *¿Conoces Cartagena?* is have you been to Cartagena?\n*conocer* + *a* + a person: you've met them. *No conozco a tu hermano.*\n\nThere's no how to in Spanish: the verb right after *sé* already says it.",
+  "smallPrint": "In grammar terms, *saber* takes an infinitive or a question word, and *conocer* takes a direct object, with the personal *a* for people.",
+  "readAndPick": [
+    {
+      "es": "Sé nadar.",
+      "options": [
+        "I can swim.",
+        "I know a swimmer."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Conoces Cartagena?",
+      "options": [
+        "Do you know where Cartagena is?",
+        "Have you been to Cartagena?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No conozco a tu hermano.",
+      "options": [
+        "I don't know what your brother is called.",
+        "I don't know where your brother is.",
+        "I don't know your brother."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Sabes a qué hora abre la panadería?",
+      "options": [
+        "Do you know the bakery?",
+        "Do you know what time the bakery opens?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana no sabe cocinar.",
+      "options": [
+        "Mariana can't cook.",
+        "Mariana doesn't know the cook."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando conoce todos los pueblos de la costa.",
+      "options": [
+        "Hernando knows how many towns are on the coast.",
+        "Hernando knows every town on the coast."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Sabes cuánto cuesta el hotel?",
+      "options": [
+        "Do you know how much the hotel costs?",
+        "Have you stayed at the hotel?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás sabe bailar, pero no conoce a nadie.",
+      "options": [
+        "Tomás knows the dancers, but nobody knows him.",
+        "Tomás can dance, but he doesn't know anyone."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ bailar.* (*Sé* or *Conozco*) I can dance.",
+      "answer": "Sé bailar.",
+      "accept": [],
+      "why": "A verb right after it means a skill: *sé*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *¿___ a mi hermana?* (*Sabes* or *Conoces*) Do you know my sister? (to a friend)",
+      "answer": "¿Conoces a mi hermana?",
+      "accept": [],
+      "why": "A person you could meet: *conoces*, with *a*."
+    },
+    {
+      "prompt": "Ask a friend: Have you been to Santa Marta?",
+      "answer": "¿Conoces Santa Marta?",
+      "accept": [],
+      "why": "Have you been to is *conocer* + the place."
+    },
+    {
+      "prompt": "Ask a friend: Do you know what time the bakery opens?",
+      "answer": "¿Sabes a qué hora abre la panadería?",
+      "accept": [],
+      "why": "*A qué hora* asks for information, so it's *saber*."
+    },
+    {
+      "prompt": "Vale can't swim.",
+      "answer": "Vale no sabe nadar.",
+      "accept": [],
+      "why": "A skill she doesn't have: *no sabe* + the verb."
+    },
+    {
+      "prompt": "Make it a question to a friend: *Sabes cocinar.*",
+      "answer": "¿Sabes cocinar?",
+      "accept": [],
+      "why": "Same words; the question marks do the work."
+    },
+    {
+      "prompt": "Make it negative: *Conozco a tu hermano.*",
+      "answer": "No conozco a tu hermano.",
+      "accept": [],
+      "why": "*No* before the verb; the *a* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Sé cómo nadar.",
+      "right": "Sé nadar.",
+      "why": "English says know how to; Spanish puts the verb straight after *sé*."
+    },
+    {
+      "wrong": "Conozco tu hermano.",
+      "right": "Conozco a tu hermano.",
+      "why": "A person after *conocer* takes *a*."
+    },
+    {
+      "wrong": "¿Sabes Cartagena?",
+      "right": "¿Conoces Cartagena?",
+      "why": "A place you could visit goes with *conocer*."
+    }
+  ],
+  "personal": "Write one thing you can do with *sé* and one city you've been to with *conozco*."
+}

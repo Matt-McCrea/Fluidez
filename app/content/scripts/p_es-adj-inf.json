@@ -1,0 +1,170 @@
+{
+  "node": "p:es-adj-inf",
+  "hook": {
+    "line": "Rosa's ajiaco recipe hangs on the café wall, and Tomás has never made it. His first question needs a simple frame that Spanish uses all day: it's hard to, it's easy to, it's important to.",
+    "es": "¿Es difícil hacer ajiaco?",
+    "en": "Is it hard to make ajiaco?"
+  },
+  "examples": [
+    {
+      "es": "Es difícil aprender idiomas.",
+      "en": "It's hard to learn languages."
+    },
+    {
+      "es": "Es importante dormir bien.",
+      "en": "It's important to sleep well."
+    },
+    {
+      "es": "No es fácil encontrar apartamento en Bogotá.",
+      "en": "It's not easy to find an apartment in Bogotá."
+    },
+    {
+      "es": "Hablar español es útil.",
+      "en": "Speaking Spanish is useful."
+    },
+    {
+      "es": "¿Es caro vivir en el centro?",
+      "en": "Is it expensive to live downtown?"
+    },
+    {
+      "es": "Es bonito ver la ciudad desde Monserrate.",
+      "en": "It's lovely to see the city from Monserrate."
+    }
+  ],
+  "rule": "Start with *es*, add a describing word, then the plain verb:\n*Es difícil aprender idiomas.* It's hard to learn languages.\n\nThree English habits disappear.\nNo it: *es* alone already means it's.\nNo to: the verb follows straight on. Not *es difícil de aprender*.\nNo -ing: when the activity comes first, it's still the plain verb. *Hablar español es útil*, never *hablando*.\n\nThe describing word stays in its basic form (*difícil*, *importante*, *caro*), whatever the activity.",
+  "smallPrint": "Teachers call this the infinitive as subject: *es* + adjective + infinitive for a general truth. For one particular person (it's important that you…) Spanish needs a different form, which comes later.",
+  "readAndPick": [
+    {
+      "es": "Es difícil aprender idiomas.",
+      "options": [
+        "It's hard to learn languages.",
+        "Learning languages is easy."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es importante dormir bien.",
+      "options": [
+        "I sleep well.",
+        "It's important to sleep well."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hablar español es útil.",
+      "options": [
+        "Speaking Spanish is useful.",
+        "I'm speaking Spanish.",
+        "He speaks useful Spanish."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No es fácil encontrar apartamento en Bogotá.",
+      "options": [
+        "It's easy to find an apartment in Bogotá.",
+        "It's not easy to find an apartment in Bogotá."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Es caro vivir en el centro?",
+      "options": [
+        "Do you live downtown?",
+        "Is downtown expensive?",
+        "Is it expensive to live downtown?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es bueno caminar.",
+      "options": [
+        "He walks well.",
+        "It's good to walk."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Bucear es fácil.",
+      "options": [
+        "Diving is easy.",
+        "She dives easily."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es útil hablar inglés en el aeropuerto.",
+      "options": [
+        "They speak English at the airport.",
+        "It's useful to speak English at the airport."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Es difícil ___ ajiaco.* (*hacer* or *haciendo*) It's hard to make ajiaco.",
+      "answer": "Es difícil hacer ajiaco.",
+      "accept": [],
+      "why": "After the describing word comes the plain verb."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Es importante ___ bien.* (*dormir* or *de dormir*) It's important to sleep well.",
+      "answer": "Es importante dormir bien.",
+      "accept": [],
+      "why": "No *de*: the verb follows straight on."
+    },
+    {
+      "prompt": "It's easy to get to the café.",
+      "answer": "Es fácil llegar al café.",
+      "accept": [],
+      "why": "*Es* + *fácil* + the plain verb; no word for it or to."
+    },
+    {
+      "prompt": "It's important to read the contract.",
+      "answer": "Es importante leer el contrato.",
+      "accept": [
+        "Leer el contrato es importante."
+      ],
+      "why": "Same frame as *es importante dormir bien*."
+    },
+    {
+      "prompt": "Travelling by plane is expensive.",
+      "answer": "Viajar en avión es caro.",
+      "accept": [
+        "Es caro viajar en avión."
+      ],
+      "why": "An activity as the subject is the plain verb, not an -ing form."
+    },
+    {
+      "prompt": "Make it negative: *Es difícil hacer pan.*",
+      "answer": "No es difícil hacer pan.",
+      "accept": [],
+      "why": "*No* goes before *es*."
+    },
+    {
+      "prompt": "Start with the activity instead: *Es útil hablar español.*",
+      "answer": "Hablar español es útil.",
+      "accept": [],
+      "why": "The plain verb can open the sentence too."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es difícil de aprender idiomas.",
+      "right": "Es difícil aprender idiomas.",
+      "why": "Almost. No *de* here: the verb follows the describing word directly."
+    },
+    {
+      "wrong": "Hablando español es útil.",
+      "right": "Hablar español es útil.",
+      "why": "An activity as the subject is the plain verb in Spanish, not the -ing form."
+    },
+    {
+      "wrong": "Está importante dormir bien.",
+      "right": "Es importante dormir bien.",
+      "why": "For it's important to, Spanish uses *es*, not *está*."
+    }
+  ],
+  "personal": "What's easy for you in Spanish, and what's hard? Write one sentence with *es fácil* and one with *es difícil*."
+}
