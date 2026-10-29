@@ -1,0 +1,212 @@
+{
+  "id": "ch029",
+  "unit": "u11",
+  "title": "Al otro lado",
+  "text": "Vale: Tomás, ¿quién es la mujer de las gafas?\nTomás: Es Mariana, la niña de los domingos. Ahora es periodista.\nVale: ¿Y es más simpática que yo?\nSimón: ¡Más simpática! ¡Más simpática!\nTomás: No, no. Es menos simpática que tú. Bueno... es tan simpática como tú.\nVale: Mal, Tomás. Muy mal.\nMariana trae dos fotos de la cuadra. Las saca de su bolsa y las pone en la mesa.\nMariana: Esta es la cuadra en 1995. Y esta es la cuadra hoy.\nHernando: En 1995 había más gente en la calle, y menos carros. Y yo era más joven y más guapo que Tomás.\nMariana: Todo comenzó con un artículo pequeño. Pero la historia resultó más grande que un artículo. Altamira ya tiene trece casas en la cuadra. Las compró en un año, y paga mejor que el banco.\nTomás: ¿Y la casa de Gloria? ¿Y el café?\nMariana: Gloria no vende. Y el café es más importante que las trece casas. Mira la foto. Las trece casas están a un lado del café, y la casa de Gloria está al otro lado. El café está en la esquina, en el centro. Altamira quiere un hotel en toda la cuadra, y sin la esquina, no hay hotel.\nVale pone una almojábana delante de Mariana. Después pone otra delante de Tomás.\nMariana: Vale, tu almojábana es mejor que la almojábana de Rosa.\nVale: ¿Es mejor? No, Mariana, eso no es verdad.\nMariana: Es verdad. Y Rosa también lo decía.\nVale mira a Mariana un rato. Después sirve un tinto para Mariana.\nHernando: Rosa no quería un hotel. Rosa quería su propio café, en su propia esquina.\nMariana: Y es tu derecho, Tomás. Pero una pregunta: el edificio del café, ¿de quién es? ¿Quién es el dueño?\nTomás: De Rosa, ¿no?\nHernando: No, mijo. Rosa pagaba arriendo. Todos los meses, durante cuarenta años.\nMariana: Entonces el dueño es otra persona. Y Altamira ya está buscando a esa persona.",
+  "gloss": [
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "Mal, Tomás. Muy mal.",
+      "en": "Wrong, Tomás. Very wrong."
+    },
+    {
+      "es": "La historia resultó más grande que un artículo.",
+      "en": "The story turned out bigger than an article."
+    },
+    {
+      "es": "paga mejor que el banco",
+      "en": "pays better than the bank"
+    },
+    {
+      "es": "a un lado del café",
+      "en": "on one side of the café"
+    },
+    {
+      "es": "al otro lado",
+      "en": "on the other side"
+    },
+    {
+      "es": "Y es tu derecho, Tomás.",
+      "en": "And it's your right, Tomás."
+    },
+    {
+      "es": "Rosa pagaba arriendo.",
+      "en": "Rosa used to pay rent."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why is the café so important to Altamira?",
+      "options": [
+        "Without the corner there can be no hotel on the block",
+        "It makes the best coffee",
+        "It is the cheapest building",
+        "Ricardo Altamira grew up there"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Vale feel about Mariana at first?",
+      "options": [
+        "A little jealous",
+        "Very happy",
+        "Bored",
+        "Afraid of her"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What changes Vale's mind about Mariana?",
+      "options": [
+        "Mariana says Vale's almojábana is better than Rosa's",
+        "Mariana pays the bill",
+        "Mariana brings flowers",
+        "Mariana leaves early"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿De quién es el edificio del café?",
+      "options": [
+        "De otra persona, no de Rosa",
+        "De Rosa",
+        "De Hernando",
+        "De Gloria"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How many houses on the block does Altamira already have?",
+      "options": [
+        "Thirteen",
+        "Fourteen",
+        "Three",
+        "Thirty"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Simón shout when Vale asks if Mariana is nicer?",
+      "options": [
+        "Nicer, nicer",
+        "The last one",
+        "The doll",
+        "I'll take the almojábana"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who does not want to sell?",
+      "options": [
+        "Gloria",
+        "Hernando's children",
+        "The teacher",
+        "Vale"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Rosa paid rent on the café for forty years, so somebody else owns the corner, and Altamira is already looking for them. Tonight the rain comes, and the lights go out.",
+  "requires": [
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:no-cierto",
+    "c:oye-mira",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "p:demonstratives-basic",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:ahora",
+    "l:almojábana",
+    "l:arriendo",
+    "l:artículo",
+    "l:año",
+    "l:banco",
+    "l:bolsa",
+    "l:bueno",
+    "l:buscar",
+    "l:café",
+    "l:calle",
+    "l:carro",
+    "l:casa",
+    "l:centro",
+    "l:comenzar",
+    "l:comprar",
+    "l:cuadra",
+    "l:decir",
+    "l:delante",
+    "l:derecho",
+    "l:después",
+    "l:domingo",
+    "l:dueño",
+    "l:edificio",
+    "l:esquina",
+    "l:estar",
+    "l:foto",
+    "l:gafas",
+    "l:gente",
+    "l:grande",
+    "l:guapo",
+    "l:historia",
+    "l:hotel",
+    "l:hoy",
+    "l:importante",
+    "l:joven",
+    "l:lado",
+    "l:mal",
+    "l:mejor",
+    "l:mes",
+    "l:mesa",
+    "l:mirar",
+    "l:mujer",
+    "l:niña",
+    "l:pagar",
+    "l:pequeño",
+    "l:periodista",
+    "l:persona",
+    "l:poner",
+    "l:pregunta",
+    "l:propio",
+    "l:querer",
+    "l:quién",
+    "l:rato",
+    "l:resultar",
+    "l:sacar",
+    "l:ser",
+    "l:servir",
+    "l:simpático",
+    "l:tener",
+    "l:tinto",
+    "l:traer",
+    "l:vender",
+    "l:verdad"
+  ]
+}

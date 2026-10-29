@@ -1,0 +1,245 @@
+{
+  "id": "ch028",
+  "unit": "u11",
+  "title": "La niña de las gafas",
+  "text": "Mujer: Buenos días. Una almojábana, por favor. La última.\nHernando: ¡Mariana Cifuentes! ¡La hija de los vecinos!\nMariana: Hola, don Hernando. Y tú eres Tomás, el niño travieso del mostrador.\nTomás: Y tú eres la niña de las gafas.\nMariana: Te pareces mucho a tu papá. Antes medías un metro, y ahora mides... ¿un metro ochenta?\nTomás: Un metro ochenta y dos. Y tú ya no te pareces a la niña de las gafas.\nMariana: Ahora tengo otras gafas.\nHernando: Ustedes dos pasaron la niñez en este café.\nMariana: En mi infancia, este café era mi segunda casa. Llegaba del colegio en uniforme, y hacía la tarea en esa mesa. Cuando tenía una nota excelente en un examen, Rosa me regalaba una almojábana.\nTomás: Yo también tenía uniforme en Toronto. Era horrible. Y mis notas no eran excelentes.\nMariana: Y los domingos, tú eras mi enemigo. Mi enemigo favorito. Nuestro juego era «el aeropuerto». Tú eras el avión, y yo era la policía.\nTomás: Era un juego muy serio. Y yo te prestaba mi pelota.\nMariana: Y yo te prestaba mi muñeca. Tú preferías la muñeca.\nSimón: ¡La muñeca! ¡La muñeca!\nTomás: No es verdad. Yo prefería la pelota.\nHernando: Preferías la muñeca, mijo. Era tu juguete favorito.\nMariana: Yo no tenía muchos juguetes. Tenía la calle. En el recreo jugábamos con la pelota, y los sábados mi papá y yo íbamos al campo en bicicleta.\nTomás: En Toronto no había recreo con almojábanas. Toda mi infancia en Toronto, y solo me acuerdo de los domingos aquí.\nMariana: Tú te fuiste a Toronto, Tomás. Y yo te esperaba los domingos en la puerta. Un mes, dos meses. Después dejé de esperar.\nTomás mira el mostrador y no habla.\nHernando: Y yo dejé de fumar en 1990. Nadie me pregunta, pero es importante.\nTomás: ¿Y todavía montas en bicicleta?\nMariana: No. Dejé de montar en bicicleta. Ahora soy periodista. Mi niñez fue el colegio, la tarea, el maestro Ramírez y este café. Hoy el maestro Ramírez ya no vive aquí. Su casa la compró Altamira. Y la casa del campo de mi papá, también.\nMariana saca una lista de su bolsa. Es una lista de casas.\nMariana: Ahora estudio otra materia. Mi materia es Grupo Altamira.\nTomás: ¿Y el examen?\nMariana: El examen es mañana. Y tú me vas a ayudar.",
+  "gloss": [
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "el mostrador",
+      "en": "the counter"
+    },
+    {
+      "es": "La última.",
+      "en": "The last one."
+    },
+    {
+      "es": "Antes medías un metro.",
+      "en": "You used to be one metre tall."
+    },
+    {
+      "es": "Ahora tengo otras gafas.",
+      "en": "Now I have different glasses."
+    },
+    {
+      "es": "Nadie me pregunta, pero es importante.",
+      "en": "Nobody's asking me, but it's important."
+    },
+    {
+      "es": "Su casa la compró Altamira.",
+      "en": "His house was bought by Altamira."
+    },
+    {
+      "es": "Mi materia es Grupo Altamira.",
+      "en": "My subject is Grupo Altamira."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Who is the woman who orders the last almojábana?",
+      "options": [
+        "Mariana Cifuentes, the neighbours' daughter, now a journalist",
+        "The food blogger",
+        "Vale's sister",
+        "A woman from Altamira"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Rosa use to give Mariana for an excellent mark in an exam?",
+      "options": [
+        "An almojábana",
+        "A doll",
+        "A coffee",
+        "A bicycle"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why did Mariana stop waiting at the door on Sundays?",
+      "options": [
+        "Tomás had gone to Toronto and never came",
+        "Rosa closed the café",
+        "She started school",
+        "Her father sold the house"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué juguete prefería Tomás, según Hernando?",
+      "options": [
+        "La muñeca",
+        "La pelota",
+        "La bicicleta",
+        "El avión"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Mariana's new 'subject'?",
+      "options": [
+        "Grupo Altamira",
+        "History",
+        "Toronto",
+        "Rosa's recipes"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How tall is Tomás now?",
+      "options": [
+        "One metre eighty two",
+        "One metre eighty",
+        "One metre",
+        "Two metres"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "In the airport game, who was Mariana?",
+      "options": [
+        "The police",
+        "The plane",
+        "The pilot",
+        "The tourist"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "When did Hernando stop smoking?",
+      "options": [
+        "In 1990",
+        "Last year",
+        "In 1978",
+        "He still smokes"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Mariana has a list of houses that Altamira has bought, and she says the exam is tomorrow. Tomás is going to help her, and Vale has not met her yet.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:era",
+    "c:hola-buenos-dias",
+    "c:oye-mira",
+    "c:por-favor",
+    "c:tengo",
+    "c:voy-vas",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:possessives",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:yo-irregular",
+    "p:cuando-basic",
+    "p:dejar-de-inf",
+    "p:demonstratives-basic",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:acordarse",
+    "l:aeropuerto",
+    "l:ahora",
+    "l:almojábana",
+    "l:antes",
+    "l:aquí",
+    "l:avión",
+    "l:ayudar",
+    "l:bicicleta",
+    "l:bolsa",
+    "l:bueno",
+    "l:café",
+    "l:calle",
+    "l:campo",
+    "l:casa",
+    "l:colegio",
+    "l:comprar",
+    "l:dejar",
+    "l:después",
+    "l:domingo",
+    "l:día",
+    "l:enemigo",
+    "l:esperar",
+    "l:estudiar",
+    "l:examen",
+    "l:excelente",
+    "l:favor",
+    "l:favorito",
+    "l:fumar",
+    "l:gafas",
+    "l:hablar",
+    "l:hacer",
+    "l:hija",
+    "l:horrible",
+    "l:hoy",
+    "l:importante",
+    "l:infancia",
+    "l:ir",
+    "l:irse",
+    "l:juego",
+    "l:jugar",
+    "l:juguete",
+    "l:listo",
+    "l:llegar",
+    "l:maestro",
+    "l:materia",
+    "l:mañana",
+    "l:medir",
+    "l:mes",
+    "l:mesa",
+    "l:metro",
+    "l:mirar",
+    "l:montar",
+    "l:mostrador",
+    "l:mujer",
+    "l:muñeca",
+    "l:niña",
+    "l:niñez",
+    "l:niño",
+    "l:nota",
+    "l:papá",
+    "l:parecerse",
+    "l:pasar",
+    "l:pelota",
+    "l:periodista",
+    "l:policía",
+    "l:preferir",
+    "l:preguntar",
+    "l:prestar",
+    "l:puerta",
+    "l:recreo",
+    "l:regalar",
+    "l:sacar",
+    "l:ser",
+    "l:serio",
+    "l:sábado",
+    "l:tarea",
+    "l:tener",
+    "l:travieso",
+    "l:uniforme",
+    "l:vecino",
+    "l:verdad",
+    "l:vivir"
+  ]
+}
