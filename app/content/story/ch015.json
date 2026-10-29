@@ -146,7 +146,19 @@
     "g:stem-boot",
     "g:verb-infinitive",
     "g:yo-irregular",
-    "p:possessives-basic"
+    "p:a-cuadras-de",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:directions-cuadras",
+    "p:en-apariencia",
+    "p:estar-a",
+    "p:frequency-scale",
+    "p:otro-no-article",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quedar-a-distancia",
+    "p:quedar-faltar-sobrar",
+    "p:senor-don-article"
   ],
   "lexemes": [
     "l:acá",

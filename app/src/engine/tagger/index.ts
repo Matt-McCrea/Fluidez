@@ -26,6 +26,7 @@ import { resolveNode } from './nodemap';
 import { deaccent } from '../ortho';
 import type { ChunkSpec, Feature, PatternSpec, TagOptions, TagResult, Word } from './types';
 import { closedClass, isKnownForm, isName, lemmatize, lexEntry } from './lexicon';
+import { compileSpec, findSpec, hasAnchors, isSpec, matchTokens, sentenceKeys, SpecError, type CompiledSpec } from './patterns';
 
 export type { Feature, TagOptions, TagResult, Word, Token, Pos, ChunkSpec, PatternSpec, NodeId } from './types';
 export { DEFAULT_NODE_MAP, resolveNode, mappedKeys } from './nodemap';
@@ -33,6 +34,7 @@ export { registerLexemes, registerNames, isName, lemmatize, lexEntry, isKnownFor
 export { tokenize, analyzeWords } from './words';
 export { formClass, queRole } from './features';
 export { dialectLint, DIALECT_LEXICON } from './dialect';
+export { parseSpec, isSpec, SpecError } from './patterns';
 export type { DialectFinding, DialectEntry } from './dialect';
 export { accentLint } from './accent';
 export type { AccentFinding } from './accent';
@@ -220,14 +222,17 @@ function chunkPass(words: Word[], chunks: readonly ChunkSpec[], out: Feature[]):
 }
 
 /* ---- patterns ------------------------------------------------------------------
- * A pattern node is found by its `match` strings (compiled like chunk fragments:
- * folded words, '*' for names, numbers and quoted words), else — when every word of
- * its id is Spanish — by its id: the words in order, each matching a token's form or
- * lemma, at most one other word in between, within one clause (p:tener-hambre ~ "Tengo mucha hambre",
- * p:jugar-a ~ "juega al fútbol"; x/y in an id are slots: p:prefieres-x-o-y). An id
- * with English in it (p:ser-profession-no-article) is not detectable this way: the
- * gate only warns about such targets. */
-type PatMatcher = { id: string; seqs: string[][]; gaps: number };
+ * A pattern node is found by its `match` strings. A string written in the spec
+ * language of ./patterns.ts ({tener} razón, {sentir} no? {inf}, desde {...} hasta,
+ * somos {num}) matches the construction in any wording; a plain string is a legacy
+ * literal (compiled like chunk fragments: folded words, '*' for names, numbers and
+ * quoted words; a word also matches by lemma). With no `match`, when every word of
+ * its id is Spanish, a pattern is found by its id: the words in order, each matching
+ * a token's form or lemma, at most one other word in between, within one clause
+ * (p:tener-hambre ~ "Tengo mucha hambre"; x/y in an id are slots: p:prefieres-x-o-y).
+ * An id with English in it (p:ser-profession-no-article) and no `match` is not
+ * detectable: the gate only warns about such targets. */
+type PatMatcher = { id: string; seqs: string[][]; gaps: number; specs: CompiledSpec[] };
 const PAT_CACHE = new WeakMap<readonly PatternSpec[], PatMatcher[]>();
 /** Metalanguage in pattern ids (p:soler-inf, p:es-adj-inf, p:estar-a-price): never Spanish words. */
 const PAT_META = new Set('inf adj adv sust noun verb subj ind indic place price time article plural singular mixed number numbers basic full past future'.split(' '));
@@ -238,9 +243,13 @@ function compilePatterns(specs: readonly PatternSpec[]): PatMatcher[] {
   const out: PatMatcher[] = [];
   for (const p of specs) {
     if (p.match?.length) {
+      const compiled: CompiledSpec[] = [];
+      for (const m of p.match.filter(isSpec)) {
+        try { compiled.push(compileSpec(m)); } catch (e) { if (!(e instanceof SpecError)) throw e; }   // tests/tagger lint every spec
+      }
       // as in chunks, a diacritic minimal pair keeps its accent ("para mí" is not "para mi abuela")
-      const seqs = p.match.map((m) => [...m.matchAll(/"[^"]*"|“[^”]*”|[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+|\d+/g)].map((x, k) => (/^["“\d]/.test(x[0]) || (k > 0 && /^[A-ZÁÉÍÓÚÑ]/.test(x[0])) ? '*' : TILDE_PAIRS.has(x[0].toLowerCase()) ? '=' + x[0].toLowerCase() : fold(x[0])))).filter((q) => q.some((t) => t !== '*'));
-      if (seqs.length) out.push({ id: p.id, seqs, gaps: 0 });
+      const seqs = p.match.filter((m) => !isSpec(m)).map((m) => [...m.matchAll(/"[^"]*"|“[^”]*”|[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+|\d+/g)].map((x, k) => (/^["“\d]/.test(x[0]) || (k > 0 && /^[A-ZÁÉÍÓÚÑ]/.test(x[0])) ? '*' : TILDE_PAIRS.has(x[0].toLowerCase()) ? '=' + x[0].toLowerCase() : fold(x[0])))).filter((q) => q.some((t) => t !== '*'));
+      if (seqs.length || compiled.length) out.push({ id: p.id, seqs, gaps: 0, specs: compiled });
       continue;
     }
     const slug = fold(p.id.replace(/^p:/, '').replace(/#.*/, '')).split('-').filter(Boolean);
@@ -249,20 +258,37 @@ function compilePatterns(specs: readonly PatternSpec[]): PatMatcher[] {
     if (seq.filter((t) => t !== '*').length < 2) continue;
     if (!seq.every((t) => t === '*' || spanishWord(t))) continue;
     if (slots) continue;                                   // "el * de *" (p:el-x-de-y) matches half the corpus
-    out.push({ id: p.id, seqs: [seq], gaps: 1 });
+    out.push({ id: p.id, seqs: [seq], gaps: 1, specs: [] });
   }
   PAT_CACHE.set(specs, out);
   return out;
 }
 function patternPass(words: Word[], specs: readonly PatternSpec[], out: Feature[]): void {
-  // within a clause: punctuation ends a match ("gracias. Un tinto, por favor" is not gracias por)
+  const pats = compilePatterns(specs);
+  // spec patterns: over the whole sentence (a spec says where punctuation may sit)
+  const ms = matchTokens(words);
+  const keys = sentenceKeys(ms);
+  const found = new Set<string>();
+  for (const p of pats) {
+    for (const sp of p.specs) {
+      if (!hasAnchors(sp, keys)) continue;
+      const m = findSpec(ms, sp);
+      if (!m) continue;
+      const a = ms[m[0]].i, b = ms[m[1]].i;
+      out.push({ key: 'pattern.' + p.id, node: p.id, span: [a, b], text: words.slice(a, b + 1).filter((w) => !w.punct).map((w) => w.text).join(' ') });
+      found.add(p.id);
+      break;
+    }
+  }
+  // legacy literals and id patterns: within a clause, punctuation ends a match ("gracias. Un tinto, por favor" is not gracias por)
   const clauses: Word[][] = [[]];
   for (const w of words) { if (w.punct) clauses.push([]); else clauses[clauses.length - 1].push(w); }
-  for (const ws of clauses) if (ws.length) patternClause(ws, words, specs, out);
+  for (const ws of clauses) if (ws.length) patternClause(ws, words, pats, out, found);
 }
-function patternClause(ws: Word[], words: Word[], specs: readonly PatternSpec[], out: Feature[]): void {
+function patternClause(ws: Word[], words: Word[], pats: PatMatcher[], out: Feature[], found: Set<string>): void {
   const is = (w: Word, t: string) => t === '*' || (t[0] === '=' ? w.w.toLowerCase() === t.slice(1) : fold(w.w) === t || fold(w.lemma || '') === t);
-  for (const p of compilePatterns(specs)) {
+  for (const p of pats) {
+    if (found.has(p.id) || !p.seqs.length) continue;
     let done = false;
     for (const seq of p.seqs) {
       for (let k = 0; k < ws.length && !done; k++) {
@@ -272,6 +298,7 @@ function patternClause(ws: Word[], words: Word[], specs: readonly PatternSpec[],
         if (m === seq.length && gaps <= p.gaps) {
           const a = ws[k].i, b = ws[j - 1].i;
           out.push({ key: 'pattern.' + p.id, node: p.id, span: [a, b], text: words.slice(a, b + 1).filter((w) => !w.punct).map((w) => w.text).join(' ') });
+          found.add(p.id);
           done = true;
         }
       }
@@ -279,6 +306,9 @@ function patternClause(ws: Word[], words: Word[], specs: readonly PatternSpec[],
     }
   }
 }
+/** The pattern features of an already tagged sentence (TagResult.tokens): for tools that
+ *  try pattern specs over a corpus without re-tagging it. */
+export function patternFeatures(words: Word[], specs: readonly PatternSpec[]): Feature[] { const out: Feature[] = []; patternPass(words, specs, out); return out; }
 /** Pattern ids the tagger can look for at all (others are never in requires). */
 export function detectablePatterns(specs: readonly PatternSpec[]): Set<string> { return new Set(compilePatterns(specs).map((p) => p.id)); }
 

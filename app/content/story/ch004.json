@@ -107,7 +107,12 @@
     "g:present-ar",
     "g:present-er-ir",
     "g:ser-identity",
-    "g:yo-irregular"
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:desde-hasta",
+    "p:senor-don-article",
+    "p:telling-time"
   ],
   "lexemes": [
     "l:banco",

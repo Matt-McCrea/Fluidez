@@ -133,10 +133,17 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
+    "p:costar-pagar",
     "p:demonstratives-basic",
     "p:pensar-en",
+    "p:pensar-inf",
     "p:possessives-basic",
-    "p:quantifiers-basic"
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:senor-don-article"
   ],
   "lexemes": [
     "l:allá",

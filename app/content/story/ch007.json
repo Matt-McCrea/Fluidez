@@ -134,7 +134,12 @@
     "g:preterite-ar",
     "g:preterite-ser-ir-hacer",
     "g:questions",
-    "g:ser-identity"
+    "g:ser-identity",
+    "p:aqui-ahi-alla",
+    "p:container-de",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:telling-time"
   ],
   "lexemes": [
     "l:aguacate",

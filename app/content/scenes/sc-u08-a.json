@@ -186,7 +186,12 @@
     "l:ventana",
     "l:ver",
     "l:vez",
+    "p:days-el-lunes",
+    "p:frequency-scale",
+    "p:ir-a-venir-de-place",
     "p:quantifiers-basic",
-    "p:tener-ganas-de"
+    "p:saber-conocer",
+    "p:tener-ganas-de",
+    "p:valer-la-pena"
   ]
 }

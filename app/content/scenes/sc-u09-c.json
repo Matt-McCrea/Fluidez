@@ -187,7 +187,17 @@
     "l:terminar",
     "l:trabajar",
     "l:vez",
+    "p:desde-hasta",
+    "p:don-dona-nombre",
+    "p:empezar-terminar",
+    "p:frequency-scale",
+    "p:ir-a-venir-de-place",
+    "p:otro-no-article",
+    "p:por-la-manana",
     "p:quantifiers-basic",
+    "p:repeticion-claro-claro",
+    "p:senor-don-article",
+    "p:telling-time",
     "p:time-sequence-basic"
   ]
 }

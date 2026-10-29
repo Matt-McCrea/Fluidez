@@ -35,7 +35,8 @@
       "l:gustar",
       "l:lunes",
       "l:parque",
-      "l:reunión"
+      "l:reunión",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -119,7 +120,9 @@
       "l:parque",
       "l:pizza",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -161,7 +164,8 @@
       "l:sábado",
       "l:trabajar",
       "l:universidad",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -199,7 +203,10 @@
       "l:jugar",
       "l:pizza",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:jugar-a",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -241,7 +248,8 @@
       "l:pan",
       "l:preferir",
       "l:querer",
-      "l:tinto"
+      "l:tinto",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -286,7 +294,10 @@
       "l:martes",
       "l:perdón",
       "l:poder",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ]
   },
   {
@@ -320,7 +331,10 @@
       "l:nadar",
       "l:oficina",
       "l:parque",
-      "l:preferir"
+      "l:preferir",
+      "p:days-el-lunes",
+      "p:jugar-a",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -355,7 +369,9 @@
       "l:libro",
       "l:parque",
       "l:universidad",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place",
+      "p:senor-don-article"
     ]
   },
   {
@@ -392,7 +408,10 @@
       "l:poder",
       "l:preferir",
       "l:salir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y",
+      "p:telling-time"
     ]
   },
   {
@@ -445,7 +464,8 @@
       "l:qué",
       "l:ser",
       "l:sábado",
-      "l:tener"
+      "l:tener",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -490,7 +510,9 @@
       "l:pizza",
       "l:preferir",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   }
 ]

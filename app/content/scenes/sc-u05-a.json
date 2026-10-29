@@ -193,10 +193,20 @@
     "l:tío",
     "l:vivir",
     "l:único",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:es-tiene-lleva",
+    "p:frequency-scale",
     "p:gracias-por",
+    "p:masculine-plural-mixed",
     "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:personal-a",
     "p:possessives-basic",
     "p:quantifiers-basic",
+    "p:saber-conocer",
     "p:time-sequence-basic"
   ]
 }

@@ -108,7 +108,13 @@
     "c:hola-buenos-dias",
     "c:mucho-gusto",
     "c:soy-de",
-    "g:ser-identity"
+    "g:ser-identity",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:don-dona-nombre",
+    "p:repeticion-claro-claro",
+    "p:senor-don-article",
+    "p:ser-profession-no-article"
   ],
   "lexemes": [
     "l:bueno",

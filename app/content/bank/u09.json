@@ -9,7 +9,8 @@
       "g:gender-articles",
       "g:reflexive-routine",
       "g:stem-boot",
-      "l:despertarse"
+      "l:despertarse",
+      "p:telling-time"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -56,7 +57,9 @@
       "l:afeitarse",
       "l:mañana",
       "l:papá",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -103,7 +106,8 @@
       "g:reflexive-routine",
       "g:stem-boot",
       "l:despertarse",
-      "l:levantarse"
+      "l:levantarse",
+      "p:telling-time"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -216,7 +220,8 @@
       "g:reflexive-routine",
       "l:domingo",
       "l:levantarse",
-      "l:tarde"
+      "l:tarde",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -240,7 +245,9 @@
       "g:stem-boot",
       "l:despertarse",
       "l:hijos",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -264,7 +271,8 @@
       "l:antes",
       "l:desayunar",
       "l:ducharse",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:prep-infinitive",
@@ -291,6 +299,7 @@
       "l:diente",
       "l:día",
       "l:vez",
+      "p:lavarse-las-manos",
       "p:veces-al"
     ],
     "targets": [
@@ -318,6 +327,7 @@
       "l:cocina",
       "l:diente",
       "l:papá",
+      "p:lavarse-las-manos",
       "p:possessives-basic"
     ],
     "targets": [
@@ -363,7 +373,8 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:afeitarse",
-      "l:domingo"
+      "l:domingo",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -385,7 +396,9 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:maquillarse",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -411,7 +424,9 @@
       "l:champú",
       "l:lavarse",
       "l:pelo",
-      "l:tibio"
+      "l:tibio",
+      "p:con-sin",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -435,6 +450,7 @@
       "l:jabón",
       "l:lavarse",
       "l:mano",
+      "p:con-sin",
       "p:lavarse-las-manos"
     ],
     "targets": [
@@ -462,7 +478,8 @@
       "g:reflexive-routine",
       "l:diente",
       "l:lavarse",
-      "l:niño"
+      "l:niño",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -531,7 +548,8 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:jabón"
+      "l:jabón",
+      "p:question-word-order"
     ],
     "targets": [
       "l:jabón"
@@ -598,7 +616,9 @@
       "l:cocina",
       "l:estar",
       "l:mal",
-      "l:reloj"
+      "l:reloj",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "l:reloj"
@@ -621,7 +641,8 @@
       "l:reloj",
       "l:ser",
       "l:viejo",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:reloj"
@@ -645,7 +666,8 @@
       "l:qué",
       "l:reloj",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "c:que-hora-es",
@@ -670,7 +692,8 @@
       "l:llegar",
       "l:oficina",
       "l:quitarse",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -691,7 +714,8 @@
       "g:gender-articles",
       "g:reflexive-routine",
       "g:stem-boot",
-      "l:acostarse"
+      "l:acostarse",
+      "p:telling-time"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -758,7 +782,9 @@
       "g:stem-boot",
       "l:dormir",
       "l:hora",
-      "l:noche"
+      "l:noche",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "l:dormir"
@@ -780,6 +806,8 @@
       "l:bien",
       "l:dormir",
       "l:noche",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -851,7 +879,8 @@
       "l:cansado",
       "l:estar",
       "l:hoy",
-      "l:levantarse"
+      "l:levantarse",
+      "p:telling-time"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -901,7 +930,8 @@
       "g:reflexive-routine",
       "l:ayer",
       "l:bañarse",
-      "l:noche"
+      "l:noche",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -927,7 +957,8 @@
       "g:reflexive-routine",
       "l:acostarse",
       "l:fiesta",
-      "l:tarde"
+      "l:tarde",
+      "p:event-ser-en"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -949,7 +980,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:domingo",
-      "l:dormir"
+      "l:dormir",
+      "p:days-el-lunes"
     ],
     "targets": [
       "l:dormir"
@@ -1068,7 +1100,8 @@
       "g:preterite-ar",
       "g:reflexive-routine",
       "l:acostarse",
-      "l:tarde"
+      "l:tarde",
+      "p:telling-time"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -1096,7 +1129,8 @@
       "l:ducharse",
       "l:noche",
       "l:panadería",
-      "l:trabajar"
+      "l:trabajar",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -1139,7 +1173,8 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:desayunar"
+      "l:desayunar",
+      "p:telling-time"
     ],
     "targets": [
       "l:desayunar"
@@ -1202,7 +1237,9 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:almuerzo",
-      "l:ser"
+      "l:ser",
+      "p:event-ser-en",
+      "p:telling-time"
     ],
     "targets": [
       "l:almuerzo"
@@ -1222,7 +1259,9 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:cena",
-      "l:ser"
+      "l:ser",
+      "p:event-ser-en",
+      "p:telling-time"
     ],
     "targets": [
       "l:cena"
@@ -1380,7 +1419,8 @@
       "l:barrer",
       "l:día",
       "l:patio",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "l:barrer",
@@ -1500,7 +1540,8 @@
       "l:ir",
       "l:semana",
       "l:tener",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [],
     "kind": "statement",
@@ -1520,7 +1561,9 @@
       "g:gender-articles",
       "g:verb-infinitive",
       "l:domingo",
-      "l:madrugar"
+      "l:madrugar",
+      "p:days-el-lunes",
+      "p:madrugar-trasnochar"
     ],
     "targets": [],
     "kind": "statement",
@@ -1564,7 +1607,8 @@
       "l:antes",
       "l:hacer",
       "l:pan",
-      "l:tener"
+      "l:tener",
+      "p:numbers-un-una"
     ],
     "targets": [],
     "kind": "statement",
@@ -1586,6 +1630,7 @@
       "l:mamá",
       "l:noche",
       "p:demonstratives-basic",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1660,7 +1705,8 @@
       "l:poder",
       "l:tener",
       "l:venir",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:request-ladder"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -1781,6 +1827,7 @@
       "l:aquí",
       "l:pagar",
       "l:pedir",
+      "p:aqui-ahi-alla",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -1875,7 +1922,8 @@
       "l:banco",
       "l:hora",
       "l:perder",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:perder"
@@ -1899,7 +1947,8 @@
       "g:yo-irregular",
       "l:entrar",
       "l:oficina",
-      "l:tener"
+      "l:tener",
+      "p:telling-time"
     ],
     "targets": [
       "l:entrar"
@@ -1920,7 +1969,8 @@
       "l:mesero",
       "l:oficio",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "l:oficio"
@@ -2007,7 +2057,9 @@
       "l:camisa",
       "l:domingo",
       "l:noche",
-      "l:planchar"
+      "l:planchar",
+      "p:days-el-lunes",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:planchar"
@@ -2166,6 +2218,7 @@
       "g:present-ar",
       "l:limpiar",
       "l:sábado",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -2227,6 +2280,7 @@
       "g:stem-boot",
       "l:costar",
       "l:peso",
+      "p:costar-pagar",
       "p:demonstratives-basic"
     ],
     "targets": [],
@@ -2265,7 +2319,8 @@
       "g:ser-identity",
       "l:almorzar",
       "l:hora",
-      "l:ser"
+      "l:ser",
+      "p:telling-time"
     ],
     "targets": [
       "l:almorzar"
@@ -2286,7 +2341,8 @@
       "g:present-er-ir",
       "l:comer",
       "l:desayuno",
-      "l:pan"
+      "l:pan",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:present-er-ir"
@@ -2420,7 +2476,8 @@
       "l:acordarse",
       "l:apellido",
       "l:nombre",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -2444,7 +2501,10 @@
       "l:abuela",
       "l:acordarse",
       "l:mañana",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:recordar-acordarse",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -2533,6 +2593,7 @@
       "l:hermano",
       "l:perder",
       "l:siempre",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -2668,7 +2729,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:café",
-      "l:entrar"
+      "l:entrar",
+      "p:telling-time"
     ],
     "targets": [
       "l:entrar"
@@ -2717,7 +2779,8 @@
       "g:reflexive-routine",
       "l:bañarse",
       "l:mañana",
-      "l:noche"
+      "l:noche",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -2742,7 +2805,8 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:bañarse",
-      "l:mañana"
+      "l:mañana",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -2766,7 +2830,8 @@
       "g:reflexive-routine",
       "l:afeitarse",
       "l:día",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -2791,7 +2856,9 @@
       "l:día",
       "l:lavarse",
       "l:pelo",
-      "p:todos-los-dias"
+      "p:lavarse-las-manos",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -2815,6 +2882,7 @@
       "g:verb-infinitive",
       "l:descansar",
       "l:tener",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -2901,7 +2969,8 @@
       "g:tener-que-hay-que",
       "l:deber",
       "l:ir",
-      "l:médico"
+      "l:médico",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -3011,7 +3080,8 @@
       "g:reflexive-routine",
       "g:stem-boot",
       "l:acordarse",
-      "l:calle"
+      "l:calle",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -3032,7 +3102,8 @@
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3049,7 +3120,8 @@
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3066,7 +3138,8 @@
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3083,7 +3156,8 @@
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3101,7 +3175,9 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:mañana",
-      "l:ser"
+      "l:ser",
+      "p:por-la-manana",
+      "p:telling-time"
     ],
     "targets": [
       "l:mañana"
@@ -3124,6 +3200,8 @@
       "l:noche",
       "l:ser",
       "l:trabajar",
+      "p:por-la-manana",
+      "p:telling-time",
       "p:ya-todavia-basic"
     ],
     "targets": [],
@@ -3143,7 +3221,8 @@
       "g:present-ar",
       "g:ser-identity",
       "l:llegar",
-      "l:ser"
+      "l:ser",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3165,6 +3244,7 @@
       "l:hambre",
       "l:ser",
       "l:tener",
+      "p:telling-time",
       "p:tener-hambre"
     ],
     "targets": [],
@@ -3188,7 +3268,8 @@
       "l:favor",
       "l:hora",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -3210,7 +3291,9 @@
       "l:claro",
       "l:hora",
       "l:regalar",
-      "l:ser"
+      "l:ser",
+      "p:me-trae",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -3231,7 +3314,9 @@
       "l:abrir",
       "l:banco",
       "l:hora",
-      "l:qué"
+      "l:qué",
+      "p:question-word-order",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -3251,7 +3336,8 @@
       "g:stem-boot",
       "l:cerrar",
       "l:hora",
-      "l:qué"
+      "l:qué",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -3272,7 +3358,9 @@
       "l:bus",
       "l:hora",
       "l:qué",
-      "l:salir"
+      "l:salir",
+      "p:question-word-order",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -3294,7 +3382,9 @@
       "l:creer",
       "l:hora",
       "l:llegar",
-      "l:qué"
+      "l:qué",
+      "p:question-word-order",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -3314,7 +3404,9 @@
       "g:ser-identity",
       "l:faltar",
       "l:minuto",
-      "l:ser"
+      "l:ser",
+      "p:quedar-faltar-sobrar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -3358,7 +3450,8 @@
       "l:hora",
       "l:qué",
       "l:saber",
-      "l:ser"
+      "l:ser",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:que-hora-es"
@@ -3406,7 +3499,8 @@
       "l:hora",
       "l:qué",
       "l:ser",
-      "l:tarde"
+      "l:tarde",
+      "p:es-de-noche-tarde"
     ],
     "targets": [
       "c:que-hora-es",
@@ -3428,7 +3522,10 @@
       "g:ser-identity",
       "l:clase",
       "l:noche",
-      "l:ser"
+      "l:ser",
+      "p:event-ser-en",
+      "p:por-la-manana",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3448,7 +3545,8 @@
       "g:stem-boot",
       "l:abrir",
       "l:café",
-      "l:cerrar"
+      "l:cerrar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3467,7 +3565,10 @@
       "g:present-ar",
       "l:bus",
       "l:llegar",
-      "l:tiempo"
+      "l:tiempo",
+      "p:frequency-scale",
+      "p:llegar-a-tiempo",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3486,7 +3587,8 @@
       "g:stem-boot",
       "l:empezar",
       "l:reunión",
-      "l:vecino"
+      "l:vecino",
+      "p:telling-time"
     ],
     "targets": [
       "g:stem-boot"
@@ -3506,7 +3608,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:película",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3523,7 +3626,8 @@
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:almorzar"
+      "l:almorzar",
+      "p:telling-time"
     ],
     "targets": [
       "l:almorzar"
@@ -3544,7 +3648,8 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:salir",
-      "l:trabajo"
+      "l:trabajo",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3562,7 +3667,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:casa",
-      "l:llegar"
+      "l:llegar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3580,7 +3686,9 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:parque",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -3600,7 +3708,9 @@
       "g:yo-irregular",
       "l:mañana",
       "l:reunión",
-      "l:tener"
+      "l:tener",
+      "p:por-la-manana",
+      "p:telling-time"
     ],
     "targets": [
       "l:mañana"
@@ -3622,7 +3732,8 @@
       "g:ser-identity",
       "l:abrir",
       "l:ser",
-      "l:temprano"
+      "l:temprano",
+      "p:es-de-noche-tarde"
     ],
     "targets": [
       "l:temprano"
@@ -3644,7 +3755,8 @@
       "l:irse",
       "l:mejor",
       "l:ser",
-      "l:tarde"
+      "l:tarde",
+      "p:es-de-noche-tarde"
     ],
     "targets": [
       "l:tarde"
@@ -3663,7 +3775,8 @@
     "requires": [
       "g:ser-identity",
       "l:noche",
-      "l:ser"
+      "l:ser",
+      "p:es-de-noche-tarde"
     ],
     "targets": [],
     "kind": "statement",
@@ -3683,7 +3796,9 @@
       "l:frío",
       "l:hacer",
       "l:noche",
-      "l:ser"
+      "l:ser",
+      "p:es-de-noche-tarde",
+      "p:hace-frio"
     ],
     "targets": [],
     "kind": "statement",
@@ -3702,7 +3817,10 @@
       "l:llamar",
       "l:ser",
       "l:tarde",
-      "p:para-inf"
+      "p:es-de-noche-tarde",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:personal-a"
     ],
     "targets": [
       "l:tarde"
@@ -3723,7 +3841,9 @@
       "l:almorzar",
       "l:ser",
       "l:temprano",
+      "p:es-de-noche-tarde",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:ya-todavia-basic"
     ],
     "targets": [
@@ -3745,7 +3865,9 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
-      "l:tarde"
+      "l:tarde",
+      "p:es-de-noche-tarde",
+      "p:telling-time"
     ],
     "targets": [
       "l:tarde"
@@ -3765,7 +3887,9 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
-      "l:tarde"
+      "l:tarde",
+      "p:es-de-noche-tarde",
+      "p:telling-time"
     ],
     "targets": [
       "l:tarde"
@@ -3788,6 +3912,7 @@
       "l:mejor",
       "l:ser",
       "l:tarde",
+      "p:es-de-noche-tarde",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -3810,7 +3935,9 @@
       "l:hoy",
       "l:llegar",
       "l:tarde",
-      "l:vez"
+      "l:vez",
+      "p:llegar-a-tiempo",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:tarde"
@@ -3830,7 +3957,9 @@
       "g:present-ar",
       "l:llegar",
       "l:siempre",
-      "l:temprano"
+      "l:temprano",
+      "p:frequency-scale",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "l:temprano"
@@ -3850,7 +3979,9 @@
       "g:stem-boot",
       "l:llegar",
       "l:preferir",
-      "l:temprano"
+      "l:temprano",
+      "p:llegar-a-tiempo",
+      "p:prefieres-x-o-y"
     ],
     "targets": [
       "l:temprano"
@@ -3871,7 +4002,8 @@
       "g:present-ar",
       "l:cine",
       "l:llegar",
-      "l:tarde"
+      "l:tarde",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "l:tarde"
@@ -3984,7 +4116,9 @@
       "g:ir-a-plans",
       "l:banco",
       "l:ir",
-      "l:mañana"
+      "l:mañana",
+      "p:ir-a-venir-de-place",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:mañana"
@@ -4031,6 +4165,8 @@
       "l:centro",
       "l:gente",
       "l:mañana",
+      "p:la-gente-singular",
+      "p:por-la-manana",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -4053,7 +4189,8 @@
       "l:estudiar",
       "l:noche",
       "l:tarde",
-      "l:trabajar"
+      "l:trabajar",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:tarde"
@@ -4074,7 +4211,8 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:ducharse",
-      "l:mañana"
+      "l:mañana",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -4096,7 +4234,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:tarde",
-      "l:trabajar"
+      "l:trabajar",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:tarde"
@@ -4117,7 +4256,8 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:mañana",
-      "l:salir"
+      "l:salir",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:mañana"
@@ -4138,7 +4278,10 @@
       "g:gender-articles",
       "l:martes",
       "l:tarde",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:tarde"
@@ -4161,7 +4304,9 @@
       "l:café",
       "l:jueves",
       "l:música",
-      "l:noche"
+      "l:noche",
+      "p:days-el-lunes",
+      "p:por-la-manana"
     ],
     "targets": [],
     "kind": "statement",
@@ -4181,7 +4326,10 @@
       "l:ir",
       "l:mañana",
       "l:mercado",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:mañana"
@@ -4202,7 +4350,9 @@
       "g:stem-boot",
       "l:llover",
       "l:siempre",
-      "l:tarde"
+      "l:tarde",
+      "p:frequency-scale",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:tarde"
@@ -4222,7 +4372,8 @@
       "g:present-er-ir",
       "l:abrir",
       "l:lunes",
-      "l:viernes"
+      "l:viernes",
+      "p:desde-hasta"
     ],
     "targets": [],
     "kind": "statement",
@@ -4240,7 +4391,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:abrir",
-      "l:tienda"
+      "l:tienda",
+      "p:desde-hasta"
     ],
     "targets": [],
     "kind": "statement",
@@ -4259,7 +4411,8 @@
       "g:gender-articles",
       "l:estar",
       "l:mañana",
-      "l:panadería"
+      "l:panadería",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:mañana"
@@ -4280,7 +4433,8 @@
       "g:present-ar",
       "l:caminar",
       "l:centro",
-      "l:parque"
+      "l:parque",
+      "p:desde-hasta"
     ],
     "targets": [],
     "kind": "statement",
@@ -4297,7 +4451,8 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:estudiar"
+      "l:estudiar",
+      "p:desde-hasta"
     ],
     "targets": [],
     "kind": "statement",
@@ -4316,7 +4471,8 @@
       "g:present-ar",
       "l:tarde",
       "l:trabajar",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ],
     "targets": [
       "l:tarde"
@@ -4338,7 +4494,8 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:hablar",
-      "l:poder"
+      "l:poder",
+      "p:no-hasta"
     ],
     "targets": [],
     "kind": "statement",
@@ -4377,7 +4534,9 @@
       "g:gender-articles",
       "l:aquí",
       "l:estar",
-      "l:viernes"
+      "l:viernes",
+      "p:aqui-ahi-alla",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "statement",
@@ -4398,6 +4557,7 @@
       "l:casa",
       "l:cuadra",
       "l:ser",
+      "p:desde-hasta",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -4435,7 +4595,9 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:reunión",
-      "l:ser"
+      "l:ser",
+      "p:desde-hasta",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -4475,7 +4637,9 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:empezar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:empezar-terminar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -4494,7 +4658,9 @@
       "g:present-ar",
       "g:verb-infinitive",
       "l:terminar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:empezar-terminar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -4515,7 +4681,8 @@
       "l:estudiar",
       "l:hora",
       "l:qué",
-      "l:terminar"
+      "l:terminar",
+      "p:empezar-terminar"
     ],
     "targets": [],
     "kind": "question",
@@ -4536,7 +4703,8 @@
       "l:clase",
       "l:empezar",
       "l:hora",
-      "l:qué"
+      "l:qué",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -4558,7 +4726,8 @@
       "l:cuándo",
       "l:empezar",
       "l:panadería",
-      "l:trabajar"
+      "l:trabajar",
+      "p:empezar-terminar"
     ],
     "targets": [],
     "kind": "question",
@@ -4577,7 +4746,9 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:cocinar",
-      "l:empezar"
+      "l:empezar",
+      "p:empezar-terminar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -4597,7 +4768,8 @@
       "g:verb-infinitive",
       "l:empezar",
       "l:reloj",
-      "l:usar"
+      "l:usar",
+      "p:empezar-terminar"
     ],
     "targets": [
       "l:reloj"
@@ -4620,7 +4792,8 @@
       "l:café",
       "l:empezar",
       "l:entrar",
-      "l:llover"
+      "l:llover",
+      "p:empezar-terminar"
     ],
     "targets": [
       "l:entrar"
@@ -4641,7 +4814,9 @@
       "g:preterite-ar",
       "g:verb-infinitive",
       "l:limpiar",
-      "l:terminar"
+      "l:terminar",
+      "p:empezar-terminar",
+      "p:telling-time"
     ],
     "targets": [
       "l:limpiar"
@@ -4701,7 +4876,8 @@
       "g:present-ar",
       "g:verb-infinitive",
       "l:limpiar",
-      "l:terminar"
+      "l:terminar",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:limpiar"
@@ -4722,7 +4898,8 @@
       "g:verb-infinitive",
       "l:aprender",
       "l:empezar",
-      "l:español"
+      "l:español",
+      "p:empezar-terminar"
     ],
     "targets": [],
     "kind": "statement",
@@ -4743,7 +4920,8 @@
       "l:empezar",
       "l:estudiar",
       "l:mañana",
-      "l:verdad"
+      "l:verdad",
+      "p:empezar-terminar"
     ],
     "targets": [
       "l:mañana"
@@ -4766,6 +4944,8 @@
       "l:empezar",
       "l:hijos",
       "l:lunes",
+      "p:days-el-lunes",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -4784,7 +4964,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:examen",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -4802,7 +4983,8 @@
       "g:present-ar",
       "l:arepa",
       "l:desayunar",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:desayunar"
@@ -4823,7 +5005,8 @@
       "g:stem-boot",
       "l:almorzar",
       "l:café",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:almorzar"
@@ -4846,7 +5029,8 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:levantarse",
-      "l:normalmente"
+      "l:normalmente",
+      "p:telling-time"
     ],
     "targets": [
       "c:normalmente",
@@ -4871,6 +5055,7 @@
       "l:acostarse",
       "l:después",
       "l:vez",
+      "p:frequency-scale",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -4891,7 +5076,8 @@
     "requires": [
       "g:yo-irregular",
       "l:televisión",
-      "l:ver"
+      "l:ver",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -4908,7 +5094,8 @@
     "requires": [
       "g:present-er-ir",
       "l:comer",
-      "l:pescado"
+      "l:pescado",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -4926,7 +5113,8 @@
       "g:negation-words",
       "g:present-er-ir",
       "l:comer",
-      "l:pescado"
+      "l:pescado",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:negation-words"
@@ -4946,6 +5134,7 @@
       "g:present-ar",
       "l:llegar",
       "l:siempre",
+      "p:frequency-scale",
       "p:time-sequence-basic"
     ],
     "targets": [],
@@ -4964,7 +5153,10 @@
       "c:bien-y-tu",
       "g:stem-boot",
       "l:bien",
-      "l:dormir"
+      "l:dormir",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:dormir"
@@ -4985,6 +5177,7 @@
       "l:cocinar",
       "l:hermano",
       "l:vez",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -5073,7 +5266,8 @@
       "g:stem-boot",
       "l:llover",
       "l:normalmente",
-      "l:tarde"
+      "l:tarde",
+      "p:por-la-manana"
     ],
     "targets": [
       "c:normalmente",
@@ -5095,7 +5289,8 @@
       "g:present-ar",
       "l:café",
       "l:desayunar",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:desayunar"
@@ -5117,7 +5312,8 @@
       "l:día",
       "l:tinto",
       "l:tomar",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -5141,6 +5337,7 @@
       "l:frecuencia",
       "l:ir",
       "l:qué",
+      "p:ir-a-venir-de-place",
       "p:prep-questions-basic"
     ],
     "targets": [],
@@ -5162,8 +5359,7 @@
       "l:comer",
       "l:cuánto",
       "l:día",
-      "l:vez",
-      "p:veces-al"
+      "l:vez"
     ],
     "targets": [
       "p:veces-al"
@@ -5188,7 +5384,8 @@
       "l:gimnasio",
       "l:ir",
       "l:semana",
-      "l:vez"
+      "l:vez",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [],
     "kind": "question",
@@ -5209,7 +5406,9 @@
       "l:gimnasio",
       "l:ir",
       "l:semana",
-      "l:vez"
+      "l:vez",
+      "p:ir-a-venir-de-place",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -5229,8 +5428,10 @@
       "l:día",
       "l:llamar",
       "l:mamá",
+      "p:personal-a",
       "p:possessives-basic",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -5255,7 +5456,8 @@
       "l:comer",
       "l:mes",
       "l:salir",
-      "l:vez"
+      "l:vez",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -5275,7 +5477,8 @@
       "l:lavar",
       "l:ropa",
       "l:semana",
-      "l:vez"
+      "l:vez",
+      "p:veces-al"
     ],
     "targets": [
       "l:lavar"
@@ -5320,7 +5523,10 @@
       "l:año",
       "l:ver",
       "l:vez",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -5342,6 +5548,7 @@
       "l:diente",
       "l:día",
       "l:vez",
+      "p:lavarse-las-manos",
       "p:veces-al"
     ],
     "targets": [
@@ -5367,7 +5574,9 @@
       "l:domingo",
       "l:día",
       "l:trabajar",
-      "p:todos-los-dias"
+      "p:days-el-lunes",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -5389,7 +5598,8 @@
       "l:día",
       "l:español",
       "l:estudiar",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -5411,7 +5621,9 @@
       "l:día",
       "l:hacer",
       "l:pan",
-      "p:todos-los-dias"
+      "p:telling-time",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -5433,7 +5645,9 @@
       "g:hay-vs-esta",
       "l:café",
       "l:jueves",
-      "l:música"
+      "l:música",
+      "p:days-el-lunes",
+      "p:todos-los-dias"
     ],
     "targets": [],
     "kind": "statement",
@@ -5452,7 +5666,9 @@
       "g:present-ar",
       "l:bus",
       "l:mañana",
-      "l:pasar"
+      "l:pasar",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "l:mañana"
@@ -5473,7 +5689,9 @@
       "g:present-ar",
       "l:mirar",
       "l:noche",
-      "l:reloj"
+      "l:reloj",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "l:reloj"
@@ -5495,7 +5713,8 @@
       "g:preterite-irregular-strong",
       "l:café",
       "l:día",
-      "l:estar"
+      "l:estar",
+      "p:todos-los-dias"
     ],
     "targets": [],
     "kind": "statement",
@@ -5513,7 +5732,8 @@
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:dormir",
-      "l:noche"
+      "l:noche",
+      "p:todos-los-dias"
     ],
     "targets": [
       "l:dormir"
@@ -5533,7 +5753,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:día",
-      "l:llover"
+      "l:llover",
+      "p:todos-los-dias"
     ],
     "targets": [],
     "kind": "statement",
@@ -5552,7 +5773,8 @@
       "g:present-ar",
       "l:día",
       "l:parque",
-      "l:pasar"
+      "l:pasar",
+      "p:todos-los-dias"
     ],
     "targets": [],
     "kind": "statement",
@@ -5574,7 +5796,9 @@
       "l:día",
       "l:igual",
       "l:ser",
-      "p:todos-los-dias"
+      "p:aqui-ahi-alla",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -5595,7 +5819,8 @@
       "g:stem-boot",
       "l:desayunar",
       "l:soler",
-      "p:soler-inf"
+      "p:soler-inf",
+      "p:telling-time"
     ],
     "targets": [
       "l:desayunar",
@@ -5619,6 +5844,7 @@
       "l:soler",
       "l:tarde",
       "l:verdad",
+      "p:llegar-a-tiempo",
       "p:soler-inf"
     ],
     "targets": [
@@ -5665,7 +5891,8 @@
       "g:present-er-ir",
       "l:cenar",
       "l:soler",
-      "p:soler-inf"
+      "p:soler-inf",
+      "p:telling-time"
     ],
     "targets": [
       "p:soler-inf"
@@ -5686,7 +5913,8 @@
       "g:stem-boot",
       "l:cerrar",
       "l:soler",
-      "p:soler-inf"
+      "p:soler-inf",
+      "p:telling-time"
     ],
     "targets": [
       "p:soler-inf"
@@ -5709,6 +5937,7 @@
       "l:hacer",
       "l:soler",
       "l:tarde",
+      "p:por-la-manana",
       "p:soler-inf"
     ],
     "targets": [
@@ -5734,6 +5963,7 @@
       "l:hacer",
       "l:qué",
       "l:soler",
+      "p:days-el-lunes",
       "p:soler-inf"
     ],
     "targets": [
@@ -5896,7 +6126,8 @@
       "l:hacer",
       "l:jugo",
       "l:tomar",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:hace-frio"
     ],
     "targets": [
       "p:cuando-basic"
@@ -5947,7 +6178,8 @@
       "l:calle",
       "l:cocinar",
       "l:saber",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects",
@@ -5974,6 +6206,7 @@
       "l:llave",
       "l:puerta",
       "l:salir",
+      "p:con-sin",
       "p:cuando-basic"
     ],
     "targets": [
@@ -6047,7 +6280,10 @@
       "l:café",
       "l:estar",
       "l:sentirse",
-      "p:cuando-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:cuando-basic",
+      "p:sentirse-mal"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -6095,7 +6331,8 @@
       "l:parque",
       "l:terminar",
       "l:trabajar",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:empezar-terminar"
     ],
     "targets": [
       "p:cuando-basic"
@@ -6143,6 +6380,8 @@
       "g:present-ar",
       "l:francés",
       "l:hablar",
+      "p:hedge-knowledge",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -6162,7 +6401,11 @@
       "g:quantifiers",
       "g:yo-irregular",
       "l:bien",
-      "l:conocer"
+      "l:conocer",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -6182,7 +6425,8 @@
       "g:negation-words",
       "g:yo-irregular",
       "l:fútbol",
-      "l:saber"
+      "l:saber",
+      "p:hedge-knowledge"
     ],
     "targets": [],
     "kind": "statement",
@@ -6201,7 +6445,10 @@
       "g:yo-irregular",
       "l:cocina",
       "l:saber",
-      "p:quantifiers-basic"
+      "p:hedge-knowledge",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -6220,7 +6467,10 @@
       "g:present-er-ir",
       "l:español",
       "l:saber",
-      "p:quantifiers-basic"
+      "p:hedge-knowledge",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -6238,6 +6488,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:entender",
+      "p:hedge-knowledge",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -6257,8 +6509,10 @@
       "l:abuela",
       "l:café",
       "l:saber",
+      "p:hedge-knowledge",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -6276,7 +6530,9 @@
       "g:present-er-ir",
       "g:quantifiers",
       "l:pan",
-      "l:saber"
+      "l:saber",
+      "p:hedge-knowledge",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -6294,7 +6550,10 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:conocer",
-      "p:quantifiers-basic"
+      "p:hedge-knowledge",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -6314,7 +6573,10 @@
       "l:bien",
       "l:calle",
       "l:conocer",
-      "p:demonstratives-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:demonstratives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:calle"
@@ -6335,6 +6597,7 @@
       "g:present-ar",
       "l:francés",
       "l:hablar",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -6354,7 +6617,8 @@
       "g:present-er-ir",
       "g:quantifiers",
       "l:bien",
-      "l:conocer"
+      "l:conocer",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -6373,6 +6637,8 @@
       "l:llegar",
       "l:sentir",
       "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -6395,7 +6661,9 @@
       "g:commands-usted",
       "g:gender-articles",
       "l:disculpar",
-      "l:molestia"
+      "l:molestia",
+      "p:disculpa-que",
+      "p:siento-llegar-tarde"
     ],
     "targets": [],
     "kind": "statement",
@@ -6414,7 +6682,9 @@
       "g:verb-infinitive",
       "l:ir",
       "l:poder",
-      "l:sentir"
+      "l:sentir",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [],
     "kind": "statement",
@@ -6469,7 +6739,9 @@
       "g:stem-boot",
       "l:llamar",
       "l:sentir",
-      "l:tarde"
+      "l:tarde",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "g:stem-boot"
@@ -6518,6 +6790,8 @@
       "l:sentir",
       "l:tarde",
       "l:tranquilo",
+      "p:llegar-a-tiempo",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -6776,7 +7050,8 @@
       "g:gender-articles",
       "l:banco",
       "l:dar",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:que-pereza"
@@ -7189,7 +7464,8 @@
       "l:abrir",
       "l:antes",
       "l:escuchar",
-      "l:puerta"
+      "l:puerta",
+      "p:personal-a"
     ],
     "targets": [
       "g:prep-infinitive"
@@ -7372,6 +7648,7 @@
       "l:hermano",
       "l:quitarse",
       "l:zapatos",
+      "p:lavarse-las-manos",
       "p:possessives-basic"
     ],
     "targets": [
@@ -7424,6 +7701,8 @@
       "l:ir",
       "l:llamar",
       "l:mamá",
+      "p:ir-a-venir-de-place",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -7495,6 +7774,7 @@
       "l:llamar",
       "l:llegar",
       "l:mamá",
+      "p:personal-a",
       "p:possessives-basic",
       "p:time-sequence-basic"
     ],
@@ -7622,6 +7902,7 @@
       "l:después",
       "l:entrar",
       "l:gente",
+      "p:la-gente-singular",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -7646,7 +7927,8 @@
       "l:antes",
       "l:llamar",
       "l:mirar",
-      "l:puerta"
+      "l:puerta",
+      "p:personal-a"
     ],
     "targets": [
       "g:prep-infinitive"
@@ -7670,6 +7952,7 @@
       "l:contar",
       "l:después",
       "l:plata",
+      "p:contar-dos-sentidos",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -7719,7 +8002,8 @@
       "l:antes",
       "l:camisa",
       "l:lavar",
-      "l:planchar"
+      "l:planchar",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:prep-infinitive",
@@ -7848,7 +8132,9 @@
       "l:día",
       "l:empezar",
       "l:tinto",
-      "l:tomar"
+      "l:tomar",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "g:prep-infinitive"
@@ -7927,7 +8213,8 @@
       "l:antes",
       "l:cara",
       "l:lavarse",
-      "l:maquillarse"
+      "l:maquillarse",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:prep-infinitive",
@@ -7982,6 +8269,7 @@
       "l:comer",
       "l:después",
       "l:diente",
+      "p:lavarse-las-manos",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -8088,7 +8376,8 @@
       "l:ganar",
       "l:plata",
       "l:trabajar",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [],
     "kind": "statement",
@@ -8109,7 +8398,8 @@
       "l:caminar",
       "l:ir",
       "l:parque",
-      "l:rato"
+      "l:rato",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [],
     "kind": "statement",
@@ -8128,7 +8418,8 @@
       "l:aprender",
       "l:español",
       "l:estudiar",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [],
     "kind": "statement",
@@ -8149,7 +8440,9 @@
       "l:ayudar",
       "l:café",
       "l:quedarse",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:personal-a"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -8175,7 +8468,9 @@
       "l:ir",
       "l:pan",
       "l:panadería",
-      "p:para-inf"
+      "p:ir-a-venir-de-place",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [],
     "kind": "statement",
@@ -8205,6 +8500,7 @@
       "l:diente",
       "l:hacer",
       "l:qué",
+      "p:lavarse-las-manos",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -8388,6 +8684,7 @@
       "l:jabón",
       "l:lavarse",
       "l:mano",
+      "p:con-sin",
       "p:lavarse-las-manos"
     ],
     "targets": [
@@ -8521,6 +8818,7 @@
       "l:frío",
       "l:lavarse",
       "l:mano",
+      "p:con-sin",
       "p:lavarse-las-manos"
     ],
     "targets": [
@@ -8572,6 +8870,7 @@
       "l:aquí",
       "l:lavarse",
       "l:mano",
+      "p:aqui-ahi-alla",
       "p:lavarse-las-manos"
     ],
     "targets": [
@@ -8598,7 +8897,9 @@
       "l:hijos",
       "l:lavarse",
       "l:mano",
+      "p:frequency-scale",
       "p:lavarse-las-manos",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -8655,6 +8956,7 @@
       "l:llegar",
       "l:mano",
       "l:siempre",
+      "p:frequency-scale",
       "p:lavarse-las-manos"
     ],
     "targets": [
@@ -8679,7 +8981,9 @@
       "g:yo-irregular",
       "l:mano",
       "l:oler",
-      "l:pan"
+      "l:pan",
+      "p:le-falta-sal",
+      "p:oler-a-saber-a"
     ],
     "targets": [
       "l:mano"
@@ -8746,7 +9050,8 @@
       "g:reflexive-routine",
       "l:calma",
       "l:cepillarse",
-      "l:diente"
+      "l:diente",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -8770,7 +9075,8 @@
       "g:reflexive-routine",
       "l:cepillarse",
       "l:diente",
-      "l:minuto"
+      "l:minuto",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -8797,7 +9103,8 @@
       "l:antes",
       "l:cepillarse",
       "l:diente",
-      "l:niño"
+      "l:niño",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:prep-infinitive",
@@ -8826,6 +9133,7 @@
       "l:desayunar",
       "l:después",
       "l:diente",
+      "p:lavarse-las-manos",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -8853,7 +9161,8 @@
       "g:reflexive-routine",
       "l:ayer",
       "l:cepillarse",
-      "l:diente"
+      "l:diente",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -8879,6 +9188,7 @@
       "l:diente",
       "l:día",
       "l:vez",
+      "p:lavarse-las-manos",
       "p:veces-al"
     ],
     "targets": [
@@ -8904,7 +9214,9 @@
       "g:yo-irregular",
       "l:diente",
       "l:malo",
-      "l:tener"
+      "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "l:diente"
@@ -8926,6 +9238,7 @@
       "l:abuelo",
       "l:diente",
       "l:tener",
+      "p:poco-un-poco",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -9010,7 +9323,9 @@
       "g:yo-irregular",
       "l:champú",
       "l:naranja",
-      "l:oler"
+      "l:oler",
+      "p:le-falta-sal",
+      "p:oler-a-saber-a"
     ],
     "targets": [
       "l:champú"
@@ -9034,6 +9349,7 @@
       "l:lavarse",
       "l:pelo",
       "l:qué",
+      "p:lavarse-las-manos",
       "p:prep-questions-basic"
     ],
     "targets": [
@@ -9102,7 +9418,9 @@
       "l:estar",
       "l:jabón",
       "l:lado",
-      "l:toalla"
+      "l:toalla",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:jabón",
@@ -9127,6 +9445,7 @@
       "l:blanco",
       "l:ser",
       "l:toalla",
+      "p:los-de-la-camiseta",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9194,7 +9513,8 @@
       "l:favor",
       "l:jabón",
       "l:pasar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:jabón"
@@ -9217,7 +9537,9 @@
       "l:agua",
       "l:cara",
       "l:frío",
-      "l:lavarse"
+      "l:lavarse",
+      "p:con-sin",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:reflexive-routine"
@@ -9242,6 +9564,7 @@
       "l:hermana",
       "l:lavarse",
       "l:vez",
+      "p:lavarse-las-manos",
       "p:possessives-basic",
       "p:veces-al"
     ],
@@ -9266,7 +9589,9 @@
       "g:reflexive-routine",
       "l:lavarse",
       "l:pelo",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:reflexive-routine"
@@ -9384,7 +9709,8 @@
       "g:reflexive-routine",
       "l:afeitarse",
       "l:jueves",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -9407,7 +9733,8 @@
       "g:reflexive-routine",
       "l:afeitarse",
       "l:día",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -9473,6 +9800,7 @@
       "g:reflexive-routine",
       "l:hermana",
       "l:maquillarse",
+      "p:poco-un-poco",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -9497,7 +9825,8 @@
       "g:reflexive-routine",
       "l:maquillarse",
       "l:trabajar",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -9520,7 +9849,8 @@
       "g:reflexive-routine",
       "l:día",
       "l:maquillarse",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -9714,7 +10044,8 @@
       "g:present-er-ir",
       "g:tener-que-hay-que",
       "l:deber",
-      "l:llegar"
+      "l:llegar",
+      "p:telling-time"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -9761,7 +10092,8 @@
       "g:tener-que-hay-que",
       "l:abrir",
       "l:deber",
-      "l:puerta"
+      "l:puerta",
+      "p:telling-time"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -9867,7 +10199,9 @@
       "l:deber",
       "l:llegar",
       "l:tarde",
-      "l:vez"
+      "l:vez",
+      "p:llegar-a-tiempo",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:tener-que-hay-que",
@@ -10008,7 +10342,8 @@
       "g:tener-que-hay-que",
       "l:aquí",
       "l:deber",
-      "l:esperar"
+      "l:esperar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10094,7 +10429,8 @@
       "l:banco",
       "l:deber",
       "l:hoy",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10166,6 +10502,7 @@
       "l:deber",
       "l:esperar",
       "l:ir",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -10216,7 +10553,8 @@
       "l:descansar",
       "l:saber",
       "l:tener",
-      "l:trabajo"
+      "l:trabajo",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects",
@@ -10240,7 +10578,8 @@
       "l:deber",
       "l:hoy",
       "l:madrugar",
-      "l:qué"
+      "l:qué",
+      "p:madrugar-trasnochar"
     ],
     "targets": [
       "c:que-pereza",
@@ -10266,7 +10605,8 @@
       "l:dar",
       "l:deber",
       "l:ir",
-      "l:médico"
+      "l:médico",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:que-pereza",
@@ -10395,6 +10735,7 @@
       "l:deber",
       "l:hermana",
       "l:llamar",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10420,7 +10761,8 @@
       "l:estar",
       "l:oficina",
       "l:papá",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10446,7 +10788,9 @@
       "l:deber",
       "l:gente",
       "l:ser",
-      "l:tarde"
+      "l:tarde",
+      "p:es-de-noche-tarde",
+      "p:la-gente-singular"
     ],
     "targets": [
       "g:tener-que-hay-que",
@@ -10473,7 +10817,9 @@
       "l:deber",
       "l:oler",
       "l:pan",
-      "l:ser"
+      "l:ser",
+      "p:le-falta-sal",
+      "p:oler-a-saber-a"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10538,7 +10884,8 @@
       "g:present-er-ir",
       "g:tener-que-hay-que",
       "l:cerrar",
-      "l:deber"
+      "l:deber",
+      "p:telling-time"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10607,6 +10954,7 @@
       "l:deber",
       "l:estar",
       "l:padres",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10631,6 +10979,7 @@
       "l:empezar",
       "l:hermana",
       "l:trabajar",
+      "p:empezar-terminar",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10699,7 +11048,9 @@
       "l:deber",
       "l:estar",
       "l:jueves",
-      "l:libre"
+      "l:libre",
+      "p:days-el-lunes",
+      "p:telling-time"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10793,7 +11144,8 @@
       "l:deber",
       "l:hoy",
       "l:llegar",
-      "l:tiempo"
+      "l:tiempo",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10816,7 +11168,8 @@
       "l:deber",
       "l:llave",
       "l:perder",
-      "l:vez"
+      "l:vez",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10838,7 +11191,8 @@
       "g:tener-que-hay-que",
       "l:deber",
       "l:domingo",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10908,7 +11262,8 @@
       "l:explicar",
       "l:profesor",
       "l:vez",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -10952,7 +11307,8 @@
       "g:yo-irregular",
       "l:día",
       "l:ver",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:direct-objects",
@@ -10995,7 +11351,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:llamar",
-      "l:tarde"
+      "l:tarde",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:direct-objects",
@@ -11038,7 +11395,10 @@
       "g:direct-objects",
       "g:yo-irregular",
       "l:bien",
-      "l:conocer"
+      "l:conocer",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -11059,7 +11419,8 @@
       "g:direct-objects",
       "g:preterite-er-ir",
       "l:ayer",
-      "l:conocer"
+      "l:conocer",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -11196,6 +11557,7 @@
       "g:present-ar",
       "l:champú",
       "l:usar",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -11219,7 +11581,8 @@
       "g:present-ar",
       "l:lavar",
       "l:ropa",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:direct-objects",
@@ -11243,7 +11606,8 @@
       "g:yo-irregular",
       "l:día",
       "l:hacer",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:direct-objects",
@@ -11311,7 +11675,9 @@
       "l:bien",
       "l:cerveza",
       "l:frío",
-      "l:querer"
+      "l:querer",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:direct-objects"
@@ -11432,7 +11798,8 @@
       "g:direct-objects",
       "g:present-ar",
       "l:aquí",
-      "l:esperar"
+      "l:esperar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:direct-objects"
@@ -11587,7 +11954,8 @@
       "g:gender-articles",
       "l:día",
       "l:mira",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -11607,7 +11975,8 @@
       "g:direct-objects",
       "g:gender-articles",
       "g:present-er-ir",
-      "l:abrir"
+      "l:abrir",
+      "p:telling-time"
     ],
     "targets": [
       "g:direct-objects"
@@ -11654,7 +12023,8 @@
       "l:dónde",
       "l:estar",
       "l:reloj",
-      "l:tener"
+      "l:tener",
+      "p:question-word-order"
     ],
     "targets": [
       "g:direct-objects",
@@ -11678,7 +12048,8 @@
       "g:questions",
       "l:abrir",
       "l:puerta",
-      "l:quién"
+      "l:quién",
+      "p:question-word-order"
     ],
     "targets": [
       "g:direct-objects"
@@ -11700,7 +12071,11 @@
       "g:present-er-ir",
       "g:yo-irregular",
       "l:bien",
-      "l:conocer"
+      "l:conocer",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -11725,7 +12100,8 @@
       "l:celular",
       "l:dejar",
       "l:dónde",
-      "l:encontrar"
+      "l:encontrar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:direct-objects"
@@ -11768,6 +12144,8 @@
       "l:llegar",
       "l:sentir",
       "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -11791,6 +12169,9 @@
       "l:sentir",
       "l:tarde",
       "l:vez",
+      "p:llegar-a-tiempo",
+      "p:otro-no-article",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -11813,7 +12194,10 @@
       "l:hora",
       "l:llamar",
       "l:sentir",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:personal-a",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "g:stem-boot"
@@ -11836,7 +12220,9 @@
       "l:cenar",
       "l:ir",
       "l:poder",
-      "l:sentir"
+      "l:sentir",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "g:ir-a-plans"
@@ -11855,7 +12241,9 @@
     "requires": [
       "g:stem-boot",
       "l:hablar",
-      "l:sentir"
+      "l:sentir",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "g:stem-boot"
@@ -11878,7 +12266,9 @@
       "l:llamar",
       "l:problema",
       "l:sentir",
-      "l:temprano"
+      "l:temprano",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "c:hay"
@@ -11899,7 +12289,9 @@
       "l:hoy",
       "l:pan",
       "l:sentir",
-      "l:tener"
+      "l:tener",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "g:stem-boot"
@@ -11923,7 +12315,9 @@
       "l:sentir",
       "l:tarde",
       "l:trancón",
+      "p:llegar-a-tiempo",
       "p:quantifiers-basic",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -11946,6 +12340,10 @@
       "l:llegar",
       "l:sentir",
       "l:tarde",
+      "p:don-dona-nombre",
+      "p:llegar-a-tiempo",
+      "p:senor-don-article",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -11972,6 +12370,8 @@
       "l:pasar",
       "l:sentir",
       "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -11998,7 +12398,9 @@
       "l:frío",
       "l:sentir",
       "l:tinto",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "g:estar-location-states"
@@ -12025,7 +12427,10 @@
       "l:mañana",
       "l:sentir",
       "l:temprano",
-      "l:tener"
+      "l:tener",
+      "p:madrugar-trasnochar",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "c:tengo"
@@ -12050,6 +12455,8 @@
       "l:perder",
       "l:sentir",
       "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -12077,7 +12484,11 @@
       "l:reloj",
       "l:sentir",
       "l:tarde",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:llegar-a-tiempo",
       "p:possessives-basic",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -12102,7 +12513,9 @@
       "g:gender-articles",
       "l:demora",
       "l:disculpar",
-      "l:señor"
+      "l:señor",
+      "p:disculpa-que",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "c:perdon-disculpe"
@@ -12123,7 +12536,11 @@
       "g:commands-usted",
       "g:gender-articles",
       "l:disculpar",
-      "l:hora"
+      "l:hora",
+      "p:disculpa-que",
+      "p:don-dona-nombre",
+      "p:senor-don-article",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "c:perdon-disculpe"
@@ -12147,7 +12564,9 @@
       "g:present-ar",
       "l:demora",
       "l:disculpar",
-      "l:ir"
+      "l:ir",
+      "p:disculpa-que",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "c:ya-voy"
@@ -12168,7 +12587,10 @@
       "l:fiesta",
       "l:ir",
       "l:sentir",
-      "p:possessives-basic"
+      "p:ir-a-venir-de-place",
+      "p:possessives-basic",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "g:stem-boot"
@@ -12193,6 +12615,8 @@
       "l:llegar",
       "l:sentir",
       "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -12215,7 +12639,9 @@
       "l:llamar",
       "l:mamá",
       "l:sentir",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "g:stem-boot"
@@ -12236,7 +12662,10 @@
       "l:nombre",
       "l:saber",
       "l:sentir",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:saber-conocer",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "g:stem-boot"
@@ -12257,7 +12686,11 @@
       "l:sentir",
       "l:toalla",
       "l:usar",
-      "p:possessives-basic"
+      "p:don-dona-nombre",
+      "p:possessives-basic",
+      "p:senor-don-article",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "g:stem-boot"
@@ -12278,6 +12711,8 @@
       "l:llegar",
       "l:sentir",
       "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -12301,6 +12736,9 @@
       "l:sentir",
       "l:tarde",
       "l:vez",
+      "p:llegar-a-tiempo",
+      "p:otro-no-article",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -12327,7 +12765,10 @@
       "l:sentir",
       "l:ser",
       "l:tarde",
-      "p:siento-llegar-tarde"
+      "p:llegar-a-tiempo",
+      "p:sentir-lo-de",
+      "p:siento-llegar-tarde",
+      "p:telling-time"
     ],
     "targets": [
       "l:tarde",
@@ -12354,7 +12795,9 @@
       "l:acostarse",
       "l:disculpar",
       "l:hora",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:disculpa-que",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "g:reflexive-routine"
@@ -12380,6 +12823,8 @@
       "l:reunión",
       "l:sentir",
       "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
     "targets": [
@@ -12404,6 +12849,7 @@
       "l:hoy",
       "l:temprano",
       "l:viernes",
+      "p:days-el-lunes",
       "p:desde-hasta"
     ],
     "targets": [
@@ -12428,7 +12874,9 @@
       "l:esquina",
       "l:metro",
       "l:ser",
-      "p:desde-hasta"
+      "p:aqui-ahi-alla",
+      "p:desde-hasta",
+      "p:numbers-un-una"
     ],
     "targets": [
       "p:desde-hasta"
@@ -12450,7 +12898,11 @@
       "g:stem-boot",
       "l:bien",
       "l:dormir",
-      "l:lunes"
+      "l:lunes",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:days-el-lunes",
+      "p:no-hasta"
     ],
     "targets": [
       "l:dormir"
@@ -12560,7 +13012,8 @@
       "l:abrir",
       "l:domingo",
       "l:martes",
-      "l:mercado"
+      "l:mercado",
+      "p:desde-hasta"
     ],
     "targets": [
       "g:present-er-ir"
@@ -12603,7 +13056,8 @@
       "g:estar-location-states",
       "g:gender-articles",
       "l:cocina",
-      "l:estar"
+      "l:estar",
+      "p:desde-hasta"
     ],
     "targets": [
       "g:estar-location-states"
@@ -12624,7 +13078,9 @@
       "g:present-er-ir",
       "l:abrir",
       "l:droguería",
-      "l:noche"
+      "l:noche",
+      "p:desde-hasta",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:present-er-ir"
@@ -12646,6 +13102,7 @@
       "l:abrir",
       "l:martes",
       "l:mañana",
+      "p:days-el-lunes",
       "p:desde-hasta"
     ],
     "targets": [
@@ -12667,7 +13124,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:carta",
-      "l:jugar"
+      "l:jugar",
+      "p:desde-hasta"
     ],
     "targets": [
       "g:stem-boot"
@@ -12752,7 +13210,8 @@
       "g:hay-vs-esta",
       "l:barrio",
       "l:bus",
-      "l:centro"
+      "l:centro",
+      "p:desde-hasta"
     ],
     "targets": [],
     "kind": "statement",
@@ -12792,7 +13251,8 @@
       "g:present-er-ir",
       "l:correr",
       "l:parque",
-      "l:río"
+      "l:río",
+      "p:desde-hasta"
     ],
     "targets": [],
     "kind": "statement",
@@ -12853,7 +13313,8 @@
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
-      "l:dormir"
+      "l:dormir",
+      "p:desde-hasta"
     ],
     "targets": [
       "g:stem-boot"
@@ -12874,7 +13335,9 @@
       "g:present-er-ir",
       "l:frío",
       "l:hacer",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes",
+      "p:hace-frio"
     ],
     "targets": [
       "g:present-er-ir"
@@ -12895,7 +13358,8 @@
       "c:hay",
       "g:hay-vs-esta",
       "l:clase",
-      "l:lunes"
+      "l:lunes",
+      "p:no-hasta"
     ],
     "targets": [
       "c:hasta-el-lunes"
@@ -12959,7 +13423,8 @@
       "g:hay-vs-esta",
       "l:paso",
       "l:puerta",
-      "l:ventana"
+      "l:ventana",
+      "p:desde-hasta"
     ],
     "targets": [],
     "kind": "statement",
@@ -12978,7 +13443,9 @@
       "g:gender-articles",
       "l:café",
       "l:estar",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes",
+      "p:desde-hasta"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13002,7 +13469,8 @@
       "l:bus",
       "l:casa",
       "l:ir",
-      "p:desde-hasta"
+      "p:desde-hasta",
+      "p:transport-en"
     ],
     "targets": [
       "p:desde-hasta"
@@ -13023,6 +13491,8 @@
       "l:aquí",
       "l:lejos",
       "l:ser",
+      "p:aqui-ahi-alla",
+      "p:cerca-de",
       "p:desde-hasta"
     ],
     "targets": [
@@ -13042,7 +13512,8 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:desde-hasta"
     ],
     "targets": [],
     "kind": "statement",
@@ -13061,7 +13532,9 @@
       "g:present-er-ir",
       "l:abrir",
       "l:noche",
-      "l:tienda"
+      "l:tienda",
+      "p:desde-hasta",
+      "p:por-la-manana"
     ],
     "targets": [],
     "kind": "statement",
@@ -13079,7 +13552,8 @@
       "g:estar-location-states",
       "g:gender-articles",
       "l:aquí",
-      "l:estar"
+      "l:estar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [],
     "kind": "statement",
@@ -13159,7 +13633,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:barrer",
-      "l:empezar"
+      "l:empezar",
+      "p:telling-time"
     ],
     "targets": [
       "g:stem-boot"
@@ -13182,7 +13657,8 @@
       "l:antes",
       "l:hacer",
       "l:pan",
-      "l:terminar"
+      "l:terminar",
+      "p:empezar-terminar"
     ],
     "targets": [
       "g:present-ar"
@@ -13204,7 +13680,9 @@
       "g:verb-infinitive",
       "l:empezar",
       "l:escribir",
-      "l:terminar"
+      "l:terminar",
+      "p:empezar-terminar",
+      "p:telling-time"
     ],
     "targets": [
       "g:preterite-ar"
@@ -13227,7 +13705,8 @@
       "l:caminar",
       "l:comer",
       "l:salir",
-      "l:terminar"
+      "l:terminar",
+      "p:empezar-terminar"
     ],
     "targets": [
       "g:present-ar"
@@ -13250,7 +13729,8 @@
       "g:stem-boot",
       "l:empezar",
       "l:historia",
-      "l:terminar"
+      "l:terminar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:present-ar"
@@ -13273,8 +13753,7 @@
       "l:día",
       "l:empezar",
       "l:terminar",
-      "l:tinto",
-      "p:empezar-terminar"
+      "l:tinto"
     ],
     "targets": [
       "p:empezar-terminar"
@@ -13297,8 +13776,7 @@
       "l:café",
       "l:día",
       "l:empezar",
-      "l:terminar",
-      "p:empezar-terminar"
+      "l:terminar"
     ],
     "targets": [
       "p:empezar-terminar"
@@ -13319,7 +13797,9 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:empezar",
-      "l:gritar"
+      "l:gritar",
+      "p:empezar-terminar",
+      "p:telling-time"
     ],
     "targets": [
       "g:stem-boot"
@@ -13341,8 +13821,7 @@
       "g:stem-boot",
       "l:día",
       "l:empezar",
-      "l:terminar",
-      "p:empezar-terminar"
+      "l:terminar"
     ],
     "targets": [
       "p:empezar-terminar"
@@ -13364,7 +13843,8 @@
       "g:verb-infinitive",
       "l:irse",
       "l:planchar",
-      "l:terminar"
+      "l:terminar",
+      "p:empezar-terminar"
     ],
     "targets": [
       "g:ir-a-plans"
@@ -13388,6 +13868,8 @@
       "l:tarde",
       "l:terminar",
       "l:trabajar",
+      "p:days-el-lunes",
+      "p:empezar-terminar",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -13410,7 +13892,8 @@
       "g:verb-infinitive",
       "l:carta",
       "l:empezar",
-      "l:leer"
+      "l:leer",
+      "p:empezar-terminar"
     ],
     "targets": [
       "g:stem-boot"
@@ -13433,7 +13916,8 @@
       "l:empezar",
       "l:fácil",
       "l:ser",
-      "l:terminar"
+      "l:terminar",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -13457,7 +13941,8 @@
       "l:hora",
       "l:levantarse",
       "l:normalmente",
-      "l:qué"
+      "l:qué",
+      "p:telling-time"
     ],
     "targets": [
       "c:normalmente",
@@ -13482,7 +13967,8 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:levantarse",
-      "l:qué"
+      "l:qué",
+      "p:telling-time"
     ],
     "targets": [
       "c:que-pereza",
@@ -13506,7 +13992,8 @@
       "g:reflexive-routine",
       "l:ducharse",
       "l:mañana",
-      "l:noche"
+      "l:noche",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -13578,7 +14065,10 @@
       "l:cena",
       "l:hora",
       "l:qué",
-      "l:ser"
+      "l:ser",
+      "p:event-ser-en",
+      "p:question-word-order",
+      "p:telling-time"
     ],
     "targets": [
       "c:que-hora-es",
@@ -13605,7 +14095,9 @@
       "l:pan",
       "l:qué",
       "l:siempre",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:cena"
@@ -13625,7 +14117,8 @@
       "g:reflexive-routine",
       "g:stem-boot",
       "l:acostarse",
-      "l:temprano"
+      "l:temprano",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -13648,7 +14141,10 @@
       "g:stem-boot",
       "l:bien",
       "l:dormir",
-      "l:vez"
+      "l:vez",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:dormir"
@@ -13671,7 +14167,10 @@
       "l:domingo",
       "l:levantarse",
       "l:siempre",
-      "l:tarde"
+      "l:tarde",
+      "p:days-el-lunes",
+      "p:frequency-scale",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -13694,7 +14193,8 @@
       "g:reflexive-routine",
       "g:stem-boot",
       "l:despertarse",
-      "l:temprano"
+      "l:temprano",
+      "p:telling-time"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -13743,7 +14243,9 @@
       "l:claro",
       "l:día",
       "l:mañana",
-      "p:todos-los-dias"
+      "p:por-la-manana",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -13791,7 +14293,8 @@
       "l:dormir",
       "l:hacer",
       "l:qué",
-      "l:tarde"
+      "l:tarde",
+      "p:days-el-lunes"
     ],
     "targets": [
       "l:dormir",
@@ -13817,7 +14320,8 @@
       "l:cuenta",
       "l:hacer",
       "l:qué",
-      "l:tarde"
+      "l:tarde",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:tarde"
@@ -13839,7 +14343,8 @@
       "g:questions",
       "l:cuándo",
       "l:descansar",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -13889,7 +14394,7 @@
       "l:diente",
       "l:día",
       "l:vez",
-      "p:veces-al"
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -13918,7 +14423,8 @@
       "l:ropa",
       "l:semana",
       "l:vez",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:veces-al"
     ],
     "targets": [
       "l:lavar"
@@ -13944,7 +14450,7 @@
       "l:ir",
       "l:mes",
       "l:vez",
-      "p:veces-al"
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "p:veces-al"
@@ -13967,7 +14473,9 @@
       "l:gimnasio",
       "l:ir",
       "l:semana",
-      "l:vez"
+      "l:vez",
+      "p:ir-a-venir-de-place",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -13985,7 +14493,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14010,6 +14519,7 @@
       "l:rato",
       "l:soler",
       "l:trabajo",
+      "p:infinitive-instructions",
       "p:soler-inf",
       "p:time-sequence-basic"
     ],
@@ -14033,7 +14543,8 @@
       "l:cenar",
       "l:soler",
       "l:tarde",
-      "p:soler-inf"
+      "p:soler-inf",
+      "p:telling-time"
     ],
     "targets": [
       "l:tarde",
@@ -14059,6 +14570,7 @@
       "l:soler",
       "l:tinto",
       "l:tomar",
+      "p:por-la-manana",
       "p:soler-inf"
     ],
     "targets": [
@@ -14082,7 +14594,8 @@
       "l:hora",
       "l:qué",
       "l:trabajar",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14102,6 +14615,7 @@
       "l:cuándo",
       "l:enero",
       "l:trabajar",
+      "p:aqui-ahi-alla",
       "p:prep-questions-basic"
     ],
     "targets": [],
@@ -14120,7 +14634,8 @@
       "l:lunes",
       "l:martes",
       "l:sábado",
-      "l:viernes"
+      "l:viernes",
+      "p:desde-hasta"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14141,7 +14656,9 @@
       "g:verb-infinitive",
       "l:cuándo",
       "l:empezar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:empezar-terminar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14164,7 +14681,8 @@
       "l:hora",
       "l:hoy",
       "l:qué",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14212,8 +14730,11 @@
       "l:ser",
       "l:sábado",
       "l:tener",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
       "p:para-inf",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:lavar"
@@ -14236,6 +14757,7 @@
       "l:ahora",
       "l:tener",
       "l:tiempo",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -14261,7 +14783,8 @@
       "l:claro",
       "l:planchar",
       "l:poder",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:request-ladder"
     ],
     "targets": [
       "g:direct-objects",
@@ -14372,7 +14895,8 @@
       "l:hora",
       "l:noche",
       "l:qué",
-      "l:ser"
+      "l:ser",
+      "p:por-la-manana"
     ],
     "targets": [
       "c:que-hora-es"
@@ -14395,7 +14919,8 @@
       "g:stem-boot",
       "l:hora",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14415,7 +14940,9 @@
       "g:gender-articles",
       "l:favor",
       "l:hora",
-      "l:regalar"
+      "l:regalar",
+      "p:me-trae",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14460,7 +14987,8 @@
       "l:reloj",
       "l:saber",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:que-hora-es",
@@ -14484,7 +15012,8 @@
       "g:stem-boot",
       "l:hora",
       "l:qué",
-      "l:tener"
+      "l:tener",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14502,7 +15031,9 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
-      "l:tarde"
+      "l:tarde",
+      "p:es-de-noche-tarde",
+      "p:telling-time"
     ],
     "targets": [
       "l:tarde"
@@ -14524,7 +15055,9 @@
       "l:frío",
       "l:hacer",
       "l:noche",
-      "l:ser"
+      "l:ser",
+      "p:es-de-noche-tarde",
+      "p:hace-frio"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14543,7 +15076,8 @@
       "g:adverbs-mente",
       "l:casa",
       "l:desayunar",
-      "l:normalmente"
+      "l:normalmente",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "c:normalmente",
@@ -14569,7 +15103,9 @@
       "l:hoy",
       "l:llegar",
       "l:normalmente",
-      "l:tarde"
+      "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:telling-time"
     ],
     "targets": [
       "c:normalmente",
@@ -14615,7 +15151,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:cerrar",
-      "l:normalmente"
+      "l:normalmente",
+      "p:telling-time"
     ],
     "targets": [
       "c:normalmente"
@@ -14662,7 +15199,8 @@
       "g:stem-boot",
       "l:bus",
       "l:normalmente",
-      "l:venir"
+      "l:venir",
+      "p:transport-en"
     ],
     "targets": [
       "c:normalmente"
@@ -14734,7 +15272,8 @@
       "g:questions",
       "l:excelente",
       "l:qué",
-      "l:servicio"
+      "l:servicio",
+      "p:te-parece-bien-que"
     ],
     "targets": [
       "l:servicio"
@@ -14777,7 +15316,8 @@
       "g:reflexive-routine",
       "g:stem-boot",
       "l:acordarse",
-      "l:hora"
+      "l:hora",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -14801,7 +15341,8 @@
       "l:acordarse",
       "l:llamarse",
       "l:nombre",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -14826,7 +15367,9 @@
       "l:acordarse",
       "l:aquí",
       "l:estar",
-      "l:llave"
+      "l:llave",
+      "p:aqui-ahi-alla",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -14851,7 +15394,8 @@
       "l:dónde",
       "l:llave",
       "l:perder",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:perder"
@@ -14894,6 +15438,7 @@
       "l:bonito",
       "l:pequeño",
       "l:ser",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -14920,7 +15465,9 @@
       "l:cerca",
       "l:dónde",
       "l:pequeño",
-      "l:vivir"
+      "l:vivir",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:pequeño"
@@ -15025,7 +15572,8 @@
       "l:descansar",
       "l:hoy",
       "l:quedarse",
-      "l:qué"
+      "l:qué",
+      "p:que-subj-deseo"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -15047,7 +15595,9 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:quedarse",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -15071,7 +15621,9 @@
       "l:mesero",
       "l:oficio",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "l:oficio"
@@ -15143,7 +15695,8 @@
       "l:fin",
       "l:pasado",
       "l:semana",
-      "l:trabajar"
+      "l:trabajar",
+      "p:todos-los-dias"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -15186,6 +15739,7 @@
       "l:pasado",
       "l:vender",
       "p:demonstratives-basic",
+      "p:poco-un-poco",
       "p:quantifiers-basic",
       "p:time-pasado-que-viene"
     ],
@@ -15233,7 +15787,8 @@
       "g:yo-irregular",
       "l:realmente",
       "l:reloj",
-      "l:saber"
+      "l:saber",
+      "p:hedge-knowledge"
     ],
     "targets": [
       "c:normalmente",
@@ -15378,7 +15933,8 @@
       "g:reflexive-routine",
       "g:stem-boot",
       "l:acostarse",
-      "l:normalmente"
+      "l:normalmente",
+      "p:telling-time"
     ],
     "targets": [
       "c:normalmente",
@@ -15448,7 +16004,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:almorzar",
-      "l:normalmente"
+      "l:normalmente",
+      "p:telling-time"
     ],
     "targets": [
       "c:normalmente",
@@ -15517,7 +16074,8 @@
       "g:ser-identity",
       "l:desayuno",
       "l:ser",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:desayuno"
@@ -15560,7 +16118,8 @@
       "g:stem-boot",
       "l:almuerzo",
       "l:costar",
-      "l:día"
+      "l:día",
+      "p:costar-pagar"
     ],
     "targets": [
       "l:almuerzo"
@@ -15629,7 +16188,9 @@
       "l:almuerzo",
       "l:casa",
       "l:hoy",
-      "l:ser"
+      "l:ser",
+      "p:event-ser-en",
+      "p:ser-event-location"
     ],
     "targets": [
       "l:almuerzo"
@@ -15717,7 +16278,8 @@
       "g:stem-boot",
       "l:kilo",
       "l:papa",
-      "l:querer"
+      "l:querer",
+      "p:container-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -15811,7 +16373,8 @@
       "g:hay-vs-esta",
       "l:docena",
       "l:pan",
-      "l:vitrina"
+      "l:vitrina",
+      "p:container-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -15828,7 +16391,8 @@
     "requires": [
       "g:present-ar",
       "l:hora",
-      "l:quedar"
+      "l:quedar",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [],
     "kind": "statement",
@@ -15847,7 +16411,8 @@
       "g:present-ar",
       "l:día",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "statement",
@@ -15982,6 +16547,8 @@
       "l:domingo",
       "l:ir",
       "l:pasado",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
       "p:time-pasado-que-viene"
     ],
     "targets": [
@@ -16004,6 +16571,7 @@
       "l:hablar",
       "l:lunes",
       "l:pasado",
+      "p:days-el-lunes",
       "p:time-pasado-que-viene"
     ],
     "targets": [
@@ -16027,6 +16595,7 @@
       "l:pasado",
       "l:pequeño",
       "l:salir",
+      "p:days-el-lunes",
       "p:time-pasado-que-viene"
     ],
     "targets": [
@@ -16233,6 +16802,8 @@
       "l:casa",
       "l:domingo",
       "l:quedarse",
+      "p:days-el-lunes",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -16302,7 +16873,8 @@
       "g:reflexive-routine",
       "l:cama",
       "l:domingo",
-      "l:quedarse"
+      "l:quedarse",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -16444,6 +17016,8 @@
       "l:malo",
       "l:ser",
       "l:servicio",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -16541,7 +17115,8 @@
     "requires": [
       "g:preterite-er-ir",
       "l:pedir",
-      "l:tinto"
+      "l:tinto",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:pedir"
@@ -16608,7 +17183,8 @@
       "l:entrar",
       "l:pedir",
       "l:permiso",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:pedir"
@@ -16740,7 +17316,8 @@
       "l:antes",
       "l:café",
       "l:entrar",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:entrar"
@@ -16904,7 +17481,10 @@
       "l:acordarse",
       "l:café",
       "l:día",
-      "p:possessives-basic"
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:possessives-basic",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -16928,7 +17508,8 @@
       "l:abuela",
       "l:acordarse",
       "l:mano",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -16953,7 +17534,9 @@
       "l:acordarse",
       "l:hora",
       "l:llave",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -16999,7 +17582,8 @@
       "g:negation-words",
       "g:reflexive-routine",
       "g:stem-boot",
-      "l:acordarse"
+      "l:acordarse",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -17024,7 +17608,9 @@
       "l:ayer",
       "l:llamar",
       "l:mamá",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -17047,7 +17633,8 @@
       "g:reflexive-routine",
       "l:bañarse",
       "l:domingo",
-      "l:río"
+      "l:río",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -17074,7 +17661,9 @@
       "l:bañarse",
       "l:calor",
       "l:hacer",
-      "l:noche"
+      "l:noche",
+      "p:hace-frio",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -17121,7 +17710,8 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:bañarse",
-      "l:domingo"
+      "l:domingo",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -17146,7 +17736,8 @@
       "l:bañarse",
       "l:cuándo",
       "l:mañana",
-      "l:noche"
+      "l:noche",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -17320,7 +17911,8 @@
       "l:prisa",
       "l:qué",
       "l:tener",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:tener-hambre"
     ],
     "targets": [
       "l:desayunar",
@@ -17344,7 +17936,8 @@
       "l:almorzar",
       "l:dónde",
       "l:trabajar",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:almorzar",
@@ -17444,7 +18037,8 @@
       "l:levantarse",
       "l:sentirse",
       "l:temprano",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:sentirse-mal"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -17473,6 +18067,7 @@
       "l:quién",
       "l:tener",
       "p:cuando-basic",
+      "p:personal-a",
       "p:prep-questions-basic"
     ],
     "targets": [
@@ -17592,6 +18187,7 @@
       "l:noche",
       "l:qué",
       "l:soler",
+      "p:por-la-manana",
       "p:soler-inf"
     ],
     "targets": [
@@ -17637,6 +18233,8 @@
       "l:llover",
       "l:soler",
       "l:tarde",
+      "p:aqui-ahi-alla",
+      "p:por-la-manana",
       "p:soler-inf"
     ],
     "targets": [
@@ -17684,6 +18282,7 @@
       "l:reunión",
       "l:soler",
       "l:tarde",
+      "p:llegar-a-tiempo",
       "p:soler-inf"
     ],
     "targets": [
@@ -17706,7 +18305,8 @@
       "g:present-ar",
       "l:día",
       "l:trabajar",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -17727,7 +18327,8 @@
       "g:present-er-ir",
       "l:domingo",
       "l:hacer",
-      "l:pan"
+      "l:pan",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17749,7 +18350,8 @@
       "l:café",
       "l:día",
       "l:venir",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -17771,8 +18373,10 @@
       "l:día",
       "l:llamar",
       "l:mamá",
+      "p:personal-a",
       "p:possessives-basic",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -17794,7 +18398,8 @@
       "l:día",
       "l:español",
       "l:estudiar",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -17814,7 +18419,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:día",
-      "l:pasar"
+      "l:pasar",
+      "p:todos-los-dias"
     ],
     "targets": [],
     "kind": "question",
@@ -17834,7 +18440,9 @@
       "g:questions",
       "l:hacer",
       "l:noche",
-      "l:qué"
+      "l:qué",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "question",
@@ -17854,7 +18462,8 @@
       "g:questions",
       "l:hacer",
       "l:qué",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "question",
@@ -17877,8 +18486,8 @@
       "l:llamar",
       "l:mamá",
       "l:vez",
-      "p:possessives-basic",
-      "p:veces-al"
+      "p:personal-a",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:veces-al"
@@ -17901,8 +18510,7 @@
       "l:cuánto",
       "l:mes",
       "l:venir",
-      "l:vez",
-      "p:veces-al"
+      "l:vez"
     ],
     "targets": [
       "p:veces-al"
@@ -17927,8 +18535,9 @@
       "l:cuánto",
       "l:ver",
       "l:vez",
-      "p:possessives-basic",
-      "p:veces-al"
+      "p:masculine-plural-mixed",
+      "p:personal-a",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:veces-al"
@@ -17974,8 +18583,7 @@
       "l:antes",
       "l:cocinar",
       "l:lavarse",
-      "l:mano",
-      "p:lavarse-las-manos"
+      "l:mano"
     ],
     "targets": [
       "g:prep-infinitive",
@@ -18160,8 +18768,7 @@
       "g:preterite-ar",
       "g:reflexive-routine",
       "l:lavarse",
-      "l:mano",
-      "p:lavarse-las-manos"
+      "l:mano"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -18216,7 +18823,8 @@
       "l:antes",
       "l:diente",
       "l:lavarse",
-      "l:salir"
+      "l:salir",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:prep-infinitive",
@@ -18240,7 +18848,8 @@
       "l:champú",
       "l:dónde",
       "l:estar",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:champú"
@@ -18262,7 +18871,8 @@
       "l:quién",
       "l:toalla",
       "l:usar",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:toalla"
@@ -18306,7 +18916,8 @@
       "g:present-er-ir",
       "l:conocer",
       "l:hace",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -18327,7 +18938,9 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:domingo",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:direct-objects"
@@ -18437,7 +19050,8 @@
       "g:questions",
       "l:abrir",
       "l:mañana",
-      "l:quién"
+      "l:quién",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:direct-objects",
@@ -18666,7 +19280,8 @@
       "l:poder",
       "l:tinto",
       "l:tomar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:request-ladder"
     ],
     "targets": [
       "g:prep-infinitive"
@@ -18710,7 +19325,8 @@
       "l:cuándo",
       "l:vivir",
       "p:demonstratives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:calle"
@@ -18732,7 +19348,8 @@
       "l:hermana",
       "l:llamar",
       "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -18752,7 +19369,8 @@
       "l:dónde",
       "l:llegar",
       "p:demonstratives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -18774,7 +19392,8 @@
       "l:estar",
       "l:hora",
       "l:qué",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "question",
@@ -18794,7 +19413,8 @@
       "l:hora",
       "l:pie",
       "l:qué",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "question",
@@ -18814,7 +19434,8 @@
       "l:hora",
       "l:qué",
       "l:trabajar",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "question",
@@ -18835,7 +19456,8 @@
       "l:empezar",
       "l:hora",
       "l:partido",
-      "l:qué"
+      "l:qué",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -18856,7 +19478,8 @@
       "l:hora",
       "l:película",
       "l:qué",
-      "l:terminar"
+      "l:terminar",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -18876,7 +19499,8 @@
       "g:questions",
       "l:cuándo",
       "l:terminar",
-      "l:trancón"
+      "l:trancón",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -18895,7 +19519,8 @@
       "g:verb-infinitive",
       "l:empezar",
       "l:temprano",
-      "l:trabajar"
+      "l:trabajar",
+      "p:empezar-terminar"
     ],
     "targets": [
       "l:temprano"
@@ -18918,7 +19543,8 @@
       "l:almuerzo",
       "l:antes",
       "l:terminar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:empezar-terminar"
     ],
     "targets": [
       "g:present-ar"
@@ -19001,7 +19627,8 @@
       "c:me-regala",
       "g:gender-articles",
       "l:hora",
-      "l:regalar"
+      "l:regalar",
+      "p:me-trae"
     ],
     "targets": [],
     "kind": "question",
@@ -19021,7 +19648,8 @@
       "g:stem-boot",
       "l:hora",
       "l:qué",
-      "l:tener"
+      "l:tener",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "question",
@@ -19140,7 +19768,8 @@
       "l:café",
       "l:cerrar",
       "l:hora",
-      "l:qué"
+      "l:qué",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -19181,7 +19810,9 @@
       "l:llamar",
       "l:ser",
       "l:tarde",
-      "p:para-inf"
+      "p:es-de-noche-tarde",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:tarde"
@@ -19203,7 +19834,8 @@
       "g:verb-infinitive",
       "l:madrugar",
       "l:mañana",
-      "l:tener"
+      "l:tener",
+      "p:madrugar-trasnochar"
     ],
     "targets": [
       "l:mañana"
@@ -19248,7 +19880,9 @@
       "l:qué",
       "l:tener",
       "l:trabajar",
-      "p:para-inf"
+      "p:aqui-ahi-alla",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [],
     "kind": "question",
@@ -19427,6 +20061,7 @@
       "l:dónde",
       "l:estar",
       "l:ir",
+      "p:aqui-ahi-alla",
       "p:para-inf"
     ],
     "targets": [
@@ -19451,7 +20086,8 @@
       "l:hacerse",
       "l:llegar",
       "l:perdón",
-      "l:tarde"
+      "l:tarde",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "c:se-me-hizo-tarde",
@@ -19554,7 +20190,8 @@
       "g:present-ar",
       "l:madrugar",
       "l:mañana",
-      "l:qué"
+      "l:qué",
+      "p:madrugar-trasnochar"
     ],
     "targets": [
       "c:que-pereza",
@@ -19604,7 +20241,8 @@
       "l:lunes",
       "l:mañana",
       "l:qué",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes"
     ],
     "targets": [
       "c:que-pereza",
@@ -19629,7 +20267,9 @@
       "l:ir",
       "l:mañana",
       "l:mejor",
-      "l:qué"
+      "l:qué",
+      "p:ir-a-venir-de-place",
+      "p:nos-vemos-a-las"
     ],
     "targets": [
       "c:que-pereza"
@@ -19653,7 +20293,8 @@
       "l:hora",
       "l:ser",
       "l:señor",
-      "l:tener"
+      "l:tener",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -19673,7 +20314,9 @@
       "g:ser-identity",
       "l:hora",
       "l:regalar",
-      "l:ser"
+      "l:ser",
+      "p:me-trae",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -19695,7 +20338,8 @@
       "g:preterite-ar",
       "l:hoy",
       "l:llegar",
-      "l:normalmente"
+      "l:normalmente",
+      "p:telling-time"
     ],
     "targets": [
       "c:normalmente"
@@ -19720,7 +20364,8 @@
       "l:antes",
       "l:cerrar",
       "l:hoy",
-      "l:normalmente"
+      "l:normalmente",
+      "p:telling-time"
     ],
     "targets": [
       "c:normalmente"
@@ -19792,7 +20437,9 @@
       "l:quién",
       "l:saber",
       "l:ser",
-      "p:quantifiers-basic"
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -19815,6 +20462,7 @@
       "l:español",
       "l:estar",
       "l:hablar",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -19838,7 +20486,11 @@
       "l:barrio",
       "l:bien",
       "l:conocer",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -19858,7 +20510,10 @@
       "g:yo-irregular",
       "l:cocinar",
       "l:saber",
-      "p:quantifiers-basic"
+      "p:hedge-knowledge",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -19874,7 +20529,10 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "l:jueves"
+      "l:jueves",
+      "p:days-el-lunes",
+      "p:telling-time",
+      "p:todos-los-dias"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -19897,7 +20555,9 @@
       "l:hacer",
       "l:jueves",
       "l:noche",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:por-la-manana"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -19921,7 +20581,10 @@
       "l:estar",
       "l:jueves",
       "l:pequeño",
-      "l:saber"
+      "l:saber",
+      "p:days-el-lunes",
+      "p:question-word-order",
+      "p:todos-los-dias"
     ],
     "targets": [
       "l:pequeño"
@@ -19946,7 +20609,8 @@
       "l:semana",
       "l:venir",
       "l:vez",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -19969,7 +20633,9 @@
       "l:cuándo",
       "l:dormir",
       "l:parque",
-      "l:tarde"
+      "l:tarde",
+      "p:por-la-manana",
+      "p:question-word-order"
     ],
     "targets": [
       "l:dormir",
@@ -19995,6 +20661,7 @@
       "l:dormir",
       "l:trabajo",
       "l:vez",
+      "p:frequency-scale",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -20044,7 +20711,8 @@
       "l:día",
       "l:gritar",
       "l:hacer",
-      "l:qué"
+      "l:qué",
+      "p:todos-los-dias"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -20064,7 +20732,8 @@
       "g:stem-boot",
       "l:bañarse",
       "l:llover",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -20115,6 +20784,7 @@
       "l:día",
       "l:lavarse",
       "l:vez",
+      "p:lavarse-las-manos",
       "p:veces-al"
     ],
     "targets": [
@@ -20165,7 +20835,8 @@
       "g:questions",
       "l:abrir",
       "l:mañana",
-      "l:quién"
+      "l:quién",
+      "p:telling-time"
     ],
     "targets": [
       "l:mañana"
@@ -20219,7 +20890,8 @@
       "l:descansar",
       "l:poder",
       "l:saber",
-      "l:tener"
+      "l:tener",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -20343,7 +21015,8 @@
       "g:estar-location-states",
       "l:cocinar",
       "l:dónde",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -20713,6 +21386,7 @@
       "l:estar",
       "l:lavar",
       "l:mano",
+      "p:lavarse-las-manos",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -20779,7 +21453,8 @@
       "g:gender-articles",
       "l:centro",
       "l:estar",
-      "l:llover"
+      "l:llover",
+      "p:hace-frio"
     ],
     "targets": [],
     "kind": "statement",
@@ -20879,7 +21554,8 @@
       "g:yo-irregular",
       "l:cara",
       "l:frío",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [],
     "kind": "statement",
@@ -20899,7 +21575,8 @@
       "g:stem-boot",
       "l:blanco",
       "l:pelo",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [],
     "kind": "statement",
@@ -20919,7 +21596,9 @@
       "g:reflexive-routine",
       "l:cabeza",
       "l:lavarse",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "g:reflexive-routine"
@@ -20995,6 +21674,7 @@
       "l:llegar",
       "l:mano",
       "l:siempre",
+      "p:frequency-scale",
       "p:lavarse-las-manos"
     ],
     "targets": [
@@ -21050,6 +21730,7 @@
       "l:jabón",
       "l:lavarse",
       "l:mano",
+      "p:con-sin",
       "p:lavarse-las-manos"
     ],
     "targets": [
@@ -21077,6 +21758,9 @@
       "l:lavarse",
       "l:pelo",
       "l:sábado",
+      "p:days-el-lunes",
+      "p:lavarse-las-manos",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21102,6 +21786,7 @@
       "l:lavarse",
       "l:mano",
       "l:trabajar",
+      "p:empezar-terminar",
       "p:lavarse-las-manos"
     ],
     "targets": [
@@ -21156,6 +21841,7 @@
       "l:baño",
       "l:lavarse",
       "l:mano",
+      "p:aqui-ahi-alla",
       "p:lavarse-las-manos"
     ],
     "targets": [
@@ -21184,7 +21870,9 @@
       "l:mano",
       "l:tarde",
       "p:cuando-basic",
-      "p:lavarse-las-manos"
+      "p:lavarse-las-manos",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -21210,6 +21898,7 @@
       "l:comer",
       "l:noche",
       "l:soler",
+      "p:por-la-manana",
       "p:quantifiers-basic",
       "p:soler-inf"
     ],
@@ -21255,7 +21944,8 @@
       "l:café",
       "l:cerrar",
       "l:soler",
-      "p:soler-inf"
+      "p:soler-inf",
+      "p:telling-time"
     ],
     "targets": [
       "p:soler-inf"
@@ -21344,6 +22034,7 @@
       "l:llegar",
       "l:soler",
       "l:tarde",
+      "p:llegar-a-tiempo",
       "p:possessives-basic",
       "p:soler-inf"
     ],
@@ -21486,7 +22177,8 @@
       "l:día",
       "l:levantarse",
       "l:reloj",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -21511,7 +22203,9 @@
       "l:abrir",
       "l:café",
       "l:día",
-      "p:todos-los-dias"
+      "p:telling-time",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -21534,7 +22228,11 @@
       "l:año",
       "l:costa",
       "l:visitar",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -21554,7 +22252,9 @@
       "g:yo-irregular",
       "l:ejercicio",
       "l:hacer",
-      "l:mañana"
+      "l:mañana",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "l:mañana"
@@ -21575,7 +22275,9 @@
       "g:present-ar",
       "l:cuenta",
       "l:pagar",
-      "l:semana"
+      "l:semana",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "l:pagar"
@@ -21597,7 +22299,8 @@
       "l:abril",
       "l:día",
       "l:llover",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -21621,7 +22324,8 @@
       "l:día",
       "l:largo",
       "l:ser",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -21644,7 +22348,9 @@
       "l:domingo",
       "l:pasar",
       "l:tía",
-      "p:possessives-basic"
+      "p:days-el-lunes",
+      "p:possessives-basic",
+      "p:todos-los-dias"
     ],
     "targets": [],
     "kind": "statement",
@@ -21663,7 +22369,9 @@
       "g:present-ar",
       "l:caminar",
       "l:parque",
-      "l:tarde"
+      "l:tarde",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "l:tarde"
@@ -21685,7 +22393,10 @@
       "l:llamar",
       "l:mamá",
       "l:noche",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -21707,7 +22418,8 @@
       "l:poner",
       "l:vecino",
       "p:possessives-basic",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:todos-los-dias"
@@ -21731,6 +22443,7 @@
       "l:día",
       "l:pasar",
       "l:vez",
+      "p:aqui-ahi-alla",
       "p:veces-al"
     ],
     "targets": [
@@ -21754,7 +22467,9 @@
       "l:ir",
       "l:mercado",
       "l:semana",
-      "l:vez"
+      "l:vez",
+      "p:ir-a-venir-de-place",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -21774,7 +22489,8 @@
       "l:hacer",
       "l:pan",
       "l:semana",
-      "l:vez"
+      "l:vez",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -21797,7 +22513,8 @@
       "l:vez",
       "l:visitar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -21818,7 +22535,8 @@
       "l:baño",
       "l:día",
       "l:limpiar",
-      "l:vez"
+      "l:vez",
+      "p:veces-al"
     ],
     "targets": [
       "l:limpiar"
@@ -21840,7 +22558,8 @@
       "g:present-ar",
       "l:hablar",
       "l:semana",
-      "l:vez"
+      "l:vez",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -21884,7 +22603,8 @@
       "l:planchar",
       "l:ropa",
       "l:semana",
-      "l:vez"
+      "l:vez",
+      "p:veces-al"
     ],
     "targets": [
       "l:planchar"
@@ -21931,7 +22651,9 @@
       "l:banco",
       "l:ir",
       "l:mes",
-      "l:vez"
+      "l:vez",
+      "p:ir-a-venir-de-place",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -21951,7 +22673,8 @@
       "l:carta",
       "l:jugar",
       "l:semana",
-      "l:vez"
+      "l:vez",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -21972,7 +22695,8 @@
       "l:comer",
       "l:pescado",
       "l:semana",
-      "l:vez"
+      "l:vez",
+      "p:veces-al"
     ],
     "targets": [
       "c:una-vez"
@@ -21997,7 +22721,8 @@
       "l:oler",
       "l:pan",
       "l:rico",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:oler-a-saber-a"
     ],
     "targets": [
       "p:cuando-basic"
@@ -22045,7 +22770,9 @@
       "l:sentirse",
       "l:terminar",
       "l:trabajar",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:empezar-terminar",
+      "p:sentirse-mal"
     ],
     "targets": [
       "g:reflexive-routine",
@@ -22068,7 +22795,8 @@
       "g:present-ar",
       "l:llegar",
       "l:tarde",
-      "l:trancón"
+      "l:trancón",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "l:tarde"
@@ -22091,7 +22819,8 @@
       "l:desayunar",
       "l:prisa",
       "l:tener",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:tener-hambre"
     ],
     "targets": [
       "l:desayunar",
@@ -22115,6 +22844,7 @@
       "l:contar",
       "l:escuchar",
       "l:historia",
+      "p:contar-dos-sentidos",
       "p:cuando-basic"
     ],
     "targets": [
@@ -22140,6 +22870,7 @@
       "l:entrar",
       "l:gente",
       "p:cuando-basic",
+      "p:la-gente-singular",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -22309,7 +23040,8 @@
       "l:hacer",
       "l:tinto",
       "l:tomar",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:hace-frio"
     ],
     "targets": [
       "p:cuando-basic"
@@ -22331,6 +23063,7 @@
       "l:cerrar",
       "l:contar",
       "l:plata",
+      "p:contar-dos-sentidos",
       "p:cuando-basic"
     ],
     "targets": [
@@ -22377,6 +23110,7 @@
       "l:después",
       "l:diente",
       "l:lavarse",
+      "p:lavarse-las-manos",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -22500,7 +23234,8 @@
       "l:contar",
       "l:día",
       "l:plata",
-      "l:terminar"
+      "l:terminar",
+      "p:contar-dos-sentidos"
     ],
     "targets": [
       "g:prep-infinitive"
@@ -22547,7 +23282,8 @@
       "l:empezar",
       "l:gritar",
       "l:oír",
-      "l:puerta"
+      "l:puerta",
+      "p:empezar-terminar"
     ],
     "targets": [
       "g:prep-infinitive"
@@ -22569,7 +23305,8 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:levantarse",
-      "l:ver"
+      "l:ver",
+      "p:personal-a"
     ],
     "targets": [
       "g:prep-infinitive",
@@ -22594,7 +23331,8 @@
       "l:cerrar",
       "l:jueves",
       "l:llegar",
-      "l:puerta"
+      "l:puerta",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:prep-infinitive"
@@ -22618,6 +23356,7 @@
       "l:mamá",
       "l:reunión",
       "l:salir",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22665,7 +23404,10 @@
       "l:bueno",
       "l:dormir",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:es-adj-inf"
     ],
     "targets": [
       "g:prep-infinitive",
@@ -22710,6 +23452,7 @@
       "l:comer",
       "l:hermano",
       "l:mirar",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [

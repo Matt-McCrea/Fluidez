@@ -214,9 +214,19 @@
     "l:trabajar",
     "l:viejo",
     "l:vivir",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:dates-years",
+    "p:los-garcia",
+    "p:mayor-menor",
     "p:me-te-nos-objects",
+    "p:naci-en",
     "p:possessives-basic",
     "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:viejo-antiguo-mayor",
     "p:ya-todavia-basic"
   ]
 }

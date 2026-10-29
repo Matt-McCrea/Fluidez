@@ -228,7 +228,8 @@
       "l:bueno",
       "l:cómo",
       "l:día",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-estas",
@@ -330,7 +331,8 @@
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:ser-identity"
@@ -723,7 +725,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
-      "l:señora"
+      "l:señora",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -744,7 +747,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -766,7 +770,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
-      "l:señora"
+      "l:señora",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -1021,7 +1026,8 @@
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:ser-identity"
@@ -1039,7 +1045,8 @@
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:ser-identity"
@@ -1174,7 +1181,8 @@
     "requires": [
       "c:hola-buenos-dias",
       "l:bueno",
-      "l:día"
+      "l:día",
+      "p:presentation-frame"
     ],
     "targets": [
       "c:hola-buenos-dias",
@@ -1263,7 +1271,8 @@
     "requires": [
       "g:ser-identity",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -1699,7 +1708,8 @@
     "requires": [
       "c:soy-de",
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "c:soy-de",
@@ -1858,7 +1868,8 @@
     "requires": [
       "g:ser-identity",
       "l:colombiano",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -1877,7 +1888,8 @@
     "requires": [
       "g:ser-identity",
       "l:canadiense",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -1896,7 +1908,8 @@
     "requires": [
       "g:ser-identity",
       "l:canadiense",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -1915,7 +1928,8 @@
     "requires": [
       "g:ser-identity",
       "l:canadiense",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -1934,7 +1948,8 @@
     "requires": [
       "g:ser-identity",
       "l:mexicano",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -1954,7 +1969,9 @@
       "g:ser-identity",
       "l:colombiano",
       "l:mexicano",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -1973,7 +1990,8 @@
     "requires": [
       "g:ser-identity",
       "l:japonés",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -1995,7 +2013,8 @@
       "c:no-cierto",
       "g:ser-identity",
       "l:inglés",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -2015,7 +2034,8 @@
       "g:ser-identity",
       "l:canadiense",
       "l:ser",
-      "l:señora"
+      "l:señora",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -2034,7 +2054,8 @@
     "requires": [
       "g:ser-identity",
       "l:colombiano",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -2379,7 +2400,8 @@
       "c:soy-de",
       "g:ser-identity",
       "l:canadiense",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:soy-de",
@@ -2403,7 +2425,8 @@
       "g:ser-identity",
       "l:colombiano",
       "l:mexicano",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -2422,7 +2445,8 @@
     "requires": [
       "g:ser-identity",
       "l:colombiano",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -2443,7 +2467,8 @@
       "g:ser-identity",
       "l:café",
       "l:colombiano",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -2466,7 +2491,8 @@
       "g:ser-identity",
       "l:colombiano",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -2692,7 +2718,8 @@
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:ser-identity"
@@ -2710,7 +2737,8 @@
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:ser-identity"
@@ -2748,7 +2776,8 @@
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:ser-identity"
@@ -2785,7 +2814,8 @@
     "requires": [
       "g:ser-identity",
       "l:español",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity",
@@ -2805,7 +2835,8 @@
     "requires": [
       "g:ser-identity",
       "l:inglés",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -2824,7 +2855,8 @@
     "requires": [
       "g:ser-identity",
       "l:japonés",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -2844,7 +2876,8 @@
       "c:soy-de",
       "g:ser-identity",
       "l:canadiense",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:soy-de",
@@ -2865,7 +2898,8 @@
       "c:soy-de",
       "g:ser-identity",
       "l:japonés",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:soy-de",
@@ -2887,7 +2921,8 @@
       "g:ser-identity",
       "l:canadiense",
       "l:nacionalidad",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -3285,7 +3320,8 @@
       "g:ser-identity",
       "l:aquí",
       "l:ser",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:soy-de",
@@ -3329,7 +3365,8 @@
       "g:ser-identity",
       "l:canadiense",
       "l:ser",
-      "l:vivir"
+      "l:vivir",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:vivo-en",
@@ -3683,7 +3720,8 @@
     "requires": [
       "g:ser-identity",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3702,7 +3740,8 @@
     "requires": [
       "g:ser-identity",
       "l:estudiante",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3721,7 +3760,8 @@
     "requires": [
       "g:ser-identity",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3740,7 +3780,8 @@
     "requires": [
       "g:ser-identity",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3759,7 +3800,8 @@
     "requires": [
       "g:ser-identity",
       "l:ingeniero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3778,7 +3820,8 @@
     "requires": [
       "g:ser-identity",
       "l:estudiante",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3798,7 +3841,9 @@
       "g:ser-identity",
       "l:estudiante",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3820,7 +3865,8 @@
       "c:no-cierto",
       "g:ser-identity",
       "l:médico",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3839,7 +3885,8 @@
     "requires": [
       "g:ser-identity",
       "l:médico",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3859,7 +3906,8 @@
       "g:ser-identity",
       "l:ingeniero",
       "l:médico",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3878,7 +3926,8 @@
     "requires": [
       "g:ser-identity",
       "l:estudiante",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3898,7 +3947,8 @@
       "g:ser-identity",
       "l:inglés",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3920,7 +3970,8 @@
       "c:no-cierto",
       "g:ser-identity",
       "l:ingeniero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3939,7 +3990,8 @@
     "requires": [
       "g:ser-identity",
       "l:médico",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -3961,7 +4013,8 @@
       "l:café",
       "l:mesero",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -3985,7 +4038,8 @@
       "g:ser-identity",
       "l:cliente",
       "l:médico",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -4007,7 +4061,8 @@
       "g:ser-identity",
       "l:ingeniero",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -4030,7 +4085,8 @@
       "g:ser-identity",
       "l:estudiante",
       "l:ser",
-      "l:señora"
+      "l:señora",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -4098,7 +4154,8 @@
       "g:ser-identity",
       "l:ingeniero",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-ar",
@@ -4121,7 +4178,8 @@
       "g:ser-identity",
       "l:colombiano",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -4228,7 +4286,8 @@
       "g:ser-identity",
       "l:canadiense",
       "l:estudiante",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -4250,7 +4309,8 @@
       "g:ser-identity",
       "l:ingeniero",
       "l:mexicano",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -4271,7 +4331,8 @@
       "g:ser-identity",
       "l:estudiante",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -4291,7 +4352,9 @@
       "g:ser-identity",
       "l:ingeniero",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -4314,7 +4377,8 @@
       "g:ser-identity",
       "l:estudiante",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -4334,7 +4398,8 @@
       "g:ser-identity",
       "l:cliente",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -4354,7 +4419,8 @@
       "g:ser-identity",
       "l:cliente",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -4414,7 +4480,8 @@
       "g:ser-identity",
       "l:cliente",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -4436,7 +4503,8 @@
       "g:ser-identity",
       "l:estudiante",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -4657,7 +4725,8 @@
       "l:café",
       "l:ingeniero",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:trabajo-en",
@@ -4683,7 +4752,8 @@
       "g:ser-identity",
       "l:médico",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:trabajo-en",
@@ -4709,7 +4779,8 @@
       "l:café",
       "l:estudiante",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -4734,7 +4805,8 @@
       "g:ser-identity",
       "l:ingeniero",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-ar",
@@ -4757,7 +4829,8 @@
       "g:ser-identity",
       "l:mesero",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-ar",
@@ -4796,7 +4869,8 @@
       "g:ser-identity",
       "l:ingeniero",
       "l:profesión",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -4864,7 +4938,8 @@
       "g:ser-identity",
       "l:favor",
       "l:ser",
-      "l:trabajo"
+      "l:trabajo",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:gender-articles",
@@ -4888,7 +4963,9 @@
       "g:ser-identity",
       "l:bueno",
       "l:ser",
-      "l:trabajo"
+      "l:trabajo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:gender-articles",
@@ -4912,7 +4989,9 @@
       "g:ser-identity",
       "l:bueno",
       "l:ser",
-      "l:trabajo"
+      "l:trabajo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:gender-articles",
@@ -4962,7 +5041,8 @@
       "c:bien-y-tu",
       "g:ser-identity",
       "l:estudiante",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -4982,7 +5062,8 @@
       "c:bien-y-tu",
       "g:ser-identity",
       "l:ingeniero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -5003,7 +5084,8 @@
       "g:ser-identity",
       "l:mesero",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-ar",
@@ -5072,7 +5154,8 @@
     "requires": [
       "g:ser-identity",
       "l:médico",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -5092,7 +5175,8 @@
       "g:ser-identity",
       "l:inglés",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -5112,7 +5196,8 @@
       "g:ser-identity",
       "l:español",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity",
@@ -5358,7 +5443,8 @@
       "g:ser-identity",
       "l:amigo",
       "l:médico",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -5461,7 +5547,8 @@
       "g:ser-identity",
       "l:cliente",
       "l:ingeniero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -5483,7 +5570,8 @@
       "g:ser-identity",
       "l:cliente",
       "l:médico",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -5527,7 +5615,8 @@
       "g:ser-identity",
       "l:estudiante",
       "l:inglés",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -5550,6 +5639,7 @@
       "l:mesero",
       "l:ser",
       "l:trabajar",
+      "p:ser-profession-no-article",
       "p:trabajar-de"
     ],
     "targets": [
@@ -5571,7 +5661,8 @@
     "requires": [
       "g:ser-identity",
       "l:médico",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -5591,7 +5682,8 @@
       "g:ser-identity",
       "l:ingeniero",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -5611,7 +5703,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:ingeniero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -5631,7 +5724,8 @@
     "requires": [
       "g:ser-identity",
       "l:ingeniero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -5676,7 +5770,8 @@
       "g:gender-articles",
       "l:café",
       "l:favor",
-      "l:leche"
+      "l:leche",
+      "p:con-sin"
     ],
     "targets": [
       "c:por-favor",
@@ -5700,7 +5795,8 @@
       "c:por-favor",
       "g:gender-articles",
       "l:agua",
-      "l:favor"
+      "l:favor",
+      "p:el-agua-fria"
     ],
     "targets": [
       "c:por-favor",
@@ -5774,7 +5870,8 @@
       "l:café",
       "l:leche",
       "l:pan",
-      "l:querer"
+      "l:querer",
+      "p:con-sin"
     ],
     "targets": [
       "c:quiero",
@@ -5862,7 +5959,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:agua",
-      "l:querer"
+      "l:querer",
+      "p:el-agua-fria"
     ],
     "targets": [
       "c:quiero",
@@ -5935,7 +6033,8 @@
       "g:gender-articles",
       "l:agua",
       "l:gustar",
-      "l:pan"
+      "l:pan",
+      "p:el-agua-fria"
     ],
     "targets": [
       "c:me-gustaria",
@@ -5961,7 +6060,8 @@
       "l:agua",
       "l:favor",
       "l:regalar",
-      "l:tinto"
+      "l:tinto",
+      "p:el-agua-fria"
     ],
     "targets": [
       "c:me-regala",
@@ -5987,7 +6087,9 @@
       "c:me-regala",
       "g:gender-articles",
       "l:agua",
-      "l:regalar"
+      "l:regalar",
+      "p:el-agua-fria",
+      "p:me-trae"
     ],
     "targets": [
       "c:me-regala",
@@ -6010,7 +6112,8 @@
       "c:por-favor",
       "l:favor",
       "l:pan",
-      "l:regalar"
+      "l:regalar",
+      "p:me-trae"
     ],
     "targets": [
       "c:me-regala",
@@ -6035,7 +6138,8 @@
       "g:gender-articles",
       "l:jugo",
       "l:pan",
-      "l:regalar"
+      "l:regalar",
+      "p:me-trae"
     ],
     "targets": [
       "c:me-regala",
@@ -6061,7 +6165,8 @@
       "g:gender-articles",
       "l:favor",
       "l:leche",
-      "l:regalar"
+      "l:regalar",
+      "p:me-trae"
     ],
     "targets": [
       "c:me-regala",
@@ -6087,7 +6192,8 @@
       "g:gender-articles",
       "l:favor",
       "l:nombre",
-      "l:regalar"
+      "l:regalar",
+      "p:me-trae"
     ],
     "targets": [
       "c:me-regala",
@@ -6110,7 +6216,8 @@
       "c:me-regala",
       "g:gender-articles",
       "l:apellido",
-      "l:regalar"
+      "l:regalar",
+      "p:me-trae"
     ],
     "targets": [
       "c:me-regala",
@@ -6135,7 +6242,8 @@
       "g:questions",
       "l:costar",
       "l:cuánto",
-      "l:tinto"
+      "l:tinto",
+      "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta",
@@ -6160,7 +6268,8 @@
       "g:questions",
       "l:costar",
       "l:cuánto",
-      "l:pan"
+      "l:pan",
+      "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta",
@@ -6205,7 +6314,8 @@
       "g:questions",
       "g:ser-identity",
       "l:cuánto",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta",
@@ -6230,7 +6340,8 @@
       "g:questions",
       "l:cuánto",
       "l:jugo",
-      "l:valer"
+      "l:valer",
+      "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta",
@@ -6256,7 +6367,9 @@
       "l:café",
       "l:costar",
       "l:cuánto",
-      "l:leche"
+      "l:leche",
+      "p:con-sin",
+      "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta",
@@ -6460,7 +6573,8 @@
     "acceptEn": [],
     "requires": [
       "c:gracias-de-nada",
-      "l:tinto"
+      "l:tinto",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:tinto"
@@ -6895,7 +7009,9 @@
       "g:ser-identity",
       "l:bueno",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:gender-articles",
@@ -6919,7 +7035,9 @@
       "g:ser-identity",
       "l:bueno",
       "l:pan",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:gender-articles",
@@ -6942,7 +7060,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:agua",
-      "l:ser"
+      "l:ser",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:gender-articles",
@@ -7037,7 +7156,8 @@
       "l:café",
       "l:leche",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin"
     ],
     "targets": [
       "g:gender-articles",
@@ -7063,7 +7183,8 @@
       "l:café",
       "l:leche",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin"
     ],
     "targets": [
       "g:gender-articles",
@@ -7132,7 +7253,8 @@
       "g:ser-identity",
       "l:agua",
       "l:cliente",
-      "l:ser"
+      "l:ser",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:gender-articles",
@@ -7179,7 +7301,8 @@
       "g:gender-articles",
       "l:agua",
       "l:jugo",
-      "l:pan"
+      "l:pan",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:gender-articles",
@@ -7202,7 +7325,8 @@
       "g:gender-articles",
       "l:agua",
       "l:leche",
-      "l:pan"
+      "l:pan",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:gender-articles",
@@ -8023,7 +8147,9 @@
       "g:questions",
       "l:agua",
       "l:cuánto",
-      "l:valer"
+      "l:valer",
+      "p:el-agua-fria",
+      "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta",
@@ -8240,7 +8366,8 @@
     "requires": [
       "c:trabajo-en",
       "g:present-ar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "c:trabajo-en",
@@ -8642,7 +8769,8 @@
       "g:present-ar",
       "l:agua",
       "l:comprar",
-      "l:jugo"
+      "l:jugo",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:gender-articles",
@@ -8804,7 +8932,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "l:pan"
+      "l:pan",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar",
@@ -8824,7 +8953,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:ayudar"
+      "l:ayudar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar",
@@ -8845,7 +8975,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "l:español"
+      "l:español",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar",
@@ -8867,7 +8998,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "l:cliente"
+      "l:cliente",
+      "p:personal-a"
     ],
     "targets": [
       "g:gender-articles",
@@ -8889,7 +9021,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "l:señora"
+      "l:señora",
+      "p:personal-a"
     ],
     "targets": [
       "g:gender-articles",
@@ -8911,7 +9044,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "l:mesero"
+      "l:mesero",
+      "p:personal-a"
     ],
     "targets": [
       "g:gender-articles",
@@ -8956,7 +9090,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:ayudar"
+      "l:ayudar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar",
@@ -8975,7 +9110,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:ayudar"
+      "l:ayudar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar",
@@ -8995,7 +9131,8 @@
     "requires": [
       "c:no-cierto",
       "g:present-ar",
-      "l:ayudar"
+      "l:ayudar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar",
@@ -9033,7 +9170,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar"
@@ -9051,7 +9189,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar"
@@ -9071,7 +9210,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:llamar",
-      "l:señora"
+      "l:señora",
+      "p:personal-a"
     ],
     "targets": [
       "g:gender-articles",
@@ -9090,7 +9230,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar"
@@ -9110,7 +9251,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:cliente",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:gender-articles",
@@ -9131,7 +9273,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:cliente",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:gender-articles",
@@ -9150,7 +9293,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar"
@@ -9171,7 +9315,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar"
@@ -9946,7 +10091,8 @@
       "g:ser-identity",
       "l:amigo",
       "l:ayudar",
-      "l:ser"
+      "l:ser",
+      "p:personal-a"
     ],
     "targets": [
       "c:porque",
@@ -10162,7 +10308,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:present-ar",
@@ -10269,7 +10416,8 @@
       "g:ser-identity",
       "l:estudiante",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-ar",
@@ -10294,7 +10442,8 @@
       "l:café",
       "l:estudiante",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:trabajo-en",
@@ -10688,7 +10837,8 @@
       "c:claro-listo",
       "g:present-ar",
       "l:ayudar",
-      "l:claro"
+      "l:claro",
+      "p:personal-a"
     ],
     "targets": [
       "c:claro-listo",
@@ -11396,7 +11546,8 @@
       "l:aquí",
       "l:pena",
       "l:qué",
-      "l:ser"
+      "l:ser",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:que-pena",
@@ -11478,7 +11629,9 @@
       "l:agua",
       "l:pena",
       "l:qué",
-      "l:regalar"
+      "l:regalar",
+      "p:el-agua-fria",
+      "p:me-trae"
     ],
     "targets": [
       "c:me-regala",
@@ -11713,7 +11866,8 @@
       "g:gender-articles",
       "l:café",
       "l:dónde",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta",
@@ -11734,7 +11888,8 @@
       "c:donde-esta",
       "g:estar-location-states",
       "l:dónde",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta"
@@ -11754,7 +11909,8 @@
       "c:donde-esta",
       "g:estar-location-states",
       "l:dónde",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta"
@@ -11777,7 +11933,8 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:perdón"
+      "l:perdón",
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta",
@@ -11801,7 +11958,8 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:leche"
+      "l:leche",
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta",
@@ -11824,7 +11982,8 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:pan"
+      "l:pan",
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta",
@@ -11847,7 +12006,9 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:señor"
+      "l:señor",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:donde-esta",
@@ -11896,7 +12057,9 @@
       "g:gender-articles",
       "l:agua",
       "l:dónde",
-      "l:estar"
+      "l:estar",
+      "p:el-agua-fria",
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta",
@@ -13279,6 +13442,7 @@
       "l:estudiante",
       "l:ser",
       "l:tener",
+      "p:ser-profession-no-article",
       "p:tener-anos"
     ],
     "targets": [
@@ -13940,7 +14104,8 @@
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:anoche",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:fui",
@@ -14392,7 +14557,9 @@
       "g:ser-identity",
       "l:bueno",
       "l:café",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:era",
@@ -14544,7 +14711,8 @@
       "g:that-clauses",
       "l:colombiano",
       "l:creer",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:creo-que",
@@ -14988,7 +15156,8 @@
       "c:es-que",
       "g:ser-identity",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:es-que",
@@ -15116,7 +15285,8 @@
     "acceptEn": [],
     "requires": [
       "c:entonces-bueno",
-      "l:bueno"
+      "l:bueno",
+      "p:repeticion-claro-claro"
     ],
     "targets": [
       "c:entonces-bueno",
@@ -15250,7 +15420,8 @@
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
-      "l:claro"
+      "l:claro",
+      "p:repeticion-claro-claro"
     ],
     "targets": [
       "c:claro-listo",
@@ -15652,7 +15823,8 @@
       "l:disculpar",
       "l:dónde",
       "l:estar",
-      "l:perdón"
+      "l:perdón",
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta",
@@ -15788,7 +15960,8 @@
       "l:cuánto",
       "l:disculpar",
       "l:pan",
-      "l:perdón"
+      "l:perdón",
+      "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta",
@@ -16207,7 +16380,8 @@
       "g:ser-identity",
       "l:bueno",
       "l:café",
-      "l:ser"
+      "l:ser",
+      "p:repeticion-claro-claro"
     ],
     "targets": [
       "c:entonces-bueno",
@@ -16581,7 +16755,9 @@
       "g:ser-identity",
       "l:bueno",
       "l:día",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:era",
@@ -17186,7 +17362,8 @@
       "c:fui",
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:fui",
@@ -17599,7 +17776,8 @@
       "g:stem-boot",
       "l:agua",
       "l:pan",
-      "l:querer"
+      "l:querer",
+      "p:el-agua-fria"
     ],
     "targets": [
       "c:quiero",
@@ -17771,7 +17949,8 @@
       "l:agua",
       "l:favor",
       "l:gustar",
-      "l:señor"
+      "l:señor",
+      "p:el-agua-fria"
     ],
     "targets": [
       "c:me-gustaria",
@@ -17795,7 +17974,8 @@
       "c:me-gustaria",
       "g:conditional",
       "l:gustar",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:me-gustaria"
@@ -17816,7 +17996,9 @@
       "g:gender-articles",
       "l:café",
       "l:leche",
-      "l:regalar"
+      "l:regalar",
+      "p:con-sin",
+      "p:me-trae"
     ],
     "targets": [
       "c:me-regala",
@@ -17840,7 +18022,8 @@
       "g:gender-articles",
       "l:pan",
       "l:regalar",
-      "l:señora"
+      "l:señora",
+      "p:me-trae"
     ],
     "targets": [
       "c:me-regala",
@@ -17886,7 +18069,8 @@
       "l:favor",
       "l:jugo",
       "l:pan",
-      "l:regalar"
+      "l:regalar",
+      "p:me-trae"
     ],
     "targets": [
       "c:me-regala",
@@ -17914,7 +18098,8 @@
       "g:questions",
       "l:costar",
       "l:cuánto",
-      "l:jugo"
+      "l:jugo",
+      "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta",
@@ -17959,7 +18144,8 @@
       "g:questions",
       "l:cuánto",
       "l:pan",
-      "l:valer"
+      "l:valer",
+      "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta",
@@ -17982,7 +18168,8 @@
       "g:questions",
       "l:café",
       "l:costar",
-      "l:cuánto"
+      "l:cuánto",
+      "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta",
@@ -18065,7 +18252,8 @@
       "c:donde-esta",
       "g:estar-location-states",
       "l:dónde",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta"
@@ -18087,7 +18275,8 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:tinto"
+      "l:tinto",
+      "p:question-word-order"
     ],
     "targets": [
       "c:donde-esta",
@@ -18162,6 +18351,7 @@
       "l:estudiante",
       "l:ser",
       "l:tener",
+      "p:ser-profession-no-article",
       "p:tener-anos"
     ],
     "targets": [
@@ -18256,7 +18446,8 @@
       "l:cómo",
       "l:decir",
       "l:inglés",
-      "l:orden"
+      "l:orden",
+      "p:el-orden-la-orden"
     ],
     "targets": [
       "c:a-la-orden",
@@ -18329,7 +18520,8 @@
       "l:canadiense",
       "l:despacio",
       "l:favor",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:mas-despacio",
@@ -18514,7 +18706,9 @@
       "l:bueno",
       "l:pan",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:porque",
@@ -18931,7 +19125,9 @@
       "g:ser-identity",
       "l:bueno",
       "l:nombre",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:gender-articles",
@@ -19146,7 +19342,8 @@
       "l:canadiense",
       "l:colombiano",
       "l:nacionalidad",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -19347,7 +19544,9 @@
       "l:bueno",
       "l:día",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:gender-articles",
@@ -19370,7 +19569,8 @@
     "requires": [
       "c:hola-buenos-dias",
       "l:bueno",
-      "l:día"
+      "l:día",
+      "p:presentation-frame"
     ],
     "targets": [
       "c:hola-buenos-dias",
@@ -19918,7 +20118,8 @@
     "requires": [
       "g:ser-identity",
       "l:católico",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -20227,7 +20428,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:orden",
-      "l:ser"
+      "l:ser",
+      "p:el-orden-la-orden"
     ],
     "targets": [
       "g:gender-articles",
@@ -20250,7 +20452,8 @@
       "g:ser-identity",
       "l:orden",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:el-orden-la-orden"
     ],
     "targets": [
       "g:gender-articles",
@@ -20274,7 +20477,8 @@
       "g:gender-articles",
       "l:favor",
       "l:orden",
-      "l:pan"
+      "l:pan",
+      "p:el-orden-la-orden"
     ],
     "targets": [
       "c:por-favor",
@@ -20645,7 +20849,8 @@
       "g:preterite-ser-ir-hacer",
       "l:anoche",
       "l:café",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:fui",
@@ -21091,7 +21296,8 @@
       "g:ser-identity",
       "l:cliente",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -21176,7 +21382,8 @@
     "requires": [
       "g:gender-articles",
       "l:agua",
-      "l:leche"
+      "l:leche",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:gender-articles",
@@ -21197,7 +21404,8 @@
     "requires": [
       "g:gender-articles",
       "l:agua",
-      "l:leche"
+      "l:leche",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:gender-articles",
@@ -21292,7 +21500,8 @@
       "l:café",
       "l:leche",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin"
     ],
     "targets": [
       "g:ser-identity",
@@ -21317,7 +21526,8 @@
       "l:café",
       "l:leche",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin"
     ],
     "targets": [
       "g:gender-articles",
@@ -21722,7 +21932,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles"
+      "g:gender-articles",
+      "p:los-de-la-camiseta"
     ],
     "targets": [
       "g:gender-articles"
@@ -21909,6 +22120,7 @@
       "l:mesero",
       "l:ser",
       "l:trabajar",
+      "p:ser-profession-no-article",
       "p:trabajar-de"
     ],
     "targets": [
@@ -22017,7 +22229,8 @@
       "g:preterite-ser-ir-hacer",
       "l:anoche",
       "l:ayer",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:ayer-anoche",
@@ -22186,7 +22399,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:ayudar",
-      "l:español"
+      "l:español",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar",
@@ -22209,7 +22423,8 @@
       "g:present-ar",
       "l:ayudar",
       "l:cliente",
-      "l:nombre"
+      "l:nombre",
+      "p:personal-a"
     ],
     "targets": [
       "g:gender-articles",
@@ -22231,7 +22446,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:canadiense",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:gender-articles",
@@ -22252,7 +22468,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:llamar",
-      "l:señor"
+      "l:señor",
+      "p:personal-a",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -22276,7 +22494,8 @@
       "l:loro",
       "l:ser",
       "l:señor",
-      "l:señora"
+      "l:señora",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:gender-articles",
@@ -22349,7 +22568,8 @@
       "l:canadiense",
       "l:colombiano",
       "l:creer",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:creo-que",
@@ -23106,7 +23326,8 @@
       "g:ser-identity",
       "l:bailar",
       "l:canadiense",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-ar",
@@ -23147,7 +23368,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:esperar"
+      "l:esperar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar",
@@ -23189,7 +23411,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:esperar"
+      "l:esperar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar",
@@ -23416,7 +23639,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:aquí",
-      "l:trabajar"
+      "l:trabajar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:gender-articles",
@@ -23439,7 +23663,8 @@
       "c:hay",
       "g:hay-vs-esta",
       "l:aquí",
-      "l:pan"
+      "l:pan",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:hay",
@@ -23463,7 +23688,8 @@
     "requires": [
       "g:present-ar",
       "l:aquí",
-      "l:trabajar"
+      "l:trabajar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:present-ar",
@@ -23484,7 +23710,8 @@
     "requires": [
       "g:ser-identity",
       "l:aquí",
-      "l:ser"
+      "l:ser",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:ser-identity",
@@ -23505,7 +23732,8 @@
       "c:soy-de",
       "g:ser-identity",
       "l:aquí",
-      "l:ser"
+      "l:ser",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:soy-de",
@@ -23780,7 +24008,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:pasar"
+      "l:pasar",
+      "p:repeticion-claro-claro"
     ],
     "targets": [
       "g:present-ar",
@@ -23881,7 +24110,8 @@
       "l:café",
       "l:fin",
       "l:semana",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ],
     "targets": [
       "c:trabajo-en",
@@ -23952,7 +24182,9 @@
       "g:ser-identity",
       "l:buena",
       "l:noche",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:gender-articles",
@@ -23998,7 +24230,8 @@
       "g:ser-identity",
       "l:esperar",
       "l:noche",
-      "l:ser"
+      "l:ser",
+      "p:es-de-noche-tarde"
     ],
     "targets": [
       "g:present-ar",
@@ -24088,7 +24321,7 @@
       "g:present-ar",
       "l:café",
       "l:quedar",
-      "p:quedar-en"
+      "p:quedar-cerca"
     ],
     "targets": [
       "g:gender-articles",
@@ -24131,7 +24364,7 @@
     "requires": [
       "g:present-ar",
       "l:quedar",
-      "p:quedar-en"
+      "p:quedar-cerca"
     ],
     "targets": [
       "g:present-ar",
@@ -24152,7 +24385,7 @@
       "g:gender-articles",
       "g:present-ar",
       "l:quedar",
-      "p:quedar-en"
+      "p:quedar-cerca"
     ],
     "targets": [
       "g:gender-articles",
@@ -24272,7 +24505,7 @@
     "requires": [
       "g:present-ar",
       "l:quedar",
-      "p:quedar-en"
+      "p:quedar-cerca"
     ],
     "targets": [
       "g:present-ar",
@@ -24292,7 +24525,7 @@
     "requires": [
       "g:present-ar",
       "l:quedar",
-      "p:quedar-en"
+      "p:quedar-cerca"
     ],
     "targets": [
       "g:present-ar",

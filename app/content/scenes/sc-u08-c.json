@@ -204,9 +204,15 @@
     "l:teléfono",
     "l:tener",
     "l:verdad",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
     "p:demonstratives-basic",
+    "p:es-adj-inf",
     "p:exclamations-basic",
+    "p:oler-a-saber-a",
     "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
     "p:time-sequence-basic"
   ]
 }

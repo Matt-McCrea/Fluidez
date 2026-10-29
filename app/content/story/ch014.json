@@ -126,8 +126,20 @@
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
+    "p:dates-years",
+    "p:don-dona-nombre",
+    "p:frequency-scale",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:parecer-vs-parecerse",
     "p:possessives-basic",
-    "p:quantifiers-basic"
+    "p:quantifiers-basic",
+    "p:quedar-faltar-sobrar",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:viejo-antiguo-mayor"
   ],
   "lexemes": [
     "l:abrir",

@@ -243,6 +243,7 @@ export const DEFAULT_NODE_MAP: Readonly<Record<string, NodeId | null>> = {
   'conn.despite': 'g:concession-despite',
   'conn.concessive-adv': 'g:concessive-advanced',
   'conn.discourse': 'g:discourse-structure',
+  'conn.additive': null,                         // además is a word (l:además) from A2 on, not the B2 discourse-structure node
   'conn.reformulation': 'g:reformulation',
   'conn.hedge': 'g:hedging-distance',
   'conn.sequence': 'p:time-sequence-basic',      // primero, luego, después (session 32)

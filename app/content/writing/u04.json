@@ -33,7 +33,8 @@
       "l:hablar",
       "l:mango",
       "l:vendedor",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -79,7 +80,8 @@
       "l:comer",
       "l:domingo",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -161,7 +163,8 @@
       "l:llamar",
       "l:mesa",
       "l:ver",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:se-reciproco"
     ]
   },
   {
@@ -200,6 +203,7 @@
       "l:papa",
       "l:plaza",
       "l:tomate",
+      "p:entonces-de-repente",
       "p:time-sequence-basic"
     ]
   },
@@ -245,7 +249,8 @@
       "l:estar",
       "l:hacer",
       "l:libra",
-      "l:tomate"
+      "l:tomate",
+      "p:container-de"
     ]
   },
   {
@@ -284,7 +289,8 @@
       "l:taxista",
       "l:tinto",
       "l:tomar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:telling-time"
     ]
   },
   {
@@ -325,6 +331,7 @@
       "l:mango",
       "l:pagar",
       "l:peso",
+      "p:container-de",
       "p:costar-pagar",
       "p:possessives-basic"
     ]
@@ -416,6 +423,7 @@
       "l:pan",
       "l:sábado",
       "l:vender",
+      "p:days-el-lunes",
       "p:gracias-por",
       "p:para-inf",
       "p:possessives-basic"
@@ -460,7 +468,11 @@
       "l:estar",
       "l:kilo",
       "l:peso",
-      "l:tomate"
+      "l:tomate",
+      "p:a-cuanto-esta",
+      "p:container-de",
+      "p:estar-a",
+      "p:estar-a-price"
     ]
   },
   {
@@ -503,6 +515,8 @@
       "l:ir",
       "l:mercado",
       "l:volver",
+      "p:entonces-de-repente",
+      "p:ir-a-venir-de-place",
       "p:time-sequence-basic"
     ]
   },
@@ -539,6 +553,9 @@
       "l:domingo",
       "l:hacer",
       "l:ir",
+      "p:days-el-lunes",
+      "p:entonces-de-repente",
+      "p:ir-a-venir-de-place",
       "p:time-sequence-basic"
     ]
   },
@@ -576,8 +593,11 @@
       "l:cómo",
       "l:ser",
       "l:vender",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:me-te-nos-objects",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:salirle-bien"
     ]
   },
   {

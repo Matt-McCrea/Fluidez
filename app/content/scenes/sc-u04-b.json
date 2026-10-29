@@ -198,9 +198,19 @@
     "l:venir",
     "l:ver",
     "l:vuelta",
+    "p:a-cuanto-esta",
+    "p:container-de",
+    "p:days-el-lunes",
+    "p:estar-a",
+    "p:estar-a-price",
     "p:exclamations-basic",
+    "p:gracias-a-por-culpa-de",
+    "p:nos-vemos-a-las",
+    "p:por-culpa-de",
     "p:prep-questions-basic",
     "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:senor-don-article",
     "p:time-pasado-que-viene"
   ]
 }

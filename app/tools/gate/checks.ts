@@ -123,8 +123,10 @@ export function legality(st: RunState, r: TagResult, pos: Position, file: string
     });
   }
   if (early.length) {
+    // Meeting a pattern before its lesson is exposure, not an error, so --strict
+    // does not escalate it; grammar and chunks above stay hard errors.
     st.findings.push({
-      severity: st.strict ? 'error' : 'warning', check: 'legality', file, path,
+      severity: 'warning', check: 'legality', file, path,
       problem: `"${clip(text, 60)}" looks like a pattern not taught by ${pos.label}: ${early.join('; ')}`,
       fix: 'rephrase, or ignore if the pattern match is a coincidence',
     });

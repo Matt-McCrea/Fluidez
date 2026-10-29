@@ -148,9 +148,18 @@
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
+    "p:con-sin",
+    "p:days-el-lunes",
+    "p:don-dona-nombre",
+    "p:masculine-plural-mixed",
+    "p:otro-no-article",
+    "p:por-la-manana",
     "p:possessives-basic",
     "p:quantifiers-basic",
-    "p:todos-los-dias"
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:todos-los-dias",
+    "p:veces-al"
   ],
   "lexemes": [
     "l:abrir",

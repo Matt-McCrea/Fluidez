@@ -1,0 +1,220 @@
+{
+  "id": "ch030",
+  "unit": "u12",
+  "title": "Se fue la luz",
+  "text": "Llovía mucho en La Candelaria, y era el cumpleaños de don Hernando.\nHernando: Setenta y dos años, mija. ¿Y mi regalo?\nVale: Su regalo es una torta de chocolate. Y hoy no paga el tinto.\nHernando: Pero yo nunca pago el tinto.\nTomás puso una foto vieja en la mesa. En la foto, Rosa y Hernando eran jóvenes y bailaban tango.\nHernando miró la foto un largo rato y no habló.\nA las nueve, Tomás cerraba la puerta y Vale contaba la plata del día. De repente, se fue la luz.\nTomás: ¿Cortaron la luz?\nHernando: Con este clima, siempre cortan la luz. Entonces, un cuento de cumpleaños.\nHernando: Una noche de lluvia, yo esperaba en mi taxi. De repente, una señora subió.\nVale: ¿Y qué pasó?\nHernando: La señora no habló. Pagó con un billete de 1950 y se fue.\nTomás: ¿En serio?\nHernando: En serio, mijo. Todavía tengo el billete.\nSimón: ¡A la orden! ¡A la orden, señor!\nVale: Simón, el café está cerrado.\nEn ese momento, oyeron un ruido en el mostrador: un ladrillo, otro ladrillo.\nTomás: Vale... el cuaderno de Rosa estaba en ese mostrador.\nSimón: ¡A la orden!",
+  "gloss": [
+    {
+      "es": "mija",
+      "en": "dear (a fond way to talk to a younger woman)"
+    },
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "tango",
+      "en": "tango"
+    },
+    {
+      "es": "mostrador",
+      "en": "counter"
+    },
+    {
+      "es": "Y hoy no paga el tinto.",
+      "en": "And today you don't pay for your coffee."
+    },
+    {
+      "es": "se fue la luz",
+      "en": "the power went out"
+    },
+    {
+      "es": "¿Cortaron la luz?",
+      "en": "Did they cut the power?"
+    },
+    {
+      "es": "un largo rato",
+      "en": "for a long while"
+    },
+    {
+      "es": "yo esperaba en mi taxi",
+      "en": "I was waiting in my taxi"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why is tonight special for Hernando?",
+      "options": [
+        "He is selling the café",
+        "It is his birthday",
+        "He is leaving Bogotá",
+        "It is Rosa's birthday"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why is Hernando's reply about the free coffee funny?",
+      "options": [
+        "He hates coffee",
+        "He already paid",
+        "He never pays for his coffee anyway",
+        "Vale makes terrible coffee"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What were Tomás and Vale doing when the power went out?",
+      "options": [
+        "Tomás was dancing and Vale was singing",
+        "Tomás was closing the door and Vale was counting the money",
+        "Both of them were eating cake",
+        "Tomás was asleep and Vale was reading"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Cómo pagó la señora del cuento?",
+      "options": [
+        "Con una tarjeta",
+        "Con un billete de 1950",
+        "Con un tinto",
+        "No pagó"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why is Tomás worried at the end?",
+      "options": [
+        "The noise is coming from the counter where Rosa's notebook was hidden",
+        "Simón has escaped",
+        "The cake is gone",
+        "Vale has left"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How old is Hernando today?",
+      "options": [
+        "Seventy one",
+        "Seventy two",
+        "Sixty two",
+        "Fifty"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What are Rosa and Hernando doing in the old photo?",
+      "options": [
+        "Drinking tinto",
+        "Playing football",
+        "Dancing tango",
+        "Driving a taxi"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Simón keep shouting in the dark?",
+      "options": [
+        "¡A la orden!",
+        "¡Feliz cumpleaños!",
+        "¡Altamira no!",
+        "¡De una!"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Someone is pulling bricks out of the counter where Rosa hid her notebook, and the only one greeting them is Simón. Tomorrow somebody finds a light.",
+  "requires": [
+    "c:a-la-orden",
+    "c:abierto-cerrado",
+    "c:de-repente",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:tengo",
+    "c:y-que-paso",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:ser-identity",
+    "g:yo-irregular",
+    "p:contar-dos-sentidos",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:frequency-scale",
+    "p:otro-no-article",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:viejo-antiguo-mayor",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:año",
+    "l:bailar",
+    "l:billete",
+    "l:café",
+    "l:cerrar",
+    "l:chocolate",
+    "l:clima",
+    "l:contar",
+    "l:cortar",
+    "l:cuaderno",
+    "l:cuento",
+    "l:cumpleaños",
+    "l:día",
+    "l:esperar",
+    "l:estar",
+    "l:foto",
+    "l:hablar",
+    "l:hoy",
+    "l:irse",
+    "l:joven",
+    "l:ladrillo",
+    "l:largo",
+    "l:llover",
+    "l:lluvia",
+    "l:luz",
+    "l:mesa",
+    "l:mirar",
+    "l:momento",
+    "l:mostrador",
+    "l:noche",
+    "l:orden",
+    "l:oír",
+    "l:pagar",
+    "l:pasar",
+    "l:plata",
+    "l:poner",
+    "l:puerta",
+    "l:qué",
+    "l:rato",
+    "l:regalo",
+    "l:repente",
+    "l:ruido",
+    "l:ser",
+    "l:serio",
+    "l:señor",
+    "l:señora",
+    "l:siempre",
+    "l:subir",
+    "l:tango",
+    "l:taxi",
+    "l:tener",
+    "l:tinto",
+    "l:torta",
+    "l:viejo"
+  ]
+}

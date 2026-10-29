@@ -115,7 +115,17 @@
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
-    "p:possessives-basic"
+    "p:aqui-ahi-alla",
+    "p:lugar-tiene",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:question-word-order",
+    "p:senor-don-article",
+    "p:ser-profession-no-article",
+    "p:sobre-todo-solo"
   ],
   "lexemes": [
     "l:abrir",

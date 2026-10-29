@@ -125,7 +125,13 @@
     "g:present-er-ir",
     "g:ser-identity",
     "g:stem-boot",
-    "g:yo-irregular"
+    "g:yo-irregular",
+    "p:con-sin",
+    "p:don-dona-nombre",
+    "p:no-es-x-es-y",
+    "p:numbers-un-una",
+    "p:senor-don-article",
+    "p:ser-profession-no-article"
   ],
   "lexemes": [
     "l:agua",

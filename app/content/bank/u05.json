@@ -63,7 +63,8 @@
       "l:hermana",
       "l:hermanos",
       "l:mayor",
-      "l:tener"
+      "l:tener",
+      "p:mayor-menor"
     ],
     "targets": [
       "c:tienes-hermanos",
@@ -324,7 +325,8 @@
       "g:yo-irregular",
       "l:hermana",
       "l:hermano",
-      "l:tener"
+      "l:tener",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:yo-irregular",
@@ -347,7 +349,8 @@
       "g:yo-irregular",
       "l:hermanos",
       "l:pablo",
-      "l:tener"
+      "l:tener",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:yo-irregular"
@@ -412,7 +415,8 @@
       "l:hermana",
       "l:ingeniero",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "l:hermana"
@@ -476,6 +480,7 @@
       "g:ser-identity",
       "l:hermanos",
       "l:ser",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -565,7 +570,8 @@
       "l:hermano",
       "l:hermanos",
       "l:menor",
-      "l:tener"
+      "l:tener",
+      "p:mayor-menor"
     ],
     "targets": [
       "c:tienes-hermanos",
@@ -608,6 +614,7 @@
       "l:hermano",
       "l:mayor",
       "l:universidad",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -633,6 +640,7 @@
       "l:menor",
       "l:perro",
       "l:tener",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -655,6 +663,7 @@
       "l:hablar",
       "l:hermanos",
       "l:inglés",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -674,6 +683,8 @@
       "l:aquí",
       "l:hermanos",
       "l:vivir",
+      "p:aqui-ahi-alla",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -696,6 +707,7 @@
       "l:ser",
       "l:vivir",
       "l:único",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -792,6 +804,7 @@
       "g:present-er-ir",
       "l:papá",
       "l:vivir",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -812,6 +825,7 @@
       "g:ser-identity",
       "l:padres",
       "l:ser",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -854,6 +868,7 @@
       "l:abuelos",
       "l:casa",
       "l:tener",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -893,7 +908,8 @@
       "l:ser",
       "l:taxista",
       "l:tío",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "l:tío"
@@ -915,6 +931,7 @@
       "l:gente",
       "l:ser",
       "l:tío",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -982,6 +999,7 @@
       "l:barrio",
       "l:primo",
       "l:vivir",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1004,6 +1022,7 @@
       "l:cocinar",
       "l:domingo",
       "l:esposo",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1045,7 +1064,8 @@
       "g:present-ar",
       "l:llegar",
       "l:marido",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -1088,6 +1108,7 @@
       "l:hijo",
       "l:jugar",
       "l:sábado",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1108,7 +1129,8 @@
       "c:tienes",
       "g:stem-boot",
       "l:nieto",
-      "l:tener"
+      "l:tener",
+      "p:masculine-plural-mixed"
     ],
     "targets": [],
     "kind": "statement",
@@ -1215,7 +1237,8 @@
       "l:cómo",
       "l:estar",
       "l:familia",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:familia"
@@ -1237,7 +1260,8 @@
       "l:cómo",
       "l:estar",
       "l:mamá",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:mamá"
@@ -1259,7 +1283,9 @@
       "l:cómo",
       "l:estar",
       "l:papá",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:papá"
@@ -1279,6 +1305,7 @@
       "g:present-er-ir",
       "l:papá",
       "l:vivir",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1364,7 +1391,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:padres",
-      "l:vivir"
+      "l:vivir",
+      "p:masculine-plural-mixed"
     ],
     "targets": [],
     "kind": "statement",
@@ -1384,7 +1412,9 @@
       "g:verb-infinitive",
       "l:conocer",
       "l:mamá",
-      "l:querer"
+      "l:querer",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:mamá"
@@ -1406,6 +1436,7 @@
       "l:domingo",
       "l:hablar",
       "l:papá",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1426,7 +1457,9 @@
       "g:present-er-ir",
       "l:conocer",
       "l:tío",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:tío"
@@ -1449,6 +1482,9 @@
       "l:papá",
       "l:semana",
       "l:visitar",
+      "p:days-el-lunes",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1472,6 +1508,8 @@
       "l:hermana",
       "l:llamar",
       "l:mamá",
+      "p:days-el-lunes",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1495,7 +1533,9 @@
       "l:abuelos",
       "l:dónde",
       "l:vivir",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -1515,7 +1555,8 @@
       "l:quién",
       "l:ser",
       "l:tía",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:tía"
@@ -1537,7 +1578,8 @@
       "l:primo",
       "l:quién",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:primo"
@@ -1582,6 +1624,7 @@
       "l:hospital",
       "l:hoy",
       "l:visitar",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1651,7 +1694,8 @@
       "l:tener",
       "l:tío",
       "l:viejo",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:tío",
@@ -1822,7 +1866,8 @@
       "g:stem-boot",
       "g:yo-irregular",
       "l:novio",
-      "l:tener"
+      "l:tener",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:yo-irregular",
@@ -1889,7 +1934,8 @@
       "l:hermano",
       "l:novia",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "l:hermano",
@@ -1911,7 +1957,8 @@
       "g:yo-irregular",
       "l:novia",
       "l:novio",
-      "l:tener"
+      "l:tener",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:yo-irregular",
@@ -1935,7 +1982,8 @@
       "l:novio",
       "l:quién",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:novio"
@@ -1956,6 +2004,7 @@
       "l:aquí",
       "l:novia",
       "l:vivir",
+      "p:aqui-ahi-alla",
       "p:possessives-basic"
     ],
     "targets": [
@@ -2046,6 +2095,7 @@
       "l:novia",
       "l:salir",
       "l:viernes",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -2114,7 +2164,8 @@
       "l:casado",
       "l:hijos",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -2158,7 +2209,8 @@
       "l:cómo",
       "l:moreno",
       "l:novio",
-      "l:ser"
+      "l:ser",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "c:como-es",
@@ -2186,7 +2238,9 @@
       "l:delgado",
       "l:hermana",
       "l:ser",
-      "p:possessives-basic"
+      "p:es-tiene-lleva",
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-es",
@@ -2217,7 +2271,8 @@
       "l:jefe",
       "l:pelo",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-es",
@@ -2241,7 +2296,8 @@
       "l:abuelo",
       "l:cómo",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-es",
@@ -2264,7 +2320,8 @@
       "g:ser-identity",
       "l:cómo",
       "l:prima",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-es",
@@ -2287,7 +2344,8 @@
       "g:ser-identity",
       "l:cómo",
       "l:hermano",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-es",
@@ -2314,7 +2372,10 @@
       "l:cómo",
       "l:hablar",
       "l:ser",
-      "p:quantifiers-basic"
+      "p:es-tiene-lleva",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-es",
@@ -2337,7 +2398,10 @@
       "l:cómo",
       "l:hija",
       "l:ser",
-      "p:possessives-basic"
+      "p:don-dona-nombre",
+      "p:possessives-basic",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:como-es",
@@ -2362,7 +2426,9 @@
       "l:cómo",
       "l:rubio",
       "l:ser",
-      "p:quantifiers-basic"
+      "p:es-tiene-lleva",
+      "p:quantifiers-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-es",
@@ -2391,8 +2457,10 @@
       "l:moreno",
       "l:ser",
       "l:simpático",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-es",
@@ -2420,7 +2488,8 @@
       "l:español",
       "l:profesor",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-es"
@@ -2442,6 +2511,7 @@
       "l:delgado",
       "l:hermano",
       "l:ser",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -2466,6 +2536,8 @@
       "l:gordo",
       "l:papá",
       "l:ser",
+      "p:es-tiene-lleva",
+      "p:poco-un-poco",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -2491,6 +2563,7 @@
       "l:rubio",
       "l:ser",
       "l:tía",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -2517,6 +2590,7 @@
       "l:bonito",
       "l:novia",
       "l:ser",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -2543,7 +2617,8 @@
       "l:trabajador",
       "l:viejo",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:abuelo",
@@ -2568,8 +2643,10 @@
       "l:caminar",
       "l:mayor",
       "l:ser",
+      "p:mayor-menor",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:abuela",
@@ -2593,6 +2670,8 @@
       "l:moreno",
       "l:primo",
       "l:ser",
+      "p:es-tiene-lleva",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -2619,6 +2698,8 @@
       "l:mamá",
       "l:rubio",
       "l:ser",
+      "p:es-tiene-lleva",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -2645,6 +2726,7 @@
       "l:joven",
       "l:mamá",
       "l:ser",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -2673,6 +2755,7 @@
       "l:papá",
       "l:ser",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
       "p:tener-anos"
     ],
@@ -2698,7 +2781,9 @@
       "g:ser-identity",
       "l:alto",
       "l:hijos",
-      "l:ser"
+      "l:ser",
+      "p:es-tiene-lleva",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -2722,7 +2807,8 @@
       "l:alto",
       "l:hermana",
       "l:rubio",
-      "l:ser"
+      "l:ser",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -2745,7 +2831,8 @@
       "g:ser-identity",
       "l:perezoso",
       "l:ser",
-      "l:viejo"
+      "l:viejo",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:perezoso",
@@ -2765,7 +2852,9 @@
     "requires": [
       "g:ser-identity",
       "l:alto",
-      "l:ser"
+      "l:ser",
+      "p:es-tiene-lleva",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "l:alto"
@@ -2786,7 +2875,8 @@
       "g:ser-identity",
       "l:bajo",
       "l:delgado",
-      "l:ser"
+      "l:ser",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -2813,7 +2903,8 @@
       "l:negro",
       "l:pelo",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:yo-irregular",
@@ -2838,6 +2929,8 @@
       "l:guapo",
       "l:novio",
       "l:ser",
+      "p:es-tiene-lleva",
+      "p:poco-un-poco",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -2864,6 +2957,7 @@
       "l:joven",
       "l:ser",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:quantifiers-basic",
       "p:tener-anos"
     ],
@@ -2889,7 +2983,8 @@
       "l:café",
       "l:jugar",
       "l:señor",
-      "l:viejo"
+      "l:viejo",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -2912,7 +3007,8 @@
       "g:yo-irregular",
       "l:negro",
       "l:pelo",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:yo-irregular",
@@ -2936,7 +3032,8 @@
       "l:largo",
       "l:pelo",
       "l:rubio",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:yo-irregular",
@@ -2961,7 +3058,8 @@
       "g:yo-irregular",
       "l:ojo",
       "l:tener",
-      "l:verde"
+      "l:verde",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -2988,6 +3086,7 @@
       "l:negro",
       "l:ojo",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3015,6 +3114,7 @@
       "l:hermano",
       "l:pelo",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3041,6 +3141,7 @@
       "l:negro",
       "l:pelo",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3067,7 +3168,8 @@
       "l:negro",
       "l:ojo",
       "l:pelo",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -3091,7 +3193,8 @@
       "g:stem-boot",
       "l:grande",
       "l:nariz",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [],
     "kind": "statement",
@@ -3113,6 +3216,7 @@
       "l:blanco",
       "l:pelo",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3139,6 +3243,7 @@
       "l:ojo",
       "l:papá",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3164,7 +3269,8 @@
       "g:stem-boot",
       "l:ojo",
       "l:tener",
-      "l:verde"
+      "l:verde",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -3190,6 +3296,7 @@
       "l:serio",
       "l:tener",
       "l:tío",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -3216,7 +3323,8 @@
       "l:foto",
       "l:hombre",
       "l:nariz",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [],
     "kind": "statement",
@@ -3239,7 +3347,8 @@
       "l:blanco",
       "l:ojo",
       "l:pelo",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -3291,7 +3400,8 @@
       "l:niña",
       "l:ojo",
       "l:pelo",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -3317,6 +3427,7 @@
       "l:primo",
       "l:rubio",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3343,6 +3454,7 @@
       "l:hijo",
       "l:ojo",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3369,6 +3481,7 @@
       "l:qué",
       "l:ser",
       "l:verde",
+      "p:colour-claro-oscuro",
       "p:possessives-basic",
       "p:prep-questions-basic"
     ],
@@ -3399,6 +3512,7 @@
       "l:rubio",
       "l:ser",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3425,7 +3539,8 @@
       "l:corto",
       "l:largo",
       "l:pelo",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "l:pelo"
@@ -3475,6 +3590,9 @@
       "l:cara",
       "l:hombre",
       "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3497,7 +3615,9 @@
       "l:azul",
       "l:chaqueta",
       "l:lente",
-      "l:llevar"
+      "l:llevar",
+      "p:es-tiene-lleva",
+      "p:plural-one-object"
     ],
     "targets": [],
     "kind": "statement",
@@ -3518,7 +3638,8 @@
       "l:blanco",
       "l:camisa",
       "l:hoy",
-      "l:llevar"
+      "l:llevar",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:adjective-agreement"
@@ -3542,6 +3663,7 @@
       "l:hermano",
       "l:llevar",
       "l:negro",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3566,6 +3688,8 @@
       "l:llevar",
       "l:rojo",
       "l:tía",
+      "p:es-tiene-lleva",
+      "p:plural-one-object",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3590,7 +3714,8 @@
       "l:chaqueta",
       "l:hombre",
       "l:llevar",
-      "l:verde"
+      "l:verde",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "l:alto"
@@ -3612,7 +3737,8 @@
       "l:azul",
       "l:camisa",
       "l:hoy",
-      "l:llevar"
+      "l:llevar",
+      "p:es-tiene-lleva"
     ],
     "targets": [],
     "kind": "statement",
@@ -3635,7 +3761,10 @@
       "l:llevar",
       "l:siempre",
       "l:viejo",
-      "p:possessives-basic"
+      "p:es-tiene-lleva",
+      "p:frequency-scale",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -3660,7 +3789,8 @@
       "l:camisa",
       "l:llevar",
       "l:negro",
-      "l:rojo"
+      "l:rojo",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:adjective-agreement"
@@ -3685,7 +3815,9 @@
       "l:mujer",
       "l:quién",
       "l:rojo",
-      "l:ser"
+      "l:ser",
+      "p:de-los-ojos-azules",
+      "p:question-word-order"
     ],
     "targets": [
       "g:adjective-agreement"
@@ -3708,7 +3840,9 @@
       "l:chico",
       "l:lente",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:plural-one-object",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -3730,7 +3864,8 @@
       "l:buscar",
       "l:chaqueta",
       "l:hombre",
-      "l:negro"
+      "l:negro",
+      "p:personal-a"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -3759,6 +3894,8 @@
       "l:llevar",
       "l:rojo",
       "l:ser",
+      "p:es-tiene-lleva",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3784,6 +3921,7 @@
       "l:profesor",
       "l:ser",
       "l:señor",
+      "p:plural-one-object",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -3809,6 +3947,7 @@
       "l:ojo",
       "l:pelo",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3834,7 +3973,9 @@
       "l:hermano",
       "l:saber",
       "l:ser",
-      "p:possessives-basic"
+      "p:es-tiene-lleva",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -3924,6 +4065,7 @@
       "g:ser-identity",
       "l:guapo",
       "l:ser",
+      "p:es-tiene-lleva",
       "p:para-inf"
     ],
     "targets": [],
@@ -3961,7 +4103,8 @@
       "g:ser-identity",
       "l:canadiense",
       "l:guapo",
-      "l:ser"
+      "l:ser",
+      "p:es-tiene-lleva"
     ],
     "targets": [],
     "kind": "question",
@@ -4033,7 +4176,9 @@
       "l:mujer",
       "l:ser",
       "l:viejo",
-      "p:quantifiers-basic"
+      "p:es-tiene-lleva",
+      "p:quantifiers-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -4057,6 +4202,7 @@
       "l:ser",
       "l:serio",
       "l:tío",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -4081,6 +4227,8 @@
       "l:guapo",
       "l:nieto",
       "l:ser",
+      "p:es-tiene-lleva",
+      "p:masculine-plural-mixed",
       "p:para-inf",
       "p:possessives-basic"
     ],
@@ -4127,6 +4275,7 @@
       "l:hijo",
       "l:pequeño",
       "l:ser",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -4152,6 +4301,7 @@
       "l:hija",
       "l:papá",
       "l:ser",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -4200,6 +4350,9 @@
       "l:gente",
       "l:ser",
       "l:tío",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -4226,6 +4379,9 @@
       "l:gente",
       "l:ser",
       "l:tímido",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -4252,7 +4408,10 @@
       "l:gente",
       "l:hablar",
       "l:ser",
-      "p:quantifiers-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:quantifiers-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:buena-gente",
@@ -4277,6 +4436,8 @@
       "l:cliente",
       "l:gente",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -4304,7 +4465,10 @@
       "l:gente",
       "l:ser",
       "l:trabajo",
-      "p:possessives-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "c:buena-gente",
@@ -4330,6 +4494,9 @@
       "l:gente",
       "l:ser",
       "l:tío",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -4355,6 +4522,8 @@
       "l:buena",
       "l:gente",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -4382,7 +4551,9 @@
       "l:café",
       "l:gente",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:buena-gente",
@@ -4407,6 +4578,8 @@
       "l:gente",
       "l:ser",
       "l:trabajar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -4432,6 +4605,8 @@
       "l:familia",
       "l:gente",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -4458,7 +4633,11 @@
       "l:conocer",
       "l:gente",
       "l:ser",
-      "p:quantifiers-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:personal-a",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:buena-gente",
@@ -4484,8 +4663,12 @@
       "l:gente",
       "l:primo",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:personal-a",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:buena-gente",
@@ -4511,6 +4694,8 @@
       "l:gente",
       "l:novia",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:possessives-basic"
     ],
     "targets": [
@@ -4586,6 +4771,7 @@
       "l:ser",
       "l:simpático",
       "l:tío",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -4813,6 +4999,7 @@
       "l:hermano",
       "l:perezoso",
       "l:ser",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -4837,6 +5024,7 @@
       "l:primo",
       "l:ser",
       "l:trabajador",
+      "p:masculine-plural-mixed",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -4889,7 +5077,8 @@
       "l:gente",
       "l:nuevo",
       "l:ser",
-      "l:tímido"
+      "l:tímido",
+      "p:la-gente-singular"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -5011,6 +5200,7 @@
       "l:ser",
       "l:siempre",
       "l:tío",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5183,6 +5373,7 @@
       "l:barrio",
       "l:gente",
       "l:ser",
+      "p:la-gente-singular",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5205,7 +5396,8 @@
       "l:café",
       "l:familia",
       "l:gente",
-      "l:ser"
+      "l:ser",
+      "p:la-gente-singular"
     ],
     "targets": [
       "l:familia",
@@ -5253,7 +5445,10 @@
       "l:centro",
       "l:conocer",
       "l:gente",
-      "p:quantifiers-basic"
+      "p:la-gente-singular",
+      "p:personal-a",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -5274,7 +5469,10 @@
       "g:yo-irregular",
       "l:conocer",
       "l:gente",
-      "p:quantifiers-basic"
+      "p:la-gente-singular",
+      "p:personal-a",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -5298,6 +5496,8 @@
       "l:domingo",
       "l:gente",
       "l:venir",
+      "p:days-el-lunes",
+      "p:la-gente-singular",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -5321,6 +5521,7 @@
       "l:gente",
       "l:ser",
       "l:simpático",
+      "p:la-gente-singular",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -5345,6 +5546,8 @@
       "l:aquí",
       "l:gente",
       "l:hablar",
+      "p:aqui-ahi-alla",
+      "p:la-gente-singular",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -5367,7 +5570,9 @@
       "l:gente",
       "l:joven",
       "l:salir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:la-gente-singular"
     ],
     "targets": [
       "l:gente",
@@ -5389,7 +5594,9 @@
       "g:ser-identity",
       "l:buen",
       "l:hombre",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [],
     "kind": "statement",
@@ -5408,7 +5615,9 @@
       "g:ser-identity",
       "l:buena",
       "l:persona",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "l:persona"
@@ -5431,6 +5640,8 @@
       "l:cocinero",
       "l:hermano",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5454,6 +5665,8 @@
       "l:profesora",
       "l:ser",
       "l:tía",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5475,7 +5688,9 @@
       "g:ser-identity",
       "l:amigo",
       "l:buen",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [],
     "kind": "statement",
@@ -5494,7 +5709,9 @@
       "g:ser-identity",
       "l:buen",
       "l:jefe",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [],
     "kind": "statement",
@@ -5513,7 +5730,9 @@
       "g:ser-identity",
       "l:amiga",
       "l:buena",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [],
     "kind": "statement",
@@ -5533,6 +5752,9 @@
       "l:abuela",
       "l:bien",
       "l:cocinar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5555,6 +5777,9 @@
       "l:bailar",
       "l:bien",
       "l:hermano",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5575,7 +5800,10 @@
       "c:bien-y-tu",
       "g:present-ar",
       "l:bien",
-      "l:cantar"
+      "l:cantar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge"
     ],
     "targets": [],
     "kind": "statement",
@@ -5594,7 +5822,10 @@
       "g:present-ar",
       "l:bien",
       "l:español",
-      "l:hablar"
+      "l:hablar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge"
     ],
     "targets": [],
     "kind": "statement",
@@ -5616,7 +5847,10 @@
       "l:escribir",
       "l:español",
       "l:hablar",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge"
     ],
     "targets": [],
     "kind": "statement",
@@ -5639,7 +5873,10 @@
       "l:cómo",
       "l:estar",
       "l:mamá",
-      "p:possessives-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:mamá"
@@ -5663,7 +5900,10 @@
       "l:bien",
       "l:cómo",
       "l:estar",
-      "p:possessives-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:abuelo"
@@ -5686,6 +5926,8 @@
       "l:buena",
       "l:comida",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -5710,6 +5952,8 @@
       "l:familia",
       "l:mal",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:para-inf",
       "p:possessives-basic"
     ],
@@ -5734,6 +5978,8 @@
       "l:mal",
       "l:ser",
       "l:tío",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5757,7 +6003,10 @@
       "l:persona",
       "l:primo",
       "l:ser",
-      "p:possessives-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:perezoso",
@@ -5780,7 +6029,9 @@
       "g:ser-identity",
       "l:hombre",
       "l:mal",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [],
     "kind": "statement",
@@ -5801,6 +6052,9 @@
       "l:bueno",
       "l:papá",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5825,6 +6079,9 @@
       "l:estudiante",
       "l:hermanos",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5847,6 +6104,8 @@
       "l:buena",
       "l:familia",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -5871,7 +6130,11 @@
       "l:mamá",
       "l:momento",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:para-inf",
+      "p:para-inf-purpose",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5891,7 +6154,8 @@
     "requires": [
       "c:no-cierto",
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -5909,7 +6173,8 @@
       "c:no-cierto",
       "g:ser-identity",
       "l:ser",
-      "l:verdad"
+      "l:verdad",
+      "p:no-es-x-es-y"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -5929,7 +6194,9 @@
       "l:ingeniero",
       "l:médico",
       "l:ser",
-      "p:possessives-basic"
+      "p:no-es-x-es-y",
+      "p:possessives-basic",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "l:hermano"
@@ -5951,6 +6218,7 @@
       "l:hermana",
       "l:mamá",
       "l:ser",
+      "p:no-es-x-es-y",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5973,7 +6241,9 @@
       "g:ser-identity",
       "l:profesor",
       "l:ser",
-      "l:taxista"
+      "l:taxista",
+      "p:no-es-x-es-y",
+      "p:ser-profession-no-article"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -5993,6 +6263,7 @@
       "l:amiga",
       "l:novia",
       "l:ser",
+      "p:no-es-x-es-y",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6015,7 +6286,8 @@
       "g:ser-identity",
       "l:gato",
       "l:loro",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -6037,7 +6309,11 @@
       "l:ser",
       "l:tío",
       "l:verdad",
-      "p:possessives-basic"
+      "p:es-tiene-lleva",
+      "p:mayor-menor",
+      "p:no-es-x-es-y",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:joven",
@@ -6062,6 +6338,8 @@
       "l:bajo",
       "l:mamá",
       "l:ser",
+      "p:es-tiene-lleva",
+      "p:no-es-x-es-y",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6090,6 +6368,7 @@
       "l:divertido",
       "l:ser",
       "l:serio",
+      "p:no-es-x-es-y",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -6114,6 +6393,7 @@
       "l:novio",
       "l:primo",
       "l:ser",
+      "p:no-es-x-es-y",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6136,6 +6416,7 @@
       "l:hermana",
       "l:prima",
       "l:ser",
+      "p:no-es-x-es-y",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6160,6 +6441,7 @@
       "l:papá",
       "l:ser",
       "l:tío",
+      "p:no-es-x-es-y",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6182,6 +6464,7 @@
       "l:abuelo",
       "l:papá",
       "l:ser",
+      "p:no-es-x-es-y",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6203,7 +6486,8 @@
       "g:ser-identity",
       "l:ser",
       "l:serio",
-      "l:tímido"
+      "l:tímido",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "l:serio",
@@ -6224,7 +6508,8 @@
       "g:ser-identity",
       "l:hermanos",
       "l:primo",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "l:primo"
@@ -6244,7 +6529,8 @@
       "g:ser-identity",
       "l:amigo",
       "l:hermanos",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [],
     "kind": "statement",
@@ -6263,7 +6549,8 @@
       "g:ser-identity",
       "l:canadiense",
       "l:colombiano",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [],
     "kind": "statement",
@@ -6280,7 +6567,8 @@
     "requires": [
       "c:soy-de",
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [],
     "kind": "statement",
@@ -6299,7 +6587,8 @@
       "g:ser-identity",
       "l:loro",
       "l:problema",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y"
     ],
     "targets": [],
     "kind": "statement",
@@ -6318,7 +6607,8 @@
       "g:ser-identity",
       "l:esposo",
       "l:hombre",
-      "l:ser"
+      "l:ser",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:esposo"
@@ -6362,6 +6652,7 @@
       "l:hermana",
       "l:mayor",
       "l:ser",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6386,6 +6677,7 @@
       "l:jefe",
       "l:ser",
       "l:trabajo",
+      "p:no-es-x-es-y",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -6408,7 +6700,8 @@
       "l:hija",
       "l:hijos",
       "l:tener",
-      "l:verdad"
+      "l:verdad",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "l:hija"
@@ -6427,7 +6720,8 @@
     "requires": [
       "g:present-ar",
       "l:español",
-      "l:hablar"
+      "l:hablar",
+      "p:no-es-x-es-y"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -6446,7 +6740,9 @@
       "c:soy-de",
       "g:ser-identity",
       "l:aquí",
-      "l:ser"
+      "l:ser",
+      "p:aqui-ahi-alla",
+      "p:no-es-x-es-y"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -6523,7 +6819,8 @@
       "g:questions",
       "g:ser-identity",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "c:si-soy-yo"
@@ -6591,7 +6888,8 @@
       "l:jefe",
       "l:nuevo",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "c:si-soy-yo"
@@ -6634,7 +6932,9 @@
       "l:domingo",
       "l:quién",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:aqui-ahi-alla",
+      "p:days-el-lunes"
     ],
     "targets": [
       "c:si-soy-yo"
@@ -6655,7 +6955,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:si-soy-yo"
@@ -6680,7 +6981,8 @@
       "l:hermano",
       "l:quién",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:question-word-order"
     ],
     "targets": [
       "c:si-soy-yo",
@@ -6723,7 +7025,8 @@
       "l:cuánto",
       "l:hermano",
       "l:tener",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:tener-anos"
     ],
     "targets": [
       "l:hermano"
@@ -6747,7 +7050,8 @@
       "l:cuánto",
       "l:hija",
       "l:tener",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:tener-anos"
     ],
     "targets": [
       "l:hija"
@@ -6769,7 +7073,8 @@
       "g:stem-boot",
       "l:año",
       "l:cuánto",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [],
     "kind": "question",
@@ -6791,7 +7096,9 @@
       "l:año",
       "l:cuánto",
       "l:tener",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:tener-anos"
     ],
     "targets": [],
     "kind": "question",
@@ -6914,7 +7221,8 @@
       "l:foto",
       "l:mujer",
       "l:qué",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "l:edad"
@@ -6938,7 +7246,8 @@
       "l:edad",
       "l:qué",
       "l:tener",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:tener-anos"
     ],
     "targets": [
       "l:abuela",
@@ -7007,6 +7316,7 @@
       "l:año",
       "l:hijos",
       "l:tener",
+      "p:masculine-plural-mixed",
       "p:tener-anos"
     ],
     "targets": [
@@ -7032,6 +7342,7 @@
       "l:papá",
       "l:tener",
       "l:vivir",
+      "p:masculine-plural-mixed",
       "p:possessives-basic",
       "p:tener-anos"
     ],
@@ -7106,6 +7417,7 @@
       "l:hermano",
       "l:menor",
       "l:tener",
+      "p:mayor-menor",
       "p:possessives-basic",
       "p:tener-anos"
     ],
@@ -7202,7 +7514,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:año",
-      "l:tener"
+      "l:tener",
+      "p:numbers-un-una"
     ],
     "targets": [],
     "kind": "statement",
@@ -7241,7 +7554,8 @@
       "c:tienes",
       "g:stem-boot",
       "l:año",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [],
     "kind": "statement",
@@ -7259,7 +7573,8 @@
       "c:tienes",
       "g:stem-boot",
       "l:año",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [],
     "kind": "statement",
@@ -7405,7 +7720,8 @@
       "l:año",
       "l:tener",
       "l:tía",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:tener-anos"
     ],
     "targets": [
       "l:tía"
@@ -7499,7 +7815,8 @@
       "l:año",
       "l:esposa",
       "l:tener",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:tener-anos"
     ],
     "targets": [
       "l:esposa"
@@ -7543,6 +7860,7 @@
       "l:año",
       "l:papá",
       "l:tener",
+      "p:masculine-plural-mixed",
       "p:possessives-basic",
       "p:tener-anos"
     ],
@@ -7567,6 +7885,7 @@
       "l:año",
       "l:hermanos",
       "l:tener",
+      "p:masculine-plural-mixed",
       "p:possessives-basic",
       "p:tener-anos"
     ],
@@ -7590,7 +7909,9 @@
       "l:año",
       "l:primo",
       "l:tener",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:tener-anos"
     ],
     "targets": [
       "l:primo"
@@ -7663,7 +7984,8 @@
       "l:tener",
       "l:viejo",
       "p:quantifiers-basic",
-      "p:tener-anos"
+      "p:tener-anos",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:viejo",
@@ -7688,6 +8010,7 @@
       "l:año",
       "l:casa",
       "l:tener",
+      "p:numbers-un-una",
       "p:possessives-basic",
       "p:tener-anos"
     ],
@@ -7831,6 +8154,7 @@
       "l:hermano",
       "l:tener",
       "l:verdad",
+      "p:numbers-un-una",
       "p:possessives-basic",
       "p:tener-anos"
     ],
@@ -7955,6 +8279,7 @@
       "l:ingeniero",
       "l:ser",
       "l:tener",
+      "p:ser-profession-no-article",
       "p:tener-anos"
     ],
     "targets": [
@@ -8008,7 +8333,8 @@
       "g:stem-boot",
       "l:edad",
       "l:qué",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "l:edad"
@@ -8080,7 +8406,8 @@
       "l:qué",
       "l:saber",
       "l:tener",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:tener-anos"
     ],
     "targets": [
       "g:yo-irregular",
@@ -8102,7 +8429,8 @@
       "g:ser-identity",
       "l:edad",
       "l:número",
-      "l:ser"
+      "l:ser",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:edad"
@@ -8126,7 +8454,9 @@
       "l:hijos",
       "l:qué",
       "l:tener",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:tener-anos"
     ],
     "targets": [
       "l:edad"
@@ -8149,6 +8479,7 @@
       "l:hermano",
       "l:mayor",
       "l:tener",
+      "p:mayor-menor",
       "p:possessives-basic",
       "p:tener-anos"
     ],
@@ -8175,6 +8506,7 @@
       "l:hermana",
       "l:menor",
       "l:tener",
+      "p:mayor-menor",
       "p:possessives-basic",
       "p:tener-anos"
     ],
@@ -8202,7 +8534,8 @@
       "l:hermano",
       "l:mayor",
       "l:menor",
-      "l:tener"
+      "l:tener",
+      "p:mayor-menor"
     ],
     "targets": [
       "g:yo-irregular",
@@ -8231,7 +8564,9 @@
       "l:hermanos",
       "l:mayor",
       "l:menor",
-      "l:tener"
+      "l:tener",
+      "p:masculine-plural-mixed",
+      "p:mayor-menor"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -8257,6 +8592,7 @@
       "l:hermana",
       "l:mayor",
       "l:vivir",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -8281,6 +8617,7 @@
       "l:estudiar",
       "l:hermano",
       "l:menor",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -8303,7 +8640,9 @@
       "g:ser-identity",
       "l:hermanos",
       "l:mayor",
-      "l:ser"
+      "l:ser",
+      "p:masculine-plural-mixed",
+      "p:mayor-menor"
     ],
     "targets": [
       "l:mayor"
@@ -8324,7 +8663,9 @@
       "g:ser-identity",
       "l:hermana",
       "l:mayor",
-      "l:ser"
+      "l:ser",
+      "p:masculine-plural-mixed",
+      "p:mayor-menor"
     ],
     "targets": [
       "l:hermana",
@@ -8346,7 +8687,8 @@
       "g:ser-identity",
       "l:familia",
       "l:menor",
-      "l:ser"
+      "l:ser",
+      "p:mayor-menor"
     ],
     "targets": [
       "l:familia",
@@ -8369,6 +8711,8 @@
       "l:menor",
       "l:primo",
       "l:ser",
+      "p:masculine-plural-mixed",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -8391,7 +8735,8 @@
       "g:ser-identity",
       "l:mayor",
       "l:menor",
-      "l:ser"
+      "l:ser",
+      "p:mayor-menor"
     ],
     "targets": [
       "l:mayor",
@@ -8413,7 +8758,8 @@
       "g:ser-identity",
       "l:hermana",
       "l:menor",
-      "l:ser"
+      "l:ser",
+      "p:mayor-menor"
     ],
     "targets": [
       "l:hermana",
@@ -8434,7 +8780,9 @@
       "g:ser-identity",
       "l:mayor",
       "l:menor",
-      "l:ser"
+      "l:ser",
+      "p:mayor-menor",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:mayor",
@@ -8457,7 +8805,8 @@
       "l:café",
       "l:mayor",
       "l:menor",
-      "l:ser"
+      "l:ser",
+      "p:mayor-menor"
     ],
     "targets": [
       "l:mayor",
@@ -8483,8 +8832,10 @@
       "l:mayor",
       "l:ser",
       "l:tener",
+      "p:mayor-menor",
       "p:possessives-basic",
-      "p:tener-anos"
+      "p:tener-anos",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:hermano",
@@ -8511,6 +8862,7 @@
       "l:prima",
       "l:ser",
       "l:tener",
+      "p:mayor-menor",
       "p:possessives-basic",
       "p:tener-anos"
     ],
@@ -8538,7 +8890,9 @@
       "l:persona",
       "l:ser",
       "l:trabajar",
-      "p:quantifiers-basic"
+      "p:mayor-menor",
+      "p:quantifiers-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:mayor",
@@ -8560,7 +8914,9 @@
       "l:abuela",
       "l:mayor",
       "l:ser",
-      "p:possessives-basic"
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:abuela",
@@ -8584,7 +8940,9 @@
       "l:mayor",
       "l:persona",
       "l:ser",
-      "p:possessives-basic"
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:abuelo",
@@ -8610,7 +8968,10 @@
       "l:llegar",
       "l:mayor",
       "l:persona",
-      "l:temprano"
+      "l:temprano",
+      "p:llegar-a-tiempo",
+      "p:mayor-menor",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -8635,7 +8996,9 @@
       "l:menor",
       "l:papá",
       "l:ser",
-      "p:possessives-basic"
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:mamá",
@@ -8664,7 +9027,8 @@
       "l:ser",
       "l:tener",
       "p:mayor-menor",
-      "p:tener-anos"
+      "p:tener-anos",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:mayor",
@@ -8690,7 +9054,8 @@
       "l:menor",
       "l:ser",
       "p:mayor-menor",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:hermano",
@@ -8717,7 +9082,9 @@
       "l:menores",
       "l:prima",
       "l:primo",
-      "l:tener"
+      "l:tener",
+      "p:masculine-plural-mixed",
+      "p:mayor-menor"
     ],
     "targets": [
       "l:prima",
@@ -8739,7 +9106,8 @@
       "g:ser-identity",
       "l:mayor",
       "l:menor",
-      "l:ser"
+      "l:ser",
+      "p:mayor-menor"
     ],
     "targets": [
       "l:mayor",
@@ -8763,7 +9131,10 @@
       "l:mayor",
       "l:quién",
       "l:ser",
-      "p:possessives-basic"
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:question-word-order",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:hermana",
@@ -8785,7 +9156,8 @@
       "l:mayor",
       "l:menor",
       "l:ser",
-      "p:mayor-menor"
+      "p:mayor-menor",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:mayor",
@@ -8810,6 +9182,7 @@
       "l:hijo",
       "l:menor",
       "l:tener",
+      "p:mayor-menor",
       "p:possessives-basic",
       "p:tener-anos"
     ],
@@ -8834,6 +9207,7 @@
       "l:hija",
       "l:mayor",
       "l:vivir",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -8857,6 +9231,8 @@
       "l:hijos",
       "l:mayor",
       "l:trabajar",
+      "p:masculine-plural-mixed",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -8881,6 +9257,7 @@
       "l:mayor",
       "l:novia",
       "l:vivir",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -8924,7 +9301,8 @@
       "g:ser-identity",
       "l:familia",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:somos-cuatro"
     ],
     "targets": [
       "l:familia"
@@ -8946,7 +9324,8 @@
       "l:casa",
       "l:gato",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -8964,6 +9343,7 @@
       "g:ser-identity",
       "l:hermanos",
       "l:ser",
+      "p:masculine-plural-mixed",
       "p:somos-cuatro"
     ],
     "targets": [
@@ -9075,7 +9455,8 @@
       "g:questions",
       "g:ser-identity",
       "l:cuánto",
-      "l:ser"
+      "l:ser",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -9094,7 +9475,9 @@
       "g:ser-identity",
       "l:cuánto",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:question-word-order",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -9138,7 +9521,8 @@
       "l:grande",
       "l:mesa",
       "l:querer",
-      "l:ser"
+      "l:ser",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -9159,7 +9543,8 @@
       "l:café",
       "l:hoy",
       "l:ser",
-      "l:venir"
+      "l:venir",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -9177,7 +9562,8 @@
       "g:ser-identity",
       "l:mamá",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:sobre-todo-solo"
     ],
     "targets": [],
     "kind": "statement",
@@ -9196,6 +9582,7 @@
       "l:hermano",
       "l:papá",
       "l:ser",
+      "p:masculine-plural-mixed",
       "p:possessives-basic",
       "p:somos-cuatro"
     ],
@@ -9220,7 +9607,8 @@
       "g:ser-identity",
       "l:carro",
       "l:pequeño",
-      "l:ser"
+      "l:ser",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -9240,6 +9628,7 @@
       "l:domingo",
       "l:mesa",
       "l:ser",
+      "p:days-el-lunes",
       "p:somos-cuatro"
     ],
     "targets": [
@@ -9261,7 +9650,9 @@
       "g:ser-identity",
       "l:primo",
       "l:ser",
-      "l:vivir"
+      "l:vivir",
+      "p:masculine-plural-mixed",
+      "p:somos-cuatro"
     ],
     "targets": [
       "l:primo"
@@ -9281,6 +9672,7 @@
       "g:ser-identity",
       "l:familia",
       "l:ser",
+      "p:no-es-x-es-y",
       "p:possessives-basic",
       "p:somos-cuatro"
     ],
@@ -9344,7 +9736,8 @@
       "l:clase",
       "l:español",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -9362,7 +9755,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:oficina",
-      "l:ser"
+      "l:ser",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -9378,7 +9772,8 @@
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -9398,6 +9793,7 @@
       "l:café",
       "l:ser",
       "l:sábado",
+      "p:days-el-lunes",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -9419,7 +9815,9 @@
       "l:hermana",
       "l:papá",
       "l:ser",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -9439,6 +9837,7 @@
       "l:mesa",
       "l:ser",
       "l:señor",
+      "p:senor-don-article",
       "p:somos-cuatro"
     ],
     "targets": [
@@ -9459,7 +9858,9 @@
       "g:ser-identity",
       "l:papá",
       "l:ser",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:somos-cuatro"
     ],
     "targets": [
       "l:papá"
@@ -9480,7 +9881,9 @@
       "l:abuelos",
       "l:papá",
       "l:ser",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:somos-cuatro"
     ],
     "targets": [
       "l:papá"
@@ -9502,7 +9905,9 @@
       "l:familia",
       "l:ser",
       "l:tío",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:somos-cuatro"
     ],
     "targets": [
       "l:familia",
@@ -9524,7 +9929,8 @@
       "l:hermana",
       "l:presentar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:hermana",
@@ -9546,7 +9952,8 @@
       "l:esposo",
       "l:presentar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:esposo",
@@ -9567,8 +9974,10 @@
       "g:present-ar",
       "l:papá",
       "l:presentar",
+      "p:masculine-plural-mixed",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:papá",
@@ -9590,7 +9999,8 @@
       "g:present-ar",
       "l:hermana",
       "l:presentar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:hermana",
@@ -9613,7 +10023,8 @@
       "l:amiga",
       "l:colegio",
       "l:presentar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:presentar"
@@ -9637,7 +10048,8 @@
       "l:novio",
       "l:presentar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:novio",
@@ -9659,7 +10071,8 @@
       "l:presentar",
       "l:tía",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:presentar",
@@ -9680,8 +10093,10 @@
       "g:present-ar",
       "l:presentar",
       "l:primo",
+      "p:masculine-plural-mixed",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:presentar",
@@ -9704,7 +10119,8 @@
       "l:café",
       "l:loro",
       "l:presentar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:presentar"
@@ -9727,7 +10143,9 @@
       "l:presentar",
       "l:señor",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:senor-don-article",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:presentar"
@@ -9748,7 +10166,8 @@
       "l:mamá",
       "l:presentar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:mamá",
@@ -9770,7 +10189,8 @@
       "l:esposa",
       "l:presentar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:esposa",
@@ -9794,7 +10214,9 @@
       "l:cliente",
       "l:presentar",
       "l:señor",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:senor-don-article",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:presentar"
@@ -9815,7 +10237,8 @@
       "l:hija",
       "l:presentar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:hija",
@@ -9837,8 +10260,10 @@
       "l:hermano",
       "l:mayor",
       "l:presentar",
+      "p:mayor-menor",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:hermano",
@@ -9862,7 +10287,8 @@
       "l:mesero",
       "l:nuevo",
       "l:presentar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:te-presento-a"
     ],
     "targets": [
       "g:possessives",
@@ -9884,7 +10310,8 @@
       "l:novia",
       "l:presentar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:novia",
@@ -9927,8 +10354,10 @@
       "g:present-ar",
       "l:abuelos",
       "l:presentar",
+      "p:masculine-plural-mixed",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:presentar"
@@ -10027,7 +10456,8 @@
       "g:present-ar",
       "l:gusto",
       "l:presentar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:presentar"
@@ -10067,7 +10497,8 @@
       "g:present-ar",
       "l:gusto",
       "l:presentar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:presentar"
@@ -10091,7 +10522,8 @@
       "l:hermana",
       "l:presentar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:hermana",
@@ -10115,7 +10547,8 @@
       "l:presentar",
       "l:señor",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:papá",
@@ -10140,7 +10573,8 @@
       "l:presentar",
       "l:señora",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:mamá",
@@ -10210,7 +10644,8 @@
       "l:presentar",
       "p:demonstratives-basic",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:familia",
@@ -10234,8 +10669,10 @@
       "l:hermana",
       "l:presentar",
       "l:sábado",
+      "p:days-el-lunes",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:esposo",
@@ -10260,7 +10697,8 @@
       "l:novio",
       "l:presentar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "l:novio",
@@ -10283,6 +10721,7 @@
       "l:novia",
       "l:papá",
       "l:presentar",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10305,7 +10744,9 @@
       "g:yo-irregular",
       "l:conocer",
       "l:hermano",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -10329,7 +10770,9 @@
       "l:mamá",
       "l:profesora",
       "l:ser",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -10352,7 +10795,10 @@
       "l:gente",
       "l:plaza",
       "p:demonstratives-basic",
-      "p:quantifiers-basic"
+      "p:la-gente-singular",
+      "p:personal-a",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -10373,7 +10819,9 @@
       "g:yo-irregular",
       "l:conocer",
       "l:novio",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -10394,7 +10842,9 @@
       "g:present-er-ir",
       "l:conocer",
       "l:hermana",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:hermana"
@@ -10414,7 +10864,9 @@
       "g:present-er-ir",
       "l:conocer",
       "l:tío",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:tío"
@@ -10433,7 +10885,9 @@
     "requires": [
       "g:present-er-ir",
       "l:conocer",
-      "p:indefinites-basic"
+      "p:indefinites-basic",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -10451,7 +10905,8 @@
       "g:present-er-ir",
       "l:conocer",
       "l:esposo",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:esposo"
@@ -10473,7 +10928,10 @@
       "l:barrio",
       "l:conocer",
       "l:papá",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:papá"
@@ -10493,6 +10951,7 @@
       "g:present-ar",
       "l:buscar",
       "l:hijo",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10515,6 +10974,7 @@
       "l:buscar",
       "l:centro",
       "l:hermana",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10535,7 +10995,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:buscar",
-      "l:mamá"
+      "l:mamá",
+      "p:personal-a"
     ],
     "targets": [
       "l:mamá"
@@ -10557,6 +11018,7 @@
       "l:buscar",
       "l:domingo",
       "l:mesero",
+      "p:days-el-lunes",
       "p:para-inf"
     ],
     "targets": [],
@@ -10577,6 +11039,9 @@
       "l:abuelos",
       "l:domingo",
       "l:visitar",
+      "p:days-el-lunes",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -10595,6 +11060,7 @@
       "g:present-ar",
       "l:tía",
       "l:visitar",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10615,6 +11081,7 @@
       "g:present-ar",
       "l:hermano",
       "l:visitar",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10635,6 +11102,7 @@
       "g:present-ar",
       "l:papá",
       "l:visitar",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10657,6 +11125,8 @@
       "l:abuela",
       "l:llamar",
       "l:noche",
+      "p:personal-a",
+      "p:por-la-manana",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10679,6 +11149,7 @@
       "l:hermana",
       "l:llamar",
       "l:trabajo",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10700,7 +11171,9 @@
       "g:present-ar",
       "l:llamar",
       "l:papá",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "l:papá"
@@ -10722,6 +11195,8 @@
       "l:fiesta",
       "l:primo",
       "l:ver",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10743,7 +11218,8 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:café",
-      "l:ver"
+      "l:ver",
+      "p:personal-a"
     ],
     "targets": [
       "g:yo-irregular"
@@ -10765,6 +11241,8 @@
       "l:ayudar",
       "l:mamá",
       "l:sábado",
+      "p:days-el-lunes",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10787,6 +11265,7 @@
       "l:abuelo",
       "l:ayudar",
       "l:café",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10807,6 +11286,7 @@
       "g:present-ar",
       "l:ayudar",
       "l:madre",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10828,6 +11308,8 @@
       "g:stem-boot",
       "l:hermanos",
       "l:querer",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -10870,6 +11352,7 @@
       "l:colegio",
       "l:hijo",
       "l:llevar",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10892,6 +11375,7 @@
       "l:centro",
       "l:hermana",
       "l:llevar",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10914,6 +11398,7 @@
       "l:esperar",
       "l:novio",
       "l:plaza",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10934,7 +11419,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:abuelos",
-      "l:esperar"
+      "l:esperar",
+      "p:masculine-plural-mixed",
+      "p:personal-a"
     ],
     "targets": [],
     "kind": "statement",
@@ -10953,6 +11440,7 @@
       "l:buscar",
       "l:hermana",
       "l:quién",
+      "p:personal-a",
       "p:possessives-basic",
       "p:prep-questions-basic"
     ],
@@ -10975,6 +11463,7 @@
       "l:llamar",
       "l:quién",
       "l:tía",
+      "p:personal-a",
       "p:possessives-basic",
       "p:prep-questions-basic"
     ],
@@ -10997,6 +11486,7 @@
       "l:esperar",
       "l:primo",
       "l:quién",
+      "p:personal-a",
       "p:possessives-basic",
       "p:prep-questions-basic"
     ],
@@ -11020,7 +11510,9 @@
       "l:café",
       "l:conocer",
       "l:quién",
-      "p:prep-questions-basic"
+      "p:personal-a",
+      "p:prep-questions-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -11038,6 +11530,7 @@
       "g:present-ar",
       "l:quién",
       "l:visitar",
+      "p:personal-a",
       "p:prep-questions-basic"
     ],
     "targets": [],
@@ -11058,7 +11551,10 @@
       "l:domingo",
       "l:quién",
       "l:ver",
-      "p:prep-questions-basic"
+      "p:days-el-lunes",
+      "p:personal-a",
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -11077,7 +11573,9 @@
       "g:yo-irregular",
       "l:ciudad",
       "l:conocer",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -11098,7 +11596,9 @@
       "g:present-er-ir",
       "g:questions",
       "l:conocer",
-      "l:quién"
+      "l:quién",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -11118,7 +11618,8 @@
       "g:yo-irregular",
       "l:hija",
       "l:hijos",
-      "l:tener"
+      "l:tener",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:yo-irregular",
@@ -11162,8 +11663,10 @@
       "l:celular",
       "l:quién",
       "l:ser",
+      "p:de-owner",
       "p:demonstratives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11183,9 +11686,11 @@
       "l:hermano",
       "l:quién",
       "l:ser",
+      "p:de-owner",
       "p:demonstratives-basic",
       "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:hermano"
@@ -11207,9 +11712,11 @@
       "l:quién",
       "l:ser",
       "l:tía",
+      "p:de-owner",
       "p:demonstratives-basic",
       "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:tía"
@@ -11231,9 +11738,11 @@
       "l:foto",
       "l:quién",
       "l:ser",
+      "p:de-owner",
       "p:demonstratives-basic",
       "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:abuela"
@@ -11254,8 +11763,10 @@
       "l:libro",
       "l:quién",
       "l:ser",
+      "p:de-owner",
       "p:demonstratives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11274,8 +11785,10 @@
       "l:carro",
       "l:quién",
       "l:ser",
+      "p:de-owner",
       "p:demonstratives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11294,8 +11807,10 @@
       "l:café",
       "l:quién",
       "l:ser",
+      "p:de-owner",
       "p:demonstratives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11315,9 +11830,11 @@
       "l:quién",
       "l:ser",
       "l:tarjeta",
+      "p:de-owner",
       "p:demonstratives-basic",
       "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:papá"
@@ -11340,7 +11857,9 @@
       "l:casa",
       "l:quién",
       "l:ser",
-      "p:prep-questions-basic"
+      "p:de-owner",
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -11360,8 +11879,10 @@
       "l:quién",
       "l:ser",
       "l:álbum",
+      "p:de-owner",
       "p:demonstratives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -11657,7 +12178,9 @@
       "l:alto",
       "l:moreno",
       "l:nieto",
-      "l:ser"
+      "l:ser",
+      "p:es-tiene-lleva",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -11706,8 +12229,10 @@
       "l:casa",
       "l:ser",
       "l:viejo",
+      "p:masculine-plural-mixed",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -11750,6 +12275,7 @@
       "l:hermana",
       "l:hermano",
       "l:ser",
+      "p:los-de-la-camiseta",
       "p:possessives-basic"
     ],
     "targets": [
@@ -11774,6 +12300,7 @@
       "l:mamá",
       "l:papá",
       "l:ser",
+      "p:los-de-la-camiseta",
       "p:possessives-basic"
     ],
     "targets": [
@@ -11837,7 +12364,8 @@
       "g:present-ar",
       "l:día",
       "l:hora",
-      "l:quedar"
+      "l:quedar",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "l:quedar"
@@ -11858,7 +12386,8 @@
       "g:present-ar",
       "l:cafetera",
       "l:quedar",
-      "l:tinto"
+      "l:tinto",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "l:quedar"
@@ -11881,7 +12410,9 @@
       "l:café",
       "l:libre",
       "l:mesa",
-      "l:quedar"
+      "l:quedar",
+      "p:lleno-libre",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -11942,7 +12473,9 @@
       "g:negation-words",
       "g:present-ar",
       "l:café",
-      "l:quedar"
+      "l:quedar",
+      "p:no-es-x-es-y",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "g:negation-words",
@@ -11963,7 +12496,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:arepa",
-      "l:quedar"
+      "l:quedar",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:quedar"
@@ -11983,7 +12517,8 @@
       "g:present-ar",
       "l:quedar",
       "l:tío",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:quedar",
@@ -12004,7 +12539,8 @@
       "g:negation-words",
       "g:present-ar",
       "l:aquí",
-      "l:quedar"
+      "l:quedar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:negation-words",
@@ -12025,7 +12561,9 @@
       "g:present-ar",
       "l:día",
       "l:quedar",
-      "p:quantifiers-basic"
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "l:quedar"
@@ -12046,7 +12584,8 @@
       "g:present-ar",
       "l:minuto",
       "l:quedar",
-      "p:para-inf"
+      "p:para-inf",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "l:quedar"
@@ -12130,7 +12669,8 @@
       "g:present-ar",
       "l:pan",
       "l:quedar",
-      "p:indefinites-basic"
+      "p:indefinites-basic",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "l:quedar"
@@ -12155,7 +12695,9 @@
       "l:camisa",
       "l:negro",
       "l:pelo",
-      "l:quedar"
+      "l:quedar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "l:pelo",
@@ -12242,6 +12784,8 @@
       "l:bien",
       "l:chaqueta",
       "l:quedar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -12267,6 +12811,8 @@
       "l:pelo",
       "l:quedar",
       "l:rubio",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -12294,7 +12840,9 @@
       "l:mal",
       "l:quedar",
       "l:rojo",
-      "l:verde"
+      "l:verde",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -12313,7 +12861,10 @@
     "acceptEn": [],
     "requires": [
       "g:yo-irregular",
-      "l:conocer"
+      "l:conocer",
+      "p:personal-a",
+      "p:saber-conocer",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:yo-irregular"
@@ -12332,7 +12883,9 @@
     "requires": [
       "g:negation-words",
       "g:yo-irregular",
-      "l:conocer"
+      "l:conocer",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -12354,7 +12907,9 @@
       "g:yo-irregular",
       "l:conocer",
       "l:familia",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -12376,7 +12931,11 @@
       "g:negation-words",
       "g:yo-irregular",
       "l:aquí",
-      "l:conocer"
+      "l:conocer",
+      "p:aqui-ahi-alla",
+      "p:personal-a",
+      "p:saber-conocer",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:negation-words",
@@ -12398,7 +12957,8 @@
       "g:negation-words",
       "g:yo-irregular",
       "l:plaza",
-      "l:ver"
+      "l:ver",
+      "p:personal-a"
     ],
     "targets": [
       "g:negation-words",
@@ -12420,7 +12980,9 @@
       "g:yo-irregular",
       "l:lente",
       "l:ver",
-      "p:possessives-basic"
+      "p:plural-one-object",
+      "p:possessives-basic",
+      "p:ver-oir-bien-mal"
     ],
     "targets": [
       "g:negation-words",
@@ -12442,6 +13004,8 @@
       "g:yo-irregular",
       "l:hermano",
       "l:ver",
+      "p:frequency-scale",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -12466,7 +13030,8 @@
       "g:negation-words",
       "g:yo-irregular",
       "l:domingo",
-      "l:hacer"
+      "l:hacer",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:negation-words",
@@ -12583,7 +13148,8 @@
       "g:negation-words",
       "g:yo-irregular",
       "l:fiesta",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "g:negation-words",
@@ -12606,7 +13172,9 @@
       "g:negation-words",
       "g:yo-irregular",
       "l:lunes",
-      "l:salir"
+      "l:salir",
+      "p:days-el-lunes",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:negation-words",
@@ -12649,7 +13217,8 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:antes",
-      "l:salir"
+      "l:salir",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:yo-irregular"
@@ -12671,7 +13240,9 @@
       "g:yo-irregular",
       "l:centro",
       "l:sábado",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:yo-irregular"
@@ -12693,7 +13264,8 @@
       "g:yo-irregular",
       "l:barrio",
       "l:venir",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:negation-words",
@@ -12717,6 +13289,7 @@
       "g:yo-irregular",
       "l:saber",
       "l:tío",
+      "p:hedge-knowledge",
       "p:possessives-basic"
     ],
     "targets": [
@@ -12741,7 +13314,8 @@
       "g:negation-words",
       "g:yo-irregular",
       "l:música",
-      "l:saber"
+      "l:saber",
+      "p:hedge-knowledge"
     ],
     "targets": [
       "g:negation-words",
@@ -12763,7 +13337,8 @@
       "c:no-se",
       "g:negation-words",
       "g:yo-irregular",
-      "l:saber"
+      "l:saber",
+      "p:hedge-knowledge"
     ],
     "targets": [
       "g:negation-words",
@@ -12814,7 +13389,8 @@
       "g:yo-irregular",
       "l:quién",
       "l:saber",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:negation-words",
@@ -12905,7 +13481,9 @@
       "g:hay-vs-esta",
       "g:negation-words",
       "l:aquí",
-      "l:lunes"
+      "l:lunes",
+      "p:aqui-ahi-alla",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:negation-words"
@@ -13156,7 +13734,8 @@
       "g:verb-infinitive",
       "l:hoy",
       "l:querer",
-      "l:ver"
+      "l:ver",
+      "p:personal-a"
     ],
     "targets": [
       "g:negation-words"
@@ -13238,7 +13817,8 @@
       "g:negation-words",
       "g:present-er-ir",
       "l:comer",
-      "l:mañana"
+      "l:mañana",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:negation-words"
@@ -13258,7 +13838,8 @@
       "g:negation-words",
       "g:present-er-ir",
       "l:comer",
-      "l:fruta"
+      "l:fruta",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:negation-words"
@@ -13278,7 +13859,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:café",
-      "l:comer"
+      "l:comer",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -13296,7 +13878,8 @@
       "g:negation-words",
       "g:present-ar",
       "l:café",
-      "l:tomar"
+      "l:tomar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:negation-words"
@@ -13339,7 +13922,9 @@
       "g:negation-words",
       "g:present-ar",
       "l:domingo",
-      "l:estudiar"
+      "l:estudiar",
+      "p:days-el-lunes",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:negation-words"
@@ -13359,7 +13944,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:estudiar",
-      "l:noche"
+      "l:noche",
+      "p:frequency-scale",
+      "p:por-la-manana"
     ],
     "targets": [],
     "kind": "statement",
@@ -13378,7 +13965,8 @@
       "g:negation-words",
       "g:preterite-ar",
       "l:café",
-      "l:cerrar"
+      "l:cerrar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:negation-words"
@@ -13400,6 +13988,7 @@
       "l:abuelo",
       "l:celular",
       "l:llevar",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -13419,7 +14008,9 @@
       "g:negation-words",
       "g:present-ar",
       "l:llamar",
-      "l:mañana"
+      "l:mañana",
+      "p:personal-a",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:negation-words"
@@ -13440,6 +14031,7 @@
       "g:present-ar",
       "l:llamar",
       "l:tío",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13461,6 +14053,7 @@
       "g:present-ar",
       "l:llamar",
       "l:tía",
+      "p:frequency-scale",
       "p:me-te-nos-objects",
       "p:possessives-basic"
     ],
@@ -13483,6 +14076,7 @@
       "g:present-ar",
       "l:familia",
       "l:hablar",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13504,6 +14098,7 @@
       "g:present-ar",
       "l:hablar",
       "l:papá",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13522,7 +14117,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:hablar"
+      "l:hablar",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -13541,6 +14137,7 @@
       "l:abuela",
       "l:hablar",
       "l:papá",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13562,6 +14159,7 @@
       "g:present-ar",
       "l:esposa",
       "l:hablar",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13582,7 +14180,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:pagar",
-      "l:tinto"
+      "l:tinto",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -13599,7 +14198,8 @@
     "requires": [
       "g:negation-words",
       "g:present-ar",
-      "l:pagar"
+      "l:pagar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:negation-words"
@@ -13640,7 +14240,9 @@
       "g:negation-words",
       "g:present-er-ir",
       "l:conocer",
-      "l:hospital"
+      "l:hospital",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words"
@@ -13661,7 +14263,8 @@
       "g:present-ar",
       "g:present-er-ir",
       "l:hablar",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words"
@@ -13682,7 +14285,9 @@
       "g:present-er-ir",
       "l:familia",
       "l:saber",
-      "p:possessives-basic"
+      "p:hedge-knowledge",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -13704,7 +14309,9 @@
       "g:negation-words",
       "g:present-er-ir",
       "l:conocer",
-      "l:foto"
+      "l:foto",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words"
@@ -13724,6 +14331,8 @@
       "g:preterite-ar",
       "l:abuela",
       "l:visitar",
+      "p:frequency-scale",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13765,7 +14374,9 @@
     "requires": [
       "g:present-ar",
       "l:llegar",
-      "l:tarde"
+      "l:tarde",
+      "p:frequency-scale",
+      "p:llegar-a-tiempo"
     ],
     "targets": [],
     "kind": "statement",
@@ -13784,7 +14395,9 @@
       "g:present-ar",
       "l:tarde",
       "l:tinto",
-      "l:tomar"
+      "l:tomar",
+      "p:frequency-scale",
+      "p:por-la-manana"
     ],
     "targets": [],
     "kind": "statement",
@@ -13804,7 +14417,8 @@
       "g:present-er-ir",
       "l:foto",
       "l:hombre",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words"
@@ -13843,7 +14457,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:domingo",
-      "l:llamar"
+      "l:llamar",
+      "p:days-el-lunes",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -13862,7 +14478,8 @@
       "g:negation-words",
       "g:present-ar",
       "l:hablar",
-      "l:mañana"
+      "l:mañana",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:negation-words"
@@ -13883,7 +14500,8 @@
       "g:negation-words",
       "g:present-ar",
       "l:hablar",
-      "l:tarde"
+      "l:tarde",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:negation-words"
@@ -13902,7 +14520,9 @@
     "requires": [
       "g:negation-words",
       "g:stem-boot",
-      "l:querer"
+      "l:querer",
+      "p:personal-a",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:negation-words"
@@ -13924,6 +14544,7 @@
       "l:abuela",
       "l:edad",
       "l:hablar",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13947,6 +14568,7 @@
       "g:present-ar",
       "l:hermano",
       "l:llamar",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13969,6 +14591,8 @@
       "l:noche",
       "l:papá",
       "l:salir",
+      "p:frequency-scale",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13991,6 +14615,8 @@
       "l:casa",
       "l:primo",
       "l:venir",
+      "p:frequency-scale",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -14015,6 +14641,7 @@
       "l:familia",
       "l:hablar",
       "l:tío",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -14038,6 +14665,8 @@
       "g:present-ar",
       "l:ayudar",
       "l:jefe",
+      "p:frequency-scale",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -14061,6 +14690,8 @@
       "l:jefe",
       "l:sábado",
       "l:trabajar",
+      "p:days-el-lunes",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -14081,7 +14712,9 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:foto",
-      "l:saber"
+      "l:saber",
+      "p:hedge-knowledge",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -14118,7 +14751,9 @@
       "g:present-er-ir",
       "l:conocer",
       "l:foto",
-      "l:hombre"
+      "l:hombre",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -14134,7 +14769,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [],
     "kind": "statement",
@@ -14173,7 +14809,9 @@
       "g:present-ar",
       "l:llegar",
       "l:lunes",
-      "l:temprano"
+      "l:temprano",
+      "p:days-el-lunes",
+      "p:llegar-a-tiempo"
     ],
     "targets": [],
     "kind": "statement",
@@ -14192,7 +14830,8 @@
       "g:stem-boot",
       "l:café",
       "l:lunes",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "statement",
@@ -14255,7 +14894,8 @@
       "g:stem-boot",
       "l:llave",
       "l:quién",
-      "l:tener"
+      "l:tener",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14275,7 +14915,8 @@
       "g:questions",
       "l:ayudar",
       "l:café",
-      "l:quién"
+      "l:quién",
+      "p:sobre-todo-solo"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14311,6 +14952,7 @@
       "g:present-ar",
       "l:esperar",
       "l:quién",
+      "p:personal-a",
       "p:prep-questions-basic"
     ],
     "targets": [],
@@ -14427,7 +15069,9 @@
       "g:present-er-ir",
       "g:yo-irregular",
       "l:ver",
-      "p:indefinites-basic"
+      "p:indefinites-basic",
+      "p:no-es-x-es-y",
+      "p:personal-a"
     ],
     "targets": [
       "g:negation-words",
@@ -14448,7 +15092,10 @@
       "g:present-er-ir",
       "l:aquí",
       "l:conocer",
-      "p:indefinites-basic"
+      "p:aqui-ahi-alla",
+      "p:indefinites-basic",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14466,7 +15113,9 @@
       "g:present-ar",
       "l:llegar",
       "l:siempre",
-      "l:temprano"
+      "l:temprano",
+      "p:frequency-scale",
+      "p:llegar-a-tiempo"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14484,7 +15133,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:café",
-      "l:comer"
+      "l:comer",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14502,6 +15152,7 @@
       "g:present-ar",
       "l:hablar",
       "l:papá",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -14522,7 +15173,8 @@
       "c:tengo",
       "g:yo-irregular",
       "l:hermanos",
-      "l:tener"
+      "l:tener",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:yo-irregular"
@@ -14541,7 +15193,8 @@
     "requires": [
       "g:present-ar",
       "l:hablar",
-      "l:inglés"
+      "l:inglés",
+      "p:tambien-tampoco"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14559,7 +15212,8 @@
       "c:tengo",
       "g:yo-irregular",
       "l:novio",
-      "l:tener"
+      "l:tener",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:yo-irregular",
@@ -14579,7 +15233,8 @@
     "requires": [
       "g:negation-words",
       "g:present-er-ir",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words"
@@ -14617,7 +15272,8 @@
       "c:quiero",
       "g:stem-boot",
       "l:café",
-      "l:querer"
+      "l:querer",
+      "p:tambien-tampoco"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14701,7 +15357,8 @@
       "g:yo-irregular",
       "l:hermanos",
       "l:primo",
-      "l:tener"
+      "l:tener",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:negation-words",
@@ -14830,7 +15487,8 @@
       "g:negation-words",
       "g:present-ar",
       "l:hablar",
-      "l:inglés"
+      "l:inglés",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:negation-words"
@@ -14850,7 +15508,9 @@
       "g:negation-words",
       "g:present-er-ir",
       "l:aquí",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:negation-words"
@@ -14870,7 +15530,10 @@
       "g:yo-irregular",
       "l:conocer",
       "l:mamá",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:yo-irregular",
@@ -14891,7 +15554,8 @@
       "c:tengo",
       "g:yo-irregular",
       "l:hermanos",
-      "l:tener"
+      "l:tener",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:yo-irregular"
@@ -14951,7 +15615,9 @@
       "g:present-er-ir",
       "l:conocer",
       "l:tío",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:tío"
@@ -14971,6 +15637,7 @@
       "g:present-er-ir",
       "l:primo",
       "l:vivir",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -15115,7 +15782,8 @@
       "g:indefinites",
       "g:negation-words",
       "l:libre",
-      "l:mesa"
+      "l:mesa",
+      "p:lleno-libre"
     ],
     "targets": [
       "g:negation-words"
@@ -15200,7 +15868,8 @@
       "c:tengo",
       "g:yo-irregular",
       "l:novia",
-      "l:tener"
+      "l:tener",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:yo-irregular",
@@ -15220,7 +15889,9 @@
     "requires": [
       "c:voy-a",
       "g:ir-a-plans",
-      "l:ir"
+      "l:ir",
+      "p:frequency-scale",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [],
     "kind": "statement",
@@ -15238,7 +15909,8 @@
       "c:hago-salgo-vengo",
       "g:negation-words",
       "g:yo-irregular",
-      "l:hacer"
+      "l:hacer",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:negation-words",
@@ -15260,7 +15932,8 @@
       "c:no-se",
       "g:negation-words",
       "g:yo-irregular",
-      "l:saber"
+      "l:saber",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:negation-words",
@@ -15281,7 +15954,8 @@
       "c:hay",
       "c:no-hay-nada",
       "g:hay-vs-esta",
-      "g:negation-words"
+      "g:negation-words",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:negation-words"
@@ -15303,7 +15977,8 @@
       "c:no-se",
       "g:negation-words",
       "g:yo-irregular",
-      "l:saber"
+      "l:saber",
+      "p:hedge-knowledge"
     ],
     "targets": [
       "g:negation-words",
@@ -15323,7 +15998,8 @@
     "requires": [
       "g:negation-words",
       "g:yo-irregular",
-      "l:decir"
+      "l:decir",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:negation-words",
@@ -15343,7 +16019,9 @@
     "requires": [
       "g:negation-words",
       "g:yo-irregular",
-      "l:conocer"
+      "l:conocer",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -15364,6 +16042,8 @@
       "g:present-ar",
       "l:llamar",
       "l:mamá",
+      "p:frequency-scale",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -15385,6 +16065,7 @@
       "g:present-ar",
       "l:hablar",
       "l:papá",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -15406,7 +16087,10 @@
       "g:gender-articles",
       "g:present-ar",
       "l:pagar",
-      "l:tinto"
+      "l:tinto",
+      "p:don-dona-nombre",
+      "p:frequency-scale",
+      "p:senor-don-article"
     ],
     "targets": [],
     "kind": "statement",
@@ -15424,7 +16108,10 @@
       "g:negation-words",
       "g:present-er-ir",
       "l:aquí",
-      "l:conocer"
+      "l:conocer",
+      "p:aqui-ahi-alla",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words"
@@ -15443,7 +16130,8 @@
     "requires": [
       "g:negation-words",
       "g:present-er-ir",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words"
@@ -15463,7 +16151,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:barrio",
-      "l:salir"
+      "l:salir",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -15498,7 +16187,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:llamar"
+      "l:llamar",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -15515,7 +16205,9 @@
     "requires": [
       "g:negation-words",
       "g:present-er-ir",
-      "l:conocer"
+      "l:conocer",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words"
@@ -15535,7 +16227,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:café",
-      "l:venir"
+      "l:venir",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -15635,7 +16328,8 @@
       "g:possessives",
       "g:present-er-ir",
       "l:hijos",
-      "l:vivir"
+      "l:vivir",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:possessives"
@@ -15655,7 +16349,8 @@
       "g:possessives",
       "g:present-ar",
       "l:estudiar",
-      "l:hija"
+      "l:hija",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:possessives",
@@ -15684,6 +16379,7 @@
       "l:ser",
       "l:tener",
       "l:viernes",
+      "p:days-el-lunes",
       "p:tener-anos"
     ],
     "targets": [
@@ -15708,7 +16404,8 @@
       "g:present-ar",
       "l:abuela",
       "l:cocinar",
-      "l:domingo"
+      "l:domingo",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:possessives",
@@ -15729,7 +16426,8 @@
       "g:possessives",
       "g:ser-identity",
       "l:abuelos",
-      "l:ser"
+      "l:ser",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:possessives"
@@ -15796,7 +16494,8 @@
       "g:stem-boot",
       "l:café",
       "l:tener",
-      "l:tío"
+      "l:tío",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:possessives",
@@ -15820,7 +16519,9 @@
       "l:moreno",
       "l:primo",
       "l:rubio",
-      "l:ser"
+      "l:ser",
+      "p:es-tiene-lleva",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -15846,7 +16547,9 @@
       "g:present-ar",
       "l:llegar",
       "l:prima",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:possessives",
@@ -15871,6 +16574,7 @@
       "l:hermano",
       "l:papá",
       "l:ser",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -15896,7 +16600,8 @@
       "l:bajo",
       "l:mamá",
       "l:moreno",
-      "l:ser"
+      "l:ser",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -15921,7 +16626,8 @@
       "g:possessives",
       "l:estar",
       "l:hoy",
-      "l:papá"
+      "l:papá",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:possessives",
@@ -15943,7 +16649,8 @@
       "g:present-er-ir",
       "l:hermano",
       "l:mayor",
-      "l:vivir"
+      "l:vivir",
+      "p:mayor-menor"
     ],
     "targets": [
       "g:possessives",
@@ -15969,6 +16676,7 @@
       "l:hermana",
       "l:menor",
       "l:tener",
+      "p:mayor-menor",
       "p:tener-anos"
     ],
     "targets": [
@@ -15995,7 +16703,8 @@
       "l:español",
       "l:hablar",
       "l:hermanos",
-      "l:inglés"
+      "l:inglés",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:possessives"
@@ -16122,7 +16831,8 @@
       "l:nieto",
       "l:nuevo",
       "l:ser",
-      "l:tímido"
+      "l:tímido",
+      "p:la-gente-singular"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -16148,7 +16858,8 @@
       "l:banco",
       "l:hijo",
       "l:mayor",
-      "l:trabajar"
+      "l:trabajar",
+      "p:mayor-menor"
     ],
     "targets": [
       "g:possessives",
@@ -16176,7 +16887,9 @@
       "l:menor",
       "l:ojo",
       "l:tener",
-      "l:verde"
+      "l:verde",
+      "p:es-tiene-lleva",
+      "p:mayor-menor"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -16272,7 +16985,8 @@
       "g:possessives",
       "l:abuelos",
       "l:foto",
-      "l:álbum"
+      "l:álbum",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:possessives"
@@ -16338,7 +17052,8 @@
       "g:present-ar",
       "l:hoy",
       "l:llegar",
-      "l:tío"
+      "l:tío",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:possessives",
@@ -16385,7 +17100,9 @@
       "l:lleno",
       "l:pequeño",
       "l:ser",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale",
+      "p:lleno-libre"
     ],
     "targets": [
       "g:possessives"
@@ -16407,7 +17124,8 @@
       "l:bonito",
       "l:café",
       "l:ser",
-      "l:viejo"
+      "l:viejo",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:possessives",
@@ -16429,7 +17147,8 @@
       "g:possessives",
       "g:present-er-ir",
       "l:abrir",
-      "l:café"
+      "l:café",
+      "p:telling-time"
     ],
     "targets": [
       "g:possessives"
@@ -16451,7 +17170,9 @@
       "g:present-er-ir",
       "l:abrir",
       "l:café",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:possessives"
@@ -16473,6 +17194,7 @@
       "g:ser-identity",
       "l:ser",
       "l:tinto",
+      "p:los-de-la-camiseta",
       "p:para-inf"
     ],
     "targets": [
@@ -16624,7 +17346,9 @@
       "l:buena",
       "l:cliente",
       "l:gente",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:buena-gente",
@@ -16648,7 +17372,8 @@
       "g:present-ar",
       "l:cliente",
       "l:llegar",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:telling-time"
     ],
     "targets": [
       "g:possessives"
@@ -16690,7 +17415,8 @@
       "g:ser-identity",
       "l:ingeniero",
       "l:jefe",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:possessives"
@@ -16801,7 +17527,8 @@
       "g:possessives",
       "l:calle",
       "l:casa",
-      "l:estar"
+      "l:estar",
+      "p:street-names"
     ],
     "targets": [
       "g:possessives"
@@ -16913,7 +17640,8 @@
       "g:possessives",
       "g:stem-boot",
       "l:banco",
-      "l:cerrar"
+      "l:cerrar",
+      "p:telling-time"
     ],
     "targets": [
       "g:possessives"
@@ -16935,6 +17663,8 @@
       "l:bueno",
       "l:colegio",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -16956,7 +17686,8 @@
       "g:possessives",
       "g:stem-boot",
       "l:clase",
-      "l:empezar"
+      "l:empezar",
+      "p:telling-time"
     ],
     "targets": [
       "g:possessives"
@@ -16977,7 +17708,8 @@
       "g:possessives",
       "g:present-ar",
       "l:llegar",
-      "l:profesora"
+      "l:profesora",
+      "p:telling-time"
     ],
     "targets": [
       "g:possessives"
@@ -16999,7 +17731,8 @@
       "l:colombiano",
       "l:español",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:possessives"
@@ -17022,7 +17755,8 @@
       "l:compañero",
       "l:joven",
       "l:ser",
-      "l:trabajo"
+      "l:trabajo",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -17133,7 +17867,9 @@
       "g:ser-identity",
       "l:martes",
       "l:reunión",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes",
+      "p:event-ser-en"
     ],
     "targets": [
       "g:possessives"
@@ -17153,7 +17889,8 @@
       "g:possessives",
       "g:ser-identity",
       "l:horario",
-      "l:ser"
+      "l:ser",
+      "p:desde-hasta"
     ],
     "targets": [
       "g:possessives"
@@ -17175,7 +17912,8 @@
       "l:llegar",
       "l:plan",
       "l:ser",
-      "l:temprano"
+      "l:temprano",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "g:possessives"
@@ -17198,7 +17936,8 @@
       "l:español",
       "l:examen",
       "l:jueves",
-      "l:tener"
+      "l:tener",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:possessives"
@@ -17220,7 +17959,9 @@
       "g:present-ar",
       "l:amigo",
       "l:llegar",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale",
+      "p:telling-time"
     ],
     "targets": [
       "g:possessives"
@@ -17242,6 +17983,7 @@
       "l:amigo",
       "l:canadiense",
       "l:hablar",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -17263,7 +18005,8 @@
       "g:ser-identity",
       "l:amiga",
       "l:periodista",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:possessives"
@@ -17453,7 +18196,8 @@
       "g:possessives",
       "g:present-ar",
       "l:escuchar",
-      "l:pregunta"
+      "l:pregunta",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:possessives"
@@ -17564,7 +18308,8 @@
       "g:possessives",
       "g:stem-boot",
       "l:día",
-      "l:empezar"
+      "l:empezar",
+      "p:telling-time"
     ],
     "targets": [
       "g:possessives"
@@ -17610,7 +18355,8 @@
       "l:empezar",
       "l:fin",
       "l:semana",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:possessives"
@@ -17633,6 +18379,8 @@
       "l:difícil",
       "l:día",
       "l:ser",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -17657,7 +18405,11 @@
       "g:ser-identity",
       "l:clase",
       "l:lunes",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes",
+      "p:event-ser-en",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "g:possessives",
@@ -17681,7 +18433,9 @@
       "l:café",
       "l:sábado",
       "l:tinto",
-      "l:vender"
+      "l:vender",
+      "p:days-el-lunes",
+      "p:numbers-un-una"
     ],
     "targets": [
       "g:possessives"
@@ -17725,7 +18479,9 @@
       "g:ser-identity",
       "l:fiesta",
       "l:ser",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:event-ser-en"
     ],
     "targets": [
       "g:possessives",
@@ -17850,7 +18606,9 @@
       "l:dónde",
       "l:estar",
       "l:mesa",
-      "l:plaza"
+      "l:plaza",
+      "p:aqui-ahi-alla",
+      "p:question-word-order"
     ],
     "targets": [
       "g:possessives"
@@ -17874,7 +18632,8 @@
       "l:cuenta",
       "l:cuánto",
       "l:peso",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:possessives"
@@ -17921,7 +18680,8 @@
       "g:ser-identity",
       "l:cuál",
       "l:número",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:possessives"
@@ -17945,7 +18705,8 @@
       "l:loro",
       "l:mesero",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:possessives"
@@ -17967,7 +18728,8 @@
       "g:questions",
       "l:dónde",
       "l:tío",
-      "l:vivir"
+      "l:vivir",
+      "p:question-word-order"
     ],
     "targets": [
       "g:possessives",
@@ -18057,7 +18819,8 @@
       "l:abuelo",
       "l:año",
       "l:cuánto",
-      "l:tener"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "g:possessives",
@@ -18080,7 +18843,9 @@
       "g:stem-boot",
       "l:fiesta",
       "l:primo",
-      "l:venir"
+      "l:venir",
+      "p:ir-venir",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:possessives",
@@ -18103,7 +18868,8 @@
       "g:questions",
       "l:dónde",
       "l:hijo",
-      "l:trabajar"
+      "l:trabajar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:possessives",
@@ -18126,7 +18892,8 @@
       "g:possessives",
       "l:dónde",
       "l:estar",
-      "l:perro"
+      "l:perro",
+      "p:question-word-order"
     ],
     "targets": [
       "g:possessives"
@@ -18148,7 +18915,9 @@
       "g:questions",
       "l:abuelos",
       "l:dónde",
-      "l:vivir"
+      "l:vivir",
+      "p:masculine-plural-mixed",
+      "p:question-word-order"
     ],
     "targets": [
       "g:possessives"
@@ -18170,7 +18939,8 @@
       "g:possessives",
       "l:cómo",
       "l:estar",
-      "l:jefe"
+      "l:jefe",
+      "p:question-word-order"
     ],
     "targets": [
       "g:possessives"
@@ -18194,7 +18964,8 @@
       "l:casa",
       "l:cómo",
       "l:nuevo",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-es",
@@ -18219,7 +18990,9 @@
       "l:cómo",
       "l:nuevo",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:de-owner",
+      "p:question-word-order"
     ],
     "targets": [
       "c:como-es",
@@ -18242,7 +19015,8 @@
       "g:ser-identity",
       "l:profesora",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:possessives"
@@ -18327,7 +19101,8 @@
       "g:possessives",
       "g:present-er-ir",
       "l:conocer",
-      "l:hijo"
+      "l:hijo",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:possessives",
@@ -18348,7 +19123,10 @@
       "g:possessives",
       "g:present-er-ir",
       "l:conocer",
-      "l:tío"
+      "l:tío",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:possessives",
@@ -18370,7 +19148,8 @@
       "g:present-er-ir",
       "l:aquí",
       "l:casa",
-      "l:ver"
+      "l:ver",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:possessives"
@@ -18434,7 +19213,8 @@
       "g:yo-irregular",
       "l:chaqueta",
       "l:dónde",
-      "l:poner"
+      "l:poner",
+      "p:question-word-order"
     ],
     "targets": [
       "g:possessives",
@@ -18476,7 +19256,8 @@
       "g:possessives",
       "g:present-ar",
       "l:hablar",
-      "l:nieto"
+      "l:nieto",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:possessives"
@@ -18518,6 +19299,7 @@
       "l:hermano",
       "l:papá",
       "l:vivir",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18542,6 +19324,7 @@
       "l:abuela",
       "l:hermana",
       "l:visitar",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18566,6 +19349,8 @@
       "l:esposa",
       "l:hijos",
       "l:llamar",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18589,6 +19374,7 @@
       "l:hablar",
       "l:hermano",
       "l:papá",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18614,7 +19400,9 @@
       "l:prima",
       "l:saber",
       "l:tío",
-      "p:possessives-basic"
+      "p:hedge-knowledge",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -18662,7 +19450,9 @@
       "g:possessives",
       "g:present-er-ir",
       "l:conocer",
-      "l:familia"
+      "l:familia",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -18684,7 +19474,10 @@
       "g:possessives",
       "g:present-er-ir",
       "l:abuelos",
-      "l:ver"
+      "l:ver",
+      "p:frequency-scale",
+      "p:masculine-plural-mixed",
+      "p:personal-a"
     ],
     "targets": [
       "g:possessives"
@@ -18733,6 +19526,7 @@
       "l:ayer",
       "l:ir",
       "l:ver",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18759,6 +19553,7 @@
       "l:hospital",
       "l:ir",
       "l:mamá",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18785,6 +19580,7 @@
       "l:ir",
       "l:mercado",
       "l:papá",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18810,6 +19606,8 @@
       "l:ir",
       "l:prima",
       "l:sábado",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18835,6 +19633,9 @@
       "l:hijos",
       "l:ir",
       "l:plaza",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18860,6 +19661,7 @@
       "l:cine",
       "l:ir",
       "l:novia",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18885,6 +19687,7 @@
       "l:casa",
       "l:ir",
       "l:tía",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18909,7 +19712,8 @@
       "l:banco",
       "l:hoy",
       "l:ir",
-      "l:temprano"
+      "l:temprano",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -18933,6 +19737,7 @@
       "l:hoy",
       "l:ir",
       "l:oficina",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18985,6 +19790,8 @@
       "l:semana",
       "l:tío",
       "l:ver",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19009,6 +19816,8 @@
       "l:papá",
       "l:ver",
       "p:para-inf",
+      "p:para-inf-purpose",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19031,6 +19840,7 @@
       "g:preterite-ser-ir-hacer",
       "l:abuelos",
       "l:ir",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19054,6 +19864,7 @@
       "l:hermana",
       "l:ir",
       "l:universidad",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19078,6 +19889,7 @@
       "l:colegio",
       "l:hijo",
       "l:ir",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19102,6 +19914,8 @@
       "l:ir",
       "l:playa",
       "l:primo",
+      "p:ir-a-venir-de-place",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19126,6 +19940,7 @@
       "l:esposo",
       "l:ir",
       "l:montaña",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19150,6 +19965,7 @@
       "l:ir",
       "l:parque",
       "l:perro",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19175,7 +19991,8 @@
       "l:centro",
       "l:chaqueta",
       "l:comprar",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19199,6 +20016,8 @@
       "l:restaurante",
       "l:tío",
       "l:viernes",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19229,6 +20048,7 @@
       "l:primo",
       "l:tarde",
       "l:trabajar",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19252,7 +20072,8 @@
       "g:preterite-ser-ir-hacer",
       "l:ayer",
       "l:ir",
-      "l:trabajo"
+      "l:trabajo",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19271,7 +20092,8 @@
     "requires": [
       "c:fui",
       "g:preterite-ser-ir-hacer",
-      "l:ir"
+      "l:ir",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19293,6 +20115,8 @@
       "l:abuelo",
       "l:casa",
       "l:ir",
+      "p:frequency-scale",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19318,6 +20142,7 @@
       "l:hermano",
       "l:ir",
       "l:ser",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19346,7 +20171,8 @@
       "l:ayer",
       "l:centro",
       "l:ir",
-      "l:ser"
+      "l:ser",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19374,6 +20200,8 @@
       "l:ir",
       "l:ser",
       "l:ver",
+      "p:days-el-lunes",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19397,7 +20225,8 @@
       "g:preterite-ser-ir-hacer",
       "l:hospital",
       "l:ir",
-      "l:oficina"
+      "l:oficina",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19417,6 +20246,8 @@
       "g:preterite-ser-ir-hacer",
       "l:ir",
       "l:papá",
+      "p:ir-a-venir-de-place",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19440,6 +20271,7 @@
       "l:cine",
       "l:ir",
       "l:novia",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19463,6 +20295,7 @@
       "l:fiesta",
       "l:ir",
       "l:quién",
+      "p:ir-a-venir-de-place",
       "p:prep-questions-basic"
     ],
     "targets": [
@@ -19484,7 +20317,9 @@
       "g:preterite-ser-ir-hacer",
       "l:ir",
       "l:plaza",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19505,7 +20340,8 @@
       "g:ir-a-plans",
       "g:preterite-ser-ir-hacer",
       "l:ir",
-      "l:ver"
+      "l:ver",
+      "p:personal-a"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19525,7 +20361,8 @@
       "g:preterite-ser-ir-hacer",
       "g:questions",
       "l:cuándo",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19571,7 +20408,9 @@
       "g:ser-identity",
       "l:amigo",
       "l:buen",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19592,7 +20431,10 @@
       "l:familia",
       "l:ir",
       "l:ver",
+      "p:ir-a-venir-de-place",
       "p:para-inf",
+      "p:para-inf-purpose",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19616,6 +20458,7 @@
       "l:hermana",
       "l:ir",
       "l:mercado",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19637,7 +20480,8 @@
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:hospital",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19658,7 +20502,9 @@
       "g:preterite-ser-ir-hacer",
       "l:banco",
       "l:ir",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19680,6 +20526,7 @@
       "l:cine",
       "l:esposa",
       "l:ir",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19704,6 +20551,7 @@
       "l:hija",
       "l:ir",
       "l:ver",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19727,6 +20575,7 @@
       "l:ir",
       "l:jefe",
       "l:reunión",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19749,6 +20598,7 @@
       "l:hermano",
       "l:ir",
       "l:universidad",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19773,6 +20623,7 @@
       "l:ir",
       "l:pasar",
       "l:semana",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19798,6 +20649,7 @@
       "l:ir",
       "l:mamá",
       "l:médico",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19822,6 +20674,7 @@
       "l:oficina",
       "l:papá",
       "l:temprano",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19845,7 +20698,8 @@
       "l:abuelo",
       "l:ser",
       "l:taxista",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer",
@@ -19868,6 +20722,7 @@
       "l:ir",
       "l:llamar",
       "l:tío",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19892,6 +20747,7 @@
       "l:ir",
       "l:novio",
       "l:prima",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19917,6 +20773,7 @@
       "l:hija",
       "l:ir",
       "l:playa",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19940,6 +20797,8 @@
       "l:ir",
       "l:novio",
       "l:viernes",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19964,6 +20823,8 @@
       "l:ir",
       "l:novia",
       "l:papá",
+      "p:ir-a-venir-de-place",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19986,7 +20847,8 @@
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:ir",
-      "l:reunión"
+      "l:reunión",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20006,7 +20868,9 @@
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:ir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20027,7 +20891,8 @@
       "g:preterite-ser-ir-hacer",
       "l:ir",
       "l:niño",
-      "l:parque"
+      "l:parque",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20047,7 +20912,8 @@
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:ir",
-      "l:mercado"
+      "l:mercado",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20070,6 +20936,8 @@
       "l:abuelos",
       "l:ir",
       "l:ver",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -20090,7 +20958,8 @@
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:fiesta",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20113,6 +20982,8 @@
       "l:domingo",
       "l:ir",
       "l:tía",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -20137,7 +21008,8 @@
       "l:cine",
       "l:comprar",
       "l:ir",
-      "l:pizza"
+      "l:pizza",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20158,7 +21030,9 @@
       "g:preterite-ser-ir-hacer",
       "l:centro",
       "l:ir",
-      "l:taxi"
+      "l:taxi",
+      "p:ir-a-venir-de-place",
+      "p:transport-en"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20180,6 +21054,7 @@
       "l:abuela",
       "l:hospital",
       "l:ir",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -20201,6 +21076,7 @@
       "g:preterite-ser-ir-hacer",
       "l:hermano",
       "l:ir",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -20222,7 +21098,8 @@
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:ir",
-      "l:plaza"
+      "l:plaza",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20242,7 +21119,8 @@
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:banco",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20260,7 +21138,9 @@
     "acceptEn": [],
     "requires": [
       "g:preterite-ser-ir-hacer",
-      "l:ir"
+      "l:ir",
+      "p:frequency-scale",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20282,6 +21162,7 @@
       "l:año",
       "l:ir",
       "l:pasado",
+      "p:ir-a-venir-de-place",
       "p:time-pasado-que-viene"
     ],
     "targets": [
@@ -20303,7 +21184,9 @@
       "g:preterite-ser-ir-hacer",
       "l:cine",
       "l:ir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20323,6 +21206,8 @@
       "g:preterite-ser-ir-hacer",
       "l:ir",
       "l:papá",
+      "p:ir-a-venir-de-place",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -20347,6 +21232,8 @@
       "l:ir",
       "l:mamá",
       "l:primo",
+      "p:ir-a-venir-de-place",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -20371,6 +21258,8 @@
       "l:fiesta",
       "l:hermanos",
       "l:ir",
+      "p:ir-a-venir-de-place",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -20395,6 +21284,8 @@
       "l:ir",
       "l:tío",
       "l:ver",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -20446,7 +21337,9 @@
       "g:ser-identity",
       "l:adónde",
       "l:domingo",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20490,7 +21383,8 @@
       "l:cómo",
       "l:día",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20513,7 +21407,8 @@
       "g:ser-identity",
       "l:cómo",
       "l:fiesta",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20537,7 +21432,8 @@
       "l:fin",
       "l:semana",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20562,7 +21458,8 @@
       "l:cómo",
       "l:familia",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer",
@@ -20588,7 +21485,10 @@
       "l:cómo",
       "l:día",
       "l:ser",
-      "p:possessives-basic"
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20611,7 +21511,8 @@
       "g:ser-identity",
       "l:cómo",
       "l:partido",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20636,7 +21537,8 @@
       "l:jefe",
       "l:reunión",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20661,7 +21563,8 @@
       "l:llamada",
       "l:mamá",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer",
@@ -20687,7 +21590,8 @@
       "l:cómo",
       "l:desastre",
       "l:fiesta",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20712,7 +21616,9 @@
       "l:cómo",
       "l:domingo",
       "l:largo",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20738,7 +21644,8 @@
       "l:cómo",
       "l:reunión",
       "l:ser",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -20764,7 +21671,9 @@
       "l:cómo",
       "l:domingo",
       "l:ser",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:days-el-lunes",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20789,7 +21698,8 @@
       "l:largo",
       "l:semana",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -20814,7 +21724,8 @@
       "l:cómo",
       "l:difícil",
       "l:llamada",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -20994,7 +21905,9 @@
       "l:familia",
       "l:gusto",
       "l:ser",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer",
@@ -21065,7 +21978,10 @@
       "l:fiesta",
       "l:ser",
       "l:tío",
-      "p:possessives-basic"
+      "p:event-ser-en",
+      "p:possessives-basic",
+      "p:ser-event-location",
+      "p:tener-lugar"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer",
@@ -21088,7 +22004,9 @@
       "g:ser-identity",
       "l:martes",
       "l:reunión",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes",
+      "p:event-ser-en"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -21136,6 +22054,8 @@
       "l:buena",
       "l:clase",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -21183,6 +22103,8 @@
       "l:bueno",
       "l:partido",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -21227,7 +22149,8 @@
       "g:ser-identity",
       "l:domingo",
       "l:largo",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -21250,6 +22173,8 @@
       "l:banco",
       "l:ser",
       "l:trabajo",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21272,6 +22197,8 @@
       "l:difícil",
       "l:día",
       "l:ser",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21296,6 +22223,9 @@
       "l:español",
       "l:lunes",
       "l:ser",
+      "p:days-el-lunes",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21399,7 +22329,8 @@
       "g:ser-identity",
       "l:año",
       "l:ser",
-      "l:taxista"
+      "l:taxista",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -21423,6 +22354,8 @@
       "l:jefe",
       "l:papá",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21445,7 +22378,8 @@
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:estudiante",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -21468,7 +22402,8 @@
       "g:ser-identity",
       "l:café",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -21491,7 +22426,8 @@
       "g:ser-identity",
       "l:colegio",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -21543,6 +22479,7 @@
       "l:pan",
       "l:qué",
       "l:sábado",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21594,6 +22531,9 @@
       "l:hacer",
       "l:qué",
       "l:visitar",
+      "p:days-el-lunes",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21673,7 +22613,8 @@
       "l:banco",
       "l:hacer",
       "l:ir",
-      "l:qué"
+      "l:qué",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -21696,7 +22637,9 @@
       "l:hacer",
       "l:ir",
       "l:qué",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -21809,6 +22752,8 @@
       "l:hacer",
       "l:papá",
       "l:qué",
+      "p:days-el-lunes",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22032,7 +22977,9 @@
       "g:preterite-ser-ir-hacer",
       "l:domingo",
       "l:día",
-      "l:hacer"
+      "l:hacer",
+      "p:days-el-lunes",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:negation-words",
@@ -22076,6 +23023,7 @@
       "g:preterite-ser-ir-hacer",
       "l:familia",
       "l:hacer",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22099,7 +23047,9 @@
       "g:preterite-ser-ir-hacer",
       "l:buen",
       "l:hacer",
-      "l:trabajo"
+      "l:trabajo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -22224,7 +23174,9 @@
       "g:preterite-ser-ir-hacer",
       "l:café",
       "l:hacer",
-      "l:malo"
+      "l:malo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -22433,6 +23385,7 @@
       "l:domingo",
       "l:hacer",
       "l:pan",
+      "p:days-el-lunes",
       "p:para-inf",
       "p:quantifiers-basic"
     ],
@@ -22524,7 +23477,8 @@
       "g:negation-words",
       "g:preterite-ser-ir-hacer",
       "l:hacer",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:negation-words",
@@ -22590,6 +23544,7 @@
       "l:fiesta",
       "l:hacer",
       "l:papá",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22676,7 +23631,9 @@
       "g:yo-irregular",
       "l:hacer",
       "l:mañana",
-      "l:tinto"
+      "l:tinto",
+      "p:por-la-manana",
+      "p:telling-time"
     ],
     "targets": [
       "g:yo-irregular"
@@ -22725,6 +23682,7 @@
       "l:madre",
       "l:pan",
       "l:sábado",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22844,6 +23802,7 @@
       "l:esposo",
       "l:salir",
       "l:viernes",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22869,6 +23828,8 @@
       "l:temprano",
       "l:ver",
       "p:para-inf",
+      "p:para-inf-purpose",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22917,7 +23878,9 @@
       "l:mamá",
       "l:salir",
       "l:trabajo",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "g:yo-irregular",
@@ -22967,6 +23930,7 @@
       "l:hermana",
       "l:venir",
       "l:vivir",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22995,6 +23959,9 @@
       "l:estar",
       "l:hospital",
       "l:venir",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23019,7 +23986,8 @@
       "l:café",
       "l:lunes",
       "l:martes",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:yo-irregular"
@@ -23042,6 +24010,7 @@
       "l:tía",
       "l:venir",
       "l:ver",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23065,6 +24034,7 @@
       "l:hermano",
       "l:mayor",
       "l:venir",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23089,7 +24059,8 @@
       "g:yo-irregular",
       "l:familia",
       "l:grande",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:yo-irregular",
@@ -23112,7 +24083,8 @@
       "g:yo-irregular",
       "l:familia",
       "l:taxista",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:yo-irregular",
@@ -23200,6 +24172,8 @@
       "l:café",
       "l:traer",
       "l:tío",
+      "p:llevar-traer",
+      "p:masculine-plural-mixed",
       "p:para-inf",
       "p:possessives-basic"
     ],
@@ -23224,6 +24198,7 @@
       "l:familia",
       "l:foto",
       "l:traer",
+      "p:llevar-traer",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23247,6 +24222,7 @@
       "l:fiesta",
       "l:hermana",
       "l:traer",
+      "p:llevar-traer",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23270,7 +24246,11 @@
       "l:novia",
       "l:papá",
       "l:traer",
-      "p:possessives-basic"
+      "p:llevar-traer",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -23292,7 +24272,9 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:conocer",
-      "l:familia"
+      "l:familia",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -23314,7 +24296,8 @@
       "g:yo-irregular",
       "l:café",
       "l:cliente",
-      "l:conocer"
+      "l:conocer",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular"
@@ -23336,7 +24319,9 @@
       "l:barrio",
       "l:conocer",
       "l:tío",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -23357,7 +24342,9 @@
       "c:a-cuantas-cuotas",
       "g:yo-irregular",
       "l:chica",
-      "l:conocer"
+      "l:conocer",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular"
@@ -23379,7 +24366,9 @@
       "l:conocer",
       "l:inteligente",
       "l:persona",
-      "p:quantifiers-basic"
+      "p:personal-a",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -23403,6 +24392,8 @@
       "l:domingo",
       "l:madre",
       "l:ver",
+      "p:days-el-lunes",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23424,6 +24415,7 @@
       "g:yo-irregular",
       "l:padre",
       "l:ver",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23447,6 +24439,7 @@
       "l:computadora",
       "l:hermana",
       "l:ver",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23470,6 +24463,8 @@
       "l:abuelos",
       "l:parque",
       "l:ver",
+      "p:masculine-plural-mixed",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23491,7 +24486,9 @@
       "g:yo-irregular",
       "l:esposo",
       "l:ver",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "g:yo-irregular",
@@ -23553,7 +24550,9 @@
       "l:conocer",
       "l:decir",
       "l:verdad",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -23666,7 +24665,8 @@
       "l:madre",
       "l:nombre",
       "l:saber",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -23688,7 +24688,8 @@
       "g:yo-irregular",
       "l:bailar",
       "l:cocinar",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular"
@@ -23710,7 +24711,9 @@
       "l:español",
       "l:hablar",
       "l:saber",
-      "p:quantifiers-basic"
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular"
@@ -23837,7 +24840,8 @@
       "l:madre",
       "l:saber",
       "l:vivir",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:yo-irregular",
@@ -23893,7 +24897,10 @@
       "l:ser",
       "l:tener",
       "l:tío",
-      "p:possessives-basic"
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:tener-anos",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:yo-irregular",
@@ -23917,7 +24924,8 @@
       "l:bailar",
       "l:esposa",
       "l:saber",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:esposa"
@@ -23940,7 +24948,8 @@
       "l:café",
       "l:pan",
       "l:qué",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "g:yo-irregular"
@@ -23962,6 +24971,7 @@
       "g:yo-irregular",
       "l:dónde",
       "l:venir",
+      "p:ir-a-venir-de-place",
       "p:prep-questions-basic"
     ],
     "targets": [
@@ -24012,6 +25022,7 @@
       "l:familia",
       "l:hacer",
       "l:qué",
+      "p:days-el-lunes",
       "p:para-inf",
       "p:possessives-basic"
     ],
@@ -24035,7 +25046,10 @@
       "g:yo-irregular",
       "l:conocer",
       "l:padre",
-      "p:possessives-basic"
+      "p:no-es-x-es-y",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular",
@@ -24057,7 +25071,10 @@
       "g:yo-irregular",
       "l:aquí",
       "l:conocer",
-      "p:indefinites-basic"
+      "p:aqui-ahi-alla",
+      "p:indefinites-basic",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:yo-irregular"
@@ -24077,7 +25094,8 @@
       "c:tienes",
       "g:stem-boot",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24095,7 +25113,8 @@
       "c:tienes",
       "g:stem-boot",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24118,7 +25137,8 @@
       "l:razón",
       "l:tener",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:tener-razon"
     ],
     "targets": [
       "l:padre"
@@ -24143,7 +25163,8 @@
       "l:razón",
       "l:ser",
       "l:tener",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:tener-razon"
     ],
     "targets": [
       "l:hermano",
@@ -24165,7 +25186,8 @@
       "g:stem-boot",
       "l:razón",
       "l:señora",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24183,7 +25205,10 @@
       "c:tienes",
       "g:stem-boot",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:don-dona-nombre",
+      "p:senor-don-article",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24203,7 +25228,8 @@
       "l:madre",
       "l:razón",
       "l:tener",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:tener-razon"
     ],
     "targets": [
       "l:madre"
@@ -24226,7 +25252,9 @@
       "l:razón",
       "l:siempre",
       "l:tener",
-      "p:possessives-basic"
+      "p:frequency-scale",
+      "p:possessives-basic",
+      "p:tener-razon"
     ],
     "targets": [
       "l:padre"
@@ -24248,7 +25276,9 @@
       "l:hermana",
       "l:razón",
       "l:tener",
-      "p:possessives-basic"
+      "p:frequency-scale",
+      "p:possessives-basic",
+      "p:tener-razon"
     ],
     "targets": [
       "l:hermana"
@@ -24270,7 +25300,8 @@
       "g:stem-boot",
       "l:café",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24291,7 +25322,9 @@
       "l:guapo",
       "l:razón",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:es-tiene-lleva",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24309,7 +25342,8 @@
       "c:tienes",
       "g:stem-boot",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24327,7 +25361,8 @@
       "c:tienes",
       "g:stem-boot",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24345,7 +25380,8 @@
       "c:tienes",
       "g:stem-boot",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24363,7 +25399,8 @@
       "c:tienes",
       "g:gender-articles",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24382,7 +25419,8 @@
       "c:tengo",
       "g:yo-irregular",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon"
     ],
     "targets": [
       "g:yo-irregular"
@@ -24405,7 +25443,8 @@
       "g:yo-irregular",
       "l:creer",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon"
     ],
     "targets": [
       "g:yo-irregular"
@@ -24425,7 +25464,9 @@
       "c:tienes",
       "g:stem-boot",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon",
+      "p:tienes-toda-la-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24445,7 +25486,8 @@
       "l:hambre",
       "l:razón",
       "l:tener",
-      "p:tener-hambre"
+      "p:tener-hambre",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24466,7 +25508,8 @@
       "l:hablar",
       "l:razón",
       "l:tener",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24486,7 +25529,8 @@
       "l:razón",
       "l:tener",
       "l:tío",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:tener-razon"
     ],
     "targets": [
       "l:tío"
@@ -24509,7 +25553,10 @@
       "l:padres",
       "l:razón",
       "l:tener",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:tener-razon",
+      "p:tienes-toda-la-razon"
     ],
     "targets": [],
     "kind": "statement",
@@ -24534,7 +25581,8 @@
       "l:simpático",
       "l:tener",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:tener-razon"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -24561,7 +25609,8 @@
       "l:frío",
       "l:razón",
       "l:tener",
-      "l:tinto"
+      "l:tinto",
+      "p:tener-razon"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -24584,7 +25633,8 @@
       "l:ser",
       "l:serio",
       "l:tener",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:tener-razon"
     ],
     "targets": [
       "l:hermano",
@@ -24607,7 +25657,8 @@
       "g:stem-boot",
       "g:yo-irregular",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:tener-razon"
     ],
     "targets": [
       "g:yo-irregular"
@@ -24629,7 +25680,10 @@
       "g:stem-boot",
       "g:yo-irregular",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:no-es-x-es-y",
+      "p:tener-razon",
+      "p:tienes-toda-la-razon"
     ],
     "targets": [
       "g:yo-irregular"
@@ -24674,7 +25728,12 @@
       "l:bien",
       "l:lente",
       "l:ver",
-      "p:possessives-basic"
+      "p:alcanzar-a-distinguir",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:plural-one-object",
+      "p:possessives-basic",
+      "p:ver-oir-bien-mal"
     ],
     "targets": [
       "l:abuela"
@@ -24700,7 +25759,9 @@
       "l:cafetera",
       "l:café",
       "l:funcionar",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [],
     "kind": "statement",
@@ -24720,6 +25781,9 @@
       "l:bien",
       "l:escribir",
       "l:hermana",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge",
       "p:possessives-basic"
     ],
     "targets": [
@@ -24748,6 +25812,9 @@
       "l:ser",
       "l:taxista",
       "l:tío",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge",
       "p:possessives-basic"
     ],
     "targets": [
@@ -24769,7 +25836,9 @@
       "g:ser-identity",
       "l:buena",
       "l:estudiante",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [],
     "kind": "statement",
@@ -24791,6 +25860,8 @@
       "l:café",
       "l:día",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:para-inf"
     ],
     "targets": [],
@@ -24811,7 +25882,10 @@
       "l:bueno",
       "l:familia",
       "l:hablar",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:familia"
@@ -24838,6 +25912,8 @@
       "l:madre",
       "l:mamá",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25026,7 +26102,9 @@
       "l:ser",
       "l:siempre",
       "l:tímido",
-      "l:único"
+      "l:único",
+      "p:frequency-scale",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -25122,7 +26200,8 @@
       "l:hijo",
       "l:ser",
       "l:tener",
-      "l:único"
+      "l:único",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "c:hijo-unico",
@@ -25148,7 +26227,8 @@
       "g:stem-boot",
       "l:hermanos",
       "l:mayor",
-      "l:tener"
+      "l:tener",
+      "p:mayor-menor"
     ],
     "targets": [
       "c:tienes-hermanos",
@@ -25172,7 +26252,8 @@
       "g:stem-boot",
       "l:hermanos",
       "l:menores",
-      "l:tener"
+      "l:tener",
+      "p:mayor-menor"
     ],
     "targets": [
       "c:tienes-hermanos"
@@ -25256,7 +26337,8 @@
       "g:ser-identity",
       "l:hija",
       "l:ser",
-      "l:único"
+      "l:único",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:adjective-agreement"
@@ -25279,7 +26361,8 @@
       "g:stem-boot",
       "l:hermana",
       "l:hermanos",
-      "l:tener"
+      "l:tener",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "c:tienes-hermanos",
@@ -25329,6 +26412,7 @@
       "l:delgado",
       "l:padre",
       "l:ser",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -25355,6 +26439,7 @@
       "l:delgado",
       "l:madre",
       "l:ser",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25380,6 +26465,7 @@
       "l:padre",
       "l:rápido",
       "l:ser",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -25404,6 +26490,7 @@
       "l:ser",
       "l:simpático",
       "l:tío",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -25430,6 +26517,7 @@
       "l:gordo",
       "l:ser",
       "l:tía",
+      "p:es-tiene-lleva",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25455,6 +26543,7 @@
       "l:abuela",
       "l:delgado",
       "l:ser",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -25481,6 +26570,8 @@
       "l:gordo",
       "l:hermano",
       "l:ser",
+      "p:es-tiene-lleva",
+      "p:poco-un-poco",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -25504,6 +26595,8 @@
       "l:delgado",
       "l:hijos",
       "l:ser",
+      "p:es-tiene-lleva",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25575,6 +26668,7 @@
       "l:hija",
       "l:inteligente",
       "l:ser",
+      "p:masculine-plural-mixed",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -25601,6 +26695,7 @@
       "l:inteligente",
       "l:ser",
       "l:trabajador",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25651,6 +26746,7 @@
       "l:padre",
       "l:ser",
       "l:trabajador",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25674,7 +26770,8 @@
       "g:ser-identity",
       "l:hermana",
       "l:ser",
-      "l:trabajador"
+      "l:trabajador",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -25794,6 +26891,8 @@
       "l:madre",
       "l:mayor",
       "l:ser",
+      "p:masculine-plural-mixed",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25818,6 +26917,8 @@
       "l:menor",
       "l:padre",
       "l:ser",
+      "p:masculine-plural-mixed",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25843,7 +26944,9 @@
       "l:mayor",
       "l:quién",
       "l:ser",
-      "p:possessives-basic"
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:mayor"
@@ -25866,7 +26969,8 @@
       "l:menor",
       "l:ser",
       "p:mayor-menor",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:hermana",
@@ -25892,7 +26996,9 @@
       "l:hijo",
       "l:mayor",
       "l:ser",
-      "p:possessives-basic"
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:hijo",
@@ -25916,6 +27022,8 @@
       "l:menor",
       "l:primo",
       "l:ser",
+      "p:es-tiene-lleva",
+      "p:mayor-menor",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -25941,6 +27049,8 @@
       "l:hermana",
       "l:mayor",
       "l:ser",
+      "p:masculine-plural-mixed",
+      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25962,8 +27072,7 @@
       "g:ser-identity",
       "l:mayor",
       "l:menor",
-      "l:ser",
-      "p:mayor-menor"
+      "l:ser"
     ],
     "targets": [
       "l:mayor",
@@ -25987,7 +27096,9 @@
       "l:abuela",
       "l:foto",
       "l:primo",
-      "l:ser"
+      "l:ser",
+      "p:masculine-plural-mixed",
+      "p:somos-cuatro"
     ],
     "targets": [
       "l:abuela"
@@ -26010,7 +27121,8 @@
       "l:cuánto",
       "l:fiesta",
       "l:ser",
-      "p:para-inf"
+      "p:para-inf",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -26029,7 +27141,8 @@
       "g:ser-identity",
       "l:hablar",
       "l:inglés",
-      "l:ser"
+      "l:ser",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -26048,7 +27161,8 @@
       "g:ser-identity",
       "l:clase",
       "l:estudiante",
-      "l:ser"
+      "l:ser",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -26068,7 +27182,8 @@
       "g:ser-identity",
       "l:casa",
       "l:pequeño",
-      "l:ser"
+      "l:ser",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -26106,7 +27221,9 @@
       "g:ser-identity",
       "l:niño",
       "l:ser",
-      "l:total"
+      "l:total",
+      "p:por-ciento",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -26126,7 +27243,8 @@
       "l:abuela",
       "l:casa",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:somos-cuatro"
     ],
     "targets": [
       "l:abuela"
@@ -26148,7 +27266,8 @@
       "g:ser-identity",
       "l:cuánto",
       "l:ser",
-      "l:trabajo"
+      "l:trabajo",
+      "p:somos-cuatro"
     ],
     "targets": [],
     "kind": "statement",
@@ -26195,7 +27314,9 @@
       "l:café",
       "l:conocer",
       "l:foto",
-      "l:hombre"
+      "l:hombre",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -26214,7 +27335,9 @@
       "g:negation-words",
       "g:present-er-ir",
       "l:conocer",
-      "l:mamá"
+      "l:mamá",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -26235,7 +27358,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:antes",
-      "l:llamar"
+      "l:llamar",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -26255,6 +27379,8 @@
       "l:llamar",
       "l:lunes",
       "l:madre",
+      "p:days-el-lunes",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26298,6 +27424,8 @@
       "l:esposa",
       "l:foto",
       "l:traer",
+      "p:frequency-scale",
+      "p:llevar-traer",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26318,6 +27446,7 @@
       "g:preterite-ar",
       "l:hablar",
       "l:hermano",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26433,7 +27562,9 @@
       "l:colombiano",
       "l:conocer",
       "l:familia",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -26455,6 +27586,8 @@
       "g:present-er-ir",
       "l:padre",
       "l:ver",
+      "p:frequency-scale",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26477,7 +27610,8 @@
       "l:edad",
       "l:saber",
       "l:tío",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:tío"
@@ -26497,7 +27631,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:foto",
-      "l:hablar"
+      "l:hablar",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -26516,7 +27651,9 @@
       "g:present-ar",
       "g:present-er-ir",
       "l:conocer",
-      "l:hablar"
+      "l:hablar",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words"
@@ -26578,7 +27715,9 @@
       "l:conocer",
       "l:hablar",
       "l:mamá",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -26600,7 +27739,9 @@
       "g:ser-identity",
       "l:hermana",
       "l:menor",
-      "l:ser"
+      "l:ser",
+      "p:masculine-plural-mixed",
+      "p:mayor-menor"
     ],
     "targets": [
       "l:hermana",
@@ -26624,6 +27765,7 @@
       "l:hermana",
       "l:ser",
       "l:simpático",
+      "p:masculine-plural-mixed",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -26649,7 +27791,9 @@
       "l:delgado",
       "l:moreno",
       "l:nieto",
-      "l:ser"
+      "l:ser",
+      "p:es-tiene-lleva",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "g:adjective-agreement",
@@ -26757,7 +27901,8 @@
       "g:negation-words",
       "g:stem-boot",
       "l:entender",
-      "l:teléfono"
+      "l:teléfono",
+      "p:personal-a"
     ],
     "targets": [
       "g:negation-words"
@@ -26778,6 +27923,8 @@
       "g:present-er-ir",
       "l:escribir",
       "l:primo",
+      "p:frequency-scale",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26802,6 +27949,7 @@
       "l:hermano",
       "l:leer",
       "l:mensaje",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26826,6 +27974,7 @@
       "l:casa",
       "l:cocinar",
       "l:domingo",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26847,6 +27996,7 @@
       "g:present-ar",
       "l:bailar",
       "l:esposo",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26871,6 +28021,8 @@
       "l:perder",
       "l:primo",
       "l:siempre",
+      "p:frequency-scale",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26910,6 +28062,7 @@
       "g:present-er-ir",
       "l:papá",
       "l:vivir",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26973,7 +28126,8 @@
       "l:abrir",
       "l:café",
       "l:lunes",
-      "l:martes"
+      "l:martes",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "statement",
@@ -26993,7 +28147,8 @@
       "g:present-ar",
       "l:llegar",
       "l:tarde",
-      "l:trabajo"
+      "l:trabajo",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:negation-words"
@@ -27037,6 +28192,7 @@
       "l:cocinar",
       "l:lunes",
       "l:madre",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27060,6 +28216,7 @@
       "l:calle",
       "l:comer",
       "l:madre",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -27081,6 +28238,7 @@
       "l:hablar",
       "l:mañana",
       "l:padre",
+      "p:por-la-manana",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27103,6 +28261,7 @@
       "l:casa",
       "l:comer",
       "l:padre",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27124,6 +28283,7 @@
       "l:esposa",
       "l:noche",
       "l:salir",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27145,6 +28305,8 @@
       "g:present-er-ir",
       "l:hijos",
       "l:leer",
+      "p:frequency-scale",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27167,6 +28329,8 @@
       "l:cerrar",
       "l:hija",
       "l:puerta",
+      "p:frequency-scale",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27213,6 +28377,8 @@
       "l:novia",
       "l:sábado",
       "l:trabajar",
+      "p:days-el-lunes",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27233,6 +28399,8 @@
       "g:present-er-ir",
       "l:abuelos",
       "l:salir",
+      "p:frequency-scale",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -27254,6 +28422,7 @@
       "l:celular",
       "l:computadora",
       "l:tener",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -27275,7 +28444,10 @@
       "l:mayor",
       "l:música",
       "l:saber",
-      "p:possessives-basic"
+      "p:hedge-knowledge",
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:negation-words",
@@ -27299,6 +28471,7 @@
       "g:stem-boot",
       "l:tener",
       "l:tío",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27322,6 +28495,7 @@
       "l:hablar",
       "l:novio",
       "l:prima",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27366,7 +28540,8 @@
       "g:negation-words",
       "g:present-er-ir",
       "l:domingo",
-      "l:hacer"
+      "l:hacer",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:negation-words"
@@ -27387,7 +28562,8 @@
       "g:negation-words",
       "g:present-er-ir",
       "l:café",
-      "l:hacer"
+      "l:hacer",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:negation-words"
@@ -27428,7 +28604,10 @@
       "g:yo-irregular",
       "l:conocer",
       "l:familia",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:yo-irregular",
@@ -27451,6 +28630,7 @@
       "l:hermano",
       "l:salir",
       "l:viernes",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27473,6 +28653,7 @@
       "l:cocinar",
       "l:domingo",
       "l:madre",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27494,6 +28675,7 @@
       "l:español",
       "l:hablar",
       "l:primo",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [

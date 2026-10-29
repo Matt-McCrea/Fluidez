@@ -35,6 +35,8 @@
       "l:después",
       "l:ducharse",
       "l:levantarse",
+      "p:entonces-de-repente",
+      "p:telling-time",
       "p:time-sequence-basic"
     ]
   },
@@ -71,6 +73,9 @@
       "l:dormir",
       "l:lavarse",
       "l:leer",
+      "p:hedge-knowledge",
+      "p:lavarse-las-manos",
+      "p:poco-un-poco",
       "p:quantifiers-basic",
       "p:time-sequence-basic"
     ]
@@ -110,7 +115,9 @@
       "l:sentir",
       "l:tarde",
       "l:tener",
-      "l:trabajar"
+      "l:trabajar",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ]
   },
   {
@@ -146,7 +153,8 @@
       "l:antes",
       "l:barrer",
       "l:llegar",
-      "l:tener"
+      "l:tener",
+      "p:telling-time"
     ]
   },
   {
@@ -181,7 +189,9 @@
       "g:verb-infinitive",
       "l:empezar",
       "l:terminar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:empezar-terminar",
+      "p:telling-time"
     ]
   },
   {
@@ -275,6 +285,8 @@
       "l:llegar",
       "l:sentir",
       "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ]
   },
@@ -306,6 +318,8 @@
       "l:soler",
       "l:tarde",
       "l:trabajar",
+      "p:days-el-lunes",
+      "p:frequency-scale",
       "p:soler-inf"
     ]
   },
@@ -338,7 +352,11 @@
       "l:mañana",
       "l:semana",
       "l:siempre",
-      "l:vez"
+      "l:vez",
+      "p:frequency-scale",
+      "p:ir-a-venir-de-place",
+      "p:por-la-manana",
+      "p:veces-al"
     ]
   },
   {
@@ -412,6 +430,7 @@
       "l:llegar",
       "l:temprano",
       "p:cuando-basic",
+      "p:entonces-de-repente",
       "p:indefinites-basic",
       "p:time-sequence-basic"
     ]
@@ -453,7 +472,8 @@
       "l:acostarse",
       "l:despertarse",
       "l:qué",
-      "l:temprano"
+      "l:temprano",
+      "p:telling-time"
     ]
   }
 ]

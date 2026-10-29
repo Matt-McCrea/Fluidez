@@ -37,7 +37,8 @@
       "l:arepa",
       "l:gustar",
       "l:picante",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ]
   },
   {
@@ -78,7 +79,9 @@
       "l:disculpar",
       "l:favor",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ]
   },
   {
@@ -116,7 +119,8 @@
       "l:ajiaco",
       "l:limonada",
       "l:pedir",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ]
   },
   {
@@ -158,6 +162,7 @@
       "l:ser",
       "l:venir",
       "p:demonstratives-basic",
+      "p:ir-venir",
       "p:para-inf"
     ]
   },
@@ -198,8 +203,10 @@
       "l:favor",
       "l:limonada",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:me-trae",
+      "p:otro-no-article"
     ]
   },
   {
@@ -234,7 +241,8 @@
       "l:azúcar",
       "l:favor",
       "l:queso",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin"
     ]
   },
   {
@@ -268,7 +276,9 @@
       "l:huevo",
       "l:libra",
       "l:regalar",
-      "l:tomate"
+      "l:tomate",
+      "p:container-de",
+      "p:me-trae"
     ]
   },
   {
@@ -380,7 +390,10 @@
       "g:gender-articles",
       "l:café",
       "l:sábado",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ]
   },
   {
@@ -420,7 +433,8 @@
       "l:ajiaco",
       "l:buñuelo",
       "l:encantar",
-      "l:gustar"
+      "l:gustar",
+      "p:senor-don-article"
     ]
   },
   {

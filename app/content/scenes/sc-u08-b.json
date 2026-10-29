@@ -211,8 +211,15 @@
     "l:tomar",
     "l:trabajar",
     "l:vender",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
     "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:no-es-x-es-y",
     "p:para-inf",
-    "p:possessives-basic"
+    "p:para-inf-purpose",
+    "p:possessives-basic",
+    "p:repeticion-claro-claro",
+    "p:saber-conocer"
   ]
 }

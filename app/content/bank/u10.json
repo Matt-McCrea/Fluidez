@@ -34,8 +34,10 @@
       "l:favor",
       "l:limonada",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:me-trae",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:limonada",
@@ -80,7 +82,9 @@
       "l:cuenta",
       "l:favor",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "c:la-cuenta",
@@ -185,7 +189,8 @@
       "g:stem-boot",
       "l:azúcar",
       "l:querer",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin"
     ],
     "targets": [],
     "kind": "statement",
@@ -205,7 +210,8 @@
       "l:café",
       "l:favor",
       "l:leche",
-      "l:pan"
+      "l:pan",
+      "p:con-sin"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -222,7 +228,9 @@
     "requires": [
       "c:me-regala",
       "l:regalar",
-      "l:tinto"
+      "l:tinto",
+      "p:me-trae",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -239,7 +247,9 @@
     "requires": [
       "c:me-regala",
       "l:agua",
-      "l:regalar"
+      "l:regalar",
+      "p:me-trae",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "question",
@@ -256,7 +266,8 @@
     "requires": [
       "c:por-favor",
       "l:favor",
-      "l:vez"
+      "l:vez",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -428,7 +439,8 @@
     "requires": [
       "g:stem-e-i",
       "l:pedir",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:stem-e-i"
@@ -605,7 +617,8 @@
       "g:present-ar",
       "l:empanada",
       "l:provocar",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ],
     "targets": [
       "g:gustar-full",
@@ -656,7 +669,8 @@
       "l:pescado",
       "l:pollo",
       "l:preferir",
-      "l:provocar"
+      "l:provocar",
+      "p:prefieres-x-o-y"
     ],
     "targets": [
       "c:te-provoca",
@@ -682,7 +696,9 @@
       "l:carta",
       "l:favor",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:carta"
@@ -704,7 +720,8 @@
       "g:gender-articles",
       "l:carta",
       "l:dónde",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "l:carta"
@@ -885,7 +902,8 @@
       "l:día",
       "l:hacer",
       "l:torta",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "l:torta"
@@ -908,7 +926,8 @@
       "l:casa",
       "l:cuál",
       "l:postre",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "l:postre"
@@ -1001,6 +1020,7 @@
       "l:recomendar",
       "l:siempre",
       "l:sopa",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1109,7 +1129,8 @@
       "g:gender-articles",
       "l:agua",
       "l:favor",
-      "l:frío"
+      "l:frío",
+      "p:el-agua-fria"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -1129,7 +1150,9 @@
       "l:agua",
       "l:dar",
       "l:frío",
-      "l:vaso"
+      "l:vaso",
+      "p:container-de",
+      "p:me-trae"
     ],
     "targets": [
       "l:vaso"
@@ -1152,6 +1175,7 @@
       "l:botella",
       "l:favor",
       "l:mesa",
+      "p:container-de",
       "p:para-inf"
     ],
     "targets": [],
@@ -1194,7 +1218,8 @@
       "l:pequeño",
       "l:taza",
       "l:torta",
-      "l:té"
+      "l:té",
+      "p:container-de"
     ],
     "targets": [
       "l:taza",
@@ -1218,7 +1243,8 @@
       "l:favor",
       "l:pasar",
       "l:sal",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -1237,7 +1263,8 @@
       "g:present-ar",
       "l:azúcar",
       "l:pasar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [],
     "kind": "question",
@@ -1257,8 +1284,10 @@
       "l:favor",
       "l:traer",
       "l:vaso",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:me-trae",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:vaso",
@@ -1281,6 +1310,7 @@
       "l:cuchara",
       "l:sopa",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae",
       "p:para-inf"
@@ -1305,7 +1335,9 @@
       "g:present-er-ir",
       "l:tenedor",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:tenedor"
@@ -1392,6 +1424,7 @@
       "g:gender-articles",
       "g:hay-vs-esta",
       "l:plato",
+      "p:otro-no-article",
       "p:para-inf"
     ],
     "targets": [
@@ -1437,7 +1470,8 @@
       "l:arepa",
       "l:favor",
       "l:leche",
-      "l:vaso"
+      "l:vaso",
+      "p:container-de"
     ],
     "targets": [
       "l:arepa",
@@ -1460,7 +1494,8 @@
       "l:mesa",
       "l:mesero",
       "l:plato",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "l:plato"
@@ -1480,7 +1515,8 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:momento",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -1627,7 +1663,8 @@
       "g:questions",
       "l:cuenta",
       "l:dónde",
-      "l:pagar"
+      "l:pagar",
+      "p:question-word-order"
     ],
     "targets": [
       "c:la-cuenta",
@@ -1824,7 +1861,8 @@
       "l:aquí",
       "l:oler",
       "l:qué",
-      "l:rico"
+      "l:rico",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:que-rico",
@@ -1919,7 +1957,8 @@
       "g:stem-boot",
       "l:querer",
       "l:qué",
-      "l:rico"
+      "l:rico",
+      "p:otro-no-article"
     ],
     "targets": [
       "c:que-rico",
@@ -1986,6 +2025,7 @@
       "l:estar",
       "l:tinto",
       "p:demonstratives-basic",
+      "p:le-falta-sal",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -2010,8 +2050,9 @@
       "l:frío",
       "l:sopa",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:otro-no-article"
     ],
     "targets": [
       "l:sopa",
@@ -2058,6 +2099,7 @@
       "l:estar",
       "l:torta",
       "p:demonstratives-basic",
+      "p:le-falta-sal",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -2105,7 +2147,8 @@
       "l:azúcar",
       "l:favor",
       "l:jugo",
-      "l:mango"
+      "l:mango",
+      "p:con-sin"
     ],
     "targets": [],
     "kind": "statement",
@@ -2126,7 +2169,8 @@
       "l:fresa",
       "l:jugo",
       "l:leche",
-      "l:querer"
+      "l:querer",
+      "p:con-sin"
     ],
     "targets": [],
     "kind": "statement",
@@ -2209,6 +2253,7 @@
       "l:gente",
       "l:mesa",
       "l:puerta",
+      "p:la-gente-singular",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -2228,7 +2273,9 @@
       "g:gender-articles",
       "g:hay-vs-esta",
       "l:libre",
-      "l:mesa"
+      "l:mesa",
+      "p:lleno-libre",
+      "p:no-hasta"
     ],
     "targets": [],
     "kind": "statement",
@@ -2304,7 +2351,8 @@
       "g:present-ar",
       "l:encantar",
       "l:pan",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ],
     "targets": [
       "g:gustar-full",
@@ -2355,7 +2403,8 @@
       "g:present-ar",
       "l:azúcar",
       "l:gustar",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin"
     ],
     "targets": [
       "g:gustar-full"
@@ -2600,6 +2649,7 @@
       "l:cenar",
       "l:gustar",
       "l:temprano",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -2715,6 +2765,7 @@
       "l:domingo",
       "l:encantar",
       "l:mamá",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -2759,7 +2810,8 @@
       "g:present-ar",
       "l:encantar",
       "l:pan",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ],
     "targets": [
       "g:gustar-full",
@@ -2928,7 +2980,9 @@
       "l:domingo",
       "l:encantar",
       "l:gente",
-      "l:sopa"
+      "l:sopa",
+      "p:days-el-lunes",
+      "p:la-gente-singular"
     ],
     "targets": [
       "g:gustar-full",
@@ -2978,6 +3032,7 @@
       "l:gustar",
       "l:novio",
       "l:pollo",
+      "p:con-sin",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3027,6 +3082,7 @@
       "l:encantar",
       "l:mamá",
       "l:primo",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3148,7 +3204,8 @@
       "g:present-ar",
       "l:aquí",
       "l:comer",
-      "l:encantar"
+      "l:encantar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:gustar-full"
@@ -3193,7 +3250,8 @@
       "g:present-ar",
       "l:encantar",
       "l:plátano",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ],
     "targets": [
       "g:gustar-full",
@@ -3240,6 +3298,7 @@
       "l:arroz",
       "l:gustar",
       "l:pollo",
+      "p:con-sin",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -3283,7 +3342,8 @@
       "g:present-ar",
       "l:arepa",
       "l:gustar",
-      "l:huevo"
+      "l:huevo",
+      "p:con-sin"
     ],
     "targets": [
       "l:arepa",
@@ -3306,7 +3366,8 @@
       "g:present-ar",
       "l:carne",
       "l:fríjol",
-      "l:gustar"
+      "l:gustar",
+      "p:con-sin"
     ],
     "targets": [
       "l:carne",
@@ -3460,7 +3521,8 @@
       "g:present-ar",
       "l:cocinar",
       "l:gustar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "statement",
@@ -3586,7 +3648,8 @@
       "g:present-ar",
       "l:arroz",
       "l:gustar",
-      "l:pescado"
+      "l:pescado",
+      "p:con-sin"
     ],
     "targets": [
       "l:arroz",
@@ -3610,7 +3673,8 @@
       "g:present-ar",
       "l:café",
       "l:gustar",
-      "l:leche"
+      "l:leche",
+      "p:con-sin"
     ],
     "targets": [
       "g:gustar-full"
@@ -3633,6 +3697,7 @@
       "l:gustar",
       "l:papá",
       "l:viajar",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3850,7 +3915,8 @@
       "l:cuál",
       "l:gustar",
       "l:pescado",
-      "l:pollo"
+      "l:pollo",
+      "p:gustar-mas-que"
     ],
     "targets": [
       "l:pescado",
@@ -3874,7 +3940,8 @@
       "g:gustar-basic",
       "g:gustar-full",
       "l:encantar",
-      "l:gustar"
+      "l:gustar",
+      "p:los-de-la-camiseta"
     ],
     "targets": [
       "g:gustar-full"
@@ -3897,7 +3964,9 @@
       "g:gustar-basic",
       "g:prep-pronouns",
       "l:gustar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:gustar-mas-que"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -3961,7 +4030,8 @@
     "requires": [
       "g:present-er-ir",
       "l:carne",
-      "l:comer"
+      "l:comer",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "l:carne"
@@ -4333,7 +4403,8 @@
       "l:día",
       "l:gustar",
       "l:pedir",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:gustar-full"
@@ -4407,6 +4478,7 @@
       "l:amiga",
       "l:aquí",
       "l:encantar",
+      "p:aqui-ahi-alla",
       "p:possessives-basic"
     ],
     "targets": [
@@ -4456,7 +4528,8 @@
       "l:encantar",
       "l:mañana",
       "l:olor",
-      "l:pan"
+      "l:pan",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:gustar-full"
@@ -4502,7 +4575,8 @@
       "l:aguacate",
       "l:ajiaco",
       "l:gustar",
-      "l:turista"
+      "l:turista",
+      "p:con-sin"
     ],
     "targets": [
       "g:gustar-full",
@@ -4576,7 +4650,8 @@
       "g:prep-pronouns",
       "l:encantar",
       "l:mercado",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:gustar-full",
@@ -4653,7 +4728,8 @@
       "g:present-ar",
       "l:café",
       "l:gustar",
-      "l:leche"
+      "l:leche",
+      "p:con-sin"
     ],
     "targets": [
       "g:gustar-full"
@@ -4695,7 +4771,8 @@
       "g:present-ar",
       "l:azúcar",
       "l:gustar",
-      "l:jugo"
+      "l:jugo",
+      "p:con-sin"
     ],
     "targets": [],
     "kind": "statement",
@@ -4759,7 +4836,8 @@
       "l:gustar",
       "l:tarde",
       "l:tinto",
-      "l:tomar"
+      "l:tomar",
+      "p:por-la-manana"
     ],
     "targets": [],
     "kind": "statement",
@@ -4779,6 +4857,7 @@
       "l:abuelos",
       "l:comer",
       "l:encantar",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -4820,7 +4899,8 @@
       "l:gustar",
       "l:jugo",
       "l:noche",
-      "l:tomar"
+      "l:tomar",
+      "p:por-la-manana"
     ],
     "targets": [],
     "kind": "statement",
@@ -4840,7 +4920,8 @@
       "g:present-ar",
       "l:encantar",
       "l:ir",
-      "l:mercado"
+      "l:mercado",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:gustar-full"
@@ -4864,6 +4945,8 @@
       "l:hijos",
       "l:ir",
       "l:panadería",
+      "p:ir-a-venir-de-place",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -4909,7 +4992,8 @@
       "g:gustar-basic",
       "l:gustar",
       "l:plátano",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ],
     "targets": [
       "l:plátano",
@@ -4983,7 +5067,8 @@
       "g:present-ar",
       "l:aquí",
       "l:gustar",
-      "l:picante"
+      "l:picante",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "l:picante"
@@ -5027,6 +5112,7 @@
       "l:aquí",
       "l:rico",
       "l:servir",
+      "p:aqui-ahi-alla",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -5053,7 +5139,8 @@
       "l:almuerzo",
       "l:hora",
       "l:qué",
-      "l:servir"
+      "l:servir",
+      "p:question-word-order"
     ],
     "targets": [
       "g:stem-e-i",
@@ -5097,7 +5184,8 @@
       "l:café",
       "l:día",
       "l:servir",
-      "l:tinto"
+      "l:tinto",
+      "p:todos-los-dias"
     ],
     "targets": [
       "l:servir"
@@ -5145,7 +5233,8 @@
       "g:stem-e-i",
       "l:agua",
       "l:jugo",
-      "l:servir"
+      "l:servir",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:stem-e-i",
@@ -5170,7 +5259,8 @@
       "l:mañana",
       "l:quién",
       "l:servir",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:stem-e-i",
@@ -5193,7 +5283,8 @@
       "l:comida",
       "l:mamá",
       "l:servir",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "g:stem-e-i",
@@ -5216,7 +5307,8 @@
       "l:domingo",
       "l:mesero",
       "l:rápido",
-      "l:servir"
+      "l:servir",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:stem-e-i",
@@ -5237,7 +5329,8 @@
       "g:stem-e-i",
       "l:alcohol",
       "l:aquí",
-      "l:servir"
+      "l:servir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:stem-e-i",
@@ -5282,6 +5375,7 @@
       "l:servir",
       "l:sopa",
       "p:me-te-nos-objects",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -5328,7 +5422,10 @@
       "l:servir",
       "p:demonstratives-basic",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -5353,7 +5450,10 @@
       "l:servir",
       "p:demonstratives-basic",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -5377,6 +5477,7 @@
       "l:botella",
       "l:servir",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -5404,6 +5505,7 @@
       "l:olla",
       "l:servir",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -5481,7 +5583,8 @@
       "g:gender-articles",
       "l:ayer",
       "l:estufa",
-      "l:servir"
+      "l:servir",
+      "p:no-hasta"
     ],
     "targets": [
       "l:servir"
@@ -5546,7 +5649,8 @@
       "g:present-ar",
       "l:máquina",
       "l:necesitar",
-      "l:servir"
+      "l:servir",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:servir"
@@ -5594,7 +5698,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -5619,6 +5726,7 @@
       "l:servir",
       "l:tarjeta",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -5645,6 +5753,7 @@
       "l:receta",
       "l:servir",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -5713,7 +5822,8 @@
       "g:present-er-ir",
       "l:empanada",
       "l:pedir",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:empanada"
@@ -5779,6 +5889,7 @@
       "l:pedir",
       "l:siempre",
       "l:tinto",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -5917,7 +6028,8 @@
       "l:pedir",
       "l:precio",
       "l:preguntar",
-      "l:tinto"
+      "l:tinto",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:stem-e-i"
@@ -5940,7 +6052,9 @@
       "l:cosa",
       "l:mesero",
       "l:pedir",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:stem-e-i"
@@ -5965,7 +6079,8 @@
       "l:pedir",
       "l:prestar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:stem-e-i"
@@ -5986,7 +6101,8 @@
       "l:pasar",
       "l:pedir",
       "l:permiso",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "g:stem-e-i"
@@ -6008,7 +6124,9 @@
       "l:llegar",
       "l:pedir",
       "l:perdón",
-      "l:tarde"
+      "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:pedir-disculpas-por"
     ],
     "targets": [
       "g:stem-e-i"
@@ -6030,6 +6148,7 @@
       "l:pedir",
       "l:plata",
       "l:siempre",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6072,7 +6191,9 @@
       "g:stem-e-i",
       "l:amiga",
       "l:esperar",
-      "l:pedir"
+      "l:pedir",
+      "p:personal-a",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:stem-e-i"
@@ -6095,7 +6216,8 @@
       "l:costar",
       "l:cuánto",
       "l:menú",
-      "l:preguntar"
+      "l:preguntar",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:menú"
@@ -6116,7 +6238,8 @@
       "g:present-ar",
       "l:precio",
       "l:preguntar",
-      "l:torta"
+      "l:torta",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:torta"
@@ -6139,7 +6262,8 @@
       "l:pedir",
       "l:precio",
       "l:preguntar",
-      "l:torta"
+      "l:torta",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:stem-e-i",
@@ -6163,7 +6287,8 @@
       "l:baño",
       "l:dónde",
       "l:estar",
-      "l:preguntar"
+      "l:preguntar",
+      "p:preguntar-pedir"
     ],
     "targets": [],
     "kind": "statement",
@@ -6185,7 +6310,8 @@
       "l:cliente",
       "l:preguntar",
       "l:querer",
-      "l:qué"
+      "l:qué",
+      "p:preguntar-pedir"
     ],
     "targets": [],
     "kind": "question",
@@ -6253,7 +6379,8 @@
       "l:estar",
       "l:preguntar",
       "p:indefinites-basic",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
     ],
     "targets": [],
     "kind": "question",
@@ -6276,7 +6403,8 @@
       "l:preguntar",
       "l:qué",
       "l:ser",
-      "l:turista"
+      "l:turista",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:ajiaco"
@@ -6298,6 +6426,8 @@
       "l:después",
       "l:pedir",
       "l:preguntar",
+      "p:entonces-de-repente",
+      "p:preguntar-pedir",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -6322,7 +6452,8 @@
       "l:cuenta",
       "l:pedir",
       "l:precio",
-      "l:preguntar"
+      "l:preguntar",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "c:la-cuenta",
@@ -6452,7 +6583,8 @@
       "l:día",
       "l:palabra",
       "l:repetir",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -6514,7 +6646,8 @@
       "g:stem-e-i",
       "l:postre",
       "l:repetir",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:stem-e-i",
@@ -6536,7 +6669,8 @@
       "g:stem-e-i",
       "l:pedir",
       "l:plato",
-      "l:repetir"
+      "l:repetir",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:stem-e-i",
@@ -6558,7 +6692,8 @@
       "g:stem-e-i",
       "l:ajiaco",
       "l:repetir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:stem-e-i",
@@ -6838,7 +6973,9 @@
       "l:decir",
       "l:pescado",
       "l:ser",
-      "l:verdad"
+      "l:verdad",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "l:pescado"
@@ -6963,7 +7100,8 @@
       "g:stem-e-i",
       "l:aquí",
       "l:irse",
-      "l:seguir"
+      "l:seguir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:stem-e-i"
@@ -6987,7 +7125,8 @@
       "l:hambre",
       "l:ir",
       "l:pedir",
-      "l:seguir"
+      "l:seguir",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:arepa"
@@ -7014,7 +7153,8 @@
       "l:favor",
       "l:listo",
       "l:mesa",
-      "l:seguir"
+      "l:seguir",
+      "p:request-ladder"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -7126,7 +7266,11 @@
       "g:stem-e-i",
       "l:cuánto",
       "l:medir",
-      "l:mesa"
+      "l:mesa",
+      "p:medir",
+      "p:medir-pesar",
+      "p:medir-pesar-caber",
+      "p:question-word-order"
     ],
     "targets": [
       "g:stem-e-i"
@@ -7147,7 +7291,10 @@
       "g:stem-e-i",
       "l:medir",
       "l:mesa",
-      "l:metro"
+      "l:metro",
+      "p:medir",
+      "p:medir-pesar",
+      "p:medir-pesar-caber"
     ],
     "targets": [
       "g:stem-e-i"
@@ -7165,7 +7312,10 @@
     "acceptEn": [],
     "requires": [
       "g:stem-e-i",
-      "l:medir"
+      "l:medir",
+      "p:medir",
+      "p:medir-pesar",
+      "p:medir-pesar-caber"
     ],
     "targets": [
       "g:stem-e-i"
@@ -7183,7 +7333,10 @@
     "acceptEn": [],
     "requires": [
       "g:stem-e-i",
-      "l:medir"
+      "l:medir",
+      "p:medir",
+      "p:medir-pesar",
+      "p:medir-pesar-caber"
     ],
     "targets": [
       "g:stem-e-i"
@@ -7204,7 +7357,8 @@
       "g:stem-e-i",
       "l:pedir",
       "l:siempre",
-      "l:volver"
+      "l:volver",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:stem-e-i"
@@ -7227,7 +7381,8 @@
       "l:aguapanela",
       "l:limonada",
       "l:pedir",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ],
     "targets": [
       "g:stem-e-i",
@@ -7323,6 +7478,7 @@
       "l:gente",
       "l:llevar",
       "l:pedir",
+      "p:la-gente-singular",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -7347,7 +7503,8 @@
       "l:menú",
       "l:mesero",
       "l:pedir",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "g:stem-e-i",
@@ -7370,7 +7527,8 @@
       "g:stem-e-i",
       "l:mesa",
       "l:pedir",
-      "l:vecino"
+      "l:vecino",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:stem-e-i"
@@ -7416,7 +7574,8 @@
       "l:mesa",
       "l:pedir",
       "l:siempre",
-      "l:ventana"
+      "l:ventana",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:stem-e-i"
@@ -7566,7 +7725,8 @@
       "g:present-ar",
       "l:arroz",
       "l:parar",
-      "l:pollo"
+      "l:pollo",
+      "p:con-sin"
     ],
     "targets": [
       "l:arroz",
@@ -7752,7 +7912,8 @@
       "l:quién",
       "l:ser",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -7933,7 +8094,8 @@
       "l:día",
       "l:pan",
       "p:para-inf",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -7977,6 +8139,7 @@
       "g:present-ar",
       "l:cocinar",
       "l:domingo",
+      "p:days-el-lunes",
       "p:para-inf"
     ],
     "targets": [
@@ -8023,6 +8186,7 @@
       "l:ser",
       "l:torta",
       "p:demonstratives-basic",
+      "p:otro-no-article",
       "p:para-inf"
     ],
     "targets": [
@@ -8110,7 +8274,8 @@
     "requires": [
       "g:prep-pronouns",
       "g:stem-boot",
-      "l:venir"
+      "l:venir",
+      "p:ir-venir"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8237,6 +8402,8 @@
       "l:claro",
       "l:libre",
       "l:silla",
+      "p:aqui-ahi-alla",
+      "p:lleno-libre",
       "p:para-inf"
     ],
     "targets": [
@@ -8259,7 +8426,8 @@
       "g:present-ar",
       "l:día",
       "l:hablar",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8303,6 +8471,7 @@
       "l:cocinar",
       "l:mamá",
       "l:sábado",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -8324,7 +8493,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:desayunar",
-      "l:domingo"
+      "l:domingo",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "statement",
@@ -8343,7 +8513,8 @@
       "g:present-ar",
       "l:siempre",
       "l:tinto",
-      "l:tomar"
+      "l:tomar",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -8363,7 +8534,8 @@
       "g:ir-a-plans",
       "g:prep-pronouns",
       "l:ir",
-      "l:mercado"
+      "l:mercado",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8419,7 +8591,9 @@
       "g:prep-pronouns",
       "g:stem-boot",
       "l:almorzar",
-      "l:hoy"
+      "l:hoy",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8440,7 +8614,8 @@
       "g:present-er-ir",
       "l:cerca",
       "l:vivir",
-      "p:cerca-de"
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8463,7 +8638,8 @@
       "l:cerca",
       "l:verdad",
       "l:vivir",
-      "p:cerca-de"
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8485,6 +8661,8 @@
       "l:casa",
       "l:estar",
       "l:lejos",
+      "p:cerca-de",
+      "p:position-de",
       "p:possessives-basic"
     ],
     "targets": [
@@ -8508,7 +8686,10 @@
       "g:prep-pronouns",
       "l:delante",
       "l:libre",
-      "l:mesa"
+      "l:mesa",
+      "p:cerca-de",
+      "p:lleno-libre",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8528,7 +8709,9 @@
       "g:estar-location-states",
       "g:prep-pronouns",
       "l:detrás",
-      "l:estar"
+      "l:estar",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8550,7 +8733,9 @@
       "g:prep-pronouns",
       "l:detrás",
       "l:estar",
-      "l:fila"
+      "l:fila",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8572,7 +8757,9 @@
       "g:hay-vs-esta",
       "g:prep-pronouns",
       "l:delante",
-      "l:señora"
+      "l:señora",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8591,7 +8778,8 @@
     "requires": [
       "g:estar-location-states",
       "g:prep-pronouns",
-      "l:estar"
+      "l:estar",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8715,7 +8903,8 @@
       "g:present-er-ir",
       "l:ajiaco",
       "l:cocinar",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:prep-pronouns",
@@ -8921,7 +9110,8 @@
       "g:present-ar",
       "l:fila",
       "l:gente",
-      "l:hablar"
+      "l:hablar",
+      "p:la-gente-singular"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8987,7 +9177,9 @@
       "l:hablar",
       "l:oler",
       "l:pan",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:le-falta-sal",
+      "p:oler-a-saber-a"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -9032,7 +9224,8 @@
       "g:estar-location-states",
       "g:prep-pronouns",
       "l:contento",
-      "l:estar"
+      "l:estar",
+      "p:contento-con-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -9054,6 +9247,7 @@
       "l:cansado",
       "l:estar",
       "l:plan",
+      "p:estar-harto-de",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9075,7 +9269,8 @@
       "g:adjective-agreement",
       "g:estar-location-states",
       "l:contento",
-      "l:estar"
+      "l:estar",
+      "p:contento-con-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -9114,6 +9309,7 @@
       "g:gender-articles",
       "l:contar",
       "l:sábado",
+      "p:days-el-lunes",
       "p:para-inf"
     ],
     "targets": [],
@@ -9151,6 +9347,7 @@
       "g:prep-pronouns",
       "l:aquí",
       "l:estar",
+      "p:aqui-ahi-alla",
       "p:para-inf"
     ],
     "targets": [
@@ -9215,6 +9412,7 @@
       "g:ser-identity",
       "l:jefe",
       "l:ser",
+      "p:no-es-x-es-y",
       "p:para-inf",
       "p:possessives-basic"
     ],
@@ -9257,6 +9455,7 @@
       "g:gender-articles",
       "g:prep-pronouns",
       "l:limonada",
+      "p:otro-no-article",
       "p:para-inf"
     ],
     "targets": [
@@ -9278,6 +9477,7 @@
       "g:gender-articles",
       "g:prep-pronouns",
       "l:mesa",
+      "p:otro-no-article",
       "p:para-inf"
     ],
     "targets": [
@@ -9322,6 +9522,8 @@
       "g:yo-irregular",
       "l:mamá",
       "l:parecerse",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9343,6 +9545,8 @@
       "g:reflexive-routine",
       "l:abuela",
       "l:parecerse",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9363,6 +9567,8 @@
       "g:present-er-ir",
       "g:reflexive-routine",
       "l:parecerse",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -9387,6 +9593,8 @@
       "l:igual",
       "l:parecerse",
       "l:ser",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -9409,7 +9617,8 @@
       "g:reflexive-routine",
       "l:buñuelo",
       "l:pandebono",
-      "l:parecerse"
+      "l:parecerse",
+      "p:parecer-vs-parecerse"
     ],
     "targets": [
       "l:buñuelo",
@@ -9434,7 +9643,8 @@
       "l:almojábana",
       "l:pan",
       "l:parecerse",
-      "l:queso"
+      "l:queso",
+      "p:parecer-vs-parecerse"
     ],
     "targets": [
       "l:almojábana",
@@ -9459,6 +9669,7 @@
       "l:papá",
       "l:parecerse",
       "l:quién",
+      "p:parecerse-a",
       "p:possessives-basic",
       "p:prep-questions-basic"
     ],
@@ -9481,6 +9692,8 @@
       "g:reflexive-routine",
       "l:hermano",
       "l:parecerse",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9506,7 +9719,9 @@
       "l:arepa",
       "l:grande",
       "l:parecerse",
-      "l:ser"
+      "l:ser",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a"
     ],
     "targets": [
       "l:arepa",
@@ -9532,6 +9747,8 @@
       "l:abuela",
       "l:parecerse",
       "l:sopa",
+      "p:los-de-la-camiseta",
+      "p:parecer-vs-parecerse",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9659,6 +9876,7 @@
       "l:favorito",
       "l:queso",
       "l:ser",
+      "p:con-sin",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9848,7 +10066,9 @@
       "g:reflexive-routine",
       "l:almojábana",
       "l:pandebono",
-      "l:parecerse"
+      "l:parecerse",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a"
     ],
     "targets": [
       "l:almojábana",
@@ -9941,7 +10161,8 @@
       "l:arroz",
       "l:clásico",
       "l:fríjol",
-      "l:ser"
+      "l:ser",
+      "p:con-sin"
     ],
     "targets": [
       "l:arroz",
@@ -9966,6 +10187,7 @@
       "l:plato",
       "l:pollo",
       "l:ser",
+      "p:con-sin",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9989,7 +10211,8 @@
       "g:gender-articles",
       "l:arroz",
       "l:estar",
-      "l:salado"
+      "l:salado",
+      "p:le-falta-sal"
     ],
     "targets": [
       "l:arroz",
@@ -10013,6 +10236,9 @@
       "l:ensalada",
       "l:pescado",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:con-sin",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -10038,7 +10264,8 @@
       "l:comida",
       "l:grande",
       "l:papa",
-      "l:ser"
+      "l:ser",
+      "p:con-sin"
     ],
     "targets": [
       "l:arroz",
@@ -10085,7 +10312,8 @@
       "g:stem-boot",
       "l:arepa",
       "l:huevo",
-      "l:querer"
+      "l:querer",
+      "p:con-sin"
     ],
     "targets": [
       "l:arepa",
@@ -10127,7 +10355,8 @@
       "g:present-ar",
       "l:docena",
       "l:huevo",
-      "l:necesitar"
+      "l:necesitar",
+      "p:container-de"
     ],
     "targets": [
       "l:huevo"
@@ -10150,7 +10379,8 @@
       "l:docena",
       "l:huevo",
       "l:libra",
-      "l:queso"
+      "l:queso",
+      "p:container-de"
     ],
     "targets": [
       "l:huevo",
@@ -10174,6 +10404,7 @@
       "l:queso",
       "l:rico",
       "l:ser",
+      "p:con-sin",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -10220,7 +10451,9 @@
       "g:stem-boot",
       "l:plátano",
       "l:preferir",
-      "l:queso"
+      "l:queso",
+      "p:con-sin",
+      "p:prefieres-x-o-y"
     ],
     "targets": [
       "l:plátano",
@@ -10330,7 +10563,8 @@
       "l:aguapanela",
       "l:queso",
       "l:ser",
-      "l:típico"
+      "l:típico",
+      "p:con-sin"
     ],
     "targets": [
       "l:aguapanela",
@@ -10351,7 +10585,9 @@
       "g:gender-articles",
       "l:aguapanela",
       "l:queso",
-      "l:vaso"
+      "l:vaso",
+      "p:con-sin",
+      "p:container-de"
     ],
     "targets": [
       "l:aguapanela",
@@ -10376,6 +10612,7 @@
       "l:desayuno",
       "l:leche",
       "l:ser",
+      "p:con-sin",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10417,7 +10654,8 @@
       "l:azúcar",
       "l:café",
       "l:leche",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin"
     ],
     "targets": [],
     "kind": "statement",
@@ -10437,7 +10675,8 @@
       "l:almojábana",
       "l:café",
       "l:favor",
-      "l:leche"
+      "l:leche",
+      "p:con-sin"
     ],
     "targets": [
       "l:almojábana"
@@ -10458,7 +10697,8 @@
       "l:arepa",
       "l:jugo",
       "l:naranja",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ],
     "targets": [
       "l:arepa",
@@ -10479,7 +10719,8 @@
       "g:gender-articles",
       "l:empanada",
       "l:limonada",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ],
     "targets": [
       "l:empanada",
@@ -10502,7 +10743,8 @@
       "l:azúcar",
       "l:fresa",
       "l:jugo",
-      "l:leche"
+      "l:leche",
+      "p:con-sin"
     ],
     "targets": [],
     "kind": "statement",
@@ -10542,6 +10784,7 @@
       "l:arroz",
       "l:favor",
       "l:pollo",
+      "p:con-sin",
       "p:para-inf"
     ],
     "targets": [
@@ -10566,6 +10809,7 @@
       "l:arepa",
       "l:ser",
       "l:sopa",
+      "p:con-sin",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10586,7 +10830,8 @@
     "requires": [
       "l:arroz",
       "l:huevo",
-      "l:plátano"
+      "l:plátano",
+      "p:con-sin"
     ],
     "targets": [
       "l:arroz",
@@ -10608,7 +10853,8 @@
       "l:café",
       "l:leche",
       "l:pan",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ],
     "targets": [
       "l:queso"
@@ -10629,7 +10875,8 @@
       "g:gender-articles",
       "l:bandeja",
       "l:carne",
-      "l:favor"
+      "l:favor",
+      "p:con-sin"
     ],
     "targets": [
       "l:bandeja",
@@ -10651,6 +10898,7 @@
       "l:amigo",
       "l:pollo",
       "l:sopa",
+      "p:con-sin",
       "p:para-inf",
       "p:possessives-basic"
     ],
@@ -10712,7 +10960,8 @@
       "g:stem-boot",
       "l:aguacate",
       "l:ajiaco",
-      "l:querer"
+      "l:querer",
+      "p:con-sin"
     ],
     "targets": [
       "l:ajiaco"
@@ -10734,7 +10983,8 @@
       "g:stem-boot",
       "l:ensalada",
       "l:querer",
-      "l:tomate"
+      "l:tomate",
+      "p:con-sin"
     ],
     "targets": [
       "l:ensalada"
@@ -10776,7 +11026,8 @@
       "l:agua",
       "l:botella",
       "l:favor",
-      "l:frío"
+      "l:frío",
+      "p:container-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -10796,6 +11047,7 @@
       "l:leche",
       "l:niño",
       "l:vaso",
+      "p:container-de",
       "p:para-inf"
     ],
     "targets": [
@@ -10816,7 +11068,9 @@
       "g:gender-articles",
       "l:chocolate",
       "l:queso",
-      "l:taza"
+      "l:taza",
+      "p:con-sin",
+      "p:container-de"
     ],
     "targets": [
       "l:queso",
@@ -10837,7 +11091,8 @@
       "g:gender-articles",
       "l:cebolla",
       "l:libra",
-      "l:tomate"
+      "l:tomate",
+      "p:container-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -10856,7 +11111,8 @@
       "l:arroz",
       "l:kilo",
       "l:libra",
-      "l:papa"
+      "l:papa",
+      "p:container-de"
     ],
     "targets": [
       "l:arroz"
@@ -10877,7 +11133,8 @@
       "g:gender-articles",
       "l:favor",
       "l:kilo",
-      "l:plátano"
+      "l:plátano",
+      "p:container-de"
     ],
     "targets": [
       "l:plátano"
@@ -10899,7 +11156,8 @@
       "g:gender-articles",
       "l:bolsa",
       "l:favor",
-      "l:naranja"
+      "l:naranja",
+      "p:container-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -10920,7 +11178,8 @@
       "l:botella",
       "l:comprar",
       "l:jugo",
-      "l:paquete"
+      "l:paquete",
+      "p:container-de"
     ],
     "targets": [
       "l:arroz"
@@ -10941,6 +11200,7 @@
       "l:niño",
       "l:pan",
       "l:paquete",
+      "p:container-de",
       "p:para-inf"
     ],
     "targets": [],
@@ -10962,7 +11222,8 @@
       "l:comprar",
       "l:harina",
       "l:libra",
-      "l:paquete"
+      "l:paquete",
+      "p:container-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -10981,7 +11242,8 @@
       "l:agua",
       "l:plato",
       "l:sopa",
-      "l:vaso"
+      "l:vaso",
+      "p:container-de"
     ],
     "targets": [
       "l:plato",
@@ -11003,7 +11265,9 @@
       "g:gender-articles",
       "l:leche",
       "l:taza",
-      "l:té"
+      "l:té",
+      "p:con-sin",
+      "p:container-de"
     ],
     "targets": [
       "l:taza"
@@ -11044,7 +11308,8 @@
       "c:para-llevar",
       "l:docena",
       "l:empanada",
-      "l:llevar"
+      "l:llevar",
+      "p:container-de"
     ],
     "targets": [
       "c:para-llevar",
@@ -11066,6 +11331,8 @@
       "l:buñuelo",
       "l:docena",
       "l:sábado",
+      "p:container-de",
+      "p:days-el-lunes",
       "p:para-inf"
     ],
     "targets": [
@@ -11086,7 +11353,8 @@
       "g:gender-articles",
       "l:agua",
       "l:botella",
-      "l:leche"
+      "l:leche",
+      "p:container-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -11105,6 +11373,7 @@
       "l:botella",
       "l:jugo",
       "l:mesa",
+      "p:container-de",
       "p:para-inf"
     ],
     "targets": [],
@@ -11125,6 +11394,7 @@
       "l:jugo",
       "l:niño",
       "l:vaso",
+      "p:container-de",
       "p:para-inf"
     ],
     "targets": [
@@ -11146,7 +11416,8 @@
       "g:gender-articles",
       "l:agua",
       "l:estar",
-      "l:frío"
+      "l:frío",
+      "p:el-agua-fria"
     ],
     "targets": [],
     "kind": "statement",
@@ -11165,7 +11436,9 @@
       "g:stem-boot",
       "l:agua",
       "l:frío",
-      "l:preferir"
+      "l:preferir",
+      "p:el-agua-fria",
+      "p:prefieres-x-o-y"
     ],
     "targets": [],
     "kind": "statement",
@@ -11189,6 +11462,7 @@
       "l:bien",
       "l:frío",
       "l:querer",
+      "p:el-agua-fria",
       "p:possessives-basic"
     ],
     "targets": [
@@ -11212,6 +11486,7 @@
       "l:estar",
       "l:frío",
       "l:nevera",
+      "p:el-agua-fria",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -11231,7 +11506,8 @@
       "g:gender-articles",
       "l:agua",
       "l:estar",
-      "l:mesa"
+      "l:mesa",
+      "p:el-agua-fria"
     ],
     "targets": [],
     "kind": "statement",
@@ -11271,7 +11547,8 @@
       "l:agua",
       "l:ajiaco",
       "l:necesitar",
-      "l:sal"
+      "l:sal",
+      "p:el-agua-fria"
     ],
     "targets": [
       "l:ajiaco"
@@ -11292,7 +11569,8 @@
       "g:gender-articles",
       "l:agua",
       "l:estar",
-      "l:mesa"
+      "l:mesa",
+      "p:el-agua-fria"
     ],
     "targets": [],
     "kind": "statement",
@@ -11311,6 +11589,7 @@
       "g:yo-irregular",
       "l:hambre",
       "l:tener",
+      "p:el-agua-fria",
       "p:quantifiers-basic",
       "p:tener-hambre"
     ],
@@ -11333,7 +11612,8 @@
       "l:enorme",
       "l:hambre",
       "l:tener",
-      "p:tener-hambre"
+      "p:el-agua-fria",
+      "p:pasar-hambre-frio"
     ],
     "targets": [],
     "kind": "statement",
@@ -11352,7 +11632,9 @@
       "g:negation-words",
       "g:present-ar",
       "l:esperar",
-      "l:hambre"
+      "l:hambre",
+      "p:el-agua-fria",
+      "p:personal-a"
     ],
     "targets": [],
     "kind": "statement",
@@ -11373,6 +11655,8 @@
       "l:hambre",
       "l:mañana",
       "l:tener",
+      "p:el-agua-fria",
+      "p:por-la-manana",
       "p:quantifiers-basic",
       "p:tener-hambre"
     ],
@@ -11393,6 +11677,7 @@
       "g:stem-boot",
       "l:hambre",
       "l:tener",
+      "p:el-agua-fria",
       "p:quantifiers-basic",
       "p:tener-hambre"
     ],
@@ -11432,7 +11717,8 @@
       "g:stem-e-i",
       "l:hambre",
       "l:pedir",
-      "l:plato"
+      "l:plato",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:stem-e-i",
@@ -11455,7 +11741,8 @@
       "l:agua",
       "l:nevera",
       "l:ser",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:el-agua-fria"
     ],
     "targets": [],
     "kind": "statement",
@@ -11476,7 +11763,8 @@
       "l:mesa",
       "l:pequeño",
       "l:ser",
-      "l:área"
+      "l:área",
+      "p:el-agua-fria"
     ],
     "targets": [],
     "kind": "statement",
@@ -11495,7 +11783,8 @@
       "g:stem-e-i",
       "l:favor",
       "l:pedir",
-      "l:tinto"
+      "l:tinto",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:stem-e-i"
@@ -11515,7 +11804,8 @@
       "c:quiero",
       "g:stem-boot",
       "l:arepa",
-      "l:querer"
+      "l:querer",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:arepa"
@@ -11534,7 +11824,9 @@
     "requires": [
       "c:me-regala",
       "l:buñuelo",
-      "l:regalar"
+      "l:regalar",
+      "p:me-trae",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:buñuelo"
@@ -11554,6 +11846,7 @@
       "g:gender-articles",
       "l:mesa",
       "l:sopa",
+      "p:otro-no-article",
       "p:para-inf"
     ],
     "targets": [
@@ -11575,7 +11868,8 @@
       "g:gustar-full",
       "l:ajiaco",
       "l:encantar",
-      "l:vez"
+      "l:vez",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:gustar-full",
@@ -11595,7 +11889,8 @@
     "requires": [
       "g:gender-articles",
       "l:tinto",
-      "l:torta"
+      "l:torta",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:torta"
@@ -11614,7 +11909,8 @@
     "requires": [
       "c:por-favor",
       "l:empanada",
-      "l:favor"
+      "l:favor",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:empanada"
@@ -11633,7 +11929,8 @@
     "requires": [
       "c:hay",
       "g:hay-vs-esta",
-      "l:postre"
+      "l:postre",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:postre"
@@ -11654,7 +11951,8 @@
       "g:ser-identity",
       "l:grande",
       "l:plato",
-      "l:ser"
+      "l:ser",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:grande",
@@ -11677,7 +11975,8 @@
       "g:ser-identity",
       "l:mesa",
       "l:ser",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "statement",
@@ -11696,7 +11995,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:querer",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "statement",
@@ -11712,7 +12012,8 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "statement",
@@ -11730,7 +12031,8 @@
       "c:tienes",
       "g:stem-boot",
       "l:menú",
-      "l:tener"
+      "l:tener",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:menú"
@@ -11769,7 +12071,8 @@
     "acceptEn": [],
     "requires": [
       "c:gracias-de-nada",
-      "l:tinto"
+      "l:tinto",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11788,7 +12091,8 @@
       "g:questions",
       "g:stem-boot",
       "l:querer",
-      "l:qué"
+      "l:qué",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11807,7 +12111,10 @@
       "g:gender-articles",
       "l:café",
       "l:ver",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "question",
@@ -11828,7 +12135,9 @@
       "l:mejor",
       "l:poder",
       "l:sábado",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11846,7 +12155,10 @@
       "c:claro-listo",
       "g:gender-articles",
       "l:listo",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11864,7 +12176,9 @@
       "c:chao-nos-vemos",
       "l:acuerdo",
       "l:allá",
-      "l:ver"
+      "l:ver",
+      "p:aqui-ahi-alla",
+      "p:nos-vemos-a-las"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11882,7 +12196,9 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:mañana",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "question",
@@ -11903,7 +12219,9 @@
       "l:jueves",
       "l:mañana",
       "l:mejor",
-      "l:poder"
+      "l:poder",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11921,7 +12239,9 @@
       "c:claro-listo",
       "g:gender-articles",
       "l:listo",
-      "l:mejor"
+      "l:mejor",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "question",
@@ -11940,7 +12260,10 @@
       "g:estar-location-states",
       "g:gender-articles",
       "l:bien",
-      "l:estar"
+      "l:estar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11958,7 +12281,9 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:puerta",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11976,7 +12301,9 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:plaza",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11994,7 +12321,9 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:hoy",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "question",
@@ -12015,7 +12344,9 @@
       "l:domingo",
       "l:hoy",
       "l:mejor",
-      "l:poder"
+      "l:poder",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12033,7 +12364,9 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:panadería",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "question",
@@ -12052,7 +12385,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:mejor",
-      "l:poder"
+      "l:poder",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12070,7 +12405,8 @@
       "c:claro-listo",
       "g:gender-articles",
       "l:listo",
-      "l:panadería"
+      "l:panadería",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12090,7 +12426,10 @@
       "g:gender-articles",
       "l:listo",
       "l:lunes",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12110,7 +12449,10 @@
       "l:casa",
       "l:martes",
       "l:ver",
-      "p:possessives-basic"
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12132,6 +12474,7 @@
       "l:estar",
       "l:lejos",
       "l:mejor",
+      "p:cerca-de",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -12173,7 +12516,8 @@
       "g:gender-articles",
       "l:hora",
       "l:qué",
-      "l:ver"
+      "l:ver",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12195,7 +12539,8 @@
       "l:cuándo",
       "l:listo",
       "l:miércoles",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12216,7 +12561,9 @@
       "l:jueves",
       "l:mejor",
       "l:miércoles",
-      "l:ocupado"
+      "l:ocupado",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las"
     ],
     "targets": [],
     "kind": "question",
@@ -12238,7 +12585,9 @@
       "l:mejor",
       "l:reunión",
       "l:tener",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12257,7 +12606,9 @@
       "c:claro-listo",
       "g:gender-articles",
       "l:listo",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12277,7 +12628,9 @@
       "g:present-ar",
       "l:antes",
       "l:llegar",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12295,7 +12648,9 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:parque",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12312,7 +12667,9 @@
     "requires": [
       "c:chao-nos-vemos",
       "g:gender-articles",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12331,7 +12688,9 @@
       "g:gender-articles",
       "l:postre",
       "l:ver",
-      "p:para-inf"
+      "p:nos-vemos-a-las",
+      "p:para-inf",
+      "p:telling-time"
     ],
     "targets": [
       "l:postre"
@@ -12352,7 +12711,9 @@
       "g:gender-articles",
       "l:tinto",
       "l:ver",
-      "p:para-inf"
+      "p:nos-vemos-a-las",
+      "p:para-inf",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12372,7 +12733,10 @@
       "l:almorzar",
       "l:domingo",
       "l:ver",
-      "p:para-inf"
+      "p:days-el-lunes",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "question",
@@ -12392,7 +12756,11 @@
       "l:cenar",
       "l:sábado",
       "l:ver",
-      "p:para-inf"
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12412,7 +12780,12 @@
       "g:gender-articles",
       "l:bien",
       "l:estar",
-      "l:sábado"
+      "l:sábado",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12433,7 +12806,9 @@
       "l:domingo",
       "l:mejor",
       "l:sábado",
-      "l:tarde"
+      "l:tarde",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las"
     ],
     "targets": [],
     "kind": "question",
@@ -12451,7 +12826,10 @@
       "c:claro-listo",
       "g:gender-articles",
       "l:domingo",
-      "l:listo"
+      "l:listo",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12470,7 +12848,10 @@
       "g:present-er-ir",
       "g:reflexive-routine",
       "l:lunes",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -12490,7 +12871,8 @@
       "g:reflexive-routine",
       "l:café",
       "l:martes",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "statement",
@@ -12510,7 +12892,8 @@
       "g:reflexive-routine",
       "l:amigo",
       "l:ver",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -12528,7 +12911,10 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:sábado",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -12548,8 +12934,12 @@
       "l:domingo",
       "l:primo",
       "l:ver",
+      "p:days-el-lunes",
+      "p:masculine-plural-mixed",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:nos-vemos-a-las",
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -12572,7 +12962,10 @@
       "l:tener",
       "l:tiempo",
       "l:ver",
-      "p:quantifiers-basic"
+      "p:nos-vemos-a-las",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -12591,7 +12984,8 @@
       "l:hoy",
       "l:mañana",
       "l:mejor",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las"
     ],
     "targets": [],
     "kind": "statement",
@@ -12610,7 +13004,10 @@
       "g:gender-articles",
       "l:plaza",
       "l:ver",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -12649,6 +13046,7 @@
       "l:después",
       "l:trabajo",
       "l:ver",
+      "p:nos-vemos-a-las",
       "p:time-sequence-basic"
     ],
     "targets": [],
@@ -12669,7 +13067,8 @@
       "l:centro",
       "l:noche",
       "l:ver",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:nos-vemos-a-las"
     ],
     "targets": [],
     "kind": "question",
@@ -12689,7 +13088,8 @@
       "l:oficina",
       "l:tarde",
       "l:ver",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:nos-vemos-a-las"
     ],
     "targets": [],
     "kind": "question",
@@ -12707,7 +13107,10 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:mañana",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:por-la-manana",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "question",
@@ -12729,6 +13132,7 @@
       "l:noche",
       "l:ver",
       "p:demonstratives-basic",
+      "p:nos-vemos-a-las",
       "p:time-sequence-basic"
     ],
     "targets": [],
@@ -12749,6 +13153,7 @@
       "l:café",
       "l:casa",
       "l:ver",
+      "p:nos-vemos-a-las",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -12768,7 +13173,8 @@
       "g:gender-articles",
       "l:café",
       "l:parque",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las"
     ],
     "targets": [],
     "kind": "question",
@@ -12812,7 +13218,8 @@
       "g:verb-infinitive",
       "l:mesa",
       "l:reservar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "statement",
@@ -12857,6 +13264,7 @@
       "l:estar",
       "l:listo",
       "l:mesa",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -12879,6 +13287,7 @@
       "l:desayuno",
       "l:llegar",
       "l:temprano",
+      "p:llegar-a-tiempo",
       "p:para-inf"
     ],
     "targets": [],
@@ -12901,7 +13310,8 @@
       "l:fila",
       "l:hacer",
       "l:pedir",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [],
     "kind": "statement",
@@ -12994,7 +13404,8 @@
       "l:antes",
       "l:ir",
       "l:mercado",
-      "l:tener"
+      "l:tener",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [],
     "kind": "statement",
@@ -13018,6 +13429,7 @@
       "l:preparar",
       "l:sábado",
       "l:tener",
+      "p:days-el-lunes",
       "p:para-inf"
     ],
     "targets": [
@@ -13066,7 +13478,8 @@
       "g:gender-articles",
       "g:verb-infinitive",
       "l:cerrar",
-      "l:tener"
+      "l:tener",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -13178,7 +13591,8 @@
       "g:verb-infinitive",
       "l:llegar",
       "l:mesero",
-      "l:tener"
+      "l:tener",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -13316,7 +13730,8 @@
       "l:esperar",
       "l:libre",
       "l:mesa",
-      "l:tener"
+      "l:tener",
+      "p:lleno-libre"
     ],
     "targets": [],
     "kind": "statement",
@@ -13381,7 +13796,9 @@
       "l:domingo",
       "l:llegar",
       "l:temprano",
-      "l:tener"
+      "l:tener",
+      "p:days-el-lunes",
+      "p:llegar-a-tiempo"
     ],
     "targets": [],
     "kind": "statement",
@@ -13431,6 +13848,7 @@
       "l:comida",
       "l:tener",
       "l:traer",
+      "p:llevar-traer",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -13500,6 +13918,7 @@
       "l:deber",
       "l:llamar",
       "l:mamá",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13592,6 +14011,7 @@
       "l:qué",
       "l:sábado",
       "l:tener",
+      "p:days-el-lunes",
       "p:para-inf"
     ],
     "targets": [],
@@ -13612,7 +14032,8 @@
       "g:verb-infinitive",
       "l:aquí",
       "l:dejar",
-      "l:propina"
+      "l:propina",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "l:propina"
@@ -13793,7 +14214,8 @@
       "g:verb-infinitive",
       "l:domingo",
       "l:tener",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -13859,7 +14281,8 @@
       "l:menú",
       "l:nuevo",
       "l:sábado",
-      "l:tener"
+      "l:tener",
+      "p:days-el-lunes"
     ],
     "targets": [
       "l:ajiaco",
@@ -13881,7 +14304,8 @@
       "g:gender-articles",
       "g:hay-vs-esta",
       "l:ajiaco",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [
       "l:ajiaco"
@@ -13904,7 +14328,8 @@
       "l:día",
       "l:fruta",
       "l:jugo",
-      "p:todos-los-dias"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -13944,7 +14369,8 @@
       "g:negation-words",
       "g:present-ar",
       "l:acabar",
-      "l:fila"
+      "l:fila",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:acabar"
@@ -13991,7 +14417,8 @@
       "l:acabar",
       "l:hora",
       "l:qué",
-      "l:reunión"
+      "l:reunión",
+      "p:question-word-order"
     ],
     "targets": [
       "l:acabar"
@@ -14033,7 +14460,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:acabar",
-      "l:película"
+      "l:película",
+      "p:telling-time"
     ],
     "targets": [
       "l:acabar"
@@ -14137,7 +14565,8 @@
       "l:famoso",
       "l:llegar",
       "l:mujer",
-      "l:pedir"
+      "l:pedir",
+      "p:telling-time"
     ],
     "targets": [
       "g:stem-e-i",
@@ -14202,7 +14631,9 @@
       "l:bien",
       "l:café",
       "l:hablar",
-      "l:reseña"
+      "l:reseña",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [],
     "kind": "statement",
@@ -14264,6 +14695,10 @@
       "l:gente",
       "l:reseña",
       "l:traer",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:la-gente-singular",
+      "p:llevar-traer",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -14324,7 +14759,8 @@
       "g:stem-e-i",
       "l:pan",
       "l:pedir",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ],
     "targets": [
       "g:stem-e-i",
@@ -14453,6 +14889,7 @@
       "l:contar",
       "l:historia",
       "l:taxi",
+      "p:contar-dos-sentidos",
       "p:possessives-basic"
     ],
     "targets": [
@@ -14520,6 +14957,7 @@
       "l:abuela",
       "l:contar",
       "l:historia",
+      "p:contar-dos-sentidos",
       "p:possessives-basic"
     ],
     "targets": [
@@ -14589,6 +15027,7 @@
       "l:café",
       "l:lunes",
       "l:mes",
+      "p:days-el-lunes",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -14638,6 +15077,8 @@
       "l:ser",
       "l:tiempo",
       "p:para-inf",
+      "p:para-inf-purpose",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -14703,7 +15144,8 @@
       "g:stem-boot",
       "l:cerrar",
       "l:escuela",
-      "l:esquina"
+      "l:esquina",
+      "p:telling-time"
     ],
     "targets": [
       "l:escuela"
@@ -14750,6 +15192,8 @@
       "l:hija",
       "l:ir",
       "l:mañana",
+      "p:ir-a-venir-de-place",
+      "p:por-la-manana",
       "p:possessives-basic"
     ],
     "targets": [
@@ -14815,7 +15259,9 @@
       "g:hay-vs-esta",
       "l:escuela",
       "l:lado",
-      "l:panadería"
+      "l:panadería",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:escuela"
@@ -14837,7 +15283,8 @@
       "g:hay-vs-esta",
       "l:esquina",
       "l:hombre",
-      "l:traje"
+      "l:traje",
+      "p:con-sin"
     ],
     "targets": [],
     "kind": "statement",
@@ -14860,7 +15307,8 @@
       "l:hablar",
       "l:irse",
       "l:señor",
-      "l:ver"
+      "l:ver",
+      "p:senor-don-article"
     ],
     "targets": [],
     "kind": "statement",
@@ -14899,7 +15347,8 @@
       "g:negation-words",
       "g:stem-e-i",
       "l:mirar",
-      "l:pedir"
+      "l:pedir",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:stem-e-i"
@@ -14940,7 +15389,9 @@
       "l:buñuelo",
       "l:hacer",
       "l:llegar",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:telling-time"
     ],
     "targets": [
       "l:buñuelo"
@@ -14984,7 +15435,8 @@
       "g:present-ar",
       "l:ajiaco",
       "l:cocinar",
-      "l:mañana"
+      "l:mañana",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:ajiaco"
@@ -15027,7 +15479,8 @@
       "g:stem-boot",
       "l:carta",
       "l:precio",
-      "l:querer"
+      "l:querer",
+      "p:con-sin"
     ],
     "targets": [
       "l:carta"
@@ -15113,8 +15566,8 @@
       "l:almojábana",
       "l:tinto",
       "l:traer",
-      "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:llevar-traer",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:almojábana",
@@ -15161,7 +15614,8 @@
       "l:bandeja",
       "l:llegar",
       "l:pedir",
-      "l:taxista"
+      "l:taxista",
+      "p:telling-time"
     ],
     "targets": [
       "g:stem-e-i",
@@ -15254,7 +15708,8 @@
       "l:cliente",
       "l:huevo",
       "l:pedir",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ],
     "targets": [
       "g:stem-e-i",
@@ -15331,7 +15786,8 @@
       "g:hay-vs-esta",
       "l:abrir",
       "l:letrero",
-      "l:puerta"
+      "l:puerta",
+      "p:desde-hasta"
     ],
     "targets": [],
     "kind": "statement",
@@ -15396,7 +15852,9 @@
       "g:stem-e-i",
       "l:ajiaco",
       "l:pedir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:stem-e-i",
@@ -15419,7 +15877,9 @@
       "l:café",
       "l:oler",
       "l:pan",
-      "l:tinto"
+      "l:tinto",
+      "p:le-falta-sal",
+      "p:oler-a-saber-a"
     ],
     "targets": [],
     "kind": "statement",
@@ -15467,7 +15927,8 @@
       "l:cocina",
       "l:horno",
       "l:viejo",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [],
     "kind": "statement",
@@ -15600,7 +16061,8 @@
       "l:bandeja",
       "l:costar",
       "l:cuánto",
-      "l:ver"
+      "l:ver",
+      "p:question-word-order"
     ],
     "targets": [
       "c:a-ver",
@@ -15671,7 +16133,8 @@
       "l:dónde",
       "l:estar",
       "l:ver",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "c:a-ver"
@@ -16032,7 +16495,8 @@
       "l:qué",
       "l:recomendar",
       "l:tomar",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "c:que-me-recomienda",
@@ -16124,7 +16588,9 @@
       "l:preguntar",
       "l:qué",
       "l:recomendar",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "c:que-me-recomienda",
@@ -16170,6 +16636,7 @@
       "l:comer",
       "l:llevar",
       "l:ser",
+      "p:aqui-ahi-alla",
       "p:para-inf"
     ],
     "targets": [
@@ -16210,7 +16677,8 @@
       "g:gender-articles",
       "l:arepa",
       "l:llevar",
-      "l:queso"
+      "l:queso",
+      "p:con-sin"
     ],
     "targets": [
       "c:para-llevar",
@@ -16286,7 +16754,9 @@
       "l:barato",
       "l:buñuelo",
       "l:llevar",
-      "l:salir"
+      "l:salir",
+      "p:en-oferta",
+      "p:gasto-inversion"
     ],
     "targets": [
       "c:para-llevar",
@@ -16311,6 +16781,7 @@
       "l:comer",
       "l:llevar",
       "l:mesa",
+      "p:aqui-ahi-alla",
       "p:para-inf"
     ],
     "targets": [
@@ -16426,7 +16897,8 @@
       "g:prep-pronouns",
       "l:buen",
       "l:provecho",
-      "p:para-inf"
+      "p:para-inf",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "c:buen-provecho",
@@ -16500,7 +16972,8 @@
       "l:plato",
       "l:provecho",
       "l:traer",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:llevar-traer"
     ],
     "targets": [
       "c:buen-provecho",
@@ -16621,7 +17094,8 @@
       "l:café",
       "l:esquina",
       "l:ir",
-      "l:provocar"
+      "l:provocar",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:te-provoca",
@@ -16643,7 +17117,8 @@
       "g:gender-articles",
       "l:provocar",
       "l:tinto",
-      "l:torta"
+      "l:torta",
+      "p:con-sin"
     ],
     "targets": [
       "c:te-provoca",
@@ -16689,7 +17164,8 @@
       "l:calor",
       "l:hacer",
       "l:provocar",
-      "l:sopa"
+      "l:sopa",
+      "p:hace-frio"
     ],
     "targets": [
       "c:te-provoca",
@@ -17080,7 +17556,9 @@
     "requires": [
       "c:cuanto-le-debo",
       "l:cuánto",
-      "l:deber"
+      "l:deber",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:cuanto-le-debo"
@@ -17193,7 +17671,8 @@
       "l:cuánto",
       "l:deber",
       "l:disculpar",
-      "l:total"
+      "l:total",
+      "p:por-ciento"
     ],
     "targets": [
       "c:cuanto-le-debo"
@@ -17234,7 +17713,8 @@
       "g:ser-identity",
       "l:cuánto",
       "l:deber",
-      "l:ser"
+      "l:ser",
+      "p:somos-cuatro"
     ],
     "targets": [
       "c:cuanto-le-debo"
@@ -17258,6 +17738,8 @@
       "l:favor",
       "l:traer",
       "l:vaso",
+      "p:container-de",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -17285,6 +17767,7 @@
       "l:perdón",
       "l:sal",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -17310,8 +17793,9 @@
       "l:estar",
       "l:piso",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae",
+      "p:otro-no-article",
       "p:possessives-basic"
     ],
     "targets": [
@@ -17335,6 +17819,7 @@
       "l:día",
       "l:menú",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -17359,6 +17844,7 @@
       "l:cuchillo",
       "l:pollo",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae",
       "p:para-inf"
@@ -17386,6 +17872,8 @@
       "l:joven",
       "l:taza",
       "l:traer",
+      "p:container-de",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -17415,6 +17903,8 @@
       "l:jugo",
       "l:mango",
       "l:traer",
+      "p:hace-frio",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -17437,8 +17927,9 @@
       "l:docena",
       "l:empanada",
       "l:traer",
-      "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:container-de",
+      "p:llevar-traer",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:empanada",
@@ -17462,6 +17953,8 @@
       "l:botella",
       "l:frío",
       "l:traer",
+      "p:container-de",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -17484,7 +17977,9 @@
       "g:present-er-ir",
       "l:plato",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:plato"
@@ -17506,7 +18001,9 @@
       "l:tinto",
       "l:torta",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:torta"
@@ -17528,7 +18025,9 @@
       "l:carta",
       "l:postre",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:carta",
@@ -17552,6 +18051,8 @@
       "l:pan",
       "l:queso",
       "l:traer",
+      "p:con-sin",
+      "p:llevar-traer",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -17573,7 +18074,9 @@
       "g:present-er-ir",
       "l:bandeja",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
+      "p:me-trae",
       "p:para-inf"
     ],
     "targets": [
@@ -17596,7 +18099,10 @@
       "l:jugo",
       "l:niño",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
+      "p:me-trae",
+      "p:otro-no-article",
       "p:para-inf"
     ],
     "targets": [],
@@ -17616,7 +18122,9 @@
       "g:present-er-ir",
       "l:tinto",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -17638,7 +18146,9 @@
       "l:estar",
       "l:mesa",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -17658,7 +18168,9 @@
       "l:cocina",
       "l:limonada",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:limonada"
@@ -17679,7 +18191,9 @@
       "g:present-er-ir",
       "l:cuenta",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "c:la-cuenta",
@@ -17703,6 +18217,8 @@
       "l:desayuno",
       "l:huevo",
       "l:traer",
+      "p:con-sin",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae",
       "p:para-inf"
@@ -17728,7 +18244,8 @@
       "g:present-ar",
       "l:azúcar",
       "l:pasar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -17747,7 +18264,8 @@
       "g:present-ar",
       "l:carta",
       "l:pasar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:carta"
@@ -17768,7 +18286,8 @@
       "g:present-ar",
       "l:pan",
       "l:pasar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -17852,7 +18371,9 @@
       "g:gender-articles",
       "l:agua",
       "l:regalar",
-      "l:vaso"
+      "l:vaso",
+      "p:container-de",
+      "p:me-trae"
     ],
     "targets": [
       "l:vaso"
@@ -17872,7 +18393,8 @@
       "c:me-regala",
       "g:gender-articles",
       "l:dar",
-      "l:plato"
+      "l:plato",
+      "p:me-trae"
     ],
     "targets": [
       "l:plato"
@@ -17893,7 +18415,9 @@
       "g:gender-articles",
       "l:dar",
       "l:taza",
-      "l:té"
+      "l:té",
+      "p:container-de",
+      "p:me-trae"
     ],
     "targets": [
       "l:taza"
@@ -17914,7 +18438,9 @@
       "g:gender-articles",
       "l:libra",
       "l:queso",
-      "l:regalar"
+      "l:regalar",
+      "p:container-de",
+      "p:me-trae"
     ],
     "targets": [
       "l:queso"
@@ -17937,6 +18463,8 @@
       "l:libra",
       "l:plátano",
       "l:regalar",
+      "p:container-de",
+      "p:me-trae",
       "p:para-inf"
     ],
     "targets": [
@@ -17958,7 +18486,9 @@
       "g:gender-articles",
       "l:kilo",
       "l:papa",
-      "l:regalar"
+      "l:regalar",
+      "p:container-de",
+      "p:me-trae"
     ],
     "targets": [],
     "kind": "question",
@@ -17977,7 +18507,9 @@
       "g:gender-articles",
       "l:bolsa",
       "l:pan",
-      "l:regalar"
+      "l:regalar",
+      "p:container-de",
+      "p:me-trae"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -17998,7 +18530,8 @@
       "l:ajiaco",
       "l:deber",
       "l:probarse",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:tener-que-hay-que",
@@ -18024,7 +18557,8 @@
       "l:llegar",
       "l:mesa",
       "l:querer",
-      "l:temprano"
+      "l:temprano",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18092,7 +18626,8 @@
       "l:deber",
       "l:noche",
       "l:tinto",
-      "l:tomar"
+      "l:tomar",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18115,7 +18650,8 @@
       "l:deber",
       "l:hora",
       "l:llamar",
-      "l:qué"
+      "l:qué",
+      "p:personal-a"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18194,7 +18730,9 @@
       "l:ir",
       "l:mercado",
       "l:temprano",
-      "p:para-inf"
+      "p:ir-a-venir-de-place",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18217,7 +18755,8 @@
       "l:azúcar",
       "l:deber",
       "l:jugo",
-      "l:pedir"
+      "l:pedir",
+      "p:con-sin"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18314,7 +18853,8 @@
       "l:deber",
       "l:estar",
       "l:puerta",
-      "l:vez"
+      "l:vez",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18414,6 +18954,7 @@
       "l:deber",
       "l:qué",
       "l:sábado",
+      "p:days-el-lunes",
       "p:para-inf"
     ],
     "targets": [
@@ -18439,6 +18980,7 @@
       "l:mamá",
       "l:noche",
       "p:demonstratives-basic",
+      "p:personal-a",
       "p:possessives-basic",
       "p:time-sequence-basic"
     ],
@@ -18538,7 +19080,8 @@
       "l:dormir",
       "l:sueño",
       "l:tener",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18561,7 +19104,8 @@
       "l:deber",
       "l:estudiar",
       "l:número",
-      "l:vez"
+      "l:vez",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18605,7 +19149,9 @@
       "l:deber",
       "l:llegar",
       "l:tarde",
-      "l:vez"
+      "l:vez",
+      "p:llegar-a-tiempo",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18652,7 +19198,8 @@
       "l:deber",
       "l:ir",
       "l:mañana",
-      "l:temprano"
+      "l:temprano",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18697,7 +19244,8 @@
       "l:aquí",
       "l:deber",
       "l:dejar",
-      "l:propina"
+      "l:propina",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:tener-que-hay-que",
@@ -18741,7 +19289,8 @@
       "g:tener-que-hay-que",
       "l:ahora",
       "l:deber",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18787,7 +19336,8 @@
       "g:tener-que-hay-que",
       "l:abrir",
       "l:café",
-      "l:deber"
+      "l:deber",
+      "p:telling-time"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18881,7 +19431,8 @@
       "l:deber",
       "l:mes",
       "l:pagar",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18952,7 +19503,8 @@
       "l:deber",
       "l:rápido",
       "l:servir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:tener-que-hay-que",
@@ -19044,7 +19596,9 @@
       "l:cliente",
       "l:deber",
       "l:recordar",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19229,7 +19783,9 @@
       "g:reflexive-routine",
       "g:tener-que-hay-que",
       "l:deber",
-      "l:irse"
+      "l:irse",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19251,7 +19807,8 @@
       "g:reflexive-routine",
       "g:tener-que-hay-que",
       "l:deber",
-      "l:levantarse"
+      "l:levantarse",
+      "p:telling-time"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19300,7 +19857,8 @@
       "g:tener-que-hay-que",
       "l:cocinar",
       "l:deber",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19364,7 +19922,8 @@
       "g:tener-que-hay-que",
       "l:deber",
       "l:pedir",
-      "l:perdón"
+      "l:perdón",
+      "p:pedir-disculpas-por"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19481,6 +20040,7 @@
       "l:contar",
       "l:deber",
       "l:historia",
+      "p:contar-dos-sentidos",
       "p:ya-todavia-basic"
     ],
     "targets": [
@@ -19507,7 +20067,8 @@
       "l:deber",
       "l:mesero",
       "l:rápido",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "c:la-cuenta",
@@ -19555,7 +20116,8 @@
       "g:tener-que-hay-que",
       "l:café",
       "l:deber",
-      "l:estar"
+      "l:estar",
+      "p:telling-time"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19579,6 +20141,7 @@
       "l:descansar",
       "l:domingo",
       "l:mamá",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19629,6 +20192,7 @@
       "l:lunes",
       "l:trabajo",
       "l:volver",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19798,7 +20362,8 @@
       "g:tener-que-hay-que",
       "l:deber",
       "l:sábado",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19912,6 +20477,7 @@
       "g:tener-que-hay-que",
       "l:deber",
       "l:saber",
+      "p:saber-conocer",
       "p:ya-todavia-basic"
     ],
     "targets": [
@@ -19935,7 +20501,9 @@
       "l:abrir",
       "l:cocina",
       "l:deber",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:telling-time"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -20061,6 +20629,7 @@
       "l:gustar",
       "l:pagar",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -20281,7 +20850,8 @@
       "l:deber",
       "l:encantar",
       "l:pedir",
-      "l:torta"
+      "l:torta",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:gustar-full",
@@ -20333,7 +20903,8 @@
       "l:aquí",
       "l:deber",
       "l:esperar",
-      "l:momento"
+      "l:momento",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -20356,7 +20927,8 @@
       "l:deber",
       "l:irse",
       "l:ser",
-      "l:tarde"
+      "l:tarde",
+      "p:es-de-noche-tarde"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -20501,7 +21073,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20529,7 +21104,10 @@
       "l:servir",
       "p:demonstratives-basic",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20557,8 +21135,10 @@
       "l:tenedor",
       "p:demonstratives-basic",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:prep-questions-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20584,7 +21164,10 @@
       "l:taza",
       "p:demonstratives-basic",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20610,7 +21193,9 @@
       "l:servir",
       "l:vaso",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20636,7 +21221,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20660,7 +21248,10 @@
       "l:servir",
       "p:demonstratives-basic",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20687,7 +21278,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20712,7 +21306,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20737,7 +21334,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20763,7 +21363,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20792,7 +21395,9 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20817,7 +21422,10 @@
       "l:servir",
       "l:tarjeta",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20842,7 +21450,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20867,6 +21478,7 @@
       "l:sopa",
       "l:tomar",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -20895,6 +21507,7 @@
       "l:servir",
       "l:tenedor",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -21009,6 +21622,7 @@
       "l:tomar",
       "l:vaso",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -21037,6 +21651,7 @@
       "l:olla",
       "l:servir",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -21065,6 +21680,7 @@
       "l:servir",
       "l:sopa",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -21092,6 +21708,7 @@
       "l:pan",
       "l:servir",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -21118,6 +21735,7 @@
       "l:harina",
       "l:servir",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -21146,6 +21764,8 @@
       "l:servir",
       "p:demonstratives-basic",
       "p:para-inf",
+      "p:para-inf-purpose",
+      "p:personal-a",
       "p:servir-para"
     ],
     "targets": [
@@ -21172,6 +21792,7 @@
       "l:reseña",
       "l:servir",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -21200,6 +21821,7 @@
       "l:parar",
       "l:servir",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -21226,7 +21848,9 @@
       "l:salir",
       "l:servir",
       "p:demonstratives-basic",
+      "p:otro-no-article",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -21254,6 +21878,7 @@
       "l:pagar",
       "l:servir",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -21360,7 +21985,8 @@
       "l:ayer",
       "l:café",
       "l:servir",
-      "l:teléfono"
+      "l:teléfono",
+      "p:no-hasta"
     ],
     "targets": [
       "l:servir"
@@ -21385,7 +22011,8 @@
       "g:verb-infinitive",
       "l:comprar",
       "l:nevera",
-      "l:servir"
+      "l:servir",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:servir"
@@ -21479,7 +22106,9 @@
       "l:servir",
       "p:demonstratives-basic",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:prep-questions-basic",
+      "p:question-word-order",
       "p:servir-para"
     ],
     "targets": [
@@ -21532,8 +22161,9 @@
       "l:tenedor",
       "l:traer",
       "p:demonstratives-basic",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:otro-no-article"
     ],
     "targets": [
       "l:servir",
@@ -21558,8 +22188,9 @@
       "l:servir",
       "l:traer",
       "p:demonstratives-basic",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:otro-no-article"
     ],
     "targets": [
       "l:cuchara",
@@ -21611,7 +22242,9 @@
       "l:servir",
       "l:taza",
       "l:tinto",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:me-trae",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:stem-e-i"
@@ -21635,8 +22268,10 @@
       "l:romper",
       "l:traer",
       "p:demonstratives-basic",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:me-trae",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:plato",
@@ -21661,8 +22296,9 @@
       "l:tinto",
       "l:traer",
       "l:vaso",
-      "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:container-de",
+      "p:llevar-traer",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:vaso",
@@ -21686,6 +22322,7 @@
       "l:mesero",
       "l:traer",
       "l:vaso",
+      "p:llevar-traer",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -21709,8 +22346,8 @@
       "l:buñuelo",
       "l:cocina",
       "l:traer",
-      "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:llevar-traer",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:buñuelo",
@@ -21733,8 +22370,8 @@
       "l:almuerzo",
       "l:oficina",
       "l:traer",
-      "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:llevar-traer",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "p:me-trae"
@@ -21755,8 +22392,8 @@
       "l:hermana",
       "l:pan",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21780,8 +22417,9 @@
       "l:mamá",
       "l:siempre",
       "l:traer",
+      "p:frequency-scale",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21807,6 +22445,7 @@
       "l:sopa",
       "l:tinto",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae",
       "p:time-sequence-basic"
@@ -21855,6 +22494,7 @@
       "l:buñuelo",
       "l:llevar",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -21881,6 +22521,8 @@
       "l:fresa",
       "l:jugo",
       "l:traer",
+      "p:con-sin",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -21908,9 +22550,12 @@
       "l:pollo",
       "l:tener",
       "l:traer",
+      "p:con-sin",
+      "p:el-agua-fria",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae",
       "p:quantifiers-basic",
+      "p:sobre-todo-solo",
       "p:tener-hambre"
     ],
     "targets": [
@@ -21936,6 +22581,7 @@
       "l:favor",
       "l:huevo",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -21960,6 +22606,8 @@
       "l:arepa",
       "l:queso",
       "l:traer",
+      "p:con-sin",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -21985,6 +22633,8 @@
       "l:aguacate",
       "l:ajiaco",
       "l:traer",
+      "p:con-sin",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -22010,6 +22660,7 @@
       "l:pescado",
       "l:sopa",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -22035,7 +22686,9 @@
       "l:cuchara",
       "l:sopa",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:cuchara",
@@ -22057,7 +22710,10 @@
       "l:aguapanela",
       "l:frío",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:aguapanela"
@@ -22079,7 +22735,9 @@
       "l:pandebono",
       "l:tinto",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:pandebono"
@@ -22102,7 +22760,10 @@
       "l:botella",
       "l:traer",
       "l:vaso",
-      "p:me-te-nos-objects"
+      "p:container-de",
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:vaso"
@@ -22126,8 +22787,10 @@
       "l:favor",
       "l:traer",
       "l:vez",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:me-trae",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:carta",
@@ -22150,7 +22813,9 @@
       "l:cuchara",
       "l:postre",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
+      "p:me-trae",
       "p:para-inf"
     ],
     "targets": [
@@ -22174,7 +22839,9 @@
       "l:jugo",
       "l:nevera",
       "l:traer",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [],
     "kind": "question",
@@ -22195,7 +22862,8 @@
       "l:favor",
       "l:pasar",
       "l:tenedor",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:tenedor"
@@ -22218,7 +22886,8 @@
       "l:cuchillo",
       "l:favor",
       "l:pasar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:cuchillo"
@@ -22240,7 +22909,9 @@
       "l:arroz",
       "l:pasar",
       "l:plato",
-      "p:me-te-nos-objects"
+      "p:container-de",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:arroz",
@@ -22262,7 +22933,8 @@
       "g:present-ar",
       "l:aguapanela",
       "l:pasar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:aguapanela"
@@ -22284,7 +22956,8 @@
       "l:cuchara",
       "l:momento",
       "l:prestar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "l:cuchara"
@@ -22429,6 +23102,7 @@
       "l:arroz",
       "l:fríjol",
       "l:gustar",
+      "p:con-sin",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22477,7 +23151,8 @@
       "g:present-ar",
       "l:encantar",
       "l:fríjol",
-      "l:plátano"
+      "l:plátano",
+      "p:con-sin"
     ],
     "targets": [
       "g:gustar-full",
@@ -22569,6 +23244,7 @@
       "l:picante",
       "l:rico",
       "l:sopa",
+      "p:le-falta-sal",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -22619,7 +23295,8 @@
       "l:buñuelo",
       "l:gustar",
       "l:mundo",
-      "l:salado"
+      "l:salado",
+      "p:todos-los-dias"
     ],
     "targets": [
       "l:buñuelo",
@@ -22699,6 +23376,7 @@
       "l:hoy",
       "l:mazorca",
       "l:salado",
+      "p:le-falta-sal",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -22841,6 +23519,7 @@
       "l:ensalada",
       "l:postre",
       "l:tenedor",
+      "p:otro-no-article",
       "p:para-inf"
     ],
     "targets": [
@@ -22932,6 +23611,7 @@
       "l:hijo",
       "l:sopa",
       "l:tenedor",
+      "p:con-sin",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22955,6 +23635,7 @@
       "l:taza",
       "l:tinto",
       "l:tomar",
+      "p:container-de",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22976,7 +23657,8 @@
       "l:leche",
       "l:taza",
       "l:tinto",
-      "l:vaso"
+      "l:vaso",
+      "p:container-de"
     ],
     "targets": [
       "l:taza",
@@ -23023,7 +23705,8 @@
       "l:diciembre",
       "l:estar",
       "l:lleno",
-      "l:mes"
+      "l:mes",
+      "p:lleno-libre"
     ],
     "targets": [
       "l:mes"
@@ -23044,7 +23727,8 @@
       "g:present-ar",
       "l:aquí",
       "l:mes",
-      "l:trabajar"
+      "l:trabajar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "l:mes"
@@ -23067,6 +23751,7 @@
       "l:mes",
       "l:ser",
       "l:tiempo",
+      "p:con-sin",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -23088,7 +23773,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:mes",
-      "l:terminar"
+      "l:terminar",
+      "p:numbers-un-una"
     ],
     "targets": [
       "l:mes"
@@ -23108,7 +23794,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:acabar",
-      "l:almuerzo"
+      "l:almuerzo",
+      "p:telling-time"
     ],
     "targets": [
       "l:acabar"
@@ -23215,7 +23902,8 @@
       "g:stem-boot",
       "l:banco",
       "l:quién",
-      "l:venir"
+      "l:venir",
+      "p:ir-venir"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -23313,7 +24001,8 @@
       "g:verb-infinitive",
       "l:hablar",
       "l:momento",
-      "l:poder"
+      "l:poder",
+      "p:request-ladder"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -23445,7 +24134,8 @@
       "l:ser",
       "l:sopa",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:sopa"
@@ -23503,7 +24193,8 @@
       "c:con-el-ella",
       "g:gender-articles",
       "g:present-ar",
-      "l:llegar"
+      "l:llegar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -23522,7 +24213,8 @@
       "g:prep-pronouns",
       "g:stem-boot",
       "l:almorzar",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -23566,7 +24258,8 @@
       "l:estar",
       "l:gritar",
       "l:siempre",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -23770,6 +24463,8 @@
       "l:lejos",
       "l:mamá",
       "l:vivir",
+      "p:cerca-de",
+      "p:position-de",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23793,7 +24488,8 @@
       "l:cerca",
       "l:estar",
       "l:parque",
-      "p:cerca-de"
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -23817,7 +24513,8 @@
       "l:cerca",
       "l:estar",
       "l:señora",
-      "p:cerca-de"
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -23839,6 +24536,8 @@
       "l:casa",
       "l:estar",
       "l:lejos",
+      "p:cerca-de",
+      "p:position-de",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23861,7 +24560,9 @@
       "g:prep-pronouns",
       "l:carro",
       "l:detrás",
-      "l:estar"
+      "l:estar",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -23883,7 +24584,9 @@
       "g:prep-pronouns",
       "l:delante",
       "l:estar",
-      "l:fila"
+      "l:fila",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -23905,7 +24608,9 @@
       "g:hay-vs-esta",
       "g:prep-pronouns",
       "l:detrás",
-      "l:señora"
+      "l:señora",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -24051,7 +24756,9 @@
       "g:prep-pronouns",
       "g:stem-boot",
       "l:empezar",
-      "l:fiesta"
+      "l:fiesta",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -24151,7 +24858,9 @@
     "requires": [
       "g:reflexive-routine",
       "g:yo-irregular",
-      "l:parecerse"
+      "l:parecerse",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a"
     ],
     "targets": [
       "l:parecerse"
@@ -24172,6 +24881,8 @@
       "g:reflexive-routine",
       "l:parecerse",
       "l:tío",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -24194,6 +24905,8 @@
       "g:reflexive-routine",
       "l:hija",
       "l:parecerse",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -24217,7 +24930,9 @@
       "g:reflexive-routine",
       "l:hablar",
       "l:parecerse",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a"
     ],
     "targets": [
       "l:parecerse"
@@ -24241,6 +24956,8 @@
       "l:empanada",
       "l:parecerse",
       "p:demonstratives-basic",
+      "p:los-de-la-camiseta",
+      "p:parecer-vs-parecerse",
       "p:possessives-basic"
     ],
     "targets": [
@@ -24387,6 +25104,7 @@
       "l:ensalada",
       "l:esposa",
       "l:gustar",
+      "p:con-sin",
       "p:possessives-basic"
     ],
     "targets": [
@@ -24413,6 +25131,7 @@
       "l:domingo",
       "l:esposo",
       "l:gustar",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -24437,6 +25156,7 @@
       "l:comer",
       "l:encantar",
       "l:papá",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -24485,7 +25205,8 @@
       "l:domingo",
       "l:gustar",
       "l:mesero",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:gustar-full"
@@ -24741,7 +25462,8 @@
       "g:present-ar",
       "l:ajiaco",
       "l:gustar",
-      "l:pollo"
+      "l:pollo",
+      "p:con-sin"
     ],
     "targets": [
       "g:gustar-full",
@@ -24981,7 +25703,8 @@
       "g:questions",
       "l:gustar",
       "l:plato",
-      "l:qué"
+      "l:qué",
+      "p:gustar-mas-que"
     ],
     "targets": [
       "l:plato"
@@ -25092,7 +25815,8 @@
       "l:cerrar",
       "l:cuenta",
       "l:deber",
-      "l:pagar"
+      "l:pagar",
+      "p:telling-time"
     ],
     "targets": [
       "c:la-cuenta",
@@ -25120,6 +25844,8 @@
       "l:deber",
       "l:tarjeta",
       "l:traer",
+      "p:aqui-ahi-alla",
+      "p:llevar-traer",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25145,7 +25871,8 @@
       "l:deber",
       "l:pedir",
       "l:precio",
-      "l:preguntar"
+      "l:preguntar",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -25220,7 +25947,8 @@
       "l:permiso",
       "l:salir",
       "l:temprano",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -25242,7 +25970,8 @@
       "g:tener-que-hay-que",
       "l:cerrar",
       "l:cocina",
-      "l:deber"
+      "l:deber",
+      "p:telling-time"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -25266,6 +25995,7 @@
       "l:pan",
       "l:pedir",
       "l:sábado",
+      "p:days-el-lunes",
       "p:para-inf"
     ],
     "targets": [
@@ -25362,8 +26092,7 @@
       "g:tener-que-hay-que",
       "l:deber",
       "l:gritar",
-      "l:hablar",
-      "p:con-sin"
+      "l:hablar"
     ],
     "targets": [
       "g:tener-que-hay-que",
@@ -25412,6 +26141,8 @@
       "l:domingo",
       "l:primo",
       "l:venir",
+      "p:days-el-lunes",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25437,7 +26168,8 @@
       "l:cuenta",
       "l:reunión",
       "l:tener",
-      "l:traer"
+      "l:traer",
+      "p:telling-time"
     ],
     "targets": [
       "c:la-cuenta",
@@ -25460,6 +26192,8 @@
       "l:café",
       "l:leche",
       "l:traer",
+      "p:con-sin",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -25482,6 +26216,8 @@
       "l:arroz",
       "l:huevo",
       "l:traer",
+      "p:con-sin",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -25509,6 +26245,7 @@
       "l:comer",
       "l:pequeño",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae",
       "p:quantifiers-basic"
@@ -25534,6 +26271,8 @@
       "l:fríjol",
       "l:plato",
       "l:traer",
+      "p:container-de",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -25559,6 +26298,7 @@
       "l:empanada",
       "l:queso",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -25583,7 +26323,9 @@
       "g:present-er-ir",
       "l:ajiaco",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
+      "p:me-trae",
       "p:para-inf"
     ],
     "targets": [
@@ -25607,7 +26349,10 @@
       "l:servir",
       "p:demonstratives-basic",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -25632,7 +26377,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -25656,7 +26404,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -25681,7 +26432,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -25706,7 +26460,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -25731,7 +26488,10 @@
       "l:servir",
       "l:silla",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -25784,6 +26544,7 @@
       "l:servir",
       "p:demonstratives-basic",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -25811,6 +26572,8 @@
       "l:tinto",
       "l:tomar",
       "p:para-inf",
+      "p:para-inf-purpose",
+      "p:por-la-manana",
       "p:servir-para"
     ],
     "targets": [
@@ -25837,6 +26600,7 @@
       "l:escuela",
       "l:servir",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -25864,6 +26628,7 @@
       "l:pared",
       "l:servir",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:servir-para"
     ],
     "targets": [
@@ -25891,6 +26656,7 @@
       "l:cliente",
       "l:llevar",
       "l:servir",
+      "p:personal-a",
       "p:servir-para"
     ],
     "targets": [
@@ -25994,6 +26760,7 @@
       "l:pagar",
       "l:servir",
       "l:tarjeta",
+      "p:aqui-ahi-alla",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -26019,7 +26786,10 @@
       "l:qué",
       "l:servir",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
     ],
     "targets": [
       "g:stem-e-i",
@@ -26074,6 +26844,7 @@
       "l:servir",
       "l:vaso",
       "p:demonstratives-basic",
+      "p:el-agua-fria",
       "p:para-inf",
       "p:servir-para"
     ],
@@ -26103,6 +26874,7 @@
       "l:tinto",
       "p:demonstratives-basic",
       "p:para-inf",
+      "p:por-la-manana",
       "p:servir-para"
     ],
     "targets": [
@@ -26182,8 +26954,9 @@
       "l:frío",
       "l:plato",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:me-trae",
+      "p:otro-no-article",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26264,6 +27037,8 @@
       "l:leche",
       "l:traer",
       "l:vaso",
+      "p:container-de",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -26289,6 +27064,7 @@
       "l:bandeja",
       "l:niño",
       "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:me-trae"
     ],
@@ -26431,7 +27207,8 @@
     "requires": [
       "g:stem-e-i",
       "l:pedir",
-      "l:postre"
+      "l:postre",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:stem-e-i",

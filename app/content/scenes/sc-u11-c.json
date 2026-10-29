@@ -207,7 +207,17 @@
     "l:señor",
     "l:señora",
     "l:trabajar",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:days-el-lunes",
     "p:dejar-de-inf",
+    "p:empezar-terminar",
+    "p:medir",
+    "p:medir-pesar",
+    "p:medir-pesar-caber",
+    "p:no-es-x-es-y",
+    "p:pesar-pesarse",
     "p:possessives-basic",
     "p:quantifiers-basic"
   ]

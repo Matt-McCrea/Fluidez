@@ -110,7 +110,8 @@
       "g:gustar-basic",
       "l:domingo",
       "l:gustar",
-      "l:nadar"
+      "l:nadar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -157,7 +158,8 @@
       "g:present-ar",
       "l:gustar",
       "l:lunes",
-      "l:reunión"
+      "l:reunión",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -314,7 +316,8 @@
       "g:gustar-basic",
       "l:chocolate",
       "l:gustar",
-      "l:pan"
+      "l:pan",
+      "p:con-sin"
     ]
   },
   {
@@ -388,7 +391,8 @@
       "g:present-ar",
       "l:domingo",
       "l:gustar",
-      "l:partido"
+      "l:partido",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -434,7 +438,9 @@
       "g:present-ar",
       "l:cantar",
       "l:gustar",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ]
   },
   {
@@ -483,7 +489,8 @@
       "l:caminar",
       "l:centro",
       "l:gustar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -509,7 +516,8 @@
       "l:fin",
       "l:gustar",
       "l:semana",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -561,7 +569,8 @@
       "l:fruta",
       "l:gustar",
       "l:jugo",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -701,7 +710,8 @@
       "g:present-ar",
       "l:bebida",
       "l:gustar",
-      "l:leche"
+      "l:leche",
+      "p:con-sin"
     ]
   },
   {
@@ -726,7 +736,8 @@
       "g:gustar-basic",
       "l:chocolate",
       "l:fruta",
-      "l:gustar"
+      "l:gustar",
+      "p:con-sin"
     ]
   },
   {
@@ -774,7 +785,8 @@
       "g:present-ar",
       "l:cantar",
       "l:día",
-      "l:gustar"
+      "l:gustar",
+      "p:todos-los-dias"
     ]
   },
   {
@@ -842,7 +854,8 @@
       "l:correo",
       "l:gustar",
       "l:leer",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -1060,7 +1073,8 @@
       "l:caminar",
       "l:gustar",
       "l:nadar",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -1084,7 +1098,8 @@
       "g:gustar-basic",
       "l:agua",
       "l:gustar",
-      "l:nadar"
+      "l:nadar",
+      "p:el-agua-fria"
     ]
   },
   {
@@ -1135,7 +1150,8 @@
       "g:present-ar",
       "l:gustar",
       "l:jueves",
-      "l:reunión"
+      "l:reunión",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -1158,7 +1174,8 @@
       "g:gustar-basic",
       "g:present-ar",
       "l:gustar",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -1181,7 +1198,8 @@
       "g:gustar-basic",
       "g:present-ar",
       "l:gustar",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -1205,7 +1223,8 @@
       "g:gustar-basic",
       "l:gustar",
       "l:parque",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -1293,7 +1312,9 @@
       "g:present-ar",
       "l:ayudar",
       "l:café",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:personal-a"
     ]
   },
   {
@@ -1342,7 +1363,8 @@
       "l:comer",
       "l:gustar",
       "l:pizza",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -1464,7 +1486,9 @@
       "l:gustar",
       "l:leche",
       "l:preferir",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -1488,7 +1512,9 @@
       "g:gustar-basic",
       "l:agua",
       "l:fruta",
-      "l:gustar"
+      "l:gustar",
+      "p:con-sin",
+      "p:el-agua-fria"
     ]
   },
   {
@@ -1788,7 +1814,8 @@
       "g:gustar-basic",
       "l:banco",
       "l:calle",
-      "l:gustar"
+      "l:gustar",
+      "p:street-names"
     ]
   },
   {
@@ -1964,7 +1991,8 @@
       "c:me-gusta",
       "g:gustar-basic",
       "l:gustar",
-      "l:hablar"
+      "l:hablar",
+      "p:senor-don-article"
     ]
   },
   {
@@ -2033,7 +2061,8 @@
       "g:gustar-basic",
       "l:café",
       "l:gustar",
-      "l:llegar"
+      "l:llegar",
+      "p:telling-time"
     ]
   },
   {
@@ -2055,7 +2084,8 @@
       "g:gender-articles",
       "g:gustar-basic",
       "l:gustar",
-      "l:llegar"
+      "l:llegar",
+      "p:telling-time"
     ]
   },
   {
@@ -2102,7 +2132,8 @@
       "g:gustar-basic",
       "l:gustar",
       "l:terminar",
-      "l:trabajo"
+      "l:trabajo",
+      "p:telling-time"
     ]
   },
   {
@@ -2148,7 +2179,8 @@
       "g:gustar-basic",
       "l:ayudar",
       "l:cliente",
-      "l:gustar"
+      "l:gustar",
+      "p:personal-a"
     ]
   },
   {
@@ -2406,7 +2438,8 @@
       "l:domingo",
       "l:gustar",
       "l:parque",
-      "l:pasar"
+      "l:pasar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -2432,7 +2465,8 @@
       "l:gustar",
       "l:oficina",
       "l:pasar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -2460,7 +2494,8 @@
       "l:fin",
       "l:gustar",
       "l:pasar",
-      "l:semana"
+      "l:semana",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -2485,7 +2520,8 @@
       "g:gustar-basic",
       "l:gustar",
       "l:salir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -2510,7 +2546,8 @@
       "g:gustar-basic",
       "l:gustar",
       "l:salir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -2535,7 +2572,8 @@
       "g:gustar-basic",
       "l:gustar",
       "l:lunes",
-      "l:salir"
+      "l:salir",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -2560,7 +2598,9 @@
       "g:gustar-basic",
       "l:fin",
       "l:gustar",
-      "l:semana"
+      "l:semana",
+      "p:days-el-lunes",
+      "p:gustar-mas-que"
     ]
   },
   {
@@ -2582,7 +2622,8 @@
       "g:gender-articles",
       "g:gustar-basic",
       "l:gustar",
-      "l:tinto"
+      "l:tinto",
+      "p:gustar-mas-que"
     ]
   },
   {
@@ -2605,7 +2646,8 @@
       "g:gender-articles",
       "g:gustar-basic",
       "l:cerveza",
-      "l:gustar"
+      "l:gustar",
+      "p:gustar-mas-que"
     ]
   },
   {
@@ -2630,7 +2672,8 @@
       "g:gustar-basic",
       "l:cine",
       "l:fútbol",
-      "l:gustar"
+      "l:gustar",
+      "p:gustar-mas-que"
     ]
   },
   {
@@ -2652,7 +2695,8 @@
       "c:me-gusta",
       "g:gustar-basic",
       "l:bailar",
-      "l:gustar"
+      "l:gustar",
+      "p:gustar-mas-que"
     ]
   },
   {
@@ -2674,7 +2718,8 @@
       "g:gender-articles",
       "g:gustar-basic",
       "l:gustar",
-      "l:pan"
+      "l:pan",
+      "p:gustar-mas-que"
     ]
   },
   {
@@ -2699,7 +2744,9 @@
       "g:gustar-basic",
       "l:domingo",
       "l:gustar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:gustar-mas-que"
     ]
   },
   {
@@ -2747,7 +2794,8 @@
       "l:amigo",
       "l:fútbol",
       "l:gustar",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -2772,7 +2820,8 @@
       "g:gustar-basic",
       "l:fútbol",
       "l:gustar",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -2798,7 +2847,8 @@
       "l:calle",
       "l:fútbol",
       "l:gustar",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -2823,7 +2873,8 @@
       "g:gustar-basic",
       "l:cocinar",
       "l:gustar",
-      "l:jueves"
+      "l:jueves",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -2848,7 +2899,8 @@
       "g:gustar-basic",
       "l:cocinar",
       "l:domingo",
-      "l:gustar"
+      "l:gustar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -2919,7 +2971,8 @@
       "g:present-ar",
       "l:bebida",
       "l:chocolate",
-      "l:gustar"
+      "l:gustar",
+      "p:con-sin"
     ]
   },
   {
@@ -3113,7 +3166,8 @@
       "g:gustar-basic",
       "g:present-ar",
       "l:gustar",
-      "l:martes"
+      "l:martes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -3136,7 +3190,8 @@
       "g:gustar-basic",
       "g:present-ar",
       "l:domingo",
-      "l:gustar"
+      "l:gustar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -3160,7 +3215,8 @@
       "g:present-ar",
       "l:centro",
       "l:gustar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -3254,7 +3310,8 @@
       "g:gustar-basic",
       "g:present-ar",
       "l:gustar",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -3304,7 +3361,8 @@
       "g:gustar-basic",
       "l:gustar",
       "l:nadar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -3351,7 +3409,8 @@
       "g:stem-boot",
       "l:empezar",
       "l:gustar",
-      "l:horario"
+      "l:horario",
+      "p:telling-time"
     ]
   },
   {
@@ -3960,7 +4019,8 @@
       "g:gustar-basic",
       "g:questions",
       "l:cuál",
-      "l:gustar"
+      "l:gustar",
+      "p:gustar-mas-que"
     ]
   },
   {
@@ -4007,7 +4067,8 @@
       "g:gustar-basic",
       "l:café",
       "l:gustar",
-      "l:leche"
+      "l:leche",
+      "p:con-sin"
     ]
   },
   {
@@ -4205,7 +4266,8 @@
       "g:gustar-basic",
       "l:gustar",
       "l:jueves",
-      "l:salir"
+      "l:salir",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -4253,7 +4315,8 @@
       "g:gustar-basic",
       "l:domingo",
       "l:estudiar",
-      "l:gustar"
+      "l:gustar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -4299,7 +4362,8 @@
       "g:gustar-basic",
       "l:gustar",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -4591,7 +4655,8 @@
       "g:gustar-basic",
       "l:español",
       "l:gustar",
-      "l:inglés"
+      "l:inglés",
+      "p:gustar-mas-que"
     ]
   },
   {
@@ -4768,7 +4833,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -4788,7 +4855,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:lunes",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -4805,7 +4874,8 @@
     "requires": [
       "g:present-ar",
       "l:español",
-      "l:estudiar"
+      "l:estudiar",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -4824,7 +4894,8 @@
     "requires": [
       "g:present-er-ir",
       "l:comer",
-      "l:pizza"
+      "l:pizza",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -4842,7 +4913,8 @@
       "c:vivo-en",
       "g:gender-articles",
       "g:present-er-ir",
-      "l:vivir"
+      "l:vivir",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -4859,7 +4931,8 @@
     "requires": [
       "g:present-ar",
       "l:hablar",
-      "l:japonés"
+      "l:japonés",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -4883,7 +4956,10 @@
       "g:stem-boot",
       "l:domingo",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:days-el-lunes",
+      "p:jugar-a",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -4905,7 +4981,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -4926,7 +5003,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:nadar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -4967,7 +5045,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:cocinar",
-      "l:domingo"
+      "l:domingo",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -5006,7 +5085,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:preferir",
-      "l:tinto"
+      "l:tinto",
+      "p:prefieres-x-o-y",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5027,7 +5108,8 @@
       "c:quiero",
       "g:stem-boot",
       "l:cerveza",
-      "l:querer"
+      "l:querer",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5053,7 +5135,9 @@
       "g:verb-infinitive",
       "l:poder",
       "l:salir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5079,7 +5163,9 @@
       "g:verb-infinitive",
       "l:poder",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5102,7 +5188,9 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:fiesta",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5125,7 +5213,9 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:ir",
-      "l:partido"
+      "l:partido",
+      "p:ir-a-venir-de-place",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5150,7 +5240,8 @@
       "g:ir-a-plans",
       "l:caminar",
       "l:ir",
-      "l:parque"
+      "l:parque",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5172,7 +5263,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:entender",
-      "l:plan"
+      "l:plan",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5209,7 +5301,8 @@
     "requires": [
       "g:estar-location-states",
       "l:estar",
-      "l:nervioso"
+      "l:nervioso",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5230,7 +5323,9 @@
       "g:gender-articles",
       "l:contento",
       "l:estar",
-      "l:plan"
+      "l:plan",
+      "p:contento-con-de",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5264,7 +5359,8 @@
     "requires": [
       "c:soy-de",
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5281,7 +5377,8 @@
     "requires": [
       "c:soy-de",
       "g:ser-identity",
-      "l:ser"
+      "l:ser",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5339,7 +5436,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a",
+      "p:senor-don-article"
     ]
   },
   {
@@ -5365,7 +5464,10 @@
       "g:stem-boot",
       "l:fútbol",
       "l:jueves",
-      "l:jugar"
+      "l:jugar",
+      "p:days-el-lunes",
+      "p:jugar-a",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5387,7 +5489,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:entender",
-      "l:horario"
+      "l:horario",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5409,7 +5512,10 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:preferir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5432,7 +5538,8 @@
       "c:quiero",
       "g:stem-boot",
       "l:pizza",
-      "l:querer"
+      "l:querer",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5455,7 +5562,8 @@
       "g:gender-articles",
       "g:gustar-basic",
       "l:cerveza",
-      "l:gustar"
+      "l:gustar",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5525,7 +5633,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:fiesta",
-      "l:venir"
+      "l:venir",
+      "p:ir-venir"
     ]
   },
   {
@@ -5547,7 +5656,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:lunes",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes",
+      "p:senor-don-article"
     ]
   },
   {
@@ -5615,7 +5726,9 @@
       "g:verb-infinitive",
       "l:jugar",
       "l:martes",
-      "l:poder"
+      "l:poder",
+      "p:days-el-lunes",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5638,7 +5751,8 @@
       "g:verb-infinitive",
       "l:abrir",
       "l:domingo",
-      "l:poder"
+      "l:poder",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -5663,7 +5777,9 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:cine",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5686,7 +5802,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:entender",
-      "l:plan"
+      "l:plan",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5710,7 +5827,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5733,7 +5852,8 @@
       "c:voy-vas",
       "g:ir-a-plans",
       "l:ir",
-      "l:nadar"
+      "l:nadar",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5755,7 +5875,8 @@
       "c:voy-a",
       "g:ir-a-plans",
       "l:cantar",
-      "l:ir"
+      "l:ir",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5779,7 +5900,8 @@
       "l:chévere",
       "l:entender",
       "l:qué",
-      "l:significar"
+      "l:significar",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5800,7 +5922,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:café",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -5821,7 +5944,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:lunes",
-      "l:salir"
+      "l:salir",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -5841,7 +5965,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -5863,7 +5988,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:encontrar",
-      "l:libro"
+      "l:libro",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5885,7 +6011,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:música",
-      "l:sentir"
+      "l:sentir",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -5953,7 +6080,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:pizza",
-      "l:querer"
+      "l:querer",
+      "p:senor-don-article"
     ]
   },
   {
@@ -5995,7 +6123,9 @@
       "g:questions",
       "g:stem-boot",
       "l:querer",
-      "l:qué"
+      "l:qué",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ]
   },
   {
@@ -6018,7 +6148,8 @@
       "l:chocolate",
       "l:cliente",
       "l:pan",
-      "l:querer"
+      "l:querer",
+      "p:con-sin"
     ]
   },
   {
@@ -6129,7 +6260,8 @@
       "l:cerveza",
       "l:jugo",
       "l:preferir",
-      "l:querer"
+      "l:querer",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6149,7 +6281,8 @@
     "requires": [
       "g:stem-boot",
       "l:helado",
-      "l:querer"
+      "l:querer",
+      "p:otro-no-article"
     ]
   },
   {
@@ -6170,7 +6303,8 @@
       "g:stem-boot",
       "l:cerveza",
       "l:querer",
-      "l:señor"
+      "l:señor",
+      "p:otro-no-article"
     ]
   },
   {
@@ -6216,7 +6350,8 @@
       "l:estudiante",
       "l:pizza",
       "l:querer",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -6265,7 +6400,8 @@
       "l:fiesta",
       "l:hacer",
       "l:querer",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -6290,7 +6426,9 @@
       "g:verb-infinitive",
       "l:poder",
       "l:sábado",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes",
+      "p:request-ladder"
     ]
   },
   {
@@ -6318,7 +6456,8 @@
       "l:ir",
       "l:poder",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -6345,7 +6484,8 @@
       "l:ayudar",
       "l:domingo",
       "l:lunes",
-      "l:poder"
+      "l:poder",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -6371,7 +6511,9 @@
       "l:jueves",
       "l:poder",
       "l:señora",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes",
+      "p:request-ladder"
     ]
   },
   {
@@ -6397,7 +6539,9 @@
       "l:café",
       "l:martes",
       "l:poder",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes",
+      "p:senor-don-article"
     ]
   },
   {
@@ -6420,7 +6564,10 @@
       "g:verb-infinitive",
       "l:empezar",
       "l:poder",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ]
   },
   {
@@ -6443,7 +6590,8 @@
       "g:stem-boot",
       "l:miércoles",
       "l:poder",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -6510,7 +6658,8 @@
       "g:questions",
       "g:stem-boot",
       "l:cuándo",
-      "l:poder"
+      "l:poder",
+      "p:question-word-order"
     ]
   },
   {
@@ -6556,7 +6705,8 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:poder",
-      "l:salir"
+      "l:salir",
+      "p:telling-time"
     ]
   },
   {
@@ -6580,7 +6730,10 @@
       "g:verb-infinitive",
       "l:aquí",
       "l:estar",
-      "l:poder"
+      "l:poder",
+      "p:aqui-ahi-alla",
+      "p:request-ladder",
+      "p:telling-time"
     ]
   },
   {
@@ -6602,7 +6755,9 @@
       "g:stem-boot",
       "l:leche",
       "l:preferir",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6626,7 +6781,9 @@
       "g:stem-boot",
       "l:domingo",
       "l:preferir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6649,7 +6806,8 @@
       "g:stem-boot",
       "l:café",
       "l:cocinar",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6671,7 +6829,8 @@
       "g:present-er-ir",
       "l:caminar",
       "l:centro",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6693,7 +6852,8 @@
       "g:stem-boot",
       "l:cliente",
       "l:pan",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6716,7 +6876,8 @@
       "g:stem-boot",
       "l:preferir",
       "l:qué",
-      "l:señor"
+      "l:señor",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6739,7 +6900,9 @@
       "g:stem-boot",
       "l:domingo",
       "l:preferir",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6761,7 +6924,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:cine",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6785,7 +6949,8 @@
       "g:stem-boot",
       "l:helado",
       "l:pizza",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6807,7 +6972,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:fruta",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6833,7 +6999,8 @@
       "l:compañero",
       "l:fútbol",
       "l:jugar",
-      "l:oficina"
+      "l:oficina",
+      "p:jugar-a"
     ]
   },
   {
@@ -6859,7 +7026,9 @@
       "g:stem-boot",
       "l:domingo",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -6887,7 +7056,9 @@
       "l:fútbol",
       "l:jugar",
       "l:nadar",
-      "l:preferir"
+      "l:preferir",
+      "p:jugar-a",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -6913,7 +7084,9 @@
       "l:fútbol",
       "l:jugar",
       "l:parque",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -6939,7 +7112,8 @@
       "l:calle",
       "l:estudiante",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -6963,7 +7137,10 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:don-dona-nombre",
+      "p:jugar-a",
+      "p:senor-don-article"
     ]
   },
   {
@@ -6983,7 +7160,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:empezar",
-      "l:trabajo"
+      "l:trabajo",
+      "p:telling-time"
     ]
   },
   {
@@ -7027,7 +7205,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:empezar",
-      "l:fiesta"
+      "l:fiesta",
+      "p:telling-time"
     ]
   },
   {
@@ -7048,7 +7227,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:empezar",
-      "l:partido"
+      "l:partido",
+      "p:telling-time"
     ]
   },
   {
@@ -7069,7 +7249,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:empezar",
-      "l:película"
+      "l:película",
+      "p:telling-time"
     ]
   },
   {
@@ -7092,7 +7273,8 @@
       "g:stem-boot",
       "l:cuándo",
       "l:empezar",
-      "l:reunión"
+      "l:reunión",
+      "p:question-word-order"
     ]
   },
   {
@@ -7115,7 +7297,8 @@
       "g:stem-boot",
       "l:empezar",
       "l:partido",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -7136,7 +7319,8 @@
       "g:present-ar",
       "l:café",
       "l:empezar",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -7178,7 +7362,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:empezar",
-      "l:martes"
+      "l:martes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -7343,7 +7528,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:cliente",
-      "l:entender"
+      "l:entender",
+      "p:personal-a"
     ]
   },
   {
@@ -7407,7 +7593,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:encontrar",
-      "l:número"
+      "l:número",
+      "p:senor-don-article"
     ]
   },
   {
@@ -7431,7 +7618,8 @@
       "g:stem-boot",
       "l:banco",
       "l:dónde",
-      "l:encontrar"
+      "l:encontrar",
+      "p:question-word-order"
     ]
   },
   {
@@ -7543,7 +7731,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:fiesta",
-      "l:venir"
+      "l:venir",
+      "p:ir-venir"
     ]
   },
   {
@@ -7565,7 +7754,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:sábado",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -7589,7 +7779,8 @@
       "g:stem-boot",
       "l:café",
       "l:cuándo",
-      "l:venir"
+      "l:venir",
+      "p:question-word-order"
     ]
   },
   {
@@ -7609,7 +7800,9 @@
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:venir"
+      "l:venir",
+      "p:senor-don-article",
+      "p:telling-time"
     ]
   },
   {
@@ -7632,7 +7825,8 @@
       "g:stem-boot",
       "l:cliente",
       "l:domingo",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -7653,7 +7847,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:jueves",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -7722,7 +7917,8 @@
       "g:stem-boot",
       "l:fiesta",
       "l:quién",
-      "l:venir"
+      "l:venir",
+      "p:ir-venir"
     ]
   },
   {
@@ -7747,7 +7943,8 @@
       "g:stem-boot",
       "l:fiesta",
       "l:sábado",
-      "l:tener"
+      "l:tener",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -7771,7 +7968,8 @@
       "g:stem-boot",
       "l:plan",
       "l:tener",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -7885,7 +8083,8 @@
       "g:gender-articles",
       "l:pizza",
       "l:tener",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -7909,7 +8108,9 @@
       "g:stem-boot",
       "l:año",
       "l:cuánto",
-      "l:tener"
+      "l:tener",
+      "p:senor-don-article",
+      "p:tener-anos"
     ]
   },
   {
@@ -8047,7 +8248,8 @@
       "g:stem-boot",
       "l:chocolate",
       "l:pan",
-      "l:querer"
+      "l:querer",
+      "p:con-sin"
     ]
   },
   {
@@ -8075,7 +8277,9 @@
       "l:preferir",
       "l:sábado",
       "l:venir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -8157,7 +8361,8 @@
       "g:present-ar",
       "g:stem-boot",
       "l:empezar",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ]
   },
   {
@@ -8222,7 +8427,9 @@
       "g:verb-infinitive",
       "l:abrir",
       "l:lunes",
-      "l:poder"
+      "l:poder",
+      "p:days-el-lunes",
+      "p:request-ladder"
     ]
   },
   {
@@ -8295,7 +8502,9 @@
       "g:stem-boot",
       "l:fútbol",
       "l:jueves",
-      "l:jugar"
+      "l:jugar",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -8339,7 +8548,8 @@
       "l:café",
       "l:calle",
       "l:encontrar",
-      "l:estar"
+      "l:estar",
+      "p:street-names"
     ]
   },
   {
@@ -8363,7 +8573,9 @@
       "g:stem-boot",
       "l:cuándo",
       "l:empezar",
-      "l:fiesta"
+      "l:fiesta",
+      "p:question-word-order",
+      "p:telling-time"
     ]
   },
   {
@@ -8386,7 +8598,8 @@
       "g:stem-boot",
       "l:caminar",
       "l:jugar",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -8404,7 +8617,8 @@
     "source": "gen",
     "requires": [
       "g:stem-boot",
-      "l:entender"
+      "l:entender",
+      "p:personal-a"
     ]
   },
   {
@@ -8422,7 +8636,8 @@
     "source": "gen",
     "requires": [
       "g:stem-boot",
-      "l:entender"
+      "l:entender",
+      "p:personal-a"
     ]
   },
   {
@@ -8445,7 +8660,8 @@
       "g:stem-boot",
       "l:caminar",
       "l:nadar",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -8508,7 +8724,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:llegar",
-      "l:poder"
+      "l:poder",
+      "p:telling-time"
     ]
   },
   {
@@ -8531,7 +8748,8 @@
       "g:stem-boot",
       "l:inglés",
       "l:película",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -8555,7 +8773,8 @@
       "g:stem-boot",
       "l:fiesta",
       "l:sábado",
-      "l:tener"
+      "l:tener",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -8648,7 +8867,8 @@
       "g:stem-boot",
       "l:dónde",
       "l:encontrar",
-      "l:fruta"
+      "l:fruta",
+      "p:question-word-order"
     ]
   },
   {
@@ -8764,7 +8984,8 @@
       "g:stem-boot",
       "l:banco",
       "l:libro",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -8785,7 +9006,8 @@
       "g:present-er-ir",
       "g:stem-boot",
       "l:venir",
-      "l:vivir"
+      "l:vivir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -8807,7 +9029,8 @@
       "g:stem-boot",
       "l:centro",
       "l:cliente",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -8829,7 +9052,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:venir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -8851,7 +9076,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:cine",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -8871,7 +9097,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:universidad",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -8893,7 +9120,9 @@
       "g:stem-boot",
       "l:parque",
       "l:tinto",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place",
+      "p:senor-don-article"
     ]
   },
   {
@@ -8914,7 +9143,8 @@
       "g:stem-boot",
       "l:jugo",
       "l:preferir",
-      "l:tinto"
+      "l:tinto",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -8974,7 +9204,8 @@
       "g:stem-boot",
       "l:cine",
       "l:fútbol",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -8997,7 +9228,8 @@
       "g:stem-boot",
       "l:bailar",
       "l:cantar",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9020,7 +9252,8 @@
       "g:stem-boot",
       "l:agua",
       "l:jugo",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9043,7 +9276,8 @@
       "g:stem-boot",
       "l:fruta",
       "l:pizza",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9065,7 +9299,8 @@
       "g:stem-boot",
       "l:centro",
       "l:parque",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9091,7 +9326,8 @@
       "l:chocolate",
       "l:fruta",
       "l:helado",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9117,7 +9353,9 @@
       "l:caminar",
       "l:domingo",
       "l:nadar",
-      "l:preferir"
+      "l:preferir",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9139,7 +9377,8 @@
       "g:gender-articles",
       "l:fiesta",
       "l:sábado",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -9184,7 +9423,8 @@
       "l:cine",
       "l:claro",
       "l:partido",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9225,7 +9465,8 @@
       "g:stem-boot",
       "l:escribir",
       "l:leer",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9249,7 +9490,8 @@
       "g:stem-boot",
       "l:fútbol",
       "l:música",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9275,7 +9517,8 @@
       "l:favor",
       "l:inglés",
       "l:libro",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9292,7 +9535,8 @@
     "requires": [
       "g:gender-articles",
       "l:café",
-      "l:leche"
+      "l:leche",
+      "p:con-sin"
     ]
   },
   {
@@ -9323,7 +9567,9 @@
       "l:igual",
       "l:lunes",
       "l:martes",
-      "l:preferir"
+      "l:preferir",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9349,7 +9595,8 @@
       "l:chocolate",
       "l:cuál",
       "l:preferir",
-      "l:tinto"
+      "l:tinto",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9372,7 +9619,8 @@
       "g:stem-boot",
       "l:cuál",
       "l:preferir",
-      "l:señora"
+      "l:señora",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9394,7 +9642,9 @@
       "g:questions",
       "g:stem-boot",
       "l:cuál",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y",
+      "p:question-word-order"
     ]
   },
   {
@@ -9421,7 +9671,8 @@
       "l:cuál",
       "l:partido",
       "l:película",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9442,7 +9693,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:parque",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9463,7 +9715,8 @@
     "requires": [
       "g:stem-boot",
       "l:cantar",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9486,7 +9739,9 @@
       "g:stem-boot",
       "l:chocolate",
       "l:pan",
-      "l:preferir"
+      "l:preferir",
+      "p:con-sin",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9508,7 +9763,8 @@
       "g:present-er-ir",
       "l:centro",
       "l:cine",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9530,7 +9786,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:música",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9553,7 +9810,9 @@
       "g:stem-boot",
       "l:café",
       "l:caminar",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y",
+      "p:senor-don-article"
     ]
   },
   {
@@ -9576,7 +9835,9 @@
       "g:stem-boot",
       "l:domingo",
       "l:escribir",
-      "l:preferir"
+      "l:preferir",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9600,7 +9861,8 @@
       "l:español",
       "l:inglés",
       "l:practicar",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9625,7 +9887,8 @@
       "l:estudiante",
       "l:fiesta",
       "l:preferir",
-      "l:viernes"
+      "l:viernes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9647,7 +9910,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:pizza",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9671,7 +9935,9 @@
       "g:stem-boot",
       "l:domingo",
       "l:preferir",
-      "l:salir"
+      "l:salir",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9700,7 +9966,8 @@
       "l:fútbol",
       "l:gustar",
       "l:nadar",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9722,7 +9989,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:preferir",
-      "l:tinto"
+      "l:tinto",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9745,7 +10013,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:jueves",
-      "l:preferir"
+      "l:preferir",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9771,7 +10041,9 @@
       "l:parque",
       "l:pasar",
       "l:preferir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9798,7 +10070,8 @@
       "l:cine",
       "l:fiesta",
       "l:preferir",
-      "l:qué"
+      "l:qué",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9823,7 +10096,10 @@
       "l:chocolate",
       "l:preferir",
       "l:qué",
-      "l:tinto"
+      "l:tinto",
+      "p:don-dona-nombre",
+      "p:prefieres-x-o-y",
+      "p:senor-don-article"
     ]
   },
   {
@@ -9847,7 +10123,8 @@
       "g:stem-boot",
       "l:cliente",
       "l:preferir",
-      "l:qué"
+      "l:qué",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9901,7 +10178,8 @@
       "g:stem-boot",
       "l:fruta",
       "l:pan",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9923,7 +10201,8 @@
       "g:gender-articles",
       "l:favor",
       "l:lunes",
-      "l:miércoles"
+      "l:miércoles",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -9947,7 +10226,8 @@
       "l:cerveza",
       "l:favor",
       "l:jugo",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -9971,7 +10251,8 @@
       "l:agua",
       "l:chocolate",
       "l:leche",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -10056,6 +10337,7 @@
       "l:preferir",
       "l:qué",
       "l:tipo",
+      "p:prefieres-x-o-y",
       "p:que-tipo-de"
     ]
   },
@@ -10105,7 +10387,8 @@
       "g:gustar-basic",
       "l:gustar",
       "l:música",
-      "l:tipo"
+      "l:tipo",
+      "p:que-tipo-de"
     ]
   },
   {
@@ -10260,6 +10543,7 @@
       "l:preferir",
       "l:qué",
       "l:tipo",
+      "p:prefieres-x-o-y",
       "p:que-tipo-de"
     ]
   },
@@ -10339,6 +10623,7 @@
       "l:preferir",
       "l:qué",
       "l:tipo",
+      "p:prefieres-x-o-y",
       "p:que-tipo-de"
     ]
   },
@@ -10498,7 +10783,9 @@
       "l:preferir",
       "l:qué",
       "l:tipo",
-      "p:que-tipo-de"
+      "p:prefieres-x-o-y",
+      "p:que-tipo-de",
+      "p:senor-don-article"
     ]
   },
   {
@@ -10705,7 +10992,9 @@
       "g:present-er-ir",
       "l:deporte",
       "l:hacer",
-      "l:tipo"
+      "l:tipo",
+      "p:que-tipo-de",
+      "p:senor-don-article"
     ]
   },
   {
@@ -10726,7 +11015,8 @@
       "g:present-ar",
       "l:cocinar",
       "l:comida",
-      "l:tipo"
+      "l:tipo",
+      "p:que-tipo-de"
     ]
   },
   {
@@ -10747,7 +11037,8 @@
       "g:present-er-ir",
       "l:leer",
       "l:libro",
-      "l:tipo"
+      "l:tipo",
+      "p:que-tipo-de"
     ]
   },
   {
@@ -10769,7 +11060,9 @@
       "g:hay-vs-esta",
       "l:café",
       "l:cliente",
-      "l:tipo"
+      "l:tipo",
+      "p:hay-varios-tipos",
+      "p:que-tipo-de"
     ]
   },
   {
@@ -10791,7 +11084,8 @@
       "g:present-ar",
       "l:cantar",
       "l:música",
-      "l:tipo"
+      "l:tipo",
+      "p:que-tipo-de"
     ]
   },
   {
@@ -10884,6 +11178,7 @@
       "l:preferir",
       "l:qué",
       "l:tipo",
+      "p:prefieres-x-o-y",
       "p:que-tipo-de"
     ]
   },
@@ -11078,6 +11373,7 @@
       "l:preferir",
       "l:qué",
       "l:tipo",
+      "p:prefieres-x-o-y",
       "p:que-tipo-de"
     ]
   },
@@ -11110,6 +11406,7 @@
       "l:semana",
       "l:tener",
       "l:tipo",
+      "p:days-el-lunes",
       "p:que-tipo-de"
     ]
   },
@@ -11226,7 +11523,9 @@
       "g:stem-boot",
       "l:fútbol",
       "l:jugar",
-      "l:martes"
+      "l:martes",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -11251,7 +11550,8 @@
       "g:stem-boot",
       "l:fútbol",
       "l:jugar",
-      "l:universidad"
+      "l:universidad",
+      "p:jugar-a"
     ]
   },
   {
@@ -11276,7 +11576,10 @@
       "g:stem-boot",
       "l:fútbol",
       "l:jugar",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:jugar-a"
     ]
   },
   {
@@ -11299,7 +11602,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a",
+      "p:telling-time"
     ]
   },
   {
@@ -11325,7 +11630,8 @@
       "l:calle",
       "l:fútbol",
       "l:jugar",
-      "l:parque"
+      "l:parque",
+      "p:jugar-a"
     ]
   },
   {
@@ -11351,7 +11657,9 @@
       "l:dónde",
       "l:estudiante",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a",
+      "p:question-word-order"
     ]
   },
   {
@@ -11378,7 +11686,9 @@
       "g:stem-boot",
       "l:cuándo",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a",
+      "p:question-word-order"
     ]
   },
   {
@@ -11404,7 +11714,8 @@
       "l:café",
       "l:calle",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -11429,7 +11740,8 @@
       "g:stem-boot",
       "l:cliente",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -11457,7 +11769,9 @@
       "l:bailar",
       "l:fútbol",
       "l:jugar",
-      "l:preferir"
+      "l:preferir",
+      "p:jugar-a",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -11507,7 +11821,8 @@
       "g:stem-boot",
       "l:barrio",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -11534,7 +11849,9 @@
       "l:fútbol",
       "l:jugar",
       "l:profesor",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -11557,7 +11874,8 @@
       "g:stem-boot",
       "l:colegio",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -11586,7 +11904,9 @@
       "l:domingo",
       "l:fútbol",
       "l:ir",
-      "l:jugar"
+      "l:jugar",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -11614,7 +11934,8 @@
       "l:compañero",
       "l:fútbol",
       "l:ir",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -11639,7 +11960,8 @@
       "g:stem-boot",
       "l:fútbol",
       "l:jugar",
-      "l:nadar"
+      "l:nadar",
+      "p:jugar-a"
     ]
   },
   {
@@ -11663,7 +11985,9 @@
       "g:stem-boot",
       "l:fútbol",
       "l:jugar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -11688,7 +12012,9 @@
       "g:stem-boot",
       "l:fútbol",
       "l:jugar",
-      "l:quién"
+      "l:quién",
+      "p:jugar-a",
+      "p:question-word-order"
     ]
   },
   {
@@ -11712,7 +12038,10 @@
       "l:fútbol",
       "l:partido",
       "l:ser",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ]
   },
   {
@@ -11762,7 +12091,9 @@
       "l:fútbol",
       "l:jugar",
       "l:nadar",
-      "l:preferir"
+      "l:preferir",
+      "p:jugar-a",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -11806,7 +12137,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -11828,7 +12160,8 @@
       "g:yo-irregular",
       "l:lunes",
       "l:reunión",
-      "l:tener"
+      "l:tener",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -11854,7 +12187,9 @@
       "g:stem-boot",
       "l:fútbol",
       "l:jugar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -11876,7 +12211,9 @@
       "g:ser-identity",
       "l:fiesta",
       "l:ser",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:event-ser-en"
     ]
   },
   {
@@ -11896,7 +12233,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:domingo",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -11918,7 +12256,9 @@
       "g:ser-identity",
       "l:miércoles",
       "l:partido",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes",
+      "p:event-ser-en"
     ]
   },
   {
@@ -11941,7 +12281,8 @@
       "l:café",
       "l:estar",
       "l:lunes",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -11962,7 +12303,8 @@
       "g:present-er-ir",
       "l:escribir",
       "l:martes",
-      "l:oficina"
+      "l:oficina",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -11985,7 +12327,8 @@
       "g:hay-vs-esta",
       "l:miércoles",
       "l:pizza",
-      "l:universidad"
+      "l:universidad",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12006,7 +12349,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:cocinar",
-      "l:jueves"
+      "l:jueves",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12028,7 +12372,8 @@
       "g:present-er-ir",
       "l:centro",
       "l:salir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12050,7 +12395,8 @@
       "g:present-ar",
       "l:caminar",
       "l:domingo",
-      "l:parque"
+      "l:parque",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12072,7 +12418,8 @@
       "l:banco",
       "l:jueves",
       "l:reunión",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12095,7 +12442,8 @@
       "g:hay-vs-esta",
       "l:barrio",
       "l:fiesta",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12118,7 +12466,8 @@
       "g:stem-boot",
       "l:empezar",
       "l:partido",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12138,7 +12487,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12158,7 +12508,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12229,7 +12580,8 @@
       "l:día",
       "l:partido",
       "l:qué",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12253,7 +12605,12 @@
       "l:cuándo",
       "l:martes",
       "l:reunión",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes",
+      "p:event-ser-en",
+      "p:nos-vemos-a-las",
+      "p:question-word-order",
+      "p:telling-time"
     ]
   },
   {
@@ -12275,7 +12632,8 @@
       "g:present-ar",
       "l:estudiar",
       "l:lunes",
-      "l:miércoles"
+      "l:miércoles",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12296,7 +12654,10 @@
       "g:present-ar",
       "l:café",
       "l:llegar",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes",
+      "p:senor-don-article",
+      "p:telling-time"
     ]
   },
   {
@@ -12318,7 +12679,7 @@
       "l:lunes",
       "l:trabajar",
       "l:viernes",
-      "p:trabajar-de"
+      "p:desde-hasta"
     ]
   },
   {
@@ -12342,7 +12703,8 @@
       "l:amigo",
       "l:cocinar",
       "l:fin",
-      "l:semana"
+      "l:semana",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12367,7 +12729,8 @@
       "l:fin",
       "l:parque",
       "l:partido",
-      "l:semana"
+      "l:semana",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12415,7 +12778,8 @@
       "l:fin",
       "l:hacer",
       "l:qué",
-      "l:semana"
+      "l:semana",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12437,7 +12801,8 @@
       "l:café",
       "l:cliente",
       "l:domingo",
-      "l:leer"
+      "l:leer",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12459,7 +12824,8 @@
       "g:present-ar",
       "l:cantar",
       "l:cliente",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12483,7 +12849,8 @@
       "g:stem-boot",
       "l:libro",
       "l:venir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12506,7 +12873,9 @@
       "g:stem-boot",
       "l:empezar",
       "l:jueves",
-      "l:partido"
+      "l:partido",
+      "p:days-el-lunes",
+      "p:telling-time"
     ]
   },
   {
@@ -12524,7 +12893,10 @@
     "source": "gen",
     "requires": [
       "g:gender-articles",
-      "l:jueves"
+      "l:jueves",
+      "p:days-el-lunes",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ]
   },
   {
@@ -12545,7 +12917,9 @@
       "g:gender-articles",
       "l:café",
       "l:sábado",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las"
     ]
   },
   {
@@ -12568,7 +12942,8 @@
       "g:gender-articles",
       "l:pizza",
       "l:semana",
-      "l:vez"
+      "l:vez",
+      "p:veces-al"
     ]
   },
   {
@@ -12592,7 +12967,8 @@
       "l:caminar",
       "l:semana",
       "l:trabajo",
-      "l:vez"
+      "l:vez",
+      "p:veces-al"
     ]
   },
   {
@@ -12618,7 +12994,9 @@
       "g:ir-a-plans",
       "l:año",
       "l:ir",
-      "l:vez"
+      "l:vez",
+      "p:ir-a-venir-de-place",
+      "p:veces-al"
     ]
   },
   {
@@ -12640,7 +13018,9 @@
       "g:present-ar",
       "l:domingo",
       "l:trabajar",
-      "l:vez"
+      "l:vez",
+      "p:days-el-lunes",
+      "p:frequency-scale"
     ]
   },
   {
@@ -12662,7 +13042,8 @@
       "g:present-ar",
       "l:café",
       "l:cantar",
-      "l:vez"
+      "l:vez",
+      "p:frequency-scale"
     ]
   },
   {
@@ -12684,7 +13065,8 @@
       "g:present-ar",
       "l:bailar",
       "l:cliente",
-      "l:vez"
+      "l:vez",
+      "p:frequency-scale"
     ]
   },
   {
@@ -12711,7 +13093,8 @@
       "g:ir-a-plans",
       "l:cocinar",
       "l:domingo",
-      "l:ir"
+      "l:ir",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12738,7 +13121,8 @@
       "l:hacer",
       "l:ir",
       "l:qué",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12786,7 +13170,8 @@
       "l:caminar",
       "l:domingo",
       "l:ir",
-      "l:parque"
+      "l:parque",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12887,7 +13272,8 @@
       "l:cocinar",
       "l:ir",
       "l:pizza",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12908,7 +13294,9 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:ir",
-      "l:llegar"
+      "l:llegar",
+      "p:senor-don-article",
+      "p:telling-time"
     ]
   },
   {
@@ -12961,7 +13349,8 @@
       "l:estudiar",
       "l:fin",
       "l:ir",
-      "l:semana"
+      "l:semana",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -12987,7 +13376,8 @@
       "l:hacer",
       "l:ir",
       "l:qué",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -13011,7 +13401,8 @@
       "g:ir-a-plans",
       "l:empezar",
       "l:ir",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -13034,7 +13425,8 @@
       "g:ir-a-plans",
       "l:cantar",
       "l:día",
-      "l:ir"
+      "l:ir",
+      "p:todos-los-dias"
     ]
   },
   {
@@ -13059,7 +13451,8 @@
       "g:ir-a-plans",
       "l:ir",
       "l:nadar",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -13138,7 +13531,8 @@
       "l:domingo",
       "l:ir",
       "l:partido",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -13313,7 +13707,8 @@
       "l:ir",
       "l:jueves",
       "l:película",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -13360,7 +13755,8 @@
       "g:ir-a-plans",
       "l:ir",
       "l:leer",
-      "l:libro"
+      "l:libro",
+      "p:senor-don-article"
     ]
   },
   {
@@ -13527,7 +13923,8 @@
       "g:ir-a-plans",
       "l:ahora",
       "l:ir",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ]
   },
   {
@@ -13579,7 +13976,8 @@
       "l:fin",
       "l:ir",
       "l:pasar",
-      "l:semana"
+      "l:semana",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -13605,7 +14003,8 @@
       "l:domingo",
       "l:ir",
       "l:parque",
-      "l:pasar"
+      "l:pasar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -13635,7 +14034,8 @@
       "l:fin",
       "l:ir",
       "l:pasar",
-      "l:semana"
+      "l:semana",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -13849,7 +14249,8 @@
       "l:estudiar",
       "l:ir",
       "l:martes",
-      "l:universidad"
+      "l:universidad",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -13874,7 +14275,8 @@
       "l:ir",
       "l:jueves",
       "l:oficina",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -13898,7 +14300,8 @@
       "g:ir-a-plans",
       "l:domingo",
       "l:ir",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -13987,8 +14390,7 @@
     "requires": [
       "g:ir-a-plans",
       "l:ir",
-      "l:venir",
-      "p:ir-venir"
+      "l:venir"
     ]
   },
   {
@@ -14013,7 +14415,7 @@
       "l:ir",
       "l:sábado",
       "l:venir",
-      "p:ir-venir"
+      "p:days-el-lunes"
     ]
   },
   {
@@ -14061,7 +14463,7 @@
       "g:ir-a-plans",
       "l:ir",
       "l:venir",
-      "p:ir-venir"
+      "p:senor-don-article"
     ]
   },
   {
@@ -14185,7 +14587,8 @@
       "g:ir-a-plans",
       "l:ir",
       "l:salir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -14210,7 +14613,8 @@
       "g:ir-a-plans",
       "l:ir",
       "l:salir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -14235,7 +14639,8 @@
       "g:ir-a-plans",
       "l:ir",
       "l:lunes",
-      "l:salir"
+      "l:salir",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -14258,7 +14663,8 @@
       "g:ir-a-plans",
       "l:estudiante",
       "l:ir",
-      "l:salir"
+      "l:salir",
+      "p:telling-time"
     ]
   },
   {
@@ -14281,7 +14687,8 @@
       "g:ir-a-plans",
       "l:café",
       "l:ir",
-      "l:salir"
+      "l:salir",
+      "p:telling-time"
     ]
   },
   {
@@ -14357,7 +14764,8 @@
       "l:estudiante",
       "l:fútbol",
       "l:ir",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -14384,7 +14792,8 @@
       "l:centro",
       "l:fútbol",
       "l:ir",
-      "l:jugar"
+      "l:jugar",
+      "p:jugar-a"
     ]
   },
   {
@@ -14523,7 +14932,8 @@
       "c:voy-vas",
       "g:ir-a-plans",
       "l:ayudar",
-      "l:ir"
+      "l:ir",
+      "p:personal-a"
     ]
   },
   {
@@ -14547,7 +14957,8 @@
       "l:ayudar",
       "l:cliente",
       "l:ir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -14572,7 +14983,8 @@
       "l:ir",
       "l:terminar",
       "l:trabajo",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -14643,7 +15055,8 @@
       "g:ir-a-plans",
       "l:español",
       "l:ir",
-      "l:practicar"
+      "l:practicar",
+      "p:senor-don-article"
     ]
   },
   {
@@ -14667,7 +15080,8 @@
       "g:ir-a-plans",
       "l:ir",
       "l:lunes",
-      "l:practicar"
+      "l:practicar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -14718,7 +15132,8 @@
       "l:ir",
       "l:martes",
       "l:reunión",
-      "l:ser"
+      "l:ser",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -14764,7 +15179,8 @@
       "g:ir-a-plans",
       "l:empezar",
       "l:ir",
-      "l:partido"
+      "l:partido",
+      "p:telling-time"
     ]
   },
   {
@@ -14787,7 +15203,8 @@
       "g:ir-a-plans",
       "l:empezar",
       "l:fiesta",
-      "l:ir"
+      "l:ir",
+      "p:telling-time"
     ]
   },
   {
@@ -14864,7 +15281,8 @@
       "l:dónde",
       "l:estar",
       "l:ir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -14957,7 +15375,8 @@
       "g:ir-a-plans",
       "l:contento",
       "l:estar",
-      "l:ir"
+      "l:ir",
+      "p:senor-don-article"
     ]
   },
   {
@@ -15030,7 +15449,8 @@
       "l:ir",
       "l:pizza",
       "l:sábado",
-      "l:tener"
+      "l:tener",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -15122,7 +15542,7 @@
       "l:ir",
       "l:lunes",
       "l:venir",
-      "p:ir-venir"
+      "p:days-el-lunes"
     ]
   },
   {
@@ -15147,7 +15567,8 @@
       "l:domingo",
       "l:hacer",
       "l:ir",
-      "l:qué"
+      "l:qué",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -15195,7 +15616,9 @@
       "g:questions",
       "l:ir",
       "l:llamar",
-      "l:quién"
+      "l:quién",
+      "p:personal-a",
+      "p:senor-don-article"
     ]
   },
   {
@@ -15273,8 +15696,7 @@
       "l:cliente",
       "l:cuánto",
       "l:ir",
-      "l:venir",
-      "p:ir-venir"
+      "l:venir"
     ]
   },
   {
@@ -15330,7 +15752,8 @@
       "l:hacer",
       "l:ir",
       "l:qué",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -15354,8 +15777,7 @@
       "g:ir-a-plans",
       "l:claro",
       "l:ir",
-      "l:venir",
-      "p:ir-venir"
+      "l:venir"
     ]
   },
   {
@@ -15437,7 +15859,8 @@
       "l:cuándo",
       "l:ir",
       "l:terminar",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -15565,8 +15988,7 @@
       "g:that-clauses",
       "l:creer",
       "l:ir",
-      "l:venir",
-      "p:ir-venir"
+      "l:venir"
     ]
   },
   {
@@ -15616,7 +16038,8 @@
       "l:ir",
       "l:ser",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -15828,7 +16251,8 @@
       "l:comer",
       "l:ir",
       "l:pizza",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -15853,7 +16277,8 @@
       "g:ir-a-plans",
       "l:domingo",
       "l:ir",
-      "l:nadar"
+      "l:nadar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -15899,7 +16324,9 @@
       "l:banco",
       "l:ir",
       "l:llamar",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes",
+      "p:personal-a"
     ]
   },
   {
@@ -16012,7 +16439,8 @@
       "g:ir-a-plans",
       "l:comer",
       "l:ir",
-      "l:pizza"
+      "l:pizza",
+      "p:senor-don-article"
     ]
   },
   {
@@ -16037,7 +16465,9 @@
       "l:ir",
       "l:mesero",
       "l:ser",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:ser-profession-no-article"
     ]
   },
   {
@@ -16061,7 +16491,8 @@
       "l:inglés",
       "l:ir",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ]
   },
   {
@@ -16084,7 +16515,8 @@
       "g:ser-identity",
       "l:ir",
       "l:médico",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ]
   },
   {
@@ -16109,7 +16541,8 @@
       "l:ir",
       "l:leer",
       "l:lunes",
-      "l:profesor"
+      "l:profesor",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -16223,7 +16656,9 @@
       "g:ir-a-plans",
       "l:adónde",
       "l:ir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:question-word-order"
     ]
   },
   {
@@ -16245,7 +16680,9 @@
       "g:ir-a-plans",
       "g:questions",
       "l:adónde",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place",
+      "p:question-word-order"
     ]
   },
   {
@@ -16267,7 +16704,11 @@
       "g:ir-a-plans",
       "g:questions",
       "l:adónde",
-      "l:ir"
+      "l:ir",
+      "p:don-dona-nombre",
+      "p:ir-a-venir-de-place",
+      "p:question-word-order",
+      "p:senor-don-article"
     ]
   },
   {
@@ -16292,7 +16733,10 @@
       "g:questions",
       "l:adónde",
       "l:ir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
+      "p:question-word-order"
     ]
   },
   {
@@ -16316,7 +16760,9 @@
       "g:questions",
       "l:adónde",
       "l:computadora",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place",
+      "p:question-word-order"
     ]
   },
   {
@@ -16340,7 +16786,9 @@
       "g:questions",
       "l:adónde",
       "l:cliente",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place",
+      "p:question-word-order"
     ]
   },
   {
@@ -16362,7 +16810,8 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:banco",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16385,7 +16834,8 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:cine",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16408,7 +16858,9 @@
       "g:ir-a-plans",
       "l:domingo",
       "l:ir",
-      "l:parque"
+      "l:parque",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16431,7 +16883,9 @@
       "g:ir-a-plans",
       "l:centro",
       "l:ir",
-      "l:martes"
+      "l:martes",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16454,7 +16908,9 @@
       "g:ir-a-plans",
       "l:ir",
       "l:jueves",
-      "l:universidad"
+      "l:universidad",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16479,7 +16935,8 @@
       "l:estudiante",
       "l:fiesta",
       "l:ir",
-      "l:viernes"
+      "l:viernes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16502,7 +16959,8 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:ir",
-      "l:partido"
+      "l:partido",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16524,7 +16982,8 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:ir",
-      "l:tienda"
+      "l:tienda",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16547,7 +17006,10 @@
       "g:ir-a-plans",
       "l:hospital",
       "l:ir",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
+      "p:senor-don-article"
     ]
   },
   {
@@ -16571,7 +17033,8 @@
       "g:ir-a-plans",
       "l:cine",
       "l:ir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -16594,7 +17057,8 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:fiesta",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16619,7 +17083,8 @@
       "g:ir-a-plans",
       "l:cine",
       "l:ir",
-      "l:partido"
+      "l:partido",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16644,7 +17109,9 @@
       "g:ir-a-plans",
       "l:fin",
       "l:ir",
-      "l:semana"
+      "l:semana",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16669,7 +17136,9 @@
       "g:ir-a-plans",
       "l:año",
       "l:ir",
-      "l:vez"
+      "l:vez",
+      "p:ir-a-venir-de-place",
+      "p:veces-al"
     ]
   },
   {
@@ -16689,7 +17158,8 @@
     "requires": [
       "c:voy-vas",
       "g:ir-a-plans",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16708,7 +17178,8 @@
     "source": "gen",
     "requires": [
       "g:ir-a-plans",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16729,7 +17200,9 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:centro",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place",
+      "p:telling-time"
     ]
   },
   {
@@ -16753,7 +17226,9 @@
       "g:questions",
       "l:banco",
       "l:ir",
-      "l:quién"
+      "l:quién",
+      "p:ir-a-venir-de-place",
+      "p:question-word-order"
     ]
   },
   {
@@ -16777,7 +17252,9 @@
       "g:ir-a-plans",
       "l:domingo",
       "l:ir",
-      "l:parque"
+      "l:parque",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16801,7 +17278,9 @@
       "g:ir-a-plans",
       "l:cine",
       "l:ir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16825,7 +17304,9 @@
       "g:ir-a-plans",
       "l:café",
       "l:ir",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16847,7 +17328,8 @@
       "g:ir-a-plans",
       "l:barrio",
       "l:ir",
-      "l:reunión"
+      "l:reunión",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16869,7 +17351,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:parque",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16891,7 +17374,9 @@
       "g:stem-boot",
       "l:pan",
       "l:tienda",
-      "l:venir"
+      "l:venir",
+      "p:con-sin",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16912,7 +17397,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:oficina",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16935,7 +17421,8 @@
       "g:stem-boot",
       "l:cliente",
       "l:partido",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16956,7 +17443,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:cine",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -16999,7 +17487,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:hospital",
-      "l:venir"
+      "l:venir",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ]
   },
   {
@@ -17021,7 +17511,8 @@
       "g:stem-boot",
       "l:banco",
       "l:oficina",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17040,7 +17531,8 @@
     "source": "gen",
     "requires": [
       "g:stem-boot",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17061,7 +17553,8 @@
       "g:present-er-ir",
       "g:stem-boot",
       "l:venir",
-      "l:vivir"
+      "l:vivir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17083,7 +17576,8 @@
       "g:stem-boot",
       "l:profesor",
       "l:universidad",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17104,7 +17598,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:trabajo",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17125,7 +17620,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:tienda",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17176,7 +17672,8 @@
       "l:adónde",
       "l:ir",
       "l:parque",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17224,7 +17721,8 @@
       "g:stem-boot",
       "l:cine",
       "l:partido",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17253,7 +17751,8 @@
       "l:dónde",
       "l:estar",
       "l:ir",
-      "l:parque"
+      "l:parque",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17280,7 +17779,9 @@
       "l:ir",
       "l:lunes",
       "l:martes",
-      "l:oficina"
+      "l:oficina",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17303,7 +17804,8 @@
       "g:ir-a-plans",
       "l:cine",
       "l:ir",
-      "l:parque"
+      "l:parque",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17398,7 +17900,8 @@
       "l:chévere",
       "l:ir",
       "l:qué",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -17548,7 +18051,8 @@
       "l:chévere",
       "l:qué",
       "l:venir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -17589,7 +18093,8 @@
     "requires": [
       "g:ser-identity",
       "l:chévere",
-      "l:ser"
+      "l:ser",
+      "p:senor-don-article"
     ]
   },
   {
@@ -17708,7 +18213,8 @@
       "l:dar",
       "l:domingo",
       "l:igual",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -17877,7 +18383,8 @@
       "l:dar",
       "l:igual",
       "l:ir",
-      "l:parque"
+      "l:parque",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17953,7 +18460,9 @@
       "g:ir-a-plans",
       "l:cine",
       "l:ir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -17997,7 +18506,8 @@
       "c:claro-listo",
       "g:gender-articles",
       "l:pizza",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -18020,7 +18530,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:fiesta",
-      "l:venir"
+      "l:venir",
+      "p:ir-venir"
     ]
   },
   {
@@ -18044,7 +18555,9 @@
       "g:present-ar",
       "l:domingo",
       "l:fútbol",
-      "l:jugar"
+      "l:jugar",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -18112,7 +18625,8 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:ir",
-      "l:partido"
+      "l:partido",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -18134,7 +18648,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:salir",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -18280,7 +18795,8 @@
       "g:negation-words",
       "l:domingo",
       "l:gustar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -18506,7 +19022,8 @@
       "l:domingo",
       "l:gustar",
       "l:hacer",
-      "l:qué"
+      "l:qué",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -18535,7 +19052,8 @@
       "l:gustar",
       "l:hacer",
       "l:qué",
-      "l:semana"
+      "l:semana",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -18698,7 +19216,9 @@
       "l:hacer",
       "l:jugar",
       "l:qué",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -18749,7 +19269,8 @@
       "g:questions",
       "l:domingo",
       "l:hacer",
-      "l:qué"
+      "l:qué",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -18772,7 +19293,8 @@
       "g:questions",
       "l:hacer",
       "l:qué",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -18894,7 +19416,9 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:sábado",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las"
     ]
   },
   {
@@ -18918,7 +19442,9 @@
       "l:bueno",
       "l:fiesta",
       "l:sábado",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las"
     ]
   },
   {
@@ -18938,7 +19464,11 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:sábado",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:don-dona-nombre",
+      "p:nos-vemos-a-las",
+      "p:senor-don-article"
     ]
   },
   {
@@ -18958,7 +19488,9 @@
       "c:chao-nos-vemos",
       "g:gender-articles",
       "l:sábado",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las"
     ]
   },
   {
@@ -18981,7 +19513,10 @@
       "g:gender-articles",
       "l:listo",
       "l:sábado",
-      "l:ver"
+      "l:ver",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ]
   },
   {
@@ -19024,7 +19559,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:lunes",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -19043,7 +19579,8 @@
     "requires": [
       "g:gender-articles",
       "l:domingo",
-      "l:parque"
+      "l:parque",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -19062,7 +19599,8 @@
     "requires": [
       "g:gender-articles",
       "l:miércoles",
-      "l:profesor"
+      "l:profesor",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -19132,7 +19670,9 @@
       "l:café",
       "l:empezar",
       "l:sábado",
-      "l:vez"
+      "l:vez",
+      "p:days-el-lunes",
+      "p:otro-no-article"
     ]
   },
   {
@@ -19176,7 +19716,8 @@
     "source": "gen",
     "requires": [
       "g:stem-boot",
-      "l:entender"
+      "l:entender",
+      "p:personal-a"
     ]
   },
   {
@@ -19248,7 +19789,7 @@
       "l:ir",
       "l:sábado",
       "l:venir",
-      "p:ir-venir"
+      "p:days-el-lunes"
     ]
   },
   {
@@ -19273,7 +19814,7 @@
       "l:ir",
       "l:parque",
       "l:venir",
-      "p:ir-venir"
+      "p:senor-don-article"
     ]
   },
   {
@@ -19322,7 +19863,9 @@
       "g:verb-infinitive",
       "l:cocinar",
       "l:poder",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:request-ladder"
     ]
   },
   {
@@ -19598,7 +20141,8 @@
       "l:bebida",
       "l:cuál",
       "l:día",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ]
   },
   {
@@ -19650,7 +20194,8 @@
       "l:bebida",
       "l:fiesta",
       "l:preferir",
-      "l:qué"
+      "l:qué",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -19713,7 +20258,8 @@
       "c:voy-vas",
       "g:ir-a-plans",
       "l:centro",
-      "l:ir"
+      "l:ir",
+      "p:senor-don-article"
     ]
   },
   {
@@ -19737,7 +20283,8 @@
       "g:ir-a-plans",
       "l:cine",
       "l:ir",
-      "l:parque"
+      "l:parque",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -19759,7 +20306,9 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:ir",
-      "l:universidad"
+      "l:universidad",
+      "p:ir-a-venir-de-place",
+      "p:telling-time"
     ]
   },
   {
@@ -19784,7 +20333,9 @@
       "l:cine",
       "l:estudiante",
       "l:ir",
-      "l:miércoles"
+      "l:miércoles",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -19810,7 +20361,9 @@
       "l:café",
       "l:ir",
       "l:parque",
-      "l:preferir"
+      "l:preferir",
+      "p:ir-a-venir-de-place",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -19833,7 +20386,8 @@
       "g:ir-a-plans",
       "l:ir",
       "l:jueves",
-      "l:reunión"
+      "l:reunión",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -19854,7 +20408,9 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:hospital",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place",
+      "p:telling-time"
     ]
   },
   {
@@ -19901,7 +20457,8 @@
       "g:ir-a-plans",
       "l:fiesta",
       "l:ir",
-      "l:partido"
+      "l:partido",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -19922,7 +20479,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:centro",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place",
+      "p:telling-time"
     ]
   },
   {
@@ -19943,7 +20502,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:universidad",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -19965,7 +20525,9 @@
       "g:stem-boot",
       "l:colegio",
       "l:estudiante",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place",
+      "p:telling-time"
     ]
   },
   {
@@ -19987,7 +20549,10 @@
       "g:stem-boot",
       "l:leche",
       "l:tienda",
-      "l:venir"
+      "l:venir",
+      "p:con-sin",
+      "p:ir-a-venir-de-place",
+      "p:senor-don-article"
     ]
   },
   {
@@ -20011,7 +20576,8 @@
       "g:ir-a-plans",
       "l:cine",
       "l:ir",
-      "l:oficina"
+      "l:oficina",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -20037,7 +20603,8 @@
       "l:banco",
       "l:ir",
       "l:oficina",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -20063,7 +20630,8 @@
       "l:café",
       "l:ir",
       "l:reunión",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -20091,7 +20659,8 @@
       "l:fiesta",
       "l:ir",
       "l:partido",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -20117,7 +20686,8 @@
       "l:ir",
       "l:pan",
       "l:querer",
-      "l:tienda"
+      "l:tienda",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -20164,7 +20734,9 @@
       "g:ir-a-plans",
       "l:adónde",
       "l:domingo",
-      "l:ir"
+      "l:ir",
+      "p:days-el-lunes",
+      "p:question-word-order"
     ]
   },
   {
@@ -20191,7 +20763,8 @@
       "l:chévere",
       "l:domingo",
       "l:partido",
-      "l:qué"
+      "l:qué",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -20272,7 +20845,8 @@
       "l:chévere",
       "l:música",
       "l:qué",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -20320,7 +20894,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:comida",
-      "l:empezar"
+      "l:empezar",
+      "p:telling-time"
     ]
   },
   {
@@ -20345,7 +20920,9 @@
       "l:domingo",
       "l:ir",
       "l:libro",
-      "l:parque"
+      "l:parque",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -20367,7 +20944,9 @@
       "g:ir-a-plans",
       "l:barrio",
       "l:ir",
-      "l:tienda"
+      "l:tienda",
+      "p:ir-a-venir-de-place",
+      "p:telling-time"
     ]
   },
   {
@@ -20389,7 +20968,8 @@
       "g:stem-boot",
       "l:centro",
       "l:oficina",
-      "l:venir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -20415,7 +20995,8 @@
       "l:película",
       "l:querer",
       "l:ver",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -20469,7 +21050,10 @@
       "l:abrir",
       "l:café",
       "l:querer",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ]
   },
   {
@@ -20518,7 +21102,9 @@
       "g:verb-infinitive",
       "l:ayudar",
       "l:pan",
-      "l:poder"
+      "l:poder",
+      "p:personal-a",
+      "p:request-ladder"
     ]
   },
   {
@@ -20537,7 +21123,8 @@
     "requires": [
       "g:present-ar",
       "l:hablar",
-      "l:necesitar"
+      "l:necesitar",
+      "p:senor-don-article"
     ]
   },
   {
@@ -20618,7 +21205,8 @@
       "l:hacer",
       "l:querer",
       "l:qué",
-      "l:semana"
+      "l:semana",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -20643,7 +21231,8 @@
       "g:verb-infinitive",
       "l:cine",
       "l:ir",
-      "l:querer"
+      "l:querer",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -20737,7 +21326,9 @@
       "l:carro",
       "l:centro",
       "l:ir",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y",
+      "p:transport-en"
     ]
   },
   {
@@ -20760,7 +21351,8 @@
       "l:café",
       "l:partido",
       "l:preferir",
-      "l:ver"
+      "l:ver",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -20784,6 +21376,7 @@
       "l:escribir",
       "l:lunes",
       "l:necesitar",
+      "p:days-el-lunes",
       "p:para-inf"
     ]
   },
@@ -20833,7 +21426,8 @@
       "g:gender-articles",
       "g:verb-infinitive",
       "l:abrir",
-      "l:café"
+      "l:café",
+      "p:telling-time"
     ]
   },
   {
@@ -20958,7 +21552,8 @@
       "l:café",
       "l:cerrar",
       "l:querer",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ]
   },
   {
@@ -21076,7 +21671,10 @@
       "g:verb-infinitive",
       "l:despacio",
       "l:hablar",
-      "l:poder"
+      "l:poder",
+      "p:don-dona-nombre",
+      "p:request-ladder",
+      "p:senor-don-article"
     ]
   },
   {
@@ -21100,6 +21698,7 @@
       "l:dormir",
       "l:estar",
       "l:necesitar",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ]
   },
@@ -21155,7 +21754,9 @@
       "l:café",
       "l:estar",
       "l:sábado",
-      "l:tener"
+      "l:tener",
+      "p:days-el-lunes",
+      "p:telling-time"
     ]
   },
   {
@@ -21181,7 +21782,8 @@
       "g:verb-infinitive",
       "l:domingo",
       "l:tener",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -21204,7 +21806,9 @@
       "g:verb-infinitive",
       "l:hoy",
       "l:pagar",
-      "l:tener"
+      "l:tener",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ]
   },
   {
@@ -21276,6 +21880,7 @@
       "l:dejar",
       "l:libro",
       "l:poder",
+      "p:aqui-ahi-alla",
       "p:possessives-basic"
     ]
   },
@@ -21321,7 +21926,8 @@
     "requires": [
       "g:stem-boot",
       "l:hablar",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -21346,7 +21952,9 @@
       "l:domingo",
       "l:preferir",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -21368,7 +21976,8 @@
       "l:comer",
       "l:estudiante",
       "l:parque",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -21390,7 +21999,10 @@
       "l:mañana",
       "l:preferir",
       "l:tinto",
-      "l:tomar"
+      "l:tomar",
+      "p:por-la-manana",
+      "p:prefieres-x-o-y",
+      "p:senor-don-article"
     ]
   },
   {
@@ -21415,6 +22027,7 @@
       "l:mesero",
       "l:necesitar",
       "l:sábado",
+      "p:days-el-lunes",
       "p:para-inf"
     ]
   },
@@ -21468,7 +22081,9 @@
       "g:verb-infinitive",
       "l:fiesta",
       "l:querer",
-      "l:venir"
+      "l:venir",
+      "p:ir-venir",
+      "p:te-invito-a"
     ]
   },
   {
@@ -21496,7 +22111,8 @@
       "l:estar",
       "l:fiesta",
       "l:ir",
-      "l:poder"
+      "l:poder",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -21574,7 +22190,9 @@
       "l:partido",
       "l:querer",
       "l:quién",
-      "p:prep-questions-basic"
+      "p:ir-a-venir-de-place",
+      "p:prep-questions-basic",
+      "p:te-invito-a"
     ]
   },
   {
@@ -21649,6 +22267,7 @@
       "l:pan",
       "l:sábado",
       "l:terminar",
+      "p:days-el-lunes",
       "p:para-inf"
     ]
   },
@@ -21724,7 +22343,8 @@
       "g:verb-infinitive",
       "l:cliente",
       "l:entender",
-      "l:querer"
+      "l:querer",
+      "p:personal-a"
     ]
   },
   {
@@ -21747,7 +22367,8 @@
       "g:verb-infinitive",
       "l:leer",
       "l:poder",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:request-ladder"
     ]
   },
   {
@@ -21799,7 +22420,8 @@
       "g:verb-infinitive",
       "l:pasar",
       "l:querer",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -21841,7 +22463,8 @@
     "requires": [
       "c:hay",
       "c:hay-que",
-      "l:esperar"
+      "l:esperar",
+      "p:personal-a"
     ]
   },
   {
@@ -21892,7 +22515,8 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:cantar",
-      "l:querer"
+      "l:querer",
+      "p:senor-don-article"
     ]
   },
   {
@@ -21912,7 +22536,8 @@
       "g:stem-boot",
       "l:efectivo",
       "l:pagar",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -21998,7 +22623,8 @@
       "g:yo-irregular",
       "l:banco",
       "l:llamar",
-      "l:tener"
+      "l:tener",
+      "p:personal-a"
     ]
   },
   {
@@ -22072,7 +22698,9 @@
       "l:domingo",
       "l:fútbol",
       "l:jugar",
-      "l:querer"
+      "l:querer",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -22097,7 +22725,9 @@
       "l:jugar",
       "l:querer",
       "l:sábado",
-      "l:tenis"
+      "l:tenis",
+      "p:days-el-lunes",
+      "p:jugar-a"
     ]
   },
   {
@@ -22122,7 +22752,8 @@
       "l:carta",
       "l:comer",
       "l:jugar",
-      "l:poder"
+      "l:poder",
+      "p:jugar-a"
     ]
   },
   {
@@ -22142,7 +22773,8 @@
       "g:stem-boot",
       "l:casa",
       "l:leer",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -22172,7 +22804,8 @@
       "l:ir",
       "l:playa",
       "l:poder",
-      "l:querer"
+      "l:querer",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -22196,7 +22829,8 @@
       "l:café",
       "l:cerrar",
       "l:hoy",
-      "l:poder"
+      "l:poder",
+      "p:request-ladder"
     ]
   },
   {
@@ -22251,7 +22885,8 @@
       "g:verb-infinitive",
       "l:sábado",
       "l:tener",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -22275,7 +22910,9 @@
       "g:verb-infinitive",
       "l:tener",
       "l:ver",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ]
   },
   {
@@ -22301,6 +22938,8 @@
       "l:qué",
       "l:sábado",
       "l:trabajar",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y",
       "p:prep-questions-basic"
     ]
   },
@@ -22326,6 +22965,7 @@
       "l:caminar",
       "l:preferir",
       "l:trancón",
+      "p:prefieres-x-o-y",
       "p:quantifiers-basic"
     ]
   },
@@ -22376,7 +23016,8 @@
       "l:cerveza",
       "l:partido",
       "l:querer",
-      "l:ver"
+      "l:ver",
+      "p:senor-don-article"
     ]
   },
   {
@@ -22543,7 +23184,9 @@
       "l:cuenta",
       "l:dejar",
       "l:poder",
-      "l:señor"
+      "l:señor",
+      "p:aqui-ahi-alla",
+      "p:request-ladder"
     ]
   },
   {
@@ -22591,7 +23234,8 @@
       "l:arepa",
       "l:hacer",
       "l:hora",
-      "l:poder"
+      "l:poder",
+      "p:numbers-un-una"
     ]
   },
   {
@@ -22642,7 +23286,8 @@
       "l:bailar",
       "l:cliente",
       "l:querer",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -22712,7 +23357,9 @@
       "g:stem-boot",
       "l:empezar",
       "l:lunes",
-      "l:preferir"
+      "l:preferir",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -22736,7 +23383,8 @@
       "l:fiesta",
       "l:hacer",
       "l:parque",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -22760,7 +23408,8 @@
       "l:colombiano",
       "l:película",
       "l:preferir",
-      "l:ver"
+      "l:ver",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -22832,7 +23481,8 @@
       "g:verb-infinitive",
       "l:domingo",
       "l:querer",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -22877,7 +23527,9 @@
       "g:stem-boot",
       "l:comer",
       "l:querer",
-      "p:indefinites-basic"
+      "p:don-dona-nombre",
+      "p:indefinites-basic",
+      "p:senor-don-article"
     ]
   },
   {
@@ -22904,7 +23556,9 @@
       "l:llegar",
       "l:pan",
       "l:tener",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:telling-time"
     ]
   },
   {
@@ -22952,7 +23606,10 @@
       "l:abrir",
       "l:poder",
       "l:venir",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:request-ladder",
+      "p:telling-time"
     ]
   },
   {
@@ -22974,6 +23631,7 @@
       "g:stem-boot",
       "l:esperar",
       "l:poder",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ]
   },
@@ -23092,7 +23750,8 @@
       "g:stem-boot",
       "l:escribir",
       "l:inglés",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -23177,7 +23836,8 @@
       "g:stem-boot",
       "l:hoy",
       "l:preferir",
-      "l:salir"
+      "l:salir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -23199,8 +23859,10 @@
       "g:present-ar",
       "l:carro",
       "l:necesitar",
+      "p:don-dona-nombre",
       "p:indefinites-basic",
-      "p:para-inf"
+      "p:para-inf",
+      "p:senor-don-article"
     ]
   },
   {
@@ -23226,7 +23888,10 @@
       "l:ir",
       "l:jueves",
       "l:médico",
-      "l:tener"
+      "l:tener",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
+      "p:senor-don-article"
     ]
   },
   {
@@ -23283,7 +23948,10 @@
       "l:querer",
       "l:tener",
       "l:trabajar",
-      "l:viernes"
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
+      "p:te-invito-a"
     ]
   },
   {
@@ -23308,7 +23976,9 @@
       "g:verb-infinitive",
       "l:ayudar",
       "l:poder",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:request-ladder"
     ]
   },
   {
@@ -23361,7 +24031,9 @@
       "l:pan",
       "l:querer",
       "l:tinto",
-      "l:tomar"
+      "l:tomar",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ]
   },
   {
@@ -23422,6 +24094,10 @@
       "l:preferir",
       "l:qué",
       "l:ver",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge",
+      "p:prefieres-x-o-y",
       "p:prep-questions-basic",
       "p:quantifiers-basic"
     ]
@@ -23478,7 +24154,10 @@
       "l:querer",
       "l:qué",
       "l:sábado",
-      "l:venir"
+      "l:venir",
+      "p:days-el-lunes",
+      "p:ir-venir",
+      "p:te-invito-a"
     ]
   },
   {
@@ -23535,7 +24214,8 @@
       "l:domingo",
       "l:poder",
       "l:querer",
-      "l:trabajar"
+      "l:trabajar",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -23558,7 +24238,8 @@
       "l:bailar",
       "l:cantar",
       "l:comer",
-      "l:preferir"
+      "l:preferir",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -23590,7 +24271,8 @@
       "l:ir",
       "l:mañana",
       "l:qué",
-      "l:tener"
+      "l:tener",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
@@ -23644,7 +24326,8 @@
       "l:aquí",
       "l:dejar",
       "l:favor",
-      "l:poder"
+      "l:poder",
+      "p:aqui-ahi-alla"
     ]
   },
   {
@@ -23695,7 +24378,10 @@
       "l:carta",
       "l:claro",
       "l:jugar",
-      "l:querer"
+      "l:querer",
+      "p:don-dona-nombre",
+      "p:jugar-a",
+      "p:senor-don-article"
     ]
   },
   {
@@ -23720,7 +24406,8 @@
       "l:escribir",
       "l:necesitar",
       "l:poder",
-      "l:tiempo"
+      "l:tiempo",
+      "p:request-ladder"
     ]
   },
   {
@@ -23744,7 +24431,9 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:poder",
-      "l:venir"
+      "l:venir",
+      "p:request-ladder",
+      "p:telling-time"
     ]
   },
   {
@@ -23769,7 +24458,9 @@
       "l:favor",
       "l:pagar",
       "l:preferir",
-      "l:tarde"
+      "l:tarde",
+      "p:por-la-manana",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -23851,7 +24542,8 @@
       "g:prep-pronouns",
       "g:present-ar",
       "l:gustar",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -23931,7 +24623,9 @@
       "g:negation-words",
       "g:prep-pronouns",
       "l:gustar",
-      "l:trancón"
+      "l:trancón",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ]
   },
   {
@@ -23958,7 +24652,10 @@
       "g:prep-pronouns",
       "l:domingo",
       "l:gustar",
-      "l:partido"
+      "l:partido",
+      "p:days-el-lunes",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ]
   },
   {
@@ -24028,7 +24725,8 @@
       "l:amable",
       "l:pagar",
       "l:qué",
-      "l:tinto"
+      "l:tinto",
+      "p:senor-don-article"
     ]
   },
   {
@@ -24099,6 +24797,7 @@
       "l:partido",
       "l:qué",
       "l:ser",
+      "p:aburrir-aburrirse",
       "p:exclamations-basic"
     ]
   },
@@ -24145,7 +24844,8 @@
       "l:dónde",
       "l:estar",
       "l:saber",
-      "p:indefinites-basic"
+      "p:indefinites-basic",
+      "p:saber-conocer"
     ]
   },
   {
@@ -24239,7 +24939,8 @@
       "g:negation-words",
       "g:ser-identity",
       "l:café",
-      "l:ser"
+      "l:ser",
+      "p:telling-time"
     ]
   },
   {
@@ -24284,7 +24985,8 @@
       "l:chocolate",
       "l:ser",
       "p:demonstratives-basic",
-      "p:para-inf"
+      "p:para-inf",
+      "p:senor-don-article"
     ]
   },
   {
@@ -24401,6 +25103,8 @@
       "l:bueno",
       "l:chocolate",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ]
@@ -24425,8 +25129,10 @@
       "l:barrio",
       "l:ser",
       "l:tranquilo",
+      "p:don-dona-nombre",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:senor-don-article"
     ]
   },
   {
@@ -24473,6 +25179,7 @@
       "l:artículo",
       "l:contento",
       "l:estar",
+      "p:contento-con-de",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ]
@@ -24498,7 +25205,8 @@
       "l:café",
       "l:estar",
       "l:nervioso",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -24520,6 +25228,8 @@
       "l:arepa",
       "l:buena",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:quantifiers-basic"
     ]
   },
@@ -24545,7 +25255,8 @@
       "l:estar",
       "l:ocupado",
       "l:partido",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:senor-don-article"
     ]
   },
   {
@@ -24614,7 +25325,9 @@
       "l:domingo",
       "l:quién",
       "l:trabajar",
-      "p:prep-questions-basic"
+      "p:days-el-lunes",
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ]
   },
   {
@@ -24692,7 +25405,8 @@
       "l:claro",
       "l:dónde",
       "l:ser",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ]
   },
   {
@@ -24760,6 +25474,7 @@
       "l:salir",
       "l:sábado",
       "l:tarde",
+      "p:days-el-lunes",
       "p:quantifiers-basic"
     ]
   },
@@ -24783,7 +25498,8 @@
       "g:yo-irregular",
       "l:hacer",
       "l:jueves",
-      "l:pan"
+      "l:pan",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -24810,6 +25526,7 @@
       "l:cansado",
       "l:estar",
       "l:venir",
+      "p:ir-a-venir-de-place",
       "p:quantifiers-basic"
     ]
   },
@@ -24832,7 +25549,8 @@
       "g:ir-a-plans",
       "l:hablar",
       "l:ir",
-      "l:lunes"
+      "l:lunes",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -24855,7 +25573,9 @@
       "g:ir-a-plans",
       "l:abrir",
       "l:ir",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:telling-time"
     ]
   },
   {

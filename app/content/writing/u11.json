@@ -1,0 +1,484 @@
+[
+  {
+    "id": "w-u11-01",
+    "unit": "u11",
+    "prompt": "Mariana asks what your Sundays were like when you were a kid. Text her two short sentences about what you used to do every Sunday.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto",
+        "label": "use the imperfect for what you used to do"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "domingo",
+          "domingos"
+        ],
+        "label": "mention Sundays"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Los domingos iba al café con mi papá. Yo me sentaba en el mostrador.",
+    "focus": "g:imperfect-habitual",
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:reflexive-routine",
+      "l:café",
+      "l:domingo",
+      "l:ir",
+      "l:mostrador",
+      "l:papá",
+      "l:sentarse",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u11-02",
+    "unit": "u11",
+    "prompt": "Don Hernando asks (you call him usted) what you used to do as a child when you lived in Toronto. Answer him in two short sentences about where you lived and what you did.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "vivir",
+        "tense": "imperfecto",
+        "person": "yo",
+        "label": "use vivía (I used to live)"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "vivo"
+        ],
+        "label": "say vivía, not vivo"
+      }
+    ],
+    "model": "Cuando era niño, vivía en Toronto. Jugaba hockey con mis amigos.",
+    "focus": "c:cuando-era-nino",
+    "requires": [
+      "c:cuando-era-nino",
+      "c:era",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "l:amigo",
+      "l:jugar",
+      "l:niño",
+      "l:ser",
+      "l:vivir",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u11-03",
+    "unit": "u11",
+    "prompt": "Your friend Vale asks whether you were a good kid at school. Reply in two short sentences, someone your age, saying how you were and how you behaved.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "imperfecto",
+        "person": "yo",
+        "label": "use era (I was)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "travieso",
+          "traviesa",
+          "obediente",
+          "portaba",
+          "peleaba"
+        ],
+        "label": "use travieso, obediente, me portaba or peleaba"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "fui ",
+          "soy "
+        ],
+        "label": "era for how you used to be, not fui or soy"
+      }
+    ],
+    "model": "De niño era muy travieso. Siempre peleaba con mi hermano.",
+    "focus": "g:imperfect-habitual",
+    "requires": [
+      "c:era",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:hermano",
+      "l:niño",
+      "l:pelear",
+      "l:ser",
+      "l:siempre",
+      "l:travieso",
+      "p:frequency-scale",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u11-04",
+    "unit": "u11",
+    "prompt": "Text Mariana about your grandmother's café. Say what Rosa used to do there while you sat on the counter, in two short sentences.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "cantar",
+        "tense": "imperfecto",
+        "person": "él/ella",
+        "label": "use cantaba (she used to sing)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "canta ",
+          "cantó"
+        ],
+        "label": "cantaba, not canta or cantó"
+      }
+    ],
+    "model": "Mi abuela cantaba en el café. Yo me sentaba en el mostrador.",
+    "focus": "g:imperfect-habitual",
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:reflexive-routine",
+      "l:abuela",
+      "l:café",
+      "l:cantar",
+      "l:mostrador",
+      "l:sentarse",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u11-05",
+    "unit": "u11",
+    "prompt": "Vale notices you no longer drink fizzy drinks. Tell her in two short sentences, as a friend, that you don't drink them now and that you stopped some time ago.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bdej(é|aste|ó|amos|aron) de \\w+(ar|er|ir)\\b",
+        "label": "use dejé de + infinitive (I stopped doing)"
+      },
+      {
+        "type": "negation",
+        "label": "say what you no longer do"
+      }
+    ],
+    "model": "Ya no tomo gaseosa. Dejé de tomar gaseosa hace dos años.",
+    "focus": "p:dejar-de-inf",
+    "requires": [
+      "c:ya-no",
+      "g:hace-ago",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:preterite-ar",
+      "l:año",
+      "l:dejar",
+      "l:gaseosa",
+      "l:hacer",
+      "l:tomar",
+      "p:dejar-de-inf"
+    ]
+  },
+  {
+    "id": "w-u11-06",
+    "unit": "u11",
+    "prompt": "A cousin asks who you look like in the family. Answer in two short sentences: who you look like and one thing about them.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme parezco (mucho |un poco )?a\\b",
+        "label": "use me parezco a"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "me parece a",
+          "soy como",
+          "parezco con"
+        ],
+        "label": "me parezco a, not me parece"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Me parezco mucho a mi papá. Él también es alto.",
+    "focus": "p:parecerse-a",
+    "requires": [
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "g:yo-irregular",
+      "l:alto",
+      "l:papá",
+      "l:parecerse",
+      "l:ser",
+      "p:es-tiene-lleva",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:tambien-tampoco"
+    ]
+  },
+  {
+    "id": "w-u11-07",
+    "unit": "u11",
+    "prompt": "At the café, an older woman you'd call usted asks how tall your son was as a boy. Answer her politely in two sentences: how tall he was at ten and how tall he is now.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bmid(e|ió|ía)\\b",
+        "label": "use mide or medía for height"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(metro|metros|centímetros)\\b",
+        "label": "give the height in metros"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "es un metro",
+          "tiene un metro"
+        ],
+        "label": "mide, not es or tiene"
+      }
+    ],
+    "model": "A los diez años medía un metro treinta. Ahora mide un metro setenta.",
+    "focus": "p:medir-pesar",
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:stem-e-i",
+      "l:ahora",
+      "l:año",
+      "l:medir",
+      "l:metro",
+      "p:medir-pesar"
+    ]
+  },
+  {
+    "id": "w-u11-08",
+    "unit": "u11",
+    "prompt": "Compare then and now for Tomás's Spanish: write a friend one or two sentences saying your Spanish is better now than before.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bmejor(es)? que\\b",
+        "label": "use mejor que"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "ahora",
+          "antes"
+        ],
+        "label": "compare ahora with antes"
+      }
+    ],
+    "model": "Ahora mi español es mejor que antes. Antes hablaba muy poco.",
+    "focus": "g:comparatives",
+    "requires": [
+      "g:comparatives",
+      "g:imperfect-habitual",
+      "g:ser-identity",
+      "l:ahora",
+      "l:antes",
+      "l:español",
+      "l:hablar",
+      "l:mejor",
+      "l:ser",
+      "p:poco-un-poco",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u11-09",
+    "unit": "u11",
+    "prompt": "A friend asks whether you prefer the old house or your apartment now. Reply in two short sentences, comparing them with más ... que.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(más|menos) \\S+ que\\b",
+        "label": "compare with más ... que or menos ... que"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "casa",
+          "apartamento"
+        ],
+        "label": "mention the house or the apartment"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Mi apartamento es más pequeño que la casa. Pero es más barato.",
+    "focus": "g:comparatives",
+    "requires": [
+      "g:comparatives",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:apartamento",
+      "l:barato",
+      "l:casa",
+      "l:pequeño",
+      "l:ser",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u11-10",
+    "unit": "u11",
+    "prompt": "Mariana asks if you like the city or the countryside more. Answer her in one sentence saying which you like more and why, as a friend.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme gusta más\\b.+\\bque\\b",
+        "label": "use me gusta más ... que"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "más mucho",
+          "más bueno"
+        ],
+        "label": "más alone, no extra words"
+      }
+    ],
+    "model": "Me gusta más el campo que la ciudad porque hay menos gente.",
+    "focus": "p:gustar-mas-que",
+    "requires": [
+      "c:hay",
+      "c:me-gusta",
+      "c:porque",
+      "g:cause-result",
+      "g:comparatives",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:hay-vs-esta",
+      "l:campo",
+      "l:ciudad",
+      "l:gente",
+      "l:gustar",
+      "p:gustar-mas-que",
+      "p:la-gente-singular"
+    ]
+  },
+  {
+    "id": "w-u11-11",
+    "unit": "u11",
+    "prompt": "You are telling Vale about the café of your childhood and the café now. Write two short sentences using en cambio to set one against the other.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "cambio",
+        "label": "use en cambio"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\ben cambio\\b",
+        "label": "write en cambio"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto",
+        "label": "one sentence about before, in the imperfect"
+      }
+    ],
+    "model": "Antes el café era pequeño. Ahora, en cambio, es grande.",
+    "focus": "c:en-cambio",
+    "requires": [
+      "c:en-cambio",
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:ahora",
+      "l:antes",
+      "l:café",
+      "l:cambio",
+      "l:grande",
+      "l:pequeño",
+      "l:ser"
+    ]
+  },
+  {
+    "id": "w-u11-12",
+    "unit": "u11",
+    "prompt": "Mariana asks about the old photos of the café. Tell her in one sentence, as a friend, that you found them yesterday at your grandmother's house.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\blas (encontré|dejé|busqué|vi|saqué)",
+        "label": "put las before the verb (las encontré: I found them)"
+      },
+      {
+        "type": "containsWord",
+        "word": "ayer",
+        "label": "say ayer"
+      }
+    ],
+    "model": "Las fotos, las encontré ayer en casa de mi abuela.",
+    "focus": "g:direct-objects",
+    "requires": [
+      "c:ayer-anoche",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:abuela",
+      "l:ayer",
+      "l:casa",
+      "l:encontrar",
+      "l:foto",
+      "p:possessives-basic"
+    ]
+  }
+]

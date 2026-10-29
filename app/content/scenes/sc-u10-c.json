@@ -200,8 +200,16 @@
     "l:tinto",
     "l:tomar",
     "l:venir",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
+    "p:days-el-lunes",
+    "p:don-dona-nombre",
+    "p:frequency-scale",
+    "p:masculine-plural-mixed",
     "p:me-te-nos-objects",
+    "p:otro-no-article",
     "p:para-inf",
-    "p:possessives-basic"
+    "p:possessives-basic",
+    "p:senor-don-article"
   ]
 }

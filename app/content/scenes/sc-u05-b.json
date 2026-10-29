@@ -185,9 +185,20 @@
     "l:tener",
     "l:trabajador",
     "l:vivir",
+    "p:aqui-ahi-alla",
+    "p:es-tiene-lleva",
+    "p:frequency-scale",
+    "p:masculine-plural-mixed",
+    "p:mayor-menor",
     "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:personal-a",
     "p:possessives-basic",
     "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:tambien-tampoco",
+    "p:te-presento-a",
+    "p:telling-time",
     "p:tener-anos"
   ]
 }

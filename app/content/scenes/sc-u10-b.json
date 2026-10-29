@@ -191,9 +191,16 @@
     "l:traer",
     "l:vaso",
     "l:venir",
+    "p:con-sin",
+    "p:days-el-lunes",
     "p:demonstratives-basic",
+    "p:ir-venir",
+    "p:llevar-traer",
+    "p:los-de-la-camiseta",
     "p:me-te-nos-objects",
+    "p:me-trae",
     "p:para-inf",
-    "p:quantifiers-basic"
+    "p:quantifiers-basic",
+    "p:senor-don-article"
   ]
 }

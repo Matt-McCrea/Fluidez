@@ -30,6 +30,7 @@
       "l:pan",
       "l:salir",
       "l:sábado",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ]
   },
@@ -109,6 +110,7 @@
       "l:ser",
       "l:simpático",
       "l:tener",
+      "p:es-tiene-lleva",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ]
@@ -151,6 +153,7 @@
       "l:profesora",
       "l:ser",
       "l:vivir",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ]
   },
@@ -231,7 +234,9 @@
       "l:padres",
       "l:ser",
       "l:vivir",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:somos-cuatro"
     ]
   },
   {
@@ -261,6 +266,7 @@
       "l:tener",
       "l:tiempo",
       "l:trabajar",
+      "p:frequency-scale",
       "p:quantifiers-basic"
     ]
   },
@@ -299,6 +305,7 @@
       "p:me-te-nos-objects",
       "p:possessives-basic",
       "p:quantifiers-basic",
+      "p:te-presento-a",
       "p:tener-anos"
     ]
   },
@@ -339,8 +346,12 @@
       "l:gente",
       "l:hermana",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:personal-a",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ]
   },
   {
@@ -382,6 +393,7 @@
       "l:mayor",
       "l:menor",
       "l:tener",
+      "p:mayor-menor",
       "p:possessives-basic"
     ]
   },
@@ -413,6 +425,8 @@
       "l:hermano",
       "l:ser",
       "l:tener",
+      "p:es-tiene-lleva",
+      "p:no-es-x-es-y",
       "p:possessives-basic",
       "p:tener-anos"
     ]
@@ -452,6 +466,7 @@
       "l:año",
       "l:hermana",
       "l:tener",
+      "p:numbers-un-una",
       "p:possessives-basic",
       "p:tener-anos"
     ]

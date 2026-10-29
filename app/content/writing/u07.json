@@ -26,6 +26,7 @@
       "l:cama",
       "l:grande",
       "l:ventana",
+      "p:lugar-tiene",
       "p:possessives-basic"
     ]
   },
@@ -58,7 +59,9 @@
       "l:encima",
       "l:estar",
       "l:llave",
-      "l:mesa"
+      "l:mesa",
+      "p:cerca-de",
+      "p:position-de"
     ]
   },
   {
@@ -128,6 +131,7 @@
       "l:caro",
       "l:gente",
       "l:ser",
+      "p:la-gente-singular",
       "p:quantifiers-basic"
     ]
   },
@@ -163,7 +167,10 @@
       "l:piso",
       "l:puerta",
       "l:ser",
-      "l:vivir"
+      "l:vivir",
+      "p:directions-cuadras",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ]
   },
   {
@@ -256,6 +263,7 @@
       "l:pequeño",
       "l:ser",
       "l:tener",
+      "p:lugar-tiene",
       "p:possessives-basic"
     ]
   },
@@ -304,7 +312,10 @@
       "l:estar",
       "l:lado",
       "l:panadería",
-      "l:parque"
+      "l:parque",
+      "p:cerca-de",
+      "p:posicion-precisa",
+      "p:position-de"
     ]
   },
   {
@@ -340,6 +351,7 @@
       "l:hacer",
       "l:tener",
       "l:venir",
+      "p:aqui-ahi-alla",
       "p:quantifiers-basic"
     ]
   },
@@ -445,7 +457,8 @@
       "l:caro",
       "l:costar",
       "l:peso",
-      "l:ser"
+      "l:ser",
+      "p:costar-pagar"
     ]
   }
 ]

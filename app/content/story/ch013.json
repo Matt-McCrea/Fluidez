@@ -138,8 +138,17 @@
     "g:preterite-ar",
     "g:ser-identity",
     "g:stem-boot",
+    "p:con-sin",
+    "p:dates-years",
+    "p:decadas-siglos",
+    "p:frequency-scale",
+    "p:los-garcia",
+    "p:mayor-menor",
     "p:para-inf",
     "p:possessives-basic",
+    "p:rectificar-reparar",
+    "p:ser-profession-no-article",
+    "p:viejo-antiguo-mayor",
     "p:ya-todavia-basic"
   ],
   "lexemes": [

@@ -197,13 +197,23 @@
     "l:tinto",
     "l:ver",
     "l:viejo",
+    "p:aqui-ahi-alla",
+    "p:days-el-lunes",
     "p:dejar-de-inf",
     "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:es-tiene-lleva",
     "p:gustar-mas-que",
+    "p:los-de-la-camiseta",
+    "p:parecer-vs-parecerse",
+    "p:parecerse-a",
+    "p:personal-a",
     "p:possessives-basic",
     "p:prep-questions-basic",
     "p:quantifiers-basic",
+    "p:senor-don-article",
     "p:tener-anos",
+    "p:viejo-antiguo-mayor",
     "p:ya-todavia-basic"
   ]
 }

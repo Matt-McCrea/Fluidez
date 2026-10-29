@@ -45,7 +45,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:barrio",
-      "l:vivir"
+      "l:vivir",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -173,7 +174,8 @@
       "g:present-er-ir",
       "l:calle",
       "l:centro",
-      "l:vivir"
+      "l:vivir",
+      "p:street-names"
     ],
     "targets": [
       "g:present-er-ir"
@@ -192,7 +194,9 @@
       "g:present-er-ir",
       "l:comer",
       "l:leche",
-      "l:pan"
+      "l:pan",
+      "p:con-sin",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -209,7 +213,8 @@
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "l:comer"
+      "l:comer",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -271,7 +276,8 @@
       "l:comer",
       "l:pan",
       "l:tinto",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -327,7 +333,8 @@
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "l:comer"
+      "l:comer",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir",
@@ -367,7 +374,9 @@
       "g:present-er-ir",
       "l:correo",
       "l:leer",
-      "l:tinto"
+      "l:tinto",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "g:present-er-ir",
@@ -406,7 +415,9 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:café",
-      "l:leer"
+      "l:leer",
+      "p:desde-hasta",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -483,7 +494,8 @@
       "g:present-er-ir",
       "l:banco",
       "l:correo",
-      "l:leer"
+      "l:leer",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir",
@@ -504,7 +516,9 @@
       "l:bien",
       "l:inglés",
       "l:leer",
-      "l:señora"
+      "l:señora",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-er-ir"
@@ -650,7 +664,9 @@
       "l:escribir",
       "l:español",
       "l:inglés",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-er-ir"
@@ -672,7 +688,8 @@
       "l:banco",
       "l:calle",
       "l:creer",
-      "l:estar"
+      "l:estar",
+      "p:street-names"
     ],
     "targets": [
       "c:creo-que",
@@ -710,7 +727,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:banco",
-      "l:creer"
+      "l:creer",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -765,7 +783,8 @@
     "requires": [
       "g:present-er-ir",
       "l:deber",
-      "l:tinto"
+      "l:tinto",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -842,7 +861,8 @@
       "g:present-er-ir",
       "l:banco",
       "l:número",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:present-er-ir",
@@ -861,7 +881,9 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:apellido",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -881,7 +903,8 @@
       "g:present-er-ir",
       "l:horario",
       "l:número",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:present-er-ir",
@@ -901,7 +924,8 @@
       "g:present-er-ir",
       "l:cliente",
       "l:nombre",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:present-er-ir",
@@ -920,7 +944,9 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:barrio",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -939,7 +965,8 @@
       "c:no-cierto",
       "g:present-er-ir",
       "l:inglés",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:present-er-ir"
@@ -957,7 +984,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:hacer",
-      "l:pan"
+      "l:pan",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -1039,7 +1067,8 @@
       "g:present-er-ir",
       "l:café",
       "l:parque",
-      "l:ver"
+      "l:ver",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1082,7 +1111,8 @@
       "l:estar",
       "l:hospital",
       "l:universidad",
-      "l:ver"
+      "l:ver",
+      "p:quedar-a-distancia"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1103,7 +1133,8 @@
       "g:present-er-ir",
       "l:cliente",
       "l:llamar",
-      "l:ver"
+      "l:ver",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1215,7 +1246,8 @@
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "l:poder"
+      "l:poder",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -1359,7 +1391,8 @@
       "l:jefe",
       "l:leer",
       "l:llegar",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1451,7 +1484,8 @@
       "l:cliente",
       "l:correo",
       "l:escribir",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1564,7 +1598,8 @@
       "l:banco",
       "l:escribir",
       "l:llamar",
-      "l:número"
+      "l:número",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1585,7 +1620,8 @@
       "g:present-ar",
       "l:estudiar",
       "l:horario",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar",
@@ -1605,7 +1641,8 @@
       "g:present-er-ir",
       "l:comer",
       "l:hospital",
-      "l:médico"
+      "l:médico",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1625,7 +1662,8 @@
       "g:present-er-ir",
       "l:médico",
       "l:número",
-      "l:vivir"
+      "l:vivir",
+      "p:street-names"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1669,7 +1707,8 @@
       "l:llegar",
       "l:mesero",
       "l:tinto",
-      "l:ver"
+      "l:ver",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1693,7 +1732,8 @@
       "l:café",
       "l:llamar",
       "l:número",
-      "l:ver"
+      "l:ver",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1714,7 +1754,8 @@
       "g:present-er-ir",
       "l:banco",
       "l:correo",
-      "l:leer"
+      "l:leer",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1753,7 +1794,8 @@
       "g:present-er-ir",
       "l:colegio",
       "l:comer",
-      "l:profesor"
+      "l:profesor",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir",
@@ -1874,7 +1916,11 @@
       "l:aquí",
       "l:día",
       "l:estar",
-      "p:todos-los-dias"
+      "p:aqui-ahi-alla",
+      "p:senor-don-article",
+      "p:telling-time",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:estar-location-states",
@@ -1974,7 +2020,8 @@
       "l:banco",
       "l:calle",
       "l:estar",
-      "l:número"
+      "l:número",
+      "p:street-names"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2015,7 +2062,8 @@
       "l:calle",
       "l:estar",
       "l:hospital",
-      "l:parque"
+      "l:parque",
+      "p:quedar-a-distancia"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2035,7 +2083,8 @@
       "g:gender-articles",
       "l:barrio",
       "l:estar",
-      "l:tienda"
+      "l:tienda",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2106,7 +2155,8 @@
       "g:gender-articles",
       "l:calle",
       "l:colegio",
-      "l:estar"
+      "l:estar",
+      "p:street-names"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2126,7 +2176,8 @@
       "g:gender-articles",
       "l:estar",
       "l:número",
-      "l:reunión"
+      "l:reunión",
+      "p:street-names"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2183,7 +2234,8 @@
       "g:estar-location-states",
       "g:gender-articles",
       "l:estar",
-      "l:hospital"
+      "l:hospital",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2242,7 +2294,8 @@
       "g:estar-location-states",
       "g:gender-articles",
       "l:empresa",
-      "l:estar"
+      "l:estar",
+      "p:desde-hasta"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2323,7 +2376,8 @@
       "g:gender-articles",
       "l:aquí",
       "l:estar",
-      "l:leche"
+      "l:leche",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2386,7 +2440,8 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:horario"
+      "l:horario",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states"
@@ -2542,7 +2597,8 @@
       "g:gender-articles",
       "l:calle",
       "l:estar",
-      "l:mesero"
+      "l:mesero",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2636,7 +2692,8 @@
       "g:estar-location-states",
       "g:gender-articles",
       "l:calle",
-      "l:estar"
+      "l:estar",
+      "p:street-names"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2676,7 +2733,8 @@
       "g:gender-articles",
       "l:aquí",
       "l:estar",
-      "l:parque"
+      "l:parque",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2718,7 +2776,9 @@
       "c:gracias-de-nada",
       "g:estar-location-states",
       "l:bien",
-      "l:estar"
+      "l:estar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states"
@@ -2742,7 +2802,10 @@
       "l:estar",
       "l:mal",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2762,7 +2825,8 @@
       "g:gender-articles",
       "l:café",
       "l:enfermo",
-      "l:estar"
+      "l:estar",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -2784,7 +2848,8 @@
       "l:estar",
       "l:jefe",
       "l:nervioso",
-      "l:reunión"
+      "l:reunión",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2844,7 +2909,8 @@
       "g:estar-location-states",
       "l:aquí",
       "l:estar",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states"
@@ -2883,7 +2949,9 @@
       "l:contento",
       "l:estar",
       "l:tinto",
-      "p:possessives-basic"
+      "p:contento-con-de",
+      "p:possessives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2904,7 +2972,8 @@
       "l:cliente",
       "l:contento",
       "l:estar",
-      "l:pan"
+      "l:pan",
+      "p:contento-con-de"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2924,7 +2993,8 @@
       "g:gender-articles",
       "l:aburrido",
       "l:estar",
-      "l:reunión"
+      "l:reunión",
+      "p:aburrir-aburrirse"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2945,7 +3015,8 @@
       "l:aburrido",
       "l:colegio",
       "l:estar",
-      "l:estudiante"
+      "l:estudiante",
+      "p:aburrir-aburrirse"
     ],
     "targets": [
       "g:estar-location-states",
@@ -2980,7 +3051,9 @@
       "c:bien-y-tu",
       "g:estar-location-states",
       "l:bien",
-      "l:estar"
+      "l:estar",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -2999,7 +3072,10 @@
       "g:estar-location-states",
       "l:aquí",
       "l:bien",
-      "l:estar"
+      "l:estar",
+      "p:aqui-ahi-alla",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states"
@@ -3020,7 +3096,9 @@
       "l:cliente",
       "l:estar",
       "l:leche",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states",
@@ -3042,7 +3120,8 @@
       "l:cómo",
       "l:estar",
       "l:jefe",
-      "l:nervioso"
+      "l:nervioso",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states"
@@ -3061,7 +3140,9 @@
       "g:estar-location-states",
       "l:cómo",
       "l:enfermo",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -3082,7 +3163,8 @@
       "g:questions",
       "l:bien",
       "l:cómo",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states",
@@ -3124,7 +3206,8 @@
       "l:contento",
       "l:estar",
       "l:estudiante",
-      "l:profesor"
+      "l:profesor",
+      "p:contento-con-de"
     ],
     "targets": [
       "g:estar-location-states",
@@ -3163,7 +3246,8 @@
       "l:cliente",
       "l:estar",
       "l:listo",
-      "l:llegar"
+      "l:llegar",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states",
@@ -3204,7 +3288,8 @@
       "g:gender-articles",
       "l:estar",
       "l:listo",
-      "l:pan"
+      "l:pan",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states",
@@ -3227,7 +3312,9 @@
       "l:estar",
       "l:listo",
       "l:tinto",
-      "p:possessives-basic"
+      "p:don-dona-nombre",
+      "p:possessives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states",
@@ -3246,7 +3333,9 @@
       "c:bien-y-tu",
       "g:estar-location-states",
       "l:bien",
-      "l:estar"
+      "l:estar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states"
@@ -3327,7 +3416,9 @@
       "l:día",
       "l:estar",
       "l:nervioso",
-      "l:ser"
+      "l:ser",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "g:estar-location-states",
@@ -3450,7 +3541,9 @@
       "l:aquí",
       "l:jefe",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:aqui-ahi-alla",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -3471,7 +3564,8 @@
       "g:present-ar",
       "g:questions",
       "l:llegar",
-      "l:quién"
+      "l:quién",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -3493,7 +3587,8 @@
       "g:questions",
       "l:número",
       "l:quién",
-      "l:vivir"
+      "l:vivir",
+      "p:street-names"
     ],
     "targets": [
       "g:questions",
@@ -3534,7 +3629,8 @@
       "g:questions",
       "l:cuándo",
       "l:reporte",
-      "l:terminar"
+      "l:terminar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -3554,7 +3650,8 @@
       "g:present-er-ir",
       "g:questions",
       "l:comer",
-      "l:cuándo"
+      "l:cuándo",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -3594,7 +3691,8 @@
       "g:ser-identity",
       "l:barrio",
       "l:cómo",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -3612,7 +3710,8 @@
       "g:ser-identity",
       "l:cómo",
       "l:jefe",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -3634,7 +3733,8 @@
       "g:ser-identity",
       "l:cuánto",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions"
@@ -3654,7 +3754,8 @@
       "g:hay-vs-esta",
       "g:questions",
       "l:cliente",
-      "l:cuánto"
+      "l:cuánto",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -3743,7 +3844,8 @@
       "l:banco",
       "l:cuál",
       "l:número",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -3765,7 +3867,8 @@
       "g:ser-identity",
       "l:apellido",
       "l:cuál",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -3788,7 +3891,8 @@
       "l:café",
       "l:cuál",
       "l:horario",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -3809,7 +3913,8 @@
       "g:questions",
       "l:aquí",
       "l:hacer",
-      "l:qué"
+      "l:qué",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:questions",
@@ -3851,7 +3956,8 @@
       "g:present-er-ir",
       "g:questions",
       "l:hacer",
-      "l:qué"
+      "l:qué",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -3871,7 +3977,9 @@
       "g:present-er-ir",
       "g:questions",
       "l:dónde",
-      "l:vivir"
+      "l:vivir",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -3890,7 +3998,8 @@
       "g:present-ar",
       "g:questions",
       "l:dónde",
-      "l:trabajar"
+      "l:trabajar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -3911,7 +4020,8 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:hospital"
+      "l:hospital",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states",
@@ -3932,7 +4042,8 @@
       "l:compañero",
       "l:dónde",
       "l:estar",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -3954,7 +4065,8 @@
       "g:questions",
       "l:cuándo",
       "l:jefe",
-      "l:llegar"
+      "l:llegar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -3976,7 +4088,8 @@
       "g:questions",
       "l:cuándo",
       "l:estudiante",
-      "l:terminar"
+      "l:terminar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -3998,7 +4111,8 @@
       "g:questions",
       "l:café",
       "l:leer",
-      "l:qué"
+      "l:qué",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -4123,7 +4237,9 @@
       "g:questions",
       "l:amigo",
       "l:dónde",
-      "l:estudiar"
+      "l:estudiar",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -4147,7 +4263,10 @@
       "l:cómo",
       "l:despacio",
       "l:español",
-      "l:hablar"
+      "l:hablar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -4168,7 +4287,10 @@
       "g:questions",
       "l:bien",
       "l:cómo",
-      "l:escribir"
+      "l:escribir",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -4233,7 +4355,8 @@
       "l:café",
       "l:calle",
       "l:cuál",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -4253,7 +4376,8 @@
       "g:questions",
       "g:ser-identity",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -4274,7 +4398,8 @@
       "g:ser-identity",
       "l:compañero",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -4357,7 +4482,8 @@
     "requires": [
       "g:present-er-ir",
       "l:aquí",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:present-er-ir"
@@ -4445,7 +4571,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:barrio",
-      "l:vivir"
+      "l:vivir",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -4482,7 +4609,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:ser-identity",
@@ -4555,7 +4683,8 @@
       "g:ser-identity",
       "l:estudiante",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -4576,7 +4705,8 @@
       "g:yo-irregular",
       "l:agua",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:tengo",
@@ -4596,7 +4726,8 @@
       "c:tengo",
       "g:yo-irregular",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:tengo"
@@ -4619,7 +4750,8 @@
       "l:estar",
       "l:sed",
       "l:tener",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states",
@@ -4643,7 +4775,8 @@
       "l:favor",
       "l:jugo",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:tengo",
@@ -4666,7 +4799,9 @@
       "l:favor",
       "l:regalar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:me-trae",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:me-regala"
@@ -4688,7 +4823,8 @@
       "l:pan",
       "l:sed",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:tengo",
@@ -4707,7 +4843,8 @@
       "c:tienes",
       "l:sed",
       "l:tener",
-      "l:trabajo"
+      "l:trabajo",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -4728,7 +4865,8 @@
       "l:jugo",
       "l:sed",
       "l:tener",
-      "l:tienda"
+      "l:tienda",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:tengo",
@@ -4752,7 +4890,8 @@
       "l:agua",
       "l:reunión",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:tengo",
@@ -4773,7 +4912,8 @@
       "g:hay-vs-esta",
       "l:leche",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:hay"
@@ -4796,7 +4936,8 @@
       "l:malo",
       "l:sed",
       "l:tener",
-      "l:tinto"
+      "l:tinto",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -4816,7 +4957,9 @@
       "g:yo-irregular",
       "l:pan",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:telling-time",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -4833,7 +4976,8 @@
       "g:gender-articles",
       "l:parque",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:gender-articles"
@@ -4857,7 +5001,9 @@
       "l:dónde",
       "l:sed",
       "l:tener",
-      "l:tienda"
+      "l:tienda",
+      "p:question-word-order",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:tengo",
@@ -4880,7 +5026,8 @@
       "l:enfermo",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -4899,7 +5046,9 @@
       "l:aburrido",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:aburrir-aburrirse",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -4921,7 +5070,11 @@
       "l:bien",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:sobre-todo-solo",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -4942,7 +5095,8 @@
       "l:contento",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -4963,7 +5117,8 @@
       "l:estar",
       "l:nervioso",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -4984,7 +5139,8 @@
       "l:enfermo",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -5003,7 +5159,10 @@
       "l:bien",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5027,7 +5186,9 @@
       "l:estar",
       "l:sed",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:repeticion-claro-claro",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -5048,7 +5209,9 @@
       "l:estar",
       "l:reunión",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:aburrir-aburrirse",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5069,7 +5232,8 @@
       "l:centro",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5094,7 +5258,10 @@
       "l:médico",
       "l:sed",
       "l:tener",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5113,7 +5280,8 @@
       "g:present-ar",
       "l:estar",
       "l:llegar",
-      "l:nervioso"
+      "l:nervioso",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states",
@@ -5135,7 +5303,8 @@
       "l:estar",
       "l:nervioso",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5158,7 +5327,9 @@
       "l:estar",
       "l:oficina",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:con-sin",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5180,7 +5351,8 @@
       "l:estar",
       "l:sed",
       "l:tener",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5245,7 +5417,8 @@
       "l:amigo",
       "l:aquí",
       "l:estar",
-      "l:tener"
+      "l:tener",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states",
@@ -5312,7 +5485,8 @@
       "l:banco",
       "l:centro",
       "l:señor",
-      "l:trabajar"
+      "l:trabajar",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -5334,7 +5508,8 @@
       "l:cómo",
       "l:día",
       "l:estar",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:hola-buenos-dias",
@@ -5354,7 +5529,9 @@
       "g:present-er-ir",
       "l:número",
       "l:señora",
-      "l:vivir"
+      "l:vivir",
+      "p:senor-don-article",
+      "p:street-names"
     ],
     "targets": [
       "g:present-er-ir"
@@ -5372,7 +5549,9 @@
       "g:present-er-ir",
       "l:aquí",
       "l:señora",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -5391,7 +5570,8 @@
       "g:gender-articles",
       "l:estar",
       "l:reunión",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5412,7 +5592,8 @@
       "l:ayudar",
       "l:perdón",
       "l:poder",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:me-puede-ayudar",
@@ -5431,7 +5612,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:café",
-      "l:llegar"
+      "l:llegar",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -5450,7 +5633,9 @@
       "g:gender-articles",
       "l:bueno",
       "l:día",
-      "l:tinto"
+      "l:tinto",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:hola-buenos-dias"
@@ -5469,7 +5654,8 @@
       "g:gender-articles",
       "l:estar",
       "l:señor",
-      "l:tienda"
+      "l:tienda",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5487,7 +5673,10 @@
       "c:como-estas",
       "g:estar-location-states",
       "l:cómo",
-      "l:estar"
+      "l:estar",
+      "p:don-dona-nombre",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5506,7 +5695,8 @@
       "g:gender-articles",
       "l:estar",
       "l:señor",
-      "l:señora"
+      "l:señora",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5525,7 +5715,8 @@
       "g:ser-identity",
       "l:jefe",
       "l:ser",
-      "l:señora"
+      "l:señora",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -5547,7 +5738,8 @@
       "l:escribirse",
       "l:perdón",
       "l:señora",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:como-se-escribe",
@@ -5568,7 +5760,8 @@
       "l:centro",
       "l:comer",
       "l:señor",
-      "l:señora"
+      "l:señora",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -5587,7 +5780,8 @@
       "c:gracias-de-nada",
       "c:mucho-gusto",
       "l:gusto",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:con-mucho-gusto"
@@ -5604,7 +5798,9 @@
     "requires": [
       "c:hola-buenos-dias",
       "c:que-mas",
-      "l:qué"
+      "l:qué",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:que-mas"
@@ -5623,7 +5819,8 @@
       "g:present-er-ir",
       "l:barrio",
       "l:señor",
-      "l:vivir"
+      "l:vivir",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -5642,7 +5839,10 @@
       "g:present-ar",
       "l:café",
       "l:llamar",
-      "l:señora"
+      "l:señora",
+      "p:personal-a",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -5662,7 +5862,8 @@
       "l:café",
       "l:estar",
       "l:listo",
-      "l:señora"
+      "l:señora",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5681,7 +5882,8 @@
       "g:ser-identity",
       "l:médico",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -5700,7 +5902,10 @@
       "g:estar-location-states",
       "l:bien",
       "l:estar",
-      "l:señor"
+      "l:señor",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5719,7 +5924,8 @@
       "g:present-ar",
       "l:hablar",
       "l:inglés",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -5737,7 +5943,8 @@
       "g:present-ar",
       "l:hablar",
       "l:inglés",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -5758,7 +5965,8 @@
       "l:cliente",
       "l:correo",
       "l:hablar",
-      "l:leer"
+      "l:leer",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -5779,7 +5987,8 @@
       "l:banco",
       "l:correo",
       "l:escribir",
-      "l:señora"
+      "l:señora",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -5797,7 +6006,8 @@
       "c:hola-buenos-dias",
       "l:buena",
       "l:señora",
-      "l:tarde"
+      "l:tarde",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:hola-buenos-dias"
@@ -5817,7 +6027,9 @@
       "g:questions",
       "l:dónde",
       "l:señor",
-      "l:vivir"
+      "l:vivir",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -5838,7 +6050,9 @@
       "g:questions",
       "l:dónde",
       "l:señora",
-      "l:trabajar"
+      "l:trabajar",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -5859,7 +6073,9 @@
       "g:questions",
       "l:cuándo",
       "l:llegar",
-      "l:señor"
+      "l:señor",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -5878,7 +6094,10 @@
       "g:present-er-ir",
       "g:questions",
       "l:dónde",
-      "l:vivir"
+      "l:vivir",
+      "p:don-dona-nombre",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -5899,7 +6118,9 @@
       "l:contento",
       "l:estar",
       "l:horario",
-      "l:señor"
+      "l:señor",
+      "p:contento-con-de",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5916,7 +6137,8 @@
     "requires": [
       "c:muy-amable",
       "l:amable",
-      "l:señora"
+      "l:señora",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:muy-amable"
@@ -5936,7 +6158,9 @@
       "l:calle",
       "l:comprar",
       "l:pan",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article",
+      "p:street-names"
     ],
     "targets": [
       "g:present-ar"
@@ -5956,7 +6180,8 @@
       "l:computadora",
       "l:estar",
       "l:reporte",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -5976,7 +6201,8 @@
       "l:empresa",
       "l:señor",
       "l:señora",
-      "l:trabajar"
+      "l:trabajar",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -5993,7 +6219,9 @@
     "requires": [
       "g:present-ar",
       "l:llamar",
-      "l:señor"
+      "l:señor",
+      "p:personal-a",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -6015,7 +6243,10 @@
       "g:present-ar",
       "l:bien",
       "l:hablar",
-      "l:inglés"
+      "l:inglés",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge"
     ],
     "targets": [
       "g:present-ar"
@@ -6038,7 +6269,9 @@
       "l:español",
       "l:hablar",
       "l:leer",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-ar",
@@ -6060,7 +6293,9 @@
       "l:malo",
       "l:pan",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity"
@@ -6080,7 +6315,9 @@
       "l:malo",
       "l:ser",
       "l:tienda",
-      "l:tinto"
+      "l:tinto",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity"
@@ -6099,7 +6336,9 @@
       "c:gracias-de-nada",
       "g:estar-location-states",
       "l:bien",
-      "l:estar"
+      "l:estar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states"
@@ -6120,7 +6359,10 @@
       "l:bien",
       "l:escribir",
       "l:hablar",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -6140,7 +6382,10 @@
       "g:ser-identity",
       "l:bueno",
       "l:jefe",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -6159,7 +6404,10 @@
       "g:ser-identity",
       "l:malo",
       "l:médico",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -6179,7 +6427,9 @@
       "l:barrio",
       "l:bueno",
       "l:café",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity"
@@ -6198,7 +6448,9 @@
       "g:ser-identity",
       "l:horario",
       "l:malo",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity"
@@ -6217,7 +6469,10 @@
       "g:estar-location-states",
       "g:gender-articles",
       "l:bien",
-      "l:estar"
+      "l:estar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states"
@@ -6237,7 +6492,9 @@
       "g:present-er-ir",
       "l:bien",
       "l:escribir",
-      "l:estudiante"
+      "l:estudiante",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-er-ir"
@@ -6255,7 +6512,9 @@
       "c:bien-y-tu",
       "g:present-ar",
       "l:bien",
-      "l:trabajar"
+      "l:trabajar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-ar"
@@ -6276,7 +6535,9 @@
       "l:bien",
       "l:cliente",
       "l:hablar",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-ar"
@@ -6297,7 +6558,9 @@
       "l:jugo",
       "l:malo",
       "l:pan",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity"
@@ -6318,7 +6581,10 @@
       "l:aquí",
       "l:bien",
       "l:café",
-      "l:estar"
+      "l:estar",
+      "p:aqui-ahi-alla",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states"
@@ -6341,7 +6607,9 @@
       "l:estar",
       "l:mal",
       "l:número",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states"
@@ -6361,7 +6629,9 @@
       "g:present-er-ir",
       "l:bien",
       "l:café",
-      "l:comer"
+      "l:comer",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-er-ir"
@@ -6380,7 +6650,9 @@
       "g:estar-location-states",
       "l:bien",
       "l:estar",
-      "l:nervioso"
+      "l:nervioso",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states"
@@ -6399,7 +6671,9 @@
       "g:ser-identity",
       "l:bueno",
       "l:reporte",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity"
@@ -6422,7 +6696,9 @@
       "l:cliente",
       "l:día",
       "l:malo",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity",
@@ -6445,7 +6721,9 @@
       "l:español",
       "l:inglés",
       "l:leer",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-er-ir"
@@ -6485,7 +6763,9 @@
       "c:bien-y-tu",
       "g:present-ar",
       "l:bien",
-      "l:hablar"
+      "l:hablar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-ar",
@@ -6510,7 +6790,9 @@
       "l:comer",
       "l:hablar",
       "l:llegar",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity",
@@ -6530,7 +6812,10 @@
       "c:bien-y-tu",
       "g:present-ar",
       "l:bien",
-      "l:trabajar"
+      "l:trabajar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -6551,7 +6836,9 @@
       "g:stem-boot",
       "l:bien",
       "l:entender",
-      "l:horario"
+      "l:horario",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:no-entiendo"
@@ -6571,7 +6858,10 @@
       "l:agua",
       "l:barrio",
       "l:buena",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:ser-identity"
@@ -6592,7 +6882,10 @@
       "l:estar",
       "l:mal",
       "l:número",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:estar-location-states",
@@ -6614,7 +6907,10 @@
       "g:present-ar",
       "l:bien",
       "l:estar",
-      "l:hablar"
+      "l:hablar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states",
@@ -6632,7 +6928,8 @@
     "requires": [
       "c:has-estado",
       "g:perfecto-experience",
-      "l:estar"
+      "l:estar",
+      "p:frequency-scale"
     ],
     "targets": [
       "c:has-estado"
@@ -6669,7 +6966,8 @@
     "requires": [
       "c:has-estado",
       "g:perfecto-experience",
-      "l:estar"
+      "l:estar",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:has-estado"
@@ -6689,7 +6987,8 @@
       "g:perfecto-experience",
       "l:cómo",
       "l:estar",
-      "l:ser"
+      "l:ser",
+      "p:frequency-scale"
     ],
     "targets": [
       "c:has-estado"
@@ -6814,7 +7113,9 @@
       "g:perfecto-experience",
       "l:bueno",
       "l:estar",
-      "l:parque"
+      "l:parque",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:has-estado",
@@ -6889,7 +7190,8 @@
       "c:no-se",
       "g:present-er-ir",
       "g:yo-irregular",
-      "l:saber"
+      "l:saber",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:no-se",
@@ -6952,7 +7254,8 @@
       "g:yo-irregular",
       "l:dónde",
       "l:estar",
-      "l:saber"
+      "l:saber",
+      "p:question-word-order"
     ],
     "targets": [
       "c:no-se",
@@ -7145,7 +7448,8 @@
       "l:aquí",
       "l:jugo",
       "l:mejorar",
-      "l:pan"
+      "l:pan",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:que-te-mejores",
@@ -7164,7 +7468,9 @@
       "c:que-te-mejores",
       "g:subj-wishes",
       "l:bien",
-      "l:ir"
+      "l:ir",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:que-te-mejores"
@@ -7205,7 +7511,8 @@
       "g:subj-wishes",
       "l:café",
       "l:mejorar",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las"
     ],
     "targets": [
       "c:que-te-mejores",
@@ -7226,7 +7533,8 @@
       "g:subj-wishes",
       "l:bien",
       "l:ir",
-      "l:señora"
+      "l:señora",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:que-te-mejores"
@@ -7277,7 +7585,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:cliente",
-      "l:llegar"
+      "l:llegar",
+      "p:telling-time"
     ],
     "targets": [
       "c:ojala",
@@ -7332,7 +7641,10 @@
       "c:ojala",
       "g:estar-location-states",
       "l:bien",
-      "l:estar"
+      "l:estar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:ojala",
@@ -7388,7 +7700,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:jefe",
-      "l:llegar"
+      "l:llegar",
+      "p:telling-time"
     ],
     "targets": [
       "c:ojala",
@@ -7425,7 +7738,9 @@
       "c:hay",
       "c:ojala",
       "g:hay-vs-esta",
-      "l:tinto"
+      "l:tinto",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:ojala",
@@ -7491,7 +7806,8 @@
       "c:no-entiendo",
       "g:stem-boot",
       "l:entender",
-      "l:verdad"
+      "l:verdad",
+      "p:personal-a"
     ],
     "targets": [
       "c:la-verdad",
@@ -7534,7 +7850,9 @@
       "l:bien",
       "l:hablar",
       "l:ser",
-      "l:verdad"
+      "l:verdad",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:la-verdad",
@@ -7556,7 +7874,9 @@
       "l:horario",
       "l:malo",
       "l:ser",
-      "l:verdad"
+      "l:verdad",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:la-verdad"
@@ -7640,7 +7960,7 @@
       "l:ser",
       "l:trabajar",
       "l:verdad",
-      "p:trabajar-de"
+      "p:desde-hasta"
     ],
     "targets": [
       "g:ser-identity",
@@ -7728,7 +8048,9 @@
       "c:que-mas",
       "g:gender-articles",
       "l:qué",
-      "l:tinto"
+      "l:tinto",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:que-mas"
@@ -7842,7 +8164,8 @@
       "l:aquí",
       "l:bien",
       "l:hacer",
-      "l:qué"
+      "l:qué",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:bien-y-tu",
@@ -7865,7 +8188,8 @@
       "l:bien",
       "l:cómo",
       "l:estar",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:bien-y-tu"
@@ -7884,7 +8208,9 @@
       "c:gracias-de-nada",
       "g:estar-location-states",
       "l:bien",
-      "l:estar"
+      "l:estar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:bien-y-tu",
@@ -8519,7 +8845,8 @@
       "c:no-cierto",
       "g:gender-articles",
       "g:present-er-ir",
-      "l:comer"
+      "l:comer",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -8591,7 +8918,9 @@
       "c:no-cierto",
       "g:present-er-ir",
       "l:aquí",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -8665,7 +8994,8 @@
       "l:amable",
       "l:aquí",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:muy-amable"
@@ -8685,7 +9015,8 @@
       "l:amable",
       "l:pan",
       "l:qué",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin"
     ],
     "targets": [
       "c:muy-amable"
@@ -8704,7 +9035,11 @@
       "c:muy-amable",
       "g:gender-articles",
       "l:amable",
-      "l:ver"
+      "l:ver",
+      "p:don-dona-nombre",
+      "p:nos-vemos-a-las",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "c:muy-amable",
@@ -8746,7 +9081,8 @@
       "c:muy-amable",
       "g:ser-identity",
       "l:amable",
-      "l:ser"
+      "l:ser",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:muy-amable",
@@ -8766,7 +9102,9 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:amable",
-      "l:ser"
+      "l:ser",
+      "p:no-es-nada-adj",
+      "p:telling-time"
     ],
     "targets": [
       "c:muy-amable",
@@ -8827,7 +9165,9 @@
     "requires": [
       "c:con-mucho-gusto",
       "c:mucho-gusto",
-      "l:gusto"
+      "l:gusto",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:con-mucho-gusto"
@@ -8884,7 +9224,9 @@
     "requires": [
       "c:con-mucho-gusto",
       "c:mucho-gusto",
-      "l:gusto"
+      "l:gusto",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:con-mucho-gusto"
@@ -8971,7 +9313,9 @@
     "requires": [
       "c:quiubo",
       "g:gender-articles",
-      "l:tinto"
+      "l:tinto",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [],
     "kind": "question",
@@ -9053,7 +9397,8 @@
       "l:dedicar",
       "l:ingeniero",
       "l:qué",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:a-que-te-dedicas"
@@ -9073,7 +9418,8 @@
       "l:dedicar",
       "l:médico",
       "l:qué",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:a-que-te-dedicas"
@@ -9096,7 +9442,8 @@
       "l:dedicar",
       "l:qué",
       "l:señora",
-      "l:trabajar"
+      "l:trabajar",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:a-que-te-dedicas"
@@ -9156,7 +9503,9 @@
       "g:gender-articles",
       "l:dedicar",
       "l:qué",
-      "l:tinto"
+      "l:tinto",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:a-que-te-dedicas"
@@ -9179,7 +9528,8 @@
       "l:estudiar",
       "l:inglés",
       "l:qué",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:a-que-te-dedicas",
@@ -9218,7 +9568,9 @@
       "l:profesor",
       "l:qué",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "c:a-que-te-dedicas"
@@ -9238,7 +9590,8 @@
       "g:questions",
       "l:amigo",
       "l:dónde",
-      "l:vivir"
+      "l:vivir",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9278,7 +9631,9 @@
       "g:questions",
       "l:cuándo",
       "l:empezar",
-      "l:reunión"
+      "l:reunión",
+      "p:question-word-order",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -9322,7 +9677,10 @@
       "l:dónde",
       "l:estudiar",
       "l:hijos",
-      "l:señor"
+      "l:señor",
+      "p:masculine-plural-mixed",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -9343,7 +9701,8 @@
       "g:questions",
       "l:cuándo",
       "l:reunión",
-      "l:terminar"
+      "l:terminar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9365,7 +9724,8 @@
       "l:escribir",
       "l:oficina",
       "l:quién",
-      "l:reporte"
+      "l:reporte",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9387,7 +9747,8 @@
       "l:banco",
       "l:correo",
       "l:leer",
-      "l:quién"
+      "l:quién",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9408,7 +9769,8 @@
       "g:questions",
       "l:compañero",
       "l:hacer",
-      "l:qué"
+      "l:qué",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -9450,7 +9812,8 @@
       "g:ser-identity",
       "l:cómo",
       "l:oficina",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -9469,7 +9832,8 @@
       "l:colegio",
       "l:cómo",
       "l:horario",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -9488,7 +9852,8 @@
       "l:café",
       "l:cliente",
       "l:cómo",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9529,7 +9894,8 @@
       "g:questions",
       "l:cliente",
       "l:cuánto",
-      "l:llegar"
+      "l:llegar",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -9571,7 +9937,8 @@
       "g:questions",
       "l:cuánto",
       "l:deber",
-      "l:tinto"
+      "l:tinto",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -9593,7 +9960,8 @@
       "g:ser-identity",
       "l:cuánto",
       "l:jugo",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9615,7 +9983,8 @@
       "l:cuál",
       "l:número",
       "l:oficina",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9636,7 +10005,8 @@
       "g:ser-identity",
       "l:cuál",
       "l:ser",
-      "l:universidad"
+      "l:universidad",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9658,7 +10028,8 @@
       "l:cuál",
       "l:mesero",
       "l:nombre",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9680,7 +10051,9 @@
       "l:jefe",
       "l:quién",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -9699,7 +10072,8 @@
       "g:questions",
       "g:ser-identity",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9741,7 +10115,9 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:tienda"
+      "l:tienda",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -9761,7 +10137,8 @@
       "g:questions",
       "l:computadora",
       "l:dónde",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9782,7 +10159,8 @@
       "g:estar-location-states",
       "l:cómo",
       "l:estar",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states"
@@ -9805,7 +10183,8 @@
       "l:cómo",
       "l:estar",
       "l:estudiante",
-      "l:sueño"
+      "l:sueño",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9952,7 +10331,10 @@
       "l:comer",
       "l:pan",
       "l:quién",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -9973,7 +10355,8 @@
       "g:questions",
       "l:cliente",
       "l:cuándo",
-      "l:llegar"
+      "l:llegar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -9992,7 +10375,8 @@
       "g:present-ar",
       "g:questions",
       "l:cuándo",
-      "l:llegar"
+      "l:llegar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -10012,7 +10396,8 @@
       "g:present-ar",
       "g:questions",
       "l:cuándo",
-      "l:estudiar"
+      "l:estudiar",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -10031,7 +10416,9 @@
       "g:present-ar",
       "g:questions",
       "l:cuándo",
-      "l:trabajar"
+      "l:trabajar",
+      "p:desde-hasta",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -10052,7 +10439,8 @@
       "g:questions",
       "l:dónde",
       "l:ingeniero",
-      "l:trabajar"
+      "l:trabajar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -10094,7 +10482,8 @@
       "g:questions",
       "l:amigo",
       "l:dónde",
-      "l:vivir"
+      "l:vivir",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -10115,7 +10504,9 @@
       "l:cómo",
       "l:hablar",
       "l:inglés",
-      "l:mal"
+      "l:mal",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -10134,7 +10525,8 @@
       "g:present-er-ir",
       "g:questions",
       "l:cómo",
-      "l:leer"
+      "l:leer",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -10200,7 +10592,8 @@
       "g:present-ar",
       "g:questions",
       "l:llamar",
-      "l:quién"
+      "l:quién",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -10262,7 +10655,8 @@
       "g:present-er-ir",
       "g:questions",
       "l:hacer",
-      "l:qué"
+      "l:qué",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -10350,7 +10744,9 @@
       "l:banco",
       "l:dónde",
       "l:estar",
-      "l:señor"
+      "l:señor",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -10373,7 +10769,9 @@
       "l:dónde",
       "l:estar",
       "l:saber",
-      "l:señora"
+      "l:señora",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states",
@@ -10394,7 +10792,9 @@
       "g:gender-articles",
       "l:cómo",
       "l:estar",
-      "l:señora"
+      "l:señora",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -10414,7 +10814,9 @@
       "g:ser-identity",
       "l:apellido",
       "l:cuál",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -10435,7 +10837,8 @@
       "g:ser-identity",
       "l:cuál",
       "l:país",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -10455,7 +10858,8 @@
       "g:ser-identity",
       "l:canadiense",
       "l:colombiano",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -10472,7 +10876,9 @@
     "requires": [
       "g:ser-identity",
       "l:colombiano",
-      "l:ser"
+      "l:ser",
+      "p:senor-don-article",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -10493,7 +10899,8 @@
       "l:cliente",
       "l:japonés",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -10620,7 +11027,8 @@
       "g:questions",
       "l:barrio",
       "l:qué",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:questions",
@@ -10641,7 +11049,8 @@
       "l:hospital",
       "l:número",
       "l:quién",
-      "l:saber"
+      "l:saber",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -10657,7 +11066,9 @@
       "g:present-er-ir",
       "g:questions",
       "l:qué",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -10678,7 +11089,8 @@
       "g:questions",
       "l:banco",
       "l:cuánto",
-      "l:deber"
+      "l:deber",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -10784,7 +11196,8 @@
       "l:aquí",
       "l:cuánto",
       "l:estudiante",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:questions",
@@ -10805,7 +11218,8 @@
       "g:questions",
       "l:café",
       "l:comer",
-      "l:quién"
+      "l:quién",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -10825,7 +11239,9 @@
       "g:present-ar",
       "g:questions",
       "l:llegar",
-      "l:quién"
+      "l:quién",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -10845,7 +11261,8 @@
       "g:ser-identity",
       "l:amable",
       "l:cómo",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:ser-identity"
@@ -10865,7 +11282,10 @@
       "l:amable",
       "l:colombiano",
       "l:cómo",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order",
+      "p:senor-don-article",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -10886,7 +11306,10 @@
       "l:bueno",
       "l:cómo",
       "l:jugo",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:question-word-order"
     ],
     "targets": [
       "g:ser-identity"
@@ -10907,7 +11330,9 @@
       "l:banco",
       "l:cuál",
       "l:horario",
-      "l:ser"
+      "l:ser",
+      "p:desde-hasta",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -10929,7 +11354,8 @@
       "l:dónde",
       "l:estar",
       "l:jefe",
-      "l:oficina"
+      "l:oficina",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states"
@@ -10949,7 +11375,8 @@
       "g:questions",
       "l:correo",
       "l:cuándo",
-      "l:leer"
+      "l:leer",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -10969,7 +11396,8 @@
       "g:present-er-ir",
       "g:questions",
       "l:comer",
-      "l:cuándo"
+      "l:cuándo",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -10990,7 +11418,8 @@
       "g:questions",
       "l:cuándo",
       "l:escribir",
-      "l:reporte"
+      "l:reporte",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -11032,7 +11461,8 @@
       "g:questions",
       "l:dónde",
       "l:hospital",
-      "l:trabajar"
+      "l:trabajar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -11053,7 +11483,8 @@
       "g:ser-identity",
       "l:profesor",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -11075,7 +11506,9 @@
       "l:calle",
       "l:colegio",
       "l:dónde",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order",
+      "p:street-names"
     ],
     "targets": [
       "g:estar-location-states"
@@ -11096,7 +11529,10 @@
       "l:bueno",
       "l:colegio",
       "l:cómo",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:question-word-order"
     ],
     "targets": [
       "g:ser-identity"
@@ -11137,7 +11573,8 @@
       "g:questions",
       "l:comer",
       "l:dónde",
-      "l:médico"
+      "l:médico",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -11158,7 +11595,8 @@
       "g:questions",
       "l:quién",
       "l:reporte",
-      "l:terminar"
+      "l:terminar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -11179,7 +11617,8 @@
       "g:present-ar",
       "g:questions",
       "l:cuándo",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -11223,7 +11662,10 @@
       "l:cuál",
       "l:hijos",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:masculine-plural-mixed",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -11289,7 +11731,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:café",
-      "l:llegar"
+      "l:llegar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -11311,7 +11754,7 @@
       "g:present-ar",
       "l:cliente",
       "l:empezar",
-      "p:con-sin"
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -11329,7 +11772,10 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:hacer",
-      "l:pan"
+      "l:pan",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -11348,7 +11794,8 @@
       "g:present-er-ir",
       "l:hablar",
       "l:leer",
-      "l:llegar"
+      "l:llegar",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar",
@@ -11370,7 +11817,8 @@
       "l:inventar",
       "l:nombre",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -11446,7 +11894,8 @@
       "g:gender-articles",
       "g:hay-vs-esta",
       "l:café",
-      "l:fotografía"
+      "l:fotografía",
+      "p:dates-years"
     ],
     "targets": [
       "c:hay"
@@ -11486,7 +11935,9 @@
       "l:bueno",
       "l:malo",
       "l:pan",
-      "l:separar"
+      "l:separar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-ar"
@@ -11528,7 +11979,8 @@
       "l:café",
       "l:comprar",
       "l:señor",
-      "l:tienda"
+      "l:tienda",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -11570,7 +12022,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:abandonar",
-      "l:café"
+      "l:café",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -11588,7 +12041,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:ordenar",
-      "l:tienda"
+      "l:tienda",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -11627,7 +12081,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:empresa",
-      "l:escribir"
+      "l:escribir",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -11703,7 +12158,8 @@
       "l:inglés",
       "l:qué",
       "l:saber",
-      "l:significar"
+      "l:significar",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:present-ar"
@@ -11721,7 +12177,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:número",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:present-er-ir"
@@ -11743,7 +12200,9 @@
       "l:amigo",
       "l:buen",
       "l:creer",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:creo-que"
@@ -11778,7 +12237,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:comer",
-      "l:pan"
+      "l:pan",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -11795,7 +12255,8 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -11814,7 +12275,8 @@
       "g:present-er-ir",
       "l:comer",
       "l:hablar",
-      "l:pan"
+      "l:pan",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -11853,7 +12315,8 @@
       "g:present-ar",
       "g:present-er-ir",
       "l:comer",
-      "l:llegar"
+      "l:llegar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar",
@@ -11912,7 +12375,8 @@
       "g:present-er-ir",
       "l:comité",
       "l:correo",
-      "l:leer"
+      "l:leer",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -11951,7 +12415,8 @@
       "g:present-er-ir",
       "l:barrio",
       "l:nombre",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:present-er-ir"
@@ -11970,7 +12435,8 @@
       "g:present-er-ir",
       "l:horario",
       "l:nombre",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:present-er-ir"
@@ -12008,7 +12474,8 @@
       "g:present-er-ir",
       "l:claro",
       "l:hacer",
-      "l:horario"
+      "l:horario",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -12048,7 +12515,8 @@
       "l:cliente",
       "l:hablar",
       "l:inglés",
-      "l:ver"
+      "l:ver",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-er-ir",
@@ -12069,7 +12537,9 @@
       "l:bueno",
       "l:café",
       "l:ser",
-      "l:típico"
+      "l:típico",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity"
@@ -12148,7 +12618,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:banco",
-      "l:llamar"
+      "l:llamar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -12219,7 +12690,8 @@
       "l:empresa",
       "l:ingeniero",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-ar"
@@ -12240,7 +12712,8 @@
       "l:amigo",
       "l:profesor",
       "l:ser",
-      "l:vivir"
+      "l:vivir",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -12260,7 +12733,8 @@
       "l:estudiante",
       "l:estudiar",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-ar"
@@ -12302,7 +12776,8 @@
       "g:ser-identity",
       "l:estudiante",
       "l:ser",
-      "l:universidad"
+      "l:universidad",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -12321,7 +12796,8 @@
       "g:present-ar",
       "l:colegio",
       "l:llegar",
-      "l:profesor"
+      "l:profesor",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -12402,7 +12878,7 @@
       "g:present-ar",
       "l:oficina",
       "l:trabajar",
-      "p:trabajar-de"
+      "p:desde-hasta"
     ],
     "targets": [
       "g:present-ar"
@@ -12440,7 +12916,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:comer",
-      "l:compañero"
+      "l:compañero",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -12477,7 +12954,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:reunión",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -12497,7 +12975,8 @@
       "l:cliente",
       "l:llamar",
       "l:reporte",
-      "l:terminar"
+      "l:terminar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar"
@@ -12617,7 +13096,8 @@
       "l:español",
       "l:estudiante",
       "l:estudiar",
-      "l:japonés"
+      "l:japonés",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:present-ar"
@@ -12693,7 +13173,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:colegio",
-      "l:empezar"
+      "l:empezar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -12711,7 +13192,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:colegio",
-      "l:comer"
+      "l:comer",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -12730,7 +13212,8 @@
       "g:ser-identity",
       "l:empresa",
       "l:horario",
-      "l:ser"
+      "l:ser",
+      "p:desde-hasta"
     ],
     "targets": [
       "g:ser-identity"
@@ -12748,7 +13231,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:horario",
-      "l:ser"
+      "l:ser",
+      "p:desde-hasta"
     ],
     "targets": [
       "g:ser-identity"
@@ -12804,7 +13288,8 @@
       "g:present-er-ir",
       "l:correo",
       "l:día",
-      "l:escribir"
+      "l:escribir",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:present-er-ir"
@@ -12841,7 +13326,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:banco",
-      "l:hablar"
+      "l:hablar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -12881,7 +13367,8 @@
       "l:enfermo",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -12901,7 +13388,8 @@
       "l:estar",
       "l:nervioso",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -12922,7 +13410,10 @@
       "l:aburrido",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:aburrir-aburrirse",
+      "p:repeticion-claro-claro",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -12943,7 +13434,10 @@
       "l:bien",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -12963,7 +13457,10 @@
       "l:estar",
       "l:reunión",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:desde-hasta",
+      "p:telling-time",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -12985,7 +13482,9 @@
       "l:estar",
       "l:sed",
       "l:tener",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:senor-don-article",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13010,7 +13509,8 @@
       "l:parque",
       "l:sed",
       "l:tener",
-      "l:tienda"
+      "l:tienda",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states",
@@ -13037,7 +13537,9 @@
       "l:sed",
       "l:ser",
       "l:tener",
-      "l:típico"
+      "l:típico",
+      "p:aburrir-aburrirse",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13058,7 +13560,8 @@
       "l:estar",
       "l:nervioso",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13080,7 +13583,9 @@
       "l:jugo",
       "l:sed",
       "l:tener",
-      "l:tinto"
+      "l:tinto",
+      "p:sobre-todo-solo",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:hay"
@@ -13103,7 +13608,9 @@
       "l:estar",
       "l:oficina",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:el-agua-fria",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13125,7 +13632,8 @@
       "l:agua",
       "l:oficina",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:hay"
@@ -13148,7 +13656,9 @@
       "l:mora",
       "l:regalar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:me-trae",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:me-regala"
@@ -13169,7 +13679,8 @@
       "l:jugo",
       "l:sed",
       "l:tener",
-      "l:tinto"
+      "l:tinto",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -13187,7 +13698,8 @@
       "l:pan",
       "l:querer",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:present-er-ir"
@@ -13209,7 +13721,11 @@
       "l:bien",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:senor-don-article",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13233,7 +13749,8 @@
       "l:estar",
       "l:hospital",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13322,7 +13839,8 @@
       "l:aburrido",
       "l:estar",
       "l:tener",
-      "l:trabajo"
+      "l:trabajo",
+      "p:aburrir-aburrirse"
     ],
     "targets": [
       "g:estar-location-states",
@@ -13346,7 +13864,9 @@
       "l:contento",
       "l:estar",
       "l:jefe",
-      "l:tener"
+      "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states",
@@ -13371,7 +13891,8 @@
       "l:cómo",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13394,7 +13915,10 @@
       "l:enfermo",
       "l:estar",
       "l:sed",
-      "l:tener"
+      "l:tener",
+      "p:don-dona-nombre",
+      "p:senor-don-article",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13432,7 +13956,8 @@
       "g:gender-articles",
       "l:calle",
       "l:cliente",
-      "l:estar"
+      "l:estar",
+      "p:street-names"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13452,7 +13977,8 @@
       "l:banco",
       "l:dónde",
       "l:estar",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states",
@@ -13571,7 +14097,8 @@
       "g:estar-location-states",
       "g:gender-articles",
       "l:estar",
-      "l:número"
+      "l:número",
+      "p:street-names"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13591,7 +14118,8 @@
       "l:calle",
       "l:estar",
       "l:número",
-      "l:tienda"
+      "l:tienda",
+      "p:street-names"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13649,7 +14177,8 @@
       "l:aquí",
       "l:computadora",
       "l:correo",
-      "l:estar"
+      "l:estar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13668,7 +14197,8 @@
       "g:gender-articles",
       "l:café",
       "l:estar",
-      "l:pan"
+      "l:pan",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13688,7 +14218,8 @@
       "l:banco",
       "l:estar",
       "l:oficina",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13802,7 +14333,8 @@
       "l:aquí",
       "l:estar",
       "l:hospital",
-      "l:médico"
+      "l:médico",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states"
@@ -13843,7 +14375,8 @@
       "l:dónde",
       "l:estar",
       "l:saber",
-      "l:vivir"
+      "l:vivir",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states",
@@ -13881,7 +14414,8 @@
       "g:estar-location-states",
       "g:gender-articles",
       "l:estar",
-      "l:universidad"
+      "l:universidad",
+      "p:desde-hasta"
     ],
     "targets": [
       "g:estar-location-states"
@@ -14001,7 +14535,8 @@
       "g:present-ar",
       "l:empezar",
       "l:empresa",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -14100,7 +14635,8 @@
       "g:present-er-ir",
       "l:comer",
       "l:reporte",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar",
@@ -14119,7 +14655,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:terminar",
-      "l:trabajo"
+      "l:trabajo",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -14136,7 +14673,8 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -14155,7 +14693,8 @@
       "g:present-ar",
       "l:estudiar",
       "l:inglés",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -14194,7 +14733,9 @@
       "g:ser-identity",
       "l:bueno",
       "l:colegio",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity"
@@ -14212,7 +14753,8 @@
       "g:present-ar",
       "g:present-er-ir",
       "l:estudiar",
-      "l:leer"
+      "l:leer",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar",
@@ -14320,7 +14862,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:centavo",
-      "l:deber"
+      "l:deber",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -14361,7 +14904,8 @@
       "l:médico",
       "l:número",
       "l:trabajar",
-      "l:vivir"
+      "l:vivir",
+      "p:street-names"
     ],
     "targets": [
       "g:present-er-ir",
@@ -14384,7 +14928,9 @@
       "l:centro",
       "l:estar",
       "l:hospital",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states"
@@ -14404,7 +14950,8 @@
       "g:gender-articles",
       "l:estar",
       "l:hospital",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -14459,7 +15006,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:empresa",
-      "l:llamar"
+      "l:llamar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -14480,7 +15028,8 @@
       "l:calle",
       "l:jugo",
       "l:mora",
-      "l:tienda"
+      "l:tienda",
+      "p:street-names"
     ],
     "targets": [
       "c:hay"
@@ -14519,7 +15068,8 @@
       "g:gender-articles",
       "g:hay-vs-esta",
       "l:calle",
-      "l:tienda"
+      "l:tienda",
+      "p:street-names"
     ],
     "targets": [
       "c:hay"
@@ -14557,7 +15107,8 @@
       "l:compañero",
       "l:mexicano",
       "l:ser",
-      "l:trabajo"
+      "l:trabajo",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -14632,7 +15183,9 @@
       "g:present-ar",
       "l:bien",
       "l:hablar",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-ar"
@@ -14791,7 +15344,8 @@
       "l:banco",
       "l:llamar",
       "l:quién",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -14873,7 +15427,8 @@
       "g:present-ar",
       "g:questions",
       "l:cuándo",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -14915,7 +15470,8 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:tienda"
+      "l:tienda",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states"
@@ -14934,7 +15490,8 @@
       "g:questions",
       "l:aquí",
       "l:quién",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:questions",
@@ -14975,7 +15532,8 @@
       "g:ser-identity",
       "l:cuál",
       "l:número",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -15078,7 +15636,8 @@
       "l:bueno",
       "l:cómo",
       "l:estar",
-      "l:pan"
+      "l:pan",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states"
@@ -15119,7 +15678,8 @@
       "g:questions",
       "l:dónde",
       "l:hospital",
-      "l:trabajar"
+      "l:trabajar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -15142,7 +15702,8 @@
       "l:ingeniero",
       "l:qué",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:questions",
@@ -15164,7 +15725,8 @@
       "l:correo",
       "l:quién",
       "l:ser",
-      "l:señora"
+      "l:señora",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -15186,7 +15748,8 @@
       "l:dónde",
       "l:estudiante",
       "l:japonés",
-      "l:vivir"
+      "l:vivir",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -15229,7 +15792,9 @@
       "l:aquí",
       "l:inglés",
       "l:quién",
-      "l:saber"
+      "l:saber",
+      "p:aqui-ahi-alla",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -15247,7 +15812,8 @@
       "g:questions",
       "l:banco",
       "l:cuándo",
-      "l:llamar"
+      "l:llamar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -15293,7 +15859,9 @@
       "l:claro",
       "l:comprar",
       "l:dónde",
-      "l:pan"
+      "l:pan",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -15314,7 +15882,8 @@
       "g:questions",
       "l:comité",
       "l:cuándo",
-      "l:llegar"
+      "l:llegar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -15353,7 +15922,9 @@
       "l:cómo",
       "l:saber",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:no-se"
@@ -15373,7 +15944,9 @@
       "g:questions",
       "l:dónde",
       "l:señor",
-      "l:trabajar"
+      "l:trabajar",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -15395,7 +15968,8 @@
       "l:comprar",
       "l:cuánto",
       "l:señor",
-      "l:tienda"
+      "l:tienda",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -15443,7 +16017,8 @@
       "g:questions",
       "l:calle",
       "l:quién",
-      "l:vivir"
+      "l:vivir",
+      "p:street-names"
     ],
     "targets": [
       "g:questions",
@@ -15464,7 +16039,8 @@
       "l:cómo",
       "l:escribir",
       "l:r",
-      "l:rr"
+      "l:rr",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -15485,7 +16061,9 @@
       "g:questions",
       "l:dónde",
       "l:estudiar",
-      "l:hijos"
+      "l:hijos",
+      "p:masculine-plural-mixed",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -15506,7 +16084,8 @@
       "l:aquí",
       "l:comer",
       "l:cuánto",
-      "l:estudiante"
+      "l:estudiante",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:questions",
@@ -15553,7 +16132,8 @@
       "g:ser-identity",
       "l:canadiense",
       "l:ser",
-      "l:vivir"
+      "l:vivir",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -15595,7 +16175,8 @@
       "g:ser-identity",
       "l:barrio",
       "l:ser",
-      "l:vivir"
+      "l:vivir",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -15652,7 +16233,8 @@
       "g:ser-identity",
       "l:colombiano",
       "l:ser",
-      "l:vivir"
+      "l:vivir",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -15736,7 +16318,8 @@
       "g:gender-articles",
       "g:gustar-full",
       "l:café",
-      "l:encantar"
+      "l:encantar",
+      "p:telling-time"
     ],
     "targets": [
       "c:me-encanta"
@@ -15876,7 +16459,8 @@
       "l:anoche",
       "l:comer",
       "l:leche",
-      "l:pan"
+      "l:pan",
+      "p:con-sin"
     ],
     "targets": [
       "c:comi"
@@ -15897,7 +16481,9 @@
       "g:preterite-ser-ir-hacer",
       "l:ayer",
       "l:hospital",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:fui"
@@ -15921,7 +16507,9 @@
       "l:banco",
       "l:estar",
       "l:ir",
-      "l:señor"
+      "l:señor",
+      "p:ir-a-venir-de-place",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:fui",
@@ -15963,7 +16551,8 @@
       "c:ya-comiste",
       "l:comer",
       "l:leche",
-      "l:pan"
+      "l:pan",
+      "p:con-sin"
     ],
     "targets": [
       "c:ya-comiste"
@@ -16041,7 +16630,8 @@
       "c:hay-que",
       "g:gender-articles",
       "l:esperar",
-      "l:jefe"
+      "l:jefe",
+      "p:personal-a"
     ],
     "targets": [
       "c:hay-que"
@@ -16079,7 +16669,9 @@
     "requires": [
       "c:creo-que",
       "g:that-clauses",
-      "l:creer"
+      "l:creer",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:creo-que"
@@ -16159,7 +16751,9 @@
       "c:entonces-bueno",
       "g:gender-articles",
       "l:bueno",
-      "l:ver"
+      "l:ver",
+      "p:nos-vemos-a-las",
+      "p:telling-time"
     ],
     "targets": [
       "c:entonces-bueno",
@@ -16176,7 +16770,9 @@
     "en": "Of course, Don Hernando.",
     "requires": [
       "c:claro-listo",
-      "l:claro"
+      "l:claro",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:claro-listo"
@@ -16195,7 +16791,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:empezar",
-      "l:listo"
+      "l:listo",
+      "p:telling-time"
     ],
     "targets": [
       "c:claro-listo",
@@ -16215,7 +16812,8 @@
       "l:jugo",
       "l:orden",
       "l:señora",
-      "l:tinto"
+      "l:tinto",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:a-la-orden"
@@ -16255,7 +16853,8 @@
       "l:banco",
       "l:dónde",
       "l:estar",
-      "l:perdón"
+      "l:perdón",
+      "p:question-word-order"
     ],
     "targets": [
       "c:perdon-disculpe",
@@ -16302,7 +16901,8 @@
       "l:café",
       "l:pagar",
       "l:poder",
-      "l:tarjeta"
+      "l:tarjeta",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:puedo"
@@ -16369,7 +16969,8 @@
       "c:me-regala",
       "l:leche",
       "l:regalar",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin"
     ],
     "targets": [
       "c:me-regala"
@@ -16389,7 +16990,8 @@
       "g:questions",
       "l:costar",
       "l:cuánto",
-      "l:jugo"
+      "l:jugo",
+      "p:question-word-order"
     ],
     "targets": [
       "c:cuanto-cuesta"
@@ -16467,7 +17069,8 @@
     "en": "Thanks, Mr Ruiz.\nYou're welcome, Tomás.",
     "requires": [
       "c:gracias-de-nada",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:gracias-de-nada"
@@ -16506,7 +17109,8 @@
       "l:bueno",
       "l:día",
       "l:señor",
-      "l:señora"
+      "l:señora",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:hola-buenos-dias"
@@ -16525,7 +17129,9 @@
       "c:hola-buenos-dias",
       "l:buena",
       "l:noche",
-      "l:ver"
+      "l:ver",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:hola-buenos-dias",
@@ -16565,7 +17171,8 @@
       "g:ser-identity",
       "l:barrio",
       "l:ser",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:telling-time"
     ],
     "targets": [
       "g:ser-identity"
@@ -16586,7 +17193,8 @@
       "l:banco",
       "l:barrio",
       "l:parque",
-      "l:tienda"
+      "l:tienda",
+      "p:lugar-tiene"
     ],
     "targets": [
       "c:hay"
@@ -16626,7 +17234,8 @@
       "l:café",
       "l:calle",
       "l:centro",
-      "l:estar"
+      "l:estar",
+      "p:quedar-a-distancia"
     ],
     "targets": [
       "g:estar-location-states"
@@ -16664,7 +17273,8 @@
       "g:present-er-ir",
       "l:barrio",
       "l:señor",
-      "l:vivir"
+      "l:vivir",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -16686,7 +17296,8 @@
       "l:correo",
       "l:estar",
       "l:leer",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -16728,7 +17339,8 @@
       "l:barrio",
       "l:comer",
       "l:estudiante",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:present-er-ir"
@@ -16787,7 +17399,8 @@
       "g:present-er-ir",
       "l:banco",
       "l:café",
-      "l:ver"
+      "l:ver",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -16807,7 +17420,8 @@
       "g:gender-articles",
       "l:estar",
       "l:parque",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states"
@@ -16827,7 +17441,8 @@
       "g:hay-vs-esta",
       "l:calle",
       "l:centro",
-      "l:hospital"
+      "l:hospital",
+      "p:street-names"
     ],
     "targets": [
       "c:hay"
@@ -16935,7 +17550,9 @@
     "requires": [
       "g:present-er-ir",
       "l:aquí",
-      "l:comer"
+      "l:comer",
+      "p:aqui-ahi-alla",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -16990,7 +17607,8 @@
     "requires": [
       "g:present-er-ir",
       "l:comer",
-      "l:pan"
+      "l:pan",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17008,7 +17626,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:creer",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17069,7 +17688,8 @@
       "g:present-er-ir",
       "l:banco",
       "l:nombre",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17088,7 +17708,9 @@
       "g:present-er-ir",
       "l:número",
       "l:saber",
-      "l:señor"
+      "l:señor",
+      "p:saber-conocer",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17105,7 +17727,8 @@
     "requires": [
       "g:present-er-ir",
       "l:escribir",
-      "l:leer"
+      "l:leer",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17150,7 +17773,8 @@
       "l:correo",
       "l:hablar",
       "l:jefe",
-      "l:leo"
+      "l:leo",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -17169,7 +17793,8 @@
       "g:present-ar",
       "g:present-er-ir",
       "l:comer",
-      "l:trabajar"
+      "l:trabajar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir",
@@ -17187,7 +17812,9 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:llegar"
+      "l:llegar",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -17205,7 +17832,8 @@
       "g:estar-location-states",
       "g:gender-articles",
       "l:café",
-      "l:estar"
+      "l:estar",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states"
@@ -17240,7 +17868,8 @@
     "requires": [
       "g:present-er-ir",
       "l:escribir",
-      "l:leer"
+      "l:leer",
+      "p:desde-hasta"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17259,7 +17888,8 @@
       "g:present-er-ir",
       "l:escribir",
       "l:jefe",
-      "l:leer"
+      "l:leer",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17301,7 +17931,9 @@
       "l:nombre",
       "l:saber",
       "l:ver",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:present-er-ir",
@@ -17322,7 +17954,9 @@
       "l:comer",
       "l:hablar",
       "l:leer",
-      "l:trabajar"
+      "l:trabajar",
+      "p:frequency-scale",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -17341,7 +17975,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:comer",
-      "l:oficina"
+      "l:oficina",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17360,7 +17995,8 @@
       "g:present-er-ir",
       "l:correo",
       "l:jefe",
-      "l:leer"
+      "l:leer",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17378,7 +18014,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:centro",
-      "l:vivir"
+      "l:vivir",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17395,7 +18032,8 @@
     "requires": [
       "g:present-er-ir",
       "l:comer",
-      "l:pan"
+      "l:pan",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17484,7 +18122,9 @@
       "g:present-er-ir",
       "l:comer",
       "l:pan",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17556,7 +18196,8 @@
       "g:present-er-ir",
       "l:aquí",
       "l:comer",
-      "l:parque"
+      "l:parque",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17574,7 +18215,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:reporte",
-      "l:ver"
+      "l:ver",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17615,7 +18257,8 @@
       "g:gender-articles",
       "l:colegio",
       "l:estar",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states"
@@ -17634,7 +18277,8 @@
       "g:present-ar",
       "l:colegio",
       "l:llegar",
-      "l:profesor"
+      "l:profesor",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -17655,7 +18299,8 @@
       "l:colegio",
       "l:estudiar",
       "l:tienda",
-      "l:trabajar"
+      "l:trabajar",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -17733,7 +18378,10 @@
       "g:present-ar",
       "l:bien",
       "l:estar",
-      "l:terminar"
+      "l:terminar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar",
@@ -17755,7 +18403,8 @@
       "l:comité",
       "l:cuándo",
       "l:reunión",
-      "l:terminar"
+      "l:terminar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -17810,7 +18459,8 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:empezar"
+      "l:empezar",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -17832,8 +18482,7 @@
       "g:present-ar",
       "l:empezar",
       "l:terminar",
-      "l:tinto",
-      "p:empezar-terminar"
+      "l:tinto"
     ],
     "targets": [
       "g:present-ar"
@@ -17872,7 +18521,8 @@
       "g:gender-articles",
       "g:hay-vs-esta",
       "l:centro",
-      "l:hospital"
+      "l:hospital",
+      "p:otro-no-article"
     ],
     "targets": [
       "c:hay"
@@ -17890,7 +18540,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:comer",
-      "l:hospital"
+      "l:hospital",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -17966,7 +18617,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:compañero",
-      "l:llamar"
+      "l:llamar",
+      "p:personal-a"
     ],
     "targets": [
       "g:present-ar"
@@ -18049,7 +18701,8 @@
       "l:aquí",
       "l:empresa",
       "l:trabajar",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:present-ar",
@@ -18153,7 +18806,12 @@
       "l:bueno",
       "l:cómo",
       "l:estar",
-      "l:tinto"
+      "l:tinto",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:don-dona-nombre",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -18176,7 +18834,9 @@
       "l:día",
       "l:estar",
       "l:malo",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states",
@@ -18198,7 +18858,9 @@
       "l:bien",
       "l:comer",
       "l:hablar",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-er-ir",
@@ -18222,7 +18884,9 @@
       "l:bueno",
       "l:horario",
       "l:ser",
-      "l:trabajar"
+      "l:trabajar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity",
@@ -18246,7 +18910,9 @@
       "l:bueno",
       "l:estar",
       "l:mal",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity",
@@ -18266,7 +18932,9 @@
       "g:present-er-ir",
       "l:apellido",
       "l:escribir",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-er-ir"
@@ -18286,7 +18954,9 @@
       "g:present-er-ir",
       "l:bien",
       "l:leer",
-      "l:número"
+      "l:número",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-er-ir"
@@ -18307,7 +18977,9 @@
       "l:bien",
       "l:estar",
       "l:pan",
-      "l:tinto"
+      "l:tinto",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states"
@@ -18331,7 +19003,9 @@
       "l:estudiante",
       "l:hablar",
       "l:profesor",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity",
@@ -18352,7 +19026,9 @@
       "g:gender-articles",
       "l:bien",
       "l:estar",
-      "l:reporte"
+      "l:reporte",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:estar-location-states"
@@ -18372,7 +19048,12 @@
       "l:bien",
       "l:despacio",
       "l:leer",
-      "l:ver"
+      "l:ver",
+      "p:alcanzar-a-distinguir",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:senor-don-article",
+      "p:ver-oir-bien-mal"
     ],
     "targets": [
       "g:present-er-ir"
@@ -18396,7 +19077,9 @@
       "l:cliente",
       "l:día",
       "l:pan",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:ser-identity",
@@ -18417,7 +19100,8 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:universidad"
+      "l:universidad",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states"
@@ -18439,7 +19123,8 @@
       "l:correo",
       "l:leer",
       "l:qué",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -18461,7 +19146,9 @@
       "l:comer",
       "l:compañero",
       "l:cuándo",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -18484,7 +19171,8 @@
       "l:café",
       "l:dónde",
       "l:escribir",
-      "l:tinto"
+      "l:tinto",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -18504,7 +19192,8 @@
       "g:present-ar",
       "g:questions",
       "l:quién",
-      "l:terminar"
+      "l:terminar",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -18568,7 +19257,9 @@
       "l:cuál",
       "l:jefe",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -18611,7 +19302,8 @@
       "l:aquí",
       "l:café",
       "l:comer",
-      "l:dónde"
+      "l:dónde",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:questions",
@@ -18633,7 +19325,9 @@
       "l:cuándo",
       "l:estar",
       "l:listo",
-      "l:pan"
+      "l:pan",
+      "p:question-word-order",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -18658,7 +19352,8 @@
       "l:cómo",
       "l:estar",
       "l:pan",
-      "l:tinto"
+      "l:tinto",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -18679,7 +19374,8 @@
       "g:gender-articles",
       "l:café",
       "l:cómo",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states"
@@ -18698,7 +19394,8 @@
       "g:present-er-ir",
       "g:questions",
       "l:hacer",
-      "l:qué"
+      "l:qué",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -18719,7 +19416,8 @@
       "l:amigo",
       "l:dónde",
       "l:vivir",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -18742,7 +19440,8 @@
       "l:banco",
       "l:comité",
       "l:cuándo",
-      "l:escribir"
+      "l:escribir",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -18785,7 +19484,10 @@
       "g:questions",
       "l:café",
       "l:dónde",
-      "l:leer"
+      "l:leer",
+      "p:question-word-order",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:questions",
@@ -18807,7 +19509,9 @@
       "l:fotografía",
       "l:quién",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -18830,7 +19534,10 @@
       "l:claro",
       "l:cliente",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:don-dona-nombre",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -18853,7 +19560,9 @@
       "l:número",
       "l:oficina",
       "l:ser",
-      "l:señor"
+      "l:señor",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:questions",
@@ -18918,7 +19627,8 @@
       "g:gender-articles",
       "l:banco",
       "l:qué",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:que-mas"
@@ -19053,7 +19763,8 @@
       "l:banco",
       "l:estar",
       "l:llamar",
-      "l:nervioso"
+      "l:nervioso",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states",
@@ -19073,7 +19784,9 @@
       "g:present-er-ir",
       "l:escribir",
       "l:horario",
-      "l:leer"
+      "l:leer",
+      "p:desde-hasta",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -19094,7 +19807,8 @@
       "l:café",
       "l:hacer",
       "l:pan",
-      "l:quién"
+      "l:quién",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -19115,7 +19829,8 @@
       "l:cliente",
       "l:loro",
       "l:nombre",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:present-er-ir"
@@ -19138,7 +19853,8 @@
       "l:correo",
       "l:leer",
       "l:señor",
-      "l:tinto"
+      "l:tinto",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir"
@@ -19181,6 +19897,7 @@
       "l:abrir",
       "l:hambre",
       "l:tener",
+      "p:telling-time",
       "p:tener-hambre"
     ],
     "targets": [
@@ -19203,6 +19920,7 @@
       "l:hambre",
       "l:tener",
       "l:tinto",
+      "p:sobre-todo-solo",
       "p:tener-hambre"
     ],
     "targets": [],
@@ -19221,7 +19939,8 @@
       "g:yo-irregular",
       "l:frío",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:ser-identity"
@@ -19241,7 +19960,10 @@
       "g:yo-irregular",
       "l:frío",
       "l:mañana",
-      "l:tener"
+      "l:tener",
+      "p:por-la-manana",
+      "p:telling-time",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -19264,7 +19986,9 @@
       "l:centro",
       "l:ir",
       "l:sueño",
-      "l:tener"
+      "l:tener",
+      "p:ir-a-venir-de-place",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:fui"
@@ -19284,7 +20008,10 @@
       "g:yo-irregular",
       "l:miedo",
       "l:señor",
-      "l:tener"
+      "l:tener",
+      "p:me-da-miedo-que",
+      "p:senor-don-article",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -19299,7 +20026,8 @@
     "requires": [
       "c:tienes",
       "l:miedo",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -19319,7 +20047,9 @@
       "l:abrir",
       "l:banco",
       "l:prisa",
-      "l:tener"
+      "l:tener",
+      "p:telling-time",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:present-er-ir"
@@ -19339,7 +20069,8 @@
       "g:yo-irregular",
       "l:calor",
       "l:oficina",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -19356,7 +20087,8 @@
       "g:gender-articles",
       "l:frío",
       "l:oficina",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -19376,7 +20108,10 @@
       "l:mañana",
       "l:ser",
       "l:sueño",
-      "l:tener"
+      "l:tener",
+      "p:por-la-manana",
+      "p:telling-time",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:ser-identity"
@@ -19396,7 +20131,8 @@
       "g:yo-irregular",
       "l:hoy",
       "l:prisa",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -19416,7 +20152,10 @@
       "l:bien",
       "l:estar",
       "l:miedo",
-      "l:tener"
+      "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -19437,7 +20176,8 @@
       "l:cansado",
       "l:estar",
       "l:sueño",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -19480,7 +20220,8 @@
       "l:cansado",
       "l:estar",
       "l:sueño",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -19501,7 +20242,8 @@
       "l:enfermo",
       "l:estar",
       "l:frío",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -19520,7 +20262,8 @@
       "l:estar",
       "l:ocupado",
       "l:prisa",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -19563,7 +20306,10 @@
       "l:bien",
       "l:estar",
       "l:frío",
-      "l:tener"
+      "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -19582,7 +20328,9 @@
       "l:cansado",
       "l:estar",
       "l:hoy",
-      "l:llegar"
+      "l:llegar",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states",
@@ -19643,7 +20391,8 @@
       "l:cansado",
       "l:estar",
       "l:mañana",
-      "l:trabajar"
+      "l:trabajar",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states",
@@ -19664,7 +20413,8 @@
       "l:cansado",
       "l:estar",
       "l:hoy",
-      "l:noche"
+      "l:noche",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:estar-location-states"
@@ -19682,7 +20432,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:abrir",
-      "l:café"
+      "l:café",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -19701,7 +20452,8 @@
       "g:present-er-ir",
       "l:abrir",
       "l:banco",
-      "l:tienda"
+      "l:tienda",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -19718,8 +20470,7 @@
     "requires": [
       "g:present-er-ir",
       "l:abrir",
-      "l:hoy",
-      "p:con-sin"
+      "l:hoy"
     ],
     "targets": [
       "g:present-er-ir"
@@ -19741,7 +20492,8 @@
       "l:abrir",
       "l:hora",
       "l:qué",
-      "l:ser"
+      "l:ser",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -19761,7 +20513,8 @@
       "l:hora",
       "l:llegar",
       "l:qué",
-      "l:ser"
+      "l:ser",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -19779,7 +20532,10 @@
       "g:gender-articles",
       "g:present-ar",
       "l:llegar",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -19797,7 +20553,9 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:comer",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -19816,7 +20574,8 @@
       "g:present-ar",
       "l:cliente",
       "l:hablar",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:present-ar"
@@ -19893,7 +20652,9 @@
       "g:gender-articles",
       "l:calle",
       "l:casa",
-      "l:estar"
+      "l:estar",
+      "p:senor-don-article",
+      "p:street-names"
     ],
     "targets": [
       "g:estar-location-states"
@@ -19950,7 +20711,8 @@
       "g:questions",
       "l:dónde",
       "l:hermana",
-      "l:vivir"
+      "l:vivir",
+      "p:question-word-order"
     ],
     "targets": [
       "g:questions",
@@ -19971,7 +20733,8 @@
       "l:calle",
       "l:casa",
       "l:estar",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -19990,7 +20753,8 @@
       "g:present-ar",
       "l:amigo",
       "l:café",
-      "l:hablar"
+      "l:hablar",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -20012,7 +20776,9 @@
       "l:carro",
       "l:dónde",
       "l:estar",
-      "l:parque"
+      "l:parque",
+      "p:aqui-ahi-alla",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states"
@@ -20033,7 +20799,8 @@
       "l:allí",
       "l:banco",
       "l:estar",
-      "l:hospital"
+      "l:hospital",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states"
@@ -20052,7 +20819,8 @@
       "g:gender-articles",
       "l:ahí",
       "l:cliente",
-      "l:estar"
+      "l:estar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states"
@@ -20070,7 +20838,8 @@
       "g:estar-location-states",
       "l:ahí",
       "l:aquí",
-      "l:estar"
+      "l:estar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states"
@@ -20088,7 +20857,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:café",
-      "l:cantar"
+      "l:cantar",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -20107,7 +20878,9 @@
       "g:present-ar",
       "l:bien",
       "l:cantar",
-      "l:mal"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:present-ar"
@@ -20126,7 +20899,8 @@
       "g:present-ar",
       "l:cantar",
       "l:parque",
-      "l:tarde"
+      "l:tarde",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:present-ar"
@@ -20182,7 +20956,8 @@
       "l:leer",
       "l:libro",
       "l:tinto",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -20240,7 +21015,8 @@
       "g:estar-location-states",
       "g:gender-articles",
       "l:estar",
-      "l:fotografía"
+      "l:fotografía",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -20260,7 +21036,8 @@
       "l:café",
       "l:cliente",
       "l:soñar",
-      "p:sonar-con"
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "g:present-ar"
@@ -20279,7 +21056,8 @@
       "g:present-ar",
       "l:café",
       "l:soñar",
-      "p:sonar-con"
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "g:present-ar"
@@ -20355,7 +21133,8 @@
       "g:present-ar",
       "l:mañana",
       "l:tinto",
-      "l:tomar"
+      "l:tomar",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -20411,7 +21190,8 @@
       "g:present-er-ir",
       "l:abrir",
       "l:café",
-      "l:mañana"
+      "l:mañana",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -20430,7 +21210,9 @@
       "g:present-ar",
       "l:casa",
       "l:llegar",
-      "l:noche"
+      "l:noche",
+      "p:por-la-manana",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -20449,7 +21231,8 @@
       "g:present-ar",
       "l:estudiar",
       "l:inglés",
-      "l:tarde"
+      "l:tarde",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:present-ar"
@@ -20513,7 +21296,8 @@
       "g:present-ar",
       "l:hablar",
       "l:profesional",
-      "l:tinto"
+      "l:tinto",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-ar"
@@ -20554,7 +21338,9 @@
       "l:dónde",
       "l:estar",
       "l:leche",
-      "l:pan"
+      "l:pan",
+      "p:aqui-ahi-alla",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-location-states"
@@ -20573,7 +21359,8 @@
       "g:present-er-ir",
       "l:ahí",
       "l:hermana",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:present-er-ir"
@@ -20592,7 +21379,9 @@
       "g:present-ar",
       "l:ahí",
       "l:número",
-      "l:trabajar"
+      "l:trabajar",
+      "p:aqui-ahi-alla",
+      "p:street-names"
     ],
     "targets": [
       "g:present-ar"
@@ -20612,7 +21401,8 @@
       "g:hay-vs-esta",
       "l:ahí",
       "l:banco",
-      "l:parque"
+      "l:parque",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:hay"
@@ -20631,7 +21421,9 @@
       "g:present-er-ir",
       "l:abrir",
       "l:allá",
-      "l:empresa"
+      "l:empresa",
+      "p:aqui-ahi-alla",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -20650,7 +21442,8 @@
       "g:present-er-ir",
       "l:allá",
       "l:centro",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:present-er-ir"
@@ -20670,7 +21463,8 @@
       "l:abrir",
       "l:allá",
       "l:hermana",
-      "l:tienda"
+      "l:tienda",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:present-er-ir"
@@ -20692,7 +21486,8 @@
       "l:colegio",
       "l:estar",
       "l:estudiar",
-      "l:hermana"
+      "l:hermana",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states",
@@ -20711,7 +21506,9 @@
       "g:gender-articles",
       "l:allí",
       "l:calle",
-      "l:hospital"
+      "l:hospital",
+      "p:aqui-ahi-alla",
+      "p:street-names"
     ],
     "targets": [],
     "kind": "question",
@@ -20728,7 +21525,8 @@
       "g:present-er-ir",
       "l:allí",
       "l:comer",
-      "l:compañero"
+      "l:compañero",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:present-er-ir"
@@ -20748,7 +21546,8 @@
       "l:allí",
       "l:casa",
       "l:estar",
-      "l:fotografía"
+      "l:fotografía",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states"
@@ -20766,7 +21565,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:hermana",
-      "l:llamar"
+      "l:llamar",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -20861,7 +21662,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:cantar",
-      "l:tango"
+      "l:tango",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -20915,7 +21718,8 @@
       "g:gender-articles",
       "g:present-ar",
       "l:llegar",
-      "l:oficina"
+      "l:oficina",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -20933,7 +21737,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:casa",
-      "l:ser"
+      "l:ser",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:ser-identity"
@@ -20952,7 +21757,9 @@
       "l:abrir",
       "l:café",
       "l:soñar",
-      "p:sonar-con"
+      "p:otro-no-article",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "g:present-ar"
@@ -20971,7 +21778,8 @@
       "g:present-ar",
       "l:barrio",
       "l:soñar",
-      "p:sonar-con"
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "g:present-ar"
@@ -20988,7 +21796,8 @@
     "requires": [
       "g:present-ar",
       "l:soñar",
-      "p:sonar-con"
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "g:present-ar"
@@ -21084,7 +21893,8 @@
       "l:hoy",
       "l:llamar",
       "l:miedo",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:present-ar"
@@ -21101,7 +21911,9 @@
     "requires": [
       "c:tienes",
       "l:miedo",
-      "l:tener"
+      "l:tener",
+      "p:me-da-miedo-que",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -21120,7 +21932,11 @@
       "l:calle",
       "l:miedo",
       "l:noche",
-      "l:tener"
+      "l:tener",
+      "p:me-da-miedo-que",
+      "p:por-la-manana",
+      "p:telling-time",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -21139,7 +21955,10 @@
       "l:hablar",
       "l:miedo",
       "l:reunión",
-      "l:tener"
+      "l:tener",
+      "p:me-da-miedo-que",
+      "p:miedo-a",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -21159,7 +21978,8 @@
       "l:hoy",
       "l:sueño",
       "l:tener",
-      "l:tinto"
+      "l:tinto",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:hay"
@@ -21178,7 +21998,10 @@
       "g:gender-articles",
       "l:noche",
       "l:sueño",
-      "l:tener"
+      "l:tener",
+      "p:por-la-manana",
+      "p:telling-time",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -21198,7 +22021,8 @@
       "l:hoy",
       "l:nervioso",
       "l:sueño",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:estar-location-states"
@@ -21257,7 +22081,8 @@
       "g:present-er-ir",
       "l:dormir",
       "l:hoy",
-      "l:reunión"
+      "l:reunión",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-er-ir"
@@ -21316,7 +22141,9 @@
       "g:gender-articles",
       "l:dónde",
       "l:estar",
-      "l:libro"
+      "l:libro",
+      "p:question-word-order",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:estar-location-states"
@@ -21334,7 +22161,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:llegar",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale",
+      "p:telling-time"
     ],
     "targets": [
       "g:present-ar"
@@ -21354,7 +22183,8 @@
       "l:comer",
       "l:pan",
       "l:siempre",
-      "l:tinto"
+      "l:tinto",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:present-er-ir"
@@ -21373,7 +22203,10 @@
       "g:gender-articles",
       "l:café",
       "l:estar",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states"
@@ -21391,7 +22224,8 @@
       "g:present-er-ir",
       "l:escribir",
       "l:inglés",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:present-er-ir"
@@ -21413,7 +22247,9 @@
       "l:estar",
       "l:hora",
       "l:qué",
-      "l:ser"
+      "l:ser",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "g:estar-location-states"
@@ -21451,7 +22287,8 @@
       "g:ser-identity",
       "l:hora",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:telling-time"
     ],
     "targets": [
       "g:ser-identity"
@@ -21470,7 +22307,8 @@
       "g:present-er-ir",
       "l:aquí",
       "l:café",
-      "l:dormir"
+      "l:dormir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:present-er-ir"
@@ -21511,7 +22349,8 @@
       "l:allá",
       "l:calle",
       "l:estar",
-      "l:tienda"
+      "l:tienda",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-location-states"
@@ -21530,7 +22369,10 @@
       "g:present-er-ir",
       "l:allí",
       "l:calle",
-      "l:vivir"
+      "l:vivir",
+      "p:aqui-ahi-alla",
+      "p:senor-don-article",
+      "p:street-names"
     ],
     "targets": [
       "g:present-er-ir"
@@ -21553,7 +22395,9 @@
       "l:banco",
       "l:señor",
       "l:trabajar",
-      "l:ver"
+      "l:ver",
+      "p:aqui-ahi-alla",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:present-er-ir",
@@ -21577,8 +22421,10 @@
       "l:hablar",
       "l:jefe",
       "l:llegar",
+      "p:poco-un-poco",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:telling-time"
     ],
     "targets": [
       "p:possessives-basic",
@@ -21670,7 +22516,8 @@
       "l:amiga",
       "l:hablar",
       "l:tarde",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:possessives-basic"
@@ -21695,7 +22542,8 @@
       "l:efectivo",
       "l:pagar",
       "l:tinto",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "p:possessives-basic"
@@ -21780,7 +22628,8 @@
       "l:cuál",
       "l:número",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:possessives-basic"
@@ -21820,7 +22669,8 @@
       "l:amiga",
       "l:dónde",
       "l:trabajar",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:possessives-basic"
@@ -21888,6 +22738,8 @@
       "l:bien",
       "l:español",
       "l:estar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21910,6 +22762,7 @@
       "g:present-er-ir",
       "l:comer",
       "l:trabajar",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -21958,6 +22811,8 @@
       "g:present-ar",
       "l:hablar",
       "l:mañana",
+      "p:poco-un-poco",
+      "p:por-la-manana",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -21982,7 +22837,8 @@
       "g:present-ar",
       "l:tinto",
       "l:tomar",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "p:quantifiers-basic"
@@ -22007,6 +22863,7 @@
       "g:hay-vs-esta",
       "l:cliente",
       "l:hoy",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -22109,6 +22966,7 @@
       "l:escribir",
       "l:leer",
       "l:libro",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -22213,6 +23071,7 @@
       "l:noche",
       "l:ser",
       "p:demonstratives-basic",
+      "p:por-la-manana",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -22284,7 +23143,8 @@
       "l:café",
       "l:llegar",
       "l:semana",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "p:demonstratives-basic"
@@ -22305,7 +23165,8 @@
       "g:ser-identity",
       "l:ser",
       "l:señor",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "p:demonstratives-basic"
@@ -22345,7 +23206,8 @@
       "g:ser-identity",
       "l:ser",
       "l:verdad",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:tienes-toda-la-razon"
     ],
     "targets": [
       "p:demonstratives-basic"
@@ -22457,7 +23319,8 @@
       "l:jefe",
       "l:mexicano",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "p:possessives-basic",
@@ -22647,7 +23510,8 @@
       "g:adjective-agreement",
       "g:ser-identity",
       "l:colombiano",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:adjective-agreement"
@@ -22669,6 +23533,7 @@
       "l:hoy",
       "l:reunión",
       "l:ser",
+      "p:aburrir-aburrirse",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -22694,7 +23559,8 @@
       "l:estudiante",
       "l:mexicano",
       "l:ser",
-      "l:universidad"
+      "l:universidad",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "g:adjective-agreement"
@@ -22719,7 +23585,8 @@
       "l:enfermo",
       "l:estar",
       "l:señora",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:adjective-agreement"
@@ -22740,7 +23607,8 @@
       "c:tienes",
       "g:gender-articles",
       "l:reunión",
-      "l:tener"
+      "l:tener",
+      "p:telling-time"
     ],
     "targets": [
       "c:tienes"
@@ -23036,7 +23904,8 @@
       "l:estar",
       "l:hoy",
       "l:oficina",
-      "l:señor"
+      "l:señor",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:abierto-cerrado"
@@ -23102,7 +23971,8 @@
       "c:voy-vas",
       "g:ir-a-plans",
       "l:centro",
-      "l:ir"
+      "l:ir",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "c:voy-vas"
@@ -23128,7 +23998,8 @@
       "g:ir-a-plans",
       "l:banco",
       "l:hoy",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:voy-vas"
@@ -23149,6 +24020,7 @@
       "l:amiga",
       "l:ir",
       "l:parque",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -23175,7 +24047,10 @@
       "l:enfermo",
       "l:estar",
       "l:hospital",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place",
+      "p:senor-don-article",
+      "p:telling-time"
     ],
     "targets": [
       "c:voy-vas"
@@ -23198,7 +24073,8 @@
       "l:jefe",
       "l:ser",
       "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:possessives-basic",
@@ -23241,7 +24117,8 @@
       "l:jefe",
       "l:llegar",
       "l:qué",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:possessives-basic"
@@ -23284,7 +24161,8 @@
       "l:dónde",
       "l:ser",
       "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:possessives-basic",
@@ -23354,7 +24232,8 @@
       "g:present-ar",
       "l:hablar",
       "l:quién",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:prep-questions-basic"
@@ -23377,7 +24256,8 @@
       "l:dónde",
       "l:ser",
       "p:demonstratives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:demonstratives-basic",
@@ -23400,7 +24280,9 @@
       "l:hora",
       "l:qué",
       "l:reunión",
-      "l:ser"
+      "l:ser",
+      "p:event-ser-en",
+      "p:question-word-order"
     ],
     "targets": [
       "g:gender-articles",
@@ -23422,6 +24304,7 @@
       "g:present-er-ir",
       "l:comer",
       "l:qué",
+      "p:poco-un-poco",
       "p:prep-questions-basic",
       "p:quantifiers-basic"
     ],
@@ -23446,7 +24329,8 @@
       "l:dónde",
       "l:ser",
       "l:señora",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:prep-questions-basic"
@@ -23494,7 +24378,8 @@
       "l:dónde",
       "l:ser",
       "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:possessives-basic",
@@ -23543,7 +24428,9 @@
       "l:llegar",
       "l:mañana",
       "l:qué",
-      "l:siempre"
+      "l:siempre",
+      "p:frequency-scale",
+      "p:telling-time"
     ],
     "targets": [
       "g:gender-articles",
@@ -23571,6 +24458,7 @@
       "l:hablar",
       "l:hoy",
       "l:qué",
+      "p:poco-un-poco",
       "p:prep-questions-basic",
       "p:quantifiers-basic"
     ],
@@ -23668,7 +24556,8 @@
       "g:yo-irregular",
       "l:efectivo",
       "l:tarjeta",
-      "l:tener"
+      "l:tener",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "c:tienes"
@@ -23718,6 +24607,7 @@
       "l:cliente",
       "l:estar",
       "l:hoy",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -23746,7 +24636,8 @@
       "l:enfermo",
       "l:estar",
       "l:tranquilo",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:possessives-basic",
@@ -23773,7 +24664,9 @@
       "l:dónde",
       "l:estar",
       "l:oficina",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order",
+      "p:street-names"
     ],
     "targets": [
       "p:possessives-basic"
@@ -23801,6 +24694,7 @@
       "l:perdón",
       "l:tinto",
       "p:demonstratives-basic",
+      "p:otro-no-article",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -23886,7 +24780,9 @@
       "l:creer",
       "l:hora",
       "l:qué",
-      "l:tienda"
+      "l:tienda",
+      "p:question-word-order",
+      "p:telling-time"
     ],
     "targets": [
       "g:gender-articles",
@@ -23908,7 +24804,8 @@
       "l:colombiano",
       "l:mexicano",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "p:possessives-basic",
@@ -24018,7 +24915,8 @@
       "l:efectivo",
       "l:ir",
       "l:necesitar",
-      "l:tener"
+      "l:tener",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:voy-vas"
@@ -24046,7 +24944,8 @@
       "l:problema",
       "l:ser",
       "l:tener",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:ser-profession-no-article"
     ],
     "targets": [
       "p:possessives-basic"
@@ -24147,7 +25046,8 @@
       "l:trabajar",
       "l:trabajo",
       "p:prep-questions-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:telling-time"
     ],
     "targets": [
       "p:quantifiers-basic",
@@ -24174,7 +25074,8 @@
       "l:gusto",
       "l:ser",
       "p:demonstratives-basic",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-presento-a"
     ],
     "targets": [
       "p:possessives-basic",
@@ -24223,7 +25124,9 @@
       "l:dónde",
       "l:estar",
       "l:libro",
-      "p:possessives-basic"
+      "p:aqui-ahi-alla",
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:possessives-basic"
@@ -24295,8 +25198,10 @@
       "l:dónde",
       "l:pan",
       "l:ser",
+      "p:aqui-ahi-alla",
       "p:demonstratives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "p:demonstratives-basic",
@@ -24369,7 +25274,9 @@
       "c:muy-amable",
       "l:amable",
       "l:tinto",
-      "p:possessives-basic"
+      "p:don-dona-nombre",
+      "p:possessives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "p:possessives-basic"
@@ -24394,7 +25301,9 @@
       "l:café",
       "l:estar",
       "l:qué",
-      "p:prep-questions-basic"
+      "p:aqui-ahi-alla",
+      "p:prep-questions-basic",
+      "p:telling-time"
     ],
     "targets": [
       "p:prep-questions-basic"
@@ -24413,6 +25322,7 @@
       "l:amiga",
       "l:aquí",
       "l:vivir",
+      "p:aqui-ahi-alla",
       "p:possessives-basic"
     ],
     "targets": [

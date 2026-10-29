@@ -102,7 +102,10 @@
       "g:ser-identity",
       "l:cómo",
       "l:joven",
-      "l:ser"
+      "l:ser",
+      "p:don-dona-nombre",
+      "p:question-word-order",
+      "p:senor-don-article"
     ]
   },
   {
@@ -129,7 +132,8 @@
       "g:ser-identity",
       "l:año",
       "l:estar",
-      "l:ser"
+      "l:ser",
+      "p:decadas-siglos"
     ]
   },
   {
@@ -204,7 +208,9 @@
       "l:llegar",
       "l:poder",
       "l:tener",
-      "l:tiempo"
+      "l:tiempo",
+      "p:ir-a-venir-de-place",
+      "p:llegar-a-tiempo"
     ]
   },
   {
@@ -235,7 +241,8 @@
       "l:allá",
       "l:café",
       "l:estar",
-      "l:hora"
+      "l:hora",
+      "p:aqui-ahi-alla"
     ]
   },
   {
@@ -273,7 +280,11 @@
       "l:aquí",
       "l:decir",
       "l:estar",
-      "l:verdad"
+      "l:verdad",
+      "p:aqui-ahi-alla",
+      "p:don-dona-nombre",
+      "p:senor-don-article",
+      "p:tambien-tampoco"
     ]
   },
   {
@@ -371,7 +382,9 @@
       "g:preterite-er-ir",
       "l:ahora",
       "l:nacer",
-      "l:vivir"
+      "l:vivir",
+      "p:dates-years",
+      "p:naci-en"
     ]
   },
   {
@@ -409,6 +422,7 @@
       "l:estar",
       "l:ser",
       "p:quantifiers-basic",
+      "p:viejo-antiguo-mayor",
       "p:ya-todavia-basic"
     ]
   }

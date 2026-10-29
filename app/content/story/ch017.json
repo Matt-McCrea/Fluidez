@@ -133,9 +133,18 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:subj-wanting",
+    "p:aqui-ahi-alla",
     "p:demonstratives-basic",
+    "p:la-gente-singular",
+    "p:lugar-tiene",
+    "p:otro-no-article",
+    "p:poco-un-poco",
     "p:possessives-basic",
-    "p:quantifiers-basic"
+    "p:quantifiers-basic",
+    "p:quedar-faltar-sobrar",
+    "p:senor-don-article",
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor"
   ],
   "lexemes": [
     "l:abrir",

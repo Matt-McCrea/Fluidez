@@ -177,7 +177,18 @@
     "l:ser",
     "l:taxista",
     "l:tinto",
+    "p:a-cuanto-esta",
+    "p:days-el-lunes",
+    "p:don-dona-nombre",
+    "p:estar-a",
+    "p:estar-a-price",
     "p:gracias-por",
-    "p:possessives-basic"
+    "p:ir-a-venir-de-place",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:question-word-order",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:todos-los-dias"
   ]
 }

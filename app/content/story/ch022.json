@@ -117,8 +117,15 @@
     "g:stem-boot",
     "g:yo-irregular",
     "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:don-dona-nombre",
+    "p:lavarse-las-manos",
     "p:possessives-basic",
-    "p:time-sequence-basic"
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias"
   ],
   "lexemes": [
     "l:acostarse",

@@ -26,7 +26,8 @@
     "acceptEn": [],
     "requires": [
       "g:perfecto-experience",
-      "l:estar"
+      "l:estar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -68,7 +69,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:vida",
-      "l:vivir"
+      "l:vivir",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -176,7 +178,8 @@
     "requires": [
       "g:perfecto-experience",
       "l:avión",
-      "l:viajar"
+      "l:viajar",
+      "p:transport-en"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -241,7 +244,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:mar",
-      "l:ver"
+      "l:ver",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -263,7 +267,9 @@
       "l:abuela",
       "l:avión",
       "l:viajar",
-      "p:possessives-basic"
+      "p:frequency-scale",
+      "p:possessives-basic",
+      "p:transport-en"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -287,7 +293,8 @@
       "l:cerca",
       "l:estar",
       "l:finca",
-      "p:cerca-de"
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -332,7 +339,8 @@
       "g:perfecto-experience",
       "l:ir",
       "l:playa",
-      "l:vez"
+      "l:vez",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:una-vez",
@@ -357,7 +365,8 @@
       "l:aeropuerto",
       "l:estar",
       "l:nuevo",
-      "l:verdad"
+      "l:verdad",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -377,7 +386,8 @@
     "requires": [
       "c:todavia-no",
       "g:perfecto-experience",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:todavia-no",
@@ -447,7 +457,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:estar",
-      "l:hotel"
+      "l:hotel",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -518,7 +529,8 @@
       "l:costa",
       "l:querer",
       "l:viajar",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -583,7 +595,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:isla",
-      "l:vivir"
+      "l:vivir",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -604,7 +617,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:selva",
-      "l:viajar"
+      "l:viajar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -672,6 +686,7 @@
       "l:mamá",
       "l:mañana",
       "p:demonstratives-basic",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -1132,7 +1147,8 @@
       "c:a-cuantas-cuotas",
       "g:perfecto-experience",
       "l:montaña",
-      "l:subir"
+      "l:subir",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -1175,7 +1191,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:paisaje",
-      "l:ver"
+      "l:ver",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -1321,7 +1338,8 @@
     "requires": [
       "g:adjective-agreement",
       "g:perfecto-experience",
-      "l:viajar"
+      "l:viajar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -1340,7 +1358,8 @@
     "acceptEn": [],
     "requires": [
       "g:perfecto-experience",
-      "l:viajar"
+      "l:viajar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -1363,7 +1382,8 @@
       "l:bus",
       "l:hora",
       "l:vez",
-      "l:viajar"
+      "l:viajar",
+      "p:transport-en"
     ],
     "targets": [
       "c:una-vez",
@@ -1385,6 +1405,7 @@
       "l:marzo",
       "l:papá",
       "l:viajar",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1432,7 +1453,9 @@
       "l:domingo",
       "l:ir",
       "l:niño",
-      "l:playa"
+      "l:playa",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "l:playa"
@@ -1474,6 +1497,7 @@
       "l:enero",
       "l:ir",
       "l:mamá",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -1492,7 +1516,9 @@
       "c:a-cuantas-cuotas",
       "g:perfecto-experience",
       "l:finca",
-      "l:ir"
+      "l:ir",
+      "p:frequency-scale",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -1513,7 +1539,9 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:ir",
-      "l:selva"
+      "l:selva",
+      "p:frequency-scale",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -1533,7 +1561,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:costa",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -1554,7 +1583,8 @@
       "g:perfecto-experience",
       "l:allí",
       "l:ir",
-      "l:vez"
+      "l:vez",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -1574,7 +1604,9 @@
     "requires": [
       "g:perfecto-experience",
       "l:allí",
-      "l:ir"
+      "l:ir",
+      "p:aqui-ahi-alla",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -1597,7 +1629,8 @@
       "g:perfecto-experience",
       "l:costa",
       "l:ir",
-      "l:pueblo"
+      "l:pueblo",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:todavia-no",
@@ -1622,6 +1655,8 @@
       "l:familia",
       "l:país",
       "l:viajar",
+      "p:frequency-scale",
+      "p:otro-no-article",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1688,7 +1723,8 @@
       "g:questions",
       "l:estar",
       "l:quién",
-      "l:selva"
+      "l:selva",
+      "p:question-word-order"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -1710,7 +1746,9 @@
       "g:questions",
       "l:avión",
       "l:quién",
-      "l:viajar"
+      "l:viajar",
+      "p:question-word-order",
+      "p:transport-en"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -1735,7 +1773,8 @@
       "l:año",
       "l:dónde",
       "l:estar",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -1828,7 +1867,8 @@
       "l:cuánto",
       "l:hacer",
       "l:ir",
-      "l:vez"
+      "l:vez",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:una-vez",
@@ -1877,6 +1917,8 @@
       "l:estar",
       "l:ser",
       "l:vez",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1901,7 +1943,8 @@
       "g:verb-infinitive",
       "l:estar",
       "l:ir",
-      "l:querer"
+      "l:querer",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -1922,6 +1965,7 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:viajar",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -1943,7 +1987,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:estar",
-      "l:isla"
+      "l:isla",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -1990,7 +2035,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:ajiaco",
-      "l:probarse"
+      "l:probarse",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -2010,7 +2056,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:ajiaco",
-      "l:probarse"
+      "l:probarse",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -2119,7 +2166,9 @@
       "g:perfecto-experience",
       "l:aquí",
       "l:cerveza",
-      "l:probarse"
+      "l:probarse",
+      "p:aqui-ahi-alla",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -2184,7 +2233,8 @@
       "g:perfecto-experience",
       "l:chocolate",
       "l:pan",
-      "l:probarse"
+      "l:probarse",
+      "p:con-sin"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -2296,6 +2346,7 @@
       "l:jugo",
       "l:poder",
       "l:probarse",
+      "p:poco-un-poco",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -2361,7 +2412,8 @@
       "g:stem-boot",
       "l:fruta",
       "l:probar",
-      "l:verde"
+      "l:verde",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:probar"
@@ -2432,7 +2484,8 @@
       "l:cómo",
       "l:idea",
       "l:probarse",
-      "l:ser"
+      "l:ser",
+      "p:no-tener-ni-idea-de"
     ],
     "targets": [
       "c:ni-idea",
@@ -2453,7 +2506,8 @@
     "requires": [
       "g:perfecto-experience",
       "l:caballo",
-      "l:montar"
+      "l:montar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -2474,7 +2528,8 @@
     "requires": [
       "g:perfecto-experience",
       "l:caballo",
-      "l:montar"
+      "l:montar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -2596,6 +2651,7 @@
       "l:divertido",
       "l:montar",
       "l:ser",
+      "p:es-adj-inf",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -2715,7 +2771,8 @@
       "g:present-er-ir",
       "l:bien",
       "l:bucear",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:bucear"
@@ -2734,7 +2791,8 @@
     "requires": [
       "g:present-er-ir",
       "l:bucear",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:bucear"
@@ -2777,7 +2835,8 @@
       "g:present-er-ir",
       "l:bucear",
       "l:nadar",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:bucear"
@@ -2891,7 +2950,8 @@
       "g:perfecto-experience",
       "l:avión",
       "l:montar",
-      "l:vida"
+      "l:vida",
+      "p:transport-en"
     ],
     "targets": [
       "c:nunca-en-la-vida",
@@ -2939,7 +2999,8 @@
       "g:perfecto-experience",
       "l:gente",
       "l:ver",
-      "l:vida"
+      "l:vida",
+      "p:la-gente-singular"
     ],
     "targets": [
       "c:nunca-en-la-vida",
@@ -2985,7 +3046,8 @@
       "l:llegar",
       "l:reunión",
       "l:tarde",
-      "l:vida"
+      "l:vida",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "c:nunca-en-la-vida",
@@ -3079,6 +3141,7 @@
       "l:paisaje",
       "l:ver",
       "l:vida",
+      "p:la-menor-idea",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3101,6 +3164,7 @@
       "l:cansado",
       "l:estar",
       "l:vida",
+      "p:la-menor-idea",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3166,7 +3230,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:estar",
-      "l:mar"
+      "l:mar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -3213,7 +3278,8 @@
       "l:aeropuerto",
       "l:avión",
       "l:salir",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "l:aeropuerto",
@@ -3237,6 +3303,8 @@
       "l:centro",
       "l:estar",
       "l:lejos",
+      "p:cerca-de",
+      "p:position-de",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -3258,7 +3326,8 @@
       "g:gender-articles",
       "l:aeropuerto",
       "l:estar",
-      "l:lejos"
+      "l:lejos",
+      "p:cerca-de"
     ],
     "targets": [
       "l:aeropuerto"
@@ -3280,7 +3349,8 @@
       "g:questions",
       "l:aeropuerto",
       "l:cómo",
-      "l:llegar"
+      "l:llegar",
+      "p:question-word-order"
     ],
     "targets": [
       "l:aeropuerto"
@@ -3304,7 +3374,9 @@
       "l:aeropuerto",
       "l:ir",
       "l:poder",
-      "l:taxi"
+      "l:taxi",
+      "p:ir-a-venir-de-place",
+      "p:transport-en"
     ],
     "targets": [
       "l:aeropuerto"
@@ -3348,6 +3420,7 @@
       "l:aeropuerto",
       "l:ir",
       "l:mamá",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3368,7 +3441,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:avión",
-      "l:perder"
+      "l:perder",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -3412,7 +3486,9 @@
       "g:present-er-ir",
       "l:avión",
       "l:noche",
-      "l:salir"
+      "l:salir",
+      "p:por-la-manana",
+      "p:telling-time"
     ],
     "targets": [
       "l:avión"
@@ -3435,7 +3511,8 @@
       "l:avión",
       "l:hora",
       "l:qué",
-      "l:salir"
+      "l:salir",
+      "p:question-word-order"
     ],
     "targets": [
       "l:avión"
@@ -3457,7 +3534,10 @@
       "l:avión",
       "l:año",
       "l:vez",
-      "l:viajar"
+      "l:viajar",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:transport-en"
     ],
     "targets": [
       "l:avión",
@@ -3480,7 +3560,9 @@
       "g:yo-irregular",
       "l:avión",
       "l:miedo",
-      "l:tener"
+      "l:tener",
+      "p:me-da-miedo-que",
+      "p:tener-hambre"
     ],
     "targets": [
       "l:avión"
@@ -3503,7 +3585,8 @@
       "l:grande",
       "l:hotel",
       "l:piscina",
-      "l:tener"
+      "l:tener",
+      "p:lugar-tiene"
     ],
     "targets": [
       "l:hotel"
@@ -3526,7 +3609,9 @@
       "l:encontrar",
       "l:hotel",
       "l:mar",
-      "l:pequeño"
+      "l:pequeño",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:hotel",
@@ -3572,7 +3657,8 @@
       "l:costar",
       "l:cuánto",
       "l:hotel",
-      "l:noche"
+      "l:noche",
+      "p:question-word-order"
     ],
     "targets": [
       "l:hotel"
@@ -3594,7 +3680,8 @@
       "l:caro",
       "l:hotel",
       "l:ser",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:no-es-nada-adj"
     ],
     "targets": [
       "g:quantifiers",
@@ -3616,7 +3703,8 @@
       "g:gender-articles",
       "l:calle",
       "l:estar",
-      "l:hotel"
+      "l:hotel",
+      "p:street-names"
     ],
     "targets": [
       "l:hotel"
@@ -3721,7 +3809,9 @@
       "g:perfecto-experience",
       "l:allí",
       "l:estar",
-      "l:idea"
+      "l:idea",
+      "p:aqui-ahi-alla",
+      "p:frequency-scale"
     ],
     "targets": [
       "c:ni-idea",
@@ -3747,7 +3837,8 @@
       "l:barrio",
       "l:conocer",
       "l:hotel",
-      "l:idea"
+      "l:idea",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:ni-idea",
@@ -3773,7 +3864,9 @@
       "l:ajiaco",
       "l:cocinar",
       "l:idea",
-      "l:tener"
+      "l:tener",
+      "p:frequency-scale",
+      "p:no-tener-ni-idea-de"
     ],
     "targets": [
       "c:ni-idea",
@@ -3824,7 +3917,8 @@
       "l:dónde",
       "l:estar",
       "l:idea",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "c:ni-idea",
@@ -3852,7 +3946,9 @@
       "l:hotel",
       "l:idea",
       "l:preguntar",
-      "l:viaje"
+      "l:viaje",
+      "p:preguntar-pedir",
+      "p:question-word-order"
     ],
     "targets": [
       "c:ni-idea",
@@ -3882,7 +3978,8 @@
       "l:idea",
       "l:llegar",
       "l:qué",
-      "l:tener"
+      "l:tener",
+      "p:question-word-order"
     ],
     "targets": [
       "c:ni-idea",
@@ -3931,7 +4028,8 @@
       "l:cuándo",
       "l:idea",
       "l:irse",
-      "l:volver"
+      "l:volver",
+      "p:question-word-order"
     ],
     "targets": [
       "c:ni-idea",
@@ -3954,7 +4052,10 @@
       "l:bus",
       "l:idea",
       "l:ser",
-      "l:viajar"
+      "l:viajar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:transport-en"
     ],
     "targets": [
       "l:idea",
@@ -3980,7 +4081,8 @@
       "l:costa",
       "l:idea",
       "l:ir",
-      "l:tener"
+      "l:tener",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "l:costa",
@@ -4003,7 +4105,10 @@
       "l:idea",
       "l:ir",
       "l:mala",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:transport-en"
     ],
     "targets": [
       "l:avión",
@@ -4094,7 +4199,8 @@
       "g:ir-a-plans",
       "l:buena",
       "l:idea",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "l:idea"
@@ -4136,7 +4242,8 @@
       "l:envidia",
       "l:qué",
       "l:siempre",
-      "l:viajar"
+      "l:viajar",
+      "p:frequency-scale"
     ],
     "targets": [
       "c:que-envidia",
@@ -4161,7 +4268,8 @@
       "l:aquí",
       "l:envidia",
       "l:qué",
-      "l:salir"
+      "l:salir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "c:que-envidia",
@@ -4212,7 +4320,8 @@
       "l:ir",
       "l:mañana",
       "l:playa",
-      "l:qué"
+      "l:qué",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:que-envidia",
@@ -4570,7 +4679,8 @@
       "g:estar-location-states",
       "l:estar",
       "l:gritar",
-      "l:vez"
+      "l:vez",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:estar-gerund"
@@ -4592,7 +4702,8 @@
       "g:gender-articles",
       "l:esperar",
       "l:estar",
-      "l:jefe"
+      "l:jefe",
+      "p:personal-a"
     ],
     "targets": [
       "g:estar-gerund"
@@ -4823,7 +4934,9 @@
       "l:buscar",
       "l:centro",
       "l:cerca",
-      "l:estar"
+      "l:estar",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:estar-gerund"
@@ -5136,7 +5249,8 @@
       "l:café",
       "l:estar",
       "l:precio",
-      "l:subir"
+      "l:subir",
+      "p:subir-subida"
     ],
     "targets": [
       "g:estar-gerund"
@@ -5396,7 +5510,8 @@
       "g:estar-location-states",
       "g:negation-words",
       "l:esperar",
-      "l:estar"
+      "l:estar",
+      "p:personal-a"
     ],
     "targets": [
       "g:estar-gerund"
@@ -5485,7 +5600,8 @@
       "l:aquí",
       "l:estar",
       "l:hacer",
-      "l:qué"
+      "l:qué",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-gerund"
@@ -5722,7 +5838,8 @@
       "g:estar-location-states",
       "l:esperar",
       "l:estar",
-      "p:indefinites-basic"
+      "p:indefinites-basic",
+      "p:personal-a"
     ],
     "targets": [
       "g:estar-gerund"
@@ -5813,7 +5930,8 @@
       "l:aquí",
       "l:estar",
       "l:pasar",
-      "l:qué"
+      "l:qué",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:estar-gerund"
@@ -5888,7 +6006,8 @@
       "l:estar",
       "l:hacer",
       "l:historia",
-      "l:qué"
+      "l:qué",
+      "p:contar-dos-sentidos"
     ],
     "targets": [
       "g:estar-gerund"
@@ -5938,7 +6057,8 @@
       "l:estar",
       "l:hablar",
       "l:poder",
-      "l:trabajar"
+      "l:trabajar",
+      "p:request-ladder"
     ],
     "targets": [
       "g:estar-gerund"
@@ -6009,7 +6129,8 @@
       "l:comprar",
       "l:dónde",
       "l:estar",
-      "l:harina"
+      "l:harina",
+      "p:question-word-order"
     ],
     "targets": [
       "g:estar-gerund"
@@ -6300,7 +6421,8 @@
       "l:maleta",
       "l:mamá",
       "l:preguntar",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:estar-gerund",
@@ -6327,7 +6449,8 @@
       "l:costar",
       "l:cuánto",
       "l:estar",
-      "l:preguntar"
+      "l:preguntar",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:estar-gerund",
@@ -6350,6 +6473,7 @@
       "l:estar",
       "l:preguntar",
       "l:qué",
+      "p:preguntar-pedir",
       "p:prep-questions-basic"
     ],
     "targets": [
@@ -6374,7 +6498,8 @@
       "l:estar",
       "l:hora",
       "l:preguntar",
-      "l:turista"
+      "l:turista",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:estar-gerund",
@@ -6401,7 +6526,8 @@
       "l:formar",
       "l:grupo",
       "l:viajar",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "g:estar-gerund",
@@ -6600,7 +6726,8 @@
       "l:estar",
       "l:pueblo",
       "l:visitar",
-      "p:cerca-de"
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:estar-gerund",
@@ -6624,6 +6751,7 @@
       "l:abuela",
       "l:estar",
       "l:visitar",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6742,6 +6870,7 @@
       "l:jugar",
       "l:primo",
       "l:río",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6934,7 +7063,8 @@
       "g:estar-location-states",
       "l:bailar",
       "l:bien",
-      "l:estar"
+      "l:estar",
+      "p:hedge-knowledge"
     ],
     "targets": [
       "g:estar-gerund"
@@ -6957,7 +7087,8 @@
       "l:contrato",
       "l:estar",
       "l:leer",
-      "l:vez"
+      "l:vez",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:estar-gerund"
@@ -7087,7 +7218,8 @@
       "g:estar-location-states",
       "l:estar",
       "l:hambre",
-      "l:morir"
+      "l:morir",
+      "p:morirse-de"
     ],
     "targets": [
       "g:estar-gerund"
@@ -7109,7 +7241,8 @@
       "l:estar",
       "l:frío",
       "l:morir",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:morirse-de"
     ],
     "targets": [
       "g:estar-gerund"
@@ -7223,6 +7356,7 @@
       "l:leche",
       "l:querer",
       "l:tinto",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -7266,7 +7400,9 @@
       "g:preterite-er-ir",
       "g:yo-irregular",
       "l:ayer",
-      "l:conocer"
+      "l:conocer",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -7288,7 +7424,9 @@
       "g:present-er-ir",
       "g:preterite-er-ir",
       "l:cafetería",
-      "l:conocer"
+      "l:conocer",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -7336,7 +7474,8 @@
       "l:contar",
       "l:estar",
       "l:peso",
-      "l:vez"
+      "l:vez",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:direct-objects"
@@ -7380,7 +7519,8 @@
       "g:direct-objects",
       "g:perfecto-experience",
       "g:yo-irregular",
-      "l:ver"
+      "l:ver",
+      "p:personal-a"
     ],
     "targets": [
       "g:direct-objects",
@@ -7465,7 +7605,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:mercado",
-      "l:ver"
+      "l:ver",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:direct-objects",
@@ -7505,7 +7646,8 @@
     "requires": [
       "g:direct-objects",
       "g:perfecto-experience",
-      "l:probarse"
+      "l:probarse",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:direct-objects",
@@ -7850,7 +7992,8 @@
       "g:preterite-er-ir",
       "g:questions",
       "l:conocer",
-      "l:cuándo"
+      "l:cuándo",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -8726,7 +8869,8 @@
       "l:contrato",
       "l:dónde",
       "l:estar",
-      "l:leer"
+      "l:leer",
+      "p:question-word-order"
     ],
     "targets": [
       "g:direct-objects",
@@ -8799,7 +8943,8 @@
       "g:yo-irregular",
       "l:celular",
       "l:quién",
-      "l:tener"
+      "l:tener",
+      "p:question-word-order"
     ],
     "targets": [
       "g:direct-objects"
@@ -8862,7 +9007,9 @@
     "requires": [
       "g:direct-objects",
       "g:preterite-er-ir",
-      "l:conocer"
+      "l:conocer",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -8882,7 +9029,9 @@
       "g:direct-objects",
       "g:present-er-ir",
       "g:yo-irregular",
-      "l:conocer"
+      "l:conocer",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -8904,7 +9053,10 @@
       "g:yo-irregular",
       "l:conocer",
       "l:primo",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -8926,7 +9078,10 @@
       "g:yo-irregular",
       "l:conocer",
       "l:prima",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -8993,7 +9148,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:ajiaco",
-      "l:probarse"
+      "l:probarse",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:direct-objects",
@@ -9042,6 +9198,7 @@
       "l:anoche",
       "l:llamar",
       "l:mamá",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9069,7 +9226,8 @@
       "l:estar",
       "l:maleta",
       "l:taxista",
-      "l:tener"
+      "l:tener",
+      "p:question-word-order"
     ],
     "targets": [
       "g:direct-objects",
@@ -9093,7 +9251,9 @@
       "l:aeropuerto",
       "l:claro",
       "l:llevar",
-      "p:me-te-nos-objects"
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:personal-a"
     ],
     "targets": [
       "l:aeropuerto"
@@ -9134,6 +9294,7 @@
       "g:present-ar",
       "l:aquí",
       "l:esperar",
+      "p:aqui-ahi-alla",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -9159,7 +9320,10 @@
       "l:cerca",
       "l:dejar",
       "l:dónde",
-      "l:parque"
+      "l:parque",
+      "p:cerca-de",
+      "p:position-de",
+      "p:question-word-order"
     ],
     "targets": [
       "g:direct-objects"
@@ -9183,7 +9347,8 @@
       "l:dónde",
       "l:flor",
       "l:mesa",
-      "l:poner"
+      "l:poner",
+      "p:question-word-order"
     ],
     "targets": [
       "g:direct-objects"
@@ -9206,7 +9371,8 @@
       "g:questions",
       "l:abrir",
       "l:puerta",
-      "l:quién"
+      "l:quién",
+      "p:question-word-order"
     ],
     "targets": [
       "g:direct-objects"
@@ -9231,7 +9397,8 @@
       "l:creer",
       "l:quién",
       "l:romper",
-      "l:ventana"
+      "l:ventana",
+      "p:question-word-order"
     ],
     "targets": [
       "g:direct-objects"
@@ -9327,6 +9494,7 @@
       "l:allí",
       "l:querer",
       "l:silla",
+      "p:aqui-ahi-alla",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -9349,7 +9517,8 @@
     "requires": [
       "g:direct-objects",
       "g:yo-irregular",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -9368,7 +9537,8 @@
     "requires": [
       "g:direct-objects",
       "g:yo-irregular",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -9389,7 +9559,8 @@
       "g:present-ar",
       "l:llegar",
       "l:sentir",
-      "l:tarde"
+      "l:tarde",
+      "p:llegar-a-tiempo"
     ],
     "targets": [],
     "kind": "statement",
@@ -9489,7 +9660,12 @@
       "g:direct-objects",
       "g:yo-irregular",
       "l:bien",
-      "l:ver"
+      "l:ver",
+      "p:alcanzar-a-distinguir",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:encontrar-ver-adj",
+      "p:ver-oir-bien-mal"
     ],
     "targets": [
       "g:direct-objects"
@@ -9510,7 +9686,10 @@
       "g:yo-irregular",
       "l:mal",
       "l:oír",
-      "p:quantifiers-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:quantifiers-basic",
+      "p:ver-oir-bien-mal"
     ],
     "targets": [
       "g:direct-objects"
@@ -9552,7 +9731,9 @@
       "g:direct-objects",
       "g:stem-boot",
       "l:bien",
-      "l:entender"
+      "l:entender",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "g:direct-objects"
@@ -9637,7 +9818,8 @@
       "g:direct-objects",
       "g:present-er-ir",
       "l:aquí",
-      "l:escribir"
+      "l:escribir",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:direct-objects"
@@ -9695,7 +9877,8 @@
       "g:direct-objects",
       "g:gender-articles",
       "g:present-er-ir",
-      "l:abrir"
+      "l:abrir",
+      "p:telling-time"
     ],
     "targets": [
       "g:direct-objects"
@@ -9715,7 +9898,8 @@
       "g:direct-objects",
       "g:gender-articles",
       "g:stem-boot",
-      "l:cerrar"
+      "l:cerrar",
+      "p:telling-time"
     ],
     "targets": [
       "g:direct-objects"
@@ -9802,7 +9986,9 @@
       "g:preterite-ar",
       "l:debajo",
       "l:encontrar",
-      "l:mesa"
+      "l:mesa",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:direct-objects"
@@ -9885,7 +10071,8 @@
       "g:direct-objects",
       "g:yo-irregular",
       "l:mañana",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "g:direct-objects"
@@ -9906,6 +10093,7 @@
       "g:yo-irregular",
       "l:después",
       "l:traer",
+      "p:llevar-traer",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -9925,7 +10113,8 @@
     "requires": [
       "g:direct-objects",
       "g:present-er-ir",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "g:direct-objects"
@@ -9944,7 +10133,8 @@
     "requires": [
       "g:direct-objects",
       "g:present-er-ir",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "g:direct-objects"
@@ -9965,7 +10155,8 @@
       "g:yo-irregular",
       "l:bucear",
       "l:nadar",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:bucear"
@@ -9985,7 +10176,8 @@
       "g:yo-irregular",
       "l:ajiaco",
       "l:cocinar",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10022,7 +10214,8 @@
     "requires": [
       "g:present-er-ir",
       "l:cantar",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -10040,7 +10233,8 @@
       "g:present-er-ir",
       "l:escribir",
       "l:español",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -10061,7 +10255,9 @@
       "l:cantar",
       "l:mamá",
       "l:saber",
-      "p:possessives-basic"
+      "p:hedge-knowledge",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10078,7 +10274,8 @@
     "requires": [
       "g:present-er-ir",
       "l:cocinar",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10097,7 +10294,9 @@
       "l:contar",
       "l:historia",
       "l:saber",
-      "l:taxi"
+      "l:taxi",
+      "p:contar-dos-sentidos",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10117,7 +10316,8 @@
       "l:hacer",
       "l:helado",
       "l:pan",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10135,7 +10335,8 @@
       "g:present-er-ir",
       "l:decir",
       "l:palabra",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10155,7 +10356,9 @@
       "l:jugar",
       "l:primo",
       "l:saber",
-      "p:possessives-basic"
+      "p:masculine-plural-mixed",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10174,7 +10377,9 @@
       "g:present-er-ir",
       "l:bien",
       "l:nadar",
-      "l:saber"
+      "l:saber",
+      "p:hedge-knowledge",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10192,7 +10397,8 @@
       "g:present-er-ir",
       "l:caballo",
       "l:montar",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:caballo",
@@ -10216,7 +10422,9 @@
       "l:caballo",
       "l:hacer",
       "l:montar",
-      "l:saber"
+      "l:saber",
+      "p:frequency-scale",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects",
@@ -10262,7 +10470,9 @@
       "l:bien",
       "l:hablar",
       "l:inglés",
-      "l:saber"
+      "l:saber",
+      "p:hedge-knowledge",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10280,7 +10490,8 @@
       "g:yo-irregular",
       "l:español",
       "l:leer",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10322,7 +10533,9 @@
       "g:present-er-ir",
       "l:bailar",
       "l:saber",
-      "p:quantifiers-basic"
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -10342,7 +10555,9 @@
       "g:present-er-ir",
       "g:yo-irregular",
       "l:cocinar",
-      "l:saber"
+      "l:saber",
+      "p:no-es-x-es-y",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -10360,7 +10575,8 @@
       "g:present-er-ir",
       "l:escribir",
       "l:inglés",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -10406,7 +10622,8 @@
       "l:estar",
       "l:hotel",
       "l:idea",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:ni-idea",
@@ -10433,6 +10650,7 @@
       "l:celular",
       "l:estar",
       "l:tener",
+      "p:aqui-ahi-alla",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -10519,7 +10737,8 @@
       "g:stem-boot",
       "l:cómo",
       "l:llamarse",
-      "l:recordar"
+      "l:recordar",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:llamarse"
@@ -10541,7 +10760,8 @@
       "g:questions",
       "l:costar",
       "l:cuánto",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -10586,7 +10806,8 @@
       "g:present-er-ir",
       "l:dónde",
       "l:estar",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10605,7 +10826,8 @@
       "g:yo-irregular",
       "l:hotel",
       "l:nombre",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:hotel"
@@ -10625,7 +10847,8 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:saber",
-      "l:teléfono"
+      "l:teléfono",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10681,7 +10904,9 @@
       "g:present-er-ir",
       "l:café",
       "l:saber",
-      "p:quantifiers-basic"
+      "p:hedge-knowledge",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10700,7 +10925,9 @@
       "g:present-er-ir",
       "l:ciudad",
       "l:saber",
-      "p:quantifiers-basic"
+      "p:hedge-knowledge",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10719,7 +10946,8 @@
       "g:present-er-ir",
       "l:nombre",
       "l:saber",
-      "l:vecino"
+      "l:vecino",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10737,7 +10965,8 @@
       "c:bien-y-tu",
       "g:yo-irregular",
       "l:bien",
-      "l:conocer"
+      "l:conocer",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10759,7 +10988,12 @@
       "l:conocer",
       "l:parque",
       "l:restaurante",
-      "p:quantifiers-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:cerca-de",
+      "p:position-de",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10777,7 +11011,8 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:conocer",
-      "l:costa"
+      "l:costa",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:costa"
@@ -10798,7 +11033,8 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:conocer",
-      "l:selva"
+      "l:selva",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:todavia-no",
@@ -10817,7 +11053,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-er-ir",
-      "l:conocer"
+      "l:conocer",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -10837,7 +11074,9 @@
       "l:aquí",
       "l:buena",
       "l:conocer",
-      "l:panadería"
+      "l:panadería",
+      "p:aqui-ahi-alla",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -10855,7 +11094,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:conocer",
-      "l:finca"
+      "l:finca",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:finca"
@@ -10875,7 +11115,8 @@
       "g:present-er-ir",
       "l:calle",
       "l:conocer",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -10895,7 +11136,8 @@
       "l:conocer",
       "l:mejor",
       "l:niño",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:niño"
@@ -10915,7 +11157,9 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:barrio",
-      "l:conocer"
+      "l:conocer",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:gender-articles"
@@ -10935,7 +11179,9 @@
       "g:yo-irregular",
       "l:conocer",
       "l:hermano",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -10953,7 +11199,9 @@
       "g:present-er-ir",
       "l:conocer",
       "l:mamá",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -10969,7 +11217,8 @@
     "acceptEn": [],
     "requires": [
       "g:present-er-ir",
-      "l:conocer"
+      "l:conocer",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -10990,7 +11239,9 @@
       "l:conocer",
       "l:familia",
       "l:querer",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -11012,7 +11263,8 @@
       "l:conocer",
       "l:costa",
       "l:querer",
-      "l:selva"
+      "l:selva",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:costa",
@@ -11035,7 +11287,9 @@
       "l:abuela",
       "l:conocer",
       "l:gustar",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -11056,7 +11310,9 @@
       "l:conocer",
       "l:hoy",
       "l:ir",
-      "l:vecino"
+      "l:vecino",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:hoy"
@@ -11078,7 +11334,9 @@
       "g:preterite-er-ir",
       "l:ayer",
       "l:conocer",
-      "l:turista"
+      "l:turista",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:turista"
@@ -11098,7 +11356,9 @@
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:cafetería",
-      "l:conocer"
+      "l:conocer",
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -11121,7 +11381,8 @@
       "l:conocer",
       "l:pueblo",
       "l:querer",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -11141,7 +11402,8 @@
       "g:yo-irregular",
       "l:barrio",
       "l:calle",
-      "l:conocer"
+      "l:conocer",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -11159,7 +11421,9 @@
       "g:yo-irregular",
       "l:conocer",
       "l:mamá",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -11183,7 +11447,10 @@
       "l:conocer",
       "l:dónde",
       "l:estar",
-      "l:saber"
+      "l:saber",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -11302,6 +11569,7 @@
       "l:ganas",
       "l:tener",
       "p:quantifiers-basic",
+      "p:saber-conocer",
       "p:tener-ganas-de"
     ],
     "targets": [
@@ -11376,6 +11644,7 @@
       "l:helado",
       "l:mango",
       "l:tener",
+      "p:hace-frio",
       "p:tener-ganas-de"
     ],
     "targets": [
@@ -11401,6 +11670,7 @@
       "l:ganas",
       "l:ser",
       "l:tener",
+      "p:telling-time",
       "p:tener-ganas-de"
     ],
     "targets": [
@@ -11427,6 +11697,8 @@
       "l:ganas",
       "l:siempre",
       "l:tener",
+      "p:days-el-lunes",
+      "p:frequency-scale",
       "p:tener-ganas-de"
     ],
     "targets": [
@@ -11478,6 +11750,7 @@
       "l:mamá",
       "l:tener",
       "l:triste",
+      "p:personal-a",
       "p:possessives-basic",
       "p:tener-ganas-de"
     ],
@@ -11504,6 +11777,8 @@
       "l:ir",
       "l:playa",
       "l:tener",
+      "p:frequency-scale",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic",
       "p:tener-ganas-de"
     ],
@@ -11554,6 +11829,7 @@
       "l:ganas",
       "l:ir",
       "l:tener",
+      "p:ir-a-venir-de-place",
       "p:tener-ganas-de"
     ],
     "targets": [
@@ -11647,7 +11923,8 @@
       "l:día",
       "l:ganas",
       "l:tener",
-      "p:tener-ganas-de"
+      "p:tener-ganas-de",
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:tener-ganas-de"
@@ -11694,6 +11971,7 @@
       "l:ganas",
       "l:historia",
       "l:tener",
+      "p:otro-no-article",
       "p:tener-ganas-de"
     ],
     "targets": [
@@ -11764,6 +12042,7 @@
       "l:jugar",
       "l:primo",
       "l:tener",
+      "p:masculine-plural-mixed",
       "p:possessives-basic",
       "p:tener-ganas-de"
     ],
@@ -11811,6 +12090,7 @@
       "l:ganas",
       "l:selva",
       "l:tener",
+      "p:saber-conocer",
       "p:tener-ganas-de"
     ],
     "targets": [
@@ -11883,6 +12163,7 @@
       "l:ganas",
       "l:ir",
       "l:tener",
+      "p:ir-a-venir-de-place",
       "p:quantifiers-basic",
       "p:tener-ganas-de"
     ],
@@ -12034,6 +12315,7 @@
       "l:ganas",
       "l:ir",
       "l:tener",
+      "p:ir-a-venir-de-place",
       "p:quantifiers-basic",
       "p:tener-ganas-de"
     ],
@@ -12059,7 +12341,9 @@
       "l:cine",
       "l:ganas",
       "l:ir",
-      "l:tener"
+      "l:tener",
+      "p:ir-a-venir-de-place",
+      "p:tener-ganas-de"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12084,6 +12368,7 @@
       "l:nadar",
       "l:playa",
       "l:tener",
+      "p:ir-a-venir-de-place",
       "p:tener-ganas-de"
     ],
     "targets": [
@@ -12105,7 +12390,9 @@
       "l:ganas",
       "l:ir",
       "l:qué",
-      "p:exclamations-basic"
+      "p:exclamations-basic",
+      "p:sonar-con-ganas",
+      "p:tener-ganas-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -12123,7 +12410,9 @@
       "l:ganas",
       "l:qué",
       "l:viajar",
-      "p:exclamations-basic"
+      "p:exclamations-basic",
+      "p:sonar-con-ganas",
+      "p:tener-ganas-de"
     ],
     "targets": [
       "l:viajar"
@@ -12143,7 +12432,9 @@
       "l:dormir",
       "l:ganas",
       "l:qué",
-      "p:exclamations-basic"
+      "p:exclamations-basic",
+      "p:sonar-con-ganas",
+      "p:tener-ganas-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -12163,7 +12454,9 @@
       "l:mar",
       "l:qué",
       "l:ver",
-      "p:exclamations-basic"
+      "p:exclamations-basic",
+      "p:sonar-con-ganas",
+      "p:tener-ganas-de"
     ],
     "targets": [
       "l:mar"
@@ -12184,7 +12477,8 @@
       "l:aprender",
       "l:difícil",
       "l:idioma",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -12204,7 +12498,8 @@
       "l:bien",
       "l:dormir",
       "l:importante",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:importante"
@@ -12227,6 +12522,7 @@
       "l:hablar",
       "l:ser",
       "l:útil",
+      "p:es-adj-inf",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -12247,7 +12543,8 @@
       "l:aeropuerto",
       "l:fácil",
       "l:llegar",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:aeropuerto"
@@ -12270,7 +12567,8 @@
       "l:difícil",
       "l:encontrar",
       "l:hotel",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:hotel"
@@ -12292,7 +12590,8 @@
       "l:efectivo",
       "l:importante",
       "l:llevar",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:dinero",
@@ -12316,7 +12615,8 @@
       "l:seguro",
       "l:ser",
       "l:tener",
-      "l:viaje"
+      "l:viaje",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:importante",
@@ -12341,7 +12641,9 @@
       "l:normal",
       "l:precio",
       "l:preguntar",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:preguntar"
@@ -12364,6 +12666,7 @@
       "l:importante",
       "l:ser",
       "l:vecino",
+      "p:es-adj-inf",
       "p:para-inf"
     ],
     "targets": [
@@ -12386,7 +12689,8 @@
       "l:contrato",
       "l:importante",
       "l:leer",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:importante"
@@ -12409,7 +12713,8 @@
       "l:difícil",
       "l:español",
       "l:leer",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -12427,7 +12732,8 @@
       "g:ser-identity",
       "l:fácil",
       "l:hablar",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -12445,7 +12751,8 @@
       "g:ser-identity",
       "l:difícil",
       "l:hablar",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -12464,7 +12771,8 @@
       "l:amigo",
       "l:bonito",
       "l:ser",
-      "l:viajar"
+      "l:viajar",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:viajar"
@@ -12486,7 +12794,11 @@
       "l:bueno",
       "l:caminar",
       "l:mañana",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:es-adj-inf",
+      "p:por-la-manana"
     ],
     "targets": [],
     "kind": "statement",
@@ -12505,7 +12817,10 @@
       "l:comer",
       "l:malo",
       "l:ser",
-      "l:tarde"
+      "l:tarde",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -12526,7 +12841,9 @@
       "l:rico",
       "l:ser",
       "l:tinto",
-      "l:tomar"
+      "l:tomar",
+      "p:es-adj-inf",
+      "p:por-la-manana"
     ],
     "targets": [],
     "kind": "statement",
@@ -12545,7 +12862,8 @@
       "l:bus",
       "l:mejor",
       "l:ser",
-      "l:viajar"
+      "l:viajar",
+      "p:transport-en"
     ],
     "targets": [
       "l:viajar"
@@ -12566,7 +12884,8 @@
       "l:llegar",
       "l:mejor",
       "l:ser",
-      "l:temprano"
+      "l:temprano",
+      "p:llegar-a-tiempo"
     ],
     "targets": [],
     "kind": "statement",
@@ -12587,6 +12906,7 @@
       "l:centro",
       "l:ser",
       "l:vivir",
+      "p:es-adj-inf",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -12607,7 +12927,8 @@
       "l:barato",
       "l:comer",
       "l:mercado",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -12627,7 +12948,9 @@
       "l:caminar",
       "l:idea",
       "l:noche",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [],
     "kind": "statement",
@@ -12645,7 +12968,8 @@
       "g:ser-identity",
       "l:bailar",
       "l:divertido",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -12665,7 +12989,9 @@
       "l:aburrido",
       "l:aeropuerto",
       "l:esperar",
-      "l:ser"
+      "l:ser",
+      "p:aburrir-aburrirse",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:aeropuerto"
@@ -12686,7 +13012,9 @@
       "l:avión",
       "l:cansado",
       "l:ser",
-      "l:viajar"
+      "l:viajar",
+      "p:es-adj-inf",
+      "p:transport-en"
     ],
     "targets": [
       "l:avión",
@@ -12712,6 +13040,7 @@
       "l:ser",
       "l:tranquilo",
       "l:vivir",
+      "p:es-adj-inf",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -12733,7 +13062,8 @@
       "l:caballo",
       "l:genial",
       "l:montar",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:caballo",
@@ -12755,7 +13085,10 @@
       "l:conocer",
       "l:interesante",
       "l:país",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf",
+      "p:otro-no-article",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -12773,7 +13106,8 @@
       "g:ser-identity",
       "l:hablar",
       "l:ser",
-      "l:urgente"
+      "l:urgente",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -12816,7 +13150,8 @@
       "l:fácil",
       "l:maleta",
       "l:ser",
-      "l:viajar"
+      "l:viajar",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:maleta",
@@ -12838,7 +13173,9 @@
       "l:difícil",
       "l:dormir",
       "l:gente",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf",
+      "p:la-gente-singular"
     ],
     "targets": [],
     "kind": "statement",
@@ -12858,6 +13195,8 @@
       "l:taxi",
       "l:triste",
       "l:ver",
+      "p:es-adj-inf",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -12879,7 +13218,8 @@
       "l:cliente",
       "l:ser",
       "l:triste",
-      "l:ver"
+      "l:ver",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -12899,7 +13239,8 @@
       "l:bonito",
       "l:mar",
       "l:ser",
-      "l:ver"
+      "l:ver",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:mar"
@@ -12920,7 +13261,8 @@
       "l:ajiaco",
       "l:cocinar",
       "l:difícil",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -12941,7 +13283,10 @@
       "l:fácil",
       "l:lejos",
       "l:ser",
-      "l:vivir"
+      "l:vivir",
+      "p:cerca-de",
+      "p:es-adj-inf",
+      "p:position-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -12960,7 +13305,9 @@
       "l:importante",
       "l:llegar",
       "l:ser",
-      "l:temprano"
+      "l:temprano",
+      "p:es-adj-inf",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "l:importante"
@@ -12980,7 +13327,10 @@
       "g:ser-identity",
       "l:bueno",
       "l:comer",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -12999,7 +13349,8 @@
       "l:aprender",
       "l:difícil",
       "l:español",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [],
     "kind": "question",
@@ -13018,7 +13369,8 @@
       "l:hablar",
       "l:importante",
       "l:rápido",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:importante"
@@ -13040,7 +13392,11 @@
       "l:conocer",
       "l:fácil",
       "l:gente",
-      "l:ser"
+      "l:ser",
+      "p:aqui-ahi-alla",
+      "p:es-adj-inf",
+      "p:la-gente-singular",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "question",
@@ -13059,7 +13415,9 @@
       "l:avión",
       "l:caro",
       "l:ser",
-      "l:viajar"
+      "l:viajar",
+      "p:es-adj-inf",
+      "p:transport-en"
     ],
     "targets": [
       "l:avión",
@@ -13082,7 +13440,8 @@
       "l:difícil",
       "l:nadar",
       "l:río",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:río"
@@ -13107,7 +13466,9 @@
       "l:difícil",
       "l:dormir",
       "l:ruido",
-      "l:ser"
+      "l:ser",
+      "p:aqui-ahi-alla",
+      "p:es-adj-inf"
     ],
     "targets": [
       "g:quantifiers"
@@ -13128,7 +13489,8 @@
       "g:ser-identity",
       "l:fácil",
       "l:llegar",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "g:quantifiers"
@@ -13152,7 +13514,10 @@
       "l:llegar",
       "l:saber",
       "l:ser",
-      "l:temprano"
+      "l:temprano",
+      "p:es-adj-inf",
+      "p:llegar-a-tiempo",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects",
@@ -13172,7 +13537,9 @@
     "requires": [
       "g:gender-articles",
       "l:ir",
-      "l:pena"
+      "l:pena",
+      "p:ir-a-venir-de-place",
+      "p:valer-la-pena"
     ],
     "targets": [],
     "kind": "statement",
@@ -13218,7 +13585,8 @@
       "l:avión",
       "l:ir",
       "l:pena",
-      "l:valer"
+      "l:valer",
+      "p:transport-en"
     ],
     "targets": [
       "c:vale-la-pena",
@@ -13333,7 +13701,8 @@
       "l:pena",
       "l:selva",
       "l:ser",
-      "l:valer"
+      "l:valer",
+      "p:es-adj-inf"
     ],
     "targets": [
       "c:vale-la-pena",
@@ -13452,7 +13821,8 @@
       "c:vale-la-pena",
       "l:esperar",
       "l:pena",
-      "l:valer"
+      "l:valer",
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "c:vale-la-pena",
@@ -13474,7 +13844,8 @@
       "g:gender-articles",
       "l:ir",
       "l:pena",
-      "l:valer"
+      "l:valer",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:vale-la-pena",
@@ -13544,7 +13915,8 @@
       "g:ser-identity",
       "l:grande",
       "l:maleta",
-      "l:ser"
+      "l:ser",
+      "p:no-es-nada-adj"
     ],
     "targets": [
       "g:quantifiers",
@@ -13569,6 +13941,8 @@
       "l:maleta",
       "l:ser",
       "l:taxi",
+      "p:intensificadores",
+      "p:no-es-nada-adj",
       "p:para-inf",
       "p:possessives-basic"
     ],
@@ -13616,7 +13990,8 @@
       "l:dónde",
       "l:estar",
       "l:maleta",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:maleta"
@@ -13735,7 +14110,8 @@
       "l:hotel",
       "l:preguntar",
       "l:turista",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:hotel",
@@ -13810,7 +14186,9 @@
       "l:bus",
       "l:largo",
       "l:ser",
-      "l:viaje"
+      "l:viaje",
+      "p:no-es-nada-adj",
+      "p:transport-en"
     ],
     "targets": [
       "g:quantifiers",
@@ -13831,6 +14209,7 @@
       "g:preterite-ser-ir-hacer",
       "l:ir",
       "l:viaje",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13857,6 +14236,7 @@
       "l:próximo",
       "l:querer",
       "l:viaje",
+      "p:ir-a-venir-de-place",
       "p:para-inf",
       "p:possessives-basic"
     ],
@@ -13904,7 +14284,8 @@
       "g:ser-identity",
       "l:cómo",
       "l:ser",
-      "l:viaje"
+      "l:viaje",
+      "p:question-word-order"
     ],
     "targets": [
       "l:viaje"
@@ -13931,7 +14312,8 @@
       "l:cómo",
       "l:largo",
       "l:ser",
-      "l:viaje"
+      "l:viaje",
+      "p:question-word-order"
     ],
     "targets": [
       "g:quantifiers",
@@ -13972,7 +14354,8 @@
     "requires": [
       "g:present-ar",
       "l:tomar",
-      "l:vacación"
+      "l:vacación",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:vacación"
@@ -13994,7 +14377,8 @@
       "l:cuándo",
       "l:ser",
       "l:vacación",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:vacación"
@@ -14083,7 +14467,8 @@
       "l:costa",
       "l:estar",
       "l:hora",
-      "l:isla"
+      "l:isla",
+      "p:quedar-a-distancia"
     ],
     "targets": [
       "l:costa",
@@ -14131,6 +14516,8 @@
       "l:gente",
       "l:isla",
       "l:playa",
+      "p:la-gente-singular",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -14181,7 +14568,8 @@
       "g:quantifiers",
       "l:gente",
       "l:hoy",
-      "l:playa"
+      "l:playa",
+      "p:la-gente-singular"
     ],
     "targets": [
       "g:quantifiers",
@@ -14228,7 +14616,8 @@
       "l:ir",
       "l:playa",
       "l:tarde",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "l:playa"
@@ -14275,7 +14664,8 @@
       "l:grande",
       "l:mar",
       "l:pequeño",
-      "l:ser"
+      "l:ser",
+      "p:no-es-nada-adj"
     ],
     "targets": [
       "g:quantifiers",
@@ -14320,6 +14710,8 @@
       "l:cerca",
       "l:mar",
       "l:vivir",
+      "p:cerca-de",
+      "p:position-de",
       "p:possessives-basic"
     ],
     "targets": [
@@ -14344,6 +14736,8 @@
       "l:aquí",
       "l:montaña",
       "l:parecer",
+      "p:aqui-ahi-alla",
+      "p:parecer-vs-parecerse",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -14390,7 +14784,8 @@
       "l:difícil",
       "l:montaña",
       "l:ser",
-      "l:subir"
+      "l:subir",
+      "p:es-adj-inf"
     ],
     "targets": [
       "g:quantifiers",
@@ -14414,7 +14809,9 @@
       "l:detrás",
       "l:grande",
       "l:montaña",
-      "l:pueblo"
+      "l:pueblo",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:montaña",
@@ -14504,7 +14901,8 @@
       "l:cerca",
       "l:finca",
       "l:río",
-      "p:cerca-de"
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:finca",
@@ -14576,7 +14974,8 @@
       "l:nadar",
       "l:querer",
       "l:río",
-      "l:tener"
+      "l:tener",
+      "p:tener-hambre"
     ],
     "targets": [
       "l:río"
@@ -14599,7 +14998,9 @@
       "l:cerca",
       "l:pequeño",
       "l:pueblo",
-      "l:río"
+      "l:río",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:pueblo",
@@ -14644,7 +15045,8 @@
       "g:perfecto-experience",
       "l:paisaje",
       "l:ver",
-      "l:verde"
+      "l:verde",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -14732,7 +15134,8 @@
       "g:questions",
       "l:bonito",
       "l:paisaje",
-      "l:qué"
+      "l:qué",
+      "p:orgulloso-admiracion"
     ],
     "targets": [
       "l:paisaje"
@@ -14781,7 +15184,9 @@
       "l:café",
       "l:cerca",
       "l:finca",
-      "l:pueblo"
+      "l:pueblo",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:finca",
@@ -14827,7 +15232,8 @@
       "l:bonito",
       "l:conocer",
       "l:finca",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:finca"
@@ -14871,6 +15277,7 @@
       "g:hay-vs-esta",
       "l:cafetal",
       "l:gente",
+      "p:la-gente-singular",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -14893,7 +15300,8 @@
       "l:cafetal",
       "l:cerca",
       "l:visitar",
-      "p:cerca-de"
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:cafetal",
@@ -14937,7 +15345,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:cafetal",
-      "l:caminar"
+      "l:caminar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -15083,7 +15492,8 @@
       "l:bonito",
       "l:cerca",
       "l:pueblo",
-      "p:cerca-de"
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:quantifiers",
@@ -15107,6 +15517,7 @@
       "l:nacer",
       "l:pequeño",
       "l:pueblo",
+      "p:naci-en",
       "p:possessives-basic"
     ],
     "targets": [
@@ -15127,7 +15538,8 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:conocer",
-      "l:pueblo"
+      "l:pueblo",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:pueblo"
@@ -15149,7 +15561,8 @@
       "g:quantifiers",
       "l:calor",
       "l:costa",
-      "l:hacer"
+      "l:hacer",
+      "p:hace-frio"
     ],
     "targets": [
       "g:quantifiers",
@@ -15268,6 +15681,7 @@
       "l:querer",
       "l:tío",
       "l:visitar",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -15289,7 +15703,8 @@
       "g:present-ar",
       "l:mercado",
       "l:sábado",
-      "l:visitar"
+      "l:visitar",
+      "p:days-el-lunes"
     ],
     "targets": [
       "l:visitar"
@@ -15332,7 +15747,8 @@
       "g:ir-a-plans",
       "l:ir",
       "l:mañana",
-      "l:visitar"
+      "l:visitar",
+      "p:personal-a"
     ],
     "targets": [
       "l:visitar"
@@ -15355,7 +15771,9 @@
       "l:bus",
       "l:cansado",
       "l:ser",
-      "l:viajar"
+      "l:viajar",
+      "p:es-adj-inf",
+      "p:transport-en"
     ],
     "targets": [
       "l:viajar"
@@ -15463,7 +15881,8 @@
       "g:hay-vs-esta",
       "l:allí",
       "l:hotel",
-      "l:pequeño"
+      "l:pequeño",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "l:allí",
@@ -15485,6 +15904,7 @@
       "l:abuela",
       "l:allí",
       "l:vivir",
+      "p:aqui-ahi-alla",
       "p:possessives-basic"
     ],
     "targets": [
@@ -15506,7 +15926,8 @@
       "g:hay-vs-esta",
       "g:questions",
       "l:allí",
-      "l:qué"
+      "l:qué",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "l:allí"
@@ -15529,7 +15950,8 @@
       "l:allí",
       "l:diciembre",
       "l:ir",
-      "l:querer"
+      "l:querer",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "l:allí"
@@ -15548,7 +15970,9 @@
     "requires": [
       "g:preterite-er-ir",
       "l:allí",
-      "l:nacer"
+      "l:nacer",
+      "p:aqui-ahi-alla",
+      "p:naci-en"
     ],
     "targets": [
       "l:allí"
@@ -15574,7 +15998,8 @@
       "l:año",
       "l:casa",
       "l:trabajar",
-      "l:ver"
+      "l:ver",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "l:allí"
@@ -15597,7 +16022,10 @@
       "l:detrás",
       "l:estar",
       "l:montaña",
-      "l:selva"
+      "l:selva",
+      "p:aqui-ahi-alla",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:allí",
@@ -15620,7 +16048,8 @@
       "g:hay-vs-esta",
       "l:allí",
       "l:café",
-      "l:hotel"
+      "l:hotel",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "l:allí",
@@ -15643,7 +16072,9 @@
       "g:perfecto-experience",
       "l:allí",
       "l:estar",
-      "l:gustar"
+      "l:gustar",
+      "p:aqui-ahi-alla",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -15841,7 +16272,8 @@
       "l:experiencia",
       "l:gran",
       "l:ser",
-      "l:viajar"
+      "l:viajar",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:experiencia",
@@ -15864,6 +16296,8 @@
       "l:caballo",
       "l:experiencia",
       "l:tener",
+      "p:con-sin",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -15985,7 +16419,8 @@
       "l:gente",
       "l:hablar",
       "l:nuevo",
-      "l:ser"
+      "l:ser",
+      "p:la-gente-singular"
     ],
     "targets": [
       "l:experiencia"
@@ -16073,7 +16508,8 @@
       "l:estar",
       "l:hoy",
       "l:seguro",
-      "l:venir"
+      "l:venir",
+      "p:estar-seguro-de-que"
     ],
     "targets": [
       "l:hoy",
@@ -16093,7 +16529,8 @@
     "requires": [
       "g:estar-location-states",
       "l:estar",
-      "l:seguro"
+      "l:seguro",
+      "p:estar-seguro-de-que"
     ],
     "targets": [
       "l:seguro"
@@ -16112,7 +16549,8 @@
     "requires": [
       "g:estar-location-states",
       "l:estar",
-      "l:seguro"
+      "l:seguro",
+      "p:estar-seguro-de-que"
     ],
     "targets": [
       "l:seguro"
@@ -16199,7 +16637,9 @@
       "l:llegar",
       "l:seguro",
       "l:siempre",
-      "l:tarde"
+      "l:tarde",
+      "p:frequency-scale",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "l:seguro"
@@ -16218,7 +16658,8 @@
     "requires": [
       "g:estar-location-states",
       "l:estar",
-      "l:seguro"
+      "l:seguro",
+      "p:estar-seguro-de-que"
     ],
     "targets": [
       "l:seguro"
@@ -16239,7 +16680,8 @@
       "g:present-ar",
       "l:hotel",
       "l:precio",
-      "l:preguntar"
+      "l:preguntar",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:hotel",
@@ -16262,6 +16704,8 @@
       "l:precio",
       "l:preguntar",
       "l:siempre",
+      "p:frequency-scale",
+      "p:preguntar-pedir",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -16285,7 +16729,8 @@
       "l:bus",
       "l:horario",
       "l:ir",
-      "l:preguntar"
+      "l:preguntar",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:preguntar"
@@ -16307,7 +16752,9 @@
       "g:verb-infinitive",
       "l:poder",
       "l:preguntar",
-      "p:indefinites-basic"
+      "p:indefinites-basic",
+      "p:preguntar-pedir",
+      "p:puedo-hacerte-una-pregunta"
     ],
     "targets": [
       "l:preguntar"
@@ -16328,7 +16775,8 @@
       "g:preterite-ar",
       "l:arriendo",
       "l:precio",
-      "l:preguntar"
+      "l:preguntar",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:preguntar"
@@ -16374,7 +16822,9 @@
       "g:present-ar",
       "l:buen",
       "l:formar",
-      "l:grupo"
+      "l:grupo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "l:formar"
@@ -16437,7 +16887,8 @@
     "acceptEn": [],
     "requires": [
       "g:perfecto-experience",
-      "l:subir"
+      "l:subir",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -16457,7 +16908,9 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:carta",
-      "l:jugar"
+      "l:jugar",
+      "p:frequency-scale",
+      "p:jugar-a"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -16500,7 +16953,9 @@
       "c:una-vez",
       "g:perfecto-experience",
       "l:subir",
-      "l:vez"
+      "l:vez",
+      "p:frequency-scale",
+      "p:ni-emphatic"
     ],
     "targets": [
       "c:una-vez",
@@ -16523,7 +16978,9 @@
       "g:yo-irregular",
       "l:ganas",
       "l:jugar",
-      "l:tener"
+      "l:tener",
+      "p:frequency-scale",
+      "p:tener-ganas-de"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -16545,7 +17002,8 @@
       "g:perfecto-experience",
       "l:ajiaco",
       "l:probarse",
-      "l:vida"
+      "l:vida",
+      "p:frequency-scale"
     ],
     "targets": [
       "c:nunca-en-la-vida",
@@ -16588,7 +17046,9 @@
       "c:una-vez",
       "g:perfecto-experience",
       "l:estar",
-      "l:vez"
+      "l:vez",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:una-vez",
@@ -16652,7 +17112,8 @@
     "requires": [
       "g:perfecto-experience",
       "l:subir",
-      "l:vez"
+      "l:vez",
+      "p:numbers-un-una"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -16775,7 +17236,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:cafetería",
-      "l:salir"
+      "l:salir",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -16839,7 +17301,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:cafetería",
-      "l:trabajar"
+      "l:trabajar",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -16862,7 +17325,8 @@
       "g:ser-identity",
       "l:grande",
       "l:propina",
-      "l:ser"
+      "l:ser",
+      "p:no-es-nada-adj"
     ],
     "targets": [
       "g:quantifiers"
@@ -16882,7 +17346,8 @@
       "g:gender-articles",
       "g:perfecto-experience",
       "l:mundo",
-      "l:viajar"
+      "l:viajar",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -16933,7 +17398,8 @@
       "l:hombre",
       "l:idea",
       "l:quién",
-      "l:ser"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "c:ni-idea",
@@ -17072,7 +17538,8 @@
       "g:perfecto-experience",
       "l:ganar",
       "l:semana",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:perfecto-still-live"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -17120,7 +17587,8 @@
       "l:anoche",
       "l:ganar",
       "l:partido",
-      "l:quién"
+      "l:quién",
+      "p:question-word-order"
     ],
     "targets": [
       "l:ganar"
@@ -17192,6 +17660,7 @@
       "l:ganar",
       "l:gustar",
       "l:trabajo",
+      "p:poco-un-poco",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -17239,7 +17708,8 @@
       "l:ganar",
       "l:tener",
       "l:vender",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:ganar"
@@ -17309,7 +17779,8 @@
       "l:caja",
       "l:dinero",
       "l:dónde",
-      "l:estar"
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "l:dinero"
@@ -17331,6 +17802,7 @@
       "l:dinero",
       "l:importante",
       "l:ser",
+      "p:no-es-nada-adj",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -17376,6 +17848,7 @@
       "l:dinero",
       "l:siempre",
       "l:vez",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -17422,7 +17895,10 @@
       "l:dinero",
       "l:importante",
       "l:noche",
-      "l:ser"
+      "l:ser",
+      "p:contar-dos-sentidos",
+      "p:es-adj-inf",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:dinero",
@@ -17444,7 +17920,8 @@
       "l:dinero",
       "l:importante",
       "l:ser",
-      "l:tener"
+      "l:tener",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:dinero",
@@ -17752,7 +18229,10 @@
       "g:stem-boot",
       "l:cafetería",
       "l:día",
-      "l:recordar"
+      "l:recordar",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:recordar"
@@ -17774,7 +18254,10 @@
       "l:abuela",
       "l:bien",
       "l:recordar",
-      "p:possessives-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:recordar"
@@ -17794,7 +18277,8 @@
       "g:stem-boot",
       "l:nombre",
       "l:recordar",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:recordar"
@@ -17819,7 +18303,8 @@
       "l:banco",
       "l:hora",
       "l:qué",
-      "l:recordar"
+      "l:recordar",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:recordar"
@@ -17840,7 +18325,8 @@
       "g:stem-boot",
       "l:costa",
       "l:recordar",
-      "l:viaje"
+      "l:viaje",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:costa",
@@ -17863,7 +18349,8 @@
       "g:stem-boot",
       "l:hotel",
       "l:nombre",
-      "l:recordar"
+      "l:recordar",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:hotel",
@@ -17884,7 +18371,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:fiesta",
-      "l:recordar"
+      "l:recordar",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:recordar"
@@ -17905,7 +18393,8 @@
       "g:stem-boot",
       "l:calle",
       "l:centro",
-      "l:recordar"
+      "l:recordar",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:recordar"
@@ -17925,7 +18414,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:receta",
-      "l:recordar"
+      "l:recordar",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:recordar"
@@ -17944,7 +18434,8 @@
     "requires": [
       "g:present-ar",
       "l:cariño",
-      "l:recordar"
+      "l:recordar",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:recordar"
@@ -17965,7 +18456,9 @@
       "l:llamar",
       "l:mamá",
       "l:recordar",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:recordar"
@@ -17987,7 +18480,8 @@
       "l:claro",
       "l:nombre",
       "l:recordar",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:recordar"
@@ -18011,7 +18505,9 @@
       "l:celular",
       "l:dejar",
       "l:dónde",
-      "l:recordar"
+      "l:recordar",
+      "p:question-word-order",
+      "p:recordar-acordarse"
     ],
     "targets": [
       "l:recordar"
@@ -18033,7 +18529,8 @@
       "l:dicho",
       "l:ser",
       "l:viejo",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:dicho"
@@ -18192,7 +18689,9 @@
       "g:present-er-ir",
       "l:conocer",
       "l:dicho",
-      "l:oír"
+      "l:oír",
+      "p:frequency-scale",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:dicho"
@@ -18238,7 +18737,8 @@
       "l:crear",
       "l:nuevo",
       "l:pan",
-      "l:sábado"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [
       "l:crear"
@@ -18353,7 +18853,8 @@
       "l:fácil",
       "l:nuevo",
       "l:receta",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:crear"
@@ -18460,7 +18961,9 @@
       "g:gender-articles",
       "l:centro",
       "l:cerca",
-      "l:estar"
+      "l:estar",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:estar-location-states"
@@ -18506,7 +19009,8 @@
       "g:hay-vs-esta",
       "l:general",
       "l:martes",
-      "l:reunión"
+      "l:reunión",
+      "p:days-el-lunes"
     ],
     "targets": [
       "l:general"
@@ -18693,7 +19197,9 @@
       "l:ayer",
       "l:ir",
       "l:pie",
-      "l:subir"
+      "l:subir",
+      "p:frequency-scale",
+      "p:transport-en"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -18743,6 +19249,8 @@
       "l:ir",
       "l:pasado",
       "l:ser",
+      "p:frequency-scale",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic",
       "p:time-pasado-que-viene"
     ],
@@ -18792,7 +19300,8 @@
       "l:caro",
       "l:estar",
       "l:isla",
-      "l:ser"
+      "l:ser",
+      "p:no-es-nada-adj"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -18916,7 +19425,8 @@
       "l:caro",
       "l:centro",
       "l:hotel",
-      "l:ser"
+      "l:ser",
+      "p:no-es-nada-adj"
     ],
     "targets": [
       "g:quantifiers",
@@ -18967,7 +19477,10 @@
       "l:mamá",
       "l:ocupado",
       "l:viajar",
+      "p:intensificadores",
+      "p:no-es-nada-adj",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19013,6 +19526,7 @@
       "l:semana",
       "l:vender",
       "p:demonstratives-basic",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -19097,7 +19611,8 @@
     "acceptEn": [],
     "requires": [
       "g:perfecto-experience",
-      "l:ver"
+      "l:ver",
+      "p:personal-a"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -19297,7 +19812,8 @@
       "g:preterite-irregular-strong",
       "g:questions",
       "l:decir",
-      "l:qué"
+      "l:qué",
+      "p:que-no-dice-que-si"
     ],
     "targets": [
       "g:preterite-irregular-strong"
@@ -19388,7 +19904,8 @@
       "g:questions",
       "l:ajiaco",
       "l:probarse",
-      "l:quién"
+      "l:quién",
+      "p:question-word-order"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -19479,7 +19996,8 @@
       "l:hora",
       "l:llamar",
       "l:quién",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:personal-a"
     ],
     "targets": [
       "g:estar-gerund"
@@ -19522,7 +20040,8 @@
       "l:costar",
       "l:cuánto",
       "l:isla",
-      "l:viaje"
+      "l:viaje",
+      "p:question-word-order"
     ],
     "targets": [
       "l:isla",
@@ -19546,7 +20065,8 @@
       "l:avión",
       "l:costar",
       "l:cuánto",
-      "l:maleta"
+      "l:maleta",
+      "p:question-word-order"
     ],
     "targets": [
       "l:avión",
@@ -19568,7 +20088,8 @@
       "g:present-er-ir",
       "l:barato",
       "l:conocer",
-      "l:hotel"
+      "l:hotel",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:hotel"
@@ -19589,7 +20110,8 @@
       "g:present-er-ir",
       "l:mar",
       "l:nadar",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:mar"
@@ -19638,6 +20160,7 @@
       "l:caminar",
       "l:ganas",
       "l:tener",
+      "p:poco-un-poco",
       "p:quantifiers-basic",
       "p:tener-ganas-de"
     ],
@@ -19658,7 +20181,8 @@
     "requires": [
       "g:gender-articles",
       "l:hotel",
-      "l:pena"
+      "l:pena",
+      "p:valer-la-pena"
     ],
     "targets": [
       "l:hotel"
@@ -19680,7 +20204,8 @@
       "l:finca",
       "l:fácil",
       "l:llegar",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:finca"
@@ -19700,7 +20225,8 @@
       "g:ser-identity",
       "l:hablar",
       "l:importante",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:importante"
@@ -19777,7 +20303,8 @@
     "requires": [
       "g:direct-objects",
       "g:preterite-irregular-strong",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "g:direct-objects"
@@ -19798,7 +20325,8 @@
       "g:present-er-ir",
       "g:questions",
       "l:quién",
-      "l:traer"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "g:direct-objects"
@@ -19859,7 +20387,8 @@
     "requires": [
       "g:direct-objects",
       "g:present-er-ir",
-      "l:conocer"
+      "l:conocer",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects"
@@ -19913,7 +20442,8 @@
       "l:cómo",
       "l:estar",
       "l:hermoso",
-      "l:isla"
+      "l:isla",
+      "p:question-word-order"
     ],
     "targets": [
       "g:quantifiers",
@@ -19983,7 +20513,8 @@
       "l:hacer",
       "l:montar",
       "l:querer",
-      "l:saber"
+      "l:saber",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:direct-objects",
@@ -20011,7 +20542,8 @@
       "l:diciembre",
       "l:envidia",
       "l:ir",
-      "l:qué"
+      "l:qué",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:que-envidia",
@@ -20060,7 +20592,8 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "l:aeropuerto",
-      "l:ir"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "l:aeropuerto"
@@ -20188,7 +20721,8 @@
       "l:aprender",
       "l:nadar",
       "l:río",
-      "l:saber"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:río"
@@ -20213,7 +20747,9 @@
       "l:conocer",
       "l:ganas",
       "l:selva",
-      "l:tener"
+      "l:tener",
+      "p:saber-conocer",
+      "p:tener-ganas-de"
     ],
     "targets": [
       "c:todavia-no",
@@ -20257,6 +20793,7 @@
       "l:ir",
       "l:playa",
       "l:tener",
+      "p:ir-a-venir-de-place",
       "p:quantifiers-basic",
       "p:tener-ganas-de"
     ],
@@ -20283,7 +20820,9 @@
       "l:pena",
       "l:pueblo",
       "l:ser",
-      "p:quantifiers-basic"
+      "p:ir-a-venir-de-place",
+      "p:quantifiers-basic",
+      "p:valer-la-pena"
     ],
     "targets": [
       "l:pueblo"
@@ -20307,6 +20846,8 @@
       "l:divertido",
       "l:español",
       "l:ser",
+      "p:es-adj-inf",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -20330,7 +20871,9 @@
       "l:dormir",
       "l:importante",
       "l:saber",
-      "l:ser"
+      "l:ser",
+      "p:es-adj-inf",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:direct-objects",

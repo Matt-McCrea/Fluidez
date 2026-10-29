@@ -124,7 +124,12 @@
     "g:present-er-ir",
     "g:questions",
     "g:ser-identity",
-    "g:yo-irregular"
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:personal-a",
+    "p:question-word-order",
+    "p:repeticion-claro-claro",
+    "p:senor-don-article"
   ],
   "lexemes": [
     "l:aquí",

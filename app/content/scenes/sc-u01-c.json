@@ -170,6 +170,9 @@
     "l:señor",
     "l:señora",
     "l:trabajar",
-    "l:ver"
+    "l:ver",
+    "p:no-es-x-es-y",
+    "p:senor-don-article",
+    "p:ser-profession-no-article"
   ]
 }

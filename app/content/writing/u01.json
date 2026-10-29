@@ -129,7 +129,8 @@
       "l:día",
       "l:favor",
       "l:leche",
-      "l:tinto"
+      "l:tinto",
+      "p:con-sin"
     ]
   },
   {
@@ -175,7 +176,8 @@
       "g:ser-identity",
       "l:ingeniero",
       "l:mesero",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ]
   },
   {
@@ -488,7 +490,8 @@
       "l:apellido",
       "l:canadiense",
       "l:nombre",
-      "l:ser"
+      "l:ser",
+      "p:ser-profession-no-article"
     ]
   },
   {

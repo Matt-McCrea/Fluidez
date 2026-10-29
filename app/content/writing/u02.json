@@ -43,7 +43,9 @@
       "l:llamarse",
       "l:ser",
       "l:trabajar",
-      "l:vivir"
+      "l:vivir",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ]
   },
   {
@@ -86,7 +88,8 @@
       "l:oficina",
       "l:reporte",
       "l:terminar",
-      "l:tinto"
+      "l:tinto",
+      "p:telling-time"
     ]
   },
   {
@@ -132,7 +135,8 @@
       "l:llegar",
       "l:número",
       "l:pan",
-      "l:vivir"
+      "l:vivir",
+      "p:telling-time"
     ]
   },
   {
@@ -170,7 +174,8 @@
       "l:llegar",
       "l:oficina",
       "l:pan",
-      "l:vivir"
+      "l:vivir",
+      "p:telling-time"
     ]
   },
   {
@@ -206,7 +211,10 @@
       "l:bien",
       "l:estar",
       "l:nervioso",
-      "l:señor"
+      "l:señor",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:senor-don-article"
     ]
   },
   {
@@ -249,7 +257,9 @@
       "l:estar",
       "l:hospital",
       "l:parque",
-      "l:universidad"
+      "l:universidad",
+      "p:quedar-a-distancia",
+      "p:street-names"
     ]
   },
   {
@@ -292,7 +302,13 @@
       "l:regalar",
       "l:sed",
       "l:tener",
-      "l:tranquilo"
+      "l:tranquilo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:don-dona-nombre",
+      "p:me-trae",
+      "p:senor-don-article",
+      "p:tener-hambre"
     ]
   },
   {
@@ -342,7 +358,8 @@
       "l:oficina",
       "l:quién",
       "l:ser",
-      "l:vivir"
+      "l:vivir",
+      "p:question-word-order"
     ]
   },
   {
@@ -378,7 +395,10 @@
       "l:dónde",
       "l:llegar",
       "l:qué",
-      "l:vivir"
+      "l:vivir",
+      "p:don-dona-nombre",
+      "p:question-word-order",
+      "p:senor-don-article"
     ]
   },
   {
@@ -422,7 +442,10 @@
       "l:mal",
       "l:pan",
       "l:ser",
-      "l:tinto"
+      "l:tinto",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge"
     ]
   },
   {
@@ -464,7 +487,10 @@
       "l:listo",
       "l:llegar",
       "l:señor",
-      "l:tinto"
+      "l:tinto",
+      "p:don-dona-nombre",
+      "p:senor-don-article",
+      "p:telling-time"
     ]
   },
   {
@@ -500,7 +526,9 @@
       "l:bien",
       "l:café",
       "l:dónde",
-      "l:estar"
+      "l:estar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ]
   }
 ]

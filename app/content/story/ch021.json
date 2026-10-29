@@ -137,9 +137,21 @@
     "g:se-accidental",
     "g:ser-identity",
     "g:stem-boot",
+    "p:don-dona-nombre",
+    "p:entonces-de-repente",
+    "p:frequency-scale",
+    "p:generic-tu-uno",
+    "p:ir-a-venir-de-place",
+    "p:llegar-a-tiempo",
+    "p:ni-emphatic",
+    "p:otro-no-article",
+    "p:por-la-manana",
     "p:possessives-basic",
     "p:quantifiers-basic",
-    "p:time-sequence-basic"
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:viejo-antiguo-mayor"
   ],
   "lexemes": [
     "l:abrir",

@@ -127,7 +127,11 @@
     "g:present-er-ir",
     "g:ser-identity",
     "g:subj-wishes",
-    "g:yo-irregular"
+    "g:yo-irregular",
+    "p:con-sin",
+    "p:don-dona-nombre",
+    "p:senor-don-article",
+    "p:telling-time"
   ],
   "lexemes": [
     "l:barrio",

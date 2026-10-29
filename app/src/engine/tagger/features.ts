@@ -1019,7 +1019,7 @@ const CONNECTORS: Array<[string[], string]> = ([
   ['por eso', 'conn.cause'], ['porque', 'conn.cause'], ['ya que', 'conn.cause-adv'], ['puesto que', 'conn.cause-adv'], ['debido a', 'conn.cause-adv'],
   ['a causa de', 'conn.cause-adv'], ['dado que', 'conn.cause-adv'], ['a pesar de', 'conn.despite'], ['sin embargo', 'conn.despite'],
   ['aun así', 'conn.despite'], ['no obstante', 'conn.despite'], ['en primer lugar', 'conn.discourse'], ['por un lado', 'conn.discourse'],
-  ['por otro lado', 'conn.discourse'], ['en conclusión', 'conn.discourse'], ['además', 'conn.discourse'], ['en resumen', 'conn.discourse'],
+  ['por otro lado', 'conn.discourse'], ['en conclusión', 'conn.discourse'], ['además', 'conn.additive'], ['en resumen', 'conn.discourse'],
   ['o sea', 'conn.reformulation'], ['es decir', 'conn.reformulation'], ['mejor dicho', 'conn.reformulation'], ['en otras palabras', 'conn.reformulation'],
   ['al parecer', 'conn.hedge'], ['supuestamente', 'conn.hedge'], ['por lo visto', 'conn.hedge'], ['si bien', 'conn.concessive-adv'],
   ['aun cuando', 'conn.concessive-adv'], ['de ahí que', 'conn.consequence-adv'], ['por consiguiente', 'conn.consequence-adv'], ['así pues', 'conn.consequence-adv'],

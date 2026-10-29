@@ -120,7 +120,11 @@
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
-    "p:que-tipo-de"
+    "p:days-el-lunes",
+    "p:prefieres-x-o-y",
+    "p:que-tipo-de",
+    "p:repeticion-claro-claro",
+    "p:telling-time"
   ],
   "lexemes": [
     "l:bailar",

@@ -196,8 +196,20 @@
     "l:tinto",
     "l:ver",
     "l:vivir",
+    "p:alcanzar-a-distinguir",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
     "p:demonstratives-basic",
+    "p:la-gente-singular",
+    "p:lugar-tiene",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:position-de",
     "p:possessives-basic",
-    "p:quantifiers-basic"
+    "p:quantifiers-basic",
+    "p:quedar-cerca",
+    "p:ver-oir-bien-mal"
   ]
 }

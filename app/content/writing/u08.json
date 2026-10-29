@@ -71,7 +71,9 @@
       "l:ganas",
       "l:probarse",
       "l:tener",
-      "p:quantifiers-basic"
+      "p:frequency-scale",
+      "p:quantifiers-basic",
+      "p:tener-ganas-de"
     ]
   },
   {
@@ -175,6 +177,8 @@
       "l:después",
       "l:hoy",
       "l:ir",
+      "p:entonces-de-repente",
+      "p:ir-a-venir-de-place",
       "p:time-sequence-basic"
     ]
   },
@@ -343,7 +347,8 @@
       "l:ayer",
       "l:café",
       "l:conocer",
-      "l:ser"
+      "l:ser",
+      "p:saber-conocer"
     ]
   },
   {
@@ -374,7 +379,11 @@
       "l:bien",
       "l:cocinar",
       "l:conocer",
-      "l:saber"
+      "l:saber",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:personal-a",
+      "p:saber-conocer"
     ]
   },
   {
@@ -434,6 +443,8 @@
       "l:importante",
       "l:probarse",
       "l:ser",
+      "p:aqui-ahi-alla",
+      "p:es-adj-inf",
       "p:quantifiers-basic"
     ]
   },
@@ -465,7 +476,9 @@
       "l:pena",
       "l:playa",
       "l:ser",
-      "p:quantifiers-basic"
+      "p:ir-a-venir-de-place",
+      "p:quantifiers-basic",
+      "p:valer-la-pena"
     ]
   },
   {
@@ -497,7 +510,8 @@
       "g:perfecto-experience",
       "l:envidia",
       "l:estar",
-      "l:qué"
+      "l:qué",
+      "p:frequency-scale"
     ]
   }
 ]

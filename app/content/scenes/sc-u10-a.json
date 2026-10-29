@@ -213,10 +213,14 @@
     "l:tomar",
     "l:traer",
     "l:ver",
+    "p:aqui-ahi-alla",
+    "p:frequency-scale",
     "p:indefinites-basic",
+    "p:llevar-traer",
     "p:me-te-nos-objects",
     "p:me-trae",
     "p:para-inf",
-    "p:quantifiers-basic"
+    "p:quantifiers-basic",
+    "p:saber-conocer"
   ]
 }

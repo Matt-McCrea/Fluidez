@@ -190,7 +190,16 @@
     "l:trabajo",
     "l:turista",
     "l:ver",
+    "p:aproximar-cifras",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
     "p:demonstratives-basic",
-    "p:quantifiers-basic"
+    "p:la-gente-singular",
+    "p:no-es-x-es-y",
+    "p:poco-un-poco",
+    "p:position-de",
+    "p:quantifiers-basic",
+    "p:tener-razon",
+    "p:unos-approx"
   ]
 }

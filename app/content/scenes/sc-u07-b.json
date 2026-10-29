@@ -184,8 +184,21 @@
     "l:ser",
     "l:tener",
     "l:tinto",
+    "p:a-cuadras-de",
+    "p:aqui-ahi-alla",
     "p:demonstratives-basic",
+    "p:directions-cuadras",
+    "p:el-agua-fria",
+    "p:estar-a",
+    "p:ir-a-venir-de-place",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:poco-un-poco",
     "p:possessives-basic",
-    "p:quantifiers-basic"
+    "p:quantifiers-basic",
+    "p:quedar-a-distancia",
+    "p:quedar-cerca",
+    "p:question-word-order",
+    "p:senor-don-article"
   ]
 }

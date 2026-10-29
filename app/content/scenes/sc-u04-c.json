@@ -170,11 +170,19 @@
     "l:tinto",
     "l:trabajo",
     "l:vender",
+    "p:con-sin",
+    "p:days-el-lunes",
     "p:demonstratives-basic",
     "p:exclamations-basic",
     "p:gracias-por",
     "p:indefinites-basic",
+    "p:nos-vemos-a-las",
+    "p:numbers-un-una",
+    "p:ocurrir-producirse",
+    "p:personal-a",
     "p:possessives-basic",
-    "p:quantifiers-basic"
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:telling-time"
   ]
 }
