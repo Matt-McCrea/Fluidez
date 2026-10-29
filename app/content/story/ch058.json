@@ -1,0 +1,282 @@
+{
+  "id": "ch058",
+  "unit": "u20",
+  "title": "Solo unos meses",
+  "text": "Todavía no llovía, pero el cielo del norte estaba negro.\nLa Burra paró delante de un edificio alto, de veinte pisos. En la puerta, en grande: ALTAMIRA.\nHernando: Yo prometí antes de la lluvia. Vamos.\nEn la recepción todo era blanco, y había una señora detrás de una mesa alta. Y encima de la mesa, un pájaro verde.\nSimón: Hello, I'm only here for a few months, a few months, a few months.\nTodos miraron a Tomás. Tomás quería desaparecer.\nEntonces Vale se rió. Primero un poco, y después mucho, con las manos en la cara. Era la primera vez en toda la semana.\nVale: ¿Eso le enseñaste? ¿Esa es tu frase, Tomás?\nTomás: Yo no le enseñé eso. Simón aprende solo.\nSeñora: ¿El pájaro es suyo? ¿Ustedes podrían llevar al pájaro, por favor? Grita eso desde las siete.\nHernando: Me encantaría, señora.\nSimón se subió al hombro de Hernando, como siempre. Hernando no habló. Le tocó la cabeza con un dedo, despacio.\nMariana notó algo debajo de la mesa: una caja grande, abierta.\nEn ese momento llegó Ricardo Altamira, con un par de hombres de traje.\nAltamira: Buenos días. Un pájaro muy inteligente. Llegó solo, en la mañana. Yo cuidaría mejor a mis animales, señor Herrera. En esta ciudad pasan cosas.\nMariana: ¿Llegó solo? ¿Y la caja? Me gustaría ver la caja.\nAltamira: No sabría decirle. Aquí recibimos muchas cajas.\nEn la calle, Mariana habló despacio.\nMariana: Yo no actuaría rápido. Yo hablaría primero con un abogado.\nHernando: Yo no necesito abogado. Ya tengo a Simón.\nEntonces sonó el primer trueno, y empezó la lluvia.\nSimón: Only here for a few months.\nVale se rió otra vez, todo el camino de regreso. Tomás la miró. Esa palabra de anoche volvió: socia.",
+  "gloss": [
+    {
+      "es": "Simón: Hello, I'm only here for a few months, a few months, a few months.",
+      "en": "Simón: Hello, I'm only here for a few months, a few months, a few months. (in English)"
+    },
+    {
+      "es": "Simón: Only here for a few months.",
+      "en": "Simón: Only here for a few months. (in English)"
+    },
+    {
+      "es": "En la puerta, en grande: ALTAMIRA.",
+      "en": "On the door, in big letters: ALTAMIRA."
+    },
+    {
+      "es": "Tomás quería desaparecer.",
+      "en": "Tomás wanted the floor to swallow him."
+    },
+    {
+      "es": "¿Ustedes podrían llevar al pájaro, por favor?",
+      "en": "Could you take the bird, please?"
+    },
+    {
+      "es": "Yo cuidaría mejor a mis animales",
+      "en": "I'd take better care of my animals"
+    },
+    {
+      "es": "En esta ciudad pasan cosas.",
+      "en": "Things happen in this city."
+    },
+    {
+      "es": "No sabría decirle.",
+      "en": "I couldn't tell you."
+    },
+    {
+      "es": "Yo no actuaría rápido.",
+      "en": "I wouldn't act fast."
+    },
+    {
+      "es": "Esa palabra de anoche volvió: socia.",
+      "en": "Last night's word came back: partner."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does everyone look at Tomás when Simón speaks?",
+      "options": [
+        "Simón is repeating Tomás's own English words",
+        "Simón is calling his name",
+        "Tomás brought Simón there",
+        "Simón is speaking French"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Vale's laugh important?",
+      "options": [
+        "It is the first time she has laughed all week",
+        "She never laughs at Tomás",
+        "She is laughing at Altamira",
+        "She is nervous"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What makes Mariana doubt Altamira's story?",
+      "options": [
+        "A big open box under the reception desk",
+        "Gloria's phone call",
+        "Simón says Altamira's name",
+        "The receptionist tells her the truth"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué haría Mariana primero?",
+      "options": [
+        "Hablaría con un abogado",
+        "Llamaría a la policía",
+        "Hablaría con Altamira",
+        "Escribiría la historia"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Does Hernando keep his promise?",
+      "options": [
+        "Yes, just: the first thunder comes as they leave with Simón",
+        "No, it rains before they find Simón",
+        "No, Mariana finds Simón alone",
+        "Yes, he finds Simón in the park"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Simón is home, Vale is laughing again, and Altamira's box says more than he does. Tomorrow Tomás asks Vale a question with that word in it: partner.",
+  "rereadQuestions": [
+    {
+      "q": "How tall is Altamira's building?",
+      "options": [
+        "Twenty floors",
+        "Ten floors",
+        "Four floors",
+        "Fifty floors"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Hernando greet Simón?",
+      "options": [
+        "He touches his head gently with one finger",
+        "He shouts «¡Tinto!»",
+        "He puts him in the box",
+        "He gives him an almojábana"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando say when the receptionist asks them to take the bird?",
+      "options": [
+        "I'd love to, madam",
+        "I promise, madam",
+        "It's not ours",
+        "Could be"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hola-buenos-dias",
+    "c:me-encantaria",
+    "c:me-gustaria",
+    "c:por-favor",
+    "c:tengo",
+    "c:todavia-no",
+    "c:vamos-a",
+    "g:adjective-agreement",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:possessives-stressed",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:subirse-bajarse",
+    "p:time-sequence-basic",
+    "p:todos-los-dias"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abrir",
+    "l:actuar",
+    "l:alto",
+    "l:animal",
+    "l:anoche",
+    "l:antes",
+    "l:aprender",
+    "l:aquí",
+    "l:blanco",
+    "l:bueno",
+    "l:cabeza",
+    "l:caja",
+    "l:calle",
+    "l:camino",
+    "l:cara",
+    "l:cielo",
+    "l:ciudad",
+    "l:cosa",
+    "l:cuidar",
+    "l:debajo",
+    "l:decir",
+    "l:dedo",
+    "l:delante",
+    "l:desaparecer",
+    "l:despacio",
+    "l:después",
+    "l:detrás",
+    "l:día",
+    "l:edificio",
+    "l:empezar",
+    "l:encantar",
+    "l:encima",
+    "l:enseñar",
+    "l:estar",
+    "l:favor",
+    "l:frase",
+    "l:grande",
+    "l:gritar",
+    "l:gustar",
+    "l:hablar",
+    "l:hombre",
+    "l:hombro",
+    "l:inteligente",
+    "l:ir",
+    "l:llegar",
+    "l:llevar",
+    "l:llover",
+    "l:lluvia",
+    "l:m",
+    "l:mano",
+    "l:mañana",
+    "l:mejor",
+    "l:mesa",
+    "l:mirar",
+    "l:momento",
+    "l:necesitar",
+    "l:negro",
+    "l:norte",
+    "l:notar",
+    "l:palabra",
+    "l:par",
+    "l:parar",
+    "l:pasar",
+    "l:piso",
+    "l:poder",
+    "l:prometer",
+    "l:puerta",
+    "l:pájaro",
+    "l:querer",
+    "l:recepción",
+    "l:recibir",
+    "l:regreso",
+    "l:reír",
+    "l:rápido",
+    "l:saber",
+    "l:semana",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:siempre",
+    "l:socio",
+    "l:sonar",
+    "l:subirse",
+    "l:tener",
+    "l:tocar",
+    "l:traje",
+    "l:trueno",
+    "l:ver",
+    "l:verde",
+    "l:vez",
+    "l:volver"
+  ]
+}

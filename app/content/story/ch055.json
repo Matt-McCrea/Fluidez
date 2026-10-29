@@ -1,0 +1,244 @@
+{
+  "id": "ch055",
+  "unit": "u20",
+  "title": "¿Dónde está Simón?",
+  "text": "La almojábana de Simón estaba encima de la máquina, sin terminar. Pero Simón no estaba.\nTomás buscó en la cocina, en el baño, debajo de las mesas y detrás de la nevera.\nTomás: ¿Simón? ¿Simón, dónde estás?\nVale: A lo mejor está con Hernando. A veces se va con él a la panadería de la esquina.\nA las siete entró Hernando, solo.\nHernando: Buenos días, familia. ¿Y Simón? ¿Todavía duerme?\nNadie se rió. Hernando miró la máquina y se sentó despacio.\nJhon Fredy ya tenía una teoría. Jhon Fredy siempre tiene teorías.\nJhon Fredy: Teoría número uno: Simón salió por la ventana. En la zona hay árboles altos. A lo mejor está en un árbol del parque, con otros loros.\nVale: Simón no sale solo. A Simón no le gusta la calle.\nTomás: Supongo que alguien lo llevó.\nHernando: ¿Y quién se lleva un loro que grita a las cinco de la mañana?\nMariana llegó con el celular en la mano.\nMariana: ¿Altamira? Puede ser. Primero el inspector, y ahora Simón.\nVale: ¿Altamira? ¿Y qué hace Altamira con un loro?\nMariana: Nos quiere nerviosos. Supongo que tiene un plan. Siempre tiene un plan.\nJhon Fredy: Teoría número dos: Simón tomó el bus a Medellín. Le gustó el viaje.\nA las ocho entró una señora y pidió un tinto. Todos miraron la máquina. Nadie gritó «¡Tinto!».\nHernando se levantó.\nHernando: Rosa luchó cuarenta años por este café, y Simón luchó con ella. Yo lo busco. Conozco todas las calles de esta zona.\nEn la radio dieron el pronóstico: lluvias fuertes en Bogotá desde el viernes.\nHernando: El viernes. Simón nunca vivió en la calle. Con lluvia, no va a reconocer esta esquina.\nHernando tomó la gorra y salió.",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "loros",
+      "en": "parrots"
+    },
+    {
+      "es": "sin terminar",
+      "en": "half eaten (not finished)"
+    },
+    {
+      "es": "A veces se va con él a la panadería de la esquina.",
+      "en": "Sometimes he goes with him to the bakery on the corner."
+    },
+    {
+      "es": "Nos quiere nerviosos.",
+      "en": "He wants us nervous."
+    },
+    {
+      "es": "Le gustó el viaje.",
+      "en": "He liked the trip."
+    },
+    {
+      "es": "Simón luchó con ella",
+      "en": "Simón fought alongside her"
+    },
+    {
+      "es": "Con lluvia, no va a reconocer esta esquina.",
+      "en": "In the rain, he won't recognise this corner."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Where does Vale first think Simón is?",
+      "options": [
+        "With Hernando",
+        "At the market",
+        "In Medellín",
+        "With Mariana"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Mariana suspect Altamira?",
+      "options": [
+        "First the inspector came, and now Simón has gone",
+        "Altamira called the café about Simón",
+        "Someone saw Altamira with a parrot",
+        "Altamira once offered to buy Simón"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is strange when a customer orders a black coffee?",
+      "options": [
+        "Nobody shouts «¡Tinto!», because Simón is not there",
+        "The machine breaks",
+        "Hernando refuses to make it",
+        "Jhon Fredy makes it too slowly"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué dice el pronóstico?",
+      "options": [
+        "Lluvias fuertes desde el viernes",
+        "Sol todo el fin de semana",
+        "Lluvias fuertes hoy",
+        "Mucho calor el viernes"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Hernando has until Friday's rains to find Simón. Tomorrow he drives the Burra round the whole city, and he makes a promise he may not be able to keep.",
+  "rereadQuestions": [
+    {
+      "q": "What was left on top of the coffee machine?",
+      "options": [
+        "Simón's half eaten almojábana",
+        "A note from Hernando",
+        "A black coffee",
+        "The inspector's papers"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Jhon Fredy's second theory?",
+      "options": [
+        "Simón took the bus to Medellín because he liked the trip",
+        "Simón is in a tree in the park",
+        "Altamira has him",
+        "Simón is asleep at Hernando's"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many years did Rosa fight for the café, according to Hernando?",
+      "options": [
+        "Forty",
+        "Twenty",
+        "Fifteen",
+        "Thirty six"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:a-lo-mejor",
+    "c:con-el-ella",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:puede-ser",
+    "c:supongo-que",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:quizas-a-lo-mejor",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "p:cerca-de",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:lugar-tiene",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:preguntar-pedir",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:ahora",
+    "l:almojábana",
+    "l:alto",
+    "l:año",
+    "l:baño",
+    "l:bueno",
+    "l:bus",
+    "l:buscar",
+    "l:café",
+    "l:calle",
+    "l:celular",
+    "l:cocina",
+    "l:conocer",
+    "l:dar",
+    "l:debajo",
+    "l:despacio",
+    "l:detrás",
+    "l:dormir",
+    "l:día",
+    "l:dónde",
+    "l:encima",
+    "l:entrar",
+    "l:esquina",
+    "l:estar",
+    "l:familia",
+    "l:fuerte",
+    "l:gorra",
+    "l:gritar",
+    "l:gustar",
+    "l:hacer",
+    "l:inspector",
+    "l:ir",
+    "l:irse",
+    "l:levantarse",
+    "l:llegar",
+    "l:llevar",
+    "l:llevarse",
+    "l:lluvia",
+    "l:loro",
+    "l:luchar",
+    "l:mano",
+    "l:mañana",
+    "l:mejor",
+    "l:mesa",
+    "l:mirar",
+    "l:máquina",
+    "l:nervioso",
+    "l:nevera",
+    "l:número",
+    "l:panadería",
+    "l:parque",
+    "l:pedir",
+    "l:plan",
+    "l:poder",
+    "l:pronóstico",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:radio",
+    "l:reconocer",
+    "l:reír",
+    "l:salir",
+    "l:sentarse",
+    "l:ser",
+    "l:señora",
+    "l:siempre",
+    "l:suponer",
+    "l:tener",
+    "l:teoría",
+    "l:terminar",
+    "l:tinto",
+    "l:tomar",
+    "l:ventana",
+    "l:vez",
+    "l:viaje",
+    "l:viernes",
+    "l:vivir",
+    "l:zona",
+    "l:árbol"
+  ]
+}
