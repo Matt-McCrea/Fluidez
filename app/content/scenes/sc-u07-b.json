@@ -1,0 +1,191 @@
+{
+  "id": "sc-u07-b",
+  "unit": "u07",
+  "title": "Three floors up",
+  "brief": "You're Tomás. Mariana has climbed all the stairs at Doña Gloria's to see your new room. Show her round: what there is, where things are, and how much water the shower really has. She's your childhood friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Uf, tres pisos! Hola, Tomás. Entonces, ¿este es tu cuarto?",
+      "npcEn": "Phew, three floors! Hi, Tomás. So, is this your room?",
+      "intent": "Say yes, this is your room. It's small, but it has a balcony.",
+      "accept": [
+        "Sí, este es mi cuarto. Es pequeño, pero tiene balcón.",
+        "Sí, este es mi cuarto. Es pequeño, pero tiene un balcón.",
+        "Este es mi cuarto. Es pequeño, pero tiene balcón."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "este",
+          "label": "this one (right here): este"
+        }
+      ],
+      "focus": "g:demonstratives",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Es bonito. ¿Y la cocina? ¿Dónde está?",
+      "npcEn": "It's nice. And the kitchen? Where is it?",
+      "intent": "Tell her the kitchen is on the second floor.",
+      "accept": [
+        "Está en el segundo piso.",
+        "La cocina está en el segundo piso.",
+        "Está en el segundo piso, Mariana."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "where a known thing is: está"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bsegundo piso\\b",
+          "label": "the second floor: el segundo piso"
+        }
+      ],
+      "focus": "p:ordinals-primer-tercer",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y qué hay en la cocina?",
+      "npcEn": "And what is there in the kitchen?",
+      "intent": "Say there's a stove and a fridge, but the fridge is Doña Gloria's.",
+      "accept": [
+        "Hay una estufa y una nevera, pero la nevera es de doña Gloria.",
+        "Hay estufa y nevera. Pero la nevera es de doña Gloria.",
+        "Hay una estufa y una nevera. Pero la nevera es de doña Gloria."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "hay",
+          "label": "there is: hay"
+        }
+      ],
+      "focus": "g:hay-vs-esta",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Tomás! ¿Quién es ese gato gordo?",
+      "npcEn": "Tomás! Who is that fat cat?",
+      "intent": "Say that cat is Pacho, Doña Gloria's cat. He sleeps a lot.",
+      "accept": [
+        "Ese gato es Pacho, el gato de doña Gloria. Duerme mucho.",
+        "Es Pacho, el gato de doña Gloria. Ese gato duerme mucho.",
+        "Ese es Pacho, el gato de doña Gloria. Duerme mucho."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "mucho",
+          "label": "a lot, after a verb: mucho (never muy)"
+        },
+        {
+          "type": "containsWord",
+          "word": "ese",
+          "label": "that cat (near her): ese"
+        }
+      ],
+      "focus": "x:muy-mucho",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Y la ducha funciona? ¿Hay agua?",
+      "npcEn": "And does the shower work? Is there water?",
+      "intent": "Say there isn't much water: one day yes, two days no.",
+      "accept": [
+        "Hay poca agua. Un día sí, dos días no.",
+        "No hay mucha agua. Un día sí, dos días no.",
+        "Hay muy poca agua. Un día sí y dos días no."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "poca",
+            "mucha"
+          ],
+          "label": "agua is feminine: poca agua, mucha agua"
+        }
+      ],
+      "focus": "g:quantifiers",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Ay, Tomás. Bueno, ¿vamos al café? Yo pago el tinto.",
+      "npcEn": "Oh, Tomás. Well, shall we go to the café? I'll pay for the tinto.",
+      "intent": "Say yes, let's go. The café is two blocks away.",
+      "accept": [
+        "Sí, vamos. El café queda a dos cuadras.",
+        "¡Sí! Vamos. Queda a dos cuadras.",
+        "Vamos. El café queda a dos cuadras de aquí."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "queda",
+          "label": "where a place is: queda a dos cuadras"
+        }
+      ],
+      "focus": "p:quedar-cerca",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:tienes",
+    "c:vamos-a",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "l:agua",
+    "l:aquí",
+    "l:balcón",
+    "l:bonito",
+    "l:bueno",
+    "l:café",
+    "l:cocina",
+    "l:cuadra",
+    "l:dormir",
+    "l:ducha",
+    "l:día",
+    "l:dónde",
+    "l:estar",
+    "l:estufa",
+    "l:funcionar",
+    "l:gato",
+    "l:gordo",
+    "l:ir",
+    "l:nevera",
+    "l:pagar",
+    "l:pequeño",
+    "l:piso",
+    "l:quedar",
+    "l:quién",
+    "l:qué",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "p:demonstratives-basic",
+    "p:possessives-basic",
+    "p:quantifiers-basic"
+  ]
+}

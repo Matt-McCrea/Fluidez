@@ -1,0 +1,196 @@
+{
+  "id": "sc-u07-c",
+  "unit": "u07",
+  "title": "Counting everything",
+  "brief": "You're Tomás. The café needs money, so Vale has decided you two will count everything in it today. Answer her questions about how much there is and where things are. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, necesitamos plata. Hoy contamos todo. ¿Cuántas sillas hay?",
+      "npcEn": "Tomás, we need money. Today we count everything. How many chairs are there?",
+      "intent": "Say there are about twenty chairs.",
+      "accept": [
+        "Hay unas veinte sillas.",
+        "Hay más o menos veinte sillas.",
+        "Unas veinte sillas, Vale."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "unas",
+            "más o menos"
+          ],
+          "label": "about twenty: unas veinte"
+        }
+      ],
+      "focus": "p:unos-approx",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Veinte? ¡Son demasiadas! ¿Y la leche? ¿Hay mucha?",
+      "npcEn": "Twenty? That's too many! And the milk? Is there a lot?",
+      "intent": "Say no, there's very little milk.",
+      "accept": [
+        "No, hay muy poca leche.",
+        "No, hay poca leche.",
+        "No, no hay mucha leche."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "poca",
+            "mucha"
+          ],
+          "label": "leche is feminine: poca leche"
+        }
+      ],
+      "focus": "g:quantifiers",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y dónde está la harina? No veo.",
+      "npcEn": "And where's the flour? I can't see.",
+      "intent": "Tell her the flour is in that cupboard, next to the fridge.",
+      "accept": [
+        "Está en ese armario, al lado de la nevera.",
+        "La harina está en ese armario, al lado de la nevera.",
+        "Está ahí, en ese armario, al lado de la nevera."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ese",
+          "label": "that cupboard (near her): ese armario"
+        },
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "where a known thing is: está"
+        }
+      ],
+      "focus": "g:demonstratives",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Tomás! En este armario no hay harina. Hay pan... ¡y Simón!",
+      "npcEn": "Tomás! There's no flour in this cupboard. There's bread... and Simón!",
+      "intent": "Say Simón eats too much bread.",
+      "accept": [
+        "Simón come demasiado pan.",
+        "¡Simón come demasiado pan!",
+        "Ay, Simón. Comes demasiado pan."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "demasiado",
+          "label": "too much bread: demasiado pan"
+        }
+      ],
+      "focus": "g:quantifiers",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bueno. Necesitamos más clientes. ¿Qué piensas?",
+      "npcEn": "Okay. We need more customers. What do you think?",
+      "intent": "Say the people here are very kind, but there aren't many tourists.",
+      "accept": [
+        "La gente aquí es muy amable, pero no hay muchos turistas.",
+        "La gente del barrio es muy amable, pero hay pocos turistas.",
+        "La gente es muy amable aquí, pero no hay muchos turistas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bgente\\b[^.]*\\bes\\b",
+          "label": "people is singular in Spanish: la gente es"
+        }
+      ],
+      "focus": "p:la-gente-singular",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Tienes razón. Bueno, mucho trabajo hoy. ¿Un tinto?",
+      "npcEn": "You're right. Well, a lot of work today. A tinto?",
+      "intent": "Say yes, but just a little, because there isn't much coffee.",
+      "accept": [
+        "Sí, pero un poco. Hay poco café.",
+        "Sí, un poco, porque hay poco café.",
+        "Un poco, Vale. No hay mucho café."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "un poco",
+          "label": "just a little: un poco"
+        }
+      ],
+      "focus": "p:poco-un-poco",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:mas-o-menos",
+    "c:muy-amable",
+    "c:porque",
+    "c:tienes",
+    "g:cause-result",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:quantifiers",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:ahí",
+    "l:amable",
+    "l:aquí",
+    "l:armario",
+    "l:barrio",
+    "l:bueno",
+    "l:café",
+    "l:cliente",
+    "l:comer",
+    "l:contar",
+    "l:cuánto",
+    "l:dónde",
+    "l:estar",
+    "l:gente",
+    "l:harina",
+    "l:hoy",
+    "l:lado",
+    "l:leche",
+    "l:necesitar",
+    "l:nevera",
+    "l:pan",
+    "l:pensar",
+    "l:plata",
+    "l:qué",
+    "l:razón",
+    "l:ser",
+    "l:silla",
+    "l:tener",
+    "l:tinto",
+    "l:trabajo",
+    "l:turista",
+    "l:ver",
+    "p:demonstratives-basic",
+    "p:quantifiers-basic"
+  ]
+}

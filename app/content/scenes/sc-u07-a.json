@@ -1,0 +1,202 @@
+{
+  "id": "sc-u07-a",
+  "unit": "u07",
+  "title": "The lady with the map",
+  "brief": "You're Tomás. A lady from out of town stops you on the street with a map she can't make sense of. Help her find a pharmacy, tell her what the buildings are and where you live, and offer her a coffee. She's older than you and a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Disculpe, joven. ¿Hay una droguería por acá?",
+      "npcEn": "Excuse me, young man. Is there a pharmacy around here?",
+      "intent": "Say yes, there's a pharmacy on this street.",
+      "accept": [
+        "Sí, hay una droguería en esta calle.",
+        "Sí, señora. Hay una droguería en esta calle.",
+        "Hay una en esta calle, señora."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "hay",
+          "label": "there is (it exists): hay"
+        }
+      ],
+      "focus": "g:hay-vs-esta",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Y dónde está? No veo bien.",
+      "npcEn": "And where is it? I can't see very well.",
+      "intent": "Tell her it's next to the bakery.",
+      "accept": [
+        "Está al lado de la panadería.",
+        "La droguería está al lado de la panadería.",
+        "Está al lado de la panadería, señora."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "where a known thing is: está, not hay"
+        },
+        {
+          "type": "containsWord",
+          "word": "al lado de",
+          "label": "next to: al lado de"
+        }
+      ],
+      "focus": "x:hay-esta",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Gracias. Y ese edificio grande, ¿es un banco?",
+      "npcEn": "Thank you. And that big building, is it a bank?",
+      "intent": "Say no: that one is a restaurant. The bank is over there.",
+      "accept": [
+        "No, ese es un restaurante. El banco está allá.",
+        "No, señora, ese es un restaurante. El banco está allá.",
+        "Ese es un restaurante. El banco queda allá."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ese",
+          "label": "that one (a building near her): ese"
+        },
+        {
+          "type": "containsWord",
+          "word": "allá",
+          "label": "over there: allá"
+        }
+      ],
+      "focus": "g:demonstratives",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Ay, qué pena! Y esos hombres de la calle, con esas camisas, ¿quiénes son?",
+      "npcEn": "Oh, how embarrassing! And those men in the street, with those shirts, who are they?",
+      "intent": "Say they're men from Altamira, and there are too many of them in the neighbourhood.",
+      "accept": [
+        "Son hombres de Altamira. Hay demasiados en el barrio.",
+        "Son de Altamira. Y en este barrio hay demasiados.",
+        "Son hombres de Altamira, señora. Hay demasiados en el barrio."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "demasiados",
+          "label": "too many men: demasiados (it agrees with hombres)"
+        }
+      ],
+      "focus": "g:quantifiers",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Y usted vive por acá?",
+      "npcEn": "And do you live around here?",
+      "intent": "Say yes, you live above the bakery, on the third floor.",
+      "accept": [
+        "Sí, vivo arriba de la panadería, en el tercer piso.",
+        "Sí, vivo en el tercer piso, arriba de la panadería.",
+        "Sí, señora. Vivo en el tercer piso, arriba de la panadería."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btercer piso\\b",
+          "label": "the third floor: el tercer piso (tercero loses its o before piso)"
+        }
+      ],
+      "focus": "p:ordinal-floor",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Este barrio es muy bonito. Y la gente es muy amable.",
+      "npcEn": "This neighbourhood is very pretty. And the people are very kind.",
+      "intent": "Say thank you, and offer her a tinto at your café: it's really close.",
+      "accept": [
+        "Gracias, señora. ¿Un tinto en el café? Queda cerquita.",
+        "Gracias. ¿Quiere un tinto? El café queda cerquita.",
+        "Gracias. ¿Un tinto? Mi café queda cerquita, en la esquina."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "cerquita",
+          "label": "really close: queda cerquita"
+        }
+      ],
+      "focus": "c:queda-cerquita",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:donde-esta",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:muy-amable",
+    "c:perdon-disculpe",
+    "c:por-aca",
+    "c:que-pena",
+    "c:queda-cerquita",
+    "c:vivo-en",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:quantifiers",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:acá",
+    "l:allá",
+    "l:amable",
+    "l:arriba",
+    "l:banco",
+    "l:barrio",
+    "l:bien",
+    "l:bonito",
+    "l:café",
+    "l:calle",
+    "l:camisa",
+    "l:disculpar",
+    "l:droguería",
+    "l:dónde",
+    "l:edificio",
+    "l:esquina",
+    "l:estar",
+    "l:gente",
+    "l:grande",
+    "l:hombre",
+    "l:joven",
+    "l:lado",
+    "l:panadería",
+    "l:pena",
+    "l:piso",
+    "l:quedar",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:restaurante",
+    "l:ser",
+    "l:señora",
+    "l:tinto",
+    "l:ver",
+    "l:vivir",
+    "p:demonstratives-basic",
+    "p:possessives-basic",
+    "p:quantifiers-basic"
+  ]
+}
