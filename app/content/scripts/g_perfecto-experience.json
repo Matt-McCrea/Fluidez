@@ -6,43 +6,198 @@
     "en": "You've never been up Monserrate?"
   },
   "examples": [
-    { "es": "¿Has estado en Cartagena?", "en": "Have you been to Cartagena? (to a friend)" },
-    { "es": "Nunca he montado a caballo.", "en": "I've never ridden a horse." },
-    { "es": "Vale ha estado en Cartagena dos veces.", "en": "Vale has been to Cartagena twice." },
-    { "es": "Todavía no he leído el contrato.", "en": "I haven't read the contract yet." },
-    { "es": "Mis papás nunca han estado en Colombia.", "en": "My parents have never been to Colombia." },
-    { "es": "¿Ustedes han estado en Medellín?", "en": "Have you all been to Medellín?" },
-    { "es": "Todavía no hemos abierto.", "en": "We haven't opened yet." }
+    {
+      "es": "¿Has estado en Cartagena?",
+      "en": "Have you been to Cartagena? (to a friend)"
+    },
+    {
+      "es": "Nunca he montado a caballo.",
+      "en": "I've never ridden a horse."
+    },
+    {
+      "es": "Vale ha estado en Cartagena dos veces.",
+      "en": "Vale has been to Cartagena twice."
+    },
+    {
+      "es": "Todavía no he leído el contrato.",
+      "en": "I haven't read the contract yet."
+    },
+    {
+      "es": "Mis papás nunca han estado en Colombia.",
+      "en": "My parents have never been to Colombia."
+    },
+    {
+      "es": "¿Ustedes han estado en Medellín?",
+      "en": "Have you all been to Medellín?"
+    },
+    {
+      "es": "Todavía no hemos abierto.",
+      "en": "We haven't opened yet."
+    }
   ],
   "rule": "English and Spanish build this the same way: a helper verb plus a past form. English says I have been; Spanish says *he estado*.\n\nThe helper:\n*he*: I have\n*has*: you have\n*ha*: he, she, you (formal) have\n*hemos*: we have\n*han*: they, you all have\n\nThe past form ends in *-ado* for *-ar* verbs (*estado*, *montado*) and *-ido* for *-er* and *-ir* verbs (*comido*, *vivido*). It never changes. A few are irregular: *hecho* (done, made), *visto* (seen), *dicho* (said), *escrito* (written), *abierto* (opened).\n\nIn Colombia it has a narrow job: your life so far, with no date attached (*nunca*, *dos veces*), and things that haven't happened yet (*todavía no*). For something you did at a time, even today, keep the plain past: *Hoy fui al banco*.",
   "smallPrint": "Teachers call this the present perfect (*pretérito perfecto*), built from the verb *haber* and a past participle. In Spain it also covers things done today; in Latin America the plain past does that.",
   "soundTip": "The *h* is silent, as always in Spanish. *He* sounds like the *e* in *bet*, and *ha* is just *ah*.",
   "readAndPick": [
-    { "es": "Nunca ha montado a caballo.", "options": ["I've never ridden a horse.", "She's never ridden a horse.", "We've never ridden a horse."], "answer": 1 },
-    { "es": "¿Has visto a Simón?", "options": ["Have you seen Simón?", "Has she seen Simón?", "Have we seen Simón?"], "answer": 0 },
-    { "es": "Hemos estado en Medellín dos veces.", "options": ["They've been to Medellín twice.", "I've been to Medellín twice.", "We've been to Medellín twice."], "answer": 2 },
-    { "es": "Nunca he comido ajiaco.", "options": ["I never eat ajiaco.", "I've never eaten ajiaco."], "answer": 1 },
-    { "es": "Nunca como ajiaco.", "options": ["I never eat ajiaco.", "I've never eaten ajiaco."], "answer": 0 },
-    { "es": "Todavía no han leído el contrato.", "options": ["They haven't read the contract yet.", "I haven't read the contract yet.", "You haven't read the contract yet."], "answer": 0 },
-    { "es": "¿Ustedes han estado en Leticia?", "options": ["Has he been to Leticia?", "Have we been to Leticia?", "Have you all been to Leticia?"], "answer": 2 },
-    { "es": "Tomás todavía no ha hecho el café.", "options": ["I haven't made the coffee yet.", "Tomás hasn't made the coffee yet.", "We haven't made the coffee yet."], "answer": 1 },
-    { "es": "Nunca he dicho eso.", "options": ["I've never said that.", "He's never said that.", "You've never said that."], "answer": 0 }
+    {
+      "es": "Nunca ha montado a caballo.",
+      "options": [
+        "I've never ridden a horse.",
+        "She's never ridden a horse.",
+        "They've never ridden a horse."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Has visto a Simón?",
+      "options": [
+        "Have you seen Simón?",
+        "Has she seen Simón?",
+        "Have we seen Simón?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hemos estado en Medellín dos veces.",
+      "options": [
+        "They've been to Medellín twice.",
+        "I've been to Medellín twice.",
+        "We've been to Medellín twice."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Nunca he comido ajiaco.",
+      "options": [
+        "I never eat ajiaco.",
+        "I've never eaten ajiaco."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nunca como ajiaco.",
+      "options": [
+        "I never eat ajiaco.",
+        "I've never eaten ajiaco."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Todavía no han leído el contrato.",
+      "options": [
+        "They haven't read the contract yet.",
+        "I haven't read the contract yet.",
+        "You haven't read the contract yet."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Ustedes han estado en Leticia?",
+      "options": [
+        "Has he been to Leticia?",
+        "Have we been to Leticia?",
+        "Have you all been to Leticia?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Todavía no ha hecho el café.",
+      "options": [
+        "I haven't made the coffee yet.",
+        "He hasn't made the coffee yet.",
+        "We haven't made the coffee yet."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nunca he dicho eso.",
+      "options": [
+        "I've never said that.",
+        "He's never said that.",
+        "You've never said that."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *Nunca ___ montado a caballo.* (*he* or *ha*) I've never ridden a horse.", "answer": "Nunca he montado a caballo.", "accept": [], "why": "I have is *he*; *ha* is he or she." },
-    { "prompt": "Pick and type the whole sentence: *¿___ estado en Cartagena?* (*Has* or *Ha*) Asking a friend.", "answer": "¿Has estado en Cartagena?", "accept": [], "why": "To a friend, you have is *has*." },
-    { "prompt": "Pick and type the whole sentence: *Todavía no he ___ el contrato.* (*leído* or *leí*) I haven't read the contract yet.", "answer": "Todavía no he leído el contrato.", "accept": [], "why": "After *he* comes the form ending in *-ido*, never the plain past." },
-    { "prompt": "Say: We've been to Medellín twice.", "answer": "Hemos estado en Medellín dos veces.", "accept": ["Hemos estado dos veces en Medellín."], "why": "We have is *hemos*, and *estar* becomes *estado*." },
-    { "prompt": "Say: I've never eaten ajiaco.", "answer": "Nunca he comido ajiaco.", "accept": ["No he comido nunca ajiaco.", "No he comido ajiaco nunca."], "why": "*Comer* is an *-er* verb, so its past form is *comido*." },
-    { "prompt": "Ask Don Hernando, politely: Have you been to Cartagena?", "answer": "¿Usted ha estado en Cartagena?", "accept": ["¿Ha estado en Cartagena?", "¿Ha estado usted en Cartagena?"], "why": "With *usted*, the helper is *ha*, the same as for he or she." },
-    { "prompt": "Make it about Vale and Hernando: *Nunca he estado en Leticia.*", "answer": "Vale y Hernando nunca han estado en Leticia.", "accept": [], "why": "Two people means they, so *he* becomes *han*." },
-    { "prompt": "Turn it into not yet: *Hice el café.*", "answer": "Todavía no he hecho el café.", "accept": [], "why": "Not yet takes *todavía no* with *he*, and *hacer* turns into *hecho*." }
+    {
+      "prompt": "Pick and type the whole sentence: *Nunca ___ montado a caballo.* (*he* or *ha*) I've never ridden a horse.",
+      "answer": "Nunca he montado a caballo.",
+      "accept": [],
+      "why": "I have is *he*; *ha* is he or she."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *¿___ estado en Cartagena?* (*Has* or *Ha*) Asking a friend.",
+      "answer": "¿Has estado en Cartagena?",
+      "accept": [],
+      "why": "To a friend, you have is *has*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Todavía no he ___ el contrato.* (*leído* or *leí*) I haven't read the contract yet.",
+      "answer": "Todavía no he leído el contrato.",
+      "accept": [],
+      "why": "After *he* comes the form ending in *-ido*, never the plain past."
+    },
+    {
+      "prompt": "Say: We've been to Medellín twice.",
+      "answer": "Hemos estado en Medellín dos veces.",
+      "accept": [
+        "Hemos estado dos veces en Medellín."
+      ],
+      "why": "We have is *hemos*, and *estar* becomes *estado*."
+    },
+    {
+      "prompt": "Say: I've never eaten ajiaco.",
+      "answer": "Nunca he comido ajiaco.",
+      "accept": [
+        "No he comido nunca ajiaco.",
+        "No he comido ajiaco nunca."
+      ],
+      "why": "*Comer* is an *-er* verb, so its past form is *comido*."
+    },
+    {
+      "prompt": "Ask Don Hernando, politely: Have you been to Cartagena?",
+      "answer": "¿Usted ha estado en Cartagena?",
+      "accept": [
+        "¿Ha estado en Cartagena?",
+        "¿Ha estado usted en Cartagena?"
+      ],
+      "why": "With *usted*, the helper is *ha*, the same as for he or she."
+    },
+    {
+      "prompt": "Make it about Vale and Hernando: *Nunca he estado en Leticia.*",
+      "answer": "Vale y Hernando nunca han estado en Leticia.",
+      "accept": [],
+      "why": "Two people means they, so *he* becomes *han*."
+    },
+    {
+      "prompt": "Turn it into not yet: *Hice el café.*",
+      "answer": "Todavía no he hecho el café.",
+      "accept": [],
+      "why": "Not yet takes *todavía no* with *he*, and *hacer* turns into *hecho*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Tengo estado en Cartagena.", "right": "He estado en Cartagena.", "why": "Close. This have isn't *tener*: Spanish uses *he*, *has*, *ha*." },
-    { "wrong": "Vale he estado en Medellín.", "right": "Vale ha estado en Medellín.", "why": "Almost. *He* is only for I; for Vale it's *ha*." },
-    { "wrong": "Nunca he hacido ajiaco.", "right": "Nunca he hecho ajiaco.", "why": "*Hacer* is one of the irregular ones: *hecho*." },
-    { "wrong": "Hoy he ido al banco.", "right": "Hoy fui al banco.", "why": "In Colombia a finished thing takes the plain past, even today. *He* is for ever, never and not yet." }
+    {
+      "wrong": "Tengo estado en Cartagena.",
+      "right": "He estado en Cartagena.",
+      "why": "Close. This have isn't *tener*: Spanish uses *he*, *has*, *ha*."
+    },
+    {
+      "wrong": "Vale he estado en Medellín.",
+      "right": "Vale ha estado en Medellín.",
+      "why": "Almost. *He* is only for I; for Vale it's *ha*."
+    },
+    {
+      "wrong": "Nunca he hacido ajiaco.",
+      "right": "Nunca he hecho ajiaco.",
+      "why": "*Hacer* is one of the irregular ones: *hecho*."
+    },
+    {
+      "wrong": "Hoy he ido al banco.",
+      "right": "Hoy fui al banco.",
+      "why": "In Colombia a finished thing takes the plain past, even today. *He* is for ever, never and not yet."
+    }
   ],
   "personal": "Write three true lines about your life: a place you've been (*he estado*), something you've never done (*nunca he*), and something you haven't done yet (*todavía no he*)."
 }

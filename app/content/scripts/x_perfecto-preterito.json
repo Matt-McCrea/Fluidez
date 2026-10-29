@@ -6,38 +6,175 @@
     "en": "Have you been to Cartagena?\nYes, I went last year."
   },
   "examples": [
-    { "es": "¿Has estado en Medellín?\nSí, dos veces.", "en": "Have you been to Medellín?\nYes, twice." },
-    { "es": "¿Cuándo fuiste?", "en": "When did you go? (to a friend)" },
-    { "es": "Fui en diciembre con mi familia.", "en": "I went in December with my family." },
-    { "es": "Todavía no he ido a Leticia.", "en": "I haven't been to Leticia yet." },
-    { "es": "He montado a caballo una vez.", "en": "I've ridden a horse once." },
-    { "es": "Monté a caballo el año pasado en Villa de Leyva.", "en": "I rode a horse last year in Villa de Leyva." }
+    {
+      "es": "¿Has estado en Medellín?\nSí, dos veces.",
+      "en": "Have you been to Medellín?\nYes, twice."
+    },
+    {
+      "es": "¿Cuándo fuiste?",
+      "en": "When did you go? (to a friend)"
+    },
+    {
+      "es": "Fui en diciembre con mi familia.",
+      "en": "I went in December with my family."
+    },
+    {
+      "es": "Todavía no he ido a Leticia.",
+      "en": "I haven't been to Leticia yet."
+    },
+    {
+      "es": "He montado a caballo una vez.",
+      "en": "I've ridden a horse once."
+    },
+    {
+      "es": "Monté a caballo el año pasado en Villa de Leyva.",
+      "en": "I rode a horse last year in Villa de Leyva."
+    }
   ],
   "rule": "Two different questions, two different forms.\n\nWhether, at any point in your life: *he*, *has*, *ha*. *¿Has estado en Cartagena?* *Nunca he ido a Leticia.*\n\nWhen, where, who with, how it was: the plain past. *¿Cuándo fuiste?* *Fui en diciembre.*\n\nSo a yes flips the conversation. *¿Has estado en Medellín?* *Sí, fui el año pasado.* The first line is about your life; the answer is about one trip.\n\nEnglish does the same: nobody says I've been there last year. Spanish is just as strict. A finished time (*ayer*, *en 2019*, *el año pasado*, *en diciembre*) always means the plain past. Ever, never, twice, not yet: *he*.",
   "smallPrint": "Teachers call these the present perfect (*pretérito perfecto*) and the preterite (*pretérito indefinido*).",
   "readAndPick": [
-    { "es": "He estado en Cartagena.", "options": ["I've been to Cartagena.", "I went to Cartagena last year."], "answer": 0 },
-    { "es": "Fui a Cartagena el año pasado.", "options": ["I've been to Cartagena.", "I went to Cartagena last year."], "answer": 1 },
-    { "es": "¿Cuándo fuiste?", "options": ["Have you ever been?", "When did you go?", "When are you going?"], "answer": 1 },
-    { "es": "¿Has estado en Leticia?", "options": ["When did you go to Leticia?", "Have you been to Leticia?", "Are you in Leticia?"], "answer": 1 },
-    { "es": "Tomás ha estado en Medellín una vez.", "options": ["Tomás went to Medellín in March.", "Tomás is in Medellín.", "Tomás has been to Medellín once."], "answer": 2 },
-    { "es": "Tomás fue a Medellín en marzo.", "options": ["Tomás went to Medellín in March.", "Tomás has been to Medellín once.", "Tomás is going to Medellín in March."], "answer": 0 },
-    { "es": "Todavía no he ido a Leticia.", "options": ["I didn't go to Leticia.", "I haven't been to Leticia yet."], "answer": 1 },
-    { "es": "Subí a Monserrate el domingo.", "options": ["I went up Monserrate on Sunday.", "I've never been up Monserrate."], "answer": 0 }
+    {
+      "es": "He estado en Cartagena.",
+      "options": [
+        "I've been to Cartagena.",
+        "I went to Cartagena last year."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Fui a Cartagena el año pasado.",
+      "options": [
+        "I've been to Cartagena.",
+        "I went to Cartagena last year."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cuándo fuiste?",
+      "options": [
+        "Have you ever been?",
+        "When did you go?",
+        "When are you going?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Has estado en Leticia?",
+      "options": [
+        "When did you go to Leticia?",
+        "Have you been to Leticia?",
+        "Are you in Leticia?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás ha estado en Medellín una vez.",
+      "options": [
+        "Tomás went to Medellín in March.",
+        "Tomás is in Medellín.",
+        "Tomás has been to Medellín once."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás fue a Medellín en marzo.",
+      "options": [
+        "Tomás went to Medellín in March.",
+        "Tomás has been to Medellín once.",
+        "Tomás is going to Medellín in March."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Todavía no he ido a Leticia.",
+      "options": [
+        "I didn't go to Leticia.",
+        "I haven't been to Leticia yet."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Subí a Monserrate el domingo.",
+      "options": [
+        "I went up Monserrate on Sunday.",
+        "I've never been up Monserrate."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *¿___ en Cartagena?* (*Has estado* or *Estuviste*) Asking a friend if she's ever been.", "answer": "¿Has estado en Cartagena?", "accept": [], "why": "Ever, at any point in her life: *has estado*." },
-    { "prompt": "Pick and type the whole sentence: *Sí, ___ el año pasado.* (*he ido* or *fui*) Yes, I went last year.", "answer": "Sí, fui el año pasado.", "accept": [], "why": "*El año pasado* is a finished time, so the plain past." },
-    { "prompt": "Your friend says she's been to Medellín. Ask her: When did you go?", "answer": "¿Cuándo fuiste?", "accept": [], "why": "Asking when is about one trip, so the plain past." },
-    { "prompt": "Say: I've been to Medellín twice.", "answer": "He estado en Medellín dos veces.", "accept": ["He estado dos veces en Medellín.", "He ido a Medellín dos veces."], "why": "Twice in your life, no date: *he estado*." },
-    { "prompt": "Say: I went to Medellín in December.", "answer": "Fui a Medellín en diciembre.", "accept": ["En diciembre fui a Medellín."], "why": "*En diciembre* pins the time, so *fui*." },
-    { "prompt": "Ask Don Hernando, politely: Have you been to Cartagena?", "answer": "¿Usted ha estado en Cartagena?", "accept": ["¿Ha estado en Cartagena?", "¿Ha estado usted en Cartagena?"], "why": "Ever, for *usted*: *ha estado*." },
-    { "prompt": "Add a date: *He montado a caballo.* Make it I rode a horse last year.", "answer": "Monté a caballo el año pasado.", "accept": ["El año pasado monté a caballo."], "why": "Once there's a finished time, *he montado* becomes the plain past *monté*." }
+    {
+      "prompt": "Pick and type the whole sentence: *¿___ en Cartagena?* (*Has estado* or *Estuviste*) Asking a friend if she's ever been.",
+      "answer": "¿Has estado en Cartagena?",
+      "accept": [],
+      "why": "Ever, at any point in her life: *has estado*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Sí, ___ el año pasado.* (*he ido* or *fui*) Yes, I went last year.",
+      "answer": "Sí, fui el año pasado.",
+      "accept": [],
+      "why": "*El año pasado* is a finished time, so the plain past."
+    },
+    {
+      "prompt": "Your friend says she's been to Medellín. Ask her: When did you go?",
+      "answer": "¿Cuándo fuiste?",
+      "accept": [
+        "¿Y cuándo fuiste?"
+      ],
+      "why": "Asking when is about one trip, so the plain past."
+    },
+    {
+      "prompt": "Say: I've been to Medellín twice.",
+      "answer": "He estado en Medellín dos veces.",
+      "accept": [
+        "He estado dos veces en Medellín.",
+        "He ido a Medellín dos veces."
+      ],
+      "why": "Twice in your life, no date: *he estado*."
+    },
+    {
+      "prompt": "Say: I went to Medellín in December.",
+      "answer": "Fui a Medellín en diciembre.",
+      "accept": [
+        "En diciembre fui a Medellín."
+      ],
+      "why": "*En diciembre* pins the time, so *fui*."
+    },
+    {
+      "prompt": "Ask Don Hernando, politely: Have you been to Cartagena?",
+      "answer": "¿Usted ha estado en Cartagena?",
+      "accept": [
+        "¿Ha estado en Cartagena?",
+        "¿Ha estado usted en Cartagena?"
+      ],
+      "why": "Ever, for *usted*: *ha estado*."
+    },
+    {
+      "prompt": "Add a date: *He montado a caballo.* Make it I rode a horse last year.",
+      "answer": "Monté a caballo el año pasado.",
+      "accept": [
+        "El año pasado monté a caballo."
+      ],
+      "why": "Once there's a finished time, *he montado* becomes the plain past *monté*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "He ido a Cartagena el año pasado.", "right": "Fui a Cartagena el año pasado.", "why": "Almost. A finished time like *el año pasado* takes the plain past, just as English drops I've." },
-    { "wrong": "¿Cuándo has ido?", "right": "¿Cuándo fuiste?", "why": "Asking when is about one trip, so use the plain past." },
-    { "wrong": "¿Has estado en Medellín?\nSí, he ido en diciembre.", "right": "¿Has estado en Medellín?\nSí, fui en diciembre.", "why": "The question is about your life, but the answer names a month: switch to the plain past." }
+    {
+      "wrong": "He ido a Cartagena el año pasado.",
+      "right": "Fui a Cartagena el año pasado.",
+      "why": "Almost. A finished time like *el año pasado* takes the plain past, just as English drops I've."
+    },
+    {
+      "wrong": "¿Cuándo has ido?",
+      "right": "¿Cuándo fuiste?",
+      "why": "Asking when is about one trip, so use the plain past."
+    },
+    {
+      "wrong": "¿Has estado en Medellín?\nSí, he ido en diciembre.",
+      "right": "¿Has estado en Medellín?\nSí, fui en diciembre.",
+      "why": "The question is about your life, but the answer names a month: switch to the plain past."
+    }
   ],
   "personal": "Pick a place you've been. Write one line saying you've been there (*he estado*), then one saying when you went (*fui*)."
 }

@@ -109,7 +109,8 @@
       "accept": [
         "No, no sé. ¿Cómo se llama usted?",
         "No sé. ¿Cómo se llama usted?",
-        "No, señor, no sé. ¿Cómo se llama?"
+        "No, señor, no sé. ¿Cómo se llama?",
+        "No, no lo sé. ¿Cómo se llama?"
       ],
       "require": [
         {

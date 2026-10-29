@@ -2,7 +2,7 @@
   "id": "ch020",
   "unit": "u08",
   "title": "Día treinta",
-  "text": "Tomás saca la maleta del armario. Mira la maleta un rato. Después la pone debajo de la cama.\nDía treinta, diez de la noche. Vale cuenta el dinero del mes, y Hernando y Simón la miran.\nHernando: ¿Y? ¿Cuánto es, mija?\nVale escribe el total en la pizarra: $2.130.000.\nVale: Dos millones ciento treinta mil pesos.\nHernando: ¡Ganamos! ¡Tomás perdió!\nVale: Tomás, perdiste. Ahora son trescientos sesenta y cinco días en el café, con Simón.\nTomás: Lo sé.\nVale: ¿Y estás contento?\nTomás: Sí. Estoy contento. ¿Es normal?\nHernando: Normal no es, Tomás.\nHernando: ¿Y el contrato de arriendo? ¿Lo leíste?\nTomás: Lo leí anoche. Es largo y aburrido.\nHernando: ¿Y el ajiaco?\nTomás: Lo comí el domingo, después de Monserrate. Y el tejo... lo perdí con un niño de diez años.\nHernando está cantando, y Vale está bailando con Simón.\nSimón tiene la tarjeta de Altamira en la boca.\nVale: Simón, ¿cómo se llama el señor de la tarjeta?\nSimón: ¡Altamira no! ¡De una!\nHernando: Rosa tenía un dicho: «El café es la casa de todos». Yo lo recuerdo bien.\nTomás mira la foto de Rosa en la vitrina. Después mira a Vale.\nTomás: Mañana a las cinco, ¿no?\nVale: A las cinco, Tomás. Día uno de trescientos sesenta y cinco.",
+  "text": "Tomás saca la maleta del armario. Mira la maleta un rato. Después la pone debajo de la cama.\nDía treinta, diez de la noche. Vale cuenta el dinero del mes, y Hernando y Simón la miran.\nHernando: ¿Y? ¿Cuánto es, mija?\nVale escribe el total en la pizarra: $2.130.000.\nVale: Dos millones ciento treinta mil pesos.\nHernando: ¡Ganamos! ¡Tomás perdió!\nVale: Tomás, perdiste. Ahora son trescientos sesenta y cinco días en el café, con Simón.\nTomás: Lo sé.\nVale: ¿Y estás contento?\nTomás: Sí. Estoy contento. ¿Es normal?\nHernando: Normal no es, Tomás.\nHernando: ¿Y el contrato de arriendo? ¿Lo leíste?\nTomás: Lo leí anoche. Es largo y aburrido.\nHernando: ¿Y el ajiaco?\nTomás: Lo comí el domingo, después de Monserrate. Y en el tejo... perdí con un niño de diez años.\nHernando está cantando, y Vale está bailando con Simón.\nSimón tiene la tarjeta de Altamira en la boca.\nVale: Simón, ¿cómo se llama el señor de la tarjeta?\nSimón: ¡Capuchino! ¡Capuchino!\nHernando: Rosa tenía un dicho: «El café es la casa de todos». Yo lo recuerdo bien.\nTomás mira la foto de Rosa en la vitrina. Después mira a Vale.\nTomás: Mañana a las cinco, ¿no?\nVale: A las cinco, Tomás. Día uno de trescientos sesenta y cinco.",
   "gloss": [
     {
       "es": "la pizarra",
@@ -21,8 +21,8 @@
       "en": "Normal it isn't, Tomás."
     },
     {
-      "es": "lo perdí con un niño de diez años",
-      "en": "I lost it to a ten year old boy"
+      "es": "perdí con un niño de diez años",
+      "en": "I lost to a ten year old boy"
     },
     {
       "es": "Rosa tenía un dicho",
@@ -114,7 +114,6 @@
   "requires": [
     "c:ayer-anoche",
     "c:bien-y-tu",
-    "c:claro-listo",
     "c:comi",
     "c:cuanto-cuesta",
     "c:no-cierto",

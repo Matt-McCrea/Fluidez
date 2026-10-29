@@ -300,8 +300,8 @@
   },
   {
     "id": "u08-0015",
-    "es": "Ya hemos visitado el cafetal.",
-    "en": "We've already visited the coffee plantation.",
+    "es": "Ya hemos visitado un cafetal.",
+    "en": "We've already visited a coffee plantation.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -346,22 +346,24 @@
   },
   {
     "id": "u08-0017",
-    "es": "Ustedes ya han estado en el aeropuerto nuevo.",
-    "en": "You all have already been to the new airport.",
+    "es": "Ustedes nunca han estado en el aeropuerto nuevo, ¿verdad?",
+    "en": "You all have never been to the new airport, right?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:perfecto-experience",
       "l:aeropuerto",
       "l:estar",
-      "l:nuevo"
+      "l:nuevo",
+      "l:verdad"
     ],
     "targets": [
       "g:perfecto-experience",
       "l:aeropuerto"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u08",
     "theme": "places I have been",
     "source": "gen"
@@ -748,18 +750,17 @@
   },
   {
     "id": "u08-0035",
-    "es": "El avión ya ha salido.",
+    "es": "El avión ya salió.",
     "en": "The plane has already left.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:avión",
       "l:salir"
     ],
     "targets": [
-      "g:perfecto-experience",
       "l:avión"
     ],
     "kind": "statement",
@@ -769,19 +770,18 @@
   },
   {
     "id": "u08-0036",
-    "es": "Los turistas ya han llegado al pueblo.",
+    "es": "Los turistas ya llegaron al pueblo.",
     "en": "The tourists have already arrived in the town.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:llegar",
       "l:pueblo",
       "l:turista"
     ],
     "targets": [
-      "g:perfecto-experience",
       "l:pueblo",
       "l:turista"
     ],
@@ -792,18 +792,17 @@
   },
   {
     "id": "u08-0037",
-    "es": "Ya he llegado al aeropuerto.",
-    "en": "I've already arrived at the airport.",
+    "es": "Ya salí del aeropuerto.",
+    "en": "I've already left the airport.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:aeropuerto",
-      "l:llegar"
+      "l:salir"
     ],
     "targets": [
-      "g:perfecto-experience",
       "l:aeropuerto"
     ],
     "kind": "statement",
@@ -813,18 +812,18 @@
   },
   {
     "id": "u08-0038",
-    "es": "Ya he terminado el trabajo.",
+    "es": "Ya terminé el trabajo.",
     "en": "I've already finished the work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:terminar",
       "l:trabajo"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -858,7 +857,7 @@
     "es": "Aún no he abierto la tienda.",
     "en": "I haven't opened the shop yet.",
     "accept": [
-      "Todavía no he abierto la tienda"
+      "Todavía no he abierto la tienda."
     ],
     "acceptEn": [],
     "requires": [
@@ -877,18 +876,18 @@
   },
   {
     "id": "u08-0041",
-    "es": "¿Ya has abierto la cafetería?",
+    "es": "¿Ya abriste la cafetería?",
     "en": "Have you opened the café yet? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:abrir",
       "l:cafetería"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:gender-articles"
     ],
     "kind": "question",
     "unit": "u08",
@@ -897,16 +896,16 @@
   },
   {
     "id": "u08-0042",
-    "es": "¿Ya ha llegado Hernando?",
+    "es": "¿Ya llegó Hernando?",
     "en": "Has Hernando arrived yet?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:llegar"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:preterite-ar"
     ],
     "kind": "question",
     "unit": "u08",
@@ -915,18 +914,18 @@
   },
   {
     "id": "u08-0043",
-    "es": "¿Ya han llamado los clientes?",
+    "es": "¿Ya llamaron los clientes?",
     "en": "Have the customers called yet?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:cliente",
       "l:llamar"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:gender-articles"
     ],
     "kind": "question",
     "unit": "u08",
@@ -1080,16 +1079,16 @@
   },
   {
     "id": "u08-0051",
-    "es": "Hernando ha conocido toda la ciudad en su taxi.",
-    "en": "Hernando has come to know the whole city from his taxi.",
+    "es": "Hernando ha visto toda la ciudad desde su taxi.",
+    "en": "Hernando has seen the whole city from his taxi.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:perfecto-experience",
       "l:ciudad",
-      "l:conocer",
       "l:taxi",
+      "l:ver",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1102,18 +1101,19 @@
   },
   {
     "id": "u08-0052",
-    "es": "Rosa ha viajado a la costa con Hernando.",
-    "en": "Rosa has traveled to the coast with Hernando.",
+    "es": "Rosa viajó a la costa con Hernando y su esposa.",
+    "en": "Rosa traveled to the coast with Hernando and his wife.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:costa",
-      "l:viajar"
+      "l:esposa",
+      "l:viajar",
+      "p:possessives-basic"
     ],
     "targets": [
-      "g:perfecto-experience",
       "l:costa",
       "l:viajar"
     ],
@@ -1210,20 +1210,19 @@
   },
   {
     "id": "u08-0057",
-    "es": "Hemos visto un caballo blanco en la finca.",
-    "en": "We've seen a white horse on the farm.",
+    "es": "Vimos un caballo blanco en la finca.",
+    "en": "We saw a white horse at the farm.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:blanco",
       "l:caballo",
       "l:finca",
       "l:ver"
     ],
     "targets": [
-      "g:perfecto-experience",
       "l:caballo",
       "l:finca"
     ],
@@ -1377,17 +1376,16 @@
   },
   {
     "id": "u08-0065",
-    "es": "El año pasado viajé a Cali.",
-    "en": "Last year I traveled to Cali.",
+    "es": "En marzo mis papás viajaron a Cali.",
+    "en": "In March my parents traveled to Cali.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:preterite-ar",
-      "l:año",
-      "l:pasado",
+      "l:marzo",
+      "l:papá",
       "l:viajar",
-      "p:time-pasado-que-viene"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:viajar"
@@ -1424,8 +1422,8 @@
   },
   {
     "id": "u08-0067",
-    "es": "Fuimos a la playa el domingo.",
-    "en": "We went to the beach on Sunday.",
+    "es": "El domingo fuimos a la playa con los niños.",
+    "en": "On Sunday we went to the beach with the kids.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1433,6 +1431,7 @@
       "g:preterite-ser-ir-hacer",
       "l:domingo",
       "l:ir",
+      "l:niño",
       "l:playa"
     ],
     "targets": [
@@ -1506,22 +1505,18 @@
   },
   {
     "id": "u08-0071",
-    "es": "Hernando ya ha ido a la costa muchas veces.",
-    "en": "Hernando has already been to the coast many times.",
+    "es": "Hernando nunca ha ido a la selva.",
+    "en": "Hernando has never been to the jungle.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:una-vez",
       "g:gender-articles",
       "g:perfecto-experience",
-      "l:costa",
       "l:ir",
-      "l:vez"
+      "l:selva"
     ],
     "targets": [
-      "c:una-vez",
-      "g:perfecto-experience",
-      "l:costa"
+      "g:perfecto-experience"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -1752,15 +1747,16 @@
   },
   {
     "id": "u08-0082",
-    "es": "¿Dónde han estado ustedes?",
-    "en": "Where have you all been?",
+    "es": "¿En qué países han estado ustedes?",
+    "en": "Which countries have you all been to?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:perfecto-experience",
-      "g:questions",
-      "l:dónde",
-      "l:estar"
+      "l:estar",
+      "l:país",
+      "l:qué",
+      "p:prep-questions-basic"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -1869,18 +1865,19 @@
   },
   {
     "id": "u08-0087",
-    "es": "¿Dónde has estado?\nEn el banco.",
-    "en": "Where have you been?\nAt the bank.",
+    "es": "¿Has estado en Bogotá antes?\nNo, es mi primera vez.",
+    "en": "Have you been to Bogotá before?\nNo, it's my first time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:has-estado",
-      "g:gender-articles",
       "g:perfecto-experience",
-      "g:questions",
-      "l:banco",
-      "l:dónde",
-      "l:estar"
+      "g:ser-identity",
+      "l:antes",
+      "l:estar",
+      "l:ser",
+      "l:vez",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -1959,17 +1956,17 @@
   },
   {
     "id": "u08-0091",
-    "es": "Hemos pasado una semana en la costa.\n¡Qué envidia!",
+    "es": "Pasamos una semana en la costa.\n¡Qué envidia!",
     "en": "We spent a week on the coast.\nI'm so jealous!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-envidia",
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:present-ar",
       "l:costa",
       "l:envidia",
-      "l:pasado",
+      "l:pasar",
       "l:qué",
       "l:semana"
     ],
@@ -2512,16 +2509,16 @@
   },
   {
     "id": "u08-0116",
-    "es": "Mi abuelo montó a caballo todos los domingos.",
-    "en": "My grandfather rode horses every Sunday.",
+    "es": "Mi abuelo montó a caballo hasta los ochenta años.",
+    "en": "My grandfather rode horses until he was eighty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:abuelo",
+      "l:año",
       "l:caballo",
-      "l:domingo",
       "l:montar",
       "p:possessives-basic"
     ],
@@ -2560,8 +2557,8 @@
   },
   {
     "id": "u08-0118",
-    "es": "He montado a caballo una vez, y fue difícil.",
-    "en": "I've ridden a horse once, and it was hard.",
+    "es": "He montado a caballo una vez y fue difícil.",
+    "en": "I've ridden a horse once and it was hard.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3049,16 +3046,16 @@
   },
   {
     "id": "u08-0139",
-    "es": "Hernando nunca en la vida ha perdido una cuenta.",
-    "en": "Hernando has never lost a bill in his life.",
+    "es": "Hernando nunca en la vida ha pagado un taxi.",
+    "en": "Hernando has never paid for a taxi in his life.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:nunca-en-la-vida",
       "g:gender-articles",
       "g:perfecto-experience",
-      "l:cuenta",
-      "l:perder",
+      "l:pagar",
+      "l:taxi",
       "l:vida"
     ],
     "targets": [
@@ -3116,16 +3113,16 @@
   },
   {
     "id": "u08-0142",
-    "es": "¿Ya jugaste fútbol aquí?\nNunca en la vida.",
-    "en": "Have you played soccer here yet?\nNever in my life.",
+    "es": "¿Has nadado en el río?\nNunca en la vida.",
+    "en": "Have you swum in the river?\nNever in my life.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:nunca-en-la-vida",
-      "g:preterite-ar",
-      "l:aquí",
-      "l:fútbol",
-      "l:jugar",
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:nadar",
+      "l:río",
       "l:vida"
     ],
     "targets": [
@@ -3473,7 +3470,7 @@
   },
   {
     "id": "u08-0158",
-    "es": "Tengo miedo del avión.",
+    "es": "Tengo miedo de los aviones.",
     "en": "I'm afraid of planes.",
     "accept": [],
     "acceptEn": [],
@@ -3518,16 +3515,15 @@
   },
   {
     "id": "u08-0160",
-    "es": "Compré un hotel pequeño cerca del mar.",
-    "en": "I bought a small hotel near the sea.",
+    "es": "Encontré un hotel pequeño cerca del mar.",
+    "en": "I found a small hotel near the sea.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:compre-trabaje",
       "g:gender-articles",
       "g:preterite-ar",
       "l:cerca",
-      "l:comprar",
+      "l:encontrar",
       "l:hotel",
       "l:mar",
       "l:pequeño"
@@ -3632,16 +3628,16 @@
   },
   {
     "id": "u08-0165",
-    "es": "Hemos pasado tres noches en el hotel.",
-    "en": "We've spent three nights at the hotel.",
+    "es": "Pasamos tres noches en el hotel.",
+    "en": "We spent three nights at the hotel.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:present-ar",
       "l:hotel",
       "l:noche",
-      "l:pasado"
+      "l:pasar"
     ],
     "targets": [
       "l:hotel"
@@ -3676,18 +3672,17 @@
   },
   {
     "id": "u08-0167",
-    "es": "Ya he pagado el hotel.",
-    "en": "I've already paid for the hotel.",
+    "es": "Ya pagamos el hotel.",
+    "en": "We've already paid for the hotel.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:present-ar",
       "l:hotel",
       "l:pagar"
     ],
     "targets": [
-      "g:perfecto-experience",
       "l:hotel"
     ],
     "kind": "statement",
@@ -3741,22 +3736,18 @@
   },
   {
     "id": "u08-0170",
-    "es": "No tengo ni idea. El hotel no está en esta calle.",
-    "en": "I haven't got a clue. The hotel isn't on this street.",
+    "es": "¿El hotel? Ni idea, no conozco el barrio.",
+    "en": "The hotel? No idea, I don't know the neighborhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ni-idea",
-      "c:tengo",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:yo-irregular",
-      "l:calle",
-      "l:estar",
+      "l:barrio",
+      "l:conocer",
       "l:hotel",
-      "l:idea",
-      "l:tener",
-      "p:demonstratives-basic"
+      "l:idea"
     ],
     "targets": [
       "c:ni-idea",
@@ -3796,22 +3787,19 @@
   },
   {
     "id": "u08-0172",
-    "es": "No tengo ni idea. Mi celular está en la casa.",
-    "en": "I've got no idea. My phone is at home.",
+    "es": "¿La hora? Ni idea, no tengo celular.",
+    "en": "The time? No idea, I don't have a phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ni-idea",
       "c:tengo",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:yo-irregular",
-      "l:casa",
       "l:celular",
-      "l:estar",
+      "l:hora",
       "l:idea",
-      "l:tener",
-      "p:possessives-basic"
+      "l:tener"
     ],
     "targets": [
       "c:ni-idea",
@@ -3957,7 +3945,7 @@
   {
     "id": "u08-0178",
     "es": "Es buena idea viajar en bus.",
-    "en": "It's a very good idea to travel by bus.",
+    "en": "It's a good idea to travel by bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4049,17 +4037,16 @@
   },
   {
     "id": "u08-0182",
-    "es": "¿Qué idea tienes para el viaje?",
-    "en": "What idea do you have for the trip? (to a friend)",
+    "es": "¿Tienes alguna idea para el viaje?",
+    "en": "Do you have an idea for the trip? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
-      "g:questions",
+      "g:indefinites",
       "g:stem-boot",
       "l:idea",
-      "l:qué",
       "l:tener",
       "l:viaje",
       "p:para-inf"
@@ -4293,17 +4280,17 @@
   },
   {
     "id": "u08-0192",
-    "es": "Mis vacaciones son en julio.\n¡Qué envidia!",
-    "en": "My vacation is in July.\nI'm so jealous!",
+    "es": "Mañana empiezan mis vacaciones.\n¡Qué envidia!",
+    "en": "My vacation starts tomorrow.\nI'm so jealous!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-envidia",
-      "g:ser-identity",
+      "g:stem-boot",
+      "l:empezar",
       "l:envidia",
-      "l:julio",
+      "l:mañana",
       "l:qué",
-      "l:ser",
       "l:vacación",
       "p:possessives-basic"
     ],
@@ -4981,17 +4968,16 @@
   },
   {
     "id": "u08-0222",
-    "es": "Estoy viendo una película con Hernando.",
-    "en": "I'm watching a movie with Hernando.",
+    "es": "Estoy hablando de fútbol con Hernando.",
+    "en": "I'm talking about soccer with Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-gerund",
       "g:estar-location-states",
-      "g:gender-articles",
       "l:estar",
-      "l:película",
-      "l:ver"
+      "l:fútbol",
+      "l:hablar"
     ],
     "targets": [
       "g:estar-gerund"
@@ -5162,8 +5148,8 @@
   },
   {
     "id": "u08-0230",
-    "es": "Está bajando el precio del avión.",
-    "en": "The price of the plane ticket is going down.",
+    "es": "El avión está bajando.",
+    "en": "The plane is coming down.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5172,8 +5158,7 @@
       "g:gender-articles",
       "l:avión",
       "l:bajar",
-      "l:estar",
-      "l:precio"
+      "l:estar"
     ],
     "targets": [
       "g:estar-gerund",
@@ -5255,7 +5240,7 @@
   {
     "id": "u08-0234",
     "es": "No estoy entendiendo nada.",
-    "en": "I don't understand anything.",
+    "en": "I'm not understanding anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5965,8 +5950,8 @@
   },
   {
     "id": "u08-0266",
-    "es": "¿Contestas el celular?\nNo, estoy trabajando.",
-    "en": "Are you answering the phone?\nNo, I'm working.",
+    "es": "¿Me ayudas un momento?\nAhora no, estoy cocinando.",
+    "en": "Can you help me for a moment?\nNot now, I'm cooking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5974,10 +5959,12 @@
       "g:estar-location-states",
       "g:gender-articles",
       "g:present-ar",
-      "l:celular",
-      "l:contestar",
+      "l:ahora",
+      "l:ayudar",
+      "l:cocinar",
       "l:estar",
-      "l:trabajar"
+      "l:momento",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:estar-gerund"
@@ -5990,7 +5977,7 @@
   {
     "id": "u08-0267",
     "es": "¿Dónde estás?\nEstoy llegando.",
-    "en": "Where are you?\nI'm arriving.",
+    "en": "Where are you?\nI'm just arriving.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6327,17 +6314,19 @@
   },
   {
     "id": "u08-0281",
-    "es": "Tomás está preguntando el precio del contrato.",
-    "en": "Tomás is asking the price of the contract.",
+    "es": "Tomás está preguntando cuánto cuesta el arriendo.",
+    "en": "Tomás is asking how much the rent costs.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:cuanto-cuesta",
       "g:estar-gerund",
       "g:estar-location-states",
       "g:gender-articles",
-      "l:contrato",
+      "l:arriendo",
+      "l:costar",
+      "l:cuánto",
       "l:estar",
-      "l:precio",
       "l:preguntar"
     ],
     "targets": [
@@ -6476,8 +6465,8 @@
   },
   {
     "id": "u08-0287",
-    "es": "Estoy en la selva, y estoy muy cansado.",
-    "en": "I'm in the jungle, and I'm very tired.",
+    "es": "Estoy en la selva y estoy muy cansado.",
+    "en": "I'm in the jungle and I'm very tired.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6549,8 +6538,8 @@
   },
   {
     "id": "u08-0290",
-    "es": "Hay un río en la selva, y estamos nadando.",
-    "en": "There's a river in the jungle, and we're swimming.",
+    "es": "Hay un río en la selva y estamos nadando.",
+    "en": "There's a river in the jungle and we're swimming.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6791,22 +6780,22 @@
   },
   {
     "id": "u08-0300",
-    "es": "Hoy estoy durmiendo en el hotel.",
-    "en": "Today I'm sleeping at the hotel.",
+    "es": "Hoy estoy cocinando para toda la familia.",
+    "en": "Today I'm cooking for the whole family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-gerund",
       "g:estar-location-states",
       "g:gender-articles",
-      "l:dormir",
+      "l:cocinar",
       "l:estar",
-      "l:hotel",
-      "l:hoy"
+      "l:familia",
+      "l:hoy",
+      "p:para-inf"
     ],
     "targets": [
       "g:estar-gerund",
-      "l:hotel",
       "l:hoy"
     ],
     "kind": "statement",
@@ -7404,22 +7393,20 @@
   },
   {
     "id": "u08-0327",
-    "es": "Lo he buscado en la cocina, pero no está.",
-    "en": "I've looked for it in the kitchen, but it isn't there.",
+    "es": "Ya miré en la cocina, pero no está.",
+    "en": "I already looked in the kitchen, but it isn't there.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:perfecto-experience",
-      "l:buscar",
+      "g:preterite-ar",
       "l:cocina",
-      "l:estar"
+      "l:estar",
+      "l:mirar"
     ],
     "targets": [
-      "g:direct-objects",
-      "g:perfecto-experience"
+      "g:estar-location-states"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -7428,16 +7415,15 @@
   },
   {
     "id": "u08-0328",
-    "es": "La he buscado en toda la casa.",
-    "en": "I've looked for her all over the house.",
+    "es": "Todavía no la he encontrado.",
+    "en": "I haven't found her yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:todavia-no",
       "g:direct-objects",
-      "g:gender-articles",
       "g:perfecto-experience",
-      "l:buscar",
-      "l:casa"
+      "l:encontrar"
     ],
     "targets": [
       "g:direct-objects",
@@ -7450,19 +7436,18 @@
   },
   {
     "id": "u08-0329",
-    "es": "Los he llamado tres veces.",
-    "en": "I've called them three times.",
+    "es": "Los llamé tres veces.",
+    "en": "I called them three times.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:llamar",
       "l:vez"
     ],
     "targets": [
-      "g:direct-objects",
-      "g:perfecto-experience"
+      "g:direct-objects"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -7471,8 +7456,8 @@
   },
   {
     "id": "u08-0330",
-    "es": "Las he visto en el mercado.",
-    "en": "I've seen them at the market.",
+    "es": "Nunca las he visto en el mercado.",
+    "en": "I've never seen them at the market.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7646,18 +7631,17 @@
   },
   {
     "id": "u08-0338",
-    "es": "Ya lo he leído.",
+    "es": "Ya lo leí.",
     "en": "I've already read it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:leer"
     ],
     "targets": [
-      "g:direct-objects",
-      "g:perfecto-experience"
+      "g:direct-objects"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -7666,19 +7650,18 @@
   },
   {
     "id": "u08-0339",
-    "es": "Ya la he leído dos veces.",
+    "es": "Ya la leí dos veces.",
     "en": "I've already read it twice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:leer",
       "l:vez"
     ],
     "targets": [
-      "g:direct-objects",
-      "g:perfecto-experience"
+      "g:direct-objects"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -7687,19 +7670,18 @@
   },
   {
     "id": "u08-0340",
-    "es": "Ya los he visto, gracias.",
+    "es": "Ya los vi, gracias.",
     "en": "I've already seen them, thanks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:gracias-de-nada",
       "g:direct-objects",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:ver"
     ],
     "targets": [
-      "g:direct-objects",
-      "g:perfecto-experience"
+      "g:direct-objects"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -7708,18 +7690,18 @@
   },
   {
     "id": "u08-0341",
-    "es": "Ya las he comprado.",
+    "es": "Ya las compré.",
     "en": "I've already bought them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:compre-trabaje",
       "g:direct-objects",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:comprar"
     ],
     "targets": [
-      "g:direct-objects",
-      "g:perfecto-experience"
+      "g:direct-objects"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -7880,16 +7862,16 @@
   },
   {
     "id": "u08-0349",
-    "es": "¿Cuánto las pagaste?",
-    "en": "How much did you pay for them? (to a friend)",
+    "es": "¿Cuándo las compraste?",
+    "en": "When did you buy them? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:preterite-ar",
       "g:questions",
-      "l:cuánto",
-      "l:pagar"
+      "l:comprar",
+      "l:cuándo"
     ],
     "targets": [
       "g:direct-objects"
@@ -8215,18 +8197,17 @@
   },
   {
     "id": "u08-0365",
-    "es": "Las llevo las dos.",
-    "en": "I'll take both of them.",
+    "es": "Llevo las dos.",
+    "en": "I'll take both.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
       "l:llevar"
     ],
     "targets": [
-      "g:direct-objects"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -8667,7 +8648,7 @@
     "es": "Lo está haciendo Vale.",
     "en": "Vale is making it.",
     "accept": [
-      "Vale lo está haciendo"
+      "Vale lo está haciendo."
     ],
     "acceptEn": [],
     "requires": [
@@ -8689,7 +8670,7 @@
   {
     "id": "u08-0386",
     "es": "¿Lo estás viendo?",
-    "en": "Are you seeing it? (to a friend)",
+    "en": "Are you watching it? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9025,8 +9006,8 @@
   },
   {
     "id": "u08-0401",
-    "es": "¿Has pagado la cuenta?\nTodavía no la he pagado.",
-    "en": "Have you paid the bill?\nI haven't paid it yet.",
+    "es": "¿Ya pagaste la cuenta?\nTodavía no la he pagado.",
+    "en": "Have you paid the bill yet?\nI haven't paid it yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9034,6 +9015,7 @@
       "c:todavia-no",
       "g:direct-objects",
       "g:perfecto-experience",
+      "g:preterite-ar",
       "l:cuenta",
       "l:pagar"
     ],
@@ -9398,13 +9380,16 @@
   },
   {
     "id": "u08-0417",
-    "es": "Lo siento mucho.",
-    "en": "I'm very sorry.",
+    "es": "Lo siento, Hernando, llego tarde.",
+    "en": "I'm sorry, Hernando, I'm late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:sentido-pesame",
-      "l:sentir"
+      "c:lo-siento-pero-no-puedo",
+      "g:present-ar",
+      "l:llegar",
+      "l:sentir",
+      "l:tarde"
     ],
     "targets": [],
     "kind": "statement",
@@ -9517,7 +9502,7 @@
   {
     "id": "u08-0423",
     "es": "Lo oigo muy mal.",
-    "en": "I can hear him very badly.",
+    "en": "I can hardly hear him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9579,16 +9564,18 @@
   },
   {
     "id": "u08-0426",
-    "es": "Los entiendo mejor despacio.",
-    "en": "I understand them better slowly.",
+    "es": "Hablan muy rápido y no los entiendo.",
+    "en": "They talk very fast and I don't understand them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
+      "g:present-ar",
       "g:stem-boot",
-      "l:despacio",
       "l:entender",
-      "l:mejor"
+      "l:hablar",
+      "l:rápido",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:direct-objects"
@@ -9600,16 +9587,17 @@
   },
   {
     "id": "u08-0427",
-    "es": "Las entiendo mejor escritas.",
-    "en": "I understand them better written down.",
+    "es": "Las escribo dos veces y las recuerdo.",
+    "en": "I write them twice and I remember them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:stem-boot",
-      "l:entender",
+      "g:gender-articles",
+      "g:present-er-ir",
       "l:escribir",
-      "l:mejor"
+      "l:recuerdo",
+      "l:vez"
     ],
     "targets": [
       "g:direct-objects"
@@ -10178,7 +10166,7 @@
   {
     "id": "u08-0456",
     "es": "Ustedes saben nadar muy bien.",
-    "en": "You all swim very well.",
+    "en": "You all can swim very well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10265,7 +10253,7 @@
   {
     "id": "u08-0460",
     "es": "No sabemos hablar inglés muy bien.",
-    "en": "We don't speak English very well.",
+    "en": "We can't speak English very well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10344,12 +10332,11 @@
   },
   {
     "id": "u08-0464",
-    "es": "¿Sabes cocinar?\nNo, no sé nada.",
-    "en": "Can you cook?\nNo, I know nothing.",
+    "es": "¿Sabes cocinar?\nNo, no sé cocinar nada.",
+    "en": "Can you cook?\nNo, I can't cook anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-hay-nada",
       "c:no-se",
       "g:negation-words",
       "g:present-er-ir",
@@ -10383,13 +10370,12 @@
   },
   {
     "id": "u08-0466",
-    "es": "¿Quién sabe hacer ajiaco?\nLo sabe hacer Hernando.",
-    "en": "Who knows how to make ajiaco?\nHernando knows how.",
+    "es": "¿Quién sabe hacer ajiaco?\nHernando sabe.",
+    "en": "Who knows how to make ajiaco?\nHernando does.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quien-sabe",
-      "g:direct-objects",
       "g:present-er-ir",
       "l:ajiaco",
       "l:hacer",
@@ -10397,7 +10383,7 @@
       "l:saber"
     ],
     "targets": [
-      "g:direct-objects"
+      "c:quien-sabe"
     ],
     "kind": "dialogue",
     "unit": "u08",
@@ -10406,18 +10392,16 @@
   },
   {
     "id": "u08-0467",
-    "es": "¿Sabes dónde está el hotel?\nNo sé, ni idea.",
-    "en": "Do you know where the hotel is?\nI don't know, no idea.",
+    "es": "¿Sabes dónde está el hotel?\nNi idea.",
+    "en": "Do you know where the hotel is?\nNo idea.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:donde-esta",
       "c:ni-idea",
-      "c:no-se",
       "g:estar-location-states",
       "g:gender-articles",
       "g:present-er-ir",
-      "g:yo-irregular",
       "l:dónde",
       "l:estar",
       "l:hotel",
@@ -10436,19 +10420,19 @@
   },
   {
     "id": "u08-0468",
-    "es": "No sé dónde está mi celular.",
-    "en": "I don't know where my phone is.",
+    "es": "Mi celular no está aquí. ¿Lo tienes tú?",
+    "en": "My phone isn't here. Do you have it? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:donde-esta",
-      "c:no-se",
+      "c:tienes",
+      "g:direct-objects",
       "g:estar-location-states",
-      "g:yo-irregular",
+      "g:stem-boot",
+      "l:aquí",
       "l:celular",
-      "l:dónde",
       "l:estar",
-      "l:saber",
+      "l:tener",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -10525,18 +10509,17 @@
   },
   {
     "id": "u08-0472",
-    "es": "No sé cómo se llama.",
-    "en": "I don't know what he's called.",
+    "es": "No recuerdo cómo se llama.",
+    "en": "I don't remember what he's called.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
       "c:se-llama",
       "g:reflexive-routine",
-      "g:yo-irregular",
+      "g:stem-boot",
       "l:cómo",
       "l:llamarse",
-      "l:saber"
+      "l:recordar"
     ],
     "targets": [
       "l:llamarse"
@@ -10727,15 +10710,16 @@
   },
   {
     "id": "u08-0482",
-    "es": "Mariana sabe mucho de música.",
-    "en": "Mariana knows a lot about music.",
+    "es": "Mariana sabe los nombres de todos los vecinos.",
+    "en": "Mariana knows all the neighbors' names.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-er-ir",
-      "l:música",
+      "l:nombre",
       "l:saber",
-      "p:quantifiers-basic"
+      "l:vecino"
     ],
     "targets": [],
     "kind": "statement",
@@ -10786,7 +10770,7 @@
   {
     "id": "u08-0485",
     "es": "No conozco la costa.",
-    "en": "I don't know the coast.",
+    "en": "I haven't been to the coast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10806,7 +10790,7 @@
   {
     "id": "u08-0486",
     "es": "Todavía no conozco la selva.",
-    "en": "I don't know the jungle yet.",
+    "en": "I haven't been to the jungle yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10843,15 +10827,17 @@
   },
   {
     "id": "u08-0488",
-    "es": "¿Conoces el café de Salento?",
-    "en": "Do you know the café in Salento? (to a friend)",
+    "es": "¿Conoces una panadería buena por aquí?",
+    "en": "Do you know a good bakery around here? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "l:café",
-      "l:conocer"
+      "l:aquí",
+      "l:buena",
+      "l:conocer",
+      "l:panadería"
     ],
     "targets": [],
     "kind": "question",
@@ -10899,14 +10885,17 @@
   },
   {
     "id": "u08-0491",
-    "es": "Conozco a Vale desde niño.",
-    "en": "I've known Vale since I was a boy.",
+    "es": "Conozco a mi mejor amigo desde niño.",
+    "en": "I've known my best friend since I was a boy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:yo-irregular",
+      "l:amigo",
       "l:conocer",
-      "l:niño"
+      "l:mejor",
+      "l:niño",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:niño"
@@ -10918,17 +10907,18 @@
   },
   {
     "id": "u08-0492",
-    "es": "Conozco a Mariana desde niño.",
-    "en": "I've known Mariana since I was a boy.",
+    "es": "Mariana conoce a todo el barrio.",
+    "en": "Mariana knows the whole neighborhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:yo-irregular",
-      "l:conocer",
-      "l:niño"
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:barrio",
+      "l:conocer"
     ],
     "targets": [
-      "l:niño"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -11118,20 +11108,19 @@
   },
   {
     "id": "u08-0502",
-    "es": "Mucho gusto, señor. Quiero conocer su casa.",
-    "en": "Pleased to meet you, sir. I'd like to see your home.",
+    "es": "Quiero conocer el pueblo de mi abuela.",
+    "en": "I want to see my grandmother's town.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:mucho-gusto",
       "c:quiero",
+      "g:gender-articles",
       "g:stem-boot",
       "g:verb-infinitive",
-      "l:casa",
+      "l:abuela",
       "l:conocer",
-      "l:gusto",
+      "l:pueblo",
       "l:querer",
-      "l:señor",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -11348,14 +11337,15 @@
   },
   {
     "id": "u08-0512",
-    "es": "Tengo ganas de un café.",
-    "en": "I feel like a coffee.",
+    "es": "Ahora mismo tengo ganas de un café.",
+    "en": "Right now I feel like a coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
       "g:gender-articles",
       "g:yo-irregular",
+      "l:ahora",
       "l:café",
       "l:ganas",
       "l:tener",
@@ -11371,15 +11361,18 @@
   },
   {
     "id": "u08-0513",
-    "es": "Tengo ganas de un helado de mango.",
-    "en": "I feel like a mango ice cream.",
+    "es": "Hace calor y Vale tiene ganas de un helado de mango.",
+    "en": "It's hot and Vale feels like a mango ice cream.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "c:tienes",
       "g:gender-articles",
-      "g:yo-irregular",
+      "g:present-er-ir",
+      "g:stem-boot",
+      "l:calor",
       "l:ganas",
+      "l:hacer",
       "l:helado",
       "l:mango",
       "l:tener",
@@ -11395,15 +11388,18 @@
   },
   {
     "id": "u08-0514",
-    "es": "Tengo ganas de dormir.",
-    "en": "I feel like sleeping.",
+    "es": "Son las tres y ya tengo ganas de dormir.",
+    "en": "It's three o'clock and I already feel like sleeping.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
+      "g:gender-articles",
+      "g:ser-identity",
       "g:yo-irregular",
       "l:dormir",
       "l:ganas",
+      "l:ser",
       "l:tener",
       "p:tener-ganas-de"
     ],
@@ -11417,16 +11413,19 @@
   },
   {
     "id": "u08-0515",
-    "es": "Tengo ganas de comer ajiaco.",
-    "en": "I feel like eating ajiaco.",
+    "es": "Los domingos siempre tengo ganas de comer ajiaco.",
+    "en": "On Sundays I always feel like eating ajiaco.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
+      "g:gender-articles",
       "g:yo-irregular",
       "l:ajiaco",
       "l:comer",
+      "l:domingo",
       "l:ganas",
+      "l:siempre",
       "l:tener",
       "p:tener-ganas-de"
     ],
@@ -11440,8 +11439,8 @@
   },
   {
     "id": "u08-0516",
-    "es": "Tengo ganas de bailar esta noche.",
-    "en": "I feel like dancing tonight.",
+    "es": "Esta noche tengo ganas de bailar.",
+    "en": "Tonight I feel like dancing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11464,17 +11463,21 @@
   },
   {
     "id": "u08-0517",
-    "es": "Tengo ganas de llamar a mi mamá.",
-    "en": "I feel like calling my mom.",
+    "es": "Hoy estoy triste y tengo ganas de llamar a mi mamá.",
+    "en": "Today I'm sad and I feel like calling my mom.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
+      "g:estar-location-states",
       "g:yo-irregular",
+      "l:estar",
       "l:ganas",
+      "l:hoy",
       "l:llamar",
       "l:mamá",
       "l:tener",
+      "l:triste",
       "p:possessives-basic",
       "p:tener-ganas-de"
     ],
@@ -11488,18 +11491,20 @@
   },
   {
     "id": "u08-0518",
-    "es": "Tengo ganas de ir a la playa.",
-    "en": "I feel like going to the beach.",
+    "es": "Mi hermana nunca tiene ganas de ir a la playa.",
+    "en": "My sister never feels like going to the beach.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "c:tienes",
       "g:gender-articles",
-      "g:yo-irregular",
+      "g:stem-boot",
       "l:ganas",
+      "l:hermana",
       "l:ir",
       "l:playa",
       "l:tener",
+      "p:possessives-basic",
       "p:tener-ganas-de"
     ],
     "targets": [
@@ -11967,24 +11972,22 @@
   },
   {
     "id": "u08-0538",
-    "es": "¿Tienes ganas de cocinar?\nNo, no tengo ni idea.",
-    "en": "Do you feel like cooking?\nNo, I've got no idea what to make.",
+    "es": "¿Tienes ganas de cocinar?\nGanas sí, ideas no.",
+    "en": "Do you feel like cooking?\nFeel like it, yes. Ideas, no.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ni-idea",
-      "c:tengo",
       "c:tienes",
+      "g:present-ar",
       "g:stem-boot",
-      "g:yo-irregular",
       "l:cocinar",
+      "l:ganar",
       "l:ganas",
       "l:idea",
       "l:tener",
       "p:tener-ganas-de"
     ],
     "targets": [
-      "c:ni-idea",
       "l:idea",
       "p:tener-ganas-de"
     ],
@@ -12327,20 +12330,20 @@
   },
   {
     "id": "u08-0554",
-    "es": "Es importante preguntar el precio.",
-    "en": "It's important to ask the price.",
+    "es": "En el mercado es normal preguntar el precio.",
+    "en": "At the market it's normal to ask the price.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:importante",
+      "l:mercado",
+      "l:normal",
       "l:precio",
       "l:preguntar",
       "l:ser"
     ],
     "targets": [
-      "l:importante",
       "l:preguntar"
     ],
     "kind": "statement",
@@ -12350,8 +12353,8 @@
   },
   {
     "id": "u08-0555",
-    "es": "Es importante hablar con los vecinos.",
-    "en": "It's important to talk with the neighbors.",
+    "es": "Para Mariana, es importante hablar con los vecinos.",
+    "en": "For Mariana, it's important to talk with the neighbors.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12360,7 +12363,8 @@
       "l:hablar",
       "l:importante",
       "l:ser",
-      "l:vecino"
+      "l:vecino",
+      "p:para-inf"
     ],
     "targets": [
       "l:importante"
@@ -12613,14 +12617,15 @@
   },
   {
     "id": "u08-0568",
-    "es": "Es cansado caminar de noche.",
-    "en": "It's tiring to walk at night.",
+    "es": "No es buena idea caminar solo de noche.",
+    "en": "It's not a good idea to walk alone at night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
+      "l:buena",
       "l:caminar",
-      "l:cansado",
+      "l:idea",
       "l:noche",
       "l:ser"
     ],
@@ -12694,18 +12699,20 @@
   },
   {
     "id": "u08-0572",
-    "es": "Es tranquilo vivir en un pueblo.",
-    "en": "It's peaceful to live in a town.",
+    "es": "Vivir en un pueblo es muy tranquilo.",
+    "en": "Living in a town is very peaceful.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tranquilo",
       "g:gender-articles",
       "g:ser-identity",
+      "g:verb-infinitive",
       "l:pueblo",
       "l:ser",
       "l:tranquilo",
-      "l:vivir"
+      "l:vivir",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:pueblo"
@@ -12740,7 +12747,7 @@
   {
     "id": "u08-0574",
     "es": "Es interesante conocer otros países.",
-    "en": "It's interesting to see other countries.",
+    "en": "It's interesting to get to know other countries.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12776,19 +12783,21 @@
   },
   {
     "id": "u08-0576",
-    "es": "Es importante pagar hoy.",
-    "en": "It's important to pay today.",
+    "es": "Pagar el arriendo a tiempo es importante.",
+    "en": "Paying the rent on time is important.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
-      "l:hoy",
+      "g:verb-infinitive",
+      "l:arriendo",
       "l:importante",
       "l:pagar",
-      "l:ser"
+      "l:ser",
+      "l:tiempo"
     ],
     "targets": [
-      "l:hoy",
       "l:importante"
     ],
     "kind": "statement",
@@ -12859,17 +12868,18 @@
   },
   {
     "id": "u08-0580",
-    "es": "Es triste vender la cafetería de Rosa.",
-    "en": "It's sad to sell Rosa's café.",
+    "es": "Es triste ver la cafetería de Rosa sin clientes.",
+    "en": "It's sad to see Rosa's café without customers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:cafetería",
+      "l:cliente",
       "l:ser",
       "l:triste",
-      "l:vender"
+      "l:ver"
     ],
     "targets": [],
     "kind": "statement",
@@ -13172,13 +13182,15 @@
   },
   {
     "id": "u08-0595",
-    "es": "Sí, vale la pena visitar la finca.",
-    "en": "Yes, it's worth visiting the farm.",
+    "es": "Visitar una finca de café vale la pena.",
+    "en": "Visiting a coffee farm is worth it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:vale-la-pena",
       "g:gender-articles",
+      "g:verb-infinitive",
+      "l:café",
       "l:finca",
       "l:pena",
       "l:valer",
@@ -13404,15 +13416,22 @@
   },
   {
     "id": "u08-0605",
-    "es": "Sí, vale la pena subir a Monserrate.",
-    "en": "Yes, it's worth climbing Monserrate.",
+    "es": "Subir a Monserrate vale la pena: el paisaje es muy bonito.",
+    "en": "Climbing Monserrate is worth it: the view is beautiful.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:vale-la-pena",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:bonito",
+      "l:paisaje",
       "l:pena",
+      "l:ser",
       "l:subir",
-      "l:valer"
+      "l:valer",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "c:vale-la-pena",
@@ -13632,17 +13651,19 @@
   },
   {
     "id": "u08-0615",
-    "es": "Los turistas llevan una maleta grande.",
-    "en": "The tourists are carrying a big suitcase.",
+    "es": "Los turistas llevan maletas muy grandes.",
+    "en": "The tourists are carrying very big suitcases.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:present-ar",
       "l:grande",
       "l:llevar",
       "l:maleta",
-      "l:turista"
+      "l:turista",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:maleta",
@@ -13985,18 +14006,18 @@
   },
   {
     "id": "u08-0630",
-    "es": "Esta vacación quiero descansar.",
+    "es": "En estas vacaciones quiero descansar.",
     "en": "This vacation I want to rest.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quiero",
+      "g:demonstratives",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:descansar",
       "l:querer",
-      "l:vacación",
-      "p:demonstratives-basic"
+      "l:vacación"
     ],
     "targets": [
       "l:vacación"
@@ -14311,22 +14332,21 @@
   },
   {
     "id": "u08-0644",
-    "es": "La montaña está muy alta hoy.",
-    "en": "The mountain looks very high today.",
+    "es": "Desde aquí, la montaña parece muy alta.",
+    "en": "From here, the mountain looks very high.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:present-er-ir",
       "l:alto",
-      "l:estar",
-      "l:hoy",
+      "l:aquí",
       "l:montaña",
+      "l:parecer",
       "p:quantifiers-basic"
     ],
     "targets": [
-      "l:hoy",
       "l:montaña"
     ],
     "kind": "statement",
@@ -14568,15 +14588,15 @@
   },
   {
     "id": "u08-0655",
-    "es": "Un pueblo pequeño está cerca del río.",
-    "en": "A small town is near the river.",
+    "es": "Cerca del río hay un pueblo pequeño.",
+    "en": "Near the river there's a small town.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
+      "c:hay",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "l:cerca",
-      "l:estar",
       "l:pequeño",
       "l:pueblo",
       "l:río"
@@ -15119,18 +15139,17 @@
   },
   {
     "id": "u08-0679",
-    "es": "La costa tiene demasiado calor.",
-    "en": "The coast has too much heat.",
+    "es": "En la costa hace demasiado calor.",
+    "en": "On the coast it's too hot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:gender-articles",
+      "g:present-er-ir",
       "g:quantifiers",
-      "g:stem-boot",
       "l:calor",
       "l:costa",
-      "l:tener"
+      "l:hacer"
     ],
     "targets": [
       "g:quantifiers",
@@ -15541,16 +15560,21 @@
   },
   {
     "id": "u08-0698",
-    "es": "Mi familia vive allí.",
-    "en": "My family lives there.",
+    "es": "¿Ves esa casa azul? Allí trabajé dos años.",
+    "en": "See that blue house? I worked there for two years. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:compre-trabaje",
+      "g:demonstratives",
       "g:present-er-ir",
+      "g:preterite-ar",
       "l:allí",
-      "l:familia",
-      "l:vivir",
-      "p:possessives-basic"
+      "l:azul",
+      "l:año",
+      "l:casa",
+      "l:trabajar",
+      "l:ver"
     ],
     "targets": [
       "l:allí"
@@ -15709,18 +15733,19 @@
   },
   {
     "id": "u08-0705",
-    "es": "Tengo ganas de probar algo nuevo.",
-    "en": "I feel like trying something new.",
+    "es": "Tengo ganas de probar la comida de la costa.",
+    "en": "I feel like trying the food from the coast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
+      "g:gender-articles",
       "g:yo-irregular",
+      "l:comida",
+      "l:costa",
       "l:ganas",
-      "l:nuevo",
       "l:probarse",
       "l:tener",
-      "p:indefinites-basic",
       "p:tener-ganas-de"
     ],
     "targets": [
@@ -15733,24 +15758,22 @@
   },
   {
     "id": "u08-0706",
-    "es": "Mi abuela tuvo una experiencia muy triste en la selva.",
-    "en": "My grandmother had a very sad experience in the jungle.",
+    "es": "Bucear en la isla fue una experiencia genial.",
+    "en": "Diving at the island was a great experience.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-irregular-strong",
-      "l:abuela",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:bucear",
       "l:experiencia",
-      "l:selva",
-      "l:tener",
-      "l:triste",
-      "p:possessives-basic",
-      "p:quantifiers-basic"
+      "l:genial",
+      "l:isla",
+      "l:ser"
     ],
     "targets": [
-      "l:experiencia",
-      "l:selva"
+      "l:experiencia"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -15760,7 +15783,7 @@
   {
     "id": "u08-0707",
     "es": "Fue una experiencia muy bonita.",
-    "en": "It was a very pretty experience.",
+    "en": "It was a really lovely experience.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15807,8 +15830,8 @@
   },
   {
     "id": "u08-0709",
-    "es": "Viajar solo es una experiencia grande.",
-    "en": "Traveling alone is a big experience.",
+    "es": "Viajar solo es una gran experiencia.",
+    "en": "Traveling alone is a great experience.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15816,7 +15839,7 @@
       "g:ser-identity",
       "g:verb-infinitive",
       "l:experiencia",
-      "l:grande",
+      "l:gran",
       "l:ser",
       "l:viajar"
     ],
@@ -15922,23 +15945,24 @@
   },
   {
     "id": "u08-0714",
-    "es": "Viajar es mi experiencia favorita.",
-    "en": "Traveling is my favorite experience.",
+    "es": "Mi experiencia favorita fue un viaje a la selva.",
+    "en": "My favorite experience was a trip to the jungle.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "g:verb-infinitive",
       "l:experiencia",
       "l:favorito",
+      "l:selva",
       "l:ser",
-      "l:viajar",
+      "l:viaje",
       "p:possessives-basic"
     ],
     "targets": [
-      "l:experiencia",
-      "l:viajar"
+      "l:experiencia"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -16166,15 +16190,16 @@
   },
   {
     "id": "u08-0725",
-    "es": "Seguro, llega temprano.",
-    "en": "Surely, he arrives early.",
+    "es": "Seguro llega tarde, como siempre.",
+    "en": "He's sure to arrive late, as always.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
       "l:llegar",
       "l:seguro",
-      "l:temprano"
+      "l:siempre",
+      "l:tarde"
     ],
     "targets": [
       "l:seguro"
@@ -16227,16 +16252,17 @@
   },
   {
     "id": "u08-0728",
-    "es": "Pregunto el precio y compro.",
-    "en": "I ask the price and I buy.",
+    "es": "Siempre pregunto el precio primero.",
+    "en": "I always ask the price first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:comprar",
       "l:precio",
-      "l:preguntar"
+      "l:preguntar",
+      "l:siempre",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "l:preguntar"
@@ -16293,14 +16319,14 @@
   },
   {
     "id": "u08-0731",
-    "es": "Tomás preguntó el precio del contrato.",
-    "en": "Tomás asked the price of the contract.",
+    "es": "Tomás preguntó el precio del arriendo.",
+    "en": "Tomás asked the price of the rent.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "l:contrato",
+      "l:arriendo",
       "l:precio",
       "l:preguntar"
     ],
@@ -16339,16 +16365,16 @@
   },
   {
     "id": "u08-0733",
-    "es": "Vale y Mariana forman un grupo pequeño.",
-    "en": "Vale and Mariana make a small group.",
+    "es": "Vale y Mariana forman un buen grupo.",
+    "en": "Vale and Mariana make a good group.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "l:buen",
       "l:formar",
-      "l:grupo",
-      "l:pequeño"
+      "l:grupo"
     ],
     "targets": [
       "l:formar"
@@ -16360,16 +16386,17 @@
   },
   {
     "id": "u08-0734",
-    "es": "Los vecinos forman un grupo grande.",
-    "en": "The neighbors make up a big group.",
+    "es": "Los vecinos quieren formar un grupo contra Altamira.",
+    "en": "The neighbors want to form a group against Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:formar",
-      "l:grande",
       "l:grupo",
+      "l:querer",
       "l:vecino"
     ],
     "targets": [
@@ -16443,7 +16470,7 @@
   {
     "id": "u08-0738",
     "es": "Tomás todavía no ha leído el contrato de la cafetería.",
-    "en": "Tomás hasn't read the lease for the premises yet.",
+    "en": "Tomás hasn't read the café's lease yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16486,16 +16513,14 @@
   },
   {
     "id": "u08-0740",
-    "es": "¿Nunca has jugado fútbol aquí?\nNo, y no tengo ganas.",
-    "en": "You've never played soccer here?\nNo, and I don't feel like it.",
+    "es": "¿Nunca has jugado tejo?\nNo, y no tengo ganas.",
+    "en": "You've never played tejo?\nNo, and I don't feel like it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
       "g:perfecto-experience",
       "g:yo-irregular",
-      "l:aquí",
-      "l:fútbol",
       "l:ganas",
       "l:jugar",
       "l:tener"
@@ -16555,12 +16580,11 @@
   },
   {
     "id": "u08-0743",
-    "es": "¿Has estado en Cartagena, Hernando?\nMuchas veces, Tomás.",
-    "en": "Have you been to Cartagena, Hernando?\nMany times, Tomás.",
+    "es": "¿Ha estado en Cartagena, don Hernando?\nUna vez, Tomás. Con Inés.",
+    "en": "Have you been to Cartagena, Don Hernando?\nOnce, Tomás. With Inés.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:has-estado",
       "c:una-vez",
       "g:perfecto-experience",
       "l:estar",
@@ -16600,8 +16624,8 @@
   },
   {
     "id": "u08-0745",
-    "es": "Hernando ha estado en Cartagena muchas veces.",
-    "en": "Hernando has been to Cartagena many times.",
+    "es": "Hernando ha estado en Cartagena una vez, con Inés.",
+    "en": "Hernando has been to Cartagena once, with Inés.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16721,20 +16745,20 @@
   },
   {
     "id": "u08-0751",
-    "es": "Simón ha dicho una palabra nueva.",
-    "en": "Simón has said a new word.",
+    "es": "Simón dijo una palabra nueva.",
+    "en": "Simón said a new word.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-irregular-strong",
       "l:decir",
       "l:nuevo",
       "l:palabra"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:adjective-agreement"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -16763,20 +16787,20 @@
   },
   {
     "id": "u08-0753",
-    "es": "Ricardo Altamira ha visitado la cafetería dos veces.",
-    "en": "Ricardo Altamira has visited the café twice.",
+    "es": "Ricardo Altamira ha comprado muchas casas en el barrio.",
+    "en": "Ricardo Altamira has bought a lot of houses in the neighborhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:perfecto-experience",
-      "l:cafetería",
-      "l:vez",
-      "l:visitar"
+      "l:barrio",
+      "l:casa",
+      "l:comprar",
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "g:perfecto-experience",
-      "l:visitar"
+      "g:perfecto-experience"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -16807,19 +16831,18 @@
   },
   {
     "id": "u08-0755",
-    "es": "Ricardo ha dejado demasiada propina.",
-    "en": "Ricardo has left too big a tip.",
+    "es": "Ricardo nunca ha trabajado en una cafetería.",
+    "en": "Ricardo has never worked in a café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:perfecto-experience",
-      "g:quantifiers",
-      "l:dejar",
-      "l:propina"
+      "l:cafetería",
+      "l:trabajar"
     ],
     "targets": [
-      "g:perfecto-experience",
-      "g:quantifiers"
+      "g:perfecto-experience"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -16872,13 +16895,13 @@
   },
   {
     "id": "u08-0758",
-    "es": "Ha dejado una propina muy grande.\n¿Y quién es él?",
-    "en": "He's left a very big tip.\nAnd who is he?",
+    "es": "Dejó una propina muy grande.\n¿Y quién es?",
+    "en": "He left a very big tip.\nAnd who is he?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "g:questions",
       "g:ser-identity",
       "l:dejar",
@@ -16889,7 +16912,7 @@
       "p:quantifiers-basic"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:gender-articles"
     ],
     "kind": "dialogue",
     "unit": "u08",
@@ -16946,15 +16969,15 @@
   },
   {
     "id": "u08-0761",
-    "es": "¿Ha vendido ya la esquina?\nTodavía no.",
-    "en": "Has he sold the corner yet?\nNot yet.",
+    "es": "¿Los vecinos ya han vendido?\nTodavía no.",
+    "en": "Have the neighbors sold yet?\nNot yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:todavia-no",
       "g:gender-articles",
       "g:perfecto-experience",
-      "l:esquina",
+      "l:vecino",
       "l:vender"
     ],
     "targets": [
@@ -17085,20 +17108,21 @@
   },
   {
     "id": "u08-0767",
-    "es": "Mi trabajo no gana mucho dinero.",
-    "en": "My job doesn't earn much money.",
+    "es": "¿Quién ganó el partido anoche?",
+    "en": "Who won the game last night?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:dinero",
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:questions",
+      "l:anoche",
       "l:ganar",
-      "l:trabajo",
-      "p:possessives-basic",
-      "p:quantifiers-basic"
+      "l:partido",
+      "l:quién"
     ],
     "targets": [
-      "l:dinero",
       "l:ganar"
     ],
     "kind": "statement",
@@ -17342,14 +17366,16 @@
   },
   {
     "id": "u08-0778",
-    "es": "Hernando nunca pierde su dinero.",
-    "en": "Hernando never loses his money.",
+    "es": "Hernando siempre cuenta su dinero dos veces.",
+    "en": "Hernando always counts his money twice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
+      "l:contar",
       "l:dinero",
-      "l:perder",
+      "l:siempre",
+      "l:vez",
       "p:possessives-basic"
     ],
     "targets": [
@@ -17362,20 +17388,19 @@
   },
   {
     "id": "u08-0779",
-    "es": "Tomás ha perdido su dinero en el aeropuerto.",
-    "en": "Tomás has lost his money at the airport.",
+    "es": "Tomás perdió su dinero en el aeropuerto.",
+    "en": "Tomás lost his money at the airport.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:aeropuerto",
       "l:dinero",
       "l:perder",
       "p:possessives-basic"
     ],
     "targets": [
-      "g:perfecto-experience",
       "l:aeropuerto",
       "l:dinero"
     ],
@@ -17781,15 +17806,20 @@
   },
   {
     "id": "u08-0798",
-    "es": "No recuerdo mis llaves.",
-    "en": "I don't remember my keys.",
+    "es": "No recuerdo a qué hora abre el banco.",
+    "en": "I don't remember what time the bank opens.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-que-hora",
+      "g:gender-articles",
+      "g:present-er-ir",
       "g:stem-boot",
-      "l:llave",
-      "l:recordar",
-      "p:possessives-basic"
+      "l:abrir",
+      "l:banco",
+      "l:hora",
+      "l:qué",
+      "l:recordar"
     ],
     "targets": [
       "l:recordar"
@@ -18151,22 +18181,21 @@
   },
   {
     "id": "u08-0815",
-    "es": "¿Conoces ese dicho?\nNi idea.",
-    "en": "Do you know that saying?\nNo idea.",
+    "es": "¿Conoces ese dicho?\nNo, nunca lo he oído.",
+    "en": "Do you know that saying?\nNo, I've never heard it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ni-idea",
       "g:demonstratives",
+      "g:direct-objects",
+      "g:perfecto-experience",
       "g:present-er-ir",
       "l:conocer",
       "l:dicho",
-      "l:idea"
+      "l:oír"
     ],
     "targets": [
-      "c:ni-idea",
-      "l:dicho",
-      "l:idea"
+      "l:dicho"
     ],
     "kind": "dialogue",
     "unit": "u08",
@@ -18175,23 +18204,20 @@
   },
   {
     "id": "u08-0816",
-    "es": "Mi idea general es ir a la costa en junio.",
-    "en": "My general idea is to go to the coast in June.",
+    "es": "La idea general del viaje es no hacer nada.",
+    "en": "The general idea of the trip is to do nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:costa",
       "l:general",
+      "l:hacer",
       "l:idea",
-      "l:ir",
-      "l:junio",
       "l:ser",
-      "p:possessives-basic"
+      "l:viaje"
     ],
     "targets": [
-      "l:costa",
       "l:general",
       "l:idea"
     ],
@@ -18249,20 +18275,19 @@
   },
   {
     "id": "u08-0819",
-    "es": "Hemos creado un grupo para los vecinos.",
-    "en": "We've created a group for the neighbors.",
+    "es": "Mariana creó un grupo para los vecinos.",
+    "en": "Mariana created a group for the neighbors.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:crear",
       "l:grupo",
       "l:vecino",
       "p:para-inf"
     ],
     "targets": [
-      "g:perfecto-experience",
       "l:crear"
     ],
     "kind": "statement",
@@ -18316,16 +18341,18 @@
   },
   {
     "id": "u08-0822",
-    "es": "No es fácil crear una cafetería.",
-    "en": "It isn't easy to create a café.",
+    "es": "No es fácil crear una receta nueva.",
+    "en": "It isn't easy to create a new recipe.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
-      "l:cafetería",
       "l:crear",
       "l:fácil",
+      "l:nuevo",
+      "l:receta",
       "l:ser"
     ],
     "targets": [
@@ -18424,21 +18451,19 @@
   },
   {
     "id": "u08-0827",
-    "es": "El horario general es de lunes a viernes.",
-    "en": "The general schedule is Monday to Friday.",
+    "es": "El Hospital General está cerca del centro.",
+    "en": "The General Hospital is near downtown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:general",
-      "l:horario",
-      "l:lunes",
-      "l:ser",
-      "l:viernes"
+      "l:centro",
+      "l:cerca",
+      "l:estar"
     ],
     "targets": [
-      "l:general"
+      "g:estar-location-states"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -18447,22 +18472,22 @@
   },
   {
     "id": "u08-0828",
-    "es": "Tengo una idea general del contrato.",
-    "en": "I have a general idea of the lease.",
+    "es": "El contrato es muy general y no es claro.",
+    "en": "The contract is very general and isn't clear.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "c:claro-listo",
       "g:gender-articles",
-      "g:yo-irregular",
+      "g:ser-identity",
+      "l:claro",
       "l:contrato",
       "l:general",
-      "l:idea",
-      "l:tener"
+      "l:ser",
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "l:general",
-      "l:idea"
+      "l:general"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -18493,16 +18518,16 @@
   },
   {
     "id": "u08-0830",
-    "es": "El precio general es barato.",
-    "en": "The general price is cheap.",
+    "es": "El general de la foto es el abuelo de Hernando.",
+    "en": "The general in the photo is Hernando's grandfather.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:barato",
+      "l:abuelo",
+      "l:foto",
       "l:general",
-      "l:precio",
       "l:ser"
     ],
     "targets": [
@@ -18515,17 +18540,17 @@
   },
   {
     "id": "u08-0831",
-    "es": "Mariana ya tiene una historia general del barrio.",
-    "en": "Mariana already has a general story of the neighborhood.",
+    "es": "Mariana tiene una idea general de los planes de Altamira.",
+    "en": "Mariana has a general idea of Altamira's plans.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
       "g:stem-boot",
-      "l:barrio",
       "l:general",
-      "l:historia",
+      "l:idea",
+      "l:plan",
       "l:tener"
     ],
     "targets": [
@@ -18538,17 +18563,17 @@
   },
   {
     "id": "u08-0832",
-    "es": "La reunión general es los sábados.",
-    "en": "The general meeting is on Saturdays.",
+    "es": "En la reunión general hablan todos los vecinos.",
+    "en": "At the general meeting all the neighbors speak.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:present-ar",
       "l:general",
+      "l:hablar",
       "l:reunión",
-      "l:ser",
-      "l:sábado"
+      "l:vecino"
     ],
     "targets": [
       "l:general"
@@ -18560,8 +18585,8 @@
   },
   {
     "id": "u08-0833",
-    "es": "Probé el ajiaco ayer, y me gustó mucho.",
-    "en": "I tried the ajiaco yesterday, and I liked it a lot.",
+    "es": "Probé el ajiaco ayer y me gustó mucho.",
+    "en": "I tried the ajiaco yesterday and I liked it a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18754,8 +18779,8 @@
   },
   {
     "id": "u08-0841",
-    "es": "Ya he estado en la isla, y fue demasiado caro.",
-    "en": "I've already been to the island, and it was too expensive.",
+    "es": "Ya he estado en la isla y fue demasiado caro.",
+    "en": "I've already been to the island and it was too expensive.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18856,19 +18881,18 @@
   },
   {
     "id": "u08-0845",
-    "es": "Hemos trabajado demasiado esta semana.",
-    "en": "We've worked too much this week.",
+    "es": "Esta semana trabajamos demasiado.",
+    "en": "This week we worked too much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:perfecto-experience",
+      "g:present-ar",
       "g:quantifiers",
       "l:semana",
       "l:trabajar",
       "p:demonstratives-basic"
     ],
     "targets": [
-      "g:perfecto-experience",
       "g:quantifiers"
     ],
     "kind": "statement",
@@ -18980,21 +19004,19 @@
   },
   {
     "id": "u08-0850",
-    "es": "Esta semana hemos vendido demasiado poco.",
-    "en": "This week we've sold too little.",
+    "es": "Esta semana vendimos muy poco.",
+    "en": "This week we sold very little.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:perfecto-experience",
-      "g:quantifiers",
+      "g:preterite-er-ir",
       "l:semana",
       "l:vender",
       "p:demonstratives-basic",
       "p:quantifiers-basic"
     ],
     "targets": [
-      "g:perfecto-experience",
-      "g:quantifiers"
+      "g:preterite-er-ir"
     ],
     "kind": "statement",
     "unit": "u08",
@@ -19026,15 +19048,16 @@
   },
   {
     "id": "u08-0852",
-    "es": "¿Ya has comprado la maleta?",
-    "en": "Have you bought the suitcase yet? (to a friend)",
+    "es": "¿Has perdido una maleta en un aeropuerto?",
+    "en": "Have you ever lost a suitcase at an airport? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:perfecto-experience",
-      "l:comprar",
-      "l:maleta"
+      "l:aeropuerto",
+      "l:maleta",
+      "l:perder"
     ],
     "targets": [
       "g:perfecto-experience",
@@ -19104,15 +19127,16 @@
   },
   {
     "id": "u08-0856",
-    "es": "¿Has leído el contrato, Tomás?",
-    "en": "Have you read the lease, Tomás?",
+    "es": "¿Has trabajado en una cafetería antes, Tomás?",
+    "en": "Have you worked in a café before, Tomás?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:perfecto-experience",
-      "l:contrato",
-      "l:leer"
+      "l:antes",
+      "l:cafetería",
+      "l:trabajar"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -19124,18 +19148,18 @@
   },
   {
     "id": "u08-0857",
-    "es": "¿Ha llegado el correo?",
-    "en": "Has the mail arrived?",
+    "es": "¿Ya llegó el correo?",
+    "en": "Has the mail arrived yet?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:correo",
       "l:llegar"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:gender-articles"
     ],
     "kind": "question",
     "unit": "u08",
@@ -19144,16 +19168,16 @@
   },
   {
     "id": "u08-0858",
-    "es": "¿Ha llamado Mariana?",
-    "en": "Has Mariana called?",
+    "es": "¿Llamó Mariana?",
+    "en": "Did Mariana call?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:llamar"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:preterite-ar"
     ],
     "kind": "question",
     "unit": "u08",
@@ -19162,18 +19186,18 @@
   },
   {
     "id": "u08-0859",
-    "es": "¿Han abierto la tienda?",
-    "en": "Have they opened the shop?",
+    "es": "¿Ya abrieron la tienda?",
+    "en": "Have they opened the shop yet?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:abrir",
       "l:tienda"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:gender-articles"
     ],
     "kind": "question",
     "unit": "u08",
@@ -19182,18 +19206,18 @@
   },
   {
     "id": "u08-0860",
-    "es": "¿Han vendido todo el pan?",
-    "en": "Have they sold all the bread?",
+    "es": "¿Ya vendieron todo el pan?",
+    "en": "Have they sold all the bread yet?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:pan",
       "l:vender"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:gender-articles"
     ],
     "kind": "question",
     "unit": "u08",
@@ -19202,18 +19226,18 @@
   },
   {
     "id": "u08-0861",
-    "es": "¿Hemos pagado el arriendo?",
-    "en": "Have we paid the rent?",
+    "es": "¿Ya pagamos el arriendo?",
+    "en": "Have we paid the rent yet?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:present-ar",
       "l:arriendo",
       "l:pagar"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:gender-articles"
     ],
     "kind": "question",
     "unit": "u08",
@@ -19222,17 +19246,16 @@
   },
   {
     "id": "u08-0862",
-    "es": "¿Dónde has dejado las llaves?",
-    "en": "Where have you left the keys? (to a friend)",
+    "es": "¿Has dejado las llaves en un taxi?",
+    "en": "Have you ever left your keys in a taxi? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:perfecto-experience",
-      "g:questions",
       "l:dejar",
-      "l:dónde",
-      "l:llave"
+      "l:llave",
+      "l:taxi"
     ],
     "targets": [
       "g:perfecto-experience"
@@ -19266,18 +19289,18 @@
   },
   {
     "id": "u08-0864",
-    "es": "¿Qué ha dicho Hernando?",
-    "en": "What has Hernando said?",
+    "es": "¿Qué dijo Hernando?",
+    "en": "What did Hernando say?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:perfecto-experience",
+      "g:preterite-irregular-strong",
       "g:questions",
       "l:decir",
       "l:qué"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:preterite-irregular-strong"
     ],
     "kind": "question",
     "unit": "u08",
@@ -19332,13 +19355,13 @@
   },
   {
     "id": "u08-0867",
-    "es": "¿Cuánto has pagado por el hotel?",
-    "en": "How much have you paid for the hotel? (to a friend)",
+    "es": "¿Cuánto pagaste por el hotel?",
+    "en": "How much did you pay for the hotel? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "g:questions",
       "l:cuánto",
       "l:hotel",
@@ -19346,7 +19369,6 @@
       "p:costar-pagar"
     ],
     "targets": [
-      "g:perfecto-experience",
       "l:hotel"
     ],
     "kind": "question",
@@ -19378,20 +19400,19 @@
   },
   {
     "id": "u08-0869",
-    "es": "¿Quién ha visto mi celular?",
-    "en": "Who has seen my phone?",
+    "es": "¿Alguien vio mi celular?",
+    "en": "Did anyone see my phone?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:perfecto-experience",
-      "g:questions",
+      "g:preterite-er-ir",
       "l:celular",
-      "l:quién",
       "l:ver",
+      "p:indefinites-basic",
       "p:possessives-basic"
     ],
     "targets": [
-      "g:perfecto-experience"
+      "g:preterite-er-ir"
     ],
     "kind": "question",
     "unit": "u08",
@@ -19711,18 +19732,17 @@
   },
   {
     "id": "u08-0884",
-    "es": "¿La has llamado?",
-    "en": "Have you called her? (to a friend)",
+    "es": "¿Ya la llamaste?",
+    "en": "Have you called her yet? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:llamar"
     ],
     "targets": [
-      "g:direct-objects",
-      "g:perfecto-experience"
+      "g:direct-objects"
     ],
     "kind": "question",
     "unit": "u08",
@@ -19731,18 +19751,17 @@
   },
   {
     "id": "u08-0885",
-    "es": "¿Los has pagado?",
-    "en": "Have you paid them? (to a friend)",
+    "es": "¿Ya los pagaste?",
+    "en": "Have you paid for them yet? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:perfecto-experience",
+      "g:preterite-ar",
       "l:pagar"
     ],
     "targets": [
-      "g:direct-objects",
-      "g:perfecto-experience"
+      "g:direct-objects"
     ],
     "kind": "question",
     "unit": "u08",
@@ -19751,18 +19770,17 @@
   },
   {
     "id": "u08-0886",
-    "es": "¿Las has traído?",
-    "en": "Have you brought them? (to a friend)",
+    "es": "¿Las trajiste?",
+    "en": "Did you bring them? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:perfecto-experience",
+      "g:preterite-irregular-strong",
       "l:traer"
     ],
     "targets": [
-      "g:direct-objects",
-      "g:perfecto-experience"
+      "g:direct-objects"
     ],
     "kind": "question",
     "unit": "u08",
@@ -19949,28 +19967,28 @@
   },
   {
     "id": "u08-0895",
-    "es": "¿Quieres montar a caballo?\nNi idea, nunca lo he hecho.",
-    "en": "Do you want to ride a horse?\nNo idea, I've never done it.",
+    "es": "¿Quieres montar a caballo?\nNo sé, nunca lo he hecho.",
+    "en": "Do you want to ride a horse?\nI don't know, I've never done it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ni-idea",
+      "c:no-se",
       "g:direct-objects",
+      "g:negation-words",
       "g:perfecto-experience",
       "g:stem-boot",
       "g:verb-infinitive",
+      "g:yo-irregular",
       "l:caballo",
       "l:hacer",
-      "l:idea",
       "l:montar",
-      "l:querer"
+      "l:querer",
+      "l:saber"
     ],
     "targets": [
-      "c:ni-idea",
       "g:direct-objects",
       "g:perfecto-experience",
       "l:caballo",
-      "l:idea",
       "l:montar"
     ],
     "kind": "dialogue",
@@ -20183,7 +20201,7 @@
   {
     "id": "u08-0904",
     "es": "¿Conoces la selva?\nTodavía no, pero tengo ganas.",
-    "en": "Do you know the jungle?\nNot yet, but I want to.",
+    "en": "Have you been to the jungle?\nNot yet, but I want to.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20300,7 +20318,7 @@
   {
     "id": "u08-0909",
     "es": "Es importante dormir bien.\nYa lo sé.",
-    "en": "It's important to sleep well.\nI know.",
+    "en": "It's important to sleep well.\nI already know.",
     "accept": [],
     "acceptEn": [],
     "requires": [

@@ -115,13 +115,15 @@
       "why": "No *de*: the verb follows straight on."
     },
     {
-      "prompt": "It's easy to get to the café.",
+      "prompt": "Say: It's easy to get to the café.",
       "answer": "Es fácil llegar al café.",
-      "accept": [],
+      "accept": [
+        "Llegar al café es fácil."
+      ],
       "why": "*Es* + *fácil* + the plain verb; no word for it or to."
     },
     {
-      "prompt": "It's important to read the contract.",
+      "prompt": "Say: It's important to read the contract.",
       "answer": "Es importante leer el contrato.",
       "accept": [
         "Leer el contrato es importante."
@@ -129,7 +131,7 @@
       "why": "Same frame as *es importante dormir bien*."
     },
     {
-      "prompt": "Travelling by plane is expensive.",
+      "prompt": "Say: Travelling by plane is expensive.",
       "answer": "Viajar en avión es caro.",
       "accept": [
         "Es caro viajar en avión."

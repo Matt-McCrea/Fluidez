@@ -27,7 +27,7 @@
     {
       "id": "t2",
       "npc": "¡Qué envidia! Yo nunca he montado en avión. ¿Y has montado a caballo?",
-      "npcEn": "Lucky you! I've never been on a plane. And have you ridden a horse?",
+      "npcEn": "I'm so jealous! I've never been on a plane. And have you ridden a horse?",
       "intent": "Say no, never: you don't know how to ride.",
       "accept": [
         "No, nunca. No sé montar a caballo.",

@@ -6,42 +6,199 @@
     "en": "The ajiaco? I've never eaten it."
   },
   "examples": [
-    { "es": "¿El contrato? Todavía no lo he leído.", "en": "The contract? I haven't read it yet." },
-    { "es": "¿Conoces a Mariana?\nSí, la conocí en el café.", "en": "Do you know Mariana?\nYes, I met her at the café." },
-    { "es": "Las llaves, ¿dónde las dejaste?", "en": "The keys, where did you leave them? (to a friend)" },
-    { "es": "¿Ves a Hernando?\nNo, no lo veo.", "en": "Can you see Hernando?\nNo, I can't see him." },
-    { "es": "¿Conoces a los vecinos?\nSí, los conozco.", "en": "Do you know the neighbours?\nYes, I know them." },
-    { "es": "¿El celular? Lo dejé en la mesa.", "en": "My phone? I left it on the table." },
-    { "es": "¿Tienes las llaves?\nSí, las tengo.", "en": "Have you got the keys?\nYes, I've got them." }
+    {
+      "es": "¿El contrato? Todavía no lo he leído.",
+      "en": "The contract? I haven't read it yet."
+    },
+    {
+      "es": "¿Conoces a Mariana?\nSí, la conocí en el café.",
+      "en": "Do you know Mariana?\nYes, I met her at the café."
+    },
+    {
+      "es": "Las llaves, ¿dónde las dejaste?",
+      "en": "The keys, where did you leave them? (to a friend)"
+    },
+    {
+      "es": "¿Ves a Hernando?\nNo, no lo veo.",
+      "en": "Can you see Hernando?\nNo, I can't see him."
+    },
+    {
+      "es": "¿Conoces a los vecinos?\nSí, los conozco.",
+      "en": "Do you know the neighbours?\nYes, I know them."
+    },
+    {
+      "es": "¿El celular? Lo dejé en la mesa.",
+      "en": "My phone? I left it on the table."
+    },
+    {
+      "es": "¿Tienes las llaves?\nSí, las tengo.",
+      "en": "Have you got the keys?\nYes, I've got them."
+    }
   ],
   "rule": "When it's clear what you're talking about, Spanish replaces the noun with a short word:\n*lo*: him, or it for an *el* word (*el contrato*)\n*la*: her, or it for a *la* word (*la cuenta*)\n*los*: them (men, mixed groups, *los* words)\n*las*: them (women, *las* words)\n\nThe word follows the noun's gender, not English. A phone is *el celular*, so it's *lo*; a key is *la llave*, so it's *la*.\n\nThe big change from English: it goes before the verb. English says I see him; Spanish says *Lo veo*. With *no*, the order is *no lo veo*. With *he* or *estoy*, it goes in front of those: *lo he leído*, *las estoy buscando*.\n\nPeople get the little *a* before them as usual (*Veo a Vale*), but *lo* or *la* swallows the whole thing: *La veo*.",
   "smallPrint": "Teachers call these direct object pronouns, and the *a* before a person the personal *a*.",
   "readAndPick": [
-    { "es": "La conocí en el café.", "options": ["I met him at the café.", "I met her at the café.", "I met them at the café."], "answer": 1 },
-    { "es": "Lo veo.", "options": ["I see him.", "I see her.", "He sees me."], "answer": 0 },
-    { "es": "Las tengo yo.", "options": ["I've got it.", "I've got him.", "I've got them."], "answer": 2 },
-    { "es": "Lo llamó Vale.", "options": ["Vale called him.", "He called Vale."], "answer": 0 },
-    { "es": "Vale lo llamó.", "options": ["He called Vale.", "Vale called him."], "answer": 1 },
-    { "es": "¿Los conoces?", "options": ["Do you know her?", "Do you know them?", "Do they know you?"], "answer": 1 },
-    { "es": "Todavía no la he visto.", "options": ["I haven't seen her yet.", "She hasn't seen me yet.", "I haven't seen him yet."], "answer": 0 },
-    { "es": "Hernando la busca.", "options": ["Hernando is looking for him.", "She's looking for Hernando.", "Hernando is looking for her."], "answer": 2 },
-    { "es": "No los veo.", "options": ["I can't see them.", "They can't see me.", "I can't see it."], "answer": 0 }
+    {
+      "es": "La conocí en el café.",
+      "options": [
+        "I met him at the café.",
+        "I met her at the café.",
+        "I met them at the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo veo.",
+      "options": [
+        "I see him.",
+        "I see her.",
+        "He sees me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las tengo yo.",
+      "options": [
+        "I've got it.",
+        "I've got her.",
+        "I've got them."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo llamó Vale.",
+      "options": [
+        "Vale called him.",
+        "He called Vale."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale lo llamó.",
+      "options": [
+        "He called Vale.",
+        "Vale called him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Los conoces?",
+      "options": [
+        "Do you know her?",
+        "Do you know them?",
+        "Do they know you?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Todavía no la he visto.",
+      "options": [
+        "I haven't seen her yet.",
+        "She hasn't seen me yet.",
+        "I haven't seen him yet."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando la busca.",
+      "options": [
+        "Hernando is looking for him.",
+        "She's looking for Hernando.",
+        "Hernando is looking for her."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No los veo.",
+      "options": [
+        "I can't see them.",
+        "They can't see me.",
+        "I can't see it."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *¿El contrato? Todavía no ___ he leído.* (*lo* or *la*) I haven't read it yet.", "answer": "¿El contrato? Todavía no lo he leído.", "accept": ["Todavía no lo he leído."], "why": "*El contrato* is an *el* word, so it's *lo*." },
-    { "prompt": "Pick and type the whole sentence: *¿Mariana? ___ conocí en el café.* (*Lo* or *La*) I met her at the café.", "answer": "¿Mariana? La conocí en el café.", "accept": ["La conocí en el café."], "why": "Her is *la*." },
-    { "prompt": "Pick and type the whole sentence: *¿Las llaves? Sí, ___.* (*las tengo* or *tengo las*) Yes, I've got them.", "answer": "¿Las llaves? Sí, las tengo.", "accept": ["Sí, las tengo."], "why": "The little word goes before the verb: *las tengo*." },
-    { "prompt": "Your friend asks about Hernando. Say: I can't see him.", "answer": "No lo veo.", "accept": ["No, no lo veo."], "why": "Him is *lo*, and it sits between *no* and the verb." },
-    { "prompt": "Answer about the neighbours: Yes, I know them.", "answer": "Sí, los conozco.", "accept": ["Los conozco."], "why": "*Los vecinos* is a *los* word, so them is *los*." },
-    { "prompt": "Replace the noun: *Busco a Vale.*", "answer": "La busco.", "accept": [], "why": "*La* takes the place of *a Vale*, little *a* and all, and moves before the verb." },
-    { "prompt": "Replace the noun: *Dejé el celular en la mesa.*", "answer": "Lo dejé en la mesa.", "accept": [], "why": "*El celular* becomes *lo*, in front of *dejé*." },
-    { "prompt": "Make it negative: *Lo he visto.*", "answer": "No lo he visto.", "accept": [], "why": "*No* comes first, then *lo*, then *he visto*." }
+    {
+      "prompt": "Pick and type the whole sentence: *¿El contrato? Todavía no ___ he leído.* (*lo* or *la*) I haven't read it yet.",
+      "answer": "¿El contrato? Todavía no lo he leído.",
+      "accept": [
+        "Todavía no lo he leído."
+      ],
+      "why": "*El contrato* is an *el* word, so it's *lo*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *¿Mariana? ___ conocí en el café.* (*Lo* or *La*) I met her at the café.",
+      "answer": "¿Mariana? La conocí en el café.",
+      "accept": [
+        "La conocí en el café."
+      ],
+      "why": "Her is *la*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *¿Las llaves? Sí, ___.* (*las tengo* or *tengo las*) Yes, I've got them.",
+      "answer": "¿Las llaves? Sí, las tengo.",
+      "accept": [
+        "Sí, las tengo."
+      ],
+      "why": "The little word goes before the verb: *las tengo*."
+    },
+    {
+      "prompt": "Your friend asks about Hernando. Say: I can't see him.",
+      "answer": "No lo veo.",
+      "accept": [
+        "No, no lo veo."
+      ],
+      "why": "Him is *lo*, and it sits between *no* and the verb."
+    },
+    {
+      "prompt": "Answer about the neighbours: Yes, I know them.",
+      "answer": "Sí, los conozco.",
+      "accept": [
+        "Los conozco."
+      ],
+      "why": "*Los vecinos* is a *los* word, so them is *los*."
+    },
+    {
+      "prompt": "Replace the noun: *Busco a Vale.*",
+      "answer": "La busco.",
+      "accept": [],
+      "why": "*La* takes the place of *a Vale*, little *a* and all, and moves before the verb."
+    },
+    {
+      "prompt": "Replace the noun: *Dejé el celular en la mesa.*",
+      "answer": "Lo dejé en la mesa.",
+      "accept": [],
+      "why": "*El celular* becomes *lo*, in front of *dejé*."
+    },
+    {
+      "prompt": "Make it negative: *Lo he visto.*",
+      "answer": "No lo he visto.",
+      "accept": [],
+      "why": "*No* comes first, then *lo*, then *he visto*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Veo lo.", "right": "Lo veo.", "why": "Almost. Unlike English, the little word goes before the verb." },
-    { "wrong": "¿El celular? La dejé en la mesa.", "right": "¿El celular? Lo dejé en la mesa.", "why": "*Celular* is an *el* word, so it's *lo*, whatever English thinks of phones." },
-    { "wrong": "Busco Vale.", "right": "Busco a Vale.", "why": "Close. When a person receives the action, Spanish puts *a* before them." },
-    { "wrong": "Lo no he leído.", "right": "No lo he leído.", "why": "*No* always comes first, before the little word." }
+    {
+      "wrong": "Veo lo.",
+      "right": "Lo veo.",
+      "why": "Almost. Unlike English, the little word goes before the verb."
+    },
+    {
+      "wrong": "¿El celular? La dejé en la mesa.",
+      "right": "¿El celular? Lo dejé en la mesa.",
+      "why": "*Celular* is an *el* word, so it's *lo*, whatever English thinks of phones."
+    },
+    {
+      "wrong": "Busco Vale.",
+      "right": "Busco a Vale.",
+      "why": "Close. When a person receives the action, Spanish puts *a* before them."
+    },
+    {
+      "wrong": "Lo no he leído.",
+      "right": "No lo he leído.",
+      "why": "*No* always comes first, before the little word."
+    }
   ],
   "personal": "Think of a thing you use every day and a person you see often. Write one line about each, replacing the noun with *lo* or *la*: *¿Mi celular? Lo uso mucho.*"
 }

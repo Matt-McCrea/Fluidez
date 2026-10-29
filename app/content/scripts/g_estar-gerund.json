@@ -6,42 +6,195 @@
     "en": "I'm working, I'll call you later."
   },
   "examples": [
-    { "es": "¿Qué estás haciendo?", "en": "What are you doing? (to a friend)" },
-    { "es": "Tomás está leyendo el contrato.", "en": "Tomás is reading the contract." },
-    { "es": "Estamos esperando a Mariana.", "en": "We're waiting for Mariana." },
-    { "es": "No estoy durmiendo, estoy pensando.", "en": "I'm not sleeping, I'm thinking." },
-    { "es": "Hernando está hablando con un cliente.", "en": "Hernando is talking to a customer." },
-    { "es": "Los vecinos están viendo el partido.", "en": "The neighbours are watching the match." },
-    { "es": "¿Usted está esperando a alguien?", "en": "Are you waiting for someone? (formal)" }
+    {
+      "es": "¿Qué estás haciendo?",
+      "en": "What are you doing? (to a friend)"
+    },
+    {
+      "es": "Tomás está leyendo el contrato.",
+      "en": "Tomás is reading the contract."
+    },
+    {
+      "es": "Estamos esperando a Mariana.",
+      "en": "We're waiting for Mariana."
+    },
+    {
+      "es": "No estoy durmiendo, estoy pensando.",
+      "en": "I'm not sleeping, I'm thinking."
+    },
+    {
+      "es": "Hernando está hablando con un cliente.",
+      "en": "Hernando is talking to a customer."
+    },
+    {
+      "es": "Los vecinos están viendo el partido.",
+      "en": "The neighbours are watching the match."
+    },
+    {
+      "es": "¿Usted está esperando a alguien?",
+      "en": "Are you waiting for someone? (formal)"
+    }
   ],
   "rule": "For something going on right this minute, Spanish does what English does: a form of to be plus an -ing word. The to be is always *estar*.\n\n*estoy*: I am\n*estás*: you are\n*está*: he, she, you (formal) are\n*estamos*: we are\n*están*: they, you all are\n\nThe -ing word:\n*-ar* verbs take *-ando*: *hablar*, *hablando*.\n*-er* and *-ir* verbs take *-iendo*: *comer*, *comiendo*; *escribir*, *escribiendo*.\nIt never changes. A few bend: *leer* gives *leyendo*, *dormir* gives *durmiendo*, *decir* gives *diciendo*.\n\nThe catch: Spanish uses it far less than English. For what you do in general, use the plain present: I'm working at a café these days is *Trabajo en un café*. Plans too: I'm going to Medellín tomorrow is *Mañana voy a Medellín*. Keep *estoy* plus *-ando* for right now, as you speak.",
   "smallPrint": "Teachers call the -ing word the gerund (*gerundio*), and *estar* plus the gerund the present progressive.",
   "readAndPick": [
-    { "es": "Estamos esperando a Mariana.", "options": ["They're waiting for Mariana.", "We're waiting for Mariana.", "I'm waiting for Mariana."], "answer": 1 },
-    { "es": "¿Qué estás haciendo?", "options": ["What are you doing?", "What is she doing?", "What are they doing?"], "answer": 0 },
-    { "es": "Están jugando fútbol en el parque.", "options": ["We're playing football in the park.", "He's playing football in the park.", "They're playing football in the park."], "answer": 2 },
-    { "es": "Simón está durmiendo.", "options": ["Simón sleeps a lot.", "Simón is sleeping."], "answer": 1 },
-    { "es": "Simón duerme mucho.", "options": ["Simón sleeps a lot.", "Simón is sleeping."], "answer": 0 },
-    { "es": "Estoy escribiendo un mensaje.", "options": ["I'm writing a message.", "You're writing a message.", "I wrote a message."], "answer": 0 },
-    { "es": "No está diciendo la verdad.", "options": ["I'm not telling the truth.", "We're not telling the truth.", "He's not telling the truth."], "answer": 2 },
-    { "es": "Vale está usando la computadora.", "options": ["Vale used the computer.", "Vale is using the computer.", "Vale is going to use the computer."], "answer": 1 },
-    { "es": "Estamos cerrando.", "options": ["We're closing.", "We closed.", "They're closing."], "answer": 0 }
+    {
+      "es": "Estamos esperando a Mariana.",
+      "options": [
+        "They're waiting for Mariana.",
+        "We're waiting for Mariana.",
+        "I'm waiting for Mariana."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué estás haciendo?",
+      "options": [
+        "What are you doing?",
+        "What is she doing?",
+        "What are they doing?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Están jugando fútbol en el parque.",
+      "options": [
+        "We're playing football in the park.",
+        "He's playing football in the park.",
+        "They're playing football in the park."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Simón está durmiendo.",
+      "options": [
+        "Simón sleeps a lot.",
+        "Simón is sleeping."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Simón duerme mucho.",
+      "options": [
+        "Simón sleeps a lot.",
+        "Simón is sleeping."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy escribiendo un mensaje.",
+      "options": [
+        "I'm writing a message.",
+        "You're writing a message.",
+        "I wrote a message."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No está diciendo la verdad.",
+      "options": [
+        "I'm not telling the truth.",
+        "We're not telling the truth.",
+        "He's not telling the truth."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale está usando la computadora.",
+      "options": [
+        "Vale used the computer.",
+        "Vale is using the computer.",
+        "Vale is going to use the computer."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estamos cerrando.",
+      "options": [
+        "We're closing.",
+        "We closed.",
+        "They're closing."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *Estoy ___ el contrato.* (*leyendo* or *leiendo*) I'm reading the contract.", "answer": "Estoy leyendo el contrato.", "accept": [], "why": "*Leer* bends: the *i* turns into *y*, so *leyendo*." },
-    { "prompt": "Pick and type the whole sentence: *Vale ___ hablando con Hernando.* (*está* or *es*) Vale is talking to Hernando.", "answer": "Vale está hablando con Hernando.", "accept": [], "why": "Right now uses *estar*, never *ser*." },
-    { "prompt": "Ask a friend: What are you doing?", "answer": "¿Qué estás haciendo?", "accept": ["¿Qué haces?"], "why": "To a friend, *estás*, and *hacer* becomes *haciendo*." },
-    { "prompt": "Say: I'm working, I'll call you later. (to a friend)", "answer": "Estoy trabajando, te llamo luego.", "accept": ["Estoy trabajando. Te llamo luego."], "why": "*Trabajar* is an *-ar* verb, so *trabajando*." },
-    { "prompt": "Say: We're waiting for Mariana.", "answer": "Estamos esperando a Mariana.", "accept": [], "why": "We are is *estamos*, and Mariana is a person, so she gets *a*." },
-    { "prompt": "Make it right now: *Hernando come arepas.* (Hernando is eating arepas.)", "answer": "Hernando está comiendo arepas.", "accept": [], "why": "*Comer* is an *-er* verb: *comiendo*, after *está*." },
-    { "prompt": "Make it negative: *Estoy durmiendo.*", "answer": "No estoy durmiendo.", "accept": [], "why": "*No* goes before *estoy*, not before the *-iendo* word." },
-    { "prompt": "Make it about the neighbours: *Estoy viendo el partido.*", "answer": "Los vecinos están viendo el partido.", "accept": [], "why": "They are is *están*; *viendo* stays the same." }
+    {
+      "prompt": "Pick and type the whole sentence: *Estoy ___ el contrato.* (*leyendo* or *leiendo*) I'm reading the contract.",
+      "answer": "Estoy leyendo el contrato.",
+      "accept": [],
+      "why": "*Leer* bends: the *i* turns into *y*, so *leyendo*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Vale ___ hablando con Hernando.* (*está* or *es*) Vale is talking to Hernando.",
+      "answer": "Vale está hablando con Hernando.",
+      "accept": [],
+      "why": "Right now uses *estar*, never *ser*."
+    },
+    {
+      "prompt": "Ask a friend: What are you doing?",
+      "answer": "¿Qué estás haciendo?",
+      "accept": [
+        "¿Qué haces?"
+      ],
+      "why": "To a friend, *estás*, and *hacer* becomes *haciendo*."
+    },
+    {
+      "prompt": "Say: I'm working, I'll call you later. (to a friend)",
+      "answer": "Estoy trabajando, te llamo luego.",
+      "accept": [
+        "Estoy trabajando. Te llamo luego."
+      ],
+      "why": "*Trabajar* is an *-ar* verb, so *trabajando*."
+    },
+    {
+      "prompt": "Say: We're waiting for Mariana.",
+      "answer": "Estamos esperando a Mariana.",
+      "accept": [],
+      "why": "We are is *estamos*, and Mariana is a person, so she gets *a*."
+    },
+    {
+      "prompt": "Make it right now: *Hernando come arepas.* (Hernando is eating arepas.)",
+      "answer": "Hernando está comiendo arepas.",
+      "accept": [
+        "Hernando está comiendo arepas ahora."
+      ],
+      "why": "*Comer* is an *-er* verb: *comiendo*, after *está*."
+    },
+    {
+      "prompt": "Make it negative: *Estoy durmiendo.*",
+      "answer": "No estoy durmiendo.",
+      "accept": [],
+      "why": "*No* goes before *estoy*, not before the *-iendo* word."
+    },
+    {
+      "prompt": "Make it about the neighbours: *Estoy viendo el partido.*",
+      "answer": "Los vecinos están viendo el partido.",
+      "accept": [],
+      "why": "They are is *están*; *viendo* stays the same."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Soy trabajando.", "right": "Estoy trabajando.", "why": "Almost. The -ing form always goes with *estar*, never *ser*." },
-    { "wrong": "Estoy comando.", "right": "Estoy comiendo.", "why": "*Comer* is an *-er* verb, so it takes *-iendo*: *comiendo*." },
-    { "wrong": "Tomás está leiendo el contrato.", "right": "Tomás está leyendo el contrato.", "why": "Close. *Leer* bends: *leyendo*, with a *y*." },
-    { "wrong": "Mañana estoy yendo a Medellín.", "right": "Mañana voy a Medellín.", "why": "Plans take the plain present, not the -ing form." }
+    {
+      "wrong": "Soy trabajando.",
+      "right": "Estoy trabajando.",
+      "why": "Almost. The -ing form always goes with *estar*, never *ser*."
+    },
+    {
+      "wrong": "Estoy comando.",
+      "right": "Estoy comiendo.",
+      "why": "*Comer* is an *-er* verb, so it takes *-iendo*: *comiendo*."
+    },
+    {
+      "wrong": "Tomás está leiendo el contrato.",
+      "right": "Tomás está leyendo el contrato.",
+      "why": "Close. *Leer* bends: *leyendo*, with a *y*."
+    },
+    {
+      "wrong": "Mañana estoy yendo a Medellín.",
+      "right": "Mañana voy a Medellín.",
+      "why": "Plans take the plain present, not the -ing form."
+    }
   ],
   "personal": "What are you doing right now, and what are the people around you doing? Write two lines with *estoy* or *está* plus an *-ando* or *-iendo* word."
 }

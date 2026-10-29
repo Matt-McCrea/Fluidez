@@ -2,7 +2,7 @@
   "id": "ch018",
   "unit": "u08",
   "title": "El traje de domingo",
-  "text": "Entra un hombre con traje negro, y Tomás sale del mostrador.\nTomás: ¡Hoy no, señor Altamira!\nHernando: Tomás, soy yo. Es mi traje de domingo. Mi esposa compró el traje en 1985.\nHernando: Hoy subo a Monserrate. ¿Tú has subido a Monserrate?\nTomás: Nunca he subido.\nVale: ¿Nunca? ¿Y has comido ajiaco?\nTomás: No.\nHernando: ¿Has jugado tejo?\nTomás: ¿Tejo? Ni idea.\nVale y Hernando miran a Tomás. Están blancos.\nVale: Julio: ajiaco. Está en el cuaderno de Rosa, y tú nunca has comido ajiaco.\nTomás: Pero he montado en avión cuarenta veces. Conozco todos los aeropuertos de Canadá.\nHernando: Yo nunca he montado en avión. Nunca he salido de Colombia. Pero he montado a caballo.\nVale: ¿Y el contrato de arriendo del café? ¿Has leído el contrato?\nSimón: ¡Ni idea! ¡No tengo ni idea!\nTomás: Gracias, Simón. Está en el armario, con la carta de Rosa.\nVale: Quedan diecinueve días, Tomás.\nHernando: Hoy, ajiaco. Mañana, tejo. Y el domingo, Monserrate.\nOtro hombre entra. Tiene un traje muy bonito y muy caro.\nHombre: Buenos días. Un capuchino, por favor.\nSimón no habla. Es la primera vez.",
+  "text": "Entra un hombre con traje negro, y Tomás sale del mostrador.\nTomás: ¡Hoy no, señor Altamira!\nHernando: Tomás, soy yo. Es mi traje de domingo. Mi esposa compró el traje en 1985.\nHernando: Hoy es un día importante. Tomás, ¿tú has subido a Monserrate?\nTomás: Nunca he subido.\nVale: ¿Nunca? ¿Y has comido ajiaco?\nTomás: No.\nHernando: ¿Has jugado tejo?\nTomás: ¿Tejo? Ni idea.\nVale y Hernando miran a Tomás. Están blancos.\nVale: ¡El ajiaco de Rosa está en su cuaderno! Y tú nunca has comido ajiaco.\nTomás: Pero he montado en avión cuarenta veces. Conozco todos los aeropuertos de Canadá.\nHernando: Yo nunca he montado en avión. Nunca he salido de Colombia. Pero he montado a caballo.\nVale: ¿Y el contrato de arriendo del café? ¿Has leído el contrato?\nSimón: ¡Ni idea! ¡No tengo ni idea!\nTomás: Gracias, Simón. Está en el armario, con la carta de Rosa.\nVale: Quedan diecinueve días, Tomás.\nHernando: Hoy, ajiaco. Mañana, tejo. Y el domingo, Monserrate.\nOtro hombre entra. Tiene un traje muy bonito y muy caro.\nHombre: Buenos días. Un capuchino, por favor.\nSimón no habla. Es la primera vez.",
   "gloss": [
     {
       "es": "el mostrador",
@@ -175,8 +175,8 @@
     "l:hombre",
     "l:hoy",
     "l:idea",
+    "l:importante",
     "l:jugar",
-    "l:julio",
     "l:leer",
     "l:mañana",
     "l:mirar",

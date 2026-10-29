@@ -2,7 +2,7 @@
   "id": "ch019",
   "unit": "u08",
   "title": "Hoteles con paisaje",
-  "text": "Tomás hace el primer capuchino de su vida.\nHombre: ¿Usted es turista?\nTomás: Soy el nieto de Rosa.\nHombre: Yo viajo mucho. Este año he visitado catorce pueblos.\nEn su celular hay fotos de la costa: una playa, una isla, el mar.\nHombre: ¿Ha estado en la costa?\nTomás: Todavía no.\nHombre: Y mire este paisaje: la montaña, el río, una finca con cafetal. Allá los turistas toman tinto del cafetal.\nVale: ¿Qué está haciendo Tomás? ¿Está mirando fotos de vacaciones?\nHernando: Está trabajando, mija.\nHernando: Mi esposa y yo visitamos el mar una vez. Fue el único viaje de mi vida.\nHombre: ¿Y usted, señor Herrera? ¿Ha tenido vacaciones?\nTomás: Nunca en la vida.\nHombre: Una maleta, un viaje, una isla. Usted puede viajar. ¿Ha pensado vender el café?\nTomás: ¿Cómo sabe mi apellido?\nEl hombre deja cincuenta mil pesos de propina. El capuchino cuesta cinco mil.\nSimón: ¡Qué envidia! ¡Qué envidia!\nEn la mesa hay una tarjeta: «Ricardo Altamira. Hoteles con paisaje: en la playa, en el río, en una finca de montaña, en un pueblo».\nEsa noche, Tomás mira su maleta.",
+  "text": "Tomás hace el primer capuchino de su vida.\nHombre: ¿Usted es turista?\nTomás: Soy el nieto de Rosa.\nHombre: Yo viajo mucho. Este año he visitado catorce pueblos.\nEn su celular hay fotos de la costa: una playa, una isla, el mar.\nHombre: ¿Ha estado en la costa?\nTomás: Todavía no.\nHombre: Y mire este paisaje: la montaña, el río, una finca con cafetal. Allá los turistas toman tinto del cafetal.\nVale: ¿Qué está haciendo Tomás? ¿Está mirando fotos de vacaciones?\nHernando: Está trabajando, mija.\nHernando: Mi esposa y yo visitamos el mar una vez. Fue el único viaje de mi vida.\nHombre: ¿Y usted, señor Herrera? ¿Ha tenido vacaciones?\nTomás: Nunca en la vida.\nHombre: Una maleta, un viaje, una isla. Usted puede viajar. ¿Ha pensado en vender el café?\nTomás: ¿Cómo sabe mi apellido?\nEl hombre deja cincuenta mil pesos de propina. El capuchino cuesta cinco mil.\nSimón: ¡Qué envidia! ¡Qué envidia!\nEn la mesa hay una tarjeta: «Ricardo Altamira. Hoteles con paisaje: en la playa, en el río, en una finca de montaña, en un pueblo».\nEsa noche, Tomás mira su maleta.",
   "gloss": [
     {
       "es": "un capuchino",
@@ -21,7 +21,7 @@
       "en": "He is working, my dear."
     },
     {
-      "es": "¿Ha pensado vender el café?",
+      "es": "¿Ha pensado en vender el café?",
       "en": "Have you thought about selling the café?"
     },
     {
@@ -134,6 +134,7 @@
     "g:stem-boot",
     "g:verb-infinitive",
     "p:demonstratives-basic",
+    "p:pensar-en",
     "p:possessives-basic",
     "p:quantifiers-basic"
   ],

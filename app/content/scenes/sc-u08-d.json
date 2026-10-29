@@ -1,18 +1,19 @@
 {
   "id": "sc-u08-d",
   "unit": "u08",
-  "title": "Two weeks in Colombia",
+  "title": "One week in Colombia",
   "brief": "You're Tomás. A Mexican tourist at the next table is planning her trip and decides you're the expert. Tell her honestly where you've been and where you haven't, and point her to someone who knows more. She's a stranger, so use usted.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Perdón, una pregunta. Mi esposo y yo estamos visitando Colombia. ¿Usted conoce Cartagena?",
-      "npcEn": "Excuse me, a question. My husband and I are visiting Colombia. Have you been to Cartagena?",
+      "npc": "Perdón, una pregunta. Mi esposo y yo estamos visitando Colombia. ¿Usted conoce Medellín?",
+      "npcEn": "Excuse me, a question. My husband and I are visiting Colombia. Have you been to Medellín?",
       "intent": "Say yes, you've been there once.",
       "accept": [
         "Sí, he estado una vez.",
-        "Sí, he estado en Cartagena una vez.",
-        "Sí, la conozco. He estado allá una vez."
+        "Sí, he estado en Medellín una vez.",
+        "Sí, la conozco. He estado allá una vez.",
+        "Sí, he ido una vez."
       ],
       "require": [
         {
@@ -33,11 +34,11 @@
       "id": "t2",
       "npc": "¿Y vale la pena? Tenemos solo una semana.",
       "npcEn": "And is it worth it? We only have a week.",
-      "intent": "Say yes, it's worth going: the sea is beautiful.",
+      "intent": "Say yes, it's worth going: the city is very pretty.",
       "accept": [
-        "Sí, vale la pena ir. El mar es muy bonito.",
-        "Sí, vale la pena. El mar es hermoso.",
-        "Claro, vale la pena ir. El mar es muy lindo."
+        "Sí, vale la pena ir. La ciudad es muy bonita.",
+        "Sí, vale la pena. La ciudad es muy linda.",
+        "Claro, vale la pena ir. Es una ciudad muy bonita."
       ],
       "require": [
         {
@@ -57,15 +58,18 @@
       "accept": [
         "No, todavía no he visitado una finca.",
         "Todavía no. No he visitado una finca de café.",
-        "No, todavía no he visitado una finca de café."
+        "No, todavía no he visitado una finca de café.",
+        "No, todavía no he ido a una finca de café."
       ],
       "require": [
         {
-          "type": "verbForm",
-          "inf": "visitar",
+          "type": "anyVerbInTense",
           "tense": "perfecto",
-          "person": "yo",
           "label": "not yet: no he visitado"
+        },
+        {
+          "type": "negation",
+          "label": "say you haven't: no he"
         }
       ],
       "focus": "g:perfecto-experience",
@@ -139,6 +143,7 @@
     }
   ],
   "requires": [
+    "c:a-cuantas-cuotas",
     "c:bien-y-tu",
     "c:claro-listo",
     "c:con-mucho-gusto",
@@ -157,6 +162,7 @@
     "c:todavia-no",
     "c:una-vez",
     "c:vale-la-pena",
+    "g:adjective-agreement",
     "g:demonstratives",
     "g:direct-objects",
     "g:estar-gerund",
@@ -177,6 +183,7 @@
     "l:caballo",
     "l:cafetal",
     "l:café",
+    "l:ciudad",
     "l:claro",
     "l:conocer",
     "l:dónde",
@@ -185,12 +192,10 @@
     "l:estar",
     "l:finca",
     "l:gusto",
-    "l:hermoso",
     "l:idea",
     "l:ir",
     "l:joven",
     "l:lindo",
-    "l:mar",
     "l:mesa",
     "l:montar",
     "l:pena",

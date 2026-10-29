@@ -121,13 +121,13 @@
       "why": "*Tienes* for a friend, then *de* + the plain verb."
     },
     {
-      "prompt": "I feel like a black coffee. (use the Colombian word)",
+      "prompt": "Say: I feel like a black coffee. (use the Colombian word)",
       "answer": "Tengo ganas de un tinto.",
       "accept": [],
       "why": "*Ganas de* can take a thing as well as a verb."
     },
     {
-      "prompt": "Hernando doesn't feel like working.",
+      "prompt": "Say: Hernando doesn't feel like working.",
       "answer": "Hernando no tiene ganas de trabajar.",
       "accept": [],
       "why": "*No* before *tiene*; the verb after *de* stays plain."

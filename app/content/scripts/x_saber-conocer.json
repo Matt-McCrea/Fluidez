@@ -129,13 +129,13 @@
       "why": "A place you could visit takes *conocer*."
     },
     {
-      "prompt": "I don't know how much it costs.",
+      "prompt": "Say: I don't know how much it costs.",
       "answer": "No sé cuánto cuesta.",
       "accept": [],
       "why": "A price is a fact you could look up: *saber*."
     },
     {
-      "prompt": "Hernando knows Bogotá very well.",
+      "prompt": "Say: Hernando knows Bogotá very well.",
       "answer": "Hernando conoce Bogotá muy bien.",
       "accept": [
         "Hernando conoce muy bien Bogotá."

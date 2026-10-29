@@ -37,7 +37,8 @@
       "accept": [
         "Todavía no, pero tengo ganas de jugar.",
         "Todavía no. Pero tengo ganas de jugar.",
-        "No, todavía no he jugado, pero tengo ganas de jugar."
+        "No, todavía no he jugado, pero tengo ganas de jugar.",
+        "Todavía no, pero tengo ganas."
       ],
       "require": [
         {
@@ -79,7 +80,8 @@
       "accept": [
         "¿Y tú has estado en Toronto?",
         "¿Has estado en Toronto, Vale?",
-        "Y tú, ¿has estado en Toronto alguna vez?"
+        "Y tú, ¿has estado en Toronto alguna vez?",
+        "¿Y tú has ido a Toronto?"
       ],
       "require": [
         {
@@ -87,11 +89,9 @@
           "label": "ask it as a question"
         },
         {
-          "type": "verbForm",
-          "inf": "estar",
+          "type": "anyVerbInTense",
           "tense": "perfecto",
-          "person": "tú",
-          "label": "have you been: has estado"
+          "label": "ever, in her life: has estado or has ido"
         }
       ],
       "focus": "g:perfecto-experience",
@@ -119,8 +119,8 @@
     },
     {
       "id": "t6",
-      "npc": "Bueno, el sábado: ajiaco, tejo y Monserrate. ¿Todo en un día?",
-      "npcEn": "Right, Saturday: ajiaco, tejo and Monserrate. All in one day?",
+      "npc": "Bueno, el domingo: ajiaco, tejo y Monserrate. ¿Todo en un día?",
+      "npcEn": "Right, Sunday: ajiaco, tejo and Monserrate. All in one day?",
       "intent": "Say yes: it's worth it.",
       "accept": [
         "Sí. ¡Vale la pena!",
@@ -162,11 +162,13 @@
     "l:café",
     "l:claro",
     "l:conocer",
+    "l:domingo",
     "l:día",
     "l:envidia",
     "l:escribir",
     "l:estar",
     "l:ganas",
+    "l:ir",
     "l:jugar",
     "l:largo",
     "l:listo",
@@ -179,7 +181,6 @@
     "l:ser",
     "l:serio",
     "l:subir",
-    "l:sábado",
     "l:tener",
     "l:valer",
     "l:ventana",

@@ -2,11 +2,11 @@
   "id": "sc-u08-e",
   "unit": "u08",
   "title": "Beginner's luck",
-  "brief": "You're Tomás. Don Hernando has taken you to play tejo for the first time. Tell him what you can and can't do, watch the others, and answer his invitation. He's older than you, so use usted.",
+  "brief": "You're Tomás. Don Hernando has taken you to play tejo for the first time. Tell him what you can and can't do, watch the others, and answer his invitation. He's older than you, so use usted with him; he uses tú with you.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Bueno, Tomás, esto es el tejo. ¿Usted sabe jugar?",
+      "npc": "Bueno, Tomás, esto es el tejo. ¿Sabes jugar?",
       "npcEn": "Right, Tomás, this is tejo. Do you know how to play?",
       "intent": "Say no, you don't know how to play: you've never played.",
       "accept": [
@@ -26,7 +26,7 @@
     },
     {
       "id": "t2",
-      "npc": "Tranquilo. Es fácil aprender. Primero, una cerveza. ¿Quiere una?",
+      "npc": "Tranquilo. Es fácil aprender. Primero, una cerveza. ¿Quieres una?",
       "npcEn": "Relax. It's easy to learn. First, a beer. Do you want one?",
       "intent": "Say yes, you feel like a beer.",
       "accept": [
@@ -46,7 +46,7 @@
     },
     {
       "id": "t3",
-      "npc": "Bueno. ¿Ve a ese señor de la camisa roja?",
+      "npc": "Bueno. ¿Ves a ese señor de la camisa roja?",
       "npcEn": "Right. Do you see that man in the red shirt?",
       "intent": "Say yes, you see him, and ask what he's doing.",
       "accept": [
@@ -70,7 +70,7 @@
     },
     {
       "id": "t4",
-      "npc": "Está ganando. Siempre gana. Bueno, ahora usted.\n¡Bum! ¡Tomás! ¿Usted ha jugado antes, sí o no?",
+      "npc": "Está ganando. Siempre gana. Bueno, ahora usted.\n¡Bum! ¡Tomás! ¿Has jugado antes, sí o no?",
       "npcEn": "He's winning. He always wins. Right, now you.\nBoom! Tomás! Have you played before, yes or no?",
       "intent": "Say no, never in your life: it's your first time.",
       "accept": [
@@ -90,7 +90,7 @@
     },
     {
       "id": "t5",
-      "npc": "¡Qué talento! Usted tiene suerte, Tomás. ¿Puede venir el sábado?",
+      "npc": "¡Qué talento! Tienes suerte, Tomás. ¿Puedes venir el sábado?",
       "npcEn": "What talent! You're lucky, Tomás. Can you come on Saturday?",
       "intent": "Say no, you can't on Saturday: you work at the café.",
       "accept": [
