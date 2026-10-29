@@ -1,0 +1,46 @@
+{
+  "node": "g:estar-participle",
+  "hook": {
+    "line": "Tomás is in bed with the flu, so there's a sign on the café door. You know *cerrado* from *he cerrado*. Here it isn't something anyone did; it's how the door is.",
+    "es": "Lo siento, el café está cerrado hoy.",
+    "en": "Sorry, the café is closed today."
+  },
+  "examples": [
+    { "es": "El café está cerrado.", "en": "The café is closed." },
+    { "es": "¿Está abierta la droguería?", "en": "Is the chemist's open?" },
+    { "es": "Las arepas ya están hechas.", "en": "The arepas are already made." },
+    { "es": "Vale está preocupada.", "en": "Vale is worried." },
+    { "es": "Los platos están lavados y la cuenta está pagada.", "en": "The dishes are washed and the bill is paid." },
+    { "es": "La carta está escrita, pero no está firmada.", "en": "The letter is written, but it isn't signed." }
+  ],
+  "rule": "You've met these words after *he*, *has*, *ha*: *cerrado*, *hecho*, *escrito*. Put the same word after *estar* and it stops being an action. It describes the state something is in now.\n\n*He cerrado la puerta.* I've closed the door (what I did).\n*La puerta está cerrada.* The door is closed (how it is).\n\nUsed this way, it behaves like any describing word and agrees with what it describes:\n*cerrado, cerrada, cerrados, cerradas*\n\nSo a woman says *estoy cansada*, and the shops are *cerradas*. The odd ones keep their odd shape and still agree: *hecho, hecha*; *abierto, abierta*; *escrito, escrita*.\n\nEnglish does this too, with closed, made, worried. The only new thing is the ending.",
+  "smallPrint": "Teachers call this the participle used as an adjective: *estar* plus the participle names the state an action leaves behind.",
+  "readAndPick": [
+    { "es": "Está cerrada.", "options": ["The café (el café) is closed.", "The door (la puerta) is closed."], "answer": 1 },
+    { "es": "Están abiertos.", "options": ["The bank (el banco) is open.", "The banks (los bancos) are open."], "answer": 1 },
+    { "es": "Estoy preocupada.", "options": ["I'm worried. (a woman speaking)", "I'm worried. (a man speaking)"], "answer": 0 },
+    { "es": "Estamos cansados.", "options": ["I'm tired.", "We're tired.", "They're tired."], "answer": 1 },
+    { "es": "He cerrado la puerta.", "options": ["I've closed the door.", "The door is closed."], "answer": 0 },
+    { "es": "La puerta está cerrada.", "options": ["I've closed the door.", "The door is closed."], "answer": 1 },
+    { "es": "Están haciendo las arepas.", "options": ["They're making the arepas.", "The arepas are made."], "answer": 0 },
+    { "es": "Las arepas están hechas.", "options": ["They're making the arepas.", "The arepas are made."], "answer": 1 },
+    { "es": "¿Está escrita la carta?", "options": ["Is she writing the letter?", "Is the letter written?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *cerrado* or *cerrada*: La droguería está ___.", "answer": "La droguería está cerrada.", "accept": [], "why": "*La droguería* is a *la* word, so *cerrada*." },
+    { "prompt": "Choose *abierto* or *abiertos*: Los bancos están ___.", "answer": "Los bancos están abiertos.", "accept": [], "why": "More than one bank: *abiertos*." },
+    { "prompt": "Say: The café is closed.", "answer": "El café está cerrado.", "accept": [], "why": "How the café is right now: *está cerrado*." },
+    { "prompt": "A woman says: I'm very worried.", "answer": "Estoy muy preocupada.", "accept": [], "why": "The word agrees with the speaker: a woman says *preocupada*." },
+    { "prompt": "Say: The arepas are made.", "answer": "Las arepas están hechas.", "accept": ["Las arepas ya están hechas."], "why": "*Hecho* goes feminine and plural to match *las arepas*." },
+    { "prompt": "Make it plural: La puerta está abierta.", "answer": "Las puertas están abiertas.", "accept": [], "why": "Three changes: *las*, *están*, *abiertas*." },
+    { "prompt": "You've closed the door. Now say how the door is: The door is closed.", "answer": "La puerta está cerrada.", "accept": [], "why": "The action becomes a state: *está*, and *cerrada* to match *la puerta*." },
+    { "prompt": "Make it about Vale and Mariana: Tomás está cansado.", "answer": "Vale y Mariana están cansadas.", "accept": [], "why": "Two women: *están* and *cansadas*." }
+  ],
+  "pitfalls": [
+    { "wrong": "La puerta está cerrado.", "right": "La puerta está cerrada.", "why": "Almost. After *estar*, the word agrees like any describing word: *la puerta*, so *cerrada*." },
+    { "wrong": "El café es cerrado.", "right": "El café está cerrado.", "why": "Closed is the state it's in right now, so *está*." },
+    { "wrong": "Estamos preocupado.", "right": "Estamos preocupados.", "why": "*Estamos* is more than one person, so the ending goes plural too." },
+    { "wrong": "La puerta está cerrando.", "right": "La puerta está cerrada.", "why": "*Cerrando* is closing, an action going on. For the state, use *cerrada*." }
+  ],
+  "personal": "Look around you. Say one thing that's open and one thing that's closed, with *está* or *están*."
+}

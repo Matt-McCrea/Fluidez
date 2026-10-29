@@ -1,0 +1,43 @@
+{
+  "node": "x:participle-agreement",
+  "hook": {
+    "line": "Vale has been tired all week, and she says so twice in one breath. One *-ado* word changes its ending for her; the other never does. Spot which.",
+    "es": "Estoy cansada. He estado cansada toda la semana.",
+    "en": "I'm tired. I've been tired all week. (a woman speaking)"
+  },
+  "examples": [
+    { "es": "Las tiendas están cerradas.", "en": "The shops are closed." },
+    { "es": "Todavía no han abierto las tiendas.", "en": "They haven't opened the shops yet." },
+    { "es": "Las tazas están lavadas.", "en": "The cups are washed." },
+    { "es": "Todavía no he lavado las tazas.", "en": "I haven't washed the cups yet." },
+    { "es": "He estado cansada toda la semana.", "en": "I've been tired all week. (a woman speaking)" },
+    { "es": "¿Has estado enferma este año?", "en": "Have you been ill this year? (to a woman friend)" }
+  ],
+  "rule": "The *-ado*, *-ido* word has two jobs, and they behave differently.\n\nAfter *estar*, it describes, so it agrees: *la puerta está cerrada*, *las tiendas están cerradas*, *Vale está cansada*.\n\nAfter *he*, *has*, *ha*, *hemos*, *han*, it's part of the verb, and it never changes. It stays *-o* whoever and whatever: *Todavía no han abierto las tiendas.* Never *abiertas*.\n\nOne quick test: look to its left.\n*Estar* there: match the ending.\n*He*, *has*, *ha*, *hemos* or *han* there: leave it alone.\n\nThat's why *he estado cansada* has one of each. *Estado* follows *he*, so it never changes; *cansada* describes Vale, so it agrees.",
+  "smallPrint": "Teachers say the participle agrees when it works as an adjective and never changes inside a compound tense like the *pretérito perfecto*.",
+  "readAndPick": [
+    { "es": "Las tazas están lavadas.", "options": ["The cups are washed.", "I haven't washed the cups yet."], "answer": 0 },
+    { "es": "Todavía no he lavado las tazas.", "options": ["The cups are washed.", "I haven't washed the cups yet."], "answer": 1 },
+    { "es": "Todavía no han abierto la droguería.", "options": ["The chemist's is open now.", "They haven't opened the chemist's yet."], "answer": 1 },
+    { "es": "La droguería ya está abierta.", "options": ["The chemist's is open now.", "They haven't opened the chemist's yet."], "answer": 0 },
+    { "es": "He estado cansado.", "options": ["I've been tired. (a man speaking)", "I've been tired. (a woman speaking)"], "answer": 0 },
+    { "es": "He estado cansada.", "options": ["I've been tired. (a man speaking)", "I've been tired. (a woman speaking)"], "answer": 1 },
+    { "es": "¿Has estado enfermo este año?", "options": ["Have you been ill this year? (to a woman friend)", "Have you been ill this year? (to a man friend)"], "answer": 1 },
+    { "es": "Están cerradas.", "options": ["The shops (las tiendas) are closed.", "The bank (el banco) is closed.", "The banks (los bancos) are closed."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *cerrado* or *cerradas*: Las tiendas están ___.", "answer": "Las tiendas están cerradas.", "accept": [], "why": "After *están*, it agrees with *las tiendas*: *cerradas*." },
+    { "prompt": "Choose *abierto* or *abierta*: Todavía no han ___ la droguería.", "answer": "Todavía no han abierto la droguería.", "accept": [], "why": "After *han*, it never changes, even with *la droguería*." },
+    { "prompt": "A woman says: I'm tired.", "answer": "Estoy cansada.", "accept": [], "why": "After *estoy*, it agrees with her: *cansada*." },
+    { "prompt": "A woman says: I've been tired all week.", "answer": "He estado cansada toda la semana.", "accept": [], "why": "*Estado* follows *he* and stays put; *cansada* describes her." },
+    { "prompt": "Say: The cups are washed.", "answer": "Las tazas están lavadas.", "accept": [], "why": "After *están*, *lavadas* matches *las tazas*." },
+    { "prompt": "Now say it as not yet: I haven't washed the cups yet.", "answer": "Todavía no he lavado las tazas.", "accept": ["No he lavado las tazas todavía."], "why": "After *he*, it's *lavado*, whatever you washed." },
+    { "prompt": "They haven't opened the shops yet. An hour later, say: The shops are open.", "answer": "Las tiendas están abiertas.", "accept": ["Las tiendas ya están abiertas."], "why": "Now it's a state after *están*, so it agrees: *abiertas*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Todavía no he lavadas las tazas.", "right": "Todavía no he lavado las tazas.", "why": "Almost. After *he*, the *-ado* word never changes, even with *las tazas*." },
+    { "wrong": "Las tiendas están cerrado.", "right": "Las tiendas están cerradas.", "why": "After *están*, it describes the shops, so it agrees: *cerradas*." },
+    { "wrong": "He estada cansada.", "right": "He estado cansada.", "why": "*Estado* follows *he*, so it stays *-o*. Only *cansada* describes you." }
+  ],
+  "personal": "Say how you are today with *estoy*, then something you haven't done yet this week with *todavía no he*."
+}

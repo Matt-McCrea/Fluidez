@@ -1,0 +1,48 @@
+{
+  "node": "g:ser-estar-adjectives",
+  "hook": {
+    "line": "Everyone at the café knows Don Hernando as the calmest man in Bogotá. This week something is off, and Spanish can say both things in one breath, with two different verbs.",
+    "es": "Don Hernando es muy tranquilo, pero hoy está nervioso.",
+    "en": "Don Hernando is very calm, but today he's nervous."
+  },
+  "examples": [
+    { "es": "Vale es muy simpática, pero hoy está brava.", "en": "Vale is really nice, but today she's angry." },
+    { "es": "La sopa está rica.", "en": "The soup is delicious." },
+    { "es": "Mariana es muy lista.", "en": "Mariana is very clever." },
+    { "es": "El pan está listo.", "en": "The bread is ready." },
+    { "es": "¿Estás cansada?", "en": "Are you tired? (to a woman friend)" },
+    { "es": "Mis papás son muy tranquilos.", "en": "My parents are very calm." },
+    { "es": "Tomás está enfermo y tiene fiebre.", "en": "Tomás is ill and he has a fever." },
+    { "es": "¿Te pasa algo? Estás muy seria.", "en": "Is something wrong? You're very serious. (to a woman friend)" }
+  ],
+  "rule": "You already say *estoy cansado* for how you are right now. Now the same describing word can go with either verb, and the verb changes the message.\n\n*Es* + description: what someone or something is like, the way you'd describe them to a stranger. *Don Hernando es tranquilo.*\n*Está* + description: how they are right now, or how they seem today. *Hoy está nervioso.*\n\nEnglish uses is for both, so you have to ask yourself which one you mean.\n\nA few words change meaning completely:\n*es listo*: clever. *está listo*: ready.\n*es rico*: rich. *está rico*: delicious.\n*es malo*: bad. *está malo*: gone off, or ill.\n\nWith food, *está* is how it tastes today: *la sopa está rica*. With feelings (*cansado*, *triste*, *nervioso*), it's nearly always *está*.",
+  "smallPrint": "Teachers call this the difference between a characteristic (*ser*) and a state (*estar*).",
+  "readAndPick": [
+    { "es": "Hernando es tranquilo.", "options": ["Hernando is a calm person.", "Hernando is calm right now."], "answer": 0 },
+    { "es": "Hernando está tranquilo.", "options": ["Hernando is a calm person.", "Hernando is calm right now."], "answer": 1 },
+    { "es": "Mariana es lista.", "options": ["Mariana is ready.", "Mariana is clever."], "answer": 1 },
+    { "es": "Mariana está lista.", "options": ["Mariana is ready.", "Mariana is clever."], "answer": 0 },
+    { "es": "El tinto está rico.", "options": ["The coffee is expensive.", "The coffee tastes great."], "answer": 1 },
+    { "es": "Simón es nervioso.", "options": ["Simón is a nervous type.", "Simón is nervous at the moment."], "answer": 0 },
+    { "es": "El pescado está malo.", "options": ["The fish has gone off.", "Fish is bad for you.", "The fish is a bad kind."], "answer": 0 },
+    { "es": "Vale está seria.", "options": ["Vale is a serious person.", "Vale is looking serious.", "Vale is a serious chef."], "answer": 1 },
+    { "es": "¿Estás triste?", "options": ["Are you a sad person?", "Are you feeling sad?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *es* or *está* (this is what he's like): Don Hernando ___ muy tranquilo.", "answer": "Don Hernando es muy tranquilo.", "accept": [], "why": "You're describing the kind of man he is, so *es*." },
+    { "prompt": "Choose *es* or *está* (today only): Hoy ___ nervioso.", "answer": "Hoy está nervioso.", "accept": [], "why": "Nervous today is how he is right now, so *está*." },
+    { "prompt": "Ask a friend (a man): Are you tired?", "answer": "¿Estás cansado?", "accept": [], "why": "Tired is how he is right now: *estás*." },
+    { "prompt": "Say: The soup is delicious.", "answer": "La sopa está rica.", "accept": ["La sopa está muy rica."], "why": "How food tastes takes *está*, and *rica* agrees with *la sopa*." },
+    { "prompt": "Say: Mariana is very clever.", "answer": "Mariana es muy lista.", "accept": [], "why": "Clever is what she's like, so *es lista*." },
+    { "prompt": "Say: The bread is ready.", "answer": "El pan está listo.", "accept": [], "why": "Ready is *está listo*. *Es listo* would make the bread clever." },
+    { "prompt": "Change it from what she's like to how she is today: Vale es muy seria.", "answer": "Hoy Vale está muy seria.", "accept": ["Vale está muy seria hoy.", "Vale está muy seria."], "why": "A snapshot of today takes *está*." },
+    { "prompt": "Make it about Tomás and Vale: Tomás está cansado.", "answer": "Tomás y Vale están cansados.", "accept": [], "why": "Two people: *están*, and the ending goes plural, *cansados*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Soy cansado.", "right": "Estoy cansado.", "why": "Almost. Tired is how you are right now, so *estoy*. *Soy cansado* sounds like tired is your personality." },
+    { "wrong": "Mariana está inteligente.", "right": "Mariana es inteligente.", "why": "Being clever is what she's like, not a mood she's in today, so *es*." },
+    { "wrong": "El pan es listo.", "right": "El pan está listo.", "why": "*Es listo* means clever. Bread is never clever, only ready: *está listo*." },
+    { "wrong": "Tomás es enfermo.", "right": "Tomás está enfermo.", "why": "Being ill is a state he's in this week, so *está*." }
+  ],
+  "personal": "Think of someone you know well. Say what they're like with *es*, then say how they are today with *está*."
+}

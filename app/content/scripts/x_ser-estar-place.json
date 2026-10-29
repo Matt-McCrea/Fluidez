@@ -1,0 +1,43 @@
+{
+  "node": "x:ser-estar-place",
+  "hook": {
+    "line": "Vale is already planning a party for when Tomás gets better. To say where the party is, she uses *es*, not *está*. Buildings sit somewhere; events take place.",
+    "es": "La fiesta es en el café, y el café está en la 11.",
+    "en": "The party is at the café, and the café is on 11th Street."
+  },
+  "examples": [
+    { "es": "El café está en la 11.", "en": "The café is on 11th Street." },
+    { "es": "La fiesta es en el café.", "en": "The party is at the café." },
+    { "es": "¿Dónde es la reunión?", "en": "Where's the meeting?" },
+    { "es": "La reunión no es en el café, es en la oficina.", "en": "The meeting isn't at the café, it's at the office." },
+    { "es": "¿Dónde está Tomás?\nEstá en la casa de doña Gloria.", "en": "Where's Tomás?\nHe's at Doña Gloria's house." },
+    { "es": "La cita de Hernando es en el hospital.", "en": "Hernando's appointment is at the hospital." }
+  ],
+  "rule": "For where a thing or a person is, you already use *está*: *El café está en la 11.*\n\nFor where an event happens, Spanish uses *es*: *La fiesta es en el café.* A party, a meeting, a class or an appointment doesn't sit anywhere; it takes place there.\n\nQuick test: could you say takes place in English?\nThe party takes place at the café: *es*.\nThe café takes place on 11th Street? No: *está*.\n\nQuestions work the same way: *¿Dónde es la fiesta?* but *¿Dónde está el café?*\n\nCommon events: *la fiesta*, *la reunión*, *la clase*, *la cena*, *la cita*, *el partido*, *el examen*.",
+  "smallPrint": "Teachers put it this way: *ser* locates events, *estar* locates things and people.",
+  "readAndPick": [
+    { "es": "Es en el parque.", "options": ["The class is in the park.", "The bank is in the park."], "answer": 0 },
+    { "es": "Está en el parque.", "options": ["The class is in the park.", "The bank is in the park."], "answer": 1 },
+    { "es": "Está en la oficina de Mariana.", "options": ["The meeting is at Mariana's office.", "Tomás is at Mariana's office."], "answer": 1 },
+    { "es": "Es en la oficina de Mariana.", "options": ["The meeting is at Mariana's office.", "Tomás is at Mariana's office."], "answer": 0 },
+    { "es": "¿Dónde está?", "options": ["Where's the party?", "Where's the café?"], "answer": 1 },
+    { "es": "¿Dónde es?", "options": ["Where's the party?", "Where's the café?"], "answer": 0 },
+    { "es": "Es en el hospital.", "options": ["Hernando is in hospital.", "Hernando's appointment is at the hospital."], "answer": 1 },
+    { "es": "Está en el hospital.", "options": ["Hernando is in hospital.", "Hernando's appointment is at the hospital."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *es* or *está*: La fiesta ___ en el café.", "answer": "La fiesta es en el café.", "accept": [], "why": "A party takes place somewhere, so *es*." },
+    { "prompt": "Choose *es* or *está*: El café ___ en la 11.", "answer": "El café está en la 11.", "accept": [], "why": "A café is a place that sits on a street: *está*." },
+    { "prompt": "Ask: Where's the meeting?", "answer": "¿Dónde es la reunión?", "accept": [], "why": "You want to know where it happens, so *es*." },
+    { "prompt": "Ask: Where's the bank?", "answer": "¿Dónde está el banco?", "accept": [], "why": "A bank is a building, so *está*." },
+    { "prompt": "Say: The class is at the university.", "answer": "La clase es en la universidad.", "accept": [], "why": "A class is an event: *es*." },
+    { "prompt": "Make it a question: La cena es en la casa de Vale.", "answer": "¿La cena es en la casa de Vale?", "accept": [], "why": "Same words, question marks, and it's still *es*: dinner is an event." },
+    { "prompt": "Say: The meeting isn't at the café, it's at the office.", "answer": "La reunión no es en el café, es en la oficina.", "accept": [], "why": "Both halves are about where the meeting happens, so *es* twice." }
+  ],
+  "pitfalls": [
+    { "wrong": "La fiesta está en el café.", "right": "La fiesta es en el café.", "why": "Almost. A party takes place, so Spanish uses *es*." },
+    { "wrong": "¿Dónde está la reunión?", "right": "¿Dónde es la reunión?", "why": "You're asking where it happens, not where a thing sits: *es*." },
+    { "wrong": "El café es en la 11.", "right": "El café está en la 11.", "why": "A café is a place that sits somewhere: *está*." }
+  ],
+  "personal": "Is there a class, a meeting or a dinner in your week? Say where it is with *es*, then say where that place is with *está*."
+}
