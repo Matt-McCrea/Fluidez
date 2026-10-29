@@ -1,0 +1,47 @@
+{
+  "node": "g:prep-infinitive",
+  "hook": {
+    "line": "A routine is mostly order: what comes before what. Tomás has a list taped to the café door, and every line starts with before or after.",
+    "es": "Antes de abrir, hay que barrer.",
+    "en": "Before opening, you have to sweep."
+  },
+  "examples": [
+    { "es": "Después de comer, tomamos un tinto.", "en": "After eating, we have a black coffee." },
+    { "es": "Antes de salir, me lavo los dientes.", "en": "Before going out, I brush my teeth." },
+    { "es": "Al llegar, me llamas.", "en": "When you arrive, call me. (to a friend)" },
+    { "es": "¿Qué haces después de trabajar?", "en": "What do you do after work? (to a friend)" },
+    { "es": "Vale lava las toallas antes de abrir.", "en": "Vale washes the towels before opening." },
+    { "es": "Al terminar el trabajo, Tomás se va.", "en": "When he finishes work, Tomás leaves." },
+    { "es": "Me voy a la cama después de leer.", "en": "I go to bed after reading." }
+  ],
+  "rule": "After before and after, English uses an -ing word: before leaving, after eating. Spanish uses the plain dictionary form, the one ending in *-ar*, *-er* or *-ir*:\n\n*antes de* + verb: before doing it\n*después de* + verb: after doing it\n*al* + verb: when you do it, on doing it\n\n*Antes de salir.* Before going out.\n*Después de comer.* After eating.\n*Al llegar.* When I get there, on arriving.\n\nThe verb doesn't change for the person: *antes de salir* works for I, you, Vale or all of us. The rest of the sentence says who.\n\nNotice what you never get here: the *-ando* or *-iendo* form. *Después de comiendo* is a classic slip. And don't drop the *de*: *antes salir* is missing a piece.",
+  "smallPrint": "Teachers call this a preposition plus infinitive. *Al* is *a* + *el*, so *al llegar* is literally on the arriving.",
+  "readAndPick": [
+    { "es": "Después de comer, tomamos un tinto.", "options": ["Before eating, we have a black coffee.", "After eating, we have a black coffee.", "While eating, we have a black coffee."], "answer": 1 },
+    { "es": "Antes de salir, me lavo los dientes.", "options": ["Before going out, I brush my teeth.", "After going out, I brush my teeth.", "When I go out, I brush my teeth."], "answer": 0 },
+    { "es": "Al llegar, me llamas.", "options": ["Before you arrive, call me.", "After arriving, I call you.", "When you arrive, call me."], "answer": 2 },
+    { "es": "Me voy a la cama después de leer.", "options": ["I read after going to bed.", "I go to bed after reading.", "I go to bed before reading."], "answer": 1 },
+    { "es": "Antes de abrir, hay que barrer.", "options": ["Before opening, you have to sweep.", "After opening, you have to sweep.", "Before sweeping, you have to open."], "answer": 0 },
+    { "es": "Al abrir la puerta, Tomás ve a Simón.", "options": ["Before opening the door, Tomás sees Simón.", "After Simón opens the door, Tomás sees him.", "On opening the door, Tomás sees Simón."], "answer": 2 },
+    { "es": "Antes de comer, nos lavamos las manos.", "options": ["Before eating, we wash our hands.", "After eating, we wash our hands.", "Before eating, they wash their hands."], "answer": 0 },
+    { "es": "Después de pagar, nos vamos.", "options": ["Before paying, we leave.", "After paying, they leave.", "After paying, we leave."], "answer": 2 },
+    { "es": "Antes de irme, pago la cuenta.", "options": ["After I leave, I pay the bill.", "Before I leave, I pay the bill.", "Before you leave, pay the bill."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Fill the gap with *comer* or *comiendo*, then type the whole sentence: \"*Después de ___, tomamos un tinto.*\" (After eating, we have a black coffee.)", "answer": "Después de comer, tomamos un tinto.", "accept": ["Después de comer tomamos un tinto."], "why": "After *de*, Spanish uses the dictionary form, never the *-iendo* one." },
+    { "prompt": "Fill the gap with *antes de* or *después de*: \"*___ salir, me lavo los dientes.*\" (Before going out, I brush my teeth.)", "answer": "Antes de salir, me lavo los dientes.", "accept": ["Antes de salir me lavo los dientes."], "why": "Before is *antes de*." },
+    { "prompt": "Type in Spanish: After paying, we leave.", "answer": "Después de pagar, nos vamos.", "accept": ["Después de pagar nos vamos.", "Nos vamos después de pagar."], "why": "*Después de* plus *pagar*, just as it is in the dictionary." },
+    { "prompt": "Type in Spanish, to a friend: When you arrive, call me.", "answer": "Al llegar, me llamas.", "accept": ["Al llegar me llamas."], "why": "*Al* plus the verb means when you do it." },
+    { "prompt": "Type in Spanish: I go to bed after reading.", "answer": "Me voy a la cama después de leer.", "accept": ["Después de leer, me voy a la cama.", "Después de leer me voy a la cama."], "why": "Reading is *leer* here: after *de*, no *-iendo*." },
+    { "prompt": "Swap the order: \"*Vale lava las toallas antes de abrir.*\" Start with *Antes de abrir*.", "answer": "Antes de abrir, Vale lava las toallas.", "accept": ["Antes de abrir Vale lava las toallas."], "why": "The *antes de* part can go first; put a comma after it." },
+    { "prompt": "Change before to after: \"*Antes de comer, nos lavamos las manos.*\"", "answer": "Después de comer, nos lavamos las manos.", "accept": ["Después de comer nos lavamos las manos."], "why": "Only *antes de* changes to *después de*; *comer* stays put." },
+    { "prompt": "Ask a friend: What do you do after work? (use *trabajar*)", "answer": "¿Qué haces después de trabajar?", "accept": [], "why": "English says after work; Spanish says after working, with the dictionary form." }
+  ],
+  "pitfalls": [
+    { "wrong": "Después de comiendo, tomamos un tinto.", "right": "Después de comer, tomamos un tinto.", "why": "Almost. English uses -ing after after, but Spanish uses the dictionary form: *comer*." },
+    { "wrong": "Antes salir, me lavo los dientes.", "right": "Antes de salir, me lavo los dientes.", "why": "*Antes* needs its *de* before a verb." },
+    { "wrong": "Antes de salgo, me lavo los dientes.", "right": "Antes de salir, me lavo los dientes.", "why": "After *de* the verb stays in its dictionary form, whoever is going out." },
+    { "wrong": "Al llego, me llamas.", "right": "Al llegar, me llamas.", "why": "*Al* is always followed by the dictionary form: *al llegar*." }
+  ],
+  "personal": "Pick two things you do every day and put them in order with *antes de* or *después de*, the way Tomás's list does."
+}

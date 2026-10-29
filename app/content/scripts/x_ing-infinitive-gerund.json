@@ -1,0 +1,47 @@
+{
+  "node": "x:ing-infinitive-gerund",
+  "hook": {
+    "line": "Vale asks Tomás what he likes doing, and he answers with an -ing word, the way English does. Spanish splits English -ing into two jobs, and only one of them uses *-ando*.",
+    "es": "Me gusta cocinar, pero ahora estoy planchando.",
+    "en": "I like cooking, but right now I'm ironing."
+  },
+  "examples": [
+    { "es": "Me gusta cocinar.", "en": "I like cooking." },
+    { "es": "Vale está cocinando.", "en": "Vale is cooking." },
+    { "es": "Hablar español es difícil.", "en": "Speaking Spanish is hard." },
+    { "es": "No me gusta planchar.", "en": "I don't like ironing." },
+    { "es": "Estoy planchando una camisa.", "en": "I'm ironing a shirt." },
+    { "es": "Gracias por venir.", "en": "Thanks for coming." },
+    { "es": "Me gusta leer antes de dormir.", "en": "I like reading before going to sleep." }
+  ],
+  "rule": "English uses -ing for two very different jobs. Spanish gives each one its own form.\n\nWhen -ing is the name of an activity, Spanish uses the dictionary form (*-ar*, *-er*, *-ir*):\nafter *gusta* or *encanta*: *Me gusta cocinar.*\nas the subject: *Hablar español es difícil.*\nafter little words like *de*, *por*, *antes de*: *Gracias por venir.*\n\nOnly when -ing means be doing, in the middle of it, does Spanish use *estar* plus *-ando* or *-iendo*: *Estoy cocinando.*\n\nA quick test: can you put \"to\" in front instead? I like to cook works, so *cocinar*. Is there an am, is or are in front? Then it's *estoy*, *está* and so on, plus *-ando*.",
+  "smallPrint": "Teachers call the dictionary form the infinitive and the *-ando* form the gerund. English -ing can be either; Spanish keeps them apart.",
+  "readAndPick": [
+    { "es": "Me gusta cocinar.", "options": ["I'm cooking.", "I like cooking."], "answer": 1 },
+    { "es": "Estoy cocinando.", "options": ["I'm cooking.", "I like cooking."], "answer": 0 },
+    { "es": "Bailar es chévere.", "options": ["Dancing is great.", "They're dancing, it's great."], "answer": 0 },
+    { "es": "Estamos bailando.", "options": ["We like dancing.", "We're dancing."], "answer": 1 },
+    { "es": "No me gusta esperar.", "options": ["I don't like waiting.", "I'm not waiting."], "answer": 0 },
+    { "es": "Estoy esperando a Mariana.", "options": ["Waiting for Mariana is boring.", "I'm waiting for Mariana."], "answer": 1 },
+    { "es": "Gracias por esperar.", "options": ["Thanks, I'm waiting.", "Thanks for waiting."], "answer": 1 },
+    { "es": "Vale está nadando.", "options": ["Vale is swimming.", "Vale likes swimming."], "answer": 0 },
+    { "es": "Vivir en Bogotá es caro.", "options": ["Living in Bogotá is expensive.", "I'm living in Bogotá, it's expensive."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *leer* or *leyendo*, then type the whole sentence: \"*Me encanta ___.*\" (I love reading.)", "answer": "Me encanta leer.", "accept": [], "why": "After *encanta*, reading is the name of the activity: the dictionary form." },
+    { "prompt": "Pick *cocinar* or *cocinando*, then type the whole sentence: \"*Vale está ___.*\" (Vale is cooking.)", "answer": "Vale está cocinando.", "accept": [], "why": "*Está* means she's in the middle of it, so *cocinando*." },
+    { "prompt": "Type in Spanish: I don't like ironing.", "answer": "No me gusta planchar.", "accept": [], "why": "After *gusta*, Spanish uses *planchar*, not the *-ando* form." },
+    { "prompt": "Type in Spanish: Speaking Spanish is hard.", "answer": "Hablar español es difícil.", "accept": [], "why": "-ing as the subject of the sentence is the dictionary form: *hablar*." },
+    { "prompt": "Type in Spanish: Thanks for coming.", "answer": "Gracias por venir.", "accept": [], "why": "After *por*, the dictionary form: *venir*." },
+    { "prompt": "Type in Spanish: I'm waiting for Mariana.", "answer": "Estoy esperando a Mariana.", "accept": [], "why": "I am waiting, right now: *estoy* plus *esperando*." },
+    { "prompt": "Change it to right now: \"*Me gusta nadar.*\" Say: I'm swimming.", "answer": "Estoy nadando.", "accept": [], "why": "Be doing takes *estoy* and *nadando*." },
+    { "prompt": "Change it to a like: \"*Estamos bailando.*\" Say: We like dancing.", "answer": "Nos gusta bailar.", "accept": [], "why": "After *gusta*, dancing is just *bailar*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me gusta cocinando.", "right": "Me gusta cocinar.", "why": "Almost. After *gusta*, Spanish names the activity with the dictionary form." },
+    { "wrong": "Hablando español es difícil.", "right": "Hablar español es difícil.", "why": "When -ing is the subject, Spanish uses *hablar*." },
+    { "wrong": "Gracias por viniendo.", "right": "Gracias por venir.", "why": "After *por*, *de* and friends, always the dictionary form." },
+    { "wrong": "Estoy cocinar.", "right": "Estoy cocinando.", "why": "After *estoy*, the verb takes *-ando* or *-iendo*." }
+  ],
+  "personal": "Write one thing you like doing (*Me gusta...*) and what you're actually doing right now (*Estoy...*)."
+}

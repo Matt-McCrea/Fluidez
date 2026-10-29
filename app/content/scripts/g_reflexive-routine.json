@@ -1,0 +1,49 @@
+{
+  "node": "g:reflexive-routine",
+  "hook": {
+    "line": "Tomás's new day starts at five and ends early, because the bakery won't wait. To tell anyone about your day in Spanish, you need a small word that points back at you. You've been using one since day one: *me llamo*.",
+    "es": "Me voy a la cama a las nueve. Uy, se me hizo tarde.",
+    "en": "I go to bed at nine. Oh no, I'm running late."
+  },
+  "examples": [
+    { "es": "Me voy a la cama a las diez.", "en": "I go to bed at ten." },
+    { "es": "¿Cómo te sientes hoy?", "en": "How are you feeling today? (to a friend)" },
+    { "es": "Vale se va a Medellín el viernes.", "en": "Vale is leaving for Medellín on Friday." },
+    { "es": "Nos encontramos en el café a las ocho.", "en": "We meet at the café at eight." },
+    { "es": "No me siento bien.", "en": "I don't feel well." },
+    { "es": "¿Ustedes se van temprano?", "en": "Are you all leaving early?" },
+    { "es": "Te pareces a tu abuela.", "en": "You look like your grandmother. (to a friend)" },
+    { "es": "Voy a irme temprano.", "en": "I'm going to leave early." }
+  ],
+  "rule": "Some Spanish verbs travel with a little word that points back at whoever is doing them. It changes with the person:\n\n*me*: I\n*te*: you (a friend)\n*se*: he, she, you (formal)\n*nos*: we\n*se*: they, you all\n\nSo *me voy* is I'm off, *se va* is she's off, *nos vamos* is we're off. English usually has no \"myself\" here, so don't look for one: *me siento bien* is just I feel well.\n\nThe little word goes right before the verb, and *no* goes before both: *No me siento bien.* After *voy a*, you can glue it to the end instead: *Voy a irme* or *Me voy a ir*, same thing.\n\nThis is how a whole routine gets told: *me levanto* (I get up), *me ducho* (I shower), *me acuesto* (I go to bed). You'll get those verbs later this week; they work exactly like *me voy*.",
+  "smallPrint": "Teachers call these reflexive verbs, and *me*, *te*, *se*, *nos* reflexive pronouns. In the dictionary they end in *-se*: *irse*, *sentirse*, *llamarse*.",
+  "readAndPick": [
+    { "es": "Nos vamos a las seis.", "options": ["They leave at six.", "We leave at six.", "I leave at six."], "answer": 1 },
+    { "es": "Se siente cansado.", "options": ["He feels tired.", "I feel tired.", "You feel tired. (to a friend)"], "answer": 0 },
+    { "es": "¿Te vas?", "options": ["Is he leaving?", "Am I leaving?", "Are you leaving? (to a friend)"], "answer": 2 },
+    { "es": "Se van mañana.", "options": ["We're leaving tomorrow.", "She's leaving tomorrow.", "They're leaving tomorrow."], "answer": 2 },
+    { "es": "No me siento bien.", "options": ["I don't feel well.", "You don't feel well.", "We don't feel well."], "answer": 0 },
+    { "es": "¿Cómo se siente usted?", "options": ["How am I feeling?", "How are you feeling? (formal)", "How are we feeling?"], "answer": 1 },
+    { "es": "Hernando se va a la cama temprano.", "options": ["I go to bed early.", "We go to bed early.", "Hernando goes to bed early."], "answer": 2 },
+    { "es": "Te pareces a tu mamá.", "options": ["You look like your mum. (to a friend)", "I look like my mum.", "She looks like her mum."], "answer": 0 },
+    { "es": "Voy a irme temprano.", "options": ["He's going to leave early.", "I'm going to leave early.", "We're going to leave early."], "answer": 1 },
+    { "es": "Me encuentro con Vale en el parque.", "options": ["We meet Vale in the park.", "Vale meets her friend in the park.", "I meet Vale in the park."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Fill the gap with *me* or *se*, then type the whole sentence: \"*Vale ___ va a las seis.*\" (Vale leaves at six.)", "answer": "Vale se va a las seis.", "accept": [], "why": "Vale is she, and she takes *se*." },
+    { "prompt": "Fill the gap with *te* or *se*. You're asking a friend: \"*¿Cómo ___ sientes?*\"", "answer": "¿Cómo te sientes?", "accept": [], "why": "A friend is *tú*, so the little word is *te*, matching *sientes*." },
+    { "prompt": "Type in Spanish: We're leaving early.", "answer": "Nos vamos temprano.", "accept": ["Nosotros nos vamos temprano."], "why": "We is *nos* plus *vamos*: both point at the same people." },
+    { "prompt": "Type in Spanish: I don't feel well.", "answer": "No me siento bien.", "accept": ["Yo no me siento bien."], "why": "*No* comes first, then *me*, then the verb." },
+    { "prompt": "Make it about Vale and Mariana: \"*Me voy a la cama a las diez.*\"", "answer": "Se van a la cama a las diez.", "accept": ["Vale y Mariana se van a la cama a las diez."], "why": "They take *se*, and the verb takes the *they* ending: *van*." },
+    { "prompt": "Make it negative: \"*Se va mañana.*\"", "answer": "No se va mañana.", "accept": [], "why": "*No* goes in front of the little word, never between it and the verb." },
+    { "prompt": "Say the same thing with the little word glued to the end: \"*Me voy a ir temprano.*\"", "answer": "Voy a irme temprano.", "accept": [], "why": "After *voy a*, the *me* can join the end of *ir*: *irme*." },
+    { "prompt": "Ask a stranger you call *usted*: Are you leaving?", "answer": "¿Se va?", "accept": ["¿Usted se va?", "¿Se va usted?"], "why": "*Usted* shares *se* and *va* with he and she." }
+  ],
+  "pitfalls": [
+    { "wrong": "Yo se siento bien.", "right": "Me siento bien.", "why": "Almost. *Se* is for he, she and they; for I, it's *me*." },
+    { "wrong": "Nos va temprano.", "right": "Nos vamos temprano.", "why": "The little word and the ending both have to say we: *nos vamos*." },
+    { "wrong": "Voy a me ir temprano.", "right": "Voy a irme temprano.", "why": "The little word goes before *voy* or on the end of *ir*, never in the middle." },
+    { "wrong": "Ellos ses van mañana.", "right": "Ellos se van mañana.", "why": "*Se* never changes for more than one person; the verb ending does that job." }
+  ],
+  "personal": "Tell someone about your evening: what time you go to bed (*me voy a la cama a las...*) and how you feel today (*me siento...*)."
+}

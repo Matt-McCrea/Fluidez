@@ -1,0 +1,43 @@
+{
+  "node": "p:lavarse-las-manos",
+  "hook": {
+    "line": "Vale runs a pastry kitchen, and her first rule for Tomás has nothing to do with sugar. In Spanish, the hands she means are never \"my\" hands.",
+    "es": "Me lavo las manos con jabón.",
+    "en": "I wash my hands with soap."
+  },
+  "examples": [
+    { "es": "Me lavo los dientes.", "en": "I brush my teeth." },
+    { "es": "Vale se lava las manos con jabón.", "en": "Vale washes her hands with soap." },
+    { "es": "¿Ya te lavaste los dientes?", "en": "Have you brushed your teeth yet? (to a friend)" },
+    { "es": "Hernando se lava la cara con agua fría.", "en": "Hernando washes his face with cold water." },
+    { "es": "Me lavo el pelo con champú.", "en": "I wash my hair with shampoo." },
+    { "es": "Me pruebo la chaqueta.", "en": "I try the jacket on." }
+  ],
+  "rule": "English says whose hands: I wash *my* hands. Spanish has already said it with *me*, so the body part just takes *el*, *la*, *los* or *las*:\n\n*Me lavo las manos.* I wash my hands.\n*Se lava la cara.* She washes her face.\n\nClothes you put on work the same way: *Me pruebo la chaqueta*, I try my jacket on.\n\nAnd a small surprise: Spanish speakers wash their teeth. *Me lavo los dientes* is the everyday way to say I brush my teeth.",
+  "smallPrint": "The pattern is reflexive verb + *el*, *la*, *los*, *las* + body part or clothing. The pronoun marks the owner, so a possessive like *mis* is left out.",
+  "readAndPick": [
+    { "es": "Te lavas el pelo.", "options": ["I wash my hair.", "You wash your hair. (to a friend)", "He washes his hair."], "answer": 1 },
+    { "es": "Me lavo las manos.", "options": ["I wash my hands.", "I wash your hands.", "We wash our hands."], "answer": 0 },
+    { "es": "Vale se lava la cara.", "options": ["I wash Vale's face.", "We wash our faces.", "Vale washes her face."], "answer": 2 },
+    { "es": "Nos lavamos las manos con jabón.", "options": ["We wash our hands with soap.", "They wash their hands with soap.", "I wash my hands with soap."], "answer": 0 },
+    { "es": "Me lavo los dientes.", "options": ["He brushes his teeth.", "I brush your teeth.", "I brush my teeth."], "answer": 2 },
+    { "es": "Se lavan las manos.", "options": ["She washes her hands.", "They wash their hands.", "I wash my hands."], "answer": 1 },
+    { "es": "¿Te lavaste los dientes?", "options": ["Did I brush my teeth?", "Did you brush your teeth? (to a friend)", "Did he brush his teeth?"], "answer": 1 },
+    { "es": "Me pruebo tu chaqueta.", "options": ["I try your jacket on.", "I try my jacket on.", "You try my jacket on."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Fill the gap with *mis* or *las*, then type the whole sentence: \"*Me lavo ___ manos.*\"", "answer": "Me lavo las manos.", "accept": [], "why": "*Me* already says whose hands, so they just take *las*." },
+    { "prompt": "Fill the gap with *los* or *tus*. You're asking a friend: \"*¿Ya te lavaste ___ dientes?*\"", "answer": "¿Ya te lavaste los dientes?", "accept": ["¿Te lavaste los dientes?"], "why": "*Te* already says they're your teeth: *los dientes*." },
+    { "prompt": "Type in Spanish: I brush my teeth.", "answer": "Me lavo los dientes.", "accept": [], "why": "Spanish washes teeth, and *me* says whose." },
+    { "prompt": "Type in Spanish: Tomás washes his face with cold water.", "answer": "Tomás se lava la cara con agua fría.", "accept": [], "why": "*Se* says it's his own face, so it's *la cara*, not *su cara*." },
+    { "prompt": "Make it about we: \"*Me lavo las manos.*\"", "answer": "Nos lavamos las manos.", "accept": ["Nosotros nos lavamos las manos."], "why": "*Nos* and *lavamos* say we; *las manos* stays as it is." },
+    { "prompt": "Make it about Vale: \"*Me lavo el pelo con champú.*\"", "answer": "Vale se lava el pelo con champú.", "accept": [], "why": "She takes *se lava*, and her hair is still just *el pelo*." },
+    { "prompt": "Type in Spanish: I try the jacket on.", "answer": "Me pruebo la chaqueta.", "accept": [], "why": "Clothes you put on work like body parts: *me* plus *la chaqueta*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me lavo mis manos.", "right": "Me lavo las manos.", "why": "Almost. *Me* already says they're yours, so *mis* says it twice." },
+    { "wrong": "Lavo mis dientes.", "right": "Me lavo los dientes.", "why": "Put the owner in the little word *me*, and give the teeth *los*." },
+    { "wrong": "Vale se lava sus manos.", "right": "Vale se lava las manos.", "why": "*Se* already tells you they're Vale's own hands." }
+  ],
+  "personal": "What do you do before you leave the house? Write two lines with *me lavo* and a body part, using *el*, *la*, *los* or *las*."
+}
