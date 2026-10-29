@@ -1,0 +1,43 @@
+{
+  "node": "p:lugar-tiene",
+  "hook": {
+    "line": "Describing a flat or a barrio is really a list of what it has. Spanish gives you two ways to say it, and the classic slip is gluing them together.",
+    "es": "Mi cuarto tiene una cama, una mesa y una ventana.",
+    "en": "My room has a bed, a table and a window."
+  },
+  "examples": [
+    { "es": "Mi apartamento tiene dos cuartos.", "en": "My apartment has two bedrooms." },
+    { "es": "En mi barrio hay una panadería y dos droguerías.", "en": "In my neighbourhood there's a bakery and two pharmacies." },
+    { "es": "Mi barrio tiene un parque muy bonito.", "en": "My neighbourhood has a really nice park." },
+    { "es": "En el café hay seis mesas.", "en": "There are six tables in the café." },
+    { "es": "Mi cuarto no tiene baño.", "en": "My room doesn't have a bathroom." },
+    { "es": "¿Qué hay en tu barrio?", "en": "What is there in your neighbourhood?" }
+  ],
+  "rule": "Two frames, same picture.\n\nThe place does the having: *Mi barrio tiene un parque.* The place is the subject, so *tener* matches it: one room *tiene*, two rooms *tienen*.\n\nOr start with *en* and let *hay* report what's there: *En mi barrio hay un parque.* Nothing does the having here, and *hay* stays *hay* for one thing or ten.\n\nPick one. *Mi barrio hay un parque* mixes the two. If the sentence starts with the place, use *tiene*; if it starts with *en*, use *hay*.",
+  "smallPrint": "Teachers call *hay* impersonal: it has no subject, which is why the place needs *en* in front of it.",
+  "readAndPick": [
+    { "es": "Mi cuarto tiene una ventana.", "options": ["My room has a window.", "I have a room with a window.", "My room is next to a window."], "answer": 0 },
+    { "es": "Los cuartos tienen ventana.", "options": ["The room has a window.", "The rooms have a window."], "answer": 1 },
+    { "es": "¿Tu apartamento tiene balcón?", "options": ["Your apartment has a balcony.", "Do you have a balcony?", "Does your apartment have a balcony?"], "answer": 2 },
+    { "es": "En mi barrio no hay droguería.", "options": ["There's no pharmacy in my neighbourhood.", "There's a pharmacy in my neighbourhood."], "answer": 0 },
+    { "es": "En el patio hay dos mesas.", "options": ["The patio has one table.", "There are two tables on the patio.", "There are two patios."], "answer": 1 },
+    { "es": "El café no tiene baño.", "options": ["The café has a bathroom.", "The café doesn't have a bathroom."], "answer": 1 },
+    { "es": "Mi barrio tiene tres panaderías.", "options": ["My neighbourhood has three bakeries.", "I have three bakeries in my neighbourhood."], "answer": 0 },
+    { "es": "¿Hay parqueadero en tu edificio?", "options": ["Your building has a car park.", "Is there a car park in your building?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Mi barrio ___ un parque muy bonito.* (*tiene* or *hay*) My neighbourhood has a really nice park.", "answer": "Mi barrio tiene un parque muy bonito.", "accept": [], "why": "The sentence starts with the place, so the place does the having: *tiene*." },
+    { "prompt": "Pick and type the whole sentence: *En mi barrio ___ dos droguerías.* (*tiene* or *hay*) There are two pharmacies in my neighbourhood.", "answer": "En mi barrio hay dos droguerías.", "accept": [], "why": "It starts with *en*, so nothing does the having and *hay* reports it." },
+    { "prompt": "Say: My apartment has two bedrooms.", "answer": "Mi apartamento tiene dos cuartos.", "accept": ["Mi apartamento tiene dos habitaciones."], "why": "The apartment is the subject, so it *tiene* the rooms." },
+    { "prompt": "Say: There are six tables in the café.", "answer": "En el café hay seis mesas.", "accept": ["Hay seis mesas en el café."], "why": "No one has the tables here, so *hay*, with the place after *en*." },
+    { "prompt": "Ask a friend: Does your room have a window?", "answer": "¿Tu cuarto tiene ventana?", "accept": ["¿Tu cuarto tiene una ventana?", "¿Tu habitación tiene ventana?"], "why": "Same frame as a statement, *tu cuarto tiene*, with question marks." },
+    { "prompt": "Make it negative: *Mi cuarto tiene baño.*", "answer": "Mi cuarto no tiene baño.", "accept": [], "why": "*No* goes right before *tiene*." },
+    { "prompt": "Say the same thing with *hay*: *Mi barrio tiene tres panaderías.*", "answer": "En mi barrio hay tres panaderías.", "accept": ["Hay tres panaderías en mi barrio."], "why": "With *hay*, the place moves behind *en*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Mi barrio hay un parque.", "right": "Mi barrio tiene un parque.", "why": "Almost. *Hay* can't take the place as its subject: either the place *tiene* it, or you say *En mi barrio hay un parque*." },
+    { "wrong": "En mi barrio tienen dos droguerías.", "right": "En mi barrio hay dos droguerías.", "why": "After *en* and the place, nobody is doing the having, so the verb is *hay*." },
+    { "wrong": "Los cuartos tiene ventana.", "right": "Los cuartos tienen ventana.", "why": "*Tener* matches the place doing the having: one room *tiene*, two rooms *tienen*." }
+  ],
+  "personal": "Describe your own home and street in two lines: one with *tiene* (*Mi apartamento tiene…*) and one with *hay* (*En mi barrio hay…*)."
+}

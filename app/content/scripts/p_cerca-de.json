@@ -1,0 +1,43 @@
+{
+  "node": "p:cerca-de",
+  "hook": {
+    "line": "Ask a Bogotano where something is and half the answer is *cerca*. The small catch: the moment you say what it's near, you need *de*.",
+    "es": "Mi cuarto queda cerca del café.",
+    "en": "My room is near the café."
+  },
+  "examples": [
+    { "es": "Vivo cerca de la universidad.", "en": "I live near the university." },
+    { "es": "Vivo cerca.", "en": "I live nearby." },
+    { "es": "Está dentro de la caja.", "en": "It's inside the box." },
+    { "es": "La droguería está cerca del parque.", "en": "The pharmacy is near the park." },
+    { "es": "El carro está delante de la casa.", "en": "The car is in front of the house." },
+    { "es": "¿Vives lejos?", "en": "Do you live far away?" }
+  ],
+  "rule": "Words like *cerca* (near), *lejos* (far), *dentro* (inside), *delante* (in front), *encima* (on top) and *debajo* (underneath) can stand alone: *Vivo cerca.* *Está dentro.*\n\nThe moment you name the place, add *de*: *cerca de la universidad*, *dentro de la caja*. English says near the park with no of; Spanish always wants the *de*.\n\nAnd *de* plus *el* squeeze into *del*: *cerca del parque*, *lejos del centro*. With *la*, *los* and *las* nothing changes.",
+  "smallPrint": "Teachers call these adverbs of place; followed by *de* and a noun they work as prepositions: *cerca de*, *dentro de*.",
+  "readAndPick": [
+    { "es": "Vivo cerca.", "options": ["I live nearby.", "I live far away."], "answer": 0 },
+    { "es": "Vivo lejos del centro.", "options": ["I live near the centre.", "I live far from the centre."], "answer": 1 },
+    { "es": "Las llaves están dentro de la caja.", "options": ["The keys are inside the box.", "The keys are under the box.", "The keys are on top of the box."], "answer": 0 },
+    { "es": "El gato está debajo de la cama.", "options": ["The cat is on the bed.", "The cat is under the bed."], "answer": 1 },
+    { "es": "Mi cuarto está encima de la panadería.", "options": ["My room is inside the bakery.", "My room is above the bakery.", "My room is in front of the bakery."], "answer": 1 },
+    { "es": "Hay un parqueadero detrás del café.", "options": ["There's a car park in front of the café.", "There's a car park behind the café."], "answer": 1 },
+    { "es": "El carro está delante de la casa.", "options": ["The car is behind the house.", "The car is inside the house.", "The car is in front of the house."], "answer": 2 },
+    { "es": "¿Queda lejos?", "options": ["Is it far?", "Is it near?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Vivo cerca ___ la universidad.* (*de* or nothing) I live near the university.", "answer": "Vivo cerca de la universidad.", "accept": [], "why": "You name the place, so *de* comes in." },
+    { "prompt": "Pick and type the whole sentence: *La droguería está cerca ___ parque.* (*de el* or *del*) The pharmacy is near the park.", "answer": "La droguería está cerca del parque.", "accept": [], "why": "*De* and *el* always become *del*." },
+    { "prompt": "Say: I live nearby.", "answer": "Vivo cerca.", "accept": ["Yo vivo cerca.", "Vivo aquí cerca."], "why": "Nothing named after *cerca*, so no *de*." },
+    { "prompt": "Say: My room is above the bakery.", "answer": "Mi cuarto está encima de la panadería.", "accept": ["Mi habitación está encima de la panadería.", "Mi cuarto queda encima de la panadería."], "why": "You name the bakery, so *encima de*." },
+    { "prompt": "Ask a friend: Do you live far from the centre?", "answer": "¿Vives lejos del centro?", "accept": ["¿Tú vives lejos del centro?"], "why": "*Lejos de* plus *el centro* gives *lejos del centro*." },
+    { "prompt": "Turn near into far: *El banco está cerca del parque.*", "answer": "El banco está lejos del parque.", "accept": ["El banco queda lejos del parque."], "why": "*Lejos* works just like *cerca*, *de* and all." },
+    { "prompt": "Drop the place: *Vivo lejos del centro.* Just say you live far away.", "answer": "Vivo lejos.", "accept": ["Yo vivo lejos."], "why": "Nothing after *lejos*, so the *de* goes too." }
+  ],
+  "pitfalls": [
+    { "wrong": "Vivo cerca la universidad.", "right": "Vivo cerca de la universidad.", "why": "Almost. Before a place, *cerca* needs *de*." },
+    { "wrong": "Está cerca de el parque.", "right": "Está cerca del parque.", "why": "*De* and *el* always squeeze into *del*." },
+    { "wrong": "Vivo cerca de.", "right": "Vivo cerca.", "why": "If no place comes after it, drop the *de*." }
+  ],
+  "personal": "Write two true lines about where you live: one that names a place (*Vivo cerca de…*) and one that doesn't (*Vivo lejos* or *Vivo cerca*)."
+}

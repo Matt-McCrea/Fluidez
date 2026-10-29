@@ -1,0 +1,47 @@
+{
+  "node": "g:quantifiers",
+  "hook": {
+    "line": "Tomás's new room is small, the rent is high, and the shower works one day in three. To complain properly he needs more than *muy* and *mucho*: he needs quite and too.",
+    "es": "El cuarto es bastante bonito, pero el arriendo es demasiado caro.",
+    "en": "The room is quite nice, but the rent is too expensive."
+  },
+  "examples": [
+    { "es": "Hay mucha gente en la calle.", "en": "There are a lot of people in the street." },
+    { "es": "Trabajo bastante.", "en": "I work quite a lot." },
+    { "es": "Tengo demasiadas cosas.", "en": "I have too many things." },
+    { "es": "Hernando habla demasiado.", "en": "Hernando talks too much." },
+    { "es": "La panadería queda bastante cerca.", "en": "The bakery is quite close." },
+    { "es": "Duermo muy poco.", "en": "I sleep very little." },
+    { "es": "¿Tienes bastante tiempo?", "en": "Do you have enough time?" }
+  ],
+  "rule": "You already have *muy*, *mucho* and *poco*. Two more words fill in the scale:\n\n*poco*: not much\n*bastante*: quite a lot, or enough\n*mucho*: a lot\n*demasiado*: too much\n\nThey work in three spots, just like *mucho*.\n\nBefore a thing, they match it. *Demasiado* takes all four endings: *demasiado café*, *demasiada gente*, *demasiados carros*, *demasiadas cosas*. *Bastante* only adds an *s*: *bastante tiempo*, *bastantes sillas*.\n\nBefore a describing word, they never change: *bastante caro*, *demasiado pequeña*. This is the spot where *mucho* turns into *muy*.\n\nAfter a verb, they never change either: *trabajo bastante*, *habla demasiado*.\n\nCareful with too: *demasiado* is a complaint, more than you want. Very expensive is *muy caro*; too expensive to pay is *demasiado caro*.",
+  "smallPrint": "Teachers call these quantifiers. In front of a noun they agree with it; in front of an adjective or after a verb they work as adverbs and stay fixed.",
+  "readAndPick": [
+    { "es": "El arriendo es demasiado caro.", "options": ["The rent is too expensive.", "The rent is quite expensive.", "The rent is very expensive."], "answer": 0 },
+    { "es": "El cuarto es bastante pequeño.", "options": ["The room is too small.", "The room is quite small."], "answer": 1 },
+    { "es": "Hernando habla demasiado.", "options": ["Hernando talks a lot.", "Hernando doesn't talk much.", "Hernando talks too much."], "answer": 2 },
+    { "es": "Hay poca gente hoy.", "options": ["There are a lot of people today.", "There aren't many people today.", "There are too many people today."], "answer": 1 },
+    { "es": "Tengo bastante tiempo.", "options": ["I have quite a lot of time.", "I don't have much time."], "answer": 0 },
+    { "es": "Tomo demasiado café.", "options": ["I drink a lot of coffee.", "I drink quite a lot of coffee.", "I drink too much coffee."], "answer": 2 },
+    { "es": "Duermo muy poco.", "options": ["I sleep very little.", "I sleep a lot.", "I sleep quite a lot."], "answer": 0 },
+    { "es": "No hay bastantes sillas.", "options": ["There are too many chairs.", "There aren't enough chairs."], "answer": 1 },
+    { "es": "Hay demasiadas mesas en el café.", "options": ["There are too many tables in the café.", "There are a lot of tables in the café."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Hay ___ gente en el café.* (*demasiado* or *demasiada*) There are too many people in the café.", "answer": "Hay demasiada gente en el café.", "accept": ["En el café hay demasiada gente."], "why": "Before a thing it matches, and *gente* is feminine: *demasiada*." },
+    { "prompt": "Pick and type the whole sentence: *El arriendo es ___ caro.* (*muy* or *mucho*) The rent is very expensive.", "answer": "El arriendo es muy caro.", "accept": [], "why": "Before a describing word, *mucho* turns into *muy*." },
+    { "prompt": "Pick and type the whole sentence: *El cuarto es ___ pequeño.* (*bastante* or *bastantes*) The room is quite small.", "answer": "El cuarto es bastante pequeño.", "accept": [], "why": "Before a describing word nothing changes, so no *s*." },
+    { "prompt": "Say: I work quite a lot.", "answer": "Trabajo bastante.", "accept": ["Yo trabajo bastante."], "why": "After a verb, *bastante* stays as it is." },
+    { "prompt": "Say: I have too many things.", "answer": "Tengo demasiadas cosas.", "accept": ["Yo tengo demasiadas cosas."], "why": "*Cosas* is feminine and plural, so *demasiadas*." },
+    { "prompt": "Ask a friend: Do you have enough time?", "answer": "¿Tienes bastante tiempo?", "accept": ["¿Tú tienes bastante tiempo?"], "why": "Enough of a thing is *bastante*, and *tiempo* takes the plain form." },
+    { "prompt": "Turn the complaint up: *El café es muy caro.* Say it's too expensive.", "answer": "El café es demasiado caro.", "accept": [], "why": "More than you want is *demasiado*, and before a describing word it doesn't change." },
+    { "prompt": "Make it about Hernando: *Hablo demasiado.*", "answer": "Hernando habla demasiado.", "accept": [], "why": "The verb changes for Hernando; *demasiado* after a verb stays the same." }
+  ],
+  "pitfalls": [
+    { "wrong": "Hay demasiado gente.", "right": "Hay demasiada gente.", "why": "Almost. Before a thing, *demasiado* matches it, and *gente* is feminine." },
+    { "wrong": "La sala es demasiada pequeña.", "right": "La sala es demasiado pequeña.", "why": "Before a describing word *demasiado* never changes, even next to a feminine one." },
+    { "wrong": "No hay bastante sillas.", "right": "No hay bastantes sillas.", "why": "Before a plural thing, *bastante* adds an *s*." },
+    { "wrong": "El pan de Vale es demasiado bueno.", "right": "El pan de Vale es muy bueno.", "why": "*Demasiado* means more than you want. For a compliment, use *muy*." }
+  ],
+  "personal": "Describe your own home honestly in three lines: one thing that's *bastante* good, one thing that's *demasiado* something, and one thing there's *poco* of."
+}

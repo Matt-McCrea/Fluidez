@@ -1,0 +1,43 @@
+{
+  "node": "x:muy-mucho",
+  "hook": {
+    "line": "English says very hungry and very hot. Spanish says *mucha hambre* and *mucho calor*. Choosing between *muy* and *mucho* comes down to one quick look at the next word.",
+    "es": "Hace mucho calor y tengo mucha sed.",
+    "en": "It's very hot and I'm very thirsty."
+  },
+  "examples": [
+    { "es": "Es muy caro.", "en": "It's very expensive." },
+    { "es": "Cuesta mucho.", "en": "It costs a lot." },
+    { "es": "Hay mucha gente.", "en": "There are a lot of people." },
+    { "es": "Tengo mucha hambre.", "en": "I'm very hungry." },
+    { "es": "Queda muy cerca.", "en": "It's very close." },
+    { "es": "¿Te gusta el barrio?\nSí, mucho.", "en": "Do you like the neighbourhood?\nYes, a lot." }
+  ],
+  "rule": "Look at the word right after it.\n\nA describing word or a how word (*caro*, *cerca*, *bien*, *poco*): use *muy*, and it never changes. *Muy caro*, *muy cerca*.\n\nA thing: use *mucho*, matched to the thing. *Mucha gente*, *muchos carros*.\n\nNothing, because it follows a verb or ends the answer: *mucho*. *Cuesta mucho.* *Sí, mucho.* *Muy* can never stand alone.\n\nThe trap: hunger, thirst, heat and cold are things in Spanish (*tengo hambre*, *hace calor*), so English very turns into *mucho*: *tengo mucha hambre*, *hace mucho frío*.",
+  "smallPrint": "Grammar books say *muy* goes with adjectives and adverbs, while *mucho* goes with nouns and verbs. *Muy* is in fact a shortened *mucho*.",
+  "readAndPick": [
+    { "es": "Vale cocina muy bien.", "options": ["Vale cooks a lot.", "Vale cooks very well."], "answer": 1 },
+    { "es": "Vale cocina mucho.", "options": ["Vale cooks a lot.", "Vale cooks very well."], "answer": 0 },
+    { "es": "Duermo muy poco.", "options": ["I sleep a lot.", "I sleep very little.", "I sleep very well."], "answer": 1 },
+    { "es": "Hay muchos carros.", "options": ["The cars are very nice.", "There are a lot of cars.", "There are very few cars."], "answer": 1 },
+    { "es": "Tengo mucho frío.", "options": ["I'm very cold.", "I'm not very cold."], "answer": 0 },
+    { "es": "Hay muy poca leche.", "options": ["There's a lot of milk.", "There's very little milk."], "answer": 1 },
+    { "es": "Hablas mucho.", "options": ["You talk a lot.", "You speak very well.", "You speak very slowly."], "answer": 0 },
+    { "es": "La droguería queda muy lejos.", "options": ["The pharmacy is quite far.", "The pharmacy is very close.", "The pharmacy is very far."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Es ___ caro.* (*muy* or *mucho*) It's very expensive.", "answer": "Es muy caro.", "accept": [], "why": "*Caro* is a describing word, so *muy*." },
+    { "prompt": "Pick and type the whole sentence: *Tengo ___ hambre.* (*muy* or *mucha*) I'm very hungry.", "answer": "Tengo mucha hambre.", "accept": [], "why": "*Hambre* is a thing you have, and it's feminine, so *mucha*, even though English says very." },
+    { "prompt": "A friend asks if you like the café. Answer: Yes, a lot.", "answer": "Sí, mucho.", "accept": ["Sí, me gusta mucho."], "why": "Nothing comes after it, and *muy* never stands alone." },
+    { "prompt": "Say: It's very cold today.", "answer": "Hoy hace mucho frío.", "accept": ["Hace mucho frío hoy."], "why": "Cold is a thing in Spanish, *hace frío*, so very becomes *mucho*." },
+    { "prompt": "Say: The bakery is very close.", "answer": "La panadería queda muy cerca.", "accept": ["La panadería está muy cerca."], "why": "*Cerca* says where, a how word, so *muy*." },
+    { "prompt": "Say: It costs a lot.", "answer": "Cuesta mucho.", "accept": [], "why": "It comes after the verb, so *mucho*." },
+    { "prompt": "Turn a lot into very little: *Hay mucha leche.*", "answer": "Hay muy poca leche.", "accept": [], "why": "*Poca* matches *leche*, and *muy* goes in front of it without changing." }
+  ],
+  "pitfalls": [
+    { "wrong": "Tengo muy hambre.", "right": "Tengo mucha hambre.", "why": "Almost. *Hambre* is a thing in Spanish, so very becomes *mucha*." },
+    { "wrong": "Es mucho caro.", "right": "Es muy caro.", "why": "*Caro* is a describing word, and before one of those you use *muy*." },
+    { "wrong": "Me gusta muy.", "right": "Me gusta mucho.", "why": "*Muy* always needs a word after it. At the end, use *mucho*." }
+  ],
+  "personal": "Write three true lines: something that's *muy* something, something you have *mucho* or *mucha* of, and something you like *mucho*."
+}

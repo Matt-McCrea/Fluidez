@@ -1,0 +1,43 @@
+{
+  "node": "p:ordinal-floor",
+  "hook": {
+    "line": "Bogotá is a city of tall buildings, so an address comes with a floor. Directions work the same way: the second street, the third door.",
+    "es": "Mi cuarto está en el segundo piso, encima de la panadería.",
+    "en": "My room is on the second floor, above the bakery."
+  },
+  "examples": [
+    { "es": "Vivo en el quinto piso.", "en": "I live on the fifth floor." },
+    { "es": "Es la segunda calle a la derecha.", "en": "It's the second street on the right." },
+    { "es": "El primer día fue difícil.", "en": "The first day was hard." },
+    { "es": "La droguería está en el primer piso.", "en": "The pharmacy is on the ground floor." },
+    { "es": "¿En qué piso vives?", "en": "What floor do you live on?" },
+    { "es": "Vale vive en el cuarto piso.", "en": "Vale lives on the fourth floor." }
+  ],
+  "rule": "Counting words say how many; order words say which one.\n\n*primero*, *segundo*, *tercero*, *cuarto*, *quinto*\n\nThey sit between *el* or *la* and the thing, and match it like any describing word: *el segundo piso*, *la segunda calle*.\n\nTwo of them lose their *o* right before a masculine word: *el primer piso*, *el tercer día*. The feminine keeps its *a*: *la primera vez*.\n\nWatch *cuarto*: it's fourth, while *cuatro* is four. Above ten, people just use the number: *el piso doce*.\n\nIn Colombia the *primer piso* is street level.",
+  "smallPrint": "Teachers call these ordinal numbers. Dropping the *o* in *primer* and *tercer* is called apocope.",
+  "readAndPick": [
+    { "es": "Vivo en el quinto piso.", "options": ["I live on the fourth floor.", "I live on the fifth floor.", "I live on the third floor."], "answer": 1 },
+    { "es": "Es la segunda calle a la derecha.", "options": ["It's the second street on the right.", "There are two streets on the right."], "answer": 0 },
+    { "es": "Hay dos calles a la derecha.", "options": ["It's the second street on the right.", "There are two streets on the right."], "answer": 1 },
+    { "es": "El edificio tiene cinco pisos.", "options": ["The building is on the fifth floor.", "The building has five floors."], "answer": 1 },
+    { "es": "Hay cuatro cuartos en el segundo piso.", "options": ["There are two rooms on the fourth floor.", "There are four rooms on the second floor."], "answer": 1 },
+    { "es": "Es la tercera puerta.", "options": ["It's the third door.", "It's the second door.", "There are three doors."], "answer": 0 },
+    { "es": "Fue el primer día de Tomás en el café.", "options": ["It was Tomás's third day at the café.", "It was Tomás's second day at the café.", "It was Tomás's first day at the café."], "answer": 2 },
+    { "es": "¿En qué piso vives?", "options": ["What floor do you live on?", "How many floors does your building have?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Vivo en el ___ piso.* (*tercero* or *tercer*) I live on the third floor.", "answer": "Vivo en el tercer piso.", "accept": [], "why": "Right before a masculine word, *tercero* drops its *o*." },
+    { "prompt": "Pick and type the whole sentence: *Es la ___ calle a la derecha.* (*segundo* or *segunda*) It's the second street on the right.", "answer": "Es la segunda calle a la derecha.", "accept": [], "why": "*Calle* is feminine, so the order word ends in *a*." },
+    { "prompt": "Pick and type the whole sentence: *Vale vive en el ___ piso.* (*cuatro* or *cuarto*) Vale lives on the fourth floor.", "answer": "Vale vive en el cuarto piso.", "accept": [], "why": "*Cuatro* counts; *cuarto* says which one." },
+    { "prompt": "Say: I live on the fifth floor.", "answer": "Vivo en el quinto piso.", "accept": ["Yo vivo en el quinto piso."], "why": "*El*, then the order word, then *piso*." },
+    { "prompt": "Ask a friend: What floor do you live on?", "answer": "¿En qué piso vives?", "accept": ["¿En qué piso vives tú?"], "why": "The *en* comes first, just as in *Vivo en el quinto piso*." },
+    { "prompt": "Say: The first day was hard.", "answer": "El primer día fue difícil.", "accept": [], "why": "*Día* is masculine, so *primero* shortens to *primer*." },
+    { "prompt": "Move the room down to street level: *Mi cuarto está en el segundo piso.*", "answer": "Mi cuarto está en el primer piso.", "accept": [], "why": "Street level is the *primer piso*, with the short form before *piso*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Vivo en el cuatro piso.", "right": "Vivo en el cuarto piso.", "why": "Almost. *Cuatro* is the count; for the fourth one, Spanish says *cuarto*." },
+    { "wrong": "Es el primero día.", "right": "Es el primer día.", "why": "Right before a masculine word, *primero* drops its *o*: *el primer día*." },
+    { "wrong": "Es la primer vez.", "right": "Es la primera vez.", "why": "Only the masculine shortens. With a feminine word it stays *primera*." }
+  ],
+  "personal": "Say where you live with a floor: *Vivo en el…* If you live at street level, remember that in Bogotá that's the *primer piso*."
+}

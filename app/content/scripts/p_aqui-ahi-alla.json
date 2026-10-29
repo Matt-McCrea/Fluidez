@@ -1,0 +1,43 @@
+{
+  "node": "p:aqui-ahi-alla",
+  "hook": {
+    "line": "Pointing only gets you so far. Spanish splits space into three: right here with me, there by you, and over there, away from us both.",
+    "es": "Las llaves están ahí, al lado de tu celular.",
+    "en": "The keys are there, next to your phone."
+  },
+  "examples": [
+    { "es": "Aquí está tu café.", "en": "Here's your coffee." },
+    { "es": "¿Estás ahí?", "en": "Are you there?" },
+    { "es": "La droguería está allá, en la esquina.", "en": "The pharmacy is over there, on the corner." },
+    { "es": "Vivo aquí cerca.", "en": "I live near here." },
+    { "es": "Esta mesa de aquí está libre.", "en": "This table here is free." },
+    { "es": "Acá no hay parqueadero.", "en": "There's no car park here." }
+  ],
+  "rule": "Three places, three words, lined up with *este*, *ese* and *aquel*:\n\n*aquí*: here, where I am (like *este*)\n*ahí*: there, near you (like *ese*)\n*allá*: over there, far from both of us (like *aquel*)\n\nEnglish squeezes the last two into one there. Spanish asks: is it by you, or away from us both?\n\nThey team up with the pointing words: *esta mesa de aquí*, *aquel edificio de allá*.\n\nIn Colombia you'll hear *acá* for *aquí* all day, and *allá* far more than *allí*. Same meanings.",
+  "smallPrint": "Teachers call these adverbs of place. They follow the same three distances as the demonstratives *este*, *ese* and *aquel*.",
+  "readAndPick": [
+    { "es": "La droguería está allá.", "options": ["The pharmacy is here.", "The pharmacy is over there."], "answer": 1 },
+    { "es": "Aquí está tu café.", "options": ["Here's your coffee.", "Your coffee is over there."], "answer": 0 },
+    { "es": "Aquel edificio de allá es nuevo.", "options": ["This building here is new.", "That building over there is new.", "That building by you is new."], "answer": 1 },
+    { "es": "Vivo aquí cerca.", "options": ["I live near here.", "I live over there.", "I live near you."], "answer": 0 },
+    { "es": "Esa mesa de ahí está libre.", "options": ["This table here is free.", "That table over there is free.", "That table by you is free."], "answer": 2 },
+    { "es": "Acá no hay parqueadero.", "options": ["There's no car park over there.", "There's no car park here."], "answer": 1 },
+    { "es": "¿Tomás está allá?", "options": ["Is Tomás here?", "Is Tomás over there?"], "answer": 1 },
+    { "es": "Estoy aquí, en el café.", "options": ["I'm here, in the café.", "I'm over there, in the café."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "You hand a friend her coffee. Pick and type the whole sentence: *___ está tu café.* (*Aquí* or *Allá*) Here's your coffee.", "answer": "Aquí está tu café.", "accept": ["Acá está tu café."], "why": "The coffee is right where you are, so *aquí*." },
+    { "prompt": "Your keys are next to your friend's phone. Tell her. Pick and type the whole sentence: *Mis llaves están ___, al lado de tu celular.* (*ahí* or *aquí*)", "answer": "Mis llaves están ahí, al lado de tu celular.", "accept": [], "why": "They're near the person you're talking to, so *ahí*." },
+    { "prompt": "Say: The pharmacy is over there, on the corner.", "answer": "La droguería está allá, en la esquina.", "accept": ["La droguería queda allá, en la esquina.", "La droguería está allí, en la esquina."], "why": "Far from both of you is *allá*." },
+    { "prompt": "Say: I live near here.", "answer": "Vivo aquí cerca.", "accept": ["Vivo acá cerca.", "Vivo cerca de aquí.", "Vivo cerca de acá."], "why": "Spanish says here first: *aquí cerca*." },
+    { "prompt": "Say: That building over there is new.", "answer": "Aquel edificio de allá es nuevo.", "accept": ["Aquel edificio es nuevo.", "Ese edificio de allá es nuevo."], "why": "Far from both of you: *aquel* and *allá* go together." },
+    { "prompt": "Move it far away from you both: *Aquí hay una panadería.*", "answer": "Allá hay una panadería.", "accept": ["Allí hay una panadería."], "why": "Over there, away from both of you, is *allá*." },
+    { "prompt": "Say it the Colombian way, with *acá*: *Aquí no hay parqueadero.*", "answer": "Acá no hay parqueadero.", "accept": [], "why": "*Acá* and *aquí* mean the same; *acá* is what you'll hear most in Bogotá." }
+  ],
+  "pitfalls": [
+    { "wrong": "Esa mesa de aquí está libre.", "right": "Esa mesa de ahí está libre.", "why": "*Ese* and *ahí* belong together: both point near the person you're talking to." },
+    { "wrong": "La droguería está ahí, muy lejos.", "right": "La droguería está allá, muy lejos.", "why": "Almost. Far from both of you is *allá*; *ahí* is close to the other person." },
+    { "wrong": "Vivo cerca aquí.", "right": "Vivo aquí cerca.", "why": "Spanish flips the English order: near here is *aquí cerca*." }
+  ],
+  "personal": "Look around and write three lines: something *aquí* next to you, something *ahí* near the person across from you, and something *allá*, out the window or down the street."
+}
