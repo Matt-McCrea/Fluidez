@@ -1,0 +1,258 @@
+{
+  "id": "ch043",
+  "unit": "u16",
+  "title": "Un color muy moderno",
+  "text": "Vale: Bueno, Tomás. La conversación. Es sobre tu ropa.\nTomás: ¿Mi ropa? ¿Nada más?\nVale: Tienes una sola camiseta gris, y la chaqueta es del esposo de Gloria. Y tu zapato derecho está roto.\nTomás: Es un zapato con historia.\nVale: Hoy compramos uniformes y ropa.\nEn San Victorino, Vale fue a la tienda más barata de la calle. Hernando y Simón fueron también.\nVale: Necesito doce camisetas blancas, seis camisas negras y seis delantales. ¿Cuánto vale todo?\nVendedora: Para usted, cuatrocientos mil.\nVale: Trescientos, en efectivo.\nSimón: ¡Me lo llevo todo!\nVendedora: Bueno, el loro compra. Trescientos cincuenta.\nVale: Trescientos, o me voy.\nVendedora: Trescientos. Usted es la clienta más difícil de San Victorino.\nTomás: ¿Me lo puedo medir?\nTomás se probó un saco de lana, una chaqueta de cuero y unas botas negras.\nHernando: ¡Qué elegante, profesor!\nVale: La chaqueta te queda grande. Y las botas, pequeñas. El pantalón sí te queda bien.\nAl final, Tomás compró dos camisas, el pantalón gris, unos tenis blancos, unas medias y un suéter rosado.\nHernando: ¿Un suéter rosado, mijo?\nTomás: Es un color muy moderno.\nHernando compró una falda amarilla para su hija Lucía, y unas medias para él. Vale miró un vestido verde y un bolso negro un rato, pero no compró nada.\nTomás: El vestido te va a quedar muy bien.\nVale: Es el vestido más caro de la calle. Y el bolso también. Necesito un café sin problemas.\nA las cuatro, dos hombres llegaron al café con el sillón morado. El sillón era más grande que la puerta. Lo intentaron tres veces.\nSimón: ¡Me lo llevo, me lo llevo!\nVale: Tomás, ¿qué color tiene la puerta?\nTomás: Azul.\nVale: Pues el sillón morado se queda en la calle, con su color icónico. Mañana lo devuelves.",
+  "gloss": [
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "sillón",
+      "en": "armchair"
+    },
+    {
+      "es": "delantales",
+      "en": "aprons"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "icónico",
+      "en": "iconic"
+    },
+    {
+      "es": "Es un zapato con historia.",
+      "en": "It's a shoe with a history."
+    },
+    {
+      "es": "Bueno, el loro compra.",
+      "en": "All right, the parrot is buying."
+    },
+    {
+      "es": "Lo intentaron tres veces.",
+      "en": "They tried three times."
+    },
+    {
+      "es": "se queda en la calle",
+      "en": "stays out in the street"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What is Vale's serious conversation really about?",
+      "options": [
+        "Tomás's clothes",
+        "The doctor's appointment",
+        "Mariana's invitation",
+        "The money from the chairs"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Vale get the uniforms for three hundred thousand?",
+      "options": [
+        "She offers cash and says she'll leave",
+        "Simón pays for them",
+        "She buys fewer aprons",
+        "The seller knew Rosa"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué compra Hernando?",
+      "options": [
+        "Una falda amarilla y unas medias",
+        "Un vestido verde",
+        "Un suéter rosado",
+        "Unas botas negras"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why doesn't Vale buy the green dress?",
+      "options": [
+        "She says it's the most expensive dress on the street",
+        "It's too small for her",
+        "She doesn't like green",
+        "Tomás doesn't like it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What happens to the armchair at the café?",
+      "options": [
+        "It's bigger than the door and stays in the street",
+        "It goes next to the counter",
+        "Simón breaks it",
+        "Hernando takes it home"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What is wrong with Tomás's right shoe?",
+      "options": [
+        "It's broken",
+        "It's too big",
+        "It's pink",
+        "It's Hernando's"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando call Tomás when he tries on the wool jacket?",
+      "options": [
+        "Professor",
+        "Tourist",
+        "Señor Altamira",
+        "Joaquín"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What colour is the café door?",
+      "options": [
+        "Blue",
+        "Purple",
+        "Black",
+        "Green"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The purple armchair is spending the night on the pavement, and tomorrow Tomás has to return it alone, in Spanish. Vale has refused to help.",
+  "requires": [
+    "c:al-final",
+    "c:bien-y-tu",
+    "c:cuanto-cuesta",
+    "c:entonces-bueno",
+    "c:era",
+    "c:me-lo-llevo",
+    "c:me-lo-puedo-medir",
+    "c:puedo",
+    "c:pues",
+    "c:tienes",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:parecer-quedar",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:superlatives",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:colour-claro-oscuro",
+    "p:con-sin",
+    "p:exclamations-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:street-names",
+    "p:talla-numero",
+    "p:telling-time"
+  ],
+  "lexemes": [
+    "l:amarillo",
+    "l:azul",
+    "l:barato",
+    "l:bien",
+    "l:blanco",
+    "l:bolso",
+    "l:bota",
+    "l:bueno",
+    "l:café",
+    "l:calle",
+    "l:camisa",
+    "l:camiseta",
+    "l:caro",
+    "l:chaqueta",
+    "l:cliente",
+    "l:color",
+    "l:comprar",
+    "l:conversación",
+    "l:cuero",
+    "l:cuánto",
+    "l:delantal",
+    "l:derecho",
+    "l:devolver",
+    "l:difícil",
+    "l:efectivo",
+    "l:elegante",
+    "l:esposo",
+    "l:estar",
+    "l:falda",
+    "l:final",
+    "l:grande",
+    "l:gris",
+    "l:hija",
+    "l:historia",
+    "l:hombre",
+    "l:hoy",
+    "l:icónico",
+    "l:intentar",
+    "l:ir",
+    "l:irse",
+    "l:lana",
+    "l:llegar",
+    "l:llevarse",
+    "l:loro",
+    "l:mañana",
+    "l:media",
+    "l:medir",
+    "l:mirar",
+    "l:moderno",
+    "l:morado",
+    "l:necesitar",
+    "l:negro",
+    "l:pantalón",
+    "l:parar",
+    "l:pequeño",
+    "l:poder",
+    "l:probarse",
+    "l:problema",
+    "l:profesor",
+    "l:puerta",
+    "l:quedar",
+    "l:quedarse",
+    "l:qué",
+    "l:rato",
+    "l:romper",
+    "l:ropa",
+    "l:rosado",
+    "l:saco",
+    "l:ser",
+    "l:sillón",
+    "l:suéter",
+    "l:tener",
+    "l:tenis",
+    "l:tienda",
+    "l:uniforme",
+    "l:valer",
+    "l:vendedor",
+    "l:verde",
+    "l:vestido",
+    "l:vez",
+    "l:zapato"
+  ]
+}

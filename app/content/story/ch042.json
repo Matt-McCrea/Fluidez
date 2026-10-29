@@ -1,0 +1,254 @@
+{
+  "id": "ch042",
+  "unit": "u16",
+  "title": "Setecientos mil",
+  "text": "Doctor Mejía: Señor Pacheco, el corazón está bien. Usted va a vivir muchos años.\nHernando: ¿Muchos años? Entonces voy a ver el fin de Altamira. Y quiero un tinto.\nEn la calle, Tomás le dio un abrazo. Hernando tenía los ojos rojos.\nHernando: Gracias, mijo. Ahora, a San Victorino. Vale lo espera desde las nueve.\nSan Victorino era otro mundo: gente, música y vendedores en todas las calles.\nVendedora: ¿Qué talla usa, joven? ¿Y qué número calza?\nTomás: No sé mi talla, señora. Solo estoy mirando.\nVale estaba en una tienda de sillas.\nVale: ¡Tomás! ¿Dónde estabas?\nTomás: En el banco. Una conversación larga.\nHernando: Y yo en la tienda.\nVale los miró a los dos, pero no dijo nada.\nVendedor: Buenos días, señora, ¿en qué le puedo servir?\nVale: Necesito doce sillas. ¿Cuánto valen?\nVendedor: Ochenta mil la silla. ¿Qué color quiere? Hay rojas, azules, verdes, amarillas, blancas y negras.\nVale: Negras. Y le doy cincuenta mil.\nVendedor: ¿Cincuenta? Setenta.\nVale: Cincuenta y cinco, y las compro hoy.\nVendedor: Bueno. Usted gana.\nEntonces Tomás vio el sillón. Era enorme, viejo y morado.\nVendedor: Es de un bar de salsa de 1975. El material es excelente.\nTomás: Es perfecto para el café. En el café va a ser icónico. ¿Cuánto vale?\nVendedor: Seiscientos mil.\nTomás: Bueno... ¿le doy setecientos?\nVale: ¡Tomás! Tienes que dar menos, no más.\nTomás: Me lo llevo.\nVale: ¿Un sillón morado? ¿Y el material? Tomás, hay que devolver eso.\nTomás: No lo voy a devolver. Mañana llega al café.\nHernando: Hay que ver la puerta del café, mijo.\nEn el celular de Tomás había un mensaje de Mariana: «Una invitación: noche de salsa en un bar de La Candelaria. ¿Vienes?»\nVale leyó la invitación y miró el sillón, muy seria.\nVale: Tomás, mañana tú y yo tenemos una conversación.",
+  "gloss": [
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "sillón",
+      "en": "armchair"
+    },
+    {
+      "es": "icónico",
+      "en": "iconic"
+    },
+    {
+      "es": "San Victorino",
+      "en": "San Victorino (a huge, cheap shopping district in central Bogotá)"
+    },
+    {
+      "es": "Vale lo espera desde las nueve.",
+      "en": "Vale has been waiting for you since nine."
+    },
+    {
+      "es": "¿Qué número calza?",
+      "en": "What shoe size are you?"
+    },
+    {
+      "es": "Y yo en la tienda.",
+      "en": "And I was at the shop."
+    },
+    {
+      "es": "Usted gana.",
+      "en": "You win."
+    },
+    {
+      "es": "Tienes que dar menos, no más.",
+      "en": "You have to offer less, not more."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the doctor tell Hernando?",
+      "options": [
+        "His heart is fine and he will live many more years",
+        "He has to stop drinking coffee",
+        "He needs another appointment",
+        "He must stop driving the Burra"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Vale look at Tomás and Hernando and say nothing?",
+      "options": [
+        "They give two different excuses for being late",
+        "They arrive with Simón",
+        "They have already bought the chairs",
+        "They are wearing new clothes"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cómo compra Vale las sillas?",
+      "options": [
+        "Ofrece menos plata y gana",
+        "Paga ochenta mil por cada silla",
+        "Compra sillas moradas",
+        "No compra sillas"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is strange about the way Tomás haggles?",
+      "options": [
+        "He offers more than the asking price",
+        "He asks Vale to pay",
+        "He says nothing at all",
+        "He speaks English to the seller"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What colour are the twelve chairs Vale chooses?",
+      "options": [
+        "Black",
+        "Red",
+        "Purple",
+        "White"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where does the seller say the armchair comes from?",
+      "options": [
+        "A salsa bar from 1975",
+        "Rosa's old café",
+        "A hotel in La Candelaria",
+        "A cinema"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Mariana's message invite Tomás to?",
+      "options": [
+        "A salsa night in a bar in La Candelaria",
+        "A football match",
+        "Dinner at her house",
+        "A meeting about Altamira"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomorrow the purple armchair arrives at the café, and Vale wants a serious conversation. Tomás is sure she knows about the doctor.",
+  "requires": [
+    "c:a-ver",
+    "c:bien-y-tu",
+    "c:cuanto-cuesta",
+    "c:en-que-le-puedo-servir",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:hola-buenos-dias",
+    "c:me-lo-llevo",
+    "c:no-se",
+    "c:puedo",
+    "c:quiero",
+    "c:solo-estoy-mirando",
+    "c:tienes",
+    "c:un-abrazo",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:colour-claro-oscuro",
+    "p:costar-pagar",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:la-gente-singular",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:talla-numero",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abrazo",
+    "l:ahora",
+    "l:amarillo",
+    "l:azul",
+    "l:año",
+    "l:banco",
+    "l:bar",
+    "l:bien",
+    "l:blanco",
+    "l:bueno",
+    "l:café",
+    "l:calle",
+    "l:celular",
+    "l:color",
+    "l:comprar",
+    "l:conversación",
+    "l:corazón",
+    "l:cuánto",
+    "l:dar",
+    "l:decir",
+    "l:devolver",
+    "l:doctor",
+    "l:día",
+    "l:dónde",
+    "l:enorme",
+    "l:esperar",
+    "l:estar",
+    "l:excelente",
+    "l:fin",
+    "l:ganar",
+    "l:gente",
+    "l:hoy",
+    "l:icónico",
+    "l:invitación",
+    "l:ir",
+    "l:joven",
+    "l:largo",
+    "l:leer",
+    "l:llegar",
+    "l:llevarse",
+    "l:material",
+    "l:mañana",
+    "l:mensaje",
+    "l:mirar",
+    "l:morado",
+    "l:mundo",
+    "l:música",
+    "l:necesitar",
+    "l:negro",
+    "l:noche",
+    "l:número",
+    "l:ojo",
+    "l:perfecto",
+    "l:poder",
+    "l:puerta",
+    "l:querer",
+    "l:qué",
+    "l:rojo",
+    "l:saber",
+    "l:salsa",
+    "l:ser",
+    "l:serio",
+    "l:servir",
+    "l:señor",
+    "l:señora",
+    "l:silla",
+    "l:sillón",
+    "l:talla",
+    "l:tener",
+    "l:tienda",
+    "l:tinto",
+    "l:usar",
+    "l:valer",
+    "l:vendedor",
+    "l:venir",
+    "l:ver",
+    "l:verde",
+    "l:viejo",
+    "l:vivir"
+  ]
+}
