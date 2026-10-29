@@ -78,8 +78,7 @@
     "p:por-la-manana",
     "p:es-de-noche-tarde",
     "p:soler-inf",
-    "p:todos-los-dias",
-    "p:cuando-basic"
+    "p:todos-los-dias"
    ],
    "chunks": [],
    "lexemes": [
@@ -105,6 +104,7 @@
   {
    "type": "patterns",
    "focus": [
+    "p:cuando-basic",
     "p:hedge-knowledge",
     "p:empezar-terminar",
     "p:veces-al",
@@ -173,11 +173,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Tomás's new life starts at five: shower (cold), bakery, café, accounts, chess with Hernando, bed. But every Thursday at eight he locks himself in the storeroom: he is still doing video interviews for a job in Toronto. One Thursday Vale opens the door while he is saying, in English, \"I'm only here for a few months\". She closes it again without a word.",
- "quota": {
-  "bankSentences": 540,
-  "chapters": 3,
-  "scenes": 1,
-  "writingTasks": 3
- }
+ "storyArc": "Tomás's new life starts at five: shower (cold), bakery, café, accounts, chess with Hernando, bed. But every Thursday at eight he locks himself in the storeroom: he is still doing video interviews for a job in Toronto. One Thursday Vale opens the door while he is saying, in English, \"I'm only here for a few months\". She closes it again without a word."
 }

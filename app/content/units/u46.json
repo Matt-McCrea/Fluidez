@@ -45,11 +45,7 @@
     "p:recordar-acordarse",
     "p:no-me-olvido-de",
     "p:por-cierto-hablando-de",
-    "p:en-cuanto-a",
-    "p:perdona-que-te-interrumpa",
-    "p:como-decia",
-    "p:fijarse-reparar-en",
-    "p:la-vi-salir"
+    "p:en-cuanto-a"
    ],
    "chunks": [],
    "lexemes": [
@@ -72,6 +68,10 @@
   {
    "type": "introduce",
    "focus": [
+    "p:perdona-que-te-interrumpa",
+    "p:como-decia",
+    "p:fijarse-reparar-en",
+    "p:la-vi-salir",
     "g:reporting-verbs-mood"
    ],
    "chunks": [],
@@ -108,9 +108,7 @@
     "p:hacia-las-nueve",
     "p:concretar",
     "p:quieres-decir-que",
-    "p:que-no-dice-que-si",
-    "p:segun-dicen",
-    "p:reporting-verbs-stance"
+    "p:que-no-dice-que-si"
    ],
    "chunks": [],
    "lexemes": []
@@ -118,6 +116,8 @@
   {
    "type": "output",
    "focus": [
+    "p:segun-dicen",
+    "p:reporting-verbs-stance",
     "g:reported-speech-full",
     "g:reporting-verbs-mood"
    ],
@@ -174,11 +174,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Vale discovers that Yesid had a meeting with Altamira, and confronts him. Yesid tells his side: Altamira offered him double the value of his share, told him the café would close anyway, and asked him to keep it quiet. Yesid swears he said no. Tomás has to report the whole conversation to the lawyer, word by word, and decide whether he believes him.",
- "quota": {
-  "bankSentences": 636,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 5
- }
+ "storyArc": "Vale discovers that Yesid had a meeting with Altamira, and confronts him. Yesid tells his side: Altamira offered him double the value of his share, told him the café would close anyway, and asked him to keep it quiet. Yesid swears he said no. Tomás has to report the whole conversation to the lawyer, word by word, and decide whether he believes him."
 }

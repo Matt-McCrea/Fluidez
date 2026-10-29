@@ -11,8 +11,7 @@
     "p:si-pero-que",
     "p:lo-mas-recomendable",
     "p:me-hubieras-dicho",
-    "p:disculpa-que",
-    "p:lo-de-noun"
+    "p:disculpa-que"
    ],
    "chunks": [
     "c:costar-un-platal",
@@ -40,6 +39,7 @@
   {
    "type": "output",
    "focus": [
+    "p:lo-de-noun",
     "g:agreement-tricky",
     "g:ser-estar-c1"
    ],
@@ -120,9 +120,7 @@
     "p:orden-sin-imperativo",
     "p:serias-tan-amable",
     "p:me-hace-el-favor",
-    "p:cuantas-veces-tengo-que",
-    "p:sintiendolo-mucho",
-    "p:digas-lo-que-digas"
+    "p:cuantas-veces-tengo-que"
    ],
    "chunks": [
     "c:sin-ir-mas-lejos",
@@ -133,6 +131,8 @@
   {
    "type": "output",
    "focus": [
+    "p:sintiendolo-mucho",
+    "p:digas-lo-que-digas",
     "g:voseo-recognition"
    ],
    "chunks": [],
@@ -179,11 +179,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "To celebrate, the group travels: Carnaval in Barranquilla with Yesid's family, a week in Medellín with Vale's, a night in a village in Boyacá where everyone says \"sumercé\". Tomás learns to hear the regions in people's voices, and to change his own register depending on who he is talking to.",
- "quota": {
-  "bankSentences": 569,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 6
- }
+ "storyArc": "To celebrate, the group travels: Carnaval in Barranquilla with Yesid's family, a week in Medellín with Vale's, a night in a village in Boyacá where everyone says \"sumercé\". Tomás learns to hear the regions in people's voices, and to change his own register depending on who he is talking to."
 }

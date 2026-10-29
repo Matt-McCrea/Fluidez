@@ -46,11 +46,7 @@
     "p:me-pone-de-buen-genio",
     "p:orgulloso-admiracion",
     "p:me-extrana-que",
-    "p:pasar-hambre-frio",
-    "p:la-cara-que-puso",
-    "p:como-cuanto-verbo",
-    "p:precisamente-concretamente",
-    "p:como-para"
+    "p:pasar-hambre-frio"
    ],
    "chunks": [],
    "lexemes": [
@@ -73,6 +69,10 @@
   {
    "type": "introduce",
    "focus": [
+    "p:la-cara-que-puso",
+    "p:como-cuanto-verbo",
+    "p:precisamente-concretamente",
+    "p:como-para",
     "g:topic-fronting"
    ],
    "chunks": [],
@@ -109,9 +109,7 @@
     "p:de-ninguna-manera",
     "p:si-yo-no-fui",
     "p:entusiasmar-fascinar",
-    "p:no-soporto-que",
-    "p:prefiero-que-a-que",
-    "p:me-aburre-que"
+    "p:no-soporto-que"
    ],
    "chunks": [],
    "lexemes": []
@@ -119,6 +117,8 @@
   {
    "type": "output",
    "focus": [
+    "p:prefiero-que-a-que",
+    "p:me-aburre-que",
     "g:cleft-focus",
     "g:topic-fronting"
    ],
@@ -170,11 +170,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Mariana records a podcast episode about the café: it was Rosa who kept the corner alive, it is the neighbours who are fighting for it, and what nobody expected is that a parrot would become its symbol. Tomás learns to put the emphasis exactly where he wants it. The episode reaches number one in Colombia.",
- "quota": {
-  "bankSentences": 597,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 5
- }
+ "storyArc": "Mariana records a podcast episode about the café: it was Rosa who kept the corner alive, it is the neighbours who are fighting for it, and what nobody expected is that a parrot would become its symbol. Tomás learns to put the emphasis exactly where he wants it. The episode reaches number one in Colombia."
 }

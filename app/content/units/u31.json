@@ -44,9 +44,7 @@
     "p:comerse-todo",
     "p:miedo-a",
     "p:extranar",
-    "p:entonces-de-repente",
-    "p:ponerse-a",
-    "p:pensaba-pero"
+    "p:entonces-de-repente"
    ],
    "chunks": [],
    "lexemes": [
@@ -70,6 +68,8 @@
   {
    "type": "introduce",
    "focus": [
+    "p:ponerse-a",
+    "p:pensaba-pero",
     "g:narrative-pasts"
    ],
    "chunks": [],
@@ -162,11 +162,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Tomás finally reads all of Rosa's letters to Joaquín, never sent. By 1978 the siblings had bought the building together with their parents' savings; Joaquín had borrowed money he could not repay and wanted to sell; Rosa refused, they fought, and he left that night. Hernando tells them what Rosa had told him years later: that she had written to him every year and never had the courage to post a single letter.",
- "quota": {
-  "bankSentences": 546,
-  "chapters": 3,
-  "scenes": 2,
-  "writingTasks": 4
- }
+ "storyArc": "Tomás finally reads all of Rosa's letters to Joaquín, never sent. By 1978 the siblings had bought the building together with their parents' savings; Joaquín had borrowed money he could not repay and wanted to sell; Rosa refused, they fought, and he left that night. Hernando tells them what Rosa had told him years later: that she had written to him every year and never had the courage to post a single letter."
 }

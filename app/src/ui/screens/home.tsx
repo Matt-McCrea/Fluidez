@@ -8,7 +8,7 @@ import { anotherAllowed, compilePlan } from '../session/runner';
 import type { PracticeSpec } from '../session/practice-spec';
 import { verbsMet } from '../session/freeplay';
 import { weakSpots } from '../../learner/weak';
-import { streak } from '../store/ui';
+import { streakStatus } from '../store/ui';
 
 export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode) => void; onStory: () => void; onPractise: (spec?: PracticeSpec) => void }) {
   const app = useApp();
@@ -32,12 +32,12 @@ export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode) =
   const chaptersRead = bundle.index.chapters.filter((c) => learner.ledger.hasSeen('chapter', c.id));
   const last = chaptersRead[chaptersRead.length - 1];
   const lastFull = last ? bundle.chapters.get(last.id) : undefined;
-  const days = streak(ui.state.stats.days, today);
+  const { days, keptWithDayOff } = streakStatus(ui.state, today);
   const finished = ui.path.unit >= bundle.course.units.length;
 
   return (
     <main class="screen" id="main">
-      <Heading title={doneToday ? 'Nice work today' : 'Hola'} lead={days > 1 ? `${days} days in a row.` : undefined} />
+      <Heading title={doneToday ? 'Nice work today' : 'Hola'} lead={keptWithDayOff ? `Streak kept with a day off. ${days} days in a row.` : days > 1 ? `${days} days in a row.` : undefined} />
       {bundle.fixture ? <p class="tag" title="The real lessons are still being written">Sample lessons</p> : null}
 
       <section class="card today" aria-labelledby="today-title">

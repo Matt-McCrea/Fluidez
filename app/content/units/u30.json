@@ -48,8 +48,7 @@
     "p:me-da-pena-que",
     "p:me-duele-que",
     "p:me-da-rabia-que",
-    "p:no-soportar-que",
-    "p:estar-harto-de"
+    "p:no-soportar-que"
    ],
    "chunks": [],
    "lexemes": [
@@ -73,6 +72,7 @@
   {
    "type": "introduce",
    "focus": [
+    "p:estar-harto-de",
     "g:verbs-of-change"
    ],
    "chunks": [],
@@ -172,11 +172,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Feelings run high. It scares Vale that they could lose everything; it infuriates Hernando that Tomás is even considering the money; it surprises Tomás how much he cares. He is changing: he has gone quiet and serious, and Jhon Fredy says he has become \"a real rolo\". Vale catches herself missing him on his day off.",
- "quota": {
-  "bankSentences": 582,
-  "chapters": 3,
-  "scenes": 2,
-  "writingTasks": 4
- }
+ "storyArc": "Feelings run high. It scares Vale that they could lose everything; it infuriates Hernando that Tomás is even considering the money; it surprises Tomás how much he cares. He is changing: he has gone quiet and serious, and Jhon Fredy says he has become \"a real rolo\". Vale catches herself missing him on his day off."
 }

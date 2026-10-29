@@ -27,7 +27,7 @@ export interface ContentFiles {
 
 /** The real content tree. Files and folders starting with `_` are ignored. */
 export const CONTENT_FILES: ContentFiles = {
-  graph: import.meta.glob(['/content/graph/**/*.json', '/content/vocab/**/*.json', '!**/_*'], { import: 'default' }),
+  graph: import.meta.glob(['/content/graph/**/*.json', '!**/_*'], { import: 'default' }),
   units: import.meta.glob(['/content/units/**/*.json', '!**/_*'], { import: 'default' }),
   bank: import.meta.glob(['/content/bank/**/*.json', '!**/_*'], { import: 'default' }),
   scripts: import.meta.glob(['/content/scripts/**/*.json', '!**/_*'], { import: 'default' }),

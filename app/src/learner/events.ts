@@ -85,3 +85,34 @@ export function compact(log: EventLog, keepDays: number, now = Date.now()): Even
   }
   return { events: keep, summary: { upTo, counts } };
 }
+
+/** Like delayedAccuracy but with the count: how many delayed scored reviews, and how many were not Again. */
+export function delayedCounts(
+  events: readonly ReviewEvent[],
+  opts: { minAgeDays?: number; since?: number; introducedAt?: (node: NodeId) => number | undefined } = {},
+): { n: number; ok: number } {
+  const minAge = (opts.minAgeDays ?? 7) * DAY_MS;
+  const first = new Map<NodeId, number>();
+  for (const e of events) { const f = first.get(e.node); if (f === undefined || e.at < f) first.set(e.node, e.at); }
+  let n = 0, ok = 0;
+  for (const e of events) {
+    if (e.scored !== 'review') continue;
+    if (opts.since !== undefined && e.at < opts.since) continue;
+    const intro = opts.introducedAt?.(e.node) ?? first.get(e.node);
+    if (intro === undefined || e.at - intro < minAge) continue;
+    n += 1;
+    if (e.grade !== AGAIN) ok += 1;
+  }
+  return { n, ok };
+}
+
+/** Productive and total scored reviews since a time. */
+export function productionCounts(events: readonly ReviewEvent[], since?: number): { n: number; productive: number } {
+  let n = 0, productive = 0;
+  for (const e of events) {
+    if (e.scored !== 'review' || (since !== undefined && e.at < since)) continue;
+    n += 1;
+    if (e.dir === 'productive') productive += 1;
+  }
+  return { n, productive };
+}

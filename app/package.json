@@ -9,7 +9,7 @@
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "gate": "tsx tools/gate.ts",
-    "simulate": "tsx tools/simulate.ts"
+    "simulate": "vite-node tools/simulate.ts --"
   },
   "dependencies": {
     "idb-keyval": "^6.3.0",

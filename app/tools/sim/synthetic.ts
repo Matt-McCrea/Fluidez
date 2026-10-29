@@ -49,7 +49,7 @@ function day(type: LessonType, d: Partial<Unit['days'][number]> = {}): Unit['day
   return { type, focus: [], chunks: [], lexemes: [], ...d };
 }
 
-/** The synthetic unit map: the A1–A2 week, B1+ shifts toward input/output; Patterns days where themes need them. */
+/** The synthetic unit map: the A1-A2 week, B1+ shifts toward input/output; Patterns days where themes need them. */
 export function syntheticCourse(_seed = 1, maxUnits?: number): { units: Unit[]; nodes: GraphNode[] } {
   const units: Unit[] = [];
   const nodes: GraphNode[] = [];
@@ -105,7 +105,7 @@ export function syntheticCourse(_seed = 1, maxUnits?: number): { units: Unit[]; 
       grammarSoFar.push(...gram);
       units.push({
         id: uid, band, title: `Unit ${ui}`, theme: `theme ${ui}`, canDo: `I can do unit ${ui} things`,
-        days, storyArc: `arc ${ui}`, quota: { bankSentences: 0, chapters: 0, scenes: 0, writingTasks: 0 },
+        days, storyArc: `arc ${ui}`,
       });
     }
   }
@@ -142,7 +142,7 @@ export function syntheticCorpus(opts: SyntheticOptions = {}): SyntheticCorpus {
     const unit = unitOf.get(n)!;
     for (let j = 0; j < count; j++) {
       const req = new Set<NodeId>([n]);
-      // 3–6 other nodes known by this point, biased toward recent material
+      // 3-6 other nodes known by this point, biased toward recent material
       const others = r.int(3, 6);
       for (let t = 0; t < others && i > 0; t++) {
         const back = Math.floor(Math.pow(r.next(), 2) * i);
@@ -152,7 +152,7 @@ export function syntheticCorpus(opts: SyntheticOptions = {}): SyntheticCorpus {
       const q = r.next() < 0.3;
       sentences.push({
         id: `${unit}-${++sn}`, es: q ? `¿frase ${sn}?` : `frase ${sn}.`, en: `sentence ${sn}`,
-        accept: [], acceptEn: [], requires: [...req], lexemes: [], targets: [n], unit, source: 'gen',
+        accept: [], acceptEn: [], requires: [...req], targets: [n], unit, source: 'gen',
       });
     }
   }
@@ -196,7 +196,7 @@ export function syntheticCorpus(opts: SyntheticOptions = {}): SyntheticCorpus {
   return { units, nodes, source: { sentences, chapters, scenes, writing, scripts }, injectedLexemes };
 }
 
-/** BLUEPRINT weekly new-word budgets (A1 35–40 items incl. chunks → ~30 words), per 7 days. */
+/** BLUEPRINT weekly new-word budgets (A1 35-40 items incl. chunks → ~30 words), per 7 days. */
 const LEX_PER_WEEK: Record<Band, number> = { A1: 30, A2: 28, B1: 28, B2: 26, C1: 24 };
 const LEX_NOMINAL: Partial<Record<LessonType, number>> = { introduce: 4, drill: 1, input: 13, patterns: 2 };
 const LEX_DAY_CAP: Partial<Record<LessonType, number>> = { introduce: 6, drill: 4, input: 16, patterns: 6 };
@@ -221,7 +221,7 @@ function injectLexemes(units: Unit[], nodes: GraphNode[]): number {
 
 function mkScene(id: string, unit: string, grammar: NodeId[]): Scene {
   return {
-    id, unit, title: id, brief: `brief ${id}`,
+    id, unit, title: id, brief: `brief ${id}`, spare: false,
     turns: Array.from({ length: 6 }, (_, t) => ({
       id: `t${t}`, npc: 'hola', npcEn: 'hi', intent: 'answer', accept: ['sí'], require: [],
       focus: grammar[t % Math.max(1, grammar.length)], next: t < 5 ? `t${t + 1}` : null,

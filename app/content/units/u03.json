@@ -39,8 +39,8 @@
     "c:a-mi-tambien"
    ],
    "lexemes": [
-    "l:lunes",
     "l:don",
+    "l:lunes",
     "l:fiesta",
     "l:plan"
    ]
@@ -96,15 +96,9 @@
     "l:miércoles",
     "l:jueves",
     "l:viernes",
-    "l:sábado",
-    "l:domingo",
-    "l:cine",
-    "l:película",
     "l:música",
     "l:fútbol",
     "l:partido",
-    "l:bailar",
-    "l:cantar",
     "l:caminar"
    ],
    "chapter": "ch006"
@@ -120,12 +114,12 @@
    ],
    "chunks": [],
    "lexemes": [
+    "l:trabajar",
+    "l:pasar",
     "l:helado",
     "l:vez",
-    "l:pasar",
     "l:ahora",
-    "l:dejar",
-    "l:trabajar"
+    "l:dejar"
    ]
   },
   {
@@ -135,6 +129,8 @@
    ],
    "chunks": [],
    "lexemes": [
+    "l:bailar",
+    "l:cantar",
     "l:venir",
     "l:encontrar",
     "l:sentir",
@@ -150,7 +146,12 @@
     "p:days-el-lunes"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:cine",
+    "l:sábado",
+    "l:domingo",
+    "l:película"
+   ]
   },
   {
    "type": "output",
@@ -165,11 +166,5 @@
    "scene": "sc-u03-a"
   }
  ],
- "storyArc": "Vale confronts him and offers a bet instead: if the café takes two million pesos in its first month, he keeps it open for a year. Tomás likes almost nothing about the idea, except Vale's buñuelos. Hernando wants to run a chess table, Simón wants everyone's arepa, and Tomás can't say no in Spanish fast enough. They are going to reopen on Saturday. He is going to regret this.",
- "quota": {
-  "bankSentences": 456,
-  "chapters": 2,
-  "scenes": 1,
-  "writingTasks": 3
- }
+ "storyArc": "Vale confronts him and offers a bet instead: if the café takes two million pesos in its first month, he keeps it open for a year. Tomás likes almost nothing about the idea, except Vale's buñuelos. Hernando wants to run a chess table, Simón wants everyone's arepa, and Tomás can't say no in Spanish fast enough. They are going to reopen on Saturday. He is going to regret this."
 }

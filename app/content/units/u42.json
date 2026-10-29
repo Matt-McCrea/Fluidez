@@ -48,11 +48,7 @@
     "p:no-hace-falta-que",
     "p:dejame-que-te-ayude",
     "p:lo-de-topic",
-    "p:don-dona-nombre",
-    "p:saludos-de-mi-parte",
-    "p:te-lo-agradezco",
-    "p:me-comunica-con",
-    "p:lo-antes-posible"
+    "p:don-dona-nombre"
    ],
    "chunks": [
     "c:crucemos-los-dedos",
@@ -87,9 +83,7 @@
     "p:generic-tu-uno",
     "p:nosotros-instructions",
     "p:le-agradeceria-que",
-    "p:me-harias-un-favor",
-    "p:seria-posible",
-    "p:esta-prohibido-que"
+    "p:me-harias-un-favor"
    ],
    "chunks": [],
    "lexemes": []
@@ -97,6 +91,10 @@
   {
    "type": "output",
    "focus": [
+    "p:saludos-de-mi-parte",
+    "p:te-lo-agradezco",
+    "p:me-comunica-con",
+    "p:lo-antes-posible",
     "g:register-ladder"
    ],
    "chunks": [],
@@ -107,6 +105,8 @@
   {
    "type": "introduce",
    "focus": [
+    "p:seria-posible",
+    "p:esta-prohibido-que",
     "g:softening"
    ],
    "chunks": [],
@@ -181,11 +181,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Now they need everyone: a notary who must be asked very formally, a judge's clerk who must be asked even more formally, Yesid who must be asked as a friend, and Altamira's polished assistant, who must be asked with a smile and a recorder running. Tomás practises the same request in five registers, and Simón learns \"le agradecería que…\".",
- "quota": {
-  "bankSentences": 623,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 5
- }
+ "storyArc": "Now they need everyone: a notary who must be asked very formally, a judge's clerk who must be asked even more formally, Yesid who must be asked as a friend, and Altamira's polished assistant, who must be asked with a smile and a recorder running. Tomás practises the same request in five registers, and Simón learns \"le agradecería que…\"."
 }

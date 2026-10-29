@@ -1,7 +1,7 @@
 import { describe, expect, test, vi } from 'vitest';
 import { initialPath } from '../../src/compiler';
 import { IdbStore, Learner } from '../../src/learner';
-import { emptyUi, MemoryKV, PATH_KEY, UI_KEY, UiStore } from '../../src/ui/store/ui';
+import { applyStreak, emptyUi, MemoryKV, PATH_KEY, streakStatus, UI_KEY, UiStore } from '../../src/ui/store/ui';
 
 describe('UiStore migrations', () => {
   test('a v1 ui document keeps its learnerId and comes out at v2', async () => {
@@ -82,5 +82,61 @@ describe('remediation list on the path', () => {
     const ui = await new UiStore(kv).load();
     expect(ui.path.remediate).toEqual([]);
     expect(ui.path.coreSessions).toBe(2);
+  });
+});
+
+describe('streak freezes', () => {
+  const mk = () => emptyUi('s');
+  const run = (u: ReturnType<typeof mk>, days: string[]) => { for (const d of days) applyStreak(u, d); return u; };
+  const seq = (start: number, n: number) => Array.from({ length: n }, (_, i) => `2026-10-${String(start + i).padStart(2, '0')}`);
+
+  test('a new document holds one freeze; an old ui document loads with freezes 1', async () => {
+    expect(emptyUi('x').freezes).toBe(1);
+    const kv = new MemoryKV();
+    const { freezes, frozenDays, streakRun, weekly, ...old } = emptyUi('old') as any;
+    await kv.set(UI_KEY, { ...old, version: 2 });
+    const ui = await new UiStore(kv).load();
+    expect(ui.state.freezes).toBe(1);
+    expect(ui.state.frozenDays).toEqual([]);
+  });
+
+  test('one freeze is earned at 7 in a row and the cap is 2', () => {
+    const u = run(mk(), seq(1, 6));
+    expect(u.freezes).toBe(1);
+    run(u, seq(7, 1));
+    expect(u.freezes).toBe(2);
+    run(u, seq(8, 14));
+    expect(u.freezes).toBe(2);
+  });
+
+  test('a missed day uses a freeze and the streak survives', () => {
+    const u = run(mk(), ['2026-10-01', '2026-10-02', '2026-10-04']);
+    expect(u.freezes).toBe(0);
+    expect(u.freezeUsedOn).toBe('2026-10-04');
+    expect(u.frozenDays).toEqual(['2026-10-03']);
+    expect(streakStatus(u, '2026-10-04')).toEqual({ days: 3, keptWithDayOff: true, freezes: 0 });
+    expect(streakStatus(u, '2026-10-05').keptWithDayOff).toBe(false);
+  });
+
+  test('with no freeze left, or a longer gap, the streak restarts; reviews are never touched', () => {
+    const u = run(mk(), ['2026-10-01', '2026-10-03', '2026-10-06']);
+    expect(u.freezes).toBe(0);
+    expect(streakStatus(u, '2026-10-06').days).toBe(1);
+    const v = run(mk(), ['2026-10-01', '2026-10-05']);
+    expect(v.freezes).toBe(1);
+    expect(v.streakRun).toBe(1);
+  });
+
+  test('a second session on the same day changes nothing, and Home shows a waiting freeze as kept', () => {
+    const u = run(mk(), ['2026-10-01', '2026-10-01']);
+    expect(u.stats.days).toEqual(['2026-10-01']);
+    expect(streakStatus(u, '2026-10-03').days).toBe(1);
+  });
+
+  test('words are bucketed by day when the tally changes', async () => {
+    const ui = await new UiStore(new MemoryKV()).load();
+    await ui.update((s) => { s.stats.wordsRead += 40; s.stats.wordsWritten += 5; });
+    const k = Object.keys(ui.state.weekly)[0];
+    expect(ui.state.weekly[k]).toEqual({ read: 40, written: 5 });
   });
 });

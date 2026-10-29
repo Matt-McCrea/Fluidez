@@ -11,11 +11,7 @@
     "p:prever-prevenir",
     "p:al-tiempo-que",
     "p:ir-en-aumento",
-    "p:no-te-falta-razon",
-    "p:coincidir-en",
-    "p:una-cosa-es-otra",
-    "p:cabe-preguntarse",
-    "p:en-la-medida-en-que"
+    "p:no-te-falta-razon"
    ],
    "chunks": [
     "c:sin-lugar-a-dudas",
@@ -40,6 +36,10 @@
   {
    "type": "output",
    "focus": [
+    "p:coincidir-en",
+    "p:una-cosa-es-otra",
+    "p:cabe-preguntarse",
+    "p:en-la-medida-en-que",
     "g:nominalisation",
     "g:absolute-constructions"
    ],
@@ -82,8 +82,7 @@
     "p:si-bien-no-olvidemos",
     "p:a-mi-juicio",
     "p:el-presente-trabajo",
-    "p:queda-por-resolver",
-    "p:se-entiende-por"
+    "p:queda-por-resolver"
    ],
    "chunks": [],
    "lexemes": [
@@ -112,9 +111,7 @@
     "p:a-grandes-rasgos",
     "p:en-gran-medida",
     "p:propio-de",
-    "p:plazos",
-    "p:hacer-frente-a",
-    "p:pasar-por-alto"
+    "p:plazos"
    ],
    "chunks": [],
    "lexemes": []
@@ -122,6 +119,9 @@
   {
    "type": "output",
    "focus": [
+    "p:hacer-frente-a",
+    "p:pasar-por-alto",
+    "p:se-entiende-por",
     "g:concessive-advanced"
    ],
    "chunks": [],
@@ -168,11 +168,5 @@
    "scene": "sc-u56-c"
   }
  ],
- "storyArc": "A city newspaper runs an essay competition on \"La ciudad y la memoria\". Tomás writes about progress and forgetting, about who owns a street, and about his grandmother's unsent letters. He argues it, defends it in a public reading and, to his own surprise, wins second prize.",
- "quota": {
-  "bankSentences": 602,
-  "chapters": 5,
-  "scenes": 3,
-  "writingTasks": 6
- }
+ "storyArc": "A city newspaper runs an essay competition on \"La ciudad y la memoria\". Tomás writes about progress and forgetting, about who owns a street, and about his grandmother's unsent letters. He argues it, defends it in a public reading and, to his own surprise, wins second prize."
 }

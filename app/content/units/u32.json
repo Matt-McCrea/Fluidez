@@ -48,9 +48,7 @@
     "p:te-propongo-que",
     "p:podriamos-deberiamos",
     "p:tendrias-que",
-    "p:me-temo-que",
-    "p:pensar-inf",
-    "p:quedar-en"
+    "p:me-temo-que"
    ],
    "chunks": [],
    "lexemes": [
@@ -74,6 +72,8 @@
   {
    "type": "introduce",
    "focus": [
+    "p:pensar-inf",
+    "p:quedar-en",
     "g:subj-cuando-future"
    ],
    "chunks": [],
@@ -169,11 +169,5 @@
    "scene": "sc-u32-c"
   }
  ],
- "storyArc": "A lawyer, Dra. Beatriz Uribe, gives them clear advice: if they find Joaquín or his heirs, the family can claim the building and Altamira's lease is worthless. She recommends that they move fast, before the hearing. Vale writes a business plan for when the café is theirs. Tomás writes a list of everything they need to do before the lease ends.",
- "quota": {
-  "bankSentences": 576,
-  "chapters": 3,
-  "scenes": 3,
-  "writingTasks": 4
- }
+ "storyArc": "A lawyer, Dra. Beatriz Uribe, gives them clear advice: if they find Joaquín or his heirs, the family can claim the building and Altamira's lease is worthless. She recommends that they move fast, before the hearing. Vale writes a business plan for when the café is theirs. Tomás writes a list of everything they need to do before the lease ends."
 }

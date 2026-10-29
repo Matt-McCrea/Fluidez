@@ -3711,9 +3711,7 @@
     "en": "What time shall we meet?"
    }
   ],
-  "requires": [
-   "p:telling-time"
-  ],
+  "requires": [],
   "contrasts": [],
   "serves": [
    "d:tell-time-arrange",
@@ -3721,7 +3719,7 @@
   ],
   "pcic": [],
   "placement": "pcic",
-  "note": "Abrir / cerrar for the action (abre a las nueve); estar abierto / cerrado for the state. Moved from u09 day 7 (82) to u02 day 8 (18) with p:prep-questions-basic, Oct 2026.",
+  "note": "Abrir / cerrar for the action (abre a las nueve); estar abierto / cerrado for the state. Moved from u09 day 7 (82) to u02 day 8 (18) with p:prep-questions-basic, Oct 2026. Taught as a fixed question; it no longer requires p:telling-time (first taught u09 day 6), so the answer pattern comes later. Oct 2026.",
   "sources": [
    "task-quedar",
    "nt-accesibilidad-a1"

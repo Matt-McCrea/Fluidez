@@ -22,7 +22,7 @@ const pass = Number(opt('--pass', '1'));
 const dry = args.includes('--dry');
 
 type Day = { type: string; focus: string[]; chunks: string[]; chapter?: string; scene?: string };
-type Unit = { id: string; band: string; days: Day[]; quota: { bankSentences: number; scenes: number; writingTasks: number } };
+type Unit = { id: string; band: string; days: Day[] };
 
 const units: Unit[] = readdirSync(join(APP, 'content/units')).filter((f) => /^u\d{2}\.json$/.test(f)).sort()
   .map((f) => JSON.parse(readFileSync(join(APP, 'content/units', f), 'utf8')));
@@ -75,18 +75,18 @@ for (const u of inRange) {
           fill('scripts', { UNIT: u.id, NODES: ns.join(' '), APP, SCRATCH: scratch(id) }), [], base + 5);
       });
     }
-    const bankCount = Math.max(u.quota.bankSentences, Math.ceil(1.15 * (q.p95Demand?.sentences ?? 0)));
+    const bankCount = Math.ceil(1.15 * (q.p95Demand?.sentences ?? 0)) || (q.bankSentences ?? 0);
     job(`bank-${u.id}`, 'bank', 'sonnet', [`content/bank/${u.id}.json`],
       fill('bank', { UNIT: u.id, APP, SCRATCH: scratch(`bank-${u.id}`) }) + `\n\nTarget size for this unit: ${bankCount} sentences.`, [], base + 4);
     ids.push(`bank-${u.id}`);
 
-    const nScenes = Math.max(u.quota.scenes, q.scenes ?? 3);
+    const nScenes = q.scenes ?? 3;
     const sceneIds = Array.from({ length: nScenes }, (_, i) => `sc-${u.id}-${String.fromCharCode(97 + i)}`);
     job(`scenes-${u.id}`, 'scenes', lowBand ? 'opus' : 'sonnet', sceneIds.map((s) => `content/scenes/${s}.json`),
       fill('scenes', { UNIT: u.id, SCENES: sceneIds.join(' '), APP, SCRATCH: scratch(`scenes-${u.id}`) }), [], base + 3);
     ids.push(`scenes-${u.id}`);
 
-    const nWriting = Math.max(u.quota.writingTasks, q.writingTasks ?? 12);
+    const nWriting = q.writingTasks ?? 12;
     job(`writing-${u.id}`, 'writing', 'sonnet', [`content/writing/${u.id}.json`],
       fill('writing', { UNIT: u.id, COUNT: String(nWriting), APP, SCRATCH: scratch(`writing-${u.id}`) }), [], base + 3);
     ids.push(`writing-${u.id}`);
@@ -103,7 +103,7 @@ for (const u of inRange) {
     const all = jobs.filter((j) => j.unit === u.id).flatMap((j) => j.outputs);
     job(`review-${u.id}`, 'review', 'opus', all, fill('review', { UNIT: u.id, APP }), ids, base + 1);
   } else {
-    const full = q.bankSentences ?? u.quota.bankSentences;
+    const full = q.bankSentences ?? 0;
     job(`bank2-${u.id}`, 'bank', 'sonnet', [`content/bank/${u.id}-2.json`],
       fill('bank', { UNIT: u.id, APP, SCRATCH: scratch(`bank2-${u.id}`) }).split(`content/bank/${u.id}.json`).join(`content/bank/${u.id}-2.json`)
         + `\n\nThis is a TOP-UP file. content/bank/${u.id}.json already exists: read it and write ${Math.max(0, full - countBank(u.id))} NEW sentences that duplicate none of it (ids ${u.id}-2-0001…). Same rules.`,

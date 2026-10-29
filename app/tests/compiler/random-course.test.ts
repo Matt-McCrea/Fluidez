@@ -50,7 +50,6 @@ export function randomCourse(seed: number, nUnits = 5): { units: Unit[]; nodes: 
     }
     units.push({
       id: `u${String(u + 1).padStart(2, '0')}`, band: 'A1', title: `U${u}`, theme: 't', canDo: 'I can', days, storyArc: 'a',
-      quota: { bankSentences: 0, chapters: 0, scenes: 0, writingTasks: 0 },
     });
   }
   return { units, nodes };

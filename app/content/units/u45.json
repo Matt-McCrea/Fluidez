@@ -41,11 +41,7 @@
     "p:no-tener-ni-idea-de",
     "p:estar-al-tanto-de",
     "p:es-verdad-eso-de-que",
-    "p:de-verdad-que",
-    "p:habria-que-ver-si",
-    "p:lo-mas-probable-es-que",
-    "p:news-quantities",
-    "p:cabe-destacar"
+    "p:de-verdad-que"
    ],
    "chunks": [],
    "lexemes": [
@@ -68,6 +64,10 @@
   {
    "type": "introduce",
    "focus": [
+    "p:habria-que-ver-si",
+    "p:lo-mas-probable-es-que",
+    "p:news-quantities",
+    "p:cabe-destacar",
     "g:conditional-rumour"
    ],
    "chunks": [],
@@ -104,9 +104,7 @@
     "p:mientras-subj",
     "p:para-ser",
     "p:provocar-ocasionar",
-    "p:aproximar-cifras",
-    "p:indice-tasa",
-    "p:duplicarse"
+    "p:aproximar-cifras"
    ],
    "chunks": [],
    "lexemes": []
@@ -114,6 +112,8 @@
   {
    "type": "output",
    "focus": [
+    "p:indice-tasa",
+    "p:duplicarse",
     "g:future-perfect",
     "g:conditional-rumour"
    ],
@@ -168,11 +168,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Mariana's source says that Altamira allegedly paid the suspended official; the official reportedly has left the country. The newspapers report it carefully; social media does not. Then a smaller news item: according to Altamira's press office, the company \"will have finished\" the hotel next door before the decision arrives.",
- "quota": {
-  "bankSentences": 618,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 5
- }
+ "storyArc": "Mariana's source says that Altamira allegedly paid the suspended official; the official reportedly has left the country. The newspapers report it carefully; social media does not. Then a smaller news item: according to Altamira's press office, the company \"will have finished\" the hotel next door before the decision arrives."
 }

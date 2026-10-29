@@ -1,10 +1,13 @@
 // Focused compiler tests: determinism, seeding, path advance, "another",
 // minimum sessions, the backlog throttle and shortages.
+import fs from 'node:fs';
+import path from 'node:path';
 import { describe, expect, test } from 'vitest';
 import {
   advancePath, canDoAnother, compileSession, initialPath, servedRefs, sessionSeed, budget,
-  type CompileInput, type PathState,
+  buildContentIndex, buildCourse, type CompileInput, type PathState,
 } from '../../src/compiler';
+import { BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask } from '../../src/content/schema';
 import { Learner } from '../../src/learner';
 import { corpus } from './helpers';
 
@@ -195,5 +198,43 @@ describe('shortage', () => {
     expect(item?.sentence).toBeUndefined();
     expect(plan.diagnostics.some((d) => d.code === 'bareReview' && d.node === 'g:g1')).toBe(true);
     expect(servedRefs(plan).some((r) => r.id === item?.id)).toBe(false);
+  });
+});
+
+describe('the real course', () => {
+  const root = path.resolve(__dirname, '../../content');
+  const json = (rel: string) => JSON.parse(fs.readFileSync(path.join(root, rel), 'utf8'));
+  const dir = (d: string) => fs.readdirSync(path.join(root, d)).filter((f) => f.endsWith('.json') && !f.startsWith('_')).sort().map((f) => json(`${d}/${f}`));
+  /** Shortages in the shipped u01 to u03 content for a fresh learner's first 30 sessions (2026-10-29): thin gated bank on introduce days, no writing task focused on each grammar point, 3 scenes, 3 remix. Lower it as content lands. */
+  const SHORTAGES_TODAY = 51;
+
+  test('u01 to u03 compile 30 sessions with no more than the known shortages', () => {
+    const nodes = ['grammar', 'patterns', 'chunks', 'contrasts', 'candos', 'lexemes'].flatMap((f) => (json(`graph/${f}.json`) as unknown[]).map((n) => GraphNode.parse(n)));
+    const units = ['u01', 'u02', 'u03'].map((u) => Unit.parse(json(`units/${u}.json`)));
+    const course = buildCourse(units, nodes);
+    const inUnits = new Set(units.map((u) => u.id));
+    const content = buildContentIndex({
+      sentences: dir('bank').flat().map((b) => BankSentence.parse(b)).filter((b) => b.unit && inUnits.has(b.unit)),
+      chapters: dir('story').map((c) => StoryChapter.parse(c)).filter((c) => inUnits.has(c.unit)),
+      scenes: dir('scenes').map((c) => Scene.parse(c)).filter((c) => inUnits.has(c.unit)),
+      writing: dir('writing').flat().map((w) => WritingTask.parse(w)).filter((w) => inUnits.has(w.unit)),
+      scripts: dir('scripts').map((x) => TeachingScript.parse(x)),
+    }, course);
+    let t = T0;
+    const L = Learner.fresh({ now: () => t });
+    let p = initialPath();
+    const shortages: string[] = [];
+    for (let d = 0; d < 30; d++) {
+      t = T0 + d * DAY;
+      const plan = compileSession({ learnerId: 'real', learner: L, path: p, content, course, now: t });
+      for (const x of plan.diagnostics) if (x.code === 'shortage') shortages.push(`session ${d + 1} ${x.block ?? ''} ${x.node ?? ''}: ${x.message}`);
+      L.startSession(t);
+      for (const n of Object.values(plan.newNodes).flat()) L.introduce(n, { results: [true, true, true], at: t });
+      for (const r of servedRefs(plan)) L.ledger.markSeen(r.kind, r.id, { deliberate: r.deliberate, at: t });
+      for (const b of plan.blocks) if (b.kind === 'warmup') for (const it of b.items) if (L.hasCard(it.node, it.direction)) L.review(it.node, it.direction, 3, { at: t });
+      p = advancePath(p, plan, true);
+    }
+    if (shortages.length > SHORTAGES_TODAY) console.log(shortages.join('\n'));
+    expect(shortages.length).toBeLessThanOrEqual(SHORTAGES_TODAY);
   });
 });

@@ -47,13 +47,27 @@ export interface UiState {
   writing: Record<string, WritingMark>;
   /** personal bests in free practice, by spec key (right first time in one timed run) */
   bests: Record<string, number>;
+  /** words read and written per local day, the last 14 days kept (the week's totals come from here) */
+  weekly: Record<string, { read: number; written: number }>;
+  /** days off the streak can absorb; one is earned per 7 days in a row, at most 2 held */
+  freezes: number;
+  /** day key a freeze was last used (the day of the session that followed the missed day) */
+  freezeUsedOn?: string;
+  /** missed days a freeze covered; they bridge the streak without counting as practice */
+  frozenDays: string[];
+  /** practice days in the current run, counting toward the next freeze */
+  streakRun: number;
 }
+
+export const MAX_FREEZES = 2;
+export const FREEZE_EVERY = 7;
 
 export function emptyUi(learnerId = newId()): UiState {
   return {
     version: UI_VERSION, learnerId, onboarded: false,
     stats: { sessions: 0, wordsRead: 0, wordsWritten: 0, days: [], today: 0 },
     saved: [], canDos: [], readSeconds: {}, writing: {}, bests: {},
+    weekly: {}, freezes: 1, frozenDays: [], streakRun: 0,
   };
 }
 
@@ -181,8 +195,8 @@ export class UiStore {
   async commitSession(learner: Learner, path: PathState, day: string): Promise<void> {
     this.path = structuredClone(path);
     const next = structuredClone(this.state);
+    applyStreak(next, day);
     next.stats.sessions += 1;
-    if (!next.stats.days.includes(day)) next.stats.days = [...next.stats.days, day].sort();
     next.stats.today = next.stats.lastDay === day ? next.stats.today + 1 : 1;
     next.stats.lastDay = day;
     this.state = next;
@@ -206,7 +220,10 @@ export class UiStore {
 
   async update(fn: (s: UiState) => void): Promise<void> {
     const next = structuredClone(this.state);
+    const read = next.stats.wordsRead, written = next.stats.wordsWritten;
     fn(next);
+    const dr = next.stats.wordsRead - read, dw = next.stats.wordsWritten - written;
+    if (dr > 0 || dw > 0) addDatedWords(next, localDayKey(Date.now()), Math.max(0, dr), Math.max(0, dw));
     this.state = next;
     this.emit();
     await this.kv.set(UI_KEY, this.state);
@@ -221,8 +238,8 @@ export class UiStore {
   /** Record a finished session on `day` (a learner.day() key). */
   async sessionFinished(day: string): Promise<void> {
     await this.update((s) => {
+      applyStreak(s, day);
       s.stats.sessions += 1;
-      if (!s.stats.days.includes(day)) s.stats.days = [...s.stats.days, day].sort();
       s.stats.today = s.stats.lastDay === day ? s.stats.today + 1 : 1;
       s.stats.lastDay = day;
     });
@@ -250,4 +267,77 @@ export function streak(days: readonly string[], today: string): number {
   let n = 0;
   while (set.has(cur)) { n++; cur = prev(cur); }
   return n;
+}
+
+const pad = (n: number) => String(n).padStart(2, '0');
+export const localDayKey = (at: number): string => { const t = new Date(at); return `${t.getFullYear()}-${pad(t.getMonth() + 1)}-${pad(t.getDate())}`; };
+const dayNum = (k: string): number => { const [y, m, d] = k.split('-').map(Number); return Math.round(Date.UTC(y, m - 1, d) / 86_400_000); };
+
+/** Add words to a day's bucket in place; buckets older than 14 days are dropped. */
+function addDatedWords(s: UiState, day: string, read: number, written: number): void {
+  const w = (s.weekly ??= {});
+  const cur = w[day] ?? { read: 0, written: 0 };
+  w[day] = { read: cur.read + read, written: cur.written + written };
+  for (const k of Object.keys(w)) if (dayNum(day) - dayNum(k) > 14) delete w[k];
+}
+
+/**
+ * Record a finished session on `today` in the streak fields (days, frozenDays,
+ * freezes, freezeUsedOn, streakRun), in place; returns the same object. A gap
+ * of missed days no longer than the freezes held is bridged and the freezes are
+ * used up; a longer gap starts the run again. One freeze is earned each time
+ * the run reaches a multiple of 7 days, up to 2 held. Reviews are never
+ * touched. A second session on the same day changes nothing.
+ */
+export function applyStreak<T extends Pick<UiState, 'freezes' | 'freezeUsedOn' | 'frozenDays' | 'streakRun'> & { stats: { days: string[] } }>(ui: T, today: string): T {
+  ui.freezes = typeof ui.freezes === 'number' ? ui.freezes : 1;
+  ui.frozenDays ??= [];
+  ui.streakRun ??= 0;
+  const days = ui.stats.days;
+  if (days.includes(today)) return ui;
+  const last = days.length ? days[days.length - 1] : undefined;
+  const gap = last === undefined ? 0 : dayNum(today) - dayNum(last) - 1;
+  if (last === undefined || gap < 0) ui.streakRun = 1;
+  else if (gap === 0) ui.streakRun += 1;
+  else if (gap <= ui.freezes) {
+    ui.freezes -= gap;
+    ui.freezeUsedOn = today;
+    for (let i = 1; i <= gap; i++) ui.frozenDays = [...ui.frozenDays, dayKeyFromNum(dayNum(last) + i)];
+    ui.streakRun += 1;
+  } else ui.streakRun = 1;
+  if (ui.streakRun > 0 && ui.streakRun % FREEZE_EVERY === 0) ui.freezes = Math.min(MAX_FREEZES, ui.freezes + 1);
+  ui.stats.days = [...days, today].sort();
+  if (ui.frozenDays.length > 30) ui.frozenDays = ui.frozenDays.slice(-30);
+  return ui;
+}
+
+function dayKeyFromNum(n: number): string {
+  const t = new Date(n * 86_400_000);
+  return `${t.getUTCFullYear()}-${pad(t.getUTCMonth() + 1)}-${pad(t.getUTCDate())}`;
+}
+
+/**
+ * What Home shows about the streak on `today`: the length (a day covered by a
+ * freeze bridges but does not count), whether a freeze kept it going, and
+ * whether a day off is waiting to be covered by one.
+ */
+export function streakStatus(ui: Pick<UiState, 'freezes' | 'freezeUsedOn' | 'frozenDays'> & { stats: { days: string[] } }, today: string): { days: number; keptWithDayOff: boolean; freezes: number } {
+  const frozen = new Set(ui.frozenDays ?? []);
+  const set = new Set(ui.stats.days);
+  const last = ui.stats.days[ui.stats.days.length - 1];
+  const freezes = typeof ui.freezes === 'number' ? ui.freezes : 1;
+  let cur = today;
+  if (!set.has(cur)) cur = dayKeyFromNum(dayNum(today) - 1);
+  // missed days not yet absorbed: a freeze will cover them when the next session finishes
+  if (last !== undefined && !set.has(today)) {
+    const gap = dayNum(today) - dayNum(last) - 1;
+    if (gap >= 1 && gap <= freezes) cur = last;
+  }
+  let n = 0;
+  for (;;) {
+    if (set.has(cur)) n++;
+    else if (!frozen.has(cur)) break;
+    cur = dayKeyFromNum(dayNum(cur) - 1);
+  }
+  return { days: n, keptWithDayOff: ui.freezeUsedOn === today, freezes };
 }

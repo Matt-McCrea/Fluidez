@@ -70,9 +70,7 @@
     "p:estimado-colon",
     "p:me-permito",
     "p:adjunto-envio",
-    "p:por-todo-lo-anterior-solicito",
-    "p:le-ruego-que",
-    "p:solicitamos-su-colaboracion"
+    "p:por-todo-lo-anterior-solicito"
    ],
    "chunks": [],
    "lexemes": []
@@ -80,6 +78,8 @@
   {
    "type": "output",
    "focus": [
+    "p:le-ruego-que",
+    "p:solicitamos-su-colaboracion",
     "g:formal-letter-grammar"
    ],
    "chunks": [],
@@ -161,11 +161,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Formal writing week: a complaint to the mayor's office about the demolition, an application for heritage protection, and a formal letter to Yesid's family proposing a cooperative. Tomás discovers Colombian formal Spanish: \"me permito informarle\", \"quedo atento\", \"cordialmente\". Vale says his emails now sound like her bank.",
- "quota": {
-  "bankSentences": 482,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 5
- }
+ "storyArc": "Formal writing week: a complaint to the mayor's office about the demolition, an application for heritage protection, and a formal letter to Yesid's family proposing a cooperative. Tomás discovers Colombian formal Spanish: \"me permito informarle\", \"quedo atento\", \"cordialmente\". Vale says his emails now sound like her bank."
 }

@@ -4,7 +4,7 @@ Fill in the inputs, then hand everything below the line to the writer.
 
 **Inputs**
 - `UNIT`: the unit id, e.g. `u04`
-- `SCENES`: the scene ids, `sc-{UNIT}-a`, `sc-{UNIT}-b`, … — as many as `content/_reports/quotas.json` → `units.{UNIT}.scenes` (u01: 3). The one named in a day's `scene` field is played that day; the others are spares for review and replays.
+- `SCENES`: the scene ids, `sc-{UNIT}-a`, `sc-{UNIT}-b`, … — as many as `content/_reports/quotas.json` → `units.{UNIT}.scenes` (u01: 3). The one named in a day's `scene` field is played that day; the others are spares for review and replays; set `"spare": true` on each of them (the schema default is false).
 - `APP`: `/Users/Matthew/Fluidez/app`
 - `SCRATCH`: your own folder in the scratchpad
 

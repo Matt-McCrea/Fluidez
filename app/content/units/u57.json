@@ -11,11 +11,7 @@
     "p:salir-adelante",
     "p:se-me-body",
     "p:me-sorprende-me-sorprendo",
-    "p:parece-mentira-que",
-    "p:arrepentirse-de-haber",
-    "p:si-volviera-a-nacer",
-    "p:no-queda-de-otra",
-    "p:ya-era-hora-de-que"
+    "p:parece-mentira-que"
    ],
    "chunks": [
     "c:guardar-las-formas",
@@ -43,6 +39,10 @@
   {
    "type": "output",
    "focus": [
+    "p:arrepentirse-de-haber",
+    "p:si-volviera-a-nacer",
+    "p:no-queda-de-otra",
+    "p:ya-era-hora-de-que",
     "g:concessive-advanced",
     "g:consecutive-advanced"
    ],
@@ -93,9 +93,7 @@
     "p:no-me-extrana-que",
     "p:hasta-la-coronilla",
     "p:quien-tuviera",
-    "p:estar-por",
-    "p:si-quieres-que",
-    "p:y-si-hubieramos"
+    "p:estar-por"
    ],
    "chunks": [
     "c:me-importa-un-comino",
@@ -128,9 +126,7 @@
     "p:cargo-de-conciencia",
     "p:no-estar-para",
     "p:entrarle-algo",
-    "p:quedar-grabado",
-    "p:romperse-la-cabeza",
-    "p:caer-en-cuenta"
+    "p:quedar-grabado"
    ],
    "chunks": [],
    "lexemes": []
@@ -138,6 +134,10 @@
   {
    "type": "output",
    "focus": [
+    "p:romperse-la-cabeza",
+    "p:caer-en-cuenta",
+    "p:si-quieres-que",
+    "p:y-si-hubieramos",
     "g:conditional-advanced"
    ],
    "chunks": [],
@@ -184,11 +184,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Hernando dies in his sleep the week his memoir goes to print. The café closes for a day; three hundred taxi drivers drive past honking. Tomás feels grief, regret for every chess game he lost on purpose, relief that the book arrived in time, and anger that it all happened at once. Vale comes back from Medellín for the funeral, and does not go back.",
- "quota": {
-  "bankSentences": 680,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 6
- }
+ "storyArc": "Hernando dies in his sleep the week his memoir goes to print. The café closes for a day; three hundred taxi drivers drive past honking. Tomás feels grief, regret for every chess game he lost on purpose, relief that the book arrived in time, and anger that it all happened at once. Vale comes back from Medellín for the funeral, and does not go back."
 }

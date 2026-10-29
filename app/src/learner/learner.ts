@@ -369,6 +369,41 @@ export class Learner {
     return structuredClone(this.state.nodes[id]);
   }
 
+  /**
+   * Make a node known without a review history (placement): Review-state
+   * cards at the given stability, FSRS default difficulty, due at `dueAt`.
+   * A card spec of `null` or absent means no card of that direction. A node
+   * seeded as learned (stability >= LEARNED_STABILITY_DAYS) counts one novel
+   * pass and has its receptive card suspended, as `maintain` would. No-op for
+   * a node already introduced.
+   */
+  seedKnown(id: NodeId, spec: {
+    at: number; productive: boolean;
+    receptive?: { stability: number; dueAt: number; suspended?: boolean } | null;
+    productiveCard?: { stability: number; dueAt: number } | null;
+  }): void {
+    if (this.state.nodes[id]) return;
+    const diff = this.scheduler.next(toCard(newCard(spec.at)), new Date(spec.at), Rating.Good).card.difficulty;
+    const make = (c: { stability: number; dueAt: number }): CardJSON => {
+      const days = Math.max(1, Math.round(c.stability));
+      return {
+        due: c.dueAt, stability: c.stability, difficulty: diff, scheduled_days: days, learning_steps: 0,
+        reps: 3, lapses: 0, state: State.Review, last_review: c.dueAt - days * DAY_MS, baseStability: c.stability,
+      };
+    };
+    const learned = Math.max(spec.receptive?.stability ?? 0, spec.productiveCard?.stability ?? 0) >= LEARNED_STABILITY_DAYS;
+    const r: NodeRecord = {
+      id, introducedAt: spec.at, introDay: this.day(spec.at), novelPasses: learned ? 1 : 0, exposures: 0, productiveTrack: spec.productive,
+    };
+    if (spec.receptive) {
+      r.receptive = make(spec.receptive);
+      if (spec.receptive.suspended || (learned && spec.productive)) r.receptive.suspended = true;
+    }
+    if (spec.productiveCard) { r.productive = make(spec.productiveCard); r.productiveUnlockedAt = spec.at; }
+    this.state.nodes[id] = r;
+    this.touch();
+  }
+
   /** Record one within-session retrieval. `done` says the session can stop asking. */
   learningStep(id: NodeId, correct: boolean, opts: { at?: number; ms?: number; op?: string; tries?: number; sentence?: string; novel?: boolean } = {}): StepResult {
     const r = this.rec(id);

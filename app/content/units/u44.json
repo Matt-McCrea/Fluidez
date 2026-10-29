@@ -49,9 +49,7 @@
     "p:que-opinas-de-que",
     "p:lo-veo-dificil",
     "p:que-subj-me-parece",
-    "p:habria-que",
-    "p:estaria-bien-que",
-    "p:preferiria-que"
+    "p:habria-que"
    ],
    "chunks": [
     "c:si-tu-lo-dices",
@@ -77,6 +75,8 @@
   {
    "type": "introduce",
    "focus": [
+    "p:estaria-bien-que",
+    "p:preferiria-que",
     "g:subj-conditions"
    ],
    "chunks": [],
@@ -113,9 +113,7 @@
     "p:tienes-toda-la-razon",
     "p:no-estoy-seguro-de-que",
     "p:tengo-la-impresion-de-que",
-    "p:voy-a-defender-que",
-    "p:un-estudio-muestra-que",
-    "p:a-mi-modo-de-ver"
+    "p:voy-a-defender-que"
    ],
    "chunks": [],
    "lexemes": []
@@ -123,6 +121,8 @@
   {
    "type": "output",
    "focus": [
+    "p:un-estudio-muestra-que",
+    "p:a-mi-modo-de-ver",
     "g:subj-concessive",
     "g:subj-conditions"
    ],
@@ -180,11 +180,5 @@
    "scene": "sc-u44-c"
   }
  ],
- "storyArc": "The public hearing at the heritage institute. Altamira's lawyers argue that the building is unsafe and has no value; Tomás, Yesid and the neighbours argue that it does, with documents, photos, Rosa's letters and Hernando's testimony. Even if they lose, Tomás says, they will have told the truth. The decision is postponed for three months.",
- "quota": {
-  "bankSentences": 666,
-  "chapters": 5,
-  "scenes": 3,
-  "writingTasks": 5
- }
+ "storyArc": "The public hearing at the heritage institute. Altamira's lawyers argue that the building is unsafe and has no value; Tomás, Yesid and the neighbours argue that it does, with documents, photos, Rosa's letters and Hernando's testimony. Even if they lose, Tomás says, they will have told the truth. The decision is postponed for three months."
 }

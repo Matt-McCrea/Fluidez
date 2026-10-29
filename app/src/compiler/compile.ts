@@ -154,7 +154,8 @@ export function servedRefs(plan: SessionPlan): ServedRef[] {
         break;
       case 'structuredInput': case 'controlledOutput': case 'cuedProduction': case 'communicative':
       case 'remix': case 'readingCheck': case 'extraReading':
-        for (const it of b.items) { add('sentence', it.sentence, false); add('item', it.id, false); }
+        // a recombine item re-serves a sentence the learner knows on purpose: that repeat is deliberate
+        for (const it of b.items) { add('sentence', it.sentence, it.op === 'recombine'); add('item', it.id, false); }
         break;
       case 'read': add('chapter', b.chapter, false); break;
       case 'reread': add('chapter', b.chapter, true); break;
@@ -927,7 +928,9 @@ class Compiler {
   }
 
   private practiceItem(op: PracticeOp, node: NodeId, s: SentenceRef, direction: 'receptive' | 'productive', scoring: 'review' | 'exposure' | 'none'): PracticeItem {
-    return { op, id: `${op}:${s.id}`, node, sentence: s.id, direction, scoring, credit: creditOf(node, s) };
+    // a recombine item re-serves a known sentence: its id carries the session so the item (and its variant) is new each time
+    const id = op === 'recombine' ? `${op}:${s.id}:s${this.sessionIndex}` : `${op}:${s.id}`;
+    return { op, id, node, sentence: s.id, direction, scoring, credit: creditOf(node, s) };
   }
 
   /** Scoring for the first item on a node: a real review if the card exists and the warm-up did not already review it. */

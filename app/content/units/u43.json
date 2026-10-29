@@ -47,10 +47,7 @@
     "p:es-una-lastima-que",
     "p:me-decepciono-que",
     "p:pasarla-bien-mal",
-    "p:tener-pensado-previsto",
-    "p:sonar-con-ganas",
-    "p:decidirse-atreverse-a",
-    "p:arrepentirse-de"
+    "p:tener-pensado-previsto"
    ],
    "chunks": [],
    "lexemes": [
@@ -73,6 +70,9 @@
   {
    "type": "introduce",
    "focus": [
+    "p:sonar-con-ganas",
+    "p:decidirse-atreverse-a",
+    "p:arrepentirse-de",
     "g:conditional-perfect"
    ],
    "chunks": [],
@@ -108,9 +108,7 @@
     "p:a-ultima-hora",
     "p:ojala-hubiera",
     "p:te-habria-gustado-que",
-    "p:no-deberias-haberlo-hecho",
-    "p:me-parecio-mal-que",
-    "p:siento-mucho-que"
+    "p:no-deberias-haberlo-hecho"
    ],
    "chunks": [],
    "lexemes": []
@@ -118,6 +116,8 @@
   {
    "type": "output",
    "focus": [
+    "p:me-parecio-mal-que",
+    "p:siento-mucho-que",
     "g:pluperfect-subj",
     "g:conditional-perfect"
    ],
@@ -176,11 +176,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "If Rosa had posted one of those letters, would Joaquín have come back? If Tomás had taken the Toronto job, which finally offered him a contract last month, where would the café be now? Everyone has a version of what would have happened. Meanwhile Yesid arrives in Bogotá, freezing, and asks if it is always this cold.",
- "quota": {
-  "bankSentences": 618,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 5
- }
+ "storyArc": "If Rosa had posted one of those letters, would Joaquín have come back? If Tomás had taken the Toronto job, which finally offered him a contract last month, where would the café be now? Everyone has a version of what would have happened. Meanwhile Yesid arrives in Bogotá, freezing, and asks if it is always this cold."
 }

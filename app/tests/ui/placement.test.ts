@@ -2,11 +2,12 @@
 // name, a number or a cognate), the ladder adapts and stays short, and
 // placing late seeds the skipped weeks without a review avalanche.
 import { beforeAll, describe, expect, it } from 'vitest';
-import { Learner, MemoryStore } from '../../src/learner';
+import { BAND_WARMUP_MINUTES } from '../../src/compiler/budget';
+import { Learner, MemoryStore, Rating } from '../../src/learner';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
 import {
-  applyPlacement, contentProbe, EARLY_STOP_MISSES, fairItem, isCognate, ladder, MAX_ITEMS, probeLevels, SEED_SPREAD_DAYS,
+  applyPlacement, contentProbe, EARLY_STOP_MISSES, fairItem, isCognate, ladder, MAX_ITEMS, probeLevels,
   type ProbeItem,
 } from '../../src/ui/session/placement';
 
@@ -106,24 +107,60 @@ describe('the ladder', () => {
 });
 
 describe('seeding the skipped weeks', () => {
-  it('placing at unit 3: everything before is known, and first reviews spread over the next weeks', async () => {
-    const now = new Date(2026, 9, 1, 18).getTime();
-    const learner = await Learner.open(new MemoryStore(), { now: () => now });
-    const path = applyPlacement(learner, b, 3, now);
+  const T0 = new Date(2026, 9, 1, 18).getTime();
+  const place = async (unit: number) => {
+    const learner = await Learner.open(new MemoryStore(), { now: () => T0 });
+    const path = applyPlacement(learner, b, unit, T0);
+    return { learner, path };
+  };
+
+  it('placing at unit 3: everything before is known, nothing due today, first reviews spread out', async () => {
+    const { learner, path } = await place(3);
     expect(path.unit).toBe(3);
     const ids = learner.nodes();
     expect(ids.length).toBeGreaterThan(30);
     for (const id of ids) expect(learner.isLearning(id)).toBe(false);
-    expect(learner.due(now)).toHaveLength(0);
-    // no day in the next four weeks gets more than a fair share (plus slack)
-    const perDay = new Map<number, number>();
-    for (const c of learner.due(now + (SEED_SPREAD_DAYS + 2) * DAY)) {
-      const d = Math.floor((learner.card(c.node, c.direction)!.due - now) / DAY);
-      perDay.set(d, (perDay.get(d) ?? 0) + 1);
-    }
-    const fair = Math.ceil((ids.length * 2) / SEED_SPREAD_DAYS);
-    for (const [d, n] of perDay) expect(n, `day ${d}`).toBeLessThanOrEqual(fair + 4);
-    // the first few days stay light
-    expect(learner.due(now + 3 * DAY).length).toBeLessThan(ids.length / 4);
+    expect(learner.due(T0)).toHaveLength(0);
+    expect(learner.due(T0 + 3 * DAY).length).toBeLessThan(ids.length / 2);
   });
+
+  for (const [band, unit] of [['A1', 9], ['A2', 19]] as const) {
+    describe(`placed at index ${unit} (${band})`, () => {
+      it('is deterministic', async () => {
+        const a = await place(unit);
+        const c = await place(unit);
+        expect(a.learner.nodes()).toEqual(c.learner.nodes());
+        for (const id of a.learner.nodes()) {
+          for (const d of ['receptive', 'productive'] as const) expect(a.learner.card(id, d)).toEqual(c.learner.card(id, d));
+        }
+      });
+
+      it('learned nodes have their receptive card suspended and count as learned', async () => {
+        const { learner } = await place(unit);
+        let learned = 0;
+        for (const id of learner.nodes()) {
+          if (!learner.isLearned(id)) continue;
+          learned++;
+          if (learner.hasProductiveTrack(id)) expect(learner.isSuspended(id, 'receptive'), id).toBe(true);
+        }
+        expect(learned).toBeGreaterThan(0);
+      });
+
+      it('30 days of all-Good reviews: the daily load fits the warm-up budget', async () => {
+        const { learner } = await place(unit);
+        const bandU = b.course.units[unit].band ?? band;
+        const budget = BAND_WARMUP_MINUTES[bandU];
+        const spr = learner.secondsPerReview();
+        const minutes: number[] = [];
+        for (let d = 1; d <= 30; d++) {
+          const at = T0 + d * DAY;
+          const due = learner.due(at);
+          minutes.push((due.length * spr) / 60);
+          for (const c of due) learner.review(c.node, c.direction, Rating.Good, { at });
+        }
+        expect(Math.max(...minutes), minutes.map((m) => m.toFixed(1)).join(' ')).toBeLessThanOrEqual(budget * 1.5);
+        expect(minutes.reduce((a, c) => a + c, 0) / minutes.length).toBeLessThan(budget);
+      }, 60_000);
+    });
+  }
 });

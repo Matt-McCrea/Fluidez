@@ -48,11 +48,7 @@
     "p:reproach-questions",
     "p:lo-mejor-seria-que",
     "p:ojo-con-no-confies",
-    "p:no-tengas-miedo-de",
-    "p:capaz-dispuesto-a",
-    "p:siempre-gerundio",
-    "p:hasta-que-no",
-    "p:pase-lo-que-pase"
+    "p:no-tengas-miedo-de"
    ],
    "chunks": [
     "c:a-mi-me-pasa-lo-mismo",
@@ -78,6 +74,10 @@
   {
    "type": "introduce",
    "focus": [
+    "p:capaz-dispuesto-a",
+    "p:siempre-gerundio",
+    "p:hasta-que-no",
+    "p:pase-lo-que-pase",
     "g:subj-future-in-past"
    ],
    "chunks": [],
@@ -113,9 +113,7 @@
     "p:lamento-lo-de",
     "p:estar-harto-de-que",
     "p:me-pone-nervioso-que",
-    "p:me-da-rabia-me-indigna",
-    "p:tengo-miedo-de-que",
-    "p:me-da-verguenza"
+    "p:me-da-rabia-me-indigna"
    ],
    "chunks": [],
    "lexemes": []
@@ -123,6 +121,8 @@
   {
    "type": "output",
    "focus": [
+    "p:tengo-miedo-de-que",
+    "p:me-da-verguenza",
     "g:subj-free-relatives",
     "g:subj-future-in-past"
    ],
@@ -177,11 +177,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Vale gets an offer: an investor in Medellín will finance her own bakery. She wants it. Tomás wants her to stay and says so badly, and they have the worst argument of their lives. Hernando, meanwhile, has his own hard conversation with his daughter, who wants him to move in with her. Both conversations end with someone slamming a door.",
- "quota": {
-  "bankSentences": 636,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 5
- }
+ "storyArc": "Vale gets an offer: an investor in Medellín will finance her own bakery. She wants it. Tomás wants her to stay and says so badly, and they have the worst argument of their lives. Hernando, meanwhile, has his own hard conversation with his daughter, who wants him to move in with her. Both conversations end with someone slamming a door."
 }

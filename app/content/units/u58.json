@@ -33,7 +33,6 @@
     "p:dar-a",
     "p:lo-primero-que",
     "p:fruto-fruta",
-    "p:el-frente-la-frente",
     "x:al-tiempo-que-a-medida-que"
    ],
    "chunks": [
@@ -53,11 +52,7 @@
     "p:sin-rumbo-fijo",
     "p:dar-marcha-atras",
     "p:dar-un-rodeo",
-    "p:fuerte-como-un-roble",
-    "p:a-reventar",
-    "p:encarecer-abaratar",
-    "p:a-eso-de",
-    "p:a-ojo"
+    "p:fuerte-como-un-roble"
    ],
    "chunks": [
     "c:a-simple-vista"
@@ -81,6 +76,10 @@
   {
    "type": "introduce",
    "focus": [
+    "p:encarecer-abaratar",
+    "p:a-eso-de",
+    "p:a-ojo",
+    "p:el-frente-la-frente",
     "g:agreement-tricky"
    ],
    "chunks": [],
@@ -96,6 +95,7 @@
   {
    "type": "drill",
    "focus": [
+    "p:a-reventar",
     "g:agreement-tricky",
     "g:temporal-advanced"
    ],
@@ -115,9 +115,7 @@
     "p:ni-aunque",
     "p:al-tacto",
     "p:inclinado-torcido",
-    "p:al-alcance-de",
-    "p:a-la-altura-de",
-    "p:a-cuadras-de"
+    "p:al-alcance-de"
    ],
    "chunks": [],
    "lexemes": []
@@ -125,6 +123,8 @@
   {
    "type": "output",
    "focus": [
+    "p:a-la-altura-de",
+    "p:a-cuadras-de",
     "g:temporal-advanced",
     "g:agreement-tricky"
    ],
@@ -175,11 +175,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "The restoration begins: the cracked beam replaced, the original tiles cleaned, the jukebox repaired. Tomás describes every stage for the cooperative's newsletter with an engineer's precision and a poet's patience. Vale designs the new menu around Rosa's recipes, and there is a bench outside now with a small plaque for Hernando.",
- "quota": {
-  "bankSentences": 663,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 6
- }
+ "storyArc": "The restoration begins: the cracked beam replaced, the original tiles cleaned, the jukebox repaired. Tomás describes every stage for the cooperative's newsletter with an engineer's precision and a poet's patience. Vale designs the new menu around Rosa's recipes, and there is a bench outside now with a small plaque for Hernando."
 }

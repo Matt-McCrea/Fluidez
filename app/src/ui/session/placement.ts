@@ -32,17 +32,17 @@
 // (unit 0 when none is).
 //
 // SEEDING. Placing at unit k makes the earlier units' nodes known, but not as
-// if each had just been learned perfectly (they would all come due together
-// three days later, and a backlog that size throttles every session for a
-// week). Each node gets a real review history, replayed through the learner
-// API in the past, so that its next review falls on its own day, spread
-// evenly over the next SEED_SPREAD_DAYS days: the most recent unit's nodes
-// come up first.
+// if each had just been learned perfectly (their second and third reviews
+// would cluster and the backlog would throttle every session). Cards are
+// seeded directly (see applyPlacement) with a stability for how long ago the
+// course would have taught them, due dates spread over a window sized to the
+// band's warm-up budget.
 import { initialPath, type PathState } from '../../compiler';
+import { BAND_WARMUP_MINUTES } from '../../compiler/budget';
 import type { BankSentence, NodeId } from '../../content/schema';
 import { deaccent } from '../../engine';
 import { ALL_FEATURES, chooseItem, rng, shuffle, structuredInput } from '../../exercises';
-import { Learner, productivePolicy, Rating, type Direction } from '../../learner';
+import { LEARNED_STABILITY_DAYS, productivePolicy, type Direction, type Learner } from '../../learner';
 import type { Bundle } from '../data/bundle';
 import type { Txt } from './cards';
 
@@ -80,7 +80,15 @@ export const MAX_ITEMS = 14;
 export const MIN_ITEMS = 4;
 /** misses in a row at the bottom level that end the check early */
 export const EARLY_STOP_MISSES = 4;
-export const SEED_SPREAD_DAYS = 28;
+export const SEED_RECENT_STABILITY = 10;
+export const SEED_STABILITY_PER_UNIT = 7;
+export const SEED_MAX_STABILITY = 120;
+/** the most recent units whose productive nodes also keep an active receptive card */
+export const SEED_FULL_UNITS = 2;
+/** share of the band's warm-up minutes the first pass over the seeded cards may take per day */
+export const SEED_BUDGET_SHARE = 0.6;
+export const SEED_MIN_WINDOW_DAYS = 14;
+export const SEED_MAX_WINDOW_DAYS = 120;
 
 const es = (text: string): Txt => ({ text, lang: 'es' });
 const en = (text: string): Txt => ({ text, lang: 'en' });
@@ -309,64 +317,72 @@ export function contentProbe(b: Bundle, seed = 'placement'): ProbeSource {
 // ---------------------------------------------------------------- seeding the skipped units
 
 /**
- * Make `id` known with a review history that puts its next review `inDays`
- * days from `now`: the same Good reviews a learner would have done, replayed
- * in the past through the learner API (intervals come from the scheduler, so
- * the history is one it would have produced).
- */
-export function seedKnown(learner: Learner, id: NodeId, inDays: number, now: number, productive: boolean): void {
-  const target = inDays * 86_400_000;
-  // dry run on a scratch learner (same scheduler) to find the schedule
-  const scratch = Learner.fresh({ now: () => 0 });
-  scratch.setSettings({ retention: learner.settings.retention, rolloverHour: learner.settings.rolloverHour });
-  scratch.introduce(id, { at: 0, results: [true, true, true], productive });
-  const reviews: Array<{ dir: Direction; at: number }> = [];
-  let last = 3 * 60_000;
-  let shift = 0;
-  for (let k = 0; k < 40; k++) {
-    const due = (['receptive', 'productive'] as Direction[])
-      .filter((d) => scratch.hasCard(id, d))
-      .map((d) => ({ dir: d, at: scratch.card(id, d)!.due }))
-      .sort((a, b) => a.at - b.at)[0];
-    if (!due) break;
-    if (due.at - last >= target || k === 39) { shift = now - (due.at - target); break; }
-    scratch.review(id, due.dir, Rating.Good, { at: due.at });
-    reviews.push(due);
-    last = due.at;
-  }
-  learner.introduce(id, { at: shift, results: [true, true, true], productive });
-  for (const r of reviews) if (learner.hasCard(id, r.dir)) learner.review(id, r.dir, Rating.Good, { at: r.at + shift });
-}
-
-/**
- * Start the learner at `unit`. The skipped units' nodes become known, their
- * first reviews spread over the next SEED_SPREAD_DAYS days (most recent unit
- * first), so content gating works and the backlog stays flat. Returns the
- * path to persist.
+ * Start the learner at `unit`. The skipped units' nodes become known, seeded
+ * directly as Review-state cards (no replayed history, which would make every
+ * node's second and third reviews cluster):
+ *  - stability says how long ago the course would have taught the node: the
+ *    most recent unit 10 days, each earlier unit 7 more, capped at 120;
+ *  - difficulty is the FSRS default;
+ *  - due dates spread evenly over a window of W days, W sized so the first
+ *    pass costs at most 60% of the band's warm-up budget per day (W within
+ *    14..120), lowest stability first (never before tomorrow);
+ *  - beyond the most recent two units only the direction the productive
+ *    policy would unlock is kept active (a productive node's receptive card is
+ *    seeded suspended); a node seeded as learned (stability >= 60) has its
+ *    receptive card suspended and one novel pass, as maintenance would do.
+ * Deterministic given the learner and the clock. Returns the path to persist.
  */
 export function applyPlacement(learner: Learner, b: Bundle, unit: number, now = Date.now()): PathState {
   const path = initialPath();
   if (unit <= 0) return path;
   path.unit = Math.min(unit, b.course.units.length);
-  const order: NodeId[] = [];
+  interface Seed { id: NodeId; productive: boolean; stability: number; recent: boolean }
+  const seeds: Seed[] = [];
   const seen = new Set<NodeId>();
-  for (const u of b.course.units.slice(0, path.unit)) {
-    for (const d of u.days) {
+  // most recent unit first
+  for (let u = path.unit - 1; u >= 0; u--) {
+    const k = path.unit - 1 - u;
+    const stability = Math.min(SEED_MAX_STABILITY, SEED_RECENT_STABILITY + SEED_STABILITY_PER_UNIT * k);
+    for (const d of b.course.units[u].days) {
       for (const n of [...d.focus, ...d.chunks, ...d.lexemes]) {
-        if (seen.has(n) || b.node(n)?.kind === 'cando') continue;
+        if (seen.has(n) || b.node(n)?.kind === 'cando' || learner.isIntroduced(n)) continue;
         seen.add(n);
-        order.push(n);
+        const node = b.node(n);
+        const productive = productivePolicy({ kind: node?.kind ?? 'lexeme', band: node?.band, freqRank: node?.freqRank });
+        seeds.push({ id: n, productive, stability, recent: k < SEED_FULL_UNITS });
       }
     }
   }
-  const last = Math.max(1, order.length - 1);
-  order.forEach((n, i) => {
-    if (learner.isIntroduced(n)) return;
-    // the oldest material comes back last; the unit just skipped, first
-    const inDays = 1 + Math.round((SEED_SPREAD_DAYS - 1) * (1 - i / last));
-    const node = b.node(n);
-    const productive = productivePolicy({ kind: node?.kind ?? 'lexeme', band: node?.band, freqRank: node?.freqRank });
-    seedKnown(learner, n, inDays, now, productive);
-  });
+  // the cards that will actually come due
+  interface Slot { seed: Seed; dir: Direction }
+  const slots: Slot[] = [];
+  for (const s of seeds) {
+    const learned = s.stability >= LEARNED_STABILITY_DAYS;
+    if (!s.productive) slots.push({ seed: s, dir: 'receptive' });
+    else {
+      slots.push({ seed: s, dir: 'productive' });
+      if (s.recent && !learned) slots.push({ seed: s, dir: 'receptive' });
+    }
+  }
+  const band = b.course.units[Math.min(path.unit, b.course.units.length - 1)]?.band ?? 'A1';
+  const perDayBudget = SEED_BUDGET_SHARE * BAND_WARMUP_MINUTES[band] * 60 / learner.secondsPerReview();
+  const window = Math.min(SEED_MAX_WINDOW_DAYS, Math.max(SEED_MIN_WINDOW_DAYS, Math.ceil(slots.length / Math.max(1, perDayBudget))));
+  // lowest stability first; ties keep content order
+  const order = slots.map((s, i) => ({ s, i })).sort((a, c) => a.s.seed.stability - c.s.seed.stability || a.i - c.i);
+  const dueDay = new Map<Slot, number>();
+  order.forEach(({ s }, j) => dueDay.set(s, 1 + Math.floor((j * window) / order.length)));
+  const dueAt = (s: Slot | undefined): number => now + (s ? dueDay.get(s)! : 1) * 86_400_000;
+  const byKey = new Map<string, Slot>();
+  for (const s of slots) byKey.set(`${s.seed.id}|${s.dir}`, s);
+  for (const s of seeds) {
+    const rs = byKey.get(`${s.id}|receptive`);
+    const ps = byKey.get(`${s.id}|productive`);
+    learner.seedKnown(s.id, {
+      at: now, productive: s.productive,
+      // a productive node's receptive card is always kept (suspended when it is not part of the load)
+      receptive: { stability: s.stability, dueAt: dueAt(rs ?? ps), suspended: !rs },
+      productiveCard: s.productive ? { stability: s.stability, dueAt: dueAt(ps) } : null,
+    });
+  }
   return path;
 }

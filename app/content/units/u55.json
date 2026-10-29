@@ -45,11 +45,7 @@
     "p:por-orden-de",
     "p:agilizar-tramites",
     "p:conocimiento-formal",
-    "p:en-modo-alguno",
-    "p:el-suscrito",
-    "p:se-ruega",
-    "p:no-dude-en",
-    "p:tener-el-gusto-de"
+    "p:en-modo-alguno"
    ],
    "chunks": [],
    "lexemes": [
@@ -71,6 +67,10 @@
   {
    "type": "introduce",
    "focus": [
+    "p:el-suscrito",
+    "p:se-ruega",
+    "p:no-dude-en",
+    "p:tener-el-gusto-de",
     "g:nominalisation"
    ],
    "chunks": [],
@@ -107,9 +107,7 @@
     "p:vencer-plazo",
     "p:con-antelacion",
     "p:aplazar-posponer",
-    "p:ajustarse-a",
-    "p:por-consenso",
-    "p:a-partes-iguales"
+    "p:ajustarse-a"
    ],
    "chunks": [],
    "lexemes": []
@@ -117,6 +115,8 @@
   {
    "type": "output",
    "focus": [
+    "p:por-consenso",
+    "p:a-partes-iguales",
     "g:cuyo-relatives",
     "g:nominalisation"
    ],
@@ -167,11 +167,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "The heritage decision arrives: the building is protected. Now the family must formalise ownership: Tomás, Yesid and the descendants of Rosa and Joaquín create a cooperative with the neighbours. Statutes, legal Spanish, quorums, \"el que no cumpliere\". Yesid moves to Bogotá for six months and teaches Jhon Fredy to dive in the municipal pool.",
- "quota": {
-  "bankSentences": 642,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 6
- }
+ "storyArc": "The heritage decision arrives: the building is protected. Now the family must formalise ownership: Tomás, Yesid and the descendants of Rosa and Joaquín create a cooperative with the neighbours. Statutes, legal Spanish, quorums, \"el que no cumpliere\". Yesid moves to Bogotá for six months and teaches Jhon Fredy to dive in the municipal pool."
 }

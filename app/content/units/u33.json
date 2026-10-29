@@ -42,9 +42,7 @@
     "p:lleno-libre",
     "p:el-que-la-que",
     "p:quedar-faltar-sobrar",
-    "p:medir",
-    "p:caber",
-    "p:posicion-precisa"
+    "p:medir"
    ],
    "chunks": [],
    "lexemes": [
@@ -68,6 +66,8 @@
   {
    "type": "introduce",
    "focus": [
+    "p:caber",
+    "p:posicion-precisa",
     "g:relatives-prepositions"
    ],
    "chunks": [],
@@ -161,11 +161,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "The search begins. They are looking for anyone who knew a Joaquín Herrera who arrived in Santa Marta around 1978. Mariana posts in Facebook groups; Hernando calls old taxi friends who moved to the coast. Meanwhile, just in case, Vale looks for a new space that has a proper kitchen and a rent they can pay. Nothing seems to exist.",
- "quota": {
-  "bankSentences": 540,
-  "chapters": 3,
-  "scenes": 2,
-  "writingTasks": 4
- }
+ "storyArc": "The search begins. They are looking for anyone who knew a Joaquín Herrera who arrived in Santa Marta around 1978. Mariana posts in Facebook groups; Hernando calls old taxi friends who moved to the coast. Meanwhile, just in case, Vale looks for a new space that has a proper kitchen and a rent they can pay. Nothing seems to exist."
 }

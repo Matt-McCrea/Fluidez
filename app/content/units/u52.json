@@ -107,9 +107,7 @@
     "p:echarse-romper-a",
     "p:estallar-desencadenarse",
     "p:dar-la-casualidad",
-    "p:imperfecto-sorpresa",
-    "p:imperfecto-cortesia-venia",
-    "p:perfecto-still-live"
+    "p:imperfecto-sorpresa"
    ],
    "chunks": [],
    "lexemes": []
@@ -117,6 +115,8 @@
   {
    "type": "output",
    "focus": [
+    "p:imperfecto-cortesia-venia",
+    "p:perfecto-still-live",
     "g:tense-modal-uses"
    ],
    "chunks": [],
@@ -162,11 +162,5 @@
    "scene": "sc-u52-c"
   }
  ],
- "storyArc": "With Vale away, Hernando asks Tomás to help him write his memoir: fifty years of Bogotá from the front seat of a taxi and the corner table of a café. Choosing every tense on purpose becomes their game: what happened, what used to happen, what would have happened if he had told Rosa. Hernando's chapters are funnier and sadder than anything Tomás has read.",
- "quota": {
-  "bankSentences": 467,
-  "chapters": 5,
-  "scenes": 3,
-  "writingTasks": 6
- }
+ "storyArc": "With Vale away, Hernando asks Tomás to help him write his memoir: fifty years of Bogotá from the front seat of a taxi and the corner table of a café. Choosing every tense on purpose becomes their game: what happened, what used to happen, what would have happened if he had told Rosa. Hernando's chapters are funnier and sadder than anything Tomás has read."
 }

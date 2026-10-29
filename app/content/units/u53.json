@@ -11,11 +11,7 @@
     "p:rectificar-reparar",
     "p:tengo-entendido-que",
     "p:verbo-que-interpreta",
-    "p:el-x-de-y",
-    "p:sin-animo-de",
-    "p:no-digo-que-pero",
-    "p:no-me-cabe-duda",
-    "p:juraria-que"
+    "p:el-x-de-y"
    ],
    "chunks": [
     "c:en-paradero-desconocido",
@@ -43,6 +39,10 @@
   {
    "type": "output",
    "focus": [
+    "p:sin-animo-de",
+    "p:no-digo-que-pero",
+    "p:no-me-cabe-duda",
+    "p:juraria-que",
     "g:tense-modal-uses",
     "g:mood-choice-fine"
    ],
@@ -118,9 +118,7 @@
     "p:en-apariencia",
     "p:salir-a-la-luz",
     "p:hacer-la-vista-gorda",
-    "p:ponerse-al-tanto",
-    "p:hasta-la-fecha",
-    "p:sostener-que"
+    "p:ponerse-al-tanto"
    ],
    "chunks": [],
    "lexemes": []
@@ -128,6 +126,8 @@
   {
    "type": "output",
    "focus": [
+    "p:hasta-la-fecha",
+    "p:sostener-que",
     "g:hedging-distance"
    ],
    "chunks": [],
@@ -178,11 +178,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Rumours everywhere: that the café will close, that Altamira has a judge in his pocket, that Tomás is going back to Canada. Supposedly. Apparently. People say. Tomás learns to report what is said without owning it, and to answer the rumours without repeating them. The council official is arrested at Miami airport.",
- "quota": {
-  "bankSentences": 638,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 6
- }
+ "storyArc": "Rumours everywhere: that the café will close, that Altamira has a judge in his pocket, that Tomás is going back to Canada. Supposedly. Apparently. People say. Tomás learns to report what is said without owning it, and to answer the rumours without repeating them. The council official is arrested at Miami airport."
 }

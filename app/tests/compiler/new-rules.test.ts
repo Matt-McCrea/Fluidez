@@ -27,7 +27,6 @@ function tiny(sentences: BankSentence[]) {
   const words = ['l:a', 'l:b', 'l:c', 'l:d'];
   const units: Unit[] = [{
     id: 'u01', band: 'A1', title: 'u', theme: 't', canDo: 'c', storyArc: 'a',
-    quota: { bankSentences: 0, chapters: 0, scenes: 0, writingTasks: 0 },
     days: Array.from({ length: 7 }, () => ({ type: 'review' as const, focus: [], chunks: [], lexemes: [] })),
   }];
   const course = buildCourse(units, words.map((w) => node(w, 'lexeme')));
@@ -285,7 +284,6 @@ describe('remediation list', () => {
     for (const n of nodes) for (let i = 0; i < 6; i++) sents.push(sentence(`s-${n.replace(':', '')}-${i}`, [n], [n]));
     const units: Unit[] = [{
       id: 'u01', band: 'A1', title: 'u', theme: 't', canDo: 'c', storyArc: 'a',
-      quota: { bankSentences: 0, chapters: 0, scenes: 0, writingTasks: 0 },
       days: Array.from({ length: 7 }, () => ({ type: dayType, focus: ['g:t'], chunks: [], lexemes: [] })),
     }];
     const course = buildCourse(units, nodes.map((n) => node(n, n[0] === 'g' ? 'grammar' : n[0] === 'p' ? 'pattern' : 'lexeme')));
@@ -352,7 +350,6 @@ describe('reading coverage is measured against retained words', () => {
   function world(required: string[]) {
     const units: Unit[] = [{
       id: 'u01', band: 'A1', title: 'u', theme: 't', canDo: 'c', storyArc: 'a',
-      quota: { bankSentences: 0, chapters: 1, scenes: 0, writingTasks: 0 },
       days: Array.from({ length: 7 }, (_, i) => ({ type: 'input' as const, focus: [], chunks: [], lexemes: [], ...(i === 0 ? { chapter: 'ch001' } : {}) })),
     }];
     const course = buildCourse(units, words.map((w) => node(w, 'lexeme')));

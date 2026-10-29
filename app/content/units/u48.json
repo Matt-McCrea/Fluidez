@@ -40,11 +40,7 @@
     "p:synonym-hypernym",
     "p:se-divide-en",
     "p:en-comparacion-con",
-    "p:describe-with-images",
-    "p:presenting-to-audience",
-    "p:consistir-en",
-    "p:plural-one-object",
-    "p:azul-oscuro-invariable"
+    "p:describe-with-images"
    ],
    "chunks": [],
    "lexemes": [
@@ -67,6 +63,10 @@
   {
    "type": "introduce",
    "focus": [
+    "p:presenting-to-audience",
+    "p:consistir-en",
+    "p:plural-one-object",
+    "p:azul-oscuro-invariable",
     "g:participle-gerund-clauses"
    ],
    "chunks": [],
@@ -103,9 +103,7 @@
     "p:resistente-a",
     "p:a-lo-largo-de",
     "p:le-falta-sal",
-    "p:caracterizarse-por",
-    "p:detenerse-estar-parado",
-    "p:los-de-la-camiseta"
+    "p:caracterizarse-por"
    ],
    "chunks": [],
    "lexemes": []
@@ -113,6 +111,8 @@
   {
    "type": "output",
    "focus": [
+    "p:detenerse-estar-parado",
+    "p:los-de-la-camiseta",
     "g:relatives-formal",
     "g:participle-gerund-clauses"
    ],
@@ -163,11 +163,5 @@
    "scene": "sc-u48-c"
   }
  ],
- "storyArc": "An architect surveys the 1920s building: adobe walls sixty centimetres thick, original tiles, a cracked beam caused by the vibrations of the demolition next door. Her report, measured and precise, is the evidence they needed. Hernando insists on being present and gets told off for leaning on the cracked wall.",
- "quota": {
-  "bankSentences": 582,
-  "chapters": 5,
-  "scenes": 3,
-  "writingTasks": 5
- }
+ "storyArc": "An architect surveys the 1920s building: adobe walls sixty centimetres thick, original tiles, a cracked beam caused by the vibrations of the demolition next door. Her report, measured and precise, is the evidence they needed. Hernando insists on being present and gets told off for leaning on the cracked wall."
 }

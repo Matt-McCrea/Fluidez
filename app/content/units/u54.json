@@ -11,11 +11,7 @@
     "p:ser-un-noun",
     "p:ironic-praise",
     "p:como-viene-tanto",
-    "p:suspended-intensifier",
-    "p:el-frio-que-hace",
-    "p:como-me-entere",
-    "p:ni-emphatic",
-    "p:la-menor-idea"
+    "p:suspended-intensifier"
    ],
    "chunks": [
     "c:para-variar",
@@ -43,6 +39,10 @@
   {
    "type": "output",
    "focus": [
+    "p:el-frio-que-hace",
+    "p:como-me-entere",
+    "p:ni-emphatic",
+    "p:la-menor-idea",
     "g:hedging-distance",
     "g:reformulation"
    ],
@@ -93,9 +93,7 @@
     "p:que-si-que-si",
     "p:si-algo-es",
     "p:como-es-que",
-    "p:empenarse-en",
-    "p:tener-su-gracia",
-    "p:mira-que"
+    "p:empenarse-en"
    ],
    "chunks": [
     "c:ni-amarrado",
@@ -130,9 +128,7 @@
     "p:mirar-por-encima-del-hombro",
     "p:morirse-de",
     "p:pasarse-la-vida",
-    "p:a-lo-grande",
-    "p:estar-hecho-un-desastre",
-    "p:como-que-echo"
+    "p:a-lo-grande"
    ],
    "chunks": [],
    "lexemes": []
@@ -140,6 +136,10 @@
   {
    "type": "output",
    "focus": [
+    "p:estar-hecho-un-desastre",
+    "p:como-que-echo",
+    "p:tener-su-gracia",
+    "p:mira-que",
     "g:emphatic-structures"
    ],
    "chunks": [],
@@ -186,11 +186,5 @@
    "lexemes": []
   }
  ],
- "storyArc": "Altamira opens the hotel next door anyway, with a rooftop bar overlooking the café's patio. Hernando starts writing \"jokes of the day\" on the chalkboard aimed at the hotel guests; they become famous on social media. Irony, understatement and mamadera de gallo turn out to be the best weapons the café has.",
- "quota": {
-  "bankSentences": 692,
-  "chapters": 5,
-  "scenes": 2,
-  "writingTasks": 6
- }
+ "storyArc": "Altamira opens the hotel next door anyway, with a rooftop bar overlooking the café's patio. Hernando starts writing \"jokes of the day\" on the chalkboard aimed at the hotel guests; they become famous on social media. Irony, understatement and mamadera de gallo turn out to be the best weapons the café has."
 }

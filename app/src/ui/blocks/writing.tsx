@@ -9,6 +9,7 @@ import { Continue } from '../components/card';
 import { Bar, Es, Heading, Rich, undash } from '../components/text';
 import { blockHeading, lessonTypeWord } from '../session/labels';
 import { MORE_MIN_STREAK, MORE_MINUTES } from '../session/more';
+import { lastWeekCameBack } from '../../learner/metrics';
 import type { CanDoMark, RubricAnswer, WritingMark } from '../store/ui';
 import type { BlockProps } from './types';
 
@@ -152,6 +153,7 @@ export function Close({ block, run, more, onMore, onHome }: BlockProps<CloseBloc
   const hook = block.hookChapter ? run.bundle.chapters.get(block.hookChapter)?.hook : undefined;
   const t = run.tally;
   const offer = block.offerAnother && more;
+  const back = useMemo(() => { try { return lastWeekCameBack(run.learner.events(), run.learner, Date.now()); } catch { return { came: 0, of: 0 }; } }, []);
   return (
     <>
       <Heading title="Done for today" lead={t.scored ? `${t.firstTry} of ${t.scored} right first time.` : ''} />
@@ -164,6 +166,7 @@ export function Close({ block, run, more, onMore, onHome }: BlockProps<CloseBloc
             <p class="small">{block.progress.done} of {block.progress.of} lessons this week</p>
           </>
         ) : null}
+        {back.of > 0 ? <p class="small" data-came-back>From last week, {back.came} of {back.of} came back.</p> : null}
         {hook ? <p class="hook">{undash(hook)}</p> : block.next ? <p class="hook">Next time: {lessonTypeWord(block.next)}.</p> : null}
       </section>
       {offer ? (

@@ -1,6 +1,6 @@
 // Aggregate profile runs into the per-band report and the per-unit quotas.
 import type { Band, Unit } from '../../src/content/schema';
-import { zeroDemand, type Demand, type ProfileRun } from './run';
+import { zeroDemand, type Demand, type ProfileRun, type RetentionStats } from './run';
 
 const BANDS: Band[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
 export const QUOTA_FACTOR = 3;
@@ -113,7 +113,7 @@ export function computeQuotas(runs: ProfileRun[], units: Unit[], meta: Omit<Quot
     out[u.id] = {
       bankSentences: Math.ceil(QUOTA_FACTOR * d.sentences),
       reviewSentences: Math.ceil(QUOTA_FACTOR * d.reviewSentences),
-      // the story is linear: every chapter is read exactly once, so no multiplier — one per chapter slot
+      // the story is linear: every chapter is read exactly once, so no multiplier: one per chapter slot
       chapters: Math.max(listed, d.chapters),
       scenes: Math.ceil(QUOTA_FACTOR * d.scenes),
       writingTasks: Math.ceil(QUOTA_FACTOR * d.tasks),
@@ -152,14 +152,61 @@ function p95Demand(ds: Demand[]): Demand {
   return { sentences: pick('sentences'), reviewSentences: pick('reviewSentences'), chapters: pick('chapters'), scenes: pick('scenes'), tasks: pick('tasks') };
 }
 
-export function formatReport(runs: ProfileRun[], quotas: Quotas): string {
+/** Target retention the scheduler aims at (Learner default settings.retention). */
+export const TARGET_RETENTION = 0.9;
+/** The average profile's first-try recall must sit within this many points of the target. */
+export const RETENTION_TOLERANCE = 0.04;
+/** Fewer scored reviews than this in a band is too thin to judge. */
+const MIN_REVIEWS_TO_FLAG = 300;
+
+export interface RetentionRow { profile: string; tier: string; band: string; stats: RetentionStats; flag: string }
+
+/** One row per run and band (plus 'all'); the average profile is flagged when off the target. */
+export function retentionRows(runs: ProfileRun[]): RetentionRow[] {
+  const rows: RetentionRow[] = [];
+  for (const run of runs) {
+    const bands = Object.keys(run.retention).filter((b) => b !== 'all' && b !== '?').sort();
+    for (const band of [...bands, 'all']) {
+      const stats = run.retention[band];
+      if (!stats || stats.reviews === 0) continue;
+      let flag = '';
+      if (run.profile === 'average' && stats.reviews >= MIN_REVIEWS_TO_FLAG && Math.abs(stats.firstTry - TARGET_RETENTION) > RETENTION_TOLERANCE) flag = `OFF TARGET (${stats.firstTry > TARGET_RETENTION ? '+' : ''}${((stats.firstTry - TARGET_RETENTION) * 100).toFixed(1)} pts)`;
+      rows.push({ profile: run.profile, tier: run.tier, band, stats, flag });
+    }
+  }
+  return rows;
+}
+
+const RET_HEAD = ['profile', 'tier', 'band', 'reviews', 'first-try %', 'not-Again %', 'mean R %', 'delayed >=7d first-try % / not-Again % (n)', 'recombine % (n)', 'production %', 'chapter coverage %', 'deferred chapters', 'flag'];
+const pc = (x: number | undefined, d = 1) => (x === undefined || Number.isNaN(x) ? '-' : (x * 100).toFixed(d));
+function retentionCells(r: RetentionRow): string[] {
+  const s = r.stats;
+  return [r.profile, r.tier, r.band, String(s.reviews), pc(s.firstTry), pc(s.recall), pc(s.meanR),
+    s.delayed === undefined ? '-' : `${pc(s.delayedFirstTry)} / ${pc(s.delayed)} (${s.delayedN})`, s.recombine === undefined ? '-' : `${pc(s.recombine)} (${s.recombineN})`,
+    pc(s.production), pc(s.coverage), s.chaptersRead ? `${s.chaptersDeferred}/${s.chaptersRead}` : '-', r.flag];
+}
+
+const PLACE_HEAD = ['profile', 'placed at', 'seeded nodes', 'day-1 due', 'day-1 due min', 'warm-up budget min', 'day-1 throttled', 'peak due min (day)', 'throttled sessions', 'within budget from day'];
+function placementCells(r: ProfileRun): string[] {
+  const p = r.placement!;
+  return [r.profile, `${p.unitId ?? `unit ${p.unit}`} (index ${p.unit})`, String(p.seededNodes), String(p.day1.due), p.day1.dueMinutes.toFixed(1), p.day1.budgetMinutes.toFixed(1),
+    p.day1.converted === 'throttle' || p.day1.throttled ? 'yes' : 'no', `${p.peakDueMinutes.toFixed(1)} (${p.peakDay})`, `${p.throttledSessions}/${p.sessions}`, fmt(p.settledDay)];
+}
+
+export function formatReport(runs: ProfileRun[], quotas: Quotas, placed: ProfileRun[] = []): string {
   const lines: string[] = [];
   const rows = bandRows(runs);
-  lines.push(`Fluidez simulator — ${quotas.source} content, ${quotas.days} days, tier ${quotas.tier}`);
+  lines.push(`Fluidez simulator: ${quotas.source} content, ${quotas.days} days, tier ${quotas.tier}`);
   lines.push('');
   lines.push(table(BAND_HEAD, rows.map(bandCells)));
   lines.push('');
   lines.push(table(RUN_HEAD, runs.map(runCells)));
+  lines.push('');
+  lines.push(`Retention (event log; target ${TARGET_RETENTION * 100}%; first-try = graded Good, not-Again = Good or Hard):`);
+  lines.push(table(RET_HEAD, retentionRows(runs).map(retentionCells)));
+  lines.push('');
+  lines.push(`Grades: ${runs.map((r) => `${r.profile}/${r.tier} ${gradeText(r)}`).join('; ')}`);
+  if (placed.length) { lines.push('', 'Placement backlog (30 days after placement):', table(PLACE_HEAD, placed.map(placementCells))); }
   lines.push('');
   lines.push('Shortages by block:what (per run):');
   for (const r of runs) lines.push(`  ${`${r.profile}/${r.tier}`.padEnd(18)} ${Object.entries(r.shortageKinds).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${k} ${n}`).join(', ') || 'none'}`);
@@ -208,7 +255,7 @@ function totalsText(q: Quotas): string {
 }
 
 /** The markdown summary (content/_reports/sim-summary.md). `notes` are prepended verbatim. */
-export function formatMarkdown(runs: ProfileRun[], quotas: Quotas, notes: string, units?: Unit[]): string {
+export function formatMarkdown(runs: ProfileRun[], quotas: Quotas, notes: string, units?: Unit[], placed: ProfileRun[] = []): string {
   const md = (head: string[], rows: string[][]) => [`| ${head.join(' | ')} |`, `|${head.map(() => '---').join('|')}|`, ...rows.map((r) => `| ${r.join(' | ')} |`)].join('\n');
   const L: string[] = [notes.trim(), ''];
   if (units) {
@@ -223,8 +270,19 @@ export function formatMarkdown(runs: ProfileRun[], quotas: Quotas, notes: string
   L.push('## Calendar and load per profile, band and tier', '');
   L.push('`cal.days` = calendar days to finish the band (from the previous band\'s finish). `%throttled` = sessions converted to review by the backlog throttle. `load/budget` = mean due-review minutes ÷ the throttle threshold.', '');
   L.push(md(BAND_HEAD, bandRows(runs).map(bandCells)), '');
+  L.push('## Retention', '');
+  L.push(`Measured from the learner's event log (\`src/learner/events.ts\`). The simulated answer is circular by design: P(first try) = R^exponent plus noise, R the FSRS retrievability, so the **average** profile (exponent 1) must land near the ${TARGET_RETENTION * 100}% target if the scheduler, the review budget and the warm-up cuts hold the promise; a drift is flagged. Fast (exponent 0.7) should sit above, forgetful (1.6) and irregular (long gaps) below. \`first-try %\` = scored reviews graded Good; \`not-Again %\` = Good or Hard (a retry pass counts); \`mean R %\` = mean retrievability just before the rating; \`delayed >=7d\` = reviews of nodes introduced at least 7 days earlier: first-try share, and \`delayedAccuracy\` (not-Again); \`recombine\` = not-Again on novel-recombination reviews; \`production %\` = \`productionShare\`; \`chapter coverage %\` = mean share of a chapter's required words that were stable when it was read (chapters never weighed count 100%); \`deferred chapters\` = chapters that waited for coverage at least once / chapters read or deferred.`, '');
+  L.push(md(RET_HEAD, retentionRows(runs).map(retentionCells)), '');
+  L.push('Event grades per run (again / hard / good / easy): ' + runs.map((r) => `${r.profile}/${r.tier} ${gradeText(r)}`).join('; ') + '.', '');
+  const opLine = (r: ProfileRun) => `${r.profile}/${r.tier} recap ${r.opCounts.recap ?? 0}, warmup ${r.opCounts.warmup ?? 0}, recombine ${r.opCounts.recombine ?? 0}`;
+  L.push('Events by op: ' + runs.map(opLine).join('; ') + '. Recap blocks: ' + runs.map((r) => `${r.profile} ${r.recap.blocks} run (${r.recap.lapsed} lapsed, ${r.recap.fresh} new re-asked), ${r.recap.skipped} empty`).join('; ') + '. Time cap: ' + runs.map((r) => `${r.profile} ${r.timeCap.sessionsTruncated} sessions cut (${r.timeCap.blocksSkipped} blocks or runs)`).join('; ') + '.', '');
+  if (placed.length) {
+    L.push('## Placement backlog', '');
+    L.push('A learner placed at the start of a unit through the app\'s `applyPlacement` (skipped units seeded as Review-state cards whose stability grows with each unit of distance, due dates spread over a window sized to the warm-up budget), no session on day 0, a session on day 1 (never skipped), then 30 days of the profile\'s normal attendance. `day-1 due min` = due-review minutes the compiler costs on the day after placement, against the warm-up budget (the throttle threshold); `within budget from day` = the first day after which every session fit the budget.', '');
+    L.push(md(PLACE_HEAD, placed.map(placementCells)), '');
+  }
   L.push('## Repeats, reviews and supply per run', '');
-  L.push('`UNINTENDED REPEATS` must be 0 (stories, scenes, tasks, items, sentences re-shown without a label). `item rep.60d %` = non-deliberate exercise items repeated within 60 days (must be < 2%). `reused ctx` = review contexts re-served after ≥ 120 days (deliberate, `review-context-120d`). `multi %` = warm-up items reviewing 2–3 due nodes in one sentence.', '');
+  L.push('`UNINTENDED REPEATS` must be 0 (stories, scenes, tasks, items, sentences re-shown without a label). `item rep.60d %` = non-deliberate exercise items repeated within 60 days (must be < 2%). `reused ctx` = review contexts re-served after ≥ 120 days (deliberate, `review-context-120d`). `multi %` = warm-up items reviewing 2-3 due nodes in one sentence.', '');
   L.push(md(RUN_HEAD, runs.map(runCells)), '');
   L.push('## Sentences consumed per node (fresh), worst run', '');
   L.push(md(['kind', 'mean', 'p95', 'max', `quota (${quotas.factor} × p95)`], Object.entries(quotas.perNode).map(([k, v]) => [k, String(v.meanDemand), String(v.p95Demand), String(v.maxDemand), String(v.quota)])), '');
@@ -238,6 +296,8 @@ export function formatMarkdown(runs: ProfileRun[], quotas: Quotas, notes: string
   L.push(md(QUOTA_HEAD, quotaRows(quotas)), '');
   return L.join('\n');
 }
+
+function gradeText(r: ProfileRun): string { const g = r.gradeCounts; return `${g.again}/${g.hard}/${g.good}/${g.easy}`; }
 
 function maxDemand(ds: Demand[]): Demand {
   return ds.reduce((a, d) => ({

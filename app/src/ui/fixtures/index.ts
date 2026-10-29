@@ -47,7 +47,6 @@ const unit: Partial<Unit> & Pick<Unit, 'id' | 'days'> = {
   theme: 'Identidad personal: greetings, names, countries, jobs, café basics',
   canDo: "I can greet someone, say who I am, where I'm from and what I do, and ask them the same.",
   storyArc: 'Tomás lands in Bogotá and learns that his grandmother Rosa has left him a tiny café in La Candelaria. He meets Vale, don Hernando and Simón the parrot.',
-  quota: { bankSentences: 60, chapters: 2, scenes: 2, writingTasks: 3 },
   days: [
     { type: 'introduce', focus: ['g:ser-identity'], chunks: ['c:hola-buenos-dias', 'c:me-llamo', 'c:soy-de', 'c:mucho-gusto', 'c:como-estas'], lexemes: [], chapter: 'ch001' },
     { type: 'drill', focus: ['g:ser-identity'], chunks: ['c:gracias-de-nada', 'c:por-favor', 'c:no-entiendo'], lexemes: [] },
@@ -276,7 +275,7 @@ const chapters: Array<StoryChapter & { requires: string[] }> = [
 const scenes: Array<Scene & { requires: string[] }> = [
   {
     id: 'sc-u01-a', unit: UNIT, title: 'Meeting Vale',
-    brief: 'Vale works next door. She stops by the café to say hello. Introduce yourself.',
+    spare: false, brief: 'Vale works next door. She stops by the café to say hello. Introduce yourself.',
     requires: ['c:hola-buenos-dias', 'c:me-llamo', G],
     turns: [
       { id: 't1', npc: '¡Hola! Buenos días.', npcEn: 'Hi! Good morning.', intent: 'Say hello back.', accept: ['Hola, buenos días.', 'Hola.', 'Buenos días.'], require: [{ type: 'containsAny', words: ['hola', 'buenos días', 'buenas'], label: 'Say hello: <b>hola</b> or <b>buenos días</b>' }], focus: 'c:hola-buenos-dias', next: 't2' },
@@ -287,7 +286,7 @@ const scenes: Array<Scene & { requires: string[] }> = [
   },
   {
     id: 'sc-u01-b', unit: UNIT, title: 'A café in Chapinero',
-    brief: "It's your day off. You go to another café across town, and the waiter is chatty.",
+    spare: false, brief: "It's your day off. You go to another café across town, and the waiter is chatty.",
     requires: ['c:como-estas', 'c:por-favor', 'c:trabajo-en', G],
     turns: [
       { id: 't1', npc: 'Buenas tardes, ¿cómo está?', npcEn: 'Good afternoon, how are you?', intent: 'Answer: fine, thanks, and you?', accept: ['Bien, gracias, ¿y usted?', 'Bien, gracias, ¿y tú?'], require: [{ type: 'containsWord', word: 'bien', label: 'Say how you are: <b>bien</b>' }, { type: 'containsWord', word: 'gracias', label: 'Say <b>gracias</b>' }], focus: 'c:como-estas', next: 't2' },

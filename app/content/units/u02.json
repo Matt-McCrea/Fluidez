@@ -18,11 +18,11 @@
     "c:la-verdad"
    ],
    "lexemes": [
+    "l:centro",
     "l:saber",
     "l:verdad",
     "l:mejorar",
     "l:parque",
-    "l:centro",
     "l:barrio"
    ],
    "chapter": "ch003"
@@ -43,8 +43,8 @@
    ],
    "lexemes": [
     "l:llamar",
-    "l:escribir",
     "l:significar",
+    "l:escribir",
     "l:hospital"
    ]
   },
@@ -59,12 +59,12 @@
     "c:muy-amable"
    ],
    "lexemes": [
-    "l:amable",
     "l:repetir",
-    "l:universidad",
-    "l:colegio",
     "l:cansado",
-    "l:ocupado"
+    "l:ocupado",
+    "l:amable",
+    "l:universidad",
+    "l:colegio"
    ]
   },
   {
@@ -100,12 +100,6 @@
     "l:leer",
     "l:llegar",
     "l:empezar",
-    "l:terminar",
-    "l:compañero",
-    "l:jefe",
-    "l:reunión",
-    "l:computadora",
-    "l:correo",
     "l:horario",
     "l:empresa",
     "l:tienda",
@@ -142,10 +136,12 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:dedicar",
     "l:irse",
-    "l:deber",
-    "l:aquí"
+    "l:aquí",
+    "l:terminar",
+    "l:compañero",
+    "l:dedicar",
+    "l:deber"
    ]
   },
   {
@@ -162,7 +158,12 @@
     "c:a-que-te-dedicas",
     "c:a-que-hora"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:jefe",
+    "l:reunión",
+    "l:computadora",
+    "l:correo"
+   ]
   },
   {
    "type": "output",
@@ -177,11 +178,5 @@
    "scene": "sc-u02-a"
   }
  ],
- "storyArc": "Vale walks Tomás through a normal day at the café: she opens at six, bakes, serves, does the accounts Rosa never did. Don Hernando arrives at seven every morning, asks Tomás where he lives, what he does and why he talks \"like a news presenter\". Tomás is staying at a hostel and says he works in software. What he does not say is his plan: sell the café quickly and fly home. On Friday Vale overhears him on the phone with an estate agent.",
- "quota": {
-  "bankSentences": 480,
-  "chapters": 2,
-  "scenes": 1,
-  "writingTasks": 3
- }
+ "storyArc": "Vale walks Tomás through a normal day at the café: she opens at six, bakes, serves, does the accounts Rosa never did. Don Hernando arrives at seven every morning, asks Tomás where he lives, what he does and why he talks \"like a news presenter\". Tomás is staying at a hostel and says he works in software. What he does not say is his plan: sell the café quickly and fly home. On Friday Vale overhears him on the phone with an estate agent."
 }

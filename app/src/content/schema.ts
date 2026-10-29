@@ -69,12 +69,6 @@ export const Unit = z.object({
   canDo: z.string(),                    // "I can ..."
   days: z.array(UnitDay).min(7).max(10),
   storyArc: z.string(),                 // one paragraph: what happens to the cast this week
-  quota: z.object({                     // minimum supply the burn must produce for this unit
-    bankSentences: z.number().int(),
-    chapters: z.number().int(),
-    scenes: z.number().int(),
-    writingTasks: z.number().int(),
-  }),
 });
 export type Unit = z.infer<typeof Unit>;
 
@@ -84,12 +78,9 @@ export const BankSentence = z.object({
   en: z.string(),
   accept: z.array(z.string()).default([]),   // other correct Spanish for the en prompt
   acceptEn: z.array(z.string()).default([]), // other correct English for the es prompt
-  requires: z.array(NodeId).default([]),     // grammar/pattern/chunk nodes; computed by the tagger
-  lexemes: z.array(NodeId).default([]),      // l: nodes; computed by the tagger
+  requires: z.array(NodeId).default([]),     // grammar/pattern/chunk/lexeme nodes; computed by the tagger
   targets: z.array(NodeId).default([]),      // nodes this sentence was written to practise
   kind: z.enum(['statement', 'question', 'dialogue']).optional(),
-  chapter: z.string().optional(),
-  scene: z.string().optional(),
   unit: z.string().optional(),
   theme: z.string().optional(),
   source: z.string().optional(),             // old id it was mined from, or 'gen'
@@ -144,6 +135,7 @@ export const Scene = z.object({
   unit: z.string(),
   title: z.string(),
   brief: z.string(),
+  spare: z.boolean().default(false),    // true: no unit day plays it; gated at the end of its unit, served for review and replays
   turns: z.array(SceneTurn).min(3),
   requires: z.array(NodeId).default([]), // computed by the tagger over npc lines and accepts
 });

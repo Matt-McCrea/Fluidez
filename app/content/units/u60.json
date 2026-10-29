@@ -11,8 +11,7 @@
     "p:haces-bien-en",
     "p:lo-mejor-de",
     "p:a-lo-largo-de-esta-charla",
-    "p:de-lo-mas-adj",
-    "p:un-x-cualquiera"
+    "p:de-lo-mas-adj"
    ],
    "chunks": [
     "c:en-pleno-auge",
@@ -38,6 +37,7 @@
   {
    "type": "output",
    "focus": [
+    "p:un-x-cualquiera",
     "g:voseo-recognition",
     "g:future-subj-recognition"
    ],
@@ -106,9 +106,7 @@
     "p:saltar-a-la-vista",
     "p:calidad-dudosa",
     "p:rozar-el-ridiculo",
-    "p:ameno-pesado",
-    "p:no-servir-para-nada",
-    "p:resulta-adj-que"
+    "p:ameno-pesado"
    ],
    "chunks": [],
    "lexemes": []
@@ -116,6 +114,8 @@
   {
    "type": "output",
    "focus": [
+    "p:no-servir-para-nada",
+    "p:resulta-adj-que",
     "g:word-order-style"
    ],
    "chunks": [],
@@ -161,11 +161,5 @@
    "scene": "sc-u60-c"
   }
  ],
- "storyArc": "La Esquina de Rosa reopens as a café and cultural space, with Hernando's book on the counter and Rosa's letters framed on the wall. A well-known critic writes a mixed review; Tomás writes his reply, in his own voice. Vale asks him whether he is still \"only here for a few months\". Before he can answer, Simón does it for him: \"¡Qué pena con usted!\".",
- "quota": {
-  "bankSentences": 503,
-  "chapters": 5,
-  "scenes": 3,
-  "writingTasks": 6
- }
+ "storyArc": "La Esquina de Rosa reopens as a café and cultural space, with Hernando's book on the counter and Rosa's letters framed on the wall. A well-known critic writes a mixed review; Tomás writes his reply, in his own voice. Vale asks him whether he is still \"only here for a few months\". Before he can answer, Simón does it for him: \"¡Qué pena con usted!\"."
 }
