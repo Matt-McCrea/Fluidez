@@ -1,0 +1,45 @@
+{
+  "node": "x:perdon-lo-siento",
+  "hook": {
+    "line": "English uses one word, sorry, for a bumped elbow and for a funeral. Spanish splits them, and picking the wrong one sounds either cold or dramatic. Tomás swings round with a tray and nearly hits Don Hernando.",
+    "es": "Perdón, don Hernando. ¿Está bien?",
+    "en": "Sorry, Don Hernando. Are you OK?"
+  },
+  "examples": [
+    { "es": "Ay, perdón.", "en": "Oops, sorry." },
+    { "es": "Disculpe, ¿qué hora es?", "en": "Excuse me, what time is it? (to a stranger)" },
+    { "es": "Con permiso, señora.", "en": "Excuse me, ma'am. (to get past)" },
+    { "es": "Lo siento, ya no hay pan.", "en": "Sorry, there's no bread left." },
+    { "es": "Lo siento mucho, Tomás.", "en": "I'm really sorry, Tomás." },
+    { "es": "Siento llegar tarde, Hernando.", "en": "Sorry I'm late, Hernando." }
+  ],
+  "rule": "Think of sorry as a scale.\n\nLight: *perdón*, *disculpe* (to someone you call *usted*), *disculpa* (to a friend). For bumps, small slips and getting someone's attention. To squeeze past, *con permiso*.\n\nHeavy: *lo siento*, or *lo siento mucho*. For bad news, real harm, or when someone has lost something or someone. It literally means I feel it.\n\nNaming it: *siento* + a plain verb says exactly what you're sorry for: *Siento llegar tarde.*\n\nThe mistakes go both ways. *Lo siento* for a bumped elbow sounds oddly dramatic. *Perdón* to a friend whose grandmother died sounds like you stepped on their foot.",
+  "smallPrint": "Teachers call this matching the apology to the offence: courtesy formulas versus expressing regret.",
+  "readAndPick": [
+    { "es": "Ay, perdón.", "options": ["What you say after stepping on someone's foot.", "What you say when a friend's grandmother dies."], "answer": 0 },
+    { "es": "Lo siento mucho.", "options": ["What you say after stepping on someone's foot.", "What you say when a friend's grandmother dies."], "answer": 1 },
+    { "es": "Con permiso.", "options": ["I'm very sorry.", "Excuse me. (I need to get past)", "Sorry I'm late."], "answer": 1 },
+    { "es": "Disculpe, ¿qué hora es?", "options": ["Sorry I'm late. What time is it?", "Excuse me, what time is it?"], "answer": 1 },
+    { "es": "Disculpa, ¿esta es tu toalla?", "options": ["Excuse me, is this your towel? (to a friend)", "Excuse me, is this your towel? (to a stranger)"], "answer": 0 },
+    { "es": "Disculpe la demora.", "options": ["Sorry for the wait. (to a customer)", "Sorry for the wait. (to a friend)"], "answer": 0 },
+    { "es": "Lo siento, el café está cerrado.", "options": ["Excuse me, is the café closed?", "Sorry, the café is closed.", "I'm sorry I closed the café."], "answer": 1 },
+    { "es": "Siento llegar tarde.", "options": ["Sorry I'm late.", "Sorry, it's late."], "answer": 0 },
+    { "es": "Lo siento, Vale. Hoy no puedo.", "options": ["Excuse me, Vale. Can I today?", "Sorry, Vale. I can't today."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Someone knocks your arm on the bus. Pick and type the whole sentence: *___, señora.* (*Perdón* or *Lo siento mucho*)", "answer": "Perdón, señora.", "accept": [], "why": "A small bump gets the light one: *perdón*." },
+    { "prompt": "Vale tells you some sad news about her family. Pick and type the whole sentence: *___, Vale.* (*Perdón* or *Lo siento mucho*)", "answer": "Lo siento mucho, Vale.", "accept": [], "why": "Real bad news needs the heavy one: *lo siento mucho*." },
+    { "prompt": "Ask a stranger: Excuse me, what time is it?", "answer": "Disculpe, ¿qué hora es?", "accept": ["Perdón, ¿qué hora es?"], "why": "To get a stranger's attention, *disculpe* or *perdón*." },
+    { "prompt": "Someone is standing in the café doorway and you need to get past. Say: Excuse me.", "answer": "Con permiso.", "accept": [], "why": "Getting past someone is *con permiso*." },
+    { "prompt": "A customer wants bread, but it's all gone. Say: Sorry, there's no bread left.", "answer": "Lo siento, ya no hay pan.", "accept": ["Lo siento, no hay pan."], "why": "It's a small disappointment for them, so *lo siento*." },
+    { "prompt": "Say exactly what you're sorry for: Sorry I'm late.", "answer": "Siento llegar tarde.", "accept": [], "why": "*Siento* + *llegar tarde* names the thing." },
+    { "prompt": "Make it friendly, for Vale: *Disculpe, ¿qué hora es?*", "answer": "Disculpa, ¿qué hora es?", "accept": ["Perdón, ¿qué hora es?"], "why": "*Disculpa* is the form for someone you call *tú*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Perdón, Tomás.", "right": "Lo siento mucho, Tomás.", "why": "Almost. Tomás has just lost his grandmother; *perdón* sounds like you bumped him. Real loss takes *lo siento mucho*." },
+    { "wrong": "Lo siento, ¿qué hora es?", "right": "Disculpe, ¿qué hora es?", "why": "To get someone's attention, use the light one: *disculpe* or *perdón*." },
+    { "wrong": "Disculpa, señor, ¿qué hora es?", "right": "Disculpe, señor, ¿qué hora es?", "why": "Someone you call *señor* is *usted*, so *disculpe*." },
+    { "wrong": "Excusa, ¿dónde está el baño?", "right": "Disculpe, ¿dónde está el baño?", "why": "*Excusa* means an excuse, not excuse me. Say *disculpe*." }
+  ],
+  "personal": "Think of the last time you said sorry in English. Was it a bump or something bigger? Say it in Spanish with the right weight: *perdón*, *disculpe* or *lo siento*."
+}

@@ -1,0 +1,43 @@
+{
+  "node": "p:desde-hasta",
+  "hook": {
+    "line": "Opening hours, shifts, how long you're staying: life is full of spans with a start and an end. Tomás paints the café's hours on the door.",
+    "es": "Abrimos de lunes a sábado, de seis a seis.",
+    "en": "We're open Monday to Saturday, six to six."
+  },
+  "examples": [
+    { "es": "Estoy en la oficina de lunes a viernes, de ocho a cinco.", "en": "I'm at the office Monday to Friday, eight to five." },
+    { "es": "El café abre desde las seis de la mañana hasta las seis de la tarde.", "en": "The café is open from six in the morning until six in the evening." },
+    { "es": "Vale está en la cocina de seis a dos.", "en": "Vale is in the kitchen from six to two." },
+    { "es": "Caminamos desde la casa hasta el parque.", "en": "We walked from the house to the park." },
+    { "es": "¿Hasta qué hora estás en el café?\nHasta las cinco.", "en": "Until what time are you at the café?\nUntil five." },
+    { "es": "Estoy en Bogotá hasta diciembre.", "en": "I'm in Bogotá until December." }
+  ],
+  "rule": "Two pairs do the same job.\n*de… a…* is short and everyday: *de ocho a cinco*, *de lunes a viernes*.\n*desde… hasta…* is fuller and a bit more careful, and with clock times it keeps *las*: *desde las seis hasta las seis*.\n\nKeep each pair together: *de* goes with *a*, *desde* with *hasta*.\n\nOn its own, *hasta* means until: *hasta diciembre*. *Desde* alone means since: *desde el viernes*.\n\nThe same words work for places: *desde la casa hasta el parque*.",
+  "smallPrint": "Teachers call this marking the start and end of a span with prepositions.",
+  "readAndPick": [
+    { "es": "Estoy en la oficina de ocho a cinco.", "options": ["I'm at the office at eight and at five.", "I'm at the office from eight to five."], "answer": 1 },
+    { "es": "Estoy aquí hasta el viernes.", "options": ["I'm here until Friday.", "I've been here since Friday."], "answer": 0 },
+    { "es": "Estoy aquí desde el viernes.", "options": ["I'm here until Friday.", "I've been here since Friday."], "answer": 1 },
+    { "es": "El café abre de lunes a sábado.", "options": ["The café is open Monday to Saturday.", "The café opens on Monday and on Saturday."], "answer": 0 },
+    { "es": "Caminamos desde el parque hasta la plaza.", "options": ["We walked from the square to the park.", "We walked from the park to the square."], "answer": 1 },
+    { "es": "¿Hasta qué hora trabajas?", "options": ["What time do you start work?", "Until what time do you work?"], "answer": 1 },
+    { "es": "Hernando está en el café desde las tres hasta las cinco.", "options": ["Hernando is at the café until three.", "Hernando is at the café at three and at five.", "Hernando is at the café from three until five."], "answer": 2 },
+    { "es": "Mariana trabaja hasta las once de la noche.", "options": ["Mariana works until eleven at night.", "Mariana works from eleven at night.", "Mariana works at eleven at night."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Estoy en la oficina desde las ocho ___ las cinco.* (*a* or *hasta*)", "answer": "Estoy en la oficina desde las ocho hasta las cinco.", "accept": [], "why": "*Desde* goes with *hasta*." },
+    { "prompt": "Pick and type the whole sentence: *El café abre ___ lunes a sábado.* (*de* or *desde*)", "answer": "El café abre de lunes a sábado.", "accept": [], "why": "*A* goes with *de*." },
+    { "prompt": "Say: We're open Monday to Friday.", "answer": "Abrimos de lunes a viernes.", "accept": ["Abrimos desde el lunes hasta el viernes."], "why": "The short everyday pair: *de lunes a viernes*." },
+    { "prompt": "Ask a friend: Until what time do you work?", "answer": "¿Hasta qué hora trabajas?", "accept": [], "why": "Until is *hasta*, and it comes first in the question." },
+    { "prompt": "Say: I'm in Bogotá until December.", "answer": "Estoy en Bogotá hasta diciembre.", "accept": [], "why": "Only the end is named, so just *hasta*." },
+    { "prompt": "Make it fuller with *desde… hasta*: *Vale está en la cocina de seis a dos.*", "answer": "Vale está en la cocina desde las seis hasta las dos.", "accept": [], "why": "Swap the pair, and the clock times take *las*." },
+    { "prompt": "Make it short with *de… a*: *Hernando está en el café desde las tres hasta las cinco.*", "answer": "Hernando está en el café de tres a cinco.", "accept": ["Hernando está en el café de las tres a las cinco."], "why": "*De… a* is the quick everyday way to say it." }
+  ],
+  "pitfalls": [
+    { "wrong": "Abrimos desde las seis a las seis.", "right": "Abrimos desde las seis hasta las seis.", "why": "Almost. *Desde* pairs with *hasta*; *a* pairs with *de*." },
+    { "wrong": "Estoy en la oficina desde ocho hasta cinco.", "right": "Estoy en la oficina desde las ocho hasta las cinco.", "why": "With *desde… hasta*, clock times keep their *las*." },
+    { "wrong": "Estoy aquí a diciembre.", "right": "Estoy aquí hasta diciembre.", "why": "For until on its own, use *hasta*. *A* only works after *de*." }
+  ],
+  "personal": "When are you busy each week? Say your days and hours with *de… a…*, then say until when you're at work or home today with *hasta*."
+}
