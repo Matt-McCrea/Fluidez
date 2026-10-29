@@ -1,0 +1,90 @@
+{
+  "node": "p:mas-de-number",
+  "hook": {
+    "line": "Prices, ages, crowds: plenty of the numbers you'll say are more than or fewer than something. English uses *than* for all of it, and that walks you straight into a small trap.",
+    "es": "El café tiene más de cincuenta años.",
+    "en": "The café is more than fifty years old."
+  },
+  "examples": [
+    { "es": "Cuesta más de cien mil pesos.", "en": "It costs more than a hundred thousand pesos." },
+    { "es": "Hernando tiene más de setenta años.", "en": "Hernando is over seventy." },
+    { "es": "Había menos de diez personas.", "en": "There were fewer than ten people." },
+    { "es": "¿Tienes más de treinta años?", "en": "Are you over thirty?" },
+    { "es": "Altamira compró más de diez casas en el barrio.", "en": "Altamira bought more than ten houses in the neighbourhood." },
+    { "es": "Vale trabaja más que yo.", "en": "Vale works more than me." }
+  ],
+  "rule": "Before a number, more than is *más de*, and fewer than or less than is *menos de*: *más de cien mil pesos*, *menos de diez personas*. You're giving an amount, not comparing two things.\n\nWhen you compare with someone or something else, it's the *que* you already know: *Vale trabaja más que yo*.\n\nSo the test is simple: is a number next? Then *de*.\n\nOne twist to recognise: *No tengo más que diez mil pesos* means I only have ten thousand pesos.",
+  "smallPrint": "Teachers call *más de* and *menos de* comparisons of quantity. English uses *than* for both jobs; Spanish splits them.",
+  "readAndPick": [
+    { "es": "Hernando tiene más de setenta años.", "options": ["Hernando is over seventy.", "Hernando is under seventy."], "answer": 0 },
+    { "es": "Había menos de diez personas.", "options": ["There were more than ten people.", "There were fewer than ten people."], "answer": 1 },
+    { "es": "No tengo más que diez mil pesos.", "options": ["I only have ten thousand pesos.", "I have more than ten thousand pesos."], "answer": 0 },
+    { "es": "Tengo más de diez mil pesos.", "options": ["I only have ten thousand pesos.", "I have more than ten thousand pesos."], "answer": 1 },
+    { "es": "Vale trabaja más que yo.", "options": ["I work more than Vale.", "Vale works more than me."], "answer": 1 },
+    { "es": "Altamira compró más de diez casas.", "options": ["Altamira bought more than ten houses.", "Altamira bought fewer than ten houses."], "answer": 0 },
+    { "es": "Cuesta menos de cien mil pesos.", "options": ["It costs more than a hundred thousand pesos.", "It costs a hundred thousand pesos.", "It costs less than a hundred thousand pesos."], "answer": 2 },
+    { "es": "¿Tienes más de treinta años?", "options": ["Are you over thirty?", "Are you under thirty?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de* or *que*: Hernando tiene más ___ setenta años. (Hernando is over seventy.) Type the whole sentence.",
+      "answer": "Hernando tiene más de setenta años.",
+      "accept": [],
+      "why": "A number comes next, so it's *de*."
+    },
+    {
+      "prompt": "Choose *de* or *que*: Vale trabaja más ___ yo. (Vale works more than me.) Type the whole sentence.",
+      "answer": "Vale trabaja más que yo.",
+      "accept": [],
+      "why": "You're comparing Vale with a person, not giving a number, so it's *que*."
+    },
+    {
+      "prompt": "It costs more than a hundred thousand pesos.",
+      "answer": "Cuesta más de cien mil pesos.",
+      "accept": [],
+      "why": "More than before a number is *más de*."
+    },
+    {
+      "prompt": "There were fewer than ten people.",
+      "answer": "Había menos de diez personas.",
+      "accept": [],
+      "why": "Fewer than before a number is *menos de*."
+    },
+    {
+      "prompt": "To a friend: are you over thirty?",
+      "answer": "¿Tienes más de treinta años?",
+      "accept": [],
+      "why": "Age uses *tener*, and over a number is *más de*."
+    },
+    {
+      "prompt": "Flip it to fewer: *Altamira compró más de diez casas.*",
+      "answer": "Altamira compró menos de diez casas.",
+      "accept": [],
+      "why": "Swap *más* for *menos*; the *de* stays because a number follows."
+    },
+    {
+      "prompt": "Say you only have ten thousand pesos, using *no… más que*.",
+      "answer": "No tengo más que diez mil pesos.",
+      "accept": [],
+      "why": "With *no* in front, *más que* plus a number means only."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Cuesta más que cien mil pesos.",
+      "right": "Cuesta más de cien mil pesos.",
+      "why": "Almost. Before a number, Spanish uses *de*, not *que*."
+    },
+    {
+      "wrong": "Vale trabaja más de yo.",
+      "right": "Vale trabaja más que yo.",
+      "why": "With a person to compare with, it's *que*; *de* is only for numbers."
+    },
+    {
+      "wrong": "Había menos que diez personas.",
+      "right": "Había menos de diez personas.",
+      "why": "*Menos* follows the same rule: before a number, *menos de*."
+    }
+  ],
+  "personal": "Write two true sentences with numbers about your life: something you have more of than a number (*Tengo más de…*) and something with *menos de*, like books, cousins or hours of sleep."
+}
