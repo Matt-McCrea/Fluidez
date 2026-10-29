@@ -1,0 +1,229 @@
+{
+  "id": "sc-u13-b",
+  "unit": "u13",
+  "title": "The cake for Calle 85",
+  "brief": "You're Tomás. Tomorrow Vale has to deliver a big cake in the north of the city, and after your adventure this week she thinks you're the TransMilenio expert. Tell her what to do, step by step. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, mañana llevo una torta a un cliente en la calle 85. Tú ya eres experto en TransMilenio, ¿no?",
+      "npcEn": "Tomás, tomorrow I'm taking a cake to a client on Calle 85. You're a TransMilenio expert now, aren't you?",
+      "intent": "Say yes, and tell her to take route B to the north.",
+      "accept": [
+        "Sí. Toma la ruta B al norte.",
+        "Claro. Toma un bus de la ruta B, al norte.",
+        "Sí, toma la ruta B. Va al norte."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "tomar",
+          "tense": "imperativo",
+          "person": "tú",
+          "label": "take (tú): toma"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tome"
+          ],
+          "label": "Vale is a friend: toma, not tome"
+        }
+      ],
+      "focus": "g:commands-tu",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Listo. ¿Y dónde me bajo? ¿En la Cien?",
+      "npcEn": "OK. And where do I get off? At the Cien?",
+      "intent": "Say no, and tell her to get off at Calle 85.",
+      "accept": [
+        "No, baja en la estación de la calle 85.",
+        "No. Baja en la calle 85.",
+        "No, en la Cien no. Baja en la 85."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "bajar",
+          "tense": "imperativo",
+          "person": "tú",
+          "label": "get off (tú): baja"
+        }
+      ],
+      "focus": "g:commands-tu",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y después? La torta es muy grande, Tomás.",
+      "npcEn": "And then? The cake is very big, Tomás.",
+      "intent": "Tell her to cross the avenue at the traffic light and keep going for two blocks.",
+      "accept": [
+        "Cruza la avenida en el semáforo y sigue dos cuadras.",
+        "En el semáforo, cruza la avenida y sigue derecho dos cuadras.",
+        "Primero cruza la avenida en el semáforo y sigue derecho dos cuadras."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "cruzar",
+          "tense": "imperativo",
+          "person": "tú",
+          "label": "cross (tú): cruza"
+        }
+      ],
+      "focus": "g:commands-tu",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Espera. El cliente me escribe que vive en la carrera 85, no en la calle 85.",
+      "npcEn": "Wait. The client is texting me that he lives on Carrera 85, not Calle 85.",
+      "intent": "Say that's very far, and tell her to call Hernando.",
+      "accept": [
+        "Uy, eso queda muy lejos. Llama a Hernando.",
+        "Eso está muy lejos. Llama a Hernando, Vale.",
+        "¡Qué lejos! Llama a Hernando."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "llamar",
+          "tense": "imperativo",
+          "person": "tú",
+          "label": "call (tú): llama"
+        },
+        {
+          "type": "containsWord",
+          "word": "lejos",
+          "label": "far: lejos"
+        }
+      ],
+      "focus": "x:tu-usted",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿A Hernando? ¿Y qué le digo?",
+      "npcEn": "Hernando? And what do I say to him?",
+      "intent": "Tell her not to worry: you'll ask him for the Burra yourself.",
+      "accept": [
+        "Tranquila. Yo le pido la Burra.",
+        "No, yo le pido la Burra.",
+        "Yo lo llamo. Le pido la Burra."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "le pido",
+          "label": "I'll ask him for it: le pido"
+        }
+      ],
+      "focus": "g:indirect-objects",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Ay, gracias. Pero la Burra se demora una hora, ¿no?",
+      "npcEn": "Oh, thanks. But the Burra takes an hour, doesn't it?",
+      "intent": "Say yes, so tell her to leave early, at eight.",
+      "accept": [
+        "Sí. Sal temprano, a las ocho.",
+        "Sí, entonces sal temprano, a las ocho.",
+        "Sí. Sal a las ocho."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "salir",
+          "tense": "imperativo",
+          "person": "tú",
+          "label": "leave (tú): sal"
+        }
+      ],
+      "focus": "g:commands-tu",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:no-cierto",
+    "c:tranquilo",
+    "g:commands-tu",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:avenida",
+    "l:bajar",
+    "l:bajarse",
+    "l:bus",
+    "l:calle",
+    "l:carrera",
+    "l:claro",
+    "l:cliente",
+    "l:cruzar",
+    "l:cuadra",
+    "l:decir",
+    "l:demora",
+    "l:derecho",
+    "l:después",
+    "l:dónde",
+    "l:escribir",
+    "l:esperar",
+    "l:estación",
+    "l:estar",
+    "l:experto",
+    "l:grande",
+    "l:hora",
+    "l:ir",
+    "l:lejos",
+    "l:listo",
+    "l:llamar",
+    "l:llevar",
+    "l:mañana",
+    "l:norte",
+    "l:pedir",
+    "l:quedar",
+    "l:qué",
+    "l:ruta",
+    "l:salir",
+    "l:seguir",
+    "l:semáforo",
+    "l:ser",
+    "l:temprano",
+    "l:tomar",
+    "l:torta",
+    "l:tranquilo",
+    "l:vivir",
+    "p:cerca-de",
+    "p:demonstratives-basic",
+    "p:directions-cuadras",
+    "p:exclamations-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:personal-a",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:street-names",
+    "p:subirse-bajarse",
+    "p:tardar-en",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:transport-en"
+  ]
+}

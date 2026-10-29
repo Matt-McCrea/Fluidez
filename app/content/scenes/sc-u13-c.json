@@ -1,0 +1,218 @@
+{
+  "id": "sc-u13-c",
+  "unit": "u13",
+  "title": "Twenty minutes by Caracas",
+  "brief": "You're Tomás, and it's late. You're tired after a day in the north, so you take a taxi home to the café in La Candelaria (Calle 11 with Carrera 4). Tell the driver where to go and which way. He's a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas noches, señor. Siga, siga. ¿Para dónde vamos?",
+      "npcEn": "Good evening, sir. Get in, get in. Where are we going?",
+      "intent": "Say you're going to La Candelaria, to Calle 11 with Carrera 4.",
+      "accept": [
+        "Voy a La Candelaria, a la calle 11 con carrera 4.",
+        "A la calle 11 con carrera 4, en La Candelaria, por favor.",
+        "Buenas noches. Voy a la calle 11 con carrera 4, en La Candelaria."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "calle (11|once) con carrera (4|cuatro)",
+          "flags": "i",
+          "label": "a corner: calle 11 con carrera 4"
+        }
+      ],
+      "focus": "p:street-names",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Listo. Pero hay trancón en la Séptima.",
+      "npcEn": "OK. But there's a traffic jam on the Séptima.",
+      "intent": "Ask how long it takes.",
+      "accept": [
+        "¿Cuánto se demora?",
+        "Uy. ¿Cuánto se demora?",
+        "¿Y cuánto se demora, más o menos?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "containsWord",
+          "word": "demora",
+          "label": "how long does it take: ¿cuánto se demora?"
+        }
+      ],
+      "focus": "c:cuanto-se-demora",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "En la Séptima, una hora. En la Caracas, veinte minutos.",
+      "npcEn": "On the Séptima, an hour. On the Caracas, twenty minutes.",
+      "intent": "Tell him to take the Caracas, please.",
+      "accept": [
+        "Tome la Caracas, por favor.",
+        "Listo, tome la Caracas, por favor.",
+        "Tome la Caracas. Es mejor."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "tomar",
+          "tense": "imperativo",
+          "person": "usted",
+          "label": "take (usted): tome"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "toma"
+          ],
+          "label": "use usted (tome), not tú (toma)"
+        }
+      ],
+      "focus": "g:commands-usted",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Llegamos a la calle 11. Pero aquí hay muchos carros.",
+      "npcEn": "We've reached Calle 11. But there are lots of cars here.",
+      "intent": "Ask him to drop you at the corner, please.",
+      "accept": [
+        "¿Me deja en la esquina, por favor?",
+        "Bueno. ¿Me deja en la esquina?",
+        "¿Me deja aquí en la esquina, por favor?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "me deja",
+          "label": "drop me: ¿me deja…?"
+        }
+      ],
+      "focus": "c:me-deja-en",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Claro. Son veintidós mil pesos.",
+      "npcEn": "Of course. That's twenty-two thousand pesos.",
+      "intent": "Ask if you can pay him by card.",
+      "accept": [
+        "¿Le pago con tarjeta?",
+        "Gracias. ¿Le pago con tarjeta?",
+        "¿Le puedo pagar con tarjeta?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\ble (pago|puedo pagar)\\b",
+          "flags": "i",
+          "label": "pay you: le pago"
+        }
+      ],
+      "focus": "g:indirect-objects",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "No, señor. Tarjeta no.",
+      "npcEn": "No, sir. No cards.",
+      "intent": "Say the money is in the café, and ask him to wait a moment, please.",
+      "accept": [
+        "La plata está en el café. Espere un momento, por favor.",
+        "Lo siento. La plata está en el café. Espere un momento.",
+        "Espere un momento, señor. La plata está en el café."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "esperar",
+          "tense": "imperativo",
+          "person": "usted",
+          "label": "wait (usted): espere"
+        }
+      ],
+      "focus": "g:commands-usted",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:cuanto-se-demora",
+    "c:en-que-le-puedo-servir",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:lo-siento-pero-no-puedo",
+    "c:mas-o-menos",
+    "c:me-deja-en",
+    "c:por-favor",
+    "c:puedo",
+    "c:siga",
+    "c:siga-siga",
+    "c:tarjeta-o-efectivo",
+    "c:un-momentico",
+    "c:voy-a",
+    "g:commands-usted",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:ser-identity",
+    "g:stem-boot",
+    "l:aquí",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:calle",
+    "l:carrera",
+    "l:carro",
+    "l:claro",
+    "l:cuánto",
+    "l:dejar",
+    "l:demora",
+    "l:dónde",
+    "l:esperar",
+    "l:esquina",
+    "l:estar",
+    "l:favor",
+    "l:hora",
+    "l:ir",
+    "l:listo",
+    "l:llegar",
+    "l:mejor",
+    "l:minuto",
+    "l:momento",
+    "l:noche",
+    "l:pagar",
+    "l:peso",
+    "l:plata",
+    "l:poder",
+    "l:seguir",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:tarjeta",
+    "l:tomar",
+    "l:trancón",
+    "p:aqui-ahi-alla",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:street-names"
+  ]
+}

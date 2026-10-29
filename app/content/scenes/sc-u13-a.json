@@ -1,0 +1,234 @@
+{
+  "id": "sc-u13-a",
+  "unit": "u13",
+  "title": "The lady with the map",
+  "brief": "You're Tomás, sweeping the pavement outside the café. A lady with an old paper map stops you: she needs to get to Calle 100, the same trip you made this week. Give her the route you learned the hard way. She's a stranger and older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes, joven. Oiga, ¿la estación de TransMilenio queda lejos?",
+      "npcEn": "Good afternoon, young man. Excuse me, is the TransMilenio station far?",
+      "intent": "Say no, it's very close, on Carrera 10.",
+      "accept": [
+        "No, señora. Queda muy cerca, en la carrera 10.",
+        "No, está muy cerca. Queda en la carrera 10.",
+        "No, no queda lejos. Está en la carrera 10."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "carrera (10|diez)",
+          "flags": "i",
+          "label": "on Carrera 10: en la carrera 10"
+        }
+      ],
+      "focus": "p:street-names",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Muy cerca? ¿Y cómo llego?",
+      "npcEn": "Very close? And how do I get there?",
+      "intent": "Tell her to go straight on for two blocks and turn left.",
+      "accept": [
+        "Siga derecho dos cuadras y doble a la izquierda.",
+        "Mire, siga derecho dos cuadras y doble a la izquierda.",
+        "Siga derecho dos cuadras. Después, doble a la izquierda."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "seguir",
+          "tense": "imperativo",
+          "person": "usted",
+          "label": "go straight on (usted): siga"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "sigue"
+          ],
+          "label": "use usted (siga), not tú (sigue)"
+        }
+      ],
+      "focus": "g:commands-usted",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Muy bien. Yo voy a la calle 100. ¿Qué bus tomo?",
+      "npcEn": "Very good. I'm going to Calle 100. Which bus do I take?",
+      "intent": "Tell her to take route B, going north.",
+      "accept": [
+        "Tome la ruta B, al norte.",
+        "Tome la ruta B al norte, señora.",
+        "Tome un bus de la ruta B, al norte."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "tomar",
+          "tense": "imperativo",
+          "person": "usted",
+          "label": "take (usted): tome"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "toma"
+          ],
+          "label": "use usted (tome), not tú (toma)"
+        }
+      ],
+      "focus": "g:commands-usted",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Un momento. Mi hijo dice que la ruta B va al sur.",
+      "npcEn": "Just a moment. My son says route B goes south.",
+      "intent": "Say no: yesterday a vendor explained the route to you, and it goes north.",
+      "accept": [
+        "No, señora. Ayer un vendedor me explicó la ruta. Va al norte.",
+        "No. Un vendedor me explicó la ruta ayer, y va al norte.",
+        "Ayer un vendedor me explicó la ruta. La ruta B va al norte."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "me explicó",
+          "label": "he explained it to me: me explicó"
+        }
+      ],
+      "focus": "g:indirect-objects",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Ay, y no tengo tarjeta para el pasaje!",
+      "npcEn": "Oh, and I don't have a card for the fare!",
+      "intent": "Tell her to buy a card at the ticket desk in the station.",
+      "accept": [
+        "Compre una tarjeta en la caja de la estación.",
+        "Primero compre una tarjeta en la caja.",
+        "Tranquila, señora. Compre una tarjeta en la caja de la estación."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "comprar",
+          "tense": "imperativo",
+          "person": "usted",
+          "label": "buy (usted): compre"
+        }
+      ],
+      "focus": "g:commands-usted",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Usted es muy amable, joven. Gracias.",
+      "npcEn": "You're very kind, young man. Thank you.",
+      "intent": "Say you're welcome, and tell her to come to the café one day.",
+      "accept": [
+        "De nada, señora. Venga un día al café.",
+        "De nada. Venga al café un día, señora.",
+        "Con gusto. Venga un día al café de Rosa."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "venir",
+          "tense": "imperativo",
+          "person": "usted",
+          "label": "come (usted): venga"
+        }
+      ],
+      "focus": "g:commands-usted",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:compre-trabaje",
+    "c:con-mucho-gusto",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-explico",
+    "c:muy-amable",
+    "c:oiga-oye",
+    "c:siga",
+    "c:tengo",
+    "c:tranquilo",
+    "c:voy-a",
+    "g:commands-usted",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:amable",
+    "l:ayer",
+    "l:bien",
+    "l:buena",
+    "l:bus",
+    "l:café",
+    "l:caja",
+    "l:calle",
+    "l:carrera",
+    "l:cerca",
+    "l:comprar",
+    "l:cuadra",
+    "l:cómo",
+    "l:decir",
+    "l:derecho",
+    "l:después",
+    "l:doblar",
+    "l:día",
+    "l:estación",
+    "l:estar",
+    "l:explicar",
+    "l:gusto",
+    "l:hijo",
+    "l:ir",
+    "l:izquierda",
+    "l:joven",
+    "l:lejos",
+    "l:llegar",
+    "l:mirar",
+    "l:momento",
+    "l:norte",
+    "l:oír",
+    "l:pasaje",
+    "l:quedar",
+    "l:qué",
+    "l:ruta",
+    "l:seguir",
+    "l:ser",
+    "l:señora",
+    "l:sur",
+    "l:tarde",
+    "l:tarjeta",
+    "l:tener",
+    "l:tomar",
+    "l:tranquilo",
+    "l:vendedor",
+    "l:venir",
+    "p:cerca-de",
+    "p:directions-cuadras",
+    "p:ir-a-venir-de-place",
+    "p:no-es-x-es-y",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:quedar-cerca",
+    "p:street-names",
+    "p:time-sequence-basic"
+  ]
+}
