@@ -6,8 +6,8 @@
   "turns": [
     {
       "id": "t1",
-      "npc": "Tomás, ¡qué pena! Me contaron de Simón. ¿Y Vale cómo está?",
-      "npcEn": "Tomás, I'm so sorry! They told me about Simón. And how's Vale?",
+      "npc": "Tomás, ¡qué pena! Me contaron que Simón no aparece. ¿Y Vale cómo está?",
+      "npcEn": "Tomás, I'm so sorry! They told me Simón's missing. And how's Vale?",
       "intent": "Say badly: she's probably crying in the kitchen.",
       "accept": [
         "Mal. Estará llorando en la cocina.",
@@ -171,14 +171,17 @@
     "g:por-para-1",
     "g:prep-pronouns",
     "g:present-ar",
+    "g:present-er-ir",
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:preterite-ser-ir-hacer",
     "g:reflexive-routine",
     "g:ser-identity",
     "g:stem-boot",
+    "g:that-clauses",
     "g:verb-infinitive",
     "g:yo-irregular",
+    "l:aparecer",
     "l:artículo",
     "l:asustarse",
     "l:bien",
@@ -222,6 +225,7 @@
     "l:volver",
     "p:demonstratives-basic",
     "p:indefinites-basic",
+    "p:me-contaron-que",
     "p:me-te-nos-objects",
     "p:para-inf",
     "p:para-inf-purpose",
@@ -232,6 +236,7 @@
     "p:te-importaria",
     "p:tendrias-que",
     "p:tener-razon",
+    "p:tengo-entendido-que",
     "p:ya-todavia-basic"
   ]
 }

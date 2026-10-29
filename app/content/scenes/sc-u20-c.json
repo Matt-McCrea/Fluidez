@@ -53,8 +53,8 @@
     },
     {
       "id": "t3",
-      "npc": "Bueno, subimos. Él habla en inglés todo el día. ¿Dónde lo aprendió?",
-      "npcEn": "All right, let's go up. He talks in English all day. Where did he learn it?",
+      "npc": "Bueno, subimos. Él habla en inglés todo el tiempo. ¿Dónde lo aprendió?",
+      "npcEn": "All right, let's go up. He talks in English all the time. Where did he learn it?",
       "intent": "Say you suppose he learned it from you.",
       "accept": [
         "Supongo que lo aprendió de mí.",
@@ -74,8 +74,8 @@
     },
     {
       "id": "t4",
-      "npc": "¡Mire, ahí está! Y dice lo mismo toda la mañana: «I'm only here for a few months».",
-      "npcEn": "Look, there he is! And he's said the same thing all morning: \"I'm only here for a few months\".",
+      "npc": "¡Mire, ahí está! Y toda la mañana dijo lo mismo: «I'm only here for a few months».",
+      "npcEn": "Look, there he is! And he said the same thing all morning: \"I'm only here for a few months\".",
       "intent": "Say that phrase is yours: you said it when you arrived in Bogotá.",
       "accept": [
         "Esa frase es mía. La dije cuando llegué a Bogotá.",
@@ -188,7 +188,6 @@
     "l:cerca",
     "l:decir",
     "l:director",
-    "l:día",
     "l:dónde",
     "l:esperar",
     "l:estar",
@@ -220,6 +219,7 @@
     "l:suponer",
     "l:tarde",
     "l:taxi",
+    "l:tiempo",
     "l:tranquilo",
     "l:ver",
     "p:aqui-ahi-alla",

@@ -175,9 +175,9 @@
       "why": "*Está* sounds like you know for sure. If you're guessing, *estará* says so."
     },
     {
-      "wrong": "El sábado hace frío.",
-      "right": "El sábado hará frío.",
-      "why": "A forecast needs the future; the present sounds like a plain fact about Saturday."
+      "wrong": "No contesta. Será en la cocina.",
+      "right": "No contesta. Estará en la cocina.",
+      "why": "A guess keeps the verb you'd use for the fact. Where someone is takes *está*, so the guess is *estará*, not *será*."
     }
   ],
   "personal": "Think of two people you know. For one, guess where they are right now (*Estará en...*). For the other, predict where they'll be tomorrow (*Mañana estará en...*)."

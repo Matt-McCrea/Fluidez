@@ -2,11 +2,11 @@
   "id": "sc-u20-b",
   "unit": "u20",
   "title": "Before the rains",
-  "brief": "You're Tomás. It's the second day without Simón, and Don Hernando has come into the café with a plan. Listen to his promise, and help him without letting him do anything silly. He's older than you, so use usted.",
+  "brief": "You're Tomás. It's the second day without Simón, and Don Hernando has come into the café with a plan. Listen to his promise, and help him without letting him do anything silly. He's older than you, so use usted, even though he calls you tú.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Buenos días, mijo. Ya sé que Simón no aparece. Yo lo voy a encontrar antes de las lluvias. Se lo prometo.",
+      "npc": "Buenos días, mijo. Ya sé que Simón no aparece. Yo lo voy a encontrar antes de las lluvias. Te lo prometo.",
       "npcEn": "Good morning, son. I know Simón still hasn't turned up. I'm going to find him before the rains. I promise you.",
       "intent": "Thank him and ask when the rains will start.",
       "accept": [
@@ -127,7 +127,7 @@
     },
     {
       "id": "t6",
-      "npc": "Bueno. Tiene razón. Entonces mañana a las seis empiezo. ¿Usted viene conmigo?",
+      "npc": "Bueno. Tienes razón. Entonces mañana a las seis empiezo. ¿Vienes conmigo?",
       "npcEn": "All right. You're right. Then tomorrow I start at six. Will you come with me?",
       "intent": "Say you'd love to, and you'll bring the coffee.",
       "accept": [
@@ -155,12 +155,12 @@
     "c:hola-buenos-dias",
     "c:me-encantaria",
     "c:no-cierto",
+    "c:te-lo-prometo",
     "c:tengo",
     "c:tienes",
     "c:voy-a",
     "g:conditional",
     "g:direct-objects",
-    "g:double-pronouns",
     "g:future-promises",
     "g:gender-articles",
     "g:hay-vs-esta",

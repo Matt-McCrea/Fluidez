@@ -35,7 +35,7 @@
       "en": "There must be about twenty people in the park."
     }
   ],
-  "rule": "When you don't know something, English reaches for extra words: probably, must, I wonder. Spanish just changes the verb.\n\n*Simón está cerca.* Simón is nearby (you know).\n*Simón estará cerca.* Simón is probably nearby (your guess).\n\nThe form is easy: keep the whole infinitive and add *-á*. *estar* becomes *estará*, *ser* becomes *será*, *costar* becomes *costará*. For more than one, add *-án*: *serán*, *estarán*. To a friend, *-ás*: *tendrás*.\n\nA few everyday verbs shorten first, then take the same ending:\n*tener*: *tendrá*\n*saber*: *sabrá*\n*hay*: *habrá*\n*hacer*: *hará*\n*poder*: *podrá*\n*venir*: *vendrá*\n\nIt looks like a future, but here it's about right now. *Serán las once* is a guess at the clock on the wall, not a time coming up. And the accent on the last syllable is always there: *estará*, *tendrá*.",
+  "rule": "When you don't know something, English reaches for extra words: probably, must, I wonder. Spanish just changes the verb.\n\n*Simón está cerca.* Simón is nearby (you know).\n*Simón estará cerca.* Simón is probably nearby (your guess).\n\nThe form is easy: keep the whole infinitive and add *-á*. *estar* becomes *estará*, *ser* becomes *será*, *costar* becomes *costará*. For more than one, add *-án*: *serán*, *estarán*. To a friend, *-ás*: *estarás*.\n\nA few everyday verbs shorten first, then take the same ending:\n*tener*: *tendrá*\n*saber*: *sabrá*\n*hay*: *habrá*\n*hacer*: *hará*\n*poder*: *podrá*\n*venir*: *vendrá*\n\nIt looks like a future, but here it's about right now. *Serán las once* is a guess at the clock on the wall, not a time coming up. And the accent on the last syllable is always there: *estará*, *tendrá*.",
   "smallPrint": "Teachers call this the future of probability (*futuro de probabilidad*): the simple future used for a guess about the present.",
   "readAndPick": [
     {
@@ -127,7 +127,9 @@
     {
       "prompt": "Pick *son* or *serán* and type the whole sentence: *No sé, ___ las once.* (I don't know, it must be about eleven.)",
       "answer": "No sé, serán las once.",
-      "accept": [],
+      "accept": [
+        "No sé. Serán las once."
+      ],
       "why": "You're guessing at the time, so *son* becomes *serán*."
     },
     {
@@ -195,5 +197,5 @@
       "why": "The accent is part of the ending: *estará*, stressed at the end."
     }
   ],
-  "personal": "Think of someone you know who isn't with you right now. Guess, in Spanish, where they are and how old someone in your family is: *Estará...*, *Tendrá...*"
+  "personal": "Think of two people who aren't with you right now. In Spanish, guess where one of them is and how old the other one is: *Estará...*, *Tendrá...*"
 }

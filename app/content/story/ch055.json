@@ -2,7 +2,7 @@
   "id": "ch055",
   "unit": "u20",
   "title": "¿Dónde está Simón?",
-  "text": "La almojábana de Simón estaba encima de la máquina, sin terminar. Pero Simón no estaba.\nTomás buscó en la cocina, en el baño, debajo de las mesas y detrás de la nevera.\nTomás: ¿Simón? ¿Simón, dónde estás?\nVale: A lo mejor está con Hernando. A veces se va con él a la panadería de la esquina.\nA las siete entró Hernando, solo.\nHernando: Buenos días, familia. ¿Y Simón? ¿Todavía duerme?\nNadie se rió. Hernando miró la máquina y se sentó despacio.\nJhon Fredy ya tenía una teoría. Jhon Fredy siempre tiene teorías.\nJhon Fredy: Teoría número uno: Simón salió por la ventana. En la zona hay árboles altos. A lo mejor está en un árbol del parque, con otros loros.\nVale: Simón no sale solo. A Simón no le gusta la calle.\nTomás: Supongo que alguien lo llevó.\nHernando: ¿Y quién se lleva un loro que grita a las cinco de la mañana?\nMariana llegó con el celular en la mano.\nMariana: ¿Altamira? Puede ser. Primero el inspector, y ahora Simón.\nVale: ¿Altamira? ¿Y qué hace Altamira con un loro?\nMariana: Nos quiere nerviosos. Supongo que tiene un plan. Siempre tiene un plan.\nJhon Fredy: Teoría número dos: Simón tomó el bus a Medellín. Le gustó el viaje.\nA las ocho entró una señora y pidió un tinto. Todos miraron la máquina. Nadie gritó «¡Tinto!».\nHernando se levantó.\nHernando: Rosa luchó cuarenta años por este café, y Simón luchó con ella. Yo lo busco. Conozco todas las calles de esta zona.\nEn la radio dieron el pronóstico: lluvias fuertes en Bogotá desde el viernes.\nHernando: El viernes. Simón nunca vivió en la calle. Con lluvia, no va a reconocer esta esquina.\nHernando tomó la gorra y salió.",
+  "text": "La almojábana de Simón estaba encima de la máquina, sin terminar. Pero Simón no estaba.\nTomás buscó en la cocina, en el baño, debajo de las mesas y detrás de la nevera.\nTomás: ¿Simón? ¿Simón, dónde estás?\nVale: A lo mejor está con Hernando. A veces se va con él a la panadería de la esquina.\nA las siete entró Hernando, solo.\nHernando: Buenos días, familia. ¿Y Simón? ¿Todavía duerme?\nNadie se rió. Hernando miró la máquina y se sentó despacio.\nHernando: ¿Y dónde estará ese pájaro?\nJhon Fredy ya tenía una teoría. Jhon Fredy siempre tiene teorías.\nJhon Fredy: Teoría número uno: Simón salió por la ventana. En la zona hay árboles altos. A lo mejor está en un árbol del parque, con otros loros.\nVale: Simón no sale solo. A Simón no le gusta la calle.\nTomás: Supongo que alguien lo llevó.\nHernando: ¿Y quién se lleva un loro que grita a las cinco de la mañana?\nMariana llegó con el celular en la mano.\nMariana: A lo mejor fue Altamira. Primero el inspector, y ahora Simón.\nVale: ¿Altamira? ¿Y qué hace Altamira con un loro?\nMariana: Nos quiere nerviosos. Supongo que tiene un plan. Siempre tiene un plan.\nJhon Fredy: Teoría número dos: Simón tomó el bus a Medellín. Le gustó el viaje.\nA las ocho entró una señora y pidió un tinto. Todos miraron la máquina. Nadie gritó «¡Tinto!».\nHernando se levantó.\nHernando: Rosa luchó cuarenta años por este café, y Simón luchó con ella. Yo lo busco. Conozco todas las calles de esta zona.\nEn la radio dieron el pronóstico: lluvias fuertes en Bogotá desde el sábado.\nHernando: El sábado. Simón nunca vivió en la calle. Con lluvia, no va a reconocer esta esquina.\nHernando tomó la gorra y salió.",
   "gloss": [
     {
       "es": "loro",
@@ -71,15 +71,15 @@
     {
       "q": "¿Qué dice el pronóstico?",
       "options": [
-        "Lluvias fuertes desde el viernes",
+        "Lluvias fuertes desde el sábado",
         "Sol todo el fin de semana",
         "Lluvias fuertes hoy",
-        "Mucho calor el viernes"
+        "Mucho calor el sábado"
       ],
       "answer": 0
     }
   ],
-  "hook": "Hernando has until Friday's rains to find Simón. Tomorrow he drives the Burra round the whole city, and he makes a promise he may not be able to keep.",
+  "hook": "Hernando has until Saturday's rains to find Simón. Tomorrow he drives the Burra round the whole city, and he makes a promise he may not be able to keep.",
   "rereadQuestions": [
     {
       "q": "What was left on top of the coffee machine?",
@@ -117,10 +117,10 @@
     "c:con-el-ella",
     "c:hay",
     "c:hola-buenos-dias",
-    "c:puede-ser",
     "c:supongo-que",
     "c:tienes",
     "g:adjective-agreement",
+    "g:demonstratives",
     "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
@@ -136,11 +136,13 @@
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
     "g:preterite-spelling-stem",
     "g:questions",
     "g:reflexive-routine",
     "g:relative-que",
     "g:se-impersonal",
+    "g:ser-identity",
     "g:stem-boot",
     "g:yo-irregular",
     "p:cerca-de",
@@ -213,8 +215,8 @@
     "l:parque",
     "l:pedir",
     "l:plan",
-    "l:poder",
     "l:pronóstico",
+    "l:pájaro",
     "l:querer",
     "l:quién",
     "l:qué",
@@ -227,6 +229,7 @@
     "l:señora",
     "l:siempre",
     "l:suponer",
+    "l:sábado",
     "l:tener",
     "l:teoría",
     "l:terminar",
@@ -235,7 +238,6 @@
     "l:ventana",
     "l:vez",
     "l:viaje",
-    "l:viernes",
     "l:vivir",
     "l:zona",
     "l:árbol"

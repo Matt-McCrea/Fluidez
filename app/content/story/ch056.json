@@ -2,7 +2,7 @@
   "id": "ch056",
   "unit": "u20",
   "title": "Antes de los truenos",
-  "text": "A las cinco de la mañana hacía mucho frío, y Hernando manejaba la Burra con las ventanillas abiertas.\nHernando: Así Simón nos escucha. ¡Simón! ¡Tinto, tinto!\nTomás leyó el pronóstico en el celular.\nTomás: Hoy, nublado y con viento. Por la tarde, un grado más. Mañana, soleado. ¿Y el viernes? Truenos, rayos y granizo.\nHernando: ¿El viernes hay granizo? Simón no conoce el granizo.\nTomás: ¿Y el verano? ¿Cuándo es el verano en Bogotá?\nHernando: En diciembre, mijo. Aquí el verano no es calor. Es el tiempo seco.\nJhon Fredy los llamó desde el café.\nJhon Fredy: Teoría número tres: Simón está en el páramo. Mi aplicación dice que allá hay muchos loros.\nHernando: En el páramo hace mucho frío. De noche, la temperatura es de pocos grados. Simón no va al páramo.\nJhon Fredy: Mi aplicación predice todo: el pronóstico, el tráfico, los goles de Santa Fe.\nHernando: Santa Fe no hizo un gol en todo marzo. Eso no lo predice nadie.\nEl viento movía los árboles del parque, pero no vieron loros verdes.\nHernando paró la Burra y miró el cielo nublado.\nHernando: Rosa decía que Simón predice la lluvia. Cuando grita de noche, al otro día llueve. El domingo gritó toda la noche.\nHernando: Lo voy a encontrar antes del viernes. Antes de los truenos y los rayos. Lo encontraré, Tomás. Te lo prometo.\nTomás: Es una promesa grande, Hernando.\nHernando: Las promesas pequeñas no sirven. Mañana va a estar soleado. Mañana lo encontramos.\nEn el café, Vale hizo pan toda la mañana. No habló con nadie. El pan salió seco.\nA las once llegó Mariana.\nMariana: Tranquilos. Todo saldrá bien. Gloria vio algo el lunes en la noche: un hombre con una caja grande, al lado de un carro negro.",
+  "text": "A las cinco de la mañana hacía mucho frío, el aire estaba húmedo, y Hernando manejaba la Burra con las ventanillas abiertas.\nHernando: Así Simón nos escucha. ¡Simón! ¡Tinto, tinto!\nTomás leyó el pronóstico en el celular.\nTomás: Hoy, nublado y con viento. Temperatura: doce grados. Mañana en la mañana, soleado. Y mañana en la tarde, truenos, rayos y granizo.\nHernando: ¿Granizo? Simón no conoce el granizo.\nTomás: ¿Y el verano? ¿Cuándo es el verano en Bogotá?\nHernando: En diciembre, mijo. Aquí el verano no es calor. Es el tiempo seco.\nJhon Fredy los llamó desde el café.\nJhon Fredy: Teoría número tres: Simón está en el páramo. Mi aplicación dice que allá hay muchos loros.\nHernando: En el páramo hace mucho frío, y es muy húmedo. De noche, la temperatura es de pocos grados. Simón no va al páramo.\nJhon Fredy: Mi aplicación predice todo: el pronóstico del tiempo, el tráfico, los goles de Santa Fe.\nHernando: Santa Fe no hizo un gol en todo marzo. Eso no lo predice nadie.\nEl viento movía los árboles del parque, pero no vieron loros verdes.\nHernando paró la Burra y miró el cielo nublado.\nHernando: Rosa decía que Simón predice la lluvia. Cuando grita de noche, al otro día llueve. El domingo gritó toda la noche.\nHernando: Lo voy a encontrar antes de la lluvia de mañana. Antes de los truenos y los rayos. Lo encontraré, Tomás. Te lo prometo.\nTomás: Es una promesa grande, Hernando.\nHernando: Las promesas pequeñas no sirven. Mañana en la mañana va a estar soleado. Mañana lo encontramos.\nEn el café, Vale hizo pan toda la mañana. No habló con nadie. El pan salió seco.\nA las once llegó Mariana.\nMariana: Tranquilos. Todo saldrá bien. Gloria vio algo el miércoles en la noche: un hombre con una caja grande, al lado de un carro negro.",
   "gloss": [
     {
       "es": "loros",
@@ -11,10 +11,6 @@
     {
       "es": "Así Simón nos escucha.",
       "en": "That way Simón can hear us."
-    },
-    {
-      "es": "Por la tarde, un grado más.",
-      "en": "In the afternoon, one degree warmer."
     },
     {
       "es": "Aquí el verano no es calor. Es el tiempo seco.",
@@ -35,6 +31,14 @@
     {
       "es": "El pan salió seco.",
       "en": "The bread came out dry."
+    },
+    {
+      "es": "Temperatura: doce grados.",
+      "en": "Temperature: twelve degrees."
+    },
+    {
+      "es": "es muy húmedo",
+      "en": "it's very damp"
     }
   ],
   "questions": [
@@ -61,7 +65,7 @@
     {
       "q": "What does Hernando promise?",
       "options": [
-        "To find Simón before Friday, before the thunder",
+        "To find Simón before tomorrow's rain, before the thunder",
         "To buy a new parrot",
         "To call the police",
         "To stop driving at night"
@@ -69,7 +73,7 @@
       "answer": 0
     },
     {
-      "q": "¿Qué vio Gloria el lunes en la noche?",
+      "q": "¿Qué vio Gloria el miércoles en la noche?",
       "options": [
         "Un hombre con una caja grande, al lado de un carro negro",
         "Un loro en un árbol",
@@ -79,7 +83,7 @@
       "answer": 0
     }
   ],
-  "hook": "A man with a big box and a black car, late on Monday night. Tomorrow Gloria tells the whole story, and her cat is the first suspect.",
+  "hook": "A man with a big box and a black car, late on Wednesday night, the night Simón vanished. Tomorrow Gloria tells the whole story, and her cat is the first suspect.",
   "rereadQuestions": [
     {
       "q": "When is summer in Bogotá, according to Hernando?",
@@ -102,7 +106,7 @@
       "answer": 0
     },
     {
-      "q": "What does the forecast say for tomorrow?",
+      "q": "What does the forecast say for tomorrow morning?",
       "options": [
         "Sunny",
         "Thunder and hail",
@@ -126,6 +130,7 @@
     "g:gender-articles",
     "g:hay-vs-esta",
     "g:imperfect-habitual",
+    "g:imperfect-states",
     "g:ir-a-plans",
     "g:negation-words",
     "g:present-ar",
@@ -162,6 +167,7 @@
   ],
   "lexemes": [
     "l:abrir",
+    "l:aire",
     "l:allá",
     "l:antes",
     "l:aplicación",
@@ -186,12 +192,14 @@
     "l:gol",
     "l:grado",
     "l:grande",
+    "l:granizar",
     "l:granizo",
     "l:gritar",
     "l:hablar",
     "l:hacer",
     "l:hombre",
     "l:hoy",
+    "l:húmedo",
     "l:ir",
     "l:lado",
     "l:leer",
@@ -200,12 +208,12 @@
     "l:llover",
     "l:lluvia",
     "l:loro",
-    "l:lunes",
     "l:manejar",
     "l:marzo",
     "l:mañana",
     "l:mijo",
     "l:mirar",
+    "l:miércoles",
     "l:mover",
     "l:negro",
     "l:noche",
@@ -239,7 +247,6 @@
     "l:verano",
     "l:verde",
     "l:viento",
-    "l:viernes",
     "l:árbol"
   ]
 }

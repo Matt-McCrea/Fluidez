@@ -118,8 +118,8 @@
     },
     {
       "id": "t6",
-      "npc": "Sí, es el gato. Qué pena. Bueno, toma un tinto antes de salir. Lo vas a necesitar.",
-      "npcEn": "Yes, it's the cat. What a shame. Right, have a coffee before you go out. You're going to need it.",
+      "npc": "Sí, es el gato. Ay, Simón. Bueno, toma un tinto antes de salir. Lo vas a necesitar.",
+      "npcEn": "Yes, it's the cat. Oh, Simón. Right, have a coffee before you go out. You're going to need it.",
       "intent": "Thank her and promise you'll be back before twelve.",
       "accept": [
         "Gracias. Volveré antes de las doce, te lo prometo.",
@@ -149,7 +149,6 @@
     "c:hago-salgo-vengo",
     "c:no-se",
     "c:puede-ser",
-    "c:que-pena",
     "c:te-lo-prometo",
     "c:tengo",
     "c:voy-vas",
@@ -197,7 +196,6 @@
     "l:mundo",
     "l:necesitar",
     "l:pastel",
-    "l:pena",
     "l:poder",
     "l:prometer",
     "l:pájaro",

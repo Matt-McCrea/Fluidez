@@ -1,8 +1,8 @@
 [
   {
     "id": "u20-0001",
-    "es": "¿Dónde estará Simón?",
-    "en": "Where can Simón be?",
+    "es": "¿Dónde estará Simón con este frío?",
+    "en": "Where can Simón be in this cold?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11,6 +11,8 @@
       "g:questions",
       "l:dónde",
       "l:estar",
+      "l:frío",
+      "p:demonstratives-basic",
       "p:question-word-order"
     ],
     "targets": [
@@ -490,7 +492,7 @@
   {
     "id": "u20-0022",
     "es": "¿Cuántos años tendrá Hernando?",
-    "en": "How old can Hernando be?",
+    "en": "How old do you reckon Hernando is?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -702,7 +704,7 @@
   {
     "id": "u20-0031",
     "es": "¿Habrá alguien en la oficina a esta hora?",
-    "en": "Can there be anyone in the office at this hour?",
+    "en": "Could there be anyone in the office at this hour?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -722,7 +724,7 @@
   {
     "id": "u20-0032",
     "es": "No habrá nadie en el edificio.",
-    "en": "There can't be anyone in the building.",
+    "en": "There's probably nobody in the building.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -891,7 +893,7 @@
   {
     "id": "u20-0040",
     "es": "Supongo que mañana llueve otra vez.",
-    "en": "I suppose it rains again tomorrow.",
+    "en": "I suppose it'll rain again tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1548,20 +1550,23 @@
   },
   {
     "id": "u20-0068",
-    "es": "¿Será Hernando?\nPuede ser, habla igual.",
-    "en": "Could it be Hernando?\nCould be, he talks the same.",
+    "es": "¿Será Hernando?\nPuede ser, siempre llama a esta hora.",
+    "en": "Could it be Hernando?\nCould be, he always calls at this hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:igual",
       "c:puede-ser",
       "g:future-promises",
       "g:present-ar",
       "g:ser-identity",
-      "l:hablar",
-      "l:igual",
+      "l:hora",
+      "l:llamar",
       "l:poder",
-      "l:ser"
+      "l:ser",
+      "l:siempre",
+      "p:demonstratives-basic",
+      "p:frequency-scale",
+      "p:personal-a"
     ],
     "targets": [
       "c:puede-ser",
@@ -1889,18 +1894,16 @@
   },
   {
     "id": "u20-0082",
-    "es": "Mañana te traigo el dinero.\nPromételo.\nTe lo prometo.",
-    "en": "Tomorrow I'll bring you the money.\nPromise it.\nI promise. (to a friend)",
+    "es": "Mañana te traigo el dinero.\n¿Sin falta?\nSin falta, te lo prometo.",
+    "en": "I'll bring you the money tomorrow.\nWithout fail?\nWithout fail, I promise. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:te-lo-prometo",
-      "g:commands-tu",
-      "g:commands-with-pronouns",
-      "g:direct-objects",
       "g:gender-articles",
       "g:yo-irregular",
       "l:dinero",
+      "l:falta",
       "l:mañana",
       "l:prometer",
       "l:traer",
@@ -2178,15 +2181,14 @@
   },
   {
     "id": "u20-0094",
-    "es": "Mi abuela siempre decía que todo saldrá bien.",
-    "en": "My grandmother always said everything would be fine.",
+    "es": "Mi abuela siempre decía: todo saldrá bien.",
+    "en": "My grandmother always said: everything will be fine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:todo-saldra-bien",
       "g:imperfect-habitual",
-      "g:that-clauses",
       "l:abuela",
       "l:bien",
       "l:decir",
@@ -3121,7 +3123,7 @@
   {
     "id": "u20-0135",
     "es": "¿Cómo estará el tiempo mañana?\nEstará soleado, creo.",
-    "en": "What will the weather be like tomorrow?\nSunny, I think.",
+    "en": "What will the weather be like tomorrow?\nIt'll be sunny, I think.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3280,15 +3282,16 @@
   },
   {
     "id": "u20-0141",
-    "es": "En el páramo habrá cero grados esta noche.",
-    "en": "In the páramo it will be zero degrees tonight.",
+    "es": "Esta noche hará cero grados en el páramo.",
+    "en": "Tonight it'll be zero degrees in the páramo.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:cero",
       "l:grado",
+      "l:hacer",
       "l:noche",
       "l:páramo",
       "p:demonstratives-basic"
@@ -3304,17 +3307,17 @@
   },
   {
     "id": "u20-0142",
-    "es": "¿Qué temperatura tendremos mañana?",
-    "en": "What temperature will we have tomorrow?",
+    "es": "¿Qué temperatura hará mañana?",
+    "en": "What will the temperature be tomorrow?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "g:questions",
+      "l:hacer",
       "l:mañana",
       "l:qué",
-      "l:temperatura",
-      "l:tener"
+      "l:temperatura"
     ],
     "targets": [
       "g:future-promises",
@@ -3702,7 +3705,7 @@
   {
     "id": "u20-0158",
     "es": "Un rayo cayó cerca del edificio.",
-    "en": "A lightning bolt fell near the building.",
+    "en": "Lightning struck near the building.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4329,7 +4332,7 @@
   {
     "id": "u20-0185",
     "es": "¿Cuántos grados hace?\nHace once.",
-    "en": "How many degrees is it?\nEleven.",
+    "en": "How many degrees is it?\nIt's eleven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4417,16 +4420,19 @@
   },
   {
     "id": "u20-0189",
-    "es": "De pronto nos vemos allá.",
-    "en": "Maybe we'll see each other there.",
+    "es": "De pronto Mariana tiene fotos de esa noche.",
+    "en": "Maybe Mariana has photos from that night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:chao-nos-vemos",
       "c:de-pronto",
-      "l:allá",
+      "c:tienes",
+      "g:demonstratives",
+      "g:stem-boot",
+      "l:foto",
+      "l:noche",
       "l:pronto",
-      "l:ver"
+      "l:tener"
     ],
     "targets": [
       "c:de-pronto"
@@ -4438,20 +4444,18 @@
   },
   {
     "id": "u20-0190",
-    "es": "De pronto Hernando sabe dónde está.",
-    "en": "Maybe Hernando knows where he is.",
+    "es": "De pronto Simón se fue con los loros del parque.",
+    "en": "Maybe Simón went off with the parrots in the park.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:de-pronto",
-      "c:donde-esta",
-      "g:estar-location-states",
-      "g:present-er-ir",
-      "l:dónde",
-      "l:estar",
-      "l:pronto",
-      "l:saber",
-      "p:saber-conocer"
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:irse",
+      "l:loro",
+      "l:parque",
+      "l:pronto"
     ],
     "targets": [
       "c:de-pronto"
@@ -4539,7 +4543,7 @@
   {
     "id": "u20-0194",
     "es": "De pronto mañana hace sol y salimos.",
-    "en": "Maybe tomorrow is sunny and we'll go out.",
+    "en": "Maybe it'll be sunny tomorrow and we'll go out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4563,7 +4567,7 @@
   {
     "id": "u20-0195",
     "es": "De pronto Tomás se queda en Bogotá.",
-    "en": "Maybe Tomás stays in Bogotá.",
+    "en": "Maybe Tomás will stay in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4609,14 +4613,17 @@
   },
   {
     "id": "u20-0197",
-    "es": "Yo que tú, no firmaría.",
-    "en": "If I were you, I wouldn't sign. (to a friend)",
+    "es": "Yo que tú, leería todo antes de firmar.",
+    "en": "If I were you, I'd read everything before signing. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:yo-que-tu",
       "g:conditional",
-      "l:firmar"
+      "g:prep-infinitive",
+      "l:antes",
+      "l:firmar",
+      "l:leer"
     ],
     "targets": [
       "c:yo-que-tu",
@@ -4996,8 +5003,8 @@
   },
   {
     "id": "u20-0214",
-    "es": "Yo que usted, hablaría con mi socio primero.",
-    "en": "If I were you, I'd talk to my partner first. (polite)",
+    "es": "Yo que usted, hablaría con su socio primero.",
+    "en": "If I were you, I'd talk to your partner first. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6504,16 +6511,18 @@
   },
   {
     "id": "u20-0279",
-    "es": "Simón repetiría todo lo que oye.",
-    "en": "Simón would repeat everything he hears.",
+    "es": "Simón repetiría todo por un pedazo de pan.",
+    "en": "Simón would repeat everything for a piece of bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:oiga-oye",
       "g:conditional",
-      "g:relatives-donde-lo-que",
-      "l:oír",
-      "l:repetir"
+      "g:gender-articles",
+      "g:por-para-1",
+      "l:pan",
+      "l:pedazo",
+      "l:repetir",
+      "p:container-de"
     ],
     "targets": [
       "g:conditional"
@@ -7007,17 +7016,16 @@
   },
   {
     "id": "u20-0301",
-    "es": "Altamira quiere comprar toda la zona.",
-    "en": "Altamira wants to buy the whole area.",
+    "es": "Altamira ya compró tres casas en esta zona.",
+    "en": "Altamira has already bought three houses in this area.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:stem-boot",
-      "g:verb-infinitive",
+      "g:preterite-ar",
+      "l:casa",
       "l:comprar",
-      "l:querer",
-      "l:zona"
+      "l:zona",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "l:zona"
@@ -7265,16 +7273,16 @@
   },
   {
     "id": "u20-0312",
-    "es": "Echa un poco de azúcar al café.",
-    "en": "Put a little sugar in the coffee. (to a friend)",
+    "es": "Echa un poco de azúcar en la leche.",
+    "en": "Put a little sugar in the milk. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:azúcar",
-      "l:café",
       "l:echar",
+      "l:leche",
       "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
@@ -7311,16 +7319,25 @@
   },
   {
     "id": "u20-0314",
-    "es": "Echaremos de menos a Simón.",
-    "en": "We'll miss Simón.",
+    "es": "Échale un ojo a la caja, por favor.",
+    "en": "Keep an eye on the box, please. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
-      "l:echar"
+      "c:ojo",
+      "c:por-favor",
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "l:caja",
+      "l:echar",
+      "l:favor",
+      "l:ojo",
+      "p:request-ladder"
     ],
     "targets": [
-      "g:future-promises",
       "l:echar"
     ],
     "kind": "statement",
@@ -7330,19 +7347,16 @@
   },
   {
     "id": "u20-0315",
-    "es": "Tomás echa de menos a su abuela todos los días.",
-    "en": "Tomás misses his grandmother every day.",
+    "es": "Hernando echó al gato de la cocina.",
+    "en": "Hernando threw the cat out of the kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "l:abuela",
-      "l:día",
+      "g:preterite-ar",
+      "l:cocina",
       "l:echar",
-      "p:possessives-basic",
-      "p:todos-los-dias",
-      "p:veces-al"
+      "l:gato"
     ],
     "targets": [
       "l:echar"
@@ -7354,14 +7368,17 @@
   },
   {
     "id": "u20-0316",
-    "es": "Te echo de menos, Mariana.",
-    "en": "I miss you, Mariana.",
+    "es": "Vale echó sal en la sopa, no azúcar.",
+    "en": "Vale put salt in the soup, not sugar.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:azúcar",
       "l:echar",
-      "p:me-te-nos-objects"
+      "l:sal",
+      "l:sopa"
     ],
     "targets": [
       "l:echar"
@@ -7833,18 +7850,17 @@
   },
   {
     "id": "u20-0337",
-    "es": "El daño de la lluvia fue grande.",
-    "en": "The damage from the rain was big.",
+    "es": "La lluvia hizo mucho daño.",
+    "en": "The rain did a lot of damage.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
       "l:daño",
-      "l:grande",
+      "l:hacer",
       "l:lluvia",
-      "l:ser"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:daño"
@@ -7974,16 +7990,16 @@
   },
   {
     "id": "u20-0343",
-    "es": "Hernando dirigía el tráfico con las manos.",
-    "en": "Hernando used to direct traffic with his hands.",
+    "es": "Hernando dirigió la reunión de vecinos.",
+    "en": "Hernando ran the neighbours' meeting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-habitual",
+      "g:preterite-er-ir",
       "l:dirigir",
-      "l:mano",
-      "l:tráfico"
+      "l:reunión",
+      "l:vecino"
     ],
     "targets": [
       "l:dirigir"
@@ -8064,17 +8080,16 @@
   },
   {
     "id": "u20-0347",
-    "es": "Vale dirigió la cocina durante veinte años.",
-    "en": "Vale ran the kitchen for twenty years.",
+    "es": "Vale dirigió la cocina de un restaurante en Medellín.",
+    "en": "Vale ran a restaurant kitchen in Medellín.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
-      "l:año",
       "l:cocina",
       "l:dirigir",
-      "p:durar-durante"
+      "l:restaurante"
     ],
     "targets": [
       "l:dirigir"
@@ -8110,8 +8125,8 @@
   },
   {
     "id": "u20-0349",
-    "es": "El perro de Hernando duerme debajo de la mesa.",
-    "en": "Hernando's dog sleeps under the table.",
+    "es": "El perro de la vecina duerme debajo de la mesa.",
+    "en": "The neighbour's dog sleeps under the table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8121,6 +8136,7 @@
       "l:dormir",
       "l:mesa",
       "l:perro",
+      "l:vecino",
       "p:cerca-de",
       "p:position-de"
     ],
@@ -8302,16 +8318,17 @@
   },
   {
     "id": "u20-0357",
-    "es": "El gato de Rosa se llamaba Tinto.",
-    "en": "Rosa's cat was called Tinto.",
+    "es": "El gato de la panadería se llama Tinto.",
+    "en": "The bakery's cat is called Tinto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:se-llama",
       "g:gender-articles",
-      "g:imperfect-habitual",
       "g:reflexive-routine",
       "l:gato",
-      "l:llamarse"
+      "l:llamarse",
+      "l:panadería"
     ],
     "targets": [
       "l:gato"
@@ -8444,15 +8461,16 @@
   },
   {
     "id": "u20-0363",
-    "es": "Simón duerme en el árbol de la plaza.",
-    "en": "Simón sleeps in the tree in the square.",
+    "es": "En el árbol de la plaza viven unos loros.",
+    "en": "Some parrots live in the tree in the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:stem-boot",
-      "l:dormir",
+      "g:present-er-ir",
+      "l:loro",
       "l:plaza",
+      "l:vivir",
       "l:árbol"
     ],
     "targets": [
@@ -10101,8 +10119,8 @@
   },
   {
     "id": "u20-0435",
-    "es": "No me gustan los días soleados sin viento.",
-    "en": "I don't like sunny days without wind.",
+    "es": "Me gustan los días soleados con un poco de viento.",
+    "en": "I like sunny days with a little wind.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10113,7 +10131,9 @@
       "l:día",
       "l:gustar",
       "l:soleado",
-      "l:viento"
+      "l:viento",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:soleado",
@@ -10335,20 +10355,20 @@
   },
   {
     "id": "u20-0445",
-    "es": "El pan seco se usa para el desayuno de mañana.",
-    "en": "Dry bread is used for tomorrow's breakfast.",
+    "es": "Vale usa el pan seco para hacer torta.",
+    "en": "Vale uses the dry bread to make cake.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:se-impersonal",
-      "l:desayuno",
-      "l:mañana",
+      "l:hacer",
       "l:pan",
       "l:seco",
+      "l:torta",
       "l:usar",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:seco"
@@ -11035,19 +11055,19 @@
   },
   {
     "id": "u20-0475",
-    "es": "Hoy lo mejor es quedarse en casa.",
-    "en": "Today the best thing is to stay home.",
+    "es": "Hoy lo mejor es no abrir las ventanas.",
+    "en": "Today the best thing is not to open the windows.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:lo-mejor-es",
+      "g:gender-articles",
       "g:lo-adjective",
-      "g:reflexive-routine",
-      "l:casa",
+      "l:abrir",
       "l:hoy",
       "l:mejor",
-      "l:quedarse",
-      "l:ser"
+      "l:ser",
+      "l:ventana"
     ],
     "targets": [
       "c:lo-mejor-es"
@@ -11107,20 +11127,21 @@
   },
   {
     "id": "u20-0478",
-    "es": "¿Nos dará plata Altamira?\nPuede ser, pero no lo creo.",
-    "en": "Will Altamira give us money?\nCould be, but I don't think so.",
+    "es": "¿Nos dará plata Altamira?\nPuede ser, pero va a pedir algo.",
+    "en": "Will Altamira give us money?\nCould be, but he'll ask for something.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:puede-ser",
-      "g:direct-objects",
       "g:future-promises",
-      "g:present-er-ir",
-      "l:creer",
+      "g:ir-a-plans",
       "l:dar",
+      "l:ir",
+      "l:pedir",
       "l:plata",
       "l:poder",
       "l:ser",
+      "p:indefinites-basic",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -11176,16 +11197,16 @@
   },
   {
     "id": "u20-0481",
-    "es": "Te prometo que lo pensaré.\nTe lo prometo.",
-    "en": "I promise I'll think about it.\nPromise me. (to a friend)",
+    "es": "Lo pensaré.\n¿Me lo prometes?\nTe lo prometo.",
+    "en": "I'll think about it.\nDo you promise?\nI promise. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:te-lo-prometo",
       "g:direct-objects",
+      "g:double-pronouns",
       "g:future-promises",
       "g:present-er-ir",
-      "g:that-clauses",
       "l:pensar",
       "l:prometer",
       "p:me-te-nos-objects"
@@ -11201,16 +11222,20 @@
   },
   {
     "id": "u20-0482",
-    "es": "Mañana abro yo.\nTe lo prometo, Tomás.",
-    "en": "I'll open tomorrow.\nI promise, Tomás.",
+    "es": "¿Mañana abres tú?\nYo abro, te lo prometo. Duerme tranquilo.",
+    "en": "Are you opening tomorrow?\nI'll open, I promise. Sleep easy. (to a man)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:te-lo-prometo",
+      "c:tranquilo",
       "g:present-er-ir",
+      "g:stem-boot",
       "l:abrir",
+      "l:dormir",
       "l:mañana",
-      "l:prometer"
+      "l:prometer",
+      "l:tranquilo"
     ],
     "targets": [
       "c:te-lo-prometo"
@@ -11266,20 +11291,21 @@
   },
   {
     "id": "u20-0485",
-    "es": "Tranquila, todo saldrá bien.",
-    "en": "Don't worry, everything will be fine. (to a woman)",
+    "es": "Tranquila, Vale, mañana saldrá el sol.",
+    "en": "Don't worry, Vale, the sun will come out tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "c:todo-saldra-bien",
       "c:tranquilo",
-      "l:bien",
+      "g:future-promises",
+      "g:gender-articles",
+      "l:mañana",
       "l:salir",
+      "l:sol",
       "l:tranquilo"
     ],
     "targets": [
-      "c:todo-saldra-bien"
+      "g:future-promises"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -11288,8 +11314,8 @@
   },
   {
     "id": "u20-0486",
-    "es": "Comeríamos en el camino al sur.",
-    "en": "We'd eat on the road south.",
+    "es": "Yo comería algo en el camino.",
+    "en": "I'd eat something on the way.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11297,12 +11323,11 @@
       "g:gender-articles",
       "l:camino",
       "l:comer",
-      "l:sur"
+      "p:indefinites-basic"
     ],
     "targets": [
       "g:conditional",
-      "l:camino",
-      "l:sur"
+      "l:camino"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -11666,8 +11691,8 @@
   },
   {
     "id": "u20-0503",
-    "es": "Si baja la temperatura, abriremos el horno.",
-    "en": "If the temperature drops, we'll turn on the oven.",
+    "es": "Si baja la temperatura, cerraremos las ventanas.",
+    "en": "If the temperature drops, we'll close the windows.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11675,10 +11700,10 @@
       "g:gender-articles",
       "g:present-ar",
       "g:si-present",
-      "l:abrir",
       "l:bajar",
-      "l:horno",
-      "l:temperatura"
+      "l:cerrar",
+      "l:temperatura",
+      "l:ventana"
     ],
     "targets": [
       "g:future-promises",
@@ -11790,18 +11815,19 @@
   },
   {
     "id": "u20-0508",
-    "es": "Un domingo soleado es perfecto para caminar.",
-    "en": "A sunny Sunday is perfect for walking.",
+    "es": "Una tarde soleada es perfecta para caminar.",
+    "en": "A sunny afternoon is perfect for walking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
       "l:caminar",
-      "l:domingo",
       "l:perfecto",
       "l:ser",
       "l:soleado",
+      "l:tarde",
       "p:para-inf",
       "p:para-inf-purpose"
     ],
@@ -11815,15 +11841,14 @@
   },
   {
     "id": "u20-0509",
-    "es": "Hoy el día está soleado en toda la ciudad.",
-    "en": "Today the day is sunny all over the city.",
+    "es": "Hoy está soleado en toda la ciudad.",
+    "en": "It's sunny all over the city today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
       "l:ciudad",
-      "l:día",
       "l:estar",
       "l:hoy",
       "l:soleado",
@@ -11929,18 +11954,17 @@
   },
   {
     "id": "u20-0514",
-    "es": "Un rayo de sol entró por la puerta.",
-    "en": "A ray of sun came in through the door.",
+    "es": "Un rayo dejó sin luz a medio barrio.",
+    "en": "A lightning strike left half the neighbourhood without power.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "g:preterite-ar",
-      "l:entrar",
-      "l:puerta",
-      "l:rayo",
-      "l:sol"
+      "l:barrio",
+      "l:dejar",
+      "l:luz",
+      "l:rayo"
     ],
     "targets": [
       "l:rayo"
@@ -11952,15 +11976,16 @@
   },
   {
     "id": "u20-0515",
-    "es": "Cayó granizo sobre la cocina.",
-    "en": "Hail fell on the kitchen.",
+    "es": "Cayó granizo sobre los carros de la calle.",
+    "en": "Hail fell on the cars in the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
       "l:caer",
-      "l:cocina",
+      "l:calle",
+      "l:carro",
       "l:granizo"
     ],
     "targets": [
@@ -11973,19 +11998,18 @@
   },
   {
     "id": "u20-0516",
-    "es": "¿Cuándo caerá el próximo granizo?",
-    "en": "When will the next hail fall?",
+    "es": "¿Caerá granizo otra vez esta semana?",
+    "en": "Will it hail again this week?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
-      "g:gender-articles",
-      "g:questions",
       "l:caer",
-      "l:cuándo",
       "l:granizo",
-      "l:próximo",
-      "p:question-word-order"
+      "l:semana",
+      "l:vez",
+      "p:demonstratives-basic",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:future-promises",
@@ -12158,16 +12182,20 @@
   },
   {
     "id": "u20-0524",
-    "es": "La luna sale temprano.",
-    "en": "The moon rises early.",
+    "es": "La luna sale detrás de los árboles del parque.",
+    "en": "The moon rises behind the trees in the park.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
+      "l:detrás",
       "l:luna",
+      "l:parque",
       "l:salir",
-      "l:temprano"
+      "l:árbol",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:luna"
@@ -12298,26 +12326,32 @@
   },
   {
     "id": "u20-0530",
-    "es": "Tengo frío; ¿hay fuego en la cocina?",
-    "en": "I'm cold; is there a fire in the kitchen? (to a friend)",
+    "es": "Tengo frío. Vamos a sentarnos cerca del fuego.",
+    "en": "I'm cold. Let's sit near the fire.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "c:tengo",
+      "c:vamos-a",
       "g:gender-articles",
-      "g:hay-vs-esta",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
+      "g:reflexive-routine",
       "g:yo-irregular",
-      "l:cocina",
+      "l:cerca",
       "l:frío",
       "l:fuego",
+      "l:ir",
+      "l:sentar",
       "l:tener",
+      "p:cerca-de",
+      "p:position-de",
       "p:tener-hambre"
     ],
     "targets": [
       "l:fuego"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
     "source": "gen"
@@ -12486,17 +12520,17 @@
   },
   {
     "id": "u20-0538",
-    "es": "Los animales sienten el frío antes que nosotros.",
-    "en": "Animals feel the cold before we do.",
+    "es": "El frío no molesta a los animales del páramo.",
+    "en": "The cold doesn't bother the páramo animals.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:stem-boot",
+      "g:present-ar",
       "l:animal",
-      "l:antes",
       "l:frío",
-      "l:sentir"
+      "l:molestar",
+      "l:páramo"
     ],
     "targets": [
       "l:animal"
@@ -12758,17 +12792,18 @@
   },
   {
     "id": "u20-0550",
-    "es": "Un par de truenos y se fue la luz.",
-    "en": "A couple of thunderclaps and the power went out.",
+    "es": "Hubo un par de truenos, pero no llovió.",
+    "en": "There were a couple of thunderclaps, but it didn't rain.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "l:irse",
-      "l:luz",
+      "g:imperfect-states",
+      "g:preterite-er-ir",
+      "l:llover",
       "l:par",
-      "l:trueno"
+      "l:trueno",
+      "p:event-ser-en"
     ],
     "targets": [
       "l:par",
@@ -12918,7 +12953,7 @@
   {
     "id": "u20-0557",
     "es": "Los lindos días de verano llegarán pronto.",
-    "en": "The pretty summer days will arrive soon.",
+    "en": "The lovely summer days will arrive soon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12987,16 +13022,19 @@
   },
   {
     "id": "u20-0560",
-    "es": "Levantaré las mesas antes de las seis.",
-    "en": "I'll put up the tables before six.",
+    "es": "Levantaré las sillas para limpiar el piso.",
+    "en": "I'll lift the chairs to clean the floor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "g:gender-articles",
-      "l:antes",
       "l:levantar",
-      "l:mesa"
+      "l:limpiar",
+      "l:piso",
+      "l:silla",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "g:future-promises",
@@ -13117,17 +13155,19 @@
   },
   {
     "id": "u20-0566",
-    "es": "No puedo evitar reír.",
+    "es": "No puedo evitar reírme.",
     "en": "I can't help laughing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:puedo",
+      "g:object-pronoun-position",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:evitar",
       "l:poder",
-      "l:reír"
+      "l:reír",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:evitar",
@@ -13318,18 +13358,20 @@
   },
   {
     "id": "u20-0575",
-    "es": "Echaré de menos el café de Rosa.",
-    "en": "I'll miss Rosa's coffee.",
+    "es": "Hernando echó a dos turistas que gritaban.",
+    "en": "Hernando threw out two tourists who were shouting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
-      "g:gender-articles",
-      "l:café",
-      "l:echar"
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:relative-que",
+      "l:echar",
+      "l:gritar",
+      "l:turista"
     ],
     "targets": [
-      "g:future-promises",
       "l:echar"
     ],
     "kind": "statement",
@@ -13339,15 +13381,18 @@
   },
   {
     "id": "u20-0576",
-    "es": "Echo de menos mi casa en Toronto.",
-    "en": "I miss my home in Toronto.",
+    "es": "Me echaron del trabajo en marzo.",
+    "en": "I got fired in March.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:casa",
+      "c:trabajo-en",
+      "g:gender-articles",
+      "g:preterite-ar",
       "l:echar",
-      "p:possessives-basic"
+      "l:marzo",
+      "l:trabajo",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:echar"
@@ -13406,19 +13451,19 @@
   },
   {
     "id": "u20-0579",
-    "es": "Sube arriba y mira por la ventana.",
-    "en": "Go upstairs and look out the window. (to a friend)",
+    "es": "Mira arriba, en la ventana del segundo piso.",
+    "en": "Look up, at the second floor window. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:oye-mira",
       "g:gender-articles",
-      "g:por-para-1",
-      "g:present-er-ir",
       "l:arriba",
       "l:mirar",
-      "l:subir",
-      "l:ventana"
+      "l:piso",
+      "l:ventana",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "l:arriba"
@@ -13586,12 +13631,15 @@
   },
   {
     "id": "u20-0587",
-    "es": "Con cariño, Tomás.",
-    "en": "With love, Tomás.",
+    "es": "Vale habla de Rosa con mucho cariño.",
+    "en": "Vale talks about Rosa with a lot of affection.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "l:cariño"
+      "g:present-ar",
+      "l:cariño",
+      "l:hablar",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:cariño"
@@ -13713,21 +13761,23 @@
   },
   {
     "id": "u20-0593",
-    "es": "Disfrutaré del verano en la plaza.",
-    "en": "I'll enjoy the summer in the square.",
+    "es": "Este fin de semana disfrutaré del sol en el parque.",
+    "en": "This weekend I'll enjoy the sun in the park.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "g:gender-articles",
       "l:disfrutar",
-      "l:plaza",
-      "l:verano"
+      "l:fin",
+      "l:parque",
+      "l:semana",
+      "l:sol",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:future-promises",
-      "l:disfrutar",
-      "l:verano"
+      "l:disfrutar"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -13757,19 +13807,17 @@
   },
   {
     "id": "u20-0595",
-    "es": "Vale dirigirá la cocina desde mañana.",
-    "en": "Vale will run the kitchen from tomorrow.",
+    "es": "En la cocina, Vale dirige todo.",
+    "en": "In the kitchen, Vale runs everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
       "g:gender-articles",
+      "g:present-er-ir",
       "l:cocina",
-      "l:dirigir",
-      "l:mañana"
+      "l:dirigir"
     ],
     "targets": [
-      "g:future-promises",
       "l:dirigir"
     ],
     "kind": "statement",
@@ -13848,14 +13896,15 @@
   },
   {
     "id": "u20-0599",
-    "es": "Tomás actuará mañana.",
-    "en": "Tomás will act tomorrow.",
+    "es": "Tomás no actuará sin hablar con Vale.",
+    "en": "Tomás won't act without talking to Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
+      "g:prep-infinitive",
       "l:actuar",
-      "l:mañana"
+      "l:hablar"
     ],
     "targets": [
       "g:future-promises",
@@ -13979,18 +14028,21 @@
   },
   {
     "id": "u20-0605",
-    "es": "Hernando fue socio de Rosa por muchos años.",
-    "en": "Hernando was Rosa's partner for many years.",
+    "es": "Para Rosa, Vale era más que una cocinera: era su socia.",
+    "en": "For Rosa, Vale was more than a cook: she was her partner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
-      "g:preterite-ser-ir-hacer",
+      "c:era",
+      "g:comparatives",
+      "g:gender-articles",
+      "g:imperfect-states",
       "g:ser-identity",
-      "l:año",
+      "l:cocinero",
       "l:ser",
       "l:socio",
-      "p:quantifiers-basic"
+      "p:para-inf",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:socio"
@@ -14046,17 +14098,16 @@
   },
   {
     "id": "u20-0608",
-    "es": "Mi tío es abogado.",
-    "en": "My uncle is a lawyer.",
+    "es": "El abogado no contesta el celular.",
+    "en": "The lawyer isn't answering his phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
+      "g:gender-articles",
+      "g:present-ar",
       "l:abogado",
-      "l:ser",
-      "l:tío",
-      "p:possessives-basic",
-      "p:ser-profession-no-article"
+      "l:celular",
+      "l:contestar"
     ],
     "targets": [
       "l:abogado"
@@ -14154,21 +14205,20 @@
   },
   {
     "id": "u20-0613",
-    "es": "Hernando conoce el camino al sur.",
-    "en": "Hernando knows the road south.",
+    "es": "Nos perdimos en el camino al páramo.",
+    "en": "We got lost on the way to the páramo.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
       "l:camino",
-      "l:conocer",
-      "l:sur",
-      "p:saber-conocer"
+      "l:perderse",
+      "l:páramo"
     ],
     "targets": [
-      "l:camino",
-      "l:sur"
+      "l:camino"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -14247,7 +14297,7 @@
   {
     "id": "u20-0617",
     "es": "¿Qué estará haciendo Simón ahora?",
-    "en": "What can Simón be doing now?",
+    "en": "What could Simón be doing now?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14296,7 +14346,7 @@
   {
     "id": "u20-0619",
     "es": "¿Cuánto costará este edificio?",
-    "en": "How much can this building cost?",
+    "en": "How much do you reckon this building costs?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14320,7 +14370,7 @@
   {
     "id": "u20-0620",
     "es": "¿Qué hora será?",
-    "en": "What time can it be?",
+    "en": "I wonder what time it is.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14516,7 +14566,7 @@
   {
     "id": "u20-0629",
     "es": "¿Cuántos años tendrá Simón?",
-    "en": "How old can Simón be?",
+    "en": "How old do you reckon Simón is?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14602,8 +14652,8 @@
   },
   {
     "id": "u20-0633",
-    "es": "¿Habrá sol el domingo?",
-    "en": "Will there be sun on Sunday?",
+    "es": "¿Habrá sol en Villa de Leyva el domingo?",
+    "en": "Will there be sun in Villa de Leyva on Sunday?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15012,16 +15062,18 @@
   },
   {
     "id": "u20-0652",
-    "es": "¿Quién abrirá mañana?",
-    "en": "Who will open tomorrow?",
+    "es": "¿Quién cerrará esta noche?",
+    "en": "Who will close tonight?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "g:questions",
-      "l:abrir",
-      "l:mañana",
-      "l:quién"
+      "l:cerrar",
+      "l:noche",
+      "l:quién",
+      "p:demonstratives-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:future-promises"
@@ -15484,20 +15536,17 @@
   },
   {
     "id": "u20-0673",
-    "es": "¿Venderías el café por un buen precio?",
-    "en": "Would you sell the café for a good price? (to a friend)",
+    "es": "¿Cerrarías el café un domingo de sol?",
+    "en": "Would you close the café on a sunny Sunday? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:gender-articles",
-      "l:buen",
       "l:café",
-      "l:precio",
-      "l:vender",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
-      "p:costar-pagar"
+      "l:cerrar",
+      "l:domingo",
+      "l:sol"
     ],
     "targets": [
       "g:conditional"
@@ -15531,14 +15580,15 @@
   },
   {
     "id": "u20-0675",
-    "es": "¿Querrías otro tinto?",
-    "en": "Would you want another black coffee? (to a friend)",
+    "es": "¿Te tomarías otro tinto?",
+    "en": "Would you have another black coffee? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "l:querer",
       "l:tinto",
+      "l:tomar",
+      "p:me-te-nos-objects",
       "p:otro-no-article"
     ],
     "targets": [
@@ -15551,22 +15601,22 @@
   },
   {
     "id": "u20-0676",
-    "es": "¿Cuánto pagarías por este árbol?",
-    "en": "How much would you pay for this tree? (to a friend)",
+    "es": "¿Cuánto pagarías por un día de sol en Bogotá?",
+    "en": "How much would you pay for a sunny day in Bogotá? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:gender-articles",
       "g:questions",
       "l:cuánto",
+      "l:día",
       "l:pagar",
-      "l:árbol",
-      "p:costar-pagar",
-      "p:demonstratives-basic"
+      "l:sol",
+      "p:costar-pagar"
     ],
     "targets": [
-      "g:conditional",
-      "l:árbol"
+      "g:conditional"
     ],
     "kind": "question",
     "unit": "u20",
@@ -15617,7 +15667,7 @@
   {
     "id": "u20-0679",
     "es": "¿Será verdad lo que dice el pronóstico?",
-    "en": "Can what the forecast says be true?",
+    "en": "Could what the forecast says be true?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16242,17 +16292,18 @@
   },
   {
     "id": "u20-0707",
-    "es": "¿Has visto a Simón?\nNo, y ya es tarde.",
-    "en": "Have you seen Simón?\nNo, and it's late already. (to a friend)",
+    "es": "¿Alguien vio a Simón?\nNadie, y ya es tarde.",
+    "en": "Has anybody seen Simón?\nNobody, and it's already late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "g:ser-identity",
       "l:ser",
       "l:tarde",
       "l:ver",
       "p:es-de-noche-tarde",
+      "p:indefinites-basic",
       "p:personal-a"
     ],
     "targets": [],
@@ -16308,18 +16359,24 @@
   },
   {
     "id": "u20-0710",
-    "es": "Hernando, ¿usted sabe algo de Simón?\nSupongo que sí.",
-    "en": "Hernando, do you know anything about Simón?\nI suppose I do. (polite)",
+    "es": "Hernando, ¿usted sabe algo de Simón?\nNada. Supongo que tiene frío y hambre.",
+    "en": "Hernando, do you know anything about Simón? (polite)\nNothing. I suppose he's cold and hungry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:supongo-que",
+      "c:tienes",
       "g:present-er-ir",
+      "g:stem-boot",
+      "l:frío",
+      "l:hambre",
       "l:saber",
       "l:suponer",
+      "l:tener",
       "p:hedge-knowledge",
       "p:indefinites-basic",
-      "p:saber-conocer"
+      "p:saber-conocer",
+      "p:tener-hambre"
     ],
     "targets": [
       "c:supongo-que"
@@ -16356,19 +16413,17 @@
   },
   {
     "id": "u20-0712",
-    "es": "Lo encontraré antes de las lluvias.\nTe lo prometo.",
-    "en": "I'll find him before the rains.\nI promise. (to a friend)",
+    "es": "Encontraré a Simón.\n¿Seguro?\nTe lo prometo.",
+    "en": "I'll find Simón.\nAre you sure?\nI promise. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:te-lo-prometo",
-      "g:direct-objects",
       "g:future-promises",
-      "g:gender-articles",
-      "l:antes",
       "l:encontrar",
-      "l:lluvia",
-      "l:prometer"
+      "l:prometer",
+      "l:seguro",
+      "p:personal-a"
     ],
     "targets": [
       "c:te-lo-prometo",
@@ -16854,26 +16909,25 @@
   },
   {
     "id": "u20-0732",
-    "es": "¿Vamos al páramo el sábado?\nSi no llueve, vamos.",
-    "en": "Shall we go to the páramo on Saturday?\nIf it doesn't rain, we'll go.",
+    "es": "¿Vamos a Monserrate el domingo?\nSi hace sol, vamos.",
+    "en": "Shall we go to Monserrate on Sunday?\nIf it's sunny, we'll go.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:vamos-a",
       "g:gender-articles",
       "g:ir-a-plans",
+      "g:present-er-ir",
       "g:si-present",
-      "g:stem-boot",
+      "l:domingo",
+      "l:hacer",
       "l:ir",
-      "l:llover",
-      "l:páramo",
-      "l:sábado",
+      "l:sol",
       "p:days-el-lunes",
+      "p:hace-frio",
       "p:ir-a-venir-de-place"
     ],
-    "targets": [
-      "l:páramo"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
@@ -16881,19 +16935,21 @@
   },
   {
     "id": "u20-0733",
-    "es": "¿Y si llueve?\nNos quedamos en el café.",
-    "en": "And if it rains?\nWe'll stay at the café.",
+    "es": "¿Y si llueve?\nPues vemos una película en mi casa.",
+    "en": "And if it rains?\nThen we'll watch a movie at my place.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:pues",
       "g:gender-articles",
-      "g:present-ar",
-      "g:reflexive-routine",
+      "g:present-er-ir",
       "g:si-present",
       "g:stem-boot",
-      "l:café",
+      "l:casa",
       "l:llover",
-      "l:quedarse",
+      "l:película",
+      "l:ver",
+      "p:possessives-basic",
       "p:que-tal-si"
     ],
     "targets": [],
@@ -17096,18 +17152,22 @@
   },
   {
     "id": "u20-0742",
-    "es": "¿Cuándo llega el pronóstico?\nLlegará a las seis.",
-    "en": "When does the forecast come?\nIt will arrive at six.",
+    "es": "¿A qué hora dan el pronóstico?\nLo darán a las seis, como siempre.",
+    "en": "What time is the forecast on?\nThey'll give it at six, as always.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-que-hora",
+      "g:direct-objects",
       "g:future-promises",
       "g:gender-articles",
       "g:present-ar",
-      "g:questions",
-      "l:cuándo",
-      "l:llegar",
+      "l:dar",
+      "l:hora",
       "l:pronóstico",
+      "l:qué",
+      "l:siempre",
+      "p:frequency-scale",
       "p:question-word-order",
       "p:telling-time"
     ],
@@ -17122,18 +17182,23 @@
   },
   {
     "id": "u20-0743",
-    "es": "¿Qué temperatura hace?\nPoca, hace mucho frío.",
-    "en": "What's the temperature?\nA low one, it's very cold.",
+    "es": "¿Qué temperatura hace en la calle?\nMuy baja. Lleva abrigo.",
+    "en": "What's the temperature like out in the street?\nVery low. Take a coat. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:present-ar",
       "g:present-er-ir",
       "g:questions",
-      "l:frío",
+      "l:abrigo",
+      "l:bajar",
+      "l:calle",
       "l:hacer",
+      "l:llevar",
       "l:qué",
       "l:temperatura",
-      "p:hace-frio",
+      "p:es-tiene-lleva",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -17580,7 +17645,7 @@
   {
     "id": "u20-0761",
     "es": "Mi tío es abogado.\nQué bueno, necesitamos uno.",
-    "en": "My uncle is a lawyer.\nHow good, we need one.",
+    "en": "My uncle is a lawyer.\nGreat, we need one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17654,15 +17719,17 @@
   },
   {
     "id": "u20-0764",
-    "es": "Gracias por todo, cariño.\nDe nada, mamá.",
-    "en": "Thanks for everything, love.\nYou're welcome, Mom.",
+    "es": "Gracias por todo, doña Gloria.\nCon mucho cariño, mijo.",
+    "en": "Thanks for everything, Doña Gloria.\nWith lots of love, son.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:gracias-de-nada",
       "l:cariño",
-      "l:mamá",
-      "p:gracias-por"
+      "l:mijo",
+      "p:don-dona-nombre",
+      "p:gracias-por",
+      "p:quantifiers-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "l:cariño"
@@ -17870,14 +17937,18 @@
   },
   {
     "id": "u20-0773",
-    "es": "Echo de menos a Simón.\nYo también.",
-    "en": "I miss Simón.\nMe too.",
+    "es": "¿Echo sal en la sopa?\nSí, un poco.",
+    "en": "Shall I put salt in the soup?\nYes, a little.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-ar",
       "l:echar",
-      "p:tambien-tampoco"
+      "l:sal",
+      "l:sopa",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:echar"
@@ -18056,17 +18127,21 @@
   },
   {
     "id": "u20-0781",
-    "es": "¿Te levantas temprano mañana?\nMe levanto a las cinco.",
-    "en": "Are you getting up early tomorrow?\nI get up at five. (to a friend)",
+    "es": "¿A qué hora te levantas los domingos?\nTarde, a las diez.",
+    "en": "What time do you get up on Sundays?\nLate, at ten. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-que-hora",
       "g:gender-articles",
       "g:present-ar",
       "g:reflexive-routine",
+      "l:domingo",
+      "l:hora",
       "l:levantarse",
-      "l:mañana",
-      "l:temprano",
+      "l:qué",
+      "l:tarde",
+      "p:days-el-lunes",
       "p:telling-time"
     ],
     "targets": [],
@@ -18077,19 +18152,21 @@
   },
   {
     "id": "u20-0782",
-    "es": "Es tarde.\nAdelantemos el trabajo, entonces.",
-    "en": "It's late.\nLet's get ahead with the work, then.",
+    "es": "Mañana no hay luz en el barrio.\nEntonces adelantemos el pan hoy.",
+    "en": "There's no power in the neighbourhood tomorrow.\nThen let's get the bread done today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:entonces-bueno",
+      "c:hay",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:hay-vs-esta",
       "l:adelantar",
-      "l:ser",
-      "l:tarde",
-      "l:trabajo",
-      "p:es-de-noche-tarde"
+      "l:barrio",
+      "l:hoy",
+      "l:luz",
+      "l:mañana",
+      "l:pan"
     ],
     "targets": [
       "l:adelantar"
@@ -18305,13 +18382,15 @@
   },
   {
     "id": "u20-0791",
-    "es": "¿Confías?\nSí, confío.",
-    "en": "Do you trust?\nYes, I trust. (to a friend)",
+    "es": "¿Confías en Mariana?\nSí, mucho.",
+    "en": "Do you trust Mariana?\nYes, a lot. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:confiar"
+      "l:confiar",
+      "p:confiar-en-que",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:confiar"
@@ -18848,24 +18927,21 @@
   },
   {
     "id": "u20-0813",
-    "es": "¿Tienes una promesa para mí?\nTe lo prometo.",
-    "en": "Do you have a promise for me?\nI promise. (to a friend)",
+    "es": "¿No vas a decir nada?\nNada, te lo prometo.",
+    "en": "You're not going to say anything?\nNothing, I promise. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:te-lo-prometo",
-      "c:tienes",
-      "g:gender-articles",
-      "g:prep-pronouns",
-      "g:stem-boot",
-      "l:promesa",
-      "l:prometer",
-      "l:tener",
-      "p:para-inf"
+      "c:voy-vas",
+      "g:ir-a-plans",
+      "g:negation-words",
+      "l:decir",
+      "l:ir",
+      "l:prometer"
     ],
     "targets": [
-      "c:te-lo-prometo",
-      "l:promesa"
+      "c:te-lo-prometo"
     ],
     "kind": "dialogue",
     "unit": "u20",
@@ -18994,25 +19070,27 @@
   },
   {
     "id": "u20-0819",
-    "es": "Mañana te llevo a Cartagena.\nTe lo prometo, ¿verdad?",
-    "en": "Tomorrow I'll take you to Cartagena.\nPromise, right? (to a friend)",
+    "es": "Mañana te llevo al páramo.\n¿En serio? ¿Me lo prometes?",
+    "en": "Tomorrow I'll take you to the páramo.\nReally? Do you promise? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-cierto",
-      "c:te-lo-prometo",
+      "c:en-serio",
+      "g:direct-objects",
+      "g:double-pronouns",
+      "g:gender-articles",
       "g:present-ar",
+      "g:present-er-ir",
       "l:llevar",
       "l:mañana",
       "l:prometer",
-      "l:verdad",
+      "l:páramo",
+      "l:serio",
       "p:llevar-traer",
       "p:me-te-nos-objects",
       "p:personal-a"
     ],
-    "targets": [
-      "c:te-lo-prometo"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
@@ -19067,8 +19145,8 @@
   },
   {
     "id": "u20-0822",
-    "es": "Tendré todo listo.\nTranquilo, todo saldrá bien.",
-    "en": "I'll have everything ready.\nDon't worry, everything will be fine. (to a man)",
+    "es": "No tendré todo listo a tiempo.\nTranquilo, todo saldrá bien.",
+    "en": "I won't have everything ready in time.\nDon't worry, everything will be fine. (to a man)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19080,6 +19158,7 @@
       "l:listo",
       "l:salir",
       "l:tener",
+      "l:tiempo",
       "l:tranquilo"
     ],
     "targets": [
@@ -19549,8 +19628,8 @@
   },
   {
     "id": "u20-0841",
-    "es": "¿Quién eres?\nSoy socio del señor Altamira.",
-    "en": "Who are you?\nI'm Mr. Altamira's partner. (to a stranger)",
+    "es": "¿Usted quién es?\nSoy socio del señor Altamira.",
+    "en": "Who are you? (polite)\nI'm Mr. Altamira's partner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19595,21 +19674,20 @@
   },
   {
     "id": "u20-0843",
-    "es": "¿Dónde dirigías el tráfico?\nEn el centro, hace años.",
-    "en": "Where did you direct traffic?\nIn the centre, years ago. (to a friend)",
+    "es": "¿Quién dirigía el café antes de Tomás?\nRosa, durante cuarenta años.",
+    "en": "Who ran the café before Tomás?\nRosa, for forty years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:present-er-ir",
       "g:questions",
+      "l:antes",
       "l:año",
-      "l:centro",
+      "l:café",
       "l:dirigir",
-      "l:dónde",
-      "l:hacer",
-      "l:tráfico",
+      "l:quién",
+      "p:durar-durante",
       "p:question-word-order"
     ],
     "targets": [
@@ -19759,13 +19837,16 @@
   },
   {
     "id": "u20-0850",
-    "es": "Yo confío, pero Vale no.",
-    "en": "I trust, but Vale doesn't.",
+    "es": "Yo confío en el abogado, pero Vale no.",
+    "en": "I trust the lawyer, but Vale doesn't.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-ar",
-      "l:confiar"
+      "l:abogado",
+      "l:confiar",
+      "p:confiar-en-que"
     ],
     "targets": [
       "l:confiar"
@@ -19777,14 +19858,16 @@
   },
   {
     "id": "u20-0851",
-    "es": "Tomás ya no confía.",
-    "en": "Tomás doesn't trust anymore.",
+    "es": "Tomás ya no confía en nadie.",
+    "en": "Tomás doesn't trust anyone anymore.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ya-no",
+      "g:negation-words",
       "g:present-ar",
-      "l:confiar"
+      "l:confiar",
+      "p:confiar-en-que"
     ],
     "targets": [
       "l:confiar"
@@ -19796,14 +19879,17 @@
   },
   {
     "id": "u20-0852",
-    "es": "¿Confías?\nNo del todo.",
-    "en": "Do you trust?\nNot entirely. (to a friend)",
+    "es": "¿Confías en Altamira?\nNi un poco.",
+    "en": "Do you trust Altamira?\nNot one bit. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:confiar"
+      "l:confiar",
+      "p:confiar-en-que",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:confiar"
@@ -19840,7 +19926,7 @@
   {
     "id": "u20-0854",
     "es": "Hay mucho daño en esa pared.",
-    "en": "There's a lot of damage in that wall.",
+    "en": "There's a lot of damage on that wall.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20100,8 +20186,8 @@
   },
   {
     "id": "u20-0866",
-    "es": "Hernando manejará su taxi hasta el sur esta tarde.",
-    "en": "Hernando will drive his taxi south this afternoon.",
+    "es": "Hernando manejará la Burra hasta el sur esta tarde.",
+    "en": "Hernando will drive the Burra south this afternoon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20110,9 +20196,7 @@
       "l:manejar",
       "l:sur",
       "l:tarde",
-      "l:taxi",
-      "p:demonstratives-basic",
-      "p:possessives-basic"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:future-promises",

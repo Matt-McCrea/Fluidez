@@ -1,9 +1,9 @@
 {
   "node": "g:conditional",
   "hook": {
-    "line": "Simón is still missing, Altamira's lawyer wants a signature, and everyone at the café has advice for Tomás. Advice, wishes and polite requests all run on one ending: *-ría*.",
-    "es": "Yo no firmaría nada.",
-    "en": "I wouldn't sign anything."
+    "line": "Simón turned up in Altamira's lobby, and now everyone at the café has advice for Tomás. Advice, wishes and polite requests all run on one ending: *-ría*.",
+    "es": "Yo hablaría primero con un abogado.",
+    "en": "I'd talk to a lawyer first."
   },
   "examples": [
     {

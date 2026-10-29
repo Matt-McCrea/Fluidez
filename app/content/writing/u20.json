@@ -21,21 +21,16 @@
         "word": "Simón"
       }
     ],
-    "model": "Hola, Mariana. Simón no está en el café y no sé dónde está. Estará con Don Hernando, porque a él le gusta mucho el parque. Supongo que volverá pronto. ¿Tú qué crees?",
+    "model": "Hola, Mariana. Simón no está en el café y no sé dónde está. Estará con don Hernando, o en el parque. Supongo que volverá pronto, pero estoy nervioso. ¿Tú qué crees?",
     "focus": "g:future-conjecture",
     "requires": [
       "c:donde-esta",
       "c:hola-buenos-dias",
       "c:no-se",
-      "c:porque",
       "c:supongo-que",
-      "g:cause-result",
       "g:estar-location-states",
       "g:future-promises",
       "g:gender-articles",
-      "g:gustar-basic",
-      "g:gustar-full",
-      "g:present-ar",
       "g:present-er-ir",
       "g:questions",
       "g:yo-irregular",
@@ -43,14 +38,13 @@
       "l:creer",
       "l:dónde",
       "l:estar",
-      "l:gustar",
+      "l:nervioso",
       "l:parque",
       "l:pronto",
       "l:qué",
       "l:saber",
       "l:suponer",
       "l:volver",
-      "p:quantifiers-basic",
       "p:que-opinas-de",
       "p:senor-don-article"
     ]
@@ -85,7 +79,7 @@
         "label": "describe the weather"
       }
     ],
-    "model": "Hola. El pronóstico dice que mañana estará nublado y lloverá por la tarde. El domingo hará sol, pero habrá mucho viento. Lleva una chaqueta, por favor,, y también un buen sombrero.",
+    "model": "Hola. El pronóstico dice que mañana estará nublado y lloverá por la tarde. El domingo hará sol, pero habrá mucho viento. Trae una chaqueta y también un paraguas, por favor.",
     "focus": "g:future-promises",
     "requires": [
       "c:hola-buenos-dias",
@@ -97,30 +91,26 @@
       "g:imperfect-states",
       "g:stem-e-i",
       "g:that-clauses",
-      "l:buen",
       "l:chaqueta",
       "l:decir",
       "l:domingo",
       "l:estar",
       "l:favor",
       "l:hacer",
-      "l:llevar",
       "l:llover",
       "l:mañana",
       "l:nublado",
+      "l:paraguas",
       "l:pronóstico",
       "l:sol",
-      "l:sombrero",
       "l:tarde",
+      "l:traer",
       "l:viento",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
       "p:days-el-lunes",
-      "p:es-tiene-lleva",
       "p:hace-frio",
+      "p:llevar-traer",
       "p:por-la-manana",
-      "p:quantifiers-basic",
-      "p:request-ladder"
+      "p:quantifiers-basic"
     ]
   },
   {
@@ -244,13 +234,11 @@
         "type": "negation"
       }
     ],
-    "model": "Camila, yo que tú, no firmaría eso hoy. Primero hablaría con un abogado de confianza. Tú no tienes que decidir ahora, porque tienes tiempo. Y no deberías firmar sin leer todo.",
+    "model": "Camila, yo que tú, no firmaría eso hoy. Primero hablaría con un abogado de confianza. No tienes que decidir ahora. Y nunca deberías firmar sin leer todo.",
     "focus": "c:yo-que-tu",
     "requires": [
-      "c:porque",
       "c:tienes",
       "c:yo-que-tu",
-      "g:cause-result",
       "g:conditional",
       "g:gender-articles",
       "g:prep-infinitive",
@@ -267,8 +255,8 @@
       "l:hoy",
       "l:leer",
       "l:tener",
-      "l:tiempo",
       "p:demonstratives-basic",
+      "p:frequency-scale",
       "p:tendrias-que",
       "p:time-sequence-basic"
     ]
@@ -418,36 +406,27 @@
         "type": "negation"
       }
     ],
-    "model": "Gracias por la invitación, Jhon Fredy. A lo mejor llego a las nueve, porque trabajo hasta las ocho. Todavía no sé. Tengo mucho trabajo, pero lo voy a intentar. Mañana te digo.",
+    "model": "Gracias por la invitación, Jhon Fredy. El viernes trabajo hasta las ocho, pero a lo mejor llego a las nueve. Todavía no sé. Mañana te digo.",
     "focus": "c:a-lo-mejor",
     "requires": [
       "c:a-lo-mejor",
       "c:no-se",
-      "c:porque",
-      "c:tengo",
       "c:todavia-no",
-      "c:voy-a",
-      "g:cause-result",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:ir-a-plans",
       "g:present-ar",
       "g:quizas-a-lo-mejor",
       "g:yo-irregular",
       "l:decir",
-      "l:intentar",
       "l:invitación",
-      "l:ir",
       "l:llegar",
       "l:mañana",
       "l:mejor",
       "l:saber",
-      "l:tener",
       "l:trabajar",
-      "l:trabajo",
+      "l:viernes",
+      "p:days-el-lunes",
       "p:gracias-por",
       "p:me-te-nos-objects",
-      "p:quantifiers-basic",
       "p:telling-time"
     ]
   },
@@ -473,11 +452,13 @@
         "n": 3
       }
     ],
-    "model": "Mi hermana no contesta el celular. Serán las once allá, y supongo que está en la casa de su amiga. Estará cansada. Supongo que me llama mañana.",
+    "model": "Mi hermana no contesta el celular. Allá serán las once, y supongo que está en la casa de una amiga. O estará cansada. Mañana la llamo otra vez.",
     "focus": "c:supongo-que",
     "requires": [
+      "c:claro-listo",
       "c:supongo-que",
       "g:adjective-agreement",
+      "g:direct-objects",
       "g:estar-location-states",
       "g:future-promises",
       "g:gender-articles",
@@ -495,8 +476,9 @@
       "l:mañana",
       "l:ser",
       "l:suponer",
+      "l:vez",
       "p:aqui-ahi-alla",
-      "p:me-te-nos-objects",
+      "p:otro-no-article",
       "p:possessives-basic",
       "p:telling-time"
     ]
@@ -687,7 +669,7 @@
   {
     "id": "w-u20-13",
     "unit": "u20",
-    "prompt": "Write to a small hotel in Santa Marta that you would call usted. Say you would like to book a room, and ask politely if they could tell you the price.",
+    "prompt": "Write to a small hotel in Santa Marta, using usted. Say you would like to book a room, and ask politely if they could tell you the price.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -790,7 +772,7 @@
   {
     "id": "w-u20-15",
     "unit": "u20",
-    "prompt": "Don Hernando is tired but keeps working on a rainy day. Write him a short note you would address as usted: say what you think he should do, and offer a promise to help.",
+    "prompt": "Don Hernando is tired but keeps working on a rainy day. Write him a short note, using usted: say what you think he should do, and promise to help.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
