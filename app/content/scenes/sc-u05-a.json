@@ -1,0 +1,202 @@
+{
+  "id": "sc-u05-a",
+  "unit": "u05",
+  "title": "Mariana's notebook",
+  "brief": "You're Tomás. Mariana is writing an article about the barrio, and she wants La Esquina de Rosa in it, starting with you and your family. Answer her questions honestly, even the ones you can't really answer. She's your childhood friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, escribo un artículo sobre el barrio y sobre La Esquina de Rosa. ¿Tienes un minuto?",
+      "npcEn": "Tomás, I'm writing an article about the barrio and about La Esquina de Rosa. Have you got a minute?",
+      "intent": "Say yes, of course, and that you'll make her a tinto.",
+      "accept": [
+        "Sí, claro. Te hago un tinto.",
+        "Claro, Mariana. Te hago un tinto.",
+        "Sí, claro. Primero te hago un tinto."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "hacer",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I make: hago"
+        }
+      ],
+      "focus": "g:yo-irregular",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Gracias. Primera pregunta: ¿cuántos años tienes?",
+      "npcEn": "Thanks. First question: how old are you?",
+      "intent": "Say you're thirty-four.",
+      "accept": [
+        "Tengo treinta y cuatro años.",
+        "Treinta y cuatro. Tengo treinta y cuatro años.",
+        "Tengo treinta y cuatro, Mariana."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "tener",
+          "tense": "presente",
+          "person": "yo",
+          "label": "Spanish has years: tengo treinta y cuatro"
+        }
+      ],
+      "focus": "p:tener-anos",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Treinta y cuatro. ¡Uy! Bueno. ¿Y tu familia? ¿Tienes hermanos?",
+      "npcEn": "Thirty-four. Wow! Okay. And your family? Have you got any brothers or sisters?",
+      "intent": "Say no, you're an only child, and your dad lives in Toronto.",
+      "accept": [
+        "No, soy hijo único. Mi papá vive en Toronto.",
+        "No, no tengo hermanos. Soy hijo único, y mi papá vive en Toronto.",
+        "No. Soy hijo único. Mi papá vive en Toronto."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "mi papá",
+            "mi padre"
+          ],
+          "label": "my dad: mi papá"
+        }
+      ],
+      "focus": "g:possessives",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Y conoces a tu familia de Bogotá? ¿A tus tíos?",
+      "npcEn": "And do you know your family in Bogotá? Your aunts and uncles?",
+      "intent": "Say no, you don't know anyone: your dad never talks about his brother.",
+      "accept": [
+        "No, no conozco a nadie. Mi papá nunca habla de su hermano.",
+        "No conozco a nadie. Mi papá no habla nunca de su hermano.",
+        "No, no conozco a nadie, y mi papá nunca habla de su hermano."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "nadie",
+          "label": "nobody: no conozco a nadie"
+        },
+        {
+          "type": "containsWord",
+          "word": "nunca",
+          "label": "never: nunca"
+        }
+      ],
+      "focus": "g:negation-words",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Oye, ¿y la foto de la mesa? ¿Él es tu abuelo?",
+      "npcEn": "Hey, and the photo on the table? Is he your grandfather?",
+      "intent": "Say no, he's not your grandfather, and you don't know his name.",
+      "accept": [
+        "No, no es mi abuelo. No sé su nombre.",
+        "No es mi abuelo, Mariana. No sé su nombre.",
+        "No, no es mi abuelo, y no sé su nombre."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "su nombre",
+          "label": "his name: su nombre"
+        }
+      ],
+      "focus": "g:possessives",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Es alto, como tú. Y tiene tu nariz. Bueno, me voy. Gracias por el tinto.",
+      "npcEn": "He's tall, like you. And he has your nose. Well, I'm off. Thanks for the tinto.",
+      "intent": "Say you're welcome, and tell her she's a really good person.",
+      "accept": [
+        "De nada, Mariana. Eres muy buena gente.",
+        "De nada. Mariana, eres muy buena gente.",
+        "Gracias, Mariana. Eres muy buena gente."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "buena gente",
+          "label": "a good person: buena gente"
+        }
+      ],
+      "focus": "c:buena-gente",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:buena-gente",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hijo-unico",
+    "c:no-se",
+    "c:oiga-oye",
+    "c:tengo",
+    "c:tengo-anos",
+    "c:tienes",
+    "c:tienes-hermanos",
+    "c:voy-vas",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:abuelo",
+    "l:alto",
+    "l:artículo",
+    "l:año",
+    "l:barrio",
+    "l:buena",
+    "l:bueno",
+    "l:claro",
+    "l:conocer",
+    "l:cuánto",
+    "l:escribir",
+    "l:familia",
+    "l:foto",
+    "l:gente",
+    "l:hablar",
+    "l:hacer",
+    "l:hermano",
+    "l:hermanos",
+    "l:hijo",
+    "l:irse",
+    "l:mesa",
+    "l:minuto",
+    "l:nariz",
+    "l:nombre",
+    "l:oír",
+    "l:papá",
+    "l:pregunta",
+    "l:saber",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:tío",
+    "l:vivir",
+    "l:único",
+    "p:gracias-por",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic"
+  ]
+}

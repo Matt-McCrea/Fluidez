@@ -1,0 +1,207 @@
+{
+  "id": "sc-u05-c",
+  "unit": "u05",
+  "title": "Sunday, Toronto calling",
+  "brief": "You're Tomás. It's Sunday, and your dad calls from Toronto as he always does. Tell him about your new life and about Vale, then ask him the question nobody answers: what about your uncle Jaime? He's your dad, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¿Aló? ¿Tomás? ¡Hola, hijo! ¿Cómo estás?",
+      "npcEn": "Hello? Tomás? Hi, son! How are you?",
+      "intent": "Say you're fine, but you leave at five in the morning.",
+      "accept": [
+        "Bien, papá. Pero salgo a las cinco de la mañana.",
+        "Estoy bien, papá. Pero salgo a las cinco.",
+        "Bien, gracias. Salgo de la casa a las cinco."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "salir",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I leave: salgo"
+        }
+      ],
+      "focus": "g:yo-irregular",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿A las cinco? En Toronto nunca sales a las cinco.",
+      "npcEn": "At five? In Toronto you never leave at five.",
+      "intent": "Say he's right, but Vale is very hard-working.",
+      "accept": [
+        "Tienes razón, papá. Pero Vale es muy trabajadora.",
+        "Tienes razón. Pero Vale es muy trabajadora.",
+        "Sí, tienes razón. Pero Vale es muy trabajadora, papá."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "tienes razón",
+          "label": "you're right: tienes razón"
+        }
+      ],
+      "focus": "p:tener-razon",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Vale? ¿Quién es Vale? ¿Cómo es?",
+      "npcEn": "Vale? Who's Vale? What's she like?",
+      "intent": "Say she's from Medellín, she's twenty-eight and she's very nice.",
+      "accept": [
+        "Es de Medellín, tiene veintiocho años y es muy simpática.",
+        "Vale es de Medellín. Tiene veintiocho años. Es muy simpática.",
+        "Es muy simpática. Es de Medellín y tiene veintiocho años."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "tiene veintiocho",
+          "label": "her age: tiene veintiocho años"
+        },
+        {
+          "type": "containsWord",
+          "word": "simpática",
+          "label": "Vale is a woman: simpática"
+        }
+      ],
+      "focus": "p:es-tiene-lleva",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Qué bien, hijo. ¿Y qué más?",
+      "npcEn": "That's great, son. And what else?",
+      "intent": "Ask him if your uncle Jaime lives in Bogotá.",
+      "accept": [
+        "Papá, ¿mi tío Jaime vive en Bogotá?",
+        "¿Y mi tío Jaime? ¿Vive en Bogotá?",
+        "¿Tu hermano Jaime vive en Bogotá?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "mi tío",
+            "tu hermano"
+          ],
+          "label": "my uncle: mi tío"
+        }
+      ],
+      "focus": "g:possessives",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Jaime? No sé. No hablo con mi hermano. ¿Quién habla de Jaime en el café?",
+      "npcEn": "Jaime? I don't know. I don't talk to my brother. Who talks about Jaime at the café?",
+      "intent": "Say nobody does, but there's a photo of Jaime in Rosa's album.",
+      "accept": [
+        "No, nadie. Pero hay una foto de Jaime en el álbum de Rosa.",
+        "No habla nadie. Pero hay una foto de Jaime en el álbum de Rosa.",
+        "No, papá, nadie. Pero hay una foto de Jaime en el álbum de la abuela."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "nadie",
+          "label": "nobody: nadie"
+        }
+      ],
+      "focus": "g:negation-words",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Ah. Bueno, hijo, me voy. Hablamos el domingo.",
+      "npcEn": "Oh. Well, son, I'm off. We'll talk on Sunday.",
+      "intent": "Say okay, you'll call him on Sunday, and say bye.",
+      "accept": [
+        "Listo, papá. Te llamo el domingo. Chao.",
+        "Bueno, papá, chao. Te llamo el domingo.",
+        "Claro. Te llamo el domingo, papá. Chao."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "te llamo",
+          "label": "I'll call you: te llamo"
+        }
+      ],
+      "focus": "p:me-te-nos-objects",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:como-es",
+    "c:como-estas",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:no-se",
+    "c:que-bien",
+    "c:que-mas",
+    "c:tienes",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:año",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:casa",
+    "l:claro",
+    "l:cómo",
+    "l:domingo",
+    "l:estar",
+    "l:foto",
+    "l:hablar",
+    "l:hermano",
+    "l:hijo",
+    "l:irse",
+    "l:jaime",
+    "l:listo",
+    "l:llamar",
+    "l:mañana",
+    "l:papá",
+    "l:quién",
+    "l:qué",
+    "l:razón",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:simpático",
+    "l:tener",
+    "l:trabajador",
+    "l:tío",
+    "l:vivir",
+    "l:álbum",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:tener-anos"
+  ]
+}

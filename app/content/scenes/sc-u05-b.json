@@ -1,0 +1,193 @@
+{
+  "id": "sc-u05-b",
+  "unit": "u05",
+  "title": "Lucía at the counter",
+  "brief": "You're Tomás. A woman you've never met walks into the café looking for Don Hernando, who left early today. Tell her where he is, answer her questions about your family, and introduce her to Vale. She's a stranger, so use usted with her; Vale is your friend, so use tú with Vale.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes. ¿Usted es Tomás, el nieto de Rosa?",
+      "npcEn": "Good afternoon. Are you Tomás, Rosa's grandson?",
+      "intent": "Say yes, that's you.",
+      "accept": [
+        "Sí, soy yo.",
+        "Sí, soy yo. Mucho gusto.",
+        "Sí, señora, soy yo."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "soy yo",
+          "label": "that's me: soy yo"
+        }
+      ],
+      "focus": "c:si-soy-yo",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mucho gusto. Soy Lucía, la hija de Hernando. Busco a mi papá. ¿Está aquí?",
+      "npcEn": "Nice to meet you. I'm Lucía, Hernando's daughter. I'm looking for my dad. Is he here?",
+      "intent": "Say no, he isn't here: he left at four.",
+      "accept": [
+        "No, no está. Salió a las cuatro.",
+        "No, señora. Su papá salió a las cuatro.",
+        "No está aquí. Salió a las cuatro."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "salir",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "he left: salió"
+        }
+      ],
+      "focus": "g:preterite-er-ir",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿A las cuatro? Mi papá nunca sale a las cuatro. Bueno. ¿Y su familia? ¿Está en Bogotá?",
+      "npcEn": "At four? My dad never leaves at four. Well. And your family? Is it in Bogotá?",
+      "intent": "Say no: your parents live in Toronto.",
+      "accept": [
+        "No, mis papás viven en Toronto.",
+        "No, señora. Mis papás viven en Toronto, en Canadá.",
+        "Mis papás no viven en Bogotá. Viven en Toronto."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "mis papás",
+            "mis padres"
+          ],
+          "label": "my parents: mis papás"
+        }
+      ],
+      "focus": "p:masculine-plural-mixed",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ah, en Canadá. ¿Y Vale? Mi papá habla mucho de Vale. ¿Cómo es?",
+      "npcEn": "Ah, in Canada. And Vale? My dad talks about Vale a lot. What's she like?",
+      "intent": "Say she's short and dark-haired, and very hard-working.",
+      "accept": [
+        "Es baja y morena. Y es muy trabajadora.",
+        "Vale es baja, morena y muy trabajadora.",
+        "Es baja, es morena y es muy trabajadora."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bbaja\\b",
+          "flags": "i",
+          "label": "Vale is a woman: baja, not bajo"
+        },
+        {
+          "type": "containsWord",
+          "word": "trabajadora",
+          "label": "Vale is a woman: trabajadora"
+        }
+      ],
+      "focus": "g:adjective-agreement",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Yo tengo seis niños. Mi hijo mayor tiene veinte años. ¿Y usted? ¿Tiene niños?",
+      "npcEn": "I have six children. My oldest son is twenty. And you? Do you have children?",
+      "intent": "Say no, you don't have children, and you don't have a girlfriend either.",
+      "accept": [
+        "No, no tengo niños. Y tampoco tengo novia.",
+        "No tengo niños, y tampoco tengo novia.",
+        "No, señora. No tengo niños, y no tengo novia tampoco."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "tampoco",
+          "label": "not either: tampoco"
+        }
+      ],
+      "focus": "g:negation-words",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Buenas tardes! ¿Morena y trabajadora? Gracias. Tomás, ¿y la señora quién es?",
+      "npcEn": "Good afternoon! Dark-haired and hard-working? Thanks. Tomás, and who's the lady?",
+      "intent": "Introduce Lucía to Vale: she's Don Hernando's daughter.",
+      "accept": [
+        "Vale, te presento a Lucía, la hija de Don Hernando.",
+        "Te presento a Lucía. Es la hija de Don Hernando.",
+        "Vale, te presento a Lucía. Es la hija de Don Hernando."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "te presento a",
+          "label": "introducing someone: te presento a"
+        }
+      ],
+      "focus": "p:te-presento-a",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:como-es",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:mucho-gusto",
+    "c:si-soy-yo",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:negation-words",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:aquí",
+    "l:año",
+    "l:bajo",
+    "l:buena",
+    "l:bueno",
+    "l:buscar",
+    "l:cómo",
+    "l:estar",
+    "l:familia",
+    "l:gusto",
+    "l:hablar",
+    "l:hija",
+    "l:hijo",
+    "l:mayor",
+    "l:moreno",
+    "l:nieto",
+    "l:niño",
+    "l:novia",
+    "l:papá",
+    "l:presentar",
+    "l:quién",
+    "l:salir",
+    "l:ser",
+    "l:señora",
+    "l:tarde",
+    "l:tener",
+    "l:trabajador",
+    "l:vivir",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:tener-anos"
+  ]
+}
