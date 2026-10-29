@@ -1,0 +1,43 @@
+{
+  "node": "p:el-agua-fria",
+  "hook": {
+    "line": "Vale is writing the new menu and gets stuck on the very first drink. *agua* is a *la* word, so why does everyone say *el agua*?",
+    "es": "Prefiero el agua fría, por favor.",
+    "en": "I prefer cold water, please."
+  },
+  "examples": [
+    { "es": "El agua está fría.", "en": "The water is cold." },
+    { "es": "Esta agua está muy fría.", "en": "This water is very cold." },
+    { "es": "Quiero un agua, por favor.", "en": "I want a water, please." },
+    { "es": "Tengo mucha hambre.", "en": "I'm really hungry." },
+    { "es": "Tomás tiene mucha hambre hoy.", "en": "Tomás is really hungry today." },
+    { "es": "El área de la cocina es pequeña.", "en": "The kitchen area is small." }
+  ],
+  "rule": "*agua* is a *la* word, but *la agua* would run two a's together right where your voice leans on the word. So Spanish swaps in *el*, and *un* for *una*:\n*el agua*, *un agua*, *el hambre*, *el área*\n\nThat's the only change. The word is still feminine, so everything else stays feminine:\n*el agua fría*, *mucha hambre*, *el área es pequeña*, *esta agua*\n\nIn the plural the problem disappears: *las aguas*.\n\nThe swap only happens when the a- at the start is the loud part of the word. *arepa* leans on *re*, so it keeps *la arepa*.",
+  "smallPrint": "Teachers say *el* goes before feminine nouns that start with a stressed *a-* (a tónica).",
+  "readAndPick": [
+    { "es": "Quiero un agua, por favor.", "options": ["I want a water, please.", "I want the water, please."], "answer": 0 },
+    { "es": "¿Quieres el agua fría?", "options": ["Do you want a cold water? (to a friend)", "Do you want the cold water? (to a friend)"], "answer": 1 },
+    { "es": "Tengo mucha hambre.", "options": ["I'm a little hungry.", "I'm really hungry."], "answer": 1 },
+    { "es": "Esta agua está muy fría.", "options": ["This water is very cold.", "That water is very cold."], "answer": 0 },
+    { "es": "Esa área es pequeña.", "options": ["This area is small.", "That area is small."], "answer": 1 },
+    { "es": "Simón tiene un poco de hambre.", "options": ["Simón is a little hungry.", "Simón is really hungry."], "answer": 0 },
+    { "es": "Hay dos aguas en la mesa.", "options": ["There's a water on the table.", "There are two waters on the table."], "answer": 1 },
+    { "es": "¿Tienes mucha hambre?", "options": ["Are you really hungry? (to a friend)", "Is he really hungry?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *el* or *la*: ___ agua está fría.", "answer": "El agua está fría.", "accept": [], "why": "*agua* starts with a stressed a-, so it takes *el*." },
+    { "prompt": "Choose *frío* or *fría*: El agua está ___.", "answer": "El agua está fría.", "accept": [], "why": "*agua* is still feminine, so the describing word ends in -a." },
+    { "prompt": "Choose *mucho* or *mucha*: Tengo ___ hambre.", "answer": "Tengo mucha hambre.", "accept": [], "why": "*hambre* is feminine too, so *mucha*." },
+    { "prompt": "Say: I prefer cold water.", "answer": "Prefiero el agua fría.", "accept": ["Yo prefiero el agua fría."], "why": "*el agua*, but *fría* with an -a." },
+    { "prompt": "Say: This water is very cold.", "answer": "Esta agua está muy fría.", "accept": [], "why": "Only *el* and *un* swap; *esta* stays feminine." },
+    { "prompt": "Make it about Tomás: Tengo mucha hambre.", "answer": "Tomás tiene mucha hambre.", "accept": [], "why": "Change the verb to *tiene*; *mucha hambre* stays." },
+    { "prompt": "Say: The kitchen area is small.", "answer": "El área de la cocina es pequeña.", "accept": [], "why": "*el área*, but *pequeña*, because it's feminine." }
+  ],
+  "pitfalls": [
+    { "wrong": "El agua está frío.", "right": "El agua está fría.", "why": "Almost. The *el* is only for the sound; *agua* is still feminine, so *fría*." },
+    { "wrong": "La agua está fría.", "right": "El agua está fría.", "why": "Before a stressed a-, Spanish says *el*: *el agua*." },
+    { "wrong": "Tengo mucho hambre.", "right": "Tengo mucha hambre.", "why": "*el hambre* is feminine underneath, so *mucha*." }
+  ],
+  "personal": "Are you hungry right now? Write a line with *hambre*, then say how you like your water: *Prefiero el agua…*."
+}

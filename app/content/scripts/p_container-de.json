@@ -1,0 +1,43 @@
+{
+  "node": "p:container-de",
+  "hook": {
+    "line": "Saturday is ajiaco day now, so Tomás takes Vale's list to the market. At every stall he needs the same little word between the amount and the food.",
+    "es": "¿Me regala dos libras de papa, por favor?",
+    "en": "Can I have two pounds of potatoes, please?"
+  },
+  "examples": [
+    { "es": "Quiero una botella de agua.", "en": "I want a bottle of water." },
+    { "es": "Compré un paquete de arroz.", "en": "I bought a packet of rice." },
+    { "es": "Necesito media docena de huevos.", "en": "I need half a dozen eggs." },
+    { "es": "¿Me da un vaso de jugo?", "en": "Can I have a glass of juice?" },
+    { "es": "Don Hernando pide una taza de chocolate.", "en": "Don Hernando orders a cup of hot chocolate." },
+    { "es": "¿Cuánto cuesta un kilo de queso?", "en": "How much is a kilo of cheese?" }
+  ],
+  "rule": "English says \"a bottle of water\", and Spanish says it the same way: the amount, then *de*, then the food.\n*una botella de agua*, *un paquete de arroz*, *una libra de papa*\n\nTwo things to watch. Never drop the *de*: *una botella agua* sounds broken. And no *el* or *la* after it: *un vaso de jugo*, not *un vaso del jugo*.\n\nFood you'd pile on a scale often stays singular where English goes plural: *una libra de tomate* is a pound of tomatoes. For more than one container, the container goes plural: *dos tazas de café*.\n\nIn Colombian markets you buy by the *libra*, about half a kilo.",
+  "smallPrint": "Teachers call these quantity expressions: a container or measure, then *de*, then a noun with no article.",
+  "readAndPick": [
+    { "es": "Quiero un vaso de leche.", "options": ["I want a glass of milk.", "I want some milk.", "I want a cup of milk."], "answer": 0 },
+    { "es": "Tomás pide dos tazas de café.", "options": ["Tomás orders two coffees.", "Tomás orders a cup of coffee.", "Tomás orders two cups of coffee."], "answer": 2 },
+    { "es": "¿Me regala una libra de tomate?", "options": ["Can I have a tomato?", "Can I have a pound of tomatoes?"], "answer": 1 },
+    { "es": "Compramos tres botellas de cerveza.", "options": ["We bought three bottles of beer.", "We bought a bottle of beer."], "answer": 0 },
+    { "es": "Necesitamos un kilo de carne.", "options": ["We need a pound of meat.", "We need a kilo of meat."], "answer": 1 },
+    { "es": "Vale compró dos paquetes de arroz.", "options": ["Vale bought two packets of rice.", "Vale bought a packet of rice."], "answer": 0 },
+    { "es": "¿Me da una taza de té?", "options": ["Can I have a glass of tea?", "Can I have a cup of tea?", "Can I have some tea?"], "answer": 1 },
+    { "es": "Necesito media docena de huevos.", "options": ["I need a dozen eggs.", "I need half an egg.", "I need half a dozen eggs."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *de* or nothing: Quiero una botella ___ agua.", "answer": "Quiero una botella de agua.", "accept": [], "why": "Between the bottle and what's in it, Spanish always puts *de*." },
+    { "prompt": "Choose *de* or *del*: ¿Me da un vaso ___ jugo?", "answer": "¿Me da un vaso de jugo?", "accept": [], "why": "No *el* after the container: just *de jugo*." },
+    { "prompt": "Say: I bought a packet of rice.", "answer": "Compré un paquete de arroz.", "accept": ["Yo compré un paquete de arroz."], "why": "The packet, then *de*, then the rice." },
+    { "prompt": "Ask a market seller, starting with *¿Me regala…?*: Can I have a pound of tomatoes?", "answer": "¿Me regala una libra de tomate?", "accept": ["¿Me regala una libra de tomates?"], "why": "A pound of = *una libra de*, and the tomato can stay singular." },
+    { "prompt": "Say: Don Hernando orders a cup of hot chocolate.", "answer": "Don Hernando pide una taza de chocolate.", "accept": [], "why": "A cup of = *una taza de*." },
+    { "prompt": "Make it two cups: Quiero una taza de café.", "answer": "Quiero dos tazas de café.", "accept": [], "why": "The container goes plural; *café* stays as it is." },
+    { "prompt": "Make it half a dozen: Necesito una docena de huevos.", "answer": "Necesito media docena de huevos.", "accept": [], "why": "Half a dozen = *media docena*, with nothing in front." }
+  ],
+  "pitfalls": [
+    { "wrong": "Quiero una botella agua.", "right": "Quiero una botella de agua.", "why": "Almost. English can't drop \"of\" here, and Spanish can't drop *de*." },
+    { "wrong": "¿Me da un vaso del jugo?", "right": "¿Me da un vaso de jugo?", "why": "After the container, no *el*: *de jugo*, just like \"a glass of juice\"." },
+    { "wrong": "Necesito una media docena de huevos.", "right": "Necesito media docena de huevos.", "why": "English says \"half a dozen\", but Spanish drops the *una*: *media docena*." }
+  ],
+  "personal": "What's in your kitchen right now? Write two lines like *Tengo una botella de agua* or *Tengo un paquete de arroz*, with real amounts."
+}

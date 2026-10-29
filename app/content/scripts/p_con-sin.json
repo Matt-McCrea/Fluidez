@@ -1,0 +1,43 @@
+{
+  "node": "p:con-sin",
+  "hook": {
+    "line": "Don Hernando has taken his coffee the same way for forty years, and Vale knows his order by heart. Getting food just the way you like it takes two tiny words.",
+    "es": "Un tinto sin azúcar, por favor.",
+    "en": "A black coffee without sugar, please."
+  },
+  "examples": [
+    { "es": "Un café con leche, por favor.", "en": "A coffee with milk, please." },
+    { "es": "Quiero una arepa con queso.", "en": "I want an arepa with cheese." },
+    { "es": "Hoy hay arroz con pollo.", "en": "Today there's chicken and rice." },
+    { "es": "¿El jugo en agua o en leche?", "en": "The juice made with water or with milk?" },
+    { "es": "Don Hernando toma el tinto sin azúcar.", "en": "Don Hernando drinks his black coffee without sugar." },
+    { "es": "¿Quieres la ensalada con tomate o sin tomate?", "en": "Do you want the salad with tomato or without tomato?" }
+  ],
+  "rule": "*con* is with, *sin* is without, and the food after them comes bare, with no *el* or *la*: *con leche*, *sin azúcar*.\n\nSpanish names a dish with the main thing first: *arroz con pollo*, *café con leche*. English often flips it or uses \"and\" (chicken and rice), so don't translate word by word.\n\nIn Colombia a fruit juice is made with water or with milk, so you'll hear *¿En agua o en leche?* Answer *en agua* or *en leche*.\n\nAnd a *tinto* here is a small black coffee, not red wine.",
+  "smallPrint": "Teachers call *con* and *sin* prepositions; in orders like these they take a noun with no article.",
+  "readAndPick": [
+    { "es": "Un tinto sin azúcar.", "options": ["A black coffee with sugar.", "A black coffee without sugar."], "answer": 1 },
+    { "es": "Un café con leche.", "options": ["A coffee with milk.", "A coffee without milk.", "A milk without coffee."], "answer": 0 },
+    { "es": "Quiero una arepa sin queso.", "options": ["I want an arepa with cheese.", "I want cheese, not an arepa.", "I want an arepa without cheese."], "answer": 2 },
+    { "es": "Para Simón, un jugo en agua.", "options": ["For Simón, a juice made with water.", "For Simón, a juice made with milk."], "answer": 0 },
+    { "es": "La sopa viene con arroz.", "options": ["The soup comes without rice.", "The soup comes with rice."], "answer": 1 },
+    { "es": "¿Quieres el café sin leche?", "options": ["Do you want the coffee with milk? (to a friend)", "Do you want the coffee without milk? (to a friend)"], "answer": 1 },
+    { "es": "Hoy hay arroz con pollo.", "options": ["Today there's chicken and rice.", "Today there's rice without chicken.", "Today there's only chicken."], "answer": 0 },
+    { "es": "Un jugo de mango en leche.", "options": ["A mango juice made with milk.", "A mango juice made with water."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "You want milk. Choose *con* or *sin*: Un café ___ leche, por favor.", "answer": "Un café con leche, por favor.", "accept": [], "why": "With = *con*." },
+    { "prompt": "Say: A black coffee without sugar, please.", "answer": "Un tinto sin azúcar, por favor.", "accept": [], "why": "Without = *sin*, and no *el* before *azúcar*." },
+    { "prompt": "Say: I want an arepa with cheese.", "answer": "Quiero una arepa con queso.", "accept": ["Yo quiero una arepa con queso."], "why": "The arepa first, then *con queso*." },
+    { "prompt": "Ask a friend: Do you want the juice made with water or with milk?", "answer": "¿Quieres el jugo en agua o en leche?", "accept": [], "why": "For juices, Colombians say *en agua* or *en leche*." },
+    { "prompt": "Say: Today there's chicken and rice.", "answer": "Hoy hay arroz con pollo.", "accept": ["Hay arroz con pollo hoy."], "why": "The dish name starts with the main thing: *arroz con pollo*." },
+    { "prompt": "Make it the opposite: Quiero la sopa con arroz.", "answer": "Quiero la sopa sin arroz.", "accept": [], "why": "Swap *con* for *sin*; nothing else changes." },
+    { "prompt": "Make it the opposite: Don Hernando toma el tinto sin azúcar.", "answer": "Don Hernando toma el tinto con azúcar.", "accept": [], "why": "Swap *sin* for *con*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Un tinto sin el azúcar, por favor.", "right": "Un tinto sin azúcar, por favor.", "why": "Almost. In an order, the food after *con* or *sin* comes without *el*." },
+    { "wrong": "Un leche café, por favor.", "right": "Un café con leche, por favor.", "why": "Spanish doesn't stack nouns the English way: the main thing, then *con*, then what's added." },
+    { "wrong": "Un jugo de mango con agua.", "right": "Un jugo de mango en agua.", "why": "In Colombia a juice is made *en agua* or *en leche*; *con agua* sounds like you want water on the side." }
+  ],
+  "personal": "How do you take your coffee, or your favourite drink? Write one order with *con* and one with *sin*, like *Un café con leche, sin azúcar*."
+}

@@ -1,0 +1,190 @@
+{
+  "node": "g:prep-pronouns",
+  "hook": {
+    "line": "Tomás needs Vale back in the kitchen, and he finally says it plainly. After words like for, with and without, the words for me and you change shape.",
+    "es": "Sin ti no puedo, Vale.",
+    "en": "I can't do it without you, Vale."
+  },
+  "examples": [
+    {
+      "es": "Este pandebono es para ti.",
+      "en": "This pandebono is for you."
+    },
+    {
+      "es": "¿Vienes conmigo al mercado?",
+      "en": "Are you coming to the market with me?"
+    },
+    {
+      "es": "Sí, voy contigo.",
+      "en": "Yes, I'm going with you."
+    },
+    {
+      "es": "Simón siempre habla de mí.",
+      "en": "Simón always talks about me."
+    },
+    {
+      "es": "¿Las almojábanas son para nosotros?",
+      "en": "Are the almojábanas for us?"
+    },
+    {
+      "es": "Este tinto es para usted, don Hernando.",
+      "en": "This black coffee is for you, Don Hernando."
+    },
+    {
+      "es": "A mí me gustan los buñuelos. ¿Y a ti?",
+      "en": "I like buñuelos. How about you?"
+    }
+  ],
+  "rule": "After little words like *para*, *sin*, *de* and *a*, the words for me and you change shape:\n*yo* becomes *mí*: *de mí*, *sin mí*\n*tú* becomes *ti*: *para ti*, *sin ti*\n\nEveryone else keeps the shape you already know: *para él*, *para ella*, *para usted*, *para nosotros*, *para ustedes*, *para ellos*.\n\n*con* is special. It glues itself to me and you and makes one new word:\n*conmigo* = with me\n*contigo* = with you\nThen it's back to normal: *con él*, *con ella*, *con usted*.\n\nWatch the accent: *mí* (me) has one, *mi* (my) doesn't. *ti* never does.\n\nYou already know *a mí* and *a ti* from *gustar*: *A mí me gusta*. Same forms, same rule.",
+  "smallPrint": "Teachers call *mí*, *ti*, *conmigo* and *contigo* prepositional (or tonic) pronouns.",
+  "readAndPick": [
+    {
+      "es": "Simón siempre habla de mí.",
+      "options": [
+        "Simón always talks about me.",
+        "Simón always talks about you.",
+        "Simón always talks about her."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Vienes conmigo?",
+      "options": [
+        "Am I coming with you?",
+        "Are you coming with me? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Voy contigo.",
+      "options": [
+        "You're going with me.",
+        "I'm going with you.",
+        "I'm going with him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No puedo sin ella.",
+      "options": [
+        "I can't without him.",
+        "I can't without her."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Esto es para usted?",
+      "options": [
+        "Is this for you? (formal)",
+        "Is this for him?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las almojábanas son para nosotros.",
+      "options": [
+        "The almojábanas are for them.",
+        "The almojábanas are for us."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás va con ellos.",
+      "options": [
+        "Tomás is going with us.",
+        "Tomás is going with her.",
+        "Tomás is going with them."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Este buñuelo es para ti.",
+      "options": [
+        "This buñuelo is for you.",
+        "This buñuelo is for me."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *mí* or *yo*: Simón siempre habla de ___.",
+      "answer": "Simón siempre habla de mí.",
+      "accept": [],
+      "why": "After *de*, me is *mí*, with an accent."
+    },
+    {
+      "prompt": "Choose *conmigo* or *con mí*: ¿Vienes ___?",
+      "answer": "¿Vienes conmigo?",
+      "accept": [],
+      "why": "*con* and *mí* fuse into one word: *conmigo*."
+    },
+    {
+      "prompt": "Say to a friend: This pandebono is for you.",
+      "answer": "Este pandebono es para ti.",
+      "accept": [],
+      "why": "After *para*, you (to a friend) is *ti*."
+    },
+    {
+      "prompt": "Say to a friend: Yes, I'm going with you.",
+      "answer": "Sí, voy contigo.",
+      "accept": [
+        "Sí, yo voy contigo."
+      ],
+      "why": "With you = *contigo*, one word."
+    },
+    {
+      "prompt": "Say to a friend: I can't do it without you.",
+      "answer": "Sin ti no puedo.",
+      "accept": [
+        "No puedo sin ti."
+      ],
+      "why": "After *sin*, you is *ti*."
+    },
+    {
+      "prompt": "Make it about your friend: Simón siempre habla de mí.",
+      "answer": "Simón siempre habla de ti.",
+      "accept": [],
+      "why": "About you (to a friend) = *de ti*."
+    },
+    {
+      "prompt": "Make it about us: El café es para ti.",
+      "answer": "El café es para nosotros.",
+      "accept": [
+        "El café es para nosotras."
+      ],
+      "why": "We keeps its normal shape: *para nosotros*."
+    },
+    {
+      "prompt": "Make it polite, to an older customer: ¿Vienes conmigo?",
+      "answer": "¿Viene conmigo?",
+      "accept": [
+        "¿Usted viene conmigo?"
+      ],
+      "why": "Only the verb changes for *usted*; *conmigo* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Vienes con mí?",
+      "right": "¿Vienes conmigo?",
+      "why": "Almost. *con* and *mí* always fuse into *conmigo*."
+    },
+    {
+      "wrong": "Simón siempre habla de yo.",
+      "right": "Simón siempre habla de mí.",
+      "why": "After *de*, *yo* turns into *mí*."
+    },
+    {
+      "wrong": "Voy con ti.",
+      "right": "Voy contigo.",
+      "why": "With you (to a friend) is one word: *contigo*."
+    },
+    {
+      "wrong": "Este pandebono es para tú.",
+      "right": "Este pandebono es para ti.",
+      "why": "After *para*, *tú* turns into *ti*, and *ti* has no accent."
+    }
+  ],
+  "personal": "Who do you go to cafés with? Write *Voy al café con…* and a name, then pick a friend and write what you'd buy them: *Este café es para…*."
+}

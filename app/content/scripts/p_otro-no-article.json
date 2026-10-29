@@ -1,0 +1,43 @@
+{
+  "node": "p:otro-no-article",
+  "hook": {
+    "line": "Don Hernando finishes his first tinto at seven in the morning and never stops at one. The way to ask for more has a small trap in it for English speakers.",
+    "es": "¿Me regala otro tinto?",
+    "en": "Can I have another black coffee?"
+  },
+  "examples": [
+    { "es": "Quiero otra arepa.", "en": "I want another arepa." },
+    { "es": "¿Quieres otro jugo?", "en": "Do you want another juice?" },
+    { "es": "Otra vez, por favor.", "en": "Again, please." },
+    { "es": "Don Hernando pide otros dos tintos.", "en": "Don Hernando orders two more black coffees." },
+    { "es": "La otra mesa quiere la cuenta.", "en": "The other table wants the bill." },
+    { "es": "Hoy no puedo. Otro día.", "en": "I can't today. Another day." }
+  ],
+  "rule": "English says *an*other. In Spanish, *otro* already has the \"an\" inside it, so never put *un* in front:\n*otro tinto* = another black coffee\n*otra arepa* = another arepa\n\nIt matches the food: *otro* for *el* words, *otra* for *la* words, *otros* and *otras* for more than one. With a number, the number comes after: *otros dos tintos* = two more black coffees.\n\nWith *el* or *la* in front, it means the other one: *la otra mesa* = the other table.\n\nAnd *otra vez* = again.",
+  "smallPrint": "*otro* is a quantifier, so it never takes the indefinite article *un*.",
+  "readAndPick": [
+    { "es": "¿Me regala otro tinto?", "options": ["Can I have another black coffee?", "Can I have the other black coffee?"], "answer": 0 },
+    { "es": "La otra mesa quiere la cuenta.", "options": ["Another table wants the bill.", "The other table wants the bill."], "answer": 1 },
+    { "es": "Quiero otra arepa.", "options": ["I want an arepa.", "I want the other arepa.", "I want another arepa."], "answer": 2 },
+    { "es": "Don Hernando pide otros dos tintos.", "options": ["Don Hernando orders two black coffees.", "Don Hernando orders two more black coffees.", "Don Hernando orders another black coffee."], "answer": 1 },
+    { "es": "Otra vez, por favor.", "options": ["Again, please.", "The other one, please."], "answer": 0 },
+    { "es": "¿Quieres el otro jugo?", "options": ["Do you want another juice? (to a friend)", "Do you want the other juice? (to a friend)"], "answer": 1 },
+    { "es": "Simón quiere otro.", "options": ["Simón wants another one.", "Simón wants the other one."], "answer": 0 },
+    { "es": "El otro tinto es para Vale.", "options": ["Another black coffee is for Vale.", "The other black coffee is for Vale."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *otro* or *un otro*: ¿Me regala ___ tinto?", "answer": "¿Me regala otro tinto?", "accept": [], "why": "*otro* already means another, so no *un*." },
+    { "prompt": "Choose *otro* or *otra*: Quiero ___ arepa.", "answer": "Quiero otra arepa.", "accept": [], "why": "*arepa* is a *la* word, so *otra*." },
+    { "prompt": "Say: Again, please.", "answer": "Otra vez, por favor.", "accept": [], "why": "Again = *otra vez*, another time." },
+    { "prompt": "Ask a friend: Do you want another juice?", "answer": "¿Quieres otro jugo?", "accept": [], "why": "*jugo* is an *el* word, so *otro*, and no *un*." },
+    { "prompt": "Say: The other table wants the bill.", "answer": "La otra mesa quiere la cuenta.", "accept": [], "why": "The other one = *la otra*, with *la* in front." },
+    { "prompt": "Make it two more: Don Hernando pide otro tinto.", "answer": "Don Hernando pide otros dos tintos.", "accept": [], "why": "Plural *otros*, and the number comes after it." },
+    { "prompt": "Make it the other one: Quiero otra empanada.", "answer": "Quiero la otra empanada.", "accept": [], "why": "Put *la* in front and another becomes the other." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Me regala un otro tinto?", "right": "¿Me regala otro tinto?", "why": "Almost. *otro* already has the \"an\" inside it, so drop the *un*." },
+    { "wrong": "Quiero otro arepa.", "right": "Quiero otra arepa.", "why": "*arepa* is a *la* word, so it takes *otra*." },
+    { "wrong": "Don Hernando pide dos otros tintos.", "right": "Don Hernando pide otros dos tintos.", "why": "Two more is *otros dos*: the number comes after *otros*." }
+  ],
+  "personal": "Think of something you always want more of. Write it as an order: *¿Me regala otro…?* or *Quiero otra…*."
+}

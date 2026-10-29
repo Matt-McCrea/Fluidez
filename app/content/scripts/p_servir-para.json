@@ -1,0 +1,166 @@
+{
+  "node": "p:servir-para",
+  "hook": {
+    "line": "Tomás finds a strange old tool in Rosa's kitchen drawer and holds it up. Vale laughs at him. Any time you don't know what something does, this is the question.",
+    "es": "¿Para qué sirve esto?",
+    "en": "What's this for?"
+  },
+  "examples": [
+    {
+      "es": "Sirve para abrir botellas.",
+      "en": "It's for opening bottles."
+    },
+    {
+      "es": "La cuchara sirve para comer sopa.",
+      "en": "The spoon is for eating soup."
+    },
+    {
+      "es": "¿Para qué sirven estos platos?",
+      "en": "What are these plates for?"
+    },
+    {
+      "es": "La taza grande sirve para el chocolate.",
+      "en": "The big cup is for the hot chocolate."
+    },
+    {
+      "es": "Este celular no sirve.",
+      "en": "This phone doesn't work."
+    },
+    {
+      "es": "Este cuchillo no sirve para la carne.",
+      "en": "This knife is no good for meat."
+    }
+  ],
+  "rule": "*servir para* tells you what something is for. After *para* comes a basic verb or a thing:\n*Sirve para abrir botellas.* It's for opening bottles.\n*Sirve para el chocolate.* It's for the hot chocolate.\n\nAsk with *¿Para qué sirve?* for one thing and *¿Para qué sirven?* for several.\n\nWith *no* and nothing after it, *no sirve* means it doesn't work: the everyday Colombian way to say something is broken.\n\nCareful: with food, *servir* just means to serve. *Vale sirve el ajiaco* = Vale serves the ajiaco.",
+  "smallPrint": "*servir para* + infinitive expresses what something is used for.",
+  "readAndPick": [
+    {
+      "es": "Sirve para abrir botellas.",
+      "options": [
+        "It's for opening bottles.",
+        "It serves bottles."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Este celular no sirve.",
+      "options": [
+        "This phone is for work.",
+        "This phone doesn't work."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale sirve el ajiaco.",
+      "options": [
+        "Vale serves the ajiaco.",
+        "The ajiaco is for Vale."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El plato grande sirve para el ajiaco.",
+      "options": [
+        "Tomás serves the ajiaco on a big plate.",
+        "The big plate is for the ajiaco."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Para qué sirven estos platos?",
+      "options": [
+        "What is this plate for?",
+        "What are these plates for?",
+        "Who are these plates for?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La cuchara sirve para comer sopa.",
+      "options": [
+        "The spoon serves soup.",
+        "The spoon is for eating soup."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Este cuchillo no sirve para la carne.",
+      "options": [
+        "This knife is no good for meat.",
+        "This knife is for the meat."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Para qué sirve el tenedor?",
+      "options": [
+        "Who is the fork for?",
+        "Where is the fork?",
+        "What's the fork for?"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Ask about one thing: What's this for?",
+      "answer": "¿Para qué sirve esto?",
+      "accept": [],
+      "why": "What for = *¿Para qué?*, at the front, then *sirve*."
+    },
+    {
+      "prompt": "Choose *sirve* or *sirven*: ¿Para qué ___ estos vasos?",
+      "answer": "¿Para qué sirven estos vasos?",
+      "accept": [],
+      "why": "Several glasses, so *sirven*."
+    },
+    {
+      "prompt": "Say: It's for opening bottles.",
+      "answer": "Sirve para abrir botellas.",
+      "accept": [],
+      "why": "After *para*, the verb stays in its basic form: *abrir*."
+    },
+    {
+      "prompt": "Say: The spoon is for eating soup.",
+      "answer": "La cuchara sirve para comer sopa.",
+      "accept": [],
+      "why": "What it's for = *sirve para* + *comer*."
+    },
+    {
+      "prompt": "Say: This phone doesn't work.",
+      "answer": "Este celular no sirve.",
+      "accept": [],
+      "why": "For something broken, Colombians say *no sirve*."
+    },
+    {
+      "prompt": "Make it negative: Esta computadora sirve.",
+      "answer": "Esta computadora no sirve.",
+      "accept": [],
+      "why": "*no* goes right before *sirve*."
+    },
+    {
+      "prompt": "Say: This knife is no good for meat.",
+      "answer": "Este cuchillo no sirve para la carne.",
+      "accept": [],
+      "why": "*no sirve para* = it's no good for."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Sirve para abre botellas.",
+      "right": "Sirve para abrir botellas.",
+      "why": "Almost. After *para*, the verb keeps its basic form: *abrir*."
+    },
+    {
+      "wrong": "¿Qué sirve esto para?",
+      "right": "¿Para qué sirve esto?",
+      "why": "English leaves \"for\" at the end; Spanish puts *para qué* at the front."
+    },
+    {
+      "wrong": "Este celular no trabaja.",
+      "right": "Este celular no sirve.",
+      "why": "*trabajar* is for people. For a phone that doesn't work, Colombians say *no sirve*."
+    }
+  ],
+  "personal": "Pick an object near you and write what it's for: *Mi celular sirve para…*. Then name one thing at home that *no sirve*."
+}
