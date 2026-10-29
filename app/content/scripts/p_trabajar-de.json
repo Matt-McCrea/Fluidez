@@ -1,0 +1,89 @@
+{
+  "node": "p:trabajar-de",
+  "hook": {
+    "line": "Tomás asks the young man answering the job ad what he does. He's studying, but at weekends he works as a waiter. Spanish says that with a tiny *de* and no a.",
+    "es": "Estudio en la universidad y trabajo de mesero los fines de semana.",
+    "en": "I study at university and I work as a waiter at weekends."
+  },
+  "examples": [
+    { "es": "Trabaja de mesero los fines de semana.", "en": "He works as a waiter at weekends." },
+    { "es": "Vale trabajó de mesera en Medellín.", "en": "Vale worked as a waitress in Medellín." },
+    { "es": "Por cuarenta años, don Hernando trabajó de taxista.", "en": "For forty years, Don Hernando worked as a taxi driver." },
+    { "es": "Ahora trabajo de cajero, pero soy ingeniero.", "en": "Right now I work as a cashier, but I'm an engineer." },
+    { "es": "Trabajo en un banco.", "en": "I work at a bank." }
+  ],
+  "rule": "To say what you work as, use *trabajar de* plus the job, with no *un* or *una*: *Trabaja de mesero*. English says as a waiter; Spanish says just *de mesero*.\n\nIt often means for now: *Trabajo de cajero, pero soy ingeniero*. *Soy* is who you are; *trabajo de* is what you're doing.\n\nThe place takes *en*: *Trabajo en un banco*.\n\nOne catch: *trabajo de noche* is I work at night. After *de*, a time says when, a job says what.",
+  "smallPrint": "Grammars list this *de* as marking a temporary role. You'll also hear *trabaja como mesero*, with *como* and still no article.",
+  "readAndPick": [
+    { "es": "Trabaja de mesero.", "options": ["He works as a waiter.", "He works at a waiter's."], "answer": 0 },
+    { "es": "Trabaja en un restaurante.", "options": ["He works as a restaurant owner.", "He works at a restaurant."], "answer": 1 },
+    { "es": "Trabajo de noche.", "options": ["I work as a night guard.", "I work at night."], "answer": 1 },
+    { "es": "Trabajo de taxista.", "options": ["I work as a taxi driver.", "I work for a taxi driver."], "answer": 0 },
+    { "es": "Trabajo en una tienda.", "options": ["I work as a shopkeeper.", "I work in a shop."], "answer": 1 },
+    { "es": "Ahora trabajo de cajero, pero soy ingeniero.", "options": ["I'm an engineer, working as a cashier for now.", "I'm a cashier, working as an engineer for now."], "answer": 0 },
+    { "es": "Trabaja de profesor en un colegio.", "options": ["He works as a teacher at a school.", "He works at a teacher's school."], "answer": 0 },
+    { "es": "Trabajamos de meseros en diciembre.", "options": ["We work at a waiters' bar in December.", "We work as waiters in December.", "We worked with waiters in December."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de* or *en* and type the whole sentence: Trabajo ___ mesero los fines de semana.",
+      "answer": "Trabajo de mesero los fines de semana.",
+      "accept": [],
+      "why": "A job you work as takes *de*."
+    },
+    {
+      "prompt": "Choose *de* or *en* and type the whole sentence: Trabajo ___ un banco.",
+      "answer": "Trabajo en un banco.",
+      "accept": [],
+      "why": "A bank is a place, so it takes *en*."
+    },
+    {
+      "prompt": "Say: He works as a waiter at weekends.",
+      "answer": "Trabaja de mesero los fines de semana.",
+      "accept": [],
+      "why": "As a waiter is just *de mesero*, no *un*."
+    },
+    {
+      "prompt": "A woman speaking: I worked as a waitress in Medellín.",
+      "answer": "Trabajé de mesera en Medellín.",
+      "accept": [],
+      "why": "*De* plus the job, and a woman says *mesera*."
+    },
+    {
+      "prompt": "Ask a friend (a man): Do you work as a cashier?",
+      "answer": "¿Trabajas de cajero?",
+      "accept": [],
+      "why": "*Trabajas* for a friend, then *de* and the job with no article."
+    },
+    {
+      "prompt": "Put it in the past: *Trabajo de taxista.*",
+      "answer": "Trabajé de taxista.",
+      "accept": [],
+      "why": "Only the verb changes; *de taxista* stays the same."
+    },
+    {
+      "prompt": "*Soy cajero* sounds like your career. Say it's just the job you're doing for now.",
+      "answer": "Ahora trabajo de cajero.",
+      "accept": ["Trabajo de cajero."],
+      "why": "*Trabajo de* is the job you do, not who you are."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Trabaja como un mesero.",
+      "right": "Trabaja de mesero.",
+      "why": "Almost. *Como un mesero* sounds like he works the way a waiter does; for the job, use *de* with no article."
+    },
+    {
+      "wrong": "Trabajo de un mesero.",
+      "right": "Trabajo de mesero.",
+      "why": "No *un* or *una* after *de*: the job stands alone."
+    },
+    {
+      "wrong": "Trabajo de un banco.",
+      "right": "Trabajo en un banco.",
+      "why": "*De* is for the job; for the place you work, use *en*."
+    }
+  ],
+  "personal": "Say what you work as now, or what you worked as when you were younger, and where: *Trabajo de… en…* or *Trabajé de… en…*"
+}

@@ -1,0 +1,97 @@
+{
+  "node": "g:relatives-donde-lo-que",
+  "hook": {
+    "line": "It's the new waiter's first morning, and Tomás is showing him round. Some things you can't point at; you have to say them: the place where, the thing that. Spanish has a small word for each.",
+    "es": "Este es el café donde trabajó mi abuela.",
+    "en": "This is the café where my grandmother worked."
+  },
+  "examples": [
+    { "es": "Es el lugar donde trabajé.", "en": "It's the place where I worked." },
+    { "es": "Lo que necesito es tiempo.", "en": "What I need is time." },
+    { "es": "No entiendo lo que dices.", "en": "I don't understand what you're saying. (to a friend)" },
+    { "es": "El barrio donde vive Vale es bonito.", "en": "The neighbourhood where Vale lives is nice." },
+    { "es": "¿Te gustó lo que hizo Vale?", "en": "Did you like what Vale made? (to a friend)" },
+    { "es": "Mariana, quien es periodista, vive en Chapinero.", "en": "Mariana, who is a journalist, lives in Chapinero." },
+    { "es": "Fue Vale quien hizo el pan.", "en": "It was Vale who made the bread." }
+  ],
+  "rule": "Three small words hang extra detail on a sentence.\n*donde*: where, after a place. *el café donde trabajo*, the café where I work.\n*lo que*: what, when it means the thing that. *Lo que necesito es tiempo.*\n*quien*: who, for people, after a comma or after a little word like *con*: *Mariana, quien es periodista*; *la persona con quien hablé*.\n\nThe trap is English what. In a question it's *qué*: *¿Qué necesitas?* In a statement, where it means the thing that, it's *lo que*: *No entiendo lo que dices.*\n\nWhere works the same way: the question *¿Dónde?* has an accent, the linking *donde* has none.\n\nEnglish can end on a little word: the person I spoke with. Spanish moves it to the front: *con quien hablé*.\n\nFor plain who right after a person, stay with *que*: *la persona que trabaja aquí*.",
+  "smallPrint": "Teachers call these relatives: *donde* is a relative adverb, *lo que* a neuter relative, *quien* the relative pronoun for people.",
+  "readAndPick": [
+    { "es": "Es el café donde trabajé.", "options": ["It's the café where I worked.", "It's the café where she worked."], "answer": 0 },
+    { "es": "¿Dónde trabajaste?", "options": ["The place where you worked.", "Where did you work?"], "answer": 1 },
+    { "es": "Lo que necesito es plata.", "options": ["What do I need? Money.", "What I need is money."], "answer": 1 },
+    { "es": "¿Qué necesitas?", "options": ["What do you need?", "What you need."], "answer": 0 },
+    { "es": "Lo que dijo Hernando es verdad.", "options": ["What Hernando said is true.", "What I said to Hernando is true."], "answer": 0 },
+    { "es": "El barrio donde vivo es tranquilo.", "options": ["The neighbourhood where they live is quiet.", "The neighbourhood where I live is quiet."], "answer": 1 },
+    { "es": "No entiendo lo que dices.", "options": ["I don't understand what you're saying.", "I don't understand what I'm saying.", "I don't understand. What are you saying?"], "answer": 0 },
+    { "es": "La ciudad donde nací es pequeña.", "options": ["The city where you were born is small.", "The city where she was born is small.", "The city where I was born is small."], "answer": 2 },
+    { "es": "Fue Vale quien hizo el pan.", "options": ["Was it Vale who made the bread?", "It was Vale who made the bread."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *donde* or *dónde* and type the whole sentence: Es el lugar ___ trabajé.",
+      "answer": "Es el lugar donde trabajé.",
+      "accept": [],
+      "why": "It's not a question, so no accent."
+    },
+    {
+      "prompt": "Choose *lo que* or *qué* and type the whole sentence: ___ necesito es tiempo.",
+      "answer": "Lo que necesito es tiempo.",
+      "accept": [],
+      "why": "It means the thing that, not a question, so *lo que*."
+    },
+    {
+      "prompt": "Choose *que* or *quien* and type the whole sentence: Es la persona ___ trabaja aquí.",
+      "answer": "Es la persona que trabaja aquí.",
+      "accept": [],
+      "why": "Right after a person with no comma or *con* in between, who is plain *que*."
+    },
+    {
+      "prompt": "Say: This is the café where my grandmother worked.",
+      "answer": "Este es el café donde trabajó mi abuela.",
+      "accept": ["Este es el café donde mi abuela trabajó."],
+      "why": "After a place, where is *donde*, with no accent."
+    },
+    {
+      "prompt": "Tell a friend: I don't understand what you're saying.",
+      "answer": "No entiendo lo que dices.",
+      "accept": [],
+      "why": "What here means the thing that, so it's *lo que*."
+    },
+    {
+      "prompt": "Join them into one sentence: *Vivo en un barrio. El barrio es tranquilo.*",
+      "answer": "El barrio donde vivo es tranquilo.",
+      "accept": [],
+      "why": "*donde* hooks where I live onto *el barrio*."
+    },
+    {
+      "prompt": "Someone asks *¿Qué dijo Hernando?* Answer: What Hernando said is true.",
+      "answer": "Lo que dijo Hernando es verdad.",
+      "accept": ["Lo que Hernando dijo es verdad."],
+      "why": "The question uses *qué*; the statement uses *lo que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Qué necesito es tiempo.",
+      "right": "Lo que necesito es tiempo.",
+      "why": "Almost. *Qué* asks; when what means the thing that, Spanish says *lo que*."
+    },
+    {
+      "wrong": "Es el lugar dónde trabajé.",
+      "right": "Es el lugar donde trabajé.",
+      "why": "The accent is only for the question *¿Dónde?*"
+    },
+    {
+      "wrong": "Es la persona quien trabaja aquí.",
+      "right": "Es la persona que trabaja aquí.",
+      "why": "Right after a person, plain who is *que*; *quien* needs a comma or a word like *con* before it."
+    },
+    {
+      "wrong": "No entiendo qué tú dices.",
+      "right": "No entiendo lo que dices.",
+      "why": "For the thing you're saying, use *lo que*, and the verb ending already says you."
+    }
+  ],
+  "personal": "Name a place that matters to you and what happened there: *Es la ciudad donde…* Then say what you need this week: *Lo que necesito es…*"
+}
