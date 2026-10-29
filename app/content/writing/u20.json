@@ -1,0 +1,849 @@
+[
+  {
+    "id": "w-u20-01",
+    "unit": "u20",
+    "prompt": "Simón the parrot is missing from the café. Text Mariana: say you don't know where he is, guess where he might be, and ask what she thinks.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "futuro",
+        "person": "él/ella",
+        "label": "guess with the future: estará"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "Simón"
+      }
+    ],
+    "model": "Hola, Mariana. Simón no está en el café y no sé dónde está. Estará con Don Hernando, porque a él le gusta mucho el parque. Supongo que volverá pronto. ¿Tú qué crees?",
+    "focus": "g:future-conjecture",
+    "requires": [
+      "c:donde-esta",
+      "c:hola-buenos-dias",
+      "c:no-se",
+      "c:porque",
+      "c:supongo-que",
+      "g:cause-result",
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:gustar-full",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:questions",
+      "g:yo-irregular",
+      "l:café",
+      "l:creer",
+      "l:dónde",
+      "l:estar",
+      "l:gustar",
+      "l:parque",
+      "l:pronto",
+      "l:qué",
+      "l:saber",
+      "l:suponer",
+      "l:volver",
+      "p:quantifiers-basic",
+      "p:que-opinas-de",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u20-02",
+    "unit": "u20",
+    "prompt": "A friend from Toronto is visiting Bogotá this weekend. Text what the forecast says: what the weather will be like tomorrow and on Sunday, and what to bring.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "llover",
+        "tense": "futuro",
+        "person": "él/ella",
+        "label": "say it will rain with lloverá"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "futuro"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "nublado",
+          "soleado",
+          "viento",
+          "frío",
+          "calor"
+        ],
+        "label": "describe the weather"
+      }
+    ],
+    "model": "Hola. El pronóstico dice que mañana estará nublado y lloverá por la tarde. El domingo hará sol, pero habrá mucho viento. Lleva una chaqueta, por favor,, y también un buen sombrero.",
+    "focus": "g:future-promises",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:por-favor",
+      "g:commands-tu",
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:buen",
+      "l:chaqueta",
+      "l:decir",
+      "l:domingo",
+      "l:estar",
+      "l:favor",
+      "l:hacer",
+      "l:llevar",
+      "l:llover",
+      "l:mañana",
+      "l:nublado",
+      "l:pronóstico",
+      "l:sol",
+      "l:sombrero",
+      "l:tarde",
+      "l:viento",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:days-el-lunes",
+      "p:es-tiene-lleva",
+      "p:hace-frio",
+      "p:por-la-manana",
+      "p:quantifiers-basic",
+      "p:request-ladder"
+    ]
+  },
+  {
+    "id": "w-u20-03",
+    "unit": "u20",
+    "prompt": "You are late again at the café. Send Vale a message with a promise: tomorrow you will arrive early and open the door.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bte (lo )?prometo\\b",
+        "label": "promise with te prometo or te lo prometo"
+      },
+      {
+        "type": "verbForm",
+        "inf": "llegar",
+        "tense": "futuro",
+        "person": "yo",
+        "label": "use the future: llegaré"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, perdón por llegar tarde hoy. Te lo prometo: mañana llegaré temprano. Abriré la puerta a las siete y prepararé el café antes de las ocho.",
+    "focus": "c:te-lo-prometo",
+    "requires": [
+      "c:te-lo-prometo",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:por-para-1",
+      "l:abrir",
+      "l:antes",
+      "l:café",
+      "l:hoy",
+      "l:llegar",
+      "l:mañana",
+      "l:perdón",
+      "l:preparar",
+      "l:prometer",
+      "l:puerta",
+      "l:tarde",
+      "l:temprano",
+      "p:llegar-a-tiempo",
+      "p:telling-time"
+    ]
+  },
+  {
+    "id": "w-u20-04",
+    "unit": "u20",
+    "prompt": "Don Hernando is worried about Simón. Write his promise to Tomás: he will look for the parrot and find him before the rains come.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "encontrar",
+        "tense": "futuro",
+        "person": "yo",
+        "label": "say what you will find: encontraré"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bprometo\\b",
+        "label": "say prometo"
+      },
+      {
+        "type": "containsWord",
+        "word": "Simón"
+      }
+    ],
+    "model": "Tomás, escúchame. Te prometo que encontraré a Simón. Hoy buscaré en el parque y mañana iré al norte de la ciudad. Lo voy a encontrar antes de las lluvias.",
+    "focus": "g:future-promises",
+    "requires": [
+      "c:voy-a",
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:direct-objects",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-er-ir",
+      "g:that-clauses",
+      "l:antes",
+      "l:buscar",
+      "l:ciudad",
+      "l:encontrar",
+      "l:escuchar",
+      "l:hoy",
+      "l:ir",
+      "l:lluvia",
+      "l:mañana",
+      "l:norte",
+      "l:parque",
+      "l:prometer",
+      "p:ir-a-venir-de-place",
+      "p:me-te-nos-objects",
+      "p:personal-a"
+    ]
+  },
+  {
+    "id": "w-u20-05",
+    "unit": "u20",
+    "prompt": "Your friend Camila (your age) is thinking of signing a paper from Altamira without reading it. Give her advice starting with the phrase for \"if I were you\".",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\byo que t[uú]",
+        "label": "start with yo que tú"
+      },
+      {
+        "type": "verbFormAny",
+        "inf": "firmar",
+        "tense": "condicional"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Camila, yo que tú, no firmaría eso hoy. Primero hablaría con un abogado de confianza. Tú no tienes que decidir ahora, porque tienes tiempo. Y no deberías firmar sin leer todo.",
+    "focus": "c:yo-que-tu",
+    "requires": [
+      "c:porque",
+      "c:tienes",
+      "c:yo-que-tu",
+      "g:cause-result",
+      "g:conditional",
+      "g:gender-articles",
+      "g:prep-infinitive",
+      "g:stem-boot",
+      "g:tener-que-hay-que",
+      "g:verb-infinitive",
+      "l:abogado",
+      "l:ahora",
+      "l:confianza",
+      "l:deber",
+      "l:decidir",
+      "l:firmar",
+      "l:hablar",
+      "l:hoy",
+      "l:leer",
+      "l:tener",
+      "l:tiempo",
+      "p:demonstratives-basic",
+      "p:tendrias-que",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u20-06",
+    "unit": "u20",
+    "prompt": "Write a polite note to a neighbour you call tú. Ask if she could water your plants this weekend, and explain why you need the help.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "poder",
+        "tense": "condicional",
+        "person": "tú",
+        "label": "ask with podrías"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "puedes",
+          "puede usted"
+        ],
+        "label": "podrías, not puedes"
+      }
+    ],
+    "model": "Hola, Lucía. Voy a Medellín este fin de semana. ¿Podrías cuidar mis plantas? Solo necesitan un poco de agua el sábado. Muchas gracias por todo.",
+    "focus": "g:conditional",
+    "requires": [
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "c:voy-a",
+      "g:conditional",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:verb-infinitive",
+      "l:agua",
+      "l:cuidar",
+      "l:fin",
+      "l:ir",
+      "l:necesitar",
+      "l:planta",
+      "l:poder",
+      "l:semana",
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:demonstratives-basic",
+      "p:gracias-por",
+      "p:ir-a-venir-de-place",
+      "p:poco-un-poco",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:request-ladder",
+      "p:sobre-todo-solo",
+      "p:te-importaria",
+      "p:tendrias-que"
+    ]
+  },
+  {
+    "id": "w-u20-07",
+    "unit": "u20",
+    "prompt": "A friend asks what you will do on Saturday. Write that it depends on the weather: if it rains you will stay home, and if it is sunny you will go out.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bsi (llueve|hace sol|está soleado|no llueve)\\b",
+        "label": "use si with the present"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "si lloverá",
+          "si haré",
+          "si iré",
+          "si estará"
+        ],
+        "label": "no future right after si"
+      },
+      {
+        "type": "verbForm",
+        "inf": "ir",
+        "tense": "futuro",
+        "person": "yo",
+        "label": "use the future: iré"
+      }
+    ],
+    "model": "Todavía no sé. Si llueve, me quedaré en casa y leeré un libro. Si hace sol, iré al parque con Mariana. ¿Y tú, qué vas a hacer?",
+    "focus": "x:si-clause-no-future",
+    "requires": [
+      "c:bien-y-tu",
+      "c:no-se",
+      "c:todavia-no",
+      "c:voy-vas",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-er-ir",
+      "g:questions",
+      "g:reflexive-routine",
+      "g:si-present",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:casa",
+      "l:hacer",
+      "l:ir",
+      "l:leer",
+      "l:libro",
+      "l:llover",
+      "l:parque",
+      "l:quedarse",
+      "l:qué",
+      "l:saber",
+      "l:sol",
+      "p:hace-frio",
+      "p:ir-a-venir-de-place"
+    ]
+  },
+  {
+    "id": "w-u20-08",
+    "unit": "u20",
+    "prompt": "Jhon Fredy invites you to his party on Friday, but you are not sure you can come. Reply with a maybe, using a casual phrase for \"maybe\".",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "a lo mejor",
+          "de pronto",
+          "puede ser"
+        ],
+        "label": "use a lo mejor, de pronto or puede ser"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(a lo mejor|de pronto) \\w+",
+        "label": "follow it with a verb"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Gracias por la invitación, Jhon Fredy. A lo mejor llego a las nueve, porque trabajo hasta las ocho. Todavía no sé. Tengo mucho trabajo, pero lo voy a intentar. Mañana te digo.",
+    "focus": "c:a-lo-mejor",
+    "requires": [
+      "c:a-lo-mejor",
+      "c:no-se",
+      "c:porque",
+      "c:tengo",
+      "c:todavia-no",
+      "c:voy-a",
+      "g:cause-result",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:quizas-a-lo-mejor",
+      "g:yo-irregular",
+      "l:decir",
+      "l:intentar",
+      "l:invitación",
+      "l:ir",
+      "l:llegar",
+      "l:mañana",
+      "l:mejor",
+      "l:saber",
+      "l:tener",
+      "l:trabajar",
+      "l:trabajo",
+      "p:gracias-por",
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic",
+      "p:telling-time"
+    ]
+  },
+  {
+    "id": "w-u20-09",
+    "unit": "u20",
+    "prompt": "Your sister has not answered your calls all evening. Write to a friend guessing what time it is there and why she does not answer. Use \"I suppose\".",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bsupongo que\\b",
+        "label": "use supongo que"
+      },
+      {
+        "type": "verbFormAny",
+        "inf": "ser",
+        "tense": "futuro"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mi hermana no contesta el celular. Serán las once allá, y supongo que está en la casa de su amiga. Estará cansada. Supongo que me llama mañana.",
+    "focus": "c:supongo-que",
+    "requires": [
+      "c:supongo-que",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:allá",
+      "l:amiga",
+      "l:cansado",
+      "l:casa",
+      "l:celular",
+      "l:contestar",
+      "l:estar",
+      "l:hermana",
+      "l:llamar",
+      "l:mañana",
+      "l:ser",
+      "l:suponer",
+      "p:aqui-ahi-alla",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:telling-time"
+    ]
+  },
+  {
+    "id": "w-u20-10",
+    "unit": "u20",
+    "prompt": "A tourist asks what to do in Bogotá when it is cold and rainy. Answer a stranger you would call usted: say what the best thing is, and one thing she should do.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\blo mejor es\\b",
+        "label": "use lo mejor es"
+      },
+      {
+        "type": "verbForm",
+        "inf": "deber",
+        "tense": "condicional",
+        "person": "él/ella",
+        "label": "advise with the conditional: usted debería"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tú",
+          "debes",
+          "deberías",
+          "puedes",
+          "tienes"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Señora, lo mejor es visitar un museo cuando llueve. Usted debería ir al Museo del Oro, porque queda cerca. También debería probar un buen chocolate en La Candelaria.",
+    "focus": "c:lo-mejor-es",
+    "requires": [
+      "c:lo-mejor-es",
+      "c:porque",
+      "g:cause-result",
+      "g:conditional",
+      "g:gender-articles",
+      "g:lo-adjective",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:tener-que-hay-que",
+      "l:buen",
+      "l:cerca",
+      "l:chocolate",
+      "l:deber",
+      "l:ir",
+      "l:llover",
+      "l:mejor",
+      "l:museo",
+      "l:probarse",
+      "l:quedar",
+      "l:ser",
+      "l:señora",
+      "l:visitar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:cerca-de",
+      "p:cuando-basic",
+      "p:ir-a-venir-de-place",
+      "p:tendrias-que"
+    ]
+  },
+  {
+    "id": "w-u20-11",
+    "unit": "u20",
+    "prompt": "Mariana asks about your favourite kind of weather. Answer in a short message: say which season or weather you like and which day of the week you like, with articles.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(me gusta|me gustan|prefiero|odio) (el|la|los|las) \\w+",
+        "label": "use el, la, los or las after me gusta or prefiero"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\blos (lunes|martes|miércoles|jueves|viernes|sábados|domingos)\\b",
+        "label": "say los + a weekday, like los domingos"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Me gusta el invierno cuando está nublado. Prefiero los días con poco viento. Los domingos me quedo en casa, tomo un café y leo un libro.",
+    "focus": "g:article-uses",
+    "requires": [
+      "c:me-gusta",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:café",
+      "l:casa",
+      "l:domingo",
+      "l:día",
+      "l:estar",
+      "l:gustar",
+      "l:invierno",
+      "l:leer",
+      "l:libro",
+      "l:nublado",
+      "l:preferir",
+      "l:quedarse",
+      "l:tomar",
+      "l:viento",
+      "p:cuando-basic",
+      "p:days-el-lunes",
+      "p:hace-frio",
+      "p:poco-un-poco",
+      "p:prefieres-x-o-y",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u20-12",
+    "unit": "u20",
+    "prompt": "Your friend Daniela has a hard exam tomorrow. Send her a warm message: tell her everything will be fine and promise to call her afterwards.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\btodo (saldrá|va a salir) bien\\b",
+        "label": "say todo saldrá bien or todo va a salir bien"
+      },
+      {
+        "type": "verbForm",
+        "inf": "llamar",
+        "tense": "futuro",
+        "person": "yo",
+        "label": "promise with the future: te llamaré"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "usted",
+          "puede"
+        ],
+        "label": "tú, not usted"
+      }
+    ],
+    "model": "Daniela, tranquila. Todo saldrá bien, porque estudiaste mucho esta semana. Mañana por la noche te llamaré para saber cómo te fue en el examen. Te lo prometo.",
+    "focus": "c:todo-saldra-bien",
+    "requires": [
+      "c:bien-y-tu",
+      "c:como-te-fue",
+      "c:porque",
+      "c:te-lo-prometo",
+      "c:todo-saldra-bien",
+      "c:tranquilo",
+      "g:cause-result",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:bien",
+      "l:cómo",
+      "l:daniel",
+      "l:estudiar",
+      "l:examen",
+      "l:llamar",
+      "l:mañana",
+      "l:noche",
+      "l:prometer",
+      "l:saber",
+      "l:salir",
+      "l:semana",
+      "l:ser",
+      "l:tranquilo",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:por-la-manana",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
+    ]
+  },
+  {
+    "id": "w-u20-13",
+    "unit": "u20",
+    "prompt": "Write to a small hotel in Santa Marta that you would call usted. Say you would like to book a room, and ask politely if they could tell you the price.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "gustar",
+        "tense": "condicional",
+        "person": "él/ella",
+        "label": "say me gustaría"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tú",
+          "puedes",
+          "dime"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenos días. Me gustaría reservar una habitación para dos personas, del lunes al viernes. ¿Podría decirme el precio de la habitación, por favor? Muchas gracias.",
+    "focus": "g:conditional",
+    "requires": [
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "c:me-gustaria",
+      "c:por-favor",
+      "g:conditional",
+      "g:gender-articles",
+      "g:object-pronoun-position",
+      "g:verb-infinitive",
+      "l:bueno",
+      "l:decir",
+      "l:día",
+      "l:favor",
+      "l:gustar",
+      "l:habitación",
+      "l:lunes",
+      "l:persona",
+      "l:poder",
+      "l:precio",
+      "l:reservar",
+      "l:viernes",
+      "p:me-te-nos-objects",
+      "p:para-inf",
+      "p:request-ladder",
+      "p:te-importaria"
+    ]
+  },
+  {
+    "id": "w-u20-14",
+    "unit": "u20",
+    "prompt": "Write to Vale before a rainy week. Predict how the café will do: will many people come, what will they order, and say it won't be easy.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "futuro"
+      },
+      {
+        "type": "negation"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bno ser[aá] f[aá]cil\\b",
+        "label": "say no será fácil"
+      }
+    ],
+    "model": "Vale, creo que esta semana lloverá todos los días. Vendrá menos gente, pero pedirán más café y más chocolate. No será fácil, pero venderemos bastante.",
+    "focus": "g:future-promises",
+    "requires": [
+      "c:creo-que",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:quantifiers",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:café",
+      "l:chocolate",
+      "l:creer",
+      "l:día",
+      "l:fácil",
+      "l:gente",
+      "l:llover",
+      "l:pedir",
+      "l:semana",
+      "l:ser",
+      "l:vender",
+      "l:venir",
+      "p:demonstratives-basic",
+      "p:la-gente-singular",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ]
+  },
+  {
+    "id": "w-u20-15",
+    "unit": "u20",
+    "prompt": "Don Hernando is tired but keeps working on a rainy day. Write him a short note you would address as usted: say what you think he should do, and offer a promise to help.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "deber",
+        "tense": "condicional",
+        "person": "él/ella",
+        "label": "advise with usted debería"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tú",
+          "debes",
+          "deberías",
+          "puedes",
+          "tienes"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(prometo|ayudaré|ayudo)\\b",
+        "label": "promise to help"
+      }
+    ],
+    "model": "Don Hernando, usted debería descansar hoy. Le prometo que yo cerraré el café y ayudaré a Vale con todo. Mañana yo mismo llevaré su tinto a la mesa.",
+    "focus": "g:conditional",
+    "requires": [
+      "g:conditional",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "g:that-clauses",
+      "l:ayudar",
+      "l:café",
+      "l:cerrar",
+      "l:deber",
+      "l:descansar",
+      "l:hoy",
+      "l:llevar",
+      "l:mañana",
+      "l:mesa",
+      "l:prometer",
+      "l:tinto",
+      "p:don-dona-nombre",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:senor-don-article",
+      "p:tendrias-que"
+    ]
+  }
+]
