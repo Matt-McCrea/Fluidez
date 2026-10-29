@@ -37,8 +37,14 @@ function Continue({ onClick, label, focus = true }: { onClick: () => void; label
   return <button ref={ref} class="btn primary" data-primary onClick={onClick}>{label ?? 'Continue'}</button>;
 }
 
+/** What an MCQ reports and says once answered; `picked` is an option index, or 'unsure' for "I don't know". */
+export function mcqResult(card: Extract<Card, { type: 'mcq' }>, picked: number | 'unsure', ms: number): { outcome: Outcome; right: boolean; lead: string } {
+  const right = picked === card.answer;
+  return { outcome: { correct: right, tries: 1, ms }, right, lead: picked === 'unsure' ? 'No problem.' : 'Not quite.' };
+}
+
 function McqView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extract<Card, { type: 'mcq' }>; ms: () => number }) {
-  const [picked, setPicked] = useState<number | null>(null);
+  const [picked, setPicked] = useState<number | 'unsure' | null>(null);
   const [took, setTook] = useState(0);
   const done = picked !== null;
   const right = picked === card.answer;
@@ -62,15 +68,20 @@ function McqView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extrac
           );
         })}
       </div>
+      {done ? null : (
+        <div class="actions">
+          <button class="btn quiet" data-unsure onClick={() => { setTook(ms()); setPicked('unsure'); }}>{"I don't know"}</button>
+        </div>
+      )}
       <div class="feedback" aria-live="polite">
         {done ? (
           right
             ? <p class="ok">Yes. {card.after ? <Txt t={card.after} /> : null}</p>
-            : <><p class="miss">Not quite. It's <Txt t={card.options[card.answer]} />.</p><p class="why"><Rich text={card.why} /></p></>
+            : <><p class="miss">{mcqResult(card, picked, took).lead} It's <Txt t={card.options[card.answer]} />.</p><p class="why"><Rich text={card.why} /></p></>
         ) : null}
       </div>
       <div class="actions">
-        {done ? <Continue label={next} onClick={() => onDone({ correct: right, tries: 1, ms: took })} /> : null}
+        {done ? <Continue label={next} onClick={() => onDone(mcqResult(card, picked, took).outcome)} /> : null}
       </div>
     </section>
   );

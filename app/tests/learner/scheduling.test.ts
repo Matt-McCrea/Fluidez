@@ -272,6 +272,36 @@ describe('implicit sentence credit', () => {
   });
 });
 
+describe('due ordering', () => {
+  test('serves the lowest retrievability first, not the earliest due timestamp', () => {
+    const c = clock();
+    const L = Learner.fresh({ now: c.now });
+    L.introduce('l:a', { results: [true, true, true] });
+    L.introduce('l:b', { results: [true, true, true] });
+    c.set(day(3));
+    L.review('l:a', 'receptive', Rating.Easy);
+    c.set(day(30));
+    L.introduce('l:c', { results: [true, true, true] });
+    const at = day(40);
+    const cards = L.due(at, 'receptive');
+    expect(cards.map((d) => d.node).sort()).toEqual(['l:a', 'l:b', 'l:c']);
+    const byDue = [...cards].sort((x, y) => x.due - y.due).map((d) => d.node);
+    const order = cards.map((d) => d.node);
+    expect(order).not.toEqual(byDue);
+    for (let i = 1; i < cards.length; i++) expect(cards[i - 1].r).toBeLessThanOrEqual(cards[i].r);
+    expect(cards[0].r).toBeCloseTo(L.retrievability(cards[0].node, 'receptive', at)!, 10);
+  });
+
+  test('learning and relearning cards come first with r = 0', () => {
+    const c = clock();
+    const L = introduced(c);
+    c.set(day(10));
+    L.review('l:casa', 'receptive', Rating.Again);
+    const [first] = L.due(Number.MAX_SAFE_INTEGER, 'receptive');
+    expect(first.r).toBe(0);
+  });
+});
+
 describe('reading exposure', () => {
   test('property: expose() never changes any card or the due list', () => {
     for (const seed of SEEDS) {

@@ -4,10 +4,10 @@
 import { describe, expect, test } from 'vitest';
 import type { BankSentence, GraphNode, Unit } from '../../src/content/schema';
 import {
-  budget, buildContentIndex, buildCourse, canDoAnother, compileSession, initialPath, servedRefs,
+  budget, reviewTargets, buildContentIndex, buildCourse, canDoAnother, compileSession, initialPath, servedRefs,
   type CompileInput, type PathState,
 } from '../../src/compiler';
-import { Learner, Rating } from '../../src/learner';
+import { Learner, Rating, State } from '../../src/learner';
 import { PROFILES } from '../../tools/sim/profiles';
 import { syntheticCorpus } from '../../tools/sim/synthetic';
 import { ALL_CHECKS, checkSpacing, corpus, walk } from './helpers';
@@ -79,6 +79,47 @@ describe('budgets by band and tier', () => {
     const w = ext.blocks[0];
     if (w.kind !== 'warmup') throw new Error('warmup first');
     expect(w.carried).toBe(0);
+  });
+});
+
+describe('sibling burying', () => {
+  const warm = (p: ReturnType<typeof compileSession>) => {
+    const w = p.blocks[0];
+    if (w.kind !== 'warmup') throw new Error('warmup first');
+    return w;
+  };
+
+  test('both cards of a node due: productive is served, receptive stays due and is carried', () => {
+    const { L, input, setT } = tiny([sentence('s-a', ['l:a'], ['l:a'])]);
+    L.review('l:a', 'receptive', Rating.Good, { at: T0 + DAY }); // unlocks the production card
+    setT(T0 + 30 * DAY);
+    const both = L.due(T0 + 30 * DAY).filter((d) => d.node === 'l:a');
+    expect(both.map((d) => d.direction).sort()).toEqual(['productive', 'receptive']);
+    const plan = compileSession(input());
+    const w = warm(plan);
+    const a = w.items.filter((it) => reviewTargets(it).includes('l:a'));
+    expect(a).toHaveLength(1);
+    expect(a[0].direction).toBe('productive');
+    expect(w.carried).toBeGreaterThanOrEqual(1);
+    expect(w.carried + w.covered).toBe(w.due);
+    // nothing rescheduled: the receptive card is still due
+    expect(L.due(T0 + 30 * DAY).some((d) => d.node === 'l:a' && d.direction === 'receptive')).toBe(true);
+  });
+
+  test('productive in Learning while receptive is in Review: receptive is kept', () => {
+    const { L, input, setT } = tiny([sentence('s-a', ['l:a'], ['l:a'])]);
+    L.review('l:a', 'receptive', Rating.Good, { at: T0 + DAY }); // unlocks the production card
+    setT(T0 + 30 * DAY);
+    const due = L.due(T0 + 30 * DAY);
+    const r = due.find((d) => d.node === 'l:a' && d.direction === 'receptive')!;
+    const p = due.find((d) => d.node === 'l:a' && d.direction === 'productive')!;
+    const forced = [...due.filter((d) => d.node !== 'l:a'), { ...r, state: State.Review }, { ...p, state: State.Learning }];
+    const real = L.due.bind(L);
+    L.due = (at?: number, dir?: any) => (dir ? real(at, dir) : (at === undefined ? real(at) : forced));
+    const w = warm(compileSession(input()));
+    const a = w.items.filter((it) => reviewTargets(it).includes('l:a'));
+    expect(a).toHaveLength(1);
+    expect(a[0].direction).toBe('receptive');
   });
 });
 

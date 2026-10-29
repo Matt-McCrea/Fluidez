@@ -27,6 +27,10 @@ export function gradeOf(o: Pick<Outcome, 'correct' | 'tries'>): Grade {
   return o.tries <= 1 ? Rating.Good : Rating.Hard;
 }
 
+const tries12 = (t: number): 1 | 2 => (t > 1 ? 2 : 1);
+/** The event-log op for an item: warm-up reviews are 'warmup', everything else its own op. */
+const eventOp = (item: Item): string => (item.op === 'review' ? 'warmup' : item.op);
+
 export interface SceneRun { firstTry: number; turns: number; seconds: number }
 
 /**
@@ -191,10 +195,13 @@ export class SessionRunner {
   }
 
   /** One in-lesson retrieval. Returns true when the learner model says to stop asking. */
-  learningStep(node: NodeId, o: Outcome, credit: NodeId[] = [node], productive?: boolean): boolean {
+  learningStep(node: NodeId, o: Outcome, credit: NodeId[] = [node], productive?: boolean, op = 'learn'): boolean {
     this.present(node, productive);
-    if (!this.learner.isLearning(node)) { this.learner.expose(credit, { at: this.now() }); return true; }
-    const st = this.learner.learningStep(node, o.correct, { at: this.now(), ms: o.ms });
+    if (!this.learner.isLearning(node)) {
+      this.learner.expose(credit, { at: this.now(), event: { op, grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms } });
+      return true;
+    }
+    const st = this.learner.learningStep(node, o.correct, { at: this.now(), ms: o.ms, op, tries: tries12(o.tries) });
     if (st.done) this.learner.completeIntroduction(node, { at: this.now() });
     return st.done;
   }
@@ -210,23 +217,33 @@ export class SessionRunner {
         const dir: Direction = 'direction' in item ? item.direction : 'receptive';
         // a review item may target several due nodes in one sentence; the learner answered once
         const targets = (item.op === 'review' ? reviewTargets(item) : [item.node]).filter((t) => this.learner.hasCard(t, dir));
-        if (!targets.length) { this.learner.expose(item.credit, { at }); return; }
         const grade = gradeOf(o);
         const sentence = 'sentence' in item ? item.sentence : undefined;
+        const op = eventOp(item);
+        const tries = tries12(o.tries);
+        if (!targets.length) {
+          this.learner.expose(item.credit, { at, event: { op, direction: dir, grade, tries, ms: o.ms, sentence, novel: item.op === 'review' ? item.novel : undefined } });
+          return;
+        }
         if (sentence) {
           const novel = item.op === 'review' ? item.novel : true;
           const grades = Object.fromEntries(targets.map((t) => [t, grade]));
-          this.learner.creditSentence(item.credit, dir, grade, { targets, grades, novel, at, ms: o.ms });
+          this.learner.creditSentence(item.credit, dir, grade, { targets, grades, novel, at, ms: o.ms, op, tries, sentence });
         } else {
-          targets.forEach((t, i) => this.learner.review(t, dir, grade, { at, ms: i === 0 ? o.ms : undefined }));
+          targets.forEach((t, i) => this.learner.review(t, dir, grade, { at, ms: i === 0 ? o.ms : undefined, op, tries }));
         }
         return;
       }
       case 'learning':
-        this.learningStep(item.node, o, item.credit, item.op === 'learn' ? item.productive : undefined);
+        this.learningStep(item.node, o, item.credit, item.op === 'learn' ? item.productive : undefined, eventOp(item));
         return;
       case 'exposure':
-        this.learner.expose(item.credit, { at });
+        this.learner.expose(item.credit, {
+          at, event: {
+            op: eventOp(item), direction: 'direction' in item ? item.direction : 'receptive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms,
+            sentence: 'sentence' in item ? item.sentence : undefined,
+          },
+        });
         return;
       case 'none':
         return;

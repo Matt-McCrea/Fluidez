@@ -1,4 +1,5 @@
 export * from './learner';
+export * from './events';
 export * from './ledger';
 export * from './state';
 export * from './store';

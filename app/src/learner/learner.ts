@@ -7,6 +7,7 @@
 // coalesced save to the LearnerStore; `flush()` awaits the pending save.
 import type { Card, FSRS } from 'ts-fsrs';
 import type { NodeId } from '../content/schema';
+import { compact, emptyLog, type EventLog, type ReviewEvent } from './events';
 import { Ledger } from './ledger';
 import { fromCard, makeScheduler, newCard, Rating, State, toCard, type Grade } from './scheduler';
 import {
@@ -77,7 +78,23 @@ export interface ReviewOptions {
   at?: number;
   ms?: number;          // measured time to answer
   novel?: boolean;      // a recombination: the learner had never seen this sentence
+  op?: string;          // event log: what produced the outcome (default 'other')
+  tries?: number;       // event log: attempts used (clamped to 1 or 2)
+  sentence?: string;    // event log: bank sentence id
 }
+
+/** Describes an answered item whose credit is exposure only (see Learner.expose). */
+export interface ExposureEvent {
+  op: string;
+  direction?: Direction;
+  grade?: Grade;
+  tries?: number;
+  ms?: number;
+  sentence?: string;
+  novel?: boolean;
+}
+
+const triesOf = (t?: number): 1 | 2 => (t !== undefined && t > 1 ? 2 : 1);
 
 export interface SentenceCreditOptions extends ReviewOptions {
   /** the single target (default: the first id) */
@@ -100,7 +117,7 @@ export interface ReviewResult {
 
 export interface PartialResult { node: NodeId; before: number; after: number }
 
-export interface DueCard { node: NodeId; direction: Direction; due: number; state: State; stability: number }
+export interface DueCard { node: NodeId; direction: Direction; due: number; state: State; stability: number; r: number }
 
 export interface StepResult { steps: number; correct: number; done: boolean }
 
@@ -122,6 +139,8 @@ export class Learner {
   private dirty = false;
   private saveQueued = false;
   readonly ledger: Ledger;
+  private log: EventLog = emptyLog();
+  private eventsDirty = false;
 
   private constructor(state: LearnerState, private readonly store: LearnerStore | null, opts: LearnerOptions) {
     this.state = state;
@@ -136,6 +155,11 @@ export class Learner {
     const raw = await store.load();
     const state = raw === undefined ? emptyState((opts.now ?? Date.now)()) : migrate(raw);
     const l = new Learner(state, store, opts);
+    const rawLog = await store.loadEvents?.();
+    if (rawLog && typeof rawLog === 'object' && Array.isArray((rawLog as any).events)) {
+      const lg = rawLog as EventLog;
+      l.log = compact({ events: lg.events, summary: lg.summary ?? { upTo: 0, counts: {} } }, 365, l.now());
+    }
     if (raw === undefined || (raw as any).version !== state.version) { l.touch(); await l.flush(); }
     return l;
   }
@@ -163,7 +187,23 @@ export class Learner {
       if (!this.dirty) return;
       this.dirty = false;
       await this.store!.save(structuredClone(this.state));
+      if (this.eventsDirty && this.store!.saveEvents) {
+        this.eventsDirty = false;
+        await this.store!.saveEvents(structuredClone(this.log));
+      }
     });
+  }
+
+  /** The review event log, oldest first (a copy). */
+  events(): ReviewEvent[] { return structuredClone(this.log.events); }
+  /** The counts of events compacted away. */
+  eventSummary(): EventLog['summary'] { return structuredClone(this.log.summary); }
+
+  private record(e: Omit<ReviewEvent, 'session' | 'novel' | 'tries'> & { novel?: boolean; tries?: number }): void {
+    const { tries, novel, ...rest } = e;
+    this.log.events.push({ ...rest, tries: triesOf(tries), novel: !!novel, session: this.state.session.index });
+    this.eventsDirty = true;
+    this.dirty = true;
   }
 
   /** Resolves once everything mutated so far has been written. */
@@ -258,10 +298,15 @@ export class Learner {
   }
 
   /** Record one within-session retrieval. `done` says the session can stop asking. */
-  learningStep(id: NodeId, correct: boolean, opts: { at?: number; ms?: number } = {}): StepResult {
+  learningStep(id: NodeId, correct: boolean, opts: { at?: number; ms?: number; op?: string; tries?: number; sentence?: string; novel?: boolean } = {}): StepResult {
     const r = this.rec(id);
     if (!r.learning) throw new Error(`node ${id} is not in in-lesson learning`);
-    r.learning.steps.push({ at: opts.at ?? this.now(), correct, ...(opts.ms !== undefined ? { ms: opts.ms } : {}) });
+    const at = opts.at ?? this.now();
+    r.learning.steps.push({ at, correct, ...(opts.ms !== undefined ? { ms: opts.ms } : {}) });
+    this.record({
+      at, node: id, dir: 'receptive', grade: correct ? Rating.Good : Rating.Again, op: opts.op ?? 'learn', scored: 'intro',
+      tries: opts.tries, novel: opts.novel, ...(opts.ms !== undefined ? { ms: opts.ms } : {}), ...(opts.sentence ? { sentence: opts.sentence } : {}),
+    });
     if (opts.ms !== undefined) this.recordTime('receptive', opts.ms);
     this.touch();
     return this.stepStatus(r);
@@ -305,6 +350,12 @@ export class Learner {
     if (!card) throw new Error(`no ${direction} card for ${id}${direction === 'productive' ? ' (still locked)' : ''}`);
     const at = opts.at ?? this.now();
     const maint = this.isMaintenanceCard(r, direction);
+    const ret = this.retrievability(id, direction, at);
+    this.record({
+      at, node: id, dir: direction, grade, op: opts.op ?? 'other', scored: 'review', tries: opts.tries, novel: opts.novel,
+      ...(opts.ms !== undefined ? { ms: opts.ms } : {}), ...(opts.sentence ? { sentence: opts.sentence } : {}),
+      ...(ret !== undefined ? { r: ret } : {}),
+    });
     const next = this.capInterval((maint ? this.maintenanceScheduler : this.scheduler).next(toCard(card), new Date(at), grade).card, this.maxInterval(r, direction));
     r[direction] = fromCard(next, { baseStability: next.stability, partials: card.partials, suspended: card.suspended });
     if (opts.ms !== undefined) this.recordTime(direction, opts.ms);
@@ -365,8 +416,12 @@ export class Learner {
     return out;
   }
 
-  /** Reading / context exposure: counts only, never a scored review, never moves a card. */
-  expose(nodeIds: Iterable<NodeId>, opts: { at?: number } = {}): void {
+  /**
+   * Reading / context exposure: counts only, never a scored review, never moves
+   * a card. Pass `event` when the exposure came from an answered item (not from
+   * reading) and an 'exposure' event is logged per introduced node.
+   */
+  expose(nodeIds: Iterable<NodeId>, opts: { at?: number; event?: ExposureEvent } = {}): void {
     const at = opts.at ?? this.now();
     let changed = false;
     for (const id of new Set(nodeIds)) {
@@ -375,22 +430,36 @@ export class Learner {
       r.exposures += 1;
       r.lastExposedAt = at;
       changed = true;
+      const ev = opts.event;
+      if (ev) {
+        this.record({
+          at, node: id, dir: ev.direction ?? 'receptive', grade: ev.grade ?? Rating.Good, op: ev.op, scored: 'exposure',
+          tries: ev.tries, novel: ev.novel, ...(ev.ms !== undefined ? { ms: ev.ms } : {}), ...(ev.sentence ? { sentence: ev.sentence } : {}),
+        });
+      }
     }
     if (changed) this.touch();
   }
 
   // ---------------------------------------------------------------- queries
 
-  /** Cards due at `at` (default now), most overdue first. */
+  /**
+   * Cards due at `at` (default now), most at risk first: lowest retrievability
+   * (probability of recall) ascending, then earliest due, then node id.
+   * Learning and Relearning cards count as r = 0.
+   */
   due(at = this.now(), direction?: Direction): DueCard[] {
     const out: DueCard[] = [];
     for (const r of Object.values(this.state.nodes)) {
       for (const d of direction ? [direction] : DIRECTIONS) {
         const c = r[d];
-        if (c && !c.suspended && c.due <= at) out.push({ node: r.id, direction: d, due: c.due, state: c.state as State, stability: c.stability });
+        if (!c || c.suspended || c.due > at) continue;
+        const learning = c.state === State.Learning || c.state === State.Relearning;
+        const rec = learning || !(c.stability > 0) ? 0 : this.scheduler.get_retrievability(toCard(c), new Date(at), false);
+        out.push({ node: r.id, direction: d, due: c.due, state: c.state as State, stability: c.stability, r: rec });
       }
     }
-    return out.sort((a, b) => a.due - b.due);
+    return out.sort((a, b) => a.r - b.r || a.due - b.due || (a.node < b.node ? -1 : a.node > b.node ? 1 : a.direction < b.direction ? -1 : a.direction > b.direction ? 1 : 0));
   }
 
   /** Probability of recall now, per FSRS. undefined if there is no card. */

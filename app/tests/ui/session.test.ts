@@ -218,3 +218,16 @@ describe('session flow on the fixture unit', () => {
     }
   });
 });
+
+describe('I don\'t know on multiple choice', () => {
+  const card = { type: 'mcq' as const, key: 'k', ask: 'Pick one', why: 'Because.', answer: 1, options: [{ text: 'a', lang: 'en' as const }, { text: 'b', lang: 'en' as const }] };
+  it('reports a miss with one try and gently names the answer', async () => {
+    const { mcqResult } = await import('../../src/ui/components/card');
+    const r = mcqResult(card, 'unsure', 1234);
+    expect(r.outcome).toEqual({ correct: false, tries: 1, ms: 1234 });
+    expect(r.right).toBe(false);
+    expect(r.lead).toBe('No problem.');
+    expect(mcqResult(card, 0, 5).lead).toBe('Not quite.');
+    expect(mcqResult(card, 1, 5).outcome.correct).toBe(true);
+  });
+});

@@ -123,7 +123,7 @@ export function checkNoRepeats({ plan, input }: Seen) {
  * throttled → at least the budget's worth (in single-review units; a
  * multi-target item costs MULTI_REVIEW_COST and covers ≥ 2 due cards).
  */
-export function checkReviews({ plan }: Seen) {
+export function checkReviews({ plan, input }: Seen) {
   const w = plan.blocks[0];
   if (w.kind !== 'warmup') throw new Error('no warmup');
   const fit = Math.floor((w.budgetMinutes * 60) / plan.budget.secondsPerReview);
@@ -131,8 +131,11 @@ export function checkReviews({ plan }: Seen) {
   for (const it of w.items) expect(it.targets).toBeDefined();
   const covered = w.items.reduce((a, it) => a + reviewTargets(it).length, 0);
   expect(w.covered).toBe(covered);
-  expect(covered).toBeGreaterThanOrEqual(Math.min(plan.budget.due, fit));
-  if (!plan.budget.throttled) expect(w.carried).toBe(0);
+  // a node with both cards due is reviewed in one direction; the sibling is buried (still due, carried)
+  const dueCards = input.learner.due(input.now);
+  const buried = dueCards.length - new Set(dueCards.map((d) => d.node)).size;
+  expect(covered).toBeGreaterThanOrEqual(Math.min(plan.budget.due - buried, fit));
+  if (!plan.budget.throttled) expect(w.carried).toBe(buried);
   expect(w.carried + covered).toBe(plan.budget.due);
 }
 
@@ -206,7 +209,29 @@ export function checkThrottle({ plan }: Seen) {
   if (plan.mode === 'another' && plan.converted?.reason !== 'spacing') expect(plan.type).toBe('review');
 }
 
-export const ALL_CHECKS = [checkFrame, checkMinimum, checkBudgets, checkContrasts, checkGate, checkNoRepeats, checkReviews, checkThrottle, checkMultiReviews, checkReviewReuse, checkProductivePolicy];
+/**
+ * Sibling burying: no node is reviewed in both directions in one session,
+ * across the warm-up and every other block that scores a 'review'.
+ */
+export function checkNoSiblings({ plan }: Seen) {
+  const dirs = new Map<NodeId, Set<string>>();
+  const add = (node: NodeId, direction: string) => {
+    const s = dirs.get(node) ?? new Set<string>();
+    s.add(direction);
+    dirs.set(node, s);
+  };
+  for (const b of plan.blocks) {
+    if (!('items' in b)) continue;
+    for (const it of b.items as any[]) {
+      if (it.scoring !== 'review' || !it.direction) continue;
+      if (b.kind === 'warmup') for (const t of reviewTargets(it)) add(t, it.direction);
+      else add(it.node, it.direction);
+    }
+  }
+  for (const [node, s] of dirs) expect(s.size, `${node} reviewed in both directions`).toBe(1);
+}
+
+export const ALL_CHECKS = [checkNoSiblings, checkFrame, checkMinimum, checkBudgets, checkContrasts, checkGate, checkNoRepeats, checkReviews, checkThrottle, checkMultiReviews, checkReviewReuse, checkProductivePolicy];
 
 /** Spacing across a walk: grammar intros never in consecutive core sessions; each drilled within 1–3 core sessions. */
 export function checkSpacing(plans: Seen[]) {

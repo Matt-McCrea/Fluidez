@@ -4,7 +4,7 @@
 // (learner.ts) is the only code that mutates it; LearnerStore persists it.
 import type { NodeId } from '../content/schema';
 
-export const STATE_VERSION = 1;
+export const STATE_VERSION = 2;
 
 export type Direction = 'receptive' | 'productive';
 export const DIRECTIONS: readonly Direction[] = ['receptive', 'productive'];
@@ -117,6 +117,8 @@ export function emptyState(now = Date.now()): LearnerState {
 export const MIGRATIONS: Record<number, (s: any) => any> = {
   // 0 = pre-versioned dev builds: same shape, version field missing.
   0: (s) => ({ ...s, version: 1 }),
+  // 1 -> 2: the review event log lives outside this document; nothing to reshape.
+  1: (s) => ({ ...s, version: 2 }),
 };
 
 export function migrate(raw: unknown): LearnerState {

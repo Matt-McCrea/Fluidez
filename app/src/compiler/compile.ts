@@ -24,7 +24,7 @@
 //    there is no fallback to ungated or seen content
 //  - deterministic: the RNG seed is learner id + session index
 import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schema';
-import { productivePolicy, type Direction, type DueCard, type Tier } from '../learner';
+import { productivePolicy, State, type Direction, type DueCard, type Tier } from '../learner';
 import {
   CHECKPOINT_WARMUP_FACTOR, CHECKPOINT_WINDOW_DAYS, CHUNK_CAP, CONTRAST_CAP, COUNTS, DONE_BAND, DRILL_WITHIN,
   EXTENDED_EXTRA_MINUTES, EXTRA_READING_MAX, LEXEME_CAP, EARLY_NEW_ITEMS_MAX, EARLY_SESSIONS, MINIMUM_WARMUP_MINUTES, MULTI_REVIEW_COST, MULTI_REVIEW_MAX, MULTI_REVIEW_SCAN,
@@ -205,6 +205,8 @@ class Compiler {
   private readonly blocks: Block[] = [];
   private readonly newNodes: SessionPlan['newNodes'] = { grammar: [], patterns: [], chunks: [], lexemes: [], contrasts: [] };
   private readonly warmupKeys = new Set<string>();
+  /** direction in which a non-warm-up block already scores a node as a review */
+  private readonly scoredDirection = new Map<string, Direction>();
   /** minutes the warm-up ran over its budget (throttled sessions) */
   private warmupOverrun = 0;
   private due: DueCard[] = [];
@@ -425,7 +427,30 @@ class Compiler {
   }
 
   /**
-   * Group every due card into review items. For each card (most overdue
+   * Due cards minus buried siblings: a node with both cards due is reviewed in
+   * one direction per session, since the receptive card shows the Spanish the
+   * productive card asks for. Productive wins, unless it is Learning or
+   * Relearning while the receptive card is in Review (then receptive wins).
+   * The buried card is not rescheduled; it stays due for a later session.
+   */
+  private servableDue(): DueCard[] {
+    const byNode = new Map<NodeId, Partial<Record<Direction, DueCard>>>();
+    for (const c of this.due) {
+      const e = byNode.get(c.node) ?? {};
+      e[c.direction] = c;
+      byNode.set(c.node, e);
+    }
+    return this.due.filter((c) => {
+      const e = byNode.get(c.node)!;
+      const p = e.productive, r = e.receptive;
+      if (!p || !r) return true;
+      const keepReceptive = r.state === State.Review && (p.state === State.Learning || p.state === State.Relearning);
+      return c.direction === (keepReceptive ? 'receptive' : 'productive');
+    });
+  }
+
+  /**
+   * Group every servable due card into review items. For each card (most overdue
    * first) not yet covered, look at up to MULTI_REVIEW_SCAN usable sentences
    * containing it — unseen, or a review context reusable after
    * REVIEW_REUSE_DAYS — and take the one that also contains the most other
@@ -435,8 +460,9 @@ class Compiler {
    * then scan order. No usable sentence: a bare card.
    */
   private planReviews(): ReviewGroup[] {
+    const due = this.servableDue();
     const open: Record<Direction, Set<NodeId>> = { receptive: new Set(), productive: new Set() };
-    for (const c of this.due) open[c.direction].add(c.node);
+    for (const c of due) open[c.direction].add(c.node);
     const reserved = new Set<string>();
     const novelMemo = new Map<NodeId, boolean>();
     const needsNovel = (id: NodeId) => {
@@ -445,7 +471,7 @@ class Compiler {
       return v;
     };
     const groups: ReviewGroup[] = [];
-    for (const card of this.due) {
+    for (const card of due) {
       const pool = open[card.direction];
       if (!pool.has(card.node)) continue;
       pool.delete(card.node);
@@ -810,7 +836,11 @@ class Compiler {
 
   /** Scoring for the first item on a node: a real review if the card exists and the warm-up did not already review it. */
   private firstScoring(node: NodeId, direction: 'receptive' | 'productive'): 'review' | 'exposure' {
-    return this.L.hasCard(node, direction) && !this.warmupKeys.has(node) ? 'review' : 'exposure';
+    // a node is scored in one direction per session (the other card is buried)
+    const other = this.scoredDirection.get(node);
+    if (!this.L.hasCard(node, direction) || this.warmupKeys.has(node) || (other && other !== direction)) return 'exposure';
+    this.scoredDirection.set(node, direction);
+    return 'review';
   }
 
   private drill(node: NodeId, day: Unit['days'][number] | undefined, advancing: boolean) {

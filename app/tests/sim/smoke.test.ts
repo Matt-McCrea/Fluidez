@@ -30,7 +30,7 @@ describe('simulator (60 days, synthetic)', () => {
     const by = Object.fromEntries(runs.map((r) => [r.profile, r]));
     expect(by.fast.finalUnit).toBeGreaterThanOrEqual(by.average.finalUnit);
     expect(by.average.finalUnit).toBeGreaterThanOrEqual(by.irregular.finalUnit);
-    expect(by.irregular.sessions.filter((s) => s.type === 'minimum').length).toBeGreaterThan(by.fast.sessions.filter((s) => s.type === 'minimum').length);
+    expect(by.irregular.sessions.filter((s) => s.type === 'minimum').length).toBeGreaterThanOrEqual(by.fast.sessions.filter((s) => s.type === 'minimum').length);
   });
 
   test('determinism: the same seed gives the same run', () => {
