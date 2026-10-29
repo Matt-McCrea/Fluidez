@@ -1,0 +1,98 @@
+{
+  "node": "g:that-clauses",
+  "hook": {
+    "line": "After the break-in, everyone at the café has a theory. To say what you think, know or heard, Spanish joins two ideas with *que*, and it never leaves it out.",
+    "es": "Creo que fue alguien de Altamira.",
+    "en": "I think it was someone from Altamira."
+  },
+  "examples": [
+    { "es": "Creo que tienes razón.", "en": "I think you're right. (to a friend)" },
+    { "es": "Hernando dice que va a llover.", "en": "Hernando says it's going to rain." },
+    { "es": "Sé que es tarde.", "en": "I know it's late." },
+    { "es": "Mariana dijo que viene a las ocho.", "en": "Mariana said she's coming at eight." },
+    { "es": "¿Crees que va a llover?", "en": "Do you think it's going to rain? (to a friend)" },
+    { "es": "Sabía que ibas a decir eso.", "en": "I knew you were going to say that. (to a friend)" },
+    { "es": "Creo que no.", "en": "I don't think so." }
+  ],
+  "rule": "English often hides the joining word: I think you're right, she says she's coming. Spanish always says it: *que*.\n\n*Creo que...* I think...\n*Pienso que...* I think...\n*Sé que...* I know...\n*Dice que...* she says...\n*Dijo que...* she said...\n\nAfter *que* comes a whole ordinary sentence with its own verb: *Creo que está cerrado*.\n\nShort answers work the same way: *Creo que sí*, I think so. *Creo que no*, I don't think so.\n\nOne thing to save for later: *No creo que...* changes the next verb in a way you'll meet further on. For now, keep the first verb positive and put the *no* after *que*: *Creo que no está*.",
+  "smallPrint": "Teachers call the part after *que* a noun clause (*oración subordinada sustantiva*): a whole sentence used as the thing you think, know or say.",
+  "readAndPick": [
+    { "es": "Creo que tienes razón.", "options": ["I think you're right.", "She thinks you're right.", "I knew you were right."], "answer": 0 },
+    { "es": "Dice que viene mañana.", "options": ["I say I'm coming tomorrow.", "She says she's coming tomorrow.", "She said she came yesterday."], "answer": 1 },
+    { "es": "Dijo que viene mañana.", "options": ["She says she's coming tomorrow.", "She said she's coming tomorrow."], "answer": 1 },
+    { "es": "Sé que es tarde.", "options": ["I know it's late.", "I think it's late.", "She knows it's late."], "answer": 0 },
+    { "es": "Sabía que ibas a decir eso.", "options": ["I know you're going to say that.", "You knew I was going to say that.", "I knew you were going to say that."], "answer": 2 },
+    { "es": "¿Crees que va a llover?", "options": ["Do you think it's going to rain?", "I think it's going to rain.", "Do they think it's raining?"], "answer": 0 },
+    { "es": "Creo que no.", "options": ["I think so.", "I don't think so."], "answer": 1 },
+    { "es": "Sabemos que fue alguien de Altamira.", "options": ["They know it was someone from Altamira.", "We think it was someone from Altamira.", "We know it was someone from Altamira."], "answer": 2 },
+    { "es": "Tomás cree que alguien entró.", "options": ["Tomás thinks someone got in.", "I think someone got in.", "Tomás thinks someone is coming in."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ tienes razón.* (*Creo* or *Creo que*) I think you're right.",
+      "answer": "Creo que tienes razón.",
+      "accept": [],
+      "why": "Spanish never drops the *que* that English can leave out."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Mariana ___ que viene a las ocho.* (*dice* or *dijo*) Mariana said she's coming at eight.",
+      "answer": "Mariana dijo que viene a las ocho.",
+      "accept": [],
+      "why": "She said, in the past: *dijo que*."
+    },
+    {
+      "prompt": "I know it's late.",
+      "answer": "Sé que es tarde.",
+      "accept": ["Ya sé que es tarde."],
+      "why": "I know is *sé*, then *que* and the second idea."
+    },
+    {
+      "prompt": "Ask a friend: Do you think it's going to rain?",
+      "answer": "¿Crees que va a llover?",
+      "accept": ["¿Tú crees que va a llover?"],
+      "why": "You think, to a friend, is *crees*, and *que* still joins the two parts."
+    },
+    {
+      "prompt": "Hernando says it's going to rain.",
+      "answer": "Hernando dice que va a llover.",
+      "accept": [],
+      "why": "He says is *dice que*."
+    },
+    {
+      "prompt": "I don't think so.",
+      "answer": "Creo que no.",
+      "accept": [],
+      "why": "The so becomes *que no*, and the first verb stays positive."
+    },
+    {
+      "prompt": "Join them into one sentence: *Creo. Está cerrado.*",
+      "answer": "Creo que está cerrado.",
+      "accept": [],
+      "why": "*Que* is the glue between what you think and the thought."
+    },
+    {
+      "prompt": "Make it about we: *Sé que fue alguien de Altamira.*",
+      "answer": "Sabemos que fue alguien de Altamira.",
+      "accept": ["Nosotros sabemos que fue alguien de Altamira."],
+      "why": "We know is *sabemos*; the part after *que* doesn't change."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Creo tienes razón.",
+      "right": "Creo que tienes razón.",
+      "why": "Almost. English can drop that; Spanish always keeps *que*."
+    },
+    {
+      "wrong": "Creo eso está cerrado.",
+      "right": "Creo que está cerrado.",
+      "why": "The joining that is *que*, not *eso*. *Eso* only points at a thing."
+    },
+    {
+      "wrong": "Creo así.",
+      "right": "Creo que sí.",
+      "why": "I think so is *creo que sí*: the so becomes *que sí*."
+    }
+  ],
+  "personal": "Write two sentences about someone you know: something you know about them (*Sé que...*) and something they always say (*Siempre dice que...*)."
+}

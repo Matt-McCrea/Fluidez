@@ -1,0 +1,91 @@
+{
+  "node": "g:imperfect-progressive",
+  "hook": {
+    "line": "After any surprise, the first question is always the same: what were you doing when it happened? Spanish answers with *estaba* plus the *-ando* form, then drops the event right into it.",
+    "es": "Estaba cerrando el café cuando se fue la luz.",
+    "en": "I was closing the café when the power went out."
+  },
+  "examples": [
+    { "es": "Vale estaba lavando las tazas.", "en": "Vale was washing the cups." },
+    { "es": "Estábamos comiendo cuando llegó Hernando.", "en": "We were eating when Hernando arrived." },
+    { "es": "¿Qué estabas haciendo cuando te llamé?", "en": "What were you doing when I called you? (to a friend)" },
+    { "es": "Estaba durmiendo cuando sonó el celular.", "en": "I was sleeping when the phone rang." },
+    { "es": "Alguien estaba haciendo ruido en la cocina.", "en": "Someone was making noise in the kitchen." },
+    { "es": "No estaba escuchando.", "en": "I wasn't listening." },
+    { "es": "Estaba esperando el bus cuando empezó a llover.", "en": "I was waiting for the bus when it started to rain." }
+  ],
+  "rule": "You already say *estoy hablando* for right now. Put *estar* into the describing past and you get was doing:\n\n*estaba*, *estabas*, *estaba*, *estábamos*, *estaban*\nplus *cerrando*, *comiendo*, *haciendo*.\n\nThe *-ando* or *-iendo* part never changes; only *estaba* shows who.\n\nIt's the perfect frame for an interruption. The long action goes in *estaba ...ando*, the sudden one in the event past, joined by *cuando*: *Estaba durmiendo cuando sonó el celular*.\n\nThe plain describing past can do the same job: *Cerraba el café cuando se fue la luz* is fine too. *Estaba cerrando* just zooms in on the middle of it.\n\nKeep the sudden part out of *estaba*. The phone didn't spend time ringing in your story; it rang: *sonó*.",
+  "smallPrint": "Teachers call this the past progressive: *estar* in the imperfect plus the gerund.",
+  "readAndPick": [
+    { "es": "Estaba cerrando el café.", "options": ["I closed the café.", "I was closing the café.", "I'm closing the café."], "answer": 1 },
+    { "es": "Estoy cerrando el café.", "options": ["I closed the café.", "I was closing the café.", "I'm closing the café."], "answer": 2 },
+    { "es": "Estábamos comiendo.", "options": ["We were eating.", "They were eating.", "We ate."], "answer": 0 },
+    { "es": "¿Qué estabas haciendo?", "options": ["What did you do?", "What were you doing?", "What was she doing?"], "answer": 1 },
+    { "es": "Estaban durmiendo.", "options": ["We were sleeping.", "They slept.", "They were sleeping."], "answer": 2 },
+    { "es": "Estaba cocinando cuando sonó el teléfono.", "options": ["I was cooking when the phone rang.", "I cooked while the phone was ringing."], "answer": 0 },
+    { "es": "Vale estaba lavando las tazas.", "options": ["Vale washed the cups.", "Vale is washing the cups.", "Vale was washing the cups."], "answer": 2 },
+    { "es": "Simón estaba gritando.", "options": ["Simón shouted.", "Simón was shouting."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Estaba ___ cuando sonó el teléfono.* (*cocinando* or *cocinaba*) I was cooking when the phone rang.",
+      "answer": "Estaba cocinando cuando sonó el teléfono.",
+      "accept": [],
+      "why": "After *estaba* comes the *-ando* form, like English -ing."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Estábamos comiendo cuando ___ Hernando.* (*llegó* or *estaba llegando*) We were eating when Hernando arrived.",
+      "answer": "Estábamos comiendo cuando llegó Hernando.",
+      "accept": [],
+      "why": "His arrival is the sudden event: *llegó*."
+    },
+    {
+      "prompt": "Ask a friend: What were you doing when I called you?",
+      "answer": "¿Qué estabas haciendo cuando te llamé?",
+      "accept": [],
+      "why": "What you were in the middle of is *estabas haciendo*; the call is the event, *llamé*."
+    },
+    {
+      "prompt": "Vale was washing the cups.",
+      "answer": "Vale estaba lavando las tazas.",
+      "accept": [],
+      "why": "She was is *estaba*, then *lavando*."
+    },
+    {
+      "prompt": "Someone was making noise in the kitchen.",
+      "answer": "Alguien estaba haciendo ruido en la cocina.",
+      "accept": [],
+      "why": "*Hacer* gives *haciendo*, and *estaba* goes with *alguien*."
+    },
+    {
+      "prompt": "Move it into the past: *Estoy esperando el bus.*",
+      "answer": "Estaba esperando el bus.",
+      "accept": ["Yo estaba esperando el bus."],
+      "why": "Only *estar* moves: *estoy* becomes *estaba*. *Esperando* stays."
+    },
+    {
+      "prompt": "Make it about they: *Estaba durmiendo cuando se fue la luz.*",
+      "answer": "Estaban durmiendo cuando se fue la luz.",
+      "accept": ["Ellos estaban durmiendo cuando se fue la luz."],
+      "why": "They were is *estaban*; the power cut stays the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estaba cocinar cuando sonó el teléfono.",
+      "right": "Estaba cocinando cuando sonó el teléfono.",
+      "why": "Almost. After *estaba*, use the *-ando* form, where English uses -ing."
+    },
+    {
+      "wrong": "Estaba cocinando cuando estaba sonando el teléfono.",
+      "right": "Estaba cocinando cuando sonó el teléfono.",
+      "why": "The interruption is a single moment, so it takes the event past: *sonó*."
+    },
+    {
+      "wrong": "Fui cocinando cuando sonó el teléfono.",
+      "right": "Estaba cocinando cuando sonó el teléfono.",
+      "why": "This was is *estar*, in the describing past: *estaba*."
+    }
+  ],
+  "personal": "Think about yesterday at eight in the evening. Write what you were doing (*Estaba ...ando*) and something that happened while you were doing it."
+}

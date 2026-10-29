@@ -1,0 +1,104 @@
+{
+  "node": "g:pret-vs-imperfect",
+  "hook": {
+    "line": "Every good story has two layers: the scene (late, raining, nobody around) and the things that happen in it. You already know both pasts. Now you get to use them together, and Spanish gives each layer its own one.",
+    "es": "Era tarde y llovía. De repente se fue la luz.",
+    "en": "It was late and it was raining. Suddenly the power went out."
+  },
+  "examples": [
+    { "es": "Era tarde y llovía.", "en": "It was late and it was raining." },
+    { "es": "De repente se fue la luz.", "en": "Suddenly the power went out." },
+    { "es": "Eran las diez cuando sonó el teléfono.", "en": "It was ten o'clock when the phone rang." },
+    { "es": "Eran las once y no había nadie en la calle.", "en": "It was eleven o'clock and there was nobody in the street." },
+    { "es": "¿Dónde estabas cuando se fue la luz?", "en": "Where were you when the power went out? (to a friend)" },
+    { "es": "Abrí la puerta y no había nadie.", "en": "I opened the door and there was nobody there." },
+    { "es": "Tomás tenía diez años cuando se fue a Toronto.", "en": "Tomás was ten when he left for Toronto." },
+    { "es": "No fui a la fiesta porque estaba enferma.", "en": "I didn't go to the party because I was sick. (a woman speaking)" }
+  ],
+  "rule": "A story has two layers.\n\nThe scene answers what was it like, or what was going on: the time, the weather, where people were, how they felt, how old they were. That's the describing past you know: *era*, *estaba*, *tenía*, *había*, *llovía*.\n\nThe events answer and then what happened? Each one moves the story forward. That's the plain past: *llegué*, *sonó*, *abrí*, *se fue la luz*.\n\nTogether, the scene is the stage and the events walk onto it: *Llovía cuando llegué*, it was raining when I arrived.\n\nA quick test: try putting and then in front. And then the phone rang works, so *sonó*. And then it was late sounds odd, so *era tarde*.\n\nEnglish uses was and -ed for both layers. Spanish makes you pick.",
+  "smallPrint": "Teachers call the scene past the imperfect (*pretérito imperfecto*) and the event past the preterite (*pretérito indefinido*).",
+  "readAndPick": [
+    { "es": "Era tarde.", "options": ["The scene: what it was like", "An event: what happened next"], "answer": 0 },
+    { "es": "Sonó el teléfono.", "options": ["The scene: what it was like", "An event: what happened next"], "answer": 1 },
+    { "es": "No había nadie en la calle.", "options": ["An event: what happened next", "The scene: what it was like"], "answer": 1 },
+    { "es": "De repente se fue la luz.", "options": ["An event: what happened next", "The scene: what it was like"], "answer": 0 },
+    { "es": "Llovía cuando llegué.", "options": ["It rained, and then I arrived.", "It was raining when I arrived."], "answer": 1 },
+    { "es": "Estaba en la cocina cuando se fue la luz.", "options": ["I was in the kitchen when the power went out.", "I went to the kitchen when the power went out."], "answer": 0 },
+    { "es": "Tomás tenía diez años cuando se fue a Toronto.", "options": ["Tomás turned ten when he left for Toronto.", "Tomás was ten when he left for Toronto."], "answer": 1 },
+    { "es": "Cuando llegué, Vale estaba cansada.", "options": ["When I arrived, Vale was tired.", "When I arrived, Vale got tired.", "When I arrived, Vale is tired."], "answer": 0 },
+    { "es": "Eran las diez cuando sonó el teléfono.", "options": ["The phone was ringing at ten.", "It's ten and the phone is ringing.", "It was ten o'clock when the phone rang."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ tarde y llovía.* (*Fue* or *Era*) It was late and it was raining.",
+      "answer": "Era tarde y llovía.",
+      "accept": [],
+      "why": "The time is part of the scene, so *era*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *De repente ___ la luz.* (*se iba* or *se fue*) Suddenly the power went out.",
+      "answer": "De repente se fue la luz.",
+      "accept": [],
+      "why": "*De repente* brings in something that happened, so the event past *se fue*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Eran las diez cuando ___ el teléfono.* (*sonaba* or *sonó*) It was ten o'clock when the phone rang.",
+      "answer": "Eran las diez cuando sonó el teléfono.",
+      "accept": [],
+      "why": "The ring is the event that lands in the scene: *sonó*."
+    },
+    {
+      "prompt": "It was eleven o'clock and there was nobody in the street.",
+      "answer": "Eran las once y no había nadie en la calle.",
+      "accept": [],
+      "why": "The time and what there was are both scene: *eran*, *había*."
+    },
+    {
+      "prompt": "Ask a friend: Where were you when the power went out?",
+      "answer": "¿Dónde estabas cuando se fue la luz?",
+      "accept": [],
+      "why": "Where she was is the scene (*estabas*); the power cut is the event (*se fue*)."
+    },
+    {
+      "prompt": "I opened the door and there was nobody there.",
+      "answer": "Abrí la puerta y no había nadie.",
+      "accept": ["Abrí la puerta y no había nadie ahí."],
+      "why": "Opening the door is an event, *abrí*; the empty doorway is the scene, *había*."
+    },
+    {
+      "prompt": "Turn it into a story about the past: *Llueve cuando llego.*",
+      "answer": "Llovía cuando llegué.",
+      "accept": [],
+      "why": "The rain was already going on, so *llovía*; arriving is the event, so *llegué*."
+    },
+    {
+      "prompt": "Turn it into a story about the past: *Estoy en la cocina y suena el teléfono.*",
+      "answer": "Estaba en la cocina y sonó el teléfono.",
+      "accept": ["Yo estaba en la cocina y sonó el teléfono."],
+      "why": "Where you were is the scene, *estaba*; the phone is the event, *sonó*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Fue tarde y llovió.",
+      "right": "Era tarde y llovía.",
+      "why": "Almost. The time and the weather set the scene, so both take the describing past."
+    },
+    {
+      "wrong": "De repente se iba la luz.",
+      "right": "De repente se fue la luz.",
+      "why": "*De repente* means something happened, so use the event past *se fue*."
+    },
+    {
+      "wrong": "Tomás tuvo diez años cuando se fue a Toronto.",
+      "right": "Tomás tenía diez años cuando se fue a Toronto.",
+      "why": "Age in a story is part of the scene: *tenía*."
+    },
+    {
+      "wrong": "Cuando llegué, Vale fue cansada.",
+      "right": "Cuando llegué, Vale estaba cansada.",
+      "why": "How someone felt is scene, and feelings use *estar*: *estaba*."
+    }
+  ],
+  "personal": "Think of a night something surprising happened to you. Write two lines of scene (*era*, *estaba*, *había*, *llovía*) and then one event that starts with *De repente*."
+}

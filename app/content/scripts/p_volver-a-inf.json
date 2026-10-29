@@ -1,0 +1,90 @@
+{
+  "node": "p:volver-a-inf",
+  "hook": {
+    "line": "The man from Altamira called. Then he called again. And again. Spanish has a neat way to say it: *volver a* plus the plain verb.",
+    "es": "El señor de Altamira volvió a llamar.",
+    "en": "The man from Altamira called again."
+  },
+  "examples": [
+    { "es": "Volvió a llover.", "en": "It rained again." },
+    { "es": "No vuelvo a comer ahí.", "en": "I'm not eating there again." },
+    { "es": "Simón volvió a gritar.", "en": "Simón shouted again." },
+    { "es": "Volvimos a ver la película.", "en": "We watched the film again." },
+    { "es": "Nunca volvió a llamar.", "en": "He never called again." },
+    { "es": "¿Vas a volver a llamar?", "en": "Are you going to call again? (to a friend)" }
+  ],
+  "rule": "English adds again at the end. Spanish often puts *volver a* in front: *volvió a llamar*, he called again.\n\nOnly *volver* changes: *vuelvo*, *vuelves*, *vuelve*, *volvemos*, *vuelven*; in the past *volví*, *volviste*, *volvió*, *volvimos*, *volvieron*. The second verb stays plain.\n\nKeep the *a*. Without a verb after it, *volver* just means to come back: *Volvió al café*, she came back to the café.\n\n*Nunca volvió a llamar* is never again. *Otra vez* works too, but *volver a* sounds more natural.",
+  "smallPrint": "Teachers file *volver a* plus an infinitive with the verbal periphrases, alongside *dejar de* and *empezar a*.",
+  "readAndPick": [
+    { "es": "Volvió a llamar.", "options": ["He called again.", "He came back."], "answer": 0 },
+    { "es": "Volvió al café.", "options": ["He called the café again.", "He came back to the café."], "answer": 1 },
+    { "es": "Volví a leer la carta.", "options": ["I read the letter again.", "I came back for the letter.", "She read the letter again."], "answer": 0 },
+    { "es": "Volvimos a ver la película.", "options": ["They watched the film again.", "We watched the film again.", "We went back to the cinema."], "answer": 1 },
+    { "es": "No vuelvo a comer ahí.", "options": ["I didn't eat there.", "I'm not going back there today.", "I'm not eating there again."], "answer": 2 },
+    { "es": "Nunca volvió a llamar.", "options": ["She called again.", "She never called again.", "She never came back."], "answer": 1 },
+    { "es": "Volvió a llover.", "options": ["It rained again.", "It stopped raining.", "It started raining."], "answer": 0 },
+    { "es": "Vuelven a Bogotá mañana.", "options": ["They're doing Bogotá again tomorrow.", "They're going back to Bogotá tomorrow."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Simón volvió ___ gritar.* (*a* or *de*) Simón shouted again.",
+      "answer": "Simón volvió a gritar.",
+      "accept": [],
+      "why": "Again is *volver a*; *de* goes with stopping, as in *dejar de*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Volví a ___ la carta.* (*leer* or *leí*) I read the letter again.",
+      "answer": "Volví a leer la carta.",
+      "accept": [],
+      "why": "*Volví* already says I and past; *leer* stays plain."
+    },
+    {
+      "prompt": "It rained again.",
+      "answer": "Volvió a llover.",
+      "accept": [],
+      "why": "*Volvió a* plus plain *llover*."
+    },
+    {
+      "prompt": "We watched the film again.",
+      "answer": "Volvimos a ver la película.",
+      "accept": [],
+      "why": "We, in the past, is *volvimos*; then *a ver*."
+    },
+    {
+      "prompt": "Ask a friend: Are you going to call again?",
+      "answer": "¿Vas a volver a llamar?",
+      "accept": ["¿Vas a volver a llamar a Vale?"],
+      "why": "*Vas a* plus *volver a llamar*: after each *a*, the verb stays plain."
+    },
+    {
+      "prompt": "Say it with *volver a*: *Llamó otra vez.*",
+      "answer": "Volvió a llamar.",
+      "accept": [],
+      "why": "*Llamó* hands its person and tense to *volvió*, and *llamar* goes plain."
+    },
+    {
+      "prompt": "Make it never again: *Volvió a llamar.*",
+      "answer": "Nunca volvió a llamar.",
+      "accept": ["No volvió a llamar nunca."],
+      "why": "*Nunca* in front turns again into never again."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Volvió llamar.",
+      "right": "Volvió a llamar.",
+      "why": "Almost. Keep the *a*: it's what turns came back into again."
+    },
+    {
+      "wrong": "Volvió a llamó.",
+      "right": "Volvió a llamar.",
+      "why": "Only *volver* changes; the second verb stays plain."
+    },
+    {
+      "wrong": "Te llamo atrás más tarde.",
+      "right": "Te vuelvo a llamar más tarde.",
+      "why": "English back doesn't carry over word for word; to call someone again, say *volver a llamar*."
+    }
+  ],
+  "personal": "Name one thing you'd love to do again and one thing you'll never do again: *Quiero volver a...* and *Nunca voy a volver a...*"
+}

@@ -1,0 +1,90 @@
+{
+  "node": "p:hace-frio",
+  "hook": {
+    "line": "In Bogotá the weather can change four times before lunch, so everyone talks about it. In English the weather is; in Spanish it mostly makes: *hace frío*.",
+    "es": "Hoy hace mucho frío.",
+    "en": "It's really cold today."
+  },
+  "examples": [
+    { "es": "Hoy hace mucho frío.", "en": "It's really cold today." },
+    { "es": "Hace mucho calor en Cartagena.", "en": "It's really hot in Cartagena." },
+    { "es": "Está lloviendo otra vez.", "en": "It's raining again." },
+    { "es": "Está nublado.", "en": "It's cloudy." },
+    { "es": "¿Qué tiempo hace en Toronto?", "en": "What's the weather like in Toronto?" },
+    { "es": "Hacía frío y estaba lloviendo.", "en": "It was cold and it was raining." }
+  ],
+  "rule": "English says it is cold. Spanish says it makes cold: *hace frío*, *hace calor*, *hace sol*, *hace viento*, *hace buen tiempo*.\n\nHere *frío* and *calor* are things, so really is *mucho*, not *muy*: *hace mucho frío*.\n\nFor rain and cloud, use *está*: *está lloviendo*, *está nublado*. Or just *llueve*.\n\nIn a story, weather is scene: *hacía frío*, *estaba lloviendo*.\n\nYour own body is different: *tengo frío*, I'm cold.",
+  "smallPrint": "Teachers call these impersonal weather expressions: verbs with nobody doing them.",
+  "readAndPick": [
+    { "es": "Hace frío.", "options": ["It's cold.", "I'm cold."], "answer": 0 },
+    { "es": "Tengo frío.", "options": ["It's cold.", "I'm cold."], "answer": 1 },
+    { "es": "Hace mucho calor.", "options": ["It's really hot.", "It was really hot.", "It's a bit hot."], "answer": 0 },
+    { "es": "Hacía mucho calor.", "options": ["It's really hot.", "It was really hot.", "It's a bit hot."], "answer": 1 },
+    { "es": "Está lloviendo.", "options": ["It rained.", "It's going to rain.", "It's raining."], "answer": 2 },
+    { "es": "Estaba lloviendo.", "options": ["It was raining.", "It's raining.", "It's going to rain."], "answer": 0 },
+    { "es": "¿Qué tiempo hace?", "options": ["What time is it?", "What's the weather like?", "How long ago was it?"], "answer": 1 },
+    { "es": "Ayer hizo mucho viento.", "options": ["It's very windy today.", "It was very windy yesterday."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Hoy hace ___ frío.* (*muy* or *mucho*) It's really cold today.",
+      "answer": "Hoy hace mucho frío.",
+      "accept": [],
+      "why": "After *hace*, *frío* is a thing, so really is *mucho*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ lloviendo otra vez.* (*Hace* or *Está*) It's raining again.",
+      "answer": "Está lloviendo otra vez.",
+      "accept": [],
+      "why": "Rain that's falling right now takes *está*."
+    },
+    {
+      "prompt": "It's really hot in Cartagena.",
+      "answer": "Hace mucho calor en Cartagena.",
+      "accept": ["En Cartagena hace mucho calor."],
+      "why": "Heat is *hace calor*, and really is *mucho*."
+    },
+    {
+      "prompt": "Ask a friend: What's the weather like in Toronto?",
+      "answer": "¿Qué tiempo hace en Toronto?",
+      "accept": ["¿Cómo está el clima en Toronto?"],
+      "why": "Spanish asks what weather it makes: *¿qué tiempo hace?*"
+    },
+    {
+      "prompt": "I'm cold.",
+      "answer": "Tengo frío.",
+      "accept": ["Yo tengo frío."],
+      "why": "Your own body has cold: *tengo frío*."
+    },
+    {
+      "prompt": "Make it the scene of a story: *Hace frío y está lloviendo.*",
+      "answer": "Hacía frío y estaba lloviendo.",
+      "accept": [],
+      "why": "Weather in a story is scene, so the describing past: *hacía*, *estaba*."
+    },
+    {
+      "prompt": "Make it negative: *Hoy hace calor.*",
+      "answer": "Hoy no hace calor.",
+      "accept": [],
+      "why": "*No* goes right before *hace*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es frío hoy.",
+      "right": "Hoy hace frío.",
+      "why": "Almost. Weather makes in Spanish: *hace frío*. *Es frío* describes a thing, like cold soup."
+    },
+    {
+      "wrong": "Hace muy frío.",
+      "right": "Hace mucho frío.",
+      "why": "After *hace*, *frío* is a thing, so really is *mucho*."
+    },
+    {
+      "wrong": "Estoy frío.",
+      "right": "Tengo frío.",
+      "why": "For how your body feels, Spanish says you have cold: *tengo frío*."
+    }
+  ],
+  "personal": "What's the weather like where you are right now? And what was it like on a day you remember well? Write one line with *hace* and one with *hacía*."
+}

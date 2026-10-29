@@ -1,0 +1,93 @@
+{
+  "node": "x:pret-imp",
+  "hook": {
+    "line": "Same verb, two pasts, two different stories. Rosa closed the café at six every day for forty years; last night Tomás closed it once, at ten. Spanish tells you which by the ending.",
+    "es": "Rosa cerraba el café a las seis. Anoche Tomás lo cerró a las diez.",
+    "en": "Rosa used to close the café at six. Last night Tomás closed it at ten."
+  },
+  "examples": [
+    { "es": "Comía a las dos.", "en": "I used to eat at two." },
+    { "es": "Comí a las dos.", "en": "I ate at two." },
+    { "es": "Iba a la playa todos los años.", "en": "I used to go to the beach every year." },
+    { "es": "Fui a la playa en enero.", "en": "I went to the beach in January." },
+    { "es": "Llovía cuando llegué.", "en": "It was raining when I arrived." },
+    { "es": "Llovió toda la noche.", "en": "It rained all night." },
+    { "es": "La fiesta era muy tranquila.", "en": "The party was very quiet." },
+    { "es": "La fiesta fue increíble.", "en": "The party was amazing." }
+  ],
+  "rule": "Almost every verb has both pasts, and swapping one for the other changes the story.\n\nThe describing past (*-aba*, *-ía*, *era*, *iba*): it was going on, it used to happen, that's how it was. No start or finish in view.\n\nThe event past (*-é*, *-ó*, *fue*, *fui*): it happened and it's done. A dot on the timeline.\n\nSo *comía a las dos* is a habit, and *comí a las dos* is one lunch. *Llovía cuando llegué* sets a scene; *llovió toda la noche* wraps a whole night up as one finished thing.\n\nTime words help. *Ayer*, *anoche*, *el sábado*, *de repente* point to the event past. *Siempre*, *todos los días*, *antes*, *cuando era niño* point to the describing past.\n\nStuck? Ask yourself: am I saying what happened, or what it was like?",
+  "smallPrint": "Teachers call this the preterite versus imperfect contrast. It comes back in every review from here on.",
+  "readAndPick": [
+    { "es": "Comía a las dos.", "options": ["I ate at two.", "I used to eat at two."], "answer": 1 },
+    { "es": "Comí a las dos.", "options": ["I ate at two.", "I used to eat at two."], "answer": 0 },
+    { "es": "Iba a la playa.", "options": ["I used to go to the beach.", "I went to the beach."], "answer": 0 },
+    { "es": "Fui a la playa.", "options": ["I used to go to the beach.", "I went to the beach."], "answer": 1 },
+    { "es": "Íbamos a Cartagena.", "options": ["We went to Cartagena.", "They used to go to Cartagena.", "We used to go to Cartagena."], "answer": 2 },
+    { "es": "Fuimos a Cartagena.", "options": ["We went to Cartagena.", "We used to go to Cartagena.", "They went to Cartagena."], "answer": 0 },
+    { "es": "Rosa cerraba el café a las seis.", "options": ["Rosa closed the café at six that day.", "Rosa used to close the café at six."], "answer": 1 },
+    { "es": "Rosa cerró el café a las seis.", "options": ["Rosa closed the café at six that day.", "Rosa used to close the café at six."], "answer": 0 },
+    { "es": "Llovía cuando llegué.", "options": ["It rained, and then I arrived.", "It was raining when I arrived."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *De niño, ___ fútbol todos los días.* (*jugué* or *jugaba*) As a boy, I played football every day.",
+      "answer": "De niño, jugaba fútbol todos los días.",
+      "accept": ["De niño jugaba fútbol todos los días."],
+      "why": "Every day as a boy is a habit, so *jugaba*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Ayer ___ fútbol con Tomás.* (*jugué* or *jugaba*) Yesterday I played football with Tomás.",
+      "answer": "Ayer jugué fútbol con Tomás.",
+      "accept": [],
+      "why": "One game, yesterday: the event past *jugué*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ cuando llegué.* (*Llovió* or *Llovía*) It was raining when I arrived.",
+      "answer": "Llovía cuando llegué.",
+      "accept": [],
+      "why": "The rain was already going on, so it's scene: *llovía*."
+    },
+    {
+      "prompt": "We used to go to the beach every year.",
+      "answer": "Íbamos a la playa todos los años.",
+      "accept": ["Todos los años íbamos a la playa."],
+      "why": "Used to, every year: the describing past *íbamos*."
+    },
+    {
+      "prompt": "Last night it rained a lot.",
+      "answer": "Anoche llovió mucho.",
+      "accept": [],
+      "why": "*Anoche* wraps it up as one finished night: *llovió*."
+    },
+    {
+      "prompt": "Change it from a habit to one time, keeping the rest: *Rosa cerraba el café a las seis.*",
+      "answer": "Rosa cerró el café a las seis.",
+      "accept": [],
+      "why": "One time, done: *cerraba* becomes *cerró*."
+    },
+    {
+      "prompt": "Change it from one time to a habit: *Comí a las dos.*",
+      "answer": "Comía a las dos.",
+      "accept": ["Yo comía a las dos."],
+      "why": "A habit takes the describing past: *comía*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ayer iba al médico.",
+      "right": "Ayer fui al médico.",
+      "why": "Almost. One visit yesterday is an event, so *fui*. *Iba* leaves the listener waiting: you were going, and then?"
+    },
+    {
+      "wrong": "Cuando era niño, fui a la playa todos los años.",
+      "right": "Cuando era niño, iba a la playa todos los años.",
+      "why": "Every year as a child is a habit, so the describing past *iba*."
+    },
+    {
+      "wrong": "Llovió cuando llegué.",
+      "right": "Llovía cuando llegué.",
+      "why": "The rain had already started when you got there, so it's the scene: *llovía*."
+    }
+  ],
+  "personal": "Write one thing you used to do as a child (*-aba* or *-ía*) and one thing you did last weekend (*-é* or *-í*)."
+}
