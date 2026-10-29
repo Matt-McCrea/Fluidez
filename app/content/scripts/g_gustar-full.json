@@ -1,0 +1,224 @@
+{
+  "node": "g:gustar-full",
+  "hook": {
+    "line": "Vale is planning a new menu, and Tomás wants to say what the regulars like, not just what he likes. One little word changes, and suddenly you can talk about everyone at the table.",
+    "es": "A los clientes les encanta tu torta.",
+    "en": "The customers love your cake."
+  },
+  "examples": [
+    {
+      "es": "A Vale le encanta la torta de chocolate.",
+      "en": "Vale loves chocolate cake."
+    },
+    {
+      "es": "¿Le gusta el ajiaco, señor?",
+      "en": "Do you like the ajiaco, sir?"
+    },
+    {
+      "es": "A don Hernando no le gustan los postres.",
+      "en": "Don Hernando doesn't like desserts."
+    },
+    {
+      "es": "Nos encanta el café de Rosa.",
+      "en": "We love Rosa's coffee."
+    },
+    {
+      "es": "¿A ustedes les gusta la carta nueva?",
+      "en": "Do you all like the new menu?"
+    },
+    {
+      "es": "A los turistas les encanta La Candelaria.",
+      "en": "The tourists love La Candelaria."
+    },
+    {
+      "es": "A mí me gusta el té.",
+      "en": "I like tea."
+    }
+  ],
+  "rule": "You already know *me gusta* and *te gusta*. For everyone else, only the little word in front changes:\n\n*me*: me\n*te*: you (a friend)\n*le*: him, her, you (formal)\n*nos*: us\n*les*: them, you all\n\nThe verb still follows the thing that's liked: *gusta* for one thing, *gustan* for several. *Nos gusta el café. Les gustan las arepas.*\n\n*Encantar* works exactly the same way and means 'love' for things, food and places: *Me encanta el ajiaco.*\n\nSince *le* could be him, her or you, Spanish often names the person with *a* in front: *A Vale le gusta la torta. ¿A usted le gusta?* The *le* stays even when you name the person. And *a mí me gusta* just puts weight on 'me'.\n\nCareful: in *A Vale le encanta la torta*, Vale isn't doing the verb. The cake is.",
+  "smallPrint": "Teachers call *me*, *te*, *le*, *nos* and *les* indirect object pronouns. Saying the person twice (*a Vale le…*) is called doubling, and with *gustar* it's normal, not a mistake.",
+  "readAndPick": [
+    {
+      "es": "Le gusta el ajiaco.",
+      "options": [
+        "They like the ajiaco.",
+        "He likes the ajiaco.",
+        "We like the ajiaco."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos encanta la torta.",
+      "options": [
+        "We love the cake.",
+        "They love the cake.",
+        "I love the cake."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les gustan las arepas.",
+      "options": [
+        "She likes arepas.",
+        "We like arepas.",
+        "They like arepas."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A Vale le encanta Medellín.",
+      "options": [
+        "Medellín loves Vale.",
+        "Vale loves Medellín."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A los clientes no les gusta el horario.",
+      "options": [
+        "The customer doesn't like the hours.",
+        "The customers don't like the hours."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Les gusta el menú?",
+      "options": [
+        "Do you all like the menu?",
+        "Do you like the menu? (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos gusta el café de Rosa.",
+      "options": [
+        "Rosa likes our coffee.",
+        "We like Rosa's coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Tomás le gustan las tortas de Vale.",
+      "options": [
+        "Tomás likes Vale's cakes.",
+        "Vale likes Tomás's cakes.",
+        "Tomás likes Vale's cake."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿A usted le gusta el postre?",
+      "options": [
+        "Does the dessert like you?",
+        "Do you like the dessert? (formal)",
+        "Do you all like the dessert?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A mí me gusta el tinto.",
+      "options": [
+        "I like black coffee.",
+        "Black coffee likes me.",
+        "He likes black coffee."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *le* or *les* and type the whole sentence: A Vale ___ encanta la torta.",
+      "answer": "A Vale le encanta la torta.",
+      "accept": [],
+      "why": "Vale is one person, so *le*."
+    },
+    {
+      "prompt": "Choose *gusta* or *gustan* and type the whole sentence: A los clientes les ___ las arepas.",
+      "answer": "A los clientes les gustan las arepas.",
+      "accept": [],
+      "why": "The verb follows the arepas, and there are several of them: *gustan*."
+    },
+    {
+      "prompt": "Say: We love Rosa's coffee.",
+      "answer": "Nos encanta el café de Rosa.",
+      "accept": [
+        "A nosotros nos encanta el café de Rosa."
+      ],
+      "why": "'Us' is *nos*, and one coffee takes *encanta*."
+    },
+    {
+      "prompt": "Ask a customer (formal) if he likes the ajiaco.",
+      "answer": "¿Le gusta el ajiaco?",
+      "accept": [
+        "¿A usted le gusta el ajiaco?"
+      ],
+      "why": "Formal 'you' takes *le*, the same word as 'him' or 'her'."
+    },
+    {
+      "prompt": "Say: Don Hernando doesn't like desserts.",
+      "answer": "A don Hernando no le gustan los postres.",
+      "accept": [
+        "A Hernando no le gustan los postres."
+      ],
+      "why": "Name him with *a*, keep the *le*, and *postres* is plural, so *gustan*."
+    },
+    {
+      "prompt": "Ask your friends (you all) if they like the new menu.",
+      "answer": "¿Les gusta la carta nueva?",
+      "accept": [
+        "¿A ustedes les gusta la carta nueva?",
+        "¿Les gusta el menú nuevo?",
+        "¿A ustedes les gusta el menú nuevo?"
+      ],
+      "why": "'You all' takes *les*. One menu, so *gusta*."
+    },
+    {
+      "prompt": "Make it about Vale: *Me encanta la torta.*",
+      "answer": "A Vale le encanta la torta.",
+      "accept": [],
+      "why": "Swap *me* for *le* and name her with *a Vale* in front."
+    },
+    {
+      "prompt": "Make it about us: *No me gusta el horario.*",
+      "answer": "No nos gusta el horario.",
+      "accept": [
+        "A nosotros no nos gusta el horario."
+      ],
+      "why": "Only the little word changes: *me* becomes *nos*. The verb still follows *el horario*."
+    },
+    {
+      "prompt": "Make it about the tourists: *Me gusta La Candelaria.*",
+      "answer": "A los turistas les gusta La Candelaria.",
+      "accept": [],
+      "why": "Several people take *les*, but La Candelaria is one place, so *gusta* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Vale gusta la torta.",
+      "right": "A Vale le gusta la torta.",
+      "why": "Almost. Vale isn't doing the pleasing, the cake is: so *a Vale le gusta*."
+    },
+    {
+      "wrong": "A Vale gusta la torta.",
+      "right": "A Vale le gusta la torta.",
+      "why": "The *le* has to stay, even when you name the person."
+    },
+    {
+      "wrong": "Nos gustamos el café.",
+      "right": "Nos gusta el café.",
+      "why": "*Gustamos* would be about us. The verb follows the coffee: *gusta*."
+    },
+    {
+      "wrong": "Les gusta las arepas.",
+      "right": "Les gustan las arepas.",
+      "why": "Several arepas, so *gustan*. *Les* is about the people, not the food."
+    },
+    {
+      "wrong": "Me encanto el ajiaco.",
+      "right": "Me encanta el ajiaco.",
+      "why": "Like *gustar*, the verb follows the ajiaco: *encanta*."
+    }
+  ],
+  "personal": "Tell us about the people around you: one thing someone close to you loves (*A mi … le encanta…*) and one thing you and your friends like (*Nos gusta…*)."
+}

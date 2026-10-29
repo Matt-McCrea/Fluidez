@@ -1,0 +1,45 @@
+{
+  "node": "x:yo-vs-a-mi-tambien",
+  "hook": {
+    "line": "Someone says they love the ajiaco and you want to say 'me too'. English has one answer. Spanish has two, and the one you pick shows whether you were listening to the shape of what they said.",
+    "es": "Me encanta el ajiaco de Vale.\nA mí también.",
+    "en": "I love Vale's ajiaco.\nMe too."
+  },
+  "examples": [
+    { "es": "Vivo en La Candelaria.\nYo también.", "en": "I live in La Candelaria.\nMe too." },
+    { "es": "Me encanta el ajiaco.\nA mí también.", "en": "I love ajiaco.\nMe too." },
+    { "es": "No tomo café en la noche.\nYo tampoco.", "en": "I don't drink coffee at night.\nMe neither." },
+    { "es": "No me gusta el café sin azúcar.\nA mí tampoco.", "en": "I don't like coffee without sugar.\nMe neither." },
+    { "es": "Me gustan las tortas de Vale.\nA mí no.", "en": "I like Vale's cakes.\nI don't." },
+    { "es": "No me gusta el horario.\nA mí sí.", "en": "I don't like the hours.\nI do." }
+  ],
+  "rule": "Echo the shape of what you heard.\n\nAn ordinary verb (*vivo*, *trabajo*, *tengo*): the speaker said 'I' as *yo*, so you answer with *yo*.\n*Yo también.* Me too.\n*Yo tampoco.* Me neither.\n\nA *gustar*-type verb (*me gusta*, *me encanta*): there was never a *yo* in it, only *me*. So the answer starts with *a mí*.\n*A mí también.* Me too.\n*A mí tampoco.* Me neither.\n\nTo disagree, swap the last word: *A mí sí* (I do), *A mí no* (I don't).\n\nThe same goes for other people: *Trabajo aquí. Vale también.* but *Me gusta el tinto. A Vale también.*\n\nEnglish says 'me too' to both. In Spanish, *yo también* after *me gusta* is one of the most common beginner slips.",
+  "smallPrint": "*A mí* is a stressed pronoun after the preposition *a*. It matches the *me* of *me gusta*, just as *yo* matches *vivo*.",
+  "readAndPick": [
+    { "es": "Me encanta la torta.\nYo también.", "options": ["Sounds right", "Should be: A mí también."], "answer": 1 },
+    { "es": "Trabajo los sábados.\nYo también.", "options": ["Sounds right", "Should be: A mí también."], "answer": 0 },
+    { "es": "No me gusta el horario.\nA mí tampoco.", "options": ["Sounds right", "Should be: Yo tampoco."], "answer": 0 },
+    { "es": "No tengo plata.\nA mí tampoco.", "options": ["Should be: Yo tampoco.", "Sounds right"], "answer": 0 },
+    { "es": "Me gustan las arepas.\nA mí no.", "options": ["The second person likes arepas too.", "The second person doesn't like arepas."], "answer": 1 },
+    { "es": "No me gusta el té.\nA mí sí.", "options": ["The second person likes tea.", "Neither of them likes tea."], "answer": 0 },
+    { "es": "Vivo en el centro.\nA mí también.", "options": ["Should be: Yo también.", "Sounds right"], "answer": 0 },
+    { "es": "Me encanta Medellín.\nA Vale también.", "options": ["Vale loves Medellín too.", "Vale doesn't love Medellín."], "answer": 0 },
+    { "es": "No tomo café en la noche.\nYo tampoco.", "options": ["Should be: A mí tampoco.", "Sounds right"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Your friend says *Me encanta la torta.* Say 'me too', choosing *yo también* or *a mí también*.", "answer": "A mí también.", "accept": ["A mí también me encanta.", "A mí también me encanta la torta."], "why": "*Me encanta* has no *yo* in it, only *me*, so the echo is *a mí*." },
+    { "prompt": "Your friend says *Trabajo los sábados.* Say 'me too', choosing *yo también* or *a mí también*.", "answer": "Yo también.", "accept": ["Yo también trabajo los sábados."], "why": "*Trabajo* is an ordinary verb about *yo*, so you answer with *yo*." },
+    { "prompt": "Your friend says *No me gusta el café sin azúcar.* Say 'me neither'.", "answer": "A mí tampoco.", "accept": [], "why": "A no-sentence takes *tampoco*, and *me gusta* takes *a mí*." },
+    { "prompt": "Your friend says *No tengo plata.* Say 'me neither'.", "answer": "Yo tampoco.", "accept": [], "why": "*Tengo* is an ordinary verb, so *yo*. It's a no-sentence, so *tampoco*." },
+    { "prompt": "Your friend says *Me gustan las arepas.* Say that you don't.", "answer": "A mí no.", "accept": [], "why": "To disagree with a *gustar* sentence, keep *a mí* and add *no*." },
+    { "prompt": "Your friend says *No me gusta el horario.* Say that you do.", "answer": "A mí sí.", "accept": [], "why": "Disagreeing with a no-sentence takes *sí*, and *me gusta* still means *a mí*." },
+    { "prompt": "Tomás says *Me encanta el ajiaco.* Say that Vale does too.", "answer": "A Vale también.", "accept": [], "why": "Other people follow the same rule: *a* plus the name, then *también*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me encanta el ajiaco.\nYo también.", "right": "Me encanta el ajiaco.\nA mí también.", "why": "Almost. *Me encanta* never had a *yo*, so the echo is *a mí también*." },
+    { "wrong": "Vivo en Bogotá.\nA mí también.", "right": "Vivo en Bogotá.\nYo también.", "why": "*Vivo* is about *yo*, so you answer with *yo también*. Save *a mí* for *gustar*-type verbs." },
+    { "wrong": "No me gusta el café sin azúcar.\nA mí también.", "right": "No me gusta el café sin azúcar.\nA mí tampoco.", "why": "After a no-sentence, 'me neither' is *tampoco*. *También* here would sound like you disagree." },
+    { "wrong": "No me gusta el horario.\nYo tampoco.", "right": "No me gusta el horario.\nA mí tampoco.", "why": "The *tampoco* is right, but *me gusta* still calls for *a mí*." }
+  ],
+  "personal": "Think of something you love and something you don't do. Write each one, then answer yourself the way a friend who agrees would: *Me encanta… A mí también. No tomo… Yo tampoco.*"
+}

@@ -1,0 +1,47 @@
+{
+  "node": "g:stem-e-i",
+  "hook": {
+    "line": "Ordering is the verb you'll use most in a café, and it's one of those verbs that changes on the inside. Learn its shape once and three or four other useful verbs come along with it.",
+    "es": "Siempre pido lo mismo.",
+    "en": "I always order the same thing."
+  },
+  "examples": [
+    { "es": "Don Hernando siempre pide un tinto.", "en": "Don Hernando always orders a black coffee." },
+    { "es": "¿Qué pides tú?", "en": "What are you ordering?" },
+    { "es": "¿Pedimos la cuenta?", "en": "Shall we ask for the bill?" },
+    { "es": "Vale sirve la torta en un plato pequeño.", "en": "Vale serves the cake on a small plate." },
+    { "es": "¿Qué sirven hoy?", "en": "What are they serving today?" },
+    { "es": "¿Me repite el nombre, por favor?", "en": "Could you repeat the name, please?" },
+    { "es": "Sigo en el café.", "en": "I'm still at the café." }
+  ],
+  "rule": "You know the boot verbs: *quiero*, *puedo*. Here's a third family. A few *-ir* verbs change *e* to *i* inside:\n\n*pido*, *pides*, *pide*, *pedimos*, *piden*\n\nSame boot as before: the change happens in every form except *we*. *Pedimos* keeps its *e*.\n\nThe ones you'll use:\n*pedir*: to order, to ask for (*pido*)\n*servir*: to serve (*sirvo*)\n*repetir*: to repeat (*repito*)\n*seguir*: to follow, to still be somewhere (*sigo*)\n\n*Seguir* loses its *u* in *sigo* only; then it's *sigues*, *sigue*, *seguimos*, *siguen*.\n\nThe endings are the ones you know. Only the vowel inside changes.",
+  "smallPrint": "Teachers call these e → i stem-changing verbs. They're all *-ir* verbs; no *-ar* or *-er* verb does this.",
+  "readAndPick": [
+    { "es": "Pido un jugo de mango.", "options": ["I order a mango juice.", "She orders a mango juice.", "We order a mango juice."], "answer": 0 },
+    { "es": "Pedimos dos tintos.", "options": ["They order two black coffees.", "We order two black coffees.", "I order two black coffees."], "answer": 1 },
+    { "es": "Sirven el almuerzo a la una.", "options": ["I serve lunch at one.", "We serve lunch at one.", "They serve lunch at one."], "answer": 2 },
+    { "es": "¿Qué pides?", "options": ["What are you ordering? (to a friend)", "What is he ordering?"], "answer": 0 },
+    { "es": "Seguimos en el café.", "options": ["We're still at the café.", "They're still at the café."], "answer": 0 },
+    { "es": "Vale sirve el café.", "options": ["I serve the coffee.", "Vale serves the coffee.", "They serve the coffee."], "answer": 1 },
+    { "es": "Repito la pregunta.", "options": ["She repeats the question.", "You repeat the question.", "I repeat the question."], "answer": 2 },
+    { "es": "Ellos piden la cuenta.", "options": ["They ask for the bill.", "He asks for the bill."], "answer": 0 },
+    { "es": "Sigo aquí.", "options": ["He's still here.", "I'm still here."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *pido* or *pedo* and type the whole sentence: Siempre ___ el ajiaco.", "answer": "Siempre pido el ajiaco.", "accept": [], "why": "The *e* becomes *i* in the *yo* form: *pido*." },
+    { "prompt": "Choose *pedimos* or *pidimos* and type the whole sentence: ¿___ la cuenta?", "answer": "¿Pedimos la cuenta?", "accept": [], "why": "*We* is the one form that keeps the *e*." },
+    { "prompt": "Say: Vale serves the coffee.", "answer": "Vale sirve el café.", "accept": [], "why": "*Servir* changes *e* to *i* for she: *sirve*." },
+    { "prompt": "Ask a friend what they're ordering.", "answer": "¿Qué pides?", "accept": ["¿Qué pides tú?", "¿Tú qué pides?"], "why": "Friend 'you' ends in *-es*, and the *e* inside becomes *i*: *pides*." },
+    { "prompt": "Ask a waiter (formal) to repeat the name, please.", "answer": "¿Me repite el nombre, por favor?", "accept": ["¿Me repite el nombre?"], "why": "Formal 'you' takes the *usted* form: *repite*." },
+    { "prompt": "Make it about them: *Pido un tinto.*", "answer": "Piden un tinto.", "accept": ["Ellos piden un tinto."], "why": "*They* is inside the boot, so it keeps the *i*: *piden*." },
+    { "prompt": "Make it about us: *Sirvo el almuerzo a la una.*", "answer": "Servimos el almuerzo a la una.", "accept": [], "why": "*We* steps out of the boot, so the *e* comes back: *servimos*." },
+    { "prompt": "Say: I'm still at the café.", "answer": "Sigo en el café.", "accept": [], "why": "*Seguir* becomes *sigo*: *i* inside, and the *u* drops." }
+  ],
+  "pitfalls": [
+    { "wrong": "Yo pedo un café.", "right": "Yo pido un café.", "why": "It has to be *pido*. *Pedo* isn't a form of the verb, and it's a rude word you don't want to say to a waiter." },
+    { "wrong": "Pidimos la cuenta.", "right": "Pedimos la cuenta.", "why": "*We* never changes: *pedimos*, just like *queremos*." },
+    { "wrong": "Vale serve el café.", "right": "Vale sirve el café.", "why": "For she, the *e* becomes *i*: *sirve*." },
+    { "wrong": "Siguo en el café.", "right": "Sigo en el café.", "why": "In *sigo* the *u* drops: the *g* already sounds hard before *o*." }
+  ],
+  "personal": "What do you always order in a café, and what does a friend of yours order? *Siempre pido… Mi amigo pide…*"
+}

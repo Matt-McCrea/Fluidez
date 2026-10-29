@@ -1,0 +1,42 @@
+{
+  "node": "p:nos-vemos-a-las",
+  "hook": {
+    "line": "Vale says she'll talk about the menu, but not right now. Time to fix a day, a time and a place, the way people in Bogotá actually do it.",
+    "es": "¿Nos vemos el viernes a las siete en el café?",
+    "en": "Shall we meet on Friday at seven at the café?"
+  },
+  "examples": [
+    { "es": "¿Nos vemos mañana a las diez en el parque?", "en": "Shall we meet tomorrow at ten in the park?" },
+    { "es": "El viernes no puedo, ¿mejor el sábado?", "en": "I can't on Friday, how about Saturday?" },
+    { "es": "Listo, el sábado a las ocho.", "en": "OK, Saturday at eight." },
+    { "es": "¿Nos vemos a la una en la plaza?", "en": "Shall we meet at one in the square?" },
+    { "es": "De acuerdo, nos vemos allá.", "en": "All right, see you there." }
+  ],
+  "rule": "To suggest meeting, ask *¿Nos vemos…?* (literally 'do we see each other?') and add the pieces in this order: day, time, place.\n\nDay: *el viernes* (this Friday). *Los viernes* would mean every Friday.\nTime: *a las siete*, but *a la una*.\nPlace: *en el café*.\n\nCan't make it? Say what doesn't work, then offer *mejor* plus another option: *El viernes no puedo, ¿mejor el sábado?*\n\nTo agree: *Listo* or *De acuerdo*.",
+  "smallPrint": "In Spain people say *¿Quedamos?*; in Colombia *¿Nos vemos?* is the everyday way.",
+  "readAndPick": [
+    { "es": "¿Nos vemos el lunes?", "options": ["Shall we meet on Monday?", "Shall we meet every Monday?"], "answer": 0 },
+    { "es": "¿Nos vemos los viernes?", "options": ["Shall we meet on Friday?", "Shall we meet on Fridays?"], "answer": 1 },
+    { "es": "¿Nos vemos a la una?", "options": ["Shall we meet at one?", "Shall we meet at once?"], "answer": 0 },
+    { "es": "Mañana no puedo, ¿mejor el jueves?", "options": ["Tomorrow is fine.", "Not tomorrow, how about Thursday?"], "answer": 1 },
+    { "es": "Listo, el sábado a las ocho.", "options": ["The speaker says no to Saturday.", "The speaker agrees to Saturday at eight."], "answer": 1 },
+    { "es": "A las siete no puedo, ¿mejor a las ocho?", "options": ["The speaker suggests eight instead of seven.", "The speaker suggests seven instead of eight."], "answer": 0 },
+    { "es": "¿Nos vemos el domingo a las tres y media?", "options": ["Shall we meet on Sunday at half past three?", "Shall we meet on Sunday at three?", "Shall we meet on Sundays at half past three?"], "answer": 0 },
+    { "es": "De acuerdo, nos vemos allá.", "options": ["All right, see you there.", "All right, see you here."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Ask a friend: Shall we meet on Friday at seven at the café?", "answer": "¿Nos vemos el viernes a las siete en el café?", "accept": [], "why": "Day, time, place: *el viernes*, *a las siete*, *en el café*." },
+    { "prompt": "Ask: Shall we meet at one in the square?", "answer": "¿Nos vemos a la una en la plaza?", "accept": [], "why": "One o'clock is singular: *a la una*." },
+    { "prompt": "Say you can't on Friday, and suggest Saturday.", "answer": "El viernes no puedo, ¿mejor el sábado?", "accept": ["El viernes no puedo. ¿Mejor el sábado?"], "why": "Say what doesn't work, then *mejor* plus the new day." },
+    { "prompt": "Agree with *Listo*: OK, Saturday at eight.", "answer": "Listo, el sábado a las ocho.", "accept": [], "why": "*Listo* is the everyday Colombian OK. The day keeps its *el*." },
+    { "prompt": "Ask: Shall we meet tomorrow at ten in the park?", "answer": "¿Nos vemos mañana a las diez en el parque?", "accept": [], "why": "*Mañana* takes no *el*, and the time still needs *a las*." },
+    { "prompt": "Say you can't at seven, and suggest eight.", "answer": "A las siete no puedo, ¿mejor a las ocho?", "accept": ["A las siete no puedo. ¿Mejor a las ocho?"], "why": "The same counter-offer works with times: *mejor a las ocho*." },
+    { "prompt": "Agree with *De acuerdo*: All right, see you there.", "answer": "De acuerdo, nos vemos allá.", "accept": [], "why": "*Nos vemos* also closes the plan: see you there." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Nos vemos en viernes?", "right": "¿Nos vemos el viernes?", "why": "Days take *el*, not *en*: *el viernes* means 'on Friday'." },
+    { "wrong": "¿Nos vemos en las siete?", "right": "¿Nos vemos a las siete?", "why": "Clock times take *a*: *a las siete*, never *en*." },
+    { "wrong": "¿Nos vemos a las una?", "right": "¿Nos vemos a la una?", "why": "One is singular, so *a la una*." }
+  ],
+  "personal": "Arrange something real: suggest a day, a time and a place to meet a friend this week. *¿Nos vemos el… a las… en…?*"
+}

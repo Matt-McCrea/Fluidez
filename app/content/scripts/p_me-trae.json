@@ -1,0 +1,174 @@
+{
+  "node": "p:me-trae",
+  "hook": {
+    "line": "At the table, Spanish rarely gives orders. It asks a little question instead, and that question does more politeness work than any *por favor*.",
+    "es": "¿Me trae otra limonada, por favor?",
+    "en": "Could you bring me another lemonade, please?"
+  },
+  "examples": [
+    {
+      "es": "¿Me pasas el azúcar?",
+      "en": "Can you pass me the sugar?"
+    },
+    {
+      "es": "¿Me pasa la sal?",
+      "en": "Could you pass me the salt?"
+    },
+    {
+      "es": "¿Nos trae la cuenta, por favor?",
+      "en": "Could you bring us the bill, please?"
+    },
+    {
+      "es": "¿Me trae la carta, por favor?",
+      "en": "Could you bring me the menu, please?"
+    },
+    {
+      "es": "¿Me prestas tu celular un momento?",
+      "en": "Can you lend me your phone for a moment?"
+    }
+  ],
+  "rule": "Frame: *¿Me* + verb + thing?\n\nThe verb is a plain present-tense question: *¿Me trae…?* is literally 'do you bring me…?', and it's how you ask.\n\nTo a waiter or a stranger, use the *usted* form: *¿Me trae…? ¿Me pasa…?*\nTo a friend: *¿Me traes…? ¿Me pasas…?*\nFor the whole table, swap *me* for *nos*: *¿Nos trae la cuenta?*\n\nThe verbs: *traer* (bring), *pasar* (pass), *prestar* (lend). You already know *¿Me regala…?* for buying.",
+  "smallPrint": "Turning a request into a question is a softener; teachers call it an indirect request.",
+  "readAndPick": [
+    {
+      "es": "¿Me traes un vaso de agua?",
+      "options": [
+        "Asking a friend",
+        "Asking a waiter (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Me trae un tenedor, por favor?",
+      "options": [
+        "Asking a friend",
+        "Asking a waiter (formal)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Nos trae la cuenta, por favor?",
+      "options": [
+        "Could you bring me the bill, please?",
+        "Could you bring us the bill, please?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Me prestas tu carro?",
+      "options": [
+        "Can you lend me your car?",
+        "Can you pass me your car?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Me pasa el pan, por favor?",
+      "options": [
+        "Could you bring me bread from the kitchen?",
+        "Could you pass me the bread, please?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Nos pasas la sal?",
+      "options": [
+        "Can you pass me the salt?",
+        "Can you pass us the salt?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Me trae otro café?",
+      "options": [
+        "Could you bring me another coffee?",
+        "Could you bring me the other coffee?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Me prestas plata?",
+      "options": [
+        "Can you lend me some money?",
+        "Can you give me some money as a gift?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *trae* or *traes* to ask the waiter (formal), and type the whole sentence: ¿Me ___ la carta, por favor?",
+      "answer": "¿Me trae la carta, por favor?",
+      "accept": [
+        "¿Me trae el menú, por favor?"
+      ],
+      "why": "A waiter gets the *usted* form: *trae*."
+    },
+    {
+      "prompt": "Ask a friend: Can you pass me the sugar?",
+      "answer": "¿Me pasas el azúcar?",
+      "accept": [
+        "¿Me pasas el azúcar, por favor?"
+      ],
+      "why": "A friend gets the *tú* form, ending in *-s*: *pasas*."
+    },
+    {
+      "prompt": "Ask the waiter (formal) to bring you another lemonade, please.",
+      "answer": "¿Me trae otra limonada, por favor?",
+      "accept": [
+        "¿Me trae otra limonada?"
+      ],
+      "why": "*Otra* needs no *una* in front, and the waiter gets *trae*."
+    },
+    {
+      "prompt": "Ask the waiter (formal) to bring the bill for your table, please.",
+      "answer": "¿Nos trae la cuenta, por favor?",
+      "accept": [
+        "¿Nos trae la cuenta?"
+      ],
+      "why": "It's for all of you, so *nos* instead of *me*."
+    },
+    {
+      "prompt": "Ask a friend if they can lend you their phone for a moment.",
+      "answer": "¿Me prestas tu celular un momento?",
+      "accept": [
+        "¿Me prestas tu celular?"
+      ],
+      "why": "Borrowing is *prestar*, and a friend gets *prestas*."
+    },
+    {
+      "prompt": "Make it formal, to an older stranger at the next table: *¿Me pasas la sal?*",
+      "answer": "¿Me pasa la sal?",
+      "accept": [
+        "¿Me pasa la sal, por favor?"
+      ],
+      "why": "Drop the *-s* for *usted*: *pasa*."
+    },
+    {
+      "prompt": "Make it about your whole table: *¿Me trae dos tintos, por favor?*",
+      "answer": "¿Nos trae dos tintos, por favor?",
+      "accept": [
+        "¿Nos trae dos tintos?"
+      ],
+      "why": "Only the little word changes: *me* becomes *nos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Trae me la cuenta?",
+      "right": "¿Me trae la cuenta?",
+      "why": "Almost. In a question like this, *me* goes in front of the verb."
+    },
+    {
+      "wrong": "¿Me trae otra una limonada?",
+      "right": "¿Me trae otra limonada?",
+      "why": "*Otra* already means 'another', so it never takes *una*."
+    },
+    {
+      "wrong": "Tráeme la cuenta.",
+      "right": "¿Me trae la cuenta, por favor?",
+      "why": "A bare order sounds bossy to a waiter. Ask it as a question, in the *usted* form."
+    }
+  ],
+  "personal": "Picture your favourite café. Ask the waiter for one thing you always want, and ask a friend at the table to pass you something."
+}
