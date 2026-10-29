@@ -79,6 +79,9 @@ export interface TranslateItem extends Base {
   accept: string[];
   /** For en→es: the English the matcher reads for "you" and the subject. */
   en: string;
+  /** A dialogue row: the earlier turns, in Spanish, shown as context. The
+   *  prompt and answer are one turn only. */
+  context?: string;
 }
 
 /** A sentence the learner has never seen, made from one they have.

@@ -11,6 +11,7 @@ import {
   ALL_FEATURES, checkItem, chooseItem, form, lexGapItem, parseClause, rng, shuffle, structuredInput,
   transformItems, translationItems, typeFormItem, type Item as ExItem,
 } from '../../exercises';
+import { fixBreaks, isMultiTurn, productionView, turnView, type TurnView } from '../../exercises/dialogue';
 import { looksSpanish, type Bundle } from '../data/bundle';
 
 export type Lang = 'es' | 'en';
@@ -50,8 +51,8 @@ export interface TypeCard extends CardBase {
 export interface ReadCard extends CardBase { type: 'read'; es: string; en: string }
 export type Card = McqCard | TypeCard | ReadCard;
 
-const es = (text: string): Txt => ({ text, lang: 'es' });
-const en = (text: string): Txt => ({ text, lang: 'en' });
+const es = (text: string): Txt => ({ text: fixBreaks(text), lang: 'es' });
+const en = (text: string): Txt => ({ text: fixBreaks(text), lang: 'en' });
 const auto = (text: string): Txt => ({ text, lang: looksSpanish(text) ? 'es' : 'en' });
 /** One language for a whole set of options, decided by majority (ties go to the
  *  answer's): per-option guessing coloured options differently and gave answers away. */
@@ -175,6 +176,33 @@ function itemCheck(item: ExItem) {
   };
 }
 
+// ---------------------------------------------------------------- dialogue rows
+
+/**
+ * Which turn of a dialogue row practises this node: the one its chunk or
+ * word is in. Undefined when the node has nothing short enough to look for
+ * (the reply is asked then).
+ */
+function preferFor(b: Bundle, node: NodeId): ((text: string) => boolean) | undefined {
+  const keys = b.segments(node).map((x) => norm(x.es)).filter((k) => k && k.split(' ').length <= 6);
+  const lex = b.lexemeLike(node);
+  if (lex) keys.push(norm(lex.es.replace(/^(el|la|los|las|un|una)\s+/i, '')));
+  if (!keys.length) return undefined;
+  return (text) => { const t = ` ${norm(text)} `; return keys.some((k) => t.includes(` ${k} `)); };
+}
+
+/**
+ * A production card for ONE turn. A dialogue row never asks for the whole
+ * exchange in one answer: the turns before this one are shown in Spanish
+ * (the other speaker), the learner says this turn from its English, and only
+ * this turn is checked.
+ */
+function sayCard(key: string, v: TurnView, check: (input: string) => Check, why: string): TypeCard {
+  const base = { type: 'type' as const, key, answerLang: 'es' as const, placeholder: 'Type it in Spanish', check, retry: true, why };
+  if (!v.context) return { ...base, ask: SAY, prompt: en(v.sentence.en) };
+  return { ...base, ask: 'They say this. Answer in Spanish', prompt: es(v.context), sub: en(`Say: ${v.sentence.en}`), placeholder: 'Your reply, in Spanish' };
+}
+
 // ---------------------------------------------------------------- reviews (warm-up, leech)
 
 /**
@@ -197,11 +225,14 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
     return mcq(item.id, MEANS, es(s.es), en(s.en), otherEnglish(b, s.en, item.id, 2, s.unit).map(en),
       seg ? `${seg.es} means "${seg.en}". The rest of the sentence gives the context.` : `This is about: ${title.toLowerCase()}.`);
   }
+  const v = s ? productionView(s, preferFor(b, item.node)) : null;
+  if (s && v) {
+    return sayCard(item.id, v, sentenceCheck(v.sentence), seg ? `It uses ${seg.es} (${lcFirst(seg.en)}).` : 'Here is how Spanish says it.');
+  }
   if (s) {
-    return {
-      type: 'type', key: item.id, ask: SAY, prompt: en(s.en), answerLang: 'es', placeholder: 'Type it in Spanish',
-      check: sentenceCheck(s), retry: true, why: seg ? `It uses ${seg.es} (${lcFirst(seg.en)}).` : 'Here is how Spanish says it.',
-    };
+    // turns that do not line up: recognise the exchange instead
+    return mcq(item.id, MEANS, es(s.es), en(s.en), otherEnglish(b, s.en, item.id, 2, s.unit).map(en),
+      seg ? `${seg.es} means "${seg.en}". The rest gives the context.` : `This is about: ${title.toLowerCase()}.`);
   }
   // bare card: no fresh sentence left for this node
   if (!seg) return { type: 'read', key: item.id, ask: 'Remember this one?', es: b.node(item.node)?.es ?? title, en: title, why: '' };
@@ -293,12 +324,12 @@ function meaningCard(item: PracticeItem, s: BankSentence, b: Bundle, ask = 'What
     seg ? `${seg.es} means "${seg.en}".` : `It means "${s.en}".`);
 }
 
-function translateCard(item: PracticeItem, s: BankSentence, b: Bundle): TypeCard {
-  const [t] = translationItems(s, { dirs: ['en-es'], bank: b.bank });
-  return {
-    type: 'type', key: item.id, ask: SAY, prompt: en(s.en), answerLang: 'es', placeholder: 'Type it in Spanish', retry: true,
-    check: t ? itemCheck(t) : sentenceCheck(s), why: 'Here is how Spanish says it.',
-  };
+function translateCard(item: PracticeItem, s: BankSentence, b: Bundle): Card {
+  const prefer = preferFor(b, item.node);
+  const v = productionView(s, prefer);
+  const [t] = translationItems(s, { dirs: ['en-es'], bank: b.bank, prefer });
+  if (!v || !t) return meaningCard(item, s, b);
+  return sayCard(item.id, v, itemCheck(t), 'Here is how Spanish says it.');
 }
 
 function typeFormCard(item: PracticeItem, s: BankSentence): TypeCard | undefined {
@@ -380,11 +411,15 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number): Card 
       }
       return typeFormCard(item, s) ?? translateCard(item, s, b);
     }
-    case 'respond':
+    case 'respond': {
+      // a dialogue row: answer its first turn, the question, not the exchange
+      const q = isMultiTurn(s) ? turnView(s, 0)?.sentence : s;
+      if (!q) return meaningCard(item, s, b);
       return {
-        type: 'type', key: item.id, ask: 'Answer for yourself', prompt: es(s.es), sub: en(s.en), answerLang: 'es', placeholder: 'Your answer, in Spanish',
-        check: respondCheck(s), retry: true, why: 'Any true answer works. Just answer the way the question asks.',
+        type: 'type', key: item.id, ask: 'Answer for yourself', prompt: es(q.es), sub: en(q.en), answerLang: 'es', placeholder: 'Your answer, in Spanish',
+        check: respondCheck(q), retry: true, why: 'Any true answer works. Just answer the way the question asks.',
       };
+    }
     case 'comprehend':
       return meaningCard(item, s, b);
     case 'read':

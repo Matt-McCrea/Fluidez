@@ -17,11 +17,16 @@
  * Examples it drops: "___ el libro (comprar)" for "I bought the book"
  * (compraba is not ruled out — nothing pins finished vs habitual); "Mañana
  * ___ a Quito (viajar)" for "Tomorrow I'll travel" (viajo is right too).
+ *
+ * A dialogue row is laddered one turn at a time (dialogue.ts): the gap sits
+ * in one turn, the turns before it are shown above it, and a transform
+ * rewrites that turn alone.
  * ========================================================================== */
 import type { BankSentence } from '../content/schema';
 import { PERSONS, PRODUCTION_PERSONS, verbByInf } from '../engine';
 import type { Person, TenseKey } from '../engine';
 import { conjugateBareCells } from '../engine/conjugate';
+import { isMultiTurn, turnViews, withContext } from './dialogue';
 import { itemId, rng, shuffle, shuffled } from './rng';
 import { changePerson, changeTense, form, negate, pronominalise } from './reinflect';
 import {
@@ -95,6 +100,7 @@ export interface GapAnalysis {
 
 /** Can this sentence's verb be gapped with exactly one right answer? */
 export function analyseGap(s: BankSentence): GapAnalysis | null {
+  if (isMultiTurn(s)) return null;                       // one turn at a time: see gapTurn
   const c = parseClause(s.es, s.en);
   if (!c || c.participle >= 0) return null;
   const { inf, tense, person } = c.choice;
@@ -132,10 +138,21 @@ function gapped(c: Clause): string {
   return render(replaceCore(c.toks, c.verb, '___'));
 }
 
+/** The first turn of a row (the reply first) whose verb gaps fairly, with
+ *  the turns before it as context. A one-turn row is its own turn. */
+export function gapTurn(row: BankSentence): { g: GapAnalysis; s: BankSentence; context: string } | null {
+  for (const v of turnViews(row)) {
+    const g = analyseGap(v.sentence);
+    if (g) return { g, s: v.sentence, context: v.context };
+  }
+  return null;
+}
+
 /** Ladder step 1: choose the form. */
-export function chooseItem(s: BankSentence, opts: LadderOptions = {}): ChooseItem | null {
-  const g = analyseGap(s);
-  if (!g) return null;
+export function chooseItem(row: BankSentence, opts: LadderOptions = {}): ChooseItem | null {
+  const t = gapTurn(row);
+  if (!t) return null;
+  const { g, s, context } = t;
   const { inf, tense, person } = g.clause.choice;
   const r = rng(`${opts.seed ?? 0}|${s.id}|choose`);
   // prefer near misses: same tense other person, same person other tense
@@ -146,18 +163,19 @@ export function chooseItem(s: BankSentence, opts: LadderOptions = {}): ChooseIte
   const { options, answer } = shuffled(g.answer, ds, r);
   return {
     id: itemId('ladder', s.id, `choose:${inf}:${tense}:${person}`), generator: 'ladder', sentenceId: s.id, nodes: [...s.targets],
-    kind: 'choose', gapped: gapped(g.clause), en: s.en, cue: g.cue, options, answer,
+    kind: 'choose', gapped: withContext(context, gapped(g.clause)), en: s.en, cue: g.cue, options, answer,
   };
 }
 
 /** Ladder step 2: type the form. */
-export function typeFormItem(s: BankSentence): TypeFormItem | null {
-  const g = analyseGap(s);
-  if (!g) return null;
+export function typeFormItem(row: BankSentence): TypeFormItem | null {
+  const t = gapTurn(row);
+  if (!t) return null;
+  const { g, s, context } = t;
   const { inf, tense, person } = g.clause.choice;
   return {
     id: itemId('ladder', s.id, `type:${inf}:${tense}:${person}`), generator: 'ladder', sentenceId: s.id, nodes: [...s.targets],
-    kind: 'typeForm', gapped: gapped(g.clause), en: s.en, cue: g.cue, answer: g.answer, accept: g.accept,
+    kind: 'typeForm', gapped: withContext(context, gapped(g.clause)), en: s.en, cue: g.cue, answer: g.answer, accept: g.accept,
   };
 }
 
@@ -177,8 +195,17 @@ function transform(s: BankSentence, key: string, instruction: string, op: Transf
   };
 }
 
-/** Ladder step 3: every transform the sentence supports. */
-export function transformItems(s: BankSentence): TransformItem[] {
+/** Ladder step 3: every transform the sentence supports (for a dialogue
+ *  row, of the first turn, reply first, that supports any). */
+export function transformItems(row: BankSentence): TransformItem[] {
+  for (const v of turnViews(row)) {
+    const out = transformsOf(v.sentence);
+    if (out.length) return out;
+  }
+  return [];
+}
+
+function transformsOf(s: BankSentence): TransformItem[] {
   const c = parseClause(s.es, s.en);
   if (!c) return [];
   const out: Array<TransformItem | null> = [];

@@ -14,6 +14,8 @@ export type { GapAnalysis, LadderOptions } from './ladder';
 export { translationItems, corpusAlternatives } from './translation';
 export type { TranslationOptions } from './translation';
 export { recombinations } from './recombine';
+export { isMultiTurn, productionView, turnLines, turnView, turnViews } from './dialogue';
+export type { TurnView } from './dialogue';
 export type { RecombineOptions } from './recombine';
 export { alignedPairs, phrasePairs, glossCue, turnsOf } from './pairs';
 export type { AlignedPair, PairSource } from './pairs';

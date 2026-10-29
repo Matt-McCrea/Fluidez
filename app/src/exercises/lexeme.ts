@@ -13,6 +13,7 @@
 import type { BankSentence, NodeId } from '../content/schema';
 import { answerForms } from '../check/exact';
 import { deaccent, verbByInf } from '../engine';
+import { turnViews, withContext } from './dialogue';
 import { analyseGap } from './ladder';
 import { itemId } from './rng';
 import { isPluralWord, low, pluralize, render, replaceCore, toToks } from './spanish';
@@ -50,10 +51,22 @@ function interchangeable(word: string): boolean {
   return INTERCHANGEABLE.some((set) => set.some((x) => deaccent(x) === w));
 }
 
-/** The lexeme gapped out of one sentence, or null if the gap is not fair. */
-export function lexGapItem(lex: LexemeLike, s: BankSentence): LexGapItem | null {
+/** The lexeme gapped out of one sentence, or null if the gap is not fair.
+ *  A dialogue row is gapped in one turn (the one with the word, the reply
+ *  first), with the turns before it shown above. */
+export function lexGapItem(lex: LexemeLike, row: BankSentence): LexGapItem | null {
   const word = bare(lex.es).toLowerCase();
   if (!word || word.split(/\s+/).length > 2) return null;
+  const has = (es: string) => toToks(es).some((t) => low(t) === word || low(t) === pluralize(word));
+  for (const v of turnViews(row, has)) {
+    if (v.context && has(v.context)) continue;                     // the context would give it away
+    const it = lexGapTurn(lex, word, v.sentence);
+    if (it) return v.context ? { ...it, gapped: withContext(v.context, it.gapped) } : it;
+  }
+  return null;
+}
+
+function lexGapTurn(lex: LexemeLike, word: string, s: BankSentence): LexGapItem | null {
   const nodes = [...new Set([lex.id, ...s.targets])];
   // a verb: the ladder decides whether its gap has one answer
   if (verbByInf(word)) {

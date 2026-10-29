@@ -2,7 +2,8 @@
  * matchTranslation — is this Spanish a right translation of the sentence?
  *
  *   1. Expand the sentence into every accepted form (variants.ts): the model,
- *      `accept`, `also`, the other registers of "you", Peninsular forms.
+ *      `accept`, `also`, the other registers of "you", Peninsular forms, and
+ *      the other subject positions of a yes/no question (questionOrders).
  *   2. Canonicalise the input and each form (canon.ts).
  *   3. Pass if the canonical tokens match, the movable adverbials match and
  *      sit in legal slots, and every subject pronoun the learner wrote is
@@ -12,7 +13,7 @@
  * ========================================================================== */
 import { deaccent } from '../../engine';
 import { enWords, verbReadings } from '../../exercises/spanish';
-import { advKey, canon, key, keyDeaccent, type Canon } from './canon';
+import { advKey, canon, key, keyDeaccent, questionOrders, type Canon } from './canon';
 import { diagnose, distance, HINT_TEXT, type HintKind } from './hints';
 import { expandAccepted, type ExpandOptions, type Register, type Variant } from './variants';
 
@@ -90,8 +91,16 @@ function encliticAccentSlip(ci: Canon, cv: Canon): boolean {
 }
 
 export function matchTranslation(input: string, sentence: SentenceLike, opts: MatchOptions = {}): TranslationResult {
-  const variants = expandAccepted(sentence, opts)
-    .sort((a, b) => (a.variant ? 1 : 0) - (b.variant ? 1 : 0));
+  const expanded = expandAccepted(sentence, opts);
+  const seen = new Set(expanded.map((v) => v.es));
+  for (const v of expanded.slice()) {
+    for (const es of questionOrders(v.es)) {
+      if (seen.has(es)) continue;
+      seen.add(es);
+      expanded.push({ ...v, es, model: false });
+    }
+  }
+  const variants = expanded.sort((a, b) => (a.variant ? 1 : 0) - (b.variant ? 1 : 0));
   const model = variants[0]?.es ?? sentence.es;
   const ci = canon(input);
   if (!ci.toks.length && !ci.advs.length) {

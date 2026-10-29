@@ -19,13 +19,18 @@
  *    esta noche…): sentence-initial, just before the verb group, just after
  *    it, or sentence-final. Never inside a noun phrase, never after a
  *    preposition ("el pan de ayer" keeps its ayer).
+ *  - the subject of a yes/no question (questionOrders, used by match.ts as
+ *    accepted variants): "¿Simón habla inglés?" = "¿Habla Simón inglés?" =
+ *    "¿Habla inglés Simón?". After a question word the verb comes first:
+ *    "¿Qué quiere Vale?", never "¿Qué Vale quiere?".
  * NOT FREE: everything else, accents included (an accent-only difference
  * is reported as `near`, not as a pass).
  * ========================================================================== */
 import { analyzeToken, deaccent } from '../../engine';
 import { CLIMBING } from '../../exercises/reinflect';
 import {
-  CLITICS, DETERMINERS, PREPOSITIONS, SUBJECT_PRONOUNS, gerundOf, isInfinitive, participleOf, splitEnclitic, verbReadings, words,
+  CLITICS, DETERMINERS, PREPOSITIONS, SUBJECT_PRONOUNS, gerundOf, isInfinitive, participleOf, splitEnclitic, toToks, verbReadings, words,
+  type Tok,
 } from '../../exercises/spanish';
 
 export interface CanonTok {
@@ -156,3 +161,107 @@ export function canon(text: string): Canon {
 export const key = (c: Canon) => c.toks.map((t) => t.t).join(' ');
 export const keyDeaccent = (c: Canon) => deaccent(key(c));
 export const advKey = (c: Canon) => c.advs.map((a) => a.t).sort().join(' ');
+
+// ---- subject position in yes/no questions ------------------------------------------
+
+/** Words that open a wh-question (alone or after a preposition: "¿De dónde…?", "¿Con quién…?"). */
+const WH = new Set(['qué', 'quién', 'quiénes', 'dónde', 'adónde', 'cuándo', 'cómo', 'cuál', 'cuáles', 'cuánto', 'cuánta', 'cuántos', 'cuántas']);
+/** Capitalised only because they open the question: never a subject. */
+const NOT_SUBJECT = new Set([
+  'aquí', 'allí', 'ahí', 'acá', 'allá', 'así', 'bien', 'mal', 'muy', 'más', 'menos', 'tampoco', 'nunca', 'entonces', 'pues', 'oye', 'mira',
+  'sí', 'no', 'y', 'o', 'pero', 'que', 'si', 'cuando', 'como', 'todo', 'nada', 'algo', 'alguien', 'nadie',
+]);
+const cap1 = (s: string) => (s ? s[0].toUpperCase() + s.slice(1) : s);
+
+/**
+ * The other orders a yes/no question allows for its subject: before the verb
+ * group, right after the finite verb, after the verb group, or at the end.
+ * The subject is a name (or a run of names) or, before the verb, a short
+ * determiner + noun phrase ("¿Tu hermano vive aquí?"). Subject pronouns are
+ * already free (canon). Wh-questions get nothing: the verb stays before the
+ * subject there. Returns rendered sentences, the input itself excluded.
+ */
+export function questionOrders(es: string): string[] {
+  const all = toToks(es);
+  const q = all.findIndex((t) => t.pre.includes('¿'));
+  if (q < 0) return [];
+  const e = all.findIndex((t, i) => i >= q && t.post.includes('?'));
+  if (e < 0 || e - q < 1) return [];
+  const seg = all.slice(q, e + 1);
+  const lw = seg.map((t) => t.core.toLowerCase());
+  if (WH.has(lw[0]) || (PREPOSITIONS.has(lw[0]) && WH.has(lw[1]))) return [];
+  // inner punctuation (a vocative, a comma, quotes): leave the question alone
+  if (seg.some((t, i) => (i > 0 && t.pre) || (i < seg.length - 1 && t.post))) return [];
+  const capd = (i: number) => /^\p{Lu}/u.test(seg[i]?.core ?? '');
+  const plain = (w: string) => !SUBJECT_PRONOUNS[w] && !DETERMINERS.has(w) && !PREPOSITIONS.has(w) && !CLITICS.has(w)
+    && !NOT_SUBJECT.has(w) && !MOVABLE_ONE.has(w) && !WH.has(w);
+  /** A name mid-question: capitalised where nothing forces a capital. */
+  const nameMid = (i: number) => i > 0 && capd(i) && plain(lw[i]);
+  const verbish = (i: number) => i < lw.length && (isFinite(lw[i]) || CLITICS.has(lw[i]) || lw[i] === 'no');
+
+  let span: [number, number] | null = null;   // the subject, in seg
+  let group: [number, number] | null = null;  // the verb group, in seg
+  let finite = -1;
+  // 1. a subject before the verb
+  let s1 = -1;
+  if (capd(0) && plain(lw[0]) && (!isFinite(lw[0]) || isFinite(lw[1] ?? ''))) {
+    // "¿Simón habla…", "¿Vale está…" (two finite readings in a row: the first is a name)
+    s1 = 1;
+    while (s1 < 3 && nameMid(s1)) s1++;
+  } else if (DETERMINERS.has(lw[0])) {
+    // "¿Tu hermano vive aquí?": determiner + one or two words, then the verb
+    for (let i = 2; i <= 3; i++) {
+      if (verbish(i) && !verbish(i - 1)) { s1 = i; break; }
+      if (PREPOSITIONS.has(lw[i - 1]) || isFinite(lw[i - 1] ?? '')) break;
+    }
+  }
+  if (s1 > 0 && verbish(s1)) {
+    const vg = verbGroup(lw.slice(s1));
+    if (vg && vg[0] === 0) {
+      span = [0, s1];
+      group = [s1, s1 + vg[1]];
+      finite = s1 + finiteIndex(lw.slice(s1));
+    }
+  }
+  // 2. verb first, a name after it
+  if (!span && verbish(0)) {
+    const vg = verbGroup(lw);
+    const v = finiteIndex(lw);
+    const third = v >= 0 && verbReadings(lw[v]).some((a) => a.person === 'él/ella' || a.person === 'ellos');
+    if (vg && vg[0] === 0 && third) {
+      for (let k = vg[1]; k < lw.length; k++) {
+        if (!nameMid(k) || PREPOSITIONS.has(lw[k - 1])) continue;
+        let k2 = k + 1;
+        while (k2 < lw.length && k2 - k < 3 && nameMid(k2)) k2++;
+        span = [k, k2];
+        group = vg;
+        finite = v;
+        break;
+      }
+    }
+  }
+  if (!span || !group || finite < 0) return [];
+
+  // the question without its subject, and where the subject may go back in
+  const isName = (i: number) => i >= span![0] && i < span![1] && (i > 0 || capd(0)) && !DETERMINERS.has(lw[i]);
+  const bare: Tok[] = seg.map((t, i) => ({ pre: '', core: i === 0 && !isName(0) ? t.core.toLowerCase() : t.core, post: '' }));
+  const subj = bare.slice(span[0], span[1]);
+  const rest = bare.filter((_, i) => i < span![0] || i >= span![1]);
+  const shift = (i: number) => (i >= span![1] ? i - (span![1] - span![0]) : i);
+  // the verb group again without the subject in it: "¿Puede Simón venir?" -> puede venir
+  const rl = rest.map((t) => t.core.toLowerCase());
+  const rg = verbGroup(rl);
+  const slots = new Set([0, shift(finite) + 1, rg ? rg[1] : shift(group[1] - 1) + 1, rest.length]);
+  const here = span[0] === 0 ? 0 : shift(span[0]);
+  const out: string[] = [];
+  for (const at of slots) {
+    if (at === here) continue;
+    const ts = [...rest.slice(0, at), ...subj, ...rest.slice(at)].map((t) => ({ ...t }));
+    if (q === 0 || /[.!?…]$/.test(all[q - 1].post)) ts[0].core = cap1(ts[0].core);
+    ts[0].pre = seg[0].pre;
+    ts[ts.length - 1].post = seg[seg.length - 1].post;
+    const whole = [...all.slice(0, q), ...ts, ...all.slice(e + 1)];
+    out.push(whole.map((t) => t.pre + t.core + t.post).join(' '));
+  }
+  return out;
+}

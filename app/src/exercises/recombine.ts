@@ -11,9 +11,13 @@
  * new English). Tense and object-pronoun changes, and any sentence whose
  * English cannot be re-inflected safely, become RECOGNITION items: read the
  * new Spanish, answer a plain-English question about it.
+ *
+ * A dialogue row recombines one turn (dialogue.ts): the reply first, else
+ * the first turn that parses. Never the whole exchange.
  * ========================================================================== */
 import type { BankSentence } from '../content/schema';
 import type { Person, TenseKey } from '../engine';
+import { turnViews } from './dialogue';
 import { enChangePerson, enNegate, enPronounFor, glossForms } from './english';
 import { changePerson, changeTense, negate, pronominalise } from './reinflect';
 import { hash32, itemId, rng, shuffle, shuffled } from './rng';
@@ -75,10 +79,12 @@ function nounPhrases(bank: readonly BankSentence[]): Array<{ np: string; clitic:
   return [...out].map(([np, clitic]) => ({ np, clitic }));
 }
 
-export function recombinations(s: BankSentence, opts: RecombineOptions = {}): RecombineItem[] {
-  const c = parseClause(s.es, s.en);
-  if (!c) return [];
-  const known = new Set<string>([sentenceKey(s.es)]);
+export function recombinations(row: BankSentence, opts: RecombineOptions = {}): RecombineItem[] {
+  const view = turnViews(row).find((v) => parseClause(v.sentence.es, v.sentence.en));
+  if (!view) return [];
+  const s = view.sentence;
+  const c = parseClause(s.es, s.en)!;
+  const known = new Set<string>([sentenceKey(s.es), sentenceKey(row.es)]);
   for (const k of opts.known ?? []) known.add(sentenceKey(k));
   for (const b of opts.bank ?? []) known.add(sentenceKey(b.es));
   const novel = (es: string) => !known.has(sentenceKey(es));

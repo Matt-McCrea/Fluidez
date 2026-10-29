@@ -1,9 +1,9 @@
 /* ============================================================================
- * WHERE IS THE MISTAKE? — one plain-English hint, from the first difference
+ * WHERE IS THE MISTAKE? One plain-English hint, from the first difference
  * between the learner's answer and the closest accepted answer.
  *
  * The hint names the KIND of mistake and never gives the answer away: "Check
- * the verb ending — who is doing it?", not "it's comemos". The learner gets
+ * the verb ending: who is doing it?", not "it's comemos". The learner gets
  * one self-correction attempt with it (attempt.ts) before the answer shows.
  * ========================================================================== */
 import { analyzeToken, deaccent } from '../../engine';
@@ -18,11 +18,11 @@ export interface Diagnosis { kind: HintKind; hint: string; at: number }
 export const HINT_TEXT = {
   accents: 'Check the accents.',
   'verb-ending': 'Check the verb ending.',
-  agreement: 'Check the ending — it has to agree (masculine or feminine, one or more).',
-  'word-order': 'Check the word order.',
+  agreement: 'Check the ending: it has to agree (masculine or feminine, one or more).',
+  'word-order': 'Right words, different order: check where each one goes.',
   'missing-word': 'A word is missing.',
   pronoun: 'Check the pronoun (lo, la, le…): who or what does it stand for?',
-  subject: 'Check the subject — who is it about?',
+  subject: 'Check the subject: who is it about?',
   'ser-estar': 'Ser or estar? Is it what something is, or how it is right now?',
   'por-para': 'Por or para? Check that little word.',
   spelling: 'Check the spelling.',
@@ -81,8 +81,8 @@ function classifySub(a: string, b: string, next: string | undefined, at: number)
   if (ARTICLES.has(a) && ARTICLES.has(b)) {
     const ga = nounGender('x', a), gb = nounGender('x', b);
     const pa = /s$/.test(a), pb = /s$/.test(b);
-    if (ga && gb && ga !== gb && next) return { kind: 'article', hint: `Check the article — ${next} is ${GENDER_WORD[gb]}.`, at };
-    if (pa !== pb && next) return { kind: 'article', hint: `Check the article — one ${next.replace(/s$/, '')} or more than one?`, at };
+    if (ga && gb && ga !== gb && next) return { kind: 'article', hint: `Check the article: ${next} is ${GENDER_WORD[gb]}.`, at };
+    if (pa !== pb && next) return { kind: 'article', hint: `Check the article: one ${next.replace(/s$/, '')} or more than one?`, at };
     return { kind: 'article', hint: 'Check the article: "the" (el, la) or "a" (un, una)?', at };
   }
   if (CLITICS.has(a) && CLITICS.has(b)) return { kind: 'pronoun', hint: HINT_TEXT.pronoun, at };
@@ -93,23 +93,43 @@ function classifySub(a: string, b: string, next: string | undefined, at: number)
     const same = rb.filter((x) => infA.has(x.inf.replace(/se$/, '')));
     if (same.length) {
       const sameTense = same.some((x) => ra.some((y) => y.tense === x.tense));
-      return { kind: 'verb-ending', hint: sameTense ? 'Check the verb ending — who is doing it?' : 'Check the verb ending — when does it happen?', at };
+      return { kind: 'verb-ending', hint: sameTense ? 'Check the verb ending: who is doing it?' : 'Check the verb ending: when does it happen?', at };
     }
     const cop = (r: typeof ra) => r.some((x) => x.inf === 'ser') ? 'ser' : r.some((x) => x.inf === 'estar') ? 'estar' : null;
     if (cop(ra) && cop(rb) && cop(ra) !== cop(rb)) return { kind: 'ser-estar', hint: HINT_TEXT['ser-estar'], at };
   }
   if (!ra.length && !rb.length && stem(a) === stem(b) && stem(a).length >= 3) return { kind: 'agreement', hint: HINT_TEXT.agreement, at };
   if (b.length >= 4 && levenshtein(deaccent(a), deaccent(b)) <= 2) return { kind: 'spelling', hint: HINT_TEXT.spelling, at };
-  return { kind: 'wrong-word', hint: `"${a}" doesn't fit there — check the meaning.`, at };
+  return { kind: 'wrong-word', hint: `"${a}" isn't the word here, check the meaning.`, at };
 }
+
+/** Every token of `sub` is in `sup`, counted with repeats. */
+function multisetWithin(sub: readonly string[], sup: readonly string[]): boolean {
+  const left = new Map<string, number>();
+  for (const w of sup) left.set(w, (left.get(w) ?? 0) + 1);
+  for (const w of sub) {
+    const n = left.get(w) ?? 0;
+    if (!n) return false;
+    left.set(w, n - 1);
+  }
+  return true;
+}
+
+/** `sub` appears in `sup` in the same order (gaps allowed). */
+function inOrder(sub: readonly string[], sup: readonly string[]): boolean {
+  let j = 0;
+  for (const w of sup) if (j < sub.length && sub[j] === w) j++;
+  return j === sub.length;
+}
+
+const orderAt = (input: readonly string[], expected: readonly string[]) => Math.max(0, input.findIndex((w, i) => w !== expected[i]));
 
 /** The first real mistake in `input` against `expected` (canonical tokens). */
 export function diagnose(input: readonly string[], expected: readonly string[]): Diagnosis {
   if (!input.length) return { kind: 'empty', hint: HINT_TEXT.empty, at: 0 };
-  const sortKey = (xs: readonly string[]) => xs.slice().sort().join(' ');
-  if (input.length === expected.length && sortKey(input) === sortKey(expected)) {
-    const at = input.findIndex((w, i) => w !== expected[i]);
-    return { kind: 'word-order', hint: HINT_TEXT['word-order'], at: Math.max(0, at) };
+  // the same words, or some of them, in another order: never blame a right word
+  if (multisetWithin(input, expected) && (input.length === expected.length || !inOrder(input, expected))) {
+    return { kind: 'word-order', hint: HINT_TEXT['word-order'], at: orderAt(input, expected) };
   }
   // "dame lo" for "dámelo"
   for (let i = 0; i + 1 < input.length; i++) {
@@ -131,5 +151,9 @@ export function diagnose(input: readonly string[], expected: readonly string[]):
     return { kind: 'missing-word', hint: SMALL.has(real.b!) ? 'A small word is missing.' : HINT_TEXT['missing-word'], at: real.j };
   }
   if (real.op === 'ins') return { kind: 'extra-word', hint: `There's an extra word: "${real.a}".`, at: real.j };
-  return classifySub(real.a!, real.b!, expected[real.j + 1], real.j);
+  const dg = classifySub(real.a!, real.b!, expected[real.j + 1], real.j);
+  // a word the right version has, only somewhere else: the order is the mistake
+  const count = (xs: readonly string[], w: string) => xs.filter((x) => x === w).length;
+  if (dg.kind === 'wrong-word' && count(expected, real.a!) >= count(input, real.a!)) return { kind: 'word-order', hint: HINT_TEXT['word-order'], at: real.j };
+  return dg;
 }
