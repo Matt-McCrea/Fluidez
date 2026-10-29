@@ -1,0 +1,242 @@
+{
+  "id": "ch035",
+  "unit": "u13",
+  "title": "La Burra",
+  "text": "Hernando: Tomás, esta es la Burra.\nTomás miró el taxi. Era amarillo, muy viejo, y tenía una puerta azul.\nTomás: ¿La Burra? ¿Por qué la Burra?\nHernando: Porque es vieja, pero siempre llega. Vale me llamó a las nueve y me dio la dirección. Suba, mijo.\nTomás: Gracias. ¿Cuánto se demora?\nHernando: Con este trancón, media hora. Con la Burra, una hora.\nTomás se sentó adelante. En la radio sonaba un tango.\nHernando: Rosa se sentaba ahí, en esa silla. Escuchaba la radio y bebía tinto. Yo le cantaba tangos, y ella me decía: «Hernando, cante menos y maneje más».\nTomás y Hernando escucharon la canción, y no hablaron.\nEn un semáforo, la Burra paró y no quería seguir.\nHernando llamó al café.\nSimón: ¡Siga, siga! ¡Siga, siga!\nHernando: Muy chistoso, Simón.\nA las doce menos cinco, llegaron al notario. Una mujer joven les abrió la puerta.\nMujer: ¡Siga, por favor! Soy la hija del notario Prieto.\nTomás le mostró la tarjeta y la llave. Ella le explicó todo.\nMujer: Los papeles del edificio existen, y yo le doy los papeles. Pero primero, necesito la escritura original de Rosa. Sin la escritura, no. Son órdenes de mi papá.\nMujer: Y ayer, un hombre del Grupo Altamira vino aquí. Quería los mismos papeles.\nTomás: ¿Y la escritura? ¿Dónde está?\nMujer: Eso no lo sé. Regrese con la escritura original, señor Herrera.\nEn la calle, Tomás miró a Hernando.\nTomás: ¿Usted sabe dónde está la escritura?\nHernando no le contestó. Miró la llave de Joaquín.",
+  "gloss": [
+    {
+      "es": "la Burra",
+      "en": "the Donkey (the name of Hernando's taxi)"
+    },
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "tango",
+      "en": "tango"
+    },
+    {
+      "es": "notario",
+      "en": "notary (the lawyer who keeps property papers)"
+    },
+    {
+      "es": "Porque es vieja, pero siempre llega.",
+      "en": "Because she's old, but she always gets there."
+    },
+    {
+      "es": "En la radio sonaba un tango.",
+      "en": "A tango was playing on the radio."
+    },
+    {
+      "es": "Hernando, cante menos y maneje más.",
+      "en": "Hernando, sing less and drive more."
+    },
+    {
+      "es": "la Burra paró y no quería seguir",
+      "en": "the Burra stopped and refused to go on"
+    },
+    {
+      "es": "Muy chistoso, Simón.",
+      "en": "Very funny, Simón."
+    },
+    {
+      "es": "la escritura original",
+      "en": "the original deed (the paper that says who owns a building)"
+    },
+    {
+      "es": "Son órdenes de mi papá.",
+      "en": "Those are my father's orders."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why is the taxi called la Burra?",
+      "options": [
+        "It is old, but it always gets there",
+        "It is grey",
+        "It was Rosa's",
+        "It is very fast"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando remember about Rosa in the taxi?",
+      "options": [
+        "She sat in the front, listened to the radio and drank coffee while he sang",
+        "She never paid",
+        "She drove the taxi",
+        "She hated tango"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué necesita Tomás para recibir los papeles?",
+      "options": [
+        "La llave de Joaquín",
+        "La escritura original de Rosa",
+        "La tarjeta del notario",
+        "Plata"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why is the notary's news about yesterday worrying?",
+      "options": [
+        "A man from Grupo Altamira came asking for the same papers",
+        "The office is closing for good",
+        "Her father is ill",
+        "Rosa's papers were lost"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What colour is the Burra's door?",
+      "options": [
+        "Blue",
+        "Yellow",
+        "Red",
+        "Black"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who opens the door at the notary's office?",
+      "options": [
+        "The notary's daughter",
+        "Ramón Prieto himself",
+        "A man from Altamira",
+        "Mariana"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando do when Tomás asks him about the deed?",
+      "options": [
+        "He doesn't answer and looks at Joaquín's key",
+        "He laughs",
+        "He calls Vale",
+        "He says he has it at home"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Without Rosa's original deed, the notary won't hand over the papers, and Altamira was asking for them only yesterday. Hernando is staring at Joaquín's key, and Tomás thinks the old man knows more than he says.",
+  "requires": [
+    "c:ayer-anoche",
+    "c:cuanto-se-demora",
+    "c:donde-esta",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:me-llamo",
+    "c:por-favor",
+    "c:porque",
+    "c:siga",
+    "c:siga-siga",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:me-te-nos-objects",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:adelante",
+    "l:ahí",
+    "l:amarillo",
+    "l:aquí",
+    "l:ayer",
+    "l:azul",
+    "l:beber",
+    "l:café",
+    "l:calle",
+    "l:canción",
+    "l:cantar",
+    "l:contestar",
+    "l:cuánto",
+    "l:dar",
+    "l:decir",
+    "l:demora",
+    "l:dirección",
+    "l:dónde",
+    "l:edificio",
+    "l:escritura",
+    "l:escuchar",
+    "l:estar",
+    "l:existir",
+    "l:explicar",
+    "l:favor",
+    "l:hablar",
+    "l:hija",
+    "l:hombre",
+    "l:hora",
+    "l:joven",
+    "l:llamar",
+    "l:llave",
+    "l:llegar",
+    "l:manejar",
+    "l:mirar",
+    "l:mostrar",
+    "l:mujer",
+    "l:necesitar",
+    "l:orden",
+    "l:original",
+    "l:papel",
+    "l:papá",
+    "l:parar",
+    "l:puerta",
+    "l:querer",
+    "l:qué",
+    "l:radio",
+    "l:regresar",
+    "l:saber",
+    "l:seguir",
+    "l:semáforo",
+    "l:sentarse",
+    "l:ser",
+    "l:señor",
+    "l:siempre",
+    "l:silla",
+    "l:sonar",
+    "l:subir",
+    "l:tango",
+    "l:tarjeta",
+    "l:taxi",
+    "l:tener",
+    "l:tinto",
+    "l:trancón",
+    "l:venir",
+    "l:viejo"
+  ]
+}

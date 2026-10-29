@@ -1,0 +1,210 @@
+{
+  "id": "ch034",
+  "unit": "u13",
+  "title": "Dos rutas",
+  "text": "Tomás: Sí, señor. Muy perdido. Voy a la calle 100 con carrera 15.\nVendedor: Tranquilo, joven. Primero, un tinto. Es un regalo.\nTomás tomó el tinto. Era el primer tinto del día, y era excelente.\nVendedor: Mire. Cruce la avenida en el semáforo. En el otro andén está la estación. Tome el TransMilenio de la ruta B, al norte. Baje en la estación de la Cien.\nTomás: ¿Y después?\nVendedor: Después, otro tinto.\nUna señora con un perro: ¡Qué va, joven! Usted necesita la buseta. Primero, regrese al centro en la buseta de la parada de la izquierda. En el centro, tome un taxi. Y en la carrera 7, una moto.\nVendedor: Señora, ¿una moto?\nSeñora: Mi hijo tiene una moto y un carro.\nVendedor: Señora, el joven no necesita a su hijo. Necesita una ruta.\nTomás llamó al café.\nTomás: Vale, ¿derecha o izquierda? ¿Buseta o TransMilenio?\nSimón: ¡Izquierda! ¡Derecha! ¡Izquierda!\nVale: Tomás, el vendedor tiene razón. La buseta no va a la Cien. Y el sur, no. ¡Ojo!\nTomás cruzó la avenida. En el semáforo había carros, motos, buses, busetas y un taxi amarillo, muy viejo.\nTomás no quería regresar al sur. Miró la parada de la buseta, miró la estación y tocó la llave de Joaquín en su chaqueta. Y entró a la estación.\nA las once y media, bajó del bus en la estación de la Cien. Pero el notario estaba en la carrera 7, muy lejos.\nEn el andén, un taxi amarillo y viejo esperaba.\nHernando: ¡Tomás! ¡Aquí, mijo!",
+  "gloss": [
+    {
+      "es": "notario",
+      "en": "notary (the lawyer who keeps property papers)"
+    },
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "la Cien",
+      "en": "Calle 100 (people just say the number)"
+    },
+    {
+      "es": "la ruta B",
+      "en": "route B (a TransMilenio line)"
+    },
+    {
+      "es": "¡Qué va, joven!",
+      "en": "No way, young man."
+    },
+    {
+      "es": "Es un regalo.",
+      "en": "It's on me."
+    },
+    {
+      "es": "Después, otro tinto.",
+      "en": "After that, another coffee."
+    },
+    {
+      "es": "Y el sur, no. ¡Ojo!",
+      "en": "And not the south. Careful."
+    },
+    {
+      "es": "el notario estaba en la carrera 7, muy lejos",
+      "en": "the notary's office was on Carrera 7, a long way off"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the coffee seller tell Tomás to do?",
+      "options": [
+        "Cross the avenue and take TransMilenio route B north",
+        "Take a buseta, then a taxi, then a motorbike",
+        "Go back to the café",
+        "Wait for a taxi"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does the lady with the dog suggest a motorbike?",
+      "options": [
+        "Her son has one",
+        "It is the fastest way",
+        "The coffee seller has one",
+        "Tomás asks for one"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Quién tiene razón, según Vale?",
+      "options": [
+        "La señora del perro",
+        "El vendedor",
+        "Simón",
+        "El hijo de la señora"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who is waiting for Tomás at the Calle 100 station?",
+      "options": [
+        "Vale",
+        "Mariana",
+        "Hernando, in an old yellow taxi",
+        "The lady with the dog"
+      ],
+      "answer": 2
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does the coffee seller give Tomás before the directions?",
+      "options": [
+        "A free coffee",
+        "A map",
+        "A bus card",
+        "A mango"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás see at the traffic lights that matters later?",
+      "options": [
+        "A very old yellow taxi",
+        "A man in an Altamira cap",
+        "The lady's son on his motorbike",
+        "Mariana"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What time does Tomás get off at the Calle 100 station?",
+      "options": [
+        "Half past eleven",
+        "Eight o'clock",
+        "Twelve o'clock",
+        "Half past nine"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomás has finally reached Calle 100, but the notary is on Carrera 7, a long way off, and it is half past eleven. The old yellow taxi on the pavement belongs to Hernando, and it has a name.",
+  "requires": [
+    "c:era",
+    "c:ojo",
+    "c:que-va",
+    "c:tienes",
+    "c:tranquilo",
+    "c:voy-a",
+    "g:commands-usted",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:ir-a-venir-de-place",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:street-names",
+    "p:telling-time",
+    "p:tener-razon",
+    "p:time-sequence-basic",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:amarillo",
+    "l:andén",
+    "l:aquí",
+    "l:avenida",
+    "l:bajar",
+    "l:bus",
+    "l:buseta",
+    "l:café",
+    "l:calle",
+    "l:carrera",
+    "l:carro",
+    "l:centro",
+    "l:chaqueta",
+    "l:cruzar",
+    "l:derecha",
+    "l:después",
+    "l:día",
+    "l:entrar",
+    "l:esperar",
+    "l:estación",
+    "l:estar",
+    "l:excelente",
+    "l:hijo",
+    "l:ir",
+    "l:izquierda",
+    "l:joven",
+    "l:lejos",
+    "l:llamar",
+    "l:llave",
+    "l:mirar",
+    "l:moto",
+    "l:necesitar",
+    "l:norte",
+    "l:ojo",
+    "l:parada",
+    "l:perder",
+    "l:perro",
+    "l:querer",
+    "l:qué",
+    "l:razón",
+    "l:regalo",
+    "l:regresar",
+    "l:ruta",
+    "l:semáforo",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sur",
+    "l:taxi",
+    "l:tener",
+    "l:tinto",
+    "l:tocar",
+    "l:tomar",
+    "l:tranquilo",
+    "l:vendedor",
+    "l:viejo"
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "id": "ch033",
+  "unit": "u13",
+  "title": "Dos tarjetas",
+  "text": "Un señor: Oiga, joven, esa tarjeta no es del TransMilenio.\nTomás miró su mano. Tenía la tarjeta del notario, no la tarjeta del pasaje.\nTomás: Perdón. Tengo dos tarjetas y una llave, pero no tengo pasaje. Con permiso, con permiso.\nTomás llamó al café.\nVale: ¿Aló? Tranquilo, Tomás. Escucha. Compra una tarjeta en la caja y paga el pasaje. Sube al TransMilenio y baja en la Cien.\nSimón: ¡Baja! ¡Baja!\nVale: No, Simón. Primero sube, y luego baja.\nEn el TransMilenio había mucha gente. Tomás estaba entre la puerta y una señora con una bolsa de mangos.\nTomás: Señor, ¿me deja en la Cien, por favor?\nUn estudiante: Parce, esto no es un taxi.\nToda la gente miró a Tomás. Tomás dio su silla a la señora de los mangos.\nSeñora: Gracias, mijo. Toma, un mango para el viaje.\nA las ocho, Tomás llamó otra vez.\nVale: Oye, ¿dónde estás? Lee un letrero.\nTomás: Aquí dice Portal del Sur.\nVale: ¡Tomás! La Cien está en el norte, y tú vas al sur. Baja ya. El notario cierra a las doce.\nSimón: ¡Sube! ¡Sube!\nTomás bajó del bus. Estaba en el sur de Bogotá, con una llave, dos tarjetas y un mango.\nUn vendedor de tintos lo miró.\nVendedor: Oiga, joven. ¿Perdido?",
+  "gloss": [
+    {
+      "es": "notario",
+      "en": "notary (the lawyer who keeps property papers)"
+    },
+    {
+      "es": "parce",
+      "en": "mate (Colombian slang between friends)"
+    },
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "la Cien",
+      "en": "Calle 100 (people just say the number)"
+    },
+    {
+      "es": "Portal del Sur",
+      "en": "South Terminal (the end of the line in the south)"
+    },
+    {
+      "es": "Tengo dos tarjetas y una llave, pero no tengo pasaje.",
+      "en": "I've got two cards and a key, but I haven't got a fare."
+    },
+    {
+      "es": "Parce, esto no es un taxi.",
+      "en": "Mate, this isn't a taxi."
+    },
+    {
+      "es": "un mango para el viaje",
+      "en": "a mango for the journey"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why won't the ticket gate open for Tomás?",
+      "options": [
+        "He has no money",
+        "He is using the notary's card",
+        "The station is closed",
+        "He is going the wrong way"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does everyone on the TransMilenio look at Tomás?",
+      "options": [
+        "He asks to be dropped off at Calle 100, as if it were a taxi",
+        "He sings a song",
+        "He eats a mango",
+        "He shouts at Simón"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Adónde va el TransMilenio de Tomás?",
+      "options": [
+        "Al norte",
+        "Al sur",
+        "Al centro",
+        "Al café"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Vale tell Tomás to get off at once?",
+      "options": [
+        "The notary closes at twelve, and he is going the wrong way",
+        "Simón is sick",
+        "The café needs him",
+        "It is raining"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does the woman give Tomás, and why?",
+      "options": [
+        "A mango, because he gave her his seat",
+        "A coffee, because he is lost",
+        "A card, because he has no fare",
+        "A map, because he asks for one"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What two orders does Simón shout?",
+      "options": [
+        "¡Baja! and later ¡Sube!",
+        "¡Oiga! and ¡Con permiso!",
+        "¡A la orden! and ¡Siga!",
+        "¡Sube! and later ¡Baja!"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is the man who speaks to Tomás at the end selling?",
+      "options": [
+        "Mangos",
+        "Coffee",
+        "Bus cards",
+        "Newspapers"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Tomás is at the far southern end of the city at eight in the morning, the notary closes at noon, and a coffee seller has just asked if he's lost. Tomorrow two strangers give him directions, and they don't agree at all.",
+  "requires": [
+    "c:alo",
+    "c:bien-y-tu",
+    "c:gracias-de-nada",
+    "c:me-deja-en",
+    "c:oiga-oye",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:tengo",
+    "c:tranquilo",
+    "c:voy-vas",
+    "g:commands-tu",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:container-de",
+    "p:demonstratives-basic",
+    "p:ir-a-venir-de-place",
+    "p:la-gente-singular",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:aquí",
+    "l:bajar",
+    "l:bolsa",
+    "l:bus",
+    "l:café",
+    "l:caja",
+    "l:cerrar",
+    "l:comprar",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:dónde",
+    "l:escuchar",
+    "l:estar",
+    "l:estudiante",
+    "l:favor",
+    "l:gente",
+    "l:ir",
+    "l:joven",
+    "l:leer",
+    "l:letrero",
+    "l:llamar",
+    "l:llave",
+    "l:mango",
+    "l:mano",
+    "l:mirar",
+    "l:norte",
+    "l:oír",
+    "l:pagar",
+    "l:pasaje",
+    "l:perder",
+    "l:perdón",
+    "l:permiso",
+    "l:puerta",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:silla",
+    "l:subir",
+    "l:sur",
+    "l:tarjeta",
+    "l:taxi",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:tranquilo",
+    "l:vendedor",
+    "l:vez",
+    "l:viaje"
+  ]
+}
