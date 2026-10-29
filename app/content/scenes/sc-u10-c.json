@@ -33,7 +33,7 @@
       "id": "t2",
       "npc": "A Camilo le encantan las arepas. A Sara y a Pablo les gusta el pollo, pero no les gusta la sopa.",
       "npcEn": "Camilo loves arepas. Sara and Pablo like chicken, but they don't like soup.",
-      "intent": "Suggest arepas for him (Camilo) and rice with chicken for them (Sara and Pablo), without their names.",
+      "intent": "Suggest arepas for Camilo and rice with chicken for the other two, saying him and them instead of their names.",
       "accept": [
         "Las arepas para él, y arroz con pollo para ellos.",
         "Entonces, arepas para él y arroz con pollo para ellos.",

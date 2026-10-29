@@ -990,7 +990,7 @@
   },
   {
     "id": "u10-0046",
-    "es": "Mi mamá recomienda siempre la sopa.",
+    "es": "Mi mamá siempre recomienda la sopa.",
     "en": "My mom always recommends the soup.",
     "accept": [],
     "acceptEn": [],
@@ -2820,7 +2820,7 @@
   {
     "id": "u10-0128",
     "es": "A Vale no le gusta la torta muy dulce.",
-    "en": "Vale doesn't like a very sweet cake.",
+    "en": "Vale doesn't like her cake too sweet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3067,18 +3067,17 @@
   },
   {
     "id": "u10-0138",
-    "es": "A mi tío le gusta el fútbol y la cerveza.",
-    "en": "My uncle likes soccer and beer.",
+    "es": "A mi tío le encanta la cerveza fría.",
+    "en": "My uncle loves cold beer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:gustar-basic",
       "g:gustar-full",
       "g:present-ar",
       "l:cerveza",
-      "l:fútbol",
-      "l:gustar",
+      "l:encantar",
+      "l:frío",
       "l:tío",
       "p:possessives-basic"
     ],
@@ -4420,8 +4419,8 @@
   },
   {
     "id": "u10-0198",
-    "es": "Le gusta tanto el ajiaco, come dos platos.",
-    "en": "He likes the ajiaco so much, he eats two bowls.",
+    "es": "Le gusta mucho el ajiaco: come dos platos.",
+    "en": "He really likes the ajiaco: he eats two bowls.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4432,7 +4431,8 @@
       "l:ajiaco",
       "l:comer",
       "l:gustar",
-      "l:plato"
+      "l:plato",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:ajiaco",
@@ -4971,23 +4971,24 @@
   },
   {
     "id": "u10-0222",
-    "es": "¿A quién le gusta el picante?",
-    "en": "Who likes spicy food?",
+    "es": "Aquí a todos les gusta el picante, ¿no?",
+    "en": "Everyone here likes spicy food, right?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:gustar-basic",
+      "g:gustar-full",
       "g:present-ar",
+      "l:aquí",
       "l:gustar",
-      "l:picante",
-      "l:quién",
-      "p:prep-questions-basic"
+      "l:picante"
     ],
     "targets": [
       "l:picante"
     ],
-    "kind": "dialogue",
+    "kind": "question",
     "unit": "u10",
     "theme": "what people like",
     "source": "gen"
@@ -5535,17 +5536,16 @@
   },
   {
     "id": "u10-0246",
-    "es": "Esa máquina no sirve, ya no funciona.",
-    "en": "That machine is no good, it doesn't work anymore.",
+    "es": "Esa máquina no sirve, necesitamos otra.",
+    "en": "That machine doesn't work, we need another one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-sirve",
-      "c:ya-no",
       "g:demonstratives",
       "g:present-ar",
-      "l:funcionar",
       "l:máquina",
+      "l:necesitar",
       "l:servir"
     ],
     "targets": [
@@ -5952,8 +5952,8 @@
   },
   {
     "id": "u10-0264",
-    "es": "Pido un favor: ¿me presta su celular?",
-    "en": "I'm asking a favor: can I borrow your cell phone? (polite)",
+    "es": "Te pido un favor: ¿me prestas tu celular?",
+    "en": "I'm asking you a favor: can you lend me your cell phone? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6595,16 +6595,20 @@
   },
   {
     "id": "u10-0293",
-    "es": "Tomás dice buen provecho a todos.",
-    "en": "Tomás says buen provecho to everyone.",
+    "es": "Simón dice buen provecho cuando alguien come.",
+    "en": "Simón says buen provecho when someone eats.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:buen-provecho",
+      "g:present-er-ir",
       "g:stem-e-i",
       "l:buen",
+      "l:comer",
       "l:decir",
-      "l:provecho"
+      "l:provecho",
+      "p:cuando-basic",
+      "p:indefinites-basic"
     ],
     "targets": [
       "c:buen-provecho",
@@ -7332,7 +7336,7 @@
   {
     "id": "u10-0326",
     "es": "Pido el menú, pero el mesero trae la carta.",
-    "en": "I ask for the menu, but the waiter brings the carta.",
+    "en": "I ask for the set menu, but the waiter brings the full menu.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8219,8 +8223,8 @@
   },
   {
     "id": "u10-0367",
-    "es": "Claro, hay una silla libre con nosotros.",
-    "en": "Of course, there is a free chair with us.",
+    "es": "Claro, aquí hay una silla libre para usted.",
+    "en": "Of course, there is a free chair here for you. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8229,9 +8233,11 @@
       "g:gender-articles",
       "g:hay-vs-esta",
       "g:prep-pronouns",
+      "l:aquí",
       "l:claro",
       "l:libre",
-      "l:silla"
+      "l:silla",
+      "p:para-inf"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -8405,16 +8411,15 @@
   },
   {
     "id": "u10-0376",
-    "es": "Hoy almuerzo con usted, señor Hernando.",
-    "en": "Today I'm having lunch with you, Mr. Hernando.",
+    "es": "Hoy almuerzo con usted, don Hernando.",
+    "en": "Today I'm having lunch with you, Don Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:prep-pronouns",
       "g:stem-boot",
       "l:almorzar",
-      "l:hoy",
-      "l:señor"
+      "l:hoy"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -9179,20 +9184,19 @@
   },
   {
     "id": "u10-0413",
-    "es": "¿Es para llevar o es para ti?",
-    "en": "Is it to go or is it for you? (to a friend)",
+    "es": "¿Es para ti o para tu mamá?",
+    "en": "Is it for you or for your mom? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:para-llevar",
       "g:prep-pronouns",
       "g:ser-identity",
-      "l:llevar",
+      "l:mamá",
       "l:ser",
-      "p:para-inf"
+      "p:para-inf",
+      "p:possessives-basic"
     ],
     "targets": [
-      "c:para-llevar",
       "g:prep-pronouns"
     ],
     "kind": "dialogue",
@@ -10509,7 +10513,7 @@
   {
     "id": "u10-0471",
     "es": "El jugo de mango es mejor en agua.",
-    "en": "Mango juice is better with water.",
+    "en": "Mango juice is better made with water.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11319,7 +11323,7 @@
   {
     "id": "u10-0510",
     "es": "Tengo un hambre enorme.",
-    "en": "I'm enormously hungry.",
+    "en": "I'm starving.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11358,15 +11362,19 @@
   },
   {
     "id": "u10-0512",
-    "es": "El hambre no espera.",
-    "en": "Hunger doesn't wait.",
+    "es": "Simón tiene mucha hambre por la mañana.",
+    "en": "Simón is really hungry in the morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:present-ar",
-      "l:esperar",
-      "l:hambre"
+      "g:stem-boot",
+      "l:hambre",
+      "l:mañana",
+      "l:tener",
+      "p:quantifiers-basic",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "statement",
@@ -11417,7 +11425,7 @@
   {
     "id": "u10-0515",
     "es": "Con tanta hambre, pido dos platos.",
-    "en": "With so much hunger, I order two dishes.",
+    "en": "I'm so hungry I'm ordering two dishes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11581,7 +11589,7 @@
   {
     "id": "u10-0523",
     "es": "Otros dos tintos y una torta.",
-    "en": "Another two black coffees and a cake.",
+    "en": "Two more black coffees and a cake.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11600,7 +11608,7 @@
   {
     "id": "u10-0524",
     "es": "Otras tres empanadas, por favor.",
-    "en": "Another three empanadas, please.",
+    "en": "Three more empanadas, please.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12551,18 +12559,20 @@
   },
   {
     "id": "u10-0573",
-    "es": "Nos vemos mañana a las diez, pero llego tarde.",
-    "en": "We meet tomorrow at ten, but I'll be late.",
+    "es": "Nos vemos mañana a las diez, pero tengo poco tiempo.",
+    "en": "See you tomorrow at ten, but I don't have much time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:chao-nos-vemos",
+      "c:tengo",
       "g:gender-articles",
-      "g:present-ar",
-      "l:llegar",
+      "g:yo-irregular",
       "l:mañana",
-      "l:tarde",
-      "l:ver"
+      "l:tener",
+      "l:tiempo",
+      "l:ver",
+      "p:quantifiers-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -14243,21 +14253,21 @@
   },
   {
     "id": "u10-0650",
-    "es": "Una reseña grande trae mucha gente.",
-    "en": "A big review brings lots of people.",
+    "es": "Una buena reseña trae mucha gente.",
+    "en": "A good review brings lots of people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
+      "l:buena",
       "l:gente",
-      "l:grande",
       "l:reseña",
       "l:traer",
       "p:quantifiers-basic"
     ],
     "targets": [
-      "l:grande"
+      "l:gente"
     ],
     "kind": "statement",
     "unit": "u10",
@@ -15117,22 +15127,20 @@
   },
   {
     "id": "u10-0690",
-    "es": "Tomás dice buen provecho a la señora.",
-    "en": "Tomás says enjoy your meal to the lady.",
+    "es": "Tomás olvida decir buen provecho.",
+    "en": "Tomás forgets to say buen provecho.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:buen-provecho",
-      "g:gender-articles",
-      "g:stem-e-i",
+      "g:present-ar",
       "l:buen",
       "l:decir",
-      "l:provecho",
-      "l:señora"
+      "l:olvidar",
+      "l:provecho"
     ],
     "targets": [
       "c:buen-provecho",
-      "g:stem-e-i",
       "l:provecho"
     ],
     "kind": "statement",
@@ -15870,8 +15878,8 @@
   },
   {
     "id": "u10-0722",
-    "es": "¡Qué rico!, ¿y tiene queso?",
-    "en": "Delicious!, and does it have cheese?",
+    "es": "¡Qué rico! ¿Y tiene queso?",
+    "en": "Delicious! And does it have cheese?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16037,16 +16045,16 @@
   },
   {
     "id": "u10-0729",
-    "es": "Mesero, ¿qué me recomienda hoy?",
-    "en": "Waiter, what do you recommend today? (polite)",
+    "es": "Señor, ¿qué me recomienda hoy?",
+    "en": "Sir, what do you recommend today? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-me-recomienda",
       "l:hoy",
-      "l:mesero",
       "l:qué",
-      "l:recomendar"
+      "l:recomendar",
+      "l:señor"
     ],
     "targets": [
       "c:que-me-recomienda",
@@ -16291,15 +16299,18 @@
   },
   {
     "id": "u10-0740",
-    "es": "¿Para comer aquí o para llevar?\nPara comer aquí.",
-    "en": "To eat here or to take away?\nTo eat here.",
+    "es": "¿Para llevar?\nNo, para comer aquí. Hay mesa.",
+    "en": "To take away?\nNo, to eat here. There is a table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "c:para-llevar",
+      "g:hay-vs-esta",
       "l:aquí",
       "l:comer",
       "l:llevar",
+      "l:mesa",
       "p:para-inf"
     ],
     "targets": [
@@ -16333,15 +16344,23 @@
   },
   {
     "id": "u10-0742",
-    "es": "¡Buen provecho, señora!",
-    "en": "Enjoy your meal, ma'am!",
+    "es": "¡Buen provecho, señora! La sopa está muy rica hoy.",
+    "en": "Enjoy your meal, ma'am! The soup is very good today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:buen-provecho",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
       "l:buen",
+      "l:estar",
+      "l:hoy",
       "l:provecho",
-      "l:señora"
+      "l:rico",
+      "l:señora",
+      "l:sopa",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "c:buen-provecho",
@@ -16374,15 +16393,17 @@
   },
   {
     "id": "u10-0744",
-    "es": "¡Buen provecho, joven!",
-    "en": "Enjoy your meal, young man!",
+    "es": "Buen provecho, joven. ¿Algo más de tomar?",
+    "en": "Enjoy your meal, young man. Anything else to drink?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:algo-mas",
       "c:buen-provecho",
       "l:buen",
       "l:joven",
-      "l:provecho"
+      "l:provecho",
+      "l:tomar"
     ],
     "targets": [
       "c:buen-provecho",
@@ -17052,15 +17073,14 @@
   },
   {
     "id": "u10-0773",
-    "es": "¿Cuánto le debo, señor Hernando?",
-    "en": "What do I owe you, Mr. Hernando?",
+    "es": "¿Cuánto le debo, don Hernando?",
+    "en": "What do I owe you, Don Hernando?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:cuanto-le-debo",
       "l:cuánto",
-      "l:deber",
-      "l:señor"
+      "l:deber"
     ],
     "targets": [
       "c:cuanto-le-debo"
@@ -17072,14 +17092,17 @@
   },
   {
     "id": "u10-0774",
-    "es": "¿Cuánto le debo a usted?",
-    "en": "What do I owe you? (polite)",
+    "es": "Ya me voy. ¿Cuánto le debo?",
+    "en": "I'm leaving now. What do I owe you? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:cuanto-le-debo",
+      "c:voy-vas",
+      "g:ir-a-plans",
       "l:cuánto",
-      "l:deber"
+      "l:deber",
+      "l:irse"
     ],
     "targets": [
       "c:cuanto-le-debo"
@@ -17202,15 +17225,16 @@
   },
   {
     "id": "u10-0780",
-    "es": "¿Cuánto le debo, joven?",
-    "en": "What do I owe you, young man?",
+    "es": "¿Cuánto le debo? Somos tres.",
+    "en": "What do I owe you? There are three of us. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:cuanto-le-debo",
+      "g:ser-identity",
       "l:cuánto",
       "l:deber",
-      "l:joven"
+      "l:ser"
     ],
     "targets": [
       "c:cuanto-le-debo"
@@ -17248,13 +17272,17 @@
   },
   {
     "id": "u10-0782",
-    "es": "¿Me trae la sal?",
-    "en": "Could you bring me the salt? (polite)",
+    "es": "Perdón, ¿me trae la sal, por favor?",
+    "en": "Excuse me, could you bring me the salt, please? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:perdon-disculpe",
+      "c:por-favor",
       "g:gender-articles",
       "g:present-er-ir",
+      "l:favor",
+      "l:perdón",
       "l:sal",
       "l:traer",
       "p:me-te-nos-objects",
@@ -17270,16 +17298,21 @@
   },
   {
     "id": "u10-0783",
-    "es": "¿Me trae otra cuchara?",
-    "en": "Could you bring me another spoon? (polite)",
+    "es": "Mi cuchara está en el piso, ¿me trae otra?",
+    "en": "My spoon is on the floor, could you bring me another? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
       "g:present-er-ir",
       "l:cuchara",
+      "l:estar",
+      "l:piso",
       "l:traer",
       "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:me-trae",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:cuchara",
@@ -17342,14 +17375,15 @@
   },
   {
     "id": "u10-0786",
-    "es": "¿Me trae una taza de café?",
-    "en": "Could you bring me a cup of coffee? (polite)",
+    "es": "Joven, ¿me trae una taza de café?",
+    "en": "Young man, could you bring me a cup of coffee? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
       "l:café",
+      "l:joven",
       "l:taza",
       "l:traer",
       "p:me-te-nos-objects",
@@ -17366,13 +17400,18 @@
   },
   {
     "id": "u10-0787",
-    "es": "¿Me trae un jugo de mango?",
-    "en": "Could you bring me a mango juice? (polite)",
+    "es": "Hace calor. ¿Me trae un jugo de mango bien frío?",
+    "en": "It's hot. Could you bring me a really cold mango juice? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "g:gender-articles",
       "g:present-er-ir",
+      "l:bien",
+      "l:calor",
+      "l:frío",
+      "l:hacer",
       "l:jugo",
       "l:mango",
       "l:traer",
@@ -17653,18 +17692,20 @@
   },
   {
     "id": "u10-0800",
-    "es": "¿Me trae una arepa con huevo?",
-    "en": "Could you bring me an arepa with egg? (polite)",
+    "es": "Para el desayuno, ¿me trae una arepa con huevo?",
+    "en": "For breakfast, could you bring me an arepa with egg? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
       "l:arepa",
+      "l:desayuno",
       "l:huevo",
       "l:traer",
       "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:me-trae",
+      "p:para-inf"
     ],
     "targets": [
       "l:arepa",
@@ -17885,21 +17926,23 @@
   },
   {
     "id": "u10-0811",
-    "es": "¿Me regala una libra de plátano?",
-    "en": "Could I have a pound of plantain?",
+    "es": "Para la bandeja, ¿me regala dos libras de plátano?",
+    "en": "For the platter, could I have two pounds of plantain?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-regala",
       "g:gender-articles",
+      "l:bandeja",
       "l:libra",
       "l:plátano",
-      "l:regalar"
+      "l:regalar",
+      "p:para-inf"
     ],
     "targets": [
       "l:plátano"
     ],
-    "kind": "dialogue",
+    "kind": "question",
     "unit": "u10",
     "theme": "restaurant phrases, polite requests",
     "source": "gen"
@@ -17944,8 +17987,8 @@
   },
   {
     "id": "u10-0814",
-    "es": "Debes probar el ajiaco de los sábados.",
-    "en": "You should try the Saturday ajiaco. (to a friend)",
+    "es": "El sábado debes probar el ajiaco.",
+    "en": "On Saturday you should try the ajiaco. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17993,8 +18036,8 @@
   },
   {
     "id": "u10-0816",
-    "es": "Debes comer algo antes de salir.",
-    "en": "You should eat something before going out. (to a friend)",
+    "es": "Antes de salir, debes comer algo.",
+    "en": "Before going out, you should eat something. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18038,19 +18081,18 @@
   },
   {
     "id": "u10-0818",
-    "es": "No debes beber tanto tinto, es mucho.",
-    "en": "You shouldn't drink so much black coffee, it's a lot. (to a friend)",
+    "es": "No debes tomar tanto tinto en la noche.",
+    "en": "You shouldn't drink so much black coffee at night. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-er-ir",
-      "g:ser-identity",
       "g:tener-que-hay-que",
-      "l:beber",
       "l:deber",
-      "l:ser",
+      "l:noche",
       "l:tinto",
-      "p:quantifiers-basic"
+      "l:tomar"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18062,22 +18104,23 @@
   },
   {
     "id": "u10-0819",
-    "es": "Debes llamar a Vale antes de las diez.",
-    "en": "You should call Vale before ten. (to a friend)",
+    "es": "¿A qué hora debes llamar a Vale?",
+    "en": "What time do you have to call Vale? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:a-que-hora",
       "g:present-er-ir",
       "g:tener-que-hay-que",
-      "l:antes",
       "l:deber",
-      "l:llamar"
+      "l:hora",
+      "l:llamar",
+      "l:qué"
     ],
     "targets": [
       "g:tener-que-hay-que"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u10",
     "theme": "should and must",
     "source": "gen"
@@ -18186,12 +18229,12 @@
   },
   {
     "id": "u10-0824",
-    "es": "Debes hablar con tu jefe sobre el horario.",
-    "en": "You should talk to your boss about the schedule. (to a friend)",
+    "es": "Con ese horario, debes hablar con tu jefe.",
+    "en": "With those hours, you should talk to your boss. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:demonstratives",
       "g:present-er-ir",
       "g:tener-que-hay-que",
       "l:deber",
@@ -18234,17 +18277,18 @@
   },
   {
     "id": "u10-0826",
-    "es": "Debes descansar más los domingos.",
-    "en": "You should rest more on Sundays. (to a friend)",
+    "es": "Trabajas mucho, debes descansar más.",
+    "en": "You work a lot, you should rest more. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:present-ar",
       "g:present-er-ir",
       "g:tener-que-hay-que",
       "l:deber",
       "l:descansar",
-      "l:domingo"
+      "l:trabajar",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18256,18 +18300,21 @@
   },
   {
     "id": "u10-0827",
-    "es": "Debes cerrar la puerta de la cocina.",
-    "en": "You should close the kitchen door. (to a friend)",
+    "es": "Simón está en la cocina otra vez. ¡Debes cerrar la puerta!",
+    "en": "Simón is in the kitchen again. You should close the door! (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:gender-articles",
       "g:present-er-ir",
       "g:tener-que-hay-que",
       "l:cerrar",
       "l:cocina",
       "l:deber",
-      "l:puerta"
+      "l:estar",
+      "l:puerta",
+      "l:vez"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18279,8 +18326,8 @@
   },
   {
     "id": "u10-0828",
-    "es": "Debes leer la carta dos veces.",
-    "en": "You should read the menu twice. (to a friend)",
+    "es": "Primero debes mirar los precios en la carta.",
+    "en": "First you should look at the prices on the menu. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18289,8 +18336,9 @@
       "g:tener-que-hay-que",
       "l:carta",
       "l:deber",
-      "l:leer",
-      "l:vez"
+      "l:mirar",
+      "l:precio",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "g:tener-que-hay-que",
@@ -18592,20 +18640,19 @@
   },
   {
     "id": "u10-0841",
-    "es": "Debo ir al banco antes de abrir.",
-    "en": "I have to go to the bank before opening.",
+    "es": "Mañana temprano debo ir al banco.",
+    "en": "Early tomorrow I have to go to the bank.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:prep-infinitive",
       "g:present-er-ir",
       "g:tener-que-hay-que",
-      "l:abrir",
-      "l:antes",
       "l:banco",
       "l:deber",
-      "l:ir"
+      "l:ir",
+      "l:mañana",
+      "l:temprano"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -18752,8 +18799,8 @@
   },
   {
     "id": "u10-0848",
-    "es": "Debemos hacer cuarenta buñuelos.",
-    "en": "We have to make forty buñuelos.",
+    "es": "¿Cuarenta buñuelos? Debemos hacer más.",
+    "en": "Forty buñuelos? We need to make more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18774,19 +18821,21 @@
   },
   {
     "id": "u10-0849",
-    "es": "Debemos cambiar la carta esta semana.",
-    "en": "We have to change the menu this week.",
+    "es": "Antes del sábado debemos tener la carta nueva.",
+    "en": "Before Saturday we have to have the new menu.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:present-er-ir",
       "g:tener-que-hay-que",
-      "l:cambiar",
+      "l:antes",
       "l:carta",
       "l:deber",
-      "l:semana",
-      "p:demonstratives-basic"
+      "l:nuevo",
+      "l:sábado",
+      "l:tener"
     ],
     "targets": [
       "g:tener-que-hay-que",
@@ -18819,18 +18868,20 @@
   },
   {
     "id": "u10-0851",
-    "es": "Debemos pagar el arriendo del café.",
-    "en": "We have to pay the café's rent.",
+    "es": "Este mes debemos pagar el arriendo y el agua.",
+    "en": "This month we have to pay the rent and the water bill.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
       "g:tener-que-hay-que",
+      "l:agua",
       "l:arriendo",
-      "l:café",
       "l:deber",
-      "l:pagar"
+      "l:mes",
+      "l:pagar",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19590,8 +19641,8 @@
   },
   {
     "id": "u10-0884",
-    "es": "Los clientes deben esperar en la fila.",
-    "en": "The customers have to wait in line.",
+    "es": "En la fila, los clientes deben esperar su número.",
+    "en": "In the line, customers have to wait for their number.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19601,7 +19652,9 @@
       "l:cliente",
       "l:deber",
       "l:esperar",
-      "l:fila"
+      "l:fila",
+      "l:número",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19613,8 +19666,8 @@
   },
   {
     "id": "u10-0885",
-    "es": "Los clientes deben pagar antes de salir.",
-    "en": "The customers should pay before leaving.",
+    "es": "¿Los clientes deben pagar antes o después de comer?",
+    "en": "Should customers pay before or after eating?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19624,31 +19677,36 @@
       "g:tener-que-hay-que",
       "l:antes",
       "l:cliente",
+      "l:comer",
       "l:deber",
+      "l:después",
       "l:pagar",
-      "l:salir"
+      "p:time-sequence-basic"
     ],
     "targets": [
       "g:tener-que-hay-que"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u10",
     "theme": "should and must",
     "source": "gen"
   },
   {
     "id": "u10-0886",
-    "es": "Los meseros deben llegar a las seis.",
-    "en": "The waiters have to arrive at six.",
+    "es": "Los meseros nuevos deben aprender la carta.",
+    "en": "The new waiters have to learn the menu.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:present-er-ir",
       "g:tener-que-hay-que",
+      "l:aprender",
+      "l:carta",
       "l:deber",
-      "l:llegar",
-      "l:mesero"
+      "l:mesero",
+      "l:nuevo"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19683,7 +19741,7 @@
   },
   {
     "id": "u10-0888",
-    "es": "Los niños no deben beber café.",
+    "es": "Los niños no deben tomar café.",
     "en": "Children shouldn't drink coffee.",
     "accept": [],
     "acceptEn": [],
@@ -19691,10 +19749,10 @@
       "g:gender-articles",
       "g:present-er-ir",
       "g:tener-que-hay-que",
-      "l:beber",
       "l:café",
       "l:deber",
-      "l:niño"
+      "l:niño",
+      "l:tomar"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19866,8 +19924,8 @@
   },
   {
     "id": "u10-0896",
-    "es": "Deben abrir el café a las cinco.",
-    "en": "They should open the café at five.",
+    "es": "Los sábados la cocina debe abrir a las cinco.",
+    "en": "On Saturdays the kitchen has to open at five.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19875,8 +19933,9 @@
       "g:present-er-ir",
       "g:tener-que-hay-que",
       "l:abrir",
-      "l:café",
-      "l:deber"
+      "l:cocina",
+      "l:deber",
+      "l:sábado"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19888,17 +19947,20 @@
   },
   {
     "id": "u10-0897",
-    "es": "Debo hablar con Tomás sobre el café.",
-    "en": "I have to talk to Tomás about the café.",
+    "es": "Esta noche debo hablar con Tomás: Vale está triste.",
+    "en": "Tonight I have to talk to Tomás: Vale is sad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:estar-location-states",
       "g:present-er-ir",
       "g:tener-que-hay-que",
-      "l:café",
       "l:deber",
-      "l:hablar"
+      "l:estar",
+      "l:hablar",
+      "l:noche",
+      "l:triste",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:tener-que-hay-que"
@@ -19985,30 +20047,24 @@
   },
   {
     "id": "u10-0901",
-    "es": "A los clientes les gusta la fila corta, debemos servir rápido.",
-    "en": "Customers like a short line, we have to serve quickly.",
+    "es": "A los clientes no les gusta esperar mucho para pagar.",
+    "en": "Customers don't like waiting long to pay.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:gustar-basic",
       "g:gustar-full",
       "g:present-ar",
-      "g:present-er-ir",
-      "g:tener-que-hay-que",
       "l:cliente",
-      "l:corto",
-      "l:deber",
-      "l:fila",
+      "l:esperar",
       "l:gustar",
-      "l:rápido",
-      "l:servir"
+      "l:pagar",
+      "p:para-inf",
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "g:gustar-full",
-      "g:tener-que-hay-que",
-      "l:servir"
+      "g:gustar-full"
     ],
     "kind": "statement",
     "unit": "u10",
@@ -20487,18 +20543,22 @@
   },
   {
     "id": "u10-0920",
-    "es": "¿Para qué sirve ese tenedor?",
-    "en": "What is that fork for?",
+    "es": "Este tenedor es muy pequeño. ¿Para qué sirve?",
+    "en": "This fork is very small. What's it for?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
+      "g:ser-identity",
       "g:stem-e-i",
+      "l:pequeño",
       "l:qué",
+      "l:ser",
       "l:servir",
       "l:tenedor",
+      "p:demonstratives-basic",
       "p:para-inf",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:stem-e-i",
@@ -20512,17 +20572,17 @@
   },
   {
     "id": "u10-0921",
-    "es": "¿Para qué sirve la taza con dos manos?",
-    "en": "What is the cup with two handles for?",
+    "es": "¿Para qué sirve esta taza tan grande?",
+    "en": "What is this huge cup for?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:stem-e-i",
-      "l:mano",
+      "l:grande",
       "l:qué",
       "l:servir",
       "l:taza",
+      "p:demonstratives-basic",
       "p:para-inf",
       "p:prep-questions-basic"
     ],
@@ -20538,8 +20598,8 @@
   },
   {
     "id": "u10-0922",
-    "es": "¿Para qué sirve el vaso alto?",
-    "en": "What is the tall glass for?",
+    "es": "Vale, ¿y el vaso alto? ¿Para qué sirve?",
+    "en": "Vale, what about the tall glass? What's it for?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20716,13 +20776,18 @@
   },
   {
     "id": "u10-0929",
-    "es": "¿Para qué sirve esa puerta?",
-    "en": "What is that door for?",
+    "es": "Hay una puerta pequeña en la cocina. ¿Para qué sirve?",
+    "en": "There's a small door in the kitchen. What's it for?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
+      "c:hay",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:hay-vs-esta",
       "g:stem-e-i",
+      "l:cocina",
+      "l:pequeño",
       "l:puerta",
       "l:qué",
       "l:servir",
@@ -20904,14 +20969,15 @@
   },
   {
     "id": "u10-0936",
-    "es": "El plato sirve para servir la bandeja.",
-    "en": "The plate is for serving the platter.",
+    "es": "El plato grande sirve para la bandeja.",
+    "en": "The big plate is for the platter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-e-i",
       "l:bandeja",
+      "l:grande",
       "l:plato",
       "l:servir",
       "p:para-inf",
@@ -20931,7 +20997,7 @@
   },
   {
     "id": "u10-0937",
-    "es": "El vaso sirve para beber agua.",
+    "es": "El vaso sirve para tomar agua.",
     "en": "The glass is for drinking water.",
     "accept": [],
     "acceptEn": [],
@@ -20939,8 +21005,8 @@
       "g:gender-articles",
       "g:stem-e-i",
       "l:agua",
-      "l:beber",
       "l:servir",
+      "l:tomar",
       "l:vaso",
       "p:para-inf",
       "p:servir-para"
@@ -21354,20 +21420,19 @@
   },
   {
     "id": "u10-0953",
-    "es": "La puerta no sirve, hay que arreglar la llave.",
-    "en": "The door doesn't work, the key has to be fixed.",
+    "es": "Esta llave no sirve, la puerta no abre.",
+    "en": "This key doesn't work, the door won't open.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "c:hay-que",
       "c:no-sirve",
       "g:gender-articles",
-      "g:verb-infinitive",
-      "l:arreglar",
+      "g:present-er-ir",
+      "l:abrir",
       "l:llave",
       "l:puerta",
-      "l:servir"
+      "l:servir",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "l:servir"
@@ -21508,52 +21573,50 @@
   },
   {
     "id": "u10-0959",
-    "es": "El cuchillo no sirve, ¿me trae otro?",
-    "en": "The knife is no good, could you bring me another? (polite)",
+    "es": "Joven, este cuchillo no sirve para la carne.",
+    "en": "Young man, this knife is no good for the meat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-sirve",
       "g:gender-articles",
-      "g:present-er-ir",
+      "l:carne",
       "l:cuchillo",
+      "l:joven",
       "l:servir",
-      "l:traer",
-      "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:demonstratives-basic",
+      "p:para-inf",
+      "p:servir-para"
     ],
     "targets": [
-      "l:cuchillo",
-      "l:servir",
-      "p:me-trae"
+      "p:servir-para",
+      "c:no-sirve"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u10",
     "theme": "what things are for",
     "source": "gen"
   },
   {
     "id": "u10-0960",
-    "es": "Esta taza no sirve, ¿me trae otra?",
-    "en": "This cup is no good, could you bring me another? (polite)",
+    "es": "Perdón, ¿me sirve el tinto en otra taza?",
+    "en": "Excuse me, could you serve my black coffee in another cup? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-sirve",
-      "g:present-er-ir",
+      "c:perdon-disculpe",
+      "g:gender-articles",
+      "g:stem-e-i",
+      "l:perdón",
       "l:servir",
       "l:taza",
-      "l:traer",
-      "p:demonstratives-basic",
-      "p:me-te-nos-objects",
-      "p:me-trae"
+      "l:tinto",
+      "p:me-te-nos-objects"
     ],
     "targets": [
-      "l:servir",
-      "l:taza",
-      "p:me-trae"
+      "g:stem-e-i"
     ],
-    "kind": "dialogue",
+    "kind": "question",
     "unit": "u10",
     "theme": "what things are for",
     "source": "gen"
@@ -21831,18 +21894,24 @@
   },
   {
     "id": "u10-0972",
-    "es": "¿Me trae una ensalada con pollo?",
-    "en": "Could you bring me a salad with chicken? (polite)",
+    "es": "No tengo mucha hambre. ¿Me trae solo una ensalada con pollo?",
+    "en": "I'm not very hungry. Could you just bring me a chicken salad? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tengo",
       "g:gender-articles",
       "g:present-er-ir",
+      "g:yo-irregular",
       "l:ensalada",
+      "l:hambre",
       "l:pollo",
+      "l:tener",
       "l:traer",
       "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:me-trae",
+      "p:quantifiers-basic",
+      "p:tener-hambre"
     ],
     "targets": [
       "l:ensalada",
@@ -22184,7 +22253,7 @@
   },
   {
     "id": "u10-0987",
-    "es": "¿Me pasas el aguapanela?",
+    "es": "¿Me pasas la aguapanela?",
     "en": "Can you pass me the aguapanela? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -23691,15 +23760,15 @@
   },
   {
     "id": "u10-1054",
-    "es": "Mi madre vive lejos de nosotros.",
-    "en": "My mother lives far from us.",
+    "es": "Mi mamá vive lejos de nosotros.",
+    "en": "My mom lives far from us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:prep-pronouns",
       "g:present-er-ir",
       "l:lejos",
-      "l:madre",
+      "l:mamá",
       "l:vivir",
       "p:possessives-basic"
     ],
@@ -23909,17 +23978,19 @@
   },
   {
     "id": "u10-1064",
-    "es": "Sin ti, el café no es igual.",
-    "en": "Without you, the café is not the same. (to a friend)",
+    "es": "Sin ti, el café está muy tranquilo.",
+    "en": "Without you, the café is very quiet. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:es-lo-mismo",
+      "c:tranquilo",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:prep-pronouns",
       "l:café",
-      "l:igual",
-      "l:ser"
+      "l:estar",
+      "l:tranquilo",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -24015,21 +24086,17 @@
   },
   {
     "id": "u10-1069",
-    "es": "Sin él, la historia no es igual.",
-    "en": "Without him, the story isn't the same.",
+    "es": "Sin él, Simón no come.",
+    "en": "Without him, Simón doesn't eat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:es-lo-mismo",
-      "g:gender-articles",
       "g:prep-pronouns",
-      "l:historia",
-      "l:igual",
-      "l:ser"
+      "g:present-er-ir",
+      "l:comer"
     ],
     "targets": [
-      "g:prep-pronouns",
-      "l:historia"
+      "g:prep-pronouns"
     ],
     "kind": "statement",
     "unit": "u10",
@@ -24479,7 +24546,7 @@
   {
     "id": "u10-1089",
     "es": "A las señoras les gusta la mesa del patio.",
-    "en": "The ladies like the table in the patio.",
+    "en": "The ladies like the table on the patio.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25010,16 +25077,19 @@
   },
   {
     "id": "u10-1112",
-    "es": "Debes pagar la cuenta antes de las ocho.",
-    "en": "You should pay the bill before eight. (to a friend)",
+    "es": "El café cierra a las ocho, debes pagar la cuenta antes.",
+    "en": "The café closes at eight, you have to pay the bill before then. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:la-cuenta",
       "g:gender-articles",
       "g:present-er-ir",
+      "g:stem-boot",
       "g:tener-que-hay-que",
       "l:antes",
+      "l:café",
+      "l:cerrar",
       "l:cuenta",
       "l:deber",
       "l:pagar"
@@ -25110,15 +25180,17 @@
   },
   {
     "id": "u10-1116",
-    "es": "Debo comprar queso y plátano para mañana.",
-    "en": "I need to buy cheese and plantain for tomorrow.",
+    "es": "Para el desayuno de mañana debo comprar plátano y queso.",
+    "en": "For tomorrow's breakfast I need to buy plantain and cheese.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-er-ir",
       "g:tener-que-hay-que",
       "l:comprar",
       "l:deber",
+      "l:desayuno",
       "l:mañana",
       "l:plátano",
       "l:queso",
@@ -25230,23 +25302,25 @@
   },
   {
     "id": "u10-1121",
-    "es": "Deben llegar a las seis para abrir.",
-    "en": "They have to arrive at six to open.",
+    "es": "¿A qué hora deben llegar los meseros?",
+    "en": "What time do the waiters have to arrive?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-que-hora",
       "g:gender-articles",
       "g:present-er-ir",
       "g:tener-que-hay-que",
-      "l:abrir",
       "l:deber",
+      "l:hora",
       "l:llegar",
-      "p:para-inf"
+      "l:mesero",
+      "l:qué"
     ],
     "targets": [
       "g:tener-que-hay-que"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u10",
     "theme": "more likes, shoulds, uses",
     "source": "gen"
@@ -25350,16 +25424,19 @@
   },
   {
     "id": "u10-1126",
-    "es": "¿Me trae la cuenta ahora, por favor?",
-    "en": "Could you bring me the bill now, please? (polite)",
+    "es": "Tengo una reunión a las dos. ¿Me trae la cuenta ahora?",
+    "en": "I have a meeting at two. Could you bring me the bill now? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:la-cuenta",
-      "c:por-favor",
+      "c:tengo",
+      "g:gender-articles",
+      "g:yo-irregular",
       "l:ahora",
       "l:cuenta",
-      "l:favor",
+      "l:reunión",
+      "l:tener",
       "l:traer"
     ],
     "targets": [
@@ -25373,15 +25450,15 @@
   },
   {
     "id": "u10-1127",
-    "es": "¿Me trae un tinto con leche?",
-    "en": "Could you bring me a black coffee with milk? (polite)",
+    "es": "¿Me trae un café con leche?",
+    "en": "Could you bring me a coffee with milk? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
+      "l:café",
       "l:leche",
-      "l:tinto",
       "l:traer",
       "p:me-te-nos-objects",
       "p:me-trae"
@@ -25420,18 +25497,21 @@
   },
   {
     "id": "u10-1129",
-    "es": "¿Me trae una bandeja para dos?",
-    "en": "Could you bring me a platter for two? (polite)",
+    "es": "¿Me trae una bandeja pequeña? No como mucho.",
+    "en": "Could you bring me a small platter? I don't eat much. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:present-er-ir",
       "l:bandeja",
+      "l:comer",
+      "l:pequeño",
       "l:traer",
       "p:me-te-nos-objects",
       "p:me-trae",
-      "p:para-inf"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:bandeja",
@@ -25826,8 +25906,8 @@
   },
   {
     "id": "u10-1145",
-    "es": "La caja de ayer ya no sirve.",
-    "en": "Yesterday's box is no good anymore.",
+    "es": "La leche de ayer ya no sirve.",
+    "en": "Yesterday's milk is no good anymore.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25836,7 +25916,7 @@
       "c:ya-no",
       "g:gender-articles",
       "l:ayer",
-      "l:caja",
+      "l:leche",
       "l:servir"
     ],
     "targets": [
@@ -25849,19 +25929,23 @@
   },
   {
     "id": "u10-1146",
-    "es": "La olla de ayer no sirve para el ajiaco.",
-    "en": "Yesterday's pot is no good for the ajiaco.",
+    "es": "Esta olla es muy pequeña, no sirve para el ajiaco.",
+    "en": "This pot is very small, it's no good for the ajiaco.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
       "c:no-sirve",
+      "g:adjective-agreement",
       "g:gender-articles",
+      "g:ser-identity",
       "l:ajiaco",
-      "l:ayer",
       "l:olla",
+      "l:pequeño",
+      "l:ser",
       "l:servir",
+      "p:demonstratives-basic",
       "p:para-inf",
+      "p:quantifiers-basic",
       "p:servir-para"
     ],
     "targets": [

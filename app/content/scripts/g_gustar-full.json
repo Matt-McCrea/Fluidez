@@ -150,7 +150,9 @@
       "prompt": "Ask a customer (formal) if he likes the ajiaco.",
       "answer": "¿Le gusta el ajiaco?",
       "accept": [
-        "¿A usted le gusta el ajiaco?"
+        "¿A usted le gusta el ajiaco?",
+        "¿Le gusta el ajiaco, señor?",
+        "¿A usted le gusta el ajiaco, señor?"
       ],
       "why": "Formal 'you' takes *le*, the same word as 'him' or 'her'."
     },
@@ -173,10 +175,12 @@
       "why": "'You all' takes *les*. One menu, so *gusta*."
     },
     {
-      "prompt": "Make it about Vale: *Me encanta la torta.*",
-      "answer": "A Vale le encanta la torta.",
-      "accept": [],
-      "why": "Swap *me* for *le* and name her with *a Vale* in front."
+      "prompt": "Make it about Vale: *Me gustan los postres.*",
+      "answer": "A Vale le gustan los postres.",
+      "accept": [
+        "Le gustan los postres a Vale."
+      ],
+      "why": "*Me* becomes *le*, and several desserts still take *gustan*."
     },
     {
       "prompt": "Make it about us: *No me gusta el horario.*",

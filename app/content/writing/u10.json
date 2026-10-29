@@ -2,7 +2,7 @@
   {
     "id": "w-u10-01",
     "unit": "u10",
-    "prompt": "Mariana asks what food you like now that you live in Bogotá. Text her back, someone your age, in two short sentences: one thing you like and one you don't.",
+    "prompt": "Mariana asks what food you like now that you live in Bogotá. Text her back as a friend, in two short sentences: one thing you like and one you don't.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -103,19 +103,17 @@
         "type": "avoidsAny",
         "words": [
           "pedo",
-          "pedimos",
           "pedes"
         ],
         "label": "pedir changes e to i: pido"
       }
     ],
-    "model": "Siempre pido ajiaco. Hoy pido también una limonada.",
+    "model": "Siempre pido ajiaco. Y con el ajiaco, pido una limonada.",
     "focus": "g:stem-e-i",
     "requires": [
       "g:gender-articles",
       "g:stem-e-i",
       "l:ajiaco",
-      "l:hoy",
       "l:limonada",
       "l:pedir",
       "l:siempre"
@@ -242,7 +240,7 @@
   {
     "id": "w-u10-07",
     "unit": "u10",
-    "prompt": "You are at the market and Don Hernando's stall sells everything. Ask him (older, you'd call usted) for a pound of tomatoes and half a dozen eggs.",
+    "prompt": "You are at the Paloquemao market. Ask the stallholder (an older man you would call usted) for a pound of tomatoes and half a dozen eggs.",
     "minWords": 6,
     "maxWords": 20,
     "constraints": [
@@ -356,7 +354,7 @@
   {
     "id": "w-u10-10",
     "unit": "u10",
-    "prompt": "Text Mariana to set up lunch at the café. Suggest a day and a time, someone your age, in one or two sentences.",
+    "prompt": "Text Mariana, a friend, to set up lunch at the café. Suggest a day and a time in one question.",
     "minWords": 6,
     "maxWords": 25,
     "constraints": [
@@ -367,8 +365,8 @@
       },
       {
         "type": "regex",
-        "pattern": "\\ba las (\\w+)\\b",
-        "label": "give a time with a las"
+        "pattern": "\\ba las? \\w+",
+        "label": "give a time with a las (or a la una)"
       },
       {
         "type": "question",
@@ -394,7 +392,7 @@
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\ba \\w+ le (gusta|gustan|encanta|encantan)\\b",
+        "pattern": "\\ba (don )?\\w+ le (gusta|gustan|encanta|encantan)\\b",
         "label": "use a [name] le gusta or le encanta"
       },
       {
@@ -412,7 +410,7 @@
         "label": "le goes before gusta"
       }
     ],
-    "model": "A Don Hernando le encanta el ajiaco. A Vale le gustan los buñuelos.",
+    "model": "A don Hernando le encanta el ajiaco. A Vale le gustan los buñuelos.",
     "focus": "g:gustar-full",
     "requires": [
       "g:gender-articles",

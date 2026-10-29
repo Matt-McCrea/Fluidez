@@ -2,7 +2,7 @@
   "id": "ch025",
   "unit": "u10",
   "title": "No la recomiendo",
-  "text": "Sábado, once de la mañana. Tomás practica con Simón.\nTomás: ¿Le provoca algo de tomar, señor? Hay limonada y aguapanela.\nSimón: ¡Aguapanela fría!\nEn la pizarra está la carta de hoy: «Ajiaco con pollo. Bandeja: arroz, fríjoles, carne, huevo y plátano. Pescado con ensalada. Arepa con queso y empanadas».\nA las doce llegan los taxistas.\nHernando: Una bandeja, mijo. Mucha carne, mucho arroz, muchos fríjoles y dos plátanos. Sin ensalada.\nTaxista: Yo quiero una arepa con queso y huevo, y una limonada.\nOtro taxista: ¿Me regala tres empanadas?\nA la una entra una mujer con gafas y un cuaderno. Es la bloguera.\nMujer: ¿Qué me recomienda?\nTomás: El ajiaco, señora. Es la sopa de la casa, con pollo y mazorca.\nMujer: Quiero el ajiaco y el pescado.\nTomás: ¿El pescado? No la recomiendo.\nMujer: ¿Cómo? ¿No recomienda la sopa?\nTomás: No, no. La sopa no... La sopa sí... ¡Ay!\nSimón: ¡Qué rico! ¡Qué rico!\nLa mujer escribe en el cuaderno. Después come toda la sopa sin hablar.\nMujer: ¿Cuánto le debo?\nLa mujer paga y sale. En la mesa hay un vaso de aguapanela y diez mil pesos de propina.\nVale: ¿Qué pasó con la bloguera, Tomás?\nTomás: Hablé de pescado.\nTomás: Vale, ¿nos vemos mañana a las siete? Para hablar.\nVale: Mañana no puedo. ¿Mejor el lunes?\nTomás: Listo, el lunes a las siete.",
+  "text": "Sábado, once de la mañana. Tomás practica con Simón.\nTomás: ¿Le provoca algo de tomar, señor? Hay limonada y aguapanela.\nSimón: ¡Aguapanela fría!\nEn la pizarra está la carta de hoy: «Ajiaco con pollo. Bandeja: arroz, fríjoles, carne, huevo y plátano. Pescado con ensalada. Arepa con queso y empanadas».\nA las doce llegan los taxistas.\nHernando: Una bandeja, mijo. Mucha carne, mucho arroz, muchos fríjoles y dos plátanos. Sin ensalada.\nTaxista: Yo quiero una arepa con queso y huevo, y una limonada.\nOtro taxista: ¿Me regala tres empanadas?\nA la una entra una mujer con gafas y un cuaderno. Es la bloguera.\nMujer: ¿Qué me recomienda?\nTomás: El ajiaco, señora. Es la sopa de la casa, con pollo y mazorca.\nMujer: Quiero el ajiaco y el pescado.\nTomás: ¿El pescado? No la recomiendo.\nMujer: ¿Cómo? ¿No recomienda la sopa?\nTomás: No, no. La sopa no... La sopa sí... ¡Ay!\nSimón: ¡Qué rico! ¡Qué rico!\nLa mujer escribe en el cuaderno. Después come toda la sopa sin hablar.\nMujer: ¿Cuánto le debo?\nLa mujer paga y sale. En la mesa hay un vaso de aguapanela y diez mil pesos de propina.\nVale: ¿Qué pasó con la bloguera, Tomás?\nTomás: Yo hablé del pescado, y ella entendió la sopa.\nVale: ¡Ay, Tomás!\nTomás: Vale, ¿nos vemos mañana a las siete? Para hablar.\nVale: Mañana no puedo. ¿Mejor el lunes?\nTomás: Listo, el lunes a las siete.",
   "gloss": [
     {
       "es": "la pizarra",
@@ -33,8 +33,8 @@
       "en": "I don't recommend it. (la means a feminine thing, like la sopa, but el pescado needs lo)"
     },
     {
-      "es": "Hablé de pescado.",
-      "en": "I talked about fish."
+      "es": "Yo hablé del pescado, y ella entendió la sopa.",
+      "en": "I was talking about the fish, and she understood the soup."
     }
   ],
   "questions": [
@@ -139,6 +139,7 @@
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
+    "g:preterite-er-ir",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
@@ -163,6 +164,7 @@
     "l:después",
     "l:empanada",
     "l:ensalada",
+    "l:entender",
     "l:entrar",
     "l:escribir",
     "l:estar",

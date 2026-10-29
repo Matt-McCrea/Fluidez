@@ -6,38 +6,162 @@
     "en": "I asked for the bill and asked the price of the ajiaco."
   },
   "examples": [
-    { "es": "Pedí la cuenta.", "en": "I asked for the bill." },
-    { "es": "Pregunté el precio.", "en": "I asked the price." },
-    { "es": "Don Hernando siempre pide un tinto.", "en": "Don Hernando always orders a black coffee." },
-    { "es": "Mariana pregunta mucho.", "en": "Mariana asks a lot of questions." },
-    { "es": "Vale pide ayuda.", "en": "Vale asks for help." },
-    { "es": "Pregunté dónde está el baño.", "en": "I asked where the bathroom is." }
+    {
+      "es": "Pedí la cuenta.",
+      "en": "I asked for the bill."
+    },
+    {
+      "es": "Pregunté el precio.",
+      "en": "I asked the price."
+    },
+    {
+      "es": "Don Hernando siempre pide un tinto.",
+      "en": "Don Hernando always orders a black coffee."
+    },
+    {
+      "es": "Mariana pregunta mucho.",
+      "en": "Mariana asks a lot of questions."
+    },
+    {
+      "es": "Vale pide ayuda.",
+      "en": "Vale asks for help."
+    },
+    {
+      "es": "Pregunté dónde está el baño.",
+      "en": "I asked where the bathroom is."
+    }
   ],
   "rule": "Ask yourself: do you want a thing, or an answer?\n\nA thing (food, the bill, help, a favour): *pedir*. *Pido un tinto. Pedí la cuenta.* No word for 'for': *pedir* already means 'ask for'.\n\nAn answer (information, a price, where something is): *preguntar*. *Pregunté el precio. Pregunté dónde está el baño.*\n\nIn a café, ordering is *pedir* too: *¿Qué pides?* is 'What are you ordering?'\n\n*Preguntar* is a regular *-ar* verb: *pregunto*, *preguntas*, *pregunta*. *Pedir* is the one that changes inside: *pido*, *pides*, *pedimos*.",
   "smallPrint": "*Pedir* is a request for an object or action; *preguntar* is a request for information. English 'ask' covers both.",
   "readAndPick": [
-    { "es": "Pedí un jugo.", "options": ["I ordered a juice.", "I asked about the juice."], "answer": 0 },
-    { "es": "Pregunté el precio.", "options": ["I asked for a discount.", "I asked the price."], "answer": 1 },
-    { "es": "Vale pide ayuda.", "options": ["Vale asks for help.", "Vale asks a question."], "answer": 0 },
-    { "es": "Mariana pregunta mucho.", "options": ["Mariana orders a lot.", "Mariana asks a lot of questions."], "answer": 1 },
-    { "es": "Pregunté dónde está el baño.", "options": ["I asked where the bathroom is.", "I asked for the bathroom key."], "answer": 0 },
-    { "es": "Pedimos dos tintos.", "options": ["We asked about two black coffees.", "We order two black coffees."], "answer": 1 },
-    { "es": "Tomás pregunta la hora.", "options": ["Tomás asks for more time.", "Tomás asks what time it is."], "answer": 1 },
-    { "es": "Siempre pido el ajiaco.", "options": ["I always order the ajiaco.", "I always ask about the ajiaco."], "answer": 0 }
+    {
+      "es": "Pedí un jugo.",
+      "options": [
+        "I ordered a juice.",
+        "I asked about the juice."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Pregunté el precio.",
+      "options": [
+        "I asked for a discount.",
+        "I asked the price."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale pide ayuda.",
+      "options": [
+        "Vale asks for help.",
+        "Vale asks a question."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana pregunta mucho.",
+      "options": [
+        "Mariana orders a lot.",
+        "Mariana asks a lot of questions."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pregunté dónde está el baño.",
+      "options": [
+        "I asked where the bathroom is.",
+        "I asked for the bathroom key."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Pedimos dos tintos.",
+      "options": [
+        "We ask about two black coffees.",
+        "We order two black coffees."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás pregunta la hora.",
+      "options": [
+        "Tomás asks for more time.",
+        "Tomás asks what time it is."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siempre pido el ajiaco.",
+      "options": [
+        "I always order the ajiaco.",
+        "I always ask about the ajiaco."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *pedí* or *pregunté* and type the whole sentence: ___ la cuenta.", "answer": "Pedí la cuenta.", "accept": [], "why": "The bill is a thing you want, so *pedir*." },
-    { "prompt": "Choose *pido* or *pregunto* and type the whole sentence: Siempre ___ el precio.", "answer": "Siempre pregunto el precio.", "accept": [], "why": "A price is information, an answer, so *preguntar*." },
-    { "prompt": "Say: I asked where the bathroom is.", "answer": "Pregunté dónde está el baño.", "accept": [], "why": "You wanted an answer, so *preguntar*." },
-    { "prompt": "Say: Vale asks for help.", "answer": "Vale pide ayuda.", "accept": [], "why": "Help is something you want, and *pedir* already includes 'for'." },
-    { "prompt": "Ask a friend what they're ordering.", "answer": "¿Qué pides?", "accept": ["¿Qué pides tú?", "¿Tú qué pides?"], "why": "Ordering food is *pedir*, and friend 'you' is *pides*." },
-    { "prompt": "Say: We order two black coffees.", "answer": "Pedimos dos tintos.", "accept": [], "why": "Ordering is *pedir*, and *we* keeps the *e*: *pedimos*." },
-    { "prompt": "Say: Mariana asks a lot of questions.", "answer": "Mariana pregunta mucho.", "accept": [], "why": "Questions are *preguntar*. Spanish doesn't need the word 'questions'." }
+    {
+      "prompt": "Choose *pedí* or *pregunté* and type the whole sentence: ___ la cuenta.",
+      "answer": "Pedí la cuenta.",
+      "accept": [],
+      "why": "The bill is a thing you want, so *pedir*."
+    },
+    {
+      "prompt": "Choose *pido* or *pregunto* and type the whole sentence: Siempre ___ el precio.",
+      "answer": "Siempre pregunto el precio.",
+      "accept": [],
+      "why": "A price is information, an answer, so *preguntar*."
+    },
+    {
+      "prompt": "Say: I asked where the bathroom is.",
+      "answer": "Pregunté dónde está el baño.",
+      "accept": [],
+      "why": "You wanted an answer, so *preguntar*."
+    },
+    {
+      "prompt": "Say: Vale asks for help.",
+      "answer": "Vale pide ayuda.",
+      "accept": [],
+      "why": "Help is something you want, and *pedir* already includes 'for'."
+    },
+    {
+      "prompt": "Ask a friend what they're ordering.",
+      "answer": "¿Qué pides?",
+      "accept": [
+        "¿Qué pides tú?",
+        "¿Tú qué pides?"
+      ],
+      "why": "Ordering food is *pedir*, and friend 'you' is *pides*."
+    },
+    {
+      "prompt": "Say: We order two black coffees.",
+      "answer": "Pedimos dos tintos.",
+      "accept": [],
+      "why": "Ordering is *pedir*, and *we* keeps the *e*: *pedimos*."
+    },
+    {
+      "prompt": "Say: Mariana asks a lot of questions.",
+      "answer": "Mariana pregunta mucho.",
+      "accept": [],
+      "why": "Questions are *preguntar*. Spanish doesn't need the word 'questions'."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Pregunté por la cuenta.", "right": "Pedí la cuenta.", "why": "Almost. You want the bill itself, so it's *pedir*, with no word for 'for'." },
-    { "wrong": "Pedí dónde está el baño.", "right": "Pregunté dónde está el baño.", "why": "You wanted information, not a thing: *preguntar*." },
-    { "wrong": "Pido para un tinto.", "right": "Pido un tinto.", "why": "*Pedir* already means 'ask for', so nothing goes between the verb and the thing." }
+    {
+      "wrong": "Pregunté por la cuenta.",
+      "right": "Pedí la cuenta.",
+      "why": "Almost. You want the bill itself, so it's *pedir*, with no word for 'for'."
+    },
+    {
+      "wrong": "Pedí dónde está el baño.",
+      "right": "Pregunté dónde está el baño.",
+      "why": "You wanted information, not a thing: *preguntar*."
+    },
+    {
+      "wrong": "Pido para un tinto.",
+      "right": "Pido un tinto.",
+      "why": "*Pedir* already means 'ask for', so nothing goes between the verb and the thing."
+    }
   ],
   "personal": "Think about the last time you ate out. What did you order, and did you ask anything? *Pedí… Pregunté…*"
 }
