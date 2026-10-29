@@ -1,0 +1,90 @@
+{
+  "node": "p:tardar-en",
+  "hook": {
+    "line": "In Bogotá traffic nobody asks how far it is. They ask how long it takes, and the answer is always more than you hoped.",
+    "es": "¿Cuánto tardas en llegar a la oficina?",
+    "en": "How long does it take you to get to the office? (to a friend)"
+  },
+  "examples": [
+    { "es": "Tardo media hora en llegar.", "en": "It takes me half an hour to get there." },
+    { "es": "El bus tarda mucho en pasar.", "en": "The bus takes ages to come." },
+    { "es": "¿Cuánto tarda en llegar al centro?", "en": "How long does it take you to get to the centre? (formal)" },
+    { "es": "Tomás tardó dos horas en llegar.", "en": "It took Tomás two hours to get there." },
+    { "es": "Vale tarda diez minutos en hacer el café.", "en": "It takes Vale ten minutes to make the coffee." },
+    { "es": "Tardamos una hora en encontrar la estación.", "en": "It took us an hour to find the station." }
+  ],
+  "rule": "English says it takes me an hour. Spanish makes you the one doing it: *tardo una hora*, I take an hour.\n\nThe order is fixed: *tardar*, then the time, then *en*, then the action: *tardo veinte minutos en llegar*. It's always *en* there, never *para*.\n\nTo ask: *¿Cuánto tardas?*, or *¿Cuánto tarda?* to a stranger.\n\nIn Colombia you'll hear *demorarse* even more, with the little *me*: *¿Cuánto te demoras?*, *me demoro una hora*. Same idea, same *en*.",
+  "smallPrint": "*Tardar en* plus an infinitive is how Spanish measures how long an action takes.",
+  "readAndPick": [
+    { "es": "Tardo una hora.", "options": ["It takes him an hour.", "It takes me an hour.", "I'm an hour late."], "answer": 1 },
+    { "es": "¿Cuánto tardas?", "options": ["How long does it take you? (to a friend)", "How long does it take him?"], "answer": 0 },
+    { "es": "Tardó veinte minutos en llegar.", "options": ["It takes him twenty minutes to get there.", "It took me twenty minutes to get there.", "It took him twenty minutes to get there."], "answer": 2 },
+    { "es": "Tardamos mucho.", "options": ["It took us a long time.", "It took them a long time."], "answer": 0 },
+    { "es": "¿Cuánto tarda en bus?", "options": ["How long does it take you by bus? (to a friend)", "How long does it take you by bus? (formal)"], "answer": 1 },
+    { "es": "Tardé media hora en llegar.", "options": ["It took me half an hour to get there.", "It takes me half an hour to get there."], "answer": 0 },
+    { "es": "Tardan diez minutos en llegar.", "options": ["It takes him ten minutes to get there.", "It takes us ten minutes to get there.", "It takes them ten minutes to get there."], "answer": 2 },
+    { "es": "El bus tarda en pasar.", "options": ["The bus is taking a while to come.", "The bus comes in the afternoon."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *en* or *para*: Tardo una hora ___ llegar.",
+      "answer": "Tardo una hora en llegar.",
+      "accept": [],
+      "why": "After the time, the action always takes *en*."
+    },
+    {
+      "prompt": "Choose *tardo* or *tardas* (asking a friend): ¿Cuánto ___ en llegar?",
+      "answer": "¿Cuánto tardas en llegar?",
+      "accept": [],
+      "why": "You're asking about your friend, so the *tú* form: *tardas*."
+    },
+    {
+      "prompt": "Ask a friend: How long does it take you to get to work?",
+      "answer": "¿Cuánto tardas en llegar al trabajo?",
+      "accept": ["¿Cuánto te demoras en llegar al trabajo?"],
+      "why": "*Tardas* for a friend, then *en llegar*."
+    },
+    {
+      "prompt": "Say: It takes me twenty minutes to get there.",
+      "answer": "Tardo veinte minutos en llegar.",
+      "accept": ["Me demoro veinte minutos en llegar."],
+      "why": "You are the one taking the time, so *tardo*."
+    },
+    {
+      "prompt": "Ask a stranger (*usted*): How long does it take you to get to the centre?",
+      "answer": "¿Cuánto tarda en llegar al centro?",
+      "accept": [],
+      "why": "*Usted* takes the same form as he or she: *tarda*."
+    },
+    {
+      "prompt": "Put it in the past (it took me an hour): Tardo una hora en llegar.",
+      "answer": "Tardé una hora en llegar.",
+      "accept": [],
+      "why": "*Tardar* is a regular *-ar* verb: *tardé*, like *llegué*."
+    },
+    {
+      "prompt": "Make it about *we*: Tardo diez minutos en llegar.",
+      "answer": "Tardamos diez minutos en llegar.",
+      "accept": [],
+      "why": "Only the verb changes: *tardamos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tardo una hora para llegar.",
+      "right": "Tardo una hora en llegar.",
+      "why": "Almost. The action after the time takes *en*, not *para*."
+    },
+    {
+      "wrong": "Me toma una hora en llegar.",
+      "right": "Tardo una hora en llegar.",
+      "why": "Copying it takes me trips you up. Make yourself the one who takes the time: *tardo*."
+    },
+    {
+      "wrong": "¿Cuánto tardas llegar?",
+      "right": "¿Cuánto tardas en llegar?",
+      "why": "Don't drop the *en*: it links the time to the action."
+    }
+  ],
+  "personal": "How long does it take you to get to work, or to the nearest shop? Say it with *tardo* and *en*."
+}

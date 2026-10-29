@@ -1,0 +1,90 @@
+{
+  "node": "p:subirse-bajarse",
+  "hook": {
+    "line": "On a Bogotá bus there's no bell to press. You tell the driver, out loud, where you're getting off.",
+    "es": "Me bajo en la próxima, por favor.",
+    "en": "I'm getting off at the next stop, please."
+  },
+  "examples": [
+    { "es": "Me subí al bus en la 72.", "en": "I got on the bus at 72nd Street." },
+    { "es": "Me bajo en la próxima.", "en": "I'm getting off at the next stop." },
+    { "es": "¿Dónde me bajo para el Museo del Oro?", "en": "Where do I get off for the Gold Museum?" },
+    { "es": "Tomás se bajó del TransMilenio en la calle 26.", "en": "Tomás got off the TransMilenio at 26th Street." },
+    { "es": "¿Dónde te bajas?", "en": "Where are you getting off? (to a friend)" },
+    { "es": "Nos subimos al taxi de Hernando.", "en": "We got into Hernando's taxi." }
+  ],
+  "rule": "Getting on and off uses *subir* (go up) and *bajar* (go down), with the little *me*, *te*, *se* you know from routines: *me subo*, *te bajas*, *se bajó*.\n\nThen one small word each. You get on *a* the vehicle and off *de* it, and with *el* they shrink: *me subo al bus*, *me bajo del taxi*.\nThe stop takes *en*: *me bajo en la próxima*, *en la 72*.\n\nTo take the bus is *tomar*: *tomo el bus*. You'll also hear drivers say *súbase* and *bájese* (get on, get off); those come back later.",
+  "smallPrint": "Teachers call *subirse* and *bajarse* pronominal verbs: the same *me*, *te*, *se* as *levantarse*.",
+  "readAndPick": [
+    { "es": "Me bajo aquí.", "options": ["I'm getting on here.", "I'm getting off here.", "He's getting off here."], "answer": 1 },
+    { "es": "Se subió al bus.", "options": ["He got on the bus.", "I got on the bus.", "He got off the bus."], "answer": 0 },
+    { "es": "¿Dónde te bajas?", "options": ["Where do I get off?", "Where does he get off?", "Where are you getting off?"], "answer": 2 },
+    { "es": "Nos bajamos del taxi.", "options": ["We got into the taxi.", "We got out of the taxi."], "answer": 1 },
+    { "es": "Me subí al TransMilenio en la 26.", "options": ["I got on the TransMilenio at 26th.", "I got off the TransMilenio at 26th."], "answer": 0 },
+    { "es": "Vale se baja en la próxima.", "options": ["Vale gets on at the next stop.", "I'm getting off at the next stop.", "Vale gets off at the next stop."], "answer": 2 },
+    { "es": "Me subo al bus.", "options": ["I'm getting on the bus.", "I'm getting off the bus."], "answer": 0 },
+    { "es": "Se bajaron en la 72.", "options": ["They got off at 72nd.", "He got off at 72nd.", "They got on at 72nd."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *al* or *del*: Me subo ___ bus.",
+      "answer": "Me subo al bus.",
+      "accept": [],
+      "why": "You get on *a* the vehicle, and *a* plus *el* makes *al*."
+    },
+    {
+      "prompt": "Choose *al* or *del*: Tomás se bajó ___ taxi.",
+      "answer": "Tomás se bajó del taxi.",
+      "accept": [],
+      "why": "You get off *de* the vehicle, and *de* plus *el* makes *del*."
+    },
+    {
+      "prompt": "Say: I'm getting off at the next stop.",
+      "answer": "Me bajo en la próxima.",
+      "accept": ["Me bajo en la próxima parada.", "Me bajo en la próxima estación."],
+      "why": "The stop takes *en*, and *me* goes before *bajo*."
+    },
+    {
+      "prompt": "Ask: Where do I get off for the Gold Museum?",
+      "answer": "¿Dónde me bajo para el Museo del Oro?",
+      "accept": [],
+      "why": "*Me bajo* is I get off; the question word goes first."
+    },
+    {
+      "prompt": "Ask a friend: Where are you getting off?",
+      "answer": "¿Dónde te bajas?",
+      "accept": [],
+      "why": "For a friend, *me bajo* becomes *te bajas*."
+    },
+    {
+      "prompt": "Make it about *we*: Me subí al bus en la 72.",
+      "answer": "Nos subimos al bus en la 72.",
+      "accept": [],
+      "why": "*Me* becomes *nos*, and the verb ends in *-imos*."
+    },
+    {
+      "prompt": "Turn it around (he got off instead): Se subió al taxi.",
+      "answer": "Se bajó del taxi.",
+      "accept": [],
+      "why": "Off is *bajarse*, and it takes *de*: *del taxi*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me bajo el bus.",
+      "right": "Me bajo del bus.",
+      "why": "Almost. You get off *de* the vehicle, so *del bus*."
+    },
+    {
+      "wrong": "Subo en el bus.",
+      "right": "Me subo al bus.",
+      "why": "Getting on needs the little *me*, and the vehicle takes *a*: *al bus*."
+    },
+    {
+      "wrong": "Cojo el bus en la 72.",
+      "right": "Tomo el bus en la 72.",
+      "why": "In Latin America you *tomar* the bus. *Coger* is the Spain word, and best avoided here."
+    }
+  ],
+  "personal": "Think of the bus or train you take most. Say where you get on and where you get off, with *me subo* and *me bajo*."
+}

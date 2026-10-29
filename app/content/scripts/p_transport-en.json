@@ -1,0 +1,90 @@
+{
+  "node": "p:transport-en",
+  "hook": {
+    "line": "Half the small talk in Bogotá is about getting there: the traffic, the TransMilenio, the taxi that never came. Spanish says how you travel with one small word, *en*.",
+    "es": "Hoy vine en TransMilenio.",
+    "en": "I came by TransMilenio today."
+  },
+  "examples": [
+    { "es": "Voy al trabajo en TransMilenio.", "en": "I go to work on TransMilenio." },
+    { "es": "Vine en taxi.", "en": "I came by taxi." },
+    { "es": "¿Vas a la universidad en bus?", "en": "Do you go to university by bus? (to a friend)" },
+    { "es": "Hernando nunca va en bicicleta.", "en": "Hernando never goes by bike." },
+    { "es": "Los domingos vamos al parque a pie.", "en": "On Sundays we go to the park on foot." },
+    { "es": "Mariana está en el taxi.", "en": "Mariana is in the taxi." }
+  ],
+  "rule": "To say how you travel, put *en* before the vehicle, with no *el* or *la*: *en bus*, *en taxi*, *en carro*, *en moto*, *en TransMilenio*. English switches between by, on and in; Spanish uses *en* for all of them.\n\nOn foot is the odd one out: *a pie*. You'll also hear *caminando* (walking) a lot: *voy caminando*.\n\nAdd the article and the meaning changes: *en el taxi* is inside one particular taxi. *Mariana está en el taxi* says where she is right now, not how she travels.",
+  "smallPrint": "Teachers call this *en* the preposition of means of transport. *Carro* is the Latin American word for car; Spain says *coche*.",
+  "readAndPick": [
+    { "es": "Voy en bus.", "options": ["I'm going to the bus.", "I go by bus.", "I'm inside the bus."], "answer": 1 },
+    { "es": "Estoy en el bus.", "options": ["I'm on the bus right now.", "I go by bus."], "answer": 0 },
+    { "es": "Fuimos a pie.", "options": ["They went on foot.", "We went by car.", "We went on foot."], "answer": 2 },
+    { "es": "Vine en taxi.", "options": ["I came by taxi.", "I came for a taxi.", "I came to the taxi."], "answer": 0 },
+    { "es": "Voy al centro en carro.", "options": ["I'm going to the car in the centre.", "I'm going to the centre by car."], "answer": 1 },
+    { "es": "Mariana está en el taxi.", "options": ["Mariana goes by taxi.", "Mariana is in the taxi."], "answer": 1 },
+    { "es": "¿Vas en moto?", "options": ["Are you going by motorbike?", "Are you going to the motorbike?", "Is he going by motorbike?"], "answer": 0 },
+    { "es": "Hernando va a pie.", "options": ["Hernando goes by bus.", "Hernando is going to his feet.", "Hernando goes on foot."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *en* or *a*: Voy al trabajo ___ bus.",
+      "answer": "Voy al trabajo en bus.",
+      "accept": [],
+      "why": "A vehicle takes *en*, with no *el*."
+    },
+    {
+      "prompt": "Choose *en* or *a*: Vale va ___ pie.",
+      "answer": "Vale va a pie.",
+      "accept": [],
+      "why": "On foot is the one exception: *a pie*."
+    },
+    {
+      "prompt": "Say: I came by taxi.",
+      "answer": "Vine en taxi.",
+      "accept": ["Llegué en taxi."],
+      "why": "*En* plus the vehicle, no article."
+    },
+    {
+      "prompt": "Ask a friend: Do you go to work on TransMilenio?",
+      "answer": "¿Vas al trabajo en TransMilenio?",
+      "accept": ["¿Vas en TransMilenio al trabajo?"],
+      "why": "TransMilenio is a vehicle like any other: *en TransMilenio*."
+    },
+    {
+      "prompt": "Say: On Sundays we go to the park on foot.",
+      "answer": "Los domingos vamos al parque a pie.",
+      "accept": ["Los domingos vamos a pie al parque."],
+      "why": "On foot is *a pie*, never *en pie*."
+    },
+    {
+      "prompt": "Make it about *we*: Voy al centro en carro.",
+      "answer": "Vamos al centro en carro.",
+      "accept": [],
+      "why": "Only the verb changes; *en carro* stays as it is."
+    },
+    {
+      "prompt": "Make it a question to a friend: Voy en bicicleta.",
+      "answer": "¿Vas en bicicleta?",
+      "accept": [],
+      "why": "*Voy* becomes *vas* for a friend, and *en bicicleta* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Voy por bus.",
+      "right": "Voy en bus.",
+      "why": "English says by bus, but Spanish travels *en*: *en bus*, *en taxi*."
+    },
+    {
+      "wrong": "Voy en pie.",
+      "right": "Voy a pie.",
+      "why": "On foot is the one exception: *a pie*."
+    },
+    {
+      "wrong": "Voy al trabajo en el bus.",
+      "right": "Voy al trabajo en bus.",
+      "why": "*En el bus* points at one particular bus. For how you usually travel, drop the *el*."
+    }
+  ],
+  "personal": "How do you get to work, or to the shops? Say how you go, with *en* or *a pie*."
+}

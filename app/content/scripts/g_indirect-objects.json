@@ -1,0 +1,194 @@
+{
+  "node": "g:indirect-objects",
+  "hook": {
+    "line": "Tomás spends a whole day asking strangers the way. In Spanish, the person you ask, tell or give something to gets a small word of their own: *le*.",
+    "es": "¿La señora? Le pregunté dónde queda la estación.",
+    "en": "The lady? I asked her where the station is."
+  },
+  "examples": [
+    {
+      "es": "¿Y Vale? Le escribí anoche.",
+      "en": "And Vale? I wrote to her last night."
+    },
+    {
+      "es": "¿Le explico la ruta?",
+      "en": "Shall I explain the route to you? (formal)"
+    },
+    {
+      "es": "¿Los vecinos? Les di mi número.",
+      "en": "The neighbours? I gave them my number."
+    },
+    {
+      "es": "¿Qué le dijiste?",
+      "en": "What did you say to him? (to a friend)"
+    },
+    {
+      "es": "Mariana me explicó la ruta.",
+      "en": "Mariana explained the route to me."
+    },
+    {
+      "es": "Mañana les doy la dirección.",
+      "en": "I'll give you all the address tomorrow."
+    },
+    {
+      "es": "¿Y don Hernando? Le compré un tinto.",
+      "en": "And don Hernando? I bought him a coffee."
+    }
+  ],
+  "rule": "When you give, tell, ask, explain or write something to someone, Spanish names that person with a small word before the verb:\n*me*: to me\n*te*: to you (a friend)\n*le*: to him, to her, to you (*usted*)\n*nos*: to us\n*les*: to them, to you all\n\nThe new ones are *le* and *les*, and they ignore gender: *le* is a man, a woman or *usted*. Only one or more people.\n\nEnglish puts the person after the verb (I gave him the map). Spanish puts *le* in front: *Le di el mapa*. With *no*: *No le escribí*.\n\nCompare *lo* and *la*: they are the person or thing itself (*lo veo*, I see him). *Le* is the one who receives (*le doy el mapa*, I give him the map). Soon you'll also hear the person named twice, *le escribí a Vale*; that's normal Spanish too.",
+  "smallPrint": "Teachers call *le* and *les* indirect object pronouns.",
+  "readAndPick": [
+    {
+      "es": "Le di el mapa.",
+      "options": [
+        "I gave him the map.",
+        "I gave them the map.",
+        "He gave me the map."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les expliqué la ruta.",
+      "options": [
+        "I explained the route to her.",
+        "I explained the route to them.",
+        "They explained the route to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me escribió anoche.",
+      "options": [
+        "I wrote to her last night.",
+        "She wrote to me last night."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le escribí anoche.",
+      "options": [
+        "I wrote to her last night.",
+        "She wrote to me last night."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Le explico la ruta?",
+      "options": [
+        "Can you explain the route to me? (formal)",
+        "Shall I explain the route to you? (formal)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos explicó la ruta.",
+      "options": [
+        "We explained the route to him.",
+        "He explained the route to them.",
+        "He explained the route to us."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Qué les dijiste?",
+      "options": [
+        "What did you say to them?",
+        "What did you say to him?",
+        "What did they say to you?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le doy la dirección.",
+      "options": [
+        "I'll give them the address.",
+        "He gives me the address.",
+        "I'll give her the address."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Te doy mi número.",
+      "options": [
+        "I'll give you my number.",
+        "Give me your number."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *le* or *les* (talking about the neighbours): ___ di mi número.",
+      "answer": "Les di mi número.",
+      "accept": [],
+      "why": "More than one person receives it, so *les*."
+    },
+    {
+      "prompt": "Choose *le* or *les* (talking about Vale): ___ escribí anoche.",
+      "answer": "Le escribí anoche.",
+      "accept": [],
+      "why": "One person, so *le*. It doesn't matter that Vale is a woman."
+    },
+    {
+      "prompt": "Ask a stranger (*usted*): Shall I explain the route to you?",
+      "answer": "¿Le explico la ruta?",
+      "accept": [],
+      "why": "*Usted* gets *le*, the same as him or her."
+    },
+    {
+      "prompt": "Say: I gave him the map.",
+      "answer": "Le di el mapa.",
+      "accept": [],
+      "why": "*Le* goes in front of the verb: *le di*."
+    },
+    {
+      "prompt": "Ask a friend: What did you say to her?",
+      "answer": "¿Qué le dijiste?",
+      "accept": [],
+      "why": "To her is *le*, right before *dijiste*."
+    },
+    {
+      "prompt": "Make it plural (to them): Le di mi número.",
+      "answer": "Les di mi número.",
+      "accept": [],
+      "why": "Just add *s*: *le* becomes *les*."
+    },
+    {
+      "prompt": "Change who receives it to *me*: Mariana le explicó la ruta.",
+      "answer": "Mariana me explicó la ruta.",
+      "accept": [],
+      "why": "To me is *me*, in the same spot as *le*."
+    },
+    {
+      "prompt": "Make it negative: Le escribí anoche.",
+      "answer": "No le escribí anoche.",
+      "accept": [
+        "Anoche no le escribí."
+      ],
+      "why": "*No* goes in front of *le*, never between *le* and the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Di a él el mapa.",
+      "right": "Le di el mapa.",
+      "why": "Almost. Spanish puts *le* before the verb instead of to him after it."
+    },
+    {
+      "wrong": "¿La señora? La pregunté.",
+      "right": "¿La señora? Le pregunté.",
+      "why": "The person you ask, tell or give to gets *le*, even when she's a woman."
+    },
+    {
+      "wrong": "¿Los vecinos? Le di mi número.",
+      "right": "¿Los vecinos? Les di mi número.",
+      "why": "More than one person receives it, so *les*."
+    },
+    {
+      "wrong": "Le no escribí.",
+      "right": "No le escribí.",
+      "why": "*No* comes first, then *le*, then the verb."
+    }
+  ],
+  "personal": "Who did you last write to, or give something to? Say it with *le* or *les*: what did you give or write, and when?"
+}

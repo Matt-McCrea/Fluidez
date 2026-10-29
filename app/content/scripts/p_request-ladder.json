@@ -1,0 +1,89 @@
+{
+  "node": "p:request-ladder",
+  "hook": {
+    "line": "In Colombia, how you ask matters as much as what you ask. A bare command to a stranger sounds rude; Bogotanos climb a little ladder of politeness instead.",
+    "es": "¿Me puede ayudar, por favor?",
+    "en": "Can you help me, please? (formal)"
+  },
+  "examples": [
+    { "es": "Abra la ventana, por favor.", "en": "Open the window, please. (formal)" },
+    { "es": "¿Puede abrir la ventana?", "en": "Can you open the window? (formal)" },
+    { "es": "¿Me puede abrir la puerta?", "en": "Can you open the door for me? (formal)" },
+    { "es": "¿Me hace el favor de cerrar la puerta?", "en": "Would you be so kind as to close the door? (formal)" },
+    { "es": "¿Puedes cerrar la ventana?", "en": "Can you close the window? (to a friend)" }
+  ],
+  "rule": "Each step up the ladder leaves the other person more room to say no:\n*Abra la ventana, por favor.* A command, softened only by *por favor*.\n*¿Puede abrir la ventana?* A question: can you?\n*¿Me hace el favor de abrir la ventana?* Would you do me the favour of...\nHigher still you'll hear *¿Podría...?* (could you) and the very Colombian *¿Será que me puede...?* (do you think you might). They come back later.\n\nA friend gets *tú* and the lower steps: *¿Puedes...?* A stranger or an official gets *usted* and the higher ones.",
+  "smallPrint": "Teachers call this softening a request.",
+  "readAndPick": [
+    { "es": "¿Puedes cerrar la puerta?", "options": ["Can you close the door? (to a friend)", "Can you close the door? (formal)"], "answer": 0 },
+    { "es": "¿Puede cerrar la puerta?", "options": ["Can you close the door? (to a friend)", "Can you close the door? (formal)"], "answer": 1 },
+    { "es": "Cierre la puerta, por favor.", "options": ["Can you close the door? (formal)", "I'm closing the door.", "Close the door, please. (formal)"], "answer": 2 },
+    { "es": "¿Me hace el favor de abrir la ventana?", "options": ["Would you be so kind as to open the window? (formal)", "I'm doing you a favour by opening the window."], "answer": 0 },
+    { "es": "¿Puedo abrir la ventana?", "options": ["Can you open the window? (formal)", "Can I open the window?"], "answer": 1 },
+    { "es": "¿Me puede ayudar?", "options": ["Can I help you? (formal)", "Can you help me? (formal)", "Can he help me?"], "answer": 1 },
+    { "es": "Abra la puerta, por favor.", "options": ["Open the door, please. (formal)", "Can you open the door? (formal)"], "answer": 0 },
+    { "es": "¿Me puedes ayudar?", "options": ["Can you help me? (to a friend)", "Can you help me? (formal)", "Can I help you?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *puedes* or *puede* (asking a stranger): ¿___ abrir la ventana?",
+      "answer": "¿Puede abrir la ventana?",
+      "accept": [],
+      "why": "A stranger gets *usted*, so *puede*."
+    },
+    {
+      "prompt": "Ask a friend: Can you close the door?",
+      "answer": "¿Puedes cerrar la puerta?",
+      "accept": [],
+      "why": "A friend gets *tú*: *puedes*."
+    },
+    {
+      "prompt": "Ask a stranger, with *me hace el favor*: Would you be so kind as to close the door?",
+      "answer": "¿Me hace el favor de cerrar la puerta?",
+      "accept": [],
+      "why": "*El favor de* plus the action in its *-r* form."
+    },
+    {
+      "prompt": "Ask a stranger: Can you help me, please?",
+      "answer": "¿Me puede ayudar, por favor?",
+      "accept": ["¿Me puede ayudar?"],
+      "why": "*Me* goes before *puede*, and *ayudar* stays in its *-r* form."
+    },
+    {
+      "prompt": "Turn the command into a question, to a stranger: Abra la ventana, por favor.",
+      "answer": "¿Puede abrir la ventana, por favor?",
+      "accept": ["¿Puede abrir la ventana?"],
+      "why": "*¿Puede...?* plus *abrir* asks instead of telling."
+    },
+    {
+      "prompt": "One step softer, with *me hace el favor*: ¿Puede abrir la ventana?",
+      "answer": "¿Me hace el favor de abrir la ventana?",
+      "accept": [],
+      "why": "*¿Me hace el favor de...?* is a step politer than *¿Puede...?*"
+    },
+    {
+      "prompt": "Say it to a friend instead: ¿Me puede ayudar?",
+      "answer": "¿Me puedes ayudar?",
+      "accept": [],
+      "why": "For a friend, *puede* becomes *puedes*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Me hace el favor cerrar la puerta?",
+      "right": "¿Me hace el favor de cerrar la puerta?",
+      "why": "Almost. The favour needs *de* before the action."
+    },
+    {
+      "wrong": "¿Puede abre la ventana?",
+      "right": "¿Puede abrir la ventana?",
+      "why": "After *puede*, the action stays in its basic *-r* form."
+    },
+    {
+      "wrong": "Abre la puerta.",
+      "right": "¿Me puede abrir la puerta?",
+      "why": "To a stranger, a bare friend command sounds bossy. Use *usted* and ask: *¿Me puede...?*"
+    }
+  ],
+  "personal": "Think of something you'd ask a neighbour or a shop assistant. Ask for it two ways: with *¿Puede...?* and with *¿Me hace el favor de...?*"
+}

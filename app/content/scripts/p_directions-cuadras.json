@@ -1,0 +1,90 @@
+{
+  "node": "p:directions-cuadras",
+  "hook": {
+    "line": "Ask for directions in Bogotá and you'll get blocks, corners and traffic lights. Everything is counted in *cuadras*.",
+    "es": "Siga derecho dos cuadras y doble a la izquierda en la esquina.",
+    "en": "Go straight on for two blocks and turn left at the corner. (formal)"
+  },
+  "examples": [
+    { "es": "Siga derecho dos cuadras.", "en": "Go straight on for two blocks. (formal)" },
+    { "es": "En la esquina, doble a la derecha.", "en": "At the corner, turn right. (formal)" },
+    { "es": "Gire a la izquierda en el semáforo.", "en": "Turn left at the traffic lights. (formal)" },
+    { "es": "Es la segunda calle a la derecha.", "en": "It's the second street on the right." },
+    { "es": "La estación queda a tres cuadras.", "en": "The station is three blocks away." },
+    { "es": "Sigue derecho y dobla a la izquierda.", "en": "Go straight on and turn left. (to a friend)" }
+  ],
+  "rule": "Colombian directions come in a few pieces:\n*Siga derecho*: go straight on.\n*Doble a la derecha*, *a la izquierda*: turn right, turn left. *Gire* means the same, and Colombians also say *voltee*.\n*En la esquina*, *en el semáforo*: at the corner, at the lights.\n*Queda a dos cuadras*: it's two blocks away.\n\nWatch the ending: *derecha* is right, *derecho* is straight on. One letter, a very different street.\n\nTo a stranger: *siga*, *doble*. To a friend: *sigue*, *dobla*.",
+  "smallPrint": "*Cuadra* (a block) is Latin American; Spain says *manzana*. Teachers would file all this under giving directions with commands.",
+  "readAndPick": [
+    { "es": "Siga derecho.", "options": ["Go straight on. (formal)", "Turn right. (formal)"], "answer": 0 },
+    { "es": "Doble a la derecha.", "options": ["Go straight on. (formal)", "Turn left. (formal)", "Turn right. (formal)"], "answer": 2 },
+    { "es": "Queda a dos cuadras.", "options": ["It's on the second block.", "It's two blocks away.", "There are two blocks."], "answer": 1 },
+    { "es": "Es la segunda calle a la izquierda.", "options": ["It's the second street on the left.", "It's two streets to the left.", "It's the second street on the right."], "answer": 0 },
+    { "es": "Sigue derecho dos cuadras.", "options": ["Go straight on for two blocks. (formal)", "Go straight on for two blocks. (to a friend)"], "answer": 1 },
+    { "es": "La droguería queda a la derecha.", "options": ["The chemist's is straight ahead.", "The chemist's is on the right."], "answer": 1 },
+    { "es": "Doble en el semáforo.", "options": ["Turn at the traffic lights. (formal)", "Turn at the corner. (formal)", "Stop at the traffic lights. (formal)"], "answer": 0 },
+    { "es": "Doblen a la izquierda en la esquina.", "options": ["Turn left at the corner. (formal, to one person)", "Turn left at the corner. (to you all)"], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *derecha* or *derecho*: Siga ___ tres cuadras.",
+      "answer": "Siga derecho tres cuadras.",
+      "accept": [],
+      "why": "Straight on is *derecho*, with an *o*."
+    },
+    {
+      "prompt": "Choose *derecha* or *derecho*: Doble a la ___.",
+      "answer": "Doble a la derecha.",
+      "accept": [],
+      "why": "Right, the side, is *derecha*, with an *a*: *a la derecha*."
+    },
+    {
+      "prompt": "Tell a stranger: Go straight on for two blocks.",
+      "answer": "Siga derecho dos cuadras.",
+      "accept": [],
+      "why": "A stranger gets *siga*; blocks are *cuadras*."
+    },
+    {
+      "prompt": "Tell a stranger: Turn left at the corner.",
+      "answer": "Doble a la izquierda en la esquina.",
+      "accept": ["En la esquina, doble a la izquierda.", "Gire a la izquierda en la esquina.", "En la esquina, gire a la izquierda."],
+      "why": "*Doble a la izquierda* is turn left; at the corner is *en la esquina*."
+    },
+    {
+      "prompt": "Say: The bank is three blocks away.",
+      "answer": "El banco queda a tres cuadras.",
+      "accept": ["El banco está a tres cuadras."],
+      "why": "A distance takes *a*: *a tres cuadras*."
+    },
+    {
+      "prompt": "Say: It's the second street on the right.",
+      "answer": "Es la segunda calle a la derecha.",
+      "accept": [],
+      "why": "On the right is *a la derecha*; *calle* is a *la* word, so *la segunda*."
+    },
+    {
+      "prompt": "Say it to a friend instead: Siga derecho y doble a la derecha.",
+      "answer": "Sigue derecho y dobla a la derecha.",
+      "accept": [],
+      "why": "For a friend, *siga* becomes *sigue* and *doble* becomes *dobla*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Siga derecha dos cuadras.",
+      "right": "Siga derecho dos cuadras.",
+      "why": "Almost. *Derecha* is right; straight on is *derecho*."
+    },
+    {
+      "wrong": "Queda dos cuadras.",
+      "right": "Queda a dos cuadras.",
+      "why": "A distance needs *a*: *a dos cuadras*."
+    },
+    {
+      "wrong": "Doble derecha.",
+      "right": "Doble a la derecha.",
+      "why": "Right and left need *a la* in front: *a la derecha*, *a la izquierda*."
+    }
+  ],
+  "personal": "Give directions from your front door to the nearest shop or café: how many *cuadras*, and where to turn."
+}
