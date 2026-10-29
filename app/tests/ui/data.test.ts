@@ -127,3 +127,16 @@ describe('ui store', () => {
     expect(await kv.get(UI_KEY)).toBeUndefined();
   });
 });
+
+describe('tap-to-gloss on the real word list', () => {
+  it('reads inflected verbs, clitics, accents and feminine plurals back to the lemma', async () => {
+    const b = await new ContentLoader().load({ band: 'A1' });
+    const comemos = b.gloss('comemos');
+    expect(comemos).toMatchObject({ es: expect.stringMatching(/comer/), form: 'comemos' });
+    expect(comemos?.en).toBe(b.node('l:comer')?.en);
+    expect(comemos?.how).toMatch(/we/);
+    expect(b.gloss('dímelo')?.es).toMatch(/decir/);
+    expect(b.gloss('bonitas')?.es).toMatch(/bonito/);
+    expect(b.gloss('Qwxzyk')).toBeUndefined();
+  }, 60_000);
+});

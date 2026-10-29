@@ -13,6 +13,7 @@ import { Es, Heading, Paras, Rich, undash } from '../components/text';
 import { learnRetrieval, SAY, scriptCard, sentenceCheck, type Card } from '../session/cards';
 import { LearnQueue, teachOrder } from '../session/order';
 import { blockHeading } from '../session/labels';
+import { exampleGroups, nodeWords, restText, ruleLayers, spotFeedback, spotIt, splitVariants } from '../session/teachflow';
 import { bundleLexicon } from '../session/scene';
 import type { BlockProps } from './types';
 
@@ -49,10 +50,7 @@ export function Learn({ block, run, onDone }: BlockProps<LearnBlock>) {
         {q.pos === 0 ? <Heading {...h} /> : null}
         <section class="card present" key={`p${q.pos}`}>
           <p class="ask">New</p>
-          {segs.length ? segs.map((x, k) => (
-            <div class="pair" key={k}><Es block><span class="big">{x.es}</span></Es><p class="en">{x.en}</p></div>
-          )) : <p class="big">{undash(run.bundle.title(item.node))}</p>}
-          {more ? <div class="example"><p class="small">The whole exchange</p><Es block>{more.es!}</Es>{more.en ? <p class="en"><Rich text={more.en} /></p> : null}</div> : null}
+          <Variants segs={segs} fallback={undash(run.bundle.title(item.node))} more={more} />
           {ex ? <div class="example"><p class="small">In a sentence</p><Es block>{ex.es}</Es><p class="en"><Rich text={ex.en} /></p></div> : null}
           <div class="actions"><Continue label="Got it" onClick={() => advance()} /></div>
         </section>
@@ -116,6 +114,93 @@ export function Teach({ block, run, onDone }: BlockProps<TeachBlock>) {
   );
 }
 
+type Seg = { es: string; en: string };
+
+/** The word or phrase being taught: one variant large, the others a tap away under "Also". */
+function Variants({ segs, fallback, more }: { segs: Seg[]; fallback: string; more?: { es?: string; en?: string } }) {
+  const [open, setOpen] = useState(false);
+  const { first, also } = splitVariants(segs);
+  const whole = more ? <div class="example"><p class="small">The whole exchange</p><Es block>{more.es!}</Es>{more.en ? <p class="en"><Rich text={more.en} /></p> : null}</div> : null;
+  if (!first) return <p class="big">{fallback}</p>;
+  return (
+    <>
+      <div class="pair"><Es block><span class="big">{first.es}</span></Es><p class="en">{first.en}</p></div>
+      {also.length && !open ? (
+        <p class="also"><button type="button" class="linkish" aria-expanded="false" onClick={() => setOpen(true)}>Also: {also.map((x) => x.es).join(', ')}</button></p>
+      ) : null}
+      {open ? also.map((x, k) => <div class="pair" key={k}><Es block><span class="big">{x.es}</span></Es><p class="en">{x.en}</p></div>) : null}
+      {!also.length || open ? whole : null}
+    </>
+  );
+}
+
+/** Examples a few at a time, with a one-tap "spot it" between the groups. */
+function Examples({ script, node, onDone }: { script: TeachingScript; node?: { es?: string; forms?: Seg[] }; onDone: () => void }) {
+  const groups = useMemo(() => exampleGroups(script.examples), [script]);
+  const nw = useMemo(() => nodeWords(node?.es, node?.forms), [node]);
+  const [g, setG] = useState(0);
+  const [picked, setPicked] = useState<number | null>(null);
+  const group = groups[g] ?? [];
+  const last = g + 1 >= groups.length;
+  const pick = useMemo(() => (last ? null : spotIt(group, nw)), [g]);
+  const go = () => { setPicked(null); if (last) onDone(); else setG(g + 1); };
+  return (
+    <section class="card" key={g}>
+      <p class="ask">{g === 0 ? 'Read these. Spot what they have in common.' : 'A few more.'}</p>
+      {group.map((e, i) => <div class="pair" key={i}><Es block>{e.es}</Es><p class="en"><Rich text={e.en} /></p></div>)}
+      {pick ? (
+        <div class="spot">
+          <p class="small">{pick.prompt}</p>
+          <div class="options">
+            {pick.options.map((o, i) => (
+              <button type="button" key={i} class={`btn${picked !== null && i === pick.answer ? ' primary' : ''}`} disabled={picked !== null} onClick={() => setPicked(i)}><Es>{o}</Es></button>
+            ))}
+          </div>
+          <div class="feedback" aria-live="polite">{picked !== null ? <p class="why">{spotFeedback(pick, picked)}</p> : null}</div>
+        </div>
+      ) : null}
+      <div class="actions">
+        {last ? <Continue label="What's the trick?" onClick={go} /> : !pick || picked !== null ? <Continue label="Next" onClick={go} /> : null}
+      </div>
+    </section>
+  );
+}
+
+/** The trick first; the why behind a tap. */
+function RuleCard({ script, onDone }: { script: TeachingScript; onDone: () => void }) {
+  const { trick, rest } = ruleLayers(script.rule);
+  const [open, setOpen] = useState(false);
+  const why = restText(rest);
+  return (
+    <section class="card rule">
+      <p class="ask">Here's the trick</p>
+      <div class="trick"><Paras text={trick} /></div>
+      {why && !open ? <p class="also"><button type="button" class="linkish" aria-expanded="false" onClick={() => setOpen(true)}>Why?</button></p> : null}
+      {open ? <div class="why-more"><Paras text={why} /></div> : null}
+      {(open || !why) && script.soundTip ? <p class="tip"><strong>Sound tip:</strong> <Rich text={script.soundTip} /></p> : null}
+      {(open || !why) && script.smallPrint ? <p class="small-print"><Rich text={script.smallPrint} /></p> : null}
+      <div class="actions"><Continue label="Let's try it" onClick={onDone} /></div>
+    </section>
+  );
+}
+
+/** One slip at a time. */
+function Pitfalls({ script, onDone }: { script: TeachingScript; onDone: () => void }) {
+  const [i, setI] = useState(0);
+  const p = script.pitfalls[i];
+  const last = i + 1 >= script.pitfalls.length;
+  return (
+    <section class="card" key={i}>
+      <p class="ask">Almost everyone slips here at first</p>
+      <div class="pitfall">
+        <p><s class="es" lang="es">{undash(p.wrong)}</s> → <Es>{p.right}</Es></p>
+        <p class="why"><Rich text={p.why} /></p>
+      </div>
+      <div class="actions"><Continue label={last ? 'Got it' : 'Next'} onClick={() => (last ? onDone() : setI(i + 1))} /></div>
+    </section>
+  );
+}
+
 function TeachPhase({ phase, script, block, run, onDone }: { phase: Phase; script: TeachingScript; block: TeachBlock; run: BlockProps['run']; onDone: () => void }) {
   switch (phase) {
     case 'hook':
@@ -128,23 +213,9 @@ function TeachPhase({ phase, script, block, run, onDone }: { phase: Phase; scrip
         </section>
       );
     case 'examples':
-      return (
-        <section class="card">
-          <p class="ask">Read these. Spot what they have in common.</p>
-          {script.examples.map((e, i) => <div class="pair" key={i}><Es block>{e.es}</Es><p class="en"><Rich text={e.en} /></p></div>)}
-          <div class="actions"><Continue label="What's the trick?" onClick={onDone} /></div>
-        </section>
-      );
+      return <Examples script={script} node={run.bundle.node(block.node)} onDone={onDone} />;
     case 'rule':
-      return (
-        <section class="card rule">
-          <p class="ask">Here's the trick</p>
-          <Paras text={script.rule} />
-          {script.soundTip ? <p class="tip"><strong>Sound tip:</strong> <Rich text={script.soundTip} /></p> : null}
-          {script.smallPrint ? <p class="small-print"><Rich text={script.smallPrint} /></p> : null}
-          <div class="actions"><Continue label="Let's try it" onClick={onDone} /></div>
-        </section>
-      );
+      return <RuleCard script={script} onDone={onDone} />;
     case 'readAndPick':
     case 'yourTurn': {
       // a few to read first, then writing it, with the rest of the reading woven in
@@ -160,18 +231,7 @@ function TeachPhase({ phase, script, block, run, onDone }: { phase: Phase; scrip
       );
     }
     case 'pitfalls':
-      return (
-        <section class="card">
-          <p class="ask">Almost everyone slips here at first</p>
-          {script.pitfalls.map((p, i) => (
-            <div class="pitfall" key={i}>
-              <p><s class="es" lang="es">{undash(p.wrong)}</s> → <Es>{p.right}</Es></p>
-              <p class="why"><Rich text={p.why} /></p>
-            </div>
-          ))}
-          <div class="actions"><Continue onClick={onDone} /></div>
-        </section>
-      );
+      return <Pitfalls script={script} onDone={onDone} />;
   }
 }
 
@@ -194,7 +254,7 @@ export function RuleRecall({ block, run, onDone }: BlockProps<RuleRecallBlock>) 
     <>
       <Heading title="Quick reminder" />
       <section class="card rule">
-        {script ? <Paras text={script.rule.split(/\n\s*\n/)[0]} /> : <p>{undash(run.bundle.title(block.node))}</p>}
+        {script ? <Paras text={ruleLayers(script.rule).trick} /> : <p>{undash(run.bundle.title(block.node))}</p>}
         {(script?.examples ?? []).slice(0, 2).map((e, i) => <div class="pair" key={i}><Es block>{e.es}</Es><p class="en"><Rich text={e.en} /></p></div>)}
         <div class="actions"><Continue label="Let's practise" onClick={onDone} /></div>
       </section>

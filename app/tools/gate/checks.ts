@@ -451,4 +451,17 @@ export function readingCoverage(st: RunState, f: Loaded): void {
   }
 }
 
+/* ---- chapter length by band --------------------------------------------------- */
+export const CHAPTER_WORDS: Record<string, [number, number]> = { A1: [80, 180], A2: [150, 260], B1: [220, 350], B2: [300, 450], C1: [400, 600] };
+export function chapterLength(st: RunState, f: Loaded): void {
+  const c = f.data as StoryChapter;
+  const band = st.cur.unitBand.get(c.unit);
+  const range = band ? CHAPTER_WORDS[band] : undefined;
+  if (!range) return;
+  const n = c.text.split(/\s+/).filter(Boolean).length;
+  const [lo, hi] = range;
+  if (n > hi) st.findings.push({ severity: st.strict ? 'error' : 'warning', check: 'length', file: f.rel, path: 'text', problem: `${n} words, over the ${band} maximum (${lo} to ${hi})`, fix: 'cut scenes, not words: keep every sentence natural rather than telegraphic' });
+  else if (n < lo) st.findings.push({ severity: 'warning', check: 'length', file: f.rel, path: 'text', problem: `${n} words, under the ${band} minimum (${lo} to ${hi})`, fix: 'give the chapter its moment: a want, a problem, a turn' });
+}
+
 export type { EsString };

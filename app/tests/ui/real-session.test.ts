@@ -7,6 +7,7 @@ import { Learner, MemoryStore } from '../../src/learner';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
 import { MemoryKV, UiStore } from '../../src/ui/store/ui';
+import { exampleGroups } from '../../src/ui/session/teachflow';
 import { session } from './driver';
 
 const DAY = 86_400_000;
@@ -61,4 +62,13 @@ describe('a fresh learner, sessions 1 to 3, real content', () => {
       }
     }, 60_000);
   }
+});
+
+describe('teach screens stay short', () => {
+  it('no examples screen shows more than 3 Spanish/English pairs at once', () => {
+    expect(bundle.scripts.size).toBeGreaterThan(0);
+    for (const s of bundle.scripts.values()) {
+      for (const g of exampleGroups(s.examples)) expect(g.length, s.node).toBeLessThanOrEqual(3);
+    }
+  });
 });

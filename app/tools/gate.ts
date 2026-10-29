@@ -25,6 +25,9 @@
  *              its day warns; skipped until content/units exists
  *   reading    story chapters: ≤2% unknown unglossed lexemes, ≤5% with gloss
  *              (words inside a taught chunk or pattern are known)
+ *   length     story chapter words by band (A1 80 to 180, A2 150 to 260, B1 220 to 350, B2 300 to 450,
+ *              C1 400 to 600); over the maximum warns (error with --strict), under the
+ *              minimum warns
  *   dupe       exact and near-duplicates (token 4-gram Jaccard) corpus-wide
  *   frames     template-frame overuse per unit (warning; error with --strict)
  *   typeable   every answer/accept has a form a learner can type
@@ -40,7 +43,7 @@
 import { existsSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { checkBank, checkComputed, checkDashes, checkStrings, checkStructure, readingCoverage, type RunState } from './gate/checks';
+import { checkBank, checkComputed, checkDashes, checkStrings, checkStructure, readingCoverage, chapterLength, type RunState } from './gate/checks';
 import { collectItems, frameOveruse, nearDuplicates, supply } from './gate/corpus';
 import { render, type Finding } from './gate/findings';
 import { buildCurriculum, listJson, loadFile, resolveTargets, type Loaded } from './gate/load';
@@ -103,7 +106,7 @@ export function runGate(o: GateOptions = {}): GateResult {
       const rewrite = checkComputed(st, f, !!o.fix);
       if (rewrite) { writeFileSync(f.abs, JSON.stringify(rewrite, null, 2) + '\n'); fixed.push(f.rel); }
     }
-    if (f.kind === 'story') { readingCoverage(st, f); touchedUnits.add((f.data as StoryChapter).unit); }
+    if (f.kind === 'story') { readingCoverage(st, f); chapterLength(st, f); touchedUnits.add((f.data as StoryChapter).unit); }
     if (f.kind === 'scene') touchedUnits.add((f.data as Scene).unit);
     if (f.kind === 'writing') (f.data as WritingTask[]).forEach((w) => touchedUnits.add(w.unit));
     if (f.kind === 'unit') touchedUnits.add((f.data as { id: string }).id);

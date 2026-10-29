@@ -8,6 +8,8 @@ import type {
   BankSentence, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../../content/schema';
 import { alignedPairs, type AlignedPair, type LexemeLike } from '../../exercises';
+import { analyzeToken, deaccent } from '../../engine';
+import { tenseShort } from '../session/tenses';
 
 export type Segment = AlignedPair;
 
@@ -83,7 +85,7 @@ export class Bundle {
   }
 
   /** The English for a tapped Spanish word: chapter gloss first, then the lexeme graph. */
-  gloss(word: string, chapter?: StoryChapter): { es: string; en: string } | undefined {
+  gloss(word: string, chapter?: StoryChapter): Gloss | undefined {
     const w = normWord(word);
     if (!w) return undefined;
     if (chapter) {
@@ -97,14 +99,63 @@ export class Bundle {
     }
     const lex = this.lemmas.get(w) ?? this.lemmas.get(w.replace(/s$/, '')) ?? this.lemmas.get(w.replace(/es$/, ''));
     if (lex?.en) return { es: lex.es ?? word, en: lex.en };
+    const viaVerb = this.verbGloss(word, w);
+    if (viaVerb) return viaVerb;
     // a sentence-bank chunk or node whose Spanish is exactly this word
     for (const n of this.course.nodes.values()) {
       if (n.kind === 'cando' || !n.es) continue;
       if (this.segments(n.id).some((s) => normWord(s.es) === w)) return { es: word, en: this.segments(n.id).find((s) => normWord(s.es) === w)!.en };
     }
+    return this.looseLemma(w, word);
+  }
+
+  /** An inflected verb (clitics included) read back to its infinitive's lexeme. */
+  private verbGloss(word: string, w: string): Gloss | undefined {
+    const readings = analyzeToken(w).filter((a) => a.target);
+    readings.sort((a, b) => Number(b.accentExact) - Number(a.accentExact) || Number(!!a.clitics?.length) - Number(!!b.clitics?.length));
+    for (const r of readings) {
+      const lex = this.course.nodes.get(`l:${r.inf}`) ?? this.course.nodes.get(`l:${r.inf.replace(/se$/, '')}`);
+      if (!lex?.en) continue;
+      const person = PERSON_WORDS[r.person];
+      const how = [person, r.tense === 'imperativo' ? 'command' : tenseShort(r.tense).toLowerCase()].filter(Boolean).join(', ');
+      return { es: lex.es ?? r.inf, en: lex.en, form: word, how: r.clitics?.length ? `${how}, with ${r.clitics.join(' + ')} attached` : how };
+    }
     return undefined;
   }
+
+  /** Last resorts: ignore accents, then feminine and plural endings back to the -o word. */
+  private looseLemma(w: string, word: string): Gloss | undefined {
+    if (!this.plain) {
+      this.plain = new Map();
+      for (const [k, n] of this.lemmas) { const d = deaccent(k); if (!this.plain.has(d)) this.plain.set(d, n); }
+    }
+    const d = deaccent(w);
+    const cands = [d, d.replace(/(os|as|a|es|s)$/, 'o'), d.replace(/as$/, 'a'), d.replace(/(es|s)$/, ''), d.replace(/(a|as|es)$/, 'e')];
+    for (const c of cands) {
+      const lex = c ? this.plain.get(c) : undefined;
+      if (lex?.en) return { es: lex.es ?? word, en: lex.en, form: word };
+    }
+    return undefined;
+  }
+  private plain?: Map<string, GraphNode>;
+
+  /** The bank's English for a sentence of Spanish, matched exactly after trimming. */
+  englishOf(es: string): string | undefined {
+    if (!this.byEs) {
+      this.byEs = new Map();
+      for (const s of this.bank) { const k = s.es.trim(); if (k && s.en && !this.byEs.has(k)) this.byEs.set(k, s.en); }
+    }
+    return this.byEs.get(es.trim());
+  }
+  private byEs?: Map<string, string>;
 }
+
+/** A tapped word's note. `form` and `how` are set when the word is a form of `es`. */
+export interface Gloss { es: string; en: string; form?: string; how?: string }
+
+const PERSON_WORDS: Readonly<Record<string, string>> = {
+  yo: 'I', 'tú': 'you', 'él/ella': 'he or she', nosotros: 'we', ellos: 'they', vos: 'you', vosotros: 'you all',
+};
 
 export function stripArticle(s: string): string {
   return s.trim().replace(/^(el|la|los|las|un|una)\s+/i, '').replace(/[.…¿?¡!]/g, '').trim();

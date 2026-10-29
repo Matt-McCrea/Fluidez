@@ -231,3 +231,38 @@ describe('I don\'t know on multiple choice', () => {
     expect(mcqResult(card, 1, 5).outcome.correct).toBe(true);
   });
 });
+
+describe('progress by card', () => {
+  it('moves up card by card and ends full with a skipped recap', async () => {
+    const w = await world();
+    const mk = (n: number): ReviewItem[] => Array.from({ length: n }, (_, i) => ({
+      op: 'review', id: `rv:${i}`, node: 'g:ser-identity', direction: 'receptive', sentence: 'u01-1', novel: true,
+      scoring: 'none', credit: [],
+    }) as ReviewItem);
+    const warm = { kind: 'warmup', part: 'core', deliberate: false, items: mk(3), minutes: 1 } as any;
+    const lesson = { kind: 'leech', part: 'core', deliberate: false, items: mk(2), minutes: 1 } as any;
+    const recap = { kind: 'recap', part: 'core', deliberate: false, items: [], capacity: 3, minutes: 1 } as any;
+    const close = { kind: 'close', part: 'core', deliberate: false, minutes: 0 } as any;
+    const plan = { sessionIndex: 1, seed: 1, blocks: [warm, lesson, recap, close], pathAfter: w.ui.path, newNodes: { grammar: [], patterns: [], chunks: [], lexemes: [], contrasts: [] } } as any;
+    const run = new SessionRunner(w.learner, w.bundle, w.ui, plan, w.now);
+    const frac = () => { const p = run.progress(); return (p.blocksDone + p.cardsDoneInBlock / Math.max(1, p.cardsInBlock)) / p.blocks; };
+    const seen: number[] = [frac()];
+    let pings = 0;
+    run.onProgress(() => { pings++; });
+    run.start();
+    run.enter(warm);
+    for (const it of warm.items) { run.score(it, { correct: true, tries: 1, ms: 1000 }); seen.push(frac()); }
+    run.enter(lesson);
+    seen.push(frac());
+    for (const it of lesson.items) { run.score(it, { correct: true, tries: 1, ms: 1000 }); seen.push(frac()); }
+    run.blockShown(recap);
+    expect(run.openRecap(recap)).toBe(false);
+    seen.push(frac());
+    for (let i = 1; i < seen.length; i++) expect(seen[i]).toBeGreaterThanOrEqual(seen[i - 1]);
+    expect(new Set(seen).size).toBeGreaterThan(5);
+    expect(pings).toBe(5);
+    await run.finish();
+    expect(frac()).toBe(1);
+    expect(run.progress().blocks).toBe(3);
+  });
+});

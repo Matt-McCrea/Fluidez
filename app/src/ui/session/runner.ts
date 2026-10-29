@@ -15,6 +15,7 @@ import type { UiStore } from '../store/ui';
 import { planRecap, type Lapse } from './recap';
 import { SECONDS } from '../../compiler/budget';
 import { attributeGrades, type Evidence } from './attribute';
+import { LearnQueue } from './order';
 
 export interface Outcome {
   correct: boolean;
@@ -90,6 +91,11 @@ export class SessionRunner {
   private readonly lapses: Lapse[] = [];
   /** in-lesson retrievals each new node has had */
   private readonly learnSteps = new Map<NodeId, number>();
+  /** the block on screen, and the cards answered or presented in each block (for the progress bar) */
+  private current: Block | undefined;
+  private readonly cardsDone = new Map<Block, number>();
+  private inScore = false;
+  private readonly listeners = new Set<() => void>();
   finished = false;
   /** the learner stopped early: logged as a minimum session, the path did not move */
   stopped = false;
@@ -154,16 +160,47 @@ export class SessionRunner {
     return Math.max(0, Math.min(left, this.capMinutes - this.elapsed() + 2));
   }
 
+  // ---------------------------------------------------------------- progress
+
+  /** Called after every card step (the screen redraws its bar). Returns an unsubscribe. */
+  onProgress(fn: () => void): () => void { this.listeners.add(fn); return () => { this.listeners.delete(fn); }; }
+
+  private bump(): void {
+    if (this.current) this.cardsDone.set(this.current, (this.cardsDone.get(this.current) ?? 0) + 1);
+    this.listeners.forEach((f) => f());
+  }
+
+  /**
+   * Where the session is, by card: `blocks` core blocks, those before the open
+   * one (skipped ones included) done, and the cards of the open block. Card
+   * runs count their items (learn: the planned presents and asks); other
+   * blocks are one step. A finished session is full.
+   */
+  progress(): { blocks: number; blocksDone: number; cardsInBlock: number; cardsDoneInBlock: number } {
+    const core: Block[] = this.plan.blocks.filter((b) => b.kind !== 'close');
+    const blocks = core.length;
+    if (this.finished) return { blocks, blocksDone: blocks, cardsInBlock: 1, cardsDoneInBlock: 0 };
+    const cur = this.current;
+    const at = cur ? core.indexOf(cur) : -1;
+    if (!cur || at < 0) return { blocks, blocksDone: cur ? blocks : 0, cardsInBlock: 1, cardsDoneInBlock: 0 };
+    let cardsInBlock = 1;
+    if (cur.kind === 'learn') cardsInBlock = new LearnQueue(cur.items.length).steps.length;
+    else if ('items' in cur && Array.isArray(cur.items)) cardsInBlock = cur.items.length;
+    cardsInBlock = Math.max(1, cardsInBlock);
+    return { blocks, blocksDone: at, cardsInBlock, cardsDoneInBlock: Math.min(cardsInBlock, this.cardsDone.get(cur) ?? 0) };
+  }
+
   // ---------------------------------------------------------------- ledger
 
   /** Record a block's content in the exposure ledger (once). Called when the block is shown. */
   blockShown(block: Block): void {
+    this.current = block;
     this.entered.add(block);
     for (const r of servedRefs({ ...this.plan, blocks: [block] })) this.mark(r);
   }
 
   /** A block whose cards may be cut short is open: its content is ledgered card by card (`itemShown`). */
-  enter(block: Block): void { this.entered.add(block); }
+  enter(block: Block): void { this.current = block; this.entered.add(block); }
 
   /** One card of an open block was shown: ledger just that item's content. */
   itemShown(block: Block, i: number): void {
@@ -196,6 +233,7 @@ export class SessionRunner {
    * `productive: false`) never get a production card.
    */
   present(node: NodeId, productive?: boolean): void {
+    if (this.current?.kind === 'learn' && !this.presented.has(node)) { this.presented.add(node); this.bump(); }
     this.presented.add(node);
     this.notPresented.delete(node);
     if (this.learner.isIntroduced(node)) return;
@@ -205,6 +243,7 @@ export class SessionRunner {
 
   /** One in-lesson retrieval. Returns true when the learner model says to stop asking. */
   learningStep(node: NodeId, o: Outcome, credit: NodeId[] = [node], productive?: boolean, op = 'learn'): boolean {
+    if (!this.inScore) this.bump();
     this.present(node, productive);
     this.learnSteps.set(node, (this.learnSteps.get(node) ?? 0) + 1);
     if (!this.learner.isLearning(node)) {
@@ -224,6 +263,12 @@ export class SessionRunner {
 
   /** Credit one item exactly per its `scoring`. */
   score(item: Item, o: Outcome): void {
+    this.bump();
+    this.inScore = true;
+    try { this.scoreItem(item, o); } finally { this.inScore = false; }
+  }
+
+  private scoreItem(item: Item, o: Outcome): void {
     this.noteLapse(item, o);
     this.tally.scored++;
     if (o.correct) this.tally.correct++;
@@ -308,6 +353,7 @@ export class SessionRunner {
    * its introduction, so it is exposure with an event, never a second review.
    */
   scoreRecap(item: RecapItem, o: Outcome): void {
+    this.bump();
     this.tally.scored++;
     if (o.correct) this.tally.correct++;
     if (o.correct && o.tries <= 1) this.tally.firstTry++;

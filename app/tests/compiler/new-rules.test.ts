@@ -344,3 +344,57 @@ describe('remediation list', () => {
     expect(plan(path()).blocks.some((x) => x.kind === 'controlledOutput' && x.remedial)).toBe(false);
   });
 });
+
+describe('reading coverage is measured against retained words', () => {
+  const words = Array.from({ length: 40 }, (_, i) => `l:w${String(i).padStart(2, '0')}`);
+  const slipping = words.slice(0, 10), steady = words.slice(10);
+
+  function world(required: string[]) {
+    const units: Unit[] = [{
+      id: 'u01', band: 'A1', title: 'u', theme: 't', canDo: 'c', storyArc: 'a',
+      quota: { bankSentences: 0, chapters: 1, scenes: 0, writingTasks: 0 },
+      days: Array.from({ length: 7 }, (_, i) => ({ type: 'input' as const, focus: [], chunks: [], lexemes: [], ...(i === 0 ? { chapter: 'ch001' } : {}) })),
+    }];
+    const course = buildCourse(units, words.map((w) => node(w, 'lexeme')));
+    const chapter = {
+      id: 'ch001', unit: 'u01', title: 't', text: 'uno dos tres', gloss: [], hook: 'h', requires: required, lexemes: [],
+      questions: [1, 2, 3].map((n) => ({ q: `q${n}`, options: ['a', 'b'], answer: 0 })),
+    } as any;
+    const content = buildContentIndex({ sentences: [], chapters: [chapter], scenes: [], writing: [], scripts: [] }, course);
+    const now = T0;
+    const L = Learner.fresh({ now: () => now });
+    for (const w of words) L.introduce(w, { results: [true, true, true], at: T0 - 30 * DAY });
+    // the steady ones were reviewed yesterday; the slipping ones were left alone for a month
+    for (const w of steady) for (const dir of ['receptive', 'productive'] as const) if (L.hasCard(w, dir)) L.review(w, dir, Rating.Good, { at: T0 - DAY });
+    return { L, plan: () => compileSession({ learnerId: 'x', learner: L, path: initialPath(), course, content, now }) };
+  }
+  const reads = (p: ReturnType<typeof compileSession>) => p.blocks.some((b) => b.kind === 'read');
+
+  test('the slipping words are not stable; the steady ones are', () => {
+    const { L } = world([]);
+    const st = L.stableNodes(undefined, T0);
+    for (const w of slipping) expect(st.has(w)).toBe(false);
+    for (const w of steady) expect(st.has(w)).toBe(true);
+  });
+
+  test('a chapter leaning on 8 slipping words is not admitted; with 1 it is, under the glossed cap', () => {
+    const heavy = world([...slipping.slice(0, 8), ...steady.slice(0, 12)]).plan();
+    expect(reads(heavy)).toBe(false);
+    const cov = heavy.diagnostics.find((d) => d.code === 'coverage');
+    expect(cov?.coverage).toMatchObject({ required: 20, unstable: 8, unknown: 0, allowed: 1, admitted: false });
+    const light = world([slipping[0], ...steady.slice(0, 19)]).plan();
+    expect(reads(light)).toBe(true);
+    expect(light.diagnostics.find((d) => d.code === 'coverage')?.coverage).toMatchObject({ unstable: 1, admitted: true });
+  });
+
+  test('nodes introduced yesterday count as stable even at low retrievability', () => {
+    const now = T0;
+    const L = Learner.fresh({ now: () => now });
+    L.introduce('l:new', { results: [true, true, true], at: T0 - DAY });
+    L.introduce('l:old', { results: [true, true, true], at: T0 - 30 * DAY });
+    // a threshold nothing can reach: only freshness keeps a node stable
+    const st = L.stableNodes(0.9999, T0);
+    expect(st.has('l:new')).toBe(true);
+    expect(st.has('l:old')).toBe(false);
+  });
+});

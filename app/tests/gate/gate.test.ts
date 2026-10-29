@@ -353,3 +353,31 @@ describe('(m) dashes and packed variants', () => {
     expect(run(true)).toEqual([]);
   });
 });
+
+describe('(n) chapter length by band', () => {
+  const words = (n: number) => Array.from({ length: n }, () => 'casa').join(' ');
+  const chapter = (n: number) => ({
+    id: 'ch001', unit: 'u01', title: 't', text: words(n), gloss: [], hook: 'h',
+    questions: [{ q: 'a', options: ['x', 'y'], answer: 0 }, { q: 'b', options: ['x', 'y'], answer: 1 }, { q: 'c', options: ['x', 'y'], answer: 0 }],
+  });
+  const run = (n: number, strict = false) => {
+    const fx = makeFixture();
+    const p = fx.write('story/ch001.json', chapter(n));
+    return runGate({ appDir: fx.app, paths: [p], strict });
+  };
+  test('an A1 chapter of 200 words warns, and errors under --strict', () => {
+    const w = by(run(200), 'length');
+    expect(w.map((f) => f.severity)).toEqual(['warning']);
+    expect(w[0].problem).toContain('200 words');
+    expect(w[0].problem).toContain('80 to 180');
+    expect(by(run(200, true), 'length').map((f) => f.severity)).toEqual(['error']);
+  });
+  test('120 words passes', () => {
+    expect(by(run(120), 'length')).toEqual([]);
+    expect(by(run(120, true), 'length')).toEqual([]);
+  });
+  test('60 words warns under the minimum, even under --strict', () => {
+    expect(by(run(60), 'length').map((f) => f.severity)).toEqual(['warning']);
+    expect(by(run(60, true), 'length').map((f) => f.severity)).toEqual(['warning']);
+  });
+});

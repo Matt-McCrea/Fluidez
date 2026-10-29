@@ -281,6 +281,25 @@ export class Learner {
     return r && structuredClone(r);
   }
   nodes(): NodeId[] { return Object.keys(this.state.nodes); }
+  /**
+   * Introduced nodes that are safe to lean on: the best card (productive if
+   * present, else receptive) has retrievability >= threshold, or the node was
+   * introduced within the last 2 calendar days (fresh items are being learned,
+   * not forgotten). Everything else is introduced but slipping.
+   */
+  stableNodes(threshold = this.state.settings.retention, at = this.now()): Set<NodeId> {
+    const out = new Set<NodeId>();
+    const today = this.day(at);
+    const age = (key: string) => Math.round((Date.parse(`${today}T12:00:00Z`) - Date.parse(`${key}T12:00:00Z`)) / 86_400_000);
+    for (const [id, r] of Object.entries(this.state.nodes)) {
+      if (age(r.introDay) <= 2) { out.add(id); continue; }
+      const dir: Direction = r.productive ? 'productive' : 'receptive';
+      const ret = this.retrievability(id, dir, at);
+      // no scheduled card yet (still in its lesson): fresh, not forgotten
+      if (ret === undefined || ret >= threshold) out.add(id);
+    }
+    return out;
+  }
   isIntroduced(id: NodeId): boolean { return id in this.state.nodes; }
 
   /** Output ladder rung of a node (0 choose, 1 type, 2 transform, 3 recombine). */

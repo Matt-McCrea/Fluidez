@@ -29,6 +29,7 @@ Matthew read chapter 1 and found lines like *"Hello. Sorry. Closed. That letter:
 
 ## Rules
 - Keep the plot facts, characters, running jokes and hooks unless they're broken. Change the telling, not the story, so later chapters still follow.
+- **Length by band** (words in `text`): A1 80 to 180, A2 150 to 260, B1 220 to 350, B2 300 to 450, C1 400 to 600. Shorten an over-length chapter by cutting scenes or beats, never by telegraphing the sentences that remain.
 - Edit only your listed chapter files. Keep ids, `unit` and the schema shape.
 - Run `cd {APP} && npm run gate -- --fix <your files>` until it shows 0 errors.
 - Finish with a short note: per chapter, what you changed and why. Quote the worst original line and its replacement for each.

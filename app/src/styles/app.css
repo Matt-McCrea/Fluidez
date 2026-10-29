@@ -210,6 +210,8 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .story .w { font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: pointer; border-radius: 4px; }
 .story .w:hover { background: var(--accent-soft); }
 .story .w.on { background: var(--hint-soft); outline: 1px solid var(--hint); }
+.story .en-toggle { font: inherit; font-size: .65em; letter-spacing: .04em; color: var(--muted); background: none; border: 1px solid var(--line); border-radius: 6px; padding: 0 5px; margin: 0 2px; cursor: pointer; vertical-align: middle; }
+.story .en-line { display: block; color: var(--muted); font-size: .9rem; line-height: 1.4; margin: 2px 0 4px; }
 .gloss { position: sticky; bottom: calc(8px + env(safe-area-inset-bottom)); min-height: 76px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; box-shadow: 0 4px 20px rgb(0 0 0 / .08); }
 .gloss-inner { display: flex; flex-direction: column; }
 .gloss-actions { display: flex; gap: 8px; justify-content: flex-end; }
@@ -295,3 +297,10 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .picks { border: 0; padding: 0; margin: 0 0 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
 .picks legend { font-weight: 600; margin-bottom: 0.4rem; }
 .pick { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; }
+
+/* teach flow: one thing at a time */
+.linkish { background: none; border: 0; padding: 4px 0; color: var(--accent, inherit); text-decoration: underline; font: inherit; cursor: pointer; min-height: 44px; }
+.also { margin: 6px 0; }
+.trick { font-size: 1.25rem; line-height: 1.4; }
+.spot { margin: 14px 0 4px; }
+.spot .options { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }

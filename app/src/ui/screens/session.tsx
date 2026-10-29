@@ -34,9 +34,8 @@ export function Session({ mode, onExit, onAnother, capMinutes }: { mode: Mode; o
   /** the block index an advance is in flight from: a double tap must not skip a block */
   const advancing = useRef<number | null>(null);
   const block = plan.blocks[idx];
-  const coreBlocks = plan.blocks.filter((b) => b.kind !== 'close').length;
 
-  useEffect(() => { runner.start(); }, []);
+  useEffect(() => { runner.start(); return runner.onProgress(() => setTick((n) => n + 1)); }, []);
   useEffect(() => {
     openedAt.current = app.now();
     if (block && block.kind !== 'close') {
@@ -95,6 +94,10 @@ export function Session({ mode, onExit, onAnother, capMinutes }: { mode: Mode; o
   const left = block && block.kind !== 'close' ? Math.round(runner.minutesLeft(idx, openedAt.current)) : 0;
   const canStop = !runner.finished && !stopAsked && block && block.kind !== 'close' && elapsed >= STOP_AFTER_MINUTES;
 
+  // the bar moves by card: finished blocks plus the open block's share
+  const pr = runner.progress();
+  const fraction = Math.min(pr.blocks, pr.blocksDone + pr.cardsDoneInBlock / Math.max(1, pr.cardsInBlock));
+
   let body;
   if (stopped) {
     body = (
@@ -125,7 +128,7 @@ export function Session({ mode, onExit, onAnother, capMinutes }: { mode: Mode; o
     <div class="session" ref={top}>
       <div class="session-top">
         <button class="btn icon" aria-label="Leave this session" onClick={() => (runner.finished ? onExit() : setLeaving(true))}>✕</button>
-        <Bar value={stopped ? coreBlocks : Math.min(idx, coreBlocks)} of={coreBlocks} label="Session progress" />
+        <Bar value={stopped || block?.kind === 'close' || !block ? pr.blocks : fraction} of={Math.max(1, pr.blocks)} label="Session progress" />
       </div>
       {!runner.finished && block && block.kind !== 'close' ? (
         <div class="session-meta">

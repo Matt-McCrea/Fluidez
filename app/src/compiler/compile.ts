@@ -210,6 +210,10 @@ class Compiler {
   private readonly rng: Rng;
   private readonly spr: number;
   private readonly known: Set<NodeId>;
+  /** introduced AND retained or fresh: what reading coverage is measured against */
+  private readonly stable: Set<NodeId>;
+  /** chapters that passed the gate but not the coverage rule this plan */
+  private readonly slipping = new Set<string>();
   private readonly sessionNew = new Set<NodeId>();
   private readonly receptiveOnly: NodeId[] = [];
   private readonly usedSentences = new Set<string>();
@@ -247,6 +251,7 @@ class Compiler {
     this.rng = makeRng(this.seed);
     this.spr = this.L.secondsPerReview();
     this.known = new Set(this.L.nodes());
+    this.stable = this.L.stableNodes ? this.L.stableNodes(undefined, this.now) : new Set(this.known);
     this.owedNew = [...input.path.owedNew];
     this.owedGrammar = [...input.path.owedGrammar];
   }
@@ -550,6 +555,24 @@ class Compiler {
   }
 
   /**
+   * Reading coverage against what is retained, not merely introduced. A
+   * required node that is introduced but not stable counts as unknown-glossed:
+   * allowed up to 5% of the requirement (at least one); one that is not
+   * introduced at all is unknown-unglossed, which is gated out (the 2% cap is
+   * under one node for any chapter this size). Items taught today are fresh.
+   */
+  private coverage(requires: readonly NodeId[]): { required: number; unstable: number; unknown: number; allowed: number; admitted: boolean } {
+    const need = [...new Set(requires)];
+    let unstable = 0, unknown = 0;
+    for (const r of need) {
+      if (this.sessionNew.has(r) || this.stable.has(r)) continue;
+      if (this.known.has(r)) unstable++; else unknown++;
+    }
+    const allowed = Math.max(1, Math.floor(need.length * 0.05));
+    return { required: need.length, unstable, unknown, allowed, admitted: unstable <= allowed };
+  }
+
+  /**
    * Up to n UNSEEN, GATED sentences containing `node`, never one already used
    * in this plan. Sentences written for the node (targets) come first; the
    * RNG only orders candidates within each group.
@@ -606,7 +629,15 @@ class Compiler {
       const reached = ui < cur || (ui === cur && (c.day === undefined || c.day <= this.path.day));
       if (!reached) continue;
       if (this.L.ledger.hasSeen('chapter', c.id)) continue;
-      if (this.gated(c.requires)) return { ch: c };
+      if (this.gated(c.requires)) {
+        const cov = this.coverage(c.requires);
+        if (cov.admitted) {
+          if (cov.unstable) this.diag({ code: 'coverage', block: 'read', unit: c.unit, coverage: cov, message: `chapter ${c.id}: ${cov.unstable}/${cov.required} required words introduced but slipping (glossed, within cap ${cov.allowed})` });
+          return { ch: c };
+        }
+        this.slipping.add(c.id);
+        this.diag({ code: 'coverage', block: 'read', unit: c.unit, coverage: cov, message: `chapter ${c.id} waits: ${cov.unstable}/${cov.required} required words are slipping (cap ${cov.allowed})` });
+      }
       blocked ??= c.id;
     }
     if (blocked) return { reason: 'gated', blocked };
@@ -1011,6 +1042,10 @@ class Compiler {
   private chapterProblem(id: string, reason: 'seen' | 'missing' | 'gated'): boolean {
     if (reason === 'seen') { this.diag({ code: 'alreadySeen', block: 'read', message: `chapter ${id} already read: skipped, not repeated` }); return false; }
     const ch = this.content.chapterById.get(id);
+    if (reason === 'gated' && this.slipping.has(id)) {
+      this.diag({ code: 'deferred', block: 'read', message: `chapter ${id} waits for slipping words to be reviewed; caught up in story order later` });
+      return false;
+    }
     if (reason === 'gated' && ch && this.waitingOnOwed(ch.requires)) {
       this.diag({ code: 'deferred', block: 'read', message: `chapter ${id} waits for owed items; caught up in story order later` });
       return false;
@@ -1210,7 +1245,17 @@ class Compiler {
     const sents = this.pickFromUnit(this.unit.id, want);
     const prev = this.course.units[this.path.unit - 1];
     if (sents.length < want && prev) sents.push(...this.pickFromUnit(prev.id, want - sents.length));
-    const items = sents.filter((s) => s.requires.length).map((s) => this.practiceItem('read', s.targets[0] ?? s.requires[0], s, 'receptive', 'exposure'));
+    // coverage: the reading as a whole may lean on only a few slipping words
+    const lean: NodeId[] = [];
+    const covered = sents.filter((s) => {
+      if (!s.requires.length) return false;
+      const cov = this.coverage([...lean, ...s.requires]);
+      if (!cov.admitted) return false;
+      lean.push(...s.requires);
+      return true;
+    });
+    if (lean.length) this.diag({ code: 'coverage', block: 'extraReading', unit: this.unit.id, coverage: this.coverage(lean), message: `extra reading: ${covered.length}/${sents.length} sentences within the slipping-word cap` });
+    const items = covered.map((s) => this.practiceItem('read', s.targets[0] ?? s.requires[0], s, 'receptive', 'exposure'));
     if (!items.length) return;
     this.blocks.push({ kind: 'extraReading', part: 'core', deliberate: false, items, minutes: round1(items.length * SECONDS.read / 60) });
   }

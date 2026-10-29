@@ -36,6 +36,8 @@ export interface LearnerView {
     reviewReusable(id: string, at: number, minDays: number): boolean;
   };
   nodes(): NodeId[];
+  /** Introduced nodes that are retained or fresh (absent in minimal views = every known node). */
+  stableNodes?(threshold?: number, at?: number): Set<NodeId>;
   node(id: NodeId): NodeRecord | undefined;
   isIntroduced(id: NodeId): boolean;
   hasCard(id: NodeId, direction: Direction): boolean;
@@ -431,6 +433,7 @@ export type DiagnosticCode =
   | 'notReady'         // contrast/pattern whose prerequisites are not known yet
   | 'prereq'           // grammar introduced before a `requires` node (course order issue)
   | 'alreadySeen'      // the day's chapter/scene was already shown (skipped, not repeated)
+  | 'coverage'         // a chapter or extra reading was weighed against retained (stable) words
   | 'noReread'         // no chapter eligible for a deliberate re-read
   | 'pathDone';        // course finished: maintenance review
 
@@ -443,6 +446,8 @@ export interface Diagnostic {
   what?: 'sentence' | 'chapter' | 'scene' | 'task' | 'script';
   wanted?: number;
   got?: number;
+  /** reading coverage: required nodes, of which introduced-but-unstable (glossed), and not introduced (unglossed) */
+  coverage?: { required: number; unstable: number; unknown: number; allowed: number; admitted: boolean };
   message: string;
 }
 

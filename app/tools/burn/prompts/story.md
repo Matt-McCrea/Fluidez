@@ -48,7 +48,7 @@ List the known nouns, verbs and adjectives before you write anything. Early on t
 
 ## 3. Shape and quality bar
 
-- **Length**: A1 80–150 words, A2 150–250, B1 300–500, B2 500–700, C1 700–1,000. The first two chapters of the course are the exception: 40–90 words, mostly the chunks just met.
+- **Length** (the gate counts words in `text`; over the maximum warns, an error with `--strict`): A1 80 to 180 words, A2 150 to 260, B1 220 to 350, B2 300 to 450, C1 400 to 600. Aim for the middle of the range. If a chapter runs long, cut a scene; never squeeze sentences into telegraphic Spanish. The first two chapters of the course are the exception: 40–90 words, mostly the chunks just met.
 - **Input days**: every new word of an Input day appears at least twice. Where a word cannot appear legally (for example *empezar* before stem-changing verbs are taught), drop it and say so in your report.
 - **Dialogue first at A1**, written as `Name: line`. Use present-tense narration only once the present is taught. At A1–A2, keep short lines of English (Vale treating Tomás as a tourist, a word he blurts out) for comedy or plot, never to carry the Spanish.
 - **Every chapter has**:
