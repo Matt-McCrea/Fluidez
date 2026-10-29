@@ -6,26 +6,112 @@
     "en": "I'm staying a year because I think we have a chance."
   },
   "examples": [
-    { "es": "Me quedo un año para salvar el café.", "en": "I'm staying a year to save the café." },
-    { "es": "Me quedo un año porque creo que tenemos una oportunidad.", "en": "I'm staying a year because I think we have a chance." },
-    { "es": "¿Por qué te levantas tan temprano?\nPara abrir el café a las seis.", "en": "Why do you get up so early? (to a friend)\nTo open the café at six." },
-    { "es": "¿Por qué tomas té en la noche?\nPorque con café no puedo dormir.", "en": "Why do you drink tea at night? (to a friend)\nBecause with coffee I can't sleep." },
-    { "es": "Hernando viene todos los días porque vive cerca.", "en": "Hernando comes every day because he lives nearby." },
-    { "es": "¿Para qué llamaste a Mariana?\nPara pedirle ayuda.", "en": "What did you call Mariana for? (to a friend)\nTo ask her for help." },
-    { "es": "Salí temprano para no perder el bus.", "en": "I left early so I wouldn't miss the bus." }
+    {
+      "es": "Me quedo un año para salvar el café.",
+      "en": "I'm staying a year to save the café."
+    },
+    {
+      "es": "Me quedo un año porque creo que tenemos una oportunidad.",
+      "en": "I'm staying a year because I think we have a chance."
+    },
+    {
+      "es": "¿Por qué te levantas tan temprano?\nPara abrir el café a las seis.",
+      "en": "Why do you get up so early? (to a friend)\nTo open the café at six."
+    },
+    {
+      "es": "¿Por qué tomas té en la noche?\nPorque con café no puedo dormir.",
+      "en": "Why do you drink tea at night? (to a friend)\nBecause with coffee I can't sleep."
+    },
+    {
+      "es": "Hernando viene todos los días porque vive cerca.",
+      "en": "Hernando comes every day because he lives nearby."
+    },
+    {
+      "es": "¿Para qué llamaste a Mariana?\nPara pedirle ayuda.",
+      "en": "What did you call Mariana for? (to a friend)\nTo ask her for help."
+    },
+    {
+      "es": "Salí temprano para no perder el bus.",
+      "en": "I left early so I wouldn't miss the bus."
+    }
   ],
   "rule": "Both answer why. They just hand you different halves of it.\n\n*para* + a basic verb: the goal, what you're after. *para salvar*, *para abrir*.\n*porque* + a whole sentence with its own verb: the reason, what's true or what happened. *porque creo…*, *porque vive cerca*.\n\nA quick test: look at the verb right after the gap. A dictionary form ending in -ar, -er or -ir goes with *para*. A verb with a person in it (*tengo*, *vive*, *encontró*) goes with *porque*.\n\nEnglish hides this, because to send and because I want both feel like reasons. Spanish never lets *porque* take a bare *trabajar*, or *para* take *quiero*.\n\n*¿Por qué?* can get either answer. *¿Para qué?* asks only for the goal, so answer it with *para*. And a goal of avoiding something is *para no* + basic verb: *para no perder el bus*.",
   "smallPrint": "Teachers call *para* + infinitive a clause of purpose, and *porque* + a conjugated verb a clause of cause.",
   "readAndPick": [
-    { "es": "Abrimos los domingos para vender más.", "options": ["We open on Sundays to sell more.", "We open on Sundays because we sell more."], "answer": 0 },
-    { "es": "Abrimos los domingos porque vendemos más.", "options": ["We open on Sundays to sell more.", "We open on Sundays because we sell more."], "answer": 1 },
-    { "es": "Vine porque quiero hablar contigo.", "options": ["I came because I want to talk to you.", "I came to talk to you."], "answer": 0 },
-    { "es": "Vine para hablar contigo.", "options": ["I came because I want to talk to you.", "I came to talk to you."], "answer": 1 },
-    { "es": "Tomás está contento porque encontró la carta.", "options": ["Tomás is happy to find the letter.", "Tomás is happy because he found the letter."], "answer": 1 },
-    { "es": "Salí temprano para no perder el bus.", "options": ["I left early because I missed the bus.", "I left early so I wouldn't miss the bus.", "I left early to miss the bus."], "answer": 1 },
-    { "es": "Mariana usa el celular para trabajar.", "options": ["Mariana uses her phone because she works.", "Mariana uses her phone to work."], "answer": 1 },
-    { "es": "Vale vino a Bogotá porque le gusta la ciudad.", "options": ["Vale came to Bogotá because she likes the city.", "Vale came to Bogotá to see the city."], "answer": 0 },
-    { "es": "¿Para qué necesitas plata?", "options": ["Because you need money?", "Do you need money? (to a friend)", "What do you need money for? (to a friend)"], "answer": 2 }
+    {
+      "es": "Abrimos los domingos para vender más.",
+      "options": [
+        "We open on Sundays to sell more.",
+        "We open on Sundays because we sell more."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Abrimos los domingos porque vendemos más.",
+      "options": [
+        "We open on Sundays to sell more.",
+        "We open on Sundays because we sell more."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vine porque quiero hablar contigo.",
+      "options": [
+        "I came because I want to talk to you.",
+        "I came to talk to you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vine para hablar contigo.",
+      "options": [
+        "I came because I want to talk to you.",
+        "I came to talk to you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás está contento porque encontró la carta.",
+      "options": [
+        "Tomás is happy to find the letter.",
+        "Tomás is happy because he found the letter."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Salí temprano para no perder el bus.",
+      "options": [
+        "I left early because I missed the bus.",
+        "I left early so I wouldn't miss the bus.",
+        "I left early to miss the bus."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana usa el celular para trabajar.",
+      "options": [
+        "Mariana uses her phone because she works.",
+        "Mariana uses her phone to work."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale vino a Bogotá porque le gusta la ciudad.",
+      "options": [
+        "Vale came to Bogotá because she likes the city.",
+        "Vale came to Bogotá to see the city."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Para qué necesitas plata?",
+      "options": [
+        "Because you need money?",
+        "Do you need money? (to a friend)",
+        "What do you need money for? (to a friend)"
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
     {
@@ -49,7 +135,9 @@
     {
       "prompt": "A friend asks *¿Para qué llamaste a Mariana?* Answer: To ask her for help.",
       "answer": "Para pedirle ayuda.",
-      "accept": ["Para pedir ayuda."],
+      "accept": [
+        "Para pedir ayuda."
+      ],
       "why": "*¿Para qué?* asks for the goal, so the answer starts with *para*."
     },
     {
@@ -67,7 +155,9 @@
     {
       "prompt": "Say it with *porque* instead: *Vine para hablar contigo.*",
       "answer": "Vine porque quiero hablar contigo.",
-      "accept": [],
+      "accept": [
+        "Vine porque quería hablar contigo."
+      ],
       "why": "*Porque* needs a whole sentence, so add a verb with a person in it: *quiero*."
     },
     {

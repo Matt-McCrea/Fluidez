@@ -6,22 +6,99 @@
     "en": "For me, Altamira isn't going to win."
   },
   "examples": [
-    { "es": "Para mí, el ajiaco es delicioso.", "en": "For me, ajiaco is delicious." },
-    { "es": "Para mí, el ajiaco es delicioso. ¿Y para ti?\nPara mí también.", "en": "For me, ajiaco is delicious. And for you?\nFor me too." },
-    { "es": "Para mí, el español es difícil.", "en": "For me, Spanish is hard." },
-    { "es": "Para mí, Hernando tiene razón.", "en": "For me, Hernando is right." },
-    { "es": "Para mí, el tinto es mejor que el té.", "en": "For me, black coffee is better than tea." }
+    {
+      "es": "Para mí, el ajiaco es delicioso.",
+      "en": "For me, ajiaco is delicious."
+    },
+    {
+      "es": "Para mí, el ajiaco es delicioso. ¿Y para ti?\nPara mí también.",
+      "en": "For me, ajiaco is delicious. And for you?\nFor me too."
+    },
+    {
+      "es": "Para mí, el español es difícil.",
+      "en": "For me, Spanish is hard."
+    },
+    {
+      "es": "Para mí, Hernando tiene razón.",
+      "en": "For me, Hernando is right."
+    },
+    {
+      "es": "Para mí, el tinto es mejor que el té.",
+      "en": "For me, black coffee is better than tea."
+    }
   ],
-  "rule": "*Para mí,* + your opinion = in my view, for me.\nAsk back with *¿Y para ti?* (or *¿Y para usted?*).\nAnswer short: *Para mí también*, *Para mí no*.\n\nTwo small things. *Mí* here has an accent (it's me, not my); *ti* never does.\n\nAnd the comma matters. *Para mí, este café es muy bueno* is your opinion. *Este café es para mí* just means the coffee is for you to drink.",
+  "rule": "*Para mí,* + your opinion = in my view, for me.\nAsk back with *¿Y para ti?* (or *¿Y para usted?*).\nAnswer short: *Para mí también*, *Para mí no*.\n\nTwo small things. *Mí* here has an accent (it's me, not my); *ti* never does.\n\nAnd the comma matters. *Para mí, este café es muy bueno* is your opinion. *Este café es para mí* just means the coffee is yours to drink.",
   "readAndPick": [
-    { "es": "Este café es para mí.", "options": ["This coffee is for me.", "In my view, this coffee is good."], "answer": 0 },
-    { "es": "Para mí, este café es muy bueno.", "options": ["This coffee is for me.", "In my view, this coffee is very good."], "answer": 1 },
-    { "es": "Esta carta es para ti.", "options": ["In your view, this letter is good.", "This letter is for you.", "This letter is mine."], "answer": 1 },
-    { "es": "Para mí, el español es difícil.", "options": ["Spanish is hard for you.", "I'm learning Spanish for me.", "For me, Spanish is hard."], "answer": 2 },
-    { "es": "Para mí también.", "options": ["For me too.", "Not for me.", "And for you?"], "answer": 0 },
-    { "es": "Para mí no.", "options": ["For me too.", "Not for me.", "And for you?"], "answer": 1 },
-    { "es": "¿Y para usted?", "options": ["And for you? (to a friend)", "And for me?", "And for you? (formal)"], "answer": 2 },
-    { "es": "Para mí, la Candelaria es muy bonita.", "options": ["For me, La Candelaria is very pretty.", "La Candelaria is pretty for you.", "This is for La Candelaria."], "answer": 0 }
+    {
+      "es": "Este café es para mí.",
+      "options": [
+        "This coffee is for me.",
+        "In my view, this coffee is good."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Para mí, este café es muy bueno.",
+      "options": [
+        "This coffee is for me.",
+        "In my view, this coffee is very good."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esta carta es para ti.",
+      "options": [
+        "In your view, this letter is good.",
+        "This letter is for you.",
+        "This letter is mine."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Para mí, el español es difícil.",
+      "options": [
+        "Spanish is hard for you.",
+        "I'm learning Spanish for me.",
+        "For me, Spanish is hard."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Para mí también.",
+      "options": [
+        "For me too.",
+        "Not for me.",
+        "And for you?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Para mí no.",
+      "options": [
+        "For me too.",
+        "Not for me.",
+        "And for you?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Y para usted?",
+      "options": [
+        "And for you? (to a friend)",
+        "And for me?",
+        "And for you? (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Para mí, la Candelaria es muy bonita.",
+      "options": [
+        "For me, La Candelaria is very pretty.",
+        "La Candelaria is pretty for you.",
+        "This is for La Candelaria."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
     {
@@ -33,7 +110,9 @@
     {
       "prompt": "For me, Spanish is hard.",
       "answer": "Para mí, el español es difícil.",
-      "accept": ["Para mí el español es difícil."],
+      "accept": [
+        "Para mí el español es difícil."
+      ],
       "why": "Your view goes up front: *Para mí,* then the opinion."
     },
     {
@@ -57,7 +136,9 @@
     {
       "prompt": "Make it your opinion: *Hernando tiene razón.*",
       "answer": "Para mí, Hernando tiene razón.",
-      "accept": ["Para mí Hernando tiene razón."],
+      "accept": [
+        "Para mí Hernando tiene razón."
+      ],
       "why": "Put *Para mí,* in front to make it softer."
     },
     {

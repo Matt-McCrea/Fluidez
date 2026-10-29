@@ -8,7 +8,7 @@
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\b(el|la|los|las)\\s+\\S+\\s+que\\s+\\S+",
+        "pattern": "\\b(el|la|los|las|un|una)\\s+\\S+\\s+que\\s+\\S+",
         "label": "describe someone with que (el señor que...)"
       },
       {
@@ -28,7 +28,7 @@
         "n": 2
       }
     ],
-    "model": "Me gusta Don Hernando. Es el señor que viene todos los días.",
+    "model": "Me gusta mucho don Hernando. Es el señor que viene todos los días a las siete.",
     "focus": "g:relative-que",
     "requires": [
       "c:me-gusta",
@@ -42,7 +42,9 @@
       "l:ser",
       "l:señor",
       "l:venir",
+      "p:quantifiers-basic",
       "p:senor-don-article",
+      "p:telling-time",
       "p:todos-los-dias",
       "p:veces-al"
     ]
@@ -135,7 +137,7 @@
   {
     "id": "w-u14-04",
     "unit": "u14",
-    "prompt": "Your neighbour asks why you came home late. Start the reason with \"como\" (since), then say what happened as a result.",
+    "prompt": "Your neighbour asks why you came home late last night. Start the reason with \"como\" (since), then add a result with \"por eso\" or \"así que\".",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -180,7 +182,7 @@
   {
     "id": "w-u14-05",
     "unit": "u14",
-    "prompt": "Tomás has to explain to the landlord why he is staying in Bogotá. Write two sentences: a reason, then \"así que\" with what he decides.",
+    "prompt": "Tomás's mum calls from Toronto and asks why he isn't coming home. Write his answer in one or two sentences: a reason, then \"así que\" with what he decides.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -220,42 +222,43 @@
   {
     "id": "w-u14-06",
     "unit": "u14",
-    "prompt": "Your grandmother's friend Doña Luz gave you a gift. Write her a note in two sentences: tell her you want to give her a hug, and ask her to call you. She is an older woman you call usted.",
+    "prompt": "Your grandmother's friend Doña Luz gave you a present. Write her a thank-you note in two sentences: say you want to give her a hug, and that you're going to call her tomorrow. She's an older woman you call usted.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
       {
-        "type": "containsAny",
-        "words": [
-          "le",
-          "la",
-          "lo"
-        ],
-        "label": "use le for usted (le quiero...)"
+        "type": "regex",
+        "pattern": "(darle|le quiero dar)",
+        "label": "give her (usted) a hug: darle un abrazo, or le quiero dar"
+      },
+      {
+        "type": "regex",
+        "pattern": "(llamarla|la voy a llamar)",
+        "label": "call her: voy a llamarla, or la voy a llamar"
       },
       {
         "type": "avoidsAny",
         "words": [
-          "te ",
-          "tú",
-          "puedes",
-          "quieres",
-          "llámame"
+          "darte",
+          "llamarte",
+          "te quiero",
+          "te voy"
         ],
-        "label": "usted, not tú"
+        "label": "usted, not tú: darle, llamarla"
       },
       {
         "type": "minSentences",
         "n": 2
       }
     ],
-    "model": "Doña Luz, quiero darle un abrazo. Voy a llamarla mañana.",
+    "model": "Doña Luz, mil gracias por el regalo. Quiero darle un abrazo, y voy a llamarla mañana.",
     "focus": "g:indirect-objects",
     "requires": [
       "c:quiero",
       "c:un-abrazo",
       "c:voy-a",
       "g:direct-objects",
+      "g:gender-articles",
       "g:indirect-objects",
       "g:ir-a-plans",
       "g:object-pronoun-position",
@@ -267,21 +270,23 @@
       "l:llamar",
       "l:mañana",
       "l:querer",
+      "l:regalo",
       "p:don-dona-nombre",
+      "p:gracias-por",
       "p:senor-don-article"
     ]
   },
   {
     "id": "w-u14-07",
     "unit": "u14",
-    "prompt": "Your friend Vale asks about the lease letter you found. Tell her in two sentences that you are going to send it to her and that you want to read it again. Put the little word on the verb in one of them (mandarla, leerla...).",
+    "prompt": "Vale asks about Rosa's letter. Tell her in two sentences that you are going to send it to her and that you want to read it again. Glue the little word onto the verb in one of them (mandarte, leerla...).",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
       {
         "type": "regex",
         "pattern": "\\b\\S+(ar|er|ir)(la|lo|te|me|las|los|se|le)\\b",
-        "label": "glue the little word to the infinitive (mandártela, leerlo)"
+        "label": "glue the little word onto the basic verb (mandarte, leerla)"
       },
       {
         "type": "minSentences",
@@ -386,7 +391,7 @@
   {
     "id": "w-u14-10",
     "unit": "u14",
-    "prompt": "Vale asks if the new café is worth it. Answer her in two or three sentences with \"además\" to add a second good reason.",
+    "prompt": "Mariana asks if the new bakery on your street is worth trying. Answer her in two or three sentences, with \"además\" to add a second good reason.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -400,32 +405,29 @@
         "n": 2
       }
     ],
-    "model": "Sí, vale la pena. El café es bueno y, además, queda cerca.",
+    "model": "Sí, vale la pena. El pan es muy bueno y, además, es barato.",
     "focus": "c:ademas",
     "requires": [
       "c:ademas",
       "c:vale-la-pena",
       "g:gender-articles",
-      "g:present-ar",
       "g:ser-identity",
       "l:además",
+      "l:barato",
       "l:bueno",
-      "l:café",
-      "l:cerca",
+      "l:pan",
       "l:pena",
-      "l:quedar",
       "l:ser",
       "l:valer",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
-      "p:cerca-de",
-      "p:quedar-cerca"
+      "p:quantifiers-basic"
     ]
   },
   {
     "id": "w-u14-11",
     "unit": "u14",
-    "prompt": "Write a letter-style opening and closing to Don Hernando, an older friend (usted). Start with \"Querido...\", tell him some news with \"te cuento que\"/\"le cuento que\", and end with a hug.",
+    "prompt": "Write a short note to Don Hernando, an older friend you call usted. Start with \"Querido don Hernando:\", tell him some news with \"le cuento que\", and end with a hug.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -435,12 +437,9 @@
         "label": "open with Querido Don Hernando"
       },
       {
-        "type": "containsAny",
-        "words": [
-          "le cuento que",
-          "te cuento que"
-        ],
-        "label": "share news with le cuento que"
+        "type": "containsWord",
+        "word": "le cuento que",
+        "label": "share news with le cuento que (usted)"
       },
       {
         "type": "containsAny",
@@ -450,7 +449,7 @@
         "label": "end with Un abrazo"
       }
     ],
-    "model": "Querido Don Hernando: le cuento que me quedo un año en el café. Un abrazo.",
+    "model": "Querido don Hernando: le cuento que me quedo un año en el café. Un abrazo, Tomás.",
     "focus": "c:te-cuento-que",
     "requires": [
       "c:querido-querida",
@@ -491,7 +490,7 @@
         "n": 3
       }
     ],
-    "model": "Me quedo un año. La carta que encontré dice algo importante. Creo que tenemos una oportunidad porque el edificio es de Rosa.",
+    "model": "Me quedo un año. La carta que encontré dice algo importante. Creo que tenemos una oportunidad porque el edificio es de Rosa y Joaquín.",
     "focus": "g:relative-que",
     "requires": [
       "c:creo-que",

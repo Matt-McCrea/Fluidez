@@ -6,26 +6,114 @@
     "en": "The letter I found says something important."
   },
   "examples": [
-    { "es": "El señor que vende arepas es mi vecino.", "en": "The man who sells arepas is my neighbour." },
-    { "es": "La carta que encontré es de Rosa.", "en": "The letter I found is from Rosa." },
-    { "es": "Tengo una amiga que vive en Medellín.", "en": "I have a friend who lives in Medellín." },
-    { "es": "¿Dónde está el libro que te di?", "en": "Where's the book I gave you? (to a friend)" },
-    { "es": "No me gusta el café que venden aquí.", "en": "I don't like the coffee they sell here." },
-    { "es": "¿Conoces a la mujer que trabaja en la panadería?", "en": "Do you know the woman who works at the bakery? (to a friend)" },
-    { "es": "Los pandebonos que hace Vale son deliciosos.", "en": "The pandebonos Vale makes are delicious." }
+    {
+      "es": "El señor que vende arepas es mi vecino.",
+      "en": "The man who sells arepas is my neighbour."
+    },
+    {
+      "es": "La carta que encontré es de Rosa.",
+      "en": "The letter I found is from Rosa."
+    },
+    {
+      "es": "Tengo una amiga que vive en Medellín.",
+      "en": "I have a friend who lives in Medellín."
+    },
+    {
+      "es": "¿Dónde está el libro que te di?",
+      "en": "Where's the book I gave you? (to a friend)"
+    },
+    {
+      "es": "No me gusta el café que venden aquí.",
+      "en": "I don't like the coffee they sell here."
+    },
+    {
+      "es": "¿Conoces a la mujer que trabaja en la panadería?",
+      "en": "Do you know the woman who works at the bakery? (to a friend)"
+    },
+    {
+      "es": "Los pandebonos que hace Vale son deliciosos.",
+      "en": "The pandebonos Vale makes are delicious."
+    }
   ],
   "rule": "To add detail to a person or a thing, put *que* right after it, then a little sentence about it:\n*el señor que vende arepas*, the man who sells arepas\n*la carta que encontré*, the letter I found\n\nEnglish has a choice of who, which, that, or nothing at all. Spanish has one word for every case: *que*. People, things, one or many, it never changes.\n\nThe big trap: English loves to drop it. The letter I found, the book I gave you. Spanish never drops it: *la carta que encontré*, *el libro que te di*.\n\nThe verb after *que* tells you who did it. *La carta que encontré* is the letter I found; *la carta que encontró* is the letter he or she found.",
   "smallPrint": "Teachers call this a relative clause (*oración de relativo*), and *que* is the relative pronoun.",
   "readAndPick": [
-    { "es": "El señor que vende arepas es mi vecino.", "options": ["The man who sells arepas is my neighbour.", "The man sells arepas to my neighbour.", "My neighbour sells arepas to the man."], "answer": 0 },
-    { "es": "La carta que encontré es de Rosa.", "options": ["The letter Rosa found is mine.", "The letter I found is from Rosa.", "I found a letter for Rosa."], "answer": 1 },
-    { "es": "La carta que encontró es de Rosa.", "options": ["The letter I found is from Rosa.", "The letter he found is from Rosa."], "answer": 1 },
-    { "es": "El señor que conoce a Vale vive aquí.", "options": ["The man who knows Vale lives here.", "The man Vale knows lives here."], "answer": 0 },
-    { "es": "Tengo una amiga que vive en Medellín.", "options": ["My friend and I live in Medellín.", "I have a friend in Medellín who has a house.", "I have a friend who lives in Medellín."], "answer": 2 },
-    { "es": "Los pandebonos que hace Vale son deliciosos.", "options": ["Vale says the pandebonos are delicious.", "The pandebonos Vale makes are delicious."], "answer": 1 },
-    { "es": "¿Dónde está el libro que te di?", "options": ["Where's the book I gave you?", "Where's the book you gave me?"], "answer": 0 },
-    { "es": "No me gusta el café que venden aquí.", "options": ["I don't like the coffee I sell here.", "They don't like the coffee here.", "I don't like the coffee they sell here."], "answer": 2 },
-    { "es": "El taxi que maneja Hernando es muy viejo.", "options": ["Hernando drives a very old taxi to work.", "The taxi Hernando drives is very old."], "answer": 1 }
+    {
+      "es": "El señor que vende arepas es mi vecino.",
+      "options": [
+        "The man who sells arepas is my neighbour.",
+        "The man sells arepas to my neighbour.",
+        "My neighbour sells arepas to the man."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La carta que encontré es de Rosa.",
+      "options": [
+        "The letter Rosa found is mine.",
+        "The letter I found is from Rosa.",
+        "I found a letter for Rosa."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La carta que encontró es de Rosa.",
+      "options": [
+        "The letter I found is from Rosa.",
+        "The letter he found is from Rosa."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El señor que conoce a Vale vive aquí.",
+      "options": [
+        "The man who knows Vale lives here.",
+        "The man Vale knows lives here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo una amiga que vive en Medellín.",
+      "options": [
+        "My friend and I live in Medellín.",
+        "I have a friend in Medellín who has a house.",
+        "I have a friend who lives in Medellín."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los pandebonos que hace Vale son deliciosos.",
+      "options": [
+        "Vale says the pandebonos are delicious.",
+        "The pandebonos Vale makes are delicious."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde está el libro que te di?",
+      "options": [
+        "Where's the book I gave you?",
+        "Where's the book you gave me?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No me gusta el café que venden aquí.",
+      "options": [
+        "I don't like the coffee I sell here.",
+        "They don't like the coffee here.",
+        "I don't like the coffee they sell here."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El taxi que maneja Hernando es muy viejo.",
+      "options": [
+        "Hernando drives a very old taxi to work.",
+        "The taxi Hernando drives is very old."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
@@ -43,7 +131,9 @@
     {
       "prompt": "The man who sells arepas is my neighbour.",
       "answer": "El señor que vende arepas es mi vecino.",
-      "accept": [],
+      "accept": [
+        "El hombre que vende arepas es mi vecino."
+      ],
       "why": "Who, for a person, is still *que*."
     },
     {
@@ -61,7 +151,9 @@
     {
       "prompt": "Join them into one sentence: *Vale hace pandebonos. Los pandebonos son deliciosos.*",
       "answer": "Los pandebonos que hace Vale son deliciosos.",
-      "accept": ["Los pandebonos que Vale hace son deliciosos."],
+      "accept": [
+        "Los pandebonos que Vale hace son deliciosos."
+      ],
       "why": "*Que* takes the place of the second *pandebonos* and joins the two ideas."
     },
     {

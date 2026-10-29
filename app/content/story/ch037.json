@@ -1,283 +1,284 @@
 {
- "id": "ch037",
- "unit": "u14",
- "title": "Un abrazo, Tomás",
- "text": "Once de la noche. El café estaba cerrado, pero en la cocina había luz.\nEn la pantalla del celular de Tomás había una sola palabra: «Hola».\nHernando: ¿Una palabra en una hora, mijo?\nTomás: Es un mensaje difícil. Tengo muchas cosas en la cabeza.\nHernando: Pues mande un audio. Yo mando audios a mis nietos todos los días.\nTomás habló al celular para mandar un audio.\nTomás: Vale, te cuento que...\nSimón: ¡Querida! ¡Querida!\nTomás paró el audio y no lo mandó.\nTomás: Un audio con Simón, no. Escribo.\nHernando: Entonces describa todo, mijo. Vale responde a los detalles. Yo la conozco.\nTomás buscó la red del café en su celular. Tenía un nombre nuevo: «Altamira No». Era una idea de Vale. Y el internet funcionaba un minuto sí y un minuto no, como la ducha de Gloria.\nTomás abrió la aplicación de mensajes y buscó el chat de Vale. En el chat, la última foto era de Simón con una almojábana.\nTomás escribió una hora. Describió todo, con detalles. Hernando le sirvió tres tintos.\n«Querida Vale:\nTe cuento que hoy fue un día largo. Tengo una noticia terrible y una noticia excelente.\nPrimero, la terrible. Altamira compró el contrato de arriendo del café, y el contrato termina en un año. Como el contrato es de Altamira, en un año pueden cerrar el café.\nAhora, la excelente. Hernando me dio la llave de Joaquín, que es la llave de la cocina. Y al final de la carta de Rosa hay una frase que cambia todo: Rosa y Joaquín compraron el edificio en 1977. O sea, el edificio es de la familia, así que quizá Altamira no lo puede tomar.\nEl notario necesita la escritura original para dar los papeles. No sé dónde está, pero la busco mañana.\nPor eso no vendo el café. Me quedo un año. Creo que tenemos una oportunidad.\nUn abrazo,\nTomás»\nEra el primer mensaje largo de Tomás en español. No eran frases cortas. Tenía razones y detalles.\nHernando: ¿Lo puedo leer?\nTomás: Lo siento. No es para compartir.\nHernando: Yo comparto todo con usted, mijo. Mis nietos, mis fotos, mis canciones.\nTomás mandó el mensaje a la una y diez. A la una y doce, Vale lo leyó.\nPero Vale no contestó. Cinco minutos. Diez. Veinte.\nHernando: Ya contesta, mijo. Tranquilo. En la montaña no hay internet. Ni red.\nTomás puso la cabeza en la mesa.\nSimón: ¡Un abrazo! ¡Un abrazo!\nA las dos, la aplicación dijo: «Vale está escribiendo». Tomás miró la pantalla y esperó. Pero Vale no respondió.",
- "gloss": [
-  {
-   "es": "mijo",
-   "en": "son (a fond way to talk to a younger man)"
-  },
-  {
-   "es": "notario",
-   "en": "notary (the lawyer who keeps property papers)"
-  },
-  {
-   "es": "«Altamira No»",
-   "en": "\"Altamira No\" (the café's new wifi name)"
-  },
-  {
-   "es": "el internet funcionaba un minuto sí y un minuto no",
-   "en": "the internet worked one minute on and one minute off"
-  },
-  {
-   "es": "Vale responde a los detalles.",
-   "en": "Vale responds to details."
-  },
-  {
-   "es": "quizá Altamira no lo puede tomar",
-   "en": "maybe Altamira can't take it"
-  },
-  {
-   "es": "pero la busco mañana",
-   "en": "but I'll look for it tomorrow"
-  },
-  {
-   "es": "Me quedo un año. Creo que tenemos una oportunidad.",
-   "en": "I'm staying for a year. I think we have a chance."
-  },
-  {
-   "es": "No es para compartir.",
-   "en": "It's not for sharing."
-  },
-  {
-   "es": "Vale está escribiendo",
-   "en": "Vale is typing"
-  }
- ],
- "questions": [
-  {
-   "q": "Why doesn't Tomás send the audio?",
-   "options": [
-    "Simón shouts «¡Querida!» in the middle of it",
-    "The internet is down",
-    "Hernando takes the phone",
-    "Vale doesn't like audios"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "What does Tomás decide in his message?",
-   "options": [
-    "He is staying a year, because he thinks they have a chance",
-    "He is selling the café to Altamira",
-    "He is going back to Toronto",
-    "He is moving to Medellín"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "¿Qué necesita el notario para dar los papeles?",
-   "options": [
-    "La escritura original",
-    "La llave de Joaquín",
-    "El contrato de arriendo",
-    "Un audio de Vale"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "What happens at two in the morning?",
-   "options": [
-    "The app says Vale is typing, but no reply comes",
-    "Vale calls the café",
-    "Hernando reads the message",
-    "The lights go out"
-   ],
-   "answer": 0
-  }
- ],
- "rereadQuestions": [
-  {
-   "q": "What was the last photo in Vale's chat?",
-   "options": [
-    "Simón with an almojábana",
-    "Rosa's letter",
-    "The Burra",
-    "Vale's mother"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "How many coffees does Hernando serve Tomás while he writes?",
-   "options": [
-    "Three",
-    "One",
-    "Five",
-    "Ten"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "What makes this message different from Tomás's earlier ones?",
-   "options": [
-    "It is long, with reasons and details",
-    "It is in English",
-    "It is an audio",
-    "Hernando wrote it"
-   ],
-   "answer": 0
-  }
- ],
- "hook": "Vale has read the message, started to type and stopped. By morning her answer arrives, and it is exactly one word long.",
- "requires": [
-  "c:al-final",
-  "c:creo-que",
-  "c:donde-esta",
-  "c:entonces-bueno",
-  "c:era",
-  "c:hay",
-  "c:hola-buenos-dias",
-  "c:lo-siento-pero-no-puedo",
-  "c:no-se",
-  "c:o-sea",
-  "c:puedo",
-  "c:pues",
-  "c:querido-querida",
-  "c:te-cuento-que",
-  "c:tengo",
-  "c:tienes",
-  "c:tranquilo",
-  "c:un-abrazo",
-  "g:adjective-agreement",
-  "g:cause-result",
-  "g:commands-usted",
-  "g:direct-objects",
-  "g:estar-gerund",
-  "g:estar-location-states",
-  "g:gender-articles",
-  "g:hay-vs-esta",
-  "g:imperfect-habitual",
-  "g:imperfect-states",
-  "g:indirect-objects",
-  "g:prep-pronouns",
-  "g:present-ar",
-  "g:present-er-ir",
-  "g:preterite-ar",
-  "g:preterite-er-ir",
-  "g:preterite-irregular-strong",
-  "g:preterite-ser-ir-hacer",
-  "g:preterite-spelling-stem",
-  "g:reflexive-routine",
-  "g:reformulation",
-  "g:relative-que",
-  "g:ser-identity",
-  "g:stem-boot",
-  "g:that-clauses",
-  "g:verb-infinitive",
-  "g:yo-irregular",
-  "p:dates-years",
-  "p:demonstratives-basic",
-  "p:lavarse-las-manos",
-  "p:masculine-plural-mixed",
-  "p:me-te-nos-objects",
-  "p:ordinal-floor",
-  "p:ordinals-primer-tercer",
-  "p:para-inf",
-  "p:para-inf-purpose",
-  "p:por-la-manana",
-  "p:possessives-basic",
-  "p:quantifiers-basic",
-  "p:saber-conocer",
-  "p:telling-time",
-  "p:time-sequence-basic",
-  "p:todos-los-dias",
-  "p:veces-al"
- ],
- "lexemes": [
-  "l:abrazo",
-  "l:abrir",
-  "l:ahora",
-  "l:almojábana",
-  "l:aplicación",
-  "l:arriendo",
-  "l:audio",
-  "l:año",
-  "l:buscar",
-  "l:cabeza",
-  "l:café",
-  "l:cambiar",
-  "l:canción",
-  "l:carta",
-  "l:celular",
-  "l:cerrar",
-  "l:chat",
-  "l:cocina",
-  "l:compartir",
-  "l:comprar",
-  "l:conocer",
-  "l:contar",
-  "l:contestar",
-  "l:contrato",
-  "l:corto",
-  "l:cosa",
-  "l:creer",
-  "l:dar",
-  "l:decir",
-  "l:describir",
-  "l:detalle",
-  "l:difícil",
-  "l:ducha",
-  "l:día",
-  "l:dónde",
-  "l:edificio",
-  "l:escribir",
-  "l:escritura",
-  "l:español",
-  "l:esperar",
-  "l:estar",
-  "l:excelente",
-  "l:familia",
-  "l:final",
-  "l:foto",
-  "l:frase",
-  "l:funcionar",
-  "l:hablar",
-  "l:hora",
-  "l:hoy",
-  "l:idea",
-  "l:internet",
-  "l:largo",
-  "l:leer",
-  "l:llave",
-  "l:luz",
-  "l:mandar",
-  "l:mañana",
-  "l:mensaje",
-  "l:mesa",
-  "l:minuto",
-  "l:mirar",
-  "l:montaña",
-  "l:necesitar",
-  "l:nieto",
-  "l:noche",
-  "l:nombre",
-  "l:noticia",
-  "l:nuevo",
-  "l:oportunidad",
-  "l:original",
-  "l:palabra",
-  "l:pantalla",
-  "l:papel",
-  "l:parar",
-  "l:poder",
-  "l:poner",
-  "l:quedarse",
-  "l:querer",
-  "l:quizá",
-  "l:razón",
-  "l:red",
-  "l:responder",
-  "l:saber",
-  "l:sentir",
-  "l:ser",
-  "l:servir",
-  "l:tener",
-  "l:terminar",
-  "l:terrible",
-  "l:tinto",
-  "l:tomar",
-  "l:tranquilo",
-  "l:vender"
- ]
+  "id": "ch037",
+  "unit": "u14",
+  "title": "Un abrazo, Tomás",
+  "text": "Once de la noche. El café estaba cerrado, pero en la cocina había luz.\nEn la pantalla del celular de Tomás había una sola palabra: «Hola».\nHernando: ¿Una palabra en una hora, mijo?\nTomás: Es un mensaje difícil. Tengo muchas cosas en la cabeza.\nHernando: Pues mande un audio. Mis nietos me mandan audios todos los días.\nTomás empezó un audio para Vale.\nTomás: Vale, te cuento que...\nSimón: ¡Querida! ¡Querida!\nTomás paró el audio y no lo mandó.\nTomás: Un audio con Simón, no. Escribo.\nHernando: Entonces describa todo, mijo. Vale responde a los detalles. Yo la conozco.\nTomás buscó la red del café en su celular. Tenía un nombre nuevo: «Altamira No». Era una idea de Vale. Y el internet funcionaba un minuto sí y un minuto no, como la ducha de Gloria.\nTomás abrió la aplicación de mensajes y buscó el chat de Vale. En el chat, la última foto era de Simón con una almojábana.\nTomás escribió una hora. Describió todo, con detalles. Hernando le sirvió tres tintos.\n«Querida Vale:\nTe cuento que hoy fue un día largo. Tengo una noticia terrible y una noticia excelente.\nPrimero, la terrible. Altamira compró el contrato de arriendo del café, y el contrato termina en un año. Como el contrato es de Altamira, en un año pueden cerrar el café.\nAhora, la excelente. Hernando me dio la llave de Joaquín, que es la llave de la cocina. Y al final de la carta de Rosa hay una frase que cambia todo: Rosa y Joaquín compraron el edificio en 1977. O sea, el edificio es de la familia, así que quizá Altamira no lo puede tomar.\nEl notario necesita la escritura original para dar los papeles. No sé dónde está, pero la busco mañana.\nPor eso no vendo el café. Me quedo un año. Creo que tenemos una oportunidad.\nUn abrazo,\nTomás»\nEra el primer mensaje largo de Tomás en español. No eran frases cortas. Tenía razones y detalles.\nHernando: ¿Lo puedo leer?\nTomás: Lo siento. No es para compartir.\nHernando: Yo comparto todo con usted, mijo. Mis nietos, mis fotos, mis canciones.\nTomás mandó el mensaje a la una y diez. A la una y doce, Vale lo leyó.\nPero Vale no contestó. Cinco minutos. Diez. Veinte.\nHernando: Ya contesta, mijo. Tranquilo. Es tarde, y Vale está con su familia.\nTomás puso la cabeza en la mesa.\nSimón: ¡Un abrazo! ¡Un abrazo!\nA las dos, la aplicación dijo: «Vale está escribiendo». Tomás miró la pantalla y esperó. Pero Vale no respondió.",
+  "gloss": [
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "notario",
+      "en": "notary (the lawyer who keeps property papers)"
+    },
+    {
+      "es": "«Altamira No»",
+      "en": "\"Altamira No\" (the café's new wifi name)"
+    },
+    {
+      "es": "el internet funcionaba un minuto sí y un minuto no",
+      "en": "the internet worked one minute on and one minute off"
+    },
+    {
+      "es": "Vale responde a los detalles.",
+      "en": "Vale responds to details."
+    },
+    {
+      "es": "quizá Altamira no lo puede tomar",
+      "en": "maybe Altamira can't take it"
+    },
+    {
+      "es": "pero la busco mañana",
+      "en": "but I'll look for it tomorrow"
+    },
+    {
+      "es": "Me quedo un año. Creo que tenemos una oportunidad.",
+      "en": "I'm staying for a year. I think we have a chance."
+    },
+    {
+      "es": "No es para compartir.",
+      "en": "It's not for sharing."
+    },
+    {
+      "es": "Vale está escribiendo",
+      "en": "Vale is typing"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why doesn't Tomás send the audio?",
+      "options": [
+        "Simón shouts «¡Querida!» in the middle of it",
+        "The internet is down",
+        "Hernando takes the phone",
+        "Vale doesn't like audios"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás decide in his message?",
+      "options": [
+        "He is staying a year, because he thinks they have a chance",
+        "He is selling the café to Altamira",
+        "He is going back to Toronto",
+        "He is moving to Medellín"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué necesita el notario para dar los papeles?",
+      "options": [
+        "La escritura original",
+        "La llave de Joaquín",
+        "El contrato de arriendo",
+        "Un audio de Vale"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What happens at two in the morning?",
+      "options": [
+        "The app says Vale is typing, but no reply comes",
+        "Vale calls the café",
+        "Hernando reads the message",
+        "The lights go out"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What was the last photo in Vale's chat?",
+      "options": [
+        "Simón with an almojábana",
+        "Rosa's letter",
+        "The Burra",
+        "Vale's mother"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many coffees does Hernando serve Tomás while he writes?",
+      "options": [
+        "Three",
+        "One",
+        "Five",
+        "Ten"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What makes this message different from Tomás's earlier ones?",
+      "options": [
+        "It is long, with reasons and details",
+        "It is in English",
+        "It is an audio",
+        "Hernando wrote it"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Vale has read the message, started to type and stopped. By morning her answer arrives, and it is exactly one word long.",
+  "requires": [
+    "c:al-final",
+    "c:creo-que",
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:lo-siento-pero-no-puedo",
+    "c:no-se",
+    "c:o-sea",
+    "c:puedo",
+    "c:pues",
+    "c:querido-querida",
+    "c:te-cuento-que",
+    "c:tengo",
+    "c:tienes",
+    "c:tranquilo",
+    "c:un-abrazo",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:reformulation",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:es-de-noche-tarde",
+    "p:lavarse-las-manos",
+    "p:masculine-plural-mixed",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ],
+  "lexemes": [
+    "l:abrazo",
+    "l:abrir",
+    "l:ahora",
+    "l:almojábana",
+    "l:aplicación",
+    "l:arriendo",
+    "l:audio",
+    "l:año",
+    "l:buscar",
+    "l:cabeza",
+    "l:café",
+    "l:cambiar",
+    "l:canción",
+    "l:carta",
+    "l:celular",
+    "l:cerrar",
+    "l:chat",
+    "l:cocina",
+    "l:compartir",
+    "l:comprar",
+    "l:conocer",
+    "l:contar",
+    "l:contestar",
+    "l:contrato",
+    "l:corto",
+    "l:cosa",
+    "l:creer",
+    "l:dar",
+    "l:decir",
+    "l:describir",
+    "l:detalle",
+    "l:difícil",
+    "l:ducha",
+    "l:día",
+    "l:dónde",
+    "l:edificio",
+    "l:empezar",
+    "l:escribir",
+    "l:escritura",
+    "l:español",
+    "l:esperar",
+    "l:estar",
+    "l:excelente",
+    "l:familia",
+    "l:final",
+    "l:foto",
+    "l:frase",
+    "l:funcionar",
+    "l:hora",
+    "l:hoy",
+    "l:idea",
+    "l:internet",
+    "l:largo",
+    "l:leer",
+    "l:llave",
+    "l:luz",
+    "l:mandar",
+    "l:mañana",
+    "l:mensaje",
+    "l:mesa",
+    "l:minuto",
+    "l:mirar",
+    "l:necesitar",
+    "l:nieto",
+    "l:noche",
+    "l:nombre",
+    "l:noticia",
+    "l:nuevo",
+    "l:oportunidad",
+    "l:original",
+    "l:palabra",
+    "l:pantalla",
+    "l:papel",
+    "l:parar",
+    "l:poder",
+    "l:poner",
+    "l:quedarse",
+    "l:querer",
+    "l:quizá",
+    "l:razón",
+    "l:red",
+    "l:responder",
+    "l:saber",
+    "l:sentir",
+    "l:ser",
+    "l:servir",
+    "l:tarde",
+    "l:tener",
+    "l:terminar",
+    "l:terrible",
+    "l:tinto",
+    "l:tomar",
+    "l:tranquilo",
+    "l:vender"
+  ]
 }

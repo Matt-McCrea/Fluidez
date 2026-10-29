@@ -2,7 +2,7 @@
   "id": "sc-u14-c",
   "unit": "u14",
   "title": "Daniela from Altamira",
-  "brief": "You're Tomás. Rosa's old phone rings at the café, and it's a woman from Altamira with an offer. Say no, give your reasons, and keep your secrets. She's a stranger, so use usted.",
+  "brief": "You're Tomás. Your phone rings at the café from a number you don't know, and it's a woman from Altamira with an offer. Say no, give your reasons, and keep your secrets. She's a stranger, so use usted.",
   "turns": [
     {
       "id": "t1",
@@ -62,18 +62,18 @@
       "id": "t3",
       "npc": "Pero el contrato de arriendo es de Altamira, señor. Termina en un año.",
       "npcEn": "But the lease belongs to Altamira, sir. It ends in a year.",
-      "intent": "Say you know, but the building that Rosa and Joaquín bought is another thing.",
+      "intent": "Say you know, but the café that your grandmother opened isn't Altamira's.",
       "accept": [
-        "Ya lo sé, pero el edificio que compraron Rosa y Joaquín es otra cosa.",
-        "Sí, pero el edificio que compraron mi abuela y Joaquín es otra cosa.",
-        "Lo sé. Pero el edificio que compraron Rosa y Joaquín es otra cosa."
+        "Ya lo sé, pero el café que abrió mi abuela no es de Altamira.",
+        "Sí, pero el café que abrió mi abuela no es de ustedes.",
+        "Lo sé. Pero el café que abrió Rosa no es de Altamira."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "edificio que",
+          "pattern": "caf[eé] que",
           "flags": "i",
-          "label": "the building that they bought: el edificio que…"
+          "label": "the café that she opened: el café que…"
         }
       ],
       "focus": "g:relative-que",
@@ -81,8 +81,8 @@
     },
     {
       "id": "t4",
-      "npc": "¿El edificio? ¿Y usted tiene los papeles de ese edificio?",
-      "npcEn": "The building? And do you have the papers for that building?",
+      "npc": "Señor, en un año el café es nuestro. ¿Usted tiene otro plan?",
+      "npcEn": "Sir, in a year the café is ours. Do you have another plan?",
       "intent": "Say it's a detail that you're not going to share with her.",
       "accept": [
         "Es un detalle que no voy a compartir con usted.",
@@ -174,22 +174,23 @@
     "c:tienes",
     "c:voy-a",
     "g:cause-result",
-    "g:demonstratives",
     "g:direct-objects",
     "g:gender-articles",
     "g:imperfect-states",
     "g:ir-a-plans",
     "g:object-pronoun-position",
+    "g:possessives",
     "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
-    "g:preterite-ar",
+    "g:preterite-er-ir",
     "g:questions",
     "g:relative-que",
     "g:ser-identity",
     "g:stem-boot",
     "g:verb-infinitive",
     "g:yo-irregular",
+    "l:abrir",
     "l:abuela",
     "l:arriendo",
     "l:año",
@@ -199,10 +200,8 @@
     "l:compartir",
     "l:comprar",
     "l:contrato",
-    "l:cosa",
     "l:detalle",
     "l:día",
-    "l:edificio",
     "l:empresa",
     "l:especial",
     "l:hablar",
@@ -211,7 +210,7 @@
     "l:lunes",
     "l:necesitar",
     "l:oferta",
-    "l:papel",
+    "l:plan",
     "l:querer",
     "l:qué",
     "l:respuesta",
@@ -228,6 +227,7 @@
     "l:venir",
     "l:vez",
     "p:days-el-lunes",
+    "p:de-owner",
     "p:demonstratives-basic",
     "p:me-te-nos-objects",
     "p:otro-no-article",

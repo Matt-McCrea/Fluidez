@@ -6,25 +6,114 @@
     "en": "Which letter did you find? (to a friend)"
   },
   "examples": [
-    { "es": "¿Qué libro quieres?", "en": "Which book do you want? (to a friend)" },
-    { "es": "El libro que quiero es de Rosa.", "en": "The book I want is Rosa's." },
-    { "es": "Creo que el libro es de Rosa.", "en": "I think the book is Rosa's." },
-    { "es": "¿Qué te dijo Vale?", "en": "What did Vale tell you? (to a friend)" },
-    { "es": "Vale dijo que viene mañana.", "en": "Vale said she's coming tomorrow." },
-    { "es": "La torta que hizo Vale está deliciosa.", "en": "The cake Vale made is delicious." }
+    {
+      "es": "¿Qué libro quieres?",
+      "en": "Which book do you want? (to a friend)"
+    },
+    {
+      "es": "El libro que quiero es de Rosa.",
+      "en": "The book I want is Rosa's."
+    },
+    {
+      "es": "Creo que el libro es de Rosa.",
+      "en": "I think the book is Rosa's."
+    },
+    {
+      "es": "¿Qué te dijo Vale?",
+      "en": "What did Vale tell you? (to a friend)"
+    },
+    {
+      "es": "Vale dijo que viene mañana.",
+      "en": "Vale said she's coming tomorrow."
+    },
+    {
+      "es": "La torta que hizo Vale está deliciosa.",
+      "en": "The cake Vale made is delicious."
+    }
   ],
-  "rule": "Same sound, three jobs.\n\n*¿Qué…?* asks: what, which. This one, and only this one, wears an accent: *¿Qué libro quieres?*\n\n*que* after a person or thing adds detail: who, which, that. *El libro que quiero.*\n\n*que* after think, say or know joins on the thought: that. *Creo que es de Rosa.*\n\nA quick test: if you're asking, write *qué*. If it comes right after a noun, or after *creo*, *dice*, *sé*, it's *que* with no accent.\n\nThe last two have one more thing in common: English often leaves them out (the book I want, I think it's hers). Spanish never does.",
+  "rule": "Same sound, three jobs.\n\n*¿Qué…?* asks: what, which. This is the one with an accent: *¿Qué libro quieres?* (So is *¡Qué rico!*, which you already know.)\n\n*que* after a person or thing adds detail: who, which, that. *El libro que quiero.*\n\n*que* after think, say or know joins on the thought: that. *Creo que es de Rosa.*\n\nA quick test: if you're asking or exclaiming, write *qué*. If it comes right after a noun, or after *creo*, *dice*, *sé*, it's *que* with no accent.\n\nThe last two have one more thing in common: English often leaves them out (the book I want, I think it's hers). Spanish never does.",
   "smallPrint": "Teachers call these the interrogative *qué*, the relative *que* and the conjunction *que*.",
   "readAndPick": [
-    { "es": "¿Qué pan compró Tomás?", "options": ["The bread Tomás bought.", "I think Tomás bought bread.", "Which bread did Tomás buy?"], "answer": 2 },
-    { "es": "El pan que compró Tomás está rico.", "options": ["The bread Tomás bought is tasty.", "Tomás says the bread is tasty.", "Which bread did Tomás buy?"], "answer": 0 },
-    { "es": "Tomás dice que el pan está rico.", "options": ["The bread Tomás bought is tasty.", "Tomás says the bread is tasty.", "Is the bread tasty, Tomás?"], "answer": 1 },
-    { "es": "¿Qué señora vino ayer?", "options": ["The lady who came yesterday is from Cali.", "I think the lady came yesterday.", "Which lady came yesterday?"], "answer": 2 },
-    { "es": "La señora que vino ayer es de Cali.", "options": ["The lady who came yesterday is from Cali.", "Which lady from Cali came yesterday?"], "answer": 0 },
-    { "es": "Creo que la señora vino ayer.", "options": ["The lady who came yesterday.", "I think the lady came yesterday.", "Which lady came yesterday?"], "answer": 1 },
-    { "es": "¿Qué escribió Mariana?", "options": ["What did Mariana write?", "Mariana wrote that.", "The thing Mariana wrote."], "answer": 0 },
-    { "es": "El libro que quiero es de Rosa.", "options": ["Which of Rosa's books do I want?", "The book I want is Rosa's.", "I think the book is Rosa's."], "answer": 1 },
-    { "es": "Creo que el libro es de Rosa.", "options": ["The book I want is Rosa's.", "Which book is Rosa's?", "I think the book is Rosa's."], "answer": 2 }
+    {
+      "es": "¿Qué pan compró Tomás?",
+      "options": [
+        "The bread Tomás bought.",
+        "I think Tomás bought bread.",
+        "Which bread did Tomás buy?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El pan que compró Tomás está rico.",
+      "options": [
+        "The bread Tomás bought is tasty.",
+        "Tomás says the bread is tasty.",
+        "Which bread did Tomás buy?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás dice que el pan está rico.",
+      "options": [
+        "The bread Tomás bought is tasty.",
+        "Tomás says the bread is tasty.",
+        "Is the bread tasty, Tomás?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué señora vino ayer?",
+      "options": [
+        "The lady who came yesterday is from Cali.",
+        "I think the lady came yesterday.",
+        "Which lady came yesterday?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La señora que vino ayer es de Cali.",
+      "options": [
+        "The lady who came yesterday is from Cali.",
+        "Which lady from Cali came yesterday?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Creo que la señora vino ayer.",
+      "options": [
+        "The lady who came yesterday.",
+        "I think the lady came yesterday.",
+        "Which lady came yesterday?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué escribió Mariana?",
+      "options": [
+        "What did Mariana write?",
+        "Mariana wrote that.",
+        "The thing Mariana wrote."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El libro que quiero es de Rosa.",
+      "options": [
+        "Which of Rosa's books do I want?",
+        "The book I want is Rosa's.",
+        "I think the book is Rosa's."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Creo que el libro es de Rosa.",
+      "options": [
+        "The book I want is Rosa's.",
+        "Which book is Rosa's?",
+        "I think the book is Rosa's."
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
     {
@@ -54,7 +143,9 @@
     {
       "prompt": "The book I want is on the table.",
       "answer": "El libro que quiero está en la mesa.",
-      "accept": [],
+      "accept": [
+        "El libro que quiero está sobre la mesa."
+      ],
       "why": "The book I want: English drops the that, Spanish keeps *que*."
     },
     {

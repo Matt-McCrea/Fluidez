@@ -2,7 +2,7 @@
   "id": "sc-u14-b",
   "unit": "u14",
   "title": "Hernando goes digital",
-  "brief": "You're Tomás. Don Hernando's grandchildren have sent him a new phone, and he has no idea how it works. Explain what things are for and help him send his first audio. He's older than you, so use usted with him.",
+  "brief": "You're Tomás. Don Hernando's grandchildren send him audios every day, and now they've sent him a new phone so he can answer. He has no idea how it works. Explain what things are for and help him send his first audio. He's older than you, so use usted with him.",
   "turns": [
     {
       "id": "t1",
