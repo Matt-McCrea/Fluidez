@@ -1,0 +1,266 @@
+{
+  "id": "ch052",
+  "unit": "u19",
+  "title": "¿De parte de quién?",
+  "text": "Kilómetro doscientos. El bus subía otra montaña, y Vale dormía en el hombro de Tomás.\nTomás tenía un papel en la mano, con tres frases: «Tu mamá conocía a Rosa. Rosa buscaba a Joaquín. Tu mamá te mandó al café».\nTomás: Vale... Vale, tengo que contarte algo.\nVale: Cinco minutos más, mamá.\nEntonces sonó el celular de Vale. Tomás contestó.\nTomás: ¿Aló?\nHernando: ¿Aló? ¿Está Valentina?\nTomás: ¿De parte de quién?\nHernando: ¡De parte de Hernando Pacheco! ¿Ya no conoce a su amigo? ¿Y Tomás? ¿Está Tomás?\nTomás: Sí, con él.\nHernando: Mijo, aquí tenemos un problema. Gloria ya no ayuda en el café.\nTomás: ¿Por qué?\nHernando: Ayer Simón le gritó «¡chao, chao!» toda la mañana. Gloria dice que el loro la despidió.\nHernando: Y los clientes aparecen todo el día, mijo. Hoy hice cuarenta tintos, y tengo los dedos rojos. Necesitamos gente. Hay que contratar a alguien.\nSimón: ¿Aló? ¿Aló? ¿De parte de quién?\nHernando: Este loro se mete en todo.\nVale abrió los ojos.\nVale: ¿Quién era? ¿Y qué me ibas a contar?\nTomás miró el papel. Miró también los ojos de Vale, que eran los ojos de Beatriz.\nTomás: Que tu familia baila muy bien.\nTomás puso el papel en la chaqueta. Todavía no.\nEl lunes, a las seis de la mañana, ya había una fila en la puerta del café. Tomás escribió un letrero y lo puso en la ventana: «Se busca mesero. Se habla inglés».\nVale: ¿Inglés? Aquí nadie habla inglés. Bueno, tú.\nTomás: Exacto. Así se contrata a alguien interesante.\nCuando un cliente entraba, Simón gritaba: «¡Se busca mesero!».\nUn señor de ochenta años miró a Simón, y después a Tomás.\nSeñor: ¿Y cuánto paga, joven? ¿Aquí se trabaja sentado?",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "¿Ya no conoce a su amigo?",
+      "en": "Don't you recognise your friend any more?"
+    },
+    {
+      "es": "Sí, con él.",
+      "en": "Yes, speaking."
+    },
+    {
+      "es": "Gloria ya no ayuda en el café.",
+      "en": "Gloria isn't helping at the café any more."
+    },
+    {
+      "es": "Gloria dice que el loro la despidió.",
+      "en": "Gloria says the parrot fired her."
+    },
+    {
+      "es": "tengo los dedos rojos",
+      "en": "my fingers are red (from the hot cups)"
+    },
+    {
+      "es": "Este loro se mete en todo.",
+      "en": "This parrot sticks his beak into everything."
+    },
+    {
+      "es": "Todavía no.",
+      "en": "Not yet."
+    },
+    {
+      "es": "«Se busca mesero. Se habla inglés».",
+      "en": "\"Waiter wanted. English spoken.\""
+    },
+    {
+      "es": "¿Aquí se trabaja sentado?",
+      "en": "Do people work sitting down here?"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Tomás end up telling Vale on the bus?",
+      "options": [
+        "Only that her family dances very well",
+        "Everything her mother told him about Rosa",
+        "That he is going back to Toronto",
+        "That he wants to sell the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why has Gloria stopped helping at the café?",
+      "options": [
+        "Simón shouted \"bye, bye\" at her all morning, so she says the parrot fired her",
+        "Hernando burned her hand",
+        "She found a better job",
+        "Altamira paid her to leave"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué necesita el café?",
+      "options": [
+        "Contratar a alguien",
+        "Una máquina nueva",
+        "Otro loro",
+        "Menos clientes"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Tomás put \"English spoken\" on the sign?",
+      "options": [
+        "As a joke: he is the only one who speaks English, and he wants someone interesting",
+        "Lots of tourists come in every day",
+        "Vale asked him to",
+        "Altamira's hotel needs English speakers"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Mariana offers to put a proper job ad online. Twenty people answer it, and one of them turns up late, carrying half a bicycle.",
+  "rereadQuestions": [
+    {
+      "q": "Who answers Vale's phone, and why?",
+      "options": [
+        "Tomás, because Vale is asleep on his shoulder",
+        "Vale, after five more minutes",
+        "Simón, from the café",
+        "Beatriz, from Medellín"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many coffees did Hernando make that day?",
+      "options": [
+        "Forty",
+        "Twelve",
+        "Two hundred",
+        "Eighty"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the eighty-year-old customer ask Tomás?",
+      "options": [
+        "How much the job pays, and whether you work sitting down",
+        "Where Vale is",
+        "Whether Simón is for sale",
+        "For a cappuccino"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:con-el-ella",
+    "c:de-parte-de-quien",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:hay-que",
+    "c:se-busca",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "c:todavia-no",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:hedge-knowledge",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:amigo",
+    "l:aparecer",
+    "l:aquí",
+    "l:ayer",
+    "l:ayudar",
+    "l:año",
+    "l:bailar",
+    "l:bien",
+    "l:bueno",
+    "l:bus",
+    "l:buscar",
+    "l:café",
+    "l:celular",
+    "l:chaqueta",
+    "l:cliente",
+    "l:conocer",
+    "l:contar",
+    "l:contestar",
+    "l:contratar",
+    "l:cuánto",
+    "l:decir",
+    "l:dedo",
+    "l:despedir",
+    "l:después",
+    "l:dormir",
+    "l:día",
+    "l:entrar",
+    "l:escribir",
+    "l:estar",
+    "l:exacto",
+    "l:familia",
+    "l:fila",
+    "l:frase",
+    "l:gente",
+    "l:gritar",
+    "l:hablar",
+    "l:hacer",
+    "l:hombro",
+    "l:hoy",
+    "l:inglés",
+    "l:interesante",
+    "l:ir",
+    "l:joven",
+    "l:kilómetro",
+    "l:letrero",
+    "l:loro",
+    "l:lunes",
+    "l:mamá",
+    "l:mandar",
+    "l:mano",
+    "l:mañana",
+    "l:mesero",
+    "l:meterse",
+    "l:mijo",
+    "l:minuto",
+    "l:mirar",
+    "l:montaña",
+    "l:necesitar",
+    "l:ojo",
+    "l:pagar",
+    "l:papel",
+    "l:parte",
+    "l:poner",
+    "l:problema",
+    "l:puerta",
+    "l:quién",
+    "l:qué",
+    "l:rojo",
+    "l:sentar",
+    "l:ser",
+    "l:señor",
+    "l:sonar",
+    "l:subir",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:ventana"
+  ]
+}

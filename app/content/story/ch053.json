@@ -1,0 +1,267 @@
+{
+  "id": "ch053",
+  "unit": "u19",
+  "title": "Una rueda de bicicleta",
+  "text": "Mariana puso la oferta de empleo en internet, y en dos días llegaron veinte mensajes.\n«Oferta de empleo. El cargo: mesero. Turno de seis a dos. Contrato de seis meses. Sueldo justo y pan todos los días. Se busca persona con capacidad para trabajar rápido».\nHicieron las entrevistas en la mesa de Hernando, al lado de Simón.\nPrimero llegó Germán, un piloto.\nGermán: Ahora no tengo vuelos. ¿Cuál es el cargo? ¿Mesero? Perfecto.\nVale: ¿Y por qué un piloto quiere un empleo en un café?\nGermán: Lo que quiero es un trabajo donde el piso no se mueve.\nSimón: ¡Atención, pasajeros!\nA las diez llegó una mujer con tres cursos de inglés y un título.\nMujer: Mi título es en computación. Lo que necesito es una mesa donde trabajar con mi computadora. ¿Aquí se paga el internet?\nVale: Señora, aquí no hay computación. Hay pan.\nA las once entró un joven con una rueda de bicicleta en la mano.\nJoven: ¡Qué pena con ustedes! La rueda, el bus, mi curso... Soy Jhon Fredy, tengo diecinueve años, estudio para ser ingeniero, trabajo rápido, hablo rápido, y esa máquina de café tiene un problema en el agua.\nTomás: ¿Puede trabajar el turno de la mañana?\nJhon Fredy: Tengo clases a las tres. ¿El sueldo es por mes? ¿Y la capacidad de la máquina? ¿Cuántos tintos por hora?\nHernando: Este joven está loco.\nSimón: ¡Loco! ¡Loco!\nVale: ¿Lo contratamos?\nTomás: Es probable.\nHernando: Muy probable.\nFue una entrevista de cuatro minutos. Jhon Fredy firmó el contrato a las doce. A las doce y diez, la máquina funcionaba. Vale le dio dos almojábanas. Por fin, Jhon Fredy no habló.\nEntonces un carro negro paró en la esquina. Ricardo Altamira entró y miró el letrero de la ventana.\nAltamira: Un empleado nuevo. Muy bien. ¿Y ya tienen todos los permisos de la ciudad? Los cafés viejos siempre tienen problemas con los papeles.",
+  "gloss": [
+    {
+      "es": "Sueldo justo y pan todos los días.",
+      "en": "A fair wage and bread every day."
+    },
+    {
+      "es": "Se busca persona con capacidad para trabajar rápido.",
+      "en": "Wanted: someone able to work fast."
+    },
+    {
+      "es": "un trabajo donde el piso no se mueve",
+      "en": "a job where the floor doesn't move"
+    },
+    {
+      "es": "¡Atención, pasajeros!",
+      "en": "Attention, passengers!"
+    },
+    {
+      "es": "¿Aquí se paga el internet?",
+      "en": "Do you have to pay for the internet here?"
+    },
+    {
+      "es": "Tomás: Es probable.",
+      "en": "Tomás: Probably."
+    },
+    {
+      "es": "Por fin, Jhon Fredy no habló.",
+      "en": "At last, Jhon Fredy stopped talking."
+    },
+    {
+      "es": "¿Y ya tienen todos los permisos de la ciudad?",
+      "en": "And do you already have all your permits from the city?"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does the pilot want to work in a café?",
+      "options": [
+        "He wants a job where the floor doesn't move",
+        "He loves coffee more than flying",
+        "He needs money for a flight",
+        "He is Vale's cousin"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why doesn't the woman with the computing degree get the job?",
+      "options": [
+        "She wants a table to work on her laptop, not a job as a waiter",
+        "She doesn't speak Spanish",
+        "She asks for too much money",
+        "Simón bites her"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hace Jhon Fredy con la máquina de café?",
+      "options": [
+        "La arregla en diez minutos",
+        "La vende",
+        "La tira a la calle",
+        "La lleva a su casa"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Altamira's question worrying?",
+      "options": [
+        "He hints that an old café like this one may not have its city permits in order",
+        "He wants to hire Jhon Fredy for his hotel",
+        "He offers to buy the coffee machine",
+        "He says the bread is bad"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Altamira knows about the new waiter, and he is suddenly very interested in the café's papers. Two days later, a man from the city walks in with an armful of them.",
+  "rereadQuestions": [
+    {
+      "q": "What shift does the job ad offer?",
+      "options": [
+        "Six to two",
+        "Two to ten",
+        "Nights only",
+        "Weekends only"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Jhon Fredy carrying when he arrives?",
+      "options": [
+        "A bicycle wheel",
+        "A laptop",
+        "A suitcase",
+        "A box of almojábanas"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale do once Jhon Fredy is hired?",
+      "options": [
+        "She gives him two almojábanas, and for once he stops talking",
+        "She shows him the flour room",
+        "She tells him to cut his hair",
+        "She asks him to sign a second contract"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:no-se",
+    "c:puede-ser",
+    "c:que-pena",
+    "c:quiero",
+    "c:se-busca",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:costar-pagar",
+    "p:demonstratives-basic",
+    "p:desde-hasta",
+    "p:directions-cuadras",
+    "p:el-agua-fria",
+    "p:frequency-scale",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:request-ladder",
+    "p:ser-profession-no-article",
+    "p:telling-time",
+    "p:tener-anos",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:agua",
+    "l:ahora",
+    "l:almojábana",
+    "l:aquí",
+    "l:atención",
+    "l:año",
+    "l:bicicleta",
+    "l:bien",
+    "l:bus",
+    "l:buscar",
+    "l:café",
+    "l:capacidad",
+    "l:cargo",
+    "l:carro",
+    "l:ciudad",
+    "l:clase",
+    "l:computación",
+    "l:computadora",
+    "l:contratar",
+    "l:contrato",
+    "l:curso",
+    "l:cuál",
+    "l:cuánto",
+    "l:dar",
+    "l:día",
+    "l:empleado",
+    "l:empleo",
+    "l:entrar",
+    "l:entrevista",
+    "l:esquina",
+    "l:estar",
+    "l:estudiar",
+    "l:fin",
+    "l:firmar",
+    "l:funcionar",
+    "l:hablar",
+    "l:hacer",
+    "l:hora",
+    "l:ingeniero",
+    "l:inglés",
+    "l:internet",
+    "l:joven",
+    "l:justo",
+    "l:lado",
+    "l:letrero",
+    "l:llegar",
+    "l:loco",
+    "l:mano",
+    "l:mañana",
+    "l:mensaje",
+    "l:mes",
+    "l:mesa",
+    "l:mesero",
+    "l:minuto",
+    "l:mirar",
+    "l:mover",
+    "l:mujer",
+    "l:máquina",
+    "l:necesitar",
+    "l:negro",
+    "l:nuevo",
+    "l:oferta",
+    "l:pagar",
+    "l:pan",
+    "l:papel",
+    "l:parar",
+    "l:pasajero",
+    "l:pena",
+    "l:perfecto",
+    "l:permiso",
+    "l:persona",
+    "l:piloto",
+    "l:piso",
+    "l:poder",
+    "l:poner",
+    "l:probable",
+    "l:problema",
+    "l:querer",
+    "l:qué",
+    "l:rueda",
+    "l:rápido",
+    "l:ser",
+    "l:señora",
+    "l:siempre",
+    "l:sueldo",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:trabajo",
+    "l:turno",
+    "l:título",
+    "l:ventana",
+    "l:viejo",
+    "l:vuelo"
+  ]
+}
