@@ -2,7 +2,7 @@
   {
     "id": "w-u02-01",
     "unit": "u02",
-    "prompt": "Don Hernando wants to know who you are. Tell him your name, where you're from, where you live and where you work.",
+    "prompt": "You're at a language exchange in Bogotá. Introduce yourself: your name, where you're from, where you live and where you work or study.",
     "minWords": 15,
     "maxWords": 50,
     "constraints": [
@@ -10,20 +10,15 @@
         "type": "verbForm",
         "inf": "vivir",
         "tense": "presente",
-        "person": "yo"
-      },
-      {
-        "type": "verbForm",
-        "inf": "trabajar",
-        "tense": "presente",
-        "person": "yo"
+        "person": "yo",
+        "label": "say where you live: vivo"
       },
       {
         "type": "minSentences",
         "n": 3
       }
     ],
-    "model": "Buenos días, don Hernando. Me llamo Ana y soy de Toronto. Vivo en el centro, en La Candelaria. Trabajo en una empresa de software.",
+    "model": "Hola, me llamo Ana. Soy de Toronto, pero vivo en Bogotá, en Chapinero. Trabajo en una empresa de software y estudio español en la universidad.",
     "focus": "g:present-er-ir",
     "requires": [
       "c:hola-buenos-dias",
@@ -36,16 +31,14 @@
       "g:present-er-ir",
       "g:reflexive-routine",
       "g:ser-identity",
-      "l:bueno",
-      "l:centro",
-      "l:día",
       "l:empresa",
+      "l:español",
+      "l:estudiar",
       "l:llamarse",
       "l:ser",
       "l:trabajar",
-      "l:vivir",
-      "p:don-dona-nombre",
-      "p:senor-don-article"
+      "l:universidad",
+      "l:vivir"
     ]
   },
   {
@@ -200,7 +193,7 @@
         "n": 2
       }
     ],
-    "model": "Hola, Vale. Estoy en el banco con el señor Ruiz. Estoy bien, pero nervioso.",
+    "model": "Hola, Vale. Estoy en el banco, en el centro. Estoy bien, pero cansado.",
     "focus": "g:estar-location-states",
     "requires": [
       "c:bien-y-tu",
@@ -209,12 +202,11 @@
       "g:gender-articles",
       "l:banco",
       "l:bien",
+      "l:cansado",
+      "l:centro",
       "l:estar",
-      "l:nervioso",
-      "l:señor",
       "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
-      "p:senor-don-article"
+      "p:bien-mal-vs-bueno-malo"
     ]
   },
   {
@@ -245,7 +237,7 @@
         "n": 3
       }
     ],
-    "model": "El banco está en la calle doce. El parque está a dos calles del café. El hospital está en el centro, con la universidad.",
+    "model": "El banco está en la calle doce. El parque está a dos calles del café. El hospital está en el centro, en la calle diecinueve.",
     "focus": "g:estar-location-states",
     "requires": [
       "g:estar-location-states",
@@ -257,7 +249,6 @@
       "l:estar",
       "l:hospital",
       "l:parque",
-      "l:universidad",
       "p:quedar-a-distancia",
       "p:street-names"
     ]
@@ -265,7 +256,7 @@
   {
     "id": "w-u02-07",
     "unit": "u02",
-    "prompt": "Don Hernando is worried about you. Tell him how you are: one thing with estoy, one with tengo sed, and one thing you are not.",
+    "prompt": "Don Hernando is worried about you. Tell him how you are: one thing with estoy, one with tengo (hungry, cold, sleepy...), and one thing you are not.",
     "minWords": 10,
     "maxWords": 40,
     "constraints": [
@@ -273,18 +264,20 @@
         "type": "verbForm",
         "inf": "estar",
         "tense": "presente",
-        "person": "yo"
+        "person": "yo",
+        "label": "say how you are with estoy"
       },
       {
         "type": "regex",
-        "pattern": "\\btengo sed\\b",
-        "label": "say you're thirsty with tengo sed"
+        "pattern": "\\btengo (mucha |mucho )?(hambre|sed|fr[ií]o|sueño|miedo|calor|prisa)\\b",
+        "flags": "i",
+        "label": "a feeling you have: tengo hambre, tengo frío..."
       },
       {
         "type": "negation"
       }
     ],
-    "model": "Don Hernando, estoy bien. No estoy enfermo, tranquilo. Tengo sed, nada más: ¿me regala un jugo?",
+    "model": "Don Hernando, estoy bien. No estoy enfermo, tranquilo. Tengo frío, nada más: ¿me regala un tinto?",
     "focus": "x:tener-estar-states",
     "requires": [
       "c:bien-y-tu",
@@ -293,20 +286,18 @@
       "c:tengo",
       "c:tranquilo",
       "g:estar-location-states",
-      "g:gender-articles",
       "g:yo-irregular",
       "l:bien",
       "l:enfermo",
       "l:estar",
-      "l:jugo",
+      "l:frío",
       "l:regalar",
-      "l:sed",
       "l:tener",
+      "l:tinto",
       "l:tranquilo",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
       "p:don-dona-nombre",
-      "p:me-trae",
       "p:senor-don-article",
       "p:tener-hambre"
     ]
@@ -412,22 +403,28 @@
         "type": "containsAny",
         "words": [
           "bueno",
-          "malo"
-        ]
+          "buena",
+          "buenos",
+          "buenas",
+          "malo",
+          "mala",
+          "malos",
+          "malas"
+        ],
+        "label": "say what something is like: bueno or malo"
       },
       {
-        "type": "containsAny",
-        "words": [
-          "bien",
-          "mal "
-        ]
+        "type": "regex",
+        "pattern": "\\b(bien|mal)\\b",
+        "flags": "i",
+        "label": "say how someone does something: bien or mal"
       },
       {
         "type": "minSentences",
         "n": 2
       }
     ],
-    "model": "El pan de Vale es bueno y el tinto es bueno. Vale habla bien inglés, y Simón habla mal, pero es amable.",
+    "model": "El pan de Vale es muy bueno, pero el tinto de Tomás es malo. Vale trabaja muy bien. Simón habla mal, pero es amable.",
     "focus": "p:bien-mal-vs-bueno-malo",
     "requires": [
       "c:bien-y-tu",
@@ -438,20 +435,21 @@
       "l:bien",
       "l:bueno",
       "l:hablar",
-      "l:inglés",
       "l:mal",
+      "l:malo",
       "l:pan",
       "l:ser",
       "l:tinto",
+      "l:trabajar",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
-      "p:hedge-knowledge"
+      "p:quantifiers-basic"
     ]
   },
   {
     "id": "w-u02-11",
     "unit": "u02",
-    "prompt": "Write a note for the café staff about two people: tell them that Mr Ruiz from the bank is coming at eleven, and greet Don Hernando by name.",
+    "prompt": "Leave a note for Vale: tell her that Mrs Gómez from the bank is coming at eleven, and that Don Hernando is ill today.",
     "minWords": 12,
     "maxWords": 45,
     "constraints": [
@@ -473,22 +471,18 @@
         ]
       }
     ],
-    "model": "Vale: el señor Ruiz del banco llega a las once. Buenos días, don Hernando: el tinto está listo.",
+    "model": "Vale: la señora Gómez, del banco, llega a las once. Y don Hernando está enfermo hoy. No llega a las siete.",
     "focus": "p:senor-don-article",
     "requires": [
-      "c:hola-buenos-dias",
       "g:estar-location-states",
       "g:gender-articles",
       "g:present-ar",
       "l:banco",
-      "l:bueno",
-      "l:día",
+      "l:enfermo",
       "l:estar",
-      "l:listo",
+      "l:hoy",
       "l:llegar",
-      "l:señor",
-      "l:tinto",
-      "p:don-dona-nombre",
+      "l:señora",
       "p:senor-don-article",
       "p:telling-time"
     ]
@@ -496,7 +490,7 @@
   {
     "id": "w-u02-12",
     "unit": "u02",
-    "prompt": "Mariana texts you: «¡Quiubo! ¿Qué más?». Answer her: say how you are and where you are, then ask her two questions.",
+    "prompt": "It's your day off and Vale texts you: «¡Quiubo! ¿Qué más?». Answer her: say how you are and where you are, then ask her two questions.",
     "minWords": 15,
     "maxWords": 50,
     "constraints": [
@@ -514,19 +508,20 @@
         "label": "ask two questions"
       }
     ],
-    "model": "¡Quiubo, Mariana! Estoy bien, gracias. Estoy en el café con Vale y Simón. ¿Y tú? ¿Dónde estás?",
+    "model": "¡Quiubo, Vale! Estoy bien, pero cansado. Estoy en el parque, con un libro. ¿Y tú? ¿Dónde estás?",
     "focus": "g:questions",
     "requires": [
       "c:bien-y-tu",
-      "c:gracias-de-nada",
       "c:quiubo",
       "g:estar-location-states",
       "g:gender-articles",
       "g:questions",
       "l:bien",
-      "l:café",
+      "l:cansado",
       "l:dónde",
       "l:estar",
+      "l:libro",
+      "l:parque",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo"
     ]

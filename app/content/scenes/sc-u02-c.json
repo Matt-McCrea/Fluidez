@@ -1,26 +1,26 @@
 {
   "id": "sc-u02-c",
   "unit": "u02",
-  "title": "Mariana drops in",
-  "brief": "You're Tomás. Your childhood friend Mariana turns up at the café after twenty years. She wants the news: how you are, where Vale is, how Don Hernando is doing. You're thirsty and a little nervous. Find out where Don Hernando lives so you can visit him.",
+  "title": "No Hernando at seven",
+  "brief": "You're Tomás. It's half past seven and Don Hernando, who arrives at seven every day, hasn't come. Doña Marta, who runs the shop where Vale buys the milk, drops in. She's older than you, so use usted. Find out where Don Hernando lives and who might know more.",
   "turns": [
     {
       "id": "t1",
-      "npc": "¡Tomás! ¿Qué más? ¿Cómo estás?",
-      "npcEn": "Tomás! How's it going? How are you?",
-      "intent": "Say you're fine, but a bit nervous.",
+      "npc": "Buenos días. Soy Marta, de la tienda. Usted es el nieto de doña Rosa, ¿cierto? ¿Cómo está?",
+      "npcEn": "Good morning. I'm Marta, from the shop. You're Rosa's grandson, right? How are you?",
+      "intent": "Say yes, and that you're fine, but nervous.",
       "accept": [
-        "Bien, pero estoy nervioso.",
-        "Estoy bien, pero nervioso.",
-        "Bien, gracias, pero estoy nervioso.",
-        "Estoy bien, pero estoy nervioso."
+        "Sí, soy Tomás. Estoy bien, pero nervioso.",
+        "Sí. Bien, gracias, pero estoy nervioso.",
+        "Sí, señora. Estoy bien, pero estoy nervioso."
       ],
       "require": [
         {
           "type": "verbForm",
           "inf": "estar",
           "tense": "presente",
-          "person": "yo"
+          "person": "yo",
+          "label": "how you are: estoy"
         },
         {
           "type": "containsAny",
@@ -35,62 +35,36 @@
     },
     {
       "id": "t2",
-      "npc": "¿Nervioso? Tranquilo, Tomás. ¿Un tinto?",
-      "npcEn": "Nervous? Relax, Tomás. A coffee?",
-      "intent": "Say no thanks, you're thirsty: a juice, please.",
+      "npc": "¿Nervioso? ¿Por qué?",
+      "npcEn": "Nervous? Why?",
+      "intent": "Say it's because Don Hernando isn't here.",
       "accept": [
-        "No, gracias. Tengo sed. Un jugo, por favor.",
-        "Tengo sed. Un jugo, por favor.",
-        "No, tengo sed. ¿Un jugo, por favor?"
+        "Porque don Hernando no está.",
+        "Porque don Hernando no está aquí.",
+        "Porque don Hernando no está en el café."
       ],
       "require": [
         {
-          "type": "regex",
-          "pattern": "\\btengo sed\\b",
-          "flags": "i"
+          "type": "containsWord",
+          "word": "porque",
+          "label": "because is one word: porque"
         },
         {
-          "type": "containsWord",
-          "word": "jugo"
+          "type": "negation"
         }
       ],
-      "focus": "x:tener-estar-states",
+      "focus": "p:prep-questions-basic",
       "next": "t3"
     },
     {
       "id": "t3",
-      "npc": "Listo, un jugo de mora. ¿Y Vale? ¿Está en el café?",
-      "npcEn": "Sure, a blackberry juice. And Vale? Is she at the café?",
-      "intent": "Say no, she's at the bank with Mr Ruiz.",
-      "accept": [
-        "No, está en el banco con el señor Ruiz.",
-        "No, Vale está en el banco con el señor Ruiz.",
-        "No. Está en el banco, con el señor Ruiz."
-      ],
-      "require": [
-        {
-          "type": "verbForm",
-          "inf": "estar",
-          "tense": "presente",
-          "person": "él/ella"
-        },
-        {
-          "type": "containsWord",
-          "word": "banco"
-        }
-      ],
-      "focus": "g:estar-location-states",
-      "next": "t4"
-    },
-    {
-      "id": "t4",
-      "npc": "¿Con el señor Ruiz? Uf. Y don Hernando está enfermo, ¿sabes? No está bien.",
-      "npcEn": "With Mr Ruiz? Ugh. And Don Hernando is ill, you know? He's not well.",
-      "intent": "Ask Mariana where Don Hernando lives.",
+      "npc": "Ay, no. Creo que don Hernando está enfermo.",
+      "npcEn": "Oh no. I think Don Hernando is ill.",
+      "intent": "Ask her where Don Hernando lives.",
       "accept": [
         "¿Dónde vive don Hernando?",
-        "¿Dónde vive don Hernando, Mariana?",
-        "Mariana, ¿dónde vive don Hernando?"
+        "Señora, ¿dónde vive don Hernando?",
+        "¿Y dónde vive don Hernando, señora?"
       ],
       "require": [
         {
@@ -98,22 +72,23 @@
         },
         {
           "type": "regex",
-          "pattern": "d[oó]nde vive",
-          "flags": "i"
+          "pattern": "d[oó]nde vive don hernando",
+          "flags": "i",
+          "label": "question word, verb, then the person"
         }
       ],
       "focus": "p:question-word-order",
-      "next": "t5"
+      "next": "t4"
     },
     {
-      "id": "t5",
-      "npc": "Vive aquí, en el barrio, en la calle catorce. El número doce.",
-      "npcEn": "He lives here, in the neighbourhood, on Fourteenth Street. Number twelve.",
-      "intent": "Thank her, and repeat the address so you remember it.",
+      "id": "t4",
+      "npc": "En la calle catorce, número doce. Vive con su hermana.",
+      "npcEn": "On Fourteenth Street, number twelve. He lives with his sister.",
+      "intent": "Repeat the street to check, and ask what his sister is called.",
       "accept": [
-        "Gracias, Mariana. Calle catorce, número doce.",
-        "Muchas gracias. La calle catorce, el número doce.",
-        "Muy amable, Mariana. Calle catorce, número doce."
+        "Calle catorce, número doce. ¿Y cómo se llama su hermana?",
+        "¿Calle catorce? ¿Cómo se llama su hermana?",
+        "La calle catorce. ¿Y su hermana, cómo se llama?"
       ],
       "require": [
         {
@@ -122,60 +97,130 @@
         },
         {
           "type": "containsWord",
-          "word": "doce"
+          "word": "su",
+          "label": "his sister: su hermana"
         }
       ],
-      "focus": "g:estar-location-states",
+      "focus": "p:possessives-basic",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Se llama Lucía. Es muy amable. ¿Usted tiene el número de don Hernando?",
+      "npcEn": "She's called Lucía. She's very kind. Do you have Don Hernando's number?",
+      "intent": "Say no, but Vale knows it.",
+      "accept": [
+        "No, pero Vale sabe el número.",
+        "No, señora. Pero Vale sabe el número.",
+        "No, no tengo el número, pero Vale sabe."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "verbForm",
+          "inf": "saber",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "Vale knows: sabe"
+        }
+      ],
+      "focus": "g:present-er-ir",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Listo. Y tranquilo, Tomás. Lucía está en la casa con don Hernando.",
+      "npcEn": "All right. And don't worry, Tomás. Lucía is at home with Don Hernando.",
+      "intent": "Thank her warmly and say goodbye, calling her doña Marta.",
+      "accept": [
+        "Muchas gracias, doña Marta. Muy amable.",
+        "Gracias, doña Marta. Chao.",
+        "Muy amable, doña Marta. Chao."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdoña marta\\b",
+          "flags": "i",
+          "label": "call her doña Marta"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "la doña"
+          ],
+          "label": "doña never takes la"
+        }
+      ],
+      "focus": "p:senor-don-article",
       "next": null
     }
   ],
   "requires": [
     "c:bien-y-tu",
+    "c:chao-nos-vemos",
     "c:claro-listo",
     "c:como-estas",
+    "c:creo-que",
     "c:gracias-de-nada",
+    "c:hola-buenos-dias",
     "c:muy-amable",
-    "c:no-se",
-    "c:por-favor",
-    "c:que-mas",
+    "c:no-cierto",
+    "c:porque",
+    "c:se-llama",
     "c:tengo",
+    "c:tienes",
     "c:tranquilo",
+    "g:cause-result",
     "g:estar-location-states",
     "g:gender-articles",
     "g:present-er-ir",
     "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
     "g:yo-irregular",
     "l:amable",
     "l:aquí",
-    "l:banco",
-    "l:barrio",
     "l:bien",
+    "l:bueno",
     "l:café",
     "l:calle",
+    "l:casa",
+    "l:creer",
     "l:cómo",
+    "l:día",
     "l:dónde",
     "l:enfermo",
     "l:estar",
-    "l:favor",
-    "l:jugo",
+    "l:hermana",
     "l:listo",
-    "l:mora",
+    "l:llamarse",
+    "l:lucía",
     "l:nervioso",
+    "l:nieto",
     "l:número",
     "l:qué",
     "l:saber",
-    "l:sed",
-    "l:señor",
+    "l:ser",
+    "l:señora",
     "l:tener",
-    "l:tinto",
+    "l:tienda",
     "l:tranquilo",
     "l:vivir",
     "p:aqui-ahi-alla",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
+    "p:don-dona-nombre",
+    "p:no-es-x-es-y",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
     "p:question-word-order",
+    "p:saber-conocer",
     "p:senor-don-article",
-    "p:street-names",
-    "p:tener-hambre"
+    "p:street-names"
   ]
 }

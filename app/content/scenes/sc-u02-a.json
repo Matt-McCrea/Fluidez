@@ -2,49 +2,57 @@
   "id": "sc-u02-a",
   "unit": "u02",
   "title": "Seven o'clock, Don Hernando",
-  "brief": "You're Tomás. It's seven in the morning and Don Hernando is at the café for his tinto, as he is every day. He wants to know who this grandson really is: how you are, where you live and what you do. Answer him, and ask him something back.",
+  "brief": "You're Tomás. It's Wednesday, seven on the dot, and Don Hernando is at his table with his tinto. He already knows you're staying at a hostel; today he wants the details of your day, and for once you get to ask him a few questions. He calls you tú, but he's older, so use usted with him.",
   "turns": [
     {
       "id": "t1",
-      "npc": "¡Quiubo! Buenos días, Tomás. ¿Cómo está usted?",
-      "npcEn": "Hey! Good morning, Tomás. How are you?",
-      "intent": "Say you're fine, thanks, and ask how he is (he calls you usted, so do the same).",
+      "npc": "¡Buenos días, mijo! ¿Cómo estás? ¿Cansado?",
+      "npcEn": "Good morning, son! How are you? Tired?",
+      "intent": "Say yes, you're tired but fine, and ask how he is (use usted).",
       "accept": [
-        "Bien, gracias, ¿y usted?",
-        "Estoy bien, gracias. ¿Y usted?",
-        "Muy bien, ¿y usted?",
-        "Bien, gracias. ¿Cómo está usted?"
+        "Sí, estoy cansado, pero bien. ¿Y usted?",
+        "Estoy cansado, pero estoy bien. ¿Y usted, don Hernando?",
+        "Sí, cansado, pero bien, gracias. ¿Cómo está usted?"
       ],
       "require": [
         {
-          "type": "containsWord",
-          "word": "bien"
+          "type": "containsAny",
+          "words": [
+            "cansado",
+            "cansada"
+          ],
+          "label": "tired is cansado"
         },
         {
           "type": "containsWord",
-          "word": "usted"
+          "word": "usted",
+          "label": "he's older: ask with usted"
         }
       ],
-      "focus": "p:bien-mal-vs-bueno-malo",
+      "focus": "g:estar-location-states",
       "next": "t2"
     },
     {
       "id": "t2",
-      "npc": "Bien, bien. ¿Y dónde vive usted? ¿En el café?",
-      "npcEn": "Fine, fine. And where do you live? In the café?",
-      "intent": "Say no: you live downtown, in La Candelaria.",
+      "npc": "Bien, bien, gracias. Y tú, ¿dónde vives? ¿En el centro?",
+      "npcEn": "Fine, fine, thanks. And you, where do you live? Downtown?",
+      "intent": "Say yes: you live in La Candelaria, on Eleventh Street.",
       "accept": [
-        "No, vivo en el centro, en La Candelaria.",
-        "No, vivo en La Candelaria.",
-        "No. Vivo en el centro.",
-        "Vivo en La Candelaria, en el centro."
+        "Sí, vivo en La Candelaria, en la calle once.",
+        "Sí. Vivo en la calle once, en La Candelaria.",
+        "Sí, en La Candelaria. Vivo en la calle once."
       ],
       "require": [
         {
           "type": "verbForm",
           "inf": "vivir",
           "tense": "presente",
-          "person": "yo"
+          "person": "yo",
+          "label": "I live is vivo"
+        },
+        {
+          "type": "containsWord",
+          "word": "once"
         }
       ],
       "focus": "g:present-er-ir",
@@ -52,83 +60,72 @@
     },
     {
       "id": "t3",
-      "npc": "¿Y a qué se dedica usted?",
-      "npcEn": "And what do you do for a living?",
-      "intent": "Say you're an engineer and you work for a software company.",
+      "npc": "¿Y ya comiste, mijo? Hay arepas.",
+      "npcEn": "And have you eaten yet, son? There are arepas.",
+      "intent": "Say no, and that you're hungry.",
       "accept": [
-        "Soy ingeniero. Trabajo en una empresa de software.",
-        "Soy ingeniero y trabajo en una empresa de software.",
-        "Trabajo en una empresa de software. Soy ingeniero."
+        "No, y tengo hambre.",
+        "No, don Hernando. Tengo hambre.",
+        "No. ¡Tengo hambre!"
       ],
       "require": [
         {
-          "type": "containsWord",
-          "word": "ingeniero"
-        },
-        {
-          "type": "verbForm",
-          "inf": "trabajar",
-          "tense": "presente",
-          "person": "yo"
-        },
-        {
-          "type": "avoidsAny",
-          "words": [
-            "un ingeniero"
-          ]
+          "type": "regex",
+          "pattern": "\\btengo (mucha )?hambre\\b",
+          "flags": "i",
+          "label": "hungry is tengo hambre"
         }
       ],
-      "focus": "p:ser-profession-no-article",
+      "focus": "p:tener-hambre",
       "next": "t4"
     },
     {
       "id": "t4",
-      "npc": "Ingeniero, ¿no? ¿Y dónde está la empresa? ¿Aquí, en Bogotá?",
-      "npcEn": "An engineer, eh? And where's the company? Here, in Bogotá?",
-      "intent": "Say no, it's in Toronto.",
+      "npc": "Y Vale no habla hoy. ¿Cómo está?",
+      "npcEn": "And Vale isn't talking today. How is she?",
+      "intent": "Say she's very busy and tired.",
       "accept": [
-        "No, está en Toronto.",
-        "No, la empresa está en Toronto.",
-        "No. Está en Toronto, en Canadá."
+        "Está muy ocupada y cansada.",
+        "Vale está muy ocupada y está cansada.",
+        "Está cansada y muy ocupada."
       ],
       "require": [
         {
-          "type": "verbForm",
-          "inf": "estar",
-          "tense": "presente",
-          "person": "él/ella"
+          "type": "containsWord",
+          "word": "ocupada",
+          "label": "Vale is a woman: ocupada"
         },
         {
           "type": "containsWord",
-          "word": "Toronto"
+          "word": "cansada",
+          "label": "Vale is a woman: cansada"
         }
       ],
-      "focus": "g:estar-location-states",
+      "focus": "g:adjective-agreement",
       "next": "t5"
     },
     {
       "id": "t5",
-      "npc": "Ah, Toronto. Y usted habla como un profesor de inglés. ¿Está contento en Bogotá?",
-      "npcEn": "Ah, Toronto. And you talk like an English teacher. Are you happy in Bogotá?",
-      "intent": "Say yes, you're happy here, then ask him where he lives.",
+      "npc": "Ay, Vale. Trabaja mucho, como Rosa.",
+      "npcEn": "Oh, Vale. She works a lot, like Rosa.",
+      "intent": "Now you ask: what does he do, and who does he live with? Use usted.",
       "accept": [
-        "Sí, estoy contento. ¿Y usted, dónde vive?",
-        "Sí, estoy contento aquí. ¿Dónde vive usted?",
-        "Sí, estoy contento. ¿Dónde vive usted, don Hernando?"
+        "¿Y usted, a qué se dedica? ¿Con quién vive?",
+        "¿A qué se dedica usted, don Hernando? ¿Y con quién vive?",
+        "Don Hernando, ¿a qué se dedica? ¿Con quién vive usted?"
       ],
       "require": [
         {
-          "type": "verbForm",
-          "inf": "estar",
-          "tense": "presente",
-          "person": "yo"
+          "type": "regex",
+          "pattern": "a qu[eé] se dedica",
+          "flags": "i",
+          "label": "with usted: ¿a qué se dedica?"
         },
         {
-          "type": "question"
-        },
-        {
-          "type": "containsWord",
-          "word": "dónde"
+          "type": "regex",
+          "pattern": "con qui[eé]n vive\\b",
+          "flags": "i",
+          "label": "with usted: ¿con quién vive?"
         }
       ],
       "focus": "g:questions",
@@ -136,24 +133,26 @@
     },
     {
       "id": "t6",
-      "npc": "¿Yo? Aquí, en el barrio, en la calle once. Y llego al café a las siete, como siempre.",
-      "npcEn": "Me? Here, in the neighbourhood, on Eleventh Street. And I get to the café at seven, every day.",
-      "intent": "Tell him that's good and say goodbye politely, using his name.",
+      "npc": "¿Yo? Era taxista, mijo, cuarenta años. Y vivo con mi hermana, aquí en el barrio.",
+      "npcEn": "Me? I was a taxi driver, son, for forty years. And I live with my sister, here in the neighbourhood.",
+      "intent": "Say that's good, and say goodbye politely, using his name.",
       "accept": [
-        "Está bien, don Hernando. Nos vemos.",
-        "Bueno, chao, don Hernando.",
-        "Muy bien. Nos vemos, don Hernando."
+        "¡Muy bien, don Hernando! Nos vemos mañana.",
+        "Muy bien, don Hernando. Chao.",
+        "Bueno, don Hernando. ¡Chao!"
       ],
       "require": [
         {
           "type": "containsWord",
-          "word": "don Hernando"
+          "word": "don Hernando",
+          "label": "use his name: don Hernando"
         },
         {
           "type": "avoidsAny",
           "words": [
             "el don"
-          ]
+          ],
+          "label": "don never takes el"
         }
       ],
       "focus": "p:senor-don-article",
@@ -165,42 +164,51 @@
     "c:bien-y-tu",
     "c:chao-nos-vemos",
     "c:como-estas",
-    "c:donde-esta",
     "c:entonces-bueno",
+    "c:era",
     "c:gracias-de-nada",
+    "c:hay",
     "c:hola-buenos-dias",
-    "c:no-cierto",
-    "c:quiubo",
-    "c:trabajo-en",
+    "c:tengo",
     "c:vivo-en",
+    "c:ya-comiste",
+    "g:adjective-agreement",
     "g:estar-location-states",
     "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
     "g:present-ar",
     "g:present-er-ir",
     "g:questions",
     "g:ser-identity",
+    "g:yo-irregular",
     "l:aquí",
+    "l:arepa",
+    "l:año",
     "l:barrio",
     "l:bien",
     "l:bueno",
-    "l:café",
     "l:calle",
+    "l:cansado",
     "l:centro",
-    "l:contento",
+    "l:comer",
     "l:cómo",
     "l:dedicar",
     "l:día",
     "l:dónde",
-    "l:empresa",
     "l:estar",
     "l:hablar",
-    "l:ingeniero",
-    "l:inglés",
-    "l:llegar",
-    "l:profesor",
+    "l:hambre",
+    "l:hermana",
+    "l:hoy",
+    "l:mañana",
+    "l:mijo",
+    "l:ocupado",
+    "l:quién",
     "l:qué",
     "l:ser",
-    "l:siempre",
+    "l:taxista",
+    "l:tener",
     "l:trabajar",
     "l:ver",
     "l:vivir",
@@ -208,11 +216,14 @@
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
     "p:don-dona-nombre",
-    "p:frequency-scale",
+    "p:nos-vemos-a-las",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
     "p:question-word-order",
     "p:senor-don-article",
     "p:ser-profession-no-article",
     "p:street-names",
-    "p:telling-time"
+    "p:tener-hambre"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "node": "g:questions",
   "hook": {
-    "line": "Don Hernando wants to know everything: where Tomás lives, what he does, how many coffees he drinks. With seven question words you can interview anyone, and every one of them wears an accent.",
+    "line": "Don Hernando wants to know everything: where Tomás lives, what he does, how old he is. With eight question words you can interview anyone, and every one of them wears an accent.",
     "es": "¿Dónde vives? ¿Qué haces? ¿Cuántos años tienes?",
     "en": "Where do you live? What do you do? How old are you?"
   },
@@ -19,8 +19,8 @@
       "en": "Who is Mr Ruiz?"
     },
     {
-      "es": "¿Quiénes son los clientes de las siete?",
-      "en": "Who are the seven o'clock customers?"
+      "es": "¿Quiénes son ellos?",
+      "en": "Who are they?"
     },
     {
       "es": "¿Cómo es el barrio?",
@@ -144,7 +144,8 @@
       "prompt": "How much is a juice?",
       "answer": "¿Cuánto es un jugo?",
       "accept": [
-        "¿Cuánto cuesta un jugo?"
+        "¿Cuánto cuesta un jugo?",
+        "¿Cuánto vale un jugo?"
       ],
       "why": "*Cuánto* = how much."
     },

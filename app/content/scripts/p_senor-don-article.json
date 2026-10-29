@@ -1,14 +1,14 @@
 {
   "node": "p:senor-don-article",
   "hook": {
-    "line": "At the bank, Tomás asks for *el señor Ruiz*. When Mr Ruiz walks over, Tomás says \"*Buenos días, señor Ruiz.*\" The little *el* disappears, and that's not a typo.",
-    "es": "El señor Ruiz está en el banco.\nBuenos días, señor Ruiz.",
-    "en": "Mr Ruiz is at the bank.\nGood morning, Mr Ruiz."
+    "line": "On Friday, Tomás's phone rings and he answers \"*Buenos días, señor Ruiz.*\" A minute later Vale is asking about *el señor Ruiz*. Same man, but now there's an *el*, and that's not a typo.",
+    "es": "Tomás: Buenos días, señor Ruiz.\nVale: ¿El señor Ruiz?",
+    "en": "Tomás: Good morning, Mr Ruiz.\nVale: Mr Ruiz?"
   },
   "examples": [
     {
-      "es": "El señor Ruiz trabaja en el banco.",
-      "en": "Mr Ruiz works at the bank."
+      "es": "El señor Ruiz habla con Tomás.",
+      "en": "Mr Ruiz is talking to Tomás."
     },
     {
       "es": "Buenos días, señor Ruiz.",
@@ -31,14 +31,14 @@
       "en": "Good morning, Don Hernando."
     }
   ],
-  "rule": "*Señor* and *señora* work like nouns, so they take *el* and *la* when you talk ABOUT someone:\n\n*El señor Ruiz trabaja en el banco.*\n*La señora Gómez no está.*\n\nWhen you talk TO the person, the *el* or *la* drops:\n\n*Buenos días, señor Ruiz.*\n*Señora Gómez, ¿usted habla inglés?*\n\n*Don* and *doña* are different. They go with a first name, they show warm respect (very Colombian), and they never take *el* or *la*, whether you talk to or about the person: *Don Hernando llega. ¿Don Hernando, un tinto?*\n\nPlain names never take an article either: *Vale trabaja aquí*, not *la Vale*.",
+  "rule": "*Señor* and *señora* work like nouns, so they take *el* and *la* when you talk ABOUT someone:\n\n*El señor Ruiz habla con Tomás.*\n*La señora Gómez no está.*\n\nWhen you talk TO the person, the *el* or *la* drops:\n\n*Buenos días, señor Ruiz.*\n*Señora Gómez, ¿usted habla inglés?*\n\n*Don* and *doña* are different. They go with a first name, they show warm respect (very Colombian), and they never take *el* or *la*, whether you talk to or about the person: *Don Hernando llega. Don Hernando, ¿un tinto?*\n\nPlain names never take an article either: *Vale trabaja aquí*, not *la Vale*.",
   "smallPrint": "*Señor* and *señora* are titles that behave like common nouns, so they need the definite article in the third person.",
   "soundTip": "In *señor* the *ñ* is the ny in canyon: *se-ÑOR*.",
   "readAndPick": [
     {
-      "es": "El señor Ruiz trabaja en el banco.",
+      "es": "El señor Ruiz habla con Tomás.",
       "options": [
-        "Mr Ruiz is talking.",
+        "Mr Ruiz is talking about Tomás.",
         "Someone is talking about Mr Ruiz.",
         "Someone is talking to Mr Ruiz."
       ],
@@ -49,7 +49,7 @@
       "options": [
         "Someone is talking to Mr Ruiz.",
         "Someone is talking about Mr Ruiz.",
-        "Mr Ruiz is talking about the bank."
+        "Mr Ruiz is saying good morning."
       ],
       "answer": 0
     },
@@ -72,20 +72,18 @@
       "answer": 1
     },
     {
-      "es": "Don Hernando llega a las siete.",
+      "es": "Don Hernando, ¿está bien?",
       "options": [
-        "Don Hernando arrives at seven.",
-        "Mr Hernando's son arrives at seven.",
-        "Don Hernando calls at seven."
+        "Someone is asking Don Hernando how he is.",
+        "Someone is asking about Don Hernando."
       ],
       "answer": 0
     },
     {
       "es": "El señor Pardo no está.",
       "options": [
-        "Mr Pardo isn't here.",
-        "Mr Pardo isn't well.",
-        "I'm not Mr Pardo."
+        "Someone is talking about Mr Pardo.",
+        "Someone is talking to Mr Pardo."
       ],
       "answer": 0
     },
@@ -101,19 +99,18 @@
     {
       "es": "¿Don Hernando está bien?",
       "options": [
-        "Is Mr Hernando's surname Bien?",
-        "Is Don Hernando OK?",
-        "Don Hernando is fine."
+        "Someone is asking Don Hernando how he is.",
+        "Someone is asking about Don Hernando."
       ],
       "answer": 1
     }
   ],
   "yourTurn": [
     {
-      "prompt": "Mr Ruiz works at the bank.",
-      "answer": "El señor Ruiz trabaja en el banco.",
+      "prompt": "Mrs Gómez works at the bank.",
+      "answer": "La señora Gómez trabaja en el banco.",
       "accept": [],
-      "why": "You're talking about him, so *el señor*."
+      "why": "You're talking about her, so *la señora*."
     },
     {
       "prompt": "Good morning, Mr Ruiz.",
@@ -122,10 +119,10 @@
       "why": "You're talking to him, so no *el*."
     },
     {
-      "prompt": "Mrs Gómez isn't in the office.",
-      "answer": "La señora Gómez no está en la oficina.",
+      "prompt": "Mr Ruiz is talking to Tomás.",
+      "answer": "El señor Ruiz habla con Tomás.",
       "accept": [],
-      "why": "About her, so *la señora*."
+      "why": "About him, so *el señor*."
     },
     {
       "prompt": "Mrs Gómez, do you speak English?",
@@ -162,8 +159,8 @@
       "why": "When you speak to someone, *señor* stands alone."
     },
     {
-      "wrong": "Señor Ruiz trabaja en el banco.",
-      "right": "El señor Ruiz trabaja en el banco.",
+      "wrong": "Señor Ruiz habla con Tomás.",
+      "right": "El señor Ruiz habla con Tomás.",
       "why": "Talking about him needs the *el*: *el señor Ruiz*."
     },
     {

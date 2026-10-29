@@ -6,38 +6,164 @@
     "en": "My grandmother is from Bogotá, but my friends are from Toronto."
   },
   "examples": [
-    { "es": "Mi nombre es Tomás.", "en": "My name is Tomás." },
-    { "es": "Tu español es muy bueno.", "en": "Your Spanish is very good (to a friend)." },
-    { "es": "Don Hernando toma su tinto.", "en": "Don Hernando drinks his black coffee." },
-    { "es": "Mis clientes son de Medellín.", "en": "My customers are from Medellín." },
-    { "es": "¿Tus amigos hablan inglés?", "en": "Do your friends speak English (to a friend)?" },
-    { "es": "Señora, ¿cómo se escribe su apellido?", "en": "Madam, how do you spell your surname (formal)?" }
+    {
+      "es": "Mi nombre es Tomás.",
+      "en": "My name is Tomás."
+    },
+    {
+      "es": "Tu español es muy bueno.",
+      "en": "Your Spanish is very good (to a friend)."
+    },
+    {
+      "es": "Don Hernando toma su tinto.",
+      "en": "Don Hernando drinks his black coffee."
+    },
+    {
+      "es": "Mis clientes son de Medellín.",
+      "en": "My customers are from Medellín."
+    },
+    {
+      "es": "¿Tus amigos hablan inglés?",
+      "en": "Do your friends speak English (to a friend)?"
+    },
+    {
+      "es": "Señora, ¿cómo se escribe su apellido?",
+      "en": "Madam, how do you spell your surname (formal)?"
+    }
   ],
   "rule": "Before a thing, Spanish says whose it is with a short word:\n\n*mi* = my\n*tu* = your (to a friend)\n*su* = his, her, its, their, or your (formal)\n\nIf there's more than one thing, add an -s: *mis amigos*, *tus amigos*, *sus amigos*.\n\nThe -s follows the things, not the owner. One grandmother of yours is *tu abuela*; your many friends are *tus amigos*.\n\n*Su* does a lot of work. *Su tinto* can be his, hers, theirs or yours (formal). The conversation tells you which.\n\nWatch the accents: *tu* (your) has none; *tú* (you) has one.",
   "smallPrint": "These are possessive determiners (posesivos átonos).",
   "readAndPick": [
-    { "es": "Mis amigos son de Cali.", "options": ["My friend is from Cali.", "My friends are from Cali."], "answer": 1 },
-    { "es": "Tu café es excelente.", "options": ["Your café is excellent (to a friend).", "My café is excellent."], "answer": 0 },
-    { "es": "Vale come su arepa.", "options": ["Vale eats my arepa.", "Vale eats her arepa.", "Vale eats your arepa (to a friend)."], "answer": 1 },
-    { "es": "Mi abuela es de Bogotá.", "options": ["My grandmother is from Bogotá.", "Your grandmother is from Bogotá (to a friend)."], "answer": 0 },
-    { "es": "Hernando habla con sus nietos.", "options": ["Hernando talks with his grandson.", "Hernando talks with my grandchildren.", "Hernando talks with his grandchildren."], "answer": 2 },
-    { "es": "¿Es tu café?", "options": ["Is it your coffee (to a friend)?", "Is it his coffee?"], "answer": 0 },
-    { "es": "Simón come mi pan.", "options": ["Simón eats his bread.", "Simón eats my bread."], "answer": 1 },
-    { "es": "¿Dónde está mi café?", "options": ["Where's your coffee (to a friend)?", "Where are my coffees?", "Where's my coffee?"], "answer": 2 }
+    {
+      "es": "Mis amigos son de Cali.",
+      "options": [
+        "My friend is from Cali.",
+        "My friends are from Cali."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tu café es excelente.",
+      "options": [
+        "Your café is excellent (to a friend).",
+        "My café is excellent."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale come su arepa.",
+      "options": [
+        "Vale eats my arepa.",
+        "Vale eats her arepa.",
+        "Vale eats your arepa (to a friend)."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi abuela es de Bogotá.",
+      "options": [
+        "My grandmother is from Bogotá.",
+        "Your grandmother is from Bogotá (to a friend)."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando habla con sus nietos.",
+      "options": [
+        "Hernando talks with his grandson.",
+        "Hernando talks with my grandchildren.",
+        "Hernando talks with his grandchildren."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Es tu café?",
+      "options": [
+        "Is it your coffee (to a friend)?",
+        "Is it his coffee?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Simón come mi pan.",
+      "options": [
+        "Simón eats his bread.",
+        "Simón eats my bread."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde está mi café?",
+      "options": [
+        "Where's your coffee (to a friend)?",
+        "Where are my coffees?",
+        "Where's my coffee?"
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *mi* or *mis*: ___ amigos son de Cali.", "answer": "Mis amigos son de Cali.", "accept": [], "why": "More than one friend, so *mis*." },
-    { "prompt": "Choose *tu* or *tus*: ¿___ barrio es bonito?", "answer": "¿Tu barrio es bonito?", "accept": [], "why": "One neighbourhood, so *tu* with no -s." },
-    { "prompt": "Say: My name is (your name). Use *Tomás* if you like.", "answer": "Mi nombre es Tomás.", "accept": [], "why": "My = *mi*, before one thing." },
-    { "prompt": "Say: Your Spanish is very good (to a friend).", "answer": "Tu español es muy bueno.", "accept": [], "why": "To a friend, your = *tu*, with no accent." },
-    { "prompt": "Say: Don Hernando drinks his black coffee.", "answer": "Don Hernando toma su tinto.", "accept": [], "why": "His = *su*." },
-    { "prompt": "Ask a woman you don't know (formal): Is it your coffee?", "answer": "¿Es su café?", "accept": ["Señora, ¿es su café?"], "why": "Formal your is also *su*." },
-    { "prompt": "Make it plural: Mi cliente es de Medellín.", "answer": "Mis clientes son de Medellín.", "accept": [], "why": "More customers: *mis clientes*, and *es* becomes *son*." }
+    {
+      "prompt": "Choose *mi* or *mis*: ___ amigos son de Cali.",
+      "answer": "Mis amigos son de Cali.",
+      "accept": [],
+      "why": "More than one friend, so *mis*."
+    },
+    {
+      "prompt": "Choose *tu* or *tus*: ¿___ barrio es bonito?",
+      "answer": "¿Tu barrio es bonito?",
+      "accept": [],
+      "why": "One neighbourhood, so *tu* with no -s."
+    },
+    {
+      "prompt": "Say: My name is Tomás.",
+      "answer": "Mi nombre es Tomás.",
+      "accept": [],
+      "why": "My = *mi*, before one thing."
+    },
+    {
+      "prompt": "Say: Your Spanish is very good (to a friend).",
+      "answer": "Tu español es muy bueno.",
+      "accept": [],
+      "why": "To a friend, your = *tu*, with no accent."
+    },
+    {
+      "prompt": "Say: Don Hernando drinks his black coffee.",
+      "answer": "Don Hernando toma su tinto.",
+      "accept": [],
+      "why": "His = *su*."
+    },
+    {
+      "prompt": "Ask a woman you don't know (formal): Is it your coffee?",
+      "answer": "¿Es su café?",
+      "accept": [
+        "Señora, ¿es su café?"
+      ],
+      "why": "Formal your is also *su*."
+    },
+    {
+      "prompt": "Make it plural: Mi cliente es de Medellín.",
+      "answer": "Mis clientes son de Medellín.",
+      "accept": [],
+      "why": "More customers: *mis clientes*, and *es* becomes *son*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Mi amigos son de Cali.", "right": "Mis amigos son de Cali.", "why": "The -s follows the things: several friends, so *mis*." },
-    { "wrong": "Tú español es muy bueno.", "right": "Tu español es muy bueno.", "why": "*Tú* with an accent means you. Your is *tu*, no accent." },
-    { "wrong": "Hernando habla con los sus nietos.", "right": "Hernando habla con sus nietos.", "why": "In Spanish, *su* replaces *los*. Never use both." }
+    {
+      "wrong": "Mi amigos son de Cali.",
+      "right": "Mis amigos son de Cali.",
+      "why": "The -s follows the things: several friends, so *mis*."
+    },
+    {
+      "wrong": "Tú español es muy bueno.",
+      "right": "Tu español es muy bueno.",
+      "why": "*Tú* with an accent means you. Your is *tu*, no accent."
+    },
+    {
+      "wrong": "Tomás y Vale trabajan en sus café.",
+      "right": "Tomás y Vale trabajan en su café.",
+      "why": "Two people, but one café, so *su*. The -s follows the things, not the owners."
+    }
   ],
   "personal": "Write three lines about people and things that are yours: your name, your neighbourhood, your friends. Use *mi* or *mis* each time."
 }

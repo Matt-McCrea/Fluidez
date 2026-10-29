@@ -1,7 +1,7 @@
 {
   "node": "p:tener-hambre",
   "hook": {
-    "line": "Bogotá at six in the morning: 2,600 metres up, eight degrees, and the café isn't open yet. You're cold, hungry and half asleep. In Spanish you don't ARE any of these. You HAVE them.",
+    "line": "Bogotá at six in the morning: 2,600 metres up, eight degrees, and the café isn't open yet. You're cold, hungry and half asleep. In Spanish you don't *are* any of these. You *have* them.",
     "es": "Tengo frío, tengo hambre y tengo sueño.",
     "en": "I'm cold, I'm hungry and I'm sleepy."
   },
@@ -19,8 +19,8 @@
       "en": "I'm not sleepy, thanks."
     },
     {
-      "es": "Tenemos sed. ¿Me regala dos aguas?",
-      "en": "We're thirsty. Could I have two waters?"
+      "es": "Tenemos sed, Vale. Dos jugos, por favor.",
+      "en": "We're thirsty, Vale. Two juices, please."
     },
     {
       "es": "Tengo miedo del señor Altamira.",
@@ -31,7 +31,7 @@
       "en": "I'm in a hurry: the meeting is at nine."
     }
   ],
-  "rule": "For a handful of body feelings, Spanish uses *tener* (to have) plus a noun, where English uses \"to be\" plus an adjective:\n\n*tengo hambre*: I'm hungry (I have hunger)\n*tengo sed*: I'm thirsty\n*tengo frío* / *calor*: I'm cold / hot\n*tengo sueño*: I'm sleepy\n*tengo miedo*: I'm scared\n*tengo prisa*: I'm in a hurry\n\nSo never *estoy hambre*. Think of it as carrying the feeling around for a while.\n\nFor we, it's *tenemos*: *Tenemos hambre.* The forms for you and she (*tienes*, *tiene*) arrive soon, with the other verbs that change inside.\n\nBecause these are nouns, \"very\" is *mucho* or *mucha*, not *muy*: *tengo mucha hambre*, *tengo mucho frío*. You'll use that once *mucho* joins your toolkit.",
+  "rule": "For a handful of body feelings, Spanish uses *tener* (to have) plus a noun, where English uses \"to be\" plus an adjective:\n\n*tengo hambre*: I'm hungry (I have hunger)\n*tengo sed*: I'm thirsty\n*tengo frío*: I'm cold\n*tengo calor*: I'm hot\n*tengo sueño*: I'm sleepy\n*tengo miedo*: I'm scared\n*tengo prisa*: I'm in a hurry\n\nSo never *estoy hambre*. Think of it as carrying the feeling around for a while.\n\nThe other people work the same way: *¿Tienes frío?*, *Vale tiene sueño*, *Tenemos hambre*.\n\nBecause these are nouns, \"very\" is *mucho*, not *muy*: *tengo mucho frío*, *tengo mucho sueño*. *Hambre* is feminine, so it's *mucha hambre*.",
   "smallPrint": "These are fixed expressions with *tener* + noun (*expresiones con tener*).",
   "soundTip": "*Hambre* starts with a silent *h*: *AM-bre*. And in *frío* the *í* carries the stress: *FRÍ-o*, two syllables.",
   "readAndPick": [
@@ -177,8 +177,8 @@
     },
     {
       "wrong": "Tengo muy hambre.",
-      "right": "Tengo hambre.",
-      "why": "*Muy* goes with describing words. With a noun like *hambre*, Spanish says *mucha hambre*; for now, *tengo hambre* is perfect."
+      "right": "Tengo mucha hambre.",
+      "why": "*Muy* goes with describing words. *Hambre* is a thing, so you say how much of it: *mucha hambre*."
     }
   ],
   "personal": "How do you feel right now: hungry, thirsty, cold, sleepy? Write two sentences with *tengo*, and one with *no tengo*."

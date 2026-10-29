@@ -98,11 +98,11 @@
       "answer": 0
     },
     {
-      "es": "¿Dónde estudian los estudiantes?",
+      "es": "¿Dónde estudian tus amigos?",
       "options": [
-        "Do the students study here?",
-        "Where do the students study?",
-        "When do the students study?"
+        "Do your friends study here?",
+        "Where do your friends study?",
+        "When do your friends study?"
       ],
       "answer": 1
     }

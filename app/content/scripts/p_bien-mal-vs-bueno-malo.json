@@ -1,9 +1,9 @@
 {
   "node": "p:bien-mal-vs-bueno-malo",
   "hook": {
-    "line": "Don Hernando says Vale's bread is good and that Tomás speaks Spanish well. English uses good and well; so does Spanish, and it's just as fussy about them.",
-    "es": "El pan es bueno, y Tomás habla bien.",
-    "en": "The bread is good, and Tomás speaks well."
+    "line": "Don Hernando hands out verdicts every morning: Vale's bread is good, and Tomás speaks well, maybe too well. English keeps good and well apart. So does Spanish, and it's just as fussy.",
+    "es": "Vale, el pan es bueno. Y tú, Tomás, hablas muy bien.",
+    "en": "Vale, the bread is good. And you, Tomás, you speak very well."
   },
   "examples": [
     {
@@ -19,8 +19,8 @@
       "en": "The coffee from the shop is bad."
     },
     {
-      "es": "Tomás escribe mal el español.",
-      "en": "Tomás writes Spanish badly."
+      "es": "Tomás escribe mal en español.",
+      "en": "Tomás writes badly in Spanish."
     },
     {
       "es": "Estoy bien, gracias.",

@@ -6,38 +6,169 @@
     "en": "Where are you from?\nI'm from Toronto, but my grandmother is from here."
   },
   "examples": [
-    { "es": "¿Con quién vives?", "en": "Who do you live with?" },
-    { "es": "¿A qué hora abre el banco?", "en": "What time does the bank open?" },
-    { "es": "¿Por qué estás cansado?", "en": "Why are you tired?" },
-    { "es": "¿En qué barrio vives?", "en": "Which neighbourhood do you live in?" },
-    { "es": "¿De quién es este libro?", "en": "Whose book is this?" },
-    { "es": "¿Con quién trabaja Tomás?", "en": "Who does Tomás work with?" }
+    {
+      "es": "¿Con quién vives?",
+      "en": "Who do you live with?"
+    },
+    {
+      "es": "¿A qué hora abre el banco?",
+      "en": "What time does the bank open?"
+    },
+    {
+      "es": "¿Por qué estás cansado?",
+      "en": "Why are you tired?"
+    },
+    {
+      "es": "¿En qué barrio vives?",
+      "en": "Which neighbourhood do you live in?"
+    },
+    {
+      "es": "¿De quién es este libro?",
+      "en": "Whose book is this?"
+    },
+    {
+      "es": "¿Con quién trabaja Tomás?",
+      "en": "Who does Tomás work with?"
+    }
   ],
-  "rule": "When a question needs a little word like from, with, at or in, Spanish puts it at the very front, glued to the question word:\n\n*¿De dónde?* = where from?\n*¿Con quién?* = who with?\n*¿A qué hora?* = what time? (at what hour?)\n*¿En qué?* = in what, which?\n*¿De quién?* = whose? (of whom?)\n*¿Por qué?* = why? (for what reason?)\n\nA sixth, *¿Para qué?* (what for?), joins them soon, once you meet *para*.\n\nSo English \"Who do you live with?\" becomes *¿Con quién vives?*. Nothing is left at the end.\n\nThe answer usually keeps the same little word: *¿De dónde eres? Soy de Cali.* *¿Con quién vives? Con mi abuela.*\n\nOne more pair to keep apart: *¿por qué?* (why, two words, accent) and *porque* (because, one word).",
+  "rule": "When a question needs a little word like from, with, at or in, Spanish puts it at the very front, glued to the question word:\n\n*¿De dónde?* = where from?\n*¿Con quién?* = who with?\n*¿A qué hora?* = what time? (at what hour?)\n*¿En qué?* = in what, which?\n*¿De quién?* = whose? (of whom?)\n*¿Por qué?* = why? (for what reason?)\n\nOne more, *¿Para qué?* (what for?), joins them later, once you meet *para*.\n\nSo English \"Who do you live with?\" becomes *¿Con quién vives?*. Nothing is left at the end.\n\nThe answer usually keeps the same little word: *¿De dónde eres? Soy de Cali.* *¿Con quién vives? Con mi abuela.*\n\nOne more pair to keep apart: *¿por qué?* (why, two words, accent) and *porque* (because, one word).",
   "smallPrint": "These are interrogatives introduced by a preposition.",
   "readAndPick": [
-    { "es": "¿Con quién vives?", "options": ["Who do you live with?", "Who lives with you?", "Where do you live?"], "answer": 0 },
-    { "es": "¿De dónde es Vale?", "options": ["Where is Vale?", "Where is Vale from?"], "answer": 1 },
-    { "es": "¿A qué hora llegas?", "options": ["When are you leaving?", "What time do you arrive?", "How do you get here?"], "answer": 1 },
-    { "es": "¿De quién es este libro?", "options": ["Whose book is this?", "Who is this book about?"], "answer": 0 },
-    { "es": "¿Por qué está cerrado el café?", "options": ["Why is the café closed?", "When is the café closed?"], "answer": 0 },
-    { "es": "¿Con quién come Don Hernando?", "options": ["What does Don Hernando eat?", "Who eats with Don Hernando's friends?", "Who does Don Hernando eat with?"], "answer": 2 },
-    { "es": "¿En qué barrio vives?", "options": ["Do you live in a neighbourhood?", "Which neighbourhood do you live in?"], "answer": 1 },
-    { "es": "¿De dónde son tus amigos?", "options": ["Where are your friends?", "Where are your friends from?", "Who are your friends?"], "answer": 1 }
+    {
+      "es": "¿Con quién vives?",
+      "options": [
+        "Who do you live with?",
+        "Who lives with you?",
+        "Where do you live?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿De dónde es Vale?",
+      "options": [
+        "Where is Vale?",
+        "Where is Vale from?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿A qué hora llegas?",
+      "options": [
+        "When are you leaving?",
+        "What time do you arrive?",
+        "How do you get here?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿De quién es este libro?",
+      "options": [
+        "Whose book is this?",
+        "Who is this book about?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Por qué está cerrado el café?",
+      "options": [
+        "Why is the café closed?",
+        "When is the café closed?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Con quién come don Hernando?",
+      "options": [
+        "What does Don Hernando eat?",
+        "Who eats with Don Hernando's friends?",
+        "Who does Don Hernando eat with?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿En qué barrio vives?",
+      "options": [
+        "Do you live in a neighbourhood?",
+        "Which neighbourhood do you live in?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿De dónde son tus amigos?",
+      "options": [
+        "Where are your friends?",
+        "Where are your friends from?",
+        "Who are your friends?"
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Ask a friend: Where are you from?", "answer": "¿De dónde eres?", "accept": ["¿De dónde eres tú?"], "why": "From goes first: *¿De dónde?*" },
-    { "prompt": "Ask a friend: Who do you live with?", "answer": "¿Con quién vives?", "accept": ["¿Con quién vives tú?"], "why": "With goes first: *¿Con quién?*" },
-    { "prompt": "Ask: What time does the bank open?", "answer": "¿A qué hora abre el banco?", "accept": [], "why": "At what hour: *¿A qué hora?*" },
-    { "prompt": "Ask a friend: Why are you tired? (to a man)", "answer": "¿Por qué estás cansado?", "accept": [], "why": "Why is two words with an accent: *por qué*." },
-    { "prompt": "Ask: Whose book is this?", "answer": "¿De quién es este libro?", "accept": [], "why": "Whose is \"of whom\": *¿De quién?*" },
-    { "prompt": "Answer: Why is the café closed? Say: Because I'm sick (a man speaking).", "answer": "Porque estoy enfermo.", "accept": [], "why": "Because is one word, no accent: *porque*." },
-    { "prompt": "Ask a friend which neighbourhood they live in.", "answer": "¿En qué barrio vives?", "accept": ["¿En qué barrio vives tú?"], "why": "In which: *¿En qué?*, then the thing." }
+    {
+      "prompt": "Ask a friend: Where are you from?",
+      "answer": "¿De dónde eres?",
+      "accept": [
+        "¿De dónde eres tú?"
+      ],
+      "why": "From goes first: *¿De dónde?*"
+    },
+    {
+      "prompt": "Ask a friend: Who do you live with?",
+      "answer": "¿Con quién vives?",
+      "accept": [
+        "¿Con quién vives tú?"
+      ],
+      "why": "With goes first: *¿Con quién?*"
+    },
+    {
+      "prompt": "Ask: What time does the bank open?",
+      "answer": "¿A qué hora abre el banco?",
+      "accept": [],
+      "why": "At what hour: *¿A qué hora?*"
+    },
+    {
+      "prompt": "Ask a friend: Why are you tired? (to a man)",
+      "answer": "¿Por qué estás cansado?",
+      "accept": [],
+      "why": "Why is two words with an accent: *por qué*."
+    },
+    {
+      "prompt": "Ask: Whose book is this?",
+      "answer": "¿De quién es este libro?",
+      "accept": [],
+      "why": "Whose is \"of whom\": *¿De quién?*"
+    },
+    {
+      "prompt": "Answer: Why is the café closed? Say: Because I'm sick (a man speaking).",
+      "answer": "Porque estoy enfermo.",
+      "accept": [],
+      "why": "Because is one word, no accent: *porque*."
+    },
+    {
+      "prompt": "Ask a friend which neighbourhood they live in.",
+      "answer": "¿En qué barrio vives?",
+      "accept": [
+        "¿En qué barrio vives tú?"
+      ],
+      "why": "In which: *¿En qué?*, then the thing."
+    }
   ],
   "pitfalls": [
-    { "wrong": "¿Dónde eres de?", "right": "¿De dónde eres?", "why": "Spanish never leaves *de* at the end. It goes in front of *dónde*." },
-    { "wrong": "¿Quién vives con?", "right": "¿Con quién vives?", "why": "*Con* moves to the front, before *quién*." },
-    { "wrong": "¿Porque estás cansado?", "right": "¿Por qué estás cansado?", "why": "In a question, why is two words with an accent: *por qué*. *Porque* is the answer." }
+    {
+      "wrong": "¿Dónde eres de?",
+      "right": "¿De dónde eres?",
+      "why": "Spanish never leaves *de* at the end. It goes in front of *dónde*."
+    },
+    {
+      "wrong": "¿Quién vives con?",
+      "right": "¿Con quién vives?",
+      "why": "*Con* moves to the front, before *quién*."
+    },
+    {
+      "wrong": "¿Porque estás cansado?",
+      "right": "¿Por qué estás cansado?",
+      "why": "In a question, why is two words with an accent: *por qué*. *Porque* is the answer."
+    }
   ],
   "personal": "Write three questions you'd ask someone new at Rosa's café, each starting with a little word: *¿De dónde…?*, *¿Con quién…?*, *¿A qué hora…?*. Then answer them about yourself."
 }

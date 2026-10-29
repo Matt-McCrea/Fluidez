@@ -6,39 +6,166 @@
     "en": "Could I have this bread, please?"
   },
   "examples": [
-    { "es": "Este café es de Huila.", "en": "This coffee is from Huila." },
-    { "es": "Esta es Mariana.", "en": "This is Mariana." },
-    { "es": "Este es Don Hernando.", "en": "This is Don Hernando." },
-    { "es": "Este barrio es muy bonito.", "en": "This neighbourhood is very pretty." },
-    { "es": "Eso es verdad.", "en": "That's true." },
-    { "es": "Esto es un desastre.", "en": "This is a disaster." }
+    {
+      "es": "Este café es de Huila.",
+      "en": "This coffee is from Huila."
+    },
+    {
+      "es": "Esta es Mariana.",
+      "en": "This is Mariana."
+    },
+    {
+      "es": "Este es don Hernando.",
+      "en": "This is Don Hernando."
+    },
+    {
+      "es": "Este barrio es muy bonito.",
+      "en": "This neighbourhood is very pretty."
+    },
+    {
+      "es": "Eso es verdad.",
+      "en": "That's true."
+    },
+    {
+      "es": "Esto es un desastre.",
+      "en": "This is a disaster."
+    }
   ],
-  "rule": "This, for a thing you name:\n*este* + a masculine thing: *este café*, *este libro*\n*esta* + a feminine thing: *esta arepa*, *esta oficina*\nIt follows *el* and *la*: *el café*, so *este café*.\n\nIntroducing someone works the same way: *Este es Don Hernando*, *Esta es Mariana*.\n\nThis or that, for a thing you don't name:\n*esto* = this (here, with me): *Esto es un desastre.*\n*eso* = that (what you just said, or over there): *Eso es verdad.*\n\n*Esto* and *eso* never go before a noun. When you know the word, use *este* or *esta*.",
+  "rule": "This, for a thing you name:\n*este* + a masculine thing: *este café*, *este libro*\n*esta* + a feminine thing: *esta arepa*, *esta oficina*\nIt follows *el* and *la*: *el café*, so *este café*.\n\nIntroducing someone works the same way: *Este es don Hernando*, *Esta es Mariana*.\n\nThis or that, for a thing you don't name:\n*esto* = this (here, with me): *Esto es un desastre.*\n*eso* = that (what you just said, or over there): *Eso es verdad.*\n\n*Esto* and *eso* never go before a noun. When you know the word, use *este* or *esta*.",
   "smallPrint": "These are demonstratives; *esto* and *eso* are the neuter forms.",
   "soundTip": "*Este* has two clear syllables, ES-te, and the final e is like the e in *bet*, never silent.",
   "readAndPick": [
-    { "es": "Esta es Mariana.", "options": ["This is Mariana.", "That's Mariana's."], "answer": 0 },
-    { "es": "Eso es verdad.", "options": ["This is true.", "That's true."], "answer": 1 },
-    { "es": "Quiero este libro.", "options": ["I want a book.", "I want this book.", "I want that."], "answer": 1 },
-    { "es": "No entiendo esto.", "options": ["I don't understand this.", "I don't understand him."], "answer": 0 },
-    { "es": "Este tinto está frío.", "options": ["The coffee is cold.", "This black coffee is cold.", "This is cold coffee."], "answer": 1 },
-    { "es": "Me gusta esta arepa.", "options": ["I like arepas.", "I like this arepa."], "answer": 1 },
-    { "es": "Eso es mucho trabajo.", "options": ["That's a lot of work.", "This work is very good.", "There's a lot of work."], "answer": 0 },
-    { "es": "Este es mi barrio.", "options": ["This is my neighbourhood.", "This neighbourhood is mine.", "My neighbourhood is here."], "answer": 0 }
+    {
+      "es": "Esta es Mariana.",
+      "options": [
+        "This is Mariana.",
+        "That's Mariana's."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Eso es verdad.",
+      "options": [
+        "This is true.",
+        "That's true."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quiero este libro.",
+      "options": [
+        "I want a book.",
+        "I want this book.",
+        "I want that."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No entiendo esto.",
+      "options": [
+        "I don't understand this.",
+        "I don't understand him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Este tinto está frío.",
+      "options": [
+        "The coffee is cold.",
+        "This black coffee is cold.",
+        "This is cold coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me gusta esta arepa.",
+      "options": [
+        "I like arepas.",
+        "I like this arepa."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Eso es mucho trabajo.",
+      "options": [
+        "That's a lot of work.",
+        "This work is very good.",
+        "There's a lot of work."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Este es mi barrio.",
+      "options": [
+        "This is my neighbourhood.",
+        "This neighbourhood is mine.",
+        "My neighbourhood is here."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *este* or *esta*: ¿Me regala ___ arepa?", "answer": "¿Me regala esta arepa?", "accept": ["¿Me regala esta arepa, por favor?"], "why": "*La arepa*, so *esta*." },
-    { "prompt": "Choose *este* or *esto*: Quiero ___ libro.", "answer": "Quiero este libro.", "accept": [], "why": "You name the book, so *este*. *Esto* never goes before a noun." },
-    { "prompt": "Introduce Vale to a friend: This is Vale.", "answer": "Esta es Vale.", "accept": [], "why": "Vale is a woman, so *esta*." },
-    { "prompt": "Agree with someone: That's true.", "answer": "Eso es verdad.", "accept": [], "why": "You point back at what they said: *eso*." },
-    { "prompt": "Say: This coffee is from Huila.", "answer": "Este café es de Huila.", "accept": [], "why": "*El café*, so *este café*." },
-    { "prompt": "Look at the mess in the kitchen and say: This is a disaster.", "answer": "Esto es un desastre.", "accept": [], "why": "You don't name the mess, so *esto*." },
-    { "prompt": "Say: This neighbourhood is very pretty.", "answer": "Este barrio es muy bonito.", "accept": [], "why": "*El barrio*, so *este barrio*." }
+    {
+      "prompt": "Choose *este* or *esta*: ¿Me regala ___ arepa?",
+      "answer": "¿Me regala esta arepa?",
+      "accept": [
+        "¿Me regala esta arepa, por favor?"
+      ],
+      "why": "*La arepa*, so *esta*."
+    },
+    {
+      "prompt": "Choose *este* or *esto*: Quiero ___ libro.",
+      "answer": "Quiero este libro.",
+      "accept": [],
+      "why": "You name the book, so *este*. *Esto* never goes before a noun."
+    },
+    {
+      "prompt": "Introduce Vale to a friend: This is Vale.",
+      "answer": "Esta es Vale.",
+      "accept": [],
+      "why": "Vale is a woman, so *esta*."
+    },
+    {
+      "prompt": "Agree with someone: That's true.",
+      "answer": "Eso es verdad.",
+      "accept": [],
+      "why": "You point back at what they said: *eso*."
+    },
+    {
+      "prompt": "Say: This coffee is from Huila.",
+      "answer": "Este café es de Huila.",
+      "accept": [],
+      "why": "*El café*, so *este café*."
+    },
+    {
+      "prompt": "Look at the mess in the kitchen and say: This is a disaster.",
+      "answer": "Esto es un desastre.",
+      "accept": [],
+      "why": "You don't name the mess, so *esto*."
+    },
+    {
+      "prompt": "Say: This neighbourhood is very pretty.",
+      "answer": "Este barrio es muy bonito.",
+      "accept": [],
+      "why": "*El barrio*, so *este barrio*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Quiero esto café.", "right": "Quiero este café.", "why": "*Esto* stands alone. Before a noun, use *este* or *esta*." },
-    { "wrong": "Este es Mariana.", "right": "Esta es Mariana.", "why": "Mariana is a woman, so *esta*." },
-    { "wrong": "Esta café es de Huila.", "right": "Este café es de Huila.", "why": "It's *el café*, so *este*. The ending follows *el* or *la*." }
+    {
+      "wrong": "Quiero esto café.",
+      "right": "Quiero este café.",
+      "why": "*Esto* stands alone. Before a noun, use *este* or *esta*."
+    },
+    {
+      "wrong": "Este es Mariana.",
+      "right": "Esta es Mariana.",
+      "why": "Mariana is a woman, so *esta*."
+    },
+    {
+      "wrong": "Esta café es de Huila.",
+      "right": "Este café es de Huila.",
+      "why": "It's *el café*, so *este*. The ending follows *el* or *la*."
+    }
   ],
   "personal": "Look around you. Name two things with *este* or *esta*, and say one thing about each, like *Este café es muy bueno*."
 }

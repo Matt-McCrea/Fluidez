@@ -7,50 +7,50 @@
   },
   "examples": [
     {
-      "es": "Tengo sed.",
-      "en": "I'm thirsty."
+      "es": "Tengo frío.",
+      "en": "I'm cold."
     },
     {
       "es": "Estoy enfermo.",
       "en": "I'm ill."
     },
     {
-      "es": "Estoy aburrido en la reunión.",
-      "en": "I'm bored in the meeting."
+      "es": "Vale está aburrida en la reunión.",
+      "en": "Vale is bored in the meeting."
     },
     {
-      "es": "No estoy nervioso; tengo sed.",
-      "en": "I'm not nervous; I'm thirsty."
+      "es": "No estoy nerviosa; tengo hambre.",
+      "en": "I'm not nervous; I'm hungry (a woman speaking)."
     },
     {
-      "es": "Estamos bien, pero tenemos sed.",
-      "en": "We're fine, but we're thirsty."
+      "es": "Estamos bien, pero tenemos sueño.",
+      "en": "We're fine, but we're sleepy."
     },
     {
       "es": "Estoy cansado, pero no tengo sueño.",
       "en": "I'm tired, but I'm not sleepy."
     }
   ],
-  "rule": "Two ways to say how you feel, and English uses \"I'm\" for both.\n\nWith a describing word (an adjective), use *estar*:\n*estoy cansado*, *estoy enfermo*, *estoy nervioso*, *estoy ocupado*, *estoy bien*\n\nWith a noun, the feeling is something you have, so use *tener*:\n*tengo sed*, *tengo hambre*, *tengo frío*, *tengo sueño*, *tengo miedo*\n\nThe test: could you put \"a lot of\" in front of it in English? A lot of thirst works, so *tener*. A lot of ill doesn't, so *estar*.\n\nAnd remember: describing words change for a woman (*enferma*, *contenta*), but *sed* never changes.",
+  "rule": "Two ways to say how you feel, and English uses \"I'm\" for both.\n\nWith a describing word, use *estar*:\n*estoy cansado*, *estoy enfermo*, *estoy nervioso*, *estoy ocupado*, *estoy bien*\n\nWith a noun, the feeling is something you have, so use *tener*:\n*tengo sed*, *tengo hambre*, *tengo frío*, *tengo sueño*, *tengo miedo*\n\nThe test is the word for very. With *estar* it's *muy*: *muy cansado*. With *tener* it's *mucho* or *mucha*: *mucho frío*, *mucha sed*.\n\nAnd describing words change for a woman (*enferma*, *contenta*), but *frío* or *sed* never do: *Vale está cansada y tiene frío*.",
   "smallPrint": "*Estar* + adjective vs *tener* + noun for physical and emotional states.",
   "readAndPick": [
     {
-      "es": "Tengo sed.",
+      "es": "Tengo frío.",
       "options": [
-        "I'm thirsty.",
-        "I'm bored.",
-        "I'm ill."
+        "I'm cold.",
+        "I'm a cold person.",
+        "It's cold."
       ],
       "answer": 0
     },
     {
-      "es": "Estoy enfermo.",
+      "es": "Estamos enfermos, pero no tenemos frío.",
       "options": [
-        "I'm thirsty.",
-        "I'm ill.",
-        "I'm hungry."
+        "We're ill, but we're not cold.",
+        "We're cold, but we're not ill.",
+        "They're ill, but they're not cold."
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "es": "Estoy aburrido, pero no tengo sed.",
@@ -71,29 +71,29 @@
       "answer": 0
     },
     {
-      "es": "Tenemos sed y estamos bien.",
+      "es": "Tenemos hambre y estamos cansados.",
       "options": [
-        "We're fine and not thirsty.",
-        "We're thirsty and we're fine.",
-        "We're thirsty and nervous."
+        "We're hungry and tired.",
+        "We're tired, but not hungry.",
+        "They're hungry and tired."
       ],
-      "answer": 1
+      "answer": 0
     },
     {
-      "es": "Estoy tranquilo; tengo sed.",
+      "es": "Estoy tranquilo; tengo sueño.",
       "options": [
-        "I'm thirsty and nervous.",
-        "I'm calm and not thirsty.",
-        "I'm calm; I'm thirsty."
+        "I'm sleepy and nervous.",
+        "I'm calm and not sleepy.",
+        "I'm calm; I'm sleepy."
       ],
       "answer": 2
     },
     {
-      "es": "No estoy enfermo.",
+      "es": "No estoy enferma.",
       "options": [
-        "I'm not ill.",
-        "I'm not thirsty.",
-        "I'm not bored."
+        "I'm not ill (a woman speaking).",
+        "She isn't ill.",
+        "I'm not cold."
       ],
       "answer": 0
     },
@@ -117,42 +117,52 @@
     {
       "prompt": "I'm ill.",
       "answer": "Estoy enfermo.",
-      "accept": [],
+      "accept": [
+        "Estoy enferma."
+      ],
       "why": "*Enfermo* describes you: *estar*."
     },
     {
       "prompt": "I'm bored.",
       "answer": "Estoy aburrido.",
-      "accept": [],
+      "accept": [
+        "Estoy aburrida."
+      ],
       "why": "*Aburrido* describes you: *estar*."
     },
     {
-      "prompt": "I'm not nervous; I'm thirsty.",
-      "answer": "No estoy nervioso; tengo sed.",
+      "prompt": "I'm not nervous; I'm hungry.",
+      "answer": "No estoy nervioso; tengo hambre.",
       "accept": [
-        "No estoy nervioso, tengo sed."
+        "No estoy nervioso, tengo hambre.",
+        "No estoy nerviosa; tengo hambre.",
+        "No estoy nerviosa, tengo hambre."
       ],
-      "why": "Nervous takes *estar*; thirst takes *tener*."
+      "why": "Nervous describes you, so *estar*; hunger is a thing you have, so *tener*."
     },
     {
-      "prompt": "We're fine, but we're thirsty.",
-      "answer": "Estamos bien, pero tenemos sed.",
+      "prompt": "We're fine, but we're cold.",
+      "answer": "Estamos bien, pero tenemos frío.",
       "accept": [],
-      "why": "*Estamos* for how you are, *tenemos* for the thirst."
+      "why": "*Estamos* for how you are, *tenemos* for the cold."
     },
     {
       "prompt": "I'm tired and hungry.",
       "answer": "Estoy cansado y tengo hambre.",
-      "accept": [],
-      "why": "*Cansado* describes you (*estar*); *hambre* is a thing you have (*tener*)."
+      "accept": [
+        "Estoy cansada y tengo hambre."
+      ],
+      "why": "*Cansado* describes you, so *estar*; *hambre* is a thing you have, so *tener*."
     },
     {
       "prompt": "I'm not busy; I'm cold.",
       "answer": "No estoy ocupado; tengo frío.",
       "accept": [
-        "No estoy ocupado, tengo frío."
+        "No estoy ocupado, tengo frío.",
+        "No estoy ocupada; tengo frío.",
+        "No estoy ocupada, tengo frío."
       ],
-      "why": "*Ocupado* describes you; *frío* is a noun."
+      "why": "*Ocupado* describes you, so *estar*; *frío* here is a noun, so *tener*."
     },
     {
       "prompt": "Don Hernando is calm.",

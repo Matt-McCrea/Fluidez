@@ -42,9 +42,9 @@
     {
       "es": "Vale está en el café.",
       "options": [
-        "Vale is in the café.",
-        "Vale is a café.",
-        "Vale works in the café."
+        "Vale is at the café.",
+        "Vale is from the café.",
+        "Vale works at the café."
       ],
       "answer": 0
     },
@@ -114,7 +114,7 @@
     {
       "es": "Usted está en el hospital.",
       "options": [
-        "You're a hospital doctor.",
+        "They're at the hospital.",
         "I'm at the hospital.",
         "You're at the hospital."
       ],
@@ -168,7 +168,7 @@
       "why": "*Bien* is how you are, so *estar*."
     },
     {
-      "prompt": "I'm tired.",
+      "prompt": "I'm tired. (a man speaking)",
       "answer": "Estoy cansado.",
       "accept": [
         "Yo estoy cansado."

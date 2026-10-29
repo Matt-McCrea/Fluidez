@@ -1,18 +1,18 @@
 {
   "id": "sc-u02-b",
   "unit": "u02",
-  "title": "Looking for Mr Ruiz",
-  "brief": "You're Tomás. Rosa's bank has written about the café's account, and you need to see the manager, Mr Ruiz. At the front desk, ask for him, say who you are and where you live, and fix a time.",
+  "title": "Looking for Mr Pardo",
+  "brief": "You're Tomás. Rosa's bank has written about the café's account, and you need to see the manager, Mr Pardo. At the front desk, ask for him, say who you are and where you live, and fix a time. She's a stranger, so keep it polite.",
   "turns": [
     {
       "id": "t1",
       "npc": "Buenos días. A la orden.",
       "npcEn": "Good morning. How can I help?",
-      "intent": "Greet her and ask if Mr Ruiz is in.",
+      "intent": "Greet her and ask if Mr Pardo is in.",
       "accept": [
-        "Buenos días. ¿Está el señor Ruiz?",
-        "Buenos días, ¿el señor Ruiz está?",
-        "Hola, buenos días. Por favor, ¿el señor Ruiz está?"
+        "Buenos días. ¿Está el señor Pardo?",
+        "Buenos días, ¿el señor Pardo está?",
+        "Hola, buenos días. ¿Está el señor Pardo, por favor?"
       ],
       "require": [
         {
@@ -20,8 +20,9 @@
         },
         {
           "type": "regex",
-          "pattern": "\\bel señor ruiz\\b",
-          "flags": "i"
+          "pattern": "\\bel señor pardo\\b",
+          "flags": "i",
+          "label": "talking about him: el señor Pardo"
         },
         {
           "type": "verbForm",
@@ -35,8 +36,8 @@
     },
     {
       "id": "t2",
-      "npc": "El señor Ruiz está en una reunión. ¿Usted es…?",
-      "npcEn": "Mr Ruiz is in a meeting. And you are…?",
+      "npc": "El señor Pardo está en una reunión. ¿Usted es…?",
+      "npcEn": "Mr Pardo is in a meeting. And you are…?",
       "intent": "Say your name is Tomás Herrera and you're from Rosa's café.",
       "accept": [
         "Me llamo Tomás Herrera. Soy del café de Rosa.",
@@ -81,10 +82,10 @@
       "id": "t4",
       "npc": "Gracias. ¿Y dónde vive, señor Herrera?",
       "npcEn": "Thank you. And where do you live, Mr Herrera?",
-      "intent": "Say you live in La Candelaria, on Eleventh Street, at Rosa's café.",
+      "intent": "Say you live in La Candelaria, on Eleventh Street.",
       "accept": [
         "Vivo en La Candelaria, en la calle once.",
-        "Vivo en la calle once, en La Candelaria. En el café de Rosa.",
+        "Vivo en la calle once, en La Candelaria.",
         "En La Candelaria. Vivo en la calle once."
       ],
       "require": [
@@ -104,8 +105,8 @@
     },
     {
       "id": "t5",
-      "npc": "Listo. El señor Ruiz termina la reunión a las once. ¿Está bien a las once y media?",
-      "npcEn": "All right. Mr Ruiz finishes his meeting at eleven. Is half past eleven OK?",
+      "npc": "Listo. El señor Pardo termina la reunión a las once. ¿Está bien a las once y media?",
+      "npcEn": "All right. Mr Pardo finishes his meeting at eleven. Is half past eleven OK?",
       "intent": "Say that's fine and thank her.",
       "accept": [
         "Está bien, muchas gracias.",

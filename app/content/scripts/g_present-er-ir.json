@@ -1,7 +1,7 @@
 {
   "node": "g:present-er-ir",
   "hook": {
-    "line": "Where you live and what you eat are the first two things anyone in Bogotá asks a newcomer. Both verbs end in *-er* or *-ir*, and the good news is they work almost exactly like the *-ar* verbs you already have.",
+    "line": "In Bogotá, the first question after your name is where you live, and the next is whether you've eaten. *Vivir* (to live) and *comer* (to eat) end in *-er* and *-ir*, and the good news is they work almost exactly like the *-ar* verbs you already have.",
     "es": "Vivo en La Candelaria y como en el café de Rosa.",
     "en": "I live in La Candelaria and I eat at Rosa's café."
   },
@@ -66,8 +66,8 @@
       "es": "Vale come a las dos.",
       "options": [
         "Vale eats at two.",
-        "I eat at two with Vale.",
-        "Vale and I eat at two."
+        "Vale and I eat at two.",
+        "You eat at two, Vale."
       ],
       "answer": 0
     },
@@ -99,13 +99,13 @@
       "answer": 0
     },
     {
-      "es": "Tomás cree en el café.",
+      "es": "Tomás no cree en el café.",
       "options": [
-        "I believe in the café.",
-        "Tomás believes in the café.",
-        "Tomás sees the café."
+        "Tomás doesn't believe in the café.",
+        "I don't believe in the café, Tomás.",
+        "Tomás doesn't see the café."
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "es": "¿Ustedes comen pan?",
@@ -120,8 +120,8 @@
       "es": "Vale sabe inglés.",
       "options": [
         "Vale knows English.",
-        "I know English.",
-        "Vale makes English bread."
+        "You know English, Vale.",
+        "I know English."
       ],
       "answer": 0
     }
@@ -194,9 +194,9 @@
       "why": "*Vivo* means I live. For Vale (she), the ending is *-e*: *vive*."
     },
     {
-      "wrong": "Comas pan.",
-      "right": "Comes pan.",
-      "why": "After *-ar* verbs it's tempting to write an *a*, but *-er* verbs take *e*: *comes*, *come*, *comen*."
+      "wrong": "Yo vive en Bogotá.",
+      "right": "Vivo en Bogotá.",
+      "why": "*Vive* is the form you hear most, but it means he or she lives. For I, it's *vivo*."
     }
   ],
   "personal": "Where do you live, and where do you usually eat? Write two short sentences with *vivo* and *como*."
