@@ -6,30 +6,111 @@
     "en": "You're right, Don Hernando."
   },
   "examples": [
-    { "es": "Tienes razón.", "en": "You're right." },
-    { "es": "Usted tiene razón, don Hernando.", "en": "You're right, Don Hernando." },
-    { "es": "Creo que Camila tiene razón.", "en": "I think Camila is right." },
-    { "es": "Vale no tiene razón.", "en": "Vale isn't right." },
-    { "es": "Mi mamá siempre tiene razón.", "en": "My mom is always right." },
-    { "es": "¿Tengo razón o no?", "en": "Am I right or not?" }
+    {
+      "es": "Tienes razón.",
+      "en": "You're right."
+    },
+    {
+      "es": "Usted tiene razón, don Hernando.",
+      "en": "You're right, Don Hernando."
+    },
+    {
+      "es": "Creo que Camila tiene razón.",
+      "en": "I think Camila is right."
+    },
+    {
+      "es": "Vale no tiene razón.",
+      "en": "Vale isn't right."
+    },
+    {
+      "es": "Mi mamá siempre tiene razón.",
+      "en": "My mum is always right."
+    },
+    {
+      "es": "¿Tengo razón o no?",
+      "en": "Am I right or not?"
+    }
   ],
   "rule": "English says you are right. Spanish says you have reason: *tener razón*. The verb is *tener*, in the form for whoever is right:\n\n*tengo razón*: I'm right\n*tienes razón*: you're right (to a friend)\n*tiene razón*: he's or she's right, or you're right to someone you call *usted*\n*tenemos razón*: we're right\n*tienen razón*: they're right, or you all are right\n\nFor not right, put *no* in front: *no tienes razón*. *Razón* itself never changes.",
   "smallPrint": "*Tener razón* is a fixed expression, one of a family where Spanish has and English is, like *tener hambre*.",
   "readAndPick": [
-    { "es": "Tienes razón.", "options": ["I'm right.", "You're right.", "He's right."], "answer": 1 },
-    { "es": "Tengo razón.", "options": ["I'm right.", "You're right.", "We're right."], "answer": 0 },
-    { "es": "Vale no tiene razón.", "options": ["Vale is right.", "Vale has no reason to come.", "Vale isn't right."], "answer": 2 },
-    { "es": "Tenemos razón.", "options": ["They're right.", "You're right.", "We're right."], "answer": 2 },
-    { "es": "Ustedes tienen razón.", "options": ["You all are right.", "They're right.", "We're right."], "answer": 0 },
-    { "es": "Creo que tiene razón.", "options": ["I think I'm right.", "I think he's right."], "answer": 1 },
-    { "es": "Mi mamá siempre tiene razón.", "options": ["My mom is never right.", "My mom is always right."], "answer": 1 },
-    { "es": "¿Tengo razón o no?", "options": ["Am I right or not?", "Are you right or not?"], "answer": 0 }
+    {
+      "es": "Tienes razón.",
+      "options": [
+        "I'm right.",
+        "You're right.",
+        "He's right."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo razón.",
+      "options": [
+        "I'm right.",
+        "You're right.",
+        "We're right."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale no tiene razón.",
+      "options": [
+        "Vale is right.",
+        "Vale has no reason to come.",
+        "Vale isn't right."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tenemos razón.",
+      "options": [
+        "They're right.",
+        "You're right.",
+        "We're right."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ustedes tienen razón.",
+      "options": [
+        "You all are right.",
+        "They're right.",
+        "We're right."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Creo que tiene razón.",
+      "options": [
+        "I think I'm right.",
+        "I think he's right."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi mamá siempre tiene razón.",
+      "options": [
+        "My mum is never right.",
+        "My mum is always right."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Tengo razón o no?",
+      "options": [
+        "Am I right or not?",
+        "Are you right or not?"
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
     {
       "prompt": "To a friend. Choose *tienes* or *eres*: ___ razón. Type the whole sentence.",
       "answer": "Tienes razón.",
-      "accept": ["Tú tienes razón."],
+      "accept": [
+        "Tú tienes razón."
+      ],
       "why": "Right is something you have in Spanish: *tienes*."
     },
     {
@@ -41,20 +122,24 @@
     {
       "prompt": "You're right, Don Hernando. (You call him *usted*.)",
       "answer": "Usted tiene razón, don Hernando.",
-      "accept": ["Tiene razón, don Hernando."],
+      "accept": [
+        "Tiene razón, don Hernando."
+      ],
       "why": "*Usted* takes the same form as he or she: *tiene*."
     },
     {
       "prompt": "I'm right.",
       "answer": "Tengo razón.",
-      "accept": ["Yo tengo razón."],
+      "accept": [
+        "Yo tengo razón."
+      ],
       "why": "The I form of *tener* is *tengo*."
     },
     {
-      "prompt": "My mom is always right.",
+      "prompt": "My mum is always right.",
       "answer": "Mi mamá siempre tiene razón.",
       "accept": [],
-      "why": "*Siempre* goes before the verb, and mom takes *tiene*."
+      "why": "*Siempre* goes before the verb, and mum takes *tiene*."
     },
     {
       "prompt": "Make it negative: *Camila tiene razón.*",
@@ -65,7 +150,9 @@
     {
       "prompt": "Make it about we: *Tengo razón.*",
       "answer": "Tenemos razón.",
-      "accept": ["Nosotros tenemos razón."],
+      "accept": [
+        "Nosotros tenemos razón."
+      ],
       "why": "Only *tener* changes; *razón* stays the same."
     }
   ],

@@ -2,7 +2,7 @@
   {
     "id": "w-u05-01",
     "unit": "u05",
-    "prompt": "Mariana, the journalist, texts you: what do you do on weekends? Answer her in two short sentences, both about you.",
+    "prompt": "Hernando's granddaughter is doing a school project on the barrio and interviews you: what do you do on weekends? Answer in two short sentences, both about you.",
     "minWords": 8,
     "maxWords": 25,
     "constraints": [
@@ -220,22 +220,24 @@
         "n": 2
       }
     ],
-    "model": "En mi familia somos cinco. Mis padres, mi hermana, mi hermano y yo.",
+    "model": "En mi familia somos cinco: mis padres, mi hermana, mi hermano y yo. Todos vivimos en Toronto.",
     "focus": "p:somos-cuatro",
     "requires": [
+      "g:present-er-ir",
       "g:ser-identity",
       "l:familia",
       "l:hermana",
       "l:hermano",
       "l:padres",
       "l:ser",
+      "l:vivir",
       "p:possessives-basic"
     ]
   },
   {
     "id": "w-u05-07",
     "unit": "u05",
-    "prompt": "Camila's mother wants to know if you have a girlfriend or boyfriend. Say you have nobody and you never have time, in two short sentences.",
+    "prompt": "Vale's mother wants to know if you have a girlfriend or boyfriend. Say you have nobody and you never have time, in two short sentences.",
     "minWords": 8,
     "maxWords": 25,
     "constraints": [
@@ -265,7 +267,7 @@
   {
     "id": "w-u05-08",
     "unit": "u05",
-    "prompt": "You are at a birthday with Vale, someone your age. Introduce your cousin to her and say her age and one thing about her, in two sentences.",
+    "prompt": "At a birthday party, introduce your cousin to Vale (use tú). Say your cousin's age and one thing about her, in two sentences.",
     "minWords": 10,
     "maxWords": 30,
     "constraints": [
@@ -303,7 +305,7 @@
   {
     "id": "w-u05-09",
     "unit": "u05",
-    "prompt": "Vale asks if you know her brother. You met him yesterday at the café. Reply in two short sentences.",
+    "prompt": "Vale asks if you know her sister Camila. You met her on a video call. Reply in two short sentences.",
     "minWords": 6,
     "maxWords": 25,
     "constraints": [
@@ -326,7 +328,7 @@
         "n": 2
       }
     ],
-    "model": "Sí, conozco a tu hermano. Es muy buena gente.",
+    "model": "Sí, conozco a tu hermana. Es muy buena gente.",
     "focus": "p:personal-a",
     "requires": [
       "c:buena-gente",
@@ -335,7 +337,7 @@
       "l:buena",
       "l:conocer",
       "l:gente",
-      "l:hermano",
+      "l:hermana",
       "l:ser",
       "p:possessives-basic",
       "p:quantifiers-basic"
@@ -418,7 +420,7 @@
   {
     "id": "w-u05-12",
     "unit": "u05",
-    "prompt": "For the language school form, write your age and your sister's age. Make one of the ages end in 21 or 31 (veintiún, treinta y un).",
+    "prompt": "Write a caption for a family photo you're sending Camila: your age and your sister's age. Make one of the ages end in 21 or 31 (veintiún, treinta y un).",
     "minWords": 8,
     "maxWords": 25,
     "constraints": [

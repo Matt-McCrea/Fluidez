@@ -6,38 +6,164 @@
     "en": "My parents and my brothers and sisters live in Medellín."
   },
   "examples": [
-    { "es": "Mis hermanos viven en Cali.", "en": "My brothers and sisters live in Cali." },
-    { "es": "Mis papás son de Medellín.", "en": "My parents are from Medellín." },
-    { "es": "Mis tíos viven en Bogotá.", "en": "My aunts and uncles live in Bogotá." },
-    { "es": "¿Tus abuelos viven en Toronto?", "en": "Do your grandparents live in Toronto? (to a friend)" },
-    { "es": "Hernando tiene cuatro nietos.", "en": "Hernando has four grandchildren." },
-    { "es": "Tengo tres hermanas.", "en": "I have three sisters." }
+    {
+      "es": "Mis hermanos viven en Cali.",
+      "en": "My brothers and sisters live in Cali."
+    },
+    {
+      "es": "Mis papás son de Medellín.",
+      "en": "My parents are from Medellín."
+    },
+    {
+      "es": "Mis tíos viven en Bogotá.",
+      "en": "My aunts and uncles live in Bogotá."
+    },
+    {
+      "es": "¿Tus abuelos viven en Toronto?",
+      "en": "Do your grandparents live in Toronto? (to a friend)"
+    },
+    {
+      "es": "Hernando tiene seis nietos.",
+      "en": "Hernando has six grandchildren."
+    },
+    {
+      "es": "Tengo tres hermanas.",
+      "en": "I have three sisters."
+    }
   ],
-  "rule": "When a group mixes men and women, Spanish uses the -os form:\n\n*mis hermanos* = my brothers and sisters\n*mis papás* = my parents (mom and dad)\n*mis tíos* = my aunts and uncles\n*mis abuelos* = my grandparents\n\nThe -as form is only for a group of women: *mis hermanas* = my sisters.\n\nSo *Tengo tres hermanos* tells you how many, not who. Three brothers, or two sisters and a brother: same words. If it matters, people ask *¿Hombres o mujeres?*\n\nIn Colombia *mis papás* is the everyday way to say my parents; *mis padres* is a little more formal.",
+  "rule": "When a group mixes men and women, Spanish uses the -os form:\n\n*mis hermanos* = my brothers and sisters\n*mis papás* = my parents (mum and dad)\n*mis tíos* = my aunts and uncles\n*mis abuelos* = my grandparents\n\nThe -as form is only for a group of women: *mis hermanas* = my sisters.\n\nSo *Tengo tres hermanos* tells you how many, not who. Three brothers, or two sisters and a brother: same words. If it matters, people ask *¿Hombres o mujeres?*\n\nIn Colombia *mis papás* is the everyday way to say my parents; *mis padres* is a little more formal.",
   "smallPrint": "Teachers call this the generic masculine (masculino genérico): the masculine plural stands for a mixed group.",
   "readAndPick": [
-    { "es": "Mis hermanas viven en Cali.", "options": ["My brothers and sisters live in Cali.", "My sisters live in Cali."], "answer": 1 },
-    { "es": "Mis papás son de Medellín.", "options": ["My dad is from Medellín.", "My parents are from Medellín.", "My mom is from Medellín."], "answer": 1 },
-    { "es": "Mis tías son muy simpáticas.", "options": ["My aunts are very nice.", "My aunts and uncles are very nice."], "answer": 0 },
-    { "es": "Mis abuelos viven en Boyacá.", "options": ["My grandmothers live in Boyacá.", "My grandfather lives in Boyacá.", "My grandparents live in Boyacá."], "answer": 2 },
-    { "es": "¿Tus primas hablan inglés?", "options": ["Do your cousins (men and women) speak English? (to a friend)", "Do your cousins (all women) speak English? (to a friend)"], "answer": 1 },
-    { "es": "Hernando tiene tres nietas.", "options": ["Hernando has three granddaughters.", "Hernando has three grandchildren."], "answer": 0 },
-    { "es": "Los nietos de Hernando viven en Bogotá.", "options": ["Hernando's granddaughters live in Bogotá.", "Hernando's grandchildren live in Bogotá."], "answer": 1 },
-    { "es": "Mis tíos tienen un café.", "options": ["My uncle has a café.", "My aunts have a café.", "My aunts and uncles have a café."], "answer": 2 }
+    {
+      "es": "Mis hermanas viven en Cali.",
+      "options": [
+        "My brothers and sisters live in Cali.",
+        "My sisters live in Cali."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mis papás son de Medellín.",
+      "options": [
+        "My dad is from Medellín.",
+        "My parents are from Medellín.",
+        "My mum is from Medellín."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mis tías son muy simpáticas.",
+      "options": [
+        "My aunts are very nice.",
+        "My aunts and uncles are very nice."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mis abuelos viven en Boyacá.",
+      "options": [
+        "My grandmothers live in Boyacá.",
+        "My grandfather lives in Boyacá.",
+        "My grandparents live in Boyacá."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Tus primas hablan inglés?",
+      "options": [
+        "Do your cousins (men and women) speak English? (to a friend)",
+        "Do your cousins (all women) speak English? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando tiene tres nietas.",
+      "options": [
+        "Hernando has three granddaughters.",
+        "Hernando has three grandchildren."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los nietos de Hernando viven en Bogotá.",
+      "options": [
+        "Hernando's granddaughters live in Bogotá.",
+        "Hernando's grandchildren live in Bogotá."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mis tíos tienen un café.",
+      "options": [
+        "My uncle has a café.",
+        "My aunts have a café.",
+        "My aunts and uncles have a café."
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *hermanos* or *hermanas* (two brothers and a sister): Tengo tres ___.", "answer": "Tengo tres hermanos.", "accept": [], "why": "One man in the group is enough for *hermanos*." },
-    { "prompt": "Choose *tíos* or *tías* (all of them are women): Mis ___ viven en Cali.", "answer": "Mis tías viven en Cali.", "accept": [], "why": "A group of women only, so *tías*." },
-    { "prompt": "Say: My parents live in Bogotá. Use the everyday Colombian word.", "answer": "Mis papás viven en Bogotá.", "accept": ["Mis padres viven en Bogotá."], "why": "Mom plus dad makes *papás*, the -s form of *papá*." },
-    { "prompt": "Say: My grandparents are from Boyacá.", "answer": "Mis abuelos son de Boyacá.", "accept": [], "why": "Grandma plus grandpa is *abuelos*." },
-    { "prompt": "Ask a friend: Do you have brothers or sisters?", "answer": "¿Tienes hermanos?", "accept": [], "why": "*Hermanos* covers brothers, sisters or both, so one word does the job." },
-    { "prompt": "Your aunt has a husband. Make it about both of them: Mi tía vive en Medellín.", "answer": "Mis tíos viven en Medellín.", "accept": [], "why": "Aunt plus uncle is *tíos*, and *vive* becomes *viven*." },
-    { "prompt": "Make it about all your cousins, men and women: Mi prima es muy divertida.", "answer": "Mis primos son muy divertidos.", "accept": [], "why": "A mixed group takes -os everywhere: *primos* and *divertidos*." }
+    {
+      "prompt": "Choose *hermanos* or *hermanas* (two brothers and a sister): Tengo tres ___.",
+      "answer": "Tengo tres hermanos.",
+      "accept": [],
+      "why": "One man in the group is enough for *hermanos*."
+    },
+    {
+      "prompt": "Choose *tíos* or *tías* (all of them are women): Mis ___ viven en Cali.",
+      "answer": "Mis tías viven en Cali.",
+      "accept": [],
+      "why": "A group of women only, so *tías*."
+    },
+    {
+      "prompt": "Say: My parents live in Bogotá. Use the everyday Colombian word.",
+      "answer": "Mis papás viven en Bogotá.",
+      "accept": [
+        "Mis padres viven en Bogotá."
+      ],
+      "why": "Mum plus dad makes *papás*, the -s form of *papá*."
+    },
+    {
+      "prompt": "Say: My grandparents are from Boyacá.",
+      "answer": "Mis abuelos son de Boyacá.",
+      "accept": [],
+      "why": "Grandma plus grandpa is *abuelos*."
+    },
+    {
+      "prompt": "Ask a friend: Do you have brothers or sisters?",
+      "answer": "¿Tienes hermanos?",
+      "accept": [],
+      "why": "*Hermanos* covers brothers, sisters or both, so one word does the job."
+    },
+    {
+      "prompt": "Your aunt has a husband. Make it about both of them: Mi tía vive en Medellín.",
+      "answer": "Mis tíos viven en Medellín.",
+      "accept": [],
+      "why": "Aunt plus uncle is *tíos*, and *vive* becomes *viven*."
+    },
+    {
+      "prompt": "Make it about all your cousins, men and women: Mi prima es muy divertida.",
+      "answer": "Mis primos son muy divertidos.",
+      "accept": [],
+      "why": "A mixed group takes -os everywhere: *primos* and *divertidos*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Mis hermanas viven en Cali.", "right": "Mis hermanos viven en Cali.", "why": "Almost. With a brother in the group it's *hermanos*; *hermanas* means sisters only." },
-    { "wrong": "Mis parientes viven en Cali.", "right": "Mis papás viven en Cali.", "why": "*Parientes* means relatives. Your parents are *mis papás*." },
-    { "wrong": "Mis tíos son simpático.", "right": "Mis tíos son simpáticos.", "why": "The describing word follows the group: several people, so *simpáticos*." }
+    {
+      "wrong": "Pablo y Ana son mis hermanas.",
+      "right": "Pablo y Ana son mis hermanos.",
+      "why": "Almost. Pablo is a man, so the group is *hermanos*; *hermanas* means sisters only."
+    },
+    {
+      "wrong": "Mis parientes viven en Cali.",
+      "right": "Mis papás viven en Cali.",
+      "why": "*Parientes* means relatives. Your parents are *mis papás*."
+    },
+    {
+      "wrong": "Mis tíos son simpático.",
+      "right": "Mis tíos son simpáticos.",
+      "why": "The describing word follows the group: several people, so *simpáticos*."
+    }
   ],
   "personal": "Write two lines about the groups in your family: your parents, brothers and sisters, grandparents or cousins. Use *mis papás*, *mis hermanos* or *mis abuelos*, and say where they live."
 }

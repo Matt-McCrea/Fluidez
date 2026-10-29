@@ -6,38 +6,168 @@
     "en": "Camila, this is Tomás."
   },
   "examples": [
-    { "es": "Te presento a Vale, una amiga del trabajo.", "en": "This is Vale, a friend from work. (to a friend)" },
-    { "es": "Tomás, te presento a mi hermana Camila.", "en": "Tomás, this is my sister Camila." },
-    { "es": "Mamá, te presento a Tomás.", "en": "Mom, this is Tomás." },
-    { "es": "Te presento a mis papás.", "en": "These are my parents. (to a friend)" },
-    { "es": "Este es mi novio, Andrés.", "en": "This is my boyfriend, Andrés." },
-    { "es": "Mucho gusto.\nIgualmente.", "en": "Nice to meet you.\nLikewise." }
+    {
+      "es": "Te presento a Vale, una amiga del trabajo.",
+      "en": "This is Vale, a friend from work. (to a friend)"
+    },
+    {
+      "es": "Tomás, te presento a mi hermana Camila.",
+      "en": "Tomás, this is my sister Camila."
+    },
+    {
+      "es": "Mamá, te presento a Tomás.",
+      "en": "Mum, this is Tomás."
+    },
+    {
+      "es": "Te presento a mis papás.",
+      "en": "These are my parents. (to a friend)"
+    },
+    {
+      "es": "Este es mi novio, Andrés.",
+      "en": "This is my boyfriend, Andrés."
+    },
+    {
+      "es": "Mucho gusto.\nIgualmente.",
+      "en": "Nice to meet you.\nLikewise."
+    }
   ],
   "rule": "To introduce someone to a friend, say *Te presento a* and the person:\n\n*Te presento a Vale.* = This is Vale.\n*Te presento a mis papás.* = These are my parents.\n\nWord for word it's \"I present to you\". The little *a* is not optional: Spanish puts *a* before a person here. *A* + *el* joins into *al*.\n\nTo someone older or a stranger, it becomes *Le presento a*, with a title and surname: *Le presento al señor Gómez.*\n\nPointing works too: *Este es Andrés* for a man, *Esta es Camila* for a woman.\n\nThe reply is *Mucho gusto*, and the answer to that is *Igualmente*.",
   "smallPrint": "Teachers call the little *a* the personal a (a personal): it marks a person as the one the verb acts on.",
   "readAndPick": [
-    { "es": "Tomás, te presento a Camila.", "options": ["Tomás, this is Camila.", "Camila, this is Tomás."], "answer": 0 },
-    { "es": "Camila, te presento a Tomás.", "options": ["Tomás, this is Camila.", "Camila, this is Tomás."], "answer": 1 },
-    { "es": "Te presento a mi hermana.", "options": ["This is your sister.", "This is my sister.", "I'm your sister."], "answer": 1 },
-    { "es": "Te presento a mis abuelos.", "options": ["This is my grandfather.", "These are your grandparents.", "These are my grandparents."], "answer": 2 },
-    { "es": "Esta es mi novia.", "options": ["This is my girlfriend.", "This is my boyfriend."], "answer": 0 },
-    { "es": "Este es mi tío Carlos.", "options": ["This is my aunt Carlos.", "This is my uncle Carlos."], "answer": 1 },
-    { "es": "Mucho gusto.", "options": ["Nice to meet you.", "Likewise."], "answer": 0 },
-    { "es": "Hernando, te presento a Mariana, una amiga.", "options": ["Mariana, this is Hernando, a friend.", "Hernando, this is Mariana, a friend."], "answer": 1 }
+    {
+      "es": "Tomás, te presento a Camila.",
+      "options": [
+        "Tomás, this is Camila.",
+        "Camila, this is Tomás."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Camila, te presento a Tomás.",
+      "options": [
+        "Tomás, this is Camila.",
+        "Camila, this is Tomás."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te presento a mi hermana.",
+      "options": [
+        "This is your sister.",
+        "This is my sister.",
+        "I'm your sister."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te presento a mis abuelos.",
+      "options": [
+        "This is my grandfather.",
+        "These are your grandparents.",
+        "These are my grandparents."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esta es mi novia.",
+      "options": [
+        "This is my girlfriend.",
+        "This is my boyfriend."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Este es mi tío Carlos.",
+      "options": [
+        "This is my aunt Carlos.",
+        "This is my uncle Carlos."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mucho gusto.",
+      "options": [
+        "Nice to meet you.",
+        "Likewise."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando, te presento a Mariana, una amiga.",
+      "options": [
+        "Mariana, this is Hernando, a friend.",
+        "Hernando, this is Mariana, a friend."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *a* or nothing: Te presento ___ Vale.", "answer": "Te presento a Vale.", "accept": [], "why": "Before a person, Spanish adds *a*." },
-    { "prompt": "Choose *Este* or *Esta*: ___ es mi hermana Camila.", "answer": "Esta es mi hermana Camila.", "accept": [], "why": "Camila is a woman, so *esta*." },
-    { "prompt": "Your friend Tomás hasn't met Vale. Say: Tomás, this is Vale.", "answer": "Tomás, te presento a Vale.", "accept": ["Tomás, esta es Vale."], "why": "*Te presento a* plus the person, to a friend." },
-    { "prompt": "To a friend: This is my brother Andrés.", "answer": "Te presento a mi hermano Andrés.", "accept": ["Este es mi hermano Andrés."], "why": "Say who he is to you, then his name: *mi hermano Andrés*." },
-    { "prompt": "Someone says *Mucho gusto* to you. Answer: Likewise.", "answer": "Igualmente.", "accept": [], "why": "*Igualmente* sends the nice-to-meet-you straight back." },
-    { "prompt": "Make it about both your parents: Te presento a mi papá.", "answer": "Te presento a mis papás.", "accept": ["Te presento a mis padres."], "why": "Mom and dad together are *mis papás*; the *a* stays." },
-    { "prompt": "To a friend, introduce Mr Gómez. Join *a* and *el*: Te presento a el señor Gómez.", "answer": "Te presento al señor Gómez.", "accept": [], "why": "*A* + *el* always becomes *al*." }
+    {
+      "prompt": "Choose *a* or nothing: Te presento ___ Vale.",
+      "answer": "Te presento a Vale.",
+      "accept": [],
+      "why": "Before a person, Spanish adds *a*."
+    },
+    {
+      "prompt": "Choose *Este* or *Esta*: ___ es mi hermana Camila.",
+      "answer": "Esta es mi hermana Camila.",
+      "accept": [],
+      "why": "Camila is a woman, so *esta*."
+    },
+    {
+      "prompt": "Your friend Tomás hasn't met Vale. Say: Tomás, this is Vale.",
+      "answer": "Tomás, te presento a Vale.",
+      "accept": [
+        "Tomás, esta es Vale."
+      ],
+      "why": "*Te presento a* plus the person, to a friend."
+    },
+    {
+      "prompt": "To a friend: This is my brother Andrés.",
+      "answer": "Te presento a mi hermano Andrés.",
+      "accept": [
+        "Este es mi hermano Andrés.",
+        "Te presento a Andrés, mi hermano."
+      ],
+      "why": "Say who he is to you, then his name: *mi hermano Andrés*."
+    },
+    {
+      "prompt": "Someone says *Mucho gusto* to you. Answer: Likewise.",
+      "answer": "Igualmente.",
+      "accept": [],
+      "why": "*Igualmente* sends the nice-to-meet-you straight back."
+    },
+    {
+      "prompt": "Make it about both your parents: Te presento a mi papá.",
+      "answer": "Te presento a mis papás.",
+      "accept": [
+        "Te presento a mis padres."
+      ],
+      "why": "Mum and dad together are *mis papás*; the *a* stays."
+    },
+    {
+      "prompt": "To a friend, introduce Mr Gómez. Join *a* and *el*: Te presento a el señor Gómez.",
+      "answer": "Te presento al señor Gómez.",
+      "accept": [],
+      "why": "*A* + *el* always becomes *al*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Te presento Vale.", "right": "Te presento a Vale.", "why": "Almost. Before a person Spanish needs *a*; without it Vale sounds like a parcel." },
-    { "wrong": "Te presento a el señor Gómez.", "right": "Te presento al señor Gómez.", "why": "*A* and *el* always join into *al*." },
-    { "wrong": "Este es mi hermana.", "right": "Esta es mi hermana.", "why": "For a woman it's *esta*; *este* is for a man." }
+    {
+      "wrong": "Te presento Vale.",
+      "right": "Te presento a Vale.",
+      "why": "Almost. Before a person Spanish needs *a*; without it Vale sounds like a parcel."
+    },
+    {
+      "wrong": "Te presento a el señor Gómez.",
+      "right": "Te presento al señor Gómez.",
+      "why": "*A* and *el* always join into *al*."
+    },
+    {
+      "wrong": "Este es mi hermana.",
+      "right": "Esta es mi hermana.",
+      "why": "For a woman it's *esta*; *este* is for a man."
+    }
   ],
   "personal": "Introduce two people in your life to a friend. Start with *Te presento a* and say who they are to you, like *mi hermana* or *una amiga del trabajo*."
 }

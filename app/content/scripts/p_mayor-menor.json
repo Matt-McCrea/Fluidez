@@ -6,24 +6,100 @@
     "en": "I have an older brother and a younger sister."
   },
   "examples": [
-    { "es": "Mi hermano mayor vive en Cali.", "en": "My older brother lives in Cali." },
-    { "es": "Mi hermana menor tiene veinte años.", "en": "My younger sister is twenty." },
-    { "es": "Soy el menor.", "en": "I'm the youngest." },
-    { "es": "¿Eres el mayor o el menor?\nSoy la mayor.", "en": "Are you the eldest or the youngest?\nI'm the eldest." },
-    { "es": "Mi abuela ya es mayor.", "en": "My grandmother is elderly now." },
-    { "es": "Hernando es un señor mayor.", "en": "Hernando is an older gentleman." }
+    {
+      "es": "Mi hermano mayor vive en Cali.",
+      "en": "My older brother lives in Cali."
+    },
+    {
+      "es": "Mi hermana menor tiene veinte años.",
+      "en": "My younger sister is twenty."
+    },
+    {
+      "es": "Soy el menor.",
+      "en": "I'm the youngest."
+    },
+    {
+      "es": "¿Eres la mayor o la menor?\nSoy la mayor.",
+      "en": "Are you the eldest or the youngest?\nI'm the eldest."
+    },
+    {
+      "es": "Mi abuela ya es mayor.",
+      "en": "My grandmother is elderly now."
+    },
+    {
+      "es": "Hernando es un señor mayor.",
+      "en": "Hernando is an older gentleman."
+    }
   ],
   "rule": "For age order in a family, Spanish uses *mayor* (older) and *menor* (younger). They go after the word, like colours: *mi hermana mayor*, *mi primo menor*. Same form for men and women; add *es* for more than one: *mis primos mayores*.\n\nWith *el* or *la* in front they mean the eldest or the youngest: *Soy el menor*, *Soy la mayor*.\n\nFor an elderly person, *mayor* is the kind word: *un señor mayor*. *Viejo* can sound blunt.",
   "smallPrint": "*Mayor* and *menor* are the old comparison forms of *grande* and *pequeño*. Later you'll use them to compare two people.",
   "readAndPick": [
-    { "es": "Tengo una hermana mayor.", "options": ["I have a younger sister.", "I have an older sister.", "I have an older brother."], "answer": 1 },
-    { "es": "Mi primo menor vive en Cali.", "options": ["My younger cousin lives in Cali.", "My older cousin lives in Cali."], "answer": 0 },
-    { "es": "Soy la mayor.", "options": ["I'm the youngest.", "I'm the eldest."], "answer": 1 },
-    { "es": "Mi abuelo ya es mayor.", "options": ["My grandfather is elderly now.", "My grandfather is the eldest."], "answer": 0 },
-    { "es": "Hernando es un señor mayor.", "options": ["Hernando is a big man.", "Hernando is an older gentleman."], "answer": 1 },
-    { "es": "Mis hermanos menores son muy simpáticos.", "options": ["My younger brother is really nice.", "My older brothers are really nice.", "My younger brothers are really nice."], "answer": 2 },
-    { "es": "¿Eres el mayor?", "options": ["Are you the eldest?", "Are you the youngest?"], "answer": 0 },
-    { "es": "Mi hermana menor tiene diez años.", "options": ["My older sister is ten.", "My younger sister is ten."], "answer": 1 }
+    {
+      "es": "Tengo una hermana mayor.",
+      "options": [
+        "I have a younger sister.",
+        "I have an older sister.",
+        "I have an older brother."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi primo menor vive en Cali.",
+      "options": [
+        "My younger cousin lives in Cali.",
+        "My older cousin lives in Cali."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Soy la mayor.",
+      "options": [
+        "I'm the youngest.",
+        "I'm the eldest."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi abuelo ya es mayor.",
+      "options": [
+        "My grandfather is elderly now.",
+        "My grandfather is the eldest."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando es un señor mayor.",
+      "options": [
+        "Hernando is a big man.",
+        "Hernando is an older gentleman."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mis hermanos menores son muy simpáticos.",
+      "options": [
+        "My younger brother is really nice.",
+        "My older brothers are really nice.",
+        "My younger brothers are really nice."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Eres el mayor?",
+      "options": [
+        "Are you the eldest?",
+        "Are you the youngest?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mi hermana menor tiene diez años.",
+      "options": [
+        "My older sister is ten.",
+        "My younger sister is ten."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
@@ -53,7 +129,9 @@
     {
       "prompt": "My grandmother is elderly now.",
       "answer": "Mi abuela ya es mayor.",
-      "accept": ["Mi abuela es mayor."],
+      "accept": [
+        "Mi abuela es mayor."
+      ],
       "why": "*Mayor* is the polite word for an elderly person; *ya* adds now."
     },
     {
@@ -65,7 +143,9 @@
     {
       "prompt": "Say it the kind way: *Hernando es viejo.*",
       "answer": "Hernando es un señor mayor.",
-      "accept": ["Hernando es mayor."],
+      "accept": [
+        "Hernando es mayor."
+      ],
       "why": "*Viejo* can sound blunt about a person; *mayor* is respectful."
     }
   ],

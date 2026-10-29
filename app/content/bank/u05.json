@@ -1333,7 +1333,7 @@
   },
   {
     "id": "u05-0060",
-    "es": "Mi abuela Rosa tiene un café en la Candelaria.",
+    "es": "Mi abuela Rosa tiene un café en La Candelaria.",
     "en": "My grandmother Rosa has a café in La Candelaria.",
     "accept": [],
     "acceptEn": [],
@@ -2300,18 +2300,21 @@
   },
   {
     "id": "u05-0103",
-    "es": "¿Cómo es el canadiense?\nEs alto, no es bajo.",
-    "en": "What's the Canadian like?\nHe's tall, he's not short.",
+    "es": "¿Cómo es el canadiense?\nEs alto y habla poco.",
+    "en": "What's the Canadian like?\nHe's tall and doesn't say much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:como-es",
       "g:gender-articles",
+      "g:present-ar",
       "g:ser-identity",
       "l:alto",
       "l:canadiense",
       "l:cómo",
-      "l:ser"
+      "l:hablar",
+      "l:ser",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "c:como-es",
@@ -2324,7 +2327,7 @@
   },
   {
     "id": "u05-0104",
-    "es": "¿Cómo es su hija, Don Hernando?",
+    "es": "¿Cómo es su hija, don Hernando?",
     "en": "What's your daughter like, Don Hernando?",
     "accept": [],
     "acceptEn": [],
@@ -3411,19 +3414,17 @@
   },
   {
     "id": "u05-0147",
-    "es": "¿Tiene el pelo largo?\nNo, el pelo es corto.",
-    "en": "Does she have long hair?\nNo, her hair is short.",
+    "es": "¿Tiene el pelo largo?\nNo, tiene el pelo corto.",
+    "en": "Does she have long hair?\nNo, she has short hair.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
-      "g:ser-identity",
       "g:stem-boot",
       "l:corto",
       "l:largo",
       "l:pelo",
-      "l:ser",
       "l:tener"
     ],
     "targets": [
@@ -3793,18 +3794,19 @@
   },
   {
     "id": "u05-0163",
-    "es": "Mi novia tiene el pelo largo, pero hoy tiene el pelo corto.",
-    "en": "My girlfriend has long hair, but today it's short.",
+    "es": "Mi novia tiene el pelo largo y los ojos negros.",
+    "en": "My girlfriend has long hair and dark eyes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:stem-boot",
-      "l:corto",
-      "l:hoy",
       "l:largo",
+      "l:negro",
       "l:novia",
+      "l:ojo",
       "l:pelo",
       "l:tener",
       "p:possessives-basic"
@@ -3869,8 +3871,8 @@
   },
   {
     "id": "u05-0166",
-    "es": "La novia de Tomás es muy linda.",
-    "en": "Tomás's girlfriend is very pretty.",
+    "es": "La novia de mi primo es muy linda.",
+    "en": "My cousin's girlfriend is very pretty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3879,7 +3881,9 @@
       "g:ser-identity",
       "l:lindo",
       "l:novia",
+      "l:primo",
       "l:ser",
+      "p:possessives-basic",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -4067,17 +4071,18 @@
   },
   {
     "id": "u05-0175",
-    "es": "Los hijos de Hernando son guapos.",
-    "en": "Hernando's children are good-looking.",
+    "es": "Para Hernando, todos sus nietos son guapos.",
+    "en": "To Hernando, all his grandchildren are good-looking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "g:gender-articles",
       "g:ser-identity",
       "l:guapo",
-      "l:hijos",
-      "l:ser"
+      "l:nieto",
+      "l:ser",
+      "p:para-inf",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:adjective-agreement"
@@ -4163,7 +4168,7 @@
   {
     "id": "u05-0179",
     "es": "Mi jefe es muy buena gente.",
-    "en": "My boss is really nice people.",
+    "en": "My boss is a really nice guy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4236,7 +4241,7 @@
   {
     "id": "u05-0182",
     "es": "Don Hernando es buena gente, pero habla mucho.",
-    "en": "Don Hernando is nice people, but he talks a lot.",
+    "en": "Don Hernando is a good guy, but he talks a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4340,7 +4345,7 @@
   {
     "id": "u05-0186",
     "es": "Mi abuela es muy buena gente.",
-    "en": "My grandmother is really nice people.",
+    "en": "My grandmother is a lovely person.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4416,7 +4421,7 @@
   {
     "id": "u05-0189",
     "es": "La familia de Vale es muy buena gente.",
-    "en": "Vale's family is really nice people.",
+    "en": "Vale's family are really lovely people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4442,7 +4447,7 @@
   {
     "id": "u05-0190",
     "es": "¿Conoces a Camila?\nSí, es muy buena gente.",
-    "en": "Do you know Camila?\nYes, she's really nice people.",
+    "en": "Do you know Camila?\nYes, she's really nice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4467,7 +4472,7 @@
   {
     "id": "u05-0191",
     "es": "Conozco a tu primo y es muy buena gente.",
-    "en": "I know your cousin and he's really nice people.",
+    "en": "I know your cousin and he's a really nice guy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4495,8 +4500,8 @@
   },
   {
     "id": "u05-0192",
-    "es": "Tu novia es buena gente, Tomás.",
-    "en": "Your girlfriend is good people, Tomás.",
+    "es": "Tu novia es buena gente, Andrés.",
+    "en": "Your girlfriend is a good person, Andrés.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8109,18 +8114,18 @@
   },
   {
     "id": "u05-0349",
-    "es": "¿Cuál es la edad de tus hijos?",
-    "en": "What are your children's ages?",
+    "es": "¿Qué edad tienen tus hijos?",
+    "en": "How old are your children?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:tienes",
       "g:questions",
-      "g:ser-identity",
-      "l:cuál",
+      "g:stem-boot",
       "l:edad",
       "l:hijos",
-      "l:ser",
+      "l:qué",
+      "l:tener",
       "p:possessives-basic"
     ],
     "targets": [
@@ -8242,12 +8247,13 @@
   },
   {
     "id": "u05-0354",
-    "es": "Mi hermana mayor vive en Cali.",
-    "en": "My older sister lives in Cali.",
+    "es": "Mi hermana mayor vive en Barranquilla con su esposo.",
+    "en": "My older sister lives in Barranquilla with her husband.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-er-ir",
+      "l:esposo",
       "l:hermana",
       "l:mayor",
       "l:vivir",
@@ -8441,12 +8447,14 @@
   },
   {
     "id": "u05-0363",
-    "es": "Vale es menor; Tomás es mayor.",
-    "en": "Vale is the younger one; Tomás is the older one.",
+    "es": "Hernando es el mayor del café; Vale es la menor.",
+    "en": "Hernando is the oldest at the café; Vale is the youngest.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
+      "l:café",
       "l:mayor",
       "l:menor",
       "l:ser"
@@ -8697,24 +8705,23 @@
   },
   {
     "id": "u05-0373",
-    "es": "¿Tu prima es mayor o menor?",
-    "en": "Is your cousin older or younger?",
+    "es": "Tengo una prima mayor y dos primos menores.",
+    "en": "I have an older cousin and two younger cousins.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
+      "c:tengo",
+      "g:gender-articles",
+      "g:yo-irregular",
       "l:mayor",
-      "l:menor",
+      "l:menores",
       "l:prima",
-      "l:ser",
-      "p:mayor-menor",
-      "p:possessives-basic"
+      "l:primo",
+      "l:tener"
     ],
     "targets": [
-      "l:mayor",
-      "l:menor",
       "l:prima",
-      "p:mayor-menor"
+      "l:mayor"
     ],
     "kind": "question",
     "unit": "u05",
@@ -8863,8 +8870,8 @@
   },
   {
     "id": "u05-0380",
-    "es": "El hermano mayor de Vale vive en Cali.",
-    "en": "Vale's older brother lives in Cali.",
+    "es": "El hermano mayor de mi novia vive en Cali.",
+    "en": "My girlfriend's older brother lives in Cali.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8872,7 +8879,9 @@
       "g:present-er-ir",
       "l:hermano",
       "l:mayor",
-      "l:vivir"
+      "l:novia",
+      "l:vivir",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:hermano",
@@ -8907,20 +8916,18 @@
   },
   {
     "id": "u05-0382",
-    "es": "En mi familia somos cuatro.",
-    "en": "There are four of us in my family.",
+    "es": "En mi familia somos siete.",
+    "en": "There are seven of us in my family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
       "l:familia",
       "l:ser",
-      "p:possessives-basic",
-      "p:somos-cuatro"
+      "p:possessives-basic"
     ],
     "targets": [
-      "l:familia",
-      "p:somos-cuatro"
+      "l:familia"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -8929,20 +8936,19 @@
   },
   {
     "id": "u05-0383",
-    "es": "En mi casa somos cuatro.",
-    "en": "There are four of us at home.",
+    "es": "En mi casa somos tres y un gato.",
+    "en": "There are three of us at home, plus a cat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
       "l:casa",
+      "l:gato",
       "l:ser",
-      "p:possessives-basic",
-      "p:somos-cuatro"
+      "p:possessives-basic"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9039,8 +9045,8 @@
   },
   {
     "id": "u05-0388",
-    "es": "¿Cuántos son en tu casa?\nSomos cuatro.",
-    "en": "How many of you are there at home?\nThere are four of us.",
+    "es": "¿Cuántos son en tu casa?\nSomos muchos: once.",
+    "en": "How many of you are there at home?\nLots of us: eleven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9050,11 +9056,9 @@
       "l:cuánto",
       "l:ser",
       "p:possessives-basic",
-      "p:somos-cuatro"
+      "p:quantifiers-basic"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9062,20 +9066,18 @@
   },
   {
     "id": "u05-0389",
-    "es": "¿Cuántos son?\nSomos cuatro.",
-    "en": "How many of you are there?\nThere are four of us.",
+    "es": "¿Cuántos son?\nSomos dos, gracias.",
+    "en": "How many of you are there?\nThere are two of us, thanks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
       "g:questions",
       "g:ser-identity",
       "l:cuánto",
-      "l:ser",
-      "p:somos-cuatro"
+      "l:ser"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9083,8 +9085,8 @@
   },
   {
     "id": "u05-0390",
-    "es": "¿Cuántos son ustedes?\nSomos cuatro, señor.",
-    "en": "How many are you?\nThere are four of us, sir.",
+    "es": "¿Cuántos son ustedes?\nSomos veinte, señor.",
+    "en": "How many of you are there?\nThere are twenty of us, sir.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9092,12 +9094,9 @@
       "g:ser-identity",
       "l:cuánto",
       "l:ser",
-      "l:señor",
-      "p:somos-cuatro"
+      "l:señor"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9128,22 +9127,20 @@
   },
   {
     "id": "u05-0392",
-    "es": "Somos cuatro y queremos una mesa.",
-    "en": "There are four of us and we'd like a table.",
+    "es": "Somos ocho y queremos una mesa grande.",
+    "en": "There are eight of us and we'd like a big table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
       "g:ser-identity",
+      "l:grande",
       "l:mesa",
       "l:querer",
-      "l:ser",
-      "p:somos-cuatro"
+      "l:ser"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9151,21 +9148,20 @@
   },
   {
     "id": "u05-0393",
-    "es": "Somos cuatro en el café hoy.",
-    "en": "There are four of us in the café today.",
+    "es": "Hoy en el café somos tres; Vale no viene.",
+    "en": "Today there are three of us at the café; Vale isn't coming.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "g:stem-boot",
       "l:café",
       "l:hoy",
       "l:ser",
-      "p:somos-cuatro"
+      "l:venir"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9173,21 +9169,17 @@
   },
   {
     "id": "u05-0394",
-    "es": "Somos solo cuatro en la familia.",
-    "en": "There are only four of us in the family.",
+    "es": "Somos solo dos: mi mamá y yo.",
+    "en": "There are only two of us: my mum and me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:ser-identity",
-      "l:familia",
+      "l:mamá",
       "l:ser",
-      "p:somos-cuatro"
+      "p:possessives-basic"
     ],
-    "targets": [
-      "l:familia",
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9219,20 +9211,18 @@
   },
   {
     "id": "u05-0396",
-    "es": "Somos cuatro en el carro.",
-    "en": "There are four of us in the car.",
+    "es": "Somos cinco en un carro pequeño.",
+    "en": "There are five of us in a small car.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:carro",
-      "l:ser",
-      "p:somos-cuatro"
+      "l:pequeño",
+      "l:ser"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9262,19 +9252,19 @@
   },
   {
     "id": "u05-0398",
-    "es": "Somos cuatro primos en Bogotá.",
-    "en": "There are four of us cousins in Bogotá.",
+    "es": "Somos doce primos y todos vivimos en Bogotá.",
+    "en": "There are twelve of us cousins and we all live in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:present-er-ir",
       "g:ser-identity",
       "l:primo",
       "l:ser",
-      "p:somos-cuatro"
+      "l:vivir"
     ],
     "targets": [
-      "l:primo",
-      "p:somos-cuatro"
+      "l:primo"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -9345,8 +9335,8 @@
   },
   {
     "id": "u05-0402",
-    "es": "En mi clase de español somos cuatro.",
-    "en": "In my Spanish class there are four of us.",
+    "es": "En mi clase de español somos nueve.",
+    "en": "There are nine of us in my Spanish class.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9354,12 +9344,9 @@
       "l:clase",
       "l:español",
       "l:ser",
-      "p:possessives-basic",
-      "p:somos-cuatro"
+      "p:possessives-basic"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9367,20 +9354,17 @@
   },
   {
     "id": "u05-0403",
-    "es": "Somos cuatro en la oficina.",
-    "en": "There are four of us in the office.",
+    "es": "En la oficina somos treinta.",
+    "en": "There are thirty of us in the office.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:oficina",
-      "l:ser",
-      "p:somos-cuatro"
+      "l:ser"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9388,21 +9372,15 @@
   },
   {
     "id": "u05-0404",
-    "es": "Con mi abuela, somos cuatro.",
-    "en": "With my grandmother, there are four of us.",
+    "es": "Sin Simón, somos tres.",
+    "en": "Without Simón, there are three of us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:abuela",
-      "l:ser",
-      "p:possessives-basic",
-      "p:somos-cuatro"
+      "l:ser"
     ],
-    "targets": [
-      "l:abuela",
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9410,8 +9388,8 @@
   },
   {
     "id": "u05-0405",
-    "es": "Los sábados somos cuatro en el café.",
-    "en": "On Saturdays there are four of us in the café.",
+    "es": "Los sábados en el café somos muchos.",
+    "en": "On Saturdays there are lots of us at the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9420,11 +9398,9 @@
       "l:café",
       "l:ser",
       "l:sábado",
-      "p:somos-cuatro"
+      "p:quantifiers-basic"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9432,20 +9408,20 @@
   },
   {
     "id": "u05-0406",
-    "es": "En la foto somos cuatro.",
-    "en": "In the photo there are four of us.",
+    "es": "En la foto somos seis: mis papás, mis hermanas y yo.",
+    "en": "In the photo there are six of us: my parents, my sisters and me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:foto",
+      "l:hermana",
+      "l:papá",
       "l:ser",
-      "p:somos-cuatro"
+      "p:possessives-basic"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "there are four of us",
@@ -9899,17 +9875,15 @@
   },
   {
     "id": "u05-0427",
-    "es": "Quiero presentar a mi novia, Sofía.",
-    "en": "I want to introduce my girlfriend, Sofía.",
+    "es": "Mamá, te presento a mi novia, Sofía.",
+    "en": "Mum, this is my girlfriend, Sofía.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
-      "g:stem-boot",
-      "g:verb-infinitive",
+      "g:present-ar",
       "l:novia",
       "l:presentar",
-      "l:querer",
+      "p:me-te-nos-objects",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9923,8 +9897,8 @@
   },
   {
     "id": "u05-0428",
-    "es": "Presento a Tomás, el nuevo dueño del café.",
-    "en": "I present Tomás, the café's new owner.",
+    "es": "Hernando presenta a Tomás: «el nuevo dueño del café».",
+    "en": "Hernando introduces Tomás: «the café's new owner».",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10179,7 +10153,7 @@
   },
   {
     "id": "u05-0439",
-    "es": "Hernando presenta a su hija con todos los clientes.",
+    "es": "Hernando presenta a su hija a todos los clientes.",
     "en": "Hernando introduces his daughter to all the customers.",
     "accept": [],
     "acceptEn": [],
@@ -10225,16 +10199,17 @@
   },
   {
     "id": "u05-0441",
-    "es": "Presento a mi familia en una foto.",
-    "en": "I introduce my family in a photo.",
+    "es": "Con esta foto te presento a mi familia.",
+    "en": "With this photo, let me introduce you to my family. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
       "l:familia",
       "l:foto",
       "l:presentar",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10951,19 +10926,17 @@
   },
   {
     "id": "u05-0475",
-    "es": "Esperamos a la mamá de Vale.",
-    "en": "We're waiting for Vale's mum.",
+    "es": "Esperamos a los abuelos de Vale.",
+    "en": "We're waiting for Vale's grandparents.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:esperar",
-      "l:mamá"
+      "l:abuelos",
+      "l:esperar"
     ],
-    "targets": [
-      "l:mamá"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "people need a",
@@ -11501,7 +11474,7 @@
   {
     "id": "u05-0501",
     "es": "Es el café de la familia de Rosa.",
-    "en": "It's the café of Rosa's family.",
+    "en": "It's Rosa's family's café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11587,7 +11560,7 @@
   {
     "id": "u05-0505",
     "es": "Esta es la novia del primo de Vale.",
-    "en": "This is the girlfriend of Vale's cousin.",
+    "en": "This is Vale's cousin's girlfriend.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11747,15 +11720,15 @@
   },
   {
     "id": "u05-0512",
-    "es": "El café de Rosa es la casa de Tomás.",
-    "en": "Rosa's café is Tomás's house.",
+    "es": "El café de Rosa ahora es de Tomás.",
+    "en": "Rosa's café is Tomás's now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:ahora",
       "l:café",
-      "l:casa",
       "l:ser"
     ],
     "targets": [],
@@ -12045,7 +12018,7 @@
   {
     "id": "u05-0526",
     "es": "Quedan pocos días en Bogotá.",
-    "en": "There are few days left in Bogotá.",
+    "en": "There are only a few days left in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12532,7 +12505,7 @@
   {
     "id": "u05-0548",
     "es": "No digo nada porque estoy nervioso.",
-    "en": "I don't say anything because I'm nervous.",
+    "en": "I don't say anything because I'm nervous. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12854,18 +12827,20 @@
   },
   {
     "id": "u05-0562",
-    "es": "¿Qué hay en la foto?\nNo hay nada.",
-    "en": "What's in the photo?\nThere's nothing.",
+    "es": "¿Qué hay en la cuenta del banco?\nNada. No hay nada.",
+    "en": "What's in the bank account?\nNothing. There's nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
+      "c:la-cuenta",
       "c:no-hay-nada",
       "g:gender-articles",
       "g:hay-vs-esta",
       "g:negation-words",
       "g:questions",
-      "l:foto",
+      "l:banco",
+      "l:cuenta",
       "l:qué"
     ],
     "targets": [
@@ -13394,16 +13369,16 @@
   },
   {
     "id": "u05-0587",
-    "es": "No trabajo nunca los domingos.",
-    "en": "I never work on Sundays.",
+    "es": "Rosa no cerró nunca el café.",
+    "en": "Rosa never closed the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:negation-words",
-      "g:present-ar",
-      "l:domingo",
-      "l:trabajar"
+      "g:preterite-ar",
+      "l:café",
+      "l:cerrar"
     ],
     "targets": [
       "g:negation-words"
@@ -13415,15 +13390,17 @@
   },
   {
     "id": "u05-0588",
-    "es": "Nunca trabajo los lunes.",
-    "en": "I never work on Mondays.",
+    "es": "Mi abuelo nunca lleva el celular.",
+    "en": "My grandfather never takes his phone with him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:lunes",
-      "l:trabajar"
+      "l:abuelo",
+      "l:celular",
+      "l:llevar",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -13476,14 +13453,15 @@
   },
   {
     "id": "u05-0591",
-    "es": "Nunca llamo a mi tía.",
-    "en": "I never call my aunt.",
+    "es": "Mi tía nunca me llama.",
+    "en": "My aunt never calls me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
       "l:llamar",
       "l:tía",
+      "p:me-te-nos-objects",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13738,14 +13716,14 @@
   },
   {
     "id": "u05-0604",
-    "es": "Tomás nunca habla con su abuela.",
-    "en": "Tomás never talks to his grandmother.",
+    "es": "Tomás nunca visitó a su abuela en Bogotá.",
+    "en": "Tomás never visited his grandmother in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:preterite-ar",
       "l:abuela",
-      "l:hablar",
+      "l:visitar",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13797,21 +13775,18 @@
   },
   {
     "id": "u05-0607",
-    "es": "Vale no habla nunca de su familia.",
-    "en": "Vale never talks about her family.",
+    "es": "Vale nunca toma tinto por la tarde.",
+    "en": "Vale never drinks coffee in the afternoon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negation-words",
+      "g:gender-articles",
       "g:present-ar",
-      "l:familia",
-      "l:hablar",
-      "p:possessives-basic"
+      "l:tarde",
+      "l:tinto",
+      "l:tomar"
     ],
-    "targets": [
-      "g:negation-words",
-      "l:familia"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "nobody, nothing, never",
@@ -13920,14 +13895,14 @@
   },
   {
     "id": "u05-0613",
-    "es": "Simón no habla con nadie.",
-    "en": "Simón doesn't talk to anyone.",
+    "es": "Simón no quiere a nadie, solo a Vale.",
+    "en": "Simón doesn't love anyone, only Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:negation-words",
-      "g:present-ar",
-      "l:hablar"
+      "g:stem-boot",
+      "l:querer"
     ],
     "targets": [
       "g:negation-words"
@@ -13939,22 +13914,22 @@
   },
   {
     "id": "u05-0614",
-    "es": "Mi abuela no habla nunca de su familia.",
-    "en": "My grandmother never talks about her family.",
+    "es": "Mi abuela no habla nunca de su edad.",
+    "en": "My grandmother never talks about her age.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:negation-words",
       "g:present-ar",
       "l:abuela",
-      "l:familia",
+      "l:edad",
       "l:hablar",
       "p:possessives-basic"
     ],
     "targets": [
       "g:negation-words",
       "l:abuela",
-      "l:familia"
+      "l:edad"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -14189,16 +14164,16 @@
   },
   {
     "id": "u05-0626",
-    "es": "Nadie trabaja los domingos en el café.",
-    "en": "Nobody works on Sundays at the café.",
+    "es": "Nadie llega temprano los lunes.",
+    "en": "Nobody arrives early on Mondays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:café",
-      "l:domingo",
-      "l:trabajar"
+      "l:llegar",
+      "l:lunes",
+      "l:temprano"
     ],
     "targets": [],
     "kind": "statement",
@@ -14364,14 +14339,14 @@
   },
   {
     "id": "u05-0635",
-    "es": "¿Qué haces?\nNada, nada.",
-    "en": "What are you doing?\nNothing, nothing.",
+    "es": "¿Qué compraste?\nNada, nada.",
+    "en": "What did you buy?\nNothing, nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-er-ir",
+      "g:preterite-ar",
       "g:questions",
-      "l:hacer",
+      "l:comprar",
       "l:qué"
     ],
     "targets": [],
@@ -14616,8 +14591,8 @@
   },
   {
     "id": "u05-0648",
-    "es": "Tomás no tiene hermanos.\nVale tampoco.",
-    "en": "Tomás doesn't have any brothers or sisters.\nNeither does Vale.",
+    "es": "Tomás no tiene hermanos.\nMariana tampoco.",
+    "en": "Tomás doesn't have any brothers or sisters.\nNeither does Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14716,8 +14691,8 @@
   },
   {
     "id": "u05-0653",
-    "es": "No tengo hermanos, ni primos tampoco.",
-    "en": "I don't have brothers or sisters, or cousins either.",
+    "es": "No tengo hermanos. Y no tengo primos tampoco.",
+    "en": "I don't have any brothers or sisters. And I don't have cousins either.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15105,7 +15080,7 @@
   {
     "id": "u05-0671",
     "es": "No tengo ninguna foto de mi abuelo.",
-    "en": "I don't have any photo of my grandfather.",
+    "en": "I don't have a single photo of my grandfather.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15423,7 +15398,7 @@
   },
   {
     "id": "u05-0686",
-    "es": "Usted nunca paga el tinto, Don Hernando.",
+    "es": "Usted nunca paga el tinto, don Hernando.",
     "en": "You never pay for your coffee, Don Hernando.",
     "accept": [],
     "acceptEn": [],
@@ -15592,16 +15567,19 @@
   },
   {
     "id": "u05-0695",
-    "es": "Nuestro hijo tiene cinco años.",
-    "en": "Our son is five.",
+    "es": "Pablo es nuestro hijo; tiene cinco años.",
+    "en": "Pablo is our son; he's five.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:possessives",
+      "g:ser-identity",
       "g:stem-boot",
       "l:año",
       "l:hijo",
+      "l:pablo",
+      "l:ser",
       "l:tener",
       "p:tener-anos"
     ],
@@ -15690,17 +15668,22 @@
   },
   {
     "id": "u05-0699",
-    "es": "Nuestro abuelo tiene ochenta años.",
-    "en": "Our grandfather is eighty.",
+    "es": "El viernes es la fiesta de nuestro abuelo: tiene ochenta años.",
+    "en": "On Friday it's our grandfather's party: he's eighty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:gender-articles",
       "g:possessives",
+      "g:ser-identity",
       "g:stem-boot",
       "l:abuelo",
       "l:año",
+      "l:fiesta",
+      "l:ser",
       "l:tener",
+      "l:viernes",
       "p:tener-anos"
     ],
     "targets": [
@@ -15758,8 +15741,8 @@
   },
   {
     "id": "u05-0702",
-    "es": "Nuestro tío Jaime vive en Toronto.",
-    "en": "Our uncle Jaime lives in Toronto.",
+    "es": "Nuestro tío vive solo en Toronto.",
+    "en": "Our uncle lives alone in Toronto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15826,26 +15809,25 @@
   },
   {
     "id": "u05-0705",
-    "es": "Nuestros primos son rubios y muy altos.",
-    "en": "Our cousins are blond and very tall.",
+    "es": "Somos morenos, pero nuestros primos son rubios.",
+    "en": "We're dark-haired, but our cousins are blond.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:possessives",
       "g:ser-identity",
-      "l:alto",
+      "l:moreno",
       "l:primo",
       "l:rubio",
-      "l:ser",
-      "p:quantifiers-basic"
+      "l:ser"
     ],
     "targets": [
       "g:adjective-agreement",
       "g:possessives",
-      "l:alto",
       "l:primo",
-      "l:rubio"
+      "l:rubio",
+      "l:moreno"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -15877,23 +15859,24 @@
   },
   {
     "id": "u05-0707",
-    "es": "Nuestro papá es alto y delgado.",
-    "en": "Our dad is tall and thin.",
+    "es": "Mi hermano y yo somos bajos, como nuestro papá.",
+    "en": "My brother and I are short, like our dad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:possessives",
       "g:ser-identity",
-      "l:alto",
-      "l:delgado",
+      "l:bajo",
+      "l:hermano",
       "l:papá",
-      "l:ser"
+      "l:ser",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:possessives",
-      "l:alto",
-      "l:delgado",
-      "l:papá"
+      "l:papá",
+      "l:bajo"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -15929,23 +15912,20 @@
   },
   {
     "id": "u05-0709",
-    "es": "Nuestros papás tienen sesenta años.",
-    "en": "Our parents are sixty.",
+    "es": "Hoy nuestros papás están en Cartagena.",
+    "en": "Today our parents are in Cartagena.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
+      "g:estar-location-states",
       "g:possessives",
-      "g:stem-boot",
-      "l:año",
-      "l:papá",
-      "l:tener",
-      "p:tener-anos"
+      "l:estar",
+      "l:hoy",
+      "l:papá"
     ],
     "targets": [
       "g:possessives",
-      "l:papá",
-      "p:tener-anos"
+      "l:papá"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -16004,13 +15984,15 @@
   },
   {
     "id": "u05-0712",
-    "es": "Nuestros hermanos no hablan inglés.",
-    "en": "Our brothers and sisters don't speak English.",
+    "es": "En casa, nuestros hermanos hablan inglés y español.",
+    "en": "At home, our brothers and sisters speak English and Spanish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:possessives",
       "g:present-ar",
+      "l:casa",
+      "l:español",
       "l:hablar",
       "l:hermanos",
       "l:inglés"
@@ -16049,13 +16031,15 @@
   },
   {
     "id": "u05-0714",
-    "es": "Nuestro gato es perezoso.",
-    "en": "Our cat is lazy.",
+    "es": "El perezoso de la casa es nuestro gato.",
+    "en": "The lazy one in the house is our cat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:possessives",
       "g:ser-identity",
+      "l:casa",
       "l:gato",
       "l:perezoso",
       "l:ser"
@@ -16071,23 +16055,26 @@
   },
   {
     "id": "u05-0715",
-    "es": "Nuestro padre es serio y trabajador.",
-    "en": "Our father is serious and hard-working.",
+    "es": "Mi hermana y yo hablamos mucho, pero nuestro padre es serio.",
+    "en": "My sister and I talk a lot, but our father is serious.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:possessives",
+      "g:present-ar",
       "g:ser-identity",
+      "l:hablar",
+      "l:hermana",
       "l:padre",
       "l:ser",
       "l:serio",
-      "l:trabajador"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:possessives",
       "l:padre",
-      "l:serio",
-      "l:trabajador"
+      "l:serio"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -16205,15 +16192,17 @@
   },
   {
     "id": "u05-0720",
-    "es": "Nuestra familia viene de Boyacá.",
-    "en": "Our family comes from Boyacá.",
+    "es": "Toda nuestra familia habla muy rápido.",
+    "en": "Our whole family talks very fast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:possessives",
-      "g:stem-boot",
+      "g:present-ar",
       "l:familia",
-      "l:venir"
+      "l:hablar",
+      "l:rápido",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:possessives",
@@ -16272,22 +16261,21 @@
   },
   {
     "id": "u05-0723",
-    "es": "Nuestro álbum de fotos es muy viejo.",
-    "en": "Our photo album is very old.",
+    "es": "En el álbum hay fotos de nuestros abuelos.",
+    "en": "In the album there are photos of our grandparents.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
       "g:possessives",
-      "g:ser-identity",
+      "l:abuelos",
       "l:foto",
-      "l:ser",
-      "l:viejo",
-      "l:álbum",
-      "p:quantifiers-basic"
+      "l:álbum"
     ],
     "targets": [
-      "g:possessives",
-      "l:viejo"
+      "g:possessives"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -16296,14 +16284,16 @@
   },
   {
     "id": "u05-0724",
-    "es": "Nuestras fotos son de Cartagena.",
-    "en": "Our photos are from Cartagena.",
+    "es": "Las fotos son de nuestro paseo a Cartagena.",
+    "en": "The photos are from our trip to Cartagena.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:possessives",
       "g:ser-identity",
       "l:foto",
+      "l:paseo",
       "l:ser"
     ],
     "targets": [
@@ -16339,8 +16329,8 @@
   },
   {
     "id": "u05-0726",
-    "es": "Mis papás y nuestros tíos llegan hoy.",
-    "en": "My parents and our aunt and uncle arrive today.",
+    "es": "Hoy llegan nuestros tíos de Cali.",
+    "en": "Our aunt and uncle from Cali arrive today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16348,13 +16338,10 @@
       "g:present-ar",
       "l:hoy",
       "l:llegar",
-      "l:papá",
-      "l:tío",
-      "p:possessives-basic"
+      "l:tío"
     ],
     "targets": [
       "g:possessives",
-      "l:papá",
       "l:tío"
     ],
     "kind": "statement",
@@ -16364,17 +16351,16 @@
   },
   {
     "id": "u05-0727",
-    "es": "Nuestra casa en Cali es muy grande.",
-    "en": "Our house in Cali is very big.",
+    "es": "En Cali, nuestra casa es azul.",
+    "en": "In Cali, our house is blue.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:possessives",
       "g:ser-identity",
+      "l:azul",
       "l:casa",
-      "l:grande",
-      "l:ser",
-      "p:quantifiers-basic"
+      "l:ser"
     ],
     "targets": [
       "g:possessives"
@@ -16386,16 +16372,20 @@
   },
   {
     "id": "u05-0728",
-    "es": "Nuestro café está en La Candelaria.",
-    "en": "Our café is in La Candelaria.",
+    "es": "Nuestro café es pequeño, pero siempre está lleno.",
+    "en": "Our café is small, but it's always full.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:gender-articles",
       "g:possessives",
+      "g:ser-identity",
       "l:café",
-      "l:estar"
+      "l:estar",
+      "l:lleno",
+      "l:pequeño",
+      "l:ser",
+      "l:siempre"
     ],
     "targets": [
       "g:possessives"
@@ -16451,8 +16441,8 @@
   },
   {
     "id": "u05-0731",
-    "es": "Nuestro café no abre los lunes.",
-    "en": "Our café doesn't open on Mondays.",
+    "es": "¿Abre nuestro café los lunes?\nNo, nunca.",
+    "en": "Does our café open on Mondays?\nNo, never.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16473,17 +16463,17 @@
   },
   {
     "id": "u05-0732",
-    "es": "Nuestro tinto es muy bueno.",
-    "en": "Our black coffee is very good.",
+    "es": "Para Hernando, nuestro tinto es como el de Rosa.",
+    "en": "For Hernando, our coffee is like Rosa's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:possessives",
       "g:ser-identity",
-      "l:bueno",
       "l:ser",
       "l:tinto",
-      "p:quantifiers-basic"
+      "p:para-inf"
     ],
     "targets": [
       "g:possessives"
@@ -16495,15 +16485,15 @@
   },
   {
     "id": "u05-0733",
-    "es": "Nuestro pan es de Vale.",
-    "en": "Our bread is Vale's.",
+    "es": "Vale hace nuestro pan.",
+    "en": "Vale makes our bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:possessives",
-      "g:ser-identity",
-      "l:pan",
-      "l:ser"
+      "g:present-er-ir",
+      "l:hacer",
+      "l:pan"
     ],
     "targets": [
       "g:possessives"
@@ -16515,16 +16505,16 @@
   },
   {
     "id": "u05-0734",
-    "es": "Nuestro pan es muy bueno.",
-    "en": "Our bread is very good.",
+    "es": "¿Te gusta nuestro pan?\nSí, mucho.",
+    "en": "Do you like our bread?\nYes, a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-gusta",
+      "g:gustar-basic",
       "g:possessives",
-      "g:ser-identity",
-      "l:bueno",
+      "l:gustar",
       "l:pan",
-      "l:ser",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -16558,17 +16548,17 @@
   },
   {
     "id": "u05-0736",
-    "es": "Nuestra mesa está en la plaza.",
-    "en": "Our table is in the square.",
+    "es": "Hoy nuestra mesa está libre.",
+    "en": "Today our table is free.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:gender-articles",
       "g:possessives",
       "l:estar",
-      "l:mesa",
-      "l:plaza"
+      "l:hoy",
+      "l:libre",
+      "l:mesa"
     ],
     "targets": [
       "g:possessives"
@@ -16648,16 +16638,17 @@
   },
   {
     "id": "u05-0740",
-    "es": "Nuestros clientes llegan temprano.",
-    "en": "Our customers arrive early.",
+    "es": "Muchos de nuestros clientes llegan a las seis.",
+    "en": "Many of our customers arrive at six.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:possessives",
       "g:present-ar",
       "l:cliente",
       "l:llegar",
-      "l:temprano"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:possessives"
@@ -16757,8 +16748,8 @@
   },
   {
     "id": "u05-0745",
-    "es": "Nuestra ciudad es grande y fría.",
-    "en": "Our city is big and cold.",
+    "es": "Bogotá es nuestra ciudad: grande y fría.",
+    "en": "Bogotá is our city: big and cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16779,17 +16770,16 @@
   },
   {
     "id": "u05-0746",
-    "es": "Nuestro país es muy bonito.",
-    "en": "Our country is very pretty.",
+    "es": "¿Te gusta nuestro país?",
+    "en": "Do you like our country? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-gusta",
+      "g:gustar-basic",
       "g:possessives",
-      "g:ser-identity",
-      "l:bonito",
-      "l:país",
-      "l:ser",
-      "p:quantifiers-basic"
+      "l:gustar",
+      "l:país"
     ],
     "targets": [
       "g:possessives"
@@ -16844,22 +16834,23 @@
   },
   {
     "id": "u05-0749",
-    "es": "Nuestro carro es viejo, pero funciona.",
-    "en": "Our car is old, but it works.",
+    "es": "Nuestro carro tiene veinte años, pero funciona.",
+    "en": "Our car is twenty years old, but it works.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:possessives",
       "g:present-ar",
-      "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
       "l:carro",
       "l:funcionar",
-      "l:ser",
-      "l:viejo"
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
-      "g:possessives",
-      "l:viejo"
+      "g:possessives"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -16891,17 +16882,17 @@
   },
   {
     "id": "u05-0751",
-    "es": "Nuestra oficina está en el centro.",
-    "en": "Our office is downtown.",
+    "es": "Mariana trabaja en nuestra oficina del centro.",
+    "en": "Mariana works at our downtown office.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
       "g:possessives",
+      "g:present-ar",
       "l:centro",
-      "l:estar",
-      "l:oficina"
+      "l:oficina",
+      "l:trabajar"
     ],
     "targets": [
       "g:possessives"
@@ -16977,23 +16968,19 @@
   },
   {
     "id": "u05-0755",
-    "es": "Nuestra profesora es muy simpática.",
-    "en": "Our teacher is very nice.",
+    "es": "A las ocho llega nuestra profesora.",
+    "en": "Our teacher arrives at eight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
+      "g:gender-articles",
       "g:possessives",
-      "g:ser-identity",
-      "l:profesora",
-      "l:ser",
-      "l:simpático",
-      "p:quantifiers-basic"
+      "g:present-ar",
+      "l:llegar",
+      "l:profesora"
     ],
     "targets": [
-      "g:adjective-agreement",
-      "g:possessives",
-      "l:simpático"
+      "g:possessives"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -17049,15 +17036,15 @@
   },
   {
     "id": "u05-0758",
-    "es": "Nuestro celular no funciona.",
+    "es": "Nuestro teléfono no funciona.",
     "en": "Our phone doesn't work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:possessives",
       "g:present-ar",
-      "l:celular",
-      "l:funcionar"
+      "l:funcionar",
+      "l:teléfono"
     ],
     "targets": [
       "g:possessives"
@@ -17200,17 +17187,18 @@
   },
   {
     "id": "u05-0765",
-    "es": "Nuestro examen es el jueves.",
-    "en": "Our exam is on Thursday.",
+    "es": "El jueves tenemos nuestro examen de español.",
+    "en": "On Thursday we have our Spanish exam.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
       "g:possessives",
-      "g:ser-identity",
+      "l:español",
       "l:examen",
       "l:jueves",
-      "l:ser"
+      "l:tener"
     ],
     "targets": [
       "g:possessives"
@@ -17222,16 +17210,17 @@
   },
   {
     "id": "u05-0766",
-    "es": "Nuestro amigo Hernando llega tarde.",
-    "en": "Our friend Hernando arrives late.",
+    "es": "Nuestro amigo Hernando siempre llega a las siete.",
+    "en": "Our friend Hernando always arrives at seven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:possessives",
       "g:present-ar",
       "l:amigo",
       "l:llegar",
-      "l:tarde"
+      "l:siempre"
     ],
     "targets": [
       "g:possessives"
@@ -17243,16 +17232,17 @@
   },
   {
     "id": "u05-0767",
-    "es": "Nuestro amigo Tomás es canadiense.",
-    "en": "Our friend Tomás is Canadian.",
+    "es": "Tomás, nuestro amigo canadiense, habla poco.",
+    "en": "Tomás, our Canadian friend, doesn't talk much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:possessives",
-      "g:ser-identity",
+      "g:present-ar",
       "l:amigo",
       "l:canadiense",
-      "l:ser"
+      "l:hablar",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:possessives"
@@ -17348,17 +17338,15 @@
   },
   {
     "id": "u05-0772",
-    "es": "Nuestro problema es el tiempo.",
-    "en": "Our problem is time.",
+    "es": "Altamira es nuestro problema.",
+    "en": "Altamira is our problem.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:possessives",
       "g:ser-identity",
       "l:problema",
-      "l:ser",
-      "l:tiempo"
+      "l:ser"
     ],
     "targets": [
       "g:possessives"
@@ -17415,17 +17403,15 @@
   },
   {
     "id": "u05-0775",
-    "es": "Nuestra familia es muy grande.",
-    "en": "Our family is very big.",
+    "es": "En nuestra familia todos cocinan.",
+    "en": "In our family everyone cooks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:possessives",
-      "g:ser-identity",
-      "l:familia",
-      "l:grande",
-      "l:ser",
-      "p:quantifiers-basic"
+      "g:present-ar",
+      "l:cocinar",
+      "l:familia"
     ],
     "targets": [
       "g:possessives",
@@ -17459,20 +17445,17 @@
   },
   {
     "id": "u05-0777",
-    "es": "Nuestras preguntas son difíciles.",
-    "en": "Our questions are difficult.",
+    "es": "Hernando nunca escucha nuestras preguntas.",
+    "en": "Hernando never listens to our questions.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:possessives",
-      "g:ser-identity",
-      "l:difícil",
-      "l:pregunta",
-      "l:ser"
+      "g:present-ar",
+      "l:escuchar",
+      "l:pregunta"
     ],
     "targets": [
-      "g:adjective-agreement",
       "g:possessives"
     ],
     "kind": "statement",
@@ -17549,20 +17532,20 @@
   },
   {
     "id": "u05-0781",
-    "es": "Nuestros trabajos son difíciles.",
-    "en": "Our jobs are difficult.",
+    "es": "Nuestras mamás son amigas del colegio.",
+    "en": "Our mums are friends from school.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
+      "g:gender-articles",
       "g:possessives",
       "g:ser-identity",
-      "l:difícil",
-      "l:ser",
-      "l:trabajo"
+      "l:amiga",
+      "l:colegio",
+      "l:mamá",
+      "l:ser"
     ],
     "targets": [
-      "g:adjective-agreement",
       "g:possessives"
     ],
     "kind": "statement",
@@ -17687,22 +17670,21 @@
   },
   {
     "id": "u05-0787",
-    "es": "Nuestro día fue muy largo.",
-    "en": "Our day was very long.",
+    "es": "El sábado, nuestro café vendió trescientos tintos.",
+    "en": "On Saturday our café sold three hundred coffees.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:possessives",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
-      "l:día",
-      "l:largo",
-      "l:ser",
-      "p:quantifiers-basic"
+      "g:preterite-er-ir",
+      "l:café",
+      "l:sábado",
+      "l:tinto",
+      "l:vender"
     ],
     "targets": [
-      "g:possessives",
-      "g:preterite-ser-ir-hacer"
+      "g:possessives"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -17880,7 +17862,7 @@
   },
   {
     "id": "u05-0795",
-    "es": "¿Cuánto cuesta nuestra cuenta?\nCuesta quince mil pesos.",
+    "es": "¿Cuánto es nuestra cuenta?\nSon quince mil pesos.",
     "en": "How much is our bill?\nIt's fifteen thousand pesos.",
     "accept": [],
     "acceptEn": [],
@@ -17888,12 +17870,11 @@
       "c:cuanto-cuesta",
       "g:possessives",
       "g:questions",
-      "g:stem-boot",
-      "l:costar",
+      "g:ser-identity",
       "l:cuenta",
-      "l:cuesta",
       "l:cuánto",
-      "l:peso"
+      "l:peso",
+      "l:ser"
     ],
     "targets": [
       "g:possessives"
@@ -18089,17 +18070,17 @@
   },
   {
     "id": "u05-0804",
-    "es": "¿Cuántos son nuestros primos?",
-    "en": "How many cousins do we have?",
+    "es": "¿Nuestros primos vienen a la fiesta?",
+    "en": "Are our cousins coming to the party?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:possessives",
-      "g:questions",
-      "g:ser-identity",
-      "l:cuánto",
+      "g:stem-boot",
+      "l:fiesta",
       "l:primo",
-      "l:ser"
+      "l:venir"
     ],
     "targets": [
       "g:possessives",
@@ -18273,17 +18254,15 @@
   },
   {
     "id": "u05-0812",
-    "es": "¿De quién es nuestro café?",
-    "en": "Whose is our café?",
+    "es": "Nuestro café es de todos.",
+    "en": "Our café belongs to everyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:possessives",
       "g:ser-identity",
       "l:café",
-      "l:quién",
-      "l:ser",
-      "p:prep-questions-basic"
+      "l:ser"
     ],
     "targets": [
       "g:possessives"
@@ -18424,15 +18403,16 @@
   },
   {
     "id": "u05-0819",
-    "es": "¿Trae usted nuestra cuenta?",
-    "en": "Will you bring our bill? (polite)",
+    "es": "Señor, ¿nuestra cuenta, por favor?",
+    "en": "Sir, our bill, please?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:por-favor",
       "g:possessives",
-      "g:present-er-ir",
       "l:cuenta",
-      "l:traer"
+      "l:favor",
+      "l:señor"
     ],
     "targets": [
       "g:possessives"
@@ -18649,8 +18629,8 @@
   },
   {
     "id": "u05-0829",
-    "es": "Mi hermana y yo no tenemos nuestras fotos.",
-    "en": "My sister and I don't have our photos.",
+    "es": "Mi hermana y yo no tenemos fotos de nuestra mamá.",
+    "en": "My sister and I don't have any photos of our mum.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18658,6 +18638,7 @@
       "g:possessives",
       "l:foto",
       "l:hermana",
+      "l:mamá",
       "l:tener",
       "p:possessives-basic"
     ],
@@ -19231,19 +19212,24 @@
   },
   {
     "id": "u05-0853",
-    "es": "No fui a la fiesta; estoy cansado.",
-    "en": "I didn't go to the party; I'm tired. (a man speaking)",
+    "es": "No fui a la fiesta de mi primo porque trabajé hasta tarde.",
+    "en": "I didn't go to my cousin's party because I worked late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:compre-trabaje",
       "c:fui",
-      "g:estar-location-states",
+      "c:porque",
+      "g:cause-result",
       "g:gender-articles",
+      "g:preterite-ar",
       "g:preterite-ser-ir-hacer",
-      "l:cansado",
-      "l:estar",
       "l:fiesta",
-      "l:ir"
+      "l:ir",
+      "l:primo",
+      "l:tarde",
+      "l:trabajar",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -19279,7 +19265,7 @@
   {
     "id": "u05-0855",
     "es": "Nunca fui a Cartagena.",
-    "en": "I never went to Cartagena.",
+    "en": "I've never been to Cartagena.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20714,7 +20700,7 @@
   {
     "id": "u05-0918",
     "es": "¿Cómo fue el domingo en Boyacá?\nFue largo, pero bonito.",
-    "en": "How was Sunday in Boyacá?\nIt was long, but pretty.",
+    "en": "How was Sunday in Boyacá?\nIt was long, but nice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20974,7 +20960,7 @@
   {
     "id": "u05-0929",
     "es": "Fue un día largo, pero bonito.",
-    "en": "It was a long day, but a pretty one.",
+    "en": "It was a long day, but a lovely one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21352,7 +21338,7 @@
   {
     "id": "u05-0945",
     "es": "Rosa fue una mujer seria, pero muy buena gente.",
-    "en": "Rosa was a serious woman, but really nice people.",
+    "en": "Rosa was a serious woman, but a really good person.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21494,22 +21480,21 @@
   },
   {
     "id": "u05-0951",
-    "es": "Fui muy tímido de niño.",
-    "en": "I was very shy as a child. (a man speaking)",
+    "es": "Fui profesor en un colegio de Cali.",
+    "en": "I was a teacher at a school in Cali. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:fui",
+      "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "l:niño",
-      "l:ser",
-      "l:tímido",
-      "p:quantifiers-basic"
+      "l:colegio",
+      "l:profesor",
+      "l:ser"
     ],
     "targets": [
-      "g:preterite-ser-ir-hacer",
-      "l:tímido"
+      "g:preterite-ser-ir-hacer"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -21518,22 +21503,25 @@
   },
   {
     "id": "u05-0952",
-    "es": "Fui la menor de cuatro hermanos.",
-    "en": "I was the youngest of four siblings. (a woman speaking)",
+    "es": "Fui la única de mi familia en la fiesta.",
+    "en": "I was the only one from my family at the party. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:fui",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "l:hermanos",
-      "l:menor",
-      "l:ser"
+      "l:familia",
+      "l:fiesta",
+      "l:ser",
+      "l:único",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer",
-      "l:menor"
+      "l:único"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -21618,16 +21606,17 @@
   },
   {
     "id": "u05-0956",
-    "es": "¿Qué hiciste anoche?\nHice café para mi familia.",
-    "en": "What did you do last night?\nI made coffee for my family.",
+    "es": "¿Qué hiciste anoche?\nHice la comida para mi familia.",
+    "en": "What did you do last night?\nI made dinner for my family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "c:que-hiciste",
+      "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:anoche",
-      "l:café",
+      "l:comida",
       "l:familia",
       "l:hacer",
       "l:qué",
@@ -21833,18 +21822,16 @@
   },
   {
     "id": "u05-0965",
-    "es": "¿Qué hiciste el fin de semana con tu familia?",
-    "en": "What did you do over the weekend with your family?",
+    "es": "¿Qué hiciste en Navidad con tu familia?",
+    "en": "What did you do at Christmas with your family?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-hiciste",
       "g:preterite-ser-ir-hacer",
       "l:familia",
-      "l:fin",
       "l:hacer",
       "l:qué",
-      "l:semana",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22035,8 +22022,8 @@
   },
   {
     "id": "u05-0974",
-    "es": "No hice nada el domingo.",
-    "en": "I didn't do anything on Sunday.",
+    "es": "El domingo no hice nada en todo el día.",
+    "en": "On Sunday I didn't do anything all day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22044,6 +22031,7 @@
       "g:negation-words",
       "g:preterite-ser-ir-hacer",
       "l:domingo",
+      "l:día",
       "l:hacer"
     ],
     "targets": [
@@ -22387,17 +22375,18 @@
   },
   {
     "id": "u05-0990",
-    "es": "Mi hijo hizo una foto de la familia.",
-    "en": "My son took a photo of the family.",
+    "es": "Mi hijo hizo la comida para toda la familia.",
+    "en": "My son made the meal for the whole family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
+      "l:comida",
       "l:familia",
-      "l:foto",
       "l:hacer",
       "l:hijo",
+      "p:para-inf",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22481,16 +22470,16 @@
   },
   {
     "id": "u05-0994",
-    "es": "Hicimos una foto de toda la familia.",
-    "en": "We took a photo of the whole family.",
+    "es": "Hicimos un álbum de toda la familia.",
+    "en": "We made an album of the whole family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:familia",
-      "l:foto",
-      "l:hacer"
+      "l:hacer",
+      "l:álbum"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer",
@@ -22503,8 +22492,8 @@
   },
   {
     "id": "u05-0995",
-    "es": "Hicimos una llamada con mi hermana.",
-    "en": "We made a call with my sister.",
+    "es": "Hicimos una videollamada con mi hermana.",
+    "en": "We had a video call with my sister.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22512,7 +22501,7 @@
       "g:preterite-ser-ir-hacer",
       "l:hacer",
       "l:hermana",
-      "l:llamada",
+      "l:videollamada",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22657,16 +22646,15 @@
   },
   {
     "id": "u05-1002",
-    "es": "Ellos hicieron las fotos del álbum.",
-    "en": "They took the photos in the album.",
+    "es": "Rosa hizo este álbum.",
+    "en": "Rosa made this album.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:preterite-ser-ir-hacer",
-      "l:foto",
       "l:hacer",
-      "l:álbum"
+      "l:álbum",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer"
@@ -22799,8 +22787,8 @@
   },
   {
     "id": "u05-1008",
-    "es": "Salgo del café a las cinco.",
-    "en": "I leave the café at five.",
+    "es": "Hoy salgo temprano del café.",
+    "en": "Today I'm leaving the café early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22808,7 +22796,9 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:café",
-      "l:salir"
+      "l:hoy",
+      "l:salir",
+      "l:temprano"
     ],
     "targets": [
       "g:yo-irregular"
@@ -23042,7 +23032,7 @@
   {
     "id": "u05-1018",
     "es": "Vengo a ver a mi tía Clara.",
-    "en": "I come to see my aunt Clara.",
+    "en": "I've come to see my aunt Clara.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23112,21 +23102,19 @@
   },
   {
     "id": "u05-1021",
-    "es": "Vengo de una familia pequeña.",
-    "en": "I come from a small family.",
+    "es": "Vengo de una familia de taxistas.",
+    "en": "I come from a family of taxi drivers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
       "c:hago-salgo-vengo",
-      "g:adjective-agreement",
       "g:yo-irregular",
       "l:familia",
-      "l:pequeño",
+      "l:taxista",
       "l:venir"
     ],
     "targets": [
-      "g:adjective-agreement",
       "g:yo-irregular",
       "l:familia"
     ],
@@ -23381,12 +23369,12 @@
   },
   {
     "id": "u05-1033",
-    "es": "Conozco una persona muy inteligente.",
+    "es": "Conozco a una persona muy inteligente.",
     "en": "I know a very smart person.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:a-cuantas-cuotas",
       "g:yo-irregular",
       "l:conocer",
       "l:inteligente",
@@ -23579,7 +23567,7 @@
   {
     "id": "u05-1042",
     "es": "Doy clases en un colegio.",
-    "en": "I teach classes at a school.",
+    "en": "I teach at a school.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23645,7 +23633,7 @@
   {
     "id": "u05-1045",
     "es": "Te doy una foto de mi familia.",
-    "en": "I'll give you a photo of my family.",
+    "en": "I'll give you a photo of my family. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23888,7 +23876,7 @@
   {
     "id": "u05-1055",
     "es": "¿Cuántos años tiene tu tío?\nNo sé; es mayor.",
-    "en": "How old is your uncle?\nI don't know; he's older.",
+    "en": "How old is your uncle?\nI don't know; he's getting on.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24187,7 +24175,7 @@
   },
   {
     "id": "u05-1068",
-    "es": "Tiene razón, Don Hernando.",
+    "es": "Tiene razón, don Hernando.",
     "en": "You're right, Don Hernando.",
     "accept": [],
     "acceptEn": [],
@@ -24447,21 +24435,19 @@
   },
   {
     "id": "u05-1081",
-    "es": "No tengo razón, tengo hambre.",
-    "en": "I'm not right, I'm hungry.",
+    "es": "Vale tiene razón y Hernando tiene hambre.",
+    "en": "Vale is right and Hernando is hungry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
-      "g:yo-irregular",
+      "c:tienes",
+      "g:stem-boot",
       "l:hambre",
       "l:razón",
       "l:tener",
       "p:tener-hambre"
     ],
-    "targets": [
-      "g:yo-irregular"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "you're right",
@@ -24469,15 +24455,18 @@
   },
   {
     "id": "u05-1082",
-    "es": "Él no tiene razón.",
-    "en": "He's not right.",
+    "es": "Simón no tiene razón, pero habla mucho.",
+    "en": "Simón isn't right, but he talks a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:present-ar",
       "g:stem-boot",
+      "l:hablar",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "p:quantifiers-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -24509,13 +24498,14 @@
   },
   {
     "id": "u05-1084",
-    "es": "Mis padres no tienen razón.",
-    "en": "My parents aren't right.",
+    "es": "Mis padres no tienen razón sobre mi novio.",
+    "en": "My parents aren't right about my boyfriend.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:stem-boot",
+      "l:novio",
       "l:padres",
       "l:razón",
       "l:tener",
@@ -24558,15 +24548,20 @@
   },
   {
     "id": "u05-1086",
-    "es": "Rosa tiene razón.\nSí, tiene razón.",
-    "en": "Rosa is right.\nYes, she's right.",
+    "es": "El tinto está frío.\nSí, tienes razón.",
+    "en": "The coffee's cold.\nYes, you're right.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:estar-location-states",
+      "g:gender-articles",
       "g:stem-boot",
+      "l:estar",
+      "l:frío",
       "l:razón",
-      "l:tener"
+      "l:tener",
+      "l:tinto"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -24646,18 +24641,19 @@
   },
   {
     "id": "u05-1090",
-    "es": "La arepa está bien buena.",
-    "en": "The arepa is really good.",
+    "es": "Mi tía hace unas arepas muy buenas.",
+    "en": "My aunt makes really good arepas.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:present-er-ir",
       "l:arepa",
-      "l:bien",
       "l:buena",
-      "l:estar"
+      "l:hacer",
+      "l:tía",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -24667,25 +24663,21 @@
   },
   {
     "id": "u05-1091",
-    "es": "Mi abuela es bien buena gente.",
-    "en": "My grandmother is really nice people.",
+    "es": "Mi abuela no ve bien sin lentes.",
+    "en": "My grandmother doesn't see well without glasses.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "c:buena-gente",
-      "g:ser-identity",
+      "g:present-er-ir",
       "l:abuela",
       "l:bien",
-      "l:buena",
-      "l:gente",
-      "l:ser",
+      "l:lente",
+      "l:ver",
       "p:possessives-basic"
     ],
     "targets": [
-      "c:buena-gente",
-      "l:abuela",
-      "l:gente"
+      "l:abuela"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -24694,23 +24686,23 @@
   },
   {
     "id": "u05-1092",
-    "es": "El café de Rosa es bien bueno.",
-    "en": "Rosa's coffee is really good.",
+    "es": "El café de Rosa es bueno, pero la cafetera no funciona bien.",
+    "en": "Rosa's coffee is good, but the espresso machine doesn't work well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "g:gender-articles",
+      "g:present-ar",
       "g:ser-identity",
       "l:bien",
       "l:bueno",
+      "l:cafetera",
       "l:café",
-      "l:ser",
-      "p:bien-bueno"
+      "l:funcionar",
+      "l:ser"
     ],
-    "targets": [
-      "p:bien-bueno"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "bien bueno",
@@ -24718,22 +24710,19 @@
   },
   {
     "id": "u05-1093",
-    "es": "Tu hermana es bien bonita.",
-    "en": "Your sister is really pretty.",
+    "es": "Tu hermana escribe muy bien.",
+    "en": "Your sister writes really well. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "g:adjective-agreement",
-      "g:ser-identity",
+      "g:present-er-ir",
       "l:bien",
-      "l:bonito",
+      "l:escribir",
       "l:hermana",
-      "l:ser",
       "p:possessives-basic"
     ],
     "targets": [
-      "g:adjective-agreement",
       "l:hermana"
     ],
     "kind": "statement",
@@ -24743,21 +24732,25 @@
   },
   {
     "id": "u05-1094",
-    "es": "Mi tío es bien trabajador.",
-    "en": "My uncle is very hard-working.",
+    "es": "Mi tío es un buen taxista y habla muy bien inglés.",
+    "en": "My uncle is a good taxi driver and speaks English really well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "g:gender-articles",
+      "g:present-ar",
       "g:ser-identity",
       "l:bien",
+      "l:buen",
+      "l:hablar",
+      "l:inglés",
       "l:ser",
-      "l:trabajador",
+      "l:taxista",
       "l:tío",
       "p:possessives-basic"
     ],
     "targets": [
-      "l:trabajador",
       "l:tío"
     ],
     "kind": "statement",
@@ -24767,22 +24760,18 @@
   },
   {
     "id": "u05-1095",
-    "es": "Camila es bien divertida.",
-    "en": "Camila is really fun.",
+    "es": "Camila es una buena estudiante.",
+    "en": "Camila is a good student.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "g:adjective-agreement",
+      "g:gender-articles",
       "g:ser-identity",
-      "l:bien",
-      "l:divertido",
+      "l:buena",
+      "l:estudiante",
       "l:ser"
     ],
-    "targets": [
-      "g:adjective-agreement",
-      "l:divertido"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "bien bueno",
@@ -24790,18 +24779,19 @@
   },
   {
     "id": "u05-1096",
-    "es": "La fiesta está bien buena.",
-    "en": "The party is really good.",
+    "es": "Fue un buen día para el café.",
+    "en": "It was a good day for the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "g:estar-location-states",
       "g:gender-articles",
-      "l:bien",
-      "l:buena",
-      "l:estar",
-      "l:fiesta"
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:buen",
+      "l:café",
+      "l:día",
+      "l:ser",
+      "p:para-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -24811,24 +24801,20 @@
   },
   {
     "id": "u05-1097",
-    "es": "Es bien bueno hablar con la familia.",
-    "en": "It's really good to talk to your family.",
+    "es": "Es bueno hablar con la familia.",
+    "en": "It's good to talk to your family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "g:gender-articles",
       "g:ser-identity",
-      "l:bien",
       "l:bueno",
       "l:familia",
       "l:hablar",
-      "l:ser",
-      "p:bien-bueno"
+      "l:ser"
     ],
     "targets": [
-      "l:familia",
-      "p:bien-bueno"
+      "l:familia"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -24837,18 +24823,20 @@
   },
   {
     "id": "u05-1098",
-    "es": "La comida de mi madre es bien buena.",
-    "en": "My mother's food is really good.",
+    "es": "Mi madre no cocina bien, pero es una buena mamá.",
+    "en": "My mother doesn't cook well, but she's a good mum.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "g:gender-articles",
+      "g:present-ar",
       "g:ser-identity",
       "l:bien",
       "l:buena",
-      "l:comida",
+      "l:cocinar",
       "l:madre",
+      "l:mamá",
       "l:ser",
       "p:possessives-basic"
     ],
@@ -25026,25 +25014,24 @@
   },
   {
     "id": "u05-1105",
-    "es": "Los hijos únicos tienen primos, ¿no?",
-    "en": "Only children have cousins, don't they?",
+    "es": "Los hijos únicos no son siempre tímidos.",
+    "en": "Only children aren't always shy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-cierto",
-      "c:tienes",
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:ser-identity",
       "l:hijos",
-      "l:primo",
-      "l:tener",
+      "l:ser",
+      "l:siempre",
+      "l:tímido",
       "l:único"
     ],
     "targets": [
       "g:adjective-agreement",
-      "l:primo",
-      "l:único"
+      "l:único",
+      "l:tímido"
     ],
     "kind": "question",
     "unit": "u05",
@@ -25260,19 +25247,19 @@
   },
   {
     "id": "u05-1115",
-    "es": "Mariana, ¿tienes hermanos?",
-    "en": "Mariana, do you have brothers or sisters?",
+    "es": "Mariana, ¿tú también eres hija única?",
+    "en": "Mariana, are you an only child too?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
-      "c:tienes-hermanos",
-      "g:stem-boot",
-      "l:hermanos",
-      "l:tener"
+      "g:adjective-agreement",
+      "g:ser-identity",
+      "l:hija",
+      "l:ser",
+      "l:único"
     ],
     "targets": [
-      "c:tienes-hermanos"
+      "g:adjective-agreement"
     ],
     "kind": "question",
     "unit": "u05",
@@ -25508,20 +25495,18 @@
   },
   {
     "id": "u05-1125",
-    "es": "Los hijos de Hernando son delgados.",
-    "en": "Hernando's children are thin.",
+    "es": "Hernando es delgado, pero sus hijos no.",
+    "en": "Hernando is thin, but his children aren't.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
-      "g:gender-articles",
       "g:ser-identity",
       "l:delgado",
       "l:hijos",
-      "l:ser"
+      "l:ser",
+      "p:possessives-basic"
     ],
     "targets": [
-      "g:adjective-agreement",
       "l:delgado"
     ],
     "kind": "statement",
@@ -25703,23 +25688,22 @@
   },
   {
     "id": "u05-1133",
-    "es": "La gente de mi barrio es trabajadora.",
-    "en": "The people in my neighbourhood are hard-working.",
+    "es": "Las señoras del mercado son muy trabajadoras.",
+    "en": "The women at the market are very hard-working.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
-      "l:barrio",
-      "l:gente",
+      "l:mercado",
       "l:ser",
+      "l:señora",
       "l:trabajador",
-      "p:possessives-basic"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:adjective-agreement",
-      "l:gente",
       "l:trabajador"
     ],
     "kind": "statement",
@@ -25847,24 +25831,22 @@
   },
   {
     "id": "u05-1139",
-    "es": "¿Tu padre es mayor o menor?",
-    "en": "Is your father older or younger?",
+    "es": "En tu familia, ¿quién es el mayor?",
+    "en": "Who's the oldest in your family?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:questions",
       "g:ser-identity",
+      "l:familia",
       "l:mayor",
-      "l:menor",
-      "l:padre",
+      "l:quién",
       "l:ser",
-      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
-      "l:mayor",
-      "l:menor",
-      "l:padre",
-      "p:mayor-menor"
+      "l:mayor"
     ],
     "kind": "question",
     "unit": "u05",
@@ -25899,24 +25881,22 @@
   },
   {
     "id": "u05-1141",
-    "es": "¿Tu hijo es mayor o menor?",
-    "en": "Is your son the older or the younger one?",
+    "es": "¿Cuál es tu hijo mayor?",
+    "en": "Which one is your eldest son?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:questions",
       "g:ser-identity",
+      "l:cuál",
       "l:hijo",
       "l:mayor",
-      "l:menor",
       "l:ser",
-      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
       "l:hijo",
-      "l:mayor",
-      "l:menor",
-      "p:mayor-menor"
+      "l:mayor"
     ],
     "kind": "question",
     "unit": "u05",
@@ -25925,24 +25905,23 @@
   },
   {
     "id": "u05-1142",
-    "es": "¿Es mayor o menor tu primo?",
-    "en": "Is your cousin older or younger?",
+    "es": "Mi primo es el menor y ya es muy alto.",
+    "en": "My cousin is the youngest and he's already very tall.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
-      "l:mayor",
+      "l:alto",
       "l:menor",
       "l:primo",
       "l:ser",
-      "p:mayor-menor",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "l:mayor",
       "l:menor",
-      "l:primo",
-      "p:mayor-menor"
+      "l:primo"
     ],
     "kind": "question",
     "unit": "u05",
@@ -25951,24 +25930,22 @@
   },
   {
     "id": "u05-1143",
-    "es": "¿Es mayor o menor tu esposa?",
-    "en": "Is your wife the older or the younger one?",
+    "es": "Mi esposa es la mayor de cinco hermanas.",
+    "en": "My wife is the eldest of five sisters.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
       "l:esposa",
+      "l:hermana",
       "l:mayor",
-      "l:menor",
       "l:ser",
-      "p:mayor-menor",
       "p:possessives-basic"
     ],
     "targets": [
       "l:esposa",
-      "l:mayor",
-      "l:menor",
-      "p:mayor-menor"
+      "l:mayor"
     ],
     "kind": "question",
     "unit": "u05",
@@ -26000,8 +25977,8 @@
   },
   {
     "id": "u05-1145",
-    "es": "Somos cuatro hermanos en la foto de la abuela.",
-    "en": "There are four of us siblings in grandma's photo.",
+    "es": "En la foto de la abuela somos seis primos.",
+    "en": "In grandma's photo there are six of us cousins.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26009,13 +25986,11 @@
       "g:ser-identity",
       "l:abuela",
       "l:foto",
-      "l:hermanos",
-      "l:ser",
-      "p:somos-cuatro"
+      "l:primo",
+      "l:ser"
     ],
     "targets": [
-      "l:abuela",
-      "p:somos-cuatro"
+      "l:abuela"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -26024,22 +25999,20 @@
   },
   {
     "id": "u05-1146",
-    "es": "Somos cuatro en el café esta mañana.",
-    "en": "There are four of us in the café this morning.",
+    "es": "¿Cuántos somos para la fiesta?\nSomos once.",
+    "en": "How many of us are there for the party?\nThere are eleven of us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:questions",
       "g:ser-identity",
-      "l:café",
-      "l:mañana",
+      "l:cuánto",
+      "l:fiesta",
       "l:ser",
-      "p:demonstratives-basic",
-      "p:somos-cuatro"
+      "p:para-inf"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "more we are four",
@@ -26047,21 +26020,18 @@
   },
   {
     "id": "u05-1147",
-    "es": "Somos cuatro y todos hablamos español.",
-    "en": "There are four of us and we all speak Spanish.",
+    "es": "Somos tres y nadie habla inglés.",
+    "en": "There are three of us and nobody speaks English.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
       "g:ser-identity",
-      "l:español",
       "l:hablar",
-      "l:ser",
-      "p:somos-cuatro"
+      "l:inglés",
+      "l:ser"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "more we are four",
@@ -26069,21 +26039,18 @@
   },
   {
     "id": "u05-1148",
-    "es": "Somos cuatro en mi clase de español.",
-    "en": "There are four of us in my Spanish class.",
+    "es": "En la clase somos quince estudiantes.",
+    "en": "There are fifteen of us students in the class.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
       "l:clase",
-      "l:español",
-      "l:ser",
-      "p:possessives-basic",
-      "p:somos-cuatro"
+      "l:estudiante",
+      "l:ser"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "more we are four",
@@ -26091,22 +26058,19 @@
   },
   {
     "id": "u05-1149",
-    "es": "Somos cuatro personas en el carro.",
-    "en": "There are four of us in the car.",
+    "es": "Somos siete en una casa pequeña.",
+    "en": "There are seven of us in a small house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
-      "l:carro",
-      "l:persona",
-      "l:ser",
-      "p:somos-cuatro"
+      "l:casa",
+      "l:pequeño",
+      "l:ser"
     ],
-    "targets": [
-      "l:persona",
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "more we are four",
@@ -26133,8 +26097,8 @@
   },
   {
     "id": "u05-1151",
-    "es": "Somos cuatro en total, con los niños.",
-    "en": "There are four of us in total, with the children.",
+    "es": "Con los niños, somos diez en total.",
+    "en": "With the children, there are ten of us in total.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26142,12 +26106,9 @@
       "g:ser-identity",
       "l:niño",
       "l:ser",
-      "l:total",
-      "p:somos-cuatro"
+      "l:total"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "more we are four",
@@ -26155,8 +26116,8 @@
   },
   {
     "id": "u05-1152",
-    "es": "En la casa de mi abuela somos cuatro.",
-    "en": "In my grandmother's house there are four of us.",
+    "es": "En Navidad, en la casa de mi abuela somos treinta.",
+    "en": "At Christmas there are thirty of us at my grandmother's house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26165,12 +26126,10 @@
       "l:abuela",
       "l:casa",
       "l:ser",
-      "p:possessives-basic",
-      "p:somos-cuatro"
+      "p:possessives-basic"
     ],
     "targets": [
-      "l:abuela",
-      "p:somos-cuatro"
+      "l:abuela"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -26179,22 +26138,19 @@
   },
   {
     "id": "u05-1153",
-    "es": "En la oficina de mi jefe somos cuatro.",
-    "en": "In my boss's office there are four of us.",
+    "es": "¿Cuántos son en el trabajo?\nSomos doce.",
+    "en": "How many of you are there at work?\nThere are twelve of us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:questions",
       "g:ser-identity",
-      "l:jefe",
-      "l:oficina",
+      "l:cuánto",
       "l:ser",
-      "p:possessives-basic",
-      "p:somos-cuatro"
+      "l:trabajo"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "more we are four",
@@ -26354,12 +26310,12 @@
   },
   {
     "id": "u05-1161",
-    "es": "Rosa nunca habla de su hermano.",
-    "en": "Rosa never talks about her brother.",
+    "es": "Rosa nunca habló de su hermano.",
+    "en": "Rosa never talked about her brother.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:preterite-ar",
       "l:hablar",
       "l:hermano",
       "p:possessives-basic"
@@ -26374,21 +26330,22 @@
   },
   {
     "id": "u05-1162",
-    "es": "Rosa no tiene fotos de su familia en el café.",
-    "en": "Rosa has no photos of her family in the café.",
+    "es": "En el café no hay ninguna foto de la familia de Rosa.",
+    "en": "There isn't a single photo of Rosa's family in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
+      "c:hay",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:hay-vs-esta",
+      "g:indefinites",
+      "g:negation-words",
       "l:café",
       "l:familia",
-      "l:foto",
-      "l:tener",
-      "p:possessives-basic"
+      "l:foto"
     ],
     "targets": [
+      "g:negation-words",
       "l:familia"
     ],
     "kind": "statement",
@@ -26442,18 +26399,18 @@
   },
   {
     "id": "u05-1165",
-    "es": "En la foto no hay nada escrito.",
-    "en": "There's nothing written in the photo.",
+    "es": "No hay ningún nombre en las fotos.",
+    "en": "There isn't a single name on the photos.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
-      "c:no-hay-nada",
       "g:gender-articles",
       "g:hay-vs-esta",
+      "g:indefinites",
       "g:negation-words",
-      "l:escribir",
-      "l:foto"
+      "l:foto",
+      "l:nombre"
     ],
     "targets": [
       "g:negation-words"
@@ -26510,19 +26467,19 @@
   },
   {
     "id": "u05-1168",
-    "es": "Tomás no sabe nada de su tío Jaime.",
-    "en": "Tomás doesn't know anything about his uncle Jaime.",
+    "es": "Tomás no sabe ni la edad de su tío Jaime.",
+    "en": "Tomás doesn't even know his uncle Jaime's age.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negation-words",
+      "g:gender-articles",
       "g:present-er-ir",
+      "l:edad",
       "l:saber",
       "l:tío",
       "p:possessives-basic"
     ],
     "targets": [
-      "g:negation-words",
       "l:tío"
     ],
     "kind": "statement",
@@ -26589,18 +26546,19 @@
   },
   {
     "id": "u05-1172",
-    "es": "Vale nunca habla de su padre.",
-    "en": "Vale never talks about her father.",
+    "es": "Vale no come nada antes de las diez.",
+    "en": "Vale doesn't eat anything before ten.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:hablar",
-      "l:padre",
-      "p:possessives-basic"
+      "g:gender-articles",
+      "g:negation-words",
+      "g:present-er-ir",
+      "l:antes",
+      "l:comer"
     ],
     "targets": [
-      "l:padre"
+      "g:negation-words"
     ],
     "kind": "statement",
     "unit": "u05",
@@ -26705,14 +26663,16 @@
   },
   {
     "id": "u05-1177",
-    "es": "En el café somos cuatro: Tomás, Vale, Hernando y Simón.",
-    "en": "In the café there are four of us: Tomás, Vale, Hernando and Simón.",
+    "es": "En el café somos cuatro: tres personas y un loro.",
+    "en": "At the café there are four of us: three people and a parrot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:café",
+      "l:loro",
+      "l:persona",
       "l:ser",
       "p:somos-cuatro"
     ],
@@ -26726,20 +26686,19 @@
   },
   {
     "id": "u05-1178",
-    "es": "En la videollamada somos cuatro.",
-    "en": "On the video call there are four of us.",
+    "es": "En la videollamada son cuatro: Vale, Camila, su mamá y Tomás.",
+    "en": "There are four of them on the video call: Vale, Camila, her mum and Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:mamá",
       "l:ser",
       "l:videollamada",
-      "p:somos-cuatro"
+      "p:possessives-basic"
     ],
-    "targets": [
-      "p:somos-cuatro"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "story colour, the photo and the week",
@@ -26856,16 +26815,18 @@
   },
   {
     "id": "u05-1184",
-    "es": "No cocino nunca los domingos.",
-    "en": "I never cook on Sundays.",
+    "es": "Los domingos no cocina nadie en mi casa.",
+    "en": "On Sundays nobody cooks at my house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:negation-words",
       "g:present-ar",
+      "l:casa",
       "l:cocinar",
-      "l:domingo"
+      "l:domingo",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:negation-words"
@@ -26899,19 +26860,20 @@
   },
   {
     "id": "u05-1186",
-    "es": "No juego nunca con mis primos.",
-    "en": "I never play with my cousins.",
+    "es": "Nunca juego fútbol con mis primos: siempre pierdo.",
+    "en": "I never play football with my cousins: I always lose.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negation-words",
       "g:stem-boot",
+      "l:fútbol",
       "l:jugar",
+      "l:perder",
       "l:primo",
+      "l:siempre",
       "p:possessives-basic"
     ],
     "targets": [
-      "g:negation-words",
       "l:primo"
     ],
     "kind": "statement",
@@ -27088,20 +27050,19 @@
   },
   {
     "id": "u05-1195",
-    "es": "Mi madre nunca llega tarde.",
-    "en": "My mother never arrives late.",
+    "es": "Mi madre nunca come en la calle.",
+    "en": "My mother never eats out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:llegar",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:calle",
+      "l:comer",
       "l:madre",
-      "l:tarde",
       "p:possessives-basic"
     ],
-    "targets": [
-      "l:madre"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "nothing, nobody, never (more)",
@@ -27196,15 +27157,16 @@
   },
   {
     "id": "u05-1200",
-    "es": "Mis hijas nunca llegan tarde.",
-    "en": "My daughters never arrive late.",
+    "es": "Mis hijas nunca cierran la puerta.",
+    "en": "My daughters never close the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:cerrar",
       "l:hija",
-      "l:llegar",
-      "l:tarde",
+      "l:puerta",
       "p:possessives-basic"
     ],
     "targets": [
@@ -27281,20 +27243,20 @@
   },
   {
     "id": "u05-1204",
-    "es": "Mis abuelos no conocen a nadie en Bogotá.",
-    "en": "My grandparents don't know anyone in Bogotá.",
+    "es": "Mis abuelos no tienen ni celular ni computadora.",
+    "en": "My grandparents have neither a phone nor a computer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negation-words",
-      "g:present-er-ir",
+      "c:tienes",
+      "g:stem-boot",
       "l:abuelos",
-      "l:conocer",
+      "l:celular",
+      "l:computadora",
+      "l:tener",
       "p:possessives-basic"
     ],
-    "targets": [
-      "g:negation-words"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u05",
     "theme": "nothing, nobody, never (more)",
@@ -27374,16 +27336,16 @@
   },
   {
     "id": "u05-1208",
-    "es": "Nosotros no vemos a nadie en las fiestas.",
-    "en": "We don't see anyone at the parties.",
+    "es": "En las fiestas no bailo con nadie.",
+    "en": "At parties I don't dance with anyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:negation-words",
-      "g:present-er-ir",
-      "l:fiesta",
-      "l:ver"
+      "g:present-ar",
+      "l:bailar",
+      "l:fiesta"
     ],
     "targets": [
       "g:negation-words"

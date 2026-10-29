@@ -6,27 +6,123 @@
     "en": "Mum, our café is small, but our customers are really nice."
   },
   "examples": [
-    { "es": "Nuestra abuela es de Bogotá.", "en": "Our grandmother is from Bogotá." },
-    { "es": "Nuestro café es viejo.", "en": "Our café is old." },
-    { "es": "Nuestras mesas son viejas.", "en": "Our tables are old." },
-    { "es": "Mis hermanas son morenas.", "en": "My sisters have dark hair." },
-    { "es": "Vale y su hermana hablan por teléfono.", "en": "Vale and her sister are talking on the phone." },
-    { "es": "¿Cómo es su novio?", "en": "What's her boyfriend like?" },
-    { "es": "Señora, ¿es su café?", "en": "Madam, is this your coffee? (formal)" },
-    { "es": "¿Tus papás viven en Toronto?", "en": "Do your parents live in Toronto? (to a friend)" }
+    {
+      "es": "Nuestra abuela es de Bogotá.",
+      "en": "Our grandmother is from Bogotá."
+    },
+    {
+      "es": "Nuestro café es viejo.",
+      "en": "Our café is old."
+    },
+    {
+      "es": "Nuestras mesas son viejas.",
+      "en": "Our tables are old."
+    },
+    {
+      "es": "Mis hermanas son morenas.",
+      "en": "My sisters have dark hair."
+    },
+    {
+      "es": "Vale y su hermana hablan por teléfono.",
+      "en": "Vale and her sister are talking on the phone."
+    },
+    {
+      "es": "¿Cómo es su novio?",
+      "en": "What's her boyfriend like?"
+    },
+    {
+      "es": "Señora, ¿es su café?",
+      "en": "Madam, is this your coffee? (formal)"
+    },
+    {
+      "es": "¿Tus papás viven en Toronto?",
+      "en": "Do your parents live in Toronto? (to a friend)"
+    }
   ],
   "rule": "You know *mi*, *tu* and *su*, plus an *s* for more than one thing: *mis amigos*.\n\nThe new one is our, and it has four forms, because it matches the thing like an adjective does:\n*nuestro café*\n*nuestra abuela*\n*nuestros clientes*\n*nuestras mesas*\n\nIt follows the thing, never the owners. Tomás and Vale are two people, but it's one café: *nuestro café*.\n\nNow the busy one. *Su* means his, her, its, their, your (formal) and your (you all). *Su novio* can be her boyfriend or your boyfriend if you speak to someone formally. The conversation almost always decides. When it doesn't, use the name: *el novio de Vale*.\n\nEnglish has one word per owner. Spanish has fewer words, so each one carries more.",
   "smallPrint": "Teachers call these possessive determiners (*posesivos*). *Nuestro* is the only one that changes for masculine and feminine.",
   "readAndPick": [
-    { "es": "Nuestra casa es pequeña.", "options": ["My house is small.", "Our house is small.", "Your house is small. (to a friend)"], "answer": 1 },
-    { "es": "Nuestros papás viven en Medellín.", "options": ["Our parents live in Medellín.", "Our dad lives in Medellín.", "My parents live in Medellín."], "answer": 0 },
-    { "es": "Mis ojos son negros.", "options": ["My eye is dark.", "Your eyes are dark. (to a friend)", "My eyes are dark."], "answer": 2 },
-    { "es": "Hernando habla de sus nietos.", "options": ["Hernando talks about our grandchildren.", "Hernando talks about his grandchildren.", "Hernando talks about his grandson."], "answer": 1 },
-    { "es": "Tu novia es muy simpática.", "options": ["Your girlfriend is really nice. (to a friend)", "My girlfriend is really nice.", "Our girlfriend is really nice."], "answer": 0 },
-    { "es": "Nuestras arepas son buenas.", "options": ["My arepas are good.", "Our arepa is good.", "Our arepas are good."], "answer": 2 },
-    { "es": "Tus hermanos son altos.", "options": ["Your brother is tall. (to a friend)", "Your brothers are tall. (to a friend)", "His brothers are tall."], "answer": 1 },
-    { "es": "Nuestro perro es viejo.", "options": ["Our dog is old.", "My dog is old.", "Their dogs are old."], "answer": 0 },
-    { "es": "Mi tía es rubia.", "options": ["Our aunt has blond hair.", "Your aunt has blond hair. (to a friend)", "My aunt has blond hair."], "answer": 2 }
+    {
+      "es": "Nuestra casa es pequeña.",
+      "options": [
+        "My house is small.",
+        "Our house is small.",
+        "Your house is small. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nuestros papás viven en Medellín.",
+      "options": [
+        "Our parents live in Medellín.",
+        "Our dad lives in Medellín.",
+        "My parents live in Medellín."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mis ojos son negros.",
+      "options": [
+        "My eye is dark.",
+        "Your eyes are dark. (to a friend)",
+        "My eyes are dark."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hernando habla de sus nietos.",
+      "options": [
+        "Hernando talks about our grandchildren.",
+        "Hernando talks about his grandchildren.",
+        "Hernando talks about his grandson."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tu novia es muy simpática.",
+      "options": [
+        "Your girlfriend is really nice. (to a friend)",
+        "My girlfriend is really nice.",
+        "Our girlfriend is really nice."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nuestras arepas son buenas.",
+      "options": [
+        "My arepas are good.",
+        "Our arepa is good.",
+        "Our arepas are good."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tus hermanos son altos.",
+      "options": [
+        "Your brother is tall. (to a friend)",
+        "Your brothers are tall. (to a friend)",
+        "His brothers are tall."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nuestro perro es viejo.",
+      "options": [
+        "Our dog is old.",
+        "My dog is old.",
+        "Their dogs are old."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mi tía es rubia.",
+      "options": [
+        "Our aunt has blond hair.",
+        "Your aunt has blond hair. (to a friend)",
+        "My aunt has blond hair."
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
     {
@@ -50,13 +146,18 @@
     {
       "prompt": "My sisters have dark hair.",
       "answer": "Mis hermanas son morenas.",
-      "accept": [],
+      "accept": [
+        "Mis hermanas tienen el pelo negro."
+      ],
       "why": "More than one sister, so *mis*, and *morenas* matches them."
     },
     {
       "prompt": "Ask Don Hernando, politely: Is this your coffee?",
       "answer": "¿Es su café?",
-      "accept": ["Don Hernando, ¿es su café?", "¿Es su café, don Hernando?"],
+      "accept": [
+        "Don Hernando, ¿es su café?",
+        "¿Es su café, don Hernando?"
+      ],
       "why": "Formal your is *su*."
     },
     {
@@ -79,10 +180,26 @@
     }
   ],
   "pitfalls": [
-    { "wrong": "Nuestro abuela es de Bogotá.", "right": "Nuestra abuela es de Bogotá.", "why": "Almost. *Nuestro* matches the thing, and *abuela* is feminine: *nuestra*." },
-    { "wrong": "Nuestros café es pequeño.", "right": "Nuestro café es pequeño.", "why": "Close. Two owners, but one café: no *s*." },
-    { "wrong": "Vale y la su hermana hablan.", "right": "Vale y su hermana hablan.", "why": "*Su* already does the job of *la*. Never use both." },
-    { "wrong": "Mi papás viven en Toronto.", "right": "Mis papás viven en Toronto.", "why": "Two parents, so *mis*, with an *s*." }
+    {
+      "wrong": "Nuestro abuela es de Bogotá.",
+      "right": "Nuestra abuela es de Bogotá.",
+      "why": "Almost. *Nuestro* matches the thing, and *abuela* is feminine: *nuestra*."
+    },
+    {
+      "wrong": "Nuestros café es pequeño.",
+      "right": "Nuestro café es pequeño.",
+      "why": "Close. Two owners, but one café: no *s*."
+    },
+    {
+      "wrong": "Vale y la su hermana hablan.",
+      "right": "Vale y su hermana hablan.",
+      "why": "*Su* already does the job of *la*. Never use both."
+    },
+    {
+      "wrong": "Mi papás viven en Toronto.",
+      "right": "Mis papás viven en Toronto.",
+      "why": "Two parents, so *mis*, with an *s*."
+    }
   ],
   "personal": "Think of a group you belong to: your family, your team, your flatmates. Write three lines about something that is yours together, using *nuestro*, *nuestra*, *nuestros* or *nuestras*."
 }

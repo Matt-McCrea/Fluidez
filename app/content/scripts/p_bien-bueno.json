@@ -6,24 +6,101 @@
     "en": "He's a good boss, but he doesn't cook well."
   },
   "examples": [
-    { "es": "Es un buen restaurante.", "en": "It's a good restaurant." },
-    { "es": "La comida es buena.", "en": "The food is good." },
-    { "es": "Hernando es un buen amigo.", "en": "Hernando is a good friend." },
-    { "es": "Las arepas de Vale son buenas.", "en": "Vale's arepas are good." },
-    { "es": "Vale cocina muy bien.", "en": "Vale cooks really well." },
-    { "es": "¿Cómo está tu papá?\nEstá muy bien.", "en": "How's your dad?\nHe's very well." }
+    {
+      "es": "Es un buen restaurante.",
+      "en": "It's a good restaurant."
+    },
+    {
+      "es": "La comida es buena.",
+      "en": "The food is good."
+    },
+    {
+      "es": "Hernando es un buen amigo.",
+      "en": "Hernando is a good friend."
+    },
+    {
+      "es": "Las arepas de Vale son buenas.",
+      "en": "Vale's arepas are good."
+    },
+    {
+      "es": "Vale cocina muy bien.",
+      "en": "Vale cooks really well."
+    },
+    {
+      "es": "¿Cómo está tu papá?\nEstá muy bien.",
+      "en": "How's your dad?\nHe's very well."
+    }
   ],
   "rule": "You've met good and well already. Now the endings.\n\n*Bueno* describes a person or thing, so it matches it like any describing word: *un amigo bueno*, *una comida buena*, *unos tintos buenos*, *unas arepas buenas*.\n\nOne twist: right before a masculine word, *bueno* drops its *o*: *un buen amigo*, *un buen restaurante*. Same meaning either way.\n\n*Bien* says how someone does something, or how someone is, and it never changes: *Vale cocina bien*, *estamos bien*.\n\nGood: *bueno*. Well or fine: *bien*.",
   "smallPrint": "Dropping the final *o* before a masculine word is called shortening (apocope). *Malo* does it too: *un mal día*.",
   "readAndPick": [
-    { "es": "Es un buen amigo.", "options": ["He's a good friend.", "She's a good friend.", "He's doing well, my friend."], "answer": 0 },
-    { "es": "Es una buena amiga.", "options": ["He's a good friend.", "She's a good friend."], "answer": 1 },
-    { "es": "Vale cocina muy bien.", "options": ["Vale cooks very good food.", "Vale cooks very well."], "answer": 1 },
-    { "es": "La comida es buena.", "options": ["The food is good.", "The meal went well."], "answer": 0 },
-    { "es": "Estoy bien.", "options": ["I'm good-looking.", "I'm fine."], "answer": 1 },
-    { "es": "Las arepas son buenas.", "options": ["The arepa is good.", "The arepas are good."], "answer": 1 },
-    { "es": "Mis primos son buenos estudiantes.", "options": ["My cousins are good students.", "My cousins study well.", "My cousin is a good student."], "answer": 0 },
-    { "es": "Mis abuelos están bien.", "options": ["My grandparents are good people.", "My grandparents are fine.", "My grandfather is fine."], "answer": 1 }
+    {
+      "es": "Es un buen amigo.",
+      "options": [
+        "He's a good friend.",
+        "She's a good friend.",
+        "He's doing well, my friend."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es una buena amiga.",
+      "options": [
+        "He's a good friend.",
+        "She's a good friend."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale cocina muy bien.",
+      "options": [
+        "Vale cooks very good food.",
+        "Vale cooks very well."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La comida es buena.",
+      "options": [
+        "The food is good.",
+        "The meal went well."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy bien.",
+      "options": [
+        "I'm good-looking.",
+        "I'm fine."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las arepas son buenas.",
+      "options": [
+        "The arepa is good.",
+        "The arepas are good."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mis primos son buenos estudiantes.",
+      "options": [
+        "My cousins are good students.",
+        "My cousins study well.",
+        "My cousin is a good student."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mis abuelos están bien.",
+      "options": [
+        "My grandparents are good people.",
+        "My grandparents are fine.",
+        "My grandfather is fine."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
@@ -53,19 +130,25 @@
     {
       "prompt": "It's a good restaurant.",
       "answer": "Es un buen restaurante.",
-      "accept": ["Es un restaurante bueno."],
+      "accept": [
+        "Es un restaurante bueno."
+      ],
       "why": "Before the noun it's *buen*; after it, *bueno*."
     },
     {
       "prompt": "My grandmother is a good person.",
       "answer": "Mi abuela es una buena persona.",
-      "accept": ["Mi abuela es una persona buena."],
-      "why": "*Persona* is feminine, so *buena*, even for a man."
+      "accept": [
+        "Mi abuela es una persona buena."
+      ],
+      "why": "*Persona* is feminine, so it's *buena*."
     },
     {
       "prompt": "Make it about we: *Estoy bien.*",
       "answer": "Estamos bien.",
-      "accept": ["Nosotros estamos bien."],
+      "accept": [
+        "Nosotros estamos bien."
+      ],
       "why": "Only the verb changes; *bien* stays *bien*."
     }
   ],
@@ -84,6 +167,11 @@
       "wrong": "Vale cocina muy buena.",
       "right": "Vale cocina muy bien.",
       "why": "For how she cooks, use *bien*; it never takes an ending."
+    },
+    {
+      "wrong": "Estoy bueno.",
+      "right": "Estoy bien.",
+      "why": "Careful. *Estoy bueno* about yourself means you think you're hot. For I'm fine, it's *estoy bien*."
     }
   ],
   "personal": "Think of someone who does one thing really well. Write who they are with *buen* or *buena*, and what they do with *bien*."

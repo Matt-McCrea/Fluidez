@@ -28,8 +28,8 @@
     },
     {
       "id": "t2",
-      "npc": "¿A las cinco? En Toronto nunca sales a las cinco.",
-      "npcEn": "At five? In Toronto you never leave at five.",
+      "npc": "¿A las cinco? ¿Tú? Tú nunca sales antes de las nueve.",
+      "npcEn": "At five? You? You never leave before nine.",
       "intent": "Say he's right, but Vale is very hard-working.",
       "accept": [
         "Tienes razón, papá. Pero Vale es muy trabajadora.",
@@ -103,7 +103,7 @@
       "npcEn": "Jaime? I don't know. I don't talk to my brother. Who talks about Jaime at the café?",
       "intent": "Say nobody does, but there's a photo of Jaime in Rosa's album.",
       "accept": [
-        "No, nadie. Pero hay una foto de Jaime en el álbum de Rosa.",
+        "Nadie, papá. Pero hay una foto de Jaime en el álbum de Rosa.",
         "No habla nadie. Pero hay una foto de Jaime en el álbum de Rosa.",
         "No, papá, nadie. Pero hay una foto de Jaime en el álbum de la abuela."
       ],
@@ -168,6 +168,7 @@
     "g:stem-boot",
     "g:yo-irregular",
     "l:abuela",
+    "l:antes",
     "l:año",
     "l:bien",
     "l:bueno",

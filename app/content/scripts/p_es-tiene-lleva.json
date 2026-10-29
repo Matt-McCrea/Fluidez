@@ -6,24 +6,102 @@
     "en": "He's tall, he has black hair and he's wearing a blue jacket."
   },
   "examples": [
-    { "es": "Es alto y delgado.", "en": "He's tall and thin." },
-    { "es": "Camila es baja y muy simpática.", "en": "Camila is short and really nice." },
-    { "es": "Vale tiene los ojos verdes y el pelo largo.", "en": "Vale has green eyes and long hair." },
-    { "es": "Hernando tiene el pelo blanco.", "en": "Hernando has white hair." },
-    { "es": "Hoy lleva una chaqueta roja.", "en": "Today he's wearing a red jacket." },
-    { "es": "¿Cómo es tu hermana?\nEs alta y tiene el pelo corto.", "en": "What's your sister like?\nShe's tall and has short hair." }
+    {
+      "es": "Es alto y delgado.",
+      "en": "He's tall and thin."
+    },
+    {
+      "es": "Mariana es baja y muy simpática.",
+      "en": "Mariana is short and really nice."
+    },
+    {
+      "es": "Camila tiene los ojos verdes y el pelo largo.",
+      "en": "Camila has green eyes and long hair."
+    },
+    {
+      "es": "Hernando tiene el pelo blanco.",
+      "en": "Hernando has white hair."
+    },
+    {
+      "es": "Hoy lleva una chaqueta roja.",
+      "en": "Today he's wearing a red jacket."
+    },
+    {
+      "es": "¿Cómo es tu hermana?\nEs alta y tiene el pelo corto.",
+      "en": "What's your sister like?\nShe's tall and has short hair."
+    }
   ],
   "rule": "Spanish splits a description across three verbs.\n\n*Es* for what someone is, the lasting stuff: *es alto*, *es simpática*.\n*Tiene* for features they have: *tiene el pelo largo*, *tiene los ojos verdes*.\n*Lleva* for what they're wearing today: *lleva una camisa blanca*.\n\nTwo English habits to drop. Hair and eyes take *el* and *los*, not his or her: *tiene los ojos azules*. And the colour comes after the thing: *una chaqueta roja*.\n\nStart big (who they are), then zoom in.",
   "smallPrint": "*Llevar* also means to carry or to take; with clothes it means to wear. Describing a person with *ser*, *tener* and *llevar* is one of the first set pieces in any Spanish course.",
   "readAndPick": [
-    { "es": "Lleva una camisa roja.", "options": ["He owns a red shirt.", "He's wearing a red shirt."], "answer": 1 },
-    { "es": "Es alta y tiene el pelo corto.", "options": ["She's tall and has short hair.", "He's tall and has short hair.", "She's short and has long hair."], "answer": 0 },
-    { "es": "Vale tiene los ojos negros.", "options": ["Vale has a black eye.", "Vale has dark eyes."], "answer": 1 },
-    { "es": "Hoy llevo una chaqueta azul.", "options": ["I have a blue jacket.", "Today she's wearing a blue jacket.", "Today I'm wearing a blue jacket."], "answer": 2 },
-    { "es": "Es bajo.", "options": ["He's short.", "She's short.", "He's tall."], "answer": 0 },
-    { "es": "Tengo el pelo largo.", "options": ["She has long hair.", "I have long hair.", "My hair is long today."], "answer": 1 },
-    { "es": "Es una chaqueta blanca.", "options": ["He's wearing a white jacket.", "It's a white jacket."], "answer": 1 },
-    { "es": "¿Cómo es tu novio?\nEs alto y muy simpático.", "options": ["What's your boyfriend like?\nHe's tall and really nice.", "How's your boyfriend?\nHe's fine and in a nice mood."], "answer": 0 }
+    {
+      "es": "Lleva una camisa roja.",
+      "options": [
+        "He owns a red shirt.",
+        "He's wearing a red shirt."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es alta y tiene el pelo corto.",
+      "options": [
+        "She's tall and has short hair.",
+        "He's tall and has short hair.",
+        "She's short and has long hair."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale tiene los ojos negros.",
+      "options": [
+        "Vale has a black eye.",
+        "Vale has dark eyes."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hoy llevo una chaqueta azul.",
+      "options": [
+        "I have a blue jacket.",
+        "Today she's wearing a blue jacket.",
+        "Today I'm wearing a blue jacket."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es bajo.",
+      "options": [
+        "He's short.",
+        "She's short.",
+        "He's tall."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo el pelo largo.",
+      "options": [
+        "She has long hair.",
+        "I have long hair.",
+        "My hair is long today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es una chaqueta blanca.",
+      "options": [
+        "He's wearing a white jacket.",
+        "It's a white jacket."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cómo es tu novio?\nEs alto y muy simpático.",
+      "options": [
+        "What's your boyfriend like?\nHe's tall and really nice.",
+        "How's your boyfriend?\nHe's fine and in a nice mood."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
     {
@@ -41,13 +119,17 @@
     {
       "prompt": "He's tall and thin.",
       "answer": "Es alto y delgado.",
-      "accept": ["Él es alto y delgado."],
+      "accept": [
+        "Él es alto y delgado."
+      ],
       "why": "What he is, the lasting stuff, takes *es*."
     },
     {
       "prompt": "She has green eyes.",
       "answer": "Tiene los ojos verdes.",
-      "accept": ["Ella tiene los ojos verdes."],
+      "accept": [
+        "Ella tiene los ojos verdes."
+      ],
       "why": "Eyes take *los*, not her, and the colour goes after."
     },
     {
@@ -59,13 +141,17 @@
     {
       "prompt": "Today I'm wearing a red jacket.",
       "answer": "Hoy llevo una chaqueta roja.",
-      "accept": ["Llevo una chaqueta roja hoy."],
+      "accept": [
+        "Llevo una chaqueta roja hoy."
+      ],
       "why": "What you have on today: *llevo*. *Chaqueta* is feminine, so *roja*."
     },
     {
       "prompt": "Make it about you (a woman speaking): *Es alta y tiene el pelo corto.*",
       "answer": "Soy alta y tengo el pelo corto.",
-      "accept": ["Yo soy alta y tengo el pelo corto."],
+      "accept": [
+        "Yo soy alta y tengo el pelo corto."
+      ],
       "why": "Same three verbs, in the I form: *soy*, *tengo*."
     }
   ],

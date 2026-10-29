@@ -2,7 +2,7 @@
   "id": "ch009",
   "unit": "u05",
   "title": "¿Es guapo?",
-  "text": "Lunes, seis de la mañana. La cafetera no funciona. Tomás hace el tinto en el chocolatero de Rosa.\nTomás: Hago el tinto como Rosa. Pongo el café, pongo el agua... ¿y ahora?\nRiiing. Es el teléfono de Vale.\nVale: ¿Aló? ¡Camila! ¡Y mamá! Tomás, es mi hermana, Camila, y mi mamá. De Medellín.\nMamá: ¿Y él es el canadiense? ¿Cómo es, Vale? ¿Es guapo?\nVale: Es... normal.\nCamila: ¿Normal? Mamá, es alto, no es bajo, y es guapo.\nTomás: Buenos días, señora. Soy Tomás, el canadiense normal.\nSimón: ¡Es normal! ¡Es normal!\nMamá: Tomás, ¿tienes hermanos?\nTomás: No, señora. Soy hijo único.\nMamá: ¿Y tienes novia?\nVale: ¡Mamá!\nTomás: No, señora. Tengo un café, un loro y veintiocho días.\nCamila: Y Vale tampoco tiene novio.\nVale: ¡Camila! Chao, chao.\nVale: Qué pena con usted, Tomás. Mi mamá es así.\nTomás: Tranquila. Yo hablo con mi papá los domingos. Pero nunca hablamos de Rosa.\nHernando: ¡Buenos días! Traigo fotos. ¡Fotos de mis nietos!\nSimón: ¿Tienes novia? ¿Tienes novia?\nVale: Rosa también tiene fotos, Tomás. Un álbum, allá.",
+  "text": "Lunes, seis de la mañana. La cafetera no funciona. Tomás hace el tinto en el chocolatero de Rosa.\nTomás: Hago el tinto como Rosa. Pongo el café, pongo el agua... ¿y ahora?\nRiiing. Es el teléfono de Vale.\nVale: ¿Aló? ¡Camila! ¡Y mamá! Tomás, es mi hermana, Camila, y mi mamá. De Medellín.\nMamá: ¿Y él es el canadiense? ¿Cómo es, Vale? ¿Es guapo?\nVale: Es... normal.\nCamila: ¿Normal? Mamá, es alto y es muy guapo.\nTomás: Buenos días, señora. Soy Tomás, el canadiense normal.\nSimón: ¡Es normal! ¡Es normal!\nCamila: Tomás, ¿tienes hermanos?\nTomás: No. Soy hijo único.\nMamá: ¿Y usted tiene novia?\nVale: ¡Mamá!\nTomás: No, señora. Tengo un café, un loro y veintiocho días.\nCamila: Y Vale tampoco tiene novio.\nVale: ¡Camila! Chao, chao.\nVale: ¡Ay, qué pena, Tomás! Mi mamá es así.\nTomás: Tranquila. Yo hablo con mi papá los domingos. Pero nunca hablamos de Rosa.\nHernando: ¡Buenos días! Traigo fotos. ¡Fotos de mis nietos!\nSimón: ¿Tiene novia? ¿Tiene novia?\nVale: Rosa también tiene fotos, Tomás. Un álbum, allá.",
   "gloss": [
     {
       "es": "la cafetera",
@@ -35,6 +35,10 @@
     {
       "es": "Tranquila",
       "en": "Don't worry (to a woman)"
+    },
+    {
+      "es": "¿Y usted tiene novia?",
+      "en": "And do you have a girlfriend? (she uses usted: he's a stranger to her)"
     }
   ],
   "questions": [
@@ -122,6 +126,7 @@
   ],
   "requires": [
     "c:alo",
+    "c:bien-y-tu",
     "c:chao-nos-vemos",
     "c:como-es",
     "c:es-que",
@@ -139,7 +144,8 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:yo-irregular",
-    "p:possessives-basic"
+    "p:possessives-basic",
+    "p:quantifiers-basic"
   ],
   "lexemes": [
     "l:agua",

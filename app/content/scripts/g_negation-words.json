@@ -6,27 +6,122 @@
     "en": "I don't know anything, Tomás."
   },
   "examples": [
-    { "es": "No hay nadie.", "en": "There's nobody here." },
-    { "es": "No sé nada.", "en": "I don't know anything." },
-    { "es": "Nadie habla del joven de la foto.", "en": "Nobody talks about the young man in the photo." },
-    { "es": "Hernando nunca llega tarde.", "en": "Hernando never arrives late." },
-    { "es": "No tomo cerveza nunca.", "en": "I never drink beer." },
-    { "es": "No tengo ninguna foto de mi abuelo.", "en": "I don't have a single photo of my grandfather." },
-    { "es": "No tengo hambre.\nYo tampoco.", "en": "I'm not hungry.\nMe neither." },
-    { "es": "¿Conoces a alguien en Bogotá?\nNo, a nadie.", "en": "Do you know anyone in Bogotá?\nNo, nobody." }
+    {
+      "es": "No hay nadie.",
+      "en": "There's nobody here."
+    },
+    {
+      "es": "No sé nada.",
+      "en": "I don't know anything."
+    },
+    {
+      "es": "Nadie habla del joven de la foto.",
+      "en": "Nobody talks about the young man in the photo."
+    },
+    {
+      "es": "Hernando nunca llega tarde.",
+      "en": "Hernando never arrives late."
+    },
+    {
+      "es": "No tomo cerveza nunca.",
+      "en": "I never drink beer."
+    },
+    {
+      "es": "No tengo ninguna foto de mi abuelo.",
+      "en": "I don't have a single photo of my grandfather."
+    },
+    {
+      "es": "No tengo hambre.\nYo tampoco.",
+      "en": "I'm not hungry.\nMe neither."
+    },
+    {
+      "es": "¿Conoces a alguien en Bogotá?\nNo, a nadie.",
+      "en": "Do you know anyone in Bogotá?\nNo, nobody."
+    }
   ],
   "rule": "Five words do the saying-no work:\n\n*nada*: nothing, anything\n*nadie*: nobody, anybody\n*nunca*: never\n*tampoco*: not either, neither\n*ningún*, *ninguna*: not one, no\n\nThe surprise: Spanish doubles up. If one of these words comes after the verb, *no* still goes in front: *No sé nada*, literally I don't know nothing. That isn't sloppy; it's the only right way.\n\nIf the word comes first, drop the *no*: *Nadie sabe*. *Nunca tomo cerveza* and *No tomo cerveza nunca* mean the same.\n\n*Ningún* goes before a masculine word, *ninguna* before a feminine one, and both stay singular: *ningún problema*, *ninguna foto*.\n\n*Tampoco* is the negative *también*: when someone says something negative that's true for you too, say *Yo tampoco*.",
   "smallPrint": "Teachers call this double negation. Standard English forbids it; Spanish requires it.",
   "readAndPick": [
-    { "es": "No hay nadie.", "options": ["There's nobody here.", "There's nothing here.", "There's somebody here."], "answer": 0 },
-    { "es": "Tomás no sabe nada.", "options": ["Tomás knows something.", "Nobody knows Tomás.", "Tomás doesn't know anything."], "answer": 2 },
-    { "es": "Nadie sabe nada.", "options": ["Nobody knows anything.", "He never knows anything.", "Nobody knows him."], "answer": 0 },
-    { "es": "Vale nunca llega tarde.", "options": ["Vale always arrives late.", "Vale never arrives late.", "Nobody arrives late."], "answer": 1 },
-    { "es": "No tengo ningún problema.", "options": ["Nobody has a problem.", "I have a small problem.", "I don't have any problem."], "answer": 2 },
-    { "es": "No me gusta el té.\nA mí tampoco.", "options": ["I don't like tea.\nI do.", "I don't like tea.\nMe neither.", "I don't like tea.\nMe too."], "answer": 1 },
-    { "es": "Alguien está en la puerta.", "options": ["Nobody's at the door.", "Somebody's at the door."], "answer": 1 },
-    { "es": "No conozco a nadie aquí.", "options": ["I don't know anybody here.", "Nobody knows me here.", "I know somebody here."], "answer": 0 },
-    { "es": "No compré nada ayer.", "options": ["I bought something yesterday.", "Nobody bought anything yesterday.", "I didn't buy anything yesterday."], "answer": 2 }
+    {
+      "es": "No hay nadie.",
+      "options": [
+        "There's nobody here.",
+        "There's nothing here.",
+        "There's somebody here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás no sabe nada.",
+      "options": [
+        "Tomás knows something.",
+        "Nobody knows Tomás.",
+        "Tomás doesn't know anything."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Nadie sabe nada.",
+      "options": [
+        "Nobody knows anything.",
+        "He never knows anything.",
+        "Nobody knows him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale nunca llega tarde.",
+      "options": [
+        "Vale always arrives late.",
+        "Vale never arrives late.",
+        "Nobody arrives late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tengo ningún problema.",
+      "options": [
+        "Nobody has a problem.",
+        "I have a small problem.",
+        "I don't have any problem."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No me gusta el té.\nA mí tampoco.",
+      "options": [
+        "I don't like tea.\nI do.",
+        "I don't like tea.\nMe neither.",
+        "I don't like tea.\nMe too."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hay alguien en la puerta.",
+      "options": [
+        "Nobody's at the door.",
+        "Somebody's at the door."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No conozco a nadie aquí.",
+      "options": [
+        "I don't know anybody here.",
+        "Nobody knows me here.",
+        "I know somebody here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No compré nada ayer.",
+      "options": [
+        "I bought something yesterday.",
+        "Nobody bought anything yesterday.",
+        "I didn't buy anything yesterday."
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
     {
@@ -50,19 +145,26 @@
     {
       "prompt": "I don't know anything.",
       "answer": "No sé nada.",
-      "accept": ["Yo no sé nada."],
+      "accept": [
+        "Yo no sé nada."
+      ],
       "why": "*No* before the verb, *nada* after it."
     },
     {
       "prompt": "Nobody knows.",
       "answer": "Nadie sabe.",
-      "accept": ["No sabe nadie."],
+      "accept": [
+        "No sabe nadie."
+      ],
       "why": "With *nadie* first, you don't need *no*."
     },
     {
       "prompt": "Vale never arrives late.",
       "answer": "Vale nunca llega tarde.",
-      "accept": ["Vale no llega nunca tarde.", "Vale no llega tarde nunca."],
+      "accept": [
+        "Vale no llega nunca tarde.",
+        "Vale no llega tarde nunca."
+      ],
       "why": "*Nunca* before the verb works alone; after it, add *no*."
     },
     {
@@ -74,7 +176,9 @@
     {
       "prompt": "Make it negative with *nunca*: *Hernando siempre habla de su esposa.*",
       "answer": "Hernando nunca habla de su esposa.",
-      "accept": ["Hernando no habla nunca de su esposa."],
+      "accept": [
+        "Hernando no habla nunca de su esposa."
+      ],
       "why": "*Nunca* takes the place of *siempre*; before the verb, no extra *no*."
     },
     {

@@ -121,9 +121,9 @@
       "npcEn": "Good afternoon! Dark-haired and hard-working? Thanks. Tomás, and who's the lady?",
       "intent": "Introduce Lucía to Vale: she's Don Hernando's daughter.",
       "accept": [
-        "Vale, te presento a Lucía, la hija de Don Hernando.",
-        "Te presento a Lucía. Es la hija de Don Hernando.",
-        "Vale, te presento a Lucía. Es la hija de Don Hernando."
+        "Vale, te presento a Lucía, la hija de don Hernando.",
+        "Te presento a Lucía. Es la hija de don Hernando.",
+        "Vale, te presento a Lucía. Es la hija de don Hernando."
       ],
       "require": [
         {

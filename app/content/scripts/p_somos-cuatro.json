@@ -2,34 +2,118 @@
   "node": "p:somos-cuatro",
   "hook": {
     "line": "Ask about someone's family in Colombia and you'll hear how many they are before you hear a single name. English needs \"there are five of us\"; Spanish just says we are five.",
-    "es": "En mi familia somos cinco: mis papás, Camila, mi hermano y yo.",
-    "en": "There are five of us in my family: my parents, Camila, my brother and me."
+    "es": "En mi familia somos tres: mi mamá, Camila y yo.",
+    "en": "There are three of us in my family: my mum, Camila and me."
   },
   "examples": [
-    { "es": "Somos cuatro.", "en": "There are four of us." },
-    { "es": "¿Cuántos son en tu casa?\nSomos tres.", "en": "How many of you are there at home?\nThere are three of us." },
-    { "es": "En el café somos tres: Tomás, Vale y Simón.", "en": "There are three of us in the café: Tomás, Vale and Simón." },
-    { "es": "¿Cuántos son ustedes?", "en": "How many of you are there?" },
-    { "es": "Ellos son seis.", "en": "There are six of them." },
-    { "es": "Hoy somos pocos.", "en": "There aren't many of us today." }
+    {
+      "es": "Somos cuatro.",
+      "en": "There are four of us."
+    },
+    {
+      "es": "¿Cuántos son en tu casa?\nSomos tres.",
+      "en": "How many of you are there at home?\nThere are three of us."
+    },
+    {
+      "es": "En el café somos tres: Tomás, Vale y Simón.",
+      "en": "There are three of us in the café: Tomás, Vale and Simón."
+    },
+    {
+      "es": "¿Cuántos son ustedes?",
+      "en": "How many of you are there?"
+    },
+    {
+      "es": "Ellos son seis.",
+      "en": "There are six of them."
+    },
+    {
+      "es": "Hoy somos pocos.",
+      "en": "There aren't many of us today."
+    }
   ],
-  "rule": "To say how many people are in a group, use *ser* and the number. No word for of us or of them:\n*Somos cinco.* There are five of us.\n*Son cinco.* There are five of them, or five of you all.\n\nTo ask, use *¿Cuántos son?* For a friend's family: *¿Cuántos son en tu casa?*\n\nDon't build it from English with *hay*: that sounds like you're counting strangers.",
+  "rule": "To say how many people are in a group, use *ser* and the number. No word for of us or of them:\n*Somos cinco.* There are five of us.\n*Son cinco.* There are five of them, or five of you all.\n\nTo ask, use *¿Cuántos son?* For a friend's family: *¿Cuántos son en tu casa?*\n\nDon't build it from English: *hay cinco de nosotros* is a word-for-word translation nobody says.",
   "smallPrint": "This is just *ser* with a number. Teachers sometimes call it the quantifying use of *ser*.",
   "readAndPick": [
-    { "es": "Somos cinco.", "options": ["There are five of us.", "There are five of them.", "I'm five."], "answer": 0 },
-    { "es": "Son cuatro.", "options": ["There are four of us.", "There are four of them.", "It's four o'clock."], "answer": 1 },
-    { "es": "En mi familia somos seis.", "options": ["There are six of them in my family.", "My family is six years old.", "There are six of us in my family."], "answer": 2 },
-    { "es": "¿Cuántos son ustedes?", "options": ["How many of you are there?", "How many of us are there?", "How old are you all?"], "answer": 0 },
-    { "es": "Hoy somos pocos.", "options": ["There are a lot of us today.", "There aren't many of us today.", "There aren't many of them today."], "answer": 1 },
-    { "es": "En el café son tres.", "options": ["There are three of us in the café.", "The café is three years old.", "There are three of them in the café."], "answer": 2 },
-    { "es": "¿Cuántos son en tu casa?", "options": ["How many of you are there at home? (to a friend)", "How many houses do you have? (to a friend)", "How many of us are there at home?"], "answer": 0 },
-    { "es": "Ustedes son siete.", "options": ["There are seven of us.", "There are seven of you.", "You're seven years old."], "answer": 1 }
+    {
+      "es": "Somos cinco.",
+      "options": [
+        "There are five of us.",
+        "There are five of them.",
+        "I'm five."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Son cuatro.",
+      "options": [
+        "There are four of us.",
+        "There are four of them.",
+        "It's four o'clock."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En mi familia somos seis.",
+      "options": [
+        "There are six of them in my family.",
+        "My family is six years old.",
+        "There are six of us in my family."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Cuántos son ustedes?",
+      "options": [
+        "How many of you are there?",
+        "How many of us are there?",
+        "How old are you all?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hoy somos pocos.",
+      "options": [
+        "There are a lot of us today.",
+        "There aren't many of us today.",
+        "There aren't many of them today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En el café son tres.",
+      "options": [
+        "There are three of us in the café.",
+        "The café is three years old.",
+        "There are three of them in the café."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Cuántos son en tu casa?",
+      "options": [
+        "How many of you are there at home? (to a friend)",
+        "How many houses do you have? (to a friend)",
+        "How many of us are there at home?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ustedes son siete.",
+      "options": [
+        "There are seven of us.",
+        "There are seven of you.",
+        "You're seven years old."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
       "prompt": "Fill the gap and type the whole sentence: En mi familia ___ cuatro. (somos / son) There are four of us.",
       "answer": "En mi familia somos cuatro.",
-      "accept": ["Somos cuatro en mi familia."],
+      "accept": [
+        "Somos cuatro en mi familia."
+      ],
       "why": "Of us means we: *somos*."
     },
     {
@@ -41,38 +125,60 @@
     {
       "prompt": "There are three of us.",
       "answer": "Somos tres.",
-      "accept": ["Nosotros somos tres."],
+      "accept": [
+        "Nosotros somos tres."
+      ],
       "why": "*Ser* plus the number; no word for of us."
     },
     {
       "prompt": "Ask a friend: How many of you are there at home?",
       "answer": "¿Cuántos son en tu casa?",
-      "accept": ["¿En tu casa cuántos son?"],
+      "accept": [
+        "¿En tu casa cuántos son?"
+      ],
       "why": "Ask with *¿Cuántos son?* and say where."
     },
     {
       "prompt": "There are five of us in my family.",
       "answer": "En mi familia somos cinco.",
-      "accept": ["Somos cinco en mi familia."],
+      "accept": [
+        "Somos cinco en mi familia."
+      ],
       "why": "Say the group, then *somos* and the number."
     },
     {
       "prompt": "Make it about them: Somos cuatro.",
       "answer": "Son cuatro.",
-      "accept": ["Ellos son cuatro."],
+      "accept": [
+        "Ellos son cuatro."
+      ],
       "why": "From we to they: *somos* becomes *son*."
     },
     {
       "prompt": "Add one person: En el café somos tres.",
       "answer": "En el café somos cuatro.",
-      "accept": ["Somos cuatro en el café."],
+      "accept": [
+        "Somos cuatro en el café."
+      ],
       "why": "Only the number changes; *somos* stays."
     }
   ],
   "pitfalls": [
-    { "wrong": "Hay cinco de nosotros en mi familia.", "right": "En mi familia somos cinco.", "why": "Almost. Spanish has no of us here: just *somos* and the number." },
-    { "wrong": "En mi familia estamos cinco.", "right": "En mi familia somos cinco.", "why": "Counting a group uses *ser*: *somos*." },
-    { "wrong": "Son cuatro en mi familia, mis papás, mi hermana y yo.", "right": "Somos cuatro en mi familia.", "why": "If you're in the group, it's *somos*, not *son*." }
+    {
+      "wrong": "Hay cinco de nosotros en mi familia.",
+      "right": "En mi familia somos cinco.",
+      "why": "Almost. Spanish has no of us here: just *somos* and the number."
+    },
+    {
+      "wrong": "En mi familia estamos cinco.",
+      "right": "En mi familia somos cinco.",
+      "why": "Counting a group uses *ser*: *somos*."
+    },
+    {
+      "wrong": "Son cuatro en mi familia, mis papás, mi hermana y yo.",
+      "right": "Somos cuatro en mi familia.",
+      "why": "If you're in the group, it's *somos*, not *son*."
+    }
   ],
   "personal": "How many of you are there in your family, or in your home? Write it with *somos*, then name everyone."
 }

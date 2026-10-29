@@ -2,7 +2,7 @@
  "id": "ch011",
  "unit": "u05",
  "title": "Nadie sabe nada",
- "text": "Tomás pregunta a todos. Nadie sabe nada.\nTomás: Vale, ¿quién es el hombre de la foto?\nVale: No sé, Tomás. Nunca vi la foto.\nTomás: Don Hernando, usted conoce a todo el barrio.\nHernando: ¿Yo? No conozco a nadie.\nTomás: ¿Qué edad tiene él en la foto? ¿Veinte años?\nHernando: No sé su edad. No sé su nombre. No sé nada.\nSimón: ¡No sé nada! ¡No sé nada!\nTomás: ¿Era un amigo de Rosa? ¿Un cliente?\nHernando: Era un chico tímido. Muy trabajador. Y Rosa...\nHernando no termina.\nTomás: ¿Y Rosa qué, Don Hernando?\nHernando: Nada. Hoy pago yo el tinto. Soy un hombre generoso.\nVale: ¿Usted? ¿Generoso? Usted nunca paga.\nHernando sale del café. Son las cuatro de la tarde. Hernando nunca sale a las cuatro.\nVale: Tomás, tú no eres perezoso. Eres trabajador, como Rosa. Y un poco tímido, como él.\nTomás mira la foto otra vez. En la foto hay un número: 1978.\nTomás: Quedan veinticinco días. Y tengo dos preguntas.",
+ "text": "Tomás pregunta a todos. Nadie sabe nada.\nTomás: Vale, ¿quién es el hombre de la foto?\nVale: No sé, Tomás. Nunca vi la foto.\nTomás: Don Hernando, usted conoce a todo el barrio.\nHernando: ¿Yo? No conozco a nadie.\nTomás: ¿Qué edad tiene él en la foto? ¿Veinte años?\nHernando: No sé su edad. No sé su nombre. No sé nada.\nSimón: ¡No sé nada! ¡No sé nada!\nTomás: ¿Era un amigo de Rosa? ¿Un cliente?\nHernando: Era un chico tímido. Muy trabajador. Y Rosa...\nHernando no termina.\nTomás: ¿Y Rosa qué, don Hernando?\nHernando: Nada. Hoy pago yo el tinto. Soy un hombre generoso.\nVale: ¿Usted? ¿Generoso? Usted nunca paga.\nHernando sale del café. Son las cuatro de la tarde. Hernando nunca sale a las cuatro.\nVale: Tomás, tú no eres perezoso. Eres trabajador, como Rosa. Y un poco tímido, como él.\nTomás mira la foto otra vez. En la foto hay un número: 1978.\nTomás: Quedan veinticinco días. Y tengo dos preguntas.",
  "gloss": [
   {
    "es": "Nunca vi la foto",
@@ -57,7 +57,7 @@
    "options": [
     "A las cuatro de la tarde",
     "A las seis de la mañana",
-    "Con Simón"
+    "A las ocho de la noche"
    ],
    "answer": 0
   },
