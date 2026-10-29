@@ -1,0 +1,236 @@
+{
+  "id": "sc-u16-b",
+  "unit": "u16",
+  "title": "Watch and learn",
+  "brief": "You're Tomás. Vale has just seen what you paid for the café's t-shirts, and now she's taking charge of the chairs. Answer her, help her choose, and watch a master at work. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, ¿cuatro camisetas, ochenta mil pesos? ¿Y no pediste descuento?",
+      "npcEn": "Tomás, four t-shirts, eighty thousand pesos? And you didn't ask for a discount?",
+      "intent": "Say no, because the lady seemed very nice to you.",
+      "accept": [
+        "No, porque la señora me pareció muy amable.",
+        "No. La señora me pareció muy amable.",
+        "No, la señora me pareció muy amable."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me pareci[oó]",
+          "flags": "i",
+          "label": "she seemed nice to me: me pareció amable"
+        }
+      ],
+      "focus": "g:parecer-quedar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Amable? Ay, Tomás. Bueno, ahora las sillas. Yo hablo, tú no. ¿Cuál te gusta, la negra o la gris?",
+      "npcEn": "Nice? Oh, Tomás. Right, now the chairs. I talk, you don't. Which one do you like, the black one or the grey one?",
+      "intent": "Say you like the grey one better; it's the prettiest.",
+      "accept": [
+        "Me gusta más la gris. Es la más bonita.",
+        "La gris. Es la más bonita de todas.",
+        "Prefiero la gris, porque es la más bonita."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "la gris",
+          "flags": "i",
+          "label": "the grey one: la gris (no silla needed)"
+        },
+        {
+          "type": "regex",
+          "pattern": "la m[aá]s bonita",
+          "flags": "i",
+          "label": "the prettiest: la más bonita"
+        }
+      ],
+      "focus": "p:el-rojo-la-grande",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿La gris? Es la más cara, claro. Es carísima. ¿Cuántas necesitamos?",
+      "npcEn": "The grey one? It's the most expensive, of course. It's really pricey. How many do we need?",
+      "intent": "Say you need twelve, and ask if she's going to buy them today.",
+      "accept": [
+        "Necesitamos doce. ¿Las vas a comprar hoy?",
+        "Doce. ¿Vas a comprarlas hoy?",
+        "Necesitamos doce sillas. ¿Las vas a comprar hoy?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "las vas a comprar|vas a comprarlas",
+          "flags": "i",
+          "label": "buy them: las vas a comprar, or vas a comprarlas"
+        },
+        {
+          "type": "question",
+          "label": "ask her: end with a question"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ya las compré. Doce sillas grises, trescientos mil. El señor quería quinientos.",
+      "npcEn": "I've already bought them. Twelve grey chairs, three hundred thousand. The man wanted five hundred.",
+      "intent": "Tell her she's the best.",
+      "accept": [
+        "¡Eres la mejor!",
+        "Vale, eres la mejor.",
+        "¡Increíble! Eres la mejor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "eres la mejor",
+          "flags": "i",
+          "label": "you're the best: eres la mejor"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted"
+          ],
+          "label": "Vale is your friend: use tú (eres)"
+        }
+      ],
+      "focus": "g:superlatives",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Gracias. Pero tenemos un problema: no tenemos carro. ¿Quién nos ayuda con las sillas?",
+      "npcEn": "Thanks. But we have a problem: we don't have a car. Who's going to help us with the chairs?",
+      "intent": "Say Hernando can take them to you tomorrow in his taxi.",
+      "accept": [
+        "Mañana Hernando nos las lleva en su taxi.",
+        "Tranquila, Hernando nos las puede llevar mañana en su taxi.",
+        "Mañana Hernando puede llevárnoslas en su taxi."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "nos las|llev[aá]rnoslas",
+          "flags": "i",
+          "label": "take them to us: nos las lleva (nos first, then las)"
+        }
+      ],
+      "focus": "g:double-pronouns",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Claro, Hernando! Bueno, tengo hambre. ¿Vamos a comer empanadas?",
+      "npcEn": "Of course, Hernando! Right, I'm hungry. Shall we go and eat some empanadas?",
+      "intent": "Say yes, and that today you're paying.",
+      "accept": [
+        "Sí, vamos. Hoy pago yo.",
+        "Claro. Pero hoy pago yo.",
+        "Listo, vamos. Hoy yo pago."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "pago yo|yo pago",
+          "flags": "i",
+          "label": "I'm paying: hoy pago yo"
+        }
+      ],
+      "focus": "g:present-ar",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:compre-trabaje",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:me-gusta",
+    "c:muy-amable",
+    "c:porque",
+    "c:tengo",
+    "c:tienes",
+    "c:tranquilo",
+    "c:vamos-a",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:imperfect-habitual",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:superlatives",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:amable",
+    "l:ayudar",
+    "l:bonito",
+    "l:bueno",
+    "l:camiseta",
+    "l:cara",
+    "l:caro",
+    "l:carro",
+    "l:claro",
+    "l:comer",
+    "l:comprar",
+    "l:cuál",
+    "l:cuánto",
+    "l:descuento",
+    "l:empanada",
+    "l:gris",
+    "l:gustar",
+    "l:hablar",
+    "l:hambre",
+    "l:hoy",
+    "l:increíble",
+    "l:ir",
+    "l:listo",
+    "l:llevar",
+    "l:mañana",
+    "l:mejor",
+    "l:necesitar",
+    "l:negro",
+    "l:pagar",
+    "l:parecer",
+    "l:pedir",
+    "l:peso",
+    "l:poder",
+    "l:preferir",
+    "l:problema",
+    "l:querer",
+    "l:quién",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:silla",
+    "l:taxi",
+    "l:tener",
+    "l:tranquilo",
+    "p:el-azul",
+    "p:el-rojo-la-grande",
+    "p:gustar-mas-que",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:prefieres-x-o-y",
+    "p:tener-hambre"
+  ]
+}

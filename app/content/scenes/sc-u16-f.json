@@ -1,0 +1,243 @@
+{
+  "id": "sc-u16-f",
+  "unit": "u16",
+  "title": "A sweater for Toronto",
+  "brief": "You're Tomás. It's November and your dad in Toronto is complaining about the cold, so you go into a shop in the centre to buy him a present. Choose a sweater, check the size, and get it sent. The assistant is a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, señor. ¿Qué está buscando?",
+      "npcEn": "Good morning, sir. What are you looking for?",
+      "intent": "Say you're looking for a sweater for your dad; he lives in Toronto.",
+      "accept": [
+        "Busco un suéter para mi papá. Él vive en Toronto.",
+        "Estoy buscando un suéter para mi papá. Vive en Toronto.",
+        "Busco un suéter para mi papá, que vive en Toronto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "para mi pap[aá]",
+          "flags": "i",
+          "label": "for my dad: para mi papá"
+        }
+      ],
+      "focus": "p:para-inf",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¡Uy, en Toronto hace mucho frío! Mire este gris. Es el más bonito de la tienda.",
+      "npcEn": "Wow, it's very cold in Toronto! Look at this grey one. It's the nicest in the shop.",
+      "intent": "Ask what it's made of.",
+      "accept": [
+        "¿De qué es?",
+        "¿De qué es este suéter?",
+        "Es bonito. ¿De qué es?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "de qu[eé] es",
+          "flags": "i",
+          "label": "what it's made of: ¿de qué es?"
+        },
+        {
+          "type": "question",
+          "label": "ask her: end with a question"
+        }
+      ],
+      "focus": "p:ser-de-material",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Es de lana, señor. Cuesta ciento veinte mil. ¿Qué talla usa su papá?",
+      "npcEn": "It's wool, sir. It's a hundred and twenty thousand. What size does your dad wear?",
+      "intent": "Say he wears a large, and ask if she has it in blue too.",
+      "accept": [
+        "Usa talla L. ¿Lo tiene también en azul?",
+        "Talla L. ¿Lo tiene en azul también?",
+        "Él usa la L. ¿También lo tiene en azul?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "lo tiene",
+          "flags": "i",
+          "label": "do you have it: ¿lo tiene…? (el suéter, so lo)"
+        },
+        {
+          "type": "question",
+          "label": "ask her: end with a question"
+        }
+      ],
+      "focus": "c:tiene-otra-talla",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "En azul sí, en L. Aquí está. ¿Cuál prefiere?",
+      "npcEn": "In blue, yes, in a large. Here it is. Which one do you prefer?",
+      "intent": "Say you prefer the blue one, and you'll take it.",
+      "accept": [
+        "Prefiero el azul. Me lo llevo.",
+        "Me gusta más el azul. Me lo llevo.",
+        "El azul, por favor. Me lo llevo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "el azul",
+          "flags": "i",
+          "label": "the blue one: el azul"
+        },
+        {
+          "type": "regex",
+          "pattern": "me lo llevo",
+          "flags": "i",
+          "label": "I'll take it: me lo llevo (el suéter)"
+        }
+      ],
+      "focus": "p:el-azul",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Es un regalo para Canadá? Nosotros también mandamos regalos a otros países.",
+      "npcEn": "Is it a present for Canada? We also send presents to other countries.",
+      "intent": "Ask if they can send it to him this week.",
+      "accept": [
+        "¿Se lo pueden mandar esta semana?",
+        "¿Pueden mandárselo esta semana?",
+        "¡Qué bien! ¿Se lo mandan esta semana?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "se lo|ndárselo",
+          "flags": "i",
+          "label": "send it to him: se lo mandan (le + lo becomes se lo)"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "le lo"
+          ],
+          "label": "never le lo: say se lo"
+        }
+      ],
+      "focus": "x:le-se-lo",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Claro. Llega en diez días. ¿Qué le escribimos en la tarjeta?",
+      "npcEn": "Of course. It arrives in ten days. What shall we write on the card?",
+      "intent": "Write: Dad, this is the best sweater in Bogotá. A hug, Tomás.",
+      "accept": [
+        "Papá, este es el mejor suéter de Bogotá. Un abrazo, Tomás.",
+        "Papá, es el mejor suéter de Bogotá. Un abrazo, Tomás.",
+        "Papá: este es el mejor suéter de Bogotá. Un abrazo, Tomás."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "el mejor su[eé]ter",
+          "flags": "i",
+          "label": "the best sweater: el mejor suéter de Bogotá"
+        }
+      ],
+      "focus": "g:superlatives",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:en-que-le-puedo-servir",
+    "c:hola-buenos-dias",
+    "c:me-gusta",
+    "c:me-lo-llevo",
+    "c:por-favor",
+    "c:que-bien",
+    "c:tienes",
+    "c:un-abrazo",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:superlatives",
+    "g:verb-infinitive",
+    "l:abrazo",
+    "l:aquí",
+    "l:azul",
+    "l:bien",
+    "l:bonito",
+    "l:bueno",
+    "l:buscar",
+    "l:claro",
+    "l:costar",
+    "l:cuál",
+    "l:día",
+    "l:escribir",
+    "l:estar",
+    "l:favor",
+    "l:frío",
+    "l:gris",
+    "l:gustar",
+    "l:hacer",
+    "l:lana",
+    "l:llegar",
+    "l:llevarse",
+    "l:mandar",
+    "l:mejor",
+    "l:mirar",
+    "l:papá",
+    "l:país",
+    "l:poder",
+    "l:preferir",
+    "l:qué",
+    "l:regalo",
+    "l:semana",
+    "l:ser",
+    "l:señor",
+    "l:suéter",
+    "l:talla",
+    "l:tarjeta",
+    "l:tener",
+    "l:tienda",
+    "l:usar",
+    "l:vivir",
+    "p:aqui-ahi-alla",
+    "p:costar-pagar",
+    "p:demonstratives-basic",
+    "p:el-azul",
+    "p:el-rojo-la-grande",
+    "p:estar-hecho-de",
+    "p:gustar-mas-que",
+    "p:hace-frio",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:prefieres-x-o-y",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:request-ladder",
+    "p:ser-de-material",
+    "p:talla-numero",
+    "p:tambien-tampoco"
+  ]
+}

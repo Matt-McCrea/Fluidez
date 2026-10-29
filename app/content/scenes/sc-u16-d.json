@@ -1,0 +1,233 @@
+{
+  "id": "sc-u16-d",
+  "unit": "u16",
+  "title": "Black boots",
+  "brief": "You're Tomás. Bogotá's rain has ruined your tennis shoes, so you walk into a shoe shop on Carrera Séptima. Look around, try on some boots and pay for them. The shop assistant is a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes, señor. ¿Le puedo colaborar en algo?",
+      "npcEn": "Good afternoon, sir. Can I help you with anything?",
+      "intent": "Say no thanks, you're just looking.",
+      "accept": [
+        "No, gracias. Solo estoy mirando.",
+        "Gracias, solo estoy mirando.",
+        "Por ahora no, gracias. Solo estoy mirando."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "solo estoy mirando",
+          "flags": "i",
+          "label": "just looking: solo estoy mirando"
+        }
+      ],
+      "focus": "c:solo-estoy-mirando",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Listo, tranquilo. Pero mire, las botas tienen descuento hoy.",
+      "npcEn": "OK, no problem. But look, the boots have a discount today.",
+      "intent": "Ask if the black boots are made of leather.",
+      "accept": [
+        "¿Las botas negras son de cuero?",
+        "¿Estas botas negras son de cuero?",
+        "¿Y las botas negras? ¿Son de cuero?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "son de cuero",
+          "flags": "i",
+          "label": "made of leather: son de cuero"
+        },
+        {
+          "type": "question",
+          "label": "ask her: end with a question"
+        }
+      ],
+      "focus": "p:ser-de-material",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Sí, señor, de cuero colombiano. ¿Qué número calza?",
+      "npcEn": "Yes, sir, Colombian leather. What shoe size are you?",
+      "intent": "Say you take a 43, and ask if you can try them on.",
+      "accept": [
+        "Calzo 43. ¿Me las puedo medir?",
+        "Calzo cuarenta y tres. ¿Me las puedo probar?",
+        "El 43. ¿Puedo medírmelas?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me las puedo (medir|probar)|puedo (medírmelas|probármelas)",
+          "flags": "i",
+          "label": "try them on: ¿me las puedo medir? (las botas, so las)"
+        },
+        {
+          "type": "question",
+          "label": "ask her: end with a question"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Aquí están. ¿Cómo le quedan?",
+      "npcEn": "Here they are. How do they fit you?",
+      "intent": "Say they fit you well, and ask if she has them in another colour.",
+      "accept": [
+        "Me quedan bien. ¿Las tiene en otro color?",
+        "Me quedan bien, pero ¿las tiene en otro color?",
+        "Me quedan muy bien. ¿Hay en otro color?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "en otro color",
+          "flags": "i",
+          "label": "in another colour: ¿las tiene en otro color?"
+        },
+        {
+          "type": "regex",
+          "pattern": "me quedan",
+          "flags": "i",
+          "label": "they fit me: me quedan (las botas, so quedan)"
+        }
+      ],
+      "focus": "p:colour-claro-oscuro",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Tengo unas grises, pero solo en 41. Lo siento.",
+      "npcEn": "I have some grey ones, but only in a 41. I'm sorry.",
+      "intent": "Say what a shame; then you'll take the black ones.",
+      "accept": [
+        "¡Qué pena! Entonces me llevo las negras.",
+        "Bueno, entonces me llevo las negras.",
+        "Qué pena. Entonces las negras. Me las llevo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "las negras",
+          "flags": "i",
+          "label": "the black ones: las negras"
+        }
+      ],
+      "focus": "p:el-azul",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Muy bien. Son doscientos mil. ¿Tarjeta o efectivo?\n¿Crédito? ¿A cuántas cuotas?",
+      "npcEn": "Very good. That's two hundred thousand. Card or cash?\nCredit? How many instalments?",
+      "intent": "Say by credit card, in three instalments.",
+      "accept": [
+        "Con tarjeta de crédito, a tres cuotas.",
+        "Tarjeta de crédito. A tres cuotas, por favor.",
+        "Crédito, a tres cuotas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "tres cuotas",
+          "flags": "i",
+          "label": "in three instalments: a tres cuotas"
+        }
+      ],
+      "focus": "c:a-cuantas-cuotas",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-cuantas-cuotas",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:en-que-le-puedo-servir",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:lo-siento-pero-no-puedo",
+    "c:por-favor",
+    "c:puedo",
+    "c:que-pena",
+    "c:solo-estoy-mirando",
+    "c:tarjeta-o-efectivo",
+    "c:tengo",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:present-ar",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:aquí",
+    "l:bien",
+    "l:bota",
+    "l:buena",
+    "l:bueno",
+    "l:colaborar",
+    "l:colombiano",
+    "l:color",
+    "l:crédito",
+    "l:cuero",
+    "l:cuota",
+    "l:cuánto",
+    "l:cómo",
+    "l:descuento",
+    "l:efectivo",
+    "l:estar",
+    "l:favor",
+    "l:gris",
+    "l:hoy",
+    "l:listo",
+    "l:llevarse",
+    "l:medir",
+    "l:mirar",
+    "l:negro",
+    "l:número",
+    "l:pena",
+    "l:poder",
+    "l:probarse",
+    "l:quedar",
+    "l:qué",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:tarde",
+    "l:tarjeta",
+    "l:tener",
+    "l:tranquilo",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:colour-claro-oscuro",
+    "p:dates-years",
+    "p:el-azul",
+    "p:el-rojo-la-grande",
+    "p:estar-hecho-de",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:ser-de-material",
+    "p:talla-numero"
+  ]
+}

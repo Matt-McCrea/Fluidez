@@ -1,0 +1,223 @@
+{
+  "id": "sc-u16-a",
+  "unit": "u16",
+  "title": "Green for the café",
+  "brief": "You're Tomás. You're in San Victorino buying t-shirts for the café, while Vale fights over chairs two stalls down. Find the right shirts, try one on, and pay. The stallholder is a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Siga, joven, siga! ¿En qué le puedo servir?",
+      "npcEn": "Come in, young man, come in! How can I help you?",
+      "intent": "Say you're looking for green t-shirts for your café.",
+      "accept": [
+        "Busco camisetas verdes para mi café.",
+        "Buenos días. Estoy buscando camisetas verdes para el café.",
+        "Hola. Busco unas camisetas verdes para mi café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "camisetas verdes",
+          "flags": "i",
+          "label": "green t-shirts: camisetas verdes (plural, so verdes too)"
+        }
+      ],
+      "focus": "g:adjective-agreement",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Tengo estas, de algodón. Son las más baratas del almacén. ¿Qué talla usa?",
+      "npcEn": "I have these ones, in cotton. They're the cheapest in the shop. What size do you wear?",
+      "intent": "Say you wear a medium, and ask if you can try one on.",
+      "accept": [
+        "Uso talla M. ¿Me la puedo medir?",
+        "Talla M. ¿Me la puedo probar?",
+        "Uso la M. ¿Puedo medírmela?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me la puedo (medir|probar)|puedo (medírmela|probármela)",
+          "flags": "i",
+          "label": "try it on: ¿me la puedo medir? (la camiseta, so la)"
+        },
+        {
+          "type": "question",
+          "label": "ask her: end with a question"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Claro que sí. Aquí tiene. ¿Cómo le queda?",
+      "npcEn": "Of course. Here you are. How does it fit you?",
+      "intent": "Say it's big on you, and ask if she has it in another size.",
+      "accept": [
+        "Me queda grande. ¿La tiene en otra talla?",
+        "Me queda muy grande. ¿Tiene otra talla?",
+        "Uy, me queda grande. ¿La tiene en otra talla?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me queda",
+          "flags": "i",
+          "label": "it's big on me: me queda grande"
+        }
+      ],
+      "focus": "g:parecer-quedar",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Aquí está la S. Esta sí le queda perfecta. ¿Cuántas necesita?",
+      "npcEn": "Here's the small. This one fits you perfectly. How many do you need?",
+      "intent": "Say you need four, and that you'll take them.",
+      "accept": [
+        "Necesito cuatro. Me las llevo.",
+        "Cuatro, por favor. Me las llevo.",
+        "Bueno, me las llevo. Necesito cuatro."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me las llevo",
+          "flags": "i",
+          "label": "I'll take them: me las llevo (las camisetas)"
+        }
+      ],
+      "focus": "c:me-lo-llevo",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Son ochenta mil pesos. ¿Tarjeta o efectivo?",
+      "npcEn": "That's eighty thousand pesos. Card or cash?",
+      "intent": "Say by card, and ask her to put them in a bag for you.",
+      "accept": [
+        "Con tarjeta. ¿Me las pone en una bolsa?",
+        "Tarjeta, por favor. ¿Me las puede poner en una bolsa?",
+        "Con tarjeta. ¿Me las pone en una bolsa, por favor?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me las (puede )?pone",
+          "flags": "i",
+          "label": "put them in a bag for me: me las pone (me first, then las)"
+        }
+      ],
+      "focus": "g:double-pronouns",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Claro, se las pongo en una bolsa grande. Aquí está su tarjeta. ¿Algo más?",
+      "npcEn": "Of course, I'll put them in a big bag for you. Here's your card. Anything else?",
+      "intent": "Say no thanks, and say goodbye politely.",
+      "accept": [
+        "No, gracias. Que esté bien.",
+        "Nada más, gracias. Que esté muy bien.",
+        "No, eso es todo, gracias. Que esté bien."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "que est[eé]",
+          "flags": "i",
+          "label": "goodbye to usted: que esté bien"
+        }
+      ],
+      "focus": "c:que-este-bien",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:algo-mas",
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:en-que-le-puedo-servir",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-lo-puedo-medir",
+    "c:por-favor",
+    "c:puedo",
+    "c:que-este-bien",
+    "c:siga",
+    "c:tarjeta-o-efectivo",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-wishes",
+    "g:superlatives",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:algodón",
+    "l:almacén",
+    "l:aquí",
+    "l:barato",
+    "l:bien",
+    "l:bolsa",
+    "l:bueno",
+    "l:buscar",
+    "l:café",
+    "l:camiseta",
+    "l:claro",
+    "l:cuánto",
+    "l:cómo",
+    "l:día",
+    "l:efectivo",
+    "l:estar",
+    "l:favor",
+    "l:grande",
+    "l:joven",
+    "l:llevarse",
+    "l:medir",
+    "l:necesitar",
+    "l:perfecto",
+    "l:peso",
+    "l:poder",
+    "l:poner",
+    "l:probarse",
+    "l:quedar",
+    "l:qué",
+    "l:seguir",
+    "l:ser",
+    "l:servir",
+    "l:talla",
+    "l:tarjeta",
+    "l:tener",
+    "l:usar",
+    "l:verde",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:el-azul",
+    "p:el-rojo-la-grande",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:talla-numero"
+  ]
+}

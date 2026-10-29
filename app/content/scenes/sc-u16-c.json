@@ -1,0 +1,239 @@
+{
+  "id": "sc-u16-c",
+  "unit": "u16",
+  "title": "The purple chair goes back",
+  "brief": "You're Tomás. The purple chair you called iconic is too big for the café's door, so you're back in San Victorino to return it. Be polite, explain, and leave with something that fits. The seller is older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes. ¡Ah, el señor de la silla morada! ¿Y ahora qué necesita?",
+      "npcEn": "Good afternoon. Ah, the purple chair man! And what do you need now?",
+      "intent": "Say you want to return it: it's too big for the café's door.",
+      "accept": [
+        "Quiero devolverla. Es muy grande para la puerta del café.",
+        "La quiero devolver. Es muy grande para la puerta.",
+        "Buenas tardes. Quiero devolverla, porque es muy grande para la puerta del café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "devolverla|la quiero devolver",
+          "flags": "i",
+          "label": "return it: quiero devolverla, or la quiero devolver"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Devolverla? Pero usted dijo que es la silla más bonita de Bogotá.",
+      "npcEn": "Return it? But you said it's the prettiest chair in Bogotá.",
+      "intent": "Say yes, it's the prettiest, but it's also the biggest.",
+      "accept": [
+        "Sí, es la más bonita, pero también es la más grande.",
+        "Es la más bonita, sí. Pero también es la más grande.",
+        "Claro, pero también es la silla más grande de Bogotá."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "la (silla )?m[aá]s grande",
+          "flags": "i",
+          "label": "the biggest: la más grande"
+        }
+      ],
+      "focus": "g:superlatives",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Bueno. Aquí no devolvemos plata, señor. Pero se la puedo cambiar por otra.",
+      "npcEn": "Well. We don't give money back here, sir. But I can exchange it for another one for you.",
+      "intent": "Say OK, you want to exchange it for a smaller one.",
+      "accept": [
+        "Bueno, quiero cambiarla por una más pequeña.",
+        "Está bien. La quiero cambiar por una más pequeña.",
+        "Listo. Quiero cambiarla por una silla más pequeña."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cambiar(la)? por",
+          "flags": "i",
+          "label": "exchange it for: cambiarla por una más pequeña"
+        }
+      ],
+      "focus": "p:cambiar-de-por",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mire esta gris. Es de cuero y es más pequeña. Es un poco más cara, eso sí.",
+      "npcEn": "Look at this grey one. It's leather and it's smaller. It's a bit more expensive, mind you.",
+      "intent": "Say you'll take it, and ask if he can bring it to you at the café tomorrow.",
+      "accept": [
+        "Me la llevo. ¿Me la puede llevar al café mañana?",
+        "Bueno, me la llevo. ¿Puede llevármela mañana al café?",
+        "Perfecto, me la llevo. ¿Me la lleva al café mañana?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me la (puede )?lleva|llev[aá]rmela",
+          "flags": "i",
+          "label": "bring it to me: me la lleva (me first, then la)"
+        },
+        {
+          "type": "question",
+          "label": "ask her: end with a question"
+        }
+      ],
+      "focus": "g:double-pronouns",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Sí, mañana se la llevo. Oiga, una cosa: mi esposa vio la silla morada y le encanta.",
+      "npcEn": "Yes, I'll bring it to you tomorrow. Listen, one thing: my wife saw the purple chair and she loves it.",
+      "intent": "Say that to you it seems perfect for his house.",
+      "accept": [
+        "Me parece perfecta para su casa.",
+        "¡Qué bien! Me parece perfecta para su casa.",
+        "A mí me parece perfecta para su casa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me parece",
+          "flags": "i",
+          "label": "it seems to me: me parece perfecta"
+        }
+      ],
+      "focus": "g:parecer-quedar",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Tiene razón! Entonces la silla morada se va para mi casa. Que esté muy bien, joven.",
+      "npcEn": "You're right! So the purple chair is going to my house. Take good care, young man.",
+      "intent": "Tell him he's the best salesman in San Victorino, and thank him.",
+      "accept": [
+        "Usted es el mejor vendedor de San Victorino. Gracias.",
+        "Gracias, señor. Usted es el mejor vendedor de San Victorino.",
+        "¡Muchas gracias! Es el mejor vendedor de San Victorino."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "el mejor vendedor",
+          "flags": "i",
+          "label": "the best salesman: el mejor vendedor de San Victorino"
+        }
+      ],
+      "focus": "g:superlatives",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-lo-llevo",
+    "c:oiga-oye",
+    "c:porque",
+    "c:puedo",
+    "c:que-bien",
+    "c:que-este-bien",
+    "c:quiero",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-wishes",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:ahora",
+    "l:aquí",
+    "l:bien",
+    "l:bonito",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:cambiar",
+    "l:cara",
+    "l:casa",
+    "l:claro",
+    "l:cosa",
+    "l:cuero",
+    "l:decir",
+    "l:devolver",
+    "l:encantar",
+    "l:esposa",
+    "l:estar",
+    "l:grande",
+    "l:gris",
+    "l:irse",
+    "l:joven",
+    "l:listo",
+    "l:llevar",
+    "l:llevarse",
+    "l:mañana",
+    "l:mejor",
+    "l:mirar",
+    "l:morada",
+    "l:necesitar",
+    "l:oír",
+    "l:parecer",
+    "l:pequeño",
+    "l:perfecto",
+    "l:plata",
+    "l:poder",
+    "l:puerta",
+    "l:querer",
+    "l:qué",
+    "l:razón",
+    "l:ser",
+    "l:señor",
+    "l:silla",
+    "l:tarde",
+    "l:tener",
+    "l:vendedor",
+    "l:ver",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cambiar-de-por",
+    "p:costar-pagar",
+    "p:demonstratives-basic",
+    "p:estar-hecho-de",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:ser-de-material",
+    "p:tener-razon"
+  ]
+}

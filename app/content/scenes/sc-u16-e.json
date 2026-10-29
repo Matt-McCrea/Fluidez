@@ -1,0 +1,178 @@
+{
+  "id": "sc-u16-e",
+  "unit": "u16",
+  "title": "Iconic",
+  "brief": "You're Tomás. Your new purple chair is out on the pavement in front of the café, and Don Hernando has just seen it. Defend your taste, admit the problem, and keep him on your side. He's older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, ¿qué es eso? ¿Una silla morada en el café de Rosa?",
+      "npcEn": "Tomás, what is that? A purple chair in Rosa's café?",
+      "intent": "Say yes, and that it's the prettiest chair in the neighbourhood.",
+      "accept": [
+        "Sí, es la silla más bonita del barrio.",
+        "Sí. ¡Es la más bonita del barrio!",
+        "Claro, es la silla más bonita del barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "la (silla )?m[aá]s bonita",
+          "flags": "i",
+          "label": "the prettiest: la más bonita del barrio"
+        }
+      ],
+      "focus": "g:superlatives",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Bonita? Mijo, a mí me parece muy fea. ¿Y a usted, Simón?\n¡Fea! ¡Fea!",
+      "npcEn": "Pretty? Son, to me it seems very ugly. And you, Simón?\nUgly! Ugly!",
+      "intent": "Say that to you it seems very elegant.",
+      "accept": [
+        "A mí me parece muy elegante.",
+        "Pues a mí me parece muy elegante.",
+        "No, a mí me parece muy elegante."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me parece",
+          "flags": "i",
+          "label": "it seems to me: a mí me parece"
+        }
+      ],
+      "focus": "g:parecer-quedar",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Elegante. Bueno. ¿Y por qué está en la calle?",
+      "npcEn": "Elegant. Right. And why is it in the street?",
+      "intent": "Say it's too big for the door.",
+      "accept": [
+        "Es muy grande para la puerta.",
+        "Porque es muy grande para la puerta.",
+        "Es muy grande para la puerta del café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "muy grande",
+          "flags": "i",
+          "label": "too big: muy grande"
+        }
+      ],
+      "focus": "p:para-inf",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Ay, mijo! ¿Y ahora? ¿La va a devolver?",
+      "npcEn": "Oh, son! And now what? Are you going to return it?",
+      "intent": "Say yes, you have to return it tomorrow.",
+      "accept": [
+        "Sí, la tengo que devolver mañana.",
+        "Sí. Tengo que devolverla mañana.",
+        "Sí, mañana la tengo que devolver."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "la tengo que devolver|tengo que devolverla",
+          "flags": "i",
+          "label": "return it: la tengo que devolver, or tengo que devolverla"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Tranquilo, mijo. Yo hablo con Vale. Pero usted me debe un tinto.",
+      "npcEn": "Relax, son. I'll talk to Vale. But you owe me a tinto.",
+      "intent": "Thank him, and say you'll bring it to him right now.",
+      "accept": [
+        "Gracias, Hernando. Ya se lo llevo.",
+        "Gracias. Ahora mismo se lo llevo.",
+        "Muchas gracias. Ya se lo llevo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "se lo",
+          "flags": "i",
+          "label": "bring it to him: se lo llevo (le + lo becomes se lo)"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "le lo"
+          ],
+          "label": "never le lo: say se lo"
+        }
+      ],
+      "focus": "x:le-se-lo",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:porque",
+    "c:pues",
+    "c:que-es-esto",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:superlatives",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:barrio",
+    "l:bonito",
+    "l:bueno",
+    "l:café",
+    "l:calle",
+    "l:claro",
+    "l:deber",
+    "l:devolver",
+    "l:elegante",
+    "l:estar",
+    "l:feo",
+    "l:grande",
+    "l:hablar",
+    "l:ir",
+    "l:llevar",
+    "l:mañana",
+    "l:morada",
+    "l:parecer",
+    "l:puerta",
+    "l:qué",
+    "l:ser",
+    "l:silla",
+    "l:tener",
+    "l:tinto",
+    "l:tranquilo",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:quantifiers-basic"
+  ]
+}
