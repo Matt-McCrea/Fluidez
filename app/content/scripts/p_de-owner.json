@@ -1,0 +1,43 @@
+{
+  "node": "p:de-owner",
+  "hook": {
+    "line": "Tomás finds an old photo album behind the counter. Whose is it? Spanish has no 's, so Rosa's album comes out the other way round: the album of Rosa.",
+    "es": "El álbum es de Rosa.",
+    "en": "The album is Rosa's."
+  },
+  "examples": [
+    { "es": "¿De quién es este celular?\nEs de Vale.", "en": "Whose phone is this?\nIt's Vale's." },
+    { "es": "Es el café de Rosa.", "en": "It's Rosa's café." },
+    { "es": "Es el carro de mi tío.", "en": "It's my uncle's car." },
+    { "es": "¿De quién es esta foto?", "en": "Whose photo is this?" },
+    { "es": "La mamá de Vale vive en Medellín.", "en": "Vale's mom lives in Medellín." },
+    { "es": "No es de Hernando, es de Mariana.", "en": "It isn't Hernando's, it's Mariana's." }
+  ],
+  "rule": "English adds 's to the owner: Vale's phone. Spanish has no 's. It names the thing first, then *de* and the owner:\n\n*el celular de Vale* = Vale's phone\n*la mamá de Tomás* = Tomás's mom\n\nTo say something is someone's, use *es de*: *Es de Vale.* = It's Vale's.\n\nTo ask whose, put *de* first: *¿De quién es?* = Whose is it? Plain *¿Quién es?* means who is it.\n\n*De* + *el* joins into *del*: *Es del señor Gómez.*",
+  "smallPrint": "Teachers call this a possessive phrase with de (complemento del nombre con de).",
+  "readAndPick": [
+    { "es": "¿De quién es?", "options": ["Who is it?", "Whose is it?"], "answer": 1 },
+    { "es": "¿Quién es?", "options": ["Who is it?", "Whose is it?"], "answer": 0 },
+    { "es": "Es de Vale.", "options": ["It's Vale.", "It's Vale's."], "answer": 1 },
+    { "es": "Es Vale.", "options": ["It's Vale.", "It's Vale's."], "answer": 0 },
+    { "es": "El papá de Andrés es Luis.", "options": ["Luis's dad is Andrés.", "Andrés's dad is Luis."], "answer": 1 },
+    { "es": "Es la mamá de mi novio.", "options": ["She's my boyfriend's mom.", "She's my mom's boyfriend."], "answer": 0 },
+    { "es": "Es de mi hermana.", "options": ["It's my sister.", "It's my sister's.", "It's my sisters'."], "answer": 1 },
+    { "es": "El celular es de Mariana.", "options": ["Mariana's phone is here.", "Mariana is on the phone.", "The phone is Mariana's."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *Quién* or *De quién* (you want the owner): ¿___ es este celular?", "answer": "¿De quién es este celular?", "accept": [], "why": "Asking whose starts with *de*." },
+    { "prompt": "Choose *de* or nothing (the phone belongs to Vale): Es ___ Vale.", "answer": "Es de Vale.", "accept": [], "why": "*Es de Vale* is \"it's Vale's\"; *Es Vale* would be Vale herself." },
+    { "prompt": "Say: It's Tomás's café.", "answer": "Es el café de Tomás.", "accept": [], "why": "Thing first, then *de* and the owner." },
+    { "prompt": "Say: Vale's mom lives in Medellín.", "answer": "La mamá de Vale vive en Medellín.", "accept": [], "why": "Vale's mom turns into the mom of Vale: *la mamá de Vale*." },
+    { "prompt": "Ask: Whose photo is this?", "answer": "¿De quién es esta foto?", "accept": [], "why": "*¿De quién es…?* plus the thing." },
+    { "prompt": "Answer the question with the owner, your sister: ¿De quién es este carro?", "answer": "Es de mi hermana.", "accept": ["Es el carro de mi hermana."], "why": "*Es de* plus the owner, and *mi hermana* is the owner." },
+    { "prompt": "Turn it the Spanish way round: It's Hernando's black coffee.", "answer": "Es el tinto de Hernando.", "accept": ["Es el tinto de don Hernando."], "why": "No 's in Spanish: *el tinto de Hernando*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Es Vale celular.", "right": "Es el celular de Vale.", "why": "Almost. Spanish has no 's: the thing comes first, then *de* and the owner." },
+    { "wrong": "¿Quién es este celular?", "right": "¿De quién es este celular?", "why": "*¿Quién es?* asks who someone is. For whose, start with *de*." },
+    { "wrong": "Es de el señor Gómez.", "right": "Es del señor Gómez.", "why": "*De* and *el* always join into *del*." }
+  ],
+  "personal": "Look around you and name three things and whose they are, like *El celular es de…* or *Es el carro de…*."
+}
