@@ -10,7 +10,8 @@
 //  - chunks have their own 3–5 budget; lexemes have a per-lesson-type cap
 //  - contrasts only once both sides are known
 //  - content gate: everything served has requires ⊆ known ∪ introduced-this-session
-//    (non-transitive: a known chunk satisfies itself, never the grammar it unpacks)
+//    (a known chunk satisfies itself; it stands in for the grammar it unpacks only
+//    when the same item also requires that chunk, i.e. the grammar sits inside it)
 //  - review budget in minutes by band and tier (budget.ts; learner.secondsPerReview);
 //    multi-target review items (≤ 3 due nodes in one sentence) cost
 //    MULTI_REVIEW_COST × a single review; backlog throttle cuts
@@ -487,7 +488,14 @@ class Compiler {
   // ---------------------------------------------------------------- content selection
 
   private gated(requires: readonly NodeId[]): boolean {
-    for (const r of requires) if (!this.known.has(r) && !this.sessionNew.has(r)) return false;
+    const has = (r: NodeId) => this.known.has(r) || this.sessionNew.has(r);
+    for (const r of requires) {
+      if (has(r)) continue;
+      // the tagger keeps a chunk's unpacked grammar in requires; a taught chunk
+      // in the same item covers it
+      const covered = requires.some((c) => c !== r && has(c) && this.course.nodes.get(c)?.unpacks === r);
+      if (!covered) return false;
+    }
     return true;
   }
 
