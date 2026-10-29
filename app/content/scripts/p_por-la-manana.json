@@ -1,0 +1,90 @@
+{
+  "node": "p:por-la-manana",
+  "hook": {
+    "line": "Tomás's new life runs on parts of the day: up in the dark, café all morning, accounts in the afternoon. Spanish marks a part of the day with *por*, and a clock time with *de*.",
+    "es": "Me levanto a las cinco de la mañana.",
+    "en": "I get up at five in the morning."
+  },
+  "examples": [
+    { "es": "Me ducho por la mañana.", "en": "I have a shower in the morning." },
+    { "es": "Vale hace el pan por la mañana.", "en": "Vale makes the bread in the morning." },
+    { "es": "¿Trabajas por la noche?", "en": "Do you work at night? (to a friend)" },
+    { "es": "Cierro el café a las seis de la tarde.", "en": "I close the café at six in the evening." },
+    { "es": "En la tarde, Tomás hace las cuentas.", "en": "In the afternoon, Tomás does the accounts." },
+    { "es": "Nos vemos el martes por la tarde.", "en": "See you on Tuesday afternoon." }
+  ],
+  "rule": "For a part of the day, Spanish says *por la mañana*, *por la tarde*, *por la noche*: in the morning, in the afternoon, at night. In Colombia you'll hear *en la mañana*, *en la tarde* just as often. Both are fine.\n\nAfter a clock time, it switches to *de*: *a las cinco de la mañana*, *a las seis de la tarde*.\n\nPut a day in front with *el*: *el martes por la tarde*.\n\nCareful: *la mañana* is the morning, but *mañana* on its own is tomorrow. So *mañana por la mañana* is tomorrow morning.",
+  "smallPrint": "Teachers call these time phrases. *La tarde* runs from lunch until it gets dark, so it covers both afternoon and early evening.",
+  "readAndPick": [
+    { "es": "Me ducho por la mañana.", "options": ["I have a shower in the morning.", "I'll have a shower tomorrow.", "I have a shower at night."], "answer": 0 },
+    { "es": "Llego a las ocho de la noche.", "options": ["I get there at eight in the morning.", "I get there at eight at night."], "answer": 1 },
+    { "es": "Trabajo por la tarde.", "options": ["I work in the morning.", "I work at night.", "I work in the afternoon."], "answer": 2 },
+    { "es": "Nos vemos el martes por la tarde.", "options": ["See you on Tuesday afternoon.", "See you on Tuesday morning.", "See you every Tuesday."], "answer": 0 },
+    { "es": "Mañana por la mañana voy al banco.", "options": ["I go to the bank in the morning.", "I'm going to the bank tomorrow morning.", "I'm going to the bank tomorrow night."], "answer": 1 },
+    { "es": "Vale hace el pan en la mañana.", "options": ["Vale makes the bread at night.", "Vale makes the bread in the afternoon.", "Vale makes the bread in the morning."], "answer": 2 },
+    { "es": "El café cierra a las diez de la noche.", "options": ["The café closes at ten at night.", "The café closes at ten in the morning."], "answer": 0 },
+    { "es": "Me acuesto a las diez de la noche.", "options": ["I go to bed at ten in the morning.", "I go to bed at ten at night.", "I go to bed at night."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Me ducho ___ mañana.* (*por la* or *de la*) I have a shower in the morning.",
+      "answer": "Me ducho por la mañana.",
+      "accept": ["Me ducho en la mañana."],
+      "why": "A part of the day on its own takes *por la*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Me levanto a las cinco ___ mañana.* (*por la* or *de la*) I get up at five in the morning.",
+      "answer": "Me levanto a las cinco de la mañana.",
+      "accept": [],
+      "why": "After a clock time, Spanish uses *de*."
+    },
+    {
+      "prompt": "Ask a friend: Do you work at night?",
+      "answer": "¿Trabajas por la noche?",
+      "accept": ["¿Trabajas en la noche?"],
+      "why": "At night is *por la noche*, or *en la noche* in Colombia."
+    },
+    {
+      "prompt": "See you on Tuesday afternoon.",
+      "answer": "Nos vemos el martes por la tarde.",
+      "accept": ["Nos vemos el martes en la tarde."],
+      "why": "The day takes *el*, then the part of the day follows."
+    },
+    {
+      "prompt": "Vale makes the bread in the morning.",
+      "answer": "Vale hace el pan por la mañana.",
+      "accept": ["Vale hace el pan en la mañana.", "Por la mañana Vale hace el pan.", "En la mañana Vale hace el pan."],
+      "why": "In the morning is *por la mañana* (or *en la mañana*)."
+    },
+    {
+      "prompt": "Make it tomorrow morning: *Voy al banco por la mañana.*",
+      "answer": "Mañana por la mañana voy al banco.",
+      "accept": ["Voy al banco mañana por la mañana.", "Mañana en la mañana voy al banco.", "Voy al banco mañana en la mañana."],
+      "why": "*Mañana* alone is tomorrow, so tomorrow morning is *mañana por la mañana*."
+    },
+    {
+      "prompt": "Give the clock time, ten at night: *Cierro el café por la noche.*",
+      "answer": "Cierro el café a las diez de la noche.",
+      "accept": [],
+      "why": "With a clock time, *por la noche* becomes *de la noche*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me levanto a las cinco por la mañana.",
+      "right": "Me levanto a las cinco de la mañana.",
+      "why": "Almost. After a clock time, Spanish uses *de*, not *por*."
+    },
+    {
+      "wrong": "Me ducho por mañana.",
+      "right": "Me ducho por la mañana.",
+      "why": "Keep the *la*: *mañana* on its own means tomorrow."
+    },
+    {
+      "wrong": "Nos vemos martes tarde.",
+      "right": "Nos vemos el martes por la tarde.",
+      "why": "The day takes *el*, and the part of the day takes *por la*."
+    }
+  ],
+  "personal": "Write two lines about your own day: something you do *por la mañana*, and the time you go to bed with *de la noche*."
+}

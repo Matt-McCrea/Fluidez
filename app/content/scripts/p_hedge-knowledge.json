@@ -1,0 +1,90 @@
+{
+  "node": "p:hedge-knowledge",
+  "hook": {
+    "line": "Mariana asks Tomás how good his Spanish is. A flat *Hablo español* would sound like bragging, so he does what every Spanish speaker does: he softens it.",
+    "es": "Hablo un poco de español.",
+    "en": "I speak a little Spanish."
+  },
+  "examples": [
+    { "es": "Hablo un poco de francés.", "en": "I speak a little French." },
+    { "es": "Conozco bastante bien Bogotá.", "en": "I know Bogotá quite well." },
+    { "es": "No sé nada de fútbol.", "en": "I don't know anything about football." },
+    { "es": "Vale habla inglés muy bien.", "en": "Vale speaks English very well." },
+    { "es": "¿Conoces bien Medellín?", "en": "Do you know Medellín well? (to a friend)" },
+    { "es": "Conozco un poco la ciudad.", "en": "I know the city a little." }
+  ],
+  "rule": "Spanish speakers hedge by default. A bare *Hablo francés* can sound like a big claim, so you add how much:\n*nada*: nothing\n*un poco*: a little\n*bastante bien*: quite well\n*muy bien*: very well\n\nBefore a noun, *un poco* takes *de*: *un poco de francés*. Next to the verb on its own, no *de*: *Conozco un poco la ciudad*.\n\n*Nada* needs *no* in front of the verb: *No sé nada de fútbol*.\n\nIn Colombia you'll hear *un poquito* all the time: a tiny bit.",
+  "smallPrint": "Teachers call these hedges. *Saber de* means to know about a subject: *Hernando sabe mucho de carros*.",
+  "readAndPick": [
+    { "es": "Hablo un poco de francés.", "options": ["I speak a little French.", "I speak French quite well.", "I don't speak any French."], "answer": 0 },
+    { "es": "Conozco bastante bien Bogotá.", "options": ["I know Bogotá a little.", "I know Bogotá quite well.", "I don't know Bogotá at all."], "answer": 1 },
+    { "es": "No sé nada de fútbol.", "options": ["I know a bit about football.", "I know football quite well.", "I don't know anything about football."], "answer": 2 },
+    { "es": "Vale habla inglés muy bien.", "options": ["Vale speaks English very well.", "Vale speaks a little English."], "answer": 0 },
+    { "es": "Conozco un poco la ciudad.", "options": ["I know the city very well.", "I know the city a little."], "answer": 1 },
+    { "es": "Hernando sabe mucho de carros.", "options": ["Hernando knows a little about cars.", "Hernando doesn't know anything about cars.", "Hernando knows a lot about cars."], "answer": 2 },
+    { "es": "Sabemos un poco de historia.", "options": ["We know a little history.", "They know a little history.", "I know a little history."], "answer": 0 },
+    { "es": "No conozco bien Medellín.", "options": ["I know Medellín quite well.", "I don't know Medellín well."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Hablo ___ de francés.* (*un poco* or *bastante bien*) I speak a little French.",
+      "answer": "Hablo un poco de francés.",
+      "accept": [],
+      "why": "A little is *un poco*, and before a noun it takes *de*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *No sé ___ de fútbol.* (*nada* or *un poco*) I don't know anything about football.",
+      "answer": "No sé nada de fútbol.",
+      "accept": [],
+      "why": "Not anything is *no* plus *nada*."
+    },
+    {
+      "prompt": "I know Bogotá quite well.",
+      "answer": "Conozco bastante bien Bogotá.",
+      "accept": ["Conozco Bogotá bastante bien."],
+      "why": "A place you know is *conozco*, and quite well is *bastante bien*."
+    },
+    {
+      "prompt": "Vale speaks English very well.",
+      "answer": "Vale habla inglés muy bien.",
+      "accept": ["Vale habla muy bien inglés.", "Vale habla muy bien el inglés."],
+      "why": "Very well is *muy bien*."
+    },
+    {
+      "prompt": "Ask a friend: Do you know Medellín well?",
+      "answer": "¿Conoces bien Medellín?",
+      "accept": ["¿Conoces Medellín bien?"],
+      "why": "*Conoces* for a friend and a place, plus *bien*."
+    },
+    {
+      "prompt": "Soften it to a little: *Hablo francés.*",
+      "answer": "Hablo un poco de francés.",
+      "accept": [],
+      "why": "Add *un poco de* before the language."
+    },
+    {
+      "prompt": "Make it nothing at all: *Sé un poco de fútbol.*",
+      "answer": "No sé nada de fútbol.",
+      "accept": [],
+      "why": "*Nada* after the verb needs *no* in front of it."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Hablo un poco francés.",
+      "right": "Hablo un poco de francés.",
+      "why": "Almost. Before a noun, *un poco* needs *de*."
+    },
+    {
+      "wrong": "Sé nada de fútbol.",
+      "right": "No sé nada de fútbol.",
+      "why": "With *nada* after the verb, Spanish also puts *no* in front."
+    },
+    {
+      "wrong": "Hablo español muy bueno.",
+      "right": "Hablo español muy bien.",
+      "why": "How you do something is *bien*, not *bueno*."
+    }
+  ],
+  "personal": "Rate yourself honestly in two lines: one thing you know *un poco* and one you know *bastante bien*. Your Spanish counts."
+}

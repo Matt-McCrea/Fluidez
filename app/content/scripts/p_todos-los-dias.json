@@ -1,0 +1,90 @@
+{
+  "node": "p:todos-los-dias",
+  "hook": {
+    "line": "Tomás opens the café every single day, and some days he's in there the whole day. Spanish tells those two apart with one small switch: plural for every, singular for the whole.",
+    "es": "Abro el café todos los días.",
+    "en": "I open the café every day."
+  },
+  "examples": [
+    { "es": "Trabajo todos los días.", "en": "I work every day." },
+    { "es": "Estuve todo el día en el café.", "en": "I was in the café all day." },
+    { "es": "Vale hace pan todas las mañanas.", "en": "Vale makes bread every morning." },
+    { "es": "Hernando viene todos los sábados.", "en": "Hernando comes every Saturday." },
+    { "es": "No dormí en toda la noche.", "en": "I didn't sleep all night." },
+    { "es": "¿Trabajas toda la semana?", "en": "Do you work the whole week? (to a friend)" }
+  ],
+  "rule": "*Todo* is all, and it keeps the little word for the right after it.\n\nPlural means every: *todos los días* (every day), *todas las semanas* (every week).\nSingular means the whole: *todo el día* (all day), *toda la noche* (all night).\n\n*Todo* matches its noun:\n*todo el día*, *toda la semana*\n*todos los sábados*, *todas las mañanas*\n\nEnglish says every day with no the. Spanish always keeps it: *todos los días*, never *todos días*.",
+  "smallPrint": "Teachers call *todo* a quantifier. *Cada día* also means every day, and *todo el mundo* means everybody (with a singular verb: *todo el mundo viene*).",
+  "readAndPick": [
+    { "es": "Trabajo todos los días.", "options": ["I work every day.", "I work all day."], "answer": 0 },
+    { "es": "Trabajo todo el día.", "options": ["I work every day.", "I work all day."], "answer": 1 },
+    { "es": "Vale hace pan todas las mañanas.", "options": ["Vale makes bread all morning.", "Vale makes bread every morning."], "answer": 1 },
+    { "es": "Estuve toda la mañana en el banco.", "options": ["I was at the bank all morning.", "I was at the bank every morning."], "answer": 0 },
+    { "es": "No dormí en toda la noche.", "options": ["I don't sleep every night.", "I didn't sleep all night.", "I didn't sleep last night."], "answer": 1 },
+    { "es": "Hernando viene todos los sábados.", "options": ["Hernando comes on Saturday.", "Hernando comes all Saturday.", "Hernando comes every Saturday."], "answer": 2 },
+    { "es": "Estudio toda la semana.", "options": ["I study all week.", "I study every week."], "answer": 0 },
+    { "es": "Voy al mercado todas las semanas.", "options": ["I go to the market all week.", "I go to the market this week.", "I go to the market every week."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Trabajo ___ días.* (*todos los* or *todo el*) I work every day.",
+      "answer": "Trabajo todos los días.",
+      "accept": [],
+      "why": "Every is the plural: *todos los*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Estuve ___ día en casa.* (*todos los* or *todo el*) I was at home all day.",
+      "answer": "Estuve todo el día en casa.",
+      "accept": [],
+      "why": "The whole day is the singular: *todo el día*."
+    },
+    {
+      "prompt": "Vale makes bread every morning.",
+      "answer": "Vale hace pan todas las mañanas.",
+      "accept": ["Todas las mañanas Vale hace pan."],
+      "why": "*Mañana* is feminine and you want every, so *todas las mañanas*."
+    },
+    {
+      "prompt": "I didn't sleep all night.",
+      "answer": "No dormí en toda la noche.",
+      "accept": ["No dormí toda la noche."],
+      "why": "The whole night is singular and feminine: *toda la noche*."
+    },
+    {
+      "prompt": "Ask a friend: Do you work every Saturday?",
+      "answer": "¿Trabajas todos los sábados?",
+      "accept": [],
+      "why": "Every Saturday is the plural, with *los*."
+    },
+    {
+      "prompt": "Change every week to the whole week: *Trabajo todas las semanas.*",
+      "answer": "Trabajo toda la semana.",
+      "accept": [],
+      "why": "Singular *toda la* turns every into the whole."
+    },
+    {
+      "prompt": "Make it about *we*: *Desayuno en el café todos los días.*",
+      "answer": "Desayunamos en el café todos los días.",
+      "accept": ["Todos los días desayunamos en el café."],
+      "why": "Only the verb changes; *todos los días* stays as it is."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Trabajo todos días.",
+      "right": "Trabajo todos los días.",
+      "why": "Almost. Spanish keeps the *los* that English drops."
+    },
+    {
+      "wrong": "Trabajo todo los días.",
+      "right": "Trabajo todos los días.",
+      "why": "*Todo* matches the noun, so with *días* it's *todos*."
+    },
+    {
+      "wrong": "Trabajo los todos días.",
+      "right": "Trabajo todos los días.",
+      "why": "*Todos* comes first, then *los*."
+    }
+  ],
+  "personal": "Write one thing you do *todos los días* and one day you spent *todo el día* doing something."
+}

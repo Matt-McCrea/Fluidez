@@ -1,0 +1,90 @@
+{
+  "node": "p:soler-inf",
+  "hook": {
+    "line": "Ask Tomás about his week and he'll talk about habits, not one particular day. Spanish has a small verb that just means usually: *soler*.",
+    "es": "Suelo abrir el café a las seis.",
+    "en": "I usually open the café at six."
+  },
+  "examples": [
+    { "es": "Suelo desayunar a las siete.", "en": "I usually have breakfast at seven." },
+    { "es": "¿Sueles almorzar en casa?", "en": "Do you usually have lunch at home? (to a friend)" },
+    { "es": "Vale suele llegar temprano.", "en": "Vale usually arrives early." },
+    { "es": "Solemos ir al mercado los domingos.", "en": "We usually go to the market on Sundays." },
+    { "es": "No suelo cenar tarde.", "en": "I don't usually have dinner late." },
+    { "es": "Hernando y Tomás suelen hablar por la tarde.", "en": "Hernando and Tomás usually talk in the afternoon." }
+  ],
+  "rule": "English puts usually in front of the verb. Spanish turns usually into the verb itself: *suelo* plus the plain form of the action. *Suelo desayunar* is I usually have breakfast.\n\n*Soler* is a boot verb: o turns to ue.\n*suelo, sueles, suele, solemos, suelen*\nThe second verb never changes: *suelo cenar*, *solemos cenar*.\n\nFor not, put *no* in front: *No suelo cenar tarde*.\n\nIt's only for habits, so you'll use it in the present.",
+  "smallPrint": "Teachers call *soler* plus an infinitive a verbal periphrasis: two verbs working as one. There's also a past form, *solía* (I used to), for later.",
+  "readAndPick": [
+    { "es": "Suelo desayunar a las siete.", "options": ["I usually have breakfast at seven.", "We usually have breakfast at seven.", "She usually has breakfast at seven."], "answer": 0 },
+    { "es": "¿Sueles almorzar en casa?", "options": ["Do I usually have lunch at home?", "Do you usually have lunch at home?", "Does he usually have lunch at home?"], "answer": 1 },
+    { "es": "Vale suele llegar temprano.", "options": ["Vale arrived early.", "Vale is arriving early.", "Vale usually arrives early."], "answer": 2 },
+    { "es": "Solemos ir al mercado los domingos.", "options": ["We usually go to the market on Sundays.", "They usually go to the market on Sundays.", "I usually go to the market on Sundays."], "answer": 0 },
+    { "es": "No suelo cenar tarde.", "options": ["I'm not having dinner late.", "I don't usually have dinner late."], "answer": 1 },
+    { "es": "Ustedes suelen trabajar los sábados.", "options": ["We usually work on Saturdays.", "They worked on Saturday.", "You all usually work on Saturdays."], "answer": 2 },
+    { "es": "Tomás suele ducharse por la mañana.", "options": ["Tomás usually has a shower in the morning.", "I usually have a shower in the morning.", "Tomás is having a shower this morning."], "answer": 0 },
+    { "es": "Suelen cerrar a las seis.", "options": ["We usually close at six.", "They usually close at six."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ desayunar a las siete.* (*Suelo* or *Suele*) I usually have breakfast at seven.",
+      "answer": "Suelo desayunar a las siete.",
+      "accept": [],
+      "why": "*Suelo* is the I form."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Solemos ___ al mercado.* (*ir* or *vamos*) We usually go to the market.",
+      "answer": "Solemos ir al mercado.",
+      "accept": [],
+      "why": "*Solemos* already says we, so the second verb stays plain: *ir*."
+    },
+    {
+      "prompt": "Ask a friend: Do you usually have lunch at home?",
+      "answer": "¿Sueles almorzar en casa?",
+      "accept": [],
+      "why": "*Sueles* is the you form, then plain *almorzar*."
+    },
+    {
+      "prompt": "Vale usually arrives early.",
+      "answer": "Vale suele llegar temprano.",
+      "accept": [],
+      "why": "*Suele* for she, then plain *llegar*."
+    },
+    {
+      "prompt": "Make it a habit with *soler*: *Ceno a las ocho.*",
+      "answer": "Suelo cenar a las ocho.",
+      "accept": [],
+      "why": "*Ceno* becomes *suelo cenar*: the person moves onto *soler*."
+    },
+    {
+      "prompt": "Make it negative: *Suelo trabajar los domingos.*",
+      "answer": "No suelo trabajar los domingos.",
+      "accept": [],
+      "why": "*No* goes in front of *suelo*."
+    },
+    {
+      "prompt": "Make it about *we*: *Suelo ir al mercado los sábados.*",
+      "answer": "Solemos ir al mercado los sábados.",
+      "accept": [],
+      "why": "With we, the o stays an o: *solemos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Suelo desayuno a las siete.",
+      "right": "Suelo desayunar a las siete.",
+      "why": "Almost. After *suelo*, the second verb stays in its plain form."
+    },
+    {
+      "wrong": "Suelemos ir al mercado.",
+      "right": "Solemos ir al mercado.",
+      "why": "The o only turns to ue in *suelo, sueles, suele, suelen*; with we it's *solemos*."
+    },
+    {
+      "wrong": "Suelo a cenar tarde.",
+      "right": "Suelo cenar tarde.",
+      "why": "Nothing goes between *suelo* and the second verb."
+    }
+  ],
+  "personal": "Write two habits with *suelo*: one for the morning and one for the evening."
+}

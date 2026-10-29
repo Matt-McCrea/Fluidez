@@ -1,0 +1,90 @@
+{
+  "node": "p:es-de-noche-tarde",
+  "hook": {
+    "line": "Tomás's day starts in the dark and ends in it. To say it's late, early or already dark, Spanish drops the *it* completely.",
+    "es": "Ya es tarde, Hernando.",
+    "en": "It's late now, Hernando."
+  },
+  "examples": [
+    { "es": "Es tarde.", "en": "It's late." },
+    { "es": "Ya es de noche.", "en": "It's already dark." },
+    { "es": "Todavía es temprano.", "en": "It's still early." },
+    { "es": "Todavía es de día.", "en": "It's still light." },
+    { "es": "¿Ya es tarde?", "en": "Is it late already?" },
+    { "es": "No es tarde, es temprano.", "en": "It isn't late, it's early." }
+  ],
+  "rule": "No *it* here. English says it's late; Spanish just says *Es tarde*. Same for *Es temprano*: it's early.\n\nFor dark and light, Spanish says it is of night, of day: *Es de noche* (it's dark, it's night time), *Es de día* (it's light).\n\nAdd *ya* for already and *todavía* for still: *Ya es de noche*, *Todavía es temprano*.\n\nCareful: being late yourself is a different sentence. *Es tarde* is about the clock. *Llego tarde* is about you: I'm late, I get there late.",
+  "smallPrint": "Teachers call these impersonal sentences: *ser* with no subject at all. You already know a cousin of them as a whole phrase: *Se me hizo tarde*.",
+  "readAndPick": [
+    { "es": "Es tarde.", "options": ["It's late.", "I'm late.", "It's early."], "answer": 0 },
+    { "es": "Llego tarde.", "options": ["It's late.", "I'm late."], "answer": 1 },
+    { "es": "Ya es de noche.", "options": ["It's still light.", "It's early.", "It's already dark."], "answer": 2 },
+    { "es": "Todavía es de día.", "options": ["It's still light.", "It's already dark."], "answer": 0 },
+    { "es": "Todavía es temprano.", "options": ["It's already late.", "It's still early.", "It's still dark."], "answer": 1 },
+    { "es": "Vale llega tarde.", "options": ["It's late, Vale.", "Vale is late."], "answer": 1 },
+    { "es": "¿Ya es de noche?", "options": ["Is it dark already?", "Is it still light?", "Is it late already?"], "answer": 0 },
+    { "es": "No es tarde, es temprano.", "options": ["I'm not late, I'm early.", "It isn't early, it's late.", "It isn't late, it's early."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ tarde.* (*Es* or *Está*) It's late.",
+      "answer": "Es tarde.",
+      "accept": [],
+      "why": "For the time of day, Spanish uses *es*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Ya es de ___.* (*noche* or *día*) It's already dark.",
+      "answer": "Ya es de noche.",
+      "accept": [],
+      "why": "Dark is *de noche*; light is *de día*."
+    },
+    {
+      "prompt": "It's still early.",
+      "answer": "Todavía es temprano.",
+      "accept": ["Es temprano todavía."],
+      "why": "Still is *todavía*, and the English it simply disappears."
+    },
+    {
+      "prompt": "It's still light.",
+      "answer": "Todavía es de día.",
+      "accept": ["Es de día todavía."],
+      "why": "Light outside is *es de día*."
+    },
+    {
+      "prompt": "Ask: Is it late already?",
+      "answer": "¿Ya es tarde?",
+      "accept": ["¿Es tarde ya?"],
+      "why": "Already is *ya*; the question marks do the rest."
+    },
+    {
+      "prompt": "Say the opposite: *Es temprano.*",
+      "answer": "Es tarde.",
+      "accept": [],
+      "why": "*Tarde* is late, *temprano* is early."
+    },
+    {
+      "prompt": "Change already to still: *Ya es de noche.* (It's still dark.)",
+      "answer": "Todavía es de noche.",
+      "accept": ["Es de noche todavía."],
+      "why": "Swap *ya* for *todavía*; the rest stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Está tarde.",
+      "right": "Es tarde.",
+      "why": "Almost. For the time of day, Spanish uses *es*, not *está*."
+    },
+    {
+      "wrong": "Es noche.",
+      "right": "Es de noche.",
+      "why": "Spanish needs the *de*: it's of night."
+    },
+    {
+      "wrong": "Soy tarde.",
+      "right": "Llego tarde.",
+      "why": "I'm late isn't *soy*: say you arrive late, *Llego tarde*."
+    }
+  ],
+  "personal": "Look out of the window and write one line about right now: is it light or dark, early or late? Use *ya* or *todavía* if it fits."
+}

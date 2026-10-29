@@ -1,0 +1,90 @@
+{
+  "node": "p:cuando-basic",
+  "hook": {
+    "line": "Tomás's routine is a chain of whens: when he gets to the café, he makes the coffee; when Hernando arrives, Simón starts talking. *Cuando* plus the present is how Spanish tells a routine.",
+    "es": "Cuando llego al café, hago el tinto.",
+    "en": "When I get to the café, I make the coffee."
+  },
+  "examples": [
+    { "es": "Cuando llego a casa, me ducho.", "en": "When I get home, I have a shower." },
+    { "es": "Cuando tengo tiempo, leo.", "en": "When I have time, I read." },
+    { "es": "¿Qué haces cuando estás cansado?", "en": "What do you do when you're tired? (to a friend, a man)" },
+    { "es": "Cuando Hernando llega, Simón habla.", "en": "When Hernando arrives, Simón talks." },
+    { "es": "Vale escucha música cuando trabaja.", "en": "Vale listens to music when she works." },
+    { "es": "Cuando hace frío, tomamos tinto.", "en": "When it's cold, we drink black coffee." }
+  ],
+  "rule": "*Cuando* is when. For things that happen every time, Spanish uses the plain present on both sides, just like English: *Cuando tengo tiempo, leo*.\n\nThe *cuando* part can go first or second. First, add a comma: *Cuando llego a casa, me ducho*. Second, no comma: *Me ducho cuando llego a casa*.\n\nOnly a question gets an accent: *¿Cuándo llegas?* asks when. In the middle of a sentence it's plain *cuando*.",
+  "smallPrint": "Teachers call this a time clause. Later you'll use *cuando* with the past, and with a special form for things that haven't happened yet.",
+  "readAndPick": [
+    { "es": "Cuando llego a casa, me ducho.", "options": ["When I get home, I have a shower.", "When I got home, I had a shower.", "When do I get home?"], "answer": 0 },
+    { "es": "¿Cuándo llegas a casa?", "options": ["When you get home, call me.", "When do you get home?"], "answer": 1 },
+    { "es": "Cuando tenemos tiempo, leemos.", "options": ["When I have time, I read.", "When they have time, they read.", "When we have time, we read."], "answer": 2 },
+    { "es": "Vale escucha música cuando trabaja.", "options": ["Vale listens to music when she works.", "I listen to music when Vale works."], "answer": 0 },
+    { "es": "Cuando Hernando llega, Simón habla.", "options": ["When Simón talks, Hernando arrives.", "When Hernando arrives, Simón talks."], "answer": 1 },
+    { "es": "¿Qué haces cuando estás cansada?", "options": ["What did you do when you were tired?", "What do you do when you're tired?"], "answer": 1 },
+    { "es": "Cuando trabajas, escuchas música.", "options": ["When you work, you listen to music.", "When I work, I listen to music.", "When she works, she listens to music."], "answer": 0 },
+    { "es": "Cuando hace frío, tomamos tinto.", "options": ["When it's cold, they drink black coffee.", "When it's cold, I drink black coffee.", "When it's cold, we drink black coffee."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ llego a casa, me ducho.* (*Cuando* or *Cuándo*) When I get home, I have a shower.",
+      "answer": "Cuando llego a casa, me ducho.",
+      "accept": [],
+      "why": "It's not a question, so no accent."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Cuando tengo tiempo, ___.* (*leo* or *leer*) When I have time, I read.",
+      "answer": "Cuando tengo tiempo, leo.",
+      "accept": [],
+      "why": "Both halves need a verb with its person: *leo*."
+    },
+    {
+      "prompt": "Vale listens to music when she works.",
+      "answer": "Vale escucha música cuando trabaja.",
+      "accept": ["Cuando Vale trabaja, escucha música.", "Cuando trabaja, Vale escucha música."],
+      "why": "Present on both sides; the *cuando* part can go first or second."
+    },
+    {
+      "prompt": "Ask a friend (a man): What do you do when you're tired?",
+      "answer": "¿Qué haces cuando estás cansado?",
+      "accept": [],
+      "why": "*Haces* and *estás* are both the you form, and *cansado* matches a man."
+    },
+    {
+      "prompt": "Join them with *cuando*: *Llego al café. Hago el tinto.*",
+      "answer": "Cuando llego al café, hago el tinto.",
+      "accept": ["Hago el tinto cuando llego al café."],
+      "why": "*Cuando* goes in front of the part that sets off the other."
+    },
+    {
+      "prompt": "Make it about *we*: *Cuando hace frío, tomo tinto.*",
+      "answer": "Cuando hace frío, tomamos tinto.",
+      "accept": ["Tomamos tinto cuando hace frío."],
+      "why": "Only *tomo* changes; *hace frío* is about the weather, not a person."
+    },
+    {
+      "prompt": "Put the *cuando* part second: *Cuando llego a casa, me ducho.*",
+      "answer": "Me ducho cuando llego a casa.",
+      "accept": [],
+      "why": "Second, it needs no comma."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Cuándo llego a casa, me ducho.",
+      "right": "Cuando llego a casa, me ducho.",
+      "why": "Almost. Only the question word has an accent; this *cuando* is plain."
+    },
+    {
+      "wrong": "Cuando llego a casa, ducharme.",
+      "right": "Cuando llego a casa, me ducho.",
+      "why": "Both halves need a verb for a person, so *me ducho*."
+    },
+    {
+      "wrong": "Cuando yo tengo tiempo, yo leo.",
+      "right": "Cuando tengo tiempo, leo.",
+      "why": "The endings already say I; saying *yo* twice sounds heavy."
+    }
+  ],
+  "personal": "Finish this sentence about your own evening: *Cuando llego a casa*, and then what you really do."
+}
