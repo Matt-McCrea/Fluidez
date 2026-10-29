@@ -1,0 +1,195 @@
+{
+  "id": "ch026",
+  "unit": "u10",
+  "title": "La fila",
+  "text": "Lunes, seis de la mañana. Vale abre la puerta del café, y en la calle ya hay una fila.\nEl número veinte de la fila es Hernando.\nHernando: ¡Cuarenta años en este café, y hoy hago fila!\nHernando lee en su celular la reseña de la bloguera: «La Esquina de Rosa. El servicio: surreal. La comida: número uno en La Candelaria».\nVale: ¿Surreal? ¿Qué quiere decir eso?\nTomás: Quiere decir yo.\nSimón: ¡No la recomiendo! ¡No la recomiendo!\nUna señora: ¿Hay buñuelos? Quiero seis para llevar. Y dos almojábanas.\nUn estudiante: ¿El pandebono y la almojábana son iguales?\nVale: Se parecen mucho, pero el pandebono es más salado. Y el buñuelo es grande y también salado.\nEstudiante: Entonces, un buñuelo grande y un pandebono, por favor.\nHernando: ¿Y para el cliente número uno?\nVale: Para usted, un tinto de la casa, don Hernando.\nA las nueve, la fila llega a la esquina. En la esquina hay un hombre con traje. Mira la fila y no está contento. Es Ricardo Altamira.\nVale: Tomás, este buñuelo es para ti. Sin ti no hay fila.\nTomás: ¿Y el lunes a las siete? ¿Vienes conmigo?\nVale: Hoy es lunes, Tomás. Contigo, sí. A las siete.\nTomás come una almojábana y cierra los ojos. Tiene seis años otra vez, y Rosa canta.",
+  "gloss": [
+    {
+      "es": "la reseña",
+      "en": "the review"
+    },
+    {
+      "es": "surreal",
+      "en": "surreal"
+    },
+    {
+      "es": "bloguera",
+      "en": "blogger (a woman)"
+    },
+    {
+      "es": "¡Cuarenta años en este café, y hoy hago fila!",
+      "en": "Forty years in this café, and today I'm queuing."
+    },
+    {
+      "es": "Quiere decir yo.",
+      "en": "It means me."
+    },
+    {
+      "es": "un tinto de la casa",
+      "en": "a coffee on the house"
+    },
+    {
+      "es": "Sin ti no hay fila.",
+      "en": "Without you there's no queue."
+    },
+    {
+      "es": "Tiene seis años otra vez, y Rosa canta.",
+      "en": "He is six years old again, and Rosa is singing."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the blogger's review say?",
+      "options": [
+        "The service is surreal and the food is number one in La Candelaria",
+        "The food is terrible",
+        "The café is too small",
+        "The waiter is very professional"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Vale give Tomás a buñuelo?",
+      "options": [
+        "Without him, and his strange service, there would be no queue",
+        "It's his birthday",
+        "It's salty and nobody wants it",
+        "He paid for it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who is watching the queue from the corner?",
+      "options": [
+        "Ricardo Altamira",
+        "The blogger",
+        "Doña Gloria",
+        "Hernando's grandchildren"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cómo es el pandebono?",
+      "options": [
+        "Más salado que la almojábana",
+        "Muy dulce",
+        "Grande y frío"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "One bite of almojábana and Tomás is six years old again, sitting on Rosa's counter while she sings. Tonight at seven, with Vale, he starts to remember.",
+  "rereadQuestions": [
+    {
+      "q": "Where is Hernando in the queue?",
+      "options": [
+        "Number twenty",
+        "First",
+        "Last",
+        "He isn't in the queue"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Simón shout when Vale asks what surreal means?",
+      "options": [
+        "I don't recommend it",
+        "The bill, please",
+        "To take away",
+        "Delicious"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the lady in the queue order?",
+      "options": [
+        "Six buñuelos to take away and two almojábanas",
+        "A pandebono",
+        "An ajiaco",
+        "A tinto"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:entonces-bueno",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:oye-mira",
+    "c:para-llevar",
+    "c:por-favor",
+    "c:quiero",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:demonstratives-basic",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:tener-anos"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:almojábana",
+    "l:año",
+    "l:buñuelo",
+    "l:café",
+    "l:calle",
+    "l:cantar",
+    "l:casa",
+    "l:celular",
+    "l:cerrar",
+    "l:cliente",
+    "l:comer",
+    "l:comida",
+    "l:contento",
+    "l:decir",
+    "l:esquina",
+    "l:estar",
+    "l:estudiante",
+    "l:favor",
+    "l:fila",
+    "l:grande",
+    "l:hacer",
+    "l:hombre",
+    "l:hoy",
+    "l:igual",
+    "l:leer",
+    "l:llegar",
+    "l:llevar",
+    "l:lunes",
+    "l:mañana",
+    "l:mirar",
+    "l:número",
+    "l:ojo",
+    "l:pandebono",
+    "l:parar",
+    "l:parecerse",
+    "l:puerta",
+    "l:querer",
+    "l:qué",
+    "l:recomendar",
+    "l:reseña",
+    "l:salado",
+    "l:ser",
+    "l:servicio",
+    "l:señora",
+    "l:tener",
+    "l:tinto",
+    "l:traje",
+    "l:venir",
+    "l:vez"
+  ]
+}

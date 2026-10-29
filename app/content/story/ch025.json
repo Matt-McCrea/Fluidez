@@ -1,0 +1,212 @@
+{
+  "id": "ch025",
+  "unit": "u10",
+  "title": "No la recomiendo",
+  "text": "Sábado, once de la mañana. Tomás practica con Simón.\nTomás: ¿Le provoca algo de tomar, señor? Hay limonada y aguapanela.\nSimón: ¡Aguapanela fría!\nEn la pizarra está la carta de hoy: «Ajiaco con pollo. Bandeja: arroz, fríjoles, carne, huevo y plátano. Pescado con ensalada. Arepa con queso y empanadas».\nA las doce llegan los taxistas.\nHernando: Una bandeja, mijo. Mucha carne, mucho arroz, muchos fríjoles y dos plátanos. Sin ensalada.\nTaxista: Yo quiero una arepa con queso y huevo, y una limonada.\nOtro taxista: ¿Me regala tres empanadas?\nA la una entra una mujer con gafas y un cuaderno. Es la bloguera.\nMujer: ¿Qué me recomienda?\nTomás: El ajiaco, señora. Es la sopa de la casa, con pollo y mazorca.\nMujer: Quiero el ajiaco y el pescado.\nTomás: ¿El pescado? No la recomiendo.\nMujer: ¿Cómo? ¿No recomienda la sopa?\nTomás: No, no. La sopa no... La sopa sí... ¡Ay!\nSimón: ¡Qué rico! ¡Qué rico!\nLa mujer escribe en el cuaderno. Después come toda la sopa sin hablar.\nMujer: ¿Cuánto le debo?\nLa mujer paga y sale. En la mesa hay un vaso de aguapanela y diez mil pesos de propina.\nVale: ¿Qué pasó con la bloguera, Tomás?\nTomás: Hablé de pescado.\nTomás: Vale, ¿nos vemos mañana a las siete? Para hablar.\nVale: Mañana no puedo. ¿Mejor el lunes?\nTomás: Listo, el lunes a las siete.",
+  "gloss": [
+    {
+      "es": "la pizarra",
+      "en": "the chalkboard"
+    },
+    {
+      "es": "bloguera",
+      "en": "blogger (a woman)"
+    },
+    {
+      "es": "mijo",
+      "en": "son (friendly, to a man)"
+    },
+    {
+      "es": "¿Le provoca algo de tomar?",
+      "en": "Would you like something to drink? (formal)"
+    },
+    {
+      "es": "Aguapanela fría",
+      "en": "Cold aguapanela (a drink of raw cane sugar and water)"
+    },
+    {
+      "es": "Es la sopa de la casa",
+      "en": "It's the house soup"
+    },
+    {
+      "es": "No la recomiendo.",
+      "en": "I don't recommend it. (la means a feminine thing, like la sopa, but el pescado needs lo)"
+    },
+    {
+      "es": "Hablé de pescado.",
+      "en": "I talked about fish."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Tomás want to say about the fish?",
+      "options": [
+        "That he doesn't recommend it",
+        "That it is delicious",
+        "That it is free",
+        "That Vale made it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does the blogger think Tomás doesn't like the soup?",
+      "options": [
+        "He said la (for a feminine thing, like la sopa) when he meant el pescado",
+        "He said the soup was cold",
+        "He took the soup away",
+        "He gave her fish instead"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the blogger do after the misunderstanding?",
+      "options": [
+        "She writes in her notebook and eats all the soup without speaking",
+        "She leaves without eating",
+        "She asks to see Vale",
+        "She orders a bandeja"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué no quiere Hernando?",
+      "options": [
+        "Ensalada",
+        "Carne",
+        "Arroz"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cuándo se ven Tomás y Vale?",
+      "options": [
+        "El lunes a las siete",
+        "Mañana a las siete",
+        "El sábado a la una"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The blogger left a notebook full of notes, an empty bowl and a big tip. Somewhere in Bogotá tonight, she is writing about La Esquina de Rosa.",
+  "rereadQuestions": [
+    {
+      "q": "Who is Tomás practising with before lunch?",
+      "options": [
+        "Simón",
+        "Vale",
+        "Hernando",
+        "A taxi driver"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is left on the blogger's table?",
+      "options": [
+        "A glass of aguapanela and a 10,000 peso tip",
+        "Her notebook",
+        "Half the soup",
+        "A business card"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando want with his bandeja?",
+      "options": [
+        "Lots of meat, rice and beans, two plantains and no salad",
+        "Only salad",
+        "Fish and rice",
+        "Two eggs and cheese"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:cuanto-le-debo",
+    "c:hay",
+    "c:me-regala",
+    "c:puedo",
+    "c:que-me-recomienda",
+    "c:que-rico",
+    "c:quiero",
+    "c:te-provoca",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "p:para-inf",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:aguapanela",
+    "l:ajiaco",
+    "l:arepa",
+    "l:arroz",
+    "l:bandeja",
+    "l:carne",
+    "l:carta",
+    "l:casa",
+    "l:comer",
+    "l:cuaderno",
+    "l:cuánto",
+    "l:cómo",
+    "l:deber",
+    "l:después",
+    "l:empanada",
+    "l:ensalada",
+    "l:entrar",
+    "l:escribir",
+    "l:estar",
+    "l:fríjol",
+    "l:frío",
+    "l:gafas",
+    "l:hablar",
+    "l:hoy",
+    "l:huevo",
+    "l:limonada",
+    "l:listo",
+    "l:llegar",
+    "l:lunes",
+    "l:mazorca",
+    "l:mañana",
+    "l:mejor",
+    "l:mesa",
+    "l:mujer",
+    "l:pagar",
+    "l:pasar",
+    "l:pescado",
+    "l:peso",
+    "l:pizarra",
+    "l:plátano",
+    "l:poder",
+    "l:pollo",
+    "l:practicar",
+    "l:propina",
+    "l:provocar",
+    "l:querer",
+    "l:queso",
+    "l:qué",
+    "l:recomendar",
+    "l:regalar",
+    "l:rico",
+    "l:salir",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sopa",
+    "l:sábado",
+    "l:taxista",
+    "l:tomar",
+    "l:vaso",
+    "l:ver"
+  ]
+}
