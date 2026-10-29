@@ -15,7 +15,14 @@
     "c:no-me-digas",
     "c:resulta-que"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:superar",
+    "l:junto",
+    "l:barco",
+    "l:extrañar",
+    "l:esperanza",
+    "l:medida"
+   ],
    "chapter": "ch077"
   },
   {
@@ -30,7 +37,11 @@
     "c:total-que",
     "c:que-de-malas"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:imaginar",
+    "l:total",
+    "l:discutir"
+   ]
   },
   {
    "type": "introduce",
@@ -38,7 +49,14 @@
     "g:time-sequence"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:aumentar",
+    "l:apenas",
+    "l:disponer",
+    "l:conocimiento",
+    "l:fijarse",
+    "l:bar"
+   ]
   },
   {
    "type": "drill",
@@ -47,13 +65,33 @@
     "g:gerund-ways"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:francés",
+    "l:girar",
+    "l:propiedad"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:anécdota",
+    "l:accidente",
+    "l:romperse",
+    "l:equivocarse",
+    "l:vergüenza",
+    "l:reírse",
+    "l:risa",
+    "l:chiste",
+    "l:gracioso",
+    "l:increíble",
+    "l:reaccionar",
+    "l:reacción",
+    "l:baloncesto",
+    "l:natación",
+    "l:sociable"
+   ],
    "chapter": "ch078"
   },
   {
@@ -73,7 +111,14 @@
     "g:acabar-de-ya-todavia"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:fe",
+    "l:dama",
+    "l:afuera",
+    "l:publicar",
+    "l:establecer",
+    "l:piel"
+   ],
    "chapter": "ch079"
   },
   {
@@ -83,7 +128,11 @@
     "g:time-sequence"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:testigo",
+    "l:apartar",
+    "l:archivo"
+   ]
   },
   {
    "type": "output",

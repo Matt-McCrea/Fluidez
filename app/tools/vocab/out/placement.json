@@ -1,0 +1,8877 @@
+{
+ "perBand": {
+  "A1": {
+   "taught": 654,
+   "closed": 170,
+   "receptive": 226
+  },
+  "A2": {
+   "taught": 621,
+   "closed": 13,
+   "receptive": 316
+  },
+  "B1": {
+   "taught": 532,
+   "closed": 1,
+   "receptive": 617
+  },
+  "B2": {
+   "taught": 380,
+   "closed": 5,
+   "receptive": 165
+  },
+  "C1": {
+   "taught": 332,
+   "closed": 3,
+   "receptive": 515
+  }
+ },
+ "late": [],
+ "seedMissing": [
+  "u03:gustar (closed class)",
+  "u09:nunca (closed class)",
+  "u12:entonces (closed class)",
+  "u12:luego (closed class)",
+  "u14:porque (closed class)",
+  "u29:cierto (closed class)",
+  "u42:usted (closed class)",
+  "u42:tú (closed class)",
+  "u42:sumercé (closed class)",
+  "u51:vosotros (closed class)"
+ ],
+ "multiwordSeeds": [
+  "de repente",
+  "centro comercial",
+  "hoja de vida",
+  "pasado mañana",
+  "año nuevo",
+  "mala suerte",
+  "de repente",
+  "metro cuadrado",
+  "orden del día",
+  "hoja de vida",
+  "mamar gallo",
+  "tomar del pelo",
+  "doble sentido",
+  "espacio cultural"
+ ],
+ "sessionMismatch": 33,
+ "units": [
+  {
+   "id": "u01",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 1,
+     "cap": 6,
+     "ids": [
+      "l:día",
+      "l:bueno",
+      "l:llamar",
+      "l:gusto",
+      "l:mesero",
+      "l:colombiano"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 2,
+     "cap": 4,
+     "ids": [
+      "l:decir",
+      "l:favor",
+      "l:entender",
+      "l:despacio"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 3,
+     "cap": 6,
+     "ids": [
+      "l:tener",
+      "l:querer",
+      "l:regalar",
+      "l:trabajar",
+      "l:vivir",
+      "l:encantar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 4,
+     "cap": 4,
+     "ids": [
+      "l:poder",
+      "l:ayudar",
+      "l:disculpar",
+      "l:perdón"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 5,
+     "cap": 16,
+     "ids": [
+      "l:nombre",
+      "l:apellido",
+      "l:país",
+      "l:ciudad",
+      "l:trabajo",
+      "l:profesión",
+      "l:café",
+      "l:tinto",
+      "l:agua",
+      "l:pan",
+      "l:leche",
+      "l:jugo",
+      "l:estudiante",
+      "l:profesor",
+      "l:médico",
+      "l:ingeniero"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 6,
+     "cap": 6,
+     "ids": [
+      "l:ver",
+      "l:pena",
+      "l:canadiense",
+      "l:inglés",
+      "l:español",
+      "l:nacionalidad"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 7,
+     "cap": 4,
+     "ids": [
+      "l:comprar",
+      "l:comer",
+      "l:ayer",
+      "l:anoche"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 8,
+     "cap": 6,
+     "ids": [
+      "l:hacer",
+      "l:orden",
+      "l:idioma",
+      "l:señor",
+      "l:señora",
+      "l:amigo"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 9,
+     "cap": 4,
+     "ids": [
+      "l:creer",
+      "l:claro",
+      "l:listo",
+      "l:cliente"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 10,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u02",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 11,
+     "cap": 6,
+     "ids": [
+      "l:saber",
+      "l:verdad",
+      "l:mejorar",
+      "l:parque",
+      "l:centro",
+      "l:barrio"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 12,
+     "cap": 4,
+     "ids": [
+      "l:bien",
+      "l:escribir",
+      "l:significar",
+      "l:hospital"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 13,
+     "cap": 6,
+     "ids": [
+      "l:amable",
+      "l:repetir",
+      "l:universidad",
+      "l:colegio",
+      "l:cansado",
+      "l:ocupado"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 14,
+     "cap": 4,
+     "ids": [
+      "l:mal",
+      "l:malo",
+      "l:don",
+      "l:contento"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 15,
+     "cap": 16,
+     "ids": [
+      "l:oficina",
+      "l:estudiar",
+      "l:hablar",
+      "l:leer",
+      "l:llegar",
+      "l:empezar",
+      "l:terminar",
+      "l:compañero",
+      "l:jefe",
+      "l:reunión",
+      "l:computadora",
+      "l:correo",
+      "l:horario",
+      "l:empresa",
+      "l:tienda",
+      "l:banco"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 16,
+     "cap": 6,
+     "ids": [
+      "l:enfermo",
+      "l:tranquilo",
+      "l:aburrido",
+      "l:nervioso",
+      "l:número",
+      "l:calle"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 17,
+     "cap": 4,
+     "ids": [
+      "l:dedicar",
+      "l:irse",
+      "l:deber",
+      "l:aquí"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 18,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 19,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u03",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 20,
+     "cap": 6,
+     "ids": [
+      "l:dar",
+      "l:igual",
+      "l:chévere",
+      "l:cocinar",
+      "l:nadar",
+      "l:deporte"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 21,
+     "cap": 4,
+     "ids": [
+      "l:lunes",
+      "l:libro",
+      "l:fiesta",
+      "l:plan"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 22,
+     "cap": 6,
+     "ids": [
+      "l:salir",
+      "l:comida",
+      "l:bebida",
+      "l:cerveza",
+      "l:chocolate",
+      "l:fruta"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 23,
+     "cap": 4,
+     "ids": [
+      "l:tipo",
+      "l:jugar",
+      "l:preferir",
+      "l:pizza"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 24,
+     "cap": 16,
+     "ids": [
+      "l:fin",
+      "l:semana",
+      "l:martes",
+      "l:miércoles",
+      "l:jueves",
+      "l:viernes",
+      "l:sábado",
+      "l:domingo",
+      "l:cine",
+      "l:película",
+      "l:música",
+      "l:fútbol",
+      "l:partido",
+      "l:bailar",
+      "l:cantar",
+      "l:caminar"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 25,
+     "cap": 6,
+     "ids": [
+      "l:helado",
+      "l:vez",
+      "l:pasar",
+      "l:ahora",
+      "l:dejar",
+      "l:año"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 26,
+     "cap": 4,
+     "ids": [
+      "l:venir",
+      "l:encontrar",
+      "l:sentir",
+      "l:casarse"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 27,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 28,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u04",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 29,
+     "cap": 6,
+     "ids": [
+      "l:mango",
+      "l:fresa",
+      "l:naranja",
+      "l:aguacate",
+      "l:mazorca",
+      "l:flor"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 30,
+     "cap": 4,
+     "ids": [
+      "l:puesto",
+      "l:vendedor",
+      "l:cambio",
+      "l:billete"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 31,
+     "cap": 6,
+     "ids": [
+      "l:moneda",
+      "l:esperar",
+      "l:mejor",
+      "l:nuevo",
+      "l:tiempo",
+      "l:tiempo#weather"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 32,
+     "cap": 4,
+     "ids": [
+      "l:pasado",
+      "l:darse",
+      "l:pensar",
+      "l:llevar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 33,
+     "cap": 16,
+     "ids": [
+      "l:mercado",
+      "l:plaza",
+      "l:vender",
+      "l:precio",
+      "l:plata",
+      "l:peso",
+      "l:barato",
+      "l:caro",
+      "l:bolsa",
+      "l:kilo",
+      "l:libra",
+      "l:verdura",
+      "l:papa",
+      "l:tomate",
+      "l:cebolla",
+      "l:banano"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 34,
+     "cap": 6,
+     "ids": [
+      "l:llevar#wear",
+      "l:vida",
+      "l:hombre",
+      "l:necesitar",
+      "l:partir",
+      "l:tomar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 35,
+     "cap": 4,
+     "ids": [
+      "l:tomar#drink",
+      "l:conocer",
+      "l:contar",
+      "l:seguir"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 36,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "checkpoint",
+     "session": 37,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u05",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 38,
+     "cap": 6,
+     "ids": [
+      "l:único",
+      "l:hijo",
+      "l:novio",
+      "l:novia",
+      "l:alto",
+      "l:bajo"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 39,
+     "cap": 4,
+     "ids": [
+      "l:gente",
+      "l:delgado",
+      "l:gordo",
+      "l:joven"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 40,
+     "cap": 6,
+     "ids": [
+      "l:viejo",
+      "l:pelo",
+      "l:ojo",
+      "l:rubio",
+      "l:moreno",
+      "l:simpático"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 41,
+     "cap": 4,
+     "ids": [
+      "l:razón",
+      "l:inteligente",
+      "l:divertido",
+      "l:serio"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 42,
+     "cap": 16,
+     "ids": [
+      "l:familia",
+      "l:padre",
+      "l:madre",
+      "l:papá",
+      "l:mamá",
+      "l:hermano",
+      "l:hermana",
+      "l:hija",
+      "l:abuelo",
+      "l:abuela",
+      "l:tío",
+      "l:tía",
+      "l:primo",
+      "l:prima",
+      "l:esposo",
+      "l:esposa"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 43,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 44,
+     "cap": 6,
+     "ids": [
+      "l:tímido",
+      "l:trabajador",
+      "l:perezoso",
+      "l:generoso",
+      "l:edad",
+      "l:quedar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 45,
+     "cap": 4,
+     "ids": [
+      "l:presentar",
+      "l:mayor",
+      "l:menor",
+      "l:quedar#fit"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 46,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 47,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u06",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 48,
+     "cap": 6,
+     "ids": [
+      "l:recuerdo",
+      "l:radio",
+      "l:televisión",
+      "l:disco",
+      "l:máquina",
+      "l:pared"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 49,
+     "cap": 4,
+     "ids": [
+      "l:época",
+      "l:cuadro",
+      "l:mesa",
+      "l:silla"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 50,
+     "cap": 6,
+     "ids": [
+      "l:esquina",
+      "l:vitrina",
+      "l:letrero",
+      "l:dueño",
+      "l:cafetería",
+      "l:panadería"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 51,
+     "cap": 4,
+     "ids": [
+      "l:antiguo",
+      "l:cuadra",
+      "l:edificio",
+      "l:cambiar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 52,
+     "cap": 16,
+     "ids": [
+      "l:enero",
+      "l:febrero",
+      "l:marzo",
+      "l:abril",
+      "l:mayo",
+      "l:junio",
+      "l:julio",
+      "l:agosto",
+      "l:septiembre",
+      "l:octubre",
+      "l:noviembre",
+      "l:diciembre",
+      "l:década",
+      "l:siglo",
+      "l:moderno",
+      "l:foto"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 53,
+     "cap": 6,
+     "ids": [
+      "l:antes",
+      "l:acordar",
+      "l:volver",
+      "l:poner",
+      "l:cosa",
+      "l:parecer"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 54,
+     "cap": 4,
+     "ids": [
+      "l:nacer",
+      "l:rato",
+      "l:buscar",
+      "l:persona"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 55,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 56,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u07",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 57,
+     "cap": 6,
+     "ids": [
+      "l:casa",
+      "l:acá",
+      "l:lámpara",
+      "l:balcón",
+      "l:patio",
+      "l:arriendo"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 58,
+     "cap": 4,
+     "ids": [
+      "l:arrendar",
+      "l:vecino",
+      "l:droguería",
+      "l:parqueadero"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 59,
+     "cap": 6,
+     "ids": [
+      "l:portero",
+      "l:llave",
+      "l:mueble",
+      "l:siempre",
+      "l:mujer",
+      "l:mirar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 60,
+     "cap": 4,
+     "ids": [
+      "l:ahí",
+      "l:cerca",
+      "l:allá",
+      "l:estado"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 61,
+     "cap": 16,
+     "ids": [
+      "l:apartamento",
+      "l:cuarto",
+      "l:habitación",
+      "l:sala",
+      "l:comedor",
+      "l:cocina",
+      "l:baño",
+      "l:ventana",
+      "l:puerta",
+      "l:piso",
+      "l:escalera",
+      "l:cama",
+      "l:sofá",
+      "l:armario",
+      "l:nevera",
+      "l:estufa"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 62,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 63,
+     "cap": 6,
+     "ids": [
+      "l:tratar",
+      "l:encontrarse",
+      "l:lugar",
+      "l:mundo",
+      "l:noche",
+      "l:momento"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 64,
+     "cap": 4,
+     "ids": [
+      "l:sentirse",
+      "l:hora",
+      "l:después",
+      "l:problema"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 65,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 66,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u08",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 67,
+     "cap": 6,
+     "ids": [
+      "l:idea",
+      "l:envidia",
+      "l:montar",
+      "l:caballo",
+      "l:avión",
+      "l:aeropuerto"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 68,
+     "cap": 4,
+     "ids": [
+      "l:hotel",
+      "l:experiencia",
+      "l:probar",
+      "l:bucear"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 69,
+     "cap": 6,
+     "ids": [
+      "l:selva",
+      "l:usar",
+      "l:seguro",
+      "l:seguro#insurance",
+      "l:preguntar",
+      "l:formar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 70,
+     "cap": 4,
+     "ids": [
+      "l:niño",
+      "l:llevarse",
+      "l:hoy",
+      "l:crear"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 71,
+     "cap": 16,
+     "ids": [
+      "l:viajar",
+      "l:viaje",
+      "l:visitar",
+      "l:playa",
+      "l:mar",
+      "l:montaña",
+      "l:río",
+      "l:pueblo",
+      "l:finca",
+      "l:cafetal",
+      "l:turista",
+      "l:maleta",
+      "l:vacación",
+      "l:isla",
+      "l:costa",
+      "l:paisaje"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 72,
+     "cap": 6,
+     "ids": [
+      "l:escuchar",
+      "l:llamarse",
+      "l:suponer",
+      "l:dinero",
+      "l:recordar",
+      "l:dicho"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 73,
+     "cap": 4,
+     "ids": [
+      "l:ganar",
+      "l:valer",
+      "l:allí",
+      "l:acabar"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 74,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "checkpoint",
+     "session": 75,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u09",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 76,
+     "cap": 6,
+     "ids": [
+      "l:tarde",
+      "l:reloj",
+      "l:mañana",
+      "l:temprano",
+      "l:jabón",
+      "l:toalla"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 77,
+     "cap": 4,
+     "ids": [
+      "l:mano",
+      "l:champú",
+      "l:diente",
+      "l:limpiar"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 78,
+     "cap": 6,
+     "ids": [
+      "l:barrer",
+      "l:lavar",
+      "l:planchar",
+      "l:oficio",
+      "l:pagar",
+      "l:medio"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 79,
+     "cap": 4,
+     "ids": [
+      "l:soler",
+      "l:quedarse",
+      "l:manera",
+      "l:pasado#past"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 80,
+     "cap": 16,
+     "ids": [
+      "l:levantarse",
+      "l:despertarse",
+      "l:bañarse",
+      "l:ducharse",
+      "l:vestirse",
+      "l:peinarse",
+      "l:afeitarse",
+      "l:maquillarse",
+      "l:cepillarse",
+      "l:acostarse",
+      "l:dormir",
+      "l:desayunar",
+      "l:almorzar",
+      "l:desayuno",
+      "l:almuerzo",
+      "l:cena"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 81,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 82,
+     "cap": 6,
+     "ids": [
+      "l:pequeño",
+      "l:acordarse",
+      "l:perder",
+      "l:volverse",
+      "l:ponerse",
+      "l:entrar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 83,
+     "cap": 4,
+     "ids": [
+      "l:pedir",
+      "l:pedir#order",
+      "l:intentar",
+      "l:traer"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 84,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 85,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u10",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 86,
+     "cap": 6,
+     "ids": [
+      "l:cuenta",
+      "l:recomendar",
+      "l:postre",
+      "l:torta",
+      "l:carta",
+      "l:menú"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 87,
+     "cap": 4,
+     "ids": [
+      "l:rico",
+      "l:provocar",
+      "l:provecho",
+      "l:propina"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 88,
+     "cap": 6,
+     "ids": [
+      "l:plato",
+      "l:vaso",
+      "l:taza",
+      "l:cuchara",
+      "l:tenedor",
+      "l:cuchillo"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 89,
+     "cap": 4,
+     "ids": [
+      "l:servir",
+      "l:delicioso",
+      "l:picante",
+      "l:dulce"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 90,
+     "cap": 16,
+     "ids": [
+      "l:ajiaco",
+      "l:arepa",
+      "l:bandeja",
+      "l:empanada",
+      "l:sopa",
+      "l:arroz",
+      "l:fríjol",
+      "l:carne",
+      "l:pollo",
+      "l:pescado",
+      "l:huevo",
+      "l:queso",
+      "l:plátano",
+      "l:ensalada",
+      "l:limonada",
+      "l:aguapanela"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 91,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 92,
+     "cap": 6,
+     "ids": [
+      "l:salado",
+      "l:almojábana",
+      "l:buñuelo",
+      "l:pandebono",
+      "l:parecerse",
+      "l:grande"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 93,
+     "cap": 4,
+     "ids": [
+      "l:importante",
+      "l:historia",
+      "l:mes",
+      "l:oír"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 94,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 95,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u11",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 96,
+     "cap": 6,
+     "ids": [
+      "l:travieso",
+      "l:obediente",
+      "l:portarse",
+      "l:pelear",
+      "l:chica",
+      "l:conseguir"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 97,
+     "cap": 4,
+     "ids": [
+      "l:minuto",
+      "l:mantener",
+      "l:morir",
+      "l:policía"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 98,
+     "cap": 6,
+     "ids": [
+      "l:dentro",
+      "l:tratarse",
+      "l:equipo",
+      "l:recibir",
+      "l:permitir",
+      "l:punto"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 99,
+     "cap": 4,
+     "ids": [
+      "l:pesar",
+      "l:enviar",
+      "l:importar",
+      "l:chico"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 100,
+     "cap": 16,
+     "ids": [
+      "l:niñez",
+      "l:infancia",
+      "l:escuela",
+      "l:maestro",
+      "l:clase",
+      "l:recreo",
+      "l:juego",
+      "l:juguete",
+      "l:muñeca",
+      "l:pelota",
+      "l:uniforme",
+      "l:tarea",
+      "l:examen",
+      "l:nota",
+      "l:materia",
+      "l:bicicleta"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 101,
+     "cap": 6,
+     "ids": [
+      "l:propio",
+      "l:lado",
+      "l:mostrar",
+      "l:derecho",
+      "l:resultar",
+      "l:sacar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 102,
+     "cap": 4,
+     "ids": [
+      "l:comparación",
+      "l:meter",
+      "l:amor",
+      "l:olvidar"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 103,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 104,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u12",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 105,
+     "cap": 6,
+     "ids": [
+      "l:repente",
+      "l:clima",
+      "l:cumpleaños",
+      "l:regalo",
+      "l:cuento",
+      "l:cortar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 106,
+     "cap": 4,
+     "ids": [
+      "l:final",
+      "l:realmente",
+      "l:palabra",
+      "l:comenzar"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 107,
+     "cap": 6,
+     "ids": [
+      "l:abrir",
+      "l:funcionar",
+      "l:acercar",
+      "l:muerto",
+      "l:servicio",
+      "l:diferente"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 108,
+     "cap": 4,
+     "ids": [
+      "l:frío",
+      "l:cabeza",
+      "l:rápido",
+      "l:oportunidad"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 109,
+     "cap": 16,
+     "ids": [
+      "l:ocurrir",
+      "l:suceder",
+      "l:sorpresa",
+      "l:sorprendido",
+      "l:asustado",
+      "l:feliz",
+      "l:triste",
+      "l:enojado",
+      "l:preocupado",
+      "l:emocionado",
+      "l:lluvia",
+      "l:llover",
+      "l:sol",
+      "l:nube",
+      "l:calor",
+      "l:tormenta"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 110,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 111,
+     "cap": 6,
+     "ids": [
+      "l:además",
+      "l:convertir",
+      "l:desear",
+      "l:posible",
+      "l:realidad",
+      "l:tocar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 112,
+     "cap": 4,
+     "ids": [
+      "l:información",
+      "l:seguridad",
+      "l:regresar",
+      "l:temer"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 113,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "checkpoint",
+     "session": 114,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u13",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 115,
+     "cap": 6,
+     "ids": [
+      "l:permiso",
+      "l:doblar",
+      "l:bajarse",
+      "l:subirse",
+      "l:pasaje",
+      "l:tarjeta"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 116,
+     "cap": 4,
+     "ids": [
+      "l:trancón",
+      "l:tráfico",
+      "l:conductor",
+      "l:manejar"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 117,
+     "cap": 6,
+     "ids": [
+      "l:lejos",
+      "l:dirección",
+      "l:mapa",
+      "l:humano",
+      "l:cuerpo",
+      "l:muerte"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 118,
+     "cap": 4,
+     "ids": [
+      "l:subir",
+      "l:bajar",
+      "l:sistema",
+      "l:tierra"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 119,
+     "cap": 16,
+     "ids": [
+      "l:bus",
+      "l:buseta",
+      "l:taxi",
+      "l:estación",
+      "l:parada",
+      "l:ruta",
+      "l:transmilenio",
+      "l:carro",
+      "l:moto",
+      "l:carrera",
+      "l:avenida",
+      "l:semáforo",
+      "l:andén",
+      "l:derecha",
+      "l:izquierda",
+      "l:cruzar"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 120,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 121,
+     "cap": 6,
+     "ids": [
+      "l:demora",
+      "l:grupo",
+      "l:sentar",
+      "l:beber",
+      "l:general",
+      "l:orden#command"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 122,
+     "cap": 4,
+     "ids": [
+      "l:amar",
+      "l:ley",
+      "l:decidir",
+      "l:próximo"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 123,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 124,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u14",
+   "band": "A1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 125,
+     "cap": 6,
+     "ids": [
+      "l:ejemplo",
+      "l:texto",
+      "l:preocupar",
+      "l:público",
+      "l:especial",
+      "l:difícil"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 126,
+     "cap": 4,
+     "ids": [
+      "l:abrazo",
+      "l:faltar",
+      "l:asegurar",
+      "l:lograr"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 127,
+     "cap": 6,
+     "ids": [
+      "l:negocio",
+      "l:incluso",
+      "l:caer",
+      "l:largo",
+      "l:unir",
+      "l:sitio"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 128,
+     "cap": 4,
+     "ids": [
+      "l:parar",
+      "l:presidente",
+      "l:luz",
+      "l:suficiente"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 129,
+     "cap": 16,
+     "ids": [
+      "l:mensaje",
+      "l:celular",
+      "l:contestar",
+      "l:chat",
+      "l:audio",
+      "l:pantalla",
+      "l:aplicación",
+      "l:internet",
+      "l:red",
+      "l:mandar",
+      "l:compartir",
+      "l:detalle",
+      "l:describir",
+      "l:explicar",
+      "l:responder",
+      "l:noticia"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 130,
+     "cap": 6,
+     "ids": [
+      "l:corazón",
+      "l:paz",
+      "l:correr",
+      "l:cuidado",
+      "l:relación",
+      "l:teléfono"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 131,
+     "cap": 4,
+     "ids": [
+      "l:mover",
+      "l:existir",
+      "l:siguiente",
+      "l:fuerte"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 132,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 133,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u15",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 134,
+     "cap": 6,
+     "ids": [
+      "l:depender",
+      "l:acuerdo",
+      "l:fiebre",
+      "l:gripa",
+      "l:tos",
+      "l:cansancio"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 135,
+     "cap": 3,
+     "ids": [
+      "l:susto",
+      "l:ánimo",
+      "l:estrés"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 136,
+     "cap": 6,
+     "ids": [
+      "l:alegre",
+      "l:deprimido",
+      "l:descansar",
+      "l:sano",
+      "l:cerrar",
+      "l:perdido"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 137,
+     "cap": 3,
+     "ids": [
+      "l:miedo",
+      "l:doler",
+      "l:ofrecer"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 138,
+     "cap": 15,
+     "ids": [
+      "l:cara",
+      "l:oreja",
+      "l:nariz",
+      "l:boca",
+      "l:cuello",
+      "l:hombro",
+      "l:brazo",
+      "l:dedo",
+      "l:espalda",
+      "l:pecho",
+      "l:estómago",
+      "l:pierna",
+      "l:rodilla",
+      "l:pie",
+      "l:dolor"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 139,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 140,
+     "cap": 6,
+     "ids": [
+      "l:aceptar",
+      "l:modo",
+      "l:aprender",
+      "l:control",
+      "l:informar",
+      "l:personal"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 141,
+     "cap": 3,
+     "ids": [
+      "l:pronto",
+      "l:fácil",
+      "l:doctor"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 142,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 143,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u16",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 144,
+     "cap": 6,
+     "ids": [
+      "l:rojo",
+      "l:azul",
+      "l:verde",
+      "l:amarillo",
+      "l:blanco",
+      "l:negro"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 145,
+     "cap": 3,
+     "ids": [
+      "l:efectivo",
+      "l:cuota",
+      "l:gris"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 146,
+     "cap": 6,
+     "ids": [
+      "l:rosado",
+      "l:morado",
+      "l:cuero",
+      "l:algodón",
+      "l:lana",
+      "l:probarse"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 147,
+     "cap": 3,
+     "ids": [
+      "l:material",
+      "l:oscuro",
+      "l:talla"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 148,
+     "cap": 15,
+     "ids": [
+      "l:ropa",
+      "l:camisa",
+      "l:camiseta",
+      "l:pantalón",
+      "l:falda",
+      "l:vestido",
+      "l:chaqueta",
+      "l:saco",
+      "l:suéter",
+      "l:zapato",
+      "l:tenis",
+      "l:bota",
+      "l:media",
+      "l:bolso",
+      "l:color"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 149,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 150,
+     "cap": 6,
+     "ids": [
+      "l:devolver",
+      "l:descuento",
+      "l:rebaja",
+      "l:almacén",
+      "l:cargar",
+      "l:justo"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 151,
+     "cap": 3,
+     "ids": [
+      "l:causar",
+      "l:detener",
+      "l:libre"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 152,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "checkpoint",
+     "session": 153,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u17",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 154,
+     "cap": 6,
+     "ids": [
+      "l:obtener",
+      "l:real",
+      "l:considerar",
+      "l:línea",
+      "l:frente",
+      "l:morirse"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 155,
+     "cap": 3,
+     "ids": [
+      "l:avisar",
+      "l:atención",
+      "l:asunto"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 156,
+     "cap": 6,
+     "ids": [
+      "l:elegir",
+      "l:entregar",
+      "l:interesar",
+      "l:hermoso",
+      "l:suerte",
+      "l:decisión"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 157,
+     "cap": 3,
+     "ids": [
+      "l:invitar",
+      "l:durar",
+      "l:investigación"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 158,
+     "cap": 15,
+     "ids": [
+      "l:invitación",
+      "l:concierto",
+      "l:gol",
+      "l:estadio",
+      "l:salsa",
+      "l:rumba",
+      "l:discoteca",
+      "l:entrada",
+      "l:boleta",
+      "l:función",
+      "l:cita",
+      "l:puntual",
+      "l:cancelar",
+      "l:rechazar",
+      "l:ganas"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 159,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 160,
+     "cap": 6,
+     "ids": [
+      "l:situación",
+      "l:padres",
+      "l:referir",
+      "l:dólar",
+      "l:respuesta",
+      "l:acción"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 161,
+     "cap": 3,
+     "ids": [
+      "l:perfecto",
+      "l:niña",
+      "l:marcar"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 162,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 163,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u18",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 164,
+     "cap": 6,
+     "ids": [
+      "l:ida",
+      "l:necesario",
+      "l:dudar",
+      "l:vuelta",
+      "l:campo",
+      "l:salud"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 165,
+     "cap": 3,
+     "ids": [
+      "l:preparar",
+      "l:descubrir",
+      "l:andar"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 166,
+     "cap": 6,
+     "ids": [
+      "l:quizá",
+      "l:juntos",
+      "l:cumplir",
+      "l:firmar",
+      "l:completar",
+      "l:futuro"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 167,
+     "cap": 3,
+     "ids": [
+      "l:continuar",
+      "l:apoyar",
+      "l:compañía"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 168,
+     "cap": 15,
+     "ids": [
+      "l:terminal",
+      "l:vuelo",
+      "l:aerolínea",
+      "l:tiquete",
+      "l:equipaje",
+      "l:pasaporte",
+      "l:hostal",
+      "l:reserva",
+      "l:reservar",
+      "l:recepción",
+      "l:carretera",
+      "l:regreso",
+      "l:salida",
+      "l:llegada",
+      "l:retraso"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 169,
+     "cap": 15,
+     "ids": [
+      "l:escala",
+      "l:asiento",
+      "l:ventanilla",
+      "l:pasajero",
+      "l:peaje",
+      "l:destino",
+      "l:metro",
+      "l:tren",
+      "l:puerto",
+      "l:plano",
+      "l:publicidad",
+      "l:piloto",
+      "l:mecánico",
+      "l:rueda",
+      "l:excursión"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 170,
+     "cap": 6,
+     "ids": [
+      "l:oficial",
+      "l:siquiera",
+      "l:vestir",
+      "l:quitar",
+      "l:utilizar",
+      "l:carrera#street"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 171,
+     "cap": 3,
+     "ids": [
+      "l:enseñar",
+      "l:director",
+      "l:loco"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 172,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 173,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u19",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 174,
+     "cap": 6,
+     "ids": [
+      "l:parte",
+      "l:renunciar",
+      "l:contratar",
+      "l:despedir",
+      "l:aparecer",
+      "l:meterse"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 175,
+     "cap": 3,
+     "ids": [
+      "l:víctima",
+      "l:cámara",
+      "l:bonito"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 176,
+     "cap": 6,
+     "ids": [
+      "l:cuidar",
+      "l:olvidarse",
+      "l:nivel",
+      "l:tirar",
+      "l:principio",
+      "l:atrás"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 177,
+     "cap": 3,
+     "ids": [
+      "l:llamada",
+      "l:departamento",
+      "l:correcto"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 178,
+     "cap": 15,
+     "ids": [
+      "l:empleo",
+      "l:oferta",
+      "l:anuncio",
+      "l:entrevista",
+      "l:sueldo",
+      "l:salario",
+      "l:contrato",
+      "l:empleado",
+      "l:cargo",
+      "l:curso",
+      "l:título",
+      "l:habilidad",
+      "l:capacidad",
+      "l:computación",
+      "l:turno"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 179,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 180,
+     "cap": 6,
+     "ids": [
+      "l:atacar",
+      "l:consejo",
+      "l:error",
+      "l:robar",
+      "l:nombrar",
+      "l:proteger"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 181,
+     "cap": 3,
+     "ids": [
+      "l:papel",
+      "l:espacio",
+      "l:aire"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 182,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 183,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u20",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 184,
+     "cap": 6,
+     "ids": [
+      "l:levantar",
+      "l:luchar",
+      "l:reír",
+      "l:zona",
+      "l:reconocer",
+      "l:adelantar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 185,
+     "cap": 3,
+     "ids": [
+      "l:prometer",
+      "l:echar",
+      "l:acercarse"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 186,
+     "cap": 6,
+     "ids": [
+      "l:caja",
+      "l:arriba",
+      "l:evitar",
+      "l:simplemente",
+      "l:obra",
+      "l:cariño"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 187,
+     "cap": 3,
+     "ids": [
+      "l:daño",
+      "l:disfrutar",
+      "l:dirigir"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 188,
+     "cap": 15,
+     "ids": [
+      "l:temperatura",
+      "l:grado",
+      "l:nublado",
+      "l:soleado",
+      "l:viento",
+      "l:trueno",
+      "l:rayo",
+      "l:granizo",
+      "l:húmedo",
+      "l:seco",
+      "l:páramo",
+      "l:pronóstico",
+      "l:promesa",
+      "l:predecir",
+      "l:verano"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 189,
+     "cap": 15,
+     "ids": [
+      "l:invierno",
+      "l:cielo",
+      "l:perro",
+      "l:fuego",
+      "l:norte",
+      "l:animal",
+      "l:sur",
+      "l:árbol",
+      "l:luna",
+      "l:gato",
+      "l:pez",
+      "l:león",
+      "l:oeste",
+      "l:pájaro",
+      "l:planta"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 190,
+     "cap": 6,
+     "ids": [
+      "l:camino",
+      "l:verdadero",
+      "l:par",
+      "l:abogado",
+      "l:actuar",
+      "l:notar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 191,
+     "cap": 3,
+     "ids": [
+      "l:lindo",
+      "l:convertirse",
+      "l:base"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 192,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "checkpoint",
+     "session": 193,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u21",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 194,
+     "cap": 6,
+     "ids": [
+      "l:fondo",
+      "l:peor",
+      "l:rey",
+      "l:voz",
+      "l:principal",
+      "l:restar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 195,
+     "cap": 3,
+     "ids": [
+      "l:molestar",
+      "l:abierto",
+      "l:alcanzar"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 196,
+     "cap": 6,
+     "ids": [
+      "l:construir",
+      "l:alrededor",
+      "l:crecer",
+      "l:sexo",
+      "l:abajo",
+      "l:realizar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 197,
+     "cap": 3,
+     "ids": [
+      "l:genial",
+      "l:apostar",
+      "l:sentarse"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 198,
+     "cap": 15,
+     "ids": [
+      "l:ayuda",
+      "l:regla",
+      "l:norma",
+      "l:prohibir",
+      "l:socio",
+      "l:sociedad",
+      "l:trato",
+      "l:pareja",
+      "l:confiar",
+      "l:confianza",
+      "l:exigir",
+      "l:aconsejar",
+      "l:sugerir",
+      "l:responsabilidad",
+      "l:encargarse"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 199,
+     "cap": 15,
+     "ids": [
+      "l:amiga",
+      "l:casado",
+      "l:bebé",
+      "l:médica",
+      "l:soltero",
+      "l:separado",
+      "l:profesora",
+      "l:nieto",
+      "l:pariente",
+      "l:cocinero",
+      "l:sobrino",
+      "l:sobrina",
+      "l:taxista",
+      "l:nieta",
+      "l:suegra"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 200,
+     "cap": 6,
+     "ids": [
+      "l:desaparecer",
+      "l:sonar",
+      "l:gobierno",
+      "l:comprender",
+      "l:romper",
+      "l:sueño"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 201,
+     "cap": 3,
+     "ids": [
+      "l:guardar",
+      "l:cuenta#bill",
+      "l:preocuparse"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 202,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 203,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u22",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 204,
+     "cap": 6,
+     "ids": [
+      "l:brindar",
+      "l:culpa",
+      "l:despertar",
+      "l:banco#bench",
+      "l:llenar",
+      "l:volar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 205,
+     "cap": 3,
+     "ids": [
+      "l:alegrarse",
+      "l:navidad",
+      "l:reunir"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 206,
+     "cap": 6,
+     "ids": [
+      "l:adelante",
+      "l:caerse",
+      "l:diferenciar",
+      "l:desarrollar",
+      "l:agradecer",
+      "l:área"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 207,
+     "cap": 3,
+     "ids": [
+      "l:felicitaciones",
+      "l:valor",
+      "l:bastar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 208,
+     "cap": 15,
+     "ids": [
+      "l:celebrar",
+      "l:celebración",
+      "l:boda",
+      "l:matrimonio",
+      "l:bautizo",
+      "l:festivo",
+      "l:novena",
+      "l:velita",
+      "l:pésame",
+      "l:funeral",
+      "l:entierro",
+      "l:nacimiento",
+      "l:felicitar",
+      "l:vela",
+      "l:invitado"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 209,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 210,
+     "cap": 6,
+     "ids": [
+      "l:raro",
+      "l:capaz",
+      "l:juez",
+      "l:coser",
+      "l:acompañar",
+      "l:revisar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 211,
+     "cap": 3,
+     "ids": [
+      "l:iniciar",
+      "l:libertad",
+      "l:mayoría"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 212,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 213,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u23",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 214,
+     "cap": 6,
+     "ids": [
+      "l:arte",
+      "l:enfrentar",
+      "l:destinar",
+      "l:venta",
+      "l:recuperar",
+      "l:estrella"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 215,
+     "cap": 3,
+     "ids": [
+      "l:colaborar",
+      "l:ahorita",
+      "l:riesgo"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 216,
+     "cap": 6,
+     "ids": [
+      "l:canción",
+      "l:probablemente",
+      "l:encima",
+      "l:prestar",
+      "l:detrás",
+      "l:mente"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 217,
+     "cap": 3,
+     "ids": [
+      "l:encargar",
+      "l:recoger",
+      "l:enterarse"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 218,
+     "cap": 15,
+     "ids": [
+      "l:cajero",
+      "l:clave",
+      "l:retirar",
+      "l:consignar",
+      "l:factura",
+      "l:recibo",
+      "l:cédula",
+      "l:trámite",
+      "l:documento",
+      "l:formulario",
+      "l:fila",
+      "l:queja",
+      "l:reclamo",
+      "l:arreglar",
+      "l:reparar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 219,
+     "cap": 15,
+     "ids": [
+      "l:técnico",
+      "l:dañado",
+      "l:señal",
+      "l:operador",
+      "l:enfermera",
+      "l:bombero",
+      "l:postal",
+      "l:identidad",
+      "l:ambulancia",
+      "l:socorro",
+      "l:comisaría",
+      "l:ejército",
+      "l:cometer",
+      "l:oro",
+      "l:muchacho"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 220,
+     "cap": 6,
+     "ids": [
+      "l:movimiento",
+      "l:soltar",
+      "l:necesidad",
+      "l:mitad",
+      "l:amenazar",
+      "l:caballero"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 221,
+     "cap": 3,
+     "ids": [
+      "l:fuerza",
+      "l:merecer",
+      "l:interesante"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 222,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 223,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u24",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 224,
+     "cap": 6,
+     "ids": [
+      "l:convencer",
+      "l:dormirse",
+      "l:perdonar",
+      "l:maravilloso",
+      "l:hogar",
+      "l:cubrir"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 225,
+     "cap": 3,
+     "ids": [
+      "l:común",
+      "l:soñar",
+      "l:soportar"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 226,
+     "cap": 6,
+     "ids": [
+      "l:éxito",
+      "l:dato",
+      "l:placer",
+      "l:iglesia",
+      "l:marcharse",
+      "l:lanzar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 227,
+     "cap": 3,
+     "ids": [
+      "l:destruir",
+      "l:parir",
+      "l:especie"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 228,
+     "cap": 15,
+     "ids": [
+      "l:mudarse",
+      "l:trasteo",
+      "l:ruido",
+      "l:ruidoso",
+      "l:peligroso",
+      "l:ventaja",
+      "l:desventaja",
+      "l:amplio",
+      "l:luminoso",
+      "l:estrato",
+      "l:conjunto",
+      "l:administración",
+      "l:transporte",
+      "l:escoger",
+      "l:comparar"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 229,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 230,
+     "cap": 6,
+     "ids": [
+      "l:acto",
+      "l:alma",
+      "l:enfermedad",
+      "l:oído",
+      "l:avanzar",
+      "l:cenar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 231,
+     "cap": 3,
+     "ids": [
+      "l:negar",
+      "l:ciencia",
+      "l:cabo"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 232,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "checkpoint",
+     "session": 233,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u25",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 234,
+     "cap": 6,
+     "ids": [
+      "l:dios",
+      "l:dulce#candy",
+      "l:líder",
+      "l:marido",
+      "l:juicio",
+      "l:diario"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 235,
+     "cap": 3,
+     "ids": [
+      "l:diseñar",
+      "l:cerrado",
+      "l:fuente"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 236,
+     "cap": 6,
+     "ids": [
+      "l:saltar",
+      "l:duro",
+      "l:mentir",
+      "l:relacionar",
+      "l:pelearse",
+      "l:contener"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 237,
+     "cap": 3,
+     "ids": [
+      "l:pertenecer",
+      "l:alejar",
+      "l:extraño"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 238,
+     "cap": 15,
+     "ids": [
+      "l:valle",
+      "l:lago",
+      "l:naturaleza",
+      "l:cerro",
+      "l:colina",
+      "l:cultivo",
+      "l:cable",
+      "l:paisa",
+      "l:carácter",
+      "l:orgulloso",
+      "l:tradición",
+      "l:costumbre",
+      "l:feria",
+      "l:vaca",
+      "l:oso"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 239,
+     "cap": 15,
+     "ids": [
+      "l:primavera",
+      "l:ratón",
+      "l:nieve",
+      "l:otoño",
+      "l:cuñada",
+      "l:interior",
+      "l:planeta",
+      "l:bosque",
+      "l:región",
+      "l:desierto",
+      "l:habitante",
+      "l:margarita",
+      "l:divorcio",
+      "l:oveja",
+      "l:mosca"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 240,
+     "cap": 6,
+     "ids": [
+      "l:propósito",
+      "l:llorar",
+      "l:peligro",
+      "l:gritar",
+      "l:búsqueda",
+      "l:golpear"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 241,
+     "cap": 3,
+     "ids": [
+      "l:caso",
+      "l:cantidad",
+      "l:grado#graduation"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 242,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 243,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u26",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 244,
+     "cap": 6,
+     "ids": [
+      "l:superar",
+      "l:junto",
+      "l:barco",
+      "l:extrañar",
+      "l:esperanza",
+      "l:medida"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 245,
+     "cap": 3,
+     "ids": [
+      "l:imaginar",
+      "l:total",
+      "l:discutir"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 246,
+     "cap": 6,
+     "ids": [
+      "l:aumentar",
+      "l:apenas",
+      "l:disponer",
+      "l:conocimiento",
+      "l:fijarse",
+      "l:bar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 247,
+     "cap": 3,
+     "ids": [
+      "l:francés",
+      "l:girar",
+      "l:propiedad"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 248,
+     "cap": 15,
+     "ids": [
+      "l:anécdota",
+      "l:accidente",
+      "l:romperse",
+      "l:equivocarse",
+      "l:vergüenza",
+      "l:reírse",
+      "l:risa",
+      "l:chiste",
+      "l:gracioso",
+      "l:increíble",
+      "l:reaccionar",
+      "l:reacción",
+      "l:baloncesto",
+      "l:natación",
+      "l:sociable"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 249,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 250,
+     "cap": 6,
+     "ids": [
+      "l:fe",
+      "l:dama",
+      "l:afuera",
+      "l:publicar",
+      "l:establecer",
+      "l:piel"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 251,
+     "cap": 3,
+     "ids": [
+      "l:testigo",
+      "l:apartar",
+      "l:archivo"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 252,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 253,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u27",
+   "band": "A2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 254,
+     "cap": 6,
+     "ids": [
+      "l:saludar",
+      "l:atento",
+      "l:cordial",
+      "l:citar",
+      "l:agradable",
+      "l:herir"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 255,
+     "cap": 3,
+     "ids": [
+      "l:adjuntar",
+      "l:atentamente",
+      "l:científico"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 256,
+     "cap": 6,
+     "ids": [
+      "l:copa",
+      "l:comprobar",
+      "l:bello",
+      "l:juntarse",
+      "l:gratis",
+      "l:pararse"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 257,
+     "cap": 3,
+     "ids": [
+      "l:mundial",
+      "l:hallar",
+      "l:permanecer"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 258,
+     "cap": 15,
+     "ids": [
+      "l:saludo",
+      "l:despedida",
+      "l:reseña",
+      "l:comentario",
+      "l:opinión",
+      "l:aviso",
+      "l:seguidor",
+      "l:página",
+      "l:enlace",
+      "l:usuario",
+      "l:calificar",
+      "l:guión",
+      "l:sello",
+      "l:quiosco",
+      "l:arroba"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 259,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 260,
+     "cap": 6,
+     "ids": [
+      "l:fiscal",
+      "l:revista",
+      "l:esconder",
+      "l:recurso",
+      "l:periódico",
+      "l:golpe"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 261,
+     "cap": 3,
+     "ids": [
+      "l:sostener",
+      "l:alcalde",
+      "l:pista"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 262,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 263,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u28",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 264,
+     "cap": 5,
+     "ids": [
+      "l:odio",
+      "l:hambre",
+      "l:sentimiento",
+      "l:presión",
+      "l:pegar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 265,
+     "cap": 3,
+     "ids": [
+      "l:guiar",
+      "l:premio",
+      "l:votar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 266,
+     "cap": 14,
+     "ids": [
+      "l:basura",
+      "l:contaminación",
+      "l:inseguridad",
+      "l:ladrón",
+      "l:robo",
+      "l:alcaldía",
+      "l:ciudadano",
+      "l:comunidad",
+      "l:proponer",
+      "l:solución",
+      "l:política",
+      "l:ministro",
+      "l:educación",
+      "l:guerra"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 267,
+     "cap": 5,
+     "ids": [
+      "l:anunciar",
+      "l:sonido",
+      "l:adecuado",
+      "l:sujetar",
+      "l:piedra"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 268,
+     "cap": 3,
+     "ids": [
+      "l:opinar",
+      "l:motor",
+      "l:divertir"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 269,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 270,
+     "cap": 5,
+     "ids": [
+      "l:solicitar",
+      "l:solamente",
+      "l:demandar",
+      "l:jurar",
+      "l:esfuerzo"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 271,
+     "cap": 3,
+     "ids": [
+      "l:tribunal",
+      "l:alemán",
+      "l:pretender"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 272,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "checkpoint",
+     "session": 273,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u29",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 274,
+     "cap": 5,
+     "ids": [
+      "l:cerebro",
+      "l:quemar",
+      "l:declaración",
+      "l:cobrar",
+      "l:jugador"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 275,
+     "cap": 3,
+     "ids": [
+      "l:besar",
+      "l:felicidad",
+      "l:charlar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 276,
+     "cap": 14,
+     "ids": [
+      "l:debate",
+      "l:discusión",
+      "l:rumor",
+      "l:chisme",
+      "l:mentira",
+      "l:falso",
+      "l:probable",
+      "l:imposible",
+      "l:duda",
+      "l:desacuerdo",
+      "l:argumento",
+      "l:certeza",
+      "l:periodista",
+      "l:virus"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 277,
+     "cap": 5,
+     "ids": [
+      "l:escenario",
+      "l:prueba",
+      "l:callar",
+      "l:puente",
+      "l:compromiso"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 278,
+     "cap": 3,
+     "ids": [
+      "l:seguramente",
+      "l:debajo",
+      "l:ocultar"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 279,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 280,
+     "cap": 5,
+     "ids": [
+      "l:lleno",
+      "l:gas",
+      "l:advertir",
+      "l:pensamiento",
+      "l:vía"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 281,
+     "cap": 3,
+     "ids": [
+      "l:aprobar",
+      "l:velocidad",
+      "l:precioso"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 282,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 283,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u30",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 284,
+     "cap": 5,
+     "ids": [
+      "l:rabia",
+      "l:alivio",
+      "l:vigilar",
+      "l:extranjero",
+      "l:sorprender"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 285,
+     "cap": 3,
+     "ids": [
+      "l:harto",
+      "l:reina",
+      "l:delante"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 286,
+     "cap": 14,
+     "ids": [
+      "l:alegría",
+      "l:tristeza",
+      "l:celos",
+      "l:orgullo",
+      "l:nostalgia",
+      "l:ilusión",
+      "l:emocionarse",
+      "l:personalidad",
+      "l:sensible",
+      "l:celoso",
+      "l:odiar",
+      "l:egoísta",
+      "l:optimista",
+      "l:reservado"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 287,
+     "cap": 5,
+     "ids": [
+      "l:fecha",
+      "l:cercano",
+      "l:querido",
+      "l:calidad",
+      "l:tratamiento"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 288,
+     "cap": 3,
+     "ids": [
+      "l:emoción",
+      "l:averiguar",
+      "l:ganado"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 289,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 290,
+     "cap": 5,
+     "ids": [
+      "l:jardín",
+      "l:sobrevivir",
+      "l:reunirse",
+      "l:disculparse",
+      "l:aprovechar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 291,
+     "cap": 3,
+     "ids": [
+      "l:belleza",
+      "l:rendir",
+      "l:respirar"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 292,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 293,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u31",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 294,
+     "cap": 5,
+     "ids": [
+      "l:pisar",
+      "l:huir",
+      "l:campaña",
+      "l:distanciarse",
+      "l:competencia"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 295,
+     "cap": 3,
+     "ids": [
+      "l:involucrar",
+      "l:tamaño",
+      "l:calentar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 296,
+     "cap": 14,
+     "ids": [
+      "l:memoria",
+      "l:antepasado",
+      "l:herencia",
+      "l:heredar",
+      "l:secreto",
+      "l:álbum",
+      "l:juventud",
+      "l:separarse",
+      "l:reconciliarse",
+      "l:emigrar",
+      "l:sobre#envelope",
+      "l:colega",
+      "l:actitud",
+      "l:embarazo"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 297,
+     "cap": 5,
+     "ids": [
+      "l:pedido",
+      "l:herida",
+      "l:engañar",
+      "l:tonto",
+      "l:beneficio"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 298,
+     "cap": 3,
+     "ids": [
+      "l:animar",
+      "l:oler",
+      "l:montón"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 299,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 300,
+     "cap": 5,
+     "ids": [
+      "l:tardar",
+      "l:quejarse",
+      "l:sencillo",
+      "l:definitivamente",
+      "l:colocar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 301,
+     "cap": 3,
+     "ids": [
+      "l:negociar",
+      "l:huella",
+      "l:ejercicio"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 302,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 303,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u32",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 304,
+     "cap": 5,
+     "ids": [
+      "l:ambiente",
+      "l:condenar",
+      "l:disponible",
+      "l:asistente",
+      "l:temporada"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 305,
+     "cap": 3,
+     "ids": [
+      "l:insistir",
+      "l:cadena",
+      "l:paso"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 306,
+     "cap": 14,
+     "ids": [
+      "l:proveedor",
+      "l:ganancia",
+      "l:pérdida",
+      "l:gasto",
+      "l:costo",
+      "l:presupuesto",
+      "l:inversión",
+      "l:invertir",
+      "l:préstamo",
+      "l:deuda",
+      "l:crédito",
+      "l:emprender",
+      "l:impuesto",
+      "l:pobre"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 307,
+     "cap": 5,
+     "ids": [
+      "l:canal",
+      "l:mirada",
+      "l:técnica",
+      "l:camión",
+      "l:nave"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 308,
+     "cap": 3,
+     "ids": [
+      "l:actualmente",
+      "l:conexión",
+      "l:garantizar"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 309,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 310,
+     "cap": 5,
+     "ids": [
+      "l:vivo",
+      "l:gastar",
+      "l:atrapar",
+      "l:personaje",
+      "l:batalla"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 311,
+     "cap": 3,
+     "ids": [
+      "l:apagar",
+      "l:ganador",
+      "l:señalar"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 312,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "checkpoint",
+     "session": 313,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u33",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 314,
+     "cap": 5,
+     "ids": [
+      "l:lengua",
+      "l:cabello",
+      "l:alerta",
+      "l:exterior",
+      "l:perseguir"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 315,
+     "cap": 3,
+     "ids": [
+      "l:recién",
+      "l:caber",
+      "l:sentado"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 316,
+     "cap": 14,
+     "ids": [
+      "l:local",
+      "l:requisito",
+      "l:condición",
+      "l:inmobiliaria",
+      "l:fiador",
+      "l:depósito",
+      "l:instalación",
+      "l:iluminado",
+      "l:ubicado",
+      "l:ubicación",
+      "l:sucio",
+      "l:techo",
+      "l:sombrero",
+      "l:propietario"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 317,
+     "cap": 5,
+     "ids": [
+      "l:salón",
+      "l:hoja",
+      "l:locura",
+      "l:solucionar",
+      "l:curar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 318,
+     "cap": 3,
+     "ids": [
+      "l:voluntad",
+      "l:rodar",
+      "l:puro"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 319,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 320,
+     "cap": 5,
+     "ids": [
+      "l:voto",
+      "l:adentro",
+      "l:apuntarse",
+      "l:herramienta",
+      "l:mezclar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 321,
+     "cap": 3,
+     "ids": [
+      "l:delito",
+      "l:útil",
+      "l:acusado"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 322,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 323,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u34",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 324,
+     "cap": 5,
+     "ids": [
+      "l:intención",
+      "l:importancia",
+      "l:desastre",
+      "l:botella",
+      "l:broma"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 325,
+     "cap": 3,
+     "ids": [
+      "l:descargar",
+      "l:atreverse",
+      "l:discurso"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 326,
+     "cap": 14,
+     "ids": [
+      "l:choque",
+      "l:chocar",
+      "l:denuncia",
+      "l:denunciar",
+      "l:aseguradora",
+      "l:herido",
+      "l:cartera",
+      "l:billetera",
+      "l:garganta",
+      "l:muela",
+      "l:clínica",
+      "l:hueso",
+      "l:pulmón",
+      "l:músculo"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 327,
+     "cap": 5,
+     "ids": [
+      "l:bienvenida",
+      "l:espectáculo",
+      "l:vencer",
+      "l:alimentar",
+      "l:financiero"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 328,
+     "cap": 3,
+     "ids": [
+      "l:manchar",
+      "l:lastimar",
+      "l:biblioteca"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 329,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 330,
+     "cap": 5,
+     "ids": [
+      "l:colgar",
+      "l:rodear",
+      "l:impedir",
+      "l:procedimiento",
+      "l:pintura"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 331,
+     "cap": 3,
+     "ids": [
+      "l:amante",
+      "l:mina",
+      "l:culpable"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 332,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 333,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u35",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 334,
+     "cap": 5,
+     "ids": [
+      "l:ahorrar",
+      "l:comportamiento",
+      "l:camioneta",
+      "l:propuesta",
+      "l:obviamente"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 335,
+     "cap": 3,
+     "ids": [
+      "l:moda",
+      "l:corriente",
+      "l:enamorado"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 336,
+     "cap": 14,
+     "ids": [
+      "l:consultorio",
+      "l:urgencias",
+      "l:paciente",
+      "l:síntoma",
+      "l:alergia",
+      "l:infección",
+      "l:pastilla",
+      "l:medicamento",
+      "l:receta",
+      "l:jarabe",
+      "l:dieta",
+      "l:saludable",
+      "l:vacuna",
+      "l:medicina"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 337,
+     "cap": 5,
+     "ids": [
+      "l:pregunta",
+      "l:valorar",
+      "l:sumar",
+      "l:cinta",
+      "l:asustar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 338,
+     "cap": 3,
+     "ids": [
+      "l:altura",
+      "l:paquete",
+      "l:conferencia"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 339,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 340,
+     "cap": 5,
+     "ids": [
+      "l:grabar",
+      "l:vista",
+      "l:gobernador",
+      "l:jurado",
+      "l:encender"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 341,
+     "cap": 3,
+     "ids": [
+      "l:sangre",
+      "l:arrancar",
+      "l:precisar"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 342,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 343,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u36",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 344,
+     "cap": 5,
+     "ids": [
+      "l:anillo",
+      "l:negarse",
+      "l:fumar",
+      "l:ruso",
+      "l:cesar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 345,
+     "cap": 3,
+     "ids": [
+      "l:poseer",
+      "l:actual",
+      "l:terreno"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 346,
+     "cap": 14,
+     "ids": [
+      "l:economía",
+      "l:ahorro",
+      "l:tasa",
+      "l:interés",
+      "l:cifra",
+      "l:porcentaje",
+      "l:aumento",
+      "l:compra",
+      "l:comercio",
+      "l:industria",
+      "l:inflación",
+      "l:cerdo",
+      "l:cheque",
+      "l:cordero"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 347,
+     "cap": 5,
+     "ids": [
+      "l:roto",
+      "l:hecho",
+      "l:pasear",
+      "l:entrenador",
+      "l:piscina"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 348,
+     "cap": 3,
+     "ids": [
+      "l:sospechoso",
+      "l:letra",
+      "l:frontera"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 349,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 350,
+     "cap": 5,
+     "ids": [
+      "l:complicado",
+      "l:porqué",
+      "l:representante",
+      "l:poderoso",
+      "l:alejarse"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 351,
+     "cap": 3,
+     "ids": [
+      "l:campeón",
+      "l:bloquear",
+      "l:aguantar"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 352,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "checkpoint",
+     "session": 353,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u37",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 354,
+     "cap": 5,
+     "ids": [
+      "l:igualmente",
+      "l:comisión",
+      "l:té",
+      "l:asistir",
+      "l:cero"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 355,
+     "cap": 3,
+     "ids": [
+      "l:fijar",
+      "l:guapo",
+      "l:claramente"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 356,
+     "cap": 14,
+     "ids": [
+      "l:buzón",
+      "l:conversación",
+      "l:tema",
+      "l:pausa",
+      "l:aclarar",
+      "l:cabina",
+      "l:foro",
+      "l:presentador",
+      "l:serie",
+      "l:prensa",
+      "l:agencia",
+      "l:capítulo",
+      "l:batería",
+      "l:episodio"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 357,
+     "cap": 5,
+     "ids": [
+      "l:bola",
+      "l:escritor",
+      "l:atraer",
+      "l:actuación",
+      "l:débil"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 358,
+     "cap": 3,
+     "ids": [
+      "l:interrumpir",
+      "l:ingresar",
+      "l:encantador"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 359,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 360,
+     "cap": 5,
+     "ids": [
+      "l:vigilancia",
+      "l:vacío",
+      "l:cirugía",
+      "l:población",
+      "l:aplicar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 361,
+     "cap": 3,
+     "ids": [
+      "l:casualidad",
+      "l:alumno",
+      "l:adolescente"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 362,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 363,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u38",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 364,
+     "cap": 5,
+     "ids": [
+      "l:despacho",
+      "l:parecido",
+      "l:madera",
+      "l:nene",
+      "l:acceder"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 365,
+     "cap": 3,
+     "ids": [
+      "l:surgir",
+      "l:añadir",
+      "l:entrenamiento"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 366,
+     "cap": 14,
+     "ids": [
+      "l:reportaje",
+      "l:titular",
+      "l:artículo",
+      "l:acontecimiento",
+      "l:causa",
+      "l:consecuencia",
+      "l:protesta",
+      "l:manifestación",
+      "l:elección",
+      "l:incendio",
+      "l:inundación",
+      "l:documental",
+      "l:editorial",
+      "l:firma"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 367,
+     "cap": 5,
+     "ids": [
+      "l:recorrer",
+      "l:tragar",
+      "l:polvo",
+      "l:botón",
+      "l:desconocido"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 368,
+     "cap": 3,
+     "ids": [
+      "l:enterar",
+      "l:enseguida",
+      "l:conciencia"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 369,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 370,
+     "cap": 5,
+     "ids": [
+      "l:reino",
+      "l:conocido",
+      "l:estadounidense",
+      "l:aéreo",
+      "l:concurso"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 371,
+     "cap": 3,
+     "ids": [
+      "l:dispositivo",
+      "l:criar",
+      "l:prisa"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 372,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 373,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u39",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 374,
+     "cap": 5,
+     "ids": [
+      "l:doctorarse",
+      "l:fantasma",
+      "l:bolsillo",
+      "l:estupendo",
+      "l:judío"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 375,
+     "cap": 3,
+     "ids": [
+      "l:solicitud",
+      "l:trasladar",
+      "l:afirmar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 376,
+     "cap": 14,
+     "ids": [
+      "l:ensayo",
+      "l:párrafo",
+      "l:introducción",
+      "l:conclusión",
+      "l:estructura",
+      "l:presentación",
+      "l:exponer",
+      "l:resumen",
+      "l:resumir",
+      "l:investigar",
+      "l:estudio",
+      "l:programa",
+      "l:certificado",
+      "l:academia"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 377,
+     "cap": 5,
+     "ids": [
+      "l:picar",
+      "l:lectura",
+      "l:perfil",
+      "l:abrazar",
+      "l:gerente"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 378,
+     "cap": 3,
+     "ids": [
+      "l:plazo",
+      "l:presionar",
+      "l:fracasar"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 379,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 380,
+     "cap": 5,
+     "ids": [
+      "l:amistad",
+      "l:agregar",
+      "l:facultad",
+      "l:encerrar",
+      "l:lección"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 381,
+     "cap": 3,
+     "ids": [
+      "l:impresionante",
+      "l:roca",
+      "l:gasolina"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 382,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 383,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u40",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 384,
+     "cap": 5,
+     "ids": [
+      "l:cómodo",
+      "l:corte",
+      "l:suave",
+      "l:alimento",
+      "l:reto"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 385,
+     "cap": 3,
+     "ids": [
+      "l:formación",
+      "l:sospechar",
+      "l:ciego"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 386,
+     "cap": 14,
+     "ids": [
+      "l:caribe",
+      "l:arena",
+      "l:ola",
+      "l:pescador",
+      "l:humedad",
+      "l:tortuga",
+      "l:palmera",
+      "l:coco",
+      "l:niebla",
+      "l:pino",
+      "l:mosquito",
+      "l:araña",
+      "l:noroeste",
+      "l:suroeste"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 387,
+     "cap": 5,
+     "ids": [
+      "l:arriesgar",
+      "l:nuevamente",
+      "l:rezar",
+      "l:superficie",
+      "l:humor"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 388,
+     "cap": 3,
+     "ids": [
+      "l:empujar",
+      "l:etapa",
+      "l:expediente"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 389,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 390,
+     "cap": 5,
+     "ids": [
+      "l:diversión",
+      "l:caliente",
+      "l:conservar",
+      "l:entrenar",
+      "l:profundar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 391,
+     "cap": 3,
+     "ids": [
+      "l:alianza",
+      "l:despedirse",
+      "l:acostar"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 392,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "checkpoint",
+     "session": 393,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u41",
+   "band": "B1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 394,
+     "cap": 5,
+     "ids": [
+      "l:pantalones",
+      "l:lucir",
+      "l:petición",
+      "l:mono",
+      "l:mono#blond"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 395,
+     "cap": 3,
+     "ids": [
+      "l:olor",
+      "l:acaso",
+      "l:desnudo"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 396,
+     "cap": 14,
+     "ids": [
+      "l:reconciliación",
+      "l:arrepentirse",
+      "l:arrepentimiento",
+      "l:deseo",
+      "l:lamentar",
+      "l:encuentro",
+      "l:infantil",
+      "l:truco",
+      "l:intercambiar",
+      "l:consciente",
+      "l:atrapado",
+      "l:dispuesto",
+      "l:conceder",
+      "l:lenguaje"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 397,
+     "cap": 5,
+     "ids": [
+      "l:patrón",
+      "l:desafiar",
+      "l:investigador",
+      "l:divertirse",
+      "l:atravesar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 398,
+     "cap": 3,
+     "ids": [
+      "l:fase",
+      "l:ligar",
+      "l:registro"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 399,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 400,
+     "cap": 5,
+     "ids": [
+      "l:arrastrar",
+      "l:pleno",
+      "l:pesado",
+      "l:reconocimiento",
+      "l:sombra"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 401,
+     "cap": 3,
+     "ids": [
+      "l:campamento",
+      "l:anteriormente",
+      "l:lento"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 402,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 403,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u42",
+   "band": "B2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 404,
+     "cap": 5,
+     "ids": [
+      "l:domicilio",
+      "l:apropiado",
+      "l:sabor",
+      "l:taller",
+      "l:combustible"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 405,
+     "cap": 3,
+     "ids": [
+      "l:remedio",
+      "l:comunicar",
+      "l:sincero"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 406,
+     "cap": 13,
+     "ids": [
+      "l:cortesía",
+      "l:amabilidad",
+      "l:respeto",
+      "l:formal",
+      "l:informal",
+      "l:doña",
+      "l:rogar",
+      "l:educado",
+      "l:grosero",
+      "l:laboratorio",
+      "l:informe",
+      "l:beca",
+      "l:casco"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 407,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 408,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 409,
+     "cap": 5,
+     "ids": [
+      "l:fábrica",
+      "l:enfocar",
+      "l:dedicarse",
+      "l:enterrar",
+      "l:pastel"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 410,
+     "cap": 3,
+     "ids": [
+      "l:sonreír",
+      "l:británico",
+      "l:encargado"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 411,
+     "cap": 13,
+     "ids": [
+      "l:ayudante",
+      "l:sindicato",
+      "l:demanda",
+      "l:ascenso",
+      "l:huelga",
+      "l:sustituto",
+      "l:desempleo",
+      "l:bufete",
+      "l:disponibilidad",
+      "l:entrevistado",
+      "l:despido",
+      "l:renuncia",
+      "l:entrevistador"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 412,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 413,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u43",
+   "band": "B2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 414,
+     "cap": 5,
+     "ids": [
+      "l:tesoro",
+      "l:aceite",
+      "l:temporal",
+      "l:azúcar",
+      "l:disposición"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 415,
+     "cap": 3,
+     "ids": [
+      "l:prever",
+      "l:lástima",
+      "l:decepcionar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 416,
+     "cap": 13,
+     "ids": [
+      "l:opción",
+      "l:alternativa",
+      "l:resultado",
+      "l:pensión",
+      "l:túnel",
+      "l:cinturón",
+      "l:helicóptero",
+      "l:capitán",
+      "l:autopista",
+      "l:viajero",
+      "l:globo",
+      "l:cazador",
+      "l:circulación"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 417,
+     "cap": 5,
+     "ids": [
+      "l:bienvenido",
+      "l:ignorar",
+      "l:sabio",
+      "l:feo",
+      "l:deportivo"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 418,
+     "cap": 3,
+     "ids": [
+      "l:fácilmente",
+      "l:agarrar",
+      "l:derrotar"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 419,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 420,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 421,
+     "cap": 5,
+     "ids": [
+      "l:bienes",
+      "l:conformar",
+      "l:quieto",
+      "l:profundo",
+      "l:juzgado"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 422,
+     "cap": 3,
+     "ids": [
+      "l:anciano",
+      "l:adivinar",
+      "l:punta"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 423,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u44",
+   "band": "B2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 424,
+     "cap": 5,
+     "ids": [
+      "l:raíz",
+      "l:pedazo",
+      "l:brujo",
+      "l:espejo",
+      "l:lujo"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 425,
+     "cap": 3,
+     "ids": [
+      "l:sonrisa",
+      "l:arrojar",
+      "l:secuestrar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 426,
+     "cap": 13,
+     "ids": [
+      "l:patrimonio",
+      "l:audiencia",
+      "l:desarrollo",
+      "l:urbano",
+      "l:construcción",
+      "l:demolición",
+      "l:proyecto",
+      "l:reclamar",
+      "l:concejo",
+      "l:licencia",
+      "l:privado",
+      "l:club",
+      "l:militar"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 427,
+     "cap": 5,
+     "ids": [
+      "l:vaciar",
+      "l:vistazo",
+      "l:barra",
+      "l:ocasionar",
+      "l:dormitorio"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 428,
+     "cap": 3,
+     "ids": [
+      "l:defender",
+      "l:impresión",
+      "l:retrasar"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 429,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 430,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 431,
+     "cap": 5,
+     "ids": [
+      "l:deshacer",
+      "l:comprometerse",
+      "l:ala",
+      "l:tono",
+      "l:escolar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 432,
+     "cap": 3,
+     "ids": [
+      "l:coincidir",
+      "l:resistencia",
+      "l:valiente"
+     ]
+    },
+    {
+     "type": "checkpoint",
+     "session": 433,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u45",
+   "band": "B2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 434,
+     "cap": 5,
+     "ids": [
+      "l:brillar",
+      "l:impresionar",
+      "l:caída",
+      "l:recientemente",
+      "l:digno"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 435,
+     "cap": 3,
+     "ids": [
+      "l:destacar",
+      "l:pulsar",
+      "l:cigarrillo"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 436,
+     "cap": 13,
+     "ids": [
+      "l:periodismo",
+      "l:acusación",
+      "l:acusar",
+      "l:evidencia",
+      "l:escándalo",
+      "l:corrupción",
+      "l:confirmar",
+      "l:revelar",
+      "l:buscador",
+      "l:emisora",
+      "l:desviar",
+      "l:suplemento",
+      "l:locutor"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 437,
+     "cap": 5,
+     "ids": [
+      "l:oscuridad",
+      "l:acudir",
+      "l:medir",
+      "l:cola",
+      "l:motivo"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 438,
+     "cap": 3,
+     "ids": [
+      "l:índice",
+      "l:muro",
+      "l:limpieza"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 439,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 440,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 441,
+     "cap": 5,
+     "ids": [
+      "l:bromear",
+      "l:valioso",
+      "l:alquilar",
+      "l:milagro",
+      "l:traducción"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 442,
+     "cap": 3,
+     "ids": [
+      "l:producir",
+      "l:torre",
+      "l:salvaje"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 443,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u46",
+   "band": "B2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 444,
+     "cap": 5,
+     "ids": [
+      "l:masa",
+      "l:partida",
+      "l:tanque",
+      "l:funcionario",
+      "l:ingreso"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 445,
+     "cap": 3,
+     "ids": [
+      "l:dormido",
+      "l:inútil",
+      "l:garantía"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 446,
+     "cap": 13,
+     "ids": [
+      "l:acta",
+      "l:asamblea",
+      "l:testimonio",
+      "l:declarar",
+      "l:comentar",
+      "l:mencionar",
+      "l:admitir",
+      "l:votación",
+      "l:bomba",
+      "l:nación",
+      "l:político",
+      "l:distrito",
+      "l:crisis"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 447,
+     "cap": 5,
+     "ids": [
+      "l:granja",
+      "l:pecado",
+      "l:cubierta",
+      "l:cuerda",
+      "l:ave"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 448,
+     "cap": 3,
+     "ids": [
+      "l:capital",
+      "l:concretar",
+      "l:equivocado"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 449,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 450,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 451,
+     "cap": 5,
+     "ids": [
+      "l:reflejar",
+      "l:espada",
+      "l:agenda",
+      "l:traducir",
+      "l:tabla"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 452,
+     "cap": 3,
+     "ids": [
+      "l:confesar",
+      "l:distinguir",
+      "l:sagrado"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 453,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u47",
+   "band": "B2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 454,
+     "cap": 5,
+     "ids": [
+      "l:bravo",
+      "l:sacerdote",
+      "l:constante",
+      "l:agujero",
+      "l:agradar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 455,
+     "cap": 3,
+     "ids": [
+      "l:precisamente",
+      "l:genio",
+      "l:manzana"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 456,
+     "cap": 13,
+     "ids": [
+      "l:pódcast",
+      "l:entrevistar",
+      "l:narrador",
+      "l:relato",
+      "l:grabación",
+      "l:micrófono",
+      "l:oyente",
+      "l:énfasis",
+      "l:subrayar",
+      "l:original",
+      "l:imaginación",
+      "l:bailarín",
+      "l:artístico"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 457,
+     "cap": 5,
+     "ids": [
+      "l:espacial",
+      "l:atar",
+      "l:basar",
+      "l:cantante",
+      "l:pata"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 458,
+     "cap": 3,
+     "ids": [
+      "l:nocturno",
+      "l:evaluación",
+      "l:escritorio"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 459,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 460,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 461,
+     "cap": 5,
+     "ids": [
+      "l:exposición",
+      "l:acero",
+      "l:joya",
+      "l:borracho",
+      "l:emitir"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 462,
+     "cap": 3,
+     "ids": [
+      "l:bandera",
+      "l:razonable",
+      "l:súper"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 463,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u48",
+   "band": "B2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 464,
+     "cap": 5,
+     "ids": [
+      "l:ligero",
+      "l:elevar",
+      "l:antecedente",
+      "l:cartel",
+      "l:lanzamiento"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 465,
+     "cap": 3,
+     "ids": [
+      "l:dividir",
+      "l:consistir",
+      "l:bote"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 466,
+     "cap": 13,
+     "ids": [
+      "l:ladrillo",
+      "l:cemento",
+      "l:vidrio",
+      "l:metal",
+      "l:hierro",
+      "l:centímetro",
+      "l:ancho",
+      "l:proceso",
+      "l:tecnología",
+      "l:estilo",
+      "l:copiar",
+      "l:electrónico",
+      "l:elemento"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 467,
+     "cap": 5,
+     "ids": [
+      "l:campesino",
+      "l:prender",
+      "l:esclavo",
+      "l:escrito",
+      "l:rescatar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 468,
+     "cap": 3,
+     "ids": [
+      "l:fabricar",
+      "l:resistente",
+      "l:sal"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 469,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 470,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 471,
+     "cap": 5,
+     "ids": [
+      "l:corona",
+      "l:suelo",
+      "l:solar",
+      "l:lobo",
+      "l:últimamente"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 472,
+     "cap": 3,
+     "ids": [
+      "l:oponer",
+      "l:raza",
+      "l:gimnasio"
+     ]
+    },
+    {
+     "type": "checkpoint",
+     "session": 473,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u49",
+   "band": "B2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 474,
+     "cap": 5,
+     "ids": [
+      "l:aproximadamente",
+      "l:reemplazar",
+      "l:suministro",
+      "l:breve",
+      "l:paciencia"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 475,
+     "cap": 3,
+     "ids": [
+      "l:anterior",
+      "l:estimado",
+      "l:colaboración"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 476,
+     "cap": 13,
+     "ids": [
+      "l:cláusula",
+      "l:candidato",
+      "l:referencia",
+      "l:pago",
+      "l:cobro",
+      "l:reembolso",
+      "l:energía",
+      "l:organización",
+      "l:producción",
+      "l:riqueza",
+      "l:disminuir",
+      "l:pobreza",
+      "l:pesca"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 477,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 478,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 479,
+     "cap": 5,
+     "ids": [
+      "l:aliado",
+      "l:borrar",
+      "l:limpio",
+      "l:solitario",
+      "l:química"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 480,
+     "cap": 3,
+     "ids": [
+      "l:afortunado",
+      "l:matar",
+      "l:matemáticas"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 481,
+     "cap": 13,
+     "ids": [
+      "l:exhibición",
+      "l:agricultura",
+      "l:catálogo",
+      "l:publicitario",
+      "l:folleto",
+      "l:fabricación",
+      "l:jubilación",
+      "l:importación",
+      "l:exportación",
+      "l:economista",
+      "l:ganadería",
+      "l:teletrabajo",
+      "l:márquetin"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 482,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "review",
+     "session": 483,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u50",
+   "band": "B2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 484,
+     "cap": 5,
+     "ids": [
+      "l:palo",
+      "l:asesor",
+      "l:maravilla",
+      "l:escalar",
+      "l:columna"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 485,
+     "cap": 3,
+     "ids": [
+      "l:perfectamente",
+      "l:desgracia",
+      "l:ira"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 486,
+     "cap": 13,
+     "ids": [
+      "l:conflicto",
+      "l:pelea",
+      "l:negociación",
+      "l:ceder",
+      "l:disculpa",
+      "l:límite",
+      "l:ofender",
+      "l:reproche",
+      "l:reprochar",
+      "l:malentendido",
+      "l:resolver",
+      "l:calmarse",
+      "l:miembro"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 487,
+     "cap": 5,
+     "ids": [
+      "l:ingeniería",
+      "l:mascota",
+      "l:visitante",
+      "l:venganza",
+      "l:burlar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 488,
+     "cap": 3,
+     "ids": [
+      "l:repartir",
+      "l:participación",
+      "l:pesadilla"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 489,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 490,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 491,
+     "cap": 5,
+     "ids": [
+      "l:crecimiento",
+      "l:rescate",
+      "l:hielo",
+      "l:interesado",
+      "l:actriz"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 492,
+     "cap": 3,
+     "ids": [
+      "l:grito",
+      "l:fan",
+      "l:proporcionar"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 493,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u51",
+   "band": "B2",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 494,
+     "cap": 5,
+     "ids": [
+      "l:rollo",
+      "l:servidor",
+      "l:acostumbrar",
+      "l:pozo",
+      "l:dibujar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 495,
+     "cap": 3,
+     "ids": [
+      "l:ciertamente",
+      "l:librar",
+      "l:obedecer"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 496,
+     "cap": 13,
+     "ids": [
+      "l:acento",
+      "l:variedad",
+      "l:dialecto",
+      "l:expresión",
+      "l:diferencia",
+      "l:semejanza",
+      "l:cultura",
+      "l:hispanohablante",
+      "l:marinero",
+      "l:carril",
+      "l:recepcionista",
+      "l:barca",
+      "l:tranvía"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 497,
+     "cap": 5,
+     "ids": [
+      "l:man",
+      "l:capa",
+      "l:hierba",
+      "l:galleta",
+      "l:revisión"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 498,
+     "cap": 3,
+     "ids": [
+      "l:proceder",
+      "l:adaptar",
+      "l:relajarse"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 499,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 500,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 501,
+     "cap": 5,
+     "ids": [
+      "l:marchar",
+      "l:cómoda",
+      "l:miel",
+      "l:satisfecho",
+      "l:rama"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 502,
+     "cap": 3,
+     "ids": [
+      "l:huésped",
+      "l:rastro",
+      "l:asustarse"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 503,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u52",
+   "band": "C1",
+   "days": [
+    {
+     "type": "input",
+     "session": 504,
+     "cap": 12,
+     "ids": [
+      "l:narración",
+      "l:narrar",
+      "l:autobiografía",
+      "l:trama",
+      "l:escena",
+      "l:sesión",
+      "l:secundario",
+      "l:autor",
+      "l:ritmo",
+      "l:productor",
+      "l:festival",
+      "l:creación"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 505,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 506,
+     "cap": 5,
+     "ids": [
+      "l:humo",
+      "l:rata",
+      "l:exitoso",
+      "l:marca",
+      "l:mortal"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 507,
+     "cap": 2,
+     "ids": [
+      "l:estallar",
+      "l:desencadenar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 508,
+     "cap": 12,
+     "ids": [
+      "l:leyenda",
+      "l:crítico",
+      "l:tragedia",
+      "l:do",
+      "l:equilibrio",
+      "l:danza",
+      "l:representación",
+      "l:interpretación",
+      "l:retrato",
+      "l:secuencia",
+      "l:inspiración",
+      "l:vestuario"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 509,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 510,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 511,
+     "cap": 5,
+     "ids": [
+      "l:asistencia",
+      "l:cabaña",
+      "l:tubo",
+      "l:confundir",
+      "l:secuestro"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 512,
+     "cap": 2,
+     "ids": [
+      "l:arma",
+      "l:convenir"
+     ]
+    },
+    {
+     "type": "checkpoint",
+     "session": 513,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u53",
+   "band": "C1",
+   "days": [
+    {
+     "type": "input",
+     "session": 514,
+     "cap": 12,
+     "ids": [
+      "l:precedente",
+      "l:paradero",
+      "l:supuesto",
+      "l:presunto",
+      "l:afirmación",
+      "l:institución",
+      "l:rendición",
+      "l:transparencia",
+      "l:entidad",
+      "l:versión",
+      "l:civil",
+      "l:senador"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 515,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 516,
+     "cap": 5,
+     "ids": [
+      "l:apariencia",
+      "l:sembrar",
+      "l:lágrima",
+      "l:lío",
+      "l:adquirir"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 517,
+     "cap": 2,
+     "ids": [
+      "l:posibilidad",
+      "l:sensación"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 518,
+     "cap": 12,
+     "ids": [
+      "l:sentencia",
+      "l:inocente",
+      "l:periodo",
+      "l:estatal",
+      "l:cañón",
+      "l:cooperación",
+      "l:calendario",
+      "l:comunitario",
+      "l:criminal",
+      "l:diplomático",
+      "l:bala",
+      "l:igualdad"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 519,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 520,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 521,
+     "cap": 5,
+     "ids": [
+      "l:escritura",
+      "l:manifestar",
+      "l:pasillo",
+      "l:posesión",
+      "l:acostumbrado"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 522,
+     "cap": 2,
+     "ids": [
+      "l:tonelada",
+      "l:fiel"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 523,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u54",
+   "band": "C1",
+   "days": [
+    {
+     "type": "input",
+     "session": 524,
+     "cap": 12,
+     "ids": [
+      "l:ausencia",
+      "l:variar",
+      "l:ironía",
+      "l:burla",
+      "l:ingenio",
+      "l:sarcasmo",
+      "l:gracia",
+      "l:sutil",
+      "l:indirecta",
+      "l:insinuar",
+      "l:insinuación",
+      "l:justicia"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 525,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 526,
+     "cap": 5,
+     "ids": [
+      "l:codo",
+      "l:personalmente",
+      "l:técnicamente",
+      "l:onda",
+      "l:lavarse"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 527,
+     "cap": 2,
+     "ids": [
+      "l:doble",
+      "l:gallo"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 528,
+     "cap": 12,
+     "ids": [
+      "l:responsable",
+      "l:curioso",
+      "l:curiosidad",
+      "l:temor",
+      "l:cobarde",
+      "l:callado",
+      "l:tierno",
+      "l:discreto",
+      "l:ambición",
+      "l:apasionado",
+      "l:distribuir",
+      "l:ambicioso"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 529,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 530,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 531,
+     "cap": 5,
+     "ids": [
+      "l:químico",
+      "l:retener",
+      "l:adicional",
+      "l:toro",
+      "l:matrícula"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 532,
+     "cap": 2,
+     "ids": [
+      "l:estándar",
+      "l:debilidad"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 533,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u55",
+   "band": "C1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 534,
+     "cap": 5,
+     "ids": [
+      "l:particular",
+      "l:ataque",
+      "l:asombroso",
+      "l:incómodo",
+      "l:localizar"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 535,
+     "cap": 2,
+     "ids": [
+      "l:obligación",
+      "l:suscribir"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 536,
+     "cap": 12,
+     "ids": [
+      "l:cooperativa",
+      "l:estatuto",
+      "l:asociado",
+      "l:junta",
+      "l:reglamento",
+      "l:quórum",
+      "l:aporte",
+      "l:resolución",
+      "l:decreto",
+      "l:asociación",
+      "l:petróleo",
+      "l:carbón"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 537,
+     "cap": 5,
+     "ids": [
+      "l:consenso",
+      "l:posponer",
+      "l:antelación",
+      "l:apretar",
+      "l:vivienda"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 538,
+     "cap": 2,
+     "ids": [
+      "l:ajustar",
+      "l:constar"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 539,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 540,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 541,
+     "cap": 5,
+     "ids": [
+      "l:castigo",
+      "l:auxilio",
+      "l:semilla",
+      "l:bienestar",
+      "l:mantenimiento"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 542,
+     "cap": 2,
+     "ids": [
+      "l:emocionante",
+      "l:ascensor"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 543,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u56",
+   "band": "C1",
+   "days": [
+    {
+     "type": "input",
+     "session": 544,
+     "cap": 12,
+     "ids": [
+      "l:prevenir",
+      "l:ética",
+      "l:moral",
+      "l:progreso",
+      "l:filosofía",
+      "l:creencia",
+      "l:religión",
+      "l:sentido",
+      "l:objeto",
+      "l:espíritu",
+      "l:teoría",
+      "l:célula"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 545,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 546,
+     "cap": 5,
+     "ids": [
+      "l:esencial",
+      "l:embajador",
+      "l:etiqueta",
+      "l:enamorarse",
+      "l:delantero"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 547,
+     "cap": 2,
+     "ids": [
+      "l:rasgo",
+      "l:cuadrado"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 548,
+     "cap": 12,
+     "ids": [
+      "l:oración",
+      "l:biológico",
+      "l:cálculo",
+      "l:paraíso",
+      "l:fórmula",
+      "l:oxígeno",
+      "l:ángulo",
+      "l:estadística",
+      "l:matemático",
+      "l:monitor",
+      "l:monja",
+      "l:cura"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 549,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 550,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 551,
+     "cap": 5,
+     "ids": [
+      "l:contraseña",
+      "l:tejido",
+      "l:comportarse",
+      "l:corto",
+      "l:desesperado"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 552,
+     "cap": 2,
+     "ids": [
+      "l:promedio",
+      "l:agente"
+     ]
+    },
+    {
+     "type": "checkpoint",
+     "session": 553,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u57",
+   "band": "C1",
+   "days": [
+    {
+     "type": "input",
+     "session": 554,
+     "cap": 12,
+     "ids": [
+      "l:consultar",
+      "l:almohada",
+      "l:resignación",
+      "l:duelo",
+      "l:consuelo",
+      "l:consolar",
+      "l:añorar",
+      "l:soledad",
+      "l:luto",
+      "l:melancolía",
+      "l:angustia",
+      "l:animado"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 555,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 556,
+     "cap": 5,
+     "ids": [
+      "l:recuperación",
+      "l:protegido",
+      "l:posiblemente",
+      "l:comprometido",
+      "l:masaje"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 557,
+     "cap": 2,
+     "ids": [
+      "l:moler",
+      "l:calmar"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 558,
+     "cap": 12,
+     "ids": [
+      "l:sensibilidad",
+      "l:solidaridad",
+      "l:valentía",
+      "l:generosidad",
+      "l:irresponsable",
+      "l:sinceridad",
+      "l:susceptible",
+      "l:tacto",
+      "l:constancia",
+      "l:admiración",
+      "l:ternura",
+      "l:seriedad"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 559,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 560,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 561,
+     "cap": 5,
+     "ids": [
+      "l:culpar",
+      "l:caza",
+      "l:renta",
+      "l:disparar",
+      "l:fino"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 562,
+     "cap": 2,
+     "ids": [
+      "l:tapar",
+      "l:izquierdo"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 563,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u58",
+   "band": "C1",
+   "days": [
+    {
+     "type": "introduce",
+     "session": 564,
+     "cap": 5,
+     "ids": [
+      "l:bruto",
+      "l:diamante",
+      "l:giro",
+      "l:rumbo",
+      "l:marcha"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 565,
+     "cap": 2,
+     "ids": [
+      "l:fruto",
+      "l:simple"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 566,
+     "cap": 12,
+     "ids": [
+      "l:reventar",
+      "l:roble",
+      "l:relieve",
+      "l:cordillera",
+      "l:glaciar",
+      "l:volcán",
+      "l:llanura",
+      "l:erosión",
+      "l:transformación",
+      "l:sequía",
+      "l:densidad",
+      "l:violencia"
+     ]
+    },
+    {
+     "type": "introduce",
+     "session": 567,
+     "cap": 5,
+     "ids": [
+      "l:torcer",
+      "l:sufrimiento",
+      "l:perdedor",
+      "l:dificultad",
+      "l:arco"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 568,
+     "cap": 2,
+     "ids": [
+      "l:resto",
+      "l:inclinar"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 569,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 570,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 571,
+     "cap": 5,
+     "ids": [
+      "l:conde",
+      "l:aliviar",
+      "l:torneo",
+      "l:multar",
+      "l:parado"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 572,
+     "cap": 2,
+     "ids": [
+      "l:bloque",
+      "l:sede"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 573,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u59",
+   "band": "C1",
+   "days": [
+    {
+     "type": "input",
+     "session": 574,
+     "cap": 12,
+     "ids": [
+      "l:mantequilla",
+      "l:recomendable",
+      "l:costeño",
+      "l:rolo",
+      "l:vallenato",
+      "l:cumbia",
+      "l:bambuco",
+      "l:literatura",
+      "l:novela",
+      "l:poesía",
+      "l:poeta",
+      "l:folclor"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 575,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 576,
+     "cap": 5,
+     "ids": [
+      "l:diablo",
+      "l:dibujo",
+      "l:lesión",
+      "l:sorprendente",
+      "l:comisario"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 577,
+     "cap": 2,
+     "ids": [
+      "l:labor",
+      "l:rincón"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 578,
+     "cap": 12,
+     "ids": [
+      "l:vejez",
+      "l:madurez",
+      "l:colgante",
+      "l:validez",
+      "l:gargantilla",
+      "l:preadolescencia",
+      "l:seudónimo",
+      "l:mote",
+      "l:cuarentón",
+      "l:treintañero",
+      "l:serpiente",
+      "l:consejero"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 579,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 580,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 581,
+     "cap": 5,
+     "ids": [
+      "l:imperio",
+      "l:abordar",
+      "l:corregir",
+      "l:fingir",
+      "l:cobertura"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 582,
+     "cap": 2,
+     "ids": [
+      "l:empresario",
+      "l:quebrar"
+     ]
+    },
+    {
+     "type": "review",
+     "session": 583,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  },
+  {
+   "id": "u60",
+   "band": "C1",
+   "days": [
+    {
+     "type": "input",
+     "session": 584,
+     "cap": 12,
+     "ids": [
+      "l:chupar",
+      "l:perfección",
+      "l:charla",
+      "l:auge",
+      "l:crítica",
+      "l:artista",
+      "l:valoración",
+      "l:tertulia",
+      "l:armonía",
+      "l:creatividad",
+      "l:pirámide",
+      "l:decorado"
+     ]
+    },
+    {
+     "type": "output",
+     "session": 585,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 586,
+     "cap": 5,
+     "ids": [
+      "l:rozar",
+      "l:expulsar",
+      "l:fortaleza",
+      "l:profundidad",
+      "l:traje"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 587,
+     "cap": 2,
+     "ids": [
+      "l:ridículo",
+      "l:clavo"
+     ]
+    },
+    {
+     "type": "input",
+     "session": 588,
+     "cap": 12,
+     "ids": [
+      "l:verso",
+      "l:himno",
+      "l:fachada",
+      "l:trompeta",
+      "l:pureza",
+      "l:colorido",
+      "l:guionista",
+      "l:compás",
+      "l:fa",
+      "l:coreografía",
+      "l:sinfonía",
+      "l:monólogo"
+     ]
+    },
+    {
+     "type": "patterns",
+     "session": 589,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "output",
+     "session": 590,
+     "cap": 0,
+     "ids": []
+    },
+    {
+     "type": "introduce",
+     "session": 591,
+     "cap": 5,
+     "ids": [
+      "l:mercancía",
+      "l:aprobación",
+      "l:ensayar",
+      "l:sabana",
+      "l:provenir"
+     ]
+    },
+    {
+     "type": "drill",
+     "session": 592,
+     "cap": 2,
+     "ids": [
+      "l:sencillamente",
+      "l:guante"
+     ]
+    },
+    {
+     "type": "checkpoint",
+     "session": 593,
+     "cap": 0,
+     "ids": []
+    }
+   ]
+  }
+ ],
+ "receptiveByUnit": {
+  "u01": [
+   "l:salvar",
+   "l:abandonar",
+   "l:banda",
+   "l:plantar",
+   "l:separar",
+   "l:fotografía",
+   "l:inventar",
+   "l:normalmente",
+   "l:explicación",
+   "l:urgente",
+   "l:japonés",
+   "l:reporte",
+   "l:típico",
+   "l:círculo",
+   "l:mexicano",
+   "l:católico"
+  ],
+  "u02": [
+   "l:forzar",
+   "l:profesional",
+   "l:ordenar",
+   "l:contrario",
+   "l:comercial",
+   "l:grave",
+   "l:experto",
+   "l:conectar",
+   "l:capturar",
+   "l:comité",
+   "l:cáncer",
+   "l:gloria",
+   "l:suficientemente",
+   "l:verificar",
+   "l:transformar",
+   "l:telefónico",
+   "l:indio",
+   "l:centavo"
+  ],
+  "u03": [
+   "l:respetar",
+   "l:posición",
+   "l:preparado",
+   "l:central",
+   "l:victoria",
+   "l:talento",
+   "l:practicar",
+   "l:experimentar",
+   "l:extraordinario",
+   "l:reportar",
+   "l:musical",
+   "l:gigante",
+   "l:extender",
+   "l:revolución",
+   "l:explosión",
+   "l:inspirar"
+  ],
+  "u04": [
+   "l:excelente",
+   "l:modelo",
+   "l:finalmente",
+   "l:americano",
+   "l:inmediato",
+   "l:exacto",
+   "l:contactar",
+   "l:circunstancia",
+   "l:preocupación",
+   "l:romántico",
+   "l:alarma",
+   "l:frase",
+   "l:elegante",
+   "l:protestar",
+   "l:misterio",
+   "l:adorar"
+  ],
+  "u05": [
+   "l:contacto",
+   "l:totalmente",
+   "l:familiar",
+   "l:motivar",
+   "l:enemigo",
+   "l:organizar",
+   "l:pintar",
+   "l:generación",
+   "l:popular",
+   "l:juzgar",
+   "l:rápidamente",
+   "l:federal",
+   "l:pasión",
+   "l:ronda",
+   "l:ceremonia",
+   "l:negativo",
+   "l:conducta",
+   "l:filmar",
+   "l:dominar"
+  ],
+  "u06": [
+   "l:demostrar",
+   "l:tender",
+   "l:obligar",
+   "l:cuestión",
+   "l:pieza",
+   "l:fantástico",
+   "l:universo",
+   "l:inteligencia",
+   "l:mental",
+   "l:monstruo",
+   "l:físico",
+   "l:princesa",
+   "l:virgen",
+   "l:milla",
+   "l:graduar"
+  ],
+  "u07": [
+   "l:santo",
+   "l:escapar",
+   "l:silenciar",
+   "l:emergencia",
+   "l:teatro",
+   "l:estúpido",
+   "l:trampa",
+   "l:inspector",
+   "l:magia",
+   "l:mágico",
+   "l:voluntario",
+   "l:signo",
+   "l:transmitir",
+   "l:reputación"
+  ],
+  "u08": [
+   "l:ocupar",
+   "l:distinto",
+   "l:identificar",
+   "l:famoso",
+   "l:vehículo",
+   "l:eliminar",
+   "l:fresco",
+   "l:concentrar",
+   "l:príncipe",
+   "l:complejo",
+   "l:examinar",
+   "l:resistir",
+   "l:cuestionar",
+   "l:corredor",
+   "l:potencia"
+  ],
+  "u09": [
+   "l:normal",
+   "l:código",
+   "l:especialmente",
+   "l:adulto",
+   "l:análisis",
+   "l:kilómetro",
+   "l:ilegal",
+   "l:identificación",
+   "l:alcohol",
+   "l:palacio",
+   "l:ángel",
+   "l:cristal",
+   "l:influencia",
+   "l:terapia",
+   "l:detectar",
+   "l:especialista",
+   "l:aparentemente",
+   "l:transmisión",
+   "l:crema"
+  ],
+  "u10": [
+   "l:controlar",
+   "l:producto",
+   "l:completamente",
+   "l:restaurante",
+   "l:planear",
+   "l:enorme",
+   "l:liberar",
+   "l:apreciar",
+   "l:atractivo",
+   "l:explotar",
+   "l:clásico",
+   "l:castillo",
+   "l:frecuencia",
+   "l:excelencia",
+   "l:tensión",
+   "l:grandioso",
+   "l:pasta"
+  ],
+  "u11": [
+   "l:unidad",
+   "l:sufrir",
+   "l:directo",
+   "l:actividad",
+   "l:honor",
+   "l:instituto",
+   "l:absoluto",
+   "l:terrible",
+   "l:brillante",
+   "l:horrible",
+   "l:ocasión",
+   "l:universitario",
+   "l:división",
+   "l:instrucción",
+   "l:anotar",
+   "l:interpretar",
+   "l:incidente",
+   "l:prioridad"
+  ],
+  "u12": [
+   "l:exactamente",
+   "l:observar",
+   "l:asumir",
+   "l:héroe",
+   "l:guardia",
+   "l:extra",
+   "l:aventura",
+   "l:placa",
+   "l:museo",
+   "l:chino",
+   "l:plástico",
+   "l:auténtico",
+   "l:básicamente",
+   "l:magnífico"
+  ],
+  "u13": [
+   "l:fallar",
+   "l:afectar",
+   "l:favorito",
+   "l:directamente",
+   "l:inmediatamente",
+   "l:operar",
+   "l:humanidad",
+   "l:extremo",
+   "l:cristiano",
+   "l:obvio",
+   "l:religioso",
+   "l:colección",
+   "l:novedad"
+  ],
+  "u14": [
+   "l:imagen",
+   "l:costar",
+   "l:defensa",
+   "l:actor",
+   "l:comunicación",
+   "l:visión",
+   "l:combatir",
+   "l:absolutamente",
+   "l:italiano",
+   "l:honesto",
+   "l:excusa",
+   "l:fortuna",
+   "l:criatura",
+   "l:vital",
+   "l:edición",
+   "l:prácticamente"
+  ],
+  "u15": [
+   "l:jean",
+   "l:nuclear",
+   "l:evidente",
+   "l:refugio",
+   "l:tribu",
+   "l:comando",
+   "l:doloroso",
+   "l:docena",
+   "l:piedad",
+   "l:cementerio",
+   "l:biblia",
+   "l:estricto",
+   "l:obstáculo",
+   "l:tranquilidad",
+   "l:privilegio",
+   "l:sensor",
+   "l:aplauso",
+   "l:usado",
+   "l:camarada",
+   "l:cultivar",
+   "l:integridad"
+  ],
+  "u16": [
+   "l:celda",
+   "l:admirar",
+   "l:calcular",
+   "l:masivo",
+   "l:hábito",
+   "l:romano",
+   "l:promoción",
+   "l:literalmente",
+   "l:abrigo",
+   "l:transferir",
+   "l:poema",
+   "l:lote",
+   "l:escape",
+   "l:comprador",
+   "l:nervio",
+   "l:hilo",
+   "l:legítimo",
+   "l:aguja",
+   "l:caridad",
+   "l:rastrear",
+   "l:fabricante",
+   "l:generador",
+   "l:distribución",
+   "l:doméstico",
+   "l:supervisor",
+   "l:comerciante",
+   "l:supermercado",
+   "l:proveer",
+   "l:interrogar"
+  ],
+  "u17": [
+   "l:símbolo",
+   "l:recompensa",
+   "l:rango",
+   "l:líquido",
+   "l:estable",
+   "l:conducir",
+   "l:campeonato",
+   "l:guitarra",
+   "l:barrera",
+   "l:ficha",
+   "l:concentración",
+   "l:galería",
+   "l:balón",
+   "l:privacidad",
+   "l:terror",
+   "l:desfile",
+   "l:experimento",
+   "l:circo",
+   "l:numerar",
+   "l:aficionado",
+   "l:prostituto",
+   "l:campana",
+   "l:tumba",
+   "l:graduación"
+  ],
+  "u18": [
+   "l:competir",
+   "l:probabilidad",
+   "l:templo",
+   "l:combinación",
+   "l:anónimo",
+   "l:molestia",
+   "l:profundamente",
+   "l:fraude",
+   "l:volante",
+   "l:estacionamiento",
+   "l:defecto",
+   "l:reparación",
+   "l:granada",
+   "l:enfermería",
+   "l:rehabilitación",
+   "l:muelle",
+   "l:curva",
+   "l:dragón",
+   "l:automóvil",
+   "l:ingrediente",
+   "l:tripulación",
+   "l:fanático",
+   "l:fotógrafo",
+   "l:zombi"
+  ],
+  "u19": [
+   "l:sacrificio",
+   "l:delicado",
+   "l:divino",
+   "l:activar",
+   "l:sellar",
+   "l:explorar",
+   "l:disciplina",
+   "l:protector",
+   "l:multitud",
+   "l:maquillaje",
+   "l:jornada",
+   "l:campus",
+   "l:crimen",
+   "l:barril",
+   "l:dominio",
+   "l:lord",
+   "l:evaluar",
+   "l:enseñanza",
+   "l:escondido",
+   "l:lector",
+   "l:especialidad",
+   "l:test",
+   "l:conversar",
+   "l:seminario",
+   "l:calificación",
+   "l:eficiente",
+   "l:supervivencia",
+   "l:lápiz",
+   "l:sinceramente",
+   "l:ampliar"
+  ],
+  "u20": [
+   "l:nacional",
+   "l:internacional",
+   "l:sector",
+   "l:villa",
+   "l:océano",
+   "l:grano",
+   "l:borde",
+   "l:absurdo",
+   "l:noble",
+   "l:acelerar",
+   "l:espiritual",
+   "l:misterioso",
+   "l:naturalmente",
+   "l:tigre",
+   "l:sustancia",
+   "l:polo",
+   "l:regional",
+   "l:sierra",
+   "l:pavo",
+   "l:misión",
+   "l:gallina",
+   "l:satélite",
+   "l:confesión",
+   "l:occidental",
+   "l:núcleo",
+   "l:conejo",
+   "l:compensar",
+   "l:captar",
+   "l:ansioso",
+   "l:aldea",
+   "l:insecto",
+   "l:bestia",
+   "l:conveniente",
+   "l:atmósfera",
+   "l:cachorro",
+   "l:cualidad",
+   "l:panel",
+   "l:cima",
+   "l:pato",
+   "l:continente",
+   "l:fibra",
+   "l:orilla",
+   "l:águila",
+   "l:dramático"
+  ],
+  "u21": [
+   "l:aparato",
+   "l:coincidencia",
+   "l:automático",
+   "l:dignidad",
+   "l:cerebral",
+   "l:aniversario",
+   "l:progresar",
+   "l:franco",
+   "l:hamburguesa",
+   "l:drama",
+   "l:íntimo",
+   "l:suite",
+   "l:remoto",
+   "l:rebelde",
+   "l:manipular",
+   "l:instinto",
+   "l:armado",
+   "l:árabe",
+   "l:creador",
+   "l:tremendo"
+  ],
+  "u22": [
+   "l:eterno",
+   "l:intenso",
+   "l:sexto",
+   "l:electricidad",
+   "l:policial",
+   "l:mediar",
+   "l:dosis",
+   "l:droga",
+   "l:correctamente",
+   "l:triunfar",
+   "l:descubrimiento",
+   "l:necesariamente",
+   "l:casino",
+   "l:medianoche",
+   "l:perfume",
+   "l:tortura",
+   "l:sabiduría"
+  ],
+  "u23": [
+   "l:protección",
+   "l:explosivo",
+   "l:medalla",
+   "l:rutina",
+   "l:lógica",
+   "l:arresto",
+   "l:rival",
+   "l:verdaderamente",
+   "l:sobrar",
+   "l:máscara",
+   "l:asesinato",
+   "l:objeción",
+   "l:seguimiento",
+   "l:ascender",
+   "l:castigar",
+   "l:comunista",
+   "l:asesino",
+   "l:marihuana",
+   "l:extensión",
+   "l:interponer",
+   "l:adorable",
+   "l:heredero",
+   "l:mensajero"
+  ],
+  "u24": [
+   "l:habitual",
+   "l:residencia",
+   "l:emocional",
+   "l:garaje",
+   "l:observación",
+   "l:piano",
+   "l:residente",
+   "l:grasa",
+   "l:horno",
+   "l:abuso",
+   "l:administrador",
+   "l:destrucción",
+   "l:pánico",
+   "l:ducha",
+   "l:colonia",
+   "l:lavado",
+   "l:constantemente",
+   "l:caos",
+   "l:liberación",
+   "l:litro",
+   "l:casero",
+   "l:fatal",
+   "l:alfombra",
+   "l:historial",
+   "l:cortina",
+   "l:alterar",
+   "l:homosexual"
+  ],
+  "u25": [
+   "l:protocolo",
+   "l:suspender",
+   "l:fantasía",
+   "l:margen",
+   "l:generalmente",
+   "l:oficialmente",
+   "l:idiota",
+   "l:relajar",
+   "l:gesto",
+   "l:madurar",
+   "l:mentiroso",
+   "l:claridad",
+   "l:invisible",
+   "l:criticar",
+   "l:traidor",
+   "l:exceso",
+   "l:invadir"
+  ],
+  "u26": [
+   "l:instante",
+   "l:forense",
+   "l:visual",
+   "l:custodia",
+   "l:vulnerable",
+   "l:sacrificar",
+   "l:sugerencia",
+   "l:artificial",
+   "l:cardíaco",
+   "l:confundido",
+   "l:psicológico",
+   "l:trauma",
+   "l:portátil",
+   "l:ritual",
+   "l:corrección",
+   "l:civilización",
+   "l:adopción"
+  ],
+  "u27": [
+   "l:copia",
+   "l:editor",
+   "l:músico",
+   "l:cruel",
+   "l:whisky",
+   "l:conquistar",
+   "l:suicidar",
+   "l:advertencia",
+   "l:entorno",
+   "l:seguido",
+   "l:norteamericano",
+   "l:decente",
+   "l:récord",
+   "l:subtítulo",
+   "l:lentamente",
+   "l:maíz",
+   "l:reportero",
+   "l:ácido",
+   "l:pirata",
+   "l:mediodía",
+   "l:porno",
+   "l:particularmente",
+   "l:donación"
+  ],
+  "u28": [
+   "l:registrar",
+   "l:acceso",
+   "l:procesar",
+   "l:territorio",
+   "l:ministerio",
+   "l:consumir",
+   "l:congreso",
+   "l:limitar",
+   "l:república",
+   "l:factor",
+   "l:fundación",
+   "l:constitución",
+   "l:clic",
+   "l:democracia",
+   "l:tendencia",
+   "l:latino",
+   "l:delincuente",
+   "l:senado",
+   "l:amanecer",
+   "l:recomendación",
+   "l:papi",
+   "l:collar",
+   "l:defensor",
+   "l:soldado",
+   "l:género",
+   "l:lealtad",
+   "l:traicionar",
+   "l:aterrizar",
+   "l:tomado",
+   "l:desafortunadamente",
+   "l:embajada",
+   "l:parcial",
+   "l:únicamente",
+   "l:residuo",
+   "l:contable",
+   "l:juvenil",
+   "l:envolver",
+   "l:inconsciente",
+   "l:disputar",
+   "l:radiación",
+   "l:asignar",
+   "l:federación",
+   "l:boom",
+   "l:presidencial",
+   "l:baby",
+   "l:africano",
+   "l:misil",
+   "l:ídolo",
+   "l:provincia",
+   "l:veterano",
+   "l:pistola",
+   "l:trono",
+   "l:liberal",
+   "l:suspensión",
+   "l:invasión",
+   "l:caramelo",
+   "l:determinación",
+   "l:magistrado",
+   "l:oral",
+   "l:terrorismo",
+   "l:urgencia"
+  ],
+  "u29": [
+   "l:objetivo",
+   "l:legal",
+   "l:mínimo",
+   "l:reciente",
+   "l:unión",
+   "l:judicial",
+   "l:tradicional",
+   "l:autorización",
+   "l:mecanismo",
+   "l:honorable",
+   "l:desagradable",
+   "l:cansar",
+   "l:expectativa",
+   "l:navegar",
+   "l:séptimo",
+   "l:incrementar",
+   "l:consideración",
+   "l:macho",
+   "l:finalizar",
+   "l:batir",
+   "l:contemplar",
+   "l:avanzado",
+   "l:pila",
+   "l:agresión",
+   "l:cursar",
+   "l:virtual",
+   "l:comunicado",
+   "l:vampiro",
+   "l:atracción",
+   "l:facilidad",
+   "l:tumor",
+   "l:miserable",
+   "l:agradecido",
+   "l:restricción",
+   "l:ardiente",
+   "l:portada",
+   "l:sofisticado",
+   "l:audición",
+   "l:hambriento",
+   "l:afortunadamente",
+   "l:programación",
+   "l:Halloween",
+   "l:dental",
+   "l:montaje"
+  ],
+  "u30": [
+   "l:social",
+   "l:indicar",
+   "l:emplear",
+   "l:figurar",
+   "l:específico",
+   "l:definir",
+   "l:órgano",
+   "l:académico",
+   "l:modificar",
+   "l:intervenir",
+   "l:trozo",
+   "l:arruinarse",
+   "l:billón",
+   "l:ejercer",
+   "l:bendecir",
+   "l:derivar",
+   "l:empeorar",
+   "l:desaparición",
+   "l:patria",
+   "l:negativa",
+   "l:agresivo",
+   "l:agotado",
+   "l:dictar",
+   "l:encuesta",
+   "l:plantear",
+   "l:pop",
+   "l:house",
+   "l:estratégico",
+   "l:jurisdicción",
+   "l:documentación",
+   "l:romance",
+   "l:delegar",
+   "l:previamente",
+   "l:accesorio",
+   "l:conservador",
+   "l:rendimiento",
+   "l:flotar",
+   "l:contabilidad",
+   "l:seriamente",
+   "l:demostración",
+   "l:furioso"
+  ],
+  "u31": [
+   "l:operación",
+   "l:representar",
+   "l:presencia",
+   "l:analizar",
+   "l:corresponder",
+   "l:permanente",
+   "l:plataforma",
+   "l:laboral",
+   "l:definitivo",
+   "l:anual",
+   "l:gravedad",
+   "l:combinar",
+   "l:contribuir",
+   "l:aliento",
+   "l:dorado",
+   "l:cárcel",
+   "l:manga",
+   "l:vino",
+   "l:sólido",
+   "l:arruinar",
+   "l:concejal",
+   "l:promover",
+   "l:hueco",
+   "l:dificultar",
+   "l:desorden",
+   "l:arder",
+   "l:guardián",
+   "l:actualidad",
+   "l:ruina",
+   "l:fusión",
+   "l:amoroso",
+   "l:ficción",
+   "l:localizado",
+   "l:lesbiana",
+   "l:supuestamente",
+   "l:mini",
+   "l:provisión",
+   "l:inventario",
+   "l:apartado"
+  ],
+  "u32": [
+   "l:programar",
+   "l:gobernar",
+   "l:similar",
+   "l:proyectar",
+   "l:origen",
+   "l:autorizar",
+   "l:industrial",
+   "l:componer",
+   "l:selección",
+   "l:pastor",
+   "l:aportar",
+   "l:transferencia",
+   "l:justificar",
+   "l:convención",
+   "l:inicial",
+   "l:veneno",
+   "l:gota",
+   "l:pronunciar",
+   "l:percibir",
+   "l:gratuito",
+   "l:afrontar",
+   "l:gestión",
+   "l:encajar",
+   "l:obrero",
+   "l:rehén",
+   "l:relevante",
+   "l:inspección",
+   "l:satisfacción",
+   "l:hada",
+   "l:tarifa",
+   "l:coca",
+   "l:tránsito",
+   "l:inmenso",
+   "l:acertar",
+   "l:administrar",
+   "l:testamento",
+   "l:contratista",
+   "l:legalmente",
+   "l:atleta",
+   "l:contribución",
+   "l:trágico",
+   "l:entretener",
+   "l:almacenar",
+   "l:miseria",
+   "l:ocupación",
+   "l:contratado",
+   "l:perla",
+   "l:alimentación",
+   "l:maquinaria",
+   "l:ejemplar"
+  ],
+  "u33": [
+   "l:incluir",
+   "l:atender",
+   "l:expresar",
+   "l:método",
+   "l:existencia",
+   "l:perspectiva",
+   "l:circuito",
+   "l:exclusivo",
+   "l:orientar",
+   "l:impulso",
+   "l:bancario",
+   "l:principalmente",
+   "l:relacionado",
+   "l:pendiente",
+   "l:alzar",
+   "l:disparo",
+   "l:posterior",
+   "l:millonario",
+   "l:contexto",
+   "l:evolución",
+   "l:entusiasmar",
+   "l:crudo",
+   "l:inesperado",
+   "l:complacer",
+   "l:concertar",
+   "l:diverso",
+   "l:entretenimiento",
+   "l:corporativo",
+   "l:radical",
+   "l:terraza",
+   "l:alias",
+   "l:vecindario",
+   "l:establecimiento",
+   "l:terrestre",
+   "l:justamente",
+   "l:turco",
+   "l:concentrado",
+   "l:detective",
+   "l:decoración",
+   "l:sustituir",
+   "l:lotería",
+   "l:abusar",
+   "l:cardenal",
+   "l:frecuente"
+  ],
+  "u34": [
+   "l:efecto",
+   "l:participar",
+   "l:reducir",
+   "l:básico",
+   "l:ejecutivo",
+   "l:período",
+   "l:previo",
+   "l:dimensión",
+   "l:ciclo",
+   "l:nevar",
+   "l:flota",
+   "l:uña",
+   "l:secarse",
+   "l:entero",
+   "l:sordo",
+   "l:lata",
+   "l:gráfico",
+   "l:definición",
+   "l:imponer",
+   "l:escudo",
+   "l:esforzar",
+   "l:publicación",
+   "l:lidiar",
+   "l:mito",
+   "l:fama",
+   "l:rol",
+   "l:inscripción",
+   "l:mami",
+   "l:postura",
+   "l:específicamente",
+   "l:condicional",
+   "l:detención",
+   "l:partícula",
+   "l:utilidad",
+   "l:infectar",
+   "l:actualización",
+   "l:aborto",
+   "l:comedia",
+   "l:visible",
+   "l:argumentar",
+   "l:separación",
+   "l:demandante",
+   "l:distraer",
+   "l:balance"
+  ],
+  "u35": [
+   "l:centrar",
+   "l:imaginarse",
+   "l:activo",
+   "l:económico",
+   "l:instrumento",
+   "l:excepción",
+   "l:manual",
+   "l:penal",
+   "l:introducir",
+   "l:bodega",
+   "l:diagnóstico",
+   "l:filtrar",
+   "l:intelectual",
+   "l:semejante",
+   "l:cirujano",
+   "l:pluma",
+   "l:jugada",
+   "l:flecha",
+   "l:fascinante",
+   "l:armar",
+   "l:dirigido",
+   "l:payaso",
+   "l:satisfacer",
+   "l:obstante",
+   "l:esencia",
+   "l:azar",
+   "l:molino",
+   "l:auxiliar",
+   "l:liderazgo",
+   "l:oportuno",
+   "l:flash",
+   "l:tecnológico",
+   "l:farmacia",
+   "l:inyección",
+   "l:fundar",
+   "l:mineral",
+   "l:depresión",
+   "l:comodidad",
+   "l:alcohólico",
+   "l:electoral",
+   "l:fractura",
+   "l:ansiedad",
+   "l:situar",
+   "l:idéntico",
+   "l:genética",
+   "l:maquinar",
+   "l:nazi",
+   "l:ajustado"
+  ],
+  "u36": [
+   "l:superior",
+   "l:secretario",
+   "l:determinar",
+   "l:concepto",
+   "l:potencial",
+   "l:fenómeno",
+   "l:europeo",
+   "l:iniciativa",
+   "l:característica",
+   "l:individual",
+   "l:régimen",
+   "l:directivo",
+   "l:pactar",
+   "l:vicepresidente",
+   "l:significativo",
+   "l:minero",
+   "l:tumbarse",
+   "l:preparación",
+   "l:tiburón",
+   "l:criterio",
+   "l:convocar",
+   "l:acondicionado",
+   "l:magdalena",
+   "l:independencia",
+   "l:hondo",
+   "l:acompañante",
+   "l:participante",
+   "l:nativo",
+   "l:respiración",
+   "l:hall",
+   "l:chance",
+   "l:sándwich",
+   "l:numeroso",
+   "l:incorrecto",
+   "l:mutuo",
+   "l:perrito",
+   "l:lamentablemente",
+   "l:élite",
+   "l:extraterrestre"
+  ],
+  "u37": [
+   "l:natural",
+   "l:máximo",
+   "l:transportar",
+   "l:ideal",
+   "l:continuación",
+   "l:descripción",
+   "l:fundamental",
+   "l:portal",
+   "l:intervención",
+   "l:concluir",
+   "l:fabuloso",
+   "l:ahogar",
+   "l:clasificar",
+   "l:seleccionar",
+   "l:ron",
+   "l:retroceder",
+   "l:ajuste",
+   "l:tatuaje",
+   "l:frenar",
+   "l:componente",
+   "l:psicología",
+   "l:diálogo",
+   "l:práctico",
+   "l:congresista",
+   "l:helar",
+   "l:confusión",
+   "l:divorciarse",
+   "l:táctica",
+   "l:desempeñar",
+   "l:integrar",
+   "l:burlarse",
+   "l:infierno",
+   "l:adicto",
+   "l:comisionado",
+   "l:guerrero",
+   "l:corrupto",
+   "l:confiable",
+   "l:percepción",
+   "l:oposición"
+  ],
+  "u38": [
+   "l:evento",
+   "l:término",
+   "l:positivo",
+   "l:generar",
+   "l:adoptar",
+   "l:global",
+   "l:múltiple",
+   "l:creativo",
+   "l:externo",
+   "l:sótano",
+   "l:gafas",
+   "l:administrativo",
+   "l:asesinar",
+   "l:apertura",
+   "l:asignado",
+   "l:licor",
+   "l:patrulla",
+   "l:béisbol",
+   "l:malvado",
+   "l:injusto",
+   "l:cálido",
+   "l:asaltar",
+   "l:mérito",
+   "l:kit",
+   "l:dañar",
+   "l:iluminar",
+   "l:desaparecido",
+   "l:severo",
+   "l:sobreviviente",
+   "l:licenciarse",
+   "l:horror",
+   "l:motel",
+   "l:callejón",
+   "l:cuidadoso",
+   "l:ruptura",
+   "l:inusual",
+   "l:preliminar",
+   "l:involucrado",
+   "l:bandido"
+  ],
+  "u39": [
+   "l:aspecto",
+   "l:sección",
+   "l:eléctrico",
+   "l:impacto",
+   "l:instalar",
+   "l:categoría",
+   "l:regular",
+   "l:primario",
+   "l:debatir",
+   "l:hoyo",
+   "l:emperador",
+   "l:ordinario",
+   "l:municipal",
+   "l:flujo",
+   "l:bendición",
+   "l:tela",
+   "l:bono",
+   "l:viudo",
+   "l:funcionamiento",
+   "l:expedición",
+   "l:Hacienda",
+   "l:imprimir",
+   "l:post",
+   "l:reformar",
+   "l:top",
+   "l:aprendizaje",
+   "l:comprensión",
+   "l:castigado",
+   "l:contador",
+   "l:facilitar",
+   "l:digital",
+   "l:interferir",
+   "l:tutor",
+   "l:actualizar",
+   "l:precisión",
+   "l:metálico",
+   "l:agradecimiento",
+   "l:arquitectura",
+   "l:secretaría",
+   "l:decano",
+   "l:transacción",
+   "l:estelar",
+   "l:plaga"
+  ],
+  "u40": [
+   "l:requerir",
+   "l:interno",
+   "l:estrategia",
+   "l:implicar",
+   "l:independiente",
+   "l:histórico",
+   "l:inferior",
+   "l:circular",
+   "l:espectacular",
+   "l:griego",
+   "l:organismo",
+   "l:semestre",
+   "l:beneficiar",
+   "l:preso",
+   "l:donar",
+   "l:morder",
+   "l:lazo",
+   "l:lejano",
+   "l:sujeto",
+   "l:fuga",
+   "l:orgánico",
+   "l:diseñador",
+   "l:descartar",
+   "l:tele",
+   "l:otorgar",
+   "l:confuso",
+   "l:infinito",
+   "l:elefante",
+   "l:correa",
+   "l:cuartel",
+   "l:condado",
+   "l:erótico",
+   "l:universal",
+   "l:orientación",
+   "l:lógico",
+   "l:limón",
+   "l:galaxia",
+   "l:fragmento",
+   "l:contenedor",
+   "l:encantado",
+   "l:rural",
+   "l:rancho",
+   "l:efectivamente",
+   "l:constitucional",
+   "l:horizonte",
+   "l:turismo",
+   "l:descender"
+  ],
+  "u41": [
+   "l:autoridad",
+   "l:práctica",
+   "l:física",
+   "l:ejecutar",
+   "l:continuo",
+   "l:individuo",
+   "l:cultural",
+   "l:volumen",
+   "l:virtud",
+   "l:operativo",
+   "l:congelar",
+   "l:vínculo",
+   "l:liderar",
+   "l:niñero",
+   "l:frito",
+   "l:espía",
+   "l:paseo",
+   "l:colectivo",
+   "l:estimar",
+   "l:mago",
+   "l:excepcional",
+   "l:ambiental",
+   "l:financiar",
+   "l:extremadamente",
+   "l:torno",
+   "l:extraer",
+   "l:recetar",
+   "l:revolucionario",
+   "l:pescar",
+   "l:apuntar",
+   "l:graduarse",
+   "l:estatua",
+   "l:precaución",
+   "l:diamantes",
+   "l:inmunidad",
+   "l:anular",
+   "l:confidencial",
+   "l:tesis",
+   "l:jazz"
+  ],
+  "u42": [
+   "l:marino",
+   "l:anfitrión",
+   "l:corbata",
+   "l:poli",
+   "l:despegar",
+   "l:reforzar",
+   "l:cajón",
+   "l:munición",
+   "l:incapaz",
+   "l:gusano",
+   "l:inscribir",
+   "l:artefacto",
+   "l:hábil",
+   "l:respaldo",
+   "l:donante",
+   "l:fallecido",
+   "l:consumidor",
+   "l:esquema"
+  ],
+  "u43": [
+   "l:patear",
+   "l:humilde",
+   "l:silencioso",
+   "l:juramento",
+   "l:soplar",
+   "l:freno",
+   "l:mudar",
+   "l:bondad",
+   "l:arreglo",
+   "l:burbuja",
+   "l:gozar",
+   "l:chimenea",
+   "l:descanso",
+   "l:cubo",
+   "l:fundirse",
+   "l:disfrazarse",
+   "l:cueva",
+   "l:alterado"
+  ],
+  "u44": [
+   "l:raya",
+   "l:engaño",
+   "l:vegetal",
+   "l:derribar",
+   "l:patada",
+   "l:cuaderno",
+   "l:elaborar",
+   "l:tabaco",
+   "l:traición",
+   "l:despierto",
+   "l:empacar",
+   "l:lucha",
+   "l:vapor",
+   "l:procurar",
+   "l:neumático",
+   "l:asco",
+   "l:espectro",
+   "l:instancia",
+   "l:republicano",
+   "l:mafia"
+  ],
+  "u45": [
+   "l:barba",
+   "l:aislar",
+   "l:despejado",
+   "l:hígado",
+   "l:obispo",
+   "l:varón",
+   "l:aparición",
+   "l:recortar",
+   "l:emisión",
+   "l:videojuego",
+   "l:asiático",
+   "l:agudo",
+   "l:espectador",
+   "l:renovar",
+   "l:goma"
+  ],
+  "u46": [
+   "l:novato",
+   "l:leal",
+   "l:revolver",
+   "l:redondo",
+   "l:marearse",
+   "l:fallecer",
+   "l:martillo",
+   "l:motocicleta",
+   "l:refuerzo",
+   "l:abeja",
+   "l:ajeno",
+   "l:vena",
+   "l:rana",
+   "l:muestra"
+  ],
+  "u47": [
+   "l:arquitecto",
+   "l:altamente",
+   "l:protagonista",
+   "l:impulsar",
+   "l:revés",
+   "l:pintor",
+   "l:psicólogo",
+   "l:coro",
+   "l:coraje",
+   "l:cancha",
+   "l:orquesta",
+   "l:apurar",
+   "l:psiquiatra",
+   "l:proyección",
+   "l:disfraz",
+   "l:baile",
+   "l:arar",
+   "l:láser",
+   "l:riñón",
+   "l:legado",
+   "l:admisión"
+  ],
+  "u48": [
+   "l:fundador",
+   "l:reflexionar",
+   "l:expuesto",
+   "l:presa",
+   "l:liga",
+   "l:cómplice",
+   "l:alojamiento",
+   "l:cóctel",
+   "l:televisor",
+   "l:jaula",
+   "l:eje",
+   "l:píldora",
+   "l:tubería",
+   "l:gen",
+   "l:culto",
+   "l:interrogatorio",
+   "l:barro"
+  ],
+  "u49": [
+   "l:antigüedad",
+   "l:ceniza",
+   "l:mojado",
+   "l:obligatorio",
+   "l:apestar",
+   "l:misa",
+   "l:inconveniente",
+   "l:aburrir",
+   "l:vago",
+   "l:dorada",
+   "l:amistoso",
+   "l:asociarse",
+   "l:grueso",
+   "l:mensual"
+  ],
+  "u50": [
+   "l:asqueroso",
+   "l:boleto",
+   "l:educativo",
+   "l:deprisa",
+   "l:pulgada",
+   "l:bahía",
+   "l:pillar",
+   "l:palomo",
+   "l:consentimiento",
+   "l:hembra",
+   "l:persecución",
+   "l:maduro",
+   "l:hundirse",
+   "l:encontrado"
+  ],
+  "u51": [
+   "l:cabra",
+   "l:corporal",
+   "l:estupidez",
+   "l:cazar",
+   "l:explorador",
+   "l:mariposa",
+   "l:pandilla",
+   "l:estrenar",
+   "l:crucero",
+   "l:desperdiciar",
+   "l:salchicha",
+   "l:tinta",
+   "l:vano",
+   "l:puño"
+  ],
+  "u52": [
+   "l:aspirante",
+   "l:arrestar",
+   "l:escaso",
+   "l:eficaz",
+   "l:productivo",
+   "l:motivación",
+   "l:facturar",
+   "l:ubicar",
+   "l:educar",
+   "l:escuadrón",
+   "l:muñeco",
+   "l:freír",
+   "l:aguardar",
+   "l:asignación",
+   "l:archivar",
+   "l:noción",
+   "l:tobillo",
+   "l:valla",
+   "l:carecer",
+   "l:fianza",
+   "l:imaginario",
+   "l:santuario",
+   "l:normar",
+   "l:obsesión",
+   "l:comportar",
+   "l:olla",
+   "l:esfera",
+   "l:patético",
+   "l:composición",
+   "l:dedicado",
+   "l:nudo",
+   "l:follar",
+   "l:difundir",
+   "l:honestamente",
+   "l:demonio",
+   "l:intacto",
+   "l:vengar",
+   "l:válvula",
+   "l:monumento",
+   "l:vencido",
+   "l:gratitud",
+   "l:injusticia",
+   "l:hervir",
+   "l:cuerno",
+   "l:vincularse",
+   "l:seducir",
+   "l:descuidar",
+   "l:carpeta",
+   "l:inmortal",
+   "l:desarmar",
+   "l:receptor",
+   "l:ballet",
+   "l:zorro",
+   "l:mediana",
+   "l:determinado",
+   "l:clóset",
+   "l:melodía"
+  ],
+  "u53": [
+   "l:tranquilizar",
+   "l:vendar",
+   "l:repuesto",
+   "l:ginebra",
+   "l:pilotar",
+   "l:teórico",
+   "l:atentado",
+   "l:trastorno",
+   "l:lateral",
+   "l:sereno",
+   "l:timbre",
+   "l:vigilante",
+   "l:jurídico",
+   "l:concebir",
+   "l:parlamento",
+   "l:compasión",
+   "l:diputado",
+   "l:destrozado",
+   "l:doctorado",
+   "l:proposición",
+   "l:turístico",
+   "l:absorber",
+   "l:navideño",
+   "l:medicar",
+   "l:reconstruir",
+   "l:amargo",
+   "l:honrado",
+   "l:submarino",
+   "l:apto",
+   "l:cansarse",
+   "l:difunto",
+   "l:mandato",
+   "l:racional",
+   "l:taco",
+   "l:aislamiento",
+   "l:logro",
+   "l:depositar",
+   "l:asalto",
+   "l:energético",
+   "l:razonar",
+   "l:acoso",
+   "l:obligado",
+   "l:concordar",
+   "l:nuez",
+   "l:primitivo",
+   "l:indicio",
+   "l:adquisición",
+   "l:inauguración",
+   "l:acogida",
+   "l:gama",
+   "l:marrón",
+   "l:gubernamental",
+   "l:celebridad",
+   "l:eliminación",
+   "l:out",
+   "l:ausente",
+   "l:brindis",
+   "l:cesta",
+   "l:exquisito",
+   "l:capacitar",
+   "l:gorra"
+  ],
+  "u54": [
+   "l:desactivar",
+   "l:triple",
+   "l:marcador",
+   "l:cráneo",
+   "l:realista",
+   "l:diligencia",
+   "l:evidentemente",
+   "l:subterráneo",
+   "l:notable",
+   "l:mero",
+   "l:traficante",
+   "l:gramo",
+   "l:violento",
+   "l:aprendiz",
+   "l:pañuelo",
+   "l:coordinación",
+   "l:cápsula",
+   "l:eventualmente",
+   "l:activado",
+   "l:morar",
+   "l:quemadura",
+   "l:ofensiva",
+   "l:cuidadosamente",
+   "l:facial",
+   "l:brutal",
+   "l:ingenuo",
+   "l:retirada",
+   "l:equivalente",
+   "l:gabinete",
+   "l:confirmación",
+   "l:limitado",
+   "l:relajado",
+   "l:aduana",
+   "l:anticipar",
+   "l:proporción",
+   "l:coordinar",
+   "l:vacante",
+   "l:rellenar",
+   "l:admirador",
+   "l:terapeuta",
+   "l:insulto",
+   "l:cariñoso",
+   "l:burro",
+   "l:talentoso",
+   "l:refugiado",
+   "l:fraternidad",
+   "l:huérfano",
+   "l:convicción",
+   "l:lunar",
+   "l:revivir",
+   "l:adema",
+   "l:rienda"
+  ],
+  "u55": [
+   "l:carrito",
+   "l:contrabando",
+   "l:indígena",
+   "l:iluminación",
+   "l:padrino",
+   "l:presidencia",
+   "l:apelación",
+   "l:ferrocarril",
+   "l:notificar",
+   "l:sanguíneo",
+   "l:empresarial",
+   "l:democrático",
+   "l:cerradura",
+   "l:comprometer",
+   "l:autopsia",
+   "l:enfermar",
+   "l:diseño",
+   "l:analista",
+   "l:orar",
+   "l:relativo",
+   "l:potente",
+   "l:alteza",
+   "l:físicamente",
+   "l:equipamiento",
+   "l:acorde",
+   "l:caña",
+   "l:tenso",
+   "l:dinámica",
+   "l:creciente",
+   "l:chaleco",
+   "l:desviarse",
+   "l:construido",
+   "l:shock",
+   "l:pertenencia",
+   "l:integral",
+   "l:escolta",
+   "l:modificación",
+   "l:expansión",
+   "l:sendero",
+   "l:honestidad",
+   "l:lavandería",
+   "l:duración",
+   "l:brotar",
+   "l:aceptable",
+   "l:puñado",
+   "l:impactar",
+   "l:inversor",
+   "l:libremente",
+   "l:tacón",
+   "l:correspondencia",
+   "l:totalidad",
+   "l:compatible",
+   "l:tentación",
+   "l:coreano",
+   "l:cubierto",
+   "l:póliza",
+   "l:aterrizaje",
+   "l:defensivo"
+  ],
+  "u56": [
+   "l:excluir",
+   "l:agotar",
+   "l:localización",
+   "l:establecido",
+   "l:musulmán",
+   "l:beso",
+   "l:luchador",
+   "l:inocencia",
+   "l:salvación",
+   "l:homenaje",
+   "l:repasar",
+   "l:blando",
+   "l:evolucionar",
+   "l:eternidad",
+   "l:cumplimiento",
+   "l:bendito",
+   "l:someter",
+   "l:sobrio",
+   "l:hechizo",
+   "l:presumir",
+   "l:demorar",
+   "l:transición",
+   "l:juntar",
+   "l:sanitario",
+   "l:sentimental",
+   "l:desatar",
+   "l:normalidad",
+   "l:aproximarse",
+   "l:cosechar",
+   "l:biología",
+   "l:coordenada",
+   "l:calibrar",
+   "l:coleccionar",
+   "l:lamentable",
+   "l:exploración",
+   "l:pésimo",
+   "l:habitar",
+   "l:sexual",
+   "l:favorecer",
+   "l:capilla",
+   "l:concesión",
+   "l:torturar",
+   "l:gancho",
+   "l:tasar",
+   "l:rosario",
+   "l:mutuamente",
+   "l:patente",
+   "l:lesionar",
+   "l:ecuación",
+   "l:diseñado",
+   "l:informática",
+   "l:restante",
+   "l:refrigerador",
+   "l:innovación",
+   "l:abandonado",
+   "l:adicción",
+   "l:arteria",
+   "l:excesivo",
+   "l:veterinario",
+   "l:impecable",
+   "l:improvisar",
+   "l:financiación"
+  ],
+  "u57": [
+   "l:compensación",
+   "l:fluido",
+   "l:ejercitar",
+   "l:cuna",
+   "l:clan",
+   "l:hongo",
+   "l:convencional",
+   "l:magnético",
+   "l:retorno",
+   "l:radar",
+   "l:tablero",
+   "l:seda",
+   "l:bañera",
+   "l:olímpico",
+   "l:diagnosticar",
+   "l:ópera",
+   "l:fortalecer",
+   "l:marketing",
+   "l:computador",
+   "l:tiroteo",
+   "l:equipar",
+   "l:exagerar",
+   "l:buque",
+   "l:uva",
+   "l:recta",
+   "l:modesto",
+   "l:reducción",
+   "l:nacido",
+   "l:vitamina",
+   "l:bando",
+   "l:amado",
+   "l:estabilidad",
+   "l:tijera",
+   "l:pólvora",
+   "l:octavo",
+   "l:hipótesis",
+   "l:trasero",
+   "l:librería",
+   "l:competidor",
+   "l:estrechar",
+   "l:carnaval",
+   "l:prudente",
+   "l:conducto",
+   "l:caracol",
+   "l:enamorar",
+   "l:acogedor",
+   "l:apresurar",
+   "l:accionista",
+   "l:psiquiátrico",
+   "l:arroyo",
+   "l:astuto"
+  ],
+  "u58": [
+   "l:usualmente",
+   "l:terremoto",
+   "l:mochila",
+   "l:módulo",
+   "l:cohete",
+   "l:despejar",
+   "l:fluir",
+   "l:farmacéutico",
+   "l:competente",
+   "l:frágil",
+   "l:designar",
+   "l:tolerar",
+   "l:cuervo",
+   "l:nido",
+   "l:almirante",
+   "l:increíblemente",
+   "l:órbita",
+   "l:encendido",
+   "l:afueras",
+   "l:champán",
+   "l:oriental",
+   "l:constituir",
+   "l:bicho",
+   "l:costoso",
+   "l:amigable",
+   "l:sirena",
+   "l:municipio",
+   "l:fundamento",
+   "l:petrolero",
+   "l:navegación",
+   "l:tóxico",
+   "l:sacudir",
+   "l:consultor",
+   "l:occidente",
+   "l:porción",
+   "l:aroma",
+   "l:indicador",
+   "l:chofer",
+   "l:flexible",
+   "l:hormiga",
+   "l:prometido",
+   "l:obsesionado",
+   "l:suceso",
+   "l:suicida",
+   "l:convencido",
+   "l:concernir",
+   "l:observador",
+   "l:colchón",
+   "l:cómico",
+   "l:banca",
+   "l:perímetro",
+   "l:prohibido",
+   "l:mansión",
+   "l:tronco",
+   "l:tropical",
+   "l:intensidad",
+   "l:harina",
+   "l:pantano",
+   "l:bacteria",
+   "l:estrecho",
+   "l:inestable",
+   "l:pacífico",
+   "l:cintura",
+   "l:considerable",
+   "l:inmigrante",
+   "l:oriente",
+   "l:crónica",
+   "l:poblado",
+   "l:césped",
+   "l:asado",
+   "l:tiro"
+  ],
+  "u59": [
+   "l:eco",
+   "l:complicación",
+   "l:cumbre",
+   "l:recurrir",
+   "l:costilla",
+   "l:inevitable",
+   "l:cereal",
+   "l:aspirar",
+   "l:llanta",
+   "l:relleno",
+   "l:ano",
+   "l:ajedrez",
+   "l:maletín",
+   "l:masacre",
+   "l:estudiantil",
+   "l:condón",
+   "l:aparentar",
+   "l:boletín",
+   "l:sometido",
+   "l:detallado",
+   "l:datar",
+   "l:cooperar",
+   "l:tornar",
+   "l:plana",
+   "l:trago",
+   "l:variable",
+   "l:refresco",
+   "l:vicio",
+   "l:francamente",
+   "l:frasco",
+   "l:articular",
+   "l:anhelar",
+   "l:desperdicio",
+   "l:enano",
+   "l:instructor",
+   "l:vergonzoso",
+   "l:alegar",
+   "l:reemplazo",
+   "l:bata",
+   "l:liquidar",
+   "l:misericordia",
+   "l:velada",
+   "l:cordón",
+   "l:deportista",
+   "l:holandés",
+   "l:influir",
+   "l:semanal",
+   "l:limitación",
+   "l:faro",
+   "l:bigote",
+   "l:supervisión",
+   "l:orgasmo"
+  ],
+  "u60": [
+   "l:trayectoria",
+   "l:desconocer",
+   "l:estancia",
+   "l:mánager",
+   "l:competitivo",
+   "l:trofeo",
+   "l:pañal",
+   "l:gemelo",
+   "l:maniobra",
+   "l:empatar",
+   "l:afectado",
+   "l:superficial",
+   "l:carbono",
+   "l:batallón",
+   "l:apetito",
+   "l:caravana",
+   "l:aula",
+   "l:psíquico",
+   "l:ballena",
+   "l:tambor",
+   "l:creado",
+   "l:crucial",
+   "l:sudar",
+   "l:orina",
+   "l:innecesario",
+   "l:atrasado",
+   "l:leve",
+   "l:cargado",
+   "l:madrugada",
+   "l:intimidad",
+   "l:sensual",
+   "l:deducir",
+   "l:caminata",
+   "l:exótico",
+   "l:distracción",
+   "l:reproducir",
+   "l:banquete",
+   "l:especializarse",
+   "l:brecha",
+   "l:exigente",
+   "l:extracción",
+   "l:preservar",
+   "l:chispa",
+   "l:terminado",
+   "l:zanahoria",
+   "l:peinado",
+   "l:profeta",
+   "l:polaco",
+   "l:exagerado",
+   "l:cubano",
+   "l:recto"
+  ]
+ }
+}

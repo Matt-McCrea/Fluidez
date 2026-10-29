@@ -11,7 +11,13 @@
     "g:imperfect-subj"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:cómodo",
+    "l:corte",
+    "l:suave",
+    "l:alimento",
+    "l:reto"
+   ],
    "chapter": "ch119"
   },
   {
@@ -21,13 +27,32 @@
     "g:referring-back"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:formación",
+    "l:sospechar",
+    "l:ciego"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:caribe",
+    "l:arena",
+    "l:ola",
+    "l:pescador",
+    "l:humedad",
+    "l:tortuga",
+    "l:palmera",
+    "l:coco",
+    "l:niebla",
+    "l:pino",
+    "l:mosquito",
+    "l:araña",
+    "l:noroeste",
+    "l:suroeste"
+   ],
    "chapter": "ch120"
   },
   {
@@ -36,7 +61,13 @@
     "g:si-hypothetical"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:arriesgar",
+    "l:nuevamente",
+    "l:rezar",
+    "l:superficie",
+    "l:humor"
+   ],
    "chapter": "ch121"
   },
   {
@@ -47,7 +78,11 @@
     "x:si-real-unreal"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:empujar",
+    "l:etapa",
+    "l:expediente"
+   ]
   },
   {
    "type": "patterns",
@@ -65,7 +100,13 @@
     "g:como-si"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:diversión",
+    "l:caliente",
+    "l:conservar",
+    "l:entrenar",
+    "l:profundar"
+   ]
   },
   {
    "type": "drill",
@@ -74,7 +115,11 @@
     "g:si-hypothetical"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:alianza",
+    "l:despedirse",
+    "l:acostar"
+   ],
    "scene": "sc-u40-b"
   },
   {

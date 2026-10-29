@@ -15,7 +15,13 @@
     "c:dejame-terminar",
     "c:en-que-ibamos"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:masa",
+    "l:partida",
+    "l:tanque",
+    "l:funcionario",
+    "l:ingreso"
+   ],
    "chapter": "ch145"
   },
   {
@@ -27,7 +33,11 @@
    "chunks": [
     "c:no-hablemos-de-eso"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:dormido",
+    "l:inútil",
+    "l:garantía"
+   ]
   },
   {
    "type": "input",
@@ -42,7 +52,21 @@
     "p:la-vi-salir"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:acta",
+    "l:asamblea",
+    "l:testimonio",
+    "l:declarar",
+    "l:comentar",
+    "l:mencionar",
+    "l:admitir",
+    "l:votación",
+    "l:bomba",
+    "l:nación",
+    "l:político",
+    "l:distrito",
+    "l:crisis"
+   ],
    "chapter": "ch146"
   },
   {
@@ -51,7 +75,13 @@
     "g:reporting-verbs-mood"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:granja",
+    "l:pecado",
+    "l:cubierta",
+    "l:cuerda",
+    "l:ave"
+   ],
    "chapter": "ch147"
   },
   {
@@ -62,7 +92,11 @@
     "x:me-suena-vs-recuerdo"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:capital",
+    "l:concretar",
+    "l:equivocado"
+   ]
   },
   {
    "type": "patterns",
@@ -99,7 +133,13 @@
     "g:subj-perception-negated"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:reflejar",
+    "l:espada",
+    "l:agenda",
+    "l:traducir",
+    "l:tabla"
+   ],
    "chapter": "ch149"
   },
   {
@@ -114,7 +154,11 @@
     "p:no-recuerdo-que-subj"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:confesar",
+    "l:distinguir",
+    "l:sagrado"
+   ],
    "scene": "sc-u46-b"
   },
   {

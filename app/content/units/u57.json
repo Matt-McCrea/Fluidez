@@ -24,7 +24,20 @@
     "c:el-no-ya-lo-tienes",
     "c:el-pan-de-cada-dia"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:consultar",
+    "l:almohada",
+    "l:resignación",
+    "l:duelo",
+    "l:consuelo",
+    "l:consolar",
+    "l:añorar",
+    "l:soledad",
+    "l:luto",
+    "l:melancolía",
+    "l:angustia",
+    "l:animado"
+   ],
    "chapter": "ch200"
   },
   {
@@ -48,7 +61,13 @@
     "c:que-sea-lo-que-dios-quiera",
     "c:que-embarrada"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:recuperación",
+    "l:protegido",
+    "l:posiblemente",
+    "l:comprometido",
+    "l:masaje"
+   ],
    "chapter": "ch202"
   },
   {
@@ -63,7 +82,10 @@
     "c:hagale",
     "c:estoy-molido"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:moler",
+    "l:calmar"
+   ]
   },
   {
    "type": "input",
@@ -80,7 +102,20 @@
     "c:como-el-que-mas",
     "c:esta-que-arde"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:sensibilidad",
+    "l:solidaridad",
+    "l:valentía",
+    "l:generosidad",
+    "l:irresponsable",
+    "l:sinceridad",
+    "l:susceptible",
+    "l:tacto",
+    "l:constancia",
+    "l:admiración",
+    "l:ternura",
+    "l:seriedad"
+   ],
    "chapter": "ch203"
   },
   {
@@ -116,7 +151,13 @@
     "g:comparative-advanced-c1"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:culpar",
+    "l:caza",
+    "l:renta",
+    "l:disparar",
+    "l:fino"
+   ],
    "chapter": "ch204"
   },
   {
@@ -127,7 +168,10 @@
     "x:conformarse-no-remedio"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:tapar",
+    "l:izquierdo"
+   ]
   },
   {
    "type": "review",

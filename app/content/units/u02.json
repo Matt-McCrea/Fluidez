@@ -17,7 +17,14 @@
     "c:ojala",
     "c:la-verdad"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:saber",
+    "l:verdad",
+    "l:mejorar",
+    "l:parque",
+    "l:centro",
+    "l:barrio"
+   ],
    "chapter": "ch003"
   },
   {
@@ -32,7 +39,12 @@
     "c:que-significa",
     "c:como-se-escribe"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:bien",
+    "l:escribir",
+    "l:significar",
+    "l:hospital"
+   ]
   },
   {
    "type": "introduce",
@@ -44,7 +56,14 @@
     "c:no-cierto",
     "c:muy-amable"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:amable",
+    "l:repetir",
+    "l:universidad",
+    "l:colegio",
+    "l:cansado",
+    "l:ocupado"
+   ]
   },
   {
    "type": "drill",
@@ -56,7 +75,12 @@
     "c:con-mucho-gusto",
     "c:quiubo"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:mal",
+    "l:malo",
+    "l:don",
+    "l:contento"
+   ]
   },
   {
    "type": "input",
@@ -66,7 +90,24 @@
     "p:bien-mal-vs-bueno-malo"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:oficina",
+    "l:estudiar",
+    "l:hablar",
+    "l:leer",
+    "l:llegar",
+    "l:empezar",
+    "l:terminar",
+    "l:compañero",
+    "l:jefe",
+    "l:reunión",
+    "l:computadora",
+    "l:correo",
+    "l:horario",
+    "l:empresa",
+    "l:tienda",
+    "l:banco"
+   ],
    "chapter": "ch004"
   },
   {
@@ -75,7 +116,14 @@
     "g:questions"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:enfermo",
+    "l:tranquilo",
+    "l:aburrido",
+    "l:nervioso",
+    "l:número",
+    "l:calle"
+   ]
   },
   {
    "type": "drill",
@@ -88,7 +136,12 @@
    "chunks": [
     "c:a-que-te-dedicas"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:dedicar",
+    "l:irse",
+    "l:deber",
+    "l:aquí"
+   ]
   },
   {
    "type": "output",

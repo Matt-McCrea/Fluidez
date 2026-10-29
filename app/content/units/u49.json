@@ -11,7 +11,13 @@
     "g:formal-letter-grammar"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:aproximadamente",
+    "l:reemplazar",
+    "l:suministro",
+    "l:breve",
+    "l:paciencia"
+   ],
    "chapter": "ch160"
   },
   {
@@ -22,7 +28,11 @@
     "x:no-recuerdo-que-vs-haber"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:anterior",
+    "l:estimado",
+    "l:colaboración"
+   ]
   },
   {
    "type": "input",
@@ -33,7 +43,21 @@
     "p:interesado-en"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:cláusula",
+    "l:candidato",
+    "l:referencia",
+    "l:pago",
+    "l:cobro",
+    "l:reembolso",
+    "l:energía",
+    "l:organización",
+    "l:producción",
+    "l:riqueza",
+    "l:disminuir",
+    "l:pobreza",
+    "l:pesca"
+   ],
    "chapter": "ch161"
   },
   {
@@ -70,7 +94,13 @@
     "g:verbs-prepositions"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:aliado",
+    "l:borrar",
+    "l:limpio",
+    "l:solitario",
+    "l:química"
+   ],
    "chapter": "ch163"
   },
   {
@@ -80,7 +110,11 @@
     "g:formal-letter-grammar"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:afortunado",
+    "l:matar",
+    "l:matemáticas"
+   ]
   },
   {
    "type": "input",
@@ -89,7 +123,21 @@
     "p:dedicarse-a"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:exhibición",
+    "l:agricultura",
+    "l:catálogo",
+    "l:publicitario",
+    "l:folleto",
+    "l:fabricación",
+    "l:jubilación",
+    "l:importación",
+    "l:exportación",
+    "l:economista",
+    "l:ganadería",
+    "l:teletrabajo",
+    "l:márquetin"
+   ],
    "chapter": "ch164"
   },
   {

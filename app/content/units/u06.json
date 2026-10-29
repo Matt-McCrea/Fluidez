@@ -13,7 +13,14 @@
    "chunks": [
     "c:cuanto-tiempo"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:recuerdo",
+    "l:radio",
+    "l:televisión",
+    "l:disco",
+    "l:máquina",
+    "l:pared"
+   ],
    "chapter": "ch012"
   },
   {
@@ -27,7 +34,12 @@
     "c:ya-no",
     "c:como-era"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:época",
+    "l:cuadro",
+    "l:mesa",
+    "l:silla"
+   ]
   },
   {
    "type": "introduce",
@@ -35,7 +47,14 @@
     "g:preterite-irregular-strong"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:esquina",
+    "l:vitrina",
+    "l:letrero",
+    "l:dueño",
+    "l:cafetería",
+    "l:panadería"
+   ]
   },
   {
    "type": "drill",
@@ -44,7 +63,12 @@
     "g:imperfect-states"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:antiguo",
+    "l:cuadra",
+    "l:edificio",
+    "l:cambiar"
+   ]
   },
   {
    "type": "input",
@@ -54,7 +78,24 @@
     "p:dates-years"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:enero",
+    "l:febrero",
+    "l:marzo",
+    "l:abril",
+    "l:mayo",
+    "l:junio",
+    "l:julio",
+    "l:agosto",
+    "l:septiembre",
+    "l:octubre",
+    "l:noviembre",
+    "l:diciembre",
+    "l:década",
+    "l:siglo",
+    "l:moderno",
+    "l:foto"
+   ],
    "chapter": "ch013"
   },
   {
@@ -63,7 +104,14 @@
     "g:hace-ago"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:antes",
+    "l:acordar",
+    "l:volver",
+    "l:poner",
+    "l:cosa",
+    "l:parecer"
+   ],
    "chapter": "ch014"
   },
   {
@@ -76,7 +124,12 @@
    "chunks": [
     "c:hace-rato"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:nacer",
+    "l:rato",
+    "l:buscar",
+    "l:persona"
+   ]
   },
   {
    "type": "output",

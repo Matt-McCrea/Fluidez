@@ -14,7 +14,13 @@
     "c:a-precio-de-costo",
     "c:sin-otro-particular"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:particular",
+    "l:ataque",
+    "l:asombroso",
+    "l:incómodo",
+    "l:localizar"
+   ],
    "chapter": "ch190"
   },
   {
@@ -28,7 +34,10 @@
     "p:el-orden-la-orden"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:obligación",
+    "l:suscribir"
+   ]
   },
   {
    "type": "input",
@@ -43,7 +52,20 @@
     "p:tener-el-gusto-de"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:cooperativa",
+    "l:estatuto",
+    "l:asociado",
+    "l:junta",
+    "l:reglamento",
+    "l:quórum",
+    "l:aporte",
+    "l:resolución",
+    "l:decreto",
+    "l:asociación",
+    "l:petróleo",
+    "l:carbón"
+   ],
    "chapter": "ch191"
   },
   {
@@ -52,7 +74,13 @@
     "g:nominalisation"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:consenso",
+    "l:posponer",
+    "l:antelación",
+    "l:apretar",
+    "l:vivienda"
+   ],
    "chapter": "ch192"
   },
   {
@@ -64,7 +92,10 @@
     "p:solicitar"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:ajustar",
+    "l:constar"
+   ]
   },
   {
    "type": "patterns",
@@ -101,7 +132,13 @@
     "g:absolute-constructions"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:castigo",
+    "l:auxilio",
+    "l:semilla",
+    "l:bienestar",
+    "l:mantenimiento"
+   ],
    "chapter": "ch194"
   },
   {
@@ -112,7 +149,10 @@
     "x:antemano-antelacion"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:emocionante",
+    "l:ascensor"
+   ],
    "scene": "sc-u55-b"
   },
   {

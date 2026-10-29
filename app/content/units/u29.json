@@ -15,7 +15,13 @@
     "c:tu-crees",
     "c:que-yo-sepa"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:cerebro",
+    "l:quemar",
+    "l:declaración",
+    "l:cobrar",
+    "l:jugador"
+   ],
    "chapter": "ch086"
   },
   {
@@ -26,7 +32,11 @@
     "x:supongo-vs-dudo"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:besar",
+    "l:felicidad",
+    "l:charlar"
+   ]
   },
   {
    "type": "input",
@@ -34,7 +44,22 @@
     "p:dar-igual"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:debate",
+    "l:discusión",
+    "l:rumor",
+    "l:chisme",
+    "l:mentira",
+    "l:falso",
+    "l:probable",
+    "l:imposible",
+    "l:duda",
+    "l:desacuerdo",
+    "l:argumento",
+    "l:certeza",
+    "l:periodista",
+    "l:virus"
+   ],
    "chapter": "ch087"
   },
   {
@@ -43,7 +68,13 @@
     "g:quizas-a-lo-mejor"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:escenario",
+    "l:prueba",
+    "l:callar",
+    "l:puente",
+    "l:compromiso"
+   ],
    "chapter": "ch088"
   },
   {
@@ -56,7 +87,11 @@
     "x:dar-igual-parecer-bien"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:seguramente",
+    "l:debajo",
+    "l:ocultar"
+   ]
   },
   {
    "type": "patterns",
@@ -79,7 +114,13 @@
     "g:conditional-past-guess"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:lleno",
+    "l:gas",
+    "l:advertir",
+    "l:pensamiento",
+    "l:vía"
+   ]
   },
   {
    "type": "drill",
@@ -90,7 +131,11 @@
     "x:a-favor-vs-de-acuerdo"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:aprobar",
+    "l:velocidad",
+    "l:precioso"
+   ],
    "scene": "sc-u29-b"
   },
   {

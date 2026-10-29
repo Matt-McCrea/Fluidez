@@ -15,7 +15,14 @@
     "c:no-sirve",
     "c:que-tengo-que-hacer"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:arte",
+    "l:enfrentar",
+    "l:destinar",
+    "l:venta",
+    "l:recuperar",
+    "l:estrella"
+   ],
    "chapter": "ch066"
   },
   {
@@ -29,7 +36,11 @@
     "c:ahorita",
     "c:me-colabora"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:colaborar",
+    "l:ahorita",
+    "l:riesgo"
+   ]
   },
   {
    "type": "introduce",
@@ -37,7 +48,14 @@
     "g:indefinites"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:canción",
+    "l:probablemente",
+    "l:encima",
+    "l:prestar",
+    "l:detrás",
+    "l:mente"
+   ]
   },
   {
    "type": "drill",
@@ -46,20 +64,56 @@
     "g:que-vs-cual"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:encargar",
+    "l:recoger",
+    "l:enterarse"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:cajero",
+    "l:clave",
+    "l:retirar",
+    "l:consignar",
+    "l:factura",
+    "l:recibo",
+    "l:cédula",
+    "l:trámite",
+    "l:documento",
+    "l:formulario",
+    "l:fila",
+    "l:queja",
+    "l:reclamo",
+    "l:arreglar",
+    "l:reparar"
+   ],
    "chapter": "ch067"
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:técnico",
+    "l:dañado",
+    "l:señal",
+    "l:operador",
+    "l:enfermera",
+    "l:bombero",
+    "l:postal",
+    "l:identidad",
+    "l:ambulancia",
+    "l:socorro",
+    "l:comisaría",
+    "l:ejército",
+    "l:cometer",
+    "l:oro",
+    "l:muchacho"
+   ],
    "chapter": "ch068"
   },
   {
@@ -68,7 +122,14 @@
     "g:hace-que-desde"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:movimiento",
+    "l:soltar",
+    "l:necesidad",
+    "l:mitad",
+    "l:amenazar",
+    "l:caballero"
+   ],
    "chapter": "ch069"
   },
   {
@@ -79,7 +140,11 @@
     "x:hace-desde-hace"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:fuerza",
+    "l:merecer",
+    "l:interesante"
+   ]
   },
   {
    "type": "output",

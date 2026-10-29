@@ -14,7 +14,14 @@
     "c:es-lo-mismo",
     "c:me-quedo-con"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:travieso",
+    "l:obediente",
+    "l:portarse",
+    "l:pelear",
+    "l:chica",
+    "l:conseguir"
+   ],
    "chapter": "ch027"
   },
   {
@@ -26,7 +33,12 @@
    "chunks": [
     "c:cuando-era-nino"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:minuto",
+    "l:mantener",
+    "l:morir",
+    "l:policía"
+   ]
   },
   {
    "type": "introduce",
@@ -34,7 +46,14 @@
     "g:preterite-spelling-stem"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:dentro",
+    "l:tratarse",
+    "l:equipo",
+    "l:recibir",
+    "l:permitir",
+    "l:punto"
+   ]
   },
   {
    "type": "drill",
@@ -43,7 +62,12 @@
     "g:imperfect-habitual"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:pesar",
+    "l:enviar",
+    "l:importar",
+    "l:chico"
+   ]
   },
   {
    "type": "input",
@@ -53,7 +77,24 @@
     "p:dejar-de-inf"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:niñez",
+    "l:infancia",
+    "l:escuela",
+    "l:maestro",
+    "l:clase",
+    "l:recreo",
+    "l:juego",
+    "l:juguete",
+    "l:muñeca",
+    "l:pelota",
+    "l:uniforme",
+    "l:tarea",
+    "l:examen",
+    "l:nota",
+    "l:materia",
+    "l:bicicleta"
+   ],
    "chapter": "ch028"
   },
   {
@@ -62,7 +103,14 @@
     "g:comparatives"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:propio",
+    "l:lado",
+    "l:mostrar",
+    "l:derecho",
+    "l:resultar",
+    "l:sacar"
+   ],
    "chapter": "ch029"
   },
   {
@@ -77,7 +125,12 @@
     "c:en-cambio",
     "c:no-hay-comparacion"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:comparación",
+    "l:meter",
+    "l:amor",
+    "l:olvidar"
+   ]
   },
   {
    "type": "output",

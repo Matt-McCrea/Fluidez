@@ -15,7 +15,14 @@
     "c:sin-problema",
     "c:no-te-preocupes"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:fondo",
+    "l:peor",
+    "l:rey",
+    "l:voz",
+    "l:principal",
+    "l:restar"
+   ],
    "chapter": "ch059"
   },
   {
@@ -30,7 +37,11 @@
     "c:que-pena-molestarlo",
     "c:hagame-el-favor"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:molestar",
+    "l:abierto",
+    "l:alcanzar"
+   ]
   },
   {
    "type": "introduce",
@@ -38,7 +49,14 @@
     "g:subj-irregulars"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:construir",
+    "l:alrededor",
+    "l:crecer",
+    "l:sexo",
+    "l:abajo",
+    "l:realizar"
+   ]
   },
   {
    "type": "drill",
@@ -47,13 +65,33 @@
     "g:subj-wanting"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:genial",
+    "l:apostar",
+    "l:sentarse"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:ayuda",
+    "l:regla",
+    "l:norma",
+    "l:prohibir",
+    "l:socio",
+    "l:sociedad",
+    "l:trato",
+    "l:pareja",
+    "l:confiar",
+    "l:confianza",
+    "l:exigir",
+    "l:aconsejar",
+    "l:sugerir",
+    "l:responsabilidad",
+    "l:encargarse"
+   ],
    "chapter": "ch060"
   },
   {
@@ -62,7 +100,23 @@
     "p:te-importaria"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:amiga",
+    "l:casado",
+    "l:bebé",
+    "l:médica",
+    "l:soltero",
+    "l:separado",
+    "l:profesora",
+    "l:nieto",
+    "l:pariente",
+    "l:cocinero",
+    "l:sobrino",
+    "l:sobrina",
+    "l:taxista",
+    "l:nieta",
+    "l:suegra"
+   ],
    "chapter": "ch061"
   },
   {
@@ -71,7 +125,14 @@
     "g:negative-commands"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:desaparecer",
+    "l:sonar",
+    "l:gobierno",
+    "l:comprender",
+    "l:romper",
+    "l:sueño"
+   ],
    "chapter": "ch062"
   },
   {
@@ -81,7 +142,11 @@
     "g:subj-irregulars"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:guardar",
+    "l:cuenta#bill",
+    "l:preocuparse"
+   ]
   },
   {
    "type": "output",

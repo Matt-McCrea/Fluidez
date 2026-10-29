@@ -11,7 +11,13 @@
     "g:subj-opinion-negated"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:odio",
+    "l:hambre",
+    "l:sentimiento",
+    "l:presión",
+    "l:pegar"
+   ],
    "chapter": "ch083"
   },
   {
@@ -22,7 +28,11 @@
     "x:creo-no-creo"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:guiar",
+    "l:premio",
+    "l:votar"
+   ]
   },
   {
    "type": "input",
@@ -33,7 +43,22 @@
     "p:pensar-en"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:basura",
+    "l:contaminación",
+    "l:inseguridad",
+    "l:ladrón",
+    "l:robo",
+    "l:alcaldía",
+    "l:ciudadano",
+    "l:comunidad",
+    "l:proponer",
+    "l:solución",
+    "l:política",
+    "l:ministro",
+    "l:educación",
+    "l:guerra"
+   ],
    "chapter": "ch084"
   },
   {
@@ -42,7 +67,13 @@
     "g:subj-value"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:anunciar",
+    "l:sonido",
+    "l:adecuado",
+    "l:sujetar",
+    "l:piedra"
+   ],
    "chapter": "ch085"
   },
   {
@@ -53,7 +84,11 @@
     "x:fact-value"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:opinar",
+    "l:motor",
+    "l:divertir"
+   ]
   },
   {
    "type": "patterns",
@@ -76,7 +111,13 @@
     "g:lo-adjective"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:solicitar",
+    "l:solamente",
+    "l:demandar",
+    "l:jurar",
+    "l:esfuerzo"
+   ]
   },
   {
    "type": "drill",
@@ -85,7 +126,11 @@
     "g:subj-value"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:tribunal",
+    "l:alemán",
+    "l:pretender"
+   ],
    "scene": "sc-u28-b"
   },
   {

@@ -15,7 +15,14 @@
     "c:que-te-vaya-bien",
     "c:que-la-pases-bien"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:brindar",
+    "l:culpa",
+    "l:despertar",
+    "l:banco#bench",
+    "l:llenar",
+    "l:volar"
+   ],
    "chapter": "ch063"
   },
   {
@@ -30,7 +37,11 @@
     "c:sentido-pesame",
     "c:feliz-navidad"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:alegrarse",
+    "l:navidad",
+    "l:reunir"
+   ]
   },
   {
    "type": "introduce",
@@ -40,7 +51,14 @@
    "chunks": [
     "c:que-tengas-buen-dia"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:adelante",
+    "l:caerse",
+    "l:diferenciar",
+    "l:desarrollar",
+    "l:agradecer",
+    "l:área"
+   ]
   },
   {
    "type": "drill",
@@ -49,13 +67,33 @@
     "g:subj-wishes"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:felicitaciones",
+    "l:valor",
+    "l:bastar"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:celebrar",
+    "l:celebración",
+    "l:boda",
+    "l:matrimonio",
+    "l:bautizo",
+    "l:festivo",
+    "l:novena",
+    "l:velita",
+    "l:pésame",
+    "l:funeral",
+    "l:entierro",
+    "l:nacimiento",
+    "l:felicitar",
+    "l:vela",
+    "l:invitado"
+   ],
    "chapter": "ch064"
   },
   {
@@ -73,7 +111,14 @@
     "g:diminutives"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:raro",
+    "l:capaz",
+    "l:juez",
+    "l:coser",
+    "l:acompañar",
+    "l:revisar"
+   ],
    "chapter": "ch065"
   },
   {
@@ -84,7 +129,11 @@
     "x:se-three-ways"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:iniciar",
+    "l:libertad",
+    "l:mayoría"
+   ]
   },
   {
    "type": "output",

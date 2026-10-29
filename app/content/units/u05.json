@@ -15,7 +15,14 @@
     "c:hijo-unico",
     "c:como-es"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:único",
+    "l:hijo",
+    "l:novio",
+    "l:novia",
+    "l:alto",
+    "l:bajo"
+   ],
    "chapter": "ch009"
   },
   {
@@ -28,7 +35,12 @@
     "c:buena-gente",
     "c:si-soy-yo"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:gente",
+    "l:delgado",
+    "l:gordo",
+    "l:joven"
+   ]
   },
   {
    "type": "introduce",
@@ -36,7 +48,14 @@
     "g:adjective-agreement"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:viejo",
+    "l:pelo",
+    "l:ojo",
+    "l:rubio",
+    "l:moreno",
+    "l:simpático"
+   ]
   },
   {
    "type": "drill",
@@ -45,7 +64,12 @@
     "g:yo-irregular"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:razón",
+    "l:inteligente",
+    "l:divertido",
+    "l:serio"
+   ]
   },
   {
    "type": "input",
@@ -54,7 +78,24 @@
     "p:numbers-un-una"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:familia",
+    "l:padre",
+    "l:madre",
+    "l:papá",
+    "l:mamá",
+    "l:hermano",
+    "l:hermana",
+    "l:hija",
+    "l:abuelo",
+    "l:abuela",
+    "l:tío",
+    "l:tía",
+    "l:primo",
+    "l:prima",
+    "l:esposo",
+    "l:esposa"
+   ],
    "chapter": "ch010"
   },
   {
@@ -76,7 +117,14 @@
     "g:possessives"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:tímido",
+    "l:trabajador",
+    "l:perezoso",
+    "l:generoso",
+    "l:edad",
+    "l:quedar"
+   ],
    "chapter": "ch011"
   },
   {
@@ -90,7 +138,12 @@
     "p:de-owner"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:presentar",
+    "l:mayor",
+    "l:menor",
+    "l:quedar#fit"
+   ]
   },
   {
    "type": "output",

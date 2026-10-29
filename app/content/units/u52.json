@@ -19,7 +19,20 @@
     "c:con-pelos-y-senales",
     "c:por-un-pelo"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:narración",
+    "l:narrar",
+    "l:autobiografía",
+    "l:trama",
+    "l:escena",
+    "l:sesión",
+    "l:secundario",
+    "l:autor",
+    "l:ritmo",
+    "l:productor",
+    "l:festival",
+    "l:creación"
+   ],
    "chapter": "ch175"
   },
   {
@@ -41,7 +54,13 @@
    "chunks": [
     "c:manos-a-la-obra"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:humo",
+    "l:rata",
+    "l:exitoso",
+    "l:marca",
+    "l:mortal"
+   ],
    "chapter": "ch177"
   },
   {
@@ -53,13 +72,29 @@
    "chunks": [
     "c:y-yo-que-sabia"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:estallar",
+    "l:desencadenar"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:leyenda",
+    "l:crítico",
+    "l:tragedia",
+    "l:do",
+    "l:equilibrio",
+    "l:danza",
+    "l:representación",
+    "l:interpretación",
+    "l:retrato",
+    "l:secuencia",
+    "l:inspiración",
+    "l:vestuario"
+   ],
    "chapter": "ch178"
   },
   {
@@ -95,7 +130,13 @@
     "g:mood-choice-fine"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:asistencia",
+    "l:cabaña",
+    "l:tubo",
+    "l:confundir",
+    "l:secuestro"
+   ],
    "chapter": "ch179"
   },
   {
@@ -106,7 +147,10 @@
     "x:acabar-por-llegar-a"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:arma",
+    "l:convenir"
+   ]
   },
   {
    "type": "checkpoint",

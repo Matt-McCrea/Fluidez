@@ -15,7 +15,14 @@
     "c:esta-en-su-casa",
     "c:por-aca"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:casa",
+    "l:acá",
+    "l:lámpara",
+    "l:balcón",
+    "l:patio",
+    "l:arriendo"
+   ],
    "chapter": "ch015"
   },
   {
@@ -28,7 +35,12 @@
    "chunks": [
     "c:mas-o-menos"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:arrendar",
+    "l:vecino",
+    "l:droguería",
+    "l:parqueadero"
+   ]
   },
   {
    "type": "introduce",
@@ -36,7 +48,14 @@
     "g:demonstratives"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:portero",
+    "l:llave",
+    "l:mueble",
+    "l:siempre",
+    "l:mujer",
+    "l:mirar"
+   ]
   },
   {
    "type": "drill",
@@ -47,7 +66,12 @@
    "chunks": [
     "c:que-es-esto"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:ahí",
+    "l:cerca",
+    "l:allá",
+    "l:estado"
+   ]
   },
   {
    "type": "input",
@@ -55,7 +79,24 @@
     "p:ordinals-primer-tercer"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:apartamento",
+    "l:cuarto",
+    "l:habitación",
+    "l:sala",
+    "l:comedor",
+    "l:cocina",
+    "l:baño",
+    "l:ventana",
+    "l:puerta",
+    "l:piso",
+    "l:escalera",
+    "l:cama",
+    "l:sofá",
+    "l:armario",
+    "l:nevera",
+    "l:estufa"
+   ],
    "chapter": "ch016"
   },
   {
@@ -79,7 +120,14 @@
    "chunks": [
     "c:queda-cerquita"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:tratar",
+    "l:encontrarse",
+    "l:lugar",
+    "l:mundo",
+    "l:noche",
+    "l:momento"
+   ],
    "chapter": "ch017"
   },
   {
@@ -93,7 +141,12 @@
     "p:poco-un-poco"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:sentirse",
+    "l:hora",
+    "l:después",
+    "l:problema"
+   ]
   },
   {
    "type": "output",

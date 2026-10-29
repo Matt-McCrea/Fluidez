@@ -15,7 +15,14 @@
     "c:que-me-recomienda",
     "c:para-llevar"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:cuenta",
+    "l:recomendar",
+    "l:postre",
+    "l:torta",
+    "l:carta",
+    "l:menú"
+   ],
    "chapter": "ch024"
   },
   {
@@ -31,7 +38,12 @@
     "c:te-provoca",
     "c:cuanto-le-debo"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:rico",
+    "l:provocar",
+    "l:provecho",
+    "l:propina"
+   ]
   },
   {
    "type": "introduce",
@@ -41,7 +53,14 @@
    "chunks": [
     "c:a-ver"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:plato",
+    "l:vaso",
+    "l:taza",
+    "l:cuchara",
+    "l:tenedor",
+    "l:cuchillo"
+   ]
   },
   {
    "type": "drill",
@@ -51,7 +70,12 @@
     "x:pedir-preguntar"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:servir",
+    "l:delicioso",
+    "l:picante",
+    "l:dulce"
+   ]
   },
   {
    "type": "input",
@@ -59,7 +83,24 @@
     "p:nos-vemos-a-las"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:ajiaco",
+    "l:arepa",
+    "l:bandeja",
+    "l:empanada",
+    "l:sopa",
+    "l:arroz",
+    "l:fríjol",
+    "l:carne",
+    "l:pollo",
+    "l:pescado",
+    "l:huevo",
+    "l:queso",
+    "l:plátano",
+    "l:ensalada",
+    "l:limonada",
+    "l:aguapanela"
+   ],
    "chapter": "ch025"
   },
   {
@@ -81,7 +122,14 @@
     "g:direct-objects"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:salado",
+    "l:almojábana",
+    "l:buñuelo",
+    "l:pandebono",
+    "l:parecerse",
+    "l:grande"
+   ],
    "chapter": "ch026"
   },
   {
@@ -91,7 +139,12 @@
     "g:stem-e-i"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:importante",
+    "l:historia",
+    "l:mes",
+    "l:oír"
+   ]
   },
   {
    "type": "output",

@@ -15,7 +15,14 @@
     "c:ida-y-vuelta",
     "c:a-nombre-de"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:ida",
+    "l:necesario",
+    "l:dudar",
+    "l:vuelta",
+    "l:campo",
+    "l:salud"
+   ],
    "chapter": "ch048"
   },
   {
@@ -30,7 +37,11 @@
     "c:quieres-que-te-ayude",
     "c:ya-llegue"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:preparar",
+    "l:descubrir",
+    "l:andar"
+   ]
   },
   {
    "type": "introduce",
@@ -38,7 +49,14 @@
     "g:commands-with-pronouns"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:quizá",
+    "l:juntos",
+    "l:cumplir",
+    "l:firmar",
+    "l:completar",
+    "l:futuro"
+   ]
   },
   {
    "type": "drill",
@@ -47,13 +65,33 @@
     "g:por-para-1"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:continuar",
+    "l:apoyar",
+    "l:compañía"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:terminal",
+    "l:vuelo",
+    "l:aerolínea",
+    "l:tiquete",
+    "l:equipaje",
+    "l:pasaporte",
+    "l:hostal",
+    "l:reserva",
+    "l:reservar",
+    "l:recepción",
+    "l:carretera",
+    "l:regreso",
+    "l:salida",
+    "l:llegada",
+    "l:retraso"
+   ],
    "chapter": "ch049"
   },
   {
@@ -62,7 +100,23 @@
     "p:llevar-traer"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:escala",
+    "l:asiento",
+    "l:ventanilla",
+    "l:pasajero",
+    "l:peaje",
+    "l:destino",
+    "l:metro",
+    "l:tren",
+    "l:puerto",
+    "l:plano",
+    "l:publicidad",
+    "l:piloto",
+    "l:mecánico",
+    "l:rueda",
+    "l:excursión"
+   ],
    "chapter": "ch050"
   },
   {
@@ -71,7 +125,14 @@
     "g:possessives-stressed"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:oficial",
+    "l:siquiera",
+    "l:vestir",
+    "l:quitar",
+    "l:utilizar",
+    "l:carrera#street"
+   ],
    "chapter": "ch051"
   },
   {
@@ -82,7 +143,11 @@
     "x:mi-mio"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:enseñar",
+    "l:director",
+    "l:loco"
+   ]
   },
   {
    "type": "output",

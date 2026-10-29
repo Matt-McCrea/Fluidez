@@ -21,7 +21,20 @@
     "c:sin-lugar-a-dudas",
     "c:tarde-o-temprano"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:prevenir",
+    "l:ética",
+    "l:moral",
+    "l:progreso",
+    "l:filosofía",
+    "l:creencia",
+    "l:religión",
+    "l:sentido",
+    "l:objeto",
+    "l:espíritu",
+    "l:teoría",
+    "l:célula"
+   ],
    "chapter": "ch195"
   },
   {
@@ -41,7 +54,13 @@
     "g:concessive-advanced"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:esencial",
+    "l:embajador",
+    "l:etiqueta",
+    "l:enamorarse",
+    "l:delantero"
+   ],
    "chapter": "ch197"
   },
   {
@@ -52,7 +71,10 @@
     "x:parcial-vs-total"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:rasgo",
+    "l:cuadrado"
+   ]
   },
   {
    "type": "input",
@@ -64,7 +86,20 @@
     "p:se-entiende-por"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:oración",
+    "l:biológico",
+    "l:cálculo",
+    "l:paraíso",
+    "l:fórmula",
+    "l:oxígeno",
+    "l:ángulo",
+    "l:estadística",
+    "l:matemático",
+    "l:monitor",
+    "l:monja",
+    "l:cura"
+   ],
    "chapter": "ch198"
   },
   {
@@ -100,7 +135,13 @@
     "g:consecutive-advanced"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:contraseña",
+    "l:tejido",
+    "l:comportarse",
+    "l:corto",
+    "l:desesperado"
+   ],
    "chapter": "ch199"
   },
   {
@@ -112,7 +153,10 @@
     "x:vista-gorda-pasar-por-alto"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:promedio",
+    "l:agente"
+   ]
   },
   {
    "type": "checkpoint",

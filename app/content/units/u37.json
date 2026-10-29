@@ -15,7 +15,13 @@
     "c:me-explico",
     "c:por-cierto"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:igualmente",
+    "l:comisión",
+    "l:té",
+    "l:asistir",
+    "l:cero"
+   ],
    "chapter": "ch110"
   },
   {
@@ -32,7 +38,11 @@
     "c:numero-equivocado",
     "c:eso-seria-todo"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:fijar",
+    "l:guapo",
+    "l:claramente"
+   ]
   },
   {
    "type": "input",
@@ -43,7 +53,22 @@
     "c:fijese-que",
     "c:como-asi"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:buzón",
+    "l:conversación",
+    "l:tema",
+    "l:pausa",
+    "l:aclarar",
+    "l:cabina",
+    "l:foro",
+    "l:presentador",
+    "l:serie",
+    "l:prensa",
+    "l:agencia",
+    "l:capítulo",
+    "l:batería",
+    "l:episodio"
+   ],
    "chapter": "ch111"
   },
   {
@@ -52,7 +77,13 @@
     "g:reported-requests"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:bola",
+    "l:escritor",
+    "l:atraer",
+    "l:actuación",
+    "l:débil"
+   ],
    "chapter": "ch112"
   },
   {
@@ -63,7 +94,11 @@
     "x:decir-que-ind-subj"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:interrumpir",
+    "l:ingresar",
+    "l:encantador"
+   ]
   },
   {
    "type": "patterns",
@@ -86,7 +121,13 @@
     "g:indirect-questions"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:vigilancia",
+    "l:vacío",
+    "l:cirugía",
+    "l:población",
+    "l:aplicar"
+   ]
   },
   {
    "type": "drill",
@@ -96,7 +137,11 @@
     "p:por-casualidad"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:casualidad",
+    "l:alumno",
+    "l:adolescente"
+   ],
    "scene": "sc-u37-b"
   },
   {

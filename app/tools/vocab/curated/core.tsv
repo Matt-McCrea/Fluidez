@@ -1,0 +1,489 @@
+# Gloss overrides, Colombian senses, sense splits and drops. Format: see curated.ts.
+# A line here wins over the old deck, verbs.json and Wiktionary.
+# --- sense splits (the base id keeps the commonest sense; the tagger emits only the base id)
+pedir	v	to ask for
+pedir	v	to order (food, drinks)	sense=order
+tomar	v	to take
+tomar	v	to drink, to have (a drink)	sense=drink
+carrera	n:f	degree course; career; race
+carrera	n:f	carrera (Bogotá street running north–south)	sense=street
+quedar	v	to be (located); to be left
+quedar	v	to fit, to suit (clothes)	sense=fit
+cuenta	n:f	account
+cuenta	n:f	bill, check (restaurant)	sense=bill
+llevar	v	to carry, to take
+llevar	v	to wear	sense=wear
+tiempo	n:m	time
+tiempo	n:m	weather	sense=weather
+grado	n:m	degree (temperature, level)
+grado	n:m	graduation	sense=graduation
+banco	n:m	bank
+banco	n:m	bench	sense=bench
+# --- Colombian / LatAm senses the dictionaries list second
+plata	n:f	money (also silver)
+tienda	n:f	shop, corner store
+almacén	n:m	store, department store
+saco	n:m	sweater, jacket (Colombia)
+parcero	n:m	buddy, mate (Colombia)
+bacano	adj	great, cool (Colombia)
+chimba	adj	great (Colombia, very informal)	band=C1
+berraco	adj	tough, brilliant; furious (Colombia)	band=B2
+juicioso	adj	diligent, well-behaved
+pola	n:f	beer (Colombia, informal)
+aguapanela	n:f	aguapanela (hot cane-sugar drink)
+panela	n:f	panela (unrefined cane sugar)
+almojábana	n:f	almojábana (cheese bread roll)
+pandebono	n:m	pandebono (cheese bread)
+buñuelo	n:m	buñuelo (fried cheese ball)
+ajiaco	n:m	ajiaco (Bogotá chicken and potato soup)
+arepa	n:f	arepa (corn cake)
+bandeja	n:f	tray; bandeja paisa (Antioquian platter)
+empanada	n:f	empanada (turnover)
+natilla	n:f	natilla (Christmas custard)
+novena	n:f	novena (Christmas prayers, Dec 16–24)
+velita	n:f	little candle (Día de las Velitas, Dec 7)
+sumercé	pron	you (warm, Bogotá/Boyacá)	band=B2
+buseta	n:f	minibus
+transmilenio	n:m	TransMilenio (Bogotá's bus rapid transit)
+estrato	n:m	estrato (Colombian socioeconomic housing band)
+trasteo	n:m	house move	pen=mudanza
+paisa	n:mf	person from Antioquia; Antioquian
+costeño	adj	from the Caribbean coast
+rolo	adj	from Bogotá (informal)
+gomelo	adj	posh, preppy (Colombia)	pen=pijo
+guaro	n:m	aguardiente (Colombia, informal)
+aguardiente	n:m	aguardiente (anise liquor)
+vallenato	n:m	vallenato (music of the Caribbean coast)
+cumbia	n:f	cumbia (Colombian music and dance)
+bambuco	n:m	bambuco (Andean folk music)
+páramo	n:m	páramo (high Andean moorland)
+cafetal	n:m	coffee plantation
+finca	n:f	farm, country house
+droguería	n:f	pharmacy, drugstore
+festivo	n:m	public holiday (Colombia: puente festivo)
+tinto	n:m	black coffee (Colombia)
+gripa	n:f	flu, cold	pen=gripe
+consignar	v	to deposit (money)	pen=ingresar
+rebaja	n:f	discount, reduction
+pena	n:f	sorrow; ¡qué pena! = sorry / how embarrassing (Colombia)
+provocar	v	to cause; me provoca = I feel like (Colombia)
+demorado	adj	slow, late
+ojo	n:m	eye; ¡ojo! = watch out
+man	n:m	guy (Colombia, informal)	band=B1
+señal	n:f	signal, sign
+hoja	n:f	sheet (of paper); leaf
+cédula	n:f	ID card
+pasaje	n:m	fare; ticket
+boleta	n:f	ticket (event)
+fila	n:f	line, queue	pen=cola
+cola	n:f	tail; line, queue
+EPS	x		drop
+transmilenio	n:m	TransMilenio (Bogotá's bus rapid transit)
+# --- vulgar or crude: recognisable but never taught
+mierda	x		drop
+puta	x		drop
+puto	x		drop
+carajo	x		drop
+culo	x		drop
+cabrón	x		drop
+pene	x		drop
+perra	x		drop
+zorra	x		drop
+maldito	x		drop
+bastardo	x		drop
+jodido	x		drop
+imbécil	x		drop
+coger	x		drop
+mamar	x		drop
+huevón	x		drop
+marica	x		drop
+gonorrea	x		drop
+# --- pronominal verbs taught as their own lexemes (the tagger reads "me levanto" as levantarse)
+irse	v	to leave, to go away
+quedarse	v	to stay
+llamarse	v	to be called
+ponerse	v	to put on; to become
+volverse	v	to become; to turn around
+acordarse	v	to remember
+darse	v	to happen to; darse cuenta = to realise
+parecerse	v	to look like, to resemble
+fijarse	v	to notice, to pay attention
+tratarse	v	se trata de = it's about
+despedirse	v	to say goodbye
+enterarse	v	to find out
+quejarse	v	to complain
+atreverse	v	to dare
+equivocarse	v	to make a mistake, to be wrong
+negarse	v	to refuse
+convertirse	v	to become, to turn into
+preocuparse	v	to worry
+sentirse	v	to feel
+sentarse	v	to sit down
+casarse	v	to get married
+enamorarse	v	to fall in love
+reírse	v	to laugh
+caerse	v	to fall (over)
+romperse	v	to break
+morirse	v	to die
+encontrarse	v	to meet; to be (located)
+olvidarse	v	to forget
+imaginarse	v	to imagine
+dedicarse	v	to do for a living
+mudarse	v	to move (house)
+levantarse	v	to get up
+despertarse	v	to wake up
+acostarse	v	to go to bed
+vestirse	v	to get dressed
+bañarse	v	to take a bath, to shower
+ducharse	v	to take a shower
+cepillarse	v	to brush (teeth, hair)
+peinarse	v	to comb one's hair
+afeitarse	v	to shave
+maquillarse	v	to put on make-up
+probarse	v	to try on
+bajarse	v	to get off
+subirse	v	to get on
+encargarse	v	to take charge of
+emocionarse	v	to get excited, to be moved
+separarse	v	to separate
+disculparse	v	to apologise
+calmarse	v	to calm down
+arrepentirse	v	to regret
+reconciliarse	v	to make up, to reconcile
+pelearse	v	to fight, to fall out
+portarse	v	to behave
+divertirse	v	to have fun
+aburrirse	v	to get bored
+cansarse	v	to get tired
+acercarse	v	to come closer, to approach
+alejarse	v	to move away
+reunirse	v	to meet, to get together
+graduarse	v	to graduate
+jubilarse	v	to retire
+burlarse	v	to make fun of
+comportarse	v	to behave
+alegrarse	v	to be glad
+asustarse	v	to get scared
+dormirse	v	to fall asleep
+lavarse	v	to wash (oneself)
+llevarse	v	to take away; llevarse bien = to get on
+meterse	v	to get into; to meddle
+vacación	n:f	holidays, vacation	es=las_vacaciones
+felicitaciones	n:f	congratulations	es=las_felicitaciones
+oreja	n:f	ear
+alergia	n:f	allergy
+concejo	n:m	city council
+pódcast	n:m	podcast
+quórum	n:m	quorum
+folclor	n:m	folklore
+resultar	v	to turn out
+# --- gloss fixes (first review pass)
+cosa	n:f	thing
+tarde	n:f	afternoon; (adv.) late
+fin	n:m	end
+libra	n:f	pound (500 g)
+paseo	n:m	walk, outing
+mango	n:m	mango
+vuelta	n:f	turn; return; change (money)
+próximo	adj	next
+naranja	n:f	orange (fruit; colour)
+puesto	n:m	stall, stand; job, post
+ya	adv	already; now
+billete	n:m	banknote, bill
+solo	adj	alone; lonely
+antiguo	adj	old, ancient; former
+directo	adj	direct
+seguro	adj	sure; safe
+seguro	n:m	insurance	sense=insurance
+frente	n:m	front
+muñeca	n:f	doll; wrist
+travieso	adj	naughty, mischievous
+recreo	n:m	break, recess (school)
+listo	adj	ready; clever
+policía	n:f	police
+general	adj	general
+importar	v	to matter; to import
+control	n:m	control
+acción	n:f	action
+personal	adj	personal
+público	adj	public
+derecho	n:m	right (legal); law
+cuerpo	n:m	body
+estado	n:m	state
+diferente	adj	different
+importante	adj	important
+juguete	n:m	toy
+disco	n:m	record, disc
+orden	n:m	order (tidiness, sequence)
+orden	n:f	order (command)	sense=command
+el	det	the
+mañana	n:f	morning; (adv.) tomorrow
+pena	n:f	sorrow; ¡qué pena! = sorry, how embarrassing
+favor	n:m	favour; por favor = please
+cuenta	n:f	account; darse cuenta = to realise
+sueño	n:m	sleep; dream
+humano	adj	human
+mar	n:m	sea
+calor	n:m	heat
+azúcar	n:m	sugar
+wifi	n:m	wifi
+internet	n:m	internet
+estudiante	n:mf	student
+grupo	n:m	group
+carrera	n:f	degree course; career; race
+dulce	adj	sweet
+dulce	n:m	sweet, candy	sense=candy
+bandeja	n:f	tray; bandeja paisa (Antioquian platter)
+rico	adj	rich; tasty
+pasado	adj	past, last (pasado mañana, el año pasado)
+pasado	n:m	the past	sense=past
+existir	v	to exist
+partir	v	to leave; to split; a partir de = from
+acordar	v	to agree (on)
+formar	v	to form; to train
+crear	v	to create
+gafas	n:f	glasses	es=las_gafas
+padres	n:m	parents	es=los_padres
+# months and seasons (Colombia: verano = dry season, invierno = rainy season)
+enero	n:m	January
+febrero	n:m	February
+marzo	n:m	March
+abril	n:m	April
+mayo	n:m	May
+junio	n:m	June
+julio	n:m	July
+agosto	n:m	August
+septiembre	n:m	September
+octubre	n:m	October
+noviembre	n:m	November
+diciembre	n:m	December
+verano	n:m	summer; dry season (Colombia)
+invierno	n:m	winter; rainy season (Colombia)
+primavera	n:f	spring
+otoño	n:m	autumn, fall
+# crime-drama words the subtitle corpus over-ranks: no earlier than B1
+matar	v	to kill	band=B1
+arma	n:f	weapon	band=B1
+asesino	n:m	murderer	band=B1
+asesinar	v	to murder	band=B1
+disparar	v	to shoot	band=B1
+sangre	n:f	blood	band=A2
+cadáver	n:m	corpse	band=B2
+crimen	n:m	crime	band=B1
+detective	n:mf	detective	band=B1
+sargento	n:mf	sergeant	band=C1
+teniente	n:mf	lieutenant	band=C1
+capitán	n:m	captain	band=B1
+coronel	n:m	colonel	band=C1
+comandante	n:mf	commander	band=C1
+majestad	n:f	majesty	band=C1
+agente	n:mf	agent; officer	band=B1
+cárcel	n:f	prison, jail	band=B1
+prisión	n:f	prison	band=B2
+bala	n:f	bullet	band=B1
+pistola	n:f	gun, pistol	band=B1
+demonio	n:m	demon	band=B2
+diablo	n:m	devil	band=B1
+infierno	n:m	hell	band=B1
+maldición	n:f	curse	band=B2
+cielo	n:m	sky; heaven
+misión	n:f	mission	band=B1
+guerra	n:f	war	band=A2
+soldado	n:m	soldier	band=B1
+tropa	n:f	troops	band=B2
+señoría	n:f	(your) honour	band=C1
+# --- sensitive topics: not before B1/B2
+sexual	adj	sexual	band=B2
+violación	n:f	rape; violation	band=B2
+violar	v	to rape; to violate	band=B2
+terrorista	n:mf	terrorist	band=B2
+homicidio	n:m	homicide	band=B2
+droga	n:f	drug	band=B1
+arrestar	v	to arrest	band=B1
+armado	adj	armed	band=B1
+criminal	adj	criminal	band=B1
+prisionero	n:m	prisoner	band=B2
+ejecución	n:f	execution; performance	band=B2
+suicidio	n:m	suicide	band=B2
+cocaína	n:f	cocaine	band=C1
+violento	adj	violent	band=B1
+# --- deck words (Peninsular PCIC deck) in LatAm form
+tablero	n:m	board, whiteboard	pen=pizarra
+repisa	n:f	shelf	pen=estantería
+lavamanos	n:m	washbasin	pen=lavabo
+goma	n:f	rubber; glue
+bocadillo	n:m	guava paste (Colombia)
+pizarra	x		drop
+estantería	x		drop
+lavabo	x		drop
+dvd	x		drop
+fax	x		drop
+federal	adj	federal
+extra	adj	extra
+fresco	adj	fresh; cool
+precioso	adj	beautiful, lovely
+secundario	adj	secondary
+aventura	n:f	adventure
+código	n:m	code
+término	n:m	term; end
+tender	v	to hang out (washing); to tend to
+callar	v	to be quiet, to keep quiet
+soler	v	to usually (do)
+moreno	adj	dark-haired; dark-skinned
+brillante	adj	bright, brilliant
+universitario	adj	university, college
+electrónico	adj	electronic
+pizza	n:f	pizza
+sartén	n:f	frying pan
+don	n:m	Don (title for an older man)
+doña	n:f	Doña (title for an older woman)
+patrón	n:m	boss; pattern
+bajo	adj	short (height); low
+cuarto	n:m	room, bedroom; quarter
+medio	n:m	means; middle; (pl.) the media
+sobre	n:m	envelope	sense=envelope
+# --- gloss fixes (A2/B1 review)
+boca	n:f	mouth
+salsa	n:f	salsa (music, dance); sauce
+ganas	n:f	desire (tener ganas de = to feel like)	es=las_ganas
+justo	adj	fair; exactly
+dios	n:m	god
+escala	n:f	stopover; scale
+pronóstico	n:m	forecast
+rayo	n:m	lightning; ray
+regla	n:f	rule; ruler
+sociedad	n:f	society; company
+consejo	n:m	advice; council
+vela	n:f	candle
+antipático	adj	unpleasant
+banda	n:f	band; gang
+fecha	n:f	date
+fuente	n:f	source; fountain
+reseña	n:f	review
+comunidad	n:f	community
+técnico	n:mf	technician
+juez	n:mf	judge
+arte	n:m	art
+color	n:m	colour
+médico	n:m	doctor
+cuanto	det	as much as; en cuanto = as soon as
+abierto	adj	open
+raro	adj	strange, weird; rare
+estudio	n:m	study; studio
+conjunto	n:m	set; (Colombia) gated housing complex
+costumbre	n:f	custom, habit
+interior	n:m	interior, inside
+atentamente	adv	sincerely (closing a letter)
+peor	adj	worse
+entrada	n:f	entrance; ticket
+principio	n:m	beginning; principle
+papel	n:m	paper; role
+detener	v	to stop; to arrest
+ánimo	n:m	mood, spirits
+trato	n:m	deal; treatment
+asesinato	n:m	murder	band=B1
+conducir	v	to drive (formal; manejar is everyday)	band=B1
+memoria	n:f	memory
+argumento	n:m	argument; plot
+harto	adj	fed up
+comercial	adj	commercial
+celos	n:m	jealousy	es=los_celos
+urgencias	n:f	emergency room	es=las_urgencias
+matemáticas	n:f	maths	es=las_matemáticas
+recurso	n:m	resource
+fiador	n:m	guarantor (for a lease)
+guardia	n:mf	guard
+cifra	n:f	figure, number
+nave	n:f	ship, craft
+mina	n:f	mine
+culpable	adj	guilty
+jurado	n:m	jury
+coco	n:m	coconut
+palmera	n:f	palm tree
+caribe	adj	Caribbean
+íntimo	adj	close, intimate
+marcha	n:f	march; gear
+lengua	n:f	tongue; language
+responsable	adj	responsible
+periodista	n:mf	journalist
+colega	n:mf	colleague
+ilusión	n:f	hope, excitement; illusion
+instituto	n:m	institute
+receta	n:f	recipe; prescription
+trasero	n:m	bottom, backside	band=B2
+clara	x		drop
+mala	x		drop
+embargo	x		drop
+señorito	x		drop
+fechar	x		drop
+dado	x		drop
+correos	x		drop
+céntimo	x		drop
+euro	x		drop
+campin	x		drop
+casar	x		drop
+menudo	x		drop
+# --- gloss fixes (B2/C1 review)
+alternativa	n:f	alternative
+disposición	n:f	disposal; arrangement
+deportivo	adj	sports, sporty
+bienes	n:m	goods, property	es=los_bienes
+escolar	adj	school
+súper	n:m	supermarket
+centavo	n:m	cent
+disculpa	n:f	apology
+índice	n:m	index; rate
+cuerda	n:f	rope; string
+acta	n:f	minutes (of a meeting); certificate
+audiencia	n:f	hearing; audience
+pensión	n:f	pension; guesthouse
+afirmación	n:f	claim, statement
+transparencia	n:f	transparency
+lío	n:m	mess, trouble
+antelación	n:f	advance notice (con antelación = in advance)
+ataque	n:m	attack
+emocionante	adj	exciting
+primario	adj	primary
+rasgo	n:m	feature, trait
+giro	n:m	turn; money order
+vago	adj	lazy; vague
+hablador	adj	talkative
+artístico	adj	artistic
+comunista	n:mf	communist
+budista	n:mf	Buddhist
+labor	n:f	work, task
+diario	adj	daily
+recuperación	n:f	recovery
+escritura	n:f	writing; deed
+desencadenar	v	to trigger, to unleash
+dicho	n:m	saying
+sencillamente	adv	simply
+puesta	x		drop
+bordo	x		drop
+tenia	x		drop
+veras	x		drop
+am	x		drop
+pm	x		drop
+re	x		drop
+olas	x		drop
+muebles	x		drop
+callejero	x		drop
+manta	x		drop
+ayuntamiento	x		drop
+carné	x		drop
+encuesta	n:f	survey, poll
+comodidad	n:f	comfort
+dramático	adj	dramatic
+colonia	n:f	colony; cologne
+finanza	x		drop
+grasa	n:f	fat, grease
+latino	adj	Latin American
+accesorio	n:m	accessory
+alegar	v	to claim, to argue
+sereno	adj	calm, serene
+cuán	x		drop
+protagonista	n:mf	main character
+determinación	n:f	determination
+fe	n:f	faith
+té	n:m	tea
+juntos	adv	together

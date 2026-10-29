@@ -11,7 +11,13 @@
     "g:subj-relative"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:lengua",
+    "l:cabello",
+    "l:alerta",
+    "l:exterior",
+    "l:perseguir"
+   ],
    "chapter": "ch098"
   },
   {
@@ -24,7 +30,11 @@
     "p:recien-participio"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:recién",
+    "l:caber",
+    "l:sentado"
+   ]
   },
   {
    "type": "input",
@@ -37,7 +47,22 @@
     "p:posicion-precisa"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:local",
+    "l:requisito",
+    "l:condición",
+    "l:inmobiliaria",
+    "l:fiador",
+    "l:depósito",
+    "l:instalación",
+    "l:iluminado",
+    "l:ubicado",
+    "l:ubicación",
+    "l:sucio",
+    "l:techo",
+    "l:sombrero",
+    "l:propietario"
+   ],
    "chapter": "ch099"
   },
   {
@@ -46,7 +71,13 @@
     "g:relatives-prepositions"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:salón",
+    "l:hoja",
+    "l:locura",
+    "l:solucionar",
+    "l:curar"
+   ],
    "chapter": "ch100"
   },
   {
@@ -57,7 +88,11 @@
     "x:medir-caber"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:voluntad",
+    "l:rodar",
+    "l:puro"
+   ]
   },
   {
    "type": "patterns",
@@ -80,7 +115,13 @@
     "g:cada-cualquier"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:voto",
+    "l:adentro",
+    "l:apuntarse",
+    "l:herramienta",
+    "l:mezclar"
+   ]
   },
   {
    "type": "drill",
@@ -89,7 +130,11 @@
     "g:relatives-prepositions"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:delito",
+    "l:útil",
+    "l:acusado"
+   ],
    "scene": "sc-u33-b"
   },
   {

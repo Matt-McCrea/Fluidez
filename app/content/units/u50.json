@@ -15,7 +15,13 @@
     "c:no-me-da-la-gana",
     "c:no-puedo-mas"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:palo",
+    "l:asesor",
+    "l:maravilla",
+    "l:escalar",
+    "l:columna"
+   ],
    "chapter": "ch165"
   },
   {
@@ -30,7 +36,11 @@
     "c:animo-ya-falta-poco",
     "c:te-entiendo-perfectamente"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:perfectamente",
+    "l:desgracia",
+    "l:ira"
+   ]
   },
   {
    "type": "input",
@@ -48,7 +58,21 @@
     "c:a-mi-me-pasa-lo-mismo",
     "c:hablando-se-entiende-la-gente"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:conflicto",
+    "l:pelea",
+    "l:negociación",
+    "l:ceder",
+    "l:disculpa",
+    "l:límite",
+    "l:ofender",
+    "l:reproche",
+    "l:reprochar",
+    "l:malentendido",
+    "l:resolver",
+    "l:calmarse",
+    "l:miembro"
+   ],
    "chapter": "ch166"
   },
   {
@@ -57,7 +81,13 @@
     "g:subj-future-in-past"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:ingeniería",
+    "l:mascota",
+    "l:visitante",
+    "l:venganza",
+    "l:burlar"
+   ],
    "chapter": "ch167"
   },
   {
@@ -67,7 +97,11 @@
     "g:subj-free-relatives"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:repartir",
+    "l:participación",
+    "l:pesadilla"
+   ]
   },
   {
    "type": "patterns",
@@ -104,7 +138,13 @@
     "g:que-wishes-commands"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:crecimiento",
+    "l:rescate",
+    "l:hielo",
+    "l:interesado",
+    "l:actriz"
+   ],
    "chapter": "ch169"
   },
   {
@@ -117,7 +157,11 @@
     "x:siento-que-vs-siento-no-haber"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:grito",
+    "l:fan",
+    "l:proporcionar"
+   ],
    "scene": "sc-u50-b"
   },
   {

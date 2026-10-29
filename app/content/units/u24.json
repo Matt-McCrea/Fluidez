@@ -15,7 +15,14 @@
     "c:por-un-lado",
     "c:no-me-convence"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:convencer",
+    "l:dormirse",
+    "l:perdonar",
+    "l:maravilloso",
+    "l:hogar",
+    "l:cubrir"
+   ],
    "chapter": "ch070"
   },
   {
@@ -29,7 +36,11 @@
     "c:la-idea-es",
     "c:que-va"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:común",
+    "l:soñar",
+    "l:soportar"
+   ]
   },
   {
    "type": "introduce",
@@ -37,7 +48,14 @@
     "g:aunque-indicative"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:éxito",
+    "l:dato",
+    "l:placer",
+    "l:iglesia",
+    "l:marcharse",
+    "l:lanzar"
+   ]
   },
   {
    "type": "drill",
@@ -48,13 +66,33 @@
    "chunks": [
     "c:igual"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:destruir",
+    "l:parir",
+    "l:especie"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:mudarse",
+    "l:trasteo",
+    "l:ruido",
+    "l:ruidoso",
+    "l:peligroso",
+    "l:ventaja",
+    "l:desventaja",
+    "l:amplio",
+    "l:luminoso",
+    "l:estrato",
+    "l:conjunto",
+    "l:administración",
+    "l:transporte",
+    "l:escoger",
+    "l:comparar"
+   ],
    "chapter": "ch071"
   },
   {
@@ -73,7 +111,14 @@
     "g:tanto-como"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:acto",
+    "l:alma",
+    "l:enfermedad",
+    "l:oído",
+    "l:avanzar",
+    "l:cenar"
+   ],
    "chapter": "ch072"
   },
   {
@@ -84,7 +129,11 @@
     "x:tan-tanto"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:negar",
+    "l:ciencia",
+    "l:cabo"
+   ]
   },
   {
    "type": "output",

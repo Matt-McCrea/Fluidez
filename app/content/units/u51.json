@@ -15,7 +15,13 @@
     "c:que-rollo-spain",
     "c:anda-spain"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:rollo",
+    "l:servidor",
+    "l:acostumbrar",
+    "l:pozo",
+    "l:dibujar"
+   ],
    "chapter": "ch170"
   },
   {
@@ -27,13 +33,31 @@
    "chunks": [
     "c:echar-de-menos-spain"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:ciertamente",
+    "l:librar",
+    "l:obedecer"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:acento",
+    "l:variedad",
+    "l:dialecto",
+    "l:expresión",
+    "l:diferencia",
+    "l:semejanza",
+    "l:cultura",
+    "l:hispanohablante",
+    "l:marinero",
+    "l:carril",
+    "l:recepcionista",
+    "l:barca",
+    "l:tranvía"
+   ],
    "chapter": "ch171"
   },
   {
@@ -42,7 +66,13 @@
     "g:spain-pasts"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:man",
+    "l:capa",
+    "l:hierba",
+    "l:galleta",
+    "l:revisión"
+   ],
    "chapter": "ch172"
   },
   {
@@ -52,7 +82,11 @@
     "g:vosotros-recognition"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:proceder",
+    "l:adaptar",
+    "l:relajarse"
+   ]
   },
   {
    "type": "patterns",
@@ -81,7 +115,13 @@
     "g:se-form-recognition"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:marchar",
+    "l:cómoda",
+    "l:miel",
+    "l:satisfecho",
+    "l:rama"
+   ],
    "chapter": "ch174"
   },
   {
@@ -91,7 +131,11 @@
     "g:spain-pasts"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:huésped",
+    "l:rastro",
+    "l:asustarse"
+   ],
    "scene": "sc-u51-b"
   },
   {

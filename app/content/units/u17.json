@@ -15,7 +15,14 @@
     "c:me-encantaria",
     "c:sera-otro-dia"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:obtener",
+    "l:real",
+    "l:considerar",
+    "l:línea",
+    "l:frente",
+    "l:morirse"
+   ],
    "chapter": "ch045"
   },
   {
@@ -30,7 +37,11 @@
     "c:me-avisas",
     "c:dale"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:avisar",
+    "l:atención",
+    "l:asunto"
+   ]
   },
   {
    "type": "introduce",
@@ -38,7 +49,14 @@
     "g:prep-infinitive"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:elegir",
+    "l:entregar",
+    "l:interesar",
+    "l:hermoso",
+    "l:suerte",
+    "l:decisión"
+   ]
   },
   {
    "type": "drill",
@@ -47,7 +65,11 @@
     "g:si-present"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:invitar",
+    "l:durar",
+    "l:investigación"
+   ]
   },
   {
    "type": "input",
@@ -56,7 +78,23 @@
     "p:entonces-quedamos"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:invitación",
+    "l:concierto",
+    "l:gol",
+    "l:estadio",
+    "l:salsa",
+    "l:rumba",
+    "l:discoteca",
+    "l:entrada",
+    "l:boleta",
+    "l:función",
+    "l:cita",
+    "l:puntual",
+    "l:cancelar",
+    "l:rechazar",
+    "l:ganas"
+   ],
    "chapter": "ch046"
   },
   {
@@ -78,7 +116,14 @@
     "g:cuando-indicative"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:situación",
+    "l:padres",
+    "l:referir",
+    "l:dólar",
+    "l:respuesta",
+    "l:acción"
+   ],
    "chapter": "ch047"
   },
   {
@@ -89,7 +134,11 @@
     "x:ser-event-estar-location"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:perfecto",
+    "l:niña",
+    "l:marcar"
+   ]
   },
   {
    "type": "output",

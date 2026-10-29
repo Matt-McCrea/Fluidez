@@ -15,7 +15,14 @@
     "c:quedo-atento",
     "c:gracias-de-antemano"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:saludar",
+    "l:atento",
+    "l:cordial",
+    "l:citar",
+    "l:agradable",
+    "l:herir"
+   ],
    "chapter": "ch080"
   },
   {
@@ -30,7 +37,11 @@
     "c:lo-recomiendo",
     "c:que-bueno-que"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:adjuntar",
+    "l:atentamente",
+    "l:científico"
+   ]
   },
   {
    "type": "introduce",
@@ -42,7 +53,14 @@
     "c:que-descanses",
     "c:que-te-diviertas"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:copa",
+    "l:comprobar",
+    "l:bello",
+    "l:juntarse",
+    "l:gratis",
+    "l:pararse"
+   ]
   },
   {
    "type": "drill",
@@ -52,13 +70,33 @@
     "x:para-inf-que"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:mundial",
+    "l:hallar",
+    "l:permanecer"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:saludo",
+    "l:despedida",
+    "l:reseña",
+    "l:comentario",
+    "l:opinión",
+    "l:aviso",
+    "l:seguidor",
+    "l:página",
+    "l:enlace",
+    "l:usuario",
+    "l:calificar",
+    "l:guión",
+    "l:sello",
+    "l:quiosco",
+    "l:arroba"
+   ],
    "chapter": "ch081"
   },
   {
@@ -77,7 +115,14 @@
     "g:subj-emotion-intro"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:fiscal",
+    "l:revista",
+    "l:esconder",
+    "l:recurso",
+    "l:periódico",
+    "l:golpe"
+   ],
    "chapter": "ch082"
   },
   {
@@ -87,7 +132,11 @@
     "g:para-que"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:sostener",
+    "l:alcalde",
+    "l:pista"
+   ]
   },
   {
    "type": "output",

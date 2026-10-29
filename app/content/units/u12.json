@@ -15,7 +15,14 @@
     "c:y-que-paso",
     "c:en-serio"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:repente",
+    "l:clima",
+    "l:cumpleaños",
+    "l:regalo",
+    "l:cuento",
+    "l:cortar"
+   ],
    "chapter": "ch030"
   },
   {
@@ -31,7 +38,12 @@
     "c:menos-mal",
     "c:al-final"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:final",
+    "l:realmente",
+    "l:palabra",
+    "l:comenzar"
+   ]
   },
   {
    "type": "introduce",
@@ -39,7 +51,14 @@
     "g:imperfect-progressive"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:abrir",
+    "l:funcionar",
+    "l:acercar",
+    "l:muerto",
+    "l:servicio",
+    "l:diferente"
+   ]
   },
   {
    "type": "drill",
@@ -48,13 +67,35 @@
     "g:pret-vs-imperfect"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:frío",
+    "l:cabeza",
+    "l:rápido",
+    "l:oportunidad"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:ocurrir",
+    "l:suceder",
+    "l:sorpresa",
+    "l:sorprendido",
+    "l:asustado",
+    "l:feliz",
+    "l:triste",
+    "l:enojado",
+    "l:preocupado",
+    "l:emocionado",
+    "l:lluvia",
+    "l:llover",
+    "l:sol",
+    "l:nube",
+    "l:calor",
+    "l:tormenta"
+   ],
    "chapter": "ch031"
   },
   {
@@ -72,7 +113,14 @@
     "g:that-clauses"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:además",
+    "l:convertir",
+    "l:desear",
+    "l:posible",
+    "l:realidad",
+    "l:tocar"
+   ],
    "chapter": "ch032"
   },
   {
@@ -82,7 +130,12 @@
     "g:imperfect-progressive"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:información",
+    "l:seguridad",
+    "l:regresar",
+    "l:temer"
+   ]
   },
   {
    "type": "output",

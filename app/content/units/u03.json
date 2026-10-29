@@ -15,7 +15,14 @@
     "c:me-da-igual",
     "c:de-una"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:dar",
+    "l:igual",
+    "l:chévere",
+    "l:cocinar",
+    "l:nadar",
+    "l:deporte"
+   ],
    "chapter": "ch005"
   },
   {
@@ -30,7 +37,12 @@
     "c:que-te-gusta-hacer",
     "c:hasta-el-lunes"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:lunes",
+    "l:libro",
+    "l:fiesta",
+    "l:plan"
+   ]
   },
   {
    "type": "introduce",
@@ -38,7 +50,14 @@
     "g:stem-boot"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:salir",
+    "l:comida",
+    "l:bebida",
+    "l:cerveza",
+    "l:chocolate",
+    "l:fruta"
+   ]
   },
   {
    "type": "drill",
@@ -47,7 +66,12 @@
     "g:gustar-basic"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:tipo",
+    "l:jugar",
+    "l:preferir",
+    "l:pizza"
+   ]
   },
   {
    "type": "input",
@@ -58,7 +82,24 @@
     "p:days-el-lunes"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:fin",
+    "l:semana",
+    "l:martes",
+    "l:miércoles",
+    "l:jueves",
+    "l:viernes",
+    "l:sábado",
+    "l:domingo",
+    "l:cine",
+    "l:película",
+    "l:música",
+    "l:fútbol",
+    "l:partido",
+    "l:bailar",
+    "l:cantar",
+    "l:caminar"
+   ],
    "chapter": "ch006"
   },
   {
@@ -67,7 +108,14 @@
     "g:ir-a-plans"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:helado",
+    "l:vez",
+    "l:pasar",
+    "l:ahora",
+    "l:dejar",
+    "l:año"
+   ]
   },
   {
    "type": "drill",
@@ -77,7 +125,12 @@
     "p:ir-a-venir-de-place"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:venir",
+    "l:encontrar",
+    "l:sentir",
+    "l:casarse"
+   ]
   },
   {
    "type": "output",

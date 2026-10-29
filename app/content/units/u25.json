@@ -15,7 +15,14 @@
     "c:buen-clima",
     "c:pan-de-dios"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:dios",
+    "l:dulce#candy",
+    "l:líder",
+    "l:marido",
+    "l:juicio",
+    "l:diario"
+   ],
    "chapter": "ch073"
   },
   {
@@ -28,7 +35,11 @@
     "c:dizque",
     "c:queda-a-una-hora"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:diseñar",
+    "l:cerrado",
+    "l:fuente"
+   ]
   },
   {
    "type": "introduce",
@@ -36,7 +47,14 @@
     "g:adverbs-mente"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:saltar",
+    "l:duro",
+    "l:mentir",
+    "l:relacionar",
+    "l:pelearse",
+    "l:contener"
+   ]
   },
   {
    "type": "drill",
@@ -45,13 +63,33 @@
     "g:le-doubling"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:pertenecer",
+    "l:alejar",
+    "l:extraño"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:valle",
+    "l:lago",
+    "l:naturaleza",
+    "l:cerro",
+    "l:colina",
+    "l:cultivo",
+    "l:cable",
+    "l:paisa",
+    "l:carácter",
+    "l:orgulloso",
+    "l:tradición",
+    "l:costumbre",
+    "l:feria",
+    "l:vaca",
+    "l:oso"
+   ],
    "chapter": "ch074"
   },
   {
@@ -60,7 +98,23 @@
     "p:de-los-ojos-azules"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:primavera",
+    "l:ratón",
+    "l:nieve",
+    "l:otoño",
+    "l:cuñada",
+    "l:interior",
+    "l:planeta",
+    "l:bosque",
+    "l:región",
+    "l:desierto",
+    "l:habitante",
+    "l:margarita",
+    "l:divorcio",
+    "l:oveja",
+    "l:mosca"
+   ],
    "chapter": "ch075"
   },
   {
@@ -69,7 +123,14 @@
     "g:reported-past-basic"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:propósito",
+    "l:llorar",
+    "l:peligro",
+    "l:gritar",
+    "l:búsqueda",
+    "l:golpear"
+   ],
    "chapter": "ch076"
   },
   {
@@ -81,7 +142,11 @@
    "chunks": [
     "c:me-conto-que"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:caso",
+    "l:cantidad",
+    "l:grado#graduation"
+   ]
   },
   {
    "type": "output",

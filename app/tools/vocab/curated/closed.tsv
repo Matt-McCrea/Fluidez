@@ -1,0 +1,220 @@
+# Closed-class words (tracked, never carded): learner glosses.
+el	det	the
+un	det	a, an; (pl.) some
+de	prep	of, from
+a	prep	to, at
+en	prep	in, on, at
+con	prep	with
+por	prep	for, by, through, because of
+para	prep	for, in order to
+sin	prep	without
+hasta	prep	until; up to; even
+desde	prep	from, since
+entre	prep	between, among
+sobre	prep	on, about
+bajo	prep	under	sense=prep
+ante	prep	before, in the face of
+contra	prep	against
+durante	prep	during
+hacia	prep	towards
+según	prep	according to
+tras	prep	after
+mediante	prep	by means of
+excepto	prep	except
+salvo	prep	except
+incluso	adv	even; including
+y	conj	and
+o	conj	or
+pero	conj	but
+sino	conj	but rather
+que	conj	that; than
+porque	conj	because
+aunque	conj	although, even if
+si	conj	if, whether
+cuando	conj	when
+mientras	conj	while
+como	conj	like, as; since
+pues	conj	well; so
+ni	conj	nor, not even
+yo	pron	I
+tú	pron	you (informal)
+usted	pron	you (formal)
+él	pron	he; it
+ella	pron	she; it
+nosotros	pron	we
+ellos	pron	they
+ustedes	pron	you (plural)
+vosotros	pron	you (plural, Spain)
+vos	pron	you (voseo)
+me	pron	me, to me, myself
+te	pron	you, to you, yourself
+se	pron	himself, herself, themselves; (impersonal) one
+nos	pron	us, to us, ourselves
+os	pron	you, to you (plural, Spain)
+lo	pron	him, it; (lo + adj.) the … thing
+le	pron	to him, to her, to you (formal)
+les	pron	to them, to you (plural)
+mí	pron	me (after a preposition)
+ti	pron	you (after a preposition)
+conmigo	pron	with me
+contigo	pron	with you
+consigo	pron	with himself, with herself
+mi	det	my
+tu	det	your
+su	det	his, her, its, their, your (formal)
+nuestro	det	our
+vuestro	det	your (plural, Spain)
+mío	det	mine
+tuyo	det	yours
+suyo	det	his, hers, theirs, yours
+este	det	this
+ese	det	that
+aquel	det	that (over there)
+esto	pron	this (thing)
+eso	pron	that (thing)
+aquello	pron	that (thing, over there)
+qué	pron	what; how (¡qué…!)
+quién	pron	who
+cuál	pron	which, what
+cómo	pron	how
+dónde	pron	where
+adónde	pron	where (to)
+cuándo	pron	when
+cuánto	pron	how much, how many
+quien	pron	who (relative)
+donde	pron	where (relative)
+adonde	pron	where (to, relative)
+cual	pron	which (el cual)
+cuyo	pron	whose
+algo	pron	something
+alguien	pron	somebody
+nada	pron	nothing
+nadie	pron	nobody
+todo	det	all, every; everything
+mucho	det	a lot of, much, many
+poco	det	little, few
+otro	det	other, another
+mismo	det	same; -self
+cada	det	each, every
+alguno	det	some, any
+ninguno	det	no, none
+varios	det	several
+tanto	det	so much, so many
+demasiado	det	too much, too many
+bastante	det	quite, enough
+cierto	det	certain, a certain
+tal	det	such
+cualquiera	det	any, anyone
+ambos	det	both
+medio	det	half	sense=half
+no	adv	no, not
+sí	adv	yes
+nunca	adv	never
+jamás	adv	never (ever)
+tampoco	adv	not either, neither
+así	adv	like this, like that
+tan	adv	so, as
+ahí	adv	there
+aquí	adv	here
+allí	adv	there
+allá	adv	over there
+acá	adv	here, over here
+arriba	adv	up, upstairs
+abajo	adv	down, downstairs
+adentro	adv	inside
+afuera	adv	outside
+dentro	adv	inside
+fuera	adv	outside, out
+encima	adv	on top
+debajo	adv	underneath
+delante	adv	in front
+detrás	adv	behind
+enfrente	adv	opposite, across
+adelante	adv	forward, ahead
+atrás	adv	back, behind
+anoche	adv	last night
+recién	adv	just, recently
+aun	adv	even
+acaso	adv	perhaps; by any chance
+deprisa	adv	quickly
+realmente	adv	really
+seguramente	adv	surely, probably
+uno	num	one
+dos	num	two
+tres	num	three
+cuatro	num	four
+cinco	num	five
+seis	num	six
+siete	num	seven
+ocho	num	eight
+nueve	num	nine
+diez	num	ten
+once	num	eleven
+doce	num	twelve
+trece	num	thirteen
+catorce	num	fourteen
+quince	num	fifteen
+dieciséis	num	sixteen
+diecisiete	num	seventeen
+dieciocho	num	eighteen
+diecinueve	num	nineteen
+veinte	num	twenty
+veintiuno	num	twenty-one
+veintidós	num	twenty-two
+veintitrés	num	twenty-three
+veinticuatro	num	twenty-four
+veinticinco	num	twenty-five
+veintiséis	num	twenty-six
+veintisiete	num	twenty-seven
+veintiocho	num	twenty-eight
+veintinueve	num	twenty-nine
+treinta	num	thirty
+cuarenta	num	forty
+cincuenta	num	fifty
+sesenta	num	sixty
+setenta	num	seventy
+ochenta	num	eighty
+noventa	num	ninety
+cien	num	a hundred
+doscientos	num	two hundred
+trescientos	num	three hundred
+quinientos	num	five hundred
+mil	num	a thousand
+millón	num	million
+primero	num	first
+segundo	num	second
+tercero	num	third
+cuarto	num	fourth	sense=num
+quinto	num	fifth
+último	num	last
+hola	interj	hello, hi
+adiós	interj	goodbye
+chao	interj	bye
+gracias	interj	thank you
+ojalá	interj	I hope, if only
+ay	interj	oh!, ouch!
+ah	interj	ah, oh
+oh	interj	oh
+eh	interj	hey; eh?
+caramba	interj	wow, goodness
+amén	interj	amen
+ser	verb	to be (who or what)
+estar	verb	to be (where or how)
+haber	verb	there is / are (hay); to have (done)
+ir	verb	to go
+gustar	verb	to like (me gusta = I like)
+f	x		drop
+fu	x		drop
+jo	x		drop
+po	x		drop
+uh	x		drop
+wow	x		drop
+constructor	x		drop
+quinta	x		drop
+u	x		drop
+e	x		drop
+ciento	x		drop
+buena	x		drop
+buen	x		drop
+gran	x		drop
+huevos	x		drop

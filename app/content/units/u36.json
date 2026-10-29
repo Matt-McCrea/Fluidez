@@ -13,7 +13,13 @@
    "chunks": [
     "c:bien-hecho"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:anillo",
+    "l:negarse",
+    "l:fumar",
+    "l:ruso",
+    "l:cesar"
+   ],
    "chapter": "ch107"
   },
   {
@@ -23,7 +29,11 @@
     "g:deber-modal"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:poseer",
+    "l:actual",
+    "l:terreno"
+   ]
   },
   {
    "type": "input",
@@ -32,7 +42,22 @@
     "p:mas-de-lo-que"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:economía",
+    "l:ahorro",
+    "l:tasa",
+    "l:interés",
+    "l:cifra",
+    "l:porcentaje",
+    "l:aumento",
+    "l:compra",
+    "l:comercio",
+    "l:industria",
+    "l:inflación",
+    "l:cerdo",
+    "l:cheque",
+    "l:cordero"
+   ],
    "chapter": "ch108"
   },
   {
@@ -41,7 +66,13 @@
     "g:comparatives-advanced"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:roto",
+    "l:hecho",
+    "l:pasear",
+    "l:entrenador",
+    "l:piscina"
+   ],
    "chapter": "ch109"
   },
   {
@@ -52,7 +83,11 @@
     "x:mas-que-mas-de-lo-que"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:sospechoso",
+    "l:letra",
+    "l:frontera"
+   ]
   },
   {
    "type": "patterns",
@@ -75,7 +110,13 @@
     "g:consequence-connectors"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:complicado",
+    "l:porqué",
+    "l:representante",
+    "l:poderoso",
+    "l:alejarse"
+   ]
   },
   {
    "type": "drill",
@@ -84,7 +125,11 @@
     "g:comparatives-advanced"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:campeón",
+    "l:bloquear",
+    "l:aguantar"
+   ],
    "scene": "sc-u36-b"
   },
   {

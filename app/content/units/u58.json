@@ -15,7 +15,13 @@
     "c:dar-un-giro-de-180",
     "c:frio-que-cala-los-huesos"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:bruto",
+    "l:diamante",
+    "l:giro",
+    "l:rumbo",
+    "l:marcha"
+   ],
    "chapter": "ch205"
   },
   {
@@ -36,7 +42,10 @@
     "c:a-la-vuelta-de-la-esquina",
     "c:de-un-momento-a-otro"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:fruto",
+    "l:simple"
+   ]
   },
   {
    "type": "input",
@@ -53,7 +62,20 @@
    "chunks": [
     "c:a-simple-vista"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:reventar",
+    "l:roble",
+    "l:relieve",
+    "l:cordillera",
+    "l:glaciar",
+    "l:volcán",
+    "l:llanura",
+    "l:erosión",
+    "l:transformación",
+    "l:sequía",
+    "l:densidad",
+    "l:violencia"
+   ],
    "chapter": "ch206"
   },
   {
@@ -62,7 +84,13 @@
     "g:agreement-tricky"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:torcer",
+    "l:sufrimiento",
+    "l:perdedor",
+    "l:dificultad",
+    "l:arco"
+   ],
    "chapter": "ch207"
   },
   {
@@ -72,7 +100,10 @@
     "g:temporal-advanced"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:resto",
+    "l:inclinar"
+   ]
   },
   {
    "type": "patterns",
@@ -109,7 +140,13 @@
     "g:ser-estar-c1"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:conde",
+    "l:aliviar",
+    "l:torneo",
+    "l:multar",
+    "l:parado"
+   ],
    "chapter": "ch209"
   },
   {
@@ -119,7 +156,10 @@
     "g:agreement-tricky"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:bloque",
+    "l:sede"
+   ],
    "scene": "sc-u58-b"
   },
   {

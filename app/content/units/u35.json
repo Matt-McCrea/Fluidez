@@ -14,7 +14,13 @@
     "c:ni-se-te-ocurra",
     "c:hacer-fila"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:ahorrar",
+    "l:comportamiento",
+    "l:camioneta",
+    "l:propuesta",
+    "l:obviamente"
+   ],
    "chapter": "ch104"
   },
   {
@@ -24,7 +30,11 @@
     "g:subj-perfect"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:moda",
+    "l:corriente",
+    "l:enamorado"
+   ]
   },
   {
    "type": "input",
@@ -33,7 +43,22 @@
     "p:permitir-inf"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:consultorio",
+    "l:urgencias",
+    "l:paciente",
+    "l:síntoma",
+    "l:alergia",
+    "l:infección",
+    "l:pastilla",
+    "l:medicamento",
+    "l:receta",
+    "l:jarabe",
+    "l:dieta",
+    "l:saludable",
+    "l:vacuna",
+    "l:medicina"
+   ],
    "chapter": "ch105"
   },
   {
@@ -42,7 +67,13 @@
     "g:impersonal-obligation"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:pregunta",
+    "l:valorar",
+    "l:sumar",
+    "l:cinta",
+    "l:asustar"
+   ],
    "chapter": "ch106"
   },
   {
@@ -53,7 +84,11 @@
     "x:permitir-inf-que"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:altura",
+    "l:paquete",
+    "l:conferencia"
+   ]
   },
   {
    "type": "patterns",
@@ -76,7 +111,13 @@
     "g:deber-modal"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:grabar",
+    "l:vista",
+    "l:gobernador",
+    "l:jurado",
+    "l:encender"
+   ]
   },
   {
    "type": "drill",
@@ -86,7 +127,11 @@
     "x:tener-que-deber"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:sangre",
+    "l:arrancar",
+    "l:precisar"
+   ],
    "scene": "sc-u35-b"
   },
   {

@@ -15,7 +15,13 @@
     "c:pedir-un-domicilio",
     "c:cuando-quieras"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:domicilio",
+    "l:apropiado",
+    "l:sabor",
+    "l:taller",
+    "l:combustible"
+   ],
    "chapter": "ch125"
   },
   {
@@ -30,7 +36,11 @@
     "c:que-sea-la-ultima-vez",
     "c:no-se-como-agradecertelo"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:remedio",
+    "l:comunicar",
+    "l:sincero"
+   ]
   },
   {
    "type": "input",
@@ -50,7 +60,21 @@
     "c:permitame-un-momento",
     "c:para-serte-sincero"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:cortesía",
+    "l:amabilidad",
+    "l:respeto",
+    "l:formal",
+    "l:informal",
+    "l:doña",
+    "l:rogar",
+    "l:educado",
+    "l:grosero",
+    "l:laboratorio",
+    "l:informe",
+    "l:beca",
+    "l:casco"
+   ],
    "chapter": "ch126"
   },
   {
@@ -87,7 +111,13 @@
     "g:softening"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:fábrica",
+    "l:enfocar",
+    "l:dedicarse",
+    "l:enterrar",
+    "l:pastel"
+   ],
    "chapter": "ch128"
   },
   {
@@ -98,7 +128,11 @@
     "x:no-hace-falta-vs-prohibido"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:sonreír",
+    "l:británico",
+    "l:encargado"
+   ]
   },
   {
    "type": "input",
@@ -108,7 +142,21 @@
     "p:amable-de-su-parte"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:ayudante",
+    "l:sindicato",
+    "l:demanda",
+    "l:ascenso",
+    "l:huelga",
+    "l:sustituto",
+    "l:desempleo",
+    "l:bufete",
+    "l:disponibilidad",
+    "l:entrevistado",
+    "l:despido",
+    "l:renuncia",
+    "l:entrevistador"
+   ],
    "chapter": "ch129"
   },
   {

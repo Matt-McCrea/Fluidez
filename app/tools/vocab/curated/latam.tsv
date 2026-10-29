@@ -1,0 +1,165 @@
+# LatAm (Colombian / neutral) words taught, with the Peninsular word Spain uses
+# instead (pen=, accepted in answers, never taught). Format: see curated.ts.
+# The Peninsular lemma itself is dropped from the inventory (drop lines below).
+carro	n:m	car	pen=coche
+celular	n:m	cell phone	pen=móvil
+computadora	n:f	computer	pen=ordenador
+jugo	n:m	juice	pen=zumo
+manejar	v	to drive	pen=conducir
+apartamento	n:m	apartment	pen=piso
+papa	n:f	potato	pen=patata
+durazno	n:m	peach	pen=melocotón
+fríjol	n:m	bean	pen=judía
+arveja	n:f	pea	pen=guisante
+maní	n:m	peanut	pen=cacahuete
+torta	n:f	cake	pen=tarta
+nevera	n:f	fridge	pen=frigorífico
+mesero	n:m	waiter	pen=camarero
+plomero	n:m	plumber	pen=fontanero
+tiquete	n:m	ticket (travel)	pen=billete
+boleta	n:f	ticket (event)	pen=entrada
+parqueadero	n:m	car park, parking lot	pen=aparcamiento
+parquear	v	to park	pen=aparcar
+bus	n:m	bus	pen=autobús
+trancón	n:m	traffic jam	pen=atasco
+andén	n:m	sidewalk, pavement	pen=acera
+baúl	n:m	trunk (of a car)	pen=maletero
+suéter	n:m	sweater	pen=jersey
+sudadera	n:f	tracksuit, sweatpants	pen=chándal
+tenis	n:m	sneakers; tennis	pen=zapatillas
+chaqueta	n:f	jacket	pen=cazadora
+trapeador	n:m	mop	pen=fregona
+curita	n:f	adhesive bandage, Band-Aid	pen=tirita
+fósforo	n:m	match (for fire)	pen=cerilla
+encendedor	n:m	lighter	pen=mechero
+esfero	n:m	pen (ballpoint)	pen=bolígrafo
+impermeable	n:m	raincoat	pen=chubasquero
+chévere	adj	great, cool	pen=guay
+bravo	adj	angry	pen=enfadado
+enojarse	v	to get angry	pen=enfadarse
+enojado	adj	angry	pen=enfadado
+chisme	n:m	piece of gossip	pen=cotilleo
+chismoso	adj	gossipy, nosy	pen=cotilla
+extrañar	v	to miss (someone)	pen=echar_de_menos
+tarea	n:f	homework; task	pen=deberes
+reprobar	v	to fail (an exam)	pen=suspender
+desempleo	n:m	unemployment	pen=paro
+desempleado	adj	unemployed	pen=parado
+arriendo	n:m	rent	pen=alquiler
+arrendar	v	to rent	pen=alquilar
+cobija	n:f	blanket	pen=manta
+media	n:f	sock	pen=calcetín
+demorarse	v	to take (time), to be late	pen=tardar
+ahorita	adv	right now; in a bit	pen=ahora_mismo
+pararse	v	to stand up	pen=ponerse_de_pie
+cédula	n:f	ID card	pen=DNI
+arete	n:m	earring	pen=pendiente
+billetera	n:f	wallet	pen=cartera
+cartera	n:f	handbag	pen=bolso
+parlante	n:m	speaker (audio)	pen=altavoz
+borrador	n:m	eraser; draft	pen=goma
+tajalápiz	n:m	pencil sharpener	pen=sacapuntas
+crespo	adj	curly (hair)	pen=rizado
+gaseosa	n:f	soda, soft drink	pen=refresco
+pitillo	n:m	drinking straw	pen=pajita
+pasabocas	n:m	snack, appetizer	pen=aperitivo
+prender	v	to turn on	pen=encender
+botar	v	to throw away	pen=tirar
+alistarse	v	to get ready	pen=prepararse
+agarrar	v	to grab, to take	pen=coger
+lindo	adj	pretty, lovely	pen=mono
+plata	n:f	money (also silver)	pen=pasta
+estufa	n:f	stove, cooker	pen=cocina
+pasaje	n:m	fare; ticket	pen=billete
+manejo	n:m	handling; driving	pen=conducción
+licencia	n:f	licence, permit	pen=carné
+vestido_de_baño	n:m	swimsuit	pen=bañador
+bluyín	n:m	jeans	pen=vaqueros
+mono	adj	blond (Colombia)	sense=blond
+saco	n:m	sweater, jacket (Colombia)	pen=jersey
+camión	n:m	truck
+cuadra	n:f	block (of a street)	pen=manzana
+camioneta	n:f	SUV, pickup	pen=furgoneta
+guayabo	n:m	hangover	pen=resaca
+rumba	n:f	party, night out	pen=marcha
+regalar	v	to give (as a gift); ¿me regala…? = can I have…?
+voltear	v	to turn (around)	pen=girar
+afiche	n:m	poster	pen=cartel
+aviso	n:m	notice; ad, sign	pen=anuncio
+computador	n:m	computer (Colombian)	pen=ordenador	band=A2
+lapicero	n:m	pen	pen=bolígrafo
+jean	n:m	jeans	pen=vaqueros
+banano	n:m	banana	pen=plátano
+plátano	n:m	plantain	pen=plátano_macho
+mazorca	n:f	corncob
+aguacate	n:m	avocado
+almuerzo	n:m	lunch	pen=comida
+almorzar	v	to have lunch	pen=comer
+onces	n:f	afternoon snack	pen=merienda
+hoja	n:f	sheet (of paper); leaf	pen=folio
+droguería	n:f	pharmacy, drugstore	pen=farmacia
+tinto	n:m	black coffee (Colombia)	pen=café_solo
+taxista	n:mf	taxi driver
+plomería	n:f	plumbing	pen=fontanería
+# Peninsular-only (or vulgar in LatAm) lemmas never taught as lexemes
+coche	x		drop
+móvil	x		drop
+ordenador	x		drop
+zumo	x		drop
+patata	x		drop
+melocotón	x		drop
+guisante	x		drop
+cacahuete	x		drop
+tarta	x		drop
+frigorífico	x		drop
+camarero	x		drop
+fontanero	x		drop
+aparcamiento	x		drop
+aparcar	x		drop
+autobús	x		drop
+atasco	x		drop
+acera	x		drop
+maletero	x		drop
+jersey	x		drop
+chándal	x		drop
+cazadora	x		drop
+fregona	x		drop
+tirita	x		drop
+cerilla	x		drop
+mechero	x		drop
+bolígrafo	x		drop
+chubasquero	x		drop
+guay	x		drop
+enfadar	x		drop
+enfadado	x		drop
+cotilleo	x		drop
+cotilla	x		drop
+cotillear	x		drop
+calcetín	x		drop
+vale	x		drop
+coger	x		drop
+currar	x		drop
+curro	x		drop
+majo	x		drop
+mola	x		drop
+molar	x		drop
+chaval	x		drop
+gilipollas	x		drop
+joder	x		drop
+hostia	x		drop
+coño	x		drop
+mogollón	x		drop
+flipar	x		drop
+cabrear	x		drop
+cabreado	x		drop
+pijo	x		drop
+bañador	x		drop
+grifo	x		drop
+folio	x		drop
+gamba	x		drop
+pimiento	x		drop
+apetecer	x		drop
+fregar	x		drop
+vaqueros	x		drop
+sacapuntas	x		drop
+pajita	x		drop

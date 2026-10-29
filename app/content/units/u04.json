@@ -15,7 +15,14 @@
     "c:a-como-esta",
     "c:me-hace-una-rebajita"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:mango",
+    "l:fresa",
+    "l:naranja",
+    "l:aguacate",
+    "l:mazorca",
+    "l:flor"
+   ],
    "chapter": "ch007"
   },
   {
@@ -28,7 +35,12 @@
     "c:algo-mas",
     "c:aqui-tiene"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:puesto",
+    "l:vendedor",
+    "l:cambio",
+    "l:billete"
+   ]
   },
   {
    "type": "introduce",
@@ -36,7 +48,14 @@
     "g:preterite-er-ir"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:moneda",
+    "l:esperar",
+    "l:mejor",
+    "l:nuevo",
+    "l:tiempo",
+    "l:tiempo#weather"
+   ]
   },
   {
    "type": "drill",
@@ -45,7 +64,12 @@
     "g:preterite-ar"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:pasado",
+    "l:darse",
+    "l:pensar",
+    "l:llevar"
+   ]
   },
   {
    "type": "input",
@@ -56,7 +80,24 @@
     "p:estar-a-price"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:mercado",
+    "l:plaza",
+    "l:vender",
+    "l:precio",
+    "l:plata",
+    "l:peso",
+    "l:barato",
+    "l:caro",
+    "l:bolsa",
+    "l:kilo",
+    "l:libra",
+    "l:verdura",
+    "l:papa",
+    "l:tomate",
+    "l:cebolla",
+    "l:banano"
+   ],
    "chapter": "ch008"
   },
   {
@@ -65,7 +106,14 @@
     "g:preterite-ser-ir-hacer"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:llevar#wear",
+    "l:vida",
+    "l:hombre",
+    "l:necesitar",
+    "l:partir",
+    "l:tomar"
+   ]
   },
   {
    "type": "drill",
@@ -76,7 +124,12 @@
    "chunks": [
     "c:como-te-fue"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:tomar#drink",
+    "l:conocer",
+    "l:contar",
+    "l:seguir"
+   ]
   },
   {
    "type": "output",

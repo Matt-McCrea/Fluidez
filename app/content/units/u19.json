@@ -15,7 +15,14 @@
     "c:de-parte-de-quien",
     "c:con-el-ella"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:parte",
+    "l:renunciar",
+    "l:contratar",
+    "l:despedir",
+    "l:aparecer",
+    "l:meterse"
+   ],
    "chapter": "ch052"
   },
   {
@@ -30,7 +37,11 @@
     "c:le-dejo-razon",
     "c:un-momentico"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:víctima",
+    "l:cámara",
+    "l:bonito"
+   ]
   },
   {
    "type": "introduce",
@@ -38,7 +49,14 @@
     "g:relatives-donde-lo-que"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:cuidar",
+    "l:olvidarse",
+    "l:nivel",
+    "l:tirar",
+    "l:principio",
+    "l:atrás"
+   ]
   },
   {
    "type": "drill",
@@ -47,13 +65,33 @@
     "g:se-impersonal"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:llamada",
+    "l:departamento",
+    "l:correcto"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:empleo",
+    "l:oferta",
+    "l:anuncio",
+    "l:entrevista",
+    "l:sueldo",
+    "l:salario",
+    "l:contrato",
+    "l:empleado",
+    "l:cargo",
+    "l:curso",
+    "l:título",
+    "l:habilidad",
+    "l:capacidad",
+    "l:computación",
+    "l:turno"
+   ],
    "chapter": "ch053"
   },
   {
@@ -71,7 +109,14 @@
     "g:article-uses"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:atacar",
+    "l:consejo",
+    "l:error",
+    "l:robar",
+    "l:nombrar",
+    "l:proteger"
+   ],
    "chapter": "ch054"
   },
   {
@@ -81,7 +126,11 @@
     "g:relatives-donde-lo-que"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:papel",
+    "l:espacio",
+    "l:aire"
+   ]
   },
   {
    "type": "output",

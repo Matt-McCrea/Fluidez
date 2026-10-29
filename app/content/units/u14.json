@@ -15,7 +15,14 @@
     "c:ademas",
     "c:o-sea"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:ejemplo",
+    "l:texto",
+    "l:preocupar",
+    "l:público",
+    "l:especial",
+    "l:difícil"
+   ],
    "chapter": "ch036"
   },
   {
@@ -31,7 +38,12 @@
     "c:querido-querida",
     "c:un-abrazo"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:abrazo",
+    "l:faltar",
+    "l:asegurar",
+    "l:lograr"
+   ]
   },
   {
    "type": "introduce",
@@ -39,7 +51,14 @@
     "g:cause-result"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:negocio",
+    "l:incluso",
+    "l:caer",
+    "l:largo",
+    "l:unir",
+    "l:sitio"
+   ]
   },
   {
    "type": "drill",
@@ -48,7 +67,12 @@
     "g:relative-que"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:parar",
+    "l:presidente",
+    "l:luz",
+    "l:suficiente"
+   ]
   },
   {
    "type": "input",
@@ -56,7 +80,24 @@
     "p:para-inf-purpose"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:mensaje",
+    "l:celular",
+    "l:contestar",
+    "l:chat",
+    "l:audio",
+    "l:pantalla",
+    "l:aplicación",
+    "l:internet",
+    "l:red",
+    "l:mandar",
+    "l:compartir",
+    "l:detalle",
+    "l:describir",
+    "l:explicar",
+    "l:responder",
+    "l:noticia"
+   ],
    "chapter": "ch037"
   },
   {
@@ -65,7 +106,14 @@
     "g:prep-pronouns"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:corazón",
+    "l:paz",
+    "l:correr",
+    "l:cuidado",
+    "l:relación",
+    "l:teléfono"
+   ],
    "chapter": "ch038"
   },
   {
@@ -77,7 +125,12 @@
     "x:para-porque"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:mover",
+    "l:existir",
+    "l:siguiente",
+    "l:fuerte"
+   ]
   },
   {
    "type": "output",

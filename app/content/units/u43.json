@@ -15,7 +15,13 @@
     "c:ni-modo",
     "c:que-le-vamos-a-hacer"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:tesoro",
+    "l:aceite",
+    "l:temporal",
+    "l:azúcar",
+    "l:disposición"
+   ],
    "chapter": "ch130"
   },
   {
@@ -29,7 +35,11 @@
     "c:eso-espero",
     "c:hacer-todo-lo-posible"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:prever",
+    "l:lástima",
+    "l:decepcionar"
+   ]
   },
   {
    "type": "input",
@@ -43,7 +53,21 @@
     "p:arrepentirse-de"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:opción",
+    "l:alternativa",
+    "l:resultado",
+    "l:pensión",
+    "l:túnel",
+    "l:cinturón",
+    "l:helicóptero",
+    "l:capitán",
+    "l:autopista",
+    "l:viajero",
+    "l:globo",
+    "l:cazador",
+    "l:circulación"
+   ],
    "chapter": "ch131"
   },
   {
@@ -52,7 +76,13 @@
     "g:conditional-perfect"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:bienvenido",
+    "l:ignorar",
+    "l:sabio",
+    "l:feo",
+    "l:deportivo"
+   ],
    "chapter": "ch132"
   },
   {
@@ -62,7 +92,11 @@
     "g:pluperfect-subj"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:fácilmente",
+    "l:agarrar",
+    "l:derrotar"
+   ]
   },
   {
    "type": "patterns",
@@ -99,7 +133,13 @@
     "g:si-past-unreal"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:bienes",
+    "l:conformar",
+    "l:quieto",
+    "l:profundo",
+    "l:juzgado"
+   ],
    "chapter": "ch134"
   },
   {
@@ -117,7 +157,11 @@
     "x:deberias-vs-deberias-haber"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:anciano",
+    "l:adivinar",
+    "l:punta"
+   ],
    "scene": "sc-u43-b"
   },
   {

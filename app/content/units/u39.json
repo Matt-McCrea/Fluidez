@@ -14,7 +14,13 @@
     "c:sabian-que",
     "c:gracias-por-su-atencion"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:doctorarse",
+    "l:fantasma",
+    "l:bolsillo",
+    "l:estupendo",
+    "l:judío"
+   ],
    "chapter": "ch116"
   },
   {
@@ -24,7 +30,11 @@
     "g:concession-despite"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:solicitud",
+    "l:trasladar",
+    "l:afirmar"
+   ]
   },
   {
    "type": "input",
@@ -32,7 +42,22 @@
     "p:dificil-de-inf"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:ensayo",
+    "l:párrafo",
+    "l:introducción",
+    "l:conclusión",
+    "l:estructura",
+    "l:presentación",
+    "l:exponer",
+    "l:resumen",
+    "l:resumir",
+    "l:investigar",
+    "l:estudio",
+    "l:programa",
+    "l:certificado",
+    "l:academia"
+   ],
    "chapter": "ch117"
   },
   {
@@ -41,7 +66,13 @@
     "g:discourse-structure"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:picar",
+    "l:lectura",
+    "l:perfil",
+    "l:abrazar",
+    "l:gerente"
+   ],
    "chapter": "ch118"
   },
   {
@@ -52,7 +83,11 @@
     "x:dificil-de-es-dificil"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:plazo",
+    "l:presionar",
+    "l:fracasar"
+   ]
   },
   {
    "type": "patterns",
@@ -75,7 +110,13 @@
     "g:referring-back"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:amistad",
+    "l:agregar",
+    "l:facultad",
+    "l:encerrar",
+    "l:lección"
+   ]
   },
   {
    "type": "drill",
@@ -84,7 +125,11 @@
     "g:discourse-structure"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:impresionante",
+    "l:roca",
+    "l:gasolina"
+   ],
    "scene": "sc-u39-b"
   },
   {

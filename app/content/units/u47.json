@@ -15,7 +15,13 @@
     "c:tienes-un-minutico",
     "c:ya-me-imagino"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:bravo",
+    "l:sacerdote",
+    "l:constante",
+    "l:agujero",
+    "l:agradar"
+   ],
    "chapter": "ch150"
   },
   {
@@ -28,7 +34,11 @@
     "c:quedarse-de-piedra",
     "c:me-haces-mucha-falta"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:precisamente",
+    "l:genio",
+    "l:manzana"
+   ]
   },
   {
    "type": "input",
@@ -43,7 +53,21 @@
     "p:como-para"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:pódcast",
+    "l:entrevistar",
+    "l:narrador",
+    "l:relato",
+    "l:grabación",
+    "l:micrófono",
+    "l:oyente",
+    "l:énfasis",
+    "l:subrayar",
+    "l:original",
+    "l:imaginación",
+    "l:bailarín",
+    "l:artístico"
+   ],
    "chapter": "ch151"
   },
   {
@@ -52,7 +76,13 @@
     "g:topic-fronting"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:espacial",
+    "l:atar",
+    "l:basar",
+    "l:cantante",
+    "l:pata"
+   ],
    "chapter": "ch152"
   },
   {
@@ -63,7 +93,11 @@
     "x:tan-que-como-para"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:nocturno",
+    "l:evaluación",
+    "l:escritorio"
+   ]
   },
   {
    "type": "patterns",
@@ -100,7 +134,13 @@
     "g:lo-que-intensity"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:exposición",
+    "l:acero",
+    "l:joya",
+    "l:borracho",
+    "l:emitir"
+   ],
    "chapter": "ch154"
   },
   {
@@ -111,7 +151,11 @@
     "p:intensificadores"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:bandera",
+    "l:razonable",
+    "l:súper"
+   ],
    "scene": "sc-u47-b"
   },
   {

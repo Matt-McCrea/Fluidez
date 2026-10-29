@@ -15,7 +15,14 @@
     "c:con-permiso",
     "c:me-deja-en"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:permiso",
+    "l:doblar",
+    "l:bajarse",
+    "l:subirse",
+    "l:pasaje",
+    "l:tarjeta"
+   ],
    "chapter": "ch033"
   },
   {
@@ -28,7 +35,12 @@
     "c:ojo",
     "c:oye-mira"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:trancón",
+    "l:tráfico",
+    "l:conductor",
+    "l:manejar"
+   ]
   },
   {
    "type": "introduce",
@@ -36,7 +48,14 @@
     "g:commands-usted"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:lejos",
+    "l:dirección",
+    "l:mapa",
+    "l:humano",
+    "l:cuerpo",
+    "l:muerte"
+   ]
   },
   {
    "type": "drill",
@@ -49,7 +68,12 @@
    "chunks": [
     "c:siga-siga"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:subir",
+    "l:bajar",
+    "l:sistema",
+    "l:tierra"
+   ]
   },
   {
    "type": "input",
@@ -57,7 +81,24 @@
     "p:street-names"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:bus",
+    "l:buseta",
+    "l:taxi",
+    "l:estación",
+    "l:parada",
+    "l:ruta",
+    "l:transmilenio",
+    "l:carro",
+    "l:moto",
+    "l:carrera",
+    "l:avenida",
+    "l:semáforo",
+    "l:andén",
+    "l:derecha",
+    "l:izquierda",
+    "l:cruzar"
+   ],
    "chapter": "ch034"
   },
   {
@@ -81,7 +122,14 @@
    "chunks": [
     "c:cuanto-se-demora"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:demora",
+    "l:grupo",
+    "l:sentar",
+    "l:beber",
+    "l:general",
+    "l:orden#command"
+   ],
    "chapter": "ch035"
   },
   {
@@ -93,7 +141,12 @@
     "p:preguntar-pedir"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:amar",
+    "l:ley",
+    "l:decidir",
+    "l:próximo"
+   ]
   },
   {
    "type": "output",

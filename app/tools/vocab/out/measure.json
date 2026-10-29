@@ -1,0 +1,426 @@
+{
+ "coverage": {
+  "A1": {
+   "cum": 1050,
+   "all": {
+    "sub": 81.64701600000005,
+    "web": 67.858932
+   },
+   "taught": {
+    "sub": 25.611509999999978,
+    "web": 15.219072000000002
+   },
+   "taughtCount": 654,
+   "taughtClosed": {
+    "sub": 80.496548,
+    "web": 66.01890699999997
+   }
+  },
+  "A2": {
+   "cum": 2000,
+   "all": {
+    "sub": 87.82154200000018,
+    "web": 75.978239
+   },
+   "taught": {
+    "sub": 30.91189899999998,
+    "web": 22.090326000000015
+   },
+   "taughtCount": 1275,
+   "taughtClosed": {
+    "sub": 86.03848000000008,
+    "web": 73.04136399999997
+   }
+  },
+  "B1": {
+   "cum": 3150,
+   "all": {
+    "sub": 90.94705400000028,
+    "web": 84.52473999999995
+   },
+   "taught": {
+    "sub": 33.20039399999995,
+    "web": 26.333835999999994
+   },
+   "taughtCount": 1807,
+   "taughtClosed": {
+    "sub": 88.21344900000005,
+    "web": 77.10334700000001
+   }
+  },
+  "B2": {
+   "cum": 3700,
+   "all": {
+    "sub": 92.34288200000017,
+    "web": 87.13739599999991
+   },
+   "taught": {
+    "sub": 34.276279,
+    "web": 28.59436000000002
+   },
+   "taughtCount": 2187,
+   "taughtClosed": {
+    "sub": 89.39793999999998,
+    "web": 79.36784699999997
+   }
+  },
+  "C1": {
+   "cum": 4550,
+   "all": {
+    "sub": 93.43272700000026,
+    "web": 89.67012599999991
+   },
+   "taught": {
+    "sub": 34.88623799999996,
+    "web": 30.01461300000001
+   },
+   "taughtCount": 2519,
+   "taughtClosed": {
+    "sub": 90.01598000000006,
+    "web": 80.78856299999998
+   }
+  }
+ },
+ "topN": {
+  "1000": {
+   "sub": 85.01175900000003,
+   "web": 77.95016500000006
+  },
+  "2000": {
+   "sub": 90.18399500000005,
+   "web": 86.14034699999992
+  },
+  "3000": {
+   "sub": 92.41048600000002,
+   "web": 90.37964299999999
+  },
+  "5000": {
+   "sub": 94.72741000000019,
+   "web": 94.21331299999979
+  }
+ },
+ "tagger": {
+  "sentences": 14729,
+  "before": {
+   "tokens": 196787,
+   "unknown": 2636,
+   "lowSentences": 1742,
+   "top": [
+    [
+     "genuinamente",
+     25
+    ],
+    [
+     "documentado",
+     20
+    ],
+    [
+     "genuina",
+     19
+    ],
+    [
+     "genuino",
+     18
+    ],
+    [
+     "incomodidad",
+     17
+    ],
+    [
+     "plataformas",
+     17
+    ],
+    [
+     "plataforma",
+     15
+    ],
+    [
+     "hallazgo",
+     14
+    ],
+    [
+     "voluntad",
+     13
+    ],
+    [
+     "formulario",
+     12
+    ],
+    [
+     "organizadores",
+     11
+    ],
+    [
+     "ambiental",
+     11
+    ],
+    [
+     "glaciar",
+     11
+    ],
+    [
+     "aerolínea",
+     10
+    ],
+    [
+     "asimetría",
+     10
+    ],
+    [
+     "exigente",
+     9
+    ],
+    [
+     "adaptarse",
+     9
+    ],
+    [
+     "nostalgia",
+     9
+    ],
+    [
+     "replicar",
+     9
+    ],
+    [
+     "confundir",
+     8
+    ],
+    [
+     "inquietante",
+     8
+    ],
+    [
+     "trimestre",
+     8
+    ],
+    [
+     "alegando",
+     8
+    ],
+    [
+     "terapeuta",
+     8
+    ],
+    [
+     "rellenar",
+     8
+    ]
+   ]
+  },
+  "asGate": {
+   "tokens": 196787,
+   "unknown": 2493,
+   "lowSentences": 1682,
+   "top": [
+    [
+     "genuinamente",
+     25
+    ],
+    [
+     "documentado",
+     20
+    ],
+    [
+     "genuina",
+     19
+    ],
+    [
+     "genuino",
+     18
+    ],
+    [
+     "incomodidad",
+     17
+    ],
+    [
+     "plataformas",
+     17
+    ],
+    [
+     "plataforma",
+     15
+    ],
+    [
+     "hallazgo",
+     14
+    ],
+    [
+     "voluntad",
+     13
+    ],
+    [
+     "formulario",
+     12
+    ],
+    [
+     "organizadores",
+     11
+    ],
+    [
+     "glaciar",
+     11
+    ],
+    [
+     "aerolínea",
+     10
+    ],
+    [
+     "asimetría",
+     10
+    ],
+    [
+     "adaptarse",
+     9
+    ],
+    [
+     "nostalgia",
+     9
+    ],
+    [
+     "replicar",
+     9
+    ],
+    [
+     "inquietante",
+     8
+    ],
+    [
+     "trimestre",
+     8
+    ],
+    [
+     "alegando",
+     8
+    ],
+    [
+     "terapeuta",
+     8
+    ],
+    [
+     "donación",
+     8
+    ],
+    [
+     "incentivos",
+     8
+    ],
+    [
+     "rigor",
+     7
+    ],
+    [
+     "analistas",
+     7
+    ]
+   ]
+  },
+  "byId": {
+   "tokens": 196787,
+   "unknown": 2183,
+   "lowSentences": 1522,
+   "top": [
+    [
+     "genuinamente",
+     25
+    ],
+    [
+     "documentado",
+     20
+    ],
+    [
+     "genuina",
+     19
+    ],
+    [
+     "genuino",
+     18
+    ],
+    [
+     "incomodidad",
+     17
+    ],
+    [
+     "hallazgo",
+     14
+    ],
+    [
+     "organizadores",
+     11
+    ],
+    [
+     "asimetría",
+     10
+    ],
+    [
+     "adaptarse",
+     9
+    ],
+    [
+     "replicar",
+     9
+    ],
+    [
+     "inquietante",
+     8
+    ],
+    [
+     "trimestre",
+     8
+    ],
+    [
+     "alegando",
+     8
+    ],
+    [
+     "incentivos",
+     8
+    ],
+    [
+     "rigor",
+     7
+    ],
+    [
+     "inmunitario",
+     7
+    ],
+    [
+     "documentada",
+     7
+    ],
+    [
+     "productividad",
+     6
+    ],
+    [
+     "comparable",
+     6
+    ],
+    [
+     "clínico",
+     6
+    ],
+    [
+     "neutral",
+     6
+    ],
+    [
+     "verificable",
+     6
+    ],
+    [
+     "software",
+     5
+    ],
+    [
+     "concentra",
+     5
+    ],
+    [
+     "medible",
+     5
+    ]
+   ]
+  }
+ }
+}

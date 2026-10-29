@@ -15,7 +15,14 @@
     "c:supongo-que",
     "c:a-lo-mejor"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:levantar",
+    "l:luchar",
+    "l:reír",
+    "l:zona",
+    "l:reconocer",
+    "l:adelantar"
+   ],
    "chapter": "ch055"
   },
   {
@@ -29,7 +36,11 @@
     "c:lo-mejor-es",
     "c:te-lo-prometo"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:prometer",
+    "l:echar",
+    "l:acercarse"
+   ]
   },
   {
    "type": "introduce",
@@ -37,7 +48,14 @@
     "g:future-promises"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:caja",
+    "l:arriba",
+    "l:evitar",
+    "l:simplemente",
+    "l:obra",
+    "l:cariño"
+   ]
   },
   {
    "type": "drill",
@@ -51,20 +69,56 @@
    "chunks": [
     "c:todo-saldra-bien"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:daño",
+    "l:disfrutar",
+    "l:dirigir"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:temperatura",
+    "l:grado",
+    "l:nublado",
+    "l:soleado",
+    "l:viento",
+    "l:trueno",
+    "l:rayo",
+    "l:granizo",
+    "l:húmedo",
+    "l:seco",
+    "l:páramo",
+    "l:pronóstico",
+    "l:promesa",
+    "l:predecir",
+    "l:verano"
+   ],
    "chapter": "ch056"
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:invierno",
+    "l:cielo",
+    "l:perro",
+    "l:fuego",
+    "l:norte",
+    "l:animal",
+    "l:sur",
+    "l:árbol",
+    "l:luna",
+    "l:gato",
+    "l:pez",
+    "l:león",
+    "l:oeste",
+    "l:pájaro",
+    "l:planta"
+   ],
    "chapter": "ch057"
   },
   {
@@ -73,7 +127,14 @@
     "g:conditional"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:camino",
+    "l:verdadero",
+    "l:par",
+    "l:abogado",
+    "l:actuar",
+    "l:notar"
+   ],
    "chapter": "ch058"
   },
   {
@@ -85,7 +146,11 @@
    "chunks": [
     "c:yo-que-tu"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:lindo",
+    "l:convertirse",
+    "l:base"
+   ]
   },
   {
    "type": "output",

@@ -11,7 +11,13 @@
     "g:passive-ser"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:despacho",
+    "l:parecido",
+    "l:madera",
+    "l:nene",
+    "l:acceder"
+   ],
    "chapter": "ch113"
   },
   {
@@ -22,13 +28,32 @@
     "x:ser-estar-participle"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:surgir",
+    "l:añadir",
+    "l:entrenamiento"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:reportaje",
+    "l:titular",
+    "l:artículo",
+    "l:acontecimiento",
+    "l:causa",
+    "l:consecuencia",
+    "l:protesta",
+    "l:manifestación",
+    "l:elección",
+    "l:incendio",
+    "l:inundación",
+    "l:documental",
+    "l:editorial",
+    "l:firma"
+   ],
    "chapter": "ch114"
   },
   {
@@ -37,7 +62,13 @@
     "g:causal-advanced"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:recorrer",
+    "l:tragar",
+    "l:polvo",
+    "l:botón",
+    "l:desconocido"
+   ],
    "chapter": "ch115"
   },
   {
@@ -48,7 +79,11 @@
     "x:por-inf-para-inf"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:enterar",
+    "l:enseguida",
+    "l:conciencia"
+   ]
   },
   {
    "type": "patterns",
@@ -71,7 +106,13 @@
     "g:concession-despite"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:reino",
+    "l:conocido",
+    "l:estadounidense",
+    "l:aéreo",
+    "l:concurso"
+   ]
   },
   {
    "type": "drill",
@@ -83,7 +124,11 @@
     "x:gracias-a-debido-a"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:dispositivo",
+    "l:criar",
+    "l:prisa"
+   ],
    "scene": "sc-u38-b"
   },
   {

@@ -15,7 +15,13 @@
     "c:no-tiene-importancia",
     "c:son-cosas-que-pasan"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:intención",
+    "l:importancia",
+    "l:desastre",
+    "l:botella",
+    "l:broma"
+   ],
    "chapter": "ch101"
   },
   {
@@ -28,7 +34,11 @@
     "c:que-no-se-te-olvide",
     "c:por-suerte"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:descargar",
+    "l:atreverse",
+    "l:discurso"
+   ]
   },
   {
    "type": "input",
@@ -37,7 +47,22 @@
     "p:encontrar-participle"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:choque",
+    "l:chocar",
+    "l:denuncia",
+    "l:denunciar",
+    "l:aseguradora",
+    "l:herido",
+    "l:cartera",
+    "l:billetera",
+    "l:garganta",
+    "l:muela",
+    "l:clínica",
+    "l:hueso",
+    "l:pulmón",
+    "l:músculo"
+   ],
    "chapter": "ch102"
   },
   {
@@ -46,7 +71,13 @@
     "g:possessive-dative"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:bienvenida",
+    "l:espectáculo",
+    "l:vencer",
+    "l:alimentar",
+    "l:financiero"
+   ],
    "chapter": "ch103"
   },
   {
@@ -57,7 +88,11 @@
     "p:mancharse"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:manchar",
+    "l:lastimar",
+    "l:biblioteca"
+   ]
   },
   {
    "type": "patterns",
@@ -80,7 +115,13 @@
     "g:subj-perfect"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:colgar",
+    "l:rodear",
+    "l:impedir",
+    "l:procedimiento",
+    "l:pintura"
+   ]
   },
   {
    "type": "drill",
@@ -89,7 +130,11 @@
     "g:possessive-dative"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:amante",
+    "l:mina",
+    "l:culpable"
+   ],
    "scene": "sc-u34-b"
   },
   {

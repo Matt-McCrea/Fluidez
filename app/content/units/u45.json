@@ -13,7 +13,13 @@
    "chunks": [
     "c:quien-sabe"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:brillar",
+    "l:impresionar",
+    "l:caída",
+    "l:recientemente",
+    "l:digno"
+   ],
    "chapter": "ch140"
   },
   {
@@ -23,7 +29,11 @@
     "g:argument-markers"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:destacar",
+    "l:pulsar",
+    "l:cigarrillo"
+   ]
   },
   {
    "type": "input",
@@ -38,7 +48,21 @@
     "p:cabe-destacar"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:periodismo",
+    "l:acusación",
+    "l:acusar",
+    "l:evidencia",
+    "l:escándalo",
+    "l:corrupción",
+    "l:confirmar",
+    "l:revelar",
+    "l:buscador",
+    "l:emisora",
+    "l:desviar",
+    "l:suplemento",
+    "l:locutor"
+   ],
    "chapter": "ch141"
   },
   {
@@ -47,7 +71,13 @@
     "g:conditional-rumour"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:oscuridad",
+    "l:acudir",
+    "l:medir",
+    "l:cola",
+    "l:motivo"
+   ],
    "chapter": "ch142"
   },
   {
@@ -58,7 +88,11 @@
     "p:presuntamente-al-parecer"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:índice",
+    "l:muro",
+    "l:limpieza"
+   ]
   },
   {
    "type": "patterns",
@@ -95,7 +129,13 @@
     "g:impersonal-register"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:bromear",
+    "l:valioso",
+    "l:alquilar",
+    "l:milagro",
+    "l:traducción"
+   ],
    "chapter": "ch144"
   },
   {
@@ -109,7 +149,11 @@
     "p:me-contaron-que"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:producir",
+    "l:torre",
+    "l:salvaje"
+   ],
    "scene": "sc-u45-b"
   },
   {

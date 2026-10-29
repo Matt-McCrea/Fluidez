@@ -1,0 +1,64 @@
+# Theme seeds per unit: the words each unit's Input day(s) should carry first.
+# unit <TAB> lemmas (LatAm forms, nouns without article), most central first.
+# The placer takes them in this order, then fills from the old deck's matching
+# PCIC theme and from frequency. Words already placed earlier are skipped.
+u01	nombre	apellido	país	ciudad	trabajo	profesión	café	tinto	agua	pan	leche	jugo	estudiante	profesor	médico	ingeniero	mesero	colombiano	canadiense	inglés	español	nacionalidad	idioma	señor	señora	amigo	cliente	empresa	número	calle
+u02	oficina	trabajar	estudiar	hablar	vivir	escribir	leer	llegar	empezar	terminar	compañero	jefe	reunión	computadora	correo	horario	empresa	tienda	banco	parque	centro	barrio	hospital	universidad	colegio	cansado	ocupado	contento	enfermo	tranquilo	aburrido	nervioso
+u03	fin	semana	lunes	martes	miércoles	jueves	viernes	sábado	domingo	gustar	cine	película	música	fútbol	partido	bailar	cantar	caminar	cocinar	nadar	deporte	libro	fiesta	plan	salir	comida	bebida	cerveza	chocolate	fruta	pizza	helado
+u04	mercado	plaza	comprar	vender	precio	plata	peso	barato	caro	bolsa	kilo	libra	fruta	verdura	papa	tomate	cebolla	banano	mango	fresa	naranja	aguacate	mazorca	flor	puesto	vendedor	ayer	anoche	semana	pasado	cambio	billete	moneda
+u05	familia	padre	madre	papá	mamá	hermano	hermana	hijo	hija	abuelo	abuela	tío	tía	primo	prima	esposo	esposa	novio	novia	alto	bajo	delgado	gordo	joven	viejo	pelo	ojo	rubio	moreno	simpático	amable	inteligente	divertido	serio	tímido	trabajador	perezoso	generoso	edad
+u06	enero	febrero	marzo	abril	mayo	junio	julio	agosto	septiembre	octubre	noviembre	diciembre	época	año	década	siglo	antiguo	moderno	viejo	nuevo	foto	recuerdo	radio	televisión	disco	máquina	pared	cuadro	mesa	silla	esquina	vitrina	letrero	dueño	abuelo	cafetería	panadería	cuadra	edificio	cambiar	antes	ahora
+u07	apartamento	casa	cuarto	habitación	sala	comedor	cocina	baño	ventana	puerta	piso	escalera	cama	sofá	armario	nevera	estufa	lámpara	balcón	patio	arriendo	arrendar	vecino	barrio	tienda	panadería	droguería	parqueadero	edificio	portero	llave	mueble
+u08	viajar	viaje	conocer	visitar	playa	mar	montaña	río	pueblo	finca	café	cafetal	turista	maleta	vacación	isla	costa	paisaje	nadar	montar	caballo	avión	aeropuerto	hotel	experiencia	saber	probar	bucear	selva
+u09	levantarse	despertarse	bañarse	ducharse	vestirse	peinarse	afeitarse	maquillarse	cepillarse	acostarse	dormir	desayunar	almorzar	desayuno	almuerzo	cena	hora	reloj	mañana	tarde	noche	temprano	siempre	nunca	jabón	toalla	champú	diente	limpiar	barrer	lavar	planchar	oficio
+u10	ajiaco	arepa	bandeja	empanada	sopa	arroz	fríjol	carne	pollo	pescado	huevo	queso	plátano	papa	ensalada	jugo	limonada	aguapanela	postre	torta	mesero	carta	menú	cuenta	propina	plato	vaso	taza	cuchara	tenedor	cuchillo	rico	delicioso	picante	dulce	salado	pedir	probar	almojábana	buñuelo	pandebono
+u11	niño	niñez	infancia	colegio	escuela	maestro	compañero	clase	recreo	juego	juguete	jugar	muñeca	pelota	uniforme	tarea	examen	nota	materia	vacación	vecino	barrio	bicicleta	travieso	obediente	portarse	pelear	recordar	antes
+u12	pasar	ocurrir	suceder	sorpresa	sorprendido	asustado	feliz	triste	enojado	preocupado	emocionado	lluvia	llover	sol	nube	frío	calor	tormenta	clima	cumpleaños	regalo	fiesta	de_repente	entonces	luego	después	final	historia	cuento
+u13	bus	buseta	taxi	estación	parada	ruta	transmilenio	carro	moto	bicicleta	cuadra	esquina	carrera	calle	avenida	semáforo	andén	derecha	izquierda	derecho	cruzar	doblar	seguir	bajarse	subirse	pasaje	tarjeta	trancón	tráfico	conductor	manejar	lejos	cerca	dirección	mapa
+u14	mensaje	celular	llamar	contestar	escribir	nota	correo	foto	grupo	chat	audio	pantalla	aplicación	internet	red	enviar	mandar	recibir	compartir	porque	razón	detalle	describir	explicar	contar	responder	noticia	texto
+u15	cuerpo	cabeza	cara	ojo	oreja	nariz	boca	diente	cuello	hombro	brazo	mano	dedo	espalda	pecho	estómago	pierna	rodilla	pie	dolor	doler	fiebre	gripa	tos	cansancio	ánimo	mal	mejor	estrés	alegre	deprimido	sentirse	descansar	enfermo	sano
+u16	ropa	camisa	camiseta	pantalón	falda	vestido	chaqueta	saco	suéter	zapato	tenis	bota	media	bolso	talla	color	rojo	azul	verde	amarillo	blanco	negro	gris	rosado	morado	cuero	algodón	lana	probarse	quedar	devolver	cambiar	descuento	rebaja	almacén	centro_comercial	vitrina	efectivo	tarjeta
+u17	invitar	invitación	plan	cine	concierto	partido	equipo	gol	estadio	salsa	bailar	rumba	discoteca	entrada	boleta	función	cita	quedar	encontrarse	llegar	tarde	temprano	puntual	esperar	cancelar	aceptar	rechazar	ganas	tiempo
+u18	terminal	bus	vuelo	avión	aeropuerto	aerolínea	tiquete	pasaje	maleta	equipaje	pasaporte	hotel	hostal	reserva	reservar	habitación	recepción	llave	carretera	viaje	ida	regreso	salida	llegada	retraso	escala	puerta	asiento	ventanilla	pasajero	peaje	destino
+u19	empleo	trabajo	oferta	anuncio	hoja_de_vida	entrevista	experiencia	sueldo	salario	contrato	empresa	jefe	empleado	cargo	curso	carrera	título	universidad	estudiar	aprender	habilidad	capacidad	idioma	computación	turno	horario	renunciar	contratar	despedir
+u20	clima	tiempo	temperatura	grado	lluvia	llover	sol	nube	nublado	soleado	viento	tormenta	trueno	rayo	granizo	frío	calor	húmedo	seco	páramo	pronóstico	futuro	mañana	próximo	prometer	promesa	predecir	pasado_mañana	verano	invierno
+u21	pedir	favor	ayudar	ayuda	regla	norma	permiso	prohibir	socio	sociedad	acuerdo	trato	pareja	compañero	confiar	confianza	exigir	necesitar	aconsejar	sugerir	recomendar	turno	responsabilidad	tarea	encargarse
+u22	celebrar	celebración	cumpleaños	boda	casarse	matrimonio	bautizo	grado	fiesta	festivo	navidad	novena	velita	año_nuevo	pésame	funeral	entierro	muerte	morir	nacer	nacimiento	felicitar	felicitaciones	regalo	torta	vela	invitado	brindar
+u23	banco	cuenta	cajero	tarjeta	clave	plata	retirar	consignar	pagar	factura	recibo	cédula	trámite	documento	formulario	fila	turno	oficina	queja	reclamo	arreglar	reparar	técnico	daño	dañado	servicio	internet	señal	plan	operador
+u24	mudarse	trasteo	apartamento	arriendo	barrio	vecino	ruido	ruidoso	tranquilo	seguro	peligroso	cerca	lejos	ventaja	desventaja	espacio	amplio	pequeño	luminoso	oscuro	piso	estrato	conjunto	administración	transporte	elegir	escoger	comparar
+u25	montaña	valle	río	lago	paisaje	clima	flor	árbol	pájaro	naturaleza	cerro	colina	cultivo	campo	ciudad	metro	cable	paisa	gente	carácter	amable	alegre	trabajador	orgulloso	tradición	costumbre	feria
+u26	anécdota	accidente	caerse	romperse	perder	olvidar	equivocarse	error	vergüenza	reírse	risa	chiste	susto	suerte	mala_suerte	gracioso	increíble	raro	extraño	de_repente	resultar	reaccionar	reacción
+u27	correo	mensaje	asunto	saludo	despedida	reseña	comentario	opinión	aviso	anuncio	red	publicar	seguidor	página	enlace	foto	usuario	cuenta	estrella	calificar	recomendar	queja	informar
+u28	ciudad	problema	basura	ruido	contaminación	tráfico	seguridad	inseguridad	ladrón	robo	parque	espacio	calle	andén	alcalde	alcaldía	ciudadano	vecino	comunidad	barrio	mejorar	proponer	opinar	opinión	solución	público
+u29	debate	discutir	discusión	rumor	chisme	verdad	mentira	cierto	falso	seguro	probable	posible	imposible	dudar	duda	creer	pensar	acuerdo	desacuerdo	argumento	razón	convencer	certeza
+u30	emoción	sentimiento	alegría	tristeza	miedo	rabia	envidia	celos	orgullo	vergüenza	nostalgia	ilusión	esperanza	sentir	sentirse	emocionarse	llorar	reír	reaccionar	cambiar	carácter	personalidad	sensible	celoso
+u31	historia	carta	recuerdo	memoria	pasado	familia	antepasado	hermano	pariente	herencia	heredar	secreto	foto	álbum	época	década	juventud	casarse	separarse	pelearse	reconciliarse	emigrar	sobre#envelope	sello
+u32	negocio	empresa	plan	cliente	proveedor	venta	ganancia	pérdida	gasto	costo	precio	presupuesto	inversión	invertir	préstamo	deuda	crédito	consejo	aconsejar	emprender	socio	competencia	mercado	publicidad	impuesto
+u33	local	espacio	metro_cuadrado	requisito	condición	anuncio	inmobiliaria	arriendo	contrato	fiador	depósito	piso	baño	cocina	instalación	luz	gas	agua	disponible	amplio	iluminado	ubicado	ubicación
+u34	accidente	choque	chocar	caerse	romperse	perder	robar	robo	ladrón	policía	denuncia	denunciar	seguro	aseguradora	daño	golpe	herido	herida	culpa	testigo	documento	cartera	billetera	celular	llave
+u35	médico	doctor	clínica	hospital	consultorio	urgencias	cita	EPS	enfermera	paciente	síntoma	fiebre	tos	gripa	alergia	infección	pastilla	medicamento	receta	jarabe	droguería	examen	tratamiento	dieta	ejercicio	sano	saludable	vacuna
+u36	plata	dinero	economía	precio	costo	salario	sueldo	ahorro	ahorrar	gastar	gasto	banco	crédito	tasa	interés	cifra	porcentaje	aumento	subir	bajar	venta	compra	comercio	industria	empresa	inflación	impuesto
+u37	llamada	llamar	celular	contestar	colgar	marcar	número	mensaje	buzón	conversación	tema	interrumpir	pausa	repetir	aclarar	entender	explicar	equivocarse	saludo	despedida
+u38	noticia	periódico	prensa	periodista	reportaje	titular	artículo	medio	radio	televisión	acontecimiento	causa	consecuencia	suceder	ocurrir	protesta	manifestación	gobierno	elección	accidente	incendio	inundación
+u39	ensayo	tema	idea	párrafo	introducción	conclusión	argumento	ejemplo	estructura	presentación	exponer	resumen	resumir	investigación	investigar	fuente	estudio	estudiar	aprender	examen	nota	clase	profesor	estudiante
+u40	costa	caribe	mar	playa	arena	ola	isla	barco	pescador	puerto	sol	calor	humedad	clima	naturaleza	selva	animal	pez	tortuga	palmera	coco	viaje	imaginar	soñar	sueño
+u41	reunión	familia	reconciliación	reconciliarse	perdonar	perdón	pedir	arrepentirse	arrepentimiento	deseo	desear	lamentar	culpa	abrazo	hermano	sobrino	nieto	pariente	encuentro
+u42	cortesía	amabilidad	respeto	formal	informal	tratamiento	usted	tú	señor	doctor	don	doña	saludar	agradecer	disculparse	pedir	rogar	sumercé	educado	grosero
+u43	decisión	decidir	elegir	opción	alternativa	camino	cambio	consecuencia	destino	suerte	oportunidad	riesgo	arrepentirse	imaginar	suponer	resultado
+u44	patrimonio	derecho	ley	norma	audiencia	ciudadano	comunidad	desarrollo	urbano	construcción	demolición	proyecto	hotel	propietario	propiedad	defender	proteger	reclamar	votar	concejo	licencia	argumento
+u45	periodismo	periodista	investigación	fuente	denuncia	acusación	acusar	prueba	evidencia	testigo	documento	escándalo	corrupción	negar	confirmar	revelar	publicar	entrevista	declaración
+u46	reunión	acta	asamblea	testimonio	declarar	declaración	cita	citar	afirmar	asegurar	comentar	mencionar	añadir	contar	explicar	reconocer	admitir	negar	insistir	propuesta	votación	orden_del_día
+u47	pódcast	entrevista	entrevistar	episodio	narrador	historia	relato	grabar	grabación	micrófono	oyente	público	voz	tono	énfasis	destacar	subrayar	pregunta	respuesta
+u48	edificio	material	ladrillo	cemento	madera	vidrio	metal	hierro	acero	piedra	medida	medir	metro	centímetro	peso	pesar	altura	ancho	largo	proceso	técnica	construir	tecnología	resistente
+u49	solicitud	solicitar	carta	reclamo	contrato	cláusula	firma	firmar	empresa	empleo	candidato	hoja_de_vida	referencia	condición	plazo	pago	cobro	factura	reembolso	formal
+u50	conflicto	pelea	discusión	negociar	negociación	acuerdo	ceder	disculpa	disculparse	perdonar	límite	respeto	molestar	ofender	reproche	reprochar	malentendido	resolver	calmarse
+u51	España	acento	variedad	región	dialecto	vosotros	expresión	palabra	diferencia	semejanza	viajero	cultura	mundo	hispanohablante	país	frontera	costumbre	tradición
+u52	memoria	recuerdo	narración	narrar	relato	autobiografía	testimonio	voz	personaje	trama	escena	capítulo	estilo	escritor	escribir	contar	época
+u53	rumor	supuesto	presunto	afirmación	institución	responsabilidad	rendición	transparencia	investigación	funcionario	entidad	denuncia	acusación	escándalo	versión
+u54	humor	ironía	broma	burla	chiste	ingenio	sarcasmo	gracia	gracioso	mamar_gallo	tomar_del_pelo	sutil	indirecta	insinuar	insinuación	doble_sentido
+u55	cooperativa	estatuto	asociado	asamblea	junta	reglamento	artículo	cláusula	trámite	registro	cámara	comercio	acta	quórum	aporte	socio	administración	resolución	decreto
+u56	idea	ética	moral	valor	progreso	memoria	filosofía	creencia	fe	religión	sentido	verdad	conciencia	libertad	justicia	ciudad	desarrollo	tradición
+u57	arrepentimiento	resignación	alivio	nostalgia	duelo	pena	dolor	tristeza	consuelo	consolar	lamentar	extrañar	añorar	soledad	luto	melancolía	angustia
+u58	paisaje	relieve	cordillera	páramo	glaciar	volcán	llanura	erosión	clima	cambio	temperatura	transformación	proceso	sequía	inundación	propiedad	densidad
+u59	región	paisa	costeño	rolo	acento	música	vallenato	cumbia	bambuco	literatura	novela	poesía	poeta	escritor	tradición	cultura	identidad	folclor
+u60	crítica	crítico	reseña	obra	arte	cultura	exposición	artista	público	valoración	opinión	juicio	estilo	calidad	café	tertulia	espacio_cultural	recomendar

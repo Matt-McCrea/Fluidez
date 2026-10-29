@@ -21,7 +21,20 @@
     "c:la-hora-colombiana",
     "c:pasar-raspando"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:mantequilla",
+    "l:recomendable",
+    "l:costeño",
+    "l:rolo",
+    "l:vallenato",
+    "l:cumbia",
+    "l:bambuco",
+    "l:literatura",
+    "l:novela",
+    "l:poesía",
+    "l:poeta",
+    "l:folclor"
+   ],
    "chapter": "ch210"
   },
   {
@@ -45,7 +58,13 @@
     "c:donde-el-diablo-perdio-el-poncho",
     "c:un-despelote"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:diablo",
+    "l:dibujo",
+    "l:lesión",
+    "l:sorprendente",
+    "l:comisario"
+   ],
    "chapter": "ch212"
   },
   {
@@ -60,7 +79,10 @@
     "c:no-te-hubieras-molestado",
     "c:faltaba-mas"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:labor",
+    "l:rincón"
+   ]
   },
   {
    "type": "input",
@@ -72,7 +94,20 @@
     "c:alla-tu",
     "c:me-sigues"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:vejez",
+    "l:madurez",
+    "l:colgante",
+    "l:validez",
+    "l:gargantilla",
+    "l:preadolescencia",
+    "l:seudónimo",
+    "l:mote",
+    "l:cuarentón",
+    "l:treintañero",
+    "l:serpiente",
+    "l:consejero"
+   ],
    "chapter": "ch213"
   },
   {
@@ -111,7 +146,13 @@
     "g:future-subj-recognition"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:imperio",
+    "l:abordar",
+    "l:corregir",
+    "l:fingir",
+    "l:cobertura"
+   ],
    "chapter": "ch214"
   },
   {
@@ -122,7 +163,10 @@
     "x:orden-escalera"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:empresario",
+    "l:quebrar"
+   ]
   },
   {
    "type": "review",

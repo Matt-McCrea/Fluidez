@@ -24,7 +24,20 @@
     "c:ni-un-alma",
     "c:brillar-por-su-ausencia"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:ausencia",
+    "l:variar",
+    "l:ironía",
+    "l:burla",
+    "l:ingenio",
+    "l:sarcasmo",
+    "l:gracia",
+    "l:sutil",
+    "l:indirecta",
+    "l:insinuar",
+    "l:insinuación",
+    "l:justicia"
+   ],
    "chapter": "ch185"
   },
   {
@@ -48,7 +61,13 @@
     "c:no-tener-pelos-en-la-lengua",
     "c:por-ti-no-pasan-los-anos"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:codo",
+    "l:personalmente",
+    "l:técnicamente",
+    "l:onda",
+    "l:lavarse"
+   ],
    "chapter": "ch187"
   },
   {
@@ -63,7 +82,10 @@
     "c:fuera-de-lugar",
     "c:costar-un-ojo-de-la-cara"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:doble",
+    "l:gallo"
+   ]
   },
   {
    "type": "input",
@@ -82,7 +104,20 @@
     "c:mamar-gallo",
     "c:no-se-queda-atras"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:responsable",
+    "l:curioso",
+    "l:curiosidad",
+    "l:temor",
+    "l:cobarde",
+    "l:callado",
+    "l:tierno",
+    "l:discreto",
+    "l:ambición",
+    "l:apasionado",
+    "l:distribuir",
+    "l:ambicioso"
+   ],
    "chapter": "ch188"
   },
   {
@@ -118,7 +153,13 @@
     "g:wish-exclamatives"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:químico",
+    "l:retener",
+    "l:adicional",
+    "l:toro",
+    "l:matrícula"
+   ],
    "chapter": "ch189"
   },
   {
@@ -128,7 +169,10 @@
     "g:emphatic-structures"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:estándar",
+    "l:debilidad"
+   ]
   },
   {
    "type": "review",

@@ -145,7 +145,7 @@ export function buildCurriculum(files: Loaded[], contentDir: string, findings: F
   const cb = join(contentDir, 'units', '_complete.json');
   if (existsSync(cb)) { try { completeBands = new Set(JSON.parse(readFileSync(cb, 'utf8')) as string[]); } catch { /* ignore */ } }
   // the tagger learns the graph's lexemes and the cast's names
-  registerLexemes([...nodes.values()].filter((n) => n.kind === 'lexeme').map((n) => ({ lemma: n.es ?? n.id.replace(/^l:/, '').replace(/#.*/, ''), pos: n.pos, gender: n.gender })));
+  registerLexemes([...nodes.values()].filter((n) => n.kind === 'lexeme').map((n) => ({ lemma: n.id.replace(/^l:/, '').replace(/#.*/, ''), pos: n.pos, gender: n.gender })));
   registerNames(castNames(units.map((u) => u.storyArc).join(' ')));
   const graphIds = new Set(nodes.keys());
   const hasLexemes = [...nodes.values()].some((n) => n.kind === 'lexeme') || units.some((u) => u.days.some((d) => d.lexemes.length));

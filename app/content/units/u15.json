@@ -15,7 +15,14 @@
     "c:depende",
     "c:te-pasa-algo"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:depender",
+    "l:acuerdo",
+    "l:fiebre",
+    "l:gripa",
+    "l:tos",
+    "l:cansancio"
+   ],
    "chapter": "ch039"
   },
   {
@@ -32,7 +39,11 @@
     "c:para-nada",
     "c:tranquilo"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:susto",
+    "l:ánimo",
+    "l:estrés"
+   ]
   },
   {
    "type": "introduce",
@@ -40,7 +51,14 @@
     "g:estar-participle"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:alegre",
+    "l:deprimido",
+    "l:descansar",
+    "l:sano",
+    "l:cerrar",
+    "l:perdido"
+   ]
   },
   {
    "type": "drill",
@@ -50,13 +68,33 @@
     "x:participle-agreement"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:miedo",
+    "l:doler",
+    "l:ofrecer"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:cara",
+    "l:oreja",
+    "l:nariz",
+    "l:boca",
+    "l:cuello",
+    "l:hombro",
+    "l:brazo",
+    "l:dedo",
+    "l:espalda",
+    "l:pecho",
+    "l:estómago",
+    "l:pierna",
+    "l:rodilla",
+    "l:pie",
+    "l:dolor"
+   ],
    "chapter": "ch040"
   },
   {
@@ -76,7 +114,14 @@
     "g:parecer-quedar"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:aceptar",
+    "l:modo",
+    "l:aprender",
+    "l:control",
+    "l:informar",
+    "l:personal"
+   ],
    "chapter": "ch041"
   },
   {
@@ -86,7 +131,11 @@
     "g:estar-participle"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:pronto",
+    "l:fácil",
+    "l:doctor"
+   ]
   },
   {
    "type": "output",

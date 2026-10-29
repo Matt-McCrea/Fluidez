@@ -14,7 +14,13 @@
     "c:no-hay-derecho",
     "c:cuenta-conmigo"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:pantalones",
+    "l:lucir",
+    "l:petición",
+    "l:mono",
+    "l:mono#blond"
+   ],
    "chapter": "ch122"
   },
   {
@@ -25,13 +31,32 @@
     "x:subj-present-past"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:olor",
+    "l:acaso",
+    "l:desnudo"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:reconciliación",
+    "l:arrepentirse",
+    "l:arrepentimiento",
+    "l:deseo",
+    "l:lamentar",
+    "l:encuentro",
+    "l:infantil",
+    "l:truco",
+    "l:intercambiar",
+    "l:consciente",
+    "l:atrapado",
+    "l:dispuesto",
+    "l:conceder",
+    "l:lenguaje"
+   ],
    "chapter": "ch123"
   },
   {
@@ -40,7 +65,13 @@
     "g:ojala-past"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:patrón",
+    "l:desafiar",
+    "l:investigador",
+    "l:divertirse",
+    "l:atravesar"
+   ],
    "chapter": "ch124"
   },
   {
@@ -50,7 +81,11 @@
     "g:subj-past-triggers"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:fase",
+    "l:ligar",
+    "l:registro"
+   ]
   },
   {
    "type": "patterns",
@@ -70,7 +105,13 @@
     "g:reported-commands-past"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:arrastrar",
+    "l:pleno",
+    "l:pesado",
+    "l:reconocimiento",
+    "l:sombra"
+   ]
   },
   {
    "type": "drill",
@@ -80,7 +121,11 @@
     "x:te-importa-si-vs-te-importaria-que"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:campamento",
+    "l:anteriormente",
+    "l:lento"
+   ],
    "scene": "sc-u41-b"
   },
   {

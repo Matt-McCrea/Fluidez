@@ -15,7 +15,14 @@
     "c:ya-voy",
     "c:que-pereza"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:tarde",
+    "l:reloj",
+    "l:mañana",
+    "l:temprano",
+    "l:jabón",
+    "l:toalla"
+   ],
    "chapter": "ch021"
   },
   {
@@ -26,7 +33,12 @@
     "p:lavarse-las-manos"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:mano",
+    "l:champú",
+    "l:diente",
+    "l:limpiar"
+   ]
   },
   {
    "type": "introduce",
@@ -34,7 +46,14 @@
     "g:estar-gerund"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:barrer",
+    "l:lavar",
+    "l:planchar",
+    "l:oficio",
+    "l:pagar",
+    "l:medio"
+   ]
   },
   {
    "type": "drill",
@@ -46,7 +65,12 @@
     "x:body-article-possessive"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:soler",
+    "l:quedarse",
+    "l:manera",
+    "l:pasado#past"
+   ]
   },
   {
    "type": "input",
@@ -57,7 +81,24 @@
     "p:todos-los-dias"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:levantarse",
+    "l:despertarse",
+    "l:bañarse",
+    "l:ducharse",
+    "l:vestirse",
+    "l:peinarse",
+    "l:afeitarse",
+    "l:maquillarse",
+    "l:cepillarse",
+    "l:acostarse",
+    "l:dormir",
+    "l:desayunar",
+    "l:almorzar",
+    "l:desayuno",
+    "l:almuerzo",
+    "l:cena"
+   ],
    "chapter": "ch022"
   },
   {
@@ -82,7 +123,14 @@
     "c:que-hora-es",
     "c:a-que-hora"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:pequeño",
+    "l:acordarse",
+    "l:perder",
+    "l:volverse",
+    "l:ponerse",
+    "l:entrar"
+   ],
    "chapter": "ch023"
   },
   {
@@ -94,7 +142,12 @@
     "p:desde-hasta"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:pedir",
+    "l:pedir#order",
+    "l:intentar",
+    "l:traer"
+   ]
   },
   {
    "type": "output",

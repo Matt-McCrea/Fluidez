@@ -24,7 +24,20 @@
     "c:no-creas",
     "c:dicho-sea-de-paso"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:precedente",
+    "l:paradero",
+    "l:supuesto",
+    "l:presunto",
+    "l:afirmación",
+    "l:institución",
+    "l:rendición",
+    "l:transparencia",
+    "l:entidad",
+    "l:versión",
+    "l:civil",
+    "l:senador"
+   ],
    "chapter": "ch180"
   },
   {
@@ -48,7 +61,13 @@
     "c:punta-de-la-lengua",
     "c:de-ser-asi"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:apariencia",
+    "l:sembrar",
+    "l:lágrima",
+    "l:lío",
+    "l:adquirir"
+   ],
    "chapter": "ch182"
   },
   {
@@ -59,7 +78,10 @@
     "x:juraria-vs-me-consta"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:posibilidad",
+    "l:sensación"
+   ]
   },
   {
    "type": "input",
@@ -70,7 +92,20 @@
     "p:cada-quien"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:sentencia",
+    "l:inocente",
+    "l:periodo",
+    "l:estatal",
+    "l:cañón",
+    "l:cooperación",
+    "l:calendario",
+    "l:comunitario",
+    "l:criminal",
+    "l:diplomático",
+    "l:bala",
+    "l:igualdad"
+   ],
    "chapter": "ch183"
   },
   {
@@ -106,7 +141,13 @@
     "g:reformulation"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:escritura",
+    "l:manifestar",
+    "l:pasillo",
+    "l:posesión",
+    "l:acostumbrado"
+   ],
    "chapter": "ch184"
   },
   {
@@ -120,7 +161,10 @@
     "x:para-mi-que-vs-cabe"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:tonelada",
+    "l:fiel"
+   ]
   },
   {
    "type": "review",

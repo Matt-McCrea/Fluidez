@@ -17,7 +17,14 @@
     "c:mucho-gusto",
     "c:como-estas"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:día",
+    "l:bueno",
+    "l:llamar",
+    "l:gusto",
+    "l:mesero",
+    "l:colombiano"
+   ],
    "chapter": "ch001"
   },
   {
@@ -32,7 +39,12 @@
     "c:como-se-dice",
     "c:mas-despacio"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:decir",
+    "l:favor",
+    "l:entender",
+    "l:despacio"
+   ]
   },
   {
    "type": "introduce",
@@ -46,7 +58,14 @@
     "c:cuanto-cuesta",
     "c:tengo"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:tener",
+    "l:querer",
+    "l:regalar",
+    "l:trabajar",
+    "l:vivir",
+    "l:encantar"
+   ]
   },
   {
    "type": "drill",
@@ -61,7 +80,12 @@
     "c:me-puede-ayudar",
     "c:perdon-disculpe"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:poder",
+    "l:ayudar",
+    "l:disculpar",
+    "l:perdón"
+   ]
   },
   {
    "type": "input",
@@ -73,7 +97,24 @@
     "c:vivo-en",
     "c:tengo-anos"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:nombre",
+    "l:apellido",
+    "l:país",
+    "l:ciudad",
+    "l:trabajo",
+    "l:profesión",
+    "l:café",
+    "l:tinto",
+    "l:agua",
+    "l:pan",
+    "l:leche",
+    "l:jugo",
+    "l:estudiante",
+    "l:profesor",
+    "l:médico",
+    "l:ingeniero"
+   ],
    "chapter": "ch002"
   },
   {
@@ -88,7 +129,14 @@
     "c:chao-nos-vemos",
     "c:que-pena"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:ver",
+    "l:pena",
+    "l:canadiense",
+    "l:inglés",
+    "l:español",
+    "l:nacionalidad"
+   ]
   },
   {
    "type": "drill",
@@ -104,7 +152,12 @@
     "c:compre-trabaje",
     "c:ayer-anoche"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:comprar",
+    "l:comer",
+    "l:ayer",
+    "l:anoche"
+   ]
   },
   {
    "type": "introduce",
@@ -118,7 +171,14 @@
     "c:ya-comiste",
     "c:a-la-orden"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:hacer",
+    "l:orden",
+    "l:idioma",
+    "l:señor",
+    "l:señora",
+    "l:amigo"
+   ]
   },
   {
    "type": "drill",
@@ -133,7 +193,12 @@
     "c:entonces-bueno",
     "c:claro-listo"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:creer",
+    "l:claro",
+    "l:listo",
+    "l:cliente"
+   ]
   },
   {
    "type": "output",

@@ -14,7 +14,14 @@
     "c:ni-idea",
     "c:que-envidia"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:idea",
+    "l:envidia",
+    "l:montar",
+    "l:caballo",
+    "l:avión",
+    "l:aeropuerto"
+   ],
    "chapter": "ch018"
   },
   {
@@ -29,7 +36,12 @@
     "c:todavia-no",
     "c:una-vez"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:hotel",
+    "l:experiencia",
+    "l:probar",
+    "l:bucear"
+   ]
   },
   {
    "type": "introduce",
@@ -37,7 +49,14 @@
     "g:negation-words"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:selva",
+    "l:usar",
+    "l:seguro",
+    "l:seguro#insurance",
+    "l:preguntar",
+    "l:formar"
+   ]
   },
   {
    "type": "drill",
@@ -48,13 +67,35 @@
    "chunks": [
     "c:nunca-en-la-vida"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:niño",
+    "l:llevarse",
+    "l:hoy",
+    "l:crear"
+   ]
   },
   {
    "type": "input",
    "focus": [],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:viajar",
+    "l:viaje",
+    "l:visitar",
+    "l:playa",
+    "l:mar",
+    "l:montaña",
+    "l:río",
+    "l:pueblo",
+    "l:finca",
+    "l:cafetal",
+    "l:turista",
+    "l:maleta",
+    "l:vacación",
+    "l:isla",
+    "l:costa",
+    "l:paisaje"
+   ],
    "chapter": "ch019"
   },
   {
@@ -63,7 +104,14 @@
     "g:verb-infinitive"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:escuchar",
+    "l:llamarse",
+    "l:suponer",
+    "l:dinero",
+    "l:recordar",
+    "l:dicho"
+   ],
    "chapter": "ch020"
   },
   {
@@ -81,7 +129,12 @@
    "chunks": [
     "c:vale-la-pena"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:ganar",
+    "l:valer",
+    "l:allí",
+    "l:acabar"
+   ]
   },
   {
    "type": "output",

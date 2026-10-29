@@ -15,7 +15,13 @@
     "c:me-echas-una-mano",
     "c:lo-siento-pero-no-puedo"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:ambiente",
+    "l:condenar",
+    "l:disponible",
+    "l:asistente",
+    "l:temporada"
+   ],
    "chapter": "ch095"
   },
   {
@@ -30,7 +36,11 @@
     "c:bueno-si-insistes",
     "c:apurate"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:insistir",
+    "l:cadena",
+    "l:paso"
+   ]
   },
   {
    "type": "input",
@@ -43,7 +53,22 @@
     "p:quedar-en"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:proveedor",
+    "l:ganancia",
+    "l:pérdida",
+    "l:gasto",
+    "l:costo",
+    "l:presupuesto",
+    "l:inversión",
+    "l:invertir",
+    "l:préstamo",
+    "l:deuda",
+    "l:crédito",
+    "l:emprender",
+    "l:impuesto",
+    "l:pobre"
+   ],
    "chapter": "ch096"
   },
   {
@@ -52,7 +77,13 @@
     "g:subj-cuando-future"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:canal",
+    "l:mirada",
+    "l:técnica",
+    "l:camión",
+    "l:nave"
+   ],
    "chapter": "ch097"
   },
   {
@@ -65,7 +96,11 @@
     "x:que-tal-si-vs-te-propongo-que"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:actualmente",
+    "l:conexión",
+    "l:garantizar"
+   ]
   },
   {
    "type": "patterns",
@@ -88,7 +123,13 @@
     "g:subj-purpose-full"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:vivo",
+    "l:gastar",
+    "l:atrapar",
+    "l:personaje",
+    "l:batalla"
+   ]
   },
   {
    "type": "drill",
@@ -98,7 +139,11 @@
     "x:seguir-dejar-de"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:apagar",
+    "l:ganador",
+    "l:señalar"
+   ],
    "scene": "sc-u32-b"
   },
   {

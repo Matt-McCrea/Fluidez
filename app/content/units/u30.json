@@ -15,7 +15,13 @@
     "c:que-rabia",
     "c:me-imagino"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:rabia",
+    "l:alivio",
+    "l:vigilar",
+    "l:extranjero",
+    "l:sorprender"
+   ],
    "chapter": "ch089"
   },
   {
@@ -30,7 +36,11 @@
     "c:animo",
     "c:ahi-vamos"
    ],
-   "lexemes": []
+   "lexemes": [
+    "l:harto",
+    "l:reina",
+    "l:delante"
+   ]
   },
   {
    "type": "input",
@@ -42,7 +52,22 @@
     "p:estar-harto-de"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:alegría",
+    "l:tristeza",
+    "l:celos",
+    "l:orgullo",
+    "l:nostalgia",
+    "l:ilusión",
+    "l:emocionarse",
+    "l:personalidad",
+    "l:sensible",
+    "l:celoso",
+    "l:odiar",
+    "l:egoísta",
+    "l:optimista",
+    "l:reservado"
+   ],
    "chapter": "ch090"
   },
   {
@@ -51,7 +76,13 @@
     "g:verbs-of-change"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:fecha",
+    "l:cercano",
+    "l:querido",
+    "l:calidad",
+    "l:tratamiento"
+   ],
    "chapter": "ch091"
   },
   {
@@ -65,7 +96,11 @@
     "x:pena-vs-rabia"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:emoción",
+    "l:averiguar",
+    "l:ganado"
+   ]
   },
   {
    "type": "patterns",
@@ -88,7 +123,13 @@
     "g:se-meaning-change"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:jardín",
+    "l:sobrevivir",
+    "l:reunirse",
+    "l:disculparse",
+    "l:aprovechar"
+   ]
   },
   {
    "type": "drill",
@@ -99,7 +140,11 @@
     "p:aburrir-aburrirse"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:belleza",
+    "l:rendir",
+    "l:respirar"
+   ],
    "scene": "sc-u30-b"
   },
   {

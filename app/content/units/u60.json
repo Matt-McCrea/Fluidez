@@ -19,7 +19,20 @@
     "c:a-la-perfeccion",
     "c:para-chuparse-los-dedos"
    ],
-   "lexemes": [],
+   "lexemes": [
+    "l:chupar",
+    "l:perfección",
+    "l:charla",
+    "l:auge",
+    "l:crítica",
+    "l:artista",
+    "l:valoración",
+    "l:tertulia",
+    "l:armonía",
+    "l:creatividad",
+    "l:pirámide",
+    "l:decorado"
+   ],
    "chapter": "ch215"
   },
   {
@@ -39,7 +52,13 @@
     "g:word-order-style"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:rozar",
+    "l:expulsar",
+    "l:fortaleza",
+    "l:profundidad",
+    "l:traje"
+   ],
    "chapter": "ch217"
   },
   {
@@ -50,7 +69,10 @@
     "x:cualquier-dia-un-dia-cualquiera"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:ridículo",
+    "l:clavo"
+   ]
   },
   {
    "type": "input",
@@ -58,7 +80,20 @@
     "p:plata-no-hay"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:verso",
+    "l:himno",
+    "l:fachada",
+    "l:trompeta",
+    "l:pureza",
+    "l:colorido",
+    "l:guionista",
+    "l:compás",
+    "l:fa",
+    "l:coreografía",
+    "l:sinfonía",
+    "l:monólogo"
+   ],
    "chapter": "ch218"
   },
   {
@@ -94,7 +129,13 @@
     "g:evaluative-adverbs"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:mercancía",
+    "l:aprobación",
+    "l:ensayar",
+    "l:sabana",
+    "l:provenir"
+   ],
    "chapter": "ch219"
   },
   {
@@ -105,7 +146,10 @@
     "p:sencillamente"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:sencillamente",
+    "l:guante"
+   ]
   },
   {
    "type": "checkpoint",

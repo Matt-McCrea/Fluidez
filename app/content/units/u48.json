@@ -11,7 +11,13 @@
     "g:relatives-formal"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:ligero",
+    "l:elevar",
+    "l:antecedente",
+    "l:cartel",
+    "l:lanzamiento"
+   ],
    "chapter": "ch155"
   },
   {
@@ -22,7 +28,11 @@
     "p:lo-que-cosa-que"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:dividir",
+    "l:consistir",
+    "l:bote"
+   ]
   },
   {
    "type": "input",
@@ -37,7 +47,21 @@
     "p:azul-oscuro-invariable"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:ladrillo",
+    "l:cemento",
+    "l:vidrio",
+    "l:metal",
+    "l:hierro",
+    "l:centímetro",
+    "l:ancho",
+    "l:proceso",
+    "l:tecnología",
+    "l:estilo",
+    "l:copiar",
+    "l:electrónico",
+    "l:elemento"
+   ],
    "chapter": "ch156"
   },
   {
@@ -46,7 +70,13 @@
     "g:participle-gerund-clauses"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:campesino",
+    "l:prender",
+    "l:esclavo",
+    "l:escrito",
+    "l:rescatar"
+   ],
    "chapter": "ch157"
   },
   {
@@ -57,7 +87,11 @@
     "x:lo-que-el-que"
    ],
    "chunks": [],
-   "lexemes": []
+   "lexemes": [
+    "l:fabricar",
+    "l:resistente",
+    "l:sal"
+   ]
   },
   {
    "type": "patterns",
@@ -94,7 +128,13 @@
     "g:infinitive-perfect"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:corona",
+    "l:suelo",
+    "l:solar",
+    "l:lobo",
+    "l:últimamente"
+   ],
    "chapter": "ch159"
   },
   {
@@ -105,7 +145,11 @@
     "p:same-subject-haber"
    ],
    "chunks": [],
-   "lexemes": [],
+   "lexemes": [
+    "l:oponer",
+    "l:raza",
+    "l:gimnasio"
+   ],
    "scene": "sc-u48-b"
   },
   {
