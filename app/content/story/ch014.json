@@ -1,0 +1,177 @@
+{
+  "id": "ch014",
+  "unit": "u06",
+  "title": "Una carta sin estampilla",
+  "text": "«Joaquín». En el sobre hay solo un nombre. No tiene estampilla.\nTomás: ¿Joaquín? ¿Quién es Joaquín?\nVale: El sobre es de 1979.\nTomás: Rosa escribió una carta hace cuarenta y siete años, y la carta nunca salió del café.\nTomás: Parece una carta romántica.\nHernando pone su tinto en la mesa.\nHernando: Parece, pero no es una carta romántica.\nSimón: ¡Joaquín! ¡Joaquín!\nVale: ¿Simón conoce el nombre?\nHernando: Simón es viejo, mija. Tiene cosas de antes en la cabeza.\nTomás: Don Hernando, ¿quién es Joaquín?\nHernando: Joaquín se fue en 1978 y nunca volvió. Fue hace mucho tiempo.\nHernando vuelve a su mesa y no habla más.\nTomás: Antes, Rosa era una abuela en Bogotá. Ahora es un cuaderno, una foto y una carta.\nTomás: Rosa puso la carta en el cuaderno, y el cuaderno en el mostrador.\nTomás: Vale, acordamos treinta días, y quedan veintidós. ¿Y ahora Joaquín?\nVale: Sí, acordamos treinta días. Pero tú eres el nieto de Rosa.\nHernando: Es una cosa de Rosa y de Joaquín, Tomás.\nVale abre el sobre y lee la primera frase. Vale está blanca.\nTomás: ¿Vale? ¿Qué pasa?\nVale: Tomás... no puede ser.\nSimón: ¡No puede ser! ¡No puede ser!\nVale no habla. Pone la carta en la mano de Tomás.",
+  "gloss": [
+    {
+      "es": "No tiene estampilla",
+      "en": "It has no stamp"
+    },
+    {
+      "es": "Simón es viejo, mija. Tiene cosas de antes en la cabeza.",
+      "en": "Simón is old, my dear. He has things from the old days in his head."
+    },
+    {
+      "es": "Joaquín se fue en 1978 y nunca volvió",
+      "en": "Joaquín left in 1978 and never came back"
+    },
+    {
+      "es": "no habla más",
+      "en": "doesn't say another word"
+    },
+    {
+      "es": "el mostrador",
+      "en": "the counter"
+    },
+    {
+      "es": "Vale está blanca",
+      "en": "Vale has gone pale"
+    },
+    {
+      "es": "no puede ser",
+      "en": "it can't be"
+    }
+  ],
+  "questions": [
+    {
+      "q": "How do they know the letter was never sent?",
+      "options": [
+        "It has no stamp and it never left the café",
+        "Joaquín sent it back",
+        "It is still in Toronto",
+        "Hernando says so"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Simón's «¡Joaquín!» suggest?",
+      "options": [
+        "Rosa used to say the name often",
+        "Simón is hungry",
+        "Joaquín is a customer today",
+        "Simón is calling Hernando"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando finally admit?",
+      "options": [
+        "He wrote the letter",
+        "Joaquín left in 1978 and never came back",
+        "Joaquín is Tomás's father",
+        "He has never heard the name"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Cómo está Vale después de leer la primera frase?",
+      "options": [
+        "Está blanca",
+        "Está muy contenta",
+        "Está cansada"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Vale has read one line of a letter that waited forty-seven years, and she cannot say it out loud. Now it is in Tomás's hand.",
+  "rereadQuestions": [
+    {
+      "q": "How many days are left in the bet?",
+      "options": [
+        "Thirty",
+        "Twenty-five",
+        "Twenty-two",
+        "Forty-seven"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Why does Tomás first think it is a love letter?",
+      "options": [
+        "It is a letter with only a man's name on it",
+        "It smells of roses",
+        "It has a heart drawn on it",
+        "Vale says so"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Dónde puso Rosa el cuaderno?",
+      "options": [
+        "En el mostrador",
+        "En la pared",
+        "En el radio"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:era",
+    "c:hay",
+    "c:no-me-digas",
+    "c:puede-ser",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "p:possessives-basic",
+    "p:quantifiers-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:abuela",
+    "l:acordar",
+    "l:ahora",
+    "l:antes",
+    "l:año",
+    "l:blanco",
+    "l:cabeza",
+    "l:café",
+    "l:carta",
+    "l:conocer",
+    "l:cosa",
+    "l:cuaderno",
+    "l:día",
+    "l:escribir",
+    "l:estar",
+    "l:foto",
+    "l:frase",
+    "l:hablar",
+    "l:hacer",
+    "l:irse",
+    "l:leer",
+    "l:mano",
+    "l:mesa",
+    "l:mostrador",
+    "l:nieto",
+    "l:nombre",
+    "l:parecer",
+    "l:pasar",
+    "l:poder",
+    "l:poner",
+    "l:quedar",
+    "l:quién",
+    "l:qué",
+    "l:romántico",
+    "l:salir",
+    "l:ser",
+    "l:sobre",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:viejo",
+    "l:volver"
+  ]
+}

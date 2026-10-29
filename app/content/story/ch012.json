@@ -1,0 +1,192 @@
+{
+  "id": "ch012",
+  "unit": "u06",
+  "title": "La máquina de discos",
+  "text": "Hernando vuelve al café con un disco viejo.\nSimón: ¡Cuánto tiempo! ¡Cuánto tiempo!\nHernando: ¿Cuánto tiempo? Salí ayer a las cuatro, Simón.\nHernando pone el disco en la mesa y el tinto en el mostrador. ¡Crac!\nVale: El mostrador de Rosa es un desastre.\nHernando: Tomás, tú quieres una historia. Yo entré al café en 1979. El café era pequeño. Había cuatro mesas y una máquina de discos, allá, en la pared.\nTomás: ¿Una máquina de discos? ¿Y la televisión?\nHernando: No había televisión. Había radio, y el radio era de Rosa.\nVale: ¿Y Rosa? ¿Era simpática?\nHernando: ¿Simpática? No. Rosa tenía treinta años y era muy brava. Pero la calle tenía olor a pandeyuca. Toda la calle.\nSimón: ¡Muy brava! ¡Muy brava!\nHernando: Este es mi recuerdo favorito: Rosa, el radio y su disco de tango.\nTomás: ¿Y el chico de la foto? ¿Estaba en el café?\nHernando mira la pared. Mira el disco. Mira a Tomás.\nHernando: En 1979 él no estaba. Rosa estaba sola. Y estaba triste.\nHernando: El disco era de Rosa. Ahora es tu disco.\nTomás: Gracias, Don Hernando. Quedan veinticuatro días. Mañana reparo el mostrador.\nHernando: Rosa nunca reparó el mostrador. Nunca.",
+  "gloss": [
+    {
+      "es": "el mostrador",
+      "en": "the counter"
+    },
+    {
+      "es": "¡Crac!",
+      "en": "Crack!"
+    },
+    {
+      "es": "Salí ayer a las cuatro",
+      "en": "I left yesterday at four"
+    },
+    {
+      "es": "una máquina de discos",
+      "en": "a jukebox"
+    },
+    {
+      "es": "Rosa era muy brava",
+      "en": "Rosa had a real temper"
+    },
+    {
+      "es": "la calle tenía olor a pandeyuca",
+      "en": "the street smelled of pandeyuca (cheese bread)"
+    },
+    {
+      "es": "su disco de tango",
+      "en": "her tango record"
+    },
+    {
+      "es": "Ahora es tu disco",
+      "en": "Now it's your record"
+    },
+    {
+      "es": "Quedan veinticuatro días",
+      "en": "There are twenty-four days left"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Simón's «¡Cuánto tiempo!» annoy Hernando?",
+      "options": [
+        "Hernando was only away since yesterday afternoon",
+        "Hernando has been gone for a year",
+        "Simón says it in English",
+        "Simón has never met Hernando"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What was on the wall of the café in 1979?",
+      "options": [
+        "A television",
+        "A jukebox",
+        "A photo of Altamira",
+        "A map of Bogotá"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How does Hernando describe Rosa at thirty?",
+      "options": [
+        "Shy and quiet",
+        "Lazy but kind",
+        "She had a real temper",
+        "She was always singing"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Cómo estaba Rosa en 1979, según Hernando?",
+      "options": [
+        "Sola y triste",
+        "Con el chico de la foto",
+        "Muy contenta"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando give Tomás?",
+      "options": [
+        "A photo of Rosa",
+        "The key to the café",
+        "Rosa's tango record",
+        "A cup of tinto"
+      ],
+      "answer": 2
+    }
+  ],
+  "hook": "Tomás has promised to fix the counter tomorrow, and Hernando says Rosa never once let anyone fix it. Tomorrow Tomás finds out why.",
+  "rereadQuestions": [
+    {
+      "q": "How many tables did the café have when Hernando first came?",
+      "options": [
+        "Two",
+        "Four",
+        "Twelve",
+        "Thirty"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿De quién era el radio del café?",
+      "options": [
+        "De Hernando",
+        "De Rosa",
+        "De Vale"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What happens when Hernando puts his coffee on the counter?",
+      "options": [
+        "It makes a cracking noise",
+        "Simón drinks it",
+        "Vale takes it away",
+        "Nothing at all"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:cuanto-tiempo",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:oye-mira",
+    "g:adjective-agreement",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:ser-identity",
+    "g:stem-boot",
+    "p:demonstratives-basic",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:tener-anos"
+  ],
+  "lexemes": [
+    "l:ahora",
+    "l:allá",
+    "l:ayer",
+    "l:año",
+    "l:bravo",
+    "l:café",
+    "l:calle",
+    "l:chico",
+    "l:cuánto",
+    "l:desastre",
+    "l:disco",
+    "l:día",
+    "l:entrar",
+    "l:estar",
+    "l:favorito",
+    "l:foto",
+    "l:historia",
+    "l:mañana",
+    "l:mesa",
+    "l:mirar",
+    "l:mostrador",
+    "l:máquina",
+    "l:olor",
+    "l:pared",
+    "l:pequeño",
+    "l:poner",
+    "l:quedar",
+    "l:querer",
+    "l:radio",
+    "l:recuerdo",
+    "l:reparar",
+    "l:salir",
+    "l:ser",
+    "l:simpático",
+    "l:tango",
+    "l:televisión",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:triste",
+    "l:viejo",
+    "l:volver"
+  ]
+}

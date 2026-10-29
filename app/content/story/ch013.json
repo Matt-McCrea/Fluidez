@@ -1,0 +1,206 @@
+{
+  "id": "ch013",
+  "unit": "u06",
+  "title": "Enero, febrero, marzo",
+  "text": "Vale: Tomás, eres ingeniero de software, no de mostradores.\nTomás saca un ladrillo del mostrador. Dentro hay un cuaderno viejo.\nVale lee: «Las recetas de Rosa. 2 de enero de 1979».\nVale: Enero: pandeyucas. Febrero: arepas. Marzo: pan de mazorca. Abril: chocolate. Mayo: jugo de fresa. Junio: jugo de mango.\nTomás: ¿Mango? ¿Rosa también compró cuarenta libras?\nVale: Julio: ajiaco. Agosto: pan de naranja. Septiembre: arepas con aguacate. Octubre: pan de banano. Noviembre: tinto con canela. Diciembre: natilla para los Gómez.\nSimón: ¡Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre!\nHernando: Es un cuaderno del siglo pasado.\nVale: Hay recetas de cuatro décadas. ¡Cuatro décadas, Tomás!\nTomás: ¡Claro! Rosa nunca reparó su mostrador.\nVale: Mis recetas son modernas. Las recetas de Rosa son mejores.\nTomás: Como la cafetera moderna: ya no funciona.\nHernando: Yo soy mayor, del siglo pasado, pero todavía funciono.\nEn el cuaderno hay una foto: Rosa joven, en la vitrina del café.\nVale mira la foto y no habla.\nVale: Con las recetas de Rosa, ganamos los dos millones.\nDel cuaderno sale un sobre viejo. Tiene un nombre, y no es Rosa.",
+  "gloss": [
+    {
+      "es": "el mostrador",
+      "en": "the counter"
+    },
+    {
+      "es": "ingeniero de software, no de mostradores",
+      "en": "a software engineer, not a counter engineer"
+    },
+    {
+      "es": "pandeyucas",
+      "en": "pandeyucas (cheese breads)"
+    },
+    {
+      "es": "canela",
+      "en": "cinnamon"
+    },
+    {
+      "es": "natilla para los Gómez",
+      "en": "natilla (a Christmas custard) for the Gómez family"
+    },
+    {
+      "es": "la cafetera",
+      "en": "the espresso machine"
+    },
+    {
+      "es": "todavía funciono",
+      "en": "I still work"
+    },
+    {
+      "es": "un sobre viejo",
+      "en": "an old envelope"
+    },
+    {
+      "es": "Tiene un nombre, y no es Rosa",
+      "en": "It has a name on it, and it isn't Rosa"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Where was Rosa's notebook?",
+      "options": [
+        "In the photo album",
+        "Inside the counter, behind a loose brick",
+        "Under Simón's cage",
+        "In Hernando's taxi"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Tomás suddenly say «¡Claro!»?",
+      "options": [
+        "He finally understands why Rosa never fixed the counter",
+        "He has fixed the counter",
+        "He likes cinnamon coffee",
+        "He remembers the date"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Hernando's joke about being from the last century?",
+      "options": [
+        "He is old, but he still works, unlike the espresso machine",
+        "He was born in Toronto",
+        "He has never used a notebook",
+        "He wants a new espresso machine"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué receta es de diciembre?",
+      "options": [
+        "Natilla para los Gómez",
+        "Jugo de mango",
+        "Pan de mazorca"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Vale hopeful at the end?",
+      "options": [
+        "Rosa's recipes could help them win the bet",
+        "Altamira has called",
+        "The espresso machine works again",
+        "Tomás has agreed to stay a year"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "An old envelope has fallen out of Rosa's notebook. It has never been posted, and the name on it is not Rosa's.",
+  "rereadQuestions": [
+    {
+      "q": "Which recipe makes Tomás think of his own mistake at the market?",
+      "options": [
+        "Mango juice in June",
+        "Ajiaco in July",
+        "Chocolate in April",
+        "Cinnamon coffee in November"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Dónde está Rosa en la foto?",
+      "options": [
+        "En la vitrina del café",
+        "En el mercado",
+        "En Toronto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What date is on the first page of the notebook?",
+      "options": [
+        "2 January 1979",
+        "5 May 1998",
+        "31 December 1978",
+        "The notebook has no date"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:hay",
+    "c:oye-mira",
+    "c:tienes",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:ser-identity",
+    "g:stem-boot",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abril",
+    "l:agosto",
+    "l:aguacate",
+    "l:ajiaco",
+    "l:arepa",
+    "l:banano",
+    "l:cafetera",
+    "l:café",
+    "l:canela",
+    "l:chocolate",
+    "l:claro",
+    "l:comprar",
+    "l:cuaderno",
+    "l:dentro",
+    "l:diciembre",
+    "l:década",
+    "l:enero",
+    "l:febrero",
+    "l:foto",
+    "l:fresa",
+    "l:funcionar",
+    "l:ganar",
+    "l:hablar",
+    "l:ingeniero",
+    "l:joven",
+    "l:jugo",
+    "l:julio",
+    "l:junio",
+    "l:ladrillo",
+    "l:leer",
+    "l:libra",
+    "l:mango",
+    "l:marzo",
+    "l:mayo",
+    "l:mayor",
+    "l:mazorca",
+    "l:mejor",
+    "l:mirar",
+    "l:moderno",
+    "l:mostrador",
+    "l:naranja",
+    "l:natilla",
+    "l:nombre",
+    "l:noviembre",
+    "l:octubre",
+    "l:pan",
+    "l:pasado",
+    "l:receta",
+    "l:reparar",
+    "l:sacar",
+    "l:salir",
+    "l:septiembre",
+    "l:ser",
+    "l:siglo",
+    "l:sobre",
+    "l:tener",
+    "l:tinto",
+    "l:viejo",
+    "l:vitrina"
+  ]
+}
