@@ -1,0 +1,236 @@
+{
+  "id": "ch049",
+  "unit": "u18",
+  "title": "Once horas de curvas",
+  "text": "Curva, curva, otra curva.\nVale abrió los ojos a las siete. Tomás estaba verde.\nTomás miró su tiquete: salida a las cinco y media, llegada a las dos y media.\nTomás: En Canadá, tomo un vuelo y en una hora llego.\nVale: Un vuelo es caro. Y las aerolíneas también tienen retraso.\nA las doce, el bus paró. Había un accidente en la carretera.\nConductor: Dos horas de retraso. Nueva salida a las dos.\nTomás: La próxima vez, aerolínea.\nLlegó un audio de Hernando: «Mijo, ¿ya llegaron?». Y detrás, Simón: «¡Señor Ospina! ¡Señor Ospina!».\nLa llegada a la terminal de Medellín fue a las cuatro y media, después de once horas de carretera. El conductor sacó el equipaje de debajo del bus: las bolsas de Vale, una caja de pollos.\nLa maleta de Tomás no salió.\nTomás: ¿Y mi maleta? Ahí está mi pasaporte. Y el café de Rosa. Y el tiquete de regreso.\nConductor: Señor, ya no hay más equipaje.\nVale: Tranquilo. Mañana volvemos a la terminal.\nEl hostal estaba en una montaña. En la recepción, una chica buscó la reserva en la computadora.\nChica: Tengo una reserva a nombre de Valentina Ospina. Dos habitaciones. ¿Me presta su pasaporte, señor?\nTomás: Mi pasaporte está en mi maleta, y mi maleta no sé dónde está.\nChica: Sin pasaporte, no hay habitación.\nVale puso tres almojábanas en la mesa de la recepción.\nVale: Él es un cliente excelente. Mañana le enseñamos el pasaporte.\nDesde la ventana de la habitación, Tomás vio las luces del metrocable encima de la ciudad.\nVale: Bueno, tenemos una misión: tu maleta. El regreso es el domingo, y la fiesta es pasado mañana.\nTomás: ¿Y la segunda misión?\nVale: Mi mamá.",
+  "gloss": [
+    {
+      "es": "Curva, curva, otra curva.",
+      "en": "Bend, bend, another bend."
+    },
+    {
+      "es": "Tomás estaba verde.",
+      "en": "Tomás was green (carsick)."
+    },
+    {
+      "es": "Nueva salida a las dos.",
+      "en": "We leave again at two."
+    },
+    {
+      "es": "una caja de pollos",
+      "en": "a box of chickens"
+    },
+    {
+      "es": "ya no hay más equipaje",
+      "en": "there is no more luggage"
+    },
+    {
+      "es": "Mañana le enseñamos el pasaporte.",
+      "en": "We'll show you the passport tomorrow."
+    },
+    {
+      "es": "metrocable",
+      "en": "Medellín's cable cars, part of the metro"
+    },
+    {
+      "es": "pasado mañana",
+      "en": "the day after tomorrow"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Tomás say \"next time, airline\"?",
+      "options": [
+        "The road is all bends, he feels sick and the bus is two hours late",
+        "Vale prefers to fly",
+        "The bus is too expensive",
+        "He has lost his ticket"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is in Tomás's missing suitcase?",
+      "options": [
+        "His passport, Rosa's coffee and his return ticket",
+        "Vale's almojábanas",
+        "A bicycle",
+        "Hernando's taxi keys"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Vale get them a room without a passport?",
+      "options": [
+        "She puts three almojábanas on the reception desk and promises to show it tomorrow",
+        "She pays double",
+        "She calls her mother",
+        "She shows her own passport twice"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cuál es la primera misión de Vale y Tomás?",
+      "options": [
+        "Encontrar la maleta de Tomás",
+        "Ver el metrocable",
+        "Comprar el tiquete de regreso",
+        "Bailar en la fiesta"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What came out from under the bus instead of Tomás's suitcase?",
+      "options": [
+        "Vale's bags and a box of chickens",
+        "Two bicycles",
+        "Hernando's packet",
+        "Nothing at all"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "According to his ticket, when should they have arrived?",
+      "options": [
+        "Half past two",
+        "Half past four",
+        "Seven o'clock",
+        "Midnight"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "When are they going back to Bogotá?",
+      "options": [
+        "On Sunday",
+        "Tomorrow",
+        "The day after tomorrow",
+        "Next month"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The suitcase has vanished somewhere between Bogotá and Medellín, and the party is the day after tomorrow. Tomorrow Tomás meets the bus company, and its least interested employee.",
+  "requires": [
+    "c:a-nombre-de",
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:no-se",
+    "c:tengo",
+    "c:tienes",
+    "c:tranquilo",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:container-de",
+    "p:days-el-lunes",
+    "p:event-ser-en",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-pasado-que-viene",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:accidente",
+    "l:aerolínea",
+    "l:ahí",
+    "l:almojábana",
+    "l:audio",
+    "l:bolsa",
+    "l:bueno",
+    "l:bus",
+    "l:buscar",
+    "l:café",
+    "l:caja",
+    "l:caro",
+    "l:carretera",
+    "l:chica",
+    "l:ciudad",
+    "l:cliente",
+    "l:computadora",
+    "l:conductor",
+    "l:curva",
+    "l:debajo",
+    "l:después",
+    "l:detrás",
+    "l:domingo",
+    "l:dónde",
+    "l:encima",
+    "l:enseñar",
+    "l:equipaje",
+    "l:estar",
+    "l:excelente",
+    "l:fiesta",
+    "l:habitación",
+    "l:hora",
+    "l:hostal",
+    "l:ir",
+    "l:llegada",
+    "l:llegar",
+    "l:luz",
+    "l:maleta",
+    "l:mamá",
+    "l:mañana",
+    "l:mesa",
+    "l:mijo",
+    "l:mirar",
+    "l:misión",
+    "l:montaña",
+    "l:nombre",
+    "l:nuevo",
+    "l:ojo",
+    "l:parar",
+    "l:pasado",
+    "l:pasaporte",
+    "l:pollo",
+    "l:poner",
+    "l:prestar",
+    "l:próximo",
+    "l:recepción",
+    "l:regreso",
+    "l:reserva",
+    "l:retraso",
+    "l:saber",
+    "l:sacar",
+    "l:salida",
+    "l:salir",
+    "l:ser",
+    "l:señor",
+    "l:tener",
+    "l:terminal",
+    "l:tiquete",
+    "l:tomar",
+    "l:tranquilo",
+    "l:ventana",
+    "l:ver",
+    "l:verde",
+    "l:vez",
+    "l:volver",
+    "l:vuelo"
+  ]
+}

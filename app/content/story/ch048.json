@@ -1,0 +1,252 @@
+{
+  "id": "ch048",
+  "unit": "u18",
+  "title": "Ida y vuelta",
+  "text": "A las cuatro de la madrugada, la Burra ya esperaba en la calle de Gloria.\nTomás subió con su maleta, y Vale subió con tres bolsas de almojábanas.\nTomás: ¿Tres bolsas? Son nueve horas, no nueve días.\nVale: Son para mi familia. Mi mamá dice que el pan de Bogotá es malo.\nSimón: ¡Buen viaje! ¡Buen viaje!\nHernando: Todavía no, Simón. Primero los pasajes.\nLa estación de buses del Salitre era grande y ruidosa, y eran las cinco menos cuarto.\nVendedora: Buenos días. ¿Para dónde van?\nTomás: Para Medellín, por favor. Dos pasajes para el bus de las cinco y media.\nVendedora: ¿Los quiere sencillos o de ida y vuelta?\nTomás no contestó. Dudó un momento y miró a Vale. En Medellín estaba toda la familia de Vale.\nVale: ¿Qué te pasa? Ida y vuelta, claro. Mi trabajo está en Bogotá.\nVendedora: ¿A nombre de quién?\nTomás: A nombre de Tomás Herrera y Valentina Ospina.\nVendedora: Listo, señor Ospina.\nTomás: No, señora. Herrera. Ospina es ella.\nVendedora: Ah, ¿no son esposos?\nSimón: ¡Me encantaría!\nVale no dijo nada, pero estaba muy roja.\nAntes del bus, Hernando sacó un paquete de su chaqueta.\nHernando: Esto es para la mamá de Vale. Es café de Rosa. El último paquete.\nVale: ¿Para mi mamá? ¿Usted la conoce?\nHernando: Yo no. Pero Rosa sí. Rosa fue a Medellín una vez, en 1990, sola. Nunca me explicó el motivo.\nTomás: ¿Y usted no me dijo eso antes?\nHernando: Usted nunca me preguntó, mijo.\nHernando le dio un abrazo largo.\nHernando: Primero la salud, mijo. Y oiga mucho: es necesario. Allá hablan rápido.\nTomás: Gracias por todo, Hernando.\nSimón: ¡Buen viaje, señor Ospina!\nTomás puso el paquete en la maleta, y la maleta fue debajo del bus con las otras.\nEl bus salió a las cinco y media. Antes de salir de Bogotá, Vale ya dormía en el hombro de Tomás.",
+  "gloss": [
+    {
+      "es": "¡Buen viaje!",
+      "en": "Have a good trip!"
+    },
+    {
+      "es": "Mi mamá dice que el pan de Bogotá es malo.",
+      "en": "My mum says the bread in Bogotá is bad."
+    },
+    {
+      "es": "¿Los quiere sencillos o de ida y vuelta?",
+      "en": "Do you want them single or return?"
+    },
+    {
+      "es": "Listo, señor Ospina.",
+      "en": "All set, Mr Ospina."
+    },
+    {
+      "es": "estaba muy roja",
+      "en": "she was bright red (embarrassed)"
+    },
+    {
+      "es": "Nunca me explicó el motivo.",
+      "en": "She never told me why."
+    },
+    {
+      "es": "Primero la salud, mijo.",
+      "en": "Health comes first, son."
+    },
+    {
+      "es": "Y oiga mucho: es necesario.",
+      "en": "And listen a lot: you have to."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Tomás hesitate when the seller asks \"single or return\"?",
+      "options": [
+        "He suddenly wonders if Vale will want to stay in Medellín with her family",
+        "He wants to stay in Medellín for ever",
+        "He has no money for two tickets",
+        "He doesn't understand the question"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Vale go red at the ticket counter?",
+      "options": [
+        "The seller thinks they are married, and Simón shouts that he'd love that",
+        "She has forgotten her ID",
+        "The tickets are too expensive",
+        "Hernando tells a terrible joke"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando reveal about Rosa?",
+      "options": [
+        "She went to Medellín once, alone, in 1990, and never said why",
+        "She was born in Medellín",
+        "She knew Vale's mother well",
+        "She sold coffee in the bus station"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué le da Hernando a Tomás para la mamá de Vale?",
+      "options": [
+        "Un paquete de café de Rosa",
+        "Tres bolsas de almojábanas",
+        "Una carta de Rosa",
+        "Los pasajes del bus"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Where does Tomás put Hernando's packet?",
+      "options": [
+        "In his suitcase, which goes under the bus",
+        "In his jacket",
+        "In Vale's bag",
+        "In the Burra"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "At what time does the bus leave?",
+      "options": [
+        "Half past five",
+        "Quarter to five",
+        "Four o'clock",
+        "Nine o'clock"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Vale taking three bags of almojábanas?",
+      "options": [
+        "Her mum says the bread in Bogotá is bad",
+        "She wants to sell them on the bus",
+        "They are for Hernando",
+        "She is hungry"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Vale is asleep on Tomás's shoulder, Rosa's last packet of coffee is in the hold, and nine hours of mountain road lie ahead. Not all of the luggage is going to arrive.",
+  "requires": [
+    "c:a-nombre-de",
+    "c:bien-y-tu",
+    "c:buen-viaje",
+    "c:claro-listo",
+    "c:era",
+    "c:hola-buenos-dias",
+    "c:ida-y-vuelta",
+    "c:me-encantaria",
+    "c:me-explico",
+    "c:oiga-oye",
+    "c:por-favor",
+    "c:te-pasa-algo",
+    "c:todavia-no",
+    "c:un-abrazo",
+    "c:una-vez",
+    "g:adjective-agreement",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:container-de",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abrazo",
+    "l:allá",
+    "l:almojábana",
+    "l:antes",
+    "l:bolsa",
+    "l:buen",
+    "l:bueno",
+    "l:bus",
+    "l:café",
+    "l:calle",
+    "l:chaqueta",
+    "l:claro",
+    "l:conocer",
+    "l:contestar",
+    "l:dar",
+    "l:debajo",
+    "l:decir",
+    "l:dormir",
+    "l:dudar",
+    "l:día",
+    "l:dónde",
+    "l:encantar",
+    "l:esperar",
+    "l:esposo",
+    "l:estación",
+    "l:estar",
+    "l:explicar",
+    "l:familia",
+    "l:favor",
+    "l:grande",
+    "l:hablar",
+    "l:hombro",
+    "l:hora",
+    "l:ida",
+    "l:ir",
+    "l:largo",
+    "l:listo",
+    "l:madrugada",
+    "l:maleta",
+    "l:malo",
+    "l:mamá",
+    "l:mijo",
+    "l:mirar",
+    "l:momento",
+    "l:motivo",
+    "l:necesario",
+    "l:nombre",
+    "l:oír",
+    "l:pan",
+    "l:paquete",
+    "l:pasaje",
+    "l:pasar",
+    "l:poner",
+    "l:preguntar",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:rojo",
+    "l:ruidoso",
+    "l:rápido",
+    "l:sacar",
+    "l:salir",
+    "l:salud",
+    "l:sencillo",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:subir",
+    "l:trabajo",
+    "l:vendedor",
+    "l:vez",
+    "l:viaje",
+    "l:vuelta"
+  ]
+}

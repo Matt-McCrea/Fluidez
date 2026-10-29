@@ -1,0 +1,268 @@
+{
+  "id": "ch051",
+  "unit": "u18",
+  "title": "Una amiga mía",
+  "text": "A las cinco menos un minuto, el empleado de la terminal llegó al hostal con una maleta negra.\nEmpleado: ¿Esta maleta es suya, señor?\nTomás: ¡Sí, es mía! Mis camisas, mi pasaporte y el café de Rosa.\nTomás sacó de la maleta un saco morado.\nVale: ¿Te vas a vestir con esto? No, Tomás. Hoy no.\nVale le quitó el saco de las manos.\nLa casa de la familia Ospina estaba en la carrera 70. La fiesta oficial empezaba a las ocho, pero a las cinco ya había cuarenta personas, música y mucho ruido.\nTío: ¡Hola, pues! ¿Usted es el amigo de Vale?\nPrima: ¿Y qué más, pues? ¿Cómo le pareció Medellín, pues?\nDe diez palabras, Tomás entendía una. No entendía siquiera los nombres. La única palabra fácil era «pues».\nA las siete, la abuela de Vale lo sacó a bailar. Tomás utilizó su única vuelta, y la abuela le dio un beso.\nAbuela: ¡Muy bien, mijo! ¿Y la otra vuelta?\nDespués, la mamá de Vale lo llevó a la cocina. Se llamaba Beatriz, y tenía los ojos de Vale.\nTomás: Esto es para usted. Es de Hernando. Es café de Rosa.\nBeatriz miró el paquete un rato largo.\nBeatriz: Rosa me trajo un café igual, en 1990. Estuvo en esta casa una vez. Rosa era una amiga mía.\nTomás: ¿Una amiga suya? ¿Y por qué estaba en Medellín?\nBeatriz: Buscaba a su hermano, Joaquín. Mi papá trabajó con él aquí, unos años. Joaquín se fue después para la costa.\nTomás: ¿Para la costa? ¿Dónde?\nBeatriz: Rosa me dijo el nombre de un pueblo. Cuando Vale se fue para Bogotá, yo la mandé al café de Rosa. Vale no sabe nada de esto.\nDesde la sala, Vale gritó.\nVale: ¡Tomás! ¡Mi familia es tuya también! ¡Ven a bailar!",
+  "gloss": [
+    {
+      "es": "A las cinco menos un minuto",
+      "en": "At one minute to five"
+    },
+    {
+      "es": "¿Te vas a vestir con esto?",
+      "en": "Are you going to wear this?"
+    },
+    {
+      "es": "La fiesta oficial",
+      "en": "The official party"
+    },
+    {
+      "es": "¡Hola, pues!",
+      "en": "Well, hello there!"
+    },
+    {
+      "es": "¿Y qué más, pues?",
+      "en": "So, how's it going?"
+    },
+    {
+      "es": "¿Cómo le pareció Medellín, pues?",
+      "en": "So, what did you think of Medellín?"
+    },
+    {
+      "es": "De diez palabras, Tomás entendía una.",
+      "en": "Tomás understood one word in ten."
+    },
+    {
+      "es": "lo sacó a bailar",
+      "en": "asked him to dance"
+    },
+    {
+      "es": "Rosa era una amiga mía.",
+      "en": "Rosa was a friend of mine."
+    },
+    {
+      "es": "¡Mi familia es tuya también!",
+      "en": "My family is yours too!"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Vale take the purple jacket out of Tomás's hands?",
+      "options": [
+        "She doesn't want him to wear it to the party",
+        "It belongs to the passenger",
+        "It is dirty",
+        "She wants to wear it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Tomás cope with the family's Spanish?",
+      "options": [
+        "Badly: he understands one word in ten, mostly \"pues\"",
+        "Perfectly: they speak slowly for him",
+        "He speaks English with everyone",
+        "Vale translates everything"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Beatriz reveal?",
+      "options": [
+        "Rosa visited her in 1990 looking for Joaquín, who had gone to the coast",
+        "Joaquín lives in Medellín",
+        "Rosa was her sister",
+        "Hernando was in Medellín too"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What has Beatriz never told Vale?",
+      "options": [
+        "That she sent Vale to Rosa's café because of Rosa's visit",
+        "That the party is cancelled",
+        "That she knows Altamira",
+        "That she doesn't like almojábanas"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué le pregunta la abuela a Tomás después de bailar?",
+      "options": [
+        "¿Y la otra vuelta?",
+        "¿Usted es el amigo de Vale?",
+        "¿Esta maleta es suya?",
+        "¿Cómo le pareció Medellín?"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How many people were already at the house at five?",
+      "options": [
+        "Forty",
+        "Eight",
+        "Ten",
+        "Seventy"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who did Joaquín work with in Medellín?",
+      "options": [
+        "Beatriz's father",
+        "Hernando",
+        "Vale's uncle",
+        "Rosa"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Rosa bring Beatriz in 1990?",
+      "options": [
+        "Coffee, just like Hernando's packet",
+        "A letter for Joaquín",
+        "A photo of the café",
+        "Almojábanas"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Beatriz has kept Rosa's secret for thirty six years, and Vale doesn't know a word of it. On Sunday's bus back to Bogotá, Tomás has nine hours of bends to decide whether to tell her.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:con-el-ella",
+    "c:era",
+    "c:estuvo",
+    "c:hola-buenos-dias",
+    "c:igual",
+    "c:pues",
+    "c:que-mas",
+    "c:una-vez",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:parecer-quedar",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "p:aqui-ahi-alla",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:hedge-knowledge",
+    "p:lavarse-las-manos",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:street-names",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:amiga",
+    "l:amigo",
+    "l:aquí",
+    "l:año",
+    "l:bailar",
+    "l:beso",
+    "l:bien",
+    "l:buscar",
+    "l:café",
+    "l:camisa",
+    "l:carrera",
+    "l:casa",
+    "l:cocina",
+    "l:costa",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:después",
+    "l:dónde",
+    "l:empezar",
+    "l:empleado",
+    "l:entender",
+    "l:estar",
+    "l:familia",
+    "l:fiesta",
+    "l:fácil",
+    "l:gritar",
+    "l:hermano",
+    "l:hostal",
+    "l:hoy",
+    "l:igual",
+    "l:irse",
+    "l:largo",
+    "l:llamarse",
+    "l:llegar",
+    "l:llevar",
+    "l:maleta",
+    "l:mamá",
+    "l:mandar",
+    "l:mano",
+    "l:mijo",
+    "l:minuto",
+    "l:mirar",
+    "l:morado",
+    "l:música",
+    "l:negro",
+    "l:nombre",
+    "l:oficial",
+    "l:ojo",
+    "l:palabra",
+    "l:papá",
+    "l:paquete",
+    "l:parecer",
+    "l:pasaporte",
+    "l:persona",
+    "l:prima",
+    "l:pueblo",
+    "l:quitar",
+    "l:qué",
+    "l:rato",
+    "l:ruido",
+    "l:saber",
+    "l:sacar",
+    "l:saco",
+    "l:sala",
+    "l:ser",
+    "l:señor",
+    "l:siquiera",
+    "l:tener",
+    "l:terminal",
+    "l:trabajar",
+    "l:traer",
+    "l:tío",
+    "l:utilizar",
+    "l:venir",
+    "l:vestirse",
+    "l:vez",
+    "l:volver",
+    "l:vuelta",
+    "l:único"
+  ]
+}
