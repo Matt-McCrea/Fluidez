@@ -1,25 +1,25 @@
 {
   "id": "sc-u15-b",
   "unit": "u15",
-  "title": "The corner pharmacy",
-  "brief": "You're Tomás. You're over the flu, but now Doña Gloria has it, so you go to the pharmacy on the corner to buy something for her. Explain how she is and how you are. The pharmacist is a stranger, so use usted.",
+  "title": "The bird doctor",
+  "brief": "You're Tomás. Since your flu, Simón has been coughing and moping, so you've taken him to a vet in Teusaquillo. Tell her what's wrong with him and how you are. She's a stranger, so use usted.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Buenas tardes, joven. ¿Qué necesita?",
-      "npcEn": "Good afternoon, young man. What do you need?",
-      "intent": "Say your neighbour is ill: she has the flu.",
+      "npc": "Buenas tardes. Este es Simón, ¿cierto? ¿Qué le pasa?",
+      "npcEn": "Good afternoon. This is Simón, right? What's wrong with him?",
+      "intent": "Say he has a cough and he's very sad.",
       "accept": [
-        "Buenas tardes. Mi vecina está enferma. Tiene gripa.",
-        "Mi vecina Gloria está enferma. Tiene gripa.",
-        "Buenas tardes. Es para mi vecina. Está enferma, tiene gripa."
+        "Tiene tos y está muy triste.",
+        "Creo que está enfermo. Tiene tos y está muy triste.",
+        "Tiene mucha tos, y está triste."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "est[aá] enferma",
+          "pattern": "est[aá] (muy )?triste",
           "flags": "i",
-          "label": "she's ill: está enferma (estar for how she is, -a for a woman)"
+          "label": "how he is right now: está triste"
         }
       ],
       "focus": "g:ser-estar-adjectives",
@@ -27,82 +27,82 @@
     },
     {
       "id": "t2",
-      "npc": "Uy. ¿Y tiene fiebre?",
-      "npcEn": "Oh dear. And does she have a fever?",
-      "intent": "Say yes, she has a fever, and her head hurts.",
+      "npc": "¿Triste? Mmm. ¿Y normalmente? ¿Simón es un loro tranquilo?",
+      "npcEn": "Sad? Hmm. And normally? Is Simón a calm parrot?",
+      "intent": "Say no, he's a very nervous bird, but today he's very calm.",
       "accept": [
-        "Sí, tiene fiebre, y le duele mucho la cabeza.",
-        "Sí, tiene fiebre. Y le duele la cabeza.",
-        "Sí, tiene un poco de fiebre, y le duele la cabeza."
+        "No, es muy nervioso, pero hoy está muy tranquilo.",
+        "Para nada. Es un loro muy nervioso, pero hoy está tranquilo.",
+        "No, Simón es muy nervioso. Pero hoy está muy tranquilo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "es (un loro )?(muy )?nervioso",
+          "flags": "i",
+          "label": "what he's like: es nervioso"
+        },
+        {
+          "type": "regex",
+          "pattern": "est[aá] (muy )?tranquilo",
+          "flags": "i",
+          "label": "how he is today: está tranquilo"
+        }
+      ],
+      "focus": "x:ser-estar-adj",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y come bien? ¿Le parece que le duele algo?",
+      "npcEn": "And is he eating well? Do you think something hurts?",
+      "intent": "Say you think his stomach hurts, because he isn't eating.",
+      "accept": [
+        "Me parece que le duele el estómago, porque no come.",
+        "Creo que le duele el estómago. No come nada.",
+        "Me parece que le duele el estómago. No come."
       ],
       "require": [
         {
           "type": "regex",
           "pattern": "le duele",
           "flags": "i",
-          "label": "her head hurts: le duele la cabeza"
+          "label": "his stomach hurts: le duele el estómago"
         }
       ],
       "focus": "p:me-duele",
-      "next": "t3"
-    },
-    {
-      "id": "t3",
-      "npc": "¿Gloria? ¿La señora de la casa blanca? ¡Pero ella nunca está enferma!",
-      "npcEn": "Gloria? The lady from the white house? But she's never ill!",
-      "intent": "Say yes, she's a very strong person, but today she's very tired.",
-      "accept": [
-        "Sí, ella es muy fuerte, pero hoy está muy cansada.",
-        "Es verdad, es muy fuerte. Pero hoy está muy cansada.",
-        "Ella es muy fuerte, pero hoy está muy cansada."
-      ],
-      "require": [
-        {
-          "type": "regex",
-          "pattern": "es (muy )?fuerte",
-          "flags": "i",
-          "label": "what she's like: es fuerte"
-        },
-        {
-          "type": "regex",
-          "pattern": "est[aá] (muy )?cansada",
-          "flags": "i",
-          "label": "how she is today: está cansada"
-        }
-      ],
-      "focus": "g:ser-estar-adjectives",
       "next": "t4"
     },
     {
       "id": "t4",
-      "npc": "Bien. ¿Y usted? Usted tiene la cara roja. ¿Usted le pasó la gripa?",
-      "npcEn": "Right. And you? Your face is red. Did you give her the flu?",
-      "intent": "Say yes, it was you, but now you feel much better.",
+      "npc": "Escuche: Simón dice «me siento mal». ¿Y usted, señor? Usted también tiene tos.",
+      "npcEn": "Listen: Simón is saying «I feel ill». And you, sir? You've got a cough too.",
+      "intent": "Say you had the flu all week, but now you're well.",
       "accept": [
-        "Sí, fui yo. Pero ahora me siento mucho mejor.",
-        "Creo que sí. Pero ahora me siento mucho mejor.",
-        "Sí, yo estuve enfermo. Ahora me siento mucho mejor."
+        "Tuve gripa toda la semana, pero ahora estoy bien.",
+        "Sí, estuve enfermo toda la semana. Ahora estoy mucho mejor.",
+        "Tuve gripa, pero ya estoy sano."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "me siento",
+          "pattern": "estoy (muy |mucho )?(bien|mejor|sano)",
           "flags": "i",
-          "label": "how you feel: me siento…"
+          "label": "how you are now: estoy bien"
         }
       ],
-      "focus": "c:me-siento-mal",
+      "focus": "g:ser-estar-adjectives",
       "next": "t5"
     },
     {
       "id": "t5",
-      "npc": "Muy bien. Para la fiebre, esto. Es muy bueno, pero cuesta cuarenta mil pesos.",
-      "npcEn": "Very good. For the fever, this. It's very good, but it costs forty thousand pesos.",
-      "intent": "Say it seems a bit expensive to you, but fine, you'll take it.",
+      "npc": "¡Ja! Ya entiendo. Simón no está enfermo: tose como usted, y habla como usted. Es un loro muy inteligente.",
+      "npcEn": "Ha! Now I get it. Simón isn't ill: he coughs like you, and he talks like you. He's a very clever parrot.",
+      "intent": "Say what a fright, and that Simón seems very clever to you.",
       "accept": [
-        "Me parece un poco caro, pero bueno, lo llevo.",
-        "Me parece un poco caro, pero lo llevo.",
-        "Uy, me parece un poco caro. Pero está bien, lo llevo."
+        "¡Qué susto! Simón me parece muy inteligente.",
+        "¡Qué susto! Me parece muy inteligente.",
+        "Me parece muy inteligente, doctora. ¡Pero qué susto!"
       ],
       "require": [
         {
@@ -117,108 +117,109 @@
     },
     {
       "id": "t6",
-      "npc": "Aquí tiene. Y usted, a descansar. Todavía parece cansado.",
-      "npcEn": "Here you are. And you, get some rest. You still look tired.",
-      "intent": "Thank her, and say you agree: you're very tired.",
+      "npc": "Son cien mil pesos, por favor.",
+      "npcEn": "That's a hundred thousand pesos, please.",
+      "intent": "Say that seems too expensive to you, for a cough that isn't real.",
       "accept": [
-        "Gracias. Estoy de acuerdo, estoy muy cansado.",
-        "Gracias, señora. Estoy de acuerdo. Estoy muy cansado.",
-        "Estoy de acuerdo, estoy muy cansado. Muchas gracias."
+        "¿Cien mil? Me parece demasiado caro.",
+        "Uy, me parece demasiado caro. Simón no está enfermo.",
+        "¿Cien mil pesos? Es demasiado caro."
       ],
       "require": [
         {
-          "type": "regex",
-          "pattern": "estoy de acuerdo",
-          "flags": "i",
-          "label": "I agree: estoy de acuerdo"
-        },
-        {
-          "type": "regex",
-          "pattern": "estoy (muy )?cansado",
-          "flags": "i",
-          "label": "how you are: estoy cansado"
+          "type": "containsWord",
+          "word": "demasiado",
+          "label": "too expensive: demasiado caro"
         }
       ],
-      "focus": "c:estoy-de-acuerdo",
+      "focus": "p:no-es-nada-adj",
       "next": null
     }
   ],
   "requires": [
-    "c:aqui-tiene",
     "c:bien-y-tu",
     "c:creo-que",
-    "c:estoy-de-acuerdo",
-    "c:fui",
-    "c:gracias-de-nada",
     "c:hola-buenos-dias",
     "c:me-siento-mal",
+    "c:no-cierto",
+    "c:normalmente",
+    "c:para-nada",
+    "c:por-favor",
+    "c:porque",
+    "c:que-susto",
     "c:tienes",
-    "g:adjective-agreement",
-    "g:direct-objects",
+    "c:tranquilo",
+    "g:adverbs-mente",
+    "g:cause-result",
+    "g:commands-usted",
     "g:estar-location-states",
     "g:gender-articles",
     "g:gustar-full",
     "g:indirect-objects",
+    "g:negation-words",
     "g:parecer-quedar",
     "g:present-ar",
     "g:present-er-ir",
-    "g:preterite-ar",
     "g:preterite-irregular-strong",
-    "g:preterite-ser-ir-hacer",
+    "g:quantifiers",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
+    "g:stem-e-i",
     "g:that-clauses",
-    "l:acuerdo",
     "l:ahora",
-    "l:aquí",
     "l:bien",
-    "l:blanco",
     "l:buena",
-    "l:bueno",
-    "l:cabeza",
-    "l:cansado",
-    "l:cara",
     "l:caro",
-    "l:casa",
-    "l:costar",
+    "l:comer",
     "l:creer",
-    "l:descansar",
+    "l:decir",
+    "l:doctor",
     "l:doler",
     "l:enfermo",
+    "l:entender",
+    "l:escuchar",
     "l:estar",
-    "l:fiebre",
-    "l:fuerte",
+    "l:estómago",
+    "l:favor",
     "l:gripa",
+    "l:hablar",
     "l:hoy",
-    "l:joven",
-    "l:llevar",
+    "l:inteligente",
+    "l:ja",
+    "l:loro",
+    "l:mal",
     "l:mejor",
-    "l:necesitar",
+    "l:mmm",
+    "l:nervioso",
+    "l:normalmente",
     "l:parecer",
     "l:pasar",
     "l:peso",
     "l:qué",
-    "l:rojo",
+    "l:sano",
+    "l:semana",
     "l:sentirse",
     "l:ser",
-    "l:señora",
+    "l:señor",
+    "l:susto",
     "l:tarde",
     "l:tener",
-    "l:vecino",
-    "l:verdad",
+    "l:tos",
+    "l:toser",
+    "l:tranquilo",
+    "l:triste",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
-    "p:costar-pagar",
     "p:demonstratives-basic",
     "p:doler",
-    "p:es-tiene-lleva",
-    "p:frequency-scale",
+    "p:indefinites-basic",
     "p:me-duele",
-    "p:para-inf",
-    "p:poco-un-poco",
-    "p:possessives-basic",
+    "p:no-es-nada-adj",
+    "p:numbers-un-una",
     "p:quantifiers-basic",
-    "p:ya-todavia-basic"
+    "p:tambien-tampoco",
+    "p:te-presento-a",
+    "p:todos-los-dias"
   ]
 }

@@ -1,43 +1,174 @@
 {
   "node": "p:doler",
   "hook": {
-    "line": "Tomás has the flu and everything aches. In Spanish the sore part does the work: your head hurts you, the same way *gustar* works.",
-    "es": "Me duele la cabeza y tengo fiebre.",
-    "en": "My head hurts and I've got a fever."
+    "line": "Doña Gloria isn't satisfied with *me duele*. She wants details: how much, where, and when. Here's how to answer her, or a nurse.",
+    "es": "¿Te duele mucho?\nUn poco. Tengo dolor de cabeza.",
+    "en": "Does it hurt a lot?\nA little. I've got a headache."
   },
   "examples": [
-    { "es": "Me duele la cabeza.", "en": "My head hurts." },
-    { "es": "Me duelen los pies.", "en": "My feet hurt." },
-    { "es": "¿Te duele mucho?", "en": "Does it hurt a lot? (to a friend)" },
-    { "es": "A don Hernando le duele la rodilla.", "en": "Don Hernando's knee hurts." },
-    { "es": "No me duele nada.", "en": "Nothing hurts." },
-    { "es": "Tengo dolor de estómago.", "en": "I've got a stomach ache." }
+    {
+      "es": "¿Te duele mucho?",
+      "en": "Does it hurt a lot? (to a friend)"
+    },
+    {
+      "es": "Me duele un poco la espalda.",
+      "en": "My back hurts a little."
+    },
+    {
+      "es": "¿Dónde le duele, señora?",
+      "en": "Where does it hurt, ma'am?"
+    },
+    {
+      "es": "Me duele la rodilla cuando camino.",
+      "en": "My knee hurts when I walk."
+    },
+    {
+      "es": "Tengo dolor de estómago.",
+      "en": "I've got a stomach ache."
+    },
+    {
+      "es": "Tengo un dolor fuerte en el pecho.",
+      "en": "I've got a strong pain in my chest."
+    },
+    {
+      "es": "Ya no me duele.",
+      "en": "It doesn't hurt anymore."
+    }
   ],
-  "rule": "*Doler* works like *gustar*: the body part does the hurting, so the verb follows the body part.\n\nOne thing: *me duele la cabeza*.\nMore than one: *me duelen los pies*.\n\nWho's hurting goes in front: *me*, *te*, *le*, *nos*, *les*.\n\nIt's *la cabeza*, never *mi cabeza*: *me* already says whose.\n\nOr use the noun: *tengo dolor de cabeza*, I've got a headache.",
-  "smallPrint": "As with *gustar*, the body part is the subject of the verb.",
+  "rule": "You know *me duele la cabeza*. Now add the details anyone will ask for.\n\nHow much: *me duele mucho*, *me duele un poco*. Never *muy* here: *muy* only goes before a describing word.\nWhere: *¿Dónde te duele?* Point and say *aquí*.\nWhen: *me duele cuando camino*.\nNot any more: *ya no me duele*. Still: *todavía me duele*.\n\nOr make the pain a thing you have, with the noun *dolor*: *tengo dolor de cabeza*, *tengo dolor de estómago*. One sharp pain: *tengo un dolor fuerte en el pecho*.\n\nKeep the two apart. *Duele* is what the body part does; *dolor* is what you have.",
+  "smallPrint": "*Doler* changes its o to ue: *duele*, *duelen*. *Dolor* is a masculine noun: *un dolor fuerte*.",
   "readAndPick": [
-    { "es": "Me duelen los ojos.", "options": ["My eye hurts.", "My eyes hurt."], "answer": 1 },
-    { "es": "Le duele la espalda.", "options": ["His back hurts.", "My back hurts."], "answer": 0 },
-    { "es": "¿Te duele la cabeza?", "options": ["Does his head hurt?", "Does your head hurt?"], "answer": 1 },
-    { "es": "Nos duelen las piernas.", "options": ["Our legs hurt.", "Their legs hurt.", "My legs hurt."], "answer": 0 },
-    { "es": "Me duele un dedo.", "options": ["My fingers hurt.", "One of my fingers hurts."], "answer": 1 },
-    { "es": "Les duele la cabeza.", "options": ["His head hurts.", "Their heads hurt."], "answer": 1 },
-    { "es": "Me duelen las rodillas.", "options": ["My knee hurts.", "My knees hurt."], "answer": 1 },
-    { "es": "¿Te duelen los pies?", "options": ["Do your feet hurt?", "Does your foot hurt?"], "answer": 0 }
+    {
+      "es": "Me duele mucho.",
+      "options": [
+        "It hurts a lot.",
+        "It hurts a little."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me duele un poco.",
+      "options": [
+        "It hurts a lot.",
+        "It hurts a little."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ya no me duele.",
+      "options": [
+        "It doesn't hurt anymore.",
+        "It still hurts."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Todavía me duele.",
+      "options": [
+        "It doesn't hurt anymore.",
+        "It still hurts."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde te duele?",
+      "options": [
+        "Where does it hurt? (to a friend)",
+        "Where does it hurt, ma'am?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Dónde le duele?",
+      "options": [
+        "Where does it hurt? (to a friend)",
+        "Where does it hurt, ma'am?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me duele cuando como.",
+      "options": [
+        "It hurts when I eat.",
+        "It hurts when you eat."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te duele cuando caminas?",
+      "options": [
+        "Does it hurt when I walk?",
+        "Does it hurt when you walk?"
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *duele* or *duelen*: Me ___ la espalda.", "answer": "Me duele la espalda.", "accept": [], "why": "One back: *duele*." },
-    { "prompt": "Choose *duele* or *duelen*: Me ___ los pies.", "answer": "Me duelen los pies.", "accept": [], "why": "Two feet: *duelen*." },
-    { "prompt": "Say: My head hurts.", "answer": "Me duele la cabeza.", "accept": [], "why": "*Me* says whose head, so it's *la cabeza*." },
-    { "prompt": "Ask a friend: Does it hurt a lot?", "answer": "¿Te duele mucho?", "accept": [], "why": "*Te* for a friend, and *duele* for the one thing that hurts." },
-    { "prompt": "Say: Don Hernando's knee hurts.", "answer": "A don Hernando le duele la rodilla.", "accept": ["Le duele la rodilla a don Hernando."], "why": "*Le* points at him, and *a don Hernando* says who." },
-    { "prompt": "Make it more than one: Me duele la pierna. (say: My legs hurt.)", "answer": "Me duelen las piernas.", "accept": [], "why": "Two legs: *duelen*." },
-    { "prompt": "Say it with the noun instead: Me duele el estómago.", "answer": "Tengo dolor de estómago.", "accept": [], "why": "*Dolor* is something you have: *tengo dolor de*." }
+    {
+      "prompt": "Say: It hurts a lot.",
+      "answer": "Me duele mucho.",
+      "accept": [],
+      "why": "After the verb, a lot is *mucho*."
+    },
+    {
+      "prompt": "Say: My back hurts a little.",
+      "answer": "Me duele un poco la espalda.",
+      "accept": [
+        "Me duele la espalda un poco."
+      ],
+      "why": "*Un poco* goes after *duele*, and it's *la espalda*, not *mi espalda*."
+    },
+    {
+      "prompt": "Ask a friend: Where does it hurt?",
+      "answer": "¿Dónde te duele?",
+      "accept": [],
+      "why": "*Dónde* goes first, then *te duele* for a friend."
+    },
+    {
+      "prompt": "Ask an older lady politely: Where does it hurt?",
+      "answer": "¿Dónde le duele?",
+      "accept": [
+        "¿Dónde le duele, señora?"
+      ],
+      "why": "*Le* is the polite you."
+    },
+    {
+      "prompt": "Say it with the noun instead: Me duele el estómago.",
+      "answer": "Tengo dolor de estómago.",
+      "accept": [],
+      "why": "*Dolor* is a thing you have: *tengo dolor de*."
+    },
+    {
+      "prompt": "Say: My knee hurts when I walk.",
+      "answer": "Me duele la rodilla cuando camino.",
+      "accept": [
+        "Cuando camino, me duele la rodilla."
+      ],
+      "why": "*Cuando camino* adds the when; the rest doesn't change."
+    },
+    {
+      "prompt": "Say: It doesn't hurt anymore.",
+      "answer": "Ya no me duele.",
+      "accept": [],
+      "why": "*Ya no* goes at the front, before *me*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Me duele mi cabeza.", "right": "Me duele la cabeza.", "why": "Almost. *Me* already says it's yours, so the body part takes *la*." },
-    { "wrong": "Me duele los pies.", "right": "Me duelen los pies.", "why": "The verb follows the body part: two feet, *duelen*." },
-    { "wrong": "Estoy dolor de cabeza.", "right": "Tengo dolor de cabeza.", "why": "*Dolor* is a thing you have, so *tengo dolor*." }
+    {
+      "wrong": "Me duele muy.",
+      "right": "Me duele mucho.",
+      "why": "Almost. After a verb, a lot is *mucho*. *Muy* only goes before a describing word: *muy fuerte*."
+    },
+    {
+      "wrong": "Estoy dolor de cabeza.",
+      "right": "Tengo dolor de cabeza.",
+      "why": "*Dolor* is a thing you have, so *tengo*."
+    },
+    {
+      "wrong": "Tengo duele la cabeza.",
+      "right": "Me duele la cabeza.",
+      "why": "Pick one shape: *me duele* (the verb) or *tengo dolor de* (the noun), never both."
+    }
   ],
-  "personal": "Does anything hurt today? Say what, with *me duele* or *me duelen*, or say *no me duele nada*."
+  "personal": "Does anything hurt today? Say where, how much (*mucho* or *un poco*) and when. If nothing does, say *no me duele nada*."
 }

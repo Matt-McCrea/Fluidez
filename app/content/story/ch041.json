@@ -2,7 +2,7 @@
   "id": "ch041",
   "unit": "u15",
   "title": "Modo avión",
-  "text": "Era la chaqueta del esposo de Gloria, y era enorme.\nGloria: Es grande, mijo, pero hoy no sale sin chaqueta. No quiero otra gripa en esta casa.\nDespués de tres días en la cama, Tomás llegó al café a las seis. Vale estaba detrás del mostrador.\nVale: ¡Tomás! Con esa chaqueta, pareces turista.\nTomás: Me siento mucho mejor, gracias.\nVale: Me parece que todavía tienes la cara roja.\nGloria entró detrás de él con el pan.\nGloria: Doce llamadas en tres días, Vale. Yo las conté.\nVale: No estaba preocupada. Estaba informada. Es diferente.\nSimón: ¡Informada! ¡Informada!\nVale puso el celular en modo avión.\nMariana llegó con una noticia.\nMariana: Tengo que informarles algo. Altamira compró la casa de don Julio. Ahora tiene cinco casas de ocho. Quiere el control de toda la cuadra.\nTomás: ¿Y la nuestra?\nMariana: Sin la escritura de Rosa, no sé.\nVale: Entonces la buscamos hoy, todos.\nTomás: Estoy de acuerdo, y Simón también.\nHernando no habló de sus nietos. No pidió pan. Tomó su tinto y no dijo una palabra.\nVale: Hernando, ¿le pasa algo?\nHernando: Es personal, mija.\nVale no aceptó la respuesta. Miró a Tomás.\nVale: Tomás, ¿te parece que Hernando está bien?\nTomás: Me parece que sí. Está tranquilo.\nVale: Aprendiste mucho español, Tomás, pero todavía hablas mal cuando no dices la verdad.\nVale fue a la cocina. Hernando miró la puerta de la cocina.\nHernando: Mijo, el jueves a las ocho... ¿viene conmigo? No me gusta ir solo.\nTomás: Claro que sí.\nHernando: Usted me cae bien, mijo. Como Rosa.\nCuando Vale volvió, Tomás tenía un plan.\nTomás: Vale, el jueves por la mañana no estoy. Voy a San Victorino. Necesitamos sillas nuevas.\nVale: ¡Me parece una idea excelente! Voy contigo.\nSimón: ¡Voy contigo! ¡Voy contigo!",
+  "text": "Era la chaqueta del esposo de Gloria, y era enorme.\nGloria: Es grande, mijo, pero hoy no sale sin chaqueta. No quiero otra gripa en esta casa.\nDespués de tres días en la cama, Tomás llegó al café a las seis. Vale estaba detrás del mostrador.\nVale: ¡Tomás! Con esa chaqueta, pareces turista.\nTomás: Me siento mucho mejor, gracias.\nVale: Me parece que todavía tienes la cara roja.\nGloria entró detrás de él con el pan.\nGloria: Doce llamadas en tres días, Vale. Yo las conté.\nVale: No estaba preocupada. Estaba informada. Es diferente.\nSimón: ¡Informada! ¡Informada!\nVale puso el celular en modo avión.\nMariana llegó con una noticia.\nMariana: Tengo que informarles algo. Con la casa de don Julio, Altamira ya tiene cinco casas de ocho. Quiere el control de toda la cuadra.\nTomás: ¿Y la nuestra?\nMariana: Sin la escritura de Rosa, no sé.\nVale: Entonces la buscamos hoy, todos.\nTomás: Estoy de acuerdo, y Simón también.\nHernando no habló de sus nietos. No pidió pan. Tomó su tinto y no dijo una palabra.\nVale: Hernando, ¿le pasa algo?\nHernando: Es personal, mija.\nVale no aceptó la respuesta. Miró a Tomás.\nVale: Tomás, ¿te parece que Hernando está bien?\nTomás: Me parece que sí. Está tranquilo.\nVale: Aprendiste mucho español, Tomás, pero todavía hablas mal cuando no dices la verdad.\nVale fue a la cocina. Hernando miró la puerta de la cocina.\nHernando: Mijo, el jueves a las ocho... ¿viene conmigo? No me gusta ir solo.\nTomás: Claro que sí.\nHernando: Usted me cae bien, mijo. Como Rosa.\nCuando Vale volvió, Tomás tenía un plan.\nTomás: Vale, el jueves por la mañana no estoy. Voy a San Victorino. Necesitamos sillas nuevas.\nVale: ¡Me encanta la idea! Voy contigo.\nSimón: ¡Voy contigo! ¡Voy contigo!",
   "gloss": [
     {
       "es": "mijo",
@@ -55,7 +55,7 @@
     {
       "q": "What is Mariana's news?",
       "options": [
-        "Altamira bought Don Julio's house and wants control of the whole block",
+        "Altamira now owns five of the eight houses and wants the whole block",
         "Altamira has sold its houses",
         "The notary found the deed",
         "Don Julio is coming back"
@@ -124,6 +124,7 @@
     "c:estoy-de-acuerdo",
     "c:gracias-de-nada",
     "c:la-verdad",
+    "c:me-encanta",
     "c:me-gusta",
     "c:me-siento-mal",
     "c:no-se",
@@ -141,6 +142,7 @@
     "g:estar-participle",
     "g:gender-articles",
     "g:gustar-basic",
+    "g:gustar-full",
     "g:imperfect-states",
     "g:indirect-objects",
     "g:ir-a-plans",
@@ -187,7 +189,6 @@
   "lexemes": [
     "l:aceptar",
     "l:acuerdo",
-    "l:ahora",
     "l:aprender",
     "l:avión",
     "l:bien",
@@ -202,7 +203,6 @@
     "l:claro",
     "l:cocina",
     "l:comer",
-    "l:comprar",
     "l:contar",
     "l:control",
     "l:cuadra",
@@ -211,13 +211,13 @@
     "l:detrás",
     "l:diferente",
     "l:día",
+    "l:encantar",
     "l:enorme",
     "l:entrar",
     "l:escritura",
     "l:español",
     "l:esposo",
     "l:estar",
-    "l:excelente",
     "l:grande",
     "l:gripa",
     "l:gustar",

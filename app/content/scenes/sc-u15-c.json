@@ -1,71 +1,72 @@
 {
   "id": "sc-u15-c",
   "unit": "u15",
-  "title": "The tasting",
-  "brief": "You're Tomás. You're back at the café after the flu, and Vale wants your honest opinion on the week's new things. Tell her what you think and how you feel. She's your friend, so use tú.",
+  "title": "Three days closed",
+  "brief": "You're Tomás. After three days in bed, it's your first morning back at the café, and Vale is showing you what Don Hernando left behind. Tell her how things are and how you are. She's your friend, so use tú.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Tomás, prueba esta torta. Es nueva, para el menú de la semana. ¿Está rica o no?",
-      "npcEn": "Tomás, try this cake. It's new, for this week's menu. Is it good or not?",
-      "intent": "Say yes, it's delicious, but it seems very sweet to you.",
+      "npc": "¡Por fin, Tomás! Ayer Hernando cerró el café solo. ¿Ya viste la cocina?",
+      "npcEn": "At last, Tomás! Yesterday Hernando closed the café on his own. Have you seen the kitchen yet?",
+      "intent": "Say yes, and the cups aren't washed.",
       "accept": [
-        "Sí, está rica, pero me parece muy dulce.",
-        "Está muy rica, pero me parece muy dulce.",
-        "Sí, está rica. Pero me parece muy dulce."
+        "Sí. Las tazas no están lavadas.",
+        "Sí, ya la vi. Las tazas no están lavadas.",
+        "Sí, y las tazas no están lavadas."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "me parece",
+          "pattern": "est[aá]n lavadas",
           "flags": "i",
-          "label": "it seems to you: me parece"
+          "label": "the cups are (not) washed: están lavadas"
         }
       ],
-      "focus": "g:parecer-quedar",
+      "focus": "g:estar-participle",
       "next": "t2"
     },
     {
       "id": "t2",
-      "npc": "¿Dulce? Para nada. Tú todavía estás enfermo, por eso.",
-      "npcEn": "Sweet? Not at all. You're still ill, that's why.",
-      "intent": "Say you're not ill any more; you're fine now.",
+      "npc": "Y mira esta leche. Es del lunes.",
+      "npcEn": "And look at this milk. It's from Monday.",
+      "intent": "Say the milk has gone off.",
       "accept": [
-        "No, ya no estoy enfermo. Estoy muy bien.",
-        "Ya no estoy enfermo, Vale. Ahora estoy bien.",
-        "No estoy enfermo. Ahora estoy bien."
+        "Uy, la leche está mala.",
+        "La leche está mala, Vale.",
+        "Está mala. ¡Qué horror!"
       ],
       "require": [
         {
-          "type": "negation",
-          "label": "say you're not: no estoy…"
-        },
-        {
           "type": "regex",
-          "pattern": "estoy enfermo",
+          "pattern": "est[aá] mala",
           "flags": "i",
-          "label": "ill, right now: estoy enfermo"
+          "label": "gone off: está mala"
         }
       ],
-      "focus": "g:ser-estar-adjectives",
+      "focus": "x:ser-estar-adj",
       "next": "t3"
     },
     {
       "id": "t3",
-      "npc": "Bueno. Ahora el pan de queso. Lo hice a las cinco. ¿Está frío?",
-      "npcEn": "OK. Now the cheese bread. I made it at five. Is it cold?",
-      "intent": "Say no, it's not cold, it's delicious.",
+      "npc": "Hernando es un hombre excelente, pero en la cocina es un desastre. Prueba el tinto que dejó.",
+      "npcEn": "Hernando is an excellent man, but in the kitchen he's a disaster. Try the coffee he left.",
+      "intent": "Say it's too strong, and it's cold.",
       "accept": [
-        "No, no está frío. Está muy rico.",
-        "No, para nada. Está muy rico.",
-        "No está frío, Vale. Está rico."
+        "Es demasiado fuerte, y está frío.",
+        "Me parece demasiado fuerte. Y está frío.",
+        "Está frío y es demasiado fuerte."
       ],
       "require": [
         {
+          "type": "containsWord",
+          "word": "demasiado",
+          "label": "too strong: demasiado fuerte"
+        },
+        {
           "type": "regex",
-          "pattern": "est[aá] (muy )?rico",
+          "pattern": "est[aá] fr[ií]o",
           "flags": "i",
-          "label": "how it tastes: está rico"
+          "label": "how it is now: está frío"
         }
       ],
       "focus": "g:ser-estar-adjectives",
@@ -73,151 +74,153 @@
     },
     {
       "id": "t4",
-      "npc": "¡Las almojábanas! La caja está abierta, y no hay nada. ¿Y Simón? ¿Dónde está?",
-      "npcEn": "The almojábanas! The box is open, and there's nothing in it. And Simón? Where is he?",
-      "intent": "Say he's in the kitchen, and the kitchen door is open.",
+      "npc": "¿Y tú? Pareces cansado. ¿Estás bien?",
+      "npcEn": "And you? You look tired. Are you OK?",
+      "intent": "Say you're not tired at all; you're very happy to be back.",
       "accept": [
-        "Está en la cocina, y la puerta está abierta.",
-        "Simón está en la cocina. La puerta de la cocina está abierta.",
-        "En la cocina. La puerta está abierta."
+        "No estoy nada cansado. Estoy muy contento.",
+        "Para nada. Hoy estoy muy contento.",
+        "No, para nada. Estoy muy feliz."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "est[aá] abierta",
+          "pattern": "nada",
           "flags": "i",
-          "label": "the door is open: está abierta (la puerta, so it ends in -a)"
+          "label": "not at all: nada, or para nada"
+        },
+        {
+          "type": "regex",
+          "pattern": "estoy (muy )?(contento|feliz)",
+          "flags": "i",
+          "label": "how you feel: estoy contento"
         }
       ],
-      "focus": "g:estar-participle",
+      "focus": "p:no-es-nada-adj",
       "next": "t5"
     },
     {
       "id": "t5",
-      "npc": "¡Qué rabia! Bueno, la última. Hernando dice que su tinto es mejor que mi tinto. ¿Es verdad?",
-      "npcEn": "How infuriating! OK, the last one. Hernando says his tinto is better than my tinto. Is it true?",
-      "intent": "Say no, you don't agree: his tinto is too strong.",
+      "npc": "Bueno. El letrero de la puerta todavía dice «cerrado». ¿Lo cambio?",
+      "npcEn": "OK. The sign on the door still says «closed». Shall I change it?",
+      "intent": "Say yes: today the café is open.",
       "accept": [
-        "No, no estoy de acuerdo. Su tinto es demasiado fuerte.",
-        "No estoy de acuerdo. El tinto de Hernando es demasiado fuerte.",
-        "No, para nada. Su tinto es demasiado fuerte, Vale."
-      ],
-      "require": [
-        {
-          "type": "negation",
-          "label": "you don't agree: no…"
-        },
-        {
-          "type": "containsWord",
-          "word": "demasiado",
-          "label": "too strong: demasiado fuerte"
-        }
-      ],
-      "focus": "p:no-es-nada-adj",
-      "next": "t6"
-    },
-    {
-      "id": "t6",
-      "npc": "¡Gracias! Por fin. ¿Quieres más torta?",
-      "npcEn": "Thank you! At last. Do you want more cake?",
-      "intent": "Say no thanks, your stomach hurts a little.",
-      "accept": [
-        "No, gracias. Me duele un poco el estómago.",
-        "Gracias, pero no. Me duele un poco el estómago.",
-        "No, gracias, Vale. Ahora me duele un poco el estómago."
+        "Sí, hoy el café está abierto.",
+        "Claro. Hoy está abierto.",
+        "Sí, por favor. El café ya está abierto."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "me duele",
+          "pattern": "est[aá] abierto",
           "flags": "i",
-          "label": "my stomach hurts: me duele el estómago"
+          "label": "open: está abierto (el café)"
         }
       ],
-      "focus": "p:me-duele",
+      "focus": "g:estar-participle",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Uy! Ya hay clientes en la puerta. ¿Estás listo?",
+      "npcEn": "Oh! There are customers at the door already. Are you ready?",
+      "intent": "Say yes, you're ready, and the coffee is ready too.",
+      "accept": [
+        "Sí, estoy listo. Y el tinto también está listo.",
+        "Estoy listo, y el café está listo.",
+        "Sí, ya estoy listo. El tinto ya está listo también."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "estoy listo",
+          "flags": "i",
+          "label": "you're ready: estoy listo"
+        },
+        {
+          "type": "regex",
+          "pattern": "est[aá] listo",
+          "flags": "i",
+          "label": "the coffee is ready: está listo"
+        }
+      ],
+      "focus": "g:ser-estar-adjectives",
       "next": null
     }
   ],
   "requires": [
     "c:abierto-cerrado",
+    "c:ayer-anoche",
     "c:bien-y-tu",
-    "c:donde-esta",
+    "c:claro-listo",
     "c:entonces-bueno",
-    "c:estoy-de-acuerdo",
-    "c:gracias-de-nada",
     "c:hay",
-    "c:me-siento-mal",
-    "c:no-hay-nada",
+    "c:oye-mira",
     "c:para-nada",
-    "c:que-susto",
-    "c:ya-no",
-    "g:adjective-agreement",
-    "g:cause-result",
-    "g:commands-tu",
-    "g:comparatives",
+    "c:por-favor",
+    "c:que-bien",
+    "c:te-pasa-algo",
     "g:direct-objects",
     "g:estar-location-states",
     "g:estar-participle",
     "g:gender-articles",
-    "g:gustar-full",
     "g:hay-vs-esta",
     "g:negation-words",
     "g:parecer-quedar",
+    "g:present-ar",
     "g:present-er-ir",
-    "g:preterite-ser-ir-hacer",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
     "g:quantifiers",
+    "g:relative-que",
     "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
-    "g:that-clauses",
     "l:abrir",
-    "l:acuerdo",
-    "l:ahora",
-    "l:almojábana",
+    "l:ayer",
     "l:bien",
     "l:bueno",
-    "l:caja",
+    "l:café",
+    "l:cambiar",
+    "l:cansado",
+    "l:cerrar",
+    "l:claro",
+    "l:cliente",
     "l:cocina",
+    "l:contento",
     "l:decir",
-    "l:doler",
-    "l:dulce",
-    "l:dónde",
-    "l:enfermo",
+    "l:dejar",
+    "l:desastre",
     "l:estar",
-    "l:estómago",
+    "l:excelente",
+    "l:favor",
+    "l:feliz",
     "l:fin",
     "l:frío",
     "l:fuerte",
-    "l:hacer",
-    "l:mejor",
-    "l:menú",
-    "l:nuevo",
-    "l:pan",
+    "l:hombre",
+    "l:horror",
+    "l:hoy",
+    "l:lavar",
+    "l:leche",
+    "l:letrero",
+    "l:listo",
+    "l:lunes",
+    "l:mala",
+    "l:mirar",
     "l:parecer",
     "l:probar",
     "l:puerta",
-    "l:querer",
-    "l:queso",
     "l:qué",
-    "l:rabia",
-    "l:rico",
-    "l:semana",
     "l:ser",
+    "l:taza",
     "l:tinto",
-    "l:torta",
-    "l:verdad",
-    "p:bien-bueno",
-    "p:bien-mal-vs-bueno-malo",
+    "l:ver",
+    "l:vestir",
     "p:demonstratives-basic",
-    "p:doler",
-    "p:me-duele",
     "p:no-es-nada-adj",
-    "p:no-es-x-es-y",
-    "p:para-inf",
-    "p:poco-un-poco",
-    "p:possessives-basic",
+    "p:parecer-vs-parecerse",
     "p:quantifiers-basic",
-    "p:telling-time",
     "p:ya-todavia-basic"
   ]
 }

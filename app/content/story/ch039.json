@@ -2,7 +2,7 @@
   "id": "ch039",
   "unit": "u15",
   "title": "Treinta y nueve",
-  "text": "Gloria: ¡Tomás! ¿Te pasa algo? Son las cinco, y usted todavía está en la cama.\nTomás: Estoy bien, Gloria. Tengo que abrir el café. Vale llega a las seis.\nTomás se levantó, pero tenía mucha tos y la cara roja. Gloria le puso la mano en la cabeza.\nGloria: Mijo, usted tiene fiebre. Treinta y nueve.\nTomás: No es fiebre. Es cansancio.\nGloria: ¿Cansancio? Usted tiene gripa. Es la lluvia de anoche. Usted es fuerte, pero hoy está enfermo. ¡A la cama!\nA las seis y cinco sonó el celular.\nVale: ¿Aló? Tomás, estoy en el café. No hay tinto, y no hay Tomás.\nTomás: Qué pena, Vale. Estoy enfermo. Tengo gripa.\nVale: ¿Gripa? Bueno. No estoy preocupada. Hoy no trabajas, hoy descansas, ¿de acuerdo?\nTomás: Depende. ¿Quién hace el tinto?\nSimón: ¡Depende! ¡Depende!\nHernando: ¡Yo, mijo! ¡Y mi tinto es mejor que el tinto de Vale!\nVale: No estoy de acuerdo.\nA las nueve, Vale llamó otra vez. A las doce, otra vez. A las tres, otra vez.\nVale: No estoy preocupada, Tomás. Es una pregunta y ya. ¿Todavía tienes fiebre?\nGloria: Cuatro llamadas en un día. Esa niña no está preocupada, claro.\nGloria le subió una aguapanela y le habló del barrio. La señora de la tienda tiene novio. Y don Julio, el vecino de la casa azul, vendió su casa a Altamira.\nTomás: ¿Don Julio? ¿Ya vendió?\nGloria: Ya vendió, mijo. Ahora somos menos en la cuadra.\nLa aguapanela estaba rica.\nGloria: Cuando yo estaba enferma, Rosa me subía aguapanela todos los días. Ahora le subo aguapanela yo.\nGloria: Otra cosa. Don Hernando siempre es tranquilo, pero esta semana está nervioso. Tiene una cita con el médico el jueves, y no habla de eso con nadie.\nTomás: ¿Con nadie?\nGloria: Con nadie. Ni con Vale. Ni conmigo.",
+  "text": "Gloria: ¡Tomás! ¿Qué le pasa, mijo? Son las cinco, y usted todavía está en la cama.\nTomás: Estoy bien, Gloria. Tengo que abrir el café. Vale llega a las seis.\nTomás se levantó, pero tenía mucha tos y la cara roja. Gloria le puso la mano en la cabeza.\nGloria: Mijo, usted tiene fiebre. Treinta y nueve.\nTomás: No es fiebre. Es cansancio.\nGloria: ¿Cansancio? Usted tiene gripa. Es la lluvia de anoche. Usted es fuerte, pero hoy está enfermo. ¡A la cama!\nA las seis y cinco sonó el celular.\nVale: ¿Aló? Tomás, estoy en el café. No hay tinto, y no hay Tomás. ¿Te pasa algo?\nTomás: Qué pena, Vale. Estoy enfermo. Tengo gripa.\nVale: ¿Gripa? Bueno. No estoy preocupada. Hoy no trabajas, hoy descansas, ¿de acuerdo?\nTomás: Depende. ¿Quién hace el tinto?\nSimón: ¡Depende! ¡Depende!\nDetrás de Vale, Hernando gritó: ¡Yo, mijo! ¡Y mi tinto es mejor que el tinto de Vale!\nVale: No estoy de acuerdo.\nA las nueve, Vale llamó otra vez. A las doce, otra vez. A las tres, otra vez.\nVale: No estoy preocupada, Tomás. Es una pregunta y ya. ¿Todavía tienes fiebre?\nGloria: Cuatro llamadas en un día. Esa niña no está preocupada, claro.\nGloria le subió una aguapanela y le habló del barrio. La señora de la tienda tiene novio. Y don Julio, el vecino de la casa azul, vendió su casa a Altamira.\nTomás: ¿Don Julio? ¿Ya vendió?\nGloria: Ya vendió, mijo. Ahora somos menos en la cuadra.\nLa aguapanela estaba rica.\nGloria: Cuando yo estaba enferma, Rosa me subía aguapanela todos los días. Ahora le subo aguapanela yo.\nGloria: Otra cosa. Don Hernando siempre es tranquilo, pero esta semana está nervioso. Tiene una cita con el médico el jueves, y no habla de eso con nadie.\nTomás: ¿Con nadie?\nGloria: Con nadie. Ni con Vale. Ni conmigo.",
   "gloss": [
     {
       "es": "mijo",
@@ -10,7 +10,7 @@
     },
     {
       "es": "Treinta y nueve.",
-      "en": "Thirty nine (degrees)."
+      "en": "Thirty-nine (degrees)."
     },
     {
       "es": "Es la lluvia de anoche.",
@@ -161,12 +161,14 @@
     "g:yo-irregular",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
     "p:cuando-basic",
     "p:days-el-lunes",
     "p:demonstratives-basic",
     "p:frequency-scale",
     "p:lavarse-las-manos",
     "p:otro-no-article",
+    "p:position-de",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:question-word-order",
@@ -199,12 +201,14 @@
     "l:cuadra",
     "l:depender",
     "l:descansar",
+    "l:detrás",
     "l:día",
     "l:enfermo",
     "l:estar",
     "l:fiebre",
     "l:fuerte",
     "l:gripa",
+    "l:gritar",
     "l:hablar",
     "l:hacer",
     "l:hoy",

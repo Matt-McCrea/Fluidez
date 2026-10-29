@@ -922,18 +922,18 @@
   },
   {
     "id": "u15-0042",
-    "es": "¿Cuántos días tienes fiebre?",
-    "en": "How many days have you had a fever? (to a friend)",
+    "es": "¿Desde cuándo tienes fiebre?",
+    "en": "Since when have you had a fever? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
-      "g:questions",
       "g:stem-boot",
-      "l:cuánto",
-      "l:día",
+      "l:cuándo",
       "l:fiebre",
-      "l:tener"
+      "l:tener",
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "l:fiebre"
@@ -1098,7 +1098,7 @@
   {
     "id": "u15-0050",
     "es": "Ustedes están muy cansados, ¿no?",
-    "en": "You all look very tired, don't you?",
+    "en": "You're all very tired, aren't you?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1321,22 +1321,21 @@
   },
   {
     "id": "u15-0060",
-    "es": "La fiebre de hoy es más alta que ayer.",
-    "en": "Today's fever is higher than yesterday's.",
+    "es": "Hoy la fiebre está más alta que ayer.",
+    "en": "Today the fever is higher than yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "g:adjective-agreement",
       "g:comparatives",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:ser-identity",
       "l:alto",
       "l:ayer",
+      "l:estar",
       "l:fiebre",
-      "l:hoy",
-      "l:ser",
-      "p:es-tiene-lleva"
+      "l:hoy"
     ],
     "targets": [
       "l:fiebre"
@@ -1918,15 +1917,19 @@
   },
   {
     "id": "u15-0085",
-    "es": "Estoy triste en casa.",
-    "en": "I'm sad at home. (a woman speaking)",
+    "es": "Estoy triste porque mi perro está enfermo.",
+    "en": "I'm sad because my dog is ill.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:porque",
+      "g:cause-result",
       "g:estar-location-states",
-      "l:casa",
+      "l:enfermo",
       "l:estar",
-      "l:triste"
+      "l:perro",
+      "l:triste",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -2304,7 +2307,7 @@
   {
     "id": "u15-0104",
     "es": "Soy una persona ocupada.",
-    "en": "I'm a busy person. (a woman speaking)",
+    "en": "I'm a busy person.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2483,7 +2486,7 @@
   {
     "id": "u15-0113",
     "es": "Este tinto está malo.",
-    "en": "This black coffee is bad.",
+    "en": "This coffee tastes bad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3283,7 +3286,7 @@
   {
     "id": "u15-0151",
     "es": "No estoy nervioso para nada.",
-    "en": "I'm not nervous at all.",
+    "en": "I'm not nervous at all. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4053,17 +4056,20 @@
   },
   {
     "id": "u15-0184",
-    "es": "Mi carro está perdido en el trancón.",
-    "en": "My car is lost in the traffic jam.",
+    "es": "Mi carro está lavado y listo para el viaje.",
+    "en": "My car is washed and ready for the trip.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
+      "g:estar-participle",
       "g:gender-articles",
       "l:carro",
       "l:estar",
-      "l:perder",
-      "l:trancón",
+      "l:lavar",
+      "l:listo",
+      "l:viaje",
+      "p:para-inf",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -4142,8 +4148,8 @@
   },
   {
     "id": "u15-0188",
-    "es": "¿Estás perdida, señora?",
-    "en": "Are you lost, ma'am? (to a woman)",
+    "es": "¿Está perdida, señora?",
+    "en": "Are you lost, ma'am? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5265,7 +5271,7 @@
   {
     "id": "u15-0240",
     "es": "La mujer está en la esquina con su perro.",
-    "en": "The woman is in the corner with her dog.",
+    "en": "The woman is on the corner with her dog.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5501,18 +5507,18 @@
   },
   {
     "id": "u15-0251",
-    "es": "Las flores están rojas y amarillas.",
+    "es": "Las flores son rojas y amarillas.",
     "en": "The flowers are red and yellow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:ser-identity",
       "l:amarillo",
-      "l:estar",
       "l:flor",
-      "l:rojo"
+      "l:rojo",
+      "l:ser"
     ],
     "targets": [],
     "kind": "statement",
@@ -6064,21 +6070,19 @@
   },
   {
     "id": "u15-0272",
-    "es": "Me duelen los ojos después de la pantalla.",
-    "en": "My eyes hurt after the screen.",
+    "es": "Me duelen los ojos de tanta pantalla.",
+    "en": "My eyes hurt from so much screen time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:gustar-full",
       "g:stem-boot",
-      "l:después",
       "l:doler",
       "l:ojo",
       "l:pantalla",
       "p:doler",
-      "p:me-duele",
-      "p:time-sequence-basic"
+      "p:me-duele"
     ],
     "targets": [
       "l:doler",
@@ -6219,8 +6223,8 @@
   },
   {
     "id": "u15-0278",
-    "es": "¿Te duele cuando camino?",
-    "en": "Does it hurt you when I walk? (to a friend)",
+    "es": "¿Te duele cuando caminas?",
+    "en": "Does it hurt when you walk? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6400,21 +6404,20 @@
   },
   {
     "id": "u15-0285",
-    "es": "¿Cuánto tiempo te duele la rodilla?",
-    "en": "How long has your knee hurt? (to a friend)",
+    "es": "¿Desde cuándo te duele la rodilla?",
+    "en": "Since when has your knee been hurting? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:cuanto-tiempo",
       "g:gender-articles",
       "g:gustar-full",
       "g:stem-boot",
-      "l:cuánto",
+      "l:cuándo",
       "l:doler",
       "l:rodilla",
-      "l:tiempo",
       "p:doler",
-      "p:me-duele"
+      "p:me-duele",
+      "p:prep-questions-basic"
     ],
     "targets": [
       "l:doler",
@@ -7498,15 +7501,17 @@
   },
   {
     "id": "u15-0326",
-    "es": "¿Tiene dolor de estómago?",
-    "en": "Does he have a stomach ache?",
+    "es": "¿El niño tiene dolor de estómago?",
+    "en": "Does the boy have a stomach ache?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:gender-articles",
       "g:stem-boot",
       "l:dolor",
       "l:estómago",
+      "l:niño",
       "l:tener",
       "p:doler"
     ],
@@ -7615,16 +7620,18 @@
   },
   {
     "id": "u15-0331",
-    "es": "Es un dolor pequeño, pero largo.",
-    "en": "It's a small pain, but a long one.",
+    "es": "No es un dolor fuerte, pero no se va.",
+    "en": "It isn't a strong pain, but it won't go away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-se",
       "g:gender-articles",
+      "g:ir-a-plans",
       "g:ser-identity",
       "l:dolor",
-      "l:largo",
-      "l:pequeño",
+      "l:fuerte",
+      "l:irse",
       "l:ser"
     ],
     "targets": [
@@ -8129,15 +8136,15 @@
   },
   {
     "id": "u15-0353",
-    "es": "El niño está en la espalda de su papá.",
-    "en": "The boy is on his dad's back.",
+    "es": "El niño va en la espalda de su papá.",
+    "en": "The boy is riding on his dad's back.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:ir-a-plans",
       "l:espalda",
-      "l:estar",
+      "l:ir",
       "l:niño",
       "l:papá",
       "p:possessives-basic"
@@ -9378,20 +9385,18 @@
   },
   {
     "id": "u15-0406",
-    "es": "Qué susto tuve cuando vi la puerta abierta.",
-    "en": "What a fright I got when I saw the open door.",
+    "es": "¡Qué susto cuando vi la puerta abierta!",
+    "en": "What a fright when I saw the door open!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-susto",
       "g:gender-articles",
       "g:preterite-er-ir",
-      "g:preterite-irregular-strong",
       "l:abrir",
       "l:puerta",
       "l:qué",
       "l:susto",
-      "l:tener",
       "l:ver",
       "p:cuando-basic"
     ],
@@ -9703,18 +9708,21 @@
   },
   {
     "id": "u15-0420",
-    "es": "Con la música, el ánimo es mejor.",
-    "en": "With music, the mood is better.",
+    "es": "Con este frío, nadie tiene ánimo para salir.",
+    "en": "In this cold, nobody has the energy to go out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:animo",
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:mejor",
-      "l:música",
-      "l:ser",
-      "l:ánimo"
+      "c:tienes",
+      "g:stem-boot",
+      "l:frío",
+      "l:salir",
+      "l:tener",
+      "l:ánimo",
+      "p:demonstratives-basic",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:ánimo"
@@ -9849,8 +9857,8 @@
   },
   {
     "id": "u15-0426",
-    "es": "Tomás está un poco deprimido en cama.",
-    "en": "Tomás is a bit down in bed.",
+    "es": "Tomás está en cama y un poco deprimido.",
+    "en": "Tomás is in bed and a bit down.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10004,19 +10012,19 @@
   },
   {
     "id": "u15-0433",
-    "es": "Qué alegre está la gente hoy.",
+    "es": "¡Qué alegre está la gente hoy!",
     "en": "How cheerful people are today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
-      "g:questions",
       "l:alegre",
       "l:estar",
       "l:gente",
       "l:hoy",
       "l:qué",
+      "p:exclamations-basic",
       "p:la-gente-singular"
     ],
     "targets": [
@@ -10145,16 +10153,20 @@
   },
   {
     "id": "u15-0439",
-    "es": "Estoy nervioso con la cita.",
-    "en": "I'm nervous about the appointment.",
+    "es": "Estoy nervioso: mañana tengo la cita.",
+    "en": "I'm nervous: I have the appointment tomorrow. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tengo",
       "g:estar-location-states",
       "g:gender-articles",
+      "g:yo-irregular",
       "l:cita",
       "l:estar",
-      "l:nervioso"
+      "l:mañana",
+      "l:nervioso",
+      "l:tener"
     ],
     "targets": [],
     "kind": "statement",
@@ -10657,20 +10669,18 @@
   },
   {
     "id": "u15-0462",
-    "es": "Me parece mal el precio.",
-    "en": "The price seems wrong to me.",
+    "es": "Me parece muy alto el precio.",
+    "en": "The price seems very high to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:parecer-quedar",
       "g:present-er-ir",
-      "l:mal",
+      "l:alto",
       "l:parecer",
       "l:precio",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
-      "p:me-parece-bien-que"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:parecer-quedar"
@@ -10705,12 +10715,14 @@
   },
   {
     "id": "u15-0464",
-    "es": "Me parece fácil, pero es difícil.",
-    "en": "It seems easy to me, but it's hard.",
+    "es": "A ti te parece fácil, pero es difícil.",
+    "en": "It seems easy to you, but it's hard. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gustar-full",
       "g:parecer-quedar",
+      "g:prep-pronouns",
       "g:present-er-ir",
       "g:ser-identity",
       "l:difícil",
@@ -10969,8 +10981,8 @@
   },
   {
     "id": "u15-0476",
-    "es": "A Hernando le parece malo el doctor.",
-    "en": "The doctor seems bad to Hernando.",
+    "es": "A Hernando le parece malo el café del hospital.",
+    "en": "Hernando thinks the hospital coffee is bad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10978,7 +10990,8 @@
       "g:gustar-full",
       "g:parecer-quedar",
       "g:present-er-ir",
-      "l:doctor",
+      "l:café",
+      "l:hospital",
       "l:malo",
       "l:parecer"
     ],
@@ -11076,7 +11089,7 @@
   {
     "id": "u15-0480",
     "es": "A mí me parece perfecto, ¿y a ti?",
-    "en": "It seems perfect to me, and to you?",
+    "en": "I think it's perfect, what about you?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11340,7 +11353,7 @@
   {
     "id": "u15-0491",
     "es": "¿Le parece bien a las ocho?",
-    "en": "Does eight seem good to you? (polite)",
+    "en": "Does eight o'clock suit you? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11460,7 +11473,7 @@
   {
     "id": "u15-0496",
     "es": "¿Qué te parece?\nMe parece muy bien.",
-    "en": "What do you think?\nIt seems very good to me.",
+    "en": "What do you think?\nI think it's great.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11848,7 +11861,7 @@
   {
     "id": "u15-0513",
     "es": "Mi hermana parece mi mamá.",
-    "en": "My sister looks like my mum.",
+    "en": "My sister sounds just like my mum.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12483,18 +12496,22 @@
   },
   {
     "id": "u15-0540",
-    "es": "¿Te quedan los zapatos?\nNo, me quedan pequeños.",
+    "es": "¿Te quedan bien los zapatos?\nNo, me quedan pequeños.",
     "en": "Do the shoes fit you?\nNo, they're too small for me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "g:adjective-agreement",
       "g:gender-articles",
       "g:parecer-quedar",
       "g:present-ar",
+      "l:bien",
       "l:pequeño",
       "l:quedar",
       "l:zapatos",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:talla-numero"
     ],
     "targets": [
@@ -12507,20 +12524,24 @@
   },
   {
     "id": "u15-0541",
-    "es": "Tu amigo me cae muy bien.",
-    "en": "I really like your friend.",
+    "es": "Tu hermano me cae muy bien, es muy divertido.",
+    "en": "I really like your brother, he's very funny.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "g:parecer-quedar",
       "g:present-er-ir",
-      "l:amigo",
+      "g:ser-identity",
       "l:bien",
       "l:caer",
+      "l:divertido",
+      "l:hermano",
+      "l:ser",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:parecer-quedar"
@@ -12532,18 +12553,22 @@
   },
   {
     "id": "u15-0542",
-    "es": "Vale me cae muy bien.",
-    "en": "I really like Vale.",
+    "es": "Vale me cae muy bien desde el primer día.",
+    "en": "I've liked Vale since the first day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "g:gender-articles",
       "g:parecer-quedar",
       "g:present-er-ir",
       "l:bien",
       "l:caer",
+      "l:día",
       "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "p:bien-mal-vs-bueno-malo",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "g:parecer-quedar"
@@ -12582,19 +12607,23 @@
   },
   {
     "id": "u15-0544",
-    "es": "Tu jefe me cae mal.",
-    "en": "I don't like your boss.",
+    "es": "Tu jefe me cae mal, es muy serio.",
+    "en": "I don't like your boss, he's very serious.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:parecer-quedar",
       "g:present-er-ir",
+      "g:ser-identity",
       "l:caer",
       "l:jefe",
       "l:mal",
+      "l:ser",
+      "l:serio",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:parecer-quedar"
@@ -12729,7 +12758,7 @@
   {
     "id": "u15-0550",
     "es": "Mi cuñado no me cae bien.",
-    "en": "I don't like my brother in law.",
+    "en": "I don't like my brother-in-law.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13186,8 +13215,8 @@
   },
   {
     "id": "u15-0569",
-    "es": "Me queda un tinto en la taza.",
-    "en": "I have one black coffee left in the cup.",
+    "es": "Me queda un poco de tinto en la taza.",
+    "en": "I have a bit of coffee left in my cup.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13196,7 +13225,10 @@
       "g:present-ar",
       "l:quedar",
       "l:taza",
-      "l:tinto"
+      "l:tinto",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "g:parecer-quedar"
@@ -13317,8 +13349,8 @@
   },
   {
     "id": "u15-0575",
-    "es": "¿Te queda café?\nNo, solo me quedan dos tazas.",
-    "en": "Do you have any coffee left?\nNo, I only have two cups left.",
+    "es": "¿Te queda café?\nSí, pero solo me quedan dos tazas.",
+    "en": "Do you have any coffee left?\nYes, but I only have two cups left.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13892,7 +13924,7 @@
   {
     "id": "u15-0602",
     "es": "Estoy cansado, pero contigo me siento bien.",
-    "en": "I'm tired, but with you I feel well. (a man speaking)",
+    "en": "I'm tired, but with you I feel good. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13942,7 +13974,7 @@
   {
     "id": "u15-0604",
     "es": "Conmigo no hay problema.",
-    "en": "With me there's no problem.",
+    "en": "It's fine by me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14386,17 +14418,15 @@
   },
   {
     "id": "u15-0623",
-    "es": "Lejos de ellos hay un parque.",
-    "en": "There's a park far from them.",
+    "es": "Mariana vive lejos de nosotros.",
+    "en": "Mariana lives far from us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "g:gender-articles",
-      "g:hay-vs-esta",
       "g:prep-pronouns",
+      "g:present-er-ir",
       "l:lejos",
-      "l:parque",
+      "l:vivir",
       "p:cerca-de",
       "p:position-de"
     ],
@@ -14434,18 +14464,19 @@
   },
   {
     "id": "u15-0625",
-    "es": "Hay un niño al lado de mí.",
-    "en": "There's a boy next to me.",
+    "es": "Hernando siempre se sienta cerca de mí.",
+    "en": "Hernando always sits near me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "g:gender-articles",
-      "g:hay-vs-esta",
       "g:prep-pronouns",
-      "l:lado",
-      "l:niño",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:cerca",
+      "l:sentarse",
+      "l:siempre",
       "p:cerca-de",
+      "p:frequency-scale",
       "p:position-de"
     ],
     "targets": [
@@ -14841,17 +14872,20 @@
   },
   {
     "id": "u15-0642",
-    "es": "Esa llamada es de mí para ti.",
-    "en": "That call is from me to you.",
+    "es": "Doña Gloria cocina para él todos los días.",
+    "en": "Doña Gloria cooks for him every day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
+      "g:gender-articles",
       "g:prep-pronouns",
-      "g:ser-identity",
-      "l:llamada",
-      "l:ser",
-      "p:para-inf"
+      "g:present-ar",
+      "l:cocinar",
+      "l:día",
+      "p:para-inf",
+      "p:senor-don-article",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -14906,15 +14940,16 @@
   },
   {
     "id": "u15-0645",
-    "es": "Eso es de él, no de mí.",
-    "en": "That is his, not mine.",
+    "es": "Ese celular es de ella, no de él.",
+    "en": "That phone is hers, not his.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:demonstratives",
       "g:prep-pronouns",
       "g:ser-identity",
-      "l:ser",
-      "p:demonstratives-basic"
+      "l:celular",
+      "l:ser"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -14995,7 +15030,7 @@
   {
     "id": "u15-0649",
     "es": "Tomás trae un pan para mí.",
-    "en": "Tomás brings a bread for me.",
+    "en": "Tomás brings a loaf of bread for me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15669,8 +15704,8 @@
   },
   {
     "id": "u15-0680",
-    "es": "El pan está vendido.",
-    "en": "The bread is sold.",
+    "es": "Todo el pan ya está vendido.",
+    "en": "All the bread is already sold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15713,17 +15748,17 @@
   },
   {
     "id": "u15-0682",
-    "es": "El precio no está aceptado.",
-    "en": "The price isn't accepted.",
+    "es": "Tu idea está aceptada, Vale.",
+    "en": "Your idea is accepted, Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:estar-participle",
-      "g:gender-articles",
       "l:aceptar",
       "l:estar",
-      "l:precio"
+      "l:idea",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:estar-participle",
@@ -16622,8 +16657,8 @@
   },
   {
     "id": "u15-0723",
-    "es": "El edificio está vendido a Altamira.",
-    "en": "The building is sold to Altamira.",
+    "es": "El edificio de la esquina ya está vendido.",
+    "en": "The building on the corner is already sold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16631,6 +16666,7 @@
       "g:estar-participle",
       "g:gender-articles",
       "l:edificio",
+      "l:esquina",
       "l:estar",
       "l:vender"
     ],
@@ -17091,8 +17127,8 @@
   },
   {
     "id": "u15-0744",
-    "es": "¿Estás casada, señora?",
-    "en": "Are you married, ma'am?",
+    "es": "¿Está casada, señora?",
+    "en": "Are you married, ma'am? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17110,19 +17146,19 @@
   },
   {
     "id": "u15-0745",
-    "es": "¿Está lista la cuenta?\nSí, ya está pagada.",
-    "en": "Is the bill ready?\nYes, it's already paid.",
+    "es": "¿Pido la cuenta?\nNo, ya está pagada.",
+    "en": "Shall I ask for the bill?\nNo, it's already paid.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:la-cuenta",
-      "g:adjective-agreement",
       "g:estar-location-states",
       "g:estar-participle",
+      "g:stem-e-i",
       "l:cuenta",
       "l:estar",
-      "l:listo",
-      "l:pagar"
+      "l:pagar",
+      "l:pedir"
     ],
     "targets": [
       "g:estar-participle"
@@ -17155,8 +17191,8 @@
   },
   {
     "id": "u15-0747",
-    "es": "¿Quién rompió la taza?\nYa está rota desde ayer.",
-    "en": "Who broke the cup?\nIt's been broken since yesterday.",
+    "es": "¿Quién rompió la taza?\nNadie. Está rota desde ayer.",
+    "en": "Who broke the cup?\nNobody. It's been broken since yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18592,7 +18628,7 @@
   {
     "id": "u15-0810",
     "es": "¿Está lejos?\nDepende del trancón.",
-    "en": "Is it far?\nIt depends on the traffic jam.",
+    "en": "Is it far?\nIt depends on the traffic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18846,7 +18882,7 @@
   {
     "id": "u15-0821",
     "es": "La suerte del café depende de nosotros.",
-    "en": "The café's luck depends on us.",
+    "en": "The café's fate depends on us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18914,8 +18950,8 @@
   },
   {
     "id": "u15-0824",
-    "es": "La fiebre depende de la gripa.",
-    "en": "The fever depends on the cold.",
+    "es": "Con la gripa, todo depende de la fiebre.",
+    "en": "With the flu, everything depends on the fever.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18963,8 +18999,8 @@
   },
   {
     "id": "u15-0826",
-    "es": "Mi cansancio depende de las noches.",
-    "en": "My tiredness depends on the nights.",
+    "es": "Mi cansancio depende del trabajo de la semana.",
+    "en": "My tiredness depends on the week's work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18972,7 +19008,8 @@
       "g:gender-articles",
       "l:cansancio",
       "l:depender",
-      "l:noche",
+      "l:semana",
+      "l:trabajo",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19236,7 +19273,7 @@
   {
     "id": "u15-0838",
     "es": "¿Te pasa algo con Vale?",
-    "en": "Is something the matter with Vale? (to a friend)",
+    "en": "Is something going on with you and Vale?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19921,7 +19958,7 @@
   {
     "id": "u15-0869",
     "es": "La lluvia no para.",
-    "en": "The rain doesn't stop.",
+    "en": "The rain won't stop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19962,8 +19999,8 @@
   },
   {
     "id": "u15-0871",
-    "es": "Hernando para el taxi en la calle.",
-    "en": "Hernando stops the taxi in the street.",
+    "es": "Hernando para un taxi en la calle.",
+    "en": "Hernando hails a taxi in the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20187,17 +20224,18 @@
   },
   {
     "id": "u15-0881",
-    "es": "Hernando tiene el control del taxi.",
-    "en": "Hernando is in control of the taxi.",
+    "es": "En el taxi, Hernando siempre tenía el control.",
+    "en": "In the taxi, Hernando was always in control.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:imperfect-states",
       "l:control",
+      "l:siempre",
       "l:taxi",
-      "l:tener"
+      "l:tener",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:control"
@@ -20229,18 +20267,19 @@
   },
   {
     "id": "u15-0883",
-    "es": "Tomás no tiene el control de su tiempo.",
-    "en": "Tomás doesn't have control of his time.",
+    "es": "Con la fiebre, Tomás no tiene control de nada.",
+    "en": "With the fever, Tomás has no control over anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
       "c:tienes",
       "g:gender-articles",
+      "g:negation-words",
       "g:stem-boot",
       "l:control",
-      "l:tener",
-      "l:tiempo",
-      "p:possessives-basic"
+      "l:fiebre",
+      "l:tener"
     ],
     "targets": [
       "l:control"
@@ -20273,8 +20312,8 @@
   },
   {
     "id": "u15-0885",
-    "es": "El control de la puerta está roto.",
-    "en": "The door control is broken.",
+    "es": "La fiebre está bajo control.",
+    "en": "The fever is under control.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20282,8 +20321,7 @@
       "g:gender-articles",
       "l:control",
       "l:estar",
-      "l:puerta",
-      "l:romper"
+      "l:fiebre"
     ],
     "targets": [
       "l:control"
@@ -20425,18 +20463,21 @@
   },
   {
     "id": "u15-0892",
-    "es": "Quiero informar a Vale de la gripa.",
-    "en": "I want to tell Vale about the cold.",
+    "es": "Hay que informar a los clientes: Tomás tiene gripa.",
+    "en": "We have to let the customers know: Tomás has the flu.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
+      "c:hay",
+      "c:hay-que",
+      "c:tienes",
       "g:gender-articles",
       "g:stem-boot",
       "g:verb-infinitive",
+      "l:cliente",
       "l:gripa",
       "l:informar",
-      "l:querer"
+      "l:tener"
     ],
     "targets": [
       "l:gripa",
@@ -20594,7 +20635,7 @@
   {
     "id": "u15-0900",
     "es": "¿Aceptas un tinto?",
-    "en": "Will you accept a black coffee? (to a friend)",
+    "en": "Will you take a coffee? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20867,17 +20908,18 @@
   },
   {
     "id": "u15-0913",
-    "es": "Encuentro mi llave perdida.",
-    "en": "I find my lost key.",
+    "es": "Por fin encontré la llave perdida.",
+    "en": "I finally found the lost key.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:stem-boot",
+      "g:gender-articles",
+      "g:preterite-ar",
       "l:encontrar",
+      "l:fin",
       "l:llave",
       "l:perder",
-      "p:encontrar-participle",
-      "p:possessives-basic"
+      "p:encontrar-participle"
     ],
     "targets": [],
     "kind": "statement",
@@ -20907,18 +20949,18 @@
   },
   {
     "id": "u15-0915",
-    "es": "Tengo la cabeza perdida con tanta fiebre.",
-    "en": "I'm out of it with so much fever.",
+    "es": "Con tanta fiebre, estoy un poco perdido.",
+    "en": "With so much fever, I'm a bit lost. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:yo-irregular",
-      "l:cabeza",
+      "l:estar",
       "l:fiebre",
       "l:perder",
-      "l:tener"
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:fiebre"
@@ -21174,7 +21216,7 @@
   },
   {
     "id": "u15-0926",
-    "es": "Vale tiene un cuello largo.",
+    "es": "Vale tiene el cuello largo.",
     "en": "Vale has a long neck.",
     "accept": [],
     "acceptEn": [],
@@ -21217,7 +21259,7 @@
   },
   {
     "id": "u15-0928",
-    "es": "Me duele el hombro y el brazo.",
+    "es": "Me duelen el hombro y el brazo.",
     "en": "My shoulder and arm hurt.",
     "accept": [],
     "acceptEn": [],
@@ -21291,18 +21333,22 @@
   },
   {
     "id": "u15-0931",
-    "es": "El niño tiene el brazo en la espalda.",
-    "en": "The boy has his arm behind his back.",
+    "es": "Al niño le duelen la espalda y el brazo de tanto jugar fútbol.",
+    "en": "The boy's back and arm hurt from playing so much football.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:gender-articles",
+      "g:gustar-full",
       "g:stem-boot",
       "l:brazo",
+      "l:doler",
       "l:espalda",
+      "l:fútbol",
+      "l:jugar",
       "l:niño",
-      "l:tener"
+      "p:doler",
+      "p:me-duele"
     ],
     "targets": [
       "l:brazo",
@@ -21433,7 +21479,7 @@
   {
     "id": "u15-0937",
     "es": "Cuento con los dedos de la mano.",
-    "en": "I count on the fingers of my hand.",
+    "en": "I count on my fingers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21605,7 +21651,7 @@
   {
     "id": "u15-0944",
     "es": "Tomás tiene los pies fríos después de caminar.",
-    "en": "Tomás has cold feet after walking.",
+    "en": "Tomás's feet are cold after walking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21655,8 +21701,8 @@
   },
   {
     "id": "u15-0946",
-    "es": "Vale llama conmigo cuatro veces al día.",
-    "en": "Vale phones me four times a day.",
+    "es": "Vale habla conmigo por teléfono todo el día.",
+    "en": "Vale talks to me on the phone all day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21664,9 +21710,9 @@
       "g:prep-pronouns",
       "g:present-ar",
       "l:día",
-      "l:llamar",
-      "l:vez",
-      "p:veces-al"
+      "l:hablar",
+      "l:teléfono",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -21993,20 +22039,19 @@
   },
   {
     "id": "u15-0960",
-    "es": "Me siento mal, pero me siento mejor que ayer.",
-    "en": "I feel ill, but I feel better than yesterday.",
+    "es": "Todavía me siento mal, pero mejor que ayer.",
+    "en": "I still feel ill, but better than yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "c:me-siento-mal",
       "g:comparatives",
-      "g:reflexive-routine",
-      "g:stem-boot",
       "l:ayer",
       "l:mal",
       "l:mejor",
-      "l:sentirse"
+      "l:sentirse",
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "c:me-siento-mal"
@@ -22185,16 +22230,20 @@
   },
   {
     "id": "u15-0968",
-    "es": "¿Te sientes mal?\nSí, me siento mal.",
-    "en": "Do you feel ill?\nYes, I feel ill.",
+    "es": "¿Te sientes mal?\nSí, me siento mal y tengo fiebre.",
+    "en": "Do you feel ill?\nYes, I feel ill and I have a fever.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-siento-mal",
+      "c:tengo",
       "g:reflexive-routine",
       "g:stem-boot",
+      "g:yo-irregular",
+      "l:fiebre",
       "l:mal",
       "l:sentirse",
+      "l:tener",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
       "p:sentirse-mal"
@@ -22507,7 +22556,7 @@
   {
     "id": "u15-0982",
     "es": "Estoy de acuerdo con Doña Gloria: hay que descansar.",
-    "en": "I agree with Doña Gloria: I have to rest.",
+    "en": "I agree with Doña Gloria: you have to rest.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22557,7 +22606,7 @@
   {
     "id": "u15-0984",
     "es": "Estoy de acuerdo con usted, señora.",
-    "en": "I agree with you, ma'am.",
+    "en": "I agree with you, ma'am. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22775,8 +22824,8 @@
   },
   {
     "id": "u15-0993",
-    "es": "Qué susto con esta fiebre.",
-    "en": "What a fright, this fever.",
+    "es": "¡Qué susto con esta fiebre!",
+    "en": "This fever gave me such a fright!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22845,18 +22894,21 @@
   },
   {
     "id": "u15-0996",
-    "es": "¡Qué susto! El teléfono suena a las tres.",
-    "en": "What a fright! The phone rings at three.",
+    "es": "¡Qué susto! ¿Quién llama a las tres de la mañana?",
+    "en": "What a fright! Who's calling at three in the morning?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-susto",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:present-ar",
+      "g:questions",
+      "l:llamar",
+      "l:mañana",
+      "l:quién",
       "l:qué",
-      "l:sonar",
       "l:susto",
-      "l:teléfono",
+      "p:por-la-manana",
       "p:telling-time"
     ],
     "targets": [
@@ -22943,16 +22995,17 @@
   },
   {
     "id": "u15-1000",
-    "es": "Tranquilo, Tomás, la fiebre baja pronto.",
-    "en": "Don't worry, Tomás, the fever goes down soon.",
+    "es": "Tranquilo, Tomás, la fiebre va a bajar pronto.",
+    "en": "Don't worry, Tomás, the fever will go down soon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tranquilo",
       "g:gender-articles",
-      "g:present-ar",
+      "g:ir-a-plans",
       "l:bajar",
       "l:fiebre",
+      "l:ir",
       "l:pronto",
       "l:tranquilo"
     ],
@@ -23062,7 +23115,7 @@
   {
     "id": "u15-1005",
     "es": "La gripa me parece muy larga.",
-    "en": "The cold seems very long to me.",
+    "en": "This flu feels very long to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23113,7 +23166,7 @@
   {
     "id": "u15-1007",
     "es": "Doña Gloria me cae muy bien y sus sopas me caen mejor.",
-    "en": "Doña Gloria really likes me, and her soups agree with me even better.",
+    "en": "I really like Doña Gloria, and her soups agree with me even better.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23243,18 +23296,16 @@
   },
   {
     "id": "u15-1012",
-    "es": "Me faltan ganas de levantarme.",
-    "en": "I lack the desire to get up.",
+    "es": "Me faltan horas de sueño.",
+    "en": "I'm short of sleep.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:object-pronoun-position",
       "g:parecer-quedar",
       "g:present-ar",
       "l:faltar",
-      "l:ganas",
-      "l:levantarse",
-      "p:me-te-nos-objects",
+      "l:hora",
+      "l:sueño",
       "p:quedar-faltar-sobrar"
     ],
     "targets": [
@@ -23366,7 +23417,7 @@
   {
     "id": "u15-1017",
     "es": "Esta camisa me queda grande desde la gripa.",
-    "en": "This shirt is too big for me since the cold.",
+    "en": "This shirt has been too big for me since the flu.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23391,19 +23442,21 @@
   },
   {
     "id": "u15-1018",
-    "es": "Con la gripa, me queda grande la ropa.",
-    "en": "Since the cold, my clothes are too big for me.",
+    "es": "Después de la gripa, toda la ropa me queda grande.",
+    "en": "After the flu, all my clothes are too big for me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:parecer-quedar",
       "g:present-ar",
+      "l:después",
       "l:grande",
       "l:gripa",
       "l:quedar",
       "l:ropa",
-      "p:talla-numero"
+      "p:talla-numero",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "g:parecer-quedar",
@@ -23541,24 +23594,24 @@
   },
   {
     "id": "u15-1024",
-    "es": "¿Qué te parece mi cara? Estoy mal.",
-    "en": "What do you think of my face? I look bad.",
+    "es": "Mira mi cara. ¿Te parece que estoy mal?",
+    "en": "Look at my face. Do you think I'm in a bad way? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:oye-mira",
       "g:estar-location-states",
       "g:parecer-quedar",
       "g:present-er-ir",
-      "g:questions",
+      "g:that-clauses",
       "l:cara",
       "l:estar",
       "l:mal",
+      "l:mirar",
       "l:parecer",
-      "l:qué",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
-      "p:possessives-basic",
-      "p:te-parece-bien-que"
+      "p:possessives-basic"
     ],
     "targets": [
       "g:parecer-quedar",
@@ -23713,7 +23766,7 @@
   {
     "id": "u15-1032",
     "es": "Esa tos parece fuerte.",
-    "en": "That cough sounds strong.",
+    "en": "That cough sounds nasty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24036,7 +24089,7 @@
   {
     "id": "u15-1046",
     "es": "El almuerzo está servido, ¿vienen conmigo?",
-    "en": "Lunch is served, are you coming with me?",
+    "en": "Lunch is served, are you all coming with me?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24107,8 +24160,8 @@
   },
   {
     "id": "u15-1049",
-    "es": "La torta de Vale está hecha para ti.",
-    "en": "Vale's cake is made for you. (to a friend)",
+    "es": "Tu tinto ya está servido, y el pan es para ti.",
+    "en": "Your coffee is already served, and the bread is for you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24116,10 +24169,14 @@
       "g:estar-participle",
       "g:gender-articles",
       "g:prep-pronouns",
+      "g:ser-identity",
       "l:estar",
-      "l:hacer",
-      "l:torta",
-      "p:para-inf"
+      "l:pan",
+      "l:ser",
+      "l:servir",
+      "l:tinto",
+      "p:para-inf",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:estar-participle",
@@ -24160,7 +24217,7 @@
   {
     "id": "u15-1051",
     "es": "El almuerzo de Vale está pagado.",
-    "en": "Vale's lunch is paid.",
+    "en": "Vale's lunch is paid for.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24181,18 +24238,19 @@
   },
   {
     "id": "u15-1052",
-    "es": "La cuenta está pagada con él.",
-    "en": "The bill is paid with him.",
+    "es": "La cuenta está pagada, gracias a él.",
+    "en": "The bill is paid, thanks to him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "c:la-cuenta",
       "g:estar-location-states",
       "g:estar-participle",
       "l:cuenta",
       "l:estar",
-      "l:pagar"
+      "l:pagar",
+      "p:gracias-a-por-culpa-de",
+      "p:por-culpa-de"
     ],
     "targets": [
       "g:estar-participle"
@@ -24274,18 +24332,21 @@
   },
   {
     "id": "u15-1056",
-    "es": "La carta de Altamira está escrita en inglés.",
-    "en": "Altamira's letter is written in English.",
+    "es": "La carta de Altamira está escrita con palabras muy difíciles.",
+    "en": "Altamira's letter is written in very difficult words.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:estar-location-states",
       "g:estar-participle",
       "g:gender-articles",
       "l:carta",
+      "l:difícil",
       "l:escribir",
       "l:estar",
-      "l:inglés"
+      "l:palabra",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:estar-participle"
@@ -24297,8 +24358,8 @@
   },
   {
     "id": "u15-1057",
-    "es": "La respuesta está escrita para ustedes.",
-    "en": "The answer is written for you all.",
+    "es": "Las instrucciones están escritas para ustedes en la puerta.",
+    "en": "The instructions are written on the door for you all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24308,7 +24369,8 @@
       "g:prep-pronouns",
       "l:escribir",
       "l:estar",
-      "l:respuesta",
+      "l:instrucción",
+      "l:puerta",
       "p:para-inf"
     ],
     "targets": [
@@ -24322,8 +24384,8 @@
   },
   {
     "id": "u15-1058",
-    "es": "El regalo está comprado para ella.",
-    "en": "The gift is bought for her.",
+    "es": "El regalo para ella ya está comprado.",
+    "en": "The gift for her is already bought.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24478,18 +24540,20 @@
   },
   {
     "id": "u15-1065",
-    "es": "Los vecinos están unidos en la plaza.",
-    "en": "The neighbours are united in the square.",
+    "es": "Los vecinos de la cuadra están más unidos que nunca.",
+    "en": "The neighbours on the block are more united than ever.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:comparatives",
       "g:estar-location-states",
       "g:estar-participle",
       "g:gender-articles",
+      "l:cuadra",
       "l:estar",
-      "l:plaza",
       "l:unir",
-      "l:vecino"
+      "l:vecino",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:estar-participle"
@@ -24546,7 +24610,7 @@
   {
     "id": "u15-1068",
     "es": "Estoy muerto de sueño.",
-    "en": "I'm dead tired. (a man speaking)",
+    "en": "I'm so sleepy I could drop. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24749,7 +24813,7 @@
   {
     "id": "u15-1077",
     "es": "Los zapatos de Tomás están rotos.",
-    "en": "Tomás's shoes are broken.",
+    "en": "Tomás's shoes have holes in them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24771,7 +24835,7 @@
   {
     "id": "u15-1078",
     "es": "La bolsa está rota y todo está en el piso.",
-    "en": "The bag is broken and everything is on the floor.",
+    "en": "The bag is torn and everything is on the floor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24945,16 +25009,22 @@
   },
   {
     "id": "u15-1086",
-    "es": "Estoy asustada contigo, Tomás.",
-    "en": "I'm worried about you, Tomás. (a woman speaking)",
+    "es": "Estoy preocupada: no sé nada de ti, Tomás.",
+    "en": "I'm worried: I haven't heard anything from you, Tomás. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-hay-nada",
+      "c:no-se",
       "g:adjective-agreement",
       "g:estar-location-states",
+      "g:negation-words",
       "g:prep-pronouns",
-      "l:asustado",
-      "l:estar"
+      "g:yo-irregular",
+      "l:estar",
+      "l:preocupado",
+      "l:saber",
+      "p:hedge-knowledge"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -24988,8 +25058,8 @@
   },
   {
     "id": "u15-1088",
-    "es": "Estoy cansado de ti.",
-    "en": "I'm tired of you.",
+    "es": "Estoy cansado de ti, Simón.",
+    "en": "I'm tired of you, Simón. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25072,16 +25142,19 @@
   },
   {
     "id": "u15-1092",
-    "es": "Estoy emocionada contigo.",
-    "en": "I'm excited about you. (a woman speaking)",
+    "es": "Estoy emocionada: ¡mañana viajo contigo!",
+    "en": "I'm excited: tomorrow I'm travelling with you! (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:prep-pronouns",
+      "g:present-ar",
       "l:emocionado",
-      "l:estar"
+      "l:estar",
+      "l:mañana",
+      "l:viajar"
     ],
     "targets": [
       "g:prep-pronouns"
@@ -25757,17 +25830,18 @@
   },
   {
     "id": "u15-1122",
-    "es": "Los hombros de Hernando están fuertes todavía.",
-    "en": "Hernando's shoulders are still strong.",
+    "es": "Hernando todavía tiene los hombros fuertes.",
+    "en": "Hernando still has strong shoulders.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:adjective-agreement",
-      "g:estar-location-states",
       "g:gender-articles",
-      "l:estar",
+      "g:stem-boot",
       "l:fuerte",
       "l:hombros",
+      "l:tener",
       "p:ya-todavia-basic"
     ],
     "targets": [],
@@ -25954,16 +26028,17 @@
   },
   {
     "id": "u15-1130",
-    "es": "Mariana pone una bolsa en el hombro de Tomás.",
-    "en": "Mariana puts a bag on Tomás's shoulder.",
+    "es": "Mariana pone la mano en el hombro de Tomás.",
+    "en": "Mariana puts her hand on Tomás's shoulder.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "l:bolsa",
       "l:hombro",
-      "l:poner"
+      "l:mano",
+      "l:poner",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "l:hombro"
