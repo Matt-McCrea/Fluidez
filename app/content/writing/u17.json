@@ -1,0 +1,746 @@
+[
+  {
+    "id": "w-u17-01",
+    "unit": "u17",
+    "prompt": "Mariana texts you: she is going to a salsa night on Friday and asks if you want to come. You are free and keen. Reply to her (someone your age, tú): accept, ask what time, and say you will bring a friend.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "encantaría",
+        "label": "accept with me encantaría"
+      },
+      {
+        "type": "question",
+        "label": "ask what time"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "amigo",
+          "amiga"
+        ],
+        "label": "mention a friend"
+      }
+    ],
+    "model": "¡Hola, Mariana! Me encantaría ir a la salsa el viernes. ¿A qué hora es? Si quieres, llevo a un amigo. Él baila muy bien y es muy simpático. ¿Te parece bien?",
+    "focus": "c:me-encantaria",
+    "requires": [
+      "c:a-que-hora",
+      "c:bien-y-tu",
+      "c:hola-buenos-dias",
+      "c:me-encantaria",
+      "c:que-hora-es",
+      "c:si-quieres",
+      "g:conditional",
+      "g:gender-articles",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "g:si-present",
+      "l:amigo",
+      "l:bailar",
+      "l:bien",
+      "l:encantar",
+      "l:hora",
+      "l:ir",
+      "l:llevar",
+      "l:parecer",
+      "l:querer",
+      "l:qué",
+      "l:salsa",
+      "l:ser",
+      "l:simpático",
+      "l:viernes",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:days-el-lunes",
+      "p:hedge-knowledge",
+      "p:ir-a-venir-de-place",
+      "p:me-parece-bien-que",
+      "p:personal-a",
+      "p:quantifiers-basic",
+      "p:te-parece-bien-que"
+    ]
+  },
+  {
+    "id": "w-u17-02",
+    "unit": "u17",
+    "prompt": "Vale invites you to her sister's engagement party in Medellín, but you cannot go. Reply to her (a friend, tú): say sorry, give a reason starting with es que, and suggest another day to meet.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "es que",
+        "label": "give a reason with es que"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "pena",
+          "siento",
+          "lástima"
+        ],
+        "label": "say you are sorry"
+      },
+      {
+        "type": "question",
+        "label": "suggest another day as a question"
+      }
+    ],
+    "model": "Vale, qué pena, pero no puedo ir a Medellín. Es que tengo mucho trabajo en el café ese fin de semana. Me encantaría conocer a tu hermana. ¿Nos vemos otro día?",
+    "focus": "p:refuse-es-que",
+    "requires": [
+      "c:chao-nos-vemos",
+      "c:es-que",
+      "c:lo-siento-pero-no-puedo",
+      "c:me-encantaria",
+      "c:puedo",
+      "c:que-pena",
+      "c:tengo",
+      "c:trabajo-en",
+      "g:conditional",
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:café",
+      "l:conocer",
+      "l:día",
+      "l:encantar",
+      "l:fin",
+      "l:hermana",
+      "l:ir",
+      "l:pena",
+      "l:poder",
+      "l:qué",
+      "l:semana",
+      "l:ser",
+      "l:tener",
+      "l:trabajo",
+      "l:ver",
+      "p:ir-a-venir-de-place",
+      "p:otro-no-article",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:refuse-es-que",
+      "p:saber-conocer"
+    ]
+  },
+  {
+    "id": "w-u17-03",
+    "unit": "u17",
+    "prompt": "It is Thursday and you want to do something on Saturday with your friend Tomás. Write him a message suggesting a plan with ¿qué tal si…? and ask what he thinks.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "qu[eé] tal si",
+        "label": "suggest with ¿qué tal si…?"
+      },
+      {
+        "type": "question",
+        "label": "ask what he thinks"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "sábado"
+        ],
+        "label": "say Saturday"
+      }
+    ],
+    "model": "Tomás, ¿qué tal si vamos al cine el sábado? Hay una película nueva que dura dos horas. Luego comemos algo en un restaurante cerca. ¿Te parece bien?",
+    "focus": "p:que-tal-si",
+    "requires": [
+      "c:bien-y-tu",
+      "c:hay",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:ir-a-plans",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:questions",
+      "g:relative-que",
+      "g:si-present",
+      "l:bien",
+      "l:cerca",
+      "l:cine",
+      "l:comer",
+      "l:durar",
+      "l:hora",
+      "l:ir",
+      "l:nuevo",
+      "l:parecer",
+      "l:película",
+      "l:qué",
+      "l:restaurante",
+      "l:sábado",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:days-el-lunes",
+      "p:durar-durante",
+      "p:entonces-de-repente",
+      "p:indefinites-basic",
+      "p:ir-a-venir-de-place",
+      "p:me-parece-bien-que",
+      "p:que-tal-si",
+      "p:te-parece-bien-que",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u17-04",
+    "unit": "u17",
+    "prompt": "A friend from work looks tired and says she does not know what to do this weekend. Reply to her (tú) with two suggestions using ¿por qué no…?",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "por qu[eé] no",
+        "label": "suggest with ¿por qué no…?"
+      },
+      {
+        "type": "minSentences",
+        "n": 3,
+        "label": "write at least three sentences"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " usted",
+          " le "
+        ],
+        "label": "tú, not usted"
+      }
+    ],
+    "model": "Oye, ¿por qué no vienes a mi casa el sábado? Hacemos una comida con unos amigos. O si prefieres, ¿por qué no vamos a Monserrate el domingo? Es un plan tranquilo y muy bonito.",
+    "focus": "p:por-que-no",
+    "requires": [
+      "c:oiga-oye",
+      "c:tranquilo",
+      "c:vamos-a",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "g:si-present",
+      "g:stem-boot",
+      "l:amigo",
+      "l:bonito",
+      "l:casa",
+      "l:comida",
+      "l:domingo",
+      "l:hacer",
+      "l:ir",
+      "l:oír",
+      "l:plan",
+      "l:preferir",
+      "l:qué",
+      "l:ser",
+      "l:sábado",
+      "l:tranquilo",
+      "l:venir",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
+      "p:ir-venir",
+      "p:por-que-no",
+      "p:possessives-basic",
+      "p:prefieres-x-o-y",
+      "p:prep-questions-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u17-05",
+    "unit": "u17",
+    "prompt": "You want to thank your neighbour Jhon Fredy for helping you move. Write him a short message (tú): invite him to something with te invito a… and say when.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "te invito a",
+        "label": "use te invito a…"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "sábado",
+          "domingo",
+          "viernes",
+          "mañana",
+          "hoy",
+          "lunes"
+        ],
+        "label": "say when"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "gracias"
+        ],
+        "label": "say thank you"
+      }
+    ],
+    "model": "Jhon Fredy, muchas gracias, eres un amigo muy bueno. Te invito a almorzar el sábado, ¿listo? No es nada formal. Si no puedes, no hay problema.",
+    "focus": "p:te-invito-a",
+    "requires": [
+      "c:claro-listo",
+      "c:gracias-de-nada",
+      "c:hay",
+      "c:no-te-preocupes",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:negation-words",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:si-present",
+      "g:stem-boot",
+      "l:almorzar",
+      "l:amigo",
+      "l:bueno",
+      "l:formal",
+      "l:invitar",
+      "l:listo",
+      "l:poder",
+      "l:problema",
+      "l:ser",
+      "l:sábado",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:days-el-lunes",
+      "p:me-te-nos-objects",
+      "p:no-es-nada-adj",
+      "p:quantifiers-basic",
+      "p:te-invito-a"
+    ]
+  },
+  {
+    "id": "w-u17-06",
+    "unit": "u17",
+    "prompt": "Hernando asks if you will come to the football on Sunday. You will only go if something happens. Write back (he is older but you call him tú): say yes with a condition using si + present, and say what you do if it does not happen.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bsi\\b [^.,!?]+,",
+        "label": "a si condition then a comma"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(no |nos |me |te )?(quedo|quedamos|voy|vamos|llamo|veo|vemos)\\b",
+        "label": "say what you do"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "llueve",
+          "trabajo",
+          "puedo",
+          "termino"
+        ],
+        "label": "name the condition"
+      }
+    ],
+    "model": "Hernando, voy al estadio el domingo si no llueve. Si llueve, me quedo en casa y veo el partido en la televisión. ¿Y tú? ¿Vas con tu hijo?",
+    "focus": "g:si-present",
+    "requires": [
+      "c:bien-y-tu",
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:si-present",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:casa",
+      "l:domingo",
+      "l:estadio",
+      "l:hijo",
+      "l:ir",
+      "l:llover",
+      "l:partido",
+      "l:quedarse",
+      "l:televisión",
+      "l:ver",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u17-07",
+    "unit": "u17",
+    "prompt": "You are talking to Mariana about your plans for the week. Tell her what you usually do on a night out, using cuando + present at least once.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bcuando\\b",
+        "label": "use cuando"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "presente",
+        "label": "use the present"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "cuando fui",
+          "cuando era",
+          "cuando tuve"
+        ],
+        "label": "present after cuando, not the past"
+      }
+    ],
+    "model": "Mariana, cuando salgo con mis amigos, primero comemos algo. Después vamos a una discoteca y bailamos hasta las dos. Cuando llego a casa, estoy muy cansado, pero feliz.",
+    "focus": "g:cuando-indicative",
+    "requires": [
+      "c:hago-salgo-vengo",
+      "c:vamos-a",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:yo-irregular",
+      "l:amigo",
+      "l:bailar",
+      "l:cansado",
+      "l:casa",
+      "l:comer",
+      "l:después",
+      "l:discoteca",
+      "l:estar",
+      "l:feliz",
+      "l:ir",
+      "l:llegar",
+      "l:salir",
+      "p:cuando-basic",
+      "p:entonces-de-repente",
+      "p:indefinites-basic",
+      "p:ir-a-venir-de-place",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u17-08",
+    "unit": "u17",
+    "prompt": "Your neighbour asks where and when the party you mentioned is. Reply to her (an older woman you call usted): say it is at your place, give the day, and ask if she can come.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bes en\\b",
+        "label": "say where with es en…"
+      },
+      {
+        "type": "question",
+        "label": "ask if she can come"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " puedes",
+          " quieres",
+          " tú ",
+          " tu "
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas tardes, señora Rosa. La fiesta es en mi casa, el sábado a las ocho. Habrá música y comida. ¿Puede venir? Me gustaría mucho verla ahí.",
+    "focus": "p:event-ser-en",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:me-gustaria",
+      "g:conditional",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:object-pronoun-position",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:ahí",
+      "l:buena",
+      "l:casa",
+      "l:comida",
+      "l:fiesta",
+      "l:gustar",
+      "l:música",
+      "l:poder",
+      "l:ser",
+      "l:señora",
+      "l:sábado",
+      "l:tarde",
+      "l:venir",
+      "l:ver",
+      "p:aqui-ahi-alla",
+      "p:days-el-lunes",
+      "p:event-ser-en",
+      "p:nos-vemos-a-las",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:request-ladder",
+      "p:senor-don-article",
+      "p:ser-event-location",
+      "p:telling-time",
+      "p:tener-lugar"
+    ]
+  },
+  {
+    "id": "w-u17-09",
+    "unit": "u17",
+    "prompt": "You are thinking of buying tickets for a concert. Write to Vale (tú) asking how long it lasts and where it is, and say what you think of the plan.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bdura\\b",
+        "label": "use dura"
+      },
+      {
+        "type": "regex",
+        "pattern": "d[oó]nde es|es en ",
+        "label": "ask or say where it is"
+      },
+      {
+        "type": "question",
+        "label": "ask a question"
+      }
+    ],
+    "model": "Vale, ¿cuánto dura el concierto del viernes? Y ¿dónde es? Si dura mucho, prefiero comprar las entradas para otro día. Me parece un buen plan, ¿no?",
+    "focus": "p:durar-durante",
+    "requires": [
+      "c:no-cierto",
+      "c:sera-otro-dia",
+      "g:gender-articles",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:questions",
+      "g:ser-identity",
+      "g:si-present",
+      "g:stem-boot",
+      "l:buen",
+      "l:comprar",
+      "l:concierto",
+      "l:cuánto",
+      "l:durar",
+      "l:día",
+      "l:dónde",
+      "l:entrada",
+      "l:parecer",
+      "l:plan",
+      "l:preferir",
+      "l:ser",
+      "l:viernes",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:durar-durante",
+      "p:para-inf",
+      "p:prefieres-x-o-y",
+      "p:quantifiers-basic",
+      "p:question-word-order"
+    ]
+  },
+  {
+    "id": "w-u17-10",
+    "unit": "u17",
+    "prompt": "Two friends invite you to different things on Saturday night and you do not know what to do. Write to a third friend (tú): explain the problem and ask for advice.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "no s[eé] (qu[eé]|si|c[oó]mo|d[oó]nde)",
+        "label": "use no sé qué / no sé si…"
+      },
+      {
+        "type": "question",
+        "label": "ask for advice"
+      },
+      {
+        "type": "minSentences",
+        "n": 3,
+        "label": "write at least three sentences"
+      }
+    ],
+    "model": "Tengo un problema. Mariana me invita a una rumba y Tomás quiere ir al cine. Los dos planes son el sábado y no sé qué hacer. ¿Qué plan te parece mejor?",
+    "focus": "p:no-se-que-hacer",
+    "requires": [
+      "c:a-cuantas-cuotas",
+      "c:no-se",
+      "c:que-plan",
+      "c:tengo",
+      "g:gender-articles",
+      "g:indirect-questions",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:cine",
+      "l:hacer",
+      "l:invitar",
+      "l:ir",
+      "l:mejor",
+      "l:parecer",
+      "l:plan",
+      "l:problema",
+      "l:querer",
+      "l:qué",
+      "l:rumba",
+      "l:saber",
+      "l:ser",
+      "l:sábado",
+      "l:tener",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place",
+      "p:me-te-nos-objects",
+      "p:no-se-que-hacer",
+      "p:personal-a",
+      "p:te-invito-a"
+    ]
+  },
+  {
+    "id": "w-u17-11",
+    "unit": "u17",
+    "prompt": "You and a friend have been trying to agree on a plan. Write the message that settles it (tú): confirm day and time with entonces quedamos…, and say where you will meet.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "entonces quedamos",
+        "label": "use entonces quedamos"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b\\d{1,2}(:\\d\\d)?\\b|\\ba las\\b",
+        "label": "give a time"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "parque",
+          "cine",
+          "café",
+          "casa",
+          "estadio",
+          "entrada"
+        ],
+        "label": "say where"
+      }
+    ],
+    "model": "Listo, entonces quedamos el viernes a las siete en la entrada del cine. Me parece perfecto, y el plan me gusta mucho. Si llegas antes, me avisas. ¡Nos vemos allá!",
+    "focus": "p:entonces-quedamos",
+    "requires": [
+      "c:chao-nos-vemos",
+      "c:claro-listo",
+      "c:entonces-bueno",
+      "c:me-avisas",
+      "c:me-gusta",
+      "c:me-parece-bien",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:si-present",
+      "l:allá",
+      "l:antes",
+      "l:avisar",
+      "l:cine",
+      "l:entrada",
+      "l:gustar",
+      "l:listo",
+      "l:llegar",
+      "l:parecer",
+      "l:perfecto",
+      "l:plan",
+      "l:quedar",
+      "l:ver",
+      "l:viernes",
+      "p:aqui-ahi-alla",
+      "p:days-el-lunes",
+      "p:nos-vemos-a-las",
+      "p:quantifiers-basic",
+      "p:telling-time"
+    ]
+  },
+  {
+    "id": "w-u17-12",
+    "unit": "u17",
+    "prompt": "Your friend Tomás may or may not be able to come to dinner. Write to him (tú): ask him to tell you as soon as he knows, and say you will wait for his answer.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "avisas",
+          "avísame",
+          "aviso"
+        ],
+        "label": "use avisar"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bsi\\b|\\bcuando\\b",
+        "label": "use si or cuando"
+      },
+      {
+        "type": "question",
+        "label": "ask a question"
+      }
+    ],
+    "model": "Tomás, ¿vienes a cenar el viernes? Si puedes, me avisas hoy, ¿listo? Si vienes, hago la reserva en el restaurante. Yo te aviso a qué hora llegamos.",
+    "focus": "c:me-avisas",
+    "requires": [
+      "c:a-que-hora",
+      "c:claro-listo",
+      "c:hago-salgo-vengo",
+      "c:me-avisas",
+      "c:si-quieres",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:si-present",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:avisar",
+      "l:cenar",
+      "l:hacer",
+      "l:hora",
+      "l:hoy",
+      "l:listo",
+      "l:llegar",
+      "l:poder",
+      "l:qué",
+      "l:reserva",
+      "l:restaurante",
+      "l:venir",
+      "l:viernes",
+      "p:days-el-lunes"
+    ]
+  }
+]
