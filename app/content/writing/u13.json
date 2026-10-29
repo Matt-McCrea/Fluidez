@@ -2,7 +2,7 @@
   {
     "id": "w-u13-01",
     "unit": "u13",
-    "prompt": "Your friend Vale is coming to the café for the first time and texts you: \"¿Cómo llego?\" Reply in two or three short sentences, as to a friend: tell her to go straight and turn at the corner.",
+    "prompt": "Your friend Ana is visiting from Toronto and comes to the café for the first time. She texts you: \"¿Cómo llego?\" Reply in two or three short sentences, as to a friend: tell her to go straight and turn at the corner.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -175,7 +175,7 @@
   {
     "id": "w-u13-05",
     "unit": "u13",
-    "prompt": "Mariana texts you: \"¿Vienes a mi casa mañana?\" Answer her in two sentences: say yes, and tell her what time you are coming and how, using voy a or vengo en.",
+    "prompt": "Mariana texts you: \"¿Vienes a mi casa mañana?\" Answer her in two sentences: say yes, and tell her what time you're coming and how. Careful: going towards her place is voy, not vengo.",
     "minWords": 6,
     "maxWords": 25,
     "constraints": [
@@ -216,7 +216,7 @@
   {
     "id": "w-u13-06",
     "unit": "u13",
-    "prompt": "You are at a bus stop and a stranger, an older lady, looks lost. Ask her politely where the stop for the TransMilenio is. Use usted and be gentle with the request.",
+    "prompt": "You're lost at a bus stop. Ask an older lady, a stranger, politely where the TransMilenio station is. Use usted and soften the request.",
     "minWords": 6,
     "maxWords": 25,
     "constraints": [
@@ -247,31 +247,28 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Oiga, disculpe, ¿puede decirme dónde queda la estación?",
+    "model": "Disculpe, señora, ¿me puede decir dónde queda la estación?",
     "focus": "p:request-ladder",
     "requires": [
       "c:donde-esta",
-      "c:oiga-oye",
+      "c:me-puede-ayudar",
       "c:perdon-disculpe",
       "g:commands-usted",
-      "g:object-pronoun-position",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:decir",
       "l:disculpar",
       "l:dónde",
       "l:estación",
-      "l:oír",
       "l:poder",
       "l:quedar",
-      "p:me-te-nos-objects",
+      "l:señora",
       "p:request-ladder"
     ]
   },
   {
     "id": "w-u13-07",
     "unit": "u13",
-    "prompt": "You are in a bus and tell your friend Hernando, by text, when you are getting off. Two short sentences: where you get off and where you got on.",
+    "prompt": "You're on a bus and you text Hernando to say when you're getting off. Two short sentences: where you got on and where you get off.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -342,7 +339,7 @@
   {
     "id": "w-u13-09",
     "unit": "u13",
-    "prompt": "A tourist, a man you do not know, asks you for the address of the café. Write it in one or two sentences: the café is on Carrera 7 with Calle 12. Use usted for him.",
+    "prompt": "A tourist, a man you don't know, asks you for the address of the café. Write it in one or two sentences: the café is on Calle 11 with Carrera 4.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -362,19 +359,21 @@
         "label": "name the calle"
       }
     ],
-    "model": "El café queda en la carrera 7 con calle 12. Queda cerca de la estación.",
+    "model": "El café queda en la calle 11 con carrera 4. Queda muy cerca de aquí.",
     "focus": "p:street-names",
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "l:aquí",
       "l:café",
       "l:calle",
       "l:carrera",
       "l:cerca",
-      "l:estación",
       "l:quedar",
+      "p:aqui-ahi-alla",
       "p:cerca-de",
       "p:position-de",
+      "p:quantifiers-basic",
       "p:quedar-cerca",
       "p:street-names"
     ]
@@ -382,7 +381,7 @@
   {
     "id": "w-u13-10",
     "unit": "u13",
-    "prompt": "A friend asks you to explain to Vale, who is new in Bogotá, how to use the bus. Write Vale one or two sentences, someone your age: you asked the driver, and say what he told you (that the station is far).",
+    "prompt": "Text Vale, your friend: you asked a man the way to the notary's office, and he told you it's far. Use le for the man and me dijo que for his answer.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -397,7 +396,7 @@
         "label": "report it with me dijo que"
       }
     ],
-    "model": "Le pregunté y me dijo que la estación queda lejos.",
+    "model": "Un señor me ayudó. Le pregunté, y me dijo que la oficina queda muy lejos.",
     "focus": "g:indirect-objects",
     "requires": [
       "g:gender-articles",
@@ -406,69 +405,68 @@
       "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:that-clauses",
+      "l:ayudar",
       "l:decir",
-      "l:estación",
       "l:lejos",
+      "l:oficina",
       "l:preguntar",
       "l:quedar",
+      "l:señor",
       "p:cerca-de",
       "p:me-te-nos-objects",
       "p:preguntar-pedir",
-      "p:quedar-cerca"
+      "p:quantifiers-basic"
     ]
   },
   {
     "id": "w-u13-11",
     "unit": "u13",
-    "prompt": "You are at your hotel and the receptionist is helping you. Ask her politely to explain the way to the bus stop, using le or les and a command for her, a woman you call usted.",
+    "prompt": "The hotel receptionist explains the way to the bus stop, but very fast. Ask her politely, with a usted command, to speak more slowly.",
     "minWords": 6,
     "maxWords": 25,
     "constraints": [
       {
-        "type": "verbFormAny",
-        "inf": "explicar",
+        "type": "anyVerbInTense",
         "tense": "imperativo",
-        "label": "use explique"
+        "label": "use a polite command (usted)"
       },
       {
         "type": "containsAny",
         "words": [
-          "favor",
-          "por favor"
+          "despacio"
         ],
-        "label": "add por favor"
+        "label": "more slowly: más despacio"
       },
       {
         "type": "avoidsAny",
         "words": [
-          "explica",
-          "puedes"
+          "habla",
+          "repite",
+          "puedes",
+          "tú"
         ],
         "label": "usted, not tú"
       }
     ],
-    "model": "Explíqueme cómo llego a la parada, por favor.",
+    "model": "Perdón, señora. Hable más despacio, por favor.",
     "focus": "g:commands-usted",
     "requires": [
+      "c:mas-despacio",
+      "c:perdon-disculpe",
       "c:por-favor",
       "g:commands-usted",
-      "g:commands-with-pronouns",
-      "g:gender-articles",
-      "g:indirect-questions",
-      "g:present-ar",
-      "l:cómo",
-      "l:explicar",
+      "l:despacio",
       "l:favor",
-      "l:llegar",
-      "l:parada",
-      "p:me-te-nos-objects",
+      "l:hablar",
+      "l:perdón",
+      "l:señora",
       "p:request-ladder"
     ]
   },
   {
     "id": "w-u13-12",
     "unit": "u13",
-    "prompt": "Your friend Tomás is leaving his phone on a café table in a crowded street. Warn him with a short text, someone your age: say watch out, and tell him to walk with you.",
+    "prompt": "You're at a market stall with Tomás, and he leaves his phone on the table while he looks at the fruit. Warn him with a short text, as a friend: say watch out, and tell him to take his phone.",
     "minWords": 5,
     "maxWords": 20,
     "constraints": [
@@ -483,29 +481,28 @@
       {
         "type": "anyVerbInTense",
         "tense": "imperativo",
-        "label": "tell him to walk with you, with a command"
+        "label": "tell him what to do, with a command"
       },
       {
         "type": "avoidsAny",
         "words": [
-          "camine",
           "ponga",
+          "guarde",
           "usted"
         ],
         "label": "tú, not usted"
       }
     ],
-    "model": "Oye, ¡ojo con el celular! Camina conmigo.",
+    "model": "¡Ojo, el celular! Toma tu celular, Tomás.",
     "focus": "c:ojo",
     "requires": [
-      "c:oiga-oye",
       "c:ojo",
-      "g:prep-pronouns",
+      "g:gender-articles",
       "g:present-ar",
-      "l:caminar",
       "l:celular",
       "l:ojo",
-      "l:oír"
+      "l:tomar",
+      "p:possessives-basic"
     ]
   }
 ]

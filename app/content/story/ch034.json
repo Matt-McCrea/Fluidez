@@ -2,7 +2,7 @@
   "id": "ch034",
   "unit": "u13",
   "title": "Dos rutas",
-  "text": "Tomás: Sí, señor. Muy perdido. Voy a la calle 100 con carrera 15.\nVendedor: Tranquilo, joven. Primero, un tinto. Es un regalo.\nTomás tomó el tinto. Era el primer tinto del día, y era excelente.\nVendedor: Mire. Cruce la avenida en el semáforo. En el otro andén está la estación. Tome el TransMilenio de la ruta B, al norte. Baje en la estación de la Cien.\nTomás: ¿Y después?\nVendedor: Después, otro tinto.\nUna señora con un perro: ¡Qué va, joven! Usted necesita la buseta. Primero, regrese al centro en la buseta de la parada de la izquierda. En el centro, tome un taxi. Y en la carrera 7, una moto.\nVendedor: Señora, ¿una moto?\nSeñora: Mi hijo tiene una moto y un carro.\nVendedor: Señora, el joven no necesita a su hijo. Necesita una ruta.\nTomás llamó al café.\nTomás: Vale, ¿derecha o izquierda? ¿Buseta o TransMilenio?\nSimón: ¡Izquierda! ¡Derecha! ¡Izquierda!\nVale: Tomás, el vendedor tiene razón. La buseta no va a la Cien. Y el sur, no. ¡Ojo!\nTomás cruzó la avenida. En el semáforo había carros, motos, buses, busetas y un taxi amarillo, muy viejo.\nTomás no quería regresar al sur. Miró la parada de la buseta, miró la estación y tocó la llave de Joaquín en su chaqueta. Y entró a la estación.\nA las once y media, bajó del bus en la estación de la Cien. Pero el notario estaba en la carrera 7, muy lejos.\nEn el andén, un taxi amarillo y viejo esperaba.\nHernando: ¡Tomás! ¡Aquí, mijo!",
+  "text": "Tomás: Sí, señor. Muy perdido. Voy a la calle 100 con carrera 7.\nVendedor: Tranquilo, joven. Primero, un tinto. Es un regalo.\nTomás tomó el tinto. Era el primer tinto del día, y era excelente.\nVendedor: Mire. Cruce la avenida en el semáforo. En el otro andén está la estación. Tome el TransMilenio de la ruta B, al norte. Baje en la estación de la Cien.\nTomás: ¿Y después?\nVendedor: Después, otro tinto.\nUna señora con un perro: ¡Qué va, joven! Usted necesita la buseta. Primero, regrese al centro en la buseta de la parada de la izquierda. En el centro, tome un taxi. Y en la carrera 7, una moto.\nVendedor: Señora, ¿una moto?\nSeñora: Mi hijo tiene una moto y un carro.\nVendedor: Señora, el joven no necesita a su hijo. Necesita una ruta.\nTomás llamó al café.\nTomás: Vale, ¿derecha o izquierda? ¿Buseta o TransMilenio?\nSimón: ¡Izquierda! ¡Derecha! ¡Izquierda!\nVale: Tomás, el vendedor tiene razón. La buseta no va a la Cien. Toma el TransMilenio. ¡Ojo!\nTomás cruzó la avenida. En el semáforo había carros, motos, buses, busetas y un taxi amarillo, muy viejo.\nTomás no quería regresar al centro. Miró la parada de la buseta, miró la estación y tocó la llave de Joaquín en su chaqueta. Y entró a la estación.\nA las once y media, bajó del bus en la estación de la Cien. Pero el notario estaba en la carrera 7, muy lejos.\nEn el andén, un taxi amarillo y viejo esperaba.\nHernando: ¡Tomás! ¡Aquí, mijo!",
   "gloss": [
     {
       "es": "notario",
@@ -33,8 +33,8 @@
       "en": "After that, another coffee."
     },
     {
-      "es": "Y el sur, no. ¡Ojo!",
-      "en": "And not the south. Careful."
+      "es": "Toma el TransMilenio. ¡Ojo!",
+      "en": "Take the TransMilenio. Careful."
     },
     {
       "es": "el notario estaba en la carrera 7, muy lejos",
@@ -197,7 +197,6 @@
     "l:ser",
     "l:señor",
     "l:señora",
-    "l:sur",
     "l:taxi",
     "l:tener",
     "l:tinto",
