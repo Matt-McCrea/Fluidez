@@ -26,14 +26,14 @@ import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schem
 import { productivePolicy, type Direction, type DueCard, type Tier } from '../learner';
 import {
   CHECKPOINT_WARMUP_FACTOR, CHECKPOINT_WINDOW_DAYS, CHUNK_CAP, CONTRAST_CAP, COUNTS, DONE_BAND, DRILL_WITHIN,
-  EXTENDED_EXTRA_MINUTES, EXTRA_READING_MAX, LEXEME_CAP, MINIMUM_WARMUP_MINUTES, MULTI_REVIEW_COST, MULTI_REVIEW_MAX, MULTI_REVIEW_SCAN,
+  EXTENDED_EXTRA_MINUTES, EXTRA_READING_MAX, LEXEME_CAP, EARLY_NEW_ITEMS_MAX, EARLY_SESSIONS, MINIMUM_WARMUP_MINUTES, MULTI_REVIEW_COST, MULTI_REVIEW_MAX, MULTI_REVIEW_SCAN,
   PATTERN_CAP, PATTERNS_DAY_CAP, PATTERNS_TAUGHT, REMIX_WINDOW_DAYS, REPAY_CAP, REREAD_WIDE_DAYS, REREAD_WINDOW_DAYS,
   REVIEW_DAY_EXTRA_MINUTES, REVIEW_REUSE_DAYS, REVIEW_REUSE_REASON,
   SECONDS, SEVERE_FACTOR, THROTTLED_WARMUP_FACTOR, sessionMinutes, throttleMinutes, warmupMinutes,
 } from './budget';
 import { dayPos, makeRng, sessionSeed, type Rng } from './content';
 import type {
-  Block, ChapterRef, CloseBlock, CompileInput, Conversion, Diagnostic, LearnItem, LearnerView,
+  Block, ChapterRef, CloseBlock, CompileInput, Conversion, Diagnostic, LearnBlock, LearnItem, LearnerView,
   Mode, PathState, PracticeBlock, PracticeItem, PracticeOp, ReviewItem, ScriptItem, SentenceRef,
   ServedRef, SessionLogEntry, SessionPlan, TeachBlock, WarmupBlock,
 } from './types';
@@ -52,6 +52,37 @@ export function compileSession(input: CompileInput): SessionPlan {
 /** The path to persist after a session: plan.pathAfter if the core was completed, else unchanged. */
 export function advancePath(path: PathState, plan: SessionPlan, coreCompleted: boolean): PathState {
   return coreCompleted ? structuredClone(plan.pathAfter) : path;
+}
+
+/**
+ * New items a session planned but never presented (the learner ran out of
+ * time): owed, first in line next session. Never lost.
+ */
+export function carryOwed(path: PathState, nodes: readonly NodeId[]): PathState {
+  if (!nodes.length) return path;
+  const p = structuredClone(path);
+  p.owedNew = [...nodes, ...p.owedNew.filter((n) => !nodes.includes(n))];
+  return p;
+}
+
+/**
+ * The learner stopped before the core was done ("I need to stop"): logged as
+ * a minimum session, the path does not advance. A grammar point that was
+ * taught still needs its drill; everything not taught stays where it was
+ * (owed, or on the same path day, which comes round again).
+ */
+export function stoppedPath(path: PathState, plan: SessionPlan, taughtGrammar?: NodeId): PathState {
+  const p = structuredClone(path);
+  if (taughtGrammar && !p.pendingDrills.some((d) => d.node === taughtGrammar)) {
+    p.pendingDrills = [...p.pendingDrills, { node: taughtGrammar, at: p.coreSessions + 1 }];
+    p.recentGrammar = [taughtGrammar, ...p.recentGrammar.filter((x) => x !== taughtGrammar)].slice(0, 8);
+    p.owedGrammar = p.owedGrammar.filter((x) => x !== taughtGrammar);
+  }
+  p.log = [...p.log, {
+    learnerSession: plan.sessionIndex, type: 'minimum' as const, dayType: plan.dayType, unit: plan.unit, day: plan.day,
+    advanced: false, throttled: plan.budget.throttled,
+  }].slice(-LOG_MAX);
+  return p;
 }
 
 /** Whether "do another" should be offered now: not minimum, course not finished, and no backlog over budget. */
@@ -243,6 +274,7 @@ class Compiler {
       case 'checkpoint': this.checkpointDay(); break;
       case 'review': this.reviewDay(d, day); break;
     }
+    this.fitToBudget();
     if (this.tier === 'extended' && !this.throttled && d.type !== 'review') this.extraReading();
     this.blocks.push(this.close(d, day));
 
@@ -591,6 +623,7 @@ class Compiler {
       ? [...(opts.focusNonGrammar ? day.focus.filter((n) => kindOf(n, this.course.nodes) !== 'grammar') : []), ...day.chunks, ...day.lexemes]
         .filter((n) => (this.course.teachPos.get(n) ?? here) <= here)
       : [];
+    const maxTotal = this.path.coreSessions < EARLY_SESSIONS ? EARLY_NEW_ITEMS_MAX : Infinity;
     const taken: NodeId[] = [];
     const owed: NodeId[] = [];
     const counts = { chunk: 0, lexeme: 0, pattern: 0, contrast: 0 };
@@ -613,7 +646,7 @@ class Compiler {
           owed.push(id); continue;
         }
       }
-      if (counts[bucket] < caps[bucket]) { counts[bucket]++; taken.push(id); this.sessionNew.add(id); }
+      if (counts[bucket] < caps[bucket] && taken.length < maxTotal) { counts[bucket]++; taken.push(id); this.sessionNew.add(id); }
       else owed.push(id);
     }
     if (owed.length && dayItems.length) this.diag({ code: 'deferred', message: `${owed.length} new item(s) owed to later sessions${this.throttled ? ' (throttled)' : ''}` });
@@ -640,6 +673,52 @@ class Compiler {
   private productive(id: NodeId, kind: GraphNode['kind']): boolean {
     const n = this.course.nodes.get(id);
     return productivePolicy({ kind, band: n?.band ?? this.unit?.band, freqRank: n?.freqRank });
+  }
+
+  /**
+   * The plan must fit the session minutes. Reviews are never trimmed and the
+   * day's teaching is the point of the day, so what gives is the learn pool:
+   * new items come off its end (owed, first in line next session) until the
+   * estimate fits, skipping any item other content in the plan needs.
+   */
+  private fitToBudget() {
+    const learn = this.blocks.find((b): b is LearnBlock => b.kind === 'learn');
+    if (!learn) return;
+    const total = () => this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60;
+    const removed: NodeId[] = [];
+    for (let i = learn.items.length - 1; i >= 0 && total() > this.minutes + 1e-9; i--) {
+      const it = learn.items[i];
+      if (this.neededElsewhere(it)) continue;
+      learn.items.splice(i, 1);
+      learn.minutes = round1(learn.items.length * SECONDS.learn / 60);
+      for (const k of Object.keys(this.newNodes) as (keyof SessionPlan['newNodes'])[]) {
+        this.newNodes[k] = this.newNodes[k].filter((n) => n !== it.node);
+      }
+      const r = this.receptiveOnly.indexOf(it.node);
+      if (r >= 0) this.receptiveOnly.splice(r, 1);
+      this.sessionNew.delete(it.node);
+      removed.unshift(it.node);
+    }
+    if (!learn.items.length) this.blocks.splice(this.blocks.indexOf(learn), 1);
+    if (removed.length) {
+      this.owedNew = [...removed, ...this.owedNew.filter((n) => !removed.includes(n))];
+      this.diag({ code: 'deferred', block: 'learn', message: `${removed.length} new item(s) owed: the plan was over ${this.minutes} min` });
+    }
+  }
+
+  /** Whether any other content in the plan (sentences, chapter, scene, task) requires this learn item's node. */
+  private neededElsewhere(item: LearnItem): boolean {
+    const others = this.blocks.map((b) => (b.kind === 'learn' ? { ...b, items: b.items.filter((x) => x !== item) } : b));
+    const plan = { blocks: others } as unknown as SessionPlan;
+    for (const ref of servedRefs(plan)) {
+      const req = ref.kind === 'sentence' ? this.content.sentences.get(ref.id)?.requires
+        : ref.kind === 'chapter' ? this.content.chapterById.get(ref.id)?.requires
+          : ref.kind === 'scene' ? this.content.scenes.get(ref.id)?.requires
+            : ref.kind === 'item' && ref.id.startsWith('wt:') ? this.content.tasks.get(ref.id.slice(3))?.requires
+              : undefined;
+      if (req?.includes(item.node)) return true;
+    }
+    return false;
   }
 
   private contrastReady(id: NodeId): boolean {

@@ -7,9 +7,9 @@ import {
 import type {
   BankSentence, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../../content/schema';
-import type { LexemeLike } from '../../exercises';
+import { alignedPairs, type AlignedPair, type LexemeLike } from '../../exercises';
 
-export interface Segment { es: string; en: string }
+export type Segment = AlignedPair;
 
 export class Bundle {
   readonly course: Course;
@@ -58,18 +58,22 @@ export class Bundle {
 
   unit(id: string | undefined): Unit | undefined { return this.units.find((u) => u.id === id); }
 
+  private readonly pairCache = new Map<NodeId, Segment[]>();
+
   /**
-   * A node's Spanish/English as pairs of short segments ("Hola. / Buenos días."
-   * -> two pairs). The first pair is what a retrieval asks for; a "— reply" part
-   * is dropped from a retrieval prompt.
+   * A node's Spanish/English as ALIGNED pairs (exercises/pairs.ts): each
+   * pair's English is the exact translation of its Spanish, so any card built
+   * from one pair asks and answers the same thing. Lexemes: one pair, the
+   * gloss and the word with its article.
    */
   segments(id: NodeId): Segment[] {
-    const n = this.node(id);
-    if (!n?.es) return [];
-    const head = (s: string) => s.split(/\s+—\s+/)[0].trim();
-    const es = n.es.split(/\s+\/\s+/).map(head).filter(Boolean);
-    const en = (n.en ?? n.title).split(/\s+\/\s+/).map(head).filter(Boolean);
-    return es.map((e, i) => ({ es: e, en: en[i] ?? en[0] ?? n.title }));
+    let v = this.pairCache.get(id);
+    if (!v) {
+      const n = this.node(id);
+      v = n ? alignedPairs(n) : [];
+      this.pairCache.set(id, v);
+    }
+    return v;
   }
 
   lexemeLike(id: NodeId): LexemeLike | undefined {

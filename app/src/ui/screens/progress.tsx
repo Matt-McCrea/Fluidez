@@ -1,7 +1,7 @@
 // Progress: things you can do, words that have stuck, how much you've read
 // and written, and days practised. No points.
 import type { NodeId } from '../../content/schema';
-import { Heading } from '../components/text';
+import { Heading, undash } from '../components/text';
 import { useApp } from '../context';
 import { streak } from '../store/ui';
 
@@ -26,9 +26,9 @@ export function Progress() {
         <p class="ask">You can now…</p>
         {done.length || marks.size ? (
           <ul class="cando">
-            {done.map((u) => <li key={u.id}>✓ {u.canDo}</li>)}
+            {done.map((u) => <li key={u.id}>✓ {undash(u.canDo)}</li>)}
             {[...marks.values()].filter((m) => !done.some((u) => u.id === m.unit)).map((m) => (
-              <li key={m.unit}>{m.feel === 'yes' ? '✓' : '…'} {m.canDo} <span class="small">({m.feel === 'yes' ? 'you said yes' : m.feel === 'mostly' ? 'mostly' : 'getting there'})</span></li>
+              <li key={m.unit}>{m.feel === 'yes' ? '✓' : '…'} {undash(m.canDo)} <span class="small">({m.feel === 'yes' ? 'you said yes' : m.feel === 'mostly' ? 'mostly' : 'getting there'})</span></li>
             ))}
           </ul>
         ) : <p class="small">Finish your first week to tick off your first goal.</p>}

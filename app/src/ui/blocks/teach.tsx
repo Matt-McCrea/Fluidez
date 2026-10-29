@@ -1,5 +1,5 @@
-// Teaching blocks: new words and phrases (present, then 3–5 interleaved
-// retrievals each), a new pattern (hook → examples → rule → read and pick →
+// Teaching blocks: new words and phrases (present three, then 3 to 5
+// retrievals each, every round a different format, spaced a few cards apart), a new pattern (hook → examples → rule → read and pick →
 // your turn → pitfalls), the drill opener (recall before the reminder) and
 // the personal sentence.
 import { useEffect, useMemo, useState } from 'preact/hooks';
@@ -8,52 +8,50 @@ import type { TeachingScript } from '../../content/schema';
 import { LEARNING_STEPS_MAX } from '../../learner';
 import { AnswerField } from '../components/answer';
 import { CardRun, CardView, Continue } from '../components/card';
-import { Es, Heading, Paras, Rich } from '../components/text';
-import { learnRetrieval, scriptCard, sentenceCheck, type Card } from '../session/cards';
+import { Es, Heading, Paras, Rich, undash } from '../components/text';
+import { learnRetrieval, SAY, scriptCard, sentenceCheck, type Card } from '../session/cards';
+import { LearnQueue, teachOrder } from '../session/order';
 import { blockHeading } from '../session/labels';
 import type { BlockProps } from './types';
 
 // ---------------------------------------------------------------- learn
 
-type Step = { kind: 'present'; i: number } | { kind: 'ask'; i: number; round: number };
-
-function initialQueue(n: number): Step[] {
-  const q: Step[] = [];
-  for (let g = 0; g < n; g += 3) {
-    const idx = Array.from({ length: Math.min(3, n - g) }, (_, k) => g + k);
-    idx.forEach((i) => q.push({ kind: 'present', i }));
-    idx.forEach((i) => q.push({ kind: 'ask', i, round: 0 }));
-  }
-  return q;
-}
-
 export function Learn({ block, run, onDone }: BlockProps<LearnBlock>) {
-  const [queue, setQueue] = useState<Step[]>(() => initialQueue(block.items.length));
-  const [pos, setPos] = useState(0);
+  const q = useMemo(() => new LearnQueue(block.items.length), [block]);
+  const [, setTick] = useState(0);
   const h = blockHeading(block, run.bundle);
-  const step = queue[pos];
-  useEffect(() => { if (step?.kind === 'present') run.present(block.items[step.i].node, block.items[step.i].productive); }, [pos]);
+  // out of time: nothing new is presented; what was presented gets one last ask
+  if (q.current?.kind === 'present' && run.outOfTimeFor(block)) {
+    run.notTaught(q.stopNew().map((i) => block.items[i].node));
+  }
+  const step = q.current;
+  useEffect(() => { if (step?.kind === 'present') run.present(block.items[step.i].node, block.items[step.i].productive); }, [q.pos, step?.kind]);
   if (!block.items.length || !step) {
     return <><Heading {...h} /><p>All set. You've got these.</p><div class="actions"><Continue onClick={onDone} /></div></>;
   }
   const item = block.items[step.i];
-  const advance = (extra?: Step) => {
-    const q = extra ? [...queue, extra] : queue;
-    if (extra) setQueue(q);
-    if (pos + 1 >= q.length) onDone(); else setPos(pos + 1);
+  const advance = (again = false) => {
+    q.next(again && !run.outOfTimeFor(block));
+    if (q.done) onDone(); else setTick((t) => t + 1);
   };
   if (step.kind === 'present') {
     const segs = run.bundle.segments(item.node);
+    const node = run.bundle.node(item.node);
     const ex = run.bundle.sentence(item.example);
+    // the whole exchange, when the pairs above do not cover it ("— Bien, gracias, ¿y tú?")
+    const frags = (node?.es ?? '').split(/\s*[/\u2014\u2013]\s*/).map((x) => x.trim()).filter(Boolean);
+    const covered = (f: string) => segs.some((x) => x.es === f || x.accept.includes(f) || f.includes(x.es));
+    const more = node?.es && segs.length && !frags.every(covered) ? node : undefined;
     return (
       <>
-        {pos === 0 ? <Heading {...h} /> : null}
-        <section class="card present" key={`p${pos}`}>
+        {q.pos === 0 ? <Heading {...h} /> : null}
+        <section class="card present" key={`p${q.pos}`}>
           <p class="ask">New</p>
-          {segs.length ? segs.map((s, k) => (
-            <div class="pair" key={k}><Es block><span class="big">{s.es}</span></Es><p class="en">{s.en}</p></div>
-          )) : <p class="big">{run.bundle.title(item.node)}</p>}
-          {ex ? <div class="example"><p class="small">In a sentence</p><Es block>{ex.es}</Es><p class="en">{ex.en}</p></div> : null}
+          {segs.length ? segs.map((x, k) => (
+            <div class="pair" key={k}><Es block><span class="big">{x.es}</span></Es><p class="en">{x.en}</p></div>
+          )) : <p class="big">{undash(run.bundle.title(item.node))}</p>}
+          {more ? <div class="example"><p class="small">The whole exchange</p><Es block>{more.es!}</Es>{more.en ? <p class="en"><Rich text={more.en} /></p> : null}</div> : null}
+          {ex ? <div class="example"><p class="small">In a sentence</p><Es block>{ex.es}</Es><p class="en"><Rich text={ex.en} /></p></div> : null}
           <div class="actions"><Continue label="Got it" onClick={() => advance()} /></div>
         </section>
       </>
@@ -62,13 +60,12 @@ export function Learn({ block, run, onDone }: BlockProps<LearnBlock>) {
   const card: Card = learnRetrieval(item, run.bundle, step.round);
   return (
     <CardView
-      key={`a${pos}`} card={card}
+      key={`a${q.pos}`} card={card}
       onDone={(o) => {
         let done = true;
         if (item.scoring === 'learning') done = run.learningStep(item.node, o, item.credit, item.productive);
         else run.score(item, o);
-        const again = !done && step.round + 1 < LEARNING_STEPS_MAX;
-        advance(again ? { kind: 'ask', i: step.i, round: step.round + 1 } : undefined);
+        advance(!done && step.round + 1 < LEARNING_STEPS_MAX);
       }}
     />
   );
@@ -85,8 +82,8 @@ export function Teach({ block, run, onDone }: BlockProps<TeachBlock>) {
   const phases = useMemo<Phase[]>(() => {
     if (!block.script || !script) return ['examples'];
     return block.parts.filter((p) => {
-      if (p === 'readAndPick') return block.items.some((i) => i.op === 'readAndPick');
-      if (p === 'yourTurn') return block.items.some((i) => i.op === 'yourTurn');
+      if (p === 'readAndPick') return teachOrder(block.items).first.length > 0;
+      if (p === 'yourTurn') return teachOrder(block.items).mixed.length > 0;
       if (p === 'pitfalls') return script.pitfalls.length > 0;
       return true;
     });
@@ -102,8 +99,8 @@ export function Teach({ block, run, onDone }: BlockProps<TeachBlock>) {
     return (
       <>
         <Heading {...h} />
-        {node?.es ? <div class="pair"><Es block>{node.es}</Es>{node.en ? <p class="en">{node.en}</p> : null}</div> : null}
-        {ex.map((s) => <div class="pair" key={s!.id}><Es block>{s!.es}</Es><p class="en">{s!.en}</p></div>)}
+        {node?.es ? <div class="pair"><Es block>{node.es}</Es>{node.en ? <p class="en">{undash(node.en)}</p> : null}</div> : null}
+        {ex.map((s) => <div class="pair" key={s!.id}><Es block>{s!.es}</Es><p class="en"><Rich text={s!.en} /></p></div>)}
         <p class="handoff">You've seen how it works. Now try it.</p>
         <div class="actions"><Continue onClick={onDone} /></div>
       </>
@@ -124,7 +121,7 @@ function TeachPhase({ phase, script, block, run, onDone }: { phase: Phase; scrip
         <section class="card">
           <p class="lead">Today: {script.hook.line.replace(/^Today:?\s*/i, '')}</p>
           <Es block><span class="big">{script.hook.es}</span></Es>
-          <p class="en">{script.hook.en}</p>
+          <p class="en"><Rich text={script.hook.en} /></p>
           <div class="actions"><Continue label="Show me" onClick={onDone} /></div>
         </section>
       );
@@ -132,7 +129,7 @@ function TeachPhase({ phase, script, block, run, onDone }: { phase: Phase; scrip
       return (
         <section class="card">
           <p class="ask">Read these. Spot what they have in common.</p>
-          {script.examples.map((e, i) => <div class="pair" key={i}><Es block>{e.es}</Es><p class="en">{e.en}</p></div>)}
+          {script.examples.map((e, i) => <div class="pair" key={i}><Es block>{e.es}</Es><p class="en"><Rich text={e.en} /></p></div>)}
           <div class="actions"><Continue label="What's the trick?" onClick={onDone} /></div>
         </section>
       );
@@ -148,11 +145,14 @@ function TeachPhase({ phase, script, block, run, onDone }: { phase: Phase; scrip
       );
     case 'readAndPick':
     case 'yourTurn': {
-      const items = block.items.filter((i) => i.op === phase);
-      const cards = items.map((it) => scriptCard(it, script)).filter((c): c is Card => !!c);
+      // a few to read first, then writing it, with the rest of the reading woven in
+      const order = teachOrder(block.items);
+      const items = (phase === 'readAndPick' ? order.first : order.mixed)
+        .filter((it) => !!scriptCard(it, script));
+      const cards = items.map((it) => scriptCard(it, script)!);
       return (
         <>
-          <p class="handoff">{phase === 'readAndPick' ? 'Read and pick. Look closely at the small words.' : "You've seen it a few times. Now try writing it."}</p>
+          <p class="handoff">{phase === 'readAndPick' ? 'Read and pick. Look closely at the small words.' : "Now try writing it. There's some reading in between."}</p>
           <CardRun cards={cards} onAnswer={(i, o) => run.score(items[i], o)} onDone={onDone} />
         </>
       );
@@ -163,7 +163,7 @@ function TeachPhase({ phase, script, block, run, onDone }: { phase: Phase; scrip
           <p class="ask">Almost everyone slips here at first</p>
           {script.pitfalls.map((p, i) => (
             <div class="pitfall" key={i}>
-              <p><s class="es" lang="es">{p.wrong}</s> → <Es>{p.right}</Es></p>
+              <p><s class="es" lang="es">{undash(p.wrong)}</s> → <Es>{p.right}</Es></p>
               <p class="why"><Rich text={p.why} /></p>
             </div>
           ))}
@@ -183,7 +183,7 @@ export function RuleRecall({ block, run, onDone }: BlockProps<RuleRecallBlock>) 
   const target = script ? { es: script.hook.es, en: script.hook.en } : node?.es && node.en ? { es: node.es.split(/\s+\/\s+/)[0], en: node.en.split(/\s+\/\s+/)[0] } : null;
   if (!target) return <><Heading {...h} /><div class="actions"><Continue onClick={onDone} /></div></>;
   const card: Card = {
-    type: 'type', key: `rr:${block.node}`, ask: `Remember last time? How would you say this?`, prompt: { text: target.en, lang: 'en' },
+    type: 'type', key: `rr:${block.node}`, ask: SAY, prompt: { text: target.en, lang: 'en' },
     answerLang: 'es', placeholder: 'Type it in Spanish', retry: false, check: sentenceCheck({ es: target.es, en: target.en, accept: [] }),
     why: 'Here is the reminder.',
   };
@@ -192,8 +192,8 @@ export function RuleRecall({ block, run, onDone }: BlockProps<RuleRecallBlock>) 
     <>
       <Heading title="Quick reminder" />
       <section class="card rule">
-        {script ? <Paras text={script.rule.split(/\n\s*\n/)[0]} /> : <p>{run.bundle.title(block.node)}</p>}
-        {(script?.examples ?? []).slice(0, 2).map((e, i) => <div class="pair" key={i}><Es block>{e.es}</Es><p class="en">{e.en}</p></div>)}
+        {script ? <Paras text={script.rule.split(/\n\s*\n/)[0]} /> : <p>{undash(run.bundle.title(block.node))}</p>}
+        {(script?.examples ?? []).slice(0, 2).map((e, i) => <div class="pair" key={i}><Es block>{e.es}</Es><p class="en"><Rich text={e.en} /></p></div>)}
         <div class="actions"><Continue label="Let's practise" onClick={onDone} /></div>
       </section>
     </>

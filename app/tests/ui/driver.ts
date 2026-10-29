@@ -3,13 +3,14 @@
 // components use, either always right or always wrong.
 import type { Block, Item } from '../../src/compiler';
 import { checkWriting, type Constraint } from '../../src/check';
-import { LEARNING_STEPS_MAX, Learner, MemoryStore } from '../../src/learner';
+import { LEARNING_STEPS_MAX, Learner, MemoryStore, type Tier } from '../../src/learner';
 import { fixtureContent } from '../../src/ui/fixtures';
 import { Bundle } from '../../src/ui/data/bundle';
 import {
   learnRetrieval, practiceCard, questionCard, recallCard, reviewCard, scriptCard, type Card,
 } from '../../src/ui/session/cards';
-import { SessionRunner, compilePlan } from '../../src/ui/session/runner';
+import { SessionRunner, compilePlan, softBlock, truncatable } from '../../src/ui/session/runner';
+import { LearnQueue, breakRuns, formatOf, interleave, teachOrder } from '../../src/ui/session/order';
 import { checkTurn, turnOrder } from '../../src/ui/session/scene';
 import { MemoryKV, UiStore } from '../../src/ui/store/ui';
 
@@ -51,49 +52,100 @@ export function answer(card: Card, mood: Mood): { correct: boolean; tries: numbe
   return { correct: card.check(a.text!).pass, tries: 2, ms: 8000 };
 }
 
-export interface Walk { cards: Card[]; failures: string[] }
+/**
+ * What the learner saw, in order: every card, and `screens` = one format tag
+ * per screen ('present', 'teach:rule', the card's formatOf ...), for checks on
+ * how long one format runs.
+ */
+export interface Walk { cards: Card[]; failures: string[]; screens: string[]; /** move the session clock (the walk's estimate of the time each screen takes) */ advance?: (ms: number) => void }
+
+/** Seconds a screen takes, roughly, as a learner on a phone does it. */
+export const SCREEN_SECONDS = { mcq: 9, type: 20, typeRetry: 32, read: 8, present: 10 } as const;
+/** Block kinds whose time the walk counts card by card. */
+const CARD_TIMED = new Set(['warmup', 'leech', 'learn', 'teach', 'structuredInput', 'controlledOutput', 'cuedProduction', 'communicative', 'remix', 'readingCheck', 'extraReading', 'timedRecall']);
 
 /** Run one block the way its component does. */
 export function runBlock(b: Block, run: SessionRunner, mood: Mood, walk: Walk) {
   const bundle = run.bundle;
+  const tick = (card: Card | 'present', tries = 1) => {
+    const t = card === 'present' ? SCREEN_SECONDS.present : card.type === 'type' ? (tries > 1 ? SCREEN_SECONDS.typeRetry : SCREEN_SECONDS.type) : SCREEN_SECONDS[card.type];
+    walk.advance?.(t * 1000);
+  };
   const play = (card: Card | undefined, item?: Item) => {
     if (!card) return;
     walk.cards.push(card);
+    walk.screens.push(formatOf(card));
     const o = answer(card, mood);
+    tick(card, o.tries);
     if (mood === 'right' && !o.correct) walk.failures.push(`${b.kind} ${card.key}: right answer did not pass`);
     if (item) run.score(item, o);
     return o;
   };
+  /** a run of cards the way PracticeRun / ReviewRun order and cut it */
+  const runCards = (items: Item[], build: (it: Item) => Card, cut: boolean, alt?: (it: Item) => Card | undefined) => {
+    const cards = items.map(build);
+    const order = interleave(cards, formatOf);
+    if (alt) breakRuns(cards, order, (i) => alt(items[i]));
+    for (const k of order) {
+      if (cut) run.itemShown(b, k);
+      play(cards[k], items[k]);
+      if (cut && run.overBudget()) break;
+    }
+  };
   switch (b.kind) {
     case 'warmup': case 'leech':
-      b.items.forEach((it) => play(reviewCard(it, bundle), it));
+      runCards(b.items, (it) => reviewCard(it as never, bundle), b.kind === 'leech', (it) => reviewCard(it as never, bundle, 'pickSpanish'));
       break;
-    case 'learn':
-      for (const it of b.items) {
-        run.present(it.node, it.productive);
-        for (let round = 0; round < LEARNING_STEPS_MAX; round++) {
-          const card = learnRetrieval(it, bundle, round);
-          walk.cards.push(card);
-          const o = answer(card, mood);
-          if (run.learningStep(it.node, o, it.credit, it.productive)) break;
+    case 'learn': {
+      // the same queue the Learn component walks
+      const q = new LearnQueue(b.items.length);
+      while (!q.done) {
+        if (q.current!.kind === 'present' && run.outOfTimeFor(b)) run.notTaught(q.stopNew().map((i) => b.items[i].node));
+        const step = q.current;
+        if (!step) break;
+        const it = b.items[step.i];
+        if (step.kind === 'present') {
+          run.present(it.node, it.productive);
+          walk.screens.push('present');
+          tick('present');
+          q.next();
+          continue;
         }
+        const card = learnRetrieval(it, bundle, step.round);
+        walk.cards.push(card);
+        walk.screens.push(formatOf(card));
+        const o = answer(card, mood);
+        tick(card, o.tries);
+        if (mood === 'right' && !o.correct) walk.failures.push(`learn ${card.key}: right answer did not pass`);
+        const done = run.learningStep(it.node, o, it.credit, it.productive);
+        q.next(!done && step.round + 1 < LEARNING_STEPS_MAX && !run.outOfTimeFor(b));
       }
       break;
+    }
     case 'teach': {
       run.present(b.node);
       const script = bundle.scripts.get(b.node);
-      if (script) b.items.forEach((it) => play(scriptCard(it, script), it));
+      if (script) {
+        for (const p of b.parts) {
+          if (p === 'hook' || p === 'examples' || p === 'rule') { walk.screens.push(`teach:${p}`); walk.advance?.({ hook: 30, examples: 60, rule: 90 }[p] * 1000); }
+        }
+        const { first, mixed } = teachOrder(b.items);
+        first.forEach((it) => play(scriptCard(it, script), it));
+        walk.screens.push('teach:handoff');
+        mixed.forEach((it) => play(scriptCard(it, script), it));
+      }
       break;
     }
     case 'structuredInput': case 'controlledOutput': case 'cuedProduction': case 'communicative':
     case 'remix': case 'readingCheck': case 'extraReading':
-      b.items.forEach((it) => play(practiceCard(it, bundle, run.plan.seed), it));
+      runCards(b.items, (it) => practiceCard(it as never, bundle, run.plan.seed), true);
       break;
     case 'timedRecall':
       b.items.forEach((it) => play(recallCard(it, bundle), it));
       break;
     case 'read': case 'reread': {
       const ch = bundle.chapters.get(b.chapter)!;
+      walk.screens.push('story');
       run.expose([...(bundle.index.chapterById.get(ch.id)?.requires ?? []), ...ch.lexemes]);
       const qs = b.kind === 'read' ? ch.questions : ch.rereadQuestions;
       qs.forEach((q, i) => play(questionCard(`${b.kind}:${ch.id}:${i}`, q)));
@@ -122,18 +174,21 @@ export function runBlock(b: Block, run: SessionRunner, mood: Mood, walk: Walk) {
 }
 
 /** Compile, run and finish one session. */
-export async function session(w: Awaited<ReturnType<typeof world>>, mood: Mood = 'right', mode: 'next' | 'another' = 'next') {
-  const plan = compilePlan(w.learner, w.bundle, w.ui, { mode, now: w.now() });
+export async function session(w: Awaited<ReturnType<typeof world>>, mood: Mood = 'right', mode: 'next' | 'another' = 'next', tier?: Tier) {
+  const plan = compilePlan(w.learner, w.bundle, w.ui, { mode, now: w.now(), tier });
   const run = new SessionRunner(w.learner, w.bundle, w.ui, plan, w.now);
   run.start();
-  const walk: Walk = { cards: [], failures: [] };
+  const walk: Walk = { cards: [], failures: [], screens: [], advance: (ms) => { w.clock.t += ms; } };
+  const t0 = w.clock.t;
   for (const b of plan.blocks) {
     if (b.kind === 'close') break;
-    run.blockShown(b);
+    if (softBlock(b) && run.overBudget()) { run.skip(b); continue; }
+    if (truncatable(b)) run.enter(b); else run.blockShown(b);
     runBlock(b, run, mood, walk);
-    w.clock.t += b.minutes * 60_000;
+    if (!CARD_TIMED.has(b.kind)) { w.clock.t += b.minutes * 60_000; walk.screens.push(b.kind); }
   }
+  const minutes = (w.clock.t - t0) / 60_000;
   const pathBefore = structuredClone(w.ui.path);
   await run.finish();
-  return { plan, run, walk, pathBefore };
+  return { plan, run, walk, pathBefore, minutes };
 }

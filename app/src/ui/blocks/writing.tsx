@@ -6,8 +6,9 @@ import type { CloseBlock, SelfCheckBlock, WritingBlock } from '../../compiler';
 import { checkWriting, type Constraint } from '../../check';
 import { AnswerField } from '../components/answer';
 import { Continue } from '../components/card';
-import { Bar, Es, Heading, Rich } from '../components/text';
+import { Bar, Es, Heading, Rich, undash } from '../components/text';
 import { blockHeading, lessonTypeWord } from '../session/labels';
+import { MORE_MIN_STREAK, MORE_MINUTES } from '../session/more';
 import type { CanDoMark } from '../store/ui';
 import type { BlockProps } from './types';
 
@@ -50,7 +51,7 @@ export function Writing({ block, run, onDone }: BlockProps<WritingBlock>) {
           </ul>
         ) : null}
         <AnswerField value={text} onChange={setText} label="Your text" placeholder="Write in Spanish" lang="es" multiline rows={6} disabled={submitted} autoFocus />
-        <p class={`count${n > task.maxWords ? ' over' : ''}`} aria-live="polite">{n} words <span class="small">({task.minWords}–{task.maxWords})</span></p>
+        <p class={`count${n > task.maxWords ? ' over' : ''}`} aria-live="polite">{n} words <span class="small">({task.minWords} to {task.maxWords})</span></p>
         {!submitted ? (
           <div class="actions"><button class="btn primary" data-primary disabled={tooShort} onClick={submit}>{tooShort ? `Write at least ${task.minWords} words` : 'Done, compare it'}</button></div>
         ) : (
@@ -93,7 +94,7 @@ export function SelfCheck({ block, run, ui, onDone }: BlockProps<SelfCheckBlock>
       <Heading {...h} />
       <section class="card">
         <p class="ask">Can you do this now?</p>
-        <p class="big">{block.canDo}</p>
+        <p class="big">{undash(block.canDo)}</p>
         <div class="options">
           <button class="option" disabled={sent} onClick={() => pick('yes')}>Yes, I can</button>
           <button class="option" disabled={sent} onClick={() => pick('mostly')}>Mostly</button>
@@ -104,10 +105,11 @@ export function SelfCheck({ block, run, ui, onDone }: BlockProps<SelfCheckBlock>
   );
 }
 
-export function Close({ block, run, another, onAnother, onHome }: BlockProps<CloseBlock> & { another: boolean; onAnother: () => void; onHome: () => void }) {
+export function Close({ block, run, more, onMore, onHome }: BlockProps<CloseBlock> & { more: boolean; onMore: () => void; onHome: () => void }) {
   const unit = run.bundle.unit(block.unit);
   const hook = block.hookChapter ? run.bundle.chapters.get(block.hookChapter)?.hook : undefined;
   const t = run.tally;
+  const offer = block.offerAnother && more;
   return (
     <>
       <Heading title="Done for today" lead={t.scored ? `${t.firstTry} of ${t.scored} right first time.` : ''} />
@@ -115,16 +117,22 @@ export function Close({ block, run, another, onAnother, onHome }: BlockProps<Clo
         {unit && block.progress ? (
           <>
             <p class="ask">This week</p>
-            <p class="big">{unit.canDo}</p>
+            <p class="big">{undash(unit.canDo)}</p>
             <Bar value={block.progress.done} of={block.progress.of} label="Progress through this week's goal" />
             <p class="small">{block.progress.done} of {block.progress.of} lessons this week</p>
           </>
         ) : null}
-        {hook ? <p class="hook">{hook}</p> : block.next ? <p class="hook">Next time: {lessonTypeWord(block.next)}.</p> : null}
+        {hook ? <p class="hook">{undash(hook)}</p> : block.next ? <p class="hook">Next time: {lessonTypeWord(block.next)}.</p> : null}
       </section>
+      {offer ? (
+        <section class="card more" aria-labelledby="more-title">
+          <p class="ask" id="more-title">Got {MORE_MINUTES} more minutes?</p>
+          <p>You've practised {MORE_MIN_STREAK} days in a row or more, and your reviews are under control. A good day to get ahead.</p>
+        </section>
+      ) : null}
       <div class="actions stack">
-        {block.offerAnother && another ? <button class="btn primary" data-another onClick={onAnother}>Do another</button> : null}
-        <button class={`btn ${block.offerAnother && another ? 'quiet' : 'primary'}`} data-primary data-home onClick={onHome}>Back home</button>
+        {offer ? <button class="btn primary" data-another onClick={onMore}>Keep going</button> : null}
+        <button class={`btn ${offer ? 'quiet' : 'primary'}`} data-primary data-home onClick={onHome}>{offer ? 'Not today' : 'Back home'}</button>
       </div>
     </>
   );

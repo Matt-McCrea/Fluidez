@@ -147,7 +147,7 @@ function personItem(s: BankSentence, opts: InputOptions): ReadAndPickItem | null
 const MOOD_FRAMES: ReadonlyArray<{ test: (ts: Tok[], i: number) => boolean; ind: string; subj: string; whyInd: string; whySubj: string }> = [
   {
     test: (ts, i) => low(ts[i]) === 'aunque',
-    ind: 'Which one says it is definitely true?', subj: 'Which one says it may or may not be true — it doesn\'t matter?',
+    ind: 'Which one says it is definitely true?', subj: 'Which one says it may or may not be true, and it doesn\'t matter which?',
     whyInd: 'after "aunque", the normal form states a fact', whySubj: 'after "aunque", the subjunctive leaves it open',
   },
   {
@@ -270,7 +270,7 @@ function porParaItem(s: BankSentence, opts: InputOptions): ReadAndPickItem | nul
   if (!personal && !place) return null;
   const swapped = render(replaceCore(ts, i, word === 'por' ? 'para' : 'por'));
   const Q = personal
-    ? { por: 'Which one says you do it for their sake — because of them?', para: 'Which one says who it is meant for, or who you work for?' }
+    ? { por: 'Which one says you do it for their sake, because of them?', para: 'Which one says who it is meant for, or who you work for?' }
     : { por: 'Which one is about going through or around a place?', para: 'Which one says where they are heading?' };
   const WHY = personal
     ? { por: 'por + a person: for their sake, on their behalf.', para: 'para + a person: the one who receives it.' }

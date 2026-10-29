@@ -95,6 +95,15 @@ export const LEXEME_CAP: Record<LessonType, number> = {
   introduce: 6, drill: 4, input: 16, patterns: 6, output: 0, review: 0, checkpoint: 0,
 };
 export const CHUNK_CAP = 5;
+/**
+ * The first-week ramp: in a learner's first EARLY_SESSIONS core sessions the
+ * learn pool takes at most EARLY_NEW_ITEMS_MAX new items, all kinds together.
+ * Unit 1's survival kit lists 11 per day; 11 items at 3–5 retrievals each is a
+ * 50-card run on day one. The rest are owed and repaid first next time.
+ * Later sessions are bounded by the session minutes instead (fitToBudget).
+ */
+export const EARLY_SESSIONS = 3;
+export const EARLY_NEW_ITEMS_MAX = 8;
 /** Patterns per session: on a Patterns day up to PATTERNS_DAY_CAP (the first PATTERNS_TAUGHT get a light script lesson, the rest join the learn pool). */
 export const PATTERN_CAP = 4;
 export const PATTERNS_DAY_CAP = 8;
@@ -109,7 +118,7 @@ export const REPAY_CAP = { lexeme: 6, chunk: 3, pattern: 2, contrast: 1 } as con
 
 /** Seconds per item, by op. Reviews use learner.secondsPerReview() instead. */
 export const SECONDS = {
-  learn: 35,            // example + 3–5 interleaved retrievals
+  learn: 55,            // present + 3–5 interleaved retrievals (pick the meaning, pick the Spanish, type it): measured in the player, not 35
   hook: 30,
   examples: 60,
   rule: 90,
@@ -170,4 +179,5 @@ export const TUNING_LOG: readonly string[] = [
   '2026-10-29 BAND_WARMUP_MINUTES +1 per band → A1 7 / A2 7 / B1 8 / B2 9 / C1 9. 3-seed means, standard tier: average throttle A1 9→6%, A2 18→10%, B1 16→13%, B2 11→7%, C1 17→10%; fast A1 114→108 d with 0% throttle (target ≤ ~112 met). Average A1 stays ~160–172 d: see the summary, it is attendance-bound, not review-bound.',
   '2026-10-29 tried and rejected: MULTI_REVIEW_SCAN 80→250 (targets/item +0.05, calendar change within seed noise, compile cost ×2.5); B2/C1 warm-up 10–12. Forgetful B2 throttle (2 seeds) 31% at 9 min, 25% at 10, 24.5% at 11, 17% at 12; the average profile is already ~5% at 9 and gains nothing. Kept 9: a 10–12 min warm-up turns the 28-min B2 session into a 16–18 min core for every learner to help only the forgetful one.',
   '2026-10-29 simulator: synthetic supply 2× (32 sentences per lexeme) for the quota run, so measured demand is not capped by the synthetic bank (bare reviews 0–4 instead of hundreds for forgetful).',
+  '2026-10-29 playtest: SECONDS.learn 35→55 (what the player really takes); first-week ramp: at most 8 new items per session in the first 3 core sessions (day 1 listed 11); a plan over its session minutes drops new items from the end of the learn pool (owed, never lost) until it fits.',
 ];

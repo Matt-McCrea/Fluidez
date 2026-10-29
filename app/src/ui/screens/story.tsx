@@ -2,7 +2,7 @@
 // labelled, deliberate re-read (recorded as such in the exposure ledger).
 import { useState } from 'preact/hooks';
 import { Reader, wordCount } from '../blocks/read';
-import { Es, Heading } from '../components/text';
+import { Es, Heading, undash } from '../components/text';
 import { useApp } from '../context';
 
 export function Story() {
@@ -17,7 +17,7 @@ export function Story() {
     return (
       <main class="screen" id="main">
         <button class="btn link" onClick={() => setOpen(null)}>← All chapters</button>
-        <Heading title={chapter.title} lead="Read it again — notice how much easier it is." />
+        <Heading title={chapter.title} lead="Read it again. Notice how much easier it is now." />
         <p class="tag">Re-reading</p>
         <Reader
           chapter={chapter} bundle={bundle} ui={ui} finishLabel="Done"
@@ -43,7 +43,7 @@ export function Story() {
               <li key={c.id}>
                 <button class="row" onClick={() => setOpen(c.id)}>
                   <span class="num">{i + 1}</span>
-                  <span>{full?.title ?? c.id}</span>
+                  <span>{undash(full?.title ?? c.id)}</span>
                   <span class="small">{learner.ledger.views('chapter', c.id).length > 1 ? 'Read again' : 'Read'}</span>
                 </button>
               </li>
@@ -57,7 +57,7 @@ export function Story() {
         <ul class="saved">
           {ui.state.saved.map((w, i) => (
             <li key={`${w.es}-${i}`}>
-              <Es>{w.es}</Es> <span class="en">{w.en}</span>
+              <Es>{w.es}</Es> <span class="en">{undash(w.en)}</span>
               <button class="btn link small" aria-label={`Remove ${w.es}`} onClick={async () => { await ui.update((s) => { s.saved.splice(i, 1); }); force((n) => n + 1); }}>Remove</button>
             </li>
           ))}

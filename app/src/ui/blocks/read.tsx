@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { ReadBlock, RereadBlock } from '../../compiler';
 import type { StoryChapter } from '../../content/schema';
 import { CardRun, Continue } from '../components/card';
-import { Es, Heading, fmtSeconds } from '../components/text';
+import { Es, Heading, fmtSeconds, lines, undash } from '../components/text';
 import type { Bundle } from '../data/bundle';
 import { questionCard } from '../session/cards';
 import { blockHeading } from '../session/labels';
@@ -28,7 +28,7 @@ export function Reader({ chapter, bundle, ui, onFinish, finishLabel = "I've read
     const t = window.setInterval(() => setSecs(Math.round((performance.now() - start.current) / 1000)), 1000);
     return () => window.clearInterval(t);
   }, [clock]);
-  const paras = useMemo(() => chapter.text.split(/\n+/).filter((l) => l.trim()), [chapter]);
+  const paras = useMemo(() => chapter.text.split(/\n+/).filter((l) => l.trim()).flatMap(lines), [chapter]);
   const isSaved = (es: string) => ui.state.saved.some((s) => s.es.toLowerCase() === es.toLowerCase());
   const tap = (word: string) => {
     const g = bundle.gloss(word, chapter);
@@ -54,7 +54,7 @@ export function Reader({ chapter, bundle, ui, onFinish, finishLabel = "I've read
       <div class="gloss" aria-live="polite">
         {sel ? (
           <div class="gloss-inner">
-            <p><Es><strong>{sel.es}</strong></Es> {sel.en ? <span class="en">{sel.en}</span> : <span class="small">No note for this word yet. Guess from the sentence.</span>}</p>
+            <p><Es><strong>{undash(sel.es)}</strong></Es> {sel.en ? <span class="en">{undash(sel.en)}</span> : <span class="small">No note for this word yet. Guess from the sentence.</span>}</p>
             <div class="gloss-actions">
               {sel.en ? <button class="btn quiet" disabled={isSaved(sel.es)} onClick={save}>{isSaved(sel.es) ? 'Saved' : 'Save word'}</button> : null}
               <button class="btn quiet" onClick={() => setSel(null)} aria-label="Close the note">Close</button>

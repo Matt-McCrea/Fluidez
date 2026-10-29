@@ -1,32 +1,30 @@
-// First run: why you're here, how long a day is, and where to start
-// (from zero, or a short read-and-pick probe that picks a starting week).
-import { useMemo, useState } from 'preact/hooks';
-import type { Tier } from '../../learner';
+// First run: what Fluidez is and what this week gets you, the learner's goal,
+// and where to start (the first lesson, or a short adaptive check that picks
+// a starting week). There is no lesson-length choice: every session is the
+// standard one.
+import { useEffect, useMemo, useState } from 'preact/hooks';
 import { Continue } from '../components/card';
-import { Es, Heading } from '../components/text';
+import { Heading, Txt, undash } from '../components/text';
 import { useApp } from '../context';
-import { applyPlacement, contentProbe, placeFrom, type ProbeSource } from '../session/placement';
+import { applyPlacement, contentProbe, type ProbeSource } from '../session/placement';
 import type { Goal } from '../store/ui';
-import { TIERS } from './settings';
 
-const GOALS: Array<{ goal: Goal; label: string }> = [
-  { goal: 'travel', label: 'Travel in Latin America' },
-  { goal: 'people', label: 'Talk with friends or family' },
-  { goal: 'work', label: 'Use it at work' },
-  { goal: 'me', label: 'Just for me' },
+const GOALS: Array<{ goal: Goal; label: string; note: string }> = [
+  { goal: 'travel', label: 'Travel', note: 'Getting around, ordering, meeting people on the way' },
+  { goal: 'people', label: 'Friends and family', note: 'Talking with people you care about' },
+  { goal: 'work', label: 'Work', note: 'Colleagues, clients and meetings' },
+  { goal: 'me', label: 'Personal interest', note: 'For the pleasure of it' },
 ];
 
 export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: ProbeSource }) {
   const app = useApp();
-  const [step, setStep] = useState<'welcome' | 'goal' | 'time' | 'start' | 'probe' | 'placed'>('welcome');
+  const [step, setStep] = useState<'welcome' | 'goal' | 'start' | 'probe' | 'placed'>('welcome');
   const [goal, setGoal] = useState<Goal | undefined>();
-  const [tier, setTier] = useState<Tier>('standard');
   const [placed, setPlaced] = useState(0);
 
   const finish = async (unit: number) => {
-    const t = TIERS.find((x) => x.tier === tier)!;
-    app.learner.setSettings({ tier: t.tier, minutes: t.minutes });
-    const path = applyPlacement(app.learner, app.bundle, unit);
+    app.learner.setSettings({ tier: 'standard', minutes: 20 });
+    const path = applyPlacement(app.learner, app.bundle, unit, app.now());
     await app.ui.setPath(path);
     await app.ui.update((s) => { s.onboarded = true; s.goal = goal; s.placedAt = unit; });
     await app.learner.flush();
@@ -37,46 +35,37 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
     case 'welcome':
       return (
         <main class="screen onboarding" id="main">
-          <Heading title="Spanish you can use" lead="A short lesson every day: remember, learn one thing, then use it for real." />
-          <Es block><span class="big">Hola. Me llamo Tomás. Soy de Toronto.</span></Es>
-          <p class="en">Hi. My name's Tomás. I'm from Toronto.</p>
-          <p>By the end of your first week, you'll be able to say that about yourself, and ask someone else.</p>
-          <div class="actions"><Continue label="Let's start" onClick={() => setStep('goal')} /></div>
+          <Heading title="Welcome to Fluidez" lead="Spanish for real conversations, about 20 minutes a day." />
+          <p class="promise">By the end of this week you'll be able to introduce yourself, say where you're from and what you do, in Spanish.</p>
+          <ul class="welcome-points">
+            <li>Each day starts with a quick look back at what you know.</li>
+            <li>Then something new, and right away you use it.</li>
+            <li>A story set in Bogotá runs through the course.</li>
+          </ul>
+          <div class="actions"><Continue label="Get started" onClick={() => setStep('goal')} /></div>
         </main>
       );
     case 'goal':
       return (
         <main class="screen onboarding" id="main">
-          <Heading title="What's it for?" lead="It shapes the examples you'll see first. You can't get this wrong." />
+          <Heading title="What's your goal?" lead="So we can tune the examples to you." />
           <div class="options" role="radiogroup" aria-label="Your goal">
             {GOALS.map((g) => (
-              <button key={g.goal} role="radio" aria-checked={goal === g.goal} class={`option${goal === g.goal ? ' on' : ''}`} onClick={() => setGoal(g.goal)}>{g.label}</button>
-            ))}
-          </div>
-          <div class="actions"><button class="btn primary" data-primary disabled={!goal} onClick={() => setStep('time')}>Next</button></div>
-        </main>
-      );
-    case 'time':
-      return (
-        <main class="screen onboarding" id="main">
-          <Heading title="How long a day?" lead="Little and often beats long and rare. You can change this any time." />
-          <div class="options" role="radiogroup" aria-label="Daily practice">
-            {TIERS.map((t) => (
-              <button key={t.tier} role="radio" aria-checked={tier === t.tier} class={`option${tier === t.tier ? ' on' : ''}`} onClick={() => setTier(t.tier)}>
-                <strong>{t.label}</strong><br /><span class="small">{t.note}</span>
+              <button key={g.goal} role="radio" aria-checked={goal === g.goal} aria-label={g.label} class={`option${goal === g.goal ? ' on' : ''}`} onClick={() => setGoal(g.goal)}>
+                <strong>{g.label}</strong><br /><span class="small">{g.note}</span>
               </button>
             ))}
           </div>
-          <div class="actions"><button class="btn primary" data-primary onClick={() => setStep('start')}>Next</button></div>
+          <div class="actions"><button class="btn primary" data-primary disabled={!goal} onClick={() => setStep('start')}>Next</button></div>
         </main>
       );
     case 'start':
       return (
         <main class="screen onboarding" id="main">
-          <Heading title="Where should we start?" />
+          <Heading title="Have you learned any Spanish before?" />
           <div class="options">
-            <button class="option" data-zero onClick={() => void finish(0)}><strong>Start from zero</strong><br /><span class="small">Never studied, or it's been years.</span></button>
-            <button class="option" data-some onClick={() => setStep('probe')}><strong>I know some Spanish</strong><br /><span class="small">A quick check, about two minutes.</span></button>
+            <button class="option" data-zero onClick={() => void finish(0)}><strong>No, I'm new to it</strong><br /><span class="small">Start with the first lesson.</span></button>
+            <button class="option" data-some onClick={() => setStep('probe')}><strong>Yes, some</strong><br /><span class="small">A short check, about three minutes, so you can skip what you already know.</span></button>
           </div>
         </main>
       );
@@ -86,11 +75,18 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
       const unit = app.bundle.course.units[placed];
       return (
         <main class="screen onboarding" id="main">
-          <Heading title={placed ? 'You know a fair bit' : "Let's start at the start"} />
-          {placed && unit
-            ? <p>You'll start at week {placed + 1}: <strong>{unit.title}</strong>. Everything before it counts as known, and comes back in reviews to make sure.</p>
-            : <p>The first weeks go quickly if you already know some of it, and the reviews will skip what you know.</p>}
-          <div class="actions"><Continue label="Begin" onClick={() => void finish(placed)} /></div>
+          {placed && unit ? (
+            <>
+              <Heading title={`You'll start at week ${placed + 1}`} lead={undash(unit.title)} />
+              <p>The weeks before it count as known. Their words and phrases will come back now and then over the next few weeks, to make sure they've stuck.</p>
+            </>
+          ) : (
+            <>
+              <Heading title="We'll start at the beginning" />
+              <p>The first lessons go quickly if some of it is familiar, and anything you already know won't come back often.</p>
+            </>
+          )}
+          <div class="actions"><Continue label="Start learning" onClick={() => void finish(placed)} /></div>
         </main>
       );
     }
@@ -98,35 +94,37 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
 }
 
 function Probe({ source, onResult }: { source: ProbeSource; onResult: (unit: number) => void }) {
-  const app = useApp();
-  const items = useMemo(() => source.items(15), [source]);
-  const [i, setI] = useState(0);
-  const [answers, setAnswers] = useState<boolean[]>([]);
-  if (!items.length) {
-    return (
-      <main class="screen onboarding" id="main">
-        <Heading title="Quick check" />
-        <p>There isn't enough course content on this device to check you yet, so we'll start at the beginning. The early lessons move fast.</p>
-        <div class="actions"><Continue label="OK" onClick={() => onResult(0)} /></div>
-      </main>
-    );
+  const probe = useMemo(() => source.start(), [source]);
+  const [, setTick] = useState(0);
+  const it = probe.next();
+  useEffect(() => { if (!it && probe.asked > 0) onResult(probe.result()); });
+  if (!it) {
+    if (probe.asked === 0) {
+      return (
+        <main class="screen onboarding" id="main">
+          <Heading title="Quick check" />
+          <p>There isn't enough of the course on this device to check your level yet, so we'll start at the beginning. The early lessons move quickly.</p>
+          <div class="actions"><Continue label="OK" onClick={() => onResult(0)} /></div>
+        </main>
+      );
+    }
+    return null;
   }
-  const it = items[i];
   const pick = (k: number) => {
-    const next = [...answers, k === it.answer];
-    setAnswers(next);
-    if (i + 1 >= items.length) onResult(placeFrom(items, next, app.bundle.course.units.length));
-    else setI(i + 1);
+    probe.answer(k === it.answer);
+    setTick((t) => t + 1);
   };
   return (
     <main class="screen onboarding" id="main">
-      <Heading title="Quick check" lead="Pick what it means. Not sure? Skip it; that's useful too." />
-      <p class="pos">{i + 1} of {items.length}</p>
+      <Heading title="Quick check" lead="Pick the answer that fits. If you're not sure, say so rather than guess." />
+      <p class="pos">{Math.min(probe.asked + 1, probe.max)} of about {probe.max}</p>
       <section class="card" key={it.id}>
-        <Es block><span class="big">{it.es}</span></Es>
+        <p class="ask">{it.ask}</p>
+        <Txt t={it.prompt} block big />
+        {it.sub ? <Txt t={it.sub} block /> : null}
         <div class="options">
-          {it.options.map((o, k) => <button key={k} class="option" data-option={k} onClick={() => pick(k)}>{o}</button>)}
-          <button class="btn quiet" onClick={() => pick(-1)}>I don't know</button>
+          {it.options.map((o, k) => <button key={k} class="option" lang={o.lang} data-option={k} onClick={() => pick(k)}><span class={o.lang === 'es' ? 'es' : ''}>{o.text}</span></button>)}
+          <button class="btn quiet" data-dontknow onClick={() => pick(-1)}>I don't know</button>
         </div>
       </section>
     </main>

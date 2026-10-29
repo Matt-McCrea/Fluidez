@@ -122,7 +122,7 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
             {first && first !== value ? <p class="small">You wrote: <span lang={card.answerLang}>{first}</span>, then <span lang={card.answerLang}>{value}</span></p> : null}
           </>
         ) : retrying ? (
-          <p class="hint">Almost. {result!.hint ?? 'Have another look and try once more.'}</p>
+          <p class="hint">Almost. <Rich text={result!.hint ?? 'Have another look and try once more.'} /></p>
         ) : null}
       </div>
       <div class="actions">
@@ -147,22 +147,30 @@ function ReadView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
       <p class="ask">{card.ask}</p>
       <Es block><span class="big">{card.es}</span></Es>
       <div class="feedback">
-        {show ? <p class="en">{card.en}</p> : <button class="btn link" onClick={() => setShow(true)}>Show English</button>}
+        {show ? <p class="en"><Rich text={card.en} /></p> : <button class="btn link" onClick={() => setShow(true)}>Show English</button>}
       </div>
       <div class="actions"><Continue label={next ?? 'Next'} onClick={() => onDone({ correct: true, tries: 1, ms: ms() })} /></div>
     </section>
   );
 }
 
-/** A run of cards, one at a time, with a position line. */
-export function CardRun({ cards, onAnswer, onDone }: { cards: Card[]; onAnswer: (i: number, o: Outcome, input?: string) => void; onDone: () => void }) {
+/**
+ * A run of cards, one at a time, with a position line. `onShow(i)` fires as
+ * each card appears; `stop()` is asked before each next card (out of time:
+ * the run ends there).
+ */
+export function CardRun({ cards, onAnswer, onDone, onShow, stop }: {
+  cards: Card[]; onAnswer: (i: number, o: Outcome, input?: string) => void; onDone: () => void;
+  onShow?: (i: number) => void; stop?: () => boolean;
+}) {
   const [i, setI] = useState(0);
+  useEffect(() => { if (i < cards.length) onShow?.(i); }, [i]);
   if (!cards.length) return <div class="actions"><Continue onClick={onDone} /></div>;
   const card = cards[Math.min(i, cards.length - 1)];
   return (
     <CardView
       key={card.key} card={card} pos={{ n: i + 1, of: cards.length }}
-      onDone={(o, input) => { onAnswer(i, o, input); if (i + 1 >= cards.length) onDone(); else setI(i + 1); }}
+      onDone={(o, input) => { onAnswer(i, o, input); if (i + 1 >= cards.length || stop?.()) onDone(); else setI(i + 1); }}
     />
   );
 }

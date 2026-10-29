@@ -14,9 +14,10 @@ import { Session } from './screens/session';
 import { Settings } from './screens/settings';
 import { Story } from './screens/story';
 import { UiStore } from './store/ui';
+import { MORE_MINUTES } from './session/more';
 
 type Tab = 'home' | 'story' | 'progress' | 'settings';
-type Route = { tab: Tab } | { session: Mode; key: number };
+type Route = { tab: Tab } | { session: Mode; key: number; cap?: number };
 
 /** Each session start gets a fresh key, so "Do another" always mounts a new player. */
 let sessionSeq = 0;
@@ -93,8 +94,8 @@ export function App({ opts }: { opts?: BootOptions }) {
   } else if ('session' in route) {
     body = (
       <Session
-        key={route.key} mode={route.session} onExit={goHome}
-        onAnother={() => setRoute({ session: 'another', key: ++sessionSeq })}
+        key={route.key} mode={route.session} onExit={goHome} capMinutes={route.cap}
+        onAnother={() => setRoute({ session: 'another', key: ++sessionSeq, cap: MORE_MINUTES })}
       />
     );
   } else {

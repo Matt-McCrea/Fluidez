@@ -5,7 +5,7 @@
 //   `scoring` → on finishing the core: advancePath, persist the path.
 // An abandoned session leaves the path where it was.
 import {
-  advancePath, canDoAnother, compileSession, reviewTargets, servedRefs,
+  advancePath, canDoAnother, carryOwed, compileSession, reviewTargets, servedRefs, stoppedPath,
   type Block, type Item, type Mode, type PathState, type ServedRef, type SessionPlan,
 } from '../../compiler';
 import type { NodeId } from '../../content/schema';
@@ -29,15 +29,39 @@ export function gradeOf(o: Pick<Outcome, 'correct' | 'tries'>): Grade {
 
 export interface SceneRun { firstTry: number; turns: number; seconds: number }
 
+/**
+ * Every session is the standard tier (the learner never picks a length); the
+ * minutes come from the compiler's budget for the band being studied.
+ */
 export function compilePlan(learner: Learner, bundle: Bundle, ui: UiStore, opts: { mode?: Mode; now?: number; tier?: Tier } = {}): SessionPlan {
   return compileSession({
     learnerId: ui.state.learnerId, learner, path: ui.path, course: bundle.course, content: bundle.index,
-    now: opts.now ?? Date.now(), tier: opts.tier, mode: opts.mode ?? 'next',
+    now: opts.now ?? Date.now(), tier: opts.tier ?? 'standard', mode: opts.mode ?? 'next',
   });
 }
 
+/** Blocks that can go when time is up: nothing here moves the course on. */
+export function softBlock(b: Block): boolean {
+  return b.kind === 'personal' || b.kind === 'extraReading' || b.kind === 'leech' || b.kind === 'sceneRerun'
+    || (b.kind === 'reread' && b.purpose === 'fluency');
+}
+
+/** Blocks whose cards may be cut short when time is up (each card's content is ledgered as it is shown). */
+export function truncatable(b: Block): boolean {
+  switch (b.kind) {
+    case 'structuredInput': case 'controlledOutput': case 'cuedProduction': case 'communicative':
+    case 'remix': case 'readingCheck': case 'extraReading': case 'leech':
+      return true;
+    default:
+      return false;
+  }
+}
+
+/** The "I need to stop" option appears after this many minutes. */
+export const STOP_AFTER_MINUTES = 10;
+
 export function anotherAllowed(learner: Learner, bundle: Bundle, ui: UiStore, now = Date.now()): boolean {
-  return canDoAnother({ learner, path: ui.path, course: bundle.course, content: bundle.index, learnerId: ui.state.learnerId, now });
+  return canDoAnother({ learner, path: ui.path, course: bundle.course, content: bundle.index, learnerId: ui.state.learnerId, now, tier: 'standard' });
 }
 
 const refKey = (r: ServedRef) => `${r.kind}\u0000${r.id}\u0000${r.deliberate ? 1 : 0}\u0000${r.reason ?? ''}`;
@@ -45,7 +69,19 @@ const refKey = (r: ServedRef) => `${r.kind}\u0000${r.id}\u0000${r.deliberate ? 1
 export class SessionRunner {
   private readonly marked = new Set<string>();
   private started = false;
+  private startedAt = 0;
+  /** blocks opened (their content ledgered as shown), and blocks skipped for time */
+  private readonly entered = new Set<Block>();
+  private readonly skipped = new Set<Block>();
+  /** nodes whose presentation has been shown */
+  private readonly presented = new Set<NodeId>();
+  /** learn items never presented (time ran out): owed to the next session */
+  private readonly notPresented = new Set<NodeId>();
   finished = false;
+  /** the learner stopped early: logged as a minimum session, the path did not move */
+  stopped = false;
+  /** hard cap on the session, minutes (default: the plan's budget) */
+  capMinutes: number;
   /** what the first run of a scene scored, for the timed rerun's comparison */
   readonly scenes = new Map<string, SceneRun>();
   /** seconds the first read of a chapter took in this session */
@@ -56,20 +92,78 @@ export class SessionRunner {
   constructor(
     readonly learner: Learner, readonly bundle: Bundle, readonly ui: UiStore, readonly plan: SessionPlan,
     private readonly now: () => number = Date.now,
-  ) {}
+    opts: { capMinutes?: number } = {},
+  ) {
+    this.capMinutes = opts.capMinutes ?? plan.budget?.minutes ?? 20;
+  }
 
   start(): number {
     if (this.started) return this.learner.sessionIndex;
     this.started = true;
+    this.startedAt = this.now();
     return this.learner.startSession(this.now());
+  }
+
+  // ---------------------------------------------------------------- time
+
+  /** Minutes since the session started. */
+  elapsed(): number { return this.started ? Math.max(0, (this.now() - this.startedAt) / 60_000) : 0; }
+
+  /** Past the session's minutes: no more new items, no optional extras, card runs end early. */
+  overBudget(): boolean { return this.elapsed() >= this.capMinutes; }
+
+  /** Planned minutes of the blocks after `block` that are not optional (they will run whatever the clock says). */
+  reserveAfter(block: Block): number {
+    const i = this.plan.blocks.indexOf(block);
+    if (i < 0) return 0;
+    return this.plan.blocks.slice(i + 1).filter((b) => b.kind !== 'close' && !softBlock(b) && !this.skipped.has(b))
+      .reduce((a, b) => a + b.minutes, 0);
+  }
+
+  /**
+   * Time to stop starting new things in `block`: what is left of the session
+   * is needed by the blocks after it (a long learn block must not squeeze out
+   * the day's teaching).
+   */
+  outOfTimeFor(block: Block): boolean { return this.elapsed() + this.reserveAfter(block) >= this.capMinutes; }
+
+  /**
+   * Honest minutes left: the estimates of the blocks still to come (the
+   * current one counted from when it opened), never more than the cap allows.
+   */
+  minutesLeft(idx: number, blockOpenedAt?: number): number {
+    let left = 0;
+    this.plan.blocks.forEach((b, i) => {
+      if (i < idx || b.kind === 'close' || this.skipped.has(b)) return;
+      if (i === idx && blockOpenedAt !== undefined) left += Math.max(0.5, b.minutes - (this.now() - blockOpenedAt) / 60_000);
+      else left += b.minutes;
+    });
+    return Math.max(0, Math.min(left, this.capMinutes - this.elapsed() + 2));
   }
 
   // ---------------------------------------------------------------- ledger
 
   /** Record a block's content in the exposure ledger (once). Called when the block is shown. */
   blockShown(block: Block): void {
+    this.entered.add(block);
     for (const r of servedRefs({ ...this.plan, blocks: [block] })) this.mark(r);
   }
+
+  /** A block whose cards may be cut short is open: its content is ledgered card by card (`itemShown`). */
+  enter(block: Block): void { this.entered.add(block); }
+
+  /** One card of an open block was shown: ledger just that item's content. */
+  itemShown(block: Block, i: number): void {
+    if (!('items' in block)) return;
+    const one = { ...block, items: [block.items[i]] } as Block;
+    for (const r of servedRefs({ ...this.plan, blocks: [one] })) this.mark(r);
+  }
+
+  /** A block skipped for time: nothing of it is ledgered. */
+  skip(block: Block): void { this.skipped.add(block); }
+
+  /** New items the learn block never got to: they are owed, not introduced. */
+  notTaught(nodes: Iterable<NodeId>): void { for (const n of nodes) if (!this.presented.has(n)) this.notPresented.add(n); }
 
   private mark(r: ServedRef) {
     const k = refKey(r);
@@ -89,6 +183,8 @@ export class SessionRunner {
    * `productive: false`) never get a production card.
    */
   present(node: NodeId, productive?: boolean): void {
+    this.presented.add(node);
+    this.notPresented.delete(node);
     if (this.learner.isIntroduced(node)) return;
     const p = productive ?? !(this.plan.receptiveOnly ?? []).includes(node);
     this.learner.introduce(node, { at: this.now(), productive: p });
@@ -149,18 +245,41 @@ export class SessionRunner {
 
   /**
    * The core is done: record everything shown, hand any still-learning new
-   * node to the scheduler, advance and persist the path. Idempotent.
+   * node to the scheduler, advance and persist the path. New items the time
+   * cap kept from being presented are owed, never introduced. Idempotent.
    */
   async finish(): Promise<PathState> {
     if (this.finished) return this.ui.path;
     this.start();
-    for (const b of this.plan.blocks) this.blockShown(b);
+    for (const b of this.plan.blocks) if (!this.entered.has(b) && !this.skipped.has(b)) this.blockShown(b);
     for (const n of Object.values(this.plan.newNodes).flat()) {
+      if (this.notPresented.has(n)) continue;
       this.present(n);
       if (this.learner.isLearning(n)) this.learner.completeIntroduction(n, { at: this.now() });
     }
-    const path = advancePath(this.ui.path, this.plan, true);
+    const path = carryOwed(advancePath(this.ui.path, this.plan, true), [...this.notPresented]);
     this.finished = true;
+    await this.ui.setPath(path);
+    await this.ui.sessionFinished(this.learner.day(this.now()));
+    await this.learner.flush();
+    return path;
+  }
+
+  /**
+   * "I need to stop", before the core is done: what was shown stays in the
+   * ledger, every item presented is handed to the scheduler, the session is
+   * logged as a minimum session (the path does not advance) and the day
+   * still counts for the streak.
+   */
+  async stop(): Promise<PathState> {
+    if (this.finished) return this.ui.path;
+    this.start();
+    const taught = Object.values(this.plan.newNodes).flat().filter((n) => this.presented.has(n));
+    for (const n of taught) if (this.learner.isLearning(n)) this.learner.completeIntroduction(n, { at: this.now() });
+    const g = this.plan.newNodes.grammar.find((n) => this.presented.has(n));
+    const path = stoppedPath(this.ui.path, this.plan, g);
+    this.finished = true;
+    this.stopped = true;
     await this.ui.setPath(path);
     await this.ui.sessionFinished(this.learner.day(this.now()));
     await this.learner.flush();

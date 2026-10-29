@@ -54,6 +54,11 @@ const es = (text: string): Txt => ({ text, lang: 'es' });
 const en = (text: string): Txt => ({ text, lang: 'en' });
 const auto = (text: string): Txt => ({ text, lang: looksSpanish(text) ? 'es' : 'en' });
 
+/** The two questions every card asks, in plain words. */
+export const MEANS = 'What does this mean?';
+export const SAY = 'How do you say this in Spanish?';
+const lcFirst = (s: string) => (/^I\b/.test(s) ? s : s.charAt(0).toLowerCase() + s.slice(1));
+
 const norm = (s: string) => deaccent(s.toLowerCase()).replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ').trim();
 
 // ---------------------------------------------------------------- distractors
@@ -70,18 +75,64 @@ function otherEnglish(b: Bundle, right: string, key: string, n = 2, unit?: strin
   return out;
 }
 
-/** Other nodes' English, for bare recognition cards. */
-function otherNodeEnglish(b: Bundle, node: NodeId, right: string, key: string, n = 2): string[] {
-  const r = rng(key);
-  const kind = b.node(node)?.kind;
-  const pool = [...b.course.nodes.values()].filter((x) => x.id !== node && x.kind === kind && x.en);
+/** Up to n other Spanish sentences from the bank (same unit when it can), never equal to the right one. */
+function otherSpanish(b: Bundle, right: string, key: string, n = 2, unit?: string): string[] {
+  const r = rng(`${key}:es`);
+  const k = norm(right);
+  const pool = b.bank.filter((s) => norm(s.es) !== k);
+  const near = unit ? pool.filter((s) => s.unit === unit) : [];
   const out: string[] = [];
-  for (const x of shuffle(pool, r)) {
-    const seg = b.segments(x.id)[0]?.en ?? x.en!;
-    if (norm(seg) !== norm(right) && !out.some((o) => norm(o) === norm(seg))) out.push(seg);
+  for (const p of shuffle(near.length >= n ? near : pool, r).map((s) => s.es)) {
+    if (!out.some((o) => norm(o) === norm(p))) out.push(p);
     if (out.length >= n) break;
   }
   return out;
+}
+
+/** Nodes of each kind, once per bundle (distractor pools). */
+const kindPools = new WeakMap<Bundle, Map<string, NodeId[]>>();
+function poolOf(b: Bundle, kind: string | undefined): NodeId[] {
+  let m = kindPools.get(b);
+  if (!m) {
+    m = new Map();
+    for (const x of b.course.nodes.values()) {
+      if (!x.es || !x.en) continue;
+      const l = m.get(x.kind) ?? [];
+      l.push(x.id);
+      m.set(x.kind, l);
+    }
+    kindPools.set(b, m);
+  }
+  return m.get(kind ?? '') ?? [];
+}
+
+/** Up to n distinct values from random members of a node's kind pool (stable for the key). */
+function otherNodes(b: Bundle, node: NodeId, key: string, pick: (id: NodeId) => string | undefined, right: string, n: number): string[] {
+  const r = rng(key);
+  const pool = poolOf(b, b.node(node)?.kind);
+  const band = b.node(node)?.band;
+  const cands: Array<{ v: string; score: number }> = [];
+  for (let tries = 0; tries < 80 && cands.length < 24 && pool.length > 1; tries++) {
+    const id = pool[Math.floor(r() * pool.length)];
+    if (id === node) continue;
+    const v = pick(id);
+    if (!v || norm(v) === norm(right) || cands.some((o) => norm(o.v) === norm(v))) continue;
+    // look-alikes make a real choice: similar length, same band, same kind of sentence
+    const score = Math.abs(v.length - right.length) / Math.max(4, right.length)
+      + (b.node(id)?.band === band ? 0 : 0.5) + (/[?¿]/.test(v) === /[?¿]/.test(right) ? 0 : 0.3);
+    cands.push({ v, score });
+  }
+  return cands.sort((a, c) => a.score - c.score).slice(0, n).map((c) => c.v);
+}
+
+/** Other nodes' English, for bare recognition cards. */
+function otherNodeEnglish(b: Bundle, node: NodeId, right: string, key: string, n = 2): string[] {
+  return otherNodes(b, node, key, (id) => b.segments(id)[0]?.en, right, n);
+}
+
+/** Other nodes' Spanish (same kind), for "pick the Spanish" cards. */
+function otherNodeSpanish(b: Bundle, node: NodeId, right: string, key: string, n = 2): string[] {
+  return otherNodes(b, node, `${key}:es`, (id) => b.segments(id)[0]?.es, right, n);
 }
 
 function mcq(key: string, ask: string, prompt: Txt | undefined, right: Txt, wrong: Txt[], why: string, extra: Partial<McqCard> = {}): McqCard {
@@ -100,12 +151,12 @@ export function sentenceCheck(s: Pick<BankSentence, 'es' | 'en' | 'accept'>) {
   };
 }
 
-/** A word or chunk: strict on letters, lenient on accents (an English keyboard). */
+/** A word or chunk: strict on letters, lenient on accents (an English keyboard). `answers[0]` is the one shown. */
 export function chunkCheck(answers: string[]) {
   const list = [...new Set(answers.flatMap((a) => answerForms(a)))];
   return (input: string): Check => {
     const r = checkExact(input, list, { accents: 'lenient' });
-    return { pass: r.pass, near: r.near, hint: r.near && !r.pass ? 'Check the accents.' : undefined, answer: list[0] ?? answers[0] ?? '' };
+    return { pass: r.pass, near: r.near, hint: r.near && !r.pass ? 'Check the accents.' : undefined, answer: answers[0] ?? list[0] ?? '' };
   };
 }
 
@@ -118,44 +169,84 @@ function itemCheck(item: ExItem) {
 
 // ---------------------------------------------------------------- reviews (warm-up, leech)
 
-export function reviewCard(item: ReviewItem, b: Bundle): Card {
+/**
+ * A review. `variant` 'pickSpanish' turns a receptive review into "which
+ * Spanish says this?" (still recognition, a different look), so a warm-up of
+ * receptive reviews is not one long run of the same card.
+ */
+export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pickSpanish' = 'meaning'): Card {
   const s = b.sentence(item.sentence);
   const seg = b.segments(item.node)[0];
   const title = b.title(item.node);
+  if (s && item.direction === 'receptive' && variant === 'pickSpanish') {
+    const wrong = otherSpanish(b, s.es, item.id, 2, s.unit);
+    if (wrong.length >= 2) {
+      return mcq(item.id, 'Which one says this?', en(s.en), es(s.es), wrong.map(es),
+        seg ? `${seg.es} means "${seg.en}".` : `It's ${s.es}`);
+    }
+  }
   if (s && item.direction === 'receptive') {
-    return mcq(item.id, 'Remember what this means?', es(s.es), en(s.en), otherEnglish(b, s.en, item.id, 2, s.unit).map(en),
+    return mcq(item.id, MEANS, es(s.es), en(s.en), otherEnglish(b, s.en, item.id, 2, s.unit).map(en),
       seg ? `${seg.es} means "${seg.en}". The rest of the sentence gives the context.` : `This is about: ${title.toLowerCase()}.`);
   }
   if (s) {
     return {
-      type: 'type', key: item.id, ask: 'How would you say this?', prompt: en(s.en), answerLang: 'es', placeholder: 'Type it in Spanish',
-      check: sentenceCheck(s), retry: true, why: seg ? `It uses ${seg.es} (${seg.en.toLowerCase()}).` : 'Here is how Spanish says it.',
+      type: 'type', key: item.id, ask: SAY, prompt: en(s.en), answerLang: 'es', placeholder: 'Type it in Spanish',
+      check: sentenceCheck(s), retry: true, why: seg ? `It uses ${seg.es} (${lcFirst(seg.en)}).` : 'Here is how Spanish says it.',
     };
   }
   // bare card: no fresh sentence left for this node
   if (!seg) return { type: 'read', key: item.id, ask: 'Remember this one?', es: b.node(item.node)?.es ?? title, en: title, why: '' };
   if (item.direction === 'receptive') {
-    return mcq(item.id, 'Remember what this means?', es(seg.es), en(seg.en), otherNodeEnglish(b, item.node, seg.en, item.id).map(en), `${seg.es} means "${seg.en}".`);
+    if (variant === 'pickSpanish') {
+      const wrong = otherNodeSpanish(b, item.node, seg.es, item.id);
+      if (wrong.length >= 2) return mcq(item.id, 'Which one says this?', en(seg.en), es(seg.es), wrong.map(es), `"${seg.en}" is ${seg.es}`);
+    }
+    return mcq(item.id, MEANS, es(seg.es), en(seg.en), otherNodeEnglish(b, item.node, seg.en, item.id).map(en), `${seg.es} means "${seg.en}".`);
   }
   return {
-    type: 'type', key: item.id, ask: `Remember how to say this?`, prompt: en(seg.en), answerLang: 'es', placeholder: 'Type it in Spanish',
-    check: chunkCheck(b.segments(item.node).map((x) => x.es)), retry: true, why: `"${seg.en}" is ${seg.es}`,
+    type: 'type', key: item.id, ask: SAY, prompt: en(seg.en), answerLang: 'es', placeholder: 'Type it in Spanish',
+    check: chunkCheck([seg.es, ...seg.accept]), retry: true, why: `"${seg.en}" is ${seg.es}`,
   };
 }
 
 // ---------------------------------------------------------------- new words and phrases
 
+/** The format a learn retrieval takes in each round, so the rounds of one item never look alike. */
+export type LearnFormat = 'recognise' | 'pickSpanish' | 'type';
+
+export function learnFormat(round: number, productive = true): LearnFormat {
+  if (!productive) return 'recognise';
+  return round === 0 ? 'recognise' : round === 1 ? 'pickSpanish' : 'type';
+}
+
+/**
+ * One in-lesson retrieval of a new word or phrase. Every card is built from
+ * ONE aligned pair (exercises/pairs.ts): the English shown is the exact
+ * translation of the Spanish expected. Round 0: what does it mean (pick the
+ * English); round 1: pick the Spanish; then type it. Receptive-only items only
+ * ever get recognition.
+ */
 export function learnRetrieval(item: LearnItem, b: Bundle, round: number): Card {
   const segs = b.segments(item.node);
   const seg = segs[round % Math.max(1, segs.length)] ?? segs[0];
   const key = `${item.id}#${round}`;
   if (!seg) return { type: 'read', key, ask: 'Have another look', es: b.node(item.node)?.es ?? b.title(item.node), en: b.title(item.node), why: '' };
-  if (round === 0) {
-    return mcq(key, 'Which one means this?', es(seg.es), en(seg.en), otherNodeEnglish(b, item.node, seg.en, key).map(en), `${seg.es} means "${seg.en}".`);
+  const why = `"${seg.en}" is ${seg.es}`;
+  switch (learnFormat(round, item.productive !== false)) {
+    case 'recognise':
+      return mcq(key, MEANS, es(seg.es), en(seg.en), otherNodeEnglish(b, item.node, seg.en, key).map(en), `${seg.es} means "${seg.en}".`);
+    case 'pickSpanish': {
+      const wrong = otherNodeSpanish(b, item.node, seg.es, key);
+      if (wrong.length >= 2) return mcq(key, SAY, en(seg.en), es(seg.es), wrong.map(es), why);
+      break;
+    }
+    case 'type':
+      break;
   }
   return {
-    type: 'type', key, ask: 'How do you say this?', prompt: en(seg.en), answerLang: 'es', placeholder: 'Type it in Spanish',
-    check: chunkCheck(segs.map((x) => x.es)), retry: true, why: `"${seg.en}" is ${seg.es}`,
+    type: 'type', key, ask: SAY, prompt: en(seg.en), answerLang: 'es', placeholder: 'Type it in Spanish',
+    check: chunkCheck([seg.es, ...seg.accept]), retry: true, why,
   };
 }
 
@@ -171,12 +262,15 @@ export function scriptCard(item: ScriptItem, script: TeachingScript): Card | und
   const yt = script.yourTurn[item.index];
   if (!yt) return undefined;
   const answers = [yt.answer, ...yt.accept];
+  // "Type in Spanish: the day" / "Translate: …": the label is the question, the rest is the cue
+  const label = yt.prompt.match(/^(?:type (?:it )?in spanish|translate|in spanish|say in spanish|say it in spanish)\s*:\s*/i);
+  const cue = label ? yt.prompt.slice(label[0].length) : yt.prompt;
   return {
-    type: 'type', key: item.id, ask: 'Your turn', prompt: en(yt.prompt), answerLang: 'es', placeholder: 'Type it in Spanish', retry: true, why: yt.why,
+    type: 'type', key: item.id, ask: label ? SAY : 'Your turn', prompt: en(cue), answerLang: 'es', placeholder: 'Type it in Spanish', retry: true, why: yt.why,
     check: (input) => {
       const exact = checkExact(input, answers);
       if (exact.pass) return { pass: true, answer: yt.answer };
-      const m = matchTranslation(input, { es: yt.answer, en: yt.prompt.replace(/^[^:]*:\s*/, ''), accept: yt.accept });
+      const m = matchTranslation(input, { es: yt.answer, en: cue.replace(/^[^:]*:\s*/, ''), accept: yt.accept });
       if (m.pass) return { pass: true, near: m.near, answer: yt.answer, variant: m.variant };
       return { pass: false, near: exact.near || m.near, hint: exact.near ? 'Check the accents.' : m.hint, answer: yt.answer };
     },
@@ -194,7 +288,7 @@ function meaningCard(item: PracticeItem, s: BankSentence, b: Bundle, ask = 'What
 function translateCard(item: PracticeItem, s: BankSentence, b: Bundle): TypeCard {
   const [t] = translationItems(s, { dirs: ['en-es'], bank: b.bank });
   return {
-    type: 'type', key: item.id, ask: 'How would you say this?', prompt: en(s.en), answerLang: 'es', placeholder: 'Type it in Spanish', retry: true,
+    type: 'type', key: item.id, ask: SAY, prompt: en(s.en), answerLang: 'es', placeholder: 'Type it in Spanish', retry: true,
     check: t ? itemCheck(t) : sentenceCheck(s), why: 'Here is how Spanish says it.',
   };
 }
@@ -297,7 +391,7 @@ export function recallCard(item: RecallItem, b: Bundle): Card {
   if (!seg) return { type: 'read', key: item.id, ask: 'Remember this?', es: b.node(item.node)?.es ?? '', en: b.title(item.node), why: '' };
   return {
     type: 'type', key: item.id, ask: 'Quick!', prompt: en(seg.en), answerLang: 'es', placeholder: 'In Spanish', retry: false,
-    check: chunkCheck(b.segments(item.node).map((x) => x.es)), why: `"${seg.en}" is ${seg.es}`,
+    check: chunkCheck([seg.es, ...seg.accept]), why: `"${seg.en}" is ${seg.es}`,
   };
 }
 

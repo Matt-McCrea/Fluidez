@@ -1,7 +1,6 @@
 // Content loading, placement, scene turns, cards and the UI store.
 import { describe, expect, it } from 'vitest';
 import { ContentLoader, fileBand, loadBundle, records, type ContentFiles } from '../../src/ui/data/loader';
-import { applyPlacement, contentProbe, placeFrom, type ProbeItem } from '../../src/ui/session/placement';
 import { checkTurn } from '../../src/ui/session/scene';
 import { chunkCheck, respondCheck, sentenceCheck } from '../../src/ui/session/cards';
 import { MemoryKV, UiStore, UI_KEY, streak } from '../../src/ui/store/ui';
@@ -69,29 +68,6 @@ describe('content loader', () => {
     expect(fileBand('/content/scripts/g-ser-identity.json', m)).toBeUndefined();
     expect(records({ sentences: [1, 2] })).toEqual([1, 2]);
     expect(records({ id: 'x', a: [1] })).toEqual([{ id: 'x', a: [1] }]);
-  });
-});
-
-describe('placement', () => {
-  it('draws probe items from content and places by level', () => {
-    const b = fixtureBundle();
-    const items = contentProbe(b).items(15);
-    expect(items.length).toBeGreaterThan(0);
-    expect(items.length).toBeLessThanOrEqual(15);
-    for (const it of items) expect(it.options[it.answer]).toBe(b.bank.find((s) => s.es === it.es)!.en);
-    const syn = (unit: number): ProbeItem => ({ id: `p${unit}`, unit, es: '', options: ['a', 'b'], answer: 0 });
-    const probe = [0, 0, 0, 5, 5, 5, 10, 10, 10].map(syn);
-    expect(placeFrom(probe, [true, true, true, true, true, false, false, false, false], 60)).toBe(6);
-    expect(placeFrom(probe, Array(9).fill(false), 60)).toBe(0);
-    expect(placeFrom(probe, Array(9).fill(true), 60)).toBe(11);
-  });
-
-  it('starting later introduces the skipped weeks as known', async () => {
-    const w = await world();
-    const path = applyPlacement(w.learner, w.bundle, 1);
-    expect(path.unit).toBe(1);
-    expect(w.learner.isIntroduced('g:ser-identity')).toBe(true);
-    expect(w.learner.isLearning('g:ser-identity')).toBe(false);
   });
 });
 

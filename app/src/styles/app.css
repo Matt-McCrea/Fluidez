@@ -194,6 +194,12 @@ textarea.field { resize: vertical; line-height: 1.5; }
   background: var(--bg);
   border-bottom: 1px solid var(--line);
 }
+.session-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 0 var(--pad); min-height: 32px; }
+.session-meta .small { margin: 0; }
+.session-meta .btn.link { min-height: 32px; padding: 0; }
+.onboarding .promise { font-size: 1.15rem; line-height: 1.45; }
+.onboarding .welcome-points { padding-left: 1.2em; margin: 8px 0 16px; }
+.onboarding .welcome-points li { margin: 6px 0; }
 .session-main { padding: 4px var(--pad) calc(32px + env(safe-area-inset-bottom)); }
 .overlay { position: fixed; inset: 0; background: rgb(0 0 0 / .45); display: grid; align-items: end; z-index: 20; }
 .sheet { background: var(--surface); padding: 20px var(--pad) calc(20px + env(safe-area-inset-bottom)); border-radius: 18px 18px 0 0; max-width: 480px; width: 100%; margin: 0 auto; }

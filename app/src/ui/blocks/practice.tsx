@@ -5,23 +5,39 @@ import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { LeechBlock, PracticeBlock, TimedRecallBlock, WarmupBlock } from '../../compiler';
 import { CardRun, CardView, Continue } from '../components/card';
 import { Heading } from '../components/text';
-import { practiceCard, recallCard, reviewCard } from '../session/cards';
+import { practiceCard, recallCard, reviewCard, type Card } from '../session/cards';
+import { breakRuns, formatOf, interleave } from '../session/order';
 import { blockHeading } from '../session/labels';
 import type { BlockProps } from './types';
 
+/** Cards in an order where no format runs on too long; `items[order[k]]` is the k-th card's item. */
+function useOrdered<T>(items: readonly T[], build: (it: T) => Card, alt?: (it: T) => Card | undefined) {
+  return useMemo(() => {
+    const all = items.map(build);
+    const order = interleave(all, formatOf);
+    if (alt) breakRuns(all, order, (i) => alt(items[i]));
+    return { cards: order.map((k) => all[k]), order };
+  }, [items]);
+}
+
 export function ReviewRun({ block, run, onDone }: BlockProps<WarmupBlock | LeechBlock>) {
-  const cards = useMemo(() => block.items.map((it) => reviewCard(it, run.bundle)), [block]);
+  const { cards, order } = useOrdered(block.items, (it) => reviewCard(it, run.bundle), (it) => reviewCard(it, run.bundle, 'pickSpanish'));
   const h = blockHeading(block, run.bundle);
+  // the warm-up is never cut short (reviews left undone stay due); a leech run may be
+  const cut = block.kind === 'leech';
   return (
     <>
       <Heading {...h} />
-      <CardRun cards={cards} onAnswer={(i, o) => run.score(block.items[i], o)} onDone={onDone} />
+      <CardRun
+        cards={cards} onAnswer={(k, o) => run.score(block.items[order[k]], o)} onDone={onDone}
+        onShow={cut ? (k) => run.itemShown(block, order[k]) : undefined} stop={cut ? () => run.overBudget() : undefined}
+      />
     </>
   );
 }
 
 export function PracticeRun({ block, run, onDone }: BlockProps<PracticeBlock>) {
-  const cards = useMemo(() => block.items.map((it) => practiceCard(it, run.bundle, run.plan.seed)), [block]);
+  const { cards, order } = useOrdered(block.items, (it) => practiceCard(it, run.bundle, run.plan.seed));
   const h = blockHeading(block, run.bundle);
   const read = block.kind === 'extraReading';
   return (
@@ -29,9 +45,12 @@ export function PracticeRun({ block, run, onDone }: BlockProps<PracticeBlock>) {
       <Heading {...h} />
       <CardRun
         cards={cards}
-        onAnswer={(i, o) => {
-          run.score(block.items[i], o);
-          if (read) { const s = run.bundle.sentence(block.items[i].sentence); if (s) void run.addWords(s.es.split(/\s+/).length, 0); }
+        onShow={(k) => run.itemShown(block, order[k])}
+        stop={() => run.overBudget()}
+        onAnswer={(k, o) => {
+          const item = block.items[order[k]];
+          run.score(item, o);
+          if (read) { const s = run.bundle.sentence(item.sentence); if (s) void run.addWords(s.es.split(/\s+/).length, 0); }
         }}
         onDone={onDone}
       />

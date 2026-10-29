@@ -1,7 +1,7 @@
 // Home: today's session in plain words, this week's goal, the story so far.
 import { useMemo } from 'preact/hooks';
 import type { Mode } from '../../compiler';
-import { Bar, Heading } from '../components/text';
+import { Bar, Heading, undash } from '../components/text';
 import { useApp } from '../context';
 import { sessionLabel } from '../session/labels';
 import { anotherAllowed, compilePlan } from '../session/runner';
@@ -43,8 +43,8 @@ export function Home({ onStart, onStory }: { onStart: (mode: Mode) => void; onSt
 
       {unit && !finished ? (
         <section class="card" aria-labelledby="week-title">
-          <p class="ask" id="week-title">This week: {unit.title}</p>
-          <p>{unit.canDo}</p>
+          <p class="ask" id="week-title">This week: {undash(unit.title)}</p>
+          <p>{undash(unit.canDo)}</p>
           <Bar value={ui.path.day} of={unit.days.length} label="Progress through this week" />
           <p class="small">{ui.path.day} of {unit.days.length} lessons</p>
         </section>
@@ -54,8 +54,8 @@ export function Home({ onStart, onStory }: { onStart: (mode: Mode) => void; onSt
         <p class="ask" id="story-title">The story so far</p>
         {lastFull ? (
           <>
-            <p>{chaptersRead.length} {chaptersRead.length === 1 ? 'chapter' : 'chapters'} read. Last: <em>{lastFull.title}</em></p>
-            <p class="hook">{lastFull.hook}</p>
+            <p>{chaptersRead.length} {chaptersRead.length === 1 ? 'chapter' : 'chapters'} read. Last: <em>{undash(lastFull.title)}</em></p>
+            <p class="hook">{undash(lastFull.hook)}</p>
             <button class="btn quiet" onClick={onStory}>Read again</button>
           </>
         ) : <p>Tomás has just landed in Bogotá. You'll read the first chapter soon.</p>}

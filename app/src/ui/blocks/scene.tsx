@@ -6,7 +6,7 @@ import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { SceneBlock, SceneRerunBlock } from '../../compiler';
 import { AnswerField } from '../components/answer';
 import { Continue } from '../components/card';
-import { Es, Heading, Rich, fmtSeconds } from '../components/text';
+import { Es, Heading, Rich, fmtSeconds, undash } from '../components/text';
 import { blockHeading } from '../session/labels';
 import { checkTurn, turnOrder, turnSeconds, type SceneTurn, type TurnCheck } from '../session/scene';
 import type { BlockProps } from './types';
@@ -18,7 +18,7 @@ function NpcBubble({ turn }: { turn: SceneTurn }) {
   return (
     <div class="bubble npc">
       <Es>{turn.npc}</Es>
-      {en ? <p class="en small">{turn.npcEn}</p> : <button class="btn link small" onClick={() => setEn(true)}>English</button>}
+      {en ? <p class="en small">{undash(turn.npcEn)}</p> : <button class="btn link small" onClick={() => setEn(true)}>English</button>}
     </div>
   );
 }
@@ -126,7 +126,7 @@ export function ScenePlay({ block, run, onDone }: BlockProps<SceneBlock | SceneR
         <NpcBubble key={turn.id} turn={turn} />
         {cur ? <div class="bubble me"><span lang="es">{cur.first || '…'}</span></div> : null}
       </div>
-      <p class="intent"><strong>Your move:</strong> {turn.intent}</p>
+      <p class="intent"><strong>Your move:</strong> {undash(turn.intent)}</p>
       {stage === 'answer' || stage === 'fix' ? (
         <>
           {stage === 'fix' ? <div class="feedback" aria-live="polite"><p class="hint">They got the idea. One fix: <Rich text={cur.firstCheck.reason ?? ''} /> Try it once more.</p></div> : null}

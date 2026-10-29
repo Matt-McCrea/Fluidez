@@ -60,10 +60,10 @@ export function blockHeading(block: Block, b: Bundle): { title: string; lead: st
     case 'read': return { title: b.chapters.get(block.chapter)?.title ?? 'The story', lead: 'Tap any word you don\'t know.' };
     case 'reread':
       return block.purpose === 'notice'
-        ? { title: 'Read it again', lead: 'Read it again — notice how much easier it is.' }
+        ? { title: 'Read it again', lead: 'Read it again. Notice how much easier it is now.' }
         : block.purpose === 'fluency'
           ? { title: 'Read it again', lead: 'Same story, a little faster. Try to beat your first time.' }
-          : { title: 'A story you know', lead: 'Read it again — notice how much easier it is.' };
+          : { title: 'A story you know', lead: 'Read it again. Notice how much easier it is now.' };
     case 'personal': return { title: 'Say something true', lead: 'Use what you learned today, about you.' };
     case 'scene': return { title: b.scenes.get(block.scene)?.title ?? 'Chat', lead: block.purpose === 'checkpoint' ? 'A check-in, not an exam.' : 'A real conversation. Say what you need to say.' };
     case 'sceneRerun': return { title: 'Same chat, a bit faster', lead: 'You know how it goes now. Try it against the clock.' };

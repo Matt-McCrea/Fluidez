@@ -178,15 +178,13 @@ describe('session flow on the fixture unit', () => {
   it('minimum and extended tiers render: timed recall, re-read, extra reading', async () => {
     const w = await world();
     for (let d = 0; d < 3; d++) { await session(w, 'right'); w.clock.t += DAY; }
-    w.learner.setSettings({ tier: 'minimum', minutes: 10 });
-    const min = await session(w, 'right');
+    const min = await session(w, 'right', 'next', 'minimum');
     expect(min.plan.type).toBe('minimum');
     expect(min.plan.blocks.map((b) => b.kind)).toContain('timedRecall');
     expect(min.plan.blocks.map((b) => b.kind)).toContain('reread');
     expect([w.ui.path.unit, w.ui.path.day, w.ui.path.coreSessions]).toEqual([min.pathBefore.unit, min.pathBefore.day, min.pathBefore.coreSessions]); // a minimum session never advances
     w.clock.t += DAY;
-    w.learner.setSettings({ tier: 'extended', minutes: 40 });
-    const ext = await session(w, 'right');
+    const ext = await session(w, 'right', 'next', 'extended');
     expect(ext.walk.failures).toEqual([]);
     expect(ext.plan.blocks.map((b) => b.kind)).toContain('extraReading');
   });

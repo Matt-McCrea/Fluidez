@@ -15,6 +15,8 @@ export { translationItems, corpusAlternatives } from './translation';
 export type { TranslationOptions } from './translation';
 export { recombinations } from './recombine';
 export type { RecombineOptions } from './recombine';
+export { alignedPairs, phrasePairs, glossCue, turnsOf } from './pairs';
+export type { AlignedPair, PairSource } from './pairs';
 export { cueItem, lexGapItem, lexGapItems, INTERCHANGEABLE } from './lexeme';
 export type { LexemeLike } from './lexeme';
 export { changePerson, changeTense, negate, affirm, pronominalise, form } from './reinflect';

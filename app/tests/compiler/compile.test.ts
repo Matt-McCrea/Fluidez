@@ -163,7 +163,8 @@ describe('backlog throttle', () => {
 describe('shortage', () => {
   test('a missing chapter is a logged shortage, never a substitute text, and the reading slot converts to review', () => {
     const s = setup();
-    let path = initialPath();
+    // past the first-week ramp (budget.EARLY_SESSIONS), so day 1 takes all its items and reads its chapter on day 1
+    let path: PathState = { ...initialPath(), coreSessions: budget.EARLY_SESSIONS };
     for (let d = 0; d < 2; d++) {
       s.setT(T0 + d * DAY);
       const plan = compileSession(s.input(path));

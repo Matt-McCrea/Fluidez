@@ -21,6 +21,8 @@ export interface UiState {
   goal?: Goal;
   /** unit index the placement chose (0 = from zero) */
   placedAt?: number;
+  /** day key the close screen last suggested a few more minutes */
+  moreOfferedOn?: string;
   stats: {
     sessions: number;
     wordsRead: number;

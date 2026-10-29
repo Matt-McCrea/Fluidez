@@ -114,7 +114,7 @@ export function recombinations(s: BankSentence, opts: RecombineOptions = {}): Re
     const enN = enNegate(s.en, tense, gloss, { perfect });
     if (enN) out.push({ ...base(s, 'negate', 'production', { op: 'negate' }, neg.es), en: enN.text });
     else {
-      const { options, answer } = shuffled('No — it is not so', ['Yes — it is so'], r);
+      const { options, answer } = shuffled('No, it is not so', ['Yes, it is so'], r);
       out.push({ ...base(s, 'negate', 'recognition', { op: 'negate' }, neg.es), question: 'Is this sentence saying yes or no?', options, answer });
     }
   }
