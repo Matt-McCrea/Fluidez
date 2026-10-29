@@ -1,0 +1,195 @@
+{
+  "id": "ch017",
+  "unit": "u07",
+  "title": "Ocho metros",
+  "text": "Hombre: La casa de doña Gloria: doce metros.\nOtro hombre: Y el café de la esquina: ocho metros.\nEn la calle, dos hombres cuentan metros. En las camisas hay un nombre: Grupo Altamira.\nTomás: Buenos días. ¿Qué hacen acá?\nHombre: Trabajamos, señor. El señor Altamira quiere toda la cuadra.\nTomás está nervioso. Abre la boca, y sale el español de ayer.\nTomás: ¡Siga, siga! Está en su casa.\nVale: ¡Tomás! No es su casa. Es la casa de Rosa.\nHernando mira el nombre de Altamira y escupe en la calle.\nSimón: ¡Altamira no, Altamira no, Altamira no!\nLos hombres de Altamira se van.\nHernando: En este barrio hay mucha gente amable, Tomás, y muchas casas viejas.\nVale: Hay bastantes tiendas, una droguería y pocos bancos. Todo queda cerquita.\nTomás: Y hay demasiados hombres de Altamira.\nHernando mira la calle un momento.\nHernando: En esta calle, Joaquín y yo jugamos fútbol muchas noches.\nTomás: ¿Usted conoce a Joaquín?\nHernando: Conocí a Joaquín, sí. Era el amigo de todo el mundo.\nTomás: ¿Y dónde está ahora?\nHernando: Un momento, Tomás. Hoy no puedo.\nVale: Tomás, quedan veinte días, y necesitamos mucha plata.\nTomás mira el café. Ocho metros. Cuarenta y siete años.",
+  "gloss": [
+    {
+      "es": "doce metros",
+      "en": "twelve metres"
+    },
+    {
+      "es": "dos hombres cuentan metros",
+      "en": "two men are counting out metres"
+    },
+    {
+      "es": "sale el español de ayer",
+      "en": "out comes yesterday's Spanish"
+    },
+    {
+      "es": "escupe en la calle",
+      "en": "spits in the street"
+    },
+    {
+      "es": "Los hombres de Altamira se van.",
+      "en": "The Altamira men leave."
+    },
+    {
+      "es": "Todo queda cerquita.",
+      "en": "Everything is really close by."
+    },
+    {
+      "es": "Era el amigo de todo el mundo.",
+      "en": "He was everybody's friend."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What are the two men doing in the street?",
+      "options": [
+        "Measuring the houses and the café for Grupo Altamira",
+        "Selling bread",
+        "Looking for Tomás's room",
+        "Fixing the shower"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Tomás's «¡Siga, siga! Está en su casa» funny here?",
+      "options": [
+        "He welcomes the Altamira men as if the block were theirs",
+        "He says it to Pacho the cat",
+        "He says it in English",
+        "He says it to Rosa's photo"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando reveal about Joaquín?",
+      "options": [
+        "They played football together in this street",
+        "Joaquín is his brother",
+        "Joaquín works for Altamira",
+        "He never met Joaquín"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hay en el barrio, según Vale?",
+      "options": [
+        "Bastantes tiendas, una droguería y pocos bancos",
+        "Muchos hoteles",
+        "Demasiados bancos"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Someone at Grupo Altamira already has the café's measurements, and Hernando has finally said Joaquín's name out loud. Soon the man who sent the measuring tape comes in for a coffee.",
+  "rereadQuestions": [
+    {
+      "q": "How wide is the café, according to the men?",
+      "options": [
+        "Eight metres",
+        "Twelve metres",
+        "Twenty metres",
+        "Forty-seven metres"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is written on the men's shirts?",
+      "options": [
+        "Grupo Altamira",
+        "La Esquina de Rosa",
+        "Doña Gloria",
+        "Hostel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many days are left in the bet?",
+      "options": [
+        "Twenty",
+        "Twenty-one",
+        "Thirty",
+        "Forty-seven"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:donde-esta",
+    "c:era",
+    "c:esta-en-su-casa",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:oye-mira",
+    "c:puedo",
+    "c:queda-cerquita",
+    "c:siga",
+    "c:siga-siga",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:quantifiers",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "p:demonstratives-basic",
+    "p:possessives-basic",
+    "p:quantifiers-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:acá",
+    "l:ahora",
+    "l:amable",
+    "l:amigo",
+    "l:ayer",
+    "l:año",
+    "l:banco",
+    "l:barrio",
+    "l:boca",
+    "l:bueno",
+    "l:café",
+    "l:calle",
+    "l:camisa",
+    "l:casa",
+    "l:conocer",
+    "l:contar",
+    "l:cuadra",
+    "l:droguería",
+    "l:día",
+    "l:dónde",
+    "l:escupir",
+    "l:español",
+    "l:esquina",
+    "l:estar",
+    "l:fútbol",
+    "l:gente",
+    "l:hacer",
+    "l:hombre",
+    "l:hoy",
+    "l:irse",
+    "l:jugar",
+    "l:metro",
+    "l:mirar",
+    "l:momento",
+    "l:mundo",
+    "l:necesitar",
+    "l:nervioso",
+    "l:noche",
+    "l:nombre",
+    "l:plata",
+    "l:poder",
+    "l:quedar",
+    "l:querer",
+    "l:qué",
+    "l:salir",
+    "l:seguir",
+    "l:ser",
+    "l:señor",
+    "l:tienda",
+    "l:trabajar",
+    "l:viejo"
+  ]
+}

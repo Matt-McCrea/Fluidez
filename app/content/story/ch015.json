@@ -1,0 +1,204 @@
+{
+  "id": "ch015",
+  "unit": "u07",
+  "title": "Joaquín, mi hermano",
+  "text": "«Joaquín, mi hermano:». Tomás lee la frase otra vez.\nTomás: ¿Hermano? ¿Rosa tenía un hermano?\nVale: Rosa nunca habló de un hermano.\nHernando: Es el chico de la foto, Tomás. Tiene tu nariz.\nTomás pone la carta en el cuaderno.\nTomás: Hoy no puedo.\nVale: Tomás, ¿dónde duermes? Tienes cara de perro triste.\nTomás: En el hostel. Doce camas, doce hombres, y yo estoy en la cama doce.\nHernando: Doña Gloria arrienda un cuarto. Su casa está en la otra cuadra, arriba de la panadería.\nEn la puerta está doña Gloria, con harina en las manos.\nGloria: ¡Siga, siga! Está en su casa.\nTomás: Gracias, señora. ¿Hay ducha?\nGloria: Hay ducha, hay una cama, hay una lámpara y hay un balcón. El patio está allá.\nTomás: ¿Y el arriendo?\nGloria: Seiscientos mil pesos al mes.\nTomás sale al balcón. Allá está la catedral. Y acá, en la esquina, está el café de Rosa.\nTomás: Vale, ¿yo puedo vivir acá?\nVale: Tú eres de acá, Tomás.\nMás tarde, en el café:\nSimón: ¡Siga, siga! ¡Está en su casa!\nTomás: Quedan tres semanas, Simón, y ya tengo casa.\nHernando: ¿Y la ducha?\nTomás: Funciona un día, y dos días no.",
+  "gloss": [
+    {
+      "es": "«Joaquín, mi hermano:»",
+      "en": "\"Joaquín, my brother:\""
+    },
+    {
+      "es": "Tienes cara de perro triste",
+      "en": "You look like a sad dog"
+    },
+    {
+      "es": "un hostel",
+      "en": "a hostel"
+    },
+    {
+      "es": "arriba de la panadería",
+      "en": "above the bakery"
+    },
+    {
+      "es": "con harina en las manos",
+      "en": "with flour on her hands"
+    },
+    {
+      "es": "¡Siga, siga! Está en su casa.",
+      "en": "Come in, come in. Make yourself at home."
+    },
+    {
+      "es": "la catedral",
+      "en": "the cathedral"
+    },
+    {
+      "es": "Tú eres de acá",
+      "en": "You're from here"
+    },
+    {
+      "es": "Funciona un día, y dos días no.",
+      "en": "It works one day, and the next two days it doesn't."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the first line of the letter reveal?",
+      "options": [
+        "Rosa had a brother called Joaquín",
+        "Joaquín was Rosa's husband",
+        "Joaquín was a customer of the café",
+        "Rosa wrote the letter to Hernando"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Hernando think the young man in the photo is Joaquín?",
+      "options": [
+        "He has Tomás's nose",
+        "He is holding the letter",
+        "His name is on the photo",
+        "He looks like Hernando"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Tomás leave the hostel?",
+      "options": [
+        "He shares one room with eleven other men and can't sleep",
+        "The hostel is closing",
+        "Vale asks him to live with her",
+        "The hostel is too far from Toronto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hay en el cuarto de doña Gloria?",
+      "options": [
+        "Una cama, una lámpara y un balcón",
+        "Un sofá y una televisión",
+        "Doce camas"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale mean when she says «Tú eres de acá»?",
+      "options": [
+        "Tomás belongs in Bogotá, not just in Toronto",
+        "Tomás should go back to the hostel",
+        "Tomás speaks perfect Spanish",
+        "Tomás is a tourist"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomás has a room, a balcony with a view of the cathedral, and a shower that works one day in three. Tomorrow at five in the morning he finds out which day it is.",
+  "rereadQuestions": [
+    {
+      "q": "How much is the rent?",
+      "options": [
+        "600,000 pesos a month",
+        "412,000 pesos a month",
+        "2,000,000 pesos a month",
+        "Thirty days of work"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What can Tomás see from the balcony besides the cathedral?",
+      "options": [
+        "Rosa's café on the corner",
+        "The hostel",
+        "Hernando's house",
+        "The market"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Dónde está la casa de doña Gloria?",
+      "options": [
+        "En la otra cuadra, arriba de la panadería",
+        "En Toronto",
+        "En el café de Rosa"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:esta-en-su-casa",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:puedo",
+    "c:siga",
+    "c:siga-siga",
+    "c:tengo",
+    "c:tienes",
+    "g:commands-usted",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:possessives-basic"
+  ],
+  "lexemes": [
+    "l:acá",
+    "l:allá",
+    "l:arriba",
+    "l:arriendo",
+    "l:balcón",
+    "l:café",
+    "l:cama",
+    "l:cara",
+    "l:carta",
+    "l:casa",
+    "l:catedral",
+    "l:chico",
+    "l:cuaderno",
+    "l:cuadra",
+    "l:dormir",
+    "l:ducha",
+    "l:día",
+    "l:dónde",
+    "l:esquina",
+    "l:estar",
+    "l:foto",
+    "l:frase",
+    "l:funcionar",
+    "l:hablar",
+    "l:harina",
+    "l:hermano",
+    "l:hombre",
+    "l:hoy",
+    "l:leer",
+    "l:lámpara",
+    "l:mano",
+    "l:mes",
+    "l:nariz",
+    "l:panadería",
+    "l:patio",
+    "l:perro",
+    "l:peso",
+    "l:poder",
+    "l:poner",
+    "l:puerta",
+    "l:quedar",
+    "l:salir",
+    "l:seguir",
+    "l:semana",
+    "l:ser",
+    "l:señora",
+    "l:tarde",
+    "l:tener",
+    "l:triste",
+    "l:vez",
+    "l:vivir"
+  ]
+}
