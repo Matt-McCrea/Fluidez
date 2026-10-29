@@ -1,0 +1,104 @@
+{
+  "node": "g:imperfect-habitual",
+  "hook": {
+    "line": "Tomás keeps remembering Sundays at the café when he was six. For the things that used to happen again and again, Spanish has its own past, and you already know half of it from *era* and *tenía*.",
+    "es": "Los domingos mi abuela cantaba en el café.",
+    "en": "On Sundays my grandmother used to sing in the café."
+  },
+  "examples": [
+    { "es": "De niño iba al café todos los domingos.", "en": "As a kid I used to go to the café every Sunday." },
+    { "es": "Mi abuela cocinaba y yo comía.", "en": "My grandmother used to cook and I used to eat." },
+    { "es": "Mi papá me llevaba a ver los aviones.", "en": "My dad used to take me to see the planes." },
+    { "es": "¿Dónde vivías antes?", "en": "Where did you use to live? (to a friend)" },
+    { "es": "No comíamos carne los viernes.", "en": "We didn't use to eat meat on Fridays." },
+    { "es": "Mis primos jugaban fútbol en la calle.", "en": "My cousins used to play football in the street." },
+    { "es": "Antes Vale trabajaba en Medellín.", "en": "Vale used to work in Medellín." }
+  ],
+  "rule": "English says *used to*, or *would*, or just the plain past. Spanish puts the habit into the ending of the verb.\n\n*-ar* verbs take *-aba*:\n*cantaba*, *cantabas*, *cantaba*, *cantábamos*, *cantaban*\n*-er* and *-ir* verbs take *-ía*:\n*comía*, *comías*, *comía*, *comíamos*, *comían* (and *vivía* the same way)\n\nOnly three verbs break the pattern. *ser* gives *era*, which you know. *ir* gives *iba*, *ibas*, *iba*, *íbamos*, *iban*. *ver* gives *veía*.\n\nAs with *era*, I and he or she look the same: *cocinaba* can be I or she. Add *yo* or a name when it matters.\n\nCompare: *Ayer comí arepa* is one time. *Comía arepa todos los días* is a habit. Words like *siempre*, *antes* and *los domingos* are good signs you want this past.",
+  "smallPrint": "Teachers call this the imperfect (*pretérito imperfecto*). It's the same tense as *era*, *estaba* and *tenía*; now it works with every verb.",
+  "soundTip": "In *-ía* the stress lands on the i, which is why it carries a mark: *comía* is co-MEE-ah, *vivía* is vee-VEE-ah. In the *-aba* forms the stress sits on the *a* before the b: *cantaba* is can-TAH-bah, and *cantábamos* needs the mark to keep it there.",
+  "readAndPick": [
+    { "es": "Comíamos en la casa de mi abuela.", "options": ["We used to eat at my grandmother's house.", "They used to eat at my grandmother's house.", "We eat at my grandmother's house."], "answer": 0 },
+    { "es": "¿Trabajabas los sábados?", "options": ["Do you work on Saturdays?", "Did you use to work on Saturdays?", "Did they use to work on Saturdays?"], "answer": 1 },
+    { "es": "Iban a la playa en diciembre.", "options": ["We used to go to the beach in December.", "They're going to the beach in December.", "They used to go to the beach in December."], "answer": 2 },
+    { "es": "Comí una arepa.", "options": ["I ate an arepa.", "I used to eat arepas."], "answer": 0 },
+    { "es": "Comía arepas.", "options": ["I ate an arepa.", "I used to eat arepas."], "answer": 1 },
+    { "es": "Veíamos televisión con mi abuelo.", "options": ["I used to watch TV with my grandfather.", "We watch TV with my grandfather.", "We used to watch TV with my grandfather."], "answer": 2 },
+    { "es": "No vivían aquí.", "options": ["They didn't use to live here.", "They don't live here.", "We didn't use to live here."], "answer": 0 },
+    { "es": "Hablábamos inglés en casa.", "options": ["I used to speak English at home.", "We used to speak English at home.", "We speak English at home."], "answer": 1 },
+    { "es": "Iba al colegio en bus.", "options": ["We used to go to school by bus.", "I'm going to go to school by bus.", "I used to go to school by bus."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: *Todos los domingos mi abuela ___.* (*cocinó* or *cocinaba*) Every Sunday my grandmother used to cook.",
+      "answer": "Todos los domingos mi abuela cocinaba.",
+      "accept": ["Mi abuela cocinaba todos los domingos."],
+      "why": "Every Sunday is a habit, so *cocinaba*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: *Antes ___ en Toronto.* (*vivía* or *vivíamos*) I used to live in Toronto.",
+      "answer": "Antes vivía en Toronto.",
+      "accept": ["Antes yo vivía en Toronto.", "Yo antes vivía en Toronto."],
+      "why": "I used to live is *vivía*; *vivíamos* would be we."
+    },
+    {
+      "prompt": "On Sundays we used to eat at my grandmother's house.",
+      "answer": "Los domingos comíamos en la casa de mi abuela.",
+      "accept": ["Los domingos comíamos en casa de mi abuela.", "Comíamos en la casa de mi abuela los domingos.", "Comíamos en casa de mi abuela los domingos."],
+      "why": "A habit in the past, with we: *comíamos*."
+    },
+    {
+      "prompt": "Ask a friend: Did you use to play football?",
+      "answer": "¿Jugabas fútbol?",
+      "accept": ["¿Tú jugabas fútbol?", "¿Jugabas al fútbol?"],
+      "why": "*Jugar* is an *-ar* verb, so you used to play is *jugabas*."
+    },
+    {
+      "prompt": "My dad used to take me to see the planes.",
+      "answer": "Mi papá me llevaba a ver los aviones.",
+      "accept": ["Mi papá me llevaba a ver aviones."],
+      "why": "He did it again and again, so *llevaba*."
+    },
+    {
+      "prompt": "Make it a past habit: *Trabajo los sábados.*",
+      "answer": "Trabajaba los sábados.",
+      "accept": ["Yo trabajaba los sábados."],
+      "why": "*Trabajo* becomes *trabajaba*: I used to work."
+    },
+    {
+      "prompt": "Make it about *we*: *Iba a la playa en diciembre.*",
+      "answer": "Íbamos a la playa en diciembre.",
+      "accept": ["Nosotros íbamos a la playa en diciembre."],
+      "why": "*Ir* is one of the three odd ones: we used to go is *íbamos*, with a mark on the first i."
+    },
+    {
+      "prompt": "Make it negative: *Veía mucha televisión.*",
+      "answer": "No veía mucha televisión.",
+      "accept": ["Yo no veía mucha televisión."],
+      "why": "*No* goes right in front of the verb, as always."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo usaba vivir en Toronto.",
+      "right": "Antes vivía en Toronto.",
+      "why": "Almost. Spanish has no word for *used to*; the ending does that job: *vivía*."
+    },
+    {
+      "wrong": "Mi abuela cocinó todos los domingos.",
+      "right": "Mi abuela cocinaba todos los domingos.",
+      "why": "*Cocinó* sounds like one event. For something that kept happening, use *cocinaba*."
+    },
+    {
+      "wrong": "Yo vía televisión con mi abuelo.",
+      "right": "Yo veía televisión con mi abuelo.",
+      "why": "Close. *Ver* keeps its e here: *veía*."
+    },
+    {
+      "wrong": "Ibamos a la playa en diciembre.",
+      "right": "Íbamos a la playa en diciembre.",
+      "why": "Nearly. The we form carries a mark: *íbamos*, *hablábamos*, *comíamos*."
+    }
+  ],
+  "personal": "Think of when you were about ten. Write three things you used to do: where you used to go (*iba*), what you used to eat (*comía*) and who you used to play with (*jugaba con*)."
+}

@@ -1,0 +1,103 @@
+{
+  "node": "g:comparatives",
+  "hook": {
+    "line": "Mariana says the barrio is changing, and everyone at the café has an opinion about how it was before. To compare, Spanish uses one small word where English often changes the adjective itself.",
+    "es": "Antes el barrio era más tranquilo.",
+    "en": "The neighbourhood used to be quieter."
+  },
+  "examples": [
+    { "es": "Bogotá es más fría que Medellín.", "en": "Bogotá is colder than Medellín." },
+    { "es": "Este café es mejor que el otro.", "en": "This coffee is better than the other one." },
+    { "es": "Mi hermano es menos serio que yo.", "en": "My brother is less serious than me." },
+    { "es": "Tomás no es tan alto como su papá.", "en": "Tomás isn't as tall as his dad." },
+    { "es": "¿Cuál es más barato?", "en": "Which one is cheaper?" },
+    { "es": "Vale cocina mejor que yo.", "en": "Vale cooks better than me." },
+    { "es": "Antes las calles eran más tranquilas.", "en": "The streets used to be quieter." }
+  ],
+  "rule": "English adds -er (colder) or uses more (more expensive). Spanish always does it the second way: *más* plus the adjective, then *que*. *Más fría que* is colder than.\n*más … que*: more … than\n*menos … que*: less … than\n*tan … como*: as … as\nThe adjective still agrees: *Bogotá es más fría*, *las calles eran más tranquilas*.\nTwo words skip *más*: *mejor* (better) and *peor* (worse). Say *mejor*, not *más bueno*. You already know *mayor* and *menor* for older and younger.\nAfter *que* and *como*, use *yo* and *tú*: *más alto que yo*.",
+  "smallPrint": "Teachers call these comparatives; *mejor* and *peor* are the irregular ones. With numbers Spanish says *más de*, which comes soon.",
+  "readAndPick": [
+    { "es": "Bogotá es más fría que Medellín.", "options": ["Bogotá is colder than Medellín.", "Medellín is colder than Bogotá.", "Bogotá is as cold as Medellín."], "answer": 0 },
+    { "es": "Mi hermano es menos serio que yo.", "options": ["My brother is more serious than me.", "My brother is less serious than me.", "I'm less serious than my brother."], "answer": 1 },
+    { "es": "No es tan caro como dicen.", "options": ["It's more expensive than they say.", "It's cheaper than they say.", "It's not as expensive as they say."], "answer": 2 },
+    { "es": "Este café es mejor que el otro.", "options": ["This coffee is as good as the other one.", "This coffee is better than the other one."], "answer": 1 },
+    { "es": "Tomás es mayor que Vale.", "options": ["Tomás is older than Vale.", "Tomás is bigger than Vale.", "Tomás is younger than Vale."], "answer": 0 },
+    { "es": "Las arepas son tan ricas como antes.", "options": ["The arepas are better than before.", "The arepas are as good as before."], "answer": 1 },
+    { "es": "Tú eres más alta que yo.", "options": ["I'm taller than you.", "You're as tall as me.", "You're taller than me."], "answer": 2 },
+    { "es": "Mi mamá cocina mejor que yo.", "options": ["My mum cooks better than me.", "I cook better than my mum.", "My mum cooks as well as me."], "answer": 0 },
+    { "es": "El café es menos caro que el té.", "options": ["Coffee is more expensive than tea.", "Coffee is less expensive than tea."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Bogotá es más fría ___ Medellín.* (*que* or *de*) Bogotá is colder than Medellín.",
+      "answer": "Bogotá es más fría que Medellín.",
+      "accept": [],
+      "why": "Than is *que* when you compare two things."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Este café es ___ que el otro.* (*más bueno* or *mejor*) This coffee is better than the other one.",
+      "answer": "Este café es mejor que el otro.",
+      "accept": [],
+      "why": "Better has its own word: *mejor*."
+    },
+    {
+      "prompt": "Tomás isn't as tall as his dad.",
+      "answer": "Tomás no es tan alto como su papá.",
+      "accept": [],
+      "why": "As tall as is *tan alto como*."
+    },
+    {
+      "prompt": "My sister is more serious than me.",
+      "answer": "Mi hermana es más seria que yo.",
+      "accept": [],
+      "why": "*Más seria que*, with the adjective agreeing with *hermana*, and *yo* after *que*."
+    },
+    {
+      "prompt": "Ask a friend which one is cheaper (talking about two coffees).",
+      "answer": "¿Cuál es más barato?",
+      "accept": [],
+      "why": "Cheaper is *más barato*; it agrees with *café*."
+    },
+    {
+      "prompt": "Change *más* to less: *El café es más caro que el té.*",
+      "answer": "El café es menos caro que el té.",
+      "accept": [],
+      "why": "Less is *menos*; the rest stays the same."
+    },
+    {
+      "prompt": "Make it as … as: *Mi casa es más grande que tu casa.*",
+      "answer": "Mi casa es tan grande como tu casa.",
+      "accept": [],
+      "why": "*Más … que* becomes *tan … como*."
+    },
+    {
+      "prompt": "Make it about how it used to be: *Las calles son más tranquilas.*",
+      "answer": "Las calles eran más tranquilas.",
+      "accept": ["Antes las calles eran más tranquilas."],
+      "why": "Only *son* changes, to *eran*; the comparison stays the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Bogotá es más fría de Medellín.",
+      "right": "Bogotá es más fría que Medellín.",
+      "why": "Almost. When you compare two things, than is *que*."
+    },
+    {
+      "wrong": "Este café es más bueno que el otro.",
+      "right": "Este café es mejor que el otro.",
+      "why": "Spanish has its own word for better: *mejor*."
+    },
+    {
+      "wrong": "Tomás no es tan alto que su papá.",
+      "right": "Tomás no es tan alto como su papá.",
+      "why": "Close. *Tan* goes with *como*, not *que*."
+    },
+    {
+      "wrong": "Mi hermana es más alta que mí.",
+      "right": "Mi hermana es más alta que yo.",
+      "why": "After *que*, Spanish uses *yo*, even where English says me."
+    }
+  ],
+  "personal": "Compare your life now with your life ten years ago. Write one sentence with *más … que* and one with *tan … como*."
+}

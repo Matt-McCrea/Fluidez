@@ -1,0 +1,89 @@
+{
+  "node": "p:parecerse-a",
+  "hook": {
+    "line": "Everyone in La Candelaria who knew Rosa says the same thing when they see Tomás. Here's how to say who someone looks like.",
+    "es": "Tomás se parece mucho a su abuela Rosa.",
+    "en": "Tomás looks a lot like his grandmother Rosa."
+  },
+  "examples": [
+    { "es": "Me parezco mucho a mi mamá.", "en": "I look a lot like my mum." },
+    { "es": "¿A quién te pareces?", "en": "Who do you look like? (to a friend)" },
+    { "es": "Mi hermano y yo no nos parecemos nada.", "en": "My brother and I aren't alike at all." },
+    { "es": "Las dos hermanas se parecen mucho.", "en": "The two sisters look a lot alike." },
+    { "es": "Cuando era niño me parecía a mi papá.", "en": "When I was a boy I looked like my dad." }
+  ],
+  "rule": "English says *look like*. Spanish uses *parecerse a*, which works like *llamarse*: *me*, *te* or *se* in front, and *a* before the person.\n*me parezco*, *te pareces*, *se parece*, *nos parecemos*, *se parecen*\nThe I form is *parezco*, like *conozco*.\nWhen two people look alike, there's no *a*: *Nos parecemos*. *Se parecen mucho*.\nIt covers looks and character, so *Me parezco a mi mamá* can mean I look like her or I'm like her.",
+  "smallPrint": "Teachers call this a pronominal verb: a verb that always carries *me*, *te*, *se*. Without *se*, *parecer* means to seem, which comes later.",
+  "readAndPick": [
+    { "es": "Me parezco a mi papá.", "options": ["I look like my dad.", "My dad looks like me.", "You look like my dad."], "answer": 0 },
+    { "es": "¿A quién te pareces?", "options": ["Who do I look like?", "Who looks like you?", "Who do you look like?"], "answer": 2 },
+    { "es": "Nos parecemos mucho.", "options": ["They look a lot alike.", "We look a lot alike."], "answer": 1 },
+    { "es": "Se parecen mucho.", "options": ["They look a lot alike.", "We look a lot alike."], "answer": 0 },
+    { "es": "Mi hermana no se parece a mí.", "options": ["I don't look like my sister.", "My sister doesn't look like me.", "My sister looks like me."], "answer": 1 },
+    { "es": "Te pareces a tu abuelo.", "options": ["Your grandfather looks like you.", "I look like your grandfather.", "You look like your grandfather."], "answer": 2 },
+    { "es": "Se parece a su mamá.", "options": ["She looks like her mum.", "I look like her mum.", "Her mum looks like her."], "answer": 0 },
+    { "es": "Me parecía a mi papá.", "options": ["I look like my dad.", "I used to look like my dad."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Me ___ a mi mamá.* (*parezco* or *parece*) I look like my mum.",
+      "answer": "Me parezco a mi mamá.",
+      "accept": [],
+      "why": "*Parezco* is the I form, and it goes with *me*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Tomás se parece ___ su abuela.* (*a* or *como*) Tomás looks like his grandmother.",
+      "answer": "Tomás se parece a su abuela.",
+      "accept": [],
+      "why": "*Parecerse* always takes *a* before the person."
+    },
+    {
+      "prompt": "Ask a friend: Who do you look like?",
+      "answer": "¿A quién te pareces?",
+      "accept": [],
+      "why": "The *a* moves to the front with *quién*: *¿A quién…?*"
+    },
+    {
+      "prompt": "My brother and I aren't alike at all.",
+      "answer": "Mi hermano y yo no nos parecemos nada.",
+      "accept": [],
+      "why": "Two people alike: *nos parecemos*, with no *a*, and *nada* for at all."
+    },
+    {
+      "prompt": "She looks a lot like her dad.",
+      "answer": "Se parece mucho a su papá.",
+      "accept": ["Ella se parece mucho a su papá."],
+      "why": "*Se parece* for she, then *a* and the person."
+    },
+    {
+      "prompt": "Make it about *we*: *Me parezco a mi abuela.*",
+      "answer": "Nos parecemos a nuestra abuela.",
+      "accept": ["Nosotros nos parecemos a nuestra abuela."],
+      "why": "*Me parezco* becomes *nos parecemos*, and *mi* becomes *nuestra*."
+    },
+    {
+      "prompt": "Make it negative: *Se parecen mucho.*",
+      "answer": "No se parecen mucho.",
+      "accept": [],
+      "why": "*No* goes in front of *se*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Miro como mi papá.",
+      "right": "Me parezco a mi papá.",
+      "why": "Almost. *Mirar* is to look at something. To look like someone, Spanish says *parecerse a*."
+    },
+    {
+      "wrong": "Me parezco mi mamá.",
+      "right": "Me parezco a mi mamá.",
+      "why": "Close. *Parecerse* needs *a* before the person."
+    },
+    {
+      "wrong": "Me parezo a mi abuelo.",
+      "right": "Me parezco a mi abuelo.",
+      "why": "The I form has a k sound in it: *parezco*, like *conozco*."
+    }
+  ],
+  "personal": "Who do you look like in your family, and who are you nothing like? Write one sentence with *me parezco a* and one with *no me parezco a*."
+}

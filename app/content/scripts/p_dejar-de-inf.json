@@ -1,0 +1,89 @@
+{
+  "node": "p:dejar-de-inf",
+  "hook": {
+    "line": "Then the family moved to Toronto, and some things simply stopped. To say a habit ended, Spanish uses *dejar de*.",
+    "es": "Tomás dejó de hablar español en Toronto.",
+    "en": "Tomás stopped speaking Spanish in Toronto."
+  },
+  "examples": [
+    { "es": "Dejé de tomar café hace un mes.", "en": "I stopped drinking coffee a month ago." },
+    { "es": "Por fin dejó de llover.", "en": "It finally stopped raining." },
+    { "es": "¿Por qué dejaste de jugar fútbol?", "en": "Why did you stop playing football? (to a friend)" },
+    { "es": "Dejamos de ir a la playa.", "en": "We stopped going to the beach." },
+    { "es": "Mi abuelo nunca dejó de trabajar.", "en": "My grandfather never stopped working." }
+  ],
+  "rule": "English stops *doing* something, with -ing. Spanish says *dejar de* plus the plain verb: *Dejé de comer carne*, I stopped eating meat.\nOnly *dejar* changes: *dejé*, *dejaste*, *dejó*, *dejamos*, *dejaron*. The second verb stays plain.\nThe *de* matters. Without it, *dejar* means to leave something somewhere: *Dejé las llaves en la mesa*.\nIt's the opposite of *empezar a*: *Empezó a llover*, *Dejó de llover*. From today's side you can also say *ya no*: *Ya no como carne*.",
+  "smallPrint": "Teachers call *dejar de* plus an infinitive a verbal periphrasis: two verbs working as one.",
+  "readAndPick": [
+    { "es": "Dejé de comer carne.", "options": ["I stopped eating meat.", "I left the meat.", "I started eating meat."], "answer": 0 },
+    { "es": "Dejé la carne en la nevera.", "options": ["I stopped eating meat.", "I left the meat in the fridge."], "answer": 1 },
+    { "es": "Empezó a llover.", "options": ["It stopped raining.", "It's raining.", "It started raining."], "answer": 2 },
+    { "es": "Dejó de llover.", "options": ["It started raining.", "It stopped raining."], "answer": 1 },
+    { "es": "¿Dejaste de estudiar?", "options": ["Did you stop studying?", "Did he stop studying?", "Did you start studying?"], "answer": 0 },
+    { "es": "Dejamos de ir al café.", "options": ["We left the café.", "They stopped going to the café.", "We stopped going to the café."], "answer": 2 },
+    { "es": "Dejaron de trabajar los domingos.", "options": ["We stopped working on Sundays.", "They stopped working on Sundays.", "They started working on Sundays."], "answer": 1 },
+    { "es": "Ya no como carne.", "options": ["I don't eat meat any more.", "I still eat meat."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Dejé ___ comer carne.* (*de* or *a*) I stopped eating meat.",
+      "answer": "Dejé de comer carne.",
+      "accept": [],
+      "why": "Stopping takes *de*; starting takes *a*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Tomás dejó de ___ español.* (*hablar* or *hablando*) Tomás stopped speaking Spanish.",
+      "answer": "Tomás dejó de hablar español.",
+      "accept": [],
+      "why": "After *de* the verb stays plain: *hablar*."
+    },
+    {
+      "prompt": "It stopped raining.",
+      "answer": "Dejó de llover.",
+      "accept": ["Ya dejó de llover."],
+      "why": "*Dejó de* plus plain *llover*."
+    },
+    {
+      "prompt": "Ask a friend: Why did you stop playing football?",
+      "answer": "¿Por qué dejaste de jugar fútbol?",
+      "accept": ["¿Por qué dejaste de jugar al fútbol?"],
+      "why": "You stopped is *dejaste*, then *de jugar*."
+    },
+    {
+      "prompt": "We stopped going to the beach.",
+      "answer": "Dejamos de ir a la playa.",
+      "accept": ["Nosotros dejamos de ir a la playa."],
+      "why": "We stopped is *dejamos*, and *ir* stays plain."
+    },
+    {
+      "prompt": "Say you stopped doing it: *Tomo café.*",
+      "answer": "Dejé de tomar café.",
+      "accept": ["Yo dejé de tomar café."],
+      "why": "The person moves onto *dejé*, so *tomo* goes back to plain *tomar*."
+    },
+    {
+      "prompt": "Make it about *they*: *Dejé de trabajar los sábados.*",
+      "answer": "Dejaron de trabajar los sábados.",
+      "accept": ["Ellos dejaron de trabajar los sábados."],
+      "why": "They stopped is *dejaron*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Paré comiendo carne.",
+      "right": "Dejé de comer carne.",
+      "why": "Almost. Stopping a habit is *dejar de* with the plain verb, not a word for word *stop eating*."
+    },
+    {
+      "wrong": "Dejé comer carne.",
+      "right": "Dejé de comer carne.",
+      "why": "Without *de*, *dejé comer* sounds like I let someone eat. Keep the *de*."
+    },
+    {
+      "wrong": "Dejé de comiendo carne.",
+      "right": "Dejé de comer carne.",
+      "why": "After *de*, Spanish uses the plain verb where English uses -ing."
+    }
+  ],
+  "personal": "Write about one thing you stopped doing and when, with *Dejé de* and *hace*."
+}

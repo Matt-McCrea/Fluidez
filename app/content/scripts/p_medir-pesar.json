@@ -1,0 +1,89 @@
+{
+  "node": "p:medir-pesar",
+  "hook": {
+    "line": "Sooner or later someone at the airport, the doctor's or the tailor's wants your numbers. In Spanish you don't say how tall you are; you say how much you measure.",
+    "es": "Mido un metro sesenta y cinco.",
+    "en": "I'm one metre sixty-five."
+  },
+  "examples": [
+    { "es": "Mi hermano mide un metro ochenta.", "en": "My brother is one metre eighty." },
+    { "es": "¿Cuánto mides?", "en": "How tall are you? (to a friend)" },
+    { "es": "La maleta pesa veinte kilos.", "en": "The suitcase weighs twenty kilos." },
+    { "es": "¿Cuánto pesa el paquete?", "en": "How much does the parcel weigh?" },
+    { "es": "La mesa mide dos metros.", "en": "The table is two metres long." }
+  ],
+  "rule": "English says someone *is* six foot. Spanish uses two verbs instead: *medir* (to measure) for height and length, *pesar* for weight. No *ser*.\n*medir*: *mido*, *mides*, *mide*, *medimos*, *miden*\n*pesar*: *peso*, *pesas*, *pesa*, *pesamos*, *pesan*\nTo ask, use *¿cuánto?*: *¿Cuánto mides?* How tall are you? *¿Cuánto pesa?* How much does it weigh?\nLatin America uses metres and kilos. A height is written *1,80*, with a comma, and said *un metro ochenta*.",
+  "smallPrint": "*Medir* is one of the e to i verbs, like *pedir*: *mido*, *mide*, but *medimos*.",
+  "readAndPick": [
+    { "es": "Mide un metro noventa.", "options": ["He's one metre ninety.", "I'm one metre ninety.", "He weighs ninety kilos."], "answer": 0 },
+    { "es": "¿Cuánto mides?", "options": ["How much do you weigh?", "How tall are you?", "How tall is he?"], "answer": 1 },
+    { "es": "¿Cuánto pesas?", "options": ["How tall are you?", "How much does it cost?", "How much do you weigh?"], "answer": 2 },
+    { "es": "Peso setenta kilos.", "options": ["I weigh seventy kilos.", "She weighs seventy kilos.", "I'm one metre seventy."], "answer": 0 },
+    { "es": "Las maletas pesan veinte kilos.", "options": ["The suitcase weighs twenty kilos.", "The suitcases weigh twenty kilos."], "answer": 1 },
+    { "es": "Mido un metro sesenta.", "options": ["You're one metre sixty.", "She's one metre sixty.", "I'm one metre sixty."], "answer": 2 },
+    { "es": "La mesa mide dos metros.", "options": ["The table is two metres long.", "The table weighs two kilos."], "answer": 0 },
+    { "es": "¿Cuánto mide el sofá?", "options": ["How much does the sofa weigh?", "How long is the sofa?", "How much is the sofa?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Mi hermano ___ un metro ochenta.* (*es* or *mide*) My brother is one metre eighty.",
+      "answer": "Mi hermano mide un metro ochenta.",
+      "accept": [],
+      "why": "Height is something you measure: *mide*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Yo ___ un metro setenta.* (*mido* or *mide*) I'm one metre seventy.",
+      "answer": "Yo mido un metro setenta.",
+      "accept": ["Mido un metro setenta."],
+      "why": "*Mido* is the I form, with an i."
+    },
+    {
+      "prompt": "Ask a friend: How tall are you?",
+      "answer": "¿Cuánto mides?",
+      "accept": ["¿Cuánto mides tú?"],
+      "why": "How much do you measure: *¿Cuánto mides?*"
+    },
+    {
+      "prompt": "The suitcase weighs twenty kilos.",
+      "answer": "La maleta pesa veinte kilos.",
+      "accept": [],
+      "why": "Weight is *pesar*: *pesa* for it."
+    },
+    {
+      "prompt": "Ask a shop assistant, politely: How much does it weigh?",
+      "answer": "¿Cuánto pesa?",
+      "accept": [],
+      "why": "It weighs is *pesa*, whoever you're asking."
+    },
+    {
+      "prompt": "Make it plural: *La mesa mide dos metros.*",
+      "answer": "Las mesas miden dos metros.",
+      "accept": [],
+      "why": "They measure is *miden*."
+    },
+    {
+      "prompt": "Make it about *I*: *Vale pesa sesenta kilos.*",
+      "answer": "Peso sesenta kilos.",
+      "accept": ["Yo peso sesenta kilos."],
+      "why": "I weigh is *peso*, the same word as the coin."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Soy un metro ochenta.",
+      "right": "Mido un metro ochenta.",
+      "why": "Almost. In Spanish you don't *are* a height, you measure it: *mido*."
+    },
+    {
+      "wrong": "¿Qué alto eres?",
+      "right": "¿Cuánto mides?",
+      "why": "*How tall* doesn't carry over word for word. Ask how much: *¿Cuánto mides?*"
+    },
+    {
+      "wrong": "Medo un metro sesenta.",
+      "right": "Mido un metro sesenta.",
+      "why": "Like *pedir*, the e turns into i: *mido*."
+    }
+  ],
+  "personal": "Write two sentences: how tall you are (*mido*), and how much something you own weighs or measures (*pesa*, *mide*)."
+}
