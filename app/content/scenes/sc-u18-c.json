@@ -1,0 +1,212 @@
+{
+  "id": "sc-u18-c",
+  "unit": "u18",
+  "title": "Room 504",
+  "brief": "You're Tomás. You reach the hotel in Medellín late at night with only your backpack, and Vale made the booking. Check in, find out the price, and get what you need for the night. The man at reception is a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas noches, señor. ¿Tiene una reserva con nosotros?",
+      "npcEn": "Good evening, sir. Do you have a booking with us?",
+      "intent": "Say yes, you have a booking in the name of Tomás Herrera.",
+      "accept": [
+        "Sí, tengo una reserva a nombre de Tomás Herrera.",
+        "Buenas noches. Sí, una reserva a nombre de Tomás Herrera.",
+        "Sí, señor. Está a nombre de Tomás Herrera."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "a nombre de",
+          "flags": "i",
+          "label": "in the name of: a nombre de"
+        }
+      ],
+      "focus": "c:a-nombre-de",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Pues no encuentro la reserva a nombre de Herrera. ¿Quién la hizo?",
+      "npcEn": "Well, I can't find the booking in the name of Herrera. Who made it?",
+      "intent": "Say your friend Vale made it, and ask him to look for it in her name, please.",
+      "accept": [
+        "Mi amiga Vale la hizo. Búsquela a nombre de Vale, por favor.",
+        "La hizo mi amiga Vale. Por favor, búsquela a nombre de ella.",
+        "Mi amiga la hizo. Búsquela a nombre de Vale, por favor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bb[uú]squela\\b",
+          "flags": "i",
+          "label": "look for it: búsquela (la rides on the end)"
+        }
+      ],
+      "focus": "g:commands-with-pronouns",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Ah, ya la veo! Una habitación con vista a la ciudad, dos noches.",
+      "npcEn": "Ah, now I see it! A room with a view of the city, two nights.",
+      "intent": "Ask how much it is per night.",
+      "accept": [
+        "¿Cuánto es por noche?",
+        "Perfecto. ¿Cuánto es por noche?",
+        "¿Y cuánto vale por noche?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "por noche",
+          "flags": "i",
+          "label": "per night takes por: por noche"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:por-para-1",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ciento ochenta mil pesos por noche, con desayuno. Es la 504. ¿Le subo la mochila?",
+      "npcEn": "A hundred and eighty thousand pesos a night, with breakfast. It's 504. Shall I take your backpack up?",
+      "intent": "Say yes, ask him to take it up for you, please.",
+      "accept": [
+        "Sí, súbamela, por favor.",
+        "Sí, gracias. Súbamela, por favor.",
+        "Sí, por favor, súbamela a la habitación."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bs[uú]bamela\\b",
+          "flags": "i",
+          "label": "take it up for me: súbamela (me, then la, on the end)"
+        }
+      ],
+      "focus": "g:commands-with-pronouns",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Con gusto. ¿Necesita algo más?",
+      "npcEn": "My pleasure. Do you need anything else?",
+      "intent": "Ask him to bring you a towel, please. (Your suitcase is lost.)",
+      "accept": [
+        "Sí. ¿Me trae una toalla, por favor?",
+        "Tráigame una toalla, por favor.",
+        "Sí, por favor. ¿Me trae una toalla a la habitación?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme trae\\b|\\btr[aá]igame\\b",
+          "flags": "i",
+          "label": "bring it here to you: traer (me trae, tráigame), not llevar"
+        }
+      ],
+      "focus": "p:llevar-traer",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Claro, ya se la llevo. ¿Algo más para mañana?",
+      "npcEn": "Of course, I'll take it to you now. Anything else for tomorrow?",
+      "intent": "Say yes, you need a taxi for seven tomorrow morning, and thank him.",
+      "accept": [
+        "Sí. Necesito un taxi para mañana a las siete. Gracias.",
+        "Sí, por favor. Un taxi para mañana a las siete. Muchas gracias.",
+        "Necesito un taxi para las siete de la mañana. ¡Gracias!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "taxi para",
+          "flags": "i",
+          "label": "a time you need it by takes para: para las siete"
+        }
+      ],
+      "focus": "g:por-para-1",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-nombre-de",
+    "c:algo-mas",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:cuanto-cuesta",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:por-favor",
+    "c:pues",
+    "c:tengo",
+    "c:tienes",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:amiga",
+    "l:buena",
+    "l:buscar",
+    "l:ciudad",
+    "l:claro",
+    "l:cuánto",
+    "l:desayuno",
+    "l:encontrar",
+    "l:estar",
+    "l:favor",
+    "l:gusto",
+    "l:habitación",
+    "l:hacer",
+    "l:llevar",
+    "l:mañana",
+    "l:mochila",
+    "l:necesitar",
+    "l:noche",
+    "l:nombre",
+    "l:perfecto",
+    "l:peso",
+    "l:quién",
+    "l:reserva",
+    "l:ser",
+    "l:señor",
+    "l:subir",
+    "l:taxi",
+    "l:tener",
+    "l:toalla",
+    "l:traer",
+    "l:valer",
+    "l:ver",
+    "l:vista",
+    "p:con-sin",
+    "p:costar-pagar",
+    "p:de-owner",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:numbers-un-una",
+    "p:para-inf",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:request-ladder",
+    "p:telling-time"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "id": "sc-u18-b",
+  "unit": "u18",
+  "title": "Nine hours, one suitcase short",
+  "brief": "You're Tomás. After nine hours of curves you get off the bus at the Terminal del Norte in Medellín, and your red suitcase isn't in the luggage hold. Explain the problem and get it sent to your hotel in Laureles. The man from the bus company is a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes. ¿Le ayudo en algo?",
+      "npcEn": "Good afternoon. Can I help you with something?",
+      "intent": "Say yes: you arrived on the bus from Bogotá, and your suitcase isn't here.",
+      "accept": [
+        "Sí, por favor. Llegué en el bus de Bogotá y mi maleta no está.",
+        "Sí. Llegué de Bogotá en el bus de las seis, y mi maleta no está aquí.",
+        "Buenas tardes. Sí, llegué en el bus de Bogotá, pero mi maleta no está."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "llegar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I arrived: llegué"
+        },
+        {
+          "type": "negation",
+          "label": "it isn't here: no está"
+        }
+      ],
+      "focus": "g:preterite-ar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Tranquilo, señor. Aquí hay tres maletas sin dueño. ¿Esta negra es suya?",
+      "npcEn": "Don't worry, sir. There are three suitcases here with no owner. Is this black one yours?",
+      "intent": "Say no, yours is the red one.",
+      "accept": [
+        "No, la mía es la roja.",
+        "No, no es mía. La mía es la roja.",
+        "No, señor. La mía es roja."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bla m[ií]a\\b",
+          "flags": "i",
+          "label": "mine (the suitcase): la mía"
+        },
+        {
+          "type": "negation",
+          "label": "start with no"
+        }
+      ],
+      "focus": "g:possessives-stressed",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Roja? Aquí no hay ninguna maleta roja. Quizá otro pasajero se la llevó.",
+      "npcEn": "Red? There's no red suitcase here. Maybe another passenger took it.",
+      "intent": "Say you need it for tonight: your clothes for the party are in it.",
+      "accept": [
+        "La necesito para esta noche. Mi ropa para la fiesta está en la maleta.",
+        "Pero la necesito para esta noche. Mi ropa para la fiesta está ahí.",
+        "¡Ay, no! La necesito para esta noche. La ropa para la fiesta está en la maleta."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "para esta noche",
+          "flags": "i",
+          "label": "a deadline takes para: para esta noche"
+        }
+      ],
+      "focus": "g:por-para-1",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Entiendo. Si la encontramos, se la mandamos hoy. ¿A qué dirección?",
+      "npcEn": "I understand. If we find it, we'll send it to you today. To what address?",
+      "intent": "Tell him to send it to you at the hotel in Laureles, please.",
+      "accept": [
+        "Mándemela al hotel, por favor. Está en Laureles.",
+        "Mándemela al hotel en Laureles, por favor.",
+        "Por favor, mándemela a mi hotel. Está en el barrio Laureles."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bm[aá]ndemela\\b",
+          "flags": "i",
+          "label": "send it to me: mándemela (me, then la, on the end)"
+        }
+      ],
+      "focus": "g:commands-with-pronouns",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Espere! Un señor llamó por teléfono. Tiene una maleta roja en su carro, pero dice que no es suya.",
+      "npcEn": "Wait! A man called on the phone. He has a red suitcase in his car, but he says it isn't his.",
+      "intent": "Say great, that one is yours, and ask him to tell the man, please.",
+      "accept": [
+        "¡Qué bien! Es la mía. Dígaselo, por favor.",
+        "¡Es mía! Dígaselo, por favor.",
+        "¡Qué bien, es la mía! Por favor, dígaselo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bes (la )?m[ií]a\\b",
+          "flags": "i",
+          "label": "it's mine: es mía, es la mía"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bd[ií]gaselo\\b",
+          "flags": "i",
+          "label": "tell him: dígaselo (se, then lo, on the end)"
+        }
+      ],
+      "focus": "g:commands-with-pronouns",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Listo, ya se lo dije. Él lleva la maleta a su hotel esta tarde.",
+      "npcEn": "Done, I've told him. He's taking the suitcase to your hotel this afternoon.",
+      "intent": "Thank him for his help and say goodbye.",
+      "accept": [
+        "Muchas gracias por su ayuda. Hasta luego.",
+        "Mil gracias por su ayuda, señor. ¡Chao!",
+        "Gracias por la ayuda. Hasta luego."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "gracias por",
+          "flags": "i",
+          "label": "thanks for something takes por: gracias por su ayuda"
+        }
+      ],
+      "focus": "x:por-para",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:le-ayudo",
+    "c:por-favor",
+    "c:que-bien",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:indefinites",
+    "g:negation-words",
+    "g:possessives-stressed",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "l:ahí",
+    "l:aquí",
+    "l:ayuda",
+    "l:ayudar",
+    "l:barrio",
+    "l:bien",
+    "l:buena",
+    "l:bus",
+    "l:carro",
+    "l:decir",
+    "l:dirección",
+    "l:dueño",
+    "l:encontrar",
+    "l:entender",
+    "l:esperar",
+    "l:estar",
+    "l:favor",
+    "l:fiesta",
+    "l:hotel",
+    "l:hoy",
+    "l:listo",
+    "l:llamar",
+    "l:llegar",
+    "l:llevar",
+    "l:llevarse",
+    "l:maleta",
+    "l:mandar",
+    "l:necesitar",
+    "l:negro",
+    "l:noche",
+    "l:pasajero",
+    "l:quizá",
+    "l:qué",
+    "l:rojo",
+    "l:ropa",
+    "l:ser",
+    "l:señor",
+    "l:tarde",
+    "l:teléfono",
+    "l:tener",
+    "l:tranquilo",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:request-ladder",
+    "p:time-sequence-basic"
+  ]
+}

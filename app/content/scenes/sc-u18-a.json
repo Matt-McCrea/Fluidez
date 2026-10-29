@@ -1,0 +1,213 @@
+{
+  "id": "sc-u18-a",
+  "unit": "u18",
+  "title": "Window four at Salitre",
+  "brief": "You're Tomás. It's five in the morning at the Salitre bus terminal in Bogotá, and Vale is still buying arepas somewhere. Buy the bus tickets to Medellín for the two of you. The man at the window is a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, señor. Siguiente. ¿Para dónde viaja?",
+      "npcEn": "Good morning, sir. Next. Where are you travelling to?",
+      "intent": "Ask for two tickets to Medellín, please.",
+      "accept": [
+        "Dos tiquetes para Medellín, por favor.",
+        "Buenos días. Necesito dos tiquetes para Medellín, por favor.",
+        "Para Medellín. Dos tiquetes, por favor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "para medell[ií]n",
+          "flags": "i",
+          "label": "where you're headed takes para: para Medellín"
+        }
+      ],
+      "focus": "g:por-para-1",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Listo. ¿Sencillo o ida y vuelta?",
+      "npcEn": "Fine. Single or return?",
+      "intent": "Say return, because you come back on Monday.",
+      "accept": [
+        "Ida y vuelta. Volvemos el lunes.",
+        "De ida y vuelta, por favor. Volvemos el lunes.",
+        "Ida y vuelta, porque volvemos el lunes."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "ida y vuelta",
+          "flags": "i",
+          "label": "a return ticket: ida y vuelta"
+        }
+      ],
+      "focus": "c:ida-y-vuelta",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Muy bien. ¿A nombre de quién?",
+      "npcEn": "Very good. In whose name?",
+      "intent": "Say in the name of Tomás Herrera, and ask what time the bus leaves.",
+      "accept": [
+        "A nombre de Tomás Herrera. ¿A qué hora sale el bus?",
+        "A nombre de Tomás Herrera, por favor. ¿Y a qué hora sale el bus?",
+        "Tomás Herrera. ¿A qué hora sale?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "a qu[eé] hora sale",
+          "flags": "i",
+          "label": "what time does it leave: ¿a qué hora sale?"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "c:a-nombre-de",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "A las seis. Aquí están los dos tiquetes. ¿Se los doy a usted o a su amiga?",
+      "npcEn": "At six. Here are the two tickets. Shall I give them to you or to your friend?",
+      "intent": "Tell him to give them to you, please.",
+      "accept": [
+        "Démelos a mí, por favor.",
+        "A mí. Démelos, por favor.",
+        "Démelos, por favor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bd[eé]melos\\b",
+          "flags": "i",
+          "label": "give them to me: démelos (me and los ride on the end)"
+        }
+      ],
+      "focus": "g:commands-with-pronouns",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Con gusto. Ah, señor, ¿y este celular? Estaba aquí, en la ventanilla. ¿Es suyo?",
+      "npcEn": "My pleasure. Oh, sir, and this phone? It was here, at the window. Is it yours?",
+      "intent": "Say yes, it's yours, and thank him a lot.",
+      "accept": [
+        "¡Sí, es mío! Muchas gracias.",
+        "Ay, sí, es mío. Muchas gracias, señor.",
+        "Sí, señor, es mío. ¡Mil gracias!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bes m[ií]o\\b",
+          "flags": "i",
+          "label": "it's mine: es mío (not es mi)"
+        }
+      ],
+      "focus": "g:possessives-stressed",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "De nada. El bus sale por la puerta cinco. ¡Buen viaje!",
+      "npcEn": "You're welcome. The bus leaves from gate five. Have a good trip!",
+      "intent": "Thank him for everything and say goodbye.",
+      "accept": [
+        "Gracias por todo. Hasta luego.",
+        "Muchas gracias por todo, señor. Chao.",
+        "¡Gracias por todo! Hasta luego, señor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "gracias por",
+          "flags": "i",
+          "label": "thanks for something takes por: gracias por todo"
+        }
+      ],
+      "focus": "g:por-para-1",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-nombre-de",
+    "c:a-que-hora",
+    "c:bien-y-tu",
+    "c:buen-viaje",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:ida-y-vuelta",
+    "c:por-favor",
+    "c:porque",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:ser-identity",
+    "g:yo-irregular",
+    "l:amiga",
+    "l:aquí",
+    "l:bien",
+    "l:buen",
+    "l:bueno",
+    "l:bus",
+    "l:celular",
+    "l:dar",
+    "l:día",
+    "l:dónde",
+    "l:estar",
+    "l:favor",
+    "l:gusto",
+    "l:hora",
+    "l:ida",
+    "l:listo",
+    "l:lunes",
+    "l:necesitar",
+    "l:nombre",
+    "l:puerta",
+    "l:quién",
+    "l:qué",
+    "l:salir",
+    "l:sencillo",
+    "l:ser",
+    "l:señor",
+    "l:siguiente",
+    "l:tiquete",
+    "l:ventanilla",
+    "l:viajar",
+    "l:viaje",
+    "l:volver",
+    "l:vuelta",
+    "p:aqui-ahi-alla",
+    "p:days-el-lunes",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:question-word-order",
+    "p:request-ladder",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ]
+}
