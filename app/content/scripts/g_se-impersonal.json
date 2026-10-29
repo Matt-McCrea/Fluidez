@@ -6,26 +6,112 @@
     "en": "Experienced waiter wanted."
   },
   "examples": [
-    { "es": "Se necesita mesero.", "en": "Waiter needed." },
-    { "es": "Aquí se habla inglés.", "en": "English is spoken here." },
-    { "es": "¿Se puede pagar con tarjeta?", "en": "Can you pay by card?" },
-    { "es": "En este café se come muy bien.", "en": "You eat really well in this café." },
-    { "es": "No se habla inglés aquí.", "en": "English isn't spoken here." },
-    { "es": "En Bogotá se toma mucho tinto.", "en": "In Bogotá people drink a lot of black coffee." },
-    { "es": "Se vende carro.", "en": "Car for sale." }
+    {
+      "es": "Se necesita mesero.",
+      "en": "Waiter needed."
+    },
+    {
+      "es": "Aquí se habla inglés.",
+      "en": "English is spoken here."
+    },
+    {
+      "es": "¿Se puede pagar con tarjeta?",
+      "en": "Can you pay by card?"
+    },
+    {
+      "es": "En este café se come muy bien.",
+      "en": "You eat really well in this café."
+    },
+    {
+      "es": "No se habla inglés aquí.",
+      "en": "English isn't spoken here."
+    },
+    {
+      "es": "En Bogotá se toma mucho tinto.",
+      "en": "In Bogotá people drink a lot of black coffee."
+    },
+    {
+      "es": "Se vende carro.",
+      "en": "Car for sale."
+    }
   ],
   "rule": "Sometimes nobody in particular is doing the action. English fills the gap with you, people, one, or a passive: English is spoken here, you eat well here.\n\nSpanish just puts *se* in front of the he/she form of the verb:\n*se habla*: is spoken, people speak\n*se necesita*: is needed\n*se come*: you eat, people eat\n*se puede*: you can, it's OK to\n\nThe verb stays in the he/she form whoever you mean, because you don't mean anyone. Without *se*, it's about one person: *Necesita mesero* is he or she needs a waiter.\n\n*No* goes before *se*: *No se habla inglés*. After *se puede*, the next verb is the dictionary form: *¿Se puede pagar con tarjeta?*\n\nWith more than one thing, the verb goes plural: *se vende carro*, but *se venden carros*.",
   "smallPrint": "Teachers call this the impersonal *se* (and, when the verb agrees with a thing, the passive *se*). It's how signs, ads and rules talk.",
   "readAndPick": [
-    { "es": "Aquí se habla inglés.", "options": ["English is spoken here.", "He speaks English here."], "answer": 0 },
-    { "es": "Aquí habla inglés.", "options": ["English is spoken here.", "He speaks English here."], "answer": 1 },
-    { "es": "Necesita mesero.", "options": ["She needs a waiter.", "Waiter needed."], "answer": 0 },
-    { "es": "Se necesita mesero.", "options": ["She needs a waiter.", "Waiter needed."], "answer": 1 },
-    { "es": "En Bogotá se toma mucho tinto.", "options": ["In Bogotá he drinks a lot of black coffee.", "In Bogotá people drink a lot of black coffee."], "answer": 1 },
-    { "es": "En este café se come muy bien.", "options": ["You eat really well in this café.", "She eats really well in this café."], "answer": 0 },
-    { "es": "Necesita ayuda.", "options": ["Help needed.", "He needs help.", "We need help."], "answer": 1 },
-    { "es": "Se necesita ayuda.", "options": ["Help needed.", "He needs help.", "We need help."], "answer": 0 },
-    { "es": "No se habla inglés aquí.", "options": ["He doesn't speak English here.", "English isn't spoken here."], "answer": 1 }
+    {
+      "es": "Aquí se habla inglés.",
+      "options": [
+        "English is spoken here.",
+        "He speaks English here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aquí habla inglés.",
+      "options": [
+        "English is spoken here.",
+        "He speaks English here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Necesita mesero.",
+      "options": [
+        "She needs a waiter.",
+        "Waiter needed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se necesita mesero.",
+      "options": [
+        "She needs a waiter.",
+        "Waiter needed."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En Bogotá se toma mucho tinto.",
+      "options": [
+        "In Bogotá he drinks a lot of black coffee.",
+        "In Bogotá people drink a lot of black coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En este café se come muy bien.",
+      "options": [
+        "You eat really well in this café.",
+        "She eats really well in this café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Necesita ayuda.",
+      "options": [
+        "Help needed.",
+        "He needs help.",
+        "We need help."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se necesita ayuda.",
+      "options": [
+        "Help needed.",
+        "He needs help.",
+        "We need help."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No se habla inglés aquí.",
+      "options": [
+        "He doesn't speak English here.",
+        "English isn't spoken here."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
@@ -37,19 +123,26 @@
     {
       "prompt": "Choose *se habla* or *habla* and type the whole sentence. A sign by the door: Aquí ___ inglés.",
       "answer": "Aquí se habla inglés.",
-      "accept": ["Se habla inglés aquí."],
+      "accept": [
+        "Se habla inglés aquí."
+      ],
       "why": "Nobody in particular is speaking, so *se* goes in front."
     },
     {
       "prompt": "Write a sign for a shop: Spanish spoken here.",
       "answer": "Aquí se habla español.",
-      "accept": ["Se habla español aquí.", "Se habla español."],
+      "accept": [
+        "Se habla español aquí.",
+        "Se habla español."
+      ],
       "why": "Is spoken is just *se habla*."
     },
     {
       "prompt": "Write an ad for your car: Car for sale.",
       "answer": "Se vende carro.",
-      "accept": ["Se vende un carro."],
+      "accept": [
+        "Se vende un carro."
+      ],
       "why": "For sale is *se vende*, the he/she form with *se*."
     },
     {
@@ -61,13 +154,17 @@
     {
       "prompt": "Make it negative: *Aquí se habla inglés.*",
       "answer": "Aquí no se habla inglés.",
-      "accept": ["No se habla inglés aquí."],
+      "accept": [
+        "No se habla inglés aquí."
+      ],
       "why": "*No* goes in front of *se*, never between *se* and the verb."
     },
     {
       "prompt": "Turn it into a fact about everyone, not just Tomás: *Tomás come muy bien en este café.*",
       "answer": "En este café se come muy bien.",
-      "accept": ["Se come muy bien en este café."],
+      "accept": [
+        "Se come muy bien en este café."
+      ],
       "why": "Drop the person and put *se* in front of the verb."
     }
   ],
@@ -83,9 +180,9 @@
       "why": "Without *se*, it says she or he needs a waiter, not that the café does."
     },
     {
-      "wrong": "Se vendo carro.",
+      "wrong": "Carro es vendido.",
       "right": "Se vende carro.",
-      "why": "With *se*, the verb is always the he/she form, even if it's your own car."
+      "why": "English says is sold or for sale, but Spanish doesn't build it that way: it just puts *se* in front, *se vende*."
     },
     {
       "wrong": "¿Se puede pago con tarjeta?",
@@ -93,5 +190,5 @@
       "why": "After *se puede*, the next verb stays in its dictionary form."
     }
   ],
-  "personal": "Write two signs for a place you know well, your home, your office or your street: one thing people do there and one thing you can't do. *En mi casa se come…* and *En mi oficina no se puede…*"
+  "personal": "Write two signs for a place you know well (your home, your office or your street): one thing people do there and one thing you can't do. *En mi casa se come…* and *En mi oficina no se puede…*"
 }

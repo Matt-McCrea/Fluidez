@@ -6,26 +6,110 @@
     "en": "I like coffee, but I don't drink coffee at night."
   },
   "examples": [
-    { "es": "Me gusta el café.", "en": "I like coffee." },
-    { "es": "El trabajo es importante, pero la familia es más importante.", "en": "Work is important, but family is more important." },
-    { "es": "Los colombianos toman mucho tinto.", "en": "Colombians drink a lot of black coffee." },
-    { "es": "No tengo plata.", "en": "I don't have any money." },
-    { "es": "¿Hay pan?", "en": "Is there any bread?" },
-    { "es": "Mariana es periodista.", "en": "Mariana is a journalist." },
-    { "es": "Los sábados trabajo en el café.", "en": "On Saturdays I work in the café." }
+    {
+      "es": "Me gusta el café.",
+      "en": "I like coffee."
+    },
+    {
+      "es": "El trabajo es importante, pero la familia es más importante.",
+      "en": "Work is important, but family is more important."
+    },
+    {
+      "es": "Los colombianos toman mucho tinto.",
+      "en": "Colombians drink a lot of black coffee."
+    },
+    {
+      "es": "No tengo plata.",
+      "en": "I don't have any money."
+    },
+    {
+      "es": "¿Hay pan?",
+      "en": "Is there any bread?"
+    },
+    {
+      "es": "Mariana es periodista.",
+      "en": "Mariana is a journalist."
+    },
+    {
+      "es": "Los sábados trabajo en el café.",
+      "en": "On Saturdays I work in the café."
+    }
   ],
-  "rule": "English and Spanish flip the switch the other way round.\n\nFor a thing in general, all coffee, work as such, Colombians as a whole, Spanish adds *el*, *la*, *los* or *las*, where English has nothing:\n*Me gusta el café.* *El trabajo es importante.*\n\nFor some, an amount you don't count, Spanish has nothing, where English often says some or any:\n*No tomo café por la noche.* *¿Hay pan?* *No tengo plata.*\n\nSo *compré pan* is I bought some bread, and *compré el pan* is I bought the bread, the one we both know about.\n\nThree you've met already: jobs after *ser* go bare (*Soy ingeniero*), days take *el* or *los* (*los lunes*), hours take *la* or *las* (*Es la una*).\n\nQuick test: if English could add in general, Spanish wants the article.",
+  "rule": "Here English and Spanish work the opposite way.\n\nFor a thing in general (coffee, work, Colombians as a whole), Spanish adds *el*, *la*, *los* or *las*, where English has nothing:\n*Me gusta el café.* *El trabajo es importante.*\n\nFor some, an amount you don't count, Spanish has nothing, where English often says some or any:\n*No tomo café por la noche.* *¿Hay pan?* *No tengo plata.*\n\nSo *compré pan* is I bought some bread, and *compré el pan* is I bought the bread, the one we both know about.\n\nThree you've met already: jobs after *ser* go bare (*Soy ingeniero*), days take *el* or *los* (*los lunes*), hours take *la* or *las* (*Es la una*).\n\nQuick test: if English could add in general, Spanish wants the article.",
   "smallPrint": "Teachers call the first one the generic use of the definite article, and a noun with no article at all a bare noun.",
   "readAndPick": [
-    { "es": "Compré pan.", "options": ["I bought some bread.", "I bought the bread."], "answer": 0 },
-    { "es": "Compré el pan.", "options": ["I bought some bread.", "I bought the bread."], "answer": 1 },
-    { "es": "Soy ingeniero.", "options": ["I'm the engineer.", "I'm an engineer."], "answer": 1 },
-    { "es": "Soy el ingeniero.", "options": ["I'm the engineer.", "I'm an engineer."], "answer": 0 },
-    { "es": "Los lunes trabajo.", "options": ["On Monday I'm working.", "On Mondays I work."], "answer": 1 },
-    { "es": "El lunes trabajo.", "options": ["On Monday I'm working.", "On Mondays I work."], "answer": 0 },
-    { "es": "¿Hay agua?", "options": ["Where's the water?", "Is there any water?"], "answer": 1 },
-    { "es": "Tomo café todos los días.", "options": ["I drink the coffee every day.", "I drink coffee every day."], "answer": 1 },
-    { "es": "Me gustan los perros.", "options": ["I like dogs.", "I like some dogs."], "answer": 0 }
+    {
+      "es": "Compré pan.",
+      "options": [
+        "I bought some bread.",
+        "I bought the bread."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Compré el pan.",
+      "options": [
+        "I bought some bread.",
+        "I bought the bread."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Soy ingeniero.",
+      "options": [
+        "I'm the engineer.",
+        "I'm an engineer."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Soy el ingeniero.",
+      "options": [
+        "I'm the engineer.",
+        "I'm an engineer."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los lunes trabajo.",
+      "options": [
+        "On Monday I'm working.",
+        "On Mondays I work."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El lunes trabajo.",
+      "options": [
+        "On Monday I'm working.",
+        "On Mondays I work."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Hay agua?",
+      "options": [
+        "Where's the water?",
+        "Is there any water?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomo café todos los días.",
+      "options": [
+        "I drink the coffee every day.",
+        "I drink coffee every day."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me gustan los perros.",
+      "options": [
+        "I like dogs.",
+        "I like some dogs."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
     {
@@ -49,13 +133,18 @@
     {
       "prompt": "Say: I don't drink coffee at night.",
       "answer": "No tomo café por la noche.",
-      "accept": ["No tomo café en la noche."],
+      "accept": [
+        "No tomo café en la noche.",
+        "No tomo café de noche."
+      ],
       "why": "Any coffee at all, an amount, so no article."
     },
     {
       "prompt": "Say: On Saturdays I work in the café.",
       "answer": "Los sábados trabajo en el café.",
-      "accept": ["Trabajo en el café los sábados."],
+      "accept": [
+        "Trabajo en el café los sábados."
+      ],
       "why": "Every Saturday is *los sábados*, no word for on."
     },
     {

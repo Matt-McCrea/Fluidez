@@ -1,29 +1,106 @@
 {
   "node": "p:presentation-frame",
   "hook": {
-    "line": "Tomás has to stand up at the neighbourhood meeting and talk about the café for two minutes. The good news: almost every short talk in Spanish runs on the same handful of lines.",
-    "es": "Buenos días a todos. Hoy les voy a hablar de mi café.",
-    "en": "Good morning, everyone. Today I'm going to talk to you about my café."
+    "line": "Jhon Fredy, the new waiter, has called everyone to a meeting at half past five in the morning to give a talk about the coffee machine. The good news: almost every short talk in Spanish runs on the same handful of lines.",
+    "es": "Buenos días a todos. Hoy les voy a hablar de la máquina de café.",
+    "en": "Good morning, everyone. Today I'm going to talk to you about the coffee machine."
   },
   "examples": [
-    { "es": "Hoy les voy a hablar de Bogotá.", "en": "Today I'm going to talk to you about Bogotá." },
-    { "es": "En primer lugar, el café tiene cien años.", "en": "First of all, the café is a hundred years old." },
-    { "es": "Además, la ciudad tiene muchos museos.", "en": "Also, the city has lots of museums." },
-    { "es": "Por último, el café abre a las seis.", "en": "Finally, the café opens at six." },
-    { "es": "Para terminar, les voy a mostrar unas fotos.", "en": "To finish, I'm going to show you some photos." },
-    { "es": "Muchas gracias. ¿Alguna pregunta?", "en": "Thank you very much. Any questions?" }
+    {
+      "es": "Hoy les voy a hablar de Bogotá.",
+      "en": "Today I'm going to talk to you about Bogotá."
+    },
+    {
+      "es": "En primer lugar, el café tiene cien años.",
+      "en": "First of all, the café is a hundred years old."
+    },
+    {
+      "es": "Además, la ciudad tiene muchos museos.",
+      "en": "Also, the city has lots of museums."
+    },
+    {
+      "es": "Por último, el café abre a las seis.",
+      "en": "Finally, the café opens at six."
+    },
+    {
+      "es": "Para terminar, les voy a mostrar unas fotos.",
+      "en": "To finish, I'm going to show you some photos."
+    },
+    {
+      "es": "Muchas gracias. ¿Alguna pregunta?",
+      "en": "Thank you very much. Any questions?"
+    }
   ],
   "rule": "A short talk has three parts, and each part has its line.\nOpen: *Buenos días a todos. Hoy les voy a hablar de…*\nMiddle, two or three points: *En primer lugar…*, *Además…*, *Por último…*\nClose: *Para terminar…*, *Muchas gracias. ¿Alguna pregunta?*\n\n*Les* means to you all, so the room is in the sentence. In Spain you'll hear *os*; in Latin America it's always *les*.\n\nLet a photo carry the names and numbers. Your Spanish only has to link the points.",
   "smallPrint": "Teachers call these discourse markers: words that show where you are in a talk.",
   "readAndPick": [
-    { "es": "En primer lugar, el café tiene cien años.", "options": ["Opening the talk", "Making the first point", "Closing the talk"], "answer": 1 },
-    { "es": "Para terminar, les voy a mostrar unas fotos.", "options": ["Making the first point", "Closing the talk"], "answer": 1 },
-    { "es": "Buenos días a todos.", "options": ["Opening the talk", "Closing the talk"], "answer": 0 },
-    { "es": "Además, aquí trabajan cuatro personas.", "options": ["Adding another point", "Asking for questions", "Opening the talk"], "answer": 0 },
-    { "es": "Hoy les voy a hablar de mi trabajo.", "options": ["Today they're going to talk about my work.", "Today I'm going to talk to you all about my work."], "answer": 1 },
-    { "es": "Por último, el café abre a las seis.", "options": ["First of all, the café opens at six.", "Also, the café opens at six.", "Finally, the café opens at six."], "answer": 2 },
-    { "es": "Hoy le voy a hablar de mi café.", "options": ["Talking to a whole room", "Talking to one person (formal)"], "answer": 1 },
-    { "es": "Hoy les voy a hablar de mi café.", "options": ["Talking to a whole room", "Talking to one person (formal)"], "answer": 0 }
+    {
+      "es": "En primer lugar, el café tiene cien años.",
+      "options": [
+        "Opening the talk",
+        "Making the first point",
+        "Closing the talk"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Para terminar, les voy a mostrar unas fotos.",
+      "options": [
+        "Making the first point",
+        "Closing the talk"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Buenos días a todos.",
+      "options": [
+        "Opening the talk",
+        "Closing the talk"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Además, aquí trabajan cuatro personas.",
+      "options": [
+        "Adding another point",
+        "Asking for questions",
+        "Opening the talk"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hoy les voy a hablar de mi trabajo.",
+      "options": [
+        "Today they're going to talk about my work.",
+        "Today I'm going to talk to you all about my work."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por último, el café abre a las seis.",
+      "options": [
+        "First of all, the café opens at six.",
+        "Also, the café opens at six.",
+        "Finally, the café opens at six."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hoy le voy a hablar de mi café.",
+      "options": [
+        "Talking to a whole room",
+        "Talking to one person (formal)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hoy les voy a hablar de mi café.",
+      "options": [
+        "Talking to a whole room",
+        "Talking to one person (formal)"
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
     {
@@ -41,7 +118,9 @@
     {
       "prompt": "Say to the room: Today I'm going to talk to you about Bogotá.",
       "answer": "Hoy les voy a hablar de Bogotá.",
-      "accept": ["Hoy les voy a hablar sobre Bogotá."],
+      "accept": [
+        "Hoy les voy a hablar sobre Bogotá."
+      ],
       "why": "*Les* puts the audience in the sentence; about is *de*."
     },
     {
@@ -59,13 +138,18 @@
     {
       "prompt": "Start to wrap up: To finish, I'm going to show you all some photos.",
       "answer": "Para terminar, les voy a mostrar unas fotos.",
-      "accept": ["Para terminar, voy a mostrarles unas fotos."],
+      "accept": [
+        "Para terminar, voy a mostrarles unas fotos."
+      ],
       "why": "*Para terminar* signals the end; *les* is you all again."
     },
     {
       "prompt": "Close: Thank you very much. Any questions?",
       "answer": "Muchas gracias. ¿Alguna pregunta?",
-      "accept": ["Muchas gracias. ¿Algunas preguntas?", "Gracias. ¿Alguna pregunta?"],
+      "accept": [
+        "Muchas gracias. ¿Algunas preguntas?",
+        "Gracias. ¿Alguna pregunta?"
+      ],
       "why": "*¿Alguna pregunta?* is the standard way to hand the floor over."
     }
   ],

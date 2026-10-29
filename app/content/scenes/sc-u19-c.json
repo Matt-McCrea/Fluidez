@@ -2,7 +2,7 @@
   "id": "sc-u19-c",
   "unit": "u19",
   "title": "A number you don't know",
-  "brief": "You're Tomás. The café phone rings and the caller asks for you by name. Answer it, take a message if you need to, and listen to what she has to say. She's a friend, so use tú.",
+  "brief": "You're Tomás. The café phone rings, the number is one you don't know, and the caller asks for you by name. Answer it, offer to take a message if you need to, and listen to what she has to say. It turns out to be a friend, so use tú with her.",
   "turns": [
     {
       "id": "t1",
@@ -79,8 +79,8 @@
     },
     {
       "id": "t4",
-      "npc": "Pues escucha. Una persona de Altamira vino a tu café el lunes, y hoy llegó el inspector. No es casualidad.",
-      "npcEn": "Well, listen. Someone from Altamira came to your café on Monday, and today the inspector turned up. It's no coincidence.",
+      "npc": "Pues escucha. Ricardo Altamira vino a tu café el lunes, y hoy llegó el inspector. No es casualidad.",
+      "npcEn": "Well, listen. Ricardo Altamira came to your café on Monday, and today the inspector turned up. It's no coincidence.",
       "intent": "Say what she's telling you is very serious, and ask what you can do.",
       "accept": [
         "Lo que dices es muy serio. ¿Qué puedo hacer?",
@@ -105,7 +105,7 @@
     {
       "id": "t5",
       "npc": "Primero, los permisos. Conozco a una señora en la Alcaldía. ¿Puedes ir conmigo el jueves a las nueve?",
-      "npcEn": "First, the permits. I know a woman at the council. Can you go with me on Thursday at nine?",
+      "npcEn": "First, the permits. I know a woman at the council. Can you come with me on Thursday at nine?",
       "intent": "Say you can't on Thursday, because on Thursdays you work alone, and suggest Friday.",
       "accept": [
         "El jueves no puedo. Los jueves trabajo solo. ¿El viernes?",
@@ -210,7 +210,6 @@
     "l:nuevo",
     "l:parte",
     "l:permiso",
-    "l:persona",
     "l:poder",
     "l:querer",
     "l:quién",

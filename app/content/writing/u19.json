@@ -63,7 +63,7 @@
   {
     "id": "w-u19-02",
     "unit": "u19",
-    "prompt": "You answer the café phone and a stranger asks for you. Write what you say: answer the call, ask who is calling (usted), and ask them to hold a moment.",
+    "prompt": "You answer the café phone and a stranger (usted) asks for Vale. Write what you say: answer the call, ask who is calling, and ask them to hold a moment while you get her.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -90,39 +90,41 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "¿Aló? Buenas tardes. Sí, con él. ¿De parte de quién? Un momentico, por favor. Ya se lo paso, ¿está bien? Es solo un momento, por favor.",
+    "model": "¿Aló? Buenas tardes. ¿Vale? Sí, aquí está. ¿De parte de quién? Un momentico, por favor, voy a buscarla. Está en la cocina con las almojábanas, pero ya viene.",
     "focus": "c:alo",
     "requires": [
       "c:alo",
-      "c:bien-y-tu",
-      "c:con-el-ella",
       "c:de-parte-de-quien",
       "c:hola-buenos-dias",
       "c:por-favor",
       "c:un-momentico",
+      "c:voy-a",
       "g:diminutives",
+      "g:direct-objects",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:bien",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
+      "g:stem-boot",
+      "l:almojábana",
+      "l:aquí",
       "l:buena",
+      "l:buscar",
+      "l:cocina",
       "l:estar",
       "l:favor",
-      "l:momento",
+      "l:ir",
       "l:parte",
-      "l:pasar",
       "l:quién",
-      "l:ser",
       "l:tarde",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
-      "p:sobre-todo-solo"
+      "l:venir",
+      "p:aqui-ahi-alla"
     ]
   },
   {
     "id": "w-u19-03",
     "unit": "u19",
-    "prompt": "Text your neighbour who runs the bakery next door (someone your age). Ask whether one can pay by card there and whether one can leave the car in front.",
+    "prompt": "Text your neighbour who runs the bakery next door (someone your age). Ask whether customers can pay by card there and whether they can leave the car in front.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -139,26 +141,29 @@
         "n": 3
       }
     ],
-    "model": "Hola, Camila. ¿Se puede pagar con tarjeta en tu panadería? Otra pregunta: ¿se puede dejar el carro enfrente? Muchas gracias por tu ayuda, de verdad.",
+    "model": "Hola, Camila. Mañana voy con unos clientes a tu panadería. ¿Se puede pagar con tarjeta? Otra pregunta: ¿se puede dejar el carro enfrente un rato? Mil gracias, de verdad.",
     "focus": "c:se-puede",
     "requires": [
       "c:en-serio",
-      "c:gracias-de-nada",
       "c:hola-buenos-dias",
       "c:se-puede",
       "c:tarjeta-o-efectivo",
+      "c:voy-vas",
       "g:gender-articles",
+      "g:ir-a-plans",
       "g:verb-infinitive",
-      "l:ayuda",
       "l:carro",
+      "l:cliente",
       "l:dejar",
+      "l:ir",
+      "l:mañana",
       "l:pagar",
       "l:panadería",
       "l:poder",
       "l:pregunta",
+      "l:rato",
       "l:tarjeta",
       "l:verdad",
-      "p:gracias-por",
       "p:otro-no-article",
       "p:possessives-basic",
       "p:se-puede-me-dejas"
@@ -182,34 +187,36 @@
         "label": "say what you cannot do"
       }
     ],
-    "model": "Vale, lo que necesito es tu ayuda el sábado. No puedo cuidar la cocina y la caja. Lo que necesito también es una persona más.",
+    "model": "Vale, el sábado va a ser un día loco. Lo que necesito es tu ayuda en la caja desde las siete. Yo solo no puedo con la cocina y las mesas. ¡Gracias!",
     "focus": "g:relatives-donde-lo-que",
     "requires": [
+      "c:gracias-de-nada",
       "c:puedo",
       "g:gender-articles",
+      "g:ir-a-plans",
       "g:present-ar",
       "g:relatives-donde-lo-que",
       "g:ser-identity",
       "g:stem-boot",
-      "g:verb-infinitive",
       "l:ayuda",
       "l:caja",
       "l:cocina",
-      "l:cuidar",
+      "l:día",
+      "l:ir",
+      "l:loco",
+      "l:mesa",
       "l:necesitar",
-      "l:persona",
       "l:poder",
       "l:ser",
       "l:sábado",
       "p:days-el-lunes",
-      "p:lo-que-cosa-que",
       "p:possessives-basic"
     ]
   },
   {
     "id": "w-u19-05",
     "unit": "u19",
-    "prompt": "Your new employee Jhon Fredy asks about the café. Write him two or three sentences about the place where you work and where it is, as a friend would.",
+    "prompt": "Your cousin in Toronto asks about your new life. Write two or three sentences about the place where you work: where it is, and whose it was before.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -227,28 +234,32 @@
         ]
       }
     ],
-    "model": "El café es el lugar donde trabajo todos los días. Está en La Candelaria, en una calle pequeña y bonita. Es también la casa donde vivía mi abuela Rosa.",
+    "model": "El café es el lugar donde trabajo todos los días. Está en La Candelaria, en una calle pequeña y bonita. Antes era el café de mi abuela Rosa, donde todo el barrio tomaba tinto.",
     "focus": "g:relatives-donde-lo-que",
     "requires": [
+      "c:era",
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:present-ar",
       "g:relatives-donde-lo-que",
       "g:ser-identity",
       "l:abuela",
+      "l:antes",
+      "l:barrio",
       "l:bonito",
       "l:café",
       "l:calle",
-      "l:casa",
       "l:día",
       "l:estar",
       "l:lugar",
       "l:pequeño",
       "l:ser",
+      "l:tinto",
+      "l:tomar",
       "l:trabajar",
-      "l:vivir",
       "p:possessives-basic",
       "p:todos-los-dias",
       "p:veces-al"
@@ -257,7 +268,7 @@
   {
     "id": "w-u19-06",
     "unit": "u19",
-    "prompt": "Tell Mariana (your age) about the man from the city council who came by. Say what he said and what he wants, using lo que.",
+    "prompt": "Write to Mariana (tú). Say you talked to the inspector from the council, then tell her what he said and what he wants, using lo que.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -272,7 +283,7 @@
         "tense": "preterito"
       }
     ],
-    "model": "Mariana, hablé con el señor de la ciudad. Lo que dijo no me gusta nada. Lo que quiere es ver todos los permisos del café, y hoy no los tengo.",
+    "model": "Mariana, hablé con el inspector de la Alcaldía. Lo que dijo no me gusta nada. Lo que quiere es ver todos los permisos del café, y no los tengo todos.",
     "focus": "g:relatives-donde-lo-que",
     "requires": [
       "c:me-gusta",
@@ -289,15 +300,13 @@
       "g:stem-boot",
       "g:yo-irregular",
       "l:café",
-      "l:ciudad",
       "l:decir",
       "l:gustar",
       "l:hablar",
-      "l:hoy",
+      "l:inspector",
       "l:permiso",
       "l:querer",
       "l:ser",
-      "l:señor",
       "l:tener",
       "l:ver"
     ]
@@ -305,7 +314,7 @@
   {
     "id": "w-u19-07",
     "unit": "u19",
-    "prompt": "Fill in the notary's form about Jhon Fredy. Say he is a student of computing, then say what job he does on Saturdays. Do not put un before the job.",
+    "prompt": "Fill in the staff card for Jhon Fredy, the new waiter. Say he is a student, what he works as, and one day of the week with los (los sábados…). No un or una before a job.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -324,33 +333,35 @@
       },
       {
         "type": "regex",
-        "pattern": "\\blos (sábados|lunes|martes|domingos)\\b",
-        "label": "on Saturdays: los sábados"
+        "pattern": "\\blos (lunes|martes|miércoles|jueves|viernes|sábados|domingos)\\b",
+        "label": "a day every week: los sábados, los lunes…"
       }
     ],
-    "model": "Jhon Fredy es estudiante de computación. Los sábados trabaja de mesero en el café. Es joven, pero trabaja muy rápido y siempre llega a las ocho.",
+    "model": "Jhon Fredy es estudiante: estudia para ser ingeniero. Trabaja de mesero en el café de lunes a viernes, de seis a dos. Los sábados no trabaja. Es joven, pero trabaja muy rápido.",
     "focus": "g:article-uses",
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
       "l:café",
-      "l:computación",
       "l:estudiante",
+      "l:estudiar",
+      "l:ingeniero",
       "l:joven",
-      "l:llegar",
+      "l:lunes",
       "l:mesero",
       "l:rápido",
       "l:ser",
-      "l:siempre",
       "l:sábado",
       "l:trabajar",
+      "l:viernes",
       "p:days-el-lunes",
+      "p:desde-hasta",
       "p:es-tiene-lleva",
-      "p:frequency-scale",
+      "p:para-inf",
+      "p:para-inf-purpose",
       "p:quantifiers-basic",
       "p:ser-profession-no-article",
-      "p:telling-time",
       "p:trabajar-de"
     ]
   },
@@ -464,7 +475,7 @@
   {
     "id": "w-u19-10",
     "unit": "u19",
-    "prompt": "You give a short talk to a group of students about your café. Open with today's talk, add a point with además or para terminar, and end with thanks.",
+    "prompt": "You give a short talk to a group of students about your café. Open with Hoy les voy a hablar de…, make a point, add another with además, wrap up with para terminar, and end with thanks.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -483,7 +494,7 @@
         "word": "gracias"
       }
     ],
-    "model": "Buenos días a todos. Hoy les voy a hablar de mi café. Además, el café es un lugar muy antiguo y tiene clientes de muchos años. Para terminar, les voy a mostrar unas fotos. Muchas gracias.",
+    "model": "Buenos días a todos. Hoy les voy a hablar de mi café. Primero, el café tiene más de cuarenta años. Además, tiene clientes de toda la vida. Para terminar, les voy a mostrar unas fotos. Muchas gracias.",
     "focus": "p:presentation-frame",
     "requires": [
       "c:ademas",
@@ -491,13 +502,12 @@
       "c:hola-buenos-dias",
       "c:tienes",
       "c:voy-a",
+      "g:comparatives-advanced",
       "g:gender-articles",
       "g:indirect-objects",
       "g:ir-a-plans",
-      "g:ser-identity",
       "g:stem-boot",
       "l:además",
-      "l:antiguo",
       "l:año",
       "l:bueno",
       "l:café",
@@ -507,21 +517,22 @@
       "l:hablar",
       "l:hoy",
       "l:ir",
-      "l:lugar",
       "l:mostrar",
-      "l:ser",
       "l:tener",
       "l:terminar",
+      "l:vida",
       "p:a-lo-largo-de-esta-charla",
       "p:hoy-les-voy-a-hablar",
+      "p:mas-de-number",
       "p:para-inf",
       "p:para-inf-purpose",
       "p:para-terminar",
       "p:possessives-basic",
       "p:presentation-frame",
       "p:presenting-to-audience",
-      "p:quantifiers-basic",
-      "p:viejo-antiguo-mayor"
+      "p:tener-anos",
+      "p:time-sequence-basic",
+      "p:todos-los-dias"
     ]
   },
   {
@@ -590,7 +601,7 @@
         "n": 3
       }
     ],
-    "model": "Hola, Jhon. Te espero el lunes. En el café se trabaja de ocho a cuatro, con una hora para comer. Aquí no se come en la cocina. Se puede tomar un tinto cuando hay tiempo.",
+    "model": "Hola, Jhon Fredy. Te espero el lunes. En el café se trabaja de seis a dos, con media hora para desayunar. Aquí no se come en la cocina de Vale. Se puede tomar un tinto cuando hay tiempo.",
     "focus": "g:se-impersonal",
     "requires": [
       "c:hay",
@@ -607,6 +618,7 @@
       "l:café",
       "l:cocina",
       "l:comer",
+      "l:desayunar",
       "l:esperar",
       "l:hora",
       "l:lunes",

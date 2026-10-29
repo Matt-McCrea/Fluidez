@@ -2,15 +2,15 @@
   "id": "ch052",
   "unit": "u19",
   "title": "¿De parte de quién?",
-  "text": "Kilómetro doscientos. El bus subía otra montaña, y Vale dormía en el hombro de Tomás.\nTomás tenía un papel en la mano, con tres frases: «Tu mamá conocía a Rosa. Rosa buscaba a Joaquín. Tu mamá te mandó al café».\nTomás: Vale... Vale, tengo que contarte algo.\nVale: Cinco minutos más, mamá.\nEntonces sonó el celular de Vale. Tomás contestó.\nTomás: ¿Aló?\nHernando: ¿Aló? ¿Está Valentina?\nTomás: ¿De parte de quién?\nHernando: ¡De parte de Hernando Pacheco! ¿Ya no conoce a su amigo? ¿Y Tomás? ¿Está Tomás?\nTomás: Sí, con él.\nHernando: Mijo, aquí tenemos un problema. Gloria ya no ayuda en el café.\nTomás: ¿Por qué?\nHernando: Ayer Simón le gritó «¡chao, chao!» toda la mañana. Gloria dice que el loro la despidió.\nHernando: Y los clientes aparecen todo el día, mijo. Hoy hice cuarenta tintos, y tengo los dedos rojos. Necesitamos gente. Hay que contratar a alguien.\nSimón: ¿Aló? ¿Aló? ¿De parte de quién?\nHernando: Este loro se mete en todo.\nVale abrió los ojos.\nVale: ¿Quién era? ¿Y qué me ibas a contar?\nTomás miró el papel. Miró también los ojos de Vale, que eran los ojos de Beatriz.\nTomás: Que tu familia baila muy bien.\nTomás puso el papel en la chaqueta. Todavía no.\nEl lunes, a las seis de la mañana, ya había una fila en la puerta del café. Tomás escribió un letrero y lo puso en la ventana: «Se busca mesero. Se habla inglés».\nVale: ¿Inglés? Aquí nadie habla inglés. Bueno, tú.\nTomás: Exacto. Así se contrata a alguien interesante.\nCuando un cliente entraba, Simón gritaba: «¡Se busca mesero!».\nUn señor de ochenta años miró a Simón, y después a Tomás.\nSeñor: ¿Y cuánto paga, joven? ¿Aquí se trabaja sentado?",
+  "text": "Kilómetro doscientos. El bus subía otra montaña, y Vale dormía en el hombro de Tomás.\nTomás tenía un papel en la mano, con tres frases: «Tu mamá conocía a Rosa. Rosa buscaba a Joaquín. Tu mamá te mandó al café».\nTomás: Vale... Vale, tengo que contarte algo.\nVale: Cinco minutos más, mamá.\nEntonces sonó el celular de Vale. Tomás contestó.\nTomás: ¿Aló?\nHernando: ¿Aló? ¿Está Valentina?\nTomás: Está durmiendo. ¿De parte de quién?\nHernando: ¡De parte de Hernando Pacheco! ¿Y con quién hablo? ¿Con Tomás?\nTomás: Sí, con él.\nHernando: Mijo, aquí tenemos un problema. Gloria ya no ayuda en el café.\nTomás: ¿Por qué?\nHernando: Ayer Simón le gritó «¡chao, chao!» toda la mañana. Gloria dice que el loro la despidió. Y los clientes aparecen todo el día, mijo. Hoy hice cuarenta tintos, y tengo los dedos rojos. Necesitamos gente. Hay que contratar a alguien.\nSimón: ¿Aló? ¿Aló? ¿De parte de quién?\nHernando: Este loro se mete en todo.\nVale abrió los ojos.\nVale: ¿Quién era? ¿Y qué me ibas a contar?\nTomás miró el papel. Miró también los ojos de Vale, que eran los ojos de Beatriz.\nTomás: Que tu familia baila muy bien.\nTomás puso el papel en la chaqueta. Todavía no.\nEl lunes, a las seis de la mañana, ya había una fila en la puerta del café. Tomás escribió un letrero y lo puso en la ventana: «Se busca mesero. Se habla inglés».\nVale: ¿Inglés? Aquí nadie habla inglés. Bueno, tú.\nTomás: Exacto. Así se contrata a alguien interesante.\nCuando un cliente entraba, Simón gritaba: «¡Se busca mesero!».\nUn señor de ochenta años miró a Simón, y después a Tomás.\nSeñor: ¿Y cuánto paga, joven? ¿Aquí se trabaja sentado?",
   "gloss": [
     {
       "es": "loro",
       "en": "parrot"
     },
     {
-      "es": "¿Ya no conoce a su amigo?",
-      "en": "Don't you recognise your friend any more?"
+      "es": "¿Y con quién hablo?",
+      "en": "And who am I speaking to?"
     },
     {
       "es": "Sí, con él.",
@@ -139,6 +139,7 @@
     "c:ya-no",
     "g:adjective-agreement",
     "g:direct-objects",
+    "g:estar-gerund",
     "g:estar-location-states",
     "g:gender-articles",
     "g:imperfect-habitual",
@@ -185,7 +186,6 @@
   ],
   "lexemes": [
     "l:abrir",
-    "l:amigo",
     "l:aparecer",
     "l:aquí",
     "l:ayer",

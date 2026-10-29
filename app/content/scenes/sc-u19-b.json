@@ -1,13 +1,13 @@
 {
   "id": "sc-u19-b",
   "unit": "u19",
-  "title": "Ricardo Peña, from the council",
-  "brief": "You're Tomás. A man with a folder is standing at the café door on a quiet Tuesday morning. Find out what he wants and what you have to do. He's a stranger on official business, so use usted.",
+  "title": "Inspector Duarte, from the council",
+  "brief": "You're Tomás. A man with a folder is standing at the café door on a quiet Wednesday morning. Find out what he wants and what you have to do. He's a stranger on official business, so use usted.",
   "turns": [
     {
       "id": "t1",
-      "npc": "¿Se puede? Buenos días. Soy Ricardo Peña, inspector de la Alcaldía. Busco al dueño del café.",
-      "npcEn": "May I come in? Good morning. I'm Ricardo Peña, an inspector from the council. I'm looking for the owner of the café.",
+      "npc": "¿Se puede? Buenos días. Soy Álvaro Duarte, inspector de la Alcaldía. Busco al dueño del café.",
+      "npcEn": "May I come in? Good morning. I'm Álvaro Duarte, an inspector from the council. I'm looking for the owner of the café.",
       "intent": "Tell him to come in, and say you're the owner.",
       "accept": [
         "Siga, siga. Yo soy el dueño.",
@@ -23,7 +23,7 @@
           "label": "come in (to usted): siga"
         }
       ],
-      "focus": "c:se-puede",
+      "focus": "c:siga",
       "next": "t2"
     },
     {
@@ -99,8 +99,8 @@
     },
     {
       "id": "t5",
-      "npc": "Tiene treinta días. Aquí está la lista. Los papeles se piden en la Alcaldía, de lunes a viernes.",
-      "npcEn": "You have thirty days. Here's the list. You apply for the papers at the council, Monday to Friday.",
+      "npc": "Tiene quince días. Aquí está la lista. Los papeles se piden en la Alcaldía, de lunes a viernes.",
+      "npcEn": "You have fifteen days. Here's the list. You apply for the papers at the council, Monday to Friday.",
       "intent": "Ask if it can be done online.",
       "accept": [
         "¿Se puede hacer por internet?",
