@@ -1,0 +1,618 @@
+[
+  {
+    "id": "w-u04-01",
+    "unit": "u04",
+    "prompt": "Mariana, the journalist, texts you: what did you do at the market on Saturday? Write two or three things you did, all with I.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "say what you did in the past"
+      },
+      {
+        "type": "regex",
+        "pattern": "[a-záéíóúñ]é(?![a-záéíóúñ])",
+        "label": "at least one I form of an -ar verb (compré, caminé...)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "El sábado caminé en Paloquemao. Compré mangos y hablé con una vendedora.",
+    "focus": "g:preterite-ar",
+    "requires": [
+      "c:compre-trabaje",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:caminar",
+      "l:comprar",
+      "l:hablar",
+      "l:mango",
+      "l:sábado",
+      "l:vendedor"
+    ]
+  },
+  {
+    "id": "w-u04-02",
+    "unit": "u04",
+    "prompt": "Vale, your friend, asks how your weekend was. Answer her in two or three short sentences: say it was good, and one thing you did.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "muy bien",
+          "bien",
+          "tranquilo",
+          "nada especial"
+        ],
+        "label": "answer the question: how was it?"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "one thing you did, in the past"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Muy bien, gracias. El sábado trabajé en el café y el domingo comí con Vale.",
+    "focus": "c:que-tal-el-fin",
+    "requires": [
+      "c:bien-y-tu",
+      "c:comi",
+      "c:compre-trabaje",
+      "c:gracias-de-nada",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:bien",
+      "l:café",
+      "l:comer",
+      "l:domingo",
+      "l:sábado",
+      "l:trabajar"
+    ]
+  },
+  {
+    "id": "w-u04-03",
+    "unit": "u04",
+    "prompt": "A friend your age moved to Bogotá last year. Ask her two questions about yesterday: what she ate, and where she lived before. Use tú.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "comer",
+        "tense": "preterito",
+        "person": "tú"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "comes",
+          "comió",
+          "usted"
+        ],
+        "label": "use the tú past form of comer (comiste)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "¿Qué comiste ayer? ¿Y dónde viviste antes de Bogotá?",
+    "focus": "g:preterite-er-ir",
+    "requires": [
+      "c:ayer-anoche",
+      "g:preterite-er-ir",
+      "g:questions",
+      "l:antes",
+      "l:ayer",
+      "l:comer",
+      "l:dónde",
+      "l:qué",
+      "l:vivir"
+    ]
+  },
+  {
+    "id": "w-u04-04",
+    "unit": "u04",
+    "prompt": "Text Vale, your friend: tell her you called her last night, and that someone helped you at the café. Use te and me in your sentences.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bte llam",
+        "label": "te llamé (I called you)"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(me|nos) [a-záéíóúñ]+",
+        "label": "use me or nos before a verb"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Anoche te llamé. Hernando me ayudó con las mesas y nos vimos en el café.",
+    "focus": "p:me-te-nos-objects",
+    "requires": [
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:anoche",
+      "l:ayudar",
+      "l:café",
+      "l:llamar",
+      "l:mesa",
+      "l:ver",
+      "p:me-te-nos-objects"
+    ]
+  },
+  {
+    "id": "w-u04-05",
+    "unit": "u04",
+    "prompt": "Tell Don Hernando, a retired taxi driver and a friend, what you are going to do tomorrow at the market. Two or three sentences.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bvoy a [a-záéíóúñ]+(ar|er|ir)\\b",
+        "label": "voy a + infinitive"
+      },
+      {
+        "type": "containsWord",
+        "word": "mañana"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Mañana voy a comprar papas y tomates en la plaza. Después voy a llevar todo al café.",
+    "focus": "g:ir-a-plans",
+    "requires": [
+      "c:voy-a",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:café",
+      "l:comprar",
+      "l:después",
+      "l:ir",
+      "l:llevar",
+      "l:mañana",
+      "l:papa",
+      "l:plaza",
+      "l:tomate",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u04-06",
+    "unit": "u04",
+    "prompt": "You are at a stall in Paloquemao with an older vendor you'd call usted. Ask how much the pound of tomatoes is, then ask for a little discount.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "a cómo"
+      },
+      {
+        "type": "containsWord",
+        "word": "rebajita"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "haces"
+        ],
+        "label": "usted: ¿me hace...?"
+      }
+    ],
+    "model": "Buenos días. ¿A cómo está la libra de tomate? ¿Me hace una rebajita?",
+    "focus": "c:a-como-esta",
+    "requires": [
+      "c:a-como-esta",
+      "c:como-estas",
+      "c:hola-buenos-dias",
+      "c:me-hace-una-rebajita",
+      "g:diminutives",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:bueno",
+      "l:cómo",
+      "l:día",
+      "l:estar",
+      "l:hacer",
+      "l:libra",
+      "l:tomate"
+    ]
+  },
+  {
+    "id": "w-u04-07",
+    "unit": "u04",
+    "prompt": "Tell Mariana what Hernando's taxi-driver friends did on Saturday night: they arrived, ate and left. Use the they form of the verbs.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "comer",
+        "tense": "preterito",
+        "person": "ellos"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b[a-záéíóúñ]+(aron|ieron)\\b",
+        "label": "they form in the past (llegaron, comieron...)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Los amigos de Hernando llegaron a las siete. Comieron pan, tomaron tinto y salieron tarde.",
+    "focus": "g:preterite-er-ir",
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:amigo",
+      "l:comer",
+      "l:llegar",
+      "l:pan",
+      "l:salir",
+      "l:tarde",
+      "l:tinto",
+      "l:tomar"
+    ]
+  },
+  {
+    "id": "w-u04-08",
+    "unit": "u04",
+    "prompt": "A friend asks about the market. Say how much Hernando paid for something there, and ask how much it costs in her neighbourhood.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "pagó(?![a-záéíóúñ])",
+        "label": "pagó (he paid)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "cuesta",
+          "cuestan"
+        ],
+        "label": "cuesta or cuestan"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "Hernando pagó cinco mil pesos por la bolsa de mangos. ¿Cuánto cuestan en tu barrio?",
+    "focus": "p:costar-pagar",
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:questions",
+      "g:stem-boot",
+      "l:barrio",
+      "l:bolsa",
+      "l:costar",
+      "l:cuánto",
+      "l:mango",
+      "l:pagar",
+      "l:peso",
+      "p:costar-pagar",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u04-09",
+    "unit": "u04",
+    "prompt": "Tell Mariana where you went last weekend and what you are going to do next week.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "pasado"
+      },
+      {
+        "type": "containsWord",
+        "word": "que viene"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bfui\\b",
+        "label": "fui (I went)"
+      }
+    ],
+    "model": "El fin de semana pasado fui a Paloquemao. La semana que viene voy a viajar a Medellín.",
+    "focus": "p:time-pasado-que-viene",
+    "requires": [
+      "c:ayer-anoche",
+      "c:fui",
+      "c:voy-a",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:preterite-ser-ir-hacer",
+      "g:stem-boot",
+      "l:fin",
+      "l:ir",
+      "l:pasado",
+      "l:semana",
+      "l:venir",
+      "l:viajar",
+      "p:time-pasado-que-viene"
+    ]
+  },
+  {
+    "id": "w-u04-10",
+    "unit": "u04",
+    "prompt": "Leave a note for Vale, your friend, after the Saturday rush. Thank her for something she did, and say one thing she sold. Use tú.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "gracias por",
+        "label": "gracias por..."
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b[a-záéíóúñ]+(aste|iste)\\b",
+        "label": "a tú form in the past (vendiste...)"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "usted",
+          "su ayuda"
+        ],
+        "label": "tú, not usted"
+      }
+    ],
+    "model": "Vale, muchas gracias por tu ayuda el sábado. Vendiste pan y café para todos.",
+    "focus": "p:gracias-por",
+    "requires": [
+      "c:gracias-de-nada",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:ayuda",
+      "l:café",
+      "l:pan",
+      "l:sábado",
+      "l:vender",
+      "p:gracias-por",
+      "p:para-inf",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u04-11",
+    "unit": "u04",
+    "prompt": "Mariana is writing about the market and asks you for prices. Reply with what two things cost per kilo, and say if it is cheap or expensive.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\best(á|an) a\\b",
+        "label": "está a (it is at a price)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "barato",
+          "barata",
+          "caro",
+          "cara",
+          "baratos",
+          "caros"
+        ],
+        "label": "cheap or expensive"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "El kilo de tomate está a tres mil pesos. El aguacate está a cinco mil. Todo está barato.",
+    "focus": "p:estar-a-price",
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:aguacate",
+      "l:barato",
+      "l:estar",
+      "l:kilo",
+      "l:peso",
+      "l:tomate"
+    ]
+  },
+  {
+    "id": "w-u04-12",
+    "unit": "u04",
+    "prompt": "Tell your cousin what you did on Sunday, in order. Use primero, luego and después.",
+    "minWords": 10,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "primero"
+      },
+      {
+        "type": "containsWord",
+        "word": "luego"
+      },
+      {
+        "type": "containsWord",
+        "word": "después"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito"
+      }
+    ],
+    "model": "Primero compré café en el mercado. Luego fui al banco y después volví al café.",
+    "focus": "p:time-sequence-basic",
+    "requires": [
+      "c:compre-trabaje",
+      "c:fui",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "l:banco",
+      "l:café",
+      "l:comprar",
+      "l:después",
+      "l:ir",
+      "l:mercado",
+      "l:volver",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u04-13",
+    "unit": "u04",
+    "prompt": "Tell Mariana what you and Vale did on Sunday. Use we: one sentence with went, one with did or made.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bfuimos\\b",
+        "label": "fuimos (we went)"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bhicimos\\b",
+        "label": "hicimos (we did, we made)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "El domingo Vale y yo fuimos al parque. Hicimos pan y vendimos tintos.",
+    "focus": "g:preterite-ser-ir-hacer",
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "l:domingo",
+      "l:hacer",
+      "l:ir",
+      "l:pan",
+      "l:parque",
+      "l:tinto",
+      "l:vender"
+    ]
+  },
+  {
+    "id": "w-u04-14",
+    "unit": "u04",
+    "prompt": "A friend had a big day yesterday. Ask how it went, then say how your own day went.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "cómo te fue"
+      },
+      {
+        "type": "containsWord",
+        "word": "me fue"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "¿Cómo te fue ayer? Me fue bien. Vendí mucho café.",
+    "focus": "c:como-te-fue",
+    "requires": [
+      "c:ayer-anoche",
+      "c:bien-y-tu",
+      "c:como-te-fue",
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:ayer",
+      "l:bien",
+      "l:café",
+      "l:cómo",
+      "l:ser",
+      "l:vender",
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u04-15",
+    "unit": "u04",
+    "prompt": "You sell fruit at a stall. An older customer has just bought mangoes. Say what you'd tell her (usted): ask if she wants anything else, hand over her change, thank her for coming.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "algo más"
+      },
+      {
+        "type": "containsWord",
+        "word": "aquí tiene"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tienes",
+          "tu ",
+          "quieres"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Son diez mil pesos. Aquí tiene su cambio. ¿Algo más? Gracias por venir.",
+    "focus": "c:aqui-tiene",
+    "requires": [
+      "c:algo-mas",
+      "c:aqui-tiene",
+      "c:tienes",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:aquí",
+      "l:cambio",
+      "l:peso",
+      "l:ser",
+      "l:tener",
+      "l:venir",
+      "p:gracias-por",
+      "p:possessives-basic"
+    ]
+  }
+]
