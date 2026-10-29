@@ -1,0 +1,182 @@
+{
+  "id": "sc-u04-d",
+  "unit": "u04",
+  "title": "Don Hernando's Sunday",
+  "brief": "You're Tomás. Don Hernando missed the café on Sunday, and this time you ask the questions: what he did, when, and where he went. Then tell him about your own Sunday. He's older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, Tomás. Un tinto, por favor. El domingo no salí de mi casa.",
+      "npcEn": "Good morning, Tomás. A tinto, please. On Sunday I didn't leave my house.",
+      "intent": "Ask him what he did at home.",
+      "accept": [
+        "¿Y qué hizo en su casa?",
+        "¿Qué hizo usted en la casa?",
+        "¿Y qué hizo, don Hernando?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "verbForm",
+          "inf": "hacer",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "he did: hizo (usted)"
+        }
+      ],
+      "focus": "g:preterite-ser-ir-hacer",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Llegó mi nieto de Cali. Comimos ajiaco y hablamos todo el día.",
+      "npcEn": "My grandson came from Cali. We ate ajiaco and talked all day.",
+      "intent": "Ask him what time his grandson arrived.",
+      "accept": [
+        "¿A qué hora llegó?",
+        "¿A qué hora llegó su nieto?",
+        "¿Y a qué hora llegó, don Hernando?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "verbForm",
+          "inf": "llegar",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "he arrived: llegó"
+        }
+      ],
+      "focus": "g:preterite-ar",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "A las diez. Y después fuimos a Monserrate. ¿Y usted, qué hizo el domingo?",
+      "npcEn": "At ten. And then we went to Monserrate. And you, what did you do on Sunday?",
+      "intent": "Say you went to the market with Doña Marta and carried five bags.",
+      "accept": [
+        "Fui al mercado con doña Marta y llevé cinco bolsas.",
+        "Fui a la plaza de mercado con doña Marta. Llevé cinco bolsas.",
+        "Llevé cinco bolsas: fui al mercado con doña Marta."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "fui",
+          "label": "I went: fui"
+        },
+        {
+          "type": "verbForm",
+          "inf": "llevar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I carried: llevé"
+        }
+      ],
+      "focus": "g:preterite-ser-ir-hacer",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Con doña Marta? Ella compra barato. ¿A cómo está la papa?",
+      "npcEn": "With Doña Marta? She buys cheap. How much are potatoes going for?",
+      "intent": "Say they're two thousand pesos a kilo.",
+      "accept": [
+        "Está a dos mil pesos el kilo.",
+        "La papa está a dos mil pesos el kilo.",
+        "A dos mil el kilo."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "dos mil"
+        }
+      ],
+      "focus": "p:estar-a-price",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Barato! Bueno, Tomás. ¿Cuánto es el tinto?",
+      "npcEn": "Cheap! Well, Tomás. How much is the tinto?",
+      "intent": "Tell him he doesn't pay today: thank him for the taxi drivers.",
+      "accept": [
+        "Hoy no paga, don Hernando. Gracias por los taxistas.",
+        "Gracias por los taxistas, don Hernando. Hoy no paga.",
+        "Hoy no. Gracias por los taxistas."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "containsWord",
+          "word": "gracias por",
+          "label": "thank for something: gracias por"
+        }
+      ],
+      "focus": "p:gracias-por",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-como-esta",
+    "c:a-que-hora",
+    "c:bien-y-tu",
+    "c:como-estas",
+    "c:cuanto-cuesta",
+    "c:entonces-bueno",
+    "c:fui",
+    "c:hola-buenos-dias",
+    "c:por-favor",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "l:ajiaco",
+    "l:barato",
+    "l:bolsa",
+    "l:bueno",
+    "l:casa",
+    "l:comer",
+    "l:comprar",
+    "l:cuánto",
+    "l:cómo",
+    "l:después",
+    "l:domingo",
+    "l:día",
+    "l:estar",
+    "l:favor",
+    "l:hablar",
+    "l:hacer",
+    "l:hora",
+    "l:hoy",
+    "l:ir",
+    "l:kilo",
+    "l:llegar",
+    "l:llevar",
+    "l:mercado",
+    "l:nieto",
+    "l:pagar",
+    "l:papa",
+    "l:peso",
+    "l:plaza",
+    "l:qué",
+    "l:salir",
+    "l:ser",
+    "l:taxista",
+    "l:tinto",
+    "p:gracias-por",
+    "p:possessives-basic",
+    "p:time-sequence-basic"
+  ]
+}

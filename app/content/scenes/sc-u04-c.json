@@ -1,0 +1,176 @@
+{
+  "id": "sc-u04-c",
+  "unit": "u04",
+  "title": "The machine man",
+  "brief": "You're Tomás. A man has come to look at Rosa's dead espresso machine, and he needs the whole story before he opens it. Tell him what happened and what you did. He's a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, señor. ¿Esta es la máquina de café? ¿Qué pasó?",
+      "npcEn": "Good morning, sir. Is this the coffee machine? What happened?",
+      "intent": "Say the machine didn't work on Saturday at five past seven.",
+      "accept": [
+        "La máquina no funcionó el sábado a las siete y cinco.",
+        "El sábado a las siete y cinco la máquina no funcionó.",
+        "No funcionó el sábado, a las siete y cinco."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "funcionar",
+          "tense": "preterito",
+          "label": "it didn't work: no funcionó"
+        },
+        {
+          "type": "containsWord",
+          "word": "sábado"
+        }
+      ],
+      "focus": "g:preterite-ar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿El sábado? ¿Y usted qué hizo?",
+      "npcEn": "On Saturday? And what did you do?",
+      "intent": "Say you called Don Hernando, and Vale made tinto like Rosa.",
+      "accept": [
+        "Llamé a don Hernando y Vale hizo tinto como Rosa.",
+        "Vale hizo tinto como Rosa, y yo llamé a don Hernando.",
+        "Yo llamé a don Hernando. Vale hizo tinto como Rosa."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "hacer",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "Vale made: hizo"
+        },
+        {
+          "type": "verbForm",
+          "inf": "llamar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I called: llamé"
+        }
+      ],
+      "focus": "g:preterite-ser-ir-hacer",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Tinto sin máquina? ¿Y vendieron algo?",
+      "npcEn": "Tinto without a machine? And did you sell anything?",
+      "intent": "Say yes, the taxi drivers arrived and you all sold a lot of tinto.",
+      "accept": [
+        "Sí, llegaron los taxistas y vendimos mucho tinto.",
+        "Sí. Llegaron los taxistas, y vendimos mucho tinto.",
+        "Vendimos mucho tinto: llegaron los taxistas."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "vender",
+          "tense": "preterito",
+          "person": "nosotros",
+          "label": "we sold: vendimos"
+        }
+      ],
+      "focus": "g:preterite-er-ir",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Uy! Esta máquina es de 1975. Una máquina nueva está a dos millones.",
+      "npcEn": "Wow! This machine is from 1975. A new machine goes for two million.",
+      "intent": "Say that's expensive and ask if there's something cheaper.",
+      "accept": [
+        "¡Qué caro! ¿Hay algo más barato?",
+        "Es muy caro. ¿Hay algo más barato?",
+        "¿Dos millones? ¡Qué caro! ¿Hay algo más barato?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "containsWord",
+          "word": "barato"
+        }
+      ],
+      "focus": "p:costar-pagar",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Sí: yo trabajo con esta máquina. Son cien mil pesos, y mañana funciona.",
+      "npcEn": "Yes: I work with this machine. It's a hundred thousand pesos, and tomorrow it works.",
+      "intent": "Agree, and thank him for the help.",
+      "accept": [
+        "Listo. Gracias por la ayuda.",
+        "Muy bien, muchas gracias por la ayuda.",
+        "¡Claro! Gracias por la ayuda, señor."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "gracias por",
+          "label": "thank for something: gracias por"
+        }
+      ],
+      "focus": "p:gracias-por",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:algo-mas",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "g:adjective-agreement",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "l:ayuda",
+    "l:barato",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:caro",
+    "l:claro",
+    "l:día",
+    "l:estar",
+    "l:funcionar",
+    "l:hacer",
+    "l:listo",
+    "l:llamar",
+    "l:llegar",
+    "l:mañana",
+    "l:máquina",
+    "l:nuevo",
+    "l:pasar",
+    "l:peso",
+    "l:qué",
+    "l:ser",
+    "l:señor",
+    "l:sábado",
+    "l:taxista",
+    "l:tinto",
+    "l:trabajar",
+    "l:vender",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:quantifiers-basic"
+  ]
+}

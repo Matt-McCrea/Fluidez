@@ -1,0 +1,194 @@
+{
+  "id": "sc-u04-b",
+  "unit": "u04",
+  "title": "Señor Mango",
+  "brief": "You're Tomás. A week later you're back at Paloquemao for strawberries for Vale's juices, and the fruit seller remembers you. Ask the price, get a better one, and buy only what you need. He's a stranger at work, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Buenos días! Usted es el señor Mango, ¿no? ¿Y los mangos?",
+      "npcEn": "Good morning! You're Mr Mango, aren't you? And the mangoes?",
+      "intent": "Say yes, you sold all the mangoes.",
+      "accept": [
+        "Sí, vendimos todos los mangos.",
+        "Sí, señor. Vendimos todo el mango.",
+        "Sí, vendimos todo."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "vender",
+          "tense": "preterito",
+          "label": "say you sold: vendimos or vendí"
+        }
+      ],
+      "focus": "g:preterite-er-ir",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¡Qué bien! ¿Y hoy qué necesita?",
+      "npcEn": "Great! And what do you need today?",
+      "intent": "Ask how much the strawberries are.",
+      "accept": [
+        "¿A cómo está la fresa?",
+        "¿A cómo está la libra de fresa?",
+        "¿Cuánto cuesta la libra de fresa?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "containsWord",
+          "word": "fresa"
+        }
+      ],
+      "focus": "p:estar-a-price",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "La fresa está a seis mil la libra. ¡Hoy está muy rica!",
+      "npcEn": "Strawberries are six thousand a pound. They are really tasty today!",
+      "intent": "Say that's expensive and ask for a little discount.",
+      "accept": [
+        "¡Qué caro! ¿Me hace una rebajita?",
+        "Es muy caro. ¿Me hace una rebajita?",
+        "Muy caro, señor. ¿Me hace una rebajita?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "caro"
+        },
+        {
+          "type": "containsWord",
+          "word": "rebajita"
+        }
+      ],
+      "focus": "c:me-hace-una-rebajita",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Bueno, a cinco mil. ¿Cuántas libras? ¿Cuarenta?",
+      "npcEn": "OK, five thousand. How many pounds? Forty?",
+      "intent": "Say no, not forty: you want three pounds.",
+      "accept": [
+        "No, cuarenta no. Quiero tres libras.",
+        "No, señor. Quiero tres libras, por favor.",
+        "¡No! Tres libras, por favor."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "containsWord",
+          "word": "tres"
+        }
+      ],
+      "focus": "c:quiero",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Tres libras son quince mil. ¿Algo más?",
+      "npcEn": "Three pounds is fifteen thousand. Anything else?",
+      "intent": "Say no, nothing else, thank you.",
+      "accept": [
+        "No, nada más, gracias.",
+        "Nada más, gracias.",
+        "No, gracias. Nada más."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "nada más"
+        }
+      ],
+      "focus": "c:algo-mas",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Aquí están sus vueltas: cinco mil. ¡Gracias, señor Mango!",
+      "npcEn": "Here's your change: five thousand. Thank you, Mr Mango!",
+      "intent": "Thank him and say you'll see him next Saturday.",
+      "accept": [
+        "Gracias. Nos vemos el sábado que viene.",
+        "Muchas gracias, señor. Hasta el sábado que viene.",
+        "Gracias a usted. Nos vemos el próximo sábado."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "que viene",
+            "próximo"
+          ],
+          "label": "next Saturday: el sábado que viene"
+        }
+      ],
+      "focus": "p:time-pasado-que-viene",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-como-esta",
+    "c:algo-mas",
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:como-estas",
+    "c:cuanto-cuesta",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-hace-una-rebajita",
+    "c:no-cierto",
+    "c:por-favor",
+    "c:que-bien",
+    "c:quiero",
+    "g:adjective-agreement",
+    "g:diminutives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:present-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "l:aquí",
+    "l:bien",
+    "l:bueno",
+    "l:caro",
+    "l:costar",
+    "l:cuánto",
+    "l:cómo",
+    "l:día",
+    "l:estar",
+    "l:favor",
+    "l:fresa",
+    "l:hacer",
+    "l:hoy",
+    "l:libra",
+    "l:mango",
+    "l:necesitar",
+    "l:próximo",
+    "l:querer",
+    "l:qué",
+    "l:rico",
+    "l:ser",
+    "l:señor",
+    "l:sábado",
+    "l:vender",
+    "l:venir",
+    "l:ver",
+    "l:vuelta",
+    "p:exclamations-basic",
+    "p:quantifiers-basic",
+    "p:time-pasado-que-viene"
+  ]
+}

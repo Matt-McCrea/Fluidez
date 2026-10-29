@@ -1,0 +1,213 @@
+{
+  "id": "sc-u04-a",
+  "unit": "u04",
+  "title": "Monday, first coffee",
+  "brief": "You're Tomás. It's Monday morning and Mariana comes into the café, curious about the weekend everyone in the barrio is talking about. Tell her what happened, in order. She's an old friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Hola, Tomás! Todo el barrio habla del café. ¿Qué tal el fin de semana?",
+      "npcEn": "Hi, Tomás! The whole barrio is talking about the café. How was the weekend?",
+      "intent": "Say it was very good, but you worked a lot.",
+      "accept": [
+        "Muy bien, pero trabajé mucho.",
+        "Muy bien, gracias. Trabajé mucho.",
+        "Bien, pero trabajé mucho, Mariana."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "trabajar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "say what you did: trabajé"
+        }
+      ],
+      "focus": "g:preterite-ar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Sí? ¿Y qué hiciste el viernes?",
+      "npcEn": "Really? And what did you do on Friday?",
+      "intent": "Say you went to Paloquemao on Friday and bought mangoes.",
+      "accept": [
+        "El viernes fui a Paloquemao y compré mango.",
+        "Fui a Paloquemao y compré mangos.",
+        "Fui al mercado de Paloquemao. Compré mango."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "fui",
+          "label": "I went is fui"
+        },
+        {
+          "type": "verbForm",
+          "inf": "comprar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I bought is compré"
+        }
+      ],
+      "focus": "g:preterite-ser-ir-hacer",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Qué rico! ¿Y el sábado? ¿Abrieron el café?",
+      "npcEn": "Lovely! And Saturday? Did you open the café?",
+      "intent": "Say yes, you all opened at six, but the coffee machine didn't work.",
+      "accept": [
+        "Sí, abrimos a las seis, pero la máquina no funcionó.",
+        "Sí. Abrimos a las seis, pero la máquina de café no funcionó.",
+        "Abrimos a las seis, pero la máquina no funcionó."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "abrir",
+          "tense": "preterito",
+          "person": "nosotros",
+          "label": "we opened is abrimos"
+        },
+        {
+          "type": "negation"
+        }
+      ],
+      "focus": "g:preterite-er-ir",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Sin máquina? ¿Y quién llegó?",
+      "npcEn": "Without a machine? And who arrived?",
+      "intent": "Say first the taxi drivers arrived, and then their wives.",
+      "accept": [
+        "Primero llegaron los taxistas y luego llegaron las señoras.",
+        "Primero llegaron los taxistas y después las señoras.",
+        "Primero los taxistas, y luego llegaron las señoras."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "primero",
+          "label": "put things in order with primero"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "luego",
+            "después"
+          ],
+          "label": "then: luego or después"
+        }
+      ],
+      "focus": "p:time-sequence-basic",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Qué chévere! ¿Y cuántos tintos vendieron?",
+      "npcEn": "How great! And how many tintos did you sell?",
+      "intent": "Say you sold three hundred tintos.",
+      "accept": [
+        "Vendimos trescientos tintos.",
+        "¡Trescientos! Vendimos trescientos tintos.",
+        "Vendimos trescientos tintos en dos días."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "vender",
+          "tense": "preterito",
+          "person": "nosotros",
+          "label": "we sold is vendimos"
+        }
+      ],
+      "focus": "g:preterite-er-ir",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Trescientos! Bueno, me voy a trabajar. ¿Me llamas esta noche?",
+      "npcEn": "Three hundred! Well, I'm off to work. Will you call me tonight?",
+      "intent": "Say yes, of course, you'll call her tonight.",
+      "accept": [
+        "Sí, claro. Te llamo esta noche.",
+        "Claro, te llamo esta noche.",
+        "Sí, te llamo esta noche, Mariana."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "te llamo",
+          "label": "I'll call you: te llamo"
+        }
+      ],
+      "focus": "p:me-te-nos-objects",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:compre-trabaje",
+    "c:entonces-bueno",
+    "c:fui",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:que-chevere",
+    "c:que-hiciste",
+    "c:que-rico",
+    "c:que-tal-el-fin",
+    "c:voy-a",
+    "c:y-que-paso",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "l:abrir",
+    "l:barrio",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:chévere",
+    "l:claro",
+    "l:comprar",
+    "l:cuánto",
+    "l:después",
+    "l:día",
+    "l:fin",
+    "l:funcionar",
+    "l:hablar",
+    "l:hacer",
+    "l:ir",
+    "l:irse",
+    "l:llamar",
+    "l:llegar",
+    "l:mango",
+    "l:mercado",
+    "l:máquina",
+    "l:noche",
+    "l:quién",
+    "l:qué",
+    "l:rico",
+    "l:semana",
+    "l:señora",
+    "l:sábado",
+    "l:taxista",
+    "l:tinto",
+    "l:trabajar",
+    "l:vender",
+    "l:viernes",
+    "p:demonstratives-basic",
+    "p:me-te-nos-objects",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic"
+  ]
+}

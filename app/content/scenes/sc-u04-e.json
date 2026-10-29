@@ -1,0 +1,170 @@
+{
+  "id": "sc-u04-e",
+  "unit": "u04",
+  "title": "Doña Marta wants answers",
+  "brief": "You're Tomás. Doña Marta's husband got home at eleven on Saturday night, and she has come to the café to find out why. Tell her what he did here, and don't get anyone in trouble. She's older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, el sábado mi esposo llegó a la casa a las once de la noche. ¿Qué hizo aquí?",
+      "npcEn": "Tomás, on Saturday my husband got home at eleven at night. What did he do here?",
+      "intent": "Say he drank tinto and talked with Don Hernando.",
+      "accept": [
+        "Tomó tinto y habló con don Hernando.",
+        "Habló con don Hernando y tomó tinto.",
+        "Tomó tinto, señora, y habló con don Hernando."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "hablar",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "he talked: habló"
+        }
+      ],
+      "focus": "g:preterite-ar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Hasta las once? ¿Y comió algo?",
+      "npcEn": "Until eleven? And did he eat anything?",
+      "intent": "Say yes, he ate potatoes with tomato.",
+      "accept": [
+        "Sí, comió papa con tomate.",
+        "Sí, señora. Comió papa con tomate.",
+        "Comió papa con tomate."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "comer",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "he ate: comió"
+        }
+      ],
+      "focus": "g:preterite-er-ir",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Y después, ¿adónde fue?",
+      "npcEn": "And after that, where did he go?",
+      "intent": "Say you don't know: you left the café at ten.",
+      "accept": [
+        "No sé. Salí del café a las diez.",
+        "La verdad, no sé. Yo salí a las diez.",
+        "No sé, señora. Salí del café a las diez."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "salir",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I left: salí"
+        }
+      ],
+      "focus": "g:preterite-er-ir",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mi esposo pagó la cuenta de todos, ¿verdad?",
+      "npcEn": "My husband paid everyone's bill, right?",
+      "intent": "Say no, he didn't pay: Don Hernando paid.",
+      "accept": [
+        "No, él no pagó. Pagó don Hernando.",
+        "No, señora. Pagó don Hernando.",
+        "No pagó él, pagó don Hernando."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "verbFormAny",
+          "inf": "pagar",
+          "tense": "preterito",
+          "label": "he paid: pagó"
+        }
+      ],
+      "focus": "p:costar-pagar",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Ay, Rogelio! Bueno, Tomás, ¿me regala un tinto para llevar?",
+      "npcEn": "Oh, Rogelio! Well, Tomás, can I have a tinto to go?",
+      "intent": "Say of course, and here you are.",
+      "accept": [
+        "Claro, aquí tiene.",
+        "¡Claro! Aquí tiene, señora.",
+        "Claro que sí. Aquí tiene."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "aquí tiene",
+          "label": "handing something over: aquí tiene"
+        }
+      ],
+      "focus": "c:aqui-tiene",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:aqui-tiene",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:la-cuenta",
+    "c:la-verdad",
+    "c:me-regala",
+    "c:no-cierto",
+    "c:no-se",
+    "c:para-llevar",
+    "c:tienes",
+    "g:gender-articles",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:adónde",
+    "l:aquí",
+    "l:bueno",
+    "l:café",
+    "l:casa",
+    "l:claro",
+    "l:comer",
+    "l:cuenta",
+    "l:después",
+    "l:esposo",
+    "l:hablar",
+    "l:hacer",
+    "l:llegar",
+    "l:llevar",
+    "l:noche",
+    "l:pagar",
+    "l:papa",
+    "l:qué",
+    "l:regalar",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:señora",
+    "l:sábado",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:tomate",
+    "l:verdad",
+    "p:indefinites-basic",
+    "p:possessives-basic",
+    "p:time-sequence-basic"
+  ]
+}

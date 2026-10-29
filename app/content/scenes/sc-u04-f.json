@@ -1,0 +1,178 @@
+{
+  "id": "sc-u04-f",
+  "unit": "u04",
+  "title": "Ten o'clock on Sunday",
+  "brief": "You're Tomás. It's late on Sunday night, the café is finally empty, and Vale is counting the weekend's money. Help her add it up and decide what comes next. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Son las diez y estoy cansada. ¿Me ayudas a contar la plata?",
+      "npcEn": "It's ten o'clock and I'm tired. Will you help me count the money?",
+      "intent": "Say of course, and ask how many tintos you all sold.",
+      "accept": [
+        "Claro. ¿Cuántos tintos vendimos?",
+        "¡Claro! ¿Y cuántos tintos vendimos?",
+        "Claro que sí. ¿Cuántos tintos vendimos, Vale?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "verbForm",
+          "inf": "vender",
+          "tense": "preterito",
+          "person": "nosotros",
+          "label": "we sold: vendimos"
+        }
+      ],
+      "focus": "g:preterite-er-ir",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Trescientos. ¿Y cuánto pagaste por el mango el viernes?",
+      "npcEn": "Three hundred. And how much did you pay for the mango on Friday?",
+      "intent": "Say the mango cost eighty thousand pesos.",
+      "accept": [
+        "El mango costó ochenta mil pesos.",
+        "Costó ochenta mil pesos.",
+        "Ochenta mil. El mango costó ochenta mil pesos."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "costar",
+          "tense": "preterito",
+          "label": "it cost: costó"
+        }
+      ],
+      "focus": "p:costar-pagar",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Ochenta mil? Pero fue un precio barato, ¿no?",
+      "npcEn": "Eighty thousand? But it was a cheap price, right?",
+      "intent": "Say yes, because you bought forty pounds.",
+      "accept": [
+        "Sí, porque compré cuarenta libras.",
+        "Sí, porque compré cuarenta libras de mango.",
+        "Sí. Compré cuarenta libras, Vale."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "comprar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I bought: compré"
+        }
+      ],
+      "focus": "g:preterite-ar",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Bueno. Total: $412.000 en dos días. ¿Y qué hacemos con la plata?",
+      "npcEn": "OK. Total: $412.000 in two days. So what do we do with the money?",
+      "intent": "Say tomorrow you're going to go to the bank.",
+      "accept": [
+        "Mañana voy a ir al banco.",
+        "Mañana voy al banco.",
+        "Voy a ir al banco mañana."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "banco"
+        },
+        {
+          "type": "containsWord",
+          "word": "mañana"
+        }
+      ],
+      "focus": "g:ir-a-plans",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bien. Y yo me voy a dormir. Hoy trabajé dieciséis horas.",
+      "npcEn": "Good. And I'm off to sleep. Today I worked sixteen hours.",
+      "intent": "Thank her for everything.",
+      "accept": [
+        "Gracias por todo, Vale.",
+        "Mil gracias por todo.",
+        "Vale, muchas gracias por todo."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "gracias por",
+          "label": "thank for something: gracias por"
+        }
+      ],
+      "focus": "p:gracias-por",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:compre-trabaje",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:no-cierto",
+    "c:porque",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "l:ayudar",
+    "l:banco",
+    "l:barato",
+    "l:bien",
+    "l:bueno",
+    "l:cansado",
+    "l:claro",
+    "l:comprar",
+    "l:contar",
+    "l:costar",
+    "l:cuánto",
+    "l:dormir",
+    "l:día",
+    "l:estar",
+    "l:hacer",
+    "l:hora",
+    "l:hoy",
+    "l:ir",
+    "l:irse",
+    "l:libra",
+    "l:mango",
+    "l:mañana",
+    "l:pagar",
+    "l:peso",
+    "l:plata",
+    "l:precio",
+    "l:qué",
+    "l:ser",
+    "l:tinto",
+    "l:total",
+    "l:trabajar",
+    "l:vender",
+    "l:viernes",
+    "p:costar-pagar",
+    "p:gracias-por",
+    "p:me-te-nos-objects"
+  ]
+}
