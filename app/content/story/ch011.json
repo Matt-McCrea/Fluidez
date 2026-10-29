@@ -2,23 +2,59 @@
   "id": "ch011",
   "unit": "u05",
   "title": "Nadie sabe nada",
-  "text": "Tomás pregunta a todos. Nadie sabe nada.\nTomás: Vale, ¿quién es el hombre de la foto?\nVale: No sé, Tomás. Nunca vi la foto.\nTomás: Don Hernando, usted conoce a todo el barrio.\nHernando: ¿Yo? No conozco a nadie.\nTomás: ¿Qué edad tiene él en la foto? ¿Veinte años?\nHernando: No sé su edad. No sé su nombre. No sé nada.\nSimón: ¡No sé nada! ¡No sé nada!\nTomás: ¿Era un amigo de Rosa? ¿Un cliente?\nHernando: Era un chico tímido. Muy trabajador. Y Rosa...\nHernando no termina.\nTomás: ¿Y Rosa qué, don Hernando?\nHernando: Nada. Hoy pago yo el tinto. Soy un hombre generoso.\nVale: ¿Usted? ¿Generoso? Usted nunca paga.\nHernando sale del café. Son las cuatro de la tarde. Hernando nunca sale a las cuatro.\nVale: Tomás, tú no eres perezoso. Eres trabajador, como Rosa. Y un poco tímido, como él.\nTomás mira la foto otra vez. En la foto hay un número: 1978.\nTomás: Quedan veinticinco días. Y tengo dos preguntas.",
+  "text": "Tomás pregunta a todos: a Vale, a doña Marta, al señor de la tienda de la esquina. Nadie sabe nada.\nTomás: Vale, ¿quién es el hombre de la foto?\nVale: No sé, Tomás. Nunca vi esa foto.\nTomás: Don Hernando, usted conoce a todo el barrio.\nHernando: ¿Yo? No, mijo. Yo aquí no conozco a nadie.\nVale: ¡Don Hernando! Usted conoce a todo el mundo.\nTomás: ¿Y qué edad tiene él en la foto? ¿Veinte años?\nHernando: No sé su edad. No sé su nombre. No sé nada.\nSimón: ¡No sé nada! ¡No sé nada!\nTomás: ¿Era un amigo de Rosa? ¿Un cliente?\nHernando: Era un muchacho tímido. Muy trabajador. No era perezoso como Simón. Y Rosa...\nHernando no termina la frase.\nTomás: ¿Y Rosa qué, don Hernando?\nHernando: Nada, mijo. Hoy pago yo los tintos. Soy un hombre generoso.\nVale: ¿Usted? ¿Generoso? Usted nunca paga.\nHernando deja la plata en la mesa y sale del café. Son las cuatro de la tarde. Hernando nunca sale antes de las seis.\nVale mira la foto. Después mira a Tomás.\nVale: Qué raro, Tomás. Tú eres trabajador, como Rosa. Y un poco tímido... como él.\nTomás mira la foto otra vez. Atrás, escrito a mano, hay un año: 1978.\nTomás: Quedan veinticinco días para el trato. Y ahora tengo dos preguntas: ¿quién es él? ¿Y qué pasó en 1978?",
   "gloss": [
     {
-      "es": "Nunca vi la foto",
-      "en": "I've never seen the photo"
+      "es": "Nunca vi esa foto",
+      "en": "I've never seen that photo"
+    },
+    {
+      "es": "a todo el barrio",
+      "en": "the whole neighbourhood"
+    },
+    {
+      "es": "a todo el mundo",
+      "en": "everybody"
+    },
+    {
+      "es": "un muchacho",
+      "en": "a young man, a lad"
+    },
+    {
+      "es": "No era perezoso como Simón",
+      "en": "He wasn't lazy like Simón"
+    },
+    {
+      "es": "no termina la frase",
+      "en": "doesn't finish the sentence"
     },
     {
       "es": "¿Y Rosa qué?",
       "en": "And Rosa what?"
     },
     {
-      "es": "Hoy pago yo el tinto",
-      "en": "Today the coffee's on me"
+      "es": "Hoy pago yo los tintos",
+      "en": "Today the coffees are on me"
     },
     {
-      "es": "Quedan veinticinco días",
-      "en": "There are twenty-five days left"
+      "es": "deja la plata en la mesa",
+      "en": "leaves the money on the table"
+    },
+    {
+      "es": "antes de las seis",
+      "en": "before six"
+    },
+    {
+      "es": "Qué raro",
+      "en": "How strange"
+    },
+    {
+      "es": "Atrás, escrito a mano",
+      "en": "On the back, handwritten"
+    },
+    {
+      "es": "Quedan veinticinco días para el trato",
+      "en": "There are twenty-five days left on the bet"
     }
   ],
   "questions": [
@@ -35,7 +71,7 @@
     {
       "q": "Why is Simón's «¡No sé nada!» funny?",
       "options": [
-        "He has learned Hernando's excuse word for word",
+        "He repeats Hernando's excuse word for word",
         "He really knows the answer",
         "He says it in English",
         "Nobody asked him"
@@ -64,7 +100,7 @@
     {
       "q": "What is Tomás's second question at the end?",
       "options": [
-        "What the number 1978 on the photo means",
+        "What happened in 1978",
         "How to fix the espresso machine",
         "Where Hernando lives",
         "How old Vale is"
@@ -120,46 +156,66 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:yo-irregular",
+    "p:para-inf",
     "p:personal-a",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:question-word-order",
     "p:senor-don-article",
-    "p:tener-anos"
+    "p:tener-anos",
+    "p:time-sequence-basic"
   ],
   "lexemes": [
+    "l:ahora",
     "l:amigo",
+    "l:antes",
+    "l:aquí",
+    "l:atrás",
     "l:año",
     "l:barrio",
     "l:café",
-    "l:chico",
     "l:cliente",
     "l:comer",
     "l:conocer",
+    "l:dejar",
+    "l:después",
     "l:día",
     "l:edad",
+    "l:escribir",
+    "l:esquina",
     "l:foto",
+    "l:frase",
     "l:generoso",
     "l:hombre",
     "l:hoy",
+    "l:mano",
+    "l:mesa",
+    "l:mijo",
     "l:mirar",
+    "l:muchacho",
+    "l:mundo",
     "l:nombre",
-    "l:número",
     "l:pagar",
+    "l:pasar",
     "l:perezoso",
+    "l:plata",
     "l:pregunta",
     "l:preguntar",
     "l:quedar",
     "l:quién",
     "l:qué",
+    "l:raro",
     "l:saber",
     "l:salir",
     "l:ser",
+    "l:señor",
     "l:tarde",
     "l:tener",
     "l:terminar",
+    "l:tienda",
     "l:tinto",
     "l:trabajador",
+    "l:trato",
     "l:tímido",
     "l:ver",
     "l:vez"

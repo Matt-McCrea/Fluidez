@@ -2,8 +2,20 @@
   "id": "ch012",
   "unit": "u06",
   "title": "La máquina de discos",
-  "text": "Hernando vuelve al café con un disco viejo.\nSimón: ¡Cuánto tiempo! ¡Cuánto tiempo!\nHernando: ¿Cuánto tiempo? Salí ayer a las cuatro, Simón.\nHernando pone el disco en la mesa y el tinto en el mostrador. ¡Crac!\nVale: El mostrador de Rosa es un desastre.\nHernando: Tomás, tú quieres una historia. Yo entré al café en 1979. El café era pequeño. Había cuatro mesas y una máquina de discos, allá, en la pared.\nTomás: ¿Una máquina de discos? ¿Y la televisión?\nHernando: No había televisión. Había una radio, y la radio era de Rosa.\nVale: ¿Y Rosa? ¿Era simpática?\nHernando: ¿Simpática? No. Rosa tenía treinta años y era muy brava. Pero la calle tenía olor a pandeyuca. Toda la calle.\nSimón: ¡Muy brava! ¡Muy brava!\nHernando: Este es mi recuerdo favorito: Rosa, la radio y su disco de tango.\nTomás: ¿Y el chico de la foto? ¿Estaba en el café?\nHernando mira la pared. Mira el disco. Mira a Tomás.\nHernando: En 1979 él no estaba. Rosa estaba sola. Y estaba triste.\nHernando: El disco era de Rosa. Ahora es tu disco.\nTomás: Gracias, Don Hernando. Quedan veinticuatro días. Mañana reparo el mostrador.\nHernando: Rosa nunca reparó el mostrador. Nunca.",
+  "text": "Al otro día, Hernando vuelve al café con un disco viejo.\nSimón: ¡Cuánto tiempo! ¡Cuánto tiempo!\nHernando: ¿Cuánto tiempo? Salí ayer a las cuatro, Simón.\nHernando pone su tinto en el mostrador. ¡Crac!\nVale: Ese mostrador es un desastre. Siempre fue un desastre.\nHernando: Bueno, Tomás. Tú quieres una historia, ¿no? Yo entré a este café por primera vez en 1979. Era pequeño: había cuatro mesas y una máquina de discos, allá, en esa pared.\nTomás: ¿Una máquina de discos? ¿Y televisión?\nHernando: No había televisión. Había una radio, y la radio era de Rosa.\nVale: ¿Y Rosa cómo era? ¿Simpática?\nHernando: ¿Simpática? No, mija. Rosa tenía treinta años y era muy brava. Pero la calle tenía olor a pandeyuca. Toda la calle.\nSimón: ¡Muy brava! ¡Muy brava!\nHernando: Mi recuerdo favorito es ese: Rosa, la radio y su disco de tango.\nTomás: ¿Y el muchacho de la foto? ¿Estaba en el café?\nHernando mira la pared. Mira el disco. Mira a Tomás.\nHernando: En 1979 él ya no estaba. Rosa estaba sola. Y estaba triste.\nHernando pone el disco en las manos de Tomás.\nHernando: Este disco era de Rosa. Ahora es tuyo.\nTomás: Gracias, don Hernando. Quedan veinticuatro días... y mañana arreglo ese mostrador.\nHernando: Rosa nunca arregló ese mostrador. Nunca.",
   "gloss": [
+    {
+      "es": "un disco viejo",
+      "en": "an old record"
+    },
+    {
+      "es": "¡Cuánto tiempo!",
+      "en": "Long time no see!"
+    },
+    {
+      "es": "Salí ayer a las cuatro",
+      "en": "I left yesterday at four"
+    },
     {
       "es": "el mostrador",
       "en": "the counter"
@@ -13,32 +25,52 @@
       "en": "Crack!"
     },
     {
-      "es": "Salí ayer a las cuatro",
-      "en": "I left yesterday at four"
+      "es": "Siempre fue un desastre",
+      "en": "It was always a disaster"
+    },
+    {
+      "es": "por primera vez",
+      "en": "for the first time"
     },
     {
       "es": "una máquina de discos",
       "en": "a jukebox"
     },
     {
-      "es": "Rosa era muy brava",
-      "en": "Rosa had a real temper"
+      "es": "era muy brava",
+      "en": "had a real temper"
     },
     {
       "es": "la calle tenía olor a pandeyuca",
       "en": "the street smelled of pandeyuca (cheese bread)"
     },
     {
+      "es": "Mi recuerdo favorito",
+      "en": "My favourite memory"
+    },
+    {
       "es": "su disco de tango",
       "en": "her tango record"
     },
     {
-      "es": "Ahora es tu disco",
-      "en": "Now it's your record"
+      "es": "él ya no estaba",
+      "en": "he was already gone"
+    },
+    {
+      "es": "Ahora es tuyo",
+      "en": "Now it's yours"
     },
     {
       "es": "Quedan veinticuatro días",
       "en": "There are twenty-four days left"
+    },
+    {
+      "es": "arreglo",
+      "en": "I'll fix"
+    },
+    {
+      "es": "arregló",
+      "en": "fixed"
     }
   ],
   "questions": [
@@ -76,7 +108,7 @@
       "q": "¿Cómo estaba Rosa en 1979, según Hernando?",
       "options": [
         "Sola y triste",
-        "Con el chico de la foto",
+        "Con el muchacho de la foto",
         "Muy contenta"
       ],
       "answer": 0
@@ -92,7 +124,7 @@
       "answer": 2
     }
   ],
-  "hook": "Tomás has promised to fix the counter tomorrow, and Hernando says Rosa never once let anyone fix it. Tomorrow Tomás finds out why.",
+  "hook": "Tomás has promised to fix the counter tomorrow, and Hernando says Rosa never once fixed it. Tomorrow Tomás finds out why.",
   "rereadQuestions": [
     {
       "q": "How many tables did the café have when Hernando first came?",
@@ -127,8 +159,11 @@
   "requires": [
     "c:ayer-anoche",
     "c:cuanto-tiempo",
+    "c:entonces-bueno",
     "c:era",
+    "c:estuvo",
     "c:gracias-de-nada",
+    "c:no-cierto",
     "g:adjective-agreement",
     "g:estar-location-states",
     "g:gender-articles",
@@ -139,6 +174,7 @@
     "g:preterite-er-ir",
     "g:ser-identity",
     "g:stem-boot",
+    "p:de-owner",
     "p:demonstratives-basic",
     "p:possessives-basic",
     "p:quantifiers-basic",
@@ -148,13 +184,15 @@
   "lexemes": [
     "l:ahora",
     "l:allá",
+    "l:arreglar",
     "l:ayer",
     "l:año",
     "l:bravo",
+    "l:bueno",
     "l:café",
     "l:calle",
-    "l:chico",
     "l:cuánto",
+    "l:cómo",
     "l:desastre",
     "l:disco",
     "l:día",
@@ -163,10 +201,13 @@
     "l:favorito",
     "l:foto",
     "l:historia",
+    "l:mano",
     "l:mañana",
     "l:mesa",
+    "l:mija",
     "l:mirar",
     "l:mostrador",
+    "l:muchacho",
     "l:máquina",
     "l:olor",
     "l:pared",
@@ -176,9 +217,9 @@
     "l:querer",
     "l:radio",
     "l:recuerdo",
-    "l:reparar",
     "l:salir",
     "l:ser",
+    "l:siempre",
     "l:simpático",
     "l:tango",
     "l:televisión",
@@ -186,6 +227,7 @@
     "l:tiempo",
     "l:tinto",
     "l:triste",
+    "l:vez",
     "l:viejo",
     "l:volver"
   ]

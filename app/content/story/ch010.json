@@ -2,23 +2,43 @@
   "id": "ch010",
   "unit": "u05",
   "title": "El álbum de Rosa",
-  "text": "Hernando pone treinta y una fotos en la mesa.\nHernando: Mi familia. Ella es mi hija, Lucía, y él es su esposo. Y aquí están mis nietos. Tengo veintiuno.\nVale: ¿Veintiuno? Su hija tiene seis niños, don Hernando.\nHernando: Seis nietos. Y los primos y las primas de mis nietos. Familia es familia.\nSimón: ¡Veintiuno! ¡Veintiuno!\nTomás: ¿Y su esposa?\nHernando: Mi esposa, Inés. Ella está con Rosa ahora.\nTomás abre el álbum de Rosa.\nVale: Mira, es tu abuela, con su padre y su madre.\nTomás: ¿El padre y la madre de Rosa?\nHernando: Y él es tu abuelo, el esposo de Rosa.\nVale: Y aquí está tu papá, con su mamá. Y con su hermana y su hermano: tu tía Clara y tu tío Jaime.\nTomás: ¿Tengo tía? ¿Tengo tío? ¿Y primos y primas? No conozco a mis tíos. Mi papá y mi mamá nunca hablan de su hermano ni de su hermana.\nTomás mira otra foto: un hombre joven con la abuela Rosa. Tiene la nariz y la cara de Tomás.\nTomás: ¿Y él? No es mi abuelo. No es mi papá. ¿Es familia?\nHernando cierra el álbum.\nHernando: Vale, mija, un tinto, por favor.",
+  "text": "Hernando pone treinta y una fotos en la mesa.\nHernando: Mi familia. Ella es mi hija Lucía, y él es su esposo. Y aquí están mis nietos. Tengo veintiún nietos.\nVale cuenta los niños de las fotos.\nVale: Don Hernando, aquí hay seis niños, no veintiuno.\nHernando: Seis son mis nietos. Los otros son sus primos y sus primas. Familia es familia.\nSimón: ¡Veintiuno! ¡Veintiuno!\nTomás: ¿Y su esposa, don Hernando?\nHernando: Inés. Ella está con Rosa ahora.\nNadie habla. Después, Tomás abre el álbum de Rosa.\nVale: Mira, es tu abuela, de niña, con su padre y su madre.\nHernando: Y él es tu abuelo, el esposo de Rosa. Un hombre muy serio.\nHernando: Y este es tu papá, con su hermana y su hermano: tu tía Clara y tu tío Jaime.\nTomás: ¿Tengo tíos? ¿Y primos? Mi papá nunca habla de sus hermanos. No conozco a mi familia.\nTomás mira otra foto: un hombre joven, al lado de Rosa. Tiene la nariz de Tomás. Y la barbilla.\nTomás: ¿Y él? No es mi abuelo. No es mi papá. ¿Quién es?\nHernando cierra el álbum.\nHernando: Vale, mija, ¿me regala un tinto?",
   "gloss": [
     {
-      "es": "Ella está con Rosa ahora",
-      "en": "She's with Rosa now (she has died too)"
+      "es": "Vale cuenta los niños",
+      "en": "Vale counts the children"
     },
     {
       "es": "Familia es familia",
       "en": "Family is family"
     },
     {
+      "es": "Ella está con Rosa ahora",
+      "en": "She's with Rosa now (she has died too)"
+    },
+    {
+      "es": "de niña",
+      "en": "as a little girl"
+    },
+    {
+      "es": "¿Tengo tíos? ¿Y primos?",
+      "en": "I've got an aunt and uncle? And cousins?"
+    },
+    {
+      "es": "la barbilla",
+      "en": "the chin"
+    },
+    {
+      "es": "cierra",
+      "en": "closes"
+    },
+    {
       "es": "mija",
       "en": "love, sweetie (from «mi hija»: what older Colombians call a younger woman)"
     },
     {
-      "es": "¿Y primos y primas?",
-      "en": "And male and female cousins?"
+      "es": "Nadie habla",
+      "en": "Nobody says anything"
     }
   ],
   "questions": [
@@ -96,7 +116,7 @@
     {
       "q": "What does the young man share with Tomás?",
       "options": [
-        "His nose and his face",
+        "His nose and his chin",
         "His name",
         "His glasses",
         "His job"
@@ -105,20 +125,25 @@
     }
   ],
   "requires": [
-    "c:por-favor",
+    "c:hay",
+    "c:me-regala",
     "c:tengo",
     "c:tienes",
     "g:estar-location-states",
     "g:gender-articles",
     "g:present-ar",
     "g:present-er-ir",
+    "g:questions",
     "g:ser-identity",
     "g:stem-boot",
     "g:yo-irregular",
+    "p:demonstratives-basic",
     "p:numbers-un-una",
     "p:personal-a",
     "p:possessives-basic",
-    "p:senor-don-article"
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:time-sequence-basic"
   ],
   "lexemes": [
     "l:abrir",
@@ -126,35 +151,42 @@
     "l:abuelo",
     "l:ahora",
     "l:aquí",
-    "l:cara",
+    "l:barbilla",
     "l:cerrar",
     "l:conocer",
+    "l:contar",
+    "l:después",
     "l:esposa",
     "l:esposo",
     "l:estar",
     "l:familia",
-    "l:favor",
     "l:foto",
     "l:hablar",
     "l:hermana",
     "l:hermano",
+    "l:hermanos",
     "l:hija",
     "l:hombre",
+    "l:inés",
     "l:joven",
+    "l:lado",
     "l:madre",
-    "l:mamá",
     "l:mesa",
     "l:mija",
     "l:mirar",
     "l:nariz",
     "l:nieto",
+    "l:niña",
     "l:niño",
     "l:padre",
     "l:papá",
     "l:poner",
     "l:prima",
     "l:primo",
+    "l:quién",
+    "l:regalar",
     "l:ser",
+    "l:serio",
     "l:tener",
     "l:tinto",
     "l:tía",

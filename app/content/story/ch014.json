@@ -2,15 +2,31 @@
   "id": "ch014",
   "unit": "u06",
   "title": "Una carta sin estampilla",
-  "text": "«Joaquín». En el sobre hay solo un nombre. No tiene estampilla.\nTomás: ¿Joaquín? ¿Quién es Joaquín?\nVale: El sobre es de 1979.\nTomás: Rosa escribió una carta hace cuarenta y siete años, y la carta nunca salió del café.\nTomás: Parece una carta romántica.\nHernando pone su tinto en la mesa.\nHernando: Parece, pero no es una carta romántica.\nSimón: ¡Joaquín! ¡Joaquín!\nVale: ¿Simón conoce el nombre?\nHernando: Simón es viejo, mija. Tiene cosas de antes en la cabeza.\nTomás: Don Hernando, ¿quién es Joaquín?\nHernando: Joaquín se fue en 1978 y nunca volvió. Fue hace mucho tiempo.\nHernando vuelve a su mesa y no habla más.\nTomás: Antes, Rosa era una abuela en Bogotá. Ahora es un cuaderno, una foto y una carta.\nTomás: Rosa puso la carta en el cuaderno, y el cuaderno en el mostrador.\nTomás: Vale, acordamos treinta días, y quedan veintidós. ¿Y ahora Joaquín?\nVale: Sí, acordamos treinta días. Pero tú eres el nieto de Rosa.\nHernando: Es una cosa de Rosa y de Joaquín, Tomás.\nVale abre el sobre y lee la primera frase. Vale está blanca.\nTomás: ¿Vale? ¿Qué pasa?\nVale: Tomás... no puede ser.\nSimón: ¡No puede ser! ¡No puede ser!\nVale no habla. Pone la carta en la mano de Tomás.",
+  "text": "En el sobre hay solo una palabra: «Joaquín». No tiene estampilla. Nunca salió del café.\nTomás: ¿Joaquín? ¿Quién es Joaquín?\nVale: No sé. Pero el cuaderno es de 1979.\nTomás: Entonces Rosa escribió esta carta hace cuarenta y siete años. Parece una carta de amor.\nHernando pone su tinto en la mesa.\nHernando: Parece, mijo, pero no es una carta de amor.\nSimón: ¡Joaquín! ¡Joaquín!\nVale: ¿Y Simón? ¿Cómo sabe ese nombre?\nHernando: Simón es viejo, mija. Tiene cosas de antes en la cabeza.\nTomás: Don Hernando, ¿quién es Joaquín?\nHernando: Joaquín se fue en 1978 y nunca volvió. Hace mucho tiempo.\nHernando vuelve a su mesa y no habla más.\nTomás: Antes, Rosa era solo una abuela, lejos, en Bogotá. Y ahora tiene un cuaderno escondido, una foto y una carta.\nTomás: Vale, acordamos treinta días, y quedan veintidós. No tengo tiempo para Joaquín.\nVale: Sí, acordamos treinta días. Pero tú eres el nieto de Rosa.\nHernando: Eso es una cosa entre Rosa y Joaquín, Tomás.\nVale abre el sobre y lee la primera frase. De pronto, está blanca como el papel.\nTomás: ¿Vale? ¿Qué pasa?\nVale: Tomás... no puede ser.\nSimón: ¡No puede ser! ¡No puede ser!\nVale no habla. Pone la carta en la mano de Tomás.",
   "gloss": [
+    {
+      "es": "solo una palabra",
+      "en": "just one word"
+    },
     {
       "es": "No tiene estampilla",
       "en": "It has no stamp"
     },
     {
-      "es": "Simón es viejo, mija. Tiene cosas de antes en la cabeza.",
-      "en": "Simón is old, my dear. He has things from the old days in his head."
+      "es": "hace cuarenta y siete años",
+      "en": "forty-seven years ago"
+    },
+    {
+      "es": "Parece una carta de amor",
+      "en": "It looks like a love letter"
+    },
+    {
+      "es": "¿Cómo sabe ese nombre?",
+      "en": "How does he know that name?"
+    },
+    {
+      "es": "Tiene cosas de antes en la cabeza",
+      "en": "He has things from the old days in his head"
     },
     {
       "es": "Joaquín se fue en 1978 y nunca volvió",
@@ -21,12 +37,24 @@
       "en": "doesn't say another word"
     },
     {
-      "es": "el mostrador",
-      "en": "the counter"
+      "es": "un cuaderno escondido",
+      "en": "a hidden notebook"
     },
     {
-      "es": "Vale está blanca",
-      "en": "Vale has gone pale"
+      "es": "acordamos",
+      "en": "we agreed"
+    },
+    {
+      "es": "Eso es una cosa entre Rosa y Joaquín",
+      "en": "That's between Rosa and Joaquín"
+    },
+    {
+      "es": "la primera frase",
+      "en": "the first line"
+    },
+    {
+      "es": "De pronto, está blanca como el papel",
+      "en": "Suddenly she's as white as a sheet"
     },
     {
       "es": "no puede ser",
@@ -47,7 +75,7 @@
     {
       "q": "What does Simón's «¡Joaquín!» suggest?",
       "options": [
-        "Rosa used to say the name often",
+        "Rosa used to say the name long ago",
         "Simón is hungry",
         "Joaquín is a customer today",
         "Simón is calling Hernando"
@@ -67,7 +95,7 @@
     {
       "q": "¿Cómo está Vale después de leer la primera frase?",
       "options": [
-        "Está blanca",
+        "Está blanca como el papel",
         "Está muy contenta",
         "Está cansada"
       ],
@@ -89,7 +117,7 @@
     {
       "q": "Why does Tomás first think it is a love letter?",
       "options": [
-        "It is a letter with only a man's name on it",
+        "It is a secret letter with only a man's name on it",
         "It smells of roses",
         "It has a heart drawn on it",
         "Vale says so"
@@ -107,8 +135,11 @@
     }
   ],
   "requires": [
+    "c:entonces-bueno",
     "c:era",
     "c:hay",
+    "c:no-se",
+    "c:tengo",
     "c:tienes",
     "g:adjective-agreement",
     "g:estar-location-states",
@@ -118,12 +149,14 @@
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-er-ir",
-    "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
+    "g:yo-irregular",
     "p:dates-years",
+    "p:demonstratives-basic",
+    "p:para-inf",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:question-word-order",
@@ -135,16 +168,18 @@
     "l:abuela",
     "l:acordar",
     "l:ahora",
+    "l:amor",
     "l:antes",
     "l:año",
     "l:blanco",
     "l:cabeza",
     "l:café",
     "l:carta",
-    "l:conocer",
     "l:cosa",
     "l:cuaderno",
+    "l:cómo",
     "l:día",
+    "l:esconder",
     "l:escribir",
     "l:estar",
     "l:foto",
@@ -153,20 +188,24 @@
     "l:hacer",
     "l:irse",
     "l:leer",
+    "l:lejos",
     "l:mano",
     "l:mesa",
     "l:mija",
-    "l:mostrador",
+    "l:mijo",
     "l:nieto",
     "l:nombre",
+    "l:palabra",
+    "l:papel",
     "l:parecer",
     "l:pasar",
     "l:poder",
     "l:poner",
+    "l:pronto",
     "l:quedar",
     "l:quién",
     "l:qué",
-    "l:romántico",
+    "l:saber",
     "l:salir",
     "l:ser",
     "l:sobre",

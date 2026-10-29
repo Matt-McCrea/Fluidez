@@ -2,23 +2,43 @@
   "id": "ch009",
   "unit": "u05",
   "title": "¿Es guapo?",
-  "text": "Lunes, seis de la mañana. La cafetera no funciona. Tomás hace el tinto en el chocolatero de Rosa.\nTomás: Hago el tinto como Rosa. Pongo el café, pongo el agua... ¿y ahora?\nRiiing. Es el teléfono de Vale.\nVale: ¿Aló? ¡Camila! ¡Y mamá! Tomás, es mi hermana, Camila, y mi mamá. De Medellín.\nMamá: ¿Y él es el canadiense? ¿Cómo es, Vale? ¿Es guapo?\nVale: Es... normal.\nCamila: ¿Normal? Mamá, es alto y es muy guapo.\nTomás: Buenos días, señora. Soy Tomás, el canadiense normal.\nSimón: ¡Es normal! ¡Es normal!\nCamila: Tomás, ¿tienes hermanos?\nTomás: No. Soy hijo único.\nMamá: ¿Y usted tiene novia?\nVale: ¡Mamá!\nTomás: No, señora. Tengo un café, un loro y veintiocho días.\nCamila: Y Vale tampoco tiene novio.\nVale: ¡Camila! Chao, chao.\nVale: ¡Ay, qué pena, Tomás! Mi mamá es así.\nTomás: Tranquila. Yo hablo con mi papá los domingos. Pero nunca hablamos de Rosa.\nHernando: ¡Buenos días! Traigo fotos. ¡Fotos de mis nietos!\nSimón: ¿Tiene novia? ¿Tiene novia?\nVale: Rosa también tiene fotos, Tomás. Un álbum, allá.",
+  "text": "Lunes, seis de la mañana. La cafetera todavía no funciona, y hoy Tomás hace el tinto en el chocolatero de Rosa.\nTomás: A ver... el agua, el café... ¿y ahora qué?\nSuena el celular de Vale. Es una videollamada.\nVale: ¡Camila! ¡Y mamá! Tomás, son mi hermana Camila y mi mamá, desde Medellín.\nMamá: ¿Y él es el canadiense? A ver, Vale, ¿cómo es? ¿Es guapo?\nVale: Es... normal.\nCamila: ¿Normal? Mamá, es alto y es muy guapo.\nTomás: Buenos días, señora. Mucho gusto. Soy Tomás, el canadiense normal.\nSimón: ¡Normal! ¡Normal!\nCamila: Tomás, ¿y tienes hermanos?\nTomás: No, soy hijo único.\nMamá: ¿Y usted tiene novia, Tomás?\nVale: ¡Mamá!\nTomás: No, señora. Tengo un café, un loro y veintiocho días.\nCamila: Pues Vale tampoco tiene novio.\nVale: ¡Camila! Bueno, chao, chao.\nVale cuelga. Está roja.\nVale: ¡Ay, qué pena, Tomás! Mi mamá es así. ¿Y tu familia? ¿Hablas con tu papá?\nTomás: Los domingos, sí. Pero de Rosa nunca hablamos.\nA las siete llega Hernando, con un sobre grande.\nHernando: ¡Buenos días! ¡Traigo fotos de mis nietos!\nSimón: ¿Tiene novia? ¿Tiene novia?\nVale: Rosa también tenía fotos, Tomás. Hay un álbum allá, en el estante.",
   "gloss": [
     {
       "es": "la cafetera",
       "en": "the espresso machine"
     },
     {
+      "es": "todavía no funciona",
+      "en": "still isn't working"
+    },
+    {
       "es": "el chocolatero de Rosa",
       "en": "Rosa's old metal jug for hot chocolate"
     },
     {
-      "es": "¿Aló?",
-      "en": "Hello? (answering the phone)"
+      "es": "A ver",
+      "en": "Let's see"
     },
     {
-      "es": "un loro",
-      "en": "a parrot"
+      "es": "¿y ahora qué?",
+      "en": "and now what?"
+    },
+    {
+      "es": "Suena el celular",
+      "en": "The phone rings"
+    },
+    {
+      "es": "una videollamada",
+      "en": "a video call"
+    },
+    {
+      "es": "desde Medellín",
+      "en": "from Medellín"
+    },
+    {
+      "es": "¿Y él es el canadiense?",
+      "en": "And is he the Canadian?"
     },
     {
       "es": "¿tienes hermanos?",
@@ -29,24 +49,44 @@
       "en": "I'm an only child"
     },
     {
+      "es": "¿Y usted tiene novia?",
+      "en": "And do you have a girlfriend? (she uses usted: he's a stranger to her)"
+    },
+    {
+      "es": "un loro",
+      "en": "a parrot"
+    },
+    {
+      "es": "Pues",
+      "en": "Well"
+    },
+    {
+      "es": "Vale cuelga. Está roja.",
+      "en": "Vale hangs up. She's gone red."
+    },
+    {
       "es": "Mi mamá es así",
       "en": "My mum is like that"
     },
     {
-      "es": "Tranquila",
-      "en": "Don't worry (to a woman)"
+      "es": "Traigo fotos",
+      "en": "I've brought photos"
     },
     {
-      "es": "¿Y usted tiene novia?",
-      "en": "And do you have a girlfriend? (she uses usted: he's a stranger to her)"
+      "es": "Rosa también tenía fotos",
+      "en": "Rosa had photos too"
+    },
+    {
+      "es": "en el estante",
+      "en": "on the shelf"
     }
   ],
   "questions": [
     {
-      "q": "Who is on the phone from Medellín?",
+      "q": "Who is on the video call from Medellín?",
       "options": [
         "Vale's sister and her mother",
-        "Mr Ruiz from Altamira",
+        "Mr Ruiz, the estate agent",
         "Doña Marta",
         "Tomás's father"
       ],
@@ -92,14 +132,14 @@
       "answer": 0
     }
   ],
-  "hook": "Hernando has brought photos of his grandchildren, and the café has an album of Rosa's that Tomás has never opened. Tomorrow he opens it.",
+  "hook": "Hernando has brought photos of his grandchildren, and on the shelf there is an album of Rosa's that Tomás has never opened. Tomorrow he opens it.",
   "rereadQuestions": [
     {
       "q": "¿Cómo hace Tomás el tinto?",
       "options": [
         "En el chocolatero de Rosa",
         "En la cafetera",
-        "En el teléfono"
+        "En el celular"
       ],
       "answer": 0
     },
@@ -128,17 +168,22 @@
     "c:bien-y-tu",
     "c:chao-nos-vemos",
     "c:como-es",
+    "c:entonces-bueno",
     "c:es-que",
-    "c:hago-salgo-vengo",
+    "c:hay",
     "c:hijo-unico",
     "c:hola-buenos-dias",
+    "c:mucho-gusto",
     "c:que-pena",
     "c:tengo",
     "c:tienes",
     "c:tienes-hermanos",
+    "g:adjective-agreement",
+    "g:estar-location-states",
     "g:gender-articles",
     "g:present-ar",
     "g:present-er-ir",
+    "g:questions",
     "g:ser-identity",
     "g:stem-boot",
     "g:yo-irregular",
@@ -155,17 +200,26 @@
     "l:cafetera",
     "l:café",
     "l:canadiense",
+    "l:celular",
+    "l:colgar",
     "l:cómo",
     "l:domingo",
     "l:día",
+    "l:estante",
+    "l:estar",
+    "l:familia",
     "l:foto",
     "l:funcionar",
+    "l:grande",
     "l:guapo",
+    "l:gusto",
     "l:hablar",
     "l:hacer",
     "l:hermana",
     "l:hermanos",
     "l:hijo",
+    "l:hoy",
+    "l:llegar",
     "l:loro",
     "l:lunes",
     "l:mamá",
@@ -176,15 +230,17 @@
     "l:novio",
     "l:papá",
     "l:pena",
-    "l:poner",
     "l:qué",
+    "l:rojo",
     "l:ser",
     "l:señora",
-    "l:teléfono",
+    "l:sobre",
+    "l:sonar",
     "l:tener",
     "l:tinto",
     "l:traer",
-    "l:tranquilo",
+    "l:ver",
+    "l:videollamada",
     "l:álbum",
     "l:único"
   ]
