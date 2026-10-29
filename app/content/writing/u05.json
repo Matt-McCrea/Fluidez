@@ -1,0 +1,457 @@
+[
+  {
+    "id": "w-u05-01",
+    "unit": "u05",
+    "prompt": "Mariana, the journalist, texts you: what do you do on weekends? Answer her in two short sentences, both about you.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "hacer",
+        "tense": "presente",
+        "person": "yo",
+        "label": "use the I form of hacer (hago)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Los sábados hago pan con Vale. Los domingos salgo con mis amigos.",
+    "focus": "g:yo-irregular",
+    "requires": [
+      "c:hago-salgo-vengo",
+      "g:gender-articles",
+      "g:yo-irregular",
+      "l:amigo",
+      "l:domingo",
+      "l:hacer",
+      "l:pan",
+      "l:salir",
+      "l:sábado",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u05-02",
+    "unit": "u05",
+    "prompt": "Vale's sister Camila video-calls and asks if you have brothers or sisters. You are an only child. Answer her in two short sentences.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "hijo único",
+          "hija única"
+        ],
+        "label": "say you are an only child"
+      },
+      {
+        "type": "negation",
+        "label": "say you have no brothers or sisters"
+      }
+    ],
+    "model": "Soy hijo único. No tengo hermanos, pero tengo muchos primos.",
+    "focus": "c:hijo-unico",
+    "requires": [
+      "c:hijo-unico",
+      "c:tengo",
+      "g:yo-irregular",
+      "l:hermanos",
+      "l:hijo",
+      "l:primo",
+      "l:ser",
+      "l:tener",
+      "l:único",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u05-03",
+    "unit": "u05",
+    "prompt": "Your grandmother's friend asks what your best friend is like. Describe someone your age: looks and personality, in two or three sentences.",
+    "minWords": 10,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "tiene",
+          "lleva"
+        ],
+        "label": "say what the person has (tiene el pelo...)"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(es|está)\\s+\\w+",
+        "label": "say what the person is like with es"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Mi amiga Laura es alta y delgada. Tiene el pelo rubio y es muy simpática.",
+    "focus": "p:es-tiene-lleva",
+    "requires": [
+      "c:tienes",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:alto",
+      "l:amiga",
+      "l:delgado",
+      "l:pelo",
+      "l:rubio",
+      "l:ser",
+      "l:simpático",
+      "l:tener",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u05-04",
+    "unit": "u05",
+    "prompt": "Don Hernando, an older man you call usted, asks about your family. Tell him two things about your parents or siblings, using mi and mis.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bmi\\b",
+        "label": "use mi with one person"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bmis\\b",
+        "label": "use mis with more than one"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "mi hermanos",
+          "mis hermano ",
+          "mi padres",
+          "mis madre "
+        ],
+        "label": "mi and mis must match the number"
+      }
+    ],
+    "model": "Mi madre es profesora. Mis hermanos viven en Toronto.",
+    "focus": "g:possessives",
+    "requires": [
+      "g:present-er-ir",
+      "g:ser-identity",
+      "l:hermanos",
+      "l:madre",
+      "l:profesora",
+      "l:ser",
+      "l:vivir",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u05-05",
+    "unit": "u05",
+    "prompt": "Your friend Vale asks how old your grandfather is. Write his age and one more thing about him, in two sentences.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "tener",
+        "tense": "presente",
+        "person": "él/ella",
+        "label": "use tiene for his age"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\baños\\b",
+        "label": "say the age with años"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "es setenta",
+          "es ochenta",
+          "es sesenta",
+          "es noventa"
+        ],
+        "label": "age uses tener, not ser"
+      }
+    ],
+    "model": "Mi abuelo tiene ochenta años. Es muy simpático y muy trabajador.",
+    "focus": "p:tener-anos",
+    "requires": [
+      "c:tienes",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:abuelo",
+      "l:año",
+      "l:ser",
+      "l:simpático",
+      "l:tener",
+      "l:trabajador",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:tener-anos"
+    ]
+  },
+  {
+    "id": "w-u05-06",
+    "unit": "u05",
+    "prompt": "A form at the language school asks: who is in your family? Write how many you are and who they are, in two sentences.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "presente",
+        "person": "nosotros",
+        "label": "use somos for how many you are"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "En mi familia somos cinco. Mis padres, mi hermana, mi hermano y yo.",
+    "focus": "p:somos-cuatro",
+    "requires": [
+      "g:ser-identity",
+      "l:familia",
+      "l:hermana",
+      "l:hermano",
+      "l:padres",
+      "l:ser",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u05-07",
+    "unit": "u05",
+    "prompt": "Camila's mother wants to know if you have a girlfriend or boyfriend. Say you have nobody and you never have time, in two short sentences.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "negation",
+        "label": "say it with no"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(nunca|nadie|ningún|ninguna)\\b",
+        "label": "use nunca, nadie or ningún"
+      }
+    ],
+    "model": "No tengo novia. Nunca tengo tiempo, trabajo mucho.",
+    "focus": "g:negation-words",
+    "requires": [
+      "c:tengo",
+      "g:present-ar",
+      "g:yo-irregular",
+      "l:novia",
+      "l:tener",
+      "l:tiempo",
+      "l:trabajar",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u05-08",
+    "unit": "u05",
+    "prompt": "You are at a birthday with Vale, someone your age. Introduce your cousin to her and say her age and one thing about her, in two sentences.",
+    "minWords": 10,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bpresento a\\b",
+        "label": "use te presento a"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\btiene\\s+\\w+(\\s+\\w+)?\\s+años\\b",
+        "label": "say her age with tiene ... años"
+      }
+    ],
+    "model": "Vale, te presento a mi prima Laura. Tiene veinticinco años y es muy divertida.",
+    "focus": "p:te-presento-a",
+    "requires": [
+      "c:tienes",
+      "g:adjective-agreement",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
+      "l:divertido",
+      "l:presentar",
+      "l:prima",
+      "l:ser",
+      "l:tener",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:tener-anos"
+    ]
+  },
+  {
+    "id": "w-u05-09",
+    "unit": "u05",
+    "prompt": "Vale asks if you know her brother. You met him yesterday at the café. Reply in two short sentences.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bconozco a\\b",
+        "label": "people need a: conozco a..."
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "conozco su",
+          "conozco tu",
+          "conozco mi"
+        ],
+        "label": "put a before a person"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Sí, conozco a tu hermano. Es muy buena gente.",
+    "focus": "p:personal-a",
+    "requires": [
+      "c:buena-gente",
+      "g:ser-identity",
+      "g:yo-irregular",
+      "l:buena",
+      "l:conocer",
+      "l:gente",
+      "l:hermano",
+      "l:ser",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u05-10",
+    "unit": "u05",
+    "prompt": "A new friend asks about your siblings. Say that you have one older and one younger sibling, and give one name, in two sentences.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bmayor\\b",
+        "label": "use mayor for older"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bmenor\\b",
+        "label": "use menor for younger"
+      },
+      {
+        "type": "verbForm",
+        "inf": "tener",
+        "tense": "presente",
+        "person": "yo",
+        "label": "use tengo"
+      }
+    ],
+    "model": "Tengo un hermano mayor y una hermana menor. Mi hermana se llama Ana.",
+    "focus": "p:mayor-menor",
+    "requires": [
+      "c:se-llama",
+      "c:tengo",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:yo-irregular",
+      "l:hermana",
+      "l:hermano",
+      "l:llamarse",
+      "l:mayor",
+      "l:menor",
+      "l:tener",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u05-11",
+    "unit": "u05",
+    "prompt": "Hernando thinks your brother is short and thirty. Politely correct him in one or two sentences: he is tall and thirty-five.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "negation",
+        "label": "start by saying no"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bno (es|tiene)\\b[^.]*,\\s*(es|tiene)\\b",
+        "label": "no es X, es Y"
+      }
+    ],
+    "model": "No, mi hermano no es bajo, es alto. No tiene treinta años, tiene treinta y cinco.",
+    "focus": "p:no-es-x-es-y",
+    "requires": [
+      "c:tienes",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:alto",
+      "l:año",
+      "l:hermano",
+      "l:ser",
+      "l:tener",
+      "p:possessives-basic",
+      "p:tener-anos"
+    ]
+  },
+  {
+    "id": "w-u05-12",
+    "unit": "u05",
+    "prompt": "For the language school form, write your age and your sister's age. Make one of the ages end in 21 or 31 (veintiún, treinta y un).",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(veintiún|treinta y un|cuarenta y un)\\s+años\\b",
+        "label": "veintiún, treinta y un: un before años"
+      },
+      {
+        "type": "verbForm",
+        "inf": "tener",
+        "tense": "presente",
+        "person": "yo",
+        "label": "use tengo for your age"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Tengo veintiún años. Mi hermana tiene treinta y un años.",
+    "focus": "p:numbers-un-una",
+    "requires": [
+      "c:tengo",
+      "c:tienes",
+      "g:gender-articles",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:año",
+      "l:hermana",
+      "l:tener",
+      "p:possessives-basic",
+      "p:tener-anos"
+    ]
+  }
+]
