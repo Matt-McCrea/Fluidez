@@ -2,7 +2,7 @@
   "id": "ch051",
   "unit": "u18",
   "title": "Una amiga mía",
-  "text": "A las cinco menos un minuto, el empleado de la terminal llegó al hostal con una maleta negra.\nEmpleado: ¿Esta maleta es suya, señor?\nTomás: ¡Sí, es mía! Mis camisas, mi pasaporte y el café de Rosa.\nTomás sacó de la maleta un saco morado.\nVale: ¿Te vas a vestir con esto? No, Tomás. Hoy no.\nVale le quitó el saco de las manos.\nLa casa de la familia Ospina estaba en la carrera 70. La fiesta oficial empezaba a las ocho, pero a las cinco ya había cuarenta personas, música y mucho ruido.\nTío: ¡Hola, pues! ¿Usted es el amigo de Vale?\nPrima: ¿Y qué más, pues? ¿Cómo le pareció Medellín, pues?\nDe diez palabras, Tomás entendía una. No entendía siquiera los nombres. La única palabra fácil era «pues».\nA las siete, la abuela de Vale lo sacó a bailar. Tomás utilizó su única vuelta, y la abuela le dio un beso.\nAbuela: ¡Muy bien, mijo! ¿Y la otra vuelta?\nDespués, la mamá de Vale lo llevó a la cocina. Se llamaba Beatriz, y tenía los ojos de Vale.\nTomás: Esto es para usted. Es de Hernando. Es café de Rosa.\nBeatriz miró el paquete un rato largo.\nBeatriz: Rosa me trajo un café igual, en 1990. Estuvo en esta casa una vez. Rosa era una amiga mía.\nTomás: ¿Una amiga suya? ¿Y por qué estaba en Medellín?\nBeatriz: Buscaba a su hermano, Joaquín. Mi papá trabajó con él aquí, unos años. Joaquín se fue después para la costa.\nTomás: ¿Para la costa? ¿Dónde?\nBeatriz: Rosa me dijo el nombre de un pueblo. Cuando Vale se fue para Bogotá, yo la mandé al café de Rosa. Vale no sabe nada de esto.\nDesde la sala, Vale gritó.\nVale: ¡Tomás! ¡Mi familia es tuya también! ¡Ven a bailar!",
+  "text": "A las cinco menos un minuto, el empleado de la terminal llegó al hostal con una maleta negra.\nEmpleado: ¿Esta maleta es suya, señor?\nTomás: ¡Sí, es mía! Mis camisas, mi pasaporte y el café de Rosa.\nTomás sacó de la maleta un saco morado.\nVale: ¿Te vas a vestir con esto? No, Tomás. Hoy no.\nVale le quitó el saco de las manos.\nLa casa de la familia Ospina estaba en la carrera 70. La fiesta oficial empezaba a las ocho, pero a las cinco ya había cuarenta personas, música y mucho ruido.\nTío: ¡Hola, pues! ¿Usted es el amigo de Vale?\nPrima: ¿Y qué más, pues? ¿Cómo le pareció Medellín, pues?\nDe diez palabras, Tomás entendía una. No entendía siquiera los nombres. La única palabra fácil era «pues».\nA las siete, la abuela de Vale lo sacó a bailar. Tomás utilizó su única vuelta, y la abuela le dio un beso.\nAbuela: ¡Muy bien, mijo! ¿Y la otra vuelta?\nDespués, la mamá de Vale lo llevó a la cocina. Se llamaba Beatriz, y tenía los ojos de Vale.\nTomás: Esto es para usted. Es de Hernando. Es café de Rosa.\nBeatriz miró el paquete un rato largo.\nBeatriz: Rosa me trajo un café igual, en 1990. Estuvo en esta casa una vez. Rosa era una amiga mía.\nTomás: ¿Una amiga suya? ¿Y por qué estaba en Medellín?\nBeatriz: Buscaba a su hermano, Joaquín. Mi papá trabajó con él aquí, hace muchos años. Pero en 1990 Joaquín ya no estaba en Medellín: se fue para la costa.\nTomás: ¿Para la costa? ¿Dónde?\nBeatriz: Rosa me dijo el nombre de un pueblo. Cuando Vale se fue para Bogotá, yo la mandé al café de Rosa. Vale no sabe nada de esto.\nDesde la sala, Vale gritó.\nVale: ¡Tomás! ¡Mi familia es tuya también! ¡Ven a bailar!",
   "gloss": [
     {
       "es": "A las cinco menos un minuto",
@@ -129,7 +129,7 @@
       "answer": 0
     }
   ],
-  "hook": "Beatriz has kept Rosa's secret for thirty six years, and Vale doesn't know a word of it. On Sunday's bus back to Bogotá, Tomás has nine hours of bends to decide whether to tell her.",
+  "hook": "Beatriz has kept Rosa's secret for thirty-six years, and Vale doesn't know a word of it. On Sunday's bus back to Bogotá, Tomás has nine hours of bends to decide whether to tell her.",
   "requires": [
     "c:bien-y-tu",
     "c:con-el-ella",
@@ -141,11 +141,13 @@
     "c:que-mas",
     "c:una-vez",
     "c:voy-vas",
+    "c:ya-no",
     "g:adjective-agreement",
     "g:commands-tu",
     "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
+    "g:hace-ago",
     "g:imperfect-habitual",
     "g:imperfect-states",
     "g:indirect-objects",
@@ -155,6 +157,7 @@
     "g:possessives-stressed",
     "g:prep-pronouns",
     "g:present-er-ir",
+    "g:pret-vs-imperfect",
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
@@ -211,6 +214,7 @@
     "l:fiesta",
     "l:fácil",
     "l:gritar",
+    "l:hacer",
     "l:hermano",
     "l:hostal",
     "l:hoy",

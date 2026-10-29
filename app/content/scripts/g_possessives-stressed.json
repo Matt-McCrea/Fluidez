@@ -71,14 +71,14 @@
   ],
   "pitfalls": [
     {
-      "wrong": "¿El celular? Es mi.",
-      "right": "¿El celular? Es mío.",
-      "why": "Almost. *Mi* always needs a thing after it; on its own, mine is *mío*."
+      "wrong": "¿Esta maleta es tuya, señor?",
+      "right": "¿Esta maleta es suya, señor?",
+      "why": "Almost. To a stranger you use *usted*, and yours for *usted* is *suyo*, *suya*."
     },
     {
-      "wrong": "Un amigo de mí vive en Cali.",
-      "right": "Un amigo mío vive en Cali.",
-      "why": "Spanish has no of me for owning: put *mío* after the noun."
+      "wrong": "Esos asientos son nuestro.",
+      "right": "Esos asientos son nuestros.",
+      "why": "It matches the seats, and there are several, so *nuestros*."
     },
     {
       "wrong": "¿La maleta? Es mío.",

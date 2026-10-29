@@ -29,11 +29,11 @@
       "id": "t2",
       "npc": "Listo. ¿Sencillo o ida y vuelta?",
       "npcEn": "Fine. Single or return?",
-      "intent": "Say return, because you come back on Monday.",
+      "intent": "Say return, because you come back on Sunday.",
       "accept": [
-        "Ida y vuelta. Volvemos el lunes.",
-        "De ida y vuelta, por favor. Volvemos el lunes.",
-        "Ida y vuelta, porque volvemos el lunes."
+        "Ida y vuelta. Volvemos el domingo.",
+        "De ida y vuelta, por favor. Volvemos el domingo.",
+        "Ida y vuelta, porque volvemos el domingo."
       ],
       "require": [
         {
@@ -73,8 +73,8 @@
     },
     {
       "id": "t4",
-      "npc": "A las seis. Aquí están los dos tiquetes. ¿Se los doy a usted o a su amiga?",
-      "npcEn": "At six. Here are the two tickets. Shall I give them to you or to your friend?",
+      "npc": "A las cinco y media. Aquí están los dos tiquetes. ¿Se los doy a usted o a su amiga?",
+      "npcEn": "At half past five. Here are the two tickets. Shall I give them to you or to your friend?",
       "intent": "Tell him to give them to you, please.",
       "accept": [
         "Démelos a mí, por favor.",
@@ -105,7 +105,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bes m[ií]o\\b",
+          "pattern": "\\bes (el )?m[ií]o\\b",
           "flags": "i",
           "label": "it's mine: es mío (not es mi)"
         }
@@ -171,6 +171,7 @@
     "l:bus",
     "l:celular",
     "l:dar",
+    "l:domingo",
     "l:día",
     "l:dónde",
     "l:estar",
@@ -179,7 +180,6 @@
     "l:hora",
     "l:ida",
     "l:listo",
-    "l:lunes",
     "l:necesitar",
     "l:nombre",
     "l:puerta",

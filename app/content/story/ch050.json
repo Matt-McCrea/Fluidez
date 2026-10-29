@@ -2,7 +2,7 @@
   "id": "ch050",
   "unit": "u18",
   "title": "Asiento trece",
-  "text": "«Hoteles Altamira. Su destino en Medellín».\nLa publicidad estaba en todas las estaciones del metro.\nVale: Altamira está en Bogotá, en Medellín, en Cartagena. Pero Medellín tiene metro. Un tren de verdad.\nEn el tren, Vale le dio el asiento de la ventanilla.\nVale: Mira, ahí está mi colegio. Ahí aprendí a hacer pan.\nEn la terminal, el empleado de la ventanilla estaba muy cansado.\nEmpleado: Su maleta desapareció.\nTomás: Las maletas no desaparecen. Alguien las lleva.\nEmpleado: Con mi salario, yo no busco maletas.\nPero Tomás tenía una habilidad: en Toronto, su trabajo era encontrar problemas.\nTomás: ¿Tiene la lista de pasajeros?\nEl bus hizo una escala en Puerto Triunfo, después del peaje. Un pasajero del asiento catorce, con destino al puerto, bajó allí.\nTomás: ¿Una escala? ¿En un bus? Yo estaba en el asiento trece. Su maleta y mi maleta son iguales.\nEl empleado llamó al pasajero.\nPasajero: ¿Aló? Sí, tengo una maleta negra. ¡Qué pena con usted! Tiene camisas de colores muy modernos. Y un paquete de café. ¡Qué olor!\nTomás: ¡Por favor, el café es para la mamá de Vale!\nPasajero: Tranquilo. Mañana tomo el bus para Medellín y llevo la maleta a la terminal. Se lo prometo.\nEmpleado: Y de ahí se la llevo al hostal. También se lo prometo.\nTomás: Tráigamela antes de las cinco, por favor.\nEmpleado: Usted tiene habilidad, señor. ¿No quiere trabajar aquí? El salario es malo, pero hay tinto todo el día.\nVale: No, gracias. Él ya tiene un café y una empleada muy brava.\nEn el metro, el celular de Vale sonó. Era su mamá.\nVale: Tomás, mi mamá quiere hablar contigo. Mañana, antes de la fiesta. Ella y tú, sin mí.",
+  "text": "«Hoteles Altamira. Su destino en Medellín».\nLa publicidad estaba en todas las estaciones del metro.\nVale: Altamira está en Bogotá, en Medellín, en Cartagena. Pero Medellín tiene metro. Un tren de verdad.\nEn el tren, Vale le dio el asiento de la ventanilla.\nVale: Mira, ahí está mi colegio. Ahí aprendí a hacer pan.\nEn la terminal, el empleado de la ventanilla estaba muy cansado.\nEmpleado: Su maleta desapareció.\nTomás: Las maletas no desaparecen. Alguien las lleva.\nEmpleado: Con mi salario, yo no busco maletas.\nPero Tomás tenía una habilidad: en Toronto, su trabajo era encontrar problemas.\nTomás: ¿Tiene la lista de pasajeros?\nEmpleado: A ver. El bus paró en un peaje y después hizo una escala en Puerto Triunfo. El pasajero del asiento catorce, con destino a Puerto Triunfo, bajó allí.\nTomás: ¿Una escala? ¿En un bus? ¿Y hay un puerto en Puerto Triunfo?\nVale: No. Hay un río y muchos hipopótamos.\nTomás: Yo estaba en el asiento trece. Su maleta y mi maleta son iguales, ¿no?\nEl empleado llamó al pasajero.\nPasajero: ¿Aló? Sí, tengo una maleta negra. ¡Qué pena con usted! Tiene camisas de colores muy modernos. Y un paquete de café. ¡Qué olor!\nTomás: ¡Por favor, el café es para la mamá de Vale!\nPasajero: Tranquilo. Mañana tomo el bus para Medellín y llevo la maleta a la terminal. Se lo prometo.\nEmpleado: Y de ahí se la llevo al hostal. También se lo prometo.\nTomás: Tráigamela antes de las cinco, por favor.\nEmpleado: Usted tiene habilidad, señor. ¿No quiere trabajar aquí? El salario es malo, pero hay tinto todo el día.\nVale: No, gracias. Él ya tiene un café y una empleada muy brava.\nEn el metro, el celular de Vale sonó. Era su mamá.\nVale: Tomás, mi mamá quiere hablar contigo. Mañana, antes de la fiesta. Ella y tú, sin mí.",
   "gloss": [
     {
       "es": "Su destino en Medellín",
@@ -18,15 +18,15 @@
     },
     {
       "es": "su trabajo era encontrar problemas",
-      "en": "his job was finding problems (as a software tester)"
+      "en": "his job was finding problems (in software)"
     },
     {
       "es": "Puerto Triunfo",
       "en": "Puerto Triunfo, a town on the Magdalena river"
     },
     {
-      "es": "con destino al puerto",
-      "en": "heading for the port"
+      "es": "con destino a Puerto Triunfo",
+      "en": "heading for Puerto Triunfo"
     },
     {
       "es": "¡Qué pena con usted!",
@@ -43,6 +43,10 @@
     {
       "es": "Ella y tú, sin mí.",
       "en": "Just you and her, without me."
+    },
+    {
+      "es": "hipopótamos",
+      "en": "hippos (escaped from an old ranch near Puerto Triunfo)"
     }
   ],
   "questions": [
@@ -131,12 +135,14 @@
   ],
   "hook": "The suitcase is coming back on tomorrow's bus, with Rosa's coffee inside, if the passenger keeps his promise. And before the party, Vale's mother wants Tomás alone.",
   "requires": [
+    "c:a-ver",
     "c:alo",
     "c:bien-y-tu",
     "c:en-serio",
     "c:era",
     "c:gracias-de-nada",
     "c:hay",
+    "c:no-cierto",
     "c:oye-mira",
     "c:por-favor",
     "c:que-pena",
@@ -229,6 +235,7 @@
     "l:olor",
     "l:pan",
     "l:paquete",
+    "l:parar",
     "l:pasajero",
     "l:peaje",
     "l:pena",
@@ -238,6 +245,7 @@
     "l:puerto",
     "l:querer",
     "l:qué",
+    "l:río",
     "l:salario",
     "l:ser",
     "l:señor",
@@ -252,6 +260,7 @@
     "l:tranquilo",
     "l:tren",
     "l:ventanilla",
+    "l:ver",
     "l:verdad"
   ]
 }

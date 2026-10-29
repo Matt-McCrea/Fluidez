@@ -3,7 +3,7 @@
   "hook": {
     "line": "Tonight Tomás meets Vale's whole family, and he wants to arrive with something in his hands. English would say bring. Spanish wants to know which way the thing is moving.",
     "es": "¿Qué llevo a la casa de tu mamá?",
-    "en": "What shall I take to your mum's house?"
+    "en": "What should I take to your mom's house?"
   },
   "examples": [
     { "es": "Tráeme un tinto, por favor.", "en": "Bring me a black coffee, please. (to a friend)" },
@@ -12,7 +12,7 @@
     { "es": "¿Me llevas al aeropuerto?", "en": "Will you take me to the airport? (to a friend)" },
     { "es": "Vale trajo arepas de Medellín.", "en": "Vale brought arepas from Medellín." }
   ],
-  "rule": "These two split exactly like *venir* and *ir*.\n*traer*: towards here, where the speaker is. *Tráeme un tinto.*\n*llevar*: away from here, to somewhere else. *Lleva esto a la cocina.*\n\nEnglish bring also goes to where the other person is. Spanish usually doesn't: going to Vale's mum's house, it's *¿Qué llevo?* Only when you ask the host directly can you borrow their here: *¿Qué traigo?*\n\nTwo odd forms: I bring is *traigo* (like *tengo*, *hago*), and brought is *trajo*, *traje*.",
+  "rule": "*traer* works like *venir*, and *llevar* works like *ir*.\n*traer*: towards here, where the speaker is. *Tráeme un tinto.*\n*llevar*: away from here, to somewhere else. *Lleva esto a la cocina.*\n\nEnglish bring also goes to where the other person is. Spanish usually doesn't: going to Vale's mom's house, it's *¿Qué llevo?* Only when you ask the host directly can you borrow their here: *¿Qué traigo?*\n\nTwo odd forms: I bring is *traigo* (like *tengo*, *hago*), and brought is *trajo*, *traje*.",
   "smallPrint": "Teachers call this deixis: words whose meaning depends on where the speaker stands, like *aquí*, *venir* and *traer*.",
   "readAndPick": [
     { "es": "Tráeme un vaso de agua.", "options": ["Bring me a glass of water.", "Take a glass of water for me."], "answer": 0 },

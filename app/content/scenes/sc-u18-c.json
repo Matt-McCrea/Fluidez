@@ -2,7 +2,7 @@
   "id": "sc-u18-c",
   "unit": "u18",
   "title": "Room 504",
-  "brief": "You're Tomás. You reach the hotel in Medellín late at night with only your backpack, and Vale made the booking. Check in, find out the price, and get what you need for the night. The man at reception is a stranger, so use usted.",
+  "brief": "You're Tomás. You reach the hostel in Medellín late at night with only your backpack, and Vale made the booking. Check in, find out the price, and get what you need for the night. The man at reception is a stranger, so use usted.",
   "turns": [
     {
       "id": "t1",
@@ -73,8 +73,8 @@
     },
     {
       "id": "t4",
-      "npc": "Ciento ochenta mil pesos por noche, con desayuno. Es la 504. ¿Le subo la mochila?",
-      "npcEn": "A hundred and eighty thousand pesos a night, with breakfast. It's 504. Shall I take your backpack up?",
+      "npc": "Ciento veinte mil pesos por noche, con desayuno. Es la 504. ¿Le subo la mochila?",
+      "npcEn": "A hundred and twenty thousand pesos a night, with breakfast. It's 504. Shall I take your backpack up?",
       "intent": "Say yes, ask him to take it up for you, please.",
       "accept": [
         "Sí, súbamela, por favor.",

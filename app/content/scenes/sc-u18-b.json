@@ -2,7 +2,7 @@
   "id": "sc-u18-b",
   "unit": "u18",
   "title": "Nine hours, one suitcase short",
-  "brief": "You're Tomás. After nine hours of curves you get off the bus at the Terminal del Norte in Medellín, and your red suitcase isn't in the luggage hold. Explain the problem and get it sent to your hotel in Laureles. The man from the bus company is a stranger, so use usted.",
+  "brief": "You're Tomás. After eleven hours of curves you get off the bus at the Terminal del Norte in Medellín, and your black suitcase isn't in the luggage hold. Explain the problem and get it sent to your hostel. The man from the bus company is a stranger, so use usted.",
   "turns": [
     {
       "id": "t1",
@@ -11,7 +11,7 @@
       "intent": "Say yes: you arrived on the bus from Bogotá, and your suitcase isn't here.",
       "accept": [
         "Sí, por favor. Llegué en el bus de Bogotá y mi maleta no está.",
-        "Sí. Llegué de Bogotá en el bus de las seis, y mi maleta no está aquí.",
+        "Sí. Llegué de Bogotá en el bus de las cinco y media, y mi maleta no está aquí.",
         "Buenas tardes. Sí, llegué en el bus de Bogotá, pero mi maleta no está."
       ],
       "require": [
@@ -32,13 +32,13 @@
     },
     {
       "id": "t2",
-      "npc": "Tranquilo, señor. Aquí hay tres maletas sin dueño. ¿Esta negra es suya?",
-      "npcEn": "Don't worry, sir. There are three suitcases here with no owner. Is this black one yours?",
-      "intent": "Say no, yours is the red one.",
+      "npc": "Tranquilo, señor. Aquí hay tres maletas sin dueño. ¿Esta roja es suya?",
+      "npcEn": "Don't worry, sir. There are three suitcases here with no owner. Is this red one yours?",
+      "intent": "Say no, yours is the black one.",
       "accept": [
-        "No, la mía es la roja.",
-        "No, no es mía. La mía es la roja.",
-        "No, señor. La mía es roja."
+        "No, la mía es la negra.",
+        "No, no es mía. La mía es la negra.",
+        "No, señor. La mía es negra."
       ],
       "require": [
         {
@@ -57,20 +57,20 @@
     },
     {
       "id": "t3",
-      "npc": "¿Roja? Aquí no hay ninguna maleta roja. Quizá otro pasajero se la llevó.",
-      "npcEn": "Red? There's no red suitcase here. Maybe another passenger took it.",
-      "intent": "Say you need it for tonight: your clothes for the party are in it.",
+      "npc": "¿Negra? Aquí no hay ninguna maleta negra. Quizá otro pasajero se la llevó.",
+      "npcEn": "Black? There's no black suitcase here. Maybe another passenger took it.",
+      "intent": "Say you need it for tomorrow: your clothes for the party are in it.",
       "accept": [
-        "La necesito para esta noche. Mi ropa para la fiesta está en la maleta.",
-        "Pero la necesito para esta noche. Mi ropa para la fiesta está ahí.",
-        "¡Ay, no! La necesito para esta noche. La ropa para la fiesta está en la maleta."
+        "La necesito para mañana. Mi ropa para la fiesta está en la maleta.",
+        "Pero la necesito para mañana. Mi ropa para la fiesta está ahí.",
+        "¡Ay, no! La necesito para mañana. La ropa para la fiesta está en la maleta."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "para esta noche",
+          "pattern": "para mañana",
           "flags": "i",
-          "label": "a deadline takes para: para esta noche"
+          "label": "a deadline takes para: para mañana"
         }
       ],
       "focus": "g:por-para-1",
@@ -78,13 +78,13 @@
     },
     {
       "id": "t4",
-      "npc": "Entiendo. Si la encontramos, se la mandamos hoy. ¿A qué dirección?",
-      "npcEn": "I understand. If we find it, we'll send it to you today. To what address?",
-      "intent": "Tell him to send it to you at the hotel in Laureles, please.",
+      "npc": "Entiendo. Si la encontramos, se la mandamos. ¿A qué dirección?",
+      "npcEn": "I understand. If we find it, we'll send it to you. To what address?",
+      "intent": "Tell him to send it to you at your hostel, please.",
       "accept": [
-        "Mándemela al hotel, por favor. Está en Laureles.",
-        "Mándemela al hotel en Laureles, por favor.",
-        "Por favor, mándemela a mi hotel. Está en el barrio Laureles."
+        "Mándemela al hostal, por favor.",
+        "Mándemela a mi hostal, por favor. Está en la montaña.",
+        "Por favor, mándemela al hostal. Ya le doy la dirección."
       ],
       "require": [
         {
@@ -99,8 +99,8 @@
     },
     {
       "id": "t5",
-      "npc": "¡Espere! Un señor llamó por teléfono. Tiene una maleta roja en su carro, pero dice que no es suya.",
-      "npcEn": "Wait! A man called on the phone. He has a red suitcase in his car, but he says it isn't his.",
+      "npc": "¡Espere! Un pasajero llamó desde Puerto Triunfo. Tiene una maleta negra, pero dice que no es suya.",
+      "npcEn": "Wait! A passenger called from Puerto Triunfo. He has a black suitcase, but he says it isn't his.",
       "intent": "Say great, that one is yours, and ask him to tell the man, please.",
       "accept": [
         "¡Qué bien! Es la mía. Dígaselo, por favor.",
@@ -126,8 +126,8 @@
     },
     {
       "id": "t6",
-      "npc": "Listo, ya se lo dije. Él lleva la maleta a su hotel esta tarde.",
-      "npcEn": "Done, I've told him. He's taking the suitcase to your hotel this afternoon.",
+      "npc": "Listo, ya se lo dije. Él trae la maleta mañana en el primer bus.",
+      "npcEn": "Done, I've told him. He's bringing the suitcase tomorrow on the first bus.",
       "intent": "Thank him for his help and say goodbye.",
       "accept": [
         "Muchas gracias por su ayuda. Hasta luego.",
@@ -167,9 +167,11 @@
     "g:gender-articles",
     "g:hay-vs-esta",
     "g:indefinites",
+    "g:indirect-objects",
     "g:negation-words",
     "g:possessives-stressed",
     "g:present-ar",
+    "g:present-er-ir",
     "g:preterite-ar",
     "g:preterite-irregular-strong",
     "g:preterite-spelling-stem",
@@ -179,15 +181,15 @@
     "g:stem-boot",
     "g:stem-e-i",
     "g:that-clauses",
+    "g:yo-irregular",
     "l:ahí",
     "l:aquí",
     "l:ayuda",
     "l:ayudar",
-    "l:barrio",
     "l:bien",
     "l:buena",
     "l:bus",
-    "l:carro",
+    "l:dar",
     "l:decir",
     "l:dirección",
     "l:dueño",
@@ -197,18 +199,17 @@
     "l:estar",
     "l:favor",
     "l:fiesta",
-    "l:hotel",
-    "l:hoy",
+    "l:hostal",
     "l:listo",
     "l:llamar",
     "l:llegar",
-    "l:llevar",
     "l:llevarse",
     "l:maleta",
     "l:mandar",
+    "l:mañana",
+    "l:montaña",
     "l:necesitar",
     "l:negro",
-    "l:noche",
     "l:pasajero",
     "l:quizá",
     "l:qué",
@@ -217,8 +218,8 @@
     "l:ser",
     "l:señor",
     "l:tarde",
-    "l:teléfono",
     "l:tener",
+    "l:traer",
     "l:tranquilo",
     "p:aqui-ahi-alla",
     "p:con-sin",
@@ -226,13 +227,17 @@
     "p:demonstratives-basic",
     "p:gracias-por",
     "p:indefinites-basic",
+    "p:llevar-traer",
     "p:me-te-nos-objects",
     "p:no-es-x-es-y",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
     "p:otro-no-article",
     "p:para-inf",
     "p:possessives-basic",
     "p:prep-questions-basic",
     "p:request-ladder",
+    "p:telling-time",
     "p:time-sequence-basic"
   ]
 }

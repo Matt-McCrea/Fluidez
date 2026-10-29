@@ -9,7 +9,7 @@
     { "es": "Gracias por el regalo.", "en": "Thanks for the present." },
     { "es": "Este regalo es para ti.", "en": "This present is for you. (to a friend)" },
     { "es": "Lo hice para ti.", "en": "I made it for you. (to a friend)" },
-    { "es": "Lo hice por ti.", "en": "I did it because of you. (to a friend)" },
+    { "es": "Lo hice por ti.", "en": "I did it for your sake. (to a friend)" },
     { "es": "Lo hago para mañana.", "en": "I'll do it by tomorrow." },
     { "es": "Lo hago por la mañana.", "en": "I'll do it in the morning." },
     { "es": "Pasamos por Cali y seguimos para Medellín.", "en": "We went through Cali and carried on to Medellín." }
@@ -17,8 +17,8 @@
   "rule": "Look at the pairs above. Same sentence, one little word swapped, and the meaning turns round.\n\n*para* points forward:\nheading to a place: *para Medellín*\nfor someone to have: *para ti*\ndue by a day: *para mañana*\nin order to: *para dormir*\n\n*por* looks at the way or the cause:\nthrough a place: *por Cali*\nbecause of: *por la lluvia*, *por ti*\na price or a swap: *por cien mil*\nper: *por noche*\nand part of the day: *por la mañana*\n\nThe pair to watch is *para ti* and *por ti*. A gift is *para ti*: it ends up with you. *Por ti* means you're the reason: I did it because of you, for your sake.\n\nA quick test: if because of, through or per fits in English, it's *por*.",
   "smallPrint": "Teachers call these two prepositions. This contrast comes back at B1, when *por* picks up more jobs.",
   "readAndPick": [
-    { "es": "Lo hice para ti.", "options": ["I made it for you to have.", "I did it because of you."], "answer": 0 },
-    { "es": "Lo hice por ti.", "options": ["I made it for you to have.", "I did it because of you."], "answer": 1 },
+    { "es": "Lo hice para ti.", "options": ["I made it for you to have.", "I did it for your sake."], "answer": 0 },
+    { "es": "Lo hice por ti.", "options": ["I made it for you to have.", "I did it for your sake."], "answer": 1 },
     { "es": "Lo hago por la mañana.", "options": ["I'll do it by tomorrow.", "I'll do it in the morning."], "answer": 1 },
     { "es": "Lo hago para mañana.", "options": ["I'll do it by tomorrow.", "I'll do it in the morning."], "answer": 0 },
     { "es": "El tren va por Pereira.", "options": ["The train is heading to Pereira.", "The train goes via Pereira."], "answer": 1 },

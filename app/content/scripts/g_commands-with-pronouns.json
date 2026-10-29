@@ -29,7 +29,7 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Choose *Llámame* or *Me llama* and type the whole sentence: ___ mañana, Vale. (Call me tomorrow, Vale.)",
+      "prompt": "Choose *Llámame* or *Me llame* and type the whole sentence: ___ mañana, Vale. (Call me tomorrow, Vale.)",
       "answer": "Llámame mañana, Vale.",
       "accept": [],
       "why": "In a do-it command the little word goes on the end, and the accent keeps the stress on *lla*."
@@ -89,9 +89,9 @@
       "why": "Gluing on *me* would move the stress, so *llámame* needs its accent."
     },
     {
-      "wrong": "Dalome.",
+      "wrong": "Dame lo.",
       "right": "Dámelo.",
-      "why": "Person first, then thing: *me* before *lo*."
+      "why": "The little words glue on as one word, and the extra syllable needs the accent."
     },
     {
       "wrong": "Dálelo a Vale.",

@@ -416,7 +416,7 @@
   {
     "id": "u18-0019",
     "es": "Que te vaya bien.",
-    "en": "All the best. (to a friend)",
+    "en": "Hope it goes well. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -435,20 +435,20 @@
   },
   {
     "id": "u18-0020",
-    "es": "Tomás le dijo ¡buen viaje! a Vale en la puerta de la terminal.",
-    "en": "Tomás said have a good trip to Vale at the terminal door.",
+    "es": "En la puerta de la terminal, Hernando nos dijo: ¡buen viaje!",
+    "en": "At the terminal door, Hernando said to us: have a good trip!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:buen-viaje",
       "g:gender-articles",
-      "g:indirect-objects",
       "g:preterite-irregular-strong",
       "l:buen",
       "l:decir",
       "l:puerta",
       "l:terminal",
-      "l:viaje"
+      "l:viaje",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "c:buen-viaje",
@@ -701,7 +701,7 @@
   {
     "id": "u18-0032",
     "es": "¿Quieres que te ayude con las maletas?",
-    "en": "Do you want me to help you with the suitcases?",
+    "en": "Do you want me to help you with the suitcases? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -807,17 +807,19 @@
   },
   {
     "id": "u18-0037",
-    "es": "Salimos temprano por la carretera.",
-    "en": "We left early along the highway.",
+    "es": "Salimos de Bogotá por la carretera vieja.",
+    "en": "We left Bogotá by the old road.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:por-para-1",
       "g:present-er-ir",
       "l:carretera",
       "l:salir",
-      "l:temprano"
+      "l:viejo",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:por-para-1",
@@ -850,18 +852,19 @@
   },
   {
     "id": "u18-0039",
-    "es": "El bus pasa por muchas curvas.",
-    "en": "The bus goes through lots of curves.",
+    "es": "El bus pasó por Puerto Triunfo a las doce de la noche.",
+    "en": "The bus went through Puerto Triunfo at midnight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
-      "g:present-ar",
+      "g:preterite-ar",
       "l:bus",
-      "l:curva",
+      "l:noche",
       "l:pasar",
-      "p:quantifiers-basic"
+      "p:por-la-manana",
+      "p:telling-time"
     ],
     "targets": [
       "g:por-para-1"
@@ -1195,13 +1198,12 @@
   },
   {
     "id": "u18-0055",
-    "es": "Le traje café de Bogotá para la familia de Vale.",
+    "es": "Traje café de Bogotá para la familia de Vale.",
     "en": "I brought coffee from Bogotá for Vale's family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:indirect-objects",
       "g:preterite-irregular-strong",
       "l:café",
       "l:familia",
@@ -1282,17 +1284,17 @@
   },
   {
     "id": "u18-0059",
-    "es": "Estas bolsas son para el taxi.",
-    "en": "These bags are for the taxi.",
+    "es": "Estas arepas son para el viaje.",
+    "en": "These arepas are for the trip.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:gender-articles",
       "g:ser-identity",
-      "l:bolsa",
+      "l:arepa",
       "l:ser",
-      "l:taxi",
+      "l:viaje",
       "p:para-inf"
     ],
     "targets": [],
@@ -1466,8 +1468,8 @@
   },
   {
     "id": "u18-0067",
-    "es": "Para llegar a la terminal, tome el metro.",
-    "en": "To get to the terminal, take the metro. (polite)",
+    "es": "En Medellín, para llegar a la terminal, tome el metro.",
+    "en": "In Medellín, to get to the terminal, take the metro. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1620,18 +1622,20 @@
   },
   {
     "id": "u18-0074",
-    "es": "El tren pasa por aquí todas las horas.",
-    "en": "The train comes by here every hour.",
+    "es": "El tren pasa por aquí dos veces al día.",
+    "en": "The train comes through here twice a day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:aquí",
-      "l:hora",
+      "l:día",
       "l:pasar",
       "l:tren",
-      "p:aqui-ahi-alla"
+      "l:vez",
+      "p:aqui-ahi-alla",
+      "p:veces-al"
     ],
     "targets": [
       "l:tren"
@@ -1891,20 +1895,21 @@
   },
   {
     "id": "u18-0085",
-    "es": "Por favor, ¿dónde está la salida?",
-    "en": "Excuse me, where is the exit?",
+    "es": "Disculpe, ¿por dónde es la salida?",
+    "en": "Excuse me, which way is the exit?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:donde-esta",
-      "c:por-favor",
-      "g:estar-location-states",
+      "c:perdon-disculpe",
+      "g:commands-usted",
       "g:gender-articles",
+      "g:por-para-1",
+      "g:ser-identity",
+      "l:disculpar",
       "l:dónde",
-      "l:estar",
-      "l:favor",
       "l:salida",
-      "p:question-word-order"
+      "l:ser",
+      "p:prep-questions-basic"
     ],
     "targets": [
       "l:salida"
@@ -2154,18 +2159,18 @@
   },
   {
     "id": "u18-0097",
-    "es": "Hernando tenía miedo por el vuelo.",
-    "en": "Hernando was scared about the flight.",
+    "es": "Hernando estaba nervioso por el vuelo.",
+    "en": "Hernando was nervous about the flight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
       "g:por-para-1",
-      "l:miedo",
-      "l:tener",
-      "l:vuelo",
-      "p:tener-hambre"
+      "l:estar",
+      "l:nervioso",
+      "l:vuelo"
     ],
     "targets": [
       "g:por-para-1",
@@ -2530,7 +2535,7 @@
   {
     "id": "u18-0112",
     "es": "Llévasela a tu hermano.",
-    "en": "Take it to your brother.",
+    "en": "Take it to your brother. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2658,17 +2663,17 @@
   },
   {
     "id": "u18-0117",
-    "es": "Llévense las maletas al cuarto.",
-    "en": "Take the suitcases to the room. (you all)",
+    "es": "¿Las maletas? Súbanlas al cuarto.",
+    "en": "The suitcases? Take them up to the room. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-usted",
       "g:commands-with-pronouns",
+      "g:direct-objects",
       "g:gender-articles",
-      "g:reflexive-routine",
-      "l:llevarse",
-      "l:maleta"
+      "l:maleta",
+      "l:subir"
     ],
     "targets": [
       "g:commands-with-pronouns"
@@ -2680,8 +2685,8 @@
   },
   {
     "id": "u18-0118",
-    "es": "Dame el pasaporte, yo lo llevo en mi bolsa.",
-    "en": "Give me the passport, I'll carry it in my bag. (to a friend)",
+    "es": "Dame el pasaporte, yo lo llevo en mi mochila.",
+    "en": "Give me the passport, I'll carry it in my backpack. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2690,9 +2695,9 @@
       "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
-      "l:bolsa",
       "l:dar",
       "l:llevar",
+      "l:mochila",
       "l:pasaporte",
       "p:me-te-nos-objects",
       "p:possessives-basic"
@@ -2756,7 +2761,7 @@
   {
     "id": "u18-0121",
     "es": "Dámelo, Tomás.",
-    "en": "Give it to me, Tomás.",
+    "en": "Give it to me, Tomás. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3497,7 +3502,7 @@
   {
     "id": "u18-0152",
     "es": "Quédese tranquilo, señor.",
-    "en": "Don't worry, sir. Stay calm. (polite)",
+    "en": "Don't worry, sir. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3665,7 +3670,7 @@
   {
     "id": "u18-0159",
     "es": "Vístete rápido que perdemos el bus.",
-    "en": "Get dressed quickly, we'll miss the bus. (to a friend)",
+    "en": "Get dressed quickly or we'll miss the bus. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3744,21 +3749,20 @@
   },
   {
     "id": "u18-0162",
-    "es": "Siéntense bien, por favor.",
-    "en": "Sit properly, please. (you all)",
+    "es": "Pónganse el cinturón, por favor.",
+    "en": "Put your seatbelts on, please. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "c:por-favor",
       "g:commands-usted",
       "g:commands-with-pronouns",
-      "g:reflexive-routine",
-      "l:bien",
+      "g:gender-articles",
+      "g:verbs-of-change",
+      "l:cinturón",
       "l:favor",
-      "l:sentarse",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
+      "l:ponerse",
+      "p:lavarse-las-manos",
       "p:request-ladder"
     ],
     "targets": [
@@ -4184,18 +4188,17 @@
   },
   {
     "id": "u18-0180",
-    "es": "Cóbremelo todo, por favor.",
-    "en": "Charge me for all of it, please. (polite)",
+    "es": "Cóbreme todo junto, por favor.",
+    "en": "Charge me for everything together, please. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:por-favor",
       "g:commands-usted",
       "g:commands-with-pronouns",
-      "g:direct-objects",
-      "g:double-pronouns",
       "l:cobrar",
       "l:favor",
+      "l:junto",
       "p:me-te-nos-objects",
       "p:request-ladder"
     ],
@@ -4420,17 +4423,17 @@
   },
   {
     "id": "u18-0190",
-    "es": "Llámame a las cinco.",
-    "en": "Call me at five. (to a friend)",
+    "es": "Llámame desde el hotel.",
+    "en": "Call me from the hotel. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
       "g:commands-with-pronouns",
       "g:gender-articles",
+      "l:hotel",
       "l:llamar",
-      "p:me-te-nos-objects",
-      "p:telling-time"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:commands-with-pronouns"
@@ -4442,20 +4445,25 @@
   },
   {
     "id": "u18-0191",
-    "es": "Llámeme a las cinco, por favor.",
-    "en": "Call me at five, please. (polite)",
+    "es": "Llámeme al celular, por favor, el teléfono del hotel no sirve.",
+    "en": "Call me on my cell, please, the hotel phone doesn't work. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-sirve",
       "c:por-favor",
       "g:commands-usted",
       "g:commands-with-pronouns",
       "g:gender-articles",
+      "l:celular",
       "l:favor",
+      "l:hotel",
       "l:llamar",
+      "l:servir",
+      "l:teléfono",
       "p:me-te-nos-objects",
-      "p:request-ladder",
-      "p:telling-time"
+      "p:personal-a",
+      "p:request-ladder"
     ],
     "targets": [
       "g:commands-with-pronouns"
@@ -4467,22 +4475,20 @@
   },
   {
     "id": "u18-0192",
-    "es": "Siga derecho y pregúnteme otra vez.",
-    "en": "Go straight and ask me again. (polite)",
+    "es": "Siga derecho dos cuadras y llámeme.",
+    "en": "Go straight on two blocks and call me. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:siga",
       "g:commands-usted",
       "g:commands-with-pronouns",
+      "l:cuadra",
       "l:derecho",
-      "l:preguntar",
+      "l:llamar",
       "l:seguir",
-      "l:vez",
       "p:directions-cuadras",
-      "p:me-te-nos-objects",
-      "p:otro-no-article",
-      "p:preguntar-pedir"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:commands-with-pronouns"
@@ -4520,7 +4526,7 @@
   {
     "id": "u18-0194",
     "es": "Regálame un café, Tomás.",
-    "en": "Give me a coffee, Tomás.",
+    "en": "Can I get a coffee, Tomás?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4616,16 +4622,23 @@
   },
   {
     "id": "u18-0198",
-    "es": "Tómelo ya, señor.",
-    "en": "Drink it now, sir.",
+    "es": "¿El agua? Tómesela, señor, hace calor.",
+    "en": "The water? Drink it, sir, it's hot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-usted",
       "g:commands-with-pronouns",
-      "g:direct-objects",
+      "g:double-pronouns",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:agua",
+      "l:calor",
+      "l:hacer",
       "l:señor",
-      "l:tomar"
+      "l:tomar",
+      "p:el-agua-fria",
+      "p:hace-frio"
     ],
     "targets": [
       "g:commands-with-pronouns"
@@ -4806,17 +4819,22 @@
   },
   {
     "id": "u18-0206",
-    "es": "Váyase por allá, señor.",
-    "en": "Go that way, sir.",
+    "es": "Sígame, señor, la salida está a la derecha.",
+    "en": "Follow me, sir, the exit is on the right.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-usted",
       "g:commands-with-pronouns",
-      "l:allá",
-      "l:irse",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:derecha",
+      "l:estar",
+      "l:salida",
+      "l:seguir",
       "l:señor",
-      "p:aqui-ahi-alla"
+      "p:directions-cuadras",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:commands-with-pronouns"
@@ -4829,7 +4847,7 @@
   {
     "id": "u18-0207",
     "es": "Vete tranquila, Vale. Nos vemos pronto.",
-    "en": "Go in peace, Vale. See you soon. (a woman)",
+    "en": "Go, and don't worry, Vale. See you soon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4948,21 +4966,18 @@
   },
   {
     "id": "u18-0212",
-    "es": "Ciérrela bien, por favor.",
-    "en": "Close it well, please. (polite)",
+    "es": "Ciérrela con llave, por favor.",
+    "en": "Lock it, please. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "c:por-favor",
       "g:commands-usted",
       "g:commands-with-pronouns",
       "g:direct-objects",
-      "l:bien",
       "l:cerrar",
       "l:favor",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
+      "l:llave",
       "p:request-ladder"
     ],
     "targets": [
@@ -4975,8 +4990,8 @@
   },
   {
     "id": "u18-0213",
-    "es": "Dile a ella que la quiero.",
-    "en": "Tell her that I love her.",
+    "es": "Dile que la quiero mucho.",
+    "en": "Tell her I love her very much. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4988,7 +5003,8 @@
       "g:stem-boot",
       "g:that-clauses",
       "l:decir",
-      "l:querer"
+      "l:querer",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:commands-with-pronouns"
@@ -5000,16 +5016,20 @@
   },
   {
     "id": "u18-0214",
-    "es": "Tranquilo, eso no es nada.",
-    "en": "Relax, that's nothing. (to a man)",
+    "es": "Siéntate un momento, eso no es nada.",
+    "en": "Sit down a moment, it's nothing. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tranquilo",
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:gender-articles",
       "g:negation-words",
+      "g:reflexive-routine",
       "g:ser-identity",
+      "l:momento",
+      "l:sentarse",
       "l:ser",
-      "l:tranquilo",
       "p:demonstratives-basic"
     ],
     "targets": [],
@@ -5300,7 +5320,7 @@
   {
     "id": "u18-0227",
     "es": "Hernando es un amigo mío de muchos años.",
-    "en": "Hernando is a friend of mine of many years.",
+    "en": "Hernando is an old friend of mine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5607,7 +5627,7 @@
   {
     "id": "u18-0240",
     "es": "¿Es tuyo este asiento?\nNo, el mío es aquel.",
-    "en": "Is this seat yours?\nNo, mine is that one.",
+    "en": "Is this seat yours? (to a friend)\nNo, mine is that one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5655,7 +5675,7 @@
   {
     "id": "u18-0242",
     "es": "¿La tuya es la negra?\nNo, la mía es la gris.",
-    "en": "Is yours the black one?\nNo, mine is the gray one.",
+    "en": "Is yours the black one? (to a friend)\nNo, mine is the gray one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6065,16 +6085,18 @@
   },
   {
     "id": "u18-0260",
-    "es": "El equipaje nuestro llegó tarde.",
-    "en": "Our luggage arrived late.",
+    "es": "El equipaje de ellos llegó; el nuestro, no.",
+    "en": "Their luggage arrived; ours didn't.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:possessives",
+      "g:prep-pronouns",
+      "g:preterite-ar",
       "l:equipaje",
-      "l:llegó",
-      "l:tarde"
+      "l:llegar",
+      "p:de-owner"
     ],
     "targets": [
       "l:equipaje"
@@ -6125,18 +6147,19 @@
   },
   {
     "id": "u18-0263",
-    "es": "La habitación nuestra tiene vista a las montañas.",
-    "en": "Our room has a view of the mountains.",
+    "es": "¿La habitación con vista a las montañas? Es la nuestra.",
+    "en": "The room with the mountain view? It's ours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:gender-articles",
       "g:possessives",
+      "g:ser-identity",
       "l:habitación",
       "l:montaña",
-      "l:tiene",
-      "l:vista"
+      "l:ser",
+      "l:vista",
+      "p:con-sin"
     ],
     "targets": [],
     "kind": "statement",
@@ -6146,17 +6169,17 @@
   },
   {
     "id": "u18-0264",
-    "es": "Estas son las maletas nuestras.",
-    "en": "These are our suitcases.",
+    "es": "Estas maletas son nuestras.",
+    "en": "These suitcases are ours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
-      "g:gender-articles",
       "g:possessives",
       "g:ser-identity",
       "l:maleta",
-      "l:ser"
+      "l:ser",
+      "p:de-owner"
     ],
     "targets": [],
     "kind": "statement",
@@ -6301,21 +6324,20 @@
   },
   {
     "id": "u18-0271",
-    "es": "El loro es mío, y Hernando lo sabe.",
-    "en": "The parrot is mine, and Hernando knows it.",
+    "es": "Simón dice que el café es suyo.",
+    "en": "Simón says the café is his.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:gender-articles",
       "g:possessives-stressed",
-      "g:present-er-ir",
       "g:ser-identity",
-      "l:loro",
-      "l:saber",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:café",
+      "l:decir",
       "l:ser",
-      "p:de-owner",
-      "p:saber-conocer"
+      "p:de-owner"
     ],
     "targets": [
       "g:possessives-stressed"
@@ -6398,8 +6420,8 @@
   },
   {
     "id": "u18-0275",
-    "es": "El tinto de la esquina es suyo.",
-    "en": "The black coffee on the corner is yours. (polite)",
+    "es": "El tinto de la mesa de la esquina es suyo, señor.",
+    "en": "The black coffee at the corner table is yours, sir.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6407,7 +6429,9 @@
       "g:possessives-stressed",
       "g:ser-identity",
       "l:esquina",
+      "l:mesa",
       "l:ser",
+      "l:señor",
       "l:tinto",
       "p:de-owner"
     ],
@@ -6544,20 +6568,21 @@
   },
   {
     "id": "u18-0281",
-    "es": "Perdón, el retraso fue cosa mía.",
-    "en": "Sorry, the delay was down to me.",
+    "es": "El retraso no fue culpa mía, fue del conductor.",
+    "en": "The delay wasn't my fault, it was the driver's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:perdon-disculpe",
       "g:gender-articles",
       "g:possessives-stressed",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "l:cosa",
-      "l:perdón",
+      "l:conductor",
+      "l:culpa",
       "l:retraso",
-      "l:ser"
+      "l:ser",
+      "p:no-es-x-es-y",
+      "p:por-culpa-de"
     ],
     "targets": [
       "g:possessives-stressed",
@@ -6618,7 +6643,7 @@
   {
     "id": "u18-0284",
     "es": "No es problema mío si pierde el bus.",
-    "en": "It's not my problem if you miss the bus.",
+    "en": "It's not my problem if he misses the bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6684,17 +6709,18 @@
   },
   {
     "id": "u18-0287",
-    "es": "Ese asunto es suyo, no mío.",
-    "en": "That matter is yours, not mine.",
+    "es": "Eso es problema de la aerolínea, no mío.",
+    "en": "That's the airline's problem, not mine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
+      "g:gender-articles",
       "g:possessives-stressed",
       "g:ser-identity",
-      "l:asunto",
+      "l:aerolínea",
+      "l:problema",
       "l:ser",
-      "p:de-owner"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:possessives-stressed"
@@ -6707,7 +6733,7 @@
   {
     "id": "u18-0288",
     "es": "Eso es cosa mía.",
-    "en": "That's my own thing to deal with.",
+    "en": "That's my business.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6727,23 +6753,22 @@
   },
   {
     "id": "u18-0289",
-    "es": "Esa cosa no es tuya, déjala ahí.",
-    "en": "That thing isn't yours, leave it there. (to a friend)",
+    "es": "Eso no es tuyo, déjalo ahí.",
+    "en": "That isn't yours, leave it there. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
       "g:commands-with-pronouns",
-      "g:demonstratives",
       "g:direct-objects",
       "g:possessives-stressed",
       "g:ser-identity",
       "l:ahí",
-      "l:cosa",
       "l:dejar",
       "l:ser",
       "p:aqui-ahi-alla",
-      "p:de-owner"
+      "p:de-owner",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:commands-with-pronouns",
@@ -6780,24 +6805,18 @@
   },
   {
     "id": "u18-0291",
-    "es": "Tengo un pasaporte viejo, pero este es el mío de verdad.",
-    "en": "I have an old passport, but this is my real one.",
+    "es": "¿Este pasaporte? No es mío, es de Vale.",
+    "en": "This passport? It's not mine, it's Vale's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:en-serio",
-      "c:tengo",
-      "g:gender-articles",
       "g:possessives-stressed",
       "g:ser-identity",
-      "g:yo-irregular",
       "l:pasaporte",
       "l:ser",
-      "l:tener",
-      "l:verdad",
-      "l:viejo",
+      "p:de-owner",
       "p:demonstratives-basic",
-      "p:viejo-antiguo-mayor"
+      "p:no-es-x-es-y"
     ],
     "targets": [
       "g:possessives-stressed",
@@ -7117,21 +7136,21 @@
   },
   {
     "id": "u18-0304",
-    "es": "Cuando llega el bus, siempre hay un asiento tuyo.",
-    "en": "When the bus arrives, there's always a seat for you. (to a friend)",
+    "es": "Cuando viajas con Hernando, el asiento de la ventanilla nunca es tuyo.",
+    "en": "When you travel with Hernando, the window seat is never yours. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:gender-articles",
-      "g:hay-vs-esta",
       "g:possessives-stressed",
       "g:present-ar",
+      "g:ser-identity",
       "l:asiento",
-      "l:bus",
-      "l:llegar",
-      "l:siempre",
+      "l:ser",
+      "l:ventanilla",
+      "l:viajar",
       "p:cuando-basic",
+      "p:de-owner",
       "p:frequency-scale"
     ],
     "targets": [
@@ -7920,24 +7939,23 @@
   },
   {
     "id": "u18-0338",
-    "es": "Tomás llevaba una maleta, y la perdió la aerolínea.",
-    "en": "Tomás had one suitcase, and the airline lost it.",
+    "es": "Tomás llevaba una sola maleta, y se perdió en la terminal.",
+    "en": "Tomás had just one suitcase, and it got lost at the terminal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:pret-vs-imperfect",
       "g:preterite-er-ir",
-      "l:aerolínea",
+      "g:reflexive-routine",
       "l:llevar",
       "l:maleta",
-      "l:perder"
+      "l:perderse",
+      "l:terminal"
     ],
-    "targets": [
-      "l:aerolínea"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u18",
     "theme": "aeropuerto y vuelos",
@@ -8185,21 +8203,20 @@
   },
   {
     "id": "u18-0350",
-    "es": "Los pasajeros esperan en la sala de salida.",
-    "en": "The passengers wait in the departure lounge.",
+    "es": "Los pasajeros esperan en la sala de espera.",
+    "en": "The passengers wait in the waiting room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "l:espera",
       "l:esperar",
       "l:pasajero",
-      "l:sala",
-      "l:salida"
+      "l:sala"
     ],
     "targets": [
-      "l:pasajero",
-      "l:salida"
+      "l:pasajero"
     ],
     "kind": "statement",
     "unit": "u18",
@@ -8618,8 +8635,8 @@
   },
   {
     "id": "u18-0369",
-    "es": "Sí, tengo una reserva a nombre de Tomás Reyes.",
-    "en": "Yes, I have a reservation in the name of Tomás Reyes.",
+    "es": "Sí, tengo una reserva a nombre de Tomás Herrera.",
+    "en": "Yes, I have a reservation in the name of Tomás Herrera.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8668,15 +8685,16 @@
   },
   {
     "id": "u18-0371",
-    "es": "Mi reserva fue para tres personas.",
+    "es": "Mi reserva era para tres personas.",
     "en": "My reservation was for three people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-ser-ir-hacer",
-      "l:ir",
+      "c:era",
+      "g:imperfect-states",
       "l:persona",
       "l:reserva",
+      "l:ser",
       "p:para-inf",
       "p:possessives-basic"
     ],
@@ -9031,8 +9049,8 @@
   },
   {
     "id": "u18-0387",
-    "es": "El metro llega hasta la terminal.",
-    "en": "The metro goes as far as the terminal.",
+    "es": "En Medellín, el metro llega hasta la terminal.",
+    "en": "In Medellín, the metro goes as far as the terminal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9263,8 +9281,8 @@
   },
   {
     "id": "u18-0397",
-    "es": "En la carretera hay un peaje en todos los pueblos.",
-    "en": "On the road there's a toll in all the towns.",
+    "es": "En la carretera a Medellín hay muchos peajes.",
+    "en": "On the road to Medellín there are lots of tolls.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9273,7 +9291,7 @@
       "g:hay-vs-esta",
       "l:carretera",
       "l:peaje",
-      "l:pueblo"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:carretera",
@@ -9333,17 +9351,18 @@
   },
   {
     "id": "u18-0400",
-    "es": "Había un carro en la carretera y todos esperamos.",
-    "en": "There was a car on the road and we all waited.",
+    "es": "Había un accidente en la carretera y esperamos dos horas.",
+    "en": "There was an accident on the road and we waited two hours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-states",
       "g:present-ar",
+      "l:accidente",
       "l:carretera",
-      "l:carro",
-      "l:esperar"
+      "l:esperar",
+      "l:hora"
     ],
     "targets": [
       "l:carretera"
@@ -9676,7 +9695,7 @@
   {
     "id": "u18-0416",
     "es": "Por mí, salimos ahora mismo.",
-    "en": "For all I care, we leave right now.",
+    "en": "Fine by me, we leave right now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9716,22 +9735,19 @@
   },
   {
     "id": "u18-0418",
-    "es": "¿Hay algún mensaje para mí o por mí?",
-    "en": "Is there any message for me or about me?",
+    "es": "¿Hay algún mensaje para mí?",
+    "en": "Is there any message for me?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "g:hay-vs-esta",
       "g:indefinites",
-      "g:por-para-1",
       "g:prep-pronouns",
       "l:mensaje",
       "p:para-inf"
     ],
-    "targets": [
-      "g:por-para-1"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u18",
     "theme": "por: causas, rutas, personas",
@@ -10143,7 +10159,7 @@
   },
   {
     "id": "u18-0436",
-    "es": "Estuvimos por la Candelaria toda la tarde.",
+    "es": "Estuvimos por La Candelaria toda la tarde.",
     "en": "We were around La Candelaria all afternoon.",
     "accept": [],
     "acceptEn": [],
@@ -10764,17 +10780,19 @@
   },
   {
     "id": "u18-0464",
-    "es": "Esperamos el bus por una hora.",
-    "en": "We waited for the bus for an hour.",
+    "es": "Esperamos el bus por más de una hora.",
+    "en": "We waited for the bus for over an hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
       "g:gender-articles",
       "g:por-para-1",
       "g:present-ar",
       "l:bus",
       "l:esperar",
-      "l:hora"
+      "l:hora",
+      "p:mas-de-number"
     ],
     "targets": [
       "g:por-para-1"
@@ -10786,8 +10804,8 @@
   },
   {
     "id": "u18-0465",
-    "es": "Hernando habló por una hora con el conductor.",
-    "en": "Hernando talked to the driver for an hour.",
+    "es": "Hernando habló con el conductor por la ventanilla.",
+    "en": "Hernando talked to the driver through the window.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10796,7 +10814,7 @@
       "g:preterite-ar",
       "l:conductor",
       "l:hablar",
-      "l:hora"
+      "l:ventanilla"
     ],
     "targets": [
       "g:por-para-1"
@@ -10808,15 +10826,17 @@
   },
   {
     "id": "u18-0466",
-    "es": "Vale vivió en Bogotá por tres años.",
-    "en": "Vale lived in Bogotá for three years.",
+    "es": "Vale trabajó en una panadería de Medellín por cinco años.",
+    "en": "Vale worked at a bakery in Medellín for five years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:trabajo-en",
+      "g:gender-articles",
       "g:por-para-1",
-      "g:preterite-er-ir",
       "l:año",
-      "l:vivir"
+      "l:panadería",
+      "l:trabajar"
     ],
     "targets": [
       "g:por-para-1"
@@ -10828,24 +10848,21 @@
   },
   {
     "id": "u18-0467",
-    "es": "Estuve en el hostal por la semana pasada.",
-    "en": "I was at the hostel last week.",
+    "es": "Estuve por Medellín la semana pasada.",
+    "en": "I was around Medellín last week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "g:estar-location-states",
-      "g:gender-articles",
       "g:por-para-1",
       "g:preterite-irregular-strong",
       "l:estar",
-      "l:hostal",
       "l:pasar",
       "l:semana"
     ],
     "targets": [
-      "g:por-para-1",
-      "l:hostal"
+      "g:por-para-1"
     ],
     "kind": "statement",
     "unit": "u18",
@@ -11034,23 +11051,22 @@
   },
   {
     "id": "u18-0476",
-    "es": "Tomás dijo perdón por la maleta de otro.",
-    "en": "Tomás said sorry about someone else's suitcase.",
+    "es": "Tomás se llevó la maleta de otro. ¡Qué pena!",
+    "en": "Tomás took someone else's suitcase. How embarrassing!",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:que-pena",
       "g:gender-articles",
-      "g:por-para-1",
-      "g:preterite-irregular-strong",
-      "l:decir",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:llevarse",
       "l:maleta",
-      "l:perdón",
-      "p:otro-no-article",
-      "p:siento-llegar-tarde"
+      "l:pena",
+      "l:qué",
+      "p:otro-no-article"
     ],
-    "targets": [
-      "g:por-para-1"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u18",
     "theme": "por: causas, rutas, personas",
@@ -11318,7 +11334,7 @@
   {
     "id": "u18-0489",
     "es": "Tomás trabajó por el café durante meses.",
-    "en": "Tomás worked for the café for months.",
+    "en": "Tomás worked hard for the café's sake for months.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11432,24 +11448,22 @@
   },
   {
     "id": "u18-0494",
-    "es": "Esa terminal es famosa por los retrasos.",
-    "en": "That terminal is famous for its delays.",
+    "es": "En esa terminal los buses casi siempre salen tarde.",
+    "en": "At that terminal the buses almost always leave late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:demonstratives",
       "g:gender-articles",
-      "g:por-para-1",
-      "g:ser-identity",
-      "l:famoso",
-      "l:retraso",
-      "l:ser",
-      "l:terminal"
+      "g:present-er-ir",
+      "l:bus",
+      "l:salir",
+      "l:siempre",
+      "l:tarde",
+      "l:terminal",
+      "p:frequency-scale"
     ],
     "targets": [
-      "g:por-para-1",
-      "l:retraso",
       "l:terminal"
     ],
     "kind": "statement",
@@ -11626,21 +11640,18 @@
   },
   {
     "id": "u18-0502",
-    "es": "Vi a Hernando en la terminal, y fue por suerte.",
-    "en": "I saw Hernando at the terminal, and it was luck.",
+    "es": "Por suerte, Hernando estaba en la terminal.",
+    "en": "Luckily, Hernando was at the terminal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:por-suerte",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:preterite-er-ir",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
-      "l:ser",
+      "g:imperfect-states",
+      "l:estar",
       "l:suerte",
-      "l:terminal",
-      "l:ver",
-      "p:personal-a"
+      "l:terminal"
     ],
     "targets": [
       "l:terminal"
@@ -11691,19 +11702,19 @@
   },
   {
     "id": "u18-0505",
-    "es": "Una vez por semana llega un bus de Medellín.",
-    "en": "Once a week a bus arrives from Medellín.",
+    "es": "Vale llama a su mamá dos veces por semana.",
+    "en": "Vale calls her mom twice a week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:una-vez",
-      "g:gender-articles",
       "g:por-para-1",
       "g:present-ar",
-      "l:bus",
-      "l:llegar",
+      "l:llamar",
+      "l:mamá",
       "l:semana",
       "l:vez",
+      "p:personal-a",
+      "p:possessives-basic",
       "p:veces-al"
     ],
     "targets": [
@@ -11781,21 +11792,20 @@
   },
   {
     "id": "u18-0509",
-    "es": "Hay un descuento por grupo.",
-    "en": "There's a discount for groups.",
+    "es": "Hay un descuento de diez mil pesos por persona.",
+    "en": "There's a discount of ten thousand pesos per person.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "g:por-para-1",
       "l:descuento",
-      "l:grupo"
+      "l:persona",
+      "l:peso",
+      "p:costar-pagar"
     ],
-    "targets": [
-      "g:por-para-1"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u18",
     "theme": "por: causas, rutas, personas",
@@ -11803,18 +11813,20 @@
   },
   {
     "id": "u18-0510",
-    "es": "La cena es de la aerolínea por la demora.",
-    "en": "Dinner is on the airline because of the delay.",
+    "es": "Por la demora, la aerolínea nos pagó la cena.",
+    "en": "Because of the delay, the airline paid for our dinner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
-      "g:ser-identity",
+      "g:preterite-ar",
       "l:aerolínea",
       "l:cena",
       "l:demora",
-      "l:ser"
+      "l:pagar",
+      "p:brindo-por",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:por-para-1",
@@ -11897,17 +11909,17 @@
   },
   {
     "id": "u18-0514",
-    "es": "Por la salud de Hernando, no viajó con nosotros.",
-    "en": "Because of Hernando's health, he didn't travel with us.",
+    "es": "Hernando no viajó con nosotros por su salud.",
+    "en": "Hernando didn't travel with us because of his health.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:por-para-1",
       "g:prep-pronouns",
       "g:preterite-ar",
       "l:salud",
-      "l:viajar"
+      "l:viajar",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:por-para-1",
@@ -11920,20 +11932,23 @@
   },
   {
     "id": "u18-0515",
-    "es": "Llegamos bien por ustedes.",
-    "en": "We arrived safely because of you all.",
+    "es": "Por ustedes perdimos el bus: no se levantaron.",
+    "en": "Because of you all we missed the bus: you didn't get up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "c:ya-llegue",
+      "c:no-se",
+      "g:gender-articles",
       "g:por-para-1",
       "g:prep-pronouns",
-      "l:bien",
-      "l:llegar"
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "l:bus",
+      "l:levantarse",
+      "l:perder"
     ],
     "targets": [
-      "c:ya-llegue",
       "g:por-para-1"
     ],
     "kind": "statement",
@@ -11963,7 +11978,7 @@
   },
   {
     "id": "u18-0517",
-    "es": "Por mi madre aprendí a cocinar.",
+    "es": "Por mi mamá aprendí a cocinar.",
     "en": "Thanks to my mother I learned to cook.",
     "accept": [],
     "acceptEn": [],
@@ -11972,7 +11987,7 @@
       "g:preterite-er-ir",
       "l:aprender",
       "l:cocinar",
-      "l:madre",
+      "l:mamá",
       "p:possessives-basic"
     ],
     "targets": [
@@ -12005,14 +12020,18 @@
   },
   {
     "id": "u18-0519",
-    "es": "Tomás grita por teléfono.",
-    "en": "Tomás shouts on the phone.",
+    "es": "Tomás siempre grita cuando habla por teléfono.",
+    "en": "Tomás always shouts when he talks on the phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
       "l:gritar",
-      "l:teléfono"
+      "l:hablar",
+      "l:siempre",
+      "l:teléfono",
+      "p:cuando-basic",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -12023,7 +12042,7 @@
   {
     "id": "u18-0520",
     "es": "Vale cantaba por la carretera.",
-    "en": "Vale was singing along the road.",
+    "en": "Vale sang all along the road.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12115,19 +12134,16 @@
   },
   {
     "id": "u18-0524",
-    "es": "Trae el postre y yo llevo el jugo.",
-    "en": "You bring dessert and I'll take the juice. (to a friend)",
+    "es": "Lleva tú el postre y yo llevo el jugo.",
+    "en": "You take the dessert and I'll take the juice. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:present-er-ir",
       "l:jugo",
       "l:llevar",
-      "l:postre",
-      "l:traer",
-      "p:llevar-traer"
+      "l:postre"
     ],
     "targets": [
       "p:llevar-traer"
@@ -12257,17 +12273,18 @@
   },
   {
     "id": "u18-0530",
-    "es": "Llévasela a tu hermano ahora.",
-    "en": "Take it to your brother now. (to a friend)",
+    "es": "¿La torta? Llévasela a tu abuela.",
+    "en": "The cake? Take it to your grandmother. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
       "g:commands-with-pronouns",
       "g:double-pronouns",
-      "l:ahora",
-      "l:hermano",
+      "g:gender-articles",
+      "l:abuela",
       "l:llevar",
+      "l:torta",
       "p:personal-a",
       "p:possessives-basic"
     ],
@@ -12281,8 +12298,8 @@
   },
   {
     "id": "u18-0531",
-    "es": "Llévaselo a Hernando, que está aquí.",
-    "en": "Take it to Hernando, he's here.",
+    "es": "Llévaselo a Hernando, está en la mesa de la esquina.",
+    "en": "Take it to Hernando, he's at the corner table. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12290,11 +12307,11 @@
       "g:commands-with-pronouns",
       "g:double-pronouns",
       "g:estar-location-states",
-      "g:relative-que",
-      "l:aquí",
+      "g:gender-articles",
+      "l:esquina",
       "l:estar",
       "l:llevar",
-      "p:aqui-ahi-alla",
+      "l:mesa",
       "p:personal-a"
     ],
     "targets": [
@@ -12331,7 +12348,7 @@
   },
   {
     "id": "u18-0533",
-    "es": "Llévame al terminal, por favor.",
+    "es": "Llévame a la terminal, por favor.",
     "en": "Take me to the terminal, please. (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -12720,16 +12737,16 @@
   },
   {
     "id": "u18-0550",
-    "es": "¿Cuánto tiempo vives en Bogotá?",
-    "en": "How long have you been living in Bogotá? (to a friend)",
+    "es": "¿Cuánto tiempo llevas en Bogotá?",
+    "en": "How long have you been in Bogotá? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:cuanto-tiempo",
-      "g:present-er-ir",
+      "g:present-ar",
       "l:cuánto",
-      "l:tiempo",
-      "l:vivir"
+      "l:llevar",
+      "l:tiempo"
     ],
     "targets": [],
     "kind": "question",
@@ -12868,8 +12885,8 @@
   },
   {
     "id": "u18-0557",
-    "es": "Llévelo usted, yo traigo los demás.",
-    "en": "You take it, I'll bring the rest. (polite)",
+    "es": "Llévelo usted, yo llevo las bolsas.",
+    "en": "You take it, I'll take the bags. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12877,10 +12894,9 @@
       "g:commands-with-pronouns",
       "g:direct-objects",
       "g:gender-articles",
-      "g:yo-irregular",
-      "l:demás",
+      "g:present-ar",
+      "l:bolsa",
       "l:llevar",
-      "l:traer",
       "p:llevar-traer"
     ],
     "targets": [
@@ -13107,17 +13123,24 @@
   },
   {
     "id": "u18-0567",
-    "es": "No lo traigo, lo llevo.",
-    "en": "I'm not bringing it, I'm taking it.",
+    "es": "Hoy no puedo, pero mañana te lo llevo a tu casa.",
+    "en": "I can't today, but tomorrow I'll take it over to your place. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:puedo",
       "g:direct-objects",
+      "g:double-pronouns",
       "g:present-ar",
-      "g:yo-irregular",
+      "g:stem-boot",
+      "l:casa",
+      "l:hoy",
       "l:llevar",
-      "l:traer",
-      "p:llevar-traer"
+      "l:mañana",
+      "l:poder",
+      "p:me-te-nos-objects",
+      "p:personal-a",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:llevar-traer"
@@ -13251,21 +13274,20 @@
   },
   {
     "id": "u18-0573",
-    "es": "Tráiganme el menú, por favor.",
-    "en": "Bring me the menu, please. (you all)",
+    "es": "Tráiganme las fotos del viaje mañana.",
+    "en": "Bring me the photos from the trip tomorrow. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:por-favor",
       "g:commands-usted",
       "g:commands-with-pronouns",
       "g:gender-articles",
-      "l:favor",
-      "l:menú",
+      "l:foto",
+      "l:mañana",
       "l:traer",
+      "l:viaje",
       "p:llevar-traer",
-      "p:me-te-nos-objects",
-      "p:request-ladder"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:commands-with-pronouns",
@@ -13561,18 +13583,22 @@
   },
   {
     "id": "u18-0588",
-    "es": "¿Quieres que te ayude a buscar la maleta?",
-    "en": "Do you want me to help you look for the suitcase?",
+    "es": "Vale, si quieres que te ayude con la maleta, me dices.",
+    "en": "Vale, if you want me to help you with the suitcase, just tell me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quieres-que-te-ayude",
+      "c:si-quieres",
       "g:gender-articles",
+      "g:si-present",
+      "g:stem-e-i",
       "g:subj-wanting",
       "l:ayudar",
-      "l:buscar",
+      "l:decir",
       "l:maleta",
-      "l:querer"
+      "l:querer",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "c:quieres-que-te-ayude"
@@ -13585,7 +13611,7 @@
   {
     "id": "u18-0589",
     "es": "¿Quieres que te ayude con la reserva?",
-    "en": "Do you want me to help you with the booking?",
+    "en": "Do you want me to help you with the booking? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13607,18 +13633,20 @@
   },
   {
     "id": "u18-0590",
-    "es": "¿Quieres que te ayude con el plan del sábado?",
-    "en": "Do you want me to help you with Saturday's plan?",
+    "es": "Mañana no trabajo. ¿Quieres que te ayude en el café?",
+    "en": "I'm not working tomorrow. Do you want me to help you at the café? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quieres-que-te-ayude",
       "g:gender-articles",
+      "g:present-ar",
       "g:subj-wanting",
       "l:ayudar",
-      "l:plan",
+      "l:café",
+      "l:mañana",
       "l:querer",
-      "l:sábado"
+      "l:trabajar"
     ],
     "targets": [
       "c:quieres-que-te-ayude"
@@ -13630,17 +13658,18 @@
   },
   {
     "id": "u18-0591",
-    "es": "¿Quieres que te ayude a buscar el hotel?",
-    "en": "Do you want me to help you look for the hotel?",
+    "es": "Estás cansada, Vale. ¿Quieres que te ayude?",
+    "en": "You're tired, Vale. Do you want me to help you?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quieres-que-te-ayude",
-      "g:gender-articles",
+      "g:adjective-agreement",
+      "g:estar-location-states",
       "g:subj-wanting",
       "l:ayudar",
-      "l:buscar",
-      "l:hotel",
+      "l:cansado",
+      "l:estar",
       "l:querer"
     ],
     "targets": [
@@ -13654,7 +13683,7 @@
   {
     "id": "u18-0592",
     "es": "¿Quieres que te ayude a preparar la cena?",
-    "en": "Do you want me to help you prepare dinner?",
+    "en": "Do you want me to help you make dinner? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13678,7 +13707,7 @@
   {
     "id": "u18-0593",
     "es": "¿Quieres que te ayude a escribir el mensaje?",
-    "en": "Do you want me to help you write the message?",
+    "en": "Do you want me to help you write the message? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13766,17 +13795,23 @@
   },
   {
     "id": "u18-0597",
-    "es": "¿Le ayudo con el equipaje mientras almuerza?",
-    "en": "Can I help you with the luggage while you have lunch? (polite)",
+    "es": "¿Le ayudo con el equipaje, señora? Esa maleta pesa mucho.",
+    "en": "Can I help you with your luggage, ma'am? That suitcase is very heavy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:le-ayudo",
+      "g:demonstratives",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:almorzar",
+      "g:present-ar",
       "l:ayudar",
-      "l:equipaje"
+      "l:equipaje",
+      "l:maleta",
+      "l:pesar",
+      "l:señora",
+      "p:medir-pesar",
+      "p:pesar-pesarse",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "c:le-ayudo",
@@ -13789,18 +13824,19 @@
   },
   {
     "id": "u18-0598",
-    "es": "¿Quieres que te ayude a llegar al aeropuerto?",
-    "en": "Do you want me to help you get to the airport?",
+    "es": "¿Quieres que te ayude a llevar las maletas hasta el taxi?",
+    "en": "Do you want me to help you carry the suitcases to the taxi? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quieres-que-te-ayude",
       "g:gender-articles",
       "g:subj-wanting",
-      "l:aeropuerto",
       "l:ayudar",
-      "l:llegar",
-      "l:querer"
+      "l:llevar",
+      "l:maleta",
+      "l:querer",
+      "l:taxi"
     ],
     "targets": [
       "c:quieres-que-te-ayude"
@@ -13812,18 +13848,19 @@
   },
   {
     "id": "u18-0599",
-    "es": "¿Quieres que te ayude a llamar a tu mamá?",
-    "en": "Do you want me to help you call your mom?",
+    "es": "¿Quieres que te ayude con la torta para tu mamá?",
+    "en": "Do you want me to help you with the cake for your mom? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quieres-que-te-ayude",
+      "g:gender-articles",
       "g:subj-wanting",
       "l:ayudar",
-      "l:llamar",
       "l:mamá",
       "l:querer",
-      "p:personal-a",
+      "l:torta",
+      "p:para-inf",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13836,13 +13873,19 @@
   },
   {
     "id": "u18-0600",
-    "es": "Ya llegué.",
-    "en": "I've arrived.",
+    "es": "¿Dónde estás?\nYa llegué, estoy en la recepción.",
+    "en": "Where are you?\nI'm here, I'm at reception.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ya-llegue",
-      "l:llegar"
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:questions",
+      "l:dónde",
+      "l:estar",
+      "l:llegar",
+      "l:recepción"
     ],
     "targets": [
       "c:ya-llegue"
@@ -13942,17 +13985,15 @@
   },
   {
     "id": "u18-0605",
-    "es": "Ya llegué, escribió Tomás desde el bus.",
-    "en": "I've arrived, wrote Tomás from the bus.",
+    "es": "Ya llegué, pero mi maleta no.",
+    "en": "I'm here, but my suitcase isn't.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ya-llegue",
-      "g:gender-articles",
-      "g:preterite-er-ir",
-      "l:bus",
-      "l:escribir",
-      "l:llegar"
+      "l:llegar",
+      "l:maleta",
+      "p:possessives-basic"
     ],
     "targets": [
       "c:ya-llegue"
@@ -14097,14 +14138,21 @@
   },
   {
     "id": "u18-0612",
-    "es": "¡Feliz viaje!",
-    "en": "Have a nice trip!",
+    "es": "¡Feliz viaje, y mándenme fotos de las montañas!",
+    "en": "Have a nice trip, and send me photos of the mountains! (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:buen-viaje",
+      "g:commands-usted",
+      "g:commands-with-pronouns",
+      "g:gender-articles",
       "l:feliz",
-      "l:viaje"
+      "l:foto",
+      "l:mandar",
+      "l:montaña",
+      "l:viaje",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "c:buen-viaje"
@@ -14137,7 +14185,7 @@
   {
     "id": "u18-0614",
     "es": "Que te vaya bien en Medellín.",
-    "en": "All the best in Medellín. (to a friend)",
+    "en": "Hope it goes well in Medellín. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14157,7 +14205,7 @@
   {
     "id": "u18-0615",
     "es": "Que te vaya bien, Vale.",
-    "en": "All the best, Vale.",
+    "en": "Hope it goes well, Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14419,8 +14467,8 @@
   },
   {
     "id": "u18-0626",
-    "es": "Una reserva a nombre de Mariana Ortiz.",
-    "en": "A booking in the name of Mariana Ortiz.",
+    "es": "Una reserva a nombre de Mariana Cifuentes.",
+    "en": "A booking in the name of Mariana Cifuentes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14534,8 +14582,8 @@
   },
   {
     "id": "u18-0631",
-    "es": "Haga la reserva a nombre de Reyes.",
-    "en": "Make the booking in the name of Reyes. (polite)",
+    "es": "Haga la reserva a nombre de Herrera.",
+    "en": "Make the booking in the name of Herrera. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14703,16 +14751,13 @@
   },
   {
     "id": "u18-0638",
-    "es": "Dudo mucho de Vale en este asunto.",
-    "en": "I really doubt Vale in this matter.",
+    "es": "Yo no dudo de Vale.",
+    "en": "I don't doubt Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:asunto",
-      "l:dudar",
-      "p:demonstratives-basic",
-      "p:quantifiers-basic"
+      "l:dudar"
     ],
     "targets": [
       "l:dudar"
@@ -14915,14 +14960,16 @@
   },
   {
     "id": "u18-0648",
-    "es": "Oí a mi abuela en el sueño.",
-    "en": "I heard my grandmother in the dream.",
+    "es": "Anoche oí a mi abuela en un sueño.",
+    "en": "Last night I heard my grandmother in a dream.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:abuela",
+      "l:anoche",
       "l:oír",
       "l:sueño",
       "p:possessives-basic"
@@ -15139,16 +15186,16 @@
   },
   {
     "id": "u18-0658",
-    "es": "Hernando, la salud es primero.",
-    "en": "Hernando, health comes first.",
+    "es": "Hernando, ¿cómo sigue de salud?",
+    "en": "Hernando, how's your health?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
+      "g:questions",
+      "g:stem-e-i",
+      "l:cómo",
       "l:salud",
-      "l:ser",
-      "p:time-sequence-basic"
+      "l:seguir"
     ],
     "targets": [
       "l:salud"
@@ -15226,16 +15273,21 @@
   },
   {
     "id": "u18-0662",
-    "es": "Tu salud es lo primero, Tomás.",
-    "en": "Your health comes first, Tomás.",
+    "es": "Tomás, duerme un poco, que sin salud no hay café.",
+    "en": "Tomás, get some sleep, without your health there's no café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
+      "c:hay",
+      "g:commands-tu",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:that-clauses",
+      "l:café",
+      "l:dormir",
       "l:salud",
-      "l:ser",
-      "p:possessives-basic",
-      "p:time-sequence-basic"
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:salud"
@@ -15404,7 +15456,7 @@
   {
     "id": "u18-0670",
     "es": "Estoy preparando el viaje.",
-    "en": "I'm getting the trip ready.",
+    "en": "I'm getting ready for the trip.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15521,16 +15573,16 @@
   },
   {
     "id": "u18-0675",
-    "es": "Descubrí que no tengo el pasaporte.",
-    "en": "I discovered that I don't have my passport.",
+    "es": "Descubrí que no tenía el pasaporte.",
+    "en": "I discovered I didn't have my passport.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
       "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
       "g:preterite-er-ir",
       "g:that-clauses",
-      "g:yo-irregular",
       "l:descubrir",
       "l:pasaporte",
       "l:tener"
@@ -15657,23 +15709,19 @@
   },
   {
     "id": "u18-0681",
-    "es": "Anda, vamos a la terminal.",
-    "en": "Come on, let's go to the terminal.",
+    "es": "Ando cansado desde el viaje.",
+    "en": "I've been tired since the trip.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:anda-spain",
-      "c:vamos-a",
       "g:gender-articles",
-      "g:ir-a-plans",
+      "g:present-ar",
       "l:andar",
-      "l:ir",
-      "l:terminal",
-      "p:ir-a-venir-de-place"
+      "l:cansado",
+      "l:viaje"
     ],
     "targets": [
-      "l:andar",
-      "l:terminal"
+      "l:andar"
     ],
     "kind": "dialogue",
     "unit": "u18",
@@ -15774,15 +15822,20 @@
   },
   {
     "id": "u18-0686",
-    "es": "Quizá mañana llegamos a Medellín.",
-    "en": "Maybe tomorrow we get to Medellín.",
+    "es": "Si no hay tráfico, quizá llegamos antes de las ocho.",
+    "en": "If there's no traffic, maybe we'll get there before eight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
       "g:present-ar",
+      "g:si-present",
+      "l:antes",
       "l:llegar",
-      "l:mañana",
-      "l:quizá"
+      "l:quizá",
+      "l:tráfico"
     ],
     "targets": [
       "l:quizá"
@@ -15839,17 +15892,21 @@
   },
   {
     "id": "u18-0689",
-    "es": "Quizá sí hay un bus a las ocho.",
-    "en": "Maybe there is a bus at eight.",
+    "es": "Pregunta en la ventanilla; quizá hay un bus más tarde.",
+    "en": "Ask at the window; maybe there's a later bus. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "g:gender-articles",
       "g:hay-vs-esta",
+      "g:present-ar",
       "l:bus",
+      "l:preguntar",
       "l:quizá",
-      "p:telling-time"
+      "l:tarde",
+      "l:ventanilla",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:quizá"
@@ -15861,21 +15918,25 @@
   },
   {
     "id": "u18-0690",
-    "es": "Quizá nos vemos en la terminal.",
-    "en": "Maybe we'll see each other at the terminal.",
+    "es": "No sé a qué hora llego, quizá a las diez.",
+    "en": "I don't know what time I'll get there, maybe at ten.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:chao-nos-vemos",
+      "c:a-que-hora",
+      "c:no-se",
       "g:gender-articles",
+      "g:present-ar",
+      "g:yo-irregular",
+      "l:hora",
+      "l:llegar",
       "l:quizá",
-      "l:terminal",
-      "l:ver",
-      "p:nos-vemos-a-las"
+      "l:qué",
+      "l:saber",
+      "p:telling-time"
     ],
     "targets": [
-      "l:quizá",
-      "l:terminal"
+      "l:quizá"
     ],
     "kind": "statement",
     "unit": "u18",
@@ -15884,22 +15945,21 @@
   },
   {
     "id": "u18-0691",
-    "es": "Quizá la maleta está en otro vuelo.",
-    "en": "Maybe the suitcase is on another flight.",
+    "es": "Quizá la maleta se fue en otro bus.",
+    "en": "Maybe the suitcase went on another bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
-      "l:estar",
+      "g:preterite-ser-ir-hacer",
+      "l:bus",
+      "l:irse",
       "l:maleta",
       "l:quizá",
-      "l:vuelo",
       "p:otro-no-article"
     ],
     "targets": [
-      "l:quizá",
-      "l:vuelo"
+      "l:quizá"
     ],
     "kind": "statement",
     "unit": "u18",
@@ -16127,18 +16187,19 @@
   },
   {
     "id": "u18-0703",
-    "es": "Hernando cumple con su trabajo en el café.",
-    "en": "Hernando does his job at the café.",
+    "es": "Los vecinos cumplieron: todos vinieron a la reunión.",
+    "en": "The neighbors came through: they all came to the meeting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:trabajo-en",
       "g:gender-articles",
-      "g:present-er-ir",
-      "l:café",
+      "g:preterite-er-ir",
+      "g:preterite-spelling-stem",
       "l:cumplir",
-      "l:trabajo",
-      "p:possessives-basic"
+      "l:reunión",
+      "l:vecino",
+      "l:venir",
+      "p:ir-venir"
     ],
     "targets": [
       "l:cumplir"
@@ -16172,15 +16233,15 @@
   },
   {
     "id": "u18-0705",
-    "es": "Altamira no cumplió con la reunión.",
-    "en": "Altamira didn't turn up for the meeting.",
+    "es": "Altamira no cumplió con los vecinos.",
+    "en": "Altamira didn't keep its word to the neighbors.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:cumplir",
-      "l:reunión"
+      "l:vecino"
     ],
     "targets": [
       "l:cumplir"
@@ -16192,19 +16253,18 @@
   },
   {
     "id": "u18-0706",
-    "es": "Cumplo con el trabajo de hoy y me voy.",
-    "en": "I'll do today's work and then go.",
+    "es": "Si cumples tu parte, yo cumplo la mía.",
+    "en": "If you do your part, I'll do mine. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-vas",
       "g:gender-articles",
-      "g:ir-a-plans",
+      "g:possessives-stressed",
       "g:present-er-ir",
+      "g:si-present",
       "l:cumplir",
-      "l:hoy",
-      "l:irse",
-      "l:trabajo"
+      "l:parte",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:cumplir"
@@ -16346,17 +16406,20 @@
   },
   {
     "id": "u18-0713",
-    "es": "Tomás firmó el contrato con la mano fría.",
-    "en": "Tomás signed the contract with a cold hand.",
+    "es": "Hernando nunca firma nada sin leerlo dos veces.",
+    "en": "Hernando never signs anything without reading it twice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:preterite-ar",
-      "l:contrato",
+      "g:direct-objects",
+      "g:negation-words",
+      "g:object-pronoun-position",
+      "g:prep-infinitive",
+      "g:present-ar",
       "l:firmar",
-      "l:frío",
-      "l:mano"
+      "l:leer",
+      "l:vez",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:firmar"
@@ -16508,13 +16571,14 @@
   },
   {
     "id": "u18-0720",
-    "es": "Tomás completó la misión de Rosa.",
-    "en": "Tomás completed Rosa's mission.",
+    "es": "Tomás todavía no ha completado la misión de Rosa.",
+    "en": "Tomás still hasn't completed Rosa's mission.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:todavia-no",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:perfecto-experience",
       "l:completar",
       "l:misión"
     ],
@@ -16979,21 +17043,17 @@
   },
   {
     "id": "u18-0742",
-    "es": "El hostal es mejor en compañía.",
-    "en": "The hostel is better with company.",
+    "es": "Gracias por la compañía, Hernando.",
+    "en": "Thanks for the company, Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
       "l:compañía",
-      "l:hostal",
-      "l:mejor",
-      "l:ser"
+      "p:gracias-por"
     ],
     "targets": [
-      "l:compañía",
-      "l:hostal"
+      "l:compañía"
     ],
     "kind": "statement",
     "unit": "u18",
@@ -17141,18 +17201,17 @@
   },
   {
     "id": "u18-0749",
-    "es": "Mi salario es bajo para viajar mucho.",
-    "en": "My salary is low for travelling a lot.",
+    "es": "Con mi salario no puedo viajar mucho.",
+    "en": "On my salary I can't travel much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
+      "c:puedo",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:poder",
       "l:salario",
-      "l:ser",
       "l:viajar",
-      "p:es-tiene-lleva",
-      "p:para-inf",
-      "p:para-inf-purpose",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -17488,7 +17547,7 @@
   {
     "id": "u18-0764",
     "es": "¿Me lo prometes?",
-    "en": "Do you promise me?",
+    "en": "Do you promise? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17616,16 +17675,18 @@
   },
   {
     "id": "u18-0770",
-    "es": "Mariana trabaja en publicidad desde hace años.",
-    "en": "Mariana has worked in advertising for years.",
+    "es": "A Mariana no le gusta nada la publicidad de Altamira.",
+    "en": "Mariana doesn't like Altamira's advertising at all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:gustar-full",
+      "g:negation-words",
       "g:present-ar",
-      "l:año",
-      "l:hace",
-      "l:publicidad",
-      "l:trabajar"
+      "l:gustar",
+      "l:publicidad"
     ],
     "targets": [
       "l:publicidad"
@@ -18080,19 +18141,18 @@
   },
   {
     "id": "u18-0790",
-    "es": "Mi mayor habilidad es hablar con la gente.",
-    "en": "My greatest skill is talking to people.",
+    "es": "Mi mayor habilidad es dormir en los buses.",
+    "en": "My greatest skill is sleeping on buses.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:gente",
+      "l:bus",
+      "l:dormir",
       "l:habilidad",
-      "l:hablar",
       "l:mayor",
       "l:ser",
-      "p:la-gente-singular",
       "p:possessives-basic"
     ],
     "targets": [
@@ -18174,8 +18234,8 @@
   },
   {
     "id": "u18-0794",
-    "es": "El director del hostal habla con los pasajeros.",
-    "en": "The hostel's manager talks with the passengers.",
+    "es": "El director del hostal habla con los turistas.",
+    "en": "The hostel manager talks with the tourists.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18184,12 +18244,11 @@
       "l:director",
       "l:hablar",
       "l:hostal",
-      "l:pasajero"
+      "l:turista"
     ],
     "targets": [
       "l:director",
-      "l:hostal",
-      "l:pasajero"
+      "l:hostal"
     ],
     "kind": "statement",
     "unit": "u18",
@@ -18268,19 +18327,18 @@
   },
   {
     "id": "u18-0798",
-    "es": "Hernando fue director de una escuela hace años.",
-    "en": "Hernando was the head of a school years ago.",
+    "es": "El papá de Mariana fue director de una escuela.",
+    "en": "Mariana's dad was the head of a school.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
-      "g:present-er-ir",
+      "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "l:año",
       "l:director",
       "l:escuela",
-      "l:hacer",
+      "l:papá",
       "l:ser"
     ],
     "targets": [
@@ -18479,8 +18537,8 @@
   },
   {
     "id": "u18-0807",
-    "es": "Vale acepta la misión: abrir el café mientras Tomás viaja.",
-    "en": "Vale accepts the mission: opening the café while Tomás travels.",
+    "es": "Hernando acepta la misión: abrir el café mientras viajamos.",
+    "en": "Hernando accepts the mission: opening the café while we're away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18593,7 +18651,7 @@
   {
     "id": "u18-0812",
     "es": "Tomamos un taxi por la carrera quinta.",
-    "en": "We took a taxi along Carrera Fifth.",
+    "en": "We took a taxi along Carrera Quinta.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18747,17 +18805,17 @@
   },
   {
     "id": "u18-0819",
-    "es": "Un oficial de policía nos pidió los pasaportes.",
-    "en": "A police officer asked us for our passports.",
+    "es": "En el aeropuerto, un oficial nos pidió los pasaportes.",
+    "en": "At the airport, an officer asked us for our passports.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
+      "l:aeropuerto",
       "l:oficial",
       "l:pasaporte",
       "l:pedir",
-      "l:policía",
       "p:me-te-nos-objects",
       "p:preguntar-pedir"
     ],
@@ -18939,16 +18997,21 @@
   },
   {
     "id": "u18-0827",
-    "es": "Compra siquiera el pan, Tomás.",
-    "en": "At least buy the bread, Tomás.",
+    "es": "¿No hay almuerzo? Cómprate siquiera una empanada.",
+    "en": "No lunch? At least buy yourself an empanada. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "g:commands-tu",
+      "g:commands-with-pronouns",
       "g:gender-articles",
-      "g:present-ar",
+      "g:hay-vs-esta",
+      "l:almuerzo",
       "l:comprar",
-      "l:pan",
-      "l:siquiera"
+      "l:empanada",
+      "l:siquiera",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:siquiera"
@@ -19147,11 +19210,12 @@
   },
   {
     "id": "u18-0836",
-    "es": "Vale quita la mesa y lava los platos.",
-    "en": "Vale clears the table and washes the dishes.",
+    "es": "Vale quita los platos de la mesa y los lava.",
+    "en": "Vale takes the plates off the table and washes them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
       "l:lavar",
@@ -19238,19 +19302,24 @@
   },
   {
     "id": "u18-0840",
-    "es": "Quítamelo de la mesa.",
-    "en": "Take it off the table for me. (to a friend)",
+    "es": "Quítame esa maleta de encima, que pesa mucho.",
+    "en": "Get that suitcase off me, it's heavy. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
       "g:commands-with-pronouns",
-      "g:direct-objects",
-      "g:double-pronouns",
-      "g:gender-articles",
-      "l:mesa",
+      "g:demonstratives",
+      "g:present-ar",
+      "g:relative-que",
+      "l:encima",
+      "l:maleta",
+      "l:pesar",
       "l:quitar",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:medir-pesar",
+      "p:pesar-pesarse",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:commands-with-pronouns",
@@ -19289,7 +19358,7 @@
   {
     "id": "u18-0842",
     "es": "La lluvia me quita las ganas de salir.",
-    "en": "The rain takes away my wish to go out.",
+    "en": "The rain makes me not want to go out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19537,25 +19606,29 @@
   },
   {
     "id": "u18-0853",
-    "es": "Enséñeme su tiquete, por favor.",
-    "en": "Show me your ticket, please. (polite)",
+    "es": "Enséñeme dónde queda el baño, por favor.",
+    "en": "Show me where the bathroom is, please. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:por-favor",
       "g:commands-usted",
       "g:commands-with-pronouns",
+      "g:gender-articles",
+      "g:indirect-questions",
+      "g:present-ar",
+      "l:baño",
+      "l:dónde",
       "l:enseñar",
       "l:favor",
-      "l:tiquete",
+      "l:quedar",
       "p:me-te-nos-objects",
-      "p:possessives-basic",
+      "p:quedar-cerca",
       "p:request-ladder"
     ],
     "targets": [
       "g:commands-with-pronouns",
-      "l:enseñar",
-      "l:tiquete"
+      "l:enseñar"
     ],
     "kind": "statement",
     "unit": "u18",
@@ -19770,15 +19843,15 @@
   },
   {
     "id": "u18-0863",
-    "es": "El metro de Medellín es nuevo y rápido.",
-    "en": "The Medellín metro is new and fast.",
+    "es": "El metro de Medellín es bonito y rápido.",
+    "en": "The Medellín metro is nice and fast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:bonito",
       "l:metro",
-      "l:nuevo",
       "l:rápido",
       "l:ser"
     ],
@@ -19836,24 +19909,21 @@
   },
   {
     "id": "u18-0866",
-    "es": "El metro y el tren nos llevan al centro.",
-    "en": "The metro and the train take us downtown.",
+    "es": "En Medellín, el metro nos lleva a todas partes.",
+    "en": "In Medellín, the metro takes us everywhere.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:centro",
       "l:llevar",
       "l:metro",
-      "l:tren",
+      "l:parte",
       "p:llevar-traer",
-      "p:me-te-nos-objects",
-      "p:personal-a"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:metro",
-      "l:tren",
       "p:llevar-traer"
     ],
     "kind": "statement",
@@ -19907,8 +19977,8 @@
   },
   {
     "id": "u18-0869",
-    "es": "Viajamos en tren hasta la costa.",
-    "en": "We travelled by train to the coast.",
+    "es": "En Canadá viajamos en tren hasta la costa.",
+    "en": "In Canada we travelled by train to the coast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19929,16 +19999,18 @@
   },
   {
     "id": "u18-0870",
-    "es": "Hernando viaja en tren, no en avión.",
-    "en": "Hernando travels by train, not by plane.",
+    "es": "Hernando dice que antes había un tren de Bogotá a Santa Marta.",
+    "en": "Hernando says there used to be a train from Bogotá to Santa Marta.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "l:avión",
-      "l:tren",
-      "l:viajar",
-      "p:transport-en"
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:antes",
+      "l:decir",
+      "l:tren"
     ],
     "targets": [
       "l:tren"
@@ -19994,16 +20066,18 @@
   },
   {
     "id": "u18-0873",
-    "es": "Rosa llegó al puerto de Barranquilla de joven.",
-    "en": "Rosa arrived at the port of Barranquilla as a young woman.",
+    "es": "Barranquilla tiene un puerto muy grande.",
+    "en": "Barranquilla has a very big port.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:preterite-ar",
-      "l:joven",
-      "l:llegar",
-      "l:puerto"
+      "g:stem-boot",
+      "l:grande",
+      "l:puerto",
+      "l:tener",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:puerto"
@@ -20061,18 +20135,21 @@
   },
   {
     "id": "u18-0876",
-    "es": "Tomás va a Medellín, pero el destino de Hernando es Cartagena.",
-    "en": "Tomás goes to Medellín, but Hernando's destination is Cartagena.",
+    "es": "Yo voy a Medellín, pero el destino de mi hermana es Cartagena.",
+    "en": "I'm going to Medellín, but my sister's destination is Cartagena.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:voy-a",
       "g:gender-articles",
       "g:ir-a-plans",
       "g:ser-identity",
       "l:destino",
+      "l:hermana",
       "l:ir",
       "l:ser",
-      "p:ir-a-venir-de-place"
+      "p:ir-a-venir-de-place",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:destino"
@@ -20517,8 +20594,8 @@
   },
   {
     "id": "u18-0896",
-    "es": "Este es el cuarto suyo, y aquel es el nuestro.",
-    "en": "This is your room, and that one is ours. (polite)",
+    "es": "Este cuarto es el suyo, y aquel es el nuestro.",
+    "en": "This room is yours, and that one is ours. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20656,20 +20733,19 @@
   },
   {
     "id": "u18-0902",
-    "es": "Mi hermano llegó hoy; un hermano suyo llega mañana.",
-    "en": "My brother arrived today; a brother of his arrives tomorrow.",
+    "es": "Un hermano suyo llamó a la recepción, señora.",
+    "en": "A brother of yours called reception, ma'am.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:possessives-stressed",
-      "g:present-ar",
       "g:preterite-ar",
       "l:hermano",
-      "l:hoy",
-      "l:llegar",
-      "l:mañana",
-      "p:possessives-basic"
+      "l:llamar",
+      "l:recepción",
+      "l:señora",
+      "p:personal-a"
     ],
     "targets": [
       "g:possessives-stressed"
@@ -20871,7 +20947,7 @@
   {
     "id": "u18-0911",
     "es": "Un amigo suyo, Hernando, llamó anoche.",
-    "en": "A friend of yours, Don Hernando, called last night. (polite)",
+    "en": "A friend of yours, Hernando, called last night. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20979,7 +21055,7 @@
   {
     "id": "u18-0916",
     "es": "Esa carta es suya, Tomás. Rosa la escribió para usted.",
-    "en": "That letter is yours, Tomás. Rosa wrote it for you.",
+    "en": "That letter is yours, Tomás. Rosa wrote it for you. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21092,18 +21168,20 @@
   },
   {
     "id": "u18-0921",
-    "es": "Los papeles míos están en la maleta perdida.",
-    "en": "My papers are in the lost suitcase.",
+    "es": "Los papeles de Vale están aquí; los míos, en la maleta perdida.",
+    "en": "Vale's papers are here; mine are in the lost suitcase.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
       "g:possessives-stressed",
+      "l:aquí",
       "l:estar",
       "l:maleta",
       "l:papel",
-      "l:perder"
+      "l:perder",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:possessives-stressed"
@@ -21388,17 +21466,20 @@
   },
   {
     "id": "u18-0933",
-    "es": "La publicidad de la terminal es enorme.",
-    "en": "The terminal's advertising is huge.",
+    "es": "Hay tanta publicidad en la terminal que no veo los horarios.",
+    "en": "There's so much advertising at the terminal that I can't see the timetables.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:enorme",
+      "g:hay-vs-esta",
+      "g:relative-que",
+      "g:yo-irregular",
+      "l:horario",
       "l:publicidad",
-      "l:ser",
-      "l:terminal"
+      "l:terminal",
+      "l:ver"
     ],
     "targets": [
       "l:publicidad",
