@@ -3,7 +3,7 @@
 // a sentence only when requires ⊆ known ∪ introduced this session, so a row counts for a
 // day only when everything it requires is taught by that day's session (not the unit end,
 // which is where the gate's legality check places a bank row).
-import type { BankSentence } from '../../src/content/schema';
+import type { BankSentence, Scene, WritingTask } from '../../src/content/schema';
 import type { Curriculum } from '../gate/load';
 import { implicitNodes } from '../../src/compiler/content';
 
@@ -135,4 +135,58 @@ export function computeDaySupply(cur: Curriculum, rows: BankSentence[], opts: { 
     }
   }
   return { days, unitNodes, untargetable: [...untargetable].sort() };
+}
+
+/* ---- writing tasks and scenes ------------------------------------------------------ */
+export const MIN_TASKS = 1;       // the compiler needs one unseen gated task per drilled grammar node
+export const TARGET_TASKS = 2;    // what the writing prompt asks for
+type Gated = { requires: string[] };
+const usableReq = (cur: Curriculum, r: Gated, session: number) => usableAt(cur, r as unknown as BankSentence, session);
+
+export interface WritingSupply { unit: string; node: string; day: number; session: number; type: string; usable: number; total: number; min: number; short: boolean; usableIds: string[] }
+export interface SceneSupply {
+  unit: string; day: number; session: number; named: string | null; namedUsable: boolean;
+  usable: string[];          // scenes the output day could serve (named, or an unreserved scene of the unit)
+  spareUsable: string[];     // spare scenes usable by that day
+  total: number; short: boolean;
+}
+
+/** Per grammar node, on its drill day (else its first introduce day): focused tasks usable by that day. */
+export function computeWritingSupply(cur: Curriculum, tasks: WritingTask[], opts: { units?: Set<string> } = {}): WritingSupply[] {
+  const out: WritingSupply[] = [];
+  for (const u of cur.units) {
+    if (opts.units && !opts.units.has(u.id)) continue;
+    const mine = tasks.filter((t) => t.unit === u.id);
+    const pick = new Map<string, number>();   // node -> day index
+    u.days.forEach((d, i) => { if (d.type === 'drill') for (const n of d.focus) if (n.startsWith('g:') && !pick.has(n)) pick.set(n, i); });
+    u.days.forEach((d, i) => { if (d.type === 'introduce') for (const n of d.focus) if (n.startsWith('g:') && !pick.has(n)) pick.set(n, i); });
+    for (const [node, i] of pick) {
+      const session = cur.daySession.get(`${u.id}#${i}`)!;
+      const focused = mine.filter((t) => t.focus === node);
+      const ok = focused.filter((t) => usableReq(cur, t, session));
+      out.push({ unit: u.id, node, day: i + 1, session, type: u.days[i].type, usable: ok.length, total: focused.length, min: MIN_TASKS, short: ok.length < MIN_TASKS, usableIds: ok.map((t) => t.id) });
+    }
+  }
+  return out.sort((a, b) => a.unit.localeCompare(b.unit) || a.day - b.day);
+}
+
+/** Per output day: a scene the compiler could serve, and the spare scenes usable by then. */
+export function computeSceneSupply(cur: Curriculum, scenes: Scene[], opts: { units?: Set<string> } = {}): SceneSupply[] {
+  const out: SceneSupply[] = [];
+  for (const u of cur.units) {
+    if (opts.units && !opts.units.has(u.id)) continue;
+    const mine = scenes.filter((s) => s.unit === u.id);
+    const reserved = new Set(u.days.map((d) => d.scene).filter(Boolean) as string[]);
+    u.days.forEach((d, i) => {
+      if (d.type !== 'output') return;
+      const session = cur.daySession.get(`${u.id}#${i}`)!;
+      const named = d.scene ?? null;
+      const namedSc = named ? mine.find((s) => s.id === named) : undefined;
+      const namedUsable = !!namedSc && usableReq(cur, namedSc, session);
+      const usable = mine.filter((s) => usableReq(cur, s, session) && (s.id === named || !reserved.has(s.id))).map((s) => s.id);
+      const spareUsable = mine.filter((s) => s.spare && usableReq(cur, s, session)).map((s) => s.id);
+      out.push({ unit: u.id, day: i + 1, session, named, namedUsable, usable, spareUsable, total: mine.length, short: usable.length < 1 });
+    });
+  }
+  return out;
 }

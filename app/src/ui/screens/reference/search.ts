@@ -15,6 +15,7 @@ function scoreText(q: string, texts: string[], exact: number, start: number, wor
       const bare = t.replace(/^(el|la|los|las|un|una|to|the|a) /, '');
       let s = 0;
       if (t === q || bare === q) s = exact;
+      else if (t.startsWith(q + ' ') || bare.startsWith(q + ' ') || t.startsWith(q + "'")) s = start + 5;
       else if (t.startsWith(q) || bare.startsWith(q)) s = start;
       else if ((' ' + t).includes(' ' + q)) s = word;
       else if (t.includes(q)) s = any;

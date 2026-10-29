@@ -7,9 +7,9 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { BankSentence } from '../../src/content/schema';
+import type { BankSentence, Scene, WritingTask } from '../../src/content/schema';
 import { listJson, loadCurriculum, loadFile, type Curriculum } from '../gate/load';
-import { computeDaySupply, isQuestion, MIN, usableAt, type DaySupplyReport } from './day-supply-core';
+import { computeDaySupply, computeSceneSupply, computeWritingSupply, isQuestion, MIN, MIN_TASKS, TARGET_TASKS, usableAt, type DaySupplyReport } from './day-supply-core';
 
 const APP = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const args = process.argv.slice(2);
@@ -21,7 +21,12 @@ const rows: BankSentence[] = listJson(join(APP, 'content', 'bank')).flatMap((p) 
 const inRange = new Set(cur.units.map((u) => u.id).filter((id) => id >= from && id <= to));
 const rep: DaySupplyReport = computeDaySupply(cur, rows, { units: inRange });
 
-writeFileSync(join(APP, 'content/_reports/day-supply.json'), JSON.stringify({ minimums: MIN, rows: rows.length, ...rep }, null, 2) + '\n');
+const tasks: WritingTask[] = listJson(join(APP, 'content', 'writing')).flatMap((p) => { const f = loadFile(p, APP, null); return f.ok ? (f.data as WritingTask[]) : []; });
+const scenes: Scene[] = listJson(join(APP, 'content', 'scenes')).flatMap((p) => { const f = loadFile(p, APP, null); return f.ok ? [f.data as Scene] : []; });
+const writing = computeWritingSupply(cur, tasks, { units: inRange });
+const sceneSup = computeSceneSupply(cur, scenes, { units: inRange });
+
+writeFileSync(join(APP, 'content/_reports/day-supply.json'), JSON.stringify({ minimums: { ...MIN, writingTasks: MIN_TASKS, writingTarget: TARGET_TASKS, scenes: 1 }, rows: rows.length, ...rep, writing, scenes: sceneSup }, null, 2) + '\n');
 
 const pad = (s: string | number, n: number) => String(s).padEnd(n);
 const line = (...c: Array<string | number>) => [4, 4, 11, 28, 7, 7, 5, 5].map((w, i) => pad(c[i] ?? '', w)).join(' ');
@@ -79,7 +84,20 @@ for (const d of rep.days) for (const n of d.nodes) if (n.usableStrict < n.min) s
 const sl = [...strictPairs].filter(([k]) => k.slice(0, 3) > 'u03');
 console.log(`strict view (day-listed lexemes only), u04 to ${to}: ${sl.length} (unit, node) pairs under their day minimum, ${sl.reduce((a, [, v]) => a + v, 0)} rows missing (largest gap per node); u01 to u03: ${strictPairs.size - sl.length} pairs`);
 
+/* ---- writing and scenes ---------------------------------------------------------- */
+console.log(`\nwriting: tasks focused on each grammar node usable by its drill day (min ${MIN_TASKS}, prompt asks ${TARGET_TASKS})`);
+console.log(line('unit', 'day', 'type', 'node', 'usable', 'total', '', 'min') + 'flag');
+for (const w of writing) if (fullUnits.has(w.unit)) console.log(line(w.unit, w.day, w.type, w.node, w.usable, w.total, '', w.min) + (w.short ? `SHORT ${w.min - w.usable}` : ''));
+console.log(`\nscenes: output days (min 1 usable scene)`);
+console.log(line('unit', 'day', 'named', 'usable scenes', 'spare', 'total', '', '') + 'flag');
+for (const s of sceneSup) if (fullUnits.has(s.unit)) console.log(line(s.unit, s.day, s.named ?? '-', `${s.usable.length}${s.named ? (s.namedUsable ? ' (named ok)' : ' (named late)') : ''}`, s.spareUsable.length, s.total, '', 1) + (s.short ? 'SHORT 1' : ''));
+const wShort = writing.filter((w) => w.short), sShort = sceneSup.filter((s) => s.short);
+const wLater = wShort.filter((w) => w.unit > 'u03'), sLater = sShort.filter((s) => s.unit > 'u03');
+console.log(`\nwriting short: u01 to u03 ${wShort.length - wLater.length} nodes; u04 to ${to}: ${wLater.length} nodes in ${new Set(wLater.map((w) => w.unit)).size} units. scenes short: u01 to u03 ${sShort.length - sLater.length} output days; u04 to ${to}: ${sLater.length} output days`);
+for (const u of inRange) if (u > 'u03') { const a = wShort.filter((w) => w.unit === u).length, b = sShort.filter((s) => s.unit === u).length; if (a || b) console.log(u, `writing ${a} nodes short, scenes ${b} output days short`); }
+
 if (args.includes('--jobs')) writeJobs(shorts);
+if (args.includes('--writing-scene-jobs')) writeWritingSceneJobs(wShort, sShort);
 
 /* ---- top-up jobs --------------------------------------------------------------- */
 function writeJobs(all: Short[]): void {
@@ -137,4 +155,58 @@ function topUpParagraph(c: Curriculum, unit: string, s: Short[], count: number, 
     lines.push(`- ${x.node}: first day is day ${x.firstDay} of ${unit} (session ${x.firstSession}). Write ${need} row${need === 1 ? '' : 's'} legal by that day${x.qsMissing ? `, at least ${x.qsMissing} of them questions` : ''}.${unitNote} Allowed this unit: ${gp || 'no new grammar'}; chunks c:${ch || 'none'}; plus the ${lexN} lexemes of days 1 to ${x.firstDay} (see content/units/${unit}.json) and everything taught in earlier units.`);
   }
   return lines.join('\n');
+}
+
+/* ---- writing and scene top-up jobs -------------------------------------------------- */
+function allowedUpTo(unit: string, day: number): string {
+  const u = cur.units.find((x) => x.id === unit)!;
+  const ids = new Set<string>();
+  u.days.slice(0, day).forEach((d) => [...d.focus, ...d.chunks].forEach((x) => ids.add(x)));
+  const all = [...ids];
+  const gp = all.filter((i) => /^[gpx]:/.test(i)).map((i) => i.slice(2)).join(' ');
+  const ch = all.filter((i) => i.startsWith('c:')).map((i) => i.slice(2)).join(' ');
+  const lexN = u.days.slice(0, day).reduce((a, d) => a + d.lexemes.length, 0);
+  return `grammar/patterns ${gp || 'none new'}; chunks ${ch || 'none'}; the ${lexN} lexemes of days 1 to ${day}; and everything taught in earlier units`;
+}
+
+function writeWritingSceneJobs(ws: typeof writing, ss: typeof sceneSup): void {
+  const wTemplate = readFileSync(join(APP, 'tools/burn/prompts/writing.md'), 'utf8');
+  const sTemplate = readFileSync(join(APP, 'tools/burn/prompts/scenes.md'), 'utf8');
+  const prio = new Map<string, number>();
+  for (const l of readFileSync(join(APP, 'content/_queue/jobs.jsonl'), 'utf8').split('\n')) {
+    if (!l.trim()) continue;
+    const j = JSON.parse(l);
+    if (j.kind === 'review') prio.set(j.unit, j.priority);
+  }
+  const out: string[] = [];
+  for (const u of cur.units) {
+    if (!inRange.has(u.id)) continue;
+    const base = { unit: u.id, band: u.band, priority: (prio.get(u.id) ?? 0) + 1, deps: [] as string[], status: 'pending', attempts: 0 };
+    const w = ws.filter((x) => x.unit === u.id);
+    if (w.length) {
+      const file = join(APP, 'content/writing', u.id + '.json');
+      const existing: WritingTask[] = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : [];
+      const maxN = existing.reduce((m, t) => Math.max(m, Number(/-(\d+)$/.exec(t.id)?.[1] ?? 0)), 0);
+      const lines = [`## This job: top up`,
+        `content/writing/${u.id}.json already has ${existing.length} tasks (last id number ${maxN}). Do NOT rewrite or reorder them. Read the file, then APPEND new tasks with fresh ids continuing the numbering (w-${u.id}-${String(maxN + 1).padStart(2, '0')} onwards), and write the whole array back with the old tasks unchanged. COUNT does not apply: write exactly the tasks below. The compiler serves a task on a node's drill day only when its model requires nothing taught after that day, so each task's constraints and model must use only what is taught up to the named day (probe the model with the wr.ts snippet and check \`requires\` against the day).`];
+      for (const x of w) {
+        const need = TARGET_TASKS - x.usable;
+        lines.push(`- ${x.node}: drill day is day ${x.day} of ${u.id} (session ${x.session}); ${x.usable} usable of ${x.total} focused. Write ${need} task${need === 1 ? '' : 's'} with focus ${x.node}, constraints and model using only: ${allowedUpTo(u.id, x.day)}.`);
+      }
+      out.push(JSON.stringify({ id: `writetop-${u.id}`, kind: 'writing', ...base, model: 'sonnet', prompt: fill(wTemplate, u.id, `/tmp/fluidez-burn/writetop-${u.id}`).replace('- APP =', `- COUNT = ${w.reduce((a, x) => a + TARGET_TASKS - x.usable, 0)}\n- APP =`) + '\n\n' + lines.join('\n'), outputs: [`content/writing/${u.id}.json`] }));
+    }
+    const s = ss.filter((x) => x.unit === u.id);
+    if (s.length) {
+      const files = scenes.filter((x) => x.unit === u.id).map((x) => x.id);
+      const letters = 'abcdefghijklmnopqrstuvwxyz';
+      const next = letters[files.length] ?? 'z';
+      const newIds = [`sc-${u.id}-${next}`];
+      const lines = [`## This job: top up`,
+        `The unit already has scenes ${files.join(' ') || 'none'} in content/scenes/. Do NOT rewrite or edit them. APPEND by writing NEW scene files with fresh ids (starting at ${newIds[0]}, continuing the letters), one file each. SCENES for this job is just the new ids. Ignore the quota count. Each new scene must be legal by the day stated below (NPC lines and every accept).`];
+      for (const x of s) lines.push(`- Output day ${x.day} of ${u.id} (session ${x.session}), named scene ${x.named ?? 'none'}${x.named ? (x.namedUsable ? ' (usable)' : ' (requires something taught later; do not edit it)') : ''}; usable scenes now: ${x.usable.length}. Write 1 non-spare scene${x.named && !x.namedUsable ? ` (it will be wired in as the day's scene by hand)` : ''} using only: ${allowedUpTo(u.id, x.day)}.`);
+      out.push(JSON.stringify({ id: `scenetop-${u.id}`, kind: 'scenes', ...base, model: 'opus', prompt: fill(sTemplate, u.id, `/tmp/fluidez-burn/scenetop-${u.id}`).replace(/- SCENES = .*\n/, '') .replace('- APP =', `- SCENES = ${newIds.join(' ')}\n- APP =`) + '\n\n' + lines.join('\n'), outputs: newIds.map((i) => `content/scenes/${i}.json`) }));
+    }
+  }
+  writeFileSync(join(APP, 'content/_queue/pending-writing-scene-topup.jsonl'), out.join('\n') + (out.length ? '\n' : ''));
+  console.log(`wrote ${out.length} writetop/scenetop jobs to content/_queue/pending-writing-scene-topup.jsonl`);
 }

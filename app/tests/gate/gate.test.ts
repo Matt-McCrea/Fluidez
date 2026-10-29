@@ -225,6 +225,20 @@ describe('(k) daySupply', () => {
   });
 });
 
+describe('(k) daySupply writing', () => {
+  test('a writing task whose requires need a later node warns on its focus node drill day', () => {
+    const fx = makeFixture();
+    const task = (id: string, requires: string[]) => ({ id, unit: 'u01', prompt: 'Write.', minWords: 3, maxWords: 20, constraints: [], model: 'Tomás habla español.', focus: 'g:gender-articles', requires });
+    // g:gender-articles is drilled on day 2; g:present-ar is introduced on day 3
+    const p = fx.write('writing/u01.json', [task('w-u01-01', ['g:gender-articles', 'g:present-ar'])]);
+    const w = by(runGate({ appDir: fx.app, paths: [p] }), 'daySupply', 'warning');
+    expect(w.some((f) => /g:gender-articles on drill day 2 .*0 usable writing tasks \(1 focused/.test(f.problem))).toBe(true);
+    fx.write('writing/u01.json', [task('w-u01-01', ['g:gender-articles'])]);
+    const w2 = by(runGate({ appDir: fx.app, paths: [p] }), 'daySupply', 'warning');
+    expect(w2.some((f) => /g:gender-articles on drill day.*writing tasks/.test(f.problem))).toBe(false);
+  });
+});
+
 describe('the CLI contract', () => {
   test('exit 0 on clean content, non-zero with findings on stdout', () => {
     const fx = makeFixture();

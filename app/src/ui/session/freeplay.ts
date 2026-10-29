@@ -5,7 +5,7 @@
 //   conjugate    exposure only (op 'grind'), never a scheduled review
 //   translate    exposure only (op 'grind')
 //   nodes        exposure (op 'train') plus the output ladder step
-import type { PracticeItem, ReviewItem } from '../../compiler';
+import { knownSet, type PracticeItem, type ReviewItem } from '../../compiler';
 import type { NodeId } from '../../content/schema';
 import { checkExact } from '../../check';
 import { wordHint } from '../../check/wordhint';
@@ -77,6 +77,8 @@ export class Freeplay {
   answered = 0;
   /** cards lined up, when the mode knows (quick review, nodes) */
   readonly total?: number;
+  /** set when a nodes drill has nothing to show because its examples are beyond reach */
+  emptyReason?: string;
   /** the op of the card just shown (a PracticeOp for sentence modes) */
   lastOp?: string;
 
@@ -133,15 +135,38 @@ export class Freeplay {
 
   // ------------------------------------------------------------ gated sentences
 
-  /** Bank sentence ids for a node (its own first), gated by what the learner knows. */
-  private sentencesFor(node: NodeId, allow: ReadonlySet<NodeId> = new Set()): string[] {
-    const { learner, bundle } = this.d;
-    const ix = bundle.index;
-    const ids = [...(ix.byTarget.get(node) ?? []), ...(ix.byRequire.get(node) ?? [])];
-    return ids.filter((id) => {
+  /** Nodes the learner may be shown: introduced ones plus words no unit day teaches, as the compiler counts them. */
+  private known(): Set<NodeId> { return knownSet(this.d.learner, this.d.bundle.course); }
+
+  /**
+   * Bank sentence ids for a node (its own first), best tier first:
+   *   0 every requirement is known
+   *   1 the only unknown ones are other nodes of the same spec (`allow`)
+   *   2 the unknown ones are all words or chunks (glossable)
+   */
+  private tiersFor(node: NodeId, allow: ReadonlySet<NodeId> = new Set()): string[][] {
+    const ix = this.d.bundle.index;
+    const known = this.known();
+    const ids = [...new Set([...(ix.byTarget.get(node) ?? []), ...(ix.byRequire.get(node) ?? [])])];
+    const tiers: string[][] = [[], [], []];
+    for (const id of ids) {
       const ref = ix.sentences.get(id);
-      return !!ref && ref.requires.every((r) => learner.isIntroduced(r) || allow.has(r));
-    });
+      if (!ref) continue;
+      const unknown = ref.requires.filter((r) => !known.has(r));
+      if (!unknown.length) tiers[0].push(id);
+      else if (unknown.every((r) => allow.has(r))) tiers[1].push(id);
+      else if (unknown.every((r) => r.startsWith('l:') || r.startsWith('c:'))) tiers[2].push(id);
+    }
+    return tiers;
+  }
+
+  /** Sentences legal right now for a node. */
+  private sentencesFor(node: NodeId): string[] { return this.tiersFor(node)[0]; }
+
+  /** Why a node has nothing to practise: the week its examples come up. */
+  private laterReason(node: NodeId): string {
+    const week = Math.max(1, this.d.bundle.course.nodes.get(node)?.priority ?? 1);
+    return `The examples for this use things you have not met yet. It comes up in week ${week}.`;
   }
 
   /** Unseen ids first (shuffled), then seen ones (shuffled). */
@@ -215,6 +240,7 @@ export class Freeplay {
 
   private planNodes(nodes: NodeId[]): Array<() => Card | undefined> {
     const allow = new Set(nodes);
+    if (nodes.length && nodes.every((n) => this.tiersFor(n, allow).every((t) => !t.length))) this.emptyReason = this.laterReason(nodes[0]);
     const out: Array<() => Card | undefined> = [];
     for (const node of nodes) {
       const used = new Set<string>();
@@ -232,8 +258,11 @@ export class Freeplay {
 
   private nodeCard(node: NodeId, allow: ReadonlySet<NodeId>, used: Set<string>): Card | undefined {
     const { learner, bundle } = this.d;
-    const pool = this.unseenFirst(this.sentencesFor(node, allow)).filter((id) => !used.has(id));
-    const sentence = pool[0];
+    let sentence: string | undefined;
+    for (const tier of this.tiersFor(node, allow)) {
+      sentence = this.unseenFirst(tier).find((id) => !used.has(id));
+      if (sentence) break;
+    }
     if (!sentence) return undefined;
     used.add(sentence);
     const novel = !learner.ledger.hasSeen('sentence', sentence);
@@ -263,7 +292,8 @@ export class Freeplay {
     if (spec.nodes?.length) ids = spec.nodes.flatMap((n) => [...(ix.byTarget.get(n) ?? []), ...(ix.byRequire.get(n) ?? [])]);
     else if (spec.unit) ids = ix.byUnit.get(spec.unit) ?? [];
     else ids = [...ix.sentences.keys()];
-    const gated = [...new Set(ids)].filter((id) => ix.sentences.get(id)?.requires.every((r) => learner.isIntroduced(r)));
+    const known = this.known();
+    const gated = [...new Set(ids)].filter((id) => ix.sentences.get(id)?.requires.every((r) => known.has(r)));
     return this.unseenFirst(gated);
   }
 

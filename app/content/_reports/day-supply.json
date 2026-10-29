@@ -5,7 +5,10 @@
     "communicative": 4,
     "unitByDrill": 40,
     "firstDayRows": 12,
-    "firstDayQuestions": 6
+    "firstDayQuestions": 6,
+    "writingTasks": 1,
+    "writingTarget": 2,
+    "scenes": 1
   },
   "rows": 21856,
   "days": [
@@ -18,7 +21,7 @@
         {
           "node": "g:ser-identity",
           "block": "structuredInput",
-          "usable": 55,
+          "usable": 52,
           "usableStrict": 0,
           "questions": 15,
           "min": 9,
@@ -27,7 +30,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 56
+      "remixUsable": 53
     },
     {
       "unit": "u01",
@@ -38,7 +41,7 @@
         {
           "node": "g:ser-identity",
           "block": "controlledOutput",
-          "usable": 56,
+          "usable": 53,
           "usableStrict": 0,
           "questions": 15,
           "min": 11,
@@ -47,7 +50,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 58
+      "remixUsable": 55
     },
     {
       "unit": "u01",
@@ -55,7 +58,7 @@
       "session": 3,
       "type": "introduce",
       "nodes": [],
-      "remixUsable": 59
+      "remixUsable": 56
     },
     {
       "unit": "u01",
@@ -66,7 +69,7 @@
         {
           "node": "g:ser-identity",
           "block": "controlledOutput",
-          "usable": 63,
+          "usable": 59,
           "usableStrict": 0,
           "questions": 19,
           "min": 11,
@@ -75,7 +78,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 69
+      "remixUsable": 62
     },
     {
       "unit": "u01",
@@ -83,7 +86,7 @@
       "session": 5,
       "type": "input",
       "nodes": [],
-      "remixUsable": 95
+      "remixUsable": 73
     },
     {
       "unit": "u01",
@@ -94,16 +97,16 @@
         {
           "node": "g:gender-articles",
           "block": "structuredInput",
-          "usable": 129,
+          "usable": 112,
           "usableStrict": 25,
-          "questions": 25,
+          "questions": 18,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 263
+      "remixUsable": 212
     },
     {
       "unit": "u01",
@@ -114,9 +117,9 @@
         {
           "node": "g:gender-articles",
           "block": "controlledOutput",
-          "usable": 143,
+          "usable": 124,
           "usableStrict": 25,
-          "questions": 25,
+          "questions": 18,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -125,7 +128,7 @@
         {
           "node": "p:ser-profession-no-article",
           "block": "controlledOutput",
-          "usable": 2,
+          "usable": 1,
           "usableStrict": 0,
           "questions": 0,
           "min": 11,
@@ -134,7 +137,7 @@
           "shortQuestions": true
         }
       ],
-      "remixUsable": 344
+      "remixUsable": 276
     },
     {
       "unit": "u01",
@@ -145,16 +148,16 @@
         {
           "node": "g:present-ar",
           "block": "structuredInput",
-          "usable": 170,
+          "usable": 71,
           "usableStrict": 55,
-          "questions": 40,
+          "questions": 17,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 564
+      "remixUsable": 400
     },
     {
       "unit": "u01",
@@ -165,9 +168,9 @@
         {
           "node": "g:present-ar",
           "block": "controlledOutput",
-          "usable": 207,
+          "usable": 89,
           "usableStrict": 67,
-          "questions": 42,
+          "questions": 19,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -176,16 +179,16 @@
         {
           "node": "g:gender-articles",
           "block": "controlledOutput",
-          "usable": 308,
+          "usable": 246,
           "usableStrict": 84,
-          "questions": 59,
+          "questions": 45,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 672
+      "remixUsable": 481
     },
     {
       "unit": "u01",
@@ -193,7 +196,7 @@
       "session": 10,
       "type": "output",
       "nodes": [],
-      "remixUsable": 674
+      "remixUsable": 481
     },
     {
       "unit": "u02",
@@ -204,16 +207,16 @@
         {
           "node": "g:present-er-ir",
           "block": "structuredInput",
-          "usable": 40,
+          "usable": 16,
           "usableStrict": 14,
-          "questions": 8,
+          "questions": 2,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 718
+      "remixUsable": 507
     },
     {
       "unit": "u02",
@@ -224,9 +227,9 @@
         {
           "node": "g:present-er-ir",
           "block": "controlledOutput",
-          "usable": 58,
+          "usable": 28,
           "usableStrict": 23,
-          "questions": 11,
+          "questions": 4,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -235,9 +238,9 @@
         {
           "node": "g:present-ar",
           "block": "controlledOutput",
-          "usable": 225,
+          "usable": 107,
           "usableStrict": 81,
-          "questions": 46,
+          "questions": 24,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -246,9 +249,9 @@
         {
           "node": "p:quantifiers-basic",
           "block": "controlledOutput",
-          "usable": 5,
+          "usable": 1,
           "usableStrict": 1,
-          "questions": 1,
+          "questions": 0,
           "min": 11,
           "minQuestions": 4,
           "short": true,
@@ -257,16 +260,16 @@
         {
           "node": "p:possessives-basic",
           "block": "controlledOutput",
-          "usable": 5,
+          "usable": 1,
           "usableStrict": 1,
-          "questions": 3,
+          "questions": 1,
           "min": 11,
           "minQuestions": 4,
           "short": true,
           "shortQuestions": true
         }
       ],
-      "remixUsable": 761
+      "remixUsable": 544
     },
     {
       "unit": "u02",
@@ -277,16 +280,16 @@
         {
           "node": "g:estar-location-states",
           "block": "structuredInput",
-          "usable": 46,
+          "usable": 40,
           "usableStrict": 0,
-          "questions": 12,
+          "questions": 10,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 847
+      "remixUsable": 614
     },
     {
       "unit": "u02",
@@ -297,9 +300,9 @@
         {
           "node": "g:estar-location-states",
           "block": "controlledOutput",
-          "usable": 55,
+          "usable": 47,
           "usableStrict": 0,
-          "questions": 14,
+          "questions": 12,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -308,9 +311,9 @@
         {
           "node": "g:present-er-ir",
           "block": "controlledOutput",
-          "usable": 67,
+          "usable": 33,
           "usableStrict": 27,
-          "questions": 15,
+          "questions": 5,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -319,16 +322,16 @@
         {
           "node": "p:demonstratives-basic",
           "block": "controlledOutput",
-          "usable": 14,
+          "usable": 9,
           "usableStrict": 1,
-          "questions": 4,
+          "questions": 2,
           "min": 11,
           "minQuestions": 4,
-          "short": false,
-          "shortQuestions": false
+          "short": true,
+          "shortQuestions": true
         }
       ],
-      "remixUsable": 865
+      "remixUsable": 625
     },
     {
       "unit": "u02",
@@ -339,16 +342,16 @@
         {
           "node": "g:adjective-agreement",
           "block": "structuredInput",
-          "usable": 31,
+          "usable": 10,
           "usableStrict": 0,
-          "questions": 6,
+          "questions": 2,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 1035
+      "remixUsable": 736
     },
     {
       "unit": "u02",
@@ -359,20 +362,20 @@
         {
           "node": "g:adjective-agreement",
           "block": "controlledOutput",
-          "usable": 52,
+          "usable": 15,
           "usableStrict": 0,
-          "questions": 9,
+          "questions": 3,
           "min": 11,
           "minQuestions": 4,
           "short": false,
-          "shortQuestions": false
+          "shortQuestions": true
         },
         {
           "node": "g:estar-location-states",
           "block": "controlledOutput",
-          "usable": 154,
+          "usable": 83,
           "usableStrict": 0,
-          "questions": 34,
+          "questions": 22,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -381,27 +384,27 @@
         {
           "node": "p:tener-hambre",
           "block": "controlledOutput",
-          "usable": 44,
+          "usable": 8,
           "usableStrict": 1,
-          "questions": 10,
+          "questions": 2,
           "min": 11,
           "minQuestions": 4,
-          "short": false,
-          "shortQuestions": false
+          "short": true,
+          "shortQuestions": true
         },
         {
           "node": "p:senor-don-article",
           "block": "controlledOutput",
-          "usable": 75,
+          "usable": 53,
           "usableStrict": 28,
-          "questions": 15,
+          "questions": 14,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 1186
+      "remixUsable": 802
     },
     {
       "unit": "u02",
@@ -412,16 +415,16 @@
         {
           "node": "g:questions",
           "block": "structuredInput",
-          "usable": 105,
+          "usable": 84,
           "usableStrict": 0,
-          "questions": 105,
+          "questions": 84,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 1319
+      "remixUsable": 912
     },
     {
       "unit": "u02",
@@ -432,9 +435,9 @@
         {
           "node": "g:questions",
           "block": "controlledOutput",
-          "usable": 177,
+          "usable": 149,
           "usableStrict": 0,
-          "questions": 177,
+          "questions": 149,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -443,9 +446,9 @@
         {
           "node": "g:adjective-agreement",
           "block": "controlledOutput",
-          "usable": 56,
+          "usable": 22,
           "usableStrict": 0,
-          "questions": 12,
+          "questions": 7,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -454,9 +457,9 @@
         {
           "node": "p:question-word-order",
           "block": "controlledOutput",
-          "usable": 109,
+          "usable": 88,
           "usableStrict": 0,
-          "questions": 109,
+          "questions": 88,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -465,9 +468,9 @@
         {
           "node": "p:prep-questions-basic",
           "block": "controlledOutput",
-          "usable": 32,
+          "usable": 19,
           "usableStrict": 0,
-          "questions": 32,
+          "questions": 19,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -485,7 +488,7 @@
           "shortQuestions": true
         }
       ],
-      "remixUsable": 1447
+      "remixUsable": 1083
     },
     {
       "unit": "u02",
@@ -493,7 +496,7 @@
       "session": 19,
       "type": "output",
       "nodes": [],
-      "remixUsable": 1461
+      "remixUsable": 1083
     },
     {
       "unit": "u03",
@@ -504,16 +507,16 @@
         {
           "node": "g:gustar-basic",
           "block": "structuredInput",
-          "usable": 99,
+          "usable": 86,
           "usableStrict": 0,
-          "questions": 42,
+          "questions": 38,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 1493
+      "remixUsable": 1115
     },
     {
       "unit": "u03",
@@ -524,9 +527,9 @@
         {
           "node": "g:gustar-basic",
           "block": "controlledOutput",
-          "usable": 127,
+          "usable": 106,
           "usableStrict": 0,
-          "questions": 54,
+          "questions": 48,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -535,16 +538,16 @@
         {
           "node": "g:questions",
           "block": "controlledOutput",
-          "usable": 183,
+          "usable": 154,
           "usableStrict": 0,
-          "questions": 183,
+          "questions": 154,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 1544
+      "remixUsable": 1152
     },
     {
       "unit": "u03",
@@ -555,16 +558,16 @@
         {
           "node": "g:stem-boot",
           "block": "structuredInput",
-          "usable": 45,
+          "usable": 34,
           "usableStrict": 25,
-          "questions": 27,
+          "questions": 18,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 1601
+      "remixUsable": 1196
     },
     {
       "unit": "u03",
@@ -575,9 +578,9 @@
         {
           "node": "g:stem-boot",
           "block": "controlledOutput",
-          "usable": 52,
+          "usable": 39,
           "usableStrict": 30,
-          "questions": 30,
+          "questions": 20,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -586,9 +589,9 @@
         {
           "node": "g:gustar-basic",
           "block": "controlledOutput",
-          "usable": 144,
+          "usable": 123,
           "usableStrict": 0,
-          "questions": 63,
+          "questions": 57,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -597,9 +600,9 @@
         {
           "node": "p:exclamations-basic",
           "block": "controlledOutput",
-          "usable": 3,
+          "usable": 0,
           "usableStrict": 0,
-          "questions": 1,
+          "questions": 0,
           "min": 11,
           "minQuestions": 4,
           "short": true,
@@ -608,16 +611,16 @@
         {
           "node": "p:indefinites-basic",
           "block": "controlledOutput",
-          "usable": 4,
+          "usable": 2,
           "usableStrict": 2,
-          "questions": 4,
+          "questions": 2,
           "min": 11,
           "minQuestions": 4,
           "short": true,
-          "shortQuestions": false
+          "shortQuestions": true
         }
       ],
-      "remixUsable": 1618
+      "remixUsable": 1208
     },
     {
       "unit": "u03",
@@ -628,9 +631,9 @@
         {
           "node": "g:verb-infinitive",
           "block": "structuredInput",
-          "usable": 52,
+          "usable": 23,
           "usableStrict": 16,
-          "questions": 15,
+          "questions": 7,
           "min": 9,
           "minQuestions": 0,
           "short": false,
@@ -648,7 +651,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 1736
+      "remixUsable": 1272
     },
     {
       "unit": "u03",
@@ -659,9 +662,9 @@
         {
           "node": "g:verb-infinitive",
           "block": "controlledOutput",
-          "usable": 59,
+          "usable": 30,
           "usableStrict": 23,
-          "questions": 16,
+          "questions": 9,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -670,9 +673,9 @@
         {
           "node": "g:stem-boot",
           "block": "controlledOutput",
-          "usable": 195,
+          "usable": 74,
           "usableStrict": 52,
-          "questions": 100,
+          "questions": 36,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -681,16 +684,16 @@
         {
           "node": "p:para-inf",
           "block": "controlledOutput",
-          "usable": 12,
+          "usable": 7,
           "usableStrict": 5,
           "questions": 1,
           "min": 11,
           "minQuestions": 4,
-          "short": false,
+          "short": true,
           "shortQuestions": true
         }
       ],
-      "remixUsable": 1843
+      "remixUsable": 1421
     },
     {
       "unit": "u03",
@@ -701,16 +704,16 @@
         {
           "node": "g:ir-a-plans",
           "block": "structuredInput",
-          "usable": 185,
+          "usable": 133,
           "usableStrict": 0,
-          "questions": 78,
+          "questions": 59,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 1943
+      "remixUsable": 1538
     },
     {
       "unit": "u03",
@@ -721,9 +724,9 @@
         {
           "node": "g:ir-a-plans",
           "block": "controlledOutput",
-          "usable": 283,
+          "usable": 231,
           "usableStrict": 0,
-          "questions": 116,
+          "questions": 99,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -732,9 +735,9 @@
         {
           "node": "g:verb-infinitive",
           "block": "controlledOutput",
-          "usable": 83,
+          "usable": 52,
           "usableStrict": 40,
-          "questions": 22,
+          "questions": 13,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -752,7 +755,7 @@
           "shortQuestions": true
         }
       ],
-      "remixUsable": 2181
+      "remixUsable": 1755
     },
     {
       "unit": "u03",
@@ -760,7 +763,7 @@
       "session": 28,
       "type": "output",
       "nodes": [],
-      "remixUsable": 2184
+      "remixUsable": 1755
     },
     {
       "unit": "u04",
@@ -771,16 +774,16 @@
         {
           "node": "g:preterite-ar",
           "block": "structuredInput",
-          "usable": 87,
+          "usable": 57,
           "usableStrict": 41,
-          "questions": 43,
+          "questions": 31,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 2300
+      "remixUsable": 1799
     },
     {
       "unit": "u04",
@@ -791,9 +794,9 @@
         {
           "node": "g:preterite-ar",
           "block": "controlledOutput",
-          "usable": 113,
+          "usable": 71,
           "usableStrict": 55,
-          "questions": 47,
+          "questions": 34,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -802,9 +805,9 @@
         {
           "node": "g:ir-a-plans",
           "block": "controlledOutput",
-          "usable": 301,
+          "usable": 233,
           "usableStrict": 0,
-          "questions": 121,
+          "questions": 100,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -813,16 +816,16 @@
         {
           "node": "p:me-te-nos-objects",
           "block": "controlledOutput",
-          "usable": 36,
+          "usable": 15,
           "usableStrict": 15,
-          "questions": 13,
+          "questions": 5,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 2328
+      "remixUsable": 1815
     },
     {
       "unit": "u04",
@@ -833,16 +836,16 @@
         {
           "node": "g:preterite-er-ir",
           "block": "structuredInput",
-          "usable": 82,
+          "usable": 38,
           "usableStrict": 33,
-          "questions": 29,
+          "questions": 16,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 2420
+      "remixUsable": 1880
     },
     {
       "unit": "u04",
@@ -853,9 +856,9 @@
         {
           "node": "g:preterite-er-ir",
           "block": "controlledOutput",
-          "usable": 87,
+          "usable": 39,
           "usableStrict": 34,
-          "questions": 29,
+          "questions": 16,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -864,9 +867,9 @@
         {
           "node": "g:preterite-ar",
           "block": "controlledOutput",
-          "usable": 135,
+          "usable": 90,
           "usableStrict": 69,
-          "questions": 52,
+          "questions": 41,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -875,16 +878,16 @@
         {
           "node": "p:time-sequence-basic",
           "block": "controlledOutput",
-          "usable": 16,
+          "usable": 8,
           "usableStrict": 4,
-          "questions": 4,
+          "questions": 3,
           "min": 11,
           "minQuestions": 4,
-          "short": false,
-          "shortQuestions": false
+          "short": true,
+          "shortQuestions": true
         }
       ],
-      "remixUsable": 2434
+      "remixUsable": 1893
     },
     {
       "unit": "u04",
@@ -892,7 +895,7 @@
       "session": 33,
       "type": "input",
       "nodes": [],
-      "remixUsable": 2506
+      "remixUsable": 1956
     },
     {
       "unit": "u04",
@@ -903,16 +906,16 @@
         {
           "node": "g:preterite-ser-ir-hacer",
           "block": "structuredInput",
-          "usable": 161,
+          "usable": 112,
           "usableStrict": 22,
-          "questions": 59,
+          "questions": 47,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 2648
+      "remixUsable": 2079
     },
     {
       "unit": "u04",
@@ -923,9 +926,9 @@
         {
           "node": "g:preterite-ser-ir-hacer",
           "block": "controlledOutput",
-          "usable": 162,
+          "usable": 112,
           "usableStrict": 22,
-          "questions": 59,
+          "questions": 47,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -934,16 +937,16 @@
         {
           "node": "g:preterite-er-ir",
           "block": "controlledOutput",
-          "usable": 111,
+          "usable": 66,
           "usableStrict": 55,
-          "questions": 32,
+          "questions": 23,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 2655
+      "remixUsable": 2086
     },
     {
       "unit": "u04",
@@ -951,7 +954,7 @@
       "session": 36,
       "type": "output",
       "nodes": [],
-      "remixUsable": 2655
+      "remixUsable": 2086
     },
     {
       "unit": "u04",
@@ -959,7 +962,7 @@
       "session": 37,
       "type": "checkpoint",
       "nodes": [],
-      "remixUsable": 2655
+      "remixUsable": 2086
     },
     {
       "unit": "u05",
@@ -970,16 +973,16 @@
         {
           "node": "g:yo-irregular",
           "block": "structuredInput",
-          "usable": 45,
+          "usable": 19,
           "usableStrict": 10,
-          "questions": 8,
+          "questions": 5,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 2756
+      "remixUsable": 2100
     },
     {
       "unit": "u05",
@@ -990,9 +993,9 @@
         {
           "node": "g:yo-irregular",
           "block": "controlledOutput",
-          "usable": 45,
+          "usable": 19,
           "usableStrict": 10,
-          "questions": 8,
+          "questions": 5,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1001,16 +1004,16 @@
         {
           "node": "g:preterite-ser-ir-hacer",
           "block": "controlledOutput",
-          "usable": 216,
+          "usable": 116,
           "usableStrict": 22,
-          "questions": 73,
+          "questions": 48,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 2756
+      "remixUsable": 2100
     },
     {
       "unit": "u05",
@@ -1021,16 +1024,16 @@
         {
           "node": "g:possessives",
           "block": "structuredInput",
-          "usable": 76,
+          "usable": 22,
           "usableStrict": 7,
-          "questions": 19,
+          "questions": 8,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 2834
+      "remixUsable": 2123
     },
     {
       "unit": "u05",
@@ -1041,9 +1044,9 @@
         {
           "node": "g:possessives",
           "block": "controlledOutput",
-          "usable": 77,
+          "usable": 22,
           "usableStrict": 7,
-          "questions": 19,
+          "questions": 8,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1052,9 +1055,9 @@
         {
           "node": "g:yo-irregular",
           "block": "controlledOutput",
-          "usable": 46,
+          "usable": 19,
           "usableStrict": 10,
-          "questions": 8,
+          "questions": 5,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1063,16 +1066,16 @@
         {
           "node": "g:adjective-agreement",
           "block": "controlledOutput",
-          "usable": 95,
+          "usable": 30,
           "usableStrict": 0,
-          "questions": 19,
+          "questions": 7,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 2843
+      "remixUsable": 2126
     },
     {
       "unit": "u05",
@@ -1080,7 +1083,7 @@
       "session": 42,
       "type": "input",
       "nodes": [],
-      "remixUsable": 2902
+      "remixUsable": 2247
     },
     {
       "unit": "u05",
@@ -1088,7 +1091,7 @@
       "session": 43,
       "type": "patterns",
       "nodes": [],
-      "remixUsable": 3067
+      "remixUsable": 2341
     },
     {
       "unit": "u05",
@@ -1099,7 +1102,7 @@
         {
           "node": "g:negation-words",
           "block": "structuredInput",
-          "usable": 54,
+          "usable": 35,
           "usableStrict": 30,
           "questions": 5,
           "min": 9,
@@ -1108,7 +1111,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 3119
+      "remixUsable": 2379
     },
     {
       "unit": "u05",
@@ -1119,7 +1122,7 @@
         {
           "node": "g:negation-words",
           "block": "controlledOutput",
-          "usable": 56,
+          "usable": 37,
           "usableStrict": 32,
           "questions": 5,
           "min": 11,
@@ -1130,9 +1133,9 @@
         {
           "node": "g:possessives",
           "block": "controlledOutput",
-          "usable": 114,
+          "usable": 57,
           "usableStrict": 23,
-          "questions": 24,
+          "questions": 12,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1150,7 +1153,7 @@
           "shortQuestions": true
         }
       ],
-      "remixUsable": 3191
+      "remixUsable": 2430
     },
     {
       "unit": "u05",
@@ -1158,7 +1161,7 @@
       "session": 46,
       "type": "output",
       "nodes": [],
-      "remixUsable": 3191
+      "remixUsable": 2430
     },
     {
       "unit": "u05",
@@ -1166,7 +1169,7 @@
       "session": 47,
       "type": "review",
       "nodes": [],
-      "remixUsable": 3191
+      "remixUsable": 2430
     },
     {
       "unit": "u06",
@@ -1177,16 +1180,16 @@
         {
           "node": "g:imperfect-states",
           "block": "structuredInput",
-          "usable": 60,
+          "usable": 22,
           "usableStrict": 5,
-          "questions": 19,
+          "questions": 8,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 3243
+      "remixUsable": 2453
     },
     {
       "unit": "u06",
@@ -1197,9 +1200,9 @@
         {
           "node": "g:imperfect-states",
           "block": "controlledOutput",
-          "usable": 86,
+          "usable": 38,
           "usableStrict": 9,
-          "questions": 26,
+          "questions": 14,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1208,16 +1211,16 @@
         {
           "node": "g:possessives",
           "block": "controlledOutput",
-          "usable": 122,
+          "usable": 60,
           "usableStrict": 23,
-          "questions": 26,
+          "questions": 14,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 3271
+      "remixUsable": 2471
     },
     {
       "unit": "u06",
@@ -1228,16 +1231,16 @@
         {
           "node": "g:preterite-irregular-strong",
           "block": "structuredInput",
-          "usable": 58,
+          "usable": 31,
           "usableStrict": 15,
-          "questions": 23,
+          "questions": 15,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 3363
+      "remixUsable": 2525
     },
     {
       "unit": "u06",
@@ -1248,9 +1251,9 @@
         {
           "node": "g:preterite-irregular-strong",
           "block": "controlledOutput",
-          "usable": 59,
+          "usable": 31,
           "usableStrict": 15,
-          "questions": 23,
+          "questions": 15,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1259,16 +1262,16 @@
         {
           "node": "g:imperfect-states",
           "block": "controlledOutput",
-          "usable": 112,
+          "usable": 55,
           "usableStrict": 13,
-          "questions": 35,
+          "questions": 23,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 3370
+      "remixUsable": 2537
     },
     {
       "unit": "u06",
@@ -1276,7 +1279,7 @@
       "session": 52,
       "type": "input",
       "nodes": [],
-      "remixUsable": 3450
+      "remixUsable": 2601
     },
     {
       "unit": "u06",
@@ -1287,16 +1290,16 @@
         {
           "node": "g:hace-ago",
           "block": "structuredInput",
-          "usable": 168,
+          "usable": 95,
           "usableStrict": 59,
-          "questions": 15,
+          "questions": 10,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 3618
+      "remixUsable": 2718
     },
     {
       "unit": "u06",
@@ -1307,9 +1310,9 @@
         {
           "node": "g:hace-ago",
           "block": "controlledOutput",
-          "usable": 178,
+          "usable": 99,
           "usableStrict": 62,
-          "questions": 17,
+          "questions": 11,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1318,16 +1321,16 @@
         {
           "node": "g:preterite-irregular-strong",
           "block": "controlledOutput",
-          "usable": 117,
+          "usable": 78,
           "usableStrict": 42,
-          "questions": 29,
+          "questions": 21,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 3643
+      "remixUsable": 2741
     },
     {
       "unit": "u06",
@@ -1335,7 +1338,7 @@
       "session": 55,
       "type": "output",
       "nodes": [],
-      "remixUsable": 3643
+      "remixUsable": 2741
     },
     {
       "unit": "u06",
@@ -1343,7 +1346,7 @@
       "session": 56,
       "type": "review",
       "nodes": [],
-      "remixUsable": 3643
+      "remixUsable": 2741
     },
     {
       "unit": "u07",
@@ -1354,16 +1357,16 @@
         {
           "node": "g:hay-vs-esta",
           "block": "structuredInput",
-          "usable": 55,
+          "usable": 22,
           "usableStrict": 15,
-          "questions": 24,
+          "questions": 10,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 3700
+      "remixUsable": 2799
     },
     {
       "unit": "u07",
@@ -1374,9 +1377,9 @@
         {
           "node": "g:hay-vs-esta",
           "block": "controlledOutput",
-          "usable": 60,
+          "usable": 29,
           "usableStrict": 19,
-          "questions": 26,
+          "questions": 13,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1385,16 +1388,16 @@
         {
           "node": "g:hace-ago",
           "block": "controlledOutput",
-          "usable": 202,
+          "usable": 111,
           "usableStrict": 69,
-          "questions": 20,
+          "questions": 14,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 3708
+      "remixUsable": 2811
     },
     {
       "unit": "u07",
@@ -1405,16 +1408,16 @@
         {
           "node": "g:demonstratives",
           "block": "structuredInput",
-          "usable": 62,
+          "usable": 35,
           "usableStrict": 5,
-          "questions": 19,
+          "questions": 13,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 3782
+      "remixUsable": 2883
     },
     {
       "unit": "u07",
@@ -1425,9 +1428,9 @@
         {
           "node": "g:demonstratives",
           "block": "controlledOutput",
-          "usable": 63,
+          "usable": 35,
           "usableStrict": 5,
-          "questions": 19,
+          "questions": 13,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1436,16 +1439,16 @@
         {
           "node": "g:hay-vs-esta",
           "block": "controlledOutput",
-          "usable": 66,
+          "usable": 34,
           "usableStrict": 23,
-          "questions": 27,
+          "questions": 16,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 3783
+      "remixUsable": 2885
     },
     {
       "unit": "u07",
@@ -1453,7 +1456,7 @@
       "session": 61,
       "type": "input",
       "nodes": [],
-      "remixUsable": 3820
+      "remixUsable": 2936
     },
     {
       "unit": "u07",
@@ -1461,7 +1464,7 @@
       "session": 62,
       "type": "patterns",
       "nodes": [],
-      "remixUsable": 3994
+      "remixUsable": 3048
     },
     {
       "unit": "u07",
@@ -1472,16 +1475,16 @@
         {
           "node": "g:quantifiers",
           "block": "structuredInput",
-          "usable": 71,
+          "usable": 39,
           "usableStrict": 31,
-          "questions": 14,
+          "questions": 7,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 4065
+      "remixUsable": 3134
     },
     {
       "unit": "u07",
@@ -1492,9 +1495,9 @@
         {
           "node": "g:quantifiers",
           "block": "controlledOutput",
-          "usable": 82,
+          "usable": 47,
           "usableStrict": 39,
-          "questions": 16,
+          "questions": 9,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1503,16 +1506,16 @@
         {
           "node": "g:demonstratives",
           "block": "controlledOutput",
-          "usable": 115,
+          "usable": 74,
           "usableStrict": 19,
-          "questions": 29,
+          "questions": 22,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 4123
+      "remixUsable": 3194
     },
     {
       "unit": "u07",
@@ -1520,7 +1523,7 @@
       "session": 65,
       "type": "output",
       "nodes": [],
-      "remixUsable": 4123
+      "remixUsable": 3194
     },
     {
       "unit": "u07",
@@ -1528,7 +1531,7 @@
       "session": 66,
       "type": "review",
       "nodes": [],
-      "remixUsable": 4123
+      "remixUsable": 3194
     },
     {
       "unit": "u08",
@@ -1539,16 +1542,16 @@
         {
           "node": "g:perfecto-experience",
           "block": "structuredInput",
-          "usable": 45,
+          "usable": 23,
           "usableStrict": 13,
-          "questions": 19,
+          "questions": 11,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 4166
+      "remixUsable": 3213
     },
     {
       "unit": "u08",
@@ -1559,9 +1562,9 @@
         {
           "node": "g:perfecto-experience",
           "block": "controlledOutput",
-          "usable": 61,
+          "usable": 33,
           "usableStrict": 19,
-          "questions": 24,
+          "questions": 15,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1570,16 +1573,16 @@
         {
           "node": "g:quantifiers",
           "block": "controlledOutput",
-          "usable": 88,
+          "usable": 47,
           "usableStrict": 39,
-          "questions": 18,
+          "questions": 9,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 4185
+      "remixUsable": 3226
     },
     {
       "unit": "u08",
@@ -1590,16 +1593,16 @@
         {
           "node": "g:estar-gerund",
           "block": "structuredInput",
-          "usable": 103,
+          "usable": 56,
           "usableStrict": 0,
-          "questions": 36,
+          "questions": 25,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 4292
+      "remixUsable": 3286
     },
     {
       "unit": "u08",
@@ -1610,9 +1613,9 @@
         {
           "node": "g:estar-gerund",
           "block": "controlledOutput",
-          "usable": 103,
+          "usable": 61,
           "usableStrict": 0,
-          "questions": 36,
+          "questions": 26,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1621,16 +1624,16 @@
         {
           "node": "g:perfecto-experience",
           "block": "controlledOutput",
-          "usable": 78,
+          "usable": 39,
           "usableStrict": 22,
-          "questions": 30,
+          "questions": 18,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 4307
+      "remixUsable": 3366
     },
     {
       "unit": "u08",
@@ -1638,7 +1641,7 @@
       "session": 71,
       "type": "input",
       "nodes": [],
-      "remixUsable": 4349
+      "remixUsable": 3434
     },
     {
       "unit": "u08",
@@ -1649,16 +1652,16 @@
         {
           "node": "g:direct-objects",
           "block": "structuredInput",
-          "usable": 152,
+          "usable": 108,
           "usableStrict": 74,
-          "questions": 58,
+          "questions": 37,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 4501
+      "remixUsable": 3555
     },
     {
       "unit": "u08",
@@ -1669,9 +1672,9 @@
         {
           "node": "g:direct-objects",
           "block": "controlledOutput",
-          "usable": 175,
+          "usable": 130,
           "usableStrict": 93,
-          "questions": 67,
+          "questions": 47,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1680,9 +1683,9 @@
         {
           "node": "g:estar-gerund",
           "block": "controlledOutput",
-          "usable": 123,
+          "usable": 82,
           "usableStrict": 0,
-          "questions": 42,
+          "questions": 30,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1691,16 +1694,16 @@
         {
           "node": "p:tener-ganas-de",
           "block": "controlledOutput",
-          "usable": 38,
+          "usable": 0,
           "usableStrict": 0,
-          "questions": 13,
+          "questions": 0,
           "min": 11,
           "minQuestions": 4,
-          "short": false,
-          "shortQuestions": false
+          "short": true,
+          "shortQuestions": true
         }
       ],
-      "remixUsable": 4603
+      "remixUsable": 3654
     },
     {
       "unit": "u08",
@@ -1708,7 +1711,7 @@
       "session": 74,
       "type": "output",
       "nodes": [],
-      "remixUsable": 4603
+      "remixUsable": 3654
     },
     {
       "unit": "u08",
@@ -1716,7 +1719,7 @@
       "session": 75,
       "type": "checkpoint",
       "nodes": [],
-      "remixUsable": 4603
+      "remixUsable": 3654
     },
     {
       "unit": "u09",
@@ -1736,7 +1739,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 4610
+      "remixUsable": 3700
     },
     {
       "unit": "u09",
@@ -1747,20 +1750,20 @@
         {
           "node": "g:reflexive-routine",
           "block": "controlledOutput",
-          "usable": 19,
+          "usable": 0,
           "usableStrict": 0,
-          "questions": 11,
+          "questions": 0,
           "min": 11,
           "minQuestions": 4,
-          "short": false,
-          "shortQuestions": false
+          "short": true,
+          "shortQuestions": true
         },
         {
           "node": "g:direct-objects",
           "block": "controlledOutput",
-          "usable": 181,
+          "usable": 141,
           "usableStrict": 103,
-          "questions": 73,
+          "questions": 54,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1769,16 +1772,16 @@
         {
           "node": "p:lavarse-las-manos",
           "block": "controlledOutput",
-          "usable": 14,
+          "usable": 0,
           "usableStrict": 0,
-          "questions": 10,
+          "questions": 0,
           "min": 11,
           "minQuestions": 4,
-          "short": false,
-          "shortQuestions": false
+          "short": true,
+          "shortQuestions": true
         }
       ],
-      "remixUsable": 4631
+      "remixUsable": 3705
     },
     {
       "unit": "u09",
@@ -1789,16 +1792,16 @@
         {
           "node": "g:prep-infinitive",
           "block": "structuredInput",
-          "usable": 64,
+          "usable": 30,
           "usableStrict": 24,
-          "questions": 13,
+          "questions": 5,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 4701
+      "remixUsable": 3762
     },
     {
       "unit": "u09",
@@ -1809,9 +1812,9 @@
         {
           "node": "g:prep-infinitive",
           "block": "controlledOutput",
-          "usable": 65,
+          "usable": 30,
           "usableStrict": 24,
-          "questions": 13,
+          "questions": 5,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1820,16 +1823,16 @@
         {
           "node": "g:reflexive-routine",
           "block": "controlledOutput",
-          "usable": 45,
+          "usable": 9,
           "usableStrict": 5,
-          "questions": 20,
+          "questions": 2,
           "min": 11,
           "minQuestions": 4,
-          "short": false,
-          "shortQuestions": false
+          "short": true,
+          "shortQuestions": true
         }
       ],
-      "remixUsable": 4716
+      "remixUsable": 3772
     },
     {
       "unit": "u09",
@@ -1837,7 +1840,7 @@
       "session": 80,
       "type": "input",
       "nodes": [],
-      "remixUsable": 4851
+      "remixUsable": 3915
     },
     {
       "unit": "u09",
@@ -1845,7 +1848,7 @@
       "session": 81,
       "type": "patterns",
       "nodes": [],
-      "remixUsable": 5211
+      "remixUsable": 4211
     },
     {
       "unit": "u09",
@@ -1856,16 +1859,16 @@
         {
           "node": "g:tener-que-hay-que",
           "block": "structuredInput",
-          "usable": 128,
+          "usable": 78,
           "usableStrict": 57,
-          "questions": 26,
+          "questions": 19,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 5346
+      "remixUsable": 4320
     },
     {
       "unit": "u09",
@@ -1876,9 +1879,9 @@
         {
           "node": "g:tener-que-hay-que",
           "block": "controlledOutput",
-          "usable": 128,
+          "usable": 83,
           "usableStrict": 60,
-          "questions": 26,
+          "questions": 22,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1887,9 +1890,9 @@
         {
           "node": "g:prep-infinitive",
           "block": "controlledOutput",
-          "usable": 96,
+          "usable": 58,
           "usableStrict": 47,
-          "questions": 18,
+          "questions": 11,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1898,16 +1901,16 @@
         {
           "node": "p:desde-hasta",
           "block": "controlledOutput",
-          "usable": 12,
+          "usable": 5,
           "usableStrict": 4,
           "questions": 0,
           "min": 11,
           "minQuestions": 4,
-          "short": false,
+          "short": true,
           "shortQuestions": true
         }
       ],
-      "remixUsable": 5366
+      "remixUsable": 4400
     },
     {
       "unit": "u09",
@@ -1915,7 +1918,7 @@
       "session": 84,
       "type": "output",
       "nodes": [],
-      "remixUsable": 5366
+      "remixUsable": 4400
     },
     {
       "unit": "u09",
@@ -1923,7 +1926,7 @@
       "session": 85,
       "type": "review",
       "nodes": [],
-      "remixUsable": 5366
+      "remixUsable": 4400
     },
     {
       "unit": "u10",
@@ -1934,16 +1937,16 @@
         {
           "node": "g:gustar-full",
           "block": "structuredInput",
-          "usable": 81,
+          "usable": 58,
           "usableStrict": 17,
-          "questions": 15,
+          "questions": 11,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 5472
+      "remixUsable": 4515
     },
     {
       "unit": "u10",
@@ -1954,9 +1957,9 @@
         {
           "node": "g:gustar-full",
           "block": "controlledOutput",
-          "usable": 87,
+          "usable": 63,
           "usableStrict": 22,
-          "questions": 18,
+          "questions": 13,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -1965,16 +1968,16 @@
         {
           "node": "g:tener-que-hay-que",
           "block": "controlledOutput",
-          "usable": 144,
+          "usable": 94,
           "usableStrict": 69,
-          "questions": 27,
+          "questions": 25,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 5478
+      "remixUsable": 4524
     },
     {
       "unit": "u10",
@@ -1985,16 +1988,16 @@
         {
           "node": "g:stem-e-i",
           "block": "structuredInput",
-          "usable": 72,
+          "usable": 33,
           "usableStrict": 21,
-          "questions": 21,
+          "questions": 10,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 5572
+      "remixUsable": 4576
     },
     {
       "unit": "u10",
@@ -2005,9 +2008,9 @@
         {
           "node": "g:stem-e-i",
           "block": "controlledOutput",
-          "usable": 72,
+          "usable": 42,
           "usableStrict": 26,
-          "questions": 21,
+          "questions": 15,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2016,16 +2019,16 @@
         {
           "node": "g:gustar-full",
           "block": "controlledOutput",
-          "usable": 96,
+          "usable": 70,
           "usableStrict": 23,
-          "questions": 21,
+          "questions": 16,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 5582
+      "remixUsable": 4594
     },
     {
       "unit": "u10",
@@ -2033,7 +2036,7 @@
       "session": 90,
       "type": "input",
       "nodes": [],
-      "remixUsable": 5591
+      "remixUsable": 4658
     },
     {
       "unit": "u10",
@@ -2041,7 +2044,7 @@
       "session": 91,
       "type": "patterns",
       "nodes": [],
-      "remixUsable": 5705
+      "remixUsable": 4744
     },
     {
       "unit": "u10",
@@ -2052,16 +2055,16 @@
         {
           "node": "g:prep-pronouns",
           "block": "structuredInput",
-          "usable": 190,
+          "usable": 151,
           "usableStrict": 78,
-          "questions": 35,
+          "questions": 32,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 5886
+      "remixUsable": 4909
     },
     {
       "unit": "u10",
@@ -2072,9 +2075,9 @@
         {
           "node": "g:prep-pronouns",
           "block": "controlledOutput",
-          "usable": 190,
+          "usable": 151,
           "usableStrict": 78,
-          "questions": 35,
+          "questions": 32,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2083,16 +2086,16 @@
         {
           "node": "g:stem-e-i",
           "block": "controlledOutput",
-          "usable": 99,
+          "usable": 76,
           "usableStrict": 55,
-          "questions": 25,
+          "questions": 21,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 5886
+      "remixUsable": 4947
     },
     {
       "unit": "u10",
@@ -2100,7 +2103,7 @@
       "session": 94,
       "type": "output",
       "nodes": [],
-      "remixUsable": 5886
+      "remixUsable": 4947
     },
     {
       "unit": "u10",
@@ -2108,7 +2111,7 @@
       "session": 95,
       "type": "review",
       "nodes": [],
-      "remixUsable": 5886
+      "remixUsable": 4947
     },
     {
       "unit": "u11",
@@ -2119,16 +2122,16 @@
         {
           "node": "g:imperfect-habitual",
           "block": "structuredInput",
-          "usable": 83,
+          "usable": 58,
           "usableStrict": 48,
-          "questions": 9,
+          "questions": 8,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 5974
+      "remixUsable": 5010
     },
     {
       "unit": "u11",
@@ -2139,9 +2142,9 @@
         {
           "node": "g:imperfect-habitual",
           "block": "controlledOutput",
-          "usable": 88,
+          "usable": 61,
           "usableStrict": 50,
-          "questions": 9,
+          "questions": 8,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2150,16 +2153,16 @@
         {
           "node": "g:direct-objects",
           "block": "controlledOutput",
-          "usable": 224,
+          "usable": 183,
           "usableStrict": 137,
-          "questions": 85,
+          "questions": 67,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 5979
+      "remixUsable": 5025
     },
     {
       "unit": "u11",
@@ -2170,16 +2173,16 @@
         {
           "node": "g:preterite-spelling-stem",
           "block": "structuredInput",
-          "usable": 95,
+          "usable": 58,
           "usableStrict": 50,
-          "questions": 4,
+          "questions": 3,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6081
+      "remixUsable": 5091
     },
     {
       "unit": "u11",
@@ -2190,27 +2193,27 @@
         {
           "node": "g:preterite-spelling-stem",
           "block": "controlledOutput",
-          "usable": 95,
+          "usable": 58,
           "usableStrict": 50,
-          "questions": 4,
+          "questions": 3,
           "min": 11,
           "minQuestions": 4,
           "short": false,
-          "shortQuestions": false
+          "shortQuestions": true
         },
         {
           "node": "g:imperfect-habitual",
           "block": "controlledOutput",
-          "usable": 95,
+          "usable": 68,
           "usableStrict": 56,
-          "questions": 10,
+          "questions": 9,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6092
+      "remixUsable": 5102
     },
     {
       "unit": "u11",
@@ -2218,7 +2221,7 @@
       "session": 100,
       "type": "input",
       "nodes": [],
-      "remixUsable": 6128
+      "remixUsable": 5224
     },
     {
       "unit": "u11",
@@ -2229,7 +2232,7 @@
         {
           "node": "g:comparatives",
           "block": "structuredInput",
-          "usable": 164,
+          "usable": 104,
           "usableStrict": 30,
           "questions": 1,
           "min": 9,
@@ -2238,7 +2241,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6293
+      "remixUsable": 5347
     },
     {
       "unit": "u11",
@@ -2249,9 +2252,9 @@
         {
           "node": "g:comparatives",
           "block": "controlledOutput",
-          "usable": 230,
+          "usable": 156,
           "usableStrict": 35,
-          "questions": 5,
+          "questions": 4,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2260,27 +2263,27 @@
         {
           "node": "g:preterite-spelling-stem",
           "block": "controlledOutput",
-          "usable": 99,
+          "usable": 71,
           "usableStrict": 62,
-          "questions": 4,
+          "questions": 3,
           "min": 11,
           "minQuestions": 4,
           "short": false,
-          "shortQuestions": false
+          "shortQuestions": true
         },
         {
           "node": "p:gustar-mas-que",
           "block": "controlledOutput",
-          "usable": 41,
+          "usable": 30,
           "usableStrict": 0,
-          "questions": 7,
+          "questions": 5,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6386
+      "remixUsable": 5426
     },
     {
       "unit": "u11",
@@ -2288,7 +2291,7 @@
       "session": 103,
       "type": "output",
       "nodes": [],
-      "remixUsable": 6386
+      "remixUsable": 5426
     },
     {
       "unit": "u11",
@@ -2296,7 +2299,7 @@
       "session": 104,
       "type": "review",
       "nodes": [],
-      "remixUsable": 6386
+      "remixUsable": 5426
     },
     {
       "unit": "u12",
@@ -2307,16 +2310,16 @@
         {
           "node": "g:pret-vs-imperfect",
           "block": "structuredInput",
-          "usable": 40,
+          "usable": 23,
           "usableStrict": 10,
-          "questions": 2,
+          "questions": 1,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6451
+      "remixUsable": 5457
     },
     {
       "unit": "u12",
@@ -2327,9 +2330,9 @@
         {
           "node": "g:pret-vs-imperfect",
           "block": "controlledOutput",
-          "usable": 40,
+          "usable": 24,
           "usableStrict": 11,
-          "questions": 2,
+          "questions": 1,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2338,16 +2341,16 @@
         {
           "node": "g:comparatives",
           "block": "controlledOutput",
-          "usable": 247,
+          "usable": 160,
           "usableStrict": 35,
-          "questions": 5,
+          "questions": 4,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6461
+      "remixUsable": 5468
     },
     {
       "unit": "u12",
@@ -2358,16 +2361,16 @@
         {
           "node": "g:imperfect-progressive",
           "block": "structuredInput",
-          "usable": 98,
+          "usable": 52,
           "usableStrict": 0,
-          "questions": 17,
+          "questions": 12,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6562
+      "remixUsable": 5562
     },
     {
       "unit": "u12",
@@ -2378,9 +2381,9 @@
         {
           "node": "g:imperfect-progressive",
           "block": "controlledOutput",
-          "usable": 98,
+          "usable": 54,
           "usableStrict": 0,
-          "questions": 17,
+          "questions": 12,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2389,16 +2392,16 @@
         {
           "node": "g:pret-vs-imperfect",
           "block": "controlledOutput",
-          "usable": 98,
+          "usable": 52,
           "usableStrict": 11,
-          "questions": 10,
+          "questions": 6,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6563
+      "remixUsable": 5629
     },
     {
       "unit": "u12",
@@ -2406,7 +2409,7 @@
       "session": 109,
       "type": "input",
       "nodes": [],
-      "remixUsable": 6586
+      "remixUsable": 5679
     },
     {
       "unit": "u12",
@@ -2414,7 +2417,7 @@
       "session": 110,
       "type": "patterns",
       "nodes": [],
-      "remixUsable": 6625
+      "remixUsable": 5713
     },
     {
       "unit": "u12",
@@ -2425,16 +2428,16 @@
         {
           "node": "g:that-clauses",
           "block": "structuredInput",
-          "usable": 213,
+          "usable": 152,
           "usableStrict": 84,
-          "questions": 16,
+          "questions": 10,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6795
+      "remixUsable": 5837
     },
     {
       "unit": "u12",
@@ -2445,9 +2448,9 @@
         {
           "node": "g:that-clauses",
           "block": "controlledOutput",
-          "usable": 214,
+          "usable": 153,
           "usableStrict": 84,
-          "questions": 16,
+          "questions": 10,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2456,16 +2459,16 @@
         {
           "node": "g:imperfect-progressive",
           "block": "controlledOutput",
-          "usable": 115,
+          "usable": 72,
           "usableStrict": 0,
-          "questions": 18,
+          "questions": 13,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6798
+      "remixUsable": 5839
     },
     {
       "unit": "u12",
@@ -2473,7 +2476,7 @@
       "session": 113,
       "type": "output",
       "nodes": [],
-      "remixUsable": 6798
+      "remixUsable": 5839
     },
     {
       "unit": "u12",
@@ -2481,7 +2484,7 @@
       "session": 114,
       "type": "checkpoint",
       "nodes": [],
-      "remixUsable": 6798
+      "remixUsable": 5839
     },
     {
       "unit": "u13",
@@ -2492,7 +2495,7 @@
         {
           "node": "g:commands-tu",
           "block": "structuredInput",
-          "usable": 44,
+          "usable": 28,
           "usableStrict": 18,
           "questions": 0,
           "min": 9,
@@ -2501,7 +2504,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6858
+      "remixUsable": 5873
     },
     {
       "unit": "u13",
@@ -2512,7 +2515,7 @@
         {
           "node": "g:commands-tu",
           "block": "controlledOutput",
-          "usable": 47,
+          "usable": 29,
           "usableStrict": 19,
           "questions": 0,
           "min": 11,
@@ -2523,16 +2526,16 @@
         {
           "node": "g:that-clauses",
           "block": "controlledOutput",
-          "usable": 225,
+          "usable": 162,
           "usableStrict": 89,
-          "questions": 16,
+          "questions": 11,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6868
+      "remixUsable": 5896
     },
     {
       "unit": "u13",
@@ -2543,16 +2546,16 @@
         {
           "node": "g:commands-usted",
           "block": "structuredInput",
-          "usable": 78,
+          "usable": 39,
           "usableStrict": 32,
-          "questions": 10,
+          "questions": 7,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 6935
+      "remixUsable": 5946
     },
     {
       "unit": "u13",
@@ -2563,9 +2566,9 @@
         {
           "node": "g:commands-usted",
           "block": "controlledOutput",
-          "usable": 91,
+          "usable": 54,
           "usableStrict": 45,
-          "questions": 13,
+          "questions": 10,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2574,7 +2577,7 @@
         {
           "node": "g:commands-tu",
           "block": "controlledOutput",
-          "usable": 47,
+          "usable": 32,
           "usableStrict": 22,
           "questions": 0,
           "min": 11,
@@ -2583,7 +2586,7 @@
           "shortQuestions": true
         }
       ],
-      "remixUsable": 6949
+      "remixUsable": 5971
     },
     {
       "unit": "u13",
@@ -2591,7 +2594,7 @@
       "session": 119,
       "type": "input",
       "nodes": [],
-      "remixUsable": 7002
+      "remixUsable": 6117
     },
     {
       "unit": "u13",
@@ -2599,7 +2602,7 @@
       "session": 120,
       "type": "patterns",
       "nodes": [],
-      "remixUsable": 7156
+      "remixUsable": 6245
     },
     {
       "unit": "u13",
@@ -2610,16 +2613,16 @@
         {
           "node": "g:indirect-objects",
           "block": "structuredInput",
-          "usable": 130,
+          "usable": 101,
           "usableStrict": 91,
-          "questions": 27,
+          "questions": 24,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 7286
+      "remixUsable": 6369
     },
     {
       "unit": "u13",
@@ -2630,9 +2633,9 @@
         {
           "node": "g:indirect-objects",
           "block": "controlledOutput",
-          "usable": 156,
+          "usable": 126,
           "usableStrict": 108,
-          "questions": 34,
+          "questions": 31,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2641,9 +2644,9 @@
         {
           "node": "g:commands-usted",
           "block": "controlledOutput",
-          "usable": 148,
+          "usable": 118,
           "usableStrict": 102,
-          "questions": 18,
+          "questions": 13,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2652,7 +2655,7 @@
         {
           "node": "p:preguntar-pedir",
           "block": "controlledOutput",
-          "usable": 49,
+          "usable": 45,
           "usableStrict": 33,
           "questions": 11,
           "min": 11,
@@ -2661,7 +2664,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 7342
+      "remixUsable": 6429
     },
     {
       "unit": "u13",
@@ -2669,7 +2672,7 @@
       "session": 123,
       "type": "output",
       "nodes": [],
-      "remixUsable": 7342
+      "remixUsable": 6429
     },
     {
       "unit": "u13",
@@ -2677,7 +2680,7 @@
       "session": 124,
       "type": "review",
       "nodes": [],
-      "remixUsable": 7342
+      "remixUsable": 6429
     },
     {
       "unit": "u14",
@@ -2688,16 +2691,16 @@
         {
           "node": "g:relative-que",
           "block": "structuredInput",
-          "usable": 105,
+          "usable": 66,
           "usableStrict": 21,
-          "questions": 17,
+          "questions": 11,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 7449
+      "remixUsable": 6520
     },
     {
       "unit": "u14",
@@ -2708,9 +2711,9 @@
         {
           "node": "g:relative-que",
           "block": "controlledOutput",
-          "usable": 105,
+          "usable": 66,
           "usableStrict": 21,
-          "questions": 17,
+          "questions": 11,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2719,16 +2722,16 @@
         {
           "node": "g:indirect-objects",
           "block": "controlledOutput",
-          "usable": 158,
+          "usable": 127,
           "usableStrict": 109,
-          "questions": 34,
+          "questions": 31,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 7449
+      "remixUsable": 6520
     },
     {
       "unit": "u14",
@@ -2739,16 +2742,16 @@
         {
           "node": "g:cause-result",
           "block": "structuredInput",
-          "usable": 105,
+          "usable": 77,
           "usableStrict": 41,
-          "questions": 17,
+          "questions": 12,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 7504
+      "remixUsable": 6589
     },
     {
       "unit": "u14",
@@ -2759,9 +2762,9 @@
         {
           "node": "g:cause-result",
           "block": "controlledOutput",
-          "usable": 105,
+          "usable": 77,
           "usableStrict": 41,
-          "questions": 17,
+          "questions": 12,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2770,16 +2773,16 @@
         {
           "node": "g:relative-que",
           "block": "controlledOutput",
-          "usable": 108,
+          "usable": 74,
           "usableStrict": 25,
-          "questions": 18,
+          "questions": 12,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 7507
+      "remixUsable": 6596
     },
     {
       "unit": "u14",
@@ -2787,7 +2790,7 @@
       "session": 129,
       "type": "input",
       "nodes": [],
-      "remixUsable": 7587
+      "remixUsable": 6728
     },
     {
       "unit": "u14",
@@ -2798,16 +2801,16 @@
         {
           "node": "g:object-pronoun-position",
           "block": "structuredInput",
-          "usable": 211,
+          "usable": 188,
           "usableStrict": 93,
-          "questions": 49,
+          "questions": 46,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 7806
+      "remixUsable": 6939
     },
     {
       "unit": "u14",
@@ -2818,9 +2821,9 @@
         {
           "node": "g:object-pronoun-position",
           "block": "controlledOutput",
-          "usable": 211,
+          "usable": 188,
           "usableStrict": 93,
-          "questions": 49,
+          "questions": 46,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2829,9 +2832,9 @@
         {
           "node": "g:cause-result",
           "block": "controlledOutput",
-          "usable": 114,
+          "usable": 96,
           "usableStrict": 51,
-          "questions": 17,
+          "questions": 13,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2840,16 +2843,16 @@
         {
           "node": "p:para-mi",
           "block": "controlledOutput",
-          "usable": 38,
+          "usable": 30,
           "usableStrict": 0,
-          "questions": 6,
+          "questions": 3,
           "min": 11,
           "minQuestions": 4,
           "short": false,
-          "shortQuestions": false
+          "shortQuestions": true
         }
       ],
-      "remixUsable": 7812
+      "remixUsable": 6945
     },
     {
       "unit": "u14",
@@ -2857,7 +2860,7 @@
       "session": 132,
       "type": "output",
       "nodes": [],
-      "remixUsable": 7812
+      "remixUsable": 6945
     },
     {
       "unit": "u14",
@@ -2865,7 +2868,7 @@
       "session": 133,
       "type": "review",
       "nodes": [],
-      "remixUsable": 7812
+      "remixUsable": 6945
     },
     {
       "unit": "u15",
@@ -2873,7 +2876,7 @@
       "session": 134,
       "type": "introduce",
       "nodes": [],
-      "remixUsable": 7823
+      "remixUsable": 6951
     },
     {
       "unit": "u15",
@@ -2884,16 +2887,16 @@
         {
           "node": "g:prep-pronouns",
           "block": "controlledOutput",
-          "usable": 222,
+          "usable": 191,
           "usableStrict": 94,
-          "questions": 44,
+          "questions": 40,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 7874
+      "remixUsable": 6999
     },
     {
       "unit": "u15",
@@ -2904,16 +2907,16 @@
         {
           "node": "g:estar-participle",
           "block": "structuredInput",
-          "usable": 113,
+          "usable": 89,
           "usableStrict": 0,
-          "questions": 17,
+          "questions": 13,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 7975
+      "remixUsable": 7196
     },
     {
       "unit": "u15",
@@ -2924,16 +2927,16 @@
         {
           "node": "g:estar-participle",
           "block": "controlledOutput",
-          "usable": 113,
+          "usable": 89,
           "usableStrict": 0,
-          "questions": 17,
+          "questions": 13,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 7975
+      "remixUsable": 7211
     },
     {
       "unit": "u15",
@@ -2941,7 +2944,7 @@
       "session": 138,
       "type": "input",
       "nodes": [],
-      "remixUsable": 7975
+      "remixUsable": 7215
     },
     {
       "unit": "u15",
@@ -2949,7 +2952,7 @@
       "session": 139,
       "type": "patterns",
       "nodes": [],
-      "remixUsable": 8010
+      "remixUsable": 7246
     },
     {
       "unit": "u15",
@@ -2960,16 +2963,16 @@
         {
           "node": "g:parecer-quedar",
           "block": "structuredInput",
-          "usable": 163,
+          "usable": 140,
           "usableStrict": 95,
-          "questions": 39,
+          "questions": 35,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8176
+      "remixUsable": 7406
     },
     {
       "unit": "u15",
@@ -2980,9 +2983,9 @@
         {
           "node": "g:parecer-quedar",
           "block": "controlledOutput",
-          "usable": 163,
+          "usable": 140,
           "usableStrict": 95,
-          "questions": 39,
+          "questions": 35,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -2991,16 +2994,16 @@
         {
           "node": "g:estar-participle",
           "block": "controlledOutput",
-          "usable": 117,
+          "usable": 92,
           "usableStrict": 0,
-          "questions": 18,
+          "questions": 14,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8177
+      "remixUsable": 7416
     },
     {
       "unit": "u15",
@@ -3008,7 +3011,7 @@
       "session": 142,
       "type": "output",
       "nodes": [],
-      "remixUsable": 8177
+      "remixUsable": 7416
     },
     {
       "unit": "u15",
@@ -3016,7 +3019,7 @@
       "session": 143,
       "type": "review",
       "nodes": [],
-      "remixUsable": 8177
+      "remixUsable": 7416
     },
     {
       "unit": "u16",
@@ -3024,7 +3027,7 @@
       "session": 144,
       "type": "input",
       "nodes": [],
-      "remixUsable": 8250
+      "remixUsable": 7512
     },
     {
       "unit": "u16",
@@ -3035,9 +3038,9 @@
         {
           "node": "g:object-pronoun-position",
           "block": "controlledOutput",
-          "usable": 224,
+          "usable": 204,
           "usableStrict": 101,
-          "questions": 50,
+          "questions": 47,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -3046,16 +3049,16 @@
         {
           "node": "g:parecer-quedar",
           "block": "controlledOutput",
-          "usable": 226,
+          "usable": 175,
           "usableStrict": 116,
-          "questions": 60,
+          "questions": 49,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8277
+      "remixUsable": 7537
     },
     {
       "unit": "u16",
@@ -3066,7 +3069,7 @@
         {
           "node": "g:superlatives",
           "block": "structuredInput",
-          "usable": 109,
+          "usable": 92,
           "usableStrict": 16,
           "questions": 12,
           "min": 9,
@@ -3075,7 +3078,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8388
+      "remixUsable": 7672
     },
     {
       "unit": "u16",
@@ -3086,7 +3089,7 @@
         {
           "node": "g:superlatives",
           "block": "controlledOutput",
-          "usable": 109,
+          "usable": 92,
           "usableStrict": 16,
           "questions": 12,
           "min": 11,
@@ -3097,16 +3100,16 @@
         {
           "node": "g:object-pronoun-position",
           "block": "controlledOutput",
-          "usable": 224,
+          "usable": 212,
           "usableStrict": 107,
-          "questions": 50,
+          "questions": 48,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8388
+      "remixUsable": 7672
     },
     {
       "unit": "u16",
@@ -3114,7 +3117,7 @@
       "session": 148,
       "type": "input",
       "nodes": [],
-      "remixUsable": 8425
+      "remixUsable": 7767
     },
     {
       "unit": "u16",
@@ -3122,7 +3125,7 @@
       "session": 149,
       "type": "patterns",
       "nodes": [],
-      "remixUsable": 8434
+      "remixUsable": 7775
     },
     {
       "unit": "u16",
@@ -3133,16 +3136,16 @@
         {
           "node": "g:double-pronouns",
           "block": "structuredInput",
-          "usable": 216,
+          "usable": 182,
           "usableStrict": 147,
-          "questions": 78,
+          "questions": 64,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8649
+      "remixUsable": 7961
     },
     {
       "unit": "u16",
@@ -3153,9 +3156,9 @@
         {
           "node": "g:double-pronouns",
           "block": "controlledOutput",
-          "usable": 216,
+          "usable": 182,
           "usableStrict": 147,
-          "questions": 78,
+          "questions": 64,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -3164,7 +3167,7 @@
         {
           "node": "g:superlatives",
           "block": "controlledOutput",
-          "usable": 120,
+          "usable": 105,
           "usableStrict": 22,
           "questions": 14,
           "min": 11,
@@ -3173,7 +3176,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8649
+      "remixUsable": 7963
     },
     {
       "unit": "u16",
@@ -3181,7 +3184,7 @@
       "session": 152,
       "type": "output",
       "nodes": [],
-      "remixUsable": 8649
+      "remixUsable": 7963
     },
     {
       "unit": "u16",
@@ -3189,7 +3192,7 @@
       "session": 153,
       "type": "checkpoint",
       "nodes": [],
-      "remixUsable": 8649
+      "remixUsable": 7963
     },
     {
       "unit": "u17",
@@ -3200,7 +3203,7 @@
         {
           "node": "g:si-present",
           "block": "structuredInput",
-          "usable": 80,
+          "usable": 55,
           "usableStrict": 39,
           "questions": 12,
           "min": 9,
@@ -3209,7 +3212,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8737
+      "remixUsable": 8035
     },
     {
       "unit": "u17",
@@ -3220,7 +3223,7 @@
         {
           "node": "g:si-present",
           "block": "controlledOutput",
-          "usable": 85,
+          "usable": 59,
           "usableStrict": 42,
           "questions": 16,
           "min": 11,
@@ -3231,16 +3234,16 @@
         {
           "node": "g:double-pronouns",
           "block": "controlledOutput",
-          "usable": 235,
+          "usable": 196,
           "usableStrict": 161,
-          "questions": 79,
+          "questions": 65,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8745
+      "remixUsable": 8042
     },
     {
       "unit": "u17",
@@ -3248,7 +3251,7 @@
       "session": 156,
       "type": "patterns",
       "nodes": [],
-      "remixUsable": 8798
+      "remixUsable": 8090
     },
     {
       "unit": "u17",
@@ -3259,9 +3262,9 @@
         {
           "node": "g:si-present",
           "block": "controlledOutput",
-          "usable": 127,
+          "usable": 94,
           "usableStrict": 55,
-          "questions": 54,
+          "questions": 48,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -3270,16 +3273,16 @@
         {
           "node": "g:double-pronouns",
           "block": "controlledOutput",
-          "usable": 236,
+          "usable": 197,
           "usableStrict": 162,
-          "questions": 80,
+          "questions": 66,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8799
+      "remixUsable": 8092
     },
     {
       "unit": "u17",
@@ -3287,7 +3290,7 @@
       "session": 158,
       "type": "input",
       "nodes": [],
-      "remixUsable": 8828
+      "remixUsable": 8128
     },
     {
       "unit": "u17",
@@ -3295,7 +3298,7 @@
       "session": 159,
       "type": "patterns",
       "nodes": [],
-      "remixUsable": 8845
+      "remixUsable": 8144
     },
     {
       "unit": "u17",
@@ -3303,7 +3306,7 @@
       "session": 160,
       "type": "introduce",
       "nodes": [],
-      "remixUsable": 8846
+      "remixUsable": 8164
     },
     {
       "unit": "u17",
@@ -3314,16 +3317,16 @@
         {
           "node": "g:si-present",
           "block": "controlledOutput",
-          "usable": 155,
+          "usable": 131,
           "usableStrict": 79,
-          "questions": 59,
+          "questions": 56,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8849
+      "remixUsable": 8177
     },
     {
       "unit": "u17",
@@ -3331,7 +3334,7 @@
       "session": 162,
       "type": "output",
       "nodes": [],
-      "remixUsable": 8849
+      "remixUsable": 8177
     },
     {
       "unit": "u17",
@@ -3339,7 +3342,7 @@
       "session": 163,
       "type": "review",
       "nodes": [],
-      "remixUsable": 8849
+      "remixUsable": 8177
     },
     {
       "unit": "u18",
@@ -3350,7 +3353,7 @@
         {
           "node": "g:por-para-1",
           "block": "structuredInput",
-          "usable": 97,
+          "usable": 74,
           "usableStrict": 51,
           "questions": 3,
           "min": 9,
@@ -3359,7 +3362,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 8948
+      "remixUsable": 8268
     },
     {
       "unit": "u18",
@@ -3370,7 +3373,7 @@
         {
           "node": "g:por-para-1",
           "block": "controlledOutput",
-          "usable": 98,
+          "usable": 75,
           "usableStrict": 52,
           "questions": 3,
           "min": 11,
@@ -3379,7 +3382,7 @@
           "shortQuestions": true
         }
       ],
-      "remixUsable": 8952
+      "remixUsable": 8271
     },
     {
       "unit": "u18",
@@ -3390,7 +3393,7 @@
         {
           "node": "g:commands-with-pronouns",
           "block": "structuredInput",
-          "usable": 95,
+          "usable": 83,
           "usableStrict": 76,
           "questions": 3,
           "min": 9,
@@ -3399,7 +3402,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 9048
+      "remixUsable": 8359
     },
     {
       "unit": "u18",
@@ -3410,7 +3413,7 @@
         {
           "node": "g:commands-with-pronouns",
           "block": "controlledOutput",
-          "usable": 95,
+          "usable": 83,
           "usableStrict": 76,
           "questions": 3,
           "min": 11,
@@ -3421,7 +3424,7 @@
         {
           "node": "g:por-para-1",
           "block": "controlledOutput",
-          "usable": 98,
+          "usable": 75,
           "usableStrict": 52,
           "questions": 3,
           "min": 11,
@@ -3430,7 +3433,7 @@
           "shortQuestions": true
         }
       ],
-      "remixUsable": 9048
+      "remixUsable": 8359
     },
     {
       "unit": "u18",
@@ -3438,7 +3441,7 @@
       "session": 168,
       "type": "input",
       "nodes": [],
-      "remixUsable": 9074
+      "remixUsable": 8406
     },
     {
       "unit": "u18",
@@ -3446,7 +3449,7 @@
       "session": 169,
       "type": "input",
       "nodes": [],
-      "remixUsable": 9137
+      "remixUsable": 8468
     },
     {
       "unit": "u18",
@@ -3457,16 +3460,16 @@
         {
           "node": "g:possessives-stressed",
           "block": "structuredInput",
-          "usable": 183,
+          "usable": 159,
           "usableStrict": 27,
-          "questions": 40,
+          "questions": 37,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 9326
+      "remixUsable": 8633
     },
     {
       "unit": "u18",
@@ -3477,9 +3480,9 @@
         {
           "node": "g:possessives-stressed",
           "block": "controlledOutput",
-          "usable": 183,
+          "usable": 159,
           "usableStrict": 27,
-          "questions": 40,
+          "questions": 37,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -3488,7 +3491,7 @@
         {
           "node": "g:commands-with-pronouns",
           "block": "controlledOutput",
-          "usable": 135,
+          "usable": 128,
           "usableStrict": 111,
           "questions": 3,
           "min": 11,
@@ -3497,7 +3500,7 @@
           "shortQuestions": true
         }
       ],
-      "remixUsable": 9326
+      "remixUsable": 8639
     },
     {
       "unit": "u18",
@@ -3505,7 +3508,7 @@
       "session": 172,
       "type": "output",
       "nodes": [],
-      "remixUsable": 9326
+      "remixUsable": 8639
     },
     {
       "unit": "u18",
@@ -3513,7 +3516,7 @@
       "session": 173,
       "type": "review",
       "nodes": [],
-      "remixUsable": 9326
+      "remixUsable": 8639
     },
     {
       "unit": "u19",
@@ -3524,16 +3527,16 @@
         {
           "node": "g:se-impersonal",
           "block": "structuredInput",
-          "usable": 110,
+          "usable": 81,
           "usableStrict": 59,
-          "questions": 21,
+          "questions": 16,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 9439
+      "remixUsable": 8724
     },
     {
       "unit": "u19",
@@ -3544,9 +3547,9 @@
         {
           "node": "g:se-impersonal",
           "block": "controlledOutput",
-          "usable": 113,
+          "usable": 84,
           "usableStrict": 62,
-          "questions": 21,
+          "questions": 16,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -3555,16 +3558,16 @@
         {
           "node": "g:possessives-stressed",
           "block": "controlledOutput",
-          "usable": 183,
+          "usable": 159,
           "usableStrict": 27,
-          "questions": 40,
+          "questions": 37,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 9442
+      "remixUsable": 8762
     },
     {
       "unit": "u19",
@@ -3575,16 +3578,16 @@
         {
           "node": "g:relatives-donde-lo-que",
           "block": "structuredInput",
-          "usable": 107,
+          "usable": 89,
           "usableStrict": 33,
-          "questions": 8,
+          "questions": 7,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 9552
+      "remixUsable": 8854
     },
     {
       "unit": "u19",
@@ -3595,9 +3598,9 @@
         {
           "node": "g:relatives-donde-lo-que",
           "block": "controlledOutput",
-          "usable": 108,
+          "usable": 90,
           "usableStrict": 34,
-          "questions": 8,
+          "questions": 7,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -3606,16 +3609,16 @@
         {
           "node": "g:se-impersonal",
           "block": "controlledOutput",
-          "usable": 121,
+          "usable": 91,
           "usableStrict": 66,
-          "questions": 23,
+          "questions": 17,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 9554
+      "remixUsable": 8864
     },
     {
       "unit": "u19",
@@ -3623,7 +3626,7 @@
       "session": 178,
       "type": "input",
       "nodes": [],
-      "remixUsable": 9584
+      "remixUsable": 8929
     },
     {
       "unit": "u19",
@@ -3631,7 +3634,7 @@
       "session": 179,
       "type": "patterns",
       "nodes": [],
-      "remixUsable": 9593
+      "remixUsable": 8937
     },
     {
       "unit": "u19",
@@ -3639,7 +3642,7 @@
       "session": 180,
       "type": "introduce",
       "nodes": [],
-      "remixUsable": 9603
+      "remixUsable": 8947
     },
     {
       "unit": "u19",
@@ -3650,7 +3653,7 @@
         {
           "node": "g:relatives-donde-lo-que",
           "block": "controlledOutput",
-          "usable": 120,
+          "usable": 110,
           "usableStrict": 38,
           "questions": 8,
           "min": 11,
@@ -3659,7 +3662,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 9606
+      "remixUsable": 8966
     },
     {
       "unit": "u19",
@@ -3667,7 +3670,7 @@
       "session": 182,
       "type": "output",
       "nodes": [],
-      "remixUsable": 9606
+      "remixUsable": 8966
     },
     {
       "unit": "u19",
@@ -3675,7 +3678,7 @@
       "session": 183,
       "type": "review",
       "nodes": [],
-      "remixUsable": 9606
+      "remixUsable": 8966
     },
     {
       "unit": "u20",
@@ -3683,7 +3686,7 @@
       "session": 184,
       "type": "introduce",
       "nodes": [],
-      "remixUsable": 9607
+      "remixUsable": 8967
     },
     {
       "unit": "u20",
@@ -3691,7 +3694,7 @@
       "session": 185,
       "type": "drill",
       "nodes": [],
-      "remixUsable": 9607
+      "remixUsable": 8967
     },
     {
       "unit": "u20",
@@ -3702,16 +3705,16 @@
         {
           "node": "g:future-promises",
           "block": "structuredInput",
-          "usable": 150,
+          "usable": 120,
           "usableStrict": 70,
-          "questions": 68,
+          "questions": 60,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 9757
+      "remixUsable": 9124
     },
     {
       "unit": "u20",
@@ -3722,16 +3725,16 @@
         {
           "node": "g:future-promises",
           "block": "controlledOutput",
-          "usable": 159,
+          "usable": 129,
           "usableStrict": 76,
-          "questions": 72,
+          "questions": 64,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 9766
+      "remixUsable": 9133
     },
     {
       "unit": "u20",
@@ -3739,7 +3742,7 @@
       "session": 188,
       "type": "input",
       "nodes": [],
-      "remixUsable": 9798
+      "remixUsable": 9173
     },
     {
       "unit": "u20",
@@ -3747,7 +3750,7 @@
       "session": 189,
       "type": "input",
       "nodes": [],
-      "remixUsable": 9811
+      "remixUsable": 9239
     },
     {
       "unit": "u20",
@@ -3758,16 +3761,16 @@
         {
           "node": "g:conditional",
           "block": "structuredInput",
-          "usable": 141,
+          "usable": 130,
           "usableStrict": 54,
-          "questions": 69,
+          "questions": 64,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 9948
+      "remixUsable": 9363
     },
     {
       "unit": "u20",
@@ -3778,9 +3781,9 @@
         {
           "node": "g:conditional",
           "block": "controlledOutput",
-          "usable": 168,
+          "usable": 159,
           "usableStrict": 77,
-          "questions": 71,
+          "questions": 66,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -3789,16 +3792,16 @@
         {
           "node": "g:future-promises",
           "block": "controlledOutput",
-          "usable": 220,
+          "usable": 210,
           "usableStrict": 119,
-          "questions": 93,
+          "questions": 88,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 9976
+      "remixUsable": 9405
     },
     {
       "unit": "u20",
@@ -3806,7 +3809,7 @@
       "session": 192,
       "type": "output",
       "nodes": [],
-      "remixUsable": 9976
+      "remixUsable": 9405
     },
     {
       "unit": "u20",
@@ -3814,7 +3817,7 @@
       "session": 193,
       "type": "checkpoint",
       "nodes": [],
-      "remixUsable": 9976
+      "remixUsable": 9405
     },
     {
       "unit": "u21",
@@ -3825,7 +3828,7 @@
         {
           "node": "g:subj-wanting",
           "block": "structuredInput",
-          "usable": 108,
+          "usable": 93,
           "usableStrict": 78,
           "questions": 21,
           "min": 9,
@@ -3834,7 +3837,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 10089
+      "remixUsable": 9503
     },
     {
       "unit": "u21",
@@ -3845,7 +3848,7 @@
         {
           "node": "g:subj-wanting",
           "block": "controlledOutput",
-          "usable": 109,
+          "usable": 94,
           "usableStrict": 79,
           "questions": 21,
           "min": 11,
@@ -3856,16 +3859,16 @@
         {
           "node": "g:conditional",
           "block": "controlledOutput",
-          "usable": 168,
+          "usable": 160,
           "usableStrict": 77,
-          "questions": 71,
+          "questions": 67,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 10090
+      "remixUsable": 9508
     },
     {
       "unit": "u21",
@@ -3876,16 +3879,16 @@
         {
           "node": "g:subj-irregulars",
           "block": "structuredInput",
-          "usable": 103,
+          "usable": 94,
           "usableStrict": 24,
-          "questions": 13,
+          "questions": 12,
           "min": 9,
           "minQuestions": 0,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 10196
+      "remixUsable": 9605
     },
     {
       "unit": "u21",
@@ -3896,9 +3899,9 @@
         {
           "node": "g:subj-irregulars",
           "block": "controlledOutput",
-          "usable": 103,
+          "usable": 97,
           "usableStrict": 27,
-          "questions": 13,
+          "questions": 12,
           "min": 11,
           "minQuestions": 4,
           "short": false,
@@ -3907,16 +3910,16 @@
         {
           "node": "g:subj-wanting",
           "block": "controlledOutput",
-          "usable": 215,
+          "usable": 194,
           "usableStrict": 108,
-          "questions": 34,
+          "questions": 33,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 10197
+      "remixUsable": 9624
     },
     {
       "unit": "u21",
@@ -3924,7 +3927,7 @@
       "session": 198,
       "type": "input",
       "nodes": [],
-      "remixUsable": 10213
+      "remixUsable": 9656
     },
     {
       "unit": "u21",
@@ -3932,7 +3935,7 @@
       "session": 199,
       "type": "input",
       "nodes": [],
-      "remixUsable": 10275
+      "remixUsable": 9800
     },
     {
       "unit": "u21",
@@ -3943,7 +3946,7 @@
         {
           "node": "g:negative-commands",
           "block": "structuredInput",
-          "usable": 127,
+          "usable": 119,
           "usableStrict": 93,
           "questions": 0,
           "min": 9,
@@ -3952,7 +3955,7 @@
           "shortQuestions": false
         }
       ],
-      "remixUsable": 10408
+      "remixUsable": 9957
     },
     {
       "unit": "u21",
@@ -3963,7 +3966,7 @@
         {
           "node": "g:negative-commands",
           "block": "controlledOutput",
-          "usable": 128,
+          "usable": 120,
           "usableStrict": 94,
           "questions": 0,
           "min": 11,
@@ -3974,16 +3977,16 @@
         {
           "node": "g:subj-irregulars",
           "block": "controlledOutput",
-          "usable": 121,
+          "usable": 116,
           "usableStrict": 31,
-          "questions": 14,
+          "questions": 13,
           "min": 11,
           "minQuestions": 4,
           "short": false,
           "shortQuestions": false
         }
       ],
-      "remixUsable": 10414
+      "remixUsable": 9962
     },
     {
       "unit": "u21",
@@ -3991,7 +3994,7 @@
       "session": 202,
       "type": "output",
       "nodes": [],
-      "remixUsable": 10414
+      "remixUsable": 9962
     },
     {
       "unit": "u21",
@@ -3999,7 +4002,7 @@
       "session": 203,
       "type": "review",
       "nodes": [],
-      "remixUsable": 10414
+      "remixUsable": 9962
     }
   ],
   "unitNodes": [
@@ -4008,7 +4011,7 @@
       "node": "g:ser-identity",
       "drillDay": 4,
       "session": 4,
-      "usable": 63,
+      "usable": 59,
       "min": 40,
       "short": false
     },
@@ -4017,7 +4020,7 @@
       "node": "g:gender-articles",
       "drillDay": 9,
       "session": 9,
-      "usable": 308,
+      "usable": 246,
       "min": 40,
       "short": false
     },
@@ -4026,7 +4029,7 @@
       "node": "g:present-ar",
       "drillDay": 9,
       "session": 9,
-      "usable": 207,
+      "usable": 89,
       "min": 40,
       "short": false
     },
@@ -4035,16 +4038,16 @@
       "node": "g:present-er-ir",
       "drillDay": 4,
       "session": 14,
-      "usable": 67,
+      "usable": 33,
       "min": 40,
-      "short": false
+      "short": true
     },
     {
       "unit": "u02",
       "node": "g:present-ar",
       "drillDay": 2,
       "session": 12,
-      "usable": 225,
+      "usable": 107,
       "min": 40,
       "short": false
     },
@@ -4053,7 +4056,7 @@
       "node": "g:estar-location-states",
       "drillDay": 6,
       "session": 16,
-      "usable": 154,
+      "usable": 83,
       "min": 40,
       "short": false
     },
@@ -4062,16 +4065,16 @@
       "node": "g:adjective-agreement",
       "drillDay": 8,
       "session": 18,
-      "usable": 56,
+      "usable": 22,
       "min": 40,
-      "short": false
+      "short": true
     },
     {
       "unit": "u02",
       "node": "g:questions",
       "drillDay": 8,
       "session": 18,
-      "usable": 177,
+      "usable": 149,
       "min": 40,
       "short": false
     },
@@ -4080,7 +4083,7 @@
       "node": "g:gustar-basic",
       "drillDay": 4,
       "session": 23,
-      "usable": 144,
+      "usable": 123,
       "min": 40,
       "short": false
     },
@@ -4089,7 +4092,7 @@
       "node": "g:questions",
       "drillDay": 2,
       "session": 21,
-      "usable": 183,
+      "usable": 154,
       "min": 40,
       "short": false
     },
@@ -4098,7 +4101,7 @@
       "node": "g:stem-boot",
       "drillDay": 6,
       "session": 25,
-      "usable": 195,
+      "usable": 74,
       "min": 40,
       "short": false
     },
@@ -4107,7 +4110,7 @@
       "node": "g:verb-infinitive",
       "drillDay": 8,
       "session": 27,
-      "usable": 83,
+      "usable": 52,
       "min": 40,
       "short": false
     },
@@ -4116,7 +4119,7 @@
       "node": "g:ir-a-plans",
       "drillDay": 8,
       "session": 27,
-      "usable": 283,
+      "usable": 231,
       "min": 40,
       "short": false
     },
@@ -4125,7 +4128,7 @@
       "node": "g:preterite-ar",
       "drillDay": 4,
       "session": 32,
-      "usable": 135,
+      "usable": 90,
       "min": 40,
       "short": false
     },
@@ -4134,7 +4137,7 @@
       "node": "g:ir-a-plans",
       "drillDay": 2,
       "session": 30,
-      "usable": 301,
+      "usable": 233,
       "min": 40,
       "short": false
     },
@@ -4143,7 +4146,7 @@
       "node": "g:preterite-er-ir",
       "drillDay": 7,
       "session": 35,
-      "usable": 111,
+      "usable": 66,
       "min": 40,
       "short": false
     },
@@ -4152,7 +4155,7 @@
       "node": "g:preterite-ser-ir-hacer",
       "drillDay": 7,
       "session": 35,
-      "usable": 162,
+      "usable": 112,
       "min": 40,
       "short": false
     },
@@ -4161,16 +4164,16 @@
       "node": "g:yo-irregular",
       "drillDay": 4,
       "session": 41,
-      "usable": 46,
+      "usable": 19,
       "min": 40,
-      "short": false
+      "short": true
     },
     {
       "unit": "u05",
       "node": "g:preterite-ser-ir-hacer",
       "drillDay": 2,
       "session": 39,
-      "usable": 216,
+      "usable": 116,
       "min": 40,
       "short": false
     },
@@ -4179,7 +4182,7 @@
       "node": "g:possessives",
       "drillDay": 8,
       "session": 45,
-      "usable": 114,
+      "usable": 57,
       "min": 40,
       "short": false
     },
@@ -4188,25 +4191,25 @@
       "node": "g:adjective-agreement",
       "drillDay": 4,
       "session": 41,
-      "usable": 95,
+      "usable": 30,
       "min": 40,
-      "short": false
+      "short": true
     },
     {
       "unit": "u05",
       "node": "g:negation-words",
       "drillDay": 8,
       "session": 45,
-      "usable": 56,
+      "usable": 37,
       "min": 40,
-      "short": false
+      "short": true
     },
     {
       "unit": "u06",
       "node": "g:imperfect-states",
       "drillDay": 4,
       "session": 51,
-      "usable": 112,
+      "usable": 55,
       "min": 40,
       "short": false
     },
@@ -4215,7 +4218,7 @@
       "node": "g:possessives",
       "drillDay": 2,
       "session": 49,
-      "usable": 122,
+      "usable": 60,
       "min": 40,
       "short": false
     },
@@ -4224,7 +4227,7 @@
       "node": "g:preterite-irregular-strong",
       "drillDay": 7,
       "session": 54,
-      "usable": 117,
+      "usable": 78,
       "min": 40,
       "short": false
     },
@@ -4233,7 +4236,7 @@
       "node": "g:hace-ago",
       "drillDay": 7,
       "session": 54,
-      "usable": 178,
+      "usable": 99,
       "min": 40,
       "short": false
     },
@@ -4242,16 +4245,16 @@
       "node": "g:hay-vs-esta",
       "drillDay": 4,
       "session": 60,
-      "usable": 66,
+      "usable": 34,
       "min": 40,
-      "short": false
+      "short": true
     },
     {
       "unit": "u07",
       "node": "g:hace-ago",
       "drillDay": 2,
       "session": 58,
-      "usable": 202,
+      "usable": 111,
       "min": 40,
       "short": false
     },
@@ -4260,7 +4263,7 @@
       "node": "g:demonstratives",
       "drillDay": 8,
       "session": 64,
-      "usable": 115,
+      "usable": 74,
       "min": 40,
       "short": false
     },
@@ -4269,7 +4272,7 @@
       "node": "g:quantifiers",
       "drillDay": 8,
       "session": 64,
-      "usable": 82,
+      "usable": 47,
       "min": 40,
       "short": false
     },
@@ -4278,16 +4281,16 @@
       "node": "g:perfecto-experience",
       "drillDay": 4,
       "session": 70,
-      "usable": 78,
+      "usable": 39,
       "min": 40,
-      "short": false
+      "short": true
     },
     {
       "unit": "u08",
       "node": "g:quantifiers",
       "drillDay": 2,
       "session": 68,
-      "usable": 88,
+      "usable": 47,
       "min": 40,
       "short": false
     },
@@ -4296,7 +4299,7 @@
       "node": "g:estar-gerund",
       "drillDay": 7,
       "session": 73,
-      "usable": 123,
+      "usable": 82,
       "min": 40,
       "short": false
     },
@@ -4305,7 +4308,7 @@
       "node": "g:direct-objects",
       "drillDay": 7,
       "session": 73,
-      "usable": 175,
+      "usable": 130,
       "min": 40,
       "short": false
     },
@@ -4314,16 +4317,16 @@
       "node": "g:reflexive-routine",
       "drillDay": 4,
       "session": 79,
-      "usable": 45,
+      "usable": 9,
       "min": 40,
-      "short": false
+      "short": true
     },
     {
       "unit": "u09",
       "node": "g:direct-objects",
       "drillDay": 2,
       "session": 77,
-      "usable": 181,
+      "usable": 141,
       "min": 40,
       "short": false
     },
@@ -4332,7 +4335,7 @@
       "node": "g:prep-infinitive",
       "drillDay": 8,
       "session": 83,
-      "usable": 96,
+      "usable": 58,
       "min": 40,
       "short": false
     },
@@ -4341,7 +4344,7 @@
       "node": "g:tener-que-hay-que",
       "drillDay": 8,
       "session": 83,
-      "usable": 128,
+      "usable": 83,
       "min": 40,
       "short": false
     },
@@ -4350,7 +4353,7 @@
       "node": "g:gustar-full",
       "drillDay": 4,
       "session": 89,
-      "usable": 96,
+      "usable": 70,
       "min": 40,
       "short": false
     },
@@ -4359,7 +4362,7 @@
       "node": "g:tener-que-hay-que",
       "drillDay": 2,
       "session": 87,
-      "usable": 144,
+      "usable": 94,
       "min": 40,
       "short": false
     },
@@ -4368,7 +4371,7 @@
       "node": "g:stem-e-i",
       "drillDay": 8,
       "session": 93,
-      "usable": 99,
+      "usable": 76,
       "min": 40,
       "short": false
     },
@@ -4377,7 +4380,7 @@
       "node": "g:prep-pronouns",
       "drillDay": 8,
       "session": 93,
-      "usable": 190,
+      "usable": 151,
       "min": 40,
       "short": false
     },
@@ -4386,7 +4389,7 @@
       "node": "g:imperfect-habitual",
       "drillDay": 4,
       "session": 99,
-      "usable": 95,
+      "usable": 68,
       "min": 40,
       "short": false
     },
@@ -4395,7 +4398,7 @@
       "node": "g:direct-objects",
       "drillDay": 2,
       "session": 97,
-      "usable": 224,
+      "usable": 183,
       "min": 40,
       "short": false
     },
@@ -4404,7 +4407,7 @@
       "node": "g:preterite-spelling-stem",
       "drillDay": 7,
       "session": 102,
-      "usable": 99,
+      "usable": 71,
       "min": 40,
       "short": false
     },
@@ -4413,7 +4416,7 @@
       "node": "g:comparatives",
       "drillDay": 7,
       "session": 102,
-      "usable": 230,
+      "usable": 156,
       "min": 40,
       "short": false
     },
@@ -4422,7 +4425,7 @@
       "node": "g:pret-vs-imperfect",
       "drillDay": 4,
       "session": 108,
-      "usable": 98,
+      "usable": 52,
       "min": 40,
       "short": false
     },
@@ -4431,7 +4434,7 @@
       "node": "g:comparatives",
       "drillDay": 2,
       "session": 106,
-      "usable": 247,
+      "usable": 160,
       "min": 40,
       "short": false
     },
@@ -4440,7 +4443,7 @@
       "node": "g:imperfect-progressive",
       "drillDay": 8,
       "session": 112,
-      "usable": 115,
+      "usable": 72,
       "min": 40,
       "short": false
     },
@@ -4449,7 +4452,7 @@
       "node": "g:that-clauses",
       "drillDay": 8,
       "session": 112,
-      "usable": 214,
+      "usable": 153,
       "min": 40,
       "short": false
     },
@@ -4458,16 +4461,16 @@
       "node": "g:commands-tu",
       "drillDay": 4,
       "session": 118,
-      "usable": 47,
+      "usable": 32,
       "min": 40,
-      "short": false
+      "short": true
     },
     {
       "unit": "u13",
       "node": "g:that-clauses",
       "drillDay": 2,
       "session": 116,
-      "usable": 225,
+      "usable": 162,
       "min": 40,
       "short": false
     },
@@ -4476,7 +4479,7 @@
       "node": "g:commands-usted",
       "drillDay": 8,
       "session": 122,
-      "usable": 148,
+      "usable": 118,
       "min": 40,
       "short": false
     },
@@ -4485,7 +4488,7 @@
       "node": "g:indirect-objects",
       "drillDay": 8,
       "session": 122,
-      "usable": 156,
+      "usable": 126,
       "min": 40,
       "short": false
     },
@@ -4494,7 +4497,7 @@
       "node": "g:relative-que",
       "drillDay": 4,
       "session": 128,
-      "usable": 108,
+      "usable": 74,
       "min": 40,
       "short": false
     },
@@ -4503,7 +4506,7 @@
       "node": "g:indirect-objects",
       "drillDay": 2,
       "session": 126,
-      "usable": 158,
+      "usable": 127,
       "min": 40,
       "short": false
     },
@@ -4512,7 +4515,7 @@
       "node": "g:cause-result",
       "drillDay": 7,
       "session": 131,
-      "usable": 114,
+      "usable": 96,
       "min": 40,
       "short": false
     },
@@ -4521,7 +4524,7 @@
       "node": "g:object-pronoun-position",
       "drillDay": 7,
       "session": 131,
-      "usable": 211,
+      "usable": 188,
       "min": 40,
       "short": false
     },
@@ -4530,7 +4533,7 @@
       "node": "g:prep-pronouns",
       "drillDay": 2,
       "session": 135,
-      "usable": 222,
+      "usable": 191,
       "min": 40,
       "short": false
     },
@@ -4539,7 +4542,7 @@
       "node": "g:estar-participle",
       "drillDay": 8,
       "session": 141,
-      "usable": 117,
+      "usable": 92,
       "min": 40,
       "short": false
     },
@@ -4548,7 +4551,7 @@
       "node": "g:parecer-quedar",
       "drillDay": 8,
       "session": 141,
-      "usable": 163,
+      "usable": 140,
       "min": 40,
       "short": false
     },
@@ -4557,7 +4560,7 @@
       "node": "g:object-pronoun-position",
       "drillDay": 4,
       "session": 147,
-      "usable": 224,
+      "usable": 212,
       "min": 40,
       "short": false
     },
@@ -4566,7 +4569,7 @@
       "node": "g:parecer-quedar",
       "drillDay": 2,
       "session": 145,
-      "usable": 226,
+      "usable": 175,
       "min": 40,
       "short": false
     },
@@ -4575,7 +4578,7 @@
       "node": "g:superlatives",
       "drillDay": 8,
       "session": 151,
-      "usable": 120,
+      "usable": 105,
       "min": 40,
       "short": false
     },
@@ -4584,7 +4587,7 @@
       "node": "g:double-pronouns",
       "drillDay": 8,
       "session": 151,
-      "usable": 216,
+      "usable": 182,
       "min": 40,
       "short": false
     },
@@ -4593,7 +4596,7 @@
       "node": "g:si-present",
       "drillDay": 8,
       "session": 161,
-      "usable": 155,
+      "usable": 131,
       "min": 40,
       "short": false
     },
@@ -4602,7 +4605,7 @@
       "node": "g:double-pronouns",
       "drillDay": 4,
       "session": 157,
-      "usable": 236,
+      "usable": 197,
       "min": 40,
       "short": false
     },
@@ -4611,7 +4614,7 @@
       "node": "g:por-para-1",
       "drillDay": 4,
       "session": 167,
-      "usable": 98,
+      "usable": 75,
       "min": 40,
       "short": false
     },
@@ -4620,7 +4623,7 @@
       "node": "g:commands-with-pronouns",
       "drillDay": 8,
       "session": 171,
-      "usable": 135,
+      "usable": 128,
       "min": 40,
       "short": false
     },
@@ -4629,7 +4632,7 @@
       "node": "g:possessives-stressed",
       "drillDay": 8,
       "session": 171,
-      "usable": 183,
+      "usable": 159,
       "min": 40,
       "short": false
     },
@@ -4638,7 +4641,7 @@
       "node": "g:se-impersonal",
       "drillDay": 4,
       "session": 177,
-      "usable": 121,
+      "usable": 91,
       "min": 40,
       "short": false
     },
@@ -4647,7 +4650,7 @@
       "node": "g:possessives-stressed",
       "drillDay": 2,
       "session": 175,
-      "usable": 183,
+      "usable": 159,
       "min": 40,
       "short": false
     },
@@ -4656,7 +4659,7 @@
       "node": "g:relatives-donde-lo-que",
       "drillDay": 8,
       "session": 181,
-      "usable": 120,
+      "usable": 110,
       "min": 40,
       "short": false
     },
@@ -4665,7 +4668,7 @@
       "node": "g:future-promises",
       "drillDay": 8,
       "session": 191,
-      "usable": 220,
+      "usable": 210,
       "min": 40,
       "short": false
     },
@@ -4674,7 +4677,7 @@
       "node": "g:conditional",
       "drillDay": 8,
       "session": 191,
-      "usable": 168,
+      "usable": 159,
       "min": 40,
       "short": false
     },
@@ -4683,7 +4686,7 @@
       "node": "g:subj-wanting",
       "drillDay": 4,
       "session": 197,
-      "usable": 215,
+      "usable": 194,
       "min": 40,
       "short": false
     },
@@ -4692,7 +4695,7 @@
       "node": "g:conditional",
       "drillDay": 2,
       "session": 195,
-      "usable": 168,
+      "usable": 160,
       "min": 40,
       "short": false
     },
@@ -4701,7 +4704,7 @@
       "node": "g:subj-irregulars",
       "drillDay": 8,
       "session": 201,
-      "usable": 121,
+      "usable": 116,
       "min": 40,
       "short": false
     },
@@ -4710,7 +4713,7 @@
       "node": "g:negative-commands",
       "drillDay": 8,
       "session": 201,
-      "usable": 128,
+      "usable": 120,
       "min": 40,
       "short": false
     }
@@ -4735,5 +4738,1344 @@
     "p:tambien-tampoco",
     "p:te-presento-a",
     "p:unos-approx"
+  ],
+  "writing": [
+    {
+      "unit": "u01",
+      "node": "g:ser-identity",
+      "day": 2,
+      "session": 2,
+      "type": "drill",
+      "usable": 0,
+      "total": 3,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u01",
+      "node": "g:sounds-letters",
+      "day": 4,
+      "session": 4,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u01",
+      "node": "g:gender-articles",
+      "day": 7,
+      "session": 7,
+      "type": "drill",
+      "usable": 1,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u01-04"
+      ]
+    },
+    {
+      "unit": "u01",
+      "node": "g:present-ar",
+      "day": 9,
+      "session": 9,
+      "type": "drill",
+      "usable": 1,
+      "total": 6,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u01-11"
+      ]
+    },
+    {
+      "unit": "u02",
+      "node": "g:present-er-ir",
+      "day": 2,
+      "session": 12,
+      "type": "drill",
+      "usable": 0,
+      "total": 4,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u02",
+      "node": "g:present-ar",
+      "day": 2,
+      "session": 12,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u02",
+      "node": "g:estar-location-states",
+      "day": 4,
+      "session": 14,
+      "type": "drill",
+      "usable": 0,
+      "total": 2,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u02",
+      "node": "g:adjective-agreement",
+      "day": 6,
+      "session": 16,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u02",
+      "node": "g:questions",
+      "day": 8,
+      "session": 18,
+      "type": "drill",
+      "usable": 1,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u02-08"
+      ]
+    },
+    {
+      "unit": "u03",
+      "node": "g:gustar-basic",
+      "day": 2,
+      "session": 21,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u03",
+      "node": "g:questions",
+      "day": 2,
+      "session": 21,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u03",
+      "node": "g:stem-boot",
+      "day": 4,
+      "session": 23,
+      "type": "drill",
+      "usable": 0,
+      "total": 2,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u03",
+      "node": "g:verb-infinitive",
+      "day": 6,
+      "session": 25,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u03",
+      "node": "g:ir-a-plans",
+      "day": 8,
+      "session": 27,
+      "type": "drill",
+      "usable": 0,
+      "total": 2,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u04",
+      "node": "g:preterite-ar",
+      "day": 2,
+      "session": 30,
+      "type": "drill",
+      "usable": 1,
+      "total": 1,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u04-01"
+      ]
+    },
+    {
+      "unit": "u04",
+      "node": "g:ir-a-plans",
+      "day": 2,
+      "session": 30,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u04",
+      "node": "g:preterite-er-ir",
+      "day": 4,
+      "session": 32,
+      "type": "drill",
+      "usable": 0,
+      "total": 2,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u04",
+      "node": "g:preterite-ser-ir-hacer",
+      "day": 7,
+      "session": 35,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u05",
+      "node": "g:yo-irregular",
+      "day": 2,
+      "session": 39,
+      "type": "drill",
+      "usable": 1,
+      "total": 1,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u05-01"
+      ]
+    },
+    {
+      "unit": "u05",
+      "node": "g:preterite-ser-ir-hacer",
+      "day": 2,
+      "session": 39,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u05",
+      "node": "g:possessives",
+      "day": 4,
+      "session": 41,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u05",
+      "node": "g:adjective-agreement",
+      "day": 4,
+      "session": 41,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u05",
+      "node": "g:negation-words",
+      "day": 8,
+      "session": 45,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u06",
+      "node": "g:imperfect-states",
+      "day": 2,
+      "session": 49,
+      "type": "drill",
+      "usable": 0,
+      "total": 2,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u06",
+      "node": "g:possessives",
+      "day": 2,
+      "session": 49,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u06",
+      "node": "g:preterite-irregular-strong",
+      "day": 4,
+      "session": 51,
+      "type": "drill",
+      "usable": 0,
+      "total": 3,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u06",
+      "node": "g:hace-ago",
+      "day": 7,
+      "session": 54,
+      "type": "drill",
+      "usable": 2,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u06-09",
+        "w-u06-10"
+      ]
+    },
+    {
+      "unit": "u07",
+      "node": "g:hay-vs-esta",
+      "day": 2,
+      "session": 58,
+      "type": "drill",
+      "usable": 0,
+      "total": 2,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u07",
+      "node": "g:hace-ago",
+      "day": 2,
+      "session": 58,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u07",
+      "node": "g:demonstratives",
+      "day": 4,
+      "session": 60,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u07",
+      "node": "g:quantifiers",
+      "day": 8,
+      "session": 64,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u08",
+      "node": "g:perfecto-experience",
+      "day": 2,
+      "session": 68,
+      "type": "drill",
+      "usable": 0,
+      "total": 2,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u08",
+      "node": "g:quantifiers",
+      "day": 2,
+      "session": 68,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u08",
+      "node": "g:estar-gerund",
+      "day": 4,
+      "session": 70,
+      "type": "drill",
+      "usable": 2,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u08-07",
+        "w-u08-08"
+      ]
+    },
+    {
+      "unit": "u08",
+      "node": "g:direct-objects",
+      "day": 7,
+      "session": 73,
+      "type": "drill",
+      "usable": 2,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u08-09",
+        "w-u08-10"
+      ]
+    },
+    {
+      "unit": "u09",
+      "node": "g:reflexive-routine",
+      "day": 2,
+      "session": 77,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u09",
+      "node": "g:direct-objects",
+      "day": 2,
+      "session": 77,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u09",
+      "node": "g:prep-infinitive",
+      "day": 4,
+      "session": 79,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u09",
+      "node": "g:tener-que-hay-que",
+      "day": 8,
+      "session": 83,
+      "type": "drill",
+      "usable": 1,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u09-04"
+      ]
+    },
+    {
+      "unit": "u10",
+      "node": "g:gustar-full",
+      "day": 2,
+      "session": 87,
+      "type": "drill",
+      "usable": 0,
+      "total": 2,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u10",
+      "node": "g:tener-que-hay-que",
+      "day": 2,
+      "session": 87,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u10",
+      "node": "g:stem-e-i",
+      "day": 4,
+      "session": 89,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u10",
+      "node": "g:prep-pronouns",
+      "day": 8,
+      "session": 93,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u11",
+      "node": "g:imperfect-habitual",
+      "day": 2,
+      "session": 97,
+      "type": "drill",
+      "usable": 1,
+      "total": 3,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u11-03"
+      ]
+    },
+    {
+      "unit": "u11",
+      "node": "g:direct-objects",
+      "day": 2,
+      "session": 97,
+      "type": "drill",
+      "usable": 1,
+      "total": 1,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u11-12"
+      ]
+    },
+    {
+      "unit": "u11",
+      "node": "g:preterite-spelling-stem",
+      "day": 4,
+      "session": 99,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u11",
+      "node": "g:comparatives",
+      "day": 7,
+      "session": 102,
+      "type": "drill",
+      "usable": 2,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u11-08",
+        "w-u11-09"
+      ]
+    },
+    {
+      "unit": "u12",
+      "node": "g:pret-vs-imperfect",
+      "day": 2,
+      "session": 106,
+      "type": "drill",
+      "usable": 0,
+      "total": 3,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u12",
+      "node": "g:comparatives",
+      "day": 2,
+      "session": 106,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u12",
+      "node": "g:imperfect-progressive",
+      "day": 4,
+      "session": 108,
+      "type": "drill",
+      "usable": 0,
+      "total": 3,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u12",
+      "node": "g:that-clauses",
+      "day": 8,
+      "session": 112,
+      "type": "drill",
+      "usable": 2,
+      "total": 3,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u12-10",
+        "w-u12-15"
+      ]
+    },
+    {
+      "unit": "u13",
+      "node": "g:commands-tu",
+      "day": 2,
+      "session": 116,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u13",
+      "node": "g:that-clauses",
+      "day": 2,
+      "session": 116,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u13",
+      "node": "g:commands-usted",
+      "day": 4,
+      "session": 118,
+      "type": "drill",
+      "usable": 0,
+      "total": 2,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u13",
+      "node": "g:indirect-objects",
+      "day": 8,
+      "session": 122,
+      "type": "drill",
+      "usable": 1,
+      "total": 1,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u13-10"
+      ]
+    },
+    {
+      "unit": "u14",
+      "node": "g:relative-que",
+      "day": 2,
+      "session": 126,
+      "type": "drill",
+      "usable": 2,
+      "total": 3,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u14-01",
+        "w-u14-12"
+      ]
+    },
+    {
+      "unit": "u14",
+      "node": "g:indirect-objects",
+      "day": 2,
+      "session": 126,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u14",
+      "node": "g:cause-result",
+      "day": 4,
+      "session": 128,
+      "type": "drill",
+      "usable": 2,
+      "total": 3,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u14-03",
+        "w-u14-05"
+      ]
+    },
+    {
+      "unit": "u14",
+      "node": "g:object-pronoun-position",
+      "day": 7,
+      "session": 131,
+      "type": "drill",
+      "usable": 2,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u14-07",
+        "w-u14-08"
+      ]
+    },
+    {
+      "unit": "u15",
+      "node": "g:ser-estar-adjectives",
+      "day": 2,
+      "session": 135,
+      "type": "drill",
+      "usable": 1,
+      "total": 3,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u15-01"
+      ]
+    },
+    {
+      "unit": "u15",
+      "node": "g:prep-pronouns",
+      "day": 2,
+      "session": 135,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u15",
+      "node": "g:estar-participle",
+      "day": 4,
+      "session": 137,
+      "type": "drill",
+      "usable": 1,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u15-07"
+      ]
+    },
+    {
+      "unit": "u15",
+      "node": "g:parecer-quedar",
+      "day": 8,
+      "session": 141,
+      "type": "drill",
+      "usable": 0,
+      "total": 2,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u16",
+      "node": "g:object-pronoun-position",
+      "day": 2,
+      "session": 145,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u16",
+      "node": "g:parecer-quedar",
+      "day": 2,
+      "session": 145,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u16",
+      "node": "g:superlatives",
+      "day": 4,
+      "session": 147,
+      "type": "drill",
+      "usable": 1,
+      "total": 1,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u16-05"
+      ]
+    },
+    {
+      "unit": "u16",
+      "node": "g:double-pronouns",
+      "day": 8,
+      "session": 151,
+      "type": "drill",
+      "usable": 1,
+      "total": 1,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u16-06"
+      ]
+    },
+    {
+      "unit": "u17",
+      "node": "g:si-present",
+      "day": 2,
+      "session": 155,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u17",
+      "node": "g:double-pronouns",
+      "day": 2,
+      "session": 155,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u17",
+      "node": "g:cuando-indicative",
+      "day": 8,
+      "session": 161,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u18",
+      "node": "g:por-para-1",
+      "day": 2,
+      "session": 165,
+      "type": "drill",
+      "usable": 1,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u18-07"
+      ]
+    },
+    {
+      "unit": "u18",
+      "node": "g:cuando-indicative",
+      "day": 2,
+      "session": 165,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u18",
+      "node": "g:commands-with-pronouns",
+      "day": 4,
+      "session": 167,
+      "type": "drill",
+      "usable": 0,
+      "total": 2,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u18",
+      "node": "g:possessives-stressed",
+      "day": 8,
+      "session": 171,
+      "type": "drill",
+      "usable": 1,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u18-11"
+      ]
+    },
+    {
+      "unit": "u19",
+      "node": "g:se-impersonal",
+      "day": 2,
+      "session": 175,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u19",
+      "node": "g:possessives-stressed",
+      "day": 2,
+      "session": 175,
+      "type": "drill",
+      "usable": 1,
+      "total": 1,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u19-11"
+      ]
+    },
+    {
+      "unit": "u19",
+      "node": "g:relatives-donde-lo-que",
+      "day": 4,
+      "session": 177,
+      "type": "drill",
+      "usable": 2,
+      "total": 3,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u19-05",
+        "w-u19-06"
+      ]
+    },
+    {
+      "unit": "u19",
+      "node": "g:article-uses",
+      "day": 8,
+      "session": 181,
+      "type": "drill",
+      "usable": 2,
+      "total": 2,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u19-07",
+        "w-u19-08"
+      ]
+    },
+    {
+      "unit": "u20",
+      "node": "g:future-conjecture",
+      "day": 2,
+      "session": 185,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u20",
+      "node": "g:article-uses",
+      "day": 2,
+      "session": 185,
+      "type": "drill",
+      "usable": 0,
+      "total": 1,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u20",
+      "node": "g:future-promises",
+      "day": 4,
+      "session": 187,
+      "type": "drill",
+      "usable": 1,
+      "total": 3,
+      "min": 1,
+      "short": false,
+      "usableIds": [
+        "w-u20-14"
+      ]
+    },
+    {
+      "unit": "u20",
+      "node": "g:conditional",
+      "day": 8,
+      "session": 191,
+      "type": "drill",
+      "usable": 0,
+      "total": 3,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u21",
+      "node": "g:subj-wanting",
+      "day": 2,
+      "session": 195,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u21",
+      "node": "g:conditional",
+      "day": 2,
+      "session": 195,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u21",
+      "node": "g:subj-irregulars",
+      "day": 4,
+      "session": 197,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    },
+    {
+      "unit": "u21",
+      "node": "g:negative-commands",
+      "day": 8,
+      "session": 201,
+      "type": "drill",
+      "usable": 0,
+      "total": 0,
+      "min": 1,
+      "short": true,
+      "usableIds": []
+    }
+  ],
+  "scenes": [
+    {
+      "unit": "u01",
+      "day": 10,
+      "session": 10,
+      "named": "sc-u01-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u02",
+      "day": 9,
+      "session": 19,
+      "named": "sc-u02-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u03",
+      "day": 9,
+      "session": 28,
+      "named": "sc-u03-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u04",
+      "day": 8,
+      "session": 36,
+      "named": "sc-u04-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 6,
+      "short": true
+    },
+    {
+      "unit": "u05",
+      "day": 9,
+      "session": 46,
+      "named": "sc-u05-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u06",
+      "day": 8,
+      "session": 55,
+      "named": "sc-u06-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u07",
+      "day": 9,
+      "session": 65,
+      "named": "sc-u07-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u08",
+      "day": 8,
+      "session": 74,
+      "named": "sc-u08-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 6,
+      "short": true
+    },
+    {
+      "unit": "u09",
+      "day": 9,
+      "session": 84,
+      "named": "sc-u09-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u10",
+      "day": 9,
+      "session": 94,
+      "named": "sc-u10-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u11",
+      "day": 8,
+      "session": 103,
+      "named": "sc-u11-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u12",
+      "day": 9,
+      "session": 113,
+      "named": "sc-u12-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 6,
+      "short": true
+    },
+    {
+      "unit": "u13",
+      "day": 9,
+      "session": 123,
+      "named": "sc-u13-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u14",
+      "day": 8,
+      "session": 132,
+      "named": "sc-u14-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u15",
+      "day": 9,
+      "session": 142,
+      "named": "sc-u15-a",
+      "namedUsable": false,
+      "usable": [
+        "sc-u15-b"
+      ],
+      "spareUsable": [
+        "sc-u15-b"
+      ],
+      "total": 3,
+      "short": false
+    },
+    {
+      "unit": "u16",
+      "day": 9,
+      "session": 152,
+      "named": "sc-u16-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 6,
+      "short": true
+    },
+    {
+      "unit": "u17",
+      "day": 9,
+      "session": 162,
+      "named": "sc-u17-a",
+      "namedUsable": false,
+      "usable": [
+        "sc-u17-b"
+      ],
+      "spareUsable": [
+        "sc-u17-b"
+      ],
+      "total": 3,
+      "short": false
+    },
+    {
+      "unit": "u18",
+      "day": 9,
+      "session": 172,
+      "named": "sc-u18-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u19",
+      "day": 9,
+      "session": 182,
+      "named": "sc-u19-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 3,
+      "short": true
+    },
+    {
+      "unit": "u20",
+      "day": 9,
+      "session": 192,
+      "named": "sc-u20-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 6,
+      "short": true
+    },
+    {
+      "unit": "u21",
+      "day": 9,
+      "session": 202,
+      "named": "sc-u21-a",
+      "namedUsable": false,
+      "usable": [],
+      "spareUsable": [],
+      "total": 0,
+      "short": true
+    }
   ]
 }

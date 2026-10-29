@@ -69,6 +69,13 @@ describe('search', () => {
     expect(searchEntries(items, 'married').map((i) => i.n)).toEqual(['c']);
     expect(scoreEntry('cafe', { es: ['café'], en: ['coffee'] })).toBeGreaterThan(0);
   });
+  it('a whole phrase beats a raw prefix: "me gusta" puts "I like" above "I\'d like"', () => {
+    const polite = { n: 'polite', es: ['Me gustaría un café.'], en: ["I'd like… (polite)"] };
+    const like = { n: 'like', es: ['Me gusta el café.'], en: ["I like, I don't like"] };
+    expect(searchEntries([polite, like], 'me gusta').map((i) => i.n)).toEqual(['like', 'polite']);
+    expect(scoreEntry('me gusta', like)).toBeGreaterThan(scoreEntry('me gusta', polite));
+    expect(scoreEntry('me gusta', polite)).toBeGreaterThan(0);
+  });
   it('keeps order for an empty query', () => {
     expect(searchEntries(items, '').length).toBe(4);
   });

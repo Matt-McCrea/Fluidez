@@ -221,8 +221,7 @@ test('real content: ten sessions, then look up, practice, story', async ({ page 
   await shot('reference verb pudimos', true);
   await search.fill('me gusta');
   await page.getByRole('tab', { name: /^Grammar/ }).click();
-  // "Practise this" must lead to cards. A met chunk whose sentences need words not yet met leads to an
-  // empty run; that is recorded as a finding and the test moves on to the next entry, then to a word.
+  // "Practise this" must lead to cards (or, for something whose examples are beyond reach, say so honestly).
   const backToLookUp = async (q: string, tab: RegExp) => {
     await page.getByRole('button', { name: 'Done', exact: true }).click();
     await page.getByRole('button', { name: 'Look up' }).click();
@@ -230,8 +229,8 @@ test('real content: ten sessions, then look up, practice, story', async ({ page 
     await page.getByRole('tab', { name: tab }).click();
   };
   const emptyRun = async () => {
-    await page.locator('[data-clock], h2:has-text("Nothing to practise yet")').first().waitFor();
-    return page.getByRole('heading', { name: 'Nothing to practise yet' }).isVisible();
+    await page.locator('[data-clock], h2:has-text("Not yet"), h2:has-text("Nothing to practise yet")').first().waitFor();
+    return !(await page.locator('[data-clock]').isVisible());
   };
   const entries = page.locator('main details.entry');
   await expect(entries.first(), 'a grammar entry for "me gusta"').toBeVisible();
@@ -243,7 +242,7 @@ test('real content: ten sessions, then look up, practice, story', async ({ page 
     if (i === 0) await shot('reference grammar entry', true);
     await entry.getByRole('button', { name: 'Practise this' }).click();
     if (await emptyRun()) {
-      known.push(`Look up > Grammar > "${title}": "Practise this" opens "Nothing to practise yet"`);
+      expect(await page.locator('main').innerText(), `"${title}" explains why there is nothing to practise`).toContain('comes up in week');
       await backToLookUp('me gusta', /^Grammar/);
     } else practised = true;
   }
@@ -262,7 +261,7 @@ test('real content: ten sessions, then look up, practice, story', async ({ page 
         await page.getByRole('button', { name: 'Look up' }).click();
       } else practised = true;
     }
-    if (empties.length) known.push(`Look up > Words: "Practise" opens "Nothing to practise yet" for ${empties.join(', ')}`);
+    expect(empties, 'no word opens an empty run').toEqual([]);
     expect(practised, 'some word could be practised').toBe(true);
   }
   await expect(page.locator('[data-clock]')).toBeVisible();

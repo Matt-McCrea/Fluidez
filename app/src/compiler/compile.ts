@@ -32,7 +32,7 @@ import {
   REVIEW_DAY_EXTRA_MINUTES, REVIEW_REUSE_DAYS, REVIEW_REUSE_REASON,
   SECONDS, SEVERE_FACTOR, THROTTLED_WARMUP_FACTOR, sessionMinutes, throttleMinutes, warmupMinutes,
 } from './budget';
-import { dayPos, makeRng, sessionSeed, type Rng } from './content';
+import { dayPos, knownSet, makeRng, sessionSeed, type Rng } from './content';
 import type {
   Block, ChapterRef, CloseBlock, CompileInput, Conversion, Diagnostic, LearnBlock, LearnItem, LearnerView,
   Mode, PathState, PracticeBlock, PracticeItem, PracticeOp, ReviewItem, ScriptItem, SentenceRef,
@@ -252,9 +252,10 @@ class Compiler {
     this.rng = makeRng(this.seed);
     this.spr = this.L.secondsPerReview();
     this.known = new Set(this.L.nodes());
+    const nowKnown = knownSet(this.L, input.course, this.sessionIndex);
     this.stable = this.L.stableNodes ? this.L.stableNodes(undefined, this.now) : new Set(this.known);
     // lexemes and chunks no unit day teaches: usable in sentences from their priority session, no cards
-    for (const [id, from] of input.course.implicit) if (from <= this.sessionIndex && !this.known.has(id)) { this.known.add(id); this.stable.add(id); }
+    for (const id of nowKnown) if (!this.known.has(id)) { this.known.add(id); this.stable.add(id); }
     this.owedNew = [...input.path.owedNew];
     this.owedGrammar = [...input.path.owedGrammar];
   }

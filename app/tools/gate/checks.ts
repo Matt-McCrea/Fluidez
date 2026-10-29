@@ -6,7 +6,7 @@ import { answerForms, checkWriting, type Constraint } from '../../src/check';
 import { extractSpanish, type EsString } from './extract';
 import { clip, type Finding } from './findings';
 import type { Curriculum, Loaded } from './load';
-import { computeDaySupply } from '../supply/day-supply-core';
+import { computeDaySupply, computeSceneSupply, computeWritingSupply } from '../supply/day-supply-core';
 
 export interface RunState {
   /** tag once per distinct sentence per run */
@@ -480,6 +480,26 @@ export function daySupply(st: RunState, loaded: Loaded[], only: Set<string> | nu
   if (!cur.units.length) return;
   const rows = loaded.filter((f) => f.kind === 'bank' && f.ok).flatMap((f) => f.data as BankSentence[]);
   const withRows = new Set(rows.map((b) => b.unit).filter((u): u is string => !!u));
+  const tasks = loaded.filter((f) => f.kind === 'writing' && f.ok).flatMap((f) => f.data as WritingTask[]);
+  const scenes = loaded.filter((f) => f.kind === 'scene' && f.ok).map((f) => f.data as Scene);
+  const wUnits = new Set(tasks.map((t) => t.unit)), sUnits = new Set(scenes.map((x) => x.unit));
+  const wsUnits = new Set(cur.units.map((u) => u.id).filter((id) => (!only || only.has(id))));
+  for (const w of computeWritingSupply(cur, tasks, { units: new Set([...wsUnits].filter((id) => wUnits.has(id))) })) {
+    if (!w.short) continue;
+    st.findings.push({
+      severity: 'warning', check: 'daySupply', file: `content/writing/${w.unit}.json`, path: `${w.unit} day ${w.day}`,
+      problem: `${w.node} on ${w.type} day ${w.day} (session ${w.session}): ${w.usable} usable writing tasks (${w.total} focused on it), needs ${w.min}; a task whose requires come later does not count`,
+      fix: `add writing tasks focused on ${w.node} whose model uses only what is taught up to day ${w.day}`,
+    });
+  }
+  for (const x of computeSceneSupply(cur, scenes, { units: new Set([...wsUnits].filter((id) => sUnits.has(id))) })) {
+    if (!x.short) continue;
+    st.findings.push({
+      severity: 'warning', check: 'daySupply', file: `content/scenes/`, path: `${x.unit} day ${x.day}`,
+      problem: `output day ${x.day} (session ${x.session}): no scene usable (named ${x.named ?? 'none'}${x.named && !x.namedUsable ? ', requires something taught later' : ''}; ${x.spareUsable.length} spare usable)`,
+      fix: `add a scene for ${x.unit} that uses only what is taught up to day ${x.day}`,
+    });
+  }
   const units = new Set(cur.units.map((u) => u.id).filter((id) => withRows.has(id) && (!only || only.has(id))));
   if (!units.size) return;
   const rep = computeDaySupply(cur, rows, { units });

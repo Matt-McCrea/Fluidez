@@ -1,8 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import { verbByInf } from '../../src/engine';
 import { rng } from '../../src/exercises/rng';
+import { knownSet } from '../../src/compiler';
 import { Freeplay, bestKey, conjugationCard, taughtTenses, verbsMet } from '../../src/ui/session/freeplay';
 import { emptyUi, migrateUi } from '../../src/ui/store/ui';
+import { Learner, MemoryStore } from '../../src/learner';
+import { ContentLoader } from '../../src/ui/data/loader';
+import { applyPlacement } from '../../src/ui/session/placement';
 import { world } from './driver';
 import { answer, answerFor } from './driver';
 
@@ -179,4 +183,39 @@ describe('nodes drill beyond the loaded window', () => {
     expect(await late.ensureUnits({ to: 30 })).toBe(true);
     expect(count(mk())).toBeGreaterThan(0);
   }, 120_000);
+});
+
+describe('practise this, on real content', () => {
+  const place = async (unit: number) => {
+    const bundle = await new ContentLoader().load({ band: 'A1' });
+    const t = new Date(2026, 9, 1, 18).getTime();
+    const learner = await Learner.open(new MemoryStore(), { now: () => t });
+    applyPlacement(learner, bundle, unit, t);
+    return { bundle, learner, t };
+  };
+  const cards = (fp: Freeplay) => { let n = 0; while (fp.next()) { fp.answer({ correct: true, tries: 1, ms: 1000 }); n++; } return n; };
+
+  it('words and grammar a learner has met give at least 3 cards', async () => {
+    const { bundle, learner, t } = await place(2);
+    for (const node of ['l:tener', 'l:hacer', 'g:gustar-basic']) {
+      if (!learner.isIntroduced(node)) continue;
+      const fp = new Freeplay({ kind: 'nodes', nodes: [node] }, { learner, bundle, now: () => t, rng: rng(node) });
+      expect(fp.emptyReason, node).toBeUndefined();
+      expect(cards(fp), node).toBeGreaterThanOrEqual(3);
+    }
+    expect(learner.isIntroduced('l:tener') || learner.isIntroduced('l:hacer')).toBe(true);
+  }, 60_000);
+
+  it('says when the examples are beyond reach, and names the week', async () => {
+    const { bundle, learner, t } = await place(1);
+    const ix = bundle.index;
+    const known = knownSet(learner, bundle.course);
+    // a grammar node the learner has not met whose sentences all need an unmet grammar node
+    const node = [...ix.byTarget.keys()].find((n) => n.startsWith('g:') && !known.has(n)
+      && [...(ix.byTarget.get(n) ?? []), ...(ix.byRequire.get(n) ?? [])].every((id) => ix.sentences.get(id)!.requires.some((r) => r.startsWith('g:') && !known.has(r) && r !== n)));
+    expect(node).toBeTruthy();
+    const fp = new Freeplay({ kind: 'nodes', nodes: [node!] }, { learner, bundle, now: () => t, rng: rng('x') });
+    expect(fp.next()).toBeUndefined();
+    expect(fp.emptyReason).toMatch(/^The examples for this use things you have not met yet\. It comes up in week \d+\.$/);
+  }, 60_000);
 });

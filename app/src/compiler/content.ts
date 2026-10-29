@@ -49,6 +49,17 @@ export function buildCourse(units: Unit[], nodes: GraphNode[]): Course {
  * explicitly, so they are reported as untaught and never known. With no units
  * there is no schedule, so nothing is implicit.
  */
+/**
+ * What counts as known for sentence legality: every introduced node, plus the lexemes and
+ * chunks no unit day teaches once their priority session has come. `at` is the session
+ * being compiled (the learner's next one unless given).
+ */
+export function knownSet(learner: { nodes(): NodeId[]; sessionIndex: number }, course: Pick<Course, 'implicit'>, at = learner.sessionIndex + 1): Set<NodeId> {
+  const known = new Set<NodeId>(learner.nodes());
+  for (const [id, from] of course.implicit) if (from <= at) known.add(id);
+  return known;
+}
+
 export function implicitNodes(units: Unit[], nodes: GraphNode[]): { implicit: Map<NodeId, number>; untaught: NodeId[] } {
   const implicit = new Map<NodeId, number>();
   const untaught: NodeId[] = [];
