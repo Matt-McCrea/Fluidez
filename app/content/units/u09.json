@@ -29,7 +29,7 @@
    "type": "drill",
    "focus": [
     "g:reflexive-routine",
-    "g:verb-infinitive",
+    "g:direct-objects",
     "p:lavarse-las-manos"
    ],
    "chunks": [],
@@ -43,7 +43,7 @@
   {
    "type": "introduce",
    "focus": [
-    "g:estar-gerund"
+    "g:prep-infinitive"
    ],
    "chunks": [],
    "lexemes": [
@@ -58,7 +58,7 @@
   {
    "type": "drill",
    "focus": [
-    "g:estar-gerund",
+    "g:prep-infinitive",
     "g:reflexive-routine",
     "x:present-progressive",
     "x:ing-infinitive-gerund",
@@ -78,7 +78,8 @@
     "p:por-la-manana",
     "p:es-de-noche-tarde",
     "p:soler-inf",
-    "p:todos-los-dias"
+    "p:todos-los-dias",
+    "p:cuando-basic"
    ],
    "chunks": [],
    "lexemes": [
@@ -111,7 +112,9 @@
     "p:siento-llegar-tarde",
     "p:telling-time"
    ],
-   "chunks": [],
+   "chunks": [
+    "c:normalmente"
+   ],
    "lexemes": []
   },
   {
@@ -137,7 +140,7 @@
    "type": "drill",
    "focus": [
     "g:tener-que-hay-que",
-    "g:estar-gerund",
+    "g:prep-infinitive",
     "x:perdon-lo-siento",
     "p:desde-hasta"
    ],
@@ -153,7 +156,7 @@
    "type": "output",
    "focus": [
     "g:reflexive-routine",
-    "g:estar-gerund",
+    "g:prep-infinitive",
     "g:tener-que-hay-que"
    ],
    "chunks": [],
@@ -164,7 +167,7 @@
    "type": "review",
    "focus": [
     "g:reflexive-routine",
-    "g:estar-gerund",
+    "g:prep-infinitive",
     "g:tener-que-hay-que"
    ],
    "chunks": [],

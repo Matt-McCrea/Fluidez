@@ -1,5 +1,5 @@
 /* ============================================================================
- * FEATURE -> GRAPH NODE MAP  (keyed to content/graph/grammar.json, 172 nodes)
+ * FEATURE -> GRAPH NODE MAP  (keyed to content/graph/grammar.json + patterns.json)
  *
  * The tagger speaks in dotted feature keys, most specific first
  * ("tense.presente.stem-ie", "subj.volition", "peri.ir-a"). This table says
@@ -128,14 +128,15 @@ export const DEFAULT_NODE_MAP: Readonly<Record<string, NodeId | null>> = {
   // ---- pronouns ----
   'clitic.do': 'g:direct-objects',
   'clitic.io': 'g:indirect-objects',
-  'clitic.personal': 'g:direct-objects',
+  'clitic.personal': 'p:me-te-nos-objects',      // me / te / nos as objects: ¿me ayudas?, te llamo (session 30)
   'clitic.combined': 'g:double-pronouns',
   'clitic.se-lo': 'g:double-pronouns',
   'clitic.enclitic.inf': 'g:object-pronoun-position',
   'clitic.enclitic.ger': 'g:object-pronoun-position',
   'clitic.enclitic.cmd': 'g:commands-with-pronouns',
   'reflexive': 'g:reflexive-routine',
-  'reflexive.meaning': 'g:se-meaning-change',
+  // quedarse, acordarse, dormirse… are vocabulary once reflexives are taught; the B1 node teaches the contrasts
+  'reflexive.meaning': 'g:reflexive-routine',
   'reflexive.change': 'g:verbs-of-change',
   'gustar': 'g:gustar-basic',
   'gustar.like': 'g:gustar-full',
@@ -158,29 +159,31 @@ export const DEFAULT_NODE_MAP: Readonly<Record<string, NodeId | null>> = {
   'rel.cuyo': 'g:cuyo-relatives',
   'que.complement': 'g:that-clauses',
   'q.wh': 'g:questions',
-  'q.wh.prep': 'g:questions-prepositions',
+  'q.wh.prep': 'p:prep-questions-basic',         // ¿de dónde?, ¿con quién?, ¿por qué? (session 18)
   'q.indirect': 'g:indirect-questions',
-  'excl.que': 'g:exclamations',
-  'conj.cuando.ind': 'g:cuando-indicative',
+  'excl.que': 'p:exclamations-basic',            // ¡Qué bonito! (session 23)
+  'conj.cuando.ind': 'p:cuando-basic',           // cuando + present for habits (session 80)
   'conj.aunque.ind': 'g:aunque-indicative',
   'conj.sino': 'g:pero-sino',
   // ---- periphrases ----
   'peri.ir-a': 'g:ir-a-plans',
-  'peri.tener-que': 'g:tener-que-hay-que',
-  'peri.hay-que': 'g:tener-que-hay-que',
+  // tener que / hay que are verb + infinitive (session 24); g:tener-que-hay-que (82) is obligation in full, with deber
+  'peri.tener-que': 'g:verb-infinitive',
+  'peri.hay-que': 'g:verb-infinitive',
   'peri.acabar-de': 'g:acabar-de-ya-todavia',
   'peri.estar-ger': 'g:estar-gerund',
   'peri.estar-ger.past': 'g:imperfect-progressive',
   'peri.seguir-ger': 'g:gerund-ways',
   'peri.llevar-ger': 'g:hace-que-desde',
   'peri.ir-ger': 'g:gerund-ways',
-  'peri.volver-a': 'g:verb-infinitive',
-  'peri.dejar-de': 'g:verb-infinitive',
-  'peri.empezar-a': 'g:verb-infinitive',
+  // the aspect frames keep their own (later) pattern days now that g:verb-infinitive is session 24
+  'peri.volver-a': 'p:volver-a-inf',
+  'peri.dejar-de': 'p:dejar-de-inf',
+  'peri.empezar-a': 'g:verb-infinitive',          // empiezo a trabajar a las seis: plain verb + infinitive
   'peri.terminar-de': 'g:verb-infinitive',
-  'peri.ponerse-a': 'g:verb-infinitive',
-  'peri.soler': 'g:verb-infinitive',
-  'peri.deber': 'g:deber-modal',
+  'peri.ponerse-a': 'p:ponerse-a-inf',
+  'peri.soler': 'p:soler-inf',
+  'peri.deber': 'g:tener-que-hay-que',
   'peri.poder': 'g:verb-infinitive',
   'peri.querer': 'g:verb-infinitive',
   'peri.estar-a-punto': null,
@@ -191,7 +194,7 @@ export const DEFAULT_NODE_MAP: Readonly<Record<string, NodeId | null>> = {
   'estar.result': 'g:estar-participle',
   // ---- prepositions, comparison ----
   'prep.por': 'g:por-para-1',
-  'prep.para': 'g:por-para-1',
+  'prep.para': 'p:para-inf',                     // para + person / verb (session 25); por stays with por-para-1
   'por.fixed': null,
   'comp.mas-que': 'g:comparatives',
   'comp.tan-como': 'g:comparatives',
@@ -205,8 +208,12 @@ export const DEFAULT_NODE_MAP: Readonly<Record<string, NodeId | null>> = {
   // ---- noun phrase ----
   'np.article': 'g:gender-articles',
   'np.possessive': 'g:possessives',
-  // np.*.basic (mi, este, esto, muy, mucho, algo) resolve to the same nodes for now; a curriculum
-  // pass decides whether the everyday forms get their own (earlier) node — map them here then
+  // the everyday forms are licensed early by their own nodes (pull-forward pass); the plain keys
+  // (nuestro, ese/aquel, bastante/demasiado, algún/ningún) stay with the full system
+  'np.possessive.basic': 'p:possessives-basic',       // mi, tu, su (session 12)
+  'np.demonstrative.basic': 'p:demonstratives-basic', // este, esta, esto, eso (session 14)
+  'np.quantifier.basic': 'p:quantifiers-basic',       // muy, mucho, poco (session 12)
+  'np.indefinite.basic': 'p:indefinites-basic',       // algo, alguien (session 23)
   'np.possessive.stressed': 'g:possessives-stressed',
   'np.demonstrative': 'g:demonstratives',
   'np.indefinite': 'g:indefinites',
@@ -236,9 +243,9 @@ export const DEFAULT_NODE_MAP: Readonly<Record<string, NodeId | null>> = {
   'conn.discourse': 'g:discourse-structure',
   'conn.reformulation': 'g:reformulation',
   'conn.hedge': 'g:hedging-distance',
-  'conn.sequence': 'g:time-sequence',
+  'conn.sequence': 'p:time-sequence-basic',      // primero, luego, después (session 32)
   'conn.maybe': 'g:quizas-a-lo-mejor',
-  'conn.ya': 'g:acabar-de-ya-todavia',
+  'conn.ya': 'p:ya-todavia-basic',               // ya no, todavía (no) (session 52)
   'np.lo-que-intensity': 'g:lo-que-intensity',
   'np.adj-agreement': 'g:adjective-agreement',
   'conn.temporal-adv': 'g:temporal-advanced',
@@ -246,7 +253,7 @@ export const DEFAULT_NODE_MAP: Readonly<Record<string, NodeId | null>> = {
   'peri.impersonal-obligation': 'g:impersonal-obligation',
   'cond.de-haber': 'g:conditional-advanced',
   'subj.conj.como': 'g:conditional-advanced',
-  'nonfinite.subject': 'g:infinitive-subject',
+  'nonfinite.subject': 'g:verb-infinitive',      // Bailar es divertido (session 24)
   'clitic.io.doubling': 'g:le-doubling',
   'reported.past': 'g:reported-past-basic',
   'reported.backshift': 'g:reported-backshift',

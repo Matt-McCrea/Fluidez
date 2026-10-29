@@ -46,7 +46,7 @@
   {
    "type": "introduce",
    "focus": [
-    "g:negation-words"
+    "g:estar-gerund"
    ],
    "chunks": [],
    "lexemes": [
@@ -61,7 +61,7 @@
   {
    "type": "drill",
    "focus": [
-    "g:negation-words",
+    "g:estar-gerund",
     "g:perfecto-experience"
    ],
    "chunks": [
@@ -101,7 +101,7 @@
   {
    "type": "introduce",
    "focus": [
-    "g:verb-infinitive"
+    "g:direct-objects"
    ],
    "chunks": [],
    "lexemes": [
@@ -117,13 +117,12 @@
   {
    "type": "drill",
    "focus": [
-    "g:verb-infinitive",
-    "g:negation-words",
+    "g:direct-objects",
+    "g:estar-gerund",
     "x:saber-poder",
     "x:saber-conocer",
     "p:saber-conocer",
     "p:tener-ganas-de",
-    "p:para-inf",
     "p:es-adj-inf"
    ],
    "chunks": [
@@ -140,8 +139,8 @@
    "type": "output",
    "focus": [
     "g:perfecto-experience",
-    "g:negation-words",
-    "g:verb-infinitive"
+    "g:estar-gerund",
+    "g:direct-objects"
    ],
    "chunks": [],
    "lexemes": [],
@@ -151,8 +150,8 @@
    "type": "checkpoint",
    "focus": [
     "g:perfecto-experience",
-    "g:negation-words",
-    "g:verb-infinitive"
+    "g:estar-gerund",
+    "g:direct-objects"
    ],
    "chunks": [],
    "lexemes": [],

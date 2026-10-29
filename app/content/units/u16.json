@@ -6,9 +6,10 @@
  "canDo": "I can shop for clothes and other things: ask, compare, try on, pay and return something.",
  "days": [
   {
-   "type": "introduce",
+   "type": "input",
    "focus": [
-    "g:object-pronoun-position"
+    "p:talla-numero",
+    "p:colour-claro-oscuro"
    ],
    "chunks": [
     "c:en-que-le-puedo-servir",
@@ -98,10 +99,8 @@
    "type": "patterns",
    "focus": [
     "p:ser-de-material",
-    "p:talla-numero",
     "p:cambiar-de-por",
     "p:el-azul",
-    "p:colour-claro-oscuro",
     "p:el-rojo-la-grande"
    ],
    "chunks": [],

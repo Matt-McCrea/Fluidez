@@ -224,11 +224,12 @@
   "id": "d:u02-my-day-to-day",
   "kind": "cando",
   "band": "A1",
-  "priority": 18,
+  "priority": 19,
   "title": "I can say where I live and work, what I do on a normal day and how I am, and ask simple questions.",
   "requires": [
    "g:present-er-ir",
    "g:estar-location-states",
+   "g:adjective-agreement",
    "g:questions"
   ],
   "contrasts": [],
@@ -298,11 +299,12 @@
   "id": "d:u03-likes-wants-and-plans",
   "kind": "cando",
   "band": "A1",
-  "priority": 27,
+  "priority": 28,
   "title": "I can say what I like, want and can do, and what I'm going to do this weekend.",
   "requires": [
    "g:gustar-basic",
    "g:stem-boot",
+   "g:verb-infinitive",
    "g:ir-a-plans"
   ],
   "contrasts": [],
@@ -505,8 +507,8 @@
   "title": "I can describe my family and friends: who they are, what they look like, what they're like and how old they are.",
   "requires": [
    "g:yo-irregular",
-   "g:adjective-agreement",
-   "g:possessives"
+   "g:possessives",
+   "g:negation-words"
   ],
   "contrasts": [],
   "serves": [],
@@ -716,8 +718,8 @@
   "title": "I can talk about places I've been and things I've done or haven't done yet, and say what I can and know how to do.",
   "requires": [
    "g:perfecto-experience",
-   "g:negation-words",
-   "g:verb-infinitive"
+   "g:estar-gerund",
+   "g:direct-objects"
   ],
   "contrasts": [],
   "serves": [],
@@ -865,7 +867,7 @@
   "title": "I can describe my whole day, say what I'm doing right now and what I have to do.",
   "requires": [
    "g:reflexive-routine",
-   "g:estar-gerund",
+   "g:prep-infinitive",
    "g:tener-que-hay-que"
   ],
   "contrasts": [],
@@ -907,7 +909,7 @@
   "requires": [
    "g:gustar-full",
    "g:stem-e-i",
-   "g:direct-objects"
+   "g:prep-pronouns"
   ],
   "contrasts": [],
   "serves": [],
@@ -1248,7 +1250,7 @@
   "requires": [
    "g:relative-que",
    "g:cause-result",
-   "g:prep-pronouns"
+   "g:object-pronoun-position"
   ],
   "contrasts": [],
   "serves": [],
@@ -1432,7 +1434,6 @@
   "priority": 152,
   "title": "I can shop for clothes and other things: ask, compare, try on, pay and return something.",
   "requires": [
-   "g:object-pronoun-position",
    "g:superlatives",
    "g:double-pronouns"
   ],
@@ -1529,7 +1530,6 @@
   "title": "I can make, accept and turn down plans, and talk about conditions and timing.",
   "requires": [
    "g:si-present",
-   "g:prep-infinitive",
    "g:cuando-indicative"
   ],
   "contrasts": [],

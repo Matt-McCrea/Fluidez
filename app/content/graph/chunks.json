@@ -1189,10 +1189,107 @@
   ]
  },
  {
+  "id": "c:tienes",
+  "kind": "chunk",
+  "band": "A1",
+  "priority": 14,
+  "title": "Have you got…? — tener with everyone",
+  "es": "¿Tienes…? / ¿Tiene…? / Tenemos… / Tienen… — ¿Tienes tiempo? ¿Tiene wifi?",
+  "en": "Have you got…? / Has he/she/have you (usted) got…? / We have… / They have… — Have you got time? Has it got wifi?",
+  "requires": [],
+  "contrasts": [],
+  "unpacks": "g:stem-boot",
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): tener's present for every person before the boot verbs (22) explain it; tengo is c:tengo (session 3).",
+  "sources": []
+ },
+ {
+  "id": "c:se-llama",
+  "kind": "chunk",
+  "band": "A1",
+  "priority": 14,
+  "title": "His name is…, what's it called?: se llama",
+  "es": "Se llama… / ¿Cómo se llama? / Se llaman… — Se llama Simón.",
+  "en": "His / her name is… / What's his name? What's it called? / Their names are… — His name is Simón.",
+  "requires": [],
+  "contrasts": [],
+  "unpacks": "g:reflexive-routine",
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): talking about other people's names (mi hermana se llama Ana) long before reflexives (76).",
+  "sources": []
+ },
+ {
+  "id": "c:que-es-esto",
+  "kind": "chunk",
+  "band": "A1",
+  "priority": 16,
+  "title": "What's this?: ¿qué es esto?",
+  "es": "¿Qué es esto? / ¿Qué es eso? / ¿Cómo se llama esto en español? — Es un colador.",
+  "en": "What's this? / What's that? / What's this called in Spanish? — It's a strainer.",
+  "requires": [
+   "p:demonstratives-basic"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:name-things"
+  ],
+  "pcic": [
+   "funciones:A1:15",
+   "funciones:A1:16",
+   "funciones:A1:54",
+   "funciones:A1:55"
+  ],
+  "placement": "pcic",
+  "note": "Neuter esto / eso until it has a name, then este / esta: este colador. The answer keeps its article (*Es colador).",
+  "sources": [
+   "fn-preguntar-decir-cosa-a1",
+   "fn-identificar-a1"
+  ],
+  "unpacks": "g:demonstratives"
+ },
+ {
+  "id": "c:abierto-cerrado",
+  "kind": "chunk",
+  "band": "A1",
+  "priority": 16,
+  "title": "It's open, it's closed",
+  "es": "Está abierto. / Está abierta. / Está cerrado. / Está cerrada. / ¿Está abierto?",
+  "en": "It's open. / It's closed. / Is it open?",
+  "requires": [],
+  "contrasts": [],
+  "unpacks": "g:estar-participle",
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): survival: shops, the café, the bank. abierto is a participle, so it would otherwise wait for g:estar-participle (136).",
+  "sources": []
+ },
+ {
+  "id": "c:voy-vas",
+  "kind": "chunk",
+  "band": "A1",
+  "priority": 16,
+  "title": "I'm going, are you going?: voy, vas",
+  "es": "Voy… / ¿Vas…? / ¿Adónde vas? / Voy al centro.",
+  "en": "I'm going… / Are you going…? / Where are you going? / I'm going downtown.",
+  "requires": [],
+  "contrasts": [],
+  "unpacks": "g:ir-a-plans",
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): ir is a top-30 verb and u02 is the day-to-day unit (voy al café a las seis); the system arrives with g:ir-a-plans (26).",
+  "sources": []
+ },
+ {
   "id": "c:a-que-te-dedicas",
   "kind": "chunk",
   "band": "A1",
-  "priority": 17,
+  "priority": 18,
   "title": "What do you do?: ¿a qué te dedicas?",
   "es": "¿A qué te dedicas? / ¿A qué se dedica? / ¿En qué trabajas?",
   "en": "What do you do (for a living)?",
@@ -1402,6 +1499,100 @@
   "sources": [
    "fn-preguntar-gustos-a2"
   ]
+ },
+ {
+  "id": "c:a-mi-tambien",
+  "kind": "chunk",
+  "band": "A1",
+  "priority": 21,
+  "title": "Me too, me neither, and you? — with gustar",
+  "es": "A mí también. / A mí tampoco. / A mí no. / A mí sí. / ¿Y a ti? / A mí me gusta.",
+  "en": "Me too. / Me neither. / Not me. / I do. / And you? / I like it.",
+  "requires": [],
+  "contrasts": [],
+  "unpacks": "g:prep-pronouns",
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): taught with g:gustar-basic (20): Me gusta el tinto. —¡A mí también! The prepositional pronouns as a system are g:prep-pronouns (92).",
+  "sources": []
+ },
+ {
+  "id": "c:hago-salgo-vengo",
+  "kind": "chunk",
+  "band": "A1",
+  "priority": 22,
+  "title": "The odd 'I' forms you need now: hago, salgo, vengo, pongo, traigo",
+  "es": "Hago… / Salgo… / Vengo… / Pongo… / Traigo… — Salgo a las seis. Vengo mañana.",
+  "en": "I do / make… / I go out / leave… / I come… / I put… / I bring… — I leave at six. I'm coming tomorrow.",
+  "requires": [],
+  "contrasts": [],
+  "unpacks": "g:yo-irregular",
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): u03 teaches salir and venir as verbs; the -go forms ride as a chunk family until g:yo-irregular (38) explains them.",
+  "sources": []
+ },
+ {
+  "id": "c:ahorita",
+  "kind": "chunk",
+  "band": "A2",
+  "priority": 23,
+  "title": "In a bit / just now: ahorita",
+  "es": "Ahorita lo atiendo. / Ahorita vengo.",
+  "en": "I'll be with you in a moment. / I'll be back in a bit.",
+  "requires": [],
+  "contrasts": [],
+  "serves": [
+   "d:get-things-done"
+  ],
+  "pcic": [
+   "nociones_generales:A2:148",
+   "nociones_generales:A2:149",
+   "nociones_generales:A2:150",
+   "nociones_generales:A2:151"
+  ],
+  "placement": "pcic",
+  "note": "Colombian ahorita = soon (vague) or a moment ago; ahora mismo = right now.",
+  "sources": [
+   "nt-localizacion-tiempo-a2"
+  ],
+  "unpacks": "g:diminutives"
+ },
+ {
+  "id": "c:si-quieres",
+  "kind": "chunk",
+  "band": "A1",
+  "priority": 23,
+  "title": "If you like: si quieres",
+  "es": "Si quieres. / Si quieres, vamos mañana. / Si puedes.",
+  "en": "If you like. / If you like, let's go tomorrow. / If you can.",
+  "requires": [],
+  "contrasts": [],
+  "unpacks": "g:si-present",
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): the everyday conditional offer, long before g:si-present (154).",
+  "sources": []
+ },
+ {
+  "id": "c:no-hay-nada",
+  "kind": "chunk",
+  "band": "A1",
+  "priority": 23,
+  "title": "There's nothing, there's nobody: no hay nada, no sé nada",
+  "es": "No hay nada. / No hay nadie. / No sé nada. / No tengo nada.",
+  "en": "There's nothing. / There's nobody here. / I don't know anything. / I've got nothing.",
+  "requires": [],
+  "contrasts": [],
+  "unpacks": "g:negation-words",
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): the four double negatives a beginner needs first; the system is g:negation-words (44).",
+  "sources": []
  },
  {
   "id": "c:a-como-esta",
@@ -1908,34 +2099,6 @@
   ]
  },
  {
-  "id": "c:que-es-esto",
-  "kind": "chunk",
-  "band": "A1",
-  "priority": 60,
-  "title": "What's this?: ¿qué es esto?",
-  "es": "¿Qué es esto? / ¿Qué es eso? / ¿Cómo se llama esto en español? — Es un colador.",
-  "en": "What's this? / What's that? / What's this called in Spanish? — It's a strainer.",
-  "requires": [
-   "g:demonstratives"
-  ],
-  "contrasts": [],
-  "serves": [
-   "d:name-things"
-  ],
-  "pcic": [
-   "funciones:A1:15",
-   "funciones:A1:16",
-   "funciones:A1:54",
-   "funciones:A1:55"
-  ],
-  "placement": "pcic",
-  "note": "Neuter esto / eso until it has a name, then este / esta: este colador. The answer keeps its article (*Es colador).",
-  "sources": [
-   "fn-preguntar-decir-cosa-a1",
-   "fn-identificar-a1"
-  ]
- },
- {
   "id": "c:queda-cerquita",
   "kind": "chunk",
   "band": "A1",
@@ -2205,6 +2368,23 @@
    "nt-movimiento-estabilidad-a1",
    "dc-deixis-espacial-a1"
   ]
+ },
+ {
+  "id": "c:normalmente",
+  "kind": "chunk",
+  "band": "A1",
+  "priority": 81,
+  "title": "Usually, really, only: normalmente, realmente, solamente",
+  "es": "Normalmente… / Generalmente… / Realmente… / Solamente…",
+  "en": "Usually… / Generally… / Really… / Only…",
+  "requires": [],
+  "contrasts": [],
+  "unpacks": "g:adverbs-mente",
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): p:frequency-scale needs normalmente in u09; -mente as a system is g:adverbs-mente (236).",
+  "sources": []
  },
  {
   "id": "c:a-que-hora",
@@ -4792,33 +4972,6 @@
   "sources": [
    "task-a2-gestion",
    "gn-conversacion-transaccional-a1"
-  ]
- },
- {
-  "id": "c:ahorita",
-  "kind": "chunk",
-  "band": "A2",
-  "priority": 215,
-  "title": "In a bit / just now: ahorita",
-  "es": "Ahorita lo atiendo. / Ahorita vengo.",
-  "en": "I'll be with you in a moment. / I'll be back in a bit.",
-  "requires": [
-   "g:diminutives"
-  ],
-  "contrasts": [],
-  "serves": [
-   "d:get-things-done"
-  ],
-  "pcic": [
-   "nociones_generales:A2:148",
-   "nociones_generales:A2:149",
-   "nociones_generales:A2:150",
-   "nociones_generales:A2:151"
-  ],
-  "placement": "pcic",
-  "note": "Colombian ahorita = soon (vague) or a moment ago; ahora mismo = right now.",
-  "sources": [
-   "nt-localizacion-tiempo-a2"
   ]
  },
  {

@@ -103,7 +103,7 @@
   {
    "type": "introduce",
    "focus": [
-    "g:prep-pronouns"
+    "g:object-pronoun-position"
    ],
    "chunks": [],
    "lexemes": [
@@ -119,7 +119,7 @@
   {
    "type": "drill",
    "focus": [
-    "g:prep-pronouns",
+    "g:object-pronoun-position",
     "g:cause-result",
     "p:para-mi",
     "x:para-porque"
@@ -137,7 +137,7 @@
    "focus": [
     "g:relative-que",
     "g:cause-result",
-    "g:prep-pronouns"
+    "g:object-pronoun-position"
    ],
    "chunks": [],
    "lexemes": [],
@@ -148,7 +148,7 @@
    "focus": [
     "g:relative-que",
     "g:cause-result",
-    "g:prep-pronouns",
+    "g:object-pronoun-position",
     "x:pret-imp",
     "x:lo-le"
    ],

@@ -44,9 +44,11 @@
    ]
   },
   {
-   "type": "introduce",
+   "type": "patterns",
    "focus": [
-    "g:prep-infinitive"
+    "p:que-tal-si",
+    "p:por-que-no",
+    "p:te-invito-a"
    ],
    "chunks": [],
    "lexemes": [
@@ -61,8 +63,8 @@
   {
    "type": "drill",
    "focus": [
-    "g:prep-infinitive",
-    "g:si-present"
+    "g:si-present",
+    "g:double-pronouns"
    ],
    "chunks": [],
    "lexemes": [
@@ -100,9 +102,6 @@
   {
    "type": "patterns",
    "focus": [
-    "p:que-tal-si",
-    "p:por-que-no",
-    "p:te-invito-a",
     "p:refuse-es-que",
     "p:durar-durante",
     "p:event-ser-en"
@@ -130,7 +129,7 @@
    "type": "drill",
    "focus": [
     "g:cuando-indicative",
-    "g:prep-infinitive",
+    "g:si-present",
     "x:ser-event-estar-location"
    ],
    "chunks": [],
@@ -144,7 +143,6 @@
    "type": "output",
    "focus": [
     "g:si-present",
-    "g:prep-infinitive",
     "g:cuando-indicative"
    ],
    "chunks": [],
@@ -155,7 +153,6 @@
    "type": "review",
    "focus": [
     "g:si-present",
-    "g:prep-infinitive",
     "g:cuando-indicative",
     "x:ser-estar-adj"
    ],

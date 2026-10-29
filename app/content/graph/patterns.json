@@ -30,33 +30,74 @@
   ]
  },
  {
-  "id": "p:bien-mal-vs-bueno-malo",
+  "id": "p:quantifiers-basic",
   "kind": "pattern",
   "band": "A1",
-  "priority": 15,
-  "title": "Well vs good: está bien, canta mal, un libro bueno",
-  "es": "bien/mal (cómo se hace o cómo está) vs bueno/malo (cómo es): Estoy bien. Canta muy mal. Es un libro muy bueno.",
-  "en": "bien/mal say how something is done or how it is; bueno/malo say what something is like: I'm fine. He sings badly. It's a really good book.",
+  "priority": 12,
+  "title": "Very, a lot, not much: muy, mucho, poco",
+  "es": "muy + adjective / adverb · mucho / mucha / muchos / muchas + noun · verb + mucho / poco: Es muy amable. Trabajo mucho. Tengo muchas preguntas. Duermo poco.",
+  "en": "very + adjective; a lot of + noun (it agrees); verb + a lot / not much: She's very kind. I work a lot. I have a lot of questions. I don't sleep much.",
   "requires": [
-   "g:estar-location-states"
+   "g:present-ar",
+   "g:gender-articles"
   ],
   "contrasts": [],
   "serves": [],
-  "pcic": [
-   "gramatica:A1:298",
-   "gramatica:A1:299"
-  ],
-  "placement": "pcic",
-  "note": "Pitfalls: *un libro bien, *estoy bueno (means 'I'm hot/attractive' — a classic embarrassing slip). Bien/mal never agree. Está bien = OK / that's fine.",
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): the everyday quantifiers (tagger key np.quantifier.basic). Pitfall: *muy trabajo, *mucho cansado. The system (bastante, demasiado, x:muy-mucho) is g:quantifiers at 63.",
   "sources": [
-   "gr-adverbios-lugar-tiempo-cantidad-a1"
+   "gr-cuantificadores-no-universales-a1",
+   "nt-cantidad-relativa-a1"
+  ]
+ },
+ {
+  "id": "p:possessives-basic",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 12,
+  "title": "My, your, his, her: mi, tu, su (+ mis, tus, sus)",
+  "es": "mi / tu / su + noun; mis / tus / sus + plural noun: Mi nombre es Tomás. ¿Tu mamá vive aquí? Su café está frío. Mis amigos son de Cali.",
+  "en": "my / your / his-her-your(usted) + noun: My name is Tomás. Does your mum live here? Her coffee is cold. My friends are from Cali.",
+  "requires": [
+   "g:gender-articles"
+  ],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): the everyday possessives (tagger key np.possessive.basic). Pitfall: *mi amigos; su = his, her, its, your (usted), their. nuestro and the full set are g:possessives at 40.",
+  "sources": [
+   "gr-posesivos-forma-a1",
+   "gr-posesivos-distribucion-a1"
+  ]
+ },
+ {
+  "id": "p:demonstratives-basic",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 14,
+  "title": "This and that: este café, esta mesa, esto, eso",
+  "es": "este / esta + noun (here, with me) · esto / eso for a thing you don't name: Este café es de Huila. ¿Qué es esto? Eso es para Vale. Esta es Mariana.",
+  "en": "this + noun; this / that (thing): This coffee is from Huila. What's this? That's for Vale. This is Mariana.",
+  "requires": [
+   "g:gender-articles"
+  ],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): the everyday demonstratives (tagger key np.demonstrative.basic). Pitfall: *esto café (esto never goes before a noun). ese / aquel and the three distances are g:demonstratives at 59.",
+  "sources": [
+   "gr-demostrativos-distribucion-a1",
+   "dc-deixis-espacial-a1"
   ]
  },
  {
   "id": "p:senor-don-article",
   "kind": "pattern",
   "band": "A1",
-  "priority": 15,
+  "priority": 16,
   "title": "Talking to vs about someone: Buenos días, señor García / El señor García no está",
   "es": "el señor / la señora + apellido al hablar DE alguien; sin artículo al hablarLE: El señor Ruiz no está. — Buenos días, señor Ruiz. ¿Don Jorge está?",
   "en": "Mr/Mrs + surname takes 'the' when you talk about someone, not when you talk to them.",
@@ -81,7 +122,7 @@
   "id": "p:tener-hambre",
   "kind": "pattern",
   "band": "A1",
-  "priority": 15,
+  "priority": 16,
   "title": "Saying you're hungry, cold or sleepy: tengo hambre",
   "es": "tener + hambre / sed / frío / calor / sueño / miedo / prisa: Tengo mucha hambre. ¿Tienes frío? Tengo sueño, me voy a dormir.",
   "en": "to be hungry / thirsty / cold / hot / sleepy / scared / in a hurry: I'm really hungry. Are you cold? I'm sleepy, I'm off to bed.",
@@ -112,10 +153,33 @@
   ]
  },
  {
+  "id": "p:bien-mal-vs-bueno-malo",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 18,
+  "title": "Well vs good: está bien, canta mal, un libro bueno",
+  "es": "bien/mal (cómo se hace o cómo está) vs bueno/malo (cómo es): Estoy bien. Canta muy mal. Es un libro muy bueno.",
+  "en": "bien/mal say how something is done or how it is; bueno/malo say what something is like: I'm fine. He sings badly. It's a really good book.",
+  "requires": [
+   "g:estar-location-states"
+  ],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [
+   "gramatica:A1:298",
+   "gramatica:A1:299"
+  ],
+  "placement": "pcic",
+  "note": "Pitfalls: *un libro bien, *estoy bueno (means 'I'm hot/attractive' — a classic embarrassing slip). Bien/mal never agree. Está bien = OK / that's fine.",
+  "sources": [
+   "gr-adverbios-lugar-tiempo-cantidad-a1"
+  ]
+ },
+ {
   "id": "p:question-word-order",
   "kind": "pattern",
   "band": "A1",
-  "priority": 17,
+  "priority": 18,
   "title": "Asking about someone else: ¿Dónde trabaja tu hermana?",
   "es": "question word + verb + subject: ¿Dónde vive tu hermana? ¿Cuándo llega María? ¿A qué hora abre el banco?",
   "en": "Where does your sister live? When does María arrive? What time does the bank open? — no 'does', and the person comes after the verb.",
@@ -139,6 +203,27 @@
    "dc-rematizacion-a1",
    "dc-rematizacion-a2",
    "dc-entonacion-a1"
+  ]
+ },
+ {
+  "id": "p:prep-questions-basic",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 18,
+  "title": "Questions that start with a little word: ¿de dónde?, ¿con quién?, ¿a qué hora?, ¿por qué?, ¿para qué?",
+  "es": "preposition + question word, at the front: ¿De dónde eres? ¿Con quién vives? ¿A qué hora abre el café? ¿Por qué? ¿Para qué es esto? ¿En qué trabajas?",
+  "en": "the preposition comes first, never at the end: Where are you from? Who do you live with? What time does the café open? Why? What's this for? What do you do?",
+  "requires": [
+   "g:questions"
+  ],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): tagger key q.wh.prep. Pitfall: *¿Dónde eres de? / *¿Quién vives con? The verb-governed ones (¿De qué se trata?) are g:questions-prepositions at B1.",
+  "sources": [
+   "gr-interrogativos-a1",
+   "fn-pedir-informacion-a1"
   ]
  },
  {
@@ -173,84 +258,45 @@
   ]
  },
  {
-  "id": "p:days-el-lunes",
+  "id": "p:exclamations-basic",
   "kind": "pattern",
   "band": "A1",
-  "priority": 24,
-  "title": "On Monday, on Mondays: el lunes / los lunes",
-  "es": "el + día = 'on' ese día; los + día = cada semana: El lunes tengo clase. Los sábados juego fútbol. Hoy es martes.",
-  "en": "day + 'the' means 'on': On Monday I have class. On Saturdays I play football. Today is Tuesday.",
+  "priority": 23,
+  "title": "Reacting: ¡Qué bonito!, ¡Qué rico!, ¡Qué pena!",
+  "es": "¡Qué + adjective / noun!: ¡Qué bonito! ¡Qué rico! ¡Qué chévere! ¡Qué pena! ¡Qué frío!",
+  "en": "How…! / What a…!: How pretty! Delicious! Great! What a shame! So cold!",
   "requires": [
-   "g:gender-articles"
-  ],
-  "contrasts": [],
-  "serves": [
-   "d:describe-routine",
-   "d:tell-weekend"
-  ],
-  "pcic": [],
-  "placement": "pcic",
-  "note": "Pitfalls: *en lunes; no capital letters on days; days ending in -s don't change in the plural (el lunes / los lunes). Es + day with no article: Hoy es viernes.",
-  "sources": [
-   "gr-articulo-definido-valores-a2",
-   "gr-presente-indicativo-valores-a1",
-   "gr-nucleo-verbal-a1",
-   "gr-numero-sustantivos-a1",
-   "nt-referencias-generales-a1",
-   "nt-tiempo-futuro-presente-pasado-a1"
-  ]
- },
- {
-  "id": "p:jugar-a",
-  "kind": "pattern",
-  "band": "A1",
-  "priority": 24,
-  "title": "Playing a sport or game: juego al fútbol",
-  "es": "jugar a + el/la + deporte o juego: Juego al fútbol los sábados. ¿Juegas al tenis? Jugamos a las cartas.",
-  "en": "play + sport/game: I play football on Saturdays.",
-  "requires": [
-   "g:stem-boot",
-   "g:gender-articles"
+   "g:adjective-agreement"
   ],
   "contrasts": [],
   "serves": [],
-  "pcic": [
-   "gramatica:A2:91"
-  ],
+  "pcic": [],
   "placement": "teaching_choice",
-  "note": "Pitfall: *juego fútbol is the English calque. Colloquial LatAm often drops a+article (juego fútbol) — accept it, but teach jugar al fútbol. Contrast tocar la guitarra (instruments), not *jugar la guitarra. Source lesson is A2; taught at A1 here.",
+  "note": "Pull-forward pass (Oct 2026): tagger key excl.que. The adjective agrees with what you mean: ¡Qué bonita (la casa)! ¡Qué tan…! and ¡Cuánta gente! are g:exclamations at 206.",
   "sources": [
-   "gr-articulo-definido-distribucion-a2"
+   "fn-valorar-a1",
+   "fn-acuerdo-a1"
   ]
  },
  {
-  "id": "p:prefieres-x-o-y",
+  "id": "p:indefinites-basic",
   "kind": "pattern",
   "band": "A1",
-  "priority": 24,
-  "title": "Asking someone to choose: ¿Prefieres té o café?",
-  "es": "¿Prefieres X o Y? · ¿Cuál prefieres? · Prefiero + noun / infinitive: ¿Prefieres playa o montaña? Prefiero quedarme en casa. ¿Cuál prefiere, el rojo o el azul?",
-  "en": "Do you prefer the beach or the mountains? I'd rather stay at home. Which one do you prefer, the red or the blue?",
+  "priority": 23,
+  "title": "Something, someone — nothing, nobody: algo, alguien, nada, nadie",
+  "es": "¿algo? / ¿alguien? and the answers nada / nadie: ¿Quieres algo de tomar? —No, nada, gracias. ¿Hay alguien en el café? —No, no hay nadie.",
+  "en": "something / anything, someone / anyone, and the answers nothing, nobody: Do you want something to drink? — No, nothing, thanks. Is there anyone in the café? — No, there's nobody.",
   "requires": [
-   "g:stem-boot"
+   "g:present-er-ir"
   ],
   "contrasts": [],
-  "serves": [
-   "d:ask-preferences"
-  ],
-  "pcic": [
-   "funciones:A2:205",
-   "funciones:A2:206",
-   "funciones:A2:207",
-   "funciones:A2:208",
-   "funciones:A2:209"
-  ],
-  "placement": "pcic",
-  "note": "When two options are named, answer with one of them. ¿Té o café? needs no verb at all. ¿Cuál es tu… favorito? asks for the single best, with no comparison.",
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): tagger key np.indefinite.basic (algo, alguien): ¿Algo más? is week-1 Spanish. algún / ningún are g:indefinites (216); the double negative as a system is g:negation-words (44).",
   "sources": [
-   "fn-preguntar-preferencias-a2",
-   "fn-pedir-informacion-a2",
-   "fn-pedir-informacion-a1"
+   "gr-indefinidos-negativos-b1",
+   "gr-cuantificadores-no-universales-a1"
   ]
  },
  {
@@ -284,10 +330,116 @@
   ]
  },
  {
+  "id": "p:jugar-a",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 25,
+  "title": "Playing a sport or game: juego al fútbol",
+  "es": "jugar a + el/la + deporte o juego: Juego al fútbol los sábados. ¿Juegas al tenis? Jugamos a las cartas.",
+  "en": "play + sport/game: I play football on Saturdays.",
+  "requires": [
+   "g:stem-boot",
+   "g:gender-articles"
+  ],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [
+   "gramatica:A2:91"
+  ],
+  "placement": "teaching_choice",
+  "note": "Pitfall: *juego fútbol is the English calque. Colloquial LatAm often drops a+article (juego fútbol) — accept it, but teach jugar al fútbol. Contrast tocar la guitarra (instruments), not *jugar la guitarra. Source lesson is A2; taught at A1 here.",
+  "sources": [
+   "gr-articulo-definido-distribucion-a2"
+  ]
+ },
+ {
+  "id": "p:prefieres-x-o-y",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 25,
+  "title": "Asking someone to choose: ¿Prefieres té o café?",
+  "es": "¿Prefieres X o Y? · ¿Cuál prefieres? · Prefiero + noun / infinitive: ¿Prefieres playa o montaña? Prefiero quedarme en casa. ¿Cuál prefiere, el rojo o el azul?",
+  "en": "Do you prefer the beach or the mountains? I'd rather stay at home. Which one do you prefer, the red or the blue?",
+  "requires": [
+   "g:stem-boot"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:ask-preferences"
+  ],
+  "pcic": [
+   "funciones:A2:205",
+   "funciones:A2:206",
+   "funciones:A2:207",
+   "funciones:A2:208",
+   "funciones:A2:209"
+  ],
+  "placement": "pcic",
+  "note": "When two options are named, answer with one of them. ¿Té o café? needs no verb at all. ¿Cuál es tu… favorito? asks for the single best, with no comparison.",
+  "sources": [
+   "fn-preguntar-preferencias-a2",
+   "fn-pedir-informacion-a2",
+   "fn-pedir-informacion-a1"
+  ]
+ },
+ {
+  "id": "p:para-inf",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 25,
+  "title": "For and in order to: para + person, para + verb",
+  "es": "para + persona / cosa · para + infinitivo (mismo sujeto): Este tinto es para Vale. Un jugo para llevar. Estudio español para trabajar en Bogotá.",
+  "en": "for someone / something; (in order) to: This coffee is for Vale. A juice to go. I study Spanish to work in Bogotá.",
+  "requires": [
+   "g:verb-infinitive"
+  ],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [
+   "gramatica:A1:531",
+   "gramatica:A1:533",
+   "gramatica:A1:535"
+  ],
+  "placement": "pcic",
+  "note": "Pitfalls: *para trabajo (conjugated), *por trabajar for purpose. Different subject → para que + subj later (x:para-inf-que). Por + infinitive = cause, not purpose (x:por-inf-para-inf). Replace 'boli/gafas' examples with esfero/lapicero. Pull-forward pass (Oct 2026): moved from session 73 to 25 (u03, after g:verb-infinitive) and widened to para + person; the tagger maps every para here (key prep.para), por stays with g:por-para-1.",
+  "sources": [
+   "gr-oraciones-finales-a1",
+   "gr-causales-b1"
+  ]
+ },
+ {
+  "id": "p:days-el-lunes",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 27,
+  "title": "On Monday, on Mondays: el lunes / los lunes",
+  "es": "el + día = 'on' ese día; los + día = cada semana: El lunes tengo clase. Los sábados juego fútbol. Hoy es martes.",
+  "en": "day + 'the' means 'on': On Monday I have class. On Saturdays I play football. Today is Tuesday.",
+  "requires": [
+   "g:gender-articles"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:describe-routine",
+   "d:tell-weekend"
+  ],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Pitfalls: *en lunes; no capital letters on days; days ending in -s don't change in the plural (el lunes / los lunes). Es + day with no article: Hoy es viernes.",
+  "sources": [
+   "gr-articulo-definido-valores-a2",
+   "gr-presente-indicativo-valores-a1",
+   "gr-nucleo-verbal-a1",
+   "gr-numero-sustantivos-a1",
+   "nt-referencias-generales-a1",
+   "nt-tiempo-futuro-presente-pasado-a1"
+  ]
+ },
+ {
   "id": "p:ir-a-venir-de-place",
   "kind": "pattern",
   "band": "A1",
-  "priority": 26,
+  "priority": 27,
   "title": "Going to and coming from: voy al banco, vengo del trabajo",
   "es": "ir a + lugar / venir de + lugar (a + el = al, de + el = del): Voy al centro. Vengo del trabajo. ¿Adónde vas? — ¿Dónde estás?",
   "en": "going to / coming from a place: I'm going downtown. I'm coming from work. Where are you going? — Where are you?",
@@ -307,6 +459,48 @@
   "sources": [
    "gr-articulo-definido-a1",
    "gr-adverbios-relativos-b1"
+  ]
+ },
+ {
+  "id": "p:me-te-nos-objects",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 30,
+  "title": "Me, you, us: ¿me ayudas?, te llamo, nos vemos",
+  "es": "me / te / nos before the verb, for \"me, you, us\" or \"to me, to you, to us\": ¿Me ayudas? Te llamo mañana. ¿Me das un tinto? Te quiero mucho. Nos vemos el lunes.",
+  "en": "the little word goes before the verb: Will you help me? I'll call you tomorrow. Can you give me a coffee? I love you. See you on Monday.",
+  "requires": [
+   "g:gustar-basic",
+   "g:present-ar"
+  ],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): tagger key clitic.personal (me / te / nos as objects, which learners already know from me gusta / te gusta). lo / la / los / las are g:direct-objects at 72, le / les g:indirect-objects at 121.",
+  "sources": [
+   "gr-objeto-directo-a1"
+  ]
+ },
+ {
+  "id": "p:time-sequence-basic",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 32,
+  "title": "First, then, after that: primero, luego, después, al final",
+  "es": "primero… luego / después… al final: Primero fui al banco, luego compré pan y después volví al café. Al final no hice nada.",
+  "en": "first… then / after that… in the end: First I went to the bank, then I bought bread and after that I came back to the café. In the end I did nothing.",
+  "requires": [
+   "g:preterite-ar"
+  ],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): tagger key conn.sequence: the u04 can-do (what I did, in order) needs it. ese día / al día siguiente / al rato are g:time-sequence at 246.",
+  "sources": [
+   "dc-conectores-a1",
+   "nt-tiempo-futuro-presente-pasado-a1"
   ]
  },
  {
@@ -813,6 +1007,26 @@
   ]
  },
  {
+  "id": "p:ya-todavia-basic",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 52,
+  "title": "Already, still, not any more: ya, todavía, ya no, todavía no",
+  "es": "ya (already, now) · todavía (still) · ya no (not any more) · todavía no (not yet): Ya no vivo en Toronto. Todavía trabajo en el café. ¿Ya comiste? —Todavía no.",
+  "en": "already · still · not any more · not yet: I don't live in Toronto any more. I still work at the café. Have you eaten? — Not yet.",
+  "requires": [
+   "g:present-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): tagger key conn.ya; fits u06 (then vs now). acabar de and the perfecto nuances are g:acabar-de-ya-todavia at 250.",
+  "sources": [
+   "gr-adverbios-lugar-tiempo-cantidad-a1"
+  ]
+ },
+ {
   "id": "p:naci-en",
   "kind": "pattern",
   "band": "A1",
@@ -1128,31 +1342,6 @@
   ]
  },
  {
-  "id": "p:para-inf",
-  "kind": "pattern",
-  "band": "A1",
-  "priority": 73,
-  "title": "In order to: para + verb",
-  "es": "para + infinitivo (mismo sujeto) / ser para + infinitivo (función): Estudio español para trabajar en Bogotá. Esta tarjeta es para pagar el bus.",
-  "en": "in order to / (it's) for doing: I study Spanish to work in Bogotá. This card is for paying the bus.",
-  "requires": [
-   "g:verb-infinitive"
-  ],
-  "contrasts": [],
-  "serves": [],
-  "pcic": [
-   "gramatica:A1:531",
-   "gramatica:A1:533",
-   "gramatica:A1:535"
-  ],
-  "placement": "pcic",
-  "note": "Pitfalls: *para trabajo (conjugated), *por trabajar for purpose. Different subject → para que + subj later (x:para-inf-que). Por + infinitive = cause, not purpose (x:por-inf-para-inf). Replace 'boli/gafas' examples with esfero/lapicero.",
-  "sources": [
-   "gr-oraciones-finales-a1",
-   "gr-causales-b1"
-  ]
- },
- {
   "id": "p:saber-conocer",
   "kind": "pattern",
   "band": "A1",
@@ -1333,6 +1522,26 @@
    "gr-cuantificadores-a2",
    "gr-articulo-definido-distribucion-a2",
    "gr-presente-indicativo-valores-a1"
+  ]
+ },
+ {
+  "id": "p:cuando-basic",
+  "kind": "pattern",
+  "band": "A1",
+  "priority": 80,
+  "title": "When I get home…: cuando + present for what usually happens",
+  "es": "cuando + present, present: Cuando llego a casa, me ducho. Cuando tengo tiempo, leo. ¿Qué haces cuando llueve?",
+  "en": "when + present for habits: When I get home, I shower. When I have time, I read. What do you do when it rains?",
+  "requires": [
+   "g:present-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "Pull-forward pass (Oct 2026): tagger key conj.cuando.ind; routine is told this way. cuando / mientras / siempre que across the pasts are g:cuando-indicative at 160; cuando + subjunctive for the future is B1.",
+  "sources": [
+   "nt-frecuencia-a1"
   ]
  },
  {
@@ -2382,6 +2591,61 @@
   ]
  },
  {
+  "id": "p:colour-claro-oscuro",
+  "kind": "pattern",
+  "band": "A2",
+  "priority": 144,
+  "title": "Light blue, dark green: azul claro, verde oscuro",
+  "es": "colour + claro / oscuro (stays as is) · de color + colour · ¿Lo tiene en otro color?: una camisa azul claro, unos pantalones verde oscuro, una habitación clara.",
+  "en": "a light-blue shirt, dark-green trousers, a bright room. Do you have it in another colour?",
+  "requires": [
+   "g:adjective-agreement"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:shop-clothes",
+   "d:describe-object"
+  ],
+  "pcic": [
+   "nociones_generales:A1:221",
+   "nociones_generales:A1:222",
+   "nociones_generales:A1:223"
+  ],
+  "placement": "teaching_choice",
+  "note": "Compound colours don't agree (camisas azul claro). Colours that are nouns (naranja, rosa, café) don't change either. In Colombia café = brown; tinto = black coffee; red wine = vino tinto (never *vino rojo). Source lesson is A1; taught at A2 here.",
+  "sources": [
+   "nt-visibilidad-vision-a1",
+   "nt-visibilidad-color-a2"
+  ]
+ },
+ {
+  "id": "p:talla-numero",
+  "kind": "pattern",
+  "band": "A2",
+  "priority": 144,
+  "title": "Your size: ¿qué talla usa?, ¿qué número calza?",
+  "es": "talla for clothes: ¿Qué talla usa? — Talla M / la 10 · número for shoes: ¿Qué número calza? — Calzo 38 · me queda grande / pequeño / bien.",
+  "en": "What size are you? — Medium. What shoe size are you? — 38. It's too big / too small / it fits.",
+  "requires": [
+   "g:parecer-quedar"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:shop-clothes"
+  ],
+  "pcic": [
+   "nociones_generales:A2:34",
+   "nociones_generales:A2:35",
+   "nociones_generales:A2:36"
+  ],
+  "placement": "pcic",
+  "note": "Never talla for shoes or número for clothes. Calzar is the LatAm verb for shoe size. Me queda is the parecer-quedar frame.",
+  "sources": [
+   "nt-cantidad-relativa-a2",
+   "gn-conversacion-transaccional-a2"
+  ]
+ },
+ {
   "id": "p:cambiar-de-por",
   "kind": "pattern",
   "band": "A2",
@@ -2406,34 +2670,6 @@
   "sources": [
    "nt-cambio-a2",
    "task-a2-gestion"
-  ]
- },
- {
-  "id": "p:colour-claro-oscuro",
-  "kind": "pattern",
-  "band": "A2",
-  "priority": 149,
-  "title": "Light blue, dark green: azul claro, verde oscuro",
-  "es": "colour + claro / oscuro (stays as is) · de color + colour · ¿Lo tiene en otro color?: una camisa azul claro, unos pantalones verde oscuro, una habitación clara.",
-  "en": "a light-blue shirt, dark-green trousers, a bright room. Do you have it in another colour?",
-  "requires": [
-   "g:adjective-agreement"
-  ],
-  "contrasts": [],
-  "serves": [
-   "d:shop-clothes",
-   "d:describe-object"
-  ],
-  "pcic": [
-   "nociones_generales:A1:221",
-   "nociones_generales:A1:222",
-   "nociones_generales:A1:223"
-  ],
-  "placement": "teaching_choice",
-  "note": "Compound colours don't agree (camisas azul claro). Colours that are nouns (naranja, rosa, café) don't change either. In Colombia café = brown; tinto = black coffee; red wine = vino tinto (never *vino rojo). Source lesson is A1; taught at A2 here.",
-  "sources": [
-   "nt-visibilidad-vision-a1",
-   "nt-visibilidad-color-a2"
   ]
  },
  {
@@ -2529,30 +2765,104 @@
   ]
  },
  {
-  "id": "p:talla-numero",
+  "id": "p:por-que-no",
   "kind": "pattern",
   "band": "A2",
-  "priority": 149,
-  "title": "Your size: ¿qué talla usa?, ¿qué número calza?",
-  "es": "talla for clothes: ¿Qué talla usa? — Talla M / la 10 · número for shoes: ¿Qué número calza? — Calzo 38 · me queda grande / pequeño / bien.",
-  "en": "What size are you? — Medium. What shoe size are you? — 38. It's too big / too small / it fits.",
+  "priority": 156,
+  "title": "Why don't we…?: ¿por qué no vamos a Monserrate?",
+  "es": "¿Por qué no + present (nosotros / tú)?: suggestion or advice: ¿Por qué no vamos a Monserrate? ¿Por qué no le preguntas a Vale?",
+  "en": "Why don't we go up Monserrate? Why don't you ask Vale?",
   "requires": [
-   "g:parecer-quedar"
+   "g:questions"
   ],
   "contrasts": [],
   "serves": [
-   "d:shop-clothes"
+   "d:propose-plans",
+   "d:give-advice"
   ],
   "pcic": [
-   "nociones_generales:A2:34",
-   "nociones_generales:A2:35",
-   "nociones_generales:A2:36"
+   "funciones:A2:307",
+   "funciones:A2:308",
+   "funciones:A2:309",
+   "funciones:A2:310",
+   "funciones:A2:311",
+   "funciones:A2:312"
   ],
   "placement": "pcic",
-  "note": "Never talla for shoes or número for clothes. Calzar is the LatAm verb for shoe size. Me queda is the parecer-quedar frame.",
+  "note": "Not a real why-question; it removes an obstacle. As advice it's softer than tienes que.",
   "sources": [
-   "nt-cantidad-relativa-a2",
-   "gn-conversacion-transaccional-a2"
+   "fn-proponer-sugerir-a2",
+   "fn-aconsejar-a2"
+  ]
+ },
+ {
+  "id": "p:que-tal-si",
+  "kind": "pattern",
+  "band": "A2",
+  "priority": 156,
+  "title": "How about…?: ¿qué tal si vamos a cine?",
+  "es": "¿Qué tal si + present? · ¿Y si + present?: ¿Qué tal si vamos a cine el sábado? ¿Y si pedimos una pizza?",
+  "en": "How about going to the cinema on Saturday? What if we order a pizza?",
+  "requires": [
+   "g:si-present"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:propose-plans",
+   "d:propose-accept"
+  ],
+  "pcic": [
+   "funciones:A2:307",
+   "funciones:A2:308",
+   "funciones:A2:309",
+   "funciones:A2:310",
+   "funciones:A2:311",
+   "funciones:A2:312",
+   "funciones:B1:1136",
+   "funciones:B1:1138",
+   "funciones:B1:1139",
+   "funciones:B1:1141",
+   "funciones:B1:1142",
+   "funciones:B1:1143",
+   "funciones:B1:1144",
+   "funciones:B1:1145",
+   "funciones:B1:1146",
+   "funciones:B1:1148"
+  ],
+  "placement": "pcic",
+  "note": "Present tense after si here. Colombians often say ir a cine (no article).",
+  "sources": [
+   "fn-proponer-sugerir-a2",
+   "fn-proponer-sugerir-b1"
+  ]
+ },
+ {
+  "id": "p:te-invito-a",
+  "kind": "pattern",
+  "band": "A2",
+  "priority": 156,
+  "title": "Inviting: te invito a un tinto",
+  "es": "Te invito a + noun / infinitive · ¿Quieres venir a…? · ¿Te gustaría + infinitive?: Te invito a almorzar. ¿Quieres venir a mi cumpleaños el sábado? ¿Te gustaría ir a bailar salsa?",
+  "en": "Lunch is on me. Do you want to come to my birthday party on Saturday? Would you like to go salsa dancing?",
+  "requires": [
+   "c:me-gustaria",
+   "g:indirect-objects"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:propose-plans"
+  ],
+  "pcic": [
+   "funciones:A2:215",
+   "funciones:A2:216",
+   "funciones:A2:217",
+   "funciones:A2:218"
+  ],
+  "placement": "pcic",
+  "note": "In Colombia te invito means I'm paying. ¿Te gustaría…? is softer than ¿quieres…?, and gustaría agrees with the thing (¿te gustarían unas vacaciones?).",
+  "sources": [
+   "fn-preguntar-deseos-a2",
+   "fn-proponer-sugerir-a2"
   ]
  },
  {
@@ -2655,78 +2965,6 @@
   ]
  },
  {
-  "id": "p:por-que-no",
-  "kind": "pattern",
-  "band": "A2",
-  "priority": 159,
-  "title": "Why don't we…?: ¿por qué no vamos a Monserrate?",
-  "es": "¿Por qué no + present (nosotros / tú)?: suggestion or advice: ¿Por qué no vamos a Monserrate? ¿Por qué no le preguntas a Vale?",
-  "en": "Why don't we go up Monserrate? Why don't you ask Vale?",
-  "requires": [
-   "g:questions"
-  ],
-  "contrasts": [],
-  "serves": [
-   "d:propose-plans",
-   "d:give-advice"
-  ],
-  "pcic": [
-   "funciones:A2:307",
-   "funciones:A2:308",
-   "funciones:A2:309",
-   "funciones:A2:310",
-   "funciones:A2:311",
-   "funciones:A2:312"
-  ],
-  "placement": "pcic",
-  "note": "Not a real why-question; it removes an obstacle. As advice it's softer than tienes que.",
-  "sources": [
-   "fn-proponer-sugerir-a2",
-   "fn-aconsejar-a2"
-  ]
- },
- {
-  "id": "p:que-tal-si",
-  "kind": "pattern",
-  "band": "A2",
-  "priority": 159,
-  "title": "How about…?: ¿qué tal si vamos a cine?",
-  "es": "¿Qué tal si + present? · ¿Y si + present?: ¿Qué tal si vamos a cine el sábado? ¿Y si pedimos una pizza?",
-  "en": "How about going to the cinema on Saturday? What if we order a pizza?",
-  "requires": [
-   "g:si-present"
-  ],
-  "contrasts": [],
-  "serves": [
-   "d:propose-plans",
-   "d:propose-accept"
-  ],
-  "pcic": [
-   "funciones:A2:307",
-   "funciones:A2:308",
-   "funciones:A2:309",
-   "funciones:A2:310",
-   "funciones:A2:311",
-   "funciones:A2:312",
-   "funciones:B1:1136",
-   "funciones:B1:1138",
-   "funciones:B1:1139",
-   "funciones:B1:1141",
-   "funciones:B1:1142",
-   "funciones:B1:1143",
-   "funciones:B1:1144",
-   "funciones:B1:1145",
-   "funciones:B1:1146",
-   "funciones:B1:1148"
-  ],
-  "placement": "pcic",
-  "note": "Present tense after si here. Colombians often say ir a cine (no article).",
-  "sources": [
-   "fn-proponer-sugerir-a2",
-   "fn-proponer-sugerir-b1"
-  ]
- },
- {
   "id": "p:refuse-es-que",
   "kind": "pattern",
   "band": "A2",
@@ -2756,35 +2994,6 @@
    "fn-aceptar-invitacion-a2",
    "task-a2-pedir",
    "fn-reaccionar-relato-a2"
-  ]
- },
- {
-  "id": "p:te-invito-a",
-  "kind": "pattern",
-  "band": "A2",
-  "priority": 159,
-  "title": "Inviting: te invito a un tinto",
-  "es": "Te invito a + noun / infinitive · ¿Quieres venir a…? · ¿Te gustaría + infinitive?: Te invito a almorzar. ¿Quieres venir a mi cumpleaños el sábado? ¿Te gustaría ir a bailar salsa?",
-  "en": "Lunch is on me. Do you want to come to my birthday party on Saturday? Would you like to go salsa dancing?",
-  "requires": [
-   "c:me-gustaria",
-   "g:indirect-objects"
-  ],
-  "contrasts": [],
-  "serves": [
-   "d:propose-plans"
-  ],
-  "pcic": [
-   "funciones:A2:215",
-   "funciones:A2:216",
-   "funciones:A2:217",
-   "funciones:A2:218"
-  ],
-  "placement": "pcic",
-  "note": "In Colombia te invito means I'm paying. ¿Te gustaría…? is softer than ¿quieres…?, and gustaría agrees with the thing (¿te gustarían unas vacaciones?).",
-  "sources": [
-   "fn-preguntar-deseos-a2",
-   "fn-proponer-sugerir-a2"
   ]
  },
  {

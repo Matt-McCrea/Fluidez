@@ -162,10 +162,41 @@
   ]
  },
  {
+  "id": "g:adjective-agreement",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 15,
+  "title": "Describing people and things: alto/alta, simpáticos, inteligente",
+  "es": "Mi hermana es alta y muy simpática. Los buñuelos están deliciosos.",
+  "en": "My sister is tall and very nice. The buñuelos are delicious.",
+  "requires": [
+   "g:gender-articles"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u02-my-day-to-day"
+  ],
+  "pcic": [
+   "gramatica:2.2",
+   "gramatica:2.3",
+   "gramatica:1.3",
+   "gramatica:10.3"
+  ],
+  "placement": "pcic",
+  "note": "Plurals of nouns and adjectives together; adjective after the noun by default. Pull-forward pass (Oct 2026): moved from session 40 to 15 (u02). Agreement is A1 core and gender is session 6: Vale está cansada, Mariana es colombiana, las arepas son buenas.",
+  "sources": [
+   "gn-describir-persona-a1",
+   "gr-adjetivos-calificativos-a1",
+   "gr-atributo-a1",
+   "gr-genero-adjetivo-a1",
+   "gr-numero-sustantivos-a1"
+  ]
+ },
+ {
   "id": "g:questions",
   "kind": "grammar",
   "band": "A1",
-  "priority": 16,
+  "priority": 17,
   "title": "Asking questions: qué, quién, dónde, cuándo, cómo, cuánto, por qué",
   "es": "¿Dónde vives? ¿Cuántos años tienes? ¿Por qué estás aquí?",
   "en": "Where do you live? How old are you? Why are you here?",
@@ -240,17 +271,47 @@
    "gramatica:9.1.1"
   ],
   "placement": "pcic",
-  "note": "e→ie and o→ue (and jugar u→ue). Unpacks c:quiero and c:puedo. e→i comes later (g:stem-e-i).",
+  "note": "e→ie and o→ue (and jugar u→ue). Unpacks c:quiero and c:puedo. e→i comes later (g:stem-e-i). Pull-forward pass (Oct 2026): tener's forms are a chunk from session 14 (c:tienes).",
   "sources": [
    "gr-presente-irregular-a2",
    "presente"
   ]
  },
  {
+  "id": "g:verb-infinitive",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 24,
+  "title": "Verb + verb: quiero ir, puedo pagar, necesito dormir, tengo que trabajar",
+  "es": "¿Quieres tomar algo? Hoy no puedo salir: tengo que trabajar. Bailar es muy chévere.",
+  "en": "Do you want to have something? I can't go out today: I have to work. Dancing is great.",
+  "requires": [
+   "g:stem-boot"
+  ],
+  "contrasts": [
+   "x:saber-poder"
+  ],
+  "serves": [
+   "d:u03-likes-wants-and-plans"
+  ],
+  "pcic": [
+   "gramatica:9.4.1",
+   "gramatica:15.1.1"
+  ],
+  "placement": "pcic",
+  "note": "saber + inf = know how to; poder = be able / be allowed. Pull-forward pass (Oct 2026): moved from session 72 to 24 (u03), straight after the boot verbs whose forms it uses (SEQ day 28; the c:quiero / c:puedo / c:tengo-que chunks start it in week 1). Covers querer, poder, preferir, necesitar, tener que and hay que + infinitive, and a plain infinitive as subject (Bailar es divertido) and empezar a / terminar de. saber + infinitive waits for g:yo-irregular (p:saber-conocer); volver a, dejar de, soler and ponerse a are tagged to their own patterns.",
+  "sources": [
+   "fn-habilidad-b1",
+   "gr-formas-no-personales-b1",
+   "gr-infinitivo-usos-a1",
+   "gr-subordinadas-sustantivas-a1"
+  ]
+ },
+ {
   "id": "g:ir-a-plans",
   "kind": "grammar",
   "band": "A1",
-  "priority": 25,
+  "priority": 26,
   "title": "Talking about plans: voy a + verb",
   "es": "Voy a abrir el café el lunes. ¿Qué vas a hacer mañana?",
   "en": "I'm going to open the café on Monday. What are you going to do tomorrow?",
@@ -367,48 +428,17 @@
    "gramatica:9.1.1"
   ],
   "placement": "pcic",
-  "note": "Unpacks c:tengo and c:no-se. tener also e→ie (tienes, tiene). SEQ new lesson(s): gr-presente-yo-irregular-a1.",
+  "note": "Unpacks c:tengo and c:no-se. tener also e→ie (tienes, tiene). SEQ new lesson(s): gr-presente-yo-irregular-a1. Pull-forward pass (Oct 2026): hago / salgo / vengo / pongo / traigo ride as a chunk family from session 22 (c:hago-salgo-vengo), when u03 teaches salir and venir; tengo from session 3 (c:tengo); sé from 11 (c:no-se).",
   "sources": [
    "gr-presente-irregular-a2"
-  ]
- },
- {
-  "id": "g:adjective-agreement",
-  "kind": "grammar",
-  "band": "A1",
-  "priority": 40,
-  "title": "Describing people and things: alto/alta, simpáticos, inteligente",
-  "es": "Mi hermana es alta y muy simpática. Los buñuelos están deliciosos.",
-  "en": "My sister is tall and very nice. The buñuelos are delicious.",
-  "requires": [
-   "g:gender-articles"
-  ],
-  "contrasts": [],
-  "serves": [
-   "d:u05-people-in-my-life"
-  ],
-  "pcic": [
-   "gramatica:2.2",
-   "gramatica:2.3",
-   "gramatica:1.3",
-   "gramatica:10.3"
-  ],
-  "placement": "pcic",
-  "note": "Plurals of nouns and adjectives together; adjective after the noun by default.",
-  "sources": [
-   "gn-describir-persona-a1",
-   "gr-adjetivos-calificativos-a1",
-   "gr-atributo-a1",
-   "gr-genero-adjetivo-a1",
-   "gr-numero-sustantivos-a1"
   ]
  },
  {
   "id": "g:possessives",
   "kind": "grammar",
   "band": "A1",
-  "priority": 44,
-  "title": "Whose is it: mi, tu, su, nuestro",
+  "priority": 40,
+  "title": "Whose is it, the whole set: mi/mis, tu/tus, su/sus, nuestro/nuestra",
   "es": "Mi abuela tenía un café. ¿Tu hermana vive en Medellín? Su perro es enorme.",
   "en": "My grandmother had a café. Does your sister live in Medellín? His dog is huge.",
   "requires": [
@@ -422,11 +452,42 @@
    "gramatica:5"
   ],
   "placement": "pcic",
-  "note": "su = his/her/their/your (usted); disambiguate with de él / de ella.",
+  "note": "su = his/her/their/your (usted); disambiguate with de él / de ella. Pull-forward pass (Oct 2026): mi / tu / su + noun are licensed from session 12 by p:possessives-basic; this lesson (40, was 44) systematises nuestro/a/os/as agreement and the four meanings of su (de él, de ella, de usted, de ellos).",
   "sources": [
    "gr-posesivos-distribucion-a1",
    "gr-posesivos-forma-a1",
    "nt-familia-a1"
+  ]
+ },
+ {
+  "id": "g:negation-words",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 44,
+  "title": "Saying no to everything: nada, nadie, nunca, tampoco, ningún",
+  "es": "No hay nadie. No como nunca carne. —No tengo hambre. —Yo tampoco.",
+  "en": "There's nobody. I never eat meat. —I'm not hungry. —Me neither.",
+  "requires": [
+   "g:present-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u05-people-in-my-life"
+  ],
+  "pcic": [
+   "gramatica:6.1",
+   "gramatica:8.2",
+   "gramatica:13.3"
+  ],
+  "placement": "pcic",
+  "note": "Double negative is required (no… nada). también/tampoco. Pull-forward pass (Oct 2026): moved from session 69 to 44 (u05). no hay nada / no hay nadie / no sé nada ride as a chunk from session 23 (c:no-hay-nada), algo / alguien as p:indefinites-basic (23).",
+  "sources": [
+   "dc-negacion-a1",
+   "dc-negacion-refuerzo-a2",
+   "gr-adverbios-afirmacion-negacion-a1",
+   "gr-adverbios-circunstanciales-a2",
+   "gr-cuantificadores-a2",
+   "gr-indefinidos-negativos-b1"
   ]
  },
  {
@@ -556,7 +617,7 @@
    "gramatica:4"
   ],
   "placement": "pcic",
-  "note": "ese covers most \"that\" in speech; aquel for far away and far back in time.",
+  "note": "ese covers most \"that\" in speech; aquel for far away and far back in time. Pull-forward pass (Oct 2026): este / esta / esto / eso are licensed from session 14 by p:demonstratives-basic; this lesson is the three distances (este, ese, aquel) with aquí / ahí / allá.",
   "sources": [
    "dc-deixis-espacial-a1",
    "gr-demostrativos-a2",
@@ -590,7 +651,8 @@
    "gr-cuantificadores-a2",
    "gr-cuantificadores-no-universales-a1",
    "nt-cantidad-relativa-a1"
-  ]
+  ],
+  "note": "Pull-forward pass (Oct 2026): muy / mucho / poco are licensed from session 12 by p:quantifiers-basic; this lesson is bastante, demasiado, and muy vs mucho as a system."
  },
  {
   "id": "g:perfecto-experience",
@@ -622,65 +684,60 @@
   ]
  },
  {
-  "id": "g:negation-words",
+  "id": "g:estar-gerund",
   "kind": "grammar",
   "band": "A1",
   "priority": 69,
-  "title": "Saying no to everything: nada, nadie, nunca, tampoco, ningún",
-  "es": "No hay nadie. No como nunca carne. —No tengo hambre. —Yo tampoco.",
-  "en": "There's nobody. I never eat meat. —I'm not hungry. —Me neither.",
+  "title": "What's happening right now: estoy trabajando",
+  "es": "Estoy trabajando, te llamo luego. ¿Qué estás haciendo?",
+  "en": "I'm working, I'll call you later. What are you doing?",
   "requires": [
+   "g:estar-location-states",
    "g:present-er-ir"
+  ],
+  "contrasts": [
+   "x:present-progressive"
+  ],
+  "serves": [
+   "d:u08-have-you-ever"
+  ],
+  "pcic": [
+   "gramatica:9.4.2",
+   "gramatica:12.1"
+  ],
+  "placement": "pcic",
+  "note": "Use only for right-now/temporary; plain present for habits and many \"now\" uses. Pull-forward pass (Oct 2026): moved from session 78 to 69 (u08; SEQ day 54): ¿Qué estás haciendo? is everyday A1.",
+  "sources": [
+   "gr-gerundio-a2",
+   "gr-presente-indicativo-valores-a1"
+  ]
+ },
+ {
+  "id": "g:direct-objects",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 72,
+  "title": "Not repeating the noun: lo, la, los, las (and the personal a)",
+  "es": "—¿El jugo? —Lo quiero sin azúcar. ¿Conoces a Vale? La conocí ayer.",
+  "en": "—The juice? —I want it without sugar. Do you know Vale? I met her yesterday.",
+  "requires": [
+   "g:gustar-basic",
+   "g:preterite-er-ir"
   ],
   "contrasts": [],
   "serves": [
    "d:u08-have-you-ever"
   ],
   "pcic": [
-   "gramatica:6.1",
-   "gramatica:8.2",
-   "gramatica:13.3"
+   "gramatica:7.1.2",
+   "gramatica:12.2.2"
   ],
-  "placement": "pcic",
-  "note": "Double negative is required (no… nada). también/tampoco.",
+  "placement": "teaching_choice",
+  "note": "lo/la standard (no leísmo). Comprehension first: \"who did what to whom?\" (Lo ve María). PCIC/programmes place this at A2; taught at A1 here. Pull-forward pass (Oct 2026): moved from session 92 to 72 (u08; SEQ day 75): ¿Lo has probado? — No, nunca lo he probado. me / te / nos as objects are licensed from session 30 by p:me-te-nos-objects; this lesson is lo / la / los / las and the personal a.",
   "sources": [
-   "dc-negacion-a1",
-   "dc-negacion-refuerzo-a2",
-   "gr-adverbios-afirmacion-negacion-a1",
-   "gr-adverbios-circunstanciales-a2",
-   "gr-cuantificadores-a2",
-   "gr-indefinidos-negativos-b1"
-  ]
- },
- {
-  "id": "g:verb-infinitive",
-  "kind": "grammar",
-  "band": "A1",
-  "priority": 72,
-  "title": "Verb + verb: puedo ir, sé nadar, necesito dormir, pienso volver",
-  "es": "¿Sabes manejar? Necesito descansar. Pienso volver en diciembre.",
-  "en": "Can you drive? I need to rest. I'm planning to come back in December.",
-  "requires": [
-   "g:stem-boot",
-   "g:yo-irregular"
-  ],
-  "contrasts": [
-   "x:saber-poder"
-  ],
-  "serves": [
-   "d:u08-have-you-ever"
-  ],
-  "pcic": [
-   "gramatica:9.4.1",
-   "gramatica:15.1.1"
-  ],
-  "placement": "pcic",
-  "note": "saber + inf = know how to; poder = be able / be allowed.",
-  "sources": [
-   "fn-habilidad-b1",
-   "gr-formas-no-personales-b1",
-   "gr-infinitivo-usos-a1",
-   "gr-subordinadas-sustantivas-a1"
+   "gr-objeto-directo-a1",
+   "gr-pronombres-atonos-a2",
+   "task-a2-pronombres"
   ]
  },
  {
@@ -711,32 +768,29 @@
   ]
  },
  {
-  "id": "g:estar-gerund",
+  "id": "g:prep-infinitive",
   "kind": "grammar",
   "band": "A1",
   "priority": 78,
-  "title": "What's happening right now: estoy trabajando",
-  "es": "Estoy trabajando, te llamo luego. ¿Qué estás haciendo?",
-  "en": "I'm working, I'll call you later. What are you doing?",
+  "title": "Before leaving, after eating, on arriving: antes de, después de, al + verb",
+  "es": "Antes de salir, cierra la puerta. Después de comer, tomamos tinto. Al llegar, me llamas.",
+  "en": "Before leaving, close the door. After eating, we have coffee. When you arrive, call me.",
   "requires": [
-   "g:estar-location-states",
-   "g:present-er-ir"
+   "g:verb-infinitive"
   ],
-  "contrasts": [
-   "x:present-progressive"
-  ],
+  "contrasts": [],
   "serves": [
    "d:u09-my-routine"
   ],
   "pcic": [
-   "gramatica:9.4.2",
-   "gramatica:12.1"
+   "gramatica:9.4.1",
+   "gramatica:15.3.1"
   ],
   "placement": "pcic",
-  "note": "Use only for right-now/temporary; plain present for habits and many \"now\" uses.",
+  "note": "Spanish uses the infinitive where English uses -ing. Pull-forward pass (Oct 2026): moved from session 156 (A2) to 78 (u09): antes de / después de + infinitive is how a routine is told (Antes de dormir, leo).",
   "sources": [
-   "gr-gerundio-a2",
-   "gr-presente-indicativo-valores-a1"
+   "gr-infinitivo-usos-a1",
+   "nt-duracion-transcurso-a1"
   ]
  },
  {
@@ -744,10 +798,11 @@
   "kind": "grammar",
   "band": "A1",
   "priority": 82,
-  "title": "What you have to do: tengo que, hay que, necesito",
-  "es": "Tengo que abrir a las seis. Hay que limpiar la máquina. No tienes que pagar.",
-  "en": "I have to open at six. The machine needs cleaning. You don't have to pay.",
+  "title": "Have to, must, no need: tener que vs hay que vs deber — and no tienes que",
+  "es": "Tienes que descansar. Hay que pagar antes. Debes ir al médico. Mañana no tienes que venir.",
+  "en": "You have to rest. You have to pay first. You should go to the doctor. You don't have to come tomorrow.",
   "requires": [
+   "g:verb-infinitive",
    "g:yo-irregular"
   ],
   "contrasts": [],
@@ -759,7 +814,7 @@
    "nociones_generales"
   ],
   "placement": "pcic",
-  "note": "Unpacks c:tengo-que and c:hay-que. no tener que = don't have to (not \"must not\"). SEQ new lesson(s): gr-tener-que-hay-que-a1.",
+  "note": "Unpacks c:tengo-que and c:hay-que. no tener que = don't have to (not \"must not\"). SEQ new lesson(s): gr-tener-que-hay-que-a1. Pull-forward pass (Oct 2026): tener que / hay que + infinitive are licensed from session 24 by g:verb-infinitive (chunks from session 6). This lesson (still 82) contrasts personal and general obligation with deber (present), and no tener que (no need) vs no deber (mustn't). The tagger now maps deber + infinitive here (it was B1 g:deber-modal).",
   "sources": [
    "fn-obligacion-necesidad-b1",
    "gr-perifrasis-verbales-b1",
@@ -821,31 +876,27 @@
   ]
  },
  {
-  "id": "g:direct-objects",
+  "id": "g:prep-pronouns",
   "kind": "grammar",
   "band": "A1",
   "priority": 92,
-  "title": "Not repeating the noun: lo, la, los, las (and the personal a)",
-  "es": "—¿El jugo? —Lo quiero sin azúcar. ¿Conoces a Vale? La conocí ayer.",
-  "en": "—The juice? —I want it without sugar. Do you know Vale? I met her yesterday.",
+  "title": "After for, with, to: para mí, contigo, sin ti",
+  "es": "¿Esto es para mí? ¿Vienes conmigo? Sin ti no puedo.",
+  "en": "Is this for me? Are you coming with me? I can't without you.",
   "requires": [
-   "g:gustar-full",
-   "g:preterite-er-ir"
+   "g:gustar-full"
   ],
   "contrasts": [],
   "serves": [
    "d:u10-food-and-ordering"
   ],
   "pcic": [
-   "gramatica:7.1.2",
-   "gramatica:12.2.2"
+   "gramatica:7.1.6"
   ],
   "placement": "teaching_choice",
-  "note": "lo/la standard (no leísmo). Comprehension first: \"who did what to whom?\" (Lo ve María). PCIC/programmes place this at A2; taught at A1 here.",
+  "note": "PCIC/programmes place this at A2; taught at A1 here. Pull-forward pass (Oct 2026): moved from session 130 to 92 (u10: Para mí, un tinto. ¿Y para ti?). a mí también / ¿y a ti? are a chunk from session 21 (c:a-mi-tambien), with gustar.",
   "sources": [
-   "gr-objeto-directo-a1",
-   "gr-pronombres-atonos-a2",
-   "task-a2-pronombres"
+   "gr-pronombres-tonicos-a2"
   ]
  },
  {
@@ -1155,27 +1206,31 @@
   ]
  },
  {
-  "id": "g:prep-pronouns",
+  "id": "g:object-pronoun-position",
   "kind": "grammar",
   "band": "A1",
   "priority": 130,
-  "title": "After for, with, to: para mí, contigo, sin ti",
-  "es": "¿Esto es para mí? ¿Vienes conmigo? Sin ti no puedo.",
-  "en": "Is this for me? Are you coming with me? I can't without you.",
+  "title": "Where the little words go: lo voy a comprar = voy a comprarlo",
+  "es": "Lo voy a pensar. = Voy a pensarlo. ¿Me estás escuchando?",
+  "en": "I'm going to think about it. Are you listening to me?",
   "requires": [
-   "g:gustar-full"
+   "g:direct-objects",
+   "g:indirect-objects",
+   "g:ir-a-plans"
   ],
   "contrasts": [],
   "serves": [
    "d:u14-joining-it-up"
   ],
   "pcic": [
-   "gramatica:7.1.6"
+   "gramatica:7.1.2",
+   "gramatica:7.1.3"
   ],
-  "placement": "teaching_choice",
-  "note": "PCIC/programmes place this at A2; taught at A1 here.",
+  "placement": "pcic",
+  "note": "Before the conjugated verb or glued to the infinitive/gerund; both correct. SEQ new lesson(s): gr-pronombres-posicion-a2. Pull-forward pass (Oct 2026): moved from session 144 (A2) to 130 (u14): voy a llamarte / te voy a llamar, quiero verte.",
   "sources": [
-   "gr-pronombres-tonicos-a2"
+   "gr-pronombres-atonos-a2",
+   "gr-pronombres-combinados-b1"
   ]
  },
  {
@@ -1259,34 +1314,6 @@
   ]
  },
  {
-  "id": "g:object-pronoun-position",
-  "kind": "grammar",
-  "band": "A2",
-  "priority": 144,
-  "title": "Where the little words go: lo voy a comprar = voy a comprarlo",
-  "es": "Lo voy a pensar. = Voy a pensarlo. ¿Me estás escuchando?",
-  "en": "I'm going to think about it. Are you listening to me?",
-  "requires": [
-   "g:direct-objects",
-   "g:indirect-objects",
-   "g:ir-a-plans"
-  ],
-  "contrasts": [],
-  "serves": [
-   "d:u16-shopping"
-  ],
-  "pcic": [
-   "gramatica:7.1.2",
-   "gramatica:7.1.3"
-  ],
-  "placement": "pcic",
-  "note": "Before the conjugated verb or glued to the infinitive/gerund; both correct. SEQ new lesson(s): gr-pronombres-posicion-a2.",
-  "sources": [
-   "gr-pronombres-atonos-a2",
-   "gr-pronombres-combinados-b1"
-  ]
- },
- {
   "id": "g:superlatives",
   "kind": "grammar",
   "band": "A2",
@@ -1364,32 +1391,6 @@
   ]
  },
  {
-  "id": "g:prep-infinitive",
-  "kind": "grammar",
-  "band": "A2",
-  "priority": 156,
-  "title": "Before leaving, after eating, on arriving: antes de, después de, al + verb",
-  "es": "Antes de salir, cierra la puerta. Después de comer, tomamos tinto. Al llegar, me llamas.",
-  "en": "Before leaving, close the door. After eating, we have coffee. When you arrive, call me.",
-  "requires": [
-   "g:verb-infinitive"
-  ],
-  "contrasts": [],
-  "serves": [
-   "d:u17-making-plans"
-  ],
-  "pcic": [
-   "gramatica:9.4.1",
-   "gramatica:15.3.1"
-  ],
-  "placement": "pcic",
-  "note": "Spanish uses the infinitive where English uses -ing.",
-  "sources": [
-   "gr-infinitivo-usos-a1",
-   "nt-duracion-transcurso-a1"
-  ]
- },
- {
   "id": "g:cuando-indicative",
   "kind": "grammar",
   "band": "A2",
@@ -1408,7 +1409,7 @@
    "gramatica:15.3.1"
   ],
   "placement": "pcic",
-  "note": "Only habitual/past cuando here; cuando + future meaning waits for the subjunctive (g:subj-cuando-future).",
+  "note": "Only habitual/past cuando here; cuando + future meaning waits for the subjunctive (g:subj-cuando-future). Pull-forward pass (Oct 2026): cuando + present for habits is licensed from session 80 by p:cuando-basic; this lesson is cuando / mientras / siempre que across the pasts.",
   "sources": [
    "dc-deixis-temporal-a2",
    "gr-temporales-b1"
@@ -1435,7 +1436,7 @@
    "gramatica:12.2.4"
   ],
   "placement": "pcic",
-  "note": "Rules of thumb only; second pass at B1, third at B2.",
+  "note": "Rules of thumb only; second pass at B1, third at B2. Pull-forward pass (Oct 2026): para (purpose, recipient) is licensed from session 25 by p:para-inf; por stays here.",
   "sources": [
    "gr-causales-a2",
    "gr-oraciones-finales-a1",
@@ -1796,7 +1797,7 @@
    "gramatica:7.4"
   ],
   "placement": "pcic",
-  "note": "¡Qué + noun + tan/más + adj! Accent marks on exclamative qué/cuánto.",
+  "note": "¡Qué + noun + tan/más + adj! Accent marks on exclamative qué/cuánto. Pull-forward pass (Oct 2026): ¡Qué + adjective! is licensed from session 23 by p:exclamations-basic; this lesson is ¡Qué tan…!, ¡Cuánto…!, ¡Qué … tan …!",
   "sources": [
    "fn-felicitar-a2",
    "fn-valorar-a2",
@@ -1875,7 +1876,7 @@
    "gramatica:7"
   ],
   "placement": "teaching_choice",
-  "note": "alguno/ninguno shorten before a masculine noun. PCIC/programmes place this at B1; taught at A2 here.",
+  "note": "alguno/ninguno shorten before a masculine noun. PCIC/programmes place this at B1; taught at A2 here. Pull-forward pass (Oct 2026): algo / alguien are licensed from session 23 by p:indefinites-basic; this lesson is algún / ningún / alguno and agreement.",
   "sources": [
    "gr-cuantificadores-a2",
    "gr-cuantificadores-b1",
@@ -2112,7 +2113,7 @@
    "tacticas_pragmaticas"
   ],
   "placement": "pcic",
-  "note": "Shifts deixis (hoy → ese día, mañana → al día siguiente); needed for reported speech.",
+  "note": "Shifts deixis (hoy → ese día, mañana → al día siguiente); needed for reported speech. Pull-forward pass (Oct 2026): primero / luego / después / al final are licensed from session 32 by p:time-sequence-basic; this lesson is the longer story frame.",
   "sources": [
    "dc-deixis-temporal-a2",
    "dc-estructuradores-a2",
@@ -2142,7 +2143,7 @@
    "nociones_generales"
   ],
   "placement": "pcic",
-  "note": "LatAm: ¿Ya comiste? (preterite) is the everyday form; unpacks c:ya-comiste.",
+  "note": "LatAm: ¿Ya comiste? (preterite) is the everyday form; unpacks c:ya-comiste. Pull-forward pass (Oct 2026): ya / todavía / ya no / todavía no are licensed from session 52 by p:ya-todavia-basic; this lesson is acabar de and the fine points.",
   "sources": [
    "gr-perifrasis-verbales-b1",
    "nt-anterioridad-a2",
@@ -2475,7 +2476,8 @@
   "sources": [
    "gr-se-multiuso-b1",
    "nt-movimiento-estabilidad-a2"
-  ]
+  ],
+  "note": "Pull-forward pass (Oct 2026): quedarse, acordarse, dormirse… are licensed from g:reflexive-routine (76) as vocabulary; this lesson teaches the meaning contrasts (dormir / dormirse, ir / irse)."
  },
  {
   "id": "g:pluperfect",
@@ -2870,7 +2872,7 @@
    "gramatica:12.1"
   ],
   "placement": "pcic",
-  "note": "deber de = conjecture (formal); everyday speech often uses deber for both — accept both, teach the distinction.",
+  "note": "deber de = conjecture (formal); everyday speech often uses deber for both — accept both, teach the distinction. Pull-forward pass (Oct 2026): deber + infinitive in the present is now taught (and tagged) with g:tener-que-hay-que at 82; this lesson is deberías and debe de (probability).",
   "sources": [
    "fn-aconsejar-b1",
    "gr-modalidad-b1",
@@ -2975,7 +2977,8 @@
   "sources": [
    "gr-interrogativos-b1",
    "gr-orden-interrogativos-b2"
-  ]
+  ],
+  "note": "Pull-forward pass (Oct 2026): ¿de dónde?, ¿con quién?, ¿a qué hora?, ¿por qué?, ¿para qué? are licensed from session 18 by p:prep-questions-basic; this lesson is the verb-governed ones (¿De qué se trata? ¿En qué piensas? ¿Con qué sueñas?)."
  },
  {
   "id": "g:reported-requests",
@@ -3138,7 +3141,8 @@
    "gr-sub-sustantivas-c1",
    "gr-subordinadas-sustantivas-a1",
    "gr-subordinadas-sustantivas-b1"
-  ]
+  ],
+  "note": "Pull-forward pass (Oct 2026): a plain infinitive as subject (Bailar es divertido) is licensed by g:verb-infinitive (24); this lesson is el + infinitive and infinitives inside emotion frames."
  },
  {
   "id": "g:discourse-structure",

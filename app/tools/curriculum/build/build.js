@@ -1,5 +1,14 @@
 'use strict';
 // Builds app/content/graph/*.json and app/content/units/uNN.json from the spine + mined nodes.
+//
+// RETIRED (Oct 2026). This produced the first cut only. Since then the JSON under app/content/graph and
+// app/content/units has been edited directly (gate fixes, the pull-forward pass in
+// tools/curriculum/pullforward.py, see docs/unit-map.md "Pull-forward pass"), and it is now the source of
+// truth. Re-running this would silently undo those changes, so it refuses unless given --force-overwrite.
+if (!process.argv.includes('--force-overwrite')) {
+  console.error('build.js is retired: content/graph and content/units are the source of truth (docs/unit-map.md, "Pull-forward pass"). Pass --force-overwrite only to regenerate the first cut from scratch.');
+  process.exit(1);
+}
 const fs = require('fs'), path = require('path');
 const ROOT = '/Users/Matthew/Fluidez';
 const MINE = path.join(__dirname, '..', 'mine');

@@ -35,7 +35,8 @@
    "chunks": [
     "c:no-me-gusta-nada",
     "c:que-te-gusta-hacer",
-    "c:hasta-el-lunes"
+    "c:hasta-el-lunes",
+    "c:a-mi-tambien"
    ],
    "lexemes": [
     "l:lunes",
@@ -49,7 +50,9 @@
    "focus": [
     "g:stem-boot"
    ],
-   "chunks": [],
+   "chunks": [
+    "c:hago-salgo-vengo"
+   ],
    "lexemes": [
     "l:salir",
     "l:comida",
@@ -63,9 +66,15 @@
    "type": "drill",
    "focus": [
     "g:stem-boot",
-    "g:gustar-basic"
+    "g:gustar-basic",
+    "p:exclamations-basic",
+    "p:indefinites-basic"
    ],
-   "chunks": [],
+   "chunks": [
+    "c:si-quieres",
+    "c:ahorita",
+    "c:no-hay-nada"
+   ],
    "lexemes": [
     "l:tipo",
     "l:lugar",
@@ -74,12 +83,10 @@
    ]
   },
   {
-   "type": "input",
+   "type": "introduce",
    "focus": [
-    "p:prefieres-x-o-y",
-    "p:que-tipo-de",
-    "p:jugar-a",
-    "p:days-el-lunes"
+    "g:verb-infinitive",
+    "p:que-tipo-de"
    ],
    "chunks": [],
    "lexemes": [
@@ -103,9 +110,13 @@
    "chapter": "ch006"
   },
   {
-   "type": "introduce",
+   "type": "drill",
    "focus": [
-    "g:ir-a-plans"
+    "g:verb-infinitive",
+    "g:stem-boot",
+    "p:para-inf",
+    "p:prefieres-x-o-y",
+    "p:jugar-a"
    ],
    "chunks": [],
    "lexemes": [
@@ -118,11 +129,9 @@
    ]
   },
   {
-   "type": "drill",
+   "type": "introduce",
    "focus": [
-    "g:ir-a-plans",
-    "g:stem-boot",
-    "p:ir-a-venir-de-place"
+    "g:ir-a-plans"
    ],
    "chunks": [],
    "lexemes": [
@@ -133,25 +142,27 @@
    ]
   },
   {
+   "type": "drill",
+   "focus": [
+    "g:ir-a-plans",
+    "g:verb-infinitive",
+    "p:ir-a-venir-de-place",
+    "p:days-el-lunes"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
    "type": "output",
    "focus": [
     "g:gustar-basic",
     "g:stem-boot",
+    "g:verb-infinitive",
     "g:ir-a-plans"
    ],
    "chunks": [],
    "lexemes": [],
    "scene": "sc-u03-a"
-  },
-  {
-   "type": "review",
-   "focus": [
-    "g:gustar-basic",
-    "g:stem-boot",
-    "g:ir-a-plans"
-   ],
-   "chunks": [],
-   "lexemes": []
   }
  ],
  "storyArc": "Vale confronts him and offers a bet instead: if the café takes two million pesos in its first month, he keeps it open for a year. Tomás likes almost nothing about the idea, except Vale's buñuelos. Hernando wants to run a chess table, Simón wants everyone's arepa, and Tomás can't say no in Spanish fast enough. They are going to reopen on Saturday. He is going to regret this.",

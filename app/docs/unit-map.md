@@ -2,12 +2,12 @@
 
 The curriculum architect's map: 60 weekly units, A1→C1, neutral Latin American Spanish with the story set in Bogotá. Machine-readable versions live in `app/content/graph/*.json` (the skill graph) and `app/content/units/uNN.json` (one file per unit). Every node and unit parses against `src/content/schema.ts`, and a check confirms that no node's priority comes before anything it requires.
 
-**What's in the graph.** 172 grammar points, 640 patterns, 395 chunks, 94 contrasts and 269 can-dos, across 593 sessions:
+**What's in the graph.** 172 grammar points, 650 patterns, 404 chunks, 94 contrasts and 269 can-dos, across 593 sessions. The JSON under `app/content/` is now the source of truth: `tools/curriculum/build/` produced the first cut and must not be re-run (see "Pull-forward pass" below).
 
 | Band | Units | Sessions | Grammar | Bank quota |
 |---|---|---|---|---|
-| A1 | 1–14 | 1–133 | 43 | 6,673 |
-| A2 | 15–27 | 134–263 | 39 | 5,133 |
+| A1 | 1–14 | 1–133 | 45 | 6,673 |
+| A2 | 15–27 | 134–263 | 37 | 5,133 |
 | B1 | 28–41 | 264–403 | 42 | 6,720 |
 | B2 | 42–51 | 404–503 | 28 | 5,794 |
 | C1 | 52–60 | 504–593 | 20 | 5,456 |
@@ -17,7 +17,7 @@ Across all units the quotas also call for 219 story chapters, 108 scenes and 241
 
 **The week.**
 - **A1–A2** use the BLUEPRINT rhythm with a third grammar point added: Introduce, Drill, Introduce, Drill, Input, (Patterns), Introduce, Drill, Output, Review. That gives three grammar points every 9–10 sessions, about 2.3 a week.
-- **Unit 1** has four grammar points and no review day, because there is nothing to review yet.
+- **Units 1–3** have four grammar points each. Unit 1 has no review day because there is nothing to review yet; units 2 and 3 gave up their review day (and their input day's slot) in the pull-forward pass so that adjective agreement and verb + infinitive land in weeks 2–3.
 - **B1** moves Input forward (Introduce, Drill, Input, …) and always has a Patterns day.
 - **B2 and C1** introduce 2–3 points per unit. They have two Input or two Output days and Patterns days of up to ten frames, because upper-band lessons should be few and long.
 - **Every fourth unit ends on a checkpoint** (✓ in the tables).
@@ -41,17 +41,40 @@ Across all units the quotas also call for 219 story chapters, 108 scenes and 241
 
 ## Grammar milestones (session index, standard tier)
 
-| Milestone | Session | Plan target |
+After the pull-forward pass (October 2026). "Licensed" is the session from which the gate lets content use the form; the full lesson can come later.
+
+| Milestone | Session (was) | Plan / SEQ target |
 |---|---|---|
 | present -ar (with irregular chunks from session 1) | 8 | 1 |
 | gender and articles | 6 | ≤8 |
+| mi / tu / su, muy / mucho / poco (patterns) | **12** (44 / 63) | SEQ 22 |
+| este / esto / eso (pattern), *se llama*, *¿tienes…?* (chunks) | **14** (59 / 76 / 22) | SEQ 42 |
+| **adjective agreement** (*cansada, colombiana*) | **15** (40) | SEQ 19 |
+| questions with a preposition (*¿con quién? ¿por qué?*) | **18** (354) | A1 |
 | stem-changers (boot verbs) | 22 | ≤26 |
+| *a mí también* (chunk), *hago / salgo / vengo* (chunk) | **21–22** (130 / 38) | — |
+| *algo / alguien*, *no hay nada*, *¡Qué bonito!*, *si quieres* | **23** (216 / 69 / 206 / 154) | — |
+| **verb + infinitive** (*quiero ir, puedo pagar, tengo que trabajar, hay que…*) | **24** (72; tener que 82) | SEQ 28 |
+| *para* + person / verb | **25** (164) | A1 |
 | **preterite as a system** (-ar 29, -er/-ir 31, fui/hice 34, irregulars 50, spelling 98) | **29** | ~30 |
+| me / te / nos as objects (*¿me ayudas?*) | **30** (92) | SEQ 39 |
+| *primero, luego, después* | **32** (246) | — |
+| yo-irregular verbs as a system | 38 | SEQ 26 (chunks from 22) |
+| possessives, full set | 40 (44) | — |
+| negation words (*no… nada / nadie / nunca*) | **44** (69) | — |
 | imperfect of states (era, estaba, tenía, había) | 48 | ~45 |
+| *ya / todavía / ya no* | **52** (250) | A1 middle |
 | perfecto for experience and "not yet" only | 67 | ~60 |
-| lo/la/los/las | 92 | — |
+| estar + gerund | **69** (78) | SEQ 54 |
+| lo / la / los / las | **72** (92) | SEQ 75 |
+| reflexives (and *quedarse, acordarse, dormirse*) | 76 (B1 290 for the second group) | SEQ 52 |
+| *antes de / después de* + infinitive | **78** (156) | — |
+| *cuando* + present; *normalmente* (chunk) | **80–81** (160 / 236) | — |
+| obligation in full (*deber, no tienes que*) | 82 (deber was B1 340) | — |
+| prepositional pronouns (*para mí, contigo*) | **92** (130) | — |
 | full imperfect / preterite vs imperfect | 96 / 105 | ~95 |
 | tú / usted commands | 115 / 117 | — |
+| object pronouns after an infinitive (*voy a llamarte*) | **130** (144) | — |
 | future (guesses first) / conditional | 184 / 190 | — |
 | **present subjunctive** (wanting: *quiero que*) | **194** | ~175 |
 | subjunctive of opinion and doubt | 264 / 274 | — |
@@ -92,19 +115,19 @@ Units 1–14 · sessions 1–133 (133 sessions)
 | Unit | Can-do | Grammar introduced (session) | Key patterns | Story beat |
 |---|---|---|---|---|
 | **u01 Hello — who I am** | greet someone, say who I am, where I'm from and what I do, and ask them the same. | ser-identity (1), sounds-letters (3), gender-articles (6), present-ar (8) | Saying someone's job: es profesora (no 'a') | Tomás lands at El Dorado with a headache from the altitude and one suitcase. |
-| **u02 My day-to-day** | say where I live and work, what I do on a normal day and how I am, and ask simple questions. | present-er-ir (11), estar-location-states (13), questions (16) | Saying you're hungry, cold or sleepy: tengo ha…; Talking to vs about someone: Buenos días, seño…; Well vs good: está bien, canta mal, un libro b… (+1) | Vale walks Tomás through a normal day at the café: she opens at six, bakes, serves, does the accounts Rosa never did. |
-| **u03 Likes, wants and plans** | say what I like, want and can do, and what I'm going to do this weekend. | gustar-basic (20), stem-boot (22), ir-a-plans (25) | Me too, me neither: yo también / yo tampoco; Asking someone to choose: ¿Prefieres té o café?; Asking what kind: ¿Qué tipo de música te gusta? (+3) | Vale confronts him and offers a bet instead: if the café takes two million pesos in its first month, he keeps it open for a year. |
+| **u02 My day-to-day** | say where I live and work, what I do on a normal day and how I am, and ask simple questions. | present-er-ir (11), estar-location-states (13), adjective-agreement (15), questions (17) | Saying you're hungry, cold or sleepy: tengo ha…; Talking to vs about someone: Buenos días, seño…; Well vs good: está bien, canta mal, un libro b… (+1) | Vale walks Tomás through a normal day at the café: she opens at six, bakes, serves, does the accounts Rosa never did. |
+| **u03 Likes, wants and plans** | say what I like, want and can do, and what I'm going to do this weekend. | gustar-basic (20), stem-boot (22), verb-infinitive (24), ir-a-plans (26) | Me too, me neither: yo también / yo tampoco; Asking someone to choose: ¿Prefieres té o café?; Asking what kind: ¿Qué tipo de música te gusta? (+3) | Vale confronts him and offers a bet instead: if the café takes two million pesos in its first month, he keeps it open for a year. |
 | **u04 The weekend** ✓ | say what I did yesterday and last weekend, in order. | preterite-ar (29), preterite-er-ir (31), preterite-ser-ir-hacer (34) | What it costs vs what you paid: cuesta, pagué……; Last week, next week: la semana pasada, el mes…; Thanking for something: gracias por todo, grac… (+1) | Saturday is chaos. On Friday Tomás went to Paloquemao market and bought forty kilos of the wrong flour; the espresso machine died at 7:05; Vale made coffee in a pot li… |
-| **u05 People in my life** | describe my family and friends: who they are, what they look like, what they're like and how old they are. | yo-irregular (38), adjective-agreement (40), possessives (44) | People need 'a': conozco a tu hermano; 21, 31, 100: veintiún libros, treinta y una ca…; There are four of us: somos cuatro (+9) | Vale video-calls her sister Camila in Medellín and her mother, who wants to know whether "el canadiense" is handsome (Camila thinks so; Vale says he is "normal"). |
+| **u05 People in my life** | describe my family and friends: who they are, what they look like, what they're like and how old they are. | yo-irregular (38), possessives (40), negation-words (44) | People need 'a': conozco a tu hermano; 21, 31, 100: veintiún libros, treinta y una ca…; There are four of us: somos cuatro (+9) | Vale video-calls her sister Camila in Medellín and her mother, who wants to know whether "el canadiense" is handsome (Camila thinks so; Vale says he is "normal"). |
 | **u06 How it was** | describe what a place or a person was like and say what happened there and how long ago. | imperfect-states (48), preterite-irregular-strong (50), hace-ago (53) | The whole family: los García; Old: viejo, antiguo or mayor?; Dates and years: el 5 de mayo de 1998 (+1) | Hernando tells them how the café was when he first came in 1979: there was a jukebox, Rosa was thirty and had a temper, and the whole street smelled of her pandeyucas. |
 | **u07 Where I live** | say what there is in my home and neighbourhood, where things are, and how much of everything there is. | hay-vs-esta (57), demonstratives (59), quantifiers (63) | First, second, third floor: el primer piso, la…; Next to, opposite, behind: al lado de la drogu…; Where a place is: queda cerca, queda a dos cua… (+7) | Tomás leaves the hostel and rents a room from Doña Gloria above a bakery, two blocks away: a bed, a desk, a window onto the cathedral, and a shower that works one day … |
-| **u08 Have you ever…?** ✓ | talk about places I've been and things I've done or haven't done yet, and say what I can and know how to do. | perfecto-experience (67), negation-words (69), verb-infinitive (72) | Knowing a fact vs knowing a person or place: s…; Feeling like doing something: tengo ganas de…; In order to: para + verb (+1) | Vale and Hernando are horrified by everything Tomás has never done: never tried ajiaco, never played tejo, never climbed Monserrate. |
-| **u09 My routine** | describe my whole day, say what I'm doing right now and what I have to do. | reflexive-routine (76), estar-gerund (78), tener-que-hay-que (82) | Washing your hands, brushing your teeth: me la…; In the morning, on Tuesday afternoon: por la m…; It's late, it's night: es tarde, ya es de noche (+9) | Tomás's new life starts at five: shower (cold), bakery, café, accounts, chess with Hernando, bed. |
-| **u10 Food and ordering** | order food and drink, say what I and other people like, and ask for what's missing. | gustar-full (86), stem-e-i (88), direct-objects (92) | Fixing a time and place: ¿nos vemos a las siet…; Asking for things: ¿me trae…?, ¿me pasas…?; A bottle of, a pound of: una botella de agua (+4) | To win Vale back Tomás helps her plan a new menu: ajiaco on Saturdays, jugos with whatever is in season, her buñuelos all day. |
+| **u08 Have you ever…?** ✓ | talk about places I've been and things I've done or haven't done yet, and say what I can and know how to do. | perfecto-experience (67), estar-gerund (69), direct-objects (72) | Knowing a fact vs knowing a person or place: s…; Feeling like doing something: tengo ganas de…; In order to: para + verb (+1) | Vale and Hernando are horrified by everything Tomás has never done: never tried ajiaco, never played tejo, never climbed Monserrate. |
+| **u09 My routine** | describe my whole day, say what I'm doing right now and what I have to do. | reflexive-routine (76), prep-infinitive (78), tener-que-hay-que (82) | Washing your hands, brushing your teeth: me la…; In the morning, on Tuesday afternoon: por la m…; It's late, it's night: es tarde, ya es de noche (+9) | Tomás's new life starts at five: shower (cold), bakery, café, accounts, chess with Hernando, bed. |
+| **u10 Food and ordering** | order food and drink, say what I and other people like, and ask for what's missing. | gustar-full (86), stem-e-i (88), prep-pronouns (92) | Fixing a time and place: ¿nos vemos a las siet…; Asking for things: ¿me trae…?, ¿me pasas…?; A bottle of, a pound of: una botella de agua (+4) | To win Vale back Tomás helps her plan a new menu: ajiaco on Saturdays, jugos with whatever is in season, her buñuelos all day. |
 | **u11 How life used to be** | describe what my life used to be like and compare it with now. | imperfect-habitual (96), preterite-spelling-stem (98), comparatives (101) | Looking like someone: me parezco a mi papá; How tall, how heavy: mide 1,80, pesa dos kilos; Stopping a habit: dejé de fumar (+2) | Tomás remembers Sundays at the café when he was six: he used to sit on the counter while Rosa sang, and his father used to take him to see the planes. |
 | **u12 Telling a story** ✓ | tell a short story: what happened, what it was like, and what was going on when it happened. | pret-vs-imperfect (105), imperfect-progressive (107), that-clauses (111) | Talking about the weather: hace frío, está llo…; Doing something again: volvió a llamar | One night in the rainy season the power goes out. Tomás was closing up and Vale was counting the money when they heard a noise at the back: someone was trying to pull … |
 | **u13 Around the city** | ask for and give directions, use public transport, and tell a friend or a stranger what to do. | commands-tu (115), commands-usted (117), indirect-objects (121) | Addresses in Bogotá: queda en la carrera Sépti…; Go vs come: ¿vienes a mi casa?, ¡ya voy!; By bus, on foot: en bus, a pie (+5) | Tomás crosses the city to the notary's office in the north to find the property papers: two TransMilenios, the wrong direction, a street vendor who gives perfect direc… |
-| **u14 Joining it up** | write a connected message with reasons and details instead of short separate sentences. | relative-que (125), cause-result (127), prep-pronouns (130) | Saying what for: estudio español para trabajar…; Giving your view: para mí… | Tomás writes Vale a long message, the first one with reasons and details instead of short sentences: the lease that Altamira has bought expires in a year, but the lett… |
+| **u14 Joining it up** | write a connected message with reasons and details instead of short separate sentences. | relative-que (125), cause-result (127), object-pronoun-position (130) | Saying what for: estudio español para trabajar…; Giving your view: para mí… | Tomás writes Vale a long message, the first one with reasons and details instead of short sentences: the lease that Altamira has bought expires in a year, but the lett… |
 
 ## A2 — doing things, and the first wish
 
@@ -113,8 +136,8 @@ Units 15–27 · sessions 134–263 (130 sessions)
 | Unit | Can-do | Grammar introduced (session) | Key patterns | Story beat |
 |---|---|---|---|---|
 | **u15 How are you feeling?** | say how I and others feel, physically and emotionally, and say what I think of things. | ser-estar-adjectives (134), estar-participle (136), parecer-quedar (140) | Saying what hurts: me duele la cabeza; Too much, not at all: es demasiado caro, no es…; Saying what hurts: me duele la cabeza (+1) | Tomás comes down with a terrible flu and spends three days feverish at Doña Gloria's, who feeds him aguapanela and gossip. |
-| **u16 Shopping** ✓ | shop for clothes and other things: ask, compare, try on, pay and return something. | object-pronoun-position (144), superlatives (146), double-pronouns (150) | What it's made of: es de cuero; Your size: ¿qué talla usa?, ¿qué número calza?; Changing vs exchanging: cambiar de trabajo, ca… (+3) | With the café doing well, Vale and Tomás go shopping in San Victorino for uniforms, chairs and a new grinder. |
-| **u17 Making plans** | make, accept and turn down plans, and talk about conditions and timing. | si-present (154), prep-infinitive (156), cuando-indicative (160) | I don't know what to do: no sé qué hacer; So, then: entonces / o sea que; How about…?: ¿qué tal si vamos a cine? (+5) | Invitations multiply: Mariana invites Tomás to a salsa night, if he can learn three steps by Friday; Vale invites him to her sister's engagement party in Medellín next… |
+| **u16 Shopping** ✓ | shop for clothes and other things: ask, compare, try on, pay and return something. | superlatives (146), double-pronouns (150) | What it's made of: es de cuero; Your size: ¿qué talla usa?, ¿qué número calza?; Changing vs exchanging: cambiar de trabajo, ca… (+3) | With the café doing well, Vale and Tomás go shopping in San Victorino for uniforms, chairs and a new grinder. |
+| **u17 Making plans** | make, accept and turn down plans, and talk about conditions and timing. | si-present (154), cuando-indicative (160) | I don't know what to do: no sé qué hacer; So, then: entonces / o sea que; How about…?: ¿qué tal si vamos a cine? (+5) | Invitations multiply: Mariana invites Tomás to a salsa night, if he can learn three steps by Friday; Vale invites him to her sister's engagement party in Medellín next… |
 | **u18 On the road** | travel by bus or plane, book a room, and sort out tickets, luggage and directions. | por-para-1 (164), commands-with-pronouns (166), possessives-stressed (170) | Take vs bring: llévele esto, tráigame eso | The trip to Medellín: the Salitre bus terminal at dawn, nine hours of curves, a lost suitcase and a hotel with a view of the cable cars. |
 | **u19 Work and studies** | talk about my job and studies, read a job ad, and say what a workplace needs. | se-impersonal (174), relatives-donde-lo-que (176), article-uses (180) | Giving a short talk: hoy les voy a hablar de…; Working as (for now): trabaja de mesero | Back in Bogotá they need help. They post their first job ad and hire Jhon Fredy, nineteen, an engineering student who works fast and talks faster. |
 | **u20 Guesses and predictions** ✓ | guess what's going on, make predictions and promises, and give advice with "would" and "should". | future-conjecture (184), future-promises (186), conditional (190) | — | Simón disappears. Where can he be? |
@@ -180,6 +203,127 @@ Units 52–60 · sessions 504–593 (90 sessions)
 | **u59 Voices of Colombia** | understand regional Colombian voices and adapt my own register to who I'm talking to. | voseo-recognition (576), future-subj-recognition (581) | Permission with a condition: sí, pero que no s…; Advising from a distance: lo más recomendable …; Reproaching what someone didn't do: ¡me hubier… (+12) | To celebrate, the group travels: Carnaval in Barranquilla with Yesid's family, a week in Medellín with Vale's, a night in a village in Boyacá where everyone says "sume… |
 | **u60 A critical voice** ✓ | write and defend a critical review in my own voice. | word-order-style (586), evaluative-adverbs (591) | Approving what someone does: haces bien en…; The verdict line of a review: lo mejor de… es……; Signposting a talk: a lo largo de esta charla…… (+14) | La Esquina de Rosa reopens as a café and cultural space, with Hernando's book on the counter and Rosa's letters framed on the wall. |
 
+## Pull-forward pass (October 2026)
+
+**Why.** Writing units 1–3 showed that the graph's prerequisite timing blocked ordinary beginner Spanish. *Quiero ir* waited for session 72, *mi hermana* for 44, *muy bueno* for 63, *¿con quién?* for 354, *primero… luego* for 246 and *para Vale* for 164. The u03 bank has 864 sentences and only 10 with *querer / poder + infinitive*, and the boot-verb script says *¿Puedes el lunes?* to dodge the gate. Matthew's rule: give learners the most useful tools early, so they can say real things from week 1.
+
+**How.** Each split is a cheap early node plus the existing full node later. The cheap node is a pattern (`p:`) or a chunk family carried on a Drill or Input day, which keeps the rhythm rules intact: one grammar Introduce a day at most, never two days running, and a Drill 1–3 sessions after. Where a real system was needed early, it got an Introduce slot. **No unit changed length**, so A1 is still 133 sessions and every session number after u03 is unchanged, including the lexeme priorities in `lexemes.json`. The script that made every change is `tools/curriculum/pullforward.py`. It asserts the old state, so it cannot be applied twice. **From now on the JSON in `content/graph` and `content/units` is the source of truth;** `tools/curriculum/build/` must not be re-run.
+
+### Grammar Introduce moves
+
+| Node | Was | Now | Unit | Why |
+|---|---|---|---|---|
+| `g:adjective-agreement` | 40 | **15** | u02 (the input day became an Introduce) | A1 core, and gender is at session 6: *Vale está cansada, Mariana es colombiana*. |
+| `g:questions` | 16 | 17 | u02 | Made room; same unit. |
+| `g:verb-infinitive` | 72 | **24** | u03 (the input day became an Introduce) | *quiero / puedo / prefiero / necesito / tengo que / hay que + infinitive* is the u03 can-do itself ("what I like, want and can do"). Now requires only `g:stem-boot`. SEQ puts it on day 28. |
+| `g:ir-a-plans` | 25 | 26 | u03 | Made room; same unit. |
+| `g:possessives` (full set) | 44 | 40 | u05 | Takes the slot adjective agreement left. |
+| `g:negation-words` | 69 | **44** | u05 | *No tengo ningún hermano, nadie, nunca*; fills the freed slot. |
+| `g:estar-gerund` | 78 | **69** | u08 | *¿Qué estás haciendo?* (SEQ 54); takes the slot `g:negation-words` left. |
+| `g:direct-objects` (lo/la) | 92 | **72** | u08 | *¿Lo has probado? — Nunca lo he probado* (SEQ 75). Now requires `g:gustar-basic`, not `g:gustar-full`. |
+| `g:prep-infinitive` | 156 (A2) | **78** (A1) | u09 | *Antes de dormir, leo*: how a routine is told. |
+| `g:prep-pronouns` | 130 | **92** | u10 | *Para mí, un tinto. ¿Y para ti?* |
+| `g:object-pronoun-position` | 144 (A2) | **130** (A1) | u14 | *Voy a llamarte / te voy a llamar*. |
+| `g:tener-que-hay-que` | 82 | 82 | u09 | Retitled as obligation in full: *tener que* vs *hay que* vs *deber*, and *no tienes que*. Plain *tener que / hay que + infinitive* now belong to `g:verb-infinitive` (24); *deber + infinitive* moved here from B1 `g:deber-modal` (340). |
+
+**Unit days.**
+- **u02 and u03** are now I-D-I-D-I-D-I-D-O, four grammar points with no review day. The old input days carry their chapters (ch004, ch006) on the new Introduce day. Their patterns moved one to three days later, never earlier, so no written script loses legality.
+- **u16 day 1** (an Introduce until `g:object-pronoun-position` left) is now an Input day carrying `p:talla-numero` and `p:colour-claro-oscuro`.
+- **u17 day 3** (an Introduce until `g:prep-infinitive` left) is now a Patterns day carrying `p:que-tal-si`, `p:por-que-no` and `p:te-invito-a`.
+
+### New early nodes (patterns), with the tagger key each now owns
+
+| Pattern | Session | Day | Key | Covers | Full node (unchanged) |
+|---|---|---|---|---|---|
+| `p:quantifiers-basic` | 12 | u02 d2 | `np.quantifier.basic` | muy, mucho/a/os/as, poco | `g:quantifiers` 63 |
+| `p:possessives-basic` | 12 | u02 d2 | `np.possessive.basic` | mi/tu/su (+ mis, tus, sus) | `g:possessives` 40 |
+| `p:demonstratives-basic` | 14 | u02 d4 | `np.demonstrative.basic` | este/esta, esto, eso | `g:demonstratives` 59 |
+| `p:prep-questions-basic` | 18 | u02 d8 | `q.wh.prep` | ¿de dónde? ¿con quién? ¿a qué hora? ¿por qué? ¿para qué? | `g:questions-prepositions` B1 354 |
+| `p:exclamations-basic` | 23 | u03 d4 | `excl.que` | ¡Qué bonito! ¡Qué rico! | `g:exclamations` 206 |
+| `p:indefinites-basic` | 23 | u03 d4 | `np.indefinite.basic` | algo, alguien (with nada, nadie) | `g:indefinites` 216 |
+| `p:para-inf` (moved from 73, widened) | 25 | u03 d6 | `prep.para` | para + person / thing / verb | `g:por-para-1` 164 (keeps *por*) |
+| `p:me-te-nos-objects` | 30 | u04 d2 | `clitic.personal` | ¿me ayudas?, te llamo | `g:direct-objects` 72 |
+| `p:time-sequence-basic` | 32 | u04 d4 | `conn.sequence` | primero, luego, después, al final | `g:time-sequence` 246 |
+| `p:ya-todavia-basic` | 52 | u06 d5 | `conn.ya` | ya no, todavía (no) | `g:acabar-de-ya-todavia` 250 |
+| `p:cuando-basic` | 80 | u09 d5 | `conj.cuando.ind` | cuando + present for habits | `g:cuando-indicative` 160 |
+
+### New or moved chunks
+
+- **Session 14:** `c:tienes`, so *tener* works with every person before the boot verbs; `c:se-llama` (*mi hermano se llama Juan*).
+- **Session 16:** `c:que-es-esto` (moved from 60); `c:abierto-cerrado` (*abierto* is a participle); `c:voy-vas` (ir in the day-to-day unit).
+- **Session 18:** `c:a-que-te-dedicas` (17 → 18).
+- **Session 21:** `c:a-mi-tambien`, taught with gustar.
+- **Session 22:** `c:hago-salgo-vengo`, since u03 teaches *salir* and *venir* as verbs (hago, salgo, vengo, pongo, traigo).
+- **Session 23:** `c:si-quieres`; `c:no-hay-nada`; `c:ahorita` (moved from 215).
+- **Session 81:** `c:normalmente`, which `p:frequency-scale` needs.
+
+### Other feature-map changes (`src/engine/tagger/nodemap.ts`)
+
+| Key | Was | Now |
+|---|---|---|
+| `peri.tener-que`, `peri.hay-que`, `peri.empezar-a`, `peri.terminar-de`, `nonfinite.subject` | `g:tener-que-hay-que` 82 / `g:verb-infinitive` 72 / `g:infinitive-subject` 374 | `g:verb-infinitive` 24 |
+| `peri.deber` | `g:deber-modal` 340 | `g:tener-que-hay-que` 82 |
+| `peri.soler`, `peri.volver-a`, `peri.dejar-de`, `peri.ponerse-a` | `g:verb-infinitive` 72 | their own patterns: `p:soler-inf` 80, `p:volver-a-inf` 110, `p:dejar-de-inf` 100, `p:ponerse-a-inf` 249. They would otherwise have become legal at 24. |
+| `reflexive.meaning` (quedarse, acordarse, dormirse…) | `g:se-meaning-change` B1 290 | `g:reflexive-routine` 76; the B1 node still teaches the contrasts |
+
+Seven full nodes now own no tagger key and stay as teaching (consolidation) nodes: `g:questions-prepositions`, `g:time-sequence`, `g:exclamations`, `g:cuando-indicative`, `g:se-meaning-change`, `g:infinitive-subject` and `g:deber-modal`.
+
+### Checked and left alone
+
+- **`g:yo-irregular` stays at 38.** u03 has no fifth Introduce slot. The *-go* forms ride as a chunk family from 22, *tengo* from 3 and *sé* from 11.
+- **`g:reflexive-routine` stays at 76,** in the routine unit. *me llamo* (1) and *se llama* (14) are chunks.
+- **`g:commands-usted` (117):** *disculpe, perdón, siga, tenga* are already chunks.
+- **`g:passive-ser`:** *soy casado/a* tags as ser + adjective, so there was no blocker.
+- **`g:estar-participle`:** *estoy cansado / ocupado / preocupado* and *está cerrado* already tag as estar + adjective (13). Only true participles such as *abierto* hit the node; `c:abierto-cerrado` covers the survival case.
+- ***por*** stays with `g:por-para-1`. Its fixed phrases (*por favor, por la mañana, por eso, por qué*) are never gated.
+
+### What the gate now allows (earliest session at which the grammar is legal; words gated separately)
+
+| Sentence | Before | After |
+|---|---|---|
+| *¿Quieres tomar algo?* | 216 | **24** |
+| *Vale tiene que trabajar el sábado.* | 82 | **24** |
+| *¿Tienes hermanos?* | 22 | **14** |
+| *Mi hermana es muy simpática.* | 63 | **15** |
+| *Vale está cansada.* | 40 | **15** |
+| *Este café es muy bueno.* | 63 | **14** |
+| *¿Qué es eso?* | 59 | **16** |
+| *¿Con quién vives?* | 354 | **18** |
+| *¿Por qué estudias español?* | 354 | **18** |
+| *A mí también. ¿Y a ti?* | 130 | **21** |
+| *Salgo a las seis.* | 38 | **22** |
+| *No hay nadie.* | 69 | **23** |
+| *¡Qué bonito!* | 206 | **23** |
+| *Bailar es muy chévere.* | 374 | **24** |
+| *Este tinto es para Vale.* | 164 | **25** |
+| *Si quieres, vamos mañana.* | 154 | **23** |
+| *¿Me ayudas?* | 92 | **30** |
+| *Mi hermano se llama Juan.* | 76 | **14** |
+| *¿Vas al centro?* | 25 | **16** |
+| *Primero fui al banco y luego al café.* | 246 | **32** |
+| *Todavía trabajo aquí.* | 250 | **52** |
+| *¿Qué estás haciendo?* | 78 | **69** |
+| *No lo conozco.* | 92 | **72** |
+| *Antes de dormir, leo.* | 156 | **78** |
+| *Cuando llego a casa, me ducho.* | 160 | **80** |
+| *Normalmente me levanto a las seis.* | 236 | **81** |
+| *Me quedo en casa.* | 290 | **76** |
+| *Debes descansar.* | 340 | **82** |
+| *Para mí, un tinto.* | 130 | **92** |
+
+### Follow-ups
+
+1. **Recompute requires.** Run `npm run gate -- --fix` to recompute the bank, chapter, scene and writing requires (the remapping raises the mismatches from 966 to 1,156). Legality is unchanged at 16 errors: the same sentences, with *luego* now reported against `p:time-sequence-basic`. No new legality error or warning appeared.
+2. **Write the missing scripts.** Written units now name focus nodes that have no teaching script: `g:adjective-agreement`, `g:verb-infinitive`, and the patterns `p:quantifiers-basic`, `p:possessives-basic`, `p:demonstratives-basic`, `p:prep-questions-basic`, `p:exclamations-basic`, `p:indefinites-basic` and `p:para-inf`. Until they exist, the compiler teaches from bank examples and logs a script shortage.
+3. **Revise u01–u03 content.** It was written around the old gate:
+   - The `g:stem-boot` script says *¿Puedes el lunes?* and *Podemos a las diez*.
+   - The u03 bank has almost no *quiero / puedo + infinitive*.
+   - *muy / mi / este* sentences can now go well beyond the chunks.
+
+   A revision job for these is worth queueing.
+4. **Recompute quotas.** Unit quotas were computed for the old grammar counts (40 sentences per grammar point): u02 and u03 each need +40, and u16 and u17 each need −40. The quota pass should recompute them.
+5. **Fix the B2/C1 rhythm bug (not touched here).** In u42–u60 some mid-unit Output days list the unit's next grammar point before its Introduce day. For example, u42 day 5 lists `g:softening`, which is introduced on day 6, so the gate counts it as taught one session early.
+
 ## Where this map departs from SEQ and BLUEPRINT, and why
 
 1. **Latin American past tenses (overrules SEQ).**
@@ -189,7 +333,7 @@ Units 52–60 · sessions 504–593 (90 sessions)
    - SEQ's perfecto/indefinido contrast lesson is replaced by `x:pret-perfecto-latam`. Spain's "today" past is recognition-only at u51 (`g:spain-pasts`).
 2. **All three pasts are in A1, though the PCIC puts them at A2.** They are marked `teaching_choice` on the nodes, 48 grammar nodes in all. The plan asked for this so learners can tell a story by week 5. Chunks (*fui, comí, era, ¿ya comiste?*) carry the past from session 7.
 3. **The future is taught through guessing.**
-   - *Ir a* is the everyday future from session 25, unpacked from a session-6 chunk.
+   - *Ir a* is the everyday future from session 26, unpacked from a session-6 chunk.
    - The *-ré* forms arrive at 184 through conjecture (*¿Dónde estará Simón?*), then promises and forecasts (186). SEQ taught them as a plain future at 175.
    - The conditional follows at 190. Its polite chunks (*me gustaría, ¿podría?*) are in use from session 3.
 4. **The subjunctive comes at 194, not ~175.** It enters at the end of A2 with one trigger (*quiero que*) and the forms learners already know from usted commands. The PCIC places it at B1, so it is marked `teaching_choice`. It lands later than the plan's target because A1 now holds every past tense (A1 = 133 sessions, against SEQ's 107). The full set of triggers runs through B1 in BLUEPRINT's order: opinion/doubt, emotion, influence, *cuando*, relatives.
@@ -212,7 +356,7 @@ Units 52–60 · sessions 504–593 (90 sessions)
     - SEQ made 125 lessons optional, including about 70 C1 notion lessons and 38 B2 notion lessons. Here every lesson was triaged on its own merits, and all but 10 feed at least one node.
     - The B1 emotion run keeps SEQ's four hubs as can-dos, but every emotion frame is its own pattern (*me da rabia que, me pone nervioso, estar harto de, no soporto que*).
 13. **BLUEPRINT's AI chat and outside-listening pieces are replaced** by scripted scenes (108 of them) and graded story chapters (219), per the standing decision.
-14. **Fewer grammar nodes than the brief's 200–250.** There are 172, and the cause is the rhythm rules: one point per Introduce day, never on consecutive days, each followed by a Drill. Within those rules, 9–10-session units hold three points, and B2/C1 hold two or three. Finer distinctions live as patterns: 640 of them, over the 400–600 target, because every frame that teaches something was kept. See the decisions below.
+14. **Fewer grammar nodes than the brief's 200–250.** There are 172, and the cause is the rhythm rules: one point per Introduce day, never on consecutive days, each followed by a Drill. Within those rules, 9–10-session units hold three points, and B2/C1 hold two or three. Finer distinctions live as patterns: 650 of them, over the 400–600 target, because every frame that teaches something was kept. See the decisions below.
 15. **Some A2 Patterns days became Input days.** In u18, u20, u21, u23 and u25 the miners found fewer than two A2 frames, so those days carry more story and more words instead. A2 is chunk-heavy (92 chunks), and that is where its formulas live.
 
 ## Per-node notion triage
@@ -263,11 +407,12 @@ About 15 Spain-only idioms with no Latin American equivalent were dropped. Each 
 ## Decisions for Matthew
 
 1. **Grammar density: 172 nodes or ~210?** Reaching the brief's 200–250 means putting four Introduce days into some A2/B1 units (I-D-I-D-In-I-D-I-D-O). That is denser than BLUEPRINT's two a week. I recommend keeping 172 and letting patterns carry the fine grain.
-2. **A1 runs to 133 sessions**, about 19 weeks at one session a day, against the ~16-week target. It is long because the past tenses moved in. The simulator's "do another" rate decides whether this is acceptable. If not, the cheapest cut is the six A1 Patterns days (u05, u07, u09, u10, u12, u13): fold them into neighbouring days, saving 6 sessions.
-3. **When the subjunctive starts:** the end of A2 (194, as mapped) or the opening of B1 (264, matching the PCIC)?
-4. **Volume:** 640 patterns and 94 contrasts, both over target. Trim to about 550 by merging second-tier B2/C1 formal and emotion frames, or keep them all?
-5. **The story:** Don Hernando dies in u57 (C1, "Emotion at native pitch"), the week his memoir goes to print. Tomás and Vale are a slow burn: an almost-kiss at u40, a fight at u50, and only a hint at u60. Are both OK?
-6. **Colombian items flagged by the miners for a native check:**
+2. **Units 2 and 3 now have four grammar points and no review day** (pull-forward pass). Reviews still open every session; the alternative was lengthening A1, which would have shifted every session number and the lexeme priorities with it. Say if you would rather have the review days back at +2 sessions.
+3. **A1 runs to 133 sessions**, about 19 weeks at one session a day, against the ~16-week target. It is long because the past tenses moved in. The simulator's "do another" rate decides whether this is acceptable. If not, the cheapest cut is the six A1 Patterns days (u05, u07, u09, u10, u12, u13): fold them into neighbouring days, saving 6 sessions.
+4. **When the subjunctive starts:** the end of A2 (194, as mapped) or the opening of B1 (264, matching the PCIC)?
+5. **Volume:** 650 patterns and 94 contrasts, both over target. Trim to about 550 by merging second-tier B2/C1 formal and emotion frames, or keep them all?
+6. **The story:** Don Hernando dies in u57 (C1, "Emotion at native pitch"), the week his memoir goes to print. Tomás and Vale are a slow burn: an almost-kiss at u40, a fight at u50, and only a hint at u60. Are both OK?
+7. **Colombian items flagged by the miners for a native check:**
    - *de pronto* (= maybe)
    - *correr la cita*
    - *alcanzar a + infinitive*

@@ -31,7 +31,9 @@
    "type": "drill",
    "focus": [
     "g:present-er-ir",
-    "g:present-ar"
+    "g:present-ar",
+    "p:quantifiers-basic",
+    "p:possessives-basic"
    ],
    "chunks": [
     "c:que-mas",
@@ -69,11 +71,14 @@
    "type": "drill",
    "focus": [
     "g:estar-location-states",
-    "g:present-er-ir"
+    "g:present-er-ir",
+    "p:demonstratives-basic"
    ],
    "chunks": [
     "c:con-mucho-gusto",
-    "c:quiubo"
+    "c:quiubo",
+    "c:tienes",
+    "c:se-llama"
    ],
    "lexemes": [
     "l:abrir",
@@ -83,11 +88,9 @@
    ]
   },
   {
-   "type": "input",
+   "type": "introduce",
    "focus": [
-    "p:tener-hambre",
-    "p:senor-don-article",
-    "p:bien-mal-vs-bueno-malo"
+    "g:adjective-agreement"
    ],
    "chunks": [],
    "lexemes": [
@@ -111,11 +114,18 @@
    "chapter": "ch004"
   },
   {
-   "type": "introduce",
+   "type": "drill",
    "focus": [
-    "g:questions"
+    "g:adjective-agreement",
+    "g:estar-location-states",
+    "p:tener-hambre",
+    "p:senor-don-article"
    ],
-   "chunks": [],
+   "chunks": [
+    "c:que-es-esto",
+    "c:abierto-cerrado",
+    "c:voy-vas"
+   ],
    "lexemes": [
     "l:enfermo",
     "l:tranquilo",
@@ -126,16 +136,11 @@
    ]
   },
   {
-   "type": "drill",
+   "type": "introduce",
    "focus": [
-    "g:questions",
-    "g:estar-location-states",
-    "p:question-word-order",
-    "x:tener-estar-states"
+    "g:questions"
    ],
-   "chunks": [
-    "c:a-que-te-dedicas"
-   ],
+   "chunks": [],
    "lexemes": [
     "l:dedicar",
     "l:irse",
@@ -144,25 +149,31 @@
    ]
   },
   {
+   "type": "drill",
+   "focus": [
+    "g:questions",
+    "g:adjective-agreement",
+    "p:question-word-order",
+    "p:prep-questions-basic",
+    "p:bien-mal-vs-bueno-malo",
+    "x:tener-estar-states"
+   ],
+   "chunks": [
+    "c:a-que-te-dedicas"
+   ],
+   "lexemes": []
+  },
+  {
    "type": "output",
    "focus": [
     "g:present-er-ir",
     "g:estar-location-states",
+    "g:adjective-agreement",
     "g:questions"
    ],
    "chunks": [],
    "lexemes": [],
    "scene": "sc-u02-a"
-  },
-  {
-   "type": "review",
-   "focus": [
-    "g:present-er-ir",
-    "g:estar-location-states",
-    "g:questions"
-   ],
-   "chunks": [],
-   "lexemes": []
   }
  ],
  "storyArc": "Vale walks Tomás through a normal day at the café: she opens at six, bakes, serves, does the accounts Rosa never did. Don Hernando arrives at seven every morning, asks Tomás where he lives, what he does and why he talks \"like a news presenter\". Tomás is staying at a hostel and says he works in software. What he does not say is his plan: sell the café quickly and fly home. On Friday Vale overhears him on the phone with an estate agent.",
