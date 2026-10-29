@@ -1,0 +1,235 @@
+{
+  "id": "sc-u17-c",
+  "unit": "u17",
+  "title": "Santa Fe on Sunday",
+  "brief": "You're Tomás. Don Hernando has bought tickets for Sunday's Santa Fe match at El Campín, and he wants everyone there. You can't go, so say no nicely and find a better plan. He's older than you and uses usted, so use usted with him.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, el domingo juega Santa Fe en El Campín. Ya tengo cuatro boletas. ¿Usted viene?",
+      "npcEn": "Tomás, on Sunday Santa Fe is playing at El Campín. I already have four tickets. Are you coming?",
+      "intent": "Say that sounds good, and ask what time the match is.",
+      "accept": [
+        "Me parece bien. ¿A qué hora es el partido?",
+        "Me encantaría. ¿A qué hora es el partido?",
+        "Me parece perfecto. ¿Y el partido es a qué hora?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "es el partido|el partido es",
+          "flags": "i",
+          "label": "when an event happens: es (¿a qué hora es el partido?)"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "p:event-ser-en",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "A las tres y media. Una boleta para usted, una para Vale, una para Mariana y una para mí.",
+      "npcEn": "At half past three. One ticket for you, one for Vale, one for Mariana and one for me.",
+      "intent": "Say sorry, the thing is you work until three on Sundays.",
+      "accept": [
+        "Qué pena, es que los domingos trabajo hasta las tres.",
+        "Qué pena. Es que los domingos trabajo en el café hasta las tres.",
+        "Lo siento, es que los domingos trabajo hasta las tres."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bes que\\b",
+          "flags": "i",
+          "label": "saying no nicely: qué pena, es que..."
+        },
+        {
+          "type": "verbForm",
+          "inf": "trabajar",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I work: trabajo"
+        }
+      ],
+      "focus": "p:refuse-es-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Ay, Tomás! Vale tampoco puede, y Mariana tiene una cita. ¿Y ahora qué hacemos?",
+      "npcEn": "Oh, Tomás! Vale can't either, and Mariana has a date. So what do we do now?",
+      "intent": "Suggest watching the match at the café instead.",
+      "accept": [
+        "¿Qué tal si vemos el partido en el café?",
+        "Bueno, ¿qué tal si lo vemos aquí, en el café?",
+        "¿Y si vemos el partido en el café?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "qu[eé] tal si|¿y si",
+          "flags": "i",
+          "label": "how about...?: ¿qué tal si...?"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "p:que-tal-si",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿En el café? Pero cuando juega Santa Fe, yo grito mucho. Y Simón grita conmigo.",
+      "npcEn": "In the café? But when Santa Fe plays, I shout a lot. And Simón shouts with me.",
+      "intent": "Say it doesn't matter: when you watch football, you shout too.",
+      "accept": [
+        "No importa. Cuando veo fútbol, yo también grito.",
+        "No importa, cuando veo fútbol, grito también.",
+        "No importa. Cuando veo un partido, yo también grito mucho."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cuando veo",
+          "flags": "i",
+          "label": "when I watch: cuando veo (present, because it happens every time)"
+        }
+      ],
+      "focus": "g:cuando-indicative",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bueno, ¿y las cuatro boletas? Ya las compré.",
+      "npcEn": "Well, and the four tickets? I already bought them.",
+      "intent": "Suggest he give them to his grandchildren.",
+      "accept": [
+        "¿Por qué no se las da a sus nietos?",
+        "¿Se las puede dar a sus nietos?",
+        "Se las puede regalar a sus nietos, ¿no?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse las\\b",
+          "flags": "i",
+          "label": "give them to them: se las da (le turns into se before las)"
+        }
+      ],
+      "focus": "g:double-pronouns",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Excelente idea! Entonces el domingo, partido en el café. Si gana Santa Fe, yo invito los tintos.",
+      "npcEn": "Excellent idea! So on Sunday, match at the café. If Santa Fe wins, the tintos are on me.",
+      "intent": "Agree, and say that if Santa Fe loses, they're on you.",
+      "accept": [
+        "Me parece bien. Y si pierde Santa Fe, invito yo.",
+        "Listo. Si pierde Santa Fe, yo invito.",
+        "Perfecto. Y si Santa Fe pierde, invito yo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi (santa fe )?pierde",
+          "flags": "i",
+          "label": "if they lose: si pierde (present after si)"
+        }
+      ],
+      "focus": "g:si-present",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-que-hora",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:compre-trabaje",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:lo-siento-pero-no-puedo",
+    "c:me-encantaria",
+    "c:me-parece-bien",
+    "c:no-cierto",
+    "c:no-se",
+    "c:que-hora-es",
+    "c:que-pena",
+    "c:tengo",
+    "c:tienes",
+    "c:trabajo-en",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:aquí",
+    "l:bien",
+    "l:boleta",
+    "l:bueno",
+    "l:café",
+    "l:cita",
+    "l:comprar",
+    "l:dar",
+    "l:darse",
+    "l:domingo",
+    "l:encantar",
+    "l:excelente",
+    "l:fútbol",
+    "l:ganar",
+    "l:gritar",
+    "l:hacer",
+    "l:hora",
+    "l:idea",
+    "l:importar",
+    "l:invitar",
+    "l:jugar",
+    "l:listo",
+    "l:nieto",
+    "l:parecer",
+    "l:partido",
+    "l:partir",
+    "l:pena",
+    "l:perder",
+    "l:perfecto",
+    "l:poder",
+    "l:qué",
+    "l:regalar",
+    "l:sentir",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:venir",
+    "l:ver",
+    "p:aqui-ahi-alla",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:event-ser-en",
+    "p:masculine-plural-mixed",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:que-tal-si",
+    "p:question-word-order",
+    "p:tambien-tampoco",
+    "p:telling-time"
+  ]
+}

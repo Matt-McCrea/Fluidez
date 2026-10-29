@@ -1,0 +1,245 @@
+{
+  "id": "sc-u17-a",
+  "unit": "u17",
+  "title": "Three steps by Friday",
+  "brief": "You're Tomás. Mariana drops into the café with an invitation to a salsa night on Friday, and you haven't danced since you were a kid. Say yes, set the conditions, and get some help. She's a friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, el viernes hay una noche de salsa en Chapinero. Te invito. ¿Tú bailas?",
+      "npcEn": "Tomás, on Friday there's a salsa night in Chapinero. I'm inviting you. Do you dance?",
+      "intent": "Say you'd love to, but that when you were a kid you didn't dance.",
+      "accept": [
+        "Me encantaría, pero cuando era niño no bailaba.",
+        "Me encantaría. Pero cuando era niño, nunca bailaba salsa.",
+        "¡Me encantaría! Pero no bailo bien. Cuando era niño, no bailaba."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cuando era niño",
+          "flags": "i",
+          "label": "when I was a kid: cuando era niño"
+        },
+        {
+          "type": "verbFormAny",
+          "inf": "bailar",
+          "tense": "imperfecto",
+          "label": "what you used to do: bailaba"
+        }
+      ],
+      "focus": "g:cuando-indicative",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Tranquilo. Si aprendes a bailar salsa antes del viernes, vienes conmigo.",
+      "npcEn": "Relax. If you learn to dance salsa before Friday, you come with me.",
+      "intent": "Say that sounds good, and ask where the salsa night is.",
+      "accept": [
+        "Me parece bien. ¿Dónde es la noche de salsa?",
+        "Listo. ¿Y dónde es la rumba?",
+        "Me parece perfecto. ¿Dónde es?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "d[oó]nde es\\b",
+          "flags": "i",
+          "label": "where an event happens: ¿dónde es? (es, not está, for events)"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "x:ser-event-estar-location",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Es en una discoteca de la calle 60, a las nueve. ¿Y si no aprendes?",
+      "npcEn": "It's at a club on Calle 60, at nine. And if you don't learn?",
+      "intent": "Say that if you don't learn, you'll take her out to dinner.",
+      "accept": [
+        "Si no aprendo, te invito a comer.",
+        "Bueno, si no aprendo, te invito a comer.",
+        "Si no aprendo, yo te invito a comer el sábado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi no aprendo\\b",
+          "flags": "i",
+          "label": "if I don't learn: si no aprendo (present after si)"
+        }
+      ],
+      "focus": "g:si-present",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Perfecto! Hoy compro las entradas. ¿Te mando la entrada al celular?",
+      "npcEn": "Perfect! I'm buying the tickets today. Shall I send you the ticket on your phone?",
+      "intent": "Say yes, and ask her to send it to you today.",
+      "accept": [
+        "Sí, ¿me la mandas hoy?",
+        "Sí, por favor. ¿Me la mandas hoy?",
+        "Claro. Me la mandas hoy, ¿listo?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme la mandas\\b",
+          "flags": "i",
+          "label": "send it to me: me la mandas (me first, then la)"
+        }
+      ],
+      "focus": "g:double-pronouns",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Listo. Oye, ¿y cómo vas a aprender salsa en tres días?",
+      "npcEn": "Done. Hey, and how are you going to learn salsa in three days?",
+      "intent": "Say you don't know, and ask why she doesn't teach you now.",
+      "accept": [
+        "No sé. ¿Por qué no me enseñas ahora?",
+        "Ay, no sé. ¿Por qué no me enseñas ahora?",
+        "Uy, no sé. ¿Por qué no me enseñas tú ahora?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "por qu[eé] no\\b",
+          "flags": "i",
+          "label": "why don't you...?: ¿por qué no...?"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "p:por-que-no",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Ahora no, tengo una reunión. Pero mira: cuando no sé un baile, miro clases en YouTube.",
+      "npcEn": "Not now, I've got a meeting. But look: when I don't know a dance, I watch lessons on YouTube.",
+      "intent": "Say that's an excellent idea, thank her, and confirm: so, see you on Friday.",
+      "accept": [
+        "Excelente idea. Gracias. Entonces nos vemos el viernes.",
+        "Me parece una idea excelente. Gracias, Mariana. Entonces nos vemos el viernes.",
+        "Perfecto, gracias. Entonces quedamos el viernes, ¿no?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "entonces",
+          "label": "so, then: entonces"
+        }
+      ],
+      "focus": "p:entonces-quedamos",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:cuando-era-nino",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:me-encantaria",
+    "c:me-parece-bien",
+    "c:no-cierto",
+    "c:no-se",
+    "c:oiga-oye",
+    "c:oye-mira",
+    "c:por-favor",
+    "c:tengo",
+    "c:tranquilo",
+    "c:voy-vas",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:parecer-quedar",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:antes",
+    "l:aprender",
+    "l:bailar",
+    "l:baile",
+    "l:bien",
+    "l:bueno",
+    "l:calle",
+    "l:celular",
+    "l:claro",
+    "l:clase",
+    "l:comer",
+    "l:comprar",
+    "l:cómo",
+    "l:discoteca",
+    "l:día",
+    "l:dónde",
+    "l:encantar",
+    "l:enseñar",
+    "l:entrada",
+    "l:excelente",
+    "l:favor",
+    "l:hoy",
+    "l:idea",
+    "l:invitar",
+    "l:ir",
+    "l:listo",
+    "l:mandar",
+    "l:mirar",
+    "l:niño",
+    "l:noche",
+    "l:oír",
+    "l:parecer",
+    "l:perfecto",
+    "l:quedar",
+    "l:qué",
+    "l:reunión",
+    "l:rumba",
+    "l:saber",
+    "l:salsa",
+    "l:ser",
+    "l:sábado",
+    "l:tener",
+    "l:tranquilo",
+    "l:venir",
+    "l:ver",
+    "l:viernes",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:frequency-scale",
+    "p:ir-venir",
+    "p:me-te-nos-objects",
+    "p:nos-vemos-a-las",
+    "p:por-que-no",
+    "p:prep-questions-basic",
+    "p:question-word-order",
+    "p:street-names",
+    "p:te-invito-a",
+    "p:telling-time"
+  ]
+}

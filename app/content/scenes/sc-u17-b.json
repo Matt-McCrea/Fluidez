@@ -1,0 +1,235 @@
+{
+  "id": "sc-u17-b",
+  "unit": "u17",
+  "title": "Forty people in Medellín",
+  "brief": "You're Tomás. Vale is icing a cake at the café when she asks about your plans for the middle of November. Accept her invitation, sort out the trip, and survive a small surprise. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, ¿qué planes tienes el sábado 15 de noviembre?",
+      "npcEn": "Tomás, what plans do you have for Saturday the 15th of November?",
+      "intent": "Say you don't have any plans yet, and ask why.",
+      "accept": [
+        "Todavía no tengo planes. ¿Por qué?",
+        "No tengo planes. ¿Por qué?",
+        "No, todavía no tengo planes. ¿Por qué?"
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "I don't have plans: no tengo planes"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "c:que-plan",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mi hermana se casa en diciembre, y el 15 de noviembre hay una fiesta para la familia en Medellín. Te invito. Mi mamá cocina para cuarenta personas.",
+      "npcEn": "My sister is getting married in December, and on the 15th of November there's a party for the family in Medellín. I'm inviting you. My mom is cooking for forty people.",
+      "intent": "Say you'd love to, and ask how long the trip to Medellín takes.",
+      "accept": [
+        "¡Me encantaría! ¿Cuánto dura el viaje a Medellín?",
+        "Me encantaría. ¿Cuánto dura el viaje en bus?",
+        "Claro, me encantaría. ¿Y cuánto dura el viaje?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cu[aá]nto dura",
+          "flags": "i",
+          "label": "how long it takes: ¿cuánto dura?"
+        }
+      ],
+      "focus": "p:durar-durante",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Nueve horas en bus. Si quieres, vamos en avión. Dura una hora, pero es más caro.",
+      "npcEn": "Nine hours by bus. If you want, we go by plane. It takes an hour, but it's more expensive.",
+      "intent": "Say that if the plane is expensive, you'd rather go by bus.",
+      "accept": [
+        "Si el avión es caro, prefiero ir en bus.",
+        "Si el avión es muy caro, prefiero el bus.",
+        "Prefiero ir en bus si el avión es caro."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi el avi[oó]n es\\b",
+          "flags": "i",
+          "label": "if the plane is expensive: si el avión es caro (present after si)"
+        }
+      ],
+      "focus": "g:si-present",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Bueno, otra cosa. Mi familia cree que tú eres mi novio. Cuando hablo de ti, mi mamá está feliz.",
+      "npcEn": "Well, another thing. My family thinks you're my boyfriend. When I talk about you, my mom is happy.",
+      "intent": "Laugh, and say that when you talk about her, your dad thinks the same.",
+      "accept": [
+        "Jaja. Cuando hablo de ti, mi papá cree lo mismo.",
+        "Jaja, y cuando hablo de ti, mi papá cree lo mismo.",
+        "Cuando hablo de ti, mi papá cree lo mismo. Jaja."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cuando hablo de ti",
+          "flags": "i",
+          "label": "when I talk about you: cuando hablo de ti (present, because it happens every time)"
+        }
+      ],
+      "focus": "g:cuando-indicative",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Ay, qué familias! Entonces, ¿vienes? Yo pago los pasajes hoy, y tú me das la plata después.",
+      "npcEn": "Oh, families! So, are you coming? I'll pay for the tickets today, and you give me the money later.",
+      "intent": "Say yes, you're going, and that you'll give it to her tomorrow.",
+      "accept": [
+        "Sí, voy. Mañana te la doy.",
+        "Listo, voy. Te la doy mañana.",
+        "Sí, claro. Te la doy mañana, ¿listo?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bte la doy\\b",
+          "flags": "i",
+          "label": "I'll give it to you: te la doy (te first, then la for la plata)"
+        }
+      ],
+      "focus": "g:double-pronouns",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Perfecto. Ah, y mi hermana quiere saber: ¿bailas salsa?",
+      "npcEn": "Perfect. Oh, and my sister wants to know: do you dance salsa?",
+      "intent": "Say you're learning, and ask her to let you know what time the party is.",
+      "accept": [
+        "Estoy aprendiendo. Me avisas la hora de la fiesta, ¿listo?",
+        "Todavía no, pero estoy aprendiendo. Me avisas la hora, ¿listo?",
+        "Estoy aprendiendo con Mariana. Me avisas la hora de la fiesta."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme avisas\\b",
+          "flags": "i",
+          "label": "let me know: me avisas"
+        }
+      ],
+      "focus": "c:me-avisas",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:me-avisas",
+    "c:me-encantaria",
+    "c:que-plan",
+    "c:si-quieres",
+    "c:tengo",
+    "c:tienes",
+    "c:todavia-no",
+    "c:voy-vas",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:aprender",
+    "l:avisar",
+    "l:avión",
+    "l:bailar",
+    "l:bueno",
+    "l:bus",
+    "l:caro",
+    "l:casarse",
+    "l:claro",
+    "l:cocinar",
+    "l:cosa",
+    "l:creer",
+    "l:cuánto",
+    "l:dar",
+    "l:después",
+    "l:diciembre",
+    "l:durar",
+    "l:encantar",
+    "l:estar",
+    "l:familia",
+    "l:feliz",
+    "l:fiesta",
+    "l:hablar",
+    "l:hermana",
+    "l:hora",
+    "l:hoy",
+    "l:invitar",
+    "l:ir",
+    "l:listo",
+    "l:mamá",
+    "l:mañana",
+    "l:noviembre",
+    "l:novio",
+    "l:pagar",
+    "l:papá",
+    "l:pasaje",
+    "l:perfecto",
+    "l:persona",
+    "l:plan",
+    "l:plata",
+    "l:preferir",
+    "l:querer",
+    "l:qué",
+    "l:saber",
+    "l:salsa",
+    "l:ser",
+    "l:sábado",
+    "l:tener",
+    "l:venir",
+    "l:viaje",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:durar-durante",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:prefieres-x-o-y",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:te-invito-a",
+    "p:time-sequence-basic",
+    "p:transport-en"
+  ]
+}
