@@ -1,0 +1,414 @@
+[
+  {
+    "id": "w-u06-01",
+    "unit": "u06",
+    "prompt": "Mariana, the journalist, is writing about La Candelaria and asks what your street was like in the old days. Answer her in two short sentences, using the past description form.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "imperfecto",
+        "person": "él/ella",
+        "label": "use era to say what it was like"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "La calle era muy tranquila. Había un café en la esquina.",
+    "focus": "g:imperfect-states",
+    "requires": [
+      "c:era",
+      "c:tranquilo",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:café",
+      "l:calle",
+      "l:esquina",
+      "l:ser",
+      "l:tranquilo",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u06-02",
+    "unit": "u06",
+    "prompt": "Vale asks what Rosa's café looked like when Hernando first came. Reply in two or three short sentences about the place, not about what happened.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "verbFormAny",
+        "inf": "haber",
+        "tense": "imperfecto",
+        "label": "say what there was (había)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "El café era pequeño. Había una radio y cuatro mesas.",
+    "focus": "g:imperfect-states",
+    "requires": [
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:café",
+      "l:mesa",
+      "l:pequeño",
+      "l:radio",
+      "l:ser"
+    ]
+  },
+  {
+    "id": "w-u06-03",
+    "unit": "u06",
+    "prompt": "Tomás wants to know about Hernando's youth. Hernando is an older man you call usted. Ask him one question about what he was like when he was young, using usted.",
+    "minWords": 5,
+    "maxWords": 16,
+    "constraints": [
+      {
+        "type": "question"
+      },
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "imperfecto",
+        "person": "él/ella",
+        "label": "use era (usted)"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "eres",
+          "tú",
+          "tienes"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Don Hernando, ¿cómo era usted de joven?",
+    "focus": "c:como-era",
+    "requires": [
+      "c:como-era",
+      "c:era",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:cómo",
+      "l:joven",
+      "l:ser"
+    ]
+  },
+  {
+    "id": "w-u06-04",
+    "unit": "u06",
+    "prompt": "A friend your age asks if the old jukebox still works at the café. Tell her it no longer works, in one or two short sentences.",
+    "minWords": 5,
+    "maxWords": 18,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bya no\\b",
+        "label": "say ya no (not any more)"
+      }
+    ],
+    "model": "Ya no funciona. Era de los años setenta.",
+    "focus": "c:ya-no",
+    "requires": [
+      "c:era",
+      "c:ya-no",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:año",
+      "l:funcionar",
+      "l:ser"
+    ]
+  },
+  {
+    "id": "w-u06-05",
+    "unit": "u06",
+    "prompt": "Simón the parrot's vet asks about your grandmother's café as a child. Write two short sentences about what it had in those days, starting with the time phrase en esa época.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "en esa época",
+        "label": "include en esa época"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto",
+        "label": "use the past description form"
+      }
+    ],
+    "model": "En esa época el café tenía una televisión. Mi abuela tenía treinta años.",
+    "focus": "c:en-esa-epoca",
+    "requires": [
+      "c:en-esa-epoca",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "l:abuela",
+      "l:año",
+      "l:café",
+      "l:televisión",
+      "l:tener",
+      "l:época",
+      "p:possessives-basic",
+      "p:tener-anos"
+    ]
+  },
+  {
+    "id": "w-u06-06",
+    "unit": "u06",
+    "prompt": "Your friend Vale asks why you were late to the bakery yesterday. Tell her in two short sentences what you had to do and that you could not get there.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "tener",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "use tuve (I had to)"
+      },
+      {
+        "type": "verbForm",
+        "inf": "poder",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "use pude or no pude"
+      },
+      {
+        "type": "negation",
+        "label": "say you could not"
+      }
+    ],
+    "model": "Tuve que ir al banco. No pude llegar a tiempo.",
+    "focus": "g:preterite-irregular-strong",
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "g:verb-infinitive",
+      "l:banco",
+      "l:ir",
+      "l:llegar",
+      "l:poder",
+      "l:tener",
+      "l:tiempo"
+    ]
+  },
+  {
+    "id": "w-u06-07",
+    "unit": "u06",
+    "prompt": "Mariana asks where you were on Saturday night. Answer her in two short sentences: where you were and how long you stayed.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "use estuve (I was)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Estuve en el café con Vale. Estuvimos allí dos horas.",
+    "focus": "g:preterite-irregular-strong",
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "l:allí",
+      "l:café",
+      "l:estar",
+      "l:hora"
+    ]
+  },
+  {
+    "id": "w-u06-08",
+    "unit": "u06",
+    "prompt": "Don Hernando, an older man you call usted, asks what you said to the notary. Reply politely in two short sentences, using usted for him.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "decir",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "use dije (I said)"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "eres",
+          "tienes",
+          "estuviste",
+          "dijiste"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Dije la verdad. Don Hernando, usted también estuvo allí.",
+    "focus": "g:preterite-irregular-strong",
+    "requires": [
+      "c:estuvo",
+      "c:la-verdad",
+      "g:estar-location-states",
+      "g:preterite-irregular-strong",
+      "l:allí",
+      "l:decir",
+      "l:estar",
+      "l:verdad"
+    ]
+  },
+  {
+    "id": "w-u06-09",
+    "unit": "u06",
+    "prompt": "Tomás texts you: when did your grandmother open her shop? Say how long ago in one or two short sentences. Use hace plus a number of years.",
+    "minWords": 5,
+    "maxWords": 20,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bhace (\\w+ ){0,2}(años|meses|semanas|días)\\b",
+        "label": "say how long ago with hace"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use a past action"
+      }
+    ],
+    "model": "Mi abuela abrió la tienda hace cuarenta años.",
+    "focus": "g:hace-ago",
+    "requires": [
+      "g:gender-articles",
+      "g:hace-ago",
+      "g:present-er-ir",
+      "g:preterite-er-ir",
+      "l:abrir",
+      "l:abuela",
+      "l:año",
+      "l:hacer",
+      "l:tienda",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u06-10",
+    "unit": "u06",
+    "prompt": "Vale asks when you arrived in Bogotá. Answer her in two short sentences: say how long ago you came and what you did first.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bhace \\w+ (semanas|meses|años|días)\\b",
+        "label": "say how long ago with hace"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use a past action"
+      }
+    ],
+    "model": "Vine hace dos semanas. Primero estuve con un amigo.",
+    "focus": "g:hace-ago",
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:hace-ago",
+      "g:present-er-ir",
+      "g:preterite-irregular-strong",
+      "l:amigo",
+      "l:estar",
+      "l:hacer",
+      "l:semana",
+      "l:venir",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u06-11",
+    "unit": "u06",
+    "prompt": "Fill in the form at the notary's office: say where and in what year you were born, then where you live now. Write two short sentences.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "nacer",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "use nací (I was born)"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(19|20)\\d\\d\\b",
+        "label": "include the year as numbers"
+      }
+    ],
+    "model": "Nací en 1990 en Toronto. Ahora vivo en Bogotá.",
+    "focus": "p:naci-en",
+    "requires": [
+      "c:vivo-en",
+      "g:present-er-ir",
+      "g:preterite-er-ir",
+      "l:ahora",
+      "l:nacer",
+      "l:vivir"
+    ]
+  },
+  {
+    "id": "w-u06-12",
+    "unit": "u06",
+    "prompt": "A reader of Mariana's article asks about the old building on the corner. Tell him in two short sentences that the building is old and still there.",
+    "minWords": 6,
+    "maxWords": 22,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "antiguo",
+          "antigua",
+          "viejo",
+          "vieja"
+        ],
+        "label": "say the building is old"
+      },
+      {
+        "type": "containsWord",
+        "word": "todavía",
+        "label": "use todavía (still)"
+      }
+    ],
+    "model": "El edificio es muy antiguo. Todavía está en la esquina.",
+    "focus": "p:viejo-antiguo-mayor",
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:antiguo",
+      "l:edificio",
+      "l:esquina",
+      "l:estar",
+      "l:ser",
+      "p:quantifiers-basic",
+      "p:ya-todavia-basic"
+    ]
+  }
+]
