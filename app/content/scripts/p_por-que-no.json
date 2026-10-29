@@ -1,0 +1,83 @@
+{
+  "node": "p:por-que-no",
+  "hook": {
+    "line": "Tomás is exhausted from saying yes to everyone, and Vale has advice. In Spanish, the friendliest advice and the easiest proposals both start with why not.",
+    "es": "¿Por qué no descansas un rato?",
+    "en": "Why don't you rest for a while?"
+  },
+  "examples": [
+    { "es": "¿Por qué no vamos a Monserrate?", "en": "Why don't we go up Monserrate?" },
+    { "es": "¿Por qué no descansas un rato?", "en": "Why don't you rest for a while? (to a friend)" },
+    { "es": "¿Por qué no tomamos un tinto?", "en": "Why don't we have a coffee?" },
+    { "es": "¿Por qué no llamas a tu mamá?", "en": "Why don't you call your mom? (to a friend)" },
+    { "es": "¿Por qué no practicas con Mariana?", "en": "Why don't you practise with Mariana? (to a friend)" }
+  ],
+  "rule": "*¿Por qué no...?* plus the present isn't really asking why. It's a suggestion.\nWe form: a plan for both of you. *¿Por qué no vamos?*\nYou form: advice. *¿Por qué no descansas?*\n\nIt's softer than *tienes que*: it offers, it doesn't order.\n\nWatch the tense. In the past, it's a real question, often a complaint: *¿Por qué no viniste?* Why didn't you come?\n\nAnd spell it as two words with an accent: *por qué*. *Porque* is the answer, because.",
+  "smallPrint": "Teachers file this under suggesting and giving advice: a question in form, a proposal in use.",
+  "readAndPick": [
+    { "es": "¿Por qué no vamos a Monserrate?", "options": ["Why don't you go up Monserrate?", "Why don't we go up Monserrate?"], "answer": 1 },
+    { "es": "¿Por qué no viniste?", "options": ["Why didn't you come?", "Why don't you come?"], "answer": 0 },
+    { "es": "¿Por qué no vienes el sábado?", "options": ["Why didn't you come on Saturday?", "Why don't you come on Saturday?"], "answer": 1 },
+    { "es": "¿Por qué no comemos aquí?", "options": ["Why don't they eat here?", "Why don't you eat here?", "Why don't we eat here?"], "answer": 2 },
+    { "es": "Tienes que descansar.", "options": ["You have to rest.", "Why don't you rest?"], "answer": 0 },
+    { "es": "¿Por qué no descansas un poco?", "options": ["You have to rest a bit.", "Why don't you rest a bit?"], "answer": 1 },
+    { "es": "¿Por qué no fuiste al partido?", "options": ["Why didn't you go to the match?", "Why don't we go to the match?"], "answer": 0 },
+    { "es": "¿Por qué no salimos esta noche?", "options": ["Why don't we go out tonight?", "Why didn't we go out tonight?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *vamos* or *fuimos* and type the whole sentence: ¿Por qué no ___ a Monserrate? (Why don't we go up Monserrate?)",
+      "answer": "¿Por qué no vamos a Monserrate?",
+      "accept": [],
+      "why": "A suggestion uses the present: *vamos*. *Fuimos* would ask why we didn't go."
+    },
+    {
+      "prompt": "Choose *por qué* or *porque* and type the whole sentence: ¿___ no tomamos un tinto?",
+      "answer": "¿Por qué no tomamos un tinto?",
+      "accept": [],
+      "why": "In the question it's two words with an accent: *por qué*."
+    },
+    {
+      "prompt": "Suggest to a friend: Why don't we have a coffee?",
+      "answer": "¿Por qué no tomamos un tinto?",
+      "accept": ["¿Por qué no tomamos un café?"],
+      "why": "We form for a shared plan: *tomamos*."
+    },
+    {
+      "prompt": "Advise a friend: Why don't you call your mom?",
+      "answer": "¿Por qué no llamas a tu mamá?",
+      "accept": [],
+      "why": "You form for advice: *llamas*."
+    },
+    {
+      "prompt": "Make it softer, as a suggestion: *Tienes que descansar.*",
+      "answer": "¿Por qué no descansas?",
+      "accept": ["¿Por qué no descansas un rato?", "¿Por qué no descansas un poco?"],
+      "why": "*Tienes que* sounds like an order; *¿Por qué no...?* offers the same idea as a friend."
+    },
+    {
+      "prompt": "Make it advice for your friend instead of a plan for both of you: *¿Por qué no comemos aquí?*",
+      "answer": "¿Por qué no comes aquí?",
+      "accept": [],
+      "why": "Only the ending changes: *comemos* is we, *comes* is you."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Porque no vamos a Monserrate?",
+      "right": "¿Por qué no vamos a Monserrate?",
+      "why": "Almost. The question is two words with an accent, *por qué*; *porque* is because."
+    },
+    {
+      "wrong": "¿Por qué no fuimos a Monserrate?",
+      "right": "¿Por qué no vamos a Monserrate?",
+      "why": "In the past it's a real question about something that didn't happen. To suggest, use the present."
+    },
+    {
+      "wrong": "¿Por qué no descansar un rato?",
+      "right": "¿Por qué no descansas un rato?",
+      "why": "Advice speaks to someone, so the verb needs their ending: *descansas*."
+    }
+  ],
+  "personal": "Give a friend one piece of real advice and propose one plan, both with *¿Por qué no...?*"
+}

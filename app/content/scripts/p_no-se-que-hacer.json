@@ -1,0 +1,84 @@
+{
+  "node": "p:no-se-que-hacer",
+  "hook": {
+    "line": "Salsa on Friday, football on Sunday, a party in Medellín, and only one Tomás. He's stuck, and Spanish has the exact words for being stuck.",
+    "es": "No sé qué hacer.",
+    "en": "I don't know what to do."
+  },
+  "examples": [
+    { "es": "No sé qué hacer.", "en": "I don't know what to do." },
+    { "es": "No sé si ir.", "en": "I don't know whether to go." },
+    { "es": "No sé dónde dejar el carro.", "en": "I don't know where to leave the car." },
+    { "es": "No sé qué ponerme para la fiesta.", "en": "I don't know what to wear to the party." },
+    { "es": "No sabía cómo decírselo.", "en": "I didn't know how to tell him." },
+    { "es": "No sé si cancelar la cita.", "en": "I don't know whether to cancel the date." }
+  ],
+  "rule": "This one copies English nicely: I don't know what to do is *no sé qué hacer*.\n*No sé* plus a question word plus the dictionary form of the verb.\n*qué*: what to\n*cómo*: how to\n*dónde*: where to\n*a quién*: who to\n*si*: whether to\n\nThe question words keep their accents: *qué*, *cómo*, *dónde*. Only *si* (whether) has none.\n\nEnglish needs to before the verb. Spanish doesn't: *hacer* already means to do.\n\nIt works with other people and the past too: *Vale no sabe qué ponerse*, *no sabía qué decir*.",
+  "smallPrint": "Teachers call this an indirect question with an infinitive. It only works when the person who doesn't know is the one who'd do it.",
+  "readAndPick": [
+    { "es": "No sé qué decir.", "options": ["I don't know what to say.", "I don't know how to say it."], "answer": 0 },
+    { "es": "No sé cómo decirlo.", "options": ["I don't know what to say.", "I don't know how to say it."], "answer": 1 },
+    { "es": "No sé si ir.", "options": ["I don't know where to go.", "I don't know whether to go."], "answer": 1 },
+    { "es": "No sé dónde comer.", "options": ["I don't know where to eat.", "I don't know whether to eat.", "I don't know what to eat."], "answer": 0 },
+    { "es": "No sabía qué hacer.", "options": ["I don't know what to do.", "I didn't know what to do."], "answer": 1 },
+    { "es": "Vale no sabe qué ponerse.", "options": ["I don't know what to wear.", "Vale doesn't know what to wear."], "answer": 1 },
+    { "es": "No sé a quién llamar.", "options": ["I don't know who to call.", "I don't know when to call."], "answer": 0 },
+    { "es": "No sé si llamarla.", "options": ["I don't know how to call her.", "I don't know whether to call her."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *qué* or *que* and type the whole sentence: No sé ___ hacer. (I don't know what to do.)",
+      "answer": "No sé qué hacer.",
+      "accept": [],
+      "why": "What to is a question word, so it keeps its accent: *qué*."
+    },
+    {
+      "prompt": "Choose *si* or *sí* and type the whole sentence: No sé ___ ir. (I don't know whether to go.)",
+      "answer": "No sé si ir.",
+      "accept": [],
+      "why": "Whether is *si*, with no accent."
+    },
+    {
+      "prompt": "Say: I don't know where to leave the car.",
+      "answer": "No sé dónde dejar el carro.",
+      "accept": [],
+      "why": "Where to is *dónde* plus the dictionary form: *dejar*."
+    },
+    {
+      "prompt": "Say: I don't know whether to cancel the date.",
+      "answer": "No sé si cancelar la cita.",
+      "accept": [],
+      "why": "Whether to is *si* plus the dictionary form, no extra word for to."
+    },
+    {
+      "prompt": "Put it in the past: *No sé qué decir.* (I didn't know what to say.)",
+      "answer": "No sabía qué decir.",
+      "accept": [],
+      "why": "Only *sé* changes, to *sabía*; the rest stays the same."
+    },
+    {
+      "prompt": "Make it about Tomás: *No sé qué hacer.*",
+      "answer": "Tomás no sabe qué hacer.",
+      "accept": [],
+      "why": "*Sé* becomes *sabe* for him; *hacer* never changes."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No sé que hacer.",
+      "right": "No sé qué hacer.",
+      "why": "Close. Here *qué* means what, so it needs its accent."
+    },
+    {
+      "wrong": "No sé dónde a comer.",
+      "right": "No sé dónde comer.",
+      "why": "English needs to; Spanish doesn't. *Comer* already means to eat."
+    },
+    {
+      "wrong": "No sé sí ir.",
+      "right": "No sé si ir.",
+      "why": "Whether is *si* with no accent. *Sí* means yes."
+    }
+  ],
+  "personal": "Think of a small decision you're stuck on right now and say it: *No sé si...* or *No sé qué...*"
+}

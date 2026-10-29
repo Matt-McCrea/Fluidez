@@ -1,0 +1,84 @@
+{
+  "node": "p:te-invito-a",
+  "hook": {
+    "line": "In Colombia, *te invito* isn't just come along. It means I'm paying. Learn it and you'll know exactly who reaches for the bill.",
+    "es": "Te invito a un tinto.",
+    "en": "Let me buy you a coffee."
+  },
+  "examples": [
+    { "es": "Te invito a un tinto.", "en": "Let me buy you a coffee." },
+    { "es": "Te invito a almorzar.", "en": "Let me take you out for lunch." },
+    { "es": "Don Hernando, lo invito a almorzar.", "en": "Don Hernando, let me take you out for lunch. (formal)" },
+    { "es": "¿Quieres venir a mi cumpleaños el sábado?", "en": "Do you want to come to my birthday party on Saturday?" },
+    { "es": "¿Te gustaría ir a bailar salsa?", "en": "Would you like to go salsa dancing?" },
+    { "es": "¿Quieres ir al partido conmigo?", "en": "Do you want to go to the match with me?" }
+  ],
+  "rule": "Three ways to invite:\n*Te invito a* plus a thing or a verb: *te invito a un tinto*, *te invito a almorzar*. In Colombia this means you pay.\n*¿Quieres venir a...?* plain and friendly.\n*¿Te gustaría* plus a verb? softer, more of an offer.\n\nUse *a* after *invito*, never *para*. For someone you call *usted*, swap *te* for *lo* (a man) or *la* (a woman): *lo invito*.\n\nTo answer: *Me encantaría* (I'd love to) or, kindly, *Será otro día* (another time).",
+  "smallPrint": "Teachers file this under inviting and asking what someone wants. *Gustaría* is a set phrase for now; the tense behind it comes later.",
+  "readAndPick": [
+    { "es": "Te invito a almorzar.", "options": ["Let me take you out for lunch.", "Will you take me out for lunch?"], "answer": 0 },
+    { "es": "¿Me invitas a un tinto?", "options": ["Let me buy you a coffee.", "Will you buy me a coffee?"], "answer": 1 },
+    { "es": "¿Te gustaría ir a bailar?", "options": ["I'd like to go dancing.", "Would you like to go dancing?"], "answer": 1 },
+    { "es": "Me gustaría ir a bailar.", "options": ["I'd like to go dancing.", "Would you like to go dancing?"], "answer": 0 },
+    { "es": "Don Hernando, lo invito a un tinto.", "options": ["Don Hernando, will you buy me a coffee?", "Don Hernando wants to buy you a coffee.", "Don Hernando, let me buy you a coffee."], "answer": 2 },
+    { "es": "¿Quieres venir a mi cumpleaños?", "options": ["Do you want to come to my birthday party?", "Do you want me to come to your birthday party?"], "answer": 0 },
+    { "es": "Vale me invitó a la fiesta de su hermana.", "options": ["I invited Vale to my sister's party.", "Vale invited me to her sister's party."], "answer": 1 },
+    { "es": "Me encantaría, pero no puedo.", "options": ["I'd love to, but I can't.", "Another time, then."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *a* or *para* and type the whole sentence: Te invito ___ un tinto.",
+      "answer": "Te invito a un tinto.",
+      "accept": [],
+      "why": "You invite someone *a* something: *te invito a*."
+    },
+    {
+      "prompt": "Tell a friend: Let me take you out for lunch.",
+      "answer": "Te invito a almorzar.",
+      "accept": [],
+      "why": "*Te invito a* plus a verb, and everyone knows you're paying."
+    },
+    {
+      "prompt": "Ask a friend: Do you want to come to my birthday party on Saturday?",
+      "answer": "¿Quieres venir a mi cumpleaños el sábado?",
+      "accept": ["¿Quieres venir el sábado a mi cumpleaños?"],
+      "why": "*¿Quieres venir a...?* is the plain, friendly way to invite."
+    },
+    {
+      "prompt": "Make it softer: *¿Quieres ir a bailar salsa?*",
+      "answer": "¿Te gustaría ir a bailar salsa?",
+      "accept": [],
+      "why": "*¿Te gustaría...?* turns the question into a gentle offer."
+    },
+    {
+      "prompt": "Make it formal, for don Hernando: *Te invito a un tinto.*",
+      "answer": "Lo invito a un tinto.",
+      "accept": ["Don Hernando, lo invito a un tinto."],
+      "why": "With *usted*, *te* becomes *lo* for a man."
+    },
+    {
+      "prompt": "Mariana asks: *¿Te gustaría ir a bailar salsa el viernes?* Say yes, warmly: I'd love to.",
+      "answer": "Me encantaría.",
+      "accept": ["Sí, me encantaría."],
+      "why": "*Me encantaría* is the warm yes to a *¿te gustaría?*"
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Te invito para un tinto.",
+      "right": "Te invito a un tinto.",
+      "why": "Almost. After *invitar* it's always *a*."
+    },
+    {
+      "wrong": "Yo invito tú a almorzar.",
+      "right": "Te invito a almorzar.",
+      "why": "The person you invite is *te*, and it goes before the verb."
+    },
+    {
+      "wrong": "¿Te gustas ir a bailar?",
+      "right": "¿Te gustaría ir a bailar?",
+      "why": "*Te gustas* means you like yourself. The invitation is *te gustaría*."
+    }
+  ],
+  "personal": "Invite someone you know to something real this week: *Te invito a...* if you're paying, *¿Quieres venir a...?* if you're not."
+}

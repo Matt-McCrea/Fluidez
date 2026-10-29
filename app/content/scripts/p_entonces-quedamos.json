@@ -1,0 +1,84 @@
+{
+  "node": "p:entonces-quedamos",
+  "hook": {
+    "line": "After ten messages about times and places, someone has to close the deal. In Colombia that someone starts with *entonces*.",
+    "es": "Entonces quedamos el sábado, ¿no?",
+    "en": "So we're meeting on Saturday, right?"
+  },
+  "examples": [
+    { "es": "Entonces quedamos el sábado, ¿no?", "en": "So we're meeting on Saturday, right?" },
+    { "es": "Entonces nos vemos a las ocho en el café.", "en": "So we'll see each other at eight at the café." },
+    { "es": "Entonces, ¿vienes o no?", "en": "So, are you coming or not? (to a friend)" },
+    { "es": "Tengo mucho trabajo, o sea que no puedo salir.", "en": "I've got loads of work, so I can't go out." },
+    { "es": "Vale está en Medellín, o sea que no viene el viernes.", "en": "Vale is in Medellín, so she's not coming on Friday." },
+    { "es": "O sea que no tienes boleta.", "en": "So you don't have a ticket. (to a friend)" }
+  ],
+  "rule": "Two ways to say so.\n\n*Entonces* opens a sentence to sum up or confirm a plan, often with *¿no?* at the end: *Entonces quedamos el sábado, ¿no?* On its own, *¿Entonces qué?* means so, what's the plan?\n\n*O sea que* comes after what was just said and draws the conclusion from it: *Tengo trabajo, o sea que no puedo.* It also works on what someone else said, often with a little surprise: *O sea que no vienes.*\n\nYou already know *así que*: same idea. The verbs after all three stay normal.\n\nOne trap: *entonces* is so, not and then. For one thing after another, use *y después*.",
+  "smallPrint": "Teachers call these consecutive connectors: words that introduce a result.",
+  "readAndPick": [
+    { "es": "Entonces quedamos el sábado, ¿no?", "options": ["So we're meeting on Saturday, right?", "Because we're meeting on Saturday.", "If we meet on Saturday."], "answer": 0 },
+    { "es": "No tengo plata, o sea que no voy.", "options": ["I'm not going because I have no money.", "I have no money, so I'm not going."], "answer": 1 },
+    { "es": "No voy porque no tengo plata.", "options": ["I'm not going because I have no money.", "I have no money, so I'm not going."], "answer": 0 },
+    { "es": "Entonces, ¿vienes o no?", "options": ["Then you came, or not?", "So, are you coming or not?"], "answer": 1 },
+    { "es": "O sea que no vienes.", "options": ["So you're not coming.", "Because you're not coming."], "answer": 0 },
+    { "es": "Mariana tiene una cita, o sea que no viene.", "options": ["Mariana has a date because she isn't coming.", "Mariana has a date, so she isn't coming.", "If Mariana has a date, she isn't coming."], "answer": 1 },
+    { "es": "Comimos y después fuimos a bailar.", "options": ["We ate, so we went dancing.", "We ate and then went dancing."], "answer": 1 },
+    { "es": "¿Entonces qué? ¿Vamos al concierto?", "options": ["So, what's the plan? Are we going to the concert?", "Why not? Shall we go to the concert?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *entonces* or *porque* and type the whole sentence: ___ quedamos el sábado, ¿no? (So we're meeting on Saturday, right?)",
+      "answer": "Entonces quedamos el sábado, ¿no?",
+      "accept": [],
+      "why": "To sum up and confirm a plan, start with *entonces*."
+    },
+    {
+      "prompt": "Choose *o sea que* or *porque* and type the whole sentence: Tengo mucho trabajo, ___ no puedo salir. (I've got loads of work, so I can't go out.)",
+      "answer": "Tengo mucho trabajo, o sea que no puedo salir.",
+      "accept": [],
+      "why": "The result comes second, so *o sea que*. *Porque* would make the work the result."
+    },
+    {
+      "prompt": "Confirm the plan with a friend: So we'll see each other at eight at the café.",
+      "answer": "Entonces nos vemos a las ocho en el café.",
+      "accept": ["Entonces nos vemos en el café a las ocho.", "Entonces nos vemos a las ocho en el café, ¿no?"],
+      "why": "*Entonces* at the start wraps up the plan."
+    },
+    {
+      "prompt": "Ask a friend: So, are you coming or not?",
+      "answer": "Entonces, ¿vienes o no?",
+      "accept": ["¿Entonces vienes o no?"],
+      "why": "*Entonces* in front asks for a final answer."
+    },
+    {
+      "prompt": "A friend says he has no ticket. Draw the conclusion: So you're not coming.",
+      "answer": "O sea que no vienes.",
+      "accept": [],
+      "why": "*O sea que* draws the conclusion from what someone just told you."
+    },
+    {
+      "prompt": "Flip it round with *o sea que*: *No puedo salir porque tengo mucho trabajo.*",
+      "answer": "Tengo mucho trabajo, o sea que no puedo salir.",
+      "accept": ["Tengo mucho trabajo, entonces no puedo salir.", "Tengo mucho trabajo, así que no puedo salir."],
+      "why": "*Porque* gives the reason; *o sea que* puts the reason first and the result second."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Comimos, entonces fuimos a bailar.",
+      "right": "Comimos y después fuimos a bailar.",
+      "why": "Careful. *Entonces* here sounds like the eating caused the dancing. For one thing after another, say *y después*."
+    },
+    {
+      "wrong": "Tengo mucho trabajo, porque no puedo salir.",
+      "right": "Tengo mucho trabajo, o sea que no puedo salir.",
+      "why": "*Porque* gives a reason, not a result. After the reason, the result needs *o sea que*."
+    },
+    {
+      "wrong": "O sea no tienes boleta.",
+      "right": "O sea que no tienes boleta.",
+      "why": "To draw the conclusion, keep the *que*: *o sea que*."
+    }
+  ],
+  "personal": "Close a real plan you have this week, the Colombian way: *Entonces...*, *¿no?*"
+}
