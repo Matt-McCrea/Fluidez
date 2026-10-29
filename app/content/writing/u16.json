@@ -1,0 +1,961 @@
+[
+  {
+    "id": "w-u16-01",
+    "unit": "u16",
+    "prompt": "You walk into a clothes shop in San Victorino. The assistant, a stranger you would call usted, asks how she can help. Answer her: say what you are looking for, name a colour and a size, and ask if she has it in another colour.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "chaqueta",
+          "camisa",
+          "pantalón",
+          "pantalones",
+          "vestido",
+          "falda",
+          "saco",
+          "suéter"
+        ],
+        "label": "name the piece of clothing"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(talla|número)\\b|\\btalla\\s+\\w+",
+        "label": "give a size"
+      },
+      {
+        "type": "question",
+        "label": "ask about another colour"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " puedes",
+          " tienes",
+          " quieres",
+          " eres",
+          " tu ",
+          " te "
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas tardes. Busco una chaqueta azul oscuro, talla M. ¿La tiene en otro color? Me gusta mucho, pero creo que me queda grande. ¿Me la puedo medir?",
+    "focus": "c:en-que-le-puedo-servir",
+    "requires": [
+      "c:creo-que",
+      "c:hola-buenos-dias",
+      "c:me-gusta",
+      "c:me-lo-puedo-medir",
+      "c:puedo",
+      "c:tienes",
+      "g:direct-objects",
+      "g:double-pronouns",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:azul",
+      "l:buena",
+      "l:buscar",
+      "l:chaqueta",
+      "l:color",
+      "l:creer",
+      "l:grande",
+      "l:gustar",
+      "l:medir",
+      "l:oscuro",
+      "l:poder",
+      "l:quedar",
+      "l:talla",
+      "l:tarde",
+      "l:tener",
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
+      "p:colour-claro-oscuro",
+      "p:el-azul",
+      "p:el-rojo-la-grande",
+      "p:otro-no-article",
+      "p:quantifiers-basic",
+      "p:talla-numero"
+    ]
+  },
+  {
+    "id": "w-u16-02",
+    "unit": "u16",
+    "prompt": "You need new shoes. Tell the shop assistant (a stranger, usted) your shoe size, say what colour you want, and ask if you can try them on.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bcalzo\\s+\\d+",
+        "label": "give your shoe size with calzo"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "negros",
+          "blancos",
+          "grises",
+          "verdes",
+          "azules",
+          "rojos",
+          "morados",
+          "amarillos",
+          "rosados"
+        ],
+        "label": "name a colour"
+      },
+      {
+        "type": "question",
+        "label": "ask to try them on"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " puedes",
+          " tienes",
+          " quieres",
+          " eres",
+          " tu ",
+          " te "
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas. Quiero unos zapatos negros, de cuero. Calzo 40. ¿Me los puedo medir? Los otros que probé me quedan pequeños, y estos me gustan más.",
+    "focus": "p:talla-numero",
+    "requires": [
+      "c:alo",
+      "c:puedo",
+      "c:quiero",
+      "g:adjective-agreement",
+      "g:demonstratives",
+      "g:direct-objects",
+      "g:double-pronouns",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "g:preterite-ar",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:buena",
+      "l:cuero",
+      "l:gustar",
+      "l:medir",
+      "l:negro",
+      "l:pequeño",
+      "l:poder",
+      "l:probar",
+      "l:quedar",
+      "l:querer",
+      "l:zapatos",
+      "p:gustar-mas-que",
+      "p:me-te-nos-objects",
+      "p:otro-no-article",
+      "p:talla-numero"
+    ]
+  },
+  {
+    "id": "w-u16-03",
+    "unit": "u16",
+    "prompt": "Vale is at home. Text her (someone your age): you saw some chairs for the café and want to buy them today. Say you want to go and see them together, and ask her to come.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b\\w+[aei]r(lo|la|los|las)\\b",
+        "label": "attach a pronoun to an infinitive (comprarlas, verlas)"
+      },
+      {
+        "type": "question",
+        "label": "ask her to come"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "silla",
+          "sillas"
+        ],
+        "label": "mention the chairs"
+      }
+    ],
+    "model": "Vale, vi unas sillas muy bonitas en San Victorino. Quiero comprarlas hoy, pero necesito tu opinión. ¿Puedes venir conmigo a verlas? Nos vemos a las tres.",
+    "focus": "g:object-pronoun-position",
+    "requires": [
+      "c:chao-nos-vemos",
+      "c:quiero",
+      "g:adjective-agreement",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:object-pronoun-position",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "g:preterite-er-ir",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:bonito",
+      "l:comprar",
+      "l:hoy",
+      "l:necesitar",
+      "l:opinión",
+      "l:poder",
+      "l:querer",
+      "l:silla",
+      "l:venir",
+      "l:ver",
+      "p:ir-venir",
+      "p:nos-vemos-a-las",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:request-ladder",
+      "p:telling-time"
+    ]
+  },
+  {
+    "id": "w-u16-04",
+    "unit": "u16",
+    "prompt": "Mariana sent you a photo and asked how you look. You tried on a red dress for a friend's party. Reply to her (a friend): say how it fits, say whether you like it, and say what you will do.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme\\s+queda",
+        "label": "say how it fits with me queda"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bme\\s+parece",
+        "label": "give an opinion with me parece"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "vestido",
+          "falda",
+          "blusa"
+        ],
+        "label": "mention the dress"
+      }
+    ],
+    "model": "Mariana, me probé el vestido rojo y me queda un poco grande. Me parece bonito, pero el verde me queda mejor. Creo que me llevo el verde.",
+    "focus": "g:parecer-quedar",
+    "requires": [
+      "c:creo-que",
+      "g:gender-articles",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "g:that-clauses",
+      "l:bonito",
+      "l:creer",
+      "l:grande",
+      "l:llevarse",
+      "l:mejor",
+      "l:parecer",
+      "l:probarse",
+      "l:quedar",
+      "l:rojo",
+      "l:verde",
+      "l:vestido",
+      "p:el-azul",
+      "p:el-rojo-la-grande",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:quedar-faltar-sobrar",
+      "p:talla-numero"
+    ]
+  },
+  {
+    "id": "w-u16-05",
+    "unit": "u16",
+    "prompt": "Write a short message to Mariana (a friend) about your day in San Victorino. Tell her what you think of the market and the shops, using at least one \"the most\" or \"the best\" phrase and one very-very word (with -ísimo).",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(el|la|los|las)\\s+(más|menos|mejor|mejores|peor|peores)\\b",
+        "label": "use \"the most / the best\" (el más…, la mejor…)"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\w+ísim[oa]s?\\b",
+        "label": "use one -ísimo word (baratísimo)"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mariana, fui a San Victorino. Es el mercado más grande de Bogotá y todo es baratísimo. La tienda de zapatos es la mejor del centro. Te recomiendo ir temprano.",
+    "focus": "g:superlatives",
+    "requires": [
+      "c:fui",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:superlatives",
+      "l:barato",
+      "l:centro",
+      "l:grande",
+      "l:ir",
+      "l:mejor",
+      "l:mercado",
+      "l:recomendar",
+      "l:ser",
+      "l:temprano",
+      "l:tienda",
+      "l:zapatos",
+      "p:me-te-nos-objects",
+      "p:permitir-inf"
+    ]
+  },
+  {
+    "id": "w-u16-06",
+    "unit": "u16",
+    "prompt": "You are buying a shirt as a present for Don Hernando. Tell the assistant (a stranger, usted) you will take it, say it is a present, and ask her to wrap it for you.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(me|te|se|nos)\\s+(lo|la|los|las)\\b",
+        "label": "use two pronouns together (me la empaca)"
+      },
+      {
+        "type": "question",
+        "label": "ask her to wrap it"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " puedes",
+          " tienes",
+          " quieres",
+          " eres",
+          " tu ",
+          " te "
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas tardes. Me llevo esta camisa, pero es un regalo para un amigo. ¿Me la empaca, por favor? Se la doy mañana en el café. Es una sorpresa.",
+    "focus": "g:double-pronouns",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:por-favor",
+      "g:double-pronouns",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "g:yo-irregular",
+      "l:amigo",
+      "l:buena",
+      "l:café",
+      "l:camisa",
+      "l:dar",
+      "l:favor",
+      "l:llevarse",
+      "l:mañana",
+      "l:regalo",
+      "l:ser",
+      "l:sorpresa",
+      "l:tarde",
+      "p:demonstratives-basic",
+      "p:para-inf"
+    ]
+  },
+  {
+    "id": "w-u16-07",
+    "unit": "u16",
+    "prompt": "Tell Mariana (a friend) about a present for Vale: you already bought it, you will give it to her on Friday, and you think she will like it. Do not use \"le lo\" or \"le la\".",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bse\\s+(lo|la|los|las)\\b",
+        "label": "change le lo into se lo"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "le lo",
+          "le la",
+          "le los",
+          "le las"
+        ],
+        "label": "no \"le lo\": it becomes \"se lo\""
+      },
+      {
+        "type": "negation",
+        "label": "say something negative"
+      }
+    ],
+    "model": "Mariana, ya compré el regalo de Vale. Se lo doy el viernes en el café. No era barato, pero creo que le va a gustar.",
+    "focus": "x:le-se-lo",
+    "requires": [
+      "c:compre-trabaje",
+      "c:creo-que",
+      "c:era",
+      "g:double-pronouns",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:indirect-objects",
+      "g:ir-a-plans",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "g:that-clauses",
+      "g:yo-irregular",
+      "l:barato",
+      "l:café",
+      "l:comprar",
+      "l:creer",
+      "l:dar",
+      "l:gustar",
+      "l:ir",
+      "l:regalo",
+      "l:ser",
+      "l:viernes",
+      "p:days-el-lunes"
+    ]
+  },
+  {
+    "id": "w-u16-08",
+    "unit": "u16",
+    "prompt": "You left your bag on a bus. Write to the lost-property office (strangers, usted): describe the bag with its colour and what it is made of, and ask if they have it.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(es|son)\\s+de\\s+(cuero|lana|algodón|plata|plástico|tela)\\b",
+        "label": "say what it is made of (es de cuero)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "negro",
+          "azul",
+          "rojo",
+          "verde",
+          "morado",
+          "amarillo",
+          "blanco",
+          "gris",
+          "rosado"
+        ],
+        "label": "give the colour"
+      },
+      {
+        "type": "question",
+        "label": "ask if they have it"
+      }
+    ],
+    "model": "Buenas tardes. Perdí mi bolso ayer en un bus. Es morado y es de cuero. Tiene un celular y unas llaves. ¿Lo tienen ustedes? Mi nombre es Tomás.",
+    "focus": "p:ser-de-material",
+    "requires": [
+      "c:ayer-anoche",
+      "c:hola-buenos-dias",
+      "c:tienes",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:ayer",
+      "l:bolso",
+      "l:buena",
+      "l:bus",
+      "l:celular",
+      "l:cuero",
+      "l:llave",
+      "l:morado",
+      "l:nombre",
+      "l:perder",
+      "l:ser",
+      "l:tarde",
+      "l:tener",
+      "p:estar-hecho-de",
+      "p:possessives-basic",
+      "p:ser-de-material"
+    ]
+  },
+  {
+    "id": "w-u16-09",
+    "unit": "u16",
+    "prompt": "You bought an armchair yesterday and it does not fit through your door. Go back to the shop and tell the manager (a stranger, usted) what happened, then ask to exchange it for a smaller one.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bcambiar(lo|la)?\\s+por\\b",
+        "label": "exchange it with cambiar … por"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "cabe",
+          "caber",
+          "cupo"
+        ],
+        "label": "say it does not fit (no cabe)"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " puedes",
+          " tienes",
+          " quieres",
+          " eres",
+          " tu ",
+          " te "
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas tardes. Compré este sillón ayer, pero no cabe en mi apartamento. Es morado y muy grande. Quiero cambiarlo por uno más pequeño. Todavía no lo usé. ¿Es posible?",
+    "focus": "p:cambiar-de-por",
+    "requires": [
+      "c:ayer-anoche",
+      "c:compre-trabaje",
+      "c:hola-buenos-dias",
+      "c:quiero",
+      "c:todavia-no",
+      "g:direct-objects",
+      "g:object-pronoun-position",
+      "g:present-er-ir",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:apartamento",
+      "l:ayer",
+      "l:buena",
+      "l:caber",
+      "l:cambiar",
+      "l:comprar",
+      "l:grande",
+      "l:morado",
+      "l:pequeño",
+      "l:posible",
+      "l:querer",
+      "l:ser",
+      "l:sillón",
+      "l:tarde",
+      "l:usar",
+      "p:caber",
+      "p:cambiar-de-por",
+      "p:costar-pagar",
+      "p:demonstratives-basic",
+      "p:medir-pesar-caber",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u16-10",
+    "unit": "u16",
+    "prompt": "Vale asks which uniform shirts to buy for the café. There are white ones and grey ones. Text her (someone your age): say which you prefer with el/la plus a colour, give a reason, and ask what she thinks.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(el|la|los|las)\\s+(rojo|roja|azul|verde|amarilla|amarillo|blanco|blanca|negro|negra|gris|morado|morada|rosado|rosada)\\w*\\b",
+        "label": "pick one with el/la + colour (la blanca)"
+      },
+      {
+        "type": "question",
+        "label": "ask what she thinks"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "porque",
+          "más"
+        ],
+        "label": "give a reason"
+      }
+    ],
+    "model": "Vale, para los uniformes hay camisas blancas y grises. Las dos son de algodón. Prefiero la blanca porque es más bonita. La gris es más cara. ¿Tú cuál prefieres?",
+    "focus": "p:el-azul",
+    "requires": [
+      "c:hay",
+      "c:porque",
+      "g:adjective-agreement",
+      "g:cause-result",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:questions",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:algodón",
+      "l:blanco",
+      "l:bonito",
+      "l:camisa",
+      "l:cara",
+      "l:cuál",
+      "l:gris",
+      "l:preferir",
+      "l:ser",
+      "l:uniforme",
+      "p:estar-hecho-de",
+      "p:para-inf",
+      "p:prefieres-x-o-y",
+      "p:ser-de-material"
+    ]
+  },
+  {
+    "id": "w-u16-11",
+    "unit": "u16",
+    "prompt": "Mariana wants to buy one of two bags for her mother, a big one and a small one, and she asks you for advice. Reply (she is a friend): tell her which one to take using el/la plus an adjective of size, and say why.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(el|la)\\s+(grande|pequeñ[oa]|mediano|mediana)\\b",
+        "label": "pick one with el/la + size (la grande)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "porque",
+          "pero"
+        ],
+        "label": "give a reason"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mariana, yo me llevo la grande. La pequeña es bonita, pero es pequeña para tu mamá, porque ella siempre lleva muchas cosas. Además, la grande cuesta casi lo mismo.",
+    "focus": "p:el-rojo-la-grande",
+    "requires": [
+      "c:ademas",
+      "c:porque",
+      "g:adjective-agreement",
+      "g:cause-result",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:además",
+      "l:bonito",
+      "l:cosa",
+      "l:costar",
+      "l:grande",
+      "l:llevar",
+      "l:llevarse",
+      "l:mamá",
+      "l:pequeño",
+      "l:ser",
+      "l:siempre",
+      "p:el-azul",
+      "p:el-rojo-la-grande",
+      "p:frequency-scale",
+      "p:para-inf",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u16-12",
+    "unit": "u16",
+    "prompt": "You are shopping for uniform trousers. Write to Vale (your age) that you found trousers in two colours, one light and one dark. Say which one you prefer and why.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(claro|clara|oscuro|oscura)\\b",
+        "label": "use claro or oscuro with a colour (gris claro)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "pantalón",
+          "pantalones"
+        ],
+        "label": "mention the trousers"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "prefiero",
+          "me gusta",
+          "me gustan"
+        ],
+        "label": "say which you prefer"
+      }
+    ],
+    "model": "Vale, encontré los pantalones. Los tienen en gris claro y en azul oscuro. Prefiero el azul oscuro porque me parece más elegante. Son muy bonitos y cuestan treinta mil pesos.",
+    "focus": "p:colour-claro-oscuro",
+    "requires": [
+      "c:claro-listo",
+      "c:porque",
+      "c:tienes",
+      "g:adjective-agreement",
+      "g:cause-result",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:parecer-quedar",
+      "g:present-er-ir",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:azul",
+      "l:bonito",
+      "l:claro",
+      "l:costar",
+      "l:elegante",
+      "l:encontrar",
+      "l:gris",
+      "l:oscuro",
+      "l:pantalones",
+      "l:parecer",
+      "l:peso",
+      "l:preferir",
+      "l:ser",
+      "l:tener",
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
+      "p:colour-claro-oscuro",
+      "p:costar-pagar",
+      "p:el-azul",
+      "p:el-rojo-la-grande",
+      "p:plural-one-object",
+      "p:prefieres-x-o-y",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u16-13",
+    "unit": "u16",
+    "prompt": "You are at the till. Tell the cashier (a stranger, usted) that you are taking these shoes, ask if you can pay by card, and ask to pay in three instalments.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "tarjeta",
+        "label": "mention the card"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "cuotas",
+          "cuota"
+        ],
+        "label": "ask for instalments"
+      },
+      {
+        "type": "question",
+        "label": "ask a question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " puedes",
+          " tienes",
+          " quieres",
+          " eres",
+          " tu ",
+          " te "
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas tardes. Me llevo estos zapatos, son para mi hermano. ¿Puedo pagar con tarjeta? Crédito, a tres cuotas, por favor. Muchas gracias por su ayuda.",
+    "focus": "c:a-cuantas-cuotas",
+    "requires": [
+      "c:a-cuantas-cuotas",
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "c:por-favor",
+      "c:puedo",
+      "g:demonstratives",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:ayuda",
+      "l:buena",
+      "l:crédito",
+      "l:cuota",
+      "l:favor",
+      "l:hermano",
+      "l:llevarse",
+      "l:pagar",
+      "l:poder",
+      "l:ser",
+      "l:tarde",
+      "l:tarjeta",
+      "l:zapatos",
+      "p:gracias-por",
+      "p:para-inf",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u16-14",
+    "unit": "u16",
+    "prompt": "You are in a shop. First, tell a pushy assistant (a stranger, usted) politely that you are only looking. Then, a minute later, ask if she has a jacket in grey and say you will take it.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "mirando",
+        "label": "say you are only looking"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bme\\s+(lo|la|los|las)\\s+llevo\\b",
+        "label": "say you will take it (me lo llevo)"
+      },
+      {
+        "type": "question",
+        "label": "ask about the grey one"
+      }
+    ],
+    "model": "Buenas tardes. Solo estoy mirando, gracias. Un momento, perdón, ¿tiene este saco en gris? Me gusta mucho y creo que me queda bien. ¿Cuánto cuesta? Está bien, me lo llevo.",
+    "focus": "c:solo-estoy-mirando",
+    "requires": [
+      "c:bien-y-tu",
+      "c:creo-que",
+      "c:cuanto-cuesta",
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "c:me-gusta",
+      "c:me-lo-llevo",
+      "c:perdon-disculpe",
+      "c:solo-estoy-mirando",
+      "c:tienes",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "g:questions",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:bien",
+      "l:buena",
+      "l:costar",
+      "l:creer",
+      "l:cuánto",
+      "l:estar",
+      "l:gris",
+      "l:gustar",
+      "l:llevarse",
+      "l:mirar",
+      "l:momento",
+      "l:perdón",
+      "l:quedar",
+      "l:saco",
+      "l:tarde",
+      "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:demonstratives-basic",
+      "p:quantifiers-basic",
+      "p:talla-numero"
+    ]
+  },
+  {
+    "id": "w-u16-15",
+    "unit": "u16",
+    "prompt": "The shirt you chose is too small. Tell the assistant (a stranger, usted) how it fits, ask if she has it in another size, and ask where you can try it on.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\botra talla\\b|\\btalla\\s+[SMLX]\\b",
+        "label": "ask for another size"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bme\\s+queda",
+        "label": "say how it fits (me queda pequeña)"
+      },
+      {
+        "type": "question",
+        "label": "ask where to try it on"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " puedes",
+          " tienes",
+          " quieres",
+          " eres",
+          " tu ",
+          " te "
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Disculpe, compré esta camisa ayer y me queda pequeña. ¿La tiene en otra talla? Creo que necesito una L. ¿Dónde está el vestier? Gracias por su ayuda.",
+    "focus": "c:tiene-otra-talla",
+    "requires": [
+      "c:ayer-anoche",
+      "c:compre-trabaje",
+      "c:creo-que",
+      "c:donde-esta",
+      "c:me-lo-puedo-medir",
+      "c:perdon-disculpe",
+      "c:tienes",
+      "g:adjective-agreement",
+      "g:commands-usted",
+      "g:direct-objects",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "g:preterite-ar",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:ayer",
+      "l:ayuda",
+      "l:camisa",
+      "l:comprar",
+      "l:creer",
+      "l:disculpar",
+      "l:dónde",
+      "l:estar",
+      "l:necesitar",
+      "l:pequeño",
+      "l:quedar",
+      "l:talla",
+      "l:tener",
+      "p:demonstratives-basic",
+      "p:el-azul",
+      "p:el-rojo-la-grande",
+      "p:gracias-por",
+      "p:otro-no-article",
+      "p:possessives-basic",
+      "p:talla-numero"
+    ]
+  }
+]
