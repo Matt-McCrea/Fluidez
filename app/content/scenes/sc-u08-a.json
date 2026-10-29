@@ -1,0 +1,191 @@
+{
+  "id": "sc-u08-a",
+  "unit": "u08",
+  "title": "Vale's list",
+  "brief": "You're Tomás. Vale has just found out how little of Colombia you've actually tried, and she wants the whole truth. Answer her questions about what you've done and haven't done yet, and ask her one back. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, una pregunta seria. ¿Has probado el ajiaco?",
+      "npcEn": "Tomás, a serious question. Have you tried ajiaco?",
+      "intent": "Say no, you've never tried it.",
+      "accept": [
+        "No, nunca lo he probado.",
+        "Nunca lo he probado.",
+        "No, no lo he probado nunca."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "perfecto",
+          "label": "for never in your life: he probado"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\blo he probado\\b",
+          "label": "it (the ajiaco) goes before he: lo he probado"
+        }
+      ],
+      "focus": "g:direct-objects",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Nunca? ¡Ay, Tomás! ¿Y has jugado tejo?",
+      "npcEn": "Never? Oh, Tomás! And have you played tejo?",
+      "intent": "Say not yet, but you feel like playing.",
+      "accept": [
+        "Todavía no, pero tengo ganas de jugar.",
+        "Todavía no. Pero tengo ganas de jugar.",
+        "No, todavía no he jugado, pero tengo ganas de jugar."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "todavía no",
+          "label": "not yet: todavía no"
+        }
+      ],
+      "focus": "c:todavia-no",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Bueno. ¿Y Monserrate? ¿Has subido a Monserrate?",
+      "npcEn": "OK. And Monserrate? Have you been up Monserrate?",
+      "intent": "Say no, you've never been up, but you can see it from the café.",
+      "accept": [
+        "No, nunca he subido, pero lo veo desde el café.",
+        "Nunca he subido. Pero lo veo desde la ventana del café.",
+        "No, nunca he subido a Monserrate, pero lo veo desde el café."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "subir",
+          "tense": "perfecto",
+          "person": "yo",
+          "label": "I've never been up: nunca he subido"
+        }
+      ],
+      "focus": "g:perfecto-experience",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Tomás! Estoy escribiendo una lista, y es una lista muy larga.",
+      "npcEn": "Tomás! I'm writing a list, and it's a very long list.",
+      "intent": "Ask her if she has ever been to Toronto.",
+      "accept": [
+        "¿Y tú has estado en Toronto?",
+        "¿Has estado en Toronto, Vale?",
+        "Y tú, ¿has estado en Toronto alguna vez?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "perfecto",
+          "person": "tú",
+          "label": "have you been: has estado"
+        }
+      ],
+      "focus": "g:perfecto-experience",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "No, nunca he salido de Colombia. Pero conozco todo el país.",
+      "npcEn": "No, I've never left Colombia. But I've been all over the country.",
+      "intent": "Tell her you're so jealous.",
+      "accept": [
+        "¡Qué envidia!",
+        "Ay, ¡qué envidia!",
+        "¡Qué envidia, Vale!"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "qué envidia",
+          "label": "I'm so jealous: ¡qué envidia!"
+        }
+      ],
+      "focus": "c:que-envidia",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Bueno, el sábado: ajiaco, tejo y Monserrate. ¿Todo en un día?",
+      "npcEn": "Right, Saturday: ajiaco, tejo and Monserrate. All in one day?",
+      "intent": "Say yes: it's worth it.",
+      "accept": [
+        "Sí. ¡Vale la pena!",
+        "Sí, vale la pena.",
+        "Claro, vale la pena."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "vale la pena",
+          "label": "it's worth it: vale la pena"
+        }
+      ],
+      "focus": "c:vale-la-pena",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:has-estado",
+    "c:que-envidia",
+    "c:tengo",
+    "c:todavia-no",
+    "c:vale-la-pena",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indefinites",
+    "g:negation-words",
+    "g:perfecto-experience",
+    "g:ser-identity",
+    "g:yo-irregular",
+    "l:ajiaco",
+    "l:bueno",
+    "l:café",
+    "l:claro",
+    "l:conocer",
+    "l:día",
+    "l:envidia",
+    "l:escribir",
+    "l:estar",
+    "l:ganas",
+    "l:jugar",
+    "l:largo",
+    "l:listo",
+    "l:país",
+    "l:pena",
+    "l:pregunta",
+    "l:probarse",
+    "l:qué",
+    "l:salir",
+    "l:ser",
+    "l:serio",
+    "l:subir",
+    "l:sábado",
+    "l:tener",
+    "l:valer",
+    "l:ventana",
+    "l:ver",
+    "l:vez",
+    "p:quantifiers-basic",
+    "p:tener-ganas-de"
+  ]
+}

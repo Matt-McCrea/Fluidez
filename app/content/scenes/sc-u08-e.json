@@ -1,0 +1,207 @@
+{
+  "id": "sc-u08-e",
+  "unit": "u08",
+  "title": "Beginner's luck",
+  "brief": "You're Tomás. Don Hernando has taken you to play tejo for the first time. Tell him what you can and can't do, watch the others, and answer his invitation. He's older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Bueno, Tomás, esto es el tejo. ¿Usted sabe jugar?",
+      "npcEn": "Right, Tomás, this is tejo. Do you know how to play?",
+      "intent": "Say no, you don't know how to play: you've never played.",
+      "accept": [
+        "No, no sé jugar. Nunca he jugado.",
+        "No sé jugar, don Hernando. Nunca he jugado.",
+        "No, nunca he jugado. No sé jugar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsé jugar\\b",
+          "label": "know how to + verb: sé jugar"
+        }
+      ],
+      "focus": "x:saber-poder",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Tranquilo. Es fácil aprender. Primero, una cerveza. ¿Quiere una?",
+      "npcEn": "Relax. It's easy to learn. First, a beer. Do you want one?",
+      "intent": "Say yes, you feel like a beer.",
+      "accept": [
+        "Sí, tengo ganas de una cerveza.",
+        "Sí, gracias. Tengo ganas de tomar una cerveza.",
+        "¡Sí! Tengo muchas ganas de una cerveza."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ganas de",
+          "label": "feel like: tengo ganas de"
+        }
+      ],
+      "focus": "p:tener-ganas-de",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Bueno. ¿Ve a ese señor de la camisa roja?",
+      "npcEn": "Right. Do you see that man in the red shirt?",
+      "intent": "Say yes, you see him, and ask what he's doing.",
+      "accept": [
+        "Sí, lo veo. ¿Qué está haciendo?",
+        "Sí, lo veo. ¿Qué está haciendo ese señor?",
+        "Lo veo, sí. ¿Qué está haciendo?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "lo veo",
+          "label": "him: lo veo"
+        },
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        }
+      ],
+      "focus": "g:direct-objects",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Está ganando. Siempre gana. Bueno, ahora usted.\n¡Bum! ¡Tomás! ¿Usted ha jugado antes, sí o no?",
+      "npcEn": "He's winning. He always wins. Right, now you.\nBoom! Tomás! Have you played before, yes or no?",
+      "intent": "Say no, never in your life: it's your first time.",
+      "accept": [
+        "No, nunca en la vida. Es la primera vez.",
+        "¡Nunca en la vida! Es mi primera vez.",
+        "No, nunca en la vida he jugado. Es la primera vez."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "nunca en la vida",
+          "label": "never ever: nunca en la vida"
+        }
+      ],
+      "focus": "c:nunca-en-la-vida",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Qué talento! Usted tiene suerte, Tomás. ¿Puede venir el sábado?",
+      "npcEn": "What talent! You're lucky, Tomás. Can you come on Saturday?",
+      "intent": "Say no, you can't on Saturday: you work at the café.",
+      "accept": [
+        "No, el sábado no puedo. Trabajo en el café.",
+        "No puedo, don Hernando. El sábado trabajo en el café.",
+        "El sábado no puedo, trabajo en el café."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "poder",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I can't (no time): no puedo"
+        },
+        {
+          "type": "negation",
+          "label": "say you can't: no puedo"
+        }
+      ],
+      "focus": "x:saber-poder",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Entonces el domingo. Y yo pago la cerveza.",
+      "npcEn": "Sunday, then. And I'm paying for the beer.",
+      "intent": "Say great, and thank him.",
+      "accept": [
+        "¡Listo! Gracias, don Hernando.",
+        "Chévere. Muchas gracias, don Hernando.",
+        "Listo, el domingo. Gracias."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "gracias",
+          "label": "thank him: gracias"
+        }
+      ],
+      "focus": "c:claro-listo",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:no-se",
+    "c:nunca-en-la-vida",
+    "c:puedo",
+    "c:que-chevere",
+    "c:tengo",
+    "c:tienes",
+    "c:trabajo-en",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:perfecto-experience",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:antes",
+    "l:aprender",
+    "l:bueno",
+    "l:café",
+    "l:camisa",
+    "l:cerveza",
+    "l:chévere",
+    "l:domingo",
+    "l:estar",
+    "l:fácil",
+    "l:ganar",
+    "l:ganas",
+    "l:hacer",
+    "l:jugar",
+    "l:listo",
+    "l:pagar",
+    "l:poder",
+    "l:querer",
+    "l:qué",
+    "l:rojo",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:siempre",
+    "l:suerte",
+    "l:sábado",
+    "l:talento",
+    "l:tener",
+    "l:tomar",
+    "l:trabajar",
+    "l:tranquilo",
+    "l:venir",
+    "l:ver",
+    "l:vez",
+    "l:vida",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:tener-ganas-de",
+    "p:time-sequence-basic"
+  ]
+}

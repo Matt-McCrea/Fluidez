@@ -1,0 +1,195 @@
+{
+  "id": "sc-u08-f",
+  "unit": "u08",
+  "title": "Samuel wants to know",
+  "brief": "You're Tomás, making juice at the café. Samuel, the eight year old from downstairs at Doña Gloria's, has a lot of questions about what you've done. Answer him and ask nothing difficult back. He's a child, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hola. ¿Tú eres el canadiense? ¿Has montado en avión?",
+      "npcEn": "Hi. Are you the Canadian? Have you been on a plane?",
+      "intent": "Say yes, lots of times.",
+      "accept": [
+        "Sí, muchas veces.",
+        "Sí, he montado en avión muchas veces.",
+        "Sí, muchas veces. Soy de Toronto."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "muchas veces",
+          "label": "lots of times: muchas veces (vez becomes veces)"
+        }
+      ],
+      "focus": "c:una-vez",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¡Qué envidia! Yo nunca he montado en avión. ¿Y has montado a caballo?",
+      "npcEn": "Lucky you! I've never been on a plane. And have you ridden a horse?",
+      "intent": "Say no, never: you don't know how to ride.",
+      "accept": [
+        "No, nunca. No sé montar a caballo.",
+        "Nunca he montado a caballo. No sé montar.",
+        "No, nunca he montado. No sé montar a caballo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsé montar\\b",
+          "label": "know how to ride: sé montar"
+        }
+      ],
+      "focus": "x:saber-poder",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Yo sí, en la finca de mi abuelo. Oye, ¿qué estás haciendo?",
+      "npcEn": "I have, at my grandpa's farm. Hey, what are you doing?",
+      "intent": "Tell him you're making mango juice.",
+      "accept": [
+        "Estoy haciendo jugo de mango.",
+        "Estoy haciendo un jugo de mango.",
+        "Jugo de mango. Estoy haciendo jugo de mango para un cliente."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bestoy haciendo\\b",
+          "label": "what you're doing right now: estoy haciendo"
+        }
+      ],
+      "focus": "g:estar-gerund",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿De mango? ¡Me encanta! ¿Y dónde compras el mango?",
+      "npcEn": "Mango? I love it! And where do you buy the mango?",
+      "intent": "Say you buy it at Paloquemao market.",
+      "accept": [
+        "Lo compro en el mercado de Paloquemao.",
+        "Lo compro en Paloquemao, en el mercado.",
+        "En Paloquemao. Lo compro en el mercado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo compro\\b",
+          "label": "it (the mango): lo compro"
+        }
+      ],
+      "focus": "g:direct-objects",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Oye, ¿y has subido a Monserrate? Yo subí ayer con mi abuelo.",
+      "npcEn": "Hey, and have you been up Monserrate? I went up yesterday with my grandpa.",
+      "intent": "Say not yet, but you really feel like going.",
+      "accept": [
+        "Todavía no, pero tengo muchas ganas de ir.",
+        "Todavía no. Tengo ganas de subir.",
+        "No, todavía no. Pero tengo muchas ganas de ir."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "todavía no",
+          "label": "not yet: todavía no"
+        }
+      ],
+      "focus": "c:todavia-no",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Es muy bonito! Bueno, me voy. Gracias por el jugo, Tomás.",
+      "npcEn": "It's really beautiful! Right, I'm off. Thanks for the juice, Tomás.",
+      "intent": "Say you're welcome, and see you tomorrow.",
+      "accept": [
+        "De nada. ¡Nos vemos mañana!",
+        "Con mucho gusto. Nos vemos mañana.",
+        "De nada. Chao, nos vemos mañana."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "nos vemos",
+          "label": "see you: nos vemos"
+        }
+      ],
+      "focus": "c:chao-nos-vemos",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:chao-nos-vemos",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-encanta",
+    "c:mucho-gusto",
+    "c:no-se",
+    "c:oiga-oye",
+    "c:que-envidia",
+    "c:soy-de",
+    "c:tengo",
+    "c:todavia-no",
+    "c:una-vez",
+    "c:voy-vas",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:ir-a-plans",
+    "g:perfecto-experience",
+    "g:present-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:yo-irregular",
+    "l:abuelo",
+    "l:avión",
+    "l:ayer",
+    "l:bonito",
+    "l:bueno",
+    "l:caballo",
+    "l:canadiense",
+    "l:cliente",
+    "l:comprar",
+    "l:dónde",
+    "l:encantar",
+    "l:envidia",
+    "l:estar",
+    "l:finca",
+    "l:ganas",
+    "l:gusto",
+    "l:hacer",
+    "l:ir",
+    "l:irse",
+    "l:jugo",
+    "l:mango",
+    "l:mañana",
+    "l:mercado",
+    "l:montar",
+    "l:oír",
+    "l:qué",
+    "l:saber",
+    "l:ser",
+    "l:subir",
+    "l:tener",
+    "l:ver",
+    "l:vez",
+    "p:gracias-por",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:tener-ganas-de"
+  ]
+}

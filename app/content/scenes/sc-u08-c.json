@@ -1,0 +1,212 @@
+{
+  "id": "sc-u08-c",
+  "unit": "u08",
+  "title": "The wrong contract",
+  "brief": "You're Tomás. You've finally sat down with the café's contract, and Mariana catches you at it. Tell her what you and Vale are doing, answer her questions, and get over a small surprise. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hola, Tomás. ¡Qué serio! ¿Qué estás haciendo?",
+      "npcEn": "Hi, Tomás. So serious! What are you doing?",
+      "intent": "Tell her you're reading the café's contract.",
+      "accept": [
+        "Estoy leyendo el contrato del café.",
+        "Hola, Mariana. Estoy leyendo el contrato del café.",
+        "Estoy leyendo el contrato. Es del café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bestoy leyendo\\b",
+          "label": "what you're doing right now: estoy leyendo"
+        }
+      ],
+      "focus": "g:estar-gerund",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Por fin? ¡Muy bien! ¿Y dónde está Vale? Huele muy rico.",
+      "npcEn": "Finally? Very good! And where's Vale? It smells really good.",
+      "intent": "Say she's making ajiaco in the kitchen.",
+      "accept": [
+        "Está haciendo ajiaco en la cocina.",
+        "En la cocina. Está haciendo ajiaco.",
+        "Está en la cocina. Está haciendo ajiaco."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "she is: está"
+        },
+        {
+          "type": "containsWord",
+          "word": "haciendo",
+          "label": "making right now: está haciendo"
+        }
+      ],
+      "focus": "g:estar-gerund",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Ajiaco! Oye, ¿tú ya lo has probado?",
+      "npcEn": "Ajiaco! Hey, have you tried it yet?",
+      "intent": "Say yes, you tried it yesterday.",
+      "accept": [
+        "Sí, lo probé ayer.",
+        "Sí, ya lo probé ayer. ¡Qué rico!",
+        "Sí. Lo probé ayer, con Hernando."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "probar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "yesterday is finished: probé"
+        },
+        {
+          "type": "containsWord",
+          "word": "lo",
+          "label": "it (the ajiaco): lo"
+        }
+      ],
+      "focus": "x:perfecto-preterito",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Por fin! ¿Y el contrato? ¿Es bueno o malo?",
+      "npcEn": "Finally! And the contract? Is it good or bad?",
+      "intent": "Say you've got no idea: it's very long.",
+      "accept": [
+        "Ni idea. Es muy largo y muy difícil.",
+        "No tengo ni idea. Es muy largo y difícil.",
+        "La verdad, ni idea. Es muy largo."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ni idea",
+          "label": "no idea: ni idea"
+        }
+      ],
+      "focus": "c:ni-idea",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Tomás, este no es el contrato del café. Es el contrato del teléfono.",
+      "npcEn": "Tomás, this isn't the café's contract. It's the phone contract.",
+      "intent": "Say how embarrassing, and ask where the café's contract is.",
+      "accept": [
+        "¡Qué pena! ¿Dónde está el contrato del café?",
+        "¡Ay, qué pena! ¿Y dónde está el contrato del café?",
+        "Qué pena. ¿Sabes dónde está el contrato del café?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "qué pena",
+          "label": "how embarrassing: ¡qué pena!"
+        },
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        }
+      ],
+      "focus": "c:que-pena",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Ni idea. Pero primero, el ajiaco. Es más importante.",
+      "npcEn": "No idea. But first, the ajiaco. It's more important.",
+      "intent": "Agree, and say it's important to eat well.",
+      "accept": [
+        "Sí, es importante comer bien.",
+        "Claro. Es importante comer bien.",
+        "Es verdad. Es importante comer bien, Mariana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bes importante comer\\b",
+          "label": "it's important to eat: es importante comer"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "importante de"
+          ],
+          "label": "no de here: es importante comer"
+        }
+      ],
+      "focus": "p:es-adj-inf",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:donde-esta",
+    "c:hola-buenos-dias",
+    "c:la-verdad",
+    "c:ni-idea",
+    "c:oiga-oye",
+    "c:que-pena",
+    "c:que-rico",
+    "c:tengo",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:perfecto-experience",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:yo-irregular",
+    "l:ajiaco",
+    "l:ayer",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:claro",
+    "l:cocina",
+    "l:comer",
+    "l:contrato",
+    "l:difícil",
+    "l:dónde",
+    "l:estar",
+    "l:fin",
+    "l:hacer",
+    "l:idea",
+    "l:importante",
+    "l:largo",
+    "l:leer",
+    "l:malo",
+    "l:oler",
+    "l:oír",
+    "l:pena",
+    "l:probar",
+    "l:probarse",
+    "l:qué",
+    "l:rico",
+    "l:saber",
+    "l:ser",
+    "l:serio",
+    "l:teléfono",
+    "l:tener",
+    "l:verdad",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic"
+  ]
+}

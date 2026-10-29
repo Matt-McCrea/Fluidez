@@ -1,0 +1,217 @@
+{
+  "id": "sc-u08-b",
+  "unit": "u08",
+  "title": "Café con leche, large",
+  "brief": "You're Tomás, behind the counter. A man in a beautiful suit orders a coffee and asks you some odd questions. Serve him, answer him, and find out who he is. He's a stranger and a customer, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, joven. Quiero un café con leche grande.",
+      "npcEn": "Good morning, young man. I want a large latte.",
+      "intent": "Say of course, and ask him if he wants it to take away.",
+      "accept": [
+        "Claro. ¿Lo quiere para llevar?",
+        "Con mucho gusto. ¿Lo quiere para llevar?",
+        "Claro, señor. ¿Lo quiere para llevar?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "containsWord",
+          "word": "lo quiere",
+          "label": "it (the coffee): lo quiere, with usted"
+        }
+      ],
+      "focus": "g:direct-objects",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "No, para tomar acá. Usted es nuevo, ¿no? ¿Ha trabajado antes en un café?",
+      "npcEn": "No, to drink here. You're new, aren't you? Have you worked in a café before?",
+      "intent": "Say no: you worked in an office in Toronto.",
+      "accept": [
+        "No, nunca. Antes trabajé en una oficina en Toronto.",
+        "No, señor. Trabajé en una oficina en Toronto.",
+        "Nunca. En Toronto trabajé en una oficina."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "trabajar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "a finished job in the past: trabajé"
+        }
+      ],
+      "focus": "x:perfecto-preterito",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y eso? ¿Es el contrato del café?",
+      "npcEn": "And that? Is it the café's contract?",
+      "intent": "Say yes, but you haven't read it yet.",
+      "accept": [
+        "Sí, pero todavía no lo he leído.",
+        "Sí. Todavía no lo he leído.",
+        "Sí, es el contrato, pero todavía no lo he leído."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo he leído\\b",
+          "label": "it (the contract) goes before he: lo he leído"
+        },
+        {
+          "type": "containsWord",
+          "word": "todavía no",
+          "label": "not yet: todavía no"
+        }
+      ],
+      "focus": "g:direct-objects",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Una pregunta, joven. ¿Usted quiere vender este café?",
+      "npcEn": "A question, young man. Do you want to sell this café?",
+      "intent": "Say no, you don't want to sell.",
+      "accept": [
+        "No, señor. No quiero vender.",
+        "No, no quiero vender el café.",
+        "No quiero vender, señor. Es el café de mi abuela."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say no: no quiero"
+        },
+        {
+          "type": "verbForm",
+          "inf": "querer",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I want: quiero"
+        }
+      ],
+      "focus": "g:verb-infinitive",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bueno, bueno. ¿Y usted sabe quién soy yo?",
+      "npcEn": "Well, well. And do you know who I am?",
+      "intent": "Say no, you don't know, and ask him his name.",
+      "accept": [
+        "No, no sé. ¿Cómo se llama usted?",
+        "No sé. ¿Cómo se llama usted?",
+        "No, señor, no sé. ¿Cómo se llama?"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "saber",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I don't know a fact: no sé"
+        },
+        {
+          "type": "question",
+          "label": "ask his name as a question"
+        }
+      ],
+      "focus": "p:saber-conocer",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Ricardo Altamira. Y esta es su propina, joven.",
+      "npcEn": "Ricardo Altamira. And this is your tip, young man.",
+      "intent": "Say thank you, but it's too much money.",
+      "accept": [
+        "Gracias, señor, pero es demasiada plata.",
+        "Muchas gracias, pero es demasiado dinero.",
+        "Gracias. Pero es demasiada plata, señor."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "demasiada plata",
+            "demasiado dinero"
+          ],
+          "label": "too much money: demasiada plata (plata is feminine)"
+        }
+      ],
+      "focus": "g:quantifiers",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:compre-trabaje",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-llamo",
+    "c:mucho-gusto",
+    "c:no-cierto",
+    "c:no-se",
+    "c:para-llevar",
+    "c:quiero",
+    "c:se-llama",
+    "c:si-soy-yo",
+    "c:todavia-no",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:perfecto-experience",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:quantifiers",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:acá",
+    "l:antes",
+    "l:bueno",
+    "l:café",
+    "l:claro",
+    "l:contrato",
+    "l:cómo",
+    "l:dinero",
+    "l:día",
+    "l:grande",
+    "l:gusto",
+    "l:joven",
+    "l:leche",
+    "l:leer",
+    "l:llamarse",
+    "l:llevar",
+    "l:nuevo",
+    "l:oficina",
+    "l:plata",
+    "l:pregunta",
+    "l:propina",
+    "l:querer",
+    "l:quién",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:tomar",
+    "l:trabajar",
+    "l:vender",
+    "p:demonstratives-basic",
+    "p:para-inf",
+    "p:possessives-basic"
+  ]
+}
