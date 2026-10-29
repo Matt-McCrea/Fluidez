@@ -1,0 +1,215 @@
+{
+  "id": "sc-u06-b",
+  "unit": "u06",
+  "title": "The new sign",
+  "brief": "You're Tomás. Julio has come to paint a new sign for the café, and he needs a few facts first. Answer his questions and ask him one of your own. He's a stranger on a job, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días. Soy Julio, el del letrero nuevo. ¿Usted es el dueño del café?",
+      "npcEn": "Good morning. I'm Julio, the new sign guy. Are you the owner of the café?",
+      "intent": "Say yes, you're the owner, and the old sign is very old.",
+      "accept": [
+        "Sí, soy el dueño. El letrero es muy viejo.",
+        "Sí, señor. Y el letrero es muy viejo.",
+        "Sí, soy yo. El letrero ya es muy viejo."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "viejo",
+          "label": "a worn old thing: viejo"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "mayor"
+          ],
+          "label": "mayor is for people, not things"
+        }
+      ],
+      "focus": "p:viejo-antiguo-mayor",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Sí, viejo y feo. Quiero una fecha en el letrero nuevo. ¿Cuándo abrió el café?",
+      "npcEn": "Yes, old and ugly. I want a date on the new sign. When did the café open?",
+      "intent": "Say you don't know, but Rosa's notebook has a date: the second of January, 1979.",
+      "accept": [
+        "No sé. El cuaderno de Rosa tiene una fecha: 2 de enero de 1979.",
+        "No sé, señor. En el cuaderno hay una fecha: el 2 de enero de 1979.",
+        "No sé. El cuaderno de Rosa tiene una fecha: el dos de enero de 1979."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(2|dos) de enero de 1979\\b",
+          "label": "dates: el 2 de enero de 1979"
+        }
+      ],
+      "focus": "p:dates-years",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿1979? ¡Yo nací en 1979! ¿Y usted? ¿Dónde nació?",
+      "npcEn": "1979? I was born in 1979! And you? Where were you born?",
+      "intent": "Say you were born in Toronto, in Canada.",
+      "accept": [
+        "Nací en Toronto, en Canadá.",
+        "Yo nací en Toronto, en Canadá.",
+        "En Toronto. Nací en Toronto, en Canadá."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "nacer",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I was born: nací"
+        }
+      ],
+      "focus": "p:naci-en",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Uy, Canadá! Mi papá hizo el letrero viejo hace cuarenta años.",
+      "npcEn": "Wow, Canada! My dad made the old sign forty years ago.",
+      "intent": "Ask him if his dad still works.",
+      "accept": [
+        "¿Y su papá todavía trabaja?",
+        "¿Su papá todavía trabaja?",
+        "¿Todavía trabaja su papá?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "todavía",
+          "label": "still: todavía"
+        },
+        {
+          "type": "question",
+          "label": "it's a question: ¿…?"
+        }
+      ],
+      "focus": "p:ya-todavia-basic",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "No, ya no. Ya es mayor. Pero él conoce bien el barrio. Mi apellido es Gómez.",
+      "npcEn": "No, not any more. He's elderly now. But he knows the barrio well. My surname is Gómez.",
+      "intent": "Ask him if they're the Gómez family from Rosa's notebook.",
+      "accept": [
+        "¿Ustedes son los Gómez del cuaderno de Rosa?",
+        "¿Los Gómez? ¿Del cuaderno de Rosa?",
+        "¿Son los Gómez de las recetas de Rosa?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blos Gómez\\b",
+          "label": "the Gómez family: los Gómez (the name stays the same)"
+        },
+        {
+          "type": "question",
+          "label": "it's a question: ¿…?"
+        }
+      ],
+      "focus": "p:los-garcia",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¿De Rosa? ¡Claro! Rosa nos hizo natilla en diciembre de 1986.",
+      "npcEn": "Rosa's? Of course! Rosa made us natilla in December 1986.",
+      "intent": "Tell him his family's natilla is in Rosa's notebook, and offer him a tinto.",
+      "accept": [
+        "La natilla de su familia está en el cuaderno de Rosa. ¿Quiere un tinto?",
+        "¡Su natilla está en el cuaderno! ¿Un tinto, señor?",
+        "Su natilla está en el cuaderno de Rosa. ¿Quiere un tinto?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "su",
+          "label": "your, to usted: su"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tu"
+          ],
+          "label": "use usted (su), not tú (tu)"
+        }
+      ],
+      "focus": "g:possessives",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:no-se",
+    "c:quiero",
+    "c:si-soy-yo",
+    "c:tienes",
+    "c:ya-no",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:hay-vs-esta",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:apellido",
+    "l:año",
+    "l:barrio",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:claro",
+    "l:conocer",
+    "l:cuaderno",
+    "l:cuándo",
+    "l:diciembre",
+    "l:dueño",
+    "l:día",
+    "l:dónde",
+    "l:enero",
+    "l:estar",
+    "l:familia",
+    "l:fecha",
+    "l:feo",
+    "l:hacer",
+    "l:letrero",
+    "l:mayor",
+    "l:nacer",
+    "l:natilla",
+    "l:nuevo",
+    "l:papá",
+    "l:querer",
+    "l:receta",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:viejo",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:ya-todavia-basic"
+  ]
+}

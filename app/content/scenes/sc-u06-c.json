@@ -1,0 +1,198 @@
+{
+  "id": "sc-u06-c",
+  "unit": "u06",
+  "title": "Mariana hears something",
+  "brief": "You're Tomás. It's the day after you found Rosa's notebook and the letter, and Mariana has noticed that Hernando is very quiet. Tell her what happened and how long ago Rosa wrote the letter. She's your childhood friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hola, Tomás. Hernando no quiere hablar hoy. ¿Qué pasó ayer?",
+      "npcEn": "Hi, Tomás. Hernando doesn't want to talk today. What happened yesterday?",
+      "intent": "Tell her you found Rosa's notebook, and there was a letter in it.",
+      "accept": [
+        "Encontré el cuaderno de Rosa. Había una carta.",
+        "Ayer encontré el cuaderno viejo de Rosa, y había una carta.",
+        "Ayer encontré un cuaderno de Rosa. Había una carta en el cuaderno."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "había",
+          "label": "there was: había"
+        }
+      ],
+      "focus": "g:imperfect-states",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Una carta? ¿De cuándo es?",
+      "npcEn": "A letter? When is it from?",
+      "intent": "Say Rosa wrote the letter to a man called Joaquín forty-seven years ago.",
+      "accept": [
+        "Rosa escribió la carta a Joaquín hace cuarenta y siete años.",
+        "Es de 1979. Rosa escribió la carta a Joaquín hace cuarenta y siete años.",
+        "Hace cuarenta y siete años. Es una carta de Rosa a Joaquín."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "hace",
+          "label": "ago: hace cuarenta y siete años"
+        }
+      ],
+      "focus": "g:hace-ago",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Joaquín? ¿Y quién es? ¿Qué dijo Hernando?",
+      "npcEn": "Joaquín? And who is he? What did Hernando say?",
+      "intent": "Say Hernando only said one thing: Joaquín left in 1978.",
+      "accept": [
+        "Hernando solo dijo una cosa: Joaquín se fue en 1978.",
+        "Solo dijo: Joaquín se fue en 1978.",
+        "Dijo una cosa: Joaquín se fue en 1978. Nada más."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "decir",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "he said: dijo"
+        }
+      ],
+      "focus": "g:preterite-irregular-strong",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Y Vale? Vale siempre tiene una opinión.",
+      "npcEn": "And Vale? Vale always has an opinion.",
+      "intent": "Say Vale opened the letter and couldn't speak.",
+      "accept": [
+        "Vale abrió la carta y no pudo hablar.",
+        "Vale abrió la carta, pero no pudo hablar.",
+        "Vale abrió la carta. ¡Y no pudo hablar!"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "poder",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "she couldn't (that one time): no pudo"
+        }
+      ],
+      "focus": "g:preterite-irregular-strong",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Uy! Oye, mi abuela vive en el barrio desde 1970.",
+      "npcEn": "Wow! Hey, my grandmother has lived in the barrio since 1970.",
+      "intent": "Ask her if her grandmother was here in 1978.",
+      "accept": [
+        "¿Tu abuela estaba aquí en 1978?",
+        "¿Y tu abuela estaba en el barrio en 1978?",
+        "¿Estaba tu abuela aquí en 1978?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "it's a question: ¿…?"
+        },
+        {
+          "type": "containsWord",
+          "word": "tu abuela",
+          "label": "your grandmother, to a friend: tu abuela"
+        }
+      ],
+      "focus": "g:possessives",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Sí, estaba aquí. Y no olvida nada. ¿Vamos mañana a la casa de mi abuela?",
+      "npcEn": "Yes, she was here. And she doesn't forget anything. Shall we go to my grandmother's house tomorrow?",
+      "intent": "Say yes, of course, and thank her.",
+      "accept": [
+        "Sí, claro. Gracias, Mariana.",
+        "Claro que sí. ¡Gracias!",
+        "Listo, vamos mañana. Gracias, Mariana."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "gracias",
+          "label": "thanks: gracias"
+        }
+      ],
+      "focus": "c:gracias-de-nada",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:oiga-oye",
+    "c:tienes",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "l:abrir",
+    "l:abuela",
+    "l:aquí",
+    "l:ayer",
+    "l:año",
+    "l:barrio",
+    "l:carta",
+    "l:casa",
+    "l:claro",
+    "l:cosa",
+    "l:cuaderno",
+    "l:cuándo",
+    "l:decir",
+    "l:encontrar",
+    "l:escribir",
+    "l:estar",
+    "l:hablar",
+    "l:hacer",
+    "l:hoy",
+    "l:ir",
+    "l:irse",
+    "l:listo",
+    "l:mañana",
+    "l:olvidar",
+    "l:opinión",
+    "l:oír",
+    "l:pasar",
+    "l:poder",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:ser",
+    "l:siempre",
+    "l:tener",
+    "l:viejo",
+    "l:vivir",
+    "p:possessives-basic",
+    "p:prep-questions-basic"
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "id": "sc-u06-a",
+  "unit": "u06",
+  "title": "The girl in the photo",
+  "brief": "You're Tomás. An older lady walks into the café with a photo of its window from 1985, when she was a girl. Tell her who you are, find out what the café was like, and answer her questions. She's older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes. Perdón, ¿es el café de Rosa?",
+      "npcEn": "Good afternoon. Excuse me, is this Rosa's café?",
+      "intent": "Say yes: Rosa was your grandmother.",
+      "accept": [
+        "Sí, señora. Rosa era mi abuela.",
+        "Sí. Era el café de mi abuela.",
+        "Sí, es el café de Rosa. Ella era mi abuela."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ser",
+          "tense": "imperfecto",
+          "person": "él/ella",
+          "label": "she was (for a description of the past): era"
+        }
+      ],
+      "focus": "g:imperfect-states",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¡Ay, qué bonito! Mire mi foto: es de 1985. Yo tenía ocho años.",
+      "npcEn": "Oh, how lovely! Look at my photo: it's from 1985. I was eight.",
+      "intent": "Ask her what the café was like back then.",
+      "accept": [
+        "¿Cómo era el café en esa época?",
+        "¿Y cómo era el café en 1985?",
+        "¿Cómo era el café, señora?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "it's a question: ¿…?"
+        },
+        {
+          "type": "verbForm",
+          "inf": "ser",
+          "tense": "imperfecto",
+          "person": "él/ella",
+          "label": "what was it like: ¿cómo era?"
+        }
+      ],
+      "focus": "c:como-era",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Era pequeño y tenía una máquina de discos en la pared. ¿Todavía está aquí?",
+      "npcEn": "It was small and it had a jukebox on the wall. Is it still here?",
+      "intent": "Say no, the jukebox isn't here any more, but you've got Rosa's tango record.",
+      "accept": [
+        "No, ya no está. Pero tengo el disco de tango de Rosa.",
+        "Ya no está, señora, pero tengo el disco de tango de Rosa.",
+        "No, la máquina ya no está. Tengo el disco de tango de Rosa."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ya no",
+          "label": "not any more: ya no está"
+        }
+      ],
+      "focus": "c:ya-no",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡El disco de tango! ¿Y Don Hernando? En esa época él siempre estaba aquí.",
+      "npcEn": "The tango record! And Don Hernando? Back then he was always here.",
+      "intent": "Say yes, he was here two hours ago.",
+      "accept": [
+        "Sí, estuvo aquí hace dos horas.",
+        "Estuvo aquí hace dos horas, señora.",
+        "Sí. Todavía viene. Estuvo aquí hace dos horas."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "hace",
+          "label": "ago: hace dos horas"
+        },
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "he was here (and left): estuvo"
+        }
+      ],
+      "focus": "g:hace-ago",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Un día, en 1985, Rosa me dio una arepa. ¡Y no quiso mi plata!",
+      "npcEn": "One day, in 1985, Rosa gave me an arepa. And she didn't want my money!",
+      "intent": "Tell her Vale made arepas today.",
+      "accept": [
+        "Hoy Vale hizo arepas.",
+        "Vale hizo arepas hoy, señora.",
+        "¡Vale hizo arepas hoy!"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "hacer",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "she made: hizo"
+        }
+      ],
+      "focus": "g:preterite-irregular-strong",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¿Arepas de Rosa? ¡Una, por favor! Y un tinto.",
+      "npcEn": "Rosa's arepas? One, please! And a tinto.",
+      "intent": "Say of course, and that today she doesn't pay, just like in 1985.",
+      "accept": [
+        "Claro, señora. Y hoy usted no paga, como en 1985.",
+        "Claro. Hoy no paga, señora. Como en 1985.",
+        "¡Claro que sí! Y hoy no paga, como en 1985."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ben 1985\\b",
+          "label": "in a year: en 1985"
+        }
+      ],
+      "focus": "p:dates-years",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:como-era",
+    "c:en-esa-epoca",
+    "c:era",
+    "c:estuvo",
+    "c:hola-buenos-dias",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:tengo",
+    "c:ya-no",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:imperfect-states",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:aquí",
+    "l:arepa",
+    "l:año",
+    "l:bonito",
+    "l:buena",
+    "l:café",
+    "l:claro",
+    "l:comer",
+    "l:cómo",
+    "l:dar",
+    "l:disco",
+    "l:día",
+    "l:estar",
+    "l:favor",
+    "l:foto",
+    "l:hacer",
+    "l:hora",
+    "l:hoy",
+    "l:mirar",
+    "l:máquina",
+    "l:pagar",
+    "l:pared",
+    "l:pequeño",
+    "l:perdón",
+    "l:plata",
+    "l:querer",
+    "l:qué",
+    "l:ser",
+    "l:señora",
+    "l:siempre",
+    "l:tango",
+    "l:tarde",
+    "l:tener",
+    "l:tinto",
+    "l:venir",
+    "l:época",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:tener-anos",
+    "p:ya-todavia-basic"
+  ]
+}
