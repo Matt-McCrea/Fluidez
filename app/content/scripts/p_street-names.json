@@ -1,0 +1,41 @@
+{
+  "node": "p:street-names",
+  "hook": {
+    "line": "Bogotá addresses look like a maths problem until you see the trick: almost every place sits where two numbered streets meet. Tomás needs that trick to find the office in the north.",
+    "es": "La oficina queda en la calle 72 con carrera 11.",
+    "en": "The office is on the corner of Calle 72 and Carrera 11."
+  },
+  "examples": [
+    { "es": "El banco queda en la calle 26 con carrera 7.", "en": "The bank is on the corner of Calle 26 and Carrera 7." },
+    { "es": "La oficina queda en la carrera Séptima.", "en": "The office is on Carrera Séptima." },
+    { "es": "Tomamos la avenida Boyacá.", "en": "We took Avenida Boyacá." },
+    { "es": "Vivo en la calle 45 número 13-20.", "en": "I live at Calle 45 number 13-20." },
+    { "es": "El café de Rosa queda en la calle 11 con carrera 3.", "en": "Rosa's café is on the corner of Calle 11 and Carrera 3." }
+  ],
+  "rule": "In Bogotá, *calles* run one way across the city and *carreras* the other, and both are mostly numbered. A place is where two of them meet, joined by *con*: *calle 72 con carrera 11*.\n\nThe street type goes straight before its name or number, with no *de*: *la carrera Séptima*, *la avenida Boyacá*.\n\n\"On\" a street is *en la*: *queda en la carrera Séptima*.\n\nA full address reads *calle 45 número 13-20*: on Calle 45, near Carrera 13, about 20 metres along.\n\nTo ask: *¿Dónde queda…?*",
+  "smallPrint": "Teachers call the street type plus name, with no *de*, apposition.",
+  "readAndPick": [
+    { "es": "Vivo en la calle 45 número 13-20.", "options": ["I live on Calle 45, near Carrera 13.", "I live on Carrera 13, near Calle 45."], "answer": 0 },
+    { "es": "Vivo en la carrera 13 número 45-20.", "options": ["I live on Calle 45, near Carrera 13.", "I live on Carrera 13, near Calle 45."], "answer": 1 },
+    { "es": "La oficina queda en la carrera Séptima.", "options": ["The office is on the seventh floor.", "The office is on Carrera Séptima.", "The office is seven blocks away."], "answer": 1 },
+    { "es": "Mariana vive en la calle 53 con carrera 13.", "options": ["Mariana lives at number 53, Carrera 13.", "Mariana lives 13 blocks from Calle 53.", "Mariana lives on the corner of Calle 53 and Carrera 13."], "answer": 2 },
+    { "es": "Hernando vive en la carrera 30.", "options": ["Hernando lives on Carrera 30.", "Hernando lives on Calle 30."], "answer": 0 },
+    { "es": "La estación queda en la calle 72.", "options": ["The station is on Carrera 72.", "The station is 72 blocks away.", "The station is on Calle 72."], "answer": 2 },
+    { "es": "Tomamos la avenida Boyacá.", "options": ["We took Avenida Boyacá.", "We took the bus from Boyacá."], "answer": 0 },
+    { "es": "La parada queda en la carrera 7 con calle 26.", "options": ["The stop is on the corner of Carrera 7 and Calle 26.", "The stop is on Carrera 7, 26 metres along."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *en la* or *de la* and type the whole sentence: *La oficina queda ___ carrera Séptima.* (The office is on Carrera Séptima.)", "answer": "La oficina queda en la carrera Séptima.", "accept": [], "why": "\"On\" a street is *en la*." },
+    { "prompt": "Say: The bank is on the corner of Calle 26 and Carrera 7.", "answer": "El banco queda en la calle 26 con carrera 7.", "accept": ["El banco queda en la calle 26 con carrera Séptima.", "El banco está en la calle 26 con carrera 7."], "why": "Two streets that meet are joined with *con*." },
+    { "prompt": "Ask where the station is, with *queda*.", "answer": "¿Dónde queda la estación?", "accept": [], "why": "*¿Dónde queda…?* is the everyday way to ask where a place is." },
+    { "prompt": "Say: Hernando lives on Carrera 30.", "answer": "Hernando vive en la carrera 30.", "accept": [], "why": "*En la*, then the street type, then the number, no *de*." },
+    { "prompt": "Add the corner: *El parque queda en la calle 93.* It's at Carrera 11.", "answer": "El parque queda en la calle 93 con carrera 11.", "accept": [], "why": "*Con* adds the second street." },
+    { "prompt": "Tell a friend: Take Avenida Boyacá.", "answer": "Toma la avenida Boyacá.", "accept": [], "why": "A road you take is *la avenida* plus its name, with no *de*." }
+  ],
+  "pitfalls": [
+    { "wrong": "La oficina queda en la calle de 72.", "right": "La oficina queda en la calle 72.", "why": "Almost. No *de* between *calle* and its number or name." },
+    { "wrong": "Queda en calle 72 y carrera 11.", "right": "Queda en la calle 72 con carrera 11.", "why": "Say *en la* before the street, and join the two streets with *con*." },
+    { "wrong": "La oficina es en la carrera Séptima.", "right": "La oficina queda en la carrera Séptima.", "why": "Where a place is never takes *es*; use *queda* or *está*." }
+  ],
+  "personal": "Write where you live or work the Bogotá way: the street, and the street it meets, joined with *con*."
+}

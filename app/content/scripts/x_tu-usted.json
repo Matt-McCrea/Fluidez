@@ -1,0 +1,44 @@
+{
+  "node": "x:tu-usted",
+  "hook": {
+    "line": "Tomás has known Hernando for weeks and still can't decide: *tú* or *usted*? Then he notices Hernando says *usted* to everyone, even to Simón the parrot. In Bogotá, that's normal.",
+    "es": "Hernando, ¿usted quiere un tinto?",
+    "en": "Hernando, would you like a black coffee? (formal)"
+  },
+  "examples": [
+    { "es": "¿Quieres algo?", "en": "Do you want anything? (to a friend)" },
+    { "es": "¿Quiere algo?", "en": "Do you want anything? (formal)" },
+    { "es": "Señora, ¿usted sabe dónde queda la estación?", "en": "Madam, do you know where the station is?" },
+    { "es": "Vale, ¿vienes mañana?", "en": "Vale, are you coming tomorrow?" },
+    { "es": "¿Este es su celular?", "en": "Is this your phone? (formal)" },
+    { "es": "¿Ustedes viven cerca?", "en": "Do you all live nearby?" }
+  ],
+  "rule": "English has one \"you\". Spanish has two for one person.\n\n*Tú* is for friends, people your age, children. Its verbs end in *s*: *quieres*, *tienes*, *vives*. \"Your\" is *tu*.\n*Usted* is for strangers, older people, anyone serving you, anyone you're unsure about. It takes the he/she form: *quiere*, *tiene*, *vive*. \"Your\" is *su*.\n\nBecause *¿Quiere algo?* could also mean \"does he want anything?\", people often keep *usted* in the sentence: *¿Usted quiere algo?*\n\nIn Colombia *usted* isn't cold. Plenty of friends, couples and families use it with each other. The rule of thumb: follow the other person. If they say *tú* to you, you can say it back.\n\nFor more than one person it's always *ustedes*, friends or strangers.",
+  "smallPrint": "Teachers call this the informal and formal forms of address: *tú* and *usted*. *Usted* is grammatically third person.",
+  "readAndPick": [
+    { "es": "¿Tienes tiempo?", "options": ["Have you got time? (to a friend)", "Have you got time? (formal)", "Has he got time?"], "answer": 0 },
+    { "es": "¿Usted tiene tiempo?", "options": ["Have you got time? (to a friend)", "Have you got time? (formal)"], "answer": 1 },
+    { "es": "¿Este es tu celular?", "options": ["Is this your phone? (formal)", "Is this your phone? (to a friend)"], "answer": 1 },
+    { "es": "¿Este es su celular, señor?", "options": ["Is this your phone, sir?", "Is this my phone, sir?", "Is this our phone, sir?"], "answer": 0 },
+    { "es": "¿Hablas inglés?", "options": ["Do you speak English? (formal)", "Does she speak English?", "Do you speak English? (to a friend)"], "answer": 2 },
+    { "es": "¿Usted habla inglés?", "options": ["Do you speak English? (formal)", "Do you speak English? (to a friend)", "Do you all speak English?"], "answer": 0 },
+    { "es": "¿Ustedes vienen mañana?", "options": ["Are you coming tomorrow? (to a friend)", "Are you coming tomorrow? (formal)", "Are you all coming tomorrow?"], "answer": 2 },
+    { "es": "Hola, Vale. ¿Cómo estás?", "options": ["Hi, Vale. How are you? (to a friend)", "Hi, Vale. How is she?"], "answer": 0 },
+    { "es": "Usted tiene razón.", "options": ["I'm right.", "You're right. (to a friend)", "You're right. (formal)"], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *quieres* or *quiere* and type the whole sentence. You're asking your friend Vale: *Vale, ¿___ un tinto?*", "answer": "Vale, ¿quieres un tinto?", "accept": [], "why": "Vale is a friend, so *tú*, and *tú* verbs end in *s*." },
+    { "prompt": "Pick *sabes* or *sabe* and type the whole sentence: *Señora, ¿usted ___ dónde queda la estación?*", "answer": "Señora, ¿usted sabe dónde queda la estación?", "accept": [], "why": "*Usted* takes the he/she form: *sabe*." },
+    { "prompt": "Ask a stranger (formal): Do you live nearby?", "answer": "¿Usted vive cerca?", "accept": ["¿Vive cerca?", "¿Vive usted cerca?"], "why": "*Usted* goes with *vive*, the he/she form." },
+    { "prompt": "Ask a friend: Have you got time?", "answer": "¿Tienes tiempo?", "accept": ["¿Tú tienes tiempo?"], "why": "To a friend it's *tú*: *tienes*." },
+    { "prompt": "Ask Hernando (formal) instead of a friend: *¿Hablas inglés?*", "answer": "¿Usted habla inglés?", "accept": ["¿Habla inglés?", "¿Habla usted inglés?"], "why": "The *s* goes: *hablas* becomes *habla*." },
+    { "prompt": "Make it formal: *¿Este es tu celular?*", "answer": "¿Este es su celular?", "accept": [], "why": "For *usted*, \"your\" is *su*." },
+    { "prompt": "Ask two friends at once: *¿Vienes mañana?*", "answer": "¿Vienen mañana?", "accept": ["¿Ustedes vienen mañana?"], "why": "Any group is *ustedes*, and the verb ends in *n*." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Usted quieres algo?", "right": "¿Usted quiere algo?", "why": "Almost. *Usted* takes the he/she form, with no *s*." },
+    { "wrong": "Señora, ¿este es tu celular?", "right": "Señora, ¿este es su celular?", "why": "If you call her *usted*, her phone is *su* phone." },
+    { "wrong": "¿Vosotros venís mañana?", "right": "¿Ustedes vienen mañana?", "why": "Latin America uses *ustedes* for every group, friends included." }
+  ],
+  "personal": "Think of one friend and one older neighbour. Write the same question to each, once with *tú* and once with *usted*."
+}

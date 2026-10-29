@@ -1,0 +1,47 @@
+{
+  "node": "g:commands-usted",
+  "hook": {
+    "line": "Lost on a corner in the north, Tomás stops a street vendor. Strangers in Bogotá talk to each other with *usted*, so her directions come in a slightly different shape from Vale's.",
+    "es": "Siga dos cuadras, cruce la calle y tome el bus en la esquina.",
+    "en": "Go on two blocks, cross the street and catch the bus at the corner. (formal)"
+  },
+  "examples": [
+    { "es": "Señora, espere aquí.", "en": "Wait here, madam." },
+    { "es": "Tome el bus en la esquina.", "en": "Catch the bus at the corner. (formal)" },
+    { "es": "Mire el mapa.", "en": "Look at the map. (formal)" },
+    { "es": "Venga mañana a las ocho.", "en": "Come tomorrow at eight. (formal)" },
+    { "es": "Salga temprano, señor.", "en": "Leave early, sir." },
+    { "es": "Escriba la dirección aquí.", "en": "Write the address here. (formal)" },
+    { "es": "Vengan mañana.", "en": "Come tomorrow. (you all)" }
+  ],
+  "rule": "For someone you call *usted*, the command swaps the vowel.\n*-ar* verbs take *e*: *toma* becomes *tome*, *espera* becomes *espere*.\n*-er* and *-ir* verbs take *a*: *come* becomes *coma*, *escribe* becomes *escriba*.\n\nThe trick for the odd verbs: start from the I form, drop the *o*, add the swapped vowel.\n*tengo*, *tenga*. *salgo*, *salga*. *vengo*, *venga*. *pongo*, *ponga*. *hago*, *haga*. *digo*, *diga*. *sigo*, *siga*.\nOne that breaks the trick: *ir* gives *vaya*.\n\nFor a group, add *n*: *tomen*, *vengan*, *sigan*. In Colombia that's the only plural, friends or strangers.\n\nAs with friends, no \"you\" in front. *Señor* or *señora* at either end makes it warmer.",
+  "smallPrint": "Teachers call this the *usted* and *ustedes* imperative. These forms come from the present subjunctive, which you'll meet properly later.",
+  "readAndPick": [
+    { "es": "Venga mañana.", "options": ["Come tomorrow. (to a friend)", "Come tomorrow. (formal)", "Come tomorrow. (you all)"], "answer": 1 },
+    { "es": "Vengan mañana.", "options": ["Come tomorrow. (to a friend)", "Come tomorrow. (formal)", "Come tomorrow. (you all)"], "answer": 2 },
+    { "es": "Toma el bus.", "options": ["Catch the bus. (to a friend)", "Catch the bus. (formal)"], "answer": 0 },
+    { "es": "Usted toma el bus.", "options": ["Catch the bus. (formal)", "You catch the bus. (formal)"], "answer": 1 },
+    { "es": "Espere aquí.", "options": ["Wait here. (to a friend)", "Wait here. (formal)", "I'm waiting here."], "answer": 1 },
+    { "es": "Coma algo.", "options": ["Eat something. (formal)", "She eats something.", "Eat something. (to a friend)"], "answer": 0 },
+    { "es": "Salgan temprano.", "options": ["Leave early. (formal)", "They leave early.", "Leave early. (you all)"], "answer": 2 },
+    { "es": "Mire el mapa, señora.", "options": ["Look at the map, madam.", "The lady looks at the map."], "answer": 0 },
+    { "es": "Siga dos cuadras.", "options": ["He goes on two blocks.", "Go on two blocks. (formal)", "Go on two blocks. (to a friend)"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *Tome* or *Toma* and type the whole sentence: *___ el bus en la esquina.* (To a stranger, formal.)", "answer": "Tome el bus en la esquina.", "accept": [], "why": "*Tomar* is an *-ar* verb, so for *usted* it swaps to *e*: *tome*." },
+    { "prompt": "Pick *Vengan* or *Venga* and type the whole sentence: *___ mañana a las ocho.* (To a group.)", "answer": "Vengan mañana a las ocho.", "accept": [], "why": "A group gets the extra *n*: *vengan*." },
+    { "prompt": "Tell a stranger (formal): Wait here.", "answer": "Espere aquí.", "accept": [], "why": "*Esperar* is an *-ar* verb: *espera* for a friend, *espere* for *usted*." },
+    { "prompt": "Tell a stranger (formal): Look at the map.", "answer": "Mire el mapa.", "accept": [], "why": "*Mira* swaps its vowel: *mire*." },
+    { "prompt": "Make it formal: *Sal temprano.*", "answer": "Salga temprano.", "accept": [], "why": "From the I form *salgo*: drop the *o*, add *a*." },
+    { "prompt": "Make it formal: *Pon la tarjeta aquí.*", "answer": "Ponga la tarjeta aquí.", "accept": [], "why": "*Pongo* gives *ponga*." },
+    { "prompt": "Say it to a group instead of one person: *Siga dos cuadras.*", "answer": "Sigan dos cuadras.", "accept": [], "why": "One more *n* turns *usted* into *ustedes*." },
+    { "prompt": "Make it formal: *Escribe la dirección aquí.*", "answer": "Escriba la dirección aquí.", "accept": [], "why": "*Escribir* is an *-ir* verb, so it swaps to *a*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Señora, toma el bus.", "right": "Señora, tome el bus.", "why": "Almost. *Toma* is how you'd tell a friend; for *usted* the vowel swaps to *e*." },
+    { "wrong": "Sala temprano.", "right": "Salga temprano.", "why": "Odd verbs build from the I form, *salgo*, so it's *salga*." },
+    { "wrong": "Venga mañana, chicos.", "right": "Vengan mañana, chicos.", "why": "More than one person needs the *n*." },
+    { "wrong": "Cruze la calle.", "right": "Cruce la calle.", "why": "Spanish doesn't write *z* before *e*, so *cruzar* gives *cruce*." }
+  ],
+  "personal": "A stranger asks you the way to the nearest shop. Give them two or three instructions with *usted*: try *siga*, *cruce* and *mire*."
+}

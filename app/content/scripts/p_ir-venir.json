@@ -1,0 +1,43 @@
+{
+  "node": "p:ir-venir",
+  "hook": {
+    "line": "Vale shouts from the kitchen and Tomás, in perfect English logic, answers *¡Ya vengo!* She waits. He doesn't appear. In Spanish he's just said \"I'll be right back\".",
+    "es": "Tomás, ¿vienes?\nYa voy.",
+    "en": "Tomás, are you coming?\nI'm coming."
+  },
+  "examples": [
+    { "es": "¿Vienes a la fiesta el sábado?", "en": "Are you coming to the party on Saturday?" },
+    { "es": "Voy a tu casa a las seis.", "en": "I'm coming to your place at six." },
+    { "es": "Ven aquí, Simón.", "en": "Come here, Simón." },
+    { "es": "Ya vengo.", "en": "I'll be right back." },
+    { "es": "Hernando viene al café todos los días.", "en": "Hernando comes to the café every day." },
+    { "es": "¿Vas a la fiesta de Mariana?", "en": "Are you going to Mariana's party?" }
+  ],
+  "rule": "*Venir* is movement towards the person speaking: to where I am, or to my party, my house. *Ir* is every other direction.\n\nEnglish \"come\" also covers moving towards the person you're talking to. Spanish doesn't: that's *ir*.\n*I'm coming to your place* is *Voy a tu casa*.\nWhen someone calls you, \"I'm coming!\" is *¡Ya voy!*\n*Ya vengo* means \"I'll be right back\".\n\nTo pull someone towards you: *ven*, *¿vienes?* Never *ve aquí*.",
+  "smallPrint": "Teachers call this spatial deixis: words whose meaning depends on where the speaker is standing.",
+  "readAndPick": [
+    { "es": "¡Ya voy!", "options": ["I'm coming!", "I'll be right back.", "I'm leaving now."], "answer": 0 },
+    { "es": "Ya vengo.", "options": ["I'm coming!", "I'll be right back.", "Come here."], "answer": 1 },
+    { "es": "Voy a tu casa a las seis.", "options": ["Come to my place at six.", "You're coming to my place at six.", "I'm coming to your place at six."], "answer": 2 },
+    { "es": "¿Vienes a mi casa el sábado?", "options": ["Are you coming to my place on Saturday?", "Shall I come to your place on Saturday?"], "answer": 0 },
+    { "es": "Ve a la tienda.", "options": ["Go to the shop.", "Come to the shop."], "answer": 0 },
+    { "es": "Ven aquí, Simón.", "options": ["Go over there, Simón.", "Come here, Simón."], "answer": 1 },
+    { "es": "Hernando va al café.", "options": ["Hernando is coming here to the café.", "Hernando is going to the café."], "answer": 1 },
+    { "es": "Hernando viene al café.", "options": ["Hernando is coming here to the café.", "Hernando is going to the café."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *voy* or *vengo* and type the whole sentence. Vale calls you from the kitchen and you answer \"I'm coming!\": *¡Ya ___!*", "answer": "¡Ya voy!", "accept": ["Ya voy."], "why": "You're moving towards her, away from where you stand, so it's *ir*." },
+    { "prompt": "Pick *Ven* or *Ve* and type the whole sentence. You want Simón over here with you: *___ aquí, Simón.*", "answer": "Ven aquí, Simón.", "accept": ["Ven acá, Simón."], "why": "Towards you is always *venir*." },
+    { "prompt": "Ask a friend: Are you coming to the party on Saturday? (It's your party.)", "answer": "¿Vienes a la fiesta el sábado?", "accept": [], "why": "It's your party, so they'd be coming towards you: *vienes*." },
+    { "prompt": "On the phone, tell a friend: I'm coming to your place at six.", "answer": "Voy a tu casa a las seis.", "accept": ["A las seis voy a tu casa."], "why": "Towards the listener, not you, so it's *voy*." },
+    { "prompt": "You're stepping out of the café for a minute. Say: I'll be right back.", "answer": "Ya vengo.", "accept": [], "why": "*Ya vengo* promises you'll come back here." },
+    { "prompt": "You said *Voy a tu casa mañana.* Now invite your friend to your place instead: Come to my place tomorrow.", "answer": "Ven a mi casa mañana.", "accept": ["Mañana ven a mi casa."], "why": "Your place, so they come towards you: *ven*." },
+    { "prompt": "Ask Hernando (formal): *¿Vienes al café mañana?*", "answer": "¿Viene al café mañana?", "accept": ["¿Usted viene al café mañana?"], "why": "*Usted* takes the he/she form: *viene*." }
+  ],
+  "pitfalls": [
+    { "wrong": "¡Ya vengo!", "right": "¡Ya voy!", "why": "Almost. *Ya vengo* means \"I'll be right back\"; when someone calls you, it's *¡Ya voy!*" },
+    { "wrong": "Vengo a tu casa a las seis.", "right": "Voy a tu casa a las seis.", "why": "Moving towards the person you're talking to is *ir* in Spanish." },
+    { "wrong": "Ve aquí.", "right": "Ven aquí.", "why": "*Aquí* is where you are, and towards you is *venir*." }
+  ],
+  "personal": "Invite a friend to something at your place with *¿Vienes…?*, then write how they'd answer if they're on their way."
+}

@@ -1,0 +1,45 @@
+{
+  "node": "x:commands-tu-usted",
+  "hook": {
+    "line": "Every morning Hernando walks into the café and Tomás greets him the Bogotá way. To Vale, two minutes later, he just says *ven*. Same idea, two shapes: it depends on who's at the door.",
+    "es": "¡Siga, siga!",
+    "en": "Come in, come in! (formal)"
+  },
+  "examples": [
+    { "es": "Mira esto, Vale.", "en": "Look at this, Vale." },
+    { "es": "Mire esto, señora.", "en": "Look at this, madam." },
+    { "es": "Espera un momento, Vale.", "en": "Wait a moment, Vale." },
+    { "es": "Espere un momento, señor.", "en": "Wait a moment, sir." },
+    { "es": "Vale, ven mañana temprano.", "en": "Vale, come early tomorrow." },
+    { "es": "Hernando, venga mañana temprano.", "en": "Hernando, come early tomorrow. (formal)" },
+    { "es": "Vengan mañana temprano.", "en": "Come early tomorrow. (you all)" }
+  ],
+  "rule": "You now have three ways to tell someone what to do.\n\nA friend, someone you call *tú*: the he/she form. *mira*, *espera*, *come*. Plus the eight short ones: *ven*, *ten*, *pon*, *sal*, *haz*, *di*, *ve*, *sé*.\n\nSomeone you call *usted*: swap the vowel. *mire*, *espere*, *coma*. The odd verbs build on the I form: *venga*, *tenga*, *ponga*, *salga*, *haga*, *diga*.\n\nA group: the *usted* form plus *n*. *miren*, *esperen*, *vengan*.\n\nDon't choose fresh each time. Use whatever you already say to that person: if Hernando is *usted* in your questions, he's *usted* in your commands too. And don't mix inside one sentence.\n\nA Bogotá extra: *¡Siga!* means \"come in\" or \"go ahead\", not just \"keep going\".",
+  "smallPrint": "Teachers call these the *tú*, *usted* and *ustedes* forms of the imperative.",
+  "readAndPick": [
+    { "es": "Ven mañana temprano.", "options": ["Come early tomorrow. (to a friend)", "Come early tomorrow. (formal)", "Come early tomorrow. (you all)"], "answer": 0 },
+    { "es": "Venga mañana temprano.", "options": ["Come early tomorrow. (to a friend)", "Come early tomorrow. (formal)", "Come early tomorrow. (you all)"], "answer": 1 },
+    { "es": "Coman algo.", "options": ["Eat something. (to a friend)", "Eat something. (formal)", "Eat something. (you all)"], "answer": 2 },
+    { "es": "Tenga, señora.", "options": ["Here you are, madam.", "She has it, madam."], "answer": 0 },
+    { "es": "Come algo, Vale.", "options": ["Eat something, Vale. (to a friend)", "Vale eats something.", "Eat something, Vale. (formal)"], "answer": 0 },
+    { "es": "Pague con la tarjeta, señora.", "options": ["Pay with the card, madam.", "The lady pays with the card."], "answer": 0 },
+    { "es": "Sigue dos cuadras, Vale.", "options": ["Go on two blocks, Vale. (formal)", "Go on two blocks, Vale. (to a friend)", "Vale goes on two blocks."], "answer": 1 },
+    { "es": "Ponga la tarjeta aquí, señor.", "options": ["Put the card here, sir. (to a friend)", "Put the card here, sir. (formal)"], "answer": 1 },
+    { "es": "Pon la tarjeta aquí, Tomás.", "options": ["Put the card here, Tomás. (formal)", "Put the card here, Tomás. (to a friend)"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *Mira* or *Mire* and type the whole sentence: *___ esto, señora.*", "answer": "Mire esto, señora.", "accept": [], "why": "A *señora* you don't know gets *usted*: *mire*." },
+    { "prompt": "Pick *ven* or *venga* and type the whole sentence. You're talking to your friend Vale: *Vale, ___ mañana temprano.*", "answer": "Vale, ven mañana temprano.", "accept": [], "why": "Vale is *tú*, so the short form: *ven*." },
+    { "prompt": "Tell a friend: Wait a moment.", "answer": "Espera un momento.", "accept": ["Espera un minuto."], "why": "For a friend, the he/she form: *espera*." },
+    { "prompt": "Tell a stranger (formal): Wait a moment.", "answer": "Espere un momento.", "accept": ["Espere un minuto."], "why": "For *usted*, the *a* swaps to *e*: *espere*." },
+    { "prompt": "Say it to Hernando, whom you call *usted*: *Ten, es para ti.*", "answer": "Tenga, es para usted.", "accept": [], "why": "*Tengo* gives *tenga*, and *ti* becomes *usted* too." },
+    { "prompt": "Say it to Vale, your friend, instead of a stranger: *Salga temprano.*", "answer": "Sal temprano.", "accept": [], "why": "*Salir* is one of the eight short ones: *sal*." },
+    { "prompt": "Say it to the whole table at once: *Come algo.*", "answer": "Coman algo.", "accept": [], "why": "A group gets the *usted* shape plus *n*: *coman*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Señor, ven y mire esto.", "right": "Señor, venga y mire esto.", "why": "Almost. Pick one and stay with it: *usted* all the way, *venga* and *mire*." },
+    { "wrong": "Tiene, señora.", "right": "Tenga, señora.", "why": "*Tiene* is \"she has\". Handing something over to *usted* is *tenga*." },
+    { "wrong": "Sigue, sigue, señor.", "right": "Siga, siga, señor.", "why": "If you call him *señor*, he's *usted*, so it's *siga*." }
+  ],
+  "personal": "Think of someone you call *tú* and someone you'd call *usted*. Write one instruction for each, about something you'd really ask them to do."
+}

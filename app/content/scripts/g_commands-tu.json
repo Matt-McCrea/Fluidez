@@ -1,0 +1,47 @@
+{
+  "node": "g:commands-tu",
+  "hook": {
+    "line": "Tomás has to cross the whole city tomorrow, and Vale is not the kind of friend who says \"you might want to consider\". She just tells him what to do. Spanish makes that easy: you already know the form.",
+    "es": "Sal temprano, toma el bus en la esquina y paga con la tarjeta.",
+    "en": "Leave early, catch the bus at the corner and pay with the card."
+  },
+  "examples": [
+    { "es": "Mira esto.", "en": "Look at this. (to a friend)" },
+    { "es": "Toma el bus en la esquina.", "en": "Catch the bus at the corner. (to a friend)" },
+    { "es": "Tomás, espera un momento.", "en": "Tomás, wait a moment." },
+    { "es": "Cruza la calle y espera en la esquina.", "en": "Cross the street and wait on the corner. (to a friend)" },
+    { "es": "Ven mañana a las ocho.", "en": "Come tomorrow at eight. (to a friend)" },
+    { "es": "Pon el celular en la mesa.", "en": "Put your phone on the table. (to a friend)" },
+    { "es": "Sal de la cocina, Simón.", "en": "Get out of the kitchen, Simón." }
+  ],
+  "rule": "To tell a friend what to do, take the he/she form of the present and use it as it is:\n*Vale toma el bus.* Vale takes the bus.\n*Tomás, toma el bus.* Tomás, take the bus.\n\nSo *mira*, *espera*, *come*, *cruza*, *paga*. If the verb changes its middle, the command does too: *sigue*, *vuelve*, *duerme*.\n\nEight everyday verbs are short and irregular. Learn them as a set:\n*ven* (come), *ten* (have, take), *pon* (put), *sal* (leave)\n*haz* (do, make), *di* (say), *ve* (go), *sé* (be)\nThe first four are just the verb with its ending chopped off: *venir*, *ven*.\n\nLike English, there's no word for \"you\" in front. A name with a comma tells you it's an instruction: *Tomás, toma el bus.*\n\nThis is only for \"do it\". \"Don't do it\" uses a different form, coming later.",
+  "smallPrint": "Teachers call this the affirmative *tú* imperative. Its regular form is the same as the third person singular of the present.",
+  "readAndPick": [
+    { "es": "Ven mañana.", "options": ["Come tomorrow.", "You're coming tomorrow.", "She's coming tomorrow."], "answer": 0 },
+    { "es": "Sales temprano.", "options": ["Leave early.", "You leave early.", "I leave early."], "answer": 1 },
+    { "es": "Hernando toma el bus.", "options": ["Hernando, take the bus.", "Hernando takes the bus."], "answer": 1 },
+    { "es": "Tomás, toma el bus.", "options": ["Tomás, take the bus.", "Tomás takes the bus."], "answer": 0 },
+    { "es": "Pon el celular en la mesa.", "options": ["You put your phone on the table.", "I put my phone on the table.", "Put your phone on the table."], "answer": 2 },
+    { "es": "¿Esperas aquí?", "options": ["Wait here.", "Are you waiting here?", "I'm waiting here."], "answer": 1 },
+    { "es": "Haz el café.", "options": ["He makes the coffee.", "Make the coffee.", "I make the coffee."], "answer": 1 },
+    { "es": "Vale, di algo.", "options": ["Vale says something.", "Vale, I'm saying something.", "Vale, say something."], "answer": 2 },
+    { "es": "Sal de la cocina, Simón.", "options": ["Get out of the kitchen, Simón.", "Simón is leaving the kitchen."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *Ven* or *Vienes* and type the whole sentence: *___ mañana a las ocho.* (Come tomorrow at eight, to a friend.)", "answer": "Ven mañana a las ocho.", "accept": [], "why": "It's an instruction, and *venir* is one of the eight short ones: *ven*." },
+    { "prompt": "Pick *Sal* or *Sales* and type the whole sentence: *___ temprano.* (Leave early, to a friend.)", "answer": "Sal temprano.", "accept": [], "why": "*Sales* is \"you leave\". The instruction is the short form, *sal*." },
+    { "prompt": "Tell a friend: Look at this.", "answer": "Mira esto.", "accept": [], "why": "*Mira* is \"she looks\", and to a friend it also means \"look\"." },
+    { "prompt": "Tell a friend: Catch the bus at the corner.", "answer": "Toma el bus en la esquina.", "accept": [], "why": "Catching a bus is *tomar*, and the command is *toma*." },
+    { "prompt": "Tell Tomás to wait a moment. Start with his name.", "answer": "Tomás, espera un momento.", "accept": ["Tomás, espera un minuto."], "why": "The name and the comma, then *espera*: the he/she form used as an instruction." },
+    { "prompt": "Turn this into an instruction to a friend: *Comes algo.*", "answer": "Come algo.", "accept": [], "why": "Drop the *s* of \"you eat\" and you have \"eat\"." },
+    { "prompt": "Turn this into an instruction to a friend: *Pones el celular en la mesa.*", "answer": "Pon el celular en la mesa.", "accept": [], "why": "*Poner* is one of the short ones: *pon*." },
+    { "prompt": "Turn this into an instruction to a friend: *Sigues dos cuadras.*", "answer": "Sigue dos cuadras.", "accept": [], "why": "*Sigue* keeps the *i* it has in *sigues*; only the *s* goes." }
+  ],
+  "pitfalls": [
+    { "wrong": "Tomas el bus.", "right": "Toma el bus.", "why": "Almost. *Tomas* means \"you take\"; the instruction drops the *s*." },
+    { "wrong": "Vene mañana.", "right": "Ven mañana.", "why": "*Venir* is one of the eight short ones: just *ven*." },
+    { "wrong": "Hace el café.", "right": "Haz el café.", "why": "*Hace* is \"he makes\". To a friend, the instruction is *haz*." },
+    { "wrong": "Segue dos cuadras.", "right": "Sigue dos cuadras.", "why": "*Seguir* changes its middle to *i*, and the command keeps it: *sigue*." }
+  ],
+  "personal": "Give a friend three instructions to get from your door to the nearest bus stop or café. Try *sal*, *camina* and *cruza*."
+}
