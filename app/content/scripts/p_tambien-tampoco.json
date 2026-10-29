@@ -6,39 +6,168 @@
     "en": "I don't work on Mondays.\nMe neither!"
   },
   "examples": [
-    { "es": "Vivo en el centro.\nYo también.", "en": "I live downtown.\nMe too." },
-    { "es": "No hablo inglés.\nYo tampoco.", "en": "I don't speak English.\nMe neither." },
-    { "es": "Estoy nervioso.\nYo también.", "en": "I'm nervous.\nMe too." },
-    { "es": "No tengo plan.\nYo tampoco.", "en": "I don't have a plan.\nMe neither." },
-    { "es": "Vale cocina y Tomás también.", "en": "Vale cooks, and so does Tomás." }
+    {
+      "es": "Vivo en el centro.\nYo también.",
+      "en": "I live downtown.\nMe too."
+    },
+    {
+      "es": "No hablo inglés.\nYo tampoco.",
+      "en": "I don't speak English.\nMe neither."
+    },
+    {
+      "es": "Estoy nervioso.\nYo también.",
+      "en": "I'm nervous.\nMe too."
+    },
+    {
+      "es": "No tengo plan.\nYo tampoco.",
+      "en": "I don't have a plan.\nMe neither."
+    },
+    {
+      "es": "Vale cocina y Tomás también.",
+      "en": "Vale cooks, and so does Tomás."
+    }
   ],
-  "rule": "Look at the first sentence. Is it a yes-sentence or a no-sentence?\n\nYes-sentence (*Vivo en el centro*): agree with *también*. *Yo también* = me too.\nNo-sentence (*No hablo inglés*): agree with *tampoco*. *Yo tampoco* = me neither.\n\nEnglish lets you say 'me too' to almost anything. Spanish doesn't: *también* after a no-sentence sounds like you're disagreeing.\n\nYou can swap *yo* for anyone: *Tomás también*, *Vale tampoco*.\nYou can also put the word in front of a verb: *Yo también trabajo aquí. Yo tampoco leo el correo.*\n\nTo disagree, flip it:\n*No tengo plan.*\n*Yo sí.*\n\n*Estoy nervioso.*\n*Yo no.*\n\nOne exception you'll meet soon: after *me gusta*, Spanish answers with a different little phrase (*a mí también*). With every other verb, *yo también* and *yo tampoco* work.",
+  "rule": "Look at the first sentence. Is it a yes-sentence or a no-sentence?\n\nYes-sentence (*Vivo en el centro*): agree with *también*. *Yo también* = me too.\nNo-sentence (*No hablo inglés*): agree with *tampoco*. *Yo tampoco* = me neither.\n\nEnglish lets you say 'me too' to almost anything. Spanish doesn't: *también* after a no-sentence sounds like you're disagreeing.\n\nYou can swap *yo* for anyone: *Tomás también*, *Vale tampoco*.\nYou can also put the word in front of a verb: *Yo también trabajo aquí. Yo tampoco leo el correo.*\n\nTo disagree, flip it:\n*No tengo plan.*\n*Yo sí.*\n\n*Estoy nervioso.*\n*Yo no.*\n\nOne exception, which you learn today: after *me gusta*, Spanish answers *a mí también* or *a mí tampoco*. With every other verb, *yo también* and *yo tampoco* work.",
   "smallPrint": "*También* and *tampoco* are adverbs of affirmation and negation.",
   "soundTip": "*Tampoco* is *tam-PO-co*; *también* is *tam-BIÉN*, with the stress on the end.",
   "readAndPick": [
-    { "es": "Trabajo en una oficina.\nYo también.", "options": ["The second person works in an office too.", "The second person doesn't work in an office."], "answer": 0 },
-    { "es": "No leo el correo.\nYo tampoco.", "options": ["The second person reads the email.", "The second person doesn't read the email either."], "answer": 1 },
-    { "es": "No estoy nervioso.\nYo sí.", "options": ["The second person is nervous.", "The second person isn't nervous either."], "answer": 0 },
-    { "es": "Estudio inglés.\nYo no.", "options": ["Both study English.", "Only the first person studies English."], "answer": 1 },
-    { "es": "No como pan.\nYo tampoco.", "options": ["Neither of them eats bread.", "The second person eats bread."], "answer": 0 },
-    { "es": "Hablo español.\nMariana también.", "options": ["Mariana speaks Spanish too.", "Mariana doesn't speak Spanish."], "answer": 0 },
-    { "es": "No vivo en Bogotá.\nYo sí.", "options": ["The second person lives in Bogotá.", "Nobody lives in Bogotá."], "answer": 0 },
-    { "es": "Tomás no trabaja los lunes. Vale tampoco.", "options": ["Neither of them works on Mondays.", "Vale works on Mondays."], "answer": 0 },
-    { "es": "Estoy contento.\nYo también.", "options": ["Which word fits a yes-sentence? *también*", "Which word fits a yes-sentence? *tampoco*"], "answer": 0 }
+    {
+      "es": "Trabajo en una oficina.\nYo también.",
+      "options": [
+        "The second person doesn't work in an office.",
+        "The second person works in an office too."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No leo el correo.\nYo tampoco.",
+      "options": [
+        "The second person doesn't read the email either.",
+        "The second person reads the email."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estoy nervioso.\nYo sí.",
+      "options": [
+        "The second person is nervous.",
+        "The second person isn't nervous either."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estudio inglés.\nYo no.",
+      "options": [
+        "Both study English.",
+        "Only the first person studies English."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No como pan.\nYo tampoco.",
+      "options": [
+        "The second person eats bread.",
+        "Neither of them eats bread."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hablo español.\nMariana también.",
+      "options": [
+        "Mariana speaks Spanish too.",
+        "Mariana doesn't speak Spanish."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No vivo en Bogotá.\nYo sí.",
+      "options": [
+        "Nobody lives in Bogotá.",
+        "The second person lives in Bogotá."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás no trabaja los lunes. Vale tampoco.",
+      "options": [
+        "Neither of them works on Mondays.",
+        "Vale works on Mondays."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Simón canta.\nDon Hernando también.",
+      "options": [
+        "Don Hernando sings too.",
+        "Don Hernando doesn't sing."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Your friend says: *Estoy tranquilo.* Say 'me too'.", "answer": "Yo también.", "accept": [], "why": "*Estoy tranquilo* is a yes-sentence, so *también*." },
-    { "prompt": "Your friend says: *No tengo computadora.* Say 'me neither'.", "answer": "Yo tampoco.", "accept": [], "why": "A no-sentence takes *tampoco*. *Yo también* would mean you disagree." },
-    { "prompt": "Your friend says: *No hablo japonés.* Say you do.", "answer": "Yo sí.", "accept": [], "why": "To disagree with a no-sentence, say *sí*." },
-    { "prompt": "Your friend says: *Leo el correo los lunes.* Say you don't.", "answer": "Yo no.", "accept": [], "why": "To disagree with a yes-sentence, say *no*." },
-    { "prompt": "Say: I don't work on Mondays either.", "answer": "Yo tampoco trabajo los lunes.", "accept": ["Tampoco trabajo los lunes."], "why": "*Tampoco* goes in front of the verb, and then you don't need *no*." },
-    { "prompt": "Say: Vale cooks, and Tomás does too.", "answer": "Vale cocina y Tomás también.", "accept": [], "why": "Just add the name and *también*: no verb needed." },
-    { "prompt": "Say: I live downtown too.", "answer": "Yo también vivo en el centro.", "accept": ["También vivo en el centro."], "why": "*También* can go right before the verb." }
+    {
+      "prompt": "Your friend says: *Estoy tranquilo.* Say 'me too'.",
+      "answer": "Yo también.",
+      "accept": [],
+      "why": "*Estoy tranquilo* is a yes-sentence, so *también*."
+    },
+    {
+      "prompt": "Your friend says: *No tengo computadora.* Say 'me neither'.",
+      "answer": "Yo tampoco.",
+      "accept": [],
+      "why": "A no-sentence takes *tampoco*. *Yo también* would mean you disagree."
+    },
+    {
+      "prompt": "Your friend says: *No hablo japonés.* Say you do.",
+      "answer": "Yo sí.",
+      "accept": [],
+      "why": "To disagree with a no-sentence, say *sí*."
+    },
+    {
+      "prompt": "Your friend says: *Leo el correo los lunes.* Say you don't.",
+      "answer": "Yo no.",
+      "accept": [],
+      "why": "To disagree with a yes-sentence, say *no*."
+    },
+    {
+      "prompt": "Say: I don't work on Mondays either.",
+      "answer": "Yo tampoco trabajo los lunes.",
+      "accept": [
+        "Tampoco trabajo los lunes."
+      ],
+      "why": "*Tampoco* goes in front of the verb, and then you don't need *no*."
+    },
+    {
+      "prompt": "Say: Vale cooks, and Tomás does too.",
+      "answer": "Vale cocina y Tomás también.",
+      "accept": [],
+      "why": "Just add the name and *también*: no verb needed."
+    },
+    {
+      "prompt": "Say: I live downtown too.",
+      "answer": "Yo también vivo en el centro.",
+      "accept": [
+        "También vivo en el centro."
+      ],
+      "why": "*También* can go right before the verb."
+    }
   ],
   "pitfalls": [
-    { "wrong": "No tengo plan.\nYo no también.", "right": "No tengo plan.\nYo tampoco.", "why": "There's no '*no también*' in Spanish. Agreeing with a no-sentence is *tampoco*." },
-    { "wrong": "No hablo inglés.\nYo también.", "right": "No hablo inglés.\nYo tampoco.", "why": "*Yo también* after a no-sentence sounds like 'I do speak it'." },
-    { "wrong": "Estoy contento.\nYo tampoco.", "right": "Estoy contento.\nYo también.", "why": "*Tampoco* only agrees with a no." }
+    {
+      "wrong": "No tengo plan.\nYo no también.",
+      "right": "No tengo plan.\nYo tampoco.",
+      "why": "There's no '*no también*' in Spanish. Agreeing with a no-sentence is *tampoco*."
+    },
+    {
+      "wrong": "No hablo inglés.\nYo también.",
+      "right": "No hablo inglés.\nYo tampoco.",
+      "why": "*Yo también* after a no-sentence sounds like 'I do speak it'."
+    },
+    {
+      "wrong": "Estoy contento.\nYo tampoco.",
+      "right": "Estoy contento.\nYo también.",
+      "why": "*Tampoco* only agrees with a no."
+    }
   ],
   "personal": "Think of something you don't do on Mondays and something you do every week. Write each one, then answer yourself with *Yo también* or *Yo tampoco* as if you were your best friend."
 }

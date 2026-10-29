@@ -22,7 +22,7 @@
         "n": 3
       }
     ],
-    "model": "Me gusta el café de Colombia. Me gustan los parques de Bogotá y me gusta caminar los domingos. No me gustan las reuniones de los lunes.",
+    "model": "Me gusta el café de Colombia. Me gustan los parques de Bogotá y me gusta caminar los domingos. No me gustan los trancones de Bogotá.",
     "focus": "g:gustar-basic",
     "requires": [
       "c:me-gusta",
@@ -33,9 +33,8 @@
       "l:caminar",
       "l:domingo",
       "l:gustar",
-      "l:lunes",
       "l:parque",
-      "l:reunión",
+      "l:trancón",
       "p:days-el-lunes"
     ]
   },
@@ -281,22 +280,26 @@
         ]
       }
     ],
-    "model": "Perdón, el lunes no puedo: trabajo. El martes tampoco puedo. Puedo el jueves a las seis. ¿Puedes tú?",
+    "model": "Perdón, el lunes no puedo: tengo que trabajar. El martes tampoco. El jueves sí puedo, a las seis. ¿Y tú?",
     "focus": "g:stem-boot",
     "requires": [
+      "c:bien-y-tu",
       "c:perdon-disculpe",
       "c:puedo",
+      "c:tengo",
+      "c:tengo-que",
       "g:gender-articles",
-      "g:present-ar",
       "g:stem-boot",
+      "g:verb-infinitive",
+      "g:yo-irregular",
       "l:jueves",
       "l:lunes",
       "l:martes",
       "l:perdón",
       "l:poder",
+      "l:tener",
       "l:trabajar",
       "p:days-el-lunes",
-      "p:nos-vemos-a-las",
       "p:telling-time"
     ]
   },
@@ -438,34 +441,41 @@
         "n": 3
       }
     ],
-    "model": "Hola, Sam. Vale tiene un plan: un año con el café. No me gusta el plan, pero me gusta el pan de Vale. El sábado vamos a empezar. Voy a ser el mesero. ¡Qué pena!",
+    "model": "Hola, Sam. Vale tiene un plan para el café: treinta días y dos millones de pesos. No me gusta el plan, pero me gusta el pan de Vale. Don Hernando quiere ver fútbol en el café los domingos. El sábado vamos a abrir y yo voy a hacer el tinto. ¡Qué desastre!",
     "focus": "g:ir-a-plans",
     "requires": [
       "c:hola-buenos-dias",
       "c:me-gusta",
-      "c:que-pena",
       "c:tienes",
       "c:vamos-a",
       "c:voy-a",
       "g:gender-articles",
       "g:gustar-basic",
       "g:ir-a-plans",
-      "g:ser-identity",
       "g:stem-boot",
-      "l:año",
+      "g:verb-infinitive",
+      "l:abrir",
       "l:café",
-      "l:empezar",
+      "l:desastre",
+      "l:domingo",
+      "l:día",
+      "l:fútbol",
       "l:gustar",
+      "l:hacer",
       "l:ir",
-      "l:mesero",
       "l:pan",
-      "l:pena",
+      "l:peso",
       "l:plan",
+      "l:querer",
       "l:qué",
-      "l:ser",
       "l:sábado",
       "l:tener",
-      "p:days-el-lunes"
+      "l:tinto",
+      "l:ver",
+      "p:days-el-lunes",
+      "p:exclamations-basic",
+      "p:para-inf",
+      "p:senor-don-article"
     ]
   },
   {

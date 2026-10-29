@@ -6,39 +6,168 @@
     "en": "Anything else?\nNothing else, thanks."
   },
   "examples": [
-    { "es": "¿Quieres algo de tomar?\nNo, nada, gracias.", "en": "Do you want something to drink?\nNo, nothing, thanks." },
-    { "es": "¿Hay alguien en el café?\nNo, no hay nadie.", "en": "Is there anyone in the café?\nNo, there's nobody." },
-    { "es": "¿Alguien habla inglés?", "en": "Does anyone speak English?" },
-    { "es": "Nadie habla inglés aquí.", "en": "Nobody speaks English here." },
-    { "es": "¿Necesitas algo?", "en": "Do you need anything (to a friend)?" },
-    { "es": "¿Sabes algo de Rosa?\nNo sé nada.", "en": "Do you know anything about Rosa?\nI don't know anything." }
+    {
+      "es": "¿Quieres algo de tomar?\nNo, nada, gracias.",
+      "en": "Do you want something to drink?\nNo, nothing, thanks."
+    },
+    {
+      "es": "¿Hay alguien en el café?\nNo, no hay nadie.",
+      "en": "Is there anyone in the café?\nNo, there's nobody."
+    },
+    {
+      "es": "¿Alguien habla inglés?",
+      "en": "Does anyone speak English?"
+    },
+    {
+      "es": "Nadie habla inglés aquí.",
+      "en": "Nobody speaks English here."
+    },
+    {
+      "es": "¿Necesitas algo?",
+      "en": "Do you need anything (to a friend)?"
+    },
+    {
+      "es": "¿Sabes algo de Simón?\nNo sé nada.",
+      "en": "Do you know anything about Simón?\nI don't know anything."
+    }
   ],
   "rule": "Two for yes, two for no:\n*algo* = something, anything\n*alguien* = someone, anyone\n*nada* = nothing\n*nadie* = nobody\n\nEnglish switches between some and any. Spanish doesn't: *¿Necesitas algo?* (anything?) and *Quiero algo* (something) use the same word.\n\nAs a short answer, *nada* and *nadie* stand alone: *¿Algo más? Nada.*\n\nBefore the verb, they need nothing else: *Nadie habla inglés aquí.*\n\nAfter the verb, Spanish keeps the *no* too: *No hay nada*, *No hay nadie*, *No sé nada*. Two no-words, and it's still one no. English says \"I don't know anything\"; Spanish says, in effect, I don't know nothing, and that's correct.",
   "smallPrint": "These are indefinite pronouns; *no … nada* is Spanish's double negation.",
   "soundTip": "*Alguien* is AL-gien, two syllables; the u is silent, so the g is hard, like in *get*.",
   "readAndPick": [
-    { "es": "¿Quieres algo?", "options": ["Do you want something?", "Do you want someone?", "Do you want nothing?"], "answer": 0 },
-    { "es": "¿Hay alguien?", "options": ["Is there anything?", "Is anyone there?"], "answer": 1 },
-    { "es": "No hay nadie.", "options": ["There's nothing.", "There's nobody."], "answer": 1 },
-    { "es": "No hay nada.", "options": ["There's nothing.", "There's nobody.", "There's something."], "answer": 0 },
-    { "es": "Nadie sabe.", "options": ["Somebody knows.", "Nobody knows."], "answer": 1 },
-    { "es": "¿Alguien quiere chocolate?", "options": ["Does anyone want hot chocolate?", "Do you want some hot chocolate?", "Nobody wants hot chocolate."], "answer": 0 },
-    { "es": "No sé nada.", "options": ["I know something.", "I don't know anything."], "answer": 1 },
-    { "es": "Quiero algo de comer.", "options": ["I want something to eat.", "I don't want anything to eat.", "I want someone to eat with."], "answer": 0 }
+    {
+      "es": "¿Quieres algo?",
+      "options": [
+        "Do you want something?",
+        "Do you want someone?",
+        "Do you want nothing?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Hay alguien?",
+      "options": [
+        "Is there anything?",
+        "Is anyone there?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No hay nadie.",
+      "options": [
+        "There's nothing.",
+        "There's nobody."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No hay nada.",
+      "options": [
+        "There's nothing.",
+        "There's nobody.",
+        "There's something."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nadie sabe.",
+      "options": [
+        "Somebody knows.",
+        "Nobody knows."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Alguien quiere chocolate?",
+      "options": [
+        "Does anyone want hot chocolate?",
+        "Do you want some hot chocolate?",
+        "Nobody wants hot chocolate."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No sé nada.",
+      "options": [
+        "I know something.",
+        "I don't know anything."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quiero algo de comer.",
+      "options": [
+        "I want something to eat.",
+        "I don't want anything to eat.",
+        "I want someone to eat with."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *algo* or *alguien*: ¿Hay ___ en la casa?", "answer": "¿Hay alguien en la casa?", "accept": [], "why": "You mean a person, so *alguien*." },
-    { "prompt": "Choose *nada* or *nadie*: No hay ___. (nobody)", "answer": "No hay nadie.", "accept": [], "why": "Nobody is *nadie*." },
-    { "prompt": "Ask a friend: Do you need anything?", "answer": "¿Necesitas algo?", "accept": [], "why": "Anything and something are both *algo*." },
-    { "prompt": "The waiter asks *¿Algo más?* Say: Nothing else, thanks.", "answer": "Nada más, gracias.", "accept": ["No, nada más, gracias."], "why": "As a short answer, *nada* stands alone." },
-    { "prompt": "Say: Nobody speaks English here.", "answer": "Nadie habla inglés aquí.", "accept": ["Aquí nadie habla inglés."], "why": "*Nadie* before the verb, so no extra *no*." },
-    { "prompt": "Ask: Does anyone want hot chocolate?", "answer": "¿Alguien quiere chocolate?", "accept": [], "why": "Anyone, a person: *alguien*." },
-    { "prompt": "Turn it negative: Hay algo. (There's nothing.)", "answer": "No hay nada.", "accept": [], "why": "After the verb, Spanish keeps *no* and adds *nada*." }
+    {
+      "prompt": "Choose *algo* or *alguien*: ¿Hay ___ en la casa?",
+      "answer": "¿Hay alguien en la casa?",
+      "accept": [],
+      "why": "You mean a person, so *alguien*."
+    },
+    {
+      "prompt": "Choose *nada* or *nadie*: No hay ___. (nobody)",
+      "answer": "No hay nadie.",
+      "accept": [],
+      "why": "Nobody is *nadie*."
+    },
+    {
+      "prompt": "Ask a friend: Do you need anything?",
+      "answer": "¿Necesitas algo?",
+      "accept": [],
+      "why": "Anything and something are both *algo*."
+    },
+    {
+      "prompt": "The waiter asks *¿Algo más?* Say: Nothing else, thanks.",
+      "answer": "Nada más, gracias.",
+      "accept": [
+        "No, nada más, gracias."
+      ],
+      "why": "As a short answer, *nada* stands alone."
+    },
+    {
+      "prompt": "Say: Nobody speaks English here.",
+      "answer": "Nadie habla inglés aquí.",
+      "accept": [
+        "Aquí nadie habla inglés."
+      ],
+      "why": "*Nadie* before the verb, so no extra *no*."
+    },
+    {
+      "prompt": "Ask: Does anyone want hot chocolate?",
+      "answer": "¿Alguien quiere chocolate?",
+      "accept": [],
+      "why": "Anyone, a person: *alguien*."
+    },
+    {
+      "prompt": "Turn it negative: Hay algo. (There's nothing.)",
+      "answer": "No hay nada.",
+      "accept": [],
+      "why": "After the verb, Spanish keeps *no* and adds *nada*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Hay nada.", "right": "No hay nada.", "why": "When *nada* comes after the verb, the *no* stays in front." },
-    { "wrong": "No sé algo.", "right": "No sé nada.", "why": "In a no-sentence, anything is *nada*, not *algo*." },
-    { "wrong": "Nadie no sabe.", "right": "Nadie sabe.", "why": "Before the verb, *nadie* is already the no. Adding *no* is one too many." }
+    {
+      "wrong": "Hay nada.",
+      "right": "No hay nada.",
+      "why": "When *nada* comes after the verb, the *no* stays in front."
+    },
+    {
+      "wrong": "No sé algo.",
+      "right": "No sé nada.",
+      "why": "In a no-sentence, anything is *nada*, not *algo*."
+    },
+    {
+      "wrong": "Nadie no sabe.",
+      "right": "Nadie sabe.",
+      "why": "Before the verb, *nadie* is already the no. Adding *no* is one too many."
+    }
   ],
   "personal": "Write two lines about today: something you want (*Quiero algo de…*) and something nobody knows about you (*Nadie sabe que…*). If that second one is too personal, *No sé nada* is a fine answer too."
 }

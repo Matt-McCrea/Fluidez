@@ -228,14 +228,13 @@
   },
   {
     "id": "u03-0011",
-    "es": "Me gustan las películas de Mariana.",
-    "en": "I like Mariana's films.",
+    "es": "Me gustan los artículos de Mariana.",
+    "en": "I like Mariana's articles.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:gustar-basic",
-      "l:gustar",
-      "l:película"
+      "l:gustar"
     ],
     "kind": "statement",
     "unit": "u03",
@@ -245,8 +244,8 @@
       "g:gender-articles",
       "g:gustar-basic",
       "g:present-ar",
-      "l:gustar",
-      "l:película"
+      "l:artículo",
+      "l:gustar"
     ]
   },
   {
@@ -445,8 +444,8 @@
   },
   {
     "id": "u03-0020",
-    "es": "¿Te gustan los libros de Mariana?",
-    "en": "Do you (informal) like Mariana's books?",
+    "es": "¿Te gustan los libros de Rosa?",
+    "en": "Do you (informal) like Rosa's books?",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -643,8 +642,8 @@
   },
   {
     "id": "u03-0028",
-    "es": "¿Te gusta la pizza de la calle?",
-    "en": "Do you (informal) like street pizza?",
+    "es": "¿Te gusta la pizza con fruta?",
+    "en": "Do you (informal) like pizza with fruit on it?",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -660,9 +659,10 @@
       "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "l:calle",
+      "l:fruta",
       "l:gustar",
-      "l:pizza"
+      "l:pizza",
+      "p:con-sin"
     ]
   },
   {
@@ -1079,8 +1079,8 @@
   },
   {
     "id": "u03-0046",
-    "es": "No me gusta nadar en el agua de Bogotá.",
-    "en": "I don't like swimming in Bogotá's water.",
+    "es": "No me gusta nadar en Bogotá: el agua está muy fría.",
+    "en": "I don't like swimming in Bogotá: the water is very cold.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -1094,12 +1094,16 @@
     "source": "gen",
     "requires": [
       "c:me-gusta",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:gustar-basic",
       "l:agua",
+      "l:estar",
+      "l:frío",
       "l:gustar",
       "l:nadar",
-      "p:el-agua-fria"
+      "p:el-agua-fria",
+      "p:quantifiers-basic"
     ]
   },
   {
@@ -1204,7 +1208,7 @@
   },
   {
     "id": "u03-0051",
-    "es": "Me gusta el sábado en el parque.",
+    "es": "Me gustan los sábados en el parque.",
     "en": "I like Saturdays in the park.",
     "accept": [],
     "acceptEn": [],
@@ -1218,9 +1222,9 @@
     "theme": "ocio: gustos",
     "source": "gen",
     "requires": [
-      "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
+      "g:present-ar",
       "l:gustar",
       "l:parque",
       "l:sábado",
@@ -1796,8 +1800,8 @@
   },
   {
     "id": "u03-0076",
-    "es": "Me gusta el banco de la calle Diez.",
-    "en": "I like the bank on Tenth Street.",
+    "es": "No me gusta ir al banco.",
+    "en": "I don't like going to the bank.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -1813,15 +1817,15 @@
       "g:gender-articles",
       "g:gustar-basic",
       "l:banco",
-      "l:calle",
       "l:gustar",
-      "p:street-names"
+      "l:ir",
+      "p:ir-a-venir-de-place"
     ]
   },
   {
     "id": "u03-0077",
-    "es": "Me gusta la tienda de Vale.",
-    "en": "I like Vale's shop.",
+    "es": "Me gustan las arepas del barrio.",
+    "en": "I like the arepas in the neighbourhood.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -1833,11 +1837,12 @@
     "theme": "ocio: gustos",
     "source": "gen",
     "requires": [
-      "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "l:gustar",
-      "l:tienda"
+      "g:present-ar",
+      "l:arepa",
+      "l:barrio",
+      "l:gustar"
     ]
   },
   {
@@ -1953,8 +1958,8 @@
   },
   {
     "id": "u03-0083",
-    "es": "Me gusta el apellido de Vale.",
-    "en": "I like Vale's surname.",
+    "es": "No me gusta el nombre de la calle.",
+    "en": "I don't like the name of the street.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -1969,8 +1974,9 @@
       "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "l:apellido",
-      "l:gustar"
+      "l:calle",
+      "l:gustar",
+      "l:nombre"
     ]
   },
   {
@@ -2298,8 +2304,8 @@
   },
   {
     "id": "u03-0098",
-    "es": "Me gusta el jugo típico de Colombia.",
-    "en": "I like the typical juice of Colombia.",
+    "es": "Me gustan los jugos típicos de Colombia.",
+    "en": "I like Colombia's traditional juices.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -2311,9 +2317,10 @@
     "theme": "ocio: gustos",
     "source": "gen",
     "requires": [
-      "c:me-gusta",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:gustar-basic",
+      "g:present-ar",
       "l:gustar",
       "l:jugo",
       "l:típico"
@@ -2369,8 +2376,8 @@
   },
   {
     "id": "u03-0101",
-    "es": "Me gusta el partido, pero no me gusta el fútbol.",
-    "en": "I like the match, but I don't like football.",
+    "es": "Me gusta ver el partido con don Hernando, pero no me gusta el fútbol.",
+    "en": "I like watching the match with don Hernando, but I don't like football.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -2389,7 +2396,9 @@
       "g:gustar-basic",
       "l:fútbol",
       "l:gustar",
-      "l:partido"
+      "l:partido",
+      "l:ver",
+      "p:senor-don-article"
     ]
   },
   {
@@ -2751,8 +2760,8 @@
   },
   {
     "id": "u03-0116",
-    "es": "Me gusta menos la leche.",
-    "en": "I like milk less.",
+    "es": "Me gusta el tinto, pero la leche no.",
+    "en": "I like black coffee, but not milk.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -2768,7 +2777,8 @@
       "g:gender-articles",
       "g:gustar-basic",
       "l:gustar",
-      "l:leche"
+      "l:leche",
+      "l:tinto"
     ]
   },
   {
@@ -3929,8 +3939,8 @@
   },
   {
     "id": "u03-0165",
-    "es": "¿Qué día te gusta?",
-    "en": "What day do you (informal) like?",
+    "es": "¿Qué día de la semana te gusta más?",
+    "en": "Which day of the week do you (informal) like best?",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -3944,11 +3954,14 @@
     "source": "gen",
     "requires": [
       "c:me-gusta",
+      "g:gender-articles",
       "g:gustar-basic",
       "g:questions",
       "l:día",
       "l:gustar",
-      "l:qué"
+      "l:qué",
+      "l:semana",
+      "p:gustar-mas-que"
     ]
   },
   {
@@ -4391,8 +4404,8 @@
   },
   {
     "id": "u03-0184",
-    "es": "Me gusta el trabajo de médico.",
-    "en": "I like being a doctor.",
+    "es": "Me gusta mi trabajo de médico.",
+    "en": "I like my job as a doctor.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -4405,11 +4418,11 @@
     "source": "gen",
     "requires": [
       "c:me-gusta",
-      "g:gender-articles",
       "g:gustar-basic",
       "l:gustar",
       "l:médico",
-      "l:trabajo"
+      "l:trabajo",
+      "p:possessives-basic"
     ]
   },
   {
@@ -4437,8 +4450,8 @@
   },
   {
     "id": "u03-0186",
-    "es": "Me gusta la profesión de ingeniero.",
-    "en": "I like the engineering profession.",
+    "es": "Me gusta mucho el trabajo de ingeniero.",
+    "en": "I really like engineering work.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -4455,13 +4468,14 @@
       "g:gustar-basic",
       "l:gustar",
       "l:ingeniero",
-      "l:profesión"
+      "l:trabajo",
+      "p:quantifiers-basic"
     ]
   },
   {
     "id": "u03-0187",
-    "es": "No me gusta la profesión de Tomás.",
-    "en": "I don't like Tomás's profession.",
+    "es": "No me gusta el señor Ruiz.",
+    "en": "I don't like Mr Ruiz.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -4477,7 +4491,8 @@
       "g:gender-articles",
       "g:gustar-basic",
       "l:gustar",
-      "l:profesión"
+      "l:señor",
+      "p:senor-don-article"
     ]
   },
   {
@@ -4774,8 +4789,8 @@
   },
   {
     "id": "u03-0201",
-    "es": "Me gusta la empresa de Mariana.",
-    "en": "I like Mariana's company.",
+    "es": "No me gustan las empresas como Altamira.",
+    "en": "I don't like companies like Altamira.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -4787,9 +4802,9 @@
     "theme": "ocio: gustos",
     "source": "gen",
     "requires": [
-      "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
+      "g:present-ar",
       "l:empresa",
       "l:gustar"
     ]
@@ -6064,13 +6079,12 @@
   },
   {
     "id": "u03-0258",
-    "es": "Simón quiere la pizza de don Hernando.",
-    "en": "Simón wants don Hernando's pizza.",
+    "es": "Simón quiere el pan de Mariana.",
+    "en": "Simón wants Mariana's bread.",
     "accept": [],
     "acceptEn": [],
     "targets": [
-      "g:stem-boot",
-      "l:pizza"
+      "g:stem-boot"
     ],
     "kind": "statement",
     "unit": "u03",
@@ -6079,9 +6093,8 @@
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:pizza",
-      "l:querer",
-      "p:senor-don-article"
+      "l:pan",
+      "l:querer"
     ]
   },
   {
@@ -7450,8 +7463,8 @@
   },
   {
     "id": "u03-0316",
-    "es": "Los clientes no entienden el número.",
-    "en": "The customers don't understand the number.",
+    "es": "Los clientes no entienden a Simón.",
+    "en": "The customers don't understand Simón.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -7466,7 +7479,7 @@
       "g:stem-boot",
       "l:cliente",
       "l:entender",
-      "l:número"
+      "p:personal-a"
     ]
   },
   {
@@ -7555,8 +7568,8 @@
   },
   {
     "id": "u03-0321",
-    "es": "¿Encuentras el libro?",
-    "en": "Can you (informal) find the book?",
+    "es": "¿No encuentras el libro?",
+    "en": "Can't you (informal) find the book?",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -7624,8 +7637,8 @@
   },
   {
     "id": "u03-0324",
-    "es": "¿Ustedes encuentran el cine?",
-    "en": "Can you all find the cinema?",
+    "es": "¿Ustedes no encuentran el cine?",
+    "en": "Can't you all find the cinema?",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -7646,12 +7659,12 @@
   },
   {
     "id": "u03-0325",
-    "es": "Encontramos un parque chévere en el centro.",
-    "en": "We find a great park downtown.",
+    "es": "¿Dónde encontramos un parque en el centro?",
+    "en": "Where can we find a park downtown?",
     "accept": [],
     "acceptEn": [],
     "targets": [
-      "l:chévere",
+      "g:questions",
       "l:encontrar"
     ],
     "kind": "statement",
@@ -7661,21 +7674,22 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "g:questions",
       "l:centro",
-      "l:chévere",
+      "l:dónde",
       "l:encontrar",
-      "l:parque"
+      "l:parque",
+      "p:question-word-order"
     ]
   },
   {
     "id": "u03-0326",
-    "es": "Siento la música en la calle.",
-    "en": "I can feel the music in the street.",
+    "es": "Siento mucho frío aquí.",
+    "en": "I feel really cold here.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:stem-boot",
-      "l:música",
       "l:sentir"
     ],
     "kind": "statement",
@@ -7683,11 +7697,12 @@
     "theme": "ocio: verbos que cambian",
     "source": "gen",
     "requires": [
-      "g:gender-articles",
       "g:stem-boot",
-      "l:calle",
-      "l:música",
-      "l:sentir"
+      "l:aquí",
+      "l:frío",
+      "l:sentir",
+      "p:aqui-ahi-alla",
+      "p:quantifiers-basic"
     ]
   },
   {
@@ -7997,8 +8012,8 @@
   },
   {
     "id": "u03-0340",
-    "es": "Los clientes tienen un plan.",
-    "en": "The customers have a plan.",
+    "es": "Don Hernando tiene un plan para los domingos: fútbol en el café.",
+    "en": "Don Hernando has a plan for Sundays: football at the café.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -8013,15 +8028,20 @@
       "c:tienes",
       "g:gender-articles",
       "g:stem-boot",
-      "l:cliente",
+      "l:café",
+      "l:domingo",
+      "l:fútbol",
       "l:plan",
-      "l:tener"
+      "l:tener",
+      "p:days-el-lunes",
+      "p:para-inf",
+      "p:senor-don-article"
     ]
   },
   {
     "id": "u03-0341",
-    "es": "¿Ustedes tienen un helado de chocolate?",
-    "en": "Do you all have a chocolate ice cream?",
+    "es": "¿Tienen helado de chocolate?",
+    "en": "Do you (plural) have chocolate ice cream?",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -8035,7 +8055,6 @@
     "source": "gen",
     "requires": [
       "c:tienes",
-      "g:gender-articles",
       "g:stem-boot",
       "l:chocolate",
       "l:helado",
@@ -8183,12 +8202,12 @@
   },
   {
     "id": "u03-0348",
-    "es": "Queremos el partido en el parque, no en la calle.",
-    "en": "We want the match in the park, not in the street.",
+    "es": "Queremos jugar en el parque, no en la calle.",
+    "en": "We want to play in the park, not in the street.",
     "accept": [],
     "acceptEn": [],
     "targets": [
-      "l:partido"
+      "g:verb-infinitive"
     ],
     "kind": "statement",
     "unit": "u03",
@@ -8197,9 +8216,10 @@
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
+      "g:verb-infinitive",
       "l:calle",
+      "l:jugar",
       "l:parque",
-      "l:partido",
       "l:querer"
     ]
   },
@@ -8529,8 +8549,8 @@
   },
   {
     "id": "u03-0363",
-    "es": "¿Encuentras el café?\nSí, está en la calle Diez.",
-    "en": "Can you find the café?\nYes, it's on Tenth Street.",
+    "es": "¿No encuentras el café?\nNo. ¿Dónde está?",
+    "en": "Can't you find the café?\nNo. Where is it?",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -8542,14 +8562,14 @@
     "theme": "ocio: verbos que cambian",
     "source": "gen",
     "requires": [
+      "c:donde-esta",
       "g:estar-location-states",
       "g:gender-articles",
       "g:stem-boot",
       "l:café",
-      "l:calle",
+      "l:dónde",
       "l:encontrar",
-      "l:estar",
-      "p:street-names"
+      "l:estar"
     ]
   },
   {
@@ -8847,8 +8867,8 @@
   },
   {
     "id": "u03-0377",
-    "es": "¿Dónde encuentras la fruta?",
-    "en": "Where do you (informal) find fruit?",
+    "es": "¿Dónde encuentras fruta en el barrio?",
+    "en": "Where do you (informal) find fruit in the neighbourhood?",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -8865,6 +8885,7 @@
       "g:gender-articles",
       "g:questions",
       "g:stem-boot",
+      "l:barrio",
       "l:dónde",
       "l:encontrar",
       "l:fruta",
@@ -8898,13 +8919,12 @@
   },
   {
     "id": "u03-0379",
-    "es": "Los clientes sienten la música.",
-    "en": "The customers feel the music.",
+    "es": "Con un tinto, los clientes no sienten el frío.",
+    "en": "With a black coffee, the customers don't feel the cold.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:stem-boot",
-      "l:música",
       "l:sentir"
     ],
     "kind": "statement",
@@ -8915,8 +8935,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:cliente",
-      "l:música",
-      "l:sentir"
+      "l:frío",
+      "l:sentir",
+      "l:tinto"
     ]
   },
   {
@@ -9649,8 +9670,8 @@
   },
   {
     "id": "u03-0411",
-    "es": "¿Cuál prefieres: la película de Mariana o el partido?",
-    "en": "Which do you (informal) prefer: Mariana's film or the match?",
+    "es": "¿Cuál prefieres: la película colombiana o el partido?",
+    "en": "Which do you (informal) prefer: the Colombian film or the match?",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -9665,9 +9686,11 @@
     "theme": "ocio: preferencias",
     "source": "gen",
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:questions",
       "g:stem-boot",
+      "l:colombiano",
       "l:cuál",
       "l:partido",
       "l:película",
@@ -9893,13 +9916,12 @@
   },
   {
     "id": "u03-0421",
-    "es": "Simón prefiere la pizza de Tomás.",
-    "en": "Simón prefers Tomás's pizza.",
+    "es": "Simón prefiere la arepa de Tomás.",
+    "en": "Simón prefers Tomás's arepa.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:stem-boot",
-      "l:pizza",
       "l:preferir"
     ],
     "kind": "statement",
@@ -9909,7 +9931,7 @@
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:pizza",
+      "l:arepa",
       "l:preferir",
       "p:prefieres-x-o-y"
     ]
@@ -10316,54 +10338,52 @@
   },
   {
     "id": "u03-0437",
-    "es": "¿Qué tipo de comida prefieres?",
-    "en": "What kind of food do you (informal) prefer?",
+    "es": "¿Qué comida prefieres, la de Bogotá o la de Medellín?",
+    "en": "Which food do you (informal) prefer, Bogotá's or Medellín's?",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:questions",
       "g:stem-boot",
-      "l:preferir",
-      "l:tipo"
+      "l:preferir"
     ],
     "kind": "question",
     "unit": "u03",
     "theme": "ocio: qué tipo de",
     "source": "gen",
     "requires": [
+      "g:gender-articles",
       "g:questions",
       "g:stem-boot",
       "l:comida",
       "l:preferir",
       "l:qué",
-      "l:tipo",
-      "p:prefieres-x-o-y",
-      "p:que-tipo-de"
+      "p:los-de-la-camiseta",
+      "p:prefieres-x-o-y"
     ]
   },
   {
     "id": "u03-0438",
-    "es": "¿Qué tipo de deporte practicas?",
-    "en": "What kind of sport do you (informal) play?",
+    "es": "¿Haces deporte los fines de semana?",
+    "en": "Do you (informal) do sport at weekends?",
     "accept": [],
     "acceptEn": [],
     "targets": [
-      "g:questions",
-      "l:deporte",
-      "l:tipo"
+      "p:days-el-lunes",
+      "l:deporte"
     ],
     "kind": "question",
     "unit": "u03",
     "theme": "ocio: qué tipo de",
     "source": "gen",
     "requires": [
-      "g:present-ar",
-      "g:questions",
+      "g:gender-articles",
+      "g:present-er-ir",
       "l:deporte",
-      "l:practicar",
-      "l:qué",
-      "l:tipo",
-      "p:que-tipo-de"
+      "l:fin",
+      "l:hacer",
+      "l:semana",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -10419,8 +10439,8 @@
   },
   {
     "id": "u03-0441",
-    "es": "¿Qué tipo de libros lees?",
-    "en": "What kind of books do you (informal) read?",
+    "es": "¿Qué tipo de libros hay en el café?",
+    "en": "What kind of books are there in the café?",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -10433,9 +10453,11 @@
     "theme": "ocio: qué tipo de",
     "source": "gen",
     "requires": [
-      "g:present-er-ir",
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
       "g:questions",
-      "l:leer",
+      "l:café",
       "l:libro",
       "l:qué",
       "l:tipo",
@@ -10444,27 +10466,27 @@
   },
   {
     "id": "u03-0442",
-    "es": "¿Qué tipo de fiesta es?",
-    "en": "What kind of party is it?",
+    "es": "¿La fiesta es en el café o en el parque?",
+    "en": "Is the party at the café or in the park?",
     "accept": [],
     "acceptEn": [],
     "targets": [
-      "g:questions",
-      "l:fiesta",
-      "l:tipo"
+      "l:fiesta"
     ],
     "kind": "question",
     "unit": "u03",
     "theme": "ocio: qué tipo de",
     "source": "gen",
     "requires": [
-      "g:questions",
+      "g:gender-articles",
       "g:ser-identity",
+      "l:café",
       "l:fiesta",
-      "l:qué",
+      "l:parque",
       "l:ser",
-      "l:tipo",
-      "p:que-tipo-de"
+      "p:event-ser-en",
+      "p:ser-event-location",
+      "p:tener-lugar"
     ]
   },
   {
@@ -10495,14 +10517,13 @@
   },
   {
     "id": "u03-0444",
-    "es": "¿Qué tipo de jugo tienen?",
-    "en": "What kind of juice do you all have?",
+    "es": "¿Qué jugos tienen hoy?",
+    "en": "What juices do you (plural) have today?",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:questions",
-      "g:stem-boot",
-      "l:tipo"
+      "g:stem-boot"
     ],
     "kind": "question",
     "unit": "u03",
@@ -10512,11 +10533,10 @@
       "c:tienes",
       "g:questions",
       "g:stem-boot",
+      "l:hoy",
       "l:jugo",
       "l:qué",
-      "l:tener",
-      "l:tipo",
-      "p:que-tipo-de"
+      "l:tener"
     ]
   },
   {
@@ -10549,27 +10569,25 @@
   },
   {
     "id": "u03-0446",
-    "es": "¿Qué tipo de jugo quieres?",
-    "en": "What kind of juice do you (informal) want?",
+    "es": "¿Quieres el jugo en agua o en leche?",
+    "en": "Do you (informal) want your juice made with water or with milk?",
     "accept": [],
     "acceptEn": [],
     "targets": [
-      "g:questions",
-      "g:stem-boot",
-      "l:tipo"
+      "g:stem-boot"
     ],
     "kind": "question",
     "unit": "u03",
     "theme": "ocio: qué tipo de",
     "source": "gen",
     "requires": [
-      "g:questions",
+      "g:gender-articles",
       "g:stem-boot",
+      "l:agua",
       "l:jugo",
+      "l:leche",
       "l:querer",
-      "l:qué",
-      "l:tipo",
-      "p:que-tipo-de"
+      "p:con-sin"
     ]
   },
   {
@@ -10602,29 +10620,29 @@
   },
   {
     "id": "u03-0448",
-    "es": "¿Qué tipo de leche prefiere usted?",
-    "en": "What kind of milk do you (formal) prefer?",
+    "es": "No tomo leche: prefiero el chocolate en agua.",
+    "en": "I don't drink milk: I prefer hot chocolate made with water.",
     "accept": [],
     "acceptEn": [],
     "targets": [
-      "g:questions",
       "g:stem-boot",
-      "l:preferir",
-      "l:tipo"
+      "l:preferir"
     ],
     "kind": "question",
     "unit": "u03",
     "theme": "ocio: qué tipo de",
     "source": "gen",
     "requires": [
-      "g:questions",
+      "g:gender-articles",
+      "g:present-ar",
       "g:stem-boot",
+      "l:agua",
+      "l:chocolate",
       "l:leche",
       "l:preferir",
-      "l:qué",
-      "l:tipo",
-      "p:prefieres-x-o-y",
-      "p:que-tipo-de"
+      "l:tomar",
+      "p:con-sin",
+      "p:prefieres-x-o-y"
     ]
   },
   {
@@ -10656,13 +10674,12 @@
   },
   {
     "id": "u03-0450",
-    "es": "¿Qué tipo de trabajo tienes?",
-    "en": "What kind of job do you (informal) have?",
+    "es": "¿Qué tipo de trabajo hace Mariana?",
+    "en": "What kind of work does Mariana do?",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:questions",
-      "g:stem-boot",
       "l:tipo"
     ],
     "kind": "question",
@@ -10670,11 +10687,10 @@
     "theme": "ocio: qué tipo de",
     "source": "gen",
     "requires": [
-      "c:tienes",
+      "g:present-er-ir",
       "g:questions",
-      "g:stem-boot",
+      "l:hacer",
       "l:qué",
-      "l:tener",
       "l:tipo",
       "l:trabajo",
       "p:que-tipo-de"
@@ -10708,28 +10724,21 @@
   },
   {
     "id": "u03-0452",
-    "es": "¿Qué tipo de computadora tienes?",
-    "en": "What kind of computer do you (informal) have?",
+    "es": "No tengo computadora en casa.",
+    "en": "I don't have a computer at home.",
     "accept": [],
     "acceptEn": [],
-    "targets": [
-      "g:questions",
-      "g:stem-boot",
-      "l:tipo"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u03",
     "theme": "ocio: qué tipo de",
     "source": "gen",
     "requires": [
-      "c:tienes",
-      "g:questions",
-      "g:stem-boot",
+      "c:tengo",
+      "g:yo-irregular",
+      "l:casa",
       "l:computadora",
-      "l:qué",
-      "l:tener",
-      "l:tipo",
-      "p:que-tipo-de"
+      "l:tener"
     ]
   },
   {
@@ -10762,29 +10771,25 @@
   },
   {
     "id": "u03-0454",
-    "es": "¿Qué tipo de pan prefiere don Hernando?",
-    "en": "What kind of bread does don Hernando prefer?",
+    "es": "Don Hernando prefiere el pan de Vale con el tinto.",
+    "en": "Don Hernando prefers Vale's bread with his black coffee.",
     "accept": [],
     "acceptEn": [],
     "targets": [
-      "g:questions",
       "g:stem-boot",
-      "l:preferir",
-      "l:tipo"
+      "l:preferir"
     ],
     "kind": "question",
     "unit": "u03",
     "theme": "ocio: qué tipo de",
     "source": "gen",
     "requires": [
-      "g:questions",
+      "g:gender-articles",
       "g:stem-boot",
       "l:pan",
       "l:preferir",
-      "l:qué",
-      "l:tipo",
+      "l:tinto",
       "p:prefieres-x-o-y",
-      "p:que-tipo-de",
       "p:senor-don-article"
     ]
   },
@@ -10902,26 +10907,21 @@
   },
   {
     "id": "u03-0459",
-    "es": "¿Qué tipo de reunión es?",
-    "en": "What kind of meeting is it?",
+    "es": "¿Es una reunión o una fiesta?",
+    "en": "Is it a meeting or a party?",
     "accept": [],
     "acceptEn": [],
-    "targets": [
-      "g:questions",
-      "l:tipo"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u03",
     "theme": "ocio: qué tipo de",
     "source": "gen",
     "requires": [
-      "g:questions",
+      "g:gender-articles",
       "g:ser-identity",
-      "l:qué",
+      "l:fiesta",
       "l:reunión",
-      "l:ser",
-      "l:tipo",
-      "p:que-tipo-de"
+      "l:ser"
     ]
   },
   {
@@ -10976,11 +10976,12 @@
   },
   {
     "id": "u03-0462",
-    "es": "Don Hernando hace todo tipo de deporte.",
-    "en": "Don Hernando does all kinds of sport.",
+    "es": "Don Hernando ve todo tipo de deporte.",
+    "en": "Don Hernando watches all kinds of sport.",
     "accept": [],
     "acceptEn": [],
     "targets": [
+      "p:que-tipo-de",
       "l:deporte",
       "l:tipo"
     ],
@@ -10991,8 +10992,8 @@
     "requires": [
       "g:present-er-ir",
       "l:deporte",
-      "l:hacer",
       "l:tipo",
+      "l:ver",
       "p:que-tipo-de",
       "p:senor-don-article"
     ]
@@ -11119,16 +11120,14 @@
   },
   {
     "id": "u03-0468",
-    "es": "¿Qué tipo de películas te gustan?\nLas películas de fútbol.",
-    "en": "What kind of films do you like?\nFootball films.",
+    "es": "¿Qué tipo de cine te gusta?\nEl cine colombiano.",
+    "en": "What kind of cinema do you like?\nColombian cinema.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:gustar-basic",
       "g:questions",
-      "l:fútbol",
       "l:gustar",
-      "l:película",
       "l:tipo"
     ],
     "kind": "dialogue",
@@ -11136,13 +11135,13 @@
     "theme": "ocio: qué tipo de",
     "source": "gen",
     "requires": [
+      "c:me-gusta",
       "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
       "g:questions",
-      "l:fútbol",
+      "l:cine",
+      "l:colombiano",
       "l:gustar",
-      "l:película",
       "l:qué",
       "l:tipo",
       "p:que-tipo-de"
@@ -11297,14 +11296,11 @@
   },
   {
     "id": "u03-0474",
-    "es": "¿Qué tipo de jugos hay?",
-    "en": "What kinds of juice are there?",
+    "es": "¿Hay jugo de fruta hoy?",
+    "en": "Is there fruit juice today?",
     "accept": [],
     "acceptEn": [],
-    "targets": [
-      "g:questions",
-      "l:tipo"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u03",
     "theme": "ocio: qué tipo de",
@@ -11312,24 +11308,21 @@
     "requires": [
       "c:hay",
       "g:hay-vs-esta",
-      "g:questions",
-      "l:jugo",
-      "l:qué",
-      "l:tipo",
-      "p:que-tipo-de"
+      "l:fruta",
+      "l:hoy",
+      "l:jugo"
     ]
   },
   {
     "id": "u03-0475",
-    "es": "¿Qué tipo de fruta tiene, señora?",
-    "en": "What kind of fruit do you (formal) have, madam?",
+    "es": "¿Qué fruta tiene hoy, señora?",
+    "en": "What fruit do you (formal) have today, madam?",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:questions",
       "g:stem-boot",
-      "l:fruta",
-      "l:tipo"
+      "l:fruta"
     ],
     "kind": "question",
     "unit": "u03",
@@ -11340,11 +11333,10 @@
       "g:questions",
       "g:stem-boot",
       "l:fruta",
+      "l:hoy",
       "l:qué",
       "l:señora",
-      "l:tener",
-      "l:tipo",
-      "p:que-tipo-de"
+      "l:tener"
     ]
   },
   {
@@ -11556,10 +11548,10 @@
   },
   {
     "id": "u03-0483",
-    "es": "Tomás juega al fútbol, pero juega mal.",
-    "en": "Tomás plays football, but he plays badly.",
+    "es": "Mariana juega al fútbol, pero juega mal.",
+    "en": "Mariana plays football, but she plays badly.",
     "accept": [
-      "Tomás juega fútbol, pero juega mal"
+      "Mariana juega fútbol, pero juega mal."
     ],
     "acceptEn": [],
     "targets": [
@@ -11720,10 +11712,10 @@
   },
   {
     "id": "u03-0489",
-    "es": "Vale juega al fútbol con los clientes.",
-    "en": "Vale plays football with the customers.",
+    "es": "Los amigos de don Hernando juegan al fútbol los lunes.",
+    "en": "Don Hernando's friends play football on Mondays.",
     "accept": [
-      "Vale juega fútbol con los clientes"
+      "Los amigos de don Hernando juegan fútbol los lunes."
     ],
     "acceptEn": [],
     "targets": [
@@ -11738,10 +11730,13 @@
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:cliente",
+      "l:amigo",
       "l:fútbol",
       "l:jugar",
-      "p:jugar-a"
+      "l:lunes",
+      "p:days-el-lunes",
+      "p:jugar-a",
+      "p:senor-don-article"
     ]
   },
   {
@@ -11801,10 +11796,10 @@
   },
   {
     "id": "u03-0492",
-    "es": "Mariana y Vale juegan al fútbol en el barrio.",
-    "en": "Mariana and Vale play football in the neighbourhood.",
+    "es": "Mariana y sus amigas juegan al fútbol en el barrio.",
+    "en": "Mariana and her friends play football in the neighbourhood.",
     "accept": [
-      "Mariana y Vale juegan fútbol en el barrio"
+      "Mariana y sus amigas juegan fútbol en el barrio."
     ],
     "acceptEn": [],
     "targets": [
@@ -11819,10 +11814,12 @@
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
+      "l:amiga",
       "l:barrio",
       "l:fútbol",
       "l:jugar",
-      "p:jugar-a"
+      "p:jugar-a",
+      "p:possessives-basic"
     ]
   },
   {
@@ -13251,16 +13248,13 @@
   },
   {
     "id": "u03-0551",
-    "es": "Vale va a cocinar pizza el viernes.",
-    "en": "Vale is going to make pizza on Friday.",
+    "es": "Vale va a hacer pan el jueves.",
+    "en": "Vale is going to make bread on Thursday.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:ir-a-plans",
-      "l:cocinar",
-      "l:ir",
-      "l:pizza",
-      "l:viernes"
+      "l:ir"
     ],
     "kind": "statement",
     "unit": "u03",
@@ -13269,10 +13263,10 @@
     "requires": [
       "g:gender-articles",
       "g:ir-a-plans",
-      "l:cocinar",
+      "l:hacer",
       "l:ir",
-      "l:pizza",
-      "l:viernes",
+      "l:jueves",
+      "l:pan",
       "p:days-el-lunes"
     ]
   },
@@ -13787,8 +13781,8 @@
   },
   {
     "id": "u03-0572",
-    "es": "Vale va a dejar la computadora en la oficina.",
-    "en": "Vale is going to leave the computer at the office.",
+    "es": "Vale va a dejar el pan aquí.",
+    "en": "Vale is going to leave the bread here.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -13803,10 +13797,11 @@
     "requires": [
       "g:gender-articles",
       "g:ir-a-plans",
-      "l:computadora",
+      "l:aquí",
       "l:dejar",
       "l:ir",
-      "l:oficina"
+      "l:pan",
+      "p:aqui-ahi-alla"
     ]
   },
   {
@@ -14114,13 +14109,12 @@
   },
   {
     "id": "u03-0585",
-    "es": "Vale va a trabajar un año en el café.",
-    "en": "Vale is going to work at the café for a year.",
+    "es": "En treinta días, el café va a tener dos millones de pesos.",
+    "en": "In thirty days, the café is going to have two million pesos.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:ir-a-plans",
-      "l:año",
       "l:ir"
     ],
     "kind": "statement",
@@ -14130,10 +14124,11 @@
     "requires": [
       "g:gender-articles",
       "g:ir-a-plans",
-      "l:año",
       "l:café",
+      "l:día",
       "l:ir",
-      "l:trabajar"
+      "l:peso",
+      "l:tener"
     ]
   },
   {
@@ -14542,14 +14537,13 @@
   },
   {
     "id": "u03-0603",
-    "es": "Vas a sentir la música.",
-    "en": "You (informal) are going to feel the music.",
+    "es": "Vas a sentir el frío de Bogotá.",
+    "en": "You're (informal) going to feel the Bogotá cold.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:ir-a-plans",
       "l:ir",
-      "l:música",
       "l:sentir"
     ],
     "kind": "statement",
@@ -14560,8 +14554,8 @@
       "c:voy-vas",
       "g:gender-articles",
       "g:ir-a-plans",
+      "l:frío",
       "l:ir",
-      "l:música",
       "l:sentir"
     ]
   },
@@ -15405,37 +15399,34 @@
   },
   {
     "id": "u03-0638",
-    "es": "Vale va a tener un plan.",
-    "en": "Vale is going to have a plan.",
+    "es": "Vale va a tener problemas con Tomás.",
+    "en": "Vale is going to have problems with Tomás.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:ir-a-plans",
-      "l:ir",
-      "l:plan"
+      "l:ir"
     ],
     "kind": "statement",
     "unit": "u03",
     "theme": "ocio: planes",
     "source": "gen",
     "requires": [
-      "g:gender-articles",
       "g:ir-a-plans",
       "l:ir",
-      "l:plan",
+      "l:problema",
       "l:tener"
     ]
   },
   {
     "id": "u03-0639",
-    "es": "Los clientes van a tener pizza el sábado.",
-    "en": "The customers are going to have pizza on Saturday.",
+    "es": "El café va a tener música los sábados.",
+    "en": "The café is going to have music on Saturdays.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:ir-a-plans",
       "l:ir",
-      "l:pizza",
       "l:sábado"
     ],
     "kind": "statement",
@@ -15445,9 +15436,9 @@
     "requires": [
       "g:gender-articles",
       "g:ir-a-plans",
-      "l:cliente",
+      "l:café",
       "l:ir",
-      "l:pizza",
+      "l:música",
       "l:sábado",
       "l:tener",
       "p:days-el-lunes"
@@ -15889,8 +15880,8 @@
   },
   {
     "id": "u03-0657",
-    "es": "¿Dónde va a ser la fiesta?\nEn el café de Vale.",
-    "en": "Where's the party going to be?\nAt Vale's café.",
+    "es": "¿Dónde va a ser la fiesta?\nEn el café de Rosa.",
+    "en": "Where's the party going to be?\nAt Rosa's café.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -16421,14 +16412,13 @@
   },
   {
     "id": "u03-0679",
-    "es": "Simón va a comer la pizza de don Hernando.",
-    "en": "Simón is going to eat don Hernando's pizza.",
+    "es": "Simón va a comer la arepa de don Hernando.",
+    "en": "Simón is going to eat don Hernando's arepa.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:ir-a-plans",
-      "l:ir",
-      "l:pizza"
+      "l:ir"
     ],
     "kind": "statement",
     "unit": "u03",
@@ -16437,16 +16427,16 @@
     "requires": [
       "g:gender-articles",
       "g:ir-a-plans",
+      "l:arepa",
       "l:comer",
       "l:ir",
-      "l:pizza",
       "p:senor-don-article"
     ]
   },
   {
     "id": "u03-0680",
-    "es": "Tomás va a ser mesero el sábado.",
-    "en": "Tomás is going to be a waiter on Saturday.",
+    "es": "Tomás va a hacer el tinto el sábado.",
+    "en": "Tomás is going to make the black coffee on Saturday.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -16461,13 +16451,11 @@
     "requires": [
       "g:gender-articles",
       "g:ir-a-plans",
-      "g:ser-identity",
+      "l:hacer",
       "l:ir",
-      "l:mesero",
-      "l:ser",
       "l:sábado",
-      "p:days-el-lunes",
-      "p:ser-profession-no-article"
+      "l:tinto",
+      "p:days-el-lunes"
     ]
   },
   {
@@ -17494,8 +17482,8 @@
   },
   {
     "id": "u03-0723",
-    "es": "Tomás viene de la oficina del banco.",
-    "en": "Tomás is coming from the bank's office.",
+    "es": "Tomás viene del centro con fruta.",
+    "en": "Tomás is coming from downtown with fruit.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -17509,16 +17497,17 @@
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:banco",
-      "l:oficina",
+      "l:centro",
+      "l:fruta",
       "l:venir",
+      "p:con-sin",
       "p:ir-a-venir-de-place"
     ]
   },
   {
     "id": "u03-0724",
-    "es": "Simón viene de Medellín.",
-    "en": "Simón comes from Medellín.",
+    "es": "Don Hernando viene del centro con Simón.",
+    "en": "Don Hernando is coming from downtown with Simón.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -17530,9 +17519,12 @@
     "theme": "ocio: adónde vas",
     "source": "gen",
     "requires": [
+      "g:gender-articles",
       "g:stem-boot",
+      "l:centro",
       "l:venir",
-      "p:ir-a-venir-de-place"
+      "p:ir-a-venir-de-place",
+      "p:senor-don-article"
     ]
   },
   {
@@ -17906,17 +17898,15 @@
   },
   {
     "id": "u03-0740",
-    "es": "Vale va a cocinar pizza.\n¡Qué chévere!",
-    "en": "Vale is going to make pizza.\nCool!",
+    "es": "Vale va a hacer arepas.\n¡Qué chévere!",
+    "en": "Vale is going to make arepas.\nHow great!",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "c:que-chevere",
       "g:ir-a-plans",
       "l:chévere",
-      "l:cocinar",
-      "l:ir",
-      "l:pizza"
+      "l:ir"
     ],
     "kind": "dialogue",
     "unit": "u03",
@@ -17925,10 +17915,10 @@
     "requires": [
       "c:que-chevere",
       "g:ir-a-plans",
+      "l:arepa",
       "l:chévere",
-      "l:cocinar",
+      "l:hacer",
       "l:ir",
-      "l:pizza",
       "l:qué"
     ]
   },
@@ -19605,13 +19595,12 @@
   },
   {
     "id": "u03-0809",
-    "es": "Vale tiene un plan: un año con el café.",
-    "en": "Vale has a plan: a year with the café.",
+    "es": "Vale tiene un plan: treinta días y dos millones de pesos.",
+    "en": "Vale has a plan: thirty days and two million pesos.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:stem-boot",
-      "l:año",
       "l:plan"
     ],
     "kind": "statement",
@@ -19622,8 +19611,8 @@
       "c:tienes",
       "g:gender-articles",
       "g:stem-boot",
-      "l:año",
-      "l:café",
+      "l:día",
+      "l:peso",
       "l:plan",
       "l:tener"
     ]
@@ -19651,12 +19640,12 @@
   },
   {
     "id": "u03-0811",
-    "es": "El sábado el café empieza otra vez.",
-    "en": "On Saturday the café starts up again.",
+    "es": "El sábado el café abre otra vez.",
+    "en": "On Saturday the café opens again.",
     "accept": [],
     "acceptEn": [],
     "targets": [
-      "g:stem-boot",
+      "p:days-el-lunes",
       "l:sábado",
       "l:vez"
     ],
@@ -19666,9 +19655,9 @@
     "source": "gen",
     "requires": [
       "g:gender-articles",
-      "g:stem-boot",
+      "g:present-er-ir",
+      "l:abrir",
       "l:café",
-      "l:empezar",
       "l:sábado",
       "l:vez",
       "p:days-el-lunes",
@@ -19741,8 +19730,8 @@
   },
   {
     "id": "u03-0815",
-    "es": "¿Quién va a ser el mesero? ¿Tomás?",
-    "en": "Who's going to be the waiter? Tomás?",
+    "es": "¿Quién va a abrir el café? ¿Simón?",
+    "en": "Who's going to open the café? Simón?",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -19758,11 +19747,10 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "g:questions",
-      "g:ser-identity",
+      "l:abrir",
+      "l:café",
       "l:ir",
-      "l:mesero",
-      "l:quién",
-      "l:ser"
+      "l:quién"
     ]
   },
   {
@@ -19842,8 +19830,8 @@
   },
   {
     "id": "u03-0819",
-    "es": "Tomás, ¿puedes cocinar el sábado?\nSí, puedo.",
-    "en": "Tomás, can you cook on Saturday?\nYes, I can.",
+    "es": "Tomás, ¿puedes cocinar el sábado?\n¿Yo? No, Vale. No puedo.",
+    "en": "Tomás, can you cook on Saturday?\nMe? No, Vale. I can't.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -19870,14 +19858,13 @@
   },
   {
     "id": "u03-0820",
-    "es": "¿Qué quiere Simón?\n¡Pizza!",
-    "en": "What does Simón want?\nPizza!",
+    "es": "¿Qué quiere Simón?\n¡Arepa!",
+    "en": "What does Simón want?\nArepa!",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:questions",
-      "g:stem-boot",
-      "l:pizza"
+      "g:stem-boot"
     ],
     "kind": "dialogue",
     "unit": "u03",
@@ -19886,7 +19873,7 @@
     "requires": [
       "g:questions",
       "g:stem-boot",
-      "l:pizza",
+      "l:arepa",
       "l:querer",
       "l:qué"
     ]
@@ -20221,8 +20208,8 @@
   },
   {
     "id": "u03-0835",
-    "es": "Tomás deja el horario en la computadora.",
-    "en": "Tomás leaves the timetable on the computer.",
+    "es": "Tomás deja el libro de Rosa en el café.",
+    "en": "Tomás leaves Rosa's book at the café.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -20235,9 +20222,9 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:computadora",
+      "l:café",
       "l:dejar",
-      "l:horario"
+      "l:libro"
     ]
   },
   {
@@ -21058,14 +21045,13 @@
   },
   {
     "id": "u03-0868",
-    "es": "Tomás no quiere cerrar el café de su abuela.",
-    "en": "Tomás doesn't want to close his grandmother's café.",
+    "es": "Vale no quiere cerrar el café de Rosa.",
+    "en": "Vale doesn't want to close Rosa's café.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:stem-boot",
-      "g:verb-infinitive",
-      "p:possessives-basic"
+      "g:verb-infinitive"
     ],
     "kind": "statement",
     "unit": "u03",
@@ -21075,11 +21061,9 @@
       "g:gender-articles",
       "g:stem-boot",
       "g:verb-infinitive",
-      "l:abuela",
       "l:café",
       "l:cerrar",
-      "l:querer",
-      "p:possessives-basic"
+      "l:querer"
     ]
   },
   {
@@ -21534,8 +21518,8 @@
   },
   {
     "id": "u03-0887",
-    "es": "No queremos cerrar el café, señor Altamira.",
-    "en": "We don't want to close the café, Mr Altamira.",
+    "es": "No queremos cerrar el café, señor Ruiz.",
+    "en": "We don't want to close the café, Mr Ruiz.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -23090,8 +23074,8 @@
   },
   {
     "id": "u03-0949",
-    "es": "Simón quiere dormir en la oficina de Tomás.",
-    "en": "Simón wants to sleep in Tomás's office.",
+    "es": "Simón no quiere dormir: quiere cantar.",
+    "en": "Simón doesn't want to sleep: he wants to sing.",
     "accept": [],
     "acceptEn": [],
     "targets": [
@@ -23103,11 +23087,10 @@
     "theme": "historia: el café",
     "source": "gen",
     "requires": [
-      "g:gender-articles",
       "g:stem-boot",
       "g:verb-infinitive",
+      "l:cantar",
       "l:dormir",
-      "l:oficina",
       "l:querer"
     ]
   },
@@ -23842,13 +23825,12 @@
   },
   {
     "id": "u03-0980",
-    "es": "¿Necesita usted algo para el carro, don Hernando?",
-    "en": "Do you (formal) need anything for the car, don Hernando?",
+    "es": "¿Necesita algo del centro, don Hernando?",
+    "en": "Do you (formal) need anything from downtown, don Hernando?",
     "accept": [],
     "acceptEn": [],
     "targets": [
-      "p:indefinites-basic",
-      "p:para-inf"
+      "p:indefinites-basic"
     ],
     "kind": "question",
     "unit": "u03",
@@ -23857,11 +23839,10 @@
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:carro",
+      "l:centro",
       "l:necesitar",
       "p:don-dona-nombre",
       "p:indefinites-basic",
-      "p:para-inf",
       "p:senor-don-article"
     ]
   },
@@ -24067,14 +24048,13 @@
   },
   {
     "id": "u03-0988",
-    "es": "¿Por qué Tomás prefiere ver el partido?\nPorque baila muy mal.",
-    "en": "Why does Tomás prefer to watch the match?\nBecause he dances really badly.",
+    "es": "¿Por qué Tomás no quiere ir a la fiesta?\nPorque baila muy mal.",
+    "en": "Why doesn't Tomás want to go to the party?\nBecause he dances really badly.",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:stem-boot",
       "l:bailar",
-      "l:partido",
       "p:prep-questions-basic",
       "p:quantifiers-basic"
     ],
@@ -24088,18 +24068,20 @@
       "g:gender-articles",
       "g:present-ar",
       "g:stem-boot",
+      "g:verb-infinitive",
       "l:bailar",
+      "l:fiesta",
+      "l:ir",
       "l:mal",
-      "l:partido",
-      "l:preferir",
+      "l:querer",
       "l:qué",
-      "l:ver",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
       "p:hedge-knowledge",
-      "p:prefieres-x-o-y",
+      "p:ir-a-venir-de-place",
       "p:prep-questions-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:te-invito-a"
     ]
   },
   {
@@ -24731,27 +24713,24 @@
   },
   {
     "id": "u03-1012",
-    "es": "¡Qué pena! Mariana no puede venir.",
-    "en": "What a shame! Mariana can't come.",
+    "es": "¡Qué pena con usted, don Hernando! No hay tinto.",
+    "en": "I'm so sorry, don Hernando! There's no black coffee.",
     "accept": [],
     "acceptEn": [],
-    "targets": [
-      "g:stem-boot",
-      "g:verb-infinitive",
-      "l:venir"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u03",
     "theme": "ocio: reaccionar",
     "source": "gen",
     "requires": [
+      "c:hay",
       "c:que-pena",
-      "g:stem-boot",
-      "g:verb-infinitive",
+      "g:hay-vs-esta",
       "l:pena",
-      "l:poder",
       "l:qué",
-      "l:venir"
+      "l:tinto",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ]
   },
   {
@@ -24898,13 +24877,12 @@
   },
   {
     "id": "u03-1019",
-    "es": "¿Quieres algo, Simón?\n¡Pizza!",
-    "en": "Do you want anything, Simón?\nPizza!",
+    "es": "¿Quieres algo, Simón?\n¡Arepa!",
+    "en": "Do you want anything, Simón?\nArepa!",
     "accept": [],
     "acceptEn": [],
     "targets": [
       "g:stem-boot",
-      "l:pizza",
       "p:indefinites-basic"
     ],
     "kind": "dialogue",
@@ -24913,7 +24891,7 @@
     "source": "gen",
     "requires": [
       "g:stem-boot",
-      "l:pizza",
+      "l:arepa",
       "l:querer",
       "p:indefinites-basic"
     ]

@@ -2,7 +2,7 @@
   "id": "sc-u03-c",
   "unit": "u03",
   "title": "Don Hernando's questions",
-  "brief": "Don Hernando sits at his usual table and wants to know everything about you. Answer his questions about what you like, what you play, and where you're going on Sunday. Use usted with him.",
+  "brief": "Don Hernando sits at his usual table and wants to know everything about you. Take his order, then answer his questions about what you like, what you play and where you're going on Sunday. Use usted with him; he uses tú with you.",
   "turns": [
     {
       "id": "t1",
@@ -11,7 +11,7 @@
       "intent": "He's your customer. Ask him politely what he'd like, using usted.",
       "accept": [
         "¿Qué quiere usted, don Hernando?",
-        "¿Qué quiere, don Hernando?",
+        "Bien, gracias. ¿Qué quiere, don Hernando?",
         "¿Usted qué quiere, don Hernando?"
       ],
       "require": [
@@ -30,7 +30,7 @@
     },
     {
       "id": "t2",
-      "npc": "Un tinto, claro. ¿Y a usted? ¿Le gusta el tinto?",
+      "npc": "Un tinto, claro. ¿Y a ti? ¿Te gusta el tinto?",
       "npcEn": "A black coffee, of course. And you? Do you like black coffee?",
       "intent": "Say you don't like black coffee: you prefer hot chocolate.",
       "accept": [
@@ -54,13 +54,13 @@
     },
     {
       "id": "t3",
-      "npc": "¿Chocolate? ¡Ay, no! ¿Y usted juega al fútbol?",
-      "npcEn": "Hot chocolate? Oh, no! And do you play football?",
-      "intent": "Say yes, you play football on Sundays.",
+      "npc": "¿Chocolate? ¡Ay, no! ¿Y juegas al fútbol, Tomás?",
+      "npcEn": "Hot chocolate? Oh, no! And do you play football, Tomás?",
+      "intent": "Say no, you don't play football: you'd rather swim.",
       "accept": [
-        "Sí, juego al fútbol los domingos.",
-        "Sí, juego fútbol los domingos.",
-        "Sí, los domingos juego al fútbol."
+        "No, no juego al fútbol. Prefiero nadar.",
+        "No juego al fútbol: prefiero nadar.",
+        "No, no juego fútbol. Prefiero nadar."
       ],
       "require": [
         {
@@ -70,8 +70,7 @@
           "person": "yo"
         },
         {
-          "type": "containsWord",
-          "word": "los domingos"
+          "type": "negation"
         }
       ],
       "focus": "p:jugar-a",
@@ -79,8 +78,8 @@
     },
     {
       "id": "t4",
-      "npc": "Yo no juego. Yo camino. ¿Y adónde va el domingo?",
-      "npcEn": "I don't play. I walk. And where are you going on Sunday?",
+      "npc": "¿Nadar? ¿En Bogotá? ¡Qué frío! Yo no juego: yo camino. ¿Y adónde vas el domingo?",
+      "npcEn": "Swim? In Bogotá? So cold! I don't play: I walk. And where are you going on Sunday?",
       "intent": "Say you're going to the park with Vale.",
       "accept": [
         "Voy al parque con Vale.",
@@ -98,13 +97,13 @@
     },
     {
       "id": "t5",
-      "npc": "¿Con Vale? ¡Qué chévere! Los domingos no trabajo. Simón tampoco.",
-      "npcEn": "With Vale? How nice! I don't work on Sundays. Neither does Simón.",
-      "intent": "Say 'me neither'.",
+      "npc": "¿Con Vale? ¡Qué chévere! Yo no entiendo el fútbol de hoy. Es muy aburrido.",
+      "npcEn": "With Vale? How nice! I don't understand today's football. It's very boring.",
+      "intent": "Agree: you don't understand it either.",
       "accept": [
         "Yo tampoco.",
-        "Yo tampoco trabajo los domingos.",
-        "Tampoco trabajo los domingos."
+        "Yo tampoco entiendo el fútbol.",
+        "Tampoco entiendo el fútbol de hoy."
       ],
       "require": [
         {
@@ -117,10 +116,13 @@
     }
   ],
   "requires": [
+    "c:a-mi-tambien",
     "c:bien-y-tu",
     "c:claro-listo",
+    "c:gracias-de-nada",
     "c:hola-buenos-dias",
     "c:me-gusta",
+    "c:no-entiendo",
     "c:no-me-gusta-nada",
     "c:que-chevere",
     "c:que-mas",
@@ -129,10 +131,14 @@
     "g:gender-articles",
     "g:gustar-basic",
     "g:ir-a-plans",
+    "g:prep-pronouns",
     "g:present-ar",
     "g:questions",
+    "g:ser-identity",
     "g:stem-boot",
+    "l:aburrido",
     "l:adónde",
+    "l:bien",
     "l:bueno",
     "l:caminar",
     "l:chocolate",
@@ -140,21 +146,29 @@
     "l:claro",
     "l:domingo",
     "l:día",
+    "l:entender",
+    "l:frío",
     "l:fútbol",
     "l:gustar",
+    "l:hoy",
     "l:ir",
     "l:jugar",
+    "l:nadar",
     "l:parque",
     "l:preferir",
     "l:querer",
     "l:qué",
+    "l:ser",
     "l:tinto",
-    "l:trabajar",
+    "p:aburrir-aburrirse",
     "p:days-el-lunes",
     "p:don-dona-nombre",
+    "p:exclamations-basic",
     "p:ir-a-venir-de-place",
     "p:jugar-a",
+    "p:no-es-x-es-y",
     "p:prefieres-x-o-y",
+    "p:quantifiers-basic",
     "p:senor-don-article",
     "p:tambien-tampoco"
   ]

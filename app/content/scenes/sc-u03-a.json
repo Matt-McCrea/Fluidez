@@ -1,18 +1,18 @@
 {
   "id": "sc-u03-a",
   "unit": "u03",
-  "title": "Saturday at the café",
-  "brief": "You're Tomás. Vale wants the café open on Saturday and needs to know what you'll do. Say what you like, agree on a plan, and tell her what you're going to do.",
+  "title": "The night before",
+  "brief": "You're Tomás. The café reopens on Saturday and Vale is handing out jobs. Tell her what you like, choose a drink, agree a time and say what you're going to do on Sunday.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Bueno, Tomás. El sábado es la fiesta del café. ¿Te gusta cocinar?",
-      "npcEn": "OK, Tomás. Saturday is the café's party. Do you like cooking?",
-      "intent": "Tell Vale you don't like cooking, but you like talking to customers.",
+      "npc": "Bueno, Tomás. El sábado abrimos. ¿Te gusta cocinar?",
+      "npcEn": "OK, Tomás. We open on Saturday. Do you like cooking?",
+      "intent": "Tell Vale you don't like cooking, but you like her bread.",
       "accept": [
-        "No me gusta cocinar, pero me gusta hablar con los clientes.",
-        "No me gusta cocinar. Me gusta hablar con los clientes.",
-        "No, no me gusta cocinar, pero me gusta hablar con los clientes."
+        "No me gusta cocinar, pero me gusta tu pan.",
+        "No, no me gusta cocinar. Pero me gusta tu pan.",
+        "No me gusta nada cocinar, pero me gusta tu pan."
       ],
       "require": [
         {
@@ -28,8 +28,8 @@
     },
     {
       "id": "t2",
-      "npc": "Listo, entonces vas a ser el mesero. ¿Prefieres el tinto o el chocolate?",
-      "npcEn": "Right, so you're going to be the waiter. Do you prefer black coffee or hot chocolate?",
+      "npc": "Bueno, entonces no vas a cocinar: vas a hacer el tinto. ¿Y tú prefieres el tinto o el chocolate?",
+      "npcEn": "OK, so you're not going to cook: you're going to make the black coffee. And do you prefer black coffee or hot chocolate?",
       "intent": "Choose one of the two.",
       "accept": [
         "Prefiero el tinto.",
@@ -53,11 +53,11 @@
     },
     {
       "id": "t3",
-      "npc": "Yo también. Don Hernando viene con los amigos del parque, y Simón quiere la pizza de todos. ¿Puedes a las seis?",
-      "npcEn": "Me too. Don Hernando is coming with his friends from the park, and Simón wants everyone's pizza. Can you make it at six?",
+      "npc": "Listo. Don Hernando viene con los amigos del parque, y Simón quiere la arepa de todos. ¿Puedes venir a las seis?",
+      "npcEn": "Right. Don Hernando is coming with his friends from the park, and Simón wants everyone's arepa. Can you come at six?",
       "intent": "Say you can't at six, but you can at seven.",
       "accept": [
-        "No puedo a las seis, pero puedo a las siete.",
+        "No puedo venir a las seis, pero puedo a las siete.",
         "A las seis no puedo, pero a las siete sí.",
         "No puedo a las seis. Puedo a las siete."
       ],
@@ -78,12 +78,12 @@
     },
     {
       "id": "t4",
-      "npc": "¿A las siete? Bueno. ¿Y qué vas a hacer el domingo?",
-      "npcEn": "At seven? Fine. And what are you going to do on Sunday?",
+      "npc": "¿A las siete? Abrimos a las seis, Tomás... Bueno. ¿Y qué vas a hacer el domingo?",
+      "npcEn": "At seven? We open at six, Tomás... Fine. And what are you going to do on Sunday?",
       "intent": "Tell her two things you're going to do on Sunday.",
       "accept": [
-        "Voy a caminar en el parque y voy a leer.",
-        "El domingo voy a nadar y voy a caminar.",
+        "Voy a leer y voy a ver una película.",
+        "El domingo voy a dormir y voy a caminar.",
         "Voy a pasar el día en el parque y voy a llamar a Mariana."
       ],
       "require": [
@@ -122,11 +122,14 @@
     }
   ],
   "requires": [
+    "c:a-ver",
+    "c:bien-y-tu",
     "c:chao-nos-vemos",
     "c:claro-listo",
     "c:entonces-bueno",
     "c:gracias-de-nada",
     "c:me-gusta",
+    "c:no-me-gusta-nada",
     "c:puedo",
     "c:que-chevere",
     "c:voy-a",
@@ -134,37 +137,36 @@
     "g:gender-articles",
     "g:gustar-basic",
     "g:ir-a-plans",
+    "g:negation-words",
+    "g:present-er-ir",
     "g:questions",
-    "g:ser-identity",
     "g:stem-boot",
+    "g:verb-infinitive",
+    "l:abrir",
     "l:amigo",
+    "l:arepa",
     "l:bueno",
-    "l:café",
     "l:caminar",
     "l:chocolate",
     "l:chévere",
-    "l:cliente",
     "l:cocinar",
     "l:domingo",
+    "l:dormir",
     "l:día",
-    "l:fiesta",
     "l:gustar",
-    "l:hablar",
     "l:hacer",
     "l:ir",
     "l:leer",
     "l:listo",
     "l:llamar",
-    "l:mesero",
-    "l:nadar",
+    "l:pan",
     "l:parque",
     "l:pasar",
-    "l:pizza",
+    "l:película",
     "l:poder",
     "l:preferir",
     "l:querer",
     "l:qué",
-    "l:ser",
     "l:sábado",
     "l:tinto",
     "l:venir",
@@ -172,9 +174,10 @@
     "p:days-el-lunes",
     "p:nos-vemos-a-las",
     "p:personal-a",
+    "p:possessives-basic",
     "p:prefieres-x-o-y",
+    "p:request-ladder",
     "p:senor-don-article",
-    "p:tambien-tampoco",
     "p:telling-time"
   ]
 }

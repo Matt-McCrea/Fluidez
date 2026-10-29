@@ -48,8 +48,8 @@
     },
     {
       "id": "t3",
-      "npc": "Las películas de fútbol, ¡claro! Hay una el sábado en el cine del centro. ¿Vamos?",
-      "npcEn": "Football films, of course! There's one on Saturday at the cinema downtown. Shall we go?",
+      "npc": "Las películas colombianas. Hay una el sábado en el cine del centro. ¿Vamos?",
+      "npcEn": "Colombian films. There's one on Saturday at the cinema downtown. Shall we go?",
       "intent": "Accept enthusiastically, the Colombian way.",
       "accept": [
         "¡De una!",
@@ -73,8 +73,8 @@
     },
     {
       "id": "t4",
-      "npc": "Listo. El sábado no puedo a las cinco. ¿Puedes a las ocho?",
-      "npcEn": "Great. On Saturday I can't make five. Can you do eight?",
+      "npc": "Listo. El sábado trabajo hasta las seis. ¿Puedes a las ocho?",
+      "npcEn": "Great. On Saturday I work until six. Can you make it at eight?",
       "intent": "Say yes, you can at eight.",
       "accept": [
         "Sí, puedo a las ocho.",
@@ -92,25 +92,18 @@
     },
     {
       "id": "t5",
-      "npc": "Listo. Yo voy del trabajo al cine. ¿Y tú?",
-      "npcEn": "Great. I'm going from work to the cinema. And you?",
-      "intent": "Say you're going from the park to the cinema.",
+      "npc": "Bueno. Yo voy al cine del trabajo. ¿Y tú?",
+      "npcEn": "OK. I'm going to the cinema from work. And you?",
+      "intent": "Say you're going from the park.",
       "accept": [
-        "Voy al cine del parque.",
+        "Yo voy del parque.",
         "Voy del parque al cine.",
-        "Del parque voy al cine."
+        "Yo, del parque."
       ],
       "require": [
         {
           "type": "containsWord",
-          "word": "parque"
-        },
-        {
-          "type": "containsAny",
-          "words": [
-            "al cine",
-            "del parque"
-          ]
+          "word": "del parque"
         }
       ],
       "focus": "p:ir-a-venir-de-place",
@@ -120,6 +113,7 @@
   "requires": [
     "c:bien-y-tu",
     "c:claro-listo",
+    "c:entonces-bueno",
     "c:hay",
     "c:me-gusta",
     "c:puedo",
@@ -128,6 +122,7 @@
     "c:quiubo",
     "c:vamos-a",
     "c:voy-vas",
+    "g:adjective-agreement",
     "g:gender-articles",
     "g:gustar-basic",
     "g:hay-vs-esta",
@@ -136,12 +131,14 @@
     "g:questions",
     "g:stem-boot",
     "l:bailar",
+    "l:bueno",
     "l:caminar",
     "l:centro",
     "l:chévere",
     "l:cine",
     "l:claro",
     "l:cocinar",
+    "l:colombiano",
     "l:fin",
     "l:fútbol",
     "l:gustar",
@@ -159,6 +156,7 @@
     "l:semana",
     "l:sábado",
     "l:tipo",
+    "l:trabajar",
     "l:trabajo",
     "l:ver",
     "p:days-el-lunes",
