@@ -1,0 +1,195 @@
+{
+  "id": "ch018",
+  "unit": "u08",
+  "title": "El traje de domingo",
+  "text": "Entra un hombre con traje negro, y Tomás sale del mostrador.\nTomás: ¡Hoy no, señor Altamira!\nHernando: Tomás, soy yo. Es mi traje de domingo. Mi esposa compró el traje en 1985.\nHernando: Hoy subo a Monserrate. ¿Tú has subido a Monserrate?\nTomás: Nunca he subido.\nVale: ¿Nunca? ¿Y has comido ajiaco?\nTomás: No.\nHernando: ¿Has jugado tejo?\nTomás: ¿Tejo? Ni idea.\nVale y Hernando miran a Tomás. Están blancos.\nVale: Julio: ajiaco. Está en el cuaderno de Rosa, y tú nunca has comido ajiaco.\nTomás: Pero he montado en avión cuarenta veces. Conozco todos los aeropuertos de Canadá.\nHernando: Yo nunca he montado en avión. Nunca he salido de Colombia. Pero he montado a caballo.\nVale: ¿Y el contrato de arriendo del café? ¿Has leído el contrato?\nSimón: ¡Ni idea! ¡No tengo ni idea!\nTomás: Gracias, Simón. Está en el armario, con la carta de Rosa.\nVale: Quedan diecinueve días, Tomás.\nHernando: Hoy, ajiaco. Mañana, tejo. Y el domingo, Monserrate.\nOtro hombre entra. Tiene un traje muy bonito y muy caro.\nHombre: Buenos días. Un capuchino, por favor.\nSimón no habla. Es la primera vez.",
+  "gloss": [
+    {
+      "es": "el mostrador",
+      "en": "the counter"
+    },
+    {
+      "es": "Mi esposa compró el traje en 1985.",
+      "en": "My wife bought the suit in 1985."
+    },
+    {
+      "es": "Monserrate",
+      "en": "Monserrate (the mountain above Bogotá, with a church on top)"
+    },
+    {
+      "es": "el tejo",
+      "en": "tejo (a Colombian game: you throw a metal disc at gunpowder targets)"
+    },
+    {
+      "es": "Están blancos.",
+      "en": "They have gone pale."
+    },
+    {
+      "es": "Conozco todos los aeropuertos de Canadá.",
+      "en": "I know every airport in Canada."
+    },
+    {
+      "es": "el contrato de arriendo",
+      "en": "the lease"
+    },
+    {
+      "es": "un capuchino",
+      "en": "a cappuccino"
+    },
+    {
+      "es": "Es la primera vez.",
+      "en": "It is the first time ever."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Tomás shout «¡Hoy no, señor Altamira!»?",
+      "options": [
+        "He thinks the man in the black suit is Altamira, but it is Hernando",
+        "Altamira has phoned the café",
+        "He is talking to Simón",
+        "He wants Hernando to leave"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What horrifies Vale and Hernando?",
+      "options": [
+        "Tomás has never climbed Monserrate, never eaten ajiaco and never played tejo",
+        "Tomás has never been on a plane",
+        "Tomás cannot make a tinto",
+        "Tomás has sold the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Hernando proud of, even though he has never been on a plane?",
+      "options": [
+        "He has ridden a horse",
+        "He has been to Canada",
+        "He has read the lease",
+        "He has climbed Monserrate forty times"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Dónde está el contrato de arriendo?",
+      "options": [
+        "En el armario, con la carta de Rosa",
+        "En la vitrina",
+        "En el aeropuerto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is the last line about Simón surprising?",
+      "options": [
+        "Simón always talks, and for once he says nothing",
+        "Simón is sleeping",
+        "Simón orders a cappuccino",
+        "Simón leaves the café"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "A stranger in a beautiful, expensive suit has ordered the first cappuccino in the history of La Esquina de Rosa, and Simón has gone quiet. Tomorrow the stranger wants to talk.",
+  "rereadQuestions": [
+    {
+      "q": "Who bought Hernando's suit, and when?",
+      "options": [
+        "His wife, in 1985",
+        "Rosa, in 1978",
+        "Vale, last week",
+        "He bought it in Canada"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many days are left in the bet?",
+      "options": [
+        "Nineteen",
+        "Twenty",
+        "Thirty",
+        "Forty"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Hernando's plan for Sunday?",
+      "options": [
+        "Monserrate",
+        "Tejo",
+        "Ajiaco",
+        "A football match"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:ni-idea",
+    "c:por-favor",
+    "c:si-soy-yo",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:perfecto-experience",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "p:possessives-basic",
+    "p:quantifiers-basic"
+  ],
+  "lexemes": [
+    "l:aeropuerto",
+    "l:ajiaco",
+    "l:armario",
+    "l:arriendo",
+    "l:avión",
+    "l:blanco",
+    "l:bonito",
+    "l:bueno",
+    "l:caballo",
+    "l:café",
+    "l:caro",
+    "l:carta",
+    "l:comer",
+    "l:comprar",
+    "l:conocer",
+    "l:contrato",
+    "l:cuaderno",
+    "l:domingo",
+    "l:día",
+    "l:entrar",
+    "l:esposa",
+    "l:estar",
+    "l:favor",
+    "l:hablar",
+    "l:hombre",
+    "l:hoy",
+    "l:idea",
+    "l:jugar",
+    "l:julio",
+    "l:leer",
+    "l:mañana",
+    "l:mirar",
+    "l:montar",
+    "l:mostrador",
+    "l:negro",
+    "l:quedar",
+    "l:salir",
+    "l:ser",
+    "l:señor",
+    "l:subir",
+    "l:tener",
+    "l:traje",
+    "l:vez"
+  ]
+}

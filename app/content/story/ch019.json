@@ -1,0 +1,194 @@
+{
+  "id": "ch019",
+  "unit": "u08",
+  "title": "Hoteles con paisaje",
+  "text": "Tomás hace el primer capuchino de su vida.\nHombre: ¿Usted es turista?\nTomás: Soy el nieto de Rosa.\nHombre: Yo viajo mucho. Este año he visitado catorce pueblos.\nEn su celular hay fotos de la costa: una playa, una isla, el mar.\nHombre: ¿Ha estado en la costa?\nTomás: Todavía no.\nHombre: Y mire este paisaje: la montaña, el río, una finca con cafetal. Allá los turistas toman tinto del cafetal.\nVale: ¿Qué está haciendo Tomás? ¿Está mirando fotos de vacaciones?\nHernando: Está trabajando, mija.\nHernando: Mi esposa y yo visitamos el mar una vez. Fue el único viaje de mi vida.\nHombre: ¿Y usted, señor Herrera? ¿Ha tenido vacaciones?\nTomás: Nunca en la vida.\nHombre: Una maleta, un viaje, una isla. Usted puede viajar. ¿Ha pensado vender el café?\nTomás: ¿Cómo sabe mi apellido?\nEl hombre deja cincuenta mil pesos de propina. El capuchino cuesta cinco mil.\nSimón: ¡Qué envidia! ¡Qué envidia!\nEn la mesa hay una tarjeta: «Ricardo Altamira. Hoteles con paisaje: en la playa, en el río, en una finca de montaña, en un pueblo».\nEsa noche, Tomás mira su maleta.",
+  "gloss": [
+    {
+      "es": "un capuchino",
+      "en": "a cappuccino"
+    },
+    {
+      "es": "el primer capuchino de su vida",
+      "en": "the first cappuccino of his life"
+    },
+    {
+      "es": "catorce pueblos",
+      "en": "fourteen towns"
+    },
+    {
+      "es": "Está trabajando, mija.",
+      "en": "He is working, my dear."
+    },
+    {
+      "es": "¿Ha pensado vender el café?",
+      "en": "Have you thought about selling the café?"
+    },
+    {
+      "es": "cincuenta mil pesos de propina",
+      "en": "a fifty thousand peso tip"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the man show Tomás on his phone?",
+      "options": [
+        "Photos of beaches, islands, mountains and coffee farms",
+        "Photos of Rosa",
+        "The lease of the café",
+        "Photos of Toronto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Hernando's answer «Está trabajando, mija» funny?",
+      "options": [
+        "Tomás is just looking at holiday photos with a customer",
+        "Tomás is really working very hard",
+        "Hernando is asleep",
+        "Vale is the one working"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What makes Tomás suspicious?",
+      "options": [
+        "The man knows his surname",
+        "The man speaks English",
+        "The man has no money",
+        "The man knows Simón"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cuánto cuesta el capuchino?",
+      "options": [
+        "Cinco mil pesos",
+        "Cincuenta mil pesos",
+        "Catorce mil pesos"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the card tell them?",
+      "options": [
+        "The man is Ricardo Altamira, and he builds hotels",
+        "The man is a tourist from Cartagena",
+        "The man is Joaquín",
+        "The man sells coffee farms"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Ricardo Altamira has been in the café, drunk a cappuccino and asked Tomás to sell. That night Tomás is looking at his suitcase.",
+  "rereadQuestions": [
+    {
+      "q": "What was the only trip of Hernando's life?",
+      "options": [
+        "A trip to the sea with his wife",
+        "A trip to Canada",
+        "A trip to Monserrate",
+        "A trip to a coffee farm with Rosa"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Has Tomás ever been to the coast?",
+      "options": [
+        "Not yet",
+        "Yes, once",
+        "Yes, many times",
+        "He lives there"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hacen los turistas en la finca, según el hombre?",
+      "options": [
+        "Toman tinto del cafetal",
+        "Compran maletas",
+        "Visitan el mar"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:hay",
+    "c:nunca-en-la-vida",
+    "c:oye-mira",
+    "c:que-envidia",
+    "c:todavia-no",
+    "c:una-vez",
+    "g:demonstratives",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:perfecto-experience",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "p:demonstratives-basic",
+    "p:possessives-basic",
+    "p:quantifiers-basic"
+  ],
+  "lexemes": [
+    "l:allá",
+    "l:apellido",
+    "l:año",
+    "l:cafetal",
+    "l:café",
+    "l:celular",
+    "l:costa",
+    "l:costar",
+    "l:cómo",
+    "l:dejar",
+    "l:envidia",
+    "l:esposa",
+    "l:estar",
+    "l:finca",
+    "l:foto",
+    "l:hacer",
+    "l:hombre",
+    "l:hotel",
+    "l:isla",
+    "l:maleta",
+    "l:mar",
+    "l:mesa",
+    "l:mirar",
+    "l:montaña",
+    "l:nieto",
+    "l:noche",
+    "l:paisaje",
+    "l:pensar",
+    "l:peso",
+    "l:playa",
+    "l:poder",
+    "l:propina",
+    "l:pueblo",
+    "l:qué",
+    "l:río",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:tarjeta",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:trabajar",
+    "l:turista",
+    "l:vacación",
+    "l:vender",
+    "l:vez",
+    "l:viajar",
+    "l:viaje",
+    "l:vida",
+    "l:visitar",
+    "l:único"
+  ]
+}
