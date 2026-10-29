@@ -20,7 +20,7 @@
  *       (only the engine's own paradigms are) — Spanish is full of minimal
  *       accent pairs that are both correct (hablo/habló, esta/está).
  *
- * When app/content/vocab or graph lexeme nodes exist, the gate registers them
+ * When graph lexeme nodes exist, the gate registers them
  * at runtime on top of this (registerLexemes), so this file is a floor, not
  * the authority.
  * ========================================================================== */

@@ -39,14 +39,19 @@ const eventOp = (item: Item): string => (item.op === 'review' ? 'warmup' : item.
 
 export interface SceneRun { firstTry: number; turns: number; seconds: number }
 
+let fullLessonOnce = false;
+/** "Do the full lesson instead": the next session is the standard one, whatever the standing preference. Not a settings change. */
+export function requestFullLesson(): void { fullLessonOnce = true; }
+
 /**
- * Every session is the standard tier (the learner never picks a length); the
- * minutes come from the compiler's budget for the band being studied.
+ * The tier is the learner's standing preference (Settings), unless `opts.tier`
+ * or a pending "full lesson instead" says otherwise for this one session. The
+ * minutes come from the compiler's budget for the band and tier.
  */
 export function compilePlan(learner: Learner, bundle: Bundle, ui: UiStore, opts: { mode?: Mode; now?: number; tier?: Tier } = {}): SessionPlan {
   return compileSession({
     learnerId: ui.state.learnerId, learner, path: ui.path, course: bundle.course, content: bundle.index,
-    now: opts.now ?? Date.now(), tier: opts.tier ?? 'standard', mode: opts.mode ?? 'next',
+    now: opts.now ?? Date.now(), tier: opts.tier ?? (fullLessonOnce ? 'standard' : learner.settings.tier), mode: opts.mode ?? 'next',
   });
 }
 
@@ -71,7 +76,7 @@ export function truncatable(b: Block): boolean {
 export const STOP_AFTER_MINUTES = 10;
 
 export function anotherAllowed(learner: Learner, bundle: Bundle, ui: UiStore, now = Date.now()): boolean {
-  return canDoAnother({ learner, path: ui.path, course: bundle.course, content: bundle.index, learnerId: ui.state.learnerId, now, tier: 'standard' });
+  return canDoAnother({ learner, path: ui.path, course: bundle.course, content: bundle.index, learnerId: ui.state.learnerId, now, tier: learner.settings.tier });
 }
 
 const refKey = (r: ServedRef) => `${r.kind}\u0000${r.id}\u0000${r.deliberate ? 1 : 0}\u0000${r.reason ?? ''}`;
@@ -113,6 +118,7 @@ export class SessionRunner {
     private readonly now: () => number = Date.now,
     opts: { capMinutes?: number } = {},
   ) {
+    fullLessonOnce = false;
     this.capMinutes = opts.capMinutes ?? plan.budget?.minutes ?? 20;
   }
 

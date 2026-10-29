@@ -175,6 +175,25 @@ describe('(i) bank requires is computed', () => {
   });
 });
 
+describe('(e2) spare scenes', () => {
+  test('a spare scene is gated at the end of its unit, a played one on its day', () => {
+    const fx = makeFixture();
+    const u = JSON.parse(readFileSync(join(fx.content, 'units/u01.json'), 'utf8'));
+    u.days[0].scene = 's01';
+    fx.write('units/u01.json', u);
+    const scene = (spare: boolean) => ({ id: 's01', unit: 'u01', title: 't', brief: 'b', spare, turns: [
+      { id: 't1', npc: 'Tomás habla español.', npcEn: 'Tomás speaks Spanish.', intent: 'greet', accept: ['Hola.'], next: 't2' },
+      { id: 't2', npc: 'Tomás habla español.', npcEn: 'Tomás speaks Spanish.', intent: 'x', accept: ['Hola.'], next: 't3' },
+      { id: 't3', npc: 'Listo.', npcEn: 'OK', intent: 'thank', accept: ['Gracias.'], next: null }] });
+    const p = fx.write('scenes/s01.json', scene(false));
+    const played = by(runGate({ appDir: fx.app, paths: [p], fix: true }), 'legality', 'error');
+    expect(played.some((f) => /present-ar/.test(f.problem))).toBe(true);
+    fx.write('scenes/s01.json', scene(true));
+    const spare = by(runGate({ appDir: fx.app, paths: [p], fix: true }), 'legality', 'error');
+    expect(spare).toEqual([]);
+  });
+});
+
 describe('(j) supply', () => {
   test('below quota warns; --strict fails', () => {
     const fx = makeFixture();
@@ -188,6 +207,21 @@ describe('(j) supply', () => {
     fx.write('units/_complete.json', ['A1']);
     const p = fx.write('bank/u01.json', [bank('u01-1', 'Tomás habla español.')]);
     expect(by(runGate({ appDir: fx.app, paths: [p], fix: true }), 'supply', 'error').length).toBeGreaterThan(0);
+  });
+});
+
+describe('(k) daySupply', () => {
+  test('a node whose only rows need a later-day node warns; rows usable that day pass', () => {
+    const fx = makeFixture();
+    // g:ser-identity is introduced on day 1; g:present-ar only on day 3
+    const late = Array.from({ length: 12 }, (_, i) => bank(`u01-${i + 1}`, `Tomás habla español ${i}.`, 'u01', { requires: ['g:ser-identity', 'g:present-ar'], targets: ['g:ser-identity'] }));
+    const p = fx.write('bank/u01.json', late);
+    const w = by(runGate({ appDir: fx.app, paths: [p] }), 'daySupply', 'warning');
+    expect(w.some((f) => /g:ser-identity on introduce day 1 .*0 usable rows, needs 9/.test(f.problem))).toBe(true);
+    const ok = Array.from({ length: 12 }, (_, i) => bank(`u01-${i + 1}`, `Tomás habla español ${i}.`, 'u01', { requires: ['g:ser-identity'], targets: ['g:ser-identity'] }));
+    fx.write('bank/u01.json', ok);
+    const w2 = by(runGate({ appDir: fx.app, paths: [p] }), 'daySupply', 'warning');
+    expect(w2.some((f) => /introduce day 1/.test(f.problem))).toBe(false);
   });
 });
 

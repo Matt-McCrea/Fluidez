@@ -1,0 +1,4739 @@
+{
+  "minimums": {
+    "structuredInput": 9,
+    "controlledOutput": 11,
+    "communicative": 4,
+    "unitByDrill": 40,
+    "firstDayRows": 12,
+    "firstDayQuestions": 6
+  },
+  "rows": 21856,
+  "days": [
+    {
+      "unit": "u01",
+      "day": 1,
+      "session": 1,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:ser-identity",
+          "block": "structuredInput",
+          "usable": 55,
+          "usableStrict": 0,
+          "questions": 15,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 56
+    },
+    {
+      "unit": "u01",
+      "day": 2,
+      "session": 2,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:ser-identity",
+          "block": "controlledOutput",
+          "usable": 56,
+          "usableStrict": 0,
+          "questions": 15,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 58
+    },
+    {
+      "unit": "u01",
+      "day": 3,
+      "session": 3,
+      "type": "introduce",
+      "nodes": [],
+      "remixUsable": 59
+    },
+    {
+      "unit": "u01",
+      "day": 4,
+      "session": 4,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:ser-identity",
+          "block": "controlledOutput",
+          "usable": 63,
+          "usableStrict": 0,
+          "questions": 19,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 69
+    },
+    {
+      "unit": "u01",
+      "day": 5,
+      "session": 5,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 95
+    },
+    {
+      "unit": "u01",
+      "day": 6,
+      "session": 6,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:gender-articles",
+          "block": "structuredInput",
+          "usable": 129,
+          "usableStrict": 25,
+          "questions": 25,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 263
+    },
+    {
+      "unit": "u01",
+      "day": 7,
+      "session": 7,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:gender-articles",
+          "block": "controlledOutput",
+          "usable": 143,
+          "usableStrict": 25,
+          "questions": 25,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:ser-profession-no-article",
+          "block": "controlledOutput",
+          "usable": 2,
+          "usableStrict": 0,
+          "questions": 0,
+          "min": 11,
+          "minQuestions": 4,
+          "short": true,
+          "shortQuestions": true
+        }
+      ],
+      "remixUsable": 344
+    },
+    {
+      "unit": "u01",
+      "day": 8,
+      "session": 8,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:present-ar",
+          "block": "structuredInput",
+          "usable": 170,
+          "usableStrict": 55,
+          "questions": 40,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 564
+    },
+    {
+      "unit": "u01",
+      "day": 9,
+      "session": 9,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:present-ar",
+          "block": "controlledOutput",
+          "usable": 207,
+          "usableStrict": 67,
+          "questions": 42,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:gender-articles",
+          "block": "controlledOutput",
+          "usable": 308,
+          "usableStrict": 84,
+          "questions": 59,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 672
+    },
+    {
+      "unit": "u01",
+      "day": 10,
+      "session": 10,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 674
+    },
+    {
+      "unit": "u02",
+      "day": 1,
+      "session": 11,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:present-er-ir",
+          "block": "structuredInput",
+          "usable": 40,
+          "usableStrict": 14,
+          "questions": 8,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 718
+    },
+    {
+      "unit": "u02",
+      "day": 2,
+      "session": 12,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:present-er-ir",
+          "block": "controlledOutput",
+          "usable": 58,
+          "usableStrict": 23,
+          "questions": 11,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:present-ar",
+          "block": "controlledOutput",
+          "usable": 225,
+          "usableStrict": 81,
+          "questions": 46,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:quantifiers-basic",
+          "block": "controlledOutput",
+          "usable": 5,
+          "usableStrict": 1,
+          "questions": 1,
+          "min": 11,
+          "minQuestions": 4,
+          "short": true,
+          "shortQuestions": true
+        },
+        {
+          "node": "p:possessives-basic",
+          "block": "controlledOutput",
+          "usable": 5,
+          "usableStrict": 1,
+          "questions": 3,
+          "min": 11,
+          "minQuestions": 4,
+          "short": true,
+          "shortQuestions": true
+        }
+      ],
+      "remixUsable": 761
+    },
+    {
+      "unit": "u02",
+      "day": 3,
+      "session": 13,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:estar-location-states",
+          "block": "structuredInput",
+          "usable": 46,
+          "usableStrict": 0,
+          "questions": 12,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 847
+    },
+    {
+      "unit": "u02",
+      "day": 4,
+      "session": 14,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:estar-location-states",
+          "block": "controlledOutput",
+          "usable": 55,
+          "usableStrict": 0,
+          "questions": 14,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:present-er-ir",
+          "block": "controlledOutput",
+          "usable": 67,
+          "usableStrict": 27,
+          "questions": 15,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:demonstratives-basic",
+          "block": "controlledOutput",
+          "usable": 14,
+          "usableStrict": 1,
+          "questions": 4,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 865
+    },
+    {
+      "unit": "u02",
+      "day": 5,
+      "session": 15,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:adjective-agreement",
+          "block": "structuredInput",
+          "usable": 31,
+          "usableStrict": 0,
+          "questions": 6,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 1035
+    },
+    {
+      "unit": "u02",
+      "day": 6,
+      "session": 16,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:adjective-agreement",
+          "block": "controlledOutput",
+          "usable": 52,
+          "usableStrict": 0,
+          "questions": 9,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:estar-location-states",
+          "block": "controlledOutput",
+          "usable": 154,
+          "usableStrict": 0,
+          "questions": 34,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:tener-hambre",
+          "block": "controlledOutput",
+          "usable": 44,
+          "usableStrict": 1,
+          "questions": 10,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:senor-don-article",
+          "block": "controlledOutput",
+          "usable": 75,
+          "usableStrict": 28,
+          "questions": 15,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 1186
+    },
+    {
+      "unit": "u02",
+      "day": 7,
+      "session": 17,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:questions",
+          "block": "structuredInput",
+          "usable": 105,
+          "usableStrict": 0,
+          "questions": 105,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 1319
+    },
+    {
+      "unit": "u02",
+      "day": 8,
+      "session": 18,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:questions",
+          "block": "controlledOutput",
+          "usable": 177,
+          "usableStrict": 0,
+          "questions": 177,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:adjective-agreement",
+          "block": "controlledOutput",
+          "usable": 56,
+          "usableStrict": 0,
+          "questions": 12,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:question-word-order",
+          "block": "controlledOutput",
+          "usable": 109,
+          "usableStrict": 0,
+          "questions": 109,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:prep-questions-basic",
+          "block": "controlledOutput",
+          "usable": 32,
+          "usableStrict": 0,
+          "questions": 32,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:bien-mal-vs-bueno-malo",
+          "block": "controlledOutput",
+          "usable": 0,
+          "usableStrict": 0,
+          "questions": 0,
+          "min": 11,
+          "minQuestions": 4,
+          "short": true,
+          "shortQuestions": true
+        }
+      ],
+      "remixUsable": 1447
+    },
+    {
+      "unit": "u02",
+      "day": 9,
+      "session": 19,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 1461
+    },
+    {
+      "unit": "u03",
+      "day": 1,
+      "session": 20,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:gustar-basic",
+          "block": "structuredInput",
+          "usable": 99,
+          "usableStrict": 0,
+          "questions": 42,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 1493
+    },
+    {
+      "unit": "u03",
+      "day": 2,
+      "session": 21,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:gustar-basic",
+          "block": "controlledOutput",
+          "usable": 127,
+          "usableStrict": 0,
+          "questions": 54,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:questions",
+          "block": "controlledOutput",
+          "usable": 183,
+          "usableStrict": 0,
+          "questions": 183,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 1544
+    },
+    {
+      "unit": "u03",
+      "day": 3,
+      "session": 22,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:stem-boot",
+          "block": "structuredInput",
+          "usable": 45,
+          "usableStrict": 25,
+          "questions": 27,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 1601
+    },
+    {
+      "unit": "u03",
+      "day": 4,
+      "session": 23,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:stem-boot",
+          "block": "controlledOutput",
+          "usable": 52,
+          "usableStrict": 30,
+          "questions": 30,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:gustar-basic",
+          "block": "controlledOutput",
+          "usable": 144,
+          "usableStrict": 0,
+          "questions": 63,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:exclamations-basic",
+          "block": "controlledOutput",
+          "usable": 3,
+          "usableStrict": 0,
+          "questions": 1,
+          "min": 11,
+          "minQuestions": 4,
+          "short": true,
+          "shortQuestions": true
+        },
+        {
+          "node": "p:indefinites-basic",
+          "block": "controlledOutput",
+          "usable": 4,
+          "usableStrict": 2,
+          "questions": 4,
+          "min": 11,
+          "minQuestions": 4,
+          "short": true,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 1618
+    },
+    {
+      "unit": "u03",
+      "day": 5,
+      "session": 24,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:verb-infinitive",
+          "block": "structuredInput",
+          "usable": 52,
+          "usableStrict": 16,
+          "questions": 15,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:que-tipo-de",
+          "block": "structuredInput",
+          "usable": 1,
+          "usableStrict": 1,
+          "questions": 0,
+          "min": 9,
+          "minQuestions": 0,
+          "short": true,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 1736
+    },
+    {
+      "unit": "u03",
+      "day": 6,
+      "session": 25,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:verb-infinitive",
+          "block": "controlledOutput",
+          "usable": 59,
+          "usableStrict": 23,
+          "questions": 16,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:stem-boot",
+          "block": "controlledOutput",
+          "usable": 195,
+          "usableStrict": 52,
+          "questions": 100,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:para-inf",
+          "block": "controlledOutput",
+          "usable": 12,
+          "usableStrict": 5,
+          "questions": 1,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": true
+        }
+      ],
+      "remixUsable": 1843
+    },
+    {
+      "unit": "u03",
+      "day": 7,
+      "session": 26,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:ir-a-plans",
+          "block": "structuredInput",
+          "usable": 185,
+          "usableStrict": 0,
+          "questions": 78,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 1943
+    },
+    {
+      "unit": "u03",
+      "day": 8,
+      "session": 27,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:ir-a-plans",
+          "block": "controlledOutput",
+          "usable": 283,
+          "usableStrict": 0,
+          "questions": 116,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:verb-infinitive",
+          "block": "controlledOutput",
+          "usable": 83,
+          "usableStrict": 40,
+          "questions": 22,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:days-el-lunes",
+          "block": "controlledOutput",
+          "usable": 1,
+          "usableStrict": 1,
+          "questions": 1,
+          "min": 11,
+          "minQuestions": 4,
+          "short": true,
+          "shortQuestions": true
+        }
+      ],
+      "remixUsable": 2181
+    },
+    {
+      "unit": "u03",
+      "day": 9,
+      "session": 28,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 2184
+    },
+    {
+      "unit": "u04",
+      "day": 1,
+      "session": 29,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:preterite-ar",
+          "block": "structuredInput",
+          "usable": 87,
+          "usableStrict": 41,
+          "questions": 43,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 2300
+    },
+    {
+      "unit": "u04",
+      "day": 2,
+      "session": 30,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:preterite-ar",
+          "block": "controlledOutput",
+          "usable": 113,
+          "usableStrict": 55,
+          "questions": 47,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:ir-a-plans",
+          "block": "controlledOutput",
+          "usable": 301,
+          "usableStrict": 0,
+          "questions": 121,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:me-te-nos-objects",
+          "block": "controlledOutput",
+          "usable": 36,
+          "usableStrict": 15,
+          "questions": 13,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 2328
+    },
+    {
+      "unit": "u04",
+      "day": 3,
+      "session": 31,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:preterite-er-ir",
+          "block": "structuredInput",
+          "usable": 82,
+          "usableStrict": 33,
+          "questions": 29,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 2420
+    },
+    {
+      "unit": "u04",
+      "day": 4,
+      "session": 32,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:preterite-er-ir",
+          "block": "controlledOutput",
+          "usable": 87,
+          "usableStrict": 34,
+          "questions": 29,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:preterite-ar",
+          "block": "controlledOutput",
+          "usable": 135,
+          "usableStrict": 69,
+          "questions": 52,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:time-sequence-basic",
+          "block": "controlledOutput",
+          "usable": 16,
+          "usableStrict": 4,
+          "questions": 4,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 2434
+    },
+    {
+      "unit": "u04",
+      "day": 5,
+      "session": 33,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 2506
+    },
+    {
+      "unit": "u04",
+      "day": 6,
+      "session": 34,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:preterite-ser-ir-hacer",
+          "block": "structuredInput",
+          "usable": 161,
+          "usableStrict": 22,
+          "questions": 59,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 2648
+    },
+    {
+      "unit": "u04",
+      "day": 7,
+      "session": 35,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:preterite-ser-ir-hacer",
+          "block": "controlledOutput",
+          "usable": 162,
+          "usableStrict": 22,
+          "questions": 59,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:preterite-er-ir",
+          "block": "controlledOutput",
+          "usable": 111,
+          "usableStrict": 55,
+          "questions": 32,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 2655
+    },
+    {
+      "unit": "u04",
+      "day": 8,
+      "session": 36,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 2655
+    },
+    {
+      "unit": "u04",
+      "day": 9,
+      "session": 37,
+      "type": "checkpoint",
+      "nodes": [],
+      "remixUsable": 2655
+    },
+    {
+      "unit": "u05",
+      "day": 1,
+      "session": 38,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:yo-irregular",
+          "block": "structuredInput",
+          "usable": 45,
+          "usableStrict": 10,
+          "questions": 8,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 2756
+    },
+    {
+      "unit": "u05",
+      "day": 2,
+      "session": 39,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:yo-irregular",
+          "block": "controlledOutput",
+          "usable": 45,
+          "usableStrict": 10,
+          "questions": 8,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:preterite-ser-ir-hacer",
+          "block": "controlledOutput",
+          "usable": 216,
+          "usableStrict": 22,
+          "questions": 73,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 2756
+    },
+    {
+      "unit": "u05",
+      "day": 3,
+      "session": 40,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:possessives",
+          "block": "structuredInput",
+          "usable": 76,
+          "usableStrict": 7,
+          "questions": 19,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 2834
+    },
+    {
+      "unit": "u05",
+      "day": 4,
+      "session": 41,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:possessives",
+          "block": "controlledOutput",
+          "usable": 77,
+          "usableStrict": 7,
+          "questions": 19,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:yo-irregular",
+          "block": "controlledOutput",
+          "usable": 46,
+          "usableStrict": 10,
+          "questions": 8,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:adjective-agreement",
+          "block": "controlledOutput",
+          "usable": 95,
+          "usableStrict": 0,
+          "questions": 19,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 2843
+    },
+    {
+      "unit": "u05",
+      "day": 5,
+      "session": 42,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 2902
+    },
+    {
+      "unit": "u05",
+      "day": 6,
+      "session": 43,
+      "type": "patterns",
+      "nodes": [],
+      "remixUsable": 3067
+    },
+    {
+      "unit": "u05",
+      "day": 7,
+      "session": 44,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:negation-words",
+          "block": "structuredInput",
+          "usable": 54,
+          "usableStrict": 30,
+          "questions": 5,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 3119
+    },
+    {
+      "unit": "u05",
+      "day": 8,
+      "session": 45,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:negation-words",
+          "block": "controlledOutput",
+          "usable": 56,
+          "usableStrict": 32,
+          "questions": 5,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:possessives",
+          "block": "controlledOutput",
+          "usable": 114,
+          "usableStrict": 23,
+          "questions": 24,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:mayor-menor",
+          "block": "controlledOutput",
+          "usable": 1,
+          "usableStrict": 0,
+          "questions": 1,
+          "min": 11,
+          "minQuestions": 4,
+          "short": true,
+          "shortQuestions": true
+        }
+      ],
+      "remixUsable": 3191
+    },
+    {
+      "unit": "u05",
+      "day": 9,
+      "session": 46,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 3191
+    },
+    {
+      "unit": "u05",
+      "day": 10,
+      "session": 47,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 3191
+    },
+    {
+      "unit": "u06",
+      "day": 1,
+      "session": 48,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:imperfect-states",
+          "block": "structuredInput",
+          "usable": 60,
+          "usableStrict": 5,
+          "questions": 19,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 3243
+    },
+    {
+      "unit": "u06",
+      "day": 2,
+      "session": 49,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:imperfect-states",
+          "block": "controlledOutput",
+          "usable": 86,
+          "usableStrict": 9,
+          "questions": 26,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:possessives",
+          "block": "controlledOutput",
+          "usable": 122,
+          "usableStrict": 23,
+          "questions": 26,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 3271
+    },
+    {
+      "unit": "u06",
+      "day": 3,
+      "session": 50,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:preterite-irregular-strong",
+          "block": "structuredInput",
+          "usable": 58,
+          "usableStrict": 15,
+          "questions": 23,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 3363
+    },
+    {
+      "unit": "u06",
+      "day": 4,
+      "session": 51,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:preterite-irregular-strong",
+          "block": "controlledOutput",
+          "usable": 59,
+          "usableStrict": 15,
+          "questions": 23,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:imperfect-states",
+          "block": "controlledOutput",
+          "usable": 112,
+          "usableStrict": 13,
+          "questions": 35,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 3370
+    },
+    {
+      "unit": "u06",
+      "day": 5,
+      "session": 52,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 3450
+    },
+    {
+      "unit": "u06",
+      "day": 6,
+      "session": 53,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:hace-ago",
+          "block": "structuredInput",
+          "usable": 168,
+          "usableStrict": 59,
+          "questions": 15,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 3618
+    },
+    {
+      "unit": "u06",
+      "day": 7,
+      "session": 54,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:hace-ago",
+          "block": "controlledOutput",
+          "usable": 178,
+          "usableStrict": 62,
+          "questions": 17,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:preterite-irregular-strong",
+          "block": "controlledOutput",
+          "usable": 117,
+          "usableStrict": 42,
+          "questions": 29,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 3643
+    },
+    {
+      "unit": "u06",
+      "day": 8,
+      "session": 55,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 3643
+    },
+    {
+      "unit": "u06",
+      "day": 9,
+      "session": 56,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 3643
+    },
+    {
+      "unit": "u07",
+      "day": 1,
+      "session": 57,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:hay-vs-esta",
+          "block": "structuredInput",
+          "usable": 55,
+          "usableStrict": 15,
+          "questions": 24,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 3700
+    },
+    {
+      "unit": "u07",
+      "day": 2,
+      "session": 58,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:hay-vs-esta",
+          "block": "controlledOutput",
+          "usable": 60,
+          "usableStrict": 19,
+          "questions": 26,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:hace-ago",
+          "block": "controlledOutput",
+          "usable": 202,
+          "usableStrict": 69,
+          "questions": 20,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 3708
+    },
+    {
+      "unit": "u07",
+      "day": 3,
+      "session": 59,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:demonstratives",
+          "block": "structuredInput",
+          "usable": 62,
+          "usableStrict": 5,
+          "questions": 19,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 3782
+    },
+    {
+      "unit": "u07",
+      "day": 4,
+      "session": 60,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:demonstratives",
+          "block": "controlledOutput",
+          "usable": 63,
+          "usableStrict": 5,
+          "questions": 19,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:hay-vs-esta",
+          "block": "controlledOutput",
+          "usable": 66,
+          "usableStrict": 23,
+          "questions": 27,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 3783
+    },
+    {
+      "unit": "u07",
+      "day": 5,
+      "session": 61,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 3820
+    },
+    {
+      "unit": "u07",
+      "day": 6,
+      "session": 62,
+      "type": "patterns",
+      "nodes": [],
+      "remixUsable": 3994
+    },
+    {
+      "unit": "u07",
+      "day": 7,
+      "session": 63,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:quantifiers",
+          "block": "structuredInput",
+          "usable": 71,
+          "usableStrict": 31,
+          "questions": 14,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4065
+    },
+    {
+      "unit": "u07",
+      "day": 8,
+      "session": 64,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:quantifiers",
+          "block": "controlledOutput",
+          "usable": 82,
+          "usableStrict": 39,
+          "questions": 16,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:demonstratives",
+          "block": "controlledOutput",
+          "usable": 115,
+          "usableStrict": 19,
+          "questions": 29,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4123
+    },
+    {
+      "unit": "u07",
+      "day": 9,
+      "session": 65,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 4123
+    },
+    {
+      "unit": "u07",
+      "day": 10,
+      "session": 66,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 4123
+    },
+    {
+      "unit": "u08",
+      "day": 1,
+      "session": 67,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:perfecto-experience",
+          "block": "structuredInput",
+          "usable": 45,
+          "usableStrict": 13,
+          "questions": 19,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4166
+    },
+    {
+      "unit": "u08",
+      "day": 2,
+      "session": 68,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:perfecto-experience",
+          "block": "controlledOutput",
+          "usable": 61,
+          "usableStrict": 19,
+          "questions": 24,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:quantifiers",
+          "block": "controlledOutput",
+          "usable": 88,
+          "usableStrict": 39,
+          "questions": 18,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4185
+    },
+    {
+      "unit": "u08",
+      "day": 3,
+      "session": 69,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:estar-gerund",
+          "block": "structuredInput",
+          "usable": 103,
+          "usableStrict": 0,
+          "questions": 36,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4292
+    },
+    {
+      "unit": "u08",
+      "day": 4,
+      "session": 70,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:estar-gerund",
+          "block": "controlledOutput",
+          "usable": 103,
+          "usableStrict": 0,
+          "questions": 36,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:perfecto-experience",
+          "block": "controlledOutput",
+          "usable": 78,
+          "usableStrict": 22,
+          "questions": 30,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4307
+    },
+    {
+      "unit": "u08",
+      "day": 5,
+      "session": 71,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 4349
+    },
+    {
+      "unit": "u08",
+      "day": 6,
+      "session": 72,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:direct-objects",
+          "block": "structuredInput",
+          "usable": 152,
+          "usableStrict": 74,
+          "questions": 58,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4501
+    },
+    {
+      "unit": "u08",
+      "day": 7,
+      "session": 73,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:direct-objects",
+          "block": "controlledOutput",
+          "usable": 175,
+          "usableStrict": 93,
+          "questions": 67,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:estar-gerund",
+          "block": "controlledOutput",
+          "usable": 123,
+          "usableStrict": 0,
+          "questions": 42,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:tener-ganas-de",
+          "block": "controlledOutput",
+          "usable": 38,
+          "usableStrict": 0,
+          "questions": 13,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4603
+    },
+    {
+      "unit": "u08",
+      "day": 8,
+      "session": 74,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 4603
+    },
+    {
+      "unit": "u08",
+      "day": 9,
+      "session": 75,
+      "type": "checkpoint",
+      "nodes": [],
+      "remixUsable": 4603
+    },
+    {
+      "unit": "u09",
+      "day": 1,
+      "session": 76,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:reflexive-routine",
+          "block": "structuredInput",
+          "usable": 0,
+          "usableStrict": 0,
+          "questions": 0,
+          "min": 9,
+          "minQuestions": 0,
+          "short": true,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4610
+    },
+    {
+      "unit": "u09",
+      "day": 2,
+      "session": 77,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:reflexive-routine",
+          "block": "controlledOutput",
+          "usable": 19,
+          "usableStrict": 0,
+          "questions": 11,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:direct-objects",
+          "block": "controlledOutput",
+          "usable": 181,
+          "usableStrict": 103,
+          "questions": 73,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:lavarse-las-manos",
+          "block": "controlledOutput",
+          "usable": 14,
+          "usableStrict": 0,
+          "questions": 10,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4631
+    },
+    {
+      "unit": "u09",
+      "day": 3,
+      "session": 78,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:prep-infinitive",
+          "block": "structuredInput",
+          "usable": 64,
+          "usableStrict": 24,
+          "questions": 13,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4701
+    },
+    {
+      "unit": "u09",
+      "day": 4,
+      "session": 79,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:prep-infinitive",
+          "block": "controlledOutput",
+          "usable": 65,
+          "usableStrict": 24,
+          "questions": 13,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:reflexive-routine",
+          "block": "controlledOutput",
+          "usable": 45,
+          "usableStrict": 5,
+          "questions": 20,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 4716
+    },
+    {
+      "unit": "u09",
+      "day": 5,
+      "session": 80,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 4851
+    },
+    {
+      "unit": "u09",
+      "day": 6,
+      "session": 81,
+      "type": "patterns",
+      "nodes": [],
+      "remixUsable": 5211
+    },
+    {
+      "unit": "u09",
+      "day": 7,
+      "session": 82,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:tener-que-hay-que",
+          "block": "structuredInput",
+          "usable": 128,
+          "usableStrict": 57,
+          "questions": 26,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 5346
+    },
+    {
+      "unit": "u09",
+      "day": 8,
+      "session": 83,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:tener-que-hay-que",
+          "block": "controlledOutput",
+          "usable": 128,
+          "usableStrict": 60,
+          "questions": 26,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:prep-infinitive",
+          "block": "controlledOutput",
+          "usable": 96,
+          "usableStrict": 47,
+          "questions": 18,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:desde-hasta",
+          "block": "controlledOutput",
+          "usable": 12,
+          "usableStrict": 4,
+          "questions": 0,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": true
+        }
+      ],
+      "remixUsable": 5366
+    },
+    {
+      "unit": "u09",
+      "day": 9,
+      "session": 84,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 5366
+    },
+    {
+      "unit": "u09",
+      "day": 10,
+      "session": 85,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 5366
+    },
+    {
+      "unit": "u10",
+      "day": 1,
+      "session": 86,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:gustar-full",
+          "block": "structuredInput",
+          "usable": 81,
+          "usableStrict": 17,
+          "questions": 15,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 5472
+    },
+    {
+      "unit": "u10",
+      "day": 2,
+      "session": 87,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:gustar-full",
+          "block": "controlledOutput",
+          "usable": 87,
+          "usableStrict": 22,
+          "questions": 18,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:tener-que-hay-que",
+          "block": "controlledOutput",
+          "usable": 144,
+          "usableStrict": 69,
+          "questions": 27,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 5478
+    },
+    {
+      "unit": "u10",
+      "day": 3,
+      "session": 88,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:stem-e-i",
+          "block": "structuredInput",
+          "usable": 72,
+          "usableStrict": 21,
+          "questions": 21,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 5572
+    },
+    {
+      "unit": "u10",
+      "day": 4,
+      "session": 89,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:stem-e-i",
+          "block": "controlledOutput",
+          "usable": 72,
+          "usableStrict": 26,
+          "questions": 21,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:gustar-full",
+          "block": "controlledOutput",
+          "usable": 96,
+          "usableStrict": 23,
+          "questions": 21,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 5582
+    },
+    {
+      "unit": "u10",
+      "day": 5,
+      "session": 90,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 5591
+    },
+    {
+      "unit": "u10",
+      "day": 6,
+      "session": 91,
+      "type": "patterns",
+      "nodes": [],
+      "remixUsable": 5705
+    },
+    {
+      "unit": "u10",
+      "day": 7,
+      "session": 92,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:prep-pronouns",
+          "block": "structuredInput",
+          "usable": 190,
+          "usableStrict": 78,
+          "questions": 35,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 5886
+    },
+    {
+      "unit": "u10",
+      "day": 8,
+      "session": 93,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:prep-pronouns",
+          "block": "controlledOutput",
+          "usable": 190,
+          "usableStrict": 78,
+          "questions": 35,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:stem-e-i",
+          "block": "controlledOutput",
+          "usable": 99,
+          "usableStrict": 55,
+          "questions": 25,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 5886
+    },
+    {
+      "unit": "u10",
+      "day": 9,
+      "session": 94,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 5886
+    },
+    {
+      "unit": "u10",
+      "day": 10,
+      "session": 95,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 5886
+    },
+    {
+      "unit": "u11",
+      "day": 1,
+      "session": 96,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:imperfect-habitual",
+          "block": "structuredInput",
+          "usable": 83,
+          "usableStrict": 48,
+          "questions": 9,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 5974
+    },
+    {
+      "unit": "u11",
+      "day": 2,
+      "session": 97,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:imperfect-habitual",
+          "block": "controlledOutput",
+          "usable": 88,
+          "usableStrict": 50,
+          "questions": 9,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:direct-objects",
+          "block": "controlledOutput",
+          "usable": 224,
+          "usableStrict": 137,
+          "questions": 85,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 5979
+    },
+    {
+      "unit": "u11",
+      "day": 3,
+      "session": 98,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:preterite-spelling-stem",
+          "block": "structuredInput",
+          "usable": 95,
+          "usableStrict": 50,
+          "questions": 4,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6081
+    },
+    {
+      "unit": "u11",
+      "day": 4,
+      "session": 99,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:preterite-spelling-stem",
+          "block": "controlledOutput",
+          "usable": 95,
+          "usableStrict": 50,
+          "questions": 4,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:imperfect-habitual",
+          "block": "controlledOutput",
+          "usable": 95,
+          "usableStrict": 56,
+          "questions": 10,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6092
+    },
+    {
+      "unit": "u11",
+      "day": 5,
+      "session": 100,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 6128
+    },
+    {
+      "unit": "u11",
+      "day": 6,
+      "session": 101,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:comparatives",
+          "block": "structuredInput",
+          "usable": 164,
+          "usableStrict": 30,
+          "questions": 1,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6293
+    },
+    {
+      "unit": "u11",
+      "day": 7,
+      "session": 102,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:comparatives",
+          "block": "controlledOutput",
+          "usable": 230,
+          "usableStrict": 35,
+          "questions": 5,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:preterite-spelling-stem",
+          "block": "controlledOutput",
+          "usable": 99,
+          "usableStrict": 62,
+          "questions": 4,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:gustar-mas-que",
+          "block": "controlledOutput",
+          "usable": 41,
+          "usableStrict": 0,
+          "questions": 7,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6386
+    },
+    {
+      "unit": "u11",
+      "day": 8,
+      "session": 103,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 6386
+    },
+    {
+      "unit": "u11",
+      "day": 9,
+      "session": 104,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 6386
+    },
+    {
+      "unit": "u12",
+      "day": 1,
+      "session": 105,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:pret-vs-imperfect",
+          "block": "structuredInput",
+          "usable": 40,
+          "usableStrict": 10,
+          "questions": 2,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6451
+    },
+    {
+      "unit": "u12",
+      "day": 2,
+      "session": 106,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:pret-vs-imperfect",
+          "block": "controlledOutput",
+          "usable": 40,
+          "usableStrict": 11,
+          "questions": 2,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": true
+        },
+        {
+          "node": "g:comparatives",
+          "block": "controlledOutput",
+          "usable": 247,
+          "usableStrict": 35,
+          "questions": 5,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6461
+    },
+    {
+      "unit": "u12",
+      "day": 3,
+      "session": 107,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:imperfect-progressive",
+          "block": "structuredInput",
+          "usable": 98,
+          "usableStrict": 0,
+          "questions": 17,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6562
+    },
+    {
+      "unit": "u12",
+      "day": 4,
+      "session": 108,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:imperfect-progressive",
+          "block": "controlledOutput",
+          "usable": 98,
+          "usableStrict": 0,
+          "questions": 17,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:pret-vs-imperfect",
+          "block": "controlledOutput",
+          "usable": 98,
+          "usableStrict": 11,
+          "questions": 10,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6563
+    },
+    {
+      "unit": "u12",
+      "day": 5,
+      "session": 109,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 6586
+    },
+    {
+      "unit": "u12",
+      "day": 6,
+      "session": 110,
+      "type": "patterns",
+      "nodes": [],
+      "remixUsable": 6625
+    },
+    {
+      "unit": "u12",
+      "day": 7,
+      "session": 111,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:that-clauses",
+          "block": "structuredInput",
+          "usable": 213,
+          "usableStrict": 84,
+          "questions": 16,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6795
+    },
+    {
+      "unit": "u12",
+      "day": 8,
+      "session": 112,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:that-clauses",
+          "block": "controlledOutput",
+          "usable": 214,
+          "usableStrict": 84,
+          "questions": 16,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:imperfect-progressive",
+          "block": "controlledOutput",
+          "usable": 115,
+          "usableStrict": 0,
+          "questions": 18,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6798
+    },
+    {
+      "unit": "u12",
+      "day": 9,
+      "session": 113,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 6798
+    },
+    {
+      "unit": "u12",
+      "day": 10,
+      "session": 114,
+      "type": "checkpoint",
+      "nodes": [],
+      "remixUsable": 6798
+    },
+    {
+      "unit": "u13",
+      "day": 1,
+      "session": 115,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:commands-tu",
+          "block": "structuredInput",
+          "usable": 44,
+          "usableStrict": 18,
+          "questions": 0,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6858
+    },
+    {
+      "unit": "u13",
+      "day": 2,
+      "session": 116,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:commands-tu",
+          "block": "controlledOutput",
+          "usable": 47,
+          "usableStrict": 19,
+          "questions": 0,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": true
+        },
+        {
+          "node": "g:that-clauses",
+          "block": "controlledOutput",
+          "usable": 225,
+          "usableStrict": 89,
+          "questions": 16,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6868
+    },
+    {
+      "unit": "u13",
+      "day": 3,
+      "session": 117,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:commands-usted",
+          "block": "structuredInput",
+          "usable": 78,
+          "usableStrict": 32,
+          "questions": 10,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 6935
+    },
+    {
+      "unit": "u13",
+      "day": 4,
+      "session": 118,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:commands-usted",
+          "block": "controlledOutput",
+          "usable": 91,
+          "usableStrict": 45,
+          "questions": 13,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:commands-tu",
+          "block": "controlledOutput",
+          "usable": 47,
+          "usableStrict": 22,
+          "questions": 0,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": true
+        }
+      ],
+      "remixUsable": 6949
+    },
+    {
+      "unit": "u13",
+      "day": 5,
+      "session": 119,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 7002
+    },
+    {
+      "unit": "u13",
+      "day": 6,
+      "session": 120,
+      "type": "patterns",
+      "nodes": [],
+      "remixUsable": 7156
+    },
+    {
+      "unit": "u13",
+      "day": 7,
+      "session": 121,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:indirect-objects",
+          "block": "structuredInput",
+          "usable": 130,
+          "usableStrict": 91,
+          "questions": 27,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 7286
+    },
+    {
+      "unit": "u13",
+      "day": 8,
+      "session": 122,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:indirect-objects",
+          "block": "controlledOutput",
+          "usable": 156,
+          "usableStrict": 108,
+          "questions": 34,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:commands-usted",
+          "block": "controlledOutput",
+          "usable": 148,
+          "usableStrict": 102,
+          "questions": 18,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:preguntar-pedir",
+          "block": "controlledOutput",
+          "usable": 49,
+          "usableStrict": 33,
+          "questions": 11,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 7342
+    },
+    {
+      "unit": "u13",
+      "day": 9,
+      "session": 123,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 7342
+    },
+    {
+      "unit": "u13",
+      "day": 10,
+      "session": 124,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 7342
+    },
+    {
+      "unit": "u14",
+      "day": 1,
+      "session": 125,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:relative-que",
+          "block": "structuredInput",
+          "usable": 105,
+          "usableStrict": 21,
+          "questions": 17,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 7449
+    },
+    {
+      "unit": "u14",
+      "day": 2,
+      "session": 126,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:relative-que",
+          "block": "controlledOutput",
+          "usable": 105,
+          "usableStrict": 21,
+          "questions": 17,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:indirect-objects",
+          "block": "controlledOutput",
+          "usable": 158,
+          "usableStrict": 109,
+          "questions": 34,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 7449
+    },
+    {
+      "unit": "u14",
+      "day": 3,
+      "session": 127,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:cause-result",
+          "block": "structuredInput",
+          "usable": 105,
+          "usableStrict": 41,
+          "questions": 17,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 7504
+    },
+    {
+      "unit": "u14",
+      "day": 4,
+      "session": 128,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:cause-result",
+          "block": "controlledOutput",
+          "usable": 105,
+          "usableStrict": 41,
+          "questions": 17,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:relative-que",
+          "block": "controlledOutput",
+          "usable": 108,
+          "usableStrict": 25,
+          "questions": 18,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 7507
+    },
+    {
+      "unit": "u14",
+      "day": 5,
+      "session": 129,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 7587
+    },
+    {
+      "unit": "u14",
+      "day": 6,
+      "session": 130,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:object-pronoun-position",
+          "block": "structuredInput",
+          "usable": 211,
+          "usableStrict": 93,
+          "questions": 49,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 7806
+    },
+    {
+      "unit": "u14",
+      "day": 7,
+      "session": 131,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:object-pronoun-position",
+          "block": "controlledOutput",
+          "usable": 211,
+          "usableStrict": 93,
+          "questions": 49,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:cause-result",
+          "block": "controlledOutput",
+          "usable": 114,
+          "usableStrict": 51,
+          "questions": 17,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "p:para-mi",
+          "block": "controlledOutput",
+          "usable": 38,
+          "usableStrict": 0,
+          "questions": 6,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 7812
+    },
+    {
+      "unit": "u14",
+      "day": 8,
+      "session": 132,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 7812
+    },
+    {
+      "unit": "u14",
+      "day": 9,
+      "session": 133,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 7812
+    },
+    {
+      "unit": "u15",
+      "day": 1,
+      "session": 134,
+      "type": "introduce",
+      "nodes": [],
+      "remixUsable": 7823
+    },
+    {
+      "unit": "u15",
+      "day": 2,
+      "session": 135,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:prep-pronouns",
+          "block": "controlledOutput",
+          "usable": 222,
+          "usableStrict": 94,
+          "questions": 44,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 7874
+    },
+    {
+      "unit": "u15",
+      "day": 3,
+      "session": 136,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:estar-participle",
+          "block": "structuredInput",
+          "usable": 113,
+          "usableStrict": 0,
+          "questions": 17,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 7975
+    },
+    {
+      "unit": "u15",
+      "day": 4,
+      "session": 137,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:estar-participle",
+          "block": "controlledOutput",
+          "usable": 113,
+          "usableStrict": 0,
+          "questions": 17,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 7975
+    },
+    {
+      "unit": "u15",
+      "day": 5,
+      "session": 138,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 7975
+    },
+    {
+      "unit": "u15",
+      "day": 6,
+      "session": 139,
+      "type": "patterns",
+      "nodes": [],
+      "remixUsable": 8010
+    },
+    {
+      "unit": "u15",
+      "day": 7,
+      "session": 140,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:parecer-quedar",
+          "block": "structuredInput",
+          "usable": 163,
+          "usableStrict": 95,
+          "questions": 39,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8176
+    },
+    {
+      "unit": "u15",
+      "day": 8,
+      "session": 141,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:parecer-quedar",
+          "block": "controlledOutput",
+          "usable": 163,
+          "usableStrict": 95,
+          "questions": 39,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:estar-participle",
+          "block": "controlledOutput",
+          "usable": 117,
+          "usableStrict": 0,
+          "questions": 18,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8177
+    },
+    {
+      "unit": "u15",
+      "day": 9,
+      "session": 142,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 8177
+    },
+    {
+      "unit": "u15",
+      "day": 10,
+      "session": 143,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 8177
+    },
+    {
+      "unit": "u16",
+      "day": 1,
+      "session": 144,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 8250
+    },
+    {
+      "unit": "u16",
+      "day": 2,
+      "session": 145,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:object-pronoun-position",
+          "block": "controlledOutput",
+          "usable": 224,
+          "usableStrict": 101,
+          "questions": 50,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:parecer-quedar",
+          "block": "controlledOutput",
+          "usable": 226,
+          "usableStrict": 116,
+          "questions": 60,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8277
+    },
+    {
+      "unit": "u16",
+      "day": 3,
+      "session": 146,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:superlatives",
+          "block": "structuredInput",
+          "usable": 109,
+          "usableStrict": 16,
+          "questions": 12,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8388
+    },
+    {
+      "unit": "u16",
+      "day": 4,
+      "session": 147,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:superlatives",
+          "block": "controlledOutput",
+          "usable": 109,
+          "usableStrict": 16,
+          "questions": 12,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:object-pronoun-position",
+          "block": "controlledOutput",
+          "usable": 224,
+          "usableStrict": 107,
+          "questions": 50,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8388
+    },
+    {
+      "unit": "u16",
+      "day": 5,
+      "session": 148,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 8425
+    },
+    {
+      "unit": "u16",
+      "day": 6,
+      "session": 149,
+      "type": "patterns",
+      "nodes": [],
+      "remixUsable": 8434
+    },
+    {
+      "unit": "u16",
+      "day": 7,
+      "session": 150,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:double-pronouns",
+          "block": "structuredInput",
+          "usable": 216,
+          "usableStrict": 147,
+          "questions": 78,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8649
+    },
+    {
+      "unit": "u16",
+      "day": 8,
+      "session": 151,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:double-pronouns",
+          "block": "controlledOutput",
+          "usable": 216,
+          "usableStrict": 147,
+          "questions": 78,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:superlatives",
+          "block": "controlledOutput",
+          "usable": 120,
+          "usableStrict": 22,
+          "questions": 14,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8649
+    },
+    {
+      "unit": "u16",
+      "day": 9,
+      "session": 152,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 8649
+    },
+    {
+      "unit": "u16",
+      "day": 10,
+      "session": 153,
+      "type": "checkpoint",
+      "nodes": [],
+      "remixUsable": 8649
+    },
+    {
+      "unit": "u17",
+      "day": 1,
+      "session": 154,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:si-present",
+          "block": "structuredInput",
+          "usable": 80,
+          "usableStrict": 39,
+          "questions": 12,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8737
+    },
+    {
+      "unit": "u17",
+      "day": 2,
+      "session": 155,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:si-present",
+          "block": "controlledOutput",
+          "usable": 85,
+          "usableStrict": 42,
+          "questions": 16,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:double-pronouns",
+          "block": "controlledOutput",
+          "usable": 235,
+          "usableStrict": 161,
+          "questions": 79,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8745
+    },
+    {
+      "unit": "u17",
+      "day": 3,
+      "session": 156,
+      "type": "patterns",
+      "nodes": [],
+      "remixUsable": 8798
+    },
+    {
+      "unit": "u17",
+      "day": 4,
+      "session": 157,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:si-present",
+          "block": "controlledOutput",
+          "usable": 127,
+          "usableStrict": 55,
+          "questions": 54,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:double-pronouns",
+          "block": "controlledOutput",
+          "usable": 236,
+          "usableStrict": 162,
+          "questions": 80,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8799
+    },
+    {
+      "unit": "u17",
+      "day": 5,
+      "session": 158,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 8828
+    },
+    {
+      "unit": "u17",
+      "day": 6,
+      "session": 159,
+      "type": "patterns",
+      "nodes": [],
+      "remixUsable": 8845
+    },
+    {
+      "unit": "u17",
+      "day": 7,
+      "session": 160,
+      "type": "introduce",
+      "nodes": [],
+      "remixUsable": 8846
+    },
+    {
+      "unit": "u17",
+      "day": 8,
+      "session": 161,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:si-present",
+          "block": "controlledOutput",
+          "usable": 155,
+          "usableStrict": 79,
+          "questions": 59,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8849
+    },
+    {
+      "unit": "u17",
+      "day": 9,
+      "session": 162,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 8849
+    },
+    {
+      "unit": "u17",
+      "day": 10,
+      "session": 163,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 8849
+    },
+    {
+      "unit": "u18",
+      "day": 1,
+      "session": 164,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:por-para-1",
+          "block": "structuredInput",
+          "usable": 97,
+          "usableStrict": 51,
+          "questions": 3,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 8948
+    },
+    {
+      "unit": "u18",
+      "day": 2,
+      "session": 165,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:por-para-1",
+          "block": "controlledOutput",
+          "usable": 98,
+          "usableStrict": 52,
+          "questions": 3,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": true
+        }
+      ],
+      "remixUsable": 8952
+    },
+    {
+      "unit": "u18",
+      "day": 3,
+      "session": 166,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:commands-with-pronouns",
+          "block": "structuredInput",
+          "usable": 95,
+          "usableStrict": 76,
+          "questions": 3,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 9048
+    },
+    {
+      "unit": "u18",
+      "day": 4,
+      "session": 167,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:commands-with-pronouns",
+          "block": "controlledOutput",
+          "usable": 95,
+          "usableStrict": 76,
+          "questions": 3,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": true
+        },
+        {
+          "node": "g:por-para-1",
+          "block": "controlledOutput",
+          "usable": 98,
+          "usableStrict": 52,
+          "questions": 3,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": true
+        }
+      ],
+      "remixUsable": 9048
+    },
+    {
+      "unit": "u18",
+      "day": 5,
+      "session": 168,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 9074
+    },
+    {
+      "unit": "u18",
+      "day": 6,
+      "session": 169,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 9137
+    },
+    {
+      "unit": "u18",
+      "day": 7,
+      "session": 170,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:possessives-stressed",
+          "block": "structuredInput",
+          "usable": 183,
+          "usableStrict": 27,
+          "questions": 40,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 9326
+    },
+    {
+      "unit": "u18",
+      "day": 8,
+      "session": 171,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:possessives-stressed",
+          "block": "controlledOutput",
+          "usable": 183,
+          "usableStrict": 27,
+          "questions": 40,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:commands-with-pronouns",
+          "block": "controlledOutput",
+          "usable": 135,
+          "usableStrict": 111,
+          "questions": 3,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": true
+        }
+      ],
+      "remixUsable": 9326
+    },
+    {
+      "unit": "u18",
+      "day": 9,
+      "session": 172,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 9326
+    },
+    {
+      "unit": "u18",
+      "day": 10,
+      "session": 173,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 9326
+    },
+    {
+      "unit": "u19",
+      "day": 1,
+      "session": 174,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:se-impersonal",
+          "block": "structuredInput",
+          "usable": 110,
+          "usableStrict": 59,
+          "questions": 21,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 9439
+    },
+    {
+      "unit": "u19",
+      "day": 2,
+      "session": 175,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:se-impersonal",
+          "block": "controlledOutput",
+          "usable": 113,
+          "usableStrict": 62,
+          "questions": 21,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:possessives-stressed",
+          "block": "controlledOutput",
+          "usable": 183,
+          "usableStrict": 27,
+          "questions": 40,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 9442
+    },
+    {
+      "unit": "u19",
+      "day": 3,
+      "session": 176,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:relatives-donde-lo-que",
+          "block": "structuredInput",
+          "usable": 107,
+          "usableStrict": 33,
+          "questions": 8,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 9552
+    },
+    {
+      "unit": "u19",
+      "day": 4,
+      "session": 177,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:relatives-donde-lo-que",
+          "block": "controlledOutput",
+          "usable": 108,
+          "usableStrict": 34,
+          "questions": 8,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:se-impersonal",
+          "block": "controlledOutput",
+          "usable": 121,
+          "usableStrict": 66,
+          "questions": 23,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 9554
+    },
+    {
+      "unit": "u19",
+      "day": 5,
+      "session": 178,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 9584
+    },
+    {
+      "unit": "u19",
+      "day": 6,
+      "session": 179,
+      "type": "patterns",
+      "nodes": [],
+      "remixUsable": 9593
+    },
+    {
+      "unit": "u19",
+      "day": 7,
+      "session": 180,
+      "type": "introduce",
+      "nodes": [],
+      "remixUsable": 9603
+    },
+    {
+      "unit": "u19",
+      "day": 8,
+      "session": 181,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:relatives-donde-lo-que",
+          "block": "controlledOutput",
+          "usable": 120,
+          "usableStrict": 38,
+          "questions": 8,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 9606
+    },
+    {
+      "unit": "u19",
+      "day": 9,
+      "session": 182,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 9606
+    },
+    {
+      "unit": "u19",
+      "day": 10,
+      "session": 183,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 9606
+    },
+    {
+      "unit": "u20",
+      "day": 1,
+      "session": 184,
+      "type": "introduce",
+      "nodes": [],
+      "remixUsable": 9607
+    },
+    {
+      "unit": "u20",
+      "day": 2,
+      "session": 185,
+      "type": "drill",
+      "nodes": [],
+      "remixUsable": 9607
+    },
+    {
+      "unit": "u20",
+      "day": 3,
+      "session": 186,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:future-promises",
+          "block": "structuredInput",
+          "usable": 150,
+          "usableStrict": 70,
+          "questions": 68,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 9757
+    },
+    {
+      "unit": "u20",
+      "day": 4,
+      "session": 187,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:future-promises",
+          "block": "controlledOutput",
+          "usable": 159,
+          "usableStrict": 76,
+          "questions": 72,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 9766
+    },
+    {
+      "unit": "u20",
+      "day": 5,
+      "session": 188,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 9798
+    },
+    {
+      "unit": "u20",
+      "day": 6,
+      "session": 189,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 9811
+    },
+    {
+      "unit": "u20",
+      "day": 7,
+      "session": 190,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:conditional",
+          "block": "structuredInput",
+          "usable": 141,
+          "usableStrict": 54,
+          "questions": 69,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 9948
+    },
+    {
+      "unit": "u20",
+      "day": 8,
+      "session": 191,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:conditional",
+          "block": "controlledOutput",
+          "usable": 168,
+          "usableStrict": 77,
+          "questions": 71,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:future-promises",
+          "block": "controlledOutput",
+          "usable": 220,
+          "usableStrict": 119,
+          "questions": 93,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 9976
+    },
+    {
+      "unit": "u20",
+      "day": 9,
+      "session": 192,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 9976
+    },
+    {
+      "unit": "u20",
+      "day": 10,
+      "session": 193,
+      "type": "checkpoint",
+      "nodes": [],
+      "remixUsable": 9976
+    },
+    {
+      "unit": "u21",
+      "day": 1,
+      "session": 194,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:subj-wanting",
+          "block": "structuredInput",
+          "usable": 108,
+          "usableStrict": 78,
+          "questions": 21,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 10089
+    },
+    {
+      "unit": "u21",
+      "day": 2,
+      "session": 195,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:subj-wanting",
+          "block": "controlledOutput",
+          "usable": 109,
+          "usableStrict": 79,
+          "questions": 21,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:conditional",
+          "block": "controlledOutput",
+          "usable": 168,
+          "usableStrict": 77,
+          "questions": 71,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 10090
+    },
+    {
+      "unit": "u21",
+      "day": 3,
+      "session": 196,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:subj-irregulars",
+          "block": "structuredInput",
+          "usable": 103,
+          "usableStrict": 24,
+          "questions": 13,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 10196
+    },
+    {
+      "unit": "u21",
+      "day": 4,
+      "session": 197,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:subj-irregulars",
+          "block": "controlledOutput",
+          "usable": 103,
+          "usableStrict": 27,
+          "questions": 13,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        },
+        {
+          "node": "g:subj-wanting",
+          "block": "controlledOutput",
+          "usable": 215,
+          "usableStrict": 108,
+          "questions": 34,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 10197
+    },
+    {
+      "unit": "u21",
+      "day": 5,
+      "session": 198,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 10213
+    },
+    {
+      "unit": "u21",
+      "day": 6,
+      "session": 199,
+      "type": "input",
+      "nodes": [],
+      "remixUsable": 10275
+    },
+    {
+      "unit": "u21",
+      "day": 7,
+      "session": 200,
+      "type": "introduce",
+      "nodes": [
+        {
+          "node": "g:negative-commands",
+          "block": "structuredInput",
+          "usable": 127,
+          "usableStrict": 93,
+          "questions": 0,
+          "min": 9,
+          "minQuestions": 0,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 10408
+    },
+    {
+      "unit": "u21",
+      "day": 8,
+      "session": 201,
+      "type": "drill",
+      "nodes": [
+        {
+          "node": "g:negative-commands",
+          "block": "controlledOutput",
+          "usable": 128,
+          "usableStrict": 94,
+          "questions": 0,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": true
+        },
+        {
+          "node": "g:subj-irregulars",
+          "block": "controlledOutput",
+          "usable": 121,
+          "usableStrict": 31,
+          "questions": 14,
+          "min": 11,
+          "minQuestions": 4,
+          "short": false,
+          "shortQuestions": false
+        }
+      ],
+      "remixUsable": 10414
+    },
+    {
+      "unit": "u21",
+      "day": 9,
+      "session": 202,
+      "type": "output",
+      "nodes": [],
+      "remixUsable": 10414
+    },
+    {
+      "unit": "u21",
+      "day": 10,
+      "session": 203,
+      "type": "review",
+      "nodes": [],
+      "remixUsable": 10414
+    }
+  ],
+  "unitNodes": [
+    {
+      "unit": "u01",
+      "node": "g:ser-identity",
+      "drillDay": 4,
+      "session": 4,
+      "usable": 63,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u01",
+      "node": "g:gender-articles",
+      "drillDay": 9,
+      "session": 9,
+      "usable": 308,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u01",
+      "node": "g:present-ar",
+      "drillDay": 9,
+      "session": 9,
+      "usable": 207,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u02",
+      "node": "g:present-er-ir",
+      "drillDay": 4,
+      "session": 14,
+      "usable": 67,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u02",
+      "node": "g:present-ar",
+      "drillDay": 2,
+      "session": 12,
+      "usable": 225,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u02",
+      "node": "g:estar-location-states",
+      "drillDay": 6,
+      "session": 16,
+      "usable": 154,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u02",
+      "node": "g:adjective-agreement",
+      "drillDay": 8,
+      "session": 18,
+      "usable": 56,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u02",
+      "node": "g:questions",
+      "drillDay": 8,
+      "session": 18,
+      "usable": 177,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u03",
+      "node": "g:gustar-basic",
+      "drillDay": 4,
+      "session": 23,
+      "usable": 144,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u03",
+      "node": "g:questions",
+      "drillDay": 2,
+      "session": 21,
+      "usable": 183,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u03",
+      "node": "g:stem-boot",
+      "drillDay": 6,
+      "session": 25,
+      "usable": 195,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u03",
+      "node": "g:verb-infinitive",
+      "drillDay": 8,
+      "session": 27,
+      "usable": 83,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u03",
+      "node": "g:ir-a-plans",
+      "drillDay": 8,
+      "session": 27,
+      "usable": 283,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u04",
+      "node": "g:preterite-ar",
+      "drillDay": 4,
+      "session": 32,
+      "usable": 135,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u04",
+      "node": "g:ir-a-plans",
+      "drillDay": 2,
+      "session": 30,
+      "usable": 301,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u04",
+      "node": "g:preterite-er-ir",
+      "drillDay": 7,
+      "session": 35,
+      "usable": 111,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u04",
+      "node": "g:preterite-ser-ir-hacer",
+      "drillDay": 7,
+      "session": 35,
+      "usable": 162,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u05",
+      "node": "g:yo-irregular",
+      "drillDay": 4,
+      "session": 41,
+      "usable": 46,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u05",
+      "node": "g:preterite-ser-ir-hacer",
+      "drillDay": 2,
+      "session": 39,
+      "usable": 216,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u05",
+      "node": "g:possessives",
+      "drillDay": 8,
+      "session": 45,
+      "usable": 114,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u05",
+      "node": "g:adjective-agreement",
+      "drillDay": 4,
+      "session": 41,
+      "usable": 95,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u05",
+      "node": "g:negation-words",
+      "drillDay": 8,
+      "session": 45,
+      "usable": 56,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u06",
+      "node": "g:imperfect-states",
+      "drillDay": 4,
+      "session": 51,
+      "usable": 112,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u06",
+      "node": "g:possessives",
+      "drillDay": 2,
+      "session": 49,
+      "usable": 122,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u06",
+      "node": "g:preterite-irregular-strong",
+      "drillDay": 7,
+      "session": 54,
+      "usable": 117,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u06",
+      "node": "g:hace-ago",
+      "drillDay": 7,
+      "session": 54,
+      "usable": 178,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u07",
+      "node": "g:hay-vs-esta",
+      "drillDay": 4,
+      "session": 60,
+      "usable": 66,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u07",
+      "node": "g:hace-ago",
+      "drillDay": 2,
+      "session": 58,
+      "usable": 202,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u07",
+      "node": "g:demonstratives",
+      "drillDay": 8,
+      "session": 64,
+      "usable": 115,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u07",
+      "node": "g:quantifiers",
+      "drillDay": 8,
+      "session": 64,
+      "usable": 82,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u08",
+      "node": "g:perfecto-experience",
+      "drillDay": 4,
+      "session": 70,
+      "usable": 78,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u08",
+      "node": "g:quantifiers",
+      "drillDay": 2,
+      "session": 68,
+      "usable": 88,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u08",
+      "node": "g:estar-gerund",
+      "drillDay": 7,
+      "session": 73,
+      "usable": 123,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u08",
+      "node": "g:direct-objects",
+      "drillDay": 7,
+      "session": 73,
+      "usable": 175,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u09",
+      "node": "g:reflexive-routine",
+      "drillDay": 4,
+      "session": 79,
+      "usable": 45,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u09",
+      "node": "g:direct-objects",
+      "drillDay": 2,
+      "session": 77,
+      "usable": 181,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u09",
+      "node": "g:prep-infinitive",
+      "drillDay": 8,
+      "session": 83,
+      "usable": 96,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u09",
+      "node": "g:tener-que-hay-que",
+      "drillDay": 8,
+      "session": 83,
+      "usable": 128,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u10",
+      "node": "g:gustar-full",
+      "drillDay": 4,
+      "session": 89,
+      "usable": 96,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u10",
+      "node": "g:tener-que-hay-que",
+      "drillDay": 2,
+      "session": 87,
+      "usable": 144,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u10",
+      "node": "g:stem-e-i",
+      "drillDay": 8,
+      "session": 93,
+      "usable": 99,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u10",
+      "node": "g:prep-pronouns",
+      "drillDay": 8,
+      "session": 93,
+      "usable": 190,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u11",
+      "node": "g:imperfect-habitual",
+      "drillDay": 4,
+      "session": 99,
+      "usable": 95,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u11",
+      "node": "g:direct-objects",
+      "drillDay": 2,
+      "session": 97,
+      "usable": 224,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u11",
+      "node": "g:preterite-spelling-stem",
+      "drillDay": 7,
+      "session": 102,
+      "usable": 99,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u11",
+      "node": "g:comparatives",
+      "drillDay": 7,
+      "session": 102,
+      "usable": 230,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u12",
+      "node": "g:pret-vs-imperfect",
+      "drillDay": 4,
+      "session": 108,
+      "usable": 98,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u12",
+      "node": "g:comparatives",
+      "drillDay": 2,
+      "session": 106,
+      "usable": 247,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u12",
+      "node": "g:imperfect-progressive",
+      "drillDay": 8,
+      "session": 112,
+      "usable": 115,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u12",
+      "node": "g:that-clauses",
+      "drillDay": 8,
+      "session": 112,
+      "usable": 214,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u13",
+      "node": "g:commands-tu",
+      "drillDay": 4,
+      "session": 118,
+      "usable": 47,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u13",
+      "node": "g:that-clauses",
+      "drillDay": 2,
+      "session": 116,
+      "usable": 225,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u13",
+      "node": "g:commands-usted",
+      "drillDay": 8,
+      "session": 122,
+      "usable": 148,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u13",
+      "node": "g:indirect-objects",
+      "drillDay": 8,
+      "session": 122,
+      "usable": 156,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u14",
+      "node": "g:relative-que",
+      "drillDay": 4,
+      "session": 128,
+      "usable": 108,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u14",
+      "node": "g:indirect-objects",
+      "drillDay": 2,
+      "session": 126,
+      "usable": 158,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u14",
+      "node": "g:cause-result",
+      "drillDay": 7,
+      "session": 131,
+      "usable": 114,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u14",
+      "node": "g:object-pronoun-position",
+      "drillDay": 7,
+      "session": 131,
+      "usable": 211,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u15",
+      "node": "g:prep-pronouns",
+      "drillDay": 2,
+      "session": 135,
+      "usable": 222,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u15",
+      "node": "g:estar-participle",
+      "drillDay": 8,
+      "session": 141,
+      "usable": 117,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u15",
+      "node": "g:parecer-quedar",
+      "drillDay": 8,
+      "session": 141,
+      "usable": 163,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u16",
+      "node": "g:object-pronoun-position",
+      "drillDay": 4,
+      "session": 147,
+      "usable": 224,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u16",
+      "node": "g:parecer-quedar",
+      "drillDay": 2,
+      "session": 145,
+      "usable": 226,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u16",
+      "node": "g:superlatives",
+      "drillDay": 8,
+      "session": 151,
+      "usable": 120,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u16",
+      "node": "g:double-pronouns",
+      "drillDay": 8,
+      "session": 151,
+      "usable": 216,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u17",
+      "node": "g:si-present",
+      "drillDay": 8,
+      "session": 161,
+      "usable": 155,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u17",
+      "node": "g:double-pronouns",
+      "drillDay": 4,
+      "session": 157,
+      "usable": 236,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u18",
+      "node": "g:por-para-1",
+      "drillDay": 4,
+      "session": 167,
+      "usable": 98,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u18",
+      "node": "g:commands-with-pronouns",
+      "drillDay": 8,
+      "session": 171,
+      "usable": 135,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u18",
+      "node": "g:possessives-stressed",
+      "drillDay": 8,
+      "session": 171,
+      "usable": 183,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u19",
+      "node": "g:se-impersonal",
+      "drillDay": 4,
+      "session": 177,
+      "usable": 121,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u19",
+      "node": "g:possessives-stressed",
+      "drillDay": 2,
+      "session": 175,
+      "usable": 183,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u19",
+      "node": "g:relatives-donde-lo-que",
+      "drillDay": 8,
+      "session": 181,
+      "usable": 120,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u20",
+      "node": "g:future-promises",
+      "drillDay": 8,
+      "session": 191,
+      "usable": 220,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u20",
+      "node": "g:conditional",
+      "drillDay": 8,
+      "session": 191,
+      "usable": 168,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u21",
+      "node": "g:subj-wanting",
+      "drillDay": 4,
+      "session": 197,
+      "usable": 215,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u21",
+      "node": "g:conditional",
+      "drillDay": 2,
+      "session": 195,
+      "usable": 168,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u21",
+      "node": "g:subj-irregulars",
+      "drillDay": 8,
+      "session": 201,
+      "usable": 121,
+      "min": 40,
+      "short": false
+    },
+    {
+      "unit": "u21",
+      "node": "g:negative-commands",
+      "drillDay": 8,
+      "session": 201,
+      "usable": 128,
+      "min": 40,
+      "short": false
+    }
+  ],
+  "untargetable": [
+    "g:article-uses",
+    "g:cuando-indicative",
+    "g:future-conjecture",
+    "g:ser-estar-adjectives",
+    "g:sounds-letters",
+    "p:de-owner",
+    "p:es-adj-inf",
+    "p:ir-a-venir-de-place",
+    "p:jugar-a",
+    "p:la-gente-singular",
+    "p:mas-de-number",
+    "p:masculine-plural-mixed",
+    "p:naci-en",
+    "p:poco-un-poco",
+    "p:prefieres-x-o-y",
+    "p:saber-conocer",
+    "p:tambien-tampoco",
+    "p:te-presento-a",
+    "p:unos-approx"
+  ]
+}

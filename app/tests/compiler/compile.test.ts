@@ -205,8 +205,8 @@ describe('the real course', () => {
   const root = path.resolve(__dirname, '../../content');
   const json = (rel: string) => JSON.parse(fs.readFileSync(path.join(root, rel), 'utf8'));
   const dir = (d: string) => fs.readdirSync(path.join(root, d)).filter((f) => f.endsWith('.json') && !f.startsWith('_')).sort().map((f) => json(`${d}/${f}`));
-  /** Shortages in the shipped u01 to u03 content for a fresh learner's first 30 sessions (2026-10-29): thin gated bank on introduce days, no writing task focused on each grammar point, 3 scenes, 3 remix. Lower it as content lands. */
-  const SHORTAGES_TODAY = 51;
+  /** Shortages in the shipped u01 to u03 content for a fresh learner's first 30 sessions (2026-10-29, was 51 before nodes on no unit day became usable from their priority): thin gated bank on introduce days, no writing task focused on each grammar point, 3 scenes, 3 remix. Lower it as content lands. */
+  const SHORTAGES_TODAY = 21;
 
   test('u01 to u03 compile 30 sessions with no more than the known shortages', () => {
     const nodes = ['grammar', 'patterns', 'chunks', 'contrasts', 'candos', 'lexemes'].flatMap((f) => (json(`graph/${f}.json`) as unknown[]).map((n) => GraphNode.parse(n)));

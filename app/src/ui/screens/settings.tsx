@@ -1,14 +1,21 @@
-// Settings: how hard reviews push, and a reset. There is no lesson-length
-// setting: every session is the standard one, and "I need to stop" in the
-// session covers the short days.
+// Settings: how much each day (a standing preference, not a per-session
+// choice; "I need to stop" in the session covers the odd short day), how hard
+// reviews push, and a reset.
 import { useState } from 'preact/hooks';
 import { Heading } from '../components/text';
+import type { Tier } from '../../learner';
 import { useApp } from '../context';
 
 const RETENTION = [
   { v: 0.85, label: 'Relaxed', note: 'Fewer reviews; you\'ll forget a bit more.' },
   { v: 0.9, label: 'Balanced', note: 'Recommended.' },
   { v: 0.95, label: 'Thorough', note: 'More reviews; you\'ll forget less.' },
+];
+
+const DAY: Array<{ v: Tier; label: string; note: string }> = [
+  { v: 'minimum', label: 'Just the essentials', note: 'About 10 minutes. Keeps your streak, but does not move you forward.' },
+  { v: 'standard', label: 'The regular lesson', note: 'About 20 to 30 minutes.' },
+  { v: 'extended', label: 'The regular lesson plus extra reading', note: 'About 15 minutes more.' },
 ];
 
 export function Settings() {
@@ -26,6 +33,15 @@ export function Settings() {
   return (
     <main class="screen" id="main">
       <Heading title="Settings" />
+      <fieldset class="choices">
+        <legend>How much each day</legend>
+        {DAY.map((d) => (
+          <label key={d.v} class={`choice${s.tier === d.v ? ' on' : ''}`}>
+            <input type="radio" name="tier" checked={s.tier === d.v} onChange={() => void set({ tier: d.v })} />
+            <span><strong>{d.label}</strong><br /><span class="small">{d.note}</span></span>
+          </label>
+        ))}
+      </fieldset>
       <fieldset class="choices">
         <legend>How much to review</legend>
         {RETENTION.map((r) => (

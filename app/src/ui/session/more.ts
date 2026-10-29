@@ -1,5 +1,5 @@
-// "Got 15 more minutes? Keep going." There is no session-length setting: every
-// session is the standard one. Now and then, when it would genuinely help and
+// "Got 15 more minutes? Keep going." Never offered on the extended preference
+// (that learner already chose the longer day) or the minimum one. Now and then, when it would genuinely help and
 // cost nothing, the close screen suggests a little more: the learner has
 // practised at least three days in a row, the review backlog is low (another
 // session would not be throttled, and little is due), and the suggestion has
@@ -23,6 +23,7 @@ const dayNum = (k: string) => {
 
 /** Whether to suggest more today; marks today as offered when it does. Call after the session is finished. */
 export function offerMore(learner: Learner, bundle: Bundle, ui: UiStore, now: number): boolean {
+  if (learner.settings.tier !== 'standard') return false;
   const today = learner.day(now);
   const st = ui.state;
   if (streak(st.stats.days, today) < MORE_MIN_STREAK) return false;

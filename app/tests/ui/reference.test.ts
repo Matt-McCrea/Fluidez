@@ -95,3 +95,14 @@ describe('strength bands', () => {
     expect(strengthOf(undefined)).toBe('new');
   });
 });
+
+describe('reference script loading', () => {
+  it('opens a script outside the window through bundle.scriptFor', async () => {
+    const { ContentLoader } = await import('../../src/ui/data/loader');
+    const b = await new ContentLoader().load({ unit: 0 });
+    const id = 'g:comparatives';
+    expect(b.scripts.get(id)).toBeUndefined();
+    expect((await b.scriptFor(id))?.node).toBe(id);
+    expect(b.scripts.get(id)).toBeTruthy();
+  }, 120_000);
+});

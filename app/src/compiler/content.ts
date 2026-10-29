@@ -38,7 +38,29 @@ export function buildCourse(units: Unit[], nodes: GraphNode[]): Course {
   }
   // grammar never on an introduce day: taught where first listed
   for (const [n, p] of firstListed) if (!teachPos.has(n)) teachPos.set(n, p);
-  return { units: sorted, nodes: byId, unitIndex: new Map(sorted.map((u, i) => [u.id, i])), unitStart, teachPos };
+  const { implicit, untaught } = implicitNodes(sorted, nodes);
+  return { units: sorted, nodes: byId, unitIndex: new Map(sorted.map((u, i) => [u.id, i])), unitStart, teachPos, implicit, untaught };
+}
+
+/**
+ * Graph nodes no unit day lists. Lexemes and chunks among them are allowed in
+ * sentences from session max(1, priority) (the gate's rule for unscheduled
+ * nodes); the rest (grammar, patterns, contrasts and the like) must be taught
+ * explicitly, so they are reported as untaught and never known. With no units
+ * there is no schedule, so nothing is implicit.
+ */
+export function implicitNodes(units: Unit[], nodes: GraphNode[]): { implicit: Map<NodeId, number>; untaught: NodeId[] } {
+  const implicit = new Map<NodeId, number>();
+  const untaught: NodeId[] = [];
+  if (!units.length) return { implicit, untaught };
+  const listed = new Set<NodeId>();
+  for (const u of units) for (const d of u.days) for (const n of dayNodes(d)) listed.add(n);
+  for (const n of nodes) {
+    if (listed.has(n.id)) continue;
+    if (n.kind === 'lexeme' || n.kind === 'chunk') implicit.set(n.id, Math.max(1, n.priority));
+    else if (n.kind === 'grammar' || n.kind === 'pattern' || n.kind === 'contrast') untaught.push(n.id);
+  }
+  return { implicit, untaught: untaught.sort() };
 }
 
 /** Global position of a unit day. */

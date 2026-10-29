@@ -74,8 +74,8 @@ export interface TimingStats { count: number; totalMs: number }
 export type Tier = 'minimum' | 'standard' | 'extended';
 
 export interface Settings {
+  /** the standing daily lesson size; session minutes come from this and the band (compiler/budget.ts) */
   tier: Tier;
-  minutes: number;            // daily minute budget the compiler plans to
   retention: number;          // FSRS target retention
   maximumInterval: number;    // days; caps maintenance gaps
   rolloverHour: number;       // local hour when "today" becomes "tomorrow"
@@ -95,7 +95,6 @@ export interface LearnerState {
 
 export const DEFAULT_SETTINGS: Settings = {
   tier: 'standard',
-  minutes: 20,
   retention: 0.9,
   maximumInterval: 365,
   rolloverHour: 4,
@@ -139,6 +138,7 @@ export function migrate(raw: unknown): LearnerState {
   // Fill anything a partial/older document lacks, without dropping what it has.
   const base = emptyState(s.createdAt ?? Date.now());
   s.settings = { ...base.settings, ...(s.settings ?? {}) };
+  delete s.settings.minutes; // retired: session minutes come from band and tier
   s.nodes ??= {};
   s.ledger = { ...base.ledger, ...(s.ledger ?? {}) };
   s.session = { ...base.session, ...(s.session ?? {}) };

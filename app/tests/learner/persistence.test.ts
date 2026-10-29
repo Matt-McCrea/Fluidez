@@ -111,11 +111,11 @@ describe('serialisation', () => {
     const c = clock();
     const L = await Learner.open(new IdbStore(kv), { now: c.now });
     randomHistory(L, c, 42);
-    L.setSettings({ tier: 'extended', minutes: 35 });
+    L.setSettings({ tier: 'extended' });
     await L.flush();
     const M = await Learner.open(new IdbStore(kv), { now: c.now });
     expect(M.toJSON()).toEqual(L.toJSON());
-    expect(M.settings.minutes).toBe(35);
+    expect(M.settings.tier).toBe('extended');
     expect(kv.map.has('state.prev')).toBe(true);
     kv.map.delete('state'); // a torn write falls back to the previous document
     const N = await Learner.open(new IdbStore(kv), { now: c.now });
@@ -154,11 +154,11 @@ describe('serialisation', () => {
     const c = clock();
     const L = await Learner.open(store, { now: c.now });
     L.startSession(); c.advance(DAY); L.startSession();
-    L.setSettings({ tier: 'minimum', minutes: 10, retention: 0.92 });
+    L.setSettings({ tier: 'minimum', retention: 0.92 });
     await L.flush();
     const M = await Learner.open(store, { now: c.now });
     expect(M.sessionIndex).toBe(2);
-    expect(M.settings).toMatchObject({ tier: 'minimum', minutes: 10, retention: 0.92 });
+    expect(M.settings).toMatchObject({ tier: 'minimum', retention: 0.92 });
     expect(() => M.setSettings({ retention: 1.5 })).toThrow();
   });
 });

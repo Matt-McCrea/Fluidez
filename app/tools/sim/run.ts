@@ -163,7 +163,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
   let t = SIM_START;
   const clock = { now: () => t };
   const L = Learner.fresh({ now: clock.now });
-  L.setSettings({ tier: opts.tier, minutes: opts.tier === 'extended' ? 40 : 20 });
+  L.setSettings({ tier: opts.tier });
   let path: PathState = initialPath();
   const learnerId = `sim-${profile.name}-${opts.seed ?? 1}`;
   const { course, content } = opts;

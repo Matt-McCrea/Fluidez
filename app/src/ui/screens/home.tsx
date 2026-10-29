@@ -4,7 +4,8 @@ import type { Mode } from '../../compiler';
 import { Bar, Heading, undash } from '../components/text';
 import { useApp } from '../context';
 import { sessionLabel } from '../session/labels';
-import { anotherAllowed, compilePlan } from '../session/runner';
+import { anotherAllowed, compilePlan, requestFullLesson } from '../session/runner';
+import { goalLine } from '../session/goal';
 import type { PracticeSpec } from '../session/practice-spec';
 import { verbsMet } from '../session/freeplay';
 import { weakSpots } from '../../learner/weak';
@@ -32,6 +33,8 @@ export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode) =
   const chaptersRead = bundle.index.chapters.filter((c) => learner.ledger.hasSeen('chapter', c.id));
   const last = chaptersRead[chaptersRead.length - 1];
   const lastFull = last ? bundle.chapters.get(last.id) : undefined;
+  const short = learner.settings.tier === 'minimum';
+  const goalNote = goalLine(ui.state.goal, unit);
   const { days, keptWithDayOff } = streakStatus(ui.state, today);
   const finished = ui.path.unit >= bundle.course.units.length;
 
@@ -43,11 +46,14 @@ export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode) =
       <section class="card today" aria-labelledby="today-title">
         <p class="ask" id="today-title">{doneToday ? 'Up next' : 'Today'}</p>
         {plan ? <p class="big" data-label>{sessionLabel(plan, bundle)}</p> : <p class="big">Nothing to do yet</p>}
+        {short ? <p data-short>A short one today</p> : null}
         {plan ? <p class="small">About {Math.max(5, Math.round(plan.estimatedMinutes))} minutes</p> : null}
+        {goalNote && !short ? <p class="small" data-goal>{goalNote}</p> : null}
         <div class="actions">
           {!doneToday ? <button class="btn primary" data-start onClick={() => onStart('next')}>Start</button>
             : another ? <button class="btn primary" data-another onClick={() => onStart('another')}>Do another</button>
               : <p>That's plenty for today. Your reviews need a rest to work. See you tomorrow.</p>}
+          {short ? <button class="btn quiet" data-full onClick={() => { requestFullLesson(); onStart('next'); }}>Do the full lesson instead</button> : null}
         </div>
       </section>
 

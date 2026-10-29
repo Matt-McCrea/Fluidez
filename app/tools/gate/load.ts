@@ -26,7 +26,6 @@ const SCHEMA: Partial<Record<Kind, z.ZodTypeAny>> = {
   story: StoryChapter,
   scene: Scene,
   writing: z.array(WritingTask),
-  vocab: z.array(GraphNode),
 };
 
 export function listJson(dir: string): string[] {
@@ -61,10 +60,6 @@ export function loadFile(abs: string, appDir: string, findings: Finding[] | null
   if (!schema) return { abs, rel, kind, raw, data: raw, ok: true };
   const r = schema.safeParse(raw);
   if (!r.success) {
-    if (kind === 'vocab') {
-      findings?.push({ severity: 'warning', check: 'schema', file: rel, problem: 'content/vocab has no schema of its own and this is not GraphNode[]; ignored', fix: 'put lexemes in graph/*.json as kind "lexeme" nodes, or propose a Vocab schema' });
-      return { abs, rel, kind, raw, data: null, ok: false };
-    }
     for (const i of zodIssues(r.error)) findings?.push({ severity: 'error', check: 'schema', file: rel, path: i.path, problem: i.msg, fix: 'match src/content/schema.ts exactly; never invent fields' });
     if (r.error.issues.length > 8) findings?.push({ severity: 'error', check: 'schema', file: rel, problem: `… ${r.error.issues.length - 8} more schema issues` });
     return { abs, rel, kind, raw, data: null, ok: false };
@@ -104,7 +99,7 @@ export interface Curriculum {
 export function buildCurriculum(files: Loaded[], contentDir: string, findings: Finding[]): Curriculum {
   const nodes = new Map<string, GraphNode>();
   for (const f of files) {
-    if ((f.kind !== 'graph' && f.kind !== 'vocab') || !f.ok) continue;
+    if (f.kind !== 'graph' || !f.ok) continue;
     for (const n of f.data as GraphNode[]) nodes.set(n.id, n);
   }
   const units = files.filter((f) => f.kind === 'unit' && f.ok).map((f) => f.data as Unit).sort((a, b) => a.id.localeCompare(b.id));

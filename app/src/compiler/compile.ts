@@ -253,6 +253,8 @@ class Compiler {
     this.spr = this.L.secondsPerReview();
     this.known = new Set(this.L.nodes());
     this.stable = this.L.stableNodes ? this.L.stableNodes(undefined, this.now) : new Set(this.known);
+    // lexemes and chunks no unit day teaches: usable in sentences from their priority session, no cards
+    for (const [id, from] of input.course.implicit) if (from <= this.sessionIndex && !this.known.has(id)) { this.known.add(id); this.stable.add(id); }
     this.owedNew = [...input.path.owedNew];
     this.owedGrammar = [...input.path.owedGrammar];
   }
@@ -271,7 +273,7 @@ class Compiler {
   compile(): SessionPlan {
     this.unit = this.course.units[this.path.unit];
     this.band = bandAt(this.course, this.path);
-    // session length by band and tier (budget.ts); settings.minutes is not used for planning
+    // session length by band and tier (budget.ts); there is no minutes setting
     this.minutes = sessionMinutes(this.tier, this.band);
     this.due = this.L.due(this.now);
     this.groups = this.planReviews();

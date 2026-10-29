@@ -6,6 +6,7 @@ import { answerForms, checkWriting, type Constraint } from '../../src/check';
 import { extractSpanish, type EsString } from './extract';
 import { clip, type Finding } from './findings';
 import type { Curriculum, Loaded } from './load';
+import { computeDaySupply } from '../supply/day-supply-core';
 
 export interface RunState {
   /** tag once per distinct sentence per run */
@@ -59,7 +60,7 @@ export function positionOf(st: RunState, f: Loaded, item: Record<string, unknown
     }
     case 'scene': {
       const sc = f.data as Scene;
-      const at = cur.sceneAt.get(sc.id);
+      const at = sc.spare ? undefined : cur.sceneAt.get(sc.id);   // a spare scene is gated at the end of its unit, like bank rows
       return at !== undefined ? { at, label: `${sc.unit} (scene day)` } : unitPos(st, sc.unit, f.rel, 'unit');
     }
     case 'script': {
@@ -177,18 +178,21 @@ export function verbCoverage(st: RunState, r: TagResult, file: string, path: str
 }
 
 /* Content that is Peninsular or voseo ON PURPOSE (recognition chunks such as
- * c:vale-spain, scripts for g:vosotros-recognition) is exempt from the
- * dialect lint. Until GraphNode has a field for it (see the schema
- * proposals), it is recognised by its target node, its id or its note. */
+ * c:vale-spain, scripts for g:vosotros-recognition) is exempt from the dialect
+ * lint. The graph says so: GraphNode.variety !== 'neutral'. The hard-coded set
+ * and the id/note regex below are a fallback kept for one release (added
+ * 2026-10-29); delete them once every such node carries a variety. */
 const RECOGNITION_NODES = new Set(['g:vosotros-recognition', 'g:voseo-recognition', 'g:spain-pasts', 'g:se-form-recognition', 'g:future-subj-recognition']);
 function isRecognitionNode(st: RunState, id: string | undefined): boolean {
   if (!id) return false;
-  if (RECOGNITION_NODES.has(id)) return true;
   const n = st.cur.nodes.get(id);
+  if (n && n.variety !== 'neutral') return true;
+  if (n?.unpacks && (st.cur.nodes.get(n.unpacks)?.variety ?? 'neutral') !== 'neutral') return true;
+  if (RECOGNITION_NODES.has(id)) return true;
   return !!n && (RECOGNITION_NODES.has(n.unpacks ?? '') || /-(spain|vosotros|voseo|peninsular)$/.test(n.id) || /recognition only/i.test(n.note ?? ''));
 }
 function isRecognitionItem(st: RunState, f: Loaded, row: Record<string, unknown> | null): boolean {
-  if (f.kind === 'graph') return isRecognitionNode(st, row?.id as string | undefined) || /recognition only/i.test(String(row?.note ?? ''));
+  if (f.kind === 'graph') return isRecognitionNode(st, row?.id as string | undefined) || (!!row && row.variety !== undefined && row.variety !== 'neutral') || /recognition only/i.test(String(row?.note ?? ''));
   if (f.kind === 'script') return isRecognitionNode(st, (f.data as TeachingScript).node);
   if (f.kind === 'bank') return ((row?.targets as string[] | undefined) ?? []).some((t) => isRecognitionNode(st, t));
   if (f.kind === 'writing' || f.kind === 'scene') return isRecognitionNode(st, (row?.focus as string | undefined));
@@ -465,3 +469,36 @@ export function chapterLength(st: RunState, f: Loaded): void {
 }
 
 export type { EsString };
+
+/* ---- day supply ------------------------------------------------------------------ */
+/** Bank rows are gated at the end of their unit, but the session compiler serves a row only
+ *  when everything it requires is taught by that day. Warn for each (unit, day, node) whose
+ *  usable rows fall under the minimum (9 on an introduce day, 11 and 4 questions on a drill
+ *  day, 40 per grammar node by its drill day). Only units that have bank rows are checked. */
+export function daySupply(st: RunState, loaded: Loaded[], only: Set<string> | null): void {
+  const cur = st.cur;
+  if (!cur.units.length) return;
+  const rows = loaded.filter((f) => f.kind === 'bank' && f.ok).flatMap((f) => f.data as BankSentence[]);
+  const withRows = new Set(rows.map((b) => b.unit).filter((u): u is string => !!u));
+  const units = new Set(cur.units.map((u) => u.id).filter((id) => withRows.has(id) && (!only || only.has(id))));
+  if (!units.size) return;
+  const rep = computeDaySupply(cur, rows, { units });
+  const file = (u: string) => `content/bank/${u}.json`;
+  for (const d of rep.days) for (const n of d.nodes) {
+    if (!n.short && !n.shortQuestions) continue;
+    const bits = [n.short ? `${n.usable} usable rows, needs ${n.min} for ${n.block}` : '', n.shortQuestions ? `${n.questions} usable questions, needs ${n.minQuestions}` : ''].filter(Boolean).join('; ');
+    st.findings.push({
+      severity: 'warning', check: 'daySupply', file: file(d.unit), path: `${d.unit} day ${d.day}`,
+      problem: `${n.node} on ${d.type} day ${d.day} (session ${d.session}): ${bits} (rows legal only by the unit end do not count)`,
+      fix: `add rows targeting ${n.node} that use only what is taught up to day ${d.day}`,
+    });
+  }
+  for (const n of rep.unitNodes) {
+    if (!n.short) continue;
+    st.findings.push({
+      severity: 'warning', check: 'daySupply', file: file(n.unit), path: `${n.unit} day ${n.drillDay}`,
+      problem: `${n.node}: ${n.usable} rows usable by its drill day ${n.drillDay} (session ${n.session}), needs ${n.min}`,
+      fix: `add rows targeting ${n.node} legal by day ${n.drillDay}`,
+    });
+  }
+}

@@ -23,7 +23,7 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
   const [placed, setPlaced] = useState(0);
 
   const finish = async (unit: number) => {
-    app.learner.setSettings({ tier: 'standard', minutes: 20 });
+    app.learner.setSettings({ tier: 'standard' });
     const path = applyPlacement(app.learner, app.bundle, unit, app.now());
     await app.ui.setPath(path);
     await app.ui.update((s) => { s.onboarded = true; s.goal = goal; s.placedAt = unit; });

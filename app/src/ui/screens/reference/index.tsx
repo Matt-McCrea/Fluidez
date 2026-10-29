@@ -1,7 +1,7 @@
 // Reference: find a verb form, a piece of grammar or a word, instantly.
 // One search box; Verbs, Grammar and Words below it. Nothing here asks the
 // learner to do anything; "Practise" hands a spec to the practice screen.
-import { useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useState } from 'preact/hooks';
 import type { TeachingScript } from '../../../content/schema';
 import type { TenseKey } from '../../../engine';
 import type { PracticeSpec } from '../../session/practice-spec';
@@ -178,12 +178,22 @@ function GrammarView({ q, hits, shown, more, onPractise }: {
 function GrammarItem({ e, onPractise }: { e: GrammarEntry; onPractise: (s: PracticeSpec) => void }) {
   const { bundle } = useApp();
   const [open, setOpen] = useState(false);
-  const script = open ? bundle.scripts.get(e.id) : undefined;
+  const [script, setScript] = useState<TeachingScript | undefined>(() => bundle.scripts.get(e.id));
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    if (!open) return;
+    const have = bundle.scripts.get(e.id);
+    if (have) { setScript(have); return; }
+    let live = true;
+    setLoading(true);
+    void bundle.scriptFor(e.id).then((s) => { if (live) { setScript(s); setLoading(false); } }, () => { if (live) setLoading(false); });
+    return () => { live = false; };
+  }, [open, e.id]);
   return (
     <details class="entry" onToggle={(ev) => setOpen((ev.target as HTMLDetailsElement).open)}>
       <summary>{undash(e.title)}</summary>
       {open ? <>
-        {script ? <ScriptView script={script} /> : <Short id={e.id} />}
+        {script ? <ScriptView script={script} /> : loading ? <p class="small" data-loading>Loading</p> : <Short id={e.id} />}
         <div class="actions">
           <button class="btn primary" onClick={() => onPractise({ kind: 'nodes', nodes: [e.id] })}>Practise this</button>
         </div>
@@ -238,7 +248,7 @@ function WordsView({ q, hits, shown, more, onPractise }: {
             <span class={`dot ${w.strength}`} role="img" aria-label={STRENGTH_TEXT[w.strength]} title={STRENGTH_TEXT[w.strength]} />
             <span class="word-text">
               <Es>{w.word}</Es>{w.gender === 'mf' ? <span class="small"> (m or f)</span> : null}
-              <span class="gloss"> {undash(w.gloss)}</span>
+              <span class="word-gloss"> {undash(w.gloss)}</span>
               {w.saved ? <span class="small"> Saved</span> : null}
             </span>
             {w.id ? <button class="btn quiet" onClick={() => onPractise({ kind: 'nodes', nodes: [w.id!] })} aria-label={`Practise ${w.word}`}>Practise</button> : null}

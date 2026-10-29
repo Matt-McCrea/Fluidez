@@ -16,7 +16,31 @@ const clock = (s: number) => `${Math.floor(Math.max(0, s) / 60)}:${String(Math.m
 export function Practice({ spec, onDone }: { spec?: PracticeSpec; onDone: () => void }) {
   const [chosen, setChosen] = useState<PracticeSpec | undefined>(spec);
   if (!chosen) return <Pickers onPick={setChosen} onDone={onDone} />;
-  return <Run spec={chosen} onDone={spec ? onDone : () => setChosen(undefined)} onExit={onDone} />;
+  return <Ready spec={chosen} onDone={spec ? onDone : () => setChosen(undefined)} onExit={onDone} />;
+}
+
+/** Content the run needs: units up to the learner's current one (or the one asked for). */
+async function ensureFor(spec: PracticeSpec, app: ReturnType<typeof useApp>): Promise<void> {
+  const { bundle, ui } = app;
+  if (spec.kind === 'conjugate') return;
+  const last = Math.max(0, bundle.course.units.length - 1);
+  await bundle.ensureUnits({ to: Math.min(ui.path.unit, last) });
+  if (spec.kind === 'translate' && spec.unit) {
+    const at = bundle.course.units.findIndex((u) => u.id === spec.unit);
+    if (at >= 0) await bundle.ensureUnits({ from: at, to: at });
+  }
+}
+
+function Ready({ spec, onDone, onExit }: { spec: PracticeSpec; onDone: () => void; onExit: () => void }) {
+  const app = useApp();
+  const [ready, setReady] = useState(spec.kind === 'conjugate');
+  useEffect(() => {
+    let live = true;
+    void ensureFor(spec, app).catch(() => undefined).then(() => { if (live) setReady(true); });
+    return () => { live = false; };
+  }, []);
+  if (!ready) return <main class="screen" id="main"><p data-loading>Loading</p></main>;
+  return <Run spec={spec} onDone={onDone} onExit={onExit} />;
 }
 
 // ---------------------------------------------------------------- pickers

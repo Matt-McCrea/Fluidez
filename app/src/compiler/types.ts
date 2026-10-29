@@ -62,6 +62,15 @@ export interface Course {
    * previewed), everything else at its first listing.
    */
   teachPos: Map<NodeId, number>;
+  /**
+   * Lexemes and chunks on no unit day, mapped to the session from which a
+   * sentence may use them (max(1, priority)), the same rule the gate applies.
+   * They get no cards and are never new items. The Reference tab and weak spots
+   * (learner.nodes()) do not list them.
+   */
+  implicit: Map<NodeId, number>;
+  /** Grammar, pattern and contrast nodes on no unit day: never known, reported here. */
+  untaught: NodeId[];
 }
 
 /** A bank sentence as the compiler sees it. `requires` already includes `targets`. */

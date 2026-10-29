@@ -21,6 +21,8 @@
  * ========================================================================== */
 import { deaccent } from '../../src/engine';
 import { splitSentences } from '../../src/engine/tagger';
+import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import type { BankSentence, Scene, StoryChapter, Unit, WritingTask } from '../../src/content/schema';
 import { clip, type Finding } from './findings';
 import type { Loaded } from './load';
@@ -149,7 +151,24 @@ export function frameOveruse(items: Item[], units: Set<string>, findings: Findin
 }
 
 /* ---- supply ------------------------------------------------------------------- */
-export function supply(files: Loaded[], units: Unit[], only: Set<string> | null, findings: Finding[], strict: boolean, complete: Set<string>): string[] {
+export interface UnitQuota { bankSentences?: number; chapters?: number; scenes?: number; writingTasks?: number; p95Demand?: { sentences?: number } }
+/** content/_reports/quotas.json: the one source of per-unit supply targets (simulator-derived, factor 3, p95). */
+export function loadQuotas(contentDir: string): Record<string, UnitQuota> {
+  const p = join(contentDir, '_reports', 'quotas.json');
+  if (!existsSync(p)) return {};
+  try { return (JSON.parse(readFileSync(p, 'utf8')).units ?? {}) as Record<string, UnitQuota>; } catch { return {}; }
+}
+/** What the gate holds a unit to: the first-pass bank target (1.15 x p95 demand, as the burn writes it; the long-run
+ *  factor-3 figure when no demand is recorded) and the quota counts of the other kinds. */
+function targetFor(q: UnitQuota) {
+  const p95 = q.p95Demand?.sentences;
+  return {
+    bankSentences: p95 ? Math.ceil(1.15 * p95) : q.bankSentences ?? 0,
+    chapters: q.chapters ?? 0, scenes: q.scenes ?? 0, writingTasks: q.writingTasks ?? 0,
+  };
+}
+
+export function supply(files: Loaded[], units: Unit[], quotas: Record<string, UnitQuota>, only: Set<string> | null, findings: Finding[], strict: boolean, complete: Set<string>): string[] {
   const count = (pred: (f: Loaded) => number) => files.filter((f) => f.ok).reduce((a, f) => a + pred(f), 0);
   const report: string[] = [];
   for (const u of units) {
@@ -160,11 +179,13 @@ export function supply(files: Loaded[], units: Unit[], only: Set<string> | null,
       scenes: count((f) => (f.kind === 'scene' && (f.data as Scene).unit === u.id ? 1 : 0)),
       writingTasks: count((f) => (f.kind === 'writing' ? (f.data as WritingTask[]).filter((w) => w.unit === u.id).length : 0)),
     };
-    const short = (Object.keys(have) as Array<keyof typeof have>).filter((k) => have[k] < u.quota[k]);
-    report.push(`${u.id} ${u.band}: bank ${have.bankSentences}/${u.quota.bankSentences} · chapters ${have.chapters}/${u.quota.chapters} · scenes ${have.scenes}/${u.quota.scenes} · writing ${have.writingTasks}/${u.quota.writingTasks}${short.length ? '  SHORT' : ''}`);
+    if (!quotas[u.id]) continue;
+    const want = targetFor(quotas[u.id]);
+    const short = (Object.keys(have) as Array<keyof typeof have>).filter((k) => have[k] < want[k]);
+    report.push(`${u.id} ${u.band}: bank ${have.bankSentences}/${want.bankSentences} · chapters ${have.chapters}/${want.chapters} · scenes ${have.scenes}/${want.scenes} · writing ${have.writingTasks}/${want.writingTasks}${short.length ? '  SHORT' : ''}`);
     if (short.length) {
       const hard = strict || complete.has(u.band);
-      findings.push({ severity: hard ? 'error' : 'warning', check: 'supply', file: `content/units/${u.id}.json`, problem: `below quota: ${short.map((k) => `${k} ${have[k]}/${u.quota[k]}`).join(', ')}`, fix: hard ? 'generate the missing content before the band is marked complete' : 'expected while the band is still being generated' });
+      findings.push({ severity: hard ? 'error' : 'warning', check: 'supply', file: `content/units/${u.id}.json`, problem: `below quota: ${short.map((k) => `${k} ${have[k]}/${want[k]}`).join(', ')}`, fix: hard ? 'generate the missing content before the band is marked complete' : 'expected while the band is still being generated' });
     }
   }
   return report;

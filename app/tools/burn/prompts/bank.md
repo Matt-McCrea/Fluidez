@@ -77,13 +77,14 @@ console.log(`${bad}/${lines.length} bad`);
 ## 3. How many, and of what
 
 From `content/_reports/quotas.json` → `units.{UNIT}`:
-- **Total** = `max(units/{UNIT}.json quota.bankSentences, ceil(1.15 × p95Demand.sentences))`. (`bankSentences` in quotas.json is the factor-3 long-run supply; the first pass aims at p95 plus headroom. u01: p95 881 → wrote 1,100.)
+- **Total** = `ceil(1.15 × p95Demand.sentences)` (quotas.json is the only quota source; units carry none). (`bankSentences` in quotas.json is the factor-3 long-run supply; the first pass aims at p95 plus headroom. u01: p95 881 → wrote 1,100.)
 - **Per node minimum**, counted by `targets`:
   - every grammar node first introduced in the unit: **≥ 120**
   - every pattern in a day's `focus`: **≥ 40**
   - every chunk introduced in the unit: **≥ 10**
   - every lexeme on the unit's days: **≥ 6**, in varied contexts (not six sentences with the same frame)
 - Some nodes have no tagger feature and can never be a `target` (u01: `g:sounds-letters`, `p:ser-profession-no-article`). Write the sentences anyway (jobs with no article, words with accents) and list the gap in your report.
+- **Early-legal rows (the compiler's constraint).** The gate places a row at the end of its unit, but the session compiler serves a row only when everything it requires is taught by the day it is used. So for **each grammar or pattern node** you target, at least **12 rows must use ONLY what is taught up to and including the node's first day** (its first appearance in a day's `focus`), and at least **6 of those 12 must be questions** (`¿…?`, for the communicative drill). Before writing, name that day, list what is allowed (the grammar, patterns and chunks of days 1 to that day of this unit and of every earlier unit, plus the lexemes carried by those days), and probe those rows with `chk.ts <that day's session>` and the node allowed. Words that no unit day carries (known only from their graph `priority`) are not introduced by the compiler, so avoid them in these rows. Rows that are legal only at the unit end are fine for the rest of the node's quota.
 - Mix `kind`: roughly 55% `statement`, 20% `question`, 25% `dialogue` (a line someone would say in a conversation: replies, greetings, requests).
 
 ## 4. Quality bar

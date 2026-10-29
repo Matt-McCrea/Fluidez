@@ -395,3 +395,42 @@ describe('reading coverage is measured against retained words', () => {
     expect(st.has('l:old')).toBe(false);
   });
 });
+
+describe('nodes on no unit day', () => {
+  function world(nodes: GraphNode[], requires: string[] = []) {
+    const units: Unit[] = [{
+      id: 'u01', band: 'A1', title: 'u', theme: 't', canDo: 'c', storyArc: 'a',
+      days: Array.from({ length: 7 }, (_, i) => ({ type: 'input' as const, focus: [], chunks: [], lexemes: [], ...(i === 0 ? { chapter: 'ch001' } : {}) })),
+    }];
+    const course = buildCourse(units, nodes);
+    const chapter = {
+      id: 'ch001', unit: 'u01', title: 't', text: 'uno dos tres', gloss: [], hook: 'h', requires, lexemes: [],
+      questions: [1, 2, 3].map((n) => ({ q: `q${n}`, options: ['a', 'b'], answer: 0 })),
+    } as any;
+    const content = buildContentIndex({ sentences: [], chapters: [chapter], scenes: [], writing: [], scripts: [] }, course);
+    /** does the read block run at this session index (needs every required node known) */
+    const reads = (si: number) => {
+      const L = Learner.fresh({ now: () => T0 });
+      while (L.sessionIndex < si - 1) L.startSession(T0);
+      const plan = compileSession({ learnerId: 'x', learner: L, path: initialPath(), course, content, now: T0 });
+      expect(L.nodes()).toEqual([]);
+      return plan.blocks.some((b) => b.kind === 'read');
+    };
+    return { course, reads };
+  }
+
+  test('an implicit lexeme with priority 5 is not known at session 4 and is at session 5; it gets no card', () => {
+    const { course, reads } = world([node('l:late', 'lexeme', { priority: 5 }), node('l:early', 'lexeme', { priority: 0 })], ['l:late']);
+    expect(course.implicit.get('l:late')).toBe(5);
+    expect(course.implicit.get('l:early')).toBe(1);
+    expect(reads(4)).toBe(false);
+    expect(reads(5)).toBe(true);
+  });
+
+  test('a grammar node on no day is never known and is reported as untaught', () => {
+    const { course, reads } = world([node('g:orphan', 'grammar', { priority: 1 }), node('l:x', 'lexeme')], ['g:orphan']);
+    expect(course.untaught).toEqual(['g:orphan']);
+    expect(course.implicit.has('g:orphan')).toBe(false);
+    expect(reads(30)).toBe(false);
+  });
+});

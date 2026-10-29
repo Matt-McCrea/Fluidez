@@ -20,6 +20,7 @@ export default defineConfig({
     deviceScaleFactor: 3,
     serviceWorkers: 'allow',
     trace: 'retain-on-failure',
+    actionTimeout: 10_000,
   },
   projects: [{ name: 'mobile-chromium', use: { ...devices['Desktop Chrome'], viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true } }],
   webServer: {

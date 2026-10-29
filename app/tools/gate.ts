@@ -36,15 +36,18 @@
  *   requires   bank requires, and chapter/scene/writing requires (+ chapter lexemes),
  *              == tagger output (--fix writes them); targets ⊆ requires (patterns,
  *              contrasts and undetectable nodes only warn)
- *   supply     per-unit counts vs Unit.quota (warning until the band is listed
+ *   supply     per-unit counts vs content/_reports/quotas.json (warning until the band is listed
  *              in content/units/_complete.json; error with --strict)
+ *   daySupply  per (unit, day, node): bank rows whose requires are all taught by that day
+ *              (9 on an introduce day, 11 and 4 questions on a drill day, 40 per grammar node
+ *              by its drill day); rows legal only at the unit end do not count (warning)
  *   tagger     low-confidence bank sentences (warning; error with --strict)
  * ========================================================================== */
 import { existsSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { checkBank, checkComputed, checkDashes, checkStrings, checkStructure, readingCoverage, chapterLength, type RunState } from './gate/checks';
-import { collectItems, frameOveruse, nearDuplicates, supply } from './gate/corpus';
+import { checkBank, checkComputed, checkDashes, checkStrings, checkStructure, readingCoverage, chapterLength, daySupply, type RunState } from './gate/checks';
+import { collectItems, frameOveruse, nearDuplicates, loadQuotas, supply } from './gate/corpus';
 import { render, type Finding } from './gate/findings';
 import { buildCurriculum, listJson, loadFile, resolveTargets, type Loaded } from './gate/load';
 export { castNames } from './gate/load';
@@ -82,7 +85,7 @@ export function runGate(o: GateOptions = {}): GateResult {
   // Load everything once; schema findings are reported for targets only.
   const loaded: Loaded[] = [];
   for (const p of new Set([...all, ...targetPaths.filter(existsSync)])) loaded.push(loadFile(p, appDir, targetSet.has(p) ? findings : null));
-  const brokenOthers = loaded.filter((f) => !f.ok && !targetSet.has(f.abs) && f.kind !== 'vocab').length;
+  const brokenOthers = loaded.filter((f) => !f.ok && !targetSet.has(f.abs)).length;
   if (brokenOthers) findings.push({ severity: 'warning', check: 'schema', file: '', problem: `${brokenOthers} other content file(s) fail their schema and were left out of corpus checks`, fix: 'run npm run gate with no paths to see them' });
 
   const cur = buildCurriculum(loaded, contentDir, findings);
@@ -117,7 +120,9 @@ export function runGate(o: GateOptions = {}): GateResult {
   nearDuplicates(items, new Set(targets.map((f) => f.rel)), findings);
   frameOveruse(items, touchedUnits, findings, !!o.strict);
   const whole = !(o.paths ?? []).length;
-  const sup = supply(loaded, cur.units, whole ? null : touchedUnits, findings, !!o.strict, cur.completeBands);
+  const sup = supply(loaded, cur.units, loadQuotas(contentDir), whole ? null : touchedUnits, findings, !!o.strict, cur.completeBands);
+
+  daySupply(st, loaded, whole ? null : touchedUnits);
 
   if (st.unmapped.size) {
     const list = [...st.unmapped.entries()].sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}×${v}`).join(', ');

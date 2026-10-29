@@ -227,3 +227,23 @@ describe('the self-check changes what comes back', () => {
     for (const n of listed) expect(w.learner.retrievability(n, 'productive', w.now()) ?? 1).toBeLessThan(0.8);
   });
 });
+
+describe('the offer follows the standing size', () => {
+  it('only a regular-size learner is offered more', async () => {
+    const res: Record<string, boolean> = {};
+    for (const tier of ['minimum', 'standard', 'extended'] as const) {
+      const w = await world();
+      w.learner.setSettings({ tier });
+      let any = false;
+      for (let d = 0; d < 8; d++) {
+        await session(w, 'right');
+        any = offerMore(w.learner, w.bundle, w.ui, w.now()) || any;
+        w.clock.t += DAY;
+      }
+      res[tier] = any;
+    }
+    expect(res.minimum).toBe(false);
+    expect(res.extended).toBe(false);
+    expect(res.standard).toBe(true);
+  });
+});

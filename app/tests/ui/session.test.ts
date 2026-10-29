@@ -266,3 +266,58 @@ describe('progress by card', () => {
     expect(run.progress().blocks).toBe(3);
   });
 });
+
+describe('the daily size is a standing preference', () => {
+  it('extended reaches the compiled plan: the extended budget and extra reading', async () => {
+    const w = await world();
+    const { compilePlan } = await import('../../src/ui/session/runner');
+    for (let d = 0; d < 3; d++) { await session(w, 'right'); w.clock.t += DAY; }
+    const std = compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
+    w.learner.setSettings({ tier: 'extended' });
+    const ext = compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
+    expect(ext.tier).toBe('extended');
+    expect(ext.budget.minutes).toBeGreaterThan(std.budget.minutes);
+  });
+
+  it('minimum gives a 10-minute plan that does not advance the path; the full lesson is a one-off', async () => {
+    const w = await world();
+    const { compilePlan, requestFullLesson } = await import('../../src/ui/session/runner');
+    for (let d = 0; d < 3; d++) { await session(w, 'right'); w.clock.t += DAY; }
+    w.learner.setSettings({ tier: 'minimum' });
+    const min = compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
+    expect(min.type).toBe('minimum');
+    expect(min.budget.minutes).toBe(10);
+    const before = structuredClone(w.ui.path);
+    await session(w, 'right');
+    expect([w.ui.path.unit, w.ui.path.day, w.ui.path.coreSessions]).toEqual([before.unit, before.day, before.coreSessions]);
+    requestFullLesson();
+    const full = compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
+    expect(full.tier).toBe('standard');
+    expect(w.learner.settings.tier).toBe('minimum'); // not a settings change
+  });
+
+  it('Settings carries no minutes field', async () => {
+    const w = await world();
+    expect('minutes' in w.learner.settings).toBe(false);
+  });
+});
+
+describe('Home copy and the goal line', () => {
+  it('the minimum tier line and the full-lesson offer are on Home; settings name the three sizes', async () => {
+    const { readFileSync } = await import('node:fs');
+    const home = readFileSync(new URL('../../src/ui/screens/home.tsx', import.meta.url), 'utf8');
+    expect(home).toContain('A short one today');
+    expect(home).toContain('Do the full lesson instead');
+    const set = readFileSync(new URL('../../src/ui/screens/settings.tsx', import.meta.url), 'utf8');
+    for (const t of ['Just the essentials', 'The regular lesson', 'plus extra reading']) expect(set).toContain(t);
+  });
+
+  it('the goal shows only when the unit fits it', async () => {
+    const { goalLine } = await import('../../src/ui/session/goal');
+    const u = { title: 'Food and ordering', canDo: 'I can order food and drink.' };
+    expect(goalLine('travel', u)).toBe('Handy for your trip.');
+    expect(goalLine('work', u)).toBeUndefined();
+    expect(goalLine('me', u)).toBeUndefined();
+    expect(goalLine(undefined, u)).toBeUndefined();
+  });
+});

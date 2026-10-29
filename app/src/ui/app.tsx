@@ -41,8 +41,7 @@ export async function boot(opts: BootOptions = {}): Promise<Omit<AppCtx, 'refres
   await ui.reconcile(learner.sessionIndex);
   const loader = opts.loader ?? new ContentLoader();
   const { units } = await loader.core();
-  const band = units.slice().sort((a, b) => a.id.localeCompare(b.id))[ui.path.unit]?.band;
-  const bundle = await loadBundle(loader, { band, fixtures: opts.fixtures });
+  const bundle = await loadBundle(loader, { unit: Math.min(ui.path.unit, Math.max(0, units.length - 1)), fixtures: opts.fixtures });
   try { await globalThis.navigator?.storage?.persist?.(); } catch { /* not granted: fine */ }
   return { learner, learnerStore, ui, bundle, loader, now };
 }
@@ -62,10 +61,9 @@ export function App({ opts }: { opts?: BootOptions }) {
         ...base,
         refresh,
         reloadBundle: async () => {
-          const band = c.bundle.course.units[c.ui.path.unit]?.band;
-          if (c.bundle.fixture || !band) return;
-          c.bundle = await loadBundle(c.loader, { band, fixtures: opts?.fixtures });
-          refresh();
+          if (c.bundle.fixture || !c.bundle.course.units.length) return;
+          const unit = Math.min(c.ui.path.unit, c.bundle.course.units.length - 1);
+          if (await c.bundle.ensureWindow(unit)) refresh();
         },
         resetAll: async () => {
           await c.learnerStore.clear();
@@ -90,7 +88,7 @@ export function App({ opts }: { opts?: BootOptions }) {
   }, []);
 
   if (error) return <main class="screen" id="main"><h1>Something went wrong</h1><p>{error}</p><button class="btn primary" onClick={() => location.reload()}>Try again</button></main>;
-  if (!ctx) return <main class="screen loading" id="main" aria-busy="true"><p>Loading…</p></main>;
+  if (!ctx) return <main class="screen loading" id="main" aria-busy="true"><p>Loading your Spanish</p></main>;
 
   const goHome = () => { setRoute({ tab: 'home' }); void ctx.reloadBundle(); };
   let body;

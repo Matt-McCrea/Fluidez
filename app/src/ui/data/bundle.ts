@@ -11,11 +11,18 @@ import { alignedPairs, type AlignedPair, type LexemeLike } from '../../exercises
 import { analyzeToken, deaccent } from '../../engine';
 import { tenseShort } from '../session/tenses';
 
+/** What a bundle asks its loader for after the first load. */
+export interface ContentExtender {
+  loadWindow(unit: string | number): Promise<ContentSource>;
+  loadUnits(range: { from?: number; to: number }): Promise<ContentSource>;
+  loadScript(node: string): Promise<ContentSource>;
+}
+
 export type Segment = AlignedPair;
 
 export class Bundle {
   readonly course: Course;
-  readonly index: ContentIndex;
+  index: ContentIndex;
   readonly sentences = new Map<string, BankSentence>();
   readonly chapters = new Map<string, StoryChapter>();
   readonly scenes = new Map<string, Scene>();
@@ -24,6 +31,9 @@ export class Bundle {
   readonly bank: BankSentence[];
   /** lemma (lower case, no article) -> lexeme node, for tap-to-gloss */
   private readonly lemmas = new Map<string, GraphNode>();
+
+  private more?: ContentExtender;
+  private readonly noScript = new Set<NodeId>();
 
   constructor(readonly units: Unit[], nodes: GraphNode[], readonly source: ContentSource, readonly fixture = false) {
     this.course = buildCourse(units, nodes);
@@ -41,6 +51,48 @@ export class Bundle {
         if (k && !this.lemmas.has(k)) this.lemmas.set(k, n);
       }
     }
+  }
+
+  /** Connect the loader that can fetch more content later (real bundles only). */
+  attach(more: ContentExtender): void { this.more = more; }
+
+  /** Merge newly loaded records (skipping ids already present) and rebuild the content index. */
+  extend(add: ContentSource): boolean {
+    let changed = false;
+    const src = this.source;
+    for (const s of add.sentences) if (!this.sentences.has(s.id)) { this.sentences.set(s.id, s); src.sentences.push(s); changed = true; }
+    for (const c of add.chapters) if (!this.chapters.has(c.id)) { this.chapters.set(c.id, c); src.chapters.push(c); changed = true; }
+    for (const c of add.scenes) if (!this.scenes.has(c.id)) { this.scenes.set(c.id, c); src.scenes.push(c); changed = true; }
+    for (const t of add.writing) if (!this.tasks.has(t.id)) { this.tasks.set(t.id, t); src.writing.push(t); changed = true; }
+    for (const s of add.scripts) {
+      if (!('hook' in s) || this.scripts.has(s.node)) continue;
+      this.scripts.set(s.node, s); src.scripts.push(s); changed = true;
+    }
+    if (changed) {
+      this.index = buildContentIndex(src, this.course);
+      this.byEs = undefined;
+    }
+    return changed;
+  }
+
+  /** Load the window of units around `unit` (an index or id); true when anything new arrived. */
+  async ensureWindow(unit: string | number): Promise<boolean> {
+    return this.more ? this.extend(await this.more.loadWindow(unit)) : false;
+  }
+
+  /** Load all content of the units in `range` (inclusive indexes): for quick review and the weak-spot trainer. */
+  async ensureUnits(range: { from?: number; to: number }): Promise<boolean> {
+    return this.more ? this.extend(await this.more.loadUnits(range)) : false;
+  }
+
+  /** A node's teaching script: the loaded one at once, otherwise fetched (and then cached). */
+  async scriptFor(node: NodeId): Promise<TeachingScript | undefined> {
+    const have = this.scripts.get(node);
+    if (have || !this.more || this.noScript.has(node)) return have;
+    this.extend(await this.more.loadScript(node));
+    const got = this.scripts.get(node);
+    if (!got) this.noScript.add(node);
+    return got;
   }
 
   get empty(): boolean { return this.sentences.size === 0; }

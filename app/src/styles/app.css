@@ -258,7 +258,7 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .tabs {
   position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
   width: 100%; max-width: 480px;
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(5, 1fr); /* five tabs since Look up: four columns wrapped Settings onto a second row */
   background: var(--surface); border-top: 1px solid var(--line);
   padding-bottom: env(safe-area-inset-bottom);
   z-index: 5;
@@ -287,7 +287,7 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .reference .words { list-style: none; margin: 0; padding: 0; }
 .reference .word { display: flex; align-items: center; gap: 10px; min-height: 48px; border-bottom: 1px solid var(--line); }
 .reference .word-text { flex: 1 1 auto; }
-.reference .gloss { color: var(--muted); }
+.reference .word-gloss { color: var(--muted); } /* not .gloss: that is the reader's sticky pill */
 .reference .dot { flex: 0 0 auto; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--muted); }
 .reference .dot.solid { background: var(--ok, #2e7d32); border-color: var(--ok, #2e7d32); }
 .reference .dot.fading { background: var(--accent-soft); border-color: var(--accent); }

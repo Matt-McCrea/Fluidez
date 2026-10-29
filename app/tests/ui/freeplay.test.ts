@@ -161,3 +161,22 @@ describe('nodes drill', () => {
     void answerFor;
   });
 });
+
+describe('nodes drill beyond the loaded window', () => {
+  it('has no sentences for an early node until ensureUnits brings the unit in', async () => {
+    const { ContentLoader } = await import('../../src/ui/data/loader');
+    const early = await new ContentLoader().load({ unit: 0 });
+    const ref = [...early.index.sentences.values()].find((s) => s.unit === 'u01' && s.targets.length && s.requires.length);
+    expect(ref).toBeTruthy();
+    const node = ref!.targets[0];
+    const late = await new ContentLoader().load({ unit: 30 });
+    const w = await world();
+    const learner = w.learner;
+    for (const r of new Set([node, ...ref!.requires])) if (!learner.isIntroduced(r)) learner.introduce(r, { at: w.clock.t, results: [true, true, true] });
+    const mk = () => new Freeplay({ kind: 'nodes', nodes: [node] }, { learner, bundle: late, now: w.now, rng: rng('w') });
+    const count = (fp: Freeplay) => { let n = 0; while (fp.next()) { n++; fp.answer({ correct: true, tries: 1, ms: 500 }); } return n; };
+    expect(count(mk())).toBe(0);
+    expect(await late.ensureUnits({ to: 30 })).toBe(true);
+    expect(count(mk())).toBeGreaterThan(0);
+  }, 120_000);
+});

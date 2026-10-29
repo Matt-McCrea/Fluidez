@@ -1,7 +1,7 @@
 // Which strings in a content file are Spanish, and what each one is for.
 import { basename, dirname } from 'node:path';
 
-export type Kind = 'graph' | 'unit' | 'bank' | 'script' | 'story' | 'scene' | 'writing' | 'vocab' | 'other';
+export type Kind = 'graph' | 'unit' | 'bank' | 'script' | 'story' | 'scene' | 'writing' | 'other';
 
 export interface EsString {
   /** JSON path inside the file, e.g. [3].es or turns[2].accept[0] */
@@ -31,7 +31,6 @@ export function kindOf(file: string): Kind {
     case 'story': return /^ch\d{3}\.json$/.test(name) ? 'story' : 'other';
     case 'scenes': return 'scene';
     case 'writing': return 'writing';
-    case 'vocab': return 'vocab';
     default: return 'other';
   }
 }
