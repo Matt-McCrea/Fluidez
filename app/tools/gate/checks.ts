@@ -428,12 +428,15 @@ export function readingCoverage(st: RunState, f: Loaded): void {
   const total = [...unknown.values()].reduce((a, b) => a + b, 0);
   const pAll = words ? total / words : 0;
   const pUn = words ? unknownUnglossed / words : 0;
-  if (pUn > 0.02 || pAll > 0.05) {
+  // The first weeks know too few words for natural text at 5%: early chapters may
+  // lean on glosses (tap to see) rather than go telegraphic. Unglossed stays at 2%.
+  const glossCap = pos.at < 40 ? 0.2 : pos.at < 135 ? 0.1 : 0.05;
+  if (pUn > 0.02 || pAll > glossCap) {
     const top = [...unknown.entries()].sort((a, b) => b[1] - a[1]).slice(0, 12).map(([k, v]) => `${k}${v > 1 ? '×' + v : ''}`).join(', ');
     st.findings.push({
       severity: 'error', check: 'reading', file: f.rel, path: 'text',
-      problem: `${(100 * pUn).toFixed(1)}% unknown unglossed words (max 2%), ${(100 * pAll).toFixed(1)}% unknown incl. glossed (max 5%) of ${words}: ${top}`,
-      fix: 'replace words not yet introduced, or gloss a few (gloss[]) — never more than 5%',
+      problem: `${(100 * pUn).toFixed(1)}% unknown unglossed words (max 2%), ${(100 * pAll).toFixed(1)}% unknown incl. glossed (max ${Math.round(glossCap * 100)}%) of ${words}: ${top}`,
+      fix: `replace words not yet introduced, or gloss them (gloss[]); at most ${Math.round(glossCap * 100)}% glossed here`,
     });
   }
 }

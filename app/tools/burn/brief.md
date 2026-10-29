@@ -18,6 +18,13 @@ Every sentence must use only grammar, patterns and chunks taught **up to the day
 - Chunks are known as whole phrases from their day, not as grammar.
 - The gate computes what each sentence requires. **Always run `npm run gate -- --fix <your files>`**: it writes `requires`/`lexemes`, then reports legality. Rewrite any sentence it flags; never delete a check to pass.
 
+## Natural above all
+Every Spanish line must be something a native speaker would actually write or say in that moment. The gate's limits are there to keep the learner inside what they know, but they never excuse unnatural text.
+- If a natural line needs a word the learner doesn't know yet, **gloss it** rather than bend the line. Early chapters may gloss up to 20% of their words (sessions under 40) and 10% (under 135). Tap-to-gloss is how the learner reads.
+- Never write telegraphic Spanish ("Simón es de Rosa" for "Simón was Rosa's parrot"), and never use English gimmicks (a character speaking broken English, or "Sorry. Closed." lines) to dodge the limits.
+- Every exchange must make sense: answers answer questions, characters know what they've been told, companies aren't people.
+- If no natural line fits the constraints, say less. One true, simple sentence beats three stilted ones.
+
 ## Voice (learner-facing English)
 - Plain words, no jargon. Say "talking about where things are", not "estar for location". A technical term may appear once, in `smallPrint`.
 - Open with a human reason and a line the learner would actually say.
