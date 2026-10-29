@@ -1,0 +1,184 @@
+{
+  "node": "x:future-prediction-conjecture",
+  "hook": {
+    "line": "Vale isn't answering her phone. Tomás says *estará en la cocina*, and he doesn't mean later. Same form as a forecast, different time.",
+    "es": "Vale no contesta. Estará en la cocina.",
+    "en": "Vale isn't answering. She's probably in the kitchen."
+  },
+  "examples": [
+    {
+      "es": "Mañana estará en casa.",
+      "en": "She'll be at home tomorrow."
+    },
+    {
+      "es": "No contesta. Estará en casa.",
+      "en": "He isn't answering. He's probably at home."
+    },
+    {
+      "es": "Mañana lloverá.",
+      "en": "It'll rain tomorrow."
+    },
+    {
+      "es": "¿Dónde está Vale?\nEstará en el trabajo.",
+      "en": "Where's Vale?\nShe's probably at work."
+    },
+    {
+      "es": "El sábado hará frío.",
+      "en": "It'll be cold on Saturday."
+    },
+    {
+      "es": "Simón no comió nada hoy. Tendrá hambre.",
+      "en": "Simón didn't eat anything today. He must be hungry."
+    },
+    {
+      "es": "Vale y Tomás llegarán a las ocho.",
+      "en": "Vale and Tomás will arrive at eight."
+    }
+  ],
+  "rule": "One form, two jobs, and only the context tells them apart.\n\nLook for a future time word: *mañana*, *el sábado*, *en diciembre*. Then it's a prediction. *Mañana estará en casa*: she'll be at home tomorrow.\n\nNo time word, and you're puzzling over something happening right now? Then it's a guess. *No contesta. Estará en casa*: he's probably at home.\n\nA quick test: try both English versions, will be and probably is, and see which fits the moment. If someone just asked where somebody is, it's almost always probably is.\n\nWhen you speak, it works the other way round. For a guess about now, you don't need an extra probably. The verb already says it.",
+  "smallPrint": "Teachers call the first use the simple future and the second the future of probability.",
+  "readAndPick": [
+    {
+      "es": "Mañana estará en casa.",
+      "options": [
+        "She'll be at home tomorrow.",
+        "She's probably at home."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No contesta. Estará en casa.",
+      "options": [
+        "She'll be at home.",
+        "She's probably at home."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué hora es?\nNo sé. Serán las cuatro.",
+      "options": [
+        "What time is it?\nI don't know. It will be four.",
+        "What time is it?\nI don't know. It must be about four."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La reunión será a las cuatro.",
+      "options": [
+        "The meeting will be at four.",
+        "The meeting is probably at four now."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Simón no comió nada hoy. Tendrá hambre.",
+      "options": [
+        "Simón didn't eat anything today. He'll be hungry later.",
+        "Simón didn't eat anything today. He must be hungry."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El sábado hará frío.",
+      "options": [
+        "It'll be cold on Saturday.",
+        "It's probably cold today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hay mucha gente en la calle. Habrá un partido.",
+      "options": [
+        "There are a lot of people in the street. There will be a match next week.",
+        "There are a lot of people in the street. There's probably a match on."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El lunes habrá un partido en el estadio.",
+      "options": [
+        "There's probably a match at the stadium right now.",
+        "There will be a match at the stadium on Monday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Quién sabe dónde está Simón?\nMariana sabrá algo.",
+      "options": [
+        "Who knows where Simón is?\nMariana probably knows something.",
+        "Who knows where Simón is?\nMariana will find out something next week."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *está* or *estará* and type the whole sentence: *___ en la cocina.* (Vale isn't answering; you guess she's probably in the kitchen.)",
+      "answer": "Estará en la cocina.",
+      "accept": [],
+      "why": "You don't know, you're guessing about now: *estará*."
+    },
+    {
+      "prompt": "Pick *tiene* or *tendrá* and type the whole sentence: *Simón ___ hambre.* (He didn't eat anything today, so he must be hungry.)",
+      "answer": "Simón tendrá hambre.",
+      "accept": [],
+      "why": "Must be is a guess about now: *tendrá*."
+    },
+    {
+      "prompt": "Predict: It'll be cold on Saturday.",
+      "answer": "El sábado hará frío.",
+      "accept": [
+        "Hará frío el sábado."
+      ],
+      "why": "*El sábado* is a future time, so *hará* is a prediction."
+    },
+    {
+      "prompt": "Someone asks where Vale is. Guess, about right now: She's probably at work.",
+      "answer": "Estará en el trabajo.",
+      "accept": [
+        "Vale estará en el trabajo."
+      ],
+      "why": "No time word and a question about now: *estará* means probably is."
+    },
+    {
+      "prompt": "Predict: Tomorrow she'll be at work.",
+      "answer": "Mañana estará en el trabajo.",
+      "accept": [
+        "Estará en el trabajo mañana."
+      ],
+      "why": "Same form, but *mañana* makes it a prediction."
+    },
+    {
+      "prompt": "Turn the guess into a prediction by adding *mañana*: *Estará en casa.*",
+      "answer": "Mañana estará en casa.",
+      "accept": [
+        "Estará en casa mañana."
+      ],
+      "why": "The verb doesn't change. The time word does the work."
+    },
+    {
+      "prompt": "Turn the fact into a guess: *Son las cuatro.*",
+      "answer": "Serán las cuatro.",
+      "accept": [],
+      "why": "A guess at the clock right now: *serán*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No contesta. Va a estar en casa.",
+      "right": "No contesta. Estará en casa.",
+      "why": "Almost. *Va a estar* points forward in time; for a guess about right now, use *estará*."
+    },
+    {
+      "wrong": "Vale no contesta. Está en la cocina.",
+      "right": "Vale no contesta. Estará en la cocina.",
+      "why": "*Está* sounds like you know for sure. If you're guessing, *estará* says so."
+    },
+    {
+      "wrong": "El sábado hace frío.",
+      "right": "El sábado hará frío.",
+      "why": "A forecast needs the future; the present sounds like a plain fact about Saturday."
+    }
+  ],
+  "personal": "Think of two people you know. For one, guess where they are right now (*Estará en...*). For the other, predict where they'll be tomorrow (*Mañana estará en...*)."
+}

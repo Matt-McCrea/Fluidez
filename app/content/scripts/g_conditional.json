@@ -1,0 +1,205 @@
+{
+  "node": "g:conditional",
+  "hook": {
+    "line": "Simón is still missing, Altamira's lawyer wants a signature, and everyone at the café has advice for Tomás. Advice, wishes and polite requests all run on one ending: *-ría*.",
+    "es": "Yo no firmaría nada.",
+    "en": "I wouldn't sign anything."
+  },
+  "examples": [
+    {
+      "es": "Me encantaría ir.",
+      "en": "I'd love to go."
+    },
+    {
+      "es": "¿Podrías ayudarme?",
+      "en": "Could you help me? (to a friend)"
+    },
+    {
+      "es": "Deberías descansar.",
+      "en": "You should rest. (to a friend)"
+    },
+    {
+      "es": "Yo hablaría con un abogado.",
+      "en": "I'd talk to a lawyer."
+    },
+    {
+      "es": "¿Qué harías tú?",
+      "en": "What would you do? (to a friend)"
+    },
+    {
+      "es": "Sería mejor esperar.",
+      "en": "It would be better to wait."
+    },
+    {
+      "es": "¿Le gustaría un tinto?",
+      "en": "Would you like a coffee? (formal)"
+    }
+  ],
+  "rule": "English says would or could as a separate word. Spanish folds it into one ending, *-ía*, added to the same stem you used for the future.\n\n*hablaría*: I'd talk\n*hablarías*: you'd talk\n*hablaría*: he, she or you (*usted*) would talk\n*hablaríamos*: we'd talk\n*hablarían*: they or you all would talk\n\nThe short stems are the ones you know: *tendría*, *haría*, *diría*, *podría*, *sabría*, *saldría*, *vendría*.\n\nThree jobs you'll use every day:\npolite requests: *¿Podrías ayudarme?*\nwishes: *Me encantaría ir.* (You've been saying *me gustaría* for months. Same form.)\nadvice: *Deberías descansar.* *Yo no firmaría.*\n\nOne trap: when English would means used to (we would go every Sunday), Spanish uses the past habit form: *íbamos*.",
+  "smallPrint": "Teachers call this the conditional (*condicional simple*).",
+  "readAndPick": [
+    {
+      "es": "¿Podrías ayudarme?",
+      "options": [
+        "Could you help me?",
+        "Could I help you?",
+        "Can he help me?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me encantaría ir.",
+      "options": [
+        "I loved going.",
+        "I'd love to go."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Yo hablaría con un abogado.",
+      "options": [
+        "I'll talk to a lawyer.",
+        "I'd talk to a lawyer."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hablaré con un abogado.",
+      "options": [
+        "I'll talk to a lawyer.",
+        "I'd talk to a lawyer."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué harías tú?",
+      "options": [
+        "What will you do?",
+        "What would he do?",
+        "What would you do?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Sería mejor esperar.",
+      "options": [
+        "It would be better to wait.",
+        "It was better to wait."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No firmarían nada.",
+      "options": [
+        "He wouldn't sign anything.",
+        "They wouldn't sign anything."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Le gustaría un tinto?",
+      "options": [
+        "Would you like a coffee?",
+        "Do you like coffee?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me gusta ir con ustedes.",
+      "options": [
+        "I'd like to go with you all.",
+        "I like going with you all."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *puedes* or *podrías* and type the whole sentence, asking a friend extra politely: *¿___ ayudarme?* (Could you help me?)",
+      "answer": "¿Podrías ayudarme?",
+      "accept": [
+        "¿Me podrías ayudar?"
+      ],
+      "why": "Could you is *podrías*: softer than *puedes*."
+    },
+    {
+      "prompt": "Pick *encanta* or *encantaría* and type the whole sentence: *Me ___ ir.* (I'd love to go.)",
+      "answer": "Me encantaría ir.",
+      "accept": [],
+      "why": "I'd love is a wish, so *-ría*: *encantaría*."
+    },
+    {
+      "prompt": "Tell a friend: You should rest.",
+      "answer": "Deberías descansar.",
+      "accept": [
+        "Tú deberías descansar."
+      ],
+      "why": "Should is *deberías* plus the dictionary form."
+    },
+    {
+      "prompt": "Say: I'd talk to a lawyer.",
+      "answer": "Yo hablaría con un abogado.",
+      "accept": [
+        "Hablaría con un abogado."
+      ],
+      "why": "I would talk: *hablar* plus *-ía*."
+    },
+    {
+      "prompt": "Ask a friend: What would you do?",
+      "answer": "¿Qué harías tú?",
+      "accept": [
+        "¿Qué harías?",
+        "¿Tú qué harías?"
+      ],
+      "why": "*Hacer* uses its short stem, *har-*, then *-ías* for you."
+    },
+    {
+      "prompt": "Make it polite for a stranger (*usted*): *¿Podrías ayudarme?*",
+      "answer": "¿Podría ayudarme?",
+      "accept": [
+        "¿Me podría ayudar?",
+        "¿Podría usted ayudarme?"
+      ],
+      "why": "For *usted*, drop the *-s*: *podría*."
+    },
+    {
+      "prompt": "Turn the promise into a would: *Yo no firmaré.* (I wouldn't sign.)",
+      "answer": "Yo no firmaría.",
+      "accept": [
+        "No firmaría."
+      ],
+      "why": "Same stem as the future, but the ending is *-ía*: *firmaría*."
+    },
+    {
+      "prompt": "Make it about *we*: *Yo esperaría un par de días.*",
+      "answer": "Esperaríamos un par de días.",
+      "accept": [
+        "Nosotros esperaríamos un par de días."
+      ],
+      "why": "For we, the ending is *-íamos*: *esperaríamos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Podería ayudarme?",
+      "right": "¿Podría ayudarme?",
+      "why": "Almost. *Poder* shortens to *podr-*, just like *podré* in the future."
+    },
+    {
+      "wrong": "¿Qué hacerías tú?",
+      "right": "¿Qué harías tú?",
+      "why": "*Hacer* is one of the short ones: *haría*."
+    },
+    {
+      "wrong": "Me encantaria ir.",
+      "right": "Me encantaría ir.",
+      "why": "The *í* always carries an accent in this ending."
+    },
+    {
+      "wrong": "Cuando era niño, iría al parque los domingos.",
+      "right": "Cuando era niño, iba al parque los domingos.",
+      "why": "Would for an old habit means used to, and that's the past habit form: *iba*."
+    }
+  ],
+  "personal": "Someone you know has a decision to make. Give them one piece of advice in Spanish, with *Deberías* or with *Yo* and a *-ría* verb."
+}

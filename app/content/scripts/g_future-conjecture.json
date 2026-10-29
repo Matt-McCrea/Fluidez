@@ -1,0 +1,199 @@
+{
+  "node": "g:future-conjecture",
+  "hook": {
+    "line": "Simón is gone. Nobody at the café knows where he is, so everyone is guessing out loud, and Spanish has a neat trick for that: it borrows the future to say probably.",
+    "es": "¿Dónde estará Simón?",
+    "en": "Where can Simón be?"
+  },
+  "examples": [
+    {
+      "es": "¿Qué hora es?\nNo sé. Serán las once.",
+      "en": "What time is it?\nI don't know. It must be about eleven."
+    },
+    {
+      "es": "¿Cuántos años tendrá don Hernando?",
+      "en": "How old do you reckon don Hernando is?"
+    },
+    {
+      "es": "Tendrá unos setenta años.",
+      "en": "He must be about seventy."
+    },
+    {
+      "es": "Simón tendrá hambre.",
+      "en": "Simón must be hungry."
+    },
+    {
+      "es": "Mariana sabrá algo.",
+      "en": "Mariana probably knows something."
+    },
+    {
+      "es": "Simón estará cerca.",
+      "en": "Simón is probably nearby."
+    },
+    {
+      "es": "Habrá unas veinte personas en el parque.",
+      "en": "There must be about twenty people in the park."
+    }
+  ],
+  "rule": "When you don't know something, English reaches for extra words: probably, must, I wonder. Spanish just changes the verb.\n\n*Simón está cerca.* Simón is nearby (you know).\n*Simón estará cerca.* Simón is probably nearby (your guess).\n\nThe form is easy: keep the whole infinitive and add *-á*. *estar* becomes *estará*, *ser* becomes *será*, *costar* becomes *costará*. For more than one, add *-án*: *serán*, *estarán*. To a friend, *-ás*: *tendrás*.\n\nA few everyday verbs shorten first, then take the same ending:\n*tener*: *tendrá*\n*saber*: *sabrá*\n*hay*: *habrá*\n*hacer*: *hará*\n*poder*: *podrá*\n*venir*: *vendrá*\n\nIt looks like a future, but here it's about right now. *Serán las once* is a guess at the clock on the wall, not a time coming up. And the accent on the last syllable is always there: *estará*, *tendrá*.",
+  "smallPrint": "Teachers call this the future of probability (*futuro de probabilidad*): the simple future used for a guess about the present.",
+  "readAndPick": [
+    {
+      "es": "Simón está cerca.",
+      "options": [
+        "Simón is nearby.",
+        "Simón is probably nearby."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Simón estará cerca.",
+      "options": [
+        "Simón is nearby.",
+        "Simón is probably nearby."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Serán las once.",
+      "options": [
+        "It's eleven o'clock.",
+        "It must be about eleven."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Son las once.",
+      "options": [
+        "It's eleven o'clock.",
+        "It must be about eleven."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Don Hernando tendrá unos setenta años.",
+      "options": [
+        "Don Hernando is seventy.",
+        "Don Hernando must be about seventy.",
+        "Don Hernando was seventy."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana sabrá algo.",
+      "options": [
+        "Mariana knows something.",
+        "Mariana knew something.",
+        "Mariana probably knows something."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Dónde estará Simón?",
+      "options": [
+        "Where can Simón be?",
+        "Where is Simón?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hay unas veinte personas en el parque.",
+      "options": [
+        "There must be about twenty people in the park.",
+        "There are about twenty people in the park."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale y Tomás tendrán hambre.",
+      "options": [
+        "Vale and Tomás must be hungry.",
+        "Vale must be hungry.",
+        "Vale and Tomás are hungry."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tendrás hambre.",
+      "options": [
+        "He must be hungry.",
+        "You must be hungry.",
+        "I must be hungry."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *son* or *serán* and type the whole sentence: *No sé, ___ las once.* (I don't know, it must be about eleven.)",
+      "answer": "No sé, serán las once.",
+      "accept": [],
+      "why": "You're guessing at the time, so *son* becomes *serán*."
+    },
+    {
+      "prompt": "Pick *tiene* or *tendrá* and type the whole sentence: *Don Hernando ___ unos setenta años.* (You're guessing his age.)",
+      "answer": "Don Hernando tendrá unos setenta años.",
+      "accept": [],
+      "why": "A guess, so *tener* takes its short form: *tendrá*."
+    },
+    {
+      "prompt": "Wonder out loud: Where can Simón be?",
+      "answer": "¿Dónde estará Simón?",
+      "accept": [],
+      "why": "*Estará* turns where is he into where can he be."
+    },
+    {
+      "prompt": "Guess: Simón must be hungry.",
+      "answer": "Simón tendrá hambre.",
+      "accept": [],
+      "why": "Hungry is *tener hambre*, and the guess form of *tiene* is *tendrá*."
+    },
+    {
+      "prompt": "Guess: Mariana probably knows something.",
+      "answer": "Mariana sabrá algo.",
+      "accept": [],
+      "why": "No need for probably: *sabrá* already carries it."
+    },
+    {
+      "prompt": "Turn the fact into a guess: *Simón está cerca.*",
+      "answer": "Simón estará cerca.",
+      "accept": [],
+      "why": "Add *-á* to the whole infinitive: *estar*, *estará*."
+    },
+    {
+      "prompt": "Turn the fact into a guess: *Hay unas veinte personas en el parque.*",
+      "answer": "Habrá unas veinte personas en el parque.",
+      "accept": [],
+      "why": "The guess form of *hay* is *habrá*."
+    },
+    {
+      "prompt": "Turn the question into a guess: *¿Cuánto cuesta ese carro?* (How much do you reckon that car costs?)",
+      "answer": "¿Cuánto costará ese carro?",
+      "accept": [],
+      "why": "*Costar* keeps its whole infinitive and adds *-á*: *costará*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tenerá unos setenta años.",
+      "right": "Tendrá unos setenta años.",
+      "why": "Almost. *Tener* is one of the short ones: *tendrá*, never *tenerá*."
+    },
+    {
+      "wrong": "Será las once.",
+      "right": "Serán las once.",
+      "why": "Hours are plural, like *son las once*, so the guess is *serán*."
+    },
+    {
+      "wrong": "Hará unas veinte personas en el parque.",
+      "right": "Habrá unas veinte personas en el parque.",
+      "why": "*Hará* comes from *hacer*. The guess form of *hay* is *habrá*."
+    },
+    {
+      "wrong": "Simón estara cerca.",
+      "right": "Simón estará cerca.",
+      "why": "The accent is part of the ending: *estará*, stressed at the end."
+    }
+  ],
+  "personal": "Think of someone you know who isn't with you right now. Guess, in Spanish, where they are and how old someone in your family is: *Estará...*, *Tendrá...*"
+}

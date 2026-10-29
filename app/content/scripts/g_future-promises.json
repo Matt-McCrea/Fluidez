@@ -1,0 +1,202 @@
+{
+  "node": "g:future-promises",
+  "hook": {
+    "line": "Don Hernando doesn't do maybes. Simón is missing, the rains are coming, and he makes a promise in front of the whole café.",
+    "es": "Te prometo que lo encontraré antes de las lluvias.",
+    "en": "I promise you I'll find him before the rains."
+  },
+  "examples": [
+    {
+      "es": "Te llamaré mañana.",
+      "en": "I'll call you tomorrow. (to a friend)"
+    },
+    {
+      "es": "Mañana lloverá en Bogotá.",
+      "en": "It will rain in Bogotá tomorrow."
+    },
+    {
+      "es": "No será fácil.",
+      "en": "It won't be easy."
+    },
+    {
+      "es": "Volveremos el lunes.",
+      "en": "We'll be back on Monday."
+    },
+    {
+      "es": "¿Me ayudarás?",
+      "en": "Will you help me? (to a friend)"
+    },
+    {
+      "es": "El café abrirá a las siete.",
+      "en": "The café will open at seven."
+    },
+    {
+      "es": "Te lo diré mañana.",
+      "en": "I'll tell you tomorrow. (to a friend)"
+    }
+  ],
+  "rule": "You already know these forms from guessing. Now they do their other job: the real future, said like you mean it.\n\n*llamaré*: I'll call\n*llamarás*: you'll call\n*llamará*: he, she or you (*usted*) will call\n*llamaremos*: we'll call\n*llamarán*: they or you all will call\n\nSame short stems as before: *tendré*, *sabré*, *haré*, *podré*, *vendré*, plus *diré* (*decir*), *saldré* (*salir*), *pondré* (*poner*), *querré* (*querer*).\n\nThe catch for English speakers: for everyday plans, Colombians still say *voy a*: *Mañana voy a trabajar.* This future is for promises (*Te llamaré*), forecasts (*Mañana lloverá*), the news and formal plans (*El café abrirá a las siete*), and big statements (*No será fácil*). It sounds a little more serious, and that's the point.",
+  "smallPrint": "Teachers call this the simple future (*futuro simple*). Its guessing use is called the future of probability.",
+  "readAndPick": [
+    {
+      "es": "Te llamaré mañana.",
+      "options": [
+        "I'll call you tomorrow.",
+        "You'll call me tomorrow.",
+        "He'll call you tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Volveremos el lunes.",
+      "options": [
+        "They'll be back on Monday.",
+        "We'll be back on Monday.",
+        "I'll be back on Monday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Me ayudarás?",
+      "options": [
+        "Will he help me?",
+        "Will I help you?",
+        "Will you help me?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lloverá en la tarde.",
+      "options": [
+        "It rained in the afternoon.",
+        "It will rain in the afternoon."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo haré.",
+      "options": [
+        "I'll do it.",
+        "I did it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vendrán más tarde.",
+      "options": [
+        "He'll come later.",
+        "They'll come later."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No dirá nada.",
+      "options": [
+        "I won't say anything.",
+        "He won't say anything."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Saldremos temprano.",
+      "options": [
+        "We'll leave early.",
+        "We left early."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No será fácil.",
+      "options": [
+        "It wasn't easy.",
+        "It won't be easy.",
+        "It isn't easy."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *llamaré* or *llamará* and type the whole sentence: *Te ___ mañana.* (I'll call you tomorrow.)",
+      "answer": "Te llamaré mañana.",
+      "accept": [
+        "Mañana te llamaré."
+      ],
+      "why": "I will is *-é*: *llamaré*. *Llamará* is he or she."
+    },
+    {
+      "prompt": "Pick *hará* or *hacerá* and type the whole sentence: *Don Hernando lo ___.* (Don Hernando will do it.)",
+      "answer": "Don Hernando lo hará.",
+      "accept": [],
+      "why": "*Hacer* is one of the short ones: *hará*."
+    },
+    {
+      "prompt": "Promise a friend: I'll help you.",
+      "answer": "Te ayudaré.",
+      "accept": [
+        "Yo te ayudaré."
+      ],
+      "why": "A promise is the classic home of *-ré*."
+    },
+    {
+      "prompt": "Read out the forecast: It will rain in Bogotá tomorrow.",
+      "answer": "Mañana lloverá en Bogotá.",
+      "accept": [
+        "Lloverá mañana en Bogotá.",
+        "En Bogotá lloverá mañana."
+      ],
+      "why": "Forecasts use this future: *llover*, *lloverá*."
+    },
+    {
+      "prompt": "Say: It won't be easy.",
+      "answer": "No será fácil.",
+      "accept": [],
+      "why": "*No* goes before the verb, and *ser* keeps its whole infinitive: *será*."
+    },
+    {
+      "prompt": "Make it about *we*: *Volveré el lunes.*",
+      "answer": "Volveremos el lunes.",
+      "accept": [
+        "Nosotros volveremos el lunes."
+      ],
+      "why": "For we, the ending is *-emos*: *volveremos*."
+    },
+    {
+      "prompt": "Make it negative: *Diré algo.* (I won't say anything.)",
+      "answer": "No diré nada.",
+      "accept": [],
+      "why": "*No* before the verb, and *algo* turns into *nada*."
+    },
+    {
+      "prompt": "Turn the casual line into a promise: *Mañana te escribo.* (I'll write to you tomorrow.)",
+      "answer": "Mañana te escribiré.",
+      "accept": [
+        "Te escribiré mañana."
+      ],
+      "why": "*Escribir* plus *-é* gives *escribiré*, and it sounds like you mean it."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Teneré tiempo.",
+      "right": "Tendré tiempo.",
+      "why": "Almost. *Tener* shortens to *tendr-* before the ending, just as when you were guessing."
+    },
+    {
+      "wrong": "Te llamare mañana.",
+      "right": "Te llamaré mañana.",
+      "why": "The accent is part of the ending: *-ré*, stressed at the very end."
+    },
+    {
+      "wrong": "Lo hacerá.",
+      "right": "Lo hará.",
+      "why": "*Hacer* is one of the short ones: *hará*."
+    },
+    {
+      "wrong": "Te voy a llamaré.",
+      "right": "Te voy a llamar.",
+      "why": "After *voy a* the verb stays in its dictionary form. It's one future or the other, never both."
+    }
+  ],
+  "personal": "Make one promise to someone in your life, in Spanish. Start with *Te prometo que* and finish with a *-ré* verb."
+}

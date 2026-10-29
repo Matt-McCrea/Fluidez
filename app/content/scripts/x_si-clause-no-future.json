@@ -1,0 +1,182 @@
+{
+  "node": "x:si-clause-no-future",
+  "hook": {
+    "line": "Don Hernando's promise comes with a condition: the weather. Now that you have the future, there's one place it never goes, and English already knows the rule.",
+    "es": "Si no llueve, buscaré a Simón en el parque.",
+    "en": "If it doesn't rain, I'll look for Simón in the park."
+  },
+  "examples": [
+    {
+      "es": "Si llueve, no iré.",
+      "en": "If it rains, I won't go."
+    },
+    {
+      "es": "Si tengo tiempo, iré.",
+      "en": "If I have time, I'll go."
+    },
+    {
+      "es": "Si Vale viene, haremos arepas.",
+      "en": "If Vale comes, we'll make arepas."
+    },
+    {
+      "es": "Te llamaré si encuentro a Simón.",
+      "en": "I'll call you if I find Simón. (to a friend)"
+    },
+    {
+      "es": "Si Simón vuelve, Tomás estará feliz.",
+      "en": "If Simón comes back, Tomás will be happy."
+    },
+    {
+      "es": "¿Vendrás si te invito?",
+      "en": "Will you come if I invite you? (to a friend)"
+    }
+  ],
+  "rule": "In an if sentence about something that might really happen, *si* never takes the future. The *si* half stays in the plain present: *si llueve*, *si tengo tiempo*, *si Vale viene*.\n\nThe future goes in the other half, the result: *Si llueve, no iré.*\n\nEnglish does exactly the same. Nobody says if it will rain, I'll stay home. You say if it rains. So trust your English here: the half with if gets the present, and the will goes in the other half.\n\nThe order can flip, and the rule doesn't: *Te llamaré si encuentro a Simón.* The *si* half is still present.\n\nThe result can also be the plain present, *voy a* or an instruction, as you saw before: *Si llueve, me quedo.* *Si llueve, ven al café.*",
+  "smallPrint": "Teachers call this a real or open conditional: *si* plus the present indicative, with the future, present or an imperative in the main clause.",
+  "readAndPick": [
+    {
+      "es": "Si llueve, no iré.",
+      "options": [
+        "If it rains, I won't go.",
+        "If I don't go, it'll rain."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si tengo tiempo, iré.",
+      "options": [
+        "If you have time, I'll go.",
+        "If I have time, I'll go.",
+        "If I have time, you'll go."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si Vale viene, haremos arepas.",
+      "options": [
+        "If we make arepas, Vale will come.",
+        "If Vale comes, we'll make arepas."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te llamaré si encuentro a Simón.",
+      "options": [
+        "I'll call you if I find Simón.",
+        "You'll call me if you find Simón."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si Simón vuelve, Tomás estará feliz.",
+      "options": [
+        "If Tomás is happy, Simón will come back.",
+        "If Simón comes back, Tomás will be happy."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Vendrás si te invito?",
+      "options": [
+        "Will I come if you invite me?",
+        "Will you come if I invite you?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si no llueve, saldremos.",
+      "options": [
+        "If it doesn't rain, we'll go out.",
+        "If it rains, we won't go out.",
+        "If we go out, it won't rain."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si sales ahora, verás a Vale.",
+      "options": [
+        "If you see Vale, you'll leave now.",
+        "If I leave now, I'll see Vale.",
+        "If you leave now, you'll see Vale."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *llueve* or *lloverá* and type the whole sentence: *Si ___, no iré.* (If it rains, I won't go.)",
+      "answer": "Si llueve, no iré.",
+      "accept": [
+        "No iré si llueve."
+      ],
+      "why": "The *si* half stays in the present, just like if it rains."
+    },
+    {
+      "prompt": "Pick *tengo* or *tendré* and type the whole sentence: *Si ___ tiempo, iré.* (If I have time, I'll go.)",
+      "answer": "Si tengo tiempo, iré.",
+      "accept": [
+        "Iré si tengo tiempo."
+      ],
+      "why": "If I have, not if I will have: *si tengo*."
+    },
+    {
+      "prompt": "Say: If Vale comes, we'll make arepas.",
+      "answer": "Si Vale viene, haremos arepas.",
+      "accept": [
+        "Si viene Vale, haremos arepas.",
+        "Haremos arepas si Vale viene."
+      ],
+      "why": "Present after *si* (*viene*), future in the other half (*haremos*)."
+    },
+    {
+      "prompt": "Promise a friend: I'll call you if I find Simón.",
+      "answer": "Te llamaré si encuentro a Simón.",
+      "accept": [
+        "Si encuentro a Simón, te llamaré."
+      ],
+      "why": "The promise takes the future; the *si* half stays present: *si encuentro*."
+    },
+    {
+      "prompt": "Ask a friend: Will you come if I invite you?",
+      "answer": "¿Vendrás si te invito?",
+      "accept": [
+        "Si te invito, ¿vendrás?"
+      ],
+      "why": "*Vendrás* is the future; *si te invito* is present."
+    },
+    {
+      "prompt": "Make the condition negative: *Si llueve, saldremos.* (If it doesn't rain, we'll go out.)",
+      "answer": "Si no llueve, saldremos.",
+      "accept": [
+        "Saldremos si no llueve."
+      ],
+      "why": "*No* goes right before the verb inside the *si* half."
+    },
+    {
+      "prompt": "Fix it: *Si tendré tiempo, te ayudaré.*",
+      "answer": "Si tengo tiempo, te ayudaré.",
+      "accept": [
+        "Te ayudaré si tengo tiempo."
+      ],
+      "why": "Only the result half can be future. After *si*, use *tengo*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Si lloverá, no iré.",
+      "right": "Si llueve, no iré.",
+      "why": "Close. The *si* half stays in the present, just like if it rains in English."
+    },
+    {
+      "wrong": "Iré si podré.",
+      "right": "Iré si puedo.",
+      "why": "Flipping the order doesn't change the rule: after *si*, the present."
+    },
+    {
+      "wrong": "Sí llueve, no iré.",
+      "right": "Si llueve, no iré.",
+      "why": "If has no accent: *si*. With an accent, *sí* means yes."
+    }
+  ],
+  "personal": "Write one promise with a condition, something true for this week: *Si tengo tiempo,* and then what you'll do."
+}

@@ -1,0 +1,192 @@
+{
+  "node": "x:ir-a-future",
+  "hook": {
+    "line": "Vale wants to know when Tomás will ring her about Simón. He can say it two ways, and to a Bogotano they don't sound the same: one is a plan, the other is a promise.",
+    "es": "Mañana te voy a llamar.",
+    "en": "I'm going to call you tomorrow."
+  },
+  "examples": [
+    {
+      "es": "Mañana te voy a llamar.",
+      "en": "I'm going to call you tomorrow."
+    },
+    {
+      "es": "Te prometo que te llamaré.",
+      "en": "I promise I'll call you."
+    },
+    {
+      "es": "¿Qué vas a hacer el sábado?",
+      "en": "What are you going to do on Saturday? (to a friend)"
+    },
+    {
+      "es": "Vamos a buscar a Simón en el parque.",
+      "en": "We're going to look for Simón in the park."
+    },
+    {
+      "es": "Mañana lloverá en toda la ciudad.",
+      "en": "Tomorrow it will rain across the whole city."
+    },
+    {
+      "es": "Altamira abrirá una oficina en el barrio.",
+      "en": "Altamira will open an office in the neighbourhood."
+    },
+    {
+      "es": "Tranquilo, todo saldrá bien.",
+      "en": "Don't worry, everything will turn out fine. (to a man)"
+    }
+  ],
+  "rule": "Both forms talk about the future, but they live in different places.\n\n*Voy a* plus an infinitive is the everyday one. Plans, intentions, what you're up to this weekend: *¿Qué vas a hacer el sábado?* *Vamos a buscar a Simón.* In conversation this is your default, and you'll rarely sound wrong with it.\n\nThe *-ré* form carries a little weight. Use it for:\npromises: *Te llamaré.*\nforecasts: *Mañana lloverá.*\nthe news and formal plans: *Altamira abrirá una oficina.*\ncomfort and big statements: *Todo saldrá bien.*\n\nA rough English guide: *voy a* is going to, and *-ré* is will, said like you mean it. A friend asking about your weekend gets *voy a*. A friend you've let down gets *te llamaré, te lo prometo*.\n\nOne thing never changes: after *voy a*, the verb stays in its dictionary form.",
+  "smallPrint": "Teachers call these the periphrastic future (*ir a* plus infinitive) and the simple future (*futuro simple*).",
+  "readAndPick": [
+    {
+      "es": "Mañana va a llover.",
+      "options": [
+        "It's going to rain tomorrow.",
+        "It will rain tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mañana lloverá.",
+      "options": [
+        "It's going to rain tomorrow.",
+        "It will rain tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te llamaré.",
+      "options": [
+        "I'm going to call you.",
+        "I'll call you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te voy a llamar.",
+      "options": [
+        "I'm going to call you.",
+        "I'll call you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vamos a buscar a Simón en el parque.",
+      "options": [
+        "We'll look for Simón in the park.",
+        "We're going to look for Simón in the park.",
+        "They're going to look for Simón in the park."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Buscaremos a Simón en el parque.",
+      "options": [
+        "We'll look for Simón in the park.",
+        "We're going to look for Simón in the park.",
+        "They'll look for Simón in the park."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale va a hacer arepas.",
+      "options": [
+        "Vale will make arepas.",
+        "Vale is going to make arepas."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No diré nada.",
+      "options": [
+        "I won't say anything.",
+        "I'm not going to say anything."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No voy a decir nada.",
+      "options": [
+        "I won't say anything.",
+        "I'm not going to say anything."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "A friend asks about your Saturday. Pick *voy a trabajar* or *trabajaré* and type the whole sentence: *El sábado ___.* (On Saturday I'm going to work.)",
+      "answer": "El sábado voy a trabajar.",
+      "accept": [
+        "Voy a trabajar el sábado."
+      ],
+      "why": "A plan in a chat between friends: *voy a*."
+    },
+    {
+      "prompt": "You're reading the weather on the news. Pick *va a llover* or *lloverá* and type the whole sentence: *Mañana ___ en Bogotá.* (It will rain in Bogotá tomorrow.)",
+      "answer": "Mañana lloverá en Bogotá.",
+      "accept": [
+        "Lloverá mañana en Bogotá."
+      ],
+      "why": "Forecasts on the news use the *-ré* future."
+    },
+    {
+      "prompt": "Ask a friend: What are you going to do this weekend?",
+      "answer": "¿Qué vas a hacer este fin de semana?",
+      "accept": [
+        "¿Este fin de semana qué vas a hacer?"
+      ],
+      "why": "Asking about plans is *voy a* territory."
+    },
+    {
+      "prompt": "Promise Vale: I'll call you tomorrow.",
+      "answer": "Te llamaré mañana.",
+      "accept": [
+        "Mañana te llamaré."
+      ],
+      "why": "A promise gets the *-ré* form: *llamaré*."
+    },
+    {
+      "prompt": "Comfort Tomás: Don't worry, everything will turn out fine.",
+      "answer": "Tranquilo, todo saldrá bien.",
+      "accept": [
+        "Tranquilo, todo va a salir bien."
+      ],
+      "why": "Comfort is a big statement, so *saldrá* fits; *va a salir* is fine too."
+    },
+    {
+      "prompt": "Turn the plan into a promise: *Te voy a ayudar.* (I'll help you.)",
+      "answer": "Te ayudaré.",
+      "accept": [
+        "Yo te ayudaré."
+      ],
+      "why": "Drop *voy a* and put the ending on the verb: *ayudaré*."
+    },
+    {
+      "prompt": "Make the forecast casual, the way you'd say it to a friend: *Mañana lloverá.* (It's going to rain tomorrow.)",
+      "answer": "Mañana va a llover.",
+      "accept": [
+        "Va a llover mañana."
+      ],
+      "why": "In a chat, *va a* plus the dictionary form *llover*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Voy a llamaré a Vale.",
+      "right": "Voy a llamar a Vale.",
+      "why": "Almost. After *voy a* the verb stays in its dictionary form; it's one future or the other, never both."
+    },
+    {
+      "wrong": "Mañana va llover.",
+      "right": "Mañana va a llover.",
+      "why": "Don't drop the little *a*: it's *va a* plus the infinitive."
+    },
+    {
+      "wrong": "¿Qué harás el sábado?",
+      "right": "¿Qué vas a hacer el sábado?",
+      "why": "Not wrong, just stiff. Between friends, plans take *voy a*."
+    }
+  ],
+  "personal": "Write two lines about next week: one plan with *voy a*, and one promise to someone with a *-ré* verb."
+}
