@@ -194,3 +194,36 @@ describe('Before you go, with nothing to ask', () => {
     expect(recap.items).toEqual([]);
   });
 });
+
+describe('the self-check changes what comes back', () => {
+  const block = { kind: 'selfCheck', part: 'core', deliberate: false, unit: 'u01', canDo: 'c', minutes: 0.2 } as any;
+  const SERVING = ['g:ser-identity', 'p:ser-profession-no-article'];
+
+  it('"Not yet" lists every node that serves the can-do and resets their rung; "Yes" clears them', async () => {
+    const { markSelfCheck } = await import('../../src/ui/blocks/writing');
+    const w = await world();
+    const plan = compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
+    const run = new SessionRunner(w.learner, w.bundle, w.ui, plan, w.now);
+    for (const n of SERVING) { w.learner.introduce(n, { results: [true, true, true], at: w.now() }); (w.learner as any).state.nodes[n].rung = 2; }
+    await markSelfCheck(run, w.ui, block, 'notyet');
+    expect(w.ui.path.remediate.map((e) => e.node).sort()).toEqual([...SERVING].sort());
+    expect(w.ui.path.remediate.every((e) => e.reason === 'selfcheck')).toBe(true);
+    expect(SERVING.map((n) => w.learner.rung(n))).toEqual([0, 0]);
+    expect(w.ui.state.canDos.at(-1)).toMatchObject({ unit: 'u01', feel: 'notyet' });
+    await markSelfCheck(run, w.ui, block, 'yes');
+    expect(w.ui.path.remediate).toEqual([]);
+  });
+
+  it('"Mostly" lists only nodes whose recall has slipped below 0.8', async () => {
+    const { markSelfCheck } = await import('../../src/ui/blocks/writing');
+    const w = await world();
+    const plan = compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
+    const run = new SessionRunner(w.learner, w.bundle, w.ui, plan, w.now);
+    for (const n of SERVING) w.learner.introduce(n, { results: [true, true, true], at: w.now() });
+    w.clock.t += 60 * DAY; // everything has faded
+    await markSelfCheck(run, w.ui, block, 'mostly');
+    const listed = w.ui.path.remediate.map((e) => e.node);
+    expect(listed.every((n) => SERVING.includes(n))).toBe(true);
+    for (const n of listed) expect(w.learner.retrievability(n, 'productive', w.now()) ?? 1).toBeLessThan(0.8);
+  });
+});

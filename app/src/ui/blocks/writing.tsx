@@ -2,7 +2,7 @@
 // a word count, then their text beside a model and a three-question
 // self-rubric. Then the self-check and the close.
 import { useMemo, useRef, useState } from 'preact/hooks';
-import type { CloseBlock, SelfCheckBlock, WritingBlock } from '../../compiler';
+import { canDoServers, withRemediate, withoutRemediate, type CloseBlock, type SelfCheckBlock, type WritingBlock } from '../../compiler';
 import { checkWriting, type Constraint } from '../../check';
 import { AnswerField } from '../components/answer';
 import { Continue } from '../components/card';
@@ -108,13 +108,27 @@ export function Writing({ block, run, ui, onDone }: BlockProps<WritingBlock>) {
   );
 }
 
+/** Record a self-check mark: the progress screen's can-do and, for anything shaky, the path's remediation list (rung back to the start). */
+export async function markSelfCheck(run: BlockProps['run'], ui: BlockProps['ui'], block: SelfCheckBlock, feel: CanDoMark['feel']): Promise<void> {
+  await ui.update((s) => { s.canDos.push({ unit: block.unit, canDo: block.canDo, feel, at: Date.now() }); });
+  // the mark changes what comes back: shaky nodes go on the path's remediation list (rung back to the start)
+  const nodes = canDoServers(run.bundle.course, block.unit);
+  const at = Date.now();
+  let shaky: string[] = [];
+  if (feel === 'notyet') shaky = nodes;
+  else if (feel === 'mostly') shaky = nodes.filter((n) => (run.learner.retrievability(n, 'productive', at) ?? 1) < 0.8);
+  const list = feel === 'yes' ? withoutRemediate(ui.path.remediate ?? [], nodes) : withRemediate(ui.path.remediate ?? [], shaky, 'selfcheck', at);
+  for (const n of shaky) run.learner.resetRung(n);
+  await ui.setPath({ ...ui.path, remediate: list });
+}
+
 export function SelfCheck({ block, run, ui, onDone }: BlockProps<SelfCheckBlock>) {
   const h = blockHeading(block, run.bundle);
   const [sent, setSent] = useState(false);
   const pick = async (feel: CanDoMark['feel']) => {
     if (sent) return;
     setSent(true);
-    await ui.update((s) => { s.canDos.push({ unit: block.unit, canDo: block.canDo, feel, at: Date.now() }); });
+    await markSelfCheck(run, ui, block, feel);
     onDone();
   };
   return (

@@ -128,6 +128,7 @@ export const SECONDS = {
   choose: 18,
   type: 25,
   transform: 30,
+  recombine: 30,
   translate: 35,
   respond: 45,
   gap: 20,

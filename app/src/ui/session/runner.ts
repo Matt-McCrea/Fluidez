@@ -13,6 +13,7 @@ import { Rating, type Direction, type Grade, type Learner, type Tier } from '../
 import type { Bundle } from '../data/bundle';
 import type { UiStore } from '../store/ui';
 import { planRecap, type Lapse } from './recap';
+import { SECONDS } from '../../compiler/budget';
 import { attributeGrades, type Evidence } from './attribute';
 
 export interface Outcome {
@@ -217,7 +218,7 @@ export class SessionRunner {
 
   /** Output ladder: every choose/type/transform item moves its node's rung, whatever its scoring. */
   private stepLadder(item: Item, o: Outcome): void {
-    if (item.op !== 'choose' && item.op !== 'type' && item.op !== 'transform') return;
+    if (item.op !== 'choose' && item.op !== 'type' && item.op !== 'transform' && item.op !== 'recombine') return;
     this.learner.stepRung(item.node, !o.correct ? 'miss' : o.tries <= 1 ? 'pass' : 'retry');
   }
 
@@ -243,7 +244,7 @@ export class SessionRunner {
           return;
         }
         if (sentence) {
-          const novel = item.op === 'review' ? item.novel : true;
+          const novel = item.op === 'review' ? item.novel : true; // a recombine item is novel by construction
           const { grades, expose } = attributeGrades(targets, o.correct, grade, o.evidence, (id) => this.bundle.node(id));
           this.learner.creditSentence(item.credit, dir, grade, { targets: Object.keys(grades), grades, novel, at, ms: o.ms, op, tries, sentence });
           if (expose.length) this.learner.expose(expose, { at });
@@ -287,9 +288,16 @@ export class SessionRunner {
   openRecap(block: RecapBlock): boolean {
     const newItems = this.plan.blocks.flatMap((b) => (b.kind === 'learn' ? b.items : []))
       .filter((it: LearnItem) => this.presented.has(it.node));
-    block.items = planRecap({
-      learner: this.learner, bundle: this.bundle, capacity: block.capacity, lapses: this.lapses, newItems, steps: this.learnSteps,
-    });
+    // The recap fills what is left of the session, measured at this learner's
+    // real pace, never the compile-time guess: a long learn block must not
+    // push the close past the cap.
+    const secondsPerCard = Math.max(SECONDS.recap, this.learner.secondsPerReview());
+    const left = Math.max(0, this.capMinutes - this.elapsed());
+    const capacity = Math.min(block.capacity, Math.floor((left * 60) / secondsPerCard));
+    block.items = capacity > 0 ? planRecap({
+      learner: this.learner, bundle: this.bundle, capacity, lapses: this.lapses, newItems, steps: this.learnSteps,
+    }) : [];
+    block.minutes = Math.round((block.items.length * secondsPerCard) / 6) / 10;
     if (!block.items.length) { this.skip(block); return false; }
     return true;
   }

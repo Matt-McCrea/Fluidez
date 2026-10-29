@@ -63,7 +63,7 @@ export class LearnQueue {
 /** A card's look: its type, and for multiple choice which language is asked and which is picked. */
 export function formatOf(card: Card): string {
   if (card.type === 'mcq') return `mcq:${card.prompt?.lang ?? '-'}>${card.options[0]?.lang ?? '-'}`;
-  if (card.type === 'type') return `type:${card.prompt?.lang ?? '-'}`;
+  if (card.type === 'type') return `type:${card.prompt?.lang ?? '-'}>${card.answerLang}`;
   return 'read';
 }
 

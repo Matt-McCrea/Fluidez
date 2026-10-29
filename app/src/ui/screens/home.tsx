@@ -5,9 +5,12 @@ import { Bar, Heading, undash } from '../components/text';
 import { useApp } from '../context';
 import { sessionLabel } from '../session/labels';
 import { anotherAllowed, compilePlan } from '../session/runner';
+import type { PracticeSpec } from '../session/practice-spec';
+import { verbsMet } from '../session/freeplay';
+import { weakSpots } from '../../learner/weak';
 import { streak } from '../store/ui';
 
-export function Home({ onStart, onStory }: { onStart: (mode: Mode) => void; onStory: () => void }) {
+export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode) => void; onStory: () => void; onPractise: (spec?: PracticeSpec) => void }) {
   const app = useApp();
   const { learner, ui, bundle } = app;
   const now = app.now();
@@ -18,6 +21,13 @@ export function Home({ onStart, onStory }: { onStart: (mode: Mode) => void; onSt
   const plan = useMemo(() => {
     try { return compilePlan(learner, bundle, ui, { mode, now }); } catch { return undefined; }
   }, [ui.path, learner.sessionIndex, mode]);
+  const spots = useMemo(() => {
+    try {
+      return weakSpots(learner.events(), (id) => bundle.node(id), {
+        now, metVerbs: verbsMet(learner), sentenceEs: (id) => bundle.sentence(id)?.es,
+      });
+    } catch { return []; }
+  }, [learner.sessionIndex, ui.path]);
   const unit = bundle.course.units[ui.path.unit];
   const chaptersRead = bundle.index.chapters.filter((c) => learner.ledger.hasSeen('chapter', c.id));
   const last = chaptersRead[chaptersRead.length - 1];
@@ -40,6 +50,28 @@ export function Home({ onStart, onStory }: { onStart: (mode: Mode) => void; onSt
               : <p>That's plenty for today. Your reviews need a rest to work. See you tomorrow.</p>}
         </div>
       </section>
+
+      <section class="card" aria-labelledby="practise-title">
+        <p class="ask" id="practise-title">Practise</p>
+        <p class="small">Extra work, any time. It never changes today's plan.</p>
+        <div class="actions">
+          <button class="btn primary" data-quick onClick={() => onPractise({ kind: 'quickReview' })}>Quick review</button>
+          <button class="btn quiet" data-more-practice onClick={() => onPractise(undefined)}>More practice</button>
+        </div>
+      </section>
+
+      {spots.length ? (
+        <section class="card" aria-labelledby="trip-title">
+          <p class="ask" id="trip-title">Keeps tripping you</p>
+          <p class="small">A short workout on each, with fresh sentences.</p>
+          {spots.map((s) => (
+            <div class="actions" key={s.key} data-spot>
+              <span>{undash(s.label)}</span>
+              <button class="btn quiet" data-train onClick={() => onPractise(s.spec)}>Train it</button>
+            </div>
+          ))}
+        </section>
+      ) : null}
 
       {unit && !finished ? (
         <section class="card" aria-labelledby="week-title">

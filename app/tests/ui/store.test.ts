@@ -73,3 +73,14 @@ describe('reconcile and commitSession', () => {
     expect(((await kv.get(UI_KEY)) as any).stats.sessions).toBe(1);
   });
 });
+
+describe('remediation list on the path', () => {
+  test('an old path document without remediate loads with an empty list', async () => {
+    const kv = new MemoryKV();
+    const { remediate: _gone, ...old } = initialPath();
+    await kv.set(PATH_KEY, { ...old, coreSessions: 2 });
+    const ui = await new UiStore(kv).load();
+    expect(ui.path.remediate).toEqual([]);
+    expect(ui.path.coreSessions).toBe(2);
+  });
+});

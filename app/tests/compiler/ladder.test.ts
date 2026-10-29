@@ -67,6 +67,25 @@ describe('ladder ops by rung', () => {
     expect(ops.filter((o) => o === 'transform').length).toBeGreaterThan(0);
   });
 
+  test('a node at rung 3 gets recombine from seen sentences, else transform', () => {
+    const s = find();
+    for (let i = 0; i < 6; i++) s.L.stepRung(s.focus, 'pass');
+    expect(s.L.rung(s.focus)).toBe(3);
+    const p = compileSession(s.input());
+    const mine = latest(p, s.focus);
+    // nothing of this node's sentences has been seen yet beyond today's: transform fallback
+    expect(mine.every((i) => i.op !== 'recombine' || s.L.ledger.hasSeen('sentence', i.sentence))).toBe(true);
+    // mark every sentence of the plan seen, then recompile on a later day: seen ones are used
+    for (const r of servedRefs(p)) s.L.ledger.markSeen(r.kind, r.id, { deliberate: true, at: T0 });
+    const ids = new Set<string>();
+    for (const b of p.blocks) if ('items' in b) for (const it of b.items as Array<{ sentence?: string }>) if (it.sentence) ids.add(it.sentence);
+    for (const id of ids) s.L.ledger.markSeen('sentence', id, { deliberate: true, at: T0 });
+    const q = compileSession(s.input());
+    const rec = latest(q, s.focus);
+    for (const i of rec.filter((x) => x.op === 'recombine')) expect(s.L.ledger.hasSeen('sentence', i.sentence)).toBe(true);
+    expect(rec.every((i) => ['recombine', 'transform', 'translate'].includes(i.op))).toBe(true);
+  });
+
   test('deterministic for a given rung', () => {
     const s = find();
     s.L.stepRung(s.focus, 'pass');

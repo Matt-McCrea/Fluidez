@@ -3,6 +3,7 @@
 // extra reading) and the timed recall sprint.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { LeechBlock, PracticeBlock, RecapBlock, TimedRecallBlock, WarmupBlock } from '../../compiler';
+import { withRemediate } from '../../compiler';
 import { CardRun, CardView, Continue } from '../components/card';
 import { Heading } from '../components/text';
 import { practiceCard, recallCard, reviewCard, type Card } from '../session/cards';
@@ -37,7 +38,7 @@ export function ReviewRun({ block, run, onDone }: BlockProps<WarmupBlock | Leech
   );
 }
 
-export function PracticeRun({ block, run, onDone }: BlockProps<PracticeBlock>) {
+export function PracticeRun({ block, run, ui, onDone }: BlockProps<PracticeBlock>) {
   const { cards, order } = useOrdered(block.items, (it) => practiceCard(it, run.bundle, run.plan.seed));
   const h = blockHeading(block, run.bundle);
   const read = block.kind === 'extraReading';
@@ -51,6 +52,10 @@ export function PracticeRun({ block, run, onDone }: BlockProps<PracticeBlock>) {
         onAnswer={(k, o) => {
           const item = block.items[order[k]];
           run.score(item, o);
+          // the checkpoint reading check: a missed node goes on the remediation list
+          if (block.kind === 'readingCheck' && !o.correct && ui.path.remediate?.every((e) => e.node !== item.node)) {
+            void ui.setPath({ ...ui.path, remediate: withRemediate(ui.path.remediate ?? [], [item.node], 'readingCheck', Date.now()) });
+          }
           if (read) { const s = run.bundle.sentence(item.sentence); if (s) void run.addWords(s.es.split(/\s+/).length, 0); }
         }}
         onDone={onDone}

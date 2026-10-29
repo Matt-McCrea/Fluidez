@@ -307,6 +307,14 @@ export class Learner {
     r.rungStreak = streak;
     this.touch();
   }
+  /** Back to the first rung (a node marked shaky). Unknown nodes are ignored. */
+  resetRung(id: NodeId): void {
+    const r = this.state.nodes[id];
+    if (!r || ((r.rung ?? 0) === 0 && (r.rungStreak ?? 0) === 0)) return;
+    r.rung = 0;
+    r.rungStreak = 0;
+    this.touch();
+  }
   isLearning(id: NodeId): boolean { return !!this.state.nodes[id]?.learning; }
   hasCard(id: NodeId, direction: Direction): boolean { return !!this.state.nodes[id]?.[direction]; }
   isProductiveUnlocked(id: NodeId): boolean { return this.hasCard(id, 'productive'); }

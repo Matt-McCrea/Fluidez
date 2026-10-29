@@ -47,3 +47,20 @@ describe('ladder in the runner', () => {
     expect(w.learner.rungStreak(item.node)).toBe(0);
   });
 });
+
+describe('recombine in the runner', () => {
+  test('a passed recombine counts as a novel pass; a miss drops the rung', async () => {
+    const { w, run, item } = await setup();
+    const node = item.node;
+    // make sure the node has a card to review
+    const re: PracticeItem = { ...item, op: 'recombine', scoring: 'review' };
+    const rec = () => (w.learner as unknown as { state: { nodes: Record<string, { novelPasses: number }> } }).state.nodes[node];
+    const before = rec().novelPasses;
+    run.score(re, ok);
+    if (w.learner.hasCard(node, re.direction)) expect(rec().novelPasses).toBe(before + 1);
+    for (let i = 0; i < 4; i++) w.learner.stepRung(node, 'pass');
+    const up = w.learner.rung(node);
+    run.score(re, { correct: false, tries: 2, ms: 5000 });
+    expect(w.learner.rung(node)).toBe(Math.max(0, up - 1));
+  });
+});

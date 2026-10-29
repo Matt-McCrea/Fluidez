@@ -45,13 +45,15 @@ export interface UiState {
   readSeconds: Record<string, number>;
   /** the last finished attempt per writing task: self-rubric, words, checklist items met */
   writing: Record<string, WritingMark>;
+  /** personal bests in free practice, by spec key (right first time in one timed run) */
+  bests: Record<string, number>;
 }
 
 export function emptyUi(learnerId = newId()): UiState {
   return {
     version: UI_VERSION, learnerId, onboarded: false,
     stats: { sessions: 0, wordsRead: 0, wordsWritten: 0, days: [], today: 0 },
-    saved: [], canDos: [], readSeconds: {}, writing: {},
+    saved: [], canDos: [], readSeconds: {}, writing: {}, bests: {},
   };
 }
 

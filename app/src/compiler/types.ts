@@ -145,6 +145,8 @@ export interface PathState {
   lastGrammarIntroAt?: number;
   /** most recently introduced grammar first (≤ 8), feeds drill interleaving and remix */
   recentGrammar: NodeId[];
+  /** shaky nodes (self-check, reading check) drills and remixes draw from first; `served` counts older-set servings (gone at 2) */
+  remediate: { node: NodeId; reason: 'selfcheck' | 'readingCheck' | 'lapse'; at: number; served?: number }[];
   /** the last ≤ 60 completed sessions, newest last */
   log: SessionLogEntry[];
 }
@@ -232,13 +234,14 @@ export interface LearnItem extends ItemBase {
  *  choose    choose the right form (minimal-pair distractors from the engine)
  *  type      type the form in a gapped sentence
  *  transform change person/tense/polarity (engine-generated target)
+ *  recombine a sentence the learner has seen, re-inflected into one they have not (mastery test)
  *  translate en -> es full sentence (translation matcher)
  *  respond   answer a question about yourself (communicative; checked on the focus feature)
  *  gap       gap-fill / cued production from the story's words
  *  comprehend reading check (checkpoint)
  *  read      read for meaning (extended-tier extra reading)
  */
-export type PracticeOp = 'pick' | 'choose' | 'type' | 'transform' | 'translate' | 'respond' | 'gap' | 'comprehend' | 'read';
+export type PracticeOp = 'pick' | 'choose' | 'type' | 'transform' | 'recombine' | 'translate' | 'respond' | 'gap' | 'comprehend' | 'read';
 
 export interface PracticeItem extends ItemBase {
   op: PracticeOp;
@@ -318,6 +321,8 @@ export interface TeachBlock extends BlockBase {
 export interface RuleRecallBlock extends BlockBase { kind: 'ruleRecall'; node: NodeId }
 
 export interface PracticeBlock extends BlockBase {
+  /** a short run over shaky nodes, placed after the warm-up the session after a checkpoint */
+  remedial?: boolean;
   kind: 'structuredInput' | 'controlledOutput' | 'cuedProduction' | 'communicative' | 'remix' | 'readingCheck' | 'extraReading';
   /** the latest point being practised, when there is one */
   focus?: NodeId;

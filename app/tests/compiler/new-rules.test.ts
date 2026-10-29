@@ -4,7 +4,7 @@
 import { describe, expect, test } from 'vitest';
 import type { BankSentence, GraphNode, Unit } from '../../src/content/schema';
 import {
-  budget, reviewTargets, buildContentIndex, buildCourse, canDoAnother, compileSession, initialPath, servedRefs,
+  advancePath, budget, reviewTargets, buildContentIndex, buildCourse, canDoAnother, compileSession, initialPath, servedRefs,
   type CompileInput, type PathState,
 } from '../../src/compiler';
 import { Learner, Rating, State } from '../../src/learner';
@@ -275,5 +275,72 @@ describe('Before you go (recap block)', () => {
       expect(plan.estimatedMinutes).toBeLessThanOrEqual(plan.budget.minutes + 1e-9);
     }
     void L;
+  });
+});
+
+describe('remediation list', () => {
+  function shaky(dayType: 'drill' | 'review') {
+    const nodes = ['g:t', 'p:r', 'p:s', 'l:a'];
+    const sents: BankSentence[] = [];
+    for (const n of nodes) for (let i = 0; i < 6; i++) sents.push(sentence(`s-${n.replace(':', '')}-${i}`, [n], [n]));
+    const units: Unit[] = [{
+      id: 'u01', band: 'A1', title: 'u', theme: 't', canDo: 'c', storyArc: 'a',
+      quota: { bankSentences: 0, chapters: 0, scenes: 0, writingTasks: 0 },
+      days: Array.from({ length: 7 }, () => ({ type: dayType, focus: ['g:t'], chunks: [], lexemes: [] })),
+    }];
+    const course = buildCourse(units, nodes.map((n) => node(n, n[0] === 'g' ? 'grammar' : n[0] === 'p' ? 'pattern' : 'lexeme')));
+    const content = buildContentIndex({ sentences: sents, chapters: [], scenes: [], writing: [], scripts: [] }, course);
+    const L = Learner.fresh({ now: () => T0 });
+    for (const n of nodes) L.introduce(n, { results: [true, true, true], at: T0 });
+    const path = (extra: Partial<PathState> = {}): PathState => ({
+      ...initialPath(), coreSessions: 5,
+      remediate: [{ node: 'p:s', reason: 'selfcheck', at: 20 }, { node: 'p:r', reason: 'readingCheck', at: 10 }], ...extra,
+    });
+    const plan = (p: PathState) => compileSession({ learnerId: 'x', learner: L, path: p, course, content, now: T0 + DAY });
+    return { plan, path };
+  }
+  const outputs = (p: ReturnType<typeof compileSession>) => p.blocks.filter((b) => b.kind === 'controlledOutput');
+
+  test('a drill draws remediation nodes first, oldest mark first; after two servings they drop out', () => {
+    const { plan, path } = shaky('drill');
+    let p = path();
+    const first = plan(p);
+    expect(first.type).toBe('drill');
+    const nodesOf = (pl: ReturnType<typeof compileSession>) => new Set(outputs(pl).flatMap((b) => (b.kind === 'controlledOutput' ? b.items.map((i) => i.node) : [])));
+    expect(nodesOf(first).has('p:r')).toBe(true);
+    expect(nodesOf(first).has('p:s')).toBe(true);
+    expect(first.pathAfter.remediate.map((e) => e.served)).toEqual([1, 1]);
+    p = advancePath(p, first, true);
+    expect(p.remediate).toHaveLength(2);
+    const second = plan(p);
+    p = advancePath(p, second, true);
+    expect(p.remediate).toEqual([]);
+    const third = plan(path({ remediate: [] }));
+    expect(nodesOf(third).has('p:r')).toBe(false);
+  });
+
+  test('marks made during a session survive advancePath; a refreshed mark restarts its servings', () => {
+    const { plan, path } = shaky('drill');
+    const base = path();
+    const pl = plan(base);
+    const live: PathState = { ...base, remediate: [...base.remediate.filter((e) => e.node !== 'p:s'), { node: 'l:a', reason: 'selfcheck', at: 999 }] };
+    const after = advancePath(live, pl, true);
+    expect(after.remediate.map((e) => e.node).sort()).toEqual(['l:a', 'p:r']);
+    expect(after.remediate.find((e) => e.node === 'p:r')!.served).toBe(1);
+  });
+
+  test('the session after a checkpoint starts its core with "Back to these"', () => {
+    const { plan, path } = shaky('review');
+    const log = [{ learnerSession: 1, coreSession: 5, type: 'checkpoint' as const, dayType: 'checkpoint' as const, advanced: true, throttled: false }];
+    const after = plan(path({ log }));
+    const idx = after.blocks.findIndex((b) => b.kind === 'controlledOutput' && b.remedial);
+    expect(idx).toBeGreaterThan(-1);
+    expect(after.blocks.slice(0, idx).every((b) => b.kind === 'warmup' || b.kind === 'learn')).toBe(true);
+    const b = after.blocks[idx];
+    if (b.kind !== 'controlledOutput') throw new Error('x');
+    expect(b.items.length).toBeLessThanOrEqual(6);
+    expect(new Set(b.items.map((i) => i.node)).size).toBeLessThanOrEqual(3);
+    // not after an ordinary session
+    expect(plan(path()).blocks.some((x) => x.kind === 'controlledOutput' && x.remedial)).toBe(false);
   });
 });

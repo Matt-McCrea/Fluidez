@@ -39,11 +39,13 @@ import type {
   ServedRef, SessionLogEntry, SessionPlan, TeachBlock, WarmupBlock,
 } from './types';
 
+import { REMEDIATE_MAX_SERVED } from './remediate';
+
 const DAY_MS = 86_400_000;
 const LOG_MAX = 60;
 
 export function initialPath(): PathState {
-  return { version: 2, unit: 0, day: 0, coreSessions: 0, owedNew: [], owedGrammar: [], pendingDrills: [], recentGrammar: [], log: [] };
+  return { version: 2, unit: 0, day: 0, coreSessions: 0, owedNew: [], owedGrammar: [], pendingDrills: [], recentGrammar: [], remediate: [], log: [] };
 }
 
 export function compileSession(input: CompileInput): SessionPlan {
@@ -52,7 +54,14 @@ export function compileSession(input: CompileInput): SessionPlan {
 
 /** The path to persist after a session: plan.pathAfter if the core was completed, else unchanged. */
 export function advancePath(path: PathState, plan: SessionPlan, coreCompleted: boolean): PathState {
-  return coreCompleted ? structuredClone(plan.pathAfter) : path;
+  if (!coreCompleted) return path;
+  const next = structuredClone(plan.pathAfter);
+  // marks made during the session (self-check, reading check) live on `path`; the plan only counts servings
+  const planned = new Map((plan.pathAfter.remediate ?? []).map((e) => [e.node, e]));
+  next.remediate = (path.remediate ?? [])
+    .map((e) => { const p = planned.get(e.node); return p && p.at === e.at ? { ...e, served: p.served ?? 0 } : e; })
+    .filter((e) => (e.served ?? 0) < REMEDIATE_MAX_SERVED);
+  return next;
 }
 
 /**
@@ -160,7 +169,7 @@ export function servedRefs(plan: SessionPlan): ServedRef[] {
   return out;
 }
 
-const LADDER_OPS: readonly PracticeOp[] = ['choose', 'type', 'transform', 'transform'];
+const LADDER_OPS: readonly PracticeOp[] = ['choose', 'type', 'transform', 'recombine'];
 
 export function kindOf(id: NodeId, nodes: Map<NodeId, GraphNode>): GraphNode['kind'] {
   const k = nodes.get(id)?.kind;
@@ -223,6 +232,7 @@ class Compiler {
   private owedNew: NodeId[];
   private owedGrammar: NodeId[];
   private drilled?: NodeId;
+  private remServed = new Set<NodeId>();
   private readChapter?: string;
   private unit?: Unit;
 
@@ -271,6 +281,7 @@ class Compiler {
     const d = this.decide(day);
     const c = this.path.coreSessions + 1;
 
+    const remedial = this.backToThese(); // built first so its sentences are not taken by the day's blocks
     switch (d.type) {
       case 'introduce': this.introduce(day!, d); break;
       case 'drill': this.warmupStd(); this.drill(d.drillNode!, day, d.advances); break;
@@ -279,6 +290,11 @@ class Compiler {
       case 'output': this.outputDay(day!, d); break;
       case 'checkpoint': this.checkpointDay(); break;
       case 'review': this.reviewDay(d, day); break;
+    }
+    if (remedial) {
+      let at = 0;
+      this.blocks.forEach((x, i) => { if (x.kind === 'warmup') at = i + 1; });
+      this.blocks.splice(at, 0, remedial);
     }
     this.fitToBudget();
     if (this.tier === 'extended' && !this.throttled && d.type !== 'review') this.extraReading();
@@ -538,7 +554,7 @@ class Compiler {
    * in this plan. Sentences written for the node (targets) come first; the
    * RNG only orders candidates within each group.
    */
-  private pickSentences(node: NodeId, n: number, opts: { question?: boolean; unit?: string } = {}): SentenceRef[] {
+  private pickSentences(node: NodeId, n: number, opts: { question?: boolean; unit?: string; seen?: boolean } = {}): SentenceRef[] {
     if (n <= 0) return [];
     const want = Math.max(n * 2, n + 4);
     const groups: SentenceRef[][] = [];
@@ -548,7 +564,7 @@ class Compiler {
       if (list) {
         for (const id of list) {
           if (total + g.length >= want) break;
-          if (this.usedSentences.has(id) || this.L.ledger.hasSeen('sentence', id)) continue;
+          if (this.usedSentences.has(id) || this.L.ledger.hasSeen('sentence', id) !== !!opts.seen) continue;
           const s = this.content.sentences.get(id)!;
           if (opts.question && !s.question) continue;
           if (!this.gated(s.requires)) continue;
@@ -829,11 +845,27 @@ class Compiler {
     kind: PracticeBlock['kind'], node: NodeId, n: number, ops: PracticeOp[], direction: 'receptive' | 'productive',
     opts: { focus?: NodeId; firstScoring?: 'review' | 'exposure'; question?: boolean; push?: boolean; ladder?: boolean } = {},
   ): PracticeBlock | undefined {
-    let sents = this.pickSentences(node, n, { question: opts.question });
-    if (opts.question && sents.length < n) sents = sents.concat(this.pickSentences(node, n - sents.length));
+    // rung-3 slots re-inflect a sentence already seen; with none, they fall back to transform on an unseen one
+    const want = opts.ladder ? this.ladderOps(node, n) : undefined;
+    const reSlots = want ? want.filter((o) => o === 'recombine').length : 0;
+    const seenQ = reSlots ? this.pickSentences(node, reSlots, { seen: true }) : [];
+    const unseenN = n - seenQ.length;
+    let sents = this.pickSentences(node, unseenN, { question: opts.question });
+    if (opts.question && sents.length < unseenN) sents = sents.concat(this.pickSentences(node, unseenN - sents.length));
+    const laddered: PracticeOp[] | undefined = want ? [] : undefined;
+    if (want) {
+      const pool = [...sents];
+      const seenPool = [...seenQ];
+      const picked: SentenceRef[] = [];
+      for (const o of want) {
+        if (o === 'recombine' && seenPool.length) { picked.push(seenPool.shift()!); laddered!.push('recombine'); continue; }
+        const u = pool.shift();
+        if (u) { picked.push(u); laddered!.push(o === 'recombine' ? 'transform' : o); }
+      }
+      sents = picked;
+    }
     if (sents.length < n) this.diag({ code: 'shortage', block: kind, node, what: 'sentence', wanted: n, got: sents.length, unit: this.unit?.id, message: `${kind}: ${sents.length}/${n} unseen gated sentences for ${node}` });
     if (!sents.length) return undefined;
-    const laddered = opts.ladder ? this.ladderOps(node, sents.length) : undefined;
     const items = sents.map((s, i) => this.practiceItem(laddered ? laddered[i] : ops[i % ops.length], node, s, direction, i === 0 ? (opts.firstScoring ?? 'exposure') : 'exposure'));
     const b: PracticeBlock = { kind, part: 'core', deliberate: false, focus: opts.focus, items, minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60) };
     if (opts.push !== false) this.blocks.push(b);
@@ -842,7 +874,7 @@ class Compiler {
 
   /**
    * The ops for `n` items on one node, from its ladder rung: choose, type,
-   * transform, transform (recombine comes later). From rung 1 up, about one
+   * transform, recombine. From rung 1 up, about one
    * item in four is a translation. At streak 1 the last item is a probe at
    * the next rung, so a climb can happen inside the block.
    */
@@ -859,7 +891,8 @@ class Compiler {
   private ladderOp(node: NodeId, k: number): PracticeOp {
     const cap = kindOf(node, this.course.nodes) === 'lexeme' ? 1 : 3;
     const rung = Math.min((this.L.rung?.(node) ?? 0), cap);
-    return rung >= 1 && k % 4 === 3 ? 'translate' : LADDER_OPS[rung];
+    const op = rung >= 1 && k % 4 === 3 ? 'translate' : LADDER_OPS[rung];
+    return op === 'recombine' ? 'transform' : op;   // an older point's sentence is unseen: nothing to re-inflect
   }
 
   private practiceItem(op: PracticeOp, node: NodeId, s: SentenceRef, direction: 'receptive' | 'productive', scoring: 'review' | 'exposure' | 'none'): PracticeItem {
@@ -875,6 +908,33 @@ class Compiler {
     return 'review';
   }
 
+  /** Known remediation nodes still owed servings, oldest mark first (at most `max`). */
+  private shakyNodes(max: number): NodeId[] {
+    return [...(this.path.remediate ?? [])]
+      .filter((e) => (e.served ?? 0) < REMEDIATE_MAX_SERVED && this.known.has(e.node))
+      .sort((a, b) => a.at - b.at)
+      .map((e) => e.node)
+      .slice(0, max);
+  }
+
+  /** The session after a checkpoint opens (after the warm-up) with a short run over what was marked shaky. */
+  private backToThese(): PracticeBlock | undefined {
+    const last = this.path.log[this.path.log.length - 1];
+    if (!last || last.dayType !== 'checkpoint') return undefined;
+    const nodes = this.shakyNodes(3);
+    if (!nodes.length) return undefined;
+    const items: PracticeItem[] = [];
+    for (let i = 0; items.length < 6 && i < 18; i++) {
+      const src = nodes[i % nodes.length];
+      const [s] = this.pickSentences(src, 1);
+      if (s) items.push(this.practiceItem(this.ladderOp(src, items.length), src, s, 'productive', 'exposure'));
+    }
+    if (!items.length) return undefined;
+    nodes.forEach((n) => this.remServed.add(n));
+    const b: PracticeBlock = { kind: 'controlledOutput', part: 'core', deliberate: false, remedial: true, focus: nodes[0], items, minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60) };
+    return b;
+  }
+
   private drill(node: NodeId, day: Unit['days'][number] | undefined, advancing: boolean) {
     this.drilled = node;
     this.blocks.push({ kind: 'ruleRecall', part: 'core', deliberate: true, node, minutes: round1(SECONDS.ruleRecall / 60) });
@@ -882,10 +942,13 @@ class Compiler {
 
     // Controlled output, interleaved: ~60% latest, ~40% older points + a known contrast.
     const total = COUNTS.controlledOutput;
+    const shaky = this.shakyNodes(2).filter((n) => n !== node);
     const older = [
+      ...shaky,
       ...(day?.focus ?? []).filter((n) => n !== node && this.known.has(n) && ['grammar', 'pattern'].includes(kindOf(n, this.course.nodes))),
       ...this.path.recentGrammar.filter((n) => n !== node && this.known.has(n)),
     ].filter((n, i, a) => a.indexOf(n) === i).slice(0, 3);
+    for (const n of older) if (shaky.includes(n)) this.remServed.add(n);
     const contrast = this.pickContrast([node, ...older]);
     const nLatest = older.length || contrast ? Math.round(total * COUNTS.latestShare) : total;
     const ops: PracticeOp[] = ['choose', 'type', 'transform', 'translate'];
@@ -1070,7 +1133,9 @@ class Compiler {
   private remix(): PracticeBlock | undefined {
     const recent = this.path.recentGrammar.filter((n) => this.known.has(n));
     const inWindow = recent.filter((n) => (this.L.node(n)?.introducedAt ?? 0) >= this.now - REMIX_WINDOW_DAYS * DAY_MS);
-    const nodes = inWindow.length >= 2 ? inWindow : recent.slice(0, 4);
+    const shaky = this.shakyNodes(2);
+    shaky.forEach((n) => this.remServed.add(n));
+    const nodes = [...shaky, ...(inWindow.length >= 2 ? inWindow : recent.slice(0, 4))].filter((n, i, a) => a.indexOf(n) === i);
     const contrast = this.pickContrast(nodes);
     const sources = [...nodes, ...(contrast ? [contrast] : [])];
     if (!sources.length) return undefined;
@@ -1221,6 +1286,7 @@ class Compiler {
       p.recentGrammar = [g, ...p.recentGrammar.filter((x) => x !== g)].slice(0, 8);
     }
     if (this.drilled) p.pendingDrills = p.pendingDrills.filter((x) => x.node !== this.drilled);
+    p.remediate = (p.remediate ?? []).map((e) => (this.remServed.has(e.node) ? { ...e, served: (e.served ?? 0) + 1 } : e));
     p.owedNew = this.owedNew;
     p.owedGrammar = this.owedGrammar;
     if (d.advances && day && this.unit) {

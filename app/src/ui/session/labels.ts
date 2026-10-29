@@ -50,7 +50,8 @@ export function blockHeading(block: Block, b: Bundle): { title: string; lead: st
     case 'teach': return { title: `New: ${lc(b.title(block.node))}`, lead: block.script ? '' : 'A few examples first.' };
     case 'ruleRecall': return { title: 'Remember this?', lead: 'Try it before the reminder.' };
     case 'structuredInput': return { title: 'Read and pick', lead: 'Read carefully: the small words matter.' };
-    case 'controlledOutput': return { title: 'Your turn', lead: 'First choose, then type, then change it around.' };
+    case 'controlledOutput': if (block.remedial) return { title: 'Back to these', lead: 'A few you marked as shaky.' };
+      return { title: 'Your turn', lead: 'First choose, then type, then change it around.' };
     case 'cuedProduction': return { title: 'Use the new words', lead: 'The words from the story, in new sentences.' };
     case 'communicative': return { title: 'Talk about you', lead: 'Real questions. Answer them for yourself.' };
     case 'remix': return { title: 'Remix', lead: 'A mix of things from the last few weeks.' };
@@ -68,7 +69,7 @@ export function blockHeading(block: Block, b: Bundle): { title: string; lead: st
     case 'scene': return { title: b.scenes.get(block.scene)?.title ?? 'Chat', lead: block.purpose === 'checkpoint' ? 'A check-in, not an exam.' : 'A real conversation. Say what you need to say.' };
     case 'sceneRerun': return { title: 'Same chat, a bit faster', lead: 'You know how it goes now. Try it against the clock.' };
     case 'writing': return { title: 'Write it', lead: block.purpose === 'checkpoint' ? 'A check-in, not an exam.' : 'A few sentences of your own.' };
-    case 'selfCheck': return { title: 'How does it feel?', lead: 'Be honest. It only changes what comes back for practice.' };
+    case 'selfCheck': return { title: 'How does it feel?', lead: 'Be honest. What you mark here comes back for practice.' };
     case 'timedRecall': return { title: 'Two-minute sprint', lead: 'As many as you can. Speed over perfection.' };
     case 'recap': return { title: 'Before you go', lead: 'Once more, from today.' };
     case 'close': return { title: 'Done for today', lead: '' };

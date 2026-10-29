@@ -13,10 +13,12 @@ import { bundleLexicon } from './scene';
 import { verbReadings } from '../../exercises/spanish';
 import {
   ALL_FEATURES, checkItem, chooseItem, form, lexGapItem, parseClause, rng, shuffle, structuredInput,
-  transformItems, translationItems, typeFormItem, type Item as ExItem,
+  recombinations, transformItems, translationItems, typeFormItem, type Item as ExItem,
 } from '../../exercises';
-import { fixBreaks, isMultiTurn, productionView, turnView, type TurnView } from '../../exercises/dialogue';
-import type { Feature } from '../../exercises/types';
+import { fixBreaks, isMultiTurn, productionView, turnView, turnViews, type TurnView } from '../../exercises/dialogue';
+import { englishVariants } from './engvariants';
+import { hash32 } from '../../exercises/rng';
+import type { Feature, RecombineItem } from '../../exercises/types';
 import { looksSpanish, type Bundle } from '../data/bundle';
 
 export type Lang = 'es' | 'en';
@@ -261,25 +263,87 @@ function sayCard(key: string, v: TurnView, check: (input: string) => Check, why:
 
 // ---------------------------------------------------------------- reviews (warm-up, leech)
 
+// ---------------------------------------------------------------- receptive formats
+
+export type ReceptiveFormat = 'typeEn' | 'pickFeature' | 'pickEs';
+
 /**
- * A review. `variant` 'pickSpanish' turns a receptive review into "which
- * Spanish says this?" (still recognition, a different look), so a warm-up of
- * receptive reviews is not one long run of the same card.
+ * 20 slots (10 type, 6 pick-the-meaning, 4 which-one-says-this) in which no two
+ * neighbours match, also round the end: a node walking the wheel one step per
+ * session never gets the same look twice running.
  */
-export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pickSpanish' = 'meaning'): Card {
+const WHEEL: ReceptiveFormat[] = (() => {
+  const w: ReceptiveFormat[] = [];
+  for (let i = 0; i < 20; i++) {
+    if (i % 2 === 0) w.push('typeEn');
+    else w.push(i === 5 || i === 11 || i === 15 || i === 19 ? 'pickEs' : 'pickFeature');
+  }
+  return w;
+})();
+
+/**
+ * How a receptive review of a node is asked. A pure function of (node, seedKey):
+ * a number (the session index) walks the node's wheel one step per session; a
+ * string (a card key) lands on a stable spot of it.
+ */
+export function receptiveFormat(node: string, seedKey: string | number): ReceptiveFormat {
+  const step = typeof seedKey === 'number' ? seedKey : hash32(seedKey);
+  return WHEEL[(((hash32(node) + step) % 20) + 20) % 20];
+}
+
+const en_ = (t: string): Txt => ({ text: t, lang: 'en' });
+const wordCount = (t: string) => t.split(/\s+/).filter(Boolean).length;
+/** English meanings to accept for a typed answer: the meaning, and it without its leading the/a/to. */
+const enForms = (en: string) => {
+  const bare = en.replace(/^(the|a|an|to)\s+/i, '');
+  return bare !== en && bare ? [bare] : [];
+};
+
+/** "Type the meaning in English": Spanish shown, the learner types it. */
+function typeMeaning(key: string, esText: string, enFull: string, acceptEn: readonly string[], why: string): TypeCard {
+  const note = /\s*\(([^)]*)\)\s*$/.exec(enFull);
+  const en = note ? enFull.slice(0, note.index).trim() || enFull : enFull;
+  const all = [...acceptEn, ...(en !== enFull ? [enFull] : []), ...enForms(en)];
+  return {
+    type: 'type', key, ask: 'Type the meaning in English', prompt: es(esText), ...(note && en !== enFull ? { sub: en_(`(${note[1]})`) } : {}), answerLang: 'en', placeholder: 'Type it in English', retry: true, why,
+    check: (input) => {
+      const r = matchEnglish(input, { en, acceptEn: all });
+      return { pass: r.pass, near: r.near, hint: r.hint, answer: r.pass ? en : r.closest };
+    },
+  };
+}
+
+/**
+ * A review. A receptive one is asked three ways, rotated per node and session
+ * (`receptiveFormat`): type the English, pick the English (the wrong options
+ * are the same sentence about someone else or another time when the engine can
+ * say so), or "which one says this?". `variant` 'pickSpanish' forces the last,
+ * so a warm-up of receptive reviews is not one long run of the same look.
+ * `session` (a number) makes a node's look change from one session to the next.
+ */
+export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pickSpanish' = 'meaning', session?: number): Card {
   const s = b.sentence(item.sentence);
   const seg = b.segments(item.node)[0];
   const title = b.title(item.node);
-  if (s && item.direction === 'receptive' && variant === 'pickSpanish') {
-    const wrong = otherSpanish(b, s.es, item.id, 2, s.unit);
-    if (wrong.length >= 2) {
-      return mcq(item.id, 'Which one says this?', en(s.en), es(s.es), wrong.map(es),
-        seg ? `${seg.es} means "${seg.en}".` : `It's ${s.es}`);
-    }
-  }
+  const fmt: ReceptiveFormat = item.direction === 'receptive'
+    ? (variant === 'pickSpanish' ? 'pickEs' : receptiveFormat(item.node, session ?? item.id))
+    : 'pickFeature';
   if (s && item.direction === 'receptive') {
-    return mcq(item.id, MEANS, es(s.es), en(s.en), otherEnglish(b, s.en, item.id, 2, s.unit).map(en),
-      seg ? `${seg.es} means "${seg.en}". The rest of the sentence gives the context.` : `This is about: ${title.toLowerCase()}.`);
+    const why = seg ? `${seg.es} means "${seg.en}". The rest of the sentence gives the context.` : `This is about: ${title.toLowerCase()}.`;
+    if (fmt === 'typeEn' && !isMultiTurn(s) && wordCount(s.en) <= 14) return typeMeaning(item.id, s.es, s.en, s.acceptEn ?? [], why);
+    if (fmt === 'pickEs' && !isMultiTurn(s)) {
+      const wrong = otherSpanish(b, s.es, item.id, 3, s.unit);
+      const use = wrong.length >= 3 ? wrong : wrong.length >= 2 ? wrong.slice(0, 2) : [];
+      if (use.length) return mcq(item.id, 'Which one says this?', en(s.en), es(s.es), use.map(es), seg ? `${seg.es} means "${seg.en}".` : `It's ${s.es}`);
+    }
+    const vars = isMultiTurn(s) ? null : englishVariants(s, item.id);
+    if (vars) return mcq(item.id, MEANS, es(s.es), en(s.en), vars.map(en), why);
+    if (fmt === 'pickFeature' && !isMultiTurn(s)) {
+      // nothing re-inflects: ask it the other way round, with four options when there are
+      const alt = otherSpanish(b, s.es, item.id, 3, s.unit);
+      if (alt.length >= 3) return mcq(item.id, 'Which one says this?', en(s.en), es(s.es), alt.map(es), seg ? `${seg.es} means "${seg.en}".` : `It's ${s.es}`);
+    }
+    return mcq(item.id, MEANS, es(s.es), en(s.en), otherEnglish(b, s.en, item.id, 2, s.unit).map(en), why);
   }
   const v = s ? productionView(s, preferFor(b, item.node)) : null;
   if (s && v) {
@@ -293,9 +357,11 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
   // bare card: no fresh sentence left for this node
   if (!seg) return { type: 'read', key: item.id, ask: 'Remember this one?', es: b.node(item.node)?.es ?? title, en: title, why: '' };
   if (item.direction === 'receptive') {
-    if (variant === 'pickSpanish') {
-      const wrong = otherNodeSpanish(b, item.node, seg.es, item.id);
-      if (wrong.length >= 2) return mcq(item.id, 'Which one says this?', en(seg.en), es(seg.es), wrong.map(es), `"${seg.en}" is ${seg.es}`);
+    if (fmt === 'typeEn' && wordCount(seg.en) <= 6) return typeMeaning(item.id, seg.es, seg.en, [], `${seg.es} means "${seg.en}".`);
+    if (fmt === 'pickEs') {
+      const wrong = otherNodeSpanish(b, item.node, seg.es, item.id, 3);
+      const use = wrong.length >= 3 ? wrong : wrong.slice(0, 2);
+      if (use.length >= 2) return mcq(item.id, 'Which one says this?', en(seg.en), es(seg.es), use.map(es), `"${seg.en}" is ${seg.es}`);
     }
     return mcq(item.id, MEANS, es(seg.es), en(seg.en), otherNodeEnglish(b, item.node, seg.en, item.id).map(en), `${seg.es} means "${seg.en}".`);
   }
@@ -328,6 +394,10 @@ export function learnRetrieval(item: LearnItem, b: Bundle, round: number): Card 
   const key = `${item.id}#${round}`;
   if (!seg) return { type: 'read', key, ask: 'Have another look', es: b.node(item.node)?.es ?? b.title(item.node), en: b.title(item.node), why: '' };
   const why = `"${seg.en}" is ${seg.es}`;
+  // round 1 of a short word: "pick the Spanish" is nearly free, so type what it means
+  if (round === 1 && b.node(item.node)?.kind === 'lexeme' && wordCount(seg.en) <= 2) {
+    return typeMeaning(key, seg.es, seg.en, [], `${seg.es} means "${seg.en}".`);
+  }
   switch (learnFormat(round, item.productive !== false)) {
     case 'recognise':
       return mcq(key, MEANS, es(seg.es), en(seg.en), otherNodeEnglish(b, item.node, seg.en, key).map(en), `${seg.es} means "${seg.en}".`);
@@ -428,6 +498,50 @@ export function respondCheck(question: BankSentence, lexicon?: ReadonlySet<strin
   };
 }
 
+// ---------------------------------------------------------------- recombine (the mastery test)
+
+function recombineAsk(key: string): { ask: string; what: string } {
+  const [head, neg] = key.split('+');
+  const p = head.startsWith('person:') ? head.slice(7) : '';
+  const who: Record<string, string> = { yo: 'about yourself', 'tú': 'about the person you are talking to', 'él/ella': 'about him or her', nosotros: 'about the two of you', ellos: 'about them' };
+  const bits = [p ? who[p] : '', neg === 'negate' || head === 'negate' ? 'saying it is not so' : ''].filter(Boolean);
+  const what = [p ? 'person' : '', neg === 'negate' || head === 'negate' ? 'yes or no' : ''].filter(Boolean).join(' and ');
+  return { ask: `Now say it ${bits.join(', ') || 'a new way'}`, what: what || 'way' };
+}
+
+/**
+ * A sentence the learner has seen, re-inflected into one they have not: the
+ * engine's new person, a pronoun for the object, a negation, or both. Picked
+ * by the card key: person-plus-negation first, then the object pronoun, then
+ * the plain production variants. With no variant, an ordinary transform.
+ */
+export function recombineCard(item: PracticeItem, s: BankSentence, b: Bundle, seed: number): Card | undefined {
+  const r = rng(`${seed}:${item.id}:recombine`);
+  const all = recombinations(s, { seed: item.id, bank: b.bank });
+  const rank = (x: RecombineItem) => (x.mode === 'production' ? (x.id.endsWith('+negate') ? 0 : 2) : x.transform.op === 'pronoun' ? 1 : 4);
+  const items = all.filter((x) => x.mode === 'production' || x.options?.length);
+  if (!items.length) return undefined;
+  const best = Math.min(...items.map(rank));
+  const pool = items.filter((x) => rank(x) === best);
+  const it = pool[Math.floor(r() * pool.length)];
+  const view = turnViews(s).find((v) => parseClause(v.sentence.es, v.sentence.en));
+  const known = view?.sentence ?? s;
+  const key = it.id.split('|')[2] ?? '';
+  if (it.mode === 'recognition') {
+    const opts = it.options!;
+    const right = it.answer ?? 0;
+    return {
+      type: 'mcq', key: item.id, ask: it.question ?? 'What does this mean?', prompt: es(it.es), sub: en(`You know: ${known.es}`),
+      options: sameLang(opts, right), answer: right, why: it.transform.op === 'pronoun' ? `${it.es}: the little word stands for ${opts[right]}.` : `${it.es}: ${opts[right]}.`,
+    };
+  }
+  const { ask, what } = recombineAsk(key);
+  return {
+    type: 'type', key: item.id, ask, prompt: es(known.es), sub: en(`Now: ${it.en ?? ''}`.replace(/\s+$/, '')), answerLang: 'es', placeholder: 'Say it in Spanish',
+    check: itemCheck(it), retry: true, why: `${it.es}. Same sentence, new ${what}.`,
+  };
+}
+
 export function practiceCard(item: PracticeItem, b: Bundle, seed: number): Card {
   const s = b.sentence(item.sentence);
   if (!s) return { type: 'read', key: item.id, ask: 'Have a look', es: b.node(item.node)?.es ?? '', en: b.title(item.node), why: '' };
@@ -467,6 +581,8 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number): Card 
       }
       return translateCard(item, s, b);
     }
+    case 'recombine':
+      return recombineCard(item, s, b, seed) ?? practiceCard({ ...item, op: 'transform' }, b, seed);
     case 'translate':
       return translateCard(item, s, b);
     case 'gap': {

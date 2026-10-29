@@ -9,15 +9,18 @@ import { ContentLoader, loadBundle } from './data/loader';
 import { Ctx, type AppCtx } from './context';
 import { Home } from './screens/home';
 import { Onboarding } from './screens/onboarding';
+import { Practice } from './screens/practice';
 import { Progress } from './screens/progress';
+import { Reference } from './screens/reference';
 import { Session } from './screens/session';
 import { Settings } from './screens/settings';
 import { Story } from './screens/story';
+import type { PracticeSpec } from './session/practice-spec';
 import { UiStore } from './store/ui';
 import { MORE_MINUTES } from './session/more';
 
-type Tab = 'home' | 'story' | 'progress' | 'settings';
-type Route = { tab: Tab } | { session: Mode; key: number; cap?: number };
+type Tab = 'home' | 'story' | 'reference' | 'progress' | 'settings';
+type Route = { tab: Tab } | { session: Mode; key: number; cap?: number } | { practice: PracticeSpec | undefined; key: number };
 
 /** Each session start gets a fresh key, so "Do another" always mounts a new player. */
 let sessionSeq = 0;
@@ -100,18 +103,21 @@ export function App({ opts }: { opts?: BootOptions }) {
         onAnother={() => setRoute({ session: 'another', key: ++sessionSeq, cap: MORE_MINUTES })}
       />
     );
+  } else if ('practice' in route) {
+    body = <Practice key={route.key} spec={route.practice} onDone={goHome} />;
   } else {
     const tab = route.tab;
     body = (
       <>
-        {tab === 'home' ? <Home onStart={(m) => setRoute({ session: m, key: ++sessionSeq })} onStory={() => setRoute({ tab: 'story' })} /> : null}
+        {tab === 'home' ? <Home onStart={(m) => setRoute({ session: m, key: ++sessionSeq })} onStory={() => setRoute({ tab: 'story' })} onPractise={(spec) => setRoute({ practice: spec, key: ++sessionSeq })} /> : null}
         {tab === 'story' ? <Story /> : null}
+        {tab === 'reference' ? <Reference onPractise={(spec: PracticeSpec) => setRoute({ practice: spec, key: ++sessionSeq })} /> : null}
         {tab === 'progress' ? <Progress /> : null}
         {tab === 'settings' ? <Settings /> : null}
         <nav class="tabs" aria-label="Main">
-          {(['home', 'story', 'progress', 'settings'] as Tab[]).map((t) => (
+          {(['home', 'story', 'reference', 'progress', 'settings'] as Tab[]).map((t) => (
             <button key={t} class={`tab${tab === t ? ' on' : ''}`} aria-current={tab === t ? 'page' : undefined} onClick={() => setRoute({ tab: t })}>
-              {{ home: 'Home', story: 'Story', progress: 'Progress', settings: 'Settings' }[t]}
+              {{ home: 'Home', story: 'Story', reference: 'Look up', progress: 'Progress', settings: 'Settings' }[t]}
             </button>
           ))}
         </nav>
