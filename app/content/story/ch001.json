@@ -1,0 +1,107 @@
+{
+  "id": "ch001",
+  "unit": "u01",
+  "title": "Hola, Bogotá",
+  "text": "Tomás: Hola. Buenos días.\nVale: Hello. Sorry. Closed. That letter: for Rosa, not for you.\nTomás: Sí, sí. Soy Tomás. Soy de Toronto.\nVale: Oh, Toronto. Very nice. Tourist office: two streets that way.\nTomás: No, no. Soy de Toronto... y soy de Bogotá.\nVale: ¿De Toronto o de Bogotá?\nTomás: Soy nieto de Rosa.\nVale: ¿Tú eres Tomás? ¿Tomás de Rosa?\nTomás: Sí.\nVale: ¡Ay, Tomás! Mucho gusto. Soy Vale. Soy de Medellín.\nHernando: ¡Vale! ¡Buenos días! ¿Y él?\nVale: Es Tomás, Don Hernando. ¡Es Tomás de Rosa!\nHernando: ¡Tomás! Mucho gusto, mucho gusto. Soy Hernando. Soy colombiano y soy de Bogotá.\nSimón: ¡Hola! ¡Hola! ¿De dónde eres?\nTomás: ¿Y él? ¿Es mesero?\nVale: No. Es Simón. Simón es de Rosa.\nSimón: ¡Mucho gusto! ¡Mucho gusto!\nTomás: ¿Altamira? ¿Altamira es colombiano?\nHernando: Sí. Pero Altamira no es bueno, Tomás.\nSimón: ¡Altamira no! ¡Altamira no!",
+  "gloss": [
+    {
+      "es": "Soy nieto de Rosa",
+      "en": "I'm Rosa's grandson"
+    },
+    {
+      "es": "¿Y él?",
+      "en": "And him? (who's he?)"
+    },
+    {
+      "es": "Simón es de Rosa",
+      "en": "Simón is Rosa's (he belonged to her)"
+    },
+    {
+      "es": "¡Ay!",
+      "en": "Oh!"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Who does Vale think Tomás is at first?",
+      "options": [
+        "A lost tourist",
+        "A new waiter",
+        "Someone from Altamira",
+        "Don Hernando's son"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What makes Vale say «¡Ay, Tomás! Mucho gusto»?",
+      "options": [
+        "He tells her he is Rosa's grandson",
+        "He orders a coffee",
+        "He says he is from Medellín",
+        "Simón says hello to him"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who is Simón?",
+      "options": [
+        "The café's parrot, who was Rosa's",
+        "The café's waiter",
+        "Vale's brother",
+        "A neighbour from Bogotá"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Tomás es de Toronto o de Bogotá?",
+      "options": [
+        "De Toronto",
+        "De Bogotá",
+        "De Toronto y de Bogotá"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What do Don Hernando and Simón think of Altamira?",
+      "options": [
+        "It's bad news",
+        "It's a good friend",
+        "It's the name of the café",
+        "They don't know who it is"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Rosa's café is closed, there's a letter from Altamira in Tomás's hand, and Don Hernando hasn't had his morning coffee. That last one is the real emergency.",
+  "rereadQuestions": [
+    {
+      "q": "¿De dónde es Vale?",
+      "options": [
+        "De Medellín",
+        "De Bogotá",
+        "De Toronto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Tomás asks if Simón is a waiter. What does Vale answer?",
+      "options": [
+        "No — Simón is Simón, and he was Rosa's",
+        "Yes, the best one in Bogotá",
+        "No, he's Hernando's",
+        "Yes, but only in the morning"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who is the letter Tomás is holding addressed to?",
+      "options": [
+        "Rosa",
+        "Vale",
+        "Tomás",
+        "Don Hernando"
+      ],
+      "answer": 0
+    }
+  ]
+}

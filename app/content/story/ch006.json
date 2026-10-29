@@ -1,0 +1,107 @@
+{
+  "id": "ch006",
+  "unit": "u03",
+  "title": "El sábado empezamos",
+  "text": "Vale tiene un plan. Hernando tiene un plan. Simón quiere fruta.\nVale: El martes compramos leche y fruta. El miércoles, chocolate. El jueves, pan, pan y pan. El viernes trabajamos y trabajamos. Y el sábado... ¡empezamos!\nTomás: ¿El sábado? ¿Ya?\nHernando: Y el domingo, fútbol. El partido en el café, con cerveza.\nTomás: No me gusta nada el fútbol.\nHernando: ¡No es fútbol, Tomás! Es un partido de Colombia. ¿Y la música? ¿Qué tipo de música te gusta? Yo canto tango.\nSimón: ¡Yo canto! ¡Yo canto!\nVale: Y el fin de semana, música. ¿Te gusta bailar, Tomás?\nTomás: No me gusta nada bailar. Y no canto.\nHernando: ¿Prefieres el cine? Los jueves, cine colombiano: una película y un tinto.\nTomás: Prefiero ver películas solo.\nVale: Tomás, ¿qué te gusta hacer?\nTomás: Me gusta... el chocolate de Vale.\nVale: ¡Qué chévere! Entonces el sábado empiezas a las seis.\nSimón come la fruta de Hernando. Y la fruta de Vale. Y la fruta de Tomás.\nTomás: No... no, no...\nHernando y Simón: ¡De una!\nTomás camina y camina, solo, en La Candelaria. Treinta días. Dos millones. Y un loro.",
+  "gloss": [
+    {
+      "es": "Yo canto tango",
+      "en": "I sing tango"
+    },
+    {
+      "es": "un loro",
+      "en": "a parrot"
+    },
+    {
+      "es": "Dos millones",
+      "en": "Two million (pesos)"
+    },
+    {
+      "es": "Prefiero ver películas solo",
+      "en": "I prefer watching films alone"
+    }
+  ],
+  "questions": [
+    {
+      "q": "When does the café start again?",
+      "options": [
+        "On Saturday",
+        "On Monday",
+        "On Sunday",
+        "In thirty days"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando want on Sundays?",
+      "options": [
+        "The football match in the café, with beer",
+        "Tango classes",
+        "A film",
+        "To sleep"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás like?",
+      "options": [
+        "Vale's hot chocolate",
+        "Football",
+        "Dancing",
+        "Singing"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué come Simón?",
+      "options": [
+        "La fruta de todos",
+        "El pan de Vale",
+        "Pizza"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué prefiere Tomás?",
+      "options": [
+        "Ver películas solo",
+        "El cine colombiano en el café",
+        "Bailar el fin de semana"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Saturday, six o'clock. The café opens its doors for the first time since Rosa died. What could possibly go wrong?",
+  "rereadQuestions": [
+    {
+      "q": "What does Vale plan for Thursday?",
+      "options": [
+        "Bread, bread and more bread",
+        "Fruit and milk",
+        "Chocolate",
+        "Football"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What happens on Thursdays in Hernando's plan?",
+      "options": [
+        "Colombian cinema: a film and a coffee",
+        "Tango night",
+        "A football match",
+        "Chess"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What time does Tomás start on Saturday?",
+      "options": [
+        "Six",
+        "Seven",
+        "Nine",
+        "He doesn't know yet"
+      ],
+      "answer": 0
+    }
+  ]
+}

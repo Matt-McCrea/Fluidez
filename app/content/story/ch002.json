@@ -1,0 +1,110 @@
+{
+  "id": "ch002",
+  "unit": "u01",
+  "title": "Un tinto, por favor",
+  "text": "Hernando: ¡Buenos días, Tomás! ¿Me regala un tinto, por favor?\nTomás: ¿Tinto? Perdón, no entiendo. Más despacio, por favor.\nHernando: Tiiiinto.\nVale: Tinto es café, Tomás. Café sin leche.\nSimón: ¡Tinto! ¡Tinto!\nHernando: Y pan, por favor. Me encanta el pan de Vale.\nVale: No hay pan, Don Hernando. Hay agua y jugo.\nHernando: ¿Agua? ¿Jugo? No, gracias. Quiero tinto. Bueno, Tomás... ¿Herrera es nombre?\nTomás: No. Tomás es nombre. Herrera es apellido.\nHernando: ¿Ciudad? ¿País? ¿Profesión?\nTomás: Vivo en Toronto, en Canadá. Soy ingeniero.\nHernando: ¿Ingeniero? ¡No! Rosa: «Tomás es médico en Canadá».\nTomás: ¿Médico? No, no soy médico. Soy ingeniero... sin trabajo.\nVale: Y Rosa: «Hernando es profesor de tango».\nHernando: ¡Ay, Rosa! Tengo setenta y uno. Y no tengo tinto.\nTomás: Vale, ¿y Altamira? ¿Médico? ¿Ingeniero?\nVale: ¿Altamira? Big problem, Tomás. Big, big problem.",
+  "gloss": [
+    {
+      "es": "Tiiiinto",
+      "en": "Hernando, saying «tinto» very, very slowly"
+    },
+    {
+      "es": "Rosa: «Tomás es médico en Canadá»",
+      "en": "Rosa always said: \"Tomás is a doctor in Canada.\""
+    },
+    {
+      "es": "sin trabajo",
+      "en": "without a job, out of work"
+    },
+    {
+      "es": "profesor de tango",
+      "en": "tango teacher"
+    },
+    {
+      "es": "Tengo setenta y uno",
+      "en": "I'm seventy-one"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What is a «tinto» in Colombia?",
+      "options": [
+        "Black coffee",
+        "Red wine",
+        "Coffee with milk",
+        "Fruit juice"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why can't Hernando have bread?",
+      "options": [
+        "There isn't any",
+        "Tomás eats it",
+        "It's too expensive",
+        "Simón ate it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Rosa tell everybody about Tomás?",
+      "options": [
+        "That he was a doctor in Canada",
+        "That he was an engineer",
+        "That he was a tango teacher",
+        "That he lived in Medellín"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué es Tomás?",
+      "options": [
+        "Ingeniero",
+        "Médico",
+        "Profesor"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Vale describe Altamira?",
+      "options": [
+        "A big problem",
+        "A good doctor",
+        "A new client",
+        "An engineer"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Hernando still has no tinto, and Tomás still hasn't opened Altamira's letter. Next week Vale shows him what a real day in Rosa's café looks like, starting before sunrise.",
+  "rereadQuestions": [
+    {
+      "q": "¿Herrera es nombre o apellido?",
+      "options": [
+        "Apellido",
+        "Nombre"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando refuse?",
+      "options": [
+        "Water and juice",
+        "Black coffee",
+        "Bread",
+        "A question about his age"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Which joke does Vale make about Hernando?",
+      "options": [
+        "Rosa called him a tango teacher",
+        "He is a doctor",
+        "He is from Canada",
+        "He is the parrot's teacher"
+      ],
+      "answer": 0
+    }
+  ]
+}

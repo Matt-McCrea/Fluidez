@@ -1,0 +1,111 @@
+{
+  "id": "ch003",
+  "unit": "u02",
+  "title": "Las seis",
+  "text": "6:00. Vale ya trabaja. Tomás no.\nVale: ¡Tomás! ¡Buenos días! ¡A trabajar!\nTomás: ¿A las seis? En Toronto no trabajo a las seis.\nVale: En Toronto no. En La Esquina de Rosa, sí.\nVale hace el pan. Vale hace el tinto. Vale compra la leche en el barrio. Tomás hace un café.\nVale: Tomás... ¿has estado en un café colombiano?\nTomás: La verdad... no sé.\n7:00. Es Don Hernando, como todos los días.\nHernando: ¡Buenos días! Un tinto, por favor.\nTomás: ¡A la orden, Don Hernando!\nTomás hace el tinto de Don Hernando: un tinto colombiano, de Toronto.\nHernando: ¡Que te mejores, Tomás!\nSimón: ¡Qué pena con usted! ¡Qué pena con usted!\nVale: Tomás, Don Hernando vive en el centro, en un barrio con parque. Pero, la verdad, vive en el café.\nHernando: Claro. Y tú, Tomás, ¿vives en Bogotá?\nTomás: Vivo en un hostel.\nHernando: ¿En un hostel? Pero Rosa... Rosa era el café.\nTomás: La verdad, no sé.",
+  "gloss": [
+    {
+      "es": "¡A trabajar!",
+      "en": "Let's get to work!"
+    },
+    {
+      "es": "¿has estado en un café colombiano?",
+      "en": "have you ever been in a Colombian café?"
+    },
+    {
+      "es": "¡Que te mejores!",
+      "en": "Get well soon! (Hernando is talking about the coffee)"
+    },
+    {
+      "es": "un hostel",
+      "en": "a hostel (cheap shared rooms for travellers)"
+    },
+    {
+      "es": "Rosa era el café",
+      "en": "Rosa was the café"
+    }
+  ],
+  "questions": [
+    {
+      "q": "At 6:00, who is already working?",
+      "options": [
+        "Vale",
+        "Tomás",
+        "Don Hernando",
+        "Simón"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale do before Hernando arrives?",
+      "options": [
+        "Makes the bread and the coffee and buys the milk",
+        "Reads the newspaper",
+        "Sleeps in the café",
+        "Calls Toronto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando really think of Tomás's coffee?",
+      "options": [
+        "It's bad — he tells it to get well soon",
+        "It's better than Rosa's",
+        "It's too strong for him",
+        "He doesn't drink it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Dónde vive Tomás?",
+      "options": [
+        "En un hostel",
+        "En el café",
+        "En un barrio con parque"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Hernando surprised at the end?",
+      "options": [
+        "Rosa's grandson lives in a hostel, not in the café",
+        "Tomás is from Toronto",
+        "Vale lives in the centre",
+        "Simón speaks English"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomás says he doesn't know what he's going to do. That isn't quite true: he has a plan, and he hasn't told Vale.",
+  "rereadQuestions": [
+    {
+      "q": "¿Dónde vive Don Hernando?",
+      "options": [
+        "En el centro, en un barrio con parque",
+        "En un hostel",
+        "En Toronto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale say about where Hernando 'really' lives?",
+      "options": [
+        "In the café",
+        "In the park",
+        "With Simón",
+        "In the hospital"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Tomás says that in Toronto he doesn't work at six. What does Vale answer?",
+      "options": [
+        "In La Esquina de Rosa, he does",
+        "In Bogotá nobody does",
+        "Then he can start at seven",
+        "Simón starts at five"
+      ],
+      "answer": 0
+    }
+  ]
+}

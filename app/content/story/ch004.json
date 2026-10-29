@@ -1,0 +1,97 @@
+{
+  "id": "ch004",
+  "unit": "u02",
+  "title": "El señor Ruiz",
+  "text": "Vale llega de la tienda y del banco. Hernando está con un tinto, como todos los días.\nHernando: Tomás, tú no hablas español. ¡Tú lees español! Hablas como un profesor de la universidad.\nTomás: Es que estudio español en la computadora.\nHernando: ¿En la computadora? Yo estudio con Simón. ¿Y en Toronto? ¿Trabajas en una oficina?\nTomás: Sí, claro. Trabajo en software, en una empresa de Toronto. Llego a la oficina a las nueve. Leo correos en la computadora. Hablo con el jefe y con los compañeros. Termino a las cinco.\nHernando: El horario de Rosa era de seis a seis.\nLa verdad: no hay oficina. No hay jefe, no hay compañeros, no hay reuniones. No hay trabajo.\nRiiing.\nTomás: ¿Aló? Sí, buenos días, señor Ruiz. Sí, el café de Rosa. ¿Un cliente? ¿Una empresa? ¿Y la empresa compra el café ya? Claro. Listo. Chao, señor Ruiz.\nTomás termina. Vale está en el café, con el pan. Vale está mal.\nVale: ¿Una empresa compra el café, Tomás?\nTomás: Es que... Vale...\nHernando: ¿El señor Ruiz? ¿El señor Ruiz de Altamira?\nTomás: No sé.\nSimón: ¡Chao, señor Ruiz! ¡Chao, chao!",
+  "gloss": [
+    {
+      "es": "Riiing",
+      "en": "(the phone rings)"
+    },
+    {
+      "es": "¿Aló?",
+      "en": "Hello? (on the phone, in Colombia)"
+    },
+    {
+      "es": "¿Y la empresa compra el café ya?",
+      "en": "And the company would buy the café right away?"
+    },
+    {
+      "es": "La verdad: no hay oficina",
+      "en": "The truth is, there's no office"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Hernando say Tomás «reads» Spanish instead of speaking it?",
+      "options": [
+        "He sounds like a university lecturer, very correct and stiff",
+        "He reads everything from his phone",
+        "He can't read Spanish at all",
+        "He only speaks English in the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is the truth about Tomás's job in Toronto?",
+      "options": [
+        "There is no job — no office, no boss, no colleagues",
+        "He works from nine to five in an office",
+        "He is a doctor",
+        "He works for Altamira"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Mr Ruiz say on the phone?",
+      "options": [
+        "A company wants to buy the café, right away",
+        "Rosa's café is closed for good",
+        "Tomás has a new job in Toronto",
+        "The bank wants money"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cómo está Vale al final?",
+      "options": [
+        "Mal",
+        "Bien",
+        "Muy contenta"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Vale heard every word. Next time she has a question for Tomás, and then an offer he really doesn't want.",
+  "rereadQuestions": [
+    {
+      "q": "¿Dónde estudia español Tomás?",
+      "options": [
+        "En la computadora",
+        "En la universidad",
+        "Con Simón"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What was Rosa's working day like, according to Hernando?",
+      "options": [
+        "Six to six",
+        "Nine to five",
+        "Seven to seven",
+        "She didn't work"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando suspect about Mr Ruiz?",
+      "options": [
+        "That he's from Altamira",
+        "That he's Tomás's boss",
+        "That he's a doctor",
+        "That he's Vale's friend"
+      ],
+      "answer": 0
+    }
+  ]
+}

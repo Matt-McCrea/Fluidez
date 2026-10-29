@@ -1,0 +1,106 @@
+{
+  "id": "ch005",
+  "unit": "u03",
+  "title": "Treinta días",
+  "text": "6:00. Vale está en el café, pero no hace pan. No hace tinto. Vale está con Tomás. Hernando también.\nVale: Tomás, ¿quién es el señor Ruiz?\nTomás: Un señor de una empresa.\nVale: ¿Cuál empresa? ¿Altamira?\nTomás: No sé, Vale. De verdad.\nVale: ¿Y por qué llamas al señor Ruiz?\nTomás: Porque no tengo trabajo. No hay oficina, no hay jefe. En Toronto no tengo trabajo.\nHernando: ¿Y el café, Tomás? ¿Y Rosa?\nTomás: Me da igual.\nVale: ¿Igual? ¿El café de Rosa, igual?\nTomás: ...\nVale: Bueno. Un pacto.\nTomás: ¿Un pacto?\nVale: Treinta días. ¿El café hace $2.000.000? Tú trabajas aquí trescientos sesenta y cinco días. ¿El café no hace $2.000.000? Llamas al señor Ruiz.\nTomás: ¿Trescientos sesenta y cinco días? ¿Aquí? ¿Con Simón? No me gusta el pacto.\nVale: ¿Te gusta el pan, Tomás?\nTomás: El pan... sí. El pan, sí.\nHernando: ¡Qué chévere! Y yo cocino. Me gusta cocinar.\nTomás: No, no, Hernando. Es que...\nHernando: ¡De una!\nSimón: ¡De una! ¡De una!\nVale: Listo. Treinta días, Tomás.",
+  "gloss": [
+    {
+      "es": "un pacto",
+      "en": "a deal, a pact (here: a bet)"
+    },
+    {
+      "es": "¿El café hace $2.000.000?",
+      "en": "The café takes 2,000,000 pesos? (= if it does…)"
+    },
+    {
+      "es": "trescientos sesenta y cinco días",
+      "en": "365 days (a whole year)"
+    },
+    {
+      "es": "Llamas al señor Ruiz",
+      "en": "You call Mr Ruiz (and sell)"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why did Tomás call Mr Ruiz?",
+      "options": [
+        "He has no job in Toronto",
+        "He wants a job in Bogotá",
+        "Vale asked him to",
+        "Hernando knows him"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What are the terms of Vale's deal?",
+      "options": [
+        "If the café takes 2,000,000 pesos in 30 days, Tomás stays a year; if not, he calls Mr Ruiz",
+        "Tomás pays Vale 2,000,000 pesos",
+        "Tomás works 30 days and then goes home",
+        "Hernando buys the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is the one thing Tomás admits he likes?",
+      "options": [
+        "Vale's bread",
+        "Simón",
+        "Hernando's cooking",
+        "Mr Ruiz"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Quién dice «¡De una!» primero?",
+      "options": [
+        "Hernando",
+        "Tomás",
+        "Vale"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Does Tomás actually agree to the deal?",
+      "options": [
+        "Not really — he's still saying no when Hernando says yes for him",
+        "Yes, immediately",
+        "No, and Vale cancels it",
+        "Yes, but only for thirty days"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomás has thirty days. Vale has a plan, Hernando has a plan, and Simón has his eye on everybody's breakfast.",
+  "rereadQuestions": [
+    {
+      "q": "¿Tomás tiene trabajo en Toronto?",
+      "options": [
+        "No",
+        "Sí"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás say when Hernando asks about Rosa and the café?",
+      "options": [
+        "«Me da igual» — I don't care",
+        "«Me gusta» — I like it",
+        "«No sé» — I don't know",
+        "Nothing at all"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando offer to do?",
+      "options": [
+        "Cook",
+        "Sing",
+        "Pay",
+        "Call Mr Ruiz"
+      ],
+      "answer": 0
+    }
+  ]
+}
