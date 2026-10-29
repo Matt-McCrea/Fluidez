@@ -3,7 +3,7 @@
 // player full-screen.
 import { useEffect, useState } from 'preact/hooks';
 import type { Mode } from '../compiler';
-import { IdbStore, Learner, type LearnerStore } from '../learner';
+import { IdbStore, idbKV, Learner, type LearnerStore } from '../learner';
 import type { KV } from '../learner';
 import { ContentLoader, loadBundle } from './data/loader';
 import { Ctx, type AppCtx } from './context';
@@ -31,9 +31,11 @@ export interface BootOptions {
 }
 
 export async function boot(opts: BootOptions = {}): Promise<Omit<AppCtx, 'refresh' | 'reloadBundle' | 'resetAll'>> {
-  const learnerStore = opts.learnerStore ?? new IdbStore(opts.kv);
+  const kv = opts.kv ?? idbKV();  // one KV for learner and UI, so a session save can be one transaction
+  const learnerStore = opts.learnerStore ?? new IdbStore(kv);
   const now = opts.now ?? Date.now;
-  const [learner, ui] = await Promise.all([Learner.open(learnerStore, { now }), new UiStore(opts.kv).load()]);
+  const [learner, ui] = await Promise.all([Learner.open(learnerStore, { now }), new UiStore(kv).load()]);
+  await ui.reconcile(learner.sessionIndex);
   const loader = opts.loader ?? new ContentLoader();
   const { units } = await loader.core();
   const band = units.slice().sort((a, b) => a.id.localeCompare(b.id))[ui.path.unit]?.band;

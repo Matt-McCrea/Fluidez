@@ -138,6 +138,7 @@ export const SECONDS = {
   selfCheck: 90,
   close: 30,
   recall: 10,
+  recap: 18,            // one re-asked card in "Before you go"
 } as const;
 
 /** Counts per block (standard tier). */
@@ -154,6 +155,8 @@ export const COUNTS = {
   readingCheck: 8,
   extraReading: 10,
   timedRecallSeconds: 120,
+  recapMinCards: 4,         // room reserved for the recap when the learn pool is trimmed to fit
+  recapCards: 8,            // 6 to 10: capacity of the "Before you go" block
   patternsInput: 6,
   patternsOutput: 8,
   introduceInput: 0,        // the script's readAndPick is the structured input

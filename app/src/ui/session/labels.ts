@@ -70,6 +70,7 @@ export function blockHeading(block: Block, b: Bundle): { title: string; lead: st
     case 'writing': return { title: 'Write it', lead: block.purpose === 'checkpoint' ? 'A check-in, not an exam.' : 'A few sentences of your own.' };
     case 'selfCheck': return { title: 'How does it feel?', lead: 'Be honest. It only changes what comes back for practice.' };
     case 'timedRecall': return { title: 'Two-minute sprint', lead: 'As many as you can. Speed over perfection.' };
+    case 'recap': return { title: 'Before you go', lead: 'Once more, from today.' };
     case 'close': return { title: 'Done for today', lead: '' };
   }
 }

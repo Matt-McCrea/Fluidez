@@ -1,7 +1,7 @@
 // One component per block kind. The switch is exhaustive: a new block kind
 // in compiler/types.ts fails the type check here until it has a screen.
 import type { Block } from '../../compiler';
-import { PracticeRun, ReviewRun, TimedRecall } from './practice';
+import { PracticeRun, Recap, ReviewRun, TimedRecall } from './practice';
 import { ReadChapter } from './read';
 import { ScenePlay } from './scene';
 import { Learn, Personal, RuleRecall, Teach } from './teach';
@@ -23,6 +23,7 @@ export function BlockView(p: BlockProps<Exclude<Block, { kind: 'close' }>>) {
     case 'scene': case 'sceneRerun': return <ScenePlay {...p} block={b} />;
     case 'writing': return <Writing {...p} block={b} />;
     case 'selfCheck': return <SelfCheck {...p} block={b} />;
+    case 'recap': return <Recap {...p} block={b} />;
     case 'timedRecall': return <TimedRecall {...p} block={b} />;
     default: {
       const never: never = b;

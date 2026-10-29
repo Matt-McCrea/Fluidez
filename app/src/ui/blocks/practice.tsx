@@ -2,12 +2,13 @@
 // pick, your turn, cued production, talk about you, remix, reading check,
 // extra reading) and the timed recall sprint.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
-import type { LeechBlock, PracticeBlock, TimedRecallBlock, WarmupBlock } from '../../compiler';
+import type { LeechBlock, PracticeBlock, RecapBlock, TimedRecallBlock, WarmupBlock } from '../../compiler';
 import { CardRun, CardView, Continue } from '../components/card';
 import { Heading } from '../components/text';
 import { practiceCard, recallCard, reviewCard, type Card } from '../session/cards';
 import { breakRuns, formatOf, interleave } from '../session/order';
 import { blockHeading } from '../session/labels';
+import { recapCard } from '../session/recap';
 import type { BlockProps } from './types';
 
 /** Cards in an order where no format runs on too long; `items[order[k]]` is the k-th card's item. */
@@ -54,6 +55,22 @@ export function PracticeRun({ block, run, onDone }: BlockProps<PracticeBlock>) {
         }}
         onDone={onDone}
       />
+    </>
+  );
+}
+
+/** "Before you go": today's lapses, then today's new items, once more (filled by the runner when reached). */
+export function Recap({ block, run, onDone }: BlockProps<RecapBlock>) {
+  const { cards, order } = useMemo(() => {
+    const all = block.items.map((it) => recapCard(it, run.bundle));
+    const order = interleave(all, formatOf);
+    return { cards: order.map((k) => all[k]), order };
+  }, [block, block.items]);
+  const h = blockHeading(block, run.bundle);
+  return (
+    <>
+      <Heading {...h} />
+      <CardRun cards={cards} onAnswer={(k, o) => run.scoreRecap(block.items[order[k]], o)} onDone={onDone} />
     </>
   );
 }

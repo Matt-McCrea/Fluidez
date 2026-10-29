@@ -125,7 +125,7 @@ export interface CompileInput {
  * shift the week by one day; they never advance or reorder anything).
  */
 export interface PathState {
-  version: 1;
+  version: 2;
   /** index into course.units; === units.length when the course is finished */
   unit: number;
   /** index into units[unit].days */
@@ -348,6 +348,31 @@ export interface WritingBlock extends BlockBase { kind: 'writing'; task: string;
 
 export interface SelfCheckBlock extends BlockBase { kind: 'selfCheck'; unit: string; canDo: string }
 
+/**
+ * "Before you go": a placeholder at compile time (the last core block of every
+ * non-minimum plan). Its contents depend on the session: the runner fills
+ * `items` when it is reached with this session's lapsed reviews first, then
+ * the new items presented, up to `capacity`. Soft (the time cap may skip it);
+ * an empty recap is skipped silently. Deliberate: it re-shows content.
+ */
+export interface RecapItem {
+  id: string;
+  /** lapsed: a card missed in this session (graded for real, op 'recap'); new: a node introduced today (exposure only) */
+  kind: 'lapsed' | 'new';
+  node: NodeId;
+  direction: Direction;
+  /** lapsed: bank sentence for the re-ask (a different one when available); undefined = bare card */
+  sentence?: string;
+  /** the same sentence as earlier in the session is shown again */
+  reused?: boolean;
+  /** new: the learn retrieval round to mimic (2 = type it) */
+  round?: number;
+  /** new: the learn item, for the card builder */
+  learn?: LearnItem;
+  credit: NodeId[];
+}
+export interface RecapBlock extends BlockBase { kind: 'recap'; capacity: number; items: RecapItem[] }
+
 /** Minimum session: 2-minute timed typed recall of known items. Deliberate. */
 export interface TimedRecallBlock extends BlockBase { kind: 'timedRecall'; items: RecallItem[]; seconds: number }
 
@@ -368,7 +393,7 @@ export interface CloseBlock extends BlockBase {
 export type Block =
   | WarmupBlock | LearnBlock | TeachBlock | RuleRecallBlock | PracticeBlock | LeechBlock
   | ReadBlock | RereadBlock | PersonalBlock | SceneBlock | SceneRerunBlock | WritingBlock
-  | SelfCheckBlock | TimedRecallBlock | CloseBlock;
+  | SelfCheckBlock | TimedRecallBlock | RecapBlock | CloseBlock;
 
 export type BlockKind = Block['kind'];
 

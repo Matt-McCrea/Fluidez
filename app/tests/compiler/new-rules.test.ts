@@ -260,3 +260,20 @@ describe('production-card policy on new nodes', () => {
     expect(a1.receptiveOnly).toEqual([]);
   });
 });
+
+describe('Before you go (recap block)', () => {
+  test('every non-minimum plan ends its core with a recap placeholder before close; minimum has none', () => {
+    const { L, input } = tiny([]);
+    for (const tier of ['standard', 'extended', 'minimum'] as const) {
+      const plan = compileSession(input({ tier }));
+      const kinds = plan.blocks.map((b) => b.kind);
+      expect(kinds[kinds.length - 1]).toBe('close');
+      if (tier === 'minimum') { expect(kinds).not.toContain('recap'); continue; }
+      const recap = plan.blocks[plan.blocks.length - 2];
+      expect(recap).toMatchObject({ kind: 'recap', part: 'core', deliberate: true, items: [] });
+      expect((recap as { capacity: number }).capacity).toBeLessThanOrEqual(budget.COUNTS.recapCards);
+      expect(plan.estimatedMinutes).toBeLessThanOrEqual(plan.budget.minutes + 1e-9);
+    }
+    void L;
+  });
+});

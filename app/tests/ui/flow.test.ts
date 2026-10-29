@@ -1,11 +1,12 @@
 // The session's ways out and its clock: "I need to stop", the time cap, the
 // occasional "keep going", and the card order (spaced rounds, varied formats).
 import { describe, expect, it } from 'vitest';
-import type { LearnBlock } from '../../src/compiler';
+import type { LearnBlock, RecapBlock, WarmupBlock } from '../../src/compiler';
 import { SessionRunner, compilePlan } from '../../src/ui/session/runner';
 import { LearnQueue, RETRY_GAP, interleave } from '../../src/ui/session/order';
 import { offerMore } from '../../src/ui/session/more';
-import { session, world } from './driver';
+import { answer, runBlock, session, world, type Walk } from './driver';
+import { reviewCard } from '../../src/ui/session/cards';
 
 const DAY = 86_400_000;
 const MIN = 60_000;
@@ -119,5 +120,77 @@ describe('card order', () => {
     order.forEach((i, k) => { run = k && xs[order[k - 1]] === xs[i] ? run + 1 : 1; if (xs.slice(0).some((x) => x !== xs[i])) expect(run).toBeLessThanOrEqual(5); });
     expect([...order].sort((a, b) => a - b)).toEqual(xs.map((_, i) => i));
     expect(order.slice(0, 4).map((i) => xs[i])).toEqual(['a', 'a', 'a', 'b']);
+  });
+});
+
+describe('Before you go (the recap block)', () => {
+  /** session 1 (new items), three days on, then session 2 with the first warm-up card missed */
+  async function missOneThenRecap() {
+    const w = await world();
+    await session(w, 'right');
+    w.clock.t += 3 * DAY;
+    const plan = compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
+    const run = new SessionRunner(w.learner, w.bundle, w.ui, plan, w.now);
+    run.start();
+    const walk: Walk = { cards: [], failures: [], screens: [], advance: (ms) => { w.clock.t += ms; } };
+    const warm = plan.blocks[0] as WarmupBlock;
+    const missed = warm.items[0];
+    let recap: RecapBlock | undefined;
+    for (const b of plan.blocks) {
+      if (b.kind === 'close') break;
+      if (b.kind === 'recap') {
+        expect(run.openRecap(b)).toBe(true);
+        recap = b;
+        run.blockShown(b);
+        // the missed node is relearned: its card is in a (re)learning state until this re-ask
+        runBlock(b, run, 'right', walk);
+        continue;
+      }
+      if (b.kind === 'warmup') {
+        run.blockShown(b);
+        b.items.forEach((it, i) => run.score(it, answer(reviewCard(it, w.bundle), i === 0 ? 'wrong' : 'right')));
+        continue;
+      }
+      if (b.kind === 'learn') run.blockShown(b); else if (b.kind === 'structuredInput' || b.kind === 'controlledOutput' || b.kind === 'communicative' || b.kind === 'cuedProduction') run.enter(b); else run.blockShown(b);
+      runBlock(b, run, 'right', walk);
+    }
+    return { w, plan, run, recap: recap!, missed };
+  }
+
+  it('re-asks the missed card first, then the new items, and only the missed one is graded', async () => {
+    const { w, plan, recap, missed } = await missOneThenRecap();
+    const learn = plan.blocks.find((b): b is LearnBlock => b.kind === 'learn')!;
+    expect(learn.items.length).toBeGreaterThanOrEqual(2);
+    expect(recap.items[0]).toMatchObject({ kind: 'lapsed', node: missed.node });
+    const news = recap.items.filter((i) => i.kind === 'new').map((i) => i.node);
+    expect(news).toEqual(learn.items.map((i) => i.node).slice(0, news.length));
+    expect(news.length).toBeGreaterThanOrEqual(2);
+    expect(recap.items.length).toBeLessThanOrEqual(recap.capacity);
+    expect(new Set(recap.items.map((i) => i.node)).size).toBe(recap.items.length);
+    // the missed card was reviewed for real, with op 'recap'; the new items only have exposure events
+    const log = w.learner.events().filter((e) => e.op === 'recap');
+    expect(log.some((e) => e.node === missed.node && e.scored === 'review')).toBe(true);
+    for (const n of news) {
+      const ev = log.filter((e) => e.node === n);
+      expect(ev.length).toBeGreaterThan(0);
+      expect(ev.every((e) => e.scored === 'exposure')).toBe(true);
+    }
+    expect(w.learner.isLearning(news[0])).toBe(false);
+  });
+});
+
+describe('Before you go, with nothing to ask', () => {
+  it('an all-correct session with nothing new skips the recap silently', async () => {
+    const w = await world();
+    await session(w, 'right');
+    w.clock.t += 3 * DAY;
+    // session 2 (drill) is all correct; strip its new items so only correct reviews remain
+    const plan = compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
+    const run = new SessionRunner(w.learner, w.bundle, w.ui, plan, w.now);
+    run.start();
+    const recap = plan.blocks.find((b): b is RecapBlock => b.kind === 'recap')!;
+    expect(recap.items).toEqual([]);
+    expect(run.openRecap(recap)).toBe(false);
+    expect(recap.items).toEqual([]);
   });
 });

@@ -162,3 +162,56 @@ describe('serialisation', () => {
     expect(() => M.setSettings({ retention: 1.5 })).toThrow();
   });
 });
+
+describe('saveAll is one transaction', () => {
+  /** A KV whose setMany is atomic (stages, then commits) and can be told to fail on a key. */
+  function txKV(failKey?: string) {
+    const kv = mapKV();
+    return Object.assign(kv, {
+      async setMany(entries: [string, unknown][]) {
+        const staged = new Map(kv.map);
+        for (const [k, v] of entries) {
+          if (k === failKey) throw new Error('write failed');
+          staged.set(k, structuredClone(v));
+        }
+        kv.map.clear();
+        for (const [k, v] of staged) kv.map.set(k, v);
+      },
+    });
+  }
+  const state = (n: number) => { const s = Learner.fresh().toJSON(); s.session.index = n; return s; };
+
+  test('writes every provided document', async () => {
+    const kv = txKV();
+    await new IdbStore(kv).saveAll({ state: state(4), events: { events: [], summary: { upTo: 0, counts: {} } }, path: { p: 1 }, ui: { u: 1 } });
+    expect([...kv.map.keys()].sort()).toEqual(['events', 'path', 'state', 'ui']);
+  });
+
+  test('a failing later write leaves the earlier keys untouched', async () => {
+    const kv = txKV('ui');
+    const store = new IdbStore(kv);
+    await store.saveAll({ state: state(1), path: { p: 'old' } });
+    await expect(store.saveAll({ state: state(2), path: { p: 'new' }, ui: { u: 1 } })).rejects.toThrow();
+    expect((kv.map.get('state') as any).session.index).toBe(1);
+    expect(kv.map.get('path')).toEqual({ p: 'old' });
+    expect(kv.map.has('ui')).toBe(false);
+  });
+
+  test('Learner.commit failure keeps the learner dirty so a later flush retries', async () => {
+    const kv = txKV('ui');
+    const store = new IdbStore(kv);
+    const L = await Learner.open(store);
+    L.startSession();
+    await expect(L.commit({ path: { p: 1 }, ui: { u: 1 } })).rejects.toThrow();
+    expect(kv.map.has('path')).toBe(false);
+    await L.flush();
+    expect((kv.map.get('state') as any).session.index).toBe(1);
+  });
+
+  test('MemoryStore implements saveAll', async () => {
+    const m = new MemoryStore();
+    await m.saveAll({ state: state(3), path: { p: 1 } });
+    expect((m.snapshot() as any).session.index).toBe(3);
+    expect(m.extras.get('path')).toEqual({ p: 1 });
+  });
+});

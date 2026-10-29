@@ -224,7 +224,7 @@ describe('I don\'t know on multiple choice', () => {
   it('reports a miss with one try and gently names the answer', async () => {
     const { mcqResult } = await import('../../src/ui/components/card');
     const r = mcqResult(card, 'unsure', 1234);
-    expect(r.outcome).toEqual({ correct: false, tries: 1, ms: 1234 });
+    expect(r.outcome).toMatchObject({ correct: false, tries: 1, ms: 1234, evidence: { picked: 'unsure' } });
     expect(r.right).toBe(false);
     expect(r.lead).toBe('No problem.');
     expect(mcqResult(card, 0, 5).lead).toBe('Not quite.');

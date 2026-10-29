@@ -43,7 +43,7 @@ const DAY_MS = 86_400_000;
 const LOG_MAX = 60;
 
 export function initialPath(): PathState {
-  return { version: 1, unit: 0, day: 0, coreSessions: 0, owedNew: [], owedGrammar: [], pendingDrills: [], recentGrammar: [], log: [] };
+  return { version: 2, unit: 0, day: 0, coreSessions: 0, owedNew: [], owedGrammar: [], pendingDrills: [], recentGrammar: [], log: [] };
 }
 
 export function compileSession(input: CompileInput): SessionPlan {
@@ -153,6 +153,7 @@ export function servedRefs(plan: SessionPlan): ServedRef[] {
       case 'sceneRerun': add('scene', b.scene, true); break;
       case 'writing': add('item', `wt:${b.task}`, false); break;
       case 'timedRecall': for (const it of b.items) add('item', it.id, true); break;
+      case 'recap': for (const it of b.items) { add('item', it.id, true); add('sentence', it.sentence, !!it.reused); } break;
       default: break; // ruleRecall, personal, selfCheck, close: nothing new shown
     }
   }
@@ -279,6 +280,11 @@ class Compiler {
     }
     this.fitToBudget();
     if (this.tier === 'extended' && !this.throttled && d.type !== 'review') this.extraReading();
+    // placeholder: the runner fills it from the session's lapses and new items
+    // its capacity is what the plan has room for (up to 8 cards; fewer or none when the plan is already near its minutes)
+    const slack = this.minutes - this.blocks.reduce((a, b) => a + b.minutes, 0) - SECONDS.close / 60;
+    const capacity = Math.max(0, Math.min(COUNTS.recapCards, Math.floor((slack + 1e-9) * 60 / SECONDS.recap)));
+    this.blocks.push({ kind: 'recap', part: 'core', deliberate: true, capacity, items: [], minutes: recapMinutes(capacity) });
     this.blocks.push(this.close(d, day));
 
     // Session-level conversion recorded on the block level (input chapter shortage)
@@ -718,7 +724,8 @@ class Compiler {
   private fitToBudget() {
     const learn = this.blocks.find((b): b is LearnBlock => b.kind === 'learn');
     if (!learn) return;
-    const total = () => this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60;
+    // the "Before you go" block is appended after this and counts toward the session's minutes (at least RECAP_MIN_CARDS of it)
+    const total = () => this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60 + recapMinutes(COUNTS.recapMinCards);
     const removed: NodeId[] = [];
     for (let i = learn.items.length - 1; i >= 0 && total() > this.minutes + 1e-9; i--) {
       const it = learn.items[i];
@@ -1215,3 +1222,5 @@ function creditOf(node: NodeId, s: SentenceRef): NodeId[] {
 }
 
 function round1(x: number): number { return Math.round(x * 10) / 10; }
+/** Planned minutes of the "Before you go" block. */
+function recapMinutes(cards: number): number { return round1(cards * SECONDS.recap / 60); }

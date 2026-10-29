@@ -68,8 +68,11 @@ export function Session({ mode, onExit, onAnother, capMinutes }: { mode: Mode; o
     // the blocks still to come; once over time, the optional ones go
     let n = from + 1;
     const rest = (k: number) => plan.blocks.slice(k).filter((b) => b.kind !== 'close');
-    while (n < plan.blocks.length && plan.blocks[n].kind !== 'close' && softBlock(plan.blocks[n]) && runner.overBudget()) {
-      runner.skip(plan.blocks[n]);
+    while (n < plan.blocks.length && plan.blocks[n].kind !== 'close') {
+      const b = plan.blocks[n];
+      if (softBlock(b) && runner.overBudget()) runner.skip(b);
+      else if (b.kind === 'recap' && !stopAsked && !runner.openRecap(b)) { /* nothing to ask: skipped silently */ }
+      else break;
       n++;
     }
     if (stopAsked) {

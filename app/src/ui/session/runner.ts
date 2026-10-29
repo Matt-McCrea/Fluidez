@@ -6,12 +6,14 @@
 // An abandoned session leaves the path where it was.
 import {
   advancePath, canDoAnother, carryOwed, compileSession, reviewTargets, servedRefs, stoppedPath,
-  type Block, type Item, type Mode, type PathState, type ServedRef, type SessionPlan,
+  type Block, type Item, type LearnItem, type Mode, type PathState, type RecapBlock, type RecapItem, type ServedRef, type SessionPlan,
 } from '../../compiler';
 import type { NodeId } from '../../content/schema';
 import { Rating, type Direction, type Grade, type Learner, type Tier } from '../../learner';
 import type { Bundle } from '../data/bundle';
 import type { UiStore } from '../store/ui';
+import { planRecap, type Lapse } from './recap';
+import { attributeGrades, type Evidence } from './attribute';
 
 export interface Outcome {
   correct: boolean;
@@ -19,6 +21,8 @@ export interface Outcome {
   tries: number;
   /** measured time to answer, ms */
   ms: number;
+  /** what the card saw, for splitting a miss across a multi-target item (see attribute.ts) */
+  evidence?: Evidence;
 }
 
 /** First-try pass → Good; pass on the retry → Hard; shown the answer → Again. */
@@ -47,7 +51,7 @@ export function compilePlan(learner: Learner, bundle: Bundle, ui: UiStore, opts:
 /** Blocks that can go when time is up: nothing here moves the course on. */
 export function softBlock(b: Block): boolean {
   return b.kind === 'personal' || b.kind === 'extraReading' || b.kind === 'leech' || b.kind === 'sceneRerun'
-    || (b.kind === 'reread' && b.purpose === 'fluency');
+    || b.kind === 'recap' || (b.kind === 'reread' && b.purpose === 'fluency');
 }
 
 /** Blocks whose cards may be cut short when time is up (each card's content is ledgered as it is shown). */
@@ -81,6 +85,10 @@ export class SessionRunner {
   private readonly presented = new Set<NodeId>();
   /** learn items never presented (time ran out): owed to the next session */
   private readonly notPresented = new Set<NodeId>();
+  /** reviews missed this session, in order (the "Before you go" block re-asks them) */
+  private readonly lapses: Lapse[] = [];
+  /** in-lesson retrievals each new node has had */
+  private readonly learnSteps = new Map<NodeId, number>();
   finished = false;
   /** the learner stopped early: logged as a minimum session, the path did not move */
   stopped = false;
@@ -197,6 +205,7 @@ export class SessionRunner {
   /** One in-lesson retrieval. Returns true when the learner model says to stop asking. */
   learningStep(node: NodeId, o: Outcome, credit: NodeId[] = [node], productive?: boolean, op = 'learn'): boolean {
     this.present(node, productive);
+    this.learnSteps.set(node, (this.learnSteps.get(node) ?? 0) + 1);
     if (!this.learner.isLearning(node)) {
       this.learner.expose(credit, { at: this.now(), event: { op, grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms } });
       return true;
@@ -208,6 +217,7 @@ export class SessionRunner {
 
   /** Credit one item exactly per its `scoring`. */
   score(item: Item, o: Outcome): void {
+    this.noteLapse(item, o);
     this.tally.scored++;
     if (o.correct) this.tally.correct++;
     if (o.correct && o.tries <= 1) this.tally.firstTry++;
@@ -227,10 +237,13 @@ export class SessionRunner {
         }
         if (sentence) {
           const novel = item.op === 'review' ? item.novel : true;
-          const grades = Object.fromEntries(targets.map((t) => [t, grade]));
-          this.learner.creditSentence(item.credit, dir, grade, { targets, grades, novel, at, ms: o.ms, op, tries, sentence });
+          const { grades, expose } = attributeGrades(targets, o.correct, grade, o.evidence, (id) => this.bundle.node(id));
+          this.learner.creditSentence(item.credit, dir, grade, { targets: Object.keys(grades), grades, novel, at, ms: o.ms, op, tries, sentence });
+          if (expose.length) this.learner.expose(expose, { at });
         } else {
-          targets.forEach((t, i) => this.learner.review(t, dir, grade, { at, ms: i === 0 ? o.ms : undefined, op, tries }));
+          const { grades, expose } = attributeGrades(targets, o.correct, grade, o.evidence, (id) => this.bundle.node(id));
+          Object.keys(grades).forEach((t, i) => this.learner.review(t, dir, grades[t], { at, ms: i === 0 ? o.ms : undefined, op, tries }));
+          if (expose.length) this.learner.expose(expose, { at });
         }
         return;
       }
@@ -247,6 +260,56 @@ export class SessionRunner {
         return;
       case 'none':
         return;
+    }
+  }
+
+  /** Remember a scored review that was missed: it comes back in "Before you go". */
+  private noteLapse(item: Item, o: Outcome): void {
+    if (o.correct || item.scoring !== 'review' || item.op !== 'review') return;
+    const direction = item.direction;
+    for (const node of reviewTargets(item)) this.lapses.push({ node, direction, sentence: item.sentence });
+  }
+
+  // ---------------------------------------------------------------- "Before you go"
+
+  /**
+   * Fill the recap from this session's outcomes: lapses first, then the new
+   * items presented. Returns false (and skips the block) when there is nothing
+   * to ask. Call when the block is reached, before it is shown.
+   */
+  openRecap(block: RecapBlock): boolean {
+    const newItems = this.plan.blocks.flatMap((b) => (b.kind === 'learn' ? b.items : []))
+      .filter((it: LearnItem) => this.presented.has(it.node));
+    block.items = planRecap({
+      learner: this.learner, bundle: this.bundle, capacity: block.capacity, lapses: this.lapses, newItems, steps: this.learnSteps,
+    });
+    if (!block.items.length) { this.skip(block); return false; }
+    return true;
+  }
+
+  /**
+   * One recap answer. A lapsed card is graded for real (its in-session
+   * relearning step, op 'recap'); a new item was already rated at the end of
+   * its introduction, so it is exposure with an event, never a second review.
+   */
+  scoreRecap(item: RecapItem, o: Outcome): void {
+    this.tally.scored++;
+    if (o.correct) this.tally.correct++;
+    if (o.correct && o.tries <= 1) this.tally.firstTry++;
+    const at = this.now();
+    const grade = gradeOf(o);
+    const tries = tries12(o.tries);
+    if (item.kind === 'new') {
+      this.learner.expose(item.credit, { at, event: { op: 'recap', direction: item.direction, grade, tries, ms: o.ms } });
+      return;
+    }
+    if (!this.learner.hasCard(item.node, item.direction)) return;
+    if (item.sentence) {
+      this.learner.creditSentence(item.credit, item.direction, grade, {
+        targets: [item.node], grades: { [item.node]: grade }, novel: !item.reused, at, ms: o.ms, op: 'recap', tries, sentence: item.sentence,
+      });
+    } else {
+      this.learner.review(item.node, item.direction, grade, { at, ms: o.ms, op: 'recap', tries });
     }
   }
 
@@ -276,9 +339,7 @@ export class SessionRunner {
     }
     const path = carryOwed(advancePath(this.ui.path, this.plan, true), [...this.notPresented]);
     this.finished = true;
-    await this.ui.setPath(path);
-    await this.ui.sessionFinished(this.learner.day(this.now()));
-    await this.learner.flush();
+    await this.ui.commitSession(this.learner, path, this.learner.day(this.now()));
     return path;
   }
 
@@ -297,9 +358,7 @@ export class SessionRunner {
     const path = stoppedPath(this.ui.path, this.plan, g);
     this.finished = true;
     this.stopped = true;
-    await this.ui.setPath(path);
-    await this.ui.sessionFinished(this.learner.day(this.now()));
-    await this.learner.flush();
+    await this.ui.commitSession(this.learner, path, this.learner.day(this.now()));
     return path;
   }
 

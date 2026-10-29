@@ -194,6 +194,26 @@ export class Learner {
     });
   }
 
+  /**
+   * Flush, then write the learner state, the event log and `extra` (the path
+   * and ui documents) in one store transaction when the store supports it
+   * (otherwise state first, then the extras through `fallback`).
+   */
+  async commit(extra: { path?: unknown; ui?: unknown }, fallback?: () => Promise<void>): Promise<void> {
+    if (!this.store) { await fallback?.(); return; }
+    await this.saving;
+    if (!this.store.saveAll) { await this.flush(); await fallback?.(); return; }
+    this.dirty = false;
+    const events = this.eventsDirty ? structuredClone(this.log) : undefined;
+    this.eventsDirty = false;
+    const write = this.saving.then(() => this.store!.saveAll!({ state: structuredClone(this.state), events, ...extra }));
+    this.saving = write.catch(() => {});
+    try { await write; } catch (e) { this.dirty = true; if (events) this.eventsDirty = true; throw e; }
+  }
+
+  /** The backing store, if any (the UI store checks whether it shares its key-value store). */
+  get backing(): LearnerStore | null { return this.store; }
+
   /** The review event log, oldest first (a copy). */
   events(): ReviewEvent[] { return structuredClone(this.log.events); }
   /** The counts of events compacted away. */

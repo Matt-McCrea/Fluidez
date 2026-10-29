@@ -40,7 +40,7 @@ function Continue({ onClick, label, focus = true }: { onClick: () => void; label
 /** What an MCQ reports and says once answered; `picked` is an option index, or 'unsure' for "I don't know". */
 export function mcqResult(card: Extract<Card, { type: 'mcq' }>, picked: number | 'unsure', ms: number): { outcome: Outcome; right: boolean; lead: string } {
   const right = picked === card.answer;
-  return { outcome: { correct: right, tries: 1, ms }, right, lead: picked === 'unsure' ? 'No problem.' : 'Not quite.' };
+  return { outcome: { correct: right, tries: 1, ms, evidence: { picked, feature: card.feature } }, right, lead: picked === 'unsure' ? 'No problem.' : 'Not quite.' };
 }
 
 function McqView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extract<Card, { type: 'mcq' }>; ms: () => number }) {
@@ -138,7 +138,7 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
       </div>
       <div class="actions">
         {finished
-          ? <Continue label={next} onClick={() => onDone({ correct: passed, tries: Math.max(1, tries), ms: took }, value)} />
+          ? <Continue label={next} onClick={() => onDone({ correct: passed, tries: Math.max(1, tries), ms: took, evidence: { input: value, answer: result?.answer } }, value)} />
           : (
             <>
               <button class="btn primary" data-primary disabled={!value.trim()} onClick={submit}>{retrying ? 'Try again' : 'Check'}</button>

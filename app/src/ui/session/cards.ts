@@ -12,6 +12,7 @@ import {
   transformItems, translationItems, typeFormItem, type Item as ExItem,
 } from '../../exercises';
 import { fixBreaks, isMultiTurn, productionView, turnView, type TurnView } from '../../exercises/dialogue';
+import type { Feature } from '../../exercises/types';
 import { looksSpanish, type Bundle } from '../data/bundle';
 
 export type Lang = 'es' | 'en';
@@ -39,7 +40,7 @@ interface CardBase {
   /** the reason shown with the right version when the learner misses */
   why: string;
 }
-export interface McqCard extends CardBase { type: 'mcq'; options: Txt[]; answer: number; /** shown after answering */ after?: Txt }
+export interface McqCard extends CardBase { type: 'mcq'; options: Txt[]; answer: number; /** shown after answering */ after?: Txt; /** the one feature the options differ in (minimal pairs) */ feature?: Feature }
 export interface TypeCard extends CardBase {
   type: 'type';
   answerLang: Lang;
@@ -370,7 +371,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number): Card 
         if (it) {
           return {
             type: 'mcq', key: item.id, ask: 'Read and pick', prompt: en(it.question), options: it.options.map(es), answer: it.answer, why: it.why,
-            ...(it.en ? { after: en(it.en) } : {}),
+            ...(it.en ? { after: en(it.en) } : {}), feature: it.feature,
           };
         }
       }

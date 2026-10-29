@@ -11,6 +11,7 @@ import {
 } from '../../src/ui/session/cards';
 import { SessionRunner, compilePlan, softBlock, truncatable } from '../../src/ui/session/runner';
 import { LearnQueue, breakRuns, formatOf, interleave, teachOrder } from '../../src/ui/session/order';
+import { recapCard } from '../../src/ui/session/recap';
 import { checkTurn, turnOrder } from '../../src/ui/session/scene';
 import { MemoryKV, UiStore } from '../../src/ui/store/ui';
 
@@ -62,7 +63,7 @@ export interface Walk { cards: Card[]; failures: string[]; screens: string[]; /*
 /** Seconds a screen takes, roughly, as a learner on a phone does it. */
 export const SCREEN_SECONDS = { mcq: 9, type: 20, typeRetry: 32, read: 8, present: 10 } as const;
 /** Block kinds whose time the walk counts card by card. */
-const CARD_TIMED = new Set(['warmup', 'leech', 'learn', 'teach', 'structuredInput', 'controlledOutput', 'cuedProduction', 'communicative', 'remix', 'readingCheck', 'extraReading', 'timedRecall']);
+const CARD_TIMED = new Set(['warmup', 'leech', 'learn', 'teach', 'structuredInput', 'controlledOutput', 'cuedProduction', 'communicative', 'remix', 'readingCheck', 'extraReading', 'timedRecall', 'recap']);
 
 /** Run one block the way its component does. */
 export function runBlock(b: Block, run: SessionRunner, mood: Mood, walk: Walk) {
@@ -140,6 +141,18 @@ export function runBlock(b: Block, run: SessionRunner, mood: Mood, walk: Walk) {
     case 'remix': case 'readingCheck': case 'extraReading':
       runCards(b.items, (it) => practiceCard(it as never, bundle, run.plan.seed), true);
       break;
+    case 'recap':
+      const rc = b.items.map((it) => recapCard(it, bundle));
+      interleave(rc, formatOf).forEach((k) => {
+        const it = b.items[k];
+        const card = rc[k];
+        walk.cards.push(card);
+        walk.screens.push(formatOf(card));
+        const o = answer(card, mood);
+        tick(card, o.tries);
+        run.scoreRecap(it, o);
+      });
+      break;
     case 'timedRecall':
       b.items.forEach((it) => play(recallCard(it, bundle), it));
       break;
@@ -183,6 +196,7 @@ export async function session(w: Awaited<ReturnType<typeof world>>, mood: Mood =
   for (const b of plan.blocks) {
     if (b.kind === 'close') break;
     if (softBlock(b) && run.overBudget()) { run.skip(b); continue; }
+    if (b.kind === 'recap' && !run.openRecap(b)) continue;
     if (truncatable(b)) run.enter(b); else run.blockShown(b);
     runBlock(b, run, mood, walk);
     if (!CARD_TIMED.has(b.kind)) { w.clock.t += b.minutes * 60_000; walk.screens.push(b.kind); }

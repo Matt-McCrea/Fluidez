@@ -47,6 +47,8 @@ export function checkFrame({ plan }: Seen) {
   expect(plan.blocks[0].kind).toBe('warmup');
   expect(plan.blocks.filter((b) => b.kind === 'warmup')).toHaveLength(1);
   expect(plan.blocks[plan.blocks.length - 1].kind).toBe('close');
+  // "Before you go": the last core block of every non-minimum plan
+  if (plan.tier !== 'minimum') expect(plan.blocks[plan.blocks.length - 2].kind).toBe('recap');
 }
 
 export function checkMinimum({ plan, input }: Seen) {
