@@ -3,7 +3,10 @@
 // first reads, labelled re-reads, and from the Story screen.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { ReadBlock, RereadBlock } from '../../compiler';
-import type { StoryChapter } from '../../content/schema';
+import type { NodeId, StoryChapter } from '../../content/schema';
+import { lexIndex } from '../../check/lexmatch';
+import { Rating } from '../../learner';
+import type { Outcome, SessionRunner } from '../session/runner';
 import { CardRun, Continue } from '../components/card';
 import { Es, Heading, fmtSeconds, lines, undash } from '../components/text';
 import type { Bundle } from '../data/bundle';
@@ -14,6 +17,21 @@ import type { BlockProps } from './types';
 
 export function wordCount(text: string): number {
   return (text.match(/\p{L}+/gu) ?? []).length;
+}
+
+type Question = StoryChapter['questions'][number];
+
+/** The chapter's lexeme nodes that appear in a question's text (the question and its options). */
+export function questionNodes(chapter: StoryChapter, q: Question, bundle: Bundle): NodeId[] {
+  const ix = lexIndex([q.q, ...(q.options ?? [])].join(' . '));
+  return chapter.lexemes.filter((id) => (bundle.node(id)?.es ?? '').split(/[/;,]/).some((alt) => ix.has(alt)));
+}
+
+/** One answered comprehension question: an exposure event on the words it used, never a graded review. */
+export function logComprehension(run: SessionRunner, chapter: StoryChapter, q: Question, o: Pick<Outcome, 'correct' | 'tries' | 'ms'>): NodeId[] {
+  const ids = questionNodes(chapter, q, run.bundle);
+  run.learner.expose(ids, { event: { op: 'comprehend', grade: o.correct ? Rating.Good : Rating.Again, tries: o.tries, ms: o.ms, novel: false } });
+  return ids;
 }
 
 export function Reader({ chapter, bundle, ui, onFinish, finishLabel = "I've read it", clock }: {
@@ -71,6 +89,7 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
   const chapter = run.bundle.chapters.get(block.chapter);
   const [stage, setStage] = useState<'read' | 'questions' | 'after'>('read');
   const [took, setTook] = useState(0);
+  const [right, setRight] = useState(0);
   const h = blockHeading(block, run.bundle);
   if (!chapter) return <><Heading {...h} /><div class="actions"><Continue onClick={onDone} /></div></>;
   const reread = block.kind === 'reread';
@@ -104,13 +123,14 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
     return (
       <>
         <Heading title="A few quick questions" lead="About the story you just read." />
-        <CardRun cards={cards} onAnswer={() => { /* comprehension: not a scored review */ }} onDone={() => setStage('after')} />
+        <CardRun cards={cards} onAnswer={(i, o) => { if (o.correct) setRight((n) => n + 1); logComprehension(run, chapter, questions[i], o); }} onDone={() => setStage('after')} />
       </>
     );
   }
   return (
     <>
       <Heading title={reread ? 'Nice reading' : 'Story so far'} />
+      {questions.length ? <p class="lead">{right} of {questions.length} questions right.</p> : null}
       {reread && firstTime ? (
         <p>First time: {fmtSeconds(firstTime)}. This time: {fmtSeconds(took)}.{took < firstTime ? ' Faster, and it should feel easier too.' : ' It should feel easier, even if it took as long.'}</p>
       ) : reread ? <p>Notice how much more of it you understood without stopping.</p> : <p>You just read a whole chapter in Spanish: {wordCount(chapter.text)} words.</p>}

@@ -185,7 +185,7 @@ export function evaluate(c: Constraint, analysis: SentenceAnalysis, rawText: str
         const hit = ok.some((f) => containsPhrase(analysis.tokens, f, (a, b) => a === b));
         const near = containsPhrase(analysis.tokens, want, (a, b) => deacLower(a) === deacLower(b));
         pass = hit;
-        if (!hit && near) detail = 'almost — check the accents on “' + want + '”';
+        if (!hit && near) detail = 'almost, check the accents on “' + want + '”';
       }
       break;
     }

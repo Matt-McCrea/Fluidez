@@ -42,6 +42,9 @@ export interface LearnerView {
   card(id: NodeId, direction: Direction): CardJSON | undefined;
   due(at?: number, direction?: Direction): DueCard[];
   secondsPerReview(direction?: Direction): number;
+  /** Output ladder position (absent in minimal views = 0). */
+  rung?(id: NodeId): 0 | 1 | 2 | 3;
+  rungStreak?(id: NodeId): number;
 }
 
 /** The course: units in order (each owns its days) and the skill graph. Build with `buildCourse`. */

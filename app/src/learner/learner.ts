@@ -282,6 +282,31 @@ export class Learner {
   }
   nodes(): NodeId[] { return Object.keys(this.state.nodes); }
   isIntroduced(id: NodeId): boolean { return id in this.state.nodes; }
+
+  /** Output ladder rung of a node (0 choose, 1 type, 2 transform, 3 recombine). */
+  rung(id: NodeId): 0 | 1 | 2 | 3 { return this.state.nodes[id]?.rung ?? 0; }
+  rungStreak(id: NodeId): number { return this.state.nodes[id]?.rungStreak ?? 0; }
+  /**
+   * In-session ladder step. First-try pass: streak + 1, climb at 2 (streak
+   * resets). Pass on the retry: rung kept, streak reset. Miss: down one rung
+   * (floor 0), streak reset. Lexemes cap at rung 1. Unknown nodes are ignored.
+   */
+  stepRung(id: NodeId, outcome: 'pass' | 'retry' | 'miss'): void {
+    const r = this.state.nodes[id];
+    if (!r) return;
+    const cap = id[0] === 'l' ? 1 : 3;
+    const was: number = r.rung ?? 0, wasStreak = r.rungStreak ?? 0;
+    let rung: number = was, streak = 0;
+    if (outcome === 'pass') {
+      streak = wasStreak + 1;
+      if (streak >= 2) { streak = 0; rung = Math.min(cap, was + 1); }
+    } else if (outcome === 'miss') rung = Math.max(0, was - 1);
+    rung = Math.min(rung, cap);
+    if (rung === was && streak === wasStreak) return;
+    r.rung = rung as 0 | 1 | 2 | 3;
+    r.rungStreak = streak;
+    this.touch();
+  }
   isLearning(id: NodeId): boolean { return !!this.state.nodes[id]?.learning; }
   hasCard(id: NodeId, direction: Direction): boolean { return !!this.state.nodes[id]?.[direction]; }
   isProductiveUnlocked(id: NodeId): boolean { return this.hasCard(id, 'productive'); }

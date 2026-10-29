@@ -16,6 +16,28 @@ export interface CardViewProps {
   pos?: { n: number; of: number };
 }
 
+/** Hint kinds that name one located slip: the learner is close. */
+const LOCATED = new Set(['accents', 'article', 'verb-ending', 'wrong-word', 'agreement', 'pronoun', 'por-para', 'ser-estar', 'spelling', 'person', 'tense']);
+
+/** "Almost." only when it is true: an accent slip, or a hint that names one
+ *  located slip (an article, an ending, one wrong word, a missing small word).
+ *  Everything else is "Not yet." */
+export function retryLead(check: Pick<Check, 'near' | 'hint' | 'hintKind'>): string {
+  if (check.near) return 'Almost.';
+  const k = check.hintKind;
+  if (k && LOCATED.has(k)) return 'Almost.';
+  if (k === 'missing-word' && check.hint === 'A small word is missing.') return 'Almost.';
+  return 'Not yet.';
+}
+
+/** The lines under a revealed answer: the targeted hint first, then the
+ *  card's reason; one line when they say the same thing. */
+export function revealLines(hint: string | undefined, why: string): string[] {
+  const h = (hint ?? '').trim();
+  const w = why.trim();
+  return [h, w].filter((x, i, a) => x && a.indexOf(x) === i);
+}
+
 function Position({ pos }: { pos?: { n: number; of: number } }) {
   return pos ? <p class="pos" aria-live="off">{pos.n} of {pos.of}</p> : <p class="pos" aria-hidden="true">&nbsp;</p>;
 }
@@ -108,7 +130,7 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
     if (!r.pass && (!card.retry || n >= 2)) { setRevealed(true); setTook(ms()); }
     if (r.pass) setTook(ms());
   };
-  const giveUp = () => { setTries(Math.max(1, tries)); setRevealed(true); setTook(ms()); if (!result) setResult(card.check(value || ' ')); };
+  const giveUp = () => { setTries(Math.max(1, tries)); setRevealed(true); setTook(ms()); if (!result) { const r = card.check(value || ' '); setResult(value.trim() ? r : { ...r, hint: undefined }); } };
 
   return (
     <section class="card" aria-labelledby={`q-${card.key}`}>
@@ -129,11 +151,11 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
         ) : revealed ? (
           <>
             <p class="miss">Here's the right version: <Txt t={{ text: result?.answer ?? '', lang: card.answerLang }} /></p>
-            <p class="why"><Rich text={result?.hint && card.why === 'Here is how Spanish says it.' ? result.hint : card.why} /></p>
+            {revealLines(result?.hint, card.why).map((l) => <p class="why" key={l}><Rich text={l} /></p>)}
             {first && first !== value ? <p class="small">You wrote: <span lang={card.answerLang}>{first}</span>, then <span lang={card.answerLang}>{value}</span></p> : null}
           </>
         ) : retrying ? (
-          <p class="hint">Almost. <Rich text={result!.hint ?? 'Have another look and try once more.'} /></p>
+          <p class="hint">{retryLead(result!)} <Rich text={result!.hint ?? 'Have another look and try once more.'} /></p>
         ) : null}
       </div>
       <div class="actions">

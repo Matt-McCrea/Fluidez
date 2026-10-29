@@ -5,6 +5,7 @@
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import type { LearnBlock, PersonalBlock, RuleRecallBlock, TeachBlock } from '../../compiler';
 import type { TeachingScript } from '../../content/schema';
+import { checkPersonal } from '../../check/personal';
 import { LEARNING_STEPS_MAX } from '../../learner';
 import { AnswerField } from '../components/answer';
 import { CardRun, CardView, Continue } from '../components/card';
@@ -12,6 +13,7 @@ import { Es, Heading, Paras, Rich, undash } from '../components/text';
 import { learnRetrieval, SAY, scriptCard, sentenceCheck, type Card } from '../session/cards';
 import { LearnQueue, teachOrder } from '../session/order';
 import { blockHeading } from '../session/labels';
+import { bundleLexicon } from '../session/scene';
 import type { BlockProps } from './types';
 
 // ---------------------------------------------------------------- learn
@@ -205,27 +207,36 @@ export function RuleRecall({ block, run, onDone }: BlockProps<RuleRecallBlock>) 
 export function Personal({ block, run, onDone }: BlockProps<PersonalBlock>) {
   const script = run.bundle.scripts.get(block.node);
   const [value, setValue] = useState('');
-  const [sent, setSent] = useState(false);
+  const [tries, setTries] = useState(0);
+  const [sent, setSent] = useState<null | 'pass' | 'shown'>(null);
+  const [hint, setHint] = useState('');
   const h = blockHeading(block, run.bundle);
   const words = value.trim().split(/\s+/).filter(Boolean).length;
   const submit = () => {
     if (words < 2 || sent) return;
-    setSent(true);
-    void run.addWords(0, words);
+    const r = checkPersonal(value, { node: block.node, script, nodes: run.bundle.course.nodes, lexicon: bundleLexicon(run.bundle) });
+    const done = (how: 'pass' | 'shown') => { setSent(how); void run.addWords(0, words); };
+    if (r.pass) return done('pass');
+    if (tries >= 1) return done('shown');
+    setTries(1);
+    setHint(r.hint ?? '');
   };
   return (
     <>
       <Heading {...h} />
       <section class="card">
         <p class="ask">{script?.personal ?? 'Write one true sentence about you, using what you learned today.'}</p>
-        <AnswerField value={value} onChange={setValue} onSubmit={submit} label="Your sentence" placeholder="Your sentence, in Spanish" lang="es" disabled={sent} autoFocus />
+        <AnswerField value={value} onChange={setValue} onSubmit={submit} label="Your sentence" placeholder="Your sentence, in Spanish" lang="es" disabled={!!sent} autoFocus />
         <div class="feedback" aria-live="polite">
-          {sent
-            ? <><p class="ok">That's real Spanish about you.</p>{script ? <p class="why">For comparison: <Es>{script.hook.es}</Es></p> : null}</>
-            : value && words < 2 ? <p class="hint">A full sentence: two or three words is plenty.</p> : null}
+          {sent === 'pass'
+            ? <><p class="ok">The form is right. I can't judge the meaning, so here's one for comparison:</p>{script ? <p class="why"><Es>{script.hook.es}</Es></p> : null}</>
+            : sent === 'shown'
+              ? <><p class="hint">{hint ? <><Rich text={hint} />{' '}</> : null}Here's one way:</p>{script ? <p class="why"><Es>{script.hook.es}</Es></p> : null}</>
+              : tries ? <p class="hint"><Rich text={hint} /> Change it and try once more.</p>
+                : value && words < 2 ? <p class="hint">A full sentence: two or three words is plenty.</p> : null}
         </div>
         <div class="actions">
-          {sent ? <Continue onClick={onDone} /> : <button class="btn primary" data-primary disabled={words < 2} onClick={submit}>Done</button>}
+          {sent ? <Continue onClick={onDone} /> : <button class="btn primary" data-primary disabled={words < 2} onClick={submit}>{tries ? 'Check again' : 'Done'}</button>}
         </div>
       </section>
     </>

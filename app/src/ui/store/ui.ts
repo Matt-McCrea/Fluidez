@@ -16,6 +16,10 @@ export type Goal = 'travel' | 'work' | 'people' | 'me';
 export interface SavedWord { es: string; en: string; at: number; chapter?: string }
 export interface CanDoMark { unit: string; canDo: string; feel: 'yes' | 'mostly' | 'notyet'; at: number }
 
+export type RubricAnswer = 'yes' | 'mostly' | 'notyet';
+/** The learner's own marks on one finished writing task. */
+export interface WritingMark { at: number; rubric: RubricAnswer[]; words: number; met: number; of: number }
+
 export interface UiState {
   version: 2;
   learnerId: string;
@@ -39,13 +43,15 @@ export interface UiState {
   canDos: CanDoMark[];
   /** first-read seconds per chapter, so a fluency re-read can show "beat your first time" */
   readSeconds: Record<string, number>;
+  /** the last finished attempt per writing task: self-rubric, words, checklist items met */
+  writing: Record<string, WritingMark>;
 }
 
 export function emptyUi(learnerId = newId()): UiState {
   return {
     version: UI_VERSION, learnerId, onboarded: false,
     stats: { sessions: 0, wordsRead: 0, wordsWritten: 0, days: [], today: 0 },
-    saved: [], canDos: [], readSeconds: {},
+    saved: [], canDos: [], readSeconds: {}, writing: {},
   };
 }
 

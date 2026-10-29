@@ -53,6 +53,10 @@ export interface NodeRecord {
   novelPasses: number;        // passed reviews flagged novel (recombination)
   exposures: number;          // reading / context encounters, never scored
   lastExposedAt?: number;
+  /** Output ladder position: 0 choose, 1 type, 2 transform, 3 recombine. Absent = 0. */
+  rung?: 0 | 1 | 2 | 3;
+  /** Consecutive first-try passes at the current rung. */
+  rungStreak?: number;
 }
 
 export type LedgerKind = 'chapter' | 'reading' | 'scene' | 'item' | 'sentence';

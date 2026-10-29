@@ -5,8 +5,12 @@
 import type { PracticeItem, RecallItem, ReviewItem, ScriptItem, LearnItem } from '../../compiler';
 import type { BankSentence, NodeId, TeachingScript } from '../../content/schema';
 import { answerForms, checkExact } from '../../check';
+import { wordHint } from '../../check/wordhint';
 import { matchEnglish, matchTranslation } from '../../check/translate';
-import { deaccent } from '../../engine';
+import { analyzeToken, deaccent } from '../../engine';
+import { addToLexicon, checkPersonal } from '../../check/personal';
+import { bundleLexicon } from './scene';
+import { verbReadings } from '../../exercises/spanish';
 import {
   ALL_FEATURES, checkItem, chooseItem, form, lexGapItem, parseClause, rng, shuffle, structuredInput,
   transformItems, translationItems, typeFormItem, type Item as ExItem,
@@ -24,6 +28,8 @@ export interface Check {
   near?: boolean;
   /** one plain-English hint for the retry */
   hint?: string;
+  /** what kind of mistake the hint names (see retryLead) */
+  hintKind?: string;
   /** the right version to show */
   answer: string;
   /** matched only through a Peninsular form */
@@ -157,7 +163,7 @@ function mcq(key: string, ask: string, prompt: Txt | undefined, right: Txt, wron
 export function sentenceCheck(s: Pick<BankSentence, 'es' | 'en' | 'accept'>) {
   return (input: string): Check => {
     const r = matchTranslation(input, { es: s.es, en: s.en, accept: s.accept });
-    return { pass: r.pass, near: r.near, hint: r.hint, answer: r.pass ? s.es : r.closest, variant: r.variant };
+    return { pass: r.pass, near: r.near, hint: r.hint, hintKind: r.hintKind, answer: r.pass ? s.es : r.closest, variant: r.variant };
   };
 }
 
@@ -166,15 +172,64 @@ export function chunkCheck(answers: string[]) {
   const list = [...new Set(answers.flatMap((a) => answerForms(a)))];
   return (input: string): Check => {
     const r = checkExact(input, list, { accents: 'lenient' });
-    return { pass: r.pass, near: r.near, hint: r.near && !r.pass ? 'Check the accents.' : undefined, answer: answers[0] ?? list[0] ?? '' };
+    const answer = answers[0] ?? list[0] ?? '';
+    if (r.pass) return { pass: true, near: r.near, answer };
+    if (r.near) return { pass: false, near: true, hint: 'Check the accents.', answer };
+    const w = wordHint(input, list);
+    return { pass: false, near: false, hint: w?.hint, hintKind: w?.kind, answer };
   };
 }
 
-function itemCheck(item: ExItem) {
+/** A typed gap (a verb form or a lexeme): the exercise's own check, plus a
+ *  hint about the word itself when the miss is not an accent slip. `want` is
+ *  the English the gap asks for (lexeme gaps only). */
+function itemCheck(item: ExItem, want?: string) {
   return (input: string): Check => {
     const r = checkItem(item, input);
+    if (!r.pass && !r.near && !r.hint && (item.kind === 'typeForm' || item.kind === 'lexGap')) {
+      const w = wordHint(input, [item.answer, ...item.accept], item.kind === 'lexGap' ? want : undefined);
+      if (w) return { pass: false, hint: w.hint, hintKind: w.kind, answer: r.answer };
+    }
     return { pass: r.pass, near: r.near, hint: r.hint, answer: r.answer, variant: r.variant };
   };
+}
+
+// ---------------------------------------------------------------- why the form
+
+const PERSON_PHRASE: Readonly<Record<string, string>> = {
+  yo: 'the yo form', 'tú': 'the tú form', 'él/ella': 'the he or she form', nosotros: 'the we form', ellos: 'the they form',
+};
+const TENSE_PHRASE: Readonly<Record<string, string>> = {
+  presente: 'in the present', preterito: 'in the past', imperfecto: 'for what "used to" happen', futuro: 'in the future', condicional: 'for what "would" happen',
+};
+
+/** "comí is the yo form of comer in the past." from the item's cue and the
+ *  analysis of its answer, or undefined when the item does not carry a verb. */
+export function verbFormWhy(item: { cue: string; answer: string }): string | undefined {
+  const inf = item.cue.match(/^\(\s*([a-zñáéíóú]+(?:se)?)\s*[,)]/i)?.[1]?.toLowerCase();
+  if (!inf) return undefined;
+  const r = verbReadings(item.answer).find((a) => a.inf.replace(/se$/, '') === inf.replace(/se$/, ''));
+  const person = r && PERSON_PHRASE[r.person];
+  const tense = r && TENSE_PHRASE[r.tense];
+  if (!r || !person || !tense) return undefined;
+  return `${item.answer} is ${person} of ${inf} ${tense}.`;
+}
+
+/** The reason for a verb gap, or the English-based line when the item does not say. */
+export function gapWhy(item: { cue: string; answer: string; en: string }, fallback: string): string {
+  return verbFormWhy(item) ?? fallback;
+}
+
+const GENDER_OF: Readonly<Record<string, string>> = { el: 'masculine', los: 'masculine', la: 'feminine', las: 'feminine' };
+
+/** The reason for a new-word gap: the word, and its gender when it has an article. */
+export function lexemeWhy(lex: { es: string; en: string }, item: { cue: string; answer: string; en: string }): string {
+  const verb = verbFormWhy(item);
+  if (verb) return verb;
+  const base = `"${lex.en}" is ${lex.es}.`;
+  const m = lex.es.match(/^(el|la|los|las)\s+(\S+)/i);
+  const gender = m && GENDER_OF[m[1].toLowerCase()];
+  return gender ? `${base} ${m![2][0].toUpperCase()}${m![2].slice(1)} is ${gender}.` : base;
 }
 
 // ---------------------------------------------------------------- dialogue rows
@@ -312,7 +367,7 @@ export function scriptCard(item: ScriptItem, script: TeachingScript): Card | und
       if (exact.pass) return { pass: true, answer: yt.answer };
       const m = matchTranslation(input, { es: yt.answer, en: cue.replace(/^[^:]*:\s*/, ''), accept: yt.accept });
       if (m.pass) return { pass: true, near: m.near, answer: yt.answer, variant: m.variant };
-      return { pass: false, near: exact.near || m.near, hint: exact.near ? 'Check the accents.' : m.hint, answer: yt.answer };
+      return { pass: false, near: exact.near || m.near, hint: exact.near ? 'Check the accents.' : m.hint, hintKind: exact.near ? 'accents' : m.hintKind, answer: yt.answer };
     },
   };
 }
@@ -338,24 +393,37 @@ function typeFormCard(item: PracticeItem, s: BankSentence): TypeCard | undefined
   if (!t) return undefined;
   return {
     type: 'type', key: item.id, ask: 'Fill the gap', prompt: es(t.gapped), sub: en(`${t.en}  ${t.cue}`), answerLang: 'es', placeholder: 'The missing word',
-    check: itemCheck(t), retry: true, why: `The English says "${t.en}", so the gap is ${t.answer}.`,
+    check: itemCheck(t), retry: true, why: gapWhy(t, `The English says "${t.en}", so the gap is ${t.answer}.`),
   };
 }
 
 /** The question asked of you → the yo form that answers it (eres → soy). */
-export function respondCheck(question: BankSentence) {
+export function respondCheck(question: BankSentence, lexicon?: ReadonlySet<string>) {
   const c = parseClause(question.es, question.en);
   const asked = c && (c.choice.person === 'tú' || c.choice.person === 'él/ella') ? c : null;
+  const tu = asked?.choice.person === 'tú';
   const want = asked ? form(asked.choice.inf, asked.choice.tense, 'yo') : null;
   const said = asked ? asked.toks[asked.verb].core : '';
+  const lex = lexicon ?? addToLexicon(new Set<string>(), question.es);
+  const sample = want ? `${want[0].toUpperCase()}${want.slice(1)} …` : 'Mi respuesta es …';
   return (input: string): Check => {
     const words = input.trim().split(/\s+/).filter(Boolean);
-    const model = want ? `${want[0].toUpperCase()}${want.slice(1)} …` : 'A short, true sentence.';
-    if (words.length < 2) return { pass: false, hint: 'Try a full sentence. Two or three words is plenty.', answer: model };
-    if (!want || asked!.choice.person !== 'tú') return { pass: true, answer: input };
-    const hit = words.some((w) => deaccent(w.toLowerCase().replace(/[^\p{L}]/gu, '')) === deaccent(want));
+    if (words.length < 2) return { pass: false, hint: 'Try a full sentence. Two or three words is plenty.', answer: sample };
+    // most of it must be Spanish, whatever the question
+    const share = checkPersonal(input, { lexicon: lex, noForm: true });
+    if (!share.pass) return { pass: false, hint: share.hint, answer: sample };
+    if (!want || !asked) return { pass: true, answer: input };
+    const toks = words.map((w) => deaccent(w.toLowerCase().replace(/[^\p{L}]/gu, '')));
+    if (tu) {
+      return toks.includes(deaccent(want)) ? { pass: true, answer: input } : {
+        pass: false, hint: `They asked with ${said} (you), so answer with ${want} (I).`, answer: sample,
+      };
+    }
+    // a "usted" question: the same verb, in any person
+    const inf = asked.choice.inf.replace(/se$/, '');
+    const hit = toks.some((t) => analyzeToken(t).some((a) => a.inf.replace(/se$/, '') === inf));
     return hit ? { pass: true, answer: input } : {
-      pass: false, hint: `They asked with ${said} (you), so answer with ${want} (I).`, answer: `${want[0].toUpperCase()}${want.slice(1)} …`,
+      pass: false, hint: `They asked with ${said}, so answer with the same verb, like ${want}.`, answer: sample,
     };
   };
 }
@@ -382,7 +450,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number): Card 
       if (it) {
         return {
           type: 'mcq', key: item.id, ask: 'Choose the right form', prompt: es(it.gapped), sub: en(`${it.en}  ${it.cue}`),
-          options: it.options.map(es), answer: it.answer, why: `The English says "${it.en}", so it's ${it.options[it.answer]}.`,
+          options: it.options.map(es), answer: it.answer, why: gapWhy({ cue: it.cue, answer: it.options[it.answer], en: it.en }, `The English says "${it.en}", so it's ${it.options[it.answer]}.`),
         };
       }
       return typeFormCard(item, s) ?? translateCard(item, s, b);
@@ -407,7 +475,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number): Card 
       if (it) {
         return {
           type: 'type', key: item.id, ask: 'Fill the gap with the new word', prompt: es(it.gapped), sub: en(`${it.en}  ${it.cue}`), answerLang: 'es', placeholder: 'The missing word',
-          check: itemCheck(it), retry: true, why: `"${lex!.en}" is ${lex!.es}.`,
+          check: itemCheck(it, lex!.en), retry: true, why: lexemeWhy(lex!, it),
         };
       }
       return typeFormCard(item, s) ?? translateCard(item, s, b);
@@ -418,7 +486,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number): Card 
       if (!q) return meaningCard(item, s, b);
       return {
         type: 'type', key: item.id, ask: 'Answer for yourself', prompt: es(q.es), sub: en(q.en), answerLang: 'es', placeholder: 'Your answer, in Spanish',
-        check: respondCheck(q), retry: true, why: 'Any true answer works. Just answer the way the question asks.',
+        check: respondCheck(q, bundleLexicon(b)), retry: true, why: 'Any true answer works. Just answer the way the question asks.',
       };
     }
     case 'comprehend':

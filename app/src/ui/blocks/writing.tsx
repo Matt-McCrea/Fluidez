@@ -1,7 +1,7 @@
 // Writing: a live checklist from the writing checker as the learner types,
 // a word count, then their text beside a model and a three-question
 // self-rubric. Then the self-check and the close.
-import { useMemo, useState } from 'preact/hooks';
+import { useMemo, useRef, useState } from 'preact/hooks';
 import type { CloseBlock, SelfCheckBlock, WritingBlock } from '../../compiler';
 import { checkWriting, type Constraint } from '../../check';
 import { AnswerField } from '../components/answer';
@@ -9,7 +9,7 @@ import { Continue } from '../components/card';
 import { Bar, Es, Heading, Rich, undash } from '../components/text';
 import { blockHeading, lessonTypeWord } from '../session/labels';
 import { MORE_MIN_STREAK, MORE_MINUTES } from '../session/more';
-import type { CanDoMark } from '../store/ui';
+import type { CanDoMark, RubricAnswer, WritingMark } from '../store/ui';
 import type { BlockProps } from './types';
 
 const RUBRIC = [
@@ -18,11 +18,27 @@ const RUBRIC = [
   'Would a Spanish speaker understand it first time?',
 ] as const;
 
-export function Writing({ block, run, onDone }: BlockProps<WritingBlock>) {
+const ANSWERS: { label: string; v: RubricAnswer }[] = [{ label: 'Yes', v: 'yes' }, { label: 'Mostly', v: 'mostly' }, { label: 'Not yet', v: 'notyet' }];
+
+/** The most recent earlier mark: this task's, else any task's. */
+export function lastWritingMark(writing: Record<string, WritingMark> | undefined, task: string): WritingMark | undefined {
+  const all = writing ?? {};
+  const own = all[task];
+  if (own?.rubric.length) return own;
+  return Object.values(all).filter((m) => m.rubric.length).sort((a, b) => b.at - a.at)[0];
+}
+
+export function lastTimeLine(m: WritingMark | undefined): string {
+  if (!m || !m.rubric.length) return '';
+  return `Last time: ${m.rubric.filter((r) => r === 'yes').length} of ${RUBRIC.length} yes`;
+}
+
+export function Writing({ block, run, ui, onDone }: BlockProps<WritingBlock>) {
   const task = run.bundle.tasks.get(block.task);
   const [text, setText] = useState('');
   const [submitted, setSubmitted] = useState(false);
-  const [rubric, setRubric] = useState<Record<number, string>>({});
+  const [rubric, setRubric] = useState<Record<number, RubricAnswer>>({});
+  const before = useRef(lastWritingMark(ui.state.writing, block.task));
   const h = blockHeading(block, run.bundle);
   const constraints = (task?.constraints ?? []) as unknown as Constraint[];
   const result = useMemo(() => (text.trim() ? checkWriting({ constraints }, text) : null), [text]);
@@ -35,7 +51,15 @@ export function Writing({ block, run, onDone }: BlockProps<WritingBlock>) {
     setSubmitted(true);
     run.expose(run.bundle.index.tasks.get(task.id)?.requires ?? []);
     void run.addWords(0, n);
+    void remember({});
   };
+  const remember = (r: Record<number, RubricAnswer>) => ui.update((s) => {
+    s.writing = { ...(s.writing ?? {}), [task!.id]: {
+      at: Date.now(), rubric: RUBRIC.map((_, k) => r[k]).filter((x): x is RubricAnswer => !!x),
+      words: n, met: result?.passed ?? 0, of: constraints.length,
+    } };
+  });
+  const missing = constraints.length - (result?.passed ?? 0);
 
   return (
     <>
@@ -53,7 +77,10 @@ export function Writing({ block, run, onDone }: BlockProps<WritingBlock>) {
         <AnswerField value={text} onChange={setText} label="Your text" placeholder="Write in Spanish" lang="es" multiline rows={6} disabled={submitted} autoFocus />
         <p class={`count${n > task.maxWords ? ' over' : ''}`} aria-live="polite">{n} words <span class="small">({task.minWords} to {task.maxWords})</span></p>
         {!submitted ? (
-          <div class="actions"><button class="btn primary" data-primary disabled={tooShort} onClick={submit}>{tooShort ? `Write at least ${task.minWords} words` : 'Done, compare it'}</button></div>
+          <>
+            {!tooShort && constraints.length && missing > 0 ? <p class="hint" aria-live="polite">You can send it, but {missing} of {constraints.length} things on the list {missing === 1 ? 'is' : 'are'} still missing.</p> : null}
+            <div class="actions"><button class="btn primary" data-primary disabled={tooShort} onClick={submit}>{tooShort ? `Write at least ${task.minWords} words` : 'Done, compare it'}</button></div>
+          </>
         ) : (
           <>
             <div class="compare">
@@ -66,11 +93,12 @@ export function Writing({ block, run, onDone }: BlockProps<WritingBlock>) {
               {RUBRIC.map((q, k) => (
                 <div class="rubric-q" key={k} role="radiogroup" aria-label={q}>
                   <p>{q}</p>
-                  {['Yes', 'Mostly', 'Not yet'].map((a) => (
-                    <button key={a} class={`chip${rubric[k] === a ? ' on' : ''}`} role="radio" aria-checked={rubric[k] === a} onClick={() => setRubric({ ...rubric, [k]: a })}>{a}</button>
+                  {ANSWERS.map((a) => (
+                    <button key={a.v} class={`chip${rubric[k] === a.v ? ' on' : ''}`} role="radio" aria-checked={rubric[k] === a.v} onClick={() => { const r = { ...rubric, [k]: a.v }; setRubric(r); void remember(r); }}>{a.label}</button>
                   ))}
                 </div>
               ))}
+              {lastTimeLine(before.current) ? <p class="small">{lastTimeLine(before.current)}</p> : null}
             </fieldset>
             <div class="actions"><Continue focus={false} onClick={onDone} /></div>
           </>

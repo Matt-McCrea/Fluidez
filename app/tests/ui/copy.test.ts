@@ -97,7 +97,7 @@ function scan(src: string, jsx: boolean): { code: string; strings: string[] } {
 
 describe('UI copy', () => {
   // the UI, and the exercise builders whose questions reach the screen verbatim
-  const all = [...files(ROOT), ...files(join(__dirname, '../../src/exercises'))];
+  const all = [...files(ROOT), ...files(join(__dirname, '../../src/exercises')), ...files(join(__dirname, '../../src/check'))];
 
   it('finds the UI sources', () => {
     expect(all.length).toBeGreaterThan(15);

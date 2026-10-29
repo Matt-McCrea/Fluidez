@@ -36,5 +36,5 @@ export function matchEnglish(input: string, item: { en: string; acceptEn?: reado
       return { pass: false, near: true, hint: 'Check the spelling.', closest: a };
     }
   }
-  return { pass: false, hint: 'Not quite — read the Spanish again.', closest: item.en };
+  return { pass: false, hint: 'Read the Spanish again.', closest: item.en };
 }

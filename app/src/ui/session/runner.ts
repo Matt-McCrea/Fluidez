@@ -215,12 +215,19 @@ export class SessionRunner {
     return st.done;
   }
 
+  /** Output ladder: every choose/type/transform item moves its node's rung, whatever its scoring. */
+  private stepLadder(item: Item, o: Outcome): void {
+    if (item.op !== 'choose' && item.op !== 'type' && item.op !== 'transform') return;
+    this.learner.stepRung(item.node, !o.correct ? 'miss' : o.tries <= 1 ? 'pass' : 'retry');
+  }
+
   /** Credit one item exactly per its `scoring`. */
   score(item: Item, o: Outcome): void {
     this.noteLapse(item, o);
     this.tally.scored++;
     if (o.correct) this.tally.correct++;
     if (o.correct && o.tries <= 1) this.tally.firstTry++;
+    this.stepLadder(item, o);
     const at = this.now();
     switch (item.scoring) {
       case 'review': {

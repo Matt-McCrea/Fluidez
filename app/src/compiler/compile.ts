@@ -160,6 +160,8 @@ export function servedRefs(plan: SessionPlan): ServedRef[] {
   return out;
 }
 
+const LADDER_OPS: readonly PracticeOp[] = ['choose', 'type', 'transform', 'transform'];
+
 export function kindOf(id: NodeId, nodes: Map<NodeId, GraphNode>): GraphNode['kind'] {
   const k = nodes.get(id)?.kind;
   if (k) return k;
@@ -807,7 +809,7 @@ class Compiler {
       const out: Block[] = [{ kind: 'teach', part: 'core', deliberate: false, node, nodeKind: kind, script: false, parts: ['examples'], items, examples, minutes: round1((SECONDS.examples + SECONDS.rule) / 60) }];
       // the in-lesson learning steps come from bank practice instead of the script's yourTurn
       const si = this.practice('structuredInput', node, 6, ['pick'], 'receptive', { focus: node, push: false });
-      const co = this.practice('controlledOutput', node, 5, ['choose', 'type', 'transform'], 'productive', { focus: node, push: false });
+      const co = this.practice('controlledOutput', node, 5, ['choose', 'type', 'transform'], 'productive', { focus: node, push: false, ladder: true });
       co?.items.forEach((it) => { it.scoring = 'learning'; });
       if (si) out.push(si);
       if (co) out.push(co);
@@ -825,16 +827,39 @@ class Compiler {
   /** A practice block on one node; returns undefined (and logs a shortage) when nothing gated and unseen is left. */
   private practice(
     kind: PracticeBlock['kind'], node: NodeId, n: number, ops: PracticeOp[], direction: 'receptive' | 'productive',
-    opts: { focus?: NodeId; firstScoring?: 'review' | 'exposure'; question?: boolean; push?: boolean } = {},
+    opts: { focus?: NodeId; firstScoring?: 'review' | 'exposure'; question?: boolean; push?: boolean; ladder?: boolean } = {},
   ): PracticeBlock | undefined {
     let sents = this.pickSentences(node, n, { question: opts.question });
     if (opts.question && sents.length < n) sents = sents.concat(this.pickSentences(node, n - sents.length));
     if (sents.length < n) this.diag({ code: 'shortage', block: kind, node, what: 'sentence', wanted: n, got: sents.length, unit: this.unit?.id, message: `${kind}: ${sents.length}/${n} unseen gated sentences for ${node}` });
     if (!sents.length) return undefined;
-    const items = sents.map((s, i) => this.practiceItem(ops[i % ops.length], node, s, direction, i === 0 ? (opts.firstScoring ?? 'exposure') : 'exposure'));
+    const laddered = opts.ladder ? this.ladderOps(node, sents.length) : undefined;
+    const items = sents.map((s, i) => this.practiceItem(laddered ? laddered[i] : ops[i % ops.length], node, s, direction, i === 0 ? (opts.firstScoring ?? 'exposure') : 'exposure'));
     const b: PracticeBlock = { kind, part: 'core', deliberate: false, focus: opts.focus, items, minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60) };
     if (opts.push !== false) this.blocks.push(b);
     return b;
+  }
+
+  /**
+   * The ops for `n` items on one node, from its ladder rung: choose, type,
+   * transform, transform (recombine comes later). From rung 1 up, about one
+   * item in four is a translation. At streak 1 the last item is a probe at
+   * the next rung, so a climb can happen inside the block.
+   */
+  private ladderOps(node: NodeId, n: number): PracticeOp[] {
+    const cap = kindOf(node, this.course.nodes) === 'lexeme' ? 1 : 3;
+    const rung = Math.min((this.L.rung?.(node) ?? 0), cap);
+    const out: PracticeOp[] = [];
+    for (let i = 0; i < n; i++) out.push(rung >= 1 && i % 4 === 3 ? 'translate' : LADDER_OPS[rung]);
+    if (n > 1 && rung < cap && (this.L.rungStreak?.(node) ?? 0) === 1) out[n - 1] = LADDER_OPS[rung + 1];
+    return out;
+  }
+
+  /** One older-point item's op: its own rung's op, with the same translate share by position. */
+  private ladderOp(node: NodeId, k: number): PracticeOp {
+    const cap = kindOf(node, this.course.nodes) === 'lexeme' ? 1 : 3;
+    const rung = Math.min((this.L.rung?.(node) ?? 0), cap);
+    return rung >= 1 && k % 4 === 3 ? 'translate' : LADDER_OPS[rung];
   }
 
   private practiceItem(op: PracticeOp, node: NodeId, s: SentenceRef, direction: 'receptive' | 'productive', scoring: 'review' | 'exposure' | 'none'): PracticeItem {
@@ -864,17 +889,19 @@ class Compiler {
     const contrast = this.pickContrast([node, ...older]);
     const nLatest = older.length || contrast ? Math.round(total * COUNTS.latestShare) : total;
     const ops: PracticeOp[] = ['choose', 'type', 'transform', 'translate'];
-    const latest = this.practice('controlledOutput', node, nLatest, ops, 'productive', { push: false, firstScoring: this.firstScoring(node, 'productive') });
+    const latest = this.practice('controlledOutput', node, nLatest, ops, 'productive', { push: false, ladder: true, firstScoring: this.firstScoring(node, 'productive') });
     const items: PracticeItem[] = latest ? [...latest.items] : [];
     const oldSources: NodeId[] = [...older, ...(contrast ? [contrast] : [])];
+    const olderItems: PracticeItem[] = [];
     let need = total - nLatest;
     for (let i = 0; need > 0 && oldSources.length && i < total * 2; i++) {
       const src = oldSources[i % oldSources.length];
       const [s] = this.pickSentences(src, 1);
-      if (s) { items.push(this.practiceItem(ops[items.length % ops.length], src, s, 'productive', 'exposure')); need--; }
+      if (s) { olderItems.push(this.practiceItem(this.ladderOp(src, olderItems.length), src, s, 'productive', 'exposure')); need--; }
     }
+    // the latest node's items keep their rung order; older points are dropped in among them
+    for (const it of olderItems) items.splice(Math.floor(this.rng.next() * (items.length + 1)), 0, it);
     if (items.length) {
-      this.rng.shuffle(items);
       this.blocks.push({ kind: 'controlledOutput', part: 'core', deliberate: false, focus: node, contrast, items, minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60) });
     }
     this.practice('communicative', node, COUNTS.communicative, ['respond'], 'productive', { focus: node, question: true });
@@ -967,7 +994,7 @@ class Compiler {
       const nIn = Math.ceil(COUNTS.patternsInput / practiced.length);
       const nOut = Math.ceil(COUNTS.patternsOutput / practiced.length);
       this.practice('structuredInput', p, nIn, ['pick'], 'receptive', { focus: p, firstScoring: i < 2 ? this.firstScoring(p, 'receptive') : 'exposure' });
-      this.practice('controlledOutput', p, nOut, ['choose', 'type', 'translate'], 'productive', { focus: p });
+      this.practice('controlledOutput', p, nOut, ['choose', 'type', 'translate'], 'productive', { focus: p, ladder: true });
     }
   }
 
@@ -1052,7 +1079,7 @@ class Compiler {
     for (let i = 0; items.length < COUNTS.remix && i < COUNTS.remix * 3; i++) {
       const src = sources[i % sources.length];
       const [s] = this.pickSentences(src, 1);
-      if (s) items.push(this.practiceItem(ops[i % ops.length], src, s, 'productive', 'exposure'));
+      if (s) items.push(this.practiceItem(this.ladderOp(src, items.length), src, s, 'productive', 'exposure'));
     }
     if (items.length < COUNTS.remix) this.diag({ code: 'shortage', block: 'remix', what: 'sentence', wanted: COUNTS.remix, got: items.length, unit: this.unit?.id, message: `remix: ${items.length}/${COUNTS.remix} items` });
     if (!items.length) return undefined;

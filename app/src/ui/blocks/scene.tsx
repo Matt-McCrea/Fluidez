@@ -8,7 +8,7 @@ import { AnswerField } from '../components/answer';
 import { Continue } from '../components/card';
 import { Es, Heading, Rich, fmtSeconds, undash } from '../components/text';
 import { blockHeading } from '../session/labels';
-import { checkTurn, turnOrder, turnSeconds, type SceneTurn, type TurnCheck } from '../session/scene';
+import { bundleLexicon, checkTurn, turnOrder, turnSeconds, type SceneTurn, type TurnCheck } from '../session/scene';
 import type { BlockProps } from './types';
 
 interface TurnLog { turn: SceneTurn; first: string; firstCheck: TurnCheck; second?: string; secondCheck?: TurnCheck }
@@ -58,7 +58,7 @@ export function ScenePlay({ block, run, onDone }: BlockProps<SceneBlock | SceneR
     const text = value;
     if (!timeout && !text.trim()) return;
     if (timed) { stopTimer(); total.current += (performance.now() - started.current) / 1000; }
-    const c = checkTurn(turn, timeout && !text.trim() ? '' : text);
+    const c = checkTurn(turn, timeout && !text.trim() ? '' : text, bundleLexicon(run.bundle));
     if (timeout && !text.trim()) c.reason = 'Time ran out. Here is one way to say it.';
     void run.addWords(0, words(text));
     if (stage === 'answer') {
@@ -137,7 +137,7 @@ export function ScenePlay({ block, run, onDone }: BlockProps<SceneBlock | SceneR
         </>
       ) : stage === 'passed' ? (
         <>
-          <div class="feedback" aria-live="polite"><p class="ok">That works.</p></div>
+          <div class="feedback" aria-live="polite"><p class="ok">That works.</p><p class="why">One way to say it: <Es>{cur.firstCheck.model}</Es></p></div>
           <div class="actions"><Continue label="Next" onClick={nextTurn} /></div>
         </>
       ) : (
