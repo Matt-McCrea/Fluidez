@@ -1,0 +1,277 @@
+{
+  "id": "ch062",
+  "unit": "u21",
+  "title": "Sin fecha",
+  "text": "Vale: ¡No toques la crema! ¡Y no abras el horno!\nEran las once de la noche. Vale hacía la torta, y Tomás escribía el contrato en la computadora, con harina en la cara.\nTomás: «Contrato de sociedad. Tomás Herrera y Valentina Ospina, cincuenta y cincuenta». ¿Y ahora?\nVale: Escribe: «Tomás no firma nada de Altamira».\nTomás lo escribió. Después, para ayudar, usó la batidora de Rosa. Hubo un ruido terrible, y la batidora paró.\nVale: ¡Tomás! ¿Rompiste la batidora?\nTomás: Yo no la rompí. Ella ya estaba vieja.\nA las once y media llegó Hernando, con la ropa de dormir debajo de la chaqueta.\nHernando: Fui taxista cuarenta años, mija. Un taxista es medio mecánico. Pero no griten más, por favor. Los vecinos duermen, y yo tengo sueño.\nMientras Hernando trabajaba, Vale leyó la pantalla.\nVale: «Tomás se queda en Bogotá trescientos sesenta y cinco días». No, Tomás. No escribas un año.\nTomás: ¿Cuánto, entonces?\nVale: No escribas un número. Escribe lo que es verdad.\nTomás quitó el número. Entonces sonó su celular.\nAltamira: Señor Herrera, ¿ya leyó mi carta? No olvide que tengo amigos en el gobierno. Y en la oficina de permisos.\nTomás: No me llame más, señor Altamira.\nTomás sacó la carta de la chaqueta y la rompió en dos, delante de Vale.\nVale no dijo nada. Pero comprendió.\nTomás escribió: «Tomás se queda. Sin fecha».\nHernando: Rosa tenía un sueño: un café de la familia. Ahora lo comprendo. ¡Listo! La batidora funciona.\nLa batidora volvió a la vida, y Tomás terminó con crema en la cara.\nSimón: ¡Sin problema!\nVale se rió.\nVale: Lo firmo el sábado, después de la boda.\nHernando: ¿El sábado? Mija, el sábado es su cumpleaños.\nTomás miró a Vale. No sabía.",
+  "gloss": [
+    {
+      "es": "batidora",
+      "en": "electric mixer"
+    },
+    {
+      "es": "crema",
+      "en": "cream"
+    },
+    {
+      "es": "con harina en la cara",
+      "en": "with flour on his face"
+    },
+    {
+      "es": "Después, para ayudar, usó la batidora de Rosa.",
+      "en": "Then, to help, he used Rosa's mixer."
+    },
+    {
+      "es": "Ella ya estaba vieja.",
+      "en": "It was already old."
+    },
+    {
+      "es": "con la ropa de dormir debajo de la chaqueta",
+      "en": "with his sleeping clothes under his jacket"
+    },
+    {
+      "es": "Un taxista es medio mecánico.",
+      "en": "A taxi driver is half a mechanic."
+    },
+    {
+      "es": "yo tengo sueño",
+      "en": "I'm sleepy"
+    },
+    {
+      "es": "Escribe lo que es verdad.",
+      "en": "Write what's true."
+    },
+    {
+      "es": "Tomás quitó el número.",
+      "en": "Tomás took the number out."
+    },
+    {
+      "es": "No olvide que tengo amigos en el gobierno.",
+      "en": "Don't forget that I have friends in the government."
+    },
+    {
+      "es": "la rompió en dos",
+      "en": "tore it in two"
+    },
+    {
+      "es": "Sin fecha.",
+      "en": "No end date."
+    },
+    {
+      "es": "La batidora volvió a la vida",
+      "en": "The mixer came back to life"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Vale ask Tomás to write instead of 'three hundred and sixty five days'?",
+      "options": [
+        "Not a number, but what is true",
+        "Two years",
+        "Ten years",
+        "Until the sale"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Altamira hint at on the phone?",
+      "options": [
+        "He has friends in the government and the permits office",
+        "He wants to buy the mixer",
+        "He is coming to the wedding",
+        "He will give up the block"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Vale stay silent but understand?",
+      "options": [
+        "Tomás tears up Altamira's letter in front of her",
+        "Tomás signs the contract",
+        "Hernando explains everything",
+        "Simón tells her"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué rompió Tomás primero?",
+      "options": [
+        "La batidora de Rosa",
+        "La carta de Altamira",
+        "El horno",
+        "La computadora"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás not know at the end?",
+      "options": [
+        "That Saturday is Vale's birthday",
+        "Where the café is",
+        "How to make coffee",
+        "Who Altamira is"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Vale will sign on Saturday, after the wedding cake, and Saturday is her birthday. Tomás has three days, no idea, and a whole café that is suddenly very good at keeping secrets.",
+  "rereadQuestions": [
+    {
+      "q": "Why does Hernando say he can fix the mixer?",
+      "options": [
+        "He was a taxi driver for forty years, and a taxi driver is half a mechanic",
+        "He studied engineering",
+        "Rosa taught him",
+        "He has a new one at home"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the contract finally say about Tomás staying?",
+      "options": [
+        "Tomás stays. No end date",
+        "Tomás stays one year",
+        "Tomás stays until the wedding",
+        "Tomás goes back to Toronto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Tomás end up with cream on his face?",
+      "options": [
+        "The mixer comes back to life",
+        "Vale throws it at him",
+        "Simón drops it",
+        "Hernando slips"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:fui",
+    "c:por-favor",
+    "c:sin-problema",
+    "c:tengo",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "p:cerca-de",
+    "p:days-el-lunes",
+    "p:event-ser-en",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:request-ladder",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:ser-profession-no-article",
+    "p:telling-time",
+    "p:tener-hambre",
+    "p:time-sequence-basic",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:ahora",
+    "l:amigo",
+    "l:ayudar",
+    "l:año",
+    "l:batidora",
+    "l:boda",
+    "l:café",
+    "l:cara",
+    "l:carta",
+    "l:celular",
+    "l:chaqueta",
+    "l:comprender",
+    "l:computadora",
+    "l:contratar",
+    "l:contrato",
+    "l:crema",
+    "l:cumpleaños",
+    "l:cuánto",
+    "l:debajo",
+    "l:decir",
+    "l:delante",
+    "l:después",
+    "l:dormir",
+    "l:día",
+    "l:escribir",
+    "l:estar",
+    "l:familia",
+    "l:favor",
+    "l:fecha",
+    "l:firmar",
+    "l:funcionar",
+    "l:gobierno",
+    "l:gritar",
+    "l:hacer",
+    "l:harina",
+    "l:horno",
+    "l:leer",
+    "l:listo",
+    "l:llamarse",
+    "l:llegar",
+    "l:mecánico",
+    "l:mija",
+    "l:mirar",
+    "l:noche",
+    "l:número",
+    "l:oficina",
+    "l:olvidar",
+    "l:pantalla",
+    "l:parar",
+    "l:permiso",
+    "l:problema",
+    "l:quedarse",
+    "l:quitar",
+    "l:reír",
+    "l:romper",
+    "l:ropa",
+    "l:ruido",
+    "l:saber",
+    "l:sacar",
+    "l:ser",
+    "l:señor",
+    "l:sociedad",
+    "l:sonar",
+    "l:sueño",
+    "l:sábado",
+    "l:taxista",
+    "l:tener",
+    "l:terminar",
+    "l:terrible",
+    "l:tocar",
+    "l:torta",
+    "l:trabajar",
+    "l:usar",
+    "l:vecino",
+    "l:verdad",
+    "l:vida",
+    "l:viejo",
+    "l:volver"
+  ]
+}

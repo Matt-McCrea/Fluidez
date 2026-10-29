@@ -1,0 +1,262 @@
+{
+  "id": "ch059",
+  "unit": "u21",
+  "title": "Cincuenta y cincuenta",
+  "text": "En el fondo del café, detrás de la máquina, Tomás practicaba con Simón.\nTomás: Vale, quiero que trabajes conmigo. Como socia. Cincuenta y cincuenta.\nSimón: ¡Socia! ¡Socia!\nTomás: Shh. Más bajo, por favor.\nA las seis llegó Vale. Tomás le dio un tinto y un papel doblado.\nVale: ¿Qué es esto?\nTomás: ¿Me haces un favor? Léelo.\nVale lo leyó una vez, y después otra vez. «La Esquina de Rosa. Tomás: cincuenta. Vale: cincuenta».\nVale: ¿Socia? ¿Yo?\nTomás: Rosa tenía una regla principal: el café es de la familia. Y tú eres familia.\nVale no dijo nada. Sus ojos fueron a la foto de Rosa, encima de la caja.\nJhon Fredy restó con los dedos.\nJhon Fredy: Cien menos cincuenta, cincuenta. Y si restamos los tintos de don Hernando, el café pierde plata.\nHernando: Joven, en este café el cliente es el rey.\nJhon Fredy: Un rey que nunca paga.\nVale dejó el tinto en la mesa.\nVale: Tomás, tu promesa es de trescientos sesenta y cinco días. ¿Y después? ¿Vuelves a Toronto?\nSimón: ¡Sin problema!\nVale: Nadie te preguntó, Simón.\nTomás: No te preocupes. Yo no me voy.\nVale: Eso lo dice tu voz. Quiero que lo diga un papel. Quiero que lo escribas, en un contrato de verdad.\nTomás: Sin problema. Hoy mismo lo escribo.\nVale: Y quiero que me prometas otra cosa. Pero primero lo pienso.\nA las diez llegó el cartero con un sobre blanco y grande. «Grupo Altamira. Para el señor Tomás Herrera».\nVale miró el sobre, y después miró a Tomás.\nVale: Esa es la otra cosa. Quiero que no firmes nada de ese señor. Nada.\nTomás puso el sobre en la mesa, sin abrirlo. Simón lo miró, con la cabeza de lado.",
+  "gloss": [
+    {
+      "es": "En el fondo del café",
+      "en": "At the back of the café"
+    },
+    {
+      "es": "Más bajo, por favor.",
+      "en": "Quieter, please."
+    },
+    {
+      "es": "un papel doblado",
+      "en": "a folded piece of paper"
+    },
+    {
+      "es": "Jhon Fredy restó con los dedos.",
+      "en": "Jhon Fredy did a subtraction on his fingers."
+    },
+    {
+      "es": "Y si restamos los tintos de don Hernando, el café pierde plata.",
+      "en": "And if we take away Don Hernando's coffees, the café loses money."
+    },
+    {
+      "es": "en este café el cliente es el rey",
+      "en": "in this café the customer is king"
+    },
+    {
+      "es": "Nadie te preguntó, Simón.",
+      "en": "Nobody asked you, Simón."
+    },
+    {
+      "es": "Eso lo dice tu voz. Quiero que lo diga un papel.",
+      "en": "Your voice says that. I want a piece of paper to say it."
+    },
+    {
+      "es": "en un contrato de verdad",
+      "en": "in a real contract"
+    },
+    {
+      "es": "Hoy mismo lo escribo.",
+      "en": "I'll write it this very day."
+    },
+    {
+      "es": "cartero",
+      "en": "postman"
+    },
+    {
+      "es": "con la cabeza de lado",
+      "en": "with his head on one side"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Tomás offer Vale?",
+      "options": [
+        "Half of the café, as his partner",
+        "A job as head pastry chef",
+        "A higher salary",
+        "Rosa's recipe book"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Tomás say Vale deserves it?",
+      "options": [
+        "Rosa's main rule: the café belongs to the family, and Vale is family",
+        "Vale has more money than him",
+        "Hernando asked him to",
+        "Vale threatened to leave"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What worries Vale about Tomás's promise?",
+      "options": [
+        "It only lasts three hundred and sixty five days",
+        "He never says it in Spanish",
+        "Hernando made it, not Tomás",
+        "It is written on a napkin"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué quiere Vale?",
+      "options": [
+        "Quiere que Tomás lo escriba en un contrato",
+        "Quiere que Tomás vuelva a Toronto",
+        "Quiere que Jhon Fredy haga las cuentas",
+        "Quiere que Simón no hable"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale ask about the envelope from Altamira?",
+      "options": [
+        "That Tomás signs nothing from that man",
+        "That Tomás opens it at once",
+        "That Tomás gives it to Mariana",
+        "That Tomás sends it back"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomás has promised a real contract, Vale has one more condition she won't name yet, and Altamira's envelope is still sitting on the table. Tomorrow somebody opens it.",
+  "rereadQuestions": [
+    {
+      "q": "Where was Tomás practising at the start?",
+      "options": [
+        "At the back of the café, behind the machine",
+        "At Gloria's house",
+        "In the street",
+        "In the kitchen with Vale"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Jhon Fredy say about Hernando, the 'king'?",
+      "options": [
+        "He never pays",
+        "He is always late",
+        "He talks too much",
+        "He eats all the bread"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás do with the envelope?",
+      "options": [
+        "He puts it on the table without opening it",
+        "He tears it up",
+        "He reads it aloud",
+        "He gives it to Simón"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:en-serio",
+    "c:me-haces-un-favor",
+    "c:no-te-preocupes",
+    "c:por-favor",
+    "c:que-es-esto",
+    "c:quiero",
+    "c:sin-problema",
+    "c:una-vez",
+    "c:voy-vas",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "p:cerca-de",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:que-tal-si",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:blanco",
+    "l:cabeza",
+    "l:café",
+    "l:caja",
+    "l:cartero",
+    "l:cliente",
+    "l:contrato",
+    "l:cosa",
+    "l:dar",
+    "l:decir",
+    "l:dedo",
+    "l:dejar",
+    "l:después",
+    "l:detrás",
+    "l:doblar",
+    "l:día",
+    "l:encima",
+    "l:escribir",
+    "l:familia",
+    "l:favor",
+    "l:firmar",
+    "l:fondo",
+    "l:foto",
+    "l:grande",
+    "l:hacer",
+    "l:hoy",
+    "l:ir",
+    "l:irse",
+    "l:joven",
+    "l:lado",
+    "l:leer",
+    "l:llegar",
+    "l:mesa",
+    "l:mirar",
+    "l:máquina",
+    "l:ojo",
+    "l:pagar",
+    "l:papel",
+    "l:pensar",
+    "l:perder",
+    "l:plata",
+    "l:poner",
+    "l:practicar",
+    "l:preguntar",
+    "l:preocuparse",
+    "l:principal",
+    "l:problema",
+    "l:promesa",
+    "l:prometer",
+    "l:querer",
+    "l:qué",
+    "l:regla",
+    "l:restar",
+    "l:rey",
+    "l:ser",
+    "l:señor",
+    "l:sobre",
+    "l:socio",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:verdad",
+    "l:vez",
+    "l:volver",
+    "l:voz"
+  ]
+}

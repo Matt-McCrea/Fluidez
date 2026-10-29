@@ -1,0 +1,282 @@
+{
+  "id": "ch060",
+  "unit": "u21",
+  "title": "El peor enemigo del pez",
+  "text": "«Señor Herrera: le ofrezco un trato».\nTomás abrió la carta de Altamira delante de todos.\n«Abrimos un hotel en el oeste de la ciudad, con un café en la primera planta. Usted puede ser el director. Por su parte de La Esquina de Rosa, le ofrezco mucha plata. Le aconsejo una cosa: piénselo rápido».\nVale: ¿Un hotel en el oeste? Ese trato es una trampa.\nTomás: Ya lo sé. Leer no es firmar.\nVale: Te sugiero una cosa: tírala.\nTomás: ¿Me lo sugieres o me lo exiges?\nVale: Te lo exijo.\nTomás: Yo te ofrezco una sociedad, y tú me exiges cosas. Quiero que me tengas confianza.\nVale: ¡Y yo quiero que hables claro! ¿Quién se encarga de los papeles?\nTomás: ¡Yo me encargo! ¡Esa es mi responsabilidad!\nVale: ¿Y el pan? ¿Esa responsabilidad también es tuya?\nEn la mesa de la ventana, una pareja dejó de comer. Una señora de la planta de arriba abrió la puerta.\nHernando se levantó.\nHernando: Esto, Rosa lo prohibía. Y yo también lo prohíbo.\nJhon Fredy: ¿Puedo sugerir algo? Altamira es un león, y nosotros somos un pez.\nHernando: Los leones no comen pescado, joven.\nJhon Fredy: Exacto. El peor enemigo de un pez es otro pez.\nHernando: Le aconsejo un pan, joven. Con pan en la boca no hay teorías.\nLa pareja de la ventana pagó y salió.\nVale: Necesito tu ayuda en la cocina, Tomás, no tus planes. Una sociedad es trabajo.\nTomás: Y yo necesito tu ayuda con Altamira, no tus órdenes.\nSimón: ¡Te lo exijo! ¡Te lo exijo!\nVale entró en la cocina. La carta se quedó en la mesa, al lado del tinto frío.\nEra el peor día del año, y todavía eran las nueve de la mañana.",
+  "gloss": [
+    {
+      "es": "«Señor Herrera: le ofrezco un trato».",
+      "en": "«Mr Herrera: I am offering you a deal.»"
+    },
+    {
+      "es": "en la primera planta",
+      "en": "on the first floor"
+    },
+    {
+      "es": "Le aconsejo una cosa: piénselo rápido.",
+      "en": "I advise you one thing: think about it quickly."
+    },
+    {
+      "es": "Ese trato es una trampa.",
+      "en": "That deal is a trap."
+    },
+    {
+      "es": "Te sugiero una cosa: tírala.",
+      "en": "I suggest one thing: throw it away."
+    },
+    {
+      "es": "Quiero que me tengas confianza.",
+      "en": "I want you to trust me."
+    },
+    {
+      "es": "¿Quién se encarga de los papeles?",
+      "en": "Who takes care of the paperwork?"
+    },
+    {
+      "es": "¡Yo me encargo!",
+      "en": "I take care of it."
+    },
+    {
+      "es": "una pareja dejó de comer",
+      "en": "a couple stopped eating"
+    },
+    {
+      "es": "la planta de arriba",
+      "en": "the floor above"
+    },
+    {
+      "es": "Esto, Rosa lo prohibía. Y yo también lo prohíbo.",
+      "en": "Rosa didn't allow this. And I don't allow it either."
+    },
+    {
+      "es": "Los leones no comen pescado, joven.",
+      "en": "Lions don't eat fish, young man."
+    },
+    {
+      "es": "Le aconsejo un pan, joven. Con pan en la boca no hay teorías.",
+      "en": "I advise a bread roll, young man. With bread in your mouth there are no theories."
+    },
+    {
+      "es": "Una sociedad es trabajo.",
+      "en": "A partnership is work."
+    },
+    {
+      "es": "todavía eran las nueve de la mañana",
+      "en": "it was still only nine in the morning"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Altamira offer Tomás in the letter?",
+      "options": [
+        "To run the café of a new hotel, and money for his part of La Esquina de Rosa",
+        "A free holiday",
+        "To buy Simón",
+        "A job in Toronto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does the argument get louder?",
+      "options": [
+        "Tomás wants trust, and Vale wants to know clearly who does what",
+        "Vale wants to sign Altamira's letter",
+        "Tomás wants to sell the café",
+        "Jhon Fredy broke the coffee machine"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Jhon Fredy's point about the lion and the fish?",
+      "options": [
+        "The fish's worst enemy is another fish, so they shouldn't fight each other",
+        "Lions are dangerous for cafés",
+        "Altamira likes fish",
+        "Fish can't swim"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hace la pareja de la ventana?",
+      "options": [
+        "Paga y sale",
+        "Pide otro tinto",
+        "Se ríe con Jhon Fredy",
+        "Lee la carta"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does the chapter end?",
+      "options": [
+        "Vale goes into the kitchen and the letter stays on the table",
+        "Tomás tears up the letter",
+        "Vale signs the contract",
+        "Hernando leaves the café"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomás and Vale are no longer speaking to each other, only through Jhon Fredy. Tomorrow a customer walks in with a baby and an enormous order, right into the middle of it.",
+  "rereadQuestions": [
+    {
+      "q": "Where is Altamira's new hotel?",
+      "options": [
+        "In the west of the city",
+        "In the north of the city",
+        "In Medellín",
+        "On the corner of the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who opens a door when the shouting starts?",
+      "options": [
+        "A woman from the floor above",
+        "Gloria",
+        "The inspector",
+        "Mariana"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Simón repeat this time?",
+      "options": [
+        "Te lo exijo",
+        "Sin problema",
+        "¡Tinto!",
+        "Socia"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:era",
+    "c:hay",
+    "c:puede-ser",
+    "c:puedo",
+    "c:quiero",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:cerca-de",
+    "p:de-owner",
+    "p:dejar-de-inf",
+    "p:demonstratives-basic",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:aconsejar",
+    "l:arriba",
+    "l:ayuda",
+    "l:año",
+    "l:boca",
+    "l:café",
+    "l:carta",
+    "l:ciudad",
+    "l:claro",
+    "l:cocina",
+    "l:comer",
+    "l:confianza",
+    "l:cosa",
+    "l:dejar",
+    "l:delante",
+    "l:director",
+    "l:día",
+    "l:encargar",
+    "l:enemigo",
+    "l:entrar",
+    "l:exacto",
+    "l:exigir",
+    "l:firmar",
+    "l:frío",
+    "l:hablar",
+    "l:hotel",
+    "l:joven",
+    "l:lado",
+    "l:leer",
+    "l:levantarse",
+    "l:león",
+    "l:mañana",
+    "l:mesa",
+    "l:necesitar",
+    "l:oeste",
+    "l:ofrecer",
+    "l:orden",
+    "l:pagar",
+    "l:pan",
+    "l:papel",
+    "l:pareja",
+    "l:parte",
+    "l:pensar",
+    "l:peor",
+    "l:pescado",
+    "l:pez",
+    "l:plan",
+    "l:planta",
+    "l:plata",
+    "l:poder",
+    "l:prohibir",
+    "l:puerta",
+    "l:quedarse",
+    "l:querer",
+    "l:quién",
+    "l:responsabilidad",
+    "l:rápido",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sociedad",
+    "l:sugerir",
+    "l:tener",
+    "l:teoría",
+    "l:tinto",
+    "l:tirar",
+    "l:trabajo",
+    "l:trampa",
+    "l:trato",
+    "l:ventana"
+  ]
+}

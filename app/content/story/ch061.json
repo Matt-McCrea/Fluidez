@@ -1,0 +1,284 @@
+{
+  "id": "ch061",
+  "unit": "u21",
+  "title": "Casado con mi taxi",
+  "text": "Al otro día, Tomás y Vale trabajaban separados: él en la caja, ella en la cocina. Hablaban solo con Jhon Fredy.\nTomás: Jhon Fredy, ¿la señora cocinera quiere un tinto?\nVale: Jhon Fredy, la cocinera no quiere nada del señor director.\nA las ocho entró una señora con un bebé en los brazos.\nSeñora: Buenos días. Vengo a hacer un pedido para una boda. Mi sobrina se casa el sábado.\nTomás: ¿Y cómo es el pedido?\nSeñora: Una torta para ciento veinte personas. Mi sobrina es médica, y la mamá del novio es profesora, muy estricta. La celebración es aquí cerca.\nVale: El sábado, sin problema.\nTomás: ¿Sin problema? ¿Ciento veinte personas? Primero hablamos del precio.\nVale: ¡El precio lo decido yo! ¡Yo soy la cocinera!\nTomás: ¡Y yo hago las cuentas!\nEl bebé empezó a llorar. Hernando levantó la cabeza.\nHernando: ¿Les importaría no gritar delante de los clientes? ¿Y delante de un bebé?\nLa señora los miró a los dos.\nSeñora: ¿Ustedes están casados?\nTomás y Vale: ¡No!\nSeñora: Ah. Yo estuve casada veinte años. Ahora estoy separada, y muy contenta. La felicidad tiene muchas formas. ¿Y usted, señor? ¿Es soltero?\nHernando: Soy taxista, señora. Casado con mi taxi. Fui taxista cuarenta años, y en mi taxi los casados siempre peleaban. Los solteros cantaban.\nLa señora miró la foto de la pared.\nSeñora: ¡Rosa! Era mi amiga. Ella hizo la torta de mi boda, en 1990. ¿Y usted quién es?\nTomás: Soy el nieto de Rosa.\nSeñora: Una amiga, un nieto y otra torta. Rosa estaría feliz con esta celebración.\nSimón: ¡Te lo exijo!\nEl bebé se rió por primera vez.\nCuando la señora salió, Vale leyó el pedido: «Boda. Novia: médica. Mamá del novio: profesora. Ciento veinte personas. Sábado».\nVale: La felicidad de ciento veinte personas, en tres días. ¿Me haces un favor, Tomás? Ven esta noche. Sola no puedo.\nTomás: Me encantaría, socia.\nVale: Todavía no soy tu socia. Trae la computadora. Esta noche también escribes el contrato.",
+  "gloss": [
+    {
+      "es": "Tomás y Vale trabajaban separados: él en la caja, ella en la cocina.",
+      "en": "Tomás and Vale worked apart: he at the till, she in the kitchen."
+    },
+    {
+      "es": "¿la señora cocinera quiere un tinto?",
+      "en": "does Madam Cook want a coffee?"
+    },
+    {
+      "es": "la cocinera no quiere nada del señor director",
+      "en": "the cook doesn't want anything from Mr Director"
+    },
+    {
+      "es": "Mi sobrina se casa el sábado.",
+      "en": "My niece is getting married on Saturday."
+    },
+    {
+      "es": "la mamá del novio es profesora, muy estricta",
+      "en": "the groom's mother is a teacher, very strict"
+    },
+    {
+      "es": "¡Y yo hago las cuentas!",
+      "en": "And I do the accounts."
+    },
+    {
+      "es": "¿Les importaría no gritar delante de los clientes?",
+      "en": "Would you mind not shouting in front of the customers?"
+    },
+    {
+      "es": "La felicidad tiene muchas formas.",
+      "en": "Happiness comes in many shapes."
+    },
+    {
+      "es": "Casado con mi taxi.",
+      "en": "Married to my taxi."
+    },
+    {
+      "es": "Rosa estaría feliz con esta celebración.",
+      "en": "Rosa would be happy with this celebration."
+    },
+    {
+      "es": "Sola no puedo.",
+      "en": "I can't do it alone."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why do Tomás and Vale talk only to Jhon Fredy?",
+      "options": [
+        "They are still angry after yesterday's argument",
+        "Jhon Fredy is the new manager",
+        "Vale has lost her voice",
+        "Tomás is practising his Spanish"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is the order?",
+      "options": [
+        "A cake for a wedding of a hundred and twenty people",
+        "Bread for a hotel",
+        "Coffee for a taxi rank",
+        "A birthday cake for Hernando"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What makes Hernando ask them to stop?",
+      "options": [
+        "They shout about the price in front of a customer and her baby",
+        "Simón starts to sing",
+        "The customer leaves",
+        "Vale burns the bread"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Quién hizo la torta de la boda de la señora?",
+      "options": [
+        "Rosa",
+        "Vale",
+        "Hernando",
+        "La sobrina"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Vale ask Tomás to come that night?",
+      "options": [
+        "She can't make the cake alone, and he must write the contract too",
+        "She wants to go dancing",
+        "Hernando is ill",
+        "The café needs painting"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tonight, in Rosa's kitchen: a cake for a hundred and twenty and a contract for two. Tomás has never made a cake, and Vale still hasn't said how long he has to promise to stay.",
+  "rereadQuestions": [
+    {
+      "q": "What does the customer say about her own marriage?",
+      "options": [
+        "She was married twenty years and is now separated and happy",
+        "She is getting married on Saturday",
+        "She has never married",
+        "Her husband is a taxi driver"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "According to Hernando, what did married couples do in his taxi?",
+      "options": [
+        "They always argued",
+        "They always sang",
+        "They always slept",
+        "They never paid"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the note say about the groom's mother?",
+      "options": [
+        "She is a teacher",
+        "She is a doctor",
+        "She is a cook",
+        "She is a taxi driver"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:como-es",
+    "c:era",
+    "c:fui",
+    "c:hago-salgo-vengo",
+    "c:hola-buenos-dias",
+    "c:me-encantaria",
+    "c:me-haces-un-favor",
+    "c:puedo",
+    "c:sera-otro-dia",
+    "c:sin-problema",
+    "c:tienes",
+    "c:todavia-no",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:negation-words",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:empezar-terminar",
+    "p:frequency-scale",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:ser-profession-no-article",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:ahora",
+    "l:amiga",
+    "l:aquí",
+    "l:año",
+    "l:bebé",
+    "l:boda",
+    "l:brazo",
+    "l:bueno",
+    "l:cabeza",
+    "l:caja",
+    "l:cantar",
+    "l:casado",
+    "l:casarse",
+    "l:celebración",
+    "l:cerca",
+    "l:cliente",
+    "l:cocina",
+    "l:cocinero",
+    "l:computadora",
+    "l:contento",
+    "l:contrato",
+    "l:cuenta",
+    "l:cómo",
+    "l:decidir",
+    "l:delante",
+    "l:director",
+    "l:día",
+    "l:empezar",
+    "l:encantar",
+    "l:entrar",
+    "l:escribir",
+    "l:estar",
+    "l:estricto",
+    "l:exigir",
+    "l:favor",
+    "l:felicidad",
+    "l:feliz",
+    "l:formar",
+    "l:foto",
+    "l:gritar",
+    "l:hablar",
+    "l:hacer",
+    "l:importar",
+    "l:leer",
+    "l:levantar",
+    "l:llorar",
+    "l:mamá",
+    "l:mirar",
+    "l:médica",
+    "l:nieto",
+    "l:noche",
+    "l:novia",
+    "l:novio",
+    "l:pared",
+    "l:pedido",
+    "l:pelear",
+    "l:persona",
+    "l:poder",
+    "l:precio",
+    "l:problema",
+    "l:profesora",
+    "l:querer",
+    "l:quién",
+    "l:reír",
+    "l:salir",
+    "l:separado",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:siempre",
+    "l:sobrina",
+    "l:socio",
+    "l:soltero",
+    "l:sábado",
+    "l:taxi",
+    "l:taxista",
+    "l:tener",
+    "l:tinto",
+    "l:torta",
+    "l:trabajar",
+    "l:traer",
+    "l:venir",
+    "l:vez"
+  ]
+}
