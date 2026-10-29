@@ -1,0 +1,325 @@
+[
+  {
+    "id": "w-u02-01",
+    "unit": "u02",
+    "prompt": "Don Hernando wants to know who you are. Tell him your name, where you're from, where you live and where you work.",
+    "minWords": 15,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "vivir",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "verbForm",
+        "inf": "trabajar",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Buenos días, don Hernando. Me llamo Ana y soy de Toronto. Vivo en el centro, en La Candelaria. Trabajo en una empresa de software.",
+    "focus": "g:present-er-ir"
+  },
+  {
+    "id": "w-u02-02",
+    "unit": "u02",
+    "prompt": "Describe a normal workday: four things you do and when. Use at least one -er verb and one -ir verb.",
+    "minWords": 20,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbType",
+        "ending": "er"
+      },
+      {
+        "type": "verbType",
+        "ending": "ir"
+      },
+      {
+        "type": "containsWord",
+        "word": "a las"
+      },
+      {
+        "type": "minSentences",
+        "n": 4
+      }
+    ],
+    "model": "Llego a la oficina a las ocho. Leo el correo con un tinto. A las diez escribo un reporte y hablo con el jefe. Como con los compañeros a la una y termino a las cinco.",
+    "focus": "g:present-er-ir"
+  },
+  {
+    "id": "w-u02-03",
+    "unit": "u02",
+    "prompt": "Tell a friend about Vale's day: where she lives, what she eats and what she reads or writes. Write about her, not about you.",
+    "minWords": 15,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "vivir",
+        "tense": "presente",
+        "person": "él/ella"
+      },
+      {
+        "type": "verbForm",
+        "inf": "comer",
+        "tense": "presente",
+        "person": "él/ella"
+      },
+      {
+        "type": "person",
+        "person": "él/ella"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale vive en Chapinero. Llega al café a las cinco y media y hace el pan. Come a la una con Simón. A las dos lee el horario y escribe los números.",
+    "focus": "g:present-er-ir"
+  },
+  {
+    "id": "w-u02-04",
+    "unit": "u02",
+    "prompt": "You and a colleague share an office. Write what you both do every day: where you live, what you eat and what you write. Use we.",
+    "minWords": 15,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "person",
+        "person": "nosotros"
+      },
+      {
+        "type": "verbType",
+        "ending": "ir"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Un compañero y yo vivimos en el centro. Llegamos a la oficina a las nueve. Escribimos correos en inglés y comemos pan a las once.",
+    "focus": "g:present-er-ir"
+  },
+  {
+    "id": "w-u02-05",
+    "unit": "u02",
+    "prompt": "Message Vale: tell her where you are right now and how you are.",
+    "minWords": 8,
+    "maxWords": 35,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "containsWord",
+        "word": "en "
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Hola, Vale. Estoy en el banco con el señor Ruiz. Estoy bien, pero nervioso.",
+    "focus": "g:estar-location-states"
+  },
+  {
+    "id": "w-u02-06",
+    "unit": "u02",
+    "prompt": "A new neighbour asks about the area. Say where three places are: the bank, the park and the hospital, or any three you choose.",
+    "minWords": 15,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "verbFormAny",
+        "inf": "estar",
+        "tense": "presente"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "banco",
+          "parque",
+          "hospital",
+          "tienda",
+          "universidad",
+          "colegio"
+        ]
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "El banco está en la calle doce. El parque está a dos calles del café. El hospital está en el centro, con la universidad.",
+    "focus": "g:estar-location-states"
+  },
+  {
+    "id": "w-u02-07",
+    "unit": "u02",
+    "prompt": "Don Hernando is worried about you. Tell him how you are: one thing with estoy, one with tengo sed, and one thing you are not.",
+    "minWords": 10,
+    "maxWords": 40,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\btengo sed\\b",
+        "label": "say you're thirsty with tengo sed"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Don Hernando, estoy bien. No estoy enfermo, tranquilo. Tengo sed, nada más: ¿me regala un jugo?",
+    "focus": "x:tener-estar-states"
+  },
+  {
+    "id": "w-u02-08",
+    "unit": "u02",
+    "prompt": "You've just started a new job. Write four questions for a colleague, each with a different question word.",
+    "minWords": 12,
+    "maxWords": 45,
+    "constraints": [
+      {
+        "type": "question"
+      },
+      {
+        "type": "regex",
+        "pattern": "(\\?[^?]*){4}",
+        "label": "write four questions"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "dónde",
+          "cuándo",
+          "quién",
+          "cómo",
+          "cuántos",
+          "cuál"
+        ]
+      }
+    ],
+    "model": "¿Dónde vives? ¿Cuándo llegas a la oficina? ¿Quién es el jefe? ¿Cuántos correos escribes en un día?",
+    "focus": "g:questions"
+  },
+  {
+    "id": "w-u02-09",
+    "unit": "u02",
+    "prompt": "Ask Don Hernando three questions about other people in the café: Vale, Simón or the customers. Put the person after the verb.",
+    "minWords": 10,
+    "maxWords": 40,
+    "constraints": [
+      {
+        "type": "question"
+      },
+      {
+        "type": "regex",
+        "pattern": "(dónde|cuándo|qué|cómo) [a-záéíóúñ]+ (vale|simón|los clientes|el jefe|mariana)",
+        "label": "question word + verb + person"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "¿Dónde vive Vale? ¿Qué come Simón? ¿Cuándo llegan los clientes, don Hernando?",
+    "focus": "p:question-word-order"
+  },
+  {
+    "id": "w-u02-10",
+    "unit": "u02",
+    "prompt": "Write a short review of Rosa's café. Say something that is good or bad, and something someone does well or badly.",
+    "minWords": 12,
+    "maxWords": 45,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "bueno",
+          "malo"
+        ]
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "bien",
+          "mal "
+        ]
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "El pan de Vale es bueno y el tinto es bueno. Vale habla bien inglés, y Simón habla mal, pero es amable.",
+    "focus": "p:bien-mal-vs-bueno-malo"
+  },
+  {
+    "id": "w-u02-11",
+    "unit": "u02",
+    "prompt": "Write a note for the café staff about two people: tell them that Mr Ruiz from the bank is coming at eleven, and greet Don Hernando by name.",
+    "minWords": 12,
+    "maxWords": 45,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(el señor|la señora) [A-ZÁÉÍÓÚ]",
+        "flags": "",
+        "label": "talk about someone with el señor or la señora"
+      },
+      {
+        "type": "containsWord",
+        "word": "don Hernando"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "el don",
+          "la doña"
+        ]
+      }
+    ],
+    "model": "Vale: el señor Ruiz del banco llega a las once. Buenos días, don Hernando: el tinto está listo.",
+    "focus": "p:senor-don-article"
+  },
+  {
+    "id": "w-u02-12",
+    "unit": "u02",
+    "prompt": "Mariana texts you: «¡Quiubo! ¿Qué más?». Answer her: say how you are and where you are, then ask her two questions.",
+    "minWords": 15,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "verbFormAny",
+        "inf": "estar",
+        "tense": "presente"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "regex",
+        "pattern": "(\\?[^?]*){2}",
+        "label": "ask two questions"
+      }
+    ],
+    "model": "¡Quiubo, Mariana! Estoy bien, gracias. Estoy en el café con Vale y Simón. ¿Y tú? ¿Dónde estás?",
+    "focus": "g:questions"
+  }
+]

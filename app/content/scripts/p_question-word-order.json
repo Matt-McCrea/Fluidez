@@ -1,0 +1,175 @@
+{
+  "node": "p:question-word-order",
+  "hook": {
+    "line": "Don Hernando asks about everyone in the café. To ask about another person in Spanish, the person goes after the verb, and does disappears.",
+    "es": "¿Dónde vive Vale? ¿Cuándo llega el jefe?",
+    "en": "Where does Vale live? When does the boss arrive?"
+  },
+  "examples": [
+    {
+      "es": "¿Dónde vive Vale?",
+      "en": "Where does Vale live?"
+    },
+    {
+      "es": "¿Cuándo llega el jefe?",
+      "en": "When does the boss arrive?"
+    },
+    {
+      "es": "¿Qué estudia Mariana?",
+      "en": "What does Mariana study?"
+    },
+    {
+      "es": "¿Dónde trabaja el señor Ruiz?",
+      "en": "Where does Mr Ruiz work?"
+    },
+    {
+      "es": "¿Cómo está don Hernando?",
+      "en": "How is Don Hernando?"
+    },
+    {
+      "es": "¿Vale vive en Chapinero?",
+      "en": "Does Vale live in Chapinero?"
+    }
+  ],
+  "rule": "In English, a question about someone uses does and keeps the person in the middle: Where does Vale live?\n\nSpanish drops does and puts the person after the verb:\n\nquestion word + verb + person\n¿Dónde vive Vale?\n¿Cuándo llegan los clientes?\n\nPutting the person first, ¿Dónde Vale vive?, sounds foreign straight away.\n\nYes/no questions are relaxed. You can keep the normal order and let the ¿ ? and your voice do the work: ¿Vale vive aquí? ¿Vive Vale aquí? Both are fine.\n\nIn answers, the new information goes last: ¿Quién llega a las siete? —Llega don Hernando.",
+  "smallPrint": "Spanish puts the subject after the verb in question-word questions (inversion).",
+  "readAndPick": [
+    {
+      "es": "¿Dónde trabaja Mariana?",
+      "options": [
+        "Where does Mariana work?",
+        "Where do you work, Mariana?",
+        "Does Mariana work?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuándo llegan los clientes?",
+      "options": [
+        "When do you arrive, customers?",
+        "When do the customers arrive?",
+        "Do the customers arrive?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué lee don Hernando?",
+      "options": [
+        "Does Don Hernando read?",
+        "What do you read, Don Hernando?",
+        "What does Don Hernando read?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Vale vive en Chapinero?",
+      "options": [
+        "Does Vale live in Chapinero?",
+        "Where does Vale live?",
+        "Vale lives in Chapinero."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cómo está el jefe?",
+      "options": [
+        "What's the boss like?",
+        "How is the boss?",
+        "Where is the boss?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde come Simón?",
+      "options": [
+        "Where does Simón eat?",
+        "What does Simón eat?",
+        "Does Simón eat here?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué hace Vale a las cinco?",
+      "options": [
+        "What does Vale do at five?",
+        "Does Vale work at five?",
+        "Who does Vale see at five?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Dónde estudian los estudiantes?",
+      "options": [
+        "Do the students study here?",
+        "Where do the students study?",
+        "When do the students study?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Where does Vale live?",
+      "answer": "¿Dónde vive Vale?",
+      "accept": [],
+      "why": "Question word, verb, then the person."
+    },
+    {
+      "prompt": "When does the boss arrive?",
+      "answer": "¿Cuándo llega el jefe?",
+      "accept": [],
+      "why": "No does: cuándo + llega + el jefe."
+    },
+    {
+      "prompt": "What does Mariana study?",
+      "answer": "¿Qué estudia Mariana?",
+      "accept": [],
+      "why": "Mariana goes after the verb."
+    },
+    {
+      "prompt": "Where does Mr Ruiz work?",
+      "answer": "¿Dónde trabaja el señor Ruiz?",
+      "accept": [],
+      "why": "Talking about him: el señor Ruiz, after the verb."
+    },
+    {
+      "prompt": "How is Don Hernando?",
+      "answer": "¿Cómo está don Hernando?",
+      "accept": [],
+      "why": "How someone is: está, then the person."
+    },
+    {
+      "prompt": "Does Vale work here?",
+      "answer": "¿Vale trabaja aquí?",
+      "accept": [
+        "¿Trabaja Vale aquí?",
+        "¿Trabaja aquí Vale?"
+      ],
+      "why": "In a yes/no question the order can stay as it is."
+    },
+    {
+      "prompt": "What do the customers eat?",
+      "answer": "¿Qué comen los clientes?",
+      "accept": [],
+      "why": "Plural verb comen, then los clientes."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Dónde Vale vive?",
+      "right": "¿Dónde vive Vale?",
+      "why": "After the question word comes the verb, then the person."
+    },
+    {
+      "wrong": "¿Dónde hace Vale vivir?",
+      "right": "¿Dónde vive Vale?",
+      "why": "Spanish has no does. The verb itself carries the question."
+    },
+    {
+      "wrong": "¿Cuándo el jefe llega?",
+      "right": "¿Cuándo llega el jefe?",
+      "why": "Put el jefe after llega."
+    }
+  ],
+  "personal": "Think of someone you know. Ask two questions about them in Spanish: where they live and what they do."
+}

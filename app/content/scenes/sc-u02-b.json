@@ -1,0 +1,130 @@
+{
+  "id": "sc-u02-b",
+  "unit": "u02",
+  "title": "Looking for Mr Ruiz",
+  "brief": "You're Tomás. Rosa's bank has written about the café's account, and you need to see the manager, Mr Ruiz. At the front desk, ask for him, say who you are and where you live, and fix a time.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días. A la orden.",
+      "npcEn": "Good morning. How can I help?",
+      "intent": "Greet her and ask if Mr Ruiz is in.",
+      "accept": [
+        "Buenos días. ¿Está el señor Ruiz?",
+        "Buenos días, ¿el señor Ruiz está?",
+        "Hola, buenos días. Por favor, ¿el señor Ruiz está?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bel señor ruiz\\b",
+          "flags": "i"
+        },
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presente",
+          "person": "él/ella"
+        }
+      ],
+      "focus": "p:senor-don-article",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "El señor Ruiz está en una reunión. ¿Usted es…?",
+      "npcEn": "Mr Ruiz is in a meeting. And you are…?",
+      "intent": "Say your name is Tomás Herrera and you're from Rosa's café.",
+      "accept": [
+        "Me llamo Tomás Herrera. Soy del café de Rosa.",
+        "Soy Tomás Herrera, del café de Rosa.",
+        "Soy Tomás Herrera. Soy del café de Rosa."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "Herrera"
+        },
+        {
+          "type": "containsWord",
+          "word": "Rosa"
+        }
+      ],
+      "focus": "g:ser-identity",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Herrera? ¿Cómo se escribe?",
+      "npcEn": "Herrera? How do you spell it?",
+      "intent": "Spell it for her, starting with \"with an h\".",
+      "accept": [
+        "Con hache: h, e, r, r, e, r, a.",
+        "Con h: h, e, r, r, e, r, a.",
+        "H, e, r, r, e, r, a. Con hache."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "h\\W+e\\W+r\\W+r",
+          "flags": "i",
+          "label": "spell out H-E-R-R-E-R-A"
+        }
+      ],
+      "focus": "c:como-se-escribe",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Gracias. ¿Y dónde vive, señor Herrera?",
+      "npcEn": "Thank you. And where do you live, Mr Herrera?",
+      "intent": "Say you live in La Candelaria, on Eleventh Street, at Rosa's café.",
+      "accept": [
+        "Vivo en La Candelaria, en la calle once.",
+        "Vivo en la calle once, en La Candelaria. En el café de Rosa.",
+        "En La Candelaria. Vivo en la calle once."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "vivir",
+          "tense": "presente",
+          "person": "yo"
+        },
+        {
+          "type": "containsWord",
+          "word": "once"
+        }
+      ],
+      "focus": "g:present-er-ir",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Listo. El señor Ruiz termina la reunión a las once. ¿Está bien a las once y media?",
+      "npcEn": "All right. Mr Ruiz finishes his meeting at eleven. Is half past eleven OK?",
+      "intent": "Say that's fine and thank her.",
+      "accept": [
+        "Está bien, muchas gracias.",
+        "Sí, está bien. Gracias.",
+        "Muy bien, a las once y media. Muchas gracias.",
+        "Está bien. Muy amable, gracias."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "bien"
+        },
+        {
+          "type": "containsWord",
+          "word": "gracias"
+        }
+      ],
+      "focus": "p:bien-mal-vs-bueno-malo",
+      "next": null
+    }
+  ]
+}

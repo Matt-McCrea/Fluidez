@@ -1,0 +1,163 @@
+{
+  "id": "sc-u02-a",
+  "unit": "u02",
+  "title": "Seven o'clock, Don Hernando",
+  "brief": "You're Tomás. It's seven in the morning and Don Hernando is at the café for his tinto, as he is every day. He wants to know who this grandson really is: how you are, where you live and what you do. Answer him, and ask him something back.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Quiubo! Buenos días, Tomás. ¿Cómo está usted?",
+      "npcEn": "Hey! Good morning, Tomás. How are you?",
+      "intent": "Say you're fine, thanks, and ask how he is (he calls you usted, so do the same).",
+      "accept": [
+        "Bien, gracias, ¿y usted?",
+        "Estoy bien, gracias. ¿Y usted?",
+        "Muy bien, ¿y usted?",
+        "Bien, gracias. ¿Cómo está usted?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "bien"
+        },
+        {
+          "type": "containsWord",
+          "word": "usted"
+        }
+      ],
+      "focus": "p:bien-mal-vs-bueno-malo",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Bien, bien. ¿Y dónde vive usted? ¿En el café?",
+      "npcEn": "Fine, fine. And where do you live? In the café?",
+      "intent": "Say no: you live downtown, in La Candelaria.",
+      "accept": [
+        "No, vivo en el centro, en La Candelaria.",
+        "No, vivo en La Candelaria.",
+        "No. Vivo en el centro.",
+        "Vivo en La Candelaria, en el centro."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "vivir",
+          "tense": "presente",
+          "person": "yo"
+        }
+      ],
+      "focus": "g:present-er-ir",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y a qué se dedica usted?",
+      "npcEn": "And what do you do for a living?",
+      "intent": "Say you're an engineer and you work for a software company.",
+      "accept": [
+        "Soy ingeniero. Trabajo en una empresa de software.",
+        "Soy ingeniero y trabajo en una empresa de software.",
+        "Trabajo en una empresa de software. Soy ingeniero."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ingeniero"
+        },
+        {
+          "type": "verbForm",
+          "inf": "trabajar",
+          "tense": "presente",
+          "person": "yo"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "un ingeniero"
+          ]
+        }
+      ],
+      "focus": "p:ser-profession-no-article",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ingeniero, ¿no? ¿Y dónde está la empresa? ¿Aquí, en Bogotá?",
+      "npcEn": "An engineer, eh? And where's the company? Here, in Bogotá?",
+      "intent": "Say no, it's in Toronto.",
+      "accept": [
+        "No, está en Toronto.",
+        "No, la empresa está en Toronto.",
+        "No. Está en Toronto, en Canadá."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presente",
+          "person": "él/ella"
+        },
+        {
+          "type": "containsWord",
+          "word": "Toronto"
+        }
+      ],
+      "focus": "g:estar-location-states",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Ah, Toronto. Y usted habla como un profesor de inglés. ¿Está contento en Bogotá?",
+      "npcEn": "Ah, Toronto. And you talk like an English teacher. Are you happy in Bogotá?",
+      "intent": "Say yes, you're happy here, then ask him where he lives.",
+      "accept": [
+        "Sí, estoy contento. ¿Y usted, dónde vive?",
+        "Sí, estoy contento aquí. ¿Dónde vive usted?",
+        "Sí, estoy contento. ¿Dónde vive usted, don Hernando?"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presente",
+          "person": "yo"
+        },
+        {
+          "type": "question"
+        },
+        {
+          "type": "containsWord",
+          "word": "dónde"
+        }
+      ],
+      "focus": "g:questions",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¿Yo? Aquí, en el barrio, en la calle once. Y llego al café a las siete, todos los días.",
+      "npcEn": "Me? Here, in the neighbourhood, on Eleventh Street. And I get to the café at seven, every day.",
+      "intent": "Tell him that's good and say goodbye politely, using his name.",
+      "accept": [
+        "Está bien, don Hernando. Nos vemos.",
+        "Bueno, chao, don Hernando.",
+        "Muy bien. Nos vemos, don Hernando."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "don Hernando"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "el don"
+          ]
+        }
+      ],
+      "focus": "p:senor-don-article",
+      "next": null
+    }
+  ]
+}

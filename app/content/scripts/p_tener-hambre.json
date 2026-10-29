@@ -1,0 +1,185 @@
+{
+  "node": "p:tener-hambre",
+  "hook": {
+    "line": "Bogotá at six in the morning: 2,600 metres up, eight degrees, and the café isn't open yet. You're cold, hungry and half asleep. In Spanish you don't ARE any of these. You HAVE them.",
+    "es": "Tengo frío, tengo hambre y tengo sueño.",
+    "en": "I'm cold, I'm hungry and I'm sleepy."
+  },
+  "examples": [
+    {
+      "es": "Tengo hambre. ¿Hay pan?",
+      "en": "I'm hungry. Is there any bread?"
+    },
+    {
+      "es": "Tengo frío.",
+      "en": "I'm cold."
+    },
+    {
+      "es": "No tengo sueño, gracias.",
+      "en": "I'm not sleepy, thanks."
+    },
+    {
+      "es": "Tenemos sed. ¿Me regala dos aguas?",
+      "en": "We're thirsty. Could I have two waters?"
+    },
+    {
+      "es": "Tengo miedo del señor Altamira.",
+      "en": "I'm scared of Mr Altamira."
+    },
+    {
+      "es": "Tengo prisa: la reunión es a las nueve.",
+      "en": "I'm in a hurry: the meeting is at nine."
+    }
+  ],
+  "rule": "For a handful of body feelings, Spanish uses tener (to have) plus a noun, where English uses \"to be\" plus an adjective:\n\ntengo hambre: I'm hungry (I have hunger)\ntengo sed: I'm thirsty\ntengo frío / calor: I'm cold / hot\ntengo sueño: I'm sleepy\ntengo miedo: I'm scared\ntengo prisa: I'm in a hurry\n\nSo never estoy hambre. Think of it as carrying the feeling around for a while.\n\nFor we, it's tenemos: Tenemos hambre. The forms for you and she (tienes, tiene) arrive soon, with the other verbs that change inside.\n\nBecause these are nouns, \"very\" is mucho or mucha, not muy: tengo mucha hambre, tengo mucho frío. You'll use that once mucho joins your toolkit.",
+  "smallPrint": "These are fixed expressions with tener + noun (expresiones con tener).",
+  "soundTip": "Hambre starts with a silent h: AM-bre. And in frío the í carries the stress: FRÍ-o, two syllables.",
+  "readAndPick": [
+    {
+      "es": "Tengo hambre.",
+      "options": [
+        "I'm hungry.",
+        "I'm a man.",
+        "I'm tired."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No tengo frío.",
+      "options": [
+        "I'm not hot.",
+        "I'm not cold.",
+        "I don't have a cold."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tenemos sueño.",
+      "options": [
+        "We're dreaming.",
+        "They're sleepy.",
+        "We're sleepy."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tengo miedo.",
+      "options": [
+        "I'm scared.",
+        "I'm in a hurry.",
+        "I'm thirsty."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo prisa, Vale.",
+      "options": [
+        "I'm hungry, Vale.",
+        "I'm in a hurry, Vale.",
+        "I have a prize, Vale."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo calor en el carro.",
+      "options": [
+        "I'm cold in the car.",
+        "I have a hot car.",
+        "I'm hot in the car."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tengo hambre y no hay pan.",
+      "options": [
+        "I'm hungry and there's no bread.",
+        "I have bread and I'm not hungry.",
+        "I'm hungry and I want bread."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No tenemos sed; tenemos trabajo.",
+      "options": [
+        "We have no water; we have work.",
+        "We're not thirsty; we've got work to do.",
+        "We're thirsty; we're working."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "I'm hungry.",
+      "answer": "Tengo hambre.",
+      "accept": [
+        "Yo tengo hambre."
+      ],
+      "why": "Hunger is something you have in Spanish: tengo hambre."
+    },
+    {
+      "prompt": "I'm cold.",
+      "answer": "Tengo frío.",
+      "accept": [
+        "Yo tengo frío."
+      ],
+      "why": "Cold, the feeling, is a noun: tengo frío."
+    },
+    {
+      "prompt": "We're sleepy.",
+      "answer": "Tenemos sueño.",
+      "accept": [
+        "Nosotros tenemos sueño."
+      ],
+      "why": "We have = tenemos."
+    },
+    {
+      "prompt": "I'm not scared.",
+      "answer": "No tengo miedo.",
+      "accept": [
+        "Yo no tengo miedo."
+      ],
+      "why": "No goes before tengo."
+    },
+    {
+      "prompt": "I'm thirsty. Is there any water?",
+      "answer": "Tengo sed. ¿Hay agua?",
+      "accept": [
+        "Tengo sed. ¿Hay agua, por favor?"
+      ],
+      "why": "Tengo sed, then hay for \"is there\"."
+    },
+    {
+      "prompt": "I'm in a hurry: the meeting is at nine.",
+      "answer": "Tengo prisa: la reunión es a las nueve.",
+      "accept": [
+        "Tengo prisa. La reunión es a las nueve."
+      ],
+      "why": "Prisa is a noun too: tengo prisa."
+    },
+    {
+      "prompt": "I'm fine, but I'm hungry.",
+      "answer": "Estoy bien, pero tengo hambre.",
+      "accept": [],
+      "why": "How you are uses estar; hunger uses tener."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy hambre.",
+      "right": "Tengo hambre.",
+      "why": "Hambre is a thing, not a description, so you have it: tengo hambre."
+    },
+    {
+      "wrong": "Soy frío.",
+      "right": "Tengo frío.",
+      "why": "Soy frío means you're a cold person. Feeling cold is tengo frío."
+    },
+    {
+      "wrong": "Tengo muy hambre.",
+      "right": "Tengo hambre.",
+      "why": "Muy goes with describing words. With a noun like hambre, Spanish says mucha hambre; for now, tengo hambre is perfect."
+    }
+  ],
+  "personal": "How do you feel right now: hungry, thirsty, cold, sleepy? Write two sentences with tengo, and one with no tengo."
+}

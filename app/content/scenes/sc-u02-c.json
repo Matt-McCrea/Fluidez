@@ -1,0 +1,132 @@
+{
+  "id": "sc-u02-c",
+  "unit": "u02",
+  "title": "Mariana drops in",
+  "brief": "You're Tomás. Your childhood friend Mariana turns up at the café after twenty years. She wants the news: how you are, where Vale is, how Don Hernando is doing. You're thirsty and a little nervous. Find out where Don Hernando lives so you can visit him.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Tomás! ¿Qué más? ¿Cómo estás?",
+      "npcEn": "Tomás! How's it going? How are you?",
+      "intent": "Say you're fine, but a bit nervous.",
+      "accept": [
+        "Bien, pero estoy nervioso.",
+        "Estoy bien, pero nervioso.",
+        "Bien, gracias, pero estoy nervioso.",
+        "Estoy bien, pero estoy nervioso."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presente",
+          "person": "yo"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "nervioso",
+            "nerviosa"
+          ]
+        }
+      ],
+      "focus": "g:estar-location-states",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Nervioso? Tranquilo, Tomás. ¿Un tinto?",
+      "npcEn": "Nervous? Relax, Tomás. A coffee?",
+      "intent": "Say no thanks, you're thirsty: a juice, please.",
+      "accept": [
+        "No, gracias. Tengo sed. Un jugo, por favor.",
+        "Tengo sed. Un jugo, por favor.",
+        "No, tengo sed. ¿Un jugo, por favor?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btengo sed\\b",
+          "flags": "i"
+        },
+        {
+          "type": "containsWord",
+          "word": "jugo"
+        }
+      ],
+      "focus": "x:tener-estar-states",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Listo, un jugo de mora. ¿Y Vale? ¿Está en el café?",
+      "npcEn": "Sure, a blackberry juice. And Vale? Is she at the café?",
+      "intent": "Say no, she's at the bank with Mr Ruiz.",
+      "accept": [
+        "No, está en el banco con el señor Ruiz.",
+        "No, Vale está en el banco con el señor Ruiz.",
+        "No. Está en el banco, con el señor Ruiz."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presente",
+          "person": "él/ella"
+        },
+        {
+          "type": "containsWord",
+          "word": "banco"
+        }
+      ],
+      "focus": "g:estar-location-states",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Con el señor Ruiz? Uf. Y don Hernando está enfermo, ¿sabes? No está bien.",
+      "npcEn": "With Mr Ruiz? Ugh. And Don Hernando is ill, you know? He's not well.",
+      "intent": "Ask Mariana where Don Hernando lives.",
+      "accept": [
+        "¿Dónde vive don Hernando?",
+        "¿Dónde vive don Hernando, Mariana?",
+        "Mariana, ¿dónde vive don Hernando?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "regex",
+          "pattern": "d[oó]nde vive",
+          "flags": "i"
+        }
+      ],
+      "focus": "p:question-word-order",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vive aquí, en el barrio, en la calle catorce. El número doce.",
+      "npcEn": "He lives here, in the neighbourhood, on Fourteenth Street. Number twelve.",
+      "intent": "Thank her, and repeat the address so you remember it.",
+      "accept": [
+        "Gracias, Mariana. Calle catorce, número doce.",
+        "Muchas gracias. La calle catorce, el número doce.",
+        "Muy amable, Mariana. Calle catorce, número doce."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "catorce"
+        },
+        {
+          "type": "containsWord",
+          "word": "doce"
+        }
+      ],
+      "focus": "g:estar-location-states",
+      "next": null
+    }
+  ]
+}

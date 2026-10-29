@@ -1,0 +1,203 @@
+{
+  "node": "g:present-er-ir",
+  "hook": {
+    "line": "Where you live and what you eat are the first two things anyone in Bogotá asks a newcomer. Both verbs end in -er or -ir, and the good news is they work almost exactly like the -ar verbs you already have.",
+    "es": "Vivo en La Candelaria y como en el café de Rosa.",
+    "en": "I live in La Candelaria and I eat at Rosa's café."
+  },
+  "examples": [
+    {
+      "es": "Vivo en el centro.",
+      "en": "I live downtown."
+    },
+    {
+      "es": "¿Vives en Bogotá?",
+      "en": "Do you live in Bogotá? (to a friend)"
+    },
+    {
+      "es": "Vale vive en Chapinero.",
+      "en": "Vale lives in Chapinero."
+    },
+    {
+      "es": "Comemos a la una.",
+      "en": "We eat at one."
+    },
+    {
+      "es": "Los clientes comen pan con el tinto.",
+      "en": "The customers eat bread with their coffee."
+    },
+    {
+      "es": "Ustedes viven en el barrio, ¿cierto?",
+      "en": "You all live in the neighbourhood, right?"
+    }
+  ],
+  "rule": "Comer (to eat) and vivir (to live) take the same idea as trabajar: drop the ending, add who.\n\ncomo / vivo: I eat, I live\ncomes / vives: you eat, you live (a friend)\ncome / vive: he, she eats or lives; you (usted)\ncomemos / vivimos: we eat, we live\ncomen / viven: they eat or live; you all\n\nSpot the trick: where -ar verbs have an a (trabajas, trabaja), these have an e (comes, come). -er and -ir verbs are identical except in the we-form: comemos, but vivimos.\n\nCreer (to believe) goes like comer: creo, crees, cree. And verbs you met as fixed phrases join in for everyone except I: Vale sabe, hace, ve; ¿sabes?, ¿haces?",
+  "smallPrint": "This is the present tense (presente) of regular -er and -ir verbs.",
+  "soundTip": "Stress the same syllable in every form except we: VI-vo, VI-ves, VI-ven, but vi-VI-mos. Same with CO-mo, CO-men, co-ME-mos.",
+  "readAndPick": [
+    {
+      "es": "Vivimos en Medellín.",
+      "options": [
+        "We live in Medellín.",
+        "They live in Medellín.",
+        "I live in Medellín."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Comes pan?",
+      "options": [
+        "Do I eat bread?",
+        "Do you eat bread?",
+        "Does she eat bread?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Viven en el centro.",
+      "options": [
+        "He lives downtown.",
+        "We live downtown.",
+        "They live downtown."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale come a las dos.",
+      "options": [
+        "Vale eats at two.",
+        "I eat at two with Vale.",
+        "Vale and I eat at two."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No vivo en Toronto.",
+      "options": [
+        "She doesn't live in Toronto.",
+        "I don't live in Toronto.",
+        "Don't live in Toronto."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Usted vive en el barrio.",
+      "options": [
+        "I live in the neighbourhood.",
+        "They live in the neighbourhood.",
+        "You live in the neighbourhood."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Comemos en el parque.",
+      "options": [
+        "We eat in the park.",
+        "They eat in the park.",
+        "You all eat in the park."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás cree en el café.",
+      "options": [
+        "I believe in the café.",
+        "Tomás believes in the café.",
+        "Tomás sees the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Ustedes comen pan?",
+      "options": [
+        "Do they eat bread?",
+        "Do we eat bread?",
+        "Do you all eat bread?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale sabe inglés.",
+      "options": [
+        "Vale knows English.",
+        "I know English.",
+        "Vale makes English bread."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "I live in Bogotá.",
+      "answer": "Vivo en Bogotá.",
+      "accept": [
+        "Yo vivo en Bogotá."
+      ],
+      "why": "I = -o, just like trabajo."
+    },
+    {
+      "prompt": "We eat at one.",
+      "answer": "Comemos a la una.",
+      "accept": [
+        "Nosotros comemos a la una."
+      ],
+      "why": "We = -emos for -er verbs."
+    },
+    {
+      "prompt": "We live in the neighbourhood.",
+      "answer": "Vivimos en el barrio.",
+      "accept": [
+        "Nosotros vivimos en el barrio."
+      ],
+      "why": "-ir verbs use -imos for we, not -emos."
+    },
+    {
+      "prompt": "Vale lives in Chapinero.",
+      "answer": "Vale vive en Chapinero.",
+      "accept": [],
+      "why": "He or she = -e for both -er and -ir verbs."
+    },
+    {
+      "prompt": "Do you eat bread? (to a friend)",
+      "answer": "¿Comes pan?",
+      "accept": [],
+      "why": "You (a friend) = -es. The question marks do the asking."
+    },
+    {
+      "prompt": "The customers eat in the café.",
+      "answer": "Los clientes comen en el café.",
+      "accept": [],
+      "why": "They = -en for -er and -ir verbs."
+    },
+    {
+      "prompt": "I don't eat bread.",
+      "answer": "No como pan.",
+      "accept": [],
+      "why": "No goes right before the verb."
+    },
+    {
+      "prompt": "Vale knows English.",
+      "answer": "Vale sabe inglés.",
+      "accept": [],
+      "why": "Saber is regular for everyone but I: sabe like come."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Vivemos en el centro.",
+      "right": "Vivimos en el centro.",
+      "why": "Vivir is an -ir verb, so we is vivimos. Only -er verbs say -emos: comemos."
+    },
+    {
+      "wrong": "Vale vivo en Chapinero.",
+      "right": "Vale vive en Chapinero.",
+      "why": "Vivo means I live. For Vale (she), the ending is -e: vive."
+    },
+    {
+      "wrong": "Comas pan.",
+      "right": "Comes pan.",
+      "why": "After -ar verbs it's tempting to write an a, but -er verbs take e: comes, come, comen."
+    }
+  ],
+  "personal": "Where do you live, and where do you usually eat? Write two short sentences with vivo and como."
+}

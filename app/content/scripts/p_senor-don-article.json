@@ -1,0 +1,176 @@
+{
+  "node": "p:senor-don-article",
+  "hook": {
+    "line": "At the bank, Tomás asks for el señor Ruiz. When Mr Ruiz walks over, Tomás says \"Buenos días, señor Ruiz.\" The little el disappears, and that's not a typo.",
+    "es": "El señor Ruiz está en el banco. —Buenos días, señor Ruiz.",
+    "en": "Mr Ruiz is at the bank. —Good morning, Mr Ruiz."
+  },
+  "examples": [
+    {
+      "es": "El señor Ruiz trabaja en el banco.",
+      "en": "Mr Ruiz works at the bank."
+    },
+    {
+      "es": "Buenos días, señor Ruiz.",
+      "en": "Good morning, Mr Ruiz."
+    },
+    {
+      "es": "La señora Gómez no está en la oficina.",
+      "en": "Mrs Gómez isn't in the office."
+    },
+    {
+      "es": "Señora Gómez, ¿usted habla inglés?",
+      "en": "Mrs Gómez, do you speak English?"
+    },
+    {
+      "es": "Don Hernando llega a las siete.",
+      "en": "Don Hernando arrives at seven."
+    },
+    {
+      "es": "Buenos días, don Hernando.",
+      "en": "Good morning, Don Hernando."
+    }
+  ],
+  "rule": "Señor and señora work like nouns, so they take el and la when you talk ABOUT someone:\n\nEl señor Ruiz trabaja en el banco.\nLa señora Gómez no está.\n\nWhen you talk TO the person, the el or la drops:\n\nBuenos días, señor Ruiz.\nSeñora Gómez, ¿usted habla inglés?\n\nDon and doña are different. They go with a first name, they show warm respect (very Colombian), and they never take el or la, whether you talk to or about the person: Don Hernando llega. ¿Don Hernando, un tinto?\n\nPlain names never take an article either: Vale trabaja aquí, not la Vale.",
+  "smallPrint": "Señor and señora are titles that behave like common nouns, so they need the definite article in the third person.",
+  "soundTip": "In señor the ñ is the ny in canyon: se-ÑOR.",
+  "readAndPick": [
+    {
+      "es": "El señor Ruiz trabaja en el banco.",
+      "options": [
+        "Mr Ruiz is talking.",
+        "Someone is talking about Mr Ruiz.",
+        "Someone is talking to Mr Ruiz."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Buenos días, señor Ruiz.",
+      "options": [
+        "Someone is talking to Mr Ruiz.",
+        "Someone is talking about Mr Ruiz.",
+        "Mr Ruiz is talking about the bank."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La señora Gómez está en una reunión.",
+      "options": [
+        "Mrs Gómez is talking.",
+        "Someone is talking to Mrs Gómez.",
+        "Someone is talking about Mrs Gómez."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Señora Gómez, ¿usted vive en el centro?",
+      "options": [
+        "Someone is asking Mrs Gómez where she lives.",
+        "Someone is asking Mrs Gómez if she lives downtown.",
+        "Mrs Gómez is asking about the centre."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Don Hernando llega a las siete.",
+      "options": [
+        "Don Hernando arrives at seven.",
+        "Mr Hernando's son arrives at seven.",
+        "Don Hernando calls at seven."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El señor Pardo no está.",
+      "options": [
+        "Mr Pardo isn't here.",
+        "Mr Pardo isn't well.",
+        "I'm not Mr Pardo."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Gracias, señora Pardo.",
+      "options": [
+        "Thanks to Mrs Pardo, from someone else.",
+        "Mrs Pardo says thanks.",
+        "Someone is thanking Mrs Pardo to her face."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Don Hernando está bien?",
+      "options": [
+        "Is Mr Hernando's surname Bien?",
+        "Is Don Hernando OK?",
+        "Don Hernando is fine."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Mr Ruiz works at the bank.",
+      "answer": "El señor Ruiz trabaja en el banco.",
+      "accept": [],
+      "why": "You're talking about him, so el señor."
+    },
+    {
+      "prompt": "Good morning, Mr Ruiz.",
+      "answer": "Buenos días, señor Ruiz.",
+      "accept": [],
+      "why": "You're talking to him, so no el."
+    },
+    {
+      "prompt": "Mrs Gómez isn't in the office.",
+      "answer": "La señora Gómez no está en la oficina.",
+      "accept": [],
+      "why": "About her, so la señora."
+    },
+    {
+      "prompt": "Mrs Gómez, do you speak English?",
+      "answer": "Señora Gómez, ¿usted habla inglés?",
+      "accept": [
+        "Señora Gómez, ¿habla inglés?",
+        "Señora Gómez, ¿habla usted inglés?"
+      ],
+      "why": "To her face, so just señora Gómez."
+    },
+    {
+      "prompt": "Don Hernando arrives at seven.",
+      "answer": "Don Hernando llega a las siete.",
+      "accept": [],
+      "why": "Don never takes el, not even when you talk about him."
+    },
+    {
+      "prompt": "Thanks, Don Hernando.",
+      "answer": "Gracias, don Hernando.",
+      "accept": [],
+      "why": "Don goes with the first name, with no article."
+    },
+    {
+      "prompt": "Mrs Pardo talks to the boss.",
+      "answer": "La señora Pardo habla con el jefe.",
+      "accept": [],
+      "why": "About her: la señora."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Buenos días, el señor Ruiz.",
+      "right": "Buenos días, señor Ruiz.",
+      "why": "When you speak to someone, señor stands alone."
+    },
+    {
+      "wrong": "Señor Ruiz trabaja en el banco.",
+      "right": "El señor Ruiz trabaja en el banco.",
+      "why": "Talking about him needs the el: el señor Ruiz."
+    },
+    {
+      "wrong": "El don Hernando llega a las siete.",
+      "right": "Don Hernando llega a las siete.",
+      "why": "Don and doña never take an article."
+    }
+  ],
+  "personal": "Think of an older neighbour or colleague. Say one thing about them with el señor or la señora, then greet them directly."
+}

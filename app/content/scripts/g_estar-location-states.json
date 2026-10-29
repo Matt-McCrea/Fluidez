@@ -1,0 +1,215 @@
+{
+  "node": "g:estar-location-states",
+  "hook": {
+    "line": "Where is everybody? Where's the bank? And how are you today, really? Spanish answers all of these with one verb, and it's not soy.",
+    "es": "¿Dónde está Vale? —Está en el café.",
+    "en": "Where's Vale? —She's at the café."
+  },
+  "examples": [
+    {
+      "es": "El café está en La Candelaria.",
+      "en": "The café is in La Candelaria."
+    },
+    {
+      "es": "Estoy en el centro.",
+      "en": "I'm downtown."
+    },
+    {
+      "es": "Vale no está en el café; está en el centro.",
+      "en": "Vale isn't at the café; she's downtown."
+    },
+    {
+      "es": "¿Cómo estás? —Estoy bien.",
+      "en": "How are you? —I'm fine."
+    },
+    {
+      "es": "Estamos en la universidad.",
+      "en": "We're at the university."
+    },
+    {
+      "es": "Estoy cansado.",
+      "en": "I'm tired."
+    },
+    {
+      "es": "El pan está listo.",
+      "en": "The bread is ready."
+    }
+  ],
+  "rule": "English uses \"to be\" for everything. Spanish splits it. You already know soy, eres, es for who and what someone is. For two other jobs, Spanish uses estar:\n\nWhere something or someone is: El banco está en el centro.\nHow someone is right now: Estoy bien. Estoy cansado.\n\nestoy: I am\nestás: you are (a friend)\nestá: he, she, it is; you are (usted)\nestamos: we are\nestán: they are; you all are\n\nA quick test: if the answer is a place, or how you feel today, reach for estar. Tomás es canadiense (who he is), but Tomás está en Bogotá (where he is).",
+  "smallPrint": "Teachers call this estar for location and states.",
+  "soundTip": "The stress sits at the end: es-TOY, es-TÁS, es-TÁ, es-TÁN. The written accent shows it, and it also tells está (is) apart from esta (this).",
+  "readAndPick": [
+    {
+      "es": "Vale está en el café.",
+      "options": [
+        "Vale is in the café.",
+        "Vale is a café.",
+        "Vale works in the café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estamos en el centro.",
+      "options": [
+        "They're downtown.",
+        "We're downtown.",
+        "I'm downtown."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Estás en el parque?",
+      "options": [
+        "Is she in the park?",
+        "Do you like the park?",
+        "Are you in the park?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El hospital está en el centro.",
+      "options": [
+        "The hospital is downtown.",
+        "The hospital is a centre.",
+        "The hospital is near the centre."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy bien, gracias.",
+      "options": [
+        "I'm good at it, thanks.",
+        "I'm fine, thanks.",
+        "It's fine, thanks."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los estudiantes están en la universidad.",
+      "options": [
+        "The students are university students.",
+        "The students study at the university.",
+        "The students are at the university."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás no está en Toronto.",
+      "options": [
+        "Tomás isn't in Toronto.",
+        "Tomás isn't from Toronto.",
+        "Tomás doesn't live in Toronto."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El tinto está listo.",
+      "options": [
+        "The coffee is clever.",
+        "The coffee is ready.",
+        "The coffee is a black coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Usted está en el hospital.",
+      "options": [
+        "You're a hospital doctor.",
+        "I'm at the hospital.",
+        "You're at the hospital."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás es de Toronto, pero está en Bogotá.",
+      "options": [
+        "Tomás is from Toronto but he's in Bogotá.",
+        "Tomás is in Toronto but he's from Bogotá.",
+        "Tomás is from Toronto and Bogotá."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "I'm at the university.",
+      "answer": "Estoy en la universidad.",
+      "accept": [
+        "Yo estoy en la universidad."
+      ],
+      "why": "Where you are uses estar: estoy."
+    },
+    {
+      "prompt": "The café is in La Candelaria.",
+      "answer": "El café está en La Candelaria.",
+      "accept": [],
+      "why": "A place is a where, so it's está, not es."
+    },
+    {
+      "prompt": "We're in the park.",
+      "answer": "Estamos en el parque.",
+      "accept": [
+        "Nosotros estamos en el parque."
+      ],
+      "why": "We = estamos."
+    },
+    {
+      "prompt": "How are you? (to a friend)",
+      "answer": "¿Cómo estás?",
+      "accept": [],
+      "why": "How you are right now uses estar."
+    },
+    {
+      "prompt": "I'm fine.",
+      "answer": "Estoy bien.",
+      "accept": [
+        "Yo estoy bien."
+      ],
+      "why": "Bien is how you are, so estar."
+    },
+    {
+      "prompt": "I'm tired.",
+      "answer": "Estoy cansado.",
+      "accept": [
+        "Yo estoy cansado."
+      ],
+      "why": "How you feel today takes estar."
+    },
+    {
+      "prompt": "Vale isn't in Medellín.",
+      "answer": "Vale no está en Medellín.",
+      "accept": [],
+      "why": "No goes right before está."
+    },
+    {
+      "prompt": "The students are at the hospital.",
+      "answer": "Los estudiantes están en el hospital.",
+      "accept": [],
+      "why": "They = están."
+    },
+    {
+      "prompt": "Tomás is Canadian, but he's in Bogotá.",
+      "answer": "Tomás es canadiense, pero está en Bogotá.",
+      "accept": [],
+      "why": "Es for who he is, está for where he is."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El café es en La Candelaria.",
+      "right": "El café está en La Candelaria.",
+      "why": "Almost. Es tells you what something is. For where it is, Spanish uses está."
+    },
+    {
+      "wrong": "Soy bien.",
+      "right": "Estoy bien.",
+      "why": "How you are today takes estar: estoy bien."
+    },
+    {
+      "wrong": "Vale esta en el colegio.",
+      "right": "Vale está en el colegio.",
+      "why": "Without the accent, esta means this. The verb is está."
+    }
+  ],
+  "personal": "Where are you right now, and how are you? Write it in two short sentences with estoy."
+}

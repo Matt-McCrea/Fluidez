@@ -1,0 +1,182 @@
+{
+  "node": "p:bien-mal-vs-bueno-malo",
+  "hook": {
+    "line": "Don Hernando says Vale's bread is good and that Tomás speaks Spanish well. English uses good and well; so does Spanish, and it's just as fussy about them.",
+    "es": "El pan es bueno, y Tomás habla bien.",
+    "en": "The bread is good, and Tomás speaks well."
+  },
+  "examples": [
+    {
+      "es": "El pan de Vale es bueno.",
+      "en": "Vale's bread is good."
+    },
+    {
+      "es": "Vale habla bien inglés.",
+      "en": "Vale speaks English well."
+    },
+    {
+      "es": "El tinto de la tienda es malo.",
+      "en": "The coffee from the shop is bad."
+    },
+    {
+      "es": "Tomás escribe mal el español.",
+      "en": "Tomás writes Spanish badly."
+    },
+    {
+      "es": "Estoy bien, gracias.",
+      "en": "I'm well, thanks."
+    },
+    {
+      "es": "¿A las seis? —Está bien.",
+      "en": "At six? —That's fine."
+    }
+  ],
+  "rule": "Bueno and malo describe a thing or person, what it's like: El pan es bueno. Es un jefe malo.\n\nBien and mal describe how something is done, or how someone is: Vale habla bien. Tomás escribe mal. Estoy bien.\n\nA quick test: if English says good or bad, use bueno or malo. If English says well or badly, use bien or mal.\n\nTwo extras. Bien and mal never change their ending, whoever you talk about. And está bien on its own means OK or that's fine.\n\nBe careful with people: estoy bien means I'm fine. Estoy bueno means something like I'm hot, as in attractive. Learners say it by accident all the time.",
+  "smallPrint": "Bueno/malo are adjectives; bien/mal are adverbs.",
+  "readAndPick": [
+    {
+      "es": "Vale habla bien.",
+      "options": [
+        "Vale is good.",
+        "Vale speaks well.",
+        "Vale speaks about good things."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El pan es bueno.",
+      "options": [
+        "The bread is good.",
+        "The bread is well.",
+        "The bread is fine now."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy mal.",
+      "options": [
+        "I'm bad.",
+        "I'm wrong.",
+        "I'm not doing well."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es un jefe malo.",
+      "options": [
+        "He's a bad boss.",
+        "The boss is ill.",
+        "The boss works badly."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás escribe mal.",
+      "options": [
+        "Tomás writes bad things.",
+        "Tomás writes badly.",
+        "Tomás is a bad writer."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿A las cinco? —Está bien.",
+      "options": [
+        "At five? —He's fine.",
+        "At five? —It's good.",
+        "At five? —OK, that's fine."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El tinto está bueno.",
+      "options": [
+        "The coffee tastes good.",
+        "The coffee is well.",
+        "The coffee is ready."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los estudiantes leen bien.",
+      "options": [
+        "The students are good readers of books.",
+        "The students read well.",
+        "The students read good books."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "The bread is good.",
+      "answer": "El pan es bueno.",
+      "accept": [],
+      "why": "Good describes the bread, so bueno."
+    },
+    {
+      "prompt": "Vale speaks English well.",
+      "answer": "Vale habla bien inglés.",
+      "accept": [
+        "Vale habla inglés bien."
+      ],
+      "why": "Well says how she speaks, so bien."
+    },
+    {
+      "prompt": "I'm fine, thanks.",
+      "answer": "Estoy bien, gracias.",
+      "accept": [
+        "Yo estoy bien, gracias."
+      ],
+      "why": "How you are takes bien, never bueno."
+    },
+    {
+      "prompt": "The coffee is bad.",
+      "answer": "El tinto es malo.",
+      "accept": [
+        "El café es malo.",
+        "El tinto está malo.",
+        "El café está malo."
+      ],
+      "why": "Bad describes the coffee: malo."
+    },
+    {
+      "prompt": "Tomás writes badly.",
+      "answer": "Tomás escribe mal.",
+      "accept": [],
+      "why": "Badly says how he writes: mal."
+    },
+    {
+      "prompt": "He's a good boss.",
+      "answer": "Es un jefe bueno.",
+      "accept": [
+        "Es un buen jefe."
+      ],
+      "why": "Good describes the boss."
+    },
+    {
+      "prompt": "At seven? That's fine.",
+      "answer": "¿A las siete? Está bien.",
+      "accept": [],
+      "why": "Está bien is the everyday OK."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Vale habla bueno.",
+      "right": "Vale habla bien.",
+      "why": "Bueno describes things. For how she speaks, use bien."
+    },
+    {
+      "wrong": "Estoy bueno.",
+      "right": "Estoy bien.",
+      "why": "Estoy bien is I'm fine. Estoy bueno means you're attractive, which might not be the message."
+    },
+    {
+      "wrong": "Es un pan bien.",
+      "right": "Es un pan bueno.",
+      "why": "Bien never describes a thing directly; the bread is bueno."
+    }
+  ],
+  "personal": "What do you do well, and what do you do badly? Write one sentence with bien and one with mal."
+}

@@ -1,0 +1,188 @@
+{
+  "node": "x:tener-estar-states",
+  "hook": {
+    "line": "Tomás tells Vale he's nervous, and then that he's thirsty. Two feelings, two different verbs. Mixing them up is the classic slip, so here they are side by side.",
+    "es": "Estoy nervioso y tengo sed.",
+    "en": "I'm nervous and I'm thirsty."
+  },
+  "examples": [
+    {
+      "es": "Tengo sed.",
+      "en": "I'm thirsty."
+    },
+    {
+      "es": "Estoy enfermo.",
+      "en": "I'm ill."
+    },
+    {
+      "es": "Estoy aburrido en la reunión.",
+      "en": "I'm bored in the meeting."
+    },
+    {
+      "es": "No estoy nervioso; tengo sed.",
+      "en": "I'm not nervous; I'm thirsty."
+    },
+    {
+      "es": "Estamos bien, pero tenemos sed.",
+      "en": "We're fine, but we're thirsty."
+    },
+    {
+      "es": "Estoy cansado, pero no tengo sueño.",
+      "en": "I'm tired, but I'm not sleepy."
+    }
+  ],
+  "rule": "Two ways to say how you feel, and English uses \"I'm\" for both.\n\nWith a describing word (an adjective), use estar:\nestoy cansado, estoy enfermo, estoy nervioso, estoy ocupado, estoy bien\n\nWith a noun, the feeling is something you have, so use tener:\ntengo sed, tengo hambre, tengo frío, tengo sueño, tengo miedo\n\nThe test: could you put \"a lot of\" in front of it in English? A lot of thirst works, so tener. A lot of ill doesn't, so estar.\n\nAnd remember: describing words change for a woman (enferma, contenta), but sed never changes.",
+  "smallPrint": "Estar + adjective vs tener + noun for physical and emotional states.",
+  "readAndPick": [
+    {
+      "es": "Tengo sed.",
+      "options": [
+        "I'm thirsty.",
+        "I'm bored.",
+        "I'm ill."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy enfermo.",
+      "options": [
+        "I'm thirsty.",
+        "I'm ill.",
+        "I'm hungry."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy aburrido, pero no tengo sed.",
+      "options": [
+        "I'm thirsty, but not bored.",
+        "I'm bored and thirsty.",
+        "I'm bored, but I'm not thirsty."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Estás nervioso?",
+      "options": [
+        "Are you nervous?",
+        "Are you thirsty?",
+        "Are you calm?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tenemos sed y estamos bien.",
+      "options": [
+        "We're fine and not thirsty.",
+        "We're thirsty and we're fine.",
+        "We're thirsty and nervous."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy tranquilo; tengo sed.",
+      "options": [
+        "I'm thirsty and nervous.",
+        "I'm calm and not thirsty.",
+        "I'm calm; I'm thirsty."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No estoy enfermo.",
+      "options": [
+        "I'm not ill.",
+        "I'm not thirsty.",
+        "I'm not bored."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo sed y estoy bien.",
+      "options": [
+        "I'm well and I have water.",
+        "I'm thirsty and I'm fine.",
+        "I'm not thirsty, I'm fine."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "I'm thirsty.",
+      "answer": "Tengo sed.",
+      "accept": [],
+      "why": "Sed is a noun, so you have it."
+    },
+    {
+      "prompt": "I'm ill.",
+      "answer": "Estoy enfermo.",
+      "accept": [],
+      "why": "Enfermo describes you: estar."
+    },
+    {
+      "prompt": "I'm bored.",
+      "answer": "Estoy aburrido.",
+      "accept": [],
+      "why": "Aburrido describes you: estar."
+    },
+    {
+      "prompt": "I'm not nervous; I'm thirsty.",
+      "answer": "No estoy nervioso; tengo sed.",
+      "accept": [
+        "No estoy nervioso, tengo sed."
+      ],
+      "why": "Nervous takes estar; thirst takes tener."
+    },
+    {
+      "prompt": "We're fine, but we're thirsty.",
+      "answer": "Estamos bien, pero tenemos sed.",
+      "accept": [],
+      "why": "Estamos for how you are, tenemos for the thirst."
+    },
+    {
+      "prompt": "I'm tired and hungry.",
+      "answer": "Estoy cansado y tengo hambre.",
+      "accept": [],
+      "why": "Cansado describes you (estar); hambre is a thing you have (tener)."
+    },
+    {
+      "prompt": "I'm not busy; I'm cold.",
+      "answer": "No estoy ocupado; tengo frío.",
+      "accept": [
+        "No estoy ocupado, tengo frío."
+      ],
+      "why": "Ocupado describes you; frío is a noun."
+    },
+    {
+      "prompt": "Don Hernando is calm.",
+      "answer": "Don Hernando está tranquilo.",
+      "accept": [],
+      "why": "Tranquilo describes him: está."
+    },
+    {
+      "prompt": "Simón is nervous, but he's not ill.",
+      "answer": "Simón está nervioso, pero no está enfermo.",
+      "accept": [],
+      "why": "Both are describing words, so both take estar."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy sed.",
+      "right": "Tengo sed.",
+      "why": "Sed is a noun: you have it. Tengo sed."
+    },
+    {
+      "wrong": "Tengo enfermo.",
+      "right": "Estoy enfermo.",
+      "why": "Enfermo describes you, so it goes with estar."
+    },
+    {
+      "wrong": "Tengo cansado.",
+      "right": "Estoy cansado.",
+      "why": "Cansado is a describing word: estoy cansado."
+    }
+  ],
+  "personal": "How are you right now? Write one sentence with estoy and one with tengo."
+}
