@@ -1,0 +1,696 @@
+[
+  {
+    "id": "w-u18-01",
+    "unit": "u18",
+    "prompt": "You have just stepped off the bus at the Medellín terminal. Text Vale (someone your age, tú): say you have arrived, say you are tired, and ask where she is.",
+    "minWords": 25,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "llegué",
+        "label": "say you arrived: llegué"
+      },
+      {
+        "type": "question",
+        "label": "ask where she is"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "cansado",
+          "cansada"
+        ],
+        "label": "say you are tired"
+      }
+    ],
+    "model": "¡Hola, Vale! Ya llegué a la terminal. El viaje fue largo y estoy muy cansado. ¿Dónde estás? Te espero cerca de la salida, al lado de la recepción.",
+    "focus": "c:ya-llegue",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:ya-llegue",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:questions",
+      "g:ser-identity",
+      "l:cansado",
+      "l:cerca",
+      "l:dónde",
+      "l:esperar",
+      "l:estar",
+      "l:lado",
+      "l:largo",
+      "l:llegar",
+      "l:recepción",
+      "l:salida",
+      "l:ser",
+      "l:terminal",
+      "l:viaje",
+      "p:cerca-de",
+      "p:me-te-nos-objects",
+      "p:position-de",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u18-02",
+    "unit": "u18",
+    "prompt": "You are at the ticket window of the bus terminal. Ask the clerk (a stranger, usted) for a ticket to Medellín, return, for Friday, and ask the price.",
+    "minWords": 25,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "ida y vuelta",
+        "label": "ask for a return ticket: ida y vuelta"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bpara (el )?viernes\\b",
+        "label": "say it is for Friday: para el viernes"
+      },
+      {
+        "type": "question",
+        "label": "ask the price"
+      }
+    ],
+    "model": "Buenos días. Quiero un tiquete para Medellín, ida y vuelta, para el viernes. ¿Cuánto cuesta? Tengo mi pasaporte aquí. ¿Hay un bus por la mañana?",
+    "focus": "c:ida-y-vuelta",
+    "requires": [
+      "c:cuanto-cuesta",
+      "c:hay",
+      "c:hola-buenos-dias",
+      "c:ida-y-vuelta",
+      "c:quiero",
+      "c:tengo",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:questions",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:aquí",
+      "l:bueno",
+      "l:bus",
+      "l:costar",
+      "l:cuánto",
+      "l:día",
+      "l:ida",
+      "l:mañana",
+      "l:pasaporte",
+      "l:querer",
+      "l:tener",
+      "l:tiquete",
+      "l:viernes",
+      "l:vuelta",
+      "p:aqui-ahi-alla",
+      "p:days-el-lunes",
+      "p:para-inf",
+      "p:por-la-manana",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u18-03",
+    "unit": "u18",
+    "prompt": "You are booking a room at a hostel by message. Write to the receptionist (a stranger, usted): say you have a booking, give the name it is under, and ask what time you can arrive.",
+    "minWords": 25,
+    "maxWords": 55,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "reserva",
+        "label": "say you have a booking"
+      },
+      {
+        "type": "regex",
+        "pattern": "a nombre de",
+        "label": "say whose name it is under: a nombre de"
+      },
+      {
+        "type": "question",
+        "label": "ask about arrival time"
+      }
+    ],
+    "model": "Buenos días. Tengo una reserva a nombre de Tomás Ruiz para dos noches. Llego el viernes por la tarde. ¿A qué hora puedo entrar a la habitación? Muchas gracias.",
+    "focus": "c:a-nombre-de",
+    "requires": [
+      "c:a-nombre-de",
+      "c:a-que-hora",
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "c:puedo",
+      "c:tengo",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:bueno",
+      "l:día",
+      "l:entrar",
+      "l:habitación",
+      "l:hora",
+      "l:llegar",
+      "l:noche",
+      "l:nombre",
+      "l:poder",
+      "l:qué",
+      "l:reserva",
+      "l:tarde",
+      "l:tener",
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:para-inf",
+      "p:por-la-manana"
+    ]
+  },
+  {
+    "id": "w-u18-04",
+    "unit": "u18",
+    "prompt": "Don Hernando is leaving by bus for the coast tomorrow. Write him a short note (an older man you call usted): wish him a good trip and say you will keep his table ready.",
+    "minWords": 25,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "buen viaje",
+        "label": "wish him a good trip: buen viaje"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tu ",
+          "tus ",
+          "tienes",
+          "puedes",
+          "eres"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Don Hernando, ¡buen viaje! Aquí vamos a guardar su mesa y su tinto. Gracias por todo, usted siempre fue muy amable con mi abuela. Cuídese mucho y llámeme desde Santa Marta.",
+    "focus": "c:buen-viaje",
+    "requires": [
+      "c:buen-viaje",
+      "c:muy-amable",
+      "c:vamos-a",
+      "g:commands-usted",
+      "g:commands-with-pronouns",
+      "g:ir-a-plans",
+      "g:preterite-ser-ir-hacer",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "l:abuela",
+      "l:amable",
+      "l:aquí",
+      "l:buen",
+      "l:cuidarse",
+      "l:guardar",
+      "l:ir",
+      "l:llamar",
+      "l:mesa",
+      "l:ser",
+      "l:siempre",
+      "l:tinto",
+      "l:viaje",
+      "p:aqui-ahi-alla",
+      "p:don-dona-nombre",
+      "p:frequency-scale",
+      "p:gracias-por",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u18-05",
+    "unit": "u18",
+    "prompt": "At the terminal, an older woman (a stranger, usted) is struggling with a heavy suitcase and a bag. Write what you say to offer help, and ask where she is going.",
+    "minWords": 25,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "ayudo",
+        "label": "offer help: ¿Le ayudo…?"
+      },
+      {
+        "type": "question",
+        "label": "ask where she is going"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "te ayudo",
+          "tu ",
+          "eres",
+          "estás"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas tardes, señora. ¿Le ayudo con la maleta? Esa maleta es muy grande. ¿Para dónde va usted? Yo puedo llevarla hasta el bus, porque tengo tiempo.",
+    "focus": "c:le-ayudo",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:le-ayudo",
+      "c:porque",
+      "c:puedo",
+      "c:tengo",
+      "g:cause-result",
+      "g:demonstratives",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:ayudar",
+      "l:buena",
+      "l:bus",
+      "l:dónde",
+      "l:grande",
+      "l:ir",
+      "l:llevar",
+      "l:maleta",
+      "l:poder",
+      "l:ser",
+      "l:señora",
+      "l:tarde",
+      "l:tener",
+      "l:tiempo",
+      "p:llevar-traer",
+      "p:para-inf",
+      "p:prep-questions-basic",
+      "p:quantifiers-basic",
+      "p:question-word-order"
+    ]
+  },
+  {
+    "id": "w-u18-06",
+    "unit": "u18",
+    "prompt": "Your friend Mariana (your age, tú) is moving to a new apartment this weekend and is packing alone. Text her: offer help, say what day you are free, and ask what time to come.",
+    "minWords": 25,
+    "maxWords": 55,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "quieres que te ayude",
+        "label": "offer help: ¿Quieres que te ayude?"
+      },
+      {
+        "type": "question",
+        "label": "ask what time"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "sábado",
+          "domingo"
+        ],
+        "label": "name a day"
+      }
+    ],
+    "model": "Mariana, ¿quieres que te ayude con las cajas? El sábado estoy libre todo el día. Puedo llevar mi carro para las cajas grandes. ¿A qué hora llego?",
+    "focus": "c:quieres-que-te-ayude",
+    "requires": [
+      "c:a-que-hora",
+      "c:puedo",
+      "c:quieres-que-te-ayude",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:caja",
+      "l:carro",
+      "l:día",
+      "l:estar",
+      "l:grande",
+      "l:hora",
+      "l:libre",
+      "l:llegar",
+      "l:llevar",
+      "l:poder",
+      "l:querer",
+      "l:qué",
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:para-inf",
+      "p:possessives-basic",
+      "p:todos-los-dias"
+    ]
+  },
+  {
+    "id": "w-u18-07",
+    "unit": "u18",
+    "prompt": "You are at the hotel in Medellín. Leave a note for Vale (your age, tú): say you bought a gift for her mother and that you will give it to her tomorrow morning.",
+    "minWords": 25,
+    "maxWords": 55,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bpara (tu|su) (mamá|madre)",
+        "label": "say the gift is for her mother: para tu mamá"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bpor la mañana\\b",
+        "label": "say in the morning: por la mañana"
+      },
+      {
+        "type": "containsWord",
+        "word": "compré",
+        "label": "say you bought it: compré"
+      }
+    ],
+    "model": "Vale, compré un regalo para tu mamá en el centro. Es un café de La Candelaria, el favorito de mi abuela. Voy a dárselo mañana por la mañana. ¿Crees que le va a gustar?",
+    "focus": "g:por-para-1",
+    "requires": [
+      "c:compre-trabaje",
+      "c:voy-a",
+      "g:double-pronouns",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
+      "g:present-er-ir",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:abuela",
+      "l:café",
+      "l:centro",
+      "l:comprar",
+      "l:creer",
+      "l:dar",
+      "l:favorito",
+      "l:gustar",
+      "l:ir",
+      "l:mamá",
+      "l:mañana",
+      "l:regalo",
+      "l:ser",
+      "p:para-inf",
+      "p:por-la-manana",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u18-08",
+    "unit": "u18",
+    "prompt": "Vale's family hosted you for the weekend. Write a thank-you text to Vale (tú): thank her for everything and for one specific thing, and say you will leave for Bogotá on Sunday.",
+    "minWords": 25,
+    "maxWords": 55,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "gracias por",
+        "label": "thank her with gracias por"
+      },
+      {
+        "type": "regex",
+        "pattern": "salgo para bogotá|salimos para bogotá|voy para bogotá|regreso para bogotá",
+        "label": "say you are leaving for Bogotá: para Bogotá"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "gracias para"
+        ],
+        "label": "gracias por, not para"
+      }
+    ],
+    "model": "Vale, mil gracias por todo. Gracias por el almuerzo y por la compañía de tu familia. Salgo para Bogotá el domingo por la noche. ¡Qué fin de semana tan bonito!",
+    "focus": "g:por-para-1",
+    "requires": [
+      "c:hago-salgo-vengo",
+      "g:gender-articles",
+      "g:por-para-1",
+      "g:yo-irregular",
+      "l:almuerzo",
+      "l:bonito",
+      "l:compañía",
+      "l:domingo",
+      "l:familia",
+      "l:fin",
+      "l:noche",
+      "l:qué",
+      "l:salir",
+      "l:semana",
+      "p:days-el-lunes",
+      "p:exclamations-basic",
+      "p:gracias-por",
+      "p:para-inf",
+      "p:por-la-manana",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u18-09",
+    "unit": "u18",
+    "prompt": "You are in your hotel room and call reception (a stranger, usted). Ask them to bring you two towels and to take your bag to the lobby, using commands with the little words (me, le, la).",
+    "minWords": 25,
+    "maxWords": 55,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\btráigame\\b|\\btraiga(me)\\b",
+        "label": "ask them to bring it to you: tráigame"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bllévele\\b|\\bllévela\\b|\\blléveme\\b|\\blleve(la|me|le)\\b",
+        "label": "ask them to take it: llévela"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tráeme",
+          "llévala"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas noches. Soy de la habitación doce. Tráigame dos toallas, por favor. También tengo una maleta aquí: llévela a la recepción. Mañana salgo muy temprano. Muchas gracias.",
+    "focus": "g:commands-with-pronouns",
+    "requires": [
+      "c:gracias-de-nada",
+      "c:hago-salgo-vengo",
+      "c:hola-buenos-dias",
+      "c:por-favor",
+      "c:soy-de",
+      "c:tengo",
+      "g:commands-usted",
+      "g:commands-with-pronouns",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:yo-irregular",
+      "l:aquí",
+      "l:buena",
+      "l:favor",
+      "l:habitación",
+      "l:llevar",
+      "l:maleta",
+      "l:mañana",
+      "l:noche",
+      "l:recepción",
+      "l:salir",
+      "l:ser",
+      "l:temprano",
+      "l:tener",
+      "l:toalla",
+      "l:traer",
+      "p:aqui-ahi-alla",
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:personal-a",
+      "p:quantifiers-basic",
+      "p:request-ladder"
+    ]
+  },
+  {
+    "id": "w-u18-10",
+    "unit": "u18",
+    "prompt": "Your friend Vale (your age, tú) is about to sign the lease on her own bakery. Write her a short message: tell her to read the contract carefully, to sign it only when she is sure, and to call you afterwards.",
+    "minWords": 25,
+    "maxWords": 55,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\blee(lo|la)\\b|\\bléelo\\b|\\bléela\\b",
+        "label": "tell her to read it: léelo"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bfírma(lo|la)\\b",
+        "label": "tell her to sign it: fírmalo"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bllámame\\b",
+        "label": "tell her to call you: llámame"
+      }
+    ],
+    "model": "Vale, léelo con tiempo antes de firmar. Fírmalo si todo está claro. Llámame esta noche, por favor. Quiero saber cómo te fue. El lunes estoy en el café todo el día.",
+    "focus": "g:commands-with-pronouns",
+    "requires": [
+      "c:claro-listo",
+      "c:como-te-fue",
+      "c:por-favor",
+      "c:quiero",
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:direct-objects",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:prep-infinitive",
+      "g:si-present",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:antes",
+      "l:café",
+      "l:claro",
+      "l:cómo",
+      "l:día",
+      "l:estar",
+      "l:favor",
+      "l:firmar",
+      "l:leer",
+      "l:llamar",
+      "l:lunes",
+      "l:noche",
+      "l:querer",
+      "l:saber",
+      "l:ser",
+      "l:tiempo",
+      "p:days-el-lunes",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
+      "p:request-ladder",
+      "p:saber-conocer",
+      "p:todos-los-dias"
+    ]
+  },
+  {
+    "id": "w-u18-11",
+    "unit": "u18",
+    "prompt": "Your suitcase did not come off the plane. At the airline desk, talk to the clerk (a stranger, usted): say the grey suitcase is yours, say the one on the belt is not yours, and ask when they will find it.",
+    "minWords": 25,
+    "maxWords": 55,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(es|son) (mía|mío|mías|míos)",
+        "label": "say it is mine: es mía"
+      },
+      {
+        "type": "negation",
+        "label": "say the other one is not yours"
+      },
+      {
+        "type": "question",
+        "label": "ask when they will find it"
+      }
+    ],
+    "model": "Disculpe, la maleta gris es mía. Esa de la banda no es mía. Mi maleta no llegó con el vuelo de Bogotá. ¿Cuándo la van a encontrar? Mi hotel está en el centro.",
+    "focus": "g:possessives-stressed",
+    "requires": [
+      "c:perdon-disculpe",
+      "g:commands-usted",
+      "g:demonstratives",
+      "g:direct-objects",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:possessives-stressed",
+      "g:preterite-ar",
+      "g:questions",
+      "g:ser-identity",
+      "l:banda",
+      "l:centro",
+      "l:cuándo",
+      "l:disculpar",
+      "l:encontrar",
+      "l:estar",
+      "l:gris",
+      "l:hotel",
+      "l:ir",
+      "l:llegar",
+      "l:maleta",
+      "l:ser",
+      "l:vuelo",
+      "p:de-owner",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u18-12",
+    "unit": "u18",
+    "prompt": "Mariana (your age, tú) asks who is going with you to Medellín. Reply by text: say a friend of yours is going, say the tickets are yours, and ask whether she wants to come.",
+    "minWords": 25,
+    "maxWords": 55,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(un|una) (amigo|amiga) (mío|mía)",
+        "label": "say a friend of mine: una amiga mía"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(son|es) (tuyos|tuyo|míos|mío|suyos|suyo)",
+        "label": "say whose they are: son míos"
+      },
+      {
+        "type": "question",
+        "label": "ask whether she wants to come"
+      }
+    ],
+    "model": "Va una amiga mía, Vale. Los tiquetes son míos, pero todavía hay un asiento libre. ¿Quieres venir con nosotros? Salimos el viernes a las cinco de la mañana.",
+    "focus": "g:possessives-stressed",
+    "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:ir-a-plans",
+      "g:possessives-stressed",
+      "g:prep-pronouns",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:amiga",
+      "l:asiento",
+      "l:ir",
+      "l:libre",
+      "l:mañana",
+      "l:querer",
+      "l:salir",
+      "l:ser",
+      "l:tiquete",
+      "l:venir",
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:de-owner",
+      "p:lleno-libre",
+      "p:nos-vemos-a-las",
+      "p:por-la-manana",
+      "p:te-invito-a",
+      "p:telling-time",
+      "p:ya-todavia-basic"
+    ]
+  }
+]
