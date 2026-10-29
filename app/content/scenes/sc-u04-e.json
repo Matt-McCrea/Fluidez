@@ -3,6 +3,7 @@
   "unit": "u04",
   "title": "Doña Marta wants answers",
   "brief": "You're Tomás. Doña Marta's husband got home at eleven on Saturday night, and she has come to the café to find out why. Tell her what he did here, and don't get anyone in trouble. She's older than you, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

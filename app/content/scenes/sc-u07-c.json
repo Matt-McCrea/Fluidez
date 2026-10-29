@@ -3,6 +3,7 @@
   "unit": "u07",
   "title": "Counting everything",
   "brief": "You're Tomás. The café needs money, so Vale has decided you two will count everything in it today. Answer her questions about how much there is and where things are. She's your friend, so use tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

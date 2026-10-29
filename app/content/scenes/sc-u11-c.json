@@ -3,6 +3,7 @@
   "unit": "u11",
   "title": "The health check",
   "brief": "You're Tomás. Everyone who works with food in Bogotá needs a health check, so you're at the clinic with a nurse you've never met. Answer her questions about your job, your body and your habits. She's a stranger, so use usted with her.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

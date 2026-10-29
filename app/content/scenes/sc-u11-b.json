@@ -3,6 +3,7 @@
   "unit": "u11",
   "title": "The old photo",
   "brief": "You're Tomás. Don Hernando has found an old photo of the café, and you're in it, aged six. Answer his questions about who you look like and what you used to do, and ask about him too. He's older than you, so use usted with him; he calls you tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

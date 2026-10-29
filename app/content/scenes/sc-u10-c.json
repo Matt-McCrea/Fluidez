@@ -3,6 +3,7 @@
   "unit": "u10",
   "title": "Lunch for the grandchildren",
   "brief": "You're Tomás. Don Hernando's three grandchildren are coming to the café for lunch, and he wants your help to get the order right. Find out what they like and plan their plates. He's older than you, so use usted with him; he uses tú with you.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

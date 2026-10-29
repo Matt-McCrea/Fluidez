@@ -3,6 +3,7 @@
   "unit": "u16",
   "title": "A sweater for Toronto",
   "brief": "You're Tomás. It's November and your dad in Toronto is complaining about the cold, so you go into a shop in the centre to buy him a present. Choose a sweater, check the size, and get it sent. The assistant is a stranger, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

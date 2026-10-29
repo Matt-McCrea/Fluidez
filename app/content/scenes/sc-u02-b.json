@@ -3,6 +3,7 @@
   "unit": "u02",
   "title": "Looking for Mr Pardo",
   "brief": "You're Tomás. Rosa's bank has written about the café's account, and you need to see the manager, Mr Pardo. At the front desk, ask for him, say who you are and where you live, and fix a time. She's a stranger, so keep it polite.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

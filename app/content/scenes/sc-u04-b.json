@@ -3,6 +3,7 @@
   "unit": "u04",
   "title": "Señor Mango",
   "brief": "You're Tomás. A week later you're back at Paloquemao for strawberries for Vale's juices, and the fruit seller remembers you. Ask the price, get a better one, and buy only what you need. He's a stranger at work, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

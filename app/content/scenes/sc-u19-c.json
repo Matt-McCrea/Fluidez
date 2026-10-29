@@ -3,6 +3,7 @@
   "unit": "u19",
   "title": "A number you don't know",
   "brief": "You're Tomás. The café phone rings, the number is one you don't know, and the caller asks for you by name. Answer it, offer to take a message if you need to, and listen to what she has to say. It turns out to be a friend, so use tú with her.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

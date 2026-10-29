@@ -3,6 +3,7 @@
   "unit": "u12",
   "title": "Doña Gloria didn't sleep",
   "brief": "You're Tomás. Doña Gloria, your landlady, didn't sleep last night because Simón was shouting for hours. Explain what was going on. She's older than you, so use usted.",
+  "spare": true,
   "turns": [
     {
       "npc": "Tomás, ¿por qué gritaba tanto Simón anoche? No dormí nada.",

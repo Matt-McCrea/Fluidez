@@ -3,6 +3,7 @@
   "unit": "u20",
   "title": "A hundred thousand pesos",
   "brief": "You're Tomás. Jhon Fredy, the new waiter, is making signs about Simón on his phone between customers. Help him get them right and decide where they go. You're the boss and he's nineteen, so use tú; he calls you usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

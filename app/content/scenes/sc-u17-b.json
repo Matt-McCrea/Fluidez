@@ -3,6 +3,7 @@
   "unit": "u17",
   "title": "Forty people in Medellín",
   "brief": "You're Tomás. Vale is icing a cake at the café when she asks about your plans for the middle of November. Accept her invitation, sort out the trip, and survive a small surprise. She's your friend, so use tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

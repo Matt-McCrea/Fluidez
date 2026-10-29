@@ -3,6 +3,7 @@
   "unit": "u08",
   "title": "One week in Colombia",
   "brief": "You're Tomás. A Mexican tourist at the next table is planning her trip and decides you're the expert. Tell her honestly where you've been and where you haven't, and point her to someone who knows more. She's a stranger, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

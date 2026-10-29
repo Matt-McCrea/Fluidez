@@ -3,6 +3,7 @@
   "unit": "u01",
   "title": "A new face at the counter",
   "brief": "You're Tomás, behind the counter of La Esquina de Rosa on your first morning. A woman you've never seen comes in for her tinto. She's older than you and a stranger, so use usted. Find out who she is and look after her.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

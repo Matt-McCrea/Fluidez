@@ -3,6 +3,7 @@
   "unit": "u13",
   "title": "The cake for Calle 85",
   "brief": "You're Tomás. Tomorrow Vale has to deliver a big cake in the north of the city, and after your adventure this week she thinks you're the TransMilenio expert. Tell her what to do, step by step. She's your friend, so use tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

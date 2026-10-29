@@ -3,6 +3,7 @@
   "unit": "u12",
   "title": "Seventy-two",
   "brief": "You're Tomás. Don Hernando's birthday is tomorrow, and he's in the mood for stories. Listen to his, ask about it, then tell him yours. He's older than you, so use usted.",
+  "spare": true,
   "turns": [
     {
       "npc": "Tomás, mañana es mi cumpleaños. Setenta y dos años.",

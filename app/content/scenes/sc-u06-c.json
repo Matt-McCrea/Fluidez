@@ -3,6 +3,7 @@
   "unit": "u06",
   "title": "Mariana hears something",
   "brief": "You're Tomás. Vale has just read the first line of Rosa's letter and gone pale, and Hernando won't say a word. Mariana walks into the café and notices the silence. Tell her what happened today and how long ago Rosa wrote the letter. She's your childhood friend, so use tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

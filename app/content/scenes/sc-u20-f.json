@@ -3,6 +3,7 @@
   "unit": "u20",
   "title": "Doña Gloria waits up",
   "brief": "You're Tomás. It's late, you're back at Doña Gloria's house, and she has waited up for you with news. Listen, talk about tomorrow's weather and agree on a plan. She's your landlady and older than you, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

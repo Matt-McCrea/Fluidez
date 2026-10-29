@@ -3,6 +3,7 @@
   "unit": "u12",
   "title": "Rainy season",
   "brief": "You're Tomás. A storm is coming down over La Candelaria, and Don Hernando has just come in from the street. Talk about the weather and compare it with Toronto. He's older than you, so use usted.",
+  "spare": true,
   "turns": [
     {
       "npc": "¡Uy, qué tormenta, Tomás! Hace frío y no tengo chaqueta.",

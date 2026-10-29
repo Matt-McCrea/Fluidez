@@ -3,6 +3,7 @@
   "unit": "u20",
   "title": "Before the rains",
   "brief": "You're Tomás. It's the second day without Simón, and Don Hernando has come into the café with a plan. Listen to his promise, and help him without letting him do anything silly. He's older than you, so use usted, even though he calls you tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

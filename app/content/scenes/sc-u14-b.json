@@ -3,6 +3,7 @@
   "unit": "u14",
   "title": "Hernando goes digital",
   "brief": "You're Tomás. Don Hernando's grandchildren send him audios every day, and now they've sent him a new phone so he can answer. He has no idea how it works. Explain what things are for and help him send his first audio. He's older than you, so use usted with him.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

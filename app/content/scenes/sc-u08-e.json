@@ -3,6 +3,7 @@
   "unit": "u08",
   "title": "Beginner's luck",
   "brief": "You're Tomás. Don Hernando has taken you to play tejo for the first time. Tell him what you can and can't do, watch the others, and answer his invitation. He's older than you, so use usted with him; he uses tú with you.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

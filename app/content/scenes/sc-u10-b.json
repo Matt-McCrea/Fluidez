@@ -3,6 +3,7 @@
   "unit": "u10",
   "title": "The juice tasting",
   "brief": "You're Tomás. Vale is choosing the juices for the new Saturday menu, and you're her taster. Say what you like and don't, what Don Hernando likes, and sort out what's missing. She's your friend, so use tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

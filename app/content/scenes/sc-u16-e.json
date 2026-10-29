@@ -3,6 +3,7 @@
   "unit": "u16",
   "title": "Iconic",
   "brief": "You're Tomás. Your new purple armchair is out on the pavement in front of the café, and Don Hernando has just seen it. Defend your taste, admit the problem, and keep him on your side. He's older than you, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

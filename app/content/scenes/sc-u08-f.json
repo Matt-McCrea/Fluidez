@@ -3,6 +3,7 @@
   "unit": "u08",
   "title": "Samuel wants to know",
   "brief": "You're Tomás, making juice at the café. Samuel, the eight year old from downstairs at Doña Gloria's, has a lot of questions about what you've done. Answer him and ask nothing difficult back. He's a child, so use tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

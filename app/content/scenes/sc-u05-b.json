@@ -3,6 +3,7 @@
   "unit": "u05",
   "title": "Lucía at the counter",
   "brief": "You're Tomás. A woman you've never met walks into the café looking for Don Hernando, who left early today. Tell her where he is, answer her questions about your family, and introduce her to Vale. She's a stranger, so use usted with her; Vale is your friend, so use tú with Vale.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

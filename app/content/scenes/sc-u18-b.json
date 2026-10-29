@@ -3,6 +3,7 @@
   "unit": "u18",
   "title": "Nine hours, one suitcase short",
   "brief": "You're Tomás. After eleven hours of curves you get off the bus at the Terminal del Norte in Medellín, and your black suitcase isn't in the luggage hold. Explain the problem and get it sent to your hostel. The man from the bus company is a stranger, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

@@ -3,6 +3,7 @@
   "unit": "u12",
   "title": "The man with the toolbox",
   "brief": "You're Tomás. The lights at the café keep going out, so a technician has come to check. Tell him what happened and what you were doing. He's a stranger, so use usted.",
+  "spare": true,
   "turns": [
     {
       "npc": "Buenas tardes, señor. Vengo a ver la luz. ¿Cuál es el problema?",

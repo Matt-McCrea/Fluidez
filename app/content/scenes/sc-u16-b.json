@@ -3,6 +3,7 @@
   "unit": "u16",
   "title": "Watch and learn",
   "brief": "You're Tomás. Vale has just seen what you paid for the café's t-shirts, and now she's taking charge of the chairs. Answer her, help her choose, and watch a master at work. She's your friend, so use tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

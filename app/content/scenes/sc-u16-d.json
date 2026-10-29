@@ -3,6 +3,7 @@
   "unit": "u16",
   "title": "Black boots",
   "brief": "You're Tomás. Bogotá's rain has ruined your tennis shoes, so you walk into a shoe shop on Carrera Séptima. Look around, try on some boots and pay for them. The shop assistant is a stranger, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

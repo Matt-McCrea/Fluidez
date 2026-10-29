@@ -3,6 +3,7 @@
   "unit": "u09",
   "title": "The night pharmacist",
   "brief": "You're Tomás. You haven't slept properly in days, so you walk into the droguería on the corner after work. Tell the pharmacist about your evenings and your coffee, and find out what you have to do. She's a stranger, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

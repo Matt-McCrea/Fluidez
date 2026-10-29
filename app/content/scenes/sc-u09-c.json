@@ -3,6 +3,7 @@
   "unit": "u09",
   "title": "Parqués at four",
   "brief": "You're Tomás. It's four in the afternoon, you're doing the café's accounts, and Don Hernando wants his game of parqués. Tell him what you're doing and what you still have to do, and don't let him do your work. He's older than you, so use usted with him; he calls you tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

@@ -3,6 +3,7 @@
   "unit": "u02",
   "title": "No Hernando at seven",
   "brief": "You're Tomás. It's half past seven and Don Hernando, who arrives at seven every day, hasn't come. Doña Marta, who runs the shop where Vale buys the milk, drops in. She's older than you, so use usted. Find out where Don Hernando lives and who might know more.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

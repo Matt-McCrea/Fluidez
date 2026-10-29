@@ -3,6 +3,7 @@
   "unit": "u19",
   "title": "Inspector Duarte, from the council",
   "brief": "You're Tomás. A man with a folder is standing at the café door on a quiet Wednesday morning. Find out what he wants and what you have to do. He's a stranger on official business, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

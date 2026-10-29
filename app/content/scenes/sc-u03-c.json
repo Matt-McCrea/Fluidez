@@ -3,6 +3,7 @@
   "unit": "u03",
   "title": "Don Hernando's questions",
   "brief": "Don Hernando sits at his usual table and wants to know everything about you. Take his order, then answer his questions about what you like, what you play and where you're going on Sunday. Use usted with him; he uses tú with you.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

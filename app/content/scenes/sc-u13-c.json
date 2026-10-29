@@ -3,6 +3,7 @@
   "unit": "u13",
   "title": "Twenty minutes by Caracas",
   "brief": "You're Tomás, and it's late. You're tired after a day in the north, so you take a taxi home to the café in La Candelaria (Calle 11 with Carrera 4). Tell the driver where to go and which way. He's a stranger, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

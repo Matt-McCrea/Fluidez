@@ -3,6 +3,7 @@
   "unit": "u04",
   "title": "Don Hernando's Sunday",
   "brief": "You're Tomás. Don Hernando only turned up at the café on Sunday night, and this time you ask the questions: what he did all day, and when. Then tell him about your own Sunday. He's older than you, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

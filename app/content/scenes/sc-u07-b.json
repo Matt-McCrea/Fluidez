@@ -3,6 +3,7 @@
   "unit": "u07",
   "title": "Three floors up",
   "brief": "You're Tomás. Mariana has climbed all the stairs at Doña Gloria's to see your new room. Show her round: what there is, where things are, and how much water the shower really has. She's your childhood friend, so use tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

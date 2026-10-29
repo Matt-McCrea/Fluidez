@@ -3,6 +3,7 @@
   "unit": "u05",
   "title": "Sunday, Toronto calling",
   "brief": "You're Tomás. It's Sunday, and your dad calls from Toronto as he always does. Tell him about your new life and about Vale, then ask him the question nobody answers: what about your uncle Jaime? He's your dad, so use tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

@@ -3,6 +3,7 @@
   "unit": "u14",
   "title": "Daniela from Altamira",
   "brief": "You're Tomás. Your phone rings at the café from a number you don't know, and it's a woman from Altamira with an offer. Say no, give your reasons, and keep your secrets. She's a stranger, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

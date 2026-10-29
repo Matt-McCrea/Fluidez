@@ -3,6 +3,7 @@
   "unit": "u03",
   "title": "Cinema or football?",
   "brief": "Mariana messages you about the weekend. Find out what she likes, choose a plan together, and fix a day.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

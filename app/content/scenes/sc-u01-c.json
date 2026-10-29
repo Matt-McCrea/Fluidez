@@ -3,6 +3,7 @@
   "unit": "u01",
   "title": "The notary's form",
   "brief": "You're Tomás, at a notary's office in the centre of Bogotá. A clerk is filling in the papers that make La Esquina de Rosa yours. Answer her questions: name, surname, nationality, job. She's a stranger at work, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

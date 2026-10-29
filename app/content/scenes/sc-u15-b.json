@@ -3,6 +3,7 @@
   "unit": "u15",
   "title": "The bird doctor",
   "brief": "You're Tomás. Since your flu, Simón has been coughing and moping, so you've taken him to a vet in Teusaquillo. Tell her what's wrong with him and how you are. She's a stranger, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

@@ -3,6 +3,7 @@
   "unit": "u08",
   "title": "Café con leche, large",
   "brief": "You're Tomás, behind the counter. A man in a beautiful suit orders a coffee and asks you some odd questions. Serve him, answer him, and find out who he is. He's a stranger and a customer, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

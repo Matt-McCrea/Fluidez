@@ -3,6 +3,7 @@
   "unit": "u17",
   "title": "Santa Fe on Sunday",
   "brief": "You're Tomás. Don Hernando has bought tickets for Sunday's Santa Fe match at El Campín, and he wants everyone there. You can't go, so say no nicely and find a better plan. He's older than you and uses usted, so use usted with him.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

@@ -3,6 +3,7 @@
   "unit": "u04",
   "title": "Ten o'clock on Sunday",
   "brief": "You're Tomás. It's late on Sunday night, the café is finally empty, and Vale is counting the weekend's money. Help her add it up and decide what comes next. She's your friend, so use tú.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

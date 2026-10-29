@@ -3,6 +3,7 @@
   "unit": "u06",
   "title": "The new sign",
   "brief": "You're Tomás. Julio has come to paint a new sign for the café, and he needs a few facts first. Answer his questions and ask him one of your own. He's a stranger on a job, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",

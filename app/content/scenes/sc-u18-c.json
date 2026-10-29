@@ -3,6 +3,7 @@
   "unit": "u18",
   "title": "Room 504",
   "brief": "You're Tomás. You reach the hostel in Medellín late at night with only your backpack, and Vale made the booking. Check in, find out the price, and get what you need for the night. The man at reception is a stranger, so use usted.",
+  "spare": true,
   "turns": [
     {
       "id": "t1",
