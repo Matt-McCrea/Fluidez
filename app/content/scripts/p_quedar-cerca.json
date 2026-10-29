@@ -1,0 +1,177 @@
+{
+  "node": "p:quedar-cerca",
+  "hook": {
+    "line": "Ask anyone in Bogotá where a place is and you'll hear *queda* more often than *está*. It's the everyday word for where a building sits.",
+    "es": "¿Dónde queda la droguería?\nQueda a dos cuadras.",
+    "en": "Where's the chemist's?\nIt's two blocks away."
+  },
+  "examples": [
+    {
+      "es": "¿Dónde queda el Museo del Oro?",
+      "en": "Where's the Gold Museum?"
+    },
+    {
+      "es": "Queda al lado del parque Santander.",
+      "en": "It's next to Santander Park."
+    },
+    {
+      "es": "Mi casa queda cerca de aquí.",
+      "en": "My house is near here."
+    },
+    {
+      "es": "La panadería queda a dos cuadras.",
+      "en": "The bakery is two blocks away."
+    },
+    {
+      "es": "¿El banco queda lejos?\nNo, queda a una cuadra.",
+      "en": "Is the bank far?\nNo, it's one block away."
+    },
+    {
+      "es": "Las tiendas quedan cerca del parque.",
+      "en": "The shops are near the park."
+    }
+  ],
+  "rule": "For a place that doesn't move, like a shop, a building or a city, Colombians often say *queda* where you'd expect *está*:\n*¿Dónde queda el banco?* Where's the bank?\n*Queda cerca del parque.* It's near the park.\nFor more than one place: *quedan*.\n\nA distance takes *a*: *queda a dos cuadras* (it's two blocks away).\n\nIt's only for fixed places. People, keys and cats move around, so they get *está*: *Vale está en el patio*. And location is never *es*.",
+  "smallPrint": "Teachers call this *quedar* for location. It's a different job from *quedarse*, to stay.",
+  "readAndPick": [
+    {
+      "es": "Queda a dos cuadras.",
+      "options": [
+        "It's two blocks away.",
+        "It stays for two blocks.",
+        "There are two blocks."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Dónde queda el parque?",
+      "options": [
+        "Is there a park?",
+        "Where's the park?",
+        "Where's the park staying?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La droguería queda cerca.",
+      "options": [
+        "The chemist's is closed.",
+        "The chemist's stays open.",
+        "The chemist's is nearby."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los bancos quedan cerca.",
+      "options": [
+        "The banks are nearby.",
+        "The bank is nearby."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El café queda lejos de aquí.",
+      "options": [
+        "The café is near here.",
+        "The café is far from here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi casa queda a tres cuadras.",
+      "options": [
+        "My house is three blocks away.",
+        "My house has three blocks.",
+        "My house is on the third block."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Queda cerca de La Candelaria?",
+      "options": [
+        "Is it staying near La Candelaria?",
+        "Is it near La Candelaria?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La panadería queda enfrente del banco.",
+      "options": [
+        "The bakery is next to the bank.",
+        "The bakery is behind the bank.",
+        "The bakery is opposite the bank."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *queda* or *está*: Vale ___ en el patio.",
+      "answer": "Vale está en el patio.",
+      "accept": [],
+      "why": "Vale is a person and moves around, so *está*."
+    },
+    {
+      "prompt": "Choose *queda* or *es*: La droguería ___ al lado del banco.",
+      "answer": "La droguería queda al lado del banco.",
+      "accept": [],
+      "why": "Where a place is never takes *es*; a fixed place takes *queda*."
+    },
+    {
+      "prompt": "Ask: Where's the bank?",
+      "answer": "¿Dónde queda el banco?",
+      "accept": [
+        "¿Dónde está el banco?"
+      ],
+      "why": "A bank doesn't move, so *queda* is natural. *Está* works too."
+    },
+    {
+      "prompt": "Say: It's three blocks away.",
+      "answer": "Queda a tres cuadras.",
+      "accept": [
+        "Está a tres cuadras."
+      ],
+      "why": "A distance takes *a*: *queda a tres cuadras*."
+    },
+    {
+      "prompt": "Say: The café is near the park.",
+      "answer": "El café queda cerca del parque.",
+      "accept": [
+        "El café está cerca del parque."
+      ],
+      "why": "The café is a fixed place: *queda*."
+    },
+    {
+      "prompt": "Make it plural: La tienda queda cerca.",
+      "answer": "Las tiendas quedan cerca.",
+      "accept": [],
+      "why": "More than one place, so *quedan*."
+    },
+    {
+      "prompt": "Turn it into a question: El parque queda lejos.",
+      "answer": "¿El parque queda lejos?",
+      "accept": [
+        "¿Queda lejos el parque?"
+      ],
+      "why": "Just add question marks; the words can stay in order."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El banco es cerca del parque.",
+      "right": "El banco queda cerca del parque.",
+      "why": "Almost. Where something is never takes *es*. Use *queda* or *está*."
+    },
+    {
+      "wrong": "Vale queda en el patio.",
+      "right": "Vale está en el patio.",
+      "why": "*Queda* is for places that don't move. People take *está*."
+    },
+    {
+      "wrong": "Queda dos cuadras.",
+      "right": "Queda a dos cuadras.",
+      "why": "A distance needs *a*: *a dos cuadras*."
+    }
+  ],
+  "personal": "Where's your favourite café or shop? Say where it is with *queda*, and how many blocks it is from your home."
+}

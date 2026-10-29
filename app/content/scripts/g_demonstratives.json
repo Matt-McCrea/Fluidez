@@ -1,0 +1,47 @@
+{
+  "node": "g:demonstratives",
+  "hook": {
+    "line": "Doña Gloria hands Tomás a ring of keys and starts pointing: this one, that one, that one way over there. Spanish has a word for each distance.",
+    "es": "Esta llave es del cuarto, y esa es del balcón.",
+    "en": "This key is for the room, and that one is for the balcony."
+  },
+  "examples": [
+    { "es": "Este cuarto es pequeño. ¿Y ese?", "en": "This room is small. And that one?" },
+    { "es": "Esa llave es de la puerta.", "en": "That key is for the door." },
+    { "es": "Aquel edificio es de Altamira.", "en": "That building over there is Altamira's." },
+    { "es": "Estas sillas son de Rosa.", "en": "These chairs are Rosa's." },
+    { "es": "¿Esos muebles son nuevos?", "en": "Is that furniture new?" },
+    { "es": "Aquel señor es el portero.", "en": "That man over there is the doorman." },
+    { "es": "¿Qué es eso?", "en": "What's that?" }
+  ],
+  "rule": "You know *este* and *esta* for this. Spanish points at three distances, not two:\n\n*este*, *esta*: this (here, by me)\n*ese*, *esa*: that (by you, or a little way off)\n*aquel*, *aquella*: that one over there (far from both of us)\n\nFor more than one:\n*estos*, *estas*; *esos*, *esas*; *aquellos*, *aquellas*\n\nThey follow *el* and *la*: *la llave*, so *esa llave*. Drop the noun and they still work: *¿Y ese?* (And that one?)\n\n*Ese* does most of the work in everyday speech. Keep *aquel* for things clearly far off, like a building across the plaza. *Eso* still stands alone, for a thing you don't name: *¿Qué es eso?*",
+  "smallPrint": "Teachers call these demonstratives. Many speakers use *ese* for anything that isn't right beside them, so *aquel* shows up less.",
+  "soundTip": "*Aquel* is a-KEL: the *qu* is a plain k sound, and the stress falls on the end.",
+  "readAndPick": [
+    { "es": "Esas sillas son de Vale.", "options": ["That chair is Vale's.", "Those chairs are Vale's.", "These chairs are Vale's."], "answer": 1 },
+    { "es": "Aquel edificio es nuevo.", "options": ["This building is new.", "That building over there is new."], "answer": 1 },
+    { "es": "Esta llave no es de la puerta.", "options": ["This key isn't for the door.", "That key isn't for the door."], "answer": 0 },
+    { "es": "Estos muebles son caros.", "options": ["This furniture is expensive.", "That furniture is expensive."], "answer": 0 },
+    { "es": "¿Y aquella casa?", "options": ["And this house?", "And that house over there?", "And that one?"], "answer": 1 },
+    { "es": "Ese número es de Hernando.", "options": ["That number is Hernando's.", "This number is Hernando's.", "Hernando's number is this one."], "answer": 0 },
+    { "es": "Esas mujeres son de Medellín.", "options": ["That woman is from Medellín.", "These women are from Medellín.", "Those women are from Medellín."], "answer": 2 },
+    { "es": "Este es el cuarto de Tomás.", "options": ["That's Tomás's room.", "This is Tomás's room."], "answer": 1 },
+    { "es": "Aquellos señores miran el café.", "options": ["Those men over there are looking at the café.", "These men are looking at the café.", "That man is looking at the café."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *ese* or *esa*: ___ llave es del balcón.", "answer": "Esa llave es del balcón.", "accept": [], "why": "*La llave*, so *esa*." },
+    { "prompt": "Choose *estos* or *estas*: ___ sillas son de Rosa.", "answer": "Estas sillas son de Rosa.", "accept": [], "why": "*Las sillas*, so *estas*." },
+    { "prompt": "Choose *aquel* or *aquella*: ___ casa es bonita.", "answer": "Aquella casa es bonita.", "accept": [], "why": "*La casa*, so *aquella*." },
+    { "prompt": "Say: That building over there is new.", "answer": "Aquel edificio es nuevo.", "accept": [], "why": "Far from both of you, and *el edificio*: *aquel*." },
+    { "prompt": "Ask a friend about something in their hand: What's that?", "answer": "¿Qué es eso?", "accept": [], "why": "You don't name the thing, so *eso*." },
+    { "prompt": "Say: This room is small. And that one?", "answer": "Este cuarto es pequeño. ¿Y ese?", "accept": ["Este cuarto es pequeño, ¿y ese?"], "why": "*El cuarto*: *este* for the near one, *ese* for the other, with no noun needed." },
+    { "prompt": "Make it plural: Ese mueble es caro.", "answer": "Esos muebles son caros.", "accept": [], "why": "*Ese* becomes *esos*, and everything else goes plural with it." }
+  ],
+  "pitfalls": [
+    { "wrong": "Esos llaves son de Tomás.", "right": "Esas llaves son de Tomás.", "why": "It's *la llave*, so the pointing word is feminine: *esas*." },
+    { "wrong": "El ese cuarto es pequeño.", "right": "Ese cuarto es pequeño.", "why": "*Ese* already does the job of *el*, so drop the article." },
+    { "wrong": "Eso edificio es nuevo.", "right": "Ese edificio es nuevo.", "why": "*Eso* never goes before a noun. When you name the thing, use *ese* or *esa*." },
+    { "wrong": "Aquel casa es bonita.", "right": "Aquella casa es bonita.", "why": "*La casa* is feminine, so *aquella*." }
+  ],
+  "personal": "Look around you. Point out one thing near you with *este* or *esta*, one a bit further off with *ese* or *esa*, and one far away with *aquel* or *aquella*."
+}

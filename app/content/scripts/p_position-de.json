@@ -1,0 +1,43 @@
+{
+  "node": "p:position-de",
+  "hook": {
+    "line": "Nobody in La Candelaria gives directions by street number. It's all landmarks: next to the bakery, behind the church. Each one is a position word plus *de*.",
+    "es": "La droguería está al lado de la panadería.",
+    "en": "The chemist's is next to the bakery."
+  },
+  "examples": [
+    { "es": "La droguería está al lado del banco.", "en": "The chemist's is next to the bank." },
+    { "es": "Las llaves están encima de la mesa.", "en": "The keys are on the table." },
+    { "es": "El gato está debajo de la cama.", "en": "The cat is under the bed." },
+    { "es": "El parqueadero está detrás del edificio.", "en": "The car park is behind the building." },
+    { "es": "El banco está enfrente del parque.", "en": "The bank is opposite the park." },
+    { "es": "Vivo entre la panadería y el café.", "en": "I live between the bakery and the café." }
+  ],
+  "rule": "Spanish builds next to, behind and under from a position word plus *de*:\n*al lado de*: next to\n*detrás de*: behind\n*delante de*: in front of\n*enfrente de*: opposite\n*encima de*: on top of\n*debajo de*: under\n\nNever drop the *de*. And *de* plus *el* squeezes into *del*: *al lado del banco*, but *al lado de la tienda*.\n\n*Entre* (between) works differently: no *de*, just *entre* one thing *y* the other.",
+  "smallPrint": "Teachers call these prepositional phrases of place.",
+  "readAndPick": [
+    { "es": "El gato está encima de la cama.", "options": ["The cat is under the bed.", "The cat is on the bed.", "The cat is next to the bed."], "answer": 1 },
+    { "es": "El gato está debajo de la cama.", "options": ["The cat is under the bed.", "The cat is on the bed.", "The cat is next to the bed."], "answer": 0 },
+    { "es": "La tienda está detrás del banco.", "options": ["The shop is in front of the bank.", "The shop is opposite the bank.", "The shop is behind the bank."], "answer": 2 },
+    { "es": "La tienda está delante del banco.", "options": ["The shop is in front of the bank.", "The shop is behind the bank."], "answer": 0 },
+    { "es": "El café está enfrente del parque.", "options": ["The café is in the park.", "The café is opposite the park.", "The café is behind the park."], "answer": 1 },
+    { "es": "Hay una silla al lado de la ventana.", "options": ["There's a chair next to the window.", "There's a chair under the window."], "answer": 0 },
+    { "es": "La lámpara está entre la cama y la mesa.", "options": ["The lamp is on the bed and the table.", "The lamp is next to the bed.", "The lamp is between the bed and the table."], "answer": 2 },
+    { "es": "Las llaves están debajo del sofá.", "options": ["The keys are on the sofa.", "The keys are under the sofa."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *del* or *de la*: La droguería está al lado ___ banco.", "answer": "La droguería está al lado del banco.", "accept": [], "why": "*De* plus *el banco* squeezes into *del*." },
+    { "prompt": "Choose *del* or *de la*: El banco está enfrente ___ panadería.", "answer": "El banco está enfrente de la panadería.", "accept": [], "why": "*La panadería* keeps *de la*; only *el* merges." },
+    { "prompt": "Say: The cat is under the bed.", "answer": "El gato está debajo de la cama.", "accept": [], "why": "Under is *debajo de*, and the *de* stays." },
+    { "prompt": "Say: The keys are on the table.", "answer": "Las llaves están encima de la mesa.", "accept": [], "why": "On top of is *encima de*; more than one key, so *están*." },
+    { "prompt": "Say: The car park is behind the building.", "answer": "El parqueadero está detrás del edificio.", "accept": [], "why": "*Detrás de* plus *el edificio* gives *detrás del edificio*." },
+    { "prompt": "Say: I live between the bakery and the café.", "answer": "Vivo entre la panadería y el café.", "accept": [], "why": "*Entre* takes no *de*: just *entre* one *y* the other." },
+    { "prompt": "Swap *the bank* for *the park*: La tienda está al lado de la droguería.", "answer": "La tienda está al lado del parque.", "accept": [], "why": "*El parque* is masculine, so *de la* becomes *del*." }
+  ],
+  "pitfalls": [
+    { "wrong": "La droguería está al lado de el banco.", "right": "La droguería está al lado del banco.", "why": "Almost. *De* and *el* always merge into *del*." },
+    { "wrong": "El parqueadero está detrás el edificio.", "right": "El parqueadero está detrás del edificio.", "why": "The *de* is part of the phrase: *detrás de*, here *detrás del*." },
+    { "wrong": "Vivo entre de la panadería y el café.", "right": "Vivo entre la panadería y el café.", "why": "*Entre* is the one that takes no *de*." }
+  ],
+  "personal": "Where is your home? Say what it's next to with *al lado de*, and what's opposite it with *enfrente de*."
+}

@@ -1,0 +1,43 @@
+{
+  "node": "x:hay-esta",
+  "hook": {
+    "line": "Real conversations use *hay* and *está* together. The first line asks if a thing exists; the answer already knows it does, and switches to *está*. Watch for that switch.",
+    "es": "¿Hay un parqueadero por acá?\nSí, está en la esquina.",
+    "en": "Is there a car park around here?\nYes, it's on the corner."
+  },
+  "examples": [
+    { "es": "Hay un banco cerca.", "en": "There's a bank nearby." },
+    { "es": "El banco está cerca.", "en": "The bank is nearby." },
+    { "es": "¿Hay parqueadero?\nNo, no hay.", "en": "Is there a car park?\nNo, there isn't." },
+    { "es": "Hay una droguería en la esquina. La droguería está abierta.", "en": "There's a chemist's on the corner. The chemist's is open." },
+    { "es": "¿Dónde está doña Gloria?\nEstá en la panadería.", "en": "Where's Doña Gloria?\nShe's in the bakery." },
+    { "es": "Hay dos parques en el barrio, pero el parque grande está en el centro.", "en": "There are two parks in the neighbourhood, but the big park is downtown." }
+  ],
+  "rule": "One question settles it: does the listener already know which one you mean?\n\nNo, it's news: *hay*. *Hay un banco cerca.*\nYes, it's known: *está*, or *están* for more than one. *El banco está cerca.*\n\nConversations move from one to the other. The first mention comes with *un*, *una* or a number, and takes *hay*. Once it's on the table it becomes *el* or *la*, and you switch to *está*.\n\nPeople with names are always known, so they always take *está*: *Doña Gloria está en la panadería*. You never say *hay* before a name.",
+  "smallPrint": "Teachers call this the contrast between existence (*hay*) and location (*estar*).",
+  "readAndPick": [
+    { "es": "Hay un parqueadero cerca.", "options": ["There's a car park nearby.", "The car park is nearby."], "answer": 0 },
+    { "es": "El parqueadero está cerca.", "options": ["There's a car park nearby.", "The car park is nearby."], "answer": 1 },
+    { "es": "¿Hay vecinos en el patio?", "options": ["Are the neighbours in the courtyard?", "Are there neighbours in the courtyard?"], "answer": 1 },
+    { "es": "¿Están los vecinos en el patio?", "options": ["Are the neighbours in the courtyard?", "Are there neighbours in the courtyard?"], "answer": 0 },
+    { "es": "No hay tienda en esta calle.", "options": ["The shop isn't on this street.", "There's no shop on this street."], "answer": 1 },
+    { "es": "La tienda no está en esta calle.", "options": ["The shop isn't on this street.", "There's no shop on this street."], "answer": 0 },
+    { "es": "Hay tres bancos en el centro.", "options": ["The three banks are downtown.", "There are three banks downtown.", "There's a bank downtown."], "answer": 1 },
+    { "es": "Hernando no está en el café.", "options": ["There's no Hernando in the café.", "Hernando isn't in the café.", "Hernando doesn't like the café."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *hay* or *está*: ___ una droguería en la esquina.", "answer": "Hay una droguería en la esquina.", "accept": [], "why": "First mention, with *una*: *hay*." },
+    { "prompt": "Choose *hay* or *está*: La droguería ___ en la esquina.", "answer": "La droguería está en la esquina.", "accept": [], "why": "Now it's *la droguería*, a known place: *está*." },
+    { "prompt": "Choose *hay* or *está*: Vale no ___ en el patio.", "answer": "Vale no está en el patio.", "accept": [], "why": "A name is always known: *está*." },
+    { "prompt": "Ask: Is there a car park?", "answer": "¿Hay parqueadero?", "accept": ["¿Hay un parqueadero?"], "why": "You're asking if one exists: *hay*." },
+    { "prompt": "Say: The bank is nearby.", "answer": "El banco está cerca.", "accept": [], "why": "*El banco* is known: *está*." },
+    { "prompt": "Turn the news into a known thing: Hay una tienda en la esquina.", "answer": "La tienda está en la esquina.", "accept": [], "why": "*Una tienda* becomes *la tienda*, and *hay* becomes *está*." },
+    { "prompt": "Now the other way, as news: El parque está cerca.", "answer": "Hay un parque cerca.", "accept": [], "why": "*El parque* becomes *un parque*, and *está* becomes *hay*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Hay la droguería en la esquina.", "right": "La droguería está en la esquina.", "why": "Almost. After *hay* you never get *el* or *la*. A known place takes *está*." },
+    { "wrong": "¿Dónde hay el baño?", "right": "¿Dónde está el baño?", "why": "You know there's a bathroom; you want its place, so *¿Dónde está...?*" },
+    { "wrong": "No hay Hernando.", "right": "Hernando no está.", "why": "A name is someone known: *Hernando no está*." }
+  ],
+  "personal": "Is there a bank near your home? Say it with *hay*, then say where it is with *está*."
+}

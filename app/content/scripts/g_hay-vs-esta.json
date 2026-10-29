@@ -1,0 +1,48 @@
+{
+  "node": "g:hay-vs-esta",
+  "hook": {
+    "line": "Doña Gloria is showing Tomás the room above the bakery. First he asks what there is. Then he asks where it is. Spanish uses two different words for those two questions.",
+    "es": "¿Hay ducha?\nSí, la ducha está allá.",
+    "en": "Is there a shower?\nYes, the shower is over there."
+  },
+  "examples": [
+    { "es": "Hay una panadería en la esquina.", "en": "There's a bakery on the corner." },
+    { "es": "La panadería está en la esquina.", "en": "The bakery is on the corner." },
+    { "es": "Hay dos bancos en esta calle.", "en": "There are two banks on this street." },
+    { "es": "¿Hay un baño por acá?", "en": "Is there a bathroom around here?" },
+    { "es": "No hay lámpara en el cuarto.", "en": "There's no lamp in the room." },
+    { "es": "Tomás está en el balcón.", "en": "Tomás is on the balcony." },
+    { "es": "Las camas están en el cuarto.", "en": "The beds are in the room." }
+  ],
+  "rule": "English places things two ways: \"there's a bank\" and \"the bank is there\". Spanish does too.\n\n*Hay* (there is, there are) brings in something new: *hay una panadería*, *hay dos bancos*, *no hay lámpara*.\n\n*Está* (is) says where a thing you already know about is: *la panadería está en la esquina*. For more than one, *están*: *las camas están en el cuarto*.\n\nThe quick test is the little word that follows. *Un*, *una*, a number, or nothing at all: *hay*. *El*, *la*, a name or *mi*: *está*.\n\nAnd *hay* never changes. One bank or ten, it's *hay*.",
+  "smallPrint": "Teachers call *hay* the impersonal form of *haber*. It has no subject, which is why it never changes for one or many.",
+  "soundTip": "*Hay* sounds just like English *eye*. The *h* is silent, as it always is in Spanish.",
+  "readAndPick": [
+    { "es": "Hay un banco en la calle.", "options": ["There's a bank on the street.", "The bank is on the street."], "answer": 0 },
+    { "es": "El banco está en la calle.", "options": ["There's a bank on the street.", "The bank is on the street."], "answer": 1 },
+    { "es": "Hay dos camas en el cuarto.", "options": ["The two beds are in the room.", "There are two beds in the room."], "answer": 1 },
+    { "es": "¿Hay una droguería por acá?", "options": ["Is there a chemist's around here?", "Is the chemist's around here?"], "answer": 0 },
+    { "es": "La lámpara no está en el cuarto.", "options": ["There's no lamp in the room.", "The lamp isn't in the room."], "answer": 1 },
+    { "es": "No hay lámpara en el cuarto.", "options": ["There's no lamp in the room.", "The lamp isn't in the room."], "answer": 0 },
+    { "es": "Los vecinos están en el patio.", "options": ["There are neighbours in the courtyard.", "There's a neighbour in the courtyard.", "The neighbours are in the courtyard."], "answer": 2 },
+    { "es": "Hay vecinos en el patio.", "options": ["There are neighbours in the courtyard.", "There's a neighbour in the courtyard.", "The neighbours are in the courtyard."], "answer": 0 },
+    { "es": "¿Dónde está la tienda?", "options": ["Is there a shop?", "Where's the shop?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *hay* or *está*: ___ una lámpara en el cuarto.", "answer": "Hay una lámpara en el cuarto.", "accept": [], "why": "*Una* lamp is new to the conversation, so *hay*." },
+    { "prompt": "Choose *hay* or *está*: La lámpara ___ en el cuarto.", "answer": "La lámpara está en el cuarto.", "accept": [], "why": "*La* lamp is one you already know about, so *está*." },
+    { "prompt": "Choose *hay* or *están*: ___ dos bancos en esta calle.", "answer": "Hay dos bancos en esta calle.", "accept": [], "why": "A number follows, so *hay*. It stays *hay* for two." },
+    { "prompt": "Ask: Is there a bathroom around here?", "answer": "¿Hay un baño por acá?", "accept": ["¿Hay baño por acá?"], "why": "You don't know yet if one exists, so *hay*." },
+    { "prompt": "Ask: Where's the bathroom?", "answer": "¿Dónde está el baño?", "accept": [], "why": "*El baño* is a known thing; now you want its place, so *está*." },
+    { "prompt": "Say: Tomás is on the balcony.", "answer": "Tomás está en el balcón.", "accept": [], "why": "A name is always someone known, so *está*." },
+    { "prompt": "Make it negative: Hay una ducha en el cuarto.", "answer": "No hay ducha en el cuarto.", "accept": ["No hay una ducha en el cuarto."], "why": "*No* goes before *hay*, and Spanish usually drops *una* after *no hay*." },
+    { "prompt": "Make it about the beds, more than one: La cama está en el cuarto.", "answer": "Las camas están en el cuarto.", "accept": [], "why": "*Está* becomes *están* for more than one. *Hay* would not change." }
+  ],
+  "pitfalls": [
+    { "wrong": "Hay el banco en la calle.", "right": "El banco está en la calle.", "why": "Almost. *El* means you already know the bank, so say where it is with *está*." },
+    { "wrong": "Es una panadería en la esquina.", "right": "Hay una panadería en la esquina.", "why": "\"There is\" is *hay*. *Es* says what something is, not that it's there." },
+    { "wrong": "No hay Vale en el café.", "right": "Vale no está en el café.", "why": "A name is someone known, so it takes *está*: *Vale no está*." },
+    { "wrong": "Mi barrio hay dos parques.", "right": "En mi barrio hay dos parques.", "why": "*Hay* has no subject. Start with where: *en mi barrio hay*." }
+  ],
+  "personal": "Think of your street. Write one thing there is on it with *hay*, and then say where one place you know is with *está*."
+}
