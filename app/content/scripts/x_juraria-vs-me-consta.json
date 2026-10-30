@@ -1,0 +1,43 @@
+{
+  "node": "x:juraria-vs-me-consta",
+  "hook": {
+    "line": "Someone asks who locked the café door last night. You are sure, but being sure for different reasons changes what you say: a gut feeling, a conclusion you reasoned out, or something you saw with your own eyes.",
+    "es": "Juraría que Vale cerró la puerta.",
+    "en": "I could swear Vale locked the door."
+  },
+  "examples": [
+    { "es": "Juraría que lo vi ayer.", "en": "I could swear I saw him yesterday." },
+    { "es": "No me cabe duda de que vendrá.", "en": "I have no doubt that he will come." },
+    { "es": "Me consta que pagó.", "en": "I know for a fact that he paid." },
+    { "es": "Juraría que Vale cerró la puerta.", "en": "I could swear Vale locked the door." },
+    { "es": "Me consta que Vale cerró la puerta.", "en": "I know for a fact that Vale locked the door." },
+    { "es": "No me cabe duda de que Vale cerró la puerta.", "en": "I have no doubt that Vale locked the door." }
+  ],
+  "rule": "All three say \"I'm sure\", but each sells something different.\n\n*Juraría que*: a feeling. You could be wrong, and the phrase leaves that door open.\n*Me consta que*: evidence. You saw it, read it or were there.\n*No me cabe duda de que*: a conclusion. You have weighed it up and no room for doubt is left.\n\nA quick test. Could you show someone proof? *Me consta*. Only your gut? *Juraría*. Sure because it all adds up? *No me cabe duda*.\n\nAll three are followed by the plain verb.",
+  "smallPrint": "Teachers call this the difference between subjective certainty (*juraría*), evidential certainty (*me consta*) and reasoned certainty (*no me cabe duda*).",
+  "readAndPick": [
+    { "es": "Juraría que Vale cerró la puerta.", "options": ["I could swear Vale locked the door.", "I know for a fact that Vale locked the door.", "I have no doubt that Vale locked the door."], "answer": 0 },
+    { "es": "Me consta que Vale cerró la puerta.", "options": ["I could swear Vale locked the door.", "I have no doubt that Vale locked the door.", "I know for a fact that Vale locked the door."], "answer": 2 },
+    { "es": "No me cabe duda de que Vale cerró la puerta.", "options": ["I know for a fact that Vale locked the door.", "I have no doubt that Vale locked the door.", "I could swear Vale locked the door."], "answer": 1 },
+    { "es": "Me consta que pagó.", "options": ["I know for a fact that he paid.", "I could swear he paid.", "I have no doubt that he will pay."], "answer": 0 },
+    { "es": "Juraría que lo vi ayer.", "options": ["I know for a fact that I saw him yesterday.", "I could swear I saw him yesterday.", "I have no doubt that I saw him yesterday."], "answer": 1 },
+    { "es": "No me cabe duda de que vendrá.", "options": ["I could swear he came.", "I know for a fact that he will come.", "I have no doubt that he will come."], "answer": 2 },
+    { "es": "Juraría que Hernando dejó el celular aquí.", "options": ["I could swear Hernando left his phone here.", "I know for a fact that Hernando left his phone here.", "I have no doubt that Hernando left his phone here."], "answer": 0 },
+    { "es": "Me consta que Mariana habló con el juez.", "options": ["I could swear Mariana talked to the judge.", "I know for a fact that Mariana talked to the judge.", "I have no doubt that Mariana will talk to the judge."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "You watched Vale lock the door. Pick and type the whole sentence: *___ que Vale cerró la puerta.* (*Juraría* or *Me consta*) I know for a fact that Vale locked the door.", "answer": "Me consta que Vale cerró la puerta.", "accept": [], "why": "You were there, so you have evidence: *me consta*." },
+    { "prompt": "You have a feeling but no proof. Pick and type the whole sentence: *___ que dejé las llaves aquí.* (*Juraría* or *Me consta*) I could swear I left the keys here.", "answer": "Juraría que dejé las llaves aquí.", "accept": [], "why": "A feeling you cannot prove is *juraría*." },
+    { "prompt": "Vale always locks up, so you work it out. Say: I have no doubt that Vale locked the door.", "answer": "No me cabe duda de que Vale cerró la puerta.", "accept": ["No me cabe la menor duda de que Vale cerró la puerta."], "why": "A conclusion you reasoned out is *no me cabe duda de que*." },
+    { "prompt": "Say, as a hunch: I could swear I saw him yesterday.", "answer": "Juraría que lo vi ayer.", "accept": [], "why": "*Juraría que* is for a memory you trust but cannot prove." },
+    { "prompt": "You saw the receipt. Say: I know for a fact that he paid.", "answer": "Me consta que pagó.", "accept": ["Me consta que él pagó."], "why": "A receipt is evidence, so *me consta*." },
+    { "prompt": "You trust the man. Say: I have no doubt that he will come.", "answer": "No me cabe duda de que vendrá.", "accept": ["No me cabe la menor duda de que vendrá."], "why": "You are sure by reasoning, not by proof, so *no me cabe duda*." },
+    { "prompt": "Weaken it: you said *Me consta que Hernando pagó.* Now you only have a hunch. Say: I could swear Hernando paid.", "answer": "Juraría que Hernando pagó.", "accept": [], "why": "Swap *me consta* for *juraría* when the proof is gone." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me consta que dejé las llaves en la mesa, pero no las encuentro.", "right": "Juraría que dejé las llaves en la mesa, pero no las encuentro.", "why": "Almost. *Me consta* promises proof; if the keys have vanished, all you have is a hunch." },
+    { "wrong": "Me consta de que pagó.", "right": "Me consta que pagó.", "why": "Almost. *Me consta* takes *que* directly, while *no me cabe duda* is the one with *de que*." },
+    { "wrong": "No me cabe que vendrá.", "right": "No me cabe duda de que vendrá.", "why": "Almost. The word *duda* is part of the phrase: no room for *doubt*." }
+  ],
+  "personal": "Think of something you are sure about for three different reasons: one you saw, one you worked out, one you only feel. Say each with the right phrase."
+}

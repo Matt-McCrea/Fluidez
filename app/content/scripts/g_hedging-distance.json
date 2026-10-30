@@ -1,0 +1,45 @@
+{
+  "node": "g:hedging-distance",
+  "hook": {
+    "line": "In the café this week every customer has a rumour: it closes, it is sold, Tomás is leaving. Tomás needs a way to pass the news along without signing his name under it, and a way to say what he is not claiming.",
+    "es": "Al parecer, el permiso era falso.",
+    "en": "Apparently, the permit was fake."
+  },
+  "examples": [
+    { "es": "Al parecer, el permiso era falso.", "en": "Apparently, the permit was fake." },
+    { "es": "Supuestamente, el café cierra en diciembre.", "en": "Supposedly, the café closes in December." },
+    { "es": "No es que dude de ti.", "en": "It's not that I doubt you." },
+    { "es": "Por lo visto, Altamira ya compró tres edificios.", "en": "Apparently, Altamira has already bought three buildings." },
+    { "es": "Al parecer, Tomás se vuelve a Canadá.", "en": "Apparently, Tomás is going back to Canada." },
+    { "es": "No es que Vale no quiera ayudar.", "en": "It's not that Vale doesn't want to help." },
+    { "es": "Por lo visto, nadie sabe dónde está.", "en": "Apparently, nobody knows where it is." }
+  ],
+  "rule": "Two ways to keep your distance from a claim.\n\n*Al parecer*, *por lo visto* and *supuestamente* sit at the start of the sentence and mean \"apparently\" or \"supposedly\". You are passing the news on, not vouching for it. The verb stays plain: *era*, *cierra*, *compró*. *Supuestamente* adds a raised eyebrow: you doubt it a little.\n\n*No es que* is for what you are not saying: \"it's not that...\". The verb takes the wish form, because you are pushing the idea away: *no es que dude*, *no es que no quiera*.\n\nEnglish does the first with an adverb too, but for the second it just changes your tone of voice.",
+  "smallPrint": "Teachers call these attenuators and evidential adverbs, and *no es que* is followed by the subjunctive.",
+  "readAndPick": [
+    { "es": "Al parecer, el permiso era falso.", "options": ["I am sure the permit was fake.", "Apparently, the permit was fake.", "The permit will be fake."], "answer": 1 },
+    { "es": "Supuestamente, el café cierra en diciembre.", "options": ["The café closed in December.", "The café definitely closes in December.", "Supposedly, the café closes in December."], "answer": 2 },
+    { "es": "No es que dude de ti.", "options": ["It's not that I doubt you.", "I doubt you.", "You doubt me."], "answer": 0 },
+    { "es": "Por lo visto, nadie sabe dónde está.", "options": ["I saw nobody there.", "Nobody has seen where it is.", "Apparently, nobody knows where it is."], "answer": 2 },
+    { "es": "No es que Vale no quiera ayudar.", "options": ["Vale doesn't want to help.", "It's not that Vale doesn't want to help.", "Vale wants me to help."], "answer": 1 },
+    { "es": "Al parecer, Tomás se vuelve a Canadá.", "options": ["Apparently, Tomás is going back to Canada.", "Tomás is sure he is going back to Canada.", "Tomás went back to Canada."], "answer": 0 },
+    { "es": "Por lo visto, Altamira ya compró tres edificios.", "options": ["Altamira will buy three buildings.", "I saw Altamira buy three buildings.", "Apparently, Altamira has already bought three buildings."], "answer": 2 },
+    { "es": "No es que tenga miedo, es que no tengo plata.", "options": ["I am afraid because I have no money.", "It's not that I'm afraid, it's that I have no money.", "I am not afraid and I have money."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *No es que ___ de ti.* (*dudo* or *dude*) It's not that I doubt you.", "answer": "No es que dude de ti.", "accept": [], "why": "After *no es que* the verb takes the wish form, because you are rejecting the idea: *dude*." },
+    { "prompt": "Pick and type the whole sentence: *Al parecer, el permiso ___ falso.* (*era* or *fuera*) Apparently, the permit was fake.", "answer": "Al parecer, el permiso era falso.", "accept": [], "why": "*Al parecer* only passes the news along, so the verb stays plain: *era*." },
+    { "prompt": "Say: Supposedly, the café closes in December.", "answer": "Supuestamente, el café cierra en diciembre.", "accept": ["Supuestamente el café cierra en diciembre."], "why": "*Supuestamente* opens the sentence and the verb stays plain: *cierra*." },
+    { "prompt": "Say: Apparently, nobody knows where it is.", "answer": "Por lo visto, nadie sabe dónde está.", "accept": ["Al parecer, nadie sabe dónde está.", "Por lo visto nadie sabe dónde está.", "Al parecer nadie sabe dónde está."], "why": "*Por lo visto* and *al parecer* both mean \"apparently\", so either one works." },
+    { "prompt": "Say: It's not that Vale doesn't want to help.", "answer": "No es que Vale no quiera ayudar.", "accept": [], "why": "*Quiera* is the wish form of *querer*, and it follows *no es que*." },
+    { "prompt": "Turn this fact into hearsay with *por lo visto*: *Altamira ya compró tres edificios.*", "answer": "Por lo visto, Altamira ya compró tres edificios.", "accept": ["Por lo visto Altamira ya compró tres edificios.", "Altamira ya compró tres edificios, por lo visto."], "why": "*Por lo visto* tells the listener you are only passing it on." },
+    { "prompt": "Say: It's not that I'm afraid, it's that I have no money.", "answer": "No es que tenga miedo, es que no tengo plata.", "accept": [], "why": "*Tenga* is the wish form after *no es que*, while the real reason after *es que* is plain: *no tengo*." }
+  ],
+  "pitfalls": [
+    { "wrong": "No es que dudo de ti.", "right": "No es que dude de ti.", "why": "Almost. After *no es que* the verb takes the wish form, because you are pushing the idea away." },
+    { "wrong": "Al parecer, el permiso fuera falso.", "right": "Al parecer, el permiso era falso.", "why": "Almost. *Al parecer* just reports, so the verb stays plain." },
+    { "wrong": "Al parecer que el permiso era falso.", "right": "Al parecer, el permiso era falso.", "why": "Almost. *Al parecer* is a short opener with a comma, with no *que* after it." },
+    { "wrong": "Supuestamente, yo vi que Altamira compró el edificio.", "right": "Yo vi que Altamira compró el edificio.", "why": "If you saw it yourself you vouch for it, so there is nothing to hedge." }
+  ],
+  "personal": "Think of a rumour about your office, your street or your family. Pass it on with *por lo visto* or *al parecer*, then add one thing you are not saying with *no es que*."
+}

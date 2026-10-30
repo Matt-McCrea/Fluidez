@@ -1,0 +1,43 @@
+{
+  "node": "p:no-tengo-tan-claro",
+  "hook": {
+    "line": "A customer swears Altamira has a judge in its pocket, and Tomás would rather not call anyone a liar. Spanish has a ladder of phrases for doubting a claim, from a polite shrug to an open challenge.",
+    "es": "No tengo tan claro que sea la mejor solución.",
+    "en": "I'm not so sure it's the best solution."
+  },
+  "examples": [
+    { "es": "No tengo tan claro que sea la mejor solución.", "en": "I'm not so sure it's the best solution." },
+    { "es": "Pongo en duda que el senador diga la verdad.", "en": "I question whether the senator is telling the truth." },
+    { "es": "Cuestiono que esa sea la causa.", "en": "I question whether that's the cause." },
+    { "es": "No tengo tan claro que Altamira tenga el permiso.", "en": "I'm not so sure that Altamira has the permit." },
+    { "es": "Tengo mis dudas de que sea verdad.", "en": "I have my doubts that it's true." },
+    { "es": "No me convence del todo ese plan.", "en": "That plan doesn't entirely convince me." }
+  ],
+  "rule": "These phrases let you doubt a claim without calling anyone a liar.\n\nSoftest: *No me convence del todo* and *tengo mis dudas*. In the middle: *no tengo tan claro que*. Strongest: *pongo en duda que* and *cuestiono que*, which openly challenge the claim.\n\nAfter *que* the verb takes the wish form: *sea*, *tenga*, *diga*. You doubt it, so you do not state it.\n\nTake the *no* away and you are sure: *tengo claro que Altamira tiene el permiso*, with the plain verb.",
+  "smallPrint": "Teachers call this the subjunctive after expressions of doubt, which run from mild (*tengo mis dudas*) to strong (*cuestiono que*).",
+  "readAndPick": [
+    { "es": "No tengo tan claro que sea la mejor solución.", "options": ["I'm sure it's the best solution.", "I'm not so sure it's the best solution.", "It was the best solution."], "answer": 1 },
+    { "es": "Pongo en duda que el senador diga la verdad.", "options": ["I'm sure the senator is telling the truth.", "The senator questions whether I am telling the truth.", "I question whether the senator is telling the truth."], "answer": 2 },
+    { "es": "Tengo claro que Altamira tiene el permiso.", "options": ["I'm clear that Altamira has the permit.", "I'm not so sure that Altamira has the permit.", "I doubt that Altamira will get the permit."], "answer": 0 },
+    { "es": "Cuestiono que esa sea la causa.", "options": ["I know that's the cause.", "I question whether that's the cause.", "She questions whether that's the cause."], "answer": 1 },
+    { "es": "No tenemos tan claro que Vale esté de acuerdo.", "options": ["We're not so sure that Vale agrees.", "I'm not so sure that Vale agrees.", "They're sure that Vale agrees."], "answer": 0 },
+    { "es": "Tengo mis dudas de que sea verdad.", "options": ["I'm sure it's true.", "I have no doubts that it's true.", "I have my doubts that it's true."], "answer": 2 },
+    { "es": "No me convence del todo ese plan.", "options": ["That plan convinces me completely.", "That plan doesn't entirely convince me.", "I didn't entirely convince them of that plan."], "answer": 1 },
+    { "es": "No tengo tan claro que Altamira tenga el permiso.", "options": ["I'm not so sure that Altamira has the permit.", "I'm clear that Altamira has the permit.", "Altamira is not so sure that I have the permit."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *No tengo tan claro que ___ la mejor solución.* (*es* or *sea*) I'm not so sure it's the best solution.", "answer": "No tengo tan claro que sea la mejor solución.", "accept": [], "why": "You doubt it, so the verb takes the wish form: *sea*." },
+    { "prompt": "Pick and type the whole sentence: *Pongo en duda que el senador ___ la verdad.* (*dice* or *diga*) I question whether the senator is telling the truth.", "answer": "Pongo en duda que el senador diga la verdad.", "accept": [], "why": "Questioning a claim is doubting it, so *diga*." },
+    { "prompt": "Say: I question whether that's the cause.", "answer": "Cuestiono que esa sea la causa.", "accept": [], "why": "*Cuestiono que* is a direct challenge, followed by the wish form *sea*." },
+    { "prompt": "Say: I'm not so sure that Altamira has the permit.", "answer": "No tengo tan claro que Altamira tenga el permiso.", "accept": [], "why": "*No tengo tan claro que* is followed by *tenga*, the wish form of *tener*." },
+    { "prompt": "Say: We're not so sure that Vale agrees.", "answer": "No tenemos tan claro que Vale esté de acuerdo.", "accept": [], "why": "*Tenemos* is the \"we\" form and *esté* is the wish form." },
+    { "prompt": "Turn *Es verdad* into a doubt, softly: I have my doubts that it's true.", "answer": "Tengo mis dudas de que sea verdad.", "accept": [], "why": "*Tengo mis dudas de que* is the gentlest doubt, and still takes *sea*." },
+    { "prompt": "Say it mildly: That plan doesn't entirely convince me.", "answer": "No me convence del todo ese plan.", "accept": ["Ese plan no me convence del todo."], "why": "*No me convence del todo* needs no *que*, so no wish form is needed." }
+  ],
+  "pitfalls": [
+    { "wrong": "No tengo tan claro que es la mejor solución.", "right": "No tengo tan claro que sea la mejor solución.", "why": "Almost. You are doubting, so the verb after *que* takes the wish form." },
+    { "wrong": "Pongo en duda de que el senador diga la verdad.", "right": "Pongo en duda que el senador diga la verdad.", "why": "Almost. *Poner en duda* takes *que* directly, with no *de*." },
+    { "wrong": "Tengo claro que Altamira tenga el permiso.", "right": "Tengo claro que Altamira tiene el permiso.", "why": "Almost. Without *no* you are sure, so the verb stays plain." }
+  ],
+  "personal": "Think of a claim you have heard lately that you are not sure about. Doubt it politely with *no tengo tan claro que*, then say it more firmly with *pongo en duda que*."
+}

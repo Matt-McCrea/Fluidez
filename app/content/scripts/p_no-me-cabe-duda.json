@@ -1,0 +1,43 @@
+{
+  "node": "p:no-me-cabe-duda",
+  "hook": {
+    "line": "Mariana is about to print a story about the block, and her editor asks: are you sure, or do you only think so? Spanish has a firm way to say \"I have no doubt\" and another for \"I know it for a fact\".",
+    "es": "No me cabe la menor duda de que Vale tiene razón.",
+    "en": "I haven't the slightest doubt that Vale is right."
+  },
+  "examples": [
+    { "es": "No me cabe la menor duda de que Vale tiene razón.", "en": "I haven't the slightest doubt that Vale is right." },
+    { "es": "Me consta que Hernando pagó la cuenta.", "en": "I know for a fact that Hernando paid the bill." },
+    { "es": "No me cabe duda de que vendrá.", "en": "I have no doubt that he will come." },
+    { "es": "Me consta que lo avisaron ayer.", "en": "I know for a fact that they told him yesterday." },
+    { "es": "¿Te consta que firmaron el contrato?", "en": "Do you know for a fact that they signed the contract? (to a friend)" },
+    { "es": "No nos cabe duda de que ganaremos.", "en": "We have no doubt that we will win." }
+  ],
+  "rule": "*No me cabe la menor duda de que* means \"I have no doubt that\". *Me consta que* means \"I know for a fact that\", because I have seen the proof.\n\nBoth are followed by the plain verb: *tiene*, *pagó*, *vendrá*. You are sure, so there is no wish form.\n\nThey work like *me gusta*: the doubt or the fact is the subject, and you are *me*. For other people, change it: *no nos cabe duda*, *te consta*, *le consta*.\n\nEnglish just says \"I'm sure\". These two are heavier and more formal, the voice of a witness.",
+  "smallPrint": "Teachers call these expressions of certainty, and *me consta* in particular carries evidence behind it.",
+  "readAndPick": [
+    { "es": "No nos cabe duda de que ganaremos.", "options": ["We have no doubt that we will win.", "I have no doubt that I will win.", "They have no doubt that they will win."], "answer": 0 },
+    { "es": "Me consta que Hernando pagó la cuenta.", "options": ["I know for a fact that Hernando will pay the bill.", "I know for a fact that Hernando paid the bill.", "I know for a fact that Hernando is paying the bill."], "answer": 1 },
+    { "es": "¿Te consta que firmaron el contrato?", "options": ["Do I know for a fact that they signed the contract?", "Do you know for a fact that they will sign the contract?", "Do you know for a fact that they signed the contract?"], "answer": 2 },
+    { "es": "No me cabe duda de que vendrá.", "options": ["I have no doubt that he will come.", "I have no doubt that he came.", "I doubt that he will come."], "answer": 0 },
+    { "es": "A Hernando le consta que Rosa trabajó aquí cuarenta años.", "options": ["We know for a fact that Rosa worked here forty years.", "I know for a fact that Rosa worked here forty years.", "Hernando knows for a fact that Rosa worked here forty years."], "answer": 2 },
+    { "es": "Me consta que lo avisaron ayer.", "options": ["I know for a fact that he told them yesterday.", "I know for a fact that they told him yesterday.", "I know for a fact that I told him yesterday."], "answer": 1 },
+    { "es": "No me cabe la menor duda de que Vale tiene razón.", "options": ["Vale has no doubt that I am right.", "I am not sure that Vale is right.", "I have no doubt at all that Vale is right."], "answer": 2 },
+    { "es": "Me consta que ella no firmó nada.", "options": ["I know for a fact that she signed nothing.", "I know for a fact that she will sign something.", "I am not sure that she signed anything."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *No me cabe duda de que Vale ___ razón.* (*tiene* or *tenga*) I have no doubt that Vale is right.", "answer": "No me cabe duda de que Vale tiene razón.", "accept": [], "why": "You are sure, so the verb stays plain: *tiene*." },
+    { "prompt": "Pick and type the whole sentence: *Me consta que Hernando ___ la cuenta.* (*pagó* or *pagará*) I know for a fact that Hernando paid the bill.", "answer": "Me consta que Hernando pagó la cuenta.", "accept": [], "why": "A fact you know about something already done needs the past: *pagó*." },
+    { "prompt": "Say: I know for a fact that they told him yesterday.", "answer": "Me consta que lo avisaron ayer.", "accept": ["Me consta que ayer lo avisaron."], "why": "*Me consta que* opens the sentence, and the rest is a plain statement." },
+    { "prompt": "Say: We have no doubt that we will win.", "answer": "No nos cabe duda de que ganaremos.", "accept": ["No nos cabe la menor duda de que ganaremos."], "why": "*Nos* replaces *me* because the doubt belongs to all of us." },
+    { "prompt": "Ask a friend: Do you know for a fact that they signed the contract?", "answer": "¿Te consta que firmaron el contrato?", "accept": [], "why": "For a friend you swap *me* for *te*: *¿te consta?*." },
+    { "prompt": "Make it negative: *Me consta que ella firmó el contrato.* (I know for a fact that she signed nothing)", "answer": "Me consta que ella no firmó nada.", "accept": [], "why": "The *no* goes inside the statement, in front of the verb, and *me consta* stays the same." },
+    { "prompt": "Say: Hernando knows for a fact that Rosa worked here forty years.", "answer": "A Hernando le consta que Rosa trabajó aquí cuarenta años.", "accept": ["Le consta a Hernando que Rosa trabajó aquí cuarenta años."], "why": "For another person you use *le*, and *a Hernando* names who it is." }
+  ],
+  "pitfalls": [
+    { "wrong": "No me cabe duda de que Vale tenga razón.", "right": "No me cabe duda de que Vale tiene razón.", "why": "Almost. You have no doubt, so the verb stays plain; the wish form is for when you do doubt." },
+    { "wrong": "No me cabe duda que Vale tiene razón.", "right": "No me cabe duda de que Vale tiene razón.", "why": "Almost. After *duda* Spanish keeps the *de* in front of *que*." },
+    { "wrong": "Yo consto que Hernando pagó la cuenta.", "right": "Me consta que Hernando pagó la cuenta.", "why": "Almost. The fact is what is \"clear\" to you, so you are *me*, like in *me gusta*." }
+  ],
+  "personal": "Write one thing you know for a fact about your own neighbourhood, starting with *Me consta que*, and one thing you have no doubt about, starting with *No me cabe duda de que*."
+}
