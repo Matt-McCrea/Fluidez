@@ -1,0 +1,43 @@
+{
+  "node": "x:parcial-vs-total",
+  "hook": {
+    "line": "In a debate, \"I agree\" is not one move but two. You can back someone completely, or give them a point and then push back. Spanish uses different openers for each, and the listener hears the difference at once.",
+    "es": "No te falta razón; ahora bien, hay que pensar en el costo.",
+    "en": "You've got a point; that said, we have to think about the cost."
+  },
+  "examples": [
+    { "es": "Coincido contigo en que hay que cambiar el plan.", "en": "I agree with you that we need to change the plan." },
+    { "es": "No te falta razón; ahora bien, hay que pensar en el costo.", "en": "You've got a point; that said, we have to think about the cost." },
+    { "es": "Coincido contigo en que hace falta más financiación.", "en": "I agree with you that more funding is needed." },
+    { "es": "Algo de razón tienes, pero no del todo.", "en": "You're partly right, but not entirely." },
+    { "es": "Estoy de acuerdo en todo, salvo en el plazo.", "en": "I agree on everything except the deadline." },
+    { "es": "No le falta razón, pero el presupuesto no alcanza.", "en": "You're not wrong, but the budget won't stretch to it. (formal)" }
+  ],
+  "rule": "Full agreement: *Coincido contigo en que…* and then the thing you share. Nothing follows to take it back.\n\nPartial agreement: *No te falta razón*, *Algo de razón tienes*, *En eso me convenciste*. These give a point, and a turn is on its way: *pero*, *ahora bien*, *sin embargo*.\n\nA third way is to agree and mark the exception: *Estoy de acuerdo en todo, salvo en el plazo.*\n\nSo listen for what comes next. After *coincido*, the speaker is on your side. After *no te falta razón*, wait for the *but*.",
+  "smallPrint": "Teachers call this the difference between full and partial concession. In debates, partial agreement is a polite way to open a disagreement.",
+  "readAndPick": [
+    { "es": "Coincido contigo en que hay que cambiar el plan.", "options": ["I agree with you that we need to change the plan.", "You've got a point, but we need to change the plan.", "I don't agree that we need to change the plan."], "answer": 0 },
+    { "es": "No te falta razón; ahora bien, hay que pensar en el costo.", "options": ["I agree with you completely: we have to think about the cost.", "You've got a point; that said, we have to think about the cost.", "I don't agree: we don't have to think about the cost."], "answer": 1 },
+    { "es": "Algo de razón tienes, pero no del todo.", "options": ["You're partly right, but not entirely.", "You're completely right.", "You're not right at all."], "answer": 0 },
+    { "es": "Estoy de acuerdo en todo, salvo en el plazo.", "options": ["I agree on the deadline, and on nothing else.", "I agree on everything except the deadline.", "I agree on everything, including the deadline."], "answer": 1 },
+    { "es": "Coincido contigo en que hace falta más financiación.", "options": ["You're partly right that more funding is needed.", "I don't agree with you that more funding is needed.", "I agree with you that more funding is needed."], "answer": 2 },
+    { "es": "No le falta razón, pero el presupuesto no alcanza.", "options": ["You're not wrong, but the budget won't stretch to it. (formal)", "You're completely right, and the budget will stretch to it. (formal)", "You're wrong, so the budget won't stretch to it. (formal)"], "answer": 0 },
+    { "es": "No coincido contigo en que sea la única opción.", "options": ["I agree with you that it's the only option.", "I don't agree with you that it's the only option.", "You're partly right that it's the only option."], "answer": 1 },
+    { "es": "En eso me convenciste; sin embargo, sigo con dudas.", "options": ["You've convinced me on that, and I have no doubts left.", "You haven't convinced me on that, and I still have doubts.", "You've convinced me on that; however, I still have doubts."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the full-agreement opener and type the whole sentence: *___ contigo en que hay que cambiar el plan.* (*Coincido* or *No te falta razón*)", "answer": "Coincido contigo en que hay que cambiar el plan.", "accept": [], "why": "*Coincido contigo en que…* is the full \"I agree with you that…\"." },
+    { "prompt": "Type in Spanish, to a friend (a partial yes with a turn): You've got a point; that said, we have to think about the cost.", "answer": "No te falta razón; ahora bien, hay que pensar en el costo.", "accept": ["No te falta razón, ahora bien, hay que pensar en el costo."], "why": "*No te falta razón* gives a point, and *ahora bien* opens the objection." },
+    { "prompt": "Type in Spanish: I agree with you that more funding is needed.", "answer": "Coincido contigo en que hace falta más financiación.", "accept": [], "why": "Full agreement: *coincido contigo en que* plus the shared claim." },
+    { "prompt": "Type in Spanish, to a friend: You're partly right, but not entirely.", "answer": "Algo de razón tienes, pero no del todo.", "accept": [], "why": "*Algo de razón* is a partial yes, and *pero no del todo* confirms it." },
+    { "prompt": "Type in Spanish: I agree on everything except the deadline.", "answer": "Estoy de acuerdo en todo, salvo en el plazo.", "accept": ["Estoy de acuerdo en todo, excepto en el plazo."], "why": "*Salvo en* marks the one thing you do not accept." },
+    { "prompt": "Make it formal, to a stranger: *No te falta razón, pero el presupuesto no alcanza.* Say: You're not wrong, but the budget won't stretch to it.", "answer": "No le falta razón, pero el presupuesto no alcanza.", "accept": [], "why": "For *usted*, *te* becomes *le*." },
+    { "prompt": "Make it negative: *Coincido contigo en que sea la única opción.* Say: I don't agree with you that it's the only option.", "answer": "No coincido contigo en que sea la única opción.", "accept": [], "why": "Add *no* in front of *coincido*; the wish-form *sea* follows a negative." }
+  ],
+  "pitfalls": [
+    { "wrong": "Coincido contigo que hay que cambiar el plan.", "right": "Coincido contigo en que hay que cambiar el plan.", "why": "Almost. *Coincidir* always takes *en* before the thing you share: *en que*." },
+    { "wrong": "No te falta razón, y hay que pensar en el costo.", "right": "No te falta razón; ahora bien, hay que pensar en el costo.", "why": "Almost. *No te falta razón* is a partial yes, so the next part should turn the other way, with *ahora bien* or *pero*." },
+    { "wrong": "Coincido contigo en que hay que cambiar el plan, pero no del todo.", "right": "Algo de razón tienes, pero no del todo.", "why": "Almost. *Coincido* is a full yes; if you want to hold something back, open with *algo de razón tienes*." }
+  ],
+  "personal": "Think of a plan someone proposed lately. Say your reaction in Spanish, starting with *Coincido contigo en que…* or *No te falta razón; ahora bien…*"
+}

@@ -1,0 +1,44 @@
+{
+  "node": "g:concessive-advanced",
+  "hook": {
+    "line": "Tomás keeps getting offers from Altamira, and he keeps saying no. To argue well, in writing or out loud, you need ways to say \"even so\" and \"however much\" that sound like a writer, not like a teenager saying *aunque*.",
+    "es": "Por mucho que Altamira ofrezca, Tomás no quiere vender.",
+    "en": "However much Altamira offers, Tomás doesn't want to sell."
+  },
+  "examples": [
+    { "es": "Si bien el plan es ambicioso, es viable.", "en": "Although the plan is ambitious, it is feasible." },
+    { "es": "Por muy rico que sea, no puede comprarlo todo.", "en": "However rich he may be, he can't buy everything." },
+    { "es": "Por mucho que insistas, no voy a ir.", "en": "However much you insist, I'm not going." },
+    { "es": "Aun cuando llueva, saldremos.", "en": "Even if it rains, we'll go out." },
+    { "es": "Si bien Vale cocina muy bien, el café pierde dinero.", "en": "Although Vale cooks very well, the café is losing money." },
+    { "es": "Por mucho que Altamira ofrezca, Tomás no quiere vender.", "en": "However much Altamira offers, Tomás doesn't want to sell." }
+  ],
+  "rule": "You already know *aunque*. Writers have sharper tools.\n\n*Si bien* + plain verb: \"although\", for something you accept as true. *Si bien el plan es ambicioso, es viable.* No *pero* afterwards.\n\n*Aun cuando* + wish-form verb: \"even if\". *Aun cuando llueva, saldremos.* With a plain verb it means \"even though\".\n\n*Por mucho que* + wish-form verb: \"however much\". *Por mucho que insistas…*\n\n*Por muy* + adjective + *que* + wish-form verb: \"however…\". *Por muy rico que sea…*\n\nRemember: *mucho* goes with a verb, *muy* with an adjective.",
+  "smallPrint": "Teachers call these concessive connectors. *Por mucho que* and *por muy… que* take the subjunctive: the speaker grants any degree and the result stays the same.",
+  "readAndPick": [
+    { "es": "Si bien el plan es ambicioso, es viable.", "options": ["If the plan is ambitious, it will be feasible.", "Although the plan is ambitious, it is feasible.", "Because the plan is ambitious, it is feasible."], "answer": 1 },
+    { "es": "Por mucho que insistas, no voy a ir.", "options": ["If you insist, I'm going.", "Because you insist, I'm not going.", "However much you insist, I'm not going."], "answer": 2 },
+    { "es": "Por muy rico que sea, no puede comprarlo todo.", "options": ["However rich he may be, he can't buy everything.", "He is so rich that he can't buy everything.", "Being very rich, he buys everything."], "answer": 0 },
+    { "es": "Aun cuando llueva, saldremos.", "options": ["Even though it rained, we went out.", "When it rains, we go out.", "Even if it rains, we'll go out."], "answer": 2 },
+    { "es": "Por mucho que Altamira ofrezca, Tomás no quiere vender.", "options": ["Since Altamira offers a lot, Tomás doesn't want to sell.", "However much Altamira offers, Tomás doesn't want to sell.", "Altamira offers a lot because Tomás wants to sell."], "answer": 1 },
+    { "es": "Si bien Vale cocina muy bien, el café pierde dinero.", "options": ["Although Vale cooks very well, the café is losing money.", "Because Vale cooks very well, the café is losing money.", "If Vale cooks very well, the café will lose money."], "answer": 0 },
+    { "es": "Por muy tarde que sea, voy a llamarte.", "options": ["It is so late that I'll call you.", "Because it's late, I'll call you.", "However late it may be, I'm going to call you."], "answer": 2 },
+    { "es": "Aun cuando el proyecto es caro, vale la pena.", "options": ["Even though the project is expensive, it's worth it.", "Even if the project were expensive, it would be worth it.", "When the project is expensive, it's worth it."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *mucho* or *muy* and type the whole sentence: *Por ___ que insistas, no voy a ir.*", "answer": "Por mucho que insistas, no voy a ir.", "accept": [], "why": "*Insistas* is a verb, and *mucho* goes with verbs." },
+    { "prompt": "Pick *mucho* or *muy* and type the whole sentence: *Por ___ rico que sea, no puede comprarlo todo.*", "answer": "Por muy rico que sea, no puede comprarlo todo.", "accept": [], "why": "*Rico* is an adjective, and *muy* goes with adjectives." },
+    { "prompt": "Type in Spanish: Even if it rains, we'll go out.", "answer": "Aun cuando llueva, saldremos.", "accept": ["Saldremos aun cuando llueva."], "why": "*Aun cuando* plus the wish-form *llueva* gives \"even if\"." },
+    { "prompt": "Type in Spanish: Although Vale cooks very well, the café is losing money.", "answer": "Si bien Vale cocina muy bien, el café pierde dinero.", "accept": ["Si bien Vale cocina muy bien, el café está perdiendo dinero."], "why": "It is true that she cooks well, so *si bien* takes the plain verb *cocina*." },
+    { "prompt": "Type in Spanish: However much Altamira offers, Tomás doesn't want to sell.", "answer": "Por mucho que Altamira ofrezca, Tomás no quiere vender.", "accept": ["Por mucho que ofrezca Altamira, Tomás no quiere vender."], "why": "*Ofrecer* is a verb, so *por mucho que* and the wish-form *ofrezca*." },
+    { "prompt": "Make it stronger: *Aunque insistas, no voy a ir.* Say it with *por mucho que*.", "answer": "Por mucho que insistas, no voy a ir.", "accept": [], "why": "*Por mucho que* replaces *aunque* and means \"however much\"." },
+    { "prompt": "Type in Spanish, to a male friend: However tired you may be, you have to finish.", "answer": "Por muy cansado que estés, tienes que terminar.", "accept": [], "why": "*Cansado* is an adjective, so *por muy…que*, and *estés* is the wish-form for *tú*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Por muy que insistas, no voy a ir.", "right": "Por mucho que insistas, no voy a ir.", "why": "Almost. *Muy* needs an adjective right after it; before a verb you use *mucho*." },
+    { "wrong": "Por mucho rico que sea, no puede comprarlo todo.", "right": "Por muy rico que sea, no puede comprarlo todo.", "why": "Almost. Before an adjective like *rico*, use *muy*." },
+    { "wrong": "Si bien el plan sea ambicioso, es viable.", "right": "Si bien el plan es ambicioso, es viable.", "why": "Almost. You accept that the plan is ambitious, so *si bien* takes the plain verb." },
+    { "wrong": "Si bien el plan es ambicioso, pero es viable.", "right": "Si bien el plan es ambicioso, es viable.", "why": "Almost. *Si bien* already does the job of \"although\", so you drop *pero*." }
+  ],
+  "personal": "Write one true sentence about yourself with *por mucho que…* (for example, something you will not give up, however much anyone insists)."
+}

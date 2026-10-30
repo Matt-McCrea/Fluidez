@@ -1,0 +1,43 @@
+{
+  "node": "p:cabe-preguntarse",
+  "hook": {
+    "line": "Your essay has a problem: every paragraph starts with *yo creo que*, and it sounds like a chat over tinto. Writers raise a doubt or flag a point in a calmer, more neutral voice.",
+    "es": "Cabe preguntarse si el café sobrevivirá.",
+    "en": "One might ask whether the café will survive."
+  },
+  "examples": [
+    { "es": "Cabe preguntarse si la medida resulta proporcionada.", "en": "One might ask whether the measure is proportionate." },
+    { "es": "Cabe señalar que los datos son de 2020.", "en": "It should be noted that the data are from 2020." },
+    { "es": "Conviene matizar que no todos los casos son iguales.", "en": "It is worth clarifying that not all cases are the same." },
+    { "es": "Todo apunta a que el plan fracasará.", "en": "Everything points to the plan failing." },
+    { "es": "Cabe preguntarse si el barrio sigue siendo de sus vecinos.", "en": "One might ask whether the neighbourhood still belongs to its residents." },
+    { "es": "Conviene recordar que el café lleva cuarenta años abierto.", "en": "It is worth remembering that the café has been open for forty years." }
+  ],
+  "rule": "These openers hide the *I*. The writer is not saying \"I think\"; the point simply deserves attention.\n\n*Cabe preguntarse si…*: raises a doubt, always with *si* (\"whether\").\n*Cabe señalar que…*: points something out.\n*Conviene matizar / recordar / aclarar que…*: \"it is worth clarifying / remembering that…\".\n*Todo apunta a que…*: \"everything suggests that…\".\n\nEach one is followed by a normal sentence. Use them once or twice per page, at the start of a paragraph.",
+  "smallPrint": "Teachers call *cabe* here an impersonal use of *caber* (\"to fit\"): literally, \"there is room to ask\".",
+  "readAndPick": [
+    { "es": "Cabe señalar que los datos son de 2020.", "options": ["It should be noted that the data are from 2020.", "One might ask whether the data are from 2020.", "The data might be from 2020."], "answer": 0 },
+    { "es": "Cabe preguntarse si la medida resulta proporcionada.", "options": ["It should be noted that the measure is proportionate.", "One might ask whether the measure is proportionate.", "The measure asks whether it fits."], "answer": 1 },
+    { "es": "Todo apunta a que el plan fracasará.", "options": ["Everything points to the plan failing.", "Everything points to the plan having failed.", "The plan points to everything failing."], "answer": 0 },
+    { "es": "Conviene matizar que no todos los casos son iguales.", "options": ["It is worth remembering that all cases are the same.", "One might ask whether all cases are the same.", "It is worth clarifying that not all cases are the same."], "answer": 2 },
+    { "es": "Cabe preguntarse si el barrio sigue siendo de sus vecinos.", "options": ["It should be noted that the neighbourhood belongs to its residents.", "One might ask whether the neighbourhood still belongs to its residents.", "Everything points to the neighbourhood belonging to its residents."], "answer": 1 },
+    { "es": "Conviene recordar que el café lleva cuarenta años abierto.", "options": ["One might ask whether the café has been open for forty years.", "It is worth remembering that the café has been open for forty years.", "Everything points to the café being open for forty years."], "answer": 1 },
+    { "es": "Todo apunta a que Altamira tiene prisa.", "options": ["One might ask whether Altamira is in a hurry.", "It should be noted that Altamira is in a hurry.", "Everything points to Altamira being in a hurry."], "answer": 2 },
+    { "es": "Cabe señalar que Vale llegó primero.", "options": ["It should be noted that Vale arrived first.", "One might ask whether Vale arrived first.", "It should be noted that Vale will arrive first."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *si* or *que* and type the whole sentence: *Cabe preguntarse ___ la medida es justa.*", "answer": "Cabe preguntarse si la medida es justa.", "accept": [], "why": "A doubt (\"whether\") needs *si*." },
+    { "prompt": "Pick *señalar* or *preguntarse* and type the whole sentence: *Cabe ___ que los datos son de 2020.*", "answer": "Cabe señalar que los datos son de 2020.", "accept": [], "why": "You are pointing out a fact, and *que* goes with *señalar*." },
+    { "prompt": "Type in Spanish: One might ask whether the café will survive.", "answer": "Cabe preguntarse si el café sobrevivirá.", "accept": ["Cabe preguntarse si el café va a sobrevivir."], "why": "*Cabe preguntarse si* plus a normal sentence." },
+    { "prompt": "Type in Spanish: Everything points to the plan failing.", "answer": "Todo apunta a que el plan fracasará.", "accept": ["Todo apunta a que el plan va a fracasar."], "why": "Remember the *a* before *que*: *apunta a que*." },
+    { "prompt": "Type in Spanish: It is worth clarifying that not all cases are the same.", "answer": "Conviene matizar que no todos los casos son iguales.", "accept": ["Conviene aclarar que no todos los casos son iguales."], "why": "*Conviene* plus a verb like *matizar* or *aclarar*, then *que*." },
+    { "prompt": "Rewrite with a writer's opener: *Yo creo que la medida es justa.* Start with *Cabe preguntarse si* and say: One might ask whether the measure is fair.", "answer": "Cabe preguntarse si la medida es justa.", "accept": [], "why": "The opener replaces *yo creo que*, and turns the claim into an open question." },
+    { "prompt": "Type in Spanish: It is worth remembering that the café has been open for forty years.", "answer": "Conviene recordar que el café lleva cuarenta años abierto.", "accept": [], "why": "*Conviene recordar que* introduces a reminder." }
+  ],
+  "pitfalls": [
+    { "wrong": "Cabe preguntar si la medida es justa.", "right": "Cabe preguntarse si la medida es justa.", "why": "Almost. The writer asks the question of themselves, so Spanish uses *preguntarse*." },
+    { "wrong": "Cabe preguntarse que la medida es justa.", "right": "Cabe preguntarse si la medida es justa.", "why": "Almost. A doubt is \"whether\", which is *si*, not *que*." },
+    { "wrong": "Todo apunta que el plan fracasará.", "right": "Todo apunta a que el plan fracasará.", "why": "Almost. *Apuntar* needs its little *a* before *que*." }
+  ],
+  "personal": "Write one sentence about your own city or workplace starting with *Cabe preguntarse si*."
+}

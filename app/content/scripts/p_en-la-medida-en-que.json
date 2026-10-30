@@ -1,0 +1,43 @@
+{
+  "node": "p:en-la-medida-en-que",
+  "hook": {
+    "line": "In an essay you rarely say \"this is good\" flat out. You say how far it is good, and what it depends on. Spanish writers use one phrase for that.",
+    "es": "El café funciona en la medida en que los vecinos lo apoyan.",
+    "en": "The café works insofar as the neighbours support it."
+  },
+  "examples": [
+    { "es": "La medida es útil en la medida en que reduce los tiempos de espera.", "en": "The measure is useful insofar as it reduces waiting times." },
+    { "es": "Te ayudaré en la medida en que pueda.", "en": "I'll help you as far as I can." },
+    { "es": "El café funciona en la medida en que los vecinos lo apoyan.", "en": "The café works insofar as the neighbours support it." },
+    { "es": "Participaré en la medida en que me lo permita el trabajo.", "en": "I'll take part insofar as work allows me." },
+    { "es": "Una ciudad es justa en la medida en que protege a los más débiles.", "en": "A city is fair insofar as it protects the weakest." },
+    { "es": "Colaboraremos en la medida en que ustedes nos escuchen.", "en": "We will cooperate to the extent that you all listen to us." }
+  ],
+  "rule": "*En la medida en que* means \"insofar as\" or \"to the extent that\". It ties one thing to the degree of another.\n\nIf the fact is real and known, use the plain verb: *en la medida en que reduce los tiempos*.\n\nIf the extent is still open (a possibility, a future, something you cannot promise), use the wish-form verb: *en la medida en que pueda*.\n\nThe four little words stay together: *en la medida en que*.",
+  "smallPrint": "Teachers call this a proportional or conditional-extent connector. The mood follows the usual rule: indicative for what is established, subjunctive for what is not.",
+  "readAndPick": [
+    { "es": "La medida es útil en la medida en que reduce los tiempos de espera.", "options": ["The measure is useful insofar as it reduces waiting times.", "The measure is useful insofar as it might reduce waiting times.", "The measure was useful because it reduced waiting times."], "answer": 0 },
+    { "es": "Te ayudaré en la medida en que pueda.", "options": ["I helped you as far as I could.", "I'll help you as far as I can.", "I help you because I can."], "answer": 1 },
+    { "es": "El café funciona en la medida en que los vecinos lo apoyan.", "options": ["The café would work if the neighbours supported it.", "The café works so the neighbours support it.", "The café works insofar as the neighbours support it."], "answer": 2 },
+    { "es": "Participaré en la medida en que me lo permita el trabajo.", "options": ["I'll take part insofar as work allows me.", "I took part because work allowed me.", "I take part since work allows me."], "answer": 0 },
+    { "es": "Una ciudad es justa en la medida en que protege a los más débiles.", "options": ["A city is fair although it protects the weakest.", "A city is fair when it can protect the weakest.", "A city is fair insofar as it protects the weakest."], "answer": 2 },
+    { "es": "Colaboraremos en la medida en que ustedes nos escuchen.", "options": ["We cooperated since you all listened to us.", "We will cooperate to the extent that you all listen to us.", "We cooperate because you all listen to us."], "answer": 1 },
+    { "es": "Ayudamos en la medida en que podemos.", "options": ["We help as far as we can.", "We'll help as far as we can.", "We helped as far as we could."], "answer": 0 },
+    { "es": "La obra avanza en la medida en que llega el dinero.", "options": ["The work will move forward insofar as the money may arrive.", "The work moved forward until the money arrived.", "The work moves forward insofar as the money arrives."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *puedo* or *pueda* and type the whole sentence (a promise about the future): *Te ayudaré en la medida en que ___.*", "answer": "Te ayudaré en la medida en que pueda.", "accept": [], "why": "How much you will manage is still open, so the wish-form *pueda*." },
+    { "prompt": "Pick *reduce* or *reduzca* and type the whole sentence (a known fact): *La medida es útil en la medida en que ___ los tiempos de espera.*", "answer": "La medida es útil en la medida en que reduce los tiempos de espera.", "accept": [], "why": "The measure really does reduce waiting times, so the plain verb." },
+    { "prompt": "Type in Spanish: A city is fair insofar as it protects the weakest.", "answer": "Una ciudad es justa en la medida en que protege a los más débiles.", "accept": [], "why": "Protecting the weak is stated as a fact, so *protege*." },
+    { "prompt": "Type in Spanish: I'll take part insofar as work allows me.", "answer": "Participaré en la medida en que me lo permita el trabajo.", "accept": ["Participaré en la medida en que el trabajo me lo permita."], "why": "Whether work will allow it is open, so *permita*." },
+    { "prompt": "Type in Spanish: We help as far as we can.", "answer": "Ayudamos en la medida en que podemos.", "accept": [], "why": "This is what we really do, so the plain *podemos*." },
+    { "prompt": "Make it open: *Colaboramos en la medida en que ustedes nos escuchan.* Say: We will cooperate to the extent that you all listen to us.", "answer": "Colaboraremos en la medida en que ustedes nos escuchen.", "accept": ["Colaboraremos en la medida en que nos escuchen."], "why": "Now it is in the future and depends on them, so *escuchen*." },
+    { "prompt": "Type in Spanish: The café works insofar as the neighbours support it.", "answer": "El café funciona en la medida en que los vecinos lo apoyan.", "accept": [], "why": "The neighbours do support it, so *apoyan*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Te ayudaré en la medida en que puedo.", "right": "Te ayudaré en la medida en que pueda.", "why": "Almost. When the extent is still open, Spanish wants the wish-form verb: *pueda*." },
+    { "wrong": "Te ayudaré en la medida de que pueda.", "right": "Te ayudaré en la medida en que pueda.", "why": "Almost. The phrase is *en la medida en que*, with *en*, not *de*." },
+    { "wrong": "Te ayudaré en la media en que pueda.", "right": "Te ayudaré en la medida en que pueda.", "why": "Almost. The word is *medida* (\"extent\"), not *media*." }
+  ],
+  "personal": "Finish with something true: *Voy a mejorar mi español en la medida en que…*"
+}

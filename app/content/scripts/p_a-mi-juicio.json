@@ -1,0 +1,43 @@
+{
+  "node": "p:a-mi-juicio",
+  "hook": {
+    "line": "When a journalist like Mariana asks for your view on the record, *yo creo* can sound thin. Spanish has formal ways of saying \"in my view\" that give an opinion some weight.",
+    "es": "A mi juicio, la decisión fue precipitada.",
+    "en": "In my judgement, the decision was rushed."
+  },
+  "examples": [
+    { "es": "A mi juicio, la decisión fue precipitada.", "en": "In my judgement, the decision was rushed." },
+    { "es": "A su entender, ¿cuáles son los retos?", "en": "In your view, what are the challenges? (formal)" },
+    { "es": "En mi humilde opinión, esa polémica es artificial.", "en": "In my humble opinion, that controversy is manufactured." },
+    { "es": "En mi modesta opinión, el plan no es viable.", "en": "In my modest opinion, the plan isn't viable." },
+    { "es": "A mi entender, el plan tiene un problema serio.", "en": "As I see it, the plan has a serious problem." },
+    { "es": "A mi parecer, el café vale más que el dinero.", "en": "In my view, the café is worth more than the money." }
+  ],
+  "rule": "These openers go before a full statement, followed by a comma: *A mi juicio*, *A mi entender*, *A mi parecer*, *En mi modesta opinión*. No *que* follows.\n\nSwap *mi* for *su* to ask someone formal: *A su entender, ¿cuáles son los retos?*\n\nThey belong to interviews, debates and essays. Among friends they sound stiff, so keep *yo creo que* for the café. And *en mi modesta opinión* often arrives just before something blunt.",
+  "smallPrint": "Teachers call these hedges or stance markers: they flag a statement as an opinion, with some authority.",
+  "readAndPick": [
+    { "es": "A mi juicio, la decisión fue precipitada.", "options": ["In my judgement, the decision was rushed.", "In my judgement, the decision will be rushed.", "The judge said the decision was rushed."], "answer": 0 },
+    { "es": "A su entender, ¿cuáles son los retos?", "options": ["In my view, what are the challenges?", "In your view, what are the challenges? (formal)", "In your view, what were the challenges? (to a friend)"], "answer": 1 },
+    { "es": "En mi humilde opinión, esa polémica es artificial.", "options": ["In your humble opinion, that controversy is manufactured.", "That controversy is manufactured, and nobody has an opinion.", "In my humble opinion, that controversy is manufactured."], "answer": 2 },
+    { "es": "En mi modesta opinión, el plan no es viable.", "options": ["In my modest opinion, the plan isn't viable.", "In my modest opinion, the plan is viable.", "In your modest opinion, the plan isn't viable."], "answer": 0 },
+    { "es": "A mi entender, el plan tiene un problema serio.", "options": ["As you see it, the plan has a serious problem.", "As I see it, the plan has no problem.", "As I see it, the plan has a serious problem."], "answer": 2 },
+    { "es": "A mi parecer, el café vale más que el dinero.", "options": ["In my view, the money is worth more than the café.", "In my view, the café is worth more than the money.", "In your view, the café is worth more than the money."], "answer": 1 },
+    { "es": "A su entender, ¿el proyecto es viable?", "options": ["In your view, is the project feasible? (formal)", "In my view, the project is feasible.", "In your view, was the project feasible? (to a friend)"], "answer": 0 },
+    { "es": "A mi juicio, el barrio no necesita otro hotel.", "options": ["In my judgement, the neighbourhood needs another hotel.", "In my judgement, the neighbourhood doesn't need another hotel.", "In your judgement, the neighbourhood doesn't need another hotel."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *mi* or *su* and type the whole sentence, giving your own opinion: *A ___ entender, el plan tiene un problema serio.*", "answer": "A mi entender, el plan tiene un problema serio.", "accept": [], "why": "It is your own view, so *mi*." },
+    { "prompt": "Pick *mi* or *su* and type the whole sentence, asking someone formally: *A ___ entender, ¿cuáles son los retos?*", "answer": "A su entender, ¿cuáles son los retos?", "accept": [], "why": "You are asking *usted*, so *su*." },
+    { "prompt": "Type in Spanish: In my judgement, the decision was rushed.", "answer": "A mi juicio, la decisión fue precipitada.", "accept": [], "why": "*A mi juicio*, a comma, then a full statement with no *que*." },
+    { "prompt": "Type in Spanish: In my humble opinion, that controversy is manufactured.", "answer": "En mi humilde opinión, esa polémica es artificial.", "accept": [], "why": "*Humilde* adds modesty, often before a strong claim." },
+    { "prompt": "Type in Spanish: In my view, the café is worth more than the money.", "answer": "A mi parecer, el café vale más que el dinero.", "accept": ["A mi juicio, el café vale más que el dinero.", "A mi entender, el café vale más que el dinero."], "why": "*A mi parecer*, *a mi juicio* and *a mi entender* are interchangeable." },
+    { "prompt": "Make it formal: *Yo creo que el plan no es viable.* Say it with *en mi modesta opinión*: In my modest opinion, the plan isn't viable.", "answer": "En mi modesta opinión, el plan no es viable.", "accept": [], "why": "The opener replaces *yo creo que*, so the *que* disappears." },
+    { "prompt": "Ask a stranger formally: In your view, is the project feasible?", "answer": "A su entender, ¿el proyecto es viable?", "accept": ["A su entender, ¿es viable el proyecto?"], "why": "*A su entender* opens a question to *usted*." }
+  ],
+  "pitfalls": [
+    { "wrong": "A mi juicio que la decisión fue precipitada.", "right": "A mi juicio, la decisión fue precipitada.", "why": "Almost. The opener is already complete, so a comma and then the sentence." },
+    { "wrong": "En mi juicio, la decisión fue precipitada.", "right": "A mi juicio, la decisión fue precipitada.", "why": "Almost. The fixed phrase is *a mi juicio*, with *a*." },
+    { "wrong": "A mi juicio, la decisión fue precipitado.", "right": "A mi juicio, la decisión fue precipitada.", "why": "Almost. *Decisión* is feminine, so *precipitada*." }
+  ],
+  "personal": "Give a formal opinion about your city or workplace starting with *A mi juicio* or *En mi modesta opinión*."
+}
