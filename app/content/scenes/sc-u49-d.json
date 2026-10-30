@@ -1,0 +1,243 @@
+{
+  "id": "sc-u49-d",
+  "unit": "u49",
+  "title": "Informe para la junta",
+  "spare": true,
+  "brief": "You're Tomás, helping Don Hernando write a report for the neighbours about the project. He is courtly and older than you, so use usted. Weigh the options, talk about what you're good at and answer his personal questions.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Don Hernando: Joven Tomás, los vecinos me pidieron un informe sobre el proyecto. ¿Qué ventaja destaca usted?",
+      "npcEn": "Don Hernando: Young Tomás, the neighbours asked me for a report on the project. Which advantage do you highlight?",
+      "intent": "Say that among the advantages, saving money stands out (use: Entre las ventajas destaca...).",
+      "accept": [
+        "Entre las ventajas destaca el ahorro de dinero.",
+        "Entre las ventajas destaca el trabajo en equipo.",
+        "Entre las ventajas del proyecto destaca el ahorro de tiempo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bentre las ventajas\\b.*\\bdestaca\\b",
+          "flags": "iu",
+          "label": "use: entre las ventajas ... destaca ..."
+        }
+      ],
+      "focus": "p:entre-las-ventajas-destaca",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Don Hernando: Muy bien. ¿Y las desventajas?",
+      "npcEn": "Don Hernando: Very good. And the disadvantages?",
+      "intent": "Say that among the disadvantages, the start-up costs stand out (use: Entre las desventajas destacan...).",
+      "accept": [
+        "Entre las desventajas destacan los costos iniciales.",
+        "Entre las desventajas destacan los gastos del principio.",
+        "Entre las desventajas destacan los costos y el papeleo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bentre las desventajas\\b.*\\bdestacan?\\b",
+          "flags": "iu",
+          "label": "use: entre las desventajas ... destacan ..."
+        }
+      ],
+      "focus": "p:entre-las-ventajas-destaca",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Don Hernando: Dígame, ¿qué se le da bien a usted en el negocio?",
+      "npcEn": "Don Hernando: Tell me, what are you good at in the business?",
+      "intent": "Say you are good with numbers but bad at cooking (use: Se me dan bien... / Se me da mal...).",
+      "accept": [
+        "Se me dan bien los números, pero se me da mal cocinar.",
+        "Se me dan bien los números y se me da mal la cocina.",
+        "Se me da mal cocinar, pero se me dan bien los números."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse me (da|dan) bien\\b",
+          "flags": "iu",
+          "label": "say what you're good at: se me da(n) bien..."
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bse me (da|dan) mal\\b",
+          "flags": "iu",
+          "label": "say what you're bad at: se me da(n) mal..."
+        }
+      ],
+      "focus": "p:darsele-bien-mal",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Don Hernando: Me dicen que Altamira le ofreció mucho dinero por el café. ¿Es cierto?",
+      "npcEn": "Don Hernando: They tell me Altamira offered you a lot of money for the café. Is it true?",
+      "intent": "Say yes, but you are not going to give up the café (use: renunciar a...).",
+      "accept": [
+        "Sí, pero no voy a renunciar al café.",
+        "Es cierto, pero no pienso renunciar al café de mi abuela.",
+        "Sí, pero no voy a renunciar a este lugar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\brenunciar (a|al)\\b",
+          "flags": "iu",
+          "label": "use: renunciar a..."
+        },
+        {
+          "type": "negation"
+        }
+      ],
+      "focus": "p:renunciar-a",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Don Hernando: ¿Y cómo se siente después de tanto trabajo, joven?",
+      "npcEn": "Don Hernando: And how do you feel after so much work, young man?",
+      "intent": "Say you are happy about having inherited the café (use: de + haber + past participle).",
+      "accept": [
+        "Estoy contento de haber heredado el café.",
+        "Me alegro de haber venido a Bogotá.",
+        "Estoy feliz de haber aceptado el café de mi abuela."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhaber \\w+(ado|ido)\\b",
+          "flags": "iu",
+          "label": "use: haber + participle (haber heredado)"
+        }
+      ],
+      "focus": "g:infinitive-perfect",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Don Hernando: Excelente. Vamos, el tinto va por mi cuenta.",
+      "npcEn": "Don Hernando: Excellent. Come on, the coffee is on me.",
+      "intent": "Thank him politely.",
+      "accept": [
+        "Muchas gracias, Don Hernando. Es usted muy amable.",
+        "Gracias, don Hernando. Con mucho gusto.",
+        "Se lo agradezco mucho, Don Hernando."
+      ],
+      "require": [],
+      "focus": "g:formal-letter-grammar",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:con-mucho-gusto",
+    "c:gracias-de-nada",
+    "c:me-alegro",
+    "c:me-regala",
+    "c:mucho-gusto",
+    "c:muy-amable",
+    "c:trabajo-en",
+    "c:vamos-a",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:infinitive-perfect",
+    "g:ir-a-plans",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:preterite-er-ir",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:aceptar",
+    "l:agradecer",
+    "l:ahorro",
+    "l:alegrarse",
+    "l:amable",
+    "l:bien",
+    "l:café",
+    "l:cocina",
+    "l:cocinar",
+    "l:contento",
+    "l:costo",
+    "l:cuenta",
+    "l:cómo",
+    "l:darse",
+    "l:decir",
+    "l:después",
+    "l:destacar",
+    "l:desventaja",
+    "l:dinero",
+    "l:equipo",
+    "l:estar",
+    "l:excelente",
+    "l:feliz",
+    "l:gasto",
+    "l:gusto",
+    "l:haber",
+    "l:heredar",
+    "l:informe",
+    "l:inicial",
+    "l:ir",
+    "l:joven",
+    "l:lugar",
+    "l:mal",
+    "l:negocio",
+    "l:número",
+    "l:ofrecer",
+    "l:pedir",
+    "l:pensar",
+    "l:principio",
+    "l:proyecto",
+    "l:qué",
+    "l:renunciar",
+    "l:sentirse",
+    "l:ser",
+    "l:tiempo",
+    "l:tinto",
+    "l:trabajo",
+    "l:vecino",
+    "l:venir",
+    "l:ventaja",
+    "p:alegrarse-de-que",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:contento-con-de",
+    "p:darsele-bien",
+    "p:darsele-bien-mal",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:entre-las-ventajas-destaca",
+    "p:me-te-nos-objects",
+    "p:pensar-en",
+    "p:pensar-inf",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:renunciar-a",
+    "p:same-subject-haber",
+    "p:senor-don-article",
+    "p:sentirse-mal",
+    "p:te-lo-agradezco",
+    "p:tener-razon-pero",
+    "p:time-sequence-basic"
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "id": "sc-u49-e",
+  "unit": "u49",
+  "title": "Máquina rota",
+  "spare": true,
+  "brief": "You're Tomás on the phone with Lucía, who works at a coffee equipment supplier. The new machine arrived broken. She is a stranger, so use usted. Explain the problem and politely request a replacement and a refund.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Lucía: Distribuidora Andina, habla Lucía. ¿Con quién hablo?",
+      "npcEn": "Lucía: Andean Distributors, Lucía speaking. Who am I speaking to?",
+      "intent": "Say you are Tomás, from the café in La Candelaria, and that you have a complaint.",
+      "accept": [
+        "Habla Tomás, del café de La Candelaria. Tengo una queja.",
+        "Buenas tardes, soy Tomás, del café de La Candelaria. Quiero presentar una queja.",
+        "Soy Tomás, del café. Tengo una queja sobre mi pedido."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bqueja\\b",
+          "flags": "iu",
+          "label": "say you have a complaint (una queja)"
+        }
+      ],
+      "focus": "g:formal-letter-grammar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Lucía: Dígame, ¿qué pasó?",
+      "npcEn": "Lucía: Tell me, what happened?",
+      "intent": "Say the coffee machine arrived broken.",
+      "accept": [
+        "La máquina de café llegó rota.",
+        "La máquina llegó rota el lunes.",
+        "La máquina que compramos llegó rota."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\brot[oa]s?\\b",
+          "flags": "iu",
+          "label": "say it arrived broken (rota)"
+        }
+      ],
+      "focus": "g:formal-letter-grammar",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Lucía: Lo lamento mucho. ¿Qué pide?",
+      "npcEn": "Lucía: I'm very sorry. What are you asking for?",
+      "intent": "Say you would be grateful if they replaced the machine before Monday (use: Le agradecería que + past subjunctive).",
+      "accept": [
+        "Le agradecería que reemplazara la máquina antes del lunes.",
+        "Le agradecería que me reemplazara la máquina antes del lunes.",
+        "Le agradecería que la reemplazaran antes del lunes."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ble agradecer[ií]a que\\b",
+          "flags": "iu",
+          "label": "use: le agradecería que..."
+        }
+      ],
+      "focus": "g:formal-letter-grammar",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Lucía: El repartidor no puede pasar hasta el viernes. ¿Puede venir usted a recogerla?",
+      "npcEn": "Lucía: The delivery man can't come until Friday. Can you come to pick it up?",
+      "intent": "Say you can't, because the machine has been out of service since Monday and you can't close the café (use: fuera de servicio).",
+      "accept": [
+        "No puedo, porque la máquina está fuera de servicio desde el lunes.",
+        "No puedo ir. La máquina está fuera de servicio desde el lunes y no puedo cerrar el café.",
+        "Lo siento, no puedo. Estamos fuera de servicio desde el lunes."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bfuera de servicio\\b",
+          "flags": "iu",
+          "label": "use: fuera de servicio"
+        },
+        {
+          "type": "negation"
+        }
+      ],
+      "focus": "p:fuera-de-servicio",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Lucía: Entiendo. Se la entregamos mañana. ¿Quiere el reembolso del envío?",
+      "npcEn": "Lucía: I understand. We'll deliver it to you tomorrow. Do you want the shipping refunded?",
+      "intent": "Say yes, and that you ask for the refund.",
+      "accept": [
+        "Sí, pido el reembolso del envío.",
+        "Sí, pido también el reembolso.",
+        "Sí, por favor. Pido el reembolso del envío."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpido\\b",
+          "flags": "iu",
+          "label": "ask for it: pido el reembolso"
+        }
+      ],
+      "focus": "g:formal-letter-grammar",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Lucía: Listo. Hoy le llega un correo. Que tenga buena tarde.",
+      "npcEn": "Lucía: Done. You'll get an email today. Have a good afternoon.",
+      "intent": "Thank her and say goodbye.",
+      "accept": [
+        "Muchas gracias, Lucía. Igualmente, buena tarde.",
+        "Gracias por su ayuda. Hasta luego.",
+        "Se lo agradezco mucho. Buenas tardes."
+      ],
+      "require": [],
+      "focus": "g:formal-letter-grammar",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:aqui-tiene",
+    "c:claro-listo",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:lo-siento-pero-no-puedo",
+    "c:mucho-gusto",
+    "c:por-favor",
+    "c:porque",
+    "c:puedo",
+    "c:quiero",
+    "c:tengo",
+    "g:cause-result",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:agradecer",
+    "l:antes",
+    "l:ayuda",
+    "l:buena",
+    "l:café",
+    "l:cerrar",
+    "l:comprar",
+    "l:correo",
+    "l:decir",
+    "l:entender",
+    "l:entregar",
+    "l:envío",
+    "l:estar",
+    "l:favor",
+    "l:hablar",
+    "l:hoy",
+    "l:igualmente",
+    "l:ir",
+    "l:lamentar",
+    "l:listo",
+    "l:llegar",
+    "l:lucía",
+    "l:lunes",
+    "l:mañana",
+    "l:máquina",
+    "l:pasar",
+    "l:pedido",
+    "l:pedir",
+    "l:poder",
+    "l:presentar",
+    "l:queja",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:recoger",
+    "l:reembolso",
+    "l:reemplazar",
+    "l:repartidor",
+    "l:romper",
+    "l:sentir",
+    "l:ser",
+    "l:servicio",
+    "l:tarde",
+    "l:tener",
+    "l:venir",
+    "l:viernes",
+    "p:cerca-de",
+    "p:days-el-lunes",
+    "p:encontrar-participle",
+    "p:entregar-recoger",
+    "p:fuera-de-servicio",
+    "p:gracias-por",
+    "p:le-agradeceria-que",
+    "p:me-te-nos-objects",
+    "p:no-hasta",
+    "p:ocurrir-producirse",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:request-ladder",
+    "p:te-lo-agradezco",
+    "p:time-sequence-basic"
+  ]
+}

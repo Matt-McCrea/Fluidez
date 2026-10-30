@@ -1,0 +1,249 @@
+{
+  "id": "sc-u49-f",
+  "unit": "u49",
+  "title": "Una candidata",
+  "spare": true,
+  "brief": "You're Tomás, interviewing Daniela, a candidate for a barista job at the café. She uses usted with you, but you may use tú with her. Ask about her work, her plans and her documents, and close the interview kindly.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Daniela: Buenos días. Vine por el anuncio del cargo de barista. Me llamo Daniela.",
+      "npcEn": "Daniela: Good morning. I came about the advertisement for the barista post. My name is Daniela.",
+      "intent": "Welcome her and ask what she does for a living (use: ¿A qué te dedicas?).",
+      "accept": [
+        "Bienvenida, Daniela. ¿A qué te dedicas ahora?",
+        "Buenos días. Siéntate, por favor. ¿A qué te dedicas?",
+        "Mucho gusto, Daniela. ¿A qué te dedicas?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ba qué te dedicas\\b",
+          "flags": "iu",
+          "label": "ask: ¿a qué te dedicas?"
+        }
+      ],
+      "focus": "p:dedicarse-a",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Daniela: Trabajo en un hotel, pero estoy interesada en un cargo con más café y más clientes.",
+      "npcEn": "Daniela: I work in a hotel, but I'm interested in a post with more coffee and more customers.",
+      "intent": "Ask whether she is going to give up the hotel (use: renunciar a...).",
+      "accept": [
+        "¿Vas a renunciar al hotel?",
+        "¿Piensas renunciar al hotel?",
+        "Entiendo. ¿Vas a renunciar al hotel?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\brenunci(ar|as)\\b",
+          "flags": "iu",
+          "label": "use: renunciar a..."
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "p:renunciar-a",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Daniela: Todavía no. Eso depende de su respuesta.",
+      "npcEn": "Daniela: Not yet. That depends on your answer.",
+      "intent": "Say that we have a small but united team (use: Contamos con...).",
+      "accept": [
+        "Contamos con un equipo pequeño, pero muy unido.",
+        "Entiendo. Contamos con un equipo pequeño y simpático.",
+        "Contamos con cuatro personas y un loro."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcontamos con\\b",
+          "flags": "iu",
+          "label": "use: contamos con..."
+        }
+      ],
+      "focus": "g:verbs-prepositions",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Daniela: Traje dos cartas de referencia. ¿Las recibió?",
+      "npcEn": "Daniela: I brought two letters of reference. Did you receive them?",
+      "intent": "Say yes, and ask her to send you her CV (use: ¿Me puedes enviar tu hoja de vida?).",
+      "accept": [
+        "Sí, las tengo. ¿Me puedes enviar tu hoja de vida?",
+        "Sí, gracias. ¿Me envías también tu hoja de vida?",
+        "Sí, las recibí. ¿Puedes enviarme tu hoja de vida?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhoja de vida\\b",
+          "flags": "iu",
+          "label": "ask for her CV (hoja de vida)"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "p:adjunto-envio",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Daniela: Claro. ¿Y cuándo sabré algo?",
+      "npcEn": "Daniela: Of course. And when will I hear something?",
+      "intent": "Say you will answer after having talked to Vale (use: Después de haber hablado con...).",
+      "accept": [
+        "Después de haber hablado con Vale, te respondo.",
+        "Te respondo después de haber hablado con Vale.",
+        "Después de haber hablado con Vale, te llamo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdespués de haber \\w+(ado|ido)\\b",
+          "flags": "iu",
+          "label": "use: después de haber + participle"
+        }
+      ],
+      "focus": "g:infinitive-perfect",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Daniela: Muchas gracias por recibirme.",
+      "npcEn": "Daniela: Thank you very much for seeing me.",
+      "intent": "Say it was a pleasure and offer her a coffee.",
+      "accept": [
+        "Un placer, Daniela. ¿Te invito a un tinto?",
+        "Gracias a ti. ¿Quieres un tinto?",
+        "Fue un gusto. ¿Te regalo un tinto?"
+      ],
+      "require": [],
+      "focus": "g:formal-letter-grammar",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-que-te-dedicas",
+    "c:claro-listo",
+    "c:depende",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-llamo",
+    "c:me-puede-ayudar",
+    "c:mucho-gusto",
+    "c:por-favor",
+    "c:tengo",
+    "c:todavia-no",
+    "c:trabajo-en",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:infinitive-perfect",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:anuncio",
+    "l:bienvenida",
+    "l:bueno",
+    "l:café",
+    "l:cargo",
+    "l:carta",
+    "l:claro",
+    "l:cliente",
+    "l:contar",
+    "l:cuándo",
+    "l:daniel",
+    "l:dedicar",
+    "l:depender",
+    "l:después",
+    "l:día",
+    "l:entender",
+    "l:enviar",
+    "l:equipo",
+    "l:estar",
+    "l:favor",
+    "l:gusto",
+    "l:haber",
+    "l:hablar",
+    "l:hoja",
+    "l:hotel",
+    "l:interesado",
+    "l:invitar",
+    "l:ir",
+    "l:llamar",
+    "l:llamarse",
+    "l:loro",
+    "l:pensar",
+    "l:pequeño",
+    "l:persona",
+    "l:placer",
+    "l:poder",
+    "l:querer",
+    "l:qué",
+    "l:recibir",
+    "l:referencia",
+    "l:regalar",
+    "l:renunciar",
+    "l:responder",
+    "l:respuesta",
+    "l:saber",
+    "l:sentarse",
+    "l:ser",
+    "l:simpático",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:traer",
+    "l:unir",
+    "l:venir",
+    "l:vida",
+    "p:contar-con",
+    "p:demonstratives-basic",
+    "p:disponer-de",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:interesado-en",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:pensar-en",
+    "p:pensar-inf",
+    "p:personal-a",
+    "p:por-culpa-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:renunciar-a",
+    "p:request-ladder",
+    "p:saber-conocer",
+    "p:te-invito-a",
+    "p:time-sequence-basic"
+  ]
+}

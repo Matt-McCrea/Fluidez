@@ -1,0 +1,244 @@
+{
+  "id": "sc-u49-a",
+  "unit": "u49",
+  "title": "La carta a la alcaldía",
+  "spare": false,
+  "brief": "You're Tomás, drafting a formal complaint about the demolition with Mariana, who is your friend, so use tú with her. Write the letter's lines out loud: the opening, a polite request, a deadline and the attachments.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Bueno, la carta a la alcaldía. ¿Cómo la empiezas?",
+      "npcEn": "Mariana: Right, the letter to the mayor's office. How do you begin?",
+      "intent": "Open the letter by saying you are writing to them to make a complaint (use: Me dirijo a ustedes para...).",
+      "accept": [
+        "Estimados señores: me dirijo a ustedes para presentar una queja.",
+        "Señores: me dirijo a ustedes para presentar una queja por la demolición.",
+        "Me dirijo a ustedes para presentar una queja formal."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme dirijo a ustedes para\\b",
+          "flags": "iu",
+          "label": "start with: me dirijo a ustedes para..."
+        }
+      ],
+      "focus": "p:dirigirse-a",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: Bien. Ahora lo importante: ¿qué quieres que hagan?",
+      "npcEn": "Mariana: Good. Now the important part: what do you want them to do?",
+      "intent": "Ask them politely to stop the demolition (use: Les ruego que + subjunctive).",
+      "accept": [
+        "Les ruego que suspendan la demolición del edificio.",
+        "Les ruego que detengan la demolición hasta la audiencia.",
+        "Les ruego que revisen el permiso de la demolición."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bles ruego que\\b",
+          "flags": "iu",
+          "label": "use: les ruego que..."
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "ruego que",
+          "label": "after ruego que, use the subjunctive (suspendan, detengan)"
+        }
+      ],
+      "focus": "p:le-ruego-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: Hay que poner una fecha, o no van a contestar.",
+      "npcEn": "Mariana: We have to put a date, or they won't answer.",
+      "intent": "Close the argument by saying that, for all the above reasons, you request an answer within fifteen days (use: Por todo lo anterior, solicito...).",
+      "accept": [
+        "Por todo lo anterior, solicito una respuesta en un plazo de quince días.",
+        "Por todo lo anterior, solicito la suspensión de la demolición en un plazo de quince días.",
+        "Por todo lo anterior, solicito que me respondan en quince días."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpor todo lo anterior,? solicito\\b",
+          "flags": "iu",
+          "label": "close with: por todo lo anterior, solicito..."
+        }
+      ],
+      "focus": "p:por-todo-lo-anterior-solicito",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: ¿Y qué les pedimos a los funcionarios, además del plazo?",
+      "npcEn": "Mariana: And what do we ask the officials for, besides the deadline?",
+      "intent": "Say you ask for their help in protecting the building (use: Solicitamos su colaboración para...).",
+      "accept": [
+        "Solicitamos su colaboración para proteger el edificio.",
+        "Solicitamos su colaboración para salvar el café y el barrio.",
+        "Solicitamos su colaboración para que el edificio no se pierda."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsolicitamos su colaboración\\b",
+          "flags": "iu",
+          "label": "use: solicitamos su colaboración..."
+        }
+      ],
+      "focus": "p:solicitamos-su-colaboracion",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: ¿Mando la carta con algún documento?",
+      "npcEn": "Mariana: Shall I send the letter with a document?",
+      "intent": "Say yes, and that you attach the neighbours' signatures (use: Adjunto les envío...).",
+      "accept": [
+        "Sí, adjunto les envío las firmas de los vecinos.",
+        "Adjunto les envío las firmas de todos los vecinos.",
+        "Sí, adjunto les envío las firmas y una foto del edificio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\badjunto les envío\\b",
+          "flags": "iu",
+          "label": "use: adjunto les envío..."
+        }
+      ],
+      "focus": "p:adjunto-envio",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Mariana: Listo. La envío hoy. ¿Te invito a un tinto?",
+      "npcEn": "Mariana: Done. I'll send it today. Shall I buy you a coffee?",
+      "intent": "Accept warmly and thank her.",
+      "accept": [
+        "Claro, gracias, Mariana. Muchas gracias por tu ayuda.",
+        "Sí, por favor. Gracias por todo.",
+        "Con mucho gusto, y gracias por la ayuda."
+      ],
+      "require": [],
+      "focus": "g:formal-letter-grammar",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ademas",
+    "c:adjunto",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:mucho-gusto",
+    "c:no-se",
+    "c:por-favor",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:para-que",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:stem-boot",
+    "g:subj-influence",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:además",
+    "l:adjuntar",
+    "l:ahora",
+    "l:alcaldía",
+    "l:anterior",
+    "l:audiencia",
+    "l:ayuda",
+    "l:barrio",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:carta",
+    "l:claro",
+    "l:colaboración",
+    "l:contestar",
+    "l:cómo",
+    "l:demolición",
+    "l:detener",
+    "l:dirigirse",
+    "l:documento",
+    "l:día",
+    "l:edificio",
+    "l:empezar",
+    "l:enviar",
+    "l:envío",
+    "l:estimado",
+    "l:favor",
+    "l:fecha",
+    "l:firma",
+    "l:formal",
+    "l:foto",
+    "l:funcionario",
+    "l:gusto",
+    "l:hacer",
+    "l:hoy",
+    "l:importante",
+    "l:invitar",
+    "l:ir",
+    "l:listo",
+    "l:mandar",
+    "l:parar",
+    "l:pedir",
+    "l:perderse",
+    "l:permiso",
+    "l:plazo",
+    "l:poner",
+    "l:presentar",
+    "l:proteger",
+    "l:queja",
+    "l:querer",
+    "l:qué",
+    "l:responder",
+    "l:respuesta",
+    "l:revisar",
+    "l:rogar",
+    "l:salvar",
+    "l:señor",
+    "l:solicitar",
+    "l:suspender",
+    "l:suspensión",
+    "l:tinto",
+    "l:vecino",
+    "p:adjunto-envio",
+    "p:dirigirse-a",
+    "p:estimado-colon",
+    "p:gracias-por",
+    "p:le-ruego-que",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:por-todo-lo-anterior-solicito",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:solicitamos-su-colaboracion",
+    "p:solicitar",
+    "p:te-invito-a"
+  ]
+}

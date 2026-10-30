@@ -1,0 +1,231 @@
+{
+  "id": "sc-u49-b",
+  "unit": "u49",
+  "title": "Suena a mi banco",
+  "spare": false,
+  "brief": "You're Tomás, talking to Vale about the letter to Yesid's family proposing a joint business. Vale is quick and dry, and a friend, so use tú. Explain what the letter is about, what each side has, and what it depends on.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Leí tu borrador para la familia de Yesid. Suena a mi banco. ¿De qué se trata?",
+      "npcEn": "Vale: I read your draft for Yesid's family. It sounds like my bank. What is it about?",
+      "intent": "Say the letter is about a proposal to work together (use: Se trata de...).",
+      "accept": [
+        "Se trata de una propuesta para trabajar juntos.",
+        "Se trata de un negocio entre el café y la familia.",
+        "Se trata de una propuesta para la familia de Yesid."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse trata de\\b",
+          "flags": "iu",
+          "label": "use: se trata de..."
+        }
+      ],
+      "focus": "g:verbs-prepositions",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: ¿Y qué tienen ellos que no tenemos nosotros?",
+      "npcEn": "Vale: And what do they have that we don't?",
+      "intent": "Say they have a good supply of coffee (use: disponer de, e.g. Ellos disponen de...).",
+      "accept": [
+        "Ellos disponen de un buen suministro de café.",
+        "Disponen de un suministro de café muy bueno.",
+        "La familia dispone de café de la mejor calidad."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdispon(e|en)\\s+de\\b",
+          "flags": "iu",
+          "label": "use: dispone de / disponen de"
+        }
+      ],
+      "focus": "p:disponer-de",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: ¿Y nosotros qué ponemos?",
+      "npcEn": "Vale: And what do we put in?",
+      "intent": "Say we count on the café and its good customers (use: Contamos con...).",
+      "accept": [
+        "Contamos con el café y con muchos buenos clientes.",
+        "Nosotros contamos con la cocina y el local.",
+        "Contamos con el apoyo de los clientes del barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcontamos con\\b",
+          "flags": "iu",
+          "label": "use: contamos con..."
+        }
+      ],
+      "focus": "g:verbs-prepositions",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: ¿Y si la familia dice que no? Yo no tengo plan B.",
+      "npcEn": "Vale: And if the family says no? I don't have a plan B.",
+      "intent": "Say it depends on them and you will wait for their answer (use: Depende de...).",
+      "accept": [
+        "Eso depende de ellos. Esperamos su respuesta.",
+        "Depende de la respuesta de la familia.",
+        "Todo depende de ellos, pero yo tengo esperanza."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdepende de\\b",
+          "flags": "iu",
+          "label": "use: depende de..."
+        }
+      ],
+      "focus": "g:verbs-prepositions",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Yesid va a preguntar cómo funciona el negocio. ¿Qué le digo?",
+      "npcEn": "Vale: Yesid is going to ask how the business works. What do I tell him?",
+      "intent": "Explain that it consists of sharing the costs and the profits (use: Consiste en...).",
+      "accept": [
+        "Consiste en compartir los gastos y las ganancias.",
+        "El negocio consiste en trabajar juntos y compartir.",
+        "Consiste en que todos ponemos algo y todos ganamos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bconsiste en\\b",
+          "flags": "iu",
+          "label": "use: consiste en..."
+        }
+      ],
+      "focus": "g:verbs-prepositions",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Vale: Mejor. Ahora suenas casi como una persona. Te invito a un tinto.",
+      "npcEn": "Vale: Better. Now you almost sound like a person. I'll buy you a coffee.",
+      "intent": "Thank her and say you are glad.",
+      "accept": [
+        "Gracias, Vale. Me alegro de que te guste.",
+        "Muchas gracias. Un tinto me viene bien.",
+        "Gracias. Ya me siento más tranquilo."
+      ],
+      "require": [],
+      "focus": "g:formal-letter-grammar",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:depende",
+    "c:gracias-de-nada",
+    "c:me-alegro",
+    "c:tengo",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-emotion-intro",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:alegrarse",
+    "l:apoyo",
+    "l:banco",
+    "l:barrio",
+    "l:bien",
+    "l:borrador",
+    "l:buen",
+    "l:bueno",
+    "l:café",
+    "l:calidad",
+    "l:cliente",
+    "l:cocina",
+    "l:comer",
+    "l:compartir",
+    "l:consistir",
+    "l:contar",
+    "l:cómo",
+    "l:decir",
+    "l:depender",
+    "l:disponer",
+    "l:esperanza",
+    "l:esperar",
+    "l:familia",
+    "l:funcionar",
+    "l:ganancia",
+    "l:ganar",
+    "l:gasto",
+    "l:gustar",
+    "l:invitar",
+    "l:ir",
+    "l:juntos",
+    "l:leer",
+    "l:local",
+    "l:mejor",
+    "l:negocio",
+    "l:persona",
+    "l:plan",
+    "l:poner",
+    "l:preguntar",
+    "l:propuesta",
+    "l:qué",
+    "l:respuesta",
+    "l:sentirse",
+    "l:sonar",
+    "l:suministro",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:tranquilo",
+    "l:tratarse",
+    "l:venir",
+    "p:alegrarse-de-que",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:caracterizarse-por",
+    "p:consistir-en",
+    "p:contar-con",
+    "p:demonstratives-basic",
+    "p:disponer-de",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:se-trata-de",
+    "p:sentirse-mal",
+    "p:te-invito-a",
+    "p:tratar-de"
+  ]
+}
