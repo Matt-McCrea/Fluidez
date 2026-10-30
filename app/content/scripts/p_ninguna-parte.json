@@ -1,0 +1,171 @@
+{
+  "node": "p:ninguna-parte",
+  "hook": {
+    "line": "Tomás's phone is gone and he has turned the café upside down. To tell Hernando he can't find it anywhere, Spanish uses a double negative, and it is not a mistake.",
+    "es": "No encuentro mi celular en ninguna parte.",
+    "en": "I can't find my phone anywhere."
+  },
+  "examples": [
+    {
+      "es": "No encuentro las llaves por ningún lado.",
+      "en": "I can't find my keys anywhere."
+    },
+    {
+      "es": "No lo veo en ninguna parte.",
+      "en": "I can't see it anywhere."
+    },
+    {
+      "es": "Había gente por todas partes.",
+      "en": "There were people everywhere."
+    },
+    {
+      "es": "Busqué mi cartera por todas partes.",
+      "en": "I looked for my wallet everywhere."
+    },
+    {
+      "es": "Simón no está en ninguna parte.",
+      "en": "Simón is nowhere to be found."
+    },
+    {
+      "es": "No la vi en ninguna parte.",
+      "en": "I didn't see her anywhere."
+    }
+  ],
+  "rule": "To say \"not anywhere\", Spanish needs two negatives: *no* before the verb, and *ninguna parte* or *ningún lado* after it. English allows only one; here both are required: *No lo veo en ninguna parte*.\n*Por ningún lado* is the everyday choice in Latin America. Use *en* or *por*.\nFor \"everywhere\", *por todas partes* or *por todos lados*.\n*Parte* is feminine (*ninguna*, *todas*); *lado* is masculine (*ningún*, *todos*).",
+  "smallPrint": "Teachers call *no … ninguna parte* a double negative. In Spanish it is correct and required.",
+  "readAndPick": [
+    {
+      "es": "No lo veo en ninguna parte.",
+      "options": [
+        "I can see it everywhere.",
+        "I can't see it anywhere."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Había gente por todas partes.",
+      "options": [
+        "There were people everywhere.",
+        "There were no people anywhere."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No encuentro las llaves por ningún lado.",
+      "options": [
+        "I found the keys somewhere.",
+        "I'm looking for the keys everywhere.",
+        "I can't find the keys anywhere."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Busqué mi cartera por todas partes.",
+      "options": [
+        "I looked for my wallet everywhere.",
+        "I didn't look for my wallet anywhere."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Simón no está en ninguna parte.",
+      "options": [
+        "Simón is everywhere.",
+        "Simón is nowhere to be found."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No lo encuentro por ningún lado.",
+      "options": [
+        "I can find it anywhere.",
+        "I can't find it anywhere."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hay botellas por todas partes.",
+      "options": [
+        "There aren't any bottles anywhere.",
+        "There are bottles everywhere."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No veo mis llaves en ninguna parte.",
+      "options": [
+        "I see my keys everywhere.",
+        "I don't see my keys anywhere."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *No lo veo en ___ parte.* (*ninguna* or *ningún*) I can't see it anywhere.",
+      "answer": "No lo veo en ninguna parte.",
+      "accept": [],
+      "why": "*Parte* is feminine, so *ninguna*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *No encuentro mi cartera por ___ lado.* (*ninguna* or *ningún*) I can't find my wallet anywhere.",
+      "answer": "No encuentro mi cartera por ningún lado.",
+      "accept": [],
+      "why": "*Lado* is masculine, so *ningún*."
+    },
+    {
+      "prompt": "Tell Hernando: I can't find my keys anywhere.",
+      "answer": "No encuentro las llaves por ningún lado.",
+      "accept": [
+        "No encuentro mis llaves por ningún lado.",
+        "No encuentro las llaves en ninguna parte.",
+        "No encuentro mis llaves en ninguna parte."
+      ],
+      "why": "Keep *no* before the verb and add *por ningún lado* after it."
+    },
+    {
+      "prompt": "Say: There were people everywhere.",
+      "answer": "Había gente por todas partes.",
+      "accept": [
+        "Había gente por todos lados."
+      ],
+      "why": "Everywhere is *por todas partes* or *por todos lados*."
+    },
+    {
+      "prompt": "Say the opposite: *Veo el celular por todas partes.*",
+      "answer": "No veo el celular en ninguna parte.",
+      "accept": [
+        "No veo el celular por ningún lado.",
+        "No veo el celular por ninguna parte.",
+        "No veo el celular en ningún lado."
+      ],
+      "why": "The opposite needs *no* and *ninguna parte* or *ningún lado*."
+    },
+    {
+      "prompt": "Say: I looked for my phone everywhere.",
+      "answer": "Busqué mi celular por todas partes.",
+      "accept": [
+        "Busqué mi celular por todos lados."
+      ],
+      "why": "Looking everywhere is *por todas partes*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Veo mi celular en ninguna parte.",
+      "right": "No veo mi celular en ninguna parte.",
+      "why": "Almost. Spanish needs the *no* before the verb as well."
+    },
+    {
+      "wrong": "No lo encuentro por ninguna lado.",
+      "right": "No lo encuentro por ningún lado.",
+      "why": "*Lado* is masculine, so *ningún*."
+    },
+    {
+      "wrong": "Había gente por todo partes.",
+      "right": "Había gente por todas partes.",
+      "why": "*Partes* is plural and feminine, so *todas*."
+    }
+  ],
+  "personal": "Think of something you are always losing: keys, glasses, your phone. Write a sentence that you can't find it anywhere with *No encuentro … por ningún lado*, and another about a place where there are things everywhere."
+}

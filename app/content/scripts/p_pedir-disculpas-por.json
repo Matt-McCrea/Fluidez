@@ -1,0 +1,176 @@
+{
+  "node": "p:pedir-disculpas-por",
+  "hook": {
+    "line": "The espresso machine broke again and a customer waited forty minutes. A plain sorry feels thin, so Spanish has a proper way to apologise and say what for.",
+    "es": "Le pido disculpas por la demora.",
+    "en": "I apologise for the delay. (formal)"
+  },
+  "examples": [
+    {
+      "es": "Le pido disculpas por la demora.",
+      "en": "I apologise for the delay. (to a customer, formal)"
+    },
+    {
+      "es": "Te pido perdón por no llamarte.",
+      "en": "I'm sorry for not calling you. (to a friend)"
+    },
+    {
+      "es": "Disculpa, es que no te vi.",
+      "en": "Sorry, it's just that I didn't see you. (to a friend)"
+    },
+    {
+      "es": "Les pido disculpas por el ruido.",
+      "en": "I apologise to you all for the noise."
+    },
+    {
+      "es": "Disculpe, es que no sabía.",
+      "en": "Excuse me, it's just that I didn't know. (formal)"
+    },
+    {
+      "es": "Mariana me pidió disculpas por la broma.",
+      "en": "Mariana apologised to me for the joke."
+    }
+  ],
+  "rule": "To apologise properly, *pedir disculpas* or *pedir perdón*, then *por* and the reason. The reason is a noun (*por la demora*) or an infinitive (*por llegar tarde*). Who you apologise to goes before the verb: *te* for a friend, *le* for *usted*, *les* for you all.\nFor a quick sorry, say *Disculpa* or *Disculpe*, then *es que* and your reason: \"it's just that\".\nKeep one register: *disculpa* goes with *tú*, *disculpe* with *usted*.",
+  "smallPrint": "Teachers call *te*, *le* and *les* here indirect object pronouns: they name the person who receives the apology.",
+  "readAndPick": [
+    {
+      "es": "Le pido disculpas por la demora.",
+      "options": [
+        "I apologise for the delay, speaking to a stranger.",
+        "I apologise for the delay, speaking to a close friend."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Te pido perdón por no llamarte.",
+      "options": [
+        "I'm sorry you didn't call me.",
+        "I'm sorry for not calling you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana me pidió disculpas por la broma.",
+      "options": [
+        "I apologised to Mariana for the joke.",
+        "Mariana apologised to me for the joke."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Les pido disculpas por el ruido.",
+      "options": [
+        "I apologise to him for the noise.",
+        "I apologise to you for the noise.",
+        "I apologise to you all for the noise."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Disculpe, es que no sabía.",
+      "options": [
+        "Sorry (to a friend), it's just that I didn't know.",
+        "Excuse me (to a stranger), it's just that I didn't know."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te pido perdón por llegar tarde.",
+      "options": [
+        "I'm sorry for arriving late.",
+        "I'm sorry you arrived late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No te pido perdón por eso.",
+      "options": [
+        "I'm not forgiving you for that.",
+        "I'm not apologising to you for that."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le pidió perdón a Vale.",
+      "options": [
+        "Vale apologised to someone.",
+        "Someone apologised to Vale."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Le pido disculpas ___ la demora.* (*por* or *para*) I apologise for the delay. (formal)",
+      "answer": "Le pido disculpas por la demora.",
+      "accept": [],
+      "why": "After saying sorry, the reason comes with *por*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ pido perdón por llegar tarde.* (*Te* or *Le*) To a friend: I'm sorry for being late.",
+      "answer": "Te pido perdón por llegar tarde.",
+      "accept": [
+        "Te pido disculpas por llegar tarde."
+      ],
+      "why": "A friend is *tú*, so *te*; *le* is for *usted*."
+    },
+    {
+      "prompt": "To a friend: Sorry, it's just that I didn't see you.",
+      "answer": "Disculpa, es que no te vi.",
+      "accept": [
+        "Perdona, es que no te vi.",
+        "Perdóname, es que no te vi."
+      ],
+      "why": "A quick sorry plus *es que* gives your reason."
+    },
+    {
+      "prompt": "To your neighbours (you all): I apologise for the noise.",
+      "answer": "Les pido disculpas por el ruido.",
+      "accept": [
+        "Les pido perdón por el ruido."
+      ],
+      "why": "*Les* is for more than one person, and *por* brings in the reason."
+    },
+    {
+      "prompt": "To a woman you've just met (formal): I'm sorry for not calling you.",
+      "answer": "Le pido perdón por no llamarla.",
+      "accept": [
+        "Le pido disculpas por no llamarla."
+      ],
+      "why": "*Le* goes with *usted*, and *por* plus an infinitive gives the reason."
+    },
+    {
+      "prompt": "Make it polite (*usted*): *Disculpa, es que no sabía.*",
+      "answer": "Disculpe, es que no sabía.",
+      "accept": [
+        "Perdone, es que no sabía."
+      ],
+      "why": "*Usted* swaps *disculpa* for *disculpe*."
+    },
+    {
+      "prompt": "Make it negative: *Te pido perdón por eso.*",
+      "answer": "No te pido perdón por eso.",
+      "accept": [],
+      "why": "*No* goes right before *te*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Le pido disculpas para la demora.",
+      "right": "Le pido disculpas por la demora.",
+      "why": "Almost. The reason for an apology comes with *por*, never *para*."
+    },
+    {
+      "wrong": "Te pido disculpas de llegar tarde.",
+      "right": "Te pido disculpas por llegar tarde.",
+      "why": "Close. English says \"sorry for\", and Spanish says *por*."
+    },
+    {
+      "wrong": "Disculpe, es que no te vi.",
+      "right": "Disculpe, es que no lo vi.",
+      "why": "Stay in one register: *disculpe* is for *usted*, so the person is *lo* or *la*, not *te*."
+    }
+  ],
+  "personal": "Think of something small you got wrong this week. Write *Te pido perdón por…* with an infinitive, then *Disculpa, es que…* with your reason."
+}

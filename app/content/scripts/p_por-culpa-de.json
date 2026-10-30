@@ -1,0 +1,174 @@
+{
+  "node": "p:por-culpa-de",
+  "hook": {
+    "line": "After a day when everything went wrong at the café, somebody has to take the blame, and somebody deserves the credit. Spanish has a short phrase for each.",
+    "es": "Fue culpa mía.",
+    "en": "It was my fault."
+  },
+  "examples": [
+    {
+      "es": "Fue culpa mía.",
+      "en": "It was my fault."
+    },
+    {
+      "es": "Fue culpa tuya.",
+      "en": "It was your fault. (to a friend)"
+    },
+    {
+      "es": "No fue culpa de Simón.",
+      "en": "It wasn't Simón's fault."
+    },
+    {
+      "es": "Llegamos tarde por culpa del tráfico.",
+      "en": "We were late because of the traffic."
+    },
+    {
+      "es": "Gracias a ella, todo salió bien.",
+      "en": "Thanks to her, everything went well."
+    },
+    {
+      "es": "Gracias a Hernando, llegamos a tiempo.",
+      "en": "Thanks to Hernando, we arrived on time."
+    }
+  ],
+  "rule": "For blame, *Fue culpa* plus who: *mía*, *tuya*, *suya*, *nuestra*, or *de* plus a name (*de Simón*). The little word comes after *culpa*, and *fue mi culpa* works too.\nFor a bad result with a cause, *por culpa de*: *por culpa del tráfico* (*de* plus *el* makes *del*).\nFor credit, *gracias a*: *gracias a ella*.\nSo \"because of\" has two Spanish faces. Bad news gets *por culpa de*, good news gets *gracias a*.",
+  "smallPrint": "Teachers call *mía*, *tuya* and *nuestra* the long possessives: they come after the noun and stand firmly on their own.",
+  "readAndPick": [
+    {
+      "es": "Fue culpa mía.",
+      "options": [
+        "It was my fault.",
+        "It was your fault."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Fue culpa tuya.",
+      "options": [
+        "It was my fault.",
+        "It was your fault.",
+        "It was her fault."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No fue culpa de Simón.",
+      "options": [
+        "Simón was to blame.",
+        "It wasn't Simón's fault."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llegamos tarde por culpa del tráfico.",
+      "options": [
+        "We were late thanks to the traffic.",
+        "We were late because of the traffic."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Gracias a ella, todo salió bien.",
+      "options": [
+        "Because of her, everything went wrong.",
+        "Thanks to her, everything went well."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Fue culpa nuestra.",
+      "options": [
+        "It was their fault.",
+        "It was our fault.",
+        "It was my fault."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Gracias a Vale, el café sigue abierto.",
+      "options": [
+        "The café is still open, and Vale is to blame.",
+        "The café is still open thanks to Vale."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se cayó por culpa de la lluvia.",
+      "options": [
+        "He fell because of the rain.",
+        "He fell thanks to the rain."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Fue culpa ___.* (*mía* or *mío*) It was my fault.",
+      "answer": "Fue culpa mía.",
+      "accept": [
+        "Fue mi culpa."
+      ],
+      "why": "*Culpa* is feminine, so the long word is *mía*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Llegamos tarde ___ el tráfico.* (*por culpa de* or *gracias a*) We were late because of the traffic.",
+      "answer": "Llegamos tarde por culpa del tráfico.",
+      "accept": [],
+      "why": "Being late is bad news, so blame: *por culpa de*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ Hernando, llegamos a tiempo.* (*Por culpa de* or *Gracias a*) Thanks to Hernando, we arrived on time.",
+      "answer": "Gracias a Hernando, llegamos a tiempo.",
+      "accept": [],
+      "why": "Arriving on time is good news, so credit: *gracias a*."
+    },
+    {
+      "prompt": "To a friend: It was your fault.",
+      "answer": "Fue culpa tuya.",
+      "accept": [
+        "Fue tu culpa."
+      ],
+      "why": "Your is *tuya* after *culpa*."
+    },
+    {
+      "prompt": "Say: It wasn't Simón's fault.",
+      "answer": "No fue culpa de Simón.",
+      "accept": [],
+      "why": "Blame for a person is *culpa de* plus the name."
+    },
+    {
+      "prompt": "Make it about us: *Fue culpa mía.*",
+      "answer": "Fue culpa nuestra.",
+      "accept": [
+        "Fue nuestra culpa."
+      ],
+      "why": "Ours is *nuestra*."
+    },
+    {
+      "prompt": "Say: We missed the bus because of me.",
+      "answer": "Perdimos el bus por culpa mía.",
+      "accept": [
+        "Perdimos el bus por mi culpa."
+      ],
+      "why": "Missing the bus is bad, so *por culpa*, and for yourself *mía*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Fue culpa de mí.",
+      "right": "Fue culpa mía.",
+      "why": "Almost. For yourself, Spanish uses *mía*, not *de mí*."
+    },
+    {
+      "wrong": "Fue culpa de tú.",
+      "right": "Fue culpa tuya.",
+      "why": "Close. For your friend it is *tuya*, a single word."
+    },
+    {
+      "wrong": "Por culpa de ella, todo salió bien.",
+      "right": "Gracias a ella, todo salió bien.",
+      "why": "*Por culpa de* blames. When things go well, thank with *gracias a*."
+    }
+  ],
+  "personal": "Think of the last time something went wrong, or right, this week. Write one sentence with *fue culpa de…* or *por culpa de…*, and one with *gracias a…* for someone who helped."
+}

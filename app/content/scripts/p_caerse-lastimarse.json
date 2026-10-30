@@ -1,0 +1,168 @@
+{
+  "node": "p:caerse-lastimarse",
+  "hook": {
+    "line": "Someone always trips in the café, and the first question is whether they are all right. Spanish has an everyday way to say who fell and what hurts.",
+    "es": "Se cayó de la bicicleta, pero no se lastimó.",
+    "en": "She fell off her bike, but she didn't get hurt."
+  },
+  "examples": [
+    {
+      "es": "Se cayó de la bicicleta, pero no se lastimó.",
+      "en": "She fell off her bike, but she didn't get hurt."
+    },
+    {
+      "es": "Me golpeé la cabeza.",
+      "en": "I hit my head."
+    },
+    {
+      "es": "Me hice daño en la rodilla.",
+      "en": "I hurt my knee."
+    },
+    {
+      "es": "Vale se cayó de la silla.",
+      "en": "Vale fell off the chair."
+    },
+    {
+      "es": "¿Te lastimaste?",
+      "en": "Did you hurt yourself? (to a friend)"
+    },
+    {
+      "es": "Me caí por la escalera.",
+      "en": "I fell down the stairs."
+    }
+  ],
+  "rule": "*Caerse* is falling by accident. After it, *de* says what from (*de la silla*), *en* says where (*en la calle*), *por* says down or through (*por la escalera*).\nTo say you got hurt, *lastimarse* is the everyday choice in Latin America; *hacerse daño* works everywhere. For the body part, *en* with *hacerse daño*: *me hice daño en la rodilla*. With *golpearse* and *lastimarse* it follows directly: *me golpeé la cabeza*.\nBody parts take *la*, not *mi*.",
+  "smallPrint": "Teachers call these reflexive verbs. Plain *caer*, without *se*, is for rain, prices or dates falling.",
+  "readAndPick": [
+    {
+      "es": "Se cayó de la bicicleta, pero no se lastimó.",
+      "options": [
+        "She fell off her bike and got hurt.",
+        "She fell off her bike, but she didn't get hurt."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me golpeé la cabeza.",
+      "options": [
+        "Someone hit my head.",
+        "I hit my head."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me hice daño en la rodilla.",
+      "options": [
+        "I'm going to hurt my knee.",
+        "I hurt my knee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te lastimaste?",
+      "options": [
+        "Did I hurt you?",
+        "Did you hurt yourself?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale se cayó de la silla.",
+      "options": [
+        "Vale fell off the chair.",
+        "Vale pushed the chair over."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me caí por la escalera.",
+      "options": [
+        "She fell down the stairs.",
+        "I fell down the stairs."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No se hizo daño.",
+      "options": [
+        "She hurt herself badly.",
+        "She didn't hurt herself."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se lastimó el pie.",
+      "options": [
+        "He didn't hurt his foot.",
+        "He hurt his foot."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Vale ___ cayó de la silla.* (*se* or *me*) Vale fell off the chair.",
+      "answer": "Vale se cayó de la silla.",
+      "accept": [],
+      "why": "Vale is a third person, so *se*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Me golpeé ___ cabeza.* (*la* or *mi*) I hit my head.",
+      "answer": "Me golpeé la cabeza.",
+      "accept": [],
+      "why": "Body parts take *la*, because *me* already says whose."
+    },
+    {
+      "prompt": "Say: I fell down the stairs.",
+      "answer": "Me caí por la escalera.",
+      "accept": [],
+      "why": "Falling is *caerse*, so *me caí*, with *por* for down."
+    },
+    {
+      "prompt": "Ask a friend: Did you hurt yourself?",
+      "answer": "¿Te lastimaste?",
+      "accept": [
+        "¿Te hiciste daño?"
+      ],
+      "why": "A friend is *tú*, so *te lastimaste*."
+    },
+    {
+      "prompt": "Say: I hurt my back.",
+      "answer": "Me lastimé la espalda.",
+      "accept": [
+        "Me hice daño en la espalda."
+      ],
+      "why": "*Me lastimé* then the body part with *la*."
+    },
+    {
+      "prompt": "Make it negative: *Se hizo daño.*",
+      "answer": "No se hizo daño.",
+      "accept": [],
+      "why": "*No* goes before *se*."
+    },
+    {
+      "prompt": "Make it about Tomás: *Me golpeé la mano.*",
+      "answer": "Tomás se golpeó la mano.",
+      "accept": [],
+      "why": "For Tomás, *me golpeé* becomes *se golpeó*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me golpeé mi cabeza.",
+      "right": "Me golpeé la cabeza.",
+      "why": "Almost. The *me* already says whose head, so use *la*."
+    },
+    {
+      "wrong": "Vale cayó de la silla.",
+      "right": "Vale se cayó de la silla.",
+      "why": "Falling by accident is *caerse*, so it needs *se*."
+    },
+    {
+      "wrong": "Me hice daño mi rodilla.",
+      "right": "Me hice daño en la rodilla.",
+      "why": "With *hacerse daño*, the body part needs *en* and an article."
+    }
+  ],
+  "personal": "Think of a time you fell or hurt yourself: a bike, stairs, ice, a football match. Write what happened with *me caí…* and what hurt with *me lastimé…* or *me golpeé…*."
+}

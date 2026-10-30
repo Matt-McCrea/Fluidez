@@ -1,0 +1,167 @@
+{
+  "node": "p:acercarse-alejarse",
+  "hook": {
+    "line": "Telling the police what happened means saying who moved toward something and who ran away from it. One little pair of verbs does the job.",
+    "es": "El carro se acercó a la casa.",
+    "en": "The car came up to the house."
+  },
+  "examples": [
+    {
+      "es": "El carro se acercó a la casa.",
+      "en": "The car came up to the house."
+    },
+    {
+      "es": "Se alejó de la puerta.",
+      "en": "She moved away from the door."
+    },
+    {
+      "es": "Acercó la silla a la ventana.",
+      "en": "He moved the chair closer to the window."
+    },
+    {
+      "es": "Simón se acercó a Tomás.",
+      "en": "Simón came over to Tomás."
+    },
+    {
+      "es": "Vale se alejó de la estufa.",
+      "en": "Vale moved away from the stove."
+    },
+    {
+      "es": "¿Me acercas la sal?",
+      "en": "Can you pass me the salt? (to a friend)"
+    }
+  ],
+  "rule": "*Acercarse a* is getting closer to. *Alejarse de* is moving away from. Each keeps its own little word: *a* toward, *de* away. English says \"to\" and \"from\"; Spanish does too.\nThe *se* shows the subject moves itself. Drop it and you move something else: *acercó la silla*, *¿me acercas la sal?* (bring it over).\nThe *se* changes with the person: *me acerqué*, *te acercaste*, *nos acercamos*.",
+  "smallPrint": "Teachers call *se acercó* a reflexive use: the action turns back on the one doing it.",
+  "readAndPick": [
+    {
+      "es": "El carro se acercó a la casa.",
+      "options": [
+        "The car moved away from the house.",
+        "The car came up to the house."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se alejó de la puerta.",
+      "options": [
+        "She came up to the door.",
+        "She moved away from the door."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Acercó la silla a la ventana.",
+      "options": [
+        "He moved himself closer to the window.",
+        "He moved the chair closer to the window."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Me acercas la sal?",
+      "options": [
+        "Can you pass me the salt?",
+        "Are you moving away from the salt?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Simón se acercó a Tomás.",
+      "options": [
+        "Simón moved away from Tomás.",
+        "Simón came over to Tomás."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me acerqué a la puerta.",
+      "options": [
+        "I moved closer to the door.",
+        "I moved the door closer."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Alejó el carro de la pared.",
+      "options": [
+        "The car moved away from the wall by itself.",
+        "He moved the car away from the wall."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se acercaron a la mesa.",
+      "options": [
+        "He came up to the table.",
+        "They came up to the table.",
+        "They moved the table away."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *El carro se acercó ___ la casa.* (*a* or *de*) The car came up to the house.",
+      "answer": "El carro se acercó a la casa.",
+      "accept": [],
+      "why": "Getting closer to something is *acercarse a*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Se alejó ___ la puerta.* (*a* or *de*) She moved away from the door.",
+      "answer": "Se alejó de la puerta.",
+      "accept": [],
+      "why": "Moving away from something is *alejarse de*."
+    },
+    {
+      "prompt": "Say: Simón came up to Tomás.",
+      "answer": "Simón se acercó a Tomás.",
+      "accept": [],
+      "why": "Simón moves himself, so *se acercó a*."
+    },
+    {
+      "prompt": "Say: I moved away from the window.",
+      "answer": "Me alejé de la ventana.",
+      "accept": [],
+      "why": "*Me* because it is I who moves, and *de* for away."
+    },
+    {
+      "prompt": "Ask a friend: Can you pass me the salt?",
+      "answer": "¿Me acercas la sal?",
+      "accept": [
+        "¿Me pasas la sal?"
+      ],
+      "why": "Here you move the salt, so no *se*."
+    },
+    {
+      "prompt": "Say the opposite: *Se alejó de la puerta.*",
+      "answer": "Se acercó a la puerta.",
+      "accept": [],
+      "why": "Opposite of away from is toward: *se acercó a*."
+    },
+    {
+      "prompt": "Make it about us: *Me acerqué a la puerta.*",
+      "answer": "Nos acercamos a la puerta.",
+      "accept": [],
+      "why": "We moved closer is *nos acercamos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El carro acercó a la casa.",
+      "right": "El carro se acercó a la casa.",
+      "why": "Almost. When the subject itself moves, Spanish adds *se*."
+    },
+    {
+      "wrong": "Se alejó a la puerta.",
+      "right": "Se alejó de la puerta.",
+      "why": "Away from always takes *de*."
+    },
+    {
+      "wrong": "Se acercó de la ventana.",
+      "right": "Se acercó a la ventana.",
+      "why": "Closer to takes *a*."
+    }
+  ],
+  "personal": "Think of something you keep away from (spiders, the stove, bad news) and something you move toward. Write two sentences: *me alejo de…* and *me acerco a…*."
+}

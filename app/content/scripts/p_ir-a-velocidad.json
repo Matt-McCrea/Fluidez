@@ -1,0 +1,174 @@
+{
+  "node": "p:ir-a-velocidad",
+  "hook": {
+    "line": "The police report asks the question everybody dreads: how fast were you going? Spanish answers it with one small word and a number.",
+    "es": "Iba a 60 kilómetros por hora.",
+    "en": "I was going 60 kilometres an hour."
+  },
+  "examples": [
+    {
+      "es": "Iba a 80 por hora cuando lo paró la policía.",
+      "en": "He was doing 80 an hour when the police stopped him."
+    },
+    {
+      "es": "El bus iba a toda velocidad.",
+      "en": "The bus was going at full speed."
+    },
+    {
+      "es": "Ve despacio, que está lloviendo.",
+      "en": "Go slowly, it's raining. (to a friend)"
+    },
+    {
+      "es": "¿A cuántos kilómetros por hora ibas?",
+      "en": "How fast were you going? (to a friend)"
+    },
+    {
+      "es": "Hernando maneja muy rápido.",
+      "en": "Hernando drives very fast."
+    },
+    {
+      "es": "Íbamos a 40 por hora.",
+      "en": "We were going 40 an hour."
+    }
+  ],
+  "rule": "To say how fast, *ir a* plus the number: *iba a 60 por hora*. English \"doing 60\" is \"going at 60\". *Por hora* means \"an hour\", and *kilómetros* is optional. \"At full speed\" is *a toda velocidad*.\nFor fast or slow, put *rápido* or *despacio* after *ir* or *manejar*: *ve despacio*, *maneja muy rápido*. They are adverbs here and never change.",
+  "smallPrint": "The *a* before a number is the same one in *estamos a 20 grados*: it marks a measurement. *Despacio* and *rápido* are adverbs here, so they never take gender or number.",
+  "readAndPick": [
+    {
+      "es": "Iba a 80 por hora cuando lo paró la policía.",
+      "options": [
+        "He was going to stop at 80.",
+        "He was doing 80 an hour when the police stopped him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El bus iba a toda velocidad.",
+      "options": [
+        "The bus was stopped.",
+        "The bus was going at full speed.",
+        "The bus was going slowly."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ve despacio, que está lloviendo.",
+      "options": [
+        "Go quickly, it's raining.",
+        "Go slowly, it's raining."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿A cuántos kilómetros por hora ibas?",
+      "options": [
+        "How fast were you going?",
+        "How far were you going?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Íbamos a 40 por hora.",
+      "options": [
+        "I was going 40 an hour.",
+        "We were going 40 an hour."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Maneja más despacio, por favor.",
+      "options": [
+        "Please drive faster.",
+        "Please drive more slowly."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando maneja muy rápido.",
+      "options": [
+        "Hernando drives very slowly.",
+        "Hernando drives very fast."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ellos iban a 100 kilómetros por hora.",
+      "options": [
+        "They were going 100 kilometres an hour.",
+        "I was going 100 kilometres an hour.",
+        "We were going 100 kilometres an hour."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Iba ___ 60 kilómetros por hora.* (*a* or *en*) I was going 60 kilometres an hour.",
+      "answer": "Iba a 60 kilómetros por hora.",
+      "accept": [
+        "Iba a 60 por hora."
+      ],
+      "why": "A speed takes *a*, like other measurements."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *El bus iba ___ toda velocidad.* (*a* or *por*) The bus was going at full speed.",
+      "answer": "El bus iba a toda velocidad.",
+      "accept": [],
+      "why": "Full speed is the fixed phrase *a toda velocidad*."
+    },
+    {
+      "prompt": "To a friend: Go slowly, it's raining.",
+      "answer": "Ve despacio, que está lloviendo.",
+      "accept": [
+        "Maneja despacio, que está lloviendo."
+      ],
+      "why": "*Despacio* is the adverb and it never changes."
+    },
+    {
+      "prompt": "Ask a friend: How fast were you going?",
+      "answer": "¿A cuántos kilómetros por hora ibas?",
+      "accept": [
+        "¿A cuánto ibas?"
+      ],
+      "why": "A speed question starts with *a*, like the answer."
+    },
+    {
+      "prompt": "Say: We were going 40 an hour.",
+      "answer": "Íbamos a 40 por hora.",
+      "accept": [
+        "Íbamos a 40 kilómetros por hora."
+      ],
+      "why": "We were going is *íbamos*, then *a* and the number."
+    },
+    {
+      "prompt": "Make it about Hernando: *Manejo muy despacio.*",
+      "answer": "Hernando maneja muy despacio.",
+      "accept": [],
+      "why": "For Hernando the verb becomes *maneja*."
+    },
+    {
+      "prompt": "Make it about them: *Íbamos a 40 por hora.*",
+      "answer": "Iban a 40 por hora.",
+      "accept": [],
+      "why": "They were going is *iban*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Iba en 80 por hora.",
+      "right": "Iba a 80 por hora.",
+      "why": "Almost. A speed takes *a*, not *en*."
+    },
+    {
+      "wrong": "Voy a 60 kilómetros en una hora.",
+      "right": "Voy a 60 kilómetros por hora.",
+      "why": "\"An hour\" is *por hora*."
+    },
+    {
+      "wrong": "Ellas manejan muy rápidas.",
+      "right": "Ellas manejan muy rápido.",
+      "why": "Here *rápido* is an adverb, so it doesn't agree with anyone."
+    }
+  ],
+  "personal": "Think of a road you know well. Say how fast people really drive on it, or how fast you were going the last time you were in a rush, with *Iba a… por hora*."
+}
