@@ -1,0 +1,249 @@
+{
+  "id": "sc-u20-g",
+  "unit": "u20",
+  "title": "First rain",
+  "brief": "You're Tomás. Simón is back, the rain has finally started, and you and Vale are closing the café for the night. Answer her questions, give her your advice and make her a promise. She's your friend, so use tú.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Escucha esa lluvia. Hernando llegó justo a tiempo. ¿Simón tendrá frío?",
+      "npcEn": "Listen to that rain. Hernando got there just in time. Do you think Simón is cold?",
+      "intent": "Guess not: he's probably at Hernando's house.",
+      "accept": [
+        "No, estará en la casa de Hernando.",
+        "Supongo que no. Estará en la casa de Hernando.",
+        "No creo. Estará con Hernando, en su casa."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "estar",
+          "tense": "futuro",
+          "label": "a guess: estará (he's probably), not está"
+        }
+      ],
+      "focus": "g:future-conjecture",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Oye, ¿y esa frase en inglés? ¿Unos meses nada más? ¿Te vas a ir de Bogotá?",
+      "npcEn": "Hey, and that sentence in English? Just a few months? Are you going to leave Bogotá?",
+      "intent": "Say no: you'll stay, and promise her.",
+      "accept": [
+        "No, me quedaré aquí, te lo prometo.",
+        "No. Te prometo que me quedaré en Bogotá.",
+        "No me voy a ir. Me quedaré en el café, te lo prometo."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "quedar",
+          "tense": "futuro",
+          "label": "a promise: me quedaré (I'll stay)"
+        }
+      ],
+      "focus": "g:future-promises",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Bueno. ¿Y qué hacemos ahora con Altamira? Mariana vio la caja en su edificio.",
+      "npcEn": "Okay. And what do we do now about Altamira? Mariana saw the box in their building.",
+      "intent": "Say what you would do: first you would call a lawyer.",
+      "accept": [
+        "Yo llamaría primero a un abogado.",
+        "Yo que tú, llamaría a un abogado.",
+        "Primero llamaría a un abogado, y después hablaría con Mariana."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "llamar",
+          "tense": "condicional",
+          "label": "what you would do: llamaría"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Un abogado? Un abogado cuesta mucha plata, Tomás. Y el café no tiene plata.",
+      "npcEn": "A lawyer? A lawyer costs a lot of money, Tomás. And the café has no money.",
+      "intent": "Say maybe Mariana knows one.",
+      "accept": [
+        "De pronto Mariana conoce a uno.",
+        "De pronto Mariana conoce a un abogado.",
+        "De pronto Mariana tiene un amigo abogado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bde pronto\\b",
+          "flags": "i",
+          "label": "maybe: de pronto"
+        }
+      ],
+      "focus": "c:de-pronto",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Puede ser. Oye, el pronóstico dice que mañana va a llover todo el día. ¿Abrimos el café?",
+      "npcEn": "Could be. Hey, the forecast says it's going to rain all day tomorrow. Do we open the café?",
+      "intent": "Say yes: if it rains, people will come for a coffee.",
+      "accept": [
+        "Sí. Si llueve, la gente vendrá por un tinto.",
+        "Claro, si llueve, vendrán a tomar tinto.",
+        "Sí, si llueve, más gente vendrá al café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi llueve\\b",
+          "flags": "i",
+          "label": "after si, the present: si llueve, not si lloverá"
+        },
+        {
+          "type": "verbFormAny",
+          "inf": "venir",
+          "tense": "futuro",
+          "label": "what will happen: vendrá / vendrán"
+        }
+      ],
+      "focus": "x:si-clause-no-future",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Tienes razón. Bueno, me voy a dormir. Gracias por esta semana, socio.",
+      "npcEn": "You're right. Well, I'm going to bed. Thanks for this week, partner.",
+      "intent": "Say goodnight and tell her everything will turn out fine.",
+      "accept": [
+        "Buenas noches, Vale. Todo saldrá bien.",
+        "Gracias, socia. Todo saldrá bien.",
+        "Todo saldrá bien, Vale. Hasta mañana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btodo saldrá bien\\b",
+          "flags": "i",
+          "label": "everything will be fine: todo saldrá bien"
+        }
+      ],
+      "focus": "c:todo-saldra-bien",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:de-pronto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:oiga-oye",
+    "c:puede-ser",
+    "c:supongo-que",
+    "c:te-lo-prometo",
+    "c:tienes",
+    "c:todo-saldra-bien",
+    "c:voy-a",
+    "c:voy-vas",
+    "c:yo-que-tu",
+    "g:conditional",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "l:abogado",
+    "l:abrir",
+    "l:ahora",
+    "l:amigo",
+    "l:aquí",
+    "l:bien",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:caja",
+    "l:casa",
+    "l:claro",
+    "l:conocer",
+    "l:costar",
+    "l:creer",
+    "l:decir",
+    "l:después",
+    "l:dormir",
+    "l:día",
+    "l:edificio",
+    "l:escuchar",
+    "l:estar",
+    "l:frase",
+    "l:frío",
+    "l:gente",
+    "l:hablar",
+    "l:hacer",
+    "l:inglés",
+    "l:ir",
+    "l:irse",
+    "l:justo",
+    "l:llamar",
+    "l:llegar",
+    "l:llover",
+    "l:lluvia",
+    "l:mañana",
+    "l:mes",
+    "l:nadar",
+    "l:noche",
+    "l:oír",
+    "l:plata",
+    "l:poder",
+    "l:prometer",
+    "l:pronto",
+    "l:pronóstico",
+    "l:quedarse",
+    "l:qué",
+    "l:razón",
+    "l:salir",
+    "l:semana",
+    "l:ser",
+    "l:socio",
+    "l:suponer",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:tomar",
+    "l:venir",
+    "l:ver",
+    "p:aqui-ahi-alla",
+    "p:costar-pagar",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:la-gente-singular",
+    "p:me-te-nos-objects",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:tener-hambre",
+    "p:tener-razon",
+    "p:time-sequence-basic",
+    "p:todos-los-dias"
+  ]
+}
