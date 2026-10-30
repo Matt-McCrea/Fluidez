@@ -1,0 +1,309 @@
+{
+  "id": "ch108",
+  "unit": "u36",
+  "title": "La vaca de Rosa",
+  "text": "Mariana pintó una vaca en una servilleta.\nMariana: Cada vecino pone un poco, y entre todos pagamos la deuda.\nTomás: En Toronto eso se llama crowdfunding.\nHernando: Aquí se llama vaca desde antes de Toronto.\nTomás: No quiero pedirles plata a los vecinos. Prefiero el banco.\nEl banco ofrecía un préstamo con una tasa altísima: siete millones más en intereses.\nHernando: Con esa tasa, el banco es peor que Altamira.\nVale: Todo cuesta más de lo que pensamos. La compra de esta semana me costó una fortuna. La harina tuvo un aumento enorme. Con este aumento y esta inflación, no se puede vivir.\nHernando: Yo de inflación y de economía no sé nada, pero sé que Rosa y Joaquín no se hablaron cuarenta y seis años por orgullo. No sea como ellos.\nTomás: Bueno. La cifra es doce millones.\nMariana: La página se queda con un porcentaje pequeño.\nTomás: ¿Qué porcentaje? ¿Y si la página se cae un domingo?\nMariana: Paciencia, Tomás. Rosa le enseñó paciencia a todo el mundo, menos a ti.\nMariana escribió: «Altamira tiene detrás toda la industria de los hoteles. Nosotros tenemos un café de barrio y un loro. Vecino, este café cuenta contigo».\nHernando: ¿Toda la industria? Son tres hoteles y un señor bravo.\nVale puso al lado de la caja el cerdo de cerámica de Rosa, con un papel: «La vaca de Rosa».\nSimón: ¡Una vaca! ¡Un cerdo!\nHernando: Ese loro no sabe de economía, pero de animales sí.\nHernando metió sus ahorros en el cerdo.\nVale: ¡Hernando! Sus ahorros son para las pastillas.\nA las cinco llegó doña Gloria con un cheque.\nTomás: ¿Todavía se usan cheques?\nGloria: En mi casa, sí. Ya hablé con el comercio de la calle: en la tienda, con cada compra, piden una moneda para la vaca. El comercio de La Candelaria cuenta contigo, mijo.\nEl barrio lo quería más de lo que él pensaba.\nEsa noche, Tomás publicó la página, y en cinco minutos la cifra cambió: veinte mil pesos, sin nombre.\n«En 1987, Rosa me dio un tinto y no me cobró. Aquí está, con intereses».",
+  "gloss": [
+    {
+      "es": "servilleta",
+      "en": "napkin"
+    },
+    {
+      "es": "crowdfunding",
+      "en": "crowdfunding"
+    },
+    {
+      "es": "cerámica",
+      "en": "ceramic"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "el cerdo de cerámica de Rosa",
+      "en": "Rosa's ceramic pig (her piggy bank)"
+    },
+    {
+      "es": "Una vaca",
+      "en": "A vaca (a whip-round; literally, a cow)"
+    },
+    {
+      "es": "entre todos pagamos la deuda",
+      "en": "together we pay off the debt"
+    },
+    {
+      "es": "con una tasa altísima",
+      "en": "with a very high interest rate"
+    },
+    {
+      "es": "siete millones más en intereses",
+      "en": "seven million more in interest"
+    },
+    {
+      "es": "Todo cuesta más de lo que pensamos.",
+      "en": "Everything costs more than we think."
+    },
+    {
+      "es": "Con este aumento y esta inflación, no se puede vivir.",
+      "en": "With this rise and this inflation, nobody can live."
+    },
+    {
+      "es": "¿Y si la página se cae un domingo?",
+      "en": "And what if the website goes down on a Sunday?"
+    },
+    {
+      "es": "menos a ti",
+      "en": "except you"
+    },
+    {
+      "es": "Vecino, este café cuenta contigo",
+      "en": "Neighbour, this café is counting on you"
+    },
+    {
+      "es": "un señor bravo",
+      "en": "an angry man"
+    },
+    {
+      "es": "Yo de inflación y de economía no sé nada",
+      "en": "I don't know anything about inflation or economics"
+    },
+    {
+      "es": "piden una moneda para la vaca",
+      "en": "they ask for a coin for the vaca"
+    },
+    {
+      "es": "Aquí está, con intereses",
+      "en": "Here it is, with interest"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What is the problem with the bank's loan?",
+      "options": [
+        "The interest would add seven million pesos",
+        "The bank is owned by Altamira",
+        "The bank is closed on Sundays",
+        "The bank wants the building"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What finally convinces Tomás to accept the vaca?",
+      "options": [
+        "Hernando reminds him that Rosa and Joaquín lost forty-six years to pride",
+        "Vale threatens to leave",
+        "Mariana pays the debt herself",
+        "The bank calls"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale write on the paper next to Rosa's ceramic pig?",
+      "options": [
+        "\"La vaca de Rosa\"",
+        "\"Gracias, vecino\"",
+        "\"Se vende\"",
+        "\"No se fuma\""
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Con qué paga doña Gloria?",
+      "options": [
+        "Con un cheque",
+        "Con monedas",
+        "Con una tarjeta",
+        "Con almojábanas"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The page is live, the ceramic pig is by the till, and the first stranger has paid back a coffee from 1987. Tomorrow begins a week in which the neighbourhood, and people nobody has ever met, start to answer.",
+  "rereadQuestions": [
+    {
+      "q": "Where are people now asked for a coin for the vaca?",
+      "options": [
+        "In the corner shop, with every purchase",
+        "At the bank",
+        "At the church",
+        "At the bus stop"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who, according to Mariana, did Rosa fail to teach patience to?",
+      "options": [
+        "Tomás",
+        "Hernando",
+        "Vale",
+        "Simón"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How much is the very first donation?",
+      "options": [
+        "Twenty thousand pesos",
+        "Twelve million pesos",
+        "One peso",
+        "A hundred dollars"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:entonces-bueno",
+    "c:no-hay-nada",
+    "c:no-se",
+    "c:quiero",
+    "c:se-llama",
+    "c:se-puede",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:contar-con",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:esta-prohibido",
+    "p:mas-de-lo-que",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:poco-un-poco",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:prefieres-x-o-y",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:se-puede-me-dejas",
+    "p:se-reciproco",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:todos-los-dias",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:ahorro",
+    "l:alto",
+    "l:animal",
+    "l:antes",
+    "l:aquí",
+    "l:aumento",
+    "l:año",
+    "l:banco",
+    "l:barrio",
+    "l:bravo",
+    "l:bueno",
+    "l:caerse",
+    "l:café",
+    "l:caja",
+    "l:calle",
+    "l:cambiar",
+    "l:casa",
+    "l:cerdo",
+    "l:cerámica",
+    "l:cheque",
+    "l:cifra",
+    "l:cobrar",
+    "l:comercio",
+    "l:compra",
+    "l:contar",
+    "l:costar",
+    "l:dar",
+    "l:detrás",
+    "l:deuda",
+    "l:domingo",
+    "l:economía",
+    "l:enorme",
+    "l:enseñar",
+    "l:escribir",
+    "l:estar",
+    "l:fortuna",
+    "l:hablar",
+    "l:harina",
+    "l:hotel",
+    "l:industria",
+    "l:inflación",
+    "l:interés",
+    "l:lado",
+    "l:llamarse",
+    "l:llegar",
+    "l:loro",
+    "l:meter",
+    "l:mijo",
+    "l:minuto",
+    "l:moneda",
+    "l:mundo",
+    "l:noche",
+    "l:nombre",
+    "l:ofrecer",
+    "l:orgullo",
+    "l:paciencia",
+    "l:pagar",
+    "l:papel",
+    "l:pastilla",
+    "l:pedir",
+    "l:pensar",
+    "l:peor",
+    "l:pequeño",
+    "l:peso",
+    "l:pintar",
+    "l:plata",
+    "l:poder",
+    "l:poner",
+    "l:porcentaje",
+    "l:preferir",
+    "l:préstamo",
+    "l:publicar",
+    "l:página",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:saber",
+    "l:semana",
+    "l:ser",
+    "l:servilleta",
+    "l:señor",
+    "l:tasa",
+    "l:tener",
+    "l:tienda",
+    "l:tinto",
+    "l:usar",
+    "l:vaca",
+    "l:vecino",
+    "l:vivir"
+  ]
+}

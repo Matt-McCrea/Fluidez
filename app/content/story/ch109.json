@@ -1,0 +1,300 @@
+{
+  "id": "ch109",
+  "unit": "u36",
+  "title": "Gracias, vecino",
+  "text": "El lunes, el cerdo de Rosa ya no cerraba. Hernando contó las monedas en su mesa: ciento ochenta mil pesos.\nHernando: Rosa nunca tuvo un cerdo tan gordo.\nEl martes llegó el entrenador del equipo de fútbol del barrio, con once niños y una caja llena de monedas.\nEntrenador: Los muchachos ahorraban para ir a la piscina en diciembre. Este año el café es más importante que la piscina.\nVale se fue a la cocina, y volvió con los ojos rojos y una bandeja de almojábanas.\nHernando: Muchachos, en diciembre yo los llevo a la piscina en la Burra. Gratis, pero de cuatro en cuatro.\nEl miércoles, cada vez entraba más gente que nadie conocía. Una pareja de alemanes que paseaba por La Candelaria pidió dos tintos y dejó cien dólares.\nSimón: ¡Gracias, vecino! ¡Gracias, vecino!\nSimón lo decía a todo el mundo: a los clientes, al cartero y a la escoba.\nEl jueves llegó una donación de un peso, de Inversiones RA: «Suerte con los trámites».\nSimón: ¡Gracias, vecino!\nHernando: Ese no es vecino. Es el enemigo.\nVale: Ese peso no lo gastamos. Va a la pared, al lado de la foto de Rosa.\nEl viernes, la deuda ya había disminuido a la mitad. Llegó también un mensaje de Medellín: «Para mi hija y para el muchacho de Toronto. Mamá».\nVale: Mi mamá tiene menos plata que todos nosotros, y dio más que nadie.\nEl domingo se cerró la página. Habían pedido doce millones, y juntaron veinticuatro millones y medio.\nMariana: Juntamos más de lo que pedimos. Hay más plata que deuda.\nTomás: De hecho, ahora le debemos algo a todo el barrio.\nHernando: Eso no es una deuda, mijo. Eso se llama tener vecinos.\nTomás: ¿Y la otra parte de la plata?\nMariana: Para encontrar a Joaquín.\nVale: Y para el viaje a la costa.\nEntonces Hernando recibió un audio de Santa Marta, del cuñado del Chato.\n«Pacheco, ¿me oye? El primo de un amigo conoce a un señor que trabaja en el mar, en Taganga. El abuelo de ese señor se llamaba Herrera».",
+  "gloss": [
+    {
+      "es": "cartero",
+      "en": "postman"
+    },
+    {
+      "es": "escoba",
+      "en": "broom"
+    },
+    {
+      "es": "cuñado",
+      "en": "brother-in-law"
+    },
+    {
+      "es": "el cerdo de Rosa ya no cerraba",
+      "en": "Rosa's piggy bank wouldn't close any more"
+    },
+    {
+      "es": "Rosa nunca tuvo un cerdo tan gordo.",
+      "en": "Rosa never had such a fat pig."
+    },
+    {
+      "es": "una caja llena de monedas",
+      "en": "a box full of coins"
+    },
+    {
+      "es": "de cuatro en cuatro",
+      "en": "four at a time"
+    },
+    {
+      "es": "cada vez entraba más gente que nadie conocía",
+      "en": "more and more people nobody knew came in"
+    },
+    {
+      "es": "Ese peso no lo gastamos.",
+      "en": "We're not spending that peso."
+    },
+    {
+      "es": "la deuda ya había disminuido a la mitad",
+      "en": "the debt had already gone down by half"
+    },
+    {
+      "es": "Hay más plata que deuda.",
+      "en": "There's more money than debt."
+    },
+    {
+      "es": "Eso se llama tener vecinos.",
+      "en": "That's called having neighbours."
+    },
+    {
+      "es": "un señor que trabaja en el mar",
+      "en": "a man who works on the sea"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why did the football team give up the swimming pool trip?",
+      "options": [
+        "The children decided the café was more important",
+        "The pool was closed",
+        "The coach had no money",
+        "Hernando asked them to"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is the one peso donation from Inversiones RA really saying?",
+      "options": [
+        "It is a mocking message from Altamira's company",
+        "It is a mistake by the bank",
+        "It is a gift from a child",
+        "It is from Vale's mother"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How much did they raise compared with what they asked for?",
+      "options": [
+        "More than twice as much",
+        "Exactly the same",
+        "Half",
+        "A little less"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What will they do with the extra money?",
+      "options": [
+        "Use it to find Joaquín and travel to the coast",
+        "Buy a new coffee machine",
+        "Pay for Hernando's taxi",
+        "Give it back to the neighbours"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué les dijo Hernando a los niños?",
+      "options": [
+        "Que los lleva a la piscina en la Burra",
+        "Que la piscina está cerrada",
+        "Que el café les paga la piscina",
+        "Que no hay plata para la piscina"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The vaca has raised more than twice the debt, and the rest will pay for the search. Then a voice note arrives from Santa Marta: a cousin of a friend knows a man in Taganga whose grandfather was called Herrera.",
+  "rereadQuestions": [
+    {
+      "q": "How much money in coins was in Rosa's pig on Monday?",
+      "options": [
+        "One hundred and eighty thousand pesos",
+        "Twelve million pesos",
+        "One hundred dollars",
+        "Twenty thousand pesos"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who did Simón say \"¡Gracias, vecino!\" to?",
+      "options": [
+        "Customers, the postman and the broom",
+        "Only the Germans",
+        "Only Hernando",
+        "Only the children"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where does Vale want to put the one peso?",
+      "options": [
+        "On the wall next to Rosa's photo",
+        "In the pig",
+        "In the bank",
+        "In the bin"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:oiga-oye",
+    "c:se-llama",
+    "c:tienes",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:passive-se",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "p:actualmente",
+    "p:cerca-de",
+    "p:container-de",
+    "p:contar-dos-sentidos",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:la-gente-singular",
+    "p:mas-de-lo-que",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:saber-conocer",
+    "p:todos-los-dias"
+  ],
+  "lexemes": [
+    "l:abuelo",
+    "l:ahora",
+    "l:ahorrar",
+    "l:alemán",
+    "l:almojábana",
+    "l:amigo",
+    "l:audio",
+    "l:año",
+    "l:bandeja",
+    "l:barrio",
+    "l:café",
+    "l:caja",
+    "l:cartero",
+    "l:cerdo",
+    "l:cerrar",
+    "l:cliente",
+    "l:cocina",
+    "l:conocer",
+    "l:contar",
+    "l:costa",
+    "l:cuñado",
+    "l:dar",
+    "l:deber",
+    "l:decir",
+    "l:dejar",
+    "l:deuda",
+    "l:diciembre",
+    "l:disminuir",
+    "l:domingo",
+    "l:donación",
+    "l:dólar",
+    "l:encontrar",
+    "l:enemigo",
+    "l:entrar",
+    "l:entrenador",
+    "l:equipo",
+    "l:escoba",
+    "l:foto",
+    "l:fútbol",
+    "l:gastar",
+    "l:gente",
+    "l:gordo",
+    "l:gratis",
+    "l:hacer",
+    "l:hija",
+    "l:importante",
+    "l:ir",
+    "l:irse",
+    "l:jueves",
+    "l:juntar",
+    "l:lado",
+    "l:llamarse",
+    "l:llegar",
+    "l:llenar",
+    "l:llevar",
+    "l:lunes",
+    "l:mamá",
+    "l:mar",
+    "l:martes",
+    "l:mediar",
+    "l:mensaje",
+    "l:mesa",
+    "l:mijo",
+    "l:mitad",
+    "l:miércoles",
+    "l:moneda",
+    "l:muchacho",
+    "l:mundo",
+    "l:niño",
+    "l:ojo",
+    "l:oír",
+    "l:pared",
+    "l:pareja",
+    "l:parte",
+    "l:pasear",
+    "l:pedir",
+    "l:peso",
+    "l:piscina",
+    "l:plata",
+    "l:primo",
+    "l:página",
+    "l:recibir",
+    "l:rojo",
+    "l:ser",
+    "l:señor",
+    "l:suerte",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:trámite",
+    "l:vecino",
+    "l:vez",
+    "l:viaje",
+    "l:viernes",
+    "l:volver"
+  ]
+}

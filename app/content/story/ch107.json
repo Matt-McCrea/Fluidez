@@ -1,0 +1,316 @@
+{
+  "id": "ch107",
+  "unit": "u36",
+  "title": "Montaña rusa",
+  "text": "El cuaderno de Vale tenía tres colores: verde para la plata que entraba, rojo para la plata que salía y azul para las cuentas de Hernando.\nVale: La Burra no se vende, Hernando. Ni hoy, ni el otro mes.\nTomás: Antes de la reseña de la bloguera, se vendían ochenta tintos al día. Este mes se vendieron ciento sesenta al día, y con la cafetera de Rosa.\nVale: ¿Y mis almojábanas?\nTomás: De cada cien pesos que entran, cincuenta salen de tu cocina.\nHernando: ¡Bien hecho, mija!\nDespués venían las páginas rojas, y eran más.\nTomás: La multa de la alcaldía. La ventana. La pieza de Italia. La clínica. Y los trámites de la doctora Uribe, que no se pagan con tintos.\nVale: ¿Y cuánto nos queda?\nTomás: Este mes se ganó más que nunca, y nos quedan cero pesos.\nSimón: ¡Bien hecho! ¡Bien hecho!\nSimón lo repitió sin cesar durante diez minutos. Nadie se rio.\nHernando: Esto parece una montaña rusa.\nTomás: En una montaña rusa, por lo menos, al final la gente se baja.\nHernando sacó un cigarrillo viejo de la gorra.\nVale: En este café no se fuma. Y usted dejó de fumar en 1990.\nVale lo guardó en el delantal, con la sal.\nEntonces Hernando sacó otra cosa de la gorra: una caja roja. Adentro había un anillo de oro, pequeño y sencillo.\nHernando: Si la Burra no se vende, vendemos esto. Lo compré en 2009, para una noche de lluvia. Nunca salió de la caja.\nVale se puso la mano en la boca. Era el anillo de la noche de las cartas.\nTomás cerró la caja y se la devolvió.\nTomás: Este anillo es de Rosa, Hernando. Y las cosas de Rosa no se venden.\nHernando se negó a mirarlos.\nHernando: Altamira ya no necesita romper ventanas. Con una multa cada mes le basta.\nTomás escribió en la última página: «Cada vez vendemos más, y cada vez debemos más».\nMariana lo escuchó todo desde la puerta.\nMariana: Ustedes no necesitan vender nada. Necesitan una vaca.\nHernando: ¿Una vaca? Mija, yo de vacas no sé nada.",
+  "gloss": [
+    {
+      "es": "cafetera",
+      "en": "coffee pot"
+    },
+    {
+      "es": "multa",
+      "en": "fine (a penalty you pay)"
+    },
+    {
+      "es": "cigarrillo",
+      "en": "cigarette"
+    },
+    {
+      "es": "delantal",
+      "en": "apron"
+    },
+    {
+      "es": "bloguera",
+      "en": "blogger (a woman)"
+    },
+    {
+      "es": "verde para la plata que entraba, rojo para la plata que salía",
+      "en": "green for the money coming in, red for the money going out"
+    },
+    {
+      "es": "Ni hoy, ni el otro mes.",
+      "en": "Not today, not next month."
+    },
+    {
+      "es": "Era el anillo de la noche de las cartas.",
+      "en": "It was the ring from the night of the letters."
+    },
+    {
+      "es": "Este mes se vendieron ciento sesenta al día",
+      "en": "This month a hundred and sixty a day were sold"
+    },
+    {
+      "es": "De cada cien pesos que entran, cincuenta salen de tu cocina.",
+      "en": "Out of every hundred pesos that come in, fifty come from your kitchen."
+    },
+    {
+      "es": "que no se pagan con tintos",
+      "en": "which aren't paid for with coffees"
+    },
+    {
+      "es": "nos quedan cero pesos",
+      "en": "we have zero pesos left"
+    },
+    {
+      "es": "montaña rusa",
+      "en": "roller coaster"
+    },
+    {
+      "es": "al final la gente se baja",
+      "en": "at the end people get off"
+    },
+    {
+      "es": "para una noche de lluvia",
+      "en": "for a rainy night"
+    },
+    {
+      "es": "Hernando se negó a mirarlos.",
+      "en": "Hernando refused to look at them."
+    },
+    {
+      "es": "Con una multa cada mes le basta.",
+      "en": "A fine every month is enough for him."
+    },
+    {
+      "es": "Necesitan una vaca.",
+      "en": "You need a vaca (a whip-round where everyone chips in; literally, a cow)."
+    },
+    {
+      "es": "yo de vacas no sé nada",
+      "en": "I don't know anything about cows"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What happened to sales after the blogger's review?",
+      "options": [
+        "They doubled, from eighty coffees a day to a hundred and sixty",
+        "They fell by half",
+        "They stayed the same",
+        "Only the pastries sold more"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does nobody laugh when Simón says \"¡Bien hecho!\" the second time?",
+      "options": [
+        "Tomás has just said they have zero pesos left",
+        "Hernando is asleep",
+        "Vale has burnt the cakes",
+        "A customer has complained"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando offer to sell when Vale refuses to sell the Burra?",
+      "options": [
+        "A gold ring he bought in 2009 and never gave",
+        "His watch",
+        "Rosa's letters",
+        "His cap"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Tomás give the ring back?",
+      "options": [
+        "He thinks it belongs to Rosa, and Rosa's things are not for sale",
+        "It is not worth anything",
+        "Vale wants to wear it",
+        "Mariana has a better idea"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Dónde guarda Vale el cigarrillo de Hernando?",
+      "options": [
+        "En el delantal",
+        "En la gorra",
+        "En la caja",
+        "En la cocina"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Mariana says the café doesn't need to sell a taxi or a ring, it needs a vaca, and Hernando knows nothing about cows. Tomorrow she explains how a whole neighbourhood pays a debt that nobody can pay alone.",
+  "rereadQuestions": [
+    {
+      "q": "What colour does Vale use in the notebook for Hernando's accounts?",
+      "options": [
+        "Blue",
+        "Green",
+        "Red",
+        "Black"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many coffees a day did they sell before the blogger's review?",
+      "options": [
+        "Eighty",
+        "A hundred and sixty",
+        "Fifty",
+        "A hundred"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "In which year did Hernando stop smoking, according to Vale?",
+      "options": [
+        "1990",
+        "1983",
+        "2009",
+        "1978"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:bien-y-tu",
+    "c:compre-trabaje",
+    "c:entonces-bueno",
+    "c:era",
+    "c:no-hay-nada",
+    "c:no-se",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:passive-se",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:dates-years",
+    "p:dejar-de-inf",
+    "p:demonstratives-basic",
+    "p:durar-durante",
+    "p:entonces-de-repente",
+    "p:frequency-scale",
+    "p:la-gente-singular",
+    "p:lavarse-las-manos",
+    "p:mas-de-number",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:parecer-vs-parecerse",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:subirse-bajarse",
+    "p:time-sequence-basic",
+    "p:veces-al",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:adentro",
+    "l:alcaldía",
+    "l:almojábana",
+    "l:anillo",
+    "l:antes",
+    "l:azul",
+    "l:bajarse",
+    "l:bastar",
+    "l:bien",
+    "l:boca",
+    "l:cafetera",
+    "l:café",
+    "l:caja",
+    "l:carta",
+    "l:cero",
+    "l:cerrar",
+    "l:cesar",
+    "l:cigarrillo",
+    "l:clínica",
+    "l:cocina",
+    "l:color",
+    "l:comprar",
+    "l:cosa",
+    "l:cuaderno",
+    "l:cuenta",
+    "l:cuánto",
+    "l:deber",
+    "l:dejar",
+    "l:delantal",
+    "l:después",
+    "l:devolver",
+    "l:doctor",
+    "l:día",
+    "l:entrar",
+    "l:escribir",
+    "l:escuchar",
+    "l:final",
+    "l:fumar",
+    "l:ganar",
+    "l:gente",
+    "l:gorra",
+    "l:guardar",
+    "l:hacer",
+    "l:hoy",
+    "l:lluvia",
+    "l:mano",
+    "l:mes",
+    "l:mija",
+    "l:minuto",
+    "l:mirar",
+    "l:montaña",
+    "l:multa",
+    "l:necesitar",
+    "l:negarse",
+    "l:noche",
+    "l:oro",
+    "l:pagar",
+    "l:parecer",
+    "l:pequeño",
+    "l:peso",
+    "l:pieza",
+    "l:plata",
+    "l:ponerse",
+    "l:puerta",
+    "l:página",
+    "l:quedar",
+    "l:repetir",
+    "l:reseña",
+    "l:reír",
+    "l:rojo",
+    "l:romper",
+    "l:ruso",
+    "l:saber",
+    "l:sacar",
+    "l:sal",
+    "l:salir",
+    "l:sencillo",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:trámite",
+    "l:vaca",
+    "l:vender",
+    "l:venir",
+    "l:ventana",
+    "l:verde",
+    "l:vez",
+    "l:viejo"
+  ]
+}
