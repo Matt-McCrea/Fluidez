@@ -740,5 +740,376 @@
       "l:viernes",
       "p:days-el-lunes"
     ]
+  },
+  {
+    "id": "w-u17-13",
+    "unit": "u17",
+    "prompt": "Your friend Mariana wants to go walking on Sunday, but rain is forecast. Reply to her (someone your age, tú): say what you will do if it does not rain and what you will do if it does.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bsi\\b [^.,!?]+,",
+        "label": "a si condition then a comma"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "llueve"
+        ],
+        "label": "mention the rain with llueve"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bsi\\b[\\s\\S]*\\bsi\\b",
+        "label": "cover both cases with two si clauses"
+      }
+    ],
+    "model": "Mariana, si no llueve el domingo, vamos a caminar. Si llueve, nos quedamos en casa y vemos una película. Me parece bien el plan. Dale, me avisas si prefieres otro día.",
+    "focus": "g:si-present",
+    "requires": [
+      "c:bien-y-tu",
+      "c:dale",
+      "c:me-avisas",
+      "c:me-parece-bien",
+      "c:sera-otro-dia",
+      "c:vamos-a",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:reflexive-routine",
+      "g:si-present",
+      "g:stem-boot",
+      "l:avisar",
+      "l:bien",
+      "l:caminar",
+      "l:casa",
+      "l:dale",
+      "l:domingo",
+      "l:día",
+      "l:ir",
+      "l:llover",
+      "l:parecer",
+      "l:película",
+      "l:plan",
+      "l:preferir",
+      "l:quedarse",
+      "l:ver",
+      "p:days-el-lunes",
+      "p:prefieres-x-o-y"
+    ]
+  },
+  {
+    "id": "w-u17-14",
+    "unit": "u17",
+    "prompt": "A customer (a woman you call usted) asks whether the café can seat her group of eight on Saturday. Reply to her: say that if they come before noon you have a table, and ask whether that works for her.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bsi\\b [^.,!?]+,",
+        "label": "a si condition then a comma"
+      },
+      {
+        "type": "question",
+        "label": "ask if it works for her"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " puedes",
+          " tienes",
+          " quieres",
+          " tu "
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas tardes, señora. Si ustedes llegan antes de las doce, tenemos una mesa perfecta para el grupo. Si llegan más tarde, vamos a buscar otra mesa. ¿Pueden venir a esa hora?",
+    "focus": "g:si-present",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:tienes",
+      "c:vamos-a",
+      "g:adjective-agreement",
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:si-present",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:antes",
+      "l:buena",
+      "l:buscar",
+      "l:grupo",
+      "l:hora",
+      "l:ir",
+      "l:llegar",
+      "l:mesa",
+      "l:perfecto",
+      "l:poder",
+      "l:señora",
+      "l:tarde",
+      "l:tener",
+      "l:venir",
+      "p:otro-no-article",
+      "p:para-inf",
+      "p:request-ladder"
+    ]
+  },
+  {
+    "id": "w-u17-15",
+    "unit": "u17",
+    "prompt": "Tomás asks if you can bring him back the book he lent you. Reply to him (tú): say you have it, that you will bring it to him, and when.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(te|me) (lo|la|los|las)\\b",
+        "label": "use two pronouns together, like te las llevo"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "libro"
+        ],
+        "label": "mention the book"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "hoy",
+          "mañana",
+          "viernes",
+          "sábado",
+          "domingo",
+          "lunes"
+        ],
+        "label": "say when"
+      }
+    ],
+    "model": "Tomás, claro. El libro lo tengo yo, tranquilo. Te lo llevo mañana al café, ¿listo? Si quieres, te lo doy hoy mismo en el café.",
+    "focus": "g:double-pronouns",
+    "requires": [
+      "c:claro-listo",
+      "c:si-quieres",
+      "c:tengo",
+      "c:tranquilo",
+      "g:direct-objects",
+      "g:double-pronouns",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:si-present",
+      "g:yo-irregular",
+      "l:café",
+      "l:claro",
+      "l:dar",
+      "l:hoy",
+      "l:libro",
+      "l:listo",
+      "l:llevar",
+      "l:mañana",
+      "l:querer",
+      "l:tener",
+      "l:tranquilo",
+      "p:me-te-nos-objects"
+    ]
+  },
+  {
+    "id": "w-u17-16",
+    "unit": "u17",
+    "prompt": "Your neighbour loved the cake you made and asks for the recipe. Reply to her (an older woman, usted): say you will write it down and bring it to her.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bse (lo|la|los|las)\\b",
+        "label": "use two pronouns together, like se la escribo"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "receta"
+        ],
+        "label": "mention the recipe"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " te ",
+          " tu ",
+          " puedes",
+          " quieres"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas tardes, señora, con mucho gusto. La receta se la escribo hoy, y mañana se la llevo a su casa. Es una receta muy fácil, y creo que le va a gustar.",
+    "focus": "g:double-pronouns",
+    "requires": [
+      "c:con-mucho-gusto",
+      "c:creo-que",
+      "c:hola-buenos-dias",
+      "c:mucho-gusto",
+      "g:double-pronouns",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:buena",
+      "l:casa",
+      "l:creer",
+      "l:escribir",
+      "l:fácil",
+      "l:gustar",
+      "l:gusto",
+      "l:hoy",
+      "l:ir",
+      "l:llevar",
+      "l:mañana",
+      "l:receta",
+      "l:ser",
+      "l:señora",
+      "l:tarde",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u17-17",
+    "unit": "u17",
+    "prompt": "Vale asks how you feel after work. Tell her (tú) what you do when you finish at the café and when you get home.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bcuando\\b",
+        "label": "use cuando"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "presente",
+        "label": "use the present"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "cuando terminé",
+          "cuando llegué",
+          "cuando era",
+          "cuando fui"
+        ],
+        "label": "present after cuando, not the past"
+      }
+    ],
+    "model": "Vale, cuando termino en el café, estoy muy cansado. Cuando llego a casa, como algo, veo un rato la televisión y me acuesto temprano. Los sábados salgo más tarde.",
+    "focus": "g:cuando-indicative",
+    "requires": [
+      "c:hago-salgo-vengo",
+      "g:cause-result",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:acostarse",
+      "l:café",
+      "l:cansado",
+      "l:casa",
+      "l:estar",
+      "l:llegar",
+      "l:rato",
+      "l:salir",
+      "l:sábado",
+      "l:tarde",
+      "l:televisión",
+      "l:temprano",
+      "l:terminar",
+      "l:ver",
+      "p:cuando-basic",
+      "p:days-el-lunes",
+      "p:indefinites-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u17-18",
+    "unit": "u17",
+    "prompt": "Don Hernando worries that you work too much. Reassure him (he is older, usted): tell him what you do when you have free time and when the café is quiet.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bcuando\\b",
+        "label": "use cuando"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "presente",
+        "label": "use the present"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " tú ",
+          " tu ",
+          " puedes",
+          " quieres",
+          " tienes"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Señor Hernando, todo está bien. Cuando tengo tiempo libre, salgo a caminar con mis amigos. Cuando el café está tranquilo, descanso un poco. Si quiere, el domingo lo veo en el café.",
+    "focus": "g:cuando-indicative",
+    "requires": [
+      "c:bien-y-tu",
+      "c:hago-salgo-vengo",
+      "c:tengo",
+      "c:tranquilo",
+      "g:direct-objects",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:si-present",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:amigo",
+      "l:bien",
+      "l:café",
+      "l:caminar",
+      "l:descansar",
+      "l:domingo",
+      "l:estar",
+      "l:libre",
+      "l:querer",
+      "l:salir",
+      "l:señor",
+      "l:tener",
+      "l:tiempo",
+      "l:tranquilo",
+      "l:ver",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:cuando-basic",
+      "p:days-el-lunes",
+      "p:poco-un-poco",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:senor-don-article"
+    ]
   }
 ]
