@@ -1,0 +1,43 @@
+{
+  "node": "p:cabe-destacar",
+  "hook": {
+    "line": "When Mariana writes an article, she needs a way to say \"and here is something you should notice\" without sounding like she is talking over coffee. Spanish news has a set phrase for that.",
+    "es": "Cabe destacar que es la primera vez que ocurre.",
+    "en": "It is worth noting that this is the first time it has happened."
+  },
+  "examples": [
+    { "es": "Cabe destacar que es la primera vez que ocurre.", "en": "It is worth noting that this is the first time it has happened." },
+    { "es": "Cabe señalar que el informe es preliminar.", "en": "It should be noted that the report is preliminary." },
+    { "es": "Cabe mencionar que Altamira no quiso hacer comentarios.", "en": "It is worth mentioning that Altamira declined to comment." },
+    { "es": "Cabe recordar que el café abrió hace cuarenta años.", "en": "It is worth recalling that the café opened forty years ago." },
+    { "es": "Cabe añadir que ninguno de los vecinos ha vendido su casa.", "en": "It should be added that none of the neighbours has sold their house." },
+    { "es": "Cabe aclarar que la investigación sigue abierta.", "en": "It should be made clear that the investigation is still open." }
+  ],
+  "rule": "*Cabe* plus an infinitive is a formal way to say \"it is worth...\":\n*cabe destacar* (note)\n*cabe señalar* (point out)\n*cabe mencionar* (mention)\n*cabe recordar* (recall)\n*cabe añadir* (add)\n*cabe aclarar* (make clear)\n\nThen comes *que* and a plain fact in the normal verb form. *Cabe* never changes and has no subject. You will read it in articles and reports, but you will almost never hear it in conversation.",
+  "smallPrint": "Teachers call this an impersonal formula of written register. *Cabe* is the verb *caber*, which here means \"it is fitting\".",
+  "readAndPick": [
+    { "es": "Cabe recordar que el café abrió hace cuarenta años.", "options": ["It should be added that the café opened forty years ago.", "It is worth recalling that the café opened forty years ago.", "It should be made clear that the café opened forty years ago."], "answer": 1 },
+    { "es": "Cabe añadir que ninguno de los vecinos ha vendido su casa.", "options": ["It should be added that none of the neighbours has sold their house.", "It is worth recalling that none of the neighbours has sold their house.", "It is worth noting that none of the neighbours has sold their house."], "answer": 0 },
+    { "es": "Cabe aclarar que la investigación sigue abierta.", "options": ["It is worth mentioning that the investigation is still open.", "It should be added that the investigation is still open.", "It should be made clear that the investigation is still open."], "answer": 2 },
+    { "es": "Cabe mencionar que Altamira no quiso hacer comentarios.", "options": ["It is worth mentioning that Altamira declined to comment.", "It should be made clear that Altamira declined to comment.", "It is worth recalling that Altamira declined to comment."], "answer": 0 },
+    { "es": "Cabe destacar que es la primera vez que ocurre.", "options": ["I wonder if this is the first time it has happened.", "It is worth noting that this is the first time it has happened.", "It fits that this is the first time it has happened."], "answer": 1 },
+    { "es": "Cabe señalar que el informe es preliminar.", "options": ["It should be noted that the report is final.", "It should be noted that the report is missing.", "It should be noted that the report is preliminary."], "answer": 2 },
+    { "es": "Cabe destacar que la caída fue del 15 %.", "options": ["It is worth noting that the fall was 15%.", "The fall might be 15%.", "The fall fits into 15%."], "answer": 0 },
+    { "es": "Cabe resaltar que Vale trabajó sola.", "options": ["Vale was able to work alone.", "It should be added that Vale works alone.", "It is worth highlighting that Vale worked alone."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Cabe ___ que el informe es preliminar.* (*señalar* or *señala*) It should be noted that the report is preliminary.", "answer": "Cabe señalar que el informe es preliminar.", "accept": [], "why": "After *cabe*, the next verb stays in the infinitive: *señalar*." },
+    { "prompt": "Pick and type the whole sentence: *Cabe destacar que la caída ___ del 15 %.* (*fue* or *sea*) It is worth noting that the fall was 15%.", "answer": "Cabe destacar que la caída fue del 15 %.", "accept": ["Cabe destacar que la caída fue del 15%."], "why": "You are stating a fact, so the verb is the normal one: *fue*." },
+    { "prompt": "Write, in a formal report: It is worth noting that this is the first time it has happened.", "answer": "Cabe destacar que es la primera vez que ocurre.", "accept": ["Cabe señalar que es la primera vez que ocurre."], "why": "*Cabe destacar que* opens a point you want the reader to notice." },
+    { "prompt": "Write: It should be added that none of the neighbours has sold their house.", "answer": "Cabe añadir que ninguno de los vecinos ha vendido su casa.", "accept": [], "why": "*Cabe añadir* tacks on one more fact." },
+    { "prompt": "Write: It is worth recalling that the café opened forty years ago.", "answer": "Cabe recordar que el café abrió hace cuarenta años.", "accept": [], "why": "*Cabe recordar* reminds the reader of something they may know." },
+    { "prompt": "Make it more formal for a report: *Hay que decir que la investigación sigue abierta.* Use *aclarar*.", "answer": "Cabe aclarar que la investigación sigue abierta.", "accept": [], "why": "*Hay que decir que* is how you say it out loud, and *cabe aclarar que* is how you write it." },
+    { "prompt": "Add a formal opener with *resaltar* to this sentence: *Vale trabajó sola.*", "answer": "Cabe resaltar que Vale trabajó sola.", "accept": ["Cabe destacar que Vale trabajó sola.", "Cabe señalar que Vale trabajó sola.", "Cabe mencionar que Vale trabajó sola."], "why": "Any of these verbs follows *cabe*, then *que* and the fact." }
+  ],
+  "pitfalls": [
+    { "wrong": "Cabe destacar de que es la primera vez.", "right": "Cabe destacar que es la primera vez que ocurre.", "why": "Almost. Use a plain *que*, with no *de* before it." },
+    { "wrong": "Cabe destacar que sea la primera vez que ocurre.", "right": "Cabe destacar que es la primera vez que ocurre.", "why": "You are stating a fact, so the verb is not subjunctive." },
+    { "wrong": "Yo cabo destacar que el informe es preliminar.", "right": "Cabe destacar que el informe es preliminar.", "why": "*Cabe* has no subject and never changes, so it does not become *cabo*." }
+  ],
+  "personal": "Write a two-line note about your own street or workplace as if for a newspaper, and start the second line with *cabe destacar que* or *cabe señalar que*."
+}

@@ -1,0 +1,43 @@
+{
+  "node": "p:si-solo-si-siempre-y-cuando",
+  "hook": {
+    "line": "A flat yes or no can sound blunt, and often the honest answer is \"yes, if...\" or \"no, unless...\". Vale has a few of those ready whenever Tomás asks to borrow something.",
+    "es": "Puedes usar la cocina, siempre y cuando me avises antes.",
+    "en": "You can use the kitchen, as long as you tell me first."
+  },
+  "examples": [
+    { "es": "Sí, pero solo si terminas la tarea.", "en": "Yes, but only if you finish your homework." },
+    { "es": "Puedes llevarte el carro, siempre y cuando lo devuelvas con gasolina.", "en": "You can take the car, as long as you bring it back with petrol in it." },
+    { "es": "No, salvo que alguien me reemplace.", "en": "No, unless someone covers for me." },
+    { "es": "No, a menos que me paguen más.", "en": "No, unless they pay me more." },
+    { "es": "Puedes salir temprano, siempre y cuando termines el pedido.", "en": "You can leave early, as long as you finish the order." },
+    { "es": "Sí, te ayudo, pero solo si me explicas qué pasó.", "en": "Yes, I'll help you, but only if you explain to me what happened." }
+  ],
+  "rule": "A yes or a no can come with a condition.\n\n*Solo si* means \"only if\", and the verb is the normal one: *terminas*, *explicas*.\n\n*Siempre y cuando* (as long as), *salvo que* and *a menos que* (unless) take the subjunctive: *devuelvas*, *reemplace*, *paguen*.\n\nSo \"Yes, but only if...\" uses *solo si*, \"as long as\" uses *siempre y cuando*, and a no with an exit uses *salvo que*.",
+  "smallPrint": "Teachers call these conditional connectors. *Salvo que* and *a menos que* are the \"unless\" type, and they leave the door open.",
+  "readAndPick": [
+    { "es": "Sí, pero solo si terminas la tarea.", "options": ["Yes, but only if you finish your homework.", "No, unless you finish your homework.", "Yes, whether or not you finish your homework."], "answer": 0 },
+    { "es": "No, salvo que alguien me reemplace.", "options": ["Yes, as long as someone covers for me.", "No, unless someone covers for me.", "No, because someone covers for me."], "answer": 1 },
+    { "es": "Puedes llevarte el carro, siempre y cuando lo devuelvas con gasolina.", "options": ["You can't take the car, even with petrol.", "You can take the car even if you don't bring it back.", "You can take the car, as long as you bring it back with petrol."], "answer": 2 },
+    { "es": "No, a menos que me paguen más.", "options": ["No, unless they pay me more.", "Yes, they pay me more.", "No, because they pay me more."], "answer": 0 },
+    { "es": "Vale se queda, siempre y cuando cierre ella.", "options": ["Vale stays, but only if I lock up.", "Vale stays, as long as she locks up.", "Vale stays because she locked up."], "answer": 1 },
+    { "es": "Te ayudo, pero solo si me explicas qué pasó.", "options": ["I'll help you, but only if I explain what happened.", "I'll help you, but only if you explain to me what happened.", "I'll help you because you explained what happened."], "answer": 1 },
+    { "es": "Sí, vamos al cine, salvo que llueva.", "options": ["Yes, we're going to the movies, because it's raining.", "Yes, we're going to the movies, but only if it rains.", "Yes, we're going to the movies, unless it rains."], "answer": 2 },
+    { "es": "Puedes salir temprano, siempre y cuando termines el pedido.", "options": ["You left early because you finished the order.", "You can leave early, as long as you finish the order.", "You can leave early, no matter what."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Sí, pero solo si ___ la tarea.* (*terminas* or *termines*) Yes, but only if you finish your homework (to a friend).", "answer": "Sí, pero solo si terminas la tarea.", "accept": [], "why": "*Solo si* is like the ordinary *si*, so the verb stays normal." },
+    { "prompt": "Pick and type the whole sentence: *Puedes llevarte el carro, siempre y cuando lo ___ con gasolina.* (*devuelves* or *devuelvas*) You can take the car, as long as you bring it back with petrol in it.", "answer": "Puedes llevarte el carro, siempre y cuando lo devuelvas con gasolina.", "accept": [], "why": "*Siempre y cuando* sets a condition that still has to be met, so the verb is subjunctive." },
+    { "prompt": "Pick and type the whole sentence: *No, salvo que alguien me ___.* (*reemplaza* or *reemplace*) No, unless someone covers for me.", "answer": "No, salvo que alguien me reemplace.", "accept": ["No, a menos que alguien me reemplace."], "why": "*Salvo que* takes the subjunctive: *reemplace*." },
+    { "prompt": "Say: No, unless they pay me more.", "answer": "No, a menos que me paguen más.", "accept": ["No, salvo que me paguen más."], "why": "*A menos que* means \"unless\" and is followed by the subjunctive." },
+    { "prompt": "Say to a friend: You can leave early, as long as you finish the order.", "answer": "Puedes salir temprano, siempre y cuando termines el pedido.", "accept": ["Puedes salir temprano siempre y cuando termines el pedido."], "why": "*Siempre y cuando* is followed by *termines*, the subjunctive of *tú*." },
+    { "prompt": "Say: Yes, we're going to the movies, unless it rains.", "answer": "Sí, vamos al cine, salvo que llueva.", "accept": ["Sí, vamos al cine, a menos que llueva."], "why": "*Salvo que llueva* names the one thing that would cancel the plan." },
+    { "prompt": "Add a condition with *solo si* to *Sí, te ayudo.* (but only if you explain to me what happened, to a friend)", "answer": "Sí, te ayudo, pero solo si me explicas qué pasó.", "accept": ["Sí, te ayudo pero solo si me explicas qué pasó."], "why": "*Pero solo si* plus a normal verb turns a plain yes into a conditional yes." }
+  ],
+  "pitfalls": [
+    { "wrong": "Puedes llevarte el carro, siempre y cuando lo devuelves con gasolina.", "right": "Puedes llevarte el carro, siempre y cuando lo devuelvas con gasolina.", "why": "Almost. *Siempre y cuando* needs the subjunctive: *devuelvas*." },
+    { "wrong": "Sí, pero solo si termines la tarea.", "right": "Sí, pero solo si terminas la tarea.", "why": "*Solo si* works like the ordinary *si*, so there is no subjunctive." },
+    { "wrong": "No, salvo alguien me reemplace.", "right": "No, salvo que alguien me reemplace.", "why": "Keep the *que*: *salvo que* works as one unit." }
+  ],
+  "personal": "Think of something you would say yes to, but with conditions. Write it with *solo si* and again with *siempre y cuando*, then add a no with *salvo que*."
+}
