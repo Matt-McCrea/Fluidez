@@ -1,0 +1,139 @@
+{
+  "node": "g:como-si",
+  "hook": {
+    "line": "In Taganga someone will tell you that a man talks as if he owned the place, or that your friend is acting as if nothing happened. It is the everyday way to describe how something looks or feels without saying it is true.",
+    "es": "Habla como si fuera el dueño.",
+    "en": "He talks as if he were the owner."
+  },
+  "examples": [
+    { "es": "Habla como si fuera el dueño.", "en": "He talks as if he were the owner." },
+    { "es": "Vale siguió como si nada.", "en": "Vale carried on as if nothing had happened." },
+    { "es": "Me miras como si no me conocieras.", "en": "You look at me as if you didn't know me. (to a friend)" },
+    { "es": "Hernando maneja como si tuviera veinte años.", "en": "Hernando drives as if he were twenty years old." },
+    { "es": "¿Por qué me hablas como si estuviera enojada?", "en": "Why do you talk to me as if I were angry? (a woman speaking, to a friend)" },
+    { "es": "Hace tanto calor que parece que estuviéramos en el desierto.", "en": "It is so hot that it feels as if we were in the desert." },
+    { "es": "Comen como si no pudieran parar.", "en": "They eat as if they couldn't stop." }
+  ],
+  "rule": "*Como si* means *as if*. It describes something that is not true, or not known to be true, so the verb after it is the *ra* form you just learned: *fuera*, *tuviera*, *conocieras*, *pudieran*.\n\n*Habla como si fuera el dueño.* He is not the owner. He just sounds like it.\n\nEnglish does the same thing: *as if he were*. The difference is that English drifts into *as if he is* in casual speech. Spanish does not: after *como si* it is always the *ra* form, never *es* or *está*.\n\nThe ready-made phrase *como si nada* has no verb at all. It means *as if nothing had happened*: *Siguió como si nada.*",
+  "smallPrint": "Teachers call this a comparative conditional clause: *como si* + imperfect subjunctive, describing an unreal comparison.",
+  "readAndPick": [
+    {
+      "es": "Habla como si fuera el dueño.",
+      "options": ["He talks as if he were the owner.", "He talks because he is the owner.", "He talked to the owner."],
+      "answer": 0
+    },
+    {
+      "es": "Vale siguió como si nada.",
+      "options": ["Vale didn't continue.", "Vale carried on as if nothing had happened.", "Vale carried on because of nothing."],
+      "answer": 1
+    },
+    {
+      "es": "Me miras como si no me conocieras.",
+      "options": ["You look at me because you don't know me.", "I look at you as if I didn't know you.", "You look at me as if you didn't know me."],
+      "answer": 2
+    },
+    {
+      "es": "Hernando maneja como si tuviera veinte años.",
+      "options": ["Hernando drives as if he were twenty years old.", "Hernando drives because he is twenty.", "Hernando drove when he was twenty."],
+      "answer": 0
+    },
+    {
+      "es": "Hablas como si fuéramos amigos.",
+      "options": ["You talk as if we were friends. (to one person)", "You talk as if they were friends.", "We talk because we are friends."],
+      "answer": 0
+    },
+    {
+      "es": "Comen como si no pudieran parar.",
+      "options": ["They eat because they can't stop.", "I eat as if I couldn't stop.", "They eat as if they couldn't stop."],
+      "answer": 2
+    },
+    {
+      "es": "¿Por qué me hablas como si estuviera enojada?",
+      "options": ["Why do you talk to me as if I were angry? (a woman speaking)", "Why do you talk to me as if you were angry?", "Why do you talk to me because I am angry?"],
+      "answer": 0
+    },
+    {
+      "es": "Camina como si tuviéramos tiempo.",
+      "options": ["He walks as if they had time.", "He walks as if we had time.", "He walks as if I had time."],
+      "answer": 1
+    },
+    {
+      "es": "Mariana habla como si lo supiera todo.",
+      "options": ["Mariana talks because she knows everything.", "Mariana talked as if she knew everything.", "Mariana talks as if she knew everything."],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *es* or *fuera* and type the whole sentence: *Habla como si ___ el dueño.* (He talks as if he were the owner.)",
+      "answer": "Habla como si fuera el dueño.",
+      "accept": [],
+      "why": "He is not really the owner, so *como si* takes the *ra* form."
+    },
+    {
+      "prompt": "Pick *tiene* or *tuviera* and type the whole sentence: *Hernando maneja como si ___ veinte años.* (Hernando drives as if he were twenty years old.)",
+      "answer": "Hernando maneja como si tuviera veinte años.",
+      "accept": [],
+      "why": "He is not twenty, so after *como si* the verb is *tuviera*."
+    },
+    {
+      "prompt": "Type in Spanish: Vale carried on as if nothing had happened.",
+      "answer": "Vale siguió como si nada.",
+      "accept": ["Vale siguió como si nada hubiera pasado."],
+      "why": "*Como si nada* is a ready-made phrase and needs no verb."
+    },
+    {
+      "prompt": "Type in Spanish: He talks as if he knew everything.",
+      "answer": "Habla como si lo supiera todo.",
+      "accept": ["Habla como si supiera todo.", "Él habla como si lo supiera todo."],
+      "why": "*Supiera* is the *ra* form of *saber*, and *lo* stands for *everything* he is claiming to know."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You look at me as if you didn't know me.",
+      "answer": "Me miras como si no me conocieras.",
+      "accept": ["Tú me miras como si no me conocieras."],
+      "why": "*Conocieras* is the *ra* form for *tú*, and *no* goes before the object pronoun."
+    },
+    {
+      "prompt": "Type in Spanish: They eat as if they couldn't stop.",
+      "answer": "Comen como si no pudieran parar.",
+      "accept": ["Ellos comen como si no pudieran parar."],
+      "why": "Same *ra* form for *they*: *pudieran*."
+    },
+    {
+      "prompt": "Make it about *we*: *Habla como si fuera el dueño.* (He talks as if we were the owners.)",
+      "answer": "Habla como si fuéramos los dueños.",
+      "accept": ["Habla como si nosotros fuéramos los dueños."],
+      "why": "The unreal part is about *we* now, so *fuera* becomes *fuéramos*, with the accent."
+    },
+    {
+      "prompt": "Make it a question, to a friend: *Me hablas como si estuviera enojada.* (Why do you talk to me as if I were angry? A woman speaking.)",
+      "answer": "¿Por qué me hablas como si estuviera enojada?",
+      "accept": [],
+      "why": "The question word goes first, and the *ra* form *estuviera* stays after *como si*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Habla como si es el dueño.",
+      "right": "Habla como si fuera el dueño.",
+      "why": "Almost. English can say *as if he is*, but after *como si* Spanish always uses the *ra* form."
+    },
+    {
+      "wrong": "Habla como si sería el dueño.",
+      "right": "Habla como si fuera el dueño.",
+      "why": "The *would* form never follows *si*; this spot takes the *ra* form."
+    },
+    {
+      "wrong": "Habla como fuera el dueño.",
+      "right": "Habla como si fuera el dueño.",
+      "why": "Keep both words: *como si* together means *as if*, and *como* alone only means *like*."
+    },
+    {
+      "wrong": "Siguió como si nada pasó.",
+      "right": "Siguió como si nada.",
+      "why": "*Como si nada* is a complete phrase, so you do not add a verb in the plain past."
+    }
+  ],
+  "personal": "Say something true about someone you know: *Mi amigo habla como si…* or *Mi mamá me mira como si…*. What do they do as if they were someone else?"
+}
