@@ -1,0 +1,207 @@
+{
+  "id": "sc-u45-a",
+  "unit": "u45",
+  "title": "Sin contestar",
+  "spare": false,
+  "brief": "You're helping Mariana at a café table while she writes her story about Altamira and the suspended councillor. She's a friend, so use tú. Guess, report carefully what is only alleged, give a number, and admit what you don't know.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: El concejal lleva dos días sin contestar el teléfono. ¿Dónde estará?",
+      "npcEn": "Mariana: The councillor hasn't answered his phone for two days. Where can he be?",
+      "intent": "Guess where he is: he has probably left the country (use the future perfect: se habrá ido).",
+      "accept": [
+        "Se habrá ido del país.",
+        "Ya se habrá marchado de Bogotá.",
+        "Habrá salido de viaje, ¿no?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhabrá(n)?\\s+\\w*(ado|ido|to|cho)\\b",
+          "flags": "iu",
+          "label": "guess with the future perfect: se habrá ido, habrá salido"
+        }
+      ],
+      "focus": "g:future-perfect",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: Mi fuente dice que Altamira le pagó al concejal suspendido, pero no puedo escribirlo como un hecho. ¿Cómo lo digo?",
+      "npcEn": "Mariana: My source says Altamira paid the suspended councillor, but I can't write it as a fact. How do I put it?",
+      "intent": "Tell her to write that Altamira allegedly paid the councillor (use the conditional: habría pagado).",
+      "accept": [
+        "Escribe que Altamira habría pagado al concejal.",
+        "Según una fuente, Altamira habría pagado al concejal.",
+        "Altamira habría pagado dinero al concejal, según tu fuente."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhabría(n)?\\s+\\w*(ado|ido|to|cho)\\b",
+          "flags": "iu",
+          "label": "for what is only alleged, use the conditional: habría pagado"
+        }
+      ],
+      "focus": "g:conditional-rumour",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: Perfecto. Y en el periódico dicen que los arriendos del barrio subieron mucho. ¿Cuánto?",
+      "npcEn": "Mariana: Perfect. And the newspaper says that rents in the neighbourhood went up a lot. By how much?",
+      "intent": "Say that rents doubled in five years (use se duplicaron).",
+      "accept": [
+        "Se duplicaron en cinco años.",
+        "Los arriendos se duplicaron en solo cinco años.",
+        "En cinco años, los arriendos se duplicaron."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse duplicar(on|á)\\b",
+          "flags": "iu",
+          "label": "say they doubled: se duplicaron"
+        }
+      ],
+      "focus": "p:duplicarse",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: En las redes dicen que el concejal ya está en Miami. ¿Tú qué crees? ¿Será verdad?",
+      "npcEn": "Mariana: On social media they say the councillor is already in Miami. What do you think? Could it be true?",
+      "intent": "Say you don't know (use: Quién sabe, No tengo ni idea or Habría que ver si).",
+      "accept": [
+        "Quién sabe.",
+        "No tengo ni idea de dónde está.",
+        "Habría que ver si es verdad."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(quién sabe|no tengo ni idea|habría que ver si)\\b",
+          "flags": "iu",
+          "label": "admit what you don't know: quién sabe, no tengo ni idea"
+        }
+      ],
+      "focus": "c:quien-sabe",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Gracias por la ayuda. ¿Te invito a un tinto?",
+      "npcEn": "Mariana: Thanks for the help. Shall I buy you a coffee?",
+      "intent": "Accept and thank her.",
+      "accept": [
+        "Claro, gracias.",
+        "Con mucho gusto, gracias.",
+        "Sí, por favor. Muchas gracias."
+      ],
+      "require": [],
+      "focus": "c:quien-sabe",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:donde-esta",
+    "c:gracias-de-nada",
+    "c:lo-siento-pero-no-puedo",
+    "c:mucho-gusto",
+    "c:ni-idea",
+    "c:no-cierto",
+    "c:por-favor",
+    "c:puedo",
+    "c:quien-sabe",
+    "c:segun",
+    "c:tengo",
+    "g:conditional-perfect",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-perfect",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:hace-que-desde",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:arriendo",
+    "l:ayuda",
+    "l:año",
+    "l:barrio",
+    "l:claro",
+    "l:concejal",
+    "l:contestar",
+    "l:creer",
+    "l:cuánto",
+    "l:cómo",
+    "l:decir",
+    "l:dinero",
+    "l:duplicarse",
+    "l:día",
+    "l:dónde",
+    "l:escribir",
+    "l:estar",
+    "l:favor",
+    "l:fuente",
+    "l:gusto",
+    "l:hacer",
+    "l:idea",
+    "l:invitar",
+    "l:ir",
+    "l:llevar",
+    "l:marcharse",
+    "l:pagar",
+    "l:país",
+    "l:perfecto",
+    "l:periódico",
+    "l:poder",
+    "l:quién",
+    "l:qué",
+    "l:red",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:subir",
+    "l:suspender",
+    "l:teléfono",
+    "l:tener",
+    "l:tinto",
+    "l:ver",
+    "l:verdad",
+    "l:viaje",
+    "p:duplicarse",
+    "p:gracias-por",
+    "p:habria-que",
+    "p:habria-que-ver-si",
+    "p:llevar-sin-inf",
+    "p:llevar-tiempo-gerundio",
+    "p:me-te-nos-objects",
+    "p:news-quantities",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:sobre-todo-solo",
+    "p:te-invito-a",
+    "p:un-estudio-muestra-que"
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "id": "sc-u45-c",
+  "unit": "u45",
+  "title": "Una llamada de la emisora",
+  "spare": true,
+  "brief": "Camila, an editor at the radio station, calls you for background on the councillor story. She doesn't know you, so use usted. Say how well you follow the case, report what is only alleged, give an approximate number and predict what Altamira will say.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Camila: Buenas tardes, soy Camila, de la emisora. Mariana dice que usted conoce el caso del concejal. ¿Está al tanto de todo?",
+      "npcEn": "Camila: Good afternoon, this is Camila from the radio station. Mariana says you know the case of the councillor. Are you up to date on everything?",
+      "intent": "Say you are up to date on what the newspaper says (use: estoy al tanto de).",
+      "accept": [
+        "Sí, estoy al tanto de lo que dice el periódico.",
+        "Estoy al tanto de todo, sí. Leo todo lo que sale.",
+        "Más o menos. Estoy al tanto de lo básico."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bal tanto de\\b",
+          "flags": "iu",
+          "label": "say you are informed: estoy al tanto de…"
+        }
+      ],
+      "focus": "p:estar-al-tanto-de",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Camila: Entonces dígame, ¿es cierto que el concejal salió del país?",
+      "npcEn": "Camila: Then tell me, is it true that the councillor left the country?",
+      "intent": "Answer carefully: according to the paper, he reportedly left (use the conditional: habría salido).",
+      "accept": [
+        "Según el periódico, el concejal habría salido del país.",
+        "Al parecer, el concejal habría salido del país, pero nadie lo confirma.",
+        "El concejal habría salido del país, según una fuente."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhabría(n)?\\s+\\w*(ado|ido|to|cho)\\b",
+          "flags": "iu",
+          "label": "for what is only reported, use the conditional: habría salido"
+        }
+      ],
+      "focus": "g:conditional-rumour",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Camila: Hay una carta de protesta. ¿Cuánta gente la firmó?",
+      "npcEn": "Camila: There is a protest letter. How many people signed it?",
+      "intent": "Say about a thousand people (use an approximation: cerca de, unas, más o menos).",
+      "accept": [
+        "Cerca de mil personas la firmaron.",
+        "Más o menos mil personas, creo.",
+        "Unas mil personas, según los vecinos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(cerca de|alrededor de|en torno a|más o menos|unas?|casi)\\b",
+          "flags": "iu",
+          "label": "approximate the number: cerca de mil, unas mil"
+        }
+      ],
+      "focus": "p:aproximar-cifras",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Camila: Altamira lo niega todo. ¿Cree usted que dirá la verdad?",
+      "npcEn": "Camila: Altamira denies everything. Do you think it will tell the truth?",
+      "intent": "Say it most likely won't tell the whole truth (use: Lo más probable es que + subjunctive).",
+      "accept": [
+        "Lo más probable es que no diga toda la verdad.",
+        "Lo más probable es que digan algo parecido.",
+        "No tengo ni idea, pero lo más probable es que no."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo más probable es que\\b",
+          "flags": "iu",
+          "label": "use: lo más probable es que…"
+        }
+      ],
+      "focus": "p:lo-mas-probable-es-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Camila: Muchas gracias por su tiempo. Mañana le llamo para grabar.",
+      "npcEn": "Camila: Thank you very much for your time. Tomorrow I'll call you to record.",
+      "intent": "Thank her and say goodbye until tomorrow (she is a stranger, so use usted).",
+      "accept": [
+        "Gracias a usted. Hasta mañana.",
+        "Encantado. Hasta mañana, Camila.",
+        "Con mucho gusto. Hasta pronto."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tú",
+            "gracias a ti",
+            "contigo"
+          ],
+          "label": "use usted with Camila"
+        }
+      ],
+      "focus": "g:impersonal-register",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:chao-nos-vemos",
+    "c:con-mucho-gusto",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:la-verdad",
+    "c:mas-o-menos",
+    "c:mucho-gusto",
+    "c:ni-idea",
+    "c:segun",
+    "c:tengo",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional-perfect",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:hedging-distance",
+    "g:indirect-objects",
+    "g:lo-adjective",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:buena",
+    "l:básico",
+    "l:carta",
+    "l:caso",
+    "l:cerca",
+    "l:concejal",
+    "l:confirmar",
+    "l:conocer",
+    "l:creer",
+    "l:cuánto",
+    "l:decir",
+    "l:emisora",
+    "l:encantado",
+    "l:estar",
+    "l:firmar",
+    "l:fuente",
+    "l:gente",
+    "l:grabar",
+    "l:gusto",
+    "l:idea",
+    "l:leer",
+    "l:llamar",
+    "l:mañana",
+    "l:negar",
+    "l:parecer",
+    "l:país",
+    "l:periódico",
+    "l:persona",
+    "l:probable",
+    "l:pronto",
+    "l:protesta",
+    "l:salir",
+    "l:ser",
+    "l:tarde",
+    "l:tener",
+    "l:tiempo",
+    "l:vecino",
+    "l:verdad",
+    "p:aproximar-cifras",
+    "p:es-verdad-eso-de-que",
+    "p:estar-al-tanto-de",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:lo-mas-probable-es-que",
+    "p:me-te-nos-objects",
+    "p:news-quantities",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:ponerse-al-tanto",
+    "p:por-culpa-de",
+    "p:possessives-basic",
+    "p:presuntamente-al-parecer",
+    "p:saber-conocer",
+    "p:un-estudio-muestra-que",
+    "p:unos-approx"
+  ]
+}

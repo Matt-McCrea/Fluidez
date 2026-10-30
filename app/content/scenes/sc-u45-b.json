@@ -1,0 +1,219 @@
+{
+  "id": "sc-u45-b",
+  "unit": "u45",
+  "title": "El hotel de al lado",
+  "spare": false,
+  "brief": "Don Hernando shows you a newspaper article at the café. He is older than you, so use usted. Ask whether a claim is true, say what people are saying, say who told you, and set a condition for staying.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Joven, mire esto en el periódico. Dice que el hotel de Altamira estará listo antes de la decisión.",
+      "npcEn": "Hernando: Young man, look at this in the newspaper. It says Altamira's hotel will be ready before the decision.",
+      "intent": "Ask whether it is true that the hotel will be ready before the decision (use: ¿Es verdad eso de que…?).",
+      "accept": [
+        "¿Es verdad eso de que el hotel estará listo antes de la decisión?",
+        "Don Hernando, ¿es verdad eso de que terminarán el hotel antes de la decisión?",
+        "¿Es cierto eso de que el hotel estará listo tan pronto?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bes (verdad|cierto) eso de que\\b",
+          "flags": "iu",
+          "label": "check the claim: ¿es verdad eso de que…?"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "p:es-verdad-eso-de-que",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Eso dice el comunicado de la empresa. ¿Y qué se dice en el barrio?",
+      "npcEn": "Hernando: That is what the company's statement says. And what is being said in the neighbourhood?",
+      "intent": "Say that people say the hotel won't be ready on time (use the impersonal se: se dice que).",
+      "accept": [
+        "Se dice que el hotel no estará listo a tiempo.",
+        "Se cree que es un truco de Altamira.",
+        "En el barrio se dice que la obra va muy lenta."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse (dice|cree|cuenta|piensa|habla)\\b",
+          "flags": "iu",
+          "label": "use the impersonal se: se dice que, se cree que"
+        }
+      ],
+      "focus": "g:impersonal-register",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: ¿Y usted cómo lo sabe?",
+      "npcEn": "Hernando: And how do you know?",
+      "intent": "Say that someone told you the workers have no cement (use: Me contaron que).",
+      "accept": [
+        "Me contaron que los obreros llevan una semana sin cemento.",
+        "Me contaron que la obra va muy lenta.",
+        "Me contaron que casi no hay obreros en la obra."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme contaron que\\b",
+          "flags": "iu",
+          "label": "say who told you: me contaron que…"
+        }
+      ],
+      "focus": "p:me-contaron-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Entonces Altamira presume demasiado. ¿Y nosotros qué hacemos mientras tanto?",
+      "npcEn": "Hernando: So Altamira is boasting too much. And what do we do in the meantime?",
+      "intent": "Say you stay open as long as there is no decision (use: Mientras no + subjunctive).",
+      "accept": [
+        "Mientras no haya una decisión, nos quedamos aquí.",
+        "Mientras la ciudad no decida, seguimos abriendo el café.",
+        "Seguimos aquí mientras no haya una respuesta oficial."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "mientras",
+          "label": "after mientras no, use the subjunctive: mientras no haya"
+        }
+      ],
+      "focus": "x:mientras-ind-subj",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Eso me gusta oír. Le invito un tinto, joven.",
+      "npcEn": "Hernando: I like to hear that. I'll buy you a coffee, young man.",
+      "intent": "Thank him politely and say goodbye until tomorrow (he is older, so use usted).",
+      "accept": [
+        "Muchas gracias, Don Hernando. Hasta mañana.",
+        "Se lo agradezco mucho, Don Hernando.",
+        "Gracias, con gusto. Hasta mañana."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tú",
+            "gracias a ti",
+            "contigo"
+          ],
+          "label": "use usted with Don Hernando"
+        }
+      ],
+      "focus": "g:impersonal-register",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:me-gusta",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-basic",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:quantifiers",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:agradecer",
+    "l:antes",
+    "l:aquí",
+    "l:barrio",
+    "l:café",
+    "l:cemento",
+    "l:ciudad",
+    "l:comunicado",
+    "l:contar",
+    "l:creer",
+    "l:cómo",
+    "l:decidir",
+    "l:decir",
+    "l:decisión",
+    "l:empresa",
+    "l:estar",
+    "l:gustar",
+    "l:gusto",
+    "l:hacer",
+    "l:hotel",
+    "l:invitar",
+    "l:ir",
+    "l:joven",
+    "l:lento",
+    "l:listo",
+    "l:llevar",
+    "l:mañana",
+    "l:mirar",
+    "l:obra",
+    "l:obrero",
+    "l:oficial",
+    "l:oír",
+    "l:periódico",
+    "l:pronto",
+    "l:quedarse",
+    "l:qué",
+    "l:respuesta",
+    "l:saber",
+    "l:seguir",
+    "l:semana",
+    "l:ser",
+    "l:terminar",
+    "l:tiempo",
+    "l:tinto",
+    "l:truco",
+    "l:verdad",
+    "p:a-la-vez",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:es-verdad-eso-de-que",
+    "p:eso-de-que",
+    "p:llevar-tiempo-gerundio",
+    "p:me-contaron-que",
+    "p:me-te-nos-objects",
+    "p:mientras-subj",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:seguir-gerundio",
+    "p:senor-don-article",
+    "p:si-pero-que",
+    "p:te-lo-agradezco",
+    "p:tengo-entendido-que"
+  ]
+}
