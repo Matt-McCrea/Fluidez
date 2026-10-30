@@ -1,0 +1,173 @@
+{
+  "node": "p:enredarse",
+  "hook": {
+    "line": "Tomás keeps getting dates, orders and bills tangled up in the café. Spanish uses the word for knotted string for any time your head, your plans or your paperwork get muddled.",
+    "es": "Me enredé con tantas fechas.",
+    "en": "I got muddled with so many dates."
+  },
+  "examples": [
+    {
+      "es": "Me enredé con tantas fechas.",
+      "en": "I got muddled with so many dates."
+    },
+    {
+      "es": "¡Qué enredo!",
+      "en": "What a mess!"
+    },
+    {
+      "es": "Armaron un enredo con las reservas.",
+      "en": "They made a mess of the bookings."
+    },
+    {
+      "es": "Tomás se enredó con las cuentas.",
+      "en": "Tomás got muddled with the accounts."
+    },
+    {
+      "es": "¿Te enredaste con las fechas?",
+      "en": "Did you get muddled with the dates? (informal)"
+    },
+    {
+      "es": "Siempre me enredo con los números.",
+      "en": "I always get muddled with numbers."
+    }
+  ],
+  "rule": "*Enredarse* is to get tangled up, like a cord, and it works for getting muddled. It is reflexive, so *me, te, se, nos* come before the verb: *me enredé con tantas fechas*.\n\nAdd *con* (or *en*) and what muddled you.\n\nThe noun is *un enredo*, a mess or a mix-up: *¡qué enredo!*, *armaron un enredo*.\n\nEnglish just says \"I got muddled\". Spanish says \"I tangled myself\".\n\n*Un lío* is still fine everywhere.",
+  "smallPrint": "Teachers call this a reflexive verb used figuratively. In Spain people say *liarse*; *enredarse* is the Latin American choice.",
+  "readAndPick": [
+    {
+      "es": "Me enredé con tantas fechas.",
+      "options": [
+        "He got muddled with so many dates.",
+        "I got muddled with so many dates.",
+        "I get muddled with so many dates."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás se enredó con las cuentas.",
+      "options": [
+        "Tomás tangled up the accounts for me.",
+        "Tomás got muddled with the accounts."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te enredaste con las fechas?",
+      "options": [
+        "Did I get muddled with the dates?",
+        "Did he get muddled with the dates?",
+        "Did you get muddled with the dates?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Siempre me enredo con los números.",
+      "options": [
+        "I always got muddled with numbers.",
+        "I always get muddled with numbers.",
+        "You always get muddled with numbers."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Armaron un enredo con las reservas.",
+      "options": [
+        "They made a mess of the bookings.",
+        "I cancelled the bookings.",
+        "They made the bookings early."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hay un enredo con el pedido.",
+      "options": [
+        "There is a delay with the order.",
+        "There is a mix-up with the order.",
+        "There is a discount on the order."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos enredamos con el horario.",
+      "options": [
+        "I got muddled with the schedule.",
+        "They got muddled with the schedule.",
+        "We got muddled with the schedule."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¡Qué enredo con los tiquetes!",
+      "options": [
+        "What a relief with the tickets!",
+        "What a mess with the tickets!",
+        "What a bargain with the tickets!"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Tomás ___ con las cuentas.* (se enredó or enredó)",
+      "answer": "Tomás se enredó con las cuentas.",
+      "accept": [],
+      "why": "Getting muddled yourself needs *se*, because the verb is reflexive."
+    },
+    {
+      "prompt": "Type in Spanish: I got muddled with so many dates.",
+      "answer": "Me enredé con tantas fechas.",
+      "accept": [],
+      "why": "*Me* goes before *enredé* because it is about yourself."
+    },
+    {
+      "prompt": "Type in Spanish: What a mess!",
+      "answer": "¡Qué enredo!",
+      "accept": [],
+      "why": "*Enredo* is the noun for a mess or a mix-up."
+    },
+    {
+      "prompt": "Type in Spanish: They made a mess of the bookings.",
+      "answer": "Armaron un enredo con las reservas.",
+      "accept": [],
+      "why": "*Armar un enredo* is to make a mess, and *con* says of what."
+    },
+    {
+      "prompt": "Ask a friend: Did you get muddled with the dates?",
+      "answer": "¿Te enredaste con las fechas?",
+      "accept": [
+        "¿Tú te enredaste con las fechas?"
+      ],
+      "why": "With *tú* the reflexive is *te*."
+    },
+    {
+      "prompt": "Make it about *we*: *Me enredé con el horario.* Say: We got muddled with the schedule.",
+      "answer": "Nos enredamos con el horario.",
+      "accept": [],
+      "why": "*Nos* goes with *we*, and the verb ends in *-amos*."
+    },
+    {
+      "prompt": "Make it negative: *Me enredé con las fechas.* Say: I did not get muddled with the dates.",
+      "answer": "No me enredé con las fechas.",
+      "accept": [],
+      "why": "*No* goes before the little word *me*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Enredé con las fechas.",
+      "right": "Me enredé con las fechas.",
+      "why": "Almost. Getting muddled yourself needs *me*."
+    },
+    {
+      "wrong": "Me enredé de las fechas.",
+      "right": "Me enredé con las fechas.",
+      "why": "Almost. What muddled you follows *con*."
+    },
+    {
+      "wrong": "Hay un enredado con el pedido.",
+      "right": "Hay un enredo con el pedido.",
+      "why": "Almost. The noun for a mess is *enredo*."
+    }
+  ],
+  "personal": "Tell us when you last got muddled, with dates, numbers or directions, using *me enredé con…*."
+}

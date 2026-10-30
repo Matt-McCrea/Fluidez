@@ -1,0 +1,176 @@
+{
+  "node": "p:tener-buena-mano",
+  "hook": {
+    "line": "Rosa could keep any plant in the café alive, and her coffee tasted better than anyone's. Colombians say that kind of natural talent is in the hand, the ear or the eye.",
+    "es": "Rosa tenía buena mano para el café.",
+    "en": "Rosa had a knack for coffee."
+  },
+  "examples": [
+    {
+      "es": "Tiene buena mano para las plantas.",
+      "en": "She has a way with plants."
+    },
+    {
+      "es": "Tienes buen oído para los idiomas.",
+      "en": "You have a good ear for languages. (informal)"
+    },
+    {
+      "es": "Eres la persona indicada para el cargo.",
+      "en": "You are the right person for the job. (informal)"
+    },
+    {
+      "es": "Rosa tenía buena mano para el café.",
+      "en": "Rosa had a knack for coffee."
+    },
+    {
+      "es": "Tomás tiene mala mano para las plantas.",
+      "en": "Tomás is no good with plants."
+    },
+    {
+      "es": "Mi tía tiene muy buen ojo para la ropa.",
+      "en": "My aunt has a very good eye for clothes."
+    }
+  ],
+  "rule": "Talent is something you *have*. Say *tener buena mano para* for a knack: *tiene buena mano para las plantas*. Use *mala mano* for the opposite.\n\nThe same frame works with *buen oído* (an ear), *buen ojo* (an eye) and *buen olfato* (a nose for things).\n\nWatch the endings: *mano* is feminine, so *buena*; *oído* and *ojo* are masculine, so *buen*.\n\nTo say who is right for a job, use *ser la persona indicada para*.",
+  "smallPrint": "Teachers call these idiomatic expressions of aptitude. *Buen* is *bueno* shortened before a masculine noun.",
+  "readAndPick": [
+    {
+      "es": "Tiene buena mano para las plantas.",
+      "options": [
+        "She is not good with plants.",
+        "She has a way with plants.",
+        "She has an injured hand."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás tiene mala mano para las plantas.",
+      "options": [
+        "Tomás has a way with plants.",
+        "Tomás is no good with plants."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tienes buen oído para los idiomas.",
+      "options": [
+        "You have a good eye for languages.",
+        "You have a good ear for languages.",
+        "You have a good memory for languages."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi tía tiene muy buen ojo para la ropa.",
+      "options": [
+        "My aunt has a very good ear for clothes.",
+        "My aunt has a very good eye for clothes.",
+        "My aunt has very bad eyesight."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Rosa tenía buena mano para el café.",
+      "options": [
+        "Rosa has a knack for coffee.",
+        "Rosa had a knack for coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Eres la persona indicada para el cargo.",
+      "options": [
+        "I am the right person for the job.",
+        "You are the wrong person for the job.",
+        "You are the right person for the job."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tengo mala mano para las plantas.",
+      "options": [
+        "I am no good with plants.",
+        "I have a way with plants.",
+        "You are no good with plants."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Don Hernando es la persona adecuada para la ruta.",
+      "options": [
+        "Don Hernando is the wrong person for the route.",
+        "Don Hernando is the right person for the route."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Rosa tenía ___ mano para el café.* (buena or buen)",
+      "answer": "Rosa tenía buena mano para el café.",
+      "accept": [],
+      "why": "*Mano* is feminine, so it takes *buena*."
+    },
+    {
+      "prompt": "Type in Spanish: She has a way with plants.",
+      "answer": "Tiene buena mano para las plantas.",
+      "accept": [
+        "Ella tiene buena mano para las plantas."
+      ],
+      "why": "Talent is something you have, so use *tener*."
+    },
+    {
+      "prompt": "Type in Spanish: You (a friend) have a good ear for languages.",
+      "answer": "Tienes buen oído para los idiomas.",
+      "accept": [
+        "Tú tienes buen oído para los idiomas."
+      ],
+      "why": "*Oído* is masculine, so the shortened *buen*."
+    },
+    {
+      "prompt": "Type in Spanish: My aunt has a very good eye for clothes.",
+      "answer": "Mi tía tiene muy buen ojo para la ropa.",
+      "accept": [],
+      "why": "*Muy* goes before *buen*."
+    },
+    {
+      "prompt": "Say it about yourself: *Tomás tiene mala mano para las plantas.* Say: I am no good with plants.",
+      "answer": "Tengo mala mano para las plantas.",
+      "accept": [],
+      "why": "*Tengo* is the *yo* form of *tener*."
+    },
+    {
+      "prompt": "Put it in the past: *Rosa tiene buena mano para el café.* Say: Rosa had a knack for coffee.",
+      "answer": "Rosa tenía buena mano para el café.",
+      "accept": [],
+      "why": "*Tenía* puts the knack in the past."
+    },
+    {
+      "prompt": "Type in Spanish: You (a friend) are the right person for this job.",
+      "answer": "Eres la persona ideal para este trabajo.",
+      "accept": [
+        "Eres la persona indicada para este trabajo.",
+        "Tú eres la persona ideal para este trabajo."
+      ],
+      "why": "*Ser la persona indicada* or *ideal* says someone is right for a job."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tiene buen mano para las plantas.",
+      "right": "Tiene buena mano para las plantas.",
+      "why": "Almost. *Mano* is feminine, so it needs *buena*."
+    },
+    {
+      "wrong": "Es buena mano para las plantas.",
+      "right": "Tiene buena mano para las plantas.",
+      "why": "Almost. A knack is something you have, so Spanish uses *tener*, not *ser*."
+    },
+    {
+      "wrong": "Tiene buena mano a las plantas.",
+      "right": "Tiene buena mano para las plantas.",
+      "why": "Almost. The skill follows *para*."
+    }
+  ],
+  "personal": "Tell us what you have a knack for, or what you are hopeless at, with *tengo buena mano para…*, *buen oído para…* or *mala mano para…*."
+}

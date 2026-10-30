@@ -1,0 +1,175 @@
+{
+  "node": "p:estar-regalado",
+  "hook": {
+    "line": "Mariana asks how Tomás can afford to serve lunch for so little. In Bogotá, when something costs next to nothing, you say it is given away.",
+    "es": "El tinto está regalado aquí.",
+    "en": "Coffee is dirt cheap here."
+  },
+  "examples": [
+    {
+      "es": "Ese apartamento está regalado para la zona.",
+      "en": "That flat is a steal for the area."
+    },
+    {
+      "es": "Los mangos están a precio de huevo.",
+      "en": "Mangoes are dirt cheap."
+    },
+    {
+      "es": "Aquí el almuerzo está regalado.",
+      "en": "Lunch is dirt cheap here."
+    },
+    {
+      "es": "¿Está regalado el apartamento?",
+      "en": "Is the apartment a steal?"
+    },
+    {
+      "es": "Los tiquetes no están regalados, están carísimos.",
+      "en": "The tickets are no bargain, they are really expensive."
+    },
+    {
+      "es": "Esas sillas estaban regaladas.",
+      "en": "Those chairs were a steal."
+    }
+  ],
+  "rule": "To say something is very cheap, say it is *regalado*, as if the shop were giving it away. It uses *estar*, because it is the price right now, and it agrees with the thing: *regalado, regalada, regalados, regaladas*.\n\nColombians also say *a precio de huevo*, with *estar* and no agreement: *los mangos están a precio de huevo*.\n\nEnglish says \"dirt cheap\" or \"a steal\". Spanish says \"given away\".",
+  "smallPrint": "Teachers call this a figurative use of the past participle after *estar*. Spanish speakers in Spain would say *está tirado*; *regalado* is understood everywhere in Latin America.",
+  "readAndPick": [
+    {
+      "es": "Ese apartamento está regalado para la zona.",
+      "options": [
+        "That flat is far too expensive for the area.",
+        "That flat is a steal for the area.",
+        "That flat was a gift from a neighbour."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los mangos están a precio de huevo.",
+      "options": [
+        "Mangoes cost a fortune.",
+        "Mangoes are rotten.",
+        "Mangoes are dirt cheap."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los tiquetes no están regalados, están carísimos.",
+      "options": [
+        "The tickets are no bargain, they are really expensive.",
+        "The tickets are dirt cheap.",
+        "The tickets are free."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esas sillas estaban regaladas.",
+      "options": [
+        "Those chairs are a steal.",
+        "Those chairs were a steal.",
+        "Those chairs were expensive."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Está regalado el apartamento?",
+      "options": [
+        "The apartment is a steal.",
+        "Is the apartment a steal?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Aquí el almuerzo está regalado.",
+      "options": [
+        "Lunch is very expensive here.",
+        "Lunch is dirt cheap here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estos jugos están a precio de huevo.",
+      "options": [
+        "These juices are dirt cheap.",
+        "This juice is dirt cheap.",
+        "These juices are dirt cheap, but I won't buy them."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El apartamento no está regalado.",
+      "options": [
+        "The apartment is a steal.",
+        "The apartment is not a steal."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Los mangos están ___.* (regalados or regalado)",
+      "answer": "Los mangos están regalados.",
+      "accept": [],
+      "why": "*Regalados* agrees with *los mangos*: plural, because the mangoes are plural."
+    },
+    {
+      "prompt": "Type in Spanish: That flat is a steal for the area.",
+      "answer": "Ese apartamento está regalado para la zona.",
+      "accept": [],
+      "why": "*Estar regalado* says the price is a giveaway."
+    },
+    {
+      "prompt": "Type in Spanish: Mangoes are dirt cheap.",
+      "answer": "Los mangos están a precio de huevo.",
+      "accept": [
+        "Los mangos están regalados."
+      ],
+      "why": "*A precio de huevo* is the Colombian way, and *regalados* works too."
+    },
+    {
+      "prompt": "Type in Spanish: Lunch is dirt cheap here.",
+      "answer": "Aquí el almuerzo está regalado.",
+      "accept": [
+        "El almuerzo está regalado aquí."
+      ],
+      "why": "*Regalado* agrees with *el almuerzo*, so it stays masculine and singular."
+    },
+    {
+      "prompt": "Make it negative: *El apartamento está regalado.* Say: The apartment is not a steal.",
+      "answer": "El apartamento no está regalado.",
+      "accept": [],
+      "why": "*No* goes right before *está*."
+    },
+    {
+      "prompt": "Put it in the past: *Esas sillas están regaladas.* Say: Those chairs were a steal.",
+      "answer": "Esas sillas estaban regaladas.",
+      "accept": [],
+      "why": "*Estaban* puts the price in the past."
+    },
+    {
+      "prompt": "Ask a question: Is the apartment a steal?",
+      "answer": "¿Está regalado el apartamento?",
+      "accept": [
+        "¿El apartamento está regalado?"
+      ],
+      "why": "A question keeps the same words, with the verb first or the usual order."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El apartamento es regalado.",
+      "right": "El apartamento está regalado.",
+      "why": "Almost. The price is a state of things right now, so Spanish uses *estar*."
+    },
+    {
+      "wrong": "Los mangos están regalado.",
+      "right": "Los mangos están regalados.",
+      "why": "Almost. *Regalados* has to agree with the plural *mangos*."
+    },
+    {
+      "wrong": "Los mangos están a precio del huevo.",
+      "right": "Los mangos están a precio de huevo.",
+      "why": "Almost. The set phrase is *a precio de huevo*, with no *el*."
+    }
+  ],
+  "personal": "Tell us about something cheap near you, like coffee, lunch or a bus ticket, using *está regalado* or *a precio de huevo*."
+}

@@ -1,0 +1,174 @@
+{
+  "node": "p:ser-un-duro",
+  "hook": {
+    "line": "Don Hernando says Vale can outbake anyone in La Candelaria. In Colombia a person who is excellent at something is a *duro*, a hard one.",
+    "es": "Don Hernando es un duro para manejar.",
+    "en": "Don Hernando is a real pro at driving."
+  },
+  "examples": [
+    {
+      "es": "Es una dura para las matemáticas.",
+      "en": "She is a whiz at math."
+    },
+    {
+      "es": "Mi hermano es un duro para el fútbol.",
+      "en": "My brother is brilliant at soccer."
+    },
+    {
+      "es": "Don Hernando es un duro para manejar.",
+      "en": "Don Hernando is a real pro at driving."
+    },
+    {
+      "es": "Mariana es una dura para escribir.",
+      "en": "Mariana is a whiz at writing."
+    },
+    {
+      "es": "Tomás no es un duro para las cuentas.",
+      "en": "Tomás is no whiz at sums."
+    },
+    {
+      "es": "Eres un duro para los idiomas.",
+      "en": "You are a whiz at languages. (to a man, informal)"
+    }
+  ],
+  "rule": "To say someone is excellent at something, use *ser un duro* for a man or *ser una dura* for a woman, then *para* and the skill: *es una dura para las matemáticas*.\n\nThe noun matches the person, not the skill. A group is *unos duros*.\n\nWatch out: *es duro* with no *un* just means \"it is hard\". English says \"a whiz\" or \"a pro\"; Spanish says \"a hard one\".\n\nTo praise a friend, *un crack* also works everywhere.",
+  "smallPrint": "Teachers call *duro* here a noun made from an adjective. It is Colombian; in Spain you would hear *un hacha* or *un fiera*.",
+  "readAndPick": [
+    {
+      "es": "Es una dura para las matemáticas.",
+      "options": [
+        "He is a whiz at math.",
+        "She is a whiz at math.",
+        "She is hard on math."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi hermano es un duro para el fútbol.",
+      "options": [
+        "My brother is hard to play soccer with.",
+        "My brother is tough on soccer fans.",
+        "My brother is brilliant at soccer."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás no es un duro para las cuentas.",
+      "options": [
+        "Tomás is no whiz at sums.",
+        "Tomás is a whiz at sums.",
+        "Tomás is hard on sums."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ustedes son unos duros para el fútbol.",
+      "options": [
+        "You (one person) are brilliant at soccer.",
+        "You all are brilliant at soccer."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Eres un duro para los idiomas.",
+      "options": [
+        "You are a whiz at languages. (to a woman)",
+        "You are a whiz at languages. (to a man)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana es una dura para escribir.",
+      "options": [
+        "Mariana is tired of writing.",
+        "Mariana is hard to write to.",
+        "Mariana is a whiz at writing."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Eres un duro para las matemáticas?",
+      "options": [
+        "You are a whiz at math.",
+        "Are you a whiz at math?",
+        "Is he a whiz at math?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Don Hernando es un duro para manejar.",
+      "options": [
+        "Don Hernando is learning to drive.",
+        "Don Hernando is a real pro at driving.",
+        "Don Hernando is tough to drive with."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Mi hermana es ___ para el fútbol.* (un duro or una dura)",
+      "answer": "Mi hermana es una dura para el fútbol.",
+      "accept": [],
+      "why": "*Hermana* is a woman, so the noun is *una dura*."
+    },
+    {
+      "prompt": "Type in Spanish: She is a whiz at math.",
+      "answer": "Es una dura para las matemáticas.",
+      "accept": [
+        "Ella es una dura para las matemáticas."
+      ],
+      "why": "A woman is *una dura*, then *para* and the skill."
+    },
+    {
+      "prompt": "Type in Spanish: My brother is brilliant at soccer.",
+      "answer": "Mi hermano es un duro para el fútbol.",
+      "accept": [],
+      "why": "A man is *un duro*."
+    },
+    {
+      "prompt": "Type in Spanish: Don Hernando is a real pro at driving.",
+      "answer": "Don Hernando es un duro para manejar.",
+      "accept": [],
+      "why": "After *para* you can use a verb as well as a noun."
+    },
+    {
+      "prompt": "Make it negative: *Tomás es un duro para las cuentas.* Say: Tomás is no whiz at sums.",
+      "answer": "Tomás no es un duro para las cuentas.",
+      "accept": [],
+      "why": "*No* goes right before *es*."
+    },
+    {
+      "prompt": "Say it to a group: *Eres un duro para los idiomas.* Say: You all are whizzes at languages.",
+      "answer": "Ustedes son unos duros para los idiomas.",
+      "accept": [],
+      "why": "For *ustedes* use *son* and the plural *unos duros*."
+    },
+    {
+      "prompt": "Ask a friend (a man): Are you a whiz at math?",
+      "answer": "¿Eres un duro para las matemáticas?",
+      "accept": [
+        "¿Tú eres un duro para las matemáticas?"
+      ],
+      "why": "To a man, *un duro*; the question keeps the same words."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es una duro para las matemáticas.",
+      "right": "Es una dura para las matemáticas.",
+      "why": "Almost. The noun has to match the person, so a woman is *una dura*."
+    },
+    {
+      "wrong": "Es duro para las matemáticas.",
+      "right": "Es una dura para las matemáticas.",
+      "why": "Almost. Without *un* or *una*, *es duro* means that something is hard, not that someone is good."
+    },
+    {
+      "wrong": "Es un duro de las matemáticas.",
+      "right": "Es un duro para las matemáticas.",
+      "why": "Almost. The skill follows *para*, not *de*."
+    }
+  ],
+  "personal": "Say who is a *duro* or a *dura* at something among people you know, with *es un duro para…* or *es una dura para…*."
+}

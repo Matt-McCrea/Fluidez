@@ -1,0 +1,171 @@
+{
+  "node": "p:serias-tan-amable",
+  "hook": {
+    "line": "A stranger in the café keeps playing music out loud, and Tomás wants to ask without sounding rude. Spanish has a ceremonious way to ask for something.",
+    "es": "¿Sería tan amable de bajar el volumen?",
+    "en": "Would you be so kind as to turn the volume down? (formal)"
+  },
+  "examples": [
+    {
+      "es": "¿Sería tan amable de bajar el volumen?",
+      "en": "Would you be so kind as to turn the volume down? (formal)"
+    },
+    {
+      "es": "¿Serías tan amable de ayudarme con esto?",
+      "en": "Would you be so kind as to help me with this? (informal)"
+    },
+    {
+      "es": "¿Tendría la bondad de esperar un momento?",
+      "en": "Would you kindly wait a moment? (formal)"
+    },
+    {
+      "es": "¿Sería mucho pedir que cerraras la puerta?",
+      "en": "Would it be too much to ask you to close the door? (informal)"
+    },
+    {
+      "es": "¿Sería tan amable de repetir la dirección?",
+      "en": "Would you be so kind as to repeat the address? (formal)"
+    },
+    {
+      "es": "¿Sería mucho pedir que, por una vez, llegaras puntual?",
+      "en": "Would it be too much to ask you to be on time for once? (informal)"
+    }
+  ],
+  "rule": "For the most polite request, ask about kindness: *¿sería tan amable de…?* with a verb ending in *-r* (*de bajar*), or *¿tendría la bondad de…?*. With a friend it is *serías*, and it sounds ironic.\n\n*¿Sería mucho pedir que…?* is different: it often carries a reproach. After *que* the verb is in the past subjunctive: *cerraras*, *llegaras*.\n\nEnglish says \"would you be so kind\". Spanish uses the same *would*, in the conditional.",
+  "smallPrint": "Teachers call these courtesy formulas. They use the conditional (*sería*, *tendría*), and *sería mucho pedir que* takes the imperfect subjunctive.",
+  "readAndPick": [
+    {
+      "es": "¿Sería tan amable de bajar el volumen?",
+      "options": [
+        "Would you (informal) be so kind as to turn the volume down?",
+        "Would you (formal) be so kind as to turn the volume down?",
+        "Would I be so kind as to turn the volume down?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Serías tan amable de ayudarme con esto?",
+      "options": [
+        "Would you (informal) be so kind as to help me with this?",
+        "Would you (formal) be so kind as to help me with this?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Tendría la bondad de esperar un momento?",
+      "options": [
+        "Did you kindly wait a moment?",
+        "Would you (formal) kindly wait a moment?",
+        "I will kindly wait a moment."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Sería mucho pedir que cerraras la puerta?",
+      "options": [
+        "Would it be too much to ask you to close the door?",
+        "Is the door closed?",
+        "Did you ask me to close the door?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Sería mucho pedir que, por una vez, llegaras puntual?",
+      "options": [
+        "Would it be too much to ask you to be late for once?",
+        "Would it be too much to ask you to be on time for once?",
+        "Would it be too much to ask you to be on time every time?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Tendría la bondad de firmar aquí?",
+      "options": [
+        "Will I sign here?",
+        "Did you kindly sign here?",
+        "Would you (formal) kindly sign here?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Sería mucho pedir que me ayudaras?",
+      "options": [
+        "Would it be too much to ask me to help you?",
+        "Would it be too much to ask you to help me?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Sería tan amable de moverse un poco?",
+      "options": [
+        "Would you (formal) be so kind as to move a little?",
+        "Would you (informal) be so kind as to move a little?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence, to a stranger: *¿___ tan amable de bajar el volumen?* (Sería or Serías)",
+      "answer": "¿Sería tan amable de bajar el volumen?",
+      "accept": [],
+      "why": "To a stranger you are formal, so *sería*."
+    },
+    {
+      "prompt": "Type in Spanish: Would you (to a friend) be so kind as to help me with this?",
+      "answer": "¿Serías tan amable de ayudarme con esto?",
+      "accept": [],
+      "why": "To a friend it is *serías*; after *de* the verb ends in *-r*."
+    },
+    {
+      "prompt": "Type in Spanish: Would you (formal) kindly wait a moment?",
+      "answer": "¿Tendría la bondad de esperar un momento?",
+      "accept": [],
+      "why": "*Tendría la bondad de* is the formal frame, then a verb ending in *-r*."
+    },
+    {
+      "prompt": "Type in Spanish: Would it be too much to ask you to close the door? (to a friend)",
+      "answer": "¿Sería mucho pedir que cerraras la puerta?",
+      "accept": [],
+      "why": "After *sería mucho pedir que* the verb is in the past subjunctive: *cerraras*."
+    },
+    {
+      "prompt": "Make it formal: *¿Serías tan amable de pasarme la sal?* Say: Would you (formal) be so kind as to pass me the salt?",
+      "answer": "¿Sería tan amable de pasarme la sal?",
+      "accept": [],
+      "why": "Drop the *-s*: *sería* is the formal version."
+    },
+    {
+      "prompt": "Turn the request into the ceremonious one: *Cierra la puerta.* Say: Would you (to a friend) be so kind as to close the door?",
+      "answer": "¿Serías tan amable de cerrar la puerta?",
+      "accept": [],
+      "why": "Put the verb after *de* in its *-r* form."
+    },
+    {
+      "prompt": "Type in Spanish: Would it be too much to ask you to be on time for once? (to a friend)",
+      "answer": "¿Sería mucho pedir que, por una vez, llegaras puntual?",
+      "accept": [
+        "¿Sería mucho pedir que por una vez llegaras puntual?"
+      ],
+      "why": "*Llegaras* is the past subjunctive after *sería mucho pedir que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Sería tan amable para bajar el volumen?",
+      "right": "¿Sería tan amable de bajar el volumen?",
+      "why": "Almost. The frame is *tan amable de*, with *de*, not *para*."
+    },
+    {
+      "wrong": "¿Sería mucho pedir que cierras la puerta?",
+      "right": "¿Sería mucho pedir que cerraras la puerta?",
+      "why": "Almost. After *sería mucho pedir que* use the past subjunctive, *cerraras*."
+    },
+    {
+      "wrong": "¿Tendría la bondad esperar un momento?",
+      "right": "¿Tendría la bondad de esperar un momento?",
+      "why": "Almost. *La bondad* needs *de* before the verb."
+    }
+  ],
+  "personal": "Think of a small thing you could ask of a stranger, like closing a window, and ask for it in the most polite way you can with *¿sería tan amable de…?*."
+}

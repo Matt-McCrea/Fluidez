@@ -1,0 +1,174 @@
+{
+  "node": "p:orden-sin-imperativo",
+  "hook": {
+    "line": "Don Hernando has had enough of Tomás wandering off in the middle of a crisis. He does not say please. He just says what is going to happen.",
+    "es": "Tú te quedas aquí.",
+    "en": "You stay here."
+  },
+  "examples": [
+    {
+      "es": "Tú te quedas aquí.",
+      "en": "You stay here."
+    },
+    {
+      "es": "Harás lo que te diga.",
+      "en": "You will do as I say."
+    },
+    {
+      "es": "Tú te sientas ahí.",
+      "en": "You sit over there."
+    },
+    {
+      "es": "Tú lo haces ya.",
+      "en": "You do it now."
+    },
+    {
+      "es": "Ustedes harán lo que les diga.",
+      "en": "You all will do as I say."
+    },
+    {
+      "es": "Tú me esperas aquí.",
+      "en": "You wait for me here."
+    }
+  ],
+  "rule": "Spanish can give an order as a plain statement. Say *tú* and the present: *tú te quedas aquí*. Or use the future of *tú*: *harás lo que te diga*.\n\nThere is no room to say no, so it is blunter than *quédate aquí*. English does the same with \"you stay here\".\n\nUse it with children, with people who work for you, or as a joke among friends. With a stranger, it is rude.\n\nIt sits at the bottom of the courtesy ladder.",
+  "smallPrint": "Teachers call this the present or future used as a command, instead of the imperative.",
+  "readAndPick": [
+    {
+      "es": "Tú te quedas aquí.",
+      "options": [
+        "You stay here. (a flat order)",
+        "You are staying here, I hear.",
+        "Would you mind staying here?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Harás lo que te diga.",
+      "options": [
+        "I will do what you tell me.",
+        "You did what I told you.",
+        "You will do as I say."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ustedes harán lo que les diga.",
+      "options": [
+        "You (one person) will do as I say.",
+        "You all will do as I say.",
+        "They will do as I say."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tú lo haces ya.",
+      "options": [
+        "I do it now.",
+        "You do it now.",
+        "He does it now."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tú me esperas aquí.",
+      "options": [
+        "I wait for you here.",
+        "He waits for me here.",
+        "You wait for me here."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tú te vas ahora.",
+      "options": [
+        "I go now.",
+        "You go now.",
+        "You went."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Harás lo que te diga, ¿entendido?",
+      "options": [
+        "You will do what I tell you, understood?",
+        "Will you do what I tell you, if you like?",
+        "I will do what you tell me, understood?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tú llamas a Vale ahora mismo.",
+      "options": [
+        "I call Vale right now.",
+        "You called Vale just now.",
+        "You call Vale right now."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Tú ___ aquí.* (te quedas or quédate)",
+      "answer": "Tú te quedas aquí.",
+      "accept": [],
+      "why": "This order is a plain statement with *tú* and the present, not an imperative."
+    },
+    {
+      "prompt": "Type in Spanish, as a firm order to a friend: You sit over there.",
+      "answer": "Tú te sientas ahí.",
+      "accept": [],
+      "why": "*Tú* plus the present *te sientas* gives the order."
+    },
+    {
+      "prompt": "Type in Spanish, as a firm order: You will do as I say.",
+      "answer": "Harás lo que te diga.",
+      "accept": [],
+      "why": "The future of *tú*, with *diga* after *lo que*."
+    },
+    {
+      "prompt": "Type in Spanish, as a firm order to a child: You wait for me here.",
+      "answer": "Tú me esperas aquí.",
+      "accept": [],
+      "why": "*Me* comes before *esperas*, and the present *esperas* is the order."
+    },
+    {
+      "prompt": "Turn the command into a flat order: *Quédate quieto.* Say: You stay still.",
+      "answer": "Tú te quedas quieto.",
+      "accept": [
+        "Te quedas quieto."
+      ],
+      "why": "Take *tú* and the present, *te quedas*, instead of the imperative."
+    },
+    {
+      "prompt": "Say it to a group: *Harás lo que te diga.* Say: You all will do as I say.",
+      "answer": "Ustedes harán lo que les diga.",
+      "accept": [],
+      "why": "For *ustedes* use *harán* and *les*."
+    },
+    {
+      "prompt": "Type in Spanish, as a firm order to a girl: You stay calm.",
+      "answer": "Tú te quedas tranquila.",
+      "accept": [],
+      "why": "A girl is *tranquila*, and the order is *tú te quedas*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tú quedas aquí.",
+      "right": "Tú te quedas aquí.",
+      "why": "Almost. *Quedarse* in the sense of staying needs *te*."
+    },
+    {
+      "wrong": "Harás lo que te dices.",
+      "right": "Harás lo que te diga.",
+      "why": "Almost. After *lo que* the verb is *diga*, not *dices*."
+    },
+    {
+      "wrong": "Hará lo que te diga.",
+      "right": "Harás lo que te diga.",
+      "why": "Almost. To say \"you\" the verb ends in *-ás*, not *-á*."
+    }
+  ],
+  "personal": "Think of a family joke, like telling a friend to sit down or go away, and say it as an order with *tú te…* or *harás…*."
+}
