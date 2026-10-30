@@ -1,0 +1,180 @@
+{
+  "node": "p:agarrar-velocidad",
+  "hook": {
+    "line": "Don Hernando drove a taxi for forty years, and he has strong views on how a bus should take a hill. Spanish has one phrase for speeding up and another for going flat out.",
+    "es": "El bus agarró velocidad en la bajada.",
+    "en": "The bus picked up speed on the way down."
+  },
+  "examples": [
+    {
+      "es": "El bus agarró velocidad en la bajada.",
+      "en": "The bus picked up speed on the way down."
+    },
+    {
+      "es": "La moto iba a toda velocidad.",
+      "en": "The motorbike was going at full speed."
+    },
+    {
+      "es": "Salieron a toda prisa.",
+      "en": "They left in a great hurry."
+    },
+    {
+      "es": "Después del martes, la obra agarró velocidad.",
+      "en": "After Tuesday, the work picked up speed."
+    },
+    {
+      "es": "El carro perdió velocidad en la subida.",
+      "en": "The car lost speed on the climb."
+    },
+    {
+      "es": "Vale trabajó a toda máquina toda la noche.",
+      "en": "Vale worked flat out all night."
+    }
+  ],
+  "rule": "*Agarrar velocidad* is the process: something goes from slow to fast. It also works for plans and projects (*la obra agarró velocidad*). Its opposite is *perder velocidad*.\n\n*A toda velocidad*, *a toda prisa* and *a toda máquina* describe the state: already going flat out. They come after the verb and say how.\n\nIn Latin America people say *agarrar* (also *tomar*) where Spain says *coger*. Avoid *coger* here.\n\nThe little words are fixed: *a toda*, never *en toda*.",
+  "smallPrint": "Teachers call *a toda velocidad* an adverbial phrase of manner. *Agarrar velocidad* is a verb plus noun combination.",
+  "readAndPick": [
+    {
+      "es": "El bus agarró velocidad en la bajada.",
+      "options": [
+        "The bus lost speed downhill.",
+        "The bus picked up speed downhill.",
+        "The bus was going at full speed."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La moto iba a toda velocidad.",
+      "options": [
+        "The motorbike picked up speed.",
+        "The motorbike slowed down.",
+        "The motorbike was going flat out."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Salieron a toda prisa.",
+      "options": [
+        "They left in a great hurry.",
+        "They left slowly.",
+        "They left at the end."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Después del martes, la obra agarró velocidad.",
+      "options": [
+        "The work stopped after Tuesday.",
+        "The work was fast on Tuesday.",
+        "The work sped up after Tuesday."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El carro perdió velocidad en la subida.",
+      "options": [
+        "The car lost speed on the climb.",
+        "The car picked up speed on the climb.",
+        "The car went flat out on the climb."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando manejaba a toda velocidad.",
+      "options": [
+        "Hernando picked up speed.",
+        "Hernando drove flat out.",
+        "Hernando slowed down."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale trabajó a toda máquina toda la noche.",
+      "options": [
+        "Vale slowly started work all night.",
+        "Vale stopped work in the night.",
+        "Vale worked flat out all night."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El tren agarra velocidad poco a poco.",
+      "options": [
+        "The train gradually picks up speed.",
+        "The train always goes at full speed.",
+        "The train gradually loses speed."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose and type: \"The motorbike was going at full speed.\" La moto iba ___ velocidad. (a toda / en toda)",
+      "answer": "La moto iba a toda velocidad.",
+      "accept": [],
+      "why": "The fixed phrase is *a toda velocidad*."
+    },
+    {
+      "prompt": "Choose and type: \"The bus picked up speed on the way down.\" El bus ___ en la bajada. (agarró velocidad / iba a toda velocidad)",
+      "answer": "El bus agarró velocidad en la bajada.",
+      "accept": [],
+      "why": "Picking up speed is a change, so use *agarró velocidad*."
+    },
+    {
+      "prompt": "Type in Spanish: \"They left in a great hurry.\"",
+      "answer": "Salieron a toda prisa.",
+      "accept": [
+        "Se fueron a toda prisa."
+      ],
+      "why": "*A toda prisa* tells how they left."
+    },
+    {
+      "prompt": "Type in Spanish: \"The car picked up speed on the highway.\"",
+      "answer": "El carro agarró velocidad en la autopista.",
+      "accept": [
+        "El carro tomó velocidad en la autopista."
+      ],
+      "why": "A change from slow to fast is *agarrar velocidad*."
+    },
+    {
+      "prompt": "Change it: *El bus agarró velocidad en la bajada.* Now the bus loses speed on the climb (*la subida*).",
+      "answer": "El bus perdió velocidad en la subida.",
+      "accept": [],
+      "why": "The opposite of *agarrar velocidad* is *perder velocidad*."
+    },
+    {
+      "prompt": "Type in Spanish: \"Hernando never used to drive at full speed.\"",
+      "answer": "Hernando nunca manejaba a toda velocidad.",
+      "accept": [
+        "Hernando nunca manejó a toda velocidad."
+      ],
+      "why": "*A toda velocidad* comes after the verb and says how he drove."
+    },
+    {
+      "prompt": "Type in Spanish: \"Mariana left in a great hurry.\"",
+      "answer": "Mariana salió a toda prisa.",
+      "accept": [
+        "Mariana se fue a toda prisa."
+      ],
+      "why": "Same phrase, one person: *a toda prisa* after the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El bus cogió velocidad en la bajada.",
+      "right": "El bus agarró velocidad en la bajada.",
+      "why": "Almost. In Latin America *coger* is best avoided, so say *agarró* (or *tomó*)."
+    },
+    {
+      "wrong": "La moto iba en toda velocidad.",
+      "right": "La moto iba a toda velocidad.",
+      "why": "The fixed phrase starts with *a*, not *en*."
+    },
+    {
+      "wrong": "El bus agarró a toda velocidad en la bajada.",
+      "right": "El bus agarró velocidad en la bajada.",
+      "why": "Keep them apart: *agarró velocidad* is the change, *a toda velocidad* is the state."
+    }
+  ],
+  "personal": "Think of something in your life that picked up speed lately, and say it with *agarró velocidad*."
+}

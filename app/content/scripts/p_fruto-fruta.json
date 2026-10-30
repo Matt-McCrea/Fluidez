@@ -1,0 +1,174 @@
+{
+  "node": "p:fruto-fruta",
+  "hook": {
+    "line": "Vale is planning the new menu around Rosa's recipes, and Tomás wants to thank everyone in the newsletter. English uses \"fruit\" for both food and results; Spanish splits them.",
+    "es": "La renovación es el fruto del trabajo de todos.",
+    "en": "The renovation is the fruit of everyone's work."
+  },
+  "examples": [
+    {
+      "es": "Compré fruta en Paloquemao.",
+      "en": "I bought fruit at Paloquemao."
+    },
+    {
+      "es": "Es el fruto de muchos años de trabajo.",
+      "en": "It's the fruit of many years of work."
+    },
+    {
+      "es": "Vale siempre trae fruta fresca.",
+      "en": "Vale always brings fresh fruit."
+    },
+    {
+      "es": "Trae leña para la chimenea.",
+      "en": "Bring firewood for the fireplace."
+    },
+    {
+      "es": "Echa otro leño al fuego.",
+      "en": "Put another log on the fire."
+    },
+    {
+      "es": "Los frutos de la planta son pequeños y rojos.",
+      "en": "The plant's fruits are small and red."
+    }
+  ],
+  "rule": "*La fruta* is the fruit you eat, as a general thing: *Compré fruta*. It is feminine and usually has no plural.\n\n*El fruto* is the result of effort: *el fruto de muchos años de trabajo*. It is also the botanical fruit of a plant (*los frutos de la planta*).\n\nA few other pairs work like this. *La leña* is firewood in general; *el leño* is one log. It is a short list to recognise, not a rule to apply to every word.\n\nIf you mix them up people understand, but *fruto* for lunch sounds odd.",
+  "smallPrint": "Teachers call these nouns whose gender changes the meaning: *la fruta / el fruto*, *la leña / el leño*.",
+  "readAndPick": [
+    {
+      "es": "Compré fruta en Paloquemao.",
+      "options": [
+        "I bought the result at Paloquemao.",
+        "I bought fruit at Paloquemao.",
+        "I bought firewood at Paloquemao."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es el fruto de muchos años de trabajo.",
+      "options": [
+        "It's the result of many years of work.",
+        "It's fruit for sale after many years.",
+        "It's firewood after many years."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Trae leña para la chimenea.",
+      "options": [
+        "Bring a log for the fireplace.",
+        "Bring fruit for the fireplace.",
+        "Bring firewood for the fireplace."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Echa otro leño al fuego.",
+      "options": [
+        "Put another log on the fire.",
+        "Put more firewood on the fire.",
+        "Put some fruit on the fire."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La renovación es el fruto de tu esfuerzo.",
+      "options": [
+        "The renovation is fresh fruit for you.",
+        "The renovation is the result of your effort.",
+        "The renovation is firewood for you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale siempre trae fruta fresca.",
+      "options": [
+        "Vale always brings fresh results.",
+        "Vale always brings a fresh log.",
+        "Vale always brings fresh fruit."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los frutos de la planta son pequeños y rojos.",
+      "options": [
+        "The plant's fruits are small and red.",
+        "The plant's firewood is small and red.",
+        "The plant's results are small and red."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hoy no hay leña para la noche.",
+      "options": [
+        "Today there's no fruit for the night.",
+        "Today there's no firewood for the night.",
+        "Today there's no result for the night."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose and type: \"I bought fruit at Paloquemao.\" Compré ___ en Paloquemao. (fruta / fruto)",
+      "answer": "Compré fruta en Paloquemao.",
+      "accept": [],
+      "why": "Fruit to eat is *fruta*."
+    },
+    {
+      "prompt": "Choose and type: \"It's the fruit of many years of work.\" Es el ___ de muchos años de trabajo. (fruta / fruto)",
+      "answer": "Es el fruto de muchos años de trabajo.",
+      "accept": [],
+      "why": "A result of effort is *fruto*."
+    },
+    {
+      "prompt": "Tell a friend: \"Bring firewood for the fireplace.\"",
+      "answer": "Trae leña para la chimenea.",
+      "accept": [],
+      "why": "Firewood in general is *leña*."
+    },
+    {
+      "prompt": "Tell a friend: \"Put another log on the fire.\"",
+      "answer": "Echa otro leño al fuego.",
+      "accept": [],
+      "why": "One log is *un leño*."
+    },
+    {
+      "prompt": "Type in Spanish: \"The café is the result of Rosa's work.\"",
+      "answer": "El café es el fruto del trabajo de Rosa.",
+      "accept": [
+        "El café es el fruto del trabajo de Rosa."
+      ],
+      "why": "A result of work is *fruto*, and *de* + *el* becomes *del*."
+    },
+    {
+      "prompt": "Change it: *Es el fruto de muchos años de trabajo.* Now say \"many months\".",
+      "answer": "Es el fruto de muchos meses de trabajo.",
+      "accept": [],
+      "why": "Swap *años* for *meses*, nothing else changes."
+    },
+    {
+      "prompt": "Type in Spanish: \"Vale brings fresh fruit.\"",
+      "answer": "Vale trae fruta fresca.",
+      "accept": [],
+      "why": "Food fruit is *fruta*, feminine, so *fresca*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Compré fruto en Paloquemao.",
+      "right": "Compré fruta en Paloquemao.",
+      "why": "Almost. For fruit you eat, use *fruta*."
+    },
+    {
+      "wrong": "Es la fruta de muchos años de trabajo.",
+      "right": "Es el fruto de muchos años de trabajo.",
+      "why": "A result of work is *el fruto*."
+    },
+    {
+      "wrong": "Trae leño para la chimenea.",
+      "right": "Trae leña para la chimenea.",
+      "why": "*Leño* is one log; firewood in general is *leña*."
+    }
+  ],
+  "personal": "Say something true: what fruit you like (*Me gusta la fruta*), or what is the *fruto* of your work this year."
+}

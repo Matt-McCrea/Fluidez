@@ -1,0 +1,174 @@
+{
+  "node": "p:dar-a",
+  "hook": {
+    "line": "Tomás is writing the newsletter's guide to the café, and he needs to say which way each room faces. English says \"looks onto\" or \"overlooks\"; Spanish uses a verb you already know.",
+    "es": "La terraza da al parque.",
+    "en": "The terrace overlooks the park."
+  },
+  "examples": [
+    {
+      "es": "La terraza da al parque.",
+      "en": "The terrace overlooks the park."
+    },
+    {
+      "es": "La ventana da a la calle.",
+      "en": "The window looks onto the street."
+    },
+    {
+      "es": "El cuarto da a un patio interior.",
+      "en": "The bedroom looks onto an inner courtyard."
+    },
+    {
+      "es": "Los balcones dan a la plaza.",
+      "en": "The balconies look onto the plaza."
+    },
+    {
+      "es": "La puerta de atrás da a un callejón.",
+      "en": "The back door opens onto an alley."
+    },
+    {
+      "es": "Mi cuarto daba a la calle, y era ruidoso.",
+      "en": "My room looked onto the street, and it was noisy."
+    }
+  ],
+  "rule": "To say which way a place faces, use *dar a* + the place: *La ventana da a la calle.*\n\nThe subject is the thing (window, terrace, room), not a person. It \"gives onto\" the street. It agrees as usual: *da* for one, *dan* for several.\n\n*A* + *el* becomes *al*: *da al parque*. With *la*, *un* and *una* it stays *a*: *da a la calle*, *da a un patio*.\n\nAlso with directions: *El balcón da al norte.* Do not use *mirar a* or *estar en* for this.",
+  "smallPrint": "Teachers call this an idiomatic use of *dar* (to give), meaning \"to face, to open onto\".",
+  "readAndPick": [
+    {
+      "es": "La terraza da al parque.",
+      "options": [
+        "The terrace is in the park.",
+        "The terrace overlooks the park.",
+        "The terrace gives a park."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las ventanas dan a la calle.",
+      "options": [
+        "The windows look onto the street.",
+        "The window looks onto the street.",
+        "The windows are in the street."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La cocina da a un patio.",
+      "options": [
+        "The kitchen is a courtyard.",
+        "The kitchen is in a courtyard.",
+        "The kitchen opens onto a courtyard."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El balcón da al norte.",
+      "options": [
+        "The balcony faces north.",
+        "The balcony is north of the house.",
+        "The balcony faces south."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los cuartos dan al jardín.",
+      "options": [
+        "The room looks onto the garden.",
+        "The rooms look onto the garden.",
+        "The rooms are in the garden."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La puerta de atrás da a un callejón.",
+      "options": [
+        "The back door is in an alley.",
+        "The back door was an alley.",
+        "The back door opens onto an alley."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mi cuarto daba a la calle, y era ruidoso.",
+      "options": [
+        "My room looked onto the street, and it was noisy.",
+        "My room will look onto the street, and it will be noisy.",
+        "My room is in the street, and it is noisy."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Tu cuarto da a la calle?",
+      "options": [
+        "Is your room in the street?",
+        "Do you look at the street from your room?",
+        "Does your room look onto the street?"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose and type: \"The terrace overlooks the park.\" La terraza da ___ parque. (a / al)",
+      "answer": "La terraza da al parque.",
+      "accept": [],
+      "why": "*A* and *el* join into *al*."
+    },
+    {
+      "prompt": "Choose and type: \"The windows look onto the street.\" Las ventanas ___ a la calle. (da / dan)",
+      "answer": "Las ventanas dan a la calle.",
+      "accept": [],
+      "why": "Several windows, so the verb is *dan*."
+    },
+    {
+      "prompt": "Type in Spanish: \"The window looks onto the street.\"",
+      "answer": "La ventana da a la calle.",
+      "accept": [],
+      "why": "The thing faces the street, so *dar a*."
+    },
+    {
+      "prompt": "Type in Spanish: \"The kitchen opens onto a courtyard.\"",
+      "answer": "La cocina da a un patio.",
+      "accept": [],
+      "why": "With *un*, *a* stays separate."
+    },
+    {
+      "prompt": "Ask a friend: \"Does your room look onto the street?\"",
+      "answer": "¿Tu cuarto da a la calle?",
+      "accept": [
+        "¿Da tu cuarto a la calle?"
+      ],
+      "why": "A question is the statement with question marks."
+    },
+    {
+      "prompt": "Make it plural: *El balcón da a la plaza.* Say \"The balconies look onto the plaza.\"",
+      "answer": "Los balcones dan a la plaza.",
+      "accept": [],
+      "why": "Plural thing, plural verb: *dan*."
+    },
+    {
+      "prompt": "Type in Spanish: \"The rooms look onto the garden.\"",
+      "answer": "Los cuartos dan al jardín.",
+      "accept": [],
+      "why": "*A* + *el* again becomes *al*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La ventana mira la calle.",
+      "right": "La ventana da a la calle.",
+      "why": "Almost. A window does not look; it gives onto the street."
+    },
+    {
+      "wrong": "La ventana da en la calle.",
+      "right": "La ventana da a la calle.",
+      "why": "The little word is *a*, never *en*."
+    },
+    {
+      "wrong": "La terraza da a el parque.",
+      "right": "La terraza da al parque.",
+      "why": "*A* and *el* always merge into *al*."
+    }
+  ],
+  "personal": "Say which way a room in your home faces, starting with *Mi cuarto da a*, *La cocina da a* or *La ventana da a*."
+}

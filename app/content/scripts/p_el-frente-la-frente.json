@@ -1,0 +1,174 @@
+{
+  "node": "p:el-frente-la-frente",
+  "hook": {
+    "line": "In the newsletter, Tomás almost wrote that the café had a \"cold forehead\". Some Spanish words change meaning with the gender of the article, and you learn them as pairs.",
+    "es": "Llega un frente frío.",
+    "en": "A cold front is coming."
+  },
+  "examples": [
+    {
+      "es": "Tiene una cicatriz en la frente.",
+      "en": "He has a scar on his forehead."
+    },
+    {
+      "es": "Llega un frente frío.",
+      "en": "A cold front is coming."
+    },
+    {
+      "es": "El cura bendijo la casa.",
+      "en": "The priest blessed the house."
+    },
+    {
+      "es": "Todavía no hay cura.",
+      "en": "There's no cure yet."
+    },
+    {
+      "es": "Aquí falta una coma.",
+      "en": "There's a comma missing here."
+    },
+    {
+      "es": "Estuvo en coma tres días.",
+      "en": "She was in a coma for three days."
+    }
+  ],
+  "rule": "A few words are spelled the same but change meaning with *el* or *la*. English has one word for each; Spanish uses the article.\n\n*La frente* is the forehead; *el frente* is a front (cold, warm, war).\n*El cura* is the priest; *la cura* is the cure.\n*La coma* is the comma; *el coma* is the coma.\n\nThey are not related, so there is no pattern to guess. Learn each as a pair with its article, and notice the article when you read.",
+  "smallPrint": "Teachers call these homonyms that differ in gender.",
+  "readAndPick": [
+    {
+      "es": "Tiene una cicatriz en la frente.",
+      "options": [
+        "He has a scar on his forehead.",
+        "He has a scar on the front.",
+        "He has a scar on the comma."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Llega un frente frío.",
+      "options": [
+        "Her forehead is cold.",
+        "A cold priest arrives.",
+        "A cold front is coming."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El cura bendijo la casa.",
+      "options": [
+        "The cure blessed the house.",
+        "The priest blessed the house.",
+        "The front blessed the house."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Todavía no hay cura.",
+      "options": [
+        "There's no priest yet.",
+        "There's no comma yet.",
+        "There's no cure yet."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Aquí falta una coma.",
+      "options": [
+        "There's a comma missing here.",
+        "There's a coma missing here.",
+        "There's a cure missing here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mi tío estuvo en coma tres días.",
+      "options": [
+        "My uncle was in a coma for three days.",
+        "My uncle put a comma for three days.",
+        "My uncle was a priest for three days."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mañana llega un frente cálido.",
+      "options": [
+        "Tomorrow a priest arrives, warm.",
+        "Tomorrow a warm forehead arrives.",
+        "Tomorrow a warm front arrives."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Buscan una cura para la enfermedad.",
+      "options": [
+        "They're looking for a priest for the illness.",
+        "They're looking for a cure for the illness.",
+        "They're looking for a comma for the illness."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose and type: \"He has a scar on his forehead.\" Tiene una cicatriz en ___ frente. (la / el)",
+      "answer": "Tiene una cicatriz en la frente.",
+      "accept": [],
+      "why": "Forehead is *la frente*."
+    },
+    {
+      "prompt": "Choose and type: \"A cold front is coming.\" Llega ___ frente frío. (un / una)",
+      "answer": "Llega un frente frío.",
+      "accept": [],
+      "why": "A weather front is *el frente*, so *un*."
+    },
+    {
+      "prompt": "Type in Spanish: \"The priest blessed the house.\"",
+      "answer": "El cura bendijo la casa.",
+      "accept": [],
+      "why": "The priest is *el cura*."
+    },
+    {
+      "prompt": "Type in Spanish: \"There's no cure yet.\"",
+      "answer": "Todavía no hay cura.",
+      "accept": [],
+      "why": "A cure is *la cura*."
+    },
+    {
+      "prompt": "Type in Spanish: \"A comma is missing here.\"",
+      "answer": "Aquí falta una coma.",
+      "accept": [],
+      "why": "The punctuation mark is *la coma*."
+    },
+    {
+      "prompt": "Type in Spanish: \"She was in a coma for three days.\"",
+      "answer": "Estuvo en coma tres días.",
+      "accept": [
+        "Ella estuvo en coma tres días."
+      ],
+      "why": "*En coma* is the medical state."
+    },
+    {
+      "prompt": "Change it: *Llega un frente frío.* Now a warm one.",
+      "answer": "Llega un frente cálido.",
+      "accept": [],
+      "why": "Swap the adjective only; *frente* stays masculine."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tiene una cicatriz en el frente.",
+      "right": "Tiene una cicatriz en la frente.",
+      "why": "Almost. The forehead is feminine: *la frente*."
+    },
+    {
+      "wrong": "Llega una frente frío.",
+      "right": "Llega un frente frío.",
+      "why": "A weather front is masculine: *un frente*."
+    },
+    {
+      "wrong": "La cura bendijo la casa.",
+      "right": "El cura bendijo la casa.",
+      "why": "The priest is *el cura*; *la cura* is the cure."
+    }
+  ],
+  "personal": "Say something true using one of these pairs, like *Me duele la frente* or *Hoy llega un frente frío*."
+}

@@ -1,0 +1,197 @@
+{
+  "node": "g:temporal-advanced",
+  "hook": {
+    "line": "Tomás is writing the cooperative's newsletter about the restoration, and he wants to say exactly when things happened and what came right after what. Plain *cuando* is too vague for that.",
+    "es": "En cuanto llegue Vale, empezamos.",
+    "en": "As soon as Vale arrives, we'll start."
+  },
+  "examples": [
+    {
+      "es": "Nada más llegar Tomás al café, se fue la luz.",
+      "en": "As soon as Tomás got to the café, the power went out."
+    },
+    {
+      "es": "Apenas abrimos, llegó Hernando.",
+      "en": "We had barely opened when Hernando arrived."
+    },
+    {
+      "es": "En cuanto vi la viga, supe que estaba rota.",
+      "en": "As soon as I saw the beam, I knew it was broken."
+    },
+    {
+      "es": "En cuanto llegue Vale, empezamos.",
+      "en": "As soon as Vale arrives, we'll start."
+    },
+    {
+      "es": "Una vez que termine la obra, abrimos el café.",
+      "en": "Once the work is finished, we'll open the café."
+    },
+    {
+      "es": "A medida que avanzaba la noche, llegaba más gente.",
+      "en": "As the night went on, more people arrived."
+    }
+  ],
+  "rule": "Spanish has precise little openers for \"when\", each with its own job.\n\n*Nada más* + infinitive: \"the moment that\". *Nada más llegar Tomás* has no *-ed* ending and no \"he\": the infinitive carries it.\n*Apenas* + past: \"barely had we... when\". It is quick and sudden.\n*En cuanto* and *una vez que*: \"as soon as\", \"once\". About the past, use a normal past verb (*En cuanto vi*). About the future, use the \"wish\" form of the verb: *En cuanto llegue*, *una vez que termine*. English says \"arrives\" and \"is finished\"; Spanish uses this special form, never a future (*llegará* is wrong here).\n*A medida que*: \"as\", while something keeps growing or changing. Never *a medida de que*.",
+  "smallPrint": "Teachers call these temporal conjunctions. After *en cuanto* and *una vez que* about the future, the verb is in the present subjunctive (*llegue*, *termine*).",
+  "readAndPick": [
+    {
+      "es": "Nada más llegar Tomás, se fue la luz.",
+      "options": [
+        "As soon as Tomás arrived, the power went out.",
+        "Tomás will arrive when the power goes out.",
+        "The power went out because Tomás was late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En cuanto llegue Vale, empezamos.",
+      "options": [
+        "As soon as Vale arrived, we started.",
+        "Every time Vale arrives, we start.",
+        "As soon as Vale arrives, we'll start."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "En cuanto llegó Vale, empezamos.",
+      "options": [
+        "As soon as Vale arrived, we started.",
+        "As soon as Vale arrives, we'll start.",
+        "If Vale arrives, we'll start."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Apenas abrimos, llegó Hernando.",
+      "options": [
+        "We barely ever open when Hernando arrives.",
+        "We had barely opened when Hernando arrived.",
+        "Hernando barely arrived."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A medida que avanzaba la noche, llegaba más gente.",
+      "options": [
+        "Because the night was long, more people arrived.",
+        "More people arrived after the night was over.",
+        "As the night went on, more people arrived."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Una vez que termine la obra, abrimos el café.",
+      "options": [
+        "Once the work is finished, we'll open the café.",
+        "Once the work was finished, we opened the café.",
+        "We opened the café because the work was finished."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nada más salir Vale, sonó el teléfono.",
+      "options": [
+        "The phone rang before Vale left.",
+        "As soon as Vale left, the phone rang.",
+        "Vale will leave when the phone rings."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A medida que pasan los días, el café se llena.",
+      "options": [
+        "As the days go by, the café fills up.",
+        "The café filled up in one day.",
+        "When the days passed, the café was empty."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En cuanto vi la viga, supe que estaba rota.",
+      "options": [
+        "As soon as I see the beam, I'll know it's broken.",
+        "I knew the beam was broken before I saw it.",
+        "As soon as I saw the beam, I knew it was broken."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose the right form and type the whole sentence. You mean \"as soon as Vale arrives\", in the future: ___ Vale, empezamos. (en cuanto llegue / en cuanto llegó)",
+      "answer": "En cuanto llegue Vale, empezamos.",
+      "accept": [
+        "Empezamos en cuanto llegue Vale."
+      ],
+      "why": "It is about the future, so Spanish uses the \"wish\" form *llegue*, not a future or a past."
+    },
+    {
+      "prompt": "Choose and type: \"As soon as Tomás got there, the power went out.\" Nada más ___ Tomás, se fue la luz. (llegar / llegó)",
+      "answer": "Nada más llegar Tomás, se fue la luz.",
+      "accept": [
+        "Nada más llegar Tomás al café, se fue la luz."
+      ],
+      "why": "*Nada más* is followed by the infinitive, with the person right after it."
+    },
+    {
+      "prompt": "Type in Spanish: \"As the night went on, more people arrived.\"",
+      "answer": "A medida que avanzaba la noche, llegaba más gente.",
+      "accept": [
+        "Llegaba más gente a medida que avanzaba la noche."
+      ],
+      "why": "*A medida que* + imperfect describes something that keeps changing while time goes on."
+    },
+    {
+      "prompt": "Type in Spanish: \"Once the work is finished, we'll open the café.\"",
+      "answer": "Una vez que termine la obra, abrimos el café.",
+      "accept": [
+        "Una vez que termine la obra, vamos a abrir el café.",
+        "Una vez que termine la obra, abriremos el café."
+      ],
+      "why": "About the future, *una vez que* takes the \"wish\" form, *termine*."
+    },
+    {
+      "prompt": "Type in Spanish: \"We had barely opened when Hernando arrived.\"",
+      "answer": "Apenas abrimos, llegó Hernando.",
+      "accept": [
+        "Apenas abrimos llegó Hernando."
+      ],
+      "why": "*Apenas* + a past verb gives the quick \"barely had we... when\" feeling."
+    },
+    {
+      "prompt": "Make it about the past: *En cuanto llegue Vale, empezamos.* It happened yesterday. Say it with *llegó* and *empezamos*.",
+      "answer": "En cuanto llegó Vale, empezamos.",
+      "accept": [],
+      "why": "Once it has already happened, *en cuanto* takes an ordinary past verb."
+    },
+    {
+      "prompt": "Type in Spanish: \"As soon as I saw the beam, I knew it was broken.\"",
+      "answer": "En cuanto vi la viga, supe que estaba rota.",
+      "accept": [],
+      "why": "A finished past event after *en cuanto* uses a normal past verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "En cuanto llegará Vale, empezamos.",
+      "right": "En cuanto llegue Vale, empezamos.",
+      "why": "Almost. After *en cuanto* about the future, Spanish uses *llegue*, never the future tense."
+    },
+    {
+      "wrong": "Nada más Tomás llegó, se fue la luz.",
+      "right": "Nada más llegar Tomás, se fue la luz.",
+      "why": "Almost. *Nada más* wants the infinitive, then the person."
+    },
+    {
+      "wrong": "A medida de que avanzaba la noche, llegaba más gente.",
+      "right": "A medida que avanzaba la noche, llegaba más gente.",
+      "why": "The set phrase is *a medida que*, with no *de*."
+    },
+    {
+      "wrong": "Una vez que terminará la obra, abrimos el café.",
+      "right": "Una vez que termine la obra, abrimos el café.",
+      "why": "Same rule as *en cuanto*: no future after *una vez que*, use *termine*."
+    }
+  ],
+  "personal": "Tell us one true thing about your day: *En cuanto llego a casa,* and finish it."
+}

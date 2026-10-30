@@ -1,0 +1,174 @@
+{
+  "node": "p:lo-primero-que",
+  "hook": {
+    "line": "Mariana asks Tomás to describe the café for her article. A good description has an order: one striking thing first, then the details.",
+    "es": "Lo primero que llama la atención es el silencio.",
+    "en": "The first thing that strikes you is the silence."
+  },
+  "examples": [
+    {
+      "es": "Lo primero que llama la atención es el silencio.",
+      "en": "The first thing that strikes you is the silence."
+    },
+    {
+      "es": "A primera vista parece un edificio normal.",
+      "en": "At first sight it looks like an ordinary building."
+    },
+    {
+      "es": "Visto desde afuera, parece abandonado.",
+      "en": "Seen from outside, it looks abandoned."
+    },
+    {
+      "es": "Visto desde la calle, el café parece pequeño.",
+      "en": "Seen from the street, the café looks small."
+    },
+    {
+      "es": "Visto desde adentro, parece enorme.",
+      "en": "Seen from inside, it looks enormous."
+    },
+    {
+      "es": "Lo primero que llamó la atención fue el olor a café.",
+      "en": "The first thing that caught my attention was the smell of coffee."
+    }
+  ],
+  "rule": "Start a description with an anchor, then give details, moving from outside to inside.\n\n*Lo primero que llama la atención es...* is \"the first thing that strikes you is...\". It uses *lo*, not \"the first thing\" word for word. Change *llama* to *llamó* for a past scene.\n\n*A primera vista* is \"at first sight\", often followed by a *but*.\n\n*Visto desde afuera / adentro / la calle / arriba* is \"seen from...\". No \"it\" is needed: the thing described follows.\n\nThe verb after is *parece*: *parece abandonado*, never *se parece*.",
+  "smallPrint": "Teachers call this focusing the description: a neuter *lo* clause that introduces the first detail.",
+  "readAndPick": [
+    {
+      "es": "Visto desde afuera, parece abandonado.",
+      "options": [
+        "Seen from inside, it looks abandoned.",
+        "Seen from outside, it looks abandoned.",
+        "Seen from far away, it looks abandoned."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Visto desde adentro, parece enorme.",
+      "options": [
+        "Seen from inside, it looks enormous.",
+        "Seen from outside, it looks enormous.",
+        "Seen from the street, it looks enormous."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A primera vista parece un edificio normal.",
+      "options": [
+        "It is the most famous building, at first sight.",
+        "Ultimately it looks like a building.",
+        "At first sight it looks like an ordinary building."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo primero que llama la atención es el silencio.",
+      "options": [
+        "The first thing that strikes you is the silence.",
+        "The last thing that strikes you is the silence.",
+        "The silence strikes you first, every night."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo último que llama la atención es el techo.",
+      "options": [
+        "The first thing that strikes you is the roof.",
+        "The only thing that strikes you is the roof.",
+        "The last thing that strikes you is the roof."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Visto desde arriba, la plaza parece pequeña.",
+      "options": [
+        "Seen from below, the plaza looks small.",
+        "Seen from above, the plaza looks small.",
+        "Seen from the street, the plaza looks small."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo primero que llamó la atención de Tomás fue el olor a café.",
+      "options": [
+        "The first thing that strikes Tomás is the smell of coffee.",
+        "The first thing that struck Tomás was the smell of coffee.",
+        "The first thing that will strike Tomás is the smell of coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Visto desde lejos, parece pequeño.",
+      "options": [
+        "Seen from close up, it looks small.",
+        "Seen from afar, it looks small.",
+        "Seen from inside, it looks small."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose and type: \"The first thing that strikes you is the silence.\" ___ que llama la atención es el silencio. (Lo primero / El primero)",
+      "answer": "Lo primero que llama la atención es el silencio.",
+      "accept": [],
+      "why": "The phrase uses neuter *lo*: *lo primero que*."
+    },
+    {
+      "prompt": "Choose and type: \"Seen from outside, it looks abandoned.\" Visto ___ afuera, parece abandonado. (desde / de)",
+      "answer": "Visto desde afuera, parece abandonado.",
+      "accept": [],
+      "why": "The set phrase is *visto desde*."
+    },
+    {
+      "prompt": "Type in Spanish: \"At first sight it looks like an ordinary building.\"",
+      "answer": "A primera vista parece un edificio normal.",
+      "accept": [],
+      "why": "*A primera vista* has no article."
+    },
+    {
+      "prompt": "Type in Spanish: \"Seen from inside, the café looks enormous.\"",
+      "answer": "Visto desde adentro, el café parece enorme.",
+      "accept": [
+        "Visto desde adentro, parece enorme."
+      ],
+      "why": "Same frame as outside, with *adentro*."
+    },
+    {
+      "prompt": "Type in Spanish: \"The first thing that strikes you is the smell of coffee.\"",
+      "answer": "Lo primero que llama la atención es el olor a café.",
+      "accept": [],
+      "why": "*Lo primero que llama la atención es...* then the detail."
+    },
+    {
+      "prompt": "Change it: *Visto desde afuera, parece abandonado.* Now seen from the street (*la calle*).",
+      "answer": "Visto desde la calle, parece abandonado.",
+      "accept": [],
+      "why": "Swap the place after *desde*."
+    },
+    {
+      "prompt": "Make it past, about last night: *Lo primero que llama la atención es el silencio.*",
+      "answer": "Lo primero que llamó la atención fue el silencio.",
+      "accept": [],
+      "why": "Both verbs go to the past: *llamó* and *fue*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La primera cosa que llama la atención es el silencio.",
+      "right": "Lo primero que llama la atención es el silencio.",
+      "why": "Almost. Spanish uses neuter *lo primero*, not \"the first thing\" word for word."
+    },
+    {
+      "wrong": "En primera vista parece un edificio normal.",
+      "right": "A primera vista parece un edificio normal.",
+      "why": "The set phrase begins with *a*."
+    },
+    {
+      "wrong": "Visto desde afuera, se parece abandonado.",
+      "right": "Visto desde afuera, parece abandonado.",
+      "why": "*Parece* is \"it looks\"; *se parece* means \"resembles\"."
+    }
+  ],
+  "personal": "Describe a place you know, starting with *Lo primero que llama la atención de*."
+}
