@@ -39,7 +39,7 @@
       "en": "How sweet!"
     }
   ],
-  "rule": "You already react with *¡Qué bonito!* and *¡Qué pena!* Now stretch it.\n\n*¡Qué* + describing word + thing: *¡Qué bonita sorpresa!* English says what a lovely surprise; Spanish has no a.\n*¡Qué* + how + verb: *¡Qué bien cocina Vale!* The verb comes straight after, and the person goes to the end.\n*¡Qué bueno* + verb: *¡Qué bueno verte!*\n*¡Cuánto!* for so much, so many. It matches the thing: *cuánto tiempo*, *cuánta gente*, *cuántos regalos*, *cuántas flores*.\n\nThe accent on *qué* and *cuánto* is what makes it a reaction. Without it, *que* is just that, the word in *Que te vaya bien*. And the marks at both ends tell you it's a reaction, not a question: *¡Cuánta gente!* (so many people) against *¿Cuánta gente viene?* (how many people are coming?).\n\nColombians love a short *¡Tan lindo!* for anything sweet.",
+  "rule": "You already react with *¡Qué bonito!* and *¡Qué pena!* Now stretch it.\n\n*¡Qué* + describing word + thing: *¡Qué bonita sorpresa!* English says what a lovely surprise; Spanish has no a.\n*¡Qué bien*, *¡Qué rápido* + verb: *¡Qué bien cocina Vale!* The verb comes straight after, and the person goes to the end.\n*¡Qué bueno* + verb: *¡Qué bueno verte!*\n*¡Cuánto!* for so much, so many. It matches the thing: *cuánto tiempo*, *cuánta gente*, *cuántos regalos*, *cuántas flores*.\n\nThe accent on *qué* and *cuánto* is what makes it a reaction. Without it, *que* is just that, the word in *Que te vaya bien*. And the marks at both ends tell you it's a reaction, not a question: *¡Cuánta gente!* (so many people) against *¿Cuánta gente viene?* (how many people are coming?).\n\nColombians love a short *¡Tan lindo!* for anything sweet.",
   "smallPrint": "Teachers call these exclamatives (*oraciones exclamativas*). In a longer pattern, *¡Qué día tan largo!*, *tan* goes before the describing word.",
   "readAndPick": [
     {
@@ -140,7 +140,9 @@
     {
       "prompt": "React in Spanish: What a lovely surprise! (use *bonita*)",
       "answer": "¡Qué bonita sorpresa!",
-      "accept": [],
+      "accept": [
+        "¡Qué sorpresa tan bonita!"
+      ],
       "why": "No word for a: just *qué*, then the describing word, then the thing."
     },
     {

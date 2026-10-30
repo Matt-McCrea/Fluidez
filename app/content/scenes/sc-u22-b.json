@@ -18,7 +18,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "(^|[¡!.,\\s])qu[eé]\\s+(bueno|buena|bien|mal|horror|lindo|linda|bonito|bonita|gusto|historia|noticia|sorpresa|triste|chévere)",
+          "pattern": "(^|[¡!.,\\s])qu[eé]\\s+(bueno|buena|bien|mal|malo|mala|horror|lindo|linda|bonito|bonita|gusto|historia|noticia|sorpresa|triste|tristeza|chévere|pena|alegría|maravilla|susto|terrible|barbaridad|felicidad|emoción|rico|rica|belleza|dicha|cosa)",
           "flags": "i",
           "label": "react with an exclamation: ¡Qué bueno!, ¡Qué mal!"
         }

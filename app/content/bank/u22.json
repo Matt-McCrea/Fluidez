@@ -2176,7 +2176,7 @@
   {
     "id": "u22-0104",
     "es": "Rosa tuvo éxito con sus empanadas.",
-    "en": "Rosa was a success with her empanadas.",
+    "en": "Rosa did well with her empanadas.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2589,19 +2589,18 @@
   },
   {
     "id": "u22-0122",
-    "es": "Igualmente, nos vemos en la tarde.",
-    "en": "You too, see you this afternoon.",
+    "es": "Gracias a ti. Nos vemos mañana.",
+    "en": "Thank you. See you tomorrow. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:chao-nos-vemos",
-      "c:mucho-gusto",
-      "g:gender-articles",
-      "l:igualmente",
-      "l:tarde",
+      "g:prep-pronouns",
+      "l:mañana",
       "l:ver",
+      "p:gracias-a-por-culpa-de",
       "p:nos-vemos-a-las",
-      "p:por-la-manana"
+      "p:por-culpa-de"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -2612,7 +2611,7 @@
   {
     "id": "u22-0123",
     "es": "¡Feliz día, mamá!",
-    "en": "Have a nice day, Mom!",
+    "en": "Have a nice day, Mum!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2674,7 +2673,7 @@
   {
     "id": "u22-0126",
     "es": "¿Ya te vas? Entonces, hasta el lunes.",
-    "en": "Are you leaving already? Then, until Monday. (to a friend)",
+    "en": "Are you leaving already? See you Monday, then. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3415,8 +3414,8 @@
   },
   {
     "id": "u22-0156",
-    "es": "Ojalá me den el empleo.",
-    "en": "I hope they give me the job.",
+    "es": "Ojalá me den el viernes libre.",
+    "en": "I hope they give me Friday off.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3425,7 +3424,9 @@
       "g:subj-wanting",
       "g:subj-wishes",
       "l:dar",
-      "l:empleo",
+      "l:libre",
+      "l:viernes",
+      "p:days-el-lunes",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -3579,7 +3580,7 @@
   {
     "id": "u22-0163",
     "es": "¿Crees que vendrá Vale?",
-    "en": "Do you think Vale will come?",
+    "en": "Do you think Vale will come? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4303,20 +4304,19 @@
   },
   {
     "id": "u22-0194",
-    "es": "¡Felicitaciones por el matrimonio, Mariana!",
-    "en": "Congratulations on the marriage, Mariana!",
+    "es": "¡Felicitaciones por el artículo, Mariana!",
+    "en": "Congratulations on the article, Mariana!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
+      "l:artículo",
       "l:felicitaciones",
-      "l:matrimonio",
       "p:felicitaciones-por"
     ],
     "targets": [
       "l:felicitaciones",
-      "l:matrimonio",
       "p:felicitaciones-por"
     ],
     "kind": "statement",
@@ -4508,8 +4508,8 @@
   },
   {
     "id": "u22-0203",
-    "es": "¡Felicitaciones por la torta de Vale!",
-    "en": "Congratulations on Vale's cake!",
+    "es": "¡Felicitaciones por la torta, Vale!",
+    "en": "Congratulations on the cake, Vale!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4672,14 +4672,15 @@
   },
   {
     "id": "u22-0210",
-    "es": "¡Felicitaciones por tanto trabajo!",
-    "en": "Congratulations on so much work!",
+    "es": "¡Felicitaciones por la entrevista!",
+    "en": "Congratulations on the interview!",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:por-para-1",
+      "l:entrevista",
       "l:felicitaciones",
-      "l:trabajo",
       "p:felicitaciones-por"
     ],
     "targets": [
@@ -4693,15 +4694,15 @@
   },
   {
     "id": "u22-0211",
-    "es": "¡Felicitaciones por el cumpleaños!",
-    "en": "Congratulations on your birthday! (to a friend)",
+    "es": "¡Felicitaciones por la nota, Jhon Fredy!",
+    "en": "Congratulations on the grade, Jhon Fredy!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
-      "l:cumpleaños",
       "l:felicitaciones",
+      "l:nota",
       "p:felicitaciones-por"
     ],
     "targets": [
@@ -4715,16 +4716,16 @@
   },
   {
     "id": "u22-0212",
-    "es": "¡Felicidades por la boda de tu hermana!",
+    "es": "¡Felicidades por el matrimonio de tu hermana!",
     "en": "Congratulations on your sister's wedding! (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
-      "l:boda",
       "l:felicidad",
       "l:hermana",
+      "l:matrimonio",
       "p:felicitaciones-por",
       "p:possessives-basic"
     ],
@@ -5111,18 +5112,19 @@
   },
   {
     "id": "u22-0230",
-    "es": "¡Felicitaciones! Estamos muy contentos.",
-    "en": "Congratulations! We are very happy.",
+    "es": "¡Felicitaciones! Por fin una buena noticia.",
+    "en": "Congratulations! Good news at last.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
-      "g:estar-location-states",
-      "l:contento",
-      "l:estar",
+      "g:gender-articles",
+      "l:buena",
       "l:felicitaciones",
-      "p:felicitaciones-por",
-      "p:quantifiers-basic"
+      "l:fin",
+      "l:noticia",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:felicitaciones-por"
     ],
     "targets": [
       "l:felicitaciones",
@@ -5607,16 +5609,19 @@
   },
   {
     "id": "u22-0252",
-    "es": "Me alegro mucho. Mariana trabaja duro.",
-    "en": "I'm really glad. Mariana works hard.",
+    "es": "Me alegro mucho por Mariana. Trabaja muy duro.",
+    "en": "I'm really glad for Mariana. She works really hard.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-alegro",
+      "g:por-para-1",
       "g:present-ar",
       "l:alegrarse",
       "l:duro",
-      "l:trabajar"
+      "l:trabajar",
+      "p:alegrarse-de-que",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "c:me-alegro",
@@ -5692,19 +5697,17 @@
   },
   {
     "id": "u22-0256",
-    "es": "Me alegro por ti. Te lo contaré todo mañana.",
-    "en": "I'm happy for you. I'll tell you everything tomorrow.",
+    "es": "¡Me alegro por ti! ¿Cuándo empiezas?",
+    "en": "I'm happy for you! When do you start? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-alegro",
-      "g:direct-objects",
-      "g:double-pronouns",
-      "g:future-promises",
+      "g:questions",
+      "g:stem-boot",
       "l:alegrarse",
-      "l:contar",
-      "l:mañana",
-      "p:me-te-nos-objects"
+      "l:cuándo",
+      "l:empezar"
     ],
     "targets": [
       "c:me-alegro",
@@ -6295,12 +6298,13 @@
   },
   {
     "id": "u22-0284",
-    "es": "Mandé una tarjeta de Navidad a Hernando.",
-    "en": "I sent a Christmas card to Hernando.",
+    "es": "Le mandé una tarjeta de Navidad.",
+    "en": "I sent him a Christmas card.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
       "g:preterite-ar",
       "l:mandar",
       "l:tarjeta"
@@ -6313,18 +6317,19 @@
   },
   {
     "id": "u22-0285",
-    "es": "Rosa regalaba una tarjeta de Navidad a Hernando todos los años.",
-    "en": "Rosa gave Hernando a Christmas card every year.",
+    "es": "Hernando todavía tiene la primera tarjeta de Rosa, de 1979.",
+    "en": "Hernando still has Rosa's first card, from 1979.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "l:año",
-      "l:regalar",
+      "g:stem-boot",
       "l:tarjeta",
-      "p:todos-los-dias",
-      "p:veces-al"
+      "l:tener",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:ya-todavia-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -6334,15 +6339,19 @@
   },
   {
     "id": "u22-0286",
-    "es": "Hernando guardó todas las tarjetas de Navidad.",
-    "en": "Hernando kept all the Christmas cards.",
+    "es": "Las tarjetas de Rosa estaban en una caja de zapatos.",
+    "en": "Rosa's cards were in a shoebox.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:preterite-ar",
-      "l:guardar",
-      "l:tarjeta"
+      "g:imperfect-states",
+      "l:caja",
+      "l:estar",
+      "l:tarjeta",
+      "l:zapatos",
+      "p:container-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -6621,7 +6630,7 @@
   {
     "id": "u22-0299",
     "es": "¿Ya pusiste las velitas en el balcón?",
-    "en": "Have you put the little candles on the balcony yet?",
+    "en": "Have you put the little candles on the balcony yet? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6728,8 +6737,8 @@
   },
   {
     "id": "u22-0304",
-    "es": "El lunes es festivo y la cafetería abre.",
-    "en": "Monday is a public holiday and the café opens.",
+    "es": "El lunes es festivo, pero la cafetería abre.",
+    "en": "Monday is a public holiday, but the café is open.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7562,15 +7571,16 @@
   },
   {
     "id": "u22-0344",
-    "es": "No cierren la casa de Rosa.",
-    "en": "Don't close Rosa's house. (you all)",
+    "es": "No cambien nada en la casa de Rosa.",
+    "en": "Don't change anything in Rosa's house. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:negation-words",
       "g:negative-commands",
-      "l:casa",
-      "l:cerrar"
+      "l:cambiar",
+      "l:casa"
     ],
     "targets": [
       "g:negative-commands"
@@ -7922,7 +7932,7 @@
   {
     "id": "u22-0362",
     "es": "No pasen por esa calle.",
-    "en": "Don't go through that street. (you all)",
+    "en": "Don't go down that street. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8569,17 +8579,18 @@
   },
   {
     "id": "u22-0394",
-    "es": "No te quedes sin decir nada.",
-    "en": "Don't stay without saying anything. (to a friend)",
+    "es": "No te quedes en la casa todo el día.",
+    "en": "Don't stay at home all day. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negation-words",
+      "g:gender-articles",
       "g:negative-commands",
-      "g:prep-infinitive",
       "g:reflexive-routine",
-      "l:decir",
-      "l:quedarse"
+      "l:casa",
+      "l:día",
+      "l:quedarse",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:negative-commands"
@@ -8797,17 +8808,18 @@
   },
   {
     "id": "u22-0405",
-    "es": "No salga sin abrigo, señora, hace frío.",
-    "en": "Don't go out without a coat, ma'am, it's cold. (polite)",
+    "es": "No espere en la calle, señora, hace frío.",
+    "en": "Don't wait in the street, ma'am, it's cold. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:negative-commands",
       "g:present-er-ir",
-      "l:abrigo",
+      "l:calle",
+      "l:esperar",
       "l:frío",
       "l:hacer",
-      "l:salir",
       "l:señora",
       "p:hace-frio"
     ],
@@ -8984,17 +8996,17 @@
   },
   {
     "id": "u22-0414",
-    "es": "No cierre la puerta con llave.",
-    "en": "Don't lock the door. (polite)",
+    "es": "No le abra la puerta a nadie.",
+    "en": "Don't open the door to anyone. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:negation-words",
       "g:negative-commands",
-      "l:cerrar",
-      "l:llave",
-      "l:puerta",
-      "p:con-sin"
+      "l:abrir",
+      "l:puerta"
     ],
     "targets": [
       "g:negative-commands"
@@ -9085,14 +9097,14 @@
   },
   {
     "id": "u22-0419",
-    "es": "No bebas tanto café.",
+    "es": "No tomes tanto café.",
     "en": "Don't drink so much coffee. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:negative-commands",
-      "l:beber",
-      "l:café"
+      "l:café",
+      "l:tomar"
     ],
     "targets": [
       "g:negative-commands"
@@ -9592,14 +9604,17 @@
   },
   {
     "id": "u22-0444",
-    "es": "No des plata a Simón.",
-    "en": "Don't give Simón any money. (to a friend)",
+    "es": "No le des más pan, Simón ya comió.",
+    "en": "Don't give him more bread, Simón has already eaten. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:indirect-objects",
       "g:negative-commands",
+      "g:preterite-er-ir",
+      "l:comer",
       "l:dar",
-      "l:plata"
+      "l:pan"
     ],
     "targets": [
       "g:negative-commands"
@@ -9611,13 +9626,16 @@
   },
   {
     "id": "u22-0445",
-    "es": "No diga nada a Jhon Fredy.",
-    "en": "Don't say anything to Jhon Fredy. (polite)",
+    "es": "No le diga nada todavía, señor.",
+    "en": "Don't tell him anything yet, sir. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:indirect-objects",
       "g:negation-words",
-      "l:decir"
+      "l:decir",
+      "l:señor",
+      "p:ya-todavia-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -9667,17 +9685,14 @@
   },
   {
     "id": "u22-0448",
-    "es": "No lo entiendas mal.",
-    "en": "Don't take it the wrong way. (to a friend)",
+    "es": "No lo digas así.",
+    "en": "Don't say it like that. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:negative-commands",
-      "l:entender",
-      "l:mal",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:decir"
     ],
     "targets": [
       "g:negative-commands"
@@ -9866,7 +9881,7 @@
   },
   {
     "id": "u22-0457",
-    "es": "No esté nervioso, es una entrevista.",
+    "es": "No esté nervioso, es solo una entrevista.",
     "en": "Don't be nervous, it's just an interview. (polite)",
     "accept": [],
     "acceptEn": [],
@@ -9878,7 +9893,8 @@
       "l:entrevista",
       "l:estar",
       "l:nervioso",
-      "l:ser"
+      "l:ser",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:negative-commands"
@@ -9971,19 +9987,24 @@
   },
   {
     "id": "u22-0462",
-    "es": "Lo siento mucho, de verdad.",
-    "en": "I'm so sorry, truly.",
+    "es": "No sé qué decir. Lo siento de verdad.",
+    "en": "I don't know what to say. I'm truly sorry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:en-serio",
-      "c:sentido-pesame",
+      "c:lo-siento-pero-no-puedo",
+      "c:no-se",
+      "g:indirect-questions",
+      "g:yo-irregular",
+      "l:decir",
+      "l:qué",
+      "l:saber",
       "l:sentir",
-      "l:verdad"
+      "l:verdad",
+      "p:no-se-que-hacer"
     ],
-    "targets": [
-      "c:sentido-pesame"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u22",
     "theme": "bad news and condolences",
@@ -10041,18 +10062,25 @@
   },
   {
     "id": "u22-0465",
-    "es": "Lo siento mucho, señora.",
-    "en": "I'm so sorry, ma'am.",
+    "es": "Lo siento, señora. Su esposo era un gran hombre.",
+    "en": "I'm sorry, ma'am. Your husband was a great man. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:sentido-pesame",
+      "c:era",
+      "c:lo-siento-pero-no-puedo",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:esposo",
+      "l:gran",
+      "l:hombre",
       "l:sentir",
-      "l:señora"
+      "l:ser",
+      "l:señora",
+      "p:possessives-basic"
     ],
-    "targets": [
-      "c:sentido-pesame"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u22",
     "theme": "bad news and condolences",
@@ -10165,7 +10193,7 @@
   {
     "id": "u22-0471",
     "es": "Te acompaño en este momento.",
-    "en": "I'm here for you at this time.",
+    "en": "I'm here for you at this time. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10185,7 +10213,7 @@
   {
     "id": "u22-0472",
     "es": "Mi sentido pésame para ti y tu familia.",
-    "en": "My condolences to you and your family.",
+    "en": "My condolences to you and your family. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10640,14 +10668,17 @@
   },
   {
     "id": "u22-0492",
-    "es": "Mariana acompaña a Hernando a todas partes.",
-    "en": "Mariana goes everywhere with Hernando.",
+    "es": "Hernando siempre acompaña a Tomás al mercado.",
+    "en": "Hernando always goes with Tomás to the market.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-ar",
       "l:acompañar",
-      "l:parte",
+      "l:mercado",
+      "l:siempre",
+      "p:frequency-scale",
       "p:personal-a"
     ],
     "targets": [
@@ -11473,8 +11504,8 @@
   },
   {
     "id": "u22-0530",
-    "es": "¿Qué hicieron? Dímelo ya.",
-    "en": "What did they do? Tell me right now. (to a friend)",
+    "es": "¿Qué pasó? Dímelo ya.",
+    "en": "What happened? Tell me right now. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11482,12 +11513,13 @@
       "g:commands-with-pronouns",
       "g:direct-objects",
       "g:double-pronouns",
-      "g:preterite-ser-ir-hacer",
+      "g:preterite-ar",
       "g:questions",
       "l:decir",
-      "l:hacer",
+      "l:pasar",
       "l:qué",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:ocurrir-producirse"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11852,11 +11884,12 @@
   },
   {
     "id": "u22-0547",
-    "es": "Espero que no sea muy grande.",
-    "en": "I hope it isn't too big.",
+    "es": "Espero que la multa no sea muy grande.",
+    "en": "I hope the fine isn't too big.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
       "g:subj-irregulars",
@@ -11864,6 +11897,7 @@
       "g:that-clauses",
       "l:esperar",
       "l:grande",
+      "l:multa",
       "l:ser",
       "p:no-es-nada-adj",
       "p:quantifiers-basic"
@@ -11901,15 +11935,17 @@
   },
   {
     "id": "u22-0549",
-    "es": "Vamos adelante, todos juntos.",
-    "en": "We're moving ahead, all together.",
+    "es": "Adelante, Hernando, lo estábamos esperando.",
+    "en": "Come in, Hernando, we were waiting for you.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ir-a-plans",
+      "g:direct-objects",
+      "g:imperfect-progressive",
+      "g:imperfect-states",
       "l:adelante",
-      "l:ir",
-      "l:juntos"
+      "l:esperar",
+      "l:estar"
     ],
     "targets": [
       "l:adelante"
@@ -11921,16 +11957,17 @@
   },
   {
     "id": "u22-0550",
-    "es": "Vamos adelante, como siempre.",
-    "en": "We're moving ahead, as always.",
+    "es": "Siéntese adelante, conmigo.",
+    "en": "Sit in the front, with me. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ir-a-plans",
+      "g:commands-usted",
+      "g:commands-with-pronouns",
+      "g:prep-pronouns",
+      "g:reflexive-routine",
       "l:adelante",
-      "l:ir",
-      "l:siempre",
-      "p:frequency-scale"
+      "l:sentarse"
     ],
     "targets": [
       "l:adelante"
@@ -12107,7 +12144,7 @@
   {
     "id": "u22-0559",
     "es": "Los clientes pasaron adelante cuando abrimos.",
-    "en": "The customers went forward when we opened.",
+    "en": "The customers came in when we opened.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12131,7 +12168,7 @@
   {
     "id": "u22-0560",
     "es": "Pasen adelante, hay mesas en el patio.",
-    "en": "Come forward, there are tables in the patio. (you all)",
+    "en": "Come on in, there are tables on the patio. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12437,7 +12474,7 @@
   {
     "id": "u22-0574",
     "es": "¿Me regala un tintico, por favor?",
-    "en": "Could I have a little black coffee, please?",
+    "en": "Could I have a black coffee, please? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12577,20 +12614,15 @@
   },
   {
     "id": "u22-0580",
-    "es": "Vamos a sentarnos un ratito en el banco.",
-    "en": "Let's sit on the bench for a little while.",
+    "es": "Sentémonos un ratico en el banco de la plaza.",
+    "en": "Let's sit on the bench in the square for a little while.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:vamos-a",
       "g:diminutives",
       "g:gender-articles",
-      "g:ir-a-plans",
-      "g:object-pronoun-position",
-      "g:reflexive-routine",
       "l:banco",
-      "l:ir",
-      "l:sentar"
+      "l:plaza"
     ],
     "targets": [
       "g:diminutives"
@@ -12743,7 +12775,7 @@
   {
     "id": "u22-0587",
     "es": "Ahorita estoy llegando.",
-    "en": "I'm arriving shortly.",
+    "en": "I'm almost there.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12766,7 +12798,7 @@
   {
     "id": "u22-0588",
     "es": "Hernando toma su tintico a las seis de la mañana.",
-    "en": "Hernando has his little coffee at six in the morning.",
+    "en": "Hernando has his black coffee at six in the morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12811,8 +12843,8 @@
   },
   {
     "id": "u22-0590",
-    "es": "Rosa siempre servía un tintico con una galletita.",
-    "en": "Rosa always served a little black coffee with a biscuit.",
+    "es": "Rosa siempre servía un tintico con una galletica.",
+    "en": "Rosa always served a black coffee with a little biscuit.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12833,7 +12865,7 @@
   },
   {
     "id": "u22-0591",
-    "es": "Vale hizo unas galletitas de queso para los clientes.",
+    "es": "Vale hizo unas galleticas de queso para los clientes.",
     "en": "Vale made some little cheese biscuits for the customers.",
     "accept": [],
     "acceptEn": [],
@@ -12856,8 +12888,8 @@
   },
   {
     "id": "u22-0592",
-    "es": "Les traje unas galletitas de mi mamá.",
-    "en": "I brought you some little biscuits from my mum.",
+    "es": "Les traje unas galleticas de mi mamá.",
+    "en": "I brought you all some little biscuits from my mum.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12958,7 +12990,7 @@
   {
     "id": "u22-0597",
     "es": "Pongan la mesa en la ventana.",
-    "en": "Put the table at the window. (you all)",
+    "en": "Put the table by the window. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13021,17 +13053,15 @@
   },
   {
     "id": "u22-0600",
-    "es": "Vivo en una casita pequeña en La Candelaria.",
-    "en": "I live in a small little house in La Candelaria.",
+    "es": "Vivo en una casita en La Candelaria.",
+    "en": "I live in a little house in La Candelaria.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:vivo-en",
-      "g:adjective-agreement",
       "g:diminutives",
       "g:gender-articles",
       "g:present-er-ir",
-      "l:pequeño",
       "l:vivir"
     ],
     "targets": [
@@ -13044,16 +13074,16 @@
   },
   {
     "id": "u22-0601",
-    "es": "Tomás compró una casita en el campo.",
-    "en": "Tomás bought a little house in the country.",
+    "es": "Tomás quiere una casita en el campo.",
+    "en": "Tomás wants a little house in the country.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:diminutives",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:stem-boot",
       "l:campo",
-      "l:comprar"
+      "l:querer"
     ],
     "targets": [
       "g:diminutives"
@@ -13089,7 +13119,7 @@
   },
   {
     "id": "u22-0603",
-    "es": "Las plantitas del patio necesitan agua.",
+    "es": "Las planticas del patio necesitan agua.",
     "en": "The little plants in the patio need water.",
     "accept": [],
     "acceptEn": [],
@@ -13111,7 +13141,7 @@
   },
   {
     "id": "u22-0604",
-    "es": "Vale cuida sus plantitas todas las mañanas.",
+    "es": "Vale cuida sus planticas todas las mañanas.",
     "en": "Vale looks after her little plants every morning.",
     "accept": [],
     "acceptEn": [],
@@ -13135,18 +13165,22 @@
   },
   {
     "id": "u22-0605",
-    "es": "Una ventanita pequeña mira a la calle.",
-    "en": "A little window faces the street.",
+    "es": "La cocina tiene una ventanita que mira a la calle.",
+    "en": "The kitchen has a little window that looks onto the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:oye-mira",
-      "g:adjective-agreement",
+      "c:tienes",
       "g:diminutives",
       "g:gender-articles",
+      "g:relative-que",
+      "g:stem-boot",
       "l:calle",
+      "l:cocina",
       "l:mirar",
-      "l:pequeño"
+      "l:tener",
+      "p:lugar-tiene"
     ],
     "targets": [
       "g:diminutives"
@@ -13270,8 +13304,8 @@
   },
   {
     "id": "u22-0611",
-    "es": "La hijita de Hernando canta muy bonito.",
-    "en": "Hernando's little daughter sings very nicely.",
+    "es": "La hijita de la vecina canta muy bonito.",
+    "en": "The neighbour's little daughter sings very nicely.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13280,6 +13314,7 @@
       "g:present-ar",
       "l:bonito",
       "l:cantar",
+      "l:vecino",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -13704,19 +13739,17 @@
   },
   {
     "id": "u22-0631",
-    "es": "Escríbame una tarjetica con su nombre.",
-    "en": "Write me a little card with your name. (polite)",
+    "es": "Le escribí una tarjetica de cumpleaños.",
+    "en": "I wrote her a little birthday card.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:diminutives",
       "g:gender-articles",
-      "l:escribir",
-      "l:nombre",
-      "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "g:indirect-objects",
+      "g:preterite-er-ir",
+      "l:cumpleaños",
+      "l:escribir"
     ],
     "targets": [
       "g:diminutives"
@@ -13750,16 +13783,16 @@
   },
   {
     "id": "u22-0633",
-    "es": "Es un problemita pequeño.",
-    "en": "It's a minor little problem.",
+    "es": "Es solo un problemita.",
+    "en": "It's just a little problem.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:diminutives",
       "g:gender-articles",
       "g:ser-identity",
-      "l:pequeño",
-      "l:ser"
+      "l:ser",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:diminutives"
@@ -13834,7 +13867,7 @@
   },
   {
     "id": "u22-0637",
-    "es": "¿Puedo hacerle una preguntita?",
+    "es": "¿Puedo hacerle una preguntica?",
     "en": "May I ask you a little question? (polite)",
     "accept": [],
     "acceptEn": [],
@@ -14095,8 +14128,8 @@
   },
   {
     "id": "u22-0649",
-    "es": "Nos vemos lueguito.",
-    "en": "See you in a little while.",
+    "es": "Nos vemos más tardecito.",
+    "en": "See you a bit later.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14115,7 +14148,7 @@
   {
     "id": "u22-0650",
     "es": "Ya mismito llegamos.",
-    "en": "We're almost there.",
+    "en": "We'll be there any minute.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14354,16 +14387,14 @@
   },
   {
     "id": "u22-0662",
-    "es": "Mi sobrino camina solito desde los tres años.",
-    "en": "My nephew has walked by himself since he was three.",
+    "es": "Mi sobrino ya come solito.",
+    "en": "My nephew already eats by himself.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:diminutives",
-      "g:gender-articles",
-      "g:present-ar",
-      "l:año",
-      "l:caminar",
+      "g:present-er-ir",
+      "l:comer",
       "l:sobrino",
       "p:possessives-basic"
     ],
@@ -14377,17 +14408,18 @@
   },
   {
     "id": "u22-0663",
-    "es": "Ese niño es muy inteligente y muy bajito.",
-    "en": "That boy is very intelligent and very short.",
+    "es": "Mi abuelita era bajita y muy alegre.",
+    "en": "My granny was short and very cheerful.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
+      "c:era",
       "g:diminutives",
-      "g:ser-identity",
-      "l:inteligente",
-      "l:niño",
+      "g:imperfect-states",
+      "g:subj-wanting",
+      "l:alegrar",
       "l:ser",
+      "p:possessives-basic",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -14641,17 +14673,22 @@
   },
   {
     "id": "u22-0675",
-    "es": "Un trabajito pequeño no es difícil.",
-    "en": "A little job isn't hard.",
+    "es": "Ese trabajito me lo pagaron bien.",
+    "en": "They paid me well for that little job.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
+      "g:demonstratives",
       "g:diminutives",
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:difícil",
-      "l:pequeño",
-      "l:ser"
+      "g:direct-objects",
+      "g:double-pronouns",
+      "g:preterite-ar",
+      "l:bien",
+      "l:pagar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:diminutives"
@@ -15133,15 +15170,17 @@
   },
   {
     "id": "u22-0697",
-    "es": "Jhon Fredy es un amiguito de la infancia de Vale.",
-    "en": "Jhon Fredy is a childhood buddy of Vale's.",
+    "es": "Jhon Fredy es el más jovencito del café.",
+    "en": "Jhon Fredy is the youngest at the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:diminutives",
       "g:gender-articles",
       "g:ser-identity",
-      "l:infancia",
+      "g:superlatives",
+      "l:café",
+      "l:jovencito",
       "l:ser"
     ],
     "targets": [
@@ -15154,7 +15193,7 @@
   },
   {
     "id": "u22-0698",
-    "es": "Compré una plantita para Hernando.",
+    "es": "Compré una plantica para Hernando.",
     "en": "I bought a little plant for Hernando.",
     "accept": [],
     "acceptEn": [],
@@ -15249,14 +15288,14 @@
   },
   {
     "id": "u22-0702",
-    "es": "La cafetería es chiquita, pero es mía.",
-    "en": "The café is tiny, but it's mine.",
+    "es": "La cafetería es chiquita, pero es nuestra.",
+    "en": "The café is tiny, but it's ours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:diminutives",
       "g:gender-articles",
-      "g:possessives-stressed",
+      "g:possessives",
       "g:ser-identity",
       "l:cafetería",
       "l:ser",
@@ -15473,12 +15512,13 @@
   },
   {
     "id": "u22-0712",
-    "es": "Tenemos una fiestecita el viernes.",
+    "es": "Tenemos una fiestica el viernes.",
     "en": "We're having a little party on Friday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:diminutives",
       "g:gender-articles",
       "l:tener",
       "l:viernes",
@@ -15537,7 +15577,7 @@
   },
   {
     "id": "u22-0715",
-    "es": "Mariana escribió una notita sobre el café.",
+    "es": "Mariana escribió una notica sobre el café.",
     "en": "Mariana wrote a little piece about the café.",
     "accept": [],
     "acceptEn": [],
@@ -15604,8 +15644,8 @@
   },
   {
     "id": "u22-0718",
-    "es": "Mis padres y yo nos conocemos muy bien.",
-    "en": "My parents and I know each other very well.",
+    "es": "Mi hermana y yo nos conocemos muy bien.",
+    "en": "My sister and I know each other very well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15613,11 +15653,10 @@
       "g:present-er-ir",
       "l:bien",
       "l:conocer",
-      "l:padres",
+      "l:hermana",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
       "p:hedge-knowledge",
-      "p:masculine-plural-mixed",
       "p:me-te-nos-objects",
       "p:possessives-basic",
       "p:saber-conocer",
@@ -15868,8 +15907,8 @@
   },
   {
     "id": "u22-0729",
-    "es": "Nos encontramos en el centro un domingo.",
-    "en": "We ran into each other downtown on a Sunday.",
+    "es": "Un domingo, Mariana y yo nos encontramos en el centro.",
+    "en": "One Sunday, Mariana and I ran into each other downtown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15916,8 +15955,8 @@
   },
   {
     "id": "u22-0731",
-    "es": "Nos llamamos los domingos.",
-    "en": "We call each other on Sundays.",
+    "es": "Mi mamá y yo nos llamamos los domingos.",
+    "en": "My mum and I call each other on Sundays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15926,7 +15965,9 @@
       "g:reflexive-routine",
       "l:domingo",
       "l:llamarse",
-      "p:days-el-lunes"
+      "l:mamá",
+      "p:days-el-lunes",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -16027,17 +16068,15 @@
   },
   {
     "id": "u22-0736",
-    "es": "Nos apoyamos en los momentos difíciles.",
-    "en": "We support each other in difficult times.",
+    "es": "En esta cuadra todos nos apoyamos.",
+    "en": "On this block we all support each other.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
-      "g:gender-articles",
       "g:present-ar",
       "l:apoyar",
-      "l:difícil",
-      "l:momento",
+      "l:cuadra",
+      "p:demonstratives-basic",
       "p:me-te-nos-objects"
     ],
     "targets": [],
@@ -16397,8 +16436,8 @@
   },
   {
     "id": "u22-0752",
-    "es": "Los novios se dieron la mano.",
-    "en": "The couple held hands.",
+    "es": "Los dos taxistas se dieron la mano.",
+    "en": "The two taxi drivers shook hands.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16407,7 +16446,7 @@
       "g:reflexive-routine",
       "l:darse",
       "l:mano",
-      "l:novio"
+      "l:taxista"
     ],
     "targets": [],
     "kind": "statement",
@@ -16417,16 +16456,18 @@
   },
   {
     "id": "u22-0753",
-    "es": "Vale y ella se hablan todos los días.",
-    "en": "Vale and she talk to each other every day.",
+    "es": "Vale y su mamá se hablan todos los días.",
+    "en": "Vale and her mum talk to each other every day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:passive-se",
       "g:present-ar",
-      "g:reflexive-routine",
       "l:día",
       "l:hablar",
+      "l:mamá",
+      "p:possessives-basic",
       "p:se-reciproco",
       "p:todos-los-dias",
       "p:veces-al"
@@ -16463,7 +16504,7 @@
   {
     "id": "u22-0755",
     "es": "Ellos se abrazaron al verse.",
-    "en": "They hugged each other when they saw each other.",
+    "en": "They hugged when they saw each other.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17002,18 +17043,19 @@
   },
   {
     "id": "u22-0779",
-    "es": "Tomás y Vale se hablaron por una receta.",
-    "en": "Tomás and Vale talked to each other about a recipe.",
+    "es": "Tomás y Vale no se hablaron en toda la mañana.",
+    "en": "Tomás and Vale didn't speak to each other all morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-se",
       "g:gender-articles",
-      "g:por-para-1",
       "g:preterite-ar",
       "g:reflexive-routine",
       "l:hablar",
-      "l:receta",
-      "p:se-reciproco"
+      "l:mañana",
+      "p:se-reciproco",
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:se-reciproco"
@@ -17048,15 +17090,17 @@
   },
   {
     "id": "u22-0781",
-    "es": "Hernando y Rosa se querían mucho.",
-    "en": "Hernando and Rosa were very fond of each other.",
+    "es": "Hernando y Rosa se conocían desde jóvenes.",
+    "en": "Hernando and Rosa had known each other since they were young.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:imperfect-habitual",
       "g:reflexive-routine",
-      "l:querer",
-      "p:quantifiers-basic",
+      "l:conocer",
+      "l:joven",
+      "p:saber-conocer",
       "p:se-reciproco"
     ],
     "targets": [
@@ -17069,19 +17113,15 @@
   },
   {
     "id": "u22-0782",
-    "es": "Los vecinos y nosotros nos conocemos bien.",
-    "en": "The neighbours and we know each other well.",
+    "es": "En el barrio todos nos conocemos.",
+    "en": "In the neighbourhood we all know each other.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "g:gender-articles",
       "g:present-er-ir",
-      "l:bien",
+      "l:barrio",
       "l:conocer",
-      "l:vecino",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
       "p:me-te-nos-objects",
       "p:saber-conocer",
       "p:se-reciproco"
@@ -17096,18 +17136,19 @@
   },
   {
     "id": "u22-0783",
-    "es": "Los clientes y Vale se abrazan al entrar.",
-    "en": "The customers and Vale hug each other on arrival.",
+    "es": "Vale y sus clientes de siempre se saludan de beso.",
+    "en": "Vale and her regular customers greet each other with a kiss.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:prep-infinitive",
+      "g:passive-se",
       "g:present-ar",
-      "g:reflexive-routine",
-      "l:abrazarse",
+      "l:beso",
       "l:cliente",
-      "l:entrar",
+      "l:saludar",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:possessives-basic",
       "p:se-reciproco"
     ],
     "targets": [
@@ -17306,7 +17347,7 @@
   },
   {
     "id": "u22-0793",
-    "es": "¡Qué casa bonita!",
+    "es": "¡Qué casa tan bonita!",
     "en": "What a pretty house!",
     "accept": [],
     "acceptEn": [],
@@ -17315,7 +17356,8 @@
       "l:bonito",
       "l:casa",
       "l:qué",
-      "p:exclamations-basic"
+      "p:exclamations-basic",
+      "p:orgulloso-admiracion"
     ],
     "targets": [],
     "kind": "statement",
@@ -17325,15 +17367,16 @@
   },
   {
     "id": "u22-0794",
-    "es": "¡Qué casa grande!",
-    "en": "What a big house!",
+    "es": "¡Qué cocina tan grande!",
+    "en": "What a big kitchen!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "l:casa",
+      "l:cocina",
       "l:grande",
       "l:qué",
-      "p:exclamations-basic"
+      "p:exclamations-basic",
+      "p:orgulloso-admiracion"
     ],
     "targets": [],
     "kind": "statement",
@@ -17343,7 +17386,7 @@
   },
   {
     "id": "u22-0795",
-    "es": "¡Qué día largo!",
+    "es": "¡Qué día tan largo!",
     "en": "What a long day!",
     "accept": [],
     "acceptEn": [],
@@ -17351,7 +17394,8 @@
       "l:día",
       "l:largo",
       "l:qué",
-      "p:exclamations-basic"
+      "p:exclamations-basic",
+      "p:orgulloso-admiracion"
     ],
     "targets": [],
     "kind": "statement",
@@ -17545,7 +17589,7 @@
   {
     "id": "u22-0806",
     "es": "¡Qué pena contigo!",
-    "en": "I'm so sorry! (to a friend)",
+    "en": "I'm so sorry about this! (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17668,7 +17712,7 @@
   {
     "id": "u22-0813",
     "es": "¡Qué pena con ustedes!",
-    "en": "I'm so sorry for you all!",
+    "en": "I'm so sorry about this! (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17761,7 +17805,7 @@
   },
   {
     "id": "u22-0818",
-    "es": "¡Qué gente amable!",
+    "es": "¡Qué gente tan amable!",
     "en": "What kind people!",
     "accept": [],
     "acceptEn": [],
@@ -17770,7 +17814,8 @@
       "l:gente",
       "l:qué",
       "p:exclamations-basic",
-      "p:la-gente-singular"
+      "p:la-gente-singular",
+      "p:orgulloso-admiracion"
     ],
     "targets": [],
     "kind": "statement",
@@ -17780,7 +17825,7 @@
   },
   {
     "id": "u22-0819",
-    "es": "¡Qué familia unida!",
+    "es": "¡Qué familia tan unida!",
     "en": "What a close family!",
     "accept": [],
     "acceptEn": [],
@@ -17788,7 +17833,8 @@
       "l:familia",
       "l:qué",
       "l:unir",
-      "p:exclamations-basic"
+      "p:exclamations-basic",
+      "p:orgulloso-admiracion"
     ],
     "targets": [],
     "kind": "statement",
@@ -17799,7 +17845,7 @@
   {
     "id": "u22-0820",
     "es": "¡Qué cansancio!",
-    "en": "How tiring!",
+    "en": "I'm so tired!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17957,8 +18003,8 @@
   },
   {
     "id": "u22-0828",
-    "es": "¡Qué elegante estás hoy, Hernando!",
-    "en": "How elegant you look today, Hernando!",
+    "es": "¡Qué elegante está hoy, don Hernando!",
+    "en": "How elegant you look today, don Hernando! (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17967,7 +18013,9 @@
       "l:estar",
       "l:hoy",
       "l:qué",
-      "p:exclamations-basic"
+      "p:don-dona-nombre",
+      "p:exclamations-basic",
+      "p:senor-don-article"
     ],
     "targets": [],
     "kind": "statement",
@@ -17977,15 +18025,15 @@
   },
   {
     "id": "u22-0829",
-    "es": "¡Qué guapa estás, Mariana!",
-    "en": "How beautiful you look, Mariana!",
+    "es": "¡Qué bonita estás, Mariana!",
+    "en": "You look so pretty, Mariana!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:estar-location-states",
+      "l:bonito",
       "l:estar",
-      "l:guapo",
       "l:qué",
       "p:exclamations-basic"
     ],
@@ -18093,11 +18141,17 @@
   },
   {
     "id": "u22-0835",
-    "es": "¡Qué raro!",
-    "en": "How strange!",
+    "es": "¡Qué raro, no hay nadie en la calle!",
+    "en": "How strange, there's nobody in the street!",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:no-hay-nada",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:negation-words",
+      "l:calle",
       "l:qué",
       "l:raro",
       "p:exclamations-basic"
@@ -18395,20 +18449,18 @@
   },
   {
     "id": "u22-0849",
-    "es": "¡Qué pena! ¿Está bien?",
-    "en": "What a shame! Is he OK?",
+    "es": "¡Qué triste! ¿Y cómo está él?",
+    "en": "How sad! And how is he?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "c:que-pena",
+      "c:como-estas",
       "g:estar-location-states",
-      "l:bien",
+      "l:cómo",
       "l:estar",
-      "l:pena",
       "l:qué",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:triste",
+      "p:exclamations-basic"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -18461,17 +18513,16 @@
   },
   {
     "id": "u22-0852",
-    "es": "Hoy cumplo mi cumpleaños número cuarenta.",
-    "en": "Today is my fortieth birthday.",
+    "es": "Hoy cumplo cuarenta años.",
+    "en": "I turn forty today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-er-ir",
-      "l:cumpleaños",
+      "l:año",
       "l:cumplir",
       "l:hoy",
-      "l:número",
-      "p:possessives-basic"
+      "p:cumplir-anos"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -18732,15 +18783,15 @@
   },
   {
     "id": "u22-0864",
-    "es": "El año inicia en enero, con las velitas.",
-    "en": "The year begins in January, with the little candles.",
+    "es": "La Navidad colombiana inicia con las velitas.",
+    "en": "Colombian Christmas starts with the little candles.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:present-ar",
-      "l:año",
-      "l:enero",
+      "l:colombiano",
       "l:iniciar",
       "l:velita"
     ],
@@ -18755,21 +18806,19 @@
   },
   {
     "id": "u22-0865",
-    "es": "La novena inicia el dieciséis de diciembre.",
-    "en": "The novena begins on the sixteenth of December.",
+    "es": "Las clases inician en febrero.",
+    "en": "Classes start in February.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:diciembre",
-      "l:iniciar",
-      "l:novena",
-      "p:dates-years"
+      "l:clase",
+      "l:febrero",
+      "l:iniciar"
     ],
     "targets": [
-      "l:iniciar",
-      "l:novena"
+      "l:iniciar"
     ],
     "kind": "statement",
     "unit": "u22",
@@ -19102,8 +19151,8 @@
   },
   {
     "id": "u22-0880",
-    "es": "Una mayoría de invitados vino con regalos.",
-    "en": "A majority of guests came with presents.",
+    "es": "La mayoría de los invitados trajo regalos.",
+    "en": "Most of the guests brought presents.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19112,7 +19161,9 @@
       "l:invitado",
       "l:mayoría",
       "l:regalo",
-      "l:venir"
+      "l:traer",
+      "p:la-mayoria-de",
+      "p:llevar-traer"
     ],
     "targets": [
       "l:invitado",
@@ -19213,15 +19264,16 @@
   },
   {
     "id": "u22-0885",
-    "es": "Un juez decide sobre el edificio.",
-    "en": "A judge decides about the building.",
+    "es": "Un juez va a decidir sobre el edificio.",
+    "en": "A judge is going to decide about the building.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:ir-a-plans",
       "l:decidir",
       "l:edificio",
+      "l:ir",
       "l:juez"
     ],
     "targets": [
@@ -19426,7 +19478,7 @@
   {
     "id": "u22-0894",
     "es": "Vale pregunta por el valor del permiso.",
-    "en": "Vale asks about the price of the permit.",
+    "en": "Vale asks about the cost of the permit.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19677,18 +19729,16 @@
   },
   {
     "id": "u22-0905",
-    "es": "Mariana desarrolló su trabajo durante un mes.",
-    "en": "Mariana developed her work over a month.",
+    "es": "Mariana desarrolló la idea del artículo con Tomás.",
+    "en": "Mariana developed the idea for the article with Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "l:artículo",
       "l:desarrollar",
-      "l:mes",
-      "l:trabajo",
-      "p:durar-durante",
-      "p:possessives-basic"
+      "l:idea"
     ],
     "targets": [
       "l:desarrollar"
@@ -19794,18 +19844,19 @@
   },
   {
     "id": "u22-0910",
-    "es": "Bogotá es un área muy grande.",
-    "en": "Bogotá is a very large area.",
+    "es": "Simón tiene su área en la esquina del café.",
+    "en": "Simón has his own area in the corner of the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:grande",
-      "l:ser",
+      "g:stem-boot",
+      "l:café",
+      "l:esquina",
+      "l:tener",
       "l:área",
-      "p:el-agua-fria",
-      "p:quantifiers-basic"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:área"
@@ -20001,18 +20052,18 @@
   },
   {
     "id": "u22-0919",
-    "es": "Tomás levantó su taza para agradecer a Vale.",
-    "en": "Tomás raised his cup to thank Vale.",
+    "es": "Tomás no sabe cómo agradecer a Vale.",
+    "en": "Tomás doesn't know how to thank Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-ar",
+      "g:indirect-questions",
+      "g:present-er-ir",
       "l:agradecer",
-      "l:levantar",
-      "l:taza",
-      "p:para-inf",
-      "p:para-inf-purpose",
-      "p:possessives-basic"
+      "l:cómo",
+      "l:saber",
+      "p:no-se-que-hacer",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:agradecer"
@@ -20047,13 +20098,14 @@
   },
   {
     "id": "u22-0921",
-    "es": "Vine a agradecer por la ayuda.",
-    "en": "I came to say thank you for the help.",
+    "es": "Vine a agradecerles la ayuda.",
+    "en": "I came to thank you all for the help.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
+      "g:indirect-objects",
+      "g:object-pronoun-position",
       "g:preterite-irregular-strong",
       "l:agradecer",
       "l:ayuda",
@@ -20138,17 +20190,17 @@
   },
   {
     "id": "u22-0925",
-    "es": "Se cayó la luz en todo el barrio.",
-    "en": "The power went out in the whole neighbourhood.",
+    "es": "Se cayó el sistema en el banco.",
+    "en": "The system went down at the bank.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
       "g:reflexive-routine",
-      "l:barrio",
+      "l:banco",
       "l:caerse",
-      "l:luz"
+      "l:sistema"
     ],
     "targets": [
       "l:caerse"
@@ -20199,19 +20251,20 @@
   },
   {
     "id": "u22-0928",
-    "es": "Hoy hace mucho frío y cae una lluvia fuerte.",
-    "en": "It's very cold today and heavy rain is falling.",
+    "es": "Hoy hace mucho frío y está lloviendo fuerte.",
+    "en": "It's very cold today and it's raining hard.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:estar-gerund",
+      "g:estar-location-states",
       "g:present-er-ir",
-      "l:caer",
+      "l:estar",
       "l:frío",
       "l:fuerte",
       "l:hacer",
       "l:hoy",
-      "l:lluvia",
+      "l:llover",
       "p:hace-frio",
       "p:quantifiers-basic"
     ],
@@ -20310,16 +20363,16 @@
   },
   {
     "id": "u22-0933",
-    "es": "Los pájaros vuelan hacia el norte en invierno.",
-    "en": "Birds fly north in winter.",
+    "es": "En invierno, los pájaros de Toronto vuelan al sur.",
+    "en": "In winter, Toronto's birds fly south.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
       "l:invierno",
-      "l:norte",
       "l:pájaro",
+      "l:sur",
       "l:volar"
     ],
     "targets": [
@@ -20449,19 +20502,19 @@
   },
   {
     "id": "u22-0939",
-    "es": "Los niños corren y quieren volar.",
-    "en": "The children run and want to fly.",
+    "es": "Mi sobrino quiere volar en avión.",
+    "en": "My nephew wants to fly on a plane.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:present-er-ir",
       "g:stem-boot",
       "g:verb-infinitive",
-      "l:correr",
-      "l:niño",
+      "l:avión",
       "l:querer",
-      "l:volar"
+      "l:sobrino",
+      "l:volar",
+      "p:possessives-basic",
+      "p:transport-en"
     ],
     "targets": [
       "l:volar"
@@ -20566,16 +20619,17 @@
   },
   {
     "id": "u22-0944",
-    "es": "Fuimos al bautizo del hijo de Jhon Fredy.",
-    "en": "We went to the baptism of Jhon Fredy's son.",
+    "es": "Vamos a ir al bautizo del sobrino de Jhon Fredy.",
+    "en": "We're going to go to Jhon Fredy's nephew's baptism.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:vamos-a",
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
+      "g:ir-a-plans",
       "l:bautizo",
-      "l:hijo",
       "l:ir",
+      "l:sobrino",
       "p:ir-a-venir-de-place"
     ],
     "targets": [
@@ -20748,12 +20802,13 @@
   },
   {
     "id": "u22-0952",
-    "es": "Mis tíos celebran su matrimonio este sábado.",
-    "en": "My aunt and uncle are celebrating their marriage this Saturday.",
+    "es": "Mis tíos celebran cuarenta años de matrimonio este sábado.",
+    "en": "My aunt and uncle are celebrating forty years of marriage this Saturday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
+      "l:año",
       "l:celebrar",
       "l:matrimonio",
       "l:sábado",
@@ -20841,18 +20896,16 @@
   },
   {
     "id": "u22-0956",
-    "es": "El matrimonio de Hernando duró muchos años.",
-    "en": "Hernando's marriage lasted many years.",
+    "es": "Hernando nunca habla de su matrimonio.",
+    "en": "Hernando never talks about his marriage.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:preterite-ar",
-      "l:año",
-      "l:durar",
+      "g:present-ar",
+      "l:hablar",
       "l:matrimonio",
-      "p:durar-durante",
-      "p:quantifiers-basic"
+      "p:frequency-scale",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:matrimonio"
@@ -21004,16 +21057,18 @@
   },
   {
     "id": "u22-0963",
-    "es": "Hernando guarda la fecha de nacimiento de Rosa.",
-    "en": "Hernando keeps Rosa's date of birth.",
+    "es": "Hernando todavía recuerda la fecha de nacimiento de Rosa.",
+    "en": "Hernando still remembers Rosa's date of birth.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:stem-boot",
       "l:fecha",
-      "l:guardar",
-      "l:nacimiento"
+      "l:nacimiento",
+      "l:recordar",
+      "p:recordar-acordarse",
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "l:nacimiento"
@@ -21139,17 +21194,17 @@
   },
   {
     "id": "u22-0969",
-    "es": "Tomás quiere brindar con Rosa en su recuerdo.",
-    "en": "Tomás wants to make a toast with Rosa in his memory.",
+    "es": "Tomás quiere brindar por Rosa.",
+    "en": "Tomás wants to drink a toast to Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:por-para-1",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:brindar",
       "l:querer",
-      "l:recuerdo",
-      "p:possessives-basic"
+      "p:brindo-por"
     ],
     "targets": [
       "l:brindar"
@@ -21184,16 +21239,17 @@
   },
   {
     "id": "u22-0971",
-    "es": "¿Brindamos con el contrato firmado?",
-    "en": "Shall we make a toast with the contract signed?",
+    "es": "¿Brindamos por el contrato?",
+    "en": "Shall we drink a toast to the contract?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:present-ar",
       "l:brindar",
       "l:contrato",
-      "l:firmar"
+      "p:brindo-por"
     ],
     "targets": [
       "l:brindar"
@@ -21227,22 +21283,18 @@
   },
   {
     "id": "u22-0973",
-    "es": "Celebramos que el contrato salió bien.",
-    "en": "We celebrated that the contract went well.",
+    "es": "Anoche celebramos el contrato en la cafetería.",
+    "en": "Last night we celebrated the contract at the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
+      "c:ayer-anoche",
       "g:gender-articles",
-      "g:present-ar",
-      "g:preterite-er-ir",
-      "g:that-clauses",
-      "l:bien",
+      "g:preterite-ar",
+      "l:anoche",
+      "l:cafetería",
       "l:celebrar",
-      "l:contrato",
-      "l:salir",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:contrato"
     ],
     "targets": [
       "l:celebrar"
@@ -21361,15 +21413,18 @@
   },
   {
     "id": "u22-0979",
-    "es": "Celebramos el matrimonio de Tomás y Vale.",
-    "en": "We celebrated Tomás and Vale's marriage.",
+    "es": "Celebramos el matrimonio de mi prima en un pueblo.",
+    "en": "We celebrated my cousin's wedding in a small town.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:celebrar",
-      "l:matrimonio"
+      "l:matrimonio",
+      "l:prima",
+      "l:pueblo",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:celebrar",
@@ -21821,16 +21876,17 @@
   },
   {
     "id": "u22-0999",
-    "es": "Reunimos a todos los amigos de Vale en la cafetería.",
-    "en": "We gathered all of Vale's friends at the café.",
+    "es": "Reunimos a la familia para la novena.",
+    "en": "We gathered the family for the novena.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "l:amigo",
-      "l:cafetería",
-      "l:reunir"
+      "l:familia",
+      "l:novena",
+      "l:reunir",
+      "p:para-inf"
     ],
     "targets": [
       "l:reunir"
@@ -22073,19 +22129,18 @@
   },
   {
     "id": "u22-1010",
-    "es": "Escribí feliz cumpleaños a mi abuela por mensaje.",
-    "en": "I wrote happy birthday to my grandmother by message.",
+    "es": "Mi abuela recibió mi mensaje de feliz cumpleaños.",
+    "en": "My grandmother got my happy birthday message.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:feliz-cumpleanos",
-      "g:por-para-1",
       "g:preterite-er-ir",
       "l:abuela",
       "l:cumpleaños",
-      "l:escribir",
       "l:feliz",
       "l:mensaje",
+      "l:recibir",
       "p:possessives-basic"
     ],
     "targets": [
@@ -22098,14 +22153,15 @@
   },
   {
     "id": "u22-1011",
-    "es": "¡Feliz cumpleaños, Tomás! Treinta y cinco ya.",
-    "en": "Happy birthday, Tomás! Thirty-five already.",
+    "es": "¡Feliz cumpleaños, papá! Setenta ya.",
+    "en": "Happy birthday, Dad! Seventy already.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:feliz-cumpleanos",
       "l:cumpleaños",
-      "l:feliz"
+      "l:feliz",
+      "l:papá"
     ],
     "targets": [
       "c:feliz-cumpleanos"
@@ -22140,17 +22196,18 @@
   },
   {
     "id": "u22-1013",
-    "es": "¡Que cumplas muchos más, Hernando!",
-    "en": "Here's to many more, Hernando!",
+    "es": "¡Que cumpla muchos más, Hernando!",
+    "en": "Here's to many more, Hernando! (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:feliz-cumpleanos",
+      "g:subj-wanting",
       "g:subj-wishes",
-      "l:cumplir"
+      "l:cumplir",
+      "p:quantifiers-basic",
+      "p:que-subj-deseo"
     ],
     "targets": [
-      "c:feliz-cumpleanos",
       "g:subj-wishes"
     ],
     "kind": "statement",
@@ -22343,20 +22400,21 @@
   },
   {
     "id": "u22-1023",
-    "es": "Cuando se fue, Hernando dijo: que te vaya bien.",
-    "en": "When he left, Hernando said: all the best.",
+    "es": "Cuando salí, Hernando me dijo: que te vaya bien.",
+    "en": "When I left, Hernando said to me: all the best.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:buen-viaje",
+      "g:preterite-er-ir",
       "g:preterite-irregular-strong",
-      "g:preterite-ser-ir-hacer",
       "l:bien",
       "l:decir",
       "l:ir",
-      "l:irse",
-      "p:cuando-basic"
+      "l:salir",
+      "p:cuando-basic",
+      "p:me-te-nos-objects"
     ],
     "targets": [],
     "kind": "statement",
@@ -22416,18 +22474,16 @@
   },
   {
     "id": "u22-1026",
-    "es": "Dije a Vale: que te vaya bien en la cocina.",
-    "en": "I told Vale: all the best in the kitchen.",
+    "es": "Vale, que te vaya bien en el banco.",
+    "en": "Vale, all the best at the bank.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:buen-viaje",
       "g:gender-articles",
-      "g:preterite-irregular-strong",
+      "l:banco",
       "l:bien",
-      "l:cocina",
-      "l:decir",
       "l:ir"
     ],
     "targets": [],
@@ -22635,16 +22691,13 @@
   },
   {
     "id": "u22-1036",
-    "es": "Dije a los niños: que se diviertan.",
-    "en": "I told the children: enjoy yourselves.",
+    "es": "Niños, ¡que se diviertan!",
+    "en": "Kids, enjoy yourselves!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-la-pases-bien",
-      "g:gender-articles",
-      "g:preterite-irregular-strong",
       "g:subj-wishes",
-      "l:decir",
       "l:divertirse",
       "l:niño"
     ],
@@ -22820,13 +22873,13 @@
   },
   {
     "id": "u22-1045",
-    "es": "Deseo mucha suerte a los dos.",
-    "en": "I wish you both lots of luck.",
+    "es": "Les deseo mucha suerte.",
+    "en": "I wish you lots of luck. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:mucha-suerte",
-      "g:gender-articles",
+      "g:indirect-objects",
       "g:present-ar",
       "l:desear",
       "l:suerte"
@@ -22866,13 +22919,14 @@
   },
   {
     "id": "u22-1047",
-    "es": "Mandé un mensaje a Vale: mucha suerte.",
-    "en": "I sent Vale a message: good luck.",
+    "es": "Le mandé un mensaje: mucha suerte.",
+    "en": "I sent her a message: good luck.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:mucha-suerte",
       "g:gender-articles",
+      "g:indirect-objects",
       "g:preterite-ar",
       "l:mandar",
       "l:mensaje",
@@ -22888,20 +22942,18 @@
   },
   {
     "id": "u22-1048",
-    "es": "Hernando me dijo mucha suerte con una cara seria.",
-    "en": "Hernando said good luck to me with a serious face.",
+    "es": "Hernando me dijo mucha suerte, muy serio.",
+    "en": "Hernando said good luck to me, very seriously.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:mucha-suerte",
-      "g:adjective-agreement",
-      "g:gender-articles",
       "g:preterite-irregular-strong",
-      "l:cara",
       "l:decir",
       "l:serio",
       "l:suerte",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "c:mucha-suerte"
@@ -22954,12 +23006,13 @@
   },
   {
     "id": "u22-1051",
-    "es": "¡Éxitos en tu nuevo trabajo, Vale!",
-    "en": "Every success in your new job, Vale!",
+    "es": "¡Éxitos en tu nuevo trabajo, prima!",
+    "en": "Every success in your new job, cousin! (to a woman)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "l:nuevo",
+      "l:prima",
       "l:trabajo",
       "l:éxito",
       "p:possessives-basic"
@@ -23078,16 +23131,20 @@
   },
   {
     "id": "u22-1057",
-    "es": "Dije a Vale: que tengas un buen día.",
-    "en": "I told Vale: have a good day.",
+    "es": "Antes de salir, le dije: que tengas un buen día.",
+    "en": "Before leaving, I said to her: have a good day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-tengas-buen-dia",
+      "g:indirect-objects",
+      "g:prep-infinitive",
       "g:preterite-irregular-strong",
+      "l:antes",
       "l:buen",
       "l:decir",
       "l:día",
+      "l:salir",
       "l:tener"
     ],
     "targets": [
@@ -23119,18 +23176,16 @@
   },
   {
     "id": "u22-1059",
-    "es": "¡Feliz día, Vale!",
-    "en": "Have a nice day, Vale!",
+    "es": "¡Buen viaje, Vale!",
+    "en": "Have a good trip, Vale!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-tengas-buen-dia",
-      "l:día",
-      "l:feliz"
+      "c:buen-viaje",
+      "l:buen",
+      "l:viaje"
     ],
-    "targets": [
-      "c:que-tengas-buen-dia"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u22",
     "theme": "wishing people well (wishes, chunks)",
@@ -23203,7 +23258,7 @@
   },
   {
     "id": "u22-1063",
-    "es": "¡Buen fin de semana, a todos!",
+    "es": "¡Buen fin de semana a todos!",
     "en": "Have a good weekend, everyone!",
     "accept": [],
     "acceptEn": [],
@@ -23396,8 +23451,8 @@
   },
   {
     "id": "u22-1071",
-    "es": "Espero que Hernando duerma mejor mañana.",
-    "en": "I hope Hernando sleeps better tomorrow.",
+    "es": "Espero que Hernando coma algo hoy.",
+    "en": "I hope Hernando eats something today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23405,10 +23460,10 @@
       "g:subj-wanting",
       "g:subj-wishes",
       "g:that-clauses",
-      "l:dormir",
+      "l:comer",
       "l:esperar",
-      "l:mañana",
-      "l:mejor"
+      "l:hoy",
+      "p:indefinites-basic"
     ],
     "targets": [
       "g:subj-wishes"
@@ -23446,8 +23501,8 @@
   },
   {
     "id": "u22-1073",
-    "es": "Espero que me entiendas, Hernando.",
-    "en": "I hope you understand me, Hernando.",
+    "es": "Espero que me entienda, Hernando.",
+    "en": "I hope you understand me, Hernando. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23590,8 +23645,8 @@
   },
   {
     "id": "u22-1079",
-    "es": "Espero que haya agua en el hotel.",
-    "en": "I hope there is water at the hotel.",
+    "es": "Espero que haya buñuelos en la novena.",
+    "en": "I hope there are buñuelos at the novena.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23600,9 +23655,9 @@
       "g:subj-irregulars",
       "g:subj-wishes",
       "g:that-clauses",
-      "l:agua",
+      "l:buñuelo",
       "l:esperar",
-      "l:hotel"
+      "l:novena"
     ],
     "targets": [
       "g:subj-wishes"
@@ -23799,7 +23854,7 @@
   {
     "id": "u22-1087",
     "es": "Esperamos que ustedes sean muy felices.",
-    "en": "We hope you two are very happy.",
+    "en": "We hope you'll both be very happy. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23984,7 +24039,7 @@
   },
   {
     "id": "u22-1095",
-    "es": "Ojalá el festivo no llueva.",
+    "es": "Ojalá no llueva en el festivo.",
     "en": "I hope it doesn't rain on the holiday.",
     "accept": [],
     "acceptEn": [],
@@ -24169,13 +24224,13 @@
   },
   {
     "id": "u22-1103",
-    "es": "Ojalá se mejore pronto Hernando.",
+    "es": "Ojalá Hernando se mejore pronto.",
     "en": "I hope Hernando gets better soon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
-      "g:se-impersonal",
+      "g:reflexive-routine",
       "g:subj-wanting",
       "g:subj-wishes",
       "l:mejorar",
@@ -24597,20 +24652,20 @@
   },
   {
     "id": "u22-1124",
-    "es": "Simón repitió lo siento mucho en el funeral.",
-    "en": "Simón repeated I'm so sorry at the funeral.",
+    "es": "En el funeral, Simón gritó: ¡que se diviertan!",
+    "en": "At the funeral, Simón shouted: enjoy yourselves!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:sentido-pesame",
+      "c:que-la-pases-bien",
       "g:gender-articles",
-      "g:preterite-spelling-stem",
+      "g:preterite-ar",
+      "g:subj-wishes",
+      "l:divertirse",
       "l:funeral",
-      "l:repetir",
-      "l:sentir"
+      "l:gritar"
     ],
     "targets": [
-      "c:sentido-pesame",
       "l:funeral"
     ],
     "kind": "statement",
@@ -24807,17 +24862,18 @@
   },
   {
     "id": "u22-1134",
-    "es": "Un mensaje corto vale más que nada.",
-    "en": "A short message is worth more than nothing.",
+    "es": "Un mensaje corto es mejor que nada.",
+    "en": "A short message is better than nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:vale-spain",
       "g:comparatives",
       "g:gender-articles",
+      "g:ser-identity",
       "l:corto",
+      "l:mejor",
       "l:mensaje",
-      "l:valer"
+      "l:ser"
     ],
     "targets": [],
     "kind": "statement",
@@ -24936,15 +24992,16 @@
   },
   {
     "id": "u22-1140",
-    "es": "Hernando habló del Mono en el banco.",
-    "en": "Hernando talked about the Mono on the bench.",
+    "es": "Sentado en el banco, Hernando habló del Mono.",
+    "en": "Sitting on the bench, Hernando talked about the Mono.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:banco",
-      "l:hablar"
+      "l:hablar",
+      "l:sentar"
     ],
     "targets": [],
     "kind": "statement",
@@ -25064,15 +25121,16 @@
   },
   {
     "id": "u22-1146",
-    "es": "Mariana y Tomás se conocieron de niños.",
-    "en": "Mariana and Tomás met as children.",
+    "es": "Mariana y Tomás se conocieron en el café.",
+    "en": "Mariana and Tomás met at the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:preterite-er-ir",
       "g:reflexive-routine",
+      "l:café",
       "l:conocer",
-      "l:niño",
       "p:saber-conocer",
       "p:se-reciproco"
     ],
@@ -25174,22 +25232,20 @@
   },
   {
     "id": "u22-1151",
-    "es": "Se cayó la luz y seguimos con velas.",
+    "es": "Se fue la luz y seguimos con velas.",
     "en": "The power went out and we carried on with candles.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
-      "g:preterite-spelling-stem",
-      "g:reflexive-routine",
-      "l:caerse",
+      "g:preterite-ser-ir-hacer",
+      "l:irse",
       "l:luz",
       "l:seguir",
       "l:vela"
     ],
     "targets": [
-      "l:caerse",
       "l:vela"
     ],
     "kind": "statement",
@@ -25225,18 +25281,15 @@
   },
   {
     "id": "u22-1153",
-    "es": "Es difícil diferenciar estos dos cafés.",
-    "en": "It's hard to tell these two coffees apart.",
+    "es": "Simón no sabe diferenciar a Tomás de Jhon Fredy.",
+    "en": "Simón can't tell Tomás from Jhon Fredy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
-      "g:ser-identity",
-      "l:café",
+      "g:present-er-ir",
       "l:diferenciar",
-      "l:difícil",
-      "l:ser",
-      "p:es-adj-inf"
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:diferenciar"
@@ -25372,15 +25425,15 @@
   },
   {
     "id": "u22-1159",
-    "es": "Cuando llegó Vale, todos gritaron sorpresa.",
-    "en": "When Vale arrived, everyone shouted surprise.",
+    "es": "Cuando llegó Vale, Simón gritó antes que todos.",
+    "en": "When Vale arrived, Simón shouted before everyone else.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:preterite-ar",
+      "l:antes",
       "l:gritar",
       "l:llegar",
-      "l:sorpresa",
       "p:cuando-basic"
     ],
     "targets": [],
@@ -25408,11 +25461,12 @@
   },
   {
     "id": "u22-1161",
-    "es": "Esta noche había muchos invitados y Simón hablaba sin parar.",
-    "en": "Tonight there were lots of guests and Simón talked non-stop.",
+    "es": "Esa noche había muchos invitados y Simón hablaba sin parar.",
+    "en": "That night there were lots of guests and Simón talked non-stop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:demonstratives",
       "g:imperfect-habitual",
       "g:imperfect-states",
       "g:prep-infinitive",
@@ -25420,7 +25474,6 @@
       "l:invitado",
       "l:noche",
       "l:parar",
-      "p:demonstratives-basic",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -25913,11 +25966,12 @@
   },
   {
     "id": "u22-1182",
-    "es": "Conté a Hernando lo que pasó.",
-    "en": "I told Hernando what happened.",
+    "es": "Le conté lo que pasó.",
+    "en": "I told him what happened.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:indirect-objects",
       "g:preterite-ar",
       "g:relatives-donde-lo-que",
       "l:contar",
@@ -26052,7 +26106,7 @@
   {
     "id": "u22-1188",
     "es": "Las invitamos al bautizo del niño.",
-    "en": "We invited them to the baby's baptism.",
+    "en": "We invited them to the little boy's baptism.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26118,8 +26172,8 @@
   },
   {
     "id": "u22-1191",
-    "es": "Mandé las velitas para mis tíos.",
-    "en": "I sent the little candles for my aunt and uncle.",
+    "es": "Mandé unas velitas para mis tíos.",
+    "en": "I sent some little candles for my aunt and uncle.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26142,16 +26196,17 @@
   },
   {
     "id": "u22-1192",
-    "es": "Dimos las gracias a Hernando por su ayuda.",
-    "en": "We thanked Hernando for his help.",
+    "es": "Le dimos las gracias por su ayuda.",
+    "en": "We thanked him for his help.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
+      "g:indirect-objects",
       "g:preterite-irregular-strong",
       "l:ayuda",
       "l:dar",
+      "p:gracias-por",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -26308,8 +26363,8 @@
   },
   {
     "id": "u22-1199",
-    "es": "Tomás vive en un apartamentico cerca del centro.",
-    "en": "Tomás lives in a little apartment near downtown.",
+    "es": "Mi prima vive en un apartamentico cerca del centro.",
+    "en": "My cousin lives in a little apartment near downtown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26318,9 +26373,11 @@
       "g:present-er-ir",
       "l:centro",
       "l:cerca",
+      "l:prima",
       "l:vivir",
       "p:cerca-de",
-      "p:position-de"
+      "p:position-de",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:diminutives"
@@ -26563,16 +26620,18 @@
   },
   {
     "id": "u22-1210",
-    "es": "Hernando guarda una fotico de Rosa en el taxi.",
-    "en": "Hernando keeps a little photo of Rosa in the taxi.",
+    "es": "Hernando tiene una fotico de Rosa en su mesa.",
+    "en": "Hernando has a little photo of Rosa at his table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:diminutives",
       "g:gender-articles",
-      "g:present-ar",
-      "l:guardar",
-      "l:taxi"
+      "g:stem-boot",
+      "l:mesa",
+      "l:tener",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:diminutives"
@@ -26631,13 +26690,13 @@
   },
   {
     "id": "u22-1213",
-    "es": "Gracias por todo, Hernando. ¡Que te vaya bien!",
-    "en": "Thanks for everything, Hernando. All the best!",
+    "es": "Gracias por todo, Hernando. ¡Que le vaya bien!",
+    "en": "Thanks for everything, Hernando. All the best! (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "c:buen-viaje",
+      "c:que-te-mejores",
+      "g:subj-wishes",
       "l:bien",
       "l:ir",
       "p:gracias-por"
@@ -26695,21 +26754,25 @@
   },
   {
     "id": "u22-1216",
-    "es": "Ella dijo a su hijo: ¡Que te vaya bien en el colegio!",
-    "en": "She said to her son: all the best at school!",
+    "es": "Cada mañana, mi mamá me decía: ¡que te vaya bien en el colegio!",
+    "en": "Every morning, my mum used to say to me: all the best at school!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:buen-viaje",
+      "g:cada-cualquier",
       "g:gender-articles",
-      "g:preterite-irregular-strong",
+      "g:imperfect-habitual",
       "l:bien",
       "l:colegio",
       "l:decir",
-      "l:hijo",
       "l:ir",
-      "p:possessives-basic"
+      "l:mamá",
+      "l:mañana",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:veces-al"
     ],
     "targets": [],
     "kind": "statement",
@@ -26831,19 +26894,24 @@
   },
   {
     "id": "u22-1222",
-    "es": "Tomás dijo a todos: ¡Que te vaya bien en el trabajo!",
+    "es": "Tomás les dijo a todos: ¡Que les vaya bien en el trabajo!",
     "en": "Tomás said to everyone: all the best at work!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "c:buen-viaje",
       "g:gender-articles",
+      "g:indirect-objects",
       "g:preterite-irregular-strong",
+      "g:subj-irregulars",
+      "g:subj-wishes",
       "l:bien",
       "l:decir",
       "l:ir",
-      "l:trabajo"
+      "l:trabajo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:que-subj-deseo"
     ],
     "targets": [],
     "kind": "statement",
@@ -27082,18 +27150,18 @@
   },
   {
     "id": "u22-1233",
-    "es": "Ve con calma. Que te vaya bien, Hernando.",
-    "en": "Take it easy. All the best, Hernando. (to a friend)",
+    "es": "Vaya con calma, Hernando. Aquí lo esperamos.",
+    "en": "Take it easy, Hernando. We'll be here waiting for you. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "c:buen-viaje",
-      "g:present-er-ir",
-      "l:bien",
+      "g:direct-objects",
+      "g:present-ar",
+      "l:aquí",
       "l:calma",
+      "l:esperar",
       "l:ir",
-      "l:ver"
+      "p:aqui-ahi-alla"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -27103,8 +27171,8 @@
   },
   {
     "id": "u22-1234",
-    "es": "¡Que le vaya muy bien con su negocio, Hernando!",
-    "en": "All the very best with your business, Hernando! (polite)",
+    "es": "¡Que le vaya muy bien con su negocio, doña Luz!",
+    "en": "All the very best with your business, doña Luz! (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27114,7 +27182,9 @@
       "l:bien",
       "l:ir",
       "l:negocio",
-      "p:possessives-basic"
+      "p:don-dona-nombre",
+      "p:possessives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "c:que-te-vaya-bien",
@@ -27201,7 +27271,7 @@
   {
     "id": "u22-1238",
     "es": "Hasta mañana, doña. ¡Que le vaya muy bien en el viaje!",
-    "en": "Until tomorrow. All the very best on the trip! (polite)",
+    "en": "See you tomorrow, ma'am. All the very best on the trip! (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27275,20 +27345,19 @@
   },
   {
     "id": "u22-1241",
-    "es": "¿Esperan que el inspector vuelva mañana?",
-    "en": "Do you all hope the inspector comes back tomorrow?",
+    "es": "¿Tú también esperas que Vale se quede?",
+    "en": "Do you also hope Vale stays? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
+      "g:reflexive-routine",
       "g:subj-wanting",
       "g:subj-wishes",
       "g:that-clauses",
       "l:esperar",
-      "l:inspector",
-      "l:mañana",
-      "l:volver"
+      "l:quedarse",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "g:subj-wishes"
@@ -27300,20 +27369,22 @@
   },
   {
     "id": "u22-1242",
-    "es": "¿Espera usted que ella sepa la verdad?",
-    "en": "Do you hope she knows the truth? (polite)",
+    "es": "Don Hernando, ¿usted espera que los taxistas vengan al funeral?",
+    "en": "Don Hernando, are you hoping the taxi drivers come to the funeral? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-verdad",
+      "g:gender-articles",
       "g:present-ar",
-      "g:subj-irregulars",
+      "g:subj-wanting",
       "g:subj-wishes",
       "g:that-clauses",
       "l:esperar",
-      "l:saber",
-      "l:verdad",
-      "p:saber-conocer"
+      "l:funeral",
+      "l:taxista",
+      "l:venir",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:subj-wishes"
@@ -27373,22 +27444,18 @@
   },
   {
     "id": "u22-1245",
-    "es": "¿Esperas que lleguen todos los invitados?",
-    "en": "Do you hope all the guests arrive? (to a friend)",
+    "es": "¿Y si no llegan todos los invitados?",
+    "en": "And what if not all the guests come?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:subj-wanting",
-      "g:subj-wishes",
-      "g:that-clauses",
-      "l:esperar",
+      "g:si-present",
       "l:invitado",
       "l:llegar"
     ],
     "targets": [
-      "g:subj-wishes",
       "l:invitado"
     ],
     "kind": "question",
@@ -27426,23 +27493,15 @@
   },
   {
     "id": "u22-1247",
-    "es": "¿Esperan que Mariana pueda venir?",
-    "en": "Do you all hope Mariana can come?",
+    "es": "¿Mariana viene o no viene?",
+    "en": "Is Mariana coming or not?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "g:subj-wanting",
-      "g:subj-wishes",
-      "g:that-clauses",
-      "g:verb-infinitive",
-      "l:esperar",
-      "l:poder",
+      "g:stem-boot",
       "l:venir"
     ],
-    "targets": [
-      "g:subj-wishes"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u22",
     "theme": "asking about hopes",
@@ -27450,19 +27509,19 @@
   },
   {
     "id": "u22-1248",
-    "es": "¿Esperas que te llame esta noche?",
-    "en": "Do you hope he calls you tonight? (to a friend)",
+    "es": "¿Estás esperando que Tomás te llame?",
+    "en": "Are you waiting for Tomás to call you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:estar-gerund",
+      "g:estar-location-states",
       "g:subj-wanting",
       "g:subj-wishes",
       "g:that-clauses",
       "l:esperar",
+      "l:estar",
       "l:llamar",
-      "l:noche",
-      "p:demonstratives-basic",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -27475,24 +27534,22 @@
   },
   {
     "id": "u22-1249",
-    "es": "¿Esperas que la torta te guste?",
-    "en": "Do you hope you like the cake? (to a friend)",
+    "es": "¿Crees que a Vale le va a gustar la torta?",
+    "en": "Do you think Vale is going to like the cake? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:gustar-basic",
-      "g:present-ar",
-      "g:subj-wanting",
-      "g:subj-wishes",
+      "g:indirect-objects",
+      "g:ir-a-plans",
+      "g:present-er-ir",
       "g:that-clauses",
-      "l:esperar",
+      "l:creer",
       "l:gustar",
+      "l:ir",
       "l:torta"
     ],
-    "targets": [
-      "g:subj-wishes"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u22",
     "theme": "asking about hopes",
@@ -27500,19 +27557,20 @@
   },
   {
     "id": "u22-1250",
-    "es": "¿Esperas que Simón hable en la fiesta?",
-    "en": "Do you hope Simón talks at the party? (to a friend)",
+    "es": "¿De verdad esperas que Simón no diga nada?",
+    "en": "Do you really expect Simón not to say anything? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:en-serio",
+      "g:negation-words",
       "g:present-ar",
       "g:subj-wanting",
       "g:subj-wishes",
       "g:that-clauses",
+      "l:decir",
       "l:esperar",
-      "l:fiesta",
-      "l:hablar"
+      "l:verdad"
     ],
     "targets": [
       "g:subj-wishes"
@@ -27524,22 +27582,21 @@
   },
   {
     "id": "u22-1251",
-    "es": "¿Esperan que sus amigos vengan a la fiesta?",
-    "en": "Do you all hope your friends come to the party?",
+    "es": "¿Esperan que haya mucha gente en la novena?",
+    "en": "Are you all hoping there'll be a lot of people at the novena?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:subj-wanting",
+      "g:subj-irregulars",
       "g:subj-wishes",
       "g:that-clauses",
-      "l:amigo",
       "l:esperar",
-      "l:fiesta",
-      "l:venir",
-      "p:ir-venir",
-      "p:possessives-basic"
+      "l:gente",
+      "l:novena",
+      "p:la-gente-singular",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:subj-wishes"
@@ -27551,22 +27608,22 @@
   },
   {
     "id": "u22-1252",
-    "es": "¿Esperas que él te escuche?",
-    "en": "Do you hope he listens to you? (to a friend)",
+    "es": "¿De verdad crees que él te va a escuchar?",
+    "en": "Do you really think he's going to listen to you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "g:subj-wanting",
-      "g:subj-wishes",
+      "c:en-serio",
+      "g:ir-a-plans",
+      "g:present-er-ir",
       "g:that-clauses",
+      "l:creer",
       "l:escuchar",
-      "l:esperar",
+      "l:ir",
+      "l:verdad",
       "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:subj-wishes"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u22",
     "theme": "asking about hopes",
@@ -27796,18 +27853,17 @@
   },
   {
     "id": "u22-1263",
-    "es": "¿Qué quieres que brindemos?",
-    "en": "What do you want us to toast to? (to a friend)",
+    "es": "¿Por quién brindamos primero?",
+    "en": "Who shall we toast first?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:questions",
-      "g:stem-boot",
-      "g:subj-wanting",
-      "g:that-clauses",
+      "g:por-para-1",
+      "g:present-ar",
       "l:brindar",
-      "l:querer",
-      "l:qué"
+      "l:quién",
+      "p:prep-questions-basic",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "l:brindar"
@@ -28281,18 +28337,18 @@
   },
   {
     "id": "u22-1284",
-    "es": "¿Cómo doy el pésame a Hernando?",
-    "en": "How do I give my condolences to Hernando?",
+    "es": "¿Cómo le doy el pésame?",
+    "en": "How do I give him my condolences?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
       "g:questions",
       "g:yo-irregular",
       "l:cómo",
       "l:dar",
-      "l:pésame",
-      "p:question-word-order"
+      "l:pésame"
     ],
     "targets": [
       "l:pésame"
@@ -28304,19 +28360,15 @@
   },
   {
     "id": "u22-1285",
-    "es": "¿Qué puedo decir a la familia?",
-    "en": "What can I say to the family?",
+    "es": "¿Qué les digo?",
+    "en": "What do I say to them?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:puedo",
-      "g:gender-articles",
+      "g:indirect-objects",
       "g:questions",
-      "g:stem-boot",
-      "g:verb-infinitive",
+      "g:yo-irregular",
       "l:decir",
-      "l:familia",
-      "l:poder",
       "l:qué"
     ],
     "targets": [],
@@ -28437,12 +28489,12 @@
   },
   {
     "id": "u22-1291",
-    "es": "¿Hernando ha comido algo?",
-    "en": "Has Hernando eaten anything?",
+    "es": "¿Hernando ya comió algo?",
+    "en": "Has Hernando eaten anything yet?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:comer",
       "p:indefinites-basic"
     ],
@@ -28454,8 +28506,8 @@
   },
   {
     "id": "u22-1292",
-    "es": "¿Quieres un tinto, Hernando?",
-    "en": "Do you want a black coffee, Hernando?",
+    "es": "¿Quiere un tinto, Hernando?",
+    "en": "Would you like a black coffee, Hernando? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28729,7 +28781,7 @@
   {
     "id": "u22-1305",
     "es": "¿Cuántos años de matrimonio tienen tus papás?",
-    "en": "How many years of marriage do your parents have? (to a friend)",
+    "en": "How long have your parents been married? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28872,15 +28924,16 @@
   },
   {
     "id": "u22-1311",
-    "es": "¿Nos llamamos mañana?",
-    "en": "Shall we call each other tomorrow?",
+    "es": "¿Ustedes todavía se escriben?",
+    "en": "Do you two still write to each other?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:present-er-ir",
       "g:reflexive-routine",
-      "l:llamarse",
-      "l:mañana"
+      "l:escribirse",
+      "p:se-reciproco",
+      "p:ya-todavia-basic"
     ],
     "targets": [],
     "kind": "question",
@@ -29182,12 +29235,13 @@
   },
   {
     "id": "u22-1325",
-    "es": "¿Mandaste una tarjeta a Hernando?",
-    "en": "Did you send a card to Hernando? (to a friend)",
+    "es": "¿Le mandaste una tarjeta?",
+    "en": "Did you send him a card? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
       "g:preterite-ar",
       "l:mandar",
       "l:tarjeta"
@@ -29261,13 +29315,14 @@
   },
   {
     "id": "u22-1329",
-    "es": "¿Sabías que Rosa escribía todos los años?",
-    "en": "Did you know Rosa wrote every year?",
+    "es": "¿Sabías que Rosa le escribía todos los años?",
+    "en": "Did you know Rosa wrote to him every year? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
+      "g:indirect-objects",
       "g:that-clauses",
       "l:año",
       "l:escribir",
@@ -29456,19 +29511,17 @@
   },
   {
     "id": "u22-1338",
-    "es": "¿Quién es el juez del barrio?",
-    "en": "Who is the neighbourhood judge?",
+    "es": "¿Cómo se llama el juez?",
+    "en": "What's the judge's name?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:se-llama",
       "g:gender-articles",
-      "g:questions",
-      "g:ser-identity",
-      "l:barrio",
+      "g:reflexive-routine",
+      "l:cómo",
       "l:juez",
-      "l:quién",
-      "l:ser",
-      "p:question-word-order"
+      "l:llamarse"
     ],
     "targets": [
       "l:juez"
@@ -29527,19 +29580,20 @@
   },
   {
     "id": "u22-1341",
-    "es": "¿Cuál es el valor del contrato?",
-    "en": "What is the value of the contract?",
+    "es": "¿Qué valor tienen estas tarjetas para Hernando?",
+    "en": "How much are these cards worth to Hernando?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:tienes",
+      "g:demonstratives",
       "g:questions",
-      "g:ser-identity",
-      "l:contrato",
-      "l:cuál",
-      "l:ser",
+      "g:stem-boot",
+      "l:qué",
+      "l:tarjeta",
+      "l:tener",
       "l:valor",
-      "p:question-word-order"
+      "p:para-inf"
     ],
     "targets": [
       "l:valor"
@@ -29552,7 +29606,7 @@
   {
     "id": "u22-1342",
     "es": "¿Cuánto vale este permiso?",
-    "en": "How much is this permit worth?",
+    "en": "How much does this permit cost?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29572,14 +29626,18 @@
   },
   {
     "id": "u22-1343",
-    "es": "¿Es suficiente una carta?",
-    "en": "Is one letter enough?",
+    "es": "¿Es suficiente con un mensaje, o hay que ir?",
+    "en": "Is a message enough, or do you have to go?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:hay-que",
       "g:gender-articles",
       "g:ser-identity",
-      "l:carta",
+      "g:verb-infinitive",
+      "l:ir",
+      "l:mensaje",
       "l:ser",
       "l:suficiente"
     ],
@@ -29611,19 +29669,18 @@
   },
   {
     "id": "u22-1345",
-    "es": "¿Qué área de la cocina necesita más espacio?",
-    "en": "Which area of the kitchen needs more space?",
+    "es": "¿En qué área de la ciudad vive Mariana?",
+    "en": "What area of the city does Mariana live in?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "g:questions",
-      "l:cocina",
-      "l:espacio",
-      "l:necesitar",
+      "g:present-er-ir",
+      "l:ciudad",
       "l:qué",
-      "l:área"
+      "l:vivir",
+      "l:área",
+      "p:prep-questions-basic"
     ],
     "targets": [
       "l:área"
@@ -29821,22 +29878,17 @@
   },
   {
     "id": "u22-1354",
-    "es": "¿Por qué no volaron los pájaros hoy?",
-    "en": "Why didn't the birds fly today?",
+    "es": "¿Simón sabe volar?",
+    "en": "Can Simón fly?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:preterite-ar",
-      "l:hoy",
-      "l:pájaro",
-      "l:qué",
+      "g:present-er-ir",
+      "l:saber",
       "l:volar",
-      "p:por-que-no",
-      "p:prep-questions-basic"
+      "p:saber-conocer"
     ],
     "targets": [
-      "l:pájaro",
       "l:volar"
     ],
     "kind": "question",
@@ -30065,7 +30117,7 @@
   {
     "id": "u22-1365",
     "es": "¿Cómo la pasaste en el bautizo?",
-    "en": "How was the baptism for you? (to a friend)",
+    "en": "How was the baptism? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30088,7 +30140,7 @@
   {
     "id": "u22-1366",
     "es": "¿Qué tal la pasaron ustedes?",
-    "en": "How did you all get on?",
+    "en": "Did you all have a good time?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30188,17 +30240,16 @@
   },
   {
     "id": "u22-1371",
-    "es": "¿Ya diste la noticia a tu mamá?",
-    "en": "Have you given your mum the news yet? (to a friend)",
+    "es": "¿Ya le diste la noticia?",
+    "en": "Have you told her the news yet? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
       "g:preterite-irregular-strong",
       "l:dar",
-      "l:mamá",
-      "l:noticia",
-      "p:possessives-basic"
+      "l:noticia"
     ],
     "targets": [],
     "kind": "question",
@@ -30209,7 +30260,7 @@
   {
     "id": "u22-1372",
     "es": "¿Ya sabes la buena noticia?",
-    "en": "Do you already know the good news? (to a friend)",
+    "en": "Have you heard the good news? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30392,7 +30443,7 @@
   {
     "id": "u22-1381",
     "es": "¿Le puedo ayudar en algo, señora?",
-    "en": "Can I help you with something, ma'am?",
+    "en": "Can I help you with something, ma'am? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30549,16 +30600,16 @@
   },
   {
     "id": "u22-1388",
-    "es": "¿Qué te deseo para tu cumpleaños?",
-    "en": "What shall I wish you for your birthday? (to a friend)",
+    "es": "¿Qué te regalo para tu cumpleaños?",
+    "en": "What shall I give you for your birthday? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
       "g:questions",
       "l:cumpleaños",
-      "l:desear",
       "l:qué",
+      "l:regalar",
       "p:me-te-nos-objects",
       "p:para-inf",
       "p:possessives-basic"
@@ -30707,22 +30758,23 @@
   },
   {
     "id": "u22-1395",
-    "es": "¿Qué digo a un amigo que tiene un examen?",
-    "en": "What do I say to a friend who has an exam?",
+    "es": "Mi amigo tiene un examen. ¿Qué le escribo?",
+    "en": "My friend has an exam. What do I write to him?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:present-er-ir",
       "g:questions",
-      "g:relative-que",
       "g:stem-boot",
-      "g:yo-irregular",
       "l:amigo",
-      "l:decir",
+      "l:escribir",
       "l:examen",
       "l:qué",
-      "l:tener"
+      "l:tener",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "question",
@@ -30861,19 +30913,14 @@
   },
   {
     "id": "u22-1402",
-    "es": "Sí, pero no puedo decirlo.",
-    "en": "Yes, but I can't say.",
+    "es": "Sí, pero no digas nada.",
+    "en": "Yes, but don't say anything. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:lo-siento-pero-no-puedo",
-      "c:puedo",
-      "g:direct-objects",
-      "g:object-pronoun-position",
-      "g:stem-boot",
-      "g:verb-infinitive",
-      "l:decir",
-      "l:poder"
+      "g:negation-words",
+      "g:negative-commands",
+      "l:decir"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -31417,14 +31464,15 @@
   },
   {
     "id": "u22-1430",
-    "es": "Ay, qué pena. ¿Y Hernando?",
-    "en": "Oh, what a shame. And Hernando?",
+    "es": "Ay, no. ¿Y cómo está Hernando?",
+    "en": "Oh no. And how's Hernando?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-pena",
-      "l:pena",
-      "l:qué"
+      "c:como-estas",
+      "g:estar-location-states",
+      "l:cómo",
+      "l:estar"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -31586,16 +31634,15 @@
   },
   {
     "id": "u22-1438",
-    "es": "¿Qué escribo a la familia?",
-    "en": "What do I write to the family?",
+    "es": "¿Qué les escribo?",
+    "en": "What do I write to them?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:indirect-objects",
       "g:present-er-ir",
       "g:questions",
       "l:escribir",
-      "l:familia",
       "l:qué"
     ],
     "targets": [],
@@ -31672,15 +31719,13 @@
   },
   {
     "id": "u22-1442",
-    "es": "Hernando guardó todas mis tarjetas.",
-    "en": "Hernando kept all my cards.",
+    "es": "¿Y estas tarjetas?",
+    "en": "And these cards?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-ar",
-      "l:guardar",
-      "l:tarjeta",
-      "p:possessives-basic"
+      "g:demonstratives",
+      "l:tarjeta"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -31765,25 +31810,22 @@
   },
   {
     "id": "u22-1447",
-    "es": "Igualmente, y que sea mejor que este.",
-    "en": "You too, and may it be better than this one.",
+    "es": "Igualmente, don Hernando. ¡Qué rico huelen!",
+    "en": "You too, don Hernando. They smell so good!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:mucho-gusto",
-      "g:comparatives",
-      "g:ser-identity",
-      "g:subj-irregulars",
-      "g:subj-wishes",
-      "g:that-clauses",
+      "c:que-rico",
+      "g:yo-irregular",
       "l:igualmente",
-      "l:mejor",
-      "l:ser",
-      "p:demonstratives-basic"
+      "l:oler",
+      "l:qué",
+      "l:rico",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
-    "targets": [
-      "g:subj-wishes"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u22",
     "theme": "little conversations",
@@ -32078,7 +32120,7 @@
   {
     "id": "u22-1462",
     "es": "Gracias, se lo digo.",
-    "en": "Thanks, I'll tell her. (polite)",
+    "en": "Thanks, I'll tell her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32115,8 +32157,8 @@
   },
   {
     "id": "u22-1464",
-    "es": "¿Puedo pedir un favorcito?",
-    "en": "May I ask a little favour?",
+    "es": "¿Te puedo pedir un favorcito?",
+    "en": "Can I ask you a little favour? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32126,7 +32168,8 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:pedir",
-      "l:poder"
+      "l:poder",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:diminutives"
@@ -32175,25 +32218,20 @@
   },
   {
     "id": "u22-1467",
-    "es": "Claro, ahorita te espero en la puerta.",
-    "en": "Sure, I'll wait for you at the door in a bit. (to a friend)",
+    "es": "Claro, te espero en la puerta.",
+    "en": "Sure, I'll wait for you at the door. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ahorita",
       "c:claro-listo",
-      "g:diminutives",
       "g:gender-articles",
       "g:present-ar",
-      "l:ahorita",
       "l:claro",
       "l:esperar",
       "l:puerta",
       "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:diminutives"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u22",
     "theme": "little conversations",
@@ -32366,13 +32404,14 @@
   },
   {
     "id": "u22-1476",
-    "es": "Y nosotros por ti.",
-    "en": "And we are for you.",
+    "es": "Y nosotros estamos contigo.",
+    "en": "And we're with you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
-      "g:prep-pronouns"
+      "g:estar-location-states",
+      "g:prep-pronouns",
+      "l:estar"
     ],
     "targets": [],
     "kind": "dialogue",

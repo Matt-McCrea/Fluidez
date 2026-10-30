@@ -18,7 +18,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "(^|[¡!.,\\s])qu[eé]\\s+(bueno|buena|bien|mal|horror|lindo|linda|bonito|bonita|gusto|historia|noticia|sorpresa|triste|chévere)",
+          "pattern": "(^|[¡!.,\\s])qu[eé]\\s+(bueno|buena|bien|mal|malo|mala|horror|lindo|linda|bonito|bonita|gusto|historia|noticia|sorpresa|triste|tristeza|chévere|pena|alegría|maravilla|susto|terrible|barbaridad|felicidad|emoción|rico|rica|belleza|dicha|cosa)",
           "flags": "i",
           "label": "react with an exclamation: ¡Qué bueno!, ¡Qué mal!"
         }
@@ -42,6 +42,7 @@
           "words": [
             "chiquito",
             "chiquitico",
+            "chiquitito",
             "pequeñito"
           ],
           "label": "make it small and sweet: chiquito"
@@ -101,7 +102,8 @@
       "accept": [
         "Espera un momentico. Hay una tortica para tu hermana.",
         "Un momentico, Jhon Fredy. Hay una tortica para tu hermana.",
-        "Espera un momentico, por favor. Esta tortica es para tu hermana."
+        "Espera un momentico, por favor. Esta tortica es para tu hermana.",
+        "Espérate un momentico. Hay una tortica para tu hermana."
       ],
       "require": [
         {
@@ -162,6 +164,7 @@
     "c:voy-vas",
     "g:adjective-agreement",
     "g:commands-tu",
+    "g:commands-with-pronouns",
     "g:diminutives",
     "g:direct-objects",
     "g:estar-location-states",
@@ -225,6 +228,7 @@
     "p:exclamations-basic",
     "p:felicitaciones-por",
     "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
     "p:otro-no-article",
     "p:para-inf",
     "p:para-inf-purpose",

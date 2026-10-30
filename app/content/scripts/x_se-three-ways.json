@@ -94,7 +94,7 @@
     {
       "es": "Se vive bien en Bogotá.",
       "options": [
-        "Life is good in Bogotá.",
+        "People live well in Bogotá.",
         "He lives with himself in Bogotá.",
         "They live with each other in Bogotá."
       ],
@@ -175,9 +175,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Se arriendan apartamento.",
-      "right": "Se arrienda apartamento.",
-      "why": "Almost. Nobody is named, so the verb stays in the he or she form."
+      "wrong": "Vale levanta a las cuatro.",
+      "right": "Vale se levanta a las cuatro.",
+      "why": "Almost. Getting up is something you do to yourself, so it needs *se*."
     },
     {
       "wrong": "Tomás y Vale conocieron en el café.",

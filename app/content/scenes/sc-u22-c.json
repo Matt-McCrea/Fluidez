@@ -18,7 +18,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "(^|[¡!.,\\s])qu[eé]\\s+(bueno|buena|bien|mal|horror|lindo|linda|bonito|bonita|gusto|historia|noticia|sorpresa|triste|chévere)",
+          "pattern": "(^|[¡!.,\\s])qu[eé]\\s+(bueno|buena|bien|mal|malo|mala|horror|lindo|linda|bonito|bonita|gusto|historia|noticia|sorpresa|triste|tristeza|chévere|pena|alegría|maravilla|susto|terrible|barbaridad|felicidad|emoción|rico|rica|belleza|dicha|cosa)",
           "flags": "i",
           "label": "react with an exclamation: ¡Qué bueno!, ¡Qué mal!"
         }
@@ -41,7 +41,8 @@
           "type": "containsAny",
           "words": [
             "pésame",
-            "lo siento"
+            "lo siento",
+            "acompaño"
           ],
           "label": "condolences: mi más sentido pésame"
         }
@@ -57,12 +58,12 @@
       "accept": [
         "¡Felicitaciones por el matrimonio!",
         "¡Qué bueno! Felicitaciones por el matrimonio de Andrés.",
-        "¡Felicitaciones por la boda!"
+        "¡Felicitaciones por el matrimonio de su hijo!"
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "felicitaciones por",
+          "pattern": "(felicitaciones|felicidades|felicito) por",
           "flags": "i",
           "label": "congratulations on: felicitaciones por"
         }
@@ -183,7 +184,6 @@
     "g:that-clauses",
     "g:yo-irregular",
     "l:bien",
-    "l:boda",
     "l:buena",
     "l:bueno",
     "l:bus",

@@ -2,7 +2,7 @@
   "id": "ch063",
   "unit": "u22",
   "title": "¡Sorpresa!",
-  "text": "El papel estaba en la nevera, debajo de los huevos: «Sábado, nueve de la noche. Fiesta para Vale. Ella no puede saber nada».\nEl sábado, Vale llegó a las cinco. Se despertó a las tres, por la torta de la boda.\nTomás: Buenos días, socia.\nVale: Todavía no soy tu socia. Firmo esta noche.\nSimón: ¡Feliz cumpleaños! ¡Feliz cumpleaños!\nVale: ¿Simón dijo algo?\nJhon Fredy: Simón le dice eso a todo el mundo. Ayer se lo dijo a un señor de ochenta años.\nA las diez, Vale salió con la torta en un taxi.\nTomás: ¡Que te vaya bien!\nHernando: ¡Que la pases bien, mija!\nVale esperó un momento en la puerta, y se fue con los ojos tristes.\nPor la tarde, el café se llenó de amigos.\nA las nueve no había luz. Vale abrió la puerta, muy cansada.\nTodos: ¡Sorpresa! ¡Feliz cumpleaños!\nSimón: ¡Que te vaya bien!\nVale se rió, y después lloró.\nTomás le dio una caja pequeña, con el lapicero de Rosa.\nTomás: Rosa firmaba todo con este lapicero. Quiero que firmes con él.\nEn el banco de la puerta, donde Rosa tomaba su tinto, Vale y Tomás firmaron el contrato.\nHernando tomó su taza para brindar.\nHernando: Socios, ojalá tengan mucho éxito. Y ojalá Rosa los vea.\nJhon Fredy: Yo también quiero decir algo. Primero, la máquina de café...\nTodos: ¡No!\nCelebraron hasta la una. Al final, Vale bailó con Tomás.\nVale: Gracias, socio.\nA la una y diez sonó el celular de Hernando, y Hernando se quedó muy serio.",
+  "text": "El papel estaba en la nevera, debajo de los huevos: «Sábado, nueve de la noche. Fiesta para Vale. Ella no puede saber nada».\nEl sábado, Vale llegó a las cinco. Se despertó a las tres, por la torta de un matrimonio.\nTomás: Buenos días, socia.\nVale: Todavía no soy tu socia. Firmo esta noche.\nSimón: ¡Feliz cumpleaños! ¡Feliz cumpleaños!\nVale: ¿Simón dijo algo?\nJhon Fredy: Simón le dice eso a todo el mundo. Ayer se lo dijo a un señor de ochenta años.\nA las diez, Vale salió con la torta en un taxi.\nTomás: ¡Que te vaya bien!\nHernando: ¡Que la pases bien, mija!\nVale esperó un momento en la puerta, y se fue con los ojos tristes.\nPor la tarde, el café se llenó de amigos.\nA las nueve no había luz. Vale abrió la puerta, muy cansada.\nTodos: ¡Sorpresa! ¡Feliz cumpleaños!\nSimón: ¡Que te vaya bien!\nVale se rio, y después lloró.\nTomás le dio una caja pequeña, con el lapicero de Rosa.\nTomás: Rosa firmaba todo con este lapicero. Quiero que firmes con él.\nEn el banco de la puerta, donde Rosa tomaba su tinto, Vale y Tomás firmaron el contrato.\nHernando tomó su taza para brindar.\nHernando: Socios, ojalá tengan mucho éxito. Y ojalá Rosa los vea.\nJhon Fredy: Yo también quiero decir algo. Primero, la máquina de café...\nTodos: ¡No!\nCelebraron hasta la una. Al final, Vale bailó con Tomás.\nVale: Gracias, socio.\nA la una y diez sonó el celular de Hernando, y Hernando se quedó muy serio.",
   "gloss": [
     {
       "es": "debajo de los huevos",
@@ -13,8 +13,8 @@
       "en": "She can't know anything."
     },
     {
-      "es": "por la torta de la boda",
-      "en": "because of the wedding cake"
+      "es": "por la torta de un matrimonio",
+      "en": "because of a wedding cake"
     },
     {
       "es": "a todo el mundo",
@@ -209,7 +209,6 @@
     "l:bailar",
     "l:banco",
     "l:bien",
-    "l:boda",
     "l:brindar",
     "l:bueno",
     "l:café",
@@ -238,6 +237,7 @@
     "l:llenar",
     "l:llorar",
     "l:luz",
+    "l:matrimonio",
     "l:mija",
     "l:momento",
     "l:mundo",

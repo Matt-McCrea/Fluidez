@@ -10,7 +10,7 @@
     { "es": "Nos queremos mucho.", "en": "We love each other very much." },
     { "es": "Vale y Tomás se ayudan mucho.", "en": "Vale and Tomás help each other a lot." },
     { "es": "Hernando y su amigo se veían todos los días en la plaza.", "en": "Hernando and his friend used to see each other every day in the square." },
-    { "es": "¿Cómo se conocieron?", "en": "How did you two meet? (you all)" },
+    { "es": "¿Cómo se conocieron?", "en": "How did you meet? (you all)" },
     { "es": "Se ayudan el uno al otro.", "en": "They help each other." }
   ],
   "rule": "You know *se* and *nos* from daily routines: *me levanto*, *nos levantamos*. With two or more people, the same little words can mean each other.\n\n*Se quieren.* They love each other.\n*Nos ayudamos.* We help each other.\n\nNothing else is needed. English adds each other; Spanish just uses *nos* or *se* with a plural verb. If it could be confused with themselves, add *el uno al otro*.\n\nLots of relationship verbs work this way: *conocerse* (to meet), *casarse*, *verse*, *escribirse*, *entenderse*.",

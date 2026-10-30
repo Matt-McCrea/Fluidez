@@ -2,7 +2,7 @@
   "id": "ch064",
   "unit": "u22",
   "title": "El tiempo vuela",
-  "text": "El lunes era festivo, y todos los clientes querían felicitar a Vale.\nHernando llegó a las diez, con su traje de los domingos.\nHernando: Anoche murió el Mono Ríos, mi amigo de la parada de taxis. Cincuenta años juntos.\nVale le tomó la mano.\nJhon Fredy: Se dice «mi más sentido pésame».\nTomás: Hernando, mi más sentido pésame.\nHernando: Gracias, mijo. El Mono no tenía parientes. Los taxistas éramos sus parientes.\nHernando: Estuvo en mi matrimonio. En el matrimonio fue el primero en felicitarnos y el último en salir. Y en el bautizo de Lucía, y en el bautizo de mi nieto. ¡Cómo se divertía ese hombre!\nHernando: En diciembre hacía la novena en la parada, con un nacimiento enorme y cien velitas.\nVale: ¿Un nacimiento en una parada de taxis?\nHernando: Con velitas y todo. Y este diciembre, ¿quién hace la novena?\nA las once entró el inspector Duarte.\nInspector: Los inspectores no tenemos festivos.\nEl inspector miró a Simón.\nInspector: ¿Un pájaro en un café? Eso es una multa.\nSimón: ¡Mi más sentido pésame!\nEl inspector escribió la multa: $600.000. Vale no dijo nada. No era el día.\nHernando: El funeral es mañana a las nueve, y el entierro a las once. ¿Me acompañan?\nTomás: Claro. ¿Cuántos invitados hay?\nHernando: En un entierro no hay invitados, mijo.\nSimón voló a su hombro.\nHernando: El Mono siempre decía: «En mi funeral, quiero que todos se diviertan. El tiempo vuela». Y vuela, mijo.\nEsa noche, Vale puso una vela para el Mono. Tomás puso otra vela, para Rosa.",
+  "text": "El lunes era festivo, y todos los clientes querían felicitar a Vale.\nHernando llegó a las diez, con su traje de los domingos.\nHernando: La noche de la fiesta murió el Mono Ríos, mi amigo de la parada de taxis. Cincuenta años juntos.\nVale le tomó la mano.\nJhon Fredy: Se dice «mi más sentido pésame».\nTomás: Hernando, mi más sentido pésame.\nHernando: Gracias, mijo. El Mono no tenía parientes. Los taxistas éramos sus parientes.\nHernando: Estuvo en mi matrimonio: fue el primero en felicitarnos y el último en salir. Y en el bautizo y el matrimonio de Lucía, y en el bautizo de mi nieto. ¡Cómo se divertía ese hombre!\nHernando: En diciembre hacía la novena en la parada, con un nacimiento enorme y cien velitas.\nVale: ¿Un nacimiento en una parada de taxis?\nHernando: Con velitas y todo. Y este diciembre, ¿quién hace la novena?\nA las once entró el inspector Duarte.\nInspector: Los inspectores no tenemos festivos.\nEl inspector miró a Simón.\nInspector: ¿Un pájaro en un café? Eso es una multa.\nSimón: ¡Mi más sentido pésame!\nEl inspector escribió la multa: $600.000. Vale no dijo nada. No era el día.\nHernando: El funeral es mañana a las nueve, y el entierro a las once. ¿Me acompañan?\nTomás: Claro. ¿Cuántos invitados hay?\nHernando: En un entierro no hay invitados, mijo.\nHernando: El Mono siempre decía: «En mi funeral, quiero que todos se diviertan. El tiempo vuela». Y vuela, mijo.\nEsa noche, Vale puso una vela para el Mono. Tomás puso otra vela, para Rosa.",
   "gloss": [
     {
       "es": "su traje de los domingos",
@@ -63,6 +63,10 @@
     {
       "es": "El tiempo vuela.",
       "en": "Time flies."
+    },
+    {
+      "es": "La noche de la fiesta",
+      "en": "The night of the party"
     }
   ],
   "questions": [
@@ -141,7 +145,6 @@
     }
   ],
   "requires": [
-    "c:ayer-anoche",
     "c:claro-listo",
     "c:era",
     "c:estuvo",
@@ -178,7 +181,6 @@
     "g:verb-infinitive",
     "p:days-el-lunes",
     "p:demonstratives-basic",
-    "p:event-ser-en",
     "p:exclamations-basic",
     "p:frequency-scale",
     "p:me-te-nos-objects",
@@ -195,7 +197,6 @@
   "lexemes": [
     "l:acompañar",
     "l:amigo",
-    "l:anoche",
     "l:año",
     "l:bautizo",
     "l:café",
@@ -215,10 +216,10 @@
     "l:estar",
     "l:felicitar",
     "l:festivo",
+    "l:fiesta",
     "l:funeral",
     "l:hacer",
     "l:hombre",
-    "l:hombro",
     "l:inspector",
     "l:invitado",
     "l:juntos",
