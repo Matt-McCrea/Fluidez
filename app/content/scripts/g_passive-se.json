@@ -1,0 +1,44 @@
+{
+  "node": "g:passive-se",
+  "hook": {
+    "line": "At the café, nobody cares who sold the last lunch or who signed the contract. They care that it happened. English says *was sold* and *was signed*; Spanish uses a little word you already know, *se*.",
+    "es": "Se vendieron todos los almuerzos.",
+    "en": "All the lunches were sold."
+  },
+  "examples": [
+    { "es": "Se vendieron todos los almuerzos.", "en": "All the lunches were sold." },
+    { "es": "El edificio se construyó en 1920.", "en": "The building was built in 1920." },
+    { "es": "Se firmará el lunes.", "en": "It will be signed on Monday." },
+    { "es": "No se aceptan tarjetas.", "en": "Cards are not accepted." },
+    { "es": "¿Cuándo se abrió el café?", "en": "When was the café opened?" },
+    { "es": "Se necesita un mesero.", "en": "A waiter is needed." }
+  ],
+  "rule": "When it doesn't matter who did something, Spanish puts *se* before the verb and lets the thing be the subject.\n\n*Se vendió la casa*: the house was sold.\n*Se vendieron las casas*: the houses were sold.\n\nThe verb agrees with the thing, not with *se*: one thing, one verb; two things, a plural verb.\n\nIt works in any tense: *se vende*, *se vendió*, *se venderá*.\n\nEnglish needs *was/were* plus a participle. Spanish needs none of that, and there is no \"by\" phrase. If you want to name who did it, use a normal sentence: *Vale vendió todos los almuerzos*.",
+  "smallPrint": "Teachers call this the *pasiva refleja*, the reflexive passive. You already met the cousin that says *aquí se habla español*.",
+  "readAndPick": [
+    { "es": "Se vendió la casa.", "options": ["The house was sold.", "The houses were sold."], "answer": 0 },
+    { "es": "Se vendieron las casas.", "options": ["The house was sold.", "The houses were sold."], "answer": 1 },
+    { "es": "Se firmará el contrato el lunes.", "options": ["The contract was signed on Monday.", "The contract will be signed on Monday."], "answer": 1 },
+    { "es": "Se firmó el contrato ayer.", "options": ["The contract will be signed yesterday.", "The contract was signed yesterday."], "answer": 1 },
+    { "es": "Se necesita un mesero.", "options": ["Waiters are needed.", "A waiter is needed."], "answer": 1 },
+    { "es": "Se necesitan dos meseros.", "options": ["A waiter is needed.", "Two waiters are needed."], "answer": 1 },
+    { "es": "Se abrirá el café en diciembre.", "options": ["The café was opened in December.", "The café will be opened in December."], "answer": 1 },
+    { "es": "Se cerraron las ventanas.", "options": ["The window was closed.", "The windows were closed."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (All the lunches were sold): ___ todos los almuerzos. (Se vendió / Se vendieron)", "answer": "Se vendieron todos los almuerzos.", "accept": [], "why": "The lunches are plural, so the verb is plural: *vendieron*." },
+    { "prompt": "Choose the right form and type the whole sentence (The contract was signed yesterday): ___ el contrato ayer. (Se firmó / Se firmaron)", "answer": "Se firmó el contrato ayer.", "accept": ["Ayer se firmó el contrato."], "why": "One contract, so one verb: *firmó*." },
+    { "prompt": "Type in Spanish: The papers were signed.", "answer": "Se firmaron los papeles.", "accept": ["Los papeles se firmaron."], "why": "*Se* plus a plural verb for a plural thing." },
+    { "prompt": "Type in Spanish: Cards are not accepted.", "answer": "No se aceptan tarjetas.", "accept": ["Tarjetas no se aceptan."], "why": "*No* goes before *se*, and the verb is plural because of *tarjetas*." },
+    { "prompt": "Make it future: Se firmó el contrato.", "answer": "Se firmará el contrato.", "accept": ["Se firmará el contrato el lunes."], "why": "Only the verb changes tense; *se* stays." },
+    { "prompt": "Make it plural: Se cerró la ventana.", "answer": "Se cerraron las ventanas.", "accept": [], "why": "The thing is now plural, so the article and the verb are too." },
+    { "prompt": "Type in Spanish: A waiter is needed.", "answer": "Se necesita un mesero.", "accept": ["Un mesero se necesita."], "why": "One waiter, one singular verb." }
+  ],
+  "pitfalls": [
+    { "wrong": "Se vendió todos los almuerzos.", "right": "Se vendieron todos los almuerzos.", "why": "Almost. The verb agrees with the thing sold, and there are many lunches." },
+    { "wrong": "Fueron vendidos todos los almuerzos.", "right": "Se vendieron todos los almuerzos.", "why": "That copies the English *were sold*; in everyday Spanish, *se* does the job." },
+    { "wrong": "Se vendieron los almuerzos por Vale.", "right": "Vale vendió todos los almuerzos.", "why": "*Se* has no room for \"by someone\"; when you name who did it, use a normal sentence." },
+    { "wrong": "Se firmaron el contrato.", "right": "Se firmó el contrato.", "why": "One contract, so the verb stays singular." }
+  ],
+  "personal": "Tell us one thing that happens every day where you work or live, using *se*: for example, *Se abre a las ocho*."
+}

@@ -1,0 +1,43 @@
+{
+  "node": "p:contar-con",
+  "hook": {
+    "line": "Tomás has a big Saturday coming and needs help. English says \"I'm counting on you\"; Spanish says it with one small word, *con*, and without it the verb means something else.",
+    "es": "Cuento contigo para el sábado.",
+    "en": "I'm counting on you for Saturday."
+  },
+  "examples": [
+    { "es": "Cuento contigo para el sábado.", "en": "I'm counting on you for Saturday. (to a friend)" },
+    { "es": "Cuenta conmigo.", "en": "Count on me. (to a friend)" },
+    { "es": "Vale cuenta con Tomás para abrir el café.", "en": "Vale is counting on Tomás to open the café." },
+    { "es": "El café cuenta con diez mesas.", "en": "The café has ten tables." },
+    { "es": "Contamos con que llegues temprano.", "en": "We're counting on you getting here early. (to a friend)" },
+    { "es": "Te cuento una historia.", "en": "I'll tell you a story." }
+  ],
+  "rule": "*Contar con* means to rely on someone or something, or, for a place, to have it.\n\nThe *con* stays: *Cuento con Tomás*. With \"you\" and \"me\" it joins up: *contigo*, *conmigo*.\n\nBefore a whole clause use *con que*: *Contamos con que llegues temprano*.\n\nWithout *con*, *contar* is a different verb: to tell a story or to count numbers: *Te cuento una historia*, *Cuento hasta diez*.",
+  "smallPrint": "Teachers call *con* here a required preposition: the verb comes with it.",
+  "readAndPick": [
+    { "es": "Cuento contigo.", "options": ["I'm counting on you.", "I'm telling you."], "answer": 0 },
+    { "es": "Te cuento una historia.", "options": ["I'm counting on you for a story.", "I'll tell you a story."], "answer": 1 },
+    { "es": "Cuenta conmigo.", "options": ["Count me out.", "Count on me."], "answer": 1 },
+    { "es": "El café cuenta con diez mesas.", "options": ["The café is counting the ten tables.", "The café has ten tables."], "answer": 1 },
+    { "es": "Vale cuenta con Tomás para abrir el café.", "options": ["Vale is counting on Tomás to open the café.", "Vale is telling Tomás about the café."], "answer": 0 },
+    { "es": "No cuentes con él.", "options": ["Don't tell him.", "Don't count on him."], "answer": 1 },
+    { "es": "Cuentan con nosotros para el sábado.", "options": ["We're counting on them for Saturday.", "They're counting on us for Saturday."], "answer": 1 },
+    { "es": "Cuento hasta diez.", "options": ["I count to ten.", "I'm counting on ten people."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (I'm counting on you for Saturday, to a friend): Cuento ___ para el sábado. (contigo / con ti)", "answer": "Cuento contigo para el sábado.", "accept": ["Para el sábado cuento contigo."], "why": "With \"you\" the word joins up: *contigo*." },
+    { "prompt": "Type in Spanish (to a friend): Count on me.", "answer": "Cuenta conmigo.", "accept": [], "why": "*Cuenta* for a friend, and *conmigo* for \"me\"." },
+    { "prompt": "Type in Spanish (to a friend): Can I count on you?", "answer": "¿Puedo contar contigo?", "accept": [], "why": "The *con* stays even after *contar*." },
+    { "prompt": "Type in Spanish: The café has ten tables.", "answer": "El café cuenta con diez mesas.", "accept": [], "why": "For what a place has, *cuenta con*." },
+    { "prompt": "Make it about Vale: Cuento con Tomás para abrir el café.", "answer": "Vale cuenta con Tomás para abrir el café.", "accept": [], "why": "*Cuenta* matches *Vale*, and *con* stays." },
+    { "prompt": "Type in Spanish (to a friend): Don't count on him.", "answer": "No cuentes con él.", "accept": [], "why": "A warning to a friend uses *cuentes*, and *con* stays." },
+    { "prompt": "Type in Spanish: Tomás is counting on you all.", "answer": "Tomás cuenta con ustedes.", "accept": [], "why": "\"You all\" is *ustedes*, and it follows *con*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Cuento con ti.", "right": "Cuento contigo.", "why": "Almost. *Con* plus \"you\" always joins into *contigo*." },
+    { "wrong": "Cuento a Tomás para el sábado.", "right": "Cuento con Tomás para el sábado.", "why": "Without *con*, the verb means to tell or to count; to rely on someone, keep *con*." },
+    { "wrong": "Te cuento con una historia.", "right": "Te cuento una historia.", "why": "To tell a story there is no *con*; it only belongs to relying on someone." }
+  ],
+  "personal": "Say who you count on, with *cuento con*: a friend, a neighbour, a colleague."
+}

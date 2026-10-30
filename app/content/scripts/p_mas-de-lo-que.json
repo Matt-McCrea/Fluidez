@@ -1,0 +1,43 @@
+{
+  "node": "p:mas-de-lo-que",
+  "hook": {
+    "line": "Tomás opens the books and the numbers are not what he hoped. English says \"more than we thought\" with one little word, but Spanish needs more.",
+    "es": "Cuesta más de lo que pensábamos.",
+    "en": "It costs more than we thought."
+  },
+  "examples": [
+    { "es": "Cuesta más de lo que pensábamos.", "en": "It costs more than we thought." },
+    { "es": "Hernando sabe más de lo que parece.", "en": "Hernando knows more than he seems to." },
+    { "es": "Gastamos menos de lo que creíamos.", "en": "We spent less than we thought." },
+    { "es": "Gano menos de lo que necesito.", "en": "I earn less than I need." },
+    { "es": "Hay más gente de la que pensaba.", "en": "There are more people than I thought." },
+    { "es": "Tengo más amigos de los que crees.", "en": "I have more friends than you think. (to a friend)" }
+  ],
+  "rule": "When \"than\" is followed by a whole clause (a verb), Spanish says *de lo que*, not just *que*.\n\n*Más de lo que pensábamos*: more than we thought.\n\nIf the thing compared is a noun, *lo* changes to match it:\n*más gente de la que*, *más amigos de los que*, and for a masculine singular noun, *del que*.\n\nSo *lo* is for a general idea, and *la/el/las/los* repeat the noun. *Menos* works the same way.",
+  "smallPrint": "Teachers call this a comparative with a relative clause: *de lo que* is a relative pronoun with its own article.",
+  "readAndPick": [
+    { "es": "Cuesta más de lo que pensábamos.", "options": ["It costs more than we thought.", "It costs less than we thought."], "answer": 0 },
+    { "es": "Gastamos menos de lo que creíamos.", "options": ["We spent more than we thought.", "We spent less than we thought."], "answer": 1 },
+    { "es": "Gano menos de lo que necesito.", "options": ["I earn less than I need.", "I earn more than I need."], "answer": 0 },
+    { "es": "Hay más gente de la que pensaba.", "options": ["There are fewer people than I thought.", "There are more people than I thought."], "answer": 1 },
+    { "es": "Hernando sabe más de lo que parece.", "options": ["Hernando knows more than he seems to.", "Hernando seems to know more than me."], "answer": 0 },
+    { "es": "Tengo más amigos de los que crees.", "options": ["I have more friends than you.", "I have more friends than you think."], "answer": 1 },
+    { "es": "Cuesta menos de lo que pensaba.", "options": ["It costs less than I thought.", "It costs more than I thought."], "answer": 0 },
+    { "es": "Pagamos más de lo que debíamos.", "options": ["We paid less than we should.", "We paid more than we should."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (It costs more than we thought): Cuesta más ___ pensábamos. (de lo que / que)", "answer": "Cuesta más de lo que pensábamos.", "accept": [], "why": "A whole clause follows, so *de lo que*." },
+    { "prompt": "Type in Spanish: We spent less than we thought.", "answer": "Gastamos menos de lo que creíamos.", "accept": ["Gastamos menos de lo que pensábamos."], "why": "*Menos de lo que* plus the clause." },
+    { "prompt": "Type in Spanish: I earn less than I need.", "answer": "Gano menos de lo que necesito.", "accept": [], "why": "*Necesito* is a clause, so *de lo que*." },
+    { "prompt": "Type in Spanish: There are more people than I thought.", "answer": "Hay más gente de la que pensaba.", "accept": [], "why": "*Gente* is feminine singular, so *de la que*." },
+    { "prompt": "Type in Spanish (to a friend): I have more friends than you think.", "answer": "Tengo más amigos de los que crees.", "accept": [], "why": "*Amigos* is masculine plural, so *de los que*." },
+    { "prompt": "Make it about less: Cuesta más de lo que pensaba.", "answer": "Cuesta menos de lo que pensaba.", "accept": [], "why": "Swap *más* for *menos*; the rest stays." },
+    { "prompt": "Type in Spanish: It costs less than you think. (to a friend)", "answer": "Cuesta menos de lo que piensas.", "accept": ["Cuesta menos de lo que crees."], "why": "Your friend is *tú*, so *piensas*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Cuesta más que pensábamos.", "right": "Cuesta más de lo que pensábamos.", "why": "Almost. Before a verb Spanish needs *de lo que*, not just *que*." },
+    { "wrong": "Hay más gente de lo que pensaba.", "right": "Hay más gente de la que pensaba.", "why": "When a noun is compared, the article matches it: *gente* takes *la*." },
+    { "wrong": "Tengo más amigos que crees.", "right": "Tengo más amigos de los que crees.", "why": "Plural masculine noun, so *de los que*." }
+  ],
+  "personal": "Tell us one thing that is more or less than you expected, with *más de lo que* or *menos de lo que*."
+}
