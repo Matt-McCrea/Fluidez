@@ -1,0 +1,226 @@
+{
+  "id": "sc-u35-a",
+  "unit": "u35",
+  "title": "Lo que dice la doctora",
+  "spare": false,
+  "brief": "You're Tomás, in the clinic after Hernando's collapse. The doctor is a stranger, so use usted. Find out what he has to do, and understand the rules she gives you.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Soy la doctora Ramírez. Su amigo ya está mejor, pero tiene un problema del corazón.",
+      "npcEn": "I'm Doctor Ramírez. Your friend is better now, but he has a heart problem.",
+      "intent": "Thank her and ask what he has to do now.",
+      "accept": [
+        "Gracias, doctora. ¿Qué debe hacer ahora?",
+        "Muchas gracias. ¿Y qué debe hacer él en estos días?",
+        "Gracias. ¿Qué es lo que debe hacer?"
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "deber",
+          "tense": "presente",
+          "label": "what he must do: debe"
+        },
+        {
+          "type": "question",
+          "label": "ask a question"
+        }
+      ],
+      "focus": "g:deber-modal",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Debe descansar y comer menos sal. Y hay que tomar las pastillas tres veces por día.",
+      "npcEn": "He must rest and eat less salt. And you have to take the pills three times a day.",
+      "intent": "Say that for him, resting is very hard.",
+      "accept": [
+        "Para él, descansar es muy difícil.",
+        "Para Hernando descansar es lo más difícil.",
+        "Va a ser difícil. Para él, descansar es casi imposible."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpara\\b",
+          "flags": "i",
+          "label": "say for him: para él"
+        }
+      ],
+      "focus": "g:por-para-2",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Entiendo. ¿Tiene otra pregunta?",
+      "npcEn": "I understand. Do you have another question?",
+      "intent": "Ask if he can drink coffee.",
+      "accept": [
+        "¿Se puede tomar café?",
+        "¿Puede tomar un café por la mañana?",
+        "Perdone, ¿se puede tomar café?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        }
+      ],
+      "focus": "p:se-puede-me-dejas",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Un café por la mañana, sí. Pero nada de trasnochar: tiene que dormir bien.",
+      "npcEn": "One coffee in the morning, yes. But no staying up late: he has to sleep well.",
+      "intent": "Say that, then, one must not go to bed late (use se debe).",
+      "accept": [
+        "Entonces no se debe dormir tarde.",
+        "Entonces no se debe trasnochar.",
+        "Entonces no se debe salir tarde por la noche."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse debe\\b",
+          "flags": "i",
+          "label": "one must not: no se debe"
+        }
+      ],
+      "focus": "g:impersonal-obligation",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Exacto. ¿Le explico cómo tomar las pastillas?",
+      "npcEn": "Exactly. Shall I explain how to take the pills?",
+      "intent": "Say yes, please, and ask how many times a day he must take them.",
+      "accept": [
+        "Sí, por favor. ¿Cuántas veces por día debe tomarlas?",
+        "Claro. ¿Cuántas veces por día debe tomar las pastillas?",
+        "Sí, por favor. ¿Y cuántas veces por día debe tomarlas él?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpor d[ií]a\\b",
+          "flags": "i",
+          "label": "times a day: por día"
+        },
+        {
+          "type": "question",
+          "label": "ask a question"
+        }
+      ],
+      "focus": "g:por-para-2",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Tres veces por día, después de comer. Aquí está la receta.",
+      "npcEn": "Three times a day, after eating. Here is the prescription.",
+      "intent": "Thank her and say goodbye.",
+      "accept": [
+        "Muchas gracias, doctora. Hasta luego.",
+        "Gracias por todo, doctora. Hasta luego.",
+        "Muchas gracias por su ayuda, doctora."
+      ],
+      "require": [],
+      "focus": "g:deber-modal",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:no-se",
+    "c:por-favor",
+    "c:se-puede",
+    "c:tienes",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:impersonal-obligation",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:superlatives",
+    "g:tener-que-hay-que",
+    "g:verb-infinitive",
+    "l:ahora",
+    "l:amigo",
+    "l:aquí",
+    "l:ayuda",
+    "l:bien",
+    "l:café",
+    "l:claro",
+    "l:comer",
+    "l:corazón",
+    "l:cuánto",
+    "l:cómo",
+    "l:deber",
+    "l:descansar",
+    "l:después",
+    "l:difícil",
+    "l:doctor",
+    "l:dormir",
+    "l:día",
+    "l:entender",
+    "l:estar",
+    "l:exacto",
+    "l:explicar",
+    "l:favor",
+    "l:hacer",
+    "l:imposible",
+    "l:ir",
+    "l:mañana",
+    "l:mejor",
+    "l:noche",
+    "l:pastilla",
+    "l:perdonar",
+    "l:poder",
+    "l:pregunta",
+    "l:problema",
+    "l:qué",
+    "l:receta",
+    "l:salir",
+    "l:ser",
+    "l:tarde",
+    "l:tener",
+    "l:tomar",
+    "l:trasnochar",
+    "l:vez",
+    "p:aqui-ahi-alla",
+    "p:costar-pagar",
+    "p:es-adj-inf",
+    "p:gracias-por",
+    "p:madrugar-trasnochar",
+    "p:me-temo-que",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:se-puede-me-dejas",
+    "p:time-sequence-basic",
+    "p:veces-al"
+  ]
+}

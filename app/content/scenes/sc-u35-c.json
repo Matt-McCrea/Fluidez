@@ -1,0 +1,248 @@
+{
+  "id": "sc-u35-c",
+  "unit": "u35",
+  "title": "El salero de Hernando",
+  "spare": true,
+  "brief": "You're in the café with Vale and Hernando, a few days after the clinic. Vale is a friend, so use tú with her. Hernando is older, so use usted. Keep the old man to his doctor's rules without losing his goodwill.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando está aquí y quiere sopa con sal. Ni se te ocurra dársela.",
+      "npcEn": "Hernando is here and wants soup with salt. Don't you dare give it to him.",
+      "intent": "Say of course not and ask her what he can eat.",
+      "accept": [
+        "Claro que no. ¿Qué puede comer?",
+        "No, claro. ¿Y qué puede comer Hernando?",
+        "Claro que no. ¿Qué puede comer él?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        }
+      ],
+      "focus": "c:ni-se-te-ocurra",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Sopa sin sal, arroz y mucha fruta. Y las pastillas tres veces por día.",
+      "npcEn": "Soup without salt, rice and lots of fruit. And the pills three times a day.",
+      "intent": "Say you'll make a list for Hernando.",
+      "accept": [
+        "Voy a hacer una lista para Hernando.",
+        "Voy a escribir una lista para él.",
+        "Hago una lista para Hernando, para que no se olvide."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpara\\b",
+          "flags": "i",
+          "label": "a list for him: para"
+        }
+      ],
+      "focus": "g:por-para-2",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Joven, ¿le importa si me siento aquí con mi café?",
+      "npcEn": "Young man, do you mind if I sit here with my coffee?",
+      "intent": "Say not at all, and tell him (usted) he must rest.",
+      "accept": [
+        "Para nada, don Hernando. Pero usted debe descansar.",
+        "No, claro que no. Debe sentarse y descansar.",
+        "Siéntese, don Hernando. Debe descansar un rato."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "deber",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "he must: usted debe"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "debes",
+            "deberías"
+          ],
+          "label": "use usted: debe"
+        }
+      ],
+      "focus": "g:deber-modal",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Descansar es para los que no tienen trabajo.",
+      "npcEn": "Resting is for people who have no work.",
+      "intent": "Tell him that the doctor said one has to rest (use hay que).",
+      "accept": [
+        "Don Hernando, el médico dijo que hay que descansar.",
+        "Hay que descansar, don Hernando. Es por su corazón.",
+        "Don Hernando, hay que descansar. Lo dijo la doctora."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhay que\\b",
+          "flags": "i",
+          "label": "one has to: hay que"
+        }
+      ],
+      "focus": "g:impersonal-obligation",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Ya le quité la sal. Ahora hay que vigilar la cocina.",
+      "npcEn": "I've already taken his salt away. Now we have to watch the kitchen.",
+      "intent": "Tell Vale (tú) not to go and put salt in the soup.",
+      "accept": [
+        "No vayas a ponerle sal a la sopa.",
+        "Ten cuidado, no vayas a echarle sal a la sopa.",
+        "Y no vayas a ponerle sal a la sopa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno vayas a\\b",
+          "flags": "i",
+          "label": "mind you do not: no vayas a"
+        }
+      ],
+      "focus": "p:no-vayas-a",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Está bien, joven. ¿Y un tinto para el camino?",
+      "npcEn": "All right, young man. And a black coffee for the road?",
+      "intent": "Say yes to one coffee, but only one.",
+      "accept": [
+        "Un tinto sí, don Hernando. Pero uno solo.",
+        "Claro, uno solo. Esta vez invito yo.",
+        "Sí, un tinto, pero uno solo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\buno solo\\b",
+          "flags": "i",
+          "label": "only one: uno solo"
+        }
+      ],
+      "focus": "g:por-para-2",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hay-que",
+    "c:ni-se-te-ocurra",
+    "c:no-se",
+    "c:para-nada",
+    "c:tienes",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:para-que",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-prepositions",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:aquí",
+    "l:arroz",
+    "l:bien",
+    "l:café",
+    "l:camino",
+    "l:claro",
+    "l:cocina",
+    "l:comer",
+    "l:corazón",
+    "l:cuidado",
+    "l:dar",
+    "l:deber",
+    "l:decir",
+    "l:descansar",
+    "l:doctor",
+    "l:día",
+    "l:echar",
+    "l:escribir",
+    "l:estar",
+    "l:fruta",
+    "l:hacer",
+    "l:importar",
+    "l:invitar",
+    "l:ir",
+    "l:joven",
+    "l:listo",
+    "l:médico",
+    "l:ocurrir",
+    "l:olvidar",
+    "l:pastilla",
+    "l:poder",
+    "l:poner",
+    "l:querer",
+    "l:quitar",
+    "l:qué",
+    "l:rato",
+    "l:sal",
+    "l:sentarse",
+    "l:sentirse",
+    "l:ser",
+    "l:sopa",
+    "l:tener",
+    "l:tinto",
+    "l:trabajo",
+    "l:vez",
+    "l:vigilar",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:con-sin",
+    "p:costar-pagar",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:no-vayas-a",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:te-importa-si",
+    "p:veces-al"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "sc-u35-b",
+  "unit": "u35",
+  "title": "En la recepción",
+  "spare": false,
+  "brief": "You're at the clinic desk, asking for an appointment for your friend Hernando. The receptionist is a stranger, so use usted. Describe how he feels, ask politely and find out what rules apply.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes. ¿Para quién es la cita?",
+      "npcEn": "Good afternoon. Who is the appointment for?",
+      "intent": "Say it's for your friend Hernando and that he feels very bad.",
+      "accept": [
+        "Es para mi amigo Hernando. Se siente muy mal.",
+        "La cita es para un amigo, Hernando. Se siente fatal.",
+        "Es para Hernando. Se siente mal desde ayer."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpara\\b",
+          "flags": "i",
+          "label": "it is for: es para"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bse siente\\b",
+          "flags": "i",
+          "label": "he feels: se siente"
+        }
+      ],
+      "focus": "p:sentirse-mal",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Qué síntomas tiene?",
+      "npcEn": "What symptoms does he have?",
+      "intent": "Describe a symptom: he is very tired, or he has a headache.",
+      "accept": [
+        "Está muy cansado y tiene dolor de cabeza.",
+        "Se cayó y tiene mucho dolor en el pecho.",
+        "Se siente mareado y no puede caminar bien."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "presente",
+          "label": "say how he is now (present)"
+        }
+      ],
+      "focus": "p:sentirse-mal",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "El doctor lo va a ver ahora. Una sola persona puede pasar con él.",
+      "npcEn": "The doctor will see him now. Only one person can go in with him.",
+      "intent": "Politely ask if she minds if you go in with him.",
+      "accept": [
+        "¿Le importa si entro yo?",
+        "Perdón, ¿le importa si paso yo con él?",
+        "¿Le importa si lo acompaño yo?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bimporta si\\b",
+          "flags": "i",
+          "label": "do you mind if: le importa si"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "te importa"
+          ],
+          "label": "use usted: le importa"
+        }
+      ],
+      "focus": "p:te-importa-si",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Está bien. ¿Tiene la tarjeta de la EPS?",
+      "npcEn": "That's fine. Do you have the EPS card?",
+      "intent": "Say you don't have it and ask if you can pay in cash.",
+      "accept": [
+        "No la tengo. ¿Se puede pagar en efectivo?",
+        "No, la dejó en su casa. ¿Se puede pagar en la caja?",
+        "No la traje. ¿Se puede pagar en efectivo?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse puede\\b",
+          "flags": "i",
+          "label": "can one: se puede"
+        },
+        {
+          "type": "question",
+          "label": "ask a question"
+        }
+      ],
+      "focus": "p:se-puede-me-dejas",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Sí, en la caja. Y mañana tiene que volver a las ocho.",
+      "npcEn": "Yes, at the cash desk. And he has to come back tomorrow at eight.",
+      "intent": "Ask whether he must bring anything.",
+      "accept": [
+        "¿Debe traer algo?",
+        "¿Él debe traer algo más?",
+        "Perfecto. ¿Hernando debe traer los medicamentos?"
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "deber",
+          "tense": "presente",
+          "label": "must he: debe"
+        },
+        {
+          "type": "question",
+          "label": "ask a question"
+        }
+      ],
+      "focus": "g:deber-modal",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Nada más la tarjeta y su cédula.",
+      "npcEn": "Only the card and his ID.",
+      "intent": "Thank her and say see you tomorrow.",
+      "accept": [
+        "Muchas gracias por todo. Hasta mañana.",
+        "Gracias. Hasta mañana.",
+        "Muy amable, gracias. Hasta mañana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bgracias\\b",
+          "flags": "i",
+          "label": "say thanks"
+        }
+      ],
+      "focus": "p:se-puede-me-dejas",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:algo-mas",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:con-el-ella",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:muy-amable",
+    "c:perdon-disculpe",
+    "c:se-puede",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:tener-que-hay-que",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acompañar",
+    "l:ahora",
+    "l:amable",
+    "l:amigo",
+    "l:ayer",
+    "l:bien",
+    "l:buena",
+    "l:cabeza",
+    "l:caerse",
+    "l:caja",
+    "l:caminar",
+    "l:cansado",
+    "l:casa",
+    "l:cita",
+    "l:cédula",
+    "l:deber",
+    "l:dejar",
+    "l:doctor",
+    "l:dolor",
+    "l:efectivo",
+    "l:entrar",
+    "l:estar",
+    "l:fatal",
+    "l:importar",
+    "l:ir",
+    "l:mal",
+    "l:marearse",
+    "l:mañana",
+    "l:medicamento",
+    "l:pagar",
+    "l:pasar",
+    "l:pecho",
+    "l:perdón",
+    "l:perfecto",
+    "l:persona",
+    "l:poder",
+    "l:quién",
+    "l:qué",
+    "l:sentirse",
+    "l:ser",
+    "l:síntoma",
+    "l:tarde",
+    "l:tarjeta",
+    "l:tener",
+    "l:traer",
+    "l:traje",
+    "l:ver",
+    "l:volver",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:doler",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:se-puede-me-dejas",
+    "p:sentirse-mal",
+    "p:te-importa-si",
+    "p:telling-time"
+  ]
+}
