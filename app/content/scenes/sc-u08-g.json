@@ -1,0 +1,217 @@
+{
+  "id": "sc-u08-g",
+  "unit": "u08",
+  "title": "The photo from the coast",
+  "brief": "You're Tomás. Don Hernando comes into the café proud of a photo his son has sent from the Caribbean coast. Ask about it, tell him what you have and haven't done, and help him with a small mix-up. He's older than you, so use usted with him; he uses tú with you.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, una foto de mi hijo. Está visitando la costa.",
+      "npcEn": "Tomás, a photo of my son. He's visiting the coast.",
+      "intent": "Ask him what his son is doing in the photo.",
+      "accept": [
+        "¿Qué está haciendo?",
+        "¿Qué está haciendo su hijo?",
+        "¡Qué chévere! ¿Qué está haciendo?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bestá haciendo\\b",
+          "label": "what he's doing right now: está haciendo"
+        }
+      ],
+      "focus": "g:estar-gerund",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Está nadando en el mar, en una isla cerca de Cartagena. ¿Tú has estado en Cartagena?",
+      "npcEn": "He's swimming in the sea, on an island near Cartagena. Have you been to Cartagena?",
+      "intent": "Say not yet, and ask whether he has been there.",
+      "accept": [
+        "Todavía no. ¿Usted ha estado en Cartagena?",
+        "No, todavía no. ¿Y usted ha estado allí?",
+        "Todavía no. ¿Y usted ha estado?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "todavía no",
+          "label": "not yet: todavía no"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bha estado\\b",
+          "label": "ask with usted: ¿ha estado?, not ¿has estado?"
+        }
+      ],
+      "focus": "g:perfecto-experience",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Muchas veces. Fui con mi esposa hace cuarenta años. ¿Y sabes bucear?",
+      "npcEn": "Lots of times. I went with my wife forty years ago. And do you know how to dive?",
+      "intent": "Say you don't know how to dive, but you can swim.",
+      "accept": [
+        "No, no sé bucear, pero sé nadar.",
+        "Sé nadar, pero no sé bucear.",
+        "No sé bucear. Pero sé nadar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno sé bucear\\b",
+          "label": "don't know how to dive: no sé bucear"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bsé nadar\\b",
+          "label": "know how to swim: sé nadar"
+        }
+      ],
+      "focus": "x:saber-poder",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Yo tampoco. ¿Y dónde está mi foto? ¿La tienes tú?",
+      "npcEn": "Me neither. And where's my photo? Have you got it?",
+      "intent": "Say yes, you've got it, it's right here.",
+      "accept": [
+        "Sí, la tengo. Está aquí.",
+        "Sí, la tengo yo.",
+        "Sí, aquí está. La tengo yo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bla tengo\\b",
+          "label": "it (the photo): la tengo"
+        }
+      ],
+      "focus": "g:direct-objects",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Gracias, mijo. El domingo mi hijo viene a Bogotá. Y quiere conocer al canadiense.",
+      "npcEn": "Thanks, son. On Sunday my son is coming to Bogotá. And he wants to meet the Canadian.",
+      "intent": "Say of course, you want to meet his son too.",
+      "accept": [
+        "Claro, yo también quiero conocer a su hijo.",
+        "Claro, quiero conocer a su hijo.",
+        "¡Claro! Yo también quiero conocer a su hijo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bconocer",
+          "label": "meet a person for the first time: conocer"
+        }
+      ],
+      "focus": "x:saber-conocer",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Y tú, ¿cuándo vas a la costa? Mijo, vale la pena ir.",
+      "npcEn": "And you, when are you going to the coast? Son, it's worth going.",
+      "intent": "Say no idea, but you want to go.",
+      "accept": [
+        "Ni idea, pero quiero ir.",
+        "Ni idea. Pero quiero ir.",
+        "¡Ni idea! Pero sí quiero ir."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ni idea",
+          "label": "no idea: ni idea"
+        }
+      ],
+      "focus": "c:ni-idea",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:donde-esta",
+    "c:fui",
+    "c:gracias-de-nada",
+    "c:has-estado",
+    "c:ni-idea",
+    "c:no-se",
+    "c:que-chevere",
+    "c:quiero",
+    "c:tengo",
+    "c:tienes",
+    "c:todavia-no",
+    "c:una-vez",
+    "c:vale-la-pena",
+    "c:voy-vas",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:ir-a-plans",
+    "g:perfecto-experience",
+    "g:present-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:allí",
+    "l:aquí",
+    "l:año",
+    "l:bucear",
+    "l:canadiense",
+    "l:cerca",
+    "l:chévere",
+    "l:claro",
+    "l:conocer",
+    "l:costa",
+    "l:cuándo",
+    "l:domingo",
+    "l:dónde",
+    "l:esposa",
+    "l:estar",
+    "l:foto",
+    "l:hacer",
+    "l:hijo",
+    "l:idea",
+    "l:ir",
+    "l:isla",
+    "l:mar",
+    "l:mijo",
+    "l:nadar",
+    "l:pena",
+    "l:querer",
+    "l:qué",
+    "l:saber",
+    "l:ser",
+    "l:tener",
+    "l:valer",
+    "l:venir",
+    "l:vez",
+    "l:visitar",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:days-el-lunes",
+    "p:ir-a-venir-de-place",
+    "p:no-es-x-es-y",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:saber-conocer",
+    "p:tambien-tampoco"
+  ]
+}
