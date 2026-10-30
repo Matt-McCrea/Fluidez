@@ -1,0 +1,212 @@
+{
+  "id": "sc-u39-c",
+  "unit": "u39",
+  "title": "Algo en el ojo",
+  "spare": true,
+  "brief": "You're Tomás at the café counter. Don Hernando has read your statement and has things to say. He is older than you and courtly, so use usted. Explain why you wrote it and what it means to the neighbourhood.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Buenos días, Tomás. Leí su texto de principio a fin. Dígame, ¿por qué escribió tanto sobre un café?",
+      "npcEn": "Hernando: Good morning, Tomás. I read your text from beginning to end. Tell me, why did you write so much about a café?",
+      "intent": "Say that despite the new buildings the café is part of the neighbourhood.",
+      "accept": [
+        "A pesar de los edificios nuevos, el café forma parte del barrio.",
+        "El café forma parte del barrio, a pesar de Altamira.",
+        "A pesar de todo, el café forma parte del barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ba pesar de\\b",
+          "flags": "iu",
+          "label": "concede: a pesar de..."
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bforma parte\\b",
+          "flags": "iu",
+          "label": "the café is part of: forma parte de"
+        }
+      ],
+      "focus": "g:concession-despite",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Mmm. ¿Fue fácil escribir sobre los taxistas?",
+      "npcEn": "Hernando: Hmm. Was it easy to write about taxi drivers?",
+      "intent": "Say no, it is a topic that is hard to explain.",
+      "accept": [
+        "No, es un tema difícil de explicar.",
+        "No, fue un párrafo difícil de escribir.",
+        "No mucho. Es un tema difícil de resumir."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "difícil de \\p{L}+(ar|er|ir)\\b",
+          "flags": "iu",
+          "label": "use: difícil de + verb"
+        }
+      ],
+      "focus": "p:dificil-de-inf",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Es cierto. ¿Y qué clientes tiene el café, según usted?",
+      "npcEn": "Hernando: That's true. And what customers does the café have, according to you?",
+      "intent": "Say there are several kinds of customers: some come for the coffee and others for Simón.",
+      "accept": [
+        "Hay varios tipos de clientes: unos vienen por el café y otros por Simón.",
+        "Hay dos tipos de clientes. Unos vienen por el tinto y otros por Simón.",
+        "Hay varios tipos de clientes. Unos vienen por el café; otros, por Simón."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhay (varios|dos|tres) (tipos|clases) de\\b",
+          "flags": "iu",
+          "label": "name the kinds: hay varios tipos de..."
+        }
+      ],
+      "focus": "p:hay-varios-tipos",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Ejem. Perdone, tengo algo en el ojo. Es el polvo, nada más.",
+      "npcEn": "Hernando: Ahem. Excuse me, I have something in my eye. It's the dust, nothing more.",
+      "intent": "Kindly say that Rosa is part of every paragraph.",
+      "accept": [
+        "Entiendo. Rosa forma parte de cada párrafo, Don Hernando.",
+        "Sí, es el polvo. Rosa forma parte de cada página.",
+        "No se preocupe. Rosa forma parte de todo el texto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bforma parte\\b",
+          "flags": "iu",
+          "label": "use: forma parte de"
+        }
+      ],
+      "focus": "p:formar-parte-de",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Gracias, Tomás. ¿Qué piensa hacer después de la presentación?",
+      "npcEn": "Hernando: Thank you, Tomás. What do you plan to do after the presentation?",
+      "intent": "Say you are going to invite everyone, you too, to a tinto.",
+      "accept": [
+        "Voy a invitar a todos a un tinto, y a usted también.",
+        "Después voy a invitar a todos a un tinto.",
+        "Voy a invitarlos a todos a un tinto, Don Hernando."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "tinto",
+          "label": "invite them to a tinto"
+        }
+      ],
+      "focus": "g:infinitive-subject",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:no-se",
+    "c:no-te-preocupes",
+    "c:ojo",
+    "c:segun",
+    "c:tengo",
+    "c:tienes",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:concession-despite",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:barrio",
+    "l:bueno",
+    "l:café",
+    "l:cliente",
+    "l:decir",
+    "l:después",
+    "l:difícil",
+    "l:día",
+    "l:edificio",
+    "l:entender",
+    "l:escribir",
+    "l:explicar",
+    "l:fin",
+    "l:formar",
+    "l:fácil",
+    "l:hacer",
+    "l:invitar",
+    "l:ir",
+    "l:leer",
+    "l:mmm",
+    "l:nuevo",
+    "l:ojo",
+    "l:parte",
+    "l:pensar",
+    "l:perdonar",
+    "l:pesar",
+    "l:polvo",
+    "l:preocuparse",
+    "l:presentación",
+    "l:principio",
+    "l:página",
+    "l:párrafo",
+    "l:qué",
+    "l:resumir",
+    "l:ser",
+    "l:sobre",
+    "l:taxista",
+    "l:tema",
+    "l:tener",
+    "l:texto",
+    "l:tinto",
+    "l:tipo",
+    "l:vienen",
+    "p:adj-de-inf",
+    "p:dificil-de-inf",
+    "p:don-dona-nombre",
+    "p:entonces-de-repente",
+    "p:es-adj-inf",
+    "p:formar-parte-de",
+    "p:hay-varios-tipos",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:pensar-en",
+    "p:pensar-inf",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:senor-don-article",
+    "p:tambien-tampoco",
+    "p:time-sequence-basic"
+  ]
+}
