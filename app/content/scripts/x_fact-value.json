@@ -1,0 +1,180 @@
+{
+  "node": "x:fact-value",
+  "hook": {
+    "line": "Mariana wants the story straight, and she keeps asking two different questions: is it true, and is it good? Spanish answers each with a different verb form, even though English uses the same one.",
+    "es": "Es verdad que cerraron el parque.",
+    "en": "It's true that they closed the park."
+  },
+  "examples": [
+    {
+      "es": "Es verdad que cerraron el parque.",
+      "en": "It's true that they closed the park."
+    },
+    {
+      "es": "Es una pena que cierren el parque.",
+      "en": "It's a shame they're closing the park."
+    },
+    {
+      "es": "Es verdad que Vale viene hoy.",
+      "en": "It's true that Vale is coming today."
+    },
+    {
+      "es": "Es importante que Vale venga hoy.",
+      "en": "It's important that Vale comes today."
+    },
+    {
+      "es": "Es verdad que ustedes están aquí.",
+      "en": "It's true that you all are here."
+    },
+    {
+      "es": "Es bueno que ustedes estén aquí.",
+      "en": "It's good that you all are here."
+    },
+    {
+      "es": "Es verdad que Simón grita por la mañana.",
+      "en": "It's true that Simón yells in the morning."
+    },
+    {
+      "es": "Es normal que Simón grite por la mañana.",
+      "en": "It's normal for Simón to yell in the morning."
+    }
+  ],
+  "rule": "Ask yourself one question: am I saying that something is a fact, or am I judging it?\n\nA fact: *Es verdad que*, *Es cierto que*, *Es un hecho que*. The verb is the normal one you already know.\n*Es verdad que Vale viene hoy.*\n\nA judgement: *Es bueno que*, *Es importante que*, *Es una pena que*, *Es normal que*. The verb takes the wish form.\n*Es importante que Vale venga hoy.*\n\nEnglish uses the same *is* either way. Spanish splits them: the fact is just reported, the judgement is a reaction to it.\n\nQuick test: if you can swap in *I know that*, use the normal verb. If you can swap in *I feel that*, use the wish form.",
+  "smallPrint": "Teachers call the first group indicative after expressions of certainty, and the second group subjunctive after expressions of judgement.",
+  "readAndPick": [
+    {
+      "es": "Es verdad que Vale viene hoy.",
+      "options": [
+        "It's true that Vale is coming today.",
+        "It's good that Vale is coming today.",
+        "It's important that Vale comes today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es importante que Vale venga hoy.",
+      "options": [
+        "It's true that Vale is coming today.",
+        "It's important that Vale comes today.",
+        "Vale says she's coming today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es una pena que cierren el parque.",
+      "options": [
+        "It's true that they're closing the park.",
+        "I know they closed the park.",
+        "It's a shame they're closing the park."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es verdad que cerraron el parque.",
+      "options": [
+        "It's true that they closed the park.",
+        "It's a shame they closed the park.",
+        "It's good that they closed the park."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es normal que Simón grite por la mañana.",
+      "options": [
+        "It's true that Simón yells in the morning.",
+        "It's normal for Simón to yell in the morning.",
+        "It's a fact that I yell in the morning."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es verdad que ustedes están aquí.",
+      "options": [
+        "It's good that you all are here.",
+        "It's good that they're here.",
+        "It's true that you all are here."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es bueno que ustedes estén aquí.",
+      "options": [
+        "It's good that you all are here.",
+        "It's true that you all are here.",
+        "It's true that we're here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es verdad que Simón grita por la mañana.",
+      "options": [
+        "It's normal for Simón to yell in the morning.",
+        "It's true that Simón yells in the morning.",
+        "It's a shame that Simón yells in the morning."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *cerraron* or *cierren* and type the whole sentence: *Es verdad que ___ el parque.*",
+      "answer": "Es verdad que cerraron el parque.",
+      "accept": [],
+      "why": "*Es verdad que* reports a fact, so the normal verb: *cerraron*."
+    },
+    {
+      "prompt": "Pick *cierran* or *cierren* and type the whole sentence: *Es una pena que ___ el parque.*",
+      "answer": "Es una pena que cierren el parque.",
+      "accept": [],
+      "why": "*Una pena* is a judgement, so the wish form: *cierren*."
+    },
+    {
+      "prompt": "Type in Spanish: It's true that Vale is coming today.",
+      "answer": "Es verdad que Vale viene hoy.",
+      "accept": [],
+      "why": "A fact keeps the normal verb: *viene*."
+    },
+    {
+      "prompt": "Type in Spanish: It's important that Vale comes today.",
+      "answer": "Es importante que Vale venga hoy.",
+      "accept": [],
+      "why": "*Importante* is a judgement, so *viene* becomes *venga*."
+    },
+    {
+      "prompt": "Make it a fact: *Es bueno que ustedes estén aquí.* Use *Es verdad que*.",
+      "answer": "Es verdad que ustedes están aquí.",
+      "accept": [],
+      "why": "With *es verdad que* you report it, so *estén* goes back to *están*."
+    },
+    {
+      "prompt": "Make it a judgement: *Es verdad que Simón grita por la mañana.* Use *Es normal que*.",
+      "answer": "Es normal que Simón grite por la mañana.",
+      "accept": [],
+      "why": "With *es normal que* you are judging it, so *grita* becomes *grite*."
+    },
+    {
+      "prompt": "Type in Spanish: It's a fact that Altamira bought the block.",
+      "answer": "Es un hecho que Altamira compró la cuadra.",
+      "accept": [],
+      "why": "*Un hecho* reports something true, so the normal verb: *compró*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es verdad que cierren el parque.",
+      "right": "Es verdad que cierran el parque.",
+      "why": "Almost. A fact is just reported, so use the normal verb: *cierran*."
+    },
+    {
+      "wrong": "Es bueno que cierran el parque.",
+      "right": "Es bueno que cierren el parque.",
+      "why": "*Bueno* is a judgement, so the wish form: *cierren*."
+    },
+    {
+      "wrong": "Es importante que Vale viene hoy.",
+      "right": "Es importante que Vale venga hoy.",
+      "why": "*Importante* is a judgement, so the verb changes to *venga*."
+    }
+  ],
+  "personal": "Write one fact and one judgement about the same thing in your life: *Es verdad que mi vecino...* and *Es una pena que mi vecino...*."
+}

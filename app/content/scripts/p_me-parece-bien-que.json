@@ -1,0 +1,176 @@
+{
+  "node": "p:me-parece-bien-que",
+  "hook": {
+    "line": "Tomás hears that the neighbours want to close the street for a market. He has to say whether he approves, without starting a fight. Spanish has a soft way to do it.",
+    "es": "Me parece bien que cierren la calle.",
+    "en": "I think it's good that they're closing the street."
+  },
+  "examples": [
+    {
+      "es": "Me parece bien que cierren la calle.",
+      "en": "I think it's good that they're closing the street."
+    },
+    {
+      "es": "Me parece muy mal que no avises.",
+      "en": "I think it's really wrong that you don't let people know. (to a friend)"
+    },
+    {
+      "es": "Me parece fatal que cierren el parque.",
+      "en": "I think it's awful that they're closing the park."
+    },
+    {
+      "es": "A Hernando le parece mal que vendan el café.",
+      "en": "Hernando thinks it's wrong that they're selling the café."
+    },
+    {
+      "es": "Me parece bien tu decisión.",
+      "en": "I think your decision is good."
+    },
+    {
+      "es": "Me parece bien venir temprano.",
+      "en": "I think it's good to come early."
+    }
+  ],
+  "rule": "*Me parece bien / mal / fatal / genial* says you approve or disapprove.\n\nWhat comes next depends on who does the thing:\n*Me parece bien tu decisión.* A noun, nothing else.\n*Me parece bien venir temprano.* You do it yourself, so the plain verb.\n*Me parece bien que vengas.* Someone else does it, so *que* and the wish form.\n\nChange the feeler with *te*, *le*, *nos*, *les*. To say you don't approve, add *no*: *No me parece bien que Simón grite.*",
+  "smallPrint": "Teachers call this the subjunctive after expressions of approval (*aprobación y desaprobación*).",
+  "readAndPick": [
+    {
+      "es": "Me parece bien que cierren la calle.",
+      "options": [
+        "I think it's good that they're closing the street.",
+        "I think it's good to close the street.",
+        "I think it's good that I closed the street."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me parece fatal que cierren el parque.",
+      "options": [
+        "I think it's great that they're closing the park.",
+        "I think it's awful that they're closing the park.",
+        "I think it's fine to close the park."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me parece bien venir temprano.",
+      "options": [
+        "I think it's good that you come early.",
+        "I think it's good that she comes early.",
+        "I think it's good to come early."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A Hernando le parece mal que vendan el café.",
+      "options": [
+        "Hernando thinks it's wrong that they're selling the café.",
+        "I think it's wrong that Hernando sells the café.",
+        "Hernando thinks it's wrong to sell the café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me parece bien tu decisión.",
+      "options": [
+        "I think your decision is good.",
+        "I think you decided well.",
+        "I think it's good that you decide."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No me parece bien que Simón grite.",
+      "options": [
+        "I think it's good that Simón yells.",
+        "I don't think it's good that Simón yells.",
+        "I don't think Simón should be quiet."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me parece muy mal que no contestes.",
+      "options": [
+        "I think it's really wrong that you don't answer. (to a friend)",
+        "I think it's really wrong that I don't answer.",
+        "I think it's really wrong that she doesn't answer."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos parece fatal que cobren tanto.",
+      "options": [
+        "I think it's awful that they charge so much.",
+        "We think it's awful that they charge so much.",
+        "We think it's awful to charge so much."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *abres* or *abras* and type the whole sentence, to a friend: *Me parece bien que tú ___ temprano.*",
+      "answer": "Me parece bien que tú abras temprano.",
+      "accept": [
+        "Me parece bien que abras temprano."
+      ],
+      "why": "Someone else's action after *me parece bien que* takes the wish form: *abras*."
+    },
+    {
+      "prompt": "Type in Spanish: I think it's awful that they're closing the park.",
+      "answer": "Me parece fatal que cierren el parque.",
+      "accept": [],
+      "why": "*Fatal* is a strong disapproval, then *que* and the wish form."
+    },
+    {
+      "prompt": "Type in Spanish: I think it's good that you all are talking with the council.",
+      "answer": "Me parece muy bien que ustedes hablen con la alcaldía.",
+      "accept": [
+        "Me parece bien que ustedes hablen con la alcaldía."
+      ],
+      "why": "For *ustedes*, the wish form of *hablar* is *hablen*."
+    },
+    {
+      "prompt": "Type in Spanish: I think it's good to come early.",
+      "answer": "Me parece bien venir temprano.",
+      "accept": [],
+      "why": "You do it yourself, so the plain verb and no *que*."
+    },
+    {
+      "prompt": "Type in Spanish: I think your decision is good.",
+      "answer": "Me parece bien tu decisión.",
+      "accept": [],
+      "why": "A noun comes straight after, with no *que*."
+    },
+    {
+      "prompt": "Make it negative: *Me parece bien que Simón grite.*",
+      "answer": "No me parece bien que Simón grite.",
+      "accept": [],
+      "why": "Add *no* in front of *me*. The wish form stays."
+    },
+    {
+      "prompt": "Make it about Hernando: *Me parece mal que vendan el café.*",
+      "answer": "A Hernando le parece mal que vendan el café.",
+      "accept": [],
+      "why": "*Me* becomes *le*, with *a Hernando* in front."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me parece bien que vienes.",
+      "right": "Me parece bien que vengas.",
+      "why": "Almost. After *me parece bien que*, use the wish form: *vengas*."
+    },
+    {
+      "wrong": "Me parece mal Altamira compre la cuadra.",
+      "right": "Me parece mal que Altamira compre la cuadra.",
+      "why": "When someone else does it, Spanish needs *que* before the new subject."
+    },
+    {
+      "wrong": "Parece mal que Simón grite.",
+      "right": "Me parece mal que Simón grite.",
+      "why": "Don't forget *me*: it says who is judging."
+    }
+  ],
+  "personal": "Say two true reactions to what someone you know did, one with *Me parece bien que* and one with *Me parece mal que*."
+}

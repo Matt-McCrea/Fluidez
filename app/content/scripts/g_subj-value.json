@@ -1,0 +1,198 @@
+{
+  "node": "g:subj-value",
+  "hook": {
+    "line": "Altamira wants the park, and everyone on the block has an opinion about it. Judging something (it's a shame, it's important, it's normal) is the most natural way to say what you think, and Spanish gives it a verb form of its own.",
+    "es": "Es una pena que cierren el parque.",
+    "en": "It's a shame they're closing the park."
+  },
+  "examples": [
+    {
+      "es": "Es importante que lo leas.",
+      "en": "It's important that you read it. (to a friend)"
+    },
+    {
+      "es": "Es una pena que cierren el parque.",
+      "en": "It's a shame they're closing the park."
+    },
+    {
+      "es": "Es normal que Simón grite por la mañana.",
+      "en": "It's normal for Simón to yell in the morning."
+    },
+    {
+      "es": "Es bueno que ustedes estén aquí.",
+      "en": "It's good that you all are here."
+    },
+    {
+      "es": "No es justo que ellos cobren tanto.",
+      "en": "It's not fair that they charge so much."
+    },
+    {
+      "es": "Es necesario que pagues hoy.",
+      "en": "It's necessary that you pay today. (to a friend)"
+    },
+    {
+      "es": "Es importante que Tomás abra temprano.",
+      "en": "It's important that Tomás opens early."
+    },
+    {
+      "es": "Es normal tener miedo.",
+      "en": "It's normal to be afraid."
+    }
+  ],
+  "rule": "Each of these lines gives a judgement: good, important, normal, fair, a shame. The judgement is the first part (*Es importante*, *Es una pena*, *Es normal*), then *que*, then what happens.\n\nThe verb after *que* takes the wish form, the same one you met with *quiero que* and *me alegra que*: *leas*, *cierren*, *grite*, *estén*.\n\nEnglish says *is*, *are*, *reads*. Spanish switches to the wish form because you are judging the thing, not reporting it.\n\nThe same pattern works for *Es mejor que esperemos* (it's better that we wait), *Es bueno que*, *Es necesario que* and *No es justo que*.\n\nIf you mean people in general, skip *que* and use the plain verb: *Es normal tener miedo.* *Es mejor llamar antes.*",
+  "smallPrint": "Teachers call this the subjunctive after expressions of judgement (*subjuntivo con expresiones de valoración*). Facts such as *es verdad que* work differently, and you'll see why in the next drill.",
+  "readAndPick": [
+    {
+      "es": "Es importante que lo leas.",
+      "options": [
+        "It's important that you read it. (to a friend)",
+        "It's important that I read it.",
+        "It's important that she reads it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es normal tener miedo.",
+      "options": [
+        "It's normal that they're afraid.",
+        "It's normal to be afraid.",
+        "It's normal that I'm afraid."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es necesario que pagues hoy.",
+      "options": [
+        "It's necessary that I pay today.",
+        "It's necessary that we pay today.",
+        "It's necessary that you pay today. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es bueno que ustedes estén aquí.",
+      "options": [
+        "It's good that you all are here.",
+        "It's good that they are here.",
+        "It's good that we are here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es importante que Tomás abra temprano.",
+      "options": [
+        "Tomás says it's important to open early.",
+        "It's important that Tomás opens early.",
+        "It's important for me to open early."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es una pena que no puedas venir.",
+      "options": [
+        "It's a shame I can't come.",
+        "It's a shame she can't come.",
+        "It's a shame you can't come. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No es justo que ellos cobren tanto.",
+      "options": [
+        "It's not fair that they charge so much.",
+        "It's not fair that I charge so much.",
+        "It's not fair that you charge so much. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es importante que ustedes sepan la verdad.",
+      "options": [
+        "It's important that we know the truth.",
+        "It's important that you all know the truth.",
+        "It's important that they know the truth."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es importante que todos voten.",
+      "options": [
+        "It's important that everyone votes.",
+        "It's important that I vote.",
+        "It's important to vote."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *pagas* or *pagues* and type the whole sentence, to a friend: *Es necesario que tú ___ hoy.*",
+      "answer": "Es necesario que tú pagues hoy.",
+      "accept": [
+        "Es necesario que pagues hoy."
+      ],
+      "why": "A judgement like *es necesario* is followed by the wish form: *pagues*."
+    },
+    {
+      "prompt": "Pick *puede* or *pueda* and type the whole sentence: *Es una pena que Vale no ___ venir.*",
+      "answer": "Es una pena que Vale no pueda venir.",
+      "accept": [],
+      "why": "*Es una pena que* is a judgement, so *pueda*, not *puede*."
+    },
+    {
+      "prompt": "Type in Spanish: It's important that Tomás opens early.",
+      "answer": "Es importante que Tomás abra temprano.",
+      "accept": [],
+      "why": "*Es importante que* takes the wish form of *abrir*, which is *abra*."
+    },
+    {
+      "prompt": "Type in Spanish: It's normal to be afraid.",
+      "answer": "Es normal tener miedo.",
+      "accept": [],
+      "why": "It's about people in general, so no *que*: just the plain verb."
+    },
+    {
+      "prompt": "Type in Spanish: It's a shame they're closing the park.",
+      "answer": "Es una pena que cierren el parque.",
+      "accept": [],
+      "why": "*Una pena* is a judgement, and *cierran* becomes *cierren*."
+    },
+    {
+      "prompt": "Make it negative: *Es justo que ellos cobren tanto.*",
+      "answer": "No es justo que ellos cobren tanto.",
+      "accept": [],
+      "why": "Only *no* is added. The verb stays in the wish form."
+    },
+    {
+      "prompt": "Say it to you all instead: *Es importante que lo leas.*",
+      "answer": "Es importante que ustedes lo lean.",
+      "accept": [
+        "Es importante que lo lean."
+      ],
+      "why": "For *ustedes*, *leas* becomes *lean*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es importante que lo lees.",
+      "right": "Es importante que lo leas.",
+      "why": "Almost. After a judgement, use the wish form: *leas*, not *lees*."
+    },
+    {
+      "wrong": "Es normal que Simón grita por la mañana.",
+      "right": "Es normal que Simón grite por la mañana.",
+      "why": "You are judging it, not just reporting it, so *grita* becomes *grite*."
+    },
+    {
+      "wrong": "Es una pena cierren el parque.",
+      "right": "Es una pena que cierren el parque.",
+      "why": "Spanish needs *que* here, even though English can drop *that*."
+    },
+    {
+      "wrong": "Es normal que tener miedo.",
+      "right": "Es normal tener miedo.",
+      "why": "When it is about people in general, use the plain verb and no *que*."
+    }
+  ],
+  "personal": "Say two true judgements about your own neighbourhood, one with *Es una pena que* and one with *Es importante que* (*Es una pena que el parque...*, *Es importante que los vecinos...*)."
+}

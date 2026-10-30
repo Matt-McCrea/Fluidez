@@ -1,0 +1,174 @@
+{
+  "node": "p:te-parece-bien-que",
+  "hook": {
+    "line": "Tomás is arranging a meeting with Vale and Mariana, and nobody likes a plan that was only decided by one person. Spanish asks for approval with one short question.",
+    "es": "¿Te parece bien que nos veamos a las ocho?",
+    "en": "Is it OK with you if we meet at eight? (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "¿Te parece bien que nos veamos a las ocho?",
+      "en": "Is it OK with you if we meet at eight? (to a friend)"
+    },
+    {
+      "es": "¿Qué tal la película?",
+      "en": "How was the film?"
+    },
+    {
+      "es": "¿Qué te pareció el restaurante?",
+      "en": "What did you think of the restaurant? (to a friend)"
+    },
+    {
+      "es": "¿Le parece bien que Tomás cierre hoy?",
+      "en": "Is it OK with you if Tomás closes today? (formal)"
+    },
+    {
+      "es": "¿Les parece bien que empecemos ya?",
+      "en": "Is it OK with you all if we start now?"
+    },
+    {
+      "es": "¿Qué te pareció la reunión?",
+      "en": "What did you think of the meeting? (to a friend)"
+    }
+  ],
+  "rule": "*¿Te parece bien que...?* checks that someone agrees with your plan. After *que*, use the wish form: *veamos*, *cierre*, *empecemos*.\n\nFor *usted*, say *¿Le parece bien...?*, and for a group, *¿Les parece bien...?*.\n\nTo ask for a verdict on something that already happened, use *¿Qué tal...?* or *¿Qué te pareció...?*. Latin Americans put it in the simple past: *pareció*.",
+  "smallPrint": "Teachers call these questions for assessment and approval (*pedir valoración*).",
+  "readAndPick": [
+    {
+      "es": "¿Te parece bien que nos veamos a las ocho?",
+      "options": [
+        "Is it OK with you if we meet at eight? (to a friend)",
+        "Did you like meeting at eight?",
+        "Is it OK with you if they meet at eight?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué te pareció el restaurante?",
+      "options": [
+        "What do you think of the restaurant now?",
+        "What did you think of the restaurant? (to a friend)",
+        "What will you think of the restaurant?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Le parece bien que Tomás cierre hoy?",
+      "options": [
+        "Is it OK with you if I close today? (to a friend)",
+        "Is it OK with you all if Tomás closes today?",
+        "Is it OK with you if Tomás closes today? (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Les parece bien que empecemos ya?",
+      "options": [
+        "Is it OK with you all if we start now?",
+        "Is it OK with you if we start now? (to a friend)",
+        "Is it OK with them if we start now?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué tal la película?",
+      "options": [
+        "How was the film?",
+        "Which film is it?",
+        "What time is the film?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te parece bien que pague yo?",
+      "options": [
+        "Is it OK with you if you pay? (to a friend)",
+        "Is it OK with you if I pay? (to a friend)",
+        "Is it OK with you if she pays? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué te pareció la reunión?",
+      "options": [
+        "What did you think of the meeting? (to a friend)",
+        "What do you think of the meeting?",
+        "What did she think of the meeting?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te parece bien que vayamos mañana?",
+      "options": [
+        "Is it OK with you if I go tomorrow? (to a friend)",
+        "Is it OK with you if we go tomorrow? (to a friend)",
+        "Is it OK with you if they go tomorrow? (to a friend)"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *vemos* or *veamos* and type the whole sentence, to a friend: *¿Te parece bien que nos ___ a las ocho?*",
+      "answer": "¿Te parece bien que nos veamos a las ocho?",
+      "accept": [],
+      "why": "You are proposing a plan, so the wish form: *veamos*."
+    },
+    {
+      "prompt": "Ask a friend: How was the film?",
+      "answer": "¿Qué tal la película?",
+      "accept": [],
+      "why": "*¿Qué tal...?* plus the thing, with no verb."
+    },
+    {
+      "prompt": "Ask a friend: What did you think of the restaurant?",
+      "answer": "¿Qué te pareció el restaurante?",
+      "accept": [],
+      "why": "It already happened, so the simple past: *pareció*."
+    },
+    {
+      "prompt": "Ask a friend: Is it OK with you if I pay?",
+      "answer": "¿Te parece bien que pague yo?",
+      "accept": [
+        "¿Te parece bien que yo pague?"
+      ],
+      "why": "I am the one paying, so *que* and the wish form: *pague*."
+    },
+    {
+      "prompt": "Ask a friend: Is it OK with you if we invite Mariana?",
+      "answer": "¿Te parece bien que invitemos a Mariana?",
+      "accept": [],
+      "why": "For *nosotros*, the wish form of *invitar* is *invitemos*."
+    },
+    {
+      "prompt": "Ask them formally instead: *¿Te parece bien que vayamos mañana?*",
+      "answer": "¿Le parece bien que vayamos mañana?",
+      "accept": [],
+      "why": "For *usted*, *te* becomes *le*."
+    },
+    {
+      "prompt": "Ask you all instead: *¿Te parece bien que empecemos ya?*",
+      "answer": "¿Les parece bien que empecemos ya?",
+      "accept": [],
+      "why": "For *ustedes*, *te* becomes *les*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Te parece bien que nos vemos a las ocho?",
+      "right": "¿Te parece bien que nos veamos a las ocho?",
+      "why": "Almost. After *te parece bien que*, use the wish form: *veamos*."
+    },
+    {
+      "wrong": "¿Qué te has parecido el restaurante?",
+      "right": "¿Qué te pareció el restaurante?",
+      "why": "In Latin America you ask about the past with the simple past: *pareció*."
+    },
+    {
+      "wrong": "¿Qué tal es la película?",
+      "right": "¿Qué tal la película?",
+      "why": "*Qué tal* needs no verb."
+    }
+  ],
+  "personal": "Propose a real plan to someone with *¿Te parece bien que...?*, then say what you thought of something recent with *Me pareció...*."
+}

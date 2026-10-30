@@ -1,0 +1,183 @@
+{
+  "node": "p:que-opinas-de",
+  "hook": {
+    "line": "Tomás has a decision to make about the café, and he would like to hear what the regulars think before he makes it. Asking for a view is a skill of its own.",
+    "es": "¿Qué opinas de la comida de Vale?",
+    "en": "What do you think of Vale's food? (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "¿Qué opinas de la comida de Vale?",
+      "en": "What do you think of Vale's food? (to a friend)"
+    },
+    {
+      "es": "¿Qué piensas del nuevo alcalde?",
+      "en": "What do you think of the new mayor? (to a friend)"
+    },
+    {
+      "es": "¿Tú qué crees?",
+      "en": "What do you reckon? (to a friend)"
+    },
+    {
+      "es": "¿Usted qué opina?",
+      "en": "What's your opinion? (formal)"
+    },
+    {
+      "es": "Según tú, ¿quién tiene razón?",
+      "en": "In your view, who's right? (to a friend)"
+    },
+    {
+      "es": "¿Qué opina la gente del barrio?",
+      "en": "What do the people in the neighbourhood think?"
+    }
+  ],
+  "rule": "To ask what someone thinks of something, use *¿Qué opinas de...?* or *¿Qué piensas de...?*. Spanish says *de* where English says *of* or *about*, and *de + el* becomes *del*.\n\nFor a quick check after you speak, use *¿Tú qué crees?*. The person comes first, then *qué*. For *usted*: *¿Usted qué opina?*. For a group: *¿Ustedes qué piensan?*\n\n*Según tú, ...* means in your view. It can sound like a challenge, so use it with friends.",
+  "smallPrint": "Teachers group these as asking for an opinion (*pedir opinión*).",
+  "readAndPick": [
+    {
+      "es": "¿Qué piensas del nuevo alcalde?",
+      "options": [
+        "What do you think of the new mayor? (to a friend)",
+        "What does the new mayor think of you?",
+        "Who thinks the new mayor is good?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Usted qué opina?",
+      "options": [
+        "What do you reckon? (to a friend)",
+        "What's your opinion? (formal)",
+        "What do you all think?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué opina la gente del barrio?",
+      "options": [
+        "What do you think of the neighbourhood?",
+        "What do I think of the people?",
+        "What do the people in the neighbourhood think?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Tú qué crees?",
+      "options": [
+        "What do you reckon? (to a friend)",
+        "What does he reckon?",
+        "What do you all reckon?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Ustedes qué piensan?",
+      "options": [
+        "What do I think?",
+        "What do you all think?",
+        "What do you think? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Según tú, ¿quién tiene razón?",
+      "options": [
+        "In your view, who's right? (to a friend)",
+        "In my view, who's right?",
+        "In their view, who's right?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué opina usted del precio?",
+      "options": [
+        "What do you think of the price? (formal)",
+        "What do you think of the price? (to a friend)",
+        "What does he think of the price?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué piensa Hernando del café?",
+      "options": [
+        "What do you think of the café, Hernando?",
+        "What does Hernando think of the café?",
+        "What does the café think of Hernando?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *de el* or *del* and type the whole sentence, to a friend: *¿Qué piensas ___ nuevo alcalde?*",
+      "answer": "¿Qué piensas del nuevo alcalde?",
+      "accept": [],
+      "why": "*De* and *el* always join into *del*."
+    },
+    {
+      "prompt": "Pick *opinas* or *opina* and type the whole sentence, formal: *¿Qué ___ usted del precio?*",
+      "answer": "¿Qué opina usted del precio?",
+      "accept": [
+        "¿Qué opina del precio?",
+        "¿Usted qué opina del precio?"
+      ],
+      "why": "*Usted* takes the *-a* ending: *opina*."
+    },
+    {
+      "prompt": "Ask a friend what they think of Vale's food.",
+      "answer": "¿Qué opinas de la comida de Vale?",
+      "accept": [
+        "¿Qué piensas de la comida de Vale?"
+      ],
+      "why": "*Opinar de* and *pensar de* both ask for a view."
+    },
+    {
+      "prompt": "Ask a friend: What do you reckon?",
+      "answer": "¿Tú qué crees?",
+      "accept": [],
+      "why": "The person comes first: *tú*, then *qué*."
+    },
+    {
+      "prompt": "Ask a friend: In your view, who's right?",
+      "answer": "Según tú, ¿quién tiene razón?",
+      "accept": [],
+      "why": "*Según tú* opens the question, then the question itself."
+    },
+    {
+      "prompt": "Ask them formally instead: *¿Qué opinas del precio?*",
+      "answer": "¿Qué opina usted del precio?",
+      "accept": [
+        "¿Qué opina del precio?",
+        "¿Usted qué opina del precio?"
+      ],
+      "why": "For *usted*, *opinas* becomes *opina*."
+    },
+    {
+      "prompt": "Ask a group of friends instead: *¿Qué opinas de la alcaldía?*",
+      "answer": "¿Qué opinan ustedes de la alcaldía?",
+      "accept": [
+        "¿Qué opinan de la alcaldía?",
+        "¿Ustedes qué opinan de la alcaldía?"
+      ],
+      "why": "For *ustedes*, *opinas* becomes *opinan*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Cómo opinas del precio?",
+      "right": "¿Qué opinas del precio?",
+      "why": "Almost. You ask *what* someone thinks, not *how*: *qué*."
+    },
+    {
+      "wrong": "¿Qué piensas de el nuevo alcalde?",
+      "right": "¿Qué piensas del nuevo alcalde?",
+      "why": "*De + el* always joins into *del*."
+    },
+    {
+      "wrong": "¿Qué tú crees?",
+      "right": "¿Tú qué crees?",
+      "why": "The person comes first, then *qué*."
+    }
+  ],
+  "personal": "Ask a real or imaginary friend what they think of something in your town, then answer yourself with *Me parece que...*."
+}
