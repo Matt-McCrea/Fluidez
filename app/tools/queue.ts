@@ -207,6 +207,7 @@ export function resolvePrompt(j: Job): string {
     const p = resolve(APP_DIR, j.promptRef);
     text = (text ? text + '\n\n' : '') + (existsSync(p) ? readFileSync(p, 'utf8') : `[promptRef missing: ${j.promptRef}]`);
   }
+  text = text.split('/Users/Matthew/Fluidez/app').join(APP_DIR);
   if (j.lastError) text += `\n\n---\nPrevious attempt ${j.attempts} of ${MAX_ATTEMPTS} failed. Fix exactly this, keep everything else that passed:\n${j.lastError}`;
   return text;
 }

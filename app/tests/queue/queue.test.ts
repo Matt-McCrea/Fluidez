@@ -6,7 +6,7 @@ import { promisify } from 'node:util';
 import { afterEach, beforeEach, describe, expect, test } from 'vitest';
 import {
   addJobs, burnLock, leaseNext, main, markDone, markFailed, paths, readJobs, release, requeueStale,
-  retry, status, tryLock, withQueueLock, MAX_ATTEMPTS,
+  retry, status, tryLock, withQueueLock, MAX_ATTEMPTS, APP_DIR,
 } from '../../tools/queue';
 
 let dir: string;
@@ -178,4 +178,16 @@ describe('CLI', () => {
     expect(new Set(ids).size).toBe(24);
     expect(readJobs(dir).every((j) => j.status === 'running')).toBe(true);
   }, 30_000);
+});
+
+describe('resolvePrompt', () => {
+  test('rewrites the laptop app path to APP_DIR', () => {
+    addJobs([job('p1', { prompt: 'APP = /Users/Matthew/Fluidez/app and cd /Users/Matthew/Fluidez/app/src; scratch /tmp/fluidez-burn/x' })], { dir });
+    const [j] = leaseNext(1, { dir, by: 't' });
+    expect(j.resolvedPrompt).toContain(APP_DIR);
+    // On the laptop APP_DIR is the laptop path itself, so only assert absence elsewhere.
+    if (APP_DIR !== '/Users/Matthew/Fluidez/app') expect(j.resolvedPrompt).not.toContain('/Users/Matthew/Fluidez/app');
+    expect(j.resolvedPrompt).toContain(`APP = ${APP_DIR} and cd ${APP_DIR}/src`);
+    expect(j.resolvedPrompt).toContain('/tmp/fluidez-burn/x');
+  });
 });

@@ -15,7 +15,7 @@ If the arguments start with `status`: run `cd /Users/Matthew/Fluidez/app && npx 
 
 ## Mode: run (default)
 
-N = the number in the arguments if there is one, else **4**. Never more than 8.
+N = the number in the arguments if there is one, else **4**. Never more than 12. Matthew set this scale on 2026-10-30 to push more content through: run every leased job in the one Workflow fan-out below, even when that is more than ten agents.
 
 Set once and reuse: `RUN=burn-$(date +%Y%m%dT%H%M%S)-$RANDOM` (generate it in your first Bash call and remember the literal value).
 
