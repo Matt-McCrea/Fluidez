@@ -1,0 +1,252 @@
+{
+  "id": "sc-u46-c",
+  "unit": "u46",
+  "title": "Lo dicen en la plaza",
+  "spare": true,
+  "brief": "Don Hernando has come in for his morning tinto, bringing the gossip of the plaza. He is older than you and courtly, so use usted. Repeat what you have heard without vouching for it, and say what you told Yesid.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Buenos días, joven. Antes de que se me olvide: en la plaza dicen que Yesid ya vendió su parte. ¿Qué sabe usted?",
+      "npcEn": "Hernando: Good morning, young man. Before I forget: in the plaza they say that Yesid has already sold his share. What do you know?",
+      "intent": "Say you heard that too, but Yesid claims he sold nothing.",
+      "accept": [
+        "Yo también lo oí, pero Yesid dice que no vendió nada.",
+        "Sí, me lo contaron, pero él asegura que no ha vendido nada.",
+        "Eso dicen, don Hernando, pero Yesid sostiene que no vendió su parte."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(dice|dijo|asegura|niega|sostiene|afirma)\\b",
+          "flags": "iu",
+          "label": "say what Yesid claims: dice que, asegura que"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted with don Hernando"
+        }
+      ],
+      "focus": "p:reporting-verbs-stance",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: En mis tiempos, un hombre que daba su palabra no necesitaba abogados. ¿Usted qué le dijo cuando él le contó todo?",
+      "npcEn": "Hernando: In my day, a man who gave his word didn't need lawyers. What did you say to him when he told you everything?",
+      "intent": "Tell him what you said to Yesid: that you needed him to repeat it all in front of the lawyer.",
+      "accept": [
+        "Le dije que necesitaba que lo repitiera todo delante de la abogada.",
+        "Le dije que me lo explicara todo otra vez delante de la abogada.",
+        "Le dije que tenía que contárselo todo a la abogada."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdije\\s+que\\b",
+          "flags": "iu",
+          "label": "report your words with le dije que"
+        }
+      ],
+      "focus": "g:reporting-verbs-mood",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Ya veo. Por cierto, ¿sabe que don Eusebio asistió a la asamblea y que, según dicen, votó a favor de Altamira?",
+      "npcEn": "Hernando: I see. By the way, do you know that don Eusebio attended the assembly and that, so they say, he voted in favour of Altamira?",
+      "intent": "Say you didn't know, and ask who is saying that.",
+      "accept": [
+        "No lo sabía. ¿Quién dice eso?",
+        "No tenía idea. ¿Usted cree que es verdad?",
+        "No lo sabía, don Hernando. ¿Y quién se lo contó a usted?"
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say you did not know"
+        },
+        {
+          "type": "question",
+          "label": "ask who says so"
+        }
+      ],
+      "focus": "p:segun-dicen",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: No me malentienda, yo solo repito lo que dicen, no lo afirmo. ¿Me entiende?",
+      "npcEn": "Hernando: Don't misunderstand me, I'm only repeating what people say, I'm not claiming it. Do you understand me?",
+      "intent": "Agree, and explain with \"it's not that… but that…\": it's not that you don't believe him, but that you want proof.",
+      "accept": [
+        "Tiene razón. No es que no le crea, sino que quiero pruebas.",
+        "Claro, don Hernando. No es que dude de usted, sino que prefiero confirmarlo.",
+        "Sí, tiene razón. No es que me parezca imposible, sino que nadie lo comprobó."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno es que\\b.*\\bsino que\\b",
+          "flags": "iu",
+          "label": "use no es que… sino que…"
+        }
+      ],
+      "focus": "p:no-es-que-sino-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Así me gusta, joven. Y ahora, ¿en qué íbamos? Ah, sí, mi tinto.",
+      "npcEn": "Hernando: That's what I like, young man. And now, where were we? Ah, yes, my tinto.",
+      "intent": "Say you will bring his coffee right away, and thank him for his advice (usted).",
+      "accept": [
+        "Enseguida se lo traigo, don Hernando. Gracias por el consejo.",
+        "Ya mismo le sirvo su tinto. Muchas gracias por sus palabras.",
+        "Con gusto. Le traigo el tinto, y gracias por escucharme."
+      ],
+      "require": [
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted with don Hernando"
+        }
+      ],
+      "focus": "c:en-que-ibamos",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:antes-de-que-se-me-olvide",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:en-que-ibamos",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-gusta",
+    "c:por-cierto",
+    "c:quiero",
+    "c:segun",
+    "c:tienes",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:perfecto-experience",
+    "g:pero-sino",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:reported-commands-past",
+    "g:reported-past-basic",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-past-triggers",
+    "g:subj-perception-negated",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abogado",
+    "l:afirmar",
+    "l:ahora",
+    "l:antes",
+    "l:asamblea",
+    "l:asegurar",
+    "l:asistir",
+    "l:bueno",
+    "l:claro",
+    "l:comprobar",
+    "l:confirmar",
+    "l:consejo",
+    "l:contar",
+    "l:creer",
+    "l:dar",
+    "l:decir",
+    "l:delante",
+    "l:dudar",
+    "l:día",
+    "l:enseguida",
+    "l:entender",
+    "l:escuchar",
+    "l:explicar",
+    "l:favor",
+    "l:gustar",
+    "l:gusto",
+    "l:hombre",
+    "l:idea",
+    "l:imposible",
+    "l:ir",
+    "l:joven",
+    "l:necesitar",
+    "l:olvidar",
+    "l:oír",
+    "l:palabra",
+    "l:parecerse",
+    "l:parte",
+    "l:plaza",
+    "l:preferir",
+    "l:prueba",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:razón",
+    "l:repetir",
+    "l:saber",
+    "l:ser",
+    "l:servir",
+    "l:sostener",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:traer",
+    "l:vender",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:votar",
+    "p:asistir-faltar",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:estar-a-favor-de",
+    "p:gracias-por",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:no-es-que-sino-que",
+    "p:otro-no-article",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:prefieres-x-o-y",
+    "p:question-word-order",
+    "p:reporting-verbs-stance",
+    "p:saber-conocer",
+    "p:segun-dicen",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:sostener-que",
+    "p:tambien-tampoco",
+    "p:tener-razon",
+    "p:un-estudio-muestra-que"
+  ]
+}

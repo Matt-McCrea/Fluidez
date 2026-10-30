@@ -1,0 +1,223 @@
+{
+  "id": "sc-u46-b",
+  "unit": "u46",
+  "title": "Lo que no se dijo",
+  "spare": false,
+  "brief": "Yesid has come to the café after Vale confronted him. He is your friend, so use tú. Find out what he admits, what he denies, and what you did or did not notice, without sounding like a judge.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Yesid: Si vienes a gritarme como Vale, mejor me voy. ¿Qué te dijo ella de mí?",
+      "npcEn": "Yesid: If you've come to shout at me like Vale, I'd better go. What did she tell you about me?",
+      "intent": "Tell him Vale said that you had met with Altamira.",
+      "accept": [
+        "Vale me dijo que te habías reunido con Altamira.",
+        "Me contó que te viste con Altamira a escondidas.",
+        "Vale dice que estuviste reunido con la gente de Altamira."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(dijo|contó|dice|cuenta)\\s+que\\b",
+          "flags": "iu",
+          "label": "report it with dijo que, contó que, dice que"
+        }
+      ],
+      "focus": "g:reported-speech-full",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Yesid: Sí, me reuní con ellos. Pero fui solo a escuchar.",
+      "npcEn": "Yesid: Yes, I met with them. But I went only to listen.",
+      "intent": "Ask him straight out whether he denies that he accepted their money (use negar).",
+      "accept": [
+        "¿Niegas que aceptaras su dinero?",
+        "¿Niegas que te ofrecieran más plata?",
+        "¿Niegas que te reunieras con ellos a escondidas?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b(niegas|negar|negarás)\\b",
+          "flags": "iu",
+          "label": "ask with negar: ¿niegas…?"
+        }
+      ],
+      "focus": "p:negar-confesar",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Yesid: No niego que me ofrecieran mucha plata. Pero niego que yo aceptara. Y no recuerdo que me pidieran firmar nada.",
+      "npcEn": "Yesid: I don't deny that they offered me a lot of money. But I do deny that I accepted. And I don't remember them asking me to sign anything.",
+      "intent": "Tell him you don't remember him ever mentioning that meeting to you (no recuerdo que + subjunctive).",
+      "accept": [
+        "No recuerdo que me hablaras de esa reunión.",
+        "No me acuerdo de que me dijeras nada sobre eso.",
+        "Pues yo no recuerdo que me contaras que te ibas a reunir con ellos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno (recuerdo|me acuerdo)( de)? que\\b.*\\b\\w+(aras|eras|ieras)\\b",
+          "flags": "iu",
+          "label": "no recuerdo que + imperfect subjunctive: hablaras, dijeras"
+        }
+      ],
+      "focus": "p:no-recuerdo-que-subj",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Yesid: Es que me pidieron que no hablara con nadie. Vale cree que escondo algo. ¿Tú también lo piensas?",
+      "npcEn": "Yesid: It's just that they asked me not to talk to anyone. Vale thinks I'm hiding something. Do you think so too?",
+      "intent": "Say you didn't notice him hiding anything (no noté que + subjunctive).",
+      "accept": [
+        "No noté que escondieras nada, la verdad.",
+        "No vi que te pusieras raro.",
+        "Yo no noté que estuvieras nervioso."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno (noté|vi|oí|escuché|percibí)(?!\\p{L}).*\\w+(aras|eras|ieras)(?!\\p{L})",
+          "flags": "iu",
+          "label": "no noté que + imperfect subjunctive: escondieras"
+        }
+      ],
+      "focus": "g:subj-perception-negated",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Yesid: Gracias por escucharme. ¿Me haces un favor? No hablemos de eso con Vale hasta que yo mismo se lo explique.",
+      "npcEn": "Yesid: Thanks for listening to me. Will you do me a favour? Let's not talk about that with Vale until I explain it to her myself.",
+      "intent": "Agree to wait, and offer him a coffee.",
+      "accept": [
+        "Está bien, esperaré. ¿Te sirvo un café?",
+        "De acuerdo, no le digo nada. Ven, te invito un tinto.",
+        "Claro, tienes mi palabra. Siéntate y te preparo un café."
+      ],
+      "require": [],
+      "focus": "c:no-hablemos-de-eso",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:es-que",
+    "c:fui",
+    "c:la-verdad",
+    "c:me-conto-que",
+    "c:me-haces-un-favor",
+    "c:no-hablemos-de-eso",
+    "c:pues",
+    "c:tienes",
+    "c:voy-vas",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:pluperfect",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:reported-backshift",
+    "g:reported-commands-past",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-past-triggers",
+    "g:subj-perception-negated",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "l:aceptar",
+    "l:acordarse",
+    "l:acuerdo",
+    "l:bien",
+    "l:café",
+    "l:claro",
+    "l:contar",
+    "l:creer",
+    "l:decir",
+    "l:dinero",
+    "l:esconder",
+    "l:escuchar",
+    "l:esperar",
+    "l:estar",
+    "l:explicar",
+    "l:favor",
+    "l:firmar",
+    "l:gente",
+    "l:gritar",
+    "l:hablar",
+    "l:hacer",
+    "l:invitar",
+    "l:irse",
+    "l:mejor",
+    "l:negar",
+    "l:nervioso",
+    "l:notar",
+    "l:ofrecer",
+    "l:palabra",
+    "l:pedir",
+    "l:pensar",
+    "l:plata",
+    "l:ponerse",
+    "l:preparar",
+    "l:qué",
+    "l:raro",
+    "l:recordar",
+    "l:reunir",
+    "l:reunirse",
+    "l:reunión",
+    "l:sentarse",
+    "l:ser",
+    "l:servir",
+    "l:tener",
+    "l:tinto",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:me-te-nos-objects",
+    "p:negar-confesar",
+    "p:no-recuerdo-que-subj",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:recordar-acordarse",
+    "p:tambien-tampoco"
+  ]
+}
