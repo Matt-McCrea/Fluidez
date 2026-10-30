@@ -1,7 +1,7 @@
 {
  "node": "g:questions-prepositions",
  "hook": {
-  "line": "Tomás has been passing messages for days and keeps losing track of who said what. The first thing he needs is a way to ask the question properly, and in Spanish that means starting with the little word.",
+  "line": "Tomás keeps losing track of who called whom about what. English lets him say \"Who did you talk to?\" and leave the little word at the end. Spanish won't let him.",
   "es": "¿Con quién hablaste?",
   "en": "Who did you talk to? (to a friend)"
  },
@@ -35,7 +35,7 @@
    "en": "Where is that noise coming from?"
   }
  ],
- "rule": "English likes to leave the little word at the end: *Who did you talk to? What is it about?* Spanish never does. The little word (*con*, *de*, *para*, *en*, *a*) goes first, right before the question word.\n\n*Who did you talk to?* becomes *¿Con quién hablaste?*, literally \"With whom did you talk?\".\n*What is it about?* becomes *¿De qué se trata?*.\n*What are you thinking about?* becomes *¿En qué piensas?*.\n\nSo the recipe is: little word, then *qué* or *quién*, then the rest. If you hear the verb pick a word, that word comes first: *hablar con*, *tratarse de*, *pensar en*, *soñar con*, *servir para*.",
+ "rule": "English likes to leave the little word at the end: *Who did you talk to? What is it about?* Spanish never does. The little word (*con*, *de*, *para*, *en*, *a*) goes first, right before the question word.\n\n*Who did you talk to?* becomes *¿Con quién hablaste?*, literally \"With whom did you talk?\".\n*What is it about?* becomes *¿De qué se trata?*.\n*What are you thinking about?* becomes *¿En qué piensas?*.\n\nSo the recipe is: little word, then *qué* or *quién*, then the rest. If the verb always comes with its own little word, that word moves to the front: *hablar con*, *tratarse de*, *pensar en*, *soñar con*, *servir para*.",
  "smallPrint": "Teachers call this a preposition before an interrogative. English can \"strand\" it at the end; Spanish cannot.",
  "readAndPick": [
   {
@@ -111,11 +111,11 @@
    "answer": 0
   },
   {
-   "es": "¿A qué hora cierran?",
+   "es": "¿De quién es el tinto?",
    "options": [
-    "What time do they open?",
-    "What time do they close?",
-    "How long are they open?"
+    "Who is the black coffee for?",
+    "Whose black coffee is it?",
+    "Who made the black coffee?"
    ],
    "answer": 1
   }
@@ -137,7 +137,8 @@
    "prompt": "Type in Spanish: What is this for?",
    "answer": "¿Para qué sirve esto?",
    "accept": [
-    "¿Para qué sirve?"
+    "¿Para qué sirve?",
+    "¿Para qué es esto?"
    ],
    "why": "*Servir para* gives *para qué*, at the very start."
   },

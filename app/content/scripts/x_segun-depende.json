@@ -23,8 +23,8 @@
    "en": "Are you coming tomorrow? (to a friend)\nIt depends."
   },
   {
-   "es": "Depende de cuánto cuesta.",
-   "en": "It depends on how much it costs."
+   "es": "Depende del precio.",
+   "en": "It depends on the price."
   },
   {
    "es": "Según mi reloj, son las tres.",
@@ -83,7 +83,7 @@
    "es": "Según tú, ¿a qué hora cierran?",
    "options": [
     "What time do you close?",
-    "What time do you say they close?",
+    "It depends on you what time they close.",
     "According to you, what time do they close?"
    ],
    "answer": 2
@@ -98,11 +98,11 @@
    "answer": 2
   },
   {
-   "es": "Depende de cuánto cuesta.",
+   "es": "Depende del precio.",
    "options": [
-    "It depends on how much it costs.",
-    "According to how much it costs.",
-    "It costs a lot."
+    "It depends on the price.",
+    "According to the price.",
+    "The price is high."
    ],
    "answer": 0
   }

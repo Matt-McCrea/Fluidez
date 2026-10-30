@@ -31,7 +31,7 @@
    "en": "I'm asking you to write to me today. (to a friend)"
   }
  ],
- "rule": "In English a request is \"tell her *to call*\", with *to* and the plain verb. In Spanish the two halves are joined by *que*, and the second verb changes its ending.\n\n*Decir que* or *pedir que*, then a verb with the \"opposite\" ending:\n*-ar* verbs take *-e*: *llame*, *espere*, *hable*\n*-er/-ir* verbs take *-a*: *vaya*, *venga*, *escriba*\n\nFor *you* (to a friend) add *-s*: *llames*, *vengas*.\n\nThe person asked is the one who does it, so there is no \"to\": *Dile que espere* = \"tell him to wait\".",
+ "rule": "In English a request is \"tell her *to call*\", with *to* and the plain verb. In Spanish the two halves are joined by *que*, and the second verb changes its ending.\n\n*Decir que* or *pedir que*, then a verb with the \"opposite\" ending:\n*-ar* verbs take *-e*: *llame*, *espere*, *hable*\n*-er/-ir* verbs take *-a*: *vaya*, *venga*, *escriba*\n\nFor *you* (to a friend) add *-s*: *llames*, *vengas*.\n\nThere is no word for *to*: *que* plus the new ending does that job. *Dile que espere* = \"tell him to wait\".",
  "smallPrint": "Teachers call this the subjunctive: the mood Spanish uses when one person wants another to do something.",
  "readAndPick": [
   {
@@ -89,11 +89,11 @@
    "answer": 0
   },
   {
-   "es": "Me pide que lo llames.",
+   "es": "Te pide que lo llames.",
    "options": [
     "He asks me to call him.",
     "He asks you to call him.",
-    "He is calling me."
+    "He is calling you."
    ],
    "answer": 1
   },

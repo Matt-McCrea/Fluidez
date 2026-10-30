@@ -53,12 +53,12 @@
       "accept": [
         "Sí, dígale que me llame, por favor.",
         "Por favor, dígale a don Evaristo que me llame.",
-        "Sí. Dígale que me llame esta noche, por favor."
+        "Sí. Dígale que por favor me llame esta noche."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bque (me )?llame\\b",
+          "pattern": "\\bque\\b.*\\b(llame|devuelva)\\b",
           "flags": "i",
           "label": "pass on a request: dígale que me llame"
         }

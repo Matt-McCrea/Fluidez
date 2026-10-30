@@ -9,16 +9,16 @@
       "id": "t1",
       "npc": "¿Aló? ¿Hola? Casi no se oye.",
       "npcEn": "Hello? Hello? It's hard to hear.",
-      "intent": "Say you can hardly hear him well and ask if he hears you.",
+      "intent": "Say you can't hear him well and ask if he can hear you.",
       "accept": [
         "No lo oigo bien. ¿Usted me escucha?",
         "Lo oigo muy mal. ¿Me escucha?",
-        "Casi no lo oigo bien. ¿Me escucha usted?"
+        "Casi no lo escucho. ¿Me oye usted?"
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\boigo\\b",
+          "pattern": "\\b(oigo|escucho)\\b",
           "flags": "i",
           "label": "say you hear badly: no lo oigo bien"
         }
@@ -53,7 +53,7 @@
       "npcEn": "Yes. Tell him Marisol wants to speak to Tomás, Rosa's grandson.",
       "intent": "Say you are Tomás and ask what she wants to talk about.",
       "accept": [
-        "Yo soy Tomás. ¿De qué quiere hablar?",
+        "Yo soy Tomás. ¿De qué quiere hablar ella?",
         "Soy Tomás. ¿De qué quiere hablar conmigo?",
         "Yo soy Tomás. ¿Para qué quiere hablar conmigo?"
       ],
@@ -107,7 +107,7 @@
           ]
         }
       ],
-      "focus": "c:eso-seria-todo",
+      "focus": "p:gracias-por",
       "next": null
     }
   ],

@@ -39,7 +39,7 @@
    "options": [
     "He says you're coming tomorrow.",
     "He says to come tomorrow.",
-    "He says he came tomorrow."
+    "He says he came yesterday."
    ],
    "answer": 0
   },
@@ -171,12 +171,12 @@
   {
    "wrong": "Dile que viene mañana.",
    "right": "Dile que venga mañana.",
-   "why": "To tell someone to come you need the request ending: *venga*."
+   "why": "If you mean *tell him to come*, you need the request ending *venga*. *Viene* would be news: that he's coming."
   },
   {
    "wrong": "Vale dice que cierre a las seis.",
    "right": "Vale dice que cierra a las seis.",
-   "why": "If it is just a fact about the café, keep the normal verb: *cierra*."
+   "why": "If you're just passing on a fact about the café, keep the normal verb: *cierra*. *Cierre* would be an order."
   }
  ],
  "personal": "Think of a message someone gave you this week. Write it twice: once as news (*dice que...*) and once as an order (*dice que...* with a changed ending)."

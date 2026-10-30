@@ -37,18 +37,18 @@
     {
       "es": "Me voy a vivir a Leticia.\n¿Te vas a vivir adónde?",
       "options": [
-        "You're going to live where?",
-        "You're going to live with whom?"
+        "You're going to live with whom?",
+        "You're going to live where?"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "es": "¿Llegaron cuándo?",
       "options": [
-        "They got here when?",
-        "They got here how?"
+        "They got here how?",
+        "They got here when?"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "es": "¿Que le dijiste qué?",
@@ -70,10 +70,10 @@
     {
       "es": "Hernando vive en Bosa.\n¿Vive dónde?",
       "options": [
-        "He lives where?",
-        "He lives with whom?"
+        "He lives with whom?",
+        "He lives where?"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "es": "Me llamó Mariana.\n¿Te llamó quién?",

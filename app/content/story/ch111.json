@@ -2,7 +2,7 @@
   "id": "ch111",
   "unit": "u37",
   "title": "Al aire",
-  "text": "Mariana volvió de la alcaldía con su carné de prensa.\nMariana: Cuatro horas de reunión, y el tema del café duró dos minutos. Nosotros teníamos a la prensa, o sea, a mí.\nMariana: El tema quedó para enero. Pero una amiga de una agencia de Santa Marta me dio un número. La agencia trabaja con un presentador que lee mensajes para la gente del mar.\nTomás marcó.\nSeñora: Panadería La Esperanza, a la orden.\nTomás: Perdón, señora. Creo que tengo un número equivocado.\nTomás llamó otra vez.\nSecretaria: Radio Caribe. El señor Villa no se encuentra. Está en la cabina, al aire.\nTomás le dejó un mensaje en el buzón. Mientras, Vale leía un foro de Taganga.\nVale: Alguien contestó en el foro. «Herrera me suena. Pregunten en la playa».\nA las cinco, el presentador llamó desde la cabina.\nVilla: Estamos al aire. Escuché su mensaje en el buzón. ¿Con quién hablo?\nHernando: Respire, mijo. Respire y hable.\nTomás: Me llamo Tomás Herrera. Quiero aclarar algo: no vendo nada. Busco a la familia de Joaquín Herrera.\nVilla: Aclaremos una cosa. ¿Ferrer o Herrera?\nTomás: Herrera, como yo. ¿Me escucha?\nVilla: Fíjese que ese apellido me suena. Pero para un mensaje al mar se requiere un nombre completo y un número. Así lo requiere la casa. Hacemos una pausa y volvemos.\nDurante la pausa, Hernando miró la pantalla: batería, dos por ciento.\nHernando: Rápido, mijo. Esta batería está peor que mi corazón.\nTomás: El número es tres, uno, cero...\nY la batería se murió. Vale llamó desde su celular.\nVale: Señor Villa, le doy el número del café.\nSimón: ¡Número equivocado! ¡Número equivocado!\nVilla: ¿Cómo así? ¿Es el número o no es?\nVale: Sí es. Es un loro.\nVilla: Bueno, así está bien. Mañana a las cinco, el mensaje sale para todos los barcos.\nHernando: Esto es una telenovela. Cada día, un capítulo nuevo.\nMariana: Y en el próximo episodio, alguien en el mar escucha la radio.\nVale: La doctora le prohibió madrugar, Hernando.\nHernando: Mija, un episodio así no se escucha desde la cama. Ese capítulo yo lo escucho aquí.",
+  "text": "Mariana volvió de la alcaldía con su carné de prensa.\nMariana: Cuatro horas de reunión, y el tema del café duró dos minutos. Nosotros teníamos a la prensa, o sea, a mí. El tema quedó para enero. Pero una amiga de una agencia de Santa Marta me dio un número. La agencia trabaja con un presentador que lee mensajes para la gente del mar.\nTomás marcó.\nSeñora: Panadería La Esperanza, a la orden.\nTomás: Perdón, señora. Número equivocado.\nTomás llamó otra vez.\nSecretaria: Radio Caribe. El señor Villa no se encuentra. Está en la cabina, al aire.\nTomás le dejó un mensaje en el buzón. Mientras, Vale leía un foro de Taganga.\nVale: Alguien contestó en el foro. «Herrera me suena. Pregunten en la playa».\nA las cinco, el presentador llamó desde la cabina.\nVilla: Estamos al aire. Escuché su mensaje en el buzón. ¿Con quién hablo?\nHernando: Respire, mijo. Respire y hable.\nTomás: Me llamo Tomás Herrera. Quiero aclarar algo: no vendo nada. Busco a la familia de Joaquín Herrera.\nVilla: Aclaremos una cosa. ¿Ferrer o Herrera?\nTomás: Herrera, como yo. ¿Me escucha?\nVilla: Fíjese que ese apellido me suena. Pero para un mensaje al mar se requiere un nombre completo y un número. Así lo requiere el programa. Hacemos una pausa y volvemos.\nDurante la pausa, Hernando miró la pantalla: batería, dos por ciento.\nHernando: Rápido, mijo. Esta batería está peor que mi corazón.\nTomás: El número es tres, uno, cero...\nY la batería se murió. Vale llamó desde su celular.\nVale: Señor Villa, le doy el número del café.\nSimón: ¡Número equivocado! ¡Número equivocado!\nVilla: ¿Cómo así? ¿Es el número o no es?\nVale: Sí es. Es un loro.\nVilla: Bueno, así está bien. Mañana, a las cinco de la mañana, el mensaje sale para todos los barcos.\nHernando: Esto es una telenovela. Cada día, un capítulo nuevo.\nMariana: Y en el próximo episodio, alguien en el mar escucha la radio.\nVale: La doctora le prohibió madrugar, Hernando.\nHernando: Mija, un episodio así no se escucha desde la cama. Ese capítulo yo lo escucho aquí.",
   "gloss": [
     {
       "es": "carné",
@@ -45,8 +45,8 @@
       "en": "We're on air."
     },
     {
-      "es": "Así lo requiere la casa.",
-      "en": "That's what the station requires."
+      "es": "Así lo requiere el programa.",
+      "en": "That's what the programme requires."
     },
     {
       "es": "la batería se murió",
@@ -83,17 +83,17 @@
       "answer": 0
     },
     {
-      "q": "Why does the presenter ask whether they are a hotel?",
+      "q": "Why is the presenter confused about the number?",
       "options": [
-        "Simón shouts, and he wants to know who is shouting",
-        "Tomás says he works for Altamira",
-        "Mariana mentions Altamira",
-        "Vale gives the number of a hotel"
+        "Simón shouts \"wrong number\" in the background",
+        "Tomás gives him two numbers",
+        "Vale gives the number of a bakery",
+        "The line goes dead"
       ],
       "answer": 0
     },
     {
-      "q": "¿Qué pasa mañana a las cinco?",
+      "q": "¿Qué pasa mañana a las cinco de la mañana?",
       "options": [
         "El mensaje sale para todos los barcos",
         "Tomás viaja a Santa Marta",
@@ -152,7 +152,6 @@
     "c:bien-y-tu",
     "c:claro-listo",
     "c:como-asi",
-    "c:creo-que",
     "c:entonces-bueno",
     "c:fijese-que",
     "c:me-llamo",
@@ -163,7 +162,6 @@
     "c:o-sea",
     "c:perdon-disculpe",
     "c:quiero",
-    "c:tengo",
     "g:cada-cualquier",
     "g:commands-usted",
     "g:comparatives",
@@ -187,13 +185,11 @@
     "g:se-impersonal",
     "g:ser-identity",
     "g:stem-boot",
-    "g:that-clauses",
     "g:verb-infinitive",
     "g:yo-irregular",
     "p:aqui-ahi-alla",
     "p:demonstratives-basic",
     "p:durar-durante",
-    "p:equivocarse",
     "p:indefinites-basic",
     "p:la-gente-singular",
     "p:madrugar-trasnochar",
@@ -205,6 +201,7 @@
     "p:permitir-inf",
     "p:personal-a",
     "p:por-ciento",
+    "p:por-la-manana",
     "p:possessives-basic",
     "p:preguntar-pedir",
     "p:prep-questions-basic",
@@ -231,7 +228,6 @@
     "l:cama",
     "l:capítulo",
     "l:carné",
-    "l:casa",
     "l:celular",
     "l:cero",
     "l:comer",
@@ -239,7 +235,6 @@
     "l:contestar",
     "l:corazón",
     "l:cosa",
-    "l:creer",
     "l:cómo",
     "l:dar",
     "l:dejar",
@@ -286,6 +281,7 @@
     "l:preguntar",
     "l:prensa",
     "l:presentador",
+    "l:programa",
     "l:prohibir",
     "l:próximo",
     "l:quedar",

@@ -166,12 +166,12 @@
     {
       "wrong": "Nos encontramos por accidente en el aeropuerto.",
       "right": "Nos encontramos por casualidad en el aeropuerto.",
-      "why": "*Accidente* is a crash; for running into someone, use *casualidad*."
+      "why": "*Por accidente* is for mishaps, like breaking something. A lucky meeting is *por casualidad*."
     },
     {
-      "wrong": "¿Por casualidad sabe donde queda la notaría?",
+      "wrong": "¿Por la casualidad sabe dónde queda la notaría?",
       "right": "¿Por casualidad sabe dónde queda la notaría?",
-      "why": "Question words keep their accent, even inside a bigger question."
+      "why": "No article: the phrase is just *por casualidad*."
     }
   ],
   "personal": "You are lost and need help. Write a polite question to a stranger starting with *¿Por casualidad…?*, then say something you found by chance."

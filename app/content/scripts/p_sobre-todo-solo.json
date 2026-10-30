@@ -1,9 +1,9 @@
 {
   "node": "p:sobre-todo-solo",
   "hook": {
-    "line": "Vale is describing what sells at the café. Two small words sound alike in English, but one keeps everything and the other drops everything.",
+    "line": "Vale is describing what sells at the café. Two small words both single something out, but one keeps everything else and the other throws it away.",
     "es": "Me gusta el café, sobre todo el tinto.",
-    "en": "I like coffee, especially tinto."
+    "en": "I like coffee, especially black coffee."
   },
   "examples": [
     {
@@ -156,19 +156,19 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Me gusta el deporte, solo el fútbol, pero también el tenis.",
+      "wrong": "Me gusta el deporte, solo el fútbol.",
       "right": "Me gusta el deporte, sobre todo el fútbol.",
-      "why": "*Solo* would cancel the others. To keep them and single one out, use *sobre todo*."
+      "why": "With *solo* you'd like football and nothing else. To keep the rest and single one out, use *sobre todo*."
     },
     {
-      "wrong": "Sobre todo tomo café por la mañana, nunca más tarde.",
+      "wrong": "Sobre todo tomo café por la mañana.",
       "right": "Solo tomo café por la mañana.",
-      "why": "If it never happens at other times, that's *only*: *solo*."
+      "why": "If you never drink it later, that's *only*: *solo*. *Sobre todo* would mean mostly in the morning."
     },
     {
-      "wrong": "Me gustan sobre todo las arepas de Vale, ninguna otra.",
-      "right": "Solo me gustan las arepas de Vale.",
-      "why": "*Sobre todo* never excludes, so it can't go with *no others*. Use *solo*."
+      "wrong": "Voy solo.",
+      "right": "Solo voy yo.",
+      "why": "*Voy solo* means you're going alone. For *I'm the only one going*, start with *solo*: *solo voy yo*."
     }
   ],
   "personal": "Write one thing you do every day, and the moment you do it most, using *sobre todo*. Then write one thing you do only once a week, using *solo*."

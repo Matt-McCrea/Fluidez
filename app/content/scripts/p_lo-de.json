@@ -73,7 +73,7 @@
     {
       "es": "¿Y lo del viernes?",
       "options": [
-        "And Friday's dress?",
+        "And Friday's party?",
         "And is it Friday?",
         "And what about the Friday plan?"
       ],
@@ -123,8 +123,11 @@
     {
       "prompt": "Sorry about yesterday.",
       "answer": "Perdón por lo de ayer.",
-      "accept": [],
-      "why": "*Por lo de* thanks or apologises for a whole situation."
+      "accept": [
+        "Perdóname por lo de ayer.",
+        "Disculpa por lo de ayer."
+      ],
+      "why": "*Perdón por* plus *lo de ayer*: sorry for the whole thing yesterday."
     },
     {
       "prompt": "What happened with the commission business?",
@@ -163,9 +166,9 @@
       "why": "*De* and *el* always join as *del*."
     },
     {
-      "wrong": "¿Supiste lo Andrés?",
+      "wrong": "¿Supiste sobre Andrés?",
       "right": "¿Supiste lo de Andrés?",
-      "why": "You need *de* after *lo*: it is the bridge to the person or topic."
+      "why": "English says *about*, but for news you both know of, Spanish points at it with *lo de*."
     }
   ],
   "personal": "Think of something you and a friend both know about. Write one line with *lo de…*, such as *Perdón por lo de…* or *¿Y lo de…?*"

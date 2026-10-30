@@ -46,7 +46,7 @@
   {
    "es": "El bus llegó tarde.",
    "options": [
-    "The bus took long.",
+    "The bus took a long time.",
     "The bus was late.",
     "The bus is coming."
    ],
@@ -83,7 +83,7 @@
    "es": "Vale siempre llega a tiempo.",
    "options": [
     "Vale is always late.",
-    "Vale always takes long.",
+    "Vale always takes a long time.",
     "Vale always arrives on time."
    ],
    "answer": 2
@@ -98,13 +98,13 @@
    "answer": 1
   },
   {
-   "es": "Llegamos tarde porque el tráfico se demoró.",
+   "es": "Llegamos tarde porque el bus se demoró mucho.",
    "options": [
-    "We arrived late because traffic is slow.",
-    "We took long because we were late.",
-    "We were late because the traffic took a long time."
+    "We arrived late because the bus took a long time.",
+    "The bus was late because we took a long time.",
+    "We took a long time to find the bus."
    ],
-   "answer": 2
+   "answer": 0
   }
  ],
  "yourTurn": [
@@ -163,9 +163,9 @@
  ],
  "pitfalls": [
   {
-   "wrong": "Llegué una hora al café.",
+   "wrong": "Tomé una hora en llegar al café.",
    "right": "Me demoré una hora en llegar al café.",
-   "why": "Almost. To say how long something took, use *demorarse* or *tardar* plus *en*."
+   "why": "Almost. English says *it took me an hour*, but Spanish measures time with *demorarse* or *tardar*, plus *en*."
   },
   {
    "wrong": "Me demoré a la reunión.",
@@ -180,7 +180,7 @@
   {
    "wrong": "Soy tarde.",
    "right": "Llego tarde.",
-   "why": "Almost. Late is something you do on arrival, so use *llegar tarde*."
+   "why": "Almost. Being late is about when you arrive, so use *llegar tarde*. *Es tarde* only means it's late in the day."
   }
  ],
  "personal": "Tell us how long it takes you to get to your work or school, and whether you usually arrive on time. Use *me demoro* or *tardo*, and *llego a tiempo* or *llego tarde*."

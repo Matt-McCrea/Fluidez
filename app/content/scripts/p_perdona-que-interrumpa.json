@@ -3,12 +3,12 @@
   "hook": {
     "line": "In Bogotá, a conversation can have five people at once, and nobody waits for a full stop. If you must break in, say sorry first, then say why.",
     "es": "Perdona que te interrumpa, pero ya es tarde.",
-    "en": "Sorry to interrupt you, but it's already late."
+    "en": "Sorry to interrupt you, but it's already late. (to a friend)"
   },
   "examples": [
     {
       "es": "Perdona que te interrumpa, pero ya es tarde.",
-      "en": "Sorry to interrupt you, but it's already late."
+      "en": "Sorry to interrupt you, but it's already late. (to a friend)"
     },
     {
       "es": "Disculpe que lo interrumpa, pero es urgente.",
@@ -24,14 +24,14 @@
     },
     {
       "es": "Disculpa que te interrumpa, pero tengo una pregunta.",
-      "en": "Sorry to interrupt you, but I have a question."
+      "en": "Sorry to interrupt you, but I have a question. (to a friend)"
     },
     {
       "es": "Un momento, ¿puedo decir algo?",
       "en": "Just a moment, can I say something?"
     }
   ],
-  "rule": "Same recipe every time:\n\n*Perdona* (to a friend) or *Disculpe* / *Perdone* (to someone you call *usted*), then *que*, then a pronoun, then *interrumpa*, then *pero* and your reason.\n\nThe pronoun says who you're cutting off: *te* (a friend), *lo* (him, or a man you call *usted*), *la* (her), *los* (you all or them).\n\nThe ending of *interrumpa* looks odd: an *-ar* style *-a*, even though the verb is *-ir*. Just use it as one block after *que*, the way English says *Sorry to...* after an apology.\n\nNo time to explain? *Un momento, ¿puedo decir algo?* does the job.",
+  "rule": "Same recipe every time:\n\n*Perdona* or *disculpa* (to a friend), *perdone* or *disculpe* (to someone you call *usted*), *perdonen* or *disculpen* (to a group), then *que*, then a pronoun, then *interrumpa*, then *pero* and your reason.\n\nThe pronoun says who you're cutting off: *te* (a friend), *lo* (him, or a man you call *usted*), *la* (her), *los* (you all or them).\n\n*Interrumpa* has the same request ending you met in *que la llames*: *-ir* verbs swap to *-a*. Learn it as one block after *que*, the way English says *Sorry to...*\n\nNo time to explain? *Un momento, ¿puedo decir algo?* does the job.",
   "smallPrint": "Teachers call *interrumpa* the present subjunctive. It follows *perdona que* because you're apologising for something you're doing.",
   "readAndPick": [
     {
@@ -85,10 +85,10 @@
       "answer": 0
     },
     {
-      "es": "Perdona que lo interrumpa, pero son las seis.",
+      "es": "Perdone que lo interrumpa, pero son las seis.",
       "options": [
-        "Sorry to interrupt her, but it's six.",
-        "Sorry to interrupt him, but it's six."
+        "Sorry to interrupt you, but it's six. (to a friend)",
+        "Sorry to interrupt you, but it's six. (formal, to a man)"
       ],
       "answer": 1
     },
@@ -166,9 +166,9 @@
       "why": "Almost. With *usted*, the pronoun is *lo* or *la*, not *te*."
     },
     {
-      "wrong": "Perdona que interrumpa te, pero ya es tarde.",
+      "wrong": "Lo siento para interrumpir, pero ya es tarde.",
       "right": "Perdona que te interrumpa, pero ya es tarde.",
-      "why": "The pronoun goes right before the verb, not after it."
+      "why": "English *sorry to* doesn't carry over word for word. Spanish says *perdona que te interrumpa*."
     }
   ],
   "personal": "Imagine you're at a table and need to say something right now. Write what you'd say, starting with *Perdona que te interrumpa* or *Disculpe que lo interrumpa*."
