@@ -2,7 +2,7 @@
   "id": "ch044",
   "unit": "u16",
   "title": "Nuestra esquina",
-  "text": "El sillón morado pasó la noche en la calle, y don Hernando pasó la noche en el sillón, para cuidarlo.\nHernando: Dormí mejor que en mi cama, mijo.\nVale: Tu sillón, tu problema, Tomás. Y tu español. Yo me quedo en el café.\nHernando y Tomás subieron el sillón al techo de la Burra. Simón viajó arriba, feliz.\nEn el almacén, el vendedor del jueves estaba en la caja.\nVendedor: ¡El señor de los setecientos mil! ¿Y hoy qué va a comprar?\nTomás: Buenos días. Me quiero devolver.\nVendedor: ¿Usted se devuelve? ¿Para su país, joven?\nTomás: No, no. Quiero devolver el sillón morado. No entra por la puerta del café.\nVendedor: Aquí no devolvemos plata.\nTomás: ¿Y no lo tiene en otra talla?\nVendedor: ¿Talla? Es un sillón, no una camisa.\nSimón: ¡Me quiero devolver! ¡Me quiero devolver!\nTomás habló despacio, con todo su español.\nTomás: Señor, el sillón es muy bonito. Es el más bonito de San Victorino. Pero mi café es pequeño, y mi puerta es la más pequeña de La Candelaria.\nVendedor: Bueno. Plata no, pero cambios sí. ¿Qué necesita?\nTomás: Una cafetera. La nuestra no funciona.\nVendedor: Tengo una cafetera italiana, la mejor del almacén. Se la doy, y usted me deja el sillón.\nTomás: ¿Me hace un descuento?\nVendedor: Mejor todavía: hoy la cafetera tiene rebaja. Vale seiscientos. Usted me pagó setecientos, entonces le devuelvo cien mil.\nHernando: Es justo, mijo. Acepta.\nTomás: ¿Me los da en efectivo?\nVendedor: Claro. Se los doy en efectivo.\nUna conversación difícil, toda en español, ¡y Tomás ganó!\nVendedor: Y el sillón ya tiene cliente. Un señor de Altamira quiere doce iguales para su hotel nuevo en La Candelaria.\nTomás: ¿Un hotel? ¿Dónde?\nVendedor: Calle 11 con carrera 4. En la esquina.\nHernando miró a Tomás.\nHernando: Mijo, esa es nuestra esquina.",
+  "text": "El sillón morado pasó la noche en la calle, y don Hernando pasó la noche en el sillón, para cuidarlo.\nVale: Tu sillón, tu problema, Tomás. Y tu español. Yo me quedo en el café.\nHernando y Tomás lo subieron al techo de la Burra.\nEn el almacén, el vendedor del jueves estaba en la caja.\nVendedor: ¡El señor de los setecientos mil! ¿Y hoy qué va a comprar?\nTomás: Buenos días. Me quiero devolver.\nVendedor: ¿Usted se devuelve? ¿Para su país, joven?\nTomás: No, señor. Quiero devolver el sillón morado. No entra por la puerta del café.\nVendedor: Aquí no devolvemos plata.\nTomás: ¿Y no lo tiene en otra talla?\nVendedor: ¿Talla? Es un sillón, no una camisa.\nSimón: ¡Me quiero devolver! ¡Me quiero devolver!\nTomás habló despacio, con todo su español.\nTomás: Señor, es muy bonito. Pero mi café es pequeño, y mi puerta es la más pequeña de La Candelaria.\nVendedor: Bueno. Plata no, pero cambios sí. ¿Qué necesita?\nTomás: Una cafetera. La nuestra no funciona.\nVendedor: Tengo una cafetera italiana, la mejor del almacén. Se la doy, y usted me deja el sillón.\nTomás: ¿Me hace un descuento?\nVendedor: Mejor todavía: hoy la cafetera tiene rebaja. Vale seiscientos. Usted me pagó setecientos, entonces le devuelvo cien mil, en efectivo.\nVendedor: Y el morado ya tiene cliente. Un señor de Altamira quiere doce iguales para su hotel nuevo en La Candelaria.\nTomás: ¿Un hotel? ¿Dónde?\nVendedor: Calle 11 con carrera 4. En la esquina.\nHernando miró a Tomás.\nHernando: Mijo, esa es nuestra esquina.",
   "gloss": [
     {
       "es": "mijo",
@@ -121,12 +121,12 @@
       "answer": 0
     },
     {
-      "q": "How does Tomás ask to be paid?",
+      "q": "What does Tomás say his café needs?",
       "options": [
-        "In cash",
-        "In dollars",
-        "With a coffee",
-        "With a card"
+        "A coffee machine, because theirs doesn't work",
+        "A bigger door",
+        "Twelve armchairs",
+        "A new sign"
       ],
       "answer": 0
     }
@@ -134,7 +134,6 @@
   "hook": "Altamira is buying armchairs for a hotel on the café's own corner, as if the sale were already done. On Monday night Tomás tells Mariana, and Mariana wants an answer about the salsa night.",
   "requires": [
     "c:bien-y-tu",
-    "c:claro-listo",
     "c:entonces-bueno",
     "c:hola-buenos-dias",
     "c:me-hace-una-rebajita",
@@ -143,7 +142,6 @@
     "c:tiene-otra-talla",
     "c:tienes",
     "g:adjective-agreement",
-    "g:comparatives",
     "g:demonstratives",
     "g:direct-objects",
     "g:double-pronouns",
@@ -178,32 +176,25 @@
     "p:ya-todavia-basic"
   ],
   "lexemes": [
-    "l:aceptar",
     "l:almacén",
     "l:aquí",
-    "l:arriba",
     "l:bonito",
     "l:bueno",
     "l:cafetera",
     "l:café",
     "l:caja",
     "l:calle",
-    "l:cama",
     "l:cambio",
     "l:camisa",
     "l:carrera",
-    "l:claro",
     "l:cliente",
     "l:comprar",
-    "l:conversación",
     "l:cuidar",
     "l:dar",
     "l:dejar",
     "l:descuento",
     "l:despacio",
     "l:devolver",
-    "l:difícil",
-    "l:dormir",
     "l:día",
     "l:dónde",
     "l:efectivo",
@@ -211,9 +202,7 @@
     "l:español",
     "l:esquina",
     "l:estar",
-    "l:feliz",
     "l:funcionar",
-    "l:ganar",
     "l:hablar",
     "l:hacer",
     "l:hotel",
@@ -223,7 +212,6 @@
     "l:italiano",
     "l:joven",
     "l:jueves",
-    "l:justo",
     "l:mejor",
     "l:mijo",
     "l:mirar",
@@ -249,7 +237,6 @@
     "l:talla",
     "l:techo",
     "l:tener",
-    "l:vendedor",
-    "l:viajar"
+    "l:vendedor"
   ]
 }
