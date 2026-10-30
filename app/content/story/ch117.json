@@ -1,0 +1,301 @@
+{
+  "id": "ch117",
+  "unit": "u39",
+  "title": "Una idea por párrafo",
+  "text": "La oficina de la doctora Lozano tenía más libros que paredes. Hernando llevaba los buñuelos.\nLozano: ¿Weinstein? Claro, el sastre de la puerta verde. Hace veinte años hice un estudio sobre los sastres judíos del centro.\nEn el estudio había una foto: un señor con sombrero, delante de una puerta verde.\nDespués leyó las tres páginas de Tomás.\nLozano: Usted tiene buenas ideas, pero el texto no tiene estructura. El suyo tiene que ser fácil de leer.\nTomás: ¿Y cómo lo hago?\nLozano: Como un ensayo. Una introducción, tres párrafos y una conclusión. En la introducción, usted dice qué va a exponer. En cada párrafo, expone una sola idea. Y en la conclusión, lo dice otra vez, en pocas palabras.\nVale: Es como una torta. Sin estructura, la torta se cae antes de llegar a la mesa.\nVale: Yo estudié en una academia de Medellín. Tengo el certificado en la pared, al lado de la nevera.\nHernando: Yo estudié en otra academia: treinta años en la Burra. Esa academia no da certificado, pero enseña más.\nTomás: En Toronto hice un programa de seis meses para probar software. Nunca escribí un ensayo.\nLozano: Entonces escriba como probaba software. Una idea por párrafo.\nLozano: El comité también pide un resumen de una página y una presentación de diez minutos.\nTomás: ¿Una presentación? ¿En español?\nMariana: Yo investigué a Altamira seis meses. Tú solo tienes que exponer lo que ya sabes.\nLozano: Mañana mis estudiantes del programa de historia van a investigar en el archivo.\nEsa noche, Tomás intentó resumir cuarenta años en una página.\nTomás: Resumir a Rosa es difícil de hacer. Cada frase que corto me duele.\nVale: Pues no la saques. Ponla en la presentación.\nTomás leyó el resumen en voz alta.\nSimón: ¿Sabían que...? ¿Sabían que...?\nHernando: Ese loro quiere hacer la introducción.\nA las once llamó Lozano.\nLozano: En el archivo encontramos una carta de Weinstein de 1979. Le vendió la casa a Rosa muy barata, con una sola condición.\nTomás: ¿Cuál condición?\nLozano: Mañana se la muestro. Es una carta difícil de leer por teléfono.",
+  "gloss": [
+    {
+      "es": "tenía más libros que paredes",
+      "en": "had more books than walls"
+    },
+    {
+      "es": "sastres",
+      "en": "tailors"
+    },
+    {
+      "es": "buenas ideas",
+      "en": "good ideas"
+    },
+    {
+      "es": "¿Y cómo lo hago?",
+      "en": "And how do I do that?"
+    },
+    {
+      "es": "Sin estructura, la torta se cae antes de llegar a la mesa.",
+      "en": "Without structure, the cake falls apart before it gets to the table."
+    },
+    {
+      "es": "Esa academia no da certificado, pero enseña más.",
+      "en": "That academy doesn't give you a certificate, but it teaches you more."
+    },
+    {
+      "es": "probar software",
+      "en": "testing software"
+    },
+    {
+      "es": "software",
+      "en": "software"
+    },
+    {
+      "es": "Cada frase que corto me duele.",
+      "en": "Every sentence I cut hurts."
+    },
+    {
+      "es": "Pues no la saques.",
+      "en": "Then don't take it out."
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "con una sola condición",
+      "en": "on just one condition"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Dr Lozano say is wrong with Tomás's three pages?",
+      "options": [
+        "They have good ideas but no structure",
+        "They are full of spelling mistakes",
+        "They are too short",
+        "They don't mention Altamira"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Dr Lozano make the essay structure easy for Tomás?",
+      "options": [
+        "She draws a diagram",
+        "She tells him to write the way he used to test software: one idea per paragraph",
+        "She writes it for him",
+        "She gives him an old essay to copy"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Dónde estudió Vale?",
+      "options": [
+        "En una academia de Medellín",
+        "En la universidad de Bogotá",
+        "En Toronto",
+        "En la Burra"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What else does the committee ask for, besides the statement?",
+      "options": [
+        "A video",
+        "A one-page summary and a ten-minute presentation",
+        "A visit to the café",
+        "Four hundred signatures"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Dr Lozano want to show Tomás the letter tomorrow instead?",
+      "options": [
+        "Her battery is low",
+        "It is a letter that is hard to read over the phone",
+        "She wants Hernando to read it",
+        "The archive is closing"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What was in the photo on page forty?",
+      "options": [
+        "A man in a hat in front of a green door",
+        "Rosa on her first day",
+        "The café's first sign",
+        "A tailor's shop full of suits"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where does Vale keep her certificate?",
+      "options": [
+        "On the wall, next to the fridge",
+        "In her bag",
+        "At her mother's house in Medellín",
+        "Under the till"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where did they find Weinstein's letter?",
+      "options": [
+        "In the archive",
+        "In the café",
+        "In Hernando's pocket",
+        "In Rosa's kitchen"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Samuel Weinstein sold Rosa the house cheaply in 1979, on one condition, and the letter that says so is waiting in the archive. Tomorrow the condition becomes the heart of Tomás's statement, and he has to read the whole thing aloud to the people it is about.",
+  "requires": [
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:hago-salgo-vengo",
+    "c:pues",
+    "c:que-va",
+    "c:sabian-que",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negative-commands",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:dificil-de-inf",
+    "p:doler",
+    "p:entonces-de-repente",
+    "p:es-adj-inf",
+    "p:frequency-scale",
+    "p:intentar-conseguir",
+    "p:me-duele",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:poco-un-poco",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:sobre-todo-solo",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:academia",
+    "l:alto",
+    "l:antes",
+    "l:archivo",
+    "l:año",
+    "l:barato",
+    "l:buena",
+    "l:buñuelo",
+    "l:caerse",
+    "l:carta",
+    "l:casa",
+    "l:centro",
+    "l:certificado",
+    "l:claro",
+    "l:comité",
+    "l:conclusión",
+    "l:condición",
+    "l:cortar",
+    "l:cuál",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:delante",
+    "l:después",
+    "l:difícil",
+    "l:doctor",
+    "l:doler",
+    "l:encontrar",
+    "l:ensayo",
+    "l:enseñar",
+    "l:escribir",
+    "l:español",
+    "l:estructura",
+    "l:estudiante",
+    "l:estudiar",
+    "l:estudio",
+    "l:exponer",
+    "l:foto",
+    "l:frase",
+    "l:fácil",
+    "l:hacer",
+    "l:historia",
+    "l:idea",
+    "l:intentar",
+    "l:introducción",
+    "l:investigar",
+    "l:ir",
+    "l:judío",
+    "l:lado",
+    "l:leer",
+    "l:libro",
+    "l:llamar",
+    "l:llegar",
+    "l:llevar",
+    "l:loro",
+    "l:mañana",
+    "l:mes",
+    "l:mesa",
+    "l:minuto",
+    "l:mostrar",
+    "l:nevera",
+    "l:noche",
+    "l:oficina",
+    "l:palabra",
+    "l:pared",
+    "l:pedir",
+    "l:poner",
+    "l:presentación",
+    "l:probar",
+    "l:probarse",
+    "l:programa",
+    "l:puerta",
+    "l:página",
+    "l:párrafo",
+    "l:querer",
+    "l:qué",
+    "l:resumen",
+    "l:resumir",
+    "l:saber",
+    "l:sacar",
+    "l:ser",
+    "l:señor",
+    "l:sombrero",
+    "l:teléfono",
+    "l:tener",
+    "l:texto",
+    "l:torta",
+    "l:vender",
+    "l:verde",
+    "l:vez",
+    "l:voz"
+  ]
+}

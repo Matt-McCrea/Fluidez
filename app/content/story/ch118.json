@@ -1,0 +1,311 @@
+{
+  "id": "ch118",
+  "unit": "u39",
+  "title": "La puerta verde",
+  "text": "«Señora Rosa: le vendo mi casa por poca plata, con una sola condición. La puerta verde no se cierra para nadie. Samuel Weinstein, junio de 1979».\nHernando: Cuarenta años, y esa puerta nunca se cerró. Ni para mí, que llegaba sin plata.\nVale: Ni para usted, que todavía llega sin plata.\nTomás escribió cuatro días seguidos. Vale le traía tinto, y Mariana le quitaba palabras. El sábado, el café se llenó para la lectura: Gloria, Jhon Fredy, la doctora Lozano y el gerente del banco de la esquina, que de niño hacía las tareas en la mesa de la ventana.\nTomás se puso de pie con cinco hojas. Tenía las manos frías.\nTomás: «Hoy les quiero explicar por qué este café importa. Primero, la casa tiene casi cien años de historia. Fue la casa de un sastre judío, y después el café de una mujer que llegó del campo.\nAdemás, el café es un lugar de todos. Por un lado, es un negocio pequeño. Por otro, es la sala de un barrio entero.\nPor último, hay pruebas: la carta del señor Weinstein, 400 firmas y 120 cartas de vecinos. Una es del gerente del banco de la esquina».\nEl gerente se puso rojo.\nTomás: «En resumen, vender esta casa no es vender un edificio. Es cerrar una puerta que lleva casi cien años abierta. Muchas gracias por su atención».\nSimón: ¡Gracias, gracias por su atención!\nTodos aplaudieron, menos Hernando. Él miraba la carta del sastre.\nHernando: A Rosa le gustaría esto.\nSe tocó la cara.\nHernando: Tengo algo en el ojo. Es el polvo del archivo.\nVale: Claro, Hernando. El polvo.\nVale lo abrazó, y por primera vez Hernando no protestó.\nMariana: La dirección es comité, arroba, Bogotá, punto, gov, punto, co.\nHernando: ¿Arroba? En mi pueblo, la papa se vendía por arrobas.\nTomás envió el correo.\nA las once, Mariana miró el perfil de Simón: treinta mil seguidores y un mensaje nuevo, de Taganga.\nYesid: Mi abuela tiene algo de Joaquín para el nieto de Rosa. Dice que se lo da en la mano, y a nadie más.",
+  "gloss": [
+    {
+      "es": "por poca plata",
+      "en": "for very little money"
+    },
+    {
+      "es": "La puerta verde no se cierra para nadie.",
+      "en": "The green door does not close for anyone."
+    },
+    {
+      "es": "Ni para usted, que todavía llega sin plata.",
+      "en": "Not even for you, and you still turn up without any money."
+    },
+    {
+      "es": "le quitaba palabras",
+      "en": "took words out"
+    },
+    {
+      "es": "sastre",
+      "en": "tailor"
+    },
+    {
+      "es": "Es cerrar una puerta que lleva casi cien años abierta.",
+      "en": "It is closing a door that has been open for almost a hundred years."
+    },
+    {
+      "es": "aplaudieron",
+      "en": "applauded"
+    },
+    {
+      "es": "Tengo algo en el ojo.",
+      "en": "I've got something in my eye."
+    },
+    {
+      "es": "gov",
+      "en": "gov"
+    },
+    {
+      "es": "co",
+      "en": "co"
+    },
+    {
+      "es": "la papa se vendía por arrobas",
+      "en": "potatoes were sold by the arroba (about twelve kilos)"
+    },
+    {
+      "es": "se lo da en la mano",
+      "en": "she will put it in his hands"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What was Samuel Weinstein's one condition when he sold Rosa the house?",
+      "options": [
+        "That she kept his name on the door",
+        "That the green door would never close to anyone",
+        "That she paid in dollars",
+        "That she never sold coffee"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does the bank manager go red during the reading?",
+      "options": [
+        "He arrived late",
+        "Tomás mentions that one of the letters is his",
+        "He is allergic to Simón",
+        "He disagrees with the text"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How does Hernando explain his eyes after the reading?",
+      "options": [
+        "He says he is tired",
+        "He says he has something in his eye, the dust from the archive",
+        "He says it is the onions",
+        "He says nothing"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué es una arroba para Hernando?",
+      "options": [
+        "Un símbolo del correo",
+        "Una medida para vender papa",
+        "Un tipo de loro",
+        "Una calle de su pueblo"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does the new message from Taganga say?",
+      "options": [
+        "Yesid wants money",
+        "Yesid's grandmother has something of Joaquín's that she will only give to Rosa's grandson in person",
+        "Altamira has called Yesid",
+        "The radio wants another interview"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Who did the bank manager use to be?",
+      "options": [
+        "A boy who did his homework at the window table",
+        "Rosa's lawyer",
+        "Hernando's taxi passenger",
+        "Jhon Fredy's teacher"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How did Tomás feel when he stood up to read?",
+      "options": [
+        "His hands were cold",
+        "He was hungry",
+        "He was angry with Mariana",
+        "He was sleepy"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How did the message from Taganga reach the café?",
+      "options": [
+        "By phone to the café",
+        "On Simón's profile, which has thirty thousand followers",
+        "In the newspaper",
+        "Through Dr Lozano"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "The statement is with the committee, and Rosa's grandson is wanted in Taganga. Tomorrow Tomás has to decide whether he can leave the café, with the hearing coming, to collect something from a man he never met.",
+  "requires": [
+    "c:ademas",
+    "c:claro-listo",
+    "c:gracias-de-antemano",
+    "c:gracias-de-nada",
+    "c:gracias-por-su-atencion",
+    "c:hay",
+    "c:no-se",
+    "c:ojo",
+    "c:por-un-lado",
+    "c:quiero",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:discourse-structure",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:negation-words",
+    "g:passive-se",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:al-final-en-resumen",
+    "p:costar-pagar",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:lugar-tiene",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:postura",
+    "p:presentation-frame",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:te-invito-a",
+    "p:telling-time",
+    "p:tener-anos",
+    "p:time-sequence-basic",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abrazar",
+    "l:abrir",
+    "l:abuela",
+    "l:además",
+    "l:aplaudir",
+    "l:archivo",
+    "l:arroba",
+    "l:atención",
+    "l:año",
+    "l:banco",
+    "l:barrio",
+    "l:café",
+    "l:campo",
+    "l:cara",
+    "l:carta",
+    "l:casa",
+    "l:cerrar",
+    "l:claro",
+    "l:co",
+    "l:comité",
+    "l:condición",
+    "l:correo",
+    "l:darse",
+    "l:decir",
+    "l:después",
+    "l:dirección",
+    "l:doctor",
+    "l:día",
+    "l:edificio",
+    "l:entero",
+    "l:enviar",
+    "l:escribir",
+    "l:esquina",
+    "l:explicar",
+    "l:firma",
+    "l:frío",
+    "l:gerente",
+    "l:gustar",
+    "l:hacer",
+    "l:historia",
+    "l:hoja",
+    "l:hoy",
+    "l:importar",
+    "l:judío",
+    "l:junio",
+    "l:lado",
+    "l:lectura",
+    "l:llegar",
+    "l:llenar",
+    "l:llevar",
+    "l:lugar",
+    "l:mano",
+    "l:mensaje",
+    "l:mesa",
+    "l:mirar",
+    "l:mujer",
+    "l:negocio",
+    "l:nieto",
+    "l:niño",
+    "l:nuevo",
+    "l:ojo",
+    "l:palabra",
+    "l:papa",
+    "l:pequeño",
+    "l:perfil",
+    "l:pie",
+    "l:plata",
+    "l:polvo",
+    "l:ponerse",
+    "l:protestar",
+    "l:prueba",
+    "l:pueblo",
+    "l:puerta",
+    "l:punto",
+    "l:querer",
+    "l:quitar",
+    "l:qué",
+    "l:resumen",
+    "l:rojo",
+    "l:sala",
+    "l:seguidor",
+    "l:seguir",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sábado",
+    "l:tarea",
+    "l:tener",
+    "l:tinto",
+    "l:tocar",
+    "l:traer",
+    "l:vecino",
+    "l:vender",
+    "l:ventana",
+    "l:verde",
+    "l:vez"
+  ]
+}

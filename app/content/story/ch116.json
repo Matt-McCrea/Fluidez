@@ -1,0 +1,306 @@
+{
+  "id": "ch116",
+  "unit": "u39",
+  "title": "La escritura",
+  "text": "Tomás escribió la primera frase a las seis de la mañana. A las seis y cinco ya no le gustaba.\nA las ocho llegaron sus editoras: Vale con dos tintos y Mariana con un lápiz detrás de la oreja.\nMariana: A ver. Léelo en voz alta.\nTomás: ¿Sabían que La Esquina de Rosa abrió en 1979?\nMariana: Para. Esto es una declaración para un comité, no una reunión de ventas.\nAl final de la tercera página, Tomás levantó los ojos.\nTomás: Muchas gracias por su atención.\nSimón: ¡Gracias por su atención! ¡Gracias por su atención!\nVale: Hasta el loro sabe que eso no va en una carta.\nMariana: Mira, escribir bien no es escribir mucho. Son tres páginas, y casi no hablas de Rosa.\nTomás: Escribir sobre Rosa es lo más difícil. Yo la veía un mes cada dos años.\nEn ese momento entró Hernando, con algo en el bolsillo de la chaqueta. Era un papel amarillo, doblado en cuatro: la escritura de la casa.\nHernando: Rosa me la dio en 1985 para guardarla, y yo la guardé tan bien que la perdí.\nMariana: Antes de Rosa, la casa era de un señor Samuel Weinstein, un sastre judío que llegó de Polonia en 1938.\nHernando: Rosa decía que el señor Weinstein era el fantasma del café. Cuando una puerta se cerraba sola, ella decía: «Buenas noches, señor Weinstein».\nVale: ¿Y usted le creía?\nHernando: Mija, yo manejé un taxi treinta años de noche. Yo le creo a todo el mundo.\nMariana: Esto es estupendo. Es una casa con casi cien años de historia, y dos familias que llegaron de lejos.\nTomás: Como yo.\nNadie dijo una palabra. Vale le pasó su tinto.\nMariana: Tengo una amiga que se doctoró en historia de La Candelaria.\nHernando: ¿Se doctoró? Entonces a esa señora le llevamos buñuelos.\nTomás abrió el cuaderno y escribió una frase nueva. No era una pregunta y no daba las gracias.\n«Esta casa siempre fue de gente que llegó de lejos».\nVale: Esa frase sí se queda.\nSimón: ¡Muchas gracias por su atención!\nVale: Y esa se va.",
+  "gloss": [
+    {
+      "es": "A las seis y cinco ya no le gustaba.",
+      "en": "By five past six he already didn't like it."
+    },
+    {
+      "es": "editoras",
+      "en": "editors"
+    },
+    {
+      "es": "un lápiz detrás de la oreja",
+      "en": "a pencil behind her ear"
+    },
+    {
+      "es": "Esto es una declaración para un comité, no una reunión de ventas.",
+      "en": "This is a statement for a committee, not a sales meeting."
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "eso no va en una carta",
+      "en": "that doesn't go in a letter"
+    },
+    {
+      "es": "doblado en cuatro",
+      "en": "folded in four"
+    },
+    {
+      "es": "la escritura de la casa",
+      "en": "the deed to the house"
+    },
+    {
+      "es": "yo la guardé tan bien que la perdí",
+      "en": "I kept it so safe that I lost it"
+    },
+    {
+      "es": "sastre",
+      "en": "tailor"
+    },
+    {
+      "es": "Buenas noches",
+      "en": "Good night"
+    },
+    {
+      "es": "Yo le creo a todo el mundo.",
+      "en": "I believe everybody."
+    },
+    {
+      "es": "se doctoró en historia",
+      "en": "got her doctorate in history"
+    },
+    {
+      "es": "Esa frase sí se queda.",
+      "en": "That sentence stays."
+    },
+    {
+      "es": "Y esa se va.",
+      "en": "And that one goes."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Mariana stop Tomás after his first two lines?",
+      "options": [
+        "His opening sounds like a sales meeting, not a statement for a committee",
+        "He is reading too slowly",
+        "He wrote it in English",
+        "He got the year wrong"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando take out of his jacket pocket?",
+      "options": [
+        "A photo of Rosa",
+        "The deed to the house",
+        "A letter from Joaquín",
+        "The keys to the Burra"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who owned the house before Rosa?",
+      "options": [
+        "A taxi driver",
+        "Altamira's father",
+        "A Jewish tailor who came from Poland in 1938",
+        "Doña Gloria's family"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Qué decía Rosa cuando una puerta se cerraba sola?",
+      "options": [
+        "«Buenas noches, señor Weinstein»",
+        "«Muchas gracias por su atención»",
+        "«¿Sabían que...?»",
+        "«Cierren la puerta»"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does nobody say a word after Tomás says \"Como yo\"?",
+      "options": [
+        "They didn't hear him",
+        "He too is someone who came to the house from far away, and they feel it",
+        "He said something rude",
+        "Simón interrupted"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What did Vale and Mariana bring when they arrived at eight?",
+      "options": [
+        "Vale brought two tintos and Mariana had a pencil behind her ear",
+        "Vale brought buñuelos and Mariana a laptop",
+        "Both brought notebooks",
+        "Nothing at all"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "When did Rosa give Hernando the deed to keep?",
+      "options": [
+        "In 1938",
+        "In 1979",
+        "In 1985",
+        "Last year"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Hernando want to take Mariana's historian friend?",
+      "options": [
+        "Tea",
+        "Buñuelos",
+        "A tinto",
+        "Flowers"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Mariana's friend the historian once wrote about the tailors of the old town, and she has agreed to see them tomorrow. She will also tell Tomás, kindly but clearly, that his three pages are not yet a statement.",
+  "requires": [
+    "c:a-ver",
+    "c:al-final",
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-antemano",
+    "c:gracias-de-nada",
+    "c:gracias-por-su-atencion",
+    "c:hola-buenos-dias",
+    "c:oye-mira",
+    "c:sabian-que",
+    "c:tengo",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:alto",
+    "l:amarillo",
+    "l:amiga",
+    "l:antes",
+    "l:atención",
+    "l:año",
+    "l:bien",
+    "l:bolsillo",
+    "l:buena",
+    "l:buñuelo",
+    "l:café",
+    "l:carta",
+    "l:casa",
+    "l:cerrar",
+    "l:chaqueta",
+    "l:comer",
+    "l:comité",
+    "l:creer",
+    "l:cuaderno",
+    "l:dar",
+    "l:decir",
+    "l:declaración",
+    "l:detrás",
+    "l:difícil",
+    "l:doblar",
+    "l:doctorarse",
+    "l:editor",
+    "l:entrar",
+    "l:escribir",
+    "l:escritura",
+    "l:estupendo",
+    "l:familia",
+    "l:fantasma",
+    "l:final",
+    "l:frase",
+    "l:gente",
+    "l:guardar",
+    "l:gustar",
+    "l:hablar",
+    "l:historia",
+    "l:ir",
+    "l:irse",
+    "l:judío",
+    "l:leer",
+    "l:lejos",
+    "l:levantar",
+    "l:llegar",
+    "l:llevar",
+    "l:loro",
+    "l:lápiz",
+    "l:manejar",
+    "l:mañana",
+    "l:mes",
+    "l:mija",
+    "l:mirar",
+    "l:momento",
+    "l:mundo",
+    "l:noche",
+    "l:nuevo",
+    "l:ojo",
+    "l:oreja",
+    "l:palabra",
+    "l:papel",
+    "l:parar",
+    "l:pasar",
+    "l:perder",
+    "l:pregunta",
+    "l:puerta",
+    "l:página",
+    "l:quedarse",
+    "l:reunión",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:siempre",
+    "l:taxi",
+    "l:tener",
+    "l:tinto",
+    "l:venta",
+    "l:ver",
+    "l:voz"
+  ]
+}
