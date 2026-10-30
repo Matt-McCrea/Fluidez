@@ -1,0 +1,165 @@
+{
+  "node": "p:me-da-verguenza",
+  "hook": {
+    "line": "Tomás has to ask Vale for money again. The word you need isn't \"embarrassed\" but a thing that *gives* you shame.",
+    "es": "Me da vergüenza pedirle plata otra vez.",
+    "en": "I'm embarrassed to ask him for money again."
+  },
+  "examples": [
+    {
+      "es": "Me da vergüenza pedirle plata otra vez.",
+      "en": "I'm embarrassed to ask him for money again."
+    },
+    {
+      "es": "Me da vergüenza que me vean así.",
+      "en": "I'm embarrassed for them to see me like this."
+    },
+    {
+      "es": "Me da vergüenza hablar en público.",
+      "en": "I'm embarrassed to speak in public."
+    },
+    {
+      "es": "A Tomás le da vergüenza hablar español.",
+      "en": "Tomás is embarrassed to speak Spanish."
+    },
+    {
+      "es": "Me da vergüenza que Hernando me vea llorar.",
+      "en": "I'm embarrassed for Hernando to see me cry."
+    },
+    {
+      "es": "¿Te da vergüenza hablar con ella?",
+      "en": "Are you embarrassed to talk to her?"
+    }
+  ],
+  "rule": "Spanish doesn't say *I am embarrassed*. It says shame *gives* itself to you: *Me da vergüenza*. The person who feels it is *me*, *te*, *le*, *nos*, as with *gusta*.\n\nIf you do the thing yourself, add an infinitive: *Me da vergüenza hablar.*\nIf someone else does it, add *que* and a changed ending: *Me da vergüenza que me vean.*\n\nYou can say *Me da mucha vergüenza*. In Colombia and Mexico, *me da pena* means the same.\n\nNever say *estoy embarazada*: that means pregnant.",
+  "smallPrint": "Teachers call this a gustar-type verb, followed by an infinitive or by *que* plus the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Me da vergüenza hablar en público.",
+      "options": [
+        "I'm embarrassed to speak in public.",
+        "I'm embarrassed that they speak in public."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me da vergüenza que me vean así.",
+      "options": [
+        "I'm embarrassed to see them like this.",
+        "I'm embarrassed for them to see me like this."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te da vergüenza hablar con ella?",
+      "options": [
+        "Is she embarrassed to talk to you?",
+        "Are you embarrassed to talk to her?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Tomás le da vergüenza hablar español.",
+      "options": [
+        "Tomás is embarrassed to speak Spanish.",
+        "I'm embarrassed to speak Spanish."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos da vergüenza pedir ayuda.",
+      "options": [
+        "I'm embarrassed to ask for help.",
+        "They're embarrassed to ask for help.",
+        "We're embarrassed to ask for help."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me da vergüenza que Hernando me vea llorar.",
+      "options": [
+        "I'm embarrassed to see Hernando cry.",
+        "I'm embarrassed for Hernando to see me cry."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No me da vergüenza decir la verdad.",
+      "options": [
+        "I'm embarrassed to tell the truth.",
+        "I'm not embarrassed to tell the truth."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da vergüenza pedirle plata otra vez.",
+      "options": [
+        "I'm embarrassed to ask him for money again.",
+        "I'm embarrassed that he asks me for money again."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *hablar* or *que hable*, then type the whole sentence: Me da vergüenza ___ en público. (I'm embarrassed to speak in public.)",
+      "answer": "Me da vergüenza hablar en público.",
+      "accept": [],
+      "why": "You are the one speaking, so the infinitive is enough."
+    },
+    {
+      "prompt": "Choose *me da* or *le da*, then type the whole sentence: A Tomás ___ vergüenza hablar español. (Tomás is embarrassed to speak Spanish.)",
+      "answer": "A Tomás le da vergüenza hablar español.",
+      "accept": [],
+      "why": "The feeling lands on Tomás, so *le*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm embarrassed for Hernando to see me cry.",
+      "answer": "Me da vergüenza que Hernando me vea llorar.",
+      "accept": [],
+      "why": "Someone else does the seeing, so *que* and the changed ending."
+    },
+    {
+      "prompt": "Type it in Spanish: Are you embarrassed to talk to her? (to a friend)",
+      "answer": "¿Te da vergüenza hablar con ella?",
+      "accept": [],
+      "why": "*Te* is the friend who feels it."
+    },
+    {
+      "prompt": "Type it in Spanish: We're embarrassed to ask for help.",
+      "answer": "Nos da vergüenza pedir ayuda.",
+      "accept": [],
+      "why": "*Nos* is we, and *da* stays singular because the shame is one thing."
+    },
+    {
+      "prompt": "Make it negative: *Me da vergüenza decir la verdad.* becomes: I'm not embarrassed to tell the truth.",
+      "answer": "No me da vergüenza decir la verdad.",
+      "accept": [],
+      "why": "*No* goes right before *me*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm embarrassed that my grandmother knows.",
+      "answer": "Me da vergüenza que mi abuela lo sepa.",
+      "accept": [],
+      "why": "Someone else knows, so *que* and the changed ending *sepa*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy embarazado de pedirle plata.",
+      "right": "Me da vergüenza pedirle plata.",
+      "why": "Careful. *Embarazada* means pregnant. For embarrassed, let the shame *give* itself to you."
+    },
+    {
+      "wrong": "Yo doy vergüenza hablar español.",
+      "right": "Me da vergüenza hablar español.",
+      "why": "Almost. *Yo doy vergüenza* means you embarrass other people. When you feel it, it's *me da*."
+    },
+    {
+      "wrong": "Me da vergüenza que me ven así.",
+      "right": "Me da vergüenza que me vean así.",
+      "why": "Almost. After *que*, the verb takes the changed ending: *vean*."
+    }
+  ],
+  "personal": "Tell me one thing that gives you shame, big or small. Start with *Me da vergüenza...*."
+}

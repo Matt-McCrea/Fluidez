@@ -1,0 +1,169 @@
+{
+  "node": "p:tengo-miedo-de-que",
+  "hook": {
+    "line": "Altamira is circling the block, and Tomás can't sleep. When someone else's move scares you, Spanish lets you say how much it scares you.",
+    "es": "Tengo miedo de que Altamira compre el edificio.",
+    "en": "I'm afraid Altamira will buy the building."
+  },
+  "examples": [
+    {
+      "es": "Tengo miedo de que Altamira compre el edificio.",
+      "en": "I'm afraid Altamira will buy the building."
+    },
+    {
+      "es": "Me preocupa que Vale no venga hoy.",
+      "en": "I'm worried Vale won't come today."
+    },
+    {
+      "es": "Me da miedo que Simón se escape.",
+      "en": "I'm scared Simón will escape."
+    },
+    {
+      "es": "Me da pánico que me despidan.",
+      "en": "I'm terrified they'll fire me."
+    },
+    {
+      "es": "Tengo miedo de que no vengas.",
+      "en": "I'm afraid you won't come."
+    },
+    {
+      "es": "Me preocupa que no tengas plata.",
+      "en": "I'm worried you don't have any money."
+    }
+  ],
+  "rule": "When you fear what someone else might do, use *que* and a verb with a changed ending: *compre*, *venga*, *vengas*. Not the future, not the usual present.\n\nThree strengths:\n*Me preocupa que...* (worried)\n*Me da miedo que...* (scared)\n*Me da pánico que...* (terrified)\n\n*Tengo miedo de que...* is the same fear with *tener*.\n\nWhen the fear is about your own action, drop *que* and use the infinitive: *Tengo miedo de perderlo.*",
+  "smallPrint": "Teachers call this the subjunctive after verbs of emotion, and the infinitive when both clauses share the same subject.",
+  "readAndPick": [
+    {
+      "es": "Me preocupa que Vale no venga hoy.",
+      "options": [
+        "I'm worried Vale won't come today.",
+        "I'm terrified Vale won't come today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me da pánico que me despidan.",
+      "options": [
+        "I'm worried they'll fire me.",
+        "I'm terrified they'll fire me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo miedo de perderlo.",
+      "options": [
+        "I'm afraid you'll lose him.",
+        "I'm afraid of losing him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo miedo de que lo pierdas.",
+      "options": [
+        "I'm afraid of losing him.",
+        "I'm afraid you'll lose him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da miedo hablar con él.",
+      "options": [
+        "I'm scared to talk to him.",
+        "I'm scared you'll talk to him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me da miedo que hables con él.",
+      "options": [
+        "I'm scared to talk to him.",
+        "I'm scared you'll talk to him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo miedo de que no vengas.",
+      "options": [
+        "I'm afraid I won't come.",
+        "I'm afraid you won't come."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo miedo de que Altamira compre el edificio.",
+      "options": [
+        "I'm afraid Altamira bought the building.",
+        "I'm afraid of buying the building.",
+        "I'm afraid Altamira will buy the building."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *vengas* or *vienes*, then type the whole sentence: Tengo miedo de que no ___. (I'm afraid you won't come.)",
+      "answer": "Tengo miedo de que no vengas.",
+      "accept": [],
+      "why": "After a fear about someone else, the verb takes the changed ending: *vengas*."
+    },
+    {
+      "prompt": "Choose *me preocupa* or *me da pánico*, then type the whole sentence: ___ que Vale no venga hoy. (I'm worried Vale won't come today.)",
+      "answer": "Me preocupa que Vale no venga hoy.",
+      "accept": [],
+      "why": "*Me preocupa* is the mild one: worried, not terrified."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm scared Simón will escape.",
+      "answer": "Me da miedo que Simón se escape.",
+      "accept": [
+        "Tengo miedo de que Simón se escape."
+      ],
+      "why": "*Me da miedo que* plus the changed ending says what you're scared will happen."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm terrified they'll fire me.",
+      "answer": "Me da pánico que me despidan.",
+      "accept": [],
+      "why": "*Pánico* is the strongest of the three."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm scared to talk to him. (I'm the one talking.)",
+      "answer": "Me da miedo hablar con él.",
+      "accept": [
+        "Tengo miedo de hablar con él."
+      ],
+      "why": "Same person on both sides, so no *que*: just the infinitive."
+    },
+    {
+      "prompt": "Say it about *you* instead: *Tengo miedo de perderlo.* becomes: I'm afraid you'll lose him. (to a friend)",
+      "answer": "Tengo miedo de que lo pierdas.",
+      "accept": [],
+      "why": "A different person does the losing, so *que* comes back with the changed ending."
+    },
+    {
+      "prompt": "Type it in Spanish: It worries me that you don't have any money. (to a friend)",
+      "answer": "Me preocupa que no tengas plata.",
+      "accept": [],
+      "why": "*Tengas*, with the *-as* ending, points at *you*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tengo miedo de que vendrá.",
+      "right": "Tengo miedo de que venga.",
+      "why": "Almost. English says *will come*, but after a fear Spanish uses the changed ending, not the future."
+    },
+    {
+      "wrong": "Tengo miedo de que perder a Vale.",
+      "right": "Tengo miedo de perder a Vale.",
+      "why": "Almost. When you are the one afraid and the one losing, use the infinitive and no *que*."
+    },
+    {
+      "wrong": "Yo me preocupo que no vengas.",
+      "right": "Me preocupa que no vengas.",
+      "why": "Almost. *Preocupa* works like *gusta*: the worry bothers you, so *me* comes first."
+    }
+  ],
+  "personal": "Tell me one thing you fear someone else might do, or one thing that worries you about someone. Start with *Me preocupa que...* or *Tengo miedo de que...*."
+}

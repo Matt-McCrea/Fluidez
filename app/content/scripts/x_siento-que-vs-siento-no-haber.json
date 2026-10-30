@@ -1,0 +1,165 @@
+{
+  "node": "x:siento-que-vs-siento-no-haber",
+  "hook": {
+    "line": "Two apologies sound alike but go to different places: one is sympathy for what happened to someone, the other is owning your own mistake.",
+    "es": "Siento haber llegado tarde.",
+    "en": "I'm sorry I was late."
+  },
+  "examples": [
+    {
+      "es": "Siento que hayas llegado tarde.",
+      "en": "I'm sorry you were late. (to a friend)"
+    },
+    {
+      "es": "Siento haber llegado tarde.",
+      "en": "I'm sorry I was late."
+    },
+    {
+      "es": "Siento que estés triste.",
+      "en": "I'm sorry you're sad. (to a friend)"
+    },
+    {
+      "es": "Siento haberte gritado.",
+      "en": "I'm sorry I shouted at you."
+    },
+    {
+      "es": "Siento que Hernando esté enfermo.",
+      "en": "I'm sorry Hernando is ill."
+    },
+    {
+      "es": "Siento no haber llamado.",
+      "en": "I'm sorry I didn't call."
+    }
+  ],
+  "rule": "Two apologies, and the difference is who did it.\n\nSomeone else, or something that happened to them: *Siento que* + a changed ending. *Siento que hayas llegado tarde.* *Siento que estés triste.*\n\nYou did it yourself: *Siento haber* + the *-ado/-ido* word, with no *que*. *Siento haber llegado tarde.* For *didn't*, add *no*: *Siento no haber llamado.*\n\nThe common slip is using *que* for your own action. If the sorry is about *you*, think *haber*.",
+  "smallPrint": "Teachers call this the subjunctive after *siento que* when the subjects differ, and the perfect infinitive when they are the same.",
+  "readAndPick": [
+    {
+      "es": "Siento que hayas llegado tarde.",
+      "options": [
+        "I'm sorry you were late.",
+        "I'm sorry I was late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siento haber llegado tarde.",
+      "options": [
+        "I'm sorry you were late.",
+        "I'm sorry I was late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento haberte gritado.",
+      "options": [
+        "I'm sorry you shouted at me.",
+        "I'm sorry I shouted at you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento que no puedas venir.",
+      "options": [
+        "I'm sorry I can't come.",
+        "I'm sorry you can't come."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento no haber llamado.",
+      "options": [
+        "I'm sorry I didn't call.",
+        "I'm sorry you didn't call."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siento que Vale se haya ido.",
+      "options": [
+        "I'm sorry I left.",
+        "I'm sorry Vale has left.",
+        "I'm sorry Vale hasn't left."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento haber dicho eso.",
+      "options": [
+        "I'm sorry you said that.",
+        "I'm sorry I said that."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento que te hayan dicho eso.",
+      "options": [
+        "I'm sorry I said that to you.",
+        "I'm sorry they said that to you."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *haber llegado* or *que llegué*, then type the whole sentence: Siento ___ tarde. (I'm sorry I was late.)",
+      "answer": "Siento haber llegado tarde.",
+      "accept": [],
+      "why": "You did it yourself, so *haber* and no *que*."
+    },
+    {
+      "prompt": "Choose *que estés* or *estar*, then type the whole sentence: Siento ___ triste. (I'm sorry you're sad. to a friend)",
+      "answer": "Siento que estés triste.",
+      "accept": [],
+      "why": "It's about the other person, so *que* and *estés*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm sorry you can't come. (to a friend)",
+      "answer": "Siento que no puedas venir.",
+      "accept": [],
+      "why": "*Que* plus *puedas*, because *you* can't come."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm sorry I didn't call.",
+      "answer": "Siento no haber llamado.",
+      "accept": [],
+      "why": "*No* goes before *haber*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm sorry Hernando is ill.",
+      "answer": "Siento que Hernando esté enfermo.",
+      "accept": [],
+      "why": "Hernando is someone else, so *que* and *esté*."
+    },
+    {
+      "prompt": "Say it about yourself: *Siento que hayas llegado tarde.* becomes: I'm sorry I was late.",
+      "answer": "Siento haber llegado tarde.",
+      "accept": [],
+      "why": "Now you did it, so *haber* replaces *que*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm sorry I forgot your birthday. (to a friend)",
+      "answer": "Siento haber olvidado tu cumpleaños.",
+      "accept": [],
+      "why": "Your own mistake: *haber* plus *olvidado*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Siento que llegué tarde.",
+      "right": "Siento haber llegado tarde.",
+      "why": "Almost. When *you* did it, drop *que* and use *haber* plus the *-ado* word."
+    },
+    {
+      "wrong": "Siento que tú estás triste.",
+      "right": "Siento que estés triste.",
+      "why": "Almost. After *siento que*, the verb takes the changed ending: *estés*."
+    },
+    {
+      "wrong": "Siento haberse ido Vale.",
+      "right": "Siento que Vale se haya ido.",
+      "why": "Almost. When someone else did it, go back to *que* and the changed ending."
+    }
+  ],
+  "personal": "Tell me one thing you're sorry about that you did, and one thing you're sorry about that happened to someone you know. Use *Siento haber...* and *Siento que...*."
+}

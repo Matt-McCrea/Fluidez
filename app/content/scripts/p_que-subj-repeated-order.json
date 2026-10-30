@@ -1,0 +1,165 @@
+{
+  "node": "p:que-subj-repeated-order",
+  "hook": {
+    "line": "You've asked twice and nothing happens. Spanish has a sharp third try: the order again, with *que* in front.",
+    "es": "¡Que te calles de una vez!",
+    "en": "I said be quiet, once and for all!"
+  },
+  "examples": [
+    {
+      "es": "¡Que te calles de una vez!",
+      "en": "I said be quiet, once and for all! (to a friend)"
+    },
+    {
+      "es": "¡Que no lo toques!",
+      "en": "I said don't touch it! (to a friend)"
+    },
+    {
+      "es": "¡Que vengas!",
+      "en": "I said come here! (to a friend)"
+    },
+    {
+      "es": "¡Que bajes ya!",
+      "en": "I said come down now! (to a friend)"
+    },
+    {
+      "es": "¡Que me dejes en paz!",
+      "en": "I said leave me alone! (to a friend)"
+    },
+    {
+      "es": "¡Que apagues la música!",
+      "en": "I said turn the music off! (to a friend)"
+    }
+  ],
+  "rule": "First time, you give a normal order: *Baja.* If it's ignored, you say it again with *que* and the changed ending: *¡Que bajes!* It means \"I said...\".\n\nThe frame is *¡Que* + changed ending + *!*. For no: *¡Que no lo toques!* Add *ya* or *de una vez* to sound angrier.\n\nIt's sharp. Use it with a sibling or a kid, not with your boss.",
+  "smallPrint": "Teachers call this a repeated command: *que* plus the subjunctive for an order already given.",
+  "readAndPick": [
+    {
+      "es": "¡Que vengas!",
+      "options": [
+        "Come here!",
+        "I said come here!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Baja ya!",
+      "options": [
+        "Come down now!",
+        "I said come down now!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Que no lo toques!",
+      "options": [
+        "I said don't touch it!",
+        "Don't touch it!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡No lo toques!",
+      "options": [
+        "I said don't touch it!",
+        "Don't touch it!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Que te calles de una vez!",
+      "options": [
+        "I said be quiet, once and for all!",
+        "Be quiet, once and for all!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Que me dejes en paz!",
+      "options": [
+        "Leave me alone!",
+        "I said leave me alone!",
+        "He said leave me alone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Que apagues la música!",
+      "options": [
+        "I said I'll turn the music off!",
+        "I said turn the music off!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Que no te vayas!",
+      "options": [
+        "I said don't go!",
+        "I said I'm not going!"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "You've asked twice. Choose *Ven* or *Que vengas*, then type: ¡___ aquí ahora mismo! (I said come here right now! to a friend)",
+      "answer": "¡Que vengas aquí ahora mismo!",
+      "accept": [],
+      "why": "The repeated order starts with *que*."
+    },
+    {
+      "prompt": "Type it in Spanish: I said be quiet, once and for all! (to a friend)",
+      "answer": "¡Que te calles de una vez!",
+      "accept": [],
+      "why": "*Te calles* is the changed ending, and *de una vez* adds the anger."
+    },
+    {
+      "prompt": "Type it in Spanish: I said don't touch it! (to a friend)",
+      "answer": "¡Que no lo toques!",
+      "accept": [],
+      "why": "*No* goes after *que*."
+    },
+    {
+      "prompt": "Type it in Spanish: I said turn the music off! (to a friend)",
+      "answer": "¡Que apagues la música!",
+      "accept": [],
+      "why": "*Apagues* is the *you* form of the changed ending."
+    },
+    {
+      "prompt": "Type it in Spanish: I said leave me alone! (to a friend)",
+      "answer": "¡Que me dejes en paz!",
+      "accept": [],
+      "why": "*Me* sits before the verb, after *que*."
+    },
+    {
+      "prompt": "Say it again, harder: *¡Baja ya!* becomes: I said come down now! (to a friend)",
+      "answer": "¡Que bajes ya!",
+      "accept": [],
+      "why": "Same order, but now with *que* and the changed ending."
+    },
+    {
+      "prompt": "Make it negative: *¡Que te vayas!* becomes: I said don't go! (to a friend)",
+      "answer": "¡Que no te vayas!",
+      "accept": [],
+      "why": "*No* goes right after *que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Que cállate!",
+      "right": "¡Que te calles!",
+      "why": "Almost. After *que*, drop the command form and use the changed ending: *te calles*."
+    },
+    {
+      "wrong": "¡Que vienes!",
+      "right": "¡Que vengas!",
+      "why": "Almost. *Vienes* is a plain fact; *vengas* is the order."
+    },
+    {
+      "wrong": "¡Que cierres la puerta, por favor!",
+      "right": "Cierra la puerta, por favor.",
+      "why": "Almost. *Que* is for the second try. The first time, give a plain polite order."
+    }
+  ],
+  "personal": "Think of something you'd say twice to a kid, a sibling or a pet. Say it the third time with *¡Que...!*."
+}

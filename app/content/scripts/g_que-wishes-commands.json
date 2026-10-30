@@ -1,0 +1,175 @@
+{
+  "node": "g:que-wishes-commands",
+  "hook": {
+    "line": "In a hard conversation, the person you're talking to is often not the one who should act. Spanish has a short way to send the order through you to someone else.",
+    "es": "Que lo haga él.",
+    "en": "Let him do it."
+  },
+  "examples": [
+    {
+      "es": "Está aquí el abogado.\nQue entre.",
+      "en": "The lawyer is here.\nShow him in."
+    },
+    {
+      "es": "Que lo haga él.",
+      "en": "Let him do it."
+    },
+    {
+      "es": "Que no vuelva a pasar.",
+      "en": "Make sure it doesn't happen again."
+    },
+    {
+      "es": "Que lo pague Altamira.",
+      "en": "Let Altamira pay for it."
+    },
+    {
+      "es": "Que no entre nadie.",
+      "en": "Don't let anyone in."
+    },
+    {
+      "es": "Que Vale lo haga hoy.",
+      "en": "Have Vale do it today."
+    }
+  ],
+  "rule": "Put *que* in front of a verb with its changed ending, and you tell the world what you want a third person to do. The \"I want\" is left out: *(Quiero) que entre.*\n\n*Que entre.* Let him in.\n*Que lo haga él.* Let him do it.\n\nFor *no*, it goes after *que*: *Que no entre nadie.*\n\nWho acts can come after the verb (*que lo pague Altamira*) or first (*que Vale lo haga*).\n\nEnglish picks *let*, *have*, *make sure*. Spanish uses the same little frame for all three.\n\nTo the person in front of you, nothing changes: *Entra*, *no entres*.",
+  "smallPrint": "Teachers call this the subjunctive used as an indirect command, or *que* plus a third-person subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Que lo haga él.",
+      "options": [
+        "Let me do it.",
+        "Let him do it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Que lo hagan ellos.",
+      "options": [
+        "Let them do it.",
+        "Let him do it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Que Vale lo haga hoy.",
+      "options": [
+        "Vale did it today.",
+        "Vale is doing it today.",
+        "Have Vale do it today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Que no entre nadie.",
+      "options": [
+        "Don't let anyone in.",
+        "Let everyone in."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Que no vuelva a pasar.",
+      "options": [
+        "It never happened.",
+        "I hope it happens again.",
+        "Make sure it doesn't happen again."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Que pasen.",
+      "options": [
+        "Let him come in.",
+        "Let them come in."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Que lo pague Altamira.",
+      "options": [
+        "Altamira is paying for it.",
+        "Let Altamira pay for it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Que espere un momento.",
+      "options": [
+        "Let him wait a moment.",
+        "Let them wait a moment."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "The lawyer is here. Choose *entre* or *entras*, then type it: Que ___. (Show him in.)",
+      "answer": "Que entre.",
+      "accept": [],
+      "why": "The ending *-e* is for *he* or *she*, so the order goes to the third person."
+    },
+    {
+      "prompt": "Type it in Spanish: Let him do it.",
+      "answer": "Que lo haga él.",
+      "accept": [
+        "Que lo haga el."
+      ],
+      "why": "*Que* plus *haga* is the whole frame; *él* says who."
+    },
+    {
+      "prompt": "Type it in Spanish: Let Altamira pay for it.",
+      "answer": "Que lo pague Altamira.",
+      "accept": [],
+      "why": "Who acts can come after the verb."
+    },
+    {
+      "prompt": "Make it negative: *Que entre.* becomes: Don't let anyone in.",
+      "answer": "Que no entre nadie.",
+      "accept": [],
+      "why": "*No* goes after *que*, never before it."
+    },
+    {
+      "prompt": "Type it in Spanish: Make sure it doesn't happen again.",
+      "answer": "Que no vuelva a pasar.",
+      "accept": [],
+      "why": "*Volver a* plus an infinitive means *again*, and *vuelva* takes the changed ending."
+    },
+    {
+      "prompt": "Make it plural: *Que pase.* becomes: Let them come in.",
+      "answer": "Que pasen.",
+      "accept": [],
+      "why": "More than one person, so *-en*."
+    },
+    {
+      "prompt": "Type it in Spanish: Have Vale do it today.",
+      "answer": "Que Vale lo haga hoy.",
+      "accept": [
+        "Que lo haga Vale hoy."
+      ],
+      "why": "The one who must act is Vale, in the third person."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Que él hace.",
+      "right": "Que lo haga él.",
+      "why": "Almost. After *que*, the verb takes the changed ending, not the plain present."
+    },
+    {
+      "wrong": "No que entre nadie.",
+      "right": "Que no entre nadie.",
+      "why": "Almost. *Que* starts the sentence and *no* sits right after it."
+    },
+    {
+      "wrong": "Entre.",
+      "right": "Que entre.",
+      "why": "Almost. *Entre* alone speaks to someone you call *usted*. *Que entre* is about a third person."
+    },
+    {
+      "wrong": "Que no vuelve a pasar.",
+      "right": "Que no vuelva a pasar.",
+      "why": "Almost. *Vuelve* is a plain fact; *vuelva* is what you want."
+    }
+  ],
+  "personal": "Think of a job at home or at work you'd like someone else to do. Say it with *Que...*."
+}

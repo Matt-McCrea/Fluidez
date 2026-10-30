@@ -1,0 +1,168 @@
+{
+  "node": "p:a-gritos",
+  "hook": {
+    "line": "The neighbours are loud again, and Tomás has to say something. Spanish has short ways to say how loud, and how to ask them to stop.",
+    "es": "¿Le puedes bajar a la música?",
+    "en": "Could you turn the music down?"
+  },
+  "examples": [
+    {
+      "es": "¿Le puedes bajar a la música?",
+      "en": "Could you turn the music down? (to a friend)"
+    },
+    {
+      "es": "Los vecinos hablan a gritos todo el día.",
+      "en": "The neighbours talk at the top of their voices all day."
+    },
+    {
+      "es": "Pusieron la música a todo volumen.",
+      "en": "They put the music on at full blast."
+    },
+    {
+      "es": "Simón pegó un grito.",
+      "en": "Simón let out a scream."
+    },
+    {
+      "es": "Súbele al volumen.",
+      "en": "Turn the volume up. (to a friend)"
+    },
+    {
+      "es": "Discutieron a gritos.",
+      "en": "They argued at the top of their voices."
+    }
+  ],
+  "rule": "*A gritos* is how you say \"shouting, at the top of your voice\": *hablar a gritos*.\n*A todo volumen* is full blast, for music and TVs.\n*Pegar un grito* is to let out a shout or scream. Spanish \"hits\" a shout.\n\nTo ask for less noise in Latin America, *bajarle a* is everyday: *¿Le puedes bajar a la música?* Louder is *subirle a*.\n\nNo *en* before *gritos*, only *a*.",
+  "smallPrint": "Teachers call *a gritos* and *a todo volumen* adverbial phrases of manner.",
+  "readAndPick": [
+    {
+      "es": "Los vecinos hablan a gritos todo el día.",
+      "options": [
+        "The neighbours talk quietly all day.",
+        "The neighbours talk at the top of their voices all day."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pusieron la música a todo volumen.",
+      "options": [
+        "They put the music on at full blast.",
+        "They turned the music off."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Le puedes bajar a la música?",
+      "options": [
+        "Could you turn the music up?",
+        "Could you turn the music down?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Súbele al volumen.",
+      "options": [
+        "Turn the volume up.",
+        "Turn the volume down."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Simón pegó un grito.",
+      "options": [
+        "Simón is going to scream.",
+        "Simón let out a scream."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Discutieron a gritos.",
+      "options": [
+        "They argued quietly.",
+        "They argued at the top of their voices."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando habla a gritos porque no oye bien.",
+      "options": [
+        "Hernando shouts because he can't hear well.",
+        "Hernando whispers because he can't hear well."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Bájale al volumen, por favor.",
+      "options": [
+        "Turn the volume up, please.",
+        "Turn the volume down, please."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *a gritos* or *a todo volumen*, then type the whole sentence: Los vecinos hablan ___ todo el día. (talk at the top of their voices)",
+      "answer": "Los vecinos hablan a gritos todo el día.",
+      "accept": [],
+      "why": "*A gritos* is for voices."
+    },
+    {
+      "prompt": "Choose *a gritos* or *a todo volumen*, then type the whole sentence: Pusieron la música ___. (at full blast)",
+      "answer": "Pusieron la música a todo volumen.",
+      "accept": [],
+      "why": "*A todo volumen* is for music and TVs."
+    },
+    {
+      "prompt": "Type it in Spanish: Could you turn the music down? (to a friend)",
+      "answer": "¿Le puedes bajar a la música?",
+      "accept": [
+        "¿Le puedes bajar a la música, por favor?"
+      ],
+      "why": "*Bajarle a* is the everyday way to turn something down."
+    },
+    {
+      "prompt": "Type it in Spanish: Turn the volume up. (to a friend)",
+      "answer": "Súbele al volumen.",
+      "accept": [],
+      "why": "*Subirle a* is the opposite of *bajarle a*."
+    },
+    {
+      "prompt": "Type it in Spanish: Simón let out a scream.",
+      "answer": "Simón pegó un grito.",
+      "accept": [],
+      "why": "Spanish *hits* a shout: *pegó*."
+    },
+    {
+      "prompt": "Type it in Spanish: They argued at the top of their voices.",
+      "answer": "Discutieron a gritos.",
+      "accept": [
+        "Ellos discutieron a gritos."
+      ],
+      "why": "*A gritos* describes how they argued."
+    },
+    {
+      "prompt": "Make it polite, to someone you call *usted*: *¿Le puedes bajar a la música?* becomes: Could you turn the music down, please?",
+      "answer": "¿Le puede bajar a la música, por favor?",
+      "accept": [],
+      "why": "*Usted* takes *puede*, and *por favor* softens it."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Hablan en gritos.",
+      "right": "Hablan a gritos.",
+      "why": "Almost. This phrase uses *a*, not *en*."
+    },
+    {
+      "wrong": "¿Puedes bajar de la música?",
+      "right": "¿Le puedes bajar a la música?",
+      "why": "Almost. To turn something down you *bajarle a* it."
+    },
+    {
+      "wrong": "Simón puso un grito.",
+      "right": "Simón pegó un grito.",
+      "why": "Almost. Spanish doesn't put a scream, it *hits* it."
+    }
+  ],
+  "personal": "Tell me about a noisy place or person you know. Use *a gritos* or *a todo volumen*."
+}
