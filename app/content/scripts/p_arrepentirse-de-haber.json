@@ -1,0 +1,176 @@
+{
+  "node": "p:arrepentirse-de-haber",
+  "hook": {
+    "line": "Tomás keeps replaying the last conversation he had with Rosa. There are three ways to say \"I wish I hadn't\" in Spanish, and each has a different weight.",
+    "es": "Me arrepiento de no haberle dicho nada.",
+    "en": "I regret not having said anything to him."
+  },
+  "examples": [
+    {
+      "es": "Me arrepiento de no haberle dicho nada.",
+      "en": "I regret not having said anything to him."
+    },
+    {
+      "es": "No debí haber ido.",
+      "en": "I shouldn't have gone."
+    },
+    {
+      "es": "Tendría que haberme quedado.",
+      "en": "I should have stayed."
+    },
+    {
+      "es": "No debí gritarle.",
+      "en": "I shouldn't have shouted at her."
+    },
+    {
+      "es": "Me arrepiento de haber vendido el carro.",
+      "en": "I regret having sold the car."
+    },
+    {
+      "es": "¿No te arrepientes de haberte ido tan rápido?",
+      "en": "Don't you regret having left so quickly? (to a friend)"
+    }
+  ],
+  "rule": "Three frames cover regret:\n\n1. *Me arrepiento de (no) haber* + participle: *Me arrepiento de haber vendido el carro.* A strong, heartfelt regret.\n2. *No debí* + infinitive, or *No debí haber* + participle: *No debí gritarle.* \"I shouldn't have.\"\n3. *Tendría que haber* + participle: *Tendría que haberme quedado.* \"I should have.\"\n\nThe pronoun attaches to *haber*, not to the participle: *haberle dicho*, *haberme quedado*.\n\nAfter *de*, Spanish uses the infinitive. English says \"I regret saying\", never \"I regret that I said\".",
+  "smallPrint": "Teachers call *haber* + participle the perfect infinitive, and *tendría que haber* the conditional perfect of obligation.",
+  "readAndPick": [
+    {
+      "es": "No debí gritarle.",
+      "options": [
+        "I shouldn't have shouted at her.",
+        "I shouldn't shout at her.",
+        "She shouldn't have shouted at me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tendría que haberme quedado.",
+      "options": [
+        "I should stay.",
+        "I should have stayed.",
+        "I would have stayed anyway."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me arrepiento de no haberle dicho nada.",
+      "options": [
+        "I regret telling him nothing about it.",
+        "I regret that he didn't tell me anything.",
+        "I regret not having said anything to him."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No debí haber ido.",
+      "options": [
+        "I shouldn't have gone.",
+        "I shouldn't go.",
+        "I won't go."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me arrepiento de haber vendido el carro.",
+      "options": [
+        "I'm going to sell the car and regret it.",
+        "I regret having sold the car.",
+        "I regret not having sold the car."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me arrepiento de no haber vendido el carro.",
+      "options": [
+        "I regret having sold the car.",
+        "I regret selling the car.",
+        "I regret not having sold the car."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tendría que haberle dicho la verdad.",
+      "options": [
+        "I should have told him the truth.",
+        "I should tell him the truth.",
+        "He should have told me the truth."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te arrepientes de haberte ido tan rápido?",
+      "options": [
+        "Do I regret leaving so quickly?",
+        "Do you regret having left so quickly?",
+        "Does she regret having left so quickly?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *haberle* or *le haber*: Me arrepiento de no ___ dicho nada. Type the whole sentence.",
+      "answer": "Me arrepiento de no haberle dicho nada.",
+      "accept": [],
+      "why": "The pronoun attaches to *haber*: *haberle*."
+    },
+    {
+      "prompt": "Choose *quedarme* or *haberme quedado*: Tendría que ___. Type the whole sentence.",
+      "answer": "Tendría que haberme quedado.",
+      "accept": [],
+      "why": "\"Should have\" looks back, so *haber* + participle."
+    },
+    {
+      "prompt": "I shouldn't have shouted at her.",
+      "answer": "No debí gritarle.",
+      "accept": [],
+      "why": "*No debí* + infinitive says \"I shouldn't have\"."
+    },
+    {
+      "prompt": "I shouldn't have gone.",
+      "answer": "No debí haber ido.",
+      "accept": [
+        "No debí ir."
+      ],
+      "why": "*No debí haber ido* is the full form; the short one drops *haber*."
+    },
+    {
+      "prompt": "I regret having sold the car.",
+      "answer": "Me arrepiento de haber vendido el carro.",
+      "accept": [],
+      "why": "*Me arrepiento de* + *haber* + participle."
+    },
+    {
+      "prompt": "Make it a regret of not doing: Me arrepiento de haberle dicho eso.",
+      "answer": "Me arrepiento de no haberle dicho eso.",
+      "accept": [],
+      "why": "Put *no* before *haberle*."
+    },
+    {
+      "prompt": "I should have told her the truth.",
+      "answer": "Tendría que haberle dicho la verdad.",
+      "accept": [
+        "Debí haberle dicho la verdad."
+      ],
+      "why": "*Tendría que haber* + participle, with *le* on *haber*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me arrepiento de no le haber dicho nada.",
+      "right": "Me arrepiento de no haberle dicho nada.",
+      "why": "Almost. The pronoun joins the end of *haber*."
+    },
+    {
+      "wrong": "Me arrepiento que no dije nada.",
+      "right": "Me arrepiento de no haber dicho nada.",
+      "why": "Almost. After *arrepentirse* use *de* + infinitive, not *que* + a past verb."
+    },
+    {
+      "wrong": "Debería no haber ido.",
+      "right": "No debí haber ido.",
+      "why": "Almost. For \"I shouldn't have\", put *no* before *debí*."
+    }
+  ],
+  "personal": "Say one thing you regret doing, and one you regret not doing, using *Me arrepiento de…*."
+}

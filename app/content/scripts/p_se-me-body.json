@@ -1,0 +1,174 @@
+{
+  "node": "p:se-me-body",
+  "hook": {
+    "line": "When something hits you hard, Spanish does not say \"I broke my heart\". It says the heart broke by itself. Tomás learns the line when Vale watches Don Hernando visit the empty corner where Rosa used to sit.",
+    "es": "Se me parte el corazón al verlo tan solo.",
+    "en": "It breaks my heart to see him so alone."
+  },
+  "examples": [
+    {
+      "es": "Se me parte el corazón al verlo tan solo.",
+      "en": "It breaks my heart to see him so alone."
+    },
+    {
+      "es": "Se me hizo un nudo en la garganta.",
+      "en": "I got a lump in my throat."
+    },
+    {
+      "es": "Se me pusieron los pelos de punta.",
+      "en": "My hair stood on end."
+    },
+    {
+      "es": "Se me puso la piel de gallina cuando cantaron esa canción.",
+      "en": "I got goosebumps when they sang that song."
+    },
+    {
+      "es": "Se le quebró la voz cuando habló de Rosa.",
+      "en": "His voice cracked when he spoke about Rosa."
+    },
+    {
+      "es": "¿Se te encogió el estómago al ver la cuenta?",
+      "en": "Did your stomach clench when you saw the bill? (to a friend)"
+    }
+  ],
+  "rule": "When a feeling hits your body, Spanish makes the body part the subject and the person a small extra word: *se me*. It happens to you; you do not do it.\n\n*Se me parte el corazón.* (The heart breaks on me.)\n\nThree things to notice:\n1. The body part takes *el*, *la*, *los* or *las*, never *mi*. The *me* already says whose it is.\n2. The verb agrees with the body part: *se me hizo un nudo*, *se me pusieron los pelos*.\n3. Swap *me* for the person: *te*, *le*, *nos*, *les*.\n\nEnglish says \"my heart broke\". Spanish says \"the heart broke on me\".",
+  "smallPrint": "Teachers call this the accidental *se*, combined with a dative of possession: the *me* marks the owner of the body part.",
+  "readAndPick": [
+    {
+      "es": "Se me hizo un nudo en la garganta.",
+      "options": [
+        "I got a lump in my throat.",
+        "You got a lump in your throat.",
+        "He got a lump in his throat."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se le quebró la voz.",
+      "options": [
+        "My voice cracked.",
+        "Your voice cracked.",
+        "Her voice cracked."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se nos puso la piel de gallina.",
+      "options": [
+        "Their skin got goosebumps.",
+        "We got goosebumps.",
+        "I got goosebumps."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Se te pusieron los pelos de punta?",
+      "options": [
+        "Did your hair stand on end?",
+        "Did my hair stand on end?",
+        "Did their hair stand on end?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se me partió el corazón.",
+      "options": [
+        "My heart is breaking.",
+        "My heart broke.",
+        "My heart will break."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se me parte el corazón al verlo tan solo.",
+      "options": [
+        "My heart broke when I saw him alone.",
+        "My heart is going to break if I see him alone.",
+        "It breaks my heart to see him so alone."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se les puso la piel de gallina.",
+      "options": [
+        "Their skin got goosebumps.",
+        "Her skin got goosebumps.",
+        "Your skin got goosebumps."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se me encogió el estómago.",
+      "options": [
+        "I will have a stomach ache.",
+        "My stomach clenched.",
+        "My stomach clenches every day."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *puso* or *pusieron*: Se me ___ los pelos de punta. Type the whole sentence.",
+      "answer": "Se me pusieron los pelos de punta.",
+      "accept": [],
+      "why": "*Los pelos* is plural, so the verb is *pusieron*."
+    },
+    {
+      "prompt": "Choose *hizo* or *hicieron*: Se me ___ un nudo en la garganta. Type the whole sentence.",
+      "answer": "Se me hizo un nudo en la garganta.",
+      "accept": [],
+      "why": "*Un nudo* is one thing, so *hizo*."
+    },
+    {
+      "prompt": "I got goosebumps when they sang that song.",
+      "answer": "Se me puso la piel de gallina cuando cantaron esa canción.",
+      "accept": [],
+      "why": "*La piel* is one thing, so *puso*, and no *mi*."
+    },
+    {
+      "prompt": "It breaks my heart to see him so alone.",
+      "answer": "Se me parte el corazón al verlo tan solo.",
+      "accept": [],
+      "why": "*Corazón* takes *el*, and *me* says whose heart it is."
+    },
+    {
+      "prompt": "Make it about you (to a friend): Se me hizo un nudo en la garganta.",
+      "answer": "Se te hizo un nudo en la garganta.",
+      "accept": [
+        "¿Se te hizo un nudo en la garganta?"
+      ],
+      "why": "*Te* replaces *me* for *tú*."
+    },
+    {
+      "prompt": "Make it about her: Se me quebró la voz.",
+      "answer": "Se le quebró la voz.",
+      "accept": [],
+      "why": "*Le* replaces *me* for someone else."
+    },
+    {
+      "prompt": "Make it about us: Se me pusieron los pelos de punta.",
+      "answer": "Se nos pusieron los pelos de punta.",
+      "accept": [],
+      "why": "*Nos* replaces *me* for we."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Mi corazón se partió.",
+      "right": "Se me partió el corazón.",
+      "why": "Almost. Spanish puts the person in *me* and gives the body part *el*, not *mi*."
+    },
+    {
+      "wrong": "Se me pusieron mis pelos de punta.",
+      "right": "Se me pusieron los pelos de punta.",
+      "why": "Almost. The *me* already says whose hair it is, so use *los*."
+    },
+    {
+      "wrong": "Se me puso los pelos de punta.",
+      "right": "Se me pusieron los pelos de punta.",
+      "why": "Almost. The verb agrees with the body part, and *los pelos* is plural."
+    }
+  ],
+  "personal": "Think of a moment that moved you: a song, a goodbye, some news. Say what your body did, starting with *Se me…*."
+}

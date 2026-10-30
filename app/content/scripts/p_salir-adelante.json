@@ -1,0 +1,180 @@
+{
+  "node": "p:salir-adelante",
+  "hook": {
+    "line": "Everyone in Bogotá has a story about a hard year, and the way they tell it is almost always the same: we got through it. Tomás hears it from Don Hernando over a tinto.",
+    "es": "Con mucho esfuerzo, la familia salió adelante.",
+    "en": "With a lot of effort, the family pulled through."
+  },
+  "examples": [
+    {
+      "es": "Con mucho esfuerzo, la familia salió adelante.",
+      "en": "With a lot of effort, the family pulled through."
+    },
+    {
+      "es": "Salimos adelante a pesar de la crisis.",
+      "en": "We pulled through despite the crisis."
+    },
+    {
+      "es": "Mi abuela crió sola a cinco hijos y salió adelante.",
+      "en": "My grandmother raised five children alone and made it through."
+    },
+    {
+      "es": "¿Cómo saliste adelante después del divorcio?",
+      "en": "How did you pull through after the divorce? (to a friend)"
+    },
+    {
+      "es": "Sé que vas a salir adelante.",
+      "en": "I know you're going to pull through. (to a friend)"
+    },
+    {
+      "es": "Muchos negocios del barrio no salieron adelante ese año.",
+      "en": "Many of the neighbourhood's businesses didn't make it through that year."
+    }
+  ],
+  "rule": "*Salir adelante* means to come through a hard stretch: money trouble, illness, a loss. It is not about walking ahead. It is about not going under.\n\nThe verb *salir* changes as usual (*salí*, *saliste*, *salió*, *salimos*, *salieron*, *voy a salir*). The word *adelante* never changes.\n\nSay what helped with *con* (*con mucho esfuerzo*), or what you survived with *a pesar de* (*a pesar de la crisis*).\n\nEnglish says \"pull through\" or \"make it\". Spanish uses this one phrase for all of it, and Colombians use it constantly.",
+  "smallPrint": "Teachers call *salir adelante* a fixed verb phrase: the words stay together and the meaning is not the sum of the parts.",
+  "readAndPick": [
+    {
+      "es": "Salió adelante con mucho esfuerzo.",
+      "options": [
+        "She pulled through with a lot of effort.",
+        "She walked out ahead of everyone.",
+        "She left the house in a hurry."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Salimos adelante a pesar de la crisis.",
+      "options": [
+        "They pulled through despite the crisis.",
+        "We pulled through despite the crisis.",
+        "We caused the crisis."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cómo saliste adelante después de la operación?",
+      "options": [
+        "How did he get ahead of the operation?",
+        "How did I pull through after the operation?",
+        "How did you pull through after the operation?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Sé que vas a salir adelante.",
+      "options": [
+        "I know you're going to pull through.",
+        "I know you're going to leave early.",
+        "I know I'm going to pull through."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mis padres salieron adelante sin ayuda de nadie.",
+      "options": [
+        "My parents helped everyone get ahead.",
+        "My parents made it through without anyone's help.",
+        "My parents left without telling anyone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El café no salió adelante ese invierno.",
+      "options": [
+        "The café opened early that winter.",
+        "The café was left out of that winter.",
+        "The café didn't make it through that winter."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Voy a salir adelante, aunque me cueste.",
+      "options": [
+        "I'm going to make it through, even if it costs me.",
+        "I'm going to leave, even if it costs me.",
+        "You are going to make it, even if it costs you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Salieron adelante con la ayuda de los vecinos.",
+      "options": [
+        "I pulled through with the neighbours' help.",
+        "They pulled through with the neighbours' help.",
+        "The neighbours left with their help."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *salió* or *salimos*: Mi abuela ___ adelante con mucho esfuerzo. Type the whole sentence.",
+      "answer": "Mi abuela salió adelante con mucho esfuerzo.",
+      "accept": [],
+      "why": "*Mi abuela* is one person, so *salió*."
+    },
+    {
+      "prompt": "Choose *salimos* or *salieron*: Nosotros ___ adelante a pesar de la crisis. Type the whole sentence.",
+      "answer": "Nosotros salimos adelante a pesar de la crisis.",
+      "accept": [
+        "Salimos adelante a pesar de la crisis."
+      ],
+      "why": "*Nosotros* is we, so *salimos*."
+    },
+    {
+      "prompt": "We pulled through despite the crisis.",
+      "answer": "Salimos adelante a pesar de la crisis.",
+      "accept": [
+        "Nosotros salimos adelante a pesar de la crisis."
+      ],
+      "why": "*A pesar de* + the thing you survived."
+    },
+    {
+      "prompt": "How did you pull through? (to a friend, after the divorce)",
+      "answer": "¿Cómo saliste adelante después del divorcio?",
+      "accept": [
+        "¿Cómo saliste adelante después del divorcio?"
+      ],
+      "why": "*Saliste* is the past for *tú*, and *adelante* stays the same."
+    },
+    {
+      "prompt": "I know you're going to pull through. (to a friend)",
+      "answer": "Sé que vas a salir adelante.",
+      "accept": [],
+      "why": "*Vas a* + *salir adelante* looks ahead."
+    },
+    {
+      "prompt": "Make it about them: Salió adelante con mucho esfuerzo.",
+      "answer": "Salieron adelante con mucho esfuerzo.",
+      "accept": [],
+      "why": "*Ellos* needs *salieron*, and *adelante* does not change."
+    },
+    {
+      "prompt": "The family pulled through thanks to the neighbours.",
+      "answer": "La familia salió adelante gracias a los vecinos.",
+      "accept": [
+        "Salió adelante la familia gracias a los vecinos."
+      ],
+      "why": "One family, so *salió*. *Gracias a* says what helped."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Vamos a salir en adelante.",
+      "right": "Vamos a salir adelante.",
+      "why": "Almost. *En adelante* means \"from now on\"; for pulling through, use *adelante* alone."
+    },
+    {
+      "wrong": "Salieron adelantes.",
+      "right": "Salieron adelante.",
+      "why": "Almost. *Adelante* never takes an ending, even with several people."
+    },
+    {
+      "wrong": "Salimos adelante la crisis.",
+      "right": "Salimos adelante a pesar de la crisis.",
+      "why": "Almost. To say what you survived, put *a pesar de* before it."
+    }
+  ],
+  "personal": "Think of a hard stretch that you, or someone you know, got through. Say it in one sentence with *salir adelante*."
+}

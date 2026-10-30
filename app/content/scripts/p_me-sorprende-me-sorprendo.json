@@ -1,0 +1,172 @@
+{
+  "node": "p:me-sorprende-me-sorprendo",
+  "hook": {
+    "line": "Tomás wants to tell Mariana how he feels about the café, and he notices two ways of saying it: the thing surprises him, or he is the one who gets surprised. Spanish keeps them apart.",
+    "es": "Me sorprende lo rápido que aprende.",
+    "en": "It surprises me how fast she learns."
+  },
+  "examples": [
+    {
+      "es": "Me sorprende lo rápido que aprende.",
+      "en": "It surprises me how fast she learns."
+    },
+    {
+      "es": "Me sorprendí de que la estación estuviera vacía.",
+      "en": "I was surprised that the station was empty."
+    },
+    {
+      "es": "Me entristece ver el parque tan abandonado.",
+      "en": "It saddens me to see the park so neglected."
+    },
+    {
+      "es": "Me entristecí al recordarlo.",
+      "en": "I felt sad when I remembered it."
+    },
+    {
+      "es": "Me avergüenza lo que dijo mi hermano.",
+      "en": "What my brother said embarrasses me."
+    },
+    {
+      "es": "Me avergoncé de lo que dije.",
+      "en": "I was ashamed of what I said."
+    }
+  ],
+  "rule": "There are two ways to say how something affects you.\n\n1. The thing is the subject: *me sorprende*, *me entristece*, *me avergüenza*. It describes what causes the feeling. The verb agrees with the thing: *me sorprende su paciencia*, *me sorprenden sus preguntas*. After it come a noun, *lo* + adjective, an infinitive, or *que* + subjunctive.\n\n2. You are the subject: *me sorprendo*, *me entristezco*, *me avergüenzo*, usually with *de* or *al*. It describes your own reaction, often at one moment: *me sorprendí de que…*, *me entristecí al…*.\n\nEnglish uses \"it surprises me\" and \"I was surprised\". Spanish keeps the two apart.",
+  "smallPrint": "Teachers call the first group verbs of affect, like *gustar*, and the second the reflexive (pronominal) forms.",
+  "readAndPick": [
+    {
+      "es": "Me sorprende lo rápido que aprende.",
+      "options": [
+        "It surprises me how fast she learns.",
+        "I surprise myself by how fast she learns.",
+        "She is surprised at how fast I learn."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me sorprendí de que la estación estuviera vacía.",
+      "options": [
+        "It surprises me that the station is empty.",
+        "I was surprised that the station was empty.",
+        "The station surprised everyone by being empty."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me entristece ver el parque tan abandonado.",
+      "options": [
+        "I got sad when I saw the park.",
+        "I cheered up the abandoned park.",
+        "It saddens me to see the park so neglected."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me entristecí al recordarlo.",
+      "options": [
+        "I felt sad when I remembered it.",
+        "It saddens me to remember it.",
+        "You felt sad when you remembered it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me avergüenzo de lo que dije.",
+      "options": [
+        "What you said embarrasses me.",
+        "I'm ashamed of what I said.",
+        "He's ashamed of what I said."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me avergüenza lo que dijo mi hermano.",
+      "options": [
+        "I'm ashamed of what I said to my brother.",
+        "My brother is ashamed of what I said.",
+        "What my brother said embarrasses me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me sorprenden sus preguntas.",
+      "options": [
+        "Her questions surprise me.",
+        "Her question surprises me.",
+        "I'm surprised by my questions."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me sorprendo cuando oigo esa canción.",
+      "options": [
+        "That song surprises me.",
+        "I get surprised when I hear that song.",
+        "You get surprised when you hear that song."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *sorprende* or *sorprendo*: Me ___ lo rápido que aprende. Type the whole sentence.",
+      "answer": "Me sorprende lo rápido que aprende.",
+      "accept": [],
+      "why": "The speed is the cause, so the thing is the subject: *sorprende*."
+    },
+    {
+      "prompt": "Choose *sorprende* or *sorprenden*: Me ___ sus preguntas. Type the whole sentence.",
+      "answer": "Me sorprenden sus preguntas.",
+      "accept": [],
+      "why": "*Sus preguntas* is plural, so the verb is *sorprenden*."
+    },
+    {
+      "prompt": "It saddens me to see the park so neglected.",
+      "answer": "Me entristece ver el parque tan abandonado.",
+      "accept": [],
+      "why": "The thing causes the feeling, so *me entristece* + an infinitive."
+    },
+    {
+      "prompt": "I felt sad when I remembered it.",
+      "answer": "Me entristecí al recordarlo.",
+      "accept": [],
+      "why": "You are the one who reacted, so the reflexive form + *al*."
+    },
+    {
+      "prompt": "I was surprised that the station was empty.",
+      "answer": "Me sorprendí de que la estación estuviera vacía.",
+      "accept": [],
+      "why": "Your own reaction, so *me sorprendí de que* + subjunctive."
+    },
+    {
+      "prompt": "What my brother said embarrasses me.",
+      "answer": "Me avergüenza lo que dijo mi hermano.",
+      "accept": [],
+      "why": "The thing causes it: *me avergüenza* + what was said."
+    },
+    {
+      "prompt": "Make it your own reaction: Me avergüenza lo que dije.",
+      "answer": "Me avergüenzo de lo que dije.",
+      "accept": [],
+      "why": "When you are the subject, the verb takes *-o* and is followed by *de*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo sorprendo lo rápido que aprende.",
+      "right": "Me sorprende lo rápido que aprende.",
+      "why": "Almost. Without *me*, you are the one doing the surprising; for \"it surprises me\" the *me* has to come first."
+    },
+    {
+      "wrong": "Me sorprende de que esté vacía.",
+      "right": "Me sorprende que esté vacía.",
+      "why": "Almost. With *me sorprende* there is no *de*; *me sorprendo de que* has it."
+    },
+    {
+      "wrong": "Me sorprende sus preguntas.",
+      "right": "Me sorprenden sus preguntas.",
+      "why": "Almost. The verb agrees with what causes the feeling, and *sus preguntas* is plural."
+    }
+  ],
+  "personal": "Say one thing that surprises you and one moment when you felt sad or ashamed, using both patterns."
+}

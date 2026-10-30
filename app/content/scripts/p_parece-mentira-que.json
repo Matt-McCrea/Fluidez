@@ -1,0 +1,177 @@
+{
+  "node": "p:parece-mentira-que",
+  "hook": {
+    "line": "A year has gone by since Rosa's funeral. When Tomás says what everyone is thinking, he reaches for the phrase Colombians use when time or news feels unreal.",
+    "es": "¡Parece mentira que ya haya pasado un año!",
+    "en": "I can't believe a year has gone by already!"
+  },
+  "examples": [
+    {
+      "es": "¡Parece mentira que ya haya pasado un año!",
+      "en": "I can't believe a year has gone by already!"
+    },
+    {
+      "es": "Parece mentira que todavía pase eso.",
+      "en": "It's hard to believe that still happens."
+    },
+    {
+      "es": "¡Es increíble que nadie haya dicho nada!",
+      "en": "It's incredible that nobody has said anything!"
+    },
+    {
+      "es": "Parece mentira que Rosa ya no esté aquí.",
+      "en": "It's hard to believe that Rosa isn't here anymore."
+    },
+    {
+      "es": "Parece mentira que no lo sepas a tu edad.",
+      "en": "I can't believe you don't know that at your age. (to a friend)"
+    },
+    {
+      "es": "Parece mentira que hayamos llegado tan lejos.",
+      "en": "It's hard to believe we've come this far."
+    }
+  ],
+  "rule": "*Parece mentira que…* (\"it seems a lie that…\") is how Spanish says \"I can't believe…\". It reacts to something real. It is not saying the thing is false.\n\nAfter it, the verb goes in the subjunctive, the same as after other reactions like *es increíble que*.\n\n*Parece mentira que ya haya pasado un año.* (finished: *haya pasado*)\n*Parece mentira que todavía pase eso.* (still going on: *pase*)\n\nIt can also be a reproach: *Parece mentira que no lo sepas.*\n\nDo not confuse it with plain *parece que*, which just guesses and takes the indicative: *Parece que va a llover.*",
+  "smallPrint": "Teachers call this an expression of subjective evaluation, which triggers the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Parece mentira que ya haya pasado un año.",
+      "options": [
+        "It seems that a year went by.",
+        "I can't believe a year has gone by already.",
+        "A year ago they told a lie."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Parece que ya pasó un año.",
+      "options": [
+        "It looks like a year has gone by.",
+        "I can't believe a year has gone by.",
+        "They lied about a year."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Parece mentira que todavía pase eso.",
+      "options": [
+        "It's hard to believe that still happens.",
+        "It looks like that still happens.",
+        "That used to happen."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Es increíble que nadie haya dicho nada!",
+      "options": [
+        "Nobody believes what was said.",
+        "It's incredible that nobody has said anything!",
+        "Nobody said anything incredible."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Parece mentira que Rosa ya no esté aquí.",
+      "options": [
+        "Rosa pretends she isn't here.",
+        "Rosa is not here, it seems.",
+        "It's hard to believe that Rosa isn't here anymore."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Parece mentira que no lo sepas a tu edad.",
+      "options": [
+        "I can't believe you don't know that at your age.",
+        "It seems that you don't know that at your age.",
+        "You say you don't know that."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Parece que Tomás no lo sabe.",
+      "options": [
+        "I can't believe Tomás doesn't know it.",
+        "It seems that Tomás doesn't know it.",
+        "Tomás is lying about it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Parece mentira que hayamos llegado tan lejos.",
+      "options": [
+        "It looks like we got far.",
+        "We lied to get this far.",
+        "It's hard to believe we've come this far."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *haya pasado* or *ha pasado*: Parece mentira que ya ___ un año. Type the whole sentence.",
+      "answer": "Parece mentira que ya haya pasado un año.",
+      "accept": [],
+      "why": "After *parece mentira que* comes the subjunctive: *haya pasado*."
+    },
+    {
+      "prompt": "Choose *esté* or *está*: Parece mentira que Rosa ya no ___ aquí. Type the whole sentence.",
+      "answer": "Parece mentira que Rosa ya no esté aquí.",
+      "accept": [],
+      "why": "The reaction asks for the subjunctive: *esté*."
+    },
+    {
+      "prompt": "It's hard to believe that still happens.",
+      "answer": "Parece mentira que todavía pase eso.",
+      "accept": [
+        "Parece mentira que eso todavía pase."
+      ],
+      "why": "Still going on, so the present subjunctive: *pase*."
+    },
+    {
+      "prompt": "I can't believe a year has gone by already!",
+      "answer": "¡Parece mentira que ya haya pasado un año!",
+      "accept": [
+        "Parece mentira que ya haya pasado un año.",
+        "¡Parece mentira que haya pasado ya un año!"
+      ],
+      "why": "Something finished, so *haya pasado*."
+    },
+    {
+      "prompt": "I can't believe you don't know that at your age. (to a friend)",
+      "answer": "Parece mentira que no lo sepas a tu edad.",
+      "accept": [],
+      "why": "*Sepas* is the subjunctive of *saber* for *tú*."
+    },
+    {
+      "prompt": "Start with *Parece mentira que*: nobody has said anything.",
+      "answer": "Parece mentira que nadie haya dicho nada.",
+      "accept": [],
+      "why": "A finished fact you react to, so *haya dicho*."
+    },
+    {
+      "prompt": "Make it a plain guess: Parece mentira que ya haya pasado un año.",
+      "answer": "Parece que ya pasó un año.",
+      "accept": [],
+      "why": "A guess takes *parece que* with the indicative, not the subjunctive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Parece mentira que ya pasó un año.",
+      "right": "Parece mentira que ya haya pasado un año.",
+      "why": "Almost. A reaction takes the subjunctive, and for something finished that is *haya pasado*."
+    },
+    {
+      "wrong": "Parece mentira de que sea tan tarde.",
+      "right": "Parece mentira que sea tan tarde.",
+      "why": "Almost. There is no *de* before *que* here."
+    },
+    {
+      "wrong": "Parece que mentira que sea tan tarde.",
+      "right": "Parece mentira que sea tan tarde.",
+      "why": "Almost. *Parece mentira* stays together, and *que* comes after."
+    }
+  ],
+  "personal": "Think of something that feels unreal: how fast time went, or that you are learning Spanish at this level. Say it with *Parece mentira que…*."
+}

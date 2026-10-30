@@ -1,0 +1,174 @@
+{
+  "node": "p:si-volviera-a-nacer",
+  "hook": {
+    "line": "Late at night, Don Hernando asks Tomás what he would do with a second chance. The answer starts with a Spanish that is not about today.",
+    "es": "Si volviera a nacer, estudiaría otra cosa.",
+    "en": "If I had my life over again, I'd study something else."
+  },
+  "examples": [
+    {
+      "es": "Si volviera a nacer, estudiaría otra cosa.",
+      "en": "If I had my life over again, I'd study something else."
+    },
+    {
+      "es": "Si pudiera devolver el tiempo, le diría que la quiero.",
+      "en": "If I could turn back time, I'd tell her I love her."
+    },
+    {
+      "es": "Si tuviera otra oportunidad, haría las cosas de otra manera.",
+      "en": "If I had another chance, I'd do things differently."
+    },
+    {
+      "es": "Si Rosa estuviera aquí, sabría qué hacer.",
+      "en": "If Rosa were here, she'd know what to do."
+    },
+    {
+      "es": "Si tuvieras otra oportunidad, ¿qué cambiarías?",
+      "en": "If you had another chance, what would you change? (to a friend)"
+    },
+    {
+      "es": "Si pudiéramos devolver el tiempo, no venderíamos la casa.",
+      "en": "If we could turn back time, we wouldn't sell the house."
+    }
+  ],
+  "rule": "To imagine a different life or a second chance, start with *si* + the imperfect subjunctive, then use the conditional.\n\n*Si volviera a nacer, estudiaría otra cosa.*\n\nThe three openers differ only in scope:\n*Si volviera a nacer…* (your whole life)\n*Si pudiera devolver el tiempo…* (one moment)\n*Si tuviera otra oportunidad…* (one more try)\n\nThe *si* part never takes the conditional: not *si volvería*. The other part never takes the present: not *estudio*.\n\nEnglish is the same, \"if I had… I would\". Spanish just makes the first verb special: *volviera*, *pudiera*, *tuviera*.",
+  "smallPrint": "Teachers call this a second-conditional (unreal) sentence: *si* + imperfect subjunctive, then the conditional.",
+  "readAndPick": [
+    {
+      "es": "Si volviera a nacer, estudiaría otra cosa.",
+      "options": [
+        "If I had my life over, I'd study something else.",
+        "When I was born, I studied something else.",
+        "If I'm born again, I will study something else."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si pudiera devolver el tiempo, le diría que la quiero.",
+      "options": [
+        "I turned back time and told her I loved her.",
+        "If I could turn back time, I'd tell her I love her.",
+        "If I can turn back time, I'll tell her I love her."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si tuviera otra oportunidad, haría las cosas de otra manera.",
+      "options": [
+        "If I have another chance, I'll do things differently.",
+        "I had another chance and did things differently.",
+        "If I had another chance, I'd do things differently."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Si tuvieras otra oportunidad, ¿qué cambiarías?",
+      "options": [
+        "If you had another chance, what would you change?",
+        "If I had another chance, what would I change?",
+        "What did you change on another chance?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si Rosa estuviera aquí, sabría qué hacer.",
+      "options": [
+        "Rosa is here and knows what to do.",
+        "If Rosa were here, she'd know what to do.",
+        "If Rosa is here, she'll know what to do."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si pudiéramos devolver el tiempo, no venderíamos la casa.",
+      "options": [
+        "If I could turn back time, I wouldn't sell the house.",
+        "If they could turn back time, they wouldn't sell the house.",
+        "If we could turn back time, we wouldn't sell the house."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Si tuvieran más tiempo, abrirían otro café.",
+      "options": [
+        "If they had more time, they'd open another café.",
+        "If we had more time, we'd open another café.",
+        "If you had more time, you'd open another café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si volviera a nacer, haría lo mismo.",
+      "options": [
+        "If I'm born again, I'll do the same.",
+        "If I had my life over, I'd do the same.",
+        "I was born again and did the same."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *volviera* or *volvería*: Si ___ a nacer, estudiaría otra cosa. Type the whole sentence.",
+      "answer": "Si volviera a nacer, estudiaría otra cosa.",
+      "accept": [],
+      "why": "After *si*, imagining, use the imperfect subjunctive: *volviera*."
+    },
+    {
+      "prompt": "Choose *estudiaría* or *estudiara*: Si volviera a nacer, ___ otra cosa. Type the whole sentence.",
+      "answer": "Si volviera a nacer, estudiaría otra cosa.",
+      "accept": [],
+      "why": "The result is the conditional: *estudiaría*."
+    },
+    {
+      "prompt": "If I could turn back time, I'd tell her I love her.",
+      "answer": "Si pudiera devolver el tiempo, le diría que la quiero.",
+      "accept": [],
+      "why": "*Si pudiera* + the conditional *diría*."
+    },
+    {
+      "prompt": "If I had another chance, I'd do things differently.",
+      "answer": "Si tuviera otra oportunidad, haría las cosas de otra manera.",
+      "accept": [],
+      "why": "*Si tuviera* + the conditional *haría*."
+    },
+    {
+      "prompt": "If you had another chance, what would you change? (to a friend)",
+      "answer": "Si tuvieras otra oportunidad, ¿qué cambiarías?",
+      "accept": [],
+      "why": "*Tuvieras* is the imperfect subjunctive for *tú*."
+    },
+    {
+      "prompt": "Make it about us: Si tuviera otra oportunidad, haría las cosas de otra manera.",
+      "answer": "Si tuviéramos otra oportunidad, haríamos las cosas de otra manera.",
+      "accept": [],
+      "why": "*Tuviéramos* and *haríamos* are the *nosotros* forms."
+    },
+    {
+      "prompt": "If Rosa were here, she'd know what to do.",
+      "answer": "Si Rosa estuviera aquí, sabría qué hacer.",
+      "accept": [
+        "Si estuviera aquí Rosa, sabría qué hacer."
+      ],
+      "why": "One person, so *estuviera* and *sabría*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Si volvería a nacer, estudiaría otra cosa.",
+      "right": "Si volviera a nacer, estudiaría otra cosa.",
+      "why": "Almost. The *si* part takes the subjunctive, never the conditional."
+    },
+    {
+      "wrong": "Si volviera a nacer, estudio otra cosa.",
+      "right": "Si volviera a nacer, estudiaría otra cosa.",
+      "why": "Almost. The result needs the conditional, because it is imagined."
+    },
+    {
+      "wrong": "Si podía devolver el tiempo, le diría que la quiero.",
+      "right": "Si pudiera devolver el tiempo, le diría que la quiero.",
+      "why": "Almost. For something unreal, use *pudiera*, not *podía*."
+    }
+  ],
+  "personal": "Finish the idea about your own life: *Si pudiera devolver el tiempo…* or *Si volviera a nacer…*."
+}
