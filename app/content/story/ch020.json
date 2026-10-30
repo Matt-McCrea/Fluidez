@@ -2,7 +2,7 @@
   "id": "ch020",
   "unit": "u08",
   "title": "Día treinta",
-  "text": "Esa noche, Tomás saca la maleta del armario. La mira un rato. Después la pone debajo de la cama.\nPasan los días. Día treinta, diez de la noche. Vale cuenta el dinero del mes, y Hernando y Simón la miran.\nHernando: ¿Y? ¿Cuánto es, mija?\nVale escribe el total en la pizarra: $2.130.000. Dos millones ciento treinta mil pesos.\nHernando: ¡Ganamos! ¡Tomás perdió!\nVale: Perdiste, Tomás. Ahora son trescientos sesenta y cinco días en el café. Con Simón.\nTomás: Lo sé.\nVale: ¿Y por qué estás contento?\nTomás: No sé. ¿Es normal?\nSimón: ¡Normal! ¡Normal!\nHernando: Normal no es, mijo. Pero es bonito.\nVale: En treinta días subiste a Monserrate, comiste ajiaco y jugaste tejo.\nTomás: Y perdí en el tejo con un niño de diez años.\nHernando: De nueve, mijo. De nueve.\nHernando canta, y Vale baila con Simón.\nSimón tiene la tarjeta de Altamira en el pico.\nVale: Simón, ¿cómo se llama el señor de la tarjeta?\nSimón: ¡Capuchino! ¡Capuchino!\nHernando: Rosa tenía un dicho. ¿Lo recuerdas, Vale?\nVale: Claro. «El café es la casa de todos».\nTomás mira la foto de Rosa en la vitrina. Después mira a Vale.\nTomás: Mañana a las cinco, ¿no?\nVale: A las cinco, Tomás. Día uno de trescientos sesenta y cinco.",
+  "text": "Esa noche, Tomás saca la maleta del armario. La mira un rato. Después la pone debajo de la cama.\nPasan los días. Día treinta, diez de la noche. Vale cuenta el dinero del mes, y Hernando y Simón la miran.\nHernando: ¿Y? ¿Cuánto es, mija?\nVale escribe el total en la pizarra: $2.130.000.\nHernando: ¡Ganamos! ¡Tomás perdió!\nVale: Ahora son trescientos sesenta y cinco días en el café. Con Simón.\nTomás: Lo sé.\nVale: ¿Y por qué estás contento?\nTomás: No sé. ¿Es normal?\nSimón: ¡Normal! ¡Normal!\nHernando: Normal no es, mijo. Pero es bonito.\nVale: En treinta días subiste a Monserrate, comiste ajiaco y jugaste tejo.\nTomás: Y perdí en el tejo con un niño de diez años.\nHernando: De nueve, mijo. De nueve.\nHernando: Rosa tenía un dicho. ¿Lo recuerdas, Vale?\nVale: Claro. «El café es la casa de todos».\nTomás mira la foto de Rosa en la vitrina. Después mira a Vale.\nTomás: Mañana a las cinco, ¿no?\nVale: A las cinco, Tomás. Día uno de trescientos sesenta y cinco.",
   "gloss": [
     {
       "es": "La mira un rato. Después la pone debajo de la cama.",
@@ -27,10 +27,6 @@
     {
       "es": "perdí en el tejo con un niño de diez años",
       "en": "I lost at tejo to a ten year old boy"
-    },
-    {
-      "es": "en el pico",
-      "en": "in his beak"
     },
     {
       "es": "Rosa tenía un dicho",
@@ -77,11 +73,11 @@
       "answer": 0
     },
     {
-      "q": "¿Dónde está la tarjeta de Altamira?",
+      "q": "¿Qué mira Tomás en la vitrina?",
       "options": [
-        "En el pico de Simón",
-        "En la maleta",
-        "En la vitrina"
+        "La foto de Rosa",
+        "La maleta",
+        "La pizarra"
       ],
       "answer": 0
     }
@@ -124,8 +120,6 @@
     "c:cuanto-cuesta",
     "c:no-cierto",
     "c:no-se",
-    "c:se-llama",
-    "c:tienes",
     "g:demonstratives",
     "g:direct-objects",
     "g:estar-location-states",
@@ -140,7 +134,6 @@
     "g:stem-boot",
     "g:yo-irregular",
     "p:cerca-de",
-    "p:numbers-un-una",
     "p:position-de",
     "p:time-sequence-basic"
   ],
@@ -149,18 +142,15 @@
     "l:ajiaco",
     "l:armario",
     "l:año",
-    "l:bailar",
     "l:bonito",
     "l:café",
     "l:cama",
-    "l:cantar",
     "l:casa",
     "l:claro",
     "l:comer",
     "l:contar",
     "l:contento",
     "l:cuánto",
-    "l:cómo",
     "l:debajo",
     "l:después",
     "l:dicho",
@@ -171,7 +161,6 @@
     "l:foto",
     "l:ganar",
     "l:jugar",
-    "l:llamarse",
     "l:maleta",
     "l:mañana",
     "l:mes",
@@ -184,8 +173,6 @@
     "l:normal",
     "l:pasar",
     "l:perder",
-    "l:peso",
-    "l:pico",
     "l:pizarra",
     "l:poner",
     "l:qué",
@@ -194,9 +181,7 @@
     "l:saber",
     "l:sacar",
     "l:ser",
-    "l:señor",
     "l:subir",
-    "l:tarjeta",
     "l:tener",
     "l:total",
     "l:vitrina"
