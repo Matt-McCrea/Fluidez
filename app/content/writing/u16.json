@@ -968,5 +968,203 @@
       "p:possessives-basic",
       "p:talla-numero"
     ]
+  },
+  {
+    "id": "w-u16-16",
+    "unit": "u16",
+    "prompt": "You are trying on a shirt in a shop. Tell the assistant (a stranger, usted) that you like it, ask if you can try it on, and say you think you will take it.",
+    "minWords": 10,
+    "maxWords": 40,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (lo|la) (puedo|voy a) \\w+|\\b(medir|probar)(me)(lo|la)\\b",
+        "label": "put lo/la with me before the verb or attach it (me lo puedo medir)"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bme (lo|la) llevo\\b",
+        "label": "say you will take it (me lo llevo)"
+      },
+      {
+        "type": "question",
+        "label": "ask if you can try it on"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " puedes",
+          " tienes",
+          " quieres",
+          " eres",
+          " tu ",
+          " te "
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Me gusta esta camisa. ¿Me la puedo medir? Creo que me la llevo.",
+    "focus": "g:object-pronoun-position",
+    "requires": [
+      "c:creo-que",
+      "c:me-gusta",
+      "c:me-lo-llevo",
+      "c:me-lo-puedo-medir",
+      "c:puedo",
+      "g:double-pronouns",
+      "g:gustar-basic",
+      "g:stem-boot",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:camisa",
+      "l:creer",
+      "l:gustar",
+      "l:llevarse",
+      "l:medir",
+      "l:poder",
+      "p:demonstratives-basic"
+    ]
+  },
+  {
+    "id": "w-u16-17",
+    "unit": "u16",
+    "prompt": "Text Vale (someone your age): you saw the grey shirt she wanted in a shop. Say you want to buy it for her and ask if she wants it, and offer to bring it to the café tomorrow.",
+    "minWords": 10,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(lo|la) (quiero|puedo|voy a|necesito)\\b|\\b\\w+[aei]r(lo|la)\\b",
+        "label": "use lo/la with two verbs (comprarla, or la quiero comprar)"
+      },
+      {
+        "type": "question",
+        "label": "ask if she wants it"
+      },
+      {
+        "type": "containsWord",
+        "word": "camisa",
+        "label": "mention the shirt"
+      }
+    ],
+    "model": "Vale, vi la camisa gris. La quiero comprar hoy. ¿La quieres? La puedo llevar mañana al café.",
+    "focus": "g:object-pronoun-position",
+    "requires": [
+      "c:puedo",
+      "c:quiero",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:café",
+      "l:camisa",
+      "l:comprar",
+      "l:gris",
+      "l:hoy",
+      "l:llevar",
+      "l:mañana",
+      "l:poder",
+      "l:querer",
+      "l:ver"
+    ]
+  },
+  {
+    "id": "w-u16-18",
+    "unit": "u16",
+    "prompt": "You bought a shirt yesterday and it does not fit. Tell the assistant at the shop (a stranger, usted) how it fits you and ask whether you can return it.",
+    "minWords": 10,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (queda|quedan)\\b",
+        "label": "say how it fits with me queda or me quedan"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bdevolver(la|lo|los|las)?\\b",
+        "label": "ask about returning it (devolver)"
+      },
+      {
+        "type": "question",
+        "label": "ask if you can return it"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          " puedes",
+          " tienes",
+          " quieres",
+          " eres",
+          " tu ",
+          " te "
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas tardes. Compré esta camisa ayer, pero me queda pequeña. ¿Puedo devolverla?",
+    "focus": "g:parecer-quedar",
+    "requires": [
+      "c:ayer-anoche",
+      "c:compre-trabaje",
+      "c:hola-buenos-dias",
+      "c:puedo",
+      "g:adjective-agreement",
+      "g:direct-objects",
+      "g:object-pronoun-position",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "g:preterite-ar",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:ayer",
+      "l:buena",
+      "l:camisa",
+      "l:comprar",
+      "l:devolver",
+      "l:pequeño",
+      "l:poder",
+      "l:quedar",
+      "l:tarde",
+      "p:demonstratives-basic",
+      "p:talla-numero"
+    ]
+  },
+  {
+    "id": "w-u16-19",
+    "unit": "u16",
+    "prompt": "A friend your age asks what you think of the dress you tried on. Reply in a text: say how it looks on you and what you think of the price.",
+    "minWords": 10,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (queda|quedan)\\b",
+        "label": "say how it fits with me queda"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bme (parece|parecen)\\b",
+        "label": "give an opinion with me parece"
+      }
+    ],
+    "model": "Me parece cara, pero me queda muy bien. Me la llevo.",
+    "focus": "g:parecer-quedar",
+    "requires": [
+      "c:bien-y-tu",
+      "c:me-lo-llevo",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:bien",
+      "l:cara",
+      "l:llevarse",
+      "l:parecer",
+      "l:quedar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:talla-numero"
+    ]
   }
 ]
