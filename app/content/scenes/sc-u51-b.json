@@ -1,0 +1,234 @@
+{
+  "id": "sc-u51-b",
+  "unit": "u51",
+  "title": "Un mes de prueba",
+  "spare": false,
+  "brief": "You're Tomás, and Vale has just told you she accepted the trial month in Medellín. You're close, so use tú. Be glad for her, say what you would have done, and ask about the practical things.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Tomás, acepté el mes de prueba en Medellín. Me voy el lunes.",
+      "npcEn": "Vale: Tomás, I accepted the trial month in Medellín. I'm leaving on Monday.",
+      "intent": "Say you're happy for her and ask when she decided.",
+      "accept": [
+        "Me alegro por ti. ¿Cuándo lo decidiste?",
+        "¿Cuándo decidiste aceptar? Me alegro mucho por ti.",
+        "Qué bien. ¿Y cuándo decidiste irte?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "verbForm",
+          "inf": "decidir",
+          "tense": "preterito",
+          "person": "tú",
+          "label": "ask with decidiste"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Anoche, después de hablar con mi mamá. Si lo hubiese sabido antes, te lo habría dicho. Perdona.",
+      "npcEn": "Vale: Last night, after talking to my mom. If I had known sooner, I would have told you. Sorry.",
+      "intent": "Tell her it's fine, and that if you had been in her place you would have done the same (use si yo hubiera estado).",
+      "accept": [
+        "No pasa nada. Si yo hubiera estado en tu lugar, habría hecho lo mismo.",
+        "Tranquila. Yo habría hecho lo mismo, si hubiera estado en tu lugar.",
+        "Si hubiera tenido tu oferta, también habría aceptado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhubiera\\b",
+          "flags": "iu",
+          "label": "use: si hubiera + participle"
+        }
+      ],
+      "focus": "g:se-form-recognition",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Mi mamá me pidió que fuese con cuidado, pero ya sabes cómo soy.",
+      "npcEn": "Vale: My mom asked me to be careful, but you know what I'm like.",
+      "intent": "Ask whether fuese means the same as fuera.",
+      "accept": [
+        "¿Fuese es lo mismo que fuera?",
+        "¿Dices fuese o fuera? ¿Es igual?",
+        "Una pregunta: ¿fuese y fuera significan lo mismo?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "containsWord",
+          "word": "fuera",
+          "label": "ask about fuera"
+        }
+      ],
+      "focus": "g:se-form-recognition",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Es igual. Casi nadie lo dice hablando, pero se ve en los libros. ¿Me ayudas con las cajas?",
+      "npcEn": "Vale: It's the same. Almost nobody says it when talking, but you see it in books. Will you help me with the boxes?",
+      "intent": "Say yes, and ask what time her bus leaves.",
+      "accept": [
+        "Claro. ¿A qué hora sale tu bus?",
+        "Te llevo las cajas. ¿A qué hora sale el bus?",
+        "Con gusto. ¿A qué hora sale el bus el lunes?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "verbFormAny",
+          "inf": "salir",
+          "tense": "presente",
+          "label": "ask with sale"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: A las seis. No te pongas triste, que vuelvo en un mes.",
+      "npcEn": "Vale: At six. Don't be sad, I'll be back in a month.",
+      "intent": "Tell her you'll miss her and that the café will be waiting for her.",
+      "accept": [
+        "Te voy a extrañar. Aquí te espera el café.",
+        "Voy a extrañarte mucho. El café te espera.",
+        "Te extrañaré, Vale. Vuelve pronto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "extrañ",
+          "flags": "iu",
+          "label": "say you'll miss her: extrañar"
+        }
+      ],
+      "focus": "c:echar-de-menos-spain",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-que-hora",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:es-lo-mismo",
+    "c:me-alegro",
+    "c:que-bien",
+    "c:tranquilo",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:conditional-perfect",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-full",
+    "g:imperfect-subj",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:se-form-recognition",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-past-triggers",
+    "g:subj-relative",
+    "g:that-clauses",
+    "g:verbs-of-change",
+    "l:aceptar",
+    "l:alegrarse",
+    "l:anoche",
+    "l:antes",
+    "l:aquí",
+    "l:ayudar",
+    "l:bien",
+    "l:bus",
+    "l:café",
+    "l:caja",
+    "l:claro",
+    "l:cuidado",
+    "l:cuándo",
+    "l:cómo",
+    "l:decidir",
+    "l:decir",
+    "l:después",
+    "l:esperar",
+    "l:estar",
+    "l:extrañar",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:hora",
+    "l:igual",
+    "l:ir",
+    "l:irse",
+    "l:libro",
+    "l:llevar",
+    "l:lugar",
+    "l:lunes",
+    "l:mamá",
+    "l:mes",
+    "l:oferta",
+    "l:pasar",
+    "l:pedir",
+    "l:perdonar",
+    "l:ponerse",
+    "l:pregunta",
+    "l:pronto",
+    "l:prueba",
+    "l:qué",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:significar",
+    "l:tener",
+    "l:tranquilo",
+    "l:triste",
+    "l:ver",
+    "l:volver",
+    "p:alegrarse-de-que",
+    "p:aqui-ahi-alla",
+    "p:days-el-lunes",
+    "p:extranar",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ]
+}

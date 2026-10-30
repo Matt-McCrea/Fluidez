@@ -1,0 +1,235 @@
+{
+  "id": "sc-u51-c",
+  "unit": "u51",
+  "title": "El sobrino de Sevilla",
+  "spare": true,
+  "brief": "You're Tomás, and Don Hernando, courtly as ever, has a message from his nephew in Seville. Use usted with him. Translate Spain's Spanish into the Colombian way and say how you got used to all the accents.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Buenos días, Tomás. Mi sobrino de Sevilla me escribió: \"Hoy he madrugado mucho y he ido al mercado.\" ¿Me lo dice usted en colombiano?",
+      "npcEn": "Hernando: Good morning, Tomás. My nephew in Seville wrote to me: \"Today I got up very early and went to the market.\" Can you tell me that in Colombian?",
+      "intent": "Say it the Colombian way: he got up early today and went to the market.",
+      "accept": [
+        "Hoy madrugó mucho y fue al mercado.",
+        "Dice que hoy madrugó y fue al mercado.",
+        "Aquí diríamos: hoy madrugó mucho y fue al mercado."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ir",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "use the plain past: fue"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: También me escribió: ¡Qué rollo, tengo que trabajar el sábado! ¿Qué es un rollo?",
+      "npcEn": "Hernando: He also wrote to me: What a drag, I have to work on Saturday! What is a rollo?",
+      "intent": "Explain that it means something boring or a nuisance, like our qué pereza.",
+      "accept": [
+        "Es como decir qué pereza. Es algo aburrido.",
+        "Allá dicen qué rollo, y aquí decimos qué pereza.",
+        "Significa algo aburrido. Aquí diríamos qué pereza."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "pereza",
+          "label": "explain with pereza"
+        }
+      ],
+      "focus": "c:que-rollo-spain",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: ¡Anda! Una vez un pasajero madrileño me dijo vale a todo durante el viaje. Pensé que estaba bravo.",
+      "npcEn": "Hernando: Well, well! Once a passenger from Madrid said vale to everything during the trip. I thought he was angry.",
+      "intent": "Reassure him: vale means OK in Spain, so the passenger was fine.",
+      "accept": [
+        "No estaba bravo. Vale significa de acuerdo en España.",
+        "Tranquilo, don Hernando. Allá vale es como decir listo.",
+        "Vale quiere decir bueno, de acuerdo. Estaba contento."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "vale",
+          "label": "mention vale"
+        }
+      ],
+      "focus": "c:vale-spain",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Entonces nadie estaba bravo. Si lo hubiese sabido, le habría dado un tinto gratis. ¿Y usted, cómo hace con tantos acentos?",
+      "npcEn": "Hernando: So nobody was angry. If I had known, I would have given him a free tinto. And how do you cope with so many accents?",
+      "intent": "Say you got used to understanding them all (use acostumbrarse a or adaptarse a).",
+      "accept": [
+        "Ya me acostumbré a todos los acentos.",
+        "Me costó adaptarme, pero ya los entiendo.",
+        "Con el tiempo me acostumbré a entenderlos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "acostumbr|adapt",
+          "flags": "iu",
+          "label": "use acostumbrarse a or adaptarse a"
+        }
+      ],
+      "focus": "p:adaptarse-a",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Mi sobrino jura que el café de su bar procede de Colombia. ¿Será verdad?",
+      "npcEn": "Hernando: My nephew swears that the coffee in his bar comes from Colombia. Can it be true?",
+      "intent": "Say it could be true, since a lot of coffee comes from Colombia (use procede de or proviene de), and offer him a tinto.",
+      "accept": [
+        "Puede ser. Mucho café procede de Colombia. ¿Le sirvo un tinto?",
+        "Es posible, mucho café proviene de aquí. ¿Un tinto, don Hernando?",
+        "Claro que sí, el mejor café procede de Colombia. Le sirvo un tinto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "proced|provien",
+          "flags": "iu",
+          "label": "use procede de or proviene de"
+        }
+      ],
+      "focus": "p:proceder-de",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:anda-spain",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:hola-buenos-dias",
+    "c:puede-ser",
+    "c:que-pereza",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tranquilo",
+    "c:una-vez",
+    "c:vale-spain",
+    "g:conditional",
+    "g:conditional-perfect",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:object-pronoun-position",
+    "g:perfecto-experience",
+    "g:pluperfect-subj",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:aburrido",
+    "l:acento",
+    "l:acuerdo",
+    "l:allá",
+    "l:andar",
+    "l:aquí",
+    "l:bar",
+    "l:bravo",
+    "l:bueno",
+    "l:café",
+    "l:claro",
+    "l:colombiano",
+    "l:contento",
+    "l:costar",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:día",
+    "l:entender",
+    "l:escribir",
+    "l:estar",
+    "l:gratis",
+    "l:hacer",
+    "l:hoy",
+    "l:ir",
+    "l:jurar",
+    "l:listo",
+    "l:madrileño",
+    "l:madrugar",
+    "l:mejor",
+    "l:mercado",
+    "l:pasajero",
+    "l:pensar",
+    "l:poder",
+    "l:posible",
+    "l:proceder",
+    "l:provenir",
+    "l:querer",
+    "l:qué",
+    "l:rollo",
+    "l:saber",
+    "l:ser",
+    "l:servir",
+    "l:significar",
+    "l:sobrino",
+    "l:sábado",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:trabajar",
+    "l:tranquilo",
+    "l:valer",
+    "l:verdad",
+    "l:vez",
+    "l:viaje",
+    "p:aburrir-aburrirse",
+    "p:adaptarse-a",
+    "p:aqui-ahi-alla",
+    "p:costarle",
+    "p:days-el-lunes",
+    "p:describe-with-images",
+    "p:don-dona-nombre",
+    "p:durar-durante",
+    "p:estar-de-acuerdo-con-en",
+    "p:exclamations-basic",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:madrugar-trasnochar",
+    "p:me-aburre-que",
+    "p:me-te-nos-objects",
+    "p:pensar-en",
+    "p:possessives-basic",
+    "p:proceder-de",
+    "p:pues-claro-que",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article"
+  ]
+}

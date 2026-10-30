@@ -1,0 +1,235 @@
+{
+  "id": "sc-u51-a",
+  "unit": "u51",
+  "title": "Madrid en la mesa tres",
+  "spare": false,
+  "brief": "You're Tomás, behind the counter. Lucía, a food blogger from Madrid, arrives with two friends who say vosotros all day. You understand them, but you answer the way Colombians do: with ustedes, and with the plain past (ayer, hoy, esta mañana).",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Lucía: Buenas. ¿Ya han abierto? Nos han dicho que aquí hay buen café.",
+      "npcEn": "Lucía: Hello. Have you opened yet? They told us the coffee is good here.",
+      "intent": "Say yes, you're open, and ask what they would like to drink (they are three, so use ustedes).",
+      "accept": [
+        "Sí, ya abrimos. ¿Qué quieren tomar?",
+        "Claro, pasen. ¿Qué les sirvo?",
+        "Sí, abrimos hace un momento. ¿Qué van a tomar?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "queréis",
+            "abrís"
+          ],
+          "label": "answer with ustedes forms (quieren), not vosotros forms"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Lucía: Hoy he desayunado fatal en el hotel. Necesito un café ya.",
+      "npcEn": "Lucía: I had a terrible breakfast at the hotel today. I need a coffee right now.",
+      "intent": "Sympathise and ask her about her breakfast with the Colombian past (hoy desayunaste, not hoy has desayunado).",
+      "accept": [
+        "¿Hoy desayunaste mal? Qué pena. Aquí te preparamos algo.",
+        "Qué pena. ¿Dónde desayunaste?",
+        "Ay, ¿desayunaste mal hoy? Ahora te traigo algo rico."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "desayunar",
+          "tense": "preterito",
+          "person": "tú",
+          "label": "use the plain past: desayunaste"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Lucía: Esta mañana hemos ido a la plaza de Bolívar y hemos comido unas empanadas. ¿Nos entiendes bien? Hablamos rápido.",
+      "npcEn": "Lucía: This morning we went to Plaza de Bolívar and had some empanadas. Do you understand us well? We talk fast.",
+      "intent": "Say you understand everything, and retell it the Colombian way: this morning they went to the plaza and ate empanadas.",
+      "accept": [
+        "Los entiendo bien. Esta mañana fueron a la plaza y comieron empanadas.",
+        "Entiendo todo. O sea, esta mañana fueron a la plaza de Bolívar y comieron empanadas.",
+        "Claro que sí. Fueron a la plaza esta mañana y comieron empanadas, ¿cierto?"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ir",
+          "tense": "preterito",
+          "person": "ellos",
+          "label": "retell it with the plain past: fueron"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Lucía: ¡Qué rollo! He dejado el teléfono en el hotel y no tengo cómo llamar a mis amigas.",
+      "npcEn": "Lucía: What a drag! I left my phone at the hotel and I can't call my friends.",
+      "intent": "Offer her your celular to make the call, and ask which hotel it is.",
+      "accept": [
+        "Usa mi celular. ¿En qué hotel están?",
+        "Llama desde mi celular, no hay problema. ¿Cómo se llama el hotel?",
+        "Toma mi celular. ¿Dónde queda el hotel?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "containsWord",
+          "word": "celular",
+          "label": "say celular"
+        }
+      ],
+      "focus": "c:que-rollo-spain",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Lucía: Todo estaba riquísimo. Mañana volvemos con mis amigas del hotel.",
+      "npcEn": "Lucía: Everything was delicious. Tomorrow we'll be back with my friends from the hotel.",
+      "intent": "Thank them for coming and say you'll be waiting for them tomorrow.",
+      "accept": [
+        "Gracias por venir. Los espero mañana.",
+        "Muchas gracias por la visita. Aquí los espero.",
+        "Gracias a ustedes. Mañana los esperamos con un tinto."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "gracias",
+          "label": "say thanks"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:no-cierto",
+    "c:no-entiendo",
+    "c:no-te-preocupes",
+    "c:o-sea",
+    "c:que-pena",
+    "c:se-llama",
+    "c:tengo",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:perfecto-experience",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:reformulation",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:ahora",
+    "l:amiga",
+    "l:aquí",
+    "l:bien",
+    "l:buen",
+    "l:buena",
+    "l:café",
+    "l:celular",
+    "l:claro",
+    "l:comer",
+    "l:cómo",
+    "l:decir",
+    "l:dejar",
+    "l:desayunar",
+    "l:dónde",
+    "l:empanada",
+    "l:entender",
+    "l:esperar",
+    "l:estar",
+    "l:fatal",
+    "l:hablar",
+    "l:hacer",
+    "l:hotel",
+    "l:hoy",
+    "l:ir",
+    "l:llamar",
+    "l:llamarse",
+    "l:lucía",
+    "l:mal",
+    "l:mañana",
+    "l:momento",
+    "l:necesitar",
+    "l:pasar",
+    "l:pena",
+    "l:plaza",
+    "l:preparar",
+    "l:problema",
+    "l:quedar",
+    "l:querer",
+    "l:qué",
+    "l:rico",
+    "l:rollo",
+    "l:rápido",
+    "l:ser",
+    "l:servir",
+    "l:teléfono",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:traer",
+    "l:usar",
+    "l:venir",
+    "l:visita",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:llevar-traer",
+    "p:me-aburre-que",
+    "p:me-te-nos-objects",
+    "p:personal-a",
+    "p:por-culpa-de",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quedar-cerca",
+    "p:question-word-order"
+  ]
+}
