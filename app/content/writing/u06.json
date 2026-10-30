@@ -425,5 +425,202 @@
       "p:viejo-antiguo-mayor",
       "p:ya-todavia-basic"
     ]
+  },
+  {
+    "id": "w-u06-13",
+    "unit": "u06",
+    "prompt": "Your cousin is thinking about the house where your grandparents lived. Text her two short sentences about what the living room was like back then.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "En la pared había un cuadro. Había una mesa y una silla.",
+    "focus": "g:imperfect-states",
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-states",
+      "l:cuadro",
+      "l:mesa",
+      "l:pared",
+      "l:silla"
+    ]
+  },
+  {
+    "id": "w-u06-14",
+    "unit": "u06",
+    "prompt": "Mariana is writing about the old days in La Candelaria and asks about your grandfather. Reply in two short sentences about how he was and what he had.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbFormAny",
+        "inf": "estar",
+        "tense": "imperfecto",
+        "label": "use estaba to say how he was"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Mi abuelo estaba muy contento. Tenía una radio nueva.",
+    "focus": "g:imperfect-states",
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "l:abuelo",
+      "l:contento",
+      "l:estar",
+      "l:nuevo",
+      "l:radio",
+      "l:tener",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u06-15",
+    "unit": "u06",
+    "prompt": "Vale asks about the shop your family had when you were a child. Tell her in two short sentences where it was and what it had, using our (nuestro or nuestra).",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bnuestr[oa]s?\\b",
+        "label": "use nuestro or nuestra"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto"
+      }
+    ],
+    "model": "Nuestra tienda estaba en el barrio. Había una radio y una televisión.",
+    "focus": "g:possessives",
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:possessives",
+      "l:barrio",
+      "l:estar",
+      "l:radio",
+      "l:televisión",
+      "l:tienda"
+    ]
+  },
+  {
+    "id": "w-u06-16",
+    "unit": "u06",
+    "prompt": "A customer asks Don Hernando about Rosa's café in the old days. Answer for him in two short sentences, using her (su or sus).",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bsus?\\b",
+        "label": "use su or sus for her"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto"
+      }
+    ],
+    "model": "Su café era muy tranquilo. Tenía cuatro mesas y una máquina.",
+    "focus": "g:possessives",
+    "requires": [
+      "c:como-era",
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "l:café",
+      "l:mesa",
+      "l:máquina",
+      "l:ser",
+      "l:tener",
+      "l:tranquilo",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u06-17",
+    "unit": "u06",
+    "prompt": "You tried to help at the café party last night. Tell Vale in two short sentences what you wanted to do, and where you left the radio.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbFormAny",
+        "inf": "querer",
+        "tense": "preterito",
+        "label": "use quise for what you wanted"
+      },
+      {
+        "type": "verbFormAny",
+        "inf": "poder",
+        "tense": "preterito",
+        "label": "use pude for what you couldn't do"
+      }
+    ],
+    "model": "Quise cambiar el disco, pero no pude. Dejé la radio en la mesa.",
+    "focus": "g:preterite-irregular-strong",
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "g:verb-infinitive",
+      "l:cambiar",
+      "l:dejar",
+      "l:disco",
+      "l:mesa",
+      "l:poder",
+      "l:querer",
+      "l:radio"
+    ]
+  },
+  {
+    "id": "w-u06-18",
+    "unit": "u06",
+    "prompt": "Mariana asks why you didn't answer her calls yesterday. Tell her in two short sentences where you were and what you had to do.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "use estuve for where you were"
+      },
+      {
+        "type": "verbFormAny",
+        "inf": "tener",
+        "tense": "preterito",
+        "label": "use tuve que for what you had to do"
+      }
+    ],
+    "model": "Estuve en la panadería con el dueño. Tuve que hablar con Vale.",
+    "focus": "g:preterite-irregular-strong",
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "g:verb-infinitive",
+      "l:dueño",
+      "l:estar",
+      "l:hablar",
+      "l:panadería",
+      "l:tener"
+    ]
   }
 ]
