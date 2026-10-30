@@ -1,0 +1,239 @@
+{
+  "id": "sc-u41-b",
+  "unit": "u41",
+  "title": "El abrigo de Hernando",
+  "spare": false,
+  "brief": "You're Tomás, in the café kitchen on a cold morning. Vale is up to her elbows in flour and Don Hernando has wandered off. She is your friend, so use tú. Report what Mariana asked you, make a wish, ask if she'd mind if you left, and promise to bring him back.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Llegaste tarde. ¿Qué te pidió Mariana por teléfono?",
+      "npcEn": "You're late. What did Mariana ask you to do on the phone?",
+      "intent": "Say she asked you to bring the papers to her office.",
+      "accept": [
+        "Me pidió que llevara los papeles a su oficina.",
+        "Mariana me pidió que le llevara los papeles.",
+        "Me dijo que llevara los papeles a la oficina, Vale."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(pidi[óo]|dijo) que",
+          "flags": "iu",
+          "label": "report it with pidió que or dijo que"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        }
+      ],
+      "focus": "g:reported-commands-past",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando no está. Le dije que esperara aquí y se fue sin decir nada.",
+      "npcEn": "Hernando isn't here. I told him to wait here and he left without saying anything.",
+      "intent": "Say you wish he were less stubborn.",
+      "accept": [
+        "Ojalá fuera menos terco.",
+        "Ojalá él fuera menos terco, Vale.",
+        "Ojalá nos escuchara de vez en cuando."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "ojal[aá](?![\\p{L}])",
+          "flags": "iu",
+          "label": "start the wish with ojalá"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        }
+      ],
+      "focus": "g:ojala-past",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Se me está quemando el pan y no puedo parar. ¿Tú qué piensas hacer?",
+      "npcEn": "My bread is burning and I can't stop. What are you going to do?",
+      "intent": "Ask whether she would mind if you went to look for him now.",
+      "accept": [
+        "¿Te importaría que fuera a buscarlo ahora?",
+        "Vale, ¿te importaría que saliera a buscarlo ahora mismo?",
+        "¿Te importaría que me fuera ahora para buscarlo?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "importar[ií]a que",
+          "flags": "iu",
+          "label": "ask with ¿te importaría que...?"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        }
+      ],
+      "focus": "p:te-importaria-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Para nada, ve. Hoy lo vi hablando con Simón como si fuera su abogado.",
+      "npcEn": "Not at all, go. Today I saw him talking to Simón as if he were his lawyer.",
+      "intent": "Agree: he always talks as if he were the owner.",
+      "accept": [
+        "Siempre habla como si fuera el dueño.",
+        "Sí, habla como si fuera el dueño del café.",
+        "Es verdad, actúa como si fuera el jefe."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "como si",
+          "flags": "iu",
+          "label": "use como si"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        }
+      ],
+      "focus": "g:como-si",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Ve y avísame cuando lo encuentres. Te guardo pan caliente.",
+      "npcEn": "Go, and let me know when you find him. I'll save you some warm bread.",
+      "intent": "Thank her and say she can count on you to bring him back.",
+      "accept": [
+        "Gracias. Cuenta conmigo, te lo traigo.",
+        "Cuenta conmigo, Vale, lo traigo pronto.",
+        "Gracias por el pan. Cuenta conmigo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cuenta conmigo",
+          "flags": "iu",
+          "label": "say count on me: cuenta conmigo"
+        }
+      ],
+      "focus": "c:cuenta-conmigo",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:cuenta-conmigo",
+    "c:gracias-de-nada",
+    "c:ojala",
+    "c:para-nada",
+    "c:puedo",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:como-si",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-full",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reported-commands-past",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-past-triggers",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abogado",
+    "l:actuar",
+    "l:ahora",
+    "l:aquí",
+    "l:avisar",
+    "l:buscar",
+    "l:café",
+    "l:caliente",
+    "l:contar",
+    "l:decir",
+    "l:dueño",
+    "l:encontrar",
+    "l:escuchar",
+    "l:esperar",
+    "l:estar",
+    "l:guardar",
+    "l:hablar",
+    "l:hacer",
+    "l:hoy",
+    "l:importar",
+    "l:ir",
+    "l:irse",
+    "l:jefe",
+    "l:llegar",
+    "l:llevar",
+    "l:oficina",
+    "l:pan",
+    "l:papel",
+    "l:parar",
+    "l:pedir",
+    "l:pensar",
+    "l:poder",
+    "l:pronto",
+    "l:quemar",
+    "l:qué",
+    "l:salir",
+    "l:ser",
+    "l:siempre",
+    "l:tarde",
+    "l:teléfono",
+    "l:traer",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "p:aqui-ahi-alla",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:llegar-a-tiempo",
+    "p:llevar-traer",
+    "p:me-encanta-que",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pensar-en",
+    "p:pensar-inf",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:que-opinas-de",
+    "p:te-importaria",
+    "p:te-importaria-que"
+  ]
+}

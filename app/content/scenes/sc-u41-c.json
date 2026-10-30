@@ -1,0 +1,233 @@
+{
+  "id": "sc-u41-c",
+  "unit": "u41",
+  "title": "Una llamada a Cúcuta",
+  "spare": true,
+  "brief": "You're Tomás, on the phone to Yesid, Joaquín's grandson, who is about your age, so use tú. He is wary. Say who you are, understand him, be honest about what you can promise, and invite him.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Aló. Mi abuela dice que quieres hablar conmigo. Soy Yesid. ¿Quién eres?",
+      "npcEn": "Hello. My grandmother says you want to talk to me. I'm Yesid. Who are you?",
+      "intent": "Say you're Tomás, Rosa's grandson, and you wish you could talk in person.",
+      "accept": [
+        "Soy Tomás, el nieto de Rosa. Ojalá pudiéramos hablar en persona.",
+        "Hola, Yesid. Soy Tomás. Ojalá pudiera hablar contigo en persona.",
+        "Ojalá pudiéramos vernos, Yesid. Soy Tomás, el nieto de Rosa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "ojal[aá](?![\\p{L}])",
+          "flags": "iu",
+          "label": "start the wish with ojalá"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        }
+      ],
+      "focus": "g:ojala-past",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mi abuelo me pedía que no hablara con nadie de Bogotá. Y ahora mi abuela me pide lo contrario.",
+      "npcEn": "My grandfather used to ask me not to talk to anyone from Bogotá. And now my grandmother asks me for the opposite.",
+      "intent": "Say you understand: your grandmother also asked you not to talk about Joaquín.",
+      "accept": [
+        "Lo entiendo. Mi abuela también me pidió que no hablara de Joaquín.",
+        "Entiendo. Rosa me pidió que no le escribiera a Joaquín.",
+        "Mi abuela también me pidió que no hablara de él."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "pidi[óo] que",
+          "flags": "iu",
+          "label": "use pidió que + past subjunctive"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        },
+        {
+          "type": "negation",
+          "label": "she asked you not to"
+        }
+      ],
+      "focus": "g:reported-commands-past",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Está bien. Pero dime la verdad: ¿qué gano yo con ir a Bogotá?",
+      "npcEn": "All right. But tell me the truth: what do I get out of going to Bogotá?",
+      "intent": "Be honest: you promise nothing, but you would like him to come and meet you all.",
+      "accept": [
+        "No prometo nada, pero me gustaría que vinieras a conocernos.",
+        "No te prometo nada, pero me gustaría que vinieras.",
+        "No puedo prometerte nada. Me gustaría que vinieras a conocernos."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "promise nothing"
+        },
+        {
+          "type": "regex",
+          "pattern": "gustar[ií]a que",
+          "flags": "iu",
+          "label": "say you would like him to come: me gustaría que..."
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        }
+      ],
+      "focus": "g:subj-past-triggers",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Bueno. Y mi abuela dice que tienes un café. ¿Te importaría que la llevara conmigo?",
+      "npcEn": "Well. And my grandmother says you have a café. Would you mind if I took her with me?",
+      "intent": "Say not at all, you would love her to come too.",
+      "accept": [
+        "Para nada. Me gustaría que viniera ella también.",
+        "No, claro que no. Me gustaría que vinieran los dos.",
+        "Para nada, Yesid. Ojalá viniera ella también."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        }
+      ],
+      "focus": "p:te-importaria-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Está bien, voy. Pero que quede claro: voy por mi abuelo, no por ti.",
+      "npcEn": "Fine, I'll go. But let's be clear: I'm going for my grandfather, not for you.",
+      "intent": "Thank him and say the first coffee is yours when he arrives.",
+      "accept": [
+        "Gracias, Yesid. Cuando llegues, el primer tinto es mío.",
+        "Gracias. Te espero con un tinto caliente.",
+        "Muchas gracias. Cuenta conmigo para lo que necesites."
+      ],
+      "require": [],
+      "focus": "c:cuenta-conmigo",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:cuenta-conmigo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:la-verdad",
+    "c:me-gustaria",
+    "c:ojala",
+    "c:para-nada",
+    "c:puedo",
+    "c:tienes",
+    "c:voy-vas",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-past-triggers",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:abuela",
+    "l:abuelo",
+    "l:ahora",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:caliente",
+    "l:claro",
+    "l:conocer",
+    "l:contar",
+    "l:contrario",
+    "l:decir",
+    "l:entender",
+    "l:escribir",
+    "l:esperar",
+    "l:estar",
+    "l:ganar",
+    "l:gustar",
+    "l:hablar",
+    "l:importar",
+    "l:ir",
+    "l:llegar",
+    "l:llevar",
+    "l:necesitar",
+    "l:nieto",
+    "l:pedir",
+    "l:persona",
+    "l:poder",
+    "l:prometer",
+    "l:quedar",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:de-owner",
+    "p:ir-a-venir-de-place",
+    "p:me-encanta-que",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quedar-participio",
+    "p:saber-conocer",
+    "p:tambien-tampoco",
+    "p:te-importaria",
+    "p:te-importaria-que"
+  ]
+}

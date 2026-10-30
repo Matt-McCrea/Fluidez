@@ -1,0 +1,244 @@
+{
+  "id": "sc-u41-a",
+  "unit": "u41",
+  "title": "Lo que pidió Joaquín",
+  "spare": false,
+  "brief": "You're Tomás, in the sitting room of Yesid's grandmother, who has just told you what Joaquín wanted before he died. She is much older than you, so use usted. Say what you wish, ask what else he asked of her, report what Yesid told you, and say what you would like.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Gracias por venir hasta aquí, Tomás. Joaquín siempre quería que alguien de la familia volviera a Bogotá.",
+      "npcEn": "Thank you for coming all the way here, Tomás. Joaquín always wanted someone from the family to go back to Bogotá.",
+      "intent": "Say you wish he were still alive so you could meet him.",
+      "accept": [
+        "Ojalá viviera todavía, señora. Me gustaría conocerlo.",
+        "Ojalá él viviera todavía para que yo pudiera conocerlo.",
+        "Ojalá pudiera conocerlo, señora. Ojalá viviera."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "ojal[aá](?![\\p{L}])",
+          "flags": "iu",
+          "label": "start the wish with ojalá"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        }
+      ],
+      "focus": "g:ojala-past",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Antes de morir me pidió que hiciéramos las paces con la familia de Rosa. Me lo pidió tres veces.",
+      "npcEn": "Before he died he asked me to make peace with Rosa's family. He asked me three times.",
+      "intent": "Ask her what else he asked her to do.",
+      "accept": [
+        "¿Qué más le pidió que hiciera?",
+        "Y a usted, ¿qué más le pidió que hiciera?",
+        "¿Le pidió que hiciera algo más, señora?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "pidi[óo] que",
+          "flags": "iu",
+          "label": "use pidió que + past subjunctive"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        }
+      ],
+      "focus": "g:reported-commands-past",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mi nieto Yesid todavía está enojado. ¿Qué le dijo a usted cuando lo llamó?",
+      "npcEn": "My grandson Yesid is still angry. What did he say to you when you called him?",
+      "intent": "Say he told you not to call him any more.",
+      "accept": [
+        "Me dijo que no lo llamara más.",
+        "Me pidió que no lo llamara más, señora.",
+        "Ayer Yesid me dijo que no lo llamara más."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(dijo|pidi[óo]) que",
+          "flags": "iu",
+          "label": "report it with dijo que or pidió que"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        },
+        {
+          "type": "negation",
+          "label": "he said not to call"
+        }
+      ],
+      "focus": "g:reported-commands-past",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Es orgulloso, como su abuelo. Ahora pregunta qué gana él con todo esto. ¿Usted qué le diría?",
+      "npcEn": "He is proud, like his grandfather. Now he asks what he gets out of all this. What would you tell him?",
+      "intent": "Say you would like him to come to Bogotá to meet the family.",
+      "accept": [
+        "Me gustaría que viniera a Bogotá para conocer a la familia.",
+        "Le diría que me gustaría que viniera a Bogotá con ustedes.",
+        "Me gustaría que viniera a Bogotá, señora, y conociera a todos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "gustar[ií]a que",
+          "flags": "iu",
+          "label": "say me gustaría que"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "impsubj",
+          "label": "use the past subjunctive (-ra form) after the trigger"
+        }
+      ],
+      "focus": "g:subj-past-triggers",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Está bien. Hablaré con él. Pero antes, ¿le sirvo un café?",
+      "npcEn": "All right. I'll talk to him. But first, may I serve you a coffee?",
+      "intent": "Accept the coffee, thank her, and tell her she can count on you.",
+      "accept": [
+        "Claro, gracias. Cuente conmigo, señora.",
+        "Con mucho gusto, gracias. Cuente conmigo.",
+        "Sí, gracias, señora. Cuente conmigo para lo que necesite."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cuente conmigo",
+          "flags": "iu",
+          "label": "say she can count on you: cuente conmigo"
+        }
+      ],
+      "focus": "c:cuenta-conmigo",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:algo-mas",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-el-ella",
+    "c:con-mucho-gusto",
+    "c:gracias-de-nada",
+    "c:me-gustaria",
+    "c:mucho-gusto",
+    "c:ojala",
+    "c:que-mas",
+    "g:commands-usted",
+    "g:comparatives",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:para-que",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:reported-commands-past",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:subj-past-triggers",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:abuelo",
+    "l:ahora",
+    "l:antes",
+    "l:aquí",
+    "l:ayer",
+    "l:bien",
+    "l:café",
+    "l:claro",
+    "l:conocer",
+    "l:contar",
+    "l:decir",
+    "l:enojado",
+    "l:estar",
+    "l:familia",
+    "l:ganar",
+    "l:gustar",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:llamar",
+    "l:morir",
+    "l:necesitar",
+    "l:nieto",
+    "l:orgulloso",
+    "l:paz",
+    "l:pedir",
+    "l:poder",
+    "l:pregunta",
+    "l:querer",
+    "l:qué",
+    "l:ser",
+    "l:servir",
+    "l:señora",
+    "l:siempre",
+    "l:venir",
+    "l:vez",
+    "l:vivir",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:contar-con",
+    "p:contar-dos-sentidos",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:me-encanta-que",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:saber-conocer",
+    "p:ya-todavia-basic",
+    "p:yo-diria-que"
+  ]
+}
