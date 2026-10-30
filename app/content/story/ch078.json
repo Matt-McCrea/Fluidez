@@ -1,0 +1,298 @@
+{
+  "id": "ch078",
+  "unit": "u26",
+  "title": "Estimada señora",
+  "text": "Hernando: Al tercer día, el senador volvió. Sacó una carta y la leyó delante de todo el café: «Señora Herrera: usted es una mujer muy estimada en el barrio, y el agua del sábado anterior fue un accidente».\nSimón: ¡Muy estimada! ¡Muy estimada!\nMariana: ¡Imagínate! ¿Y cómo reaccionó Rosa?\nHernando: Rosa le contestó: «No, señor. No fue ningún accidente». Él insistió en pagar. Ella decía que no, y él insistía. Total, que pagó y dejó mil de propina.\nMariana: ¡Increíble! ¡Qué vergüenza para el senador!\nTomás se reía tanto que tiró su vaso, y el vaso se rompió en el piso.\nVale: ¡Qué de malas, Tomás! Pero es una anécdota increíble.\nHernando: Ese día, Rosa se rio conmigo por primera vez. La quise cuarenta años, y nunca le dije nada. Por vergüenza: yo era un taxista gracioso, y ella era Rosa.\nYa no había risa en la mesa.\nHernando: Más tarde me casé con Inés, y la quise mucho. Ella lo sabía.\nSimón: ¡Qué risa! ¡Qué risa!\nNadie reaccionó. Vale puso su mano encima de la mano de Hernando.\nHernando: Era un rasgo de Rosa: la gente le contaba todo. Y era un rasgo mío: yo no le contaba nada.\nMariana cerró su cuaderno. Ese relato no era para un artículo.\nTomás: La anécdota anterior fue la más graciosa, pero este relato fue el mejor de la noche. ¿Y Joaquín? ¿Por qué se fue?\nHernando: No se fue solo por discutir con Rosa. Se fue por una deuda. Y esa noche se rompió algo más que un vaso.",
+  "gloss": [
+    {
+      "es": "la leyó delante de todo el café",
+      "en": "read it out in front of the whole café"
+    },
+    {
+      "es": "usted es una mujer muy estimada en el barrio",
+      "en": "you are a highly respected woman in the neighbourhood"
+    },
+    {
+      "es": "el agua del sábado anterior fue un accidente",
+      "en": "the water last Saturday was an accident"
+    },
+    {
+      "es": "Al tercer día",
+      "en": "On the third day"
+    },
+    {
+      "es": "¡Qué vergüenza para el senador!",
+      "en": "How embarrassing for the senator."
+    },
+    {
+      "es": "No fue ningún accidente.",
+      "en": "It was no accident."
+    },
+    {
+      "es": "Él insistió en pagar",
+      "en": "He insisted on paying"
+    },
+    {
+      "es": "dejó mil de propina",
+      "en": "left a thousand as a tip"
+    },
+    {
+      "es": "tiró su vaso, y el vaso se rompió en el piso",
+      "en": "knocked his glass over, and it broke on the floor"
+    },
+    {
+      "es": "La quise cuarenta años",
+      "en": "I loved her for forty years"
+    },
+    {
+      "es": "Ya no había risa en la mesa.",
+      "en": "There was no more laughter at the table."
+    },
+    {
+      "es": "Por vergüenza: yo era un taxista gracioso, y ella era Rosa.",
+      "en": "Out of embarrassment: I was a funny taxi driver, and she was Rosa."
+    },
+    {
+      "es": "Ella lo sabía.",
+      "en": "She knew."
+    },
+    {
+      "es": "Inés",
+      "en": "Inés (Hernando's late wife)"
+    },
+    {
+      "es": "relato",
+      "en": "story, account"
+    },
+    {
+      "es": "Ese relato no era para un artículo.",
+      "en": "That story was not for an article."
+    },
+    {
+      "es": "La anécdota anterior fue la más graciosa",
+      "en": "The earlier anecdote was the funniest"
+    },
+    {
+      "es": "rasgo",
+      "en": "trait"
+    },
+    {
+      "es": "la gente le contaba todo",
+      "en": "people told her everything"
+    },
+    {
+      "es": "No se fue solo por discutir con Rosa.",
+      "en": "He didn't leave just because he argued with Rosa."
+    },
+    {
+      "es": "Se fue por una deuda.",
+      "en": "He left because of a debt."
+    },
+    {
+      "es": "se rompió algo más que un vaso",
+      "en": "something more than a glass got broken"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What did the senator do when he came back?",
+      "options": [
+        "He brought the police",
+        "He read out a letter, insisted on paying and left a tip",
+        "He threw water at Rosa",
+        "He tried to buy the café"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why did Hernando never tell Rosa he loved her?",
+      "options": [
+        "Out of embarrassment: he felt he was just a funny taxi driver and she was Rosa",
+        "Because Rosa was angry with him",
+        "Because he was leaving Bogotá",
+        "Because Simón would tell everyone"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Quién sabía que Hernando quería a Rosa?",
+      "options": [
+        "Joaquín",
+        "Inés",
+        "El senador",
+        "Nadie"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Simón's \"¡Qué risa!\" land so badly?",
+      "options": [
+        "It comes right after Hernando's sad confession",
+        "Simón is laughing at Tomás's glass",
+        "Nobody understood the joke",
+        "Simón is copying the senator"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What new fact does Hernando give about Joaquín?",
+      "options": [
+        "He went to Medellín",
+        "He left because of a debt, not just a fight",
+        "He died in 1978",
+        "He is still in Bogotá"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Who did Simón copy this time?",
+      "options": [
+        "Rosa",
+        "The senator's letter",
+        "Mariana",
+        "Tomás"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How much did the senator leave as a tip?",
+      "options": [
+        "Three hundred pesos",
+        "A thousand pesos",
+        "Nothing",
+        "Ten thousand pesos"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What happened to Tomás's glass?",
+      "options": [
+        "Simón knocked it over",
+        "He knocked it over laughing and it broke",
+        "Hernando filled it with aguardiente",
+        "Vale took it away"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Joaquín owed money, and the night before he left, something broke between him and Rosa. Tomorrow, with the plates cleared, Hernando tells them what Joaquín asked his sister to do.",
+  "requires": [
+    "c:algo-mas",
+    "c:era",
+    "c:imaginate",
+    "c:no-se",
+    "c:que-de-malas",
+    "c:que-susto",
+    "c:total-que",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:superlatives",
+    "g:that-clauses",
+    "p:cerca-de",
+    "p:costar-pagar",
+    "p:demonstratives-basic",
+    "p:el-agua-fria",
+    "p:exclamations-basic",
+    "p:frequency-scale",
+    "p:la-gente-singular",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:ser-profession-no-article"
+  ],
+  "lexemes": [
+    "l:accidente",
+    "l:agua",
+    "l:anterior",
+    "l:anécdota",
+    "l:artículo",
+    "l:año",
+    "l:barrio",
+    "l:café",
+    "l:carta",
+    "l:casarse",
+    "l:cerrar",
+    "l:contar",
+    "l:contestar",
+    "l:cuaderno",
+    "l:cómo",
+    "l:decir",
+    "l:dejar",
+    "l:delante",
+    "l:deuda",
+    "l:discutir",
+    "l:día",
+    "l:encima",
+    "l:estimado",
+    "l:gente",
+    "l:gracioso",
+    "l:imaginarse",
+    "l:increíble",
+    "l:insistir",
+    "l:irse",
+    "l:leer",
+    "l:mala",
+    "l:mano",
+    "l:mejor",
+    "l:mesa",
+    "l:mujer",
+    "l:noche",
+    "l:pagar",
+    "l:piso",
+    "l:poner",
+    "l:propina",
+    "l:querer",
+    "l:qué",
+    "l:rasgo",
+    "l:reaccionar",
+    "l:relato",
+    "l:reír",
+    "l:risa",
+    "l:romperse",
+    "l:saber",
+    "l:sacar",
+    "l:senador",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sábado",
+    "l:tarde",
+    "l:taxista",
+    "l:tirar",
+    "l:total",
+    "l:vaso",
+    "l:vergüenza",
+    "l:vez",
+    "l:volver"
+  ]
+}

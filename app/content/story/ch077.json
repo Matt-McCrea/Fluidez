@@ -1,0 +1,304 @@
+{
+  "id": "ch077",
+  "unit": "u26",
+  "title": "El balde de Rosa",
+  "text": "El apartamento de Hernando quedaba en un cuarto piso. Tomás llegó arriba sin aire.\nHernando: Sigan, sigan. Hoy cocino yo, con la receta de Rosa.\nEncima de la nevera había un barco en una botella. Simón se sentó en la lámpara.\nVale: Este ajiaco supera todos los ajiacos de La Candelaria.\nHernando: Bueno. ¿Saben qué me pasó en 1983?\nVale: Otro chiste no, por favor.\nHernando: No es un chiste, mija. Es mi mejor anécdota.\nHernando: Un sábado, Rosa estaba limpiando el piso. De repente entró un senador con tres guardaespaldas, gritando y pidiendo ajiaco. Comió por tres. Y se fue hacia la puerta, sonriendo a todo el mundo.\nMariana: ¿Sin pagar?\nHernando: Resulta que ese señor nunca pagaba. Rosa le dijo: «Señor, son trescientos pesos». Y él le contestó: «Señora, ¿usted sabe quién soy yo?».\nHernando: Rosa le dijo: «Sí, señor. Usted es un señor que no paga». Entonces agarró el balde con el agua del piso, y le tiró toda el agua encima, desde la cabeza hasta los pies.\nTomás: ¡No me digas!\nSimón: ¡No me digas! ¡Trescientos pesos!\nHernando: El senador salió corriendo, con agua hasta en las orejas, y los guardaespaldas detrás de él, resbalándose.\nVale se reía con las manos en la cara. Mariana se reía llorando.\nMariana: Altamira ya tiene las medidas del café. Nosotros tenemos un balde.\nTomás: Yo la extraño, y casi no la conocí.\nHernando no contestó. Miró la foto de Rosa en la pared, y dejó de sonreír.\nHernando: Esa es la historia con chistes. Pero no terminó ahí.",
+  "gloss": [
+    {
+      "es": "quedaba en un cuarto piso",
+      "en": "was on the fourth floor"
+    },
+    {
+      "es": "llegó arriba sin aire",
+      "en": "got to the top out of breath"
+    },
+    {
+      "es": "Sigan, sigan.",
+      "en": "Come in, come in."
+    },
+    {
+      "es": "un barco en una botella",
+      "en": "a ship in a bottle"
+    },
+    {
+      "es": "Este ajiaco supera todos los ajiacos de La Candelaria.",
+      "en": "This ajiaco beats every ajiaco in La Candelaria."
+    },
+    {
+      "es": "limpiando el piso",
+      "en": "cleaning the floor"
+    },
+    {
+      "es": "Comió por tres.",
+      "en": "He ate enough for three."
+    },
+    {
+      "es": "guardaespaldas",
+      "en": "bodyguards"
+    },
+    {
+      "es": "sonriendo a todo el mundo",
+      "en": "smiling at everybody"
+    },
+    {
+      "es": "¿usted sabe quién soy yo?",
+      "en": "do you know who I am?"
+    },
+    {
+      "es": "balde",
+      "en": "bucket"
+    },
+    {
+      "es": "agarró",
+      "en": "grabbed"
+    },
+    {
+      "es": "el balde con el agua del piso",
+      "en": "the bucket of floor water"
+    },
+    {
+      "es": "le tiró toda el agua encima",
+      "en": "threw all the water over him"
+    },
+    {
+      "es": "desde la cabeza hasta los pies",
+      "en": "from head to foot"
+    },
+    {
+      "es": "con agua hasta en las orejas",
+      "en": "with water even in his ears"
+    },
+    {
+      "es": "resbalándose",
+      "en": "slipping"
+    },
+    {
+      "es": "se reía llorando",
+      "en": "was laughing so hard she cried"
+    },
+    {
+      "es": "Nosotros tenemos un balde.",
+      "en": "We have a bucket."
+    },
+    {
+      "es": "dejó de sonreír",
+      "en": "stopped smiling"
+    },
+    {
+      "es": "Pero no terminó ahí.",
+      "en": "But it didn't end there."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why did Rosa throw the mop water over the senator?",
+      "options": [
+        "He insulted her coffee",
+        "He ate and tried to leave without paying",
+        "He slipped on her clean floor",
+        "He wanted to buy the café"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How did the senator answer when Rosa asked him to pay?",
+      "options": [
+        "He paid at once",
+        "He asked her if she knew who he was",
+        "He called the police",
+        "He asked for more ajiaco"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué estaba haciendo Rosa cuando entró el senador?",
+      "options": [
+        "Estaba trapeando el piso",
+        "Estaba cantando",
+        "Estaba haciendo pan",
+        "Estaba durmiendo"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Mariana's joke about the bucket mean?",
+      "options": [
+        "Altamira is getting ready to take the café, but they can fight back the way Rosa did",
+        "Altamira wants to buy a bucket",
+        "The café needs cleaning",
+        "Mariana wants to throw water at Hernando"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Hernando stop smiling at the end?",
+      "options": [
+        "The ajiaco is cold",
+        "He has another story about Rosa, one without jokes",
+        "Simón bit him",
+        "Vale insulted his cooking"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What is on top of Hernando's fridge?",
+      "options": [
+        "A photo of Rosa",
+        "A ship in a bottle",
+        "A taxi meter",
+        "Simón's cage"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How much did the senator owe?",
+      "options": [
+        "Three hundred pesos",
+        "Three thousand pesos",
+        "Thirty pesos",
+        "Nothing"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How did the bodyguards leave the café?",
+      "options": [
+        "Laughing",
+        "Slipping in the water behind the senator",
+        "In Hernando's taxi",
+        "They paid and walked out"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "The mop water was the funny half of the story, Hernando says, and the senator came back. Tomorrow Hernando tells the rest, and then the story he has never told anyone.",
+  "requires": [
+    "c:de-repente",
+    "c:entonces-bueno",
+    "c:no-me-digas",
+    "c:por-favor",
+    "c:resulta-que",
+    "c:si-soy-yo",
+    "c:tienes",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:dates-years",
+    "p:dejar-de-inf",
+    "p:demonstratives-basic",
+    "p:desde-hasta",
+    "p:el-agua-fria",
+    "p:frequency-scale",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quedar-cerca",
+    "p:saber-conocer",
+    "p:todos-los-dias"
+  ],
+  "lexemes": [
+    "l:agua",
+    "l:ahí",
+    "l:aire",
+    "l:ajiaco",
+    "l:anécdota",
+    "l:apartamento",
+    "l:arriba",
+    "l:barco",
+    "l:botella",
+    "l:bueno",
+    "l:cabeza",
+    "l:café",
+    "l:cara",
+    "l:chiste",
+    "l:cocinar",
+    "l:comer",
+    "l:conocer",
+    "l:contestar",
+    "l:correr",
+    "l:decir",
+    "l:dejar",
+    "l:detrás",
+    "l:encima",
+    "l:entrar",
+    "l:estar",
+    "l:extraño",
+    "l:favor",
+    "l:foto",
+    "l:gritar",
+    "l:guardaespaldas",
+    "l:historia",
+    "l:hoy",
+    "l:irse",
+    "l:limpiar",
+    "l:llegar",
+    "l:llorar",
+    "l:lámpara",
+    "l:mano",
+    "l:medida",
+    "l:mejor",
+    "l:mija",
+    "l:mirar",
+    "l:mundo",
+    "l:nevera",
+    "l:oreja",
+    "l:pagar",
+    "l:pared",
+    "l:pasar",
+    "l:pedir",
+    "l:peso",
+    "l:pie",
+    "l:piso",
+    "l:puerta",
+    "l:quedar",
+    "l:quién",
+    "l:qué",
+    "l:receta",
+    "l:repente",
+    "l:resultar",
+    "l:reír",
+    "l:saber",
+    "l:salir",
+    "l:seguir",
+    "l:senador",
+    "l:sentarse",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sonreír",
+    "l:superar",
+    "l:sábado",
+    "l:tener",
+    "l:terminar",
+    "l:tirar"
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "id": "ch079",
+  "unit": "u26",
+  "title": "Tinto por tinto",
+  "text": "Ya era casi medianoche. Hernando lavaba los platos, y nadie se iba.\nHernando: En 1978, Joaquín jugaba cartas en un bar de la Séptima. Horas y horas, noches y noches. Y jugaba muy mal.\nHernando: Tan mal como mis chistes.\nSimón: ¡Muy mal! ¡Muy mal!\nHernando: Total, que le debía plata a gente peligrosa. Una noche llegó al café y le dijo a Rosa: «Tenemos que vender el edificio».\nHernando: Rosa le dijo que no. El café era todo lo que tenían. Primero hablaron, y luego empezaron a gritar. Al final, Joaquín golpeó la mesa. Rosa le dijo cosas horribles, y él se fue.\nHernando: Yo estaba afuera, en mi taxi, y lo llevé a la terminal. Allá me dio la mano y me dijo: «Cuide a mi hermana». Y después pasó algo que nadie sabe: Rosa pagó la deuda de Joaquín, tinto por tinto, durante diez años. Nunca vendió. Nunca perdió la fe en él.\nTomás tenía la piel de gallina.\nTomás: Acabo de entender las cuentas de Rosa. Por eso eran un desastre.\nVale: Rosa era una dama. Una dama con un balde, pero una dama.\nTomás: ¿Y Joaquín todavía vive?\nHernando: No sé, mijo. Ya no sé nada de él.\nEn ese momento sonó el celular de Mariana.\nMariana: Altamira acaba de comprar otros dos edificios en la cuadra. Ya tiene seis. Llevo meses con esta historia. Ya es hora de publicarla.\nTomás miró el barco en la botella.\nTomás: Y yo voy a escribirles a todos los Herrera de Santa Marta.",
+  "gloss": [
+    {
+      "es": "Ya era casi medianoche.",
+      "en": "It was almost midnight by now."
+    },
+    {
+      "es": "jugaba cartas en un bar de la Séptima",
+      "en": "played cards in a bar on Seventh Avenue"
+    },
+    {
+      "es": "Horas y horas, noches y noches.",
+      "en": "Hours and hours, night after night."
+    },
+    {
+      "es": "Tan mal como mis chistes.",
+      "en": "As badly as my jokes."
+    },
+    {
+      "es": "le debía plata a gente peligrosa",
+      "en": "he owed money to dangerous people"
+    },
+    {
+      "es": "Tenemos que vender el edificio.",
+      "en": "We have to sell the building."
+    },
+    {
+      "es": "El café era todo lo que tenían.",
+      "en": "The café was all they had."
+    },
+    {
+      "es": "golpeó la mesa",
+      "en": "banged the table"
+    },
+    {
+      "es": "me dio la mano",
+      "en": "shook my hand"
+    },
+    {
+      "es": "Cuide a mi hermana.",
+      "en": "Look after my sister."
+    },
+    {
+      "es": "Y después pasó algo que nadie sabe",
+      "en": "And then something happened that nobody knows about"
+    },
+    {
+      "es": "tinto por tinto, durante diez años",
+      "en": "one coffee at a time, for ten years"
+    },
+    {
+      "es": "Nunca perdió la fe en él.",
+      "en": "She never lost faith in him."
+    },
+    {
+      "es": "tenía la piel de gallina",
+      "en": "had goosebumps"
+    },
+    {
+      "es": "Acabo de entender las cuentas de Rosa.",
+      "en": "I've just understood Rosa's accounts."
+    },
+    {
+      "es": "Por eso eran un desastre.",
+      "en": "That's why they were a mess."
+    },
+    {
+      "es": "dama",
+      "en": "lady"
+    },
+    {
+      "es": "¿Y Joaquín todavía vive?",
+      "en": "And is Joaquín still alive?"
+    },
+    {
+      "es": "Ya no sé nada de él.",
+      "en": "I don't know anything about him any more."
+    },
+    {
+      "es": "acaba de comprar otros dos edificios en la cuadra",
+      "en": "has just bought two more buildings on the block"
+    },
+    {
+      "es": "Llevo meses con esta historia.",
+      "en": "I've been on this story for months."
+    },
+    {
+      "es": "Ya es hora de publicarla.",
+      "en": "It's time to publish it."
+    },
+    {
+      "es": "voy a escribirles a todos los Herrera",
+      "en": "I'm going to write to every Herrera"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why did Joaquín want to sell the building?",
+      "options": [
+        "He wanted to move to the coast",
+        "He owed a lot of money from playing cards",
+        "Altamira offered him a lot of money",
+        "Rosa asked him to"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What did Joaquín say to Hernando at the bus terminal?",
+      "options": [
+        "Never tell Rosa where I went",
+        "Look after my sister",
+        "Sell my half of the building",
+        "I'll be back in a month"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Tomás suddenly understand about Rosa's accounts?",
+      "options": [
+        "She was bad with numbers",
+        "For ten years she was quietly paying off Joaquín's debt, coffee by coffee",
+        "Altamira had stolen from her",
+        "Hernando never paid for his coffee"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué acaba de hacer Altamira?",
+      "options": [
+        "Acaba de comprar dos edificios más en la cuadra",
+        "Acaba de vender el hotel",
+        "Acaba de llamar a Tomás",
+        "Acaba de llegar a la cena"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás decide to do at the end?",
+      "options": [
+        "Sell his half to Altamira",
+        "Write to every Herrera in Santa Marta",
+        "Go back to Toronto",
+        "Publish Mariana's article"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Where was Hernando during the fight between Rosa and Joaquín?",
+      "options": [
+        "Inside, at his table",
+        "Outside, in his taxi",
+        "In Medellín",
+        "At the bar on Seventh Avenue"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How many buildings on the block does Altamira own now, according to Mariana?",
+      "options": [
+        "Two",
+        "Four",
+        "Six",
+        "All of them"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "How does Simón react when Hernando compares Joaquín's card playing to his jokes?",
+      "options": [
+        "He shouts \"Muy mal\" twice",
+        "He sings a bolero",
+        "He says nothing",
+        "He asks for an arepa"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Mariana has a story ready to publish, Tomás has a letter to write to a city he has never seen, and Rosa's café has never had so much to say. Tomorrow everyone starts writing, and not all of it is kind.",
+  "requires": [
+    "c:al-final",
+    "c:era",
+    "c:no-hay-nada",
+    "c:no-se",
+    "c:tienes",
+    "c:total-que",
+    "c:voy-a",
+    "c:ya-no",
+    "g:acabar-de-ya-todavia",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:durar-durante",
+    "p:empezar-terminar",
+    "p:es-tiene-lleva",
+    "p:frequency-scale",
+    "p:hedge-knowledge",
+    "p:horas-y-horas",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:los-garcia",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:acabar",
+    "l:afuera",
+    "l:allá",
+    "l:año",
+    "l:bar",
+    "l:barco",
+    "l:botella",
+    "l:café",
+    "l:carta",
+    "l:celular",
+    "l:chiste",
+    "l:comprar",
+    "l:cosa",
+    "l:cuadra",
+    "l:cuenta",
+    "l:cuidar",
+    "l:dama",
+    "l:dar",
+    "l:deber",
+    "l:decir",
+    "l:desastre",
+    "l:después",
+    "l:deuda",
+    "l:edificio",
+    "l:empezar",
+    "l:entender",
+    "l:escribir",
+    "l:estar",
+    "l:fe",
+    "l:final",
+    "l:gallina",
+    "l:gente",
+    "l:golpear",
+    "l:gritar",
+    "l:hablar",
+    "l:hermana",
+    "l:historia",
+    "l:hora",
+    "l:horrible",
+    "l:ir",
+    "l:irse",
+    "l:jugar",
+    "l:lavar",
+    "l:llegar",
+    "l:llevar",
+    "l:mal",
+    "l:mano",
+    "l:medianoche",
+    "l:mes",
+    "l:mesa",
+    "l:mijo",
+    "l:mirar",
+    "l:momento",
+    "l:noche",
+    "l:pagar",
+    "l:pasar",
+    "l:peligroso",
+    "l:perder",
+    "l:piel",
+    "l:plata",
+    "l:plato",
+    "l:publicar",
+    "l:saber",
+    "l:ser",
+    "l:sonar",
+    "l:taxi",
+    "l:tener",
+    "l:terminal",
+    "l:tinto",
+    "l:total",
+    "l:vender",
+    "l:vivir"
+  ]
+}
