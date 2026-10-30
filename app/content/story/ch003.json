@@ -2,7 +2,7 @@
   "id": "ch003",
   "unit": "u02",
   "title": "Las seis",
-  "text": "Lunes, seis de la mañana. El café no abre, pero Vale ya trabaja.\nVale: ¡Buenos días, Tomás! ¿Ya comiste?\nTomás: No. Y tengo sueño. En Toronto, a las seis, yo duermo.\nVale: Aquí no. Aquí, a las seis, trabajamos. Así es un día normal con doña Rosa.\nVale hace pan, buñuelos y arepas. Compra la leche en la tienda de la esquina. Prepara el tinto.\nTomás: ¿Y yo?\nVale: Tú preparas el tinto de don Hernando. Llega a las siete. Todos los días.\nA las siete en punto, llega Hernando.\nHernando: ¡Buenos días, Vale! ¿Y mi tinto?\nTomás: ¡A la orden, don Hernando! Hoy, tinto de Toronto.\nHernando toma un sorbo. Mira el tinto. Mira a Tomás.\nHernando: Ay, tinto... ¡que te mejores!\nSimón: ¡Que te mejores! ¡Que te mejores!\nVale: La verdad, Tomás, tu tinto no es tinto.\nHernando: Y tú, mijo, ¿dónde vives? ¿Aquí, en La Candelaria?\nTomás: Sí, en un hostel, aquí cerca.\nHernando: ¿En un hostel? ¿El nieto de Rosa, en un hostel?\nTomás: Es que... son unos días, nada más.\nVale mira a Tomás. Tomás no mira a Vale.",
+  "text": "Lunes, seis de la mañana. El café no abre, pero Vale ya trabaja.\nVale: ¡Buenos días, Tomás! ¿Ya comiste?\nTomás: No. Y tengo sueño. En Toronto, a las seis, yo duermo.\nVale: Aquí no. Aquí, a las seis, trabajamos.\nVale hace pan, buñuelos y arepas. Compra la leche en la tienda de la esquina. Prepara el tinto.\nTomás: ¿Y yo?\nVale: Tú preparas el tinto de don Hernando. Llega a las siete. Todos los días.\nA las siete en punto, llega Hernando.\nHernando: ¡Buenos días, Vale! ¿Y mi tinto?\nTomás: ¡A la orden, don Hernando! Hoy, tinto de Toronto.\nHernando toma un sorbo. Mira el tinto. Mira a Tomás.\nHernando: Ay, tinto... ¡que te mejores!\nSimón: ¡Que te mejores! ¡Que te mejores!\nVale: La verdad, Tomás, tu tinto no es tinto.\nHernando: Y tú, mijo, ¿dónde vives? ¿Aquí, en La Candelaria?\nTomás: Sí, en un hostel, aquí cerca.\nHernando: ¿En un hostel? ¿El nieto de Rosa, en un hostel?\nTomás: Es que... son unos días, nada más.\nVale mira a Tomás. Tomás no mira a Vale.",
   "gloss": [
     {
       "es": "Lunes, seis de la mañana",
@@ -23,10 +23,6 @@
     {
       "es": "yo duermo",
       "en": "I'm asleep"
-    },
-    {
-      "es": "Así es un día normal con doña Rosa",
-      "en": "This is what a normal day with Rosa is like"
     },
     {
       "es": "buñuelos y arepas",
@@ -203,7 +199,6 @@
     "l:mijo",
     "l:mirar",
     "l:nieto",
-    "l:normal",
     "l:orden",
     "l:pan",
     "l:preparar",
