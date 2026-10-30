@@ -2,7 +2,7 @@
   "id": "ch004",
   "unit": "u02",
   "title": "El señor Ruiz",
-  "text": "Viernes. Vale sale al banco con las cuentas del café. Las cuentas de Rosa son un desastre.\nHernando está en su mesa, con su tinto. Hoy el tinto es de Vale.\nHernando: Tomás, tú no hablas español. ¡Tú hablas como un libro!\nTomás: Es que estudio español en la computadora.\nHernando: ¿En la computadora? Mi inglés es del taxi: treinta años con turistas.\nHernando: ¿Y en Toronto, Tomás? ¿Trabajas en una oficina?\nTomás: Sí, claro. Trabajo en una empresa grande, de software. Llego a la oficina a las nueve, leo correos, hablo con mi jefe y con mis compañeros. Termino a las cinco.\nHernando: De nueve a cinco. El horario de Rosa era de seis a seis.\nPero no es verdad. En Toronto, Tomás no tiene oficina, no tiene jefe, no tiene compañeros. No tiene trabajo.\nRiiing. Es el celular de Tomás.\nTomás: ¿Aló? ¡Señor Ruiz! Buenos días... ¿Un comprador?... ¿Una empresa?... ¿Y quieren comprar este mes?... Perfecto. Hablamos el lunes. Chao.\nVale ya llega del banco. Está en la puerta, con las cuentas en la mano. Está muy seria.\nVale: ¿Un comprador? Tomás, ¿vendes el café de Rosa?\nTomás: Vale, es que...\nHernando: ¿Una empresa? ¿Altamira?\nTomás: No sé, don Hernando. No sé.\nSimón: ¡Chao, señor Ruiz! ¡Chao!",
+  "text": "Viernes. Vale sale al banco con las cuentas del café. Las cuentas de Rosa son un desastre.\nHernando está en su mesa, con su tinto.\nHernando: Tomás, tú no hablas español. ¡Tú hablas como un libro!\nTomás: Es que estudio español en la computadora.\nHernando: Ah, ya. ¿Y en Toronto, Tomás? ¿Trabajas en una oficina?\nTomás: Sí, claro. Trabajo en una empresa grande, de software. Llego a las nueve, leo correos, hablo con mi jefe. Termino a las cinco.\nHernando: De nueve a cinco. El horario de Rosa era de seis a seis.\nPero no es verdad. En Toronto, Tomás no tiene oficina, no tiene jefe. No tiene trabajo.\nRiiing. Es el celular de Tomás.\nTomás: ¿Aló? ¡Señor Ruiz! Buenos días... ¿Un comprador?... ¿Una empresa?... ¿Y quieren comprar este mes?... Perfecto. Hablamos el lunes. Chao.\nVale llega del banco. Está en la puerta, muy seria.\nVale: ¿Un comprador? Tomás, ¿vendes el café de Rosa?\nTomás: Vale, es que...\nHernando: ¿Una empresa? ¿Altamira?\nTomás: No sé, don Hernando. No sé.\nSimón: ¡Chao, señor Ruiz! ¡Chao!",
   "gloss": [
     {
       "es": "sale al banco",
@@ -21,16 +21,12 @@
       "en": "at his usual table"
     },
     {
-      "es": "Hoy el tinto es de Vale",
-      "en": "Today Vale made the coffee (not Tomás)"
-    },
-    {
       "es": "¡Tú hablas como un libro!",
       "en": "You talk like a book! (too correct, too formal)"
     },
     {
-      "es": "Mi inglés es del taxi: treinta años con turistas",
-      "en": "I learned my English in the taxi: thirty years of tourists (Hernando was a taxi driver)"
+      "es": "Ah, ya",
+      "en": "Ah, that explains it"
     },
     {
       "es": "El horario de Rosa era de seis a seis",
@@ -61,8 +57,8 @@
       "en": "Perfect. Talk on Monday."
     },
     {
-      "es": "Vale ya llega del banco",
-      "en": "Vale is just back from the bank"
+      "es": "Vale llega del banco",
+      "en": "Vale gets back from the bank"
     },
     {
       "es": "en la puerta",
@@ -91,7 +87,7 @@
     {
       "q": "What is the truth about Tomás's job in Toronto?",
       "options": [
-        "There is no job: no office, no boss, no colleagues",
+        "There is no job: no office, no boss",
         "He works nine to five in an office",
         "He is a doctor",
         "He works for Altamira"
@@ -130,12 +126,12 @@
       "answer": 0
     },
     {
-      "q": "Where did Hernando learn his English?",
+      "q": "What does Tomás say he does at work in Toronto?",
       "options": [
-        "From tourists in his taxi",
-        "At university",
-        "From Simón",
-        "In Toronto"
+        "Reads emails and talks to his boss",
+        "Drives a taxi",
+        "Bakes bread",
+        "Sells cafés"
       ],
       "answer": 0
     },
@@ -170,13 +166,11 @@
     "p:quantifiers-basic"
   ],
   "lexemes": [
-    "l:año",
     "l:banco",
     "l:bueno",
     "l:café",
     "l:celular",
     "l:claro",
-    "l:compañero",
     "l:comprador",
     "l:comprar",
     "l:computadora",
@@ -191,14 +185,11 @@
     "l:grande",
     "l:hablar",
     "l:horario",
-    "l:hoy",
-    "l:inglés",
     "l:jefe",
     "l:leer",
     "l:libro",
     "l:llegar",
     "l:lunes",
-    "l:mano",
     "l:mes",
     "l:mesa",
     "l:oficina",
@@ -210,13 +201,11 @@
     "l:ser",
     "l:serio",
     "l:señor",
-    "l:taxi",
     "l:tener",
     "l:terminar",
     "l:tinto",
     "l:trabajar",
     "l:trabajo",
-    "l:turista",
     "l:vender",
     "l:verdad",
     "l:viernes"
