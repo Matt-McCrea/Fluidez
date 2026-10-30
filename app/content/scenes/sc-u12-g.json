@@ -1,0 +1,220 @@
+{
+  "id": "sc-u12-g",
+  "unit": "u12",
+  "title": "Laura's tinto",
+  "brief": "You're Tomás. The morning after the break-in, Laura, a student who stops by every day for a tinto, sees the hole in the wall. Tell her what happened last night, and what it was like. She's your age, so use tú.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, Tomás. Un tinto, por favor. ¿Y qué pasó con esa pared?",
+      "npcEn": "Good morning, Tomás. A black coffee, please. And what happened to that wall?",
+      "intent": "Say a man got in last night: he was looking for something in the wall.",
+      "accept": [
+        "Anoche entró un hombre. Buscaba algo en la pared.",
+        "Un hombre entró anoche y buscaba algo en la pared.",
+        "Anoche entró un hombre y estaba buscando algo en la pared."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "entrar",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "he got in (one event): entró"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿En serio? ¿Y cómo entró?",
+      "npcEn": "Really? And how did he get in?",
+      "intent": "Say you don't know: it was raining a lot, and you and Vale were cleaning the kitchen.",
+      "accept": [
+        "No sé. Llovía mucho y Vale y yo estábamos limpiando la cocina.",
+        "No sé. Estaba lloviendo mucho y estábamos limpiando la cocina.",
+        "No sé, llovía mucho. Vale y yo estábamos limpiando."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bestábamos limpiando\\b",
+          "flags": "i",
+          "label": "we were cleaning: estábamos limpiando"
+        }
+      ],
+      "focus": "g:imperfect-progressive",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y ustedes vieron al hombre? ¿Cómo era?",
+      "npcEn": "And did you see the man? What was he like?",
+      "intent": "Say yes: he was tall, and he ran to the kitchen.",
+      "accept": [
+        "Sí. Era alto y corrió a la cocina.",
+        "Sí, lo vimos. Era alto y corrió a la cocina.",
+        "Sí, era alto. Corrió a la cocina."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ser",
+          "tense": "imperfecto",
+          "person": "él/ella",
+          "label": "what he was like (a description): era"
+        },
+        {
+          "type": "verbForm",
+          "inf": "correr",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "he ran (one event): corrió"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Más alto que tú?",
+      "npcEn": "Taller than you?",
+      "intent": "Say yes, much taller than you.",
+      "accept": [
+        "Sí, mucho más alto que yo.",
+        "Sí, era mucho más alto que yo.",
+        "Era mucho más alto que yo, sí."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bmás alto que yo\\b",
+          "flags": "i",
+          "label": "taller than me: más alto que yo"
+        }
+      ],
+      "focus": "g:comparatives",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Uy, anoche yo volvía a casa y vi a un hombre con una gorra. Estaba corriendo bajo la lluvia.",
+      "npcEn": "Oh, last night I was going home and I saw a man with a cap. He was running in the rain.",
+      "intent": "Say you think it was the same man.",
+      "accept": [
+        "Creo que era el mismo hombre.",
+        "Uy. Creo que fue el mismo hombre.",
+        "Entonces creo que era el hombre de anoche."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcreo que\\b",
+          "flags": "i",
+          "label": "I think that: creo que"
+        }
+      ],
+      "focus": "g:that-clauses",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Qué horror! ¿Y al final se llevó algo?",
+      "npcEn": "How awful! And in the end, did he take anything?",
+      "intent": "Say thank goodness, in the end he didn't find anything, and tell her she doesn't pay for the coffee today.",
+      "accept": [
+        "Menos mal, al final no encontró nada. Hoy no pagas el tinto.",
+        "No. Al final no encontró nada, menos mal. Y hoy no pagas el tinto.",
+        "Menos mal que no. Al final no encontró nada. Hoy no pagas el tinto."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "encontrar",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "he found (one event): encontró"
+        },
+        {
+          "type": "negation"
+        }
+      ],
+      "focus": "c:menos-mal",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:ayer-anoche",
+    "c:como-era",
+    "c:creo-que",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hola-buenos-dias",
+    "c:menos-mal",
+    "c:no-se",
+    "c:por-favor",
+    "c:que-bien",
+    "c:y-que-paso",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:negation-words",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:alto",
+    "l:anoche",
+    "l:bueno",
+    "l:buscar",
+    "l:casa",
+    "l:cocina",
+    "l:correr",
+    "l:creer",
+    "l:cómo",
+    "l:día",
+    "l:encontrar",
+    "l:entrar",
+    "l:estar",
+    "l:favor",
+    "l:final",
+    "l:gorra",
+    "l:hombre",
+    "l:horror",
+    "l:hoy",
+    "l:limpiar",
+    "l:llevarse",
+    "l:llover",
+    "l:lluvia",
+    "l:mal",
+    "l:pagar",
+    "l:pared",
+    "l:pasar",
+    "l:qué",
+    "l:saber",
+    "l:ser",
+    "l:serio",
+    "l:tinto",
+    "l:ver",
+    "l:volver",
+    "p:es-tiene-lleva",
+    "p:hace-frio",
+    "p:indefinites-basic",
+    "p:personal-a",
+    "p:quantifiers-basic"
+  ]
+}
