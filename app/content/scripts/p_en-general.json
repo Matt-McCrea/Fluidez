@@ -1,0 +1,90 @@
+{
+  "node": "p:en-general",
+  "hook": {
+    "line": "Mariana asks Tomás what the people in La Candelaria are like. He can't speak for all of them, but he can say what is usually true.",
+    "es": "En general, la gente del barrio es muy amable.",
+    "en": "In general, people in the neighbourhood are very friendly."
+  },
+  "examples": [
+    { "es": "En general, la gente del barrio es muy amable.", "en": "In general, people in the neighbourhood are very friendly." },
+    { "es": "Por lo general llego a las ocho.", "en": "I usually get in at eight." },
+    { "es": "Por norma general, no trabajo los domingos.", "en": "As a rule, I don't work on Sundays." },
+    { "es": "En general, el café abre a las siete.", "en": "In general, the café opens at seven." },
+    { "es": "Por lo general, don Hernando toma tinto por la mañana.", "en": "Don Hernando usually has black coffee in the morning." },
+    { "es": "¿Cómo es la gente, en general?", "en": "What are people like, in general?" }
+  ],
+  "rule": "These phrases open a statement about the usual case, not one particular day: *en general*, *por lo general*, *por norma general*.\n\nThey can sit at the start, followed by a comma, or at the end of the sentence.\n\nNotice *por lo general*: Spanish needs the *lo*. *Por general* does not exist.\n\nUse them for how things normally are. For one event, say what happened and leave the phrase out: *Ayer cerré a las seis.*",
+  "smallPrint": "Teachers call these generalising adverbial phrases. *Generalmente* works too, but these three sound more natural in speech.",
+  "readAndPick": [
+    { "es": "En general, el café abre a las siete.", "options": ["The café opens at seven today.", "The café usually opens at seven.", "The café opened at seven."], "answer": 1 },
+    { "es": "Por lo general llego a las ocho.", "options": ["I usually get in at eight.", "I got in at eight today."], "answer": 0 },
+    { "es": "Por norma general, no trabajo los domingos.", "options": ["I'm not working this Sunday.", "As a rule, I don't work on Sundays.", "I didn't work on Sunday."], "answer": 1 },
+    { "es": "¿Cómo es la gente, en general?", "options": ["What are people like, in general?", "What is the person like today?"], "answer": 0 },
+    { "es": "Ayer cerré a las seis.", "options": ["I usually close at six.", "I closed at six yesterday."], "answer": 1 },
+    { "es": "Por lo general, don Hernando toma tinto por la mañana.", "options": ["Don Hernando had black coffee this morning.", "Don Hernando usually has black coffee in the morning."], "answer": 1 },
+    { "es": "En general, la gente del barrio es muy amable.", "options": ["One neighbour is very friendly.", "People in the neighbourhood are very friendly in general.", "The neighbours were friendly yesterday."], "answer": 1 },
+    { "es": "Por lo general, cerramos a las seis.", "options": ["We closed at six.", "We usually close at six."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *lo* or *la* and type the whole sentence: *Por ___ general llego a las ocho.*",
+      "answer": "Por lo general llego a las ocho.",
+      "accept": ["Por lo general, llego a las ocho."],
+      "why": "The set phrase is *por lo general*."
+    },
+    {
+      "prompt": "Type in Spanish: In general, the café opens at seven.",
+      "answer": "En general, el café abre a las siete.",
+      "accept": ["En general el café abre a las siete.", "El café abre a las siete, en general."],
+      "why": "*En general* opens a statement about the usual case."
+    },
+    {
+      "prompt": "Type in Spanish: I usually get in at eight.",
+      "answer": "Por lo general llego a las ocho.",
+      "accept": ["Por lo general, llego a las ocho.", "En general llego a las ocho.", "En general, llego a las ocho."],
+      "why": "Usually becomes *por lo general* or *en general*."
+    },
+    {
+      "prompt": "Type in Spanish: As a rule, I don't work on Sundays.",
+      "answer": "Por norma general, no trabajo los domingos.",
+      "accept": ["Por norma general no trabajo los domingos."],
+      "why": "*Por norma general* is the \"as a rule\" version."
+    },
+    {
+      "prompt": "Type in Spanish: In general, people in the neighbourhood are very friendly.",
+      "answer": "En general, la gente del barrio es muy amable.",
+      "accept": ["En general la gente del barrio es muy amable."],
+      "why": "The phrase leads, then the usual case follows."
+    },
+    {
+      "prompt": "Type in Spanish: Yesterday I closed at six. (one day, so no *en general*)",
+      "answer": "Ayer cerré a las seis.",
+      "accept": [],
+      "why": "One event is a plain statement, with no generalising phrase."
+    },
+    {
+      "prompt": "Type in Spanish: Don Hernando usually has black coffee in the morning.",
+      "answer": "Por lo general, don Hernando toma tinto por la mañana.",
+      "accept": ["Por lo general don Hernando toma tinto por la mañana.", "En general, don Hernando toma tinto por la mañana.", "En general don Hernando toma tinto por la mañana."],
+      "why": "Usually is a job for *por lo general* or *en general*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Por general llego a las ocho.",
+      "right": "Por lo general llego a las ocho.",
+      "why": "Almost. The phrase needs its *lo*: *por lo general*."
+    },
+    {
+      "wrong": "Ayer, en general, cerré a las seis.",
+      "right": "Ayer cerré a las seis.",
+      "why": "Almost. *En general* describes the usual case, not one particular day."
+    },
+    {
+      "wrong": "En general es muy amables la gente.",
+      "right": "En general, la gente del barrio es muy amable.",
+      "why": "Almost. After *en general* the sentence is built as normal, and *gente* is singular: *es amable*."
+    }
+  ],
+  "personal": "Tell us one thing that is usually true about your city or your week, starting with *En general* or *Por lo general*."
+}

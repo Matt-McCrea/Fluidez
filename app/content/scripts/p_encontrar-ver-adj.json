@@ -1,0 +1,90 @@
+{
+  "node": "p:encontrar-ver-adj",
+  "hook": {
+    "line": "A customer looks at the new prices on the menu and gives Tomás her verdict. In Spanish you can pass judgement on a thing or a person by putting them in the object slot, with a pronoun and an adjective.",
+    "es": "Lo encuentro un poco caro para lo que es.",
+    "en": "I find it a bit expensive for what it is."
+  },
+  "examples": [
+    { "es": "Lo encuentro un poco caro para lo que es.", "en": "I find it a bit expensive for what it is." },
+    { "es": "Te veo muy cansada.", "en": "You look very tired to me. (to a woman, friend)" },
+    { "es": "¿Cómo me ves?", "en": "How do I look to you? (to a friend)" },
+    { "es": "La veo muy contenta.", "en": "She looks very happy to me." },
+    { "es": "Los veo cansados.", "en": "They look tired to me. (men)" },
+    { "es": "Lo encuentro difícil.", "en": "I find it difficult." }
+  ],
+  "rule": "To give a verdict, use *encontrar* or *ver* with a pronoun, then the adjective.\n\n*Lo encuentro caro.* I find it expensive.\n*La veo contenta.* She looks happy to me.\n\nThe person giving the opinion is the subject (*yo*). The thing or person being judged is the object, so it takes *lo, la, los, las, te, me*.\n\nThe adjective agrees with that object: *la veo cansada*, *los veo cansados*.\n\nThis is not *me parece*: there the thing is the subject and you are *me*. Here you are the subject.\n\nAsk for a verdict with *¿Cómo lo ves?* or *¿Cómo me ves?*",
+  "smallPrint": "Teachers call this an object complement: the adjective describes the direct object.",
+  "readAndPick": [
+    { "es": "La veo muy contenta.", "options": ["I see a very happy man.", "She looks very happy to me.", "They look very happy to me."], "answer": 1 },
+    { "es": "Los veo cansados.", "options": ["They look tired to me. (men)", "She looks tired to me.", "I look tired."], "answer": 0 },
+    { "es": "Lo encuentro difícil.", "options": ["I find it difficult.", "It finds me difficult."], "answer": 0 },
+    { "es": "Te veo muy cansada.", "options": ["You look very tired to me. (to a woman, friend)", "You look very tired to me. (to a man, friend)", "She looks very tired to me."], "answer": 0 },
+    { "es": "¿Cómo me ves?", "options": ["How do you see me? (to a friend)", "How do I see you? (to a friend)", "How do they see me?"], "answer": 0 },
+    { "es": "Lo veo muy cansado.", "options": ["He looks very tired to me.", "She looks very tired to me.", "They look very tired to me."], "answer": 0 },
+    { "es": "Las veo cansadas.", "options": ["They look tired to me. (men)", "They look tired to me. (women)"], "answer": 1 },
+    { "es": "Lo encuentro un poco caro.", "options": ["I find it a bit expensive.", "I find it very expensive.", "I find it a bit cheap."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *cansado* or *cansada* and type the whole sentence, about Vale: *La veo ___.*",
+      "answer": "La veo cansada.",
+      "accept": [],
+      "why": "*La* points to a woman, so the adjective is *cansada*."
+    },
+    {
+      "prompt": "Type in Spanish: I find it difficult.",
+      "answer": "Lo encuentro difícil.",
+      "accept": [],
+      "why": "*Lo* is the thing judged and *difícil* is the verdict."
+    },
+    {
+      "prompt": "Type in Spanish: I find it a bit expensive.",
+      "answer": "Lo encuentro un poco caro.",
+      "accept": [],
+      "why": "A little softener like *un poco* goes before the adjective."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend (a woman): You look very tired to me.",
+      "answer": "Te veo muy cansada.",
+      "accept": [],
+      "why": "*Te* is you, and the adjective agrees with a woman."
+    },
+    {
+      "prompt": "Type in Spanish: She looks very happy to me.",
+      "answer": "La veo muy contenta.",
+      "accept": [],
+      "why": "*La* is she, so *contenta* ends in -a."
+    },
+    {
+      "prompt": "Type in Spanish, asking a friend: How do I look to you?",
+      "answer": "¿Cómo me ves?",
+      "accept": [],
+      "why": "You are asking for a verdict on *me*, so *me ves*."
+    },
+    {
+      "prompt": "Type in Spanish: They look tired to me. (men)",
+      "answer": "Los veo cansados.",
+      "accept": [],
+      "why": "*Los* and *cansados* both show it is more than one man."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La veo cansado.",
+      "right": "La veo cansada.",
+      "why": "Almost. The adjective agrees with the person you are judging: she, so *cansada*."
+    },
+    {
+      "wrong": "Veo muy cansada a ti.",
+      "right": "Te veo muy cansada.",
+      "why": "Almost. Use the pronoun *te* in front of the verb, not a separate *a ti*."
+    },
+    {
+      "wrong": "Me encuentro caro el café.",
+      "right": "Lo encuentro caro.",
+      "why": "Almost. The thing judged is the object, so the pronoun is *lo*, not *me*."
+    }
+  ],
+  "personal": "Look around you and give a verdict with *Lo encuentro...* or *Lo veo...* about something near you, such as your coffee."
+}
