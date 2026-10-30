@@ -1,0 +1,45 @@
+{
+  "node": "x:ir-irse",
+  "hook": {
+    "line": "It's closing time at the café. Vale calls from the kitchen, and Tomás has to choose between two answers that sound almost the same but say opposite things. Two little letters decide whether you are on your way over or on your way out.",
+    "es": "Ya voy, Vale. Todavía no me voy.",
+    "en": "I'm coming, Vale. I'm not leaving yet."
+  },
+  "examples": [
+    { "es": "Voy a casa de Vale.", "en": "I'm going to Vale's place." },
+    { "es": "Me voy de casa de Vale.", "en": "I'm leaving Vale's place." },
+    { "es": "Ya voy.", "en": "I'm coming." },
+    { "es": "Ya me voy.", "en": "I'm leaving now." },
+    { "es": "Hernando va al parque a las cinco.", "en": "Hernando goes to the park at five." },
+    { "es": "Hernando se va a las cinco.", "en": "Hernando leaves at five." },
+    { "es": "¿Te vas ya?", "en": "Are you leaving already? (to a friend)" }
+  ],
+  "rule": "Both mean *go*, but they look in opposite directions.\n\n*Ir* looks ahead, at where you are heading: *Voy a casa de Vale*. It wants a place, and you are travelling towards it.\n*Irse* looks back, at where you are leaving: *Me voy de casa de Vale*. The place you leave is behind you, and it can drop out altogether: *Me voy*.\n\nWhen someone calls you, English says *I'm coming*. Spanish says *ya voy*, because you are going towards them.\n\nThe *se* word follows the person: *me voy, te vas, se va, nos vamos*.\n\nThe same idea shows up in other pairs: *dormir* and *dormirse*, *quedar* and *quedarse*.",
+  "smallPrint": "Teachers say *irse* stresses the departure and *ir* the destination: both describe the same movement, seen from opposite ends.",
+  "readAndPick": [
+    { "es": "Ya voy.", "options": ["I'm coming.", "I'm leaving."], "answer": 0 },
+    { "es": "Ya me voy.", "options": ["I'm coming.", "I'm leaving now."], "answer": 1 },
+    { "es": "Voy a casa de Vale.", "options": ["I'm leaving Vale's place.", "I'm going to Vale's place."], "answer": 1 },
+    { "es": "Me voy de casa de Vale.", "options": ["I'm leaving Vale's place.", "I'm going to Vale's place."], "answer": 0 },
+    { "es": "¿Te vas ya?", "options": ["Are you coming already?", "Are you leaving already?"], "answer": 1 },
+    { "es": "Hernando se va a las cinco.", "options": ["Hernando leaves at five.", "Hernando arrives at five."], "answer": 0 },
+    { "es": "Nos vamos del cine.", "options": ["We're going to the cinema.", "We're leaving the cinema."], "answer": 1 },
+    { "es": "Vamos al cine.", "options": ["We're going to the cinema.", "We're leaving the cinema."], "answer": 0 },
+    { "es": "Se fue sin decir nada.", "options": ["He went there without saying anything.", "He left without saying anything."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (I'm going to Vale's place): ___ a casa de Vale. (Voy / Me voy)", "answer": "Voy a casa de Vale.", "accept": [], "why": "You are heading towards a place, so plain *ir*." },
+    { "prompt": "Choose the right form and type the whole sentence (I'm leaving here): ___ de aquí. (Voy / Me voy)", "answer": "Me voy de aquí.", "accept": [], "why": "*De aquí* is the place you leave, so it needs *irse*." },
+    { "prompt": "Type in Spanish (someone calls you from the kitchen): I'm coming!", "answer": "Ya voy.", "accept": ["¡Ya voy!"], "why": "You are going towards them, so *ir*, with no *me*." },
+    { "prompt": "Type in Spanish: I'm leaving now.", "answer": "Ya me voy.", "accept": ["Me voy ya."], "why": "Leaving is *irse*, so *me* stays." },
+    { "prompt": "Type in Spanish: Hernando leaves at five.", "answer": "Hernando se va a las cinco.", "accept": ["Hernando se va a las 5."], "why": "He leaves, so *se va*, matching *Hernando*." },
+    { "prompt": "Ask a friend if they are leaving already.", "answer": "¿Te vas ya?", "accept": ["¿Ya te vas?"], "why": "*Te* is your friend, and leaving needs *irse*." },
+    { "prompt": "Make it about *we*: Me voy mañana.", "answer": "Nos vamos mañana.", "accept": ["Mañana nos vamos."], "why": "Both *me* and the verb change for *we*: *nos vamos*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Voy de aquí.", "right": "Me voy de aquí.", "why": "Plain *ir* wants a place to go to; leaving a place needs *irse*." },
+    { "wrong": "Me vamos del cine.", "right": "Nos vamos del cine.", "why": "The *se* word has to match the person, so *we* is *nos*." },
+    { "wrong": "Ya me voy, Vale. (answering her call)", "right": "Ya voy, Vale.", "why": "To say you are on your way to her, use plain *ir*; *me voy* would tell her you are leaving." }
+  ],
+  "personal": "Say when you are leaving home today, or where you are going next. Use *me voy* or *voy a*."
+}

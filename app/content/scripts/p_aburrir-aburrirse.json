@@ -1,0 +1,43 @@
+{
+  "node": "p:aburrir-aburrirse",
+  "hook": {
+    "line": "Sundays at the café are slow, and Vale has nobody to talk to. English says *bored* and *boring* with nearly the same word, and mixing them up is how you end up telling people you are a dull person.",
+    "es": "Los domingos me aburro en casa.",
+    "en": "On Sundays I get bored at home."
+  },
+  "examples": [
+    { "es": "Me aburro cuando no hay clientes.", "en": "I get bored when there are no customers." },
+    { "es": "Hoy no hay clientes y estoy aburrida.", "en": "There are no customers today and I'm bored. (a woman speaking)" },
+    { "es": "Esta película es aburrida.", "en": "This film is boring." },
+    { "es": "¿Te aburres en casa?", "en": "Do you get bored at home? (to a friend)" },
+    { "es": "Hernando no es aburrido, es muy simpático.", "en": "Hernando isn't boring, he's very nice." },
+    { "es": "Estoy aburrido.", "en": "I'm bored. (a man speaking)" }
+  ],
+  "rule": "English has two words, *bored* and *boring*. Spanish uses the verb to tell them apart.\n\n*Me aburro*: I get bored. Something happens to you: *Me aburro los domingos*.\n*Estoy aburrido*: I'm bored right now. Use *aburrida* if you are a woman.\n*Es aburrido*: it is boring, a quality of the film or the person: *Esta película es aburrida*.\n\nSo *estoy* tells how you feel, and *es* tells what something is like. The adjective matches whoever it describes.\n\nSoon you will also meet *esta serie me aburre*, where the cause comes first.",
+  "smallPrint": "Teachers call *aburrirse* a pronominal verb: the *se* version is the one where you are the one who feels it.",
+  "readAndPick": [
+    { "es": "Estoy aburrido.", "options": ["I'm bored.", "I'm boring."], "answer": 0 },
+    { "es": "Soy aburrido.", "options": ["I'm bored.", "I'm boring."], "answer": 1 },
+    { "es": "Esta película es aburrida.", "options": ["I'm bored with this film.", "This film is boring."], "answer": 1 },
+    { "es": "Me aburro los domingos.", "options": ["I get bored on Sundays.", "Sundays are boring."], "answer": 0 },
+    { "es": "Los domingos son aburridos.", "options": ["I get bored on Sundays.", "Sundays are boring."], "answer": 1 },
+    { "es": "Hernando es aburrido.", "options": ["Hernando is bored.", "Hernando is boring."], "answer": 1 },
+    { "es": "Hernando está aburrido.", "options": ["Hernando is bored.", "Hernando is boring."], "answer": 0 },
+    { "es": "¿Te aburres en casa?", "options": ["Is your home boring?", "Do you get bored at home?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (I get bored on Sundays): ___ los domingos. (Me aburro / Soy aburrido)", "answer": "Me aburro los domingos.", "accept": ["Los domingos me aburro."], "why": "Something happens to you, so *me aburro*." },
+    { "prompt": "Choose the right form and type the whole sentence (This film is boring): Esta película ___ aburrida. (es / está)", "answer": "Esta película es aburrida.", "accept": [], "why": "Boring is what the film is like, so *es*." },
+    { "prompt": "Type in Spanish (a man speaking): I'm bored right now.", "answer": "Estoy aburrido.", "accept": ["Estoy aburrido ahora."], "why": "How you feel right now is *estoy*." },
+    { "prompt": "Type in Spanish (a woman speaking): I'm bored right now.", "answer": "Estoy aburrida.", "accept": ["Estoy aburrida ahora."], "why": "A woman speaking uses *aburrida*." },
+    { "prompt": "Ask a friend if they get bored at home.", "answer": "¿Te aburres en casa?", "accept": [], "why": "*Te* is your friend, and the verb ends in *-es* for *you*." },
+    { "prompt": "Make it about Hernando: Me aburro los domingos.", "answer": "Hernando se aburre los domingos.", "accept": ["Los domingos Hernando se aburre."], "why": "*Se aburre* matches *Hernando*." },
+    { "prompt": "Type in Spanish: That series is very boring.", "answer": "Esa serie es muy aburrida.", "accept": [], "why": "Boring describes the series, so *es* and *aburrida*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Soy aburrido.", "right": "Estoy aburrido.", "why": "*Soy aburrido* says you are a boring person; for how you feel, use *estoy*." },
+    { "wrong": "Aburro los domingos.", "right": "Me aburro los domingos.", "why": "Without *me* the verb means you bore other people; to get bored yourself, add *me*." },
+    { "wrong": "Esta película está aburrida.", "right": "Esta película es aburrida.", "why": "A film does not feel bored; it is boring, so *es*." }
+  ],
+  "personal": "Tell us when you get bored, or one thing that is boring. Use *me aburro* or *es aburrido*."
+}

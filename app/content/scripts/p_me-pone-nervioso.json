@@ -1,0 +1,43 @@
+{
+  "node": "p:me-pone-nervioso",
+  "hook": {
+    "line": "Tomás keeps checking his phone to see whether Vale has answered, and he can't say why it bothers him so much. To say what gets under your skin, Spanish lets the thing itself do the work: it puts you in a mood.",
+    "es": "Me pone nervioso que Vale no conteste.",
+    "en": "It makes me nervous that Vale doesn't answer."
+  },
+  "examples": [
+    { "es": "Me pone nervioso hablar en público.", "en": "Speaking in public makes me nervous. (a man speaking)" },
+    { "es": "Me pone nerviosa la reunión.", "en": "The meeting makes me nervous. (a woman speaking)" },
+    { "es": "Me ponen de mal genio los trancones.", "en": "Traffic jams put me in a bad mood." },
+    { "es": "Me pone triste esa noticia.", "en": "That news makes me sad." },
+    { "es": "¿Te pone nerviosa la entrevista?", "en": "Does the interview make you nervous? (to a woman, informal)" },
+    { "es": "Me pone nervioso que Vale no conteste.", "en": "It makes me nervous that Vale doesn't answer." }
+  ],
+  "rule": "English says *it makes me nervous*. Spanish says *me pone nervioso*, with *poner* (to put). The cause is the subject, and you are the *me*.\n\n*Me pone nervioso* + the cause: *el examen*, *hablar en público*, or *que* + a clause.\n*Me ponen nervioso* when the cause is plural: *las reuniones*.\n\nThe verb agrees with the cause. The adjective agrees with the person affected: *me pone nerviosa* from a woman. Change *me* to *te*, *le*, *nos* for other people.\n\nCompare *me pongo nervioso*: you change, and nothing else is to blame. For a mood, use *poner*, never *hacer*.",
+  "smallPrint": "Teachers call this a causative use of *poner*, as opposed to *ponerse*, where you are the one who changes.",
+  "readAndPick": [
+    { "es": "Me pone nerviosa la reunión.", "options": ["A woman says the meeting makes her nervous.", "A man says the meeting makes him nervous."], "answer": 0 },
+    { "es": "Me pone nervioso hablar en público.", "options": ["A woman says speaking in public makes her nervous.", "A man says speaking in public makes him nervous."], "answer": 1 },
+    { "es": "Me ponen de mal genio los trancones.", "options": ["A traffic jam puts me in a bad mood.", "Traffic jams put me in a bad mood."], "answer": 1 },
+    { "es": "Me pone triste esa noticia.", "options": ["That news makes me sad.", "I get sad about that news."], "answer": 0 },
+    { "es": "¿Te pone nerviosa la entrevista?", "options": ["Does the interview make you nervous? (to a man)", "Does the interview make you nervous? (to a woman)"], "answer": 1 },
+    { "es": "Le pone nerviosa que la miren.", "options": ["It makes him nervous that people look at him.", "It makes her nervous that people look at her."], "answer": 1 },
+    { "es": "Nos pone tristes la noticia.", "options": ["The news makes me sad.", "The news makes us sad."], "answer": 1 },
+    { "es": "No me pone nervioso volar.", "options": ["Flying makes me nervous.", "Flying doesn't make me nervous."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence: Me ___ nervioso el examen. (pone / ponen)", "answer": "Me pone nervioso el examen.", "accept": ["El examen me pone nervioso."], "why": "*El examen* is one thing, so the verb is *pone*." },
+    { "prompt": "Choose the right form and type the whole sentence: Me ___ de mal genio los trancones. (pone / ponen)", "answer": "Me ponen de mal genio los trancones.", "accept": ["Los trancones me ponen de mal genio."], "why": "*Los trancones* are plural, so the verb is *ponen*." },
+    { "prompt": "Type in Spanish (a man speaking): Speaking in public makes me nervous.", "answer": "Me pone nervioso hablar en público.", "accept": ["Hablar en público me pone nervioso."], "why": "The cause is the subject of *pone*, and *nervioso* matches the man who feels it." },
+    { "prompt": "Type in Spanish (a woman speaking): The meeting makes me nervous.", "answer": "Me pone nerviosa la reunión.", "accept": ["La reunión me pone nerviosa."], "why": "A woman feels it, so the adjective is *nerviosa*, even though the verb follows *la reunión*." },
+    { "prompt": "Type in Spanish: That news makes me sad.", "answer": "Me pone triste esa noticia.", "accept": ["Esa noticia me pone triste."], "why": "*Poner* plus a feeling word says what the news does to you." },
+    { "prompt": "Make it negative: Me pone nervioso volar.", "answer": "No me pone nervioso volar.", "accept": ["Volar no me pone nervioso."], "why": "*No* goes right before *me*." },
+    { "prompt": "Ask a friend (a woman) if the interview makes her nervous.", "answer": "¿Te pone nerviosa la entrevista?", "accept": ["¿La entrevista te pone nerviosa?"], "why": "*Te* is her, and *nerviosa* matches her." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me hace nervioso la reunión.", "right": "Me pone nervioso la reunión.", "why": "English says *makes*, but Spanish puts you in a mood with *poner*, not *hacer*." },
+    { "wrong": "Me pongo nervioso el examen.", "right": "Me pone nervioso el examen.", "why": "*Me pongo* means you change by yourself; when something causes it, the cause is the subject: *pone*." },
+    { "wrong": "Me pone nervioso las reuniones.", "right": "Me ponen nervioso las reuniones.", "why": "The verb agrees with the cause (*las reuniones*, plural), while the adjective agrees with you." }
+  ],
+  "personal": "Say one thing that puts you in a bad mood, or makes you nervous. Start with *Me pone* or *Me ponen*."
+}
