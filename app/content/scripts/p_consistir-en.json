@@ -1,0 +1,181 @@
+{
+  "node": "p:consistir-en",
+  "hook": {
+    "line": "On your first day, or when you explain a job to a friend, someone asks what it actually involves. Spanish has one tidy verb for that.",
+    "es": "¿En qué consiste el proceso?",
+    "en": "What does the process involve?"
+  },
+  "examples": [
+    {
+      "es": "Mi trabajo consiste en preparar el café.",
+      "en": "My job involves making the coffee."
+    },
+    {
+      "es": "¿En qué consiste el proceso?",
+      "en": "What does the process involve?"
+    },
+    {
+      "es": "La prueba consiste en traducir un texto.",
+      "en": "The test consists of translating a text."
+    },
+    {
+      "es": "La oferta de Altamira consiste en comprar toda la cuadra.",
+      "en": "Altamira's offer consists of buying the whole block."
+    },
+    {
+      "es": "Las pruebas consisten en traducir textos.",
+      "en": "The tests consist of translating texts."
+    },
+    {
+      "es": "El proyecto no consiste en vender el café.",
+      "en": "The project does not consist of selling the café."
+    }
+  ],
+  "rule": "*Consistir en* says what something is made up of or involves. The word after *en* is a noun or an infinitive: *consiste en atender*, *consiste en un texto*.\n\nThe preposition is always *en*. English \"consist of\" tempts you to say *de*; don't.\n\nThe verb agrees with the thing: *consiste*, *consisten*.\n\nTo ask, use *¿En qué consiste…?*",
+  "smallPrint": "Teachers call this a verb with a fixed preposition (a prepositional complement).",
+  "readAndPick": [
+    {
+      "es": "La receta consiste en mezclar la harina y los huevos.",
+      "options": [
+        "The recipe involves mixing the flour and eggs.",
+        "The recipe is kept in the flour and eggs.",
+        "The recipe is mixed with flour and eggs."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿En qué consiste tu trabajo?",
+      "options": [
+        "Where is your job? (to a friend)",
+        "What does your job involve? (to a friend)",
+        "Who is your job? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las pruebas consisten en traducir textos.",
+      "options": [
+        "The test consists of translating a text.",
+        "The tests consist of translating a text.",
+        "The tests consist of translating texts."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El problema consiste en que no hay plata.",
+      "options": [
+        "The problem is that there is no money.",
+        "The problem is in the bank.",
+        "The problem will cost money."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La prueba consiste en traducir un texto.",
+      "options": [
+        "The test consists of translating a text.",
+        "The tests consist of translating a text.",
+        "The test is a translated text."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El proyecto no consiste en vender el café.",
+      "options": [
+        "The project consists of selling the café.",
+        "The project does not consist of selling the café.",
+        "The café does not consist of a project."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La oferta de Altamira consiste en comprar toda la cuadra.",
+      "options": [
+        "Altamira's offer consists of selling the whole block.",
+        "Altamira's offer consists of buying the whole block.",
+        "Altamira's offer is on the whole block."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿En qué consiste la reunión?",
+      "options": [
+        "What does the meeting involve?",
+        "When is the meeting?",
+        "Where is the meeting?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mi trabajo consiste en atender a los clientes.",
+      "options": [
+        "My job involves serving customers.",
+        "My job is with the customers.",
+        "My job has no customers."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *en* or *de* and type the whole sentence: *El trabajo consiste ___ atender a los clientes.*",
+      "answer": "El trabajo consiste en atender a los clientes.",
+      "accept": [],
+      "why": "*Consistir* always takes *en*."
+    },
+    {
+      "prompt": "Type in Spanish: What does the process involve?",
+      "answer": "¿En qué consiste el proceso?",
+      "accept": [],
+      "why": "*¿En qué consiste…?* is the way to ask what something involves."
+    },
+    {
+      "prompt": "Type in Spanish: My job involves making the coffee.",
+      "answer": "Mi trabajo consiste en preparar el café.",
+      "accept": [],
+      "why": "*Consiste en* plus an infinitive says what the job involves."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: What does your job involve?",
+      "answer": "¿En qué consiste tu trabajo?",
+      "accept": [],
+      "why": "*Tu trabajo* is one thing, so the verb stays *consiste*."
+    },
+    {
+      "prompt": "Make it plural: *La prueba consiste en traducir un texto.* Say: The tests consist of translating texts.",
+      "answer": "Las pruebas consisten en traducir textos.",
+      "accept": [],
+      "why": "Two tests make the verb *consisten*."
+    },
+    {
+      "prompt": "Make it negative: Type in Spanish: The project does not consist of selling the café.",
+      "answer": "El proyecto no consiste en vender el café.",
+      "accept": [],
+      "why": "*No* goes before the verb."
+    },
+    {
+      "prompt": "Type in Spanish: Altamira's offer consists of buying the whole block.",
+      "answer": "La oferta de Altamira consiste en comprar toda la cuadra.",
+      "accept": [],
+      "why": "Same frame: thing, *consiste en*, infinitive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El trabajo consiste de atender a los clientes.",
+      "right": "El trabajo consiste en atender a los clientes.",
+      "why": "Almost. English says \"consist of\", but Spanish uses *en*."
+    },
+    {
+      "wrong": "Las pruebas consiste en traducir textos.",
+      "right": "Las pruebas consisten en traducir textos.",
+      "why": "Almost. Two tests need the plural verb *consisten*."
+    },
+    {
+      "wrong": "El trabajo consiste en atendiendo a los clientes.",
+      "right": "El trabajo consiste en atender a los clientes.",
+      "why": "Almost. After *en* Spanish uses the infinitive, not *-ando*."
+    }
+  ],
+  "personal": "Explain your own job or a hobby in one sentence, starting with *Mi trabajo consiste en…* or *Lo que hago consiste en…*."
+}

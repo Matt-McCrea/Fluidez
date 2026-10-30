@@ -1,0 +1,181 @@
+{
+  "node": "p:plural-one-object",
+  "hook": {
+    "line": "Everyone loses their glasses at some point. English already treats a few things as plural even though you have one (glasses, scissors, trousers), and Spanish does the same with a longer list.",
+    "es": "¿Dónde dejé los lentes?",
+    "en": "Where did I leave my glasses?"
+  },
+  "examples": [
+    {
+      "es": "¿Dónde dejé los lentes?",
+      "en": "Where did I leave my glasses?"
+    },
+    {
+      "es": "Pásame las tijeras.",
+      "en": "Pass me the scissors. (to a friend)"
+    },
+    {
+      "es": "Necesito unos pantalones nuevos.",
+      "en": "I need some new trousers."
+    },
+    {
+      "es": "Bajó por las escaleras.",
+      "en": "She went down the stairs."
+    },
+    {
+      "es": "Los lentes de Don Hernando están en la mesa.",
+      "en": "Don Hernando's glasses are on the table."
+    },
+    {
+      "es": "Estas crisis son serias.",
+      "en": "These crises are serious."
+    }
+  ],
+  "rule": "Some one-piece things are plural in Spanish, so the article, the adjective and the verb are plural too: *los lentes*, *las tijeras*, *los pantalones*, *las escaleras*. Say *unos pantalones nuevos*, *unas tijeras*. In Latin America *un pantalón* is also normal.\n\nThe opposite happens too: a few words look the same in singular and plural, so only the article tells you: *la crisis, las crisis*; *el virus, los virus*; *el análisis, los análisis*.\n\nWatch the article and the verb. They carry the number.",
+  "smallPrint": "Teachers call words like *tijeras* plural-only nouns, and *crisis* an invariable noun.",
+  "readAndPick": [
+    {
+      "es": "Estos lentes son nuevos.",
+      "options": [
+        "These glasses are new.",
+        "This lens is new.",
+        "These glasses were new."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La crisis es seria.",
+      "options": [
+        "The crises are serious.",
+        "The crisis is serious.",
+        "The crisis was serious."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las crisis son serias.",
+      "options": [
+        "The crisis is serious.",
+        "The crisis was serious.",
+        "The crises are serious."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los virus cambian rápido.",
+      "options": [
+        "Viruses change fast.",
+        "The virus changes fast.",
+        "The virus changed fast."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El virus cambia rápido.",
+      "options": [
+        "Viruses change fast.",
+        "The virus changes fast.",
+        "The virus will change fast."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pásame las tijeras.",
+      "options": [
+        "Pass me the scissors. (to a friend)",
+        "Pass me the paper. (to a friend)",
+        "I passed you the scissors."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Necesito unos pantalones nuevos.",
+      "options": [
+        "I need some new trousers.",
+        "I need a new shirt.",
+        "I needed some new trousers."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los análisis salieron bien.",
+      "options": [
+        "The test results came out well.",
+        "The test result came out well.",
+        "The test results came out badly."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Bajó por las escaleras.",
+      "options": [
+        "She went down the stairs.",
+        "She went up the stairs.",
+        "She stayed on the stairs."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *el* or *los* and type the whole sentence: *___ pantalones son demasiado largos.*",
+      "answer": "Los pantalones son demasiado largos.",
+      "accept": [],
+      "why": "*Pantalones* is plural, so the article is *los*."
+    },
+    {
+      "prompt": "Type in Spanish: Where did I leave my glasses?",
+      "answer": "¿Dónde dejé los lentes?",
+      "accept": [],
+      "why": "*Lentes* is plural, so *los*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Pass me the scissors.",
+      "answer": "Pásame las tijeras.",
+      "accept": [],
+      "why": "*Tijeras* is plural, so *las*."
+    },
+    {
+      "prompt": "Type in Spanish: I need some new trousers.",
+      "answer": "Necesito unos pantalones nuevos.",
+      "accept": [],
+      "why": "Both *unos* and *nuevos* are plural, like *pantalones*."
+    },
+    {
+      "prompt": "Make it plural: *La crisis es seria.* Say: The crises are serious.",
+      "answer": "Las crisis son serias.",
+      "accept": [],
+      "why": "*Crisis* does not change; the article, the verb and the adjective do."
+    },
+    {
+      "prompt": "Type in Spanish: The stairs are very old.",
+      "answer": "Las escaleras son muy viejas.",
+      "accept": [],
+      "why": "*Escaleras* is feminine plural, so *viejas*."
+    },
+    {
+      "prompt": "Make it plural: *El virus cambia rápido.* Say: Viruses change fast.",
+      "answer": "Los virus cambian rápido.",
+      "accept": [],
+      "why": "*Virus* stays the same; *los* and *cambian* show the plural."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Necesito un pantalones nuevos.",
+      "right": "Necesito unos pantalones nuevos.",
+      "why": "Almost. *Pantalones* is plural, so the article must be too."
+    },
+    {
+      "wrong": "Pásame la tijera.",
+      "right": "Pásame las tijeras.",
+      "why": "Almost. Scissors are plural in Spanish, just like in English."
+    },
+    {
+      "wrong": "Los viruses cambian rápido.",
+      "right": "Los virus cambian rápido.",
+      "why": "Almost. *Virus* has no separate plural ending; the article shows it."
+    }
+  ],
+  "personal": "Say where something of yours is right now, using a plural-only word: *los lentes*, *las tijeras* or *los pantalones*."
+}

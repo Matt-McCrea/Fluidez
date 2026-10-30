@@ -1,0 +1,190 @@
+{
+  "node": "x:lo-que-el-que",
+  "hook": {
+    "line": "English has one word for both jobs: \"which\". In Spanish you have to decide whether you are pointing back at a whole event or at one particular thing, and the answer changes the word.",
+    "es": "No vino, lo que me molestó.",
+    "en": "He didn't come, which annoyed me."
+  },
+  "examples": [
+    {
+      "es": "No vino, lo que me molestó.",
+      "en": "He didn't come, which annoyed me."
+    },
+    {
+      "es": "La casa en la que vivo es vieja.",
+      "en": "The house I live in is old."
+    },
+    {
+      "es": "El café cerró, lo que preocupó a todos.",
+      "en": "The café closed, which worried everyone."
+    },
+    {
+      "es": "La mujer con la que hablé es periodista.",
+      "en": "The woman I spoke with is a journalist."
+    },
+    {
+      "es": "Nos quedamos sin plata, lo cual es un problema.",
+      "en": "We ran out of money, which is a problem."
+    },
+    {
+      "es": "La calle por la que caminamos es muy vieja.",
+      "en": "The street we walked along is very old."
+    }
+  ],
+  "rule": "If \"which\" points back at a whole situation (he didn't come, the café closed), use *lo que* (or *lo cual*). *Lo* is neutral because a situation has no gender.\n\nIf it points at a noun, use *el que*, *la que*, *los que* or *las que*, matching that noun: *la casa en la que vivo*.\n\nAny preposition goes in front: *en la que*, *con la que*, *por la que*. English can leave it at the end (\"the house I live in\"); Spanish cannot.",
+  "smallPrint": "Teachers call this a relative pronoun whose antecedent is either a clause (*lo que*) or a noun (*el que*).",
+  "readAndPick": [
+    {
+      "es": "No vino, lo que me molestó.",
+      "options": [
+        "He didn't come, which annoyed me.",
+        "The man who annoyed me didn't come.",
+        "He didn't come because I was annoyed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La casa en la que vivo es vieja.",
+      "options": [
+        "I live, which is old.",
+        "The house I live in is old.",
+        "The old house is where he lives."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale llegó tarde, lo que no me sorprendió.",
+      "options": [
+        "Vale, who didn't surprise me, arrived late.",
+        "Vale arrived late because she didn't surprise me.",
+        "Vale arrived late, which didn't surprise me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La mujer con la que hablé es periodista.",
+      "options": [
+        "The woman I spoke with is a journalist.",
+        "The woman who spoke to me is a journalist.",
+        "I spoke with a woman, which is a journalist."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El carro en el que llegó es viejo.",
+      "options": [
+        "The car that arrived is old.",
+        "The car he arrived in is old.",
+        "He arrived, which made the car old."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Altamira quiere comprar la cuadra, lo que no me gusta.",
+      "options": [
+        "Altamira wants to buy the block that I don't like.",
+        "Altamira, who doesn't like the block, wants to buy it.",
+        "Altamira wants to buy the block, which I don't like."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La calle por la que caminamos es muy vieja.",
+      "options": [
+        "The street we walked along is very old.",
+        "We walked, which is very old.",
+        "The street we walked is very old."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos quedamos sin plata, lo cual es un problema.",
+      "options": [
+        "We ran out of money, which is a problem.",
+        "The money we ran out of is a problem.",
+        "We have a problem with the money."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El hombre del que hablas es Hernando.",
+      "options": [
+        "The man who talks to you is Hernando.",
+        "The man you are talking about is Hernando.",
+        "The man you are talking about was Hernando."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *lo que* or *la que* and type the whole sentence: *Tomás no firmó, ___ molestó a Altamira.*",
+      "answer": "Tomás no firmó, lo que molestó a Altamira.",
+      "accept": [],
+      "why": "*Lo que* points back at the whole event: Tomás not signing."
+    },
+    {
+      "prompt": "Pick *lo que* or *la que* and type the whole sentence: *La casa en ___ vivo es vieja.*",
+      "answer": "La casa en la que vivo es vieja.",
+      "accept": [],
+      "why": "*Casa* is a feminine noun, so *la que*."
+    },
+    {
+      "prompt": "Type in Spanish: The café closed, which worried everyone.",
+      "answer": "El café cerró, lo que preocupó a todos.",
+      "accept": [
+        "El café cerró, lo cual preocupó a todos."
+      ],
+      "why": "\"Which\" points back at the closing, so *lo que*."
+    },
+    {
+      "prompt": "Type in Spanish: The woman I spoke with is a journalist.",
+      "answer": "La mujer con la que hablé es periodista.",
+      "accept": [],
+      "why": "*Mujer* is feminine, and *con* goes before *la que*."
+    },
+    {
+      "prompt": "Type in Spanish: The street we walked along is very old.",
+      "answer": "La calle por la que caminamos es muy vieja.",
+      "accept": [],
+      "why": "*Calle* is feminine, and *por* goes in front."
+    },
+    {
+      "prompt": "Join the ideas: *Vale llegó tarde.* Add \"which didn't surprise me\". Say: Vale arrived late, which didn't surprise me.",
+      "answer": "Vale llegó tarde, lo que no me sorprendió.",
+      "accept": [
+        "Vale llegó tarde, lo cual no me sorprendió."
+      ],
+      "why": "The comment is about the whole event, so *lo que*."
+    },
+    {
+      "prompt": "Type in Spanish: The car he arrived in is old.",
+      "answer": "El carro en el que llegó es viejo.",
+      "accept": [],
+      "why": "*Carro* is masculine, so *el que*, with *en* in front."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La casa que vivo es vieja.",
+      "right": "La casa en la que vivo es vieja.",
+      "why": "Almost. Spanish needs the preposition, and it goes in front of *la que*."
+    },
+    {
+      "wrong": "No vino, que me molestó.",
+      "right": "No vino, lo que me molestó.",
+      "why": "Almost. To comment on a whole event, you need *lo que*."
+    },
+    {
+      "wrong": "La mujer con el que hablé es periodista.",
+      "right": "La mujer con la que hablé es periodista.",
+      "why": "Almost. *El*, *la*, *los*, *las* must match the noun, here *mujer*."
+    },
+    {
+      "wrong": "Nos quedamos sin plata, la que es un problema.",
+      "right": "Nos quedamos sin plata, lo cual es un problema.",
+      "why": "Almost. You are commenting on the whole situation, so use *lo cual* or *lo que*."
+    }
+  ],
+  "personal": "Say something true about your week and add a comment on it with *lo que*, like *Llegué tarde, lo que…*."
+}

@@ -1,0 +1,186 @@
+{
+  "node": "g:participle-gerund-clauses",
+  "hook": {
+    "line": "Written Spanish and formal speech love to pack a reason or a time into a few words at the start of the sentence. Once you spot the pattern, you read faster and you sound more polished.",
+    "es": "Terminado el trabajo, Tomás cerró el café.",
+    "en": "Once the work was finished, Tomás closed the café."
+  },
+  "examples": [
+    {
+      "es": "Construido en 1920, el edificio sigue en pie.",
+      "en": "Built in 1920, the building is still standing."
+    },
+    {
+      "es": "Siendo tan tarde, preferimos esperar.",
+      "en": "Since it's so late, we'd rather wait."
+    },
+    {
+      "es": "Terminado el trabajo, Tomás cerró el café.",
+      "en": "Once the work was finished, Tomás closed the café."
+    },
+    {
+      "es": "Sabiendo que Altamira quiere comprar, Tomás no firmó.",
+      "en": "Knowing that Altamira wants to buy, Tomás didn't sign."
+    },
+    {
+      "es": "Cerrado el café, Vale se fue a casa.",
+      "en": "With the café closed, Vale went home."
+    },
+    {
+      "es": "Abierto desde 1950, el café tiene muchos clientes.",
+      "en": "Open since 1950, the café has many customers."
+    }
+  ],
+  "rule": "Instead of a full clause with *porque* or *cuando*, you can open the sentence with a participle (*-ado*, *-ido*) or a gerund (*-ando*, *-iendo*), then a comma, then the main clause.\n\nParticiple: something already done or a state. It agrees with its noun: *Construido en 1920*, *Cerrada la puerta*, *Terminado el trabajo*.\n\nGerund: a reason or a condition at the same time: *Siendo tarde…*, *Sabiendo que…*.\n\nThe opening part usually shares the subject of the main clause, or has its own noun right after it (*Terminado el trabajo*).\n\nNever use the gerund for something that happens afterwards.",
+  "smallPrint": "Teachers call these participial and gerund clauses; with their own noun (*Terminado el trabajo*) they are called absolute constructions.",
+  "readAndPick": [
+    {
+      "es": "Construido en 1920, el edificio sigue en pie.",
+      "options": [
+        "Built in 1920, the building is still standing.",
+        "Building in 1920, the building is still standing.",
+        "It will be built in 1920, and the building will stand."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siendo tan tarde, preferimos esperar.",
+      "options": [
+        "Although it's late, we'd rather wait.",
+        "Since it's so late, we'd rather wait.",
+        "When it's late, we always wait."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Terminado el trabajo, Tomás cerró el café.",
+      "options": [
+        "While finishing the work, Tomás closed the café.",
+        "Before finishing the work, Tomás closed the café.",
+        "Once the work was finished, Tomás closed the café."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Sabiendo que Altamira quiere comprar, Tomás no firmó.",
+      "options": [
+        "Knowing that Altamira wants to buy, Tomás didn't sign.",
+        "Altamira knew that Tomás didn't sign.",
+        "Wanting to buy, Altamira didn't sign."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cerrado el café, Vale se fue a casa.",
+      "options": [
+        "With the café open, Vale went home.",
+        "With the café closed, Vale went home.",
+        "Closing the café, Vale went home."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Abierto desde 1950, el café tiene muchos clientes.",
+      "options": [
+        "Opening in 1950, the café will have many customers.",
+        "Closed since 1950, the café has many customers.",
+        "Open since 1950, the café has many customers."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Siendo extranjero, Tomás no conocía la ciudad.",
+      "options": [
+        "Being a foreigner, Tomás didn't know the city.",
+        "Tomás, a local, knew the city.",
+        "Tomás doesn't know the foreigner."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Pintada de azul, la casa se ve más grande.",
+      "options": [
+        "Painting blue, the house looks bigger.",
+        "Painted blue, the house looks bigger.",
+        "It will be painted blue, and the house will look bigger."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Conociendo a Don Hernando, va a llegar temprano.",
+      "options": [
+        "Knowing Don Hernando, he'll arrive early.",
+        "Don Hernando knows him, so he arrived early.",
+        "Don Hernando will meet him early."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *Construido* or *Construida* and type the whole sentence: *___ en 1920, el edificio sigue en pie.*",
+      "answer": "Construido en 1920, el edificio sigue en pie.",
+      "accept": [],
+      "why": "The participle agrees with *edificio*, which is masculine."
+    },
+    {
+      "prompt": "Type in Spanish: Since it's so late, we'd rather wait.",
+      "answer": "Siendo tan tarde, preferimos esperar.",
+      "accept": [],
+      "why": "*Siendo* gives the reason in two words."
+    },
+    {
+      "prompt": "Type in Spanish: Once the work was finished, Tomás closed the café.",
+      "answer": "Terminado el trabajo, Tomás cerró el café.",
+      "accept": [],
+      "why": "A participle says the work was already done."
+    },
+    {
+      "prompt": "Type in Spanish: Knowing that Altamira wants to buy, Tomás didn't sign.",
+      "answer": "Sabiendo que Altamira quiere comprar, Tomás no firmó.",
+      "accept": [],
+      "why": "The gerund *sabiendo* gives Tomás's reason."
+    },
+    {
+      "prompt": "Type in Spanish: With the café closed, Vale went home.",
+      "answer": "Cerrado el café, Vale se fue a casa.",
+      "accept": [],
+      "why": "*Cerrado* is masculine to match *café*."
+    },
+    {
+      "prompt": "Type in Spanish: Open since 1950, the café has many customers.",
+      "answer": "Abierto desde 1950, el café tiene muchos clientes.",
+      "accept": [],
+      "why": "A participle can describe a state, like *abierto*."
+    },
+    {
+      "prompt": "Type in Spanish: Being a foreigner, Tomás didn't know the city.",
+      "answer": "Siendo extranjero, Tomás no conocía la ciudad.",
+      "accept": [],
+      "why": "*Siendo* plus a noun or adjective gives a reason about the subject."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Construida en 1920, el edificio sigue en pie.",
+      "right": "Construido en 1920, el edificio sigue en pie.",
+      "why": "Almost. The participle matches *edificio*, so it ends in *-o*."
+    },
+    {
+      "wrong": "Llegó, sentándose después.",
+      "right": "Llegó y después se sentó.",
+      "why": "Almost. A gerund cannot describe something that happens later; use a second verb."
+    },
+    {
+      "wrong": "Terminando el trabajo, Tomás cerró el café.",
+      "right": "Terminado el trabajo, Tomás cerró el café.",
+      "why": "Almost. *Terminando* means \"while finishing\"; to say \"once finished\" use the participle."
+    },
+    {
+      "wrong": "Terminada el trabajo, Tomás cerró el café.",
+      "right": "Terminado el trabajo, Tomás cerró el café.",
+      "why": "Almost. *Trabajo* is masculine, so the participle ends in *-o*."
+    }
+  ],
+  "personal": "Say something true about your day or your city, starting with a participle (*Terminado…*) or *Siendo…*."
+}

@@ -1,0 +1,181 @@
+{
+  "node": "p:azul-oscuro-invariable",
+  "hook": {
+    "line": "Describing what someone is wearing is easy until you need a shade: not just blue, but dark blue. Then the rule you know about agreement quietly switches off.",
+    "es": "Compré unas camisas azul oscuro.",
+    "en": "I bought some dark-blue shirts."
+  },
+  "examples": [
+    {
+      "es": "Compré unas camisas azul oscuro.",
+      "en": "I bought some dark-blue shirts."
+    },
+    {
+      "es": "Lleva zapatos verde botella.",
+      "en": "She's wearing bottle-green shoes."
+    },
+    {
+      "es": "Tenemos dos carros gris plata.",
+      "en": "We have two silver-grey cars."
+    },
+    {
+      "es": "Las paredes son azul claro.",
+      "en": "The walls are light blue."
+    },
+    {
+      "es": "Vale tiene una falda verde claro.",
+      "en": "Vale has a light-green skirt."
+    },
+    {
+      "es": "Rosa tenía unas sillas rojo vino.",
+      "en": "Rosa had some wine-red chairs."
+    }
+  ],
+  "rule": "A single colour agrees with its noun: *camisas azules*, *una falda verde*.\n\nAdd a shade word (*oscuro*, *claro*, *botella*, *plata*, *vino*) and the pair turns into one fixed label. Nothing changes, whatever the noun: *camisas azul oscuro*, not *azules oscuras*.\n\nColours named after a thing (*naranja*, *rosa*, *café*) often stay fixed too: *vestidos rosa*.\n\nThe shade word comes after the colour, the opposite of English: dark blue becomes *azul oscuro*.",
+  "smallPrint": "Teachers call these compound colours invariable adjectives.",
+  "readAndPick": [
+    {
+      "es": "Compré unas camisas azul oscuro.",
+      "options": [
+        "I bought some dark-blue shirts.",
+        "I bought some light-blue shirts.",
+        "I bought some bottle-green shirts."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las paredes son azul claro.",
+      "options": [
+        "The walls are dark blue.",
+        "The walls are light blue.",
+        "The walls are light green."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lleva zapatos verde botella.",
+      "options": [
+        "She's wearing red shoes.",
+        "She's wearing dark-blue shoes.",
+        "She's wearing bottle-green shoes."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tengo dos carros rojos.",
+      "options": [
+        "I have two red cars.",
+        "I have two dark-red cars.",
+        "I have two wine-red cars."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo dos carros rojo oscuro.",
+      "options": [
+        "I have two red cars.",
+        "I have two dark-red cars.",
+        "I have two light-red cars."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale tiene una falda verde claro.",
+      "options": [
+        "Vale has a dark-green skirt.",
+        "Vale has a light-green skirt.",
+        "Vale has a green skirt."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Rosa tenía unas sillas rojo vino.",
+      "options": [
+        "Rosa had some wine-red chairs.",
+        "Rosa has some wine-red chairs.",
+        "Rosa had some light-red chairs."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tenemos dos carros gris plata.",
+      "options": [
+        "We have two grey cars.",
+        "We have two silver-grey cars.",
+        "We have two silver cars."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los zapatos de Mariana son rojo oscuro.",
+      "options": [
+        "Mariana's shoes are dark red.",
+        "Mariana's shoes are light red.",
+        "Mariana's shoes are bottle green."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *azul oscuro* or *azules oscuras* and type the whole sentence: *Compré unas camisas ___.*",
+      "answer": "Compré unas camisas azul oscuro.",
+      "accept": [],
+      "why": "A shade pair is one fixed label, so it never takes a plural."
+    },
+    {
+      "prompt": "Type in Spanish: I bought a dark-blue shirt.",
+      "answer": "Compré una camisa azul oscuro.",
+      "accept": [],
+      "why": "The shade word goes after the colour."
+    },
+    {
+      "prompt": "Type in Spanish: We have two silver-grey cars.",
+      "answer": "Tenemos dos carros gris plata.",
+      "accept": [],
+      "why": "*Gris plata* stays the same even with *dos carros*."
+    },
+    {
+      "prompt": "Type in Spanish: The walls are light blue.",
+      "answer": "Las paredes son azul claro.",
+      "accept": [],
+      "why": "Feminine plural *paredes*, but the colour pair does not change."
+    },
+    {
+      "prompt": "Make it plural: *Vale tiene una falda verde claro.* Say: Vale has two light-green skirts.",
+      "answer": "Vale tiene dos faldas verde claro.",
+      "accept": [],
+      "why": "Only *falda* becomes plural; *verde claro* stays."
+    },
+    {
+      "prompt": "Type in Spanish: Mariana's shoes are dark red.",
+      "answer": "Los zapatos de Mariana son rojo oscuro.",
+      "accept": [],
+      "why": "Masculine or feminine, plural or not, *rojo oscuro* stays."
+    },
+    {
+      "prompt": "Type in Spanish: Rosa had some wine-red chairs.",
+      "answer": "Rosa tenía unas sillas rojo vino.",
+      "accept": [],
+      "why": "*Rojo vino* is one fixed label."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Compré unas camisas azules oscuras.",
+      "right": "Compré unas camisas azul oscuro.",
+      "why": "Almost. When a shade word is added, both words stay fixed."
+    },
+    {
+      "wrong": "Lleva zapatos verdes botella.",
+      "right": "Lleva zapatos verde botella.",
+      "why": "Almost. *Verde botella* is one label and does not take an *-s*."
+    },
+    {
+      "wrong": "Las paredes son azul claras.",
+      "right": "Las paredes son azul claro.",
+      "why": "Almost. Neither word agrees; the pair is invariable."
+    }
+  ],
+  "personal": "Describe something you own or are wearing today, using a colour and a shade: *azul oscuro*, *verde claro*, *gris plata*."
+}

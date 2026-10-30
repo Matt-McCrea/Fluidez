@@ -1,0 +1,189 @@
+{
+  "node": "p:presenting-to-audience",
+  "hook": {
+    "line": "Sooner or later you will stand up in front of a room: a meeting, a class, a neighbours' assembly. A few set phrases tell the audience where you are in your talk and keep you sounding calm.",
+    "es": "Como pueden ver en la pantalla, las ventas bajaron en marzo.",
+    "en": "As you can see on the screen, sales fell in March."
+  },
+  "examples": [
+    {
+      "es": "Como pueden ver en la pantalla, las ventas bajaron en marzo.",
+      "en": "As you all can see on the screen, sales fell in March."
+    },
+    {
+      "es": "Muchos de ustedes seguramente conocerán el café de Rosa.",
+      "en": "Many of you will probably know Rosa's café."
+    },
+    {
+      "es": "A continuación, voy a presentarles los resultados.",
+      "en": "Next, I'm going to present the results to you all."
+    },
+    {
+      "es": "A continuación, quisiera mostrarles una foto del café.",
+      "en": "Next, I'd like to show you all a photo of the café."
+    },
+    {
+      "es": "En definitiva, necesitamos más tiempo.",
+      "en": "In short, we need more time."
+    },
+    {
+      "es": "Para terminar, quisiera darles las gracias.",
+      "en": "To finish, I'd like to thank you all."
+    }
+  ],
+  "rule": "In a talk you speak to a group, so you use *ustedes* forms: *pueden ver*, not *puedes ver*.\n\nSignposts:\n*Como pueden ver…* = as you can see\n*A continuación…* = next\n*En definitiva…* = in short\n*Para terminar…* = to finish\n\nTo guess what the room knows, use the future: *Muchos de ustedes seguramente conocerán…* (it means \"probably\", not \"will in future\").\n\nWhen you present something to the room, *les* (to you all) sticks onto the end: *presentarles*, *mostrarles*. English has no such word.",
+  "smallPrint": "Teachers call this formal public speech. The future in *conocerán* is the future of probability.",
+  "readAndPick": [
+    {
+      "es": "Como pueden ver en la pantalla, las ventas bajaron.",
+      "options": [
+        "As you all can see on the screen, sales fell.",
+        "As we can see on the screen, sales fell.",
+        "As I can see on the screen, sales fell."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A continuación, voy a presentarles los resultados.",
+      "options": [
+        "Before that, I presented the results to you all.",
+        "Next, I'm going to present the results to you all.",
+        "Finally, I'm going to present the results to you all."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En definitiva, necesitamos más tiempo.",
+      "options": [
+        "Next, we need more time.",
+        "However, we need more time.",
+        "In short, we need more time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Muchos de ustedes seguramente conocerán el café de Rosa.",
+      "options": [
+        "Many of you will probably know Rosa's café.",
+        "Many of you knew Rosa's café.",
+        "Many of you will visit Rosa's café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Para terminar, quisiera darles las gracias.",
+      "options": [
+        "To begin, I'd like to thank you all.",
+        "To finish, I'd like to thank you all.",
+        "To finish, I'd like to thank you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Como podemos ver, las ventas subieron.",
+      "options": [
+        "As you all can see, sales rose.",
+        "As I can see, sales rose.",
+        "As we can see, sales rose."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Quisiera mostrarles una foto del café.",
+      "options": [
+        "I'd like to show you all a photo of the café.",
+        "I showed you all a photo of the café.",
+        "I'd like you all to show me a photo of the café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Como puede ver, el barrio cambió.",
+      "options": [
+        "As you all can see, the neighbourhood changed.",
+        "As you (formal, one person) can see, the neighbourhood changed.",
+        "As we can see, the neighbourhood changed."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A continuación, voy a explicarles el proceso.",
+      "options": [
+        "Next, I'm going to explain the process to you all.",
+        "Next, I'm going to explain the process to him.",
+        "Before, I explained the process to you all."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *pueden* or *puedes*, then type the whole sentence to a room: *Como ___ ver en la pantalla, las ventas bajaron.*",
+      "answer": "Como pueden ver en la pantalla, las ventas bajaron.",
+      "accept": [],
+      "why": "A room is *ustedes*, so the verb is *pueden*."
+    },
+    {
+      "prompt": "Type in Spanish: Next, I'm going to present the results to you all.",
+      "answer": "A continuación, voy a presentarles los resultados.",
+      "accept": [
+        "A continuación, les voy a presentar los resultados."
+      ],
+      "why": "*Les* means \"to you all\" and sticks onto *presentar*."
+    },
+    {
+      "prompt": "Type in Spanish: In short, we need more time.",
+      "answer": "En definitiva, necesitamos más tiempo.",
+      "accept": [
+        "En resumen, necesitamos más tiempo."
+      ],
+      "why": "*En definitiva* closes the point, like \"in short\"."
+    },
+    {
+      "prompt": "Type in Spanish: Many of you will probably know Rosa's café.",
+      "answer": "Muchos de ustedes seguramente conocerán el café de Rosa.",
+      "accept": [
+        "Seguramente muchos de ustedes conocerán el café de Rosa."
+      ],
+      "why": "*Seguramente* plus the future form guesses what the audience knows."
+    },
+    {
+      "prompt": "Make it for one person you address as *usted*: *Como pueden ver en la pantalla, las ventas bajaron.* Say: As you (formal, one person) can see on the screen, sales fell.",
+      "answer": "Como puede ver en la pantalla, las ventas bajaron.",
+      "accept": [],
+      "why": "One person, formal: *usted puede*, so *puede ver*."
+    },
+    {
+      "prompt": "Type in Spanish: To finish, I'd like to thank you all.",
+      "answer": "Para terminar, quisiera darles las gracias.",
+      "accept": [],
+      "why": "*Quisiera* is the polite \"I'd like\" and *les* sticks onto *darles*."
+    },
+    {
+      "prompt": "Type in Spanish: Next, I'd like to show you all a photo of the café.",
+      "answer": "A continuación, quisiera mostrarles una foto del café.",
+      "accept": [
+        "A continuación, les quisiera mostrar una foto del café."
+      ],
+      "why": "*Mostrarles* is \"to show you all\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Como puedes ver en la pantalla, las ventas bajaron.",
+      "right": "Como pueden ver en la pantalla, las ventas bajaron.",
+      "why": "Almost. *Puedes* is for one friend; a group is *ustedes*, so *pueden*."
+    },
+    {
+      "wrong": "A continuación, voy a presentarlos los resultados.",
+      "right": "A continuación, voy a presentarles los resultados.",
+      "why": "Almost. *Los* would be \"them\"; to say \"to you all\" you need *les*."
+    },
+    {
+      "wrong": "En definitivo, necesitamos más tiempo.",
+      "right": "En definitiva, necesitamos más tiempo.",
+      "why": "Almost. This is a fixed phrase and it ends in *-a*."
+    }
+  ],
+  "personal": "Imagine you are opening a short talk. Say one sentence that begins with *Como pueden ver…* or *A continuación…*."
+}
