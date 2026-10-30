@@ -2,7 +2,7 @@
   "id": "ch016",
   "unit": "u07",
   "title": "La nevera de Gloria",
-  "text": "Cinco de la mañana, primer día en la casa de doña Gloria. Tomás entra al baño y abre la ducha. No hay agua.\nTomás: ¡Doña Gloria! ¡No hay agua!\nGloria: Hoy no, Tomás. Pasado mañana sí, pero solo un rato.\nTomás baja la escalera a la cocina.\nGloria: Bueno, Tomás, esta casa tiene reglas. En el primer piso está la panadería. En el segundo piso están la sala, el comedor y la cocina. Su cuarto y el baño están en el tercer piso.\nGloria: En la cocina hay una nevera y una estufa. La nevera es mía. La estufa es de todos.\nGloria: Usted come en el comedor, no en el cuarto. Y el sofá de la sala es de Pacho.\nTomás: ¿Quién es Pacho?\nEn el sofá hay un gato gordo. Pacho mira a Tomás un rato. Después cierra los ojos.\nTomás pone la carta de Rosa en el armario de su cuarto.\nPor la tarde, Vale toca la puerta. Trae pan, y Hernando trae a Simón.\nVale pone el pan en la cama y mira el cuarto.\nVale: Es pequeño, ¿no? ¿Cómo es tu apartamento de Toronto?\nTomás: Mi apartamento tiene sala, cocina y cuarto... en un cuarto.\nVale: Pues es bonito, Tomás. Y tiene ventana a la catedral.\nEn la escalera, Simón ve a Pacho.\nSimón: ¡Mucho gusto! ¡Mucho gusto!\nPacho no contesta.\nHernando: Tomás, en la calle hay dos hombres de Altamira.",
+  "text": "Cinco de la mañana, primer día en la casa de doña Gloria. Tomás abre la ducha. No hay agua.\nTomás: ¡Doña Gloria! ¡No hay agua!\nGloria: Hoy no, Tomás. Pasado mañana sí, pero solo un rato.\nTomás baja a la cocina.\nGloria: Bueno, Tomás, esta casa tiene reglas. La nevera es mía. La estufa es de todos. Usted come en el comedor, no en el cuarto. Y el sofá de la sala es de Pacho.\nTomás: ¿Quién es Pacho?\nEn el sofá hay un gato gordo. Pacho mira a Tomás un rato. Después cierra los ojos.\nTomás pone la carta de Rosa en el armario de su cuarto.\nPor la tarde, Vale toca la puerta. Trae pan, y Hernando trae a Simón.\nVale: Es pequeño, ¿no? ¿Cómo es tu apartamento de Toronto?\nTomás: Tiene sala, cocina y cuarto... en un cuarto.\nVale: Pues este es bonito, Tomás. Y tiene balcón a la catedral.\nEn la escalera, Simón ve a Pacho.\nSimón: ¡Mucho gusto! ¡Mucho gusto!\nPacho no contesta.\nHernando: Tomás, en la calle hay dos hombres de Altamira.",
   "gloss": [
     {
       "es": "Pasado mañana",
@@ -29,12 +29,12 @@
       "en": "knocks on the door"
     },
     {
-      "es": "tiene sala, cocina y cuarto... en un cuarto",
-      "en": "has a living room, a kitchen and a bedroom... in one room"
+      "es": "Tiene sala, cocina y cuarto... en un cuarto",
+      "en": "It has a living room, a kitchen and a bedroom... in one room"
     },
     {
-      "es": "ventana a la catedral",
-      "en": "a window onto the cathedral"
+      "es": "balcón a la catedral",
+      "en": "a balcony looking onto the cathedral"
     }
   ],
   "questions": [
@@ -59,11 +59,11 @@
       "answer": 0
     },
     {
-      "q": "¿En qué piso está el cuarto de Tomás?",
+      "q": "¿Qué es de doña Gloria?",
       "options": [
-        "En el tercer piso",
-        "En el primer piso",
-        "En el segundo piso"
+        "La nevera",
+        "La estufa",
+        "El sofá"
       ],
       "answer": 0
     },
@@ -101,12 +101,12 @@
       "answer": 0
     },
     {
-      "q": "What is on the first floor of Gloria's house?",
+      "q": "Where does Simón meet Pacho?",
       "options": [
-        "The bakery",
-        "The living room",
-        "Tomás's room",
-        "The bathroom"
+        "On the stairs",
+        "In the kitchen",
+        "On the balcony",
+        "In the street"
       ],
       "answer": 0
     },
@@ -129,7 +129,6 @@
     "c:no-cierto",
     "c:tienes",
     "g:adjective-agreement",
-    "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
     "g:present-ar",
@@ -152,11 +151,10 @@
     "l:apartamento",
     "l:armario",
     "l:bajo",
-    "l:baño",
+    "l:balcón",
     "l:bonito",
     "l:bueno",
     "l:calle",
-    "l:cama",
     "l:carta",
     "l:casa",
     "l:catedral",
@@ -170,9 +168,7 @@
     "l:después",
     "l:ducha",
     "l:día",
-    "l:entrar",
     "l:escalera",
-    "l:estar",
     "l:estufa",
     "l:gato",
     "l:gordo",
@@ -184,10 +180,8 @@
     "l:nevera",
     "l:ojo",
     "l:pan",
-    "l:panadería",
     "l:pasado",
     "l:pequeño",
-    "l:piso",
     "l:poner",
     "l:puerta",
     "l:quién",
@@ -200,7 +194,6 @@
     "l:tener",
     "l:tocar",
     "l:traer",
-    "l:ventana",
     "l:ver"
   ]
 }
