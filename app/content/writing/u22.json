@@ -1,0 +1,658 @@
+[
+  {
+    "id": "w-u22-01",
+    "unit": "u22",
+    "prompt": "Text Vale, your friend, on her birthday. Wish her a good day and say what you hope for her.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(espero que|ojalá|que) \\w+",
+        "label": "a wish with espero que, ojalá or que"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "presubj",
+        "label": "use the subjunctive in a wish"
+      },
+      {
+        "type": "containsWord",
+        "word": "cumpleaños"
+      }
+    ],
+    "model": "Vale, ¡feliz cumpleaños! Espero que tengas un día muy bonito. Ojalá no trabajes mucho hoy y puedas descansar un rato. ¡Que la pases bien! Te quiero mucho.",
+    "focus": "g:subj-wishes",
+    "requires": [
+      "c:bien-y-tu",
+      "c:feliz-cumpleanos",
+      "c:ojala",
+      "c:que-la-pases-bien",
+      "c:quiero",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:bien",
+      "l:bonito",
+      "l:cumpleaños",
+      "l:descansar",
+      "l:día",
+      "l:esperar",
+      "l:feliz",
+      "l:hoy",
+      "l:pasar",
+      "l:poder",
+      "l:querer",
+      "l:rato",
+      "l:tener",
+      "l:trabajar",
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u22-02",
+    "unit": "u22",
+    "prompt": "Write a card for Mariana, who starts a new job as an editor on Monday. Wish her luck and say you are happy for her.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "mucha suerte",
+          "éxitos",
+          "éxito"
+        ],
+        "label": "wish her luck"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "me alegro",
+          "me alegra"
+        ],
+        "label": "say you are glad"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(espero que|ojalá|que) \\w+",
+        "label": "one wish with que or ojalá"
+      }
+    ],
+    "model": "Mariana, ¡mucha suerte con el trabajo nuevo! Me alegro mucho. Espero que te vaya muy bien el lunes y que tengas buenos compañeros. ¡Que te vaya bien!",
+    "focus": "c:mucha-suerte",
+    "requires": [
+      "c:bien-y-tu",
+      "c:buen-viaje",
+      "c:me-alegro",
+      "c:mucha-suerte",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:subj-irregulars",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "g:that-clauses",
+      "l:alegrarse",
+      "l:bien",
+      "l:bueno",
+      "l:compañero",
+      "l:esperar",
+      "l:ir",
+      "l:lunes",
+      "l:nuevo",
+      "l:suerte",
+      "l:tener",
+      "l:trabajo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:days-el-lunes",
+      "p:me-te-nos-objects"
+    ]
+  },
+  {
+    "id": "w-u22-03",
+    "unit": "u22",
+    "prompt": "Text Don Hernando, an older man you would call usted. He travels to Medellín tomorrow. Wish him a good trip in a respectful way.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tú",
+          "tienes",
+          "eres",
+          "puedes",
+          "quieres"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(espero que|ojalá|que) (le|se|lo|la) \\w+",
+        "label": "a wish for him: que le vaya..., que se diviertan"
+      },
+      {
+        "type": "containsWord",
+        "word": "usted"
+      }
+    ],
+    "model": "Don Hernando, le deseo un buen viaje. Espero que le vaya muy bien en Medellín y que llegue con bien. Ojalá no haya mucho tráfico. ¡Que se diviertan usted y su hermano!",
+    "focus": "c:que-te-vaya-bien",
+    "requires": [
+      "c:bien-y-tu",
+      "c:buen-viaje",
+      "c:le-deseo-lo-mejor",
+      "c:ojala",
+      "c:que-la-pases-bien",
+      "c:que-te-vaya-bien",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:subj-irregulars",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "g:that-clauses",
+      "l:bien",
+      "l:buen",
+      "l:desear",
+      "l:divertirse",
+      "l:esperar",
+      "l:hermano",
+      "l:ir",
+      "l:llegar",
+      "l:tráfico",
+      "l:viaje",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:don-dona-nombre",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u22-04",
+    "unit": "u22",
+    "prompt": "Reply to Vale, who just told you the café partnership was signed. React with real excitement and ask her one thing.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "¡(qué|cuánto|cuánta) \\w+",
+        "label": "an exclamation with ¡Qué...!"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "¡Qué buena noticia, Vale! ¡Qué bien! ¡Me alegro mucho! Ya quiero ver el papel firmado y celebrar con una torta. ¿Cuándo vamos a celebrar? ¡Quiero brindar con ustedes!",
+    "focus": "g:exclamations",
+    "requires": [
+      "c:bien-y-tu",
+      "c:me-alegro",
+      "c:que-bien",
+      "c:quiero",
+      "c:vamos-a",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:prep-pronouns",
+      "g:questions",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:alegrarse",
+      "l:bien",
+      "l:brindar",
+      "l:buena",
+      "l:celebrar",
+      "l:cuándo",
+      "l:firmar",
+      "l:ir",
+      "l:noticia",
+      "l:papel",
+      "l:querer",
+      "l:qué",
+      "l:torta",
+      "l:ver",
+      "p:exclamations-basic"
+    ]
+  },
+  {
+    "id": "w-u22-05",
+    "unit": "u22",
+    "prompt": "Message a neighbour you do not know well. Tell her what a lovely house or street she has, with exclamations, and ask where she bought the flowers.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "¡qué \\w+",
+        "label": "an exclamation with ¡Qué...!"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Buenas tardes, señora Luisa. ¡Qué bonitas flores! ¡Qué bien huele su casa hoy! ¿Dónde las compró, por favor? Me gustaría comprar unas para mi café.",
+    "focus": "g:exclamations",
+    "requires": [
+      "c:bien-y-tu",
+      "c:hola-buenos-dias",
+      "c:me-gustaria",
+      "c:por-favor",
+      "c:que-bien",
+      "g:adjective-agreement",
+      "g:conditional",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:questions",
+      "g:yo-irregular",
+      "l:bien",
+      "l:bonito",
+      "l:buena",
+      "l:café",
+      "l:casa",
+      "l:comprar",
+      "l:dónde",
+      "l:favor",
+      "l:flor",
+      "l:gustar",
+      "l:hoy",
+      "l:oler",
+      "l:qué",
+      "l:señora",
+      "l:tarde",
+      "p:exclamations-basic",
+      "p:para-inf",
+      "p:possessives-basic",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u22-06",
+    "unit": "u22",
+    "prompt": "Write to Jhon Fredy, a friend your age. Tell him the surprise party for Vale was great and thank him for helping.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "¡(qué|cuánto|cuánta|cuántos|cuántas) \\w+",
+        "label": "at least one exclamation"
+      },
+      {
+        "type": "verbFormAny",
+        "inf": "ayudar",
+        "tense": "preterito"
+      },
+      {
+        "type": "containsWord",
+        "word": "gracias"
+      }
+    ],
+    "model": "Jhon Fredy, ¡qué fiesta! Gracias por todo. Me ayudaste mucho con la torta y las velas. ¡Cuánto se rio Vale! Fue la mejor sorpresa de mi vida.",
+    "focus": "g:exclamations",
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "g:preterite-ser-ir-hacer",
+      "g:se-impersonal",
+      "g:ser-identity",
+      "g:superlatives",
+      "l:ayudar",
+      "l:cuánto",
+      "l:fiesta",
+      "l:mejor",
+      "l:qué",
+      "l:reír",
+      "l:ser",
+      "l:sorpresa",
+      "l:torta",
+      "l:vela",
+      "l:vida",
+      "p:exclamations-basic",
+      "p:gracias-por",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u22-07",
+    "unit": "u22",
+    "prompt": "Text Vale and ask for a small favour at the café. Be friendly: use at least two diminutives, like a Colombian would.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b\\w+(ito|ita|itos|itas|ico|ica|icos|icas)\\b.*\\b\\w+(ito|ita|itos|itas|ico|ica|icos|icas)\\b",
+        "label": "two diminutives (-ito, -ita, -ico)"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, ¿me guardas un cafecito y un pancito para más tarde? Hoy voy a llegar un poquito tarde, porque tengo una cita. Espérame un momentico, por favor. Ahorita llego.",
+    "focus": "g:diminutives",
+    "requires": [
+      "c:ahorita",
+      "c:por-favor",
+      "c:porque",
+      "c:tengo",
+      "c:un-momentico",
+      "c:voy-a",
+      "g:cause-result",
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:diminutives",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:yo-irregular",
+      "l:ahorita",
+      "l:cita",
+      "l:esperar",
+      "l:favor",
+      "l:guardar",
+      "l:hoy",
+      "l:ir",
+      "l:llegar",
+      "l:poquito",
+      "l:tarde",
+      "l:tener",
+      "p:me-te-nos-objects",
+      "p:para-inf",
+      "p:poco-un-poco",
+      "p:request-ladder"
+    ]
+  },
+  {
+    "id": "w-u22-08",
+    "unit": "u22",
+    "prompt": "Write a note for the visitor who is coming for a short visit to the café. Offer one small thing to drink and one small thing to eat, warmly.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b\\w+(ito|ita|itos|itas|ico|ica)\\b",
+        "label": "a diminutive (-ito, -ita, -ico)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "quiere",
+          "quieres",
+          "desea",
+          "regalo",
+          "regala",
+          "ofrezco",
+          "ofrece",
+          "gustaría"
+        ],
+        "label": "an offer"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Hola. Te dejo esta nota con el desayuno. ¿Quieres un tintico o un juguito? Tenemos pan de yuca y una tortica de chocolate. Ahorita te lo traigo, siéntate.",
+    "focus": "g:diminutives",
+    "requires": [
+      "c:ahorita",
+      "c:bueno-te-dejo",
+      "c:hola-buenos-dias",
+      "c:tienes",
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:diminutives",
+      "g:direct-objects",
+      "g:double-pronouns",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:ahorita",
+      "l:chocolate",
+      "l:dejar",
+      "l:desayuno",
+      "l:nota",
+      "l:pan",
+      "l:querer",
+      "l:sentarse",
+      "l:tener",
+      "l:traer",
+      "l:yuca",
+      "p:demonstratives-basic",
+      "p:llevar-traer",
+      "p:me-te-nos-objects"
+    ]
+  },
+  {
+    "id": "w-u22-09",
+    "unit": "u22",
+    "prompt": "Text your friend Mariana, who feels sad and tired after the inspection fine. Tell her what not to do and what to do instead.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bno (te )?\\w+(es|és)\\b",
+        "label": "a negative command with tú: no te preocupes"
+      },
+      {
+        "type": "negation"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mariana, no te preocupes, la multa no es tan grave. No estés triste, nosotros lo arreglamos. Descansa esta noche y no trabajes más. Te acompaño hoy en el café.",
+    "focus": "g:negative-commands",
+    "requires": [
+      "c:no-te-preocupes",
+      "g:direct-objects",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:negative-commands",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:acompañar",
+      "l:arreglar",
+      "l:café",
+      "l:descansar",
+      "l:estar",
+      "l:grave",
+      "l:hoy",
+      "l:multa",
+      "l:noche",
+      "l:preocuparse",
+      "l:ser",
+      "l:trabajar",
+      "l:triste",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects"
+    ]
+  },
+  {
+    "id": "w-u22-10",
+    "unit": "u22",
+    "prompt": "Write to Vale about the news that the partnership is signed. Congratulate her on something specific with felicitaciones por or felicidades por.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bfelicitaciones por\\b|\\bfelicidades por\\b",
+        "label": "felicitaciones por... or felicidades por..."
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, ¡felicitaciones por la sociedad! Y felicidades por tu cumpleaños. Fue una semana muy buena para el café. ¡Qué suerte trabajar contigo! Somos un buen equipo.",
+    "focus": "p:felicitaciones-por",
+    "requires": [
+      "c:que-envidia",
+      "g:gender-articles",
+      "g:por-para-1",
+      "g:prep-pronouns",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:buen",
+      "l:buena",
+      "l:café",
+      "l:cumpleaños",
+      "l:equipo",
+      "l:felicidad",
+      "l:felicitaciones",
+      "l:qué",
+      "l:semana",
+      "l:ser",
+      "l:sociedad",
+      "l:suerte",
+      "l:trabajar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:felicitaciones-por",
+      "p:para-inf",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u22-11",
+    "unit": "u22",
+    "prompt": "Write to a friend about you and Vale: how you met and how you treat each other now. Use verbs that mean each other (nos..., se...).",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(nos|se) (conocimos|conocieron|queremos|quieren|ayudamos|ayudan|escribimos|escriben|vemos|ven|llamamos|llaman|respetamos|respetan|hablamos|hablan)\\b",
+        "label": "each other: nos queremos, se conocieron..."
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale y yo nos conocimos en el café hace un año. Ahora nos vemos todos los días en el café y nos ayudamos mucho. Nos queremos como hermanos.",
+    "focus": "p:se-reciproco",
+    "requires": [
+      "c:chao-nos-vemos",
+      "g:gender-articles",
+      "g:hace-ago",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:preterite-er-ir",
+      "l:ahora",
+      "l:ayudar",
+      "l:año",
+      "l:café",
+      "l:conocer",
+      "l:día",
+      "l:hacer",
+      "l:hermanos",
+      "l:querer",
+      "l:ver",
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic",
+      "p:saber-conocer",
+      "p:se-reciproco",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ]
+  },
+  {
+    "id": "w-u22-12",
+    "unit": "u22",
+    "prompt": "Write a short message to Don Hernando, an older man you would call usted, whose oldest friend has died. Offer your condolences and your company.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "lo siento mucho",
+          "mi más sentido pésame",
+          "sentido pésame"
+        ],
+        "label": "express your condolences"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "lo acompaño",
+          "le acompaño",
+          "estoy con usted",
+          "cuente conmigo",
+          "acompaño"
+        ],
+        "label": "offer your company"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tú",
+          "eres",
+          "tienes",
+          "puedes",
+          "quieres"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Don Hernando, lo siento mucho. Mi más sentido pésame por su amigo. Lo acompaño en este momento tan difícil. Estoy aquí para ayudarle en todo.",
+    "focus": "c:sentido-pesame",
+    "requires": [
+      "c:sentido-pesame",
+      "g:direct-objects",
+      "g:estar-location-states",
+      "g:indirect-objects",
+      "g:object-pronoun-position",
+      "g:por-para-1",
+      "g:present-ar",
+      "l:acompañar",
+      "l:amigo",
+      "l:aquí",
+      "l:ayudar",
+      "l:difícil",
+      "l:estar",
+      "l:momento",
+      "l:pesar",
+      "l:sentir",
+      "p:aqui-ahi-alla",
+      "p:demonstratives-basic",
+      "p:don-dona-nombre",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:possessives-basic",
+      "p:senor-don-article"
+    ]
+  }
+]
