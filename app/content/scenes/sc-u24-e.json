@@ -1,0 +1,221 @@
+{
+  "id": "sc-u24-e",
+  "unit": "u24",
+  "title": "El juego de Vale",
+  "brief": "You're Tomás. It's late, the café is closed, and Vale wants to test the decision: she'll argue for Chapinero, and you have to answer every point for the corner. She's your partner and friend, so use tú.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, vamos a jugar un juego. Yo hablo por Chapinero, y tú hablas por la esquina. ¿Listo?",
+      "npcEn": "Tomás, let's play a game. I speak for Chapinero, and you speak for the corner. Ready?",
+      "intent": "Say you're ready and tell her to go first.",
+      "accept": [
+        "Listo. Empieza tú.",
+        "Listo, Vale. Tú primero.",
+        "Bueno, listo. Empieza tú."
+      ],
+      "require": [],
+      "focus": "c:claro-listo",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Primero: allá la cocina es mucho más grande.",
+      "npcEn": "First: over there the kitchen is much bigger.",
+      "intent": "Admit it's bigger, but say here you have Rosa's oven.",
+      "accept": [
+        "Es más grande, pero aquí está el horno de Rosa.",
+        "Sí, es más grande, pero aquí tenemos el horno de Rosa.",
+        "Sí, pero aquí está el horno de Rosa."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "pero",
+          "label": "the first part is true, so this is pero, not sino"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "sino"
+          ],
+          "label": "sino only follows a no; here the first part is a yes"
+        }
+      ],
+      "focus": "x:pero-sino",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Segundo: allá no hay ruido. Aquí, entre la calle y Simón, nadie puede dormir.",
+      "npcEn": "Second: over there, there's no noise. Here, between the street and Simón, nobody can sleep.",
+      "intent": "Say that even though there's noise, you sleep well here.",
+      "accept": [
+        "Aunque hay ruido, yo duermo bien aquí.",
+        "Pues aunque hay mucho ruido, duermo muy bien.",
+        "Yo duermo bien aquí, aunque hay ruido."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "aunque",
+          "label": "even though: aunque + what is true"
+        }
+      ],
+      "focus": "g:aunque-indicative",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Tercero: dos años sin arriendo. Con esa plata, nos vamos de viaje a Cartagena.",
+      "npcEn": "Third: two years with no rent. With that money, we go on a trip to Cartagena.",
+      "intent": "Say the money doesn't matter as much as the customers.",
+      "accept": [
+        "La plata no importa tanto como los clientes.",
+        "Sí, pero la plata no importa tanto como los clientes.",
+        "Para mí, la plata no importa tanto como los clientes."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "tanto como",
+          "flags": "i",
+          "label": "as much as: tanto como"
+        }
+      ],
+      "focus": "g:tanto-como",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bueno, el juego terminó. La verdad, yo tampoco quiero ir. Pero ¿y mi mamá?",
+      "npcEn": "All right, the game is over. The truth is, I don't want to go either. But what about my mum?",
+      "intent": "Tell her it's her decision anyway, not her mum's.",
+      "accept": [
+        "Igual, la decisión es tuya, no de tu mamá.",
+        "Igual, es tu decisión, Vale. No es de tu mamá.",
+        "Es tu decisión igual, no de tu mamá."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "igual",
+          "label": "anyway: igual"
+        }
+      ],
+      "focus": "c:igual",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Tienes razón. Ganaste, socio. Te invito a un tinto.",
+      "npcEn": "You're right. You win, partner. I'll buy you a tinto.",
+      "intent": "Accept, but say tonight you prefer hot chocolate to tinto.",
+      "accept": [
+        "Gracias, pero esta noche prefiero un chocolate al tinto.",
+        "Bueno, pero hoy prefiero el chocolate al tinto.",
+        "Gracias. Esta noche prefiero un chocolate a un tinto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "prefiero .+ al? ",
+          "flags": "i",
+          "label": "say which you prefer: prefiero esto a aquello"
+        }
+      ],
+      "focus": "p:preferir-a",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:igual",
+    "c:la-verdad",
+    "c:pues",
+    "c:quiero",
+    "c:tienes",
+    "c:vamos-a",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:tanto-como",
+    "g:verb-infinitive",
+    "l:allá",
+    "l:aquí",
+    "l:arriendo",
+    "l:año",
+    "l:bien",
+    "l:bueno",
+    "l:calle",
+    "l:chocolate",
+    "l:cliente",
+    "l:cocina",
+    "l:decisión",
+    "l:dormir",
+    "l:empezar",
+    "l:esquina",
+    "l:estar",
+    "l:ganar",
+    "l:grande",
+    "l:hablar",
+    "l:horno",
+    "l:hoy",
+    "l:igual",
+    "l:importar",
+    "l:invitar",
+    "l:ir",
+    "l:irse",
+    "l:juego",
+    "l:jugar",
+    "l:listo",
+    "l:mamá",
+    "l:noche",
+    "l:plata",
+    "l:poder",
+    "l:preferir",
+    "l:querer",
+    "l:razón",
+    "l:ruido",
+    "l:ser",
+    "l:socio",
+    "l:tener",
+    "l:terminar",
+    "l:tinto",
+    "l:verdad",
+    "l:viaje",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:con-sin",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:gustar-mas-que",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-mi",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preferir-a",
+    "p:prefieres-x-o-y",
+    "p:quantifiers-basic",
+    "p:tambien-tampoco",
+    "p:te-invito-a",
+    "p:tener-razon",
+    "p:time-sequence-basic"
+  ]
+}

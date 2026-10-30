@@ -1,0 +1,208 @@
+{
+  "id": "sc-u24-b",
+  "unit": "u24",
+  "title": "Beatriz",
+  "brief": "You're Tomás. The café phone rings, and it's Vale's mother calling from Medellín while Vale is out. She has some ideas about her daughter's future: put her right, gently, and stay on her good side. She's older than you and you've never met, so use usted.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¿Aló? ¿Es el café de Rosa? Habla Beatriz, la mamá de Vale.",
+      "npcEn": "Hello? Is this Rosa's café? This is Beatriz, Vale's mum.",
+      "intent": "Say yes, greet her, and tell her you're Tomás, Vale's partner.",
+      "accept": [
+        "Sí, señora, buenos días. Soy Tomás, el socio de Vale.",
+        "Buenos días, señora Beatriz. Habla Tomás, el socio de Vale.",
+        "Sí, señora. Mucho gusto, soy Tomás, el socio de Vale."
+      ],
+      "require": [],
+      "focus": "g:ser-identity",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Ah, el canadiense. Mucho gusto. ¿Y Vale? ¿Ya está haciendo las maletas?",
+      "npcEn": "Ah, the Canadian. Nice to meet you. And Vale? Is she packing her bags yet?",
+      "intent": "Correct her: Vale isn't packing bags, she's making bread.",
+      "accept": [
+        "No, señora. No está haciendo maletas, sino pan.",
+        "¡Qué va! No está haciendo las maletas, sino pan.",
+        "No, no está haciendo maletas sino pan. Está en la cocina."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsino\\b",
+          "flags": "i",
+          "label": "after a no, the correction takes sino, not pero"
+        }
+      ],
+      "focus": "g:pero-sino",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Pan? Ay, mija. Aquí en Medellín tiene su cuarto listo. ¿Y usted cree que ella debe volver?",
+      "npcEn": "Bread? Oh, that girl. Here in Medellín her room is ready for her. And do you think she should come back?",
+      "intent": "Say tactfully that it depends on Vale.",
+      "accept": [
+        "Depende de Vale, señora.",
+        "Pues depende de ella. Es su decisión.",
+        "Bueno, señora, eso depende de Vale."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdepende de\\b",
+          "flags": "i",
+          "label": "it depends on: depende de..."
+        }
+      ],
+      "focus": "p:depende-de",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Usted habla como un abogado. Bogotá es peligrosa, y además es muy fría.",
+      "npcEn": "You talk like a lawyer. Bogotá is dangerous, and it's very cold too.",
+      "intent": "Admit that Bogotá is cold, but say that even though it's cold, Vale is happy here.",
+      "accept": [
+        "Sí, es fría. Pero aunque hace frío, Vale está feliz aquí.",
+        "Es verdad. Aunque Bogotá es fría, Vale está contenta aquí.",
+        "Aunque hace frío, Vale está muy feliz aquí, señora."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "aunque",
+          "label": "even though: aunque + what is true"
+        }
+      ],
+      "focus": "g:aunque-indicative",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Feliz? ¿Más feliz que en Medellín, con su mamá?",
+      "npcEn": "Happy? Happier than in Medellín, with her mum?",
+      "intent": "Be diplomatic: say she loves Bogotá as much as Medellín.",
+      "accept": [
+        "Quiere a Bogotá tanto como a Medellín.",
+        "Señora, ella quiere a Bogotá tanto como a Medellín.",
+        "Yo creo que quiere a Bogotá tanto como a Medellín."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "tanto como",
+          "flags": "i",
+          "label": "as much as: tanto como"
+        }
+      ],
+      "focus": "g:tanto-como",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Usted sabe hablar, ¿no? Bueno, dígale que la llamé.",
+      "npcEn": "You know how to talk, don't you? All right, tell her I called.",
+      "intent": "Promise you'll tell her, and say goodbye warmly.",
+      "accept": [
+        "Claro que sí, señora. Yo le digo. Hasta luego.",
+        "Con mucho gusto, señora. Yo le digo. Chao.",
+        "Sí, señora, yo le digo. Muchas gracias por llamar."
+      ],
+      "require": [],
+      "focus": "g:indirect-objects",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ademas",
+    "c:alo",
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:creo-que",
+    "c:depende",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:mucho-gusto",
+    "c:no-cierto",
+    "c:pues",
+    "c:que-va",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:aunque-indicative",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:pero-sino",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:tanto-como",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abogado",
+    "l:además",
+    "l:aquí",
+    "l:bueno",
+    "l:café",
+    "l:canadiense",
+    "l:claro",
+    "l:cocina",
+    "l:contento",
+    "l:creer",
+    "l:deber",
+    "l:decir",
+    "l:decisión",
+    "l:depender",
+    "l:día",
+    "l:estar",
+    "l:feliz",
+    "l:frío",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:ir",
+    "l:listo",
+    "l:llamar",
+    "l:maleta",
+    "l:mamá",
+    "l:mija",
+    "l:pan",
+    "l:peligroso",
+    "l:querer",
+    "l:qué",
+    "l:saber",
+    "l:ser",
+    "l:señora",
+    "l:socio",
+    "l:tener",
+    "l:verdad",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:hace-frio",
+    "p:no-es-x-es-y",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:time-sequence-basic"
+  ]
+}

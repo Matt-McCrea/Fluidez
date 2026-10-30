@@ -1,0 +1,229 @@
+{
+  "id": "sc-u24-a",
+  "unit": "u24",
+  "title": "Apartamento en Chapinero",
+  "brief": "You're Tomás. Doña Gloria found you a flat for rent in Chapinero, and to keep her happy you're phoning the owner. Find out what it's like, put him right where he gets you wrong, and see if it suits you. He's a stranger, so use usted.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¿Aló? Sí, habla Germán Pardo. ¿Usted llama por el apartamento?",
+      "npcEn": "Hello? Yes, this is Germán Pardo. Are you calling about the flat?",
+      "intent": "Say yes, you're Tomás Herrera and you're calling about the flat in Chapinero.",
+      "accept": [
+        "Sí, señor. Soy Tomás Herrera y llamo por el apartamento de Chapinero.",
+        "Buenas tardes. Me llamo Tomás Herrera. Llamo por el apartamento.",
+        "Sí, habla Tomás Herrera. Llamo por el apartamento de Chapinero."
+      ],
+      "require": [],
+      "focus": "g:ser-identity",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mucho gusto, señor Herrera. Usted quiere comprarlo, ¿cierto?",
+      "npcEn": "Nice to meet you, Mr Herrera. You want to buy it, right?",
+      "intent": "Correct him: you don't want to buy it, you want to rent it.",
+      "accept": [
+        "No, no quiero comprar, sino arrendar.",
+        "Perdón, no es para comprar, sino para arrendar.",
+        "No, señor. No lo quiero comprar, sino arrendar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsino\\b",
+          "flags": "i",
+          "label": "after a no, the correction takes sino, not pero"
+        }
+      ],
+      "focus": "g:pero-sino",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Ah, bueno. En arriendo son tres millones al mes, más la administración.",
+      "npcEn": "Ah, all right. To rent, it's three million a month, plus the building fees.",
+      "intent": "Say that's expensive, but ask whether the flat gets a lot of light.",
+      "accept": [
+        "Es caro, pero ¿tiene mucha luz?",
+        "Uy, es caro. Pero ¿el apartamento tiene mucha luz?",
+        "Es un poco caro, pero ¿tiene mucha luz?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "mucha luz",
+          "flags": "i",
+          "label": "ask about the light: ¿tiene mucha luz?"
+        },
+        {
+          "type": "question",
+          "label": "make it a question"
+        }
+      ],
+      "focus": "p:tiene-mucha-luz",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Muchísima. Tiene vista a los cerros y una cocina amplia. ¿Usted vive cerca?",
+      "npcEn": "Loads. It has a view of the hills and a big kitchen. Do you live nearby?",
+      "intent": "Say no, you live in La Candelaria, and that even though it's noisy, you like it a lot.",
+      "accept": [
+        "No, vivo en La Candelaria. Aunque es ruidosa, me gusta mucho.",
+        "No, en La Candelaria. Me gusta mucho, aunque hay mucho ruido.",
+        "No, señor. Vivo en La Candelaria, y aunque hay ruido, me gusta mucho."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "aunque",
+          "label": "even though: aunque + what is true"
+        }
+      ],
+      "focus": "g:aunque-indicative",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Aquí no hay nada de ruido. Ah, una cosa más: en el conjunto no aceptan animales.",
+      "npcEn": "Here there's no noise at all. Oh, one more thing: the building doesn't accept animals.",
+      "intent": "Tell him you have a parrot that makes as much noise as a bus.",
+      "accept": [
+        "Uy. Tengo un loro, y hace tanto ruido como un bus.",
+        "Es que tengo un loro que hace tanto ruido como un bus.",
+        "Pues tengo un loro. Hace tanto ruido como un bus."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "tanto ruido como",
+          "flags": "i",
+          "label": "as much noise as: tanto ruido como"
+        }
+      ],
+      "focus": "g:tanto-como",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Entonces lo siento mucho, señor Herrera. Con el loro, no.",
+      "npcEn": "Then I'm very sorry, Mr Herrera. Not with the parrot.",
+      "intent": "Tell him it's no problem: you prefer your parrot to the flat. Then say goodbye.",
+      "accept": [
+        "No hay problema. Prefiero mi loro al apartamento. Hasta luego.",
+        "Tranquilo, señor. Prefiero el loro al apartamento. Gracias, hasta luego.",
+        "Bueno, prefiero mi loro al apartamento. Muchas gracias, señor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "prefiero .+ al? ",
+          "flags": "i",
+          "label": "say which you prefer: prefiero esto a aquello"
+        }
+      ],
+      "focus": "p:preferir-a",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-gusta",
+    "c:me-llamo",
+    "c:mucho-gusto",
+    "c:no-cierto",
+    "c:no-hay-nada",
+    "c:no-te-preocupes",
+    "c:perdon-disculpe",
+    "c:pues",
+    "c:quiero",
+    "c:sentido-pesame",
+    "c:tengo",
+    "c:tienes",
+    "c:tranquilo",
+    "c:vivo-en",
+    "g:adjective-agreement",
+    "g:aunque-indicative",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:hay-vs-esta",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:pero-sino",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:superlatives",
+    "g:tanto-como",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:aceptar",
+    "l:administración",
+    "l:amplio",
+    "l:animal",
+    "l:apartamento",
+    "l:aquí",
+    "l:arrendar",
+    "l:arriendo",
+    "l:buena",
+    "l:bueno",
+    "l:bus",
+    "l:caro",
+    "l:cerca",
+    "l:cerro",
+    "l:cocina",
+    "l:comprar",
+    "l:conjunto",
+    "l:cosa",
+    "l:gustar",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:llamar",
+    "l:llamarse",
+    "l:loro",
+    "l:luz",
+    "l:mes",
+    "l:perdón",
+    "l:preferir",
+    "l:problema",
+    "l:querer",
+    "l:ruido",
+    "l:ruidoso",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:tarde",
+    "l:tener",
+    "l:tranquilo",
+    "l:vista",
+    "l:vivir",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:gustar-mas-que",
+    "p:lugar-tiene",
+    "p:no-es-x-es-y",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:preferir-a",
+    "p:prefieres-x-o-y",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:tiene-mucha-luz",
+    "p:time-sequence-basic"
+  ]
+}

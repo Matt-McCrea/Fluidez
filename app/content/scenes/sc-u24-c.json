@@ -1,0 +1,250 @@
+{
+  "id": "sc-u24-c",
+  "unit": "u24",
+  "title": "Lo que dice la cuadra",
+  "brief": "You're Tomás. Don Hernando arrives first thing, worried by something he heard on the block. Set him straight, give him your reasons for and against, and send him to his table happy. He's older than you, so use usted.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, mijo. En la cuadra dicen que ustedes se van para Chapinero. ¿Es verdad?",
+      "npcEn": "Morning, son. On the block they're saying you're all going to Chapinero. Is it true?",
+      "intent": "Say not at all: you're staying here.",
+      "accept": [
+        "¡Qué va, don Hernando! Nos quedamos aquí.",
+        "¡Qué va! No nos vamos. Nos quedamos.",
+        "Qué va. Nos quedamos en la esquina."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "qu[ée] va",
+          "flags": "i",
+          "label": "not at all: ¡qué va!"
+        }
+      ],
+      "focus": "c:que-va",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿De verdad? Pero dos años sin arriendo es mucha plata, mijo.",
+      "npcEn": "Really? But two years with no rent is a lot of money, son.",
+      "intent": "Agree it's a lot of money, but say that even though it's a good offer, it doesn't convince you.",
+      "accept": [
+        "Sí, es mucha plata. Aunque es una buena oferta, no me convence.",
+        "Es verdad. Pero aunque es mucha plata, no me convence.",
+        "No me convence, aunque es una buena oferta."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "aunque",
+          "label": "even though: aunque + what is true"
+        },
+        {
+          "type": "regex",
+          "pattern": "no me convence",
+          "flags": "i",
+          "label": "not convinced: no me convence"
+        }
+      ],
+      "focus": "g:aunque-indicative",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y Vale qué dice? La cocina de Chapinero es muy moderna.",
+      "npcEn": "And what does Vale say? The kitchen in Chapinero is very modern.",
+      "intent": "Say that on the one hand the kitchen is modern, but on the other hand, it isn't yours but Altamira's.",
+      "accept": [
+        "Por un lado, la cocina es moderna. Por otro lado, no es nuestra, sino de Altamira.",
+        "Por un lado, es muy moderna. Por otro, no es de nosotros, sino de Altamira.",
+        "Por un lado, la cocina es moderna. Pero por otro lado, no es nuestra sino de Altamira."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "por un lado",
+          "flags": "i",
+          "label": "on the one hand: por un lado..."
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bsino\\b",
+          "flags": "i",
+          "label": "after a no, the correction takes sino, not pero"
+        }
+      ],
+      "focus": "c:por-un-lado",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Eso sí. Pero allá tienen más luz y menos ruido.",
+      "npcEn": "That's true. But over there they get more light and less noise.",
+      "intent": "Say the café doesn't have as much light as Chapinero, but it has more customers.",
+      "accept": [
+        "El café no tiene tanta luz como Chapinero, pero tiene más clientes.",
+        "Aquí no hay tanta luz como en Chapinero, pero hay más clientes.",
+        "Es verdad, no tenemos tanta luz como allá. Pero tenemos más clientes."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "tanta luz como",
+          "flags": "i",
+          "label": "as much light as: tanta luz como"
+        }
+      ],
+      "focus": "g:tanto-como",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Y más viejos como yo. Pero, mijo, ¿por qué no me contaron nada?",
+      "npcEn": "And more old men like me. But son, why didn't you tell me anything?",
+      "intent": "Apologise, and say you all only decided last night.",
+      "accept": [
+        "Qué pena, don Hernando. Decidimos anoche.",
+        "Perdón. Es que decidimos anoche.",
+        "Qué pena con usted. Lo decidimos anoche."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "decidir",
+          "tense": "preterito",
+          "person": "nosotros",
+          "label": "we decided: decidimos"
+        }
+      ],
+      "focus": "g:preterite-er-ir",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Bueno. Entonces mañana vengo a las siete, como siempre.",
+      "npcEn": "All right. Then tomorrow I'll come at seven, as always.",
+      "intent": "Say perfect, and that the plan is to stay another forty years.",
+      "accept": [
+        "Perfecto. La idea es quedarnos cuarenta años más.",
+        "Listo, don Hernando. La idea es quedarnos aquí cuarenta años más.",
+        "Perfecto. Su tinto va a estar listo. La idea es quedarnos cuarenta años más."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "la idea es",
+          "flags": "i",
+          "label": "the plan is: la idea es..."
+        }
+      ],
+      "focus": "c:la-idea-es",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:la-idea-es",
+    "c:no-me-convence",
+    "c:perdon-disculpe",
+    "c:por-un-lado",
+    "c:que-pena",
+    "c:que-va",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:aunque-indicative",
+    "g:direct-objects",
+    "g:discourse-structure",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:pero-sino",
+    "g:possessives",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:tanto-como",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:allá",
+    "l:anoche",
+    "l:aquí",
+    "l:arriendo",
+    "l:año",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:cliente",
+    "l:cocina",
+    "l:contar",
+    "l:convencer",
+    "l:cuadra",
+    "l:decidir",
+    "l:decir",
+    "l:día",
+    "l:esquina",
+    "l:estar",
+    "l:idea",
+    "l:ir",
+    "l:irse",
+    "l:lado",
+    "l:listo",
+    "l:luz",
+    "l:mañana",
+    "l:mijo",
+    "l:moderno",
+    "l:oferta",
+    "l:pena",
+    "l:perdón",
+    "l:perfecto",
+    "l:plata",
+    "l:quedar",
+    "l:quedarse",
+    "l:qué",
+    "l:ruido",
+    "l:ser",
+    "l:siempre",
+    "l:tener",
+    "l:tinto",
+    "l:venir",
+    "l:verdad",
+    "l:viejo",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:con-sin",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:frequency-scale",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:por-que-no",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:tiene-mucha-luz",
+    "p:viejo-antiguo-mayor"
+  ]
+}

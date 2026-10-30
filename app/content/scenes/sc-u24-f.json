@@ -1,0 +1,216 @@
+{
+  "id": "sc-u24-f",
+  "unit": "u24",
+  "title": "Arepas como las de Gloria",
+  "brief": "You're Tomás. Back home, Doña Gloria is waiting up to hear about the flat in Chapinero that she found for you. Tell her how it went and convince her you're happy where you are. She's your landlady and older than you, so use usted.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mijo, ¿y? ¿Qué le dijo el señor del apartamento?",
+      "npcEn": "So, son? What did the man with the flat tell you?",
+      "intent": "Tell her the flat is very nice, but they don't accept animals.",
+      "accept": [
+        "El apartamento es muy bonito, pero no aceptan animales.",
+        "Es muy bonito, doña Gloria, pero no aceptan animales.",
+        "Pues el apartamento es bonito, pero allá no aceptan animales."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "pero",
+          "label": "it's nice, but: pero"
+        }
+      ],
+      "focus": "g:pero-sino",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Ah, ya entiendo. Usted no quiere irse por pena conmigo.",
+      "npcEn": "Ah, now I get it. You don't want to leave because you feel bad for me.",
+      "intent": "Correct her: it isn't out of pity, it's because you're happy here.",
+      "accept": [
+        "No es por pena, sino porque estoy feliz aquí.",
+        "¡Qué va! No es por pena, sino porque aquí estoy contento.",
+        "No, doña Gloria. No es por pena, sino porque estoy feliz en su casa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsino\\b",
+          "flags": "i",
+          "label": "after a no, the correction takes sino, not pero"
+        }
+      ],
+      "focus": "g:pero-sino",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Pero esta casa es estrato dos, mijo. Allá hay portero, conjunto, de todo.",
+      "npcEn": "But this house is estrato two, son. Over there there's a doorman, a gated complex, everything.",
+      "intent": "Say that even though it's estrato two, her house gets a lot of light.",
+      "accept": [
+        "Aunque es estrato dos, su casa tiene mucha luz.",
+        "Sí, pero aunque es estrato dos, esta casa tiene mucha luz.",
+        "Su casa tiene mucha luz, aunque es estrato dos."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "aunque",
+          "label": "even though: aunque + what is true"
+        },
+        {
+          "type": "regex",
+          "pattern": "mucha luz",
+          "flags": "i",
+          "label": "the light: tiene mucha luz"
+        }
+      ],
+      "focus": "g:aunque-indicative",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Luz? Bueno, si usted lo dice. ¿Y la comida? ¿Allá le van a hacer arepas?",
+      "npcEn": "Light? Well, if you say so. And the food? Are they going to make you arepas over there?",
+      "intent": "Say nobody makes arepas as good as hers.",
+      "accept": [
+        "Nadie hace arepas tan buenas como usted.",
+        "No, señora. Nadie hace arepas tan buenas como usted.",
+        "Qué va. Nadie hace las arepas tan buenas como usted."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "tan buenas como",
+          "flags": "i",
+          "label": "as good as: tan buenas como (tan before an adjective)"
+        }
+      ],
+      "focus": "x:tan-tanto",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Ay, mijo, usted sí sabe hablar. Bueno, pero en enero el arriendo va a ser más caro.",
+      "npcEn": "Oh, son, you really know how to talk. All right, but in January the rent is going to be more expensive.",
+      "intent": "Joke that it depends on the arepas.",
+      "accept": [
+        "Depende de las arepas, doña Gloria.",
+        "Bueno, eso depende de las arepas.",
+        "Uy. Depende de las arepas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdepende de\\b",
+          "flags": "i",
+          "label": "it depends on: depende de..."
+        }
+      ],
+      "focus": "p:depende-de",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Tranquilo, mijo, el arriendo es el mismo. Buenas noches.",
+      "npcEn": "Relax, son, the rent stays the same. Good night.",
+      "intent": "Thank her and wish her good night.",
+      "accept": [
+        "Gracias, doña Gloria. Buenas noches.",
+        "Muchas gracias, señora. Hasta mañana.",
+        "Gracias. Buenas noches, doña Gloria."
+      ],
+      "require": [],
+      "focus": "c:hola-buenos-dias",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:chao-nos-vemos",
+    "c:depende",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:porque",
+    "c:pues",
+    "c:que-va",
+    "c:tienes",
+    "c:tranquilo",
+    "g:aunque-indicative",
+    "g:cause-result",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:pero-sino",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:verb-infinitive",
+    "l:aceptar",
+    "l:allá",
+    "l:animal",
+    "l:apartamento",
+    "l:aquí",
+    "l:arepa",
+    "l:arriendo",
+    "l:bonito",
+    "l:buena",
+    "l:bueno",
+    "l:caro",
+    "l:casa",
+    "l:comida",
+    "l:conjunto",
+    "l:contento",
+    "l:decir",
+    "l:depender",
+    "l:enero",
+    "l:entender",
+    "l:estar",
+    "l:estrato",
+    "l:feliz",
+    "l:hablar",
+    "l:hacer",
+    "l:ir",
+    "l:irse",
+    "l:luz",
+    "l:mañana",
+    "l:mijo",
+    "l:noche",
+    "l:pena",
+    "l:portero",
+    "l:querer",
+    "l:qué",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:tener",
+    "l:tranquilo",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:lugar-tiene",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:tiene-mucha-luz"
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "id": "sc-u24-d",
+  "unit": "u24",
+  "title": "Cinco minutos",
+  "brief": "You're Tomás. Mariana is writing an article about Altamira and the block, and she wants a few lines from you. Answer her questions and correct the rumour she's heard. She's a friend, so use tú.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, ¿me das cinco minutos? Estoy escribiendo un artículo sobre Altamira.",
+      "npcEn": "Tomás, can you give me five minutes? I'm writing an article about Altamira.",
+      "intent": "Say yes, of course, and ask what she wants to know.",
+      "accept": [
+        "Claro. ¿Qué quieres saber?",
+        "Claro que sí, Mariana. ¿Qué quieres saber?",
+        "Sí, claro. ¿Qué necesitas saber?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "make it a question"
+        }
+      ],
+      "focus": "g:questions",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Todo el barrio dice que ustedes firmaron un contrato con Altamira.",
+      "npcEn": "The whole neighbourhood says you signed a contract with Altamira.",
+      "intent": "Correct her: you didn't sign a contract, you signed a napkin, and it says no.",
+      "accept": [
+        "No firmamos un contrato, sino una servilleta. Y dice que no.",
+        "¡Qué va! No firmamos un contrato, sino una servilleta, y dice que no.",
+        "No, Mariana. No firmamos un contrato sino una servilleta. Dice que no."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsino\\b",
+          "flags": "i",
+          "label": "after a no, the correction takes sino, not pero"
+        }
+      ],
+      "focus": "g:pero-sino",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿En serio? ¿Y por qué? La oferta era muy generosa.",
+      "npcEn": "Seriously? And why? The offer was very generous.",
+      "intent": "Say that even though the offer was good, you don't want to leave the corner.",
+      "accept": [
+        "Aunque la oferta era buena, no queremos dejar la esquina.",
+        "No queremos dejar la esquina, aunque la oferta era buena.",
+        "Porque aunque era una buena oferta, no queremos dejar la esquina."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "aunque",
+          "label": "even though: aunque + what is true"
+        }
+      ],
+      "focus": "g:aunque-indicative",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Y no les da miedo? Altamira tiene mucha plata y muchos abogados.",
+      "npcEn": "And aren't you scared? Altamira has a lot of money and a lot of lawyers.",
+      "intent": "Say a little, but you all have as many friends as he has lawyers.",
+      "accept": [
+        "Un poco. Pero tenemos tantos amigos como él tiene abogados.",
+        "Un poco, pero nosotros tenemos tantos amigos como él tiene abogados.",
+        "Sí, un poco. Pero tenemos tantos amigos como abogados tiene él."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "tantos amigos como",
+          "flags": "i",
+          "label": "as many friends as: tantos amigos como"
+        }
+      ],
+      "focus": "g:tanto-como",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Qué buena frase! ¿La puedo poner en el artículo con tu nombre?",
+      "npcEn": "What a great line! Can I put it in the article with your name?",
+      "intent": "Say it depends on Vale, because the line is from both of you.",
+      "accept": [
+        "Depende de Vale. La frase es de los dos.",
+        "Depende de Vale, porque la frase es de los dos.",
+        "Bueno, depende de Vale. Es una frase de los dos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdepende de\\b",
+          "flags": "i",
+          "label": "it depends on: depende de..."
+        }
+      ],
+      "focus": "p:depende-de",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Listo, le pregunto a ella. Gracias, Tomás. Mañana te mando el artículo.",
+      "npcEn": "OK, I'll ask her. Thanks, Tomás. Tomorrow I'll send you the article.",
+      "intent": "Thank her and invite her for a coffee tomorrow.",
+      "accept": [
+        "Gracias. Mañana te invito a un tinto.",
+        "Con gusto, Mariana. Mañana te invito a un café.",
+        "De nada. Y mañana te invito a un tinto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "te invito",
+          "flags": "i",
+          "label": "I'm buying: te invito a..."
+        }
+      ],
+      "focus": "g:present-ar",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:depende",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:porque",
+    "c:puedo",
+    "c:que-va",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:aunque-indicative",
+    "g:cause-result",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:pero-sino",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:tanto-como",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:abogado",
+    "l:amigo",
+    "l:artículo",
+    "l:barrio",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:claro",
+    "l:contrato",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:depender",
+    "l:escribir",
+    "l:esquina",
+    "l:estar",
+    "l:firmar",
+    "l:frase",
+    "l:generoso",
+    "l:gusto",
+    "l:invitar",
+    "l:ir",
+    "l:listo",
+    "l:mandar",
+    "l:mañana",
+    "l:miedo",
+    "l:minuto",
+    "l:necesitar",
+    "l:nombre",
+    "l:oferta",
+    "l:plata",
+    "l:poder",
+    "l:poner",
+    "l:preguntar",
+    "l:querer",
+    "l:qué",
+    "l:saber",
+    "l:ser",
+    "l:serio",
+    "l:servilleta",
+    "l:tener",
+    "l:tinto",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:exclamations-basic",
+    "p:me-da-miedo",
+    "p:me-da-miedo-que",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:te-invito-a"
+  ]
+}
