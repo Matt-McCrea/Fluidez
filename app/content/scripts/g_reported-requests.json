@@ -1,0 +1,188 @@
+{
+ "node": "g:reported-requests",
+ "hook": {
+  "line": "Messages are flying to the coast, and half of them are \"tell him to call me\". Passing on a request is different from passing on news, and the verb ending is what shows it.",
+  "es": "Vale dice que la llames.",
+  "en": "Vale says for you to call her. (to a friend)"
+ },
+ "examples": [
+  {
+   "es": "Vale dice que la llames.",
+   "en": "Vale says for you to call her. (to a friend)"
+  },
+  {
+   "es": "Mi mamá me pide que vaya el domingo.",
+   "en": "My mom is asking me to go on Sunday."
+  },
+  {
+   "es": "Dile que espere.",
+   "en": "Tell him to wait. (to a friend)"
+  },
+  {
+   "es": "Hernando quiere que vengas al café.",
+   "en": "Hernando wants you to come to the café. (to a friend)"
+  },
+  {
+   "es": "Dígale a Tomás que lo llame.",
+   "en": "Tell Tomás to call him. (to a stranger or someone older)"
+  },
+  {
+   "es": "Te pido que me escribas hoy.",
+   "en": "I'm asking you to write to me today. (to a friend)"
+  }
+ ],
+ "rule": "In English a request is \"tell her *to call*\", with *to* and the plain verb. In Spanish the two halves are joined by *que*, and the second verb changes its ending.\n\n*Decir que* or *pedir que*, then a verb with the \"opposite\" ending:\n*-ar* verbs take *-e*: *llame*, *espere*, *hable*\n*-er/-ir* verbs take *-a*: *vaya*, *venga*, *escriba*\n\nFor *you* (to a friend) add *-s*: *llames*, *vengas*.\n\nThe person asked is the one who does it, so there is no \"to\": *Dile que espere* = \"tell him to wait\".",
+ "smallPrint": "Teachers call this the subjunctive: the mood Spanish uses when one person wants another to do something.",
+ "readAndPick": [
+  {
+   "es": "Vale dice que la llames.",
+   "options": [
+    "Vale says she calls you.",
+    "Vale says for you to call her.",
+    "Vale says you called her."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Mi mamá me pide que vaya el domingo.",
+   "options": [
+    "My mom asks me to go on Sunday.",
+    "My mom says she is going on Sunday.",
+    "My mom asks if I went on Sunday."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Dile que espere.",
+   "options": [
+    "Tell him he is waiting.",
+    "Tell him to wait.",
+    "He told you to wait."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Hernando quiere que vengas al café.",
+   "options": [
+    "Hernando wants to come to the café.",
+    "Hernando wants me to come to the café.",
+    "Hernando wants you to come to the café."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Te pido que me llames.",
+   "options": [
+    "I ask you to call me.",
+    "You ask me to call you.",
+    "I am calling you."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Me pide que lo llame.",
+   "options": [
+    "He asks me to call him.",
+    "He asks you to call him.",
+    "He is calling me."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Me pide que lo llames.",
+   "options": [
+    "He asks me to call him.",
+    "He asks you to call him.",
+    "He is calling me."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Dígale a Tomás que lo llame.",
+   "options": [
+    "Tell Tomás to call him.",
+    "Tomás is calling him.",
+    "Tomás told him to call."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Mi jefe me pide que trabaje el sábado.",
+   "options": [
+    "My boss asks me to work on Saturday.",
+    "My boss says he is working on Saturday.",
+    "My boss worked on Saturday."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose the right form and type the whole sentence (Vale says for you to call her. To a friend): Vale dice que la ___. (llamas / llames)",
+   "answer": "Vale dice que la llames.",
+   "accept": [],
+   "why": "A request to a friend ends in *-es* for an *-ar* verb: *llames*."
+  },
+  {
+   "prompt": "Choose the right form and type the whole sentence (Tell him to wait. To a friend): Dile que ___. (espera / espere)",
+   "answer": "Dile que espere.",
+   "accept": [],
+   "why": "A request uses the \"opposite\" ending, so *espere*."
+  },
+  {
+   "prompt": "Type in Spanish: My mom asks me to go on Sunday.",
+   "answer": "Mi mamá me pide que vaya el domingo.",
+   "accept": [],
+   "why": "*Pedir que* plus *vaya*, the request ending of *ir*."
+  },
+  {
+   "prompt": "Type in Spanish (to a friend): I'm asking you to write to me today.",
+   "answer": "Te pido que me escribas hoy.",
+   "accept": [],
+   "why": "*Te* is your friend, and *escribas* is the request ending for *you*."
+  },
+  {
+   "prompt": "Type in Spanish (to a stranger): Tell Tomás to call him.",
+   "answer": "Dígale a Tomás que lo llame.",
+   "accept": [],
+   "why": "To a stranger the command is *dígale*, and the request verb is *llame*."
+  },
+  {
+   "prompt": "Type in Spanish: Hernando wants you to come to the café. (to a friend)",
+   "answer": "Hernando quiere que vengas al café.",
+   "accept": [],
+   "why": "*Querer que* also takes the request ending: *vengas*."
+  },
+  {
+   "prompt": "Make it about *me*: Vale dice que la llames. (Vale says for me to call her)",
+   "answer": "Vale dice que la llame.",
+   "accept": [
+    "Vale dice que yo la llame."
+   ],
+   "why": "For *I* the *-ar* request ending is plain *-e*: *llame*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Dile que espera.",
+   "right": "Dile que espere.",
+   "why": "Almost. After a request, the second verb takes the \"opposite\" ending: *espere*."
+  },
+  {
+   "wrong": "Vale dice que llamarla.",
+   "right": "Vale dice que la llames.",
+   "why": "English uses *to call*, but Spanish joins with *que* and a changed verb."
+  },
+  {
+   "wrong": "Mi mamá me pide que voy.",
+   "right": "Mi mamá me pide que vaya.",
+   "why": "*Ir* is irregular in a request: *vaya*, not *voy*."
+  },
+  {
+   "wrong": "Te pido que me llamas.",
+   "right": "Te pido que me llames.",
+   "why": "After *pedir que* the ending changes: *-as* becomes *-es* for an *-ar* verb."
+  }
+ ],
+ "personal": "Think of something someone asked you to do today. Write it with *me pide que* or *me dice que*."
+}

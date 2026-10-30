@@ -1,0 +1,172 @@
+{
+ "node": "p:podria-hablar-con",
+ "hook": {
+  "line": "Tomás has to call people he has never met, and on the phone you cannot point at anyone. A small set of polite lines gets you to the right person.",
+  "es": "¿Podría hablar con Andrés, por favor?",
+  "en": "Could I speak to Andrés, please?"
+ },
+ "examples": [
+  {
+   "es": "¿Podría hablar con Andrés, por favor?",
+   "en": "Could I speak to Andrés, please?"
+  },
+  {
+   "es": "¿Se encuentra la doctora Ruiz?",
+   "en": "Is Dr Ruiz there?"
+  },
+  {
+   "es": "Quería hablar con el gerente.",
+   "en": "I wanted to speak to the manager."
+  },
+  {
+   "es": "¿De parte de quién?",
+   "en": "Who's calling?"
+  },
+  {
+   "es": "Ya se lo paso.",
+   "en": "I'll put him on now."
+  },
+  {
+   "es": "En este momento no se encuentra.",
+   "en": "She isn't in at the moment."
+  }
+ ],
+ "rule": "On the phone you ask for a person with *con*: *hablar con Andrés*. Three polite openers:\n\n*¿Podría hablar con...?* Could I speak to...?\n*¿Se encuentra...?* Is... there?\n*Quería hablar con...* I wanted to speak to...\n\nThe answers you will hear:\n*¿De parte de quién?* Who's calling?\n*Ya se lo paso.* I'll put him on.\n*En este momento no se encuentra.* She isn't in right now.\n\nUse *quería* and *podría*, not *quiero* and *puedo*: they are softer.",
+ "smallPrint": "Teachers call *podría* and *quería* the conditional and imperfect of politeness: both soften a request.",
+ "readAndPick": [
+  {
+   "es": "¿Podría hablar con Andrés, por favor?",
+   "options": [
+    "Could I speak to Andrés, please?",
+    "Can Andrés speak to me, please?",
+    "Did you speak to Andrés, please?"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "¿Se encuentra la doctora Ruiz?",
+   "options": [
+    "Where is Dr Ruiz?",
+    "Is Dr Ruiz there?",
+    "Do you know Dr Ruiz?"
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Quería hablar con el gerente.",
+   "options": [
+    "I want to speak to the manager.",
+    "I spoke to the manager.",
+    "I wanted to speak to the manager."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "¿De parte de quién?",
+   "options": [
+    "Who's calling?",
+    "Who is it for?",
+    "Where are you from?"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Ya se lo paso.",
+   "options": [
+    "I'll put him on now.",
+    "I already passed it to him.",
+    "He is coming now."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "En este momento no se encuentra.",
+   "options": [
+    "She is not coming.",
+    "She isn't in at the moment.",
+    "She is not busy."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "¿Podría hablar con Vale?",
+   "options": [
+    "Could I speak to Vale?",
+    "Is Vale there?",
+    "Can you call Vale?"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "¿Se encuentra Vale?",
+   "options": [
+    "Where is Vale?",
+    "Does Vale know you?",
+    "Is Vale there?"
+   ],
+   "answer": 2
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose the right form and type the whole sentence (Could I speak to Andrés, please?): ¿Podría hablar ___ Andrés, por favor? (con / a)",
+   "answer": "¿Podría hablar con Andrés, por favor?",
+   "accept": [],
+   "why": "On the phone you speak *con* a person."
+  },
+  {
+   "prompt": "Type in Spanish: Is Dr Ruiz there?",
+   "answer": "¿Se encuentra la doctora Ruiz?",
+   "accept": [],
+   "why": "*Se encuentra* is the phone way to ask whether someone is there."
+  },
+  {
+   "prompt": "Type in Spanish: I wanted to speak to the manager.",
+   "answer": "Quería hablar con el gerente.",
+   "accept": [],
+   "why": "*Quería* is softer than *quiero*."
+  },
+  {
+   "prompt": "Type in Spanish (as the person answering): Who's calling?",
+   "answer": "¿De parte de quién?",
+   "accept": [],
+   "why": "This is the set phrase for asking who is calling."
+  },
+  {
+   "prompt": "Type in Spanish (you pass the phone to him): I'll put him on now.",
+   "answer": "Ya se lo paso.",
+   "accept": [],
+   "why": "*Ya se lo paso* is the usual line for putting someone on."
+  },
+  {
+   "prompt": "Type in Spanish: She isn't in at the moment.",
+   "answer": "En este momento no se encuentra.",
+   "accept": [],
+   "why": "*No se encuentra* tells you she is not there."
+  },
+  {
+   "prompt": "Make it about Vale: ¿Podría hablar con Andrés, por favor?",
+   "answer": "¿Podría hablar con Vale, por favor?",
+   "accept": [],
+   "why": "Change only the name after *con*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "¿Podría hablar a Vale?",
+   "right": "¿Podría hablar con Vale?",
+   "why": "Almost. On the phone you speak *con* a person, not *a*."
+  },
+  {
+   "wrong": "Quiero hablar con el gerente.",
+   "right": "Quería hablar con el gerente.",
+   "why": "It is understood, but *quería* is much more polite."
+  },
+  {
+   "wrong": "¿Quién eres?",
+   "right": "¿De parte de quién?",
+   "why": "When answering, *¿De parte de quién?* is the polite way to ask who is calling."
+  }
+ ],
+ "personal": "Write the polite line you would use to ask for someone you know on the phone, with *podría hablar con* or *quería hablar con*."
+}

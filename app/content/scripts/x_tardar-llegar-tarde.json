@@ -1,0 +1,187 @@
+{
+ "node": "x:tardar-llegar-tarde",
+ "hook": {
+  "line": "Hernando's bus is always the subject of a complaint, but \"it was late\" and \"it took ages\" are two different complaints in Spanish. Pick the wrong one and you have blamed the wrong thing.",
+  "es": "El bus se demoró una hora.",
+  "en": "The bus took an hour."
+ },
+ "examples": [
+  {
+   "es": "El bus se demoró una hora.",
+   "en": "The bus took an hour."
+  },
+  {
+   "es": "El bus llegó tarde.",
+   "en": "The bus was late."
+  },
+  {
+   "es": "Me demoré mucho en encontrar la casa.",
+   "en": "It took me ages to find the house."
+  },
+  {
+   "es": "¿Cuánto te demoras en llegar al trabajo?",
+   "en": "How long does it take you to get to work? (to a friend)"
+  },
+  {
+   "es": "Vale llegó tarde al café.",
+   "en": "Vale got to the café late."
+  },
+  {
+   "es": "Tardo veinte minutos en llegar.",
+   "en": "It takes me twenty minutes to get there."
+  }
+ ],
+ "rule": "English says *late* for two different things. Spanish splits them.\n\n*How long it takes*: *demorarse* (everyday in Colombia) or *tardar*, followed by *en* and the action. *Me demoro veinte minutos en llegar.* *Tardo veinte minutos en llegar.*\n\n*Arriving after the agreed time*: *llegar tarde*. *Llegué tarde.* The opposite is *llegar a tiempo*.\n\nSo *El bus se demoró una hora* says the trip was slow. *El bus llegó tarde* says it missed the schedule. A bus can take an hour and still arrive on time.",
+ "smallPrint": "Teachers call this duration versus lateness: *tardar* and *demorarse* measure time, *llegar tarde* measures against a schedule.",
+ "readAndPick": [
+  {
+   "es": "El bus se demoró una hora.",
+   "options": [
+    "The bus took an hour.",
+    "The bus was an hour late.",
+    "The bus left an hour ago."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "El bus llegó tarde.",
+   "options": [
+    "The bus took long.",
+    "The bus was late.",
+    "The bus is coming."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Llegué tarde a la reunión.",
+   "options": [
+    "The meeting took long.",
+    "I took a long time to arrive.",
+    "I was late to the meeting."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Me demoré mucho en encontrar la casa.",
+   "options": [
+    "It took me ages to find the house.",
+    "I was late finding the house.",
+    "I found the house too early."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Tardo veinte minutos en llegar.",
+   "options": [
+    "I am twenty minutes late.",
+    "It takes me twenty minutes to get there.",
+    "I arrived twenty minutes ago."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Vale siempre llega a tiempo.",
+   "options": [
+    "Vale is always late.",
+    "Vale always takes long.",
+    "Vale always arrives on time."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "¿Cuánto te demoras en llegar al trabajo?",
+   "options": [
+    "How late are you getting to work?",
+    "How long does it take you to get to work?",
+    "When do you get to work?"
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Llegamos tarde porque el tráfico se demoró.",
+   "options": [
+    "We arrived late because traffic is slow.",
+    "We took long because we were late.",
+    "We were late because the traffic took a long time."
+   ],
+   "answer": 2
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose the right form and type the whole sentence (The bus took an hour): El bus ___ una hora. (se demoró / llegó tarde)",
+   "answer": "El bus se demoró una hora.",
+   "accept": [
+    "El bus tardó una hora."
+   ],
+   "why": "You are saying how long it took, so *se demoró*."
+  },
+  {
+   "prompt": "Choose the right form and type the whole sentence (The bus was late): El bus ___. (se demoró / llegó tarde)",
+   "answer": "El bus llegó tarde.",
+   "accept": [],
+   "why": "Missing the agreed time is *llegó tarde*."
+  },
+  {
+   "prompt": "Type in Spanish (I): It took me ages to find the house.",
+   "answer": "Me demoré mucho en encontrar la casa.",
+   "accept": [
+    "Tardé mucho en encontrar la casa."
+   ],
+   "why": "Duration uses *demorarse* or *tardar*, then *en* and the verb."
+  },
+  {
+   "prompt": "Type in Spanish (to a friend): How long does it take you to get to work?",
+   "answer": "¿Cuánto te demoras en llegar al trabajo?",
+   "accept": [
+    "¿Cuánto tardas en llegar al trabajo?"
+   ],
+   "why": "*Cuánto* asks about time taken, and *te demoras* is for a friend."
+  },
+  {
+   "prompt": "Type in Spanish (I): I was late to the meeting.",
+   "answer": "Llegué tarde a la reunión.",
+   "accept": [],
+   "why": "Being late for something agreed is *llegué tarde*."
+  },
+  {
+   "prompt": "Make it about duration: Vale llegó tarde al café. (it took Vale an hour to get to the café)",
+   "answer": "Vale se demoró una hora en llegar al café.",
+   "accept": [
+    "Vale tardó una hora en llegar al café."
+   ],
+   "why": "Now you measure time taken, so *se demoró* and *en llegar*."
+  },
+  {
+   "prompt": "Type in Spanish (I, in general): I always arrive on time.",
+   "answer": "Siempre llego a tiempo.",
+   "accept": [
+    "Yo siempre llego a tiempo."
+   ],
+   "why": "The opposite of *llegar tarde* is *llegar a tiempo*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Llegué una hora al café.",
+   "right": "Me demoré una hora en llegar al café.",
+   "why": "Almost. To say how long something took, use *demorarse* or *tardar* plus *en*."
+  },
+  {
+   "wrong": "Me demoré a la reunión.",
+   "right": "Llegué tarde a la reunión.",
+   "why": "Being late for something is *llegar tarde*; *demorarse* only measures time."
+  },
+  {
+   "wrong": "Tardo mucho a llegar.",
+   "right": "Tardo mucho en llegar.",
+   "why": "After *tardar* the little word is *en*, not *a*."
+  },
+  {
+   "wrong": "Soy tarde.",
+   "right": "Llego tarde.",
+   "why": "Almost. Late is something you do on arrival, so use *llegar tarde*."
+  }
+ ],
+ "personal": "Tell us how long it takes you to get to your work or school, and whether you usually arrive on time. Use *me demoro* or *tardo*, and *llego a tiempo* or *llego tarde*."
+}
