@@ -1,0 +1,176 @@
+{
+  "node": "p:dativo-aspectual",
+  "hook": {
+    "line": "Don Hernando loves telling how much he ate, read or drank in one go. Spanish has a small extra word for \"the whole thing, and I enjoyed it\".",
+    "es": "Me comí un pollo entero.",
+    "en": "I ate a whole chicken."
+  },
+  "examples": [
+    {
+      "es": "Me leí el libro en una noche.",
+      "en": "I read the whole book in one night."
+    },
+    {
+      "es": "Se tomó dos cervezas y se fue.",
+      "en": "He downed two beers and left."
+    },
+    {
+      "es": "Me comí un pollo entero.",
+      "en": "I ate a whole chicken."
+    },
+    {
+      "es": "¿Te tomaste todo el tinto?",
+      "en": "Did you drink all the coffee?"
+    },
+    {
+      "es": "Nos comimos todos los buñuelos.",
+      "en": "We ate every last buñuelo."
+    },
+    {
+      "es": "Vale se aprendió la receta en una tarde.",
+      "en": "Vale learned the whole recipe in one afternoon."
+    }
+  ],
+  "rule": "Add *me*, *te*, *se* or *nos* before the verb, matching the person doing it: *me leí*, *te tomaste*, *se aprendió*, *nos comimos*.\n\nIt does not mean \"myself\". It says: all of it, finished, and I was involved. English gets this from words like \"whole\", \"down\" or \"every last\".\n\nIt works with eating, drinking, reading, learning and spending, and the thing must be a whole, counted or measured thing: *un pollo*, *dos cervezas*, *el libro*, *todo el tinto*.\n\nBare, open-ended things do not fit: *me comí pollo* sounds wrong, *me comí un pollo* is fine.",
+  "smallPrint": "Teachers call this the aspectual dative: a pronoun that adds completeness and personal involvement, not a reflexive action.",
+  "readAndPick": [
+    {
+      "es": "Me leí el libro en una noche.",
+      "options": [
+        "You read the whole book in one night.",
+        "He read the whole book in one night.",
+        "I read the whole book in one night."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se tomó dos cervezas y se fue.",
+      "options": [
+        "He downed two beers and left.",
+        "I downed two beers and left.",
+        "We downed two beers and left."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te tomaste todo el tinto?",
+      "options": [
+        "Did I drink all the coffee?",
+        "Did you drink all the coffee?",
+        "Did he drink all the coffee?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos comimos todos los buñuelos.",
+      "options": [
+        "I ate every last buñuelo.",
+        "They ate every last buñuelo.",
+        "We ate every last buñuelo."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale se aprendió la receta en una tarde.",
+      "options": [
+        "Vale learned the whole recipe in one afternoon.",
+        "I learned the whole recipe in one afternoon.",
+        "Vale is learning the recipe this afternoon."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me gasté toda la plata.",
+      "options": [
+        "She spent all the money.",
+        "You spent all the money.",
+        "I spent all the money."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se comieron la torta entera.",
+      "options": [
+        "We ate the whole cake.",
+        "They ate the whole cake.",
+        "I ate the whole cake."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te leíste el contrato completo?",
+      "options": [
+        "Did he read the whole contract?",
+        "Did you read the whole contract?",
+        "Will you read the whole contract?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ tomaste todo el tinto.* (*Te* or *Se*) You drank all the coffee (to a friend).",
+      "answer": "Te tomaste todo el tinto.",
+      "accept": [],
+      "why": "You is *tú* here, so the pronoun is *te*, matching *tomaste*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ comimos todos los buñuelos.* (*Nos* or *Me*) We ate every last buñuelo.",
+      "answer": "Nos comimos todos los buñuelos.",
+      "accept": [],
+      "why": "The pronoun matches the person: *nos* goes with *comimos*."
+    },
+    {
+      "prompt": "Say: I read the whole book in one night.",
+      "answer": "Me leí el libro en una noche.",
+      "accept": [],
+      "why": "*Me* plus the verb says you finished the whole book."
+    },
+    {
+      "prompt": "Say: I ate a whole chicken.",
+      "answer": "Me comí un pollo entero.",
+      "accept": [],
+      "why": "A whole chicken is a bounded thing, so *me comí* fits."
+    },
+    {
+      "prompt": "Say: Vale learned the whole recipe in one afternoon.",
+      "answer": "Vale se aprendió la receta en una tarde.",
+      "accept": [
+        "Vale se aprendió toda la receta en una tarde."
+      ],
+      "why": "The pronoun *se* goes with Vale, who did it."
+    },
+    {
+      "prompt": "Ask a friend: Did you read the whole contract?",
+      "answer": "¿Te leíste el contrato completo?",
+      "accept": [
+        "¿Te leíste todo el contrato?"
+      ],
+      "why": "*Te* matches *tú*, and *el contrato completo* is a whole thing."
+    },
+    {
+      "prompt": "Make it about me: *Se tomó dos cervezas y se fue.* becomes: I downed two beers and left.",
+      "answer": "Me tomé dos cervezas y me fui.",
+      "accept": [],
+      "why": "Both verbs change person, so both pronouns change to *me*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me comí pollo.",
+      "right": "Me comí un pollo entero.",
+      "why": "Almost. This *me* wants a whole, countable thing: *un pollo*, not just \"chicken\"."
+    },
+    {
+      "wrong": "Se leí el libro en una noche.",
+      "right": "Me leí el libro en una noche.",
+      "why": "The pronoun has to match the person: I read, so *me*."
+    },
+    {
+      "wrong": "Me leía el libro en una noche.",
+      "right": "Me leí el libro en una noche.",
+      "why": "Finishing the whole book is a completed action, so it takes the preterite, *leí*."
+    }
+  ],
+  "personal": "Tell us about something you finished in one go: a book, a meal, a series. Use *me* plus the verb: *Me vi…*, *Me comí…*"
+}

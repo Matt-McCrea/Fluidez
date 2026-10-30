@@ -1,0 +1,176 @@
+{
+  "node": "p:lo-mio-lo-tuyo",
+  "hook": {
+    "line": "Don Hernando says what everyone is good at, and what he has already suffered, without naming either. Spanish uses one small word for \"my thing\" or \"my share\".",
+    "es": "Lo tuyo es la cocina.",
+    "en": "Cooking is your thing."
+  },
+  "examples": [
+    {
+      "es": "Lo tuyo es la cocina.",
+      "en": "Cooking is your thing."
+    },
+    {
+      "es": "Yo ya pasé lo mío.",
+      "en": "I've already been through my share."
+    },
+    {
+      "es": "Mi abuela sufrió lo suyo.",
+      "en": "My grandmother suffered her share."
+    },
+    {
+      "es": "Cada uno a lo suyo.",
+      "en": "Everyone mind their own business."
+    },
+    {
+      "es": "Lo nuestro no funcionó.",
+      "en": "What we had did not work out."
+    },
+    {
+      "es": "Lo mío es escribir, no hablar.",
+      "en": "Writing is my thing, not talking."
+    }
+  ],
+  "rule": "*Lo* plus a possessive points at \"what is mine, yours, theirs\" and leaves the thing vague on purpose.\n\n*Lo mío*, *lo tuyo*, *lo suyo*, *lo nuestro*.\n\nTwo common meanings:\n\n*Lo tuyo es…* means \"your thing is\", what you are good at.\n\n*Pasé lo mío* or *sufrió lo suyo* means \"my share\" or \"her share\" of trouble.\n\n*Lo* never changes for gender or number: *lo mío*, never *la mía* here.",
+  "smallPrint": "Teachers call this the neuter article with a stressed possessive.",
+  "readAndPick": [
+    {
+      "es": "Lo tuyo es la cocina.",
+      "options": [
+        "Cooking is your thing.",
+        "Cooking is my thing.",
+        "Cooking is her thing."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Yo ya pasé lo mío.",
+      "options": [
+        "I've already spent what is mine.",
+        "I've already been through my share.",
+        "I've already been through your share."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi abuela sufrió lo suyo.",
+      "options": [
+        "My grandmother suffered a lot of pain.",
+        "My grandmother suffered her share.",
+        "My grandmother suffered my share."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cada uno a lo suyo.",
+      "options": [
+        "Everyone mind their own business.",
+        "Everyone to my house.",
+        "Everyone together."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo nuestro no funcionó.",
+      "options": [
+        "What we had did not work out.",
+        "What they had did not work out.",
+        "What I had did not work out."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo mío es escribir, no hablar.",
+      "options": [
+        "Writing is your thing, not talking.",
+        "Writing is her thing, not talking.",
+        "Writing is my thing, not talking."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale ya pasó lo suyo.",
+      "options": [
+        "Vale has already been through her share.",
+        "Vale has already been through my share.",
+        "Vale has already been through your share."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo tuyo son los pasteles, Vale.",
+      "options": [
+        "Pastries are my thing, Vale.",
+        "Pastries are your thing, Vale.",
+        "Pastries are our thing, Vale."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ es la cocina.* (*Lo tuyo* or *Lo mío*) Cooking is your thing (to a friend).",
+      "answer": "Lo tuyo es la cocina.",
+      "accept": [],
+      "why": "You is *tú*, so the thing is *tuyo*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Yo ya pasé ___.* (*lo mío* or *lo suyo*) I've already been through my share.",
+      "answer": "Yo ya pasé lo mío.",
+      "accept": [
+        "Ya pasé lo mío."
+      ],
+      "why": "I am the one who suffered, so the share is *mío*."
+    },
+    {
+      "prompt": "Say: My grandmother suffered her share.",
+      "answer": "Mi abuela sufrió lo suyo.",
+      "accept": [],
+      "why": "*Suyo* is about her, and *lo* stays the same."
+    },
+    {
+      "prompt": "Say: Writing is my thing, not talking.",
+      "answer": "Lo mío es escribir, no hablar.",
+      "accept": [],
+      "why": "*Lo mío es* plus the thing you are good at."
+    },
+    {
+      "prompt": "Say: What we had did not work out.",
+      "answer": "Lo nuestro no funcionó.",
+      "accept": [],
+      "why": "*Lo nuestro* is the vague \"what we had\"."
+    },
+    {
+      "prompt": "Say: Everyone mind their own business.",
+      "answer": "Cada uno a lo suyo.",
+      "accept": [],
+      "why": "*A lo suyo* means to their own thing."
+    },
+    {
+      "prompt": "Make it about Vale: *Yo ya pasé lo mío.* becomes: Vale has already been through her share.",
+      "answer": "Vale ya pasó lo suyo.",
+      "accept": [
+        "Vale ya pasó lo suyo."
+      ],
+      "why": "For Vale it is *suyo*, and the verb ends in *-ó*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tu cosa es la cocina.",
+      "right": "Lo tuyo es la cocina.",
+      "why": "Almost. Spanish says \"the yours\" here: *lo tuyo* instead of \"your thing\"."
+    },
+    {
+      "wrong": "Lo mía es escribir.",
+      "right": "Lo mío es escribir.",
+      "why": "*Lo* never changes, so the possessive stays *mío*."
+    },
+    {
+      "wrong": "Yo ya pasé mío.",
+      "right": "Yo ya pasé lo mío.",
+      "why": "The *lo* stays in front of the possessive."
+    }
+  ],
+  "personal": "What is your thing? Say it with *Lo mío es…* and add what your family has already been through: *Mi familia pasó lo suyo.*"
+}

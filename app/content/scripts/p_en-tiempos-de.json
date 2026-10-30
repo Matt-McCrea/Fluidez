@@ -1,0 +1,182 @@
+{
+  "node": "p:en-tiempos-de",
+  "hook": {
+    "line": "Don Hernando starts every story by setting the clock back. Spanish has a simple frame for \"back in the days of\" someone or something.",
+    "es": "En tiempos de mis abuelos no había televisión.",
+    "en": "Back in my grandparents' day there was no TV."
+  },
+  "examples": [
+    {
+      "es": "En tiempos de mis abuelos no había televisión.",
+      "en": "Back in my grandparents' day there was no TV."
+    },
+    {
+      "es": "En la época de la Violencia mucha gente se fue del campo a la ciudad.",
+      "en": "In the time of La Violencia, many people left the countryside for the city."
+    },
+    {
+      "es": "En otros tiempos, los taxistas conocían todas las calles.",
+      "en": "In the old days, taxi drivers knew every street."
+    },
+    {
+      "es": "En aquella época nadie tenía celular.",
+      "en": "At that time nobody had a cell phone."
+    },
+    {
+      "es": "¿Cómo era la ciudad en tiempos de tu abuela?",
+      "en": "What was the city like in your grandmother's day?"
+    },
+    {
+      "es": "En la época de Rosa, el café abría a las cinco de la mañana.",
+      "en": "In Rosa's day, the café opened at five in the morning."
+    }
+  ],
+  "rule": "To place a memory in an era, use a frame followed by a person or a period.\n\n*En tiempos de* or *en la época de* plus whose time it was: *en tiempos de mis abuelos*, *en la época de la Violencia*. Remember *de el* becomes *del*.\n\n*En aquella época* needs no *de*: it means \"at that time\".\n\n*En otros tiempos* is the general \"in the old days\", with nobody named.\n\nAfter the frame, the imperfect describes how things were. The preterite tells what happened once.",
+  "smallPrint": "Teachers call these time-locating phrases; *antaño* is the literary cousin, for reading only.",
+  "readAndPick": [
+    {
+      "es": "En tiempos de mis abuelos no había televisión.",
+      "options": [
+        "In my grandparents' day there was no TV.",
+        "My grandparents have no TV.",
+        "My grandparents will not have TV."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En la época de la Violencia mucha gente se fue del campo a la ciudad.",
+      "options": [
+        "Many people are leaving the countryside for the city.",
+        "In the time of La Violencia, many people left the countryside for the city.",
+        "In the time of La Violencia, many people came to the countryside."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En otros tiempos, los taxistas conocían todas las calles.",
+      "options": [
+        "Taxi drivers know every street today.",
+        "Taxi drivers never knew the streets.",
+        "In the old days, taxi drivers knew every street."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "En aquella época nadie tenía celular.",
+      "options": [
+        "At that time nobody had a cell phone.",
+        "Nobody has a cell phone now.",
+        "In that period everybody had a cell phone."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cómo era la ciudad en tiempos de tu abuela?",
+      "options": [
+        "What is the city like for your grandmother?",
+        "What was the city like in your grandmother's day?",
+        "What was the city like in my grandmother's day?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En la época de Rosa, el café abría a las cinco de la mañana.",
+      "options": [
+        "In Rosa's day, the café opened at five in the morning.",
+        "The café opens at five in the morning now.",
+        "In Rosa's day, the café closed at five in the morning."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En tiempos del abuelo de Vale no había carros en la calle.",
+      "options": [
+        "In Vale's grandfather's day there were no cars on the street.",
+        "In Vale's grandfather's day there were many cars on the street.",
+        "In Vale's father's day there were no cars on the street."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En esa época Tomás vivía en Toronto.",
+      "options": [
+        "At that time Tomás lives in Toronto.",
+        "At that time Tomás lived in Toronto.",
+        "At that time Tomás will live in Toronto."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *En ___ de mis abuelos no había televisión.* (*tiempos* or *tiempo*) Back in my grandparents' day there was no TV.",
+      "answer": "En tiempos de mis abuelos no había televisión.",
+      "accept": [],
+      "why": "The frame is *en tiempos de*, plural and with no article."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *En ___ nadie tenía celular.* (*aquella época* or *tiempos de*) At that time nobody had a cell phone.",
+      "answer": "En aquella época nadie tenía celular.",
+      "accept": [],
+      "why": "*Aquella época* means \"that period\" and needs no *de*."
+    },
+    {
+      "prompt": "Say: In Rosa's day, the café opened at five in the morning.",
+      "answer": "En la época de Rosa, el café abría a las cinco de la mañana.",
+      "accept": [
+        "En tiempos de Rosa, el café abría a las cinco de la mañana."
+      ],
+      "why": "*Rosa* is the person whose era it was, and *abría* is the imperfect for a habit."
+    },
+    {
+      "prompt": "Say: In the old days, taxi drivers knew every street.",
+      "answer": "En otros tiempos, los taxistas conocían todas las calles.",
+      "accept": [
+        "En otros tiempos los taxistas conocían todas las calles."
+      ],
+      "why": "*En otros tiempos* needs no one named."
+    },
+    {
+      "prompt": "Ask a friend: What was the city like in your grandmother's day?",
+      "answer": "¿Cómo era la ciudad en tiempos de tu abuela?",
+      "accept": [
+        "¿Cómo era la ciudad en la época de tu abuela?"
+      ],
+      "why": "*Era* describes the way things were, and *tu abuela* names the era."
+    },
+    {
+      "prompt": "Say: In the time of La Violencia, many people left the countryside for the city.",
+      "answer": "En la época de la Violencia mucha gente se fue del campo a la ciudad.",
+      "accept": [
+        "En tiempos de la Violencia mucha gente se fue del campo a la ciudad."
+      ],
+      "why": "*Se fue* is the preterite for one big movement."
+    },
+    {
+      "prompt": "Make it about Vale's grandfather: *En tiempos de mis abuelos no había televisión.* becomes: In Vale's grandfather's day there was no TV.",
+      "answer": "En tiempos del abuelo de Vale no había televisión.",
+      "accept": [
+        "En la época del abuelo de Vale no había televisión."
+      ],
+      "why": "*De* plus *el* becomes *del*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "En tiempos mis abuelos no había televisión.",
+      "right": "En tiempos de mis abuelos no había televisión.",
+      "why": "Almost. The frame needs *de* before the person."
+    },
+    {
+      "wrong": "En tiempos de mis abuelos no hay televisión.",
+      "right": "En tiempos de mis abuelos no había televisión.",
+      "why": "It is a memory from the past, so the verb is *había*."
+    },
+    {
+      "wrong": "En la época de el café abría a las cinco.",
+      "right": "En la época del café abría a las cinco.",
+      "why": "*De* plus *el* always joins into *del*."
+    }
+  ],
+  "personal": "Think of an older person in your life. Say something about their time: *En tiempos de mi abuelo…*"
+}

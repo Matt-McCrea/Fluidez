@@ -1,0 +1,180 @@
+{
+  "node": "p:traer-recuerdos",
+  "hook": {
+    "line": "A smell, a song or a street can take you straight back to someone. Don Hernando says it with a small frame where the thing does the remembering.",
+    "es": "Ese olor a tinto me trae recuerdos de mi abuela.",
+    "en": "That smell of coffee brings back memories of my grandmother."
+  },
+  "examples": [
+    {
+      "es": "Ese olor a tinto me trae recuerdos de mi abuela.",
+      "en": "That smell of coffee brings back memories of my grandmother."
+    },
+    {
+      "es": "De repente me vino a la memoria su cara.",
+      "en": "Suddenly her face came to mind."
+    },
+    {
+      "es": "Esta canción le trae muchos recuerdos a don Hernando.",
+      "en": "This song brings back a lot of memories for Don Hernando."
+    },
+    {
+      "es": "Este barrio nos trae buenos recuerdos.",
+      "en": "This neighbourhood brings back good memories for us."
+    },
+    {
+      "es": "¿Qué recuerdos te trae el café?",
+      "en": "What memories does the café bring back for you?"
+    },
+    {
+      "es": "Ahora me viene a la memoria el nombre de la calle.",
+      "en": "Now the name of the street comes to mind."
+    }
+  ],
+  "rule": "In Spanish, the thing does the bringing, and you are the one it happens to. It works like *gustar*.\n\n*(Me, te, le, nos) trae(n) recuerdos de…* means \"brings back memories of…\". The thing is the subject: *ese olor me trae*, *estas canciones me traen*.\n\n*Me viene a la memoria* means \"it comes to mind\". The thing remembered comes after: *me vino a la memoria su cara*.\n\nEnglish says \"I remember\" or \"it reminds me\". Spanish keeps you as the indirect object.",
+  "smallPrint": "Teachers call this a gustar-type construction: the person is an indirect object and the thing is the subject.",
+  "readAndPick": [
+    {
+      "es": "Ese olor a tinto me trae recuerdos de mi abuela.",
+      "options": [
+        "That smell of coffee brings back memories of my grandmother.",
+        "I bring my grandmother memories of coffee.",
+        "My grandmother brings back memories of coffee."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "De repente me vino a la memoria su cara.",
+      "options": [
+        "Suddenly I forgot her face.",
+        "Suddenly her face came to mind.",
+        "Suddenly her face came to him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esta canción le trae muchos recuerdos a don Hernando.",
+      "options": [
+        "This song brings back a lot of memories for Don Hernando.",
+        "Don Hernando brings back a lot of memories of this song.",
+        "This song brings back a lot of memories for me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Este barrio nos trae buenos recuerdos.",
+      "options": [
+        "This neighbourhood brings back good memories for me.",
+        "This neighbourhood brings back bad memories for us.",
+        "This neighbourhood brings back good memories for us."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Qué recuerdos te trae el café?",
+      "options": [
+        "What memories does the café bring back for you?",
+        "What memories does the café bring back for him?",
+        "What memories do you bring to the café?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ahora me viene a la memoria el nombre de la calle.",
+      "options": [
+        "Now I forget the name of the street.",
+        "Now the name of the street comes to mind.",
+        "Now the name of the street comes to you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esas fotos les traen recuerdos a mis abuelos.",
+      "options": [
+        "Those photos bring back memories for my grandparents.",
+        "Those photos bring back memories for my grandfather.",
+        "My grandparents bring those photos memories."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me vino a la mente su voz.",
+      "options": [
+        "His voice left my mind.",
+        "Her voice came to your mind.",
+        "Her voice came to my mind."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Este barrio ___ trae buenos recuerdos.* (*nos* or *nosotros*) This neighbourhood brings back good memories for us.",
+      "answer": "Este barrio nos trae buenos recuerdos.",
+      "accept": [],
+      "why": "The person it happens to is an indirect object: *nos*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Ese olor a tinto me ___ recuerdos de mi abuela.* (*trae* or *traigo*) That smell of coffee brings back memories of my grandmother.",
+      "answer": "Ese olor a tinto me trae recuerdos de mi abuela.",
+      "accept": [],
+      "why": "The smell is the subject, so the verb is *trae*."
+    },
+    {
+      "prompt": "Say: This song brings back a lot of memories for Don Hernando.",
+      "answer": "Esta canción le trae muchos recuerdos a don Hernando.",
+      "accept": [
+        "Esta canción le trae muchos recuerdos a don Hernando."
+      ],
+      "why": "*Le* stands for Don Hernando, and *a don Hernando* names him."
+    },
+    {
+      "prompt": "Say: Suddenly her face came to mind.",
+      "answer": "De repente me vino a la memoria su cara.",
+      "accept": [
+        "De repente su cara me vino a la memoria."
+      ],
+      "why": "The thing that came to mind, *su cara*, comes after the verb."
+    },
+    {
+      "prompt": "Ask a friend: What memories does the café bring back for you?",
+      "answer": "¿Qué recuerdos te trae el café?",
+      "accept": [],
+      "why": "*Te* is you, the one it happens to."
+    },
+    {
+      "prompt": "Say: Now the name of the street comes to mind.",
+      "answer": "Ahora me viene a la memoria el nombre de la calle.",
+      "accept": [
+        "Ahora el nombre de la calle me viene a la memoria."
+      ],
+      "why": "*Viene* is present, because the thought is arriving now."
+    },
+    {
+      "prompt": "Make it plural: *Esa foto me trae recuerdos.* becomes: Those photos bring back memories for me.",
+      "answer": "Esas fotos me traen recuerdos.",
+      "accept": [
+        "Esas fotos me traen muchos recuerdos."
+      ],
+      "why": "Plural photos take plural *traen*, and *me* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo traigo recuerdos de mi abuela con el olor.",
+      "right": "Ese olor me trae recuerdos de mi abuela.",
+      "why": "Almost. The smell brings the memories, not you: put the smell as the subject."
+    },
+    {
+      "wrong": "El tinto me traen recuerdos.",
+      "right": "El tinto me trae recuerdos.",
+      "why": "One thing brings the memories, so the verb is singular."
+    },
+    {
+      "wrong": "Su cara vino a la memoria.",
+      "right": "Me vino a la memoria su cara.",
+      "why": "Say who it came to mind for: *me*."
+    }
+  ],
+  "personal": "What smell or song takes you back? Say it: *Esa canción me trae recuerdos de…*"
+}

@@ -1,0 +1,187 @@
+{
+  "node": "g:tense-modal-uses",
+  "hook": {
+    "line": "Don Hernando knows when to ask a favour gently, how to guess about a rival, and how to make 1948 feel like it is happening now. Spanish tenses can step outside their own time to do that.",
+    "es": "Quería pedirte un favor.",
+    "en": "I wanted to ask you a favour."
+  },
+  "examples": [
+    {
+      "es": "Quería pedirte un favor.",
+      "en": "I wanted to ask you a favour."
+    },
+    {
+      "es": "Será muy caro, pero vale la pena.",
+      "en": "It may be very expensive, but it's worth it."
+    },
+    {
+      "es": "En 1948 matan a Gaitán.",
+      "en": "In 1948 Gaitán is killed."
+    },
+    {
+      "es": "Mañana viajo a Cali.",
+      "en": "I'm travelling to Cali tomorrow."
+    },
+    {
+      "es": "Iba a llamarte, pero se me olvidó.",
+      "en": "I was going to call you, but I forgot."
+    },
+    {
+      "es": "Don Hernando estará en el café, como siempre.",
+      "en": "Don Hernando is probably at the café, as always."
+    }
+  ],
+  "rule": "Spanish tenses do not always mean their clock time.\n\n*Imperfect to soften:* *quería pedirte un favor* is gentler than *quiero*. It is the \"I was wondering\" of Spanish. *Iba a…* says a plan that did not happen.\n\n*Future for a guess:* *será caro, pero…* means \"it may be expensive, but…\". *Estará en el café* means \"he's probably there\".\n\n*Present for history:* *en 1948 matan a Gaitán* makes the past vivid, like a news headline.\n\n*Present for plans:* *mañana viajo* is natural for a fixed plan.\n\nEnglish does the last one too.",
+  "smallPrint": "Teachers call these the imperfect of courtesy, the future of conjecture and concession, the historic present and the present with future meaning.",
+  "readAndPick": [
+    {
+      "es": "Quería pedirte un favor.",
+      "options": [
+        "I wanted to ask you a favour, and I did it already.",
+        "I was wondering if I could ask you a favour.",
+        "I will ask you a favour tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Será muy caro, pero vale la pena.",
+      "options": [
+        "It's going to be expensive, but it's worth it.",
+        "It was expensive, but it was worth it.",
+        "It may be expensive, but it's worth it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "En 1948 matan a Gaitán.",
+      "options": [
+        "In 1948 Gaitán is killed.",
+        "In 1948 Gaitán will be killed.",
+        "In 1948 Gaitán wants to be killed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mañana viajo a Cali.",
+      "options": [
+        "I travelled to Cali yesterday.",
+        "I'm travelling to Cali tomorrow.",
+        "I always travel to Cali."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Iba a llamarte, pero se me olvidó.",
+      "options": [
+        "I was going to call you, but I forgot.",
+        "I called you, but you forgot.",
+        "I'm going to call you, but I will forget."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Don Hernando estará en el café, como siempre.",
+      "options": [
+        "Don Hernando will be at the café tomorrow.",
+        "Don Hernando was at the café, as always.",
+        "Don Hernando is probably at the café, as always."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Será muy rico, pero no tiene modales.",
+      "options": [
+        "He may be very rich, but he has no manners.",
+        "He was very rich, but he had no manners.",
+        "He will be very rich, but he has no manners."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quería preguntarle algo, don Hernando.",
+      "options": [
+        "I wanted to ask him something, Don Hernando.",
+        "I wanted to ask you something, Don Hernando.",
+        "I want to ask you something, Don Hernando."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hoy viajo a Medellín.",
+      "options": [
+        "I'm travelling to Medellín today.",
+        "I travelled to Medellín today.",
+        "I'd travel to Medellín today."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ pedirte un favor.* (*Quería* or *Quise*) I wanted to ask you a favour (gently).",
+      "answer": "Quería pedirte un favor.",
+      "accept": [],
+      "why": "The imperfect softens the request; the preterite would say it already happened."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ muy caro, pero vale la pena.* (*Será* or *Es*) It may be very expensive, but it's worth it.",
+      "answer": "Será muy caro, pero vale la pena.",
+      "accept": [],
+      "why": "The future gives the guess \"may be\", then *pero* answers it."
+    },
+    {
+      "prompt": "Say: Tomorrow I'm travelling to Cali.",
+      "answer": "Mañana viajo a Cali.",
+      "accept": [
+        "Viajo a Cali mañana."
+      ],
+      "why": "A plain present works for a fixed plan."
+    },
+    {
+      "prompt": "Say: In 1948 Gaitán is killed.",
+      "answer": "En 1948 matan a Gaitán.",
+      "accept": [],
+      "why": "The present makes a past event feel immediate."
+    },
+    {
+      "prompt": "Say: I was going to call you, but I forgot.",
+      "answer": "Iba a llamarte, pero se me olvidó.",
+      "accept": [],
+      "why": "*Iba a* is the plan that never happened."
+    },
+    {
+      "prompt": "Say: Don Hernando is probably at the café, as always.",
+      "answer": "Don Hernando estará en el café, como siempre.",
+      "accept": [
+        "Estará don Hernando en el café, como siempre."
+      ],
+      "why": "The future of *estar* is a guess about now."
+    },
+    {
+      "prompt": "Make it gentle, to Don Hernando (formal): *Quiero preguntarle algo.*",
+      "answer": "Quería preguntarle algo.",
+      "accept": [
+        "Quería preguntarle algo, don Hernando."
+      ],
+      "why": "Switch to the imperfect to sound softer."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Quise pedirte un favor.",
+      "right": "Quería pedirte un favor.",
+      "why": "Almost. *Quise* says you wanted something and acted; for a polite opener, use *quería*."
+    },
+    {
+      "wrong": "Voy a ser muy caro, pero vale la pena.",
+      "right": "Será muy caro, pero vale la pena.",
+      "why": "\"May be\" is the future, not *ir a*."
+    },
+    {
+      "wrong": "Mañana viajaba a Cali.",
+      "right": "Mañana viajo a Cali.",
+      "why": "The imperfect is for the past; for a plan, use the present."
+    }
+  ],
+  "personal": "Ask someone a small favour the polite way, with *Quería…*, or guess something about a friend with *Estará…*"
+}

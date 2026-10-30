@@ -1,0 +1,172 @@
+{
+  "node": "p:no-te-imaginas-lo-que",
+  "hook": {
+    "line": "Every good story has a moment where you lean in and say \"you won't believe this\". Don Hernando does it every morning at the corner table.",
+    "es": "No te imaginas lo que me pasó ayer.",
+    "en": "You can't imagine what happened to me yesterday."
+  },
+  "examples": [
+    {
+      "es": "No te imaginas lo que me pasó ayer.",
+      "en": "You can't imagine what happened to me yesterday."
+    },
+    {
+      "es": "No te imaginas lo que me encontré al llegar.",
+      "en": "You can't imagine what I found when I got there."
+    },
+    {
+      "es": "No sabes lo mal que la pasamos.",
+      "en": "You've no idea what a bad time we had."
+    },
+    {
+      "es": "No te puedes ni imaginar lo rico que estaba el pan.",
+      "en": "You can't even imagine how good the bread was."
+    },
+    {
+      "es": "No se imagina lo que dijo Simón, don Hernando.",
+      "en": "You can't imagine what Simón said, Don Hernando."
+    },
+    {
+      "es": "No saben lo cansado que estoy.",
+      "en": "You all have no idea how tired I am."
+    }
+  ],
+  "rule": "This is the hook before the juicy part. Two shapes:\n\n*No te imaginas lo que* plus a verb: what happened, what I found, what he said.\n\n*No sabes lo* plus an adjective or adverb plus *que*: how tired, how badly, how good.\n\nSwap *te* for *se* with *usted*, and use *saben* for *ustedes*. English says \"you won't believe\" or \"you've no idea how\", and Spanish keeps the same lo-que frame each time.",
+  "smallPrint": "Teachers call this an attention-getter: a phrase that opens the complication of an anecdote.",
+  "readAndPick": [
+    {
+      "es": "No te imaginas lo que me pasó ayer.",
+      "options": [
+        "You can't imagine what happened to me yesterday.",
+        "You can't imagine what happened to him yesterday.",
+        "I can't imagine what happened to you yesterday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No sabes lo mal que la pasamos.",
+      "options": [
+        "You've no idea how well it went for us.",
+        "You've no idea what a bad time we had.",
+        "You've no idea what a bad time they had."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No se imagina lo que dijo Simón, don Hernando.",
+      "options": [
+        "I can't imagine what Simón said.",
+        "You can't imagine what Simón said, Don Hernando.",
+        "You can't imagine what Simón said, Tomás."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No te puedes ni imaginar lo rico que estaba el pan.",
+      "options": [
+        "You can't even imagine how good the bread was.",
+        "You can't even imagine how much bread there was.",
+        "You can't even imagine where the bread was."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No saben lo cansado que estoy.",
+      "options": [
+        "You all have no idea how tired I am.",
+        "You all have no idea how tired he is.",
+        "You all have no idea how tired we are."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No te imaginas lo que me encontré al llegar.",
+      "options": [
+        "You can't imagine what I found when I left.",
+        "You can't imagine what I found when I got there.",
+        "You can't imagine what you found when you got there."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No sabes lo cansada que está Vale.",
+      "options": [
+        "You've no idea how tired Vale is.",
+        "You've no idea how tired I am.",
+        "You've no idea how tired Vale was."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No te imaginas lo que hizo Simón.",
+      "options": [
+        "You can't imagine what Simón was doing.",
+        "You can't imagine what Simón did.",
+        "You can't imagine what Simón will do."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *No te imaginas ___ me pasó ayer.* (*lo que* or *qué*) You can't imagine what happened to me yesterday.",
+      "answer": "No te imaginas lo que me pasó ayer.",
+      "accept": [],
+      "why": "The hook uses *lo que*, then the story verb follows."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *No sabes ___ mal que la pasamos.* (*lo* or *el*) You've no idea what a bad time we had.",
+      "answer": "No sabes lo mal que la pasamos.",
+      "accept": [],
+      "why": "With an adjective or adverb the frame is *lo* plus the word plus *que*."
+    },
+    {
+      "prompt": "Say to a friend: You can't imagine what I found when I got there.",
+      "answer": "No te imaginas lo que me encontré al llegar.",
+      "accept": [],
+      "why": "*Al llegar* means when I got there, and *me encontré* says what I found."
+    },
+    {
+      "prompt": "Say to a friend: You've no idea how tired I am (a man speaking).",
+      "answer": "No sabes lo cansado que estoy.",
+      "accept": [],
+      "why": "*Lo cansado que estoy* is the how-tired part; a man says *cansado*."
+    },
+    {
+      "prompt": "Say to a friend: You can't even imagine how good the bread was.",
+      "answer": "No te puedes ni imaginar lo rico que estaba el pan.",
+      "accept": [],
+      "why": "*Ni imaginar* adds \"even\" to the hook."
+    },
+    {
+      "prompt": "Make it polite, to Don Hernando: *No te imaginas lo que me pasó ayer.*",
+      "answer": "No se imagina lo que me pasó ayer.",
+      "accept": [],
+      "why": "With *usted* the pronoun *te* becomes *se* and the verb ends in *-a*."
+    },
+    {
+      "prompt": "Make it for several people (you all): *No sabes lo cansado que estoy.*",
+      "answer": "No saben lo cansado que estoy.",
+      "accept": [],
+      "why": "*Ustedes* takes *saben*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No imaginas lo que me pasó.",
+      "right": "No te imaginas lo que me pasó.",
+      "why": "Almost. *Imaginarse* needs its pronoun: *te imaginas*."
+    },
+    {
+      "wrong": "No sabes lo que cansado estoy.",
+      "right": "No sabes lo cansado que estoy.",
+      "why": "With an adjective, *lo* goes right before it and *que* comes after."
+    },
+    {
+      "wrong": "No te imaginas lo que pasó me.",
+      "right": "No te imaginas lo que me pasó.",
+      "why": "The *me* goes before the verb: *me pasó*."
+    }
+  ],
+  "personal": "Think of a story you have told this week. Open it with a hook: *No te imaginas lo que…*"
+}
