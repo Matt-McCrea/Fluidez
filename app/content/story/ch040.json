@@ -2,7 +2,7 @@
   "id": "ch040",
   "unit": "u15",
   "title": "Del pie a la oreja",
-  "text": "Esa mañana, Vale fue a Paloquemao, y don Hernando se quedó en el café. Pero a las diez, Hernando llegó a la casa de Gloria, con Simón en el hombro.\nSimón bajó del hombro a la cama y caminó sobre Tomás: del pie a la rodilla, de la rodilla a la pierna, y de la pierna al pecho.\nTomás: Simón, me siento mal.\nSimón: ¡Me siento mal! ¡Me siento mal!\nHernando estaba nervioso, y miraba el reloj.\nHernando: ¿Tienes dolor en el pecho, mijo? ¿Te duele el brazo?\nTomás: No. Me duele la cabeza, la espalda, el cuello y las piernas.\nGloria: ¿La espalda también? Los hombres con gripa son así: un poco de fiebre, y es el fin del mundo.\nGloria le puso una toalla fría en el cuello.\nA las once, Vale llamó otra vez, en videollamada.\nVale: No estoy preocupada. Quiero verte y ya. A ver, la cara. ¡Uy, la nariz está muy roja! Abre la boca.\nTomás abrió la boca, y Simón miró adentro también.\nVale: ¿Y las orejas?\nTomás: Las orejas están bien. Pero tengo dolor de estómago. Y me duele la rodilla. Y un dedo del pie.\nVale: ¿El estómago? ¿Un dedo del pie? Tomás, eso no es gripa. Eso es drama.\nSimón le gritó en la oreja: ¡Qué susto! ¡Qué susto!\nVale: ¿Simón? ¿Don Hernando? ¿Y quién está en el café?\nHernando: Nadie, mija. Está cerrado una hora.\nVale: ¿Cerrado? ¡Don Hernando!\nHernando se levantó, y una tarjeta cayó de su chaqueta. Tomás la leyó: «Doctor Mejía. Cardiología. Jueves, 8:00».\nTomás: ¿Cardiología? ¿Por eso las preguntas del pecho y del brazo?\nHernando tomó la tarjeta rápido y la guardó.\nHernando: Tienes la nariz de Joaquín, mijo, y la cara de Rosa cuando estaba preocupada. Es una cita y ya.\nTomás: ¿Y Vale sabe?\nHernando: No. Y no va a saber. Es entre tú y yo.\nSimón: ¡Entre tú y yo! ¡Entre tú y yo!",
+  "text": "Esa mañana, Vale fue a Paloquemao, y don Hernando se quedó en el café. Pero a las diez, Hernando llegó a la casa de Gloria, con Simón en el hombro.\nSimón bajó del hombro a la cama y caminó sobre Tomás: del pie a la rodilla, de la rodilla a la pierna, y de la pierna al pecho.\nHernando estaba nervioso, y miraba el reloj.\nHernando: ¿Tienes dolor en el pecho, mijo? ¿Te duele el brazo?\nTomás: No. Me duele la cabeza, la espalda, el cuello y las piernas.\nGloria le puso una toalla fría en el cuello.\nA las once, Vale llamó otra vez, en videollamada.\nVale: No estoy preocupada. Quiero verte y ya. A ver, la cara. ¡Uy, la nariz está muy roja!\nTomás: También tengo dolor de estómago. Y me duele la rodilla. Y un dedo del pie.\nVale: ¿El estómago? ¿Un dedo del pie? Tomás, eso no es gripa. Eso es drama.\nSimón le gritó en la oreja: ¡Qué susto!\nVale: ¿Simón? ¿Don Hernando? ¿Y quién está en el café?\nHernando: Nadie, mija. Está cerrado una hora.\nVale: ¿Cerrado? ¡Don Hernando!\nHernando se levantó, y una tarjeta cayó de su chaqueta. Tomás la leyó: «Doctor Mejía. Cardiología. Jueves, 8:00».\nTomás: ¿Cardiología? ¿Por eso las preguntas del pecho y del brazo?\nHernando guardó la tarjeta rápido.\nHernando: Tienes la nariz de Joaquín, mijo, y la cara de Rosa cuando estaba preocupada. Es una cita y ya.\nTomás: ¿Y Vale sabe?\nHernando: No. Y no va a saber. Es entre tú y yo.\nSimón: ¡Entre tú y yo!",
   "gloss": [
     {
       "es": "mijo",
@@ -21,20 +21,8 @@
       "en": "Cardiology (the heart doctor)"
     },
     {
-      "es": "Los hombres con gripa son así",
-      "en": "That's what men with flu are like"
-    },
-    {
-      "es": "un poco de fiebre, y es el fin del mundo",
-      "en": "a little fever, and it's the end of the world"
-    },
-    {
       "es": "Quiero verte y ya.",
       "en": "I just want to see you."
-    },
-    {
-      "es": "Simón miró adentro también",
-      "en": "Simón looked inside too"
     },
     {
       "es": "Eso es drama.",
@@ -45,8 +33,8 @@
       "en": "Is that why you asked about the chest and the arm?"
     },
     {
-      "es": "la guardó",
-      "en": "put it away"
+      "es": "guardó la tarjeta",
+      "en": "put the card away"
     },
     {
       "es": "Es entre tú y yo.",
@@ -67,7 +55,7 @@
     {
       "q": "How does Vale check on Tomás this time?",
       "options": [
-        "A video call, looking at his face, nose, mouth and ears",
+        "A video call, looking at his face and nose",
         "She comes to Gloria's house",
         "She sends Mariana",
         "She calls the doctor"
@@ -141,8 +129,6 @@
   "requires": [
     "c:a-ver",
     "c:abierto-cerrado",
-    "c:bien-y-tu",
-    "c:me-siento-mal",
     "c:que-susto",
     "c:quiero",
     "c:tengo",
@@ -162,7 +148,6 @@
     "g:object-pronoun-position",
     "g:present-er-ir",
     "g:preterite-ar",
-    "g:preterite-er-ir",
     "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
     "g:preterite-spelling-stem",
@@ -172,16 +157,12 @@
     "g:stem-boot",
     "g:verb-infinitive",
     "g:yo-irregular",
-    "p:bien-bueno",
-    "p:bien-mal-vs-bueno-malo",
-    "p:con-sin",
     "p:cuando-basic",
     "p:demonstratives-basic",
     "p:es-tiene-lleva",
     "p:ir-a-venir-de-place",
     "p:me-te-nos-objects",
     "p:otro-no-article",
-    "p:poco-un-poco",
     "p:position-de",
     "p:possessives-basic",
     "p:quantifiers-basic",
@@ -190,11 +171,7 @@
     "p:telling-time"
   ],
   "lexemes": [
-    "l:abrir",
-    "l:adentro",
     "l:bajar",
-    "l:bien",
-    "l:boca",
     "l:brazo",
     "l:cabeza",
     "l:caer",
@@ -216,13 +193,10 @@
     "l:espalda",
     "l:estar",
     "l:estómago",
-    "l:fiebre",
-    "l:fin",
     "l:frío",
     "l:gripa",
     "l:gritar",
     "l:guardar",
-    "l:hombre",
     "l:hombro",
     "l:hora",
     "l:ir",
@@ -231,12 +205,10 @@
     "l:levantarse",
     "l:llamar",
     "l:llegar",
-    "l:mal",
     "l:mañana",
     "l:mija",
     "l:mijo",
     "l:mirar",
-    "l:mundo",
     "l:nariz",
     "l:nervioso",
     "l:oreja",
@@ -255,13 +227,11 @@
     "l:rojo",
     "l:rápido",
     "l:saber",
-    "l:sentirse",
     "l:ser",
     "l:susto",
     "l:tarjeta",
     "l:tener",
     "l:toalla",
-    "l:tomar",
     "l:ver",
     "l:vez",
     "l:videollamada"
