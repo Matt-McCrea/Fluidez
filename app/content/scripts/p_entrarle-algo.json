@@ -1,0 +1,180 @@
+{
+ "node": "p:entrarle-algo",
+ "hook": {
+  "line": "Some feelings arrive without asking: sleep after lunch, fear at the sight of a letter. Spanish says the feeling walks in on you, which is exactly how it feels.",
+  "es": "De repente me entró un miedo horrible.",
+  "en": "Suddenly a horrible fear came over me."
+ },
+ "examples": [
+  {
+   "es": "De repente me entró un miedo horrible.",
+   "en": "Suddenly a horrible fear came over me."
+  },
+  {
+   "es": "Me entraron ganas de llorar.",
+   "en": "I suddenly felt like crying."
+  },
+  {
+   "es": "Después del almuerzo me entra sueño.",
+   "en": "After lunch I get sleepy."
+  },
+  {
+   "es": "A Tomás le entró una rabia enorme al oír la noticia.",
+   "en": "A huge rage came over Tomás when he heard the news."
+  },
+  {
+   "es": "En la madrugada nos entró un frío terrible.",
+   "en": "In the early hours a terrible cold came over us."
+  },
+  {
+   "es": "¿Te entraron ganas de llorar?",
+   "en": "Did you feel like crying? (to a friend)"
+  }
+ ],
+ "rule": "In English you \"get scared\". In Spanish the feeling is what arrives, and you are the person it arrives at: *me entró miedo*, literally \"fear entered me\".\n\nIt works like *gustar*. The person comes first as *me, te, le, nos, les*, and the verb agrees with the feeling: *me entró miedo* (one thing), *me entraron ganas* (*ganas* is plural).\n\nUsual feelings: *frío, calor, sueño, hambre, sed, miedo, ganas de*, *rabia*, *tristeza*, *risa*.\n\nThe past, *entró*, is a sudden hit. The present, *entra*, is a habit: *Después del almuerzo me entra sueño*.",
+ "smallPrint": "Teachers call this a *gustar*-type construction: the feeling is the grammatical subject and the person is an indirect object.",
+ "readAndPick": [
+  {
+   "es": "Me entró sueño.",
+   "options": [
+    "I got sleepy.",
+    "He got sleepy.",
+    "We got sleepy."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Le entró sueño.",
+   "options": [
+    "I got sleepy.",
+    "He got sleepy.",
+    "We got sleepy."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Nos entró hambre.",
+   "options": [
+    "They got hungry.",
+    "I got hungry.",
+    "We got hungry."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Me entraron ganas de llorar.",
+   "options": [
+    "I suddenly felt like crying.",
+    "I usually feel like crying.",
+    "He suddenly felt like crying."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Después del almuerzo me entra sueño.",
+   "options": [
+    "After lunch I got sleepy.",
+    "After lunch I get sleepy.",
+    "After lunch he gets sleepy."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "A Tomás le entró una rabia enorme.",
+   "options": [
+    "A huge rage came over Tomás.",
+    "A huge rage came over me.",
+    "A huge rage usually comes over Tomás."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "De noche me entra miedo.",
+   "options": [
+    "At night I got scared.",
+    "At night he gets scared.",
+    "At night I get scared."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "¿Te entraron ganas de llorar?",
+   "options": [
+    "Did I feel like crying?",
+    "Did you feel like crying? (to a friend)",
+    "Did she feel like crying?"
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick *entró* or *entraron* and type the sentence: *Me ___ ganas de llorar.* (*ganas* is plural)",
+   "answer": "Me entraron ganas de llorar.",
+   "accept": [],
+   "why": "The verb agrees with the feeling, and *ganas* is plural."
+  },
+  {
+   "prompt": "Type in Spanish: Suddenly a horrible fear came over me.",
+   "answer": "De repente me entró un miedo horrible.",
+   "accept": [
+    "Me entró un miedo horrible de repente."
+   ],
+   "why": "*Me* is who it happens to, and *entró* agrees with the single *miedo*."
+  },
+  {
+   "prompt": "Type in Spanish: After lunch I get sleepy.",
+   "answer": "Después del almuerzo me entra sueño.",
+   "accept": [
+    "Después de almorzar me entra sueño."
+   ],
+   "why": "*Entra* in the present is a habit."
+  },
+  {
+   "prompt": "Type in Spanish: A huge rage came over Tomás.",
+   "answer": "A Tomás le entró una rabia enorme.",
+   "accept": [
+    "Le entró una rabia enorme a Tomás."
+   ],
+   "why": "*Le* stands for Tomás, so *a Tomás* is added to make it clear."
+  },
+  {
+   "prompt": "Make it about us: *Me entró hambre.* Say: We got hungry.",
+   "answer": "Nos entró hambre.",
+   "accept": [],
+   "why": "*Nos* replaces *me*, and the verb stays the same because *hambre* is one thing."
+  },
+  {
+   "prompt": "Type in Spanish: Did you feel like crying? (to a friend)",
+   "answer": "¿Te entraron ganas de llorar?",
+   "accept": [],
+   "why": "*Te* is \"you\", and *ganas* makes the verb plural."
+  },
+  {
+   "prompt": "Type in Spanish: At night I get scared.",
+   "answer": "De noche me entra miedo.",
+   "accept": [
+    "Por la noche me entra miedo."
+   ],
+   "why": "Present *entra* gives a habit, and *me* is who it happens to."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Yo entré miedo.",
+   "right": "Me entró miedo.",
+   "why": "Almost. You are not the one who enters: the fear enters you, so the person is *me*."
+  },
+  {
+   "wrong": "Me entró ganas de llorar.",
+   "right": "Me entraron ganas de llorar.",
+   "why": "Almost. *Ganas* is plural, so the verb is too."
+  },
+  {
+   "wrong": "Entró me sueño.",
+   "right": "Me entró sueño.",
+   "why": "Almost. The pronoun goes before the verb."
+  }
+ ],
+ "personal": "When does sleep, hunger or fear come over you? Say it: *Después de… me entra…*."
+}

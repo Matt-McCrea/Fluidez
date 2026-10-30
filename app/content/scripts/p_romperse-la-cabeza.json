@@ -1,0 +1,182 @@
+{
+ "node": "p:romperse-la-cabeza",
+ "hook": {
+  "line": "When you have thought about a problem for hours and nothing comes, English says you racked your brain. Spanish says you broke your head, and it sounds just as dramatic as it feels.",
+  "es": "Me rompí la cabeza tratando de entenderlo.",
+  "en": "I racked my brains trying to understand it."
+ },
+ "examples": [
+  {
+   "es": "Me rompí la cabeza tratando de entenderlo.",
+   "en": "I racked my brains trying to understand it."
+  },
+  {
+   "es": "Me quebré la cabeza pensando en una solución.",
+   "en": "I racked my brains thinking of a solution."
+  },
+  {
+   "es": "Tomás se rompió la cabeza buscando cómo pagar las cuentas.",
+   "en": "Tomás racked his brains looking for a way to pay the bills."
+  },
+  {
+   "es": "No te rompas la cabeza, yo lo arreglo.",
+   "en": "Don't rack your brains, I'll sort it out. (to a friend)"
+  },
+  {
+   "es": "Nos quebramos la cabeza toda la noche con ese problema.",
+   "en": "We racked our brains all night over that problem."
+  },
+  {
+   "es": "¿Te rompiste la cabeza con la carta de Altamira?",
+   "en": "Did you rack your brains over Altamira's letter? (to a friend)"
+  }
+ ],
+ "rule": "*Romperse la cabeza* (or *quebrarse la cabeza*, very common in Latin America) is to think hard about something without an easy answer.\n\nIt is reflexive: *me, te, se, nos* match the person thinking. And it says *la cabeza*, not *mi cabeza*, because the pronoun already says whose head: *me rompí la cabeza*.\n\nWhat you were thinking about follows with *tratando de* + verb, *pensando en*, *buscando*: *Me rompí la cabeza pensando en una solución*.\n\nTo tell someone not to worry about it: *No te rompas la cabeza*.",
+ "smallPrint": "Teachers call *la cabeza* here a possessive dative: the reflexive pronoun shows the owner, so the article replaces *mi*.",
+ "readAndPick": [
+  {
+   "es": "Me rompí la cabeza tratando de entenderlo.",
+   "options": [
+    "I racked my brains trying to understand it.",
+    "He racked his brains trying to understand it.",
+    "We racked our brains trying to understand it."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Tomás se rompió la cabeza buscando una solución.",
+   "options": [
+    "I racked my brains looking for a solution.",
+    "Tomás racked his brains looking for a solution.",
+    "You racked your brains looking for a solution."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Nos quebramos la cabeza toda la noche.",
+   "options": [
+    "We racked our brains all night.",
+    "They racked their brains all night.",
+    "I racked my brains all night."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "No te rompas la cabeza, yo lo arreglo.",
+   "options": [
+    "You didn't rack your brains, I'll sort it out.",
+    "Don't rack your brains, I'll sort it out. (to a friend)",
+    "I don't rack my brains, I'll sort it out."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "¿Te rompiste la cabeza con la carta?",
+   "options": [
+    "Did you rack your brains over the letter? (to a friend)",
+    "Did he rack his brains over the letter?",
+    "Do you rack your brains over the letter? (to a friend)"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Me rompo la cabeza con este problema.",
+   "options": [
+    "I racked my brains over this problem.",
+    "I'll rack my brains over this problem.",
+    "I rack my brains over this problem."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Se rompió la cabeza tratando de recordar su nombre.",
+   "options": [
+    "She racked her brains trying to remember his name.",
+    "I racked my brains trying to remember his name.",
+    "She racks her brains trying to remember his name."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Me quebré la cabeza pensando en una solución.",
+   "options": [
+    "I'm racking my brains thinking of a solution.",
+    "They racked their brains thinking of a solution.",
+    "I racked my brains thinking of a solution."
+   ],
+   "answer": 2
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick *rompí* or *rompió* and type the sentence about yourself: *Me ___ la cabeza tratando de entenderlo.*",
+   "answer": "Me rompí la cabeza tratando de entenderlo.",
+   "accept": [],
+   "why": "*Me* and the ending *-í* both say it is you."
+  },
+  {
+   "prompt": "Type in Spanish: I racked my brains thinking of a solution.",
+   "answer": "Me quebré la cabeza pensando en una solución.",
+   "accept": [
+    "Me rompí la cabeza pensando en una solución."
+   ],
+   "why": "*Me quebré* is \"I broke\" in the past, with *la cabeza*, not *mi cabeza*."
+  },
+  {
+   "prompt": "Type in Spanish: Don't rack your brains, I'll sort it out. (to a friend)",
+   "answer": "No te rompas la cabeza, yo lo arreglo.",
+   "accept": [
+    "No te quiebres la cabeza, yo lo arreglo."
+   ],
+   "why": "A negative command to a friend ends in *-as* for *-ar* verbs and *-es* for *-er* ones. *Romper* gives *rompas*."
+  },
+  {
+   "prompt": "Type in Spanish: We racked our brains all night.",
+   "answer": "Nos rompimos la cabeza toda la noche.",
+   "accept": [
+    "Nos quebramos la cabeza toda la noche."
+   ],
+   "why": "*Nos* matches *rompimos*, which is the \"we\" past."
+  },
+  {
+   "prompt": "Make it about Tomás: *Me rompí la cabeza pensando en la carta.* Say: Tomás racked his brains thinking about the letter.",
+   "answer": "Tomás se rompió la cabeza pensando en la carta.",
+   "accept": [
+    "Se rompió la cabeza pensando en la carta."
+   ],
+   "why": "*Se rompió* is for \"he\" in the past."
+  },
+  {
+   "prompt": "Make it a question to a friend: *Me rompí la cabeza con la carta.* Say: Did you rack your brains over the letter? (to a friend)",
+   "answer": "¿Te rompiste la cabeza con la carta?",
+   "accept": [],
+   "why": "*Te rompiste* is the \"you\" past, with the question marks added."
+  },
+  {
+   "prompt": "Type in Spanish: She racked her brains trying to remember his name.",
+   "answer": "Se rompió la cabeza tratando de recordar su nombre.",
+   "accept": [
+    "Ella se rompió la cabeza tratando de recordar su nombre."
+   ],
+   "why": "*Tratando de* + verb says what the effort was for."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Rompí mi cabeza tratando de entenderlo.",
+   "right": "Me rompí la cabeza tratando de entenderlo.",
+   "why": "Almost. Spanish puts the owner in the pronoun *me*, so the head becomes *la cabeza*."
+  },
+  {
+   "wrong": "Me rompí la cabeza a entenderlo.",
+   "right": "Me rompí la cabeza tratando de entenderlo.",
+   "why": "Almost. English \"trying to\" becomes *tratando de* or *pensando en*."
+  },
+  {
+   "wrong": "No te rompes la cabeza.",
+   "right": "No te rompas la cabeza.",
+   "why": "Almost. A negative command swaps the vowel: *-es* becomes *-as* for *romper*."
+  }
+ ],
+ "personal": "What problem has made you rack your brains lately? Say it with *Me rompí la cabeza pensando en…*."
+}

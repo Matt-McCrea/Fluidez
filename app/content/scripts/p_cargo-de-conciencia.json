@@ -1,0 +1,183 @@
+{
+ "node": "p:cargo-de-conciencia",
+ "hook": {
+  "line": "Everyone has a call they should have made. Tomás has a grandmother's café and a list of people he did not phone while she was alive. Spanish has a precise phrase for that weight.",
+  "es": "Tengo cargo de conciencia por no haberla llamado.",
+  "en": "I feel guilty for not having called her."
+ },
+ "examples": [
+  {
+   "es": "Tengo cargo de conciencia por no haberla llamado.",
+   "en": "I feel guilty for not having called her."
+  },
+  {
+   "es": "Siente cargo de conciencia por lo que pasó.",
+   "en": "He feels guilty about what happened."
+  },
+  {
+   "es": "Me da cargo de conciencia dejarla sola.",
+   "en": "I feel guilty leaving her alone."
+  },
+  {
+   "es": "¿Te da cargo de conciencia no haber ido?",
+   "en": "Do you feel guilty about not having gone? (to a friend)"
+  },
+  {
+   "es": "Tomás siente cargo de conciencia por no haber vuelto antes.",
+   "en": "Tomás feels guilty for not having come back sooner."
+  },
+  {
+   "es": "Rosa no tenía cargo de conciencia por nada.",
+   "en": "Rosa felt no guilt about anything."
+  }
+ ],
+ "rule": "*Cargo de conciencia* is a weight on your conscience: you did, or did not do, something you think you should have. It is moral guilt, not worry.\n\nTwo frames:\n*tener* or *sentir cargo de conciencia*: *Tengo cargo de conciencia*.\n*me da cargo de conciencia* + action: the feeling does the giving, as with *gustar*. *Me da cargo de conciencia dejarla sola*.\n\nAfter it, *por* gives the reason: *por lo que pasó*, or *por no haber* + the participle for something you did not do. Pronouns attach to *haber*: *por no haberla llamado*.\n\nNo article: never *el cargo* or *la conciencia*. The phrase is fixed.",
+ "smallPrint": "Teachers call *cargo de conciencia* a fixed noun phrase, and *por no haber* + participle a perfect infinitive.",
+ "readAndPick": [
+  {
+   "es": "Tengo cargo de conciencia por no haberla llamado.",
+   "options": [
+    "I feel guilty for not having called her.",
+    "You feel guilty for not having called her.",
+    "I feel guilty for having called her."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Siente cargo de conciencia por lo que pasó.",
+   "options": [
+    "I feel guilty about what happened.",
+    "He feels guilty about what happened.",
+    "He felt guilty about what happened."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Me da cargo de conciencia dejarla sola.",
+   "options": [
+    "She feels guilty leaving me alone.",
+    "You feel guilty leaving her alone.",
+    "I feel guilty leaving her alone."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "¿Te da cargo de conciencia no haber ido?",
+   "options": [
+    "Do you feel guilty about not having gone? (to a friend)",
+    "Do I feel guilty about not having gone?",
+    "Does he feel guilty about not having gone?"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Tomás siente cargo de conciencia por no haber vuelto antes.",
+   "options": [
+    "Tomás feels guilty for coming back sooner.",
+    "Tomás feels guilty for not having come back sooner.",
+    "Tomás felt guilty for not having come back sooner."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "No tengo cargo de conciencia por lo que dije.",
+   "options": [
+    "I feel guilty about what I said.",
+    "You feel no guilt about what you said.",
+    "I feel no guilt about what I said."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Tienes cargo de conciencia por no haberlo llamado.",
+   "options": [
+    "You feel guilty for not having called him. (to a friend)",
+    "I feel guilty for not having called him.",
+    "She feels guilty for not having called him."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Rosa no tenía cargo de conciencia por nada.",
+   "options": [
+    "Rosa feels no guilt about anything.",
+    "Rosa felt no guilt about anything.",
+    "Rosa felt guilty about everything."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "About yourself, pick *tengo* or *tiene* and type the sentence: *___ cargo de conciencia por no haberla llamado.*",
+   "answer": "Tengo cargo de conciencia por no haberla llamado.",
+   "accept": [],
+   "why": "*Tengo* is the \"I\" form of *tener*."
+  },
+  {
+   "prompt": "Type in Spanish: He feels guilty about what happened.",
+   "answer": "Siente cargo de conciencia por lo que pasó.",
+   "accept": [
+    "Tiene cargo de conciencia por lo que pasó."
+   ],
+   "why": "*Siente* works for \"he\", and *por* gives the reason."
+  },
+  {
+   "prompt": "Type in Spanish: I feel guilty leaving her alone.",
+   "answer": "Me da cargo de conciencia dejarla sola.",
+   "accept": [
+    "Me da cargo de conciencia dejarla sola."
+   ],
+   "why": "The feeling is the subject, so *me da* is followed directly by the action."
+  },
+  {
+   "prompt": "Type in Spanish: Do you feel guilty about not having gone? (to a friend)",
+   "answer": "¿Te da cargo de conciencia no haber ido?",
+   "accept": [
+    "¿Tienes cargo de conciencia por no haber ido?",
+    "¿Sientes cargo de conciencia por no haber ido?"
+   ],
+   "why": "*Te da* is \"it gives you\", which is how Spanish says \"you feel\" here."
+  },
+  {
+   "prompt": "Make it about Tomás: *Tengo cargo de conciencia por no haber vuelto antes.* Say: Tomás feels guilty for not having come back sooner.",
+   "answer": "Tomás siente cargo de conciencia por no haber vuelto antes.",
+   "accept": [
+    "Tomás tiene cargo de conciencia por no haber vuelto antes."
+   ],
+   "why": "Only the verb changes to *siente* or *tiene*."
+  },
+  {
+   "prompt": "Make it negative: *Tengo cargo de conciencia por lo que dije.* Say: I feel no guilt about what I said.",
+   "answer": "No tengo cargo de conciencia por lo que dije.",
+   "accept": [],
+   "why": "*No* goes right before the verb."
+  },
+  {
+   "prompt": "Type in Spanish: I feel guilty for not having called him.",
+   "answer": "Tengo cargo de conciencia por no haberlo llamado.",
+   "accept": [
+    "Siento cargo de conciencia por no haberlo llamado."
+   ],
+   "why": "The pronoun *lo* attaches to *haber*, and *por no* introduces what you did not do."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Me siento cargo de conciencia.",
+   "right": "Siento cargo de conciencia.",
+   "why": "Almost. *Sentir* here has no *me*, because the guilt is what you feel."
+  },
+  {
+   "wrong": "Tengo cargo de conciencia por no haber la llamado.",
+   "right": "Tengo cargo de conciencia por no haberla llamado.",
+   "why": "Almost. The pronoun glues onto the end of *haber*."
+  },
+  {
+   "wrong": "Tengo el cargo de la conciencia.",
+   "right": "Tengo cargo de conciencia.",
+   "why": "Almost. The phrase is fixed, with no articles."
+  }
+ ],
+ "personal": "Is there something you feel a little guilty about not having done? Say it with *Tengo cargo de conciencia por no haber…*."
+}

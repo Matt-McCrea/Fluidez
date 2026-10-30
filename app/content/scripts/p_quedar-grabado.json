@@ -1,0 +1,180 @@
+{
+ "node": "p:quedar-grabado",
+ "hook": {
+  "line": "Some moments never leave you: a face, a voice, an afternoon in your grandmother's café. Spanish says they stay engraved, and it makes the moment the subject, not you.",
+  "es": "Esa imagen se me quedó grabada para siempre.",
+  "en": "That image stayed etched in my memory forever."
+ },
+ "examples": [
+  {
+   "es": "Esa imagen se me quedó grabada para siempre.",
+   "en": "That image stayed etched in my memory forever."
+  },
+  {
+   "es": "La cara del ladrón se le quedó grabada.",
+   "en": "The thief's face stayed etched in her memory."
+  },
+  {
+   "es": "La voz de Rosa se me quedó grabada.",
+   "en": "Rosa's voice stayed etched in my memory."
+  },
+  {
+   "es": "Esas tardes se nos quedaron grabadas.",
+   "en": "Those afternoons stayed etched in our memory."
+  },
+  {
+   "es": "Los ojos de Rosa se me quedaron grabados.",
+   "en": "Rosa's eyes stayed etched in my memory."
+  },
+  {
+   "es": "¿Se te quedó grabado el olor del café?",
+   "en": "Did the smell of the café stay etched in your memory? (to a friend)"
+  }
+ ],
+ "rule": "English says \"I will never forget it\". Spanish says the memory stays engraved in you.\n\nThe frame: *(thing) + se + me/te/le/nos + quedó + grabado*.\n\nThe thing remembered is the subject. The person is only *me, te, le, nos*. So *quedó* and *grabado* match the thing, not the person:\n*la imagen* → *quedó grabada*\n*el olor* → *quedó grabado*\n*esas tardes* → *quedaron grabadas*\n\nFor a vivid, lasting memory you can also say *un recuerdo imborrable*, \"an unforgettable memory\".",
+ "smallPrint": "Teachers call this the *se* of unplanned events: the memory \"happens\" to you, and *grabado* is a participle that agrees with it.",
+ "readAndPick": [
+  {
+   "es": "Esa imagen se me quedó grabada para siempre.",
+   "options": [
+    "That image stayed etched in my memory forever.",
+    "That image stayed etched in his memory forever.",
+    "Those images stayed etched in my memory forever."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "La cara del ladrón se le quedó grabada.",
+   "options": [
+    "The thief's face stayed etched in my memory.",
+    "The thief's face stayed etched in her memory.",
+    "The thief's face stayed etched in our memory."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Esas tardes se nos quedaron grabadas.",
+   "options": [
+    "Those afternoons stayed etched in our memory.",
+    "That afternoon stayed etched in our memory.",
+    "Those afternoons stayed etched in my memory."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Los ojos de Rosa se me quedaron grabados.",
+   "options": [
+    "Rosa's eye stayed etched in my memory.",
+    "Rosa's eyes stayed etched in his memory.",
+    "Rosa's eyes stayed etched in my memory."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "¿Se te quedó grabado el olor del café?",
+   "options": [
+    "Did the smell of the café stay etched in your memory? (to a friend)",
+    "Did the smell of the café stay etched in his memory?",
+    "Did the smell of the café stay etched in my memory?"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "La voz de Rosa se me quedó grabada.",
+   "options": [
+    "Rosa's voices stayed etched in my memory.",
+    "Rosa's voice stayed etched in my memory.",
+    "Rosa's voice stayed etched in our memory."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Esas imágenes se me quedaron grabadas.",
+   "options": [
+    "That image stayed etched in my memory.",
+    "Those images stayed etched in my memory.",
+    "Those images stayed etched in his memory."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Aquel día se nos quedó grabado.",
+   "options": [
+    "That day stayed etched in his memory.",
+    "That day stayed etched in my memory.",
+    "That day stayed etched in our memory."
+   ],
+   "answer": 2
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick *grabado* or *grabada* and type the sentence: *La cara del ladrón se me quedó ___.* (*cara* is feminine)",
+   "answer": "La cara del ladrón se me quedó grabada.",
+   "accept": [],
+   "why": "*Grabada* agrees with *la cara*, the thing remembered."
+  },
+  {
+   "prompt": "Type in Spanish: That image stayed etched in my memory forever.",
+   "answer": "Esa imagen se me quedó grabada para siempre.",
+   "accept": [
+    "Esa imagen se me quedó grabada para siempre."
+   ],
+   "why": "*Se me quedó grabada* matches *imagen*, and *me* is you."
+  },
+  {
+   "prompt": "Type in Spanish: Rosa's voice stayed etched in my memory.",
+   "answer": "La voz de Rosa se me quedó grabada.",
+   "accept": [],
+   "why": "*Voz* is feminine singular, so *quedó grabada*."
+  },
+  {
+   "prompt": "Type in Spanish: Those afternoons stayed etched in our memory.",
+   "answer": "Esas tardes se nos quedaron grabadas.",
+   "accept": [
+    "Se nos quedaron grabadas esas tardes."
+   ],
+   "why": "*Tardes* is feminine plural, so *quedaron grabadas*, and *nos* means our."
+  },
+  {
+   "prompt": "Make it about her: *La cara se me quedó grabada.* Say: The face stayed etched in her memory.",
+   "answer": "La cara se le quedó grabada.",
+   "accept": [],
+   "why": "Only *me* changes, to *le*."
+  },
+  {
+   "prompt": "Make it plural: *Esa imagen se me quedó grabada.* Say: Those images stayed etched in my memory.",
+   "answer": "Esas imágenes se me quedaron grabadas.",
+   "accept": [
+    "Se me quedaron grabadas esas imágenes."
+   ],
+   "why": "Everything that agrees with the images goes plural: *esas, quedaron, grabadas*."
+  },
+  {
+   "prompt": "Type in Spanish: The smell of the café stayed etched in his memory.",
+   "answer": "El olor del café se le quedó grabado.",
+   "accept": [
+    "Se le quedó grabado el olor del café."
+   ],
+   "why": "*Olor* is masculine, so *grabado*, and *le* is him."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Yo me quedé grabada esa imagen.",
+   "right": "Esa imagen se me quedó grabada.",
+   "why": "Almost. The image is what stays engraved, so it is the subject and you are only *me*."
+  },
+  {
+   "wrong": "La imagen se me quedó grabado.",
+   "right": "La imagen se me quedó grabada.",
+   "why": "Almost. *Grabada* must agree with *la imagen*, which is feminine."
+  },
+  {
+   "wrong": "Esas tardes se nos quedó grabadas.",
+   "right": "Esas tardes se nos quedaron grabadas.",
+   "why": "Almost. Two afternoons mean a plural verb: *quedaron*."
+  }
+ ],
+ "personal": "Pick one moment that stayed with you: a face, a voice, a place. Say it with *se me quedó grabado* or *grabada*."
+}
