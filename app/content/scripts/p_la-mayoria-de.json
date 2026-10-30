@@ -1,0 +1,182 @@
+{
+  "node": "p:la-mayoria-de",
+  "hook": {
+    "line": "Tomás is going through the café receipts and asks Vale who actually pays how. Her answer is the quickest way to say \"most of them\" in Spanish.",
+    "es": "La mayoría de los clientes paga en efectivo.",
+    "en": "Most of the customers pay cash."
+  },
+  "examples": [
+    {
+      "es": "La mayoría de los clientes pide tinto.",
+      "en": "Most of the customers order black coffee."
+    },
+    {
+      "es": "La mayoría de la gente paga en efectivo.",
+      "en": "Most people pay cash."
+    },
+    {
+      "es": "La mayoría de mis amigos vive en Bogotá.",
+      "en": "Most of my friends live in Bogotá."
+    },
+    {
+      "es": "La mayoría de las personas quiere pagar menos.",
+      "en": "Most people want to pay less."
+    },
+    {
+      "es": "La mayoría de los vecinos ayudó.",
+      "en": "Most of the neighbours helped."
+    },
+    {
+      "es": "Casi todos los clientes pagan en efectivo.",
+      "en": "Almost all the customers pay cash."
+    }
+  ],
+  "rule": "English says \"most customers\" or \"most of the customers\". Spanish always needs the little word *de*: *la mayoría de los clientes*.\n\nThe pattern is *la mayoría de* + the group (usually with *los*, *las*, *la* or *mis*).\n\n*Mayoría* is a feminine singular noun, so *la* never changes. The verb usually stays singular too: *la mayoría pide*. Plural (*piden*) is heard as well, so don't worry if you see it.\n\nAt the top of the scale, use *casi todos* (almost all), with no *de*.",
+  "smallPrint": "Teachers call *la mayoría de* a partitive expression: it names a part of a whole.",
+  "readAndPick": [
+    {
+      "es": "La mayoría de los clientes pide tinto.",
+      "options": [
+        "Most of the customers order black coffee.",
+        "All the customers order black coffee.",
+        "One customer orders black coffee."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Casi todos los clientes pagan en efectivo.",
+      "options": [
+        "Most of the customers pay cash.",
+        "Almost all the customers pay cash.",
+        "Hardly any customers pay cash."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La mayoría de mis amigos vive en Bogotá.",
+      "options": [
+        "My best friend lives in Bogotá.",
+        "Some of my friends live in Bogotá.",
+        "Most of my friends live in Bogotá."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La mayoría de la gente paga en efectivo.",
+      "options": [
+        "Most people pay cash.",
+        "Everyone pays cash.",
+        "Nobody pays cash."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La mayoría de las personas quiere pagar menos.",
+      "options": [
+        "A few people want to pay less.",
+        "All people want to pay less.",
+        "Most people want to pay less."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La mayoría de los vecinos ayudó.",
+      "options": [
+        "Most of the neighbours helped.",
+        "All the neighbours helped.",
+        "One neighbour helped."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Casi todos los vecinos ayudaron.",
+      "options": [
+        "Most of the neighbours helped.",
+        "All the neighbours helped.",
+        "Almost all the neighbours helped."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La mayoría de los carros ya no está.",
+      "options": [
+        "Most of the cars are already gone.",
+        "None of the cars is gone.",
+        "The cars are almost all here."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de* or *a*: La mayoría ___ los clientes pide tinto. Type the whole sentence.",
+      "answer": "La mayoría de los clientes pide tinto.",
+      "accept": [
+        "La mayoría de los clientes piden tinto."
+      ],
+      "why": "After *la mayoría* Spanish always adds *de*, even where English says nothing."
+    },
+    {
+      "prompt": "Most people pay cash.",
+      "answer": "La mayoría de la gente paga en efectivo.",
+      "accept": [],
+      "why": "*La mayoría de* + the group: *la gente*."
+    },
+    {
+      "prompt": "Most of my friends live in Bogotá.",
+      "answer": "La mayoría de mis amigos vive en Bogotá.",
+      "accept": [
+        "La mayoría de mis amigos viven en Bogotá."
+      ],
+      "why": "The group comes after *de*, with its own little word: *mis amigos*."
+    },
+    {
+      "prompt": "Most of the neighbours helped.",
+      "answer": "La mayoría de los vecinos ayudó.",
+      "accept": [
+        "La mayoría de los vecinos ayudaron."
+      ],
+      "why": "*La mayoría* is singular, so *ayudó* is the usual verb."
+    },
+    {
+      "prompt": "Most people want to pay less.",
+      "answer": "La mayoría de las personas quiere pagar menos.",
+      "accept": [
+        "La mayoría de las personas quieren pagar menos."
+      ],
+      "why": "*Las personas* is the group, and *de* still comes first."
+    },
+    {
+      "prompt": "Say \"almost all\" instead: La mayoría de los clientes paga en efectivo.",
+      "answer": "Casi todos los clientes pagan en efectivo.",
+      "accept": [],
+      "why": "*Casi todos* has no *de* and takes a plural verb."
+    },
+    {
+      "prompt": "Most of the cars are already gone.",
+      "answer": "La mayoría de los carros ya no está.",
+      "accept": [
+        "La mayoría de los carros ya no están."
+      ],
+      "why": "Same frame again: *la mayoría de* + *los carros*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La mayoría los clientes pide tinto.",
+      "right": "La mayoría de los clientes pide tinto.",
+      "why": "Almost. Spanish needs *de* between *la mayoría* and the group."
+    },
+    {
+      "wrong": "El mayoría de los clientes pide tinto.",
+      "right": "La mayoría de los clientes pide tinto.",
+      "why": "Almost. *Mayoría* is feminine, so it's always *la*."
+    },
+    {
+      "wrong": "Casi todos de los clientes pagan en efectivo.",
+      "right": "Casi todos los clientes pagan en efectivo.",
+      "why": "Almost. *Casi todos* goes straight to the group, with no *de*."
+    }
+  ],
+  "personal": "Say something true about most of the people you know, starting with *La mayoría de mis amigos…* or *La mayoría de la gente…*."
+}

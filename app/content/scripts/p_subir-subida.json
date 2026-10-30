@@ -1,0 +1,181 @@
+{
+  "node": "p:subir-subida",
+  "hook": {
+    "line": "Mariana is writing about the neighbourhood and asks Tomás for the same news in two ways, as an action and as an event. Spanish lets you say it as a verb or as a noun.",
+    "es": "Hubo una subida del arriendo.",
+    "en": "There was a rise in the rent."
+  },
+  "examples": [
+    {
+      "es": "Los precios aumentaron un 10 %.",
+      "en": "Prices rose by 10%."
+    },
+    {
+      "es": "Hubo un aumento del 10 % en los precios.",
+      "en": "There was a 10% rise in prices."
+    },
+    {
+      "es": "El arriendo subió.",
+      "en": "The rent went up."
+    },
+    {
+      "es": "Hubo una subida del arriendo.",
+      "en": "There was a rise in the rent."
+    },
+    {
+      "es": "El dólar bajó este mes.",
+      "en": "The dollar went down this month."
+    },
+    {
+      "es": "Hubo una bajada del dólar.",
+      "en": "There was a fall in the dollar."
+    }
+  ],
+  "rule": "The same news has two shapes.\n\nA verb says what happened: *subir*, *bajar*, *aumentar*. *El arriendo subió.*\n\nA noun says there was an event, after *hubo*: *un aumento*, *una subida*, *una bajada*. *Hubo una subida del arriendo.*\n\nWith the noun, *de* (or *del*) names the thing that moved: *una subida del arriendo*. A percentage goes after: *un aumento del 10 %*.\n\n*Aumento* is masculine, *subida* and *bajada* are feminine.",
+  "smallPrint": "Turning a verb into a noun like this is called nominalization. News writing loves it.",
+  "readAndPick": [
+    {
+      "es": "El arriendo subió.",
+      "options": [
+        "The rent went down.",
+        "The rent went up.",
+        "The rent is cheap."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El dólar bajó este mes.",
+      "options": [
+        "The dollar went down this month.",
+        "The dollar went up this month.",
+        "The dollar runs out this month."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hubo una subida del arriendo.",
+      "options": [
+        "There was a fall in the rent.",
+        "The rent is high.",
+        "There was a rise in the rent."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hubo una bajada del dólar.",
+      "options": [
+        "There was a rise in the dollar.",
+        "There was a fall in the dollar.",
+        "There is a dollar here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los precios aumentaron un 10 %.",
+      "options": [
+        "Prices rose by 10%.",
+        "Prices fell by 10%.",
+        "Prices were 10% of the total."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hubo un aumento de las ventas.",
+      "options": [
+        "There was a fall in sales.",
+        "There was a sale.",
+        "There was a rise in sales."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hubo un aumento del 10 % en los precios.",
+      "options": [
+        "There was a 10% rise in prices.",
+        "Prices fell by 10%.",
+        "10% of the prices went up."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las ventas bajaron.",
+      "options": [
+        "Sales went up.",
+        "Sales went down.",
+        "Sales are good."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *un* or *una*: Hubo ___ subida del arriendo. Type the whole sentence.",
+      "answer": "Hubo una subida del arriendo.",
+      "accept": [],
+      "why": "*Subida* is feminine, so *una*."
+    },
+    {
+      "prompt": "Choose *un* or *una*: Hubo ___ aumento de las ventas. Type the whole sentence.",
+      "answer": "Hubo un aumento de las ventas.",
+      "accept": [],
+      "why": "*Aumento* is masculine, so *un*."
+    },
+    {
+      "prompt": "The rent went up.",
+      "answer": "El arriendo subió.",
+      "accept": [
+        "Subió el arriendo."
+      ],
+      "why": "A verb says what happened: *subió*."
+    },
+    {
+      "prompt": "Turn the noun into a verb: Hubo una subida del arriendo.",
+      "answer": "El arriendo subió.",
+      "accept": [
+        "Subió el arriendo."
+      ],
+      "why": "The thing that moved becomes the subject, and the noun becomes *subió*."
+    },
+    {
+      "prompt": "Turn the verb into a noun: El dólar bajó.",
+      "answer": "Hubo una bajada del dólar.",
+      "accept": [],
+      "why": "*Hubo una bajada de…* names the event and *de* names the thing."
+    },
+    {
+      "prompt": "There was a 10% rise in prices.",
+      "answer": "Hubo un aumento del 10 % en los precios.",
+      "accept": [
+        "Hubo un aumento del 10% en los precios.",
+        "Hubo un aumento de un 10 % en los precios."
+      ],
+      "why": "The noun *un aumento* takes the percentage after *de* or *del*."
+    },
+    {
+      "prompt": "The dollar went down this month.",
+      "answer": "El dólar bajó este mes.",
+      "accept": [
+        "Bajó el dólar este mes."
+      ],
+      "why": "One verb, *bajó*, tells the whole story."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Hay un aumento de las ventas.",
+      "right": "Hubo un aumento de las ventas.",
+      "why": "Almost. For something that already happened, use *hubo*."
+    },
+    {
+      "wrong": "Hubo un subida del arriendo.",
+      "right": "Hubo una subida del arriendo.",
+      "why": "Almost. *Subida* is feminine, so it's *una*."
+    },
+    {
+      "wrong": "Los precios subieron de 10 %.",
+      "right": "Los precios subieron un 10 %.",
+      "why": "Almost. After a verb of change, the amount comes with *un*, not *de*."
+    }
+  ],
+  "personal": "Tell us what went up or down where you live lately, either as a verb (*Subió…*) or with *Hubo una…*."
+}

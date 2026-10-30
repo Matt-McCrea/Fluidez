@@ -1,0 +1,174 @@
+{
+  "node": "p:a-cuanto-esta",
+  "hook": {
+    "line": "At the Plaza de Mercado, prices change from one day to the next. Don Hernando teaches Tomás the question every Bogotano asks at the stall.",
+    "es": "¿A cuánto está el aguacate?",
+    "en": "What's the avocado going for?"
+  },
+  "examples": [
+    {
+      "es": "¿A cuánto está el dólar hoy?",
+      "en": "What's the dollar at today?"
+    },
+    {
+      "es": "El dólar está a cuatro mil pesos.",
+      "en": "The dollar is at four thousand pesos."
+    },
+    {
+      "es": "El aguacate está a cinco mil el kilo.",
+      "en": "Avocados are five thousand a kilo."
+    },
+    {
+      "es": "¿A cuánto están los tomates?",
+      "en": "What are the tomatoes going for?"
+    },
+    {
+      "es": "Los tomates están a tres mil la libra.",
+      "en": "The tomatoes are three thousand a pound."
+    },
+    {
+      "es": "¿A cuánto está el café hoy?",
+      "en": "What is coffee going for today?"
+    }
+  ],
+  "rule": "For prices that move from day to day (the market, the dollar, petrol), Spanish uses *estar a*.\n\nAsk: *¿A cuánto está…?* (one thing) or *¿A cuánto están…?* (several).\nAnswer: *Está a…* or *Están a…* + the price.\n\nTo say \"per\", just use *el* or *la*: *a cinco mil el kilo*, *a tres mil la libra*.\n\nFor a fixed price, use *¿Cuánto cuesta?* or *¿Cuánto vale?* instead.",
+  "smallPrint": "This is the same *estar a* you use for distance and temperature. It gives a reading at this moment.",
+  "readAndPick": [
+    {
+      "es": "¿A cuánto está el dólar hoy?",
+      "options": [
+        "How old is the dollar?",
+        "What's the dollar at today?",
+        "Where is the dollar today?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El dólar está a cuatro mil pesos.",
+      "options": [
+        "The dollar is at four thousand pesos.",
+        "The dollar is four thousand kilometres away.",
+        "The dollar was four thousand pesos."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El aguacate está a cinco mil el kilo.",
+      "options": [
+        "The avocado weighs five kilos.",
+        "Five avocados cost a thousand.",
+        "The avocado is five thousand a kilo."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿A cuánto están los tomates?",
+      "options": [
+        "What is the tomato going for?",
+        "What are the tomatoes going for?",
+        "Where are the tomatoes?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los tomates están a tres mil la libra.",
+      "options": [
+        "The tomatoes are three thousand a pound.",
+        "The tomatoes weigh three pounds.",
+        "The tomato is three thousand a pound."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿A cuánto está el café hoy?",
+      "options": [
+        "Where is the coffee?",
+        "What is coffee going for today?",
+        "Is there coffee?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El jugo está a dos mil el vaso.",
+      "options": [
+        "The juice is two thousand a glass.",
+        "Two glasses of juice are free.",
+        "The juice comes in a two thousand glass."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿A cuánto está el kilo de papa?",
+      "options": [
+        "What is a kilo of potatoes going for?",
+        "How many kilos of potatoes are there?",
+        "Where is the kilo of potatoes?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *está* or *están*: ¿A cuánto ___ el dólar hoy? Type the whole sentence.",
+      "answer": "¿A cuánto está el dólar hoy?",
+      "accept": [],
+      "why": "One dollar, one thing, so *está*."
+    },
+    {
+      "prompt": "Choose *está* or *están*: ¿A cuánto ___ los tomates? Type the whole sentence.",
+      "answer": "¿A cuánto están los tomates?",
+      "accept": [],
+      "why": "*Los tomates* is plural, so *están*."
+    },
+    {
+      "prompt": "What's the dollar at today?",
+      "answer": "¿A cuánto está el dólar hoy?",
+      "accept": [],
+      "why": "*¿A cuánto está…?* asks for a price that moves."
+    },
+    {
+      "prompt": "The dollar is at four thousand pesos.",
+      "answer": "El dólar está a cuatro mil pesos.",
+      "accept": [],
+      "why": "*Está a* + the price."
+    },
+    {
+      "prompt": "Avocados are five thousand a kilo.",
+      "answer": "El aguacate está a cinco mil el kilo.",
+      "accept": [
+        "Los aguacates están a cinco mil el kilo."
+      ],
+      "why": "*El kilo* says \"per kilo\", with no extra word."
+    },
+    {
+      "prompt": "Make it plural: ¿A cuánto está el aguacate?",
+      "answer": "¿A cuánto están los aguacates?",
+      "accept": [],
+      "why": "Several things means *están* and *los aguacates*."
+    },
+    {
+      "prompt": "The tomatoes are three thousand a pound.",
+      "answer": "Los tomates están a tres mil la libra.",
+      "accept": [],
+      "why": "Plural tomatoes, so *están*, and *la libra* for \"a pound\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Cuánto está el dólar hoy?",
+      "right": "¿A cuánto está el dólar hoy?",
+      "why": "Almost. For a price that moves, the question needs *a*."
+    },
+    {
+      "wrong": "El dólar está en cuatro mil pesos.",
+      "right": "El dólar está a cuatro mil pesos.",
+      "why": "Almost. The price comes with *a*, not *en*."
+    },
+    {
+      "wrong": "¿A cuánto está los tomates?",
+      "right": "¿A cuánto están los tomates?",
+      "why": "Almost. *Los tomates* is plural, so the verb is *están*."
+    }
+  ],
+  "personal": "Think of something you buy often and ask how much it is, or tell us its price today: *Está a…*."
+}

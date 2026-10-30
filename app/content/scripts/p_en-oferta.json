@@ -1,0 +1,174 @@
+{
+  "node": "p:en-oferta",
+  "hook": {
+    "line": "Vale wants cheaper flour, and every shop on the street has a sign in the window. Tomás has to know which signs mean a real deal.",
+    "es": "El jugo está en oferta.",
+    "en": "The juice is on sale."
+  },
+  "examples": [
+    {
+      "es": "El jugo está en oferta.",
+      "en": "The juice is on sale."
+    },
+    {
+      "es": "Tiene un 20 % de descuento.",
+      "en": "It's 20% off."
+    },
+    {
+      "es": "La camisa está rebajada.",
+      "en": "The shirt is reduced."
+    },
+    {
+      "es": "Salió más barato.",
+      "en": "It worked out cheaper."
+    },
+    {
+      "es": "Hay un descuento del 15 %.",
+      "en": "There's a 15% discount."
+    },
+    {
+      "es": "¿Está en oferta?",
+      "en": "Is it on sale?"
+    }
+  ],
+  "rule": "Three easy ways to talk about a deal.\n\n*Estar en oferta* (or *en promoción*): the thing is on sale. No article after *en*.\n\n*Tener un 20 % de descuento* or *hay un descuento del 15 %*: the discount itself.\n\n*Estar rebajado*: the price has been cut. It describes the thing, so it matches it: *rebajada*, *rebajados*.\n\nAnd *salió más barato* (or *más caro*) says how it worked out afterwards.\n\nIn Spain you'll hear *las rebajas*. In Colombia, *oferta*, *promoción* and *descuento* are more usual.",
+  "smallPrint": "*Rebajado* is a past participle used as an adjective, so it agrees like one.",
+  "readAndPick": [
+    {
+      "es": "El jugo está en oferta.",
+      "options": [
+        "The juice is expensive.",
+        "The juice is on sale.",
+        "The juice is sold out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tiene un 20 % de descuento.",
+      "options": [
+        "It costs 20% more.",
+        "20% of it is left.",
+        "It's 20% off."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La camisa está rebajada.",
+      "options": [
+        "The shirt is reduced in price.",
+        "The shirt is expensive.",
+        "The shirt is brand new."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Salió más barato.",
+      "options": [
+        "It worked out more expensive.",
+        "It worked out cheaper.",
+        "It was cheap yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hay un descuento del 15 %.",
+      "options": [
+        "There's a 15% discount.",
+        "There's a 15% price rise.",
+        "There's a 15% tip."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Está en oferta?",
+      "options": [
+        "Is it open?",
+        "Is it free?",
+        "Is it on sale?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Las camisas están rebajadas.",
+      "options": [
+        "The shirt is reduced.",
+        "The shirts are reduced.",
+        "The shirts are expensive."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Salió más caro.",
+      "options": [
+        "It worked out more expensive.",
+        "It worked out cheaper.",
+        "It went on sale."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *rebajada* or *rebajado*: La camisa está ___. Type the whole sentence.",
+      "answer": "La camisa está rebajada.",
+      "accept": [],
+      "why": "*Camisa* is feminine, so *rebajada* matches."
+    },
+    {
+      "prompt": "Choose *rebajada* or *rebajadas*: Las camisas están ___. Type the whole sentence.",
+      "answer": "Las camisas están rebajadas.",
+      "accept": [],
+      "why": "*Las camisas* is feminine and plural, so *rebajadas*."
+    },
+    {
+      "prompt": "The juice is on sale.",
+      "answer": "El jugo está en oferta.",
+      "accept": [],
+      "why": "*Estar en oferta* with no article."
+    },
+    {
+      "prompt": "It's 20% off.",
+      "answer": "Tiene un 20 % de descuento.",
+      "accept": [
+        "Tiene un 20% de descuento."
+      ],
+      "why": "The discount is something it *has*: *tiene un 20 % de descuento*."
+    },
+    {
+      "prompt": "Is it on sale?",
+      "answer": "¿Está en oferta?",
+      "accept": [],
+      "why": "Same *en oferta*, now as a question."
+    },
+    {
+      "prompt": "It worked out cheaper.",
+      "answer": "Salió más barato.",
+      "accept": [],
+      "why": "*Salió* tells how it worked out, then *más barato*."
+    },
+    {
+      "prompt": "Say the opposite: Salió más barato.",
+      "answer": "Salió más caro.",
+      "accept": [],
+      "why": "Swap *barato* for *caro*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Está en la oferta.",
+      "right": "Está en oferta.",
+      "why": "Almost. After *en*, Spanish drops the article."
+    },
+    {
+      "wrong": "La camisa está rebajado.",
+      "right": "La camisa está rebajada.",
+      "why": "Almost. *Rebajada* describes *la camisa*, so it must be feminine."
+    },
+    {
+      "wrong": "Tiene 20 % descuento.",
+      "right": "Tiene un 20 % de descuento.",
+      "why": "Almost. You need *un* before the figure and *de* before *descuento*."
+    }
+  ],
+  "personal": "Tell us about something you bought or want to buy, using *Está en oferta* or *Salió más barato*."
+}

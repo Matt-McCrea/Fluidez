@@ -1,0 +1,180 @@
+{
+  "node": "p:fracciones-de",
+  "hook": {
+    "line": "Don Hernando knows the block like his own hand and likes to say who wants to sell and who doesn't. Fractions are how he counts them.",
+    "es": "La mitad de los vecinos quiere vender.",
+    "en": "Half of the neighbours want to sell."
+  },
+  "examples": [
+    {
+      "es": "La mitad de los vecinos quiere vender.",
+      "en": "Half of the neighbours want to sell."
+    },
+    {
+      "es": "Un cuarto de los clientes vive lejos.",
+      "en": "A quarter of the customers live far away."
+    },
+    {
+      "es": "La mitad del dinero es de Vale.",
+      "en": "Half of the money is Vale's."
+    },
+    {
+      "es": "La quinta parte del presupuesto se va en arriendo.",
+      "en": "A fifth of the budget goes on rent."
+    },
+    {
+      "es": "Dos tercios de la gente apoya la idea.",
+      "en": "Two thirds of the people support the idea."
+    },
+    {
+      "es": "Casi la mitad de los clientes paga en efectivo.",
+      "en": "Almost half of the customers pay cash."
+    }
+  ],
+  "rule": "A fraction is a noun, so *de* follows it, just like *la mayoría de*.\n\n*la mitad de* (half)\n*un cuarto de* (a quarter)\n*un tercio de*, *dos tercios de* (a third, two thirds)\n*la quinta parte de* (a fifth)\n\nFor most other fractions use a number and *parte*: *la décima parte*.\n\n*De* + *el* becomes *del*: *la mitad del dinero*.\n\nCareful: *medio kilo* uses an adjective (half a kilo). *La mitad* is the noun, so it takes *de*.",
+  "smallPrint": "The ordinal number plus *parte* (*quinta parte*, *décima parte*) is how Spanish builds any fraction beyond the common ones.",
+  "readAndPick": [
+    {
+      "es": "La mitad de los vecinos quiere vender.",
+      "options": [
+        "A quarter of the neighbours want to sell.",
+        "All the neighbours want to sell.",
+        "Half of the neighbours want to sell."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Un cuarto de los clientes vive lejos.",
+      "options": [
+        "A quarter of the customers live far away.",
+        "Half of the customers live far away.",
+        "All the customers live far away."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La mitad del dinero es de Vale.",
+      "options": [
+        "All of the money is Vale's.",
+        "A quarter of the money is Vale's.",
+        "Half of the money is Vale's."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La quinta parte del presupuesto se va en arriendo.",
+      "options": [
+        "Half of the budget goes on rent.",
+        "A fifth of the budget goes on rent.",
+        "A quarter of the budget goes on rent."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dos tercios de la gente apoya la idea.",
+      "options": [
+        "One third of the people support the idea.",
+        "Two thirds of the people support the idea.",
+        "Two fifths of the people support the idea."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Casi la mitad de los clientes paga en efectivo.",
+      "options": [
+        "Almost half of the customers pay cash.",
+        "Half of the customers pay cash.",
+        "Almost all the customers pay cash."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Un cuarto de los vecinos ya vendió.",
+      "options": [
+        "Half of the neighbours have already sold.",
+        "A quarter of the neighbours have already sold.",
+        "Most of the neighbours have already sold."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La mitad de las ventas es de Vale.",
+      "options": [
+        "A fifth of the sales are Vale's.",
+        "Half of the sales are Vale's.",
+        "A quarter of the sales are Vale's."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de* or *del*: La mitad ___ dinero es de Vale. Type the whole sentence.",
+      "answer": "La mitad del dinero es de Vale.",
+      "accept": [],
+      "why": "*De* + *el* always merges into *del*."
+    },
+    {
+      "prompt": "Half of the neighbours want to sell.",
+      "answer": "La mitad de los vecinos quiere vender.",
+      "accept": [
+        "La mitad de los vecinos quieren vender."
+      ],
+      "why": "*La mitad de* + the group."
+    },
+    {
+      "prompt": "A quarter of the customers live far away.",
+      "answer": "Un cuarto de los clientes vive lejos.",
+      "accept": [
+        "Un cuarto de los clientes viven lejos."
+      ],
+      "why": "*Un cuarto de* + the group."
+    },
+    {
+      "prompt": "A fifth of the budget goes on rent.",
+      "answer": "La quinta parte del presupuesto se va en arriendo.",
+      "accept": [],
+      "why": "For a fifth, Spanish says \"the fifth part\": *la quinta parte del*."
+    },
+    {
+      "prompt": "Half of the money is Vale's.",
+      "answer": "La mitad del dinero es de Vale.",
+      "accept": [],
+      "why": "*De* + *el dinero* becomes *del dinero*."
+    },
+    {
+      "prompt": "Say a quarter instead: La mitad de los clientes paga en efectivo.",
+      "answer": "Un cuarto de los clientes paga en efectivo.",
+      "accept": [
+        "Un cuarto de los clientes pagan en efectivo."
+      ],
+      "why": "Swap *la mitad* for *un cuarto* and keep the rest."
+    },
+    {
+      "prompt": "Two thirds of the people support the idea.",
+      "answer": "Dos tercios de la gente apoya la idea.",
+      "accept": [
+        "Dos tercios de la gente apoyan la idea."
+      ],
+      "why": "*Tercios* is plural after *dos*, then *de* + the group."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La mitad los vecinos quiere vender.",
+      "right": "La mitad de los vecinos quiere vender.",
+      "why": "Almost. A fraction always needs *de* before the group."
+    },
+    {
+      "wrong": "La mitad de el dinero es de Vale.",
+      "right": "La mitad del dinero es de Vale.",
+      "why": "Almost. *De el* always becomes *del*."
+    },
+    {
+      "wrong": "Un quinto parte del presupuesto se va en arriendo.",
+      "right": "La quinta parte del presupuesto se va en arriendo.",
+      "why": "Almost. *Parte* is feminine, so it's *la quinta parte*."
+    }
+  ],
+  "personal": "Say what fraction of something in your life is true, for example *La mitad de mis amigos…* or *Un cuarto de mi plata se va en…*."
+}
