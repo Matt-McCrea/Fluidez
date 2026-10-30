@@ -1,0 +1,255 @@
+{
+  "id": "ch080",
+  "unit": "u27",
+  "title": "Cuarenta y dos correos",
+  "text": "A las seis, Tomás tenía en la pantalla cuarenta y dos correos para los Herrera de Santa Marta. Escribió «¡Hola, primo!» y lo quitó.\nVale: No, Tomás. Esa gente no te conoce. Aquí una carta así empieza con «Cordial saludo».\nTomás: ¿Cordial? Suena muy frío.\nVale: Es formal, pero es agradable. Al final escribes «Quedo atento a su respuesta» y «Gracias de antemano».\nTomás escribió despacio:\n«Cordial saludo. Soy Tomás Herrera, nieto de Rosa Herrera, de Bogotá. Busco a Joaquín Herrera, el hermano de mi abuela, o a su familia. Joaquín llegó a Santa Marta en 1978. Quedo muy atento a su respuesta. Mil gracias de antemano».\nSimón: ¡Quedo atento! ¡Quedo atento!\nHernando entró y saludó a todos.\nHernando: Ese loro ya escribe mejor que yo.\nA las siete llegó un correo de Mariana: «Les mando mi artículo sobre los edificios de Altamira. Necesito sus comentarios antes del viernes».\nHernando: Aquí me cita. «Un taxista de setenta y dos años dice que la cuadra tiene alma». ¿Por qué no pone mi nombre?\nVale: Para protegerlo, Hernando. Altamira tiene abogados.\nHernando: Quiero mi nombre completo en el artículo. Ya tengo setenta y dos años. ¿Qué me va a hacer Altamira?\nSimón: ¡Gracias de antemano, Altamira!\nTomás miró el reloj de Rosa un momento. Y mandó los cuarenta y dos correos.\nTomás: Listo. Ahora hay que esperar.\nUn minuto después sonó el celular. No era Santa Marta: era un comentario sobre el café en internet, con una sola estrella.\nVale lo leyó y dejó de sonreír.",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Gracias de antemano",
+      "en": "Thanks in advance"
+    },
+    {
+      "es": "Cordial saludo",
+      "en": "Kind regards"
+    },
+    {
+      "es": "Quedo atento a su respuesta",
+      "en": "I look forward to your reply"
+    },
+    {
+      "es": "Esa gente no te conoce.",
+      "en": "Those people don't know you."
+    },
+    {
+      "es": "Suena muy frío.",
+      "en": "It sounds very cold."
+    },
+    {
+      "es": "el hermano de mi abuela",
+      "en": "my grandmother's brother"
+    },
+    {
+      "es": "Aquí me cita.",
+      "en": "She quotes me here."
+    },
+    {
+      "es": "la cuadra tiene alma",
+      "en": "the block has a soul"
+    },
+    {
+      "es": "Para protegerlo",
+      "en": "To protect you"
+    },
+    {
+      "es": "Ahora hay que esperar.",
+      "en": "Now we have to wait."
+    },
+    {
+      "es": "dejó de sonreír",
+      "en": "stopped smiling"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Vale stop Tomás from starting with \"¡Hola, primo!\"?",
+      "options": [
+        "The Herreras in Santa Marta don't know him, so the email should be formal",
+        "Primo is a rude word in Colombia",
+        "Joaquín has no cousins",
+        "Vale wants to write the email herself"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cómo empieza una carta formal, según Vale?",
+      "options": [
+        "Con «Cordial saludo»",
+        "Con «¡Hola, primo!»",
+        "Con «Un abrazo»",
+        "Con «Quedo atento»"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando want from Mariana's article?",
+      "options": [
+        "To read it before Altamira does",
+        "His full name in it, not just \"a taxi driver\"",
+        "A photo of La Burra",
+        "Nothing, he wants to stay anonymous"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What arrives a minute after Tomás sends the emails?",
+      "options": [
+        "A reply from Joaquín",
+        "A call from Altamira",
+        "A one star comment about the café online",
+        "Mariana's article"
+      ],
+      "answer": 2
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How many emails does Tomás send?",
+      "options": [
+        "Twelve",
+        "Twenty",
+        "Forty two",
+        "Seventy two"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Tomás look at just before he sends them?",
+      "options": [
+        "Rosa's photo",
+        "Rosa's watch",
+        "Joaquín's key",
+        "The letter from 1978"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "According to Mariana's article, what does the taxi driver say?",
+      "options": [
+        "That the block has a soul",
+        "That Altamira is a thief",
+        "That Rosa threw water at a senator",
+        "That the café is for sale"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Someone has given La Esquina de Rosa one star online, and Vale has stopped smiling. Tomorrow more reviews arrive, and Tomás starts reading them like the software tester he used to be.",
+  "requires": [
+    "c:al-final",
+    "c:claro-listo",
+    "c:cordial-saludo",
+    "c:era",
+    "c:gracias-de-antemano",
+    "c:hay",
+    "c:hay-que",
+    "c:hola-buenos-dias",
+    "c:quedo-atento",
+    "c:quiero",
+    "c:tengo",
+    "c:tengo-anos",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:dates-years",
+    "p:dejar-de-inf",
+    "p:dentro-de-vs-despues",
+    "p:la-gente-singular",
+    "p:los-garcia",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:por-que-no",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abuela",
+    "l:agradable",
+    "l:ahora",
+    "l:alma",
+    "l:antemano",
+    "l:antes",
+    "l:aquí",
+    "l:artículo",
+    "l:atento",
+    "l:año",
+    "l:buscar",
+    "l:café",
+    "l:carta",
+    "l:celular",
+    "l:citar",
+    "l:comentario",
+    "l:completar",
+    "l:conocer",
+    "l:cordial",
+    "l:correo",
+    "l:cuadra",
+    "l:decir",
+    "l:dejar",
+    "l:despacio",
+    "l:después",
+    "l:edificio",
+    "l:empezar",
+    "l:entrar",
+    "l:escribir",
+    "l:esperar",
+    "l:estrella",
+    "l:familia",
+    "l:final",
+    "l:formal",
+    "l:frío",
+    "l:gente",
+    "l:hacer",
+    "l:hermano",
+    "l:internet",
+    "l:ir",
+    "l:leer",
+    "l:listo",
+    "l:llegar",
+    "l:loro",
+    "l:mandar",
+    "l:mejor",
+    "l:minuto",
+    "l:mirar",
+    "l:momento",
+    "l:necesitar",
+    "l:nieto",
+    "l:nombre",
+    "l:pantalla",
+    "l:poner",
+    "l:primo",
+    "l:proteger",
+    "l:quedar",
+    "l:querer",
+    "l:quitar",
+    "l:qué",
+    "l:reloj",
+    "l:respuesta",
+    "l:saludar",
+    "l:ser",
+    "l:sonar",
+    "l:sonreír",
+    "l:taxista",
+    "l:tener",
+    "l:viernes"
+  ]
+}

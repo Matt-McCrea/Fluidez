@@ -1,0 +1,240 @@
+{
+  "id": "ch081",
+  "unit": "u27",
+  "title": "Una estrella",
+  "text": "«Una estrella. El café es oscuro, el ajiaco pica y el loro me picó. No lo recomiendo a nadie».\nLa reseña era de un usuario, ElGenio2026.\nVale: ¿Oscuro? ¡Este café tiene la ventana más grande de la cuadra!\nHernando: Y el ajiaco no pica.\nSimón: ¡A nadie! ¡A nadie!\nTomás: Simón, ¿tú le picaste el dedo a alguien?\nSimón miró la pared y no contestó.\nA las nueve, doce usuarios más calificaron el café con una estrella, en la página.\nVale: Esas palabras hieren, Tomás. Yo me levanto a las cuatro para hacer ese pan.\nTomás: Esa gente está equivocada. Tu pan es el mejor de Bogotá. Y mira: usuarios de hoy, sin fotos, sin seguidores. Todos dicen «oscuro».\nHernando: Posiblemente es un solo genio con doce nombres.\nEn la página de ElGenio2026 había un enlace. Tomás tocó el enlace, y apareció Hoteles Altamira.\nHernando: ¡Ahí está el genio! Eso va en el artículo de Mariana.\nTomás contestó las doce reseñas con el mismo saludo y la misma despedida: «Cordial saludo. Posiblemente usted está equivocado de café. Lo esperamos con un tinto. Atentamente, Tomás Herrera».\nVale escribió su primer correo para los clientes. El saludo: «¡Hola, vecinos!». La despedida: «Con cariño, Vale y Simón».\nVale también puso un aviso en la puerta: «Aviso: el ajiaco no pica. El loro sí».\nPor la noche, el correo de Vale tenía ochenta seguidores, y Hernando calificó el ajiaco con cinco estrellas.\nVale: Lo que me hiere no es la reseña. Altamira ya no quiere comprar. Quiere sacarnos de aquí.",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "el ajiaco pica",
+      "en": "the ajiaco is spicy"
+    },
+    {
+      "es": "el loro me picó",
+      "en": "the parrot bit me"
+    },
+    {
+      "es": "Esas palabras hieren",
+      "en": "Those words hurt"
+    },
+    {
+      "es": "un solo genio con doce nombres",
+      "en": "one single genius with twelve names"
+    },
+    {
+      "es": "calificaron el café con una estrella",
+      "en": "gave the café one star"
+    },
+    {
+      "es": "Posiblemente usted está equivocado de café.",
+      "en": "Perhaps you have the wrong café."
+    },
+    {
+      "es": "Con cariño",
+      "en": "With love"
+    },
+    {
+      "es": "Quiere sacarnos de aquí.",
+      "en": "He wants to get us out of here."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the first review complain about?",
+      "options": [
+        "The prices and the slow service",
+        "A dark café, a spicy ajiaco and a parrot that bit someone",
+        "Cold coffee and dirty tables",
+        "The noise from the street"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Tomás notice about the twelve new users?",
+      "options": [
+        "They are all Rosa's old customers",
+        "They are all from Toronto",
+        "They are new today, with no photos and no followers, and they all say \"dark\"",
+        "They all left five stars"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Where does the link on ElGenio2026's page lead?",
+      "options": [
+        "To Mariana's magazine",
+        "To Hoteles Altamira",
+        "To a bakery in Medellín",
+        "To the deeds office"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué dice el aviso de Vale en la puerta?",
+      "options": [
+        "Que el ajiaco no pica, pero el loro sí",
+        "Que el café está cerrado",
+        "Que el loro no pica",
+        "Que el ajiaco pica mucho"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale think Altamira wants now?",
+      "options": [
+        "To buy the café at a better price",
+        "To hire her as a pastry chef",
+        "To get them out of the corner",
+        "To open a café in Chapinero with them"
+      ],
+      "answer": 2
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What time does Vale get up to make the bread?",
+      "options": [
+        "At four",
+        "At five",
+        "At six",
+        "At nine"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many followers does Vale's email have by night?",
+      "options": [
+        "Twelve",
+        "Forty two",
+        "Eighty",
+        "None"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "How many stars does Hernando give the ajiaco?",
+      "options": [
+        "One",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "answer": 3
+    }
+  ],
+  "hook": "Altamira has stopped trying to buy the café and started trying to push them out. Tomorrow Mariana brings good news about her article, and a messenger brings a letter from a firm of lawyers.",
+  "requires": [
+    "c:atentamente",
+    "c:cordial-saludo",
+    "c:era",
+    "c:hola-buenos-dias",
+    "c:lo-recomiendo",
+    "c:oye-mira",
+    "c:tienes",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:superlatives",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:telling-time",
+    "p:tiene-mucha-luz"
+  ],
+  "lexemes": [
+    "l:ahí",
+    "l:ajiaco",
+    "l:aparecer",
+    "l:aquí",
+    "l:artículo",
+    "l:atentamente",
+    "l:avisar",
+    "l:aviso",
+    "l:café",
+    "l:calificar",
+    "l:cariño",
+    "l:cliente",
+    "l:comprar",
+    "l:contestar",
+    "l:cordial",
+    "l:correo",
+    "l:cuadra",
+    "l:decir",
+    "l:dedo",
+    "l:despedida",
+    "l:enlace",
+    "l:equivocado",
+    "l:escribir",
+    "l:esperar",
+    "l:estar",
+    "l:estrella",
+    "l:foto",
+    "l:genio",
+    "l:gente",
+    "l:grande",
+    "l:hacer",
+    "l:herir",
+    "l:hoy",
+    "l:ir",
+    "l:levantarse",
+    "l:loro",
+    "l:mejor",
+    "l:mirar",
+    "l:noche",
+    "l:nombre",
+    "l:oscuro",
+    "l:palabra",
+    "l:pan",
+    "l:pared",
+    "l:picar",
+    "l:poner",
+    "l:posiblemente",
+    "l:puerta",
+    "l:página",
+    "l:querer",
+    "l:recomendar",
+    "l:reseña",
+    "l:sacar",
+    "l:saludar",
+    "l:saludo",
+    "l:seguidor",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:tocar",
+    "l:usuario",
+    "l:vecino",
+    "l:ventana"
+  ]
+}

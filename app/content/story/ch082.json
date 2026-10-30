@@ -1,0 +1,278 @@
+{
+  "id": "ch082",
+  "unit": "u27",
+  "title": "Los propietarios",
+  "text": "Mariana entró al café con dos periódicos y una revista debajo del brazo.\nMariana: Los periódicos no quisieron mi artículo. Tienen miedo. Pero esta revista lo publica el domingo.\nVale: ¡Felicitaciones, Mariana!\nHernando: ¿Y sale mi nombre?\nMariana: Sale. Hernando Pacheco, taxista, setenta y dos años.\nHernando: Mis nietos no leen revistas, pero esta sí la van a leer.\nSimón: ¡Taxista! ¡Setenta y dos años!\nA las diez llegó un mensajero con un sobre blanco. Tomás lo abrió y lo leyó para todos.\n«Señor Tomás Herrera: Le escribo en nombre de los propietarios del edificio de la carrera Cuarta. El contrato de arriendo del café termina en seis meses. Los propietarios necesitan el espacio libre para esa fecha. Atentamente, Restrepo y Asociados, abogados».\nNadie habló. Era un golpe muy duro.\nSimón: ¡Quedo atento!\nVale: Simón, hoy no.\nTomás: ¿Los propietarios? Yo soy propietario. Rosa me dejó su mitad.\nMariana: ¿Y la otra mitad? La carta no dice nombres. Me molesta que una carta tan larga no diga nada. Algo esconden.\nHernando: Los abogados de Altamira. Y nosotros, ¿qué recursos tenemos? Un loro, un taxi y un balde.\nVale tomó la mano de Tomás.\nVale: Qué bueno que estés aquí, Tomás. Rosa siempre dijo que su nieto iba a llegar.\nTomás no dijo nada, pero no le soltó la mano.\nMariana: Tengo una amiga fiscal, y me debe un favor. Si alguien firmó por Joaquín, ella puede investigar.\nTomás: ¿Y si Altamira encontró a Joaquín antes que nosotros?",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "balde",
+      "en": "bucket"
+    },
+    {
+      "es": "debajo del brazo",
+      "en": "under her arm"
+    },
+    {
+      "es": "Tienen miedo.",
+      "en": "They're scared."
+    },
+    {
+      "es": "Le escribo en nombre de los propietarios",
+      "en": "I am writing on behalf of the owners"
+    },
+    {
+      "es": "necesitan el espacio libre para esa fecha",
+      "en": "need the space vacant by that date"
+    },
+    {
+      "es": "Fue un golpe para todos.",
+      "en": "It was a blow for everyone."
+    },
+    {
+      "es": "Algo esconden.",
+      "en": "They're hiding something."
+    },
+    {
+      "es": "Me molesta que una carta tan larga no diga nada.",
+      "en": "It bothers me that such a long letter says nothing."
+    },
+    {
+      "es": "Qué bueno que estés aquí",
+      "en": "I'm so glad you're here"
+    },
+    {
+      "es": "no le soltó la mano",
+      "en": "didn't let go of her hand"
+    },
+    {
+      "es": "me debe un favor",
+      "en": "she owes me a favour"
+    },
+    {
+      "es": "Si alguien firmó por Joaquín",
+      "en": "If someone signed for Joaquín"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why didn't the newspapers want Mariana's article?",
+      "options": [
+        "It was too long",
+        "They were scared",
+        "It had no photos",
+        "Altamira bought them"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does the lawyers' letter say?",
+      "options": [
+        "Altamira wants to buy Tomás's half",
+        "The lease on the café ends in six months, and the owners want the space vacant",
+        "The café owes ten years of rent",
+        "Joaquín has died"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What bothers Mariana most about the letter?",
+      "options": [
+        "It is written badly",
+        "It never says who the owners are",
+        "It arrived late",
+        "It is addressed to Rosa"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué recursos tienen, según Hernando?",
+      "options": [
+        "Un loro, un taxi y un balde",
+        "Muchos abogados",
+        "Dos periódicos y una revista",
+        "Mucha plata"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Tomás afraid of at the end?",
+      "options": [
+        "That Mariana's article will not come out",
+        "That Altamira found Joaquín before they did",
+        "That Vale will go back to Medellín",
+        "That the fiscal works for Altamira"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "When will the magazine publish Mariana's article?",
+      "options": [
+        "Today",
+        "On Friday",
+        "On Sunday",
+        "In six months"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Who signs the letter?",
+      "options": [
+        "Ricardo Altamira",
+        "Restrepo y Asociados, lawyers",
+        "Joaquín Herrera",
+        "The deeds office"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who is Mariana's friend who owes her a favour?",
+      "options": [
+        "A judge",
+        "A prosecutor",
+        "A magazine editor",
+        "A taxi driver"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "A letter on behalf of \"the owners\" gives the café six months, and nobody knows who owns the other half. Tomorrow the whole block hears about Altamira's hotel, and everybody has something to say.",
+  "requires": [
+    "c:atentamente",
+    "c:era",
+    "c:que-bien",
+    "c:que-bueno-que",
+    "c:quedo-atento",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reported-past-basic",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-emotion-intro",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:felicitaciones-por",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:masculine-plural-mixed",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:street-names",
+    "p:telling-time",
+    "p:tener-hambre"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abrir",
+    "l:amiga",
+    "l:antes",
+    "l:aquí",
+    "l:arriendo",
+    "l:artículo",
+    "l:atentamente",
+    "l:atento",
+    "l:año",
+    "l:blanco",
+    "l:brazo",
+    "l:bueno",
+    "l:café",
+    "l:carrera",
+    "l:carta",
+    "l:contrato",
+    "l:debajo",
+    "l:deber",
+    "l:decir",
+    "l:dejar",
+    "l:domingo",
+    "l:duro",
+    "l:edificio",
+    "l:encontrar",
+    "l:entrar",
+    "l:esconder",
+    "l:escribir",
+    "l:espacio",
+    "l:estar",
+    "l:favor",
+    "l:fecha",
+    "l:felicitaciones",
+    "l:firmar",
+    "l:fiscal",
+    "l:golpe",
+    "l:hablar",
+    "l:hoy",
+    "l:investigar",
+    "l:ir",
+    "l:largo",
+    "l:leer",
+    "l:libre",
+    "l:llegar",
+    "l:loro",
+    "l:mano",
+    "l:mensajero",
+    "l:mes",
+    "l:miedo",
+    "l:mitad",
+    "l:molestar",
+    "l:necesitar",
+    "l:nieto",
+    "l:nombre",
+    "l:periódico",
+    "l:poder",
+    "l:propietario",
+    "l:publicar",
+    "l:quedar",
+    "l:querer",
+    "l:qué",
+    "l:recurso",
+    "l:revista",
+    "l:salir",
+    "l:ser",
+    "l:señor",
+    "l:siempre",
+    "l:sobre",
+    "l:soltar",
+    "l:taxi",
+    "l:taxista",
+    "l:tener",
+    "l:terminar",
+    "l:tomar"
+  ]
+}
