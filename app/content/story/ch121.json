@@ -1,0 +1,337 @@
+{
+  "id": "ch121",
+  "unit": "u40",
+  "title": "Tres cervezas",
+  "text": "Mariana rezaba en voz baja desde que el barco salió del muelle. No sabía nadar, y no se lo había dicho a nadie.\nMariana: Si supiera nadar, no estaría rezando.\nYesid: Tranquila, que hoy el mar está de buen humor. Nadie arriesga nada.\nPararon en una playa pequeña, de agua tan transparente que se veían los peces.\nYesid: Este era el lugar favorito de mi abuelo. Venía solo, a pensar.\nSacó una tarjeta vieja de la billetera.\nYesid: Mi tío la tenía guardada. «Hernán Duarte. Inversiones RA».\nMariana: Otra vez Ricardo Altamira.\nYesid les enseñó a bucear. Vale bajó antes que todos, como si fuera un pez. Tomás se quedó en la superficie, con la cabeza afuera.\nYesid: Si usted no mete la cabeza, no ve nada.\nTomás la metió. Debajo de él pasó una tortuga, como una señora que va a la iglesia. Tomás salió a la superficie con los ojos enormes, y la metió nuevamente.\nYesid: Este barco es de mi jefe. Si yo tuviera plata, me compraría mi propio barco.\nVale: ¿Y qué nombre le pondrías?\nYesid: Joaquín y Rosa. Los dos juntos, por fin. Si mi abuelo estuviera vivo, le daría pena todo esto: cuarenta años sin hablar con su hermana, y ahora un señor que firma con su nombre.\nTomás: Si Rosa estuviera viva, ya estaría en el barco de Duarte, con una escoba.\nYesid se rio.\nEsa noche, Tomás y Vale caminaron por la playa, bajo la luna.\nVale: Si no existiera Altamira, ¿dónde estarías ahora?\nTomás: En Toronto, probando software. Y no te conocería.\nVale: ¿Y eso te gustaría?\nTomás: No.\nTomás le quitó a Vale un poco de arena de la cara, y no retiró la mano.\nMariana venía por la arena con tres cervezas frías.\nMariana: ¿Interrumpo algo?\nTomás y Vale: ¡No!\nMariana: Lo dijeron como si fuera una canción.\nVale no miró a Tomás en toda la noche, y Tomás no miró otra cosa.\nA las once, Yesid escribió: «Mi abuela llegó antes. Quiere verlos mañana a las siete. Que el nieto de Rosa venga con hambre y sin abogado».",
+  "gloss": [
+    {
+      "es": "en voz baja",
+      "en": "under her breath"
+    },
+    {
+      "es": "Si supiera nadar, no estaría rezando.",
+      "en": "If I could swim, I wouldn't be praying."
+    },
+    {
+      "es": "nadie arriesga nada",
+      "en": "nobody is risking anything"
+    },
+    {
+      "es": "hoy el mar está de buen humor",
+      "en": "the sea is in a good mood today"
+    },
+    {
+      "es": "transparente",
+      "en": "clear"
+    },
+    {
+      "es": "billetera",
+      "en": "wallet"
+    },
+    {
+      "es": "Mi tío la tenía guardada.",
+      "en": "My uncle had kept it."
+    },
+    {
+      "es": "Si usted no mete la cabeza, no ve nada.",
+      "en": "If you don't put your head under, you won't see anything."
+    },
+    {
+      "es": "la metió nuevamente",
+      "en": "put it under again"
+    },
+    {
+      "es": "Si yo tuviera plata, me compraría mi propio barco.",
+      "en": "If I had money, I would buy my own boat."
+    },
+    {
+      "es": "¿Y qué nombre le pondrías?",
+      "en": "And what would you call it?"
+    },
+    {
+      "es": "Si mi abuelo estuviera vivo, le daría pena todo esto",
+      "en": "If my grandfather were alive, all this would make him ashamed"
+    },
+    {
+      "es": "escoba",
+      "en": "broom"
+    },
+    {
+      "es": "Si no existiera Altamira, ¿dónde estarías ahora?",
+      "en": "If Altamira didn't exist, where would you be now?"
+    },
+    {
+      "es": "software",
+      "en": "software"
+    },
+    {
+      "es": "no retiró la mano",
+      "en": "didn't take his hand away"
+    },
+    {
+      "es": "¿Interrumpo algo?",
+      "en": "Am I interrupting something?"
+    },
+    {
+      "es": "Que el nieto de Rosa venga con hambre y sin abogado.",
+      "en": "Rosa's grandson should come hungry and without a lawyer."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why is Mariana praying on the boat?",
+      "options": [
+        "She can't swim, and she hadn't told anyone",
+        "She is thinking about Rosa",
+        "Yesid asks her to",
+        "There is a storm"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is written on the card Yesid's uncle kept?",
+      "options": [
+        "«Hernán Duarte. Inversiones RA»",
+        "«Ricardo Altamira. Hoteles»",
+        "«Joaquín Herrera. Pescador»",
+        "«Radio Caribe»"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What would Yesid do if he had money?",
+      "options": [
+        "Buy his own boat and call it Joaquín y Rosa",
+        "Move to Bogotá",
+        "Buy the café",
+        "Open a hotel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué pasa cuando Tomás y Vale están solos en la playa?",
+      "options": [
+        "Casi se besan, y llega Mariana con tres cervezas",
+        "Se pelean por la música",
+        "Vale se va al hotel",
+        "Llama Hernando"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Yesid's grandmother want?",
+      "options": [
+        "To see Tomás tomorrow at seven, hungry and without a lawyer",
+        "Money for the letter",
+        "To come to Bogotá alone",
+        "Nothing more to do with the family"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Why did Joaquín come to his favourite spot?",
+      "options": [
+        "He came alone, to think",
+        "He came to fish with friends",
+        "He came to look after turtles",
+        "He came to teach tourists to dive"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás say Rosa would do if she were alive?",
+      "options": [
+        "She would already be on Duarte's boat with a broom",
+        "She would sell the café",
+        "She would cry",
+        "She would call the police"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What would Tomás be doing if Altamira didn't exist?",
+      "options": [
+        "Testing software in Toronto",
+        "Diving in Taganga",
+        "Working in the café",
+        "Writing for a newspaper"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Yesid's grandmother is back early and wants to see Rosa's grandson at seven. Tomorrow she tells them what Joaquín wished before he died, and what he asked her to do.",
+  "requires": [
+    "c:era",
+    "c:no-se",
+    "c:que-va",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-basic",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:cerca-de",
+    "p:demonstratives-basic",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-da-miedo",
+    "p:me-da-pena-que",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:poco-un-poco",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:queria-cortesia",
+    "p:saber-conocer",
+    "p:se-reciproco",
+    "p:seguir-por",
+    "p:te-invito-a",
+    "p:telling-time",
+    "p:todos-los-dias",
+    "p:ver-oir-bien-mal",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abuela",
+    "l:abuelo",
+    "l:afuera",
+    "l:agua",
+    "l:ahora",
+    "l:antes",
+    "l:arena",
+    "l:arriesgar",
+    "l:año",
+    "l:bajar",
+    "l:bajo",
+    "l:barco",
+    "l:billetera",
+    "l:bucear",
+    "l:buen",
+    "l:cabeza",
+    "l:caminar",
+    "l:canción",
+    "l:cara",
+    "l:cerveza",
+    "l:comprar",
+    "l:conocer",
+    "l:cosa",
+    "l:dar",
+    "l:debajo",
+    "l:decir",
+    "l:dónde",
+    "l:enorme",
+    "l:enseñar",
+    "l:escoba",
+    "l:escribir",
+    "l:estar",
+    "l:existir",
+    "l:favorito",
+    "l:fin",
+    "l:firmar",
+    "l:frío",
+    "l:guardar",
+    "l:gustar",
+    "l:hablar",
+    "l:hambre",
+    "l:hermana",
+    "l:hoy",
+    "l:humor",
+    "l:iglesia",
+    "l:interrumpir",
+    "l:inversión",
+    "l:ir",
+    "l:jefe",
+    "l:juntos",
+    "l:llegar",
+    "l:lugar",
+    "l:luna",
+    "l:mano",
+    "l:mar",
+    "l:mañana",
+    "l:meter",
+    "l:mirar",
+    "l:muelle",
+    "l:nadar",
+    "l:nieto",
+    "l:noche",
+    "l:nombre",
+    "l:nuevamente",
+    "l:ojo",
+    "l:parar",
+    "l:pasar",
+    "l:pena",
+    "l:pensar",
+    "l:pequeño",
+    "l:pez",
+    "l:plata",
+    "l:playa",
+    "l:poner",
+    "l:probarse",
+    "l:propio",
+    "l:quedarse",
+    "l:querer",
+    "l:quitar",
+    "l:qué",
+    "l:retirar",
+    "l:rezar",
+    "l:reír",
+    "l:saber",
+    "l:sacar",
+    "l:salir",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:superficie",
+    "l:tarjeta",
+    "l:tener",
+    "l:tortuga",
+    "l:tranquilo",
+    "l:transparente",
+    "l:tío",
+    "l:venir",
+    "l:ver",
+    "l:vez",
+    "l:viejo",
+    "l:vivo",
+    "l:voz"
+  ]
+}

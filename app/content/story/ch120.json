@@ -1,0 +1,312 @@
+{
+  "id": "ch120",
+  "unit": "u40",
+  "title": "Viento del noroeste",
+  "text": "El mosquito llegó antes que el sol. A las cinco, Tomás tenía once picaduras en un brazo.\nTomás: En Toronto, los mosquitos por lo menos esperan el verano.\nVale: Y en la ducha hay una araña del tamaño de tu mano. Ella tiene más miedo que tú.\nA las seis, la arena estaba fría, y los pescadores volvían con las redes llenas.\nYesid: Mi abuelo era pescador. Cuando llegó de Bogotá, no sabía ni nadar.\nMariana: ¿Y por qué se quedó aquí?\nYesid: Decía que el Caribe no hace preguntas.\nUna ola grande llegó hasta los pies de Tomás, y él saltó como un gato.\nYesid: Hoy el viento viene del noroeste, y con viento del noroeste cada ola es una pared. Mañana viene del suroeste.\nYesid abrió un coco con un cuchillo y se lo dio a Vale.\nYesid: Este coco viene de esa palmera. Decía que una palmera es como la gente de la costa: el viento la dobla, pero no la rompe.\nTomás tocó la palmera. Era la primera cosa de Joaquín que tocaba.\nYesid: Aquí, en la arena, las tortugas ponen sus huevos. Mi abuelo cuidaba las tortugas de noche, con una linterna.\nLa humedad era terrible.\nMariana: Con esta humedad, hasta mis ideas están cansadas.\nYesid: Cuando mi abuelo extrañaba Bogotá, subía a la sierra, donde hay niebla y pinos. Se sentaba debajo de un pino, en la niebla, y no hablaba con nadie.\nHernando llamó por video, con Simón.\nHernando: ¿Y qué tal el Caribe? Yo lo conocí en 1972, y no me gustó. Mucha agua.\nSimón: ¡Hoteles Altamira, a la orden!\nYesid: ¿Ese loro trabaja para Altamira?\nHernando: No, mijo. Ese loro trabaja para el que le dé comida.\nYesid: Hace dos años vino un señor de Bogotá, de camisa blanca. Preguntó por mi abuelo como si estuviera vivo, y quería una copia de la cédula.\nMariana: ¿Y se la dieron?\nYesid: Mi abuela no. Mi tío sí, por cien mil pesos.\nYesid: Mañana, con viento del suroeste, los llevo al lugar favorito de mi abuelo. Allá les digo el nombre del señor.",
+  "gloss": [
+    {
+      "es": "picaduras",
+      "en": "bites"
+    },
+    {
+      "es": "por lo menos",
+      "en": "at least"
+    },
+    {
+      "es": "del tamaño de tu mano",
+      "en": "the size of your hand"
+    },
+    {
+      "es": "con las redes llenas",
+      "en": "with their nets full"
+    },
+    {
+      "es": "no sabía ni nadar",
+      "en": "he couldn't even swim"
+    },
+    {
+      "es": "el Caribe no hace preguntas",
+      "en": "the Caribbean doesn't ask questions"
+    },
+    {
+      "es": "cada ola es una pared",
+      "en": "every wave is a wall"
+    },
+    {
+      "es": "saltó como un gato",
+      "en": "jumped like a cat"
+    },
+    {
+      "es": "el viento la dobla, pero no la rompe",
+      "en": "the wind bends it, but doesn't break it"
+    },
+    {
+      "es": "linterna",
+      "en": "torch"
+    },
+    {
+      "es": "a la orden",
+      "en": "at your service"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Ese loro trabaja para el que le dé comida.",
+      "en": "That parrot works for whoever feeds him."
+    },
+    {
+      "es": "Mi tío sí, por cien mil pesos.",
+      "en": "My uncle did, for a hundred thousand pesos."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why can't the boat go out today?",
+      "options": [
+        "The wind is coming from the north-west",
+        "Yesid's boss needs the boat",
+        "Mariana is afraid of the sea",
+        "There are turtles on the beach"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Joaquín say a palm tree is like?",
+      "options": [
+        "The people of the coast: the wind bends it, but doesn't break it",
+        "A tourist: it never moves",
+        "Bogotá: tall and cold",
+        "A boat: it needs the wind"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why did Joaquín go up to the sierra?",
+      "options": [
+        "When he missed Bogotá, he looked for the fog and the cold",
+        "To sell fish",
+        "To visit his sister",
+        "To look after the turtles"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hacía Joaquín con las tortugas?",
+      "options": [
+        "Las cuidaba de noche, con una linterna",
+        "Las vendía en el mercado",
+        "Las llevaba a la sierra",
+        "No le gustaban"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Yesid reveal at the end?",
+      "options": [
+        "Two years ago a man from Bogotá asked for a copy of Joaquín's ID, and his uncle sold it to him",
+        "His grandmother has sold the letter",
+        "The boat is broken",
+        "He works for Altamira"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How many bites does Tomás have on one arm?",
+      "options": [
+        "Eleven",
+        "Seven",
+        "Two",
+        "Thirty"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "When did Hernando first see the Caribbean, and what did he think?",
+      "options": [
+        "In 1972, and he didn't like it: too much water",
+        "In 1980, and he loved it",
+        "Never, he has never been",
+        "In 2010, at Joaquín's funeral"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who gave the man in the white shirt a copy of Joaquín's ID?",
+      "options": [
+        "Yesid's uncle",
+        "Yesid's grandmother",
+        "Yesid",
+        "Nobody"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Two years ago a man from Bogotá paid Yesid's uncle for a copy of a dead man's ID. Tomorrow the wind turns south-west, the boat goes out to Joaquín's favourite spot, and Yesid will say the man's name.",
+  "requires": [
+    "c:a-la-orden",
+    "c:era",
+    "c:hay",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:hace-ago",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:el-agua-fria",
+    "p:extranar",
+    "p:ir-a-venir-de-place",
+    "p:la-gente-singular",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:queria-cortesia",
+    "p:saber-conocer",
+    "p:telling-time"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:abuela",
+    "l:abuelo",
+    "l:agua",
+    "l:allá",
+    "l:antes",
+    "l:aquí",
+    "l:araña",
+    "l:arena",
+    "l:año",
+    "l:blanco",
+    "l:brazo",
+    "l:camisa",
+    "l:cansado",
+    "l:coco",
+    "l:comida",
+    "l:conocer",
+    "l:copia",
+    "l:cosa",
+    "l:costa",
+    "l:cuchillo",
+    "l:cuidar",
+    "l:cédula",
+    "l:dar",
+    "l:darse",
+    "l:debajo",
+    "l:decir",
+    "l:doblar",
+    "l:ducha",
+    "l:esperar",
+    "l:estar",
+    "l:extrañar",
+    "l:favorito",
+    "l:frío",
+    "l:gato",
+    "l:gente",
+    "l:grande",
+    "l:gustar",
+    "l:hablar",
+    "l:hacer",
+    "l:hotel",
+    "l:hoy",
+    "l:huevo",
+    "l:humedad",
+    "l:idea",
+    "l:linterna",
+    "l:llamar",
+    "l:llegar",
+    "l:lleno",
+    "l:llevar",
+    "l:loro",
+    "l:lugar",
+    "l:mano",
+    "l:mañana",
+    "l:miedo",
+    "l:mijo",
+    "l:mosquito",
+    "l:nadar",
+    "l:niebla",
+    "l:noche",
+    "l:nombre",
+    "l:noroeste",
+    "l:ola",
+    "l:orden",
+    "l:palmera",
+    "l:pared",
+    "l:pescador",
+    "l:peso",
+    "l:picadura",
+    "l:pie",
+    "l:pino",
+    "l:poner",
+    "l:pregunta",
+    "l:preguntar",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:red",
+    "l:romper",
+    "l:saber",
+    "l:saltar",
+    "l:sentarse",
+    "l:ser",
+    "l:señor",
+    "l:sierra",
+    "l:sol",
+    "l:subir",
+    "l:suroeste",
+    "l:tamaño",
+    "l:tener",
+    "l:terrible",
+    "l:tocar",
+    "l:tortuga",
+    "l:trabajar",
+    "l:tío",
+    "l:venir",
+    "l:verano",
+    "l:video",
+    "l:viento",
+    "l:vivo",
+    "l:volver"
+  ]
+}

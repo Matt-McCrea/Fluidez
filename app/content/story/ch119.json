@@ -1,0 +1,337 @@
+{
+  "id": "ch119",
+  "unit": "u40",
+  "title": "Treinta y cuatro grados",
+  "text": "Hernando tomó la decisión por Tomás. A las seis, la maleta ya estaba en la puerta del café.\nTomás: No me puedo ir ahora. El comité nos recibe en tres semanas.\nHernando: Mijo, Rosa me pidió que cuidara este café si un día ella faltaba. Ella falta, y yo estoy aquí. Váyase tranquilo.\nVale: Además, yo te dije que no te ibas solo.\nMariana: Y mi jefe quería que me quedara en Bogotá. Le dije que la historia estaba en Taganga.\nSimón: ¡Que les vaya bien, parce! ¡Que les vaya bien!\nHernando: Ese loro habla como si ustedes se fueran a la guerra.\nSanta Marta los recibió con un calor de horno. El cielo era tan azul que dolía mirarlo.\nVale: Quítate ese suéter, Toronto.\nPara Tomás, el calor era un reto. Para Mariana, el reto era el taxista: hablaba más rápido que ella.\nTaxista: Aquí todo es suave, mijo. El que corre, se muere.\nEn el hotel, Tomás buscó un lugar cómodo y encontró una hamaca. En la pared había un letrero: «No den alimento a las iguanas». Una iguana enorme lo miraba desde la ventana, con hambre.\nA las cinco, Yesid los esperaba en el muelle de Taganga: veintiséis años, la piel morena y una camiseta que decía «Aprende a bucear conmigo».\nYesid: Usted tiene la nariz de mi abuelo. Mi abuela quería que viniera usted, no un abogado. Ella vuelve de la sierra el sábado.\nTomás: Por teléfono usted dijo «era».\nYesid: Mi abuelo se murió en 2010. Nunca volvió a Bogotá.\nMariana sacó la copia del contrato de arriendo.\nMariana: Este contrato con Altamira es de hace dos años, y lo firmó «Joaquín Herrera».\nYesid: ¿Hace dos años? Mi abuelo llevaba doce años en el cementerio.\nMariana: Y un muerto no firma contratos.\nVale: Altamira tiene mejores fantasmas que el café.\nYesid se rio por primera vez. Después sacó del bolsillo una foto vieja: un señor en un barco, con la misma nariz de Tomás.\nYesid: Mañana a las seis los espero aquí. Pónganse algo cómodo, que el mar no espera a nadie.",
+  "gloss": [
+    {
+      "es": "Hernando tomó la decisión por Tomás",
+      "en": "Hernando made the decision for Tomás"
+    },
+    {
+      "es": "si un día ella faltaba",
+      "en": "if one day she wasn't there"
+    },
+    {
+      "es": "Ella falta, y yo estoy aquí.",
+      "en": "She isn't here, and I am."
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "como si ustedes se fueran a la guerra",
+      "en": "as if you were all going off to war"
+    },
+    {
+      "es": "dolía mirarlo",
+      "en": "it hurt to look at it"
+    },
+    {
+      "es": "Quítate ese suéter, Toronto.",
+      "en": "Take that sweater off, Toronto."
+    },
+    {
+      "es": "El que corre, se muere.",
+      "en": "Whoever runs, dies."
+    },
+    {
+      "es": "hamaca",
+      "en": "hammock"
+    },
+    {
+      "es": "iguanas",
+      "en": "iguanas"
+    },
+    {
+      "es": "iguana",
+      "en": "iguana"
+    },
+    {
+      "es": "muelle",
+      "en": "pier"
+    },
+    {
+      "es": "la piel morena",
+      "en": "dark, sun-browned skin"
+    },
+    {
+      "es": "Aprende a bucear conmigo",
+      "en": "Learn to dive with me"
+    },
+    {
+      "es": "contrato de arriendo",
+      "en": "lease"
+    },
+    {
+      "es": "es de hace dos años",
+      "en": "is from two years ago"
+    },
+    {
+      "es": "Mi abuelo llevaba doce años en el cementerio.",
+      "en": "My grandfather had been in the cemetery for twelve years."
+    },
+    {
+      "es": "el mar no espera a nadie",
+      "en": "the sea doesn't wait for anyone"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Tomás finally agree to leave the café?",
+      "options": [
+        "Hernando promised Rosa he would look after the café if she was ever gone, and he says Tomás can go",
+        "The committee cancelled the meeting",
+        "Vale threatens to go alone",
+        "Mariana's boss pays for the trip"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is the challenge for Mariana in Santa Marta?",
+      "options": [
+        "The heat",
+        "The taxi driver talks faster than she does",
+        "The mosquitoes",
+        "The hotel has no hot water"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué encuentra Tomás cuando busca un lugar cómodo en el hotel?",
+      "options": [
+        "Una hamaca",
+        "Una silla",
+        "Una cama",
+        "Un sofá"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is the news that Joaquín died in 2010 so important?",
+      "options": [
+        "The lease with Altamira was signed two years ago in Joaquín's name, so the signature must be false",
+        "It means Tomás inherits the boat",
+        "It means Yesid can sell the café",
+        "It means Rosa's letter was never read"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Yesid notice first about Tomás?",
+      "options": [
+        "He has his grandfather's nose",
+        "He is wearing a sweater",
+        "He speaks like a tourist",
+        "He looks tired"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does the sign in the hotel ask guests not to do?",
+      "options": [
+        "Feed the iguanas",
+        "Swim at night",
+        "Open the window",
+        "Use the hammock"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where is Yesid's grandmother, and when does she come back?",
+      "options": [
+        "In the sierra; she comes back on Saturday",
+        "In Bogotá; she comes back tomorrow",
+        "At the hospital; nobody knows",
+        "On a boat; she comes back on Sunday"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the photo Yesid takes out of his pocket show?",
+      "options": [
+        "A man on a boat with the same nose as Tomás",
+        "Rosa as a young woman",
+        "The café in 1979",
+        "Yesid's boat"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Joaquín has been dead since 2010, so someone else signed his name for Altamira. Tomorrow at six Yesid takes them to the beach where his grandfather lived, and he has something to tell them about a visitor from Bogotá.",
+  "requires": [
+    "c:ademas",
+    "c:bien-y-tu",
+    "c:era",
+    "c:puedo",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-prepositions",
+    "g:reported-past-basic",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-irregulars",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:el-que-la-que",
+    "p:entonces-de-repente",
+    "p:es-tiene-lleva",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:llevar-tiempo-gerundio",
+    "p:me-te-nos-objects",
+    "p:naci-en",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:que-subj-deseo",
+    "p:quedar-faltar-sobrar",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abuela",
+    "l:abuelo",
+    "l:además",
+    "l:ahora",
+    "l:alimento",
+    "l:aquí",
+    "l:arriendo",
+    "l:azul",
+    "l:año",
+    "l:barco",
+    "l:bien",
+    "l:bolsillo",
+    "l:bucear",
+    "l:buscar",
+    "l:café",
+    "l:calor",
+    "l:camiseta",
+    "l:cementerio",
+    "l:cielo",
+    "l:comité",
+    "l:contrato",
+    "l:copia",
+    "l:correr",
+    "l:cuidar",
+    "l:cómodo",
+    "l:dar",
+    "l:decir",
+    "l:decisión",
+    "l:después",
+    "l:doler",
+    "l:día",
+    "l:encontrar",
+    "l:enorme",
+    "l:esperar",
+    "l:estar",
+    "l:faltar",
+    "l:fantasma",
+    "l:firmar",
+    "l:foto",
+    "l:guerra",
+    "l:hablar",
+    "l:hace",
+    "l:hacer",
+    "l:hamaca",
+    "l:hambre",
+    "l:historia",
+    "l:horno",
+    "l:hotel",
+    "l:ir",
+    "l:irse",
+    "l:jefe",
+    "l:letrero",
+    "l:llevar",
+    "l:loro",
+    "l:lugar",
+    "l:maleta",
+    "l:mar",
+    "l:mañana",
+    "l:mejor",
+    "l:mijo",
+    "l:mirar",
+    "l:moreno",
+    "l:morir",
+    "l:morirse",
+    "l:muelle",
+    "l:nariz",
+    "l:parce",
+    "l:pared",
+    "l:pedir",
+    "l:piel",
+    "l:poder",
+    "l:ponerse",
+    "l:puerta",
+    "l:quedarse",
+    "l:querer",
+    "l:quitarse",
+    "l:recibir",
+    "l:reto",
+    "l:reír",
+    "l:rápido",
+    "l:sacar",
+    "l:semana",
+    "l:ser",
+    "l:señor",
+    "l:sierra",
+    "l:suave",
+    "l:suéter",
+    "l:sábado",
+    "l:taxista",
+    "l:teléfono",
+    "l:tener",
+    "l:tomar",
+    "l:tranquilo",
+    "l:venir",
+    "l:ventana",
+    "l:vez",
+    "l:viejo",
+    "l:volver"
+  ]
+}
