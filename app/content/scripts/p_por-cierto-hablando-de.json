@@ -1,0 +1,160 @@
+{
+  "node": "p:por-cierto-hablando-de",
+  "hook": {
+    "line": "Conversations in the café wander, and a good talker can steer them. Spanish has one phrase for a sudden new thought and another for a thread you pick up from what was just said.",
+    "es": "Por cierto, mañana no hay clase.",
+    "en": "By the way, there's no class tomorrow."
+  },
+  "examples": [
+    {
+      "es": "Por cierto, mañana no hay clase.",
+      "en": "By the way, there's no class tomorrow."
+    },
+    {
+      "es": "Hablando de viajes, ¿supiste que Ana se va para Japón?",
+      "en": "Speaking of travel, did you hear that Ana is going to Japan?"
+    },
+    {
+      "es": "Cambiando de tema, ¿cómo sigue tu mamá?",
+      "en": "Changing the subject, how is your mum doing?"
+    },
+    {
+      "es": "Por cierto, ¿ya pagaste la luz?",
+      "en": "By the way, have you paid the electricity bill yet?"
+    },
+    {
+      "es": "Hablando de Simón, ¿quién le dio de comer?",
+      "en": "Speaking of Simón, who fed him?"
+    }
+  ],
+  "rule": "Three openers to change direction:\n\n*Por cierto,…* a new thought with no link to what was just said.\n*Hablando de…,* picks something out of what was just said and runs with it: *hablando de* + a noun.\n*Cambiando de tema,…* announces that you are moving on.\n\nThey are not interchangeable. If you say *hablando de* the link must be real, and if there is none, use *por cierto*. Each is followed by a comma.",
+  "readAndPick": [
+    {
+      "es": "Por cierto, mañana no hay clase.",
+      "options": [
+        "By the way, there's no class tomorrow.",
+        "Speaking of class, there's none tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hablando de comida, ¿ya almorzaste?",
+      "options": [
+        "By the way, have you had lunch?",
+        "Speaking of food, have you had lunch?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cambiando de tema, ¿qué vas a hacer el sábado?",
+      "options": [
+        "Changing the subject, what are you doing on Saturday?",
+        "Speaking of Saturday, what are you doing?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hablando de Hernando, ¿viste su carro nuevo?",
+      "options": [
+        "By the way, did you see his new car?",
+        "Speaking of Hernando, did you see his new car?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por cierto, Mariana llamó esta mañana.",
+      "options": [
+        "Speaking of Mariana, she called this morning.",
+        "By the way, Mariana called this morning."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hablando de plata, ¿cuándo me pagas?",
+      "options": [
+        "Speaking of money, when are you paying me?",
+        "Changing the subject, when are you paying me?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A propósito, ¿dónde dejaste el celular?",
+      "options": [
+        "Speaking of phones, where did you leave it?",
+        "By the way, where did you leave your phone?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hablando de Vale, hoy no viene.",
+      "options": [
+        "Speaking of Vale, she isn't coming today.",
+        "By the way, Vale isn't coming today."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *Por cierto* or *Hablando de* and type the whole sentence: *___, mañana no hay clase.* (By the way, there's no class tomorrow.)",
+      "answer": "Por cierto, mañana no hay clase.",
+      "accept": [],
+      "why": "A thought that comes from nowhere is *por cierto*."
+    },
+    {
+      "prompt": "Pick *Por cierto* or *Hablando de* and type the whole sentence. You were just talking about Simón: *___ Simón, ¿quién le dio de comer?*",
+      "answer": "Hablando de Simón, ¿quién le dio de comer?",
+      "accept": [],
+      "why": "Simón was already in the conversation, so *hablando de* picks him up."
+    },
+    {
+      "prompt": "Change the subject to a friend's mum: Changing the subject, how is your mum doing?",
+      "answer": "Cambiando de tema, ¿cómo sigue tu mamá?",
+      "accept": [],
+      "why": "*Cambiando de tema* announces the turn, then a comma."
+    },
+    {
+      "prompt": "You suddenly remember, and ask a friend: By the way, have you paid the electricity bill yet?",
+      "answer": "Por cierto, ¿ya pagaste la luz?",
+      "accept": [],
+      "why": "An unrelated new thought: *por cierto*."
+    },
+    {
+      "prompt": "Someone mentioned food. Ask a friend: Speaking of food, have you had lunch yet?",
+      "answer": "Hablando de comida, ¿ya almorzaste?",
+      "accept": [],
+      "why": "The link is food, so *hablando de* + *comida*."
+    },
+    {
+      "prompt": "You were talking about Vale. Say: Speaking of Vale, she isn't coming today.",
+      "answer": "Hablando de Vale, hoy no viene.",
+      "accept": [],
+      "why": "*Hablando de* + the person you were just discussing."
+    },
+    {
+      "prompt": "Out of the blue, tell a friend: By the way, Mariana called this morning.",
+      "answer": "Por cierto, Mariana llamó esta mañana.",
+      "accept": [],
+      "why": "No link to the earlier talk, so *por cierto*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Hablando de, ¿ya almorzaste?",
+      "right": "Hablando de comida, ¿ya almorzaste?",
+      "why": "Almost. *Hablando de* needs the thing you are linking to right after it."
+    },
+    {
+      "wrong": "Hablando de Simón, mañana no hay clase.",
+      "right": "Por cierto, mañana no hay clase.",
+      "why": "*Hablando de* promises a link. If the new thought has none, use *por cierto*."
+    },
+    {
+      "wrong": "Por cierto de viajes, ¿supiste lo de Ana?",
+      "right": "Hablando de viajes, ¿supiste lo de Ana?",
+      "why": "*Por cierto* stands alone. To link to a topic, use *hablando de*."
+    }
+  ],
+  "smallPrint": "Teachers call these *marcadores del discurso* (discourse markers).",
+  "personal": "Think of a friend you haven't seen in a while. Write the first line you would say with *Por cierto,…*."
+}

@@ -1,0 +1,170 @@
+{
+  "node": "p:no-me-olvido-de",
+  "hook": {
+    "line": "Someone doubts you, and you want to say, calmly and clearly, that you haven't forgotten. Spanish has a neat way to do it, and another for the big promise.",
+    "es": "No me he olvidado de que la entrega es mañana.",
+    "en": "I haven't forgotten that the deadline is tomorrow."
+  },
+  "examples": [
+    {
+      "es": "No me he olvidado de que la entrega es mañana.",
+      "en": "I haven't forgotten that the deadline is tomorrow."
+    },
+    {
+      "es": "Nunca olvidaré cómo nos ayudaron.",
+      "en": "I'll never forget how they helped us."
+    },
+    {
+      "es": "No me he olvidado de tu cumpleaños.",
+      "en": "I haven't forgotten your birthday."
+    },
+    {
+      "es": "Jamás olvidaré el día que llegué a Bogotá.",
+      "en": "I'll never forget the day I arrived in Bogotá."
+    },
+    {
+      "es": "No me olvidaré de llamarte.",
+      "en": "I won't forget to call you."
+    },
+    {
+      "es": "Nunca olvidaré lo que hizo Rosa por nosotros.",
+      "en": "I'll never forget what Rosa did for us."
+    }
+  ],
+  "rule": "Two ways to say you haven't forgotten:\n\n*No me he olvidado de…* answers a doubt. It is about now: \"relax, it's still on my mind\". It takes *de* + a noun, an infinitive or *de que*.\n*Nunca olvidaré…* (or *jamás*) is a promise for life, good in a toast or a speech. It takes the thing directly, with no *de*.\n\nOut of the blue, *no me he olvidado* sounds defensive, so use it as a reply.",
+  "readAndPick": [
+    {
+      "es": "No me he olvidado de tu cumpleaños.",
+      "options": [
+        "I haven't forgotten your birthday.",
+        "I'll never forget your birthday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nunca olvidaré cómo nos ayudaron.",
+      "options": [
+        "I haven't forgotten how they helped us.",
+        "I'll never forget how they helped us."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No me olvidaré de llamarte.",
+      "options": [
+        "I won't forget to call you.",
+        "I didn't forget to call you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Jamás olvidaré el día que llegué a Bogotá.",
+      "options": [
+        "I never forgot the day I arrived.",
+        "I'll never forget the day I arrived in Bogotá."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No me he olvidado de ti.",
+      "options": [
+        "You haven't forgotten me.",
+        "I haven't forgotten you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nunca olvidaré lo que hizo Rosa por nosotros.",
+      "options": [
+        "I'll never forget what Rosa did for us.",
+        "Rosa will never forget what we did."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No me he olvidado de que mañana cierra el café.",
+      "options": [
+        "I haven't forgotten that the café closes tomorrow.",
+        "I'll never forget that the café closes."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nunca me he olvidado de Rosa.",
+      "options": [
+        "I'll never forget Rosa.",
+        "I have never forgotten Rosa."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *No me he olvidado* or *Nunca olvidaré* and type the whole sentence, as a reply to a doubt: *___ de tu cumpleaños.*",
+      "answer": "No me he olvidado de tu cumpleaños.",
+      "accept": [],
+      "why": "Answering a doubt about now is *no me he olvidado de*."
+    },
+    {
+      "prompt": "Pick *No me he olvidado* or *Nunca olvidaré* and type the whole sentence, as a toast: *___ cómo nos ayudaron.*",
+      "answer": "Nunca olvidaré cómo nos ayudaron.",
+      "accept": [
+        "Jamás olvidaré cómo nos ayudaron."
+      ],
+      "why": "A promise for life is *nunca olvidaré*, with no *de*."
+    },
+    {
+      "prompt": "A friend asks if you forgot the meeting. Reply: I haven't forgotten the Monday meeting.",
+      "answer": "No me he olvidado de la reunión del lunes.",
+      "accept": [],
+      "why": "*No me he olvidado de* + the thing."
+    },
+    {
+      "prompt": "Say: I'll never forget the day I arrived in Bogotá.",
+      "answer": "Nunca olvidaré el día que llegué a Bogotá.",
+      "accept": [
+        "Jamás olvidaré el día que llegué a Bogotá."
+      ],
+      "why": "*Nunca* and *jamás* both work, and the thing follows directly."
+    },
+    {
+      "prompt": "Promise a friend: I won't forget to call you.",
+      "answer": "No me olvidaré de llamarte.",
+      "accept": [],
+      "why": "Forgetting to do something: *olvidarse de* + the infinitive."
+    },
+    {
+      "prompt": "Say: I haven't forgotten that the deadline is tomorrow.",
+      "answer": "No me he olvidado de que la entrega es mañana.",
+      "accept": [],
+      "why": "A whole clause after *olvidarse* needs *de que*."
+    },
+    {
+      "prompt": "Say about Rosa: I'll never forget what she did for us.",
+      "answer": "Nunca olvidaré lo que hizo por nosotros.",
+      "accept": [
+        "Jamás olvidaré lo que hizo por nosotros."
+      ],
+      "why": "*Lo que hizo* means what she did, right after *olvidaré*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No he olvidado de tu cumpleaños.",
+      "right": "No me he olvidado de tu cumpleaños.",
+      "why": "Almost. With *de*, the verb is *olvidarse*, so it needs its *me*."
+    },
+    {
+      "wrong": "Nunca olvidaré de cómo nos ayudaron.",
+      "right": "Nunca olvidaré cómo nos ayudaron.",
+      "why": "*Olvidar* without the *me* takes the thing directly, with no *de*."
+    },
+    {
+      "wrong": "Nunca me he olvidado de llamarte mañana.",
+      "right": "No me olvidaré de llamarte mañana.",
+      "why": "A promise about tomorrow needs the future, not the perfect."
+    }
+  ],
+  "smallPrint": "*Olvidar* takes the thing directly; *olvidarse de* is the pronominal version with *de*.",
+  "personal": "Think of someone who once helped you. Say it in one line with *Nunca olvidaré…*."
+}

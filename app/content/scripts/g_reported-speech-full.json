@@ -1,0 +1,196 @@
+{
+  "node": "g:reported-speech-full",
+  "hook": {
+    "line": "Tomás was in the room when the Altamira man made his offer, but Mariana, the journalist, was not. She wants to know exactly what was said, and \"he said he'd come back tomorrow\" is only true if you also say which tomorrow.",
+    "es": "Dijo que vendría al día siguiente.",
+    "en": "He said he would come the next day."
+  },
+  "examples": [
+    {
+      "es": "Vale dijo que vendría al día siguiente.",
+      "en": "Vale said she would come the next day."
+    },
+    {
+      "es": "Mariana preguntó dónde estaba Simón.",
+      "en": "Mariana asked where Simón was."
+    },
+    {
+      "es": "Hernando dijo que ya había hablado con ellos.",
+      "en": "Hernando said he had already spoken with them."
+    },
+    {
+      "es": "Tomás dijo que esa mañana no tenía tiempo.",
+      "en": "Tomás said he didn't have time that morning."
+    },
+    {
+      "es": "Me preguntó si yo podía ir allá.",
+      "en": "He asked me whether I could go there."
+    },
+    {
+      "es": "Dijo que lo haría esa semana.",
+      "en": "She said she would do it that week."
+    }
+  ],
+  "rule": "When you retell a conversation after the fact, everything takes one step back, in time and in place. Spanish does it as faithfully as English.\n\nTenses step back:\n*vengo* → *venía* (I come → was coming)\n*vendré* → *vendría* (I'll come → would come)\n*hablé* → *había hablado* (I spoke → had spoken)\n\nTimes and places move too:\n*mañana* → *al día siguiente*\n*ayer* → *el día anterior*\n*hoy* → *ese día*\n*aquí* → *allí*\n\nQuestions keep their question word but lose the question marks: *Preguntó dónde estaba Simón.* A yes/no question takes *si*: *Preguntó si podía ir.*",
+  "smallPrint": "Teachers call this *estilo indirecto* (reported speech), and the step back in tenses *concordancia de tiempos* (sequence of tenses).",
+  "readAndPick": [
+    {
+      "es": "Vale dijo que vendría al día siguiente.",
+      "options": [
+        "Vale said she would come the next day.",
+        "Vale said she came the next day.",
+        "Vale said she had come the next day."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Dijo que ya había llegado esa mañana.",
+      "options": [
+        "He said he would arrive that morning.",
+        "He said he was arriving that morning.",
+        "He said he had already arrived that morning."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana preguntó dónde estaba Simón.",
+      "options": [
+        "Mariana asked where Simón is.",
+        "Mariana asked where Simón was.",
+        "Mariana asked where Simón would be."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me preguntó si yo podía ir allá.",
+      "options": [
+        "He asked me whether I could go there.",
+        "He asked me whether I could come here.",
+        "He asked me whether I had gone there."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Dijo que lo haría esa semana.",
+      "options": [
+        "She said she did it that week.",
+        "She said she had done it that week.",
+        "She said she would do it that week."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El funcionario preguntó cuándo íbamos a pagar.",
+      "options": [
+        "The official asked when we were going to pay.",
+        "The official asked when we had paid.",
+        "The official asked when we pay."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Dijo que el día anterior no había tenido tiempo.",
+      "options": [
+        "He said he wouldn't have time the next day.",
+        "He said he hadn't had time the day before.",
+        "He said he hasn't got time today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás dijo que allí no había nadie.",
+      "options": [
+        "Tomás said there was nobody here.",
+        "Tomás said there would be nobody there.",
+        "Tomás said there was nobody there."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana preguntó si habíamos visto a Simón.",
+      "options": [
+        "Mariana asked whether we had seen Simón.",
+        "Mariana asked whether we would see Simón.",
+        "Mariana asked whether we saw Simón."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Vale said: *\"Mañana vengo.\"* Pick *venía* or *vendría* and type the whole sentence: *Vale dijo que ___ al día siguiente.*",
+      "answer": "Vale dijo que vendría al día siguiente.",
+      "accept": [
+        "Vale dijo que venía al día siguiente."
+      ],
+      "why": "A promise about the future steps back to *vendría*, and *mañana* becomes *al día siguiente*."
+    },
+    {
+      "prompt": "Hernando said: *\"Ya hablé con ellos.\"* Pick *hablé* or *había hablado* and type the whole sentence: *Hernando dijo que ya ___ con ellos.*",
+      "answer": "Hernando dijo que ya había hablado con ellos.",
+      "accept": [],
+      "why": "Something that happened before the moment of speaking steps back to *había hablado*."
+    },
+    {
+      "prompt": "Tell Mariana: Vale asked where Simón was.",
+      "answer": "Vale preguntó dónde estaba Simón.",
+      "accept": [
+        "Vale preguntó que dónde estaba Simón."
+      ],
+      "why": "The question word stays and *está* steps back to *estaba*."
+    },
+    {
+      "prompt": "Report it: She said she would do it that week.",
+      "answer": "Dijo que lo haría esa semana.",
+      "accept": [],
+      "why": "*Haré* steps back to *haría*, and *esta semana* becomes *esa semana*."
+    },
+    {
+      "prompt": "Hernando said: *\"Hoy llego tarde.\"* Report it, a day later: *Hernando dijo que ___ llegaba tarde.*",
+      "answer": "Hernando dijo que ese día llegaba tarde.",
+      "accept": [
+        "Hernando dijo que ese día llegaría tarde."
+      ],
+      "why": "*Hoy* becomes *ese día*, and *llego* steps back to *llegaba*."
+    },
+    {
+      "prompt": "He asked you: *\"¿Puedes ir allá?\"* Report it: He asked me whether I could go there.",
+      "answer": "Me preguntó si yo podía ir allá.",
+      "accept": [
+        "Me preguntó si podía ir allá."
+      ],
+      "why": "A yes/no question takes *si*, and *puedes* steps back to *podía*."
+    },
+    {
+      "prompt": "Someone said: *\"Aquí no hay nadie.\"* Report it: He said there was nobody there.",
+      "answer": "Dijo que allí no había nadie.",
+      "accept": [
+        "Dijo que allá no había nadie."
+      ],
+      "why": "*Aquí* becomes *allí*, and *hay* steps back to *había*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Dijo que vendrá al día siguiente.",
+      "right": "Dijo que vendría al día siguiente.",
+      "why": "Almost. Once *dijo* is in the past, the future steps back to *vendría*, just like \"would\" in English."
+    },
+    {
+      "wrong": "Dijo que mañana vendría.",
+      "right": "Dijo que al día siguiente vendría.",
+      "why": "His *mañana* was tomorrow from his day, not yours, so the retelling says *al día siguiente*."
+    },
+    {
+      "wrong": "Dijo que ayer no tuvo tiempo.",
+      "right": "Dijo que el día anterior no había tenido tiempo.",
+      "why": "A past event stays behind the past report: *había tenido*, and *ayer* becomes *el día anterior*."
+    },
+    {
+      "wrong": "Vale preguntó dónde está Simón.",
+      "right": "Vale preguntó dónde estaba Simón.",
+      "why": "English speakers often keep the present, but the question belongs to the past conversation, so it steps back too."
+    }
+  ],
+  "personal": "Think of something someone told you today. Retell it to a friend with *dijo que…* or *preguntó si…*, and let the time words move too."
+}

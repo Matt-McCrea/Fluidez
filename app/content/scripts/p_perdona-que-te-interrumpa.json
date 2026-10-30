@@ -1,0 +1,170 @@
+{
+  "node": "p:perdona-que-te-interrumpa",
+  "hook": {
+    "line": "Sometimes you have to cut in: the Altamira man is at the door, or the café is closing. A soft opener makes the interruption polite instead of rude.",
+    "es": "Perdona que te interrumpa, pero ya es hora de irnos.",
+    "en": "Sorry to interrupt, but it's time for us to go."
+  },
+  "examples": [
+    {
+      "es": "Perdona que te interrumpa, pero ya es hora de irnos.",
+      "en": "Sorry to interrupt, but it's time for us to go. (to a friend)"
+    },
+    {
+      "es": "Perdone que lo interrumpa, pero es importante.",
+      "en": "Sorry to interrupt you, but it's important. (formal)"
+    },
+    {
+      "es": "Perdone que la moleste a esta hora.",
+      "en": "Sorry to bother you at this hour. (formal, to a woman)"
+    },
+    {
+      "es": "Perdonen que los interrumpa, pero hay alguien en la puerta.",
+      "en": "Sorry to interrupt you all, but there's someone at the door."
+    },
+    {
+      "es": "Perdona que te moleste, ¿tienes un momento?",
+      "en": "Sorry to bother you, do you have a moment? (to a friend)"
+    }
+  ],
+  "rule": "The frame is *perdona que* + *te* + a special verb form, then *pero…*:\n\n*Perdona que te interrumpa* (to a friend)\n*Perdone que lo interrumpa* (formal, a man; *la* for a woman)\n*Perdonen que los interrumpa* (a group)\n\nThe verb after *que* ends in *-a* for *interrumpir* and *-e* for *molestar*: *interrumpa, moleste*. It is not the usual present (*interrumpo*).\n\nThe pronoun (*te, lo, la, los*) names the person you are interrupting.",
+  "smallPrint": "The special verb form is the subjunctive, used after expressions of feeling like sorry.",
+  "readAndPick": [
+    {
+      "es": "Perdona que te interrumpa, pero ya es hora de irnos.",
+      "options": [
+        "Sorry to interrupt, but it's time for us to go. (to a friend)",
+        "Sorry to interrupt, but it's time for us to go. (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Perdone que lo interrumpa, pero es importante.",
+      "options": [
+        "Sorry to interrupt you, but it's important. (to a friend)",
+        "Sorry to interrupt you, but it's important. (formal)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Perdone que la moleste a esta hora.",
+      "options": [
+        "Sorry to bother you at this hour. (formal, to a man)",
+        "Sorry to bother you at this hour. (formal, to a woman)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Perdonen que los interrumpa, pero hay alguien en la puerta.",
+      "options": [
+        "Sorry to interrupt you all, but there's someone at the door.",
+        "Sorry to interrupt you, but there's someone at the door. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Perdona que te moleste, ¿tienes un momento?",
+      "options": [
+        "Sorry to bother you, do you have a moment? (formal)",
+        "Sorry to bother you, do you have a moment? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Disculpe que la interrumpa, pero el café ya cerró.",
+      "options": [
+        "Sorry to interrupt you, but the café has already closed. (formal, to a woman)",
+        "Sorry to interrupt you, but the café has already closed. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Perdona que te interrumpa, pero llegó el funcionario.",
+      "options": [
+        "Sorry to interrupt, but the official has arrived. (to a friend)",
+        "Sorry to interrupt, but the official is leaving. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Disculpen que los moleste, ¿ya cerraron?",
+      "options": [
+        "Sorry to bother you all, have you closed already?",
+        "Sorry to bother you, have they closed already? (formal)"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *interrumpa* or *interrumpo* and type the whole sentence, to a friend: *Perdona que te ___, pero ya es hora de irnos.*",
+      "answer": "Perdona que te interrumpa, pero ya es hora de irnos.",
+      "accept": [],
+      "why": "After *perdona que*, the verb takes the special *-a* ending."
+    },
+    {
+      "prompt": "Pick *te* or *lo* and type the whole sentence, to Don Hernando (formal): *Perdone que ___ interrumpa, pero es importante.*",
+      "answer": "Perdone que lo interrumpa, pero es importante.",
+      "accept": [],
+      "why": "For *usted* and a man, the pronoun is *lo*."
+    },
+    {
+      "prompt": "Say to a woman you don't know well, formal: Sorry to bother you at this hour.",
+      "answer": "Perdone que la moleste a esta hora.",
+      "accept": [
+        "Disculpe que la moleste a esta hora."
+      ],
+      "why": "*Perdone* for *usted*, *la* for a woman, and *moleste* ends in *-e*."
+    },
+    {
+      "prompt": "Say to a friend: Sorry to bother you, do you have a moment?",
+      "answer": "Perdona que te moleste, ¿tienes un momento?",
+      "accept": [
+        "Disculpa que te moleste, ¿tienes un momento?"
+      ],
+      "why": "*Te* for a friend, and *moleste* ends in *-e*."
+    },
+    {
+      "prompt": "Say to a group, you all: Sorry to interrupt you all, but there's someone at the door.",
+      "answer": "Perdonen que los interrumpa, pero hay alguien en la puerta.",
+      "accept": [
+        "Disculpen que los interrumpa, pero hay alguien en la puerta."
+      ],
+      "why": "*Perdonen* and *los* for a group, but *interrumpa* stays singular."
+    },
+    {
+      "prompt": "Say to a friend: Sorry to interrupt, but the official has arrived.",
+      "answer": "Perdona que te interrumpa, pero llegó el funcionario.",
+      "accept": [
+        "Disculpa que te interrumpa, pero llegó el funcionario."
+      ],
+      "why": "Same frame, then *pero* and your news."
+    },
+    {
+      "prompt": "Say to a man, formal: Sorry to interrupt, but the café has already closed.",
+      "answer": "Disculpe que lo interrumpa, pero el café ya cerró.",
+      "accept": [
+        "Perdone que lo interrumpa, pero el café ya cerró."
+      ],
+      "why": "*Disculpe* or *perdone* for *usted*, and *lo* for a man."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Perdona que te interrumpo.",
+      "right": "Perdona que te interrumpa.",
+      "why": "Almost. After *perdona que*, Spanish needs the special form, *interrumpa*, not the usual present."
+    },
+    {
+      "wrong": "Perdone que te interrumpa, pero es importante.",
+      "right": "Perdone que lo interrumpa, pero es importante.",
+      "why": "*Perdone* is formal, so the pronoun must match: *lo* or *la*, not *te*."
+    },
+    {
+      "wrong": "Perdona interrumpirte, pero ya es hora de irnos.",
+      "right": "Perdona que te interrumpa, pero ya es hora de irnos.",
+      "why": "English \"sorry to interrupt\" uses an infinitive, but this Spanish frame wants *que* + the special verb."
+    }
+  ],
+  "personal": "Imagine a friend is mid-story and you have to say something urgent. Write your opener with *Perdona que te interrumpa, pero…*."
+}

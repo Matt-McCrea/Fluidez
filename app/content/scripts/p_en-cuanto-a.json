@@ -1,0 +1,166 @@
+{
+  "node": "p:en-cuanto-a",
+  "hook": {
+    "line": "In a meeting you need to deal with one topic at a time, clearly, so everyone knows which one you mean. Spanish has a formal way to say \"as for this one\".",
+    "es": "En cuanto al presupuesto, lo vemos más adelante.",
+    "en": "As for the budget, we'll look at it later."
+  },
+  "examples": [
+    {
+      "es": "En cuanto al presupuesto, lo vemos más adelante.",
+      "en": "As for the budget, we'll look at it later."
+    },
+    {
+      "es": "Respecto a su pregunta, la respuesta es sí.",
+      "en": "Regarding your question, the answer is yes. (formal)"
+    },
+    {
+      "es": "Por lo que se refiere al horario, no hay cambios.",
+      "en": "As far as the timetable is concerned, there are no changes."
+    },
+    {
+      "es": "En cuanto a los precios, no vamos a subirlos.",
+      "en": "As for the prices, we aren't going to raise them."
+    },
+    {
+      "es": "En cuanto a Simón, no se preocupe, está bien.",
+      "en": "As for Simón, don't worry, he's fine. (formal)"
+    }
+  ],
+  "rule": "To pick up one topic at a time, use a formal opener, then a comma:\n\n*En cuanto a…* as for…\n*Respecto a…* regarding…\n*Por lo que se refiere a…* as far as … is concerned\n\nThe *a* joins with *el* into *al*: *en cuanto al presupuesto*. Before *la, los, las*, it stays: *en cuanto a la comida*.\n\nThis is the language of meetings and reports. Among friends it sounds stiff, so use *por cierto* or *hablando de* there.",
+  "smallPrint": "Don't confuse it with *en cuanto* + a verb, which means \"as soon as\": *En cuanto llegues, llámame.*",
+  "readAndPick": [
+    {
+      "es": "En cuanto al presupuesto, lo vemos más adelante.",
+      "options": [
+        "As for the budget, we'll look at it later.",
+        "As soon as the budget arrives, we'll look at it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En cuanto llegues, llámame.",
+      "options": [
+        "As for you arriving, call me.",
+        "As soon as you arrive, call me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Respecto a su pregunta, la respuesta es sí.",
+      "options": [
+        "Regarding your question, the answer is yes. (formal)",
+        "Because of your question, the answer is yes. (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En cuanto a los precios, no vamos a subirlos.",
+      "options": [
+        "As soon as the prices go up, we won't change them.",
+        "As for the prices, we aren't going to raise them."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por lo que se refiere al horario, no hay cambios.",
+      "options": [
+        "As far as the timetable is concerned, there are no changes.",
+        "Since the timetable changed, there are no changes."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En cuanto a Simón, no se preocupe, está bien.",
+      "options": [
+        "As soon as Simón arrives, don't worry.",
+        "As for Simón, don't worry, he's fine. (formal)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Respecto al horario, abrimos a las siete.",
+      "options": [
+        "Regarding the timetable, we open at seven.",
+        "After the timetable, we open at seven."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En cuanto a la comida, Vale se encarga.",
+      "options": [
+        "As soon as the food comes, Vale takes charge.",
+        "As for the food, Vale takes care of it."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *a el* or *al* and type the whole sentence: *En cuanto ___ presupuesto, lo vemos más adelante.*",
+      "answer": "En cuanto al presupuesto, lo vemos más adelante.",
+      "accept": [],
+      "why": "*A* + *el* always joins into *al*."
+    },
+    {
+      "prompt": "Pick *a la* or *al* and type the whole sentence: *En cuanto ___ comida, Vale se encarga.*",
+      "answer": "En cuanto a la comida, Vale se encarga.",
+      "accept": [],
+      "why": "Before *la*, the *a* stays separate."
+    },
+    {
+      "prompt": "In a meeting, say: As for the prices, we aren't going to raise them.",
+      "answer": "En cuanto a los precios, no vamos a subirlos.",
+      "accept": [
+        "En cuanto a los precios, no los vamos a subir."
+      ],
+      "why": "*En cuanto a* + *los precios*, then a comma."
+    },
+    {
+      "prompt": "Answer a customer formally: Regarding your question, the answer is yes.",
+      "answer": "Respecto a su pregunta, la respuesta es sí.",
+      "accept": [
+        "Con respecto a su pregunta, la respuesta es sí."
+      ],
+      "why": "*Respecto a* is the same idea, a touch more written."
+    },
+    {
+      "prompt": "Say: As far as the timetable is concerned, there are no changes.",
+      "answer": "Por lo que se refiere al horario, no hay cambios.",
+      "accept": [],
+      "why": "*Por lo que se refiere a* + *el* gives *al*."
+    },
+    {
+      "prompt": "Reassure a customer (formal): As for Simón, don't worry, he's fine.",
+      "answer": "En cuanto a Simón, no se preocupe, está bien.",
+      "accept": [],
+      "why": "*Se preocupe* is the polite command for *usted*."
+    },
+    {
+      "prompt": "Say: Regarding the timetable, we open at seven.",
+      "answer": "Respecto al horario, abrimos a las siete.",
+      "accept": [
+        "En cuanto al horario, abrimos a las siete."
+      ],
+      "why": "*Respecto a* + *el* joins into *al*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "En cuanto a el horario, no hay cambios.",
+      "right": "En cuanto al horario, no hay cambios.",
+      "why": "Almost. *A* and *el* always merge: *al*."
+    },
+    {
+      "wrong": "En cuanto la comida, Vale se encarga.",
+      "right": "En cuanto a la comida, Vale se encarga.",
+      "why": "Without the *a*, it is a different phrase (\"as soon as\"). Keep *en cuanto a*."
+    },
+    {
+      "wrong": "Respecto su pregunta, la respuesta es sí.",
+      "right": "Respecto a su pregunta, la respuesta es sí.",
+      "why": "English \"regarding\" has no little word, but *respecto* always needs its *a*."
+    }
+  ],
+  "personal": "Imagine you run a café. Write one sentence for your staff with *En cuanto a…*, about the schedule, the food or the prices."
+}

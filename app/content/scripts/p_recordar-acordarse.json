@@ -1,0 +1,164 @@
+{
+  "node": "p:recordar-acordarse",
+  "hook": {
+    "line": "Don Hernando loves to ask whether you remember the old Bogotá, and you will want to answer without tripping over a little word. Spanish has two ways to remember, and they treat the thing remembered differently.",
+    "es": "Me acuerdo perfectamente de esa tarde.",
+    "en": "I remember that afternoon perfectly."
+  },
+  "examples": [
+    {
+      "es": "Me acuerdo perfectamente de esa tarde.",
+      "en": "I remember that afternoon perfectly."
+    },
+    {
+      "es": "Recuerdo muy bien su cara.",
+      "en": "I remember his face very well."
+    },
+    {
+      "es": "¿Te acordaste de pagar la luz?",
+      "en": "Did you remember to pay the electricity bill? (to a friend)"
+    },
+    {
+      "es": "Me acordé de que era su cumpleaños.",
+      "en": "I remembered that it was her birthday."
+    },
+    {
+      "es": "No me acuerdo de su nombre.",
+      "en": "I don't remember his name."
+    }
+  ],
+  "rule": "Two verbs, one meaning:\n\n*recordar* takes the thing directly: *Recuerdo su cara.*\n*acordarse* always comes with *me, te, se…* and then *de*: *Me acuerdo de su cara.*\n\nAfter *de*, you can put a noun, an infinitive (*Te acordaste de pagar* = you remembered to pay) or a whole clause with *de que*.\n\nEnglish \"remember\" has no little *de*, so it is easy to drop. Never mix them: not *recuerdo de*, not *me acuerdo su cara*.",
+  "smallPrint": "*Acordarse* is a pronominal verb: the *me/te/se* is part of it, not a separate object.",
+  "readAndPick": [
+    {
+      "es": "Recuerdo muy bien su cara.",
+      "options": [
+        "I remember his face very well.",
+        "I remind him of his face."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te acordaste de pagar la luz?",
+      "options": [
+        "Did you remember to pay the electricity bill?",
+        "Did you remember paying the electricity bill?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me acordé de que era su cumpleaños.",
+      "options": [
+        "I remembered her birthday party.",
+        "I remembered that it was her birthday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No me acuerdo de su nombre.",
+      "options": [
+        "I don't remember his name.",
+        "He doesn't remember my name."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nunca me acuerdo de cerrar la puerta.",
+      "options": [
+        "I never remember closing the door.",
+        "I never remember to close the door."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te acuerdas de Rosa?",
+      "options": [
+        "Do you remember Rosa?",
+        "Does Rosa remember you?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Recuerdo que Rosa siempre cantaba.",
+      "options": [
+        "I remember that Rosa always sang.",
+        "I remember that Rosa always sings."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me acuerdo de que Rosa siempre cantaba.",
+      "options": [
+        "I remember Rosa always singing to me.",
+        "I remember that Rosa always sang."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *Recuerdo* or *Me acuerdo* and type the whole sentence: *___ de esa tarde.* (I remember that afternoon.)",
+      "answer": "Me acuerdo de esa tarde.",
+      "accept": [],
+      "why": "With the little *de*, you need *acordarse*: *me acuerdo de*."
+    },
+    {
+      "prompt": "Pick *Recuerdo* or *Me acuerdo* and type the whole sentence: *___ su cara.* (I remember his face.)",
+      "answer": "Recuerdo su cara.",
+      "accept": [],
+      "why": "No *de* here, so it is *recordar*: the thing follows directly."
+    },
+    {
+      "prompt": "Tell Don Hernando you remember Rosa.",
+      "answer": "Me acuerdo de Rosa.",
+      "accept": [
+        "Recuerdo a Rosa."
+      ],
+      "why": "*Me acuerdo de* + a person works; with *recordar* a person takes *a*."
+    },
+    {
+      "prompt": "Ask a friend: Did you remember to pay the electricity bill?",
+      "answer": "¿Te acordaste de pagar la luz?",
+      "accept": [],
+      "why": "Remembering to do something is *acordarse de* + the infinitive."
+    },
+    {
+      "prompt": "Say: I don't remember his name.",
+      "answer": "No me acuerdo de su nombre.",
+      "accept": [
+        "No recuerdo su nombre."
+      ],
+      "why": "Put *no* before *me acuerdo*; the *de* stays."
+    },
+    {
+      "prompt": "Say: I remembered that it was her birthday.",
+      "answer": "Me acordé de que era su cumpleaños.",
+      "accept": [],
+      "why": "A whole clause after *acordarse* needs *de que*."
+    },
+    {
+      "prompt": "Make it a question for a friend: *Te acuerdas de Rosa.*",
+      "answer": "¿Te acuerdas de Rosa?",
+      "accept": [],
+      "why": "Same words, now with question marks."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Recuerdo de esa tarde.",
+      "right": "Recuerdo esa tarde.",
+      "why": "Almost. *Recordar* takes the thing directly, with no *de*."
+    },
+    {
+      "wrong": "Me acuerdo su cara.",
+      "right": "Me acuerdo de su cara.",
+      "why": "*Acordarse* always needs its *de* before the thing you remember."
+    },
+    {
+      "wrong": "Acordé de que era su cumpleaños.",
+      "right": "Me acordé de que era su cumpleaños.",
+      "why": "Without *me*, it is a different verb. To remember, you need the *me/te/se*."
+    }
+  ],
+  "personal": "Tell Don Hernando one thing you remember well, using *Me acuerdo de…* or *Recuerdo…*."
+}
