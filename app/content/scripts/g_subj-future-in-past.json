@@ -1,0 +1,45 @@
+{
+  "node": "g:subj-future-in-past",
+  "hook": {
+    "line": "Half of a hard conversation is quoting a promise: he said he'd call, they said they'd pay. Spanish moves both halves of that promise back in time together, and getting it right makes you sound exact instead of vague.",
+    "es": "Me dijo que me llamaría cuando llegara.",
+    "en": "He told me he would call me when he arrived."
+  },
+  "examples": [
+    { "es": "Me dijo que me llamaría cuando llegara.", "en": "He told me he would call me when he arrived." },
+    { "es": "Íbamos a esperar hasta que bajaran los precios.", "en": "We were going to wait until prices fell." },
+    { "es": "Vale dijo que cerraría el café cuando terminara el turno.", "en": "Vale said she would close the café when the shift ended." },
+    { "es": "Prometí que lo haría en cuanto tuviera tiempo.", "en": "I promised I would do it as soon as I had time." },
+    { "es": "Don Hernando dijo que no se iría hasta que alguien lo escuchara.", "en": "Don Hernando said he wouldn't leave until someone listened to him." },
+    { "es": "Dijiste que me avisarías cuando supieras algo.", "en": "You said you would let me know when you knew something. (to a friend)" }
+  ],
+  "rule": "When you report a promise, two things step back in time together.\n\n1. The promise goes from future to \"would\": *llamará* becomes *llamaría*.\n2. The time part goes from the present wish form to the past one: *llegue* becomes *llegara*.\n\n*Dice que me llamará cuando llegue.* becomes *Dijo que me llamaría cuando llegara.*\n\nThe time part stays a wish form because the arriving had not happened yet when it was said. The past wish form ends in *-ra*, *-ras*, *-ra*, *-ramos*, *-ran*: *llegara*, *tuviera*, *bajaran*.\n\nIt works after *cuando*, *hasta que*, *en cuanto*, and after *íbamos a*. Don't repeat \"would\" in the second half: no *llegaría*.",
+  "smallPrint": "Teachers call this the sequence of tenses: conditional in the main clause, imperfect subjunctive after the time word.",
+  "readAndPick": [
+    { "es": "Me dijo que me llamaría cuando llegara.", "options": ["He told me he would call me when he arrived.", "He tells me he will call me when he arrives.", "He called me when he arrived."], "answer": 0 },
+    { "es": "Dice que me llamará cuando llegue.", "options": ["He said he would call me when he arrived.", "He says he'll call me when he arrives.", "He called me when he arrived."], "answer": 1 },
+    { "es": "Íbamos a esperar hasta que bajaran los precios.", "options": ["We're going to wait until prices fall.", "We waited until prices fell.", "We were going to wait until prices fell."], "answer": 2 },
+    { "es": "Vale dijo que cerraría el café cuando terminara el turno.", "options": ["Vale says she'll close the café when the shift ends.", "Vale said she would close the café when the shift ended.", "Vale closed the café when the shift ended."], "answer": 1 },
+    { "es": "Prometí que lo haría en cuanto tuviera tiempo.", "options": ["I promised I would do it as soon as I had time.", "I promise I'll do it as soon as I have time.", "I did it as soon as I had time."], "answer": 0 },
+    { "es": "Don Hernando dijo que no se iría hasta que alguien lo escuchara.", "options": ["Don Hernando won't leave until someone listens to him.", "Don Hernando left because nobody listened to him.", "Don Hernando said he wouldn't leave until someone listened to him."], "answer": 2 },
+    { "es": "Les dije que no hablaría hasta que me escucharan.", "options": ["I told them I wouldn't talk until I listened to them.", "I told them I wouldn't talk until they listened to me.", "I told them I wouldn't talk until he listened to me."], "answer": 1 },
+    { "es": "Dijiste que me avisarías cuando supieras algo.", "options": ["You said you would let me know when I knew something. (to a friend)", "You said you would let me know when you knew something. (to a friend)", "You say you'll let me know when you know something. (to a friend)"], "answer": 1 },
+    { "es": "Me dijeron que me pagarían cuando terminara.", "options": ["They told me they would pay me when I finished.", "They tell me they'll pay me when I finish.", "They paid me when I finished."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *llegara* or *llegue* and type the whole sentence: *Me dijo que me llamaría cuando ___.*", "answer": "Me dijo que me llamaría cuando llegara.", "accept": ["Dijo que me llamaría cuando llegara."], "why": "He said it in the past, so the time part also steps back to *llegara*." },
+    { "prompt": "Pick *terminara* or *termine* and type the whole sentence: *Vale dijo que cerraría el café cuando ___ el turno.*", "answer": "Vale dijo que cerraría el café cuando terminara el turno.", "accept": [], "why": "*Dijo* is past, so *terminara* matches *cerraría*." },
+    { "prompt": "Type in Spanish: I promised I would do it as soon as I had time.", "answer": "Prometí que lo haría en cuanto tuviera tiempo.", "accept": [], "why": "*Haría* is the 'would', and *tuviera* is the past wish form after *en cuanto*." },
+    { "prompt": "Type in Spanish: We were going to wait until prices fell.", "answer": "Íbamos a esperar hasta que bajaran los precios.", "accept": [], "why": "*Íbamos a* looks back like *dijo que*, so *bajaran* is the past wish form." },
+    { "prompt": "Move it back in time: *Dice que me llamará cuando llegue.* Say: He said he would call me when he arrived.", "answer": "Dijo que me llamaría cuando llegara.", "accept": ["Me dijo que me llamaría cuando llegara."], "why": "Both parts step back: *llamará* to *llamaría*, *llegue* to *llegara*." },
+    { "prompt": "Now from Vale's side: *Dije que me iría cuando terminara la reunión.* Say: Vale said she would leave when the meeting ended.", "answer": "Vale dijo que se iría cuando terminara la reunión.", "accept": [], "why": "A new speaker changes *me iría* to *se iría*; the time part stays *terminara*." },
+    { "prompt": "Type in Spanish: You said you would let me know when you knew something. (to a friend)", "answer": "Dijiste que me avisarías cuando supieras algo.", "accept": [], "why": "*Avisarías* is 'you would let me know' and *supieras* is *tú* in the past wish form." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me dijo que me llamará cuando llegue.", "right": "Me dijo que me llamaría cuando llegara.", "why": "Almost. After *dijo que*, both parts step back: *llamaría* for 'would' and *llegara* for the time part." },
+    { "wrong": "Me dijo que me llamaría cuando llegó.", "right": "Me dijo que me llamaría cuando llegara.", "why": "*Llegó* says the arrival already happened; here it was still ahead when he spoke, so it takes the wish form." },
+    { "wrong": "Íbamos a esperar hasta que bajan los precios.", "right": "Íbamos a esperar hasta que bajaran los precios.", "why": "*Íbamos a* is a look back, so the time part needs the past wish form, *bajaran*." },
+    { "wrong": "Dijo que me llamaría cuando llegaría.", "right": "Dijo que me llamaría cuando llegara.", "why": "English says 'would' twice, but Spanish uses the 'would' form once; the time part takes the *-ra* form." }
+  ],
+  "personal": "Tell us a promise someone made to you, or you made to someone: *Prometí que ... cuando ...* For example, *Prometí que llamaría a mi mamá cuando llegara.*"
+}

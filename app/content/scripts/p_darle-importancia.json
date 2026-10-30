@@ -1,0 +1,45 @@
+{
+  "node": "p:darle-importancia",
+  "hook": {
+    "line": "When someone is upset about something small, the kindest thing you can say is that it isn't worth it. Spanish says you *give* a thing importance, and you can choose not to.",
+    "es": "No le des importancia, fue un malentendido.",
+    "en": "Don't make a big deal of it, it was a misunderstanding. (to a friend)"
+  },
+  "examples": [
+    { "es": "No le des importancia, fue un malentendido.", "en": "Don't make a big deal of it, it was a misunderstanding. (to a friend)" },
+    { "es": "Le das demasiada importancia a lo que dice la gente.", "en": "You attach too much importance to what people say. (to a friend)" },
+    { "es": "Eso no tiene importancia.", "en": "That doesn't matter." },
+    { "es": "Vale no le dio importancia al comentario.", "en": "Vale didn't make a big deal of the comment." },
+    { "es": "Para mí tiene mucha importancia que me digas la verdad.", "en": "It matters a lot to me that you tell me the truth. (to a friend)" },
+    { "es": "No le des tanta importancia a la pelea.", "en": "Don't make such a big deal of the fight. (to a friend)" }
+  ],
+  "rule": "To make something matter, you *give* it importance: *darle importancia a algo*. Most often it is a calming command: *No le des importancia*. Without *no*, it is a gentle complaint: *le das demasiada importancia*.\n\n*Le* always stays, even when you name the thing: *le das importancia a lo que dice la gente*.\n\nTo say something does or doesn't matter, use *tener*: *no tiene importancia*, *tiene mucha importancia*.\n\nLighter options: *no pasa nada*, *no importa*.",
+  "smallPrint": "Teachers call *le* here a doubled indirect object pronoun, and *no le des* a negative command. Both are standard.",
+  "readAndPick": [
+    { "es": "No le des importancia, fue un malentendido.", "options": ["Don't make a big deal of it, it was a misunderstanding. (to a friend)", "You made a big deal of it, it was a misunderstanding. (to a friend)", "I don't make a big deal of it, it was a misunderstanding."], "answer": 0 },
+    { "es": "No le dé importancia, señora.", "options": ["Don't make a big deal of it, ma'am. (formal)", "Don't make a big deal of it, my friend. (to a friend)", "She doesn't make a big deal of it."], "answer": 0 },
+    { "es": "Eso no tiene importancia.", "options": ["That is very important.", "That doesn't matter.", "That didn't matter."], "answer": 1 },
+    { "es": "Le das demasiada importancia a lo que dice la gente.", "options": ["I attach too much importance to what people say.", "You attach no importance to what people say. (to a friend)", "You attach too much importance to what people say. (to a friend)"], "answer": 2 },
+    { "es": "Vale no le dio importancia al comentario.", "options": ["Vale doesn't make a big deal of the comment.", "Vale didn't make a big deal of the comment.", "Vale made a big deal of the comment."], "answer": 1 },
+    { "es": "Para mí tiene mucha importancia que me digas la verdad.", "options": ["It matters a lot to me that you tell me the truth. (to a friend)", "It doesn't matter to me that you tell me the truth. (to a friend)", "It mattered a lot to me that you told me the truth. (to a friend)"], "answer": 0 },
+    { "es": "No le des tanta importancia a la pelea.", "options": ["You make such a big deal of the fight. (to a friend)", "Don't make such a big deal of the fight. (to a friend)", "He didn't make such a big deal of the fight."], "answer": 1 },
+    { "es": "Hernando no le da importancia a nada.", "options": ["Hernando makes a big deal of everything.", "Hernando didn't make a big deal of anything.", "Hernando doesn't make a big deal of anything."], "answer": 2 },
+    { "es": "Le damos mucha importancia a esa conversación.", "options": ["We give that conversation a lot of importance.", "I give that conversation a lot of importance.", "They give that conversation a lot of importance."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *des* or *das* and type the whole sentence, a calming command to a friend: *No le ___ importancia, fue un malentendido.*", "answer": "No le des importancia, fue un malentendido.", "accept": [], "why": "A 'don't' to a friend uses *des*; *das* would be a statement." },
+    { "prompt": "Type in Spanish: That doesn't matter.", "answer": "Eso no tiene importancia.", "accept": ["No tiene importancia."], "why": "To say something matters or doesn't, use *tener importancia*." },
+    { "prompt": "Type in Spanish: Don't make such a big deal of the fight. (to a friend)", "answer": "No le des tanta importancia a la pelea.", "accept": [], "why": "*Tanta* goes right before *importancia*, and *a* introduces the thing you are making a fuss about." },
+    { "prompt": "Type in Spanish: You attach too much importance to what people say. (to a friend)", "answer": "Le das demasiada importancia a lo que dice la gente.", "accept": [], "why": "*Demasiada* agrees with *importancia*, and *le* stays even though the thing is named." },
+    { "prompt": "Say it to a stranger, formal: Don't make a big deal of it, ma'am.", "answer": "No le dé importancia, señora.", "accept": [], "why": "With *usted*, the command is *dé*, with an accent, instead of *des*." },
+    { "prompt": "Put it in the past: *Vale no le da importancia al comentario.* Say: Vale didn't make a big deal of the comment.", "answer": "Vale no le dio importancia al comentario.", "accept": [], "why": "*Dio* is the past of *da*, and *le* stays in place." },
+    { "prompt": "Type in Spanish: It matters a lot to me that you tell me the truth. (to a friend)", "answer": "Para mí tiene mucha importancia que me digas la verdad.", "accept": [], "why": "*Tiene mucha importancia* says it matters, and *digas* is the wish form after *que*." }
+  ],
+  "pitfalls": [
+    { "wrong": "No des importancia.", "right": "No le des importancia.", "why": "Almost. Keep the little word *le*: you give importance *to it*." },
+    { "wrong": "No le das importancia.", "right": "No le des importancia.", "why": "As a 'don't' to a friend, the verb takes *des*, not *das*." },
+    { "wrong": "Eso no tiene importante.", "right": "Eso no tiene importancia.", "why": "After *tener* you need the noun *importancia*; *importante* is the adjective." },
+    { "wrong": "No le des importancia de lo que dije.", "right": "No le des importancia a lo que dije.", "why": "You give importance *a* something, not *de* it." }
+  ],
+  "personal": "Think of something small that bothered you this week and tell yourself to let it go: *No le des importancia a ...*"
+}

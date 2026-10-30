@@ -1,0 +1,44 @@
+{
+  "node": "p:hasta-que-no",
+  "hook": {
+    "line": "In a hard conversation you sometimes need to plant your feet: I'm not moving until something changes. Spanish has a firm way to say it, and it has an extra *no* that trips English speakers.",
+    "es": "Hasta que no me pagues, no empiezo.",
+    "en": "I'm not starting until you pay me."
+  },
+  "examples": [
+    { "es": "Hasta que no me pagues, no empiezo.", "en": "I'm not starting until you pay me." },
+    { "es": "No me voy hasta que no lo vea.", "en": "I'm not leaving until I see it." },
+    { "es": "Hasta que no llegue el jefe, no se firma nada.", "en": "Nothing gets signed until the boss arrives." },
+    { "es": "No firmo hasta que no me expliquen todo.", "en": "I won't sign until they explain everything to me." },
+    { "es": "Hasta que no hablemos, no me quedo tranquila.", "en": "I won't feel calm until we talk. (a woman speaking)" },
+    { "es": "No vamos a seguir hasta que no nos digan la verdad.", "en": "We're not going on until they tell us the truth." }
+  ],
+  "rule": "After *hasta que* (\"until\") Spanish often adds a *no* that changes nothing. *Hasta que no me pagues* means exactly *hasta que me pagues*. Don't translate it as \"until you don't pay me\".\n\nThe real \"no\" is in the main part: *no empiezo*, *no me voy*.\n\nThe verb after it takes the wish form (*pagues*, *vea*, *llegue*), because the thing hasn't happened yet.\n\nIt sets a boundary: I won't move until X. Both versions, with or without the extra *no*, are normal.",
+  "smallPrint": "Teachers call this extra *no* an expletive or redundant negative. The verb after *hasta que* is in the present subjunctive when the event is still ahead.",
+  "readAndPick": [
+    { "es": "Hasta que no me pagues, no empiezo.", "options": ["I'm not starting until you pay me.", "I'm not starting until you don't pay me.", "I'm starting once you pay me."], "answer": 0 },
+    { "es": "No me voy hasta que no lo vea.", "options": ["I'm leaving because I don't see it.", "I'm leaving once I see it.", "I'm not leaving until I see it."], "answer": 2 },
+    { "es": "Hasta que no llegue el jefe, no se firma nada.", "options": ["Nothing gets signed until the boss arrives.", "Nothing was signed because the boss arrived.", "Everything gets signed when the boss arrives."], "answer": 0 },
+    { "es": "No firmo hasta que me expliquen todo.", "options": ["I'll sign as soon as they explain everything to me.", "I won't sign until they explain everything to me.", "I don't sign because they explain everything to me."], "answer": 1 },
+    { "es": "Hasta que no vengas, no abro el café.", "options": ["I'm not opening the café if you come. (to a friend)", "I'm not opening the café until you come. (to a friend)", "I opened the café when you came. (to a friend)"], "answer": 1 },
+    { "es": "Hasta que no hablemos, no me quedo tranquila.", "options": ["I won't feel calm until we talk. (a man speaking)", "I won't feel calm until we talk. (a woman speaking)", "She won't feel calm until we talk."], "answer": 1 },
+    { "es": "No te perdono hasta que no me pidas perdón.", "options": ["I won't forgive you until you apologise to me. (to a friend)", "I forgive you even though you don't apologise to me. (to a friend)", "I won't forgive you because you apologise to me. (to a friend)"], "answer": 0 },
+    { "es": "No vamos a seguir hasta que no nos digan la verdad.", "options": ["We're going on until they tell us the truth.", "We're going on because they told us the truth.", "We're not going on until they tell us the truth."], "answer": 2 },
+    { "es": "Hasta que no termines, no hablamos de otra cosa.", "options": ["We won't talk about anything else until you finish. (to a friend)", "We talk about something else when you finish. (to a friend)", "We didn't talk about anything else because you finished. (to a friend)"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *llegue* or *llega* and type the whole sentence: *Hasta que no ___ el jefe, no se firma nada.*", "answer": "Hasta que no llegue el jefe, no se firma nada.", "accept": ["Hasta que llegue el jefe, no se firma nada."], "why": "The boss hasn't arrived yet, so the verb takes the wish form, *llegue*." },
+    { "prompt": "Type in Spanish: I'm not leaving until I see it.", "answer": "No me voy hasta que no lo vea.", "accept": ["No me voy hasta que lo vea."], "why": "The first *no* is the real one; the second is optional and changes nothing." },
+    { "prompt": "Type in Spanish: I'm not starting until you pay me. (to a friend)", "answer": "Hasta que no me pagues, no empiezo.", "accept": ["Hasta que me pagues, no empiezo.", "No empiezo hasta que no me pagues.", "No empiezo hasta que me pagues."], "why": "Wish form *pagues* for the thing that hasn't happened, and a real *no* before *empiezo*." },
+    { "prompt": "Type in Spanish: I won't sign until they explain everything to me.", "answer": "No firmo hasta que no me expliquen todo.", "accept": ["No firmo hasta que me expliquen todo.", "Hasta que no me expliquen todo, no firmo.", "Hasta que me expliquen todo, no firmo."], "why": "*Expliquen* is the wish form for *ellos*, because the explaining is still ahead." },
+    { "prompt": "Drop the extra *no*: *No me voy hasta que no lo vea.* Say it the other natural way.", "answer": "No me voy hasta que lo vea.", "accept": [], "why": "The second *no* is only decoration, so the meaning stays the same without it." },
+    { "prompt": "Make it about *we*: *No empiezo hasta que no lleguen todos.* Say: We're not starting until everyone arrives.", "answer": "No empezamos hasta que no lleguen todos.", "accept": ["No empezamos hasta que lleguen todos."], "why": "Only the main verb changes to *empezamos*; the time part keeps its wish form." },
+    { "prompt": "Type in Spanish: I won't forgive you until you apologise to me. (to a friend)", "answer": "No te perdono hasta que no me pidas perdón.", "accept": ["No te perdono hasta que me pidas perdón.", "Hasta que no me pidas perdón, no te perdono.", "Hasta que me pidas perdón, no te perdono."], "why": "*Pidas* is the wish form for *tú*: you haven't apologised yet." }
+  ],
+  "pitfalls": [
+    { "wrong": "No me voy hasta que lo veo.", "right": "No me voy hasta que lo vea.", "why": "Almost. The seeing hasn't happened yet, so the verb takes the wish form, *vea*, not *veo*." },
+    { "wrong": "Hasta que no me pagues, empiezo.", "right": "Hasta que no me pagues, no empiezo.", "why": "The *no* after *hasta que* is only decoration; the real *no* belongs on the main verb, just like \"I won't start until...\"." },
+    { "wrong": "Hasta no me pagues, no empiezo.", "right": "Hasta que no me pagues, no empiezo.", "why": "Keep the *que*: it is *hasta que*, and then the extra *no*." }
+  ],
+  "personal": "Set one honest boundary of your own and finish the line: *No empiezo hasta que no...* For example, *No hablo hasta que no tome mi tinto.*"
+}
