@@ -2,7 +2,7 @@
   "id": "ch024",
   "unit": "u10",
   "title": "Una carta sin precios",
-  "text": "Viernes, cinco de la mañana. Tomás abre el café solo. Vale no contesta el celular.\nA las seis entra Vale, y no mira a Tomás.\nTomás: Vale, lo siento. Anoche contesté el correo de Toronto: «No, gracias».\nVale: ¿Y por qué?\nTomás: Porque me gusta el café. Me gustan las cinco de la mañana. Y me gusta tu pan.\nSimón: ¡La cuenta, por favor!\nTomás pone una carta en la mesa.\nVale: ¿Otra carta? ¿Otra carta de Rosa?\nTomás: No. Esta carta es para los clientes. Es un menú nuevo.\nVale lee: «Sábados: ajiaco. Todos los días: jugos de fruta y buñuelos. De postre: la torta de Vale».\nHernando: ¡Me encanta! ¿Y qué me recomienda la chef?\nVale: El tinto, don Hernando. Como todos los días.\nVale: A los clientes no les gustan las cartas sin precios.\nVale escribe los precios en el menú.\nTomás: ¿Y a ti? ¿Te gusta?\nVale: La torta, sí. Tú, todavía no.\nHernando mira su celular. Una bloguera de comida muy famosa visita La Candelaria el sábado.\nHernando: A mis nietos les encanta esa bloguera. Ella come en un café, y al otro día hay fila en la puerta. Y un café con fila no necesita a Altamira.\nVale: Entonces, el sábado, ajiaco. Y tú, Tomás, eres el mesero.",
+  "text": "Viernes, cinco de la mañana. Vale no contesta el celular.\nA las seis entra Vale, y no mira a Tomás.\nTomás: Vale, lo siento. Anoche contesté el correo de Toronto: «No, gracias».\nVale: ¿Y por qué?\nTomás: Porque me gusta el café. Y me gusta tu pan.\nTomás pone una carta en la mesa.\nVale: ¿Otra carta de Rosa?\nTomás: No. Esta carta es para los clientes. Es un menú nuevo.\nVale lee: «Sábados: ajiaco. Todos los días: jugos de fruta y buñuelos. De postre: la torta de Vale».\nHernando: ¡Me encanta! ¿Y qué me recomienda la chef?\nVale: El tinto, don Hernando. Como todos los días.\nVale escribe los precios en el menú.\nTomás: ¿Y a ti? ¿Te gusta?\nVale: La torta, sí. Tú, todavía no.\nHernando mira su celular. Una bloguera de comida muy famosa visita La Candelaria el sábado.\nHernando: Ella come en un café, y al otro día hay fila en la puerta. Y un café con fila no necesita a Altamira.\nVale: Entonces, el sábado, ajiaco. Y tú, Tomás, eres el mesero.",
   "gloss": [
     {
       "es": "bloguera",
@@ -87,12 +87,12 @@
   "hook": "Saturday: ajiaco for the first time, a famous food blogger somewhere in La Candelaria, and Tomás is the waiter. His Spanish has never served a table.",
   "rereadQuestions": [
     {
-      "q": "What does Simón shout right after Tomás's apology?",
+      "q": "What does Vale add to the new menu?",
       "options": [
-        "The bill, please",
-        "To take away",
-        "Delicious",
-        "Enjoy your meal"
+        "The prices",
+        "A photo of Rosa",
+        "Her phone number",
+        "The ajiaco recipe"
       ],
       "answer": 0
     },
@@ -124,15 +124,12 @@
     "c:entonces-bueno",
     "c:gracias-de-nada",
     "c:hay",
-    "c:la-cuenta",
     "c:me-encanta",
     "c:me-gusta",
-    "c:por-favor",
     "c:porque",
     "c:que-me-recomienda",
     "c:todavia-no",
     "g:adjective-agreement",
-    "g:demonstratives",
     "g:gender-articles",
     "g:gustar-basic",
     "g:gustar-full",
@@ -144,7 +141,6 @@
     "g:ser-identity",
     "p:days-el-lunes",
     "p:demonstratives-basic",
-    "p:masculine-plural-mixed",
     "p:para-inf",
     "p:por-la-manana",
     "p:possessives-basic",
@@ -155,7 +151,6 @@
     "p:veces-al"
   ],
   "lexemes": [
-    "l:abrir",
     "l:ajiaco",
     "l:anoche",
     "l:buñuelo",
@@ -168,13 +163,11 @@
     "l:comida",
     "l:contestar",
     "l:correo",
-    "l:cuenta",
     "l:día",
     "l:encantar",
     "l:entrar",
     "l:escribir",
     "l:famoso",
-    "l:favor",
     "l:fila",
     "l:fruta",
     "l:gustar",
@@ -186,7 +179,6 @@
     "l:mesero",
     "l:mirar",
     "l:necesitar",
-    "l:nieto",
     "l:nuevo",
     "l:pan",
     "l:poner",
