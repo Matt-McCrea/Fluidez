@@ -1,0 +1,43 @@
+{
+  "node": "p:como-es-que",
+  "hook": {
+    "line": "Something doesn't add up: your friend didn't show up, or the rent went up overnight. Spanish has a question that asks \"why\" with the eyebrow raised. Tomás uses it on Altamira.",
+    "es": "¿Cómo es que no viniste el sábado?",
+    "en": "How come you didn't come on Saturday?"
+  },
+  "examples": [
+    { "es": "¿Cómo es que no viniste el sábado?", "en": "How come you didn't come on Saturday? (to a friend)" },
+    { "es": "¿Cómo es que Altamira ya sabe todo?", "en": "How come Altamira already knows everything?" },
+    { "es": "¿A qué viene esa cara larga?", "en": "What's with the long face?" },
+    { "es": "¿A qué se debe el retraso?", "en": "What is the reason for the delay?" },
+    { "es": "¿Cómo es que nadie me avisó?", "en": "How come nobody told me?" },
+    { "es": "¿Cómo se explica que nadie avisara a tiempo?", "en": "How can it be that nobody gave a warning in time?" }
+  ],
+  "rule": "*¿Cómo es que…?* means \"how come…?\": you are surprised and want an explanation. The verb after it is plain, like in a statement. *¿A qué viene…?* with *eso*, *esa cara* or *tanto* is \"what's that about?\", with a little reproach. *¿A qué se debe…?* is the calm, polite \"what is the reason for…?\" For the formal \"how can it be that…\", use *¿Cómo se explica que…?* and the wish form of the verb: *avisara*.",
+  "smallPrint": "Teachers call *avisara* the imperfect subjunctive; here it follows a formal, reproachful *se explica que*.",
+  "readAndPick": [
+    { "es": "¿Cómo es que no viniste el sábado?", "options": ["How come you didn't come on Saturday?", "How do you come on Saturday?", "Will you come on Saturday?"], "answer": 0 },
+    { "es": "¿A qué viene esa cara larga?", "options": ["Where is the long face coming from, on a bus?", "What's with the long face?", "What time does the long face arrive?"], "answer": 1 },
+    { "es": "¿A qué se debe el retraso?", "options": ["How long is the delay?", "Who is late?", "What is the reason for the delay?"], "answer": 2 },
+    { "es": "¿Cómo es que Altamira ya sabe todo?", "options": ["How come Altamira already knows everything?", "How does Altamira learn everything?", "Does Altamira know everything?"], "answer": 0 },
+    { "es": "¿Cómo es que nadie me avisó?", "options": ["Nobody told me.", "How come nobody told me?", "How did I tell nobody?"], "answer": 1 },
+    { "es": "¿Cómo se explica que nadie avisara a tiempo?", "options": ["Nobody explained it to me.", "I will warn everyone in time.", "How can it be that nobody gave a warning in time?"], "answer": 2 },
+    { "es": "¿A qué viene tanta prisa?", "options": ["What's the rush all about?", "How much is the rush?", "Is there a rush?"], "answer": 0 },
+    { "es": "¿Cómo es que no estás en el café?", "options": ["How do you get to the café?", "How come you're not at the café?", "Are you at the café?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *viniste* or *vengas* and type the whole sentence, to a friend: *¿Cómo es que no ___ el sábado?*", "answer": "¿Cómo es que no viniste el sábado?", "accept": [], "why": "After *cómo es que* the verb is plain, so *viniste*." },
+    { "prompt": "Type in Spanish: How come Altamira already knows everything?", "answer": "¿Cómo es que Altamira ya sabe todo?", "accept": [], "why": "*Cómo es que* plus an ordinary statement." },
+    { "prompt": "Type in Spanish: What's with the long face?", "answer": "¿A qué viene esa cara larga?", "accept": [], "why": "*A qué viene* asks what a thing is doing there." },
+    { "prompt": "Type in Spanish: What is the reason for the delay?", "answer": "¿A qué se debe el retraso?", "accept": [], "why": "*A qué se debe* is the neutral way to ask the cause." },
+    { "prompt": "Type in Spanish: How come nobody told me?", "answer": "¿Cómo es que nadie me avisó?", "accept": [], "why": "*Nadie* is the subject; the verb is plain, *avisó*." },
+    { "prompt": "Make it formal. Say: How can it be that nobody gave a warning in time?", "answer": "¿Cómo se explica que nadie avisara a tiempo?", "accept": [], "why": "Formal *se explica que* takes the wish form, *avisara*." },
+    { "prompt": "Type in Spanish: What's the rush all about?", "answer": "¿A qué viene tanta prisa?", "accept": [], "why": "*Tanta* agrees with *prisa*." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Cómo es que no vengas el sábado?", "right": "¿Cómo es que no viniste el sábado?", "why": "Almost. After *cómo es que* you state a fact, so the verb is plain." },
+    { "wrong": "¿Qué viene esa cara larga?", "right": "¿A qué viene esa cara larga?", "why": "Almost. The question needs *a*: *a qué viene*." },
+    { "wrong": "¿Cómo es que se hace un tinto?", "right": "¿Cómo se hace un tinto?", "why": "Almost. *Cómo es que* shows surprise; to ask how to do something, use plain *cómo*." }
+  ],
+  "personal": "Think of something that surprised you this week and ask about it with *¿Cómo es que…?*"
+}

@@ -1,0 +1,43 @@
+{
+  "node": "p:si-algo-es",
+  "hook": {
+    "line": "When you have said a lot and want one thing to stick, Spanish lets you put a spotlight on it. Tomás uses it to tell Mariana the one thing he is sure of.",
+    "es": "Si algo tengo claro es que no vuelvo.",
+    "en": "If there's one thing I'm sure of, it's that I'm not going back."
+  },
+  "examples": [
+    { "es": "Si algo tengo claro es que no vuelvo.", "en": "If there's one thing I'm sure of, it's that I'm not going back." },
+    { "es": "Si de algo estoy seguro es de la honestidad de Hernando.", "en": "If there's one thing I'm certain of, it's Hernando's honesty." },
+    { "es": "Si alguien sabe la respuesta, es Vale.", "en": "If anyone knows the answer, it's Vale." },
+    { "es": "Si algo me gusta de este barrio, es su gente.", "en": "If there's one thing I like about this neighbourhood, it's its people." },
+    { "es": "Si algo sabe hacer Vale, es un buen pan.", "en": "If there's one thing Vale knows how to make, it's good bread." },
+    { "es": "Si alguien merece este café, es Tomás.", "en": "If anyone deserves this café, it's Tomás." }
+  ],
+  "rule": "Start with *si algo* or *si alguien*, say what it does or feels, then a comma and *es*, and then the one thing you are spotlighting. This *si* is not doubt; it means \"if there's one thing\". If the verb needs a preposition, repeat it before the spotlight: *Si de algo estoy seguro, es de…*. If the spotlight is a whole sentence, add *que*: *es que no vuelvo*. Otherwise, no extra word: *es su gente*.",
+  "smallPrint": "Teachers call this a conditional equational structure: it sets up the rest as known and spotlights one item.",
+  "readAndPick": [
+    { "es": "Si algo tengo claro es que no vuelvo.", "options": ["I'm not sure if I'm going back.", "If there's one thing I'm sure of, it's that I'm not going back.", "If I'm sure, I'll go back."], "answer": 1 },
+    { "es": "Si alguien sabe la respuesta, es Vale.", "options": ["If anyone knows the answer, it's Vale.", "Vale will know the answer.", "Nobody knows the answer but me."], "answer": 0 },
+    { "es": "Si de algo estoy seguro es de la honestidad de Hernando.", "options": ["I doubt Hernando is honest.", "Hernando is sure of my honesty.", "If there's one thing I'm certain of, it's Hernando's honesty."], "answer": 2 },
+    { "es": "Si algo me gusta de este barrio, es su gente.", "options": ["If there's one thing I like about this neighbourhood, it's its people.", "I don't like the people of this neighbourhood.", "If I like the neighbourhood, it's because of the people."], "answer": 0 },
+    { "es": "Si alguien merece este café, es Tomás.", "options": ["Tomás doesn't deserve this café.", "If anyone deserves this café, it's Tomás.", "If Tomás deserves it, he will get it."], "answer": 1 },
+    { "es": "Si algo sabe hacer Vale, es un buen pan.", "options": ["If Vale knew how, she would make bread.", "Vale doesn't know how to make bread.", "If there's one thing Vale knows how to make, it's good bread."], "answer": 2 },
+    { "es": "Si algo tengo claro es que Altamira no gana.", "options": ["If there's one thing I'm sure of, it's that Altamira won't win.", "I'm not sure if Altamira wins.", "Altamira is sure it will win."], "answer": 0 },
+    { "es": "Si algo me preocupa es el dinero.", "options": ["I'm not worried about money.", "If there's one thing that worries me, it's money.", "Money worries me less than before."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *es* or *que* and type the whole sentence: *Si algo tengo claro ___ que no vuelvo.*", "answer": "Si algo tengo claro es que no vuelvo.", "accept": [], "why": "The spotlight word is *es*, and *que* then brings the whole sentence." },
+    { "prompt": "Type in Spanish: If anyone knows the answer, it's Vale.", "answer": "Si alguien sabe la respuesta, es Vale.", "accept": ["Si alguien sabe la respuesta es Vale."], "why": "*Si alguien* plus the verb, then *es* and the name." },
+    { "prompt": "Type in Spanish: If there's one thing I like about this neighbourhood, it's its people.", "answer": "Si algo me gusta de este barrio, es su gente.", "accept": ["Si algo me gusta de este barrio es su gente."], "why": "The *de* belongs to *me gusta de este barrio*; it isn't repeated before the spotlight." },
+    { "prompt": "Type in Spanish: If there's one thing I'm certain of, it's Hernando's honesty.", "answer": "Si de algo estoy seguro es de la honestidad de Hernando.", "accept": ["Si de algo estoy seguro, es de la honestidad de Hernando."], "why": "*Estar seguro* takes *de*, so *de* comes back after *es*." },
+    { "prompt": "Type in Spanish: If anyone deserves this café, it's Tomás.", "answer": "Si alguien merece este café, es Tomás.", "accept": ["Si alguien merece este café es Tomás."], "why": "Same frame with *alguien*, then the name." },
+    { "prompt": "Type in Spanish: If there's one thing Vale knows how to make, it's good bread.", "answer": "Si algo sabe hacer Vale, es un buen pan.", "accept": ["Si algo sabe hacer Vale es un buen pan."], "why": "The spotlight is a noun, so there is no *que*." },
+    { "prompt": "Type in Spanish: If there's one thing that worries me, it's money.", "answer": "Si algo me preocupa es el dinero.", "accept": ["Si algo me preocupa, es el dinero."], "why": "A noun after *es* needs no *que*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Si algo tengo claro es no vuelvo.", "right": "Si algo tengo claro es que no vuelvo.", "why": "Almost. A whole sentence after *es* needs *que*." },
+    { "wrong": "Si de algo estoy seguro es la honestidad de Hernando.", "right": "Si de algo estoy seguro es de la honestidad de Hernando.", "why": "Almost. The preposition comes back: *de algo… es de…*." },
+    { "wrong": "Si algo me gusta de este barrio, es de su gente.", "right": "Si algo me gusta de este barrio, es su gente.", "why": "Almost. *Gustar* doesn't need *de* in front of the spotlight, so don't add one." }
+  ],
+  "personal": "Say the one thing you are surest of about yourself, with *Si algo tengo claro es que*."
+}

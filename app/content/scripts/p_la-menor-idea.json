@@ -1,0 +1,43 @@
+{
+  "node": "p:la-menor-idea",
+  "hook": {
+    "line": "English lets you say \"I haven't the faintest idea\" or \"Never in my life.\" Spanish has the same tools, and they all lean on a *no* (or a fronted *en mi vida*) to work.",
+    "es": "No tengo la menor idea.",
+    "en": "I haven't the faintest idea."
+  },
+  "examples": [
+    { "es": "No tengo la menor idea.", "en": "I haven't the faintest idea." },
+    { "es": "No es gran cosa.", "en": "It's no big deal." },
+    { "es": "En mi vida había visto algo así.", "en": "Never in my life had I seen anything like it." },
+    { "es": "No hizo el más mínimo esfuerzo.", "en": "He didn't make the slightest effort." },
+    { "es": "No tengo ni la más remota idea.", "en": "I haven't the remotest idea." },
+    { "es": "A Hernando no le hizo la menor gracia.", "en": "Hernando didn't find it the least bit funny." }
+  ],
+  "rule": "Words like *la menor idea*, *gran cosa* and *el más mínimo esfuerzo* only work in a negative sentence, so *no* comes first: *No tengo la menor idea*. Without it, the sentence says nothing sensible. Another way to get \"never\": start with *en mi vida* and drop the *no*: *En mi vida había visto algo así*. If *en mi vida* comes at the end, bring the *no* back: *No he visto algo así en mi vida*. Note *No es gran cosa*: no *una*.",
+  "smallPrint": "Teachers call these negative polarity items: expressions that need a negative around them.",
+  "readAndPick": [
+    { "es": "No tengo la menor idea.", "options": ["I haven't the faintest idea.", "I have a good idea.", "I had an idea."], "answer": 0 },
+    { "es": "No es gran cosa.", "options": ["It's a big deal.", "It's no big deal.", "It's a great thing."], "answer": 1 },
+    { "es": "En mi vida había visto algo así.", "options": ["I've seen this a lot in my life.", "I saw something like it once.", "Never in my life had I seen anything like it."], "answer": 2 },
+    { "es": "No hizo el más mínimo esfuerzo.", "options": ["He made the slightest effort.", "He didn't make the slightest effort.", "He made a big effort."], "answer": 1 },
+    { "es": "No tengo ni la más remota idea.", "options": ["I haven't the remotest idea.", "I have the remotest idea.", "I had a remote idea."], "answer": 0 },
+    { "es": "A Hernando no le hizo la menor gracia.", "options": ["Hernando found it very funny.", "Hernando found it a little funny.", "Hernando didn't find it the least bit funny."], "answer": 2 },
+    { "es": "No he visto algo así en mi vida.", "options": ["I've seen something like it all my life.", "I haven't seen anything like it in my life.", "I'll see something like it in my life."], "answer": 1 },
+    { "es": "No tengo la menor idea de qué pasa.", "options": ["I haven't the faintest idea what's going on.", "I know exactly what's going on.", "I had no idea what went on."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *No tengo* or *Tengo* and type the whole sentence: *___ la menor idea.*", "answer": "No tengo la menor idea.", "accept": [], "why": "*La menor idea* only works with a *no* in front." },
+    { "prompt": "Type in Spanish: It's no big deal.", "answer": "No es gran cosa.", "accept": [], "why": "Say *gran cosa* without *una*." },
+    { "prompt": "Type in Spanish: Never in my life had I seen anything like it.", "answer": "En mi vida había visto algo así.", "accept": ["No había visto algo así en mi vida."], "why": "Fronted *en mi vida* replaces the *no*." },
+    { "prompt": "Type in Spanish: He didn't make the slightest effort.", "answer": "No hizo el más mínimo esfuerzo.", "accept": [], "why": "*No* plus *el más mínimo* gives \"not the slightest\"." },
+    { "prompt": "Make it negative, with the end phrase. Say: I haven't seen anything like it in my life.", "answer": "No he visto algo así en mi vida.", "accept": ["No había visto algo así en mi vida."], "why": "*En mi vida* at the end needs the *no* back at the verb." },
+    { "prompt": "Type in Spanish: Hernando didn't find it the least bit funny.", "answer": "A Hernando no le hizo la menor gracia.", "accept": [], "why": "*No* comes before *le hizo*, then *la menor gracia*." },
+    { "prompt": "Type in Spanish: I haven't the faintest idea what's going on.", "answer": "No tengo la menor idea de qué pasa.", "accept": [], "why": "*De qué pasa* adds what you have no idea about." }
+  ],
+  "pitfalls": [
+    { "wrong": "Tengo la menor idea.", "right": "No tengo la menor idea.", "why": "Almost. *La menor idea* needs a *no* to make the negative." },
+    { "wrong": "No es una gran cosa.", "right": "No es gran cosa.", "why": "Almost. In this fixed phrase there is no *una*." },
+    { "wrong": "He visto algo así en mi vida.", "right": "No he visto algo así en mi vida.", "why": "Almost. Without *no* at the verb, it says you have seen it." }
+  ],
+  "personal": "Say something you haven't the faintest idea about, starting with *No tengo la menor idea de*."
+}

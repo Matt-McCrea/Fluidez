@@ -1,0 +1,43 @@
+{
+  "node": "p:ni-emphatic",
+  "hook": {
+    "line": "Sooner or later someone asks you for something you flatly will not do. A plain *no* is polite; *ni* makes the refusal land. In the café, Altamira keeps asking Tomás to sell.",
+    "es": "¿Vender el café a Altamira? Ni pensarlo.",
+    "en": "Sell the café to Altamira? No way."
+  },
+  "examples": [
+    { "es": "¿Vender el café a Altamira? Ni pensarlo.", "en": "Sell the café to Altamira? No way." },
+    { "es": "Ni una palabra a nadie.", "en": "Not a word to anyone." },
+    { "es": "No me llamó ni siquiera para mi cumpleaños.", "en": "He didn't even call me for my birthday." },
+    { "es": "¿Vas a bailar con Hernando?\nNi loca.", "en": "Are you going to dance with Hernando?\nNot on your life. (a woman speaking)" },
+    { "es": "Ni siquiera me saludó.", "en": "She didn't even greet me." },
+    { "es": "¿Cerrar el café un domingo?\nNi hablar.", "en": "Close the café on a Sunday?\nNo way." }
+  ],
+  "rule": "*Ni* is a *no* with the volume turned up. Alone, it refuses: *ni pensarlo*, *ni hablar*, *ni loco* (a woman says *ni loca*). Before a noun it means \"not even one\": *ni una palabra*. *Ni siquiera* means \"not even\" and goes before the verb, or after it if the sentence already has *no*: *No me llamó ni siquiera para mi cumpleaños*. English says \"not even\" without a *no* in sight, so watch for it: once *ni* is there, Spanish wants the whole sentence negative.",
+  "smallPrint": "Teachers call this the emphatic use of *ni*, a negative that strengthens the refusal.",
+  "readAndPick": [
+    { "es": "Ni una palabra a nadie.", "options": ["Not a word to anyone.", "Just one word to someone.", "A word to everyone."], "answer": 0 },
+    { "es": "Ni siquiera me saludó.", "options": ["He greeted me first.", "He didn't even greet me.", "He only greeted me."], "answer": 1 },
+    { "es": "¿Vender el café? Ni pensarlo.", "options": ["Sell the café? Maybe later.", "Sell the café? I'm thinking about it.", "Sell the café? No way."], "answer": 2 },
+    { "es": "Ni loco vendo el café.", "options": ["No way would I sell the café.", "I'm crazy, so I'm selling the café.", "I might sell the café."], "answer": 0 },
+    { "es": "No es caro, ni mucho menos.", "options": ["It's very expensive.", "It isn't expensive, not by a long way.", "It's a little expensive."], "answer": 1 },
+    { "es": "Ni siquiera abrió el café hoy.", "options": ["She opened the café today.", "She opened the café a little.", "She didn't even open the café today."], "answer": 2 },
+    { "es": "Ni un café me ofreció.", "options": ["He didn't even offer me a coffee.", "He offered me a coffee.", "He offered me only one coffee."], "answer": 0 },
+    { "es": "No dijo ni una palabra.", "options": ["He said one word.", "He didn't say a single word.", "He said many words."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *ni* or *no* to refuse flatly: *___ pensarlo.*", "answer": "Ni pensarlo.", "accept": [], "why": "*Ni* is what turns a plain refusal into \"no way\"." },
+    { "prompt": "Type in Spanish: Not a word to anyone.", "answer": "Ni una palabra a nadie.", "accept": [], "why": "*Ni una* means \"not even one\", and *nadie* stays negative to match." },
+    { "prompt": "Type in Spanish: She didn't even greet me.", "answer": "Ni siquiera me saludó.", "accept": ["No me saludó ni siquiera."], "why": "*Ni siquiera* is \"not even\", placed before the verb." },
+    { "prompt": "Type in Spanish: He didn't even offer me a coffee.", "answer": "Ni un café me ofreció.", "accept": ["No me ofreció ni un café."], "why": "*Ni un* before the noun means \"not even one\"." },
+    { "prompt": "Make it stronger. Say: He didn't even call me for my birthday.", "answer": "No me llamó ni siquiera para mi cumpleaños.", "accept": ["Ni siquiera me llamó para mi cumpleaños."], "why": "Add *ni siquiera* where English says \"even\"." },
+    { "prompt": "Refuse flatly, as a woman: Not on your life.", "answer": "Ni loca.", "accept": [], "why": "*Loca* agrees with the woman speaking." },
+    { "prompt": "Type in Spanish: It isn't expensive, not by a long way.", "answer": "No es caro, ni mucho menos.", "accept": ["No es caro ni mucho menos."], "why": "*Ni mucho menos* closes a *no* sentence with \"not at all\"." }
+  ],
+  "pitfalls": [
+    { "wrong": "No hablar.", "right": "Ni hablar.", "why": "Almost. For a flat \"no way\", *ni* does the work, not *no*." },
+    { "wrong": "Ni una palabra a alguien.", "right": "Ni una palabra a nadie.", "why": "Almost. After *ni*, the sentence stays negative, so you need *nadie*, not *alguien*." },
+    { "wrong": "No me llamó siquiera para mi cumpleaños.", "right": "No me llamó ni siquiera para mi cumpleaños.", "why": "Almost. English \"even\" is not enough here; \"not even\" needs *ni siquiera*." }
+  ],
+  "personal": "Refuse something you would truly never do, in one line with *ni*."
+}

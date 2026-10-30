@@ -1,0 +1,43 @@
+{
+  "node": "p:que-si-que-si",
+  "hook": {
+    "line": "You have already said it twice, and they ask again. In Spanish you can answer by repeating *que sí* or *que no*, with a little impatience in your voice. Tomás hears it from Hernando every morning.",
+    "es": "Que sí, mamá, que ya te llamo.",
+    "en": "Yes, Mom, I told you, I'll call you in a minute."
+  },
+  "examples": [
+    { "es": "Que sí, mamá, que ya te llamo.", "en": "Yes, Mom, I told you, I'll call you in a minute." },
+    { "es": "Que no llovió, hombre, que no.", "en": "It didn't rain, man, I'm telling you it didn't." },
+    { "es": "Que sí, Hernando, que ya pago.", "en": "Yes, Hernando, I told you, I'm paying now." },
+    { "es": "Que no, Vale, que no quiero más.", "en": "No, Vale, I told you, I don't want any more." },
+    { "es": "Que sí, que sí, ya voy.", "en": "Yes, yes, I'm coming." },
+    { "es": "Que no, Mariana, que no vuelvo a Toronto.", "en": "No, Mariana, I told you, I'm not going back to Toronto." }
+  ],
+  "rule": "Start with *que sí* or *que no*, as if you were finishing \"I said…\". Then add a name, and repeat with *que* plus the answer or the reason: *Que sí, mamá, que ya te llamo*. You can also close with the same word again: *que no*. The repeated *que* carries the \"I told you\", so you don't need to say it. Use it with people close to you. It sounds impatient, so with a stranger or a boss, don't.",
+  "smallPrint": "Teachers call this a repeated *que* of insistence: *que* introduces something already said.",
+  "readAndPick": [
+    { "es": "Que sí, mamá, que ya te llamo.", "options": ["I'll call you tomorrow, Mom.", "Yes, Mom, I told you, I'll call you in a minute.", "Mom, did you call me?"], "answer": 1 },
+    { "es": "Que no llovió, hombre, que no.", "options": ["It didn't rain, man, I'm telling you it didn't.", "It rained a lot, man.", "Maybe it rained, man."], "answer": 0 },
+    { "es": "Que sí, Hernando, que ya pago.", "options": ["No, Hernando, I'm not paying.", "Hernando, who is paying?", "Yes, Hernando, I told you, I'm paying now."], "answer": 2 },
+    { "es": "Que no, Vale, que no quiero más.", "options": ["No, Vale, I told you, I don't want any more.", "Yes, Vale, I want more.", "Vale doesn't want any more."], "answer": 0 },
+    { "es": "Que sí, que sí, ya voy.", "options": ["No, no, I'm not going.", "Yes, yes, I'm coming.", "I went yesterday."], "answer": 1 },
+    { "es": "Que no, Mariana, que no vuelvo a Toronto.", "options": ["Yes, Mariana, I'm going back to Toronto.", "Mariana, are you going back to Toronto?", "No, Mariana, I told you, I'm not going back to Toronto."], "answer": 2 },
+    { "es": "Que sí, que ya lo sé.", "options": ["Yes, I told you, I already know.", "No, I don't know.", "Do you know?"], "answer": 0 },
+    { "es": "Que no, que no es mío.", "options": ["Yes, it's mine.", "No, I told you, it isn't mine.", "It was mine."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *sí* or *no* and type the whole sentence, to your mother who keeps asking: *Que ___, mamá, que ya te llamo.*", "answer": "Que sí, mamá, que ya te llamo.", "accept": [], "why": "You are agreeing, so *sí*." },
+    { "prompt": "Type in Spanish: Yes, Hernando, I told you, I'm paying now.", "answer": "Que sí, Hernando, que ya pago.", "accept": [], "why": "*Que sí* first, then a name, then *que* plus the news." },
+    { "prompt": "Type in Spanish: No, Vale, I told you, I don't want any more.", "answer": "Que no, Vale, que no quiero más.", "accept": [], "why": "It starts with *que no*, and the second *que* brings the reason." },
+    { "prompt": "Type in Spanish: Yes, yes, I'm coming.", "answer": "Que sí, que sí, ya voy.", "accept": [], "why": "Say *que sí* twice for impatience." },
+    { "prompt": "Make it negative: *Que sí, que ya lo sé.* Say: No, I told you, I don't know.", "answer": "Que no, que no lo sé.", "accept": ["Que no, que no sé."], "why": "Both *sí* turn into *no*." },
+    { "prompt": "Type in Spanish: It didn't rain, man, I'm telling you it didn't.", "answer": "Que no llovió, hombre, que no.", "accept": [], "why": "Close with a bare *que no* for a firm ending." },
+    { "prompt": "Type in Spanish: No, Mariana, I told you, I'm not going back to Toronto.", "answer": "Que no, Mariana, que no vuelvo a Toronto.", "accept": [], "why": "Same frame: *que no*, a name, *que no* plus the news." }
+  ],
+  "pitfalls": [
+    { "wrong": "Yo dije que sí, mamá.", "right": "Que sí, mamá.", "why": "Almost. You don't need to say \"I said\"; the bare *que* does that." },
+    { "wrong": "Que si, mamá, que ya te llamo.", "right": "Que sí, mamá, que ya te llamo.", "why": "Almost. This *sí* means \"yes\", so it needs its accent." },
+    { "wrong": "Que no, señor, que no.", "right": "Ya le dije que no, señor.", "why": "Almost. Repeating *que no* sounds impatient, so with a stranger use *ya le dije*." }
+  ],
+  "personal": "Think of something you keep being asked. Answer it in one line with *Que sí* or *Que no*, and *que*."
+}
