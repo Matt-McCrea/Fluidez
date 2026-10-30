@@ -1,0 +1,298 @@
+{
+  "id": "ch087",
+  "unit": "u29",
+  "title": "El debate de La Candelaria",
+  "text": "En la panadería de doña Gloria, los chismes llegan antes que el pan.\nGloria: Esto no es un chisme, mija. Es información. El jefe de la oficina de permisos de la alcaldía se fue de excursión a San Andrés. ¿Y quién pagó la excursión? Hoteles Altamira.\nMariana: Por ahora es un rumor. Soy periodista, y con un rumor no publico nada. Necesito certeza. Necesito papeles.\nGloria: ¿Certeza? A mi edad, la única certeza es la muerte, mija. Y el arriendo.\nEn el café, la discusión empezó otra vez. Hernando puso una cuchara en la mesa, como un micro.\nHernando: Esto no es una discusión. Es el debate de La Candelaria. Primer argumento: Valentina Ospina.\nVale: Es imposible ganar sin plata.\nHernando: Ahora, el argumento del señor Herrera.\nTomás: Si vendemos, Altamira gana.\nSimón: ¡Me da igual! ¡Me da igual!\nVale: A ti todo te da igual, Simón. A mí no.\nMariana llegó con el chisme de la excursión.\nTomás: ¡Entonces los permisos no valen nada!\nMariana: Es posible que el rumor sea falso. Un chisme es como un virus: pasa de un celular a otro, y todo el mundo le pone algo.\nTomás: En mi antiguo trabajo yo buscaba virus. Y siempre había uno donde nadie miraba.\nJhon Fredy buscó el nombre del jefe en su celular. En el café no se oía ni una mosca.\nJhon Fredy: Su hija tiene fotos de San Andrés, del mes pasado. Y en esta foto, la toalla dice «Hoteles Altamira».\nHernando: ¡Pilas, Mariana! Hay que estar mosca con ese señor.\nMariana: Es algo, sin duda. Pero una toalla no es un papel. Sin papeles, es imposible publicar. Y la hija puede decir que la foto es falsa.\nVale: Yo tengo una duda, Mariana. ¿Usted cree que le ganamos a Altamira? Usted es periodista, no amiga de Tomás.\nMariana: Yo soy las dos cosas. Y la verdad es que no sé. Puede que ganemos. Puede que no.\nVale: Entonces seguimos en desacuerdo, Tomás. Pero ahora es un desacuerdo con una toalla.\nHernando: Fin del debate. Ganó la toalla.\nSimón: ¡Me da lo mismo!",
+  "gloss": [
+    {
+      "es": "llegan antes que el pan",
+      "en": "arrive before the bread"
+    },
+    {
+      "es": "el jefe de la oficina de permisos",
+      "en": "the head of the permits office"
+    },
+    {
+      "es": "se fue de excursión a San Andrés",
+      "en": "went off on a trip to San Andrés"
+    },
+    {
+      "es": "Necesito certeza.",
+      "en": "I need certainty."
+    },
+    {
+      "es": "la única certeza es la muerte",
+      "en": "the only sure thing is death"
+    },
+    {
+      "es": "como un micro",
+      "en": "like a mic"
+    },
+    {
+      "es": "micro",
+      "en": "mic"
+    },
+    {
+      "es": "los permisos no valen nada",
+      "en": "the permits are worthless"
+    },
+    {
+      "es": "y todo el mundo le pone algo",
+      "en": "and everyone adds something to it"
+    },
+    {
+      "es": "En mi antiguo trabajo",
+      "en": "In my old job"
+    },
+    {
+      "es": "no se oía ni una mosca",
+      "en": "you could have heard a pin drop"
+    },
+    {
+      "es": "¡Pilas, Mariana!",
+      "en": "Watch out, Mariana."
+    },
+    {
+      "es": "Hay que estar mosca con ese señor.",
+      "en": "You have to keep your eyes open with that man."
+    },
+    {
+      "es": "del mes pasado",
+      "en": "from last month"
+    },
+    {
+      "es": "toalla",
+      "en": "towel"
+    },
+    {
+      "es": "¿Usted cree que le ganamos a Altamira?",
+      "en": "Do you think we can beat Altamira?"
+    },
+    {
+      "es": "Puede que ganemos.",
+      "en": "We might win."
+    },
+    {
+      "es": "seguimos en desacuerdo",
+      "en": "we still disagree"
+    },
+    {
+      "es": "¡Me da lo mismo!",
+      "en": "I couldn't care less."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What is the rumour Gloria passes on?",
+      "options": [
+        "Altamira is selling the hotel",
+        "The head of the permits office went on a trip to San Andrés paid for by Altamira",
+        "Marta's nephew lost his job",
+        "Joaquín is in San Andrés"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why won't Mariana publish it yet?",
+      "options": [
+        "Gloria asked her not to",
+        "She has no names",
+        "It is only a rumour, and she needs certainty and papers",
+        "Her magazine is closed"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Jhon Fredy find?",
+      "options": [
+        "A photo with a towel that says Hoteles Altamira",
+        "A letter from Joaquín",
+        "The permits",
+        "A one star review"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué responde Mariana a la duda de Vale?",
+      "options": [
+        "Que van a ganar seguro",
+        "Que no sabe: puede que ganen, puede que no",
+        "Que es imposible ganar",
+        "Que le da igual"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does Hernando use as a microphone?",
+      "options": [
+        "A spoon",
+        "A cup",
+        "Simón",
+        "A bread roll"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Tomás look for in his old job?",
+      "options": [
+        "Thieves",
+        "Viruses",
+        "Recipes",
+        "Hotels"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Besides death, what does Gloria call a certainty?",
+      "options": [
+        "Taxes",
+        "The rent",
+        "Rain",
+        "Gossip"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "A towel with a hotel's name on it is not proof, and Vale and Tomás still disagree. On Sunday Hernando locks the café door, and nobody leaves until they have eaten.",
+  "requires": [
+    "c:a-mi-tambien",
+    "c:entonces-bueno",
+    "c:es-lo-mismo",
+    "c:es-que",
+    "c:hay",
+    "c:hay-que",
+    "c:igual",
+    "c:la-verdad",
+    "c:me-da-igual",
+    "c:me-regala",
+    "c:no-se",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-doubt",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:dar-igual",
+    "p:demonstratives-basic",
+    "p:es-adj-inf",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:possessives-basic",
+    "p:senor-don-article",
+    "p:ser-profession-no-article",
+    "p:telling-time",
+    "p:time-pasado-que-viene",
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:ahora",
+    "l:alcaldía",
+    "l:amiga",
+    "l:antes",
+    "l:antiguo",
+    "l:argumento",
+    "l:arriendo",
+    "l:buscar",
+    "l:café",
+    "l:celular",
+    "l:certeza",
+    "l:chisme",
+    "l:cosa",
+    "l:creer",
+    "l:cuchara",
+    "l:dar",
+    "l:debate",
+    "l:decir",
+    "l:desacuerdo",
+    "l:discusión",
+    "l:duda",
+    "l:edad",
+    "l:empezar",
+    "l:estar",
+    "l:excursión",
+    "l:falso",
+    "l:fin",
+    "l:foto",
+    "l:ganar",
+    "l:hija",
+    "l:hotel",
+    "l:igual",
+    "l:imposible",
+    "l:información",
+    "l:irse",
+    "l:jefe",
+    "l:llegar",
+    "l:mes",
+    "l:mesa",
+    "l:mija",
+    "l:mirar",
+    "l:mosca",
+    "l:muerte",
+    "l:mundo",
+    "l:necesitar",
+    "l:nombre",
+    "l:oficina",
+    "l:oír",
+    "l:pagar",
+    "l:pan",
+    "l:panadería",
+    "l:papel",
+    "l:pasado",
+    "l:pasar",
+    "l:periodista",
+    "l:permiso",
+    "l:pila",
+    "l:plata",
+    "l:poder",
+    "l:poner",
+    "l:posible",
+    "l:publicar",
+    "l:quién",
+    "l:rumor",
+    "l:saber",
+    "l:seguir",
+    "l:ser",
+    "l:señor",
+    "l:siempre",
+    "l:tener",
+    "l:toalla",
+    "l:trabajo",
+    "l:valer",
+    "l:vender",
+    "l:verdad",
+    "l:vez",
+    "l:virus",
+    "l:único"
+  ]
+}

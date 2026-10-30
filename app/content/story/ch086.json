@@ -1,0 +1,293 @@
+{
+  "id": "ch086",
+  "unit": "u29",
+  "title": "Pan quemado",
+  "text": "Vale quemó el pan. Era la primera vez en siete años.\nEn la cocina había humo, y Vale tenía el sobre de Altamira en la mano.\nVale: No dormí. Hice cuentas toda la noche. Mil quinientos millones, Tomás. Con esa plata, yo puedo abrir una pastelería en Medellín, cerca de mi mamá.\nTomás: ¿Vender el café de Rosa? ¡Ni hablar!\nSimón: ¡Ni hablar! ¡Ni hablar!\nVale: No quiero vender mañana. Quiero que lo pensemos. Dudo que un café pequeño gane contra Altamira.\nTomás: Que yo sepa, Joaquín no firmó nada.\nVale: ¿Y tú crees que a Altamira le importa eso? Sus abogados cobran más en un mes que nosotros en un año.\nEn la radio: «En una declaración esta mañana, Ricardo Altamira dijo que el Hotel Esquina Real empieza en marzo».\nTomás: Para él, el café ya es suyo. No le voy a dar ese gusto.\nVale: Es posible que perdamos todo: el café, la plata y siete años de mi vida. Pelear sin plata contra un hotel es apostar, como un jugador de cartas.\nTomás se quedó callado. Los dos pensaban en el mismo jugador de cartas: Joaquín.\nA las seis llegó don Hernando, con hambre.\nHernando: ¿Quién quemó el pan? En cuarenta años, Rosa quemó el pan una sola vez. El día que se fue Joaquín.\nVale: Gracias, Hernando. Eso me ayuda mucho.\nHernando: Mija, las cuentas a las cinco de la mañana le queman el cerebro a todo el mundo. Primero un tinto. La guerra, después.\nTomás: Hernando, ¿usted cree que vamos a ganar?\nHernando: Yo no sé nada de abogados, mijo. Yo sé de taxis. Pero dudo que Altamira sepa algo de esta cuadra.\nSimón: ¿Tú crees? ¿Tú crees?\nVale se rió, sin querer. Puede que Vale tenga razón, pensó Tomás.\nEntonces sonó el celular de Tomás. Era Mariana.\nMariana: Dudo que esos permisos sean legales. Nadie firma un permiso de ocho pisos en tres días. Alguien en la alcaldía está ayudando a Altamira.\nTomás: ¿Quién?\nMariana: Todavía no sé. Pero doña Gloria oyó algo en la panadería, y ya se lo contó a medio barrio.",
+  "gloss": [
+    {
+      "es": "quemó el pan",
+      "en": "burnt the bread"
+    },
+    {
+      "es": "Hice cuentas toda la noche.",
+      "en": "I did the sums all night."
+    },
+    {
+      "es": "No le voy a dar ese gusto.",
+      "en": "I'm not going to give him that satisfaction."
+    },
+    {
+      "es": "Es posible que perdamos todo",
+      "en": "We could lose everything"
+    },
+    {
+      "es": "Pelear sin plata contra un hotel es apostar, como un jugador de cartas.",
+      "en": "Fighting a hotel with no money is gambling, like a card player."
+    },
+    {
+      "es": "pastelería",
+      "en": "pastry shop"
+    },
+    {
+      "es": "Dudo que un café pequeño gane contra Altamira",
+      "en": "I doubt a small café can win against Altamira"
+    },
+    {
+      "es": "Que yo sepa",
+      "en": "As far as I know"
+    },
+    {
+      "es": "le queman el cerebro a todo el mundo",
+      "en": "fry anybody's brain"
+    },
+    {
+      "es": "sin querer",
+      "en": "without meaning to"
+    },
+    {
+      "es": "Puede que Vale tenga razón",
+      "en": "Vale might be right"
+    },
+    {
+      "es": "En la cocina había humo",
+      "en": "There was smoke in the kitchen"
+    },
+    {
+      "es": "ya se lo contó a medio barrio",
+      "en": "she's already told half the neighbourhood"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why did Vale burn the bread?",
+      "options": [
+        "The oven is broken",
+        "She was up all night doing sums about Altamira's offer",
+        "Simón distracted her",
+        "Tomás forgot to watch it"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Vale want right now?",
+      "options": [
+        "To sell tomorrow",
+        "To move to Toronto",
+        "For them to think about the offer",
+        "To fight Altamira in court"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Why does Tomás go quiet when Vale mentions a card player?",
+      "options": [
+        "He doesn't know the word",
+        "They both think of Joaquín, who gambled",
+        "He is angry with Simón",
+        "He is listening to the radio"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué piensa Mariana de los permisos?",
+      "options": [
+        "Duda que sean legales",
+        "Cree que son perfectos",
+        "Dice que no existen",
+        "Quiere firmarlos"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "When, according to Hernando, did Rosa burn the bread?",
+      "options": [
+        "On her birthday",
+        "The day Joaquín left",
+        "Never",
+        "During the blackout"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What would Vale do with the money?",
+      "options": [
+        "Buy a house in Bogotá",
+        "Open a pastry shop in Medellín near her mother",
+        "Travel to Toronto",
+        "Pay the lawyers"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What did Altamira say on the radio?",
+      "options": [
+        "That the hotel starts in March",
+        "That he is giving up",
+        "That he wants to meet Vale",
+        "That the café is beautiful"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Gloria has heard something about a man at the mayor's office, and she has already told half the neighbourhood. Tomorrow Mariana goes to the bakery to separate the gossip from the facts.",
+  "requires": [
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:ni-hablar",
+    "c:no-hay-nada",
+    "c:no-se",
+    "c:puedo",
+    "c:que-yo-sepa",
+    "c:quiero",
+    "c:todavia-no",
+    "c:tu-crees",
+    "c:vamos-a",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:possessives-stressed",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-doubt",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:cerca-de",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:hedge-knowledge",
+    "p:indefinites-basic",
+    "p:infinitive-instructions",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:tener-razon",
+    "p:time-sequence-basic",
+    "p:todos-los-dias"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abrir",
+    "l:alcaldía",
+    "l:apostar",
+    "l:ayudar",
+    "l:año",
+    "l:barrio",
+    "l:café",
+    "l:callado",
+    "l:carta",
+    "l:celular",
+    "l:cerca",
+    "l:cerebro",
+    "l:cobrar",
+    "l:cocina",
+    "l:contar",
+    "l:creer",
+    "l:cuadra",
+    "l:cuenta",
+    "l:dar",
+    "l:decir",
+    "l:declaración",
+    "l:después",
+    "l:dormir",
+    "l:dudar",
+    "l:día",
+    "l:empezar",
+    "l:estar",
+    "l:firmar",
+    "l:ganar",
+    "l:guerra",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:hambre",
+    "l:hotel",
+    "l:humo",
+    "l:importar",
+    "l:ir",
+    "l:irse",
+    "l:jugador",
+    "l:legal",
+    "l:llegar",
+    "l:mamá",
+    "l:mano",
+    "l:marzo",
+    "l:mañana",
+    "l:mes",
+    "l:mija",
+    "l:mijo",
+    "l:mundo",
+    "l:noche",
+    "l:oír",
+    "l:pan",
+    "l:panadería",
+    "l:pelearse",
+    "l:pensar",
+    "l:pequeño",
+    "l:perder",
+    "l:permiso",
+    "l:piso",
+    "l:plata",
+    "l:poder",
+    "l:posible",
+    "l:quedarse",
+    "l:quemar",
+    "l:querer",
+    "l:quién",
+    "l:radio",
+    "l:razón",
+    "l:reír",
+    "l:saber",
+    "l:ser",
+    "l:sobre",
+    "l:sonar",
+    "l:taxi",
+    "l:tener",
+    "l:tinto",
+    "l:vender",
+    "l:vez",
+    "l:vida"
+  ]
+}

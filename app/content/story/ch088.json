@@ -1,0 +1,301 @@
+{
+  "id": "ch088",
+  "unit": "u29",
+  "title": "Huevos pericos",
+  "text": "El domingo a las dos, Hernando cerró la puerta del café con llave y puso el letrero de «Cerrado».\nHernando: Hace tres días que ustedes dos discuten. Es posible que los dos tengan razón. Pero dudo que alguno de los dos tenga algo en el estómago.\nVale abrió la boca, y la cerró.\nVeinte minutos más tarde, había en la mesa arroz, huevos pericos, plátano maduro y tres tazas de chocolate.\nHernando: Receta de Rosa. Coman. La discusión, más tarde.\nComieron sin hablar. Tomás le dejó a Vale el último plátano.\nHernando puso el salero en la mesa.\nHernando: Escenario uno. Mariana encuentra las pruebas, y ustedes se quedan con el café.\nAl lado, puso la azucarera.\nHernando: Escenario dos. No hay pruebas, el juicio dura cinco años, y el costo es enorme. Ustedes se quedan sin café y sin plata.\nSimón bajó a la mesa y picó un grano de arroz del escenario dos.\nHernando: Hasta Simón tiene opinión.\nVale: Yo no quiero vender, Hernando. Quizás no me cree. Pero el escenario dos me quita el sueño.\nTomás: A lo mejor tú tienes razón y yo soy un terco.\nVale: Tal vez los dos somos tercos.\nSonó el teléfono de oro. Era Mariana.\nMariana: El sobrino de Marta trabaja en la alcaldía, y tiene una copia del correo de la excursión. A lo mejor eso es una prueba. Pero quiere verme el martes.\nTomás: ¿El martes? Altamira quiere la respuesta mañana.\nMariana: Mañana es festivo, Tomás. Es puente. A lo mejor el puente nos ayuda.\nTomás: Vale, te propongo un compromiso. Hasta el martes, buscamos pruebas. Si el martes no hay nada, nos sentamos con Altamira y escuchamos.\nVale: ¿Y si nos gusta la oferta?\nTomás: Entonces a lo mejor vendemos.\nVale le dio la mano, como en un negocio. Pero después no la soltó.\nHernando estaba en la puerta de la cocina, con la olla.\nHernando: ¿Vender? ¿El café de Rosa? ¿A ese señor?\nPuso la olla en la mesa. Tomó su gorra y salió por la puerta de atrás, sin terminar su chocolate.",
+  "gloss": [
+    {
+      "es": "letrero",
+      "en": "sign"
+    },
+    {
+      "es": "Hace tres días que ustedes dos discuten.",
+      "en": "You two have been arguing for three days."
+    },
+    {
+      "es": "dudo que alguno de los dos tenga algo en el estómago",
+      "en": "I doubt either of you has anything in your stomach"
+    },
+    {
+      "es": "plátano maduro",
+      "en": "fried sweet plantain"
+    },
+    {
+      "es": "huevos pericos",
+      "en": "scrambled eggs with tomato and onion"
+    },
+    {
+      "es": "salero",
+      "en": "salt shaker"
+    },
+    {
+      "es": "azucarera",
+      "en": "sugar bowl"
+    },
+    {
+      "es": "el costo es enorme",
+      "en": "the cost is huge"
+    },
+    {
+      "es": "picó un grano de arroz",
+      "en": "pecked a grain of rice"
+    },
+    {
+      "es": "quizás",
+      "en": "maybe"
+    },
+    {
+      "es": "me quita el sueño",
+      "en": "keeps me awake at night"
+    },
+    {
+      "es": "terco",
+      "en": "stubborn"
+    },
+    {
+      "es": "tercos",
+      "en": "stubborn"
+    },
+    {
+      "es": "el teléfono de oro",
+      "en": "the golden phone"
+    },
+    {
+      "es": "Es puente.",
+      "en": "It's a long weekend."
+    },
+    {
+      "es": "olla",
+      "en": "pot"
+    },
+    {
+      "es": "A lo mejor el puente nos ayuda.",
+      "en": "Maybe the long weekend will help us."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Hernando close the café?",
+      "options": [
+        "There are no customers",
+        "He wants Tomás and Vale to eat and stop arguing",
+        "Altamira is coming",
+        "It is a holiday"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What do the salt shaker and the sugar bowl stand for?",
+      "options": [
+        "Tomás and Vale",
+        "Two possible outcomes of the fight",
+        "Rosa and Joaquín",
+        "The café and the hotel"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What compromise does Tomás propose?",
+      "options": [
+        "Sell now and split the money",
+        "Look for proof until Tuesday, and if there is none, listen to Altamira together",
+        "Let Hernando decide",
+        "Ask Joaquín"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Hernando leave without finishing his chocolate?",
+      "options": [
+        "He is tired",
+        "He heard Tomás say that maybe they will sell",
+        "Simón ate it",
+        "Mariana called him"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Por qué no hay respuesta para Altamira mañana?",
+      "options": [
+        "Porque mañana es festivo",
+        "Porque Altamira está enfermo",
+        "Porque Vale no quiere",
+        "Porque el teléfono no funciona"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does Tomás leave for Vale?",
+      "options": [
+        "The last plantain",
+        "The salt",
+        "His chocolate",
+        "Rosa's watch"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Marta's nephew have?",
+      "options": [
+        "A photo of the towel",
+        "A copy of the email about the trip",
+        "The signed permits",
+        "Joaquín's address"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Hernando heard only the last sentence, and he has walked out without finishing his chocolate. Tomorrow is a holiday, the café is quiet, and Hernando is angrier than anyone has ever seen him.",
+  "requires": [
+    "c:a-lo-mejor",
+    "c:aqui-tiene",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:no-hay-nada",
+    "c:quiero",
+    "c:tienes",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:quizas-a-lo-mejor",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-doubt",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:con-sin",
+    "p:container-de",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:dentro-de-vs-despues",
+    "p:durar-durante",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:nos-vemos-a-las",
+    "p:possessives-basic",
+    "p:que-tal-si",
+    "p:telling-time",
+    "p:tener-razon",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:alcaldía",
+    "l:arroz",
+    "l:atrás",
+    "l:ayudar",
+    "l:año",
+    "l:bajar",
+    "l:boca",
+    "l:buscar",
+    "l:café",
+    "l:cerrar",
+    "l:chocolate",
+    "l:cocina",
+    "l:comer",
+    "l:compromiso",
+    "l:copia",
+    "l:correo",
+    "l:costo",
+    "l:creer",
+    "l:dar",
+    "l:dejar",
+    "l:después",
+    "l:discusión",
+    "l:discutir",
+    "l:domingo",
+    "l:dudar",
+    "l:durar",
+    "l:día",
+    "l:encontrar",
+    "l:enorme",
+    "l:escenario",
+    "l:escuchar",
+    "l:estar",
+    "l:estómago",
+    "l:excursión",
+    "l:festivo",
+    "l:gorra",
+    "l:grano",
+    "l:gustar",
+    "l:hablar",
+    "l:hacer",
+    "l:huevo",
+    "l:juicio",
+    "l:lado",
+    "l:letrero",
+    "l:llave",
+    "l:madurar",
+    "l:mano",
+    "l:martes",
+    "l:mañana",
+    "l:mejor",
+    "l:mesa",
+    "l:minuto",
+    "l:negocio",
+    "l:oferta",
+    "l:olla",
+    "l:opinión",
+    "l:oro",
+    "l:picar",
+    "l:plata",
+    "l:plátano",
+    "l:poner",
+    "l:posible",
+    "l:proponer",
+    "l:prueba",
+    "l:puente",
+    "l:puerta",
+    "l:quedarse",
+    "l:querer",
+    "l:quitar",
+    "l:quizás",
+    "l:razón",
+    "l:recetar",
+    "l:respuesta",
+    "l:salir",
+    "l:sentarse",
+    "l:ser",
+    "l:señor",
+    "l:sobrino",
+    "l:soltar",
+    "l:sonar",
+    "l:sueño",
+    "l:tarde",
+    "l:taza",
+    "l:teléfono",
+    "l:tener",
+    "l:terminar",
+    "l:tomar",
+    "l:trabajar",
+    "l:vender",
+    "l:ver",
+    "l:vez"
+  ]
+}
