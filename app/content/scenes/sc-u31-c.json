@@ -1,0 +1,254 @@
+{
+  "id": "sc-u31-c",
+  "unit": "u31",
+  "title": "The light at three",
+  "spare": true,
+  "brief": "You're Tomás. Don Hernando, a retired taxi driver, drops by early and starts remembering the café as it was in 1978. Ask him questions and react as the story unfolds. He's much older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Buenos días, Tomás. Hoy me acordé del café en 1978. Yo era taxista y pasaba por aquí todas las noches.",
+      "npcEn": "Hernando: Good morning, Tomás. Today I remembered the café in 1978. I was a taxi driver and I came past here every night.",
+      "intent": "Say good morning and ask him what the café was like then.",
+      "accept": [
+        "Buenos días. ¿Cómo era el café en 1978?",
+        "Buenos días. ¿Cómo era este café en esa época?",
+        "Buenos días. ¿Y cómo era el café entonces?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask him a question"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted with him, not tú"
+        }
+      ],
+      "focus": "g:narrative-pasts",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Pequeño y siempre lleno. Rosa servía tinto a todos y el pan salía caliente a todas horas. Pero la última noche de Joaquín, vi luz en el café a las tres de la mañana.",
+      "npcEn": "Hernando: Small and always full. Rosa served coffee to everyone and the bread came out warm at all hours. But on Joaquín's last night, I saw a light in the café at three in the morning.",
+      "intent": "Ask what he did when he saw the light on.",
+      "accept": [
+        "¿Y qué hizo usted cuando vio la luz?",
+        "¿Qué hizo usted al ver la luz?",
+        "Y usted, ¿qué hizo cuando vio la luz?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "verbForm",
+          "inf": "hacer",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "what did you do: qué hizo usted"
+        }
+      ],
+      "focus": "g:narrative-pasts",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Paré el taxi y toqué la puerta. Rosa tenía una taza fría en la mano. Me dijo que Joaquín se había ido y que no iba a volver.",
+      "npcEn": "Hernando: I stopped the taxi and knocked on the door. Rosa had a cold cup in her hand. She told me that Joaquín had left and that he wasn't going to come back.",
+      "intent": "Say how sad, and that you thought she never cried, but now you understand.",
+      "accept": [
+        "Qué triste. Yo pensaba que ella nunca lloraba, pero ahora entiendo.",
+        "Ay, mi abuela. Pensaba que nunca lloraba, pero ahora entiendo todo.",
+        "Qué triste. Yo pensaba que ella era fuerte, pero ahora entiendo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpensaba que\\b",
+          "flags": "i",
+          "label": "I used to think: pensaba que"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bpero\\b",
+          "flags": "i",
+          "label": "then what changed: pero"
+        }
+      ],
+      "focus": "p:pensaba-pero",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Ella se puso a llorar y yo me quedé hasta que salió el sol. Después me hizo un tinto. Años más tarde me dijo que nunca había mandado ninguna carta.",
+      "npcEn": "Hernando: She started to cry and I stayed until the sun came up. Then she made me a coffee. Years later she told me she had never sent a single letter.",
+      "intent": "Thank him, and say you understand now that she did not send the letters.",
+      "accept": [
+        "Muchas gracias. Ahora entiendo que no mandó ninguna carta.",
+        "Gracias por contarme todo. Ahora entiendo que ella no las mandó por miedo.",
+        "Gracias por contármelo. Por fin entiendo que no las mandó."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "she did not send them: no..."
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "preterito",
+          "label": "she did not send them: use the preterite"
+        }
+      ],
+      "focus": "g:pluperfect",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Era una mujer muy fuerte. Y ahora, ¿me invita un tinto, o lo pago yo?",
+      "npcEn": "Hernando: She was a very strong woman. And now, will you buy me a coffee, or do I pay?",
+      "intent": "Say of course, and that you are inviting him.",
+      "accept": [
+        "Claro que sí. Hoy lo invito yo.",
+        "Por supuesto. Lo invito a un tinto.",
+        "Con mucho gusto. Hoy lo invito yo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\binvit",
+          "flags": "i",
+          "label": "say you're inviting him: lo invito"
+        }
+      ],
+      "focus": "g:narrative-pasts",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:como-era",
+    "c:con-mucho-gusto",
+    "c:en-esa-epoca",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:mucho-gusto",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:reported-backshift",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verbs-of-change",
+    "l:abuela",
+    "l:acordarse",
+    "l:ahora",
+    "l:aquí",
+    "l:año",
+    "l:bueno",
+    "l:café",
+    "l:caliente",
+    "l:carta",
+    "l:claro",
+    "l:contar",
+    "l:cómo",
+    "l:decir",
+    "l:después",
+    "l:día",
+    "l:entender",
+    "l:fin",
+    "l:frío",
+    "l:fuerte",
+    "l:gusto",
+    "l:hacer",
+    "l:hora",
+    "l:hoy",
+    "l:invitar",
+    "l:ir",
+    "l:llenar",
+    "l:llorar",
+    "l:luz",
+    "l:mandar",
+    "l:mano",
+    "l:mañana",
+    "l:miedo",
+    "l:mujer",
+    "l:noche",
+    "l:pagar",
+    "l:pan",
+    "l:parar",
+    "l:pasar",
+    "l:pensar",
+    "l:pequeño",
+    "l:ponerse",
+    "l:puerta",
+    "l:quedarse",
+    "l:qué",
+    "l:salir",
+    "l:ser",
+    "l:servir",
+    "l:siempre",
+    "l:sol",
+    "l:suponer",
+    "l:tarde",
+    "l:taxi",
+    "l:taxista",
+    "l:taza",
+    "l:tener",
+    "l:tinto",
+    "l:tocar",
+    "l:triste",
+    "l:ver",
+    "l:volver",
+    "l:época",
+    "p:aqui-ahi-alla",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:entiendo-que-subj",
+    "p:entonces-de-repente",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:me-te-nos-objects",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:ponerse-a",
+    "p:ponerse-a-inf",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:ser-profession-no-article",
+    "p:te-invito-a",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ]
+}
