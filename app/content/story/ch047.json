@@ -1,239 +1,224 @@
 {
- "id": "ch047",
- "unit": "u17",
- "title": "Uno, dos, tres",
- "text": "Dos horas de clases de salsa en el celular, en la cocina del café.\nProfesora: Uno, dos, tres. Cinco, seis, siete.\nTomás: ¿Y el cuatro? ¿Dónde está el cuatro?\nVale: En el cuatro no bailas, Tomás. Descansas.\nCuando la profesora decía «derecha», Tomás iba a la izquierda. Cuando decía «vuelta», Tomás terminaba contra la nevera.\nEl viernes, Tomás llegó al Teatro Colón a las siete en punto. Gloria lloró con todos los boleros, y la función terminó a las ocho y veinte. Tomás corrió seis cuadras.\nEn la discoteca, Mariana lo esperaba en la mesa.\nMariana: Son las ocho y media, señor puntual. ¿Y las vueltas?\nTomás: Aprendí una. Más o menos.\nEn la primera vuelta, el pie derecho de Tomás terminó encima del pie de Mariana. En la segunda, encima del otro.\nMariana: ¡Ay, Tomás! ¡Mis pies!\nTomás: Perdón. En la clase del celular no había otra persona.\nMariana: Hablé con el vendedor. El señor de Altamira pagó los doce sillones en dólares, en efectivo. Y el hotel abre en marzo.\nTomás: ¿En marzo? Pero nosotros no vendemos el café.\nMariana: Ya lo sé. Por eso me preocupa. Para Altamira, el hotel ya existe.\nA medianoche, Tomás volvió al café. En la cocina había luz: Vale estaba allí, con dos tintos.\nVale: ¿Y? ¿Bailaste mucho?\nTomás: Bailé sobre los pies de Mariana.\nVale puso música, le tomó la mano y contó despacio: uno, dos, tres. Esta vez, Tomás bailó bien.\nVale: Cuando yo era niña, mis papás bailaban así en la cocina, todos los domingos.\nTomás: ¿En Medellín todos bailan?\nVale: Todos, Tomás. Hasta mi abuela.",
- "gloss": [
-  {
-   "es": "boleros",
-   "en": "boleros (slow, romantic love songs)"
-  },
-  {
-   "es": "sillones",
-   "en": "armchairs"
-  },
-  {
-   "es": "En el cuatro no bailas, Tomás. Descansas.",
-   "en": "On four you don't dance, Tomás. You rest."
-  },
-  {
-   "es": "Tomás terminaba contra la nevera",
-   "en": "Tomás ended up against the fridge"
-  },
-  {
-   "es": "seis cuadras",
-   "en": "six blocks"
-  },
-  {
-   "es": "señor puntual",
-   "en": "Mr Punctual"
-  },
-  {
-   "es": "terminó encima del pie de Mariana",
-   "en": "ended up on top of Mariana's foot"
-  },
-  {
-   "es": "Para Altamira, el hotel ya existe.",
-   "en": "For Altamira, the hotel already exists."
-  },
-  {
-   "es": "A medianoche",
-   "en": "At midnight"
-  },
-  {
-   "es": "Bailé sobre los pies de Mariana.",
-   "en": "I danced on Mariana's feet."
-  },
-  {
-   "es": "Hasta mi abuela.",
-   "en": "Even my grandmother."
-  }
- ],
- "questions": [
-  {
-   "q": "How did the practice with the phone classes go?",
-   "options": [
-    "Badly: he went left instead of right and ended up against the fridge",
-    "Perfectly: he learned all three turns",
-    "He fell asleep",
-    "Simón learned the steps instead"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "Why is Mariana worried?",
-   "options": [
-    "Altamira paid in dollars and plans to open the hotel in March, as if the café were already theirs",
-    "Tomás arrived late",
-    "The seller wouldn't talk to her",
-    "Her feet hurt"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "What changes when Vale dances with Tomás?",
-   "options": [
-    "She counts slowly and this time he dances well",
-    "He steps on her feet too",
-    "She refuses to dance",
-    "Hernando films them"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "¿Qué hacían los papás de Vale los domingos?",
-   "options": [
-    "Bailaban en la cocina",
-    "Iban al estadio",
-    "Trabajaban en el café",
-    "Escuchaban boleros en el teatro"
-   ],
-   "answer": 0
-  }
- ],
- "rereadQuestions": [
-  {
-   "q": "What time did the concert finish?",
-   "options": [
-    "Twenty past eight",
-    "Seven o'clock",
-    "Half past eight",
-    "Midnight"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "How many turns did Tomás learn, more or less?",
-   "options": [
-    "One",
-    "Three",
-    "Two",
-    "None"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "Why does Tomás say the phone class didn't prepare him?",
-   "options": [
-    "There was no other person in the phone class",
-    "The class was in English",
-    "The music was too fast",
-    "The phone battery died"
-   ],
-   "answer": 0
-  }
- ],
- "hook": "In Medellín everybody dances, even Vale's grandmother, and Tomás knows exactly one turn. Soon there is a bus to catch, a whole family to meet, and nobody there will dance on four.",
- "requires": [
-  "c:bien-y-tu",
-  "c:donde-esta",
-  "c:era",
-  "c:mas-o-menos",
-  "c:perdon-disculpe",
-  "g:cause-result",
-  "g:direct-objects",
-  "g:estar-location-states",
-  "g:gender-articles",
-  "g:gustar-full",
-  "g:imperfect-habitual",
-  "g:imperfect-states",
-  "g:indirect-objects",
-  "g:present-ar",
-  "g:present-er-ir",
-  "g:preterite-ar",
-  "g:preterite-er-ir",
-  "g:preterite-irregular-strong",
-  "g:ser-identity",
-  "g:yo-irregular",
-  "p:aqui-ahi-alla",
-  "p:bien-bueno",
-  "p:bien-mal-vs-bueno-malo",
-  "p:cerca-de",
-  "p:cuando-basic",
-  "p:days-el-lunes",
-  "p:demonstratives-basic",
-  "p:ir-a-venir-de-place",
-  "p:masculine-plural-mixed",
-  "p:ordinal-floor",
-  "p:ordinals-primer-tercer",
-  "p:otro-no-article",
-  "p:para-inf",
-  "p:position-de",
-  "p:possessives-basic",
-  "p:quantifiers-basic",
-  "p:question-word-order",
-  "p:saber-conocer",
-  "p:telling-time",
-  "p:todos-los-dias"
- ],
- "lexemes": [
-  "l:abrir",
-  "l:abuela",
-  "l:allí",
-  "l:aprender",
-  "l:bailar",
-  "l:bien",
-  "l:bolero",
-  "l:café",
-  "l:celular",
-  "l:clase",
-  "l:cocina",
-  "l:contar",
-  "l:correr",
-  "l:cuadra",
-  "l:decir",
-  "l:derecha",
-  "l:derecho",
-  "l:descansar",
-  "l:despacio",
-  "l:discoteca",
-  "l:domingo",
-  "l:dólar",
-  "l:dónde",
-  "l:efectivo",
-  "l:encima",
-  "l:esperar",
-  "l:estar",
-  "l:existir",
-  "l:función",
-  "l:hablar",
-  "l:hora",
-  "l:hotel",
-  "l:ir",
-  "l:izquierda",
-  "l:llegar",
-  "l:llorar",
-  "l:luz",
-  "l:mano",
-  "l:marzo",
-  "l:medianoche",
-  "l:mesa",
-  "l:música",
-  "l:nevera",
-  "l:niña",
-  "l:pagar",
-  "l:papá",
-  "l:perdón",
-  "l:persona",
-  "l:pie",
-  "l:poner",
-  "l:preocupar",
-  "l:profesora",
-  "l:punto",
-  "l:puntual",
-  "l:saber",
-  "l:salsa",
-  "l:ser",
-  "l:señor",
-  "l:sillón",
-  "l:terminar",
-  "l:tinto",
-  "l:tomar",
-  "l:vendedor",
-  "l:vender",
-  "l:vez",
-  "l:viernes",
-  "l:volver",
-  "l:vuelta"
- ]
+  "id": "ch047",
+  "unit": "u17",
+  "title": "Uno, dos, tres",
+  "text": "Dos horas de clases de salsa en el celular, en la cocina del café.\nProfesora: Uno, dos, tres. Cinco, seis, siete.\nTomás: ¿Y el cuatro? ¿Dónde está el cuatro?\nVale: En el cuatro no bailas, Tomás. Descansas.\nCuando la profesora decía «derecha», Tomás iba a la izquierda. Cuando decía «vuelta», Tomás terminaba contra la nevera.\nEl viernes, la función de boleros terminó a las ocho y veinte, y Tomás corrió seis cuadras.\nEn la discoteca, Mariana lo esperaba en la mesa.\nMariana: Son las ocho y media, señor puntual. ¿Y las vueltas?\nTomás: Aprendí una. Más o menos.\nEn la primera vuelta, el pie derecho de Tomás terminó encima del pie de Mariana. En la segunda, encima del otro.\nTomás: Perdón. En la clase del celular no había otra persona.\nMariana: Hablé con el vendedor. El señor de Altamira pagó los doce sillones en dólares, en efectivo. Y el hotel abre en marzo.\nTomás: ¿En marzo? Pero nosotros no vendemos el café.\nMariana: Ya lo sé. Por eso me preocupa.\nA medianoche, en la cocina del café había luz: Vale estaba allí, con dos tintos.\nVale: ¿Y? ¿Bailaste mucho?\nTomás: Bailé sobre los pies de Mariana.\nVale puso música, le tomó la mano y contó despacio: uno, dos, tres. Esta vez, Tomás bailó bien.\nTomás: ¿En Medellín todos bailan así?\nVale: Todos, Tomás. Hasta mi abuela.",
+  "gloss": [
+    {
+      "es": "boleros",
+      "en": "boleros (slow, romantic love songs)"
+    },
+    {
+      "es": "sillones",
+      "en": "armchairs"
+    },
+    {
+      "es": "En el cuatro no bailas, Tomás. Descansas.",
+      "en": "On four you don't dance, Tomás. You rest."
+    },
+    {
+      "es": "Tomás terminaba contra la nevera",
+      "en": "Tomás ended up against the fridge"
+    },
+    {
+      "es": "seis cuadras",
+      "en": "six blocks"
+    },
+    {
+      "es": "señor puntual",
+      "en": "Mr Punctual"
+    },
+    {
+      "es": "terminó encima del pie de Mariana",
+      "en": "ended up on top of Mariana's foot"
+    },
+    {
+      "es": "A medianoche",
+      "en": "At midnight"
+    },
+    {
+      "es": "Bailé sobre los pies de Mariana.",
+      "en": "I danced on Mariana's feet."
+    },
+    {
+      "es": "Hasta mi abuela.",
+      "en": "Even my grandmother."
+    }
+  ],
+  "questions": [
+    {
+      "q": "How did the practice with the phone classes go?",
+      "options": [
+        "Badly: he went left instead of right and ended up against the fridge",
+        "Perfectly: he learned all three turns",
+        "He fell asleep",
+        "Simón learned the steps instead"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Mariana worried?",
+      "options": [
+        "Altamira paid in dollars and plans to open the hotel in March, as if the café were already theirs",
+        "Tomás arrived late",
+        "The seller wouldn't talk to her",
+        "Her feet hurt"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What changes when Vale dances with Tomás?",
+      "options": [
+        "She counts slowly and this time he dances well",
+        "He steps on her feet too",
+        "She refuses to dance",
+        "Hernando films them"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Quién baila en Medellín, según Vale?",
+      "options": [
+        "Todos, hasta su abuela",
+        "Solo los niños",
+        "Nadie",
+        "Solo su papá"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What time did the concert finish?",
+      "options": [
+        "Twenty past eight",
+        "Seven o'clock",
+        "Half past eight",
+        "Midnight"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many turns did Tomás learn, more or less?",
+      "options": [
+        "One",
+        "Three",
+        "Two",
+        "None"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Tomás say the phone class didn't prepare him?",
+      "options": [
+        "There was no other person in the phone class",
+        "The class was in English",
+        "The music was too fast",
+        "The phone battery died"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "In Medellín everybody dances, even Vale's grandmother, and Tomás knows exactly one turn. Soon there is a bus to catch, a whole family to meet, and nobody there will dance on four.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:donde-esta",
+    "c:mas-o-menos",
+    "c:perdon-disculpe",
+    "g:cause-result",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:ser-identity",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:ir-a-venir-de-place",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:telling-time"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:abuela",
+    "l:allí",
+    "l:aprender",
+    "l:bailar",
+    "l:bien",
+    "l:bolero",
+    "l:café",
+    "l:celular",
+    "l:clase",
+    "l:cocina",
+    "l:contar",
+    "l:correr",
+    "l:cuadra",
+    "l:decir",
+    "l:derecha",
+    "l:derecho",
+    "l:descansar",
+    "l:despacio",
+    "l:discoteca",
+    "l:dólar",
+    "l:dónde",
+    "l:efectivo",
+    "l:encima",
+    "l:esperar",
+    "l:estar",
+    "l:función",
+    "l:hablar",
+    "l:hora",
+    "l:hotel",
+    "l:ir",
+    "l:izquierda",
+    "l:luz",
+    "l:mano",
+    "l:marzo",
+    "l:medianoche",
+    "l:mesa",
+    "l:música",
+    "l:nevera",
+    "l:pagar",
+    "l:perdón",
+    "l:persona",
+    "l:pie",
+    "l:poner",
+    "l:preocupar",
+    "l:profesora",
+    "l:puntual",
+    "l:saber",
+    "l:salsa",
+    "l:ser",
+    "l:señor",
+    "l:sillón",
+    "l:terminar",
+    "l:tinto",
+    "l:tomar",
+    "l:vendedor",
+    "l:vender",
+    "l:vez",
+    "l:viernes",
+    "l:volver",
+    "l:vuelta"
+  ]
 }
