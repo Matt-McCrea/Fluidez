@@ -25613,5 +25613,1086 @@
       "l:poder",
       "l:venir"
     ]
+  },
+  {
+    "id": "u03-1049",
+    "es": "¿Tienes algo de comer? ¡Qué hambre!",
+    "en": "Do you (informal) have anything to eat? I'm so hungry!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:stem-boot",
+      "l:comer",
+      "l:hambre",
+      "l:qué",
+      "l:tener",
+      "p:exclamations-basic",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "g:stem-boot",
+      "p:exclamations-basic",
+      "p:indefinites-basic"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "exclamations and reactions",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1050",
+    "es": "¿Tienes frío? ¡Qué frío hace hoy!",
+    "en": "Are you (informal) cold? It's so cold today!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:present-er-ir",
+      "g:stem-boot",
+      "l:frío",
+      "l:hacer",
+      "l:hoy",
+      "l:qué",
+      "l:tener",
+      "p:exclamations-basic",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:stem-boot",
+      "p:exclamations-basic"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "exclamations and reactions",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1051",
+    "es": "¡Qué calor! ¿Hay cerveza fría?",
+    "en": "It's so hot! Is there any cold beer?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:hay-vs-esta",
+      "l:calor",
+      "l:cerveza",
+      "l:frío",
+      "l:qué",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "l:cerveza",
+      "p:exclamations-basic"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "exclamations and reactions",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1052",
+    "es": "¡Qué sueño! ¿Hay tinto?",
+    "en": "I'm so sleepy! Is there any black coffee?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:hay-vs-esta",
+      "l:qué",
+      "l:sueño",
+      "l:tinto",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "p:exclamations-basic"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "exclamations and reactions",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1053",
+    "es": "¡Qué bonito el lugar! ¿Cómo se llama?",
+    "en": "What a lovely place! What is it called?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "l:bonito",
+      "l:cómo",
+      "l:llamarse",
+      "l:lugar",
+      "l:qué",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "l:lugar",
+      "p:exclamations-basic"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "exclamations and reactions",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1054",
+    "es": "¡Qué bonita la fiesta! ¿Vienes con Vale?",
+    "en": "What a lovely party! Are you (informal) coming with Vale?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:bonito",
+      "l:fiesta",
+      "l:qué",
+      "l:venir",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "g:stem-boot",
+      "l:fiesta",
+      "l:venir",
+      "p:exclamations-basic"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "exclamations and reactions",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1055",
+    "es": "¡Qué cansado estoy! ¿Tienes algo de tomar?",
+    "en": "I'm so tired! Do you (informal) have anything to drink?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:estar-location-states",
+      "g:stem-boot",
+      "l:cansado",
+      "l:estar",
+      "l:qué",
+      "l:tener",
+      "l:tomar",
+      "p:exclamations-basic",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "g:stem-boot",
+      "p:exclamations-basic",
+      "p:indefinites-basic"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "exclamations and reactions",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1056",
+    "es": "¡Qué cansada estoy! ¿Y tú?",
+    "en": "I'm so tired! And you? (a woman speaking)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "l:cansado",
+      "l:estar",
+      "l:qué",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "p:exclamations-basic"
+    ],
+    "kind": "dialogue",
+    "unit": "u03",
+    "theme": "exclamations and reactions",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1057",
+    "es": "¿Hay algo de comer? ¡Qué hambre tengo!",
+    "en": "Is there anything to eat? I'm so hungry!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "c:tengo",
+      "g:hay-vs-esta",
+      "g:yo-irregular",
+      "l:comer",
+      "l:hambre",
+      "l:qué",
+      "l:tener",
+      "p:exclamations-basic",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "p:exclamations-basic",
+      "p:indefinites-basic"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "exclamations and reactions",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1058",
+    "es": "¿Alguien canta en la fiesta?",
+    "en": "Is anyone singing at the party?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:cantar",
+      "l:fiesta",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "l:cantar",
+      "l:fiesta",
+      "p:indefinites-basic"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "someone and something",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1059",
+    "es": "¿Alguien tiene hambre?",
+    "en": "Is anyone hungry?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:stem-boot",
+      "l:hambre",
+      "l:tener",
+      "p:indefinites-basic",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:stem-boot",
+      "p:indefinites-basic"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "someone and something",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1060",
+    "es": "Alguien necesita un tinto.",
+    "en": "Someone needs a black coffee.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:necesitar",
+      "l:tinto",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "p:indefinites-basic"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "someone and something",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1061",
+    "es": "Simón quiere algo de fruta.",
+    "en": "Simón wants some fruit.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:stem-boot",
+      "l:fruta",
+      "l:querer",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "g:stem-boot",
+      "l:fruta",
+      "p:indefinites-basic"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "someone and something",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1062",
+    "es": "¿Tomas algo, Hernando?",
+    "en": "Are you having anything, Hernando?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:tomar",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "p:indefinites-basic"
+    ],
+    "kind": "dialogue",
+    "unit": "u03",
+    "theme": "someone and something",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1063",
+    "es": "Mariana escribe algo.",
+    "en": "Mariana is writing something.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:escribir",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "p:indefinites-basic"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "someone and something",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1064",
+    "es": "Compro algo de comida.",
+    "en": "I'm buying some food.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:comida",
+      "l:comprar",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "l:comida",
+      "p:indefinites-basic"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "someone and something",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1065",
+    "es": "Alguien come pizza en el café.",
+    "en": "Someone is eating pizza in the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:café",
+      "l:comer",
+      "l:pizza",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "l:pizza",
+      "p:indefinites-basic"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "someone and something",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1066",
+    "es": "¿Qué tipo de comida te gusta cocinar?",
+    "en": "What kind of food do you (informal) like to cook?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gusta",
+      "g:gustar-basic",
+      "g:questions",
+      "l:cocinar",
+      "l:comida",
+      "l:gustar",
+      "l:qué",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "g:gustar-basic",
+      "g:questions",
+      "l:cocinar",
+      "l:comida",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "what kind of",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1067",
+    "es": "¿Qué tipo de deporte te gusta?",
+    "en": "What kind of sport do you (informal) like?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gusta",
+      "g:gustar-basic",
+      "g:questions",
+      "l:deporte",
+      "l:gustar",
+      "l:qué",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "g:gustar-basic",
+      "g:questions",
+      "l:deporte",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "what kind of",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1068",
+    "es": "¿Qué tipo de cerveza quiere usted?",
+    "en": "What kind of beer would you (polite) like?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:stem-boot",
+      "l:cerveza",
+      "l:querer",
+      "l:qué",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "g:questions",
+      "g:stem-boot",
+      "l:cerveza",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "what kind of",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1069",
+    "es": "¿Qué tipo de pizza hay hoy?",
+    "en": "What kind of pizza is there today?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:hay-vs-esta",
+      "g:questions",
+      "l:hoy",
+      "l:pizza",
+      "l:qué",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "g:questions",
+      "l:pizza",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "what kind of",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1070",
+    "es": "¿Qué tipo de fruta come Simón?",
+    "en": "What kind of fruit does Simón eat?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:questions",
+      "l:comer",
+      "l:fruta",
+      "l:qué",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "g:questions",
+      "l:fruta",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "what kind of",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1071",
+    "es": "¿Qué tipo de fiesta es?",
+    "en": "What kind of party is it?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:ser-identity",
+      "l:fiesta",
+      "l:qué",
+      "l:ser",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "g:questions",
+      "l:fiesta",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "what kind of",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1072",
+    "es": "¿Qué tipo de comida hace Vale?",
+    "en": "What kind of food does Vale make?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:questions",
+      "l:comida",
+      "l:hacer",
+      "l:qué",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "g:questions",
+      "l:comida",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "what kind of",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1073",
+    "es": "Me gusta todo tipo de fruta.",
+    "en": "I like all kinds of fruit.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gusta",
+      "g:gustar-basic",
+      "l:fruta",
+      "l:gustar",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "g:gustar-basic",
+      "l:fruta",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "what kind of",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1074",
+    "es": "No me gusta ese tipo de fiesta.",
+    "en": "I don't like that kind of party.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gusta",
+      "g:demonstratives",
+      "g:gustar-basic",
+      "l:fiesta",
+      "l:gustar",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "g:gustar-basic",
+      "l:fiesta",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "what kind of",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1075",
+    "es": "Me encanta este tipo de comida.",
+    "en": "I love this kind of food.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-encanta",
+      "g:gustar-full",
+      "l:comida",
+      "l:encantar",
+      "l:tipo",
+      "p:demonstratives-basic",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "l:comida",
+      "l:encantar",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "what kind of",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1076",
+    "es": "Tomás cocina todo tipo de pizza.",
+    "en": "Tomás cooks every kind of pizza.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:cocinar",
+      "l:pizza",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "l:cocinar",
+      "l:pizza",
+      "l:tipo",
+      "p:que-tipo-de"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "what kind of",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1077",
+    "es": "¿Es para Vale el chocolate?",
+    "en": "Is the hot chocolate for Vale?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:chocolate",
+      "l:ser",
+      "p:para-inf"
+    ],
+    "targets": [
+      "l:chocolate",
+      "p:para-inf"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "for someone",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1078",
+    "es": "¿Para quién es la pizza?",
+    "en": "Who is the pizza for?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:pizza",
+      "l:quién",
+      "l:ser",
+      "p:para-inf",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "l:pizza",
+      "p:para-inf"
+    ],
+    "kind": "dialogue",
+    "unit": "u03",
+    "theme": "for someone",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1079",
+    "es": "¿Esta fruta es para Simón?",
+    "en": "Is this fruit for Simón?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:fruta",
+      "l:ser",
+      "p:demonstratives-basic",
+      "p:para-inf"
+    ],
+    "targets": [
+      "l:fruta",
+      "p:para-inf"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "for someone",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1080",
+    "es": "¿Quién trabaja para Altamira?",
+    "en": "Who works for Altamira?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:questions",
+      "l:quién",
+      "l:trabajar",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:questions",
+      "l:trabajar",
+      "p:para-inf"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "for someone",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1081",
+    "es": "¿Tienes algo para Hernando?",
+    "en": "Do you (informal) have something for Hernando?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:stem-boot",
+      "l:tener",
+      "p:indefinites-basic",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:stem-boot",
+      "p:indefinites-basic",
+      "p:para-inf"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "for someone",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1082",
+    "es": "¿Hoy es martes o miércoles?",
+    "en": "Is today Tuesday or Wednesday?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:hoy",
+      "l:martes",
+      "l:miércoles",
+      "l:ser",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "l:martes",
+      "l:miércoles",
+      "p:days-el-lunes"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "days of the week",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1083",
+    "es": "¿Vas al cine el sábado?",
+    "en": "Are you (informal) going to the cinema on Saturday?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:cine",
+      "l:ir",
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
+    ],
+    "targets": [
+      "g:ir-a-plans",
+      "l:cine",
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:ir-a-venir-de-place"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "days of the week",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1084",
+    "es": "¿Qué hacen ustedes los domingos?",
+    "en": "What do you all do on Sundays?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:questions",
+      "l:domingo",
+      "l:hacer",
+      "l:qué",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:questions",
+      "l:domingo",
+      "p:days-el-lunes"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "days of the week",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1085",
+    "es": "¿Cocinas los lunes o los martes?",
+    "en": "Do you (informal) cook on Mondays or on Tuesdays?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:cocinar",
+      "l:lunes",
+      "l:martes",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "l:cocinar",
+      "l:lunes",
+      "l:martes",
+      "p:days-el-lunes"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "days of the week",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1086",
+    "es": "¿Hay clase el miércoles?",
+    "en": "Is there class on Wednesday?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "l:clase",
+      "l:miércoles",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "l:clase",
+      "l:miércoles",
+      "p:days-el-lunes"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "days of the week",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1087",
+    "es": "¿Tomás trabaja los sábados?",
+    "en": "Does Tomás work on Saturdays?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:sábado",
+      "l:trabajar",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "l:sábado",
+      "l:trabajar",
+      "p:days-el-lunes"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "days of the week",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1088",
+    "es": "¿Quieres ver una película el domingo?",
+    "en": "Do you (informal) want to watch a film on Sunday?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:domingo",
+      "l:película",
+      "l:querer",
+      "l:ver",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:domingo",
+      "l:película",
+      "p:days-el-lunes"
+    ],
+    "kind": "question",
+    "unit": "u03",
+    "theme": "days of the week",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1089",
+    "es": "Los jueves hay música en el café.",
+    "en": "On Thursdays there is music in the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "l:café",
+      "l:jueves",
+      "l:música",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "l:jueves",
+      "l:música",
+      "p:days-el-lunes"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "days of the week",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1090",
+    "es": "El martes no trabajo.",
+    "en": "On Tuesday I don't work.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:martes",
+      "l:trabajar",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "l:martes",
+      "l:trabajar",
+      "p:days-el-lunes"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "days of the week",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1091",
+    "es": "Los viernes salgo con Vale.",
+    "en": "On Fridays I go out with Vale.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hago-salgo-vengo",
+      "g:gender-articles",
+      "g:yo-irregular",
+      "l:salir",
+      "l:viernes",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "c:hago-salgo-vengo",
+      "l:salir",
+      "l:viernes",
+      "p:days-el-lunes"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "days of the week",
+    "source": "gen"
+  },
+  {
+    "id": "u03-1092",
+    "es": "Los lunes caminamos al café.",
+    "en": "On Mondays we walk to the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:café",
+      "l:caminar",
+      "l:lunes",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "l:caminar",
+      "l:lunes",
+      "p:days-el-lunes"
+    ],
+    "kind": "statement",
+    "unit": "u03",
+    "theme": "days of the week",
+    "source": "gen"
   }
 ]
