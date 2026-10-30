@@ -1,0 +1,245 @@
+{
+  "id": "sc-u16-g",
+  "unit": "u16",
+  "title": "A dress for Saturday",
+  "brief": "You're Tomás. Mariana has an invitation to a salsa night on Saturday and has pulled you into a dress shop to help her choose. Give her an honest opinion, help her decide and sort out the money. She's your friend, so use tú.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, necesito un vestido para el sábado. Mira este rojo. ¿Cómo te parece?",
+      "npcEn": "Tomás, I need a dress for Saturday. Look at this red one. What do you think of it?",
+      "intent": "Say it seems very elegant to you, and ask if she's going to try it on.",
+      "accept": [
+        "Me parece muy elegante. ¿Te lo vas a probar?",
+        "Me parece muy elegante. ¿Vas a probártelo?",
+        "A mí me parece muy elegante. ¿Te lo vas a probar?"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "parecer",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "say how it seems to you with me parece"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Listo, aquí estoy. ¿Cómo me queda?",
+      "npcEn": "OK, here I am. How does it look on me?",
+      "intent": "Say it's big on her.",
+      "accept": [
+        "Te queda grande.",
+        "Uy, te queda grande.",
+        "Me parece que te queda grande."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "quedar",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "for how clothes fit, use te queda"
+        }
+      ],
+      "focus": "g:parecer-quedar",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Grande? Uf. Bueno, también tienen uno azul y uno negro. ¿Cuál es el más elegante?",
+      "npcEn": "Big? Ugh. Well, they also have a blue one and a black one. Which one is the most elegant?",
+      "intent": "Say the blue one is the most elegant in the shop.",
+      "accept": [
+        "El azul. Es el más elegante de la tienda.",
+        "Me gusta el azul. Es el más elegante de la tienda.",
+        "Para mí, el azul. Es el más elegante de la tienda."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "el más elegante",
+          "label": "the most elegant is el más elegante"
+        },
+        {
+          "type": "containsWord",
+          "word": "el azul",
+          "label": "the blue one is el azul, no noun needed"
+        }
+      ],
+      "focus": "g:superlatives",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Tienes razón. Me queda muy bien y tiene descuento. Pero no tengo plata. Me pagan el viernes.",
+      "npcEn": "You're right. It fits me really well and it's on sale. But I don't have any money. They pay me on Friday.",
+      "intent": "Tell her you'll buy it for her, and she can pay you back on Saturday.",
+      "accept": [
+        "Tranquila, yo te lo compro. Me lo pagas el sábado.",
+        "Yo te lo compro y me lo pagas el sábado.",
+        "Tranquila. Yo te lo compro. Me lo pagas el sábado."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "te lo compro",
+          "label": "I'll buy it for you is te lo compro: te before lo"
+        }
+      ],
+      "focus": "g:double-pronouns",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Gracias, Tomás. Mira, tengo otra invitación para un bar de salsa el sábado. ¿Quieres venir?",
+      "npcEn": "Thanks, Tomás. Look, I have another invitation to a salsa bar on Saturday. Do you want to come?",
+      "intent": "Say yes, of course, but you dance salsa very badly.",
+      "accept": [
+        "¡Sí, claro! Pero bailo salsa muy mal.",
+        "Claro que sí. Pero bailo salsa muy mal.",
+        "Sí, me encanta la idea. Pero bailo muy mal."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "bailar",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I dance is bailo"
+        }
+      ],
+      "focus": "g:present-ar",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Mariana: ¡Mejor! Yo tampoco bailo bien.\nVendedora: Son ciento cincuenta mil, señor. ¿Tarjeta o efectivo?",
+      "npcEn": "Mariana: Even better! I don't dance well either.\nShop assistant: That's one hundred and fifty thousand, sir. Card or cash?",
+      "intent": "Tell the shop assistant cash, and say it's a present for her (Mariana).",
+      "accept": [
+        "En efectivo. Es un regalo para ella.",
+        "Efectivo, por favor. Es un regalo para ella.",
+        "En efectivo, señora. Es un regalo para ella."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "efectivo",
+          "label": "cash is efectivo"
+        }
+      ],
+      "focus": "c:tarjeta-o-efectivo",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:me-encanta",
+    "c:me-gusta",
+    "c:oye-mira",
+    "c:por-favor",
+    "c:tarjeta-o-efectivo",
+    "c:tengo",
+    "c:tienes",
+    "c:tranquilo",
+    "c:voy-vas",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:aquí",
+    "l:azul",
+    "l:bailar",
+    "l:bar",
+    "l:bien",
+    "l:bueno",
+    "l:claro",
+    "l:comprar",
+    "l:cuál",
+    "l:cómo",
+    "l:descuento",
+    "l:efectivo",
+    "l:elegante",
+    "l:encantar",
+    "l:estar",
+    "l:favor",
+    "l:grande",
+    "l:gustar",
+    "l:idea",
+    "l:invitación",
+    "l:ir",
+    "l:irse",
+    "l:listo",
+    "l:mal",
+    "l:mejor",
+    "l:mirar",
+    "l:necesitar",
+    "l:negro",
+    "l:pagar",
+    "l:parar",
+    "l:parecer",
+    "l:plata",
+    "l:probarse",
+    "l:quedar",
+    "l:querer",
+    "l:razón",
+    "l:regalo",
+    "l:rojo",
+    "l:salsa",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sábado",
+    "l:tarjeta",
+    "l:tener",
+    "l:tienda",
+    "l:tranquilo",
+    "l:vendedor",
+    "l:venir",
+    "l:vestido",
+    "l:viernes",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:el-azul",
+    "p:el-rojo-la-grande",
+    "p:hedge-knowledge",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:quantifiers-basic",
+    "p:talla-numero",
+    "p:tambien-tampoco",
+    "p:tener-razon"
+  ]
+}
