@@ -1,0 +1,182 @@
+{
+  "node": "p:me-contaron-que",
+  "hook": {
+    "line": "In Bogotá nobody asks \"Is it true?\" straight out. Tomás hears the news about Mariana from a regular and answers the polite way: state what you heard, and let the other person confirm.",
+    "es": "Me contaron que Mariana escribe sobre Altamira.",
+    "en": "I heard Mariana is writing about Altamira."
+  },
+  "examples": [
+    {
+      "es": "Me contaron que te vas para España.",
+      "en": "I heard you're off to Spain."
+    },
+    {
+      "es": "Dicen que hay novio nuevo.",
+      "en": "Word is there's a new boyfriend."
+    },
+    {
+      "es": "Oí que te ascendieron.",
+      "en": "I heard you got promoted."
+    },
+    {
+      "es": "Fin de semana romántico, ¿ah?",
+      "en": "Romantic weekend, huh?"
+    },
+    {
+      "es": "Me contaron que Vale se va a Medellín.",
+      "en": "I heard Vale is leaving for Medellín."
+    },
+    {
+      "es": "Dicen que el café va a cerrar.",
+      "en": "Word is the café is going to close."
+    }
+  ],
+  "rule": "To check a rumour without asking, say what you heard: *Me contaron que…*, *Dicen que…*, *Oí que…* + a normal statement. The other person can confirm, deny or laugh, and nobody is cornered.\n\n*Me contaron* is the everyday past in Latin America (Spain says *me han contado*).\n\nOr skip the verb: say the news and add *¿ah?* or *¿eh?*, like English \"huh?\". Keep it light: with a straight face it can sound like an accusation.",
+  "smallPrint": "Teachers call this an indirect question: you fish for information with a statement instead of a question.",
+  "readAndPick": [
+    {
+      "es": "Me contaron que Vale se va a Medellín.",
+      "options": [
+        "I told someone Vale is leaving for Medellín.",
+        "Someone told me Vale is leaving for Medellín.",
+        "Vale told me she is leaving for Medellín."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dicen que el café va a cerrar.",
+      "options": [
+        "They say the café is going to close.",
+        "I say the café is going to close.",
+        "He says the café is going to close."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Oí que te ascendieron.",
+      "options": [
+        "I heard I got promoted.",
+        "I heard she got promoted.",
+        "I heard you got promoted."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Fin de semana romántico, ¿ah?",
+      "options": [
+        "Is it a romantic weekend?",
+        "Romantic weekend, huh?",
+        "What a romantic weekend."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le conté que me voy para España.",
+      "options": [
+        "I told him I'm off to Spain.",
+        "He told me he's off to Spain.",
+        "They told me I'm off to Spain."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me contó que Hernando ya no maneja.",
+      "options": [
+        "They told me Hernando no longer drives.",
+        "I told him Hernando no longer drives.",
+        "She told me Hernando no longer drives."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Dicen que hay novio nuevo.",
+      "options": [
+        "I heard you have a new boyfriend.",
+        "Word is there's a new boyfriend.",
+        "They asked if there's a new boyfriend."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nuevo celular, ¿eh?",
+      "options": [
+        "Do you want a new phone?",
+        "I have a new phone.",
+        "New phone, huh?"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *contaron* or *conté*: Me ___ que te vas para España. Type the whole sentence.",
+      "answer": "Me contaron que te vas para España.",
+      "accept": [],
+      "why": "*Me contaron* means people told me; *conté* would be I who told."
+    },
+    {
+      "prompt": "Choose *Dicen* or *Digo*: ___ que hay novio nuevo. Type the whole sentence.",
+      "answer": "Dicen que hay novio nuevo.",
+      "accept": [],
+      "why": "*Dicen* is the vague \"they say\" that carries the rumour."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I heard you got promoted.",
+      "answer": "Oí que te ascendieron.",
+      "accept": [
+        "Me contaron que te ascendieron."
+      ],
+      "why": "*Oí que* + the news, with no question needed."
+    },
+    {
+      "prompt": "Type in Spanish: Word is the café is going to close.",
+      "answer": "Dicen que el café va a cerrar.",
+      "accept": [
+        "Cuentan que el café va a cerrar."
+      ],
+      "why": "*Dicen que* passes on what everyone is saying."
+    },
+    {
+      "prompt": "Type in Spanish: Romantic weekend, huh?",
+      "answer": "Fin de semana romántico, ¿ah?",
+      "accept": [
+        "Fin de semana romántico, ¿eh?"
+      ],
+      "why": "The news plus a tag, *¿ah?*, invites the other person to say more."
+    },
+    {
+      "prompt": "Start with *Me contaron que*: *Vale se va a Medellín.*",
+      "answer": "Me contaron que Vale se va a Medellín.",
+      "accept": [],
+      "why": "*Me contaron que* is followed by the news exactly as you would state it."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I heard you are going to Medellín.",
+      "answer": "Me contaron que te vas para Medellín.",
+      "accept": [
+        "Me contaron que te vas a Medellín.",
+        "Oí que te vas para Medellín.",
+        "Oí que te vas a Medellín."
+      ],
+      "why": "*Te vas* speaks to your friend, after *que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me han contado que te vas para España.",
+      "right": "Me contaron que te vas para España.",
+      "why": "Almost. In Latin America the simple past is the everyday choice."
+    },
+    {
+      "wrong": "Me contaron te vas para España.",
+      "right": "Me contaron que te vas para España.",
+      "why": "Almost. Spanish needs *que* before the news, even when English drops \"that\"."
+    },
+    {
+      "wrong": "Dicen de que hay novio nuevo.",
+      "right": "Dicen que hay novio nuevo.",
+      "why": "Almost. *Decir* takes *que* directly, with no *de*."
+    }
+  ],
+  "personal": "Pass on a bit of news you heard this week: *Me contaron que…*"
+}

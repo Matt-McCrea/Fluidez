@@ -1,0 +1,179 @@
+{
+  "node": "p:encontrarse-hallarse",
+  "hook": {
+    "line": "Tomás is reading the news about Altamira. In a report, nobody simply \"is\" somewhere: people and things *se encuentran* there. You will meet this in newspapers, announcements and polite phone calls.",
+    "es": "El dueño de Altamira no se encuentra en el país.",
+    "en": "The owner of Altamira is not in the country."
+  },
+  "examples": [
+    {
+      "es": "La cantante se encuentra fuera del país.",
+      "en": "The singer is out of the country."
+    },
+    {
+      "es": "El paciente se encuentra estable.",
+      "en": "The patient is in a stable condition."
+    },
+    {
+      "es": "El edificio se halla en el centro histórico.",
+      "en": "The building is located in the historic centre."
+    },
+    {
+      "es": "¿Dónde se encuentra la sede del periódico?",
+      "en": "Where is the newspaper's headquarters located?"
+    },
+    {
+      "es": "El director no se encuentra en este momento.",
+      "en": "The director is not available at the moment."
+    },
+    {
+      "es": "¿Se encuentra bien, señora?",
+      "en": "Are you all right, ma'am? (formal)"
+    }
+  ],
+  "rule": "In news reports, notices and polite speech, Spanish often swaps *estar* for *encontrarse*: *se encuentra* + a place or a condition. *Hallarse* means the same and is more literary.\n\nIt says nothing new. It only sounds formal.\n\n*Se* stays and the verb agrees with the thing: *se encuentra* (one), *se encuentran* (several). Negative: *no se encuentra*. It also works for yourself: *me encuentro bien*.\n\nWith friends, just say *está*. Buildings can also be *situado* or *ubicado*.",
+  "smallPrint": "Teachers call this a formal equivalent of *estar*: a reflexive verb used for location or state.",
+  "readAndPick": [
+    {
+      "es": "La cantante se encuentra fuera del país.",
+      "options": [
+        "The singers are out of the country.",
+        "I am out of the country.",
+        "The singer is out of the country."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los documentos se hallan en la oficina.",
+      "options": [
+        "The documents are in the office.",
+        "The document is in the office.",
+        "The documents were in the office."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El director no se encuentra en este momento.",
+      "options": [
+        "The director is available at the moment.",
+        "The director is not available at the moment.",
+        "The director will not be available."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde se encuentra la sede del periódico?",
+      "options": [
+        "The newspaper's headquarters is downtown.",
+        "Where are the newspaper's headquarters?",
+        "Where is the newspaper's headquarters located?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me encuentro bien, gracias.",
+      "options": [
+        "I am fine, thank you.",
+        "He is fine, thank you.",
+        "We are fine, thank you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los cantantes se encuentran fuera del país.",
+      "options": [
+        "The singer is out of the country.",
+        "The singers are out of the country.",
+        "The singers were out of the country."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Se encuentra bien, señora?",
+      "options": [
+        "Am I all right, ma'am?",
+        "Is he all right, ma'am?",
+        "Are you all right, ma'am? (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El paciente no se encuentra grave.",
+      "options": [
+        "The patient is in a serious condition.",
+        "The patient is not in a serious condition.",
+        "The patients are not in a serious condition."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *encuentra* or *encuentran*: La cantante se ___ fuera del país. Type the whole sentence.",
+      "answer": "La cantante se encuentra fuera del país.",
+      "accept": [],
+      "why": "One singer, so the verb stays singular."
+    },
+    {
+      "prompt": "Choose *halla* or *hallan*: Los documentos se ___ en la oficina. Type the whole sentence.",
+      "answer": "Los documentos se hallan en la oficina.",
+      "accept": [],
+      "why": "Several documents, so the verb takes *-n*."
+    },
+    {
+      "prompt": "Type in Spanish: The patient is in a stable condition.",
+      "answer": "El paciente se encuentra estable.",
+      "accept": [
+        "El paciente está estable."
+      ],
+      "why": "*Se encuentra* + a condition is the formal way to say how someone is."
+    },
+    {
+      "prompt": "Type in Spanish: Where is the newspaper's headquarters located?",
+      "answer": "¿Dónde se encuentra la sede del periódico?",
+      "accept": [
+        "¿Dónde se halla la sede del periódico?"
+      ],
+      "why": "The question word goes first and *se encuentra* follows."
+    },
+    {
+      "prompt": "Make it negative: *El director se encuentra en la oficina.*",
+      "answer": "El director no se encuentra en la oficina.",
+      "accept": [],
+      "why": "*No* goes right before *se*."
+    },
+    {
+      "prompt": "Make it plural: *El documento se encuentra en la oficina.*",
+      "answer": "Los documentos se encuentran en la oficina.",
+      "accept": [],
+      "why": "The thing becomes plural, so the verb gets *-n* too."
+    },
+    {
+      "prompt": "Type in Spanish, to a woman you do not know: Are you all right, ma'am?",
+      "answer": "¿Se encuentra bien, señora?",
+      "accept": [
+        "¿Señora, se encuentra bien?",
+        "¿Usted se encuentra bien, señora?"
+      ],
+      "why": "*Se encuentra* is the polite form for *usted*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El director encuentra en la oficina.",
+      "right": "El director se encuentra en la oficina.",
+      "why": "Almost. Without *se*, *encuentra* means he finds something."
+    },
+    {
+      "wrong": "Los documentos se encuentra en la oficina.",
+      "right": "Los documentos se encuentran en la oficina.",
+      "why": "Almost. The verb agrees with what is located: several documents, *-n*."
+    },
+    {
+      "wrong": "El edificio se halla el centro histórico.",
+      "right": "El edificio se halla en el centro histórico.",
+      "why": "Almost. Like *estar*, it still needs *en* before a place."
+    }
+  ],
+  "personal": "Tell a stranger where a place is, in a formal voice: *El museo se encuentra en…*"
+}
