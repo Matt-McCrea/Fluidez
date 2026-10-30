@@ -1,0 +1,184 @@
+{
+  "id": "sc-u01-d",
+  "unit": "u01",
+  "title": "Knocking on the glass",
+  "brief": "You're Tomás, inside your grandmother's closed café on your first morning. An older man is tapping on the window and wants his coffee. He's older than you and a stranger, so use usted. Tell him who you are, find out about him, and send him off happy.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Buenos días! Disculpe, ¿usted habla español?",
+      "npcEn": "Good morning! Excuse me, do you speak Spanish?",
+      "intent": "Say good morning, and tell him yes, you speak Spanish.",
+      "accept": [
+        "Buenos días. Sí, hablo español.",
+        "Hola, buenos días, señor. Sí, hablo español.",
+        "Sí, hablo español. Buenos días."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "hablar",
+          "tense": "presente",
+          "person": "yo",
+          "label": "say I speak (hablo)"
+        }
+      ],
+      "focus": "g:present-ar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¡Ah, bueno! ¿Usted es cliente de Rosa?",
+      "npcEn": "Oh, good! Are you one of Rosa's customers?",
+      "intent": "Tell him no: you're Tomás, from Toronto.",
+      "accept": [
+        "No, soy Tomás. Soy de Toronto.",
+        "No, señor. Soy Tomás, de Toronto.",
+        "No. Soy Tomás y soy de Toronto."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "containsWord",
+          "word": "Tomás",
+          "label": "say your name, Tomás"
+        }
+      ],
+      "focus": "g:ser-identity",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Tomás? ¿El Tomás de Rosa? ¡Mucho gusto! Yo soy Hernando, un amigo de Rosa.",
+      "npcEn": "Tomás? Rosa's Tomás? Nice to meet you! I'm Hernando, a friend of Rosa's.",
+      "intent": "Say it's nice to meet him, and ask him if he's a teacher. Remember: usted.",
+      "accept": [
+        "Mucho gusto, señor. ¿Usted es profesor?",
+        "Mucho gusto. ¿Es usted profesor?",
+        "Mucho gusto, Hernando. ¿Es profesor?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "eres"
+          ],
+          "label": "use usted (es), not tú (eres)"
+        }
+      ],
+      "focus": "g:ser-identity",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Profesor? ¡No, señor! ¿Usted es médico, Tomás?",
+      "npcEn": "A teacher? No, sir! Are you a doctor, Tomás?",
+      "intent": "Say no, you're not a doctor: you're an engineer.",
+      "accept": [
+        "No, señor. No soy médico. Soy ingeniero.",
+        "No soy médico, señor. Soy ingeniero.",
+        "No, soy ingeniero."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "un ingeniero"
+          ],
+          "label": "a job after soy takes no un"
+        }
+      ],
+      "focus": "p:ser-profession-no-article",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Ingeniero? ¡Ah, bueno! Entonces, un tinto, por favor.",
+      "npcEn": "An engineer? Oh, good! So, a coffee, please.",
+      "intent": "Tell him you're sorry: there's no coffee, but there is water.",
+      "accept": [
+        "Qué pena, señor. No hay tinto. Hay agua.",
+        "Qué pena, no hay tinto, pero hay agua.",
+        "Perdón, señor. No hay tinto, pero hay agua."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "containsWord",
+          "word": "agua",
+          "label": "offer him water (agua)"
+        }
+      ],
+      "focus": "c:hay",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¿No hay tinto? ¡Ay, Rosa! Bueno, agua, por favor. Gracias, Tomás.",
+      "npcEn": "No coffee? Oh, Rosa! Fine, water, please. Thank you, Tomás.",
+      "intent": "Say you're welcome, and that you're at his service.",
+      "accept": [
+        "De nada, señor. A la orden.",
+        "A la orden, señor.",
+        "De nada. ¡A la orden, Hernando!"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "orden",
+          "label": "say a la orden"
+        }
+      ],
+      "focus": "c:a-la-orden",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-la-orden",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:mucho-gusto",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:que-pena",
+    "c:soy-de",
+    "g:commands-usted",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:present-ar",
+    "g:ser-identity",
+    "l:agua",
+    "l:amigo",
+    "l:bueno",
+    "l:cliente",
+    "l:disculpar",
+    "l:día",
+    "l:español",
+    "l:favor",
+    "l:gusto",
+    "l:hablar",
+    "l:ingeniero",
+    "l:médico",
+    "l:orden",
+    "l:pena",
+    "l:perdón",
+    "l:profesor",
+    "l:qué",
+    "l:ser",
+    "l:señor",
+    "l:tinto",
+    "p:ser-profession-no-article"
+  ]
+}
