@@ -1,0 +1,183 @@
+{
+ "node": "p:sencillamente",
+ "hook": {
+  "line": "Sometimes \"unfair\" isn't strong enough, and you want to close the door on every kinder judgement. That is the job of one word placed before the adjective.",
+  "es": "La reseña es sencillamente injusta.",
+  "en": "The review is simply unfair."
+ },
+ "examples": [
+  {
+   "es": "Su oferta es sencillamente inaceptable.",
+   "en": "Their offer is simply unacceptable."
+  },
+  {
+   "es": "La torta de Vale es sencillamente deliciosa.",
+   "en": "Vale's cake is simply delicious."
+  },
+  {
+   "es": "No es una reseña, es sencillamente un insulto.",
+   "en": "It's not a review, it's simply an insult."
+  },
+  {
+   "es": "Simplemente no puedo aceptar eso.",
+   "en": "I simply can't accept that."
+  },
+  {
+   "es": "Vine simplemente a saludar.",
+   "en": "I just came to say hello."
+  },
+  {
+   "es": "Mariana es sencillamente brillante.",
+   "en": "Mariana is simply brilliant."
+  }
+ ],
+ "rule": "*Sencillamente* and *simplemente* both mean simply. Put one before an adjective and you rule out every other judgement: not \"a bit unfair\", just unfair, full stop. It works for praise too: *sencillamente deliciosa*.\nThe same word can also mean just or only: *Vine simplemente a saludar*.\nWatch the difference with the plain adjective: *La receta es sencilla* means the recipe is easy, while *La receta es sencillamente perfecta* means it is perfect, no argument.",
+ "smallPrint": "Teachers call this an intensifying or restrictive adverb; it limits the sentence to one judgement.",
+ "readAndPick": [
+  {
+   "es": "La receta es sencilla.",
+   "options": [
+    "The recipe is easy.",
+    "The recipe is simply perfect."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "La receta es sencillamente perfecta.",
+   "options": [
+    "The recipe is easy.",
+    "The recipe is simply perfect."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Su oferta es sencillamente inaceptable.",
+   "options": [
+    "Their offer is unacceptable.",
+    "Their offer is simply unacceptable.",
+    "Their offer is almost unacceptable."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "La reseña es casi injusta.",
+   "options": [
+    "The review is simply unfair.",
+    "The review is almost unfair.",
+    "The review is unfair."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Simplemente no puedo aceptar eso.",
+   "options": [
+    "I almost can't accept that.",
+    "I can accept that easily.",
+    "I simply can't accept that."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Vine simplemente a saludar.",
+   "options": [
+    "I came to say goodbye.",
+    "I just came to say hello.",
+    "I came to say hello again."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "No es una reseña, es sencillamente un insulto.",
+   "options": [
+    "It's almost an insult, not a review.",
+    "It's simply an insult, not a review.",
+    "It's an easy insult, not a review."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Es casi un insulto.",
+   "options": [
+    "It's simply an insult.",
+    "It's almost an insult."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *sencilla* or *sencillamente* and type the whole sentence: La reseña es ___ injusta.",
+   "answer": "La reseña es sencillamente injusta.",
+   "accept": [
+    "La reseña es simplemente injusta."
+   ],
+   "why": "Before an adjective, the *-mente* word is the one that means simply."
+  },
+  {
+   "prompt": "Type in Spanish: The offer is simply unacceptable.",
+   "answer": "La oferta es sencillamente inaceptable.",
+   "accept": [
+    "La oferta es simplemente inaceptable."
+   ],
+   "why": "*Sencillamente* goes right before the adjective."
+  },
+  {
+   "prompt": "Type in Spanish: I simply can't accept that.",
+   "answer": "Simplemente no puedo aceptar eso.",
+   "accept": [
+    "Sencillamente no puedo aceptar eso."
+   ],
+   "why": "It opens the sentence and leaves no room for exceptions."
+  },
+  {
+   "prompt": "Add *sencillamente* before the adjective and type the whole sentence: *La torta de Vale es deliciosa.*",
+   "answer": "La torta de Vale es sencillamente deliciosa.",
+   "accept": [
+    "La torta de Vale es simplemente deliciosa."
+   ],
+   "why": "It works for praise as well as complaints."
+  },
+  {
+   "prompt": "Type in Spanish: I just came to say hello.",
+   "answer": "Vine simplemente a saludar.",
+   "accept": [
+    "Vine sencillamente a saludar."
+   ],
+   "why": "Here *simplemente* means just, with no other reason."
+  },
+  {
+   "prompt": "Type in Spanish: It's not a review, it's simply an insult.",
+   "answer": "No es una reseña, es sencillamente un insulto.",
+   "accept": [
+    "No es una reseña, es simplemente un insulto."
+   ],
+   "why": "*Sencillamente* rules out any milder word than insult."
+  },
+  {
+   "prompt": "Type in Spanish: Mariana is simply brilliant.",
+   "answer": "Mariana es sencillamente brillante.",
+   "accept": [
+    "Mariana es simplemente brillante."
+   ],
+   "why": "*Es sencillamente* plus the adjective says it is the only fair word."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "La receta es sencilla perfecta.",
+   "right": "La receta es sencillamente perfecta.",
+   "why": "*Sencilla* means easy; to say simply perfect you need the *-mente* word."
+  },
+  {
+   "wrong": "Su oferta es sencilamente inaceptable.",
+   "right": "Su oferta es sencillamente inaceptable.",
+   "why": "Keep both *l*s: *sencillo*, *sencilla*, *sencillamente*."
+  },
+  {
+   "wrong": "Su oferta es simple inaceptable.",
+   "right": "Su oferta es simplemente inaceptable.",
+   "why": "*Simple* is an adjective; the word for simply is *simplemente*."
+  }
+ ],
+ "personal": "Finish with something you find simply perfect or simply unacceptable, using *sencillamente* or *simplemente*."
+}

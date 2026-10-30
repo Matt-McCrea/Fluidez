@@ -1,0 +1,220 @@
+{
+ "node": "g:evaluative-adverbs",
+ "hook": {
+  "line": "A critic who only says what happened is a reporter. Tomás is about to write a review in his own voice, so he needs a way to say what he *thinks* of what happened, in one word at the front of the sentence.",
+  "es": "Sinceramente, no sé qué decir.",
+  "en": "Honestly, I don't know what to say."
+ },
+ "examples": [
+  {
+   "es": "Lamentablemente, el café cerró.",
+   "en": "Sadly, the café closed."
+  },
+  {
+   "es": "Francamente, no me sorprende.",
+   "en": "Frankly, I'm not surprised."
+  },
+  {
+   "es": "Por suerte, nadie salió herido.",
+   "en": "Luckily, nobody was hurt."
+  },
+  {
+   "es": "Sinceramente, la reseña me pareció injusta.",
+   "en": "Honestly, the review seemed unfair to me."
+  },
+  {
+   "es": "Afortunadamente, Vale llegó a tiempo.",
+   "en": "Fortunately, Vale arrived on time."
+  },
+  {
+   "es": "Tomás habló sinceramente.",
+   "en": "Tomás spoke sincerely."
+  },
+  {
+   "es": "Sinceramente, no me gustó la obra.",
+   "en": "Honestly, I didn't like the play."
+  },
+  {
+   "es": "Vale respondió francamente.",
+   "en": "Vale answered frankly."
+  }
+ ],
+ "rule": "Some *-mente* words don't describe the action. They show how *you* feel about the whole sentence. Put one first, then a comma:\n*Lamentablemente,* (sadly)\n*Afortunadamente,* or *Por suerte,* (luckily)\n*Francamente,* or *Sinceramente,* (frankly, honestly)\nCompare *Tomás habló sinceramente* (how he spoke) with *Sinceramente, no me gustó la obra* (what I honestly think). In English you hear a pause; in Spanish you see the comma and the first position.\n*Por suerte* is two words and never takes *-mente*. The others are the *-mente* words you already know, built on the feminine form.",
+ "smallPrint": "Teachers call these sentence adverbs, or evaluative adverbs, because they evaluate the whole statement.",
+ "readAndPick": [
+  {
+   "es": "Lamentablemente, el café cerró.",
+   "options": [
+    "The café closed sadly.",
+    "Sadly, the café closed."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Vale respondió francamente.",
+   "options": [
+    "Frankly, Vale answered.",
+    "Vale answered frankly."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Francamente, Vale respondió bien.",
+   "options": [
+    "Frankly, Vale answered well.",
+    "Vale answered frankly and well."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Por suerte, nadie salió herido.",
+   "options": [
+    "Unfortunately, nobody was hurt.",
+    "Honestly, nobody was hurt.",
+    "Luckily, nobody was hurt."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Afortunadamente, Vale llegó a tiempo.",
+   "options": [
+    "Fortunately, Vale arrived on time.",
+    "Sadly, Vale arrived on time.",
+    "Frankly, Vale arrived on time."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Lamentablemente, no tengo tiempo.",
+   "options": [
+    "Luckily, I have no time.",
+    "Frankly, I have no time.",
+    "Sadly, I have no time."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Sinceramente, no me gustó la obra.",
+   "options": [
+    "Sadly, I didn't like the play.",
+    "Honestly, I didn't like the play.",
+    "Luckily, I didn't like the play."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Francamente, no me sorprende.",
+   "options": [
+    "Luckily, I'm not surprised.",
+    "Sadly, I'm not surprised.",
+    "Frankly, I'm not surprised."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Mariana habló claramente.",
+   "options": [
+    "Mariana spoke clearly.",
+    "Clearly, Mariana spoke."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Por suerte, Mariana estaba en el café.",
+   "options": [
+    "Sadly, Mariana was in the café.",
+    "Luckily, Mariana was in the café."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *Lamentable* or *Lamentablemente* and type the whole sentence: ___, el café cerró.",
+   "answer": "Lamentablemente, el café cerró.",
+   "accept": [
+    "Lamentablemente el café cerró."
+   ],
+   "why": "A comment on the whole sentence takes the *-mente* word."
+  },
+  {
+   "prompt": "Type in Spanish: Sadly, I have no time.",
+   "answer": "Lamentablemente, no tengo tiempo.",
+   "accept": [
+    "Lamentablemente no tengo tiempo."
+   ],
+   "why": "*Lamentablemente* goes first, then a comma."
+  },
+  {
+   "prompt": "Type in Spanish: Luckily, Vale arrived on time.",
+   "answer": "Por suerte, Vale llegó a tiempo.",
+   "accept": [
+    "Por suerte Vale llegó a tiempo.",
+    "Afortunadamente, Vale llegó a tiempo.",
+    "Afortunadamente Vale llegó a tiempo."
+   ],
+   "why": "*Por suerte* is the two-word way to say luckily."
+  },
+  {
+   "prompt": "Type in Spanish: Frankly, I'm not surprised.",
+   "answer": "Francamente, no me sorprende.",
+   "accept": [
+    "Francamente no me sorprende."
+   ],
+   "why": "*Francamente* opens the sentence, like frankly in English."
+  },
+  {
+   "prompt": "Type in Spanish: Honestly, I didn't like the play.",
+   "answer": "Sinceramente, no me gustó la obra.",
+   "accept": [
+    "Sinceramente no me gustó la obra."
+   ],
+   "why": "*Sinceramente* gives your opinion before you say it."
+  },
+  {
+   "prompt": "Say how Vale answered, not what you think: Vale answered frankly.",
+   "answer": "Vale respondió francamente.",
+   "accept": [],
+   "why": "At the end, with no comma, *francamente* describes the answer itself."
+  },
+  {
+   "prompt": "Start with *Por suerte* and type the whole sentence: *Mariana estaba en el café.*",
+   "answer": "Por suerte, Mariana estaba en el café.",
+   "accept": [
+    "Por suerte Mariana estaba en el café."
+   ],
+   "why": "Put the comment first and keep the rest the same."
+  },
+  {
+   "prompt": "Start with *Francamente* and type the whole sentence: *Me parece un error.*",
+   "answer": "Francamente, me parece un error.",
+   "accept": [
+    "Francamente me parece un error."
+   ],
+   "why": "The comment goes in front, and the sentence itself doesn't change."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Lamentable, el café cerró.",
+   "right": "Lamentablemente, el café cerró.",
+   "why": "Almost. *Lamentable* describes a thing; to comment on the whole sentence you need *-mente*."
+  },
+  {
+   "wrong": "En suerte, nadie salió herido.",
+   "right": "Por suerte, nadie salió herido.",
+   "why": "Luckily is a fixed phrase: *por suerte*, never *en suerte*."
+  },
+  {
+   "wrong": "Afortunado, Vale llegó a tiempo.",
+   "right": "Afortunadamente, Vale llegó a tiempo.",
+   "why": "*Afortunado* describes a person; the comment on what happened is *afortunadamente*."
+  },
+  {
+   "wrong": "Lamentablamente, el café cerró.",
+   "right": "Lamentablemente, el café cerró.",
+   "why": "*Lamentable* already ends in *e*, so *-mente* goes straight on."
+  }
+ ],
+ "personal": "Say something true about a film, a book or a café you know, starting with *Sinceramente* or *Francamente*."
+}
