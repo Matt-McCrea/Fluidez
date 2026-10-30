@@ -1,0 +1,687 @@
+[
+  {
+    "id": "w-u21-01",
+    "unit": "u21",
+    "prompt": "Tomás here. Text Vale, someone your age, and ask her to be your partner in the café, fifty-fifty. Say what you want her to do and what you need from her.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(quiero|necesito|prefiero) que\\b",
+        "label": "say what you want her to do with quiero que, necesito que or prefiero que"
+      },
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "presubj",
+        "person": "tú",
+        "label": "be my partner: que seas"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "Vale, quiero que seas mi socia en el café. Necesito que me ayudes con la cocina y con las cuentas. Quiero que trabajemos juntos, mitad y mitad. ¿Qué piensas?",
+    "focus": "g:subj-wanting",
+    "requires": [
+      "c:quiero",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:subj-irregulars",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:ayudar",
+      "l:café",
+      "l:cocina",
+      "l:cuenta",
+      "l:juntos",
+      "l:mitad",
+      "l:necesitar",
+      "l:pensar",
+      "l:querer",
+      "l:qué",
+      "l:ser",
+      "l:socio",
+      "l:trabajar",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u21-02",
+    "unit": "u21",
+    "prompt": "You are Vale. Text Tomás (your age) back: you like the idea, but say what you want him to do first and what you need him to promise.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "firmar",
+        "tense": "presubj",
+        "person": "nosotros",
+        "label": "we sign: que firmemos"
+      },
+      {
+        "type": "verbForm",
+        "inf": "prometer",
+        "tense": "presubj",
+        "person": "tú",
+        "label": "you promise: que me prometas"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(quiero|necesito|prefiero) que\\b",
+        "label": "use quiero que or necesito que"
+      }
+    ],
+    "model": "Tomás, me gusta la idea, pero primero quiero que firmemos un papel. Necesito que me prometas que vas a quedarte más de un año. Quiero que hablemos de todo mañana, con tiempo.",
+    "focus": "g:subj-wanting",
+    "requires": [
+      "c:me-gusta",
+      "c:quiero",
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:año",
+      "l:firmar",
+      "l:gustar",
+      "l:hablar",
+      "l:idea",
+      "l:ir",
+      "l:mañana",
+      "l:necesitar",
+      "l:papel",
+      "l:prometer",
+      "l:quedar",
+      "l:querer",
+      "l:tiempo",
+      "p:mas-de-number",
+      "p:me-te-nos-objects",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u21-03",
+    "unit": "u21",
+    "prompt": "Write a note to Don Hernando, the older regular you call usted. Ask him to come to the café on Saturday and say what you need him to do.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "avoidsAny",
+        "words": [
+          "vengas",
+          "ayudes",
+          "hables",
+          "tú",
+          "tienes",
+          "puedes"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(quiero|necesito|prefiero) que\\b",
+        "label": "say what you want him to do with que"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Don Hernando, quiero que venga al café el sábado. Necesito que me ayude con una reunión importante. Prefiero que usted hable primero con Vale, porque ella no quiere ver a nadie.",
+    "focus": "g:subj-wanting",
+    "requires": [
+      "c:porque",
+      "c:quiero",
+      "g:cause-result",
+      "g:gender-articles",
+      "g:negation-words",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:café",
+      "l:hablar",
+      "l:importante",
+      "l:necesitar",
+      "l:preferir",
+      "l:querer",
+      "l:reunión",
+      "l:sábado",
+      "l:venir",
+      "l:ver",
+      "p:days-el-lunes",
+      "p:don-dona-nombre",
+      "p:me-te-nos-objects",
+      "p:personal-a",
+      "p:senor-don-article",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u21-04",
+    "unit": "u21",
+    "prompt": "Text Mariana, the journalist: say that you want to talk to Vale tonight, but that you need Mariana's help. Say one thing you want to do and one thing you want her to do.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(quiero|necesito|prefiero) [a-záéíóúñ]+(ar|er|ir)\\b",
+        "label": "one thing you want to do yourself: quiero hablar"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(quiero|necesito|prefiero) que [a-záéíóúñ]+",
+        "label": "one thing you want her to do: quiero que vengas"
+      },
+      {
+        "type": "containsWord",
+        "word": "Mariana"
+      }
+    ],
+    "model": "Mariana, quiero hablar con Vale esta noche, pero necesito que me ayudes. Quiero que vengas al café a las ocho. Prefiero que ella no sepa nada todavía.",
+    "focus": "x:inf-vs-que-subj",
+    "requires": [
+      "c:quiero",
+      "g:gender-articles",
+      "g:negation-words",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:subj-irregulars",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:ayudar",
+      "l:café",
+      "l:hablar",
+      "l:necesitar",
+      "l:noche",
+      "l:preferir",
+      "l:querer",
+      "l:saber",
+      "l:venir",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
+      "p:saber-conocer",
+      "p:telling-time",
+      "p:ya-todavia-basic"
+    ]
+  },
+  {
+    "id": "w-u21-05",
+    "unit": "u21",
+    "prompt": "A new waiter, someone your age, starts on Monday. Write him a short message about his first day: what time you want him there and how you need him to be with the customers.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presubj",
+        "person": "tú",
+        "label": "be there: que estés"
+      },
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "presubj",
+        "person": "tú",
+        "label": "be friendly: que seas"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(quiero|necesito) que\\b",
+        "label": "use quiero que or necesito que"
+      }
+    ],
+    "model": "Hola. Quiero que estés en el café a las siete el lunes. Necesito que seas amable con los clientes. Quiero que todo sea fácil para ti.",
+    "focus": "g:subj-irregulars",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:quiero",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:subj-irregulars",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:amable",
+      "l:café",
+      "l:cliente",
+      "l:estar",
+      "l:fácil",
+      "l:lunes",
+      "l:necesitar",
+      "l:querer",
+      "l:ser",
+      "p:days-el-lunes",
+      "p:para-inf",
+      "p:telling-time"
+    ]
+  },
+  {
+    "id": "w-u21-06",
+    "unit": "u21",
+    "prompt": "You are going away for the weekend and a friend will look after Simón the parrot. Text her what you need her to do what you want her to know, and when you need her to go to the house.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "dar",
+        "tense": "presubj",
+        "person": "tú",
+        "label": "feed him: que des"
+      },
+      {
+        "type": "verbForm",
+        "inf": "saber",
+        "tense": "presubj",
+        "person": "tú",
+        "label": "you know: que sepas"
+      },
+      {
+        "type": "containsWord",
+        "word": "Simón"
+      }
+    ],
+    "model": "Gracias por cuidar a Simón. Necesito que des de comer a Simón dos veces al día. Quiero que sepas que no le gusta el ruido. Y necesito que vayas a la casa temprano.",
+    "focus": "g:subj-irregulars",
+    "requires": [
+      "c:quiero",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:subj-irregulars",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:casa",
+      "l:comer",
+      "l:cuidar",
+      "l:dar",
+      "l:día",
+      "l:gustar",
+      "l:ir",
+      "l:necesitar",
+      "l:querer",
+      "l:ruido",
+      "l:saber",
+      "l:temprano",
+      "l:vez",
+      "p:gracias-por",
+      "p:ir-a-venir-de-place",
+      "p:personal-a",
+      "p:saber-conocer",
+      "p:veces-al"
+    ]
+  },
+  {
+    "id": "w-u21-07",
+    "unit": "u21",
+    "prompt": "A customer, Señora Gómez, whom you call usted, complained that her order was late. Reply to her: say what you want her to know and what you need her to do on Friday.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "saber",
+        "tense": "presubj",
+        "person": "él/ella",
+        "label": "que sepa"
+      },
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presubj",
+        "person": "él/ella",
+        "label": "que esté"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "estás",
+          "sabes",
+          "eres",
+          "tienes"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenos días, señora Gómez. Quiero que sepa que su pedido estará listo el viernes. También necesito que esté en el café antes de las diez, por favor. Muchas gracias.",
+    "focus": "g:subj-irregulars",
+    "requires": [
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "c:por-favor",
+      "c:quiero",
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:subj-irregulars",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:antes",
+      "l:bueno",
+      "l:café",
+      "l:día",
+      "l:estar",
+      "l:favor",
+      "l:listo",
+      "l:necesitar",
+      "l:pedido",
+      "l:querer",
+      "l:saber",
+      "l:señora",
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:possessives-basic",
+      "p:saber-conocer",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u21-08",
+    "unit": "u21",
+    "prompt": "Another new waiter, your age, is starting. Write him three short things he should not do at the café, and tell him not to worry about something.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "negation"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "presubj",
+        "label": "use a negative command: no toques, no dejes"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "no toca ",
+          "no das ",
+          "no tocas ",
+          "no te preocupas"
+        ],
+        "label": "after no, use the opposite-vowel form"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Hola. No toques la máquina sin ayuda, es muy vieja. No dejes la puerta abierta, por favor. Y no te preocupes: todo va a salir bien.",
+    "focus": "g:negative-commands",
+    "requires": [
+      "c:bien-y-tu",
+      "c:hola-buenos-dias",
+      "c:no-te-preocupes",
+      "c:por-favor",
+      "c:todo-saldra-bien",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:negative-commands",
+      "g:ser-identity",
+      "l:abrir",
+      "l:ayuda",
+      "l:bien",
+      "l:dejar",
+      "l:favor",
+      "l:ir",
+      "l:máquina",
+      "l:preocuparse",
+      "l:puerta",
+      "l:salir",
+      "l:ser",
+      "l:tocar",
+      "l:viejo",
+      "p:con-sin",
+      "p:encontrar-participle",
+      "p:quantifiers-basic",
+      "p:request-ladder",
+      "p:viejo-antiguo-mayor"
+    ]
+  },
+  {
+    "id": "w-u21-09",
+    "unit": "u21",
+    "prompt": "Altamira has sent Don Hernando a paper to sign. Warn him (you call him usted): tell him not to sign it, not to talk to the man without you, and not to worry.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "firmar",
+        "tense": "presubj",
+        "person": "él/ella",
+        "label": "no firme"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "no firmes",
+          "no hables",
+          "no te preocupes",
+          "tú"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "No se preocupe, don Hernando. No firme nada todavía. No hable con el señor de Altamira sin mí. Primero vamos a verlo juntos, usted y yo.",
+    "focus": "g:negative-commands",
+    "requires": [
+      "c:no-se",
+      "c:no-te-preocupes",
+      "c:vamos-a",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:negation-words",
+      "g:negative-commands",
+      "g:object-pronoun-position",
+      "g:prep-pronouns",
+      "l:firmar",
+      "l:hablar",
+      "l:ir",
+      "l:juntos",
+      "l:preocuparse",
+      "l:señor",
+      "l:ver",
+      "p:don-dona-nombre",
+      "p:senor-don-article",
+      "p:time-sequence-basic",
+      "p:ya-todavia-basic"
+    ]
+  },
+  {
+    "id": "w-u21-10",
+    "unit": "u21",
+    "prompt": "You are Don Hernando. Vale and Tomás are shouting in front of the customers. Write a short note to both of them: tell them not to shout and not to talk so loudly there.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "gritar",
+        "tense": "presubj",
+        "person": "ellos",
+        "label": "no griten"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "no grites",
+          "no hables",
+          "no gritan",
+          "no hablan"
+        ],
+        "label": "to both of them: griten, not grites"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Vale, Tomás: no griten, por favor. No hablen tan fuerte delante de los clientes. No se vayan sin hablar. Yo les preparo un tinto y los espero en la mesa.",
+    "focus": "g:negative-commands",
+    "requires": [
+      "c:no-se",
+      "c:por-favor",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:negative-commands",
+      "g:prep-infinitive",
+      "g:present-ar",
+      "l:cliente",
+      "l:delante",
+      "l:esperar",
+      "l:favor",
+      "l:fuerte",
+      "l:gritar",
+      "l:hablar",
+      "l:irse",
+      "l:mesa",
+      "l:preparar",
+      "l:tinto",
+      "p:cerca-de",
+      "p:position-de",
+      "p:request-ladder"
+    ]
+  },
+  {
+    "id": "w-u21-11",
+    "unit": "u21",
+    "prompt": "You are in a taxi and need the driver, an older man you call usted, to wait for you. Politely ask him to wait a few minutes, then say where you need him to take you after.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(le importaría|podría)\\b",
+        "label": "ask politely: ¿le importaría…? or ¿podría…?"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "te importaría",
+          "podrías",
+          "puedes",
+          "necesitas"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "Buenas tardes. ¿Le importaría esperarme cinco minutos? Necesito que me lleve a La Candelaria después. No tardo nada, se lo prometo. Muchas gracias por su ayuda.",
+    "focus": "p:te-importaria",
+    "requires": [
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "g:conditional",
+      "g:double-pronouns",
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:negation-words",
+      "g:object-pronoun-position",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:reflexive-routine",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:ayuda",
+      "l:buena",
+      "l:después",
+      "l:esperar",
+      "l:importar",
+      "l:llevarse",
+      "l:minuto",
+      "l:necesitar",
+      "l:prometer",
+      "l:tardar",
+      "l:tarde",
+      "p:gracias-por",
+      "p:me-te-nos-objects",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:te-importaria",
+      "p:te-importaria-inf",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u21-12",
+    "unit": "u21",
+    "prompt": "Mariana, the journalist, is thinking of signing the paper Altamira sent her. Text her some friendly advice: what you would do in her place, and what she should do first.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "firmar",
+        "tense": "condicional",
+        "person": "yo",
+        "label": "yo que tú, no firmaría"
+      },
+      {
+        "type": "regex",
+        "pattern": "yo que t[úu]|deber[ií]as",
+        "label": "use yo que tú, deberías or podrías"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Mariana, yo que tú, no firmaría ese papel todavía. Espera hasta el viernes, por favor. Así hablamos con Vale y lo vemos juntos. Es mejor para todos.",
+    "focus": "g:conditional",
+    "requires": [
+      "c:por-favor",
+      "c:yo-que-tu",
+      "g:commands-tu",
+      "g:conditional",
+      "g:demonstratives",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "l:esperar",
+      "l:favor",
+      "l:firmar",
+      "l:hablar",
+      "l:juntos",
+      "l:mejor",
+      "l:papel",
+      "l:ser",
+      "l:ver",
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:para-inf",
+      "p:request-ladder",
+      "p:ya-todavia-basic"
+    ]
+  }
+]
