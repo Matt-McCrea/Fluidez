@@ -2,44 +2,68 @@
   "id": "ch033",
   "unit": "u13",
   "title": "Dos tarjetas",
-  "text": "Un señor: Oiga, joven, esa tarjeta no es del TransMilenio.\nTomás miró su mano. Tenía la tarjeta del notario, no la tarjeta del pasaje.\nTomás: Perdón. Tengo dos tarjetas y una llave, pero no tengo pasaje. Con permiso, con permiso.\nTomás llamó al café.\nVale: ¿Aló? Tranquilo, Tomás. Escucha. Compra una tarjeta en la caja y paga el pasaje. Sube al TransMilenio y baja en la Cien.\nSimón: ¡Baja! ¡Baja!\nVale: No, Simón. Primero sube, y luego baja.\nEn el TransMilenio había mucha gente. Tomás estaba entre la puerta y una señora con una bolsa de mangos.\nTomás: Señor, ¿me deja en la Cien, por favor?\nUn estudiante: Parce, esto no es un taxi.\nToda la gente miró a Tomás. Tomás dio su silla a la señora de los mangos.\nSeñora: Gracias, mijo. Toma, un mango para el viaje.\nA las ocho, Tomás llamó otra vez.\nVale: Oye, ¿dónde estás? Lee un letrero.\nTomás: Aquí dice Portal del Sur.\nVale: ¡Tomás! La Cien está en el norte, y tú vas al sur. Baja ya. El notario cierra a las doce.\nSimón: ¡Sube! ¡Sube!\nTomás bajó del bus. Estaba en el sur de Bogotá, con una llave, dos tarjetas y un mango.\nUn vendedor de tintos lo miró.\nVendedor: Oiga, joven. ¿Perdido?",
+  "text": "Seis de la mañana, en una estación de TransMilenio. Tomás puso su tarjeta en la máquina, pero la máquina dijo que no.\nUn señor: Oiga, joven, esa tarjeta no es del TransMilenio.\nTomás miró su mano. Tenía la tarjeta del notario. Detrás de él había una fila larga.\nTomás: ¡Ay, perdón! Con permiso, con permiso.\nTomás salió de la fila y llamó al café.\nVale: Tranquilo, Tomás. Escucha. Compra una tarjeta en la taquilla y paga el pasaje. Sube al TransMilenio y baja en la Cien.\nSimón: ¡Baja! ¡Baja!\nVale: No, Simón. Primero sube, y luego baja.\nEn el bus había mucha gente. Tomás estaba entre la puerta y una señora con una bolsa de mangos. Vio al conductor y gritó:\nTomás: ¡Señor! ¿Me deja en la Cien, por favor?\nUn estudiante: Parce, esto no es un taxi.\nToda la gente miró a Tomás. Rojo, Tomás se levantó, y la señora de los mangos se sentó en su silla.\nSeñora: Gracias, mijo. Toma, un mango para el viaje.\nA las ocho, Tomás llamó otra vez.\nVale: Oye, ¿dónde estás? Lee un letrero.\nTomás: Aquí dice Portal del Sur.\nVale: ¡Tomás! La Cien está en el norte, y tú vas al sur. Baja ya. El notario cierra a las doce.\nSimón: ¡Sube! ¡Sube!\nTomás bajó del bus. Estaba en el sur de Bogotá, con una llave, dos tarjetas y un mango.\nUn vendedor de tintos lo miró.\nVendedor: Oiga, joven. ¿Está perdido?",
   "gloss": [
+    {
+      "es": "puso su tarjeta en la máquina",
+      "en": "put his card on the machine"
+    },
+    {
+      "es": "la máquina dijo que no",
+      "en": "the machine said no"
+    },
     {
       "es": "notario",
       "en": "notary (the lawyer who keeps property papers)"
     },
     {
-      "es": "parce",
-      "en": "mate (Colombian slang between friends)"
-    },
-    {
-      "es": "mijo",
-      "en": "son (a fond way to talk to a younger man)"
+      "es": "taquilla",
+      "en": "ticket window"
     },
     {
       "es": "la Cien",
       "en": "Calle 100 (people just say the number)"
     },
     {
-      "es": "Portal del Sur",
-      "en": "South Terminal (the end of the line in the south)"
+      "es": "conductor",
+      "en": "the driver"
     },
     {
-      "es": "Tengo dos tarjetas y una llave, pero no tengo pasaje.",
-      "en": "I've got two cards and a key, but I haven't got a fare."
+      "es": "parce",
+      "en": "mate (Colombian slang between friends)"
     },
     {
       "es": "Parce, esto no es un taxi.",
       "en": "Mate, this isn't a taxi."
     },
     {
+      "es": "Rojo, Tomás se levantó",
+      "en": "Red in the face, Tomás stood up"
+    },
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
       "es": "un mango para el viaje",
       "en": "a mango for the journey"
+    },
+    {
+      "es": "letrero",
+      "en": "sign"
+    },
+    {
+      "es": "Portal del Sur",
+      "en": "South Terminal (the end of the line in the south)"
+    },
+    {
+      "es": "¿Está perdido?",
+      "en": "Are you lost?"
     }
   ],
   "questions": [
     {
-      "q": "What's wrong with the card in Tomás's hand?",
+      "q": "What's wrong with the card Tomás tries at the machine?",
       "options": [
         "It has no money on it",
         "It's the notary's card, not a fare card",
@@ -51,7 +75,7 @@
     {
       "q": "Why does everyone on the TransMilenio look at Tomás?",
       "options": [
-        "He asks to be dropped off at Calle 100, as if it were a taxi",
+        "He asks the driver to drop him off at Calle 100, as if it were a taxi",
         "He sings a song",
         "He eats a mango",
         "He shouts at Simón"
@@ -119,8 +143,8 @@
     "c:oiga-oye",
     "c:perdon-disculpe",
     "c:por-favor",
-    "c:tengo",
     "c:voy-vas",
+    "g:adjective-agreement",
     "g:commands-tu",
     "g:demonstratives",
     "g:direct-objects",
@@ -128,16 +152,20 @@
     "g:gender-articles",
     "g:imperfect-states",
     "g:ir-a-plans",
+    "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
+    "g:preterite-er-ir",
     "g:preterite-irregular-strong",
     "g:questions",
+    "g:reflexive-routine",
     "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
-    "g:yo-irregular",
+    "g:that-clauses",
     "p:aqui-ahi-alla",
+    "p:cerca-de",
     "p:container-de",
     "p:demonstratives-basic",
     "p:ir-a-venir-de-place",
@@ -146,6 +174,7 @@
     "p:otro-no-article",
     "p:para-inf",
     "p:personal-a",
+    "p:por-la-manana",
     "p:position-de",
     "p:possessives-basic",
     "p:quantifiers-basic",
@@ -158,28 +187,35 @@
     "l:bolsa",
     "l:bus",
     "l:café",
-    "l:caja",
     "l:cerrar",
     "l:comprar",
-    "l:dar",
+    "l:conductor",
     "l:decir",
     "l:dejar",
+    "l:detrás",
     "l:dónde",
     "l:escuchar",
+    "l:estación",
     "l:estar",
     "l:estudiante",
     "l:favor",
+    "l:fila",
     "l:gente",
+    "l:gritar",
     "l:ir",
     "l:joven",
+    "l:largo",
     "l:leer",
     "l:letrero",
+    "l:levantarse",
     "l:llamar",
     "l:llave",
     "l:mango",
     "l:mano",
+    "l:mañana",
     "l:mijo",
     "l:mirar",
+    "l:máquina",
     "l:norte",
     "l:oír",
     "l:pagar",
@@ -188,13 +224,18 @@
     "l:perder",
     "l:perdón",
     "l:permiso",
+    "l:poner",
     "l:puerta",
+    "l:rojo",
+    "l:salir",
+    "l:sentarse",
     "l:ser",
     "l:señor",
     "l:señora",
     "l:silla",
     "l:subir",
     "l:sur",
+    "l:taquilla",
     "l:tarjeta",
     "l:taxi",
     "l:tener",
@@ -202,6 +243,7 @@
     "l:tomar",
     "l:tranquilo",
     "l:vendedor",
+    "l:ver",
     "l:vez",
     "l:viaje"
   ]

@@ -2,43 +2,55 @@
   "id": "ch034",
   "unit": "u13",
   "title": "Dos rutas",
-  "text": "Tomás: Sí, señor. Muy perdido. Voy a la calle 100 con carrera 7.\nVendedor: Tranquilo, joven. Primero, un tinto. Es un regalo.\nTomás tomó el tinto. Era el primer tinto del día, y era excelente.\nVendedor: Mire. Cruce la avenida en el semáforo. En el otro andén está la estación. Tome el TransMilenio de la ruta B, al norte. Baje en la estación de la Cien.\nTomás: ¿Y después?\nVendedor: Después, otro tinto.\nUna señora con un perro: ¡Qué va, joven! Usted necesita la buseta. Primero, regrese al centro en la buseta de la parada de la izquierda. En el centro, tome un taxi. Y en la carrera 7, una moto.\nVendedor: Señora, ¿una moto?\nSeñora: Mi hijo tiene una moto y un carro.\nVendedor: Señora, el joven no necesita a su hijo. Necesita una ruta.\nTomás llamó al café.\nTomás: Vale, ¿derecha o izquierda? ¿Buseta o TransMilenio?\nSimón: ¡Izquierda! ¡Derecha! ¡Izquierda!\nVale: Tomás, el vendedor tiene razón. La buseta no va a la Cien. Toma el TransMilenio. ¡Ojo!\nTomás cruzó la avenida. En el semáforo había carros, motos, buses, busetas y un taxi amarillo, muy viejo.\nTomás no quería regresar al centro. Miró la parada de la buseta, miró la estación y tocó la llave de Joaquín en su chaqueta. Y entró a la estación.\nA las once y media, bajó del bus en la estación de la Cien. Pero el notario estaba en la carrera 7, muy lejos.\nEn el andén, un taxi amarillo y viejo esperaba.\nHernando: ¡Tomás! ¡Aquí, mijo!",
+  "text": "Tomás: Sí, señor. Muy perdido. Voy a la calle 100 con carrera Séptima.\nVendedor: Tranquilo, joven. Primero, un tinto. Es gratis.\nEra el primer tinto del día, y era excelente.\nVendedor: Mire. Cruce la avenida en el semáforo. En el otro andén está la estación. Tome el TransMilenio de la ruta B, al norte, y baje en la Cien.\nTomás: ¿Y después?\nVendedor: Después, otro tinto.\nUna señora con un perro: ¡Qué va, joven! Usted necesita la buseta. Primero regrese al centro en la buseta de la parada de la izquierda. En el centro, tome un taxi. Y en la Séptima, una moto.\nVendedor: Señora, ¿una moto?\nSeñora: Mi hijo tiene moto y carro. Él lo lleva.\nVendedor: Señora, el joven no necesita a su hijo. Necesita una ruta.\nTomás llamó al café.\nTomás: Vale, ¿derecha o izquierda? ¿Bus o buseta?\nSimón: ¡Izquierda! ¡Derecha! ¡Izquierda!\nVale: El vendedor tiene razón, Tomás. La buseta es muy lenta. Toma el TransMilenio. Y esta vez, ¡mira bien el letrero!\nTomás no quería regresar al centro. Miró la parada de la buseta, miró la estación y tocó la llave de Joaquín en su chaqueta. Después cruzó la avenida en el semáforo, entre carros, motos y busetas, y entró a la estación.\nA las once y media bajó del bus en la Cien. Pero la oficina del notario estaba en la Séptima, todavía lejos.\nEn el andén, un taxi amarillo, muy viejo, pitó dos veces.\nHernando: ¡Tomás! ¡Aquí, mijo!",
   "gloss": [
     {
-      "es": "notario",
-      "en": "notary (the lawyer who keeps property papers)"
+      "es": "carrera Séptima",
+      "en": "Carrera 7 (a long avenue in Bogotá; people just say la Séptima)"
     },
     {
-      "es": "mijo",
-      "en": "son (a fond way to talk to a younger man)"
+      "es": "Es gratis.",
+      "en": "It's free."
     },
     {
-      "es": "la Cien",
-      "en": "Calle 100 (people just say the number)"
+      "es": "andén",
+      "en": "pavement"
     },
     {
       "es": "la ruta B",
       "en": "route B (a TransMilenio line)"
     },
     {
+      "es": "baje en la Cien",
+      "en": "get off at Calle 100"
+    },
+    {
       "es": "¡Qué va, joven!",
       "en": "No way, young man."
     },
     {
-      "es": "Es un regalo.",
-      "en": "It's on me."
+      "es": "buseta",
+      "en": "small bus"
     },
     {
-      "es": "Después, otro tinto.",
-      "en": "After that, another coffee."
+      "es": "Él lo lleva.",
+      "en": "He'll take you."
     },
     {
-      "es": "Toma el TransMilenio. ¡Ojo!",
-      "en": "Take the TransMilenio. Careful."
+      "es": "La buseta es muy lenta.",
+      "en": "The small bus is very slow."
     },
     {
-      "es": "el notario estaba en la carrera 7, muy lejos",
-      "en": "the notary's office was on Carrera 7, a long way off"
+      "es": "¡mira bien el letrero!",
+      "en": "look carefully at the sign."
+    },
+    {
+      "es": "pitó dos veces",
+      "en": "honked twice"
+    },
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
     }
   ],
   "questions": [
@@ -46,7 +58,7 @@
       "q": "What does the coffee seller tell Tomás to do?",
       "options": [
         "Cross the avenue and take TransMilenio route B north",
-        "Take a buseta, then a taxi, then a motorbike",
+        "Take a small bus, then a taxi, then a motorbike",
         "Go back to the café",
         "Wait for a taxi"
       ],
@@ -55,7 +67,7 @@
     {
       "q": "Why does the lady with the dog suggest a motorbike?",
       "options": [
-        "Her son has one",
+        "Her son has one and can take him",
         "It is the fastest way",
         "The coffee seller has one",
         "Tomás asks for one"
@@ -95,12 +107,12 @@
       "answer": 0
     },
     {
-      "q": "What does Tomás see at the traffic lights that matters later?",
+      "q": "What does Vale tell Tomás to do this time?",
       "options": [
-        "A very old yellow taxi",
-        "A man in an Altamira cap",
-        "The lady's son on his motorbike",
-        "Mariana"
+        "Look carefully at the sign",
+        "Take a taxi",
+        "Call Hernando",
+        "Come back to the café"
       ],
       "answer": 0
     },
@@ -115,13 +127,16 @@
       "answer": 0
     }
   ],
-  "hook": "Tomás has finally reached Calle 100, but the notary is on Carrera 7, a long way off, and it is half past eleven. The old yellow taxi on the pavement belongs to Hernando, and it has a name.",
+  "hook": "Tomás has finally reached Calle 100, but the notary is on Carrera 7, still a long way off, and it is half past eleven. The old yellow taxi honking at him belongs to Hernando, and it has a name.",
   "requires": [
+    "c:bien-y-tu",
     "c:era",
-    "c:ojo",
+    "c:oye-mira",
     "c:tienes",
     "c:voy-a",
+    "g:adjective-agreement",
     "g:commands-usted",
+    "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
     "g:imperfect-habitual",
@@ -133,6 +148,9 @@
     "g:stem-boot",
     "g:verb-infinitive",
     "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
     "p:ir-a-venir-de-place",
     "p:numbers-un-una",
     "p:ordinal-floor",
@@ -145,7 +163,8 @@
     "p:telling-time",
     "p:tener-razon",
     "p:time-sequence-basic",
-    "p:viejo-antiguo-mayor"
+    "p:viejo-antiguo-mayor",
+    "p:ya-todavia-basic"
   ],
   "lexemes": [
     "l:amarillo",
@@ -153,6 +172,7 @@
     "l:aquí",
     "l:avenida",
     "l:bajar",
+    "l:bien",
     "l:bus",
     "l:buseta",
     "l:café",
@@ -166,30 +186,32 @@
     "l:después",
     "l:día",
     "l:entrar",
-    "l:esperar",
     "l:estación",
     "l:estar",
     "l:excelente",
+    "l:gratis",
     "l:hijo",
     "l:ir",
     "l:izquierda",
     "l:joven",
     "l:lejos",
+    "l:lento",
+    "l:letrero",
     "l:llamar",
     "l:llave",
+    "l:llevar",
     "l:mijo",
     "l:mirar",
     "l:moto",
     "l:necesitar",
     "l:norte",
-    "l:ojo",
+    "l:oficina",
     "l:parada",
     "l:perder",
     "l:perro",
     "l:querer",
     "l:qué",
     "l:razón",
-    "l:regalo",
     "l:regresar",
     "l:ruta",
     "l:semáforo",
@@ -203,6 +225,7 @@
     "l:tomar",
     "l:tranquilo",
     "l:vendedor",
+    "l:vez",
     "l:viejo"
   ]
 }

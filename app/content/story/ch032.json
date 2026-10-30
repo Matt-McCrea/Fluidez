@@ -2,7 +2,7 @@
   "id": "ch032",
   "unit": "u12",
   "title": "La llave de Joaquín",
-  "text": "Detrás de los ladrillos había una bolsa de plástico. Dentro había una llave vieja y una tarjeta.\nTomás leyó la tarjeta: «Notario Ramón Prieto. Calle 100, Bogotá. 1979».\nA las siete de la mañana hacía sol. Mariana tocó la puerta, con dos tintos en la mano. La gorra de Altamira todavía estaba en la mesa.\nMariana: Hernando dice que anoche entró un hombre de Altamira. ¿Es verdad?\nTomás: Es verdad. Creo que buscaba esta tarjeta.\nMariana miró la tarjeta y la llave.\nMariana: ¿La calle 100? Eso está muy lejos. Pero creo que el notario tiene el nombre del dueño.\nVale: ¿Es posible? ¿Rosa conocía al dueño?\nMariana: Es posible. La realidad es que Rosa conocía al dueño muy bien. Y Altamira sabe que la tarjeta existe.\nHernando: Altamira desea convertir toda la cuadra en un hotel. Pero sin el dueño, no puede.\nSimón volvió a gritar: ¡A la orden! ¡A la orden!\nMariana: ¿Y el loro? ¿Qué hacía anoche?\nVale: Para Simón, ese hombre era un cliente. «¡A la orden, señor!», toda la noche.\nMariana: Entonces Simón vio la cara del hombre.\nTomás: Sí, pero Simón solo dice «¡A la orden!».\nHernando tocó la llave. No dijo nada, pero sus ojos estaban tristes.\nTomás: ¿Don Hernando? ¿Usted conoce esta llave?\nHernando: Era la llave de Joaquín.\nTomás puso la tarjeta en su chaqueta.\nTomás: Mañana voy a la calle 100.",
+  "text": "Detrás de los ladrillos había una bolsa de plástico, y dentro, una llave vieja y una tarjeta. Tomás leyó la tarjeta: «Ramón Prieto, notario. Calle 100, Bogotá. 1979».\nA la mañana siguiente hacía sol. A las siete, Mariana tocó la puerta del café, con dos tintos en la mano.\nMariana: Don Hernando me llamó. ¿Es verdad que anoche entró un hombre de Altamira?\nTomás: Es verdad. Don Hernando cree que buscaba el cuaderno de Rosa.\nMariana: ¿Un cuaderno de recetas? No creo. Un hotel no necesita recetas.\nTomás le mostró la tarjeta y la llave.\nMariana: En realidad, creo que buscaba esto. Un notario guarda los papeles de los edificios. Es posible: allá puede estar el nombre del dueño.\nVale: ¿Y Altamira sabe que esta tarjeta existe?\nMariana: Parece que sí. Altamira quiere convertir toda la cuadra en un hotel, pero sin el dueño del café, no puede.\nSimón volvió a gritar: ¡A la orden! ¡A la orden!\nMariana: ¿Y el loro? ¿Vio al hombre?\nVale: Lo vio, y le dijo «¡A la orden, señor!» toda la noche.\nMariana: Entonces tenemos un testigo.\nTomás: Un testigo con tres palabras.\nHernando no se rio. Tocó la llave con un dedo, y sus ojos estaban tristes.\nTomás: ¿Don Hernando? ¿Usted conoce esta llave?\nHernando: Era de Joaquín.\nTomás guardó la tarjeta y la llave en su chaqueta.\nTomás: Mañana voy a la calle 100.\nMariana: Te deseo suerte. Queda muy lejos, en el norte.",
   "gloss": [
     {
       "es": "una bolsa de plástico",
@@ -13,24 +13,44 @@
       "en": "notary (the lawyer who keeps property papers)"
     },
     {
-      "es": "loro",
-      "en": "parrot"
+      "es": "A la mañana siguiente",
+      "en": "The next morning"
     },
     {
       "es": "Mariana tocó la puerta",
       "en": "Mariana knocked on the door"
     },
     {
-      "es": "Hernando tocó la llave.",
-      "en": "Hernando touched the key."
+      "es": "Un notario guarda los papeles de los edificios.",
+      "en": "A notary keeps the papers for buildings."
     },
     {
-      "es": "el notario tiene el nombre del dueño",
-      "en": "the notary has the owner's name"
+      "es": "allá puede estar el nombre del dueño",
+      "en": "the owner's name may be there"
     },
     {
-      "es": "Altamira desea convertir toda la cuadra en un hotel.",
-      "en": "Altamira wants to turn the whole block into a hotel."
+      "es": "convertir toda la cuadra en un hotel",
+      "en": "turn the whole block into a hotel"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "un testigo",
+      "en": "a witness"
+    },
+    {
+      "es": "Hernando no se rio.",
+      "en": "Hernando didn't laugh."
+    },
+    {
+      "es": "Tocó la llave con un dedo",
+      "en": "He touched the key with one finger"
+    },
+    {
+      "es": "Te deseo suerte.",
+      "en": "Good luck."
     }
   ],
   "questions": [
@@ -45,12 +65,12 @@
       "answer": 1
     },
     {
-      "q": "Why does Mariana think the card matters?",
+      "q": "Why does Mariana think the man wasn't after the notebook?",
       "options": [
-        "The notary may have the name of the building's owner",
-        "It is worth a lot of money",
-        "It has Rosa's recipe on it",
-        "It is from Joaquín"
+        "A hotel doesn't need recipes, so he was probably after the notary's card",
+        "The notebook is worth nothing",
+        "Vale had hidden it at home",
+        "Simón had eaten it"
       ],
       "answer": 0
     },
@@ -58,21 +78,21 @@
       "q": "¿Qué dice Hernando de la llave?",
       "options": [
         "Que es la llave del café",
-        "Que era la llave de Joaquín",
-        "Que es la llave de Altamira",
+        "Que era de Joaquín",
+        "Que es de Altamira",
         "Que no la conoce"
       ],
       "answer": 1
     },
     {
-      "q": "Why is Simón a useless witness?",
+      "q": "Why does Tomás joke about Simón as a witness?",
       "options": [
+        "He only knows three words: ¡A la orden, señor!",
         "He was asleep",
-        "He only says ¡A la orden!",
         "He flew away",
         "He likes Altamira"
       ],
-      "answer": 1
+      "answer": 0
     }
   ],
   "rereadQuestions": [
@@ -97,7 +117,7 @@
       "answer": 1
     },
     {
-      "q": "Where does Tomás put the card?",
+      "q": "Where does Tomás put the card and the key?",
       "options": [
         "In the notebook",
         "In his jacket",
@@ -111,21 +131,20 @@
   "requires": [
     "c:a-la-orden",
     "c:ayer-anoche",
-    "c:bien-y-tu",
     "c:creo-que",
     "c:entonces-bueno",
     "c:era",
-    "c:es-que",
+    "c:me-llamo",
+    "c:no-se",
     "c:tienes",
     "c:voy-a",
     "g:adjective-agreement",
-    "g:demonstratives",
+    "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
     "g:imperfect-habitual",
     "g:imperfect-states",
     "g:ir-a-plans",
-    "g:negation-words",
     "g:present-ar",
     "g:present-er-ir",
     "g:pret-vs-imperfect",
@@ -133,19 +152,19 @@
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
     "g:preterite-spelling-stem",
-    "g:questions",
+    "g:reflexive-routine",
     "g:ser-identity",
     "g:stem-boot",
-    "g:stem-e-i",
     "g:that-clauses",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
     "p:cerca-de",
     "p:container-de",
     "p:demonstratives-basic",
     "p:hace-frio",
     "p:ir-a-venir-de-place",
-    "p:para-inf",
+    "p:me-te-nos-objects",
     "p:personal-a",
-    "p:por-la-manana",
     "p:position-de",
     "p:possessives-basic",
     "p:quantifiers-basic",
@@ -154,32 +173,33 @@
     "p:telling-time",
     "p:todos-los-dias",
     "p:viejo-antiguo-mayor",
-    "p:volver-a-inf",
-    "p:ya-todavia-basic"
+    "p:volver-a-inf"
   ],
   "lexemes": [
+    "l:allá",
     "l:anoche",
-    "l:bien",
     "l:bolsa",
     "l:buscar",
+    "l:café",
     "l:calle",
-    "l:cara",
     "l:chaqueta",
-    "l:cliente",
     "l:conocer",
     "l:convertir",
     "l:creer",
+    "l:cuaderno",
     "l:cuadra",
     "l:decir",
+    "l:dedo",
     "l:dentro",
     "l:desear",
     "l:detrás",
     "l:dueño",
+    "l:edificio",
     "l:entrar",
     "l:estar",
     "l:existir",
-    "l:gorra",
     "l:gritar",
+    "l:guardar",
     "l:hacer",
     "l:hombre",
     "l:hotel",
@@ -187,29 +207,40 @@
     "l:ladrillo",
     "l:leer",
     "l:lejos",
+    "l:llamar",
     "l:llave",
     "l:loro",
     "l:mano",
     "l:mañana",
-    "l:mesa",
-    "l:mirar",
+    "l:mostrar",
+    "l:necesitar",
     "l:noche",
     "l:nombre",
+    "l:norte",
     "l:ojo",
     "l:orden",
+    "l:palabra",
+    "l:papel",
+    "l:parecer",
     "l:plástico",
     "l:poder",
-    "l:poner",
     "l:posible",
     "l:puerta",
-    "l:qué",
+    "l:quedar",
+    "l:querer",
+    "l:ramón",
     "l:realidad",
+    "l:receta",
+    "l:reír",
     "l:saber",
     "l:ser",
     "l:señor",
+    "l:siguiente",
     "l:sol",
+    "l:suerte",
     "l:tarjeta",
     "l:tener",
+    "l:testigo",
     "l:tinto",
     "l:tocar",
     "l:triste",

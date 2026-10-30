@@ -2,35 +2,55 @@
   "id": "ch031",
   "unit": "u12",
   "title": "La gorra",
-  "text": "Vale sacó el celular. Todavía llovía. Con la luz del celular, todos vieron a un hombre. Estaba sacando ladrillos del mostrador.\nTomás: ¡Señor! ¿Qué está haciendo?\nEl hombre corrió a la cocina y salió a la lluvia.\nVale: ¿Quién era? ¿Qué sucedió?\nSimón: ¿Qué ocurrió? ¿Qué ocurrió?\nVale estaba asustada, y Tomás estaba enojado. Pero Simón estaba feliz y emocionado.\nVale: Simón, ¿por qué estás tan emocionado?\nHernando: Mientras el hombre estaba sacando ladrillos, Simón estaba diciendo «¡A la orden!». ¡Simón era su mesero!\nEn la cocina había una huella negra y una gorra con agua de lluvia. En la gorra decía: Grupo Altamira.\nVale: ¡Qué sorpresa! ¿No estás sorprendido?\nTomás: No es una sorpresa, Vale. No estoy sorprendido. Estoy enojado.\nHernando: Yo también estoy enojado. Y triste. Esto sucedió en mi cumpleaños.\nSimón: ¡Qué triste! ¡Qué triste!\nVale: Tranquilo, don Hernando. Después de una tormenta siempre hay sol y calor.\nTomás: ¿Sol? ¿Calor? En Bogotá llueve todos los días. Aquí solo hay nubes.\nEn la calle, la tormenta seguía, y las nubes estaban negras. Vale todavía estaba asustada, y Tomás tomó su mano.\nHernando estaba preocupado. Miró el mostrador.\nHernando: Altamira también está preocupado. Quiere el cuaderno de Rosa.\nLa luz volvió, y entonces ocurrió algo más. Detrás de los ladrillos había otra cosa.\nSimón: ¡Feliz cumpleaños! ¡Feliz cumpleaños!",
+  "text": "Afuera la tormenta seguía, y llovía mucho. Vale sacó el celular. Con la luz, todos vieron a un hombre detrás del mostrador. Estaba sacando ladrillos.\nTomás: ¡Señor! ¿Qué está haciendo?\nEl hombre corrió a la cocina, abrió la puerta de atrás y salió a la lluvia.\nVale estaba asustada, y Tomás estaba enojado.\nVale: ¿Qué sucedió? ¿Quién era?\nSimón: ¡A la orden, señor! ¡A la orden!\nHernando: Mientras el hombre sacaba ladrillos, este loro le decía «¡A la orden!». Feliz, emocionado, como con un cliente.\nEn la cocina había una huella de barro y una gorra mojada. En la gorra decía: Grupo Altamira.\nVale: ¿Altamira? ¡Qué sorpresa! ¿Tú no estás sorprendido?\nTomás: No, Vale. Para mí no es una sorpresa. Estoy enojado, nada más.\nHernando tampoco estaba sorprendido. Estaba triste.\nHernando: Setenta y dos años, y esto sucede en mi cumpleaños. Qué cumpleaños tan triste.\nSimón: ¡Feliz cumpleaños! ¡Feliz cumpleaños!\nVale: Tranquilo, don Hernando. Después de la tormenta siempre sale el sol.\nTomás: ¿El sol? Esto es Bogotá. Aquí hay nubes y lluvia todos los días.\nHernando: El sol y el calor están en Medellín, mijo. Y Vale es de allá.\nVale se rio, pero todavía estaba asustada. Tomás le tomó la mano.\nHernando miró el mostrador, preocupado.\nHernando: Ese hombre buscaba el cuaderno de Rosa. Los de Altamira no saben que ya no está ahí.\nTomás: Entonces van a volver.\nEn ese momento volvió la luz, y ocurrió algo más: detrás de los ladrillos, Vale vio otra cosa.",
   "gloss": [
     {
       "es": "mostrador",
       "en": "counter"
     },
     {
-      "es": "¡Simón era su mesero!",
-      "en": "Simón was his waiter."
+      "es": "la puerta de atrás",
+      "en": "the back door"
     },
     {
-      "es": "una huella negra",
-      "en": "a black footprint"
+      "es": "loro",
+      "en": "parrot"
     },
     {
-      "es": "una gorra con agua de lluvia",
-      "en": "a cap wet with rain"
+      "es": "Feliz, emocionado, como con un cliente.",
+      "en": "Happy, excited, as if he were serving a customer."
+    },
+    {
+      "es": "una huella de barro",
+      "en": "a muddy footprint"
+    },
+    {
+      "es": "una gorra mojada",
+      "en": "a wet cap"
     },
     {
       "es": "En la gorra decía: Grupo Altamira.",
       "en": "The cap said: Grupo Altamira."
     },
     {
-      "es": "la tormenta seguía",
-      "en": "the storm went on"
+      "es": "Qué cumpleaños tan triste.",
+      "en": "What a sad birthday."
     },
     {
-      "es": "Tomás tomó su mano",
+      "es": "Después de la tormenta siempre sale el sol.",
+      "en": "After the storm the sun always comes out."
+    },
+    {
+      "es": "Vale se rio",
+      "en": "Vale laughed"
+    },
+    {
+      "es": "Tomás le tomó la mano",
       "en": "Tomás took her hand"
+    },
+    {
+      "es": "Los de Altamira no saben que ya no está ahí.",
+      "en": "The Altamira people don't know it isn't there any more."
     }
   ],
   "questions": [
@@ -45,7 +65,7 @@
       "answer": 1
     },
     {
-      "q": "Why was Simón so happy?",
+      "q": "Why does Hernando say Simón was so happy?",
       "options": [
         "He got some cake",
         "He was greeting the intruder like a customer the whole time",
@@ -55,7 +75,7 @@
       "answer": 1
     },
     {
-      "q": "¿Cómo estaba Tomás?",
+      "q": "¿Cómo estaba Tomás cuando vio la gorra?",
       "options": [
         "Sorprendido",
         "Emocionado",
@@ -80,19 +100,19 @@
       "q": "What did they find in the kitchen?",
       "options": [
         "A key and a letter",
-        "A black footprint and a cap",
+        "A muddy footprint and a wet cap",
         "A wet umbrella",
         "A phone"
       ],
       "answer": 1
     },
     {
-      "q": "Why does Tomás laugh at Vale's promise of sun and heat?",
+      "q": "According to Hernando, why does Vale believe the sun always comes out?",
       "options": [
-        "He says it rains every day in Bogotá",
-        "He says it is night",
-        "He loves the rain",
-        "He is going back to Toronto"
+        "Because the sun and the heat are in Medellín, where she is from",
+        "Because she reads the weather on her phone",
+        "Because it is his birthday",
+        "Because the light came back"
       ],
       "answer": 0
     },
@@ -111,12 +131,12 @@
   "requires": [
     "c:a-la-orden",
     "c:algo-mas",
-    "c:claro-listo",
     "c:entonces-bueno",
     "c:era",
     "c:hay",
-    "c:y-que-paso",
+    "c:ya-no",
     "g:adjective-agreement",
+    "g:demonstratives",
     "g:estar-gerund",
     "g:estar-location-states",
     "g:gender-articles",
@@ -124,38 +144,50 @@
     "g:imperfect-habitual",
     "g:imperfect-progressive",
     "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:prep-pronouns",
+    "g:present-er-ir",
     "g:pret-vs-imperfect",
     "g:preterite-ar",
     "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
     "g:questions",
+    "g:reflexive-routine",
     "g:ser-identity",
-    "g:stem-boot",
     "p:aqui-ahi-alla",
     "p:cerca-de",
-    "p:con-sin",
     "p:demonstratives-basic",
     "p:exclamations-basic",
     "p:frequency-scale",
     "p:otro-no-article",
+    "p:para-inf",
     "p:personal-a",
     "p:position-de",
     "p:possessives-basic",
-    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
     "p:senor-don-article",
-    "p:tambien-tampoco",
     "p:time-sequence-basic",
     "p:todos-los-dias",
     "p:veces-al",
     "p:ya-todavia-basic"
   ],
   "lexemes": [
-    "l:agua",
+    "l:abrir",
+    "l:afuera",
+    "l:ahí",
+    "l:allá",
     "l:aquí",
     "l:asustado",
-    "l:calle",
+    "l:atrás",
+    "l:año",
+    "l:barro",
+    "l:buscar",
     "l:calor",
     "l:celular",
+    "l:cliente",
     "l:cocina",
+    "l:comer",
     "l:correr",
     "l:cosa",
     "l:cuaderno",
@@ -172,22 +204,27 @@
     "l:hacer",
     "l:hombre",
     "l:huella",
+    "l:ir",
     "l:ladrillo",
     "l:llover",
     "l:lluvia",
+    "l:loro",
     "l:luz",
     "l:mano",
-    "l:mesero",
+    "l:mijo",
     "l:mirar",
+    "l:mojado",
+    "l:momento",
     "l:mostrador",
-    "l:negro",
     "l:nube",
     "l:ocurrir",
     "l:orden",
     "l:preocupado",
-    "l:querer",
+    "l:puerta",
     "l:quién",
     "l:qué",
+    "l:reír",
+    "l:saber",
     "l:sacar",
     "l:salir",
     "l:seguir",
