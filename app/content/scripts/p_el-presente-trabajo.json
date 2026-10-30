@@ -1,0 +1,43 @@
+{
+  "node": "p:el-presente-trabajo",
+  "hook": {
+    "line": "Your first paper in Spanish needs an opening paragraph, and readers decide there whether to keep going. Papers announce their own plan in a few fixed phrases, so you can borrow them whole.",
+    "es": "El presente trabajo se centra en la vivienda informal en Bogotá.",
+    "en": "This paper focuses on informal housing in Bogotá."
+  },
+  "examples": [
+    { "es": "El presente trabajo se centra en la vivienda informal en Bogotá.", "en": "This paper focuses on informal housing in Bogotá." },
+    { "es": "Este escrito se propone analizar el impacto del transporte público.", "en": "This paper aims to analyse the impact of public transport." },
+    { "es": "En primer lugar se expondrá el marco teórico.", "en": "First, the theoretical framework will be set out." },
+    { "es": "A continuación se presentarán los resultados.", "en": "Next, the results will be presented." },
+    { "es": "Por último, se discutirán las conclusiones.", "en": "Finally, the conclusions will be discussed." },
+    { "es": "El presente artículo se ocupa de la memoria de la ciudad.", "en": "This article deals with the memory of the city." }
+  ],
+  "rule": "A paper talks about itself in the third person: *el presente trabajo*, *este escrito*, *el presente artículo*. Then it names its aim with *se propone* + infinitive, or its topic with *se centra en* or *se ocupa de*.\n\nThe plan uses *se* + the future, with the order marked by *en primer lugar*, *a continuación*, *por último*. English says \"will be presented\"; Spanish says *se presentarán*. The verb agrees with what is presented: *se expondrá el marco*, *se presentarán los resultados*.",
+  "smallPrint": "Teachers call this the *se* passive in the future, used for the roadmap of an academic text.",
+  "readAndPick": [
+    { "es": "En primer lugar se expondrá el marco teórico.", "options": ["First, the theoretical framework will be set out.", "First, the theoretical framework was set out.", "First, I set out the theoretical framework."], "answer": 0 },
+    { "es": "A continuación se presentarán los resultados.", "options": ["Next, the result will be presented.", "Next, the results will be presented.", "Next, the results were presented."], "answer": 1 },
+    { "es": "Este escrito se propone analizar el transporte público.", "options": ["This paper was analysed by public transport.", "This paper aims to analyse public transport.", "This paper proposes public transport to me."], "answer": 1 },
+    { "es": "Por último, se discutirán las conclusiones.", "options": ["Finally, the conclusions will be discussed.", "Finally, the conclusion will be discussed.", "Finally, the conclusions were discussed."], "answer": 0 },
+    { "es": "A continuación se describirá el método.", "options": ["Next, the method was described.", "Next, the methods will be described.", "Next, the method will be described."], "answer": 2 },
+    { "es": "El presente trabajo se centra en la vivienda informal.", "options": ["This paper focuses on informal housing.", "This paper was centred on informal housing.", "I focus this paper on informal housing."], "answer": 0 },
+    { "es": "En segundo lugar se analizarán tres casos.", "options": ["Second, three cases were analysed.", "Second, one case will be analysed.", "Second, three cases will be analysed."], "answer": 2 },
+    { "es": "El presente artículo se ocupa de la memoria de la ciudad.", "options": ["This article is occupied by the city.", "This article deals with the memory of the city.", "This article remembers the city."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *se centra* or *se centran* and type the whole sentence: *El presente trabajo ___ en la vivienda informal.*", "answer": "El presente trabajo se centra en la vivienda informal.", "accept": [], "why": "One paper, so the verb is singular: *se centra*." },
+    { "prompt": "Type in Spanish: First, the theoretical framework will be set out.", "answer": "En primer lugar se expondrá el marco teórico.", "accept": ["En primer lugar, se expondrá el marco teórico."], "why": "*Se* + future, and the verb agrees with the one framework: *se expondrá*." },
+    { "prompt": "Type in Spanish: Next, the results will be presented.", "answer": "A continuación se presentarán los resultados.", "accept": ["A continuación, se presentarán los resultados."], "why": "The results are plural, so the verb is plural: *se presentarán*." },
+    { "prompt": "Type in Spanish: This paper aims to analyse public transport.", "answer": "Este escrito se propone analizar el transporte público.", "accept": ["El presente trabajo se propone analizar el transporte público.", "Este trabajo se propone analizar el transporte público."], "why": "*Se propone* + infinitive names the aim of the paper." },
+    { "prompt": "Type in Spanish: Finally, the conclusions will be discussed.", "answer": "Por último, se discutirán las conclusiones.", "accept": ["Por último se discutirán las conclusiones."], "why": "*Por último* closes the list, and the plural *conclusiones* takes *se discutirán*." },
+    { "prompt": "Make it plural: *Se analizará el caso.* Say: The cases will be analysed.", "answer": "Se analizarán los casos.", "accept": [], "why": "More than one case means the verb ending changes too: *se analizarán*." },
+    { "prompt": "Type in Spanish: Next, the method will be explained.", "answer": "A continuación se explicará el método.", "accept": ["A continuación, se explicará el método."], "why": "One method, so the verb stays singular: *se explicará*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Este papel se propone analizar el transporte público.", "right": "Este escrito se propone analizar el transporte público.", "why": "Almost. *Papel* is a sheet of paper; a written piece is *un escrito* or *un trabajo*." },
+    { "wrong": "En primer lugar se expondrán el marco teórico.", "right": "En primer lugar se expondrá el marco teórico.", "why": "Almost. The verb agrees with what is set out, and there is only one framework." },
+    { "wrong": "El presente trabajo se centra la vivienda informal.", "right": "El presente trabajo se centra en la vivienda informal.", "why": "Almost. *Centrarse* always takes *en* before the topic." }
+  ],
+  "personal": "Write the opening line of a paper about something you care about, starting with *El presente trabajo se centra en*."
+}

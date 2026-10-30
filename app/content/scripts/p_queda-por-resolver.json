@@ -1,0 +1,43 @@
+{
+  "node": "p:queda-por-resolver",
+  "hook": {
+    "line": "A good conclusion does not just repeat what you said. It also says what is still open, and Spanish has a neat way to do that in one short phrase.",
+    "es": "Queda por resolver si el efecto se mantiene a largo plazo.",
+    "en": "It remains to be established whether the effect lasts in the long term."
+  },
+  "examples": [
+    { "es": "Queda por resolver si el efecto se mantiene a largo plazo.", "en": "It remains to be established whether the effect lasts in the long term." },
+    { "es": "Quedan por estudiar los casos rurales.", "en": "The rural cases are yet to be studied." },
+    { "es": "Queda por decidir quién pagará el arreglo.", "en": "It remains to be decided who will pay for the repair." },
+    { "es": "Queda por ver si Altamira cumple su palabra.", "en": "It remains to be seen whether Altamira keeps its word." },
+    { "es": "Quedan por explicar las causas del problema.", "en": "The causes of the problem are yet to be explained." },
+    { "es": "Queda mucho por hacer.", "en": "There is still a lot to do." }
+  ],
+  "rule": "*Queda(n) por* + infinitive names what is still unfinished. English needs a passive (\"remains to be solved\"); Spanish keeps the plain infinitive: *queda por resolver*.\n\n*Queda* agrees with the thing left over: *queda por decidir el precio*, *quedan por estudiar los casos*. When a question follows (*si*, *quién*, *cómo*), it is one idea, so *queda* stays singular: *queda por ver si…*.",
+  "smallPrint": "Teachers call this *quedar por* + infinitive. It has a passive meaning even though the infinitive looks active.",
+  "readAndPick": [
+    { "es": "Queda por resolver el problema.", "options": ["The problem has been solved.", "The problem remains to be solved.", "The problems remain to be solved."], "answer": 1 },
+    { "es": "Quedan por resolver las dudas.", "options": ["The doubts remain to be resolved.", "The doubt remains to be resolved.", "The doubts were resolved."], "answer": 0 },
+    { "es": "Queda por ver si Altamira cumple su palabra.", "options": ["Altamira will keep its word.", "It remains to be seen whether Altamira keeps its word.", "It remains to be seen whether Altamira keeps its words."], "answer": 1 },
+    { "es": "Queda por decidir la fecha.", "options": ["The dates remain to be decided.", "The date was decided.", "The date is yet to be decided."], "answer": 2 },
+    { "es": "Quedan por estudiar los casos rurales.", "options": ["The rural case is yet to be studied.", "The rural cases are yet to be studied.", "The rural cases were studied."], "answer": 1 },
+    { "es": "Queda mucho por hacer.", "options": ["There is still a lot to do.", "There is a lot of work done.", "There are still many things to do."], "answer": 0 },
+    { "es": "Queda por decidir quién pagará el arreglo.", "options": ["It remains to be decided who paid for the repair.", "It remains to be decided who will pay for the repair.", "It was decided who will pay for the repair."], "answer": 1 },
+    { "es": "Quedan por explicar las causas.", "options": ["The causes remain to be explained.", "The cause remains to be explained.", "The causes were explained."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *queda* or *quedan* and type the whole sentence: *___ por estudiar los casos rurales.*", "answer": "Quedan por estudiar los casos rurales.", "accept": [], "why": "The cases are plural, so *queda* becomes *quedan*." },
+    { "prompt": "Type in Spanish: It remains to be decided who will pay for the repair.", "answer": "Queda por decidir quién pagará el arreglo.", "accept": [], "why": "A question after *queda por* counts as one idea, so *queda* stays singular." },
+    { "prompt": "Type in Spanish: The causes are yet to be explained.", "answer": "Quedan por explicar las causas.", "accept": ["Quedan por explicar las causas del problema."], "why": "Several causes left over, so *quedan*, then the plain infinitive." },
+    { "prompt": "Type in Spanish: It remains to be seen whether Altamira keeps its word.", "answer": "Queda por ver si Altamira cumple su palabra.", "accept": [], "why": "*Queda por ver si…* is the Spanish way to say \"it remains to be seen whether\"." },
+    { "prompt": "Type in Spanish: There is still a lot to do.", "answer": "Queda mucho por hacer.", "accept": [], "why": "*Mucho* is singular here, so the verb is *queda*." },
+    { "prompt": "Make it plural: *Queda por resolver un problema.* Say: Two problems remain to be solved.", "answer": "Quedan por resolver dos problemas.", "accept": [], "why": "Two problems means *quedan*; the infinitive does not change." },
+    { "prompt": "Type in Spanish: Several questions remain to be answered.", "answer": "Quedan por responder varias preguntas.", "accept": ["Quedan varias preguntas por responder."], "why": "The questions are plural, so *quedan* comes with *por responder*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Quedan por resolver el problema.", "right": "Queda por resolver el problema.", "why": "Almost. The verb agrees with what is left, and there is one problem." },
+    { "wrong": "Queda por ser resuelto el problema.", "right": "Queda por resolver el problema.", "why": "Almost. Spanish keeps a plain infinitive here; no *ser* + participle is needed." },
+    { "wrong": "Queda a resolver si el efecto dura.", "right": "Queda por resolver si el efecto dura.", "why": "Almost. The phrase always uses *por*, not *a*." }
+  ],
+  "personal": "Say one thing that is still open in your life right now, starting with *Queda por*."
+}

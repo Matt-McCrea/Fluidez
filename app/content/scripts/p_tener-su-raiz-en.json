@@ -1,0 +1,43 @@
+{
+  "node": "p:tener-su-raiz-en",
+  "hook": {
+    "line": "Good essays go past the symptom to the cause underneath. Spanish talks about causes with the same plant picture as English, so this one feels familiar.",
+    "es": "El conflicto tiene su raíz en el reparto de tierras.",
+    "en": "The conflict has its roots in the distribution of land."
+  },
+  "examples": [
+    { "es": "El conflicto tiene su raíz en el reparto de tierras.", "en": "The conflict has its roots in the distribution of land." },
+    { "es": "Hay que cortar el problema de raíz.", "en": "We have to tackle the problem at the root." },
+    { "es": "Muchos problemas del barrio tienen su raíz en la falta de agua.", "en": "Many of the neighbourhood's problems have their root in the lack of water." },
+    { "es": "La desconfianza tiene su raíz en una vieja historia.", "en": "Distrust has its root in an old story." },
+    { "es": "Quieren arrancar de raíz la tradición del barrio.", "en": "They want to uproot the neighbourhood's tradition completely." },
+    { "es": "Hay que cortar de raíz el rumor.", "en": "We have to put a stop to the rumour at the root." }
+  ],
+  "rule": "*Tener su raíz en* + cause: the deep cause is the thing after *en*. The effect comes first, the cause second: *el conflicto tiene su raíz en el reparto de tierras*. Spanish usually keeps *raíz* singular, even with a plural subject: *tienen su raíz en*.\n\n*De raíz* goes after *cortar*, *arrancar* or *atacar* and means getting rid of something completely, at its source. No article: *de raíz*, not *de la raíz*.",
+  "smallPrint": "Teachers call these figurative uses of *raíz*. The related *la semilla de* names the small beginning of something that grew.",
+  "readAndPick": [
+    { "es": "El conflicto tiene su raíz en el reparto de tierras.", "options": ["The conflict has its roots in the distribution of land.", "The conflict will end the distribution of land.", "The distribution of land has its roots in the conflict."], "answer": 0 },
+    { "es": "Hay que cortar el problema de raíz.", "options": ["We have to ignore the problem.", "We have to wait for the problem.", "We have to tackle the problem at the root."], "answer": 2 },
+    { "es": "Muchos problemas tienen su raíz en la falta de agua.", "options": ["Many problems are the root of the lack of water.", "Many problems have their root in the lack of water.", "Many problems cause water."], "answer": 1 },
+    { "es": "La falta de agua tiene su raíz en la mala gestión.", "options": ["Poor management comes from the lack of water.", "The lack of water comes from poor management.", "Poor management cuts the water."], "answer": 1 },
+    { "es": "La desconfianza tiene su raíz en una vieja historia.", "options": ["Distrust has its root in an old story.", "An old story has its root in distrust.", "Distrust ends an old story."], "answer": 0 },
+    { "es": "Quieren arrancar de raíz la tradición del barrio.", "options": ["They want to plant the neighbourhood's tradition.", "They want to uproot the neighbourhood's tradition completely.", "They want to sell the neighbourhood's tradition."], "answer": 1 },
+    { "es": "Hay que cortar de raíz el rumor.", "options": ["We have to put a stop to the rumour at the root.", "We have to repeat the rumour.", "We have to cut the rumour a little."], "answer": 0 },
+    { "es": "El miedo tiene su raíz en la desconfianza.", "options": ["Distrust has its root in fear.", "Fear has its root in distrust.", "Fear is the root of distrust."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *en* or *de* and type the whole sentence: *El conflicto tiene su raíz ___ el reparto de tierras.*", "answer": "El conflicto tiene su raíz en el reparto de tierras.", "accept": [], "why": "The cause comes after *en*." },
+    { "prompt": "Type in Spanish: Distrust has its roots in an old story.", "answer": "La desconfianza tiene su raíz en una vieja historia.", "accept": ["La desconfianza tiene su raíz en una historia vieja."], "why": "Effect first, then *tiene su raíz en* + the cause." },
+    { "prompt": "Type in Spanish: We have to tackle the problem at the root.", "answer": "Hay que cortar el problema de raíz.", "accept": ["Hay que atacar el problema de raíz."], "why": "*De raíz* has no article, and goes after the verb." },
+    { "prompt": "Type in Spanish: Many of the neighbourhood's problems have their root in the lack of water.", "answer": "Muchos problemas del barrio tienen su raíz en la falta de agua.", "accept": [], "why": "A plural subject takes *tienen*, but *raíz* stays singular." },
+    { "prompt": "Type in Spanish: The rumour has its root in an old argument.", "answer": "El rumor tiene su raíz en una vieja discusión.", "accept": ["El rumor tiene su raíz en una discusión vieja."], "why": "Same frame: the rumour is the effect, the argument is the cause." },
+    { "prompt": "Type in Spanish: They want to uproot the neighbourhood's tradition completely.", "answer": "Quieren arrancar de raíz la tradición del barrio.", "accept": [], "why": "*Arrancar de raíz* means to remove something completely." },
+    { "prompt": "Make it plural: *El problema tiene su raíz en el miedo.* Say: The problems have their root in fear.", "answer": "Los problemas tienen su raíz en el miedo.", "accept": [], "why": "Two things change: *los problemas* and *tienen*; *su raíz* stays." }
+  ],
+  "pitfalls": [
+    { "wrong": "El conflicto tiene su raíz de la injusticia.", "right": "El conflicto tiene su raíz en la injusticia.", "why": "Almost. The cause comes after *en*, not *de*." },
+    { "wrong": "Hay que cortar el problema de la raíz.", "right": "Hay que cortar el problema de raíz.", "why": "Almost. The fixed phrase is *de raíz*, with no article." },
+    { "wrong": "Hay que cortar el problema en raíz.", "right": "Hay que cortar el problema de raíz.", "why": "Almost. English says \"at the root\", but Spanish uses *de*." }
+  ],
+  "personal": "Think of a problem you know well and say where it comes from, starting with *Tiene su raíz en*."
+}
