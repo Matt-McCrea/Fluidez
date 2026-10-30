@@ -1,0 +1,203 @@
+{
+  "id": "sc-u34-a",
+  "unit": "u34",
+  "title": "Una denuncia larga",
+  "spare": false,
+  "brief": "You're Tomás, at the police station on a bad day. The officer is a stranger, so use usted. Explain what happened to your phone and your wallet, and say what you think about the note.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Comisaría de La Candelaria, buenas tardes. Siéntese. ¿Qué le pasó?",
+      "npcEn": "La Candelaria police station, good afternoon. Have a seat. What happened to you?",
+      "intent": "Say that someone stole your phone on the bus.",
+      "accept": [
+        "Me robaron el celular en el bus.",
+        "Buenas tardes. En el bus me robaron el celular.",
+        "Me robaron el celular en un bus esta mañana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme robaron(?![a-zñáéíóú])",
+          "flags": "i",
+          "label": "your phone was stolen from you: me robaron"
+        }
+      ],
+      "focus": "g:possessive-dative",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Lo siento mucho. ¿Perdió algo más?",
+      "npcEn": "I'm very sorry. Did you lose anything else?",
+      "intent": "Say your wallet got lost too (it slipped away from you, nobody's fault).",
+      "accept": [
+        "También se me perdió la billetera.",
+        "Sí, se me perdió la billetera con la cédula.",
+        "Creo que se me cayó la billetera en el bus."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse me (perdió|cayó|quedó|olvidó)(?![a-zñáéíóú])",
+          "flags": "i",
+          "label": "an accident happening to you: se me perdió"
+        }
+      ],
+      "focus": "g:se-accidental",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hay otra cosa. Aquí está el papel que venía con la piedra de su ventana. Dice «Vendan». Un vecino cree que fue una broma.",
+      "npcEn": "There's something else. Here is the note that came with the stone from your window. It says \"Sell\". A neighbour thinks it was a joke.",
+      "intent": "Say you don't think it was a joke.",
+      "accept": [
+        "No creo que haya sido una broma.",
+        "Pues yo no creo que haya sido una broma.",
+        "Dudo que haya sido una broma."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bha(ya|yas|yamos|yan)\\s+[a-zñáéíóú]+(ado|ido|to|cho)(?![a-zñáéíóú])",
+          "flags": "i",
+          "label": "doubting something that already happened: no creo que haya sido"
+        }
+      ],
+      "focus": "g:subj-perfect",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Entiendo. Con esto basta por ahora. ¿Quiere preguntarme algo?",
+      "npcEn": "I understand. That's enough for now. Do you want to ask me anything?",
+      "intent": "Ask when they will give you a copy of the report.",
+      "accept": [
+        "¿Cuándo me dan una copia de la denuncia?",
+        "¿Cuándo puedo tener la copia de la denuncia, por favor?",
+        "Sí, ¿cuándo me da la copia de la denuncia?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "c:no-tiene-importancia",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mañana por la tarde. Por suerte nadie salió herido.",
+      "npcEn": "Tomorrow afternoon. Luckily nobody was hurt.",
+      "intent": "Thank the officer and say goodbye.",
+      "accept": [
+        "Muchas gracias, hasta mañana.",
+        "Gracias por su ayuda. Hasta mañana.",
+        "Gracias, señor. Hasta mañana por la tarde."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "gracias"
+        }
+      ],
+      "focus": "c:por-suerte",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:algo-mas",
+    "c:chao-nos-vemos",
+    "c:creo-que",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-regala",
+    "c:por-favor",
+    "c:por-suerte",
+    "c:puedo",
+    "c:pues",
+    "c:sentido-pesame",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-doubt",
+    "g:subj-perfect",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:ahora",
+    "l:aquí",
+    "l:ayuda",
+    "l:bastar",
+    "l:billetera",
+    "l:broma",
+    "l:buena",
+    "l:bus",
+    "l:caerse",
+    "l:celular",
+    "l:comisaría",
+    "l:copia",
+    "l:cosa",
+    "l:creer",
+    "l:cuándo",
+    "l:cédula",
+    "l:dar",
+    "l:decir",
+    "l:denuncia",
+    "l:dudar",
+    "l:entender",
+    "l:estar",
+    "l:favor",
+    "l:herir",
+    "l:mañana",
+    "l:papel",
+    "l:pasar",
+    "l:perder",
+    "l:perderse",
+    "l:piedra",
+    "l:poder",
+    "l:preguntar",
+    "l:querer",
+    "l:qué",
+    "l:robar",
+    "l:salir",
+    "l:sentarse",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:suerte",
+    "l:tarde",
+    "l:tener",
+    "l:vecino",
+    "l:venir",
+    "l:ventana",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:preguntar-pedir"
+  ]
+}

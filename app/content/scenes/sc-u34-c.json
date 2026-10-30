@@ -1,0 +1,199 @@
+{
+  "id": "sc-u34-c",
+  "unit": "u34",
+  "title": "Un reclamo",
+  "spare": true,
+  "brief": "You're Tomás, calling your insurance company about the café. The agent is a stranger, so use usted. Say what happened to the window and the cups, and mention that your phone is gone.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Aseguradora Andina, habla Camila. ¿En qué le puedo ayudar?",
+      "npcEn": "Andina Insurance, this is Camila. How can I help you?",
+      "intent": "Say that someone broke the window of your café.",
+      "accept": [
+        "Buenas tardes. Nos rompieron la ventana del café.",
+        "Hola, alguien nos rompió la ventana.",
+        "Me rompieron la ventana del café anoche."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(nos|me) rompi(eron|ó)(?![a-zñáéíóú])",
+          "flags": "i",
+          "label": "something done to you: nos rompieron"
+        }
+      ],
+      "focus": "g:possessive-dative",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Lo siento mucho. ¿Cuándo ocurrió?",
+      "npcEn": "I'm very sorry. When did it happen?",
+      "intent": "Say it happened last night and you found the window broken this morning.",
+      "accept": [
+        "Anoche. Esta mañana encontré la ventana rota.",
+        "Pasó anoche. Encontré el vidrio roto al abrir el café.",
+        "Fue anoche, y encontré la ventana rota."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bencontré(?![a-zñáéíóú])",
+          "flags": "i",
+          "label": "found it already broken: encontré la ventana rota"
+        }
+      ],
+      "focus": "p:encontrar-participle",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Se llevaron algo?",
+      "npcEn": "Did they take anything?",
+      "intent": "Say they took nothing, but some cups fell and broke.",
+      "accept": [
+        "No se llevaron nada, pero se nos cayeron unas tazas.",
+        "Nada, pero se nos rompieron unas tazas.",
+        "Nada. Pero se nos cayeron todas las tazas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse nos \\w+",
+          "flags": "i",
+          "label": "an accident happening to us: se nos cayeron"
+        }
+      ],
+      "focus": "g:se-accidental",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Necesito la denuncia de la policía. ¿Ya la hizo?",
+      "npcEn": "I need the police report. Have you already filed it?",
+      "intent": "Say yes, you did it this afternoon, and you hope it hasn't been lost.",
+      "accept": [
+        "Sí, la hice esta tarde. Espero que no se haya perdido.",
+        "Sí. Fui a la comisaría y espero que no se haya perdido el papel.",
+        "Ya la hice hoy. Espero que no se haya perdido."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bha(ya|yas|yamos|yan)\\s+[a-zñáéíóú]+(ado|ido|to|cho)(?![a-zñáéíóú])",
+          "flags": "i",
+          "label": "hoping about something that already happened: espero que no se haya perdido"
+        }
+      ],
+      "focus": "g:subj-perfect",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "No se preocupe, la recibimos. En tres días le llamamos.",
+      "npcEn": "Don't worry, we received it. We'll call you in three days.",
+      "intent": "Thank her and ask her to call you at the café, because your phone was stolen.",
+      "accept": [
+        "Gracias. Llámeme al café, porque me robaron el celular.",
+        "Muchas gracias. ¿Me puede llamar al café? Me robaron el celular.",
+        "Gracias. Llámeme al café, por favor."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "gracias"
+        }
+      ],
+      "focus": "g:possessive-dative",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:en-que-le-puedo-servir",
+    "c:fui",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-puede-ayudar",
+    "c:no-se",
+    "c:no-te-preocupes",
+    "c:por-favor",
+    "c:porque",
+    "c:puedo",
+    "c:sentido-pesame",
+    "g:cause-result",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-perfect",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:abrir",
+    "l:anoche",
+    "l:aseguradora",
+    "l:ayudar",
+    "l:buena",
+    "l:caerse",
+    "l:café",
+    "l:celular",
+    "l:comisaría",
+    "l:cuándo",
+    "l:denuncia",
+    "l:día",
+    "l:encontrar",
+    "l:esperar",
+    "l:favor",
+    "l:hablar",
+    "l:hacer",
+    "l:hoy",
+    "l:ir",
+    "l:llamar",
+    "l:llevarse",
+    "l:mañana",
+    "l:necesitar",
+    "l:ocurrir",
+    "l:papel",
+    "l:pasar",
+    "l:perder",
+    "l:poder",
+    "l:policía",
+    "l:preocuparse",
+    "l:qué",
+    "l:recibir",
+    "l:robar",
+    "l:romper",
+    "l:romperse",
+    "l:sentir",
+    "l:ser",
+    "l:tarde",
+    "l:taza",
+    "l:ventana",
+    "l:vidrio",
+    "p:demonstratives-basic",
+    "p:encontrar-participle",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:personal-a",
+    "p:prep-questions-basic",
+    "p:request-ladder"
+  ]
+}

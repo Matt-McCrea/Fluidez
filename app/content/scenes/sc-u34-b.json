@@ -1,0 +1,193 @@
+{
+  "id": "sc-u34-b",
+  "unit": "u34",
+  "title": "Guayaba y cuchillo",
+  "spare": false,
+  "brief": "You're Tomás in the café kitchen. Vale, your friend, has just cut her finger slicing guava, so use tú. Check on her, ask about the finger, and stay calm when the espresso machine dies too.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Ay! Me corté el dedo con el cuchillo.",
+      "npcEn": "Ouch! I cut my finger with the knife.",
+      "intent": "Say you hope she hasn't cut herself badly.",
+      "accept": [
+        "Espero que no te hayas cortado mucho.",
+        "Ay, Vale. Espero que no te hayas hecho daño.",
+        "Espero que no te hayas cortado muy fuerte."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bha(ya|yas|yamos|yan)\\s+[a-zñáéíóú]+(ado|ido|to|cho)(?![a-zñáéíóú])",
+          "flags": "i",
+          "label": "hoping about something that already happened: espero que no te hayas"
+        }
+      ],
+      "focus": "g:subj-perfect",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Poco, pero sangra. Y se me cayó la fruta.",
+      "npcEn": "A little, but it's bleeding. And the fruit fell.",
+      "intent": "Ask if she has already washed her finger.",
+      "accept": [
+        "¿Ya te lavaste el dedo?",
+        "¿Te lavaste el dedo con agua?",
+        "Vale, ¿te lavaste el dedo?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bte lavaste (el|la)\\b",
+          "flags": "i",
+          "label": "body part with me/te: te lavaste el dedo"
+        }
+      ],
+      "focus": "g:possessive-dative",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Sí. Y mira, la máquina de espresso no funciona. Se nos dañó otra vez.",
+      "npcEn": "Yes. And look, the espresso machine isn't working. It broke on us again.",
+      "intent": "Say you doubt it broke by itself.",
+      "accept": [
+        "Dudo que se haya dañado sola.",
+        "No creo que se haya dañado sola.",
+        "Qué raro. No creo que se haya dañado sola."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bha(ya|yas|yamos|yan)\\s+[a-zñáéíóú]+(ado|ido|to|cho)(?![a-zñáéíóú])",
+          "flags": "i",
+          "label": "doubting something that already happened: dudo que se haya dañado"
+        }
+      ],
+      "focus": "g:subj-perfect",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Perdón, qué desastre. Fue culpa mía.",
+      "npcEn": "Sorry, what a disaster. It was my fault.",
+      "intent": "Tell her it doesn't matter, these things happen.",
+      "accept": [
+        "No tiene importancia, son cosas que pasan.",
+        "Tranquila, no tiene importancia.",
+        "Son cosas que pasan, Vale."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "no tiene importancia|son cosas que pasan",
+          "flags": "i",
+          "label": "use the chunk: no tiene importancia, son cosas que pasan"
+        }
+      ],
+      "focus": "c:no-tiene-importancia",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Gracias, Tomás. Mientras llamo al técnico, ¿me regalas un tinto?",
+      "npcEn": "Thanks, Tomás. While I call the technician, can you give me a black coffee?",
+      "intent": "Say you'll make her a tinto and she should sit down.",
+      "accept": [
+        "Claro, te hago un tinto. Siéntate.",
+        "Yo te preparo un tinto, siéntate.",
+        "Te hago un tinto ya. Descansa un poco."
+      ],
+      "require": [],
+      "focus": "g:se-accidental",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:creo-que",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:no-tiene-importancia",
+    "c:oye-mira",
+    "c:perdon-disculpe",
+    "c:son-cosas-que-pasan",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:gender-articles",
+    "g:possessives-stressed",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-accidental",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-doubt",
+    "g:subj-irregulars",
+    "g:subj-perfect",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "l:agua",
+    "l:caerse",
+    "l:claro",
+    "l:cortar",
+    "l:cortarse",
+    "l:cosa",
+    "l:creer",
+    "l:cuchillo",
+    "l:culpa",
+    "l:dañado",
+    "l:daño",
+    "l:dedo",
+    "l:desastre",
+    "l:descansar",
+    "l:dudar",
+    "l:esperar",
+    "l:fruta",
+    "l:fuerte",
+    "l:funcionar",
+    "l:hacer",
+    "l:importancia",
+    "l:lavarse",
+    "l:llamar",
+    "l:mirar",
+    "l:máquina",
+    "l:pasar",
+    "l:perdón",
+    "l:preparar",
+    "l:qué",
+    "l:raro",
+    "l:regalar",
+    "l:sentarse",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:tranquilo",
+    "l:técnico",
+    "l:vez",
+    "p:caerse-lastimarse",
+    "p:con-sin",
+    "p:lavarse-las-manos",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:otro-no-article",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:por-culpa-de",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo"
+  ]
+}
