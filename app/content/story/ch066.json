@@ -1,0 +1,241 @@
+{
+  "id": "ch066",
+  "unit": "u23",
+  "title": "¿Cuál cuenta?",
+  "text": "Tomás puso las tres cajas de Rosa en la mesa de Hernando, y Simón se sentó encima de la primera.\nJhon Fredy: ¡Esta impresora no sirve!\nSimón: ¡No sirve! ¡No sirve!\nEn las cajas había recetas, fotos, cartas y papeles de cuarenta años, sin orden.\nVale sacó un papel con colores y un sol enorme. Abajo, Rosa escribió: «Arte de mi nieto Tomás, seis años».\nVale: ¿Y esto qué es?\nTomás: Es un carro. O un perro. No sé.\nVale: Rosa lo guardó veintiocho años.\nTomás lo guardó en la chaqueta.\nMariana: Con papeles enfrentamos la multa, y también a Altamira. Y en el banco está la plata que Rosa destinaba al arriendo.\nA las diez, Hernando los llevó al banco en la Burra, con Simón en el hombro.\nTomás: Quería preguntar por la cuenta de mi abuela, Rosa Herrera. Queremos recuperar la plata.\nEmpleado: ¿Cuál cuenta? Su abuela tiene dos.\nTomás: ¿Y cuál es la del café?\nEmpleado: Las dos, señor. Una es del café, y otra también es del café.\nTomás: ¿Qué tengo que hacer? ¿Qué papeles necesito?\nEmpleado: Tres documentos. Pero para el primero necesita cuatro documentos más. Y para el segundo, otros cuatro.\nMariana: ¿Qué es esto? ¿Un banco o un laberinto?\nEn ese momento llegó el gerente, muy elegante.\nGerente: ¿En qué los puedo ayudar?\nSimón: ¡No sirve! ¡No sirve!\nToda la fila se rió. El gerente no.\nEn la lista, el cuarto documento era la última cuenta del teléfono del café.\nVale: ¿Teléfono? En el café no hay teléfono. Rosa lo quitó en 2014.",
+  "gloss": [
+    {
+      "es": "impresora",
+      "en": "printer"
+    },
+    {
+      "es": "sin orden",
+      "en": "in no order at all"
+    },
+    {
+      "es": "Arte de mi nieto Tomás, seis años.",
+      "en": "Art by my grandson Tomás, six years old."
+    },
+    {
+      "es": "multa",
+      "en": "fine (a penalty you pay)"
+    },
+    {
+      "es": "Con papeles enfrentamos la multa, y también a Altamira.",
+      "en": "With paperwork we fight the fine, and Altamira too."
+    },
+    {
+      "es": "la plata que Rosa destinaba al arriendo",
+      "en": "the money Rosa set aside for the rent"
+    },
+    {
+      "es": "Una es del café, y otra también es del café.",
+      "en": "One is the café's, and the other one is the café's too."
+    },
+    {
+      "es": "laberinto",
+      "en": "maze"
+    },
+    {
+      "es": "muy elegante",
+      "en": "very smartly dressed"
+    },
+    {
+      "es": "la última cuenta del teléfono",
+      "en": "the latest phone bill"
+    },
+    {
+      "es": "Rosa lo quitó en 2014.",
+      "en": "Rosa got rid of it in 2014."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Vale find in the boxes?",
+      "options": [
+        "A recipe for almojábanas",
+        "A picture Tomás made when he was six, kept by Rosa",
+        "Altamira's letter",
+        "Joaquín's key"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Mariana want Rosa's bank account?",
+      "options": [
+        "To buy a new printer",
+        "To pay Jhon Fredy",
+        "Because the money Rosa set aside for the rent is there, and they need paperwork to fight the fine",
+        "Because Altamira asked for it"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does the bank want, in the end?",
+      "options": [
+        "Three documents, and four more documents for each of them",
+        "Only Tomás's passport",
+        "A signature from Vale",
+        "Nothing, the gerente fixes it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué grita Simón delante del gerente?",
+      "options": [
+        "¡Feliz cumpleaños!",
+        "¡Sin problema!",
+        "¡No sirve!",
+        "¡Que te vaya bien!"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Why is the last document on the list a problem?",
+      "options": [
+        "It is in English",
+        "It is a phone bill, and the café has had no phone since 2014",
+        "Altamira has it",
+        "Simón ate it"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "The bank wants the café's latest phone bill, for a phone Rosa got rid of in 2014. Tomorrow Tomás goes looking for a bill that shouldn't exist, and finds twelve years of them.",
+  "rereadQuestions": [
+    {
+      "q": "Where did Simón learn to shout 'No sirve'?",
+      "options": [
+        "From the bank manager",
+        "From Jhon Fredy, shouting at the printer",
+        "From Hernando's taxi radio",
+        "From Rosa"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How many accounts did Rosa have, and whose were they?",
+      "options": [
+        "One, in Joaquín's name",
+        "Three, all in Vale's name",
+        "Two, and both were the café's",
+        "Two, one for her and one for Hernando"
+      ],
+      "answer": 2
+    }
+  ],
+  "requires": [
+    "c:era",
+    "c:hay",
+    "c:la-cuenta",
+    "c:no-se",
+    "c:no-sirve",
+    "c:puedo",
+    "c:que-es-esto",
+    "c:que-tengo-que-hacer",
+    "c:queria-preguntar",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:container-de",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abajo",
+    "l:abuela",
+    "l:arriendo",
+    "l:arte",
+    "l:ayudar",
+    "l:año",
+    "l:banco",
+    "l:café",
+    "l:caja",
+    "l:carro",
+    "l:carta",
+    "l:chaqueta",
+    "l:color",
+    "l:contar",
+    "l:cuenta",
+    "l:cuál",
+    "l:destinar",
+    "l:documento",
+    "l:elegante",
+    "l:empleado",
+    "l:encima",
+    "l:enfrentar",
+    "l:enorme",
+    "l:escribir",
+    "l:estar",
+    "l:fila",
+    "l:foto",
+    "l:gerente",
+    "l:guardar",
+    "l:hacer",
+    "l:hombro",
+    "l:impresora",
+    "l:listo",
+    "l:llegar",
+    "l:llevar",
+    "l:mesa",
+    "l:momento",
+    "l:multa",
+    "l:necesitar",
+    "l:nieto",
+    "l:orden",
+    "l:papel",
+    "l:perro",
+    "l:plata",
+    "l:poder",
+    "l:poner",
+    "l:preguntar",
+    "l:querer",
+    "l:quitar",
+    "l:qué",
+    "l:receta",
+    "l:recuperar",
+    "l:reír",
+    "l:saber",
+    "l:sacar",
+    "l:sentarse",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:sol",
+    "l:teléfono",
+    "l:tener"
+  ]
+}

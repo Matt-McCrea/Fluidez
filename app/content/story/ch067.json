@@ -1,0 +1,258 @@
+{
+  "id": "ch067",
+  "unit": "u23",
+  "title": "Marque estrella",
+  "text": "«Teléfonos Andinos, buenos días. Para quejas, marque uno. Para reclamos, marque dos».\nTomás marcó dos, uno y estrella, y escuchó música cuarenta minutos.\nEn la mesa había doce años de recibos.\nMariana: Rosa quitó el teléfono en 2014, pero todos los meses el banco pagaba la factura.\nEntonces Tomás vio el último recibo. Encima, Rosa escribió: «Si Joaquín llama, el número tiene que existir».\nNadie habló por un rato.\nAl otro día, en la oficina de la empresa había una fila de cuarenta personas. A las once, Tomás llegó a la ventanilla con un formulario.\nEmpleada: ¿Me colabora con el número de cédula?\nTomás: Tengo pasaporte.\nEmpleada: Sin cédula no hay trámite, señor. ¿Es una queja o un reclamo?\nVale le pasó su cédula.\nTomás: Ninguno de los dos. La línea de mi abuela no funciona, y queremos arreglarla.\nEmpleada: Esa línea tiene dos facturas sin pagar. Primero hay que pagar, y después hay que reparar la línea. Toca consignar en el banco.\nEn el cajero, Tomás quería retirar la plata, pero no sabía la clave de su tarjeta.\nTomás: ¿Cuál es mi clave? ¿Mi cumpleaños?\nEl cajero se quedó con la tarjeta.\nVale retiró la plata con su tarjeta, y en el banco hicieron otra fila para consignar.\nEmpleada: Listo. Mañana hay que reparar la línea desde la calle. Para un reclamo, llene otro formulario.\nHernando: ¿Tanto trámite para arreglar una línea sin teléfono?\nTomás: Si Joaquín llama, alguien tiene que contestar.\nEsa tarde, un cliente gritó: «¡Este tinto está frío!».\nSimón: ¡Para quejas, marque uno! ¡Marque estrella!",
+  "gloss": [
+    {
+      "es": "Teléfonos Andinos",
+      "en": "Andes Telephones (the phone company)"
+    },
+    {
+      "es": "marque",
+      "en": "press (a key on the phone)"
+    },
+    {
+      "es": "el número tiene que existir",
+      "en": "the number has to exist"
+    },
+    {
+      "es": "Nadie habló por un rato.",
+      "en": "Nobody spoke for a while."
+    },
+    {
+      "es": "Ninguno de los dos.",
+      "en": "Neither."
+    },
+    {
+      "es": "Tengo pasaporte.",
+      "en": "I have a passport."
+    },
+    {
+      "es": "Toca consignar en el banco.",
+      "en": "You have to pay it in at the bank."
+    },
+    {
+      "es": "el cajero se quedó con la tarjeta",
+      "en": "the cash machine kept the card"
+    },
+    {
+      "es": "desde la calle",
+      "en": "from the street"
+    },
+    {
+      "es": "llene otro formulario",
+      "en": "fill in another form"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What did Rosa write on the last phone bill?",
+      "options": [
+        "That the phone was broken",
+        "That the number had to exist in case Joaquín called",
+        "That Altamira owed her money",
+        "That Tomás should cancel the line"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why can't Tomás start the paperwork himself?",
+      "options": [
+        "He has no Colombian ID card, only a passport",
+        "He is too late",
+        "He doesn't speak Spanish",
+        "Hernando has his papers"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What happens at the cash machine?",
+      "options": [
+        "It gives him too much money",
+        "Vale's card does not work",
+        "Tomás doesn't know his PIN, and the machine keeps his card",
+        "The machine is out of order"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Qué quiere hacer Tomás con la línea de Rosa?",
+      "options": [
+        "Venderla",
+        "Arreglarla",
+        "Cancelarla",
+        "Dársela a Altamira"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Simón do when a customer complains?",
+      "options": [
+        "He flies away",
+        "He sings",
+        "He answers like the phone company menu",
+        "He says sorry"
+      ],
+      "answer": 2
+    }
+  ],
+  "hook": "Somebody is coming tomorrow to repair a line that has had no phone on it for twelve years. Rosa kept the number alive for Joaquín, and now Tomás needs a phone to plug into it.",
+  "rereadQuestions": [
+    {
+      "q": "How many people are in the queue at the phone company?",
+      "options": [
+        "Twelve",
+        "Forty",
+        "Two",
+        "Four"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How does the money finally get paid in?",
+      "options": [
+        "Tomás pays by phone",
+        "Hernando pays in cash",
+        "Vale takes it out with her card and they queue again at the bank",
+        "The bank pays it automatically"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Tomás answer when asked if it is a complaint or a claim?",
+      "options": [
+        "A complaint",
+        "A claim",
+        "Both",
+        "Neither: he wants the line fixed"
+      ],
+      "answer": 3
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:hay-que",
+    "c:hola-buenos-dias",
+    "c:me-colabora",
+    "c:sera-otro-dia",
+    "c:tengo",
+    "c:tienes",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:con-sin",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:indefinites-basic",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:possessives-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:arreglar",
+    "l:año",
+    "l:banco",
+    "l:bueno",
+    "l:cajero",
+    "l:calle",
+    "l:clave",
+    "l:cliente",
+    "l:colaborar",
+    "l:consignar",
+    "l:contestar",
+    "l:cumpleaños",
+    "l:cuál",
+    "l:cédula",
+    "l:después",
+    "l:día",
+    "l:empleado",
+    "l:empresa",
+    "l:encima",
+    "l:escribir",
+    "l:escuchar",
+    "l:estar",
+    "l:estrella",
+    "l:existir",
+    "l:factura",
+    "l:fila",
+    "l:formulario",
+    "l:frío",
+    "l:funcionar",
+    "l:gritar",
+    "l:hablar",
+    "l:hacer",
+    "l:listo",
+    "l:llamar",
+    "l:llegar",
+    "l:llenar",
+    "l:línea",
+    "l:marcar",
+    "l:mañana",
+    "l:mes",
+    "l:mesa",
+    "l:minuto",
+    "l:música",
+    "l:número",
+    "l:oficina",
+    "l:pagar",
+    "l:pasaporte",
+    "l:pasar",
+    "l:persona",
+    "l:plata",
+    "l:quedarse",
+    "l:queja",
+    "l:querer",
+    "l:quitar",
+    "l:rato",
+    "l:recibo",
+    "l:reclamo",
+    "l:reparar",
+    "l:retirar",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:tarde",
+    "l:tarjeta",
+    "l:teléfono",
+    "l:tener",
+    "l:tinto",
+    "l:tocar",
+    "l:trámite",
+    "l:ventanilla",
+    "l:ver"
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "id": "ch069",
+  "unit": "u23",
+  "title": "Mitad y mitad",
+  "text": "En la oficina de escrituras, la fila no tenía ningún movimiento. Una señora de ochenta años tejía.\nSeñora: Hace un mes que vengo todos los días, mijo. Hace un mes que el sistema no funciona.\nMariana los esperaba con un libro enorme.\nMariana: Sin sistema, la empleada sacó los libros viejos. Miren.\nEn el libro, a máquina, decía: «1977. Rosa Herrera y Joaquín Herrera compran el edificio de la carrera Cuarta, mitad y mitad».\nAl lado, a mano: «Sin firma de Joaquín Herrera».\nTomás: ¿Y eso desde cuándo?\nEmpleada: Desde 1978, caballero. La escritura nunca se terminó. Hace cuarenta y ocho años que ese edificio no tiene dueño completo.\nEmpleada: Caballero, suelte el libro, por favor.\nHernando tocó el nombre de Joaquín con un dedo.\nHernando: Yo los llevé a la notaría ese día, en mi primer taxi. Joaquín estaba muy contento. Pero en 1978 se fue, y nunca firmó.\nVale: Entonces la mitad es de Joaquín.\nTomás: «Es de los dos». Rosa lo escribió en la carta.\nMariana: O de su familia. Y sin esa mitad, nadie puede vender. Ni Altamira puede comprar.\nTomás: ¿Qué tengo que hacer?\nEmpleada: Necesita la firma de Joaquín Herrera, o un papel de un juez.\nHernando: Mija, si no nos ayuda, traigo a cuarenta taxistas aquí.\nEmpleada: ¿Me está amenazando, caballero?\nHernando: No, mija. La estoy informando.\nEmpleada: No hay necesidad de gritar. Yo también tengo abuela.\nEn la calle, Vale tomó a Tomás del brazo.\nVale: Tomás, ¿tú sabes dónde está Joaquín?\nTomás: No. Pero desde hoy, lo estoy buscando.",
+  "gloss": [
+    {
+      "es": "la oficina de escrituras",
+      "en": "the deeds office"
+    },
+    {
+      "es": "la fila no tenía ningún movimiento",
+      "en": "the queue wasn't moving at all"
+    },
+    {
+      "es": "tejía",
+      "en": "was knitting"
+    },
+    {
+      "es": "Hace un mes que vengo todos los días.",
+      "en": "I've been coming every day for a month."
+    },
+    {
+      "es": "Hace un mes que el sistema no funciona.",
+      "en": "The system has been down for a month."
+    },
+    {
+      "es": "a máquina",
+      "en": "typewritten"
+    },
+    {
+      "es": "mitad y mitad",
+      "en": "half and half"
+    },
+    {
+      "es": "Al lado, a mano",
+      "en": "Beside it, in handwriting"
+    },
+    {
+      "es": "¿Y eso desde cuándo?",
+      "en": "And since when?"
+    },
+    {
+      "es": "La escritura nunca se terminó.",
+      "en": "The deed was never finished."
+    },
+    {
+      "es": "Hace cuarenta y ocho años que ese edificio no tiene dueño completo.",
+      "en": "For forty eight years that building hasn't had a full owner."
+    },
+    {
+      "es": "caballero",
+      "en": "sir"
+    },
+    {
+      "es": "suelte el libro",
+      "en": "let go of the book"
+    },
+    {
+      "es": "notaría",
+      "en": "notary's office"
+    },
+    {
+      "es": "en mi primer taxi",
+      "en": "in my first taxi"
+    },
+    {
+      "es": "Ni Altamira puede comprar.",
+      "en": "Not even Altamira can buy."
+    },
+    {
+      "es": "¿Me está amenazando?",
+      "en": "Are you threatening me?"
+    },
+    {
+      "es": "La estoy informando.",
+      "en": "I'm informing you."
+    },
+    {
+      "es": "No hay necesidad de gritar.",
+      "en": "There's no need to shout."
+    },
+    {
+      "es": "tomó a Tomás del brazo",
+      "en": "took Tomás by the arm"
+    },
+    {
+      "es": "desde hoy, lo estoy buscando",
+      "en": "from today, I'm looking for him"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why is the queue not moving?",
+      "options": [
+        "The office is closed for lunch",
+        "The computer system has been down for a month",
+        "Hernando brought forty taxi drivers",
+        "Altamira bought the office"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does the old book show?",
+      "options": [
+        "That Altamira owns the building",
+        "That Rosa sold the café in 1978",
+        "That Rosa and Joaquín bought the building half and half, but Joaquín never signed",
+        "That the building has no address"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Desde cuándo no tiene dueño completo el edificio?",
+      "options": [
+        "Desde 1977",
+        "Desde 1978",
+        "Desde 2014",
+        "Desde hace un mes"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why is this news good and bad at the same time?",
+      "options": [
+        "Without Joaquín's half nobody can sell, not even to Altamira, but the café can't prove who owns it",
+        "The café gets free rent",
+        "Hernando gets his taxi back",
+        "Tomás can go home"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Half of Rosa's café belongs to a man who left for the coast in 1978 and never came back. Tomás is looking for him now, and he is not the only one who has worked out what that half is worth.",
+  "rereadQuestions": [
+    {
+      "q": "How did Rosa and Joaquín get to the notary in 1977?",
+      "options": [
+        "By bus",
+        "On foot",
+        "In Hernando's first taxi",
+        "In the Burra"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What line from Rosa's letter does Tomás remember?",
+      "options": [
+        "Es de los dos",
+        "Joaquín, mi hermano",
+        "Si Joaquín llama",
+        "Feliz Navidad"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Hernando describe what he says to the clerk?",
+      "options": [
+        "As a joke",
+        "As information, not a threat",
+        "As a favour",
+        "As an order"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:por-favor",
+    "c:que-tengo-que-hacer",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:negation-words",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:saber-conocer",
+    "p:street-names",
+    "p:tambien-tampoco",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:amenazar",
+    "l:aquí",
+    "l:ayudar",
+    "l:año",
+    "l:brazo",
+    "l:buscar",
+    "l:caballero",
+    "l:calle",
+    "l:carrera",
+    "l:carta",
+    "l:completar",
+    "l:comprar",
+    "l:contento",
+    "l:cuándo",
+    "l:decir",
+    "l:dedo",
+    "l:dueño",
+    "l:día",
+    "l:dónde",
+    "l:edificio",
+    "l:empleado",
+    "l:enorme",
+    "l:escribir",
+    "l:escritura",
+    "l:esperar",
+    "l:estar",
+    "l:familia",
+    "l:favor",
+    "l:fila",
+    "l:firma",
+    "l:firmar",
+    "l:funcionar",
+    "l:gritar",
+    "l:hacer",
+    "l:hoy",
+    "l:informar",
+    "l:irse",
+    "l:juez",
+    "l:lado",
+    "l:libro",
+    "l:llevar",
+    "l:mano",
+    "l:mes",
+    "l:mija",
+    "l:mijo",
+    "l:mirar",
+    "l:mitad",
+    "l:movimiento",
+    "l:máquina",
+    "l:necesidad",
+    "l:necesitar",
+    "l:nombre",
+    "l:notar",
+    "l:oficina",
+    "l:papel",
+    "l:poder",
+    "l:qué",
+    "l:saber",
+    "l:sacar",
+    "l:ser",
+    "l:señora",
+    "l:sistema",
+    "l:soltar",
+    "l:taxi",
+    "l:taxista",
+    "l:tener",
+    "l:terminar",
+    "l:tocar",
+    "l:tomar",
+    "l:traer",
+    "l:vender",
+    "l:venir",
+    "l:viejo"
+  ]
+}
