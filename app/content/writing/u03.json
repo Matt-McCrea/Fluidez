@@ -524,5 +524,376 @@
       "p:days-el-lunes",
       "p:prefieres-x-o-y"
     ]
+  },
+  {
+    "id": "w-u03-13",
+    "unit": "u03",
+    "prompt": "Your new neighbour Camila, someone your age, asks what you do for fun. Reply: say what you love, say one thing you really don't like, and ask whether she likes it too.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "me encanta"
+      },
+      {
+        "type": "negation"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "Me encanta cocinar, pero no me gusta nada el deporte. ¿Y a ti? ¿Te gusta cocinar?",
+    "focus": "g:gustar-basic",
+    "requires": [
+      "c:a-mi-tambien",
+      "c:me-encanta",
+      "c:me-gusta",
+      "c:no-me-gusta-nada",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:gustar-full",
+      "g:negation-words",
+      "g:prep-pronouns",
+      "l:cocinar",
+      "l:deporte",
+      "l:encantar",
+      "l:gustar"
+    ]
+  },
+  {
+    "id": "w-u03-14",
+    "unit": "u03",
+    "prompt": "A friend invites you to a party on Saturday. Answer in two or three sentences: say you like the plan and say goodbye until Monday.",
+    "minWords": 6,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "me gusta"
+      },
+      {
+        "type": "containsWord",
+        "word": "hasta el lunes"
+      }
+    ],
+    "model": "¡Qué chévere! Me gusta el plan. Hasta el lunes.",
+    "focus": "g:gustar-basic",
+    "requires": [
+      "c:hasta-el-lunes",
+      "c:me-gusta",
+      "c:que-chevere",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "l:chévere",
+      "l:gustar",
+      "l:lunes",
+      "l:plan",
+      "l:qué"
+    ]
+  },
+  {
+    "id": "w-u03-15",
+    "unit": "u03",
+    "prompt": "You are texting a new classmate your age. Ask three questions: one about what they like to do, one with dónde, and one that is a yes or no question.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "dónde"
+      },
+      {
+        "type": "containsWord",
+        "word": "te gusta"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "¿Qué te gusta hacer? ¿Dónde nadas? ¿Te gusta el deporte?",
+    "focus": "g:questions",
+    "requires": [
+      "c:me-gusta",
+      "c:que-te-gusta-hacer",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:questions",
+      "l:deporte",
+      "l:dónde",
+      "l:gustar",
+      "l:hacer",
+      "l:nadar",
+      "l:qué"
+    ]
+  },
+  {
+    "id": "w-u03-16",
+    "unit": "u03",
+    "prompt": "Write to Vale about the party at the café. Ask her three questions about it (where, when, and what she likes).",
+    "minWords": 6,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "dónde"
+      },
+      {
+        "type": "containsWord",
+        "word": "cuándo"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "¿Dónde es la fiesta? ¿Cuándo es? ¿Qué te gusta cocinar?",
+    "focus": "g:questions",
+    "requires": [
+      "c:me-gusta",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:questions",
+      "g:ser-identity",
+      "l:cocinar",
+      "l:cuándo",
+      "l:dónde",
+      "l:fiesta",
+      "l:gustar",
+      "l:qué",
+      "l:ser",
+      "p:event-ser-en",
+      "p:question-word-order",
+      "p:ser-event-location"
+    ]
+  },
+  {
+    "id": "w-u03-17",
+    "unit": "u03",
+    "prompt": "Text Mariana, who is your friend, about tonight: say you are going out, that you want pizza, and that you are not cooking today.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "salir",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "verbForm",
+        "inf": "querer",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Hoy salgo con Vale y quiero pizza, pero no cocino hoy.",
+    "focus": "g:stem-boot",
+    "requires": [
+      "c:hago-salgo-vengo",
+      "c:quiero",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:cocinar",
+      "l:hoy",
+      "l:pizza",
+      "l:querer",
+      "l:salir"
+    ]
+  },
+  {
+    "id": "w-u03-18",
+    "unit": "u03",
+    "prompt": "You are at a restaurant. Order a pizza and a drink for yourself, and say one thing you don't want.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "querer",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "containsWord",
+        "word": "pizza"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Quiero una pizza y una cerveza, por favor. No quiero chocolate.",
+    "focus": "g:stem-boot",
+    "requires": [
+      "c:por-favor",
+      "c:quiero",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:cerveza",
+      "l:chocolate",
+      "l:favor",
+      "l:pizza",
+      "l:querer"
+    ]
+  },
+  {
+    "id": "w-u03-19",
+    "unit": "u03",
+    "prompt": "Write to a friend about what you like to do and what you want to do with Mariana.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "me gusta"
+      },
+      {
+        "type": "verbForm",
+        "inf": "querer",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "infinitiveUsed",
+        "inf": "nadar"
+      }
+    ],
+    "model": "Me gusta caminar y quiero nadar con Mariana.",
+    "focus": "g:verb-infinitive",
+    "requires": [
+      "c:me-gusta",
+      "c:quiero",
+      "g:gustar-basic",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:caminar",
+      "l:gustar",
+      "l:nadar",
+      "l:querer"
+    ]
+  },
+  {
+    "id": "w-u03-20",
+    "unit": "u03",
+    "prompt": "A coworker your age asks what you want to do today. Say what you want to do, and one thing you can't do now.",
+    "minWords": 6,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "querer",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "verbForm",
+        "inf": "poder",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Hoy quiero trabajar. Ahora no puedo cantar.",
+    "focus": "g:verb-infinitive",
+    "requires": [
+      "c:puedo",
+      "c:quiero",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:ahora",
+      "l:cantar",
+      "l:hoy",
+      "l:poder",
+      "l:querer",
+      "l:trabajar"
+    ]
+  },
+  {
+    "id": "w-u03-21",
+    "unit": "u03",
+    "prompt": "Message your friend Vale about tomorrow: say two things you are going to do, and where you are going.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bvoy a [a-záéíóúñ]+(ar|er|ir)\\b",
+        "label": "voy a + infinitive"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bvoy (al|a la)\\b",
+        "label": "voy al or voy a la"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Mañana voy a cocinar y voy a cantar con Mariana. Voy al cine con Vale.",
+    "focus": "g:ir-a-plans",
+    "requires": [
+      "c:voy-a",
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:cantar",
+      "l:cine",
+      "l:cocinar",
+      "l:ir",
+      "l:mañana",
+      "p:ir-a-venir-de-place"
+    ]
+  },
+  {
+    "id": "w-u03-22",
+    "unit": "u03",
+    "prompt": "Tell a friend what you and Vale are going to do on Friday night, and ask whether they are going to come.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ir",
+        "tense": "presente",
+        "person": "nosotros"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "viernes"
+      }
+    ],
+    "model": "El viernes vamos a bailar y a cantar en la fiesta. ¿Vas a venir?",
+    "focus": "g:ir-a-plans",
+    "requires": [
+      "c:vamos-a",
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:bailar",
+      "l:cantar",
+      "l:fiesta",
+      "l:ir",
+      "l:venir",
+      "l:viernes",
+      "p:days-el-lunes"
+    ]
   }
 ]
