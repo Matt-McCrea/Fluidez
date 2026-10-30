@@ -24601,5 +24601,217 @@
     "unit": "u01",
     "theme": "everyday life (talking, studying, waiting)",
     "source": "gen"
+  },
+  {
+    "id": "u01-1102",
+    "es": "¿Tomás es médico o ingeniero?",
+    "en": "Is Tomás a doctor or an engineer?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:ingeniero",
+      "l:médico",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "p:ser-profession-no-article",
+      "g:ser-identity"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "jobs early",
+    "source": "gen"
+  },
+  {
+    "id": "u01-1103",
+    "es": "¿Vale es estudiante?",
+    "en": "Is Vale a student?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:estudiante",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "p:ser-profession-no-article",
+      "g:ser-identity"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "jobs early",
+    "source": "gen"
+  },
+  {
+    "id": "u01-1104",
+    "es": "¿Eres ingeniero, Tomás?",
+    "en": "Are you an engineer, Tomás? (to a man)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:ingeniero",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "p:ser-profession-no-article",
+      "g:ser-identity"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "jobs early",
+    "source": "gen"
+  },
+  {
+    "id": "u01-1105",
+    "es": "¿Hernando es profesor?",
+    "en": "Is Hernando a teacher?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:profesor",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "p:ser-profession-no-article",
+      "g:ser-identity"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "jobs early",
+    "source": "gen"
+  },
+  {
+    "id": "u01-1106",
+    "es": "¿Ustedes son estudiantes?",
+    "en": "Are you all students?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:estudiante",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "p:ser-profession-no-article",
+      "g:ser-identity"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "jobs early",
+    "source": "gen"
+  },
+  {
+    "id": "u01-1107",
+    "es": "¿Usted es mesero en Altamira?",
+    "en": "Are you a waiter at Altamira? (polite, to a man)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:mesero",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "p:ser-profession-no-article",
+      "g:ser-identity"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "jobs early",
+    "source": "gen"
+  },
+  {
+    "id": "u01-1108",
+    "es": "Mariana es ingeniera.",
+    "en": "Mariana is an engineer.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:ingeniero",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "p:ser-profession-no-article",
+      "g:ser-identity"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "jobs early",
+    "source": "gen"
+  },
+  {
+    "id": "u01-1109",
+    "es": "Hernando no es profesor.",
+    "en": "Hernando is not a teacher.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:profesor",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "p:ser-profession-no-article",
+      "g:ser-identity"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "jobs early",
+    "source": "gen"
+  },
+  {
+    "id": "u01-1110",
+    "es": "Somos meseros en Altamira.",
+    "en": "We are waiters at Altamira.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:mesero",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "p:ser-profession-no-article",
+      "g:ser-identity"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "jobs early",
+    "source": "gen"
+  },
+  {
+    "id": "u01-1111",
+    "es": "No, Tomás no es médico. Es estudiante.",
+    "en": "No, Tomás is not a doctor. He is a student.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:estudiante",
+      "l:médico",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "p:ser-profession-no-article",
+      "g:ser-identity"
+    ],
+    "kind": "dialogue",
+    "unit": "u01",
+    "theme": "jobs early",
+    "source": "gen"
   }
 ]
