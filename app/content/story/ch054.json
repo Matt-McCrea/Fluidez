@@ -2,7 +2,7 @@
   "id": "ch054",
   "unit": "u19",
   "title": "Quince días",
-  "text": "Jhon Fredy: Buenos días a todos. Hoy les voy a hablar de la máquina de café.\nEran las cinco y media de la mañana. Vale y Tomás lo escuchaban sentados, con sueño. Simón también.\nJhon Fredy: En primer lugar, la máquina es italiana, pero tiene veinte años. En segundo lugar, nadie la limpia. Para terminar, les voy a mostrar unas fotos...\nVale: ¿Fotos? Son las seis, y hay gente en la puerta.\nA las siete llegó Hernando. Jhon Fredy servía tintos y todavía hablaba.\nHernando: Este muchacho trabaja de mesero, pero habla como un presidente.\nJhon Fredy: Por ahora trabajo de mesero, señor. Por la tarde estudio, y en cuatro años voy a ser ingeniero.\nA las diez, un señor con muchos papeles debajo del brazo abrió la puerta.\nSeñor: ¿Se puede? Buenos días. Soy el inspector Duarte, de la Alcaldía. Vengo a revisar los permisos del café.\nEl inspector leyó despacio los papeles de Rosa.\nInspector: Este permiso es de 2009, señor Herrera. Ya no sirve, y eso es un error grave. Sin los permisos al día, el café se cierra.\nSimón: ¿Se puede? ¿Se puede?\nTomás: ¿Cerrar? ¿Cuándo?\nInspector: Tienen quince días.\nPor la tarde llegó Mariana. Escuchó la historia y sacó su cuaderno.\nMariana: Altamira vino el lunes, y el inspector vino el miércoles. Eso no es una coincidencia. Antes mandaban a un hombre con gorra. Ahora atacan desde una oficina.\nHernando: Nos quieren robar la esquina.\nTomás: Pero el inspector no nombró a Altamira.\nMariana: Claro que no. Un consejo, Tomás: tú no hablas con ese inspector sin mí.\nVale miró la vieja foto de Rosa, detrás del mostrador.\nVale: Rosa protegió este café más de cuarenta años. Ahora lo protegemos nosotros.\nEsa noche, Tomás cerró a las ocho. Simón dormía encima de la máquina, con media almojábana.\nAl otro día, Simón no estaba.",
+  "text": "Jhon Fredy: Buenos días a todos. Hoy les voy a hablar de la máquina de café.\nEran las cinco y media de la mañana. Vale y Tomás lo escuchaban sentados, con sueño. Simón también.\nJhon Fredy: En primer lugar, la máquina es italiana, pero tiene veinte años. En segundo lugar, nadie la limpia. Para terminar, les voy a mostrar unas fotos...\nVale: ¿Fotos? Son las seis, y hay gente en la puerta.\nA las diez, un señor con muchos papeles debajo del brazo abrió la puerta.\nSeñor: ¿Se puede? Buenos días. Soy el inspector Duarte, de la Alcaldía. Vengo a revisar los permisos del café.\nEl inspector leyó despacio los papeles de Rosa.\nInspector: Este permiso es de 2009, señor Herrera. Ya no sirve, y eso es un error grave. Sin los permisos al día, el café se cierra.\nSimón: ¿Se puede? ¿Se puede?\nTomás: ¿Cerrar? ¿Cuándo?\nInspector: Tienen quince días.\nPor la tarde llegó Mariana. Escuchó la historia y sacó su cuaderno.\nMariana: Altamira vino el lunes, y el inspector vino el miércoles. Eso no es una coincidencia. Antes mandaban a un hombre con gorra. Ahora atacan desde una oficina.\nTomás: Pero el inspector no nombró a Altamira.\nMariana: Claro que no. Un consejo, Tomás: tú no hablas con ese inspector sin mí.\nVale miró la vieja foto de Rosa, detrás del mostrador.\nVale: Rosa protegió este café más de cuarenta años. Ahora lo protegemos nosotros.\nEsa noche, Tomás cerró a las ocho. Simón dormía encima de la máquina, con media almojábana.\nAl otro día, Simón no estaba.",
   "gloss": [
     {
       "es": "Hoy les voy a hablar de la máquina de café.",
@@ -11,10 +11,6 @@
     {
       "es": "Para terminar, les voy a mostrar unas fotos...",
       "en": "To finish, I'm going to show you some photos..."
-    },
-    {
-      "es": "habla como un presidente",
-      "en": "he talks like a president (making a speech)"
     },
     {
       "es": "con muchos papeles debajo del brazo",
@@ -43,10 +39,6 @@
     {
       "es": "Antes mandaban a un hombre con gorra. Ahora atacan desde una oficina.",
       "en": "Before, they sent a man in a cap. Now they attack from an office."
-    },
-    {
-      "es": "Nos quieren robar la esquina.",
-      "en": "They want to steal our corner."
     },
     {
       "es": "tú no hablas con ese inspector sin mí",
@@ -168,7 +160,6 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:that-clauses",
-    "g:verb-infinitive",
     "g:yo-irregular",
     "p:cerca-de",
     "p:con-sin",
@@ -176,7 +167,6 @@
     "p:demonstratives-basic",
     "p:la-gente-singular",
     "p:mas-de-number",
-    "p:me-te-nos-objects",
     "p:ordinal-floor",
     "p:ordinals-primer-tercer",
     "p:para-inf",
@@ -190,9 +180,7 @@
     "p:ser-profession-no-article",
     "p:telling-time",
     "p:tener-anos",
-    "p:trabajar-de",
-    "p:viejo-antiguo-mayor",
-    "p:ya-todavia-basic"
+    "p:viejo-antiguo-mayor"
   ],
   "lexemes": [
     "l:abrir",
@@ -218,9 +206,7 @@
     "l:encima",
     "l:error",
     "l:escuchar",
-    "l:esquina",
     "l:estar",
-    "l:estudiar",
     "l:foto",
     "l:gente",
     "l:gorra",
@@ -229,7 +215,6 @@
     "l:historia",
     "l:hombre",
     "l:hoy",
-    "l:ingeniero",
     "l:inspector",
     "l:ir",
     "l:italiano",
@@ -240,12 +225,10 @@
     "l:lunes",
     "l:mandar",
     "l:mañana",
-    "l:mesero",
     "l:mirar",
     "l:miércoles",
     "l:mostrador",
     "l:mostrar",
-    "l:muchacho",
     "l:máquina",
     "l:noche",
     "l:nombrar",
@@ -253,12 +236,9 @@
     "l:papel",
     "l:permiso",
     "l:poder",
-    "l:presidente",
     "l:proteger",
     "l:puerta",
-    "l:querer",
     "l:revisar",
-    "l:robar",
     "l:sacar",
     "l:sentar",
     "l:ser",
@@ -268,8 +248,6 @@
     "l:tarde",
     "l:tener",
     "l:terminar",
-    "l:tinto",
-    "l:trabajar",
     "l:venir",
     "l:viejo"
   ]
