@@ -80,11 +80,11 @@
       "answer": 0
     },
     {
-      "es": "Vale quiere que Tomás abra la panadería con ella.",
+      "es": "Vale quiere que Tomás abra el café con ella.",
       "options": [
-        "Vale wants to open the bakery with Tomás.",
-        "Tomás wants to open the bakery with Vale.",
-        "Vale wants Tomás to open the bakery with her."
+        "Vale wants to open the café with Tomás.",
+        "Tomás wants to open the café with Vale.",
+        "Vale wants Tomás to open the café with her."
       ],
       "answer": 2
     },

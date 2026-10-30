@@ -3,12 +3,12 @@
   "unit": "u21",
   "title": "Flowers on Saturday",
   "spare": true,
-  "brief": "You're Tomás. You've just found out that Saturday is Vale's birthday, and you want to surprise her. Ask Don Hernando for help without Vale finding out. He's older than you, so use usted.",
+  "brief": "You're Tomás. Last night you found out that Saturday is Vale's birthday, and you want to surprise her. Ask Don Hernando for help without Vale finding out. He calls you mijo, but you always use usted with him.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Buenos días, joven. Usted no durmió anoche, ¿verdad? ¿Qué le pasa?",
-      "npcEn": "Good morning, young man. You didn't sleep last night, did you? What's the matter?",
+      "npc": "Buenos días, mijo. Tú no dormiste anoche, ¿cierto? ¿Qué te pasa?",
+      "npcEn": "Good morning, son. You didn't sleep last night, did you? What's the matter?",
       "intent": "Say sorry to bother him, but can he help you with something.",
       "accept": [
         "Qué pena molestarlo, pero ¿me puede ayudar con algo?",
@@ -28,7 +28,7 @@
     },
     {
       "id": "t2",
-      "npc": "Para usted, todos los favores. Dígame.",
+      "npc": "Para ti, todos los favores. Dime.",
       "npcEn": "For you, any favour at all. Tell me.",
       "intent": "Say you want him to help you with a surprise for Vale.",
       "accept": [
@@ -50,7 +50,7 @@
     },
     {
       "id": "t3",
-      "npc": "¿Una sorpresa para el cumpleaños? Muy bien. ¿Y qué quiere que haga yo?",
+      "npc": "¿Una sorpresa para el cumpleaños? Muy bien. ¿Y qué quieres que haga yo?",
       "npcEn": "A surprise for her birthday? Very good. And what do you want me to do?",
       "intent": "Ask him if he could buy flowers on Saturday morning.",
       "accept": [
@@ -106,7 +106,7 @@
       "intent": "Say that then you want Simón to be with him on Saturday.",
       "accept": [
         "Entonces quiero que Simón esté con usted el sábado.",
-        "Quiero que Simón esté en la casa de usted el sábado.",
+        "Entonces quiero que Simón esté en su casa el sábado.",
         "Es verdad. Quiero que Simón esté con usted el sábado por la mañana."
       ],
       "require": [
@@ -123,7 +123,7 @@
     },
     {
       "id": "t6",
-      "npc": "Simón en mi casa todo un día. Bueno, lo hago por Vale, no por usted.",
+      "npc": "Simón en mi casa todo un día. Bueno, lo hago por Vale, no por ti.",
       "npcEn": "Simón in my house for a whole day. Well, I'm doing it for Vale, not for you.",
       "intent": "Thank him and tell him not to worry, you'll pay for the flowers.",
       "accept": [
@@ -155,11 +155,11 @@
     "c:no-cierto",
     "c:no-se",
     "c:no-te-preocupes",
+    "c:oye-mira",
     "c:por-favor",
     "c:que-pena",
     "c:quiero",
-    "g:commands-usted",
-    "g:commands-with-pronouns",
+    "c:te-pasa-algo",
     "g:conditional",
     "g:direct-objects",
     "g:estar-location-states",
@@ -170,7 +170,7 @@
     "g:por-para-1",
     "g:prep-pronouns",
     "g:present-ar",
-    "g:preterite-spelling-stem",
+    "g:preterite-er-ir",
     "g:questions",
     "g:ser-identity",
     "g:si-present",
@@ -196,8 +196,8 @@
     "l:gusto",
     "l:hablar",
     "l:hacer",
-    "l:joven",
     "l:mañana",
+    "l:mijo",
     "l:molestar",
     "l:necesitar",
     "l:pagar",
@@ -214,7 +214,6 @@
     "l:sábado",
     "l:verdad",
     "p:days-el-lunes",
-    "p:de-owner",
     "p:indefinites-basic",
     "p:me-te-nos-objects",
     "p:para-inf",

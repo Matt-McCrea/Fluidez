@@ -2,14 +2,14 @@
   "id": "ch060",
   "unit": "u21",
   "title": "El peor enemigo del pez",
-  "text": "«Señor Herrera: le ofrezco un trato».\nTomás abrió la carta de Altamira delante de todos.\n«Abrimos un hotel en el oeste de la ciudad, con un café en la primera planta. Usted puede ser el director. Por su parte de La Esquina de Rosa, le ofrezco mucha plata.»\nVale: ¿Un hotel en el oeste? Ese trato es una trampa.\nTomás: Ya lo sé. Leer no es firmar.\nVale: Te sugiero una cosa: tírala.\nTomás: ¿Me lo sugieres o me lo exiges?\nVale: Te lo exijo.\nTomás: Yo te ofrezco una sociedad, y tú me exiges cosas. Quiero que me tengas confianza.\nVale: ¡Y yo quiero que hables claro! ¿Quién se encarga de los papeles?\nTomás: ¡Yo me encargo! ¡Esa es mi responsabilidad!\nEn la mesa de la ventana, una pareja dejó de comer. Una señora de la planta de arriba abrió la puerta.\nHernando se levantó.\nHernando: Esto, Rosa lo prohibía. Y yo también lo prohíbo.\nJhon Fredy: ¿Puedo sugerir algo? Altamira es un león, y nosotros somos un pez.\nHernando: Los leones no comen pescado, joven.\nJhon Fredy: Exacto. El peor enemigo de un pez es otro pez.\nLa pareja de la ventana pagó y salió.\nVale: Necesito tu ayuda en la cocina, Tomás, no tus planes.\nTomás: Y yo necesito tu ayuda con Altamira, no tus órdenes.\nSimón: ¡Te lo exijo! ¡Te lo exijo!\nVale entró en la cocina. La carta se quedó en la mesa, al lado del tinto frío.\nEra el peor día del año, y todavía eran las nueve de la mañana.",
+  "text": "«Señor Herrera: le ofrezco un trato».\nTomás abrió la carta de Altamira. Simón escuchaba desde la planta de la ventana.\n«Abrimos un hotel en el oeste de la ciudad, con un café en el primer piso. Usted puede ser el director. Por su parte de La Esquina de Rosa, le ofrezco mucha plata.»\nVale: ¿Un hotel en el oeste? Ese trato es una trampa.\nTomás: Ya lo sé. Leer no es firmar.\nVale: Te sugiero una cosa: tírala.\nTomás: ¿Me lo sugieres o me lo exiges?\nVale: Te lo exijo.\nTomás: Yo te ofrezco una sociedad, y tú me exiges cosas. Quiero que me tengas confianza.\nVale: ¡Y yo quiero que hables claro! ¿Quién se encarga de los papeles?\nTomás: ¡Yo me encargo! ¡Esa es mi responsabilidad!\nEn la mesa de la ventana, una pareja dejó de comer. Una señora del piso de arriba abrió la puerta.\nHernando: Esto, Rosa lo prohibía. Y yo también lo prohíbo.\nJhon Fredy: ¿Puedo sugerir algo? Altamira es un león, y nosotros somos un pez.\nHernando: Los leones no comen pescado, joven.\nJhon Fredy: Exacto. El peor enemigo de un pez es otro pez.\nLa pareja de la ventana pagó y salió.\nVale: Necesito tu ayuda en la cocina, Tomás, no tus planes.\nTomás: Y yo necesito tu ayuda con Altamira, no tus órdenes.\nSimón salió de la planta.\nSimón: ¡Te lo exijo! ¡Te lo exijo!\nVale entró en la cocina. La carta se quedó en la mesa.\nEra el peor día del año, y todavía eran las nueve de la mañana.",
   "gloss": [
     {
       "es": "«Señor Herrera: le ofrezco un trato».",
       "en": "«Mr Herrera: I am offering you a deal.»"
     },
     {
-      "es": "en la primera planta",
+      "es": "en el primer piso",
       "en": "on the first floor"
     },
     {
@@ -30,14 +30,14 @@
     },
     {
       "es": "¡Yo me encargo!",
-      "en": "I take care of it."
+      "en": "I'll take care of it!"
     },
     {
       "es": "una pareja dejó de comer",
       "en": "a couple stopped eating"
     },
     {
-      "es": "la planta de arriba",
+      "es": "el piso de arriba",
       "en": "the floor above"
     },
     {
@@ -169,7 +169,6 @@
     "g:that-clauses",
     "g:verb-infinitive",
     "g:yo-irregular",
-    "p:cerca-de",
     "p:dejar-de-inf",
     "p:demonstratives-basic",
     "p:indefinites-basic",
@@ -178,7 +177,6 @@
     "p:ordinals-primer-tercer",
     "p:otro-no-article",
     "p:por-la-manana",
-    "p:position-de",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:saber-conocer",
@@ -201,22 +199,19 @@
     "l:confianza",
     "l:cosa",
     "l:dejar",
-    "l:delante",
     "l:director",
     "l:día",
     "l:encargar",
     "l:enemigo",
     "l:entrar",
+    "l:escuchar",
     "l:exacto",
     "l:exigir",
     "l:firmar",
-    "l:frío",
     "l:hablar",
     "l:hotel",
     "l:joven",
-    "l:lado",
     "l:leer",
-    "l:levantarse",
     "l:león",
     "l:mañana",
     "l:mesa",
@@ -231,6 +226,7 @@
     "l:peor",
     "l:pescado",
     "l:pez",
+    "l:piso",
     "l:plan",
     "l:planta",
     "l:plata",
@@ -249,7 +245,6 @@
     "l:sociedad",
     "l:sugerir",
     "l:tener",
-    "l:tinto",
     "l:tirar",
     "l:trampa",
     "l:trato",
