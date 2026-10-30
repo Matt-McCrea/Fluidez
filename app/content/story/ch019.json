@@ -2,7 +2,7 @@
   "id": "ch019",
   "unit": "u08",
   "title": "Hoteles con paisaje",
-  "text": "La cafetera todavía no funciona, y Tomás hace el capuchino en el chocolatero de Rosa. Es el primer capuchino de su vida.\nHombre: Muy rico. ¿Usted es el dueño?\nTomás: Sí. Bueno... más o menos.\nHombre: Yo viajo mucho. Este año visité catorce pueblos.\nEl hombre muestra fotos en su celular: una playa, una isla, el mar.\nHombre: ¿Ha estado en la costa?\nTomás: Todavía no.\nHombre: Y mire este paisaje: la montaña, el río, una finca con cafetal. Allá los turistas toman el café del cafetal.\nVale: ¿Qué está haciendo Tomás? ¿Está mirando fotos de vacaciones?\nHernando: Está trabajando, mija.\nHernando: Inés y yo visitamos la costa una vez. Fue el único viaje de nuestra vida.\nHombre: ¿Y usted, señor Herrera? ¿Cuándo tuvo vacaciones?\nTomás: Hace años.\nHombre: Con la plata del café, usted puede viajar. Una maleta, un buen viaje, una isla. ¿Ha pensado en vender el café?\nTomás: Un momento. ¿Cómo sabe mi apellido?\nEl hombre no contesta. Deja cincuenta mil pesos de propina y sale. El capuchino cuesta cinco mil.\nSimón: ¡Qué envidia! ¡Qué envidia!\nEn la mesa hay una tarjeta: «Ricardo Altamira. Grupo Altamira. Hoteles con paisaje para turistas: en la playa, en el río, en una finca de montaña, en un pueblo».\nVale: ¿Ricardo Altamira tomó capuchino en el café de Rosa?\nEsa noche, en su cuarto, Tomás mira su maleta un rato largo.",
+  "text": "La cafetera todavía no funciona, y Tomás hace el capuchino en el chocolatero de Rosa. Es el primer capuchino de su vida.\nHombre: Muy rico. ¿Usted es el dueño?\nTomás: Sí. Bueno... más o menos.\nEl hombre muestra fotos en su celular: una playa, una isla, el mar.\nHombre: ¿Ha estado en la costa?\nTomás: Todavía no.\nHombre: Y mire este paisaje: la montaña, el río, una finca con cafetal.\nVale: ¿Qué está haciendo Tomás? ¿Está mirando fotos de vacaciones?\nHernando: Está trabajando, mija.\nHombre: ¿Y usted, señor Herrera? ¿Cuándo tuvo vacaciones?\nTomás: Hace años.\nHombre: Con la plata del café, usted puede viajar a una isla. ¿Ha pensado en vender el café?\nTomás: Un momento. ¿Cómo sabe mi apellido?\nEl hombre no contesta. Deja cincuenta mil pesos de propina y sale. El capuchino cuesta cinco mil.\nSimón: ¡Qué envidia! ¡Qué envidia!\nEn la mesa hay una tarjeta: «Ricardo Altamira. Grupo Altamira. Hoteles con paisaje en la playa y en la montaña».\nEsa noche, en su cuarto, Tomás mira su maleta un rato largo.",
   "gloss": [
     {
       "es": "el chocolatero",
@@ -13,16 +13,8 @@
       "en": "the first cappuccino of his life"
     },
     {
-      "es": "catorce",
-      "en": "fourteen"
-    },
-    {
       "es": "Está trabajando, mija.",
       "en": "He's working, dear."
-    },
-    {
-      "es": "el único viaje de nuestra vida",
-      "en": "the only trip of our lives"
     },
     {
       "es": "¿Cuándo tuvo vacaciones?",
@@ -61,7 +53,7 @@
     {
       "q": "What does the man show Tomás on his phone?",
       "options": [
-        "Photos of beaches, islands, mountains and coffee farms",
+        "Photos of a beach, an island, mountains and a coffee farm",
         "Photos of Rosa",
         "The lease of the café",
         "Photos of Toronto"
@@ -111,16 +103,6 @@
   "hook": "Ricardo Altamira himself has been in the café, drunk a cappuccino and asked Tomás to sell. That night Tomás is looking at his suitcase.",
   "rereadQuestions": [
     {
-      "q": "What was the only trip of Hernando's life?",
-      "options": [
-        "A trip to the coast with his wife Inés",
-        "A trip to Canada",
-        "A trip to Monserrate",
-        "A trip to a coffee farm with Rosa"
-      ],
-      "answer": 0
-    },
-    {
       "q": "Has Tomás ever been to the coast?",
       "options": [
         "Not yet",
@@ -131,11 +113,21 @@
       "answer": 0
     },
     {
-      "q": "¿Qué hacen los turistas en la finca, según el hombre?",
+      "q": "¿Cuánto deja el hombre de propina?",
       "options": [
-        "Toman el café del cafetal",
-        "Compran maletas",
-        "Visitan el mar"
+        "Cincuenta mil pesos",
+        "Cinco mil pesos",
+        "Catorce mil pesos"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás do that night in his room?",
+      "options": [
+        "He looks at his suitcase for a long while",
+        "He reads Rosa's letter",
+        "He calls Toronto",
+        "He makes another cappuccino"
       ],
       "answer": 0
     }
@@ -147,39 +139,29 @@
     "c:mas-o-menos",
     "c:que-envidia",
     "c:todavia-no",
-    "c:una-vez",
     "g:demonstratives",
     "g:estar-gerund",
     "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
     "g:perfecto-experience",
-    "g:possessives",
     "g:present-ar",
     "g:present-er-ir",
-    "g:preterite-ar",
     "g:preterite-irregular-strong",
-    "g:preterite-ser-ir-hacer",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
     "g:verb-infinitive",
-    "p:aqui-ahi-alla",
-    "p:bien-bueno",
-    "p:bien-mal-vs-bueno-malo",
     "p:costar-pagar",
     "p:demonstratives-basic",
-    "p:para-inf",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:question-word-order",
     "p:senor-don-article"
   ],
   "lexemes": [
-    "l:allá",
     "l:apellido",
     "l:año",
-    "l:buen",
     "l:bueno",
     "l:cafetal",
     "l:cafetera",
@@ -200,7 +182,6 @@
     "l:hacer",
     "l:hombre",
     "l:hotel",
-    "l:inés",
     "l:isla",
     "l:largo",
     "l:maleta",
@@ -219,7 +200,6 @@
     "l:playa",
     "l:poder",
     "l:propina",
-    "l:pueblo",
     "l:qué",
     "l:rato",
     "l:rico",
@@ -230,16 +210,10 @@
     "l:señor",
     "l:tarjeta",
     "l:tener",
-    "l:tomar",
     "l:trabajar",
-    "l:turista",
     "l:vacación",
     "l:vender",
-    "l:vez",
     "l:viajar",
-    "l:viaje",
-    "l:vida",
-    "l:visitar",
-    "l:único"
+    "l:vida"
   ]
 }
