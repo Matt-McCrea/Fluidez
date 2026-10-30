@@ -1,0 +1,172 @@
+{
+  "node": "p:no-porque-sino-porque",
+  "hook": {
+    "line": "Mariana asks Don Hernando why he still comes to the café every single day. He wants to deny the obvious reason and give the true one.",
+    "es": "No vengo porque tenga hambre, sino porque aquí me siento en casa.",
+    "en": "I don't come because I'm hungry, but because I feel at home here."
+  },
+  "examples": [
+    {
+      "es": "No lo digo porque sea mi amigo, sino porque es verdad.",
+      "en": "I'm not saying it because he's my friend, but because it's true."
+    },
+    {
+      "es": "No estudia porque tenga miedo, sino porque le interesa.",
+      "en": "She doesn't study because she's afraid, but because she's interested."
+    },
+    {
+      "es": "No vuelvo porque me necesiten, sino porque quiero.",
+      "en": "I'm not coming back because they need me, but because I want to."
+    },
+    {
+      "es": "No te llamo porque esté enojado, sino porque necesito tu ayuda.",
+      "en": "I'm not calling you because I'm angry, but because I need your help."
+    },
+    {
+      "es": "Vale no cocina porque se lo pidan, sino porque le encanta.",
+      "en": "Vale doesn't cook because people ask her to, but because she loves it."
+    }
+  ],
+  "rule": "Use this to deny one reason and give the true one.\n\n*No porque* + the \"maybe\" form (*sea*, *tenga*, *esté*): the reason you reject.\n*Sino porque* + the plain form (*es*, *le interesa*): the real reason.\n\n*No lo digo porque sea mi amigo, sino porque es verdad.*\n\nCareful: *No se va porque está cansado* means he stays, because he is tired. *No se va porque esté cansado* means he does leave, just not for that reason.",
+  "smallPrint": "Teachers call *sea*, *tenga* and *esté* the present subjunctive. Here it marks a reason you have set aside, not a doubt.",
+  "readAndPick": [
+    {
+      "es": "No lo digo porque sea mi amigo, sino porque es verdad.",
+      "options": [
+        "I'm saying it because he's my friend, and it's true.",
+        "I'm not saying it because he's my friend, but because it's true.",
+        "I'm not saying it because it's true, but because he's my friend."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estudia porque tenga miedo, sino porque le interesa.",
+      "options": [
+        "She doesn't study because she's afraid, but because she's interested.",
+        "She studies because she's afraid, and she's interested too.",
+        "She isn't studying, because she's afraid and not interested."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No se va porque esté cansado.",
+      "options": [
+        "He isn't leaving because he's tired.",
+        "He is leaving because he's tired.",
+        "He is leaving, but not because he's tired."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No se va porque está cansado.",
+      "options": [
+        "He is leaving, but not because he's tired.",
+        "He isn't leaving, because he's tired.",
+        "He is leaving because he's tired."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No te llamo porque esté enojado, sino porque necesito tu ayuda.",
+      "options": [
+        "I'm calling you because I'm angry and I need your help.",
+        "I'm not calling you because I need help, but because I'm angry.",
+        "I'm not calling you because I'm angry, but because I need your help."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No vuelvo porque me necesiten, sino porque quiero.",
+      "options": [
+        "I'm not coming back because they need me, but because I want to.",
+        "I'm not coming back, because they need me and I want to.",
+        "I'm coming back because they need me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale no cocina porque se lo pidan, sino porque le encanta.",
+      "options": [
+        "Vale cooks because people ask her to, and she loves it.",
+        "Vale doesn't cook, because people ask her to and she loves it.",
+        "Vale doesn't cook because people ask her to, but because she loves it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No lo compré porque fuera barato, sino porque lo necesitaba.",
+      "options": [
+        "I bought it because it was cheap, not because I needed it.",
+        "I didn't buy it because it was cheap, but because I needed it.",
+        "I didn't buy it, because it was cheap and I needed it."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *sea* or *es* for the reason you are rejecting: No lo digo porque ___ mi amigo, sino porque es verdad. Type the whole sentence.",
+      "answer": "No lo digo porque sea mi amigo, sino porque es verdad.",
+      "accept": [],
+      "why": "The rejected reason takes the \"maybe\" form, *sea*."
+    },
+    {
+      "prompt": "Choose *tiene* or *tenga* for the reason you are rejecting: No estudia porque ___ miedo, sino porque le interesa. Type the whole sentence.",
+      "answer": "No estudia porque tenga miedo, sino porque le interesa.",
+      "accept": [],
+      "why": "After *no porque*, the rejected reason takes *tenga*."
+    },
+    {
+      "prompt": "Choose *es* or *sea* for the real reason: No lo digo porque sea mi amigo, sino porque ___ verdad. Type the whole sentence.",
+      "answer": "No lo digo porque sea mi amigo, sino porque es verdad.",
+      "accept": [],
+      "why": "The true reason stays plain, so *es*."
+    },
+    {
+      "prompt": "I'm not calling you because I'm angry, but because I need your help. (to a friend)",
+      "answer": "No te llamo porque esté enojado, sino porque necesito tu ayuda.",
+      "accept": [
+        "No te llamo porque esté enojada, sino porque necesito tu ayuda."
+      ],
+      "why": "*Esté* for the rejected reason, *necesito* for the real one."
+    },
+    {
+      "prompt": "Vale doesn't cook because people ask her to, but because she loves it.",
+      "answer": "Vale no cocina porque se lo pidan, sino porque le encanta.",
+      "accept": [],
+      "why": "*Pidan* marks the rejected reason, *encanta* the real one."
+    },
+    {
+      "prompt": "Rewrite so the rejected reason takes the \"maybe\" form: *No me voy porque estoy cansado, sino porque ya es tarde.*",
+      "answer": "No me voy porque esté cansado, sino porque ya es tarde.",
+      "accept": [
+        "No me voy porque esté cansada, sino porque ya es tarde."
+      ],
+      "why": "*Estoy* becomes *esté* in the reason you reject."
+    },
+    {
+      "prompt": "Make it about her: *No vengo porque tenga hambre, sino porque quiero.*",
+      "answer": "No viene porque tenga hambre, sino porque quiere.",
+      "accept": [],
+      "why": "Both verbs follow *she*: *viene* and *quiere*, and *tenga* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No estudia porque tiene miedo, sino porque le interesa.",
+      "right": "No estudia porque tenga miedo, sino porque le interesa.",
+      "why": "Almost. The reason you reject takes the \"maybe\" form: *tenga*."
+    },
+    {
+      "wrong": "No lo digo porque sea mi amigo, sino porque sea verdad.",
+      "right": "No lo digo porque sea mi amigo, sino porque es verdad.",
+      "why": "Almost. The real reason is a fact, so it stays plain: *es*."
+    },
+    {
+      "wrong": "No lo digo porque sea mi amigo, pero porque es verdad.",
+      "right": "No lo digo porque sea mi amigo, sino porque es verdad.",
+      "why": "Almost. After a \"not this\", the \"but rather\" is *sino*, not *pero*."
+    }
+  ],
+  "personal": "Tell us something you do for a reason people might not expect: *No lo hago porque…, sino porque…*."
+}

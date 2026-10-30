@@ -1,0 +1,172 @@
+{
+  "node": "p:y-si-hubieramos",
+  "hook": {
+    "line": "Everyone replays the past at three in the morning. Spanish has a short question for it, with no \"then what?\" attached.",
+    "es": "¿Y si no hubiera vuelto a Bogotá?",
+    "en": "What if I hadn't come back to Bogotá?"
+  },
+  "examples": [
+    {
+      "es": "¿Y si hubiéramos llegado cinco minutos antes?",
+      "en": "What if we'd arrived five minutes earlier?"
+    },
+    {
+      "es": "¿Y si Rosa hubiera vendido el café hace años?",
+      "en": "What if Rosa had sold the café years ago?"
+    },
+    {
+      "es": "¿Y si Vale no hubiera aceptado el trabajo?",
+      "en": "What if Vale hadn't accepted the job?"
+    },
+    {
+      "es": "¿Y si no nos hubiéramos conocido?",
+      "en": "What if we'd never met?"
+    },
+    {
+      "es": "¿Y si apareciera mañana en la puerta?",
+      "en": "What if he turned up at the door tomorrow?"
+    },
+    {
+      "es": "¿Y si vendemos el café?",
+      "en": "What if we sell the café?"
+    }
+  ],
+  "rule": "*¿Y si…?* is \"what if…?\" and needs no second half.\n\nLooking back at what did not happen: *hubiera / hubieras / hubiéramos* + the -ado / -ido word. *¿Y si hubiéramos llegado antes?*\nAdd *no* before *hubiera* for the negative.\n\nLooking at an unlikely future: the plain -ra form. *¿Y si apareciera mañana?*\n\nA real suggestion uses the present: *¿Y si vendemos el café?*",
+  "smallPrint": "Teachers call *hubiera llegado* the pluperfect subjunctive. The question just floats, with no result clause.",
+  "readAndPick": [
+    {
+      "es": "¿Y si hubiéramos llegado cinco minutos antes?",
+      "options": [
+        "What if we arrive five minutes earlier?",
+        "What if we'd arrived five minutes earlier?",
+        "What if they arrive five minutes earlier?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Y si apareciera mañana en la puerta?",
+      "options": [
+        "What if he had turned up at the door yesterday?",
+        "What if he turned up at the door tomorrow?",
+        "What if he never turned up at the door?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Y si Vale no hubiera aceptado el trabajo?",
+      "options": [
+        "What if Vale doesn't accept the job?",
+        "What if Vale accepted the job?",
+        "What if Vale hadn't accepted the job?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Y si Tomás hubiera dicho que sí?",
+      "options": [
+        "What if Tomás had said yes?",
+        "What if Tomás says yes?",
+        "What if Tomás had said no?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Y si no nos hubiéramos conocido?",
+      "options": [
+        "What if we never meet?",
+        "What if we'd met earlier?",
+        "What if we had never met?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Y si Rosa hubiera vendido el café hace años?",
+      "options": [
+        "What if Rosa sold the café next year?",
+        "What if Rosa had sold the café years ago?",
+        "What if Rosa never sold the café?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Y si hubiéramos llamado antes?",
+      "options": [
+        "What if we had called earlier?",
+        "What if we call earlier?",
+        "What if they had called earlier?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Y si vendiéramos el café?",
+      "options": [
+        "What if we had sold the café?",
+        "Shall we sell the café?",
+        "What if we sold the café?"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "You are wondering about the past. Choose *hubiéramos llegado* or *llegamos*: ¿Y si ___ cinco minutos antes? Type the whole sentence.",
+      "answer": "¿Y si hubiéramos llegado cinco minutos antes?",
+      "accept": [],
+      "why": "Something that did not happen takes *hubiéramos* + the -ado word."
+    },
+    {
+      "prompt": "About Tomás. Choose *hubiera* or *ha*: ¿Y si Tomás ___ dicho que sí? Type the whole sentence.",
+      "answer": "¿Y si Tomás hubiera dicho que sí?",
+      "accept": [],
+      "why": "For a past that did not happen, use *hubiera* + the -ado word."
+    },
+    {
+      "prompt": "What if we'd never met?",
+      "answer": "¿Y si no nos hubiéramos conocido?",
+      "accept": [],
+      "why": "*No* and *nos* both go before *hubiéramos*."
+    },
+    {
+      "prompt": "What if Vale hadn't accepted the job?",
+      "answer": "¿Y si Vale no hubiera aceptado el trabajo?",
+      "accept": [],
+      "why": "*Hubiera* + *aceptado*, with *no* in front."
+    },
+    {
+      "prompt": "What if Rosa had sold the café years ago?",
+      "answer": "¿Y si Rosa hubiera vendido el café hace años?",
+      "accept": [],
+      "why": "For *Rosa* use *hubiera* + *vendido*."
+    },
+    {
+      "prompt": "Make it about *we*: *¿Y si Tomás hubiera llegado antes?*",
+      "answer": "¿Y si hubiéramos llegado antes?",
+      "accept": [],
+      "why": "*We* changes *hubiera* to *hubiéramos*."
+    },
+    {
+      "prompt": "Make it negative: *¿Y si Tomás hubiera dicho que sí?*",
+      "answer": "¿Y si Tomás no hubiera dicho que sí?",
+      "accept": [],
+      "why": "Put *no* right before *hubiera*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Y si habíamos llegado cinco minutos antes?",
+      "right": "¿Y si hubiéramos llegado cinco minutos antes?",
+      "why": "Almost. A past that did not happen needs *hubiéramos*, not *habíamos*."
+    },
+    {
+      "wrong": "¿Y si hubiéramos llegar cinco minutos antes?",
+      "right": "¿Y si hubiéramos llegado cinco minutos antes?",
+      "why": "Almost. After *hubiéramos* you need the -ado word: *llegado*."
+    },
+    {
+      "wrong": "¿Y si hubiera aparecido mañana en la puerta?",
+      "right": "¿Y si apareciera mañana en la puerta?",
+      "why": "Almost. For tomorrow use the plain -ra form; *hubiera* + -ado looks back."
+    }
+  ],
+  "personal": "Ask yourself one *¿Y si…?* about your own past, such as a trip, a job or a person, and write it with *hubiera*."
+}

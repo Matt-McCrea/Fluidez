@@ -1,0 +1,176 @@
+{
+  "node": "p:si-quieres-que",
+  "hook": {
+    "line": "Sometimes the honest answer is \"it's your call\". Spanish hands the decision back by repeating the verb: if you want it, do it.",
+    "es": "Si quieres invitarla, invítala.",
+    "en": "If you want to invite her, invite her."
+  },
+  "examples": [
+    {
+      "es": "Si quieres comprártelo, cómpratelo.",
+      "en": "If you want to buy it, buy it. (to a friend)"
+    },
+    {
+      "es": "Si quiere ir, que vaya; a mí me da igual.",
+      "en": "If he wants to go, let him go; I don't mind."
+    },
+    {
+      "es": "Si quiere decírselo, que se lo diga.",
+      "en": "If she wants to tell him, let her tell him."
+    },
+    {
+      "es": "Si quieres venir, ven.",
+      "en": "If you want to come, come. (to a friend)"
+    },
+    {
+      "es": "Si Hernando quiere pagar, que pague.",
+      "en": "If Hernando wants to pay, let him pay."
+    },
+    {
+      "es": "Si quiere cambiar el menú, que lo cambie.",
+      "en": "If she wants to change the menu, let her change it."
+    }
+  ],
+  "rule": "To say \"do what you like, I won't stop you\", Spanish repeats the verb.\n\nTo the person: *si quieres* + a plain command. *Si quieres venir, ven.*\nAbout someone else: *si quiere* + *que* + the wish form. *Si quiere ir, que vaya.*\n\nPronouns go before the verb after *que*: *que se lo diga*.\n\nIt hands the decision back, so it can sound cold. Add *a mí me da igual* only if you truly do not mind.",
+  "smallPrint": "Teachers call *que vaya* an indirect command: a wish aimed at a third person.",
+  "readAndPick": [
+    {
+      "es": "Si quiere ir, que vaya.",
+      "options": [
+        "If he wants to go, let him go.",
+        "If he went, he should have stayed.",
+        "If I go, he can go too."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si quieres comprártelo, cómpratelo.",
+      "options": [
+        "If you buy it, I'll buy it too.",
+        "If you want to buy it, buy it.",
+        "You'd better not buy it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si Hernando quiere pagar, que pague.",
+      "options": [
+        "If Hernando paid, he should pay.",
+        "Hernando wants me to pay.",
+        "If Hernando wants to pay, let him pay."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Si quiere decírselo, que se lo diga.",
+      "options": [
+        "If she wants to tell him, let her tell him.",
+        "If she told him, she should tell me.",
+        "She wants me to tell him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si quieres venir, ven.",
+      "options": [
+        "If you come, I'll leave.",
+        "If you want to come, come.",
+        "If I come, you come."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si quiere irse, que se vaya; a mí me da igual.",
+      "options": [
+        "If he leaves, I'll be sad.",
+        "He wants to leave, and I mind a lot.",
+        "If he wants to leave, let him; I don't mind."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Si quieres llamarla, llámala.",
+      "options": [
+        "If you want to call her, call her.",
+        "If you call her, she will answer.",
+        "Call her, because she wants you to."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si quiere cambiar el menú, que lo cambie.",
+      "options": [
+        "If she changed the menu, she should change it back.",
+        "If she wants to change the menu, let her change it.",
+        "She wants me to change the menu."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Talking to a friend. Choose *cómpratelo* or *que se lo compre*: Si quieres comprártelo, ___. Type the whole sentence.",
+      "answer": "Si quieres comprártelo, cómpratelo.",
+      "accept": [],
+      "why": "To the person you are talking to, use the plain command."
+    },
+    {
+      "prompt": "About Hernando. Choose *paga* or *que pague*: Si Hernando quiere pagar, ___. Type the whole sentence.",
+      "answer": "Si Hernando quiere pagar, que pague.",
+      "accept": [],
+      "why": "About someone else, use *que* + the wish form."
+    },
+    {
+      "prompt": "If you want to come, come. (to a friend)",
+      "answer": "Si quieres venir, ven.",
+      "accept": [],
+      "why": "A friend is *tú*, so *si quieres* and the plain command."
+    },
+    {
+      "prompt": "If she wants to tell him, let her tell him.",
+      "answer": "Si quiere decírselo, que se lo diga.",
+      "accept": [
+        "Si ella quiere decírselo, que se lo diga."
+      ],
+      "why": "About her, so *que* + *diga*, with the pronouns before the verb."
+    },
+    {
+      "prompt": "If he wants to go, let him go; I don't mind.",
+      "answer": "Si quiere ir, que vaya; a mí me da igual.",
+      "accept": [
+        "Si él quiere ir, que vaya; a mí me da igual."
+      ],
+      "why": "*A mí me da igual* says you really don't mind."
+    },
+    {
+      "prompt": "Make it about Vale: *Si quieres cambiar el menú, cámbialo.*",
+      "answer": "Si Vale quiere cambiar el menú, que lo cambie.",
+      "accept": [],
+      "why": "About a third person, the command becomes *que* + the wish form."
+    },
+    {
+      "prompt": "Speak to a friend (*tú*): *Si quiere llamarla, que la llame.*",
+      "answer": "Si quieres llamarla, llámala.",
+      "accept": [],
+      "why": "To the person, drop *que* and use the plain command."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Si quiere ir, que va.",
+      "right": "Si quiere ir, que vaya.",
+      "why": "Almost. After *que* the verb takes its wish form: *vaya*, not *va*."
+    },
+    {
+      "wrong": "Si quieres venir, que vengas.",
+      "right": "Si quieres venir, ven.",
+      "why": "Almost. To the person in front of you, use the plain command; *que* is for someone else."
+    },
+    {
+      "wrong": "Si quiere decírselo, que diga se lo.",
+      "right": "Si quiere decírselo, que se lo diga.",
+      "why": "Almost. The pronouns go before the verb: *que se lo diga*."
+    }
+  ],
+  "personal": "Think of a small decision a friend keeps asking you about, and give them the green light with *Si quieres…*."
+}

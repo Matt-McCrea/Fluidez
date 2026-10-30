@@ -1,0 +1,178 @@
+{
+  "node": "p:estar-por",
+  "hook": {
+    "line": "It is late, Altamira's offer is on the table, and Tomás has not decided anything. He needs a way to say \"I'm leaning towards it\" without promising.",
+    "es": "Estoy por aceptar la oferta.",
+    "en": "I'm half-minded to accept the offer."
+  },
+  "examples": [
+    {
+      "es": "Estoy por dejarlo todo y empezar de cero.",
+      "en": "I'm half-minded to drop everything and start over."
+    },
+    {
+      "es": "Estoy por decirle que no.",
+      "en": "I'm tempted to say no to him."
+    },
+    {
+      "es": "¿Estás por renunciar?",
+      "en": "Are you thinking of quitting? (to a friend)"
+    },
+    {
+      "es": "Estamos por vender el café, pero todavía no sabemos.",
+      "en": "We're leaning towards selling the café, but we don't know yet."
+    },
+    {
+      "es": "Tengo pensado viajar a Medellín en diciembre.",
+      "en": "I plan to travel to Medellín in December."
+    },
+    {
+      "es": "Me hice el firme propósito de aprender otro idioma.",
+      "en": "I made a firm resolution to learn another language."
+    }
+  ],
+  "rule": "*Estoy por* + infinitive means you are leaning that way but have not decided. It is closer to \"I'm tempted to\" than \"I'm going to\".\n\n*Estoy por dejarlo todo.*\n\nWhen the plan is firm, switch:\n*Tengo pensado viajar en diciembre.* (a plan)\n*Me hice el propósito de madrugar.* (a resolution)\n\nNo *de* after *pensado*. And *me hice el propósito* keeps its *el*.",
+  "smallPrint": "Teachers call *estar por* + infinitive a verbal periphrasis of intention: the plan is still forming.",
+  "readAndPick": [
+    {
+      "es": "Estoy por decirle que no.",
+      "options": [
+        "I'm tempted to say no to him.",
+        "I already told him no.",
+        "I never say no to him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo pensado viajar en diciembre.",
+      "options": [
+        "I might travel in December, I'm not sure.",
+        "I wish I had travelled in December.",
+        "I have a trip planned for December."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me hice el propósito de madrugar más.",
+      "options": [
+        "I'm tempted to get up earlier.",
+        "I made a firm resolution to get up earlier.",
+        "I got up earlier."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Estás por renunciar?",
+      "options": [
+        "You quit, didn't you?",
+        "Do you have to quit?",
+        "Are you thinking of quitting?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estoy por dejarlo todo.",
+      "options": [
+        "I'm half-minded to leave everything.",
+        "I left everything.",
+        "I'm leaving everything tomorrow, it's decided."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estamos por aceptar la oferta, pero todavía no sé.",
+      "options": [
+        "We refused the offer.",
+        "We're leaning towards accepting the offer, but I'm not sure yet.",
+        "We accepted the offer."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ella se hizo el firme propósito de dejar el azúcar.",
+      "options": [
+        "She is tempted to quit sugar.",
+        "She quit sugar by accident.",
+        "She made a firm resolution to quit sugar."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estoy por llamar a Vale, pero no sé.",
+      "options": [
+        "I'm tempted to call Vale, but I don't know.",
+        "I called Vale, but I didn't know.",
+        "I'm calling Vale right now, for sure."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Your plan is firm. Choose *tengo pensado* or *estoy por*: ___ viajar a Cartagena en diciembre. Type the whole sentence.",
+      "answer": "Tengo pensado viajar a Cartagena en diciembre.",
+      "accept": [],
+      "why": "A firm plan takes *tengo pensado*."
+    },
+    {
+      "prompt": "You are only tempted. Choose *tengo pensado* or *estoy por*: ___ decirle que no. Type the whole sentence.",
+      "answer": "Estoy por decirle que no.",
+      "accept": [],
+      "why": "A half-formed idea takes *estoy por*."
+    },
+    {
+      "prompt": "I'm half-minded to drop everything and start over.",
+      "answer": "Estoy por dejarlo todo y empezar de cero.",
+      "accept": [
+        "Estoy por dejar todo y empezar de cero."
+      ],
+      "why": "*Estoy por* + infinitive: leaning, not decided."
+    },
+    {
+      "prompt": "I made a firm resolution to learn another language.",
+      "answer": "Me hice el firme propósito de aprender otro idioma.",
+      "accept": [
+        "Me hice el propósito de aprender otro idioma."
+      ],
+      "why": "*Me hice el propósito de* + infinitive is a resolution."
+    },
+    {
+      "prompt": "We're tempted to accept the offer.",
+      "answer": "Estamos por aceptar la oferta.",
+      "accept": [],
+      "why": "*Estamos por* is *estoy por* for *we*."
+    },
+    {
+      "prompt": "Talk to a friend (*tú*): change *Estoy por renunciar* so it is about them.",
+      "answer": "Estás por renunciar.",
+      "accept": [
+        "¿Estás por renunciar?"
+      ],
+      "why": "The verb *estar* changes with the person, and *por* stays."
+    },
+    {
+      "prompt": "Make it a firm plan with *tengo pensado*: *Estoy por viajar a Medellín.*",
+      "answer": "Tengo pensado viajar a Medellín.",
+      "accept": [],
+      "why": "*Tengo pensado* + infinitive, with no *de*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy para decirle que no.",
+      "right": "Estoy por decirle que no.",
+      "why": "Almost. For an intention that is still forming, Spanish uses *por*, not *para*."
+    },
+    {
+      "wrong": "Tengo pensado de viajar en diciembre.",
+      "right": "Tengo pensado viajar en diciembre.",
+      "why": "Almost. *Tengo pensado* goes straight into the infinitive, with no *de*."
+    },
+    {
+      "wrong": "Me hice propósito de aprender otro idioma.",
+      "right": "Me hice el propósito de aprender otro idioma.",
+      "why": "Almost. The phrase needs its *el*: *me hice el propósito de*."
+    }
+  ],
+  "personal": "Tell us something you are half-minded to do with *Estoy por…*, then something you have firmly planned with *Tengo pensado…*."
+}

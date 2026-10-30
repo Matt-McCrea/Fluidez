@@ -1,0 +1,179 @@
+{
+  "node": "p:no-quedar-mas-remedio",
+  "hook": {
+    "line": "The letter from the bank has arrived and there is no clever way out. Spanish has a sentence for when life leaves you exactly one door.",
+    "es": "No me quedó más remedio que cerrar el café el domingo.",
+    "en": "I had no choice but to close the café on Sunday."
+  },
+  "examples": [
+    {
+      "es": "No nos quedó más remedio que cancelar el viaje.",
+      "en": "We had no choice but to cancel the trip."
+    },
+    {
+      "es": "No hay más remedio.",
+      "en": "There's no other choice."
+    },
+    {
+      "es": "No le quedó otra opción que renunciar.",
+      "en": "She had no option but to resign."
+    },
+    {
+      "es": "No me queda de otra.",
+      "en": "I have no other choice."
+    },
+    {
+      "es": "No me quedó más remedio que vender el carro.",
+      "en": "I had no choice but to sell the car."
+    },
+    {
+      "es": "No queda de otra que esperar.",
+      "en": "There's nothing for it but to wait."
+    }
+  ],
+  "rule": "When there is no alternative, Spanish says the options did not remain for you.\n\n*No me quedó más remedio que* + infinitive. The *me / te / le / nos / les* is the person. *Remedio* stays singular. *Otra opción* works too.\n\n*No nos quedó más remedio que cancelar el viaje.*\n\nShort and general: *No hay más remedio.* In Latin America, *No queda de otra* and *No me queda de otra* are very common.\n\nWatch out: *remedio* is not only medicine.",
+  "smallPrint": "Teachers call this an impersonal expression with an indirect object: the person is the one the choice is left to.",
+  "readAndPick": [
+    {
+      "es": "No nos quedó más remedio que cancelar el viaje.",
+      "options": [
+        "We had no choice but to cancel the trip.",
+        "We chose to cancel the trip.",
+        "We refused to cancel the trip."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No hay más remedio.",
+      "options": [
+        "There's no more medicine.",
+        "There's no other choice.",
+        "There's another way."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No le quedó otra opción que renunciar.",
+      "options": [
+        "She wanted to resign.",
+        "She had another option besides resigning.",
+        "She had no option but to resign."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No me queda de otra.",
+      "options": [
+        "I have no other choice.",
+        "I have nothing left over.",
+        "I don't mind either way."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No me quedó más remedio que vender el carro.",
+      "options": [
+        "I decided to sell the car happily.",
+        "I had no choice but to sell the car.",
+        "I had no car left to sell."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No queda de otra que esperar.",
+      "options": [
+        "Nobody is waiting.",
+        "There's no need to wait.",
+        "There's nothing for it but to wait."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No les quedó más remedio que irse.",
+      "options": [
+        "They had no choice but to leave.",
+        "They preferred to leave.",
+        "They had nothing left to leave."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No había más remedio que aceptar la oferta.",
+      "options": [
+        "There was a choice, and we accepted the offer.",
+        "There was no choice but to accept the offer.",
+        "There was no offer to accept."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *quedó* or *quedaron*: No nos ___ más remedio que cancelar el viaje. Type the whole sentence.",
+      "answer": "No nos quedó más remedio que cancelar el viaje.",
+      "accept": [],
+      "why": "*Remedio* is singular, so the verb is *quedó*."
+    },
+    {
+      "prompt": "Talking about yourself. Choose *me* or *le*: No ___ quedó otra opción que renunciar. Type the whole sentence.",
+      "answer": "No me quedó otra opción que renunciar.",
+      "accept": [],
+      "why": "The choice was left to *me*, so *me quedó*."
+    },
+    {
+      "prompt": "There's no other choice.",
+      "answer": "No hay más remedio.",
+      "accept": [
+        "No hay otra opción."
+      ],
+      "why": "*No hay* + *más remedio* says there is no way out."
+    },
+    {
+      "prompt": "We had no choice but to cancel the trip.",
+      "answer": "No nos quedó más remedio que cancelar el viaje.",
+      "accept": [],
+      "why": "*Nos* is the person, and *que* leads into the infinitive."
+    },
+    {
+      "prompt": "I have no other choice. (casual)",
+      "answer": "No me queda de otra.",
+      "accept": [
+        "No me queda más remedio.",
+        "No me queda otra opción."
+      ],
+      "why": "*No me queda de otra* is the everyday way to say it."
+    },
+    {
+      "prompt": "Make it about her: *No me quedó más remedio que renunciar.*",
+      "answer": "No le quedó más remedio que renunciar.",
+      "accept": [
+        "No le quedó otra opción que renunciar."
+      ],
+      "why": "*Me* becomes *le* for her."
+    },
+    {
+      "prompt": "Make it about them: *No me quedó más remedio que vender el carro.*",
+      "answer": "No les quedó más remedio que vender el carro.",
+      "accept": [],
+      "why": "*Me* becomes *les* for them, and *remedio* stays singular."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No me quedó más remedio de cancelar.",
+      "right": "No me quedó más remedio que cancelar.",
+      "why": "Almost. The link to the infinitive is *que*, not *de*."
+    },
+    {
+      "wrong": "No nos quedaron más remedio que cancelar.",
+      "right": "No nos quedó más remedio que cancelar.",
+      "why": "Almost. *Remedio* is singular, so the verb is *quedó*."
+    },
+    {
+      "wrong": "Nos no quedó más remedio que cancelar.",
+      "right": "No nos quedó más remedio que cancelar.",
+      "why": "Almost. *No* comes first, then the pronoun: *no nos quedó*."
+    }
+  ],
+  "personal": "Tell us about a time you had no choice: *No me quedó más remedio que…*."
+}

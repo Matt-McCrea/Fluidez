@@ -1,0 +1,176 @@
+{
+  "node": "p:conformarse-con",
+  "hook": {
+    "line": "Sometimes you do not get everything you hoped for, and you say so with a little grace. This is how Tomás tells Vale what he can live with.",
+    "es": "Me conformo con que el café siga abierto.",
+    "en": "I'll settle for the café staying open."
+  },
+  "examples": [
+    {
+      "es": "Se conformó con una disculpa.",
+      "en": "She settled for an apology."
+    },
+    {
+      "es": "Me conformo con que llegues a tiempo.",
+      "en": "I'll settle for you arriving on time. (to a friend)"
+    },
+    {
+      "es": "Me conformo con aprobar.",
+      "en": "I'll settle for passing."
+    },
+    {
+      "es": "No me conformo con menos.",
+      "en": "I won't settle for less."
+    },
+    {
+      "es": "Hernando se conforma con un tinto y un rato de conversación.",
+      "en": "Hernando is content with a black coffee and a bit of conversation."
+    },
+    {
+      "es": "Nos conformamos con que no llueva el domingo.",
+      "en": "We'll settle for it not raining on Sunday."
+    }
+  ],
+  "rule": "*Conformarse con* is \"to settle for\": taking less than you hoped, and making peace with it.\n\n*Con* + noun: *Se conformó con una disculpa.*\n*Con* + infinitive, same person: *Me conformo con aprobar.*\n*Con que* + the wish form, someone else's action: *Me conformo con que llegues a tiempo.*\n\nThe *me / te / se* stays. There is usually a little disappointment underneath, so it is not the same as \"I'm happy with\".",
+  "smallPrint": "Teachers call verbs like this pronominal: the *se* is built into the verb.",
+  "readAndPick": [
+    {
+      "es": "Se conformó con una disculpa.",
+      "options": [
+        "She settled for an apology.",
+        "She demanded an apology.",
+        "She refused an apology."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me conformo con que llegues a tiempo.",
+      "options": [
+        "I'm sure you arrive on time.",
+        "I'll settle for you arriving on time.",
+        "I'm upset that you arrive on time."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me conformo con aprobar.",
+      "options": [
+        "I refuse to pass.",
+        "I'm thrilled that I passed.",
+        "I'll settle for passing."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No me conformo con menos.",
+      "options": [
+        "I won't settle for less.",
+        "I always settle for less.",
+        "I don't have less."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando se conforma con un tinto y un rato de conversación.",
+      "options": [
+        "Hernando asks for more than a black coffee and a chat.",
+        "Hernando is content with a black coffee and a chat.",
+        "Hernando is making a black coffee and a chat."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos conformamos con que no llueva el domingo.",
+      "options": [
+        "We're sorry it rains on Sunday.",
+        "We're sure it won't rain on Sunday.",
+        "We'll settle for it not raining on Sunday."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No se conforman con la oferta.",
+      "options": [
+        "They won't settle for the offer.",
+        "They settle for the offer.",
+        "They make the offer."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te conformas con una respuesta así?",
+      "options": [
+        "Did you give an answer like that?",
+        "Will you settle for an answer like that?",
+        "Do you know an answer like that?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Talking about yourself. Choose *conformo* or *conformas*: Me ___ con aprobar. Type the whole sentence.",
+      "answer": "Me conformo con aprobar.",
+      "accept": [],
+      "why": "*Me* goes with *conformo*."
+    },
+    {
+      "prompt": "To a friend. Choose *llegas* or *llegues*: Me conformo con que ___ a tiempo. Type the whole sentence.",
+      "answer": "Me conformo con que llegues a tiempo.",
+      "accept": [],
+      "why": "After *con que*, the other person's action takes the wish form, *llegues*."
+    },
+    {
+      "prompt": "She settled for an apology.",
+      "answer": "Se conformó con una disculpa.",
+      "accept": [],
+      "why": "*Se conformó con* + noun."
+    },
+    {
+      "prompt": "I won't settle for less.",
+      "answer": "No me conformo con menos.",
+      "accept": [],
+      "why": "*No* goes before *me*."
+    },
+    {
+      "prompt": "We'll settle for it not raining on Sunday.",
+      "answer": "Nos conformamos con que no llueva el domingo.",
+      "accept": [],
+      "why": "*Con que* + *llueva*, the wish form."
+    },
+    {
+      "prompt": "Make it about him: *Me conformo con aprobar.*",
+      "answer": "Se conforma con aprobar.",
+      "accept": [
+        "Él se conforma con aprobar."
+      ],
+      "why": "*Me conformo* becomes *se conforma* for him."
+    },
+    {
+      "prompt": "Make it past, about her: *Se conforma con una disculpa.*",
+      "answer": "Se conformó con una disculpa.",
+      "accept": [
+        "Ella se conformó con una disculpa."
+      ],
+      "why": "The past of *se conforma* is *se conformó*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me conformo de aprobar.",
+      "right": "Me conformo con aprobar.",
+      "why": "Almost. This verb always pairs with *con*."
+    },
+    {
+      "wrong": "Me conformo con que llegas a tiempo.",
+      "right": "Me conformo con que llegues a tiempo.",
+      "why": "Almost. After *con que*, the other person's action takes the wish form: *llegues*."
+    },
+    {
+      "wrong": "Conformo con una disculpa.",
+      "right": "Me conformo con una disculpa.",
+      "why": "Almost. The *me* is part of the verb and cannot be dropped."
+    }
+  ],
+  "personal": "Tell us something you would happily settle for this week: *Me conformo con…*."
+}
