@@ -1,0 +1,222 @@
+{
+  "id": "sc-u23-c",
+  "unit": "u23",
+  "title": "Encima del horno",
+  "brief": "You're Tomás. The café's oven has been dead for three days, and the repairman has finally come. Tell him what's wrong and how long it's been like this, then choose a part and sort out paying. He's older than you and a stranger, so use usted.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes. Soy el técnico. Me dijeron que aquí hay algo que no sirve.",
+      "npcEn": "Good afternoon. I'm the repairman. They told me something here doesn't work.",
+      "intent": "Say yes: it's the oven, and it doesn't work.",
+      "accept": [
+        "Sí, el horno no sirve.",
+        "Sí, señor. El horno no funciona.",
+        "Buenas tardes. Sí, es el horno. No sirve."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "no (sirve|funciona)",
+          "flags": "i",
+          "label": "it doesn't work: no sirve, or no funciona"
+        }
+      ],
+      "focus": "c:no-sirve",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Y desde cuándo está así?",
+      "npcEn": "And since when has it been like this?",
+      "intent": "Say it's been like this for three days.",
+      "accept": [
+        "Hace tres días que no funciona.",
+        "El horno está así desde hace tres días.",
+        "Lleva tres días así."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(hace|lleva) tres días",
+          "flags": "i",
+          "label": "how long: hace tres días que..., or lleva tres días"
+        }
+      ],
+      "focus": "g:hace-que-desde",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Alguien lo abrió o lo movió?",
+      "npcEn": "Did anyone open it or move it?",
+      "intent": "Say nobody did, but Simón sleeps on top of the oven.",
+      "accept": [
+        "No, nadie. Pero Simón duerme encima del horno.",
+        "Nadie lo abrió. Pero Simón duerme encima.",
+        "Nadie. Pero Simón siempre duerme encima del horno."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "nadie",
+          "label": "nobody: nadie"
+        }
+      ],
+      "focus": "g:indefinites",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Encima del horno? Ahí está el problema. Mire, esta pieza ya no sirve. Tengo dos: una barata y una buena.",
+      "npcEn": "On top of the oven? There's the problem. Look, this part doesn't work any more. I've got two: a cheap one and a good one.",
+      "intent": "Ask which one is better.",
+      "accept": [
+        "¿Cuál es mejor?",
+        "¿Y cuál es mejor para el horno?",
+        "¿Cuál es la mejor?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cu[áa]l",
+          "flags": "i",
+          "label": "which one: ¿cuál?, not ¿qué?"
+        },
+        {
+          "type": "question",
+          "label": "make it a question"
+        }
+      ],
+      "focus": "g:que-vs-cual",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "La buena. Cuesta ochenta mil pesos, pero dura años.",
+      "npcEn": "The good one. It costs eighty thousand pesos, but it lasts for years.",
+      "intent": "Say you'll take the good one, and ask if there's any problem if you pay him tomorrow.",
+      "accept": [
+        "Bueno, la buena. ¿Hay algún problema si le pago mañana?",
+        "Quiero la buena. ¿Hay algún problema si le pago mañana?",
+        "La buena, entonces. ¿Hay algún problema si le pago mañana?"
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "algún",
+            "alguno"
+          ],
+          "label": "any problem: ¿hay algún problema?"
+        }
+      ],
+      "focus": "g:indefinites",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Ningún problema. Listo, ya funciona. Pero Simón tiene que dormir en otro lado.",
+      "npcEn": "No problem. Done, it works now. But Simón has to sleep somewhere else.",
+      "intent": "Thank him and offer him a coffee before he goes.",
+      "accept": [
+        "Muchas gracias. ¿Quiere un tinto antes de irse?",
+        "Gracias, señor. ¿Le provoca un tinto?",
+        "Mil gracias. ¿Un tinto antes de irse?"
+      ],
+      "require": [],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:no-sirve",
+    "c:quiero",
+    "c:tengo",
+    "c:tienes",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:ahí",
+    "l:antes",
+    "l:aquí",
+    "l:año",
+    "l:barato",
+    "l:buena",
+    "l:bueno",
+    "l:costar",
+    "l:cuál",
+    "l:cuándo",
+    "l:decir",
+    "l:dormir",
+    "l:durar",
+    "l:día",
+    "l:encima",
+    "l:estar",
+    "l:funcionar",
+    "l:hace",
+    "l:hacer",
+    "l:horno",
+    "l:irse",
+    "l:lado",
+    "l:listo",
+    "l:llevar",
+    "l:mañana",
+    "l:mejor",
+    "l:mirar",
+    "l:mover",
+    "l:pagar",
+    "l:peso",
+    "l:pieza",
+    "l:problema",
+    "l:provocar",
+    "l:querer",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:siempre",
+    "l:tarde",
+    "l:tener",
+    "l:tinto",
+    "l:técnico",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:costar-pagar",
+    "p:demonstratives-basic",
+    "p:durar-durante",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:position-de"
+  ]
+}

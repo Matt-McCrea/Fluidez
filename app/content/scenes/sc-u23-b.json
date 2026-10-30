@@ -1,0 +1,242 @@
+{
+  "id": "sc-u23-b",
+  "unit": "u23",
+  "title": "Telecom Andina",
+  "brief": "You're Tomás Herrera. Going through Rosa's papers, you found that the phone company has charged her old landline every month for twelve years, and nobody uses it. Call them, explain the problem and how long it has gone on, and find out what to do. The operator is a stranger, so use usted.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Telecom Andina, buenos días. Habla con Yésica. ¿Me colabora con su nombre, por favor?",
+      "npcEn": "Telecom Andina, good morning. You're speaking with Yésica. Could you give me your name, please?",
+      "intent": "Give your name and say, politely, that you wanted to ask about your grandmother's line.",
+      "accept": [
+        "Buenos días. Me llamo Tomás Herrera. Quería preguntar por la línea de mi abuela.",
+        "Soy Tomás Herrera. Quería preguntar por la línea de mi abuela.",
+        "Claro. Tomás Herrera. Quería preguntar por la línea de mi abuela, Rosa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bquer[ií]a\\b",
+          "flags": "i",
+          "label": "the polite opener: quería preguntar por..."
+        }
+      ],
+      "focus": "c:queria-preguntar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Con gusto, señor Herrera. ¿Y cuál es el problema con la línea?",
+      "npcEn": "Certainly, Mr Herrera. And what's the problem with the line?",
+      "intent": "Say nobody uses it, but they charge for it every month.",
+      "accept": [
+        "Nadie la usa, pero ustedes la cobran cada mes.",
+        "Nadie usa esa línea, pero ustedes la cobran todos los meses.",
+        "El problema es que nadie la usa, y ustedes la cobran cada mes."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "nadie",
+          "label": "nobody: nadie"
+        }
+      ],
+      "focus": "g:indefinites",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Ya veo. ¿Y desde cuándo pasa eso?",
+      "npcEn": "I see. And since when has that been happening?",
+      "intent": "Say it's been going on for twelve years.",
+      "accept": [
+        "Hace doce años.",
+        "Desde hace doce años.",
+        "Hace doce años que la cobran."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "hace doce años",
+          "flags": "i",
+          "label": "how long: hace doce años, or desde hace doce años"
+        }
+      ],
+      "focus": "g:hace-que-desde",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Doce años! Qué pena con usted. Pero la línea está a nombre de la señora Rosa. Para cancelarla, tiene que llamar ella.",
+      "npcEn": "Twelve years! I'm so sorry. But the line is in Mrs Rosa's name. To cancel it, she has to call.",
+      "intent": "Say she can't: your grandmother died. Then ask what you have to do.",
+      "accept": [
+        "No, ella no puede. Mi abuela murió. ¿Qué tengo que hacer?",
+        "Mi abuela murió. ¿Qué tengo que hacer yo?",
+        "No puede. Mi abuela murió. Entonces, ¿qué tengo que hacer?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "qu[ée] tengo que hacer",
+          "flags": "i",
+          "label": "what do I have to do: ¿qué tengo que hacer?"
+        }
+      ],
+      "focus": "c:que-tengo-que-hacer",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Lo siento mucho. Entonces tiene que ir a una oficina con los papeles de su abuela. Hay una en La Candelaria y otra en Chapinero.",
+      "npcEn": "I'm very sorry. Then you have to go to an office with your grandmother's papers. There's one in La Candelaria and another in Chapinero.",
+      "intent": "Ask which one is open on Saturdays.",
+      "accept": [
+        "¿Cuál está abierta los sábados?",
+        "¿Y cuál abre los sábados?",
+        "Perfecto. ¿Cuál de las dos está abierta los sábados?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cu[áa]l",
+          "flags": "i",
+          "label": "which one: ¿cuál?, not ¿qué?"
+        },
+        {
+          "type": "question",
+          "label": "make it a question"
+        }
+      ],
+      "focus": "g:que-vs-cual",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "La oficina de Chapinero, de nueve a doce. Y otra cosa: no le podemos devolver la plata de los doce años, pero el mes de octubre no se lo cobramos.",
+      "npcEn": "The Chapinero office, from nine to twelve. And another thing: we can't give you back the money for the twelve years, but we won't charge you for October.",
+      "intent": "Thank her, and shrug: it's something (use algo).",
+      "accept": [
+        "Bueno, algo es algo. Gracias.",
+        "Algo es algo. Muchas gracias, Yésica.",
+        "Bueno, gracias. Algo es algo."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "algo",
+          "label": "something: algo es algo"
+        }
+      ],
+      "focus": "g:indefinites",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-cuantas-cuotas",
+    "c:a-nombre-de",
+    "c:abierto-cerrado",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-colabora",
+    "c:me-llamo",
+    "c:no-se",
+    "c:por-favor",
+    "c:que-pena",
+    "c:que-tengo-que-hacer",
+    "c:queria-preguntar",
+    "c:sentido-pesame",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "g:cada-cualquier",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:abuela",
+    "l:año",
+    "l:bueno",
+    "l:cancelar",
+    "l:claro",
+    "l:cobrar",
+    "l:colaborar",
+    "l:cosa",
+    "l:cuál",
+    "l:cuándo",
+    "l:devolver",
+    "l:día",
+    "l:estar",
+    "l:favor",
+    "l:gusto",
+    "l:hablar",
+    "l:hace",
+    "l:hacer",
+    "l:ir",
+    "l:llamar",
+    "l:llamarse",
+    "l:línea",
+    "l:mes",
+    "l:morir",
+    "l:nombre",
+    "l:octubre",
+    "l:oficina",
+    "l:papel",
+    "l:pasar",
+    "l:pena",
+    "l:perfecto",
+    "l:plata",
+    "l:poder",
+    "l:preguntar",
+    "l:problema",
+    "l:querer",
+    "l:qué",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sábado",
+    "l:tener",
+    "l:usar",
+    "l:ver",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:desde-hasta",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:naci-en",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:possessives-basic",
+    "p:question-word-order",
+    "p:senor-don-article",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ]
+}

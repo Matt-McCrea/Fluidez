@@ -1,0 +1,239 @@
+{
+  "id": "sc-u23-a",
+  "unit": "u23",
+  "title": "Ventanilla cuatro",
+  "brief": "You're Tomás. You've queued at the bank for an hour and a half to open an account for the café, and it's finally your turn. Explain what you need and find out what they want from you. The teller is a stranger at work, so use usted.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Siguiente, por favor. Qué pena la demora, caballero. ¿Hace mucho que espera?",
+      "npcEn": "Next, please. Sorry about the wait, sir. Have you been waiting long?",
+      "intent": "Say yes: you've been waiting for an hour and a half.",
+      "accept": [
+        "Sí, llevo una hora y media esperando.",
+        "Hace una hora y media que espero.",
+        "Sí, señora. Espero desde hace una hora y media."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "hace una hora y media|llevo una hora y media",
+          "flags": "i",
+          "label": "say how long: hace una hora y media que espero, or llevo una hora y media esperando"
+        }
+      ],
+      "focus": "g:hace-que-desde",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Ay, sí, hoy hay mucha gente. ¿En qué le puedo servir?",
+      "npcEn": "Oh yes, there are a lot of people today. How can I help you?",
+      "intent": "Say, politely, that you wanted to ask about an account for the café.",
+      "accept": [
+        "Quería preguntar por una cuenta para el café.",
+        "Buenas tardes. Quería abrir una cuenta para el café.",
+        "Quería preguntar por una cuenta para mi café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bquer[ií]a\\b",
+          "flags": "i",
+          "label": "the polite opener: quería..."
+        }
+      ],
+      "focus": "c:queria-preguntar",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Con mucho gusto. ¿Usted ya tiene alguna cuenta con nosotros?",
+      "npcEn": "With pleasure. Do you already have an account with us?",
+      "intent": "Say no, you don't have any account here.",
+      "accept": [
+        "No, no tengo ninguna cuenta aquí.",
+        "No, señora. No tengo ninguna cuenta en Colombia.",
+        "No, ninguna."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "ninguna",
+            "ninguno",
+            "ningún"
+          ],
+          "label": "not any: no tengo ninguna cuenta"
+        }
+      ],
+      "focus": "g:indefinites",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Bueno, entonces necesita tres documentos.",
+      "npcEn": "Well, then you need three documents.",
+      "intent": "Ask which ones they are.",
+      "accept": [
+        "¿Cuáles son?",
+        "¿Cuáles son los documentos?",
+        "Perdón, ¿cuáles son los tres documentos?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cu[áa]les",
+          "flags": "i",
+          "label": "which ones: ¿cuáles son?, not ¿qué son?"
+        },
+        {
+          "type": "question",
+          "label": "make it a question"
+        }
+      ],
+      "focus": "g:que-vs-cual",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "El pasaporte, un recibo de luz a su nombre y una carta de su banco en Canadá. Y para la carta necesita cuatro papeles más.",
+      "npcEn": "Your passport, an electricity bill in your name and a letter from your bank in Canada. And for the letter you need four more papers.",
+      "intent": "Ask what you have to do first.",
+      "accept": [
+        "¿Y qué tengo que hacer primero?",
+        "Cuatro papeles más. ¿Qué tengo que hacer ahora?",
+        "¿Qué tengo que hacer primero?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "qu[ée] tengo que hacer",
+          "flags": "i",
+          "label": "what do I have to do: ¿qué tengo que hacer?"
+        }
+      ],
+      "focus": "c:que-tengo-que-hacer",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Primero, el recibo de luz. Tranquilo, caballero, eso le pasa a todo el mundo.",
+      "npcEn": "First, the electricity bill. Don't worry, sir, that happens to everyone.",
+      "intent": "Thank her and say you'll have to come back another day.",
+      "accept": [
+        "Gracias. Me toca volver mañana, entonces.",
+        "Bueno, me toca volver mañana. Muchas gracias.",
+        "Muchas gracias, señora. Me toca volver otro día."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "toca",
+          "label": "I'll have to: me toca volver"
+        }
+      ],
+      "focus": "c:me-toca",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:con-mucho-gusto",
+    "c:en-que-le-puedo-servir",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-toca",
+    "c:mucho-gusto",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:puedo",
+    "c:que-pena",
+    "c:que-tengo-que-hacer",
+    "c:queria-preguntar",
+    "c:sera-otro-dia",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "c:tranquilo",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:ahora",
+    "l:aquí",
+    "l:banco",
+    "l:buena",
+    "l:bueno",
+    "l:caballero",
+    "l:café",
+    "l:carta",
+    "l:cuenta",
+    "l:cuál",
+    "l:demora",
+    "l:documento",
+    "l:día",
+    "l:esperar",
+    "l:favor",
+    "l:gente",
+    "l:gusto",
+    "l:hace",
+    "l:hacer",
+    "l:hora",
+    "l:hoy",
+    "l:llevar",
+    "l:luz",
+    "l:mañana",
+    "l:mundo",
+    "l:necesitar",
+    "l:nombre",
+    "l:papel",
+    "l:pasaporte",
+    "l:pasar",
+    "l:pena",
+    "l:perdón",
+    "l:poder",
+    "l:preguntar",
+    "l:querer",
+    "l:qué",
+    "l:recibo",
+    "l:ser",
+    "l:servir",
+    "l:señora",
+    "l:siguiente",
+    "l:tarde",
+    "l:tener",
+    "l:tocar",
+    "l:tranquilo",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:la-gente-singular",
+    "p:madrugar-trasnochar",
+    "p:no-es-x-es-y",
+    "p:no-queda-de-otra",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:time-sequence-basic",
+    "p:todos-los-dias"
+  ]
+}
