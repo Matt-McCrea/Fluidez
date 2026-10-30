@@ -87,8 +87,8 @@
       "intent": "Say you don't have it and ask if you can pay in cash.",
       "accept": [
         "No la tengo. ¿Se puede pagar en efectivo?",
-        "No, la dejó en su casa. ¿Se puede pagar en la caja?",
-        "No la traje. ¿Se puede pagar en efectivo?"
+        "No, la dejó en la casa. ¿Se puede pagar en efectivo?",
+        "¿Se puede pagar en efectivo? Hoy no la traje."
       ],
       "require": [
         {
@@ -109,7 +109,7 @@
       "id": "t5",
       "npc": "Sí, en la caja. Y mañana tiene que volver a las ocho.",
       "npcEn": "Yes, at the cash desk. And he has to come back tomorrow at eight.",
-      "intent": "Ask whether he must bring anything.",
+      "intent": "Ask whether he must bring anything (use deber).",
       "accept": [
         "¿Debe traer algo?",
         "¿Él debe traer algo más?",
@@ -207,6 +207,7 @@
     "l:entrar",
     "l:estar",
     "l:fatal",
+    "l:hoy",
     "l:importar",
     "l:ir",
     "l:mal",

@@ -2,11 +2,11 @@
   "id": "ch104",
   "unit": "u35",
   "title": "Una camioneta de pan",
-  "text": "Hernando le ganaba al dominó a Jhon Fredy por primera vez en un mes.\nHernando: Ayer era la fila. Hoy estoy como nuevo.\nSe levantó para cantar victoria, se puso la mano en el pecho y se cayó detrás de su mesa.\nTomás: ¡Llamen una ambulancia!\nHernando abrió los ojos. Estaba blanco, pero hablaba.\nHernando: Ni se te ocurra, mijo. Una ambulancia cuesta una fortuna.\nSimón: ¡Ni se te ocurra! ¡Ni se te ocurra!\nEntonces doña Gloria paró delante del café con la camioneta de la panadería.\nGloria: Obviamente no vamos a esperar. ¡Súbanlo!\nLo subieron entre cien almojábanas calientes.\nHernando: Cuarenta años de taxi, y voy a llegar a la clínica en una camioneta de pan.\nVale: Usted no habla. Usted respira.\nEn urgencias, la fila llegaba hasta la calle.\nHernando: ¿Otra fila? Para ser martes, esto está lleno.\nEnfermera: Aquí todo el mundo tiene que hacer fila, señor.\nPero la enfermera le vio la cara, lo pasó primero y le pidió la cédula.\nHernando: En el zapato, mijo.\nEn el zapato estaba la billetera, y en la billetera, una foto vieja de Rosa, de joven.\nTomás guardó la foto otra vez, con mucho cuidado, y no dijo nada.\nHernando: Mija, le hago una propuesta. Le cambio mi reloj por un tinto, y me voy para mi casa.\nEnfermera: Mi propuesta es otra. Usted se queda esta noche, y mañana lo ve la cardióloga.\nEnfermera: Su abuelo tiene muy mal comportamiento.\nTomás: No es mi abuelo.\nHernando: Casi.\nEn la chaqueta de Hernando, Vale encontró una caja de pastillas sin abrir: «Doctor Mejía. Agosto». Era octubre.\nHernando: Esas pastillas son carísimas, mija. Yo estaba ahorrando para el horno.\nVale: Para mí, usted es más importante que todos los hornos de Bogotá.\nHernando cerró los ojos, pero sonreía.\nVale: Esto no se lo contamos a nadie. Si Altamira lo sabe, va a pensar que ya ganó.\nEnfermera: La cardióloga llega a las siete, y no le gusta repetir nada.\nTomás: Yo no entiendo a los médicos ni en inglés.\nVale: Entonces mañana la escuchamos los dos.",
+  "text": "Hernando le ganaba al ajedrez a Jhon Fredy por primera vez en un mes.\nHernando: Ayer era la fila. Hoy estoy como nuevo.\nSe levantó para cantar victoria, se puso la mano en el pecho y se cayó detrás de la mesa de ajedrez.\nTomás: ¡Llamen una ambulancia!\nHernando abrió los ojos. Estaba blanco, pero hablaba.\nHernando: Ni se te ocurra, mijo. Una ambulancia cuesta una fortuna.\nSimón: ¡Ni se te ocurra! ¡Ni se te ocurra!\nEntonces doña Gloria paró delante del café con la camioneta de la panadería.\nGloria: Obviamente no vamos a esperar. ¡Súbanlo!\nLo subieron entre cien almojábanas calientes.\nHernando: Cuarenta años de taxi, y voy a llegar a la clínica en una camioneta de pan.\nVale: Usted no habla. Usted respira.\nEn urgencias, la fila llegaba hasta la calle.\nHernando: ¿Otra fila? Para ser martes, esto está lleno.\nEnfermera: Aquí todo el mundo tiene que hacer fila, señor.\nPero la enfermera le vio la cara, lo pasó primero y le pidió la cédula.\nHernando: En el zapato, mijo.\nEn el zapato estaba la billetera, y en la billetera, una foto vieja de Rosa, de joven.\nTomás guardó la foto otra vez, con mucho cuidado, y no dijo nada.\nHernando: Mija, le hago una propuesta. Le cambio mi reloj por un tinto, y me voy para mi casa.\nEnfermera: Mi propuesta es otra. Usted se queda esta noche, y mañana lo ve la cardióloga.\nEnfermera: Su abuelo tiene muy mal comportamiento.\nTomás: No es mi abuelo.\nHernando: Casi.\nEn la chaqueta de Hernando, Vale encontró una caja de pastillas sin abrir: «Doctor Mejía. Agosto». Era octubre.\nHernando: Esas pastillas son carísimas, mija. Yo estaba ahorrando para el horno.\nVale: Para mí, usted es más importante que todos los hornos de Bogotá.\nHernando cerró los ojos, pero sonreía.\nVale: Esto no se lo contamos a nadie. Si en Altamira lo saben, van a pensar que ya ganaron.\nEnfermera: La cardióloga llega a las siete, y no le gusta repetir nada.\nTomás: Yo no entiendo a los médicos ni en inglés.\nVale: Entonces mañana la escuchamos los dos.",
   "gloss": [
     {
-      "es": "dominó",
-      "en": "dominoes"
+      "es": "ajedrez",
+      "en": "chess"
     },
     {
       "es": "pastillas",
@@ -69,8 +69,8 @@
       "en": "We're not telling anyone about this."
     },
     {
-      "es": "Si Altamira lo sabe, va a pensar que ya ganó.",
-      "en": "If Altamira finds out, he'll think he's already won."
+      "es": "Si en Altamira lo saben, van a pensar que ya ganaron.",
+      "en": "If Altamira finds out, they'll think they've already won."
     },
     {
       "es": "no le gusta repetir nada",
@@ -136,7 +136,7 @@
   "hook": "Hernando is spending the night at the clinic, and the box of pills he never opened is now in Vale's hands. Tomorrow at seven the cardiologist comes, she doesn't like repeating herself, and Tomás has to understand every word.",
   "rereadQuestions": [
     {
-      "q": "Who was Hernando beating at dominoes?",
+      "q": "Who was Hernando beating at chess?",
       "options": [
         "Jhon Fredy",
         "Tomás",
@@ -251,6 +251,7 @@
     "l:abuelo",
     "l:agosto",
     "l:ahorrar",
+    "l:ajedrez",
     "l:almojábana",
     "l:ambulancia",
     "l:aquí",
@@ -281,7 +282,6 @@
     "l:delante",
     "l:detrás",
     "l:doctor",
-    "l:dominó",
     "l:encontrar",
     "l:enfermera",
     "l:entender",

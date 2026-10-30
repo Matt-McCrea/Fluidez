@@ -7,9 +7,9 @@
   "turns": [
     {
       "id": "t1",
-      "npc": "Soy la doctora Ramírez. Su amigo ya está mejor, pero tiene un problema del corazón.",
-      "npcEn": "I'm Doctor Ramírez. Your friend is better now, but he has a heart problem.",
-      "intent": "Thank her and ask what he has to do now.",
+      "npc": "Soy la doctora Salcedo. Su amigo ya está mejor, pero tiene un problema del corazón.",
+      "npcEn": "I'm Doctor Salcedo. Your friend is better now, but he has a heart problem.",
+      "intent": "Thank her and ask what he must do now (use deber).",
       "accept": [
         "Gracias, doctora. ¿Qué debe hacer ahora?",
         "Muchas gracias. ¿Y qué debe hacer él en estos días?",
@@ -57,9 +57,9 @@
       "npcEn": "I understand. Do you have another question?",
       "intent": "Ask if he can drink coffee.",
       "accept": [
-        "¿Se puede tomar café?",
-        "¿Puede tomar un café por la mañana?",
-        "Perdone, ¿se puede tomar café?"
+        "¿Puede tomar café?",
+        "Perdone, ¿él puede tomar un café por la mañana?",
+        "¿Y el café? ¿Se puede tomar café?"
       ],
       "require": [
         {
@@ -78,7 +78,7 @@
       "accept": [
         "Entonces no se debe dormir tarde.",
         "Entonces no se debe trasnochar.",
-        "Entonces no se debe salir tarde por la noche."
+        "Entonces no se debe ir a dormir tarde."
       ],
       "require": [
         {
@@ -192,7 +192,6 @@
     "l:ir",
     "l:mañana",
     "l:mejor",
-    "l:noche",
     "l:pastilla",
     "l:perdonar",
     "l:poder",

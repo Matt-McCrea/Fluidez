@@ -37,7 +37,7 @@
   ],
   "pitfalls": [
     { "wrong": "Yo toco madrugar mañana.", "right": "Mañana me toca madrugar.", "why": "Almost. The person goes in the little word *me*, and the verb is *toca*." },
-    { "wrong": "Llegué madrugar al café.", "right": "Madrugué para llegar al café.", "why": "*Madrugar* is getting up early, not arriving early. For arriving early use *llegar temprano*." },
+    { "wrong": "Madrugué a la reunión.", "right": "Llegué temprano a la reunión.", "why": "*Madrugar* is getting up early, not arriving early. For arriving early, use *llegar temprano*." },
     { "wrong": "Me toca a madrugar.", "right": "Me toca madrugar.", "why": "No little word goes between *toca* and the infinitive." }
   ],
   "personal": "Tell us one day when *te toca madrugar*, or a night when you *trasnochaste*."

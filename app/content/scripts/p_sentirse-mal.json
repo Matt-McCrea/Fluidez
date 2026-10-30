@@ -28,7 +28,7 @@
   "yourTurn": [
     { "prompt": "Choose the right form and type the whole sentence (I feel unwell): Me siento ___. (*mal* / *malo*)", "answer": "Me siento mal.", "accept": [], "why": "How you feel takes *mal*; *malo* describes things." },
     { "prompt": "Choose the right form and type the whole sentence (Hernando feels worse): Hernando ___ peor. (*se siente* / *me siento*)", "answer": "Hernando se siente peor.", "accept": [], "why": "The verb matches Hernando, so *se siente*." },
-    { "prompt": "Ask a friend how they feel.", "answer": "¿Cómo te sientes?", "accept": ["¿Cómo te sientes?"], "why": "*Te sientes* is the form for a friend." },
+    { "prompt": "Ask a friend how they feel.", "answer": "¿Cómo te sientes?", "accept": [], "why": "*Te sientes* is the form for a friend." },
     { "prompt": "Ask a patient you address as *usted* how they feel today.", "answer": "¿Cómo se siente hoy?", "accept": ["¿Cómo se siente usted hoy?", "¿Hoy cómo se siente?"], "why": "*Usted* uses *se siente*." },
     { "prompt": "Type in Spanish: I've felt awful since Monday.", "answer": "Me siento fatal desde el lunes.", "accept": ["Desde el lunes me siento fatal."], "why": "*Desde* says since when, and *fatal* never changes." },
     { "prompt": "Make it about me, a woman speaking: Hernando se siente cansado.", "answer": "Me siento cansada.", "accept": [], "why": "*Me siento* is for me, and a woman says *cansada*." },

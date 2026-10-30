@@ -22,7 +22,7 @@
     { "es": "Te aconsejo esperar un poco.", "options": ["He advises me to wait a little.", "I advise you to wait a little.", "You advise me to wait a little."], "answer": 1 },
     { "es": "No les permiten fumar aquí.", "options": ["They don't let us smoke here.", "We don't let them smoke here.", "They don't let them smoke here."], "answer": 2 },
     { "es": "La doctora nos recomienda comer menos sal.", "options": ["We recommend that the doctor eat less salt.", "The doctor recommends that we eat less salt.", "The doctor recommends that I eat less salt."], "answer": 1 },
-    { "es": "Le aconsejo tomar la pastilla.", "options": ["I advise you to take the pill. (formal)", "I advise you to take the pills, friend.", "He advises me to take the pill."], "answer": 0 },
+    { "es": "Le aconsejo tomar la pastilla.", "options": ["I advise you to take the pill. (formal)", "I advise you to take the pill. (to a friend)", "He advises me to take the pill."], "answer": 0 },
     { "es": "Les prohíben entrar con comida.", "options": ["They ban us from coming in with food.", "They ban you all from coming in with food.", "You all ban them from coming in with food."], "answer": 1 },
     { "es": "No te permiten salir hoy.", "options": ["They don't let you leave today. (to a friend)", "They don't let me leave today.", "You don't let them leave today."], "answer": 0 }
   ],
@@ -38,7 +38,7 @@
   "pitfalls": [
     { "wrong": "Le recomiendo a descansar.", "right": "Le recomiendo descansar.", "why": "Almost. Spanish puts the infinitive right after the verb, with no *a* in between." },
     { "wrong": "Recomiendo usted descansar.", "right": "Le recomiendo descansar.", "why": "The person goes in the little word before the verb: *le*." },
-    { "wrong": "No permitieron entrar.", "right": "No te permitieron entrar.", "why": "Without a little word like *te* we don't know who was refused; add it." }
+    { "wrong": "El médico me prohibió de fumar.", "right": "El médico me prohibió fumar.", "why": "English says \"banned from smoking\", but Spanish puts the infinitive straight after the verb, with no *de*." }
   ],
   "personal": "Tell us one thing someone *te recomienda* or *te prohíbe* doing, with the little word *te* or *me*."
 }

@@ -1,7 +1,7 @@
 {
   "node": "g:por-para-2",
   "hook": {
-    "line": "At the clinic, the doctor tells Hernando how often to take his pills, and Tomás has to ask what she thinks of the plan. English says *for* and *a* and *by* in all these places. Spanish picks *por* or *para* each time.",
+    "line": "Hernando's prescription says one pill three times a day, and he has opinions about it. English uses *a*, *by* and *for* for all of this. Spanish picks *por* or *para* each time, and the choice changes the meaning.",
     "es": "Lo tomas tres veces por día.",
     "en": "You take it three times a day. (to a friend)"
   },
@@ -34,11 +34,11 @@
     { "prompt": "Type in Spanish: I exchanged the black coffee for a juice.", "answer": "Cambié el tinto por un jugo.", "accept": ["Cambié mi tinto por un jugo."], "why": "Trading one thing for another is *por*." },
     { "prompt": "Type in Spanish: For a Monday, the café is quiet.", "answer": "Para ser lunes, el café está tranquilo.", "accept": ["Para ser lunes el café está tranquilo."], "why": "Comparing with what you'd expect is *para ser*." },
     { "prompt": "Make it about once a week: *Tengo clase dos veces por semana.*", "answer": "Tengo clase una vez por semana.", "accept": [], "why": "The rate stays with *por*, only the number changes." },
-    { "prompt": "Make it a question for a friend: *Para mí, es importante.* Ask what it is for him.", "answer": "¿Y para ti, es importante?", "accept": ["¿Para ti es importante?", "¿Para ti, es importante?", "¿Y para ti es importante?"], "why": "*Para mí* becomes *para ti* when you ask your friend." }
+    { "prompt": "Make it a question for a friend: *Para mí, es importante.* Ask whether it's important to him.", "answer": "¿Y para ti, es importante?", "accept": ["¿Para ti es importante?", "¿Para ti, es importante?", "¿Y para ti es importante?"], "why": "*Para mí* becomes *para ti* when you ask your friend." }
   ],
   "pitfalls": [
     { "wrong": "Lo tomas tres veces para día.", "right": "Lo tomas tres veces por día.", "why": "Almost. A rate such as \"three times a day\" is always *por*." },
-    { "wrong": "Por mí, es grave.", "right": "Para mí, es grave.", "why": "*Por mí* means \"for my sake\"; to give your opinion, say *para mí*." },
+    { "wrong": "Por mí, es grave.", "right": "Para mí, es grave.", "why": "*Por mí* means \"for my sake\" or \"I don't mind\"; to give your opinion of something, say *para mí*." },
     { "wrong": "Lo cambié para otro.", "right": "Lo cambié por otro.", "why": "When you swap one thing for another, English says *for* but Spanish says *por*." },
     { "wrong": "Hablamos para teléfono.", "right": "Hablamos por teléfono.", "why": "The way you do something (phone, mail) is *por*." }
   ],

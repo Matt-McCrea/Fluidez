@@ -13,7 +13,7 @@
     { "es": "Les aconsejo que esperen aquí.", "en": "I advise you all to wait here." },
     { "es": "La doctora le recomienda a Hernando que tome la pastilla.", "en": "The doctor recommends that Hernando take the pill." }
   ],
-  "rule": "After *recomendar*, *aconsejar*, *permitir* and *prohibir* you have two choices.\n\n1. The infinitive: *Le recomiendo descansar*. Shorter. The little word (*le*) says who rests.\n2. *que* + a changed verb: *Le recomiendo que descanse*. Same meaning. The verb changes ending, like the *que* sentences you know from *quiero que*.\n\nUse the infinitive when the person is just the little word. Use *que* when you name the person, or when it is easier to build the whole clause: *Le recomiendo a Hernando que descanse*.\n\nOne trap: *Quiero descansar* means I rest. *Quiero que descanses* means you rest.",
+  "rule": "After *recomendar*, *aconsejar*, *permitir* and *prohibir* you have two choices.\n\n1. The infinitive: *Le recomiendo descansar*. Shorter. The little word (*le*) says who rests.\n2. *que* + a changed verb: *Le recomiendo que descanse*. Same meaning. The verb changes ending, like the *que* sentences you know from *quiero que*.\n\nBoth always work. When you name the person, *que* often sounds smoother: *Le recomiendo a Hernando que descanse*.\n\nOne trap: *Quiero descansar* means I rest. *Quiero que descanses* means you rest.",
   "smallPrint": "Teachers call the first the infinitive construction and the second the subjunctive construction; both are correct after verbs of influence.",
   "readAndPick": [
     { "es": "Le recomiendo que descanse.", "options": ["I recommend that you rest. (formal)", "I recommend that I rest.", "I recommend that you rested."], "answer": 0 },

@@ -474,26 +474,24 @@
   },
   {
     "id": "u35-0019",
-    "es": "Para los pacientes de urgencias está prohibida la visita.",
-    "en": "Visits are forbidden for emergency patients.",
+    "es": "Después de las ocho no se permiten visitas en urgencias.",
+    "en": "No visits are allowed in the emergency room after eight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:estar-participle",
+      "c:no-se",
       "g:gender-articles",
-      "l:estar",
-      "l:paciente",
-      "l:prohibir",
+      "g:passive-se",
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:después",
+      "l:permitir",
       "l:urgencia",
-      "l:visita",
-      "p:es-obligatorio",
+      "l:visitar",
       "p:esta-prohibido",
-      "p:para-inf"
+      "p:time-sequence-basic"
     ],
     "targets": [
-      "l:paciente",
-      "p:es-obligatorio",
       "p:esta-prohibido"
     ],
     "kind": "statement",
@@ -1706,15 +1704,17 @@
   },
   {
     "id": "u35-0068",
-    "es": "Con la corriente de aire no se debe dormir.",
-    "en": "You shouldn't sleep in a draught.",
+    "es": "No se debe dormir donde hay corriente de aire.",
+    "en": "You shouldn't sleep where there's a draught.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "c:no-se",
-      "g:gender-articles",
+      "g:hay-vs-esta",
       "g:impersonal-obligation",
       "g:present-er-ir",
+      "g:relatives-donde-lo-que",
       "g:se-impersonal",
       "g:tener-que-hay-que",
       "l:aire",
@@ -1733,7 +1733,7 @@
   },
   {
     "id": "u35-0069",
-    "es": "Hay que valorar un buen médico.",
+    "es": "Hay que valorar a un buen médico.",
     "en": "You have to value a good doctor.",
     "accept": [],
     "acceptEn": [],
@@ -1834,16 +1834,21 @@
   },
   {
     "id": "u35-0073",
-    "es": "Con la altura del mostrador, Simón ve todo.",
-    "en": "With the height of the counter, Simón sees everything.",
+    "es": "Desde esa altura, encima de la nevera, Simón ve todo el café.",
+    "en": "From up there, on top of the fridge, Simón sees the whole café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:demonstratives",
       "g:gender-articles",
       "g:present-er-ir",
       "l:altura",
-      "l:mostrador",
-      "l:ver"
+      "l:café",
+      "l:encima",
+      "l:nevera",
+      "l:ver",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "l:altura"
@@ -3130,19 +3135,22 @@
   },
   {
     "id": "u35-0124",
-    "es": "Llegué tarde.\nNo vayas a repetirlo.",
-    "en": "I was late.\nDon't go and do it again.",
+    "es": "Ayer llegué tarde a la cita.\nEntonces no vayas a llegar tarde mañana.",
+    "en": "I was late for the appointment yesterday.\nThen mind you're not late tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
+      "c:ayer-anoche",
+      "c:entonces-bueno",
+      "g:gender-articles",
       "g:ir-a-plans",
       "g:negative-commands",
-      "g:object-pronoun-position",
       "g:preterite-spelling-stem",
+      "l:ayer",
+      "l:cita",
       "l:ir",
       "l:llegar",
-      "l:repetir",
+      "l:mañana",
       "l:tarde",
       "p:llegar-a-tiempo",
       "p:no-vayas-a"
@@ -3157,18 +3165,19 @@
   },
   {
     "id": "u35-0125",
-    "es": "Hoy trasnoché.\nSe nota en tu cara.",
-    "en": "I stayed up late today.\nIt shows on your face.",
+    "es": "Anoche trasnoché.\nSí, se ve en tu cara.",
+    "en": "I stayed up late last night.\nYes, it shows on your face.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "c:ayer-anoche",
+      "g:present-er-ir",
       "g:preterite-ar",
       "g:se-impersonal",
+      "l:anoche",
       "l:cara",
-      "l:hoy",
-      "l:notar",
       "l:trasnochar",
+      "l:ver",
       "p:madrugar-trasnochar",
       "p:possessives-basic"
     ],
@@ -3417,24 +3426,23 @@
   },
   {
     "id": "u35-0135",
-    "es": "¿Puedo grabar esta entrevista?\nSí, pero apague el celular después.",
-    "en": "Can I record this interview?\nYes, but turn off the phone afterwards.",
+    "es": "¿Puedo grabar esta entrevista?\nSí, pero no publique nada sin mi permiso.",
+    "en": "Can I record this interview?\nYes, but don't publish anything without my permission.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:puedo",
-      "g:commands-usted",
-      "g:gender-articles",
+      "g:negation-words",
+      "g:negative-commands",
       "g:stem-boot",
       "g:verb-infinitive",
-      "l:apagar",
-      "l:celular",
-      "l:después",
       "l:entrevista",
       "l:grabar",
+      "l:permiso",
       "l:poder",
+      "l:publicar",
       "p:demonstratives-basic",
-      "p:time-sequence-basic"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:grabar"
@@ -3446,8 +3454,8 @@
   },
   {
     "id": "u35-0136",
-    "es": "Es obligatorio ir al médico.\nYa lo sé, ya lo sé.",
-    "en": "Going to the doctor is compulsory.\nI know, I know.",
+    "es": "Para este trabajo es obligatorio el examen médico.\nYa lo sé, ya lo sé.",
+    "en": "The medical check is compulsory for this job.\nI know, I know.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3455,14 +3463,15 @@
       "g:gender-articles",
       "g:ser-identity",
       "g:yo-irregular",
-      "l:ir",
+      "l:examen",
       "l:médico",
       "l:obligatorio",
       "l:saber",
       "l:ser",
-      "p:es-adj-inf",
+      "l:trabajo",
+      "p:demonstratives-basic",
       "p:es-obligatorio",
-      "p:ir-a-venir-de-place",
+      "p:para-inf",
       "p:saber-conocer"
     ],
     "targets": [
@@ -3578,25 +3587,21 @@
   },
   {
     "id": "u35-0141",
-    "es": "Se debe pedir la cita con una semana de anticipación.",
-    "en": "You should book the appointment a week ahead.",
+    "es": "Las citas se piden con una semana de anticipación.",
+    "en": "Appointments are booked a week ahead.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "g:passive-se",
+      "g:stem-e-i",
       "l:anticipación",
       "l:cita",
-      "l:deber",
       "l:pedir",
-      "l:semana"
+      "l:semana",
+      "p:preguntar-pedir"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
@@ -3604,25 +3609,21 @@
   },
   {
     "id": "u35-0142",
-    "es": "Si tienes fiebre, no se debe salir a la calle.",
-    "en": "If you have a fever, you shouldn't go out.",
+    "es": "Con fiebre no se debe salir a la calle.",
+    "en": "With a fever you shouldn't go out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
-      "c:tienes",
       "g:gender-articles",
       "g:impersonal-obligation",
       "g:present-er-ir",
       "g:se-impersonal",
-      "g:si-present",
-      "g:stem-boot",
       "g:tener-que-hay-que",
       "l:calle",
       "l:deber",
       "l:fiebre",
-      "l:salir",
-      "l:tener"
+      "l:salir"
     ],
     "targets": [
       "g:impersonal-obligation"
@@ -3716,27 +3717,23 @@
   },
   {
     "id": "u35-0146",
-    "es": "Se debe lavar las manos antes de comer.",
-    "en": "You should wash your hands before eating.",
+    "es": "En esta casa, nadie come sin lavarse las manos.",
+    "en": "In this house, nobody eats without washing their hands.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:impersonal-obligation",
       "g:prep-infinitive",
       "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
-      "l:antes",
+      "g:reflexive-routine",
+      "l:casa",
       "l:comer",
-      "l:deber",
-      "l:lavar",
+      "l:lavarse",
       "l:mano",
+      "p:demonstratives-basic",
       "p:lavarse-las-manos"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
@@ -3854,25 +3851,20 @@
   },
   {
     "id": "u35-0151",
-    "es": "Se debe guardar el pan en un lugar seco.",
-    "en": "Bread should be kept somewhere dry.",
+    "es": "El pan se guarda en un lugar seco.",
+    "en": "Bread is kept somewhere dry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
+      "g:present-ar",
       "g:se-impersonal",
-      "g:tener-que-hay-que",
-      "l:deber",
       "l:guardar",
       "l:lugar",
       "l:pan",
       "l:seco"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
@@ -3938,26 +3930,22 @@
   },
   {
     "id": "u35-0154",
-    "es": "Se debe caminar media hora todos los días.",
-    "en": "You should walk half an hour every day.",
+    "es": "Hay que caminar al menos media hora todos los días.",
+    "en": "You need to walk at least half an hour every day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:hay-que",
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "g:verb-infinitive",
       "l:caminar",
-      "l:deber",
       "l:día",
       "l:hora",
       "p:todos-los-dias",
       "p:veces-al"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
@@ -3990,18 +3978,17 @@
   },
   {
     "id": "u35-0156",
-    "es": "Se debe tomar mucha agua cuando hace calor.",
-    "en": "You should drink a lot of water when it's hot.",
+    "es": "Cuando hace calor, hay que tomar mucha agua.",
+    "en": "When it's hot, you need to drink a lot of water.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:impersonal-obligation",
+      "c:hay",
+      "c:hay-que",
       "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "g:verb-infinitive",
       "l:agua",
       "l:calor",
-      "l:deber",
       "l:hacer",
       "l:tomar",
       "p:cuando-basic",
@@ -4009,9 +3996,7 @@
       "p:hace-frio",
       "p:quantifiers-basic"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
@@ -4133,26 +4118,24 @@
   },
   {
     "id": "u35-0161",
-    "es": "No se debe sumar plata sin guardar el recibo.",
-    "en": "You shouldn't add up money without keeping the receipt.",
+    "es": "Antes de pagar, hay que sumar bien la cuenta.",
+    "en": "Before paying, you have to add up the bill properly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
+      "c:bien-y-tu",
+      "c:hay",
+      "c:hay-que",
       "g:gender-articles",
-      "g:impersonal-obligation",
       "g:prep-infinitive",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
-      "l:deber",
-      "l:guardar",
-      "l:plata",
-      "l:recibo",
+      "g:verb-infinitive",
+      "l:antes",
+      "l:bien",
+      "l:cuenta",
+      "l:pagar",
       "l:sumar"
     ],
     "targets": [
-      "g:impersonal-obligation",
       "l:sumar"
     ],
     "kind": "statement",
@@ -4396,26 +4379,24 @@
   },
   {
     "id": "u35-0170",
-    "es": "Se debe dormir ocho horas, dice la doctora.",
-    "en": "You should sleep eight hours, says the doctor.",
+    "es": "La doctora dice que lo mejor es dormir ocho horas.",
+    "en": "The doctor says the best thing is to sleep eight hours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:lo-mejor-es",
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
+      "g:lo-adjective",
       "g:stem-e-i",
-      "g:tener-que-hay-que",
-      "l:deber",
+      "g:that-clauses",
       "l:decir",
       "l:doctor",
       "l:dormir",
-      "l:hora"
+      "l:hora",
+      "l:mejor",
+      "l:ser"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
@@ -4513,8 +4494,8 @@
   },
   {
     "id": "u35-0174",
-    "es": "En caso de alergia, se debe avisar al paciente de al lado.",
-    "en": "In case of an allergy, the patient next door should be told.",
+    "es": "En caso de alergia, se debe avisar a la enfermera.",
+    "en": "In case of an allergy, the nurse should be told.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4527,13 +4508,11 @@
       "l:avisar",
       "l:caso",
       "l:deber",
-      "l:lado",
-      "l:paciente"
+      "l:enfermera"
     ],
     "targets": [
       "g:impersonal-obligation",
-      "l:alergia",
-      "l:paciente"
+      "l:alergia"
     ],
     "kind": "statement",
     "unit": "u35",
@@ -4542,24 +4521,22 @@
   },
   {
     "id": "u35-0175",
-    "es": "Se debe comer algo antes de la pastilla.",
-    "en": "You should eat something before the pill.",
+    "es": "Antes de la pastilla, es importante comer algo.",
+    "en": "Before the pill, it's important to eat something.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "g:ser-identity",
       "l:antes",
       "l:comer",
-      "l:deber",
+      "l:importante",
       "l:pastilla",
+      "l:ser",
+      "p:es-adj-inf",
       "p:indefinites-basic"
     ],
     "targets": [
-      "g:impersonal-obligation",
       "l:pastilla"
     ],
     "kind": "statement",
@@ -4680,7 +4657,7 @@
   {
     "id": "u35-0180",
     "es": "¿Se debe ir en ayunas?\nSí, sin desayunar.",
-    "en": "Should I go on an empty stomach?\nYes, without breakfast.",
+    "en": "Should you go on an empty stomach?\nYes, without breakfast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4791,24 +4768,20 @@
   },
   {
     "id": "u35-0184",
-    "es": "No se debe cortar la dieta de golpe.",
-    "en": "You shouldn't cut out your diet suddenly.",
+    "es": "Es mejor empezar una dieta poco a poco.",
+    "en": "It's better to start a diet little by little.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
-      "l:cortar",
-      "l:deber",
+      "g:ser-identity",
       "l:dieta",
-      "l:golpe"
+      "l:empezar",
+      "l:mejor",
+      "l:ser",
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "g:impersonal-obligation",
       "l:dieta"
     ],
     "kind": "statement",
@@ -4818,17 +4791,15 @@
   },
   {
     "id": "u35-0185",
-    "es": "Después de una infección se debe tomar mucho líquido.",
-    "en": "After an infection you should drink plenty of fluids.",
+    "es": "Después de una infección, hay que tomar mucho líquido.",
+    "en": "After an infection, you need to drink plenty of fluids.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
-      "l:deber",
+      "c:hay",
+      "c:hay-que",
+      "g:verb-infinitive",
       "l:después",
       "l:infección",
       "l:líquido",
@@ -4837,7 +4808,6 @@
       "p:time-sequence-basic"
     ],
     "targets": [
-      "g:impersonal-obligation",
       "l:infección"
     ],
     "kind": "statement",
@@ -5147,29 +5117,22 @@
   },
   {
     "id": "u35-0197",
-    "es": "Cuando se camina de noche, se debe ir por calles con luz.",
-    "en": "When you walk at night, you should go along lit streets.",
+    "es": "De noche es mejor caminar por calles con luz.",
+    "en": "At night it's better to walk along lit streets.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:impersonal-obligation",
       "g:por-para-1",
-      "g:present-ar",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "g:ser-identity",
       "l:calle",
       "l:caminar",
-      "l:deber",
-      "l:ir",
       "l:luz",
+      "l:mejor",
       "l:noche",
-      "p:con-sin",
-      "p:cuando-basic"
+      "l:ser",
+      "p:con-sin"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
@@ -5205,15 +5168,14 @@
   },
   {
     "id": "u35-0199",
-    "es": "Con los niños no se debe discutir delante de ellos.",
-    "en": "You shouldn't argue in front of children.",
+    "es": "No se debe discutir delante de los niños.",
+    "en": "You shouldn't argue in front of the children.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
       "g:gender-articles",
       "g:impersonal-obligation",
-      "g:prep-pronouns",
       "g:present-er-ir",
       "g:se-impersonal",
       "g:tener-que-hay-que",
@@ -5294,27 +5256,23 @@
   },
   {
     "id": "u35-0202",
-    "es": "Se debe llevar un regalo cuando uno visita a alguien.",
-    "en": "You should bring a present when you visit someone.",
+    "es": "Es de buena educación llevar algo cuando visitas a alguien.",
+    "en": "It's good manners to bring something when you visit someone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
-      "l:deber",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:buena",
+      "l:educación",
       "l:llevar",
-      "l:regalo",
-      "l:unir",
-      "l:visita",
+      "l:ser",
+      "l:visitar",
       "p:cuando-basic",
-      "p:indefinites-basic"
+      "p:indefinites-basic",
+      "p:personal-a"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
@@ -5405,29 +5363,25 @@
   },
   {
     "id": "u35-0206",
-    "es": "Se debe guardar el recibo por si hay algún problema.",
-    "en": "The receipt should be kept in case there's a problem.",
+    "es": "Es mejor guardar el recibo por si hay algún problema.",
+    "en": "It's better to keep the receipt in case there's a problem.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "g:impersonal-obligation",
       "g:indefinites",
       "g:por-para-1",
-      "g:present-er-ir",
-      "g:se-impersonal",
+      "g:ser-identity",
       "g:si-present",
-      "g:tener-que-hay-que",
-      "l:deber",
       "l:guardar",
+      "l:mejor",
       "l:problema",
-      "l:recibo"
+      "l:recibo",
+      "l:ser"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
@@ -5465,27 +5419,25 @@
   },
   {
     "id": "u35-0208",
-    "es": "Se debe contar el cambio antes de salir de la tienda.",
-    "en": "You should count your change before leaving the shop.",
+    "es": "Siempre hay que contar el cambio antes de salir de la tienda.",
+    "en": "You always have to count your change before leaving the shop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:hay-que",
       "g:gender-articles",
-      "g:impersonal-obligation",
       "g:prep-infinitive",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "g:verb-infinitive",
       "l:antes",
       "l:cambio",
       "l:contar",
-      "l:deber",
       "l:salir",
-      "l:tienda"
+      "l:siempre",
+      "l:tienda",
+      "p:frequency-scale"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
@@ -5728,26 +5680,23 @@
   },
   {
     "id": "u35-0217",
-    "es": "Se debe ahorrar un poco cada mes.",
-    "en": "You should save a little each month.",
+    "es": "Hay que ahorrar un poco cada mes.",
+    "en": "You have to save a little each month.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:hay-que",
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "g:verb-infinitive",
       "l:ahorrar",
-      "l:deber",
       "l:mes",
       "p:poco-un-poco",
       "p:quantifiers-basic",
       "p:veces-al"
     ],
     "targets": [
-      "g:impersonal-obligation",
       "l:ahorrar"
     ],
     "kind": "statement",
@@ -5788,25 +5737,21 @@
   },
   {
     "id": "u35-0219",
-    "es": "Se debe llegar quince minutos antes de la entrevista.",
-    "en": "You should arrive fifteen minutes before the interview.",
+    "es": "A una entrevista es mejor llegar quince minutos antes.",
+    "en": "For an interview, it's better to arrive fifteen minutes early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "c:a-cuantas-cuotas",
+      "g:ser-identity",
       "l:antes",
-      "l:deber",
       "l:entrevista",
       "l:llegar",
-      "l:minuto"
+      "l:mejor",
+      "l:minuto",
+      "l:ser"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
@@ -5924,27 +5869,24 @@
   },
   {
     "id": "u35-0224",
-    "es": "En un viaje largo se debe parar cada dos horas.",
-    "en": "On a long trip you should stop every two hours.",
+    "es": "En un viaje largo, lo mejor es parar cada dos horas.",
+    "en": "On a long trip, the best thing is to stop every two hours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:lo-mejor-es",
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
-      "l:deber",
+      "g:lo-adjective",
       "l:hora",
       "l:largo",
+      "l:mejor",
       "l:parar",
+      "l:ser",
       "l:viaje",
       "p:veces-al"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
@@ -6032,26 +5974,22 @@
   },
   {
     "id": "u35-0228",
-    "es": "Se debe revisar el carro antes de un viaje largo.",
-    "en": "The car should be checked before a long trip.",
+    "es": "Antes de un viaje largo, hay que revisar el carro.",
+    "en": "Before a long trip, you have to check the car.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:hay-que",
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "g:verb-infinitive",
       "l:antes",
       "l:carro",
-      "l:deber",
       "l:largo",
       "l:revisar",
       "l:viaje"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
@@ -6111,25 +6049,23 @@
   },
   {
     "id": "u35-0231",
-    "es": "Se debe regar las plantas por la mañana.",
-    "en": "Plants should be watered in the morning.",
+    "es": "Las plantas hay que regarlas por la mañana.",
+    "en": "Plants need watering in the morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:hay-que",
+      "g:direct-objects",
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
-      "l:deber",
+      "g:object-pronoun-position",
+      "g:verb-infinitive",
       "l:mañana",
       "l:planta",
       "l:regar",
       "p:por-la-manana"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
@@ -6164,29 +6100,28 @@
   },
   {
     "id": "u35-0233",
-    "es": "Se debe pensar bien antes de comprar un carro usado.",
-    "en": "You should think carefully before buying a used car.",
+    "es": "Comprar un carro usado no es fácil: hay que pensarlo bien.",
+    "en": "Buying a used car isn't easy: you have to think it over.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "c:hay",
+      "c:hay-que",
+      "g:direct-objects",
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:prep-infinitive",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
-      "l:antes",
+      "g:object-pronoun-position",
+      "g:ser-identity",
+      "g:verb-infinitive",
       "l:bien",
       "l:carro",
       "l:comprar",
-      "l:deber",
+      "l:fácil",
       "l:pensar",
+      "l:ser",
       "l:usar"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
@@ -6219,26 +6154,21 @@
   },
   {
     "id": "u35-0235",
-    "es": "Se debe llevar agua cuando se sube a Monserrate.",
-    "en": "You should take water when going up Monserrate.",
+    "es": "Para subir a Monserrate hay que llevar agua.",
+    "en": "To go up Monserrate you need to take water.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:reflexive-routine",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "c:hay",
+      "c:hay-que",
+      "g:verb-infinitive",
       "l:agua",
-      "l:deber",
       "l:llevar",
-      "l:subirse",
-      "p:cuando-basic",
-      "p:subirse-bajarse"
+      "l:subir",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
@@ -6272,26 +6202,22 @@
   },
   {
     "id": "u35-0237",
-    "es": "No se debe discutir con el hambre en el estómago.",
-    "en": "You shouldn't argue on an empty stomach.",
+    "es": "Nunca es buena idea discutir con hambre.",
+    "en": "It's never a good idea to argue when you're hungry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
-      "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
-      "l:deber",
+      "g:ser-identity",
+      "l:buena",
       "l:discutir",
-      "l:estómago",
       "l:hambre",
-      "p:el-agua-fria"
+      "l:idea",
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:frequency-scale"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
@@ -6299,26 +6225,22 @@
   },
   {
     "id": "u35-0238",
-    "es": "Se debe dormir con la ventana un poco abierta.",
-    "en": "You should sleep with the window slightly open.",
+    "es": "Es mejor dormir con la ventana un poco abierta.",
+    "en": "It's better to sleep with the window slightly open.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "g:ser-identity",
       "l:abrir",
-      "l:deber",
       "l:dormir",
+      "l:mejor",
+      "l:ser",
       "l:ventana",
       "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
@@ -6350,27 +6272,27 @@
   },
   {
     "id": "u35-0240",
-    "es": "Se debe estudiar un poco cada día.",
-    "en": "You should study a little every day.",
+    "es": "Para aprender, lo mejor es estudiar un poco cada día.",
+    "en": "To learn, the best thing is to study a little every day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:lo-mejor-es",
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
-      "l:deber",
+      "g:lo-adjective",
+      "l:aprender",
       "l:día",
       "l:estudiar",
+      "l:mejor",
+      "l:ser",
+      "p:para-inf",
+      "p:para-inf-purpose",
       "p:poco-un-poco",
       "p:quantifiers-basic",
       "p:veces-al"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
@@ -6457,28 +6379,26 @@
   },
   {
     "id": "u35-0244",
-    "es": "Se debe cambiar el filtro del agua cada seis meses.",
-    "en": "The water filter should be changed every six months.",
+    "es": "El filtro del agua hay que cambiarlo cada seis meses.",
+    "en": "The water filter needs changing every six months.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:hay-que",
       "g:cada-cualquier",
+      "g:direct-objects",
       "g:gender-articles",
-      "g:impersonal-obligation",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "g:tener-que-hay-que",
+      "g:object-pronoun-position",
+      "g:verb-infinitive",
       "l:agua",
       "l:cambiar",
-      "l:deber",
       "l:filtro",
       "l:mes",
       "p:el-agua-fria",
       "p:veces-al"
     ],
-    "targets": [
-      "g:impersonal-obligation"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
@@ -7465,21 +7385,23 @@
   },
   {
     "id": "u35-0281",
-    "es": "Espero que usted se haya sentido mejor esta mañana.",
-    "en": "I hope you felt better this morning. (polite)",
+    "es": "Me alegra que usted haya dormido mejor anoche, don Hernando.",
+    "en": "I'm glad you slept better last night, don Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
+      "g:gustar-full",
       "g:present-ar",
-      "g:reflexive-routine",
+      "g:subj-emotion-intro",
       "g:subj-perfect",
-      "g:subj-wishes",
       "g:that-clauses",
-      "l:esperar",
-      "l:mañana",
+      "l:alegrar",
+      "l:anoche",
+      "l:dormir",
       "l:mejor",
-      "l:sentir",
-      "p:demonstratives-basic"
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:subj-perfect"
@@ -7543,11 +7465,12 @@
   },
   {
     "id": "u35-0284",
-    "es": "¿Ya llamaron a la doctora?\nEspero que sí lo hayan hecho.",
-    "en": "Have they called the doctor yet?\nI hope they have.",
+    "es": "¿Ya llamaron a la doctora?\nNo sé, espero que ya la hayan llamado.",
+    "en": "Have they called the doctor yet?\nI don't know, I hope they've called her already.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-se",
       "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
@@ -7555,10 +7478,11 @@
       "g:subj-perfect",
       "g:subj-wishes",
       "g:that-clauses",
+      "g:yo-irregular",
       "l:doctor",
       "l:esperar",
-      "l:hacer",
       "l:llamar",
+      "l:saber",
       "p:personal-a"
     ],
     "targets": [
@@ -8098,21 +8022,21 @@
   },
   {
     "id": "u35-0305",
-    "es": "Tomás teme que el café no haya sobrevivido otro mes.",
-    "en": "Tomás fears the café hasn't survived another month.",
+    "es": "Tomás teme que Hernando no le haya contado todo a la doctora.",
+    "en": "Tomás fears Hernando hasn't told the doctor everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:present-er-ir",
       "g:subj-emotion",
       "g:subj-perfect",
       "g:that-clauses",
-      "l:café",
-      "l:mes",
-      "l:sobrevivir",
-      "l:temer",
-      "p:otro-no-article"
+      "l:contar",
+      "l:doctor",
+      "l:temer"
     ],
     "targets": [
       "g:subj-perfect"
@@ -9193,23 +9117,22 @@
   },
   {
     "id": "u35-0348",
-    "es": "Me da lástima que se haya perdido el juego.",
-    "en": "I feel sorry that the game has been lost.",
+    "es": "Qué lástima que hayamos perdido el partido.",
+    "en": "What a shame we lost the match.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-regala",
       "g:gender-articles",
-      "g:reflexive-routine",
-      "g:subj-emotion",
+      "g:questions",
       "g:subj-perfect",
+      "g:subj-value",
       "g:that-clauses",
-      "l:dar",
-      "l:juego",
       "l:lástima",
+      "l:partido",
       "l:perder",
+      "l:qué",
       "p:caerse-lastimarse",
-      "p:me-da-miedo",
+      "p:es-una-lastima-que",
       "p:me-da-pena-que"
     ],
     "targets": [
@@ -9425,21 +9348,23 @@
   },
   {
     "id": "u35-0357",
-    "es": "Espero que el análisis haya salido bien.",
-    "en": "I hope the test came out fine.",
+    "es": "Me sorprende que el análisis haya salido tan rápido.",
+    "en": "I'm surprised the test results came back so fast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "g:gender-articles",
-      "g:present-ar",
+      "g:gustar-full",
+      "g:present-er-ir",
+      "g:subj-emotion",
       "g:subj-perfect",
-      "g:subj-wishes",
       "g:that-clauses",
       "l:análisis",
-      "l:bien",
-      "l:esperar",
-      "l:salir"
+      "l:rápido",
+      "l:salir",
+      "l:sorprender",
+      "p:me-extrana-que",
+      "p:me-sorprende-que"
     ],
     "targets": [
       "g:subj-perfect"
@@ -9478,21 +9403,21 @@
   },
   {
     "id": "u35-0359",
-    "es": "Espero que la doctora haya podido hablar con ustedes.",
-    "en": "I hope the doctor was able to talk to you all.",
+    "es": "Qué bueno que la doctora haya podido hablar con ustedes.",
+    "en": "Good that the doctor was able to talk to you all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:que-bien",
+      "c:que-bueno-que",
       "g:gender-articles",
       "g:prep-pronouns",
-      "g:present-ar",
       "g:subj-perfect",
-      "g:subj-wishes",
-      "g:that-clauses",
+      "l:bueno",
       "l:doctor",
-      "l:esperar",
       "l:hablar",
-      "l:poder"
+      "l:poder",
+      "l:qué"
     ],
     "targets": [
       "g:subj-perfect"
@@ -9552,19 +9477,19 @@
   },
   {
     "id": "u35-0362",
-    "es": "Espero que Hernando haya descansado esta noche.",
-    "en": "I hope Hernando has rested tonight.",
+    "es": "Espero que Hernando haya descansado anoche.",
+    "en": "I hope Hernando rested last night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "g:present-ar",
       "g:subj-perfect",
       "g:subj-wishes",
       "g:that-clauses",
+      "l:anoche",
       "l:descansar",
-      "l:esperar",
-      "l:noche",
-      "p:demonstratives-basic"
+      "l:esperar"
     ],
     "targets": [
       "g:subj-perfect"
@@ -9626,19 +9551,21 @@
   },
   {
     "id": "u35-0365",
-    "es": "No creo que el paciente haya comido sal.",
-    "en": "I don't think the patient has eaten salt.",
+    "es": "Es imposible que el paciente haya comido sal.",
+    "en": "There's no way the patient has eaten salt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:creo-que",
       "g:gender-articles",
+      "g:ser-identity",
+      "g:subj-doubt",
       "g:subj-perfect",
       "g:that-clauses",
       "l:comer",
-      "l:creer",
+      "l:imposible",
       "l:paciente",
-      "l:sal"
+      "l:sal",
+      "l:ser"
     ],
     "targets": [
       "g:subj-perfect",
@@ -9677,18 +9604,19 @@
   },
   {
     "id": "u35-0367",
-    "es": "No creo que mi hermana haya entendido la pregunta.",
-    "en": "I don't think my sister has understood the question.",
+    "es": "Puede que mi hermana no haya entendido la pregunta.",
+    "en": "My sister may not have understood the question.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:creo-que",
       "g:gender-articles",
+      "g:stem-boot",
+      "g:subj-doubt",
       "g:subj-perfect",
       "g:that-clauses",
-      "l:creer",
       "l:entender",
       "l:hermana",
+      "l:poder",
       "l:pregunta",
       "p:possessives-basic"
     ],
@@ -9725,18 +9653,22 @@
   },
   {
     "id": "u35-0369",
-    "es": "No creo que hayan servido el almuerzo todavía.",
-    "en": "I don't think they've served lunch yet.",
+    "es": "Es raro que no hayan servido el almuerzo todavía.",
+    "en": "It's odd they haven't served lunch yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:creo-que",
       "g:gender-articles",
+      "g:ser-identity",
       "g:subj-perfect",
+      "g:subj-value",
       "g:that-clauses",
       "l:almuerzo",
-      "l:creer",
+      "l:raro",
+      "l:ser",
       "l:servir",
+      "p:me-extrana-que",
+      "p:me-sorprende-que",
       "p:ya-todavia-basic"
     ],
     "targets": [
@@ -9798,18 +9730,22 @@
   },
   {
     "id": "u35-0372",
-    "es": "Dudo que ustedes hayan terminado tan rápido.",
-    "en": "I doubt you all have finished so quickly.",
+    "es": "Me parece increíble que ustedes hayan terminado tan rápido.",
+    "en": "I can hardly believe you all finished so quickly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "g:subj-doubt",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "g:subj-perfect",
+      "g:subj-value",
       "g:that-clauses",
-      "l:dudar",
+      "l:increíble",
+      "l:parecer",
       "l:rápido",
-      "l:terminar"
+      "l:terminar",
+      "p:me-parece-bien-que",
+      "p:me-parecio-mal-que"
     ],
     "targets": [
       "g:subj-perfect"
@@ -9898,22 +9834,21 @@
   },
   {
     "id": "u35-0376",
-    "es": "Me alegra que hayan llamado a la ambulancia tan rápido.",
-    "en": "I'm glad they called the ambulance so quickly.",
+    "es": "Es una suerte que hayan llamado a la ambulancia tan rápido.",
+    "en": "It's lucky they called the ambulance so quickly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:gustar-full",
-      "g:present-ar",
-      "g:subj-emotion-intro",
+      "g:ser-identity",
       "g:subj-perfect",
+      "g:subj-value",
       "g:that-clauses",
-      "l:alegrar",
       "l:ambulancia",
       "l:llamar",
       "l:rápido",
-      "p:me-encanta-que",
+      "l:ser",
+      "l:suerte",
       "p:personal-a"
     ],
     "targets": [
@@ -9926,19 +9861,19 @@
   },
   {
     "id": "u35-0377",
-    "es": "Me alegra que mis amigos hayan venido a verme.",
-    "en": "I'm glad my friends have come to see me.",
+    "es": "Me hace feliz que mis amigos hayan venido a verme.",
+    "en": "It makes me happy that my friends have come to see me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gustar-full",
+      "c:me-hace-una-rebajita",
       "g:object-pronoun-position",
-      "g:present-ar",
-      "g:subj-emotion-intro",
+      "g:subj-influence",
       "g:subj-perfect",
       "g:that-clauses",
-      "l:alegrar",
       "l:amigo",
+      "l:feliz",
+      "l:hacer",
       "l:venir",
       "l:ver",
       "p:me-te-nos-objects",
@@ -10677,8 +10612,8 @@
   },
   {
     "id": "u35-0407",
-    "es": "Siempre espero que alguien haya traído un paraguas.",
-    "en": "I always hope someone has brought an umbrella.",
+    "es": "Espero que alguien haya traído un paraguas.",
+    "en": "I hope someone has brought an umbrella.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10689,9 +10624,7 @@
       "g:that-clauses",
       "l:esperar",
       "l:paraguas",
-      "l:siempre",
       "l:traer",
-      "p:frequency-scale",
       "p:indefinites-basic",
       "p:llevar-traer"
     ],
@@ -11093,7 +11026,7 @@
   },
   {
     "id": "u35-0424",
-    "es": "La clínica no permite fumar en ningún sitio.",
+    "es": "La clínica no permite fumar en ninguna parte.",
     "en": "The clinic doesn't allow smoking anywhere.",
     "accept": [],
     "acceptEn": [],
@@ -11104,8 +11037,9 @@
       "g:present-er-ir",
       "l:clínica",
       "l:fumar",
+      "l:parte",
       "l:permitir",
-      "l:sitio",
+      "p:en-modo-alguno",
       "p:ninguna-parte",
       "p:permitir-inf"
     ],
@@ -11939,7 +11873,7 @@
   {
     "id": "u35-0458",
     "es": "No me gusta madrugar, pero tampoco trasnochar.",
-    "en": "I don't like getting up early, but neither staying up late.",
+    "en": "I don't like getting up early, but I don't like staying up late either.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11960,18 +11894,20 @@
   },
   {
     "id": "u35-0459",
-    "es": "¿A qué hora madrugas tú?",
-    "en": "What time do you get up early? (to a friend)",
+    "es": "¿Tú madrugas todos los días, o también los domingos?",
+    "en": "Do you get up early every day, or on Sundays too? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:a-que-hora",
+      "g:gender-articles",
       "g:present-ar",
-      "l:hora",
+      "l:domingo",
+      "l:día",
       "l:madrugar",
-      "l:qué",
+      "p:days-el-lunes",
       "p:madrugar-trasnochar",
-      "p:question-word-order"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:madrugar-trasnochar"
@@ -11983,18 +11919,19 @@
   },
   {
     "id": "u35-0460",
-    "es": "¿Por qué trasnochó el paciente?",
-    "en": "Why did the patient stay up late?",
+    "es": "El paciente trasnochó por el ruido del pasillo.",
+    "en": "The patient stayed up late because of the noise in the corridor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:preterite-ar",
       "l:paciente",
-      "l:qué",
+      "l:pasillo",
+      "l:ruido",
       "l:trasnochar",
-      "p:madrugar-trasnochar",
-      "p:prep-questions-basic"
+      "p:madrugar-trasnochar"
     ],
     "targets": [
       "l:paciente",
@@ -12236,7 +12173,7 @@
   {
     "id": "u35-0470",
     "es": "Mañana ustedes no tienen que madrugar.",
-    "en": "Tomorrow you all don't have to get up early.",
+    "en": "You all don't have to get up early tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13458,23 +13395,20 @@
   },
   {
     "id": "u35-0516",
-    "es": "Dime si te importa si cambio la cita.",
-    "en": "Tell me if you mind if I change the appointment. (to a friend)",
+    "es": "¿De verdad no te importa si cambio la cita?",
+    "en": "Do you really not mind if I change the appointment? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-tu",
-      "g:commands-with-pronouns",
+      "c:en-serio",
       "g:gender-articles",
       "g:gustar-full",
       "g:indirect-questions",
       "g:present-ar",
-      "g:si-present",
       "l:cambiar",
       "l:cita",
-      "l:decir",
       "l:importar",
-      "p:me-te-nos-objects",
+      "l:verdad",
       "p:te-importa-si"
     ],
     "targets": [
@@ -13552,7 +13486,7 @@
   },
   {
     "id": "u35-0520",
-    "es": "¿Aquí se pueden hacer fotos?",
+    "es": "¿Aquí se pueden tomar fotos?",
     "en": "Can you take photos here?",
     "accept": [],
     "acceptEn": [],
@@ -13562,8 +13496,8 @@
       "g:verb-infinitive",
       "l:aquí",
       "l:foto",
-      "l:hacer",
       "l:poder",
+      "l:tomar",
       "p:aqui-ahi-alla",
       "p:se-puede-me-dejas"
     ],
@@ -13997,7 +13931,7 @@
   {
     "id": "u35-0538",
     "es": "¿Me dejas salir temprano hoy?",
-    "en": "Will you let me leave early today? (to a boss or a friend)",
+    "en": "Will you let me leave early today? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14210,7 +14144,7 @@
   {
     "id": "u35-0547",
     "es": "¿Podría salir un poco antes? Es que tengo cita con el médico.",
-    "en": "Could I leave a little early? It's that I have a doctor's appointment.",
+    "en": "Could I leave a little early? I have a doctor's appointment, you see.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14915,24 +14849,24 @@
   },
   {
     "id": "u35-0574",
-    "es": "Mi doctor dice que es obligatorio dejar la sal.",
-    "en": "My doctor says it's compulsory to give up salt.",
+    "es": "Hernando dice que dejar la sal se recomienda, pero no es obligatorio.",
+    "en": "Hernando says giving up salt is recommended, but it isn't compulsory.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:se-impersonal",
       "g:ser-identity",
+      "g:stem-boot",
       "g:stem-e-i",
       "g:that-clauses",
       "l:decir",
       "l:dejar",
-      "l:doctor",
       "l:obligatorio",
+      "l:recomendar",
       "l:sal",
       "l:ser",
-      "p:es-adj-inf",
-      "p:es-obligatorio",
-      "p:possessives-basic"
+      "p:es-obligatorio"
     ],
     "targets": [
       "p:es-obligatorio"
@@ -14944,18 +14878,20 @@
   },
   {
     "id": "u35-0575",
-    "es": "Es obligatorio presentar la cédula en urgencias.",
-    "en": "Showing your ID in the emergency room is compulsory.",
+    "es": "En la clínica es obligatorio firmar un papel antes de la operación.",
+    "en": "At the clinic, signing a form before the operation is compulsory.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:cédula",
+      "l:antes",
+      "l:clínica",
+      "l:firmar",
       "l:obligatorio",
-      "l:presentar",
+      "l:operación",
+      "l:papel",
       "l:ser",
-      "l:urgencia",
       "p:es-adj-inf",
       "p:es-obligatorio"
     ],
@@ -15288,20 +15224,24 @@
   },
   {
     "id": "u35-0588",
-    "es": "En el hospital es obligatorio usar mascarilla.",
-    "en": "In the hospital wearing a face mask is compulsory.",
+    "es": "En el hospital es obligatorio lavarse las manos al entrar.",
+    "en": "In the hospital, washing your hands when you go in is compulsory.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:prep-infinitive",
+      "g:reflexive-routine",
       "g:ser-identity",
+      "l:entrar",
       "l:hospital",
-      "l:mascarilla",
+      "l:lavarse",
+      "l:mano",
       "l:obligatorio",
       "l:ser",
-      "l:usar",
       "p:es-adj-inf",
-      "p:es-obligatorio"
+      "p:es-obligatorio",
+      "p:lavarse-las-manos"
     ],
     "targets": [
       "p:es-obligatorio"
@@ -15313,23 +15253,22 @@
   },
   {
     "id": "u35-0589",
-    "es": "Para entrar al jurado es obligatorio dejar el celular.",
-    "en": "To go into the jury room, leaving your phone is compulsory.",
+    "es": "En la sala del jurado es obligatorio dejar el celular afuera.",
+    "en": "In the jury room, leaving your phone outside is compulsory.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:afuera",
       "l:celular",
       "l:dejar",
-      "l:entrar",
       "l:jurado",
       "l:obligatorio",
+      "l:sala",
       "l:ser",
       "p:es-adj-inf",
-      "p:es-obligatorio",
-      "p:para-inf",
-      "p:para-inf-purpose"
+      "p:es-obligatorio"
     ],
     "targets": [
       "l:jurado",
@@ -15452,16 +15391,19 @@
   },
   {
     "id": "u35-0594",
-    "es": "Es obligatorio guardar reposo después de la vacuna.",
-    "en": "Resting after the vaccine is compulsory.",
+    "es": "Después de la vacuna no es obligatorio guardar reposo, pero se recomienda.",
+    "en": "After the vaccine, resting isn't compulsory, but it's recommended.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:se-impersonal",
       "g:ser-identity",
+      "g:stem-boot",
       "l:después",
       "l:guardar",
       "l:obligatorio",
+      "l:recomendar",
       "l:reposo",
       "l:ser",
       "l:vacuna",
@@ -15725,16 +15667,22 @@
   },
   {
     "id": "u35-0605",
-    "es": "Ten cuidado con la sal, Hernando.",
-    "en": "Be careful with the salt, Hernando.",
+    "es": "Ten cuidado con la sal, Tomás, que esa sopa es para Hernando.",
+    "en": "Be careful with the salt, Tomás, that soup is for Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
+      "g:demonstratives",
       "g:gender-articles",
+      "g:relative-que",
+      "g:ser-identity",
       "l:cuidado",
       "l:sal",
+      "l:ser",
+      "l:sopa",
       "l:tener",
+      "p:para-inf",
       "p:ten-cuidado-con"
     ],
     "targets": [
@@ -16164,14 +16112,20 @@
   },
   {
     "id": "u35-0622",
-    "es": "Cuidado con la cabeza.",
-    "en": "Mind your head.",
+    "es": "¡Cuidado con el piso, que lo acabo de limpiar!",
+    "en": "Careful with the floor, I've just cleaned it!",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:acabar-de-ya-todavia",
+      "g:direct-objects",
       "g:gender-articles",
-      "l:cabeza",
+      "g:present-ar",
+      "g:relative-que",
+      "l:acabar",
       "l:cuidar",
+      "l:limpiar",
+      "l:piso",
       "p:ten-cuidado-con"
     ],
     "targets": [
@@ -16212,18 +16166,19 @@
   },
   {
     "id": "u35-0624",
-    "es": "Mañana hace frío, entonces ten cuidado con el pecho.",
-    "en": "Tomorrow it's cold, so be careful with your chest. (to a friend)",
+    "es": "Mañana va a hacer frío, así que ten cuidado con el pecho.",
+    "en": "It's going to be cold tomorrow, so look after your chest. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:entonces-bueno",
+      "g:cause-result",
       "g:commands-tu",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:ir-a-plans",
       "l:cuidado",
       "l:frío",
       "l:hacer",
+      "l:ir",
       "l:mañana",
       "l:pecho",
       "l:tener",
@@ -18018,16 +17973,17 @@
   },
   {
     "id": "u35-0695",
-    "es": "Mi abuelo duerme acostado de lado.",
-    "en": "My grandfather sleeps lying on his side.",
+    "es": "Mi abuelo siempre duerme de lado.",
+    "en": "My grandfather always sleeps on his side.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
       "l:abuelo",
-      "l:acostarse",
       "l:dormir",
       "l:lado",
+      "l:siempre",
+      "p:frequency-scale",
       "p:possessives-basic",
       "p:postura"
     ],
@@ -18224,18 +18180,16 @@
   },
   {
     "id": "u35-0703",
-    "es": "El loro duerme de cabeza, boca abajo.",
-    "en": "The parrot sleeps upside down.",
+    "es": "Simón duerme de pie, como todos los loros.",
+    "en": "Simón sleeps standing up, like all parrots.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:abajo",
-      "l:boca",
-      "l:cabeza",
       "l:dormir",
       "l:loro",
+      "l:pie",
       "p:postura"
     ],
     "targets": [
@@ -18358,27 +18312,27 @@
   },
   {
     "id": "u35-0708",
-    "es": "¿Se puede quedar de pie?\nSí, pero mejor siéntese.",
-    "en": "Can I stay standing?\nYes, but you'd better sit.",
+    "es": "¿Me puedo quedar de pie?\nSí, pero mejor siéntese.",
+    "en": "Can I stay standing?\nYes, but you'd better sit down.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:se-puede",
+      "c:puedo",
       "g:commands-usted",
       "g:commands-with-pronouns",
       "g:reflexive-routine",
+      "g:stem-boot",
       "g:verb-infinitive",
       "l:mejor",
       "l:pie",
       "l:poder",
       "l:quedar",
       "l:sentarse",
-      "p:postura",
-      "p:se-puede-me-dejas"
+      "p:me-te-nos-objects",
+      "p:postura"
     ],
     "targets": [
-      "p:postura",
-      "p:se-puede-me-dejas"
+      "p:postura"
     ],
     "kind": "dialogue",
     "unit": "u35",
@@ -19140,21 +19094,17 @@
   },
   {
     "id": "u35-0740",
-    "es": "Aquí hay una cinta para medir la presión.",
-    "en": "Here is a strap to measure your blood pressure.",
+    "es": "Con una cinta, la enfermera midió la altura de Hernando.",
+    "en": "With a tape measure, the nurse measured Hernando's height.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:gender-articles",
-      "g:hay-vs-esta",
-      "l:aquí",
+      "g:preterite-spelling-stem",
+      "l:altura",
       "l:cinta",
-      "l:medir",
-      "l:presión",
-      "p:aqui-ahi-alla",
-      "p:para-inf",
-      "p:para-inf-purpose"
+      "l:enfermera",
+      "l:medir"
     ],
     "targets": [
       "l:cinta"
@@ -20235,8 +20185,8 @@
   },
   {
     "id": "u35-0785",
-    "es": "Pueden grabar la conferencia, pero sin flash.",
-    "en": "You can record the conference, but without a flash.",
+    "es": "Pueden grabar la conferencia, pero no tomar fotos.",
+    "en": "You all can record the conference, but not take photos.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20244,9 +20194,10 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:conferencia",
-      "l:flash",
+      "l:foto",
       "l:grabar",
       "l:poder",
+      "l:tomar",
       "p:request-ladder"
     ],
     "targets": [
@@ -20390,19 +20341,17 @@
   },
   {
     "id": "u35-0791",
-    "es": "Tomás tuvo que perdonar a Altamira, o al menos intentarlo.",
-    "en": "Tomás had to forgive Altamira, or at least try.",
+    "es": "Rosa sabía perdonar, pero nunca olvidaba.",
+    "en": "Rosa knew how to forgive, but she never forgot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
-      "g:gender-articles",
-      "g:object-pronoun-position",
-      "g:preterite-irregular-strong",
-      "g:verb-infinitive",
-      "l:intentar",
+      "g:imperfect-habitual",
+      "l:olvidar",
       "l:perdonar",
-      "l:tener"
+      "l:saber",
+      "p:frequency-scale",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:perdonar"
@@ -20537,18 +20486,19 @@
   },
   {
     "id": "u35-0797",
-    "es": "Vale enciende el horno a las cinco de la mañana.",
-    "en": "Vale turns on the oven at five in the morning.",
+    "es": "¿Quién encendió el horno tan temprano?",
+    "en": "Who turned the oven on so early?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:stem-boot",
+      "g:preterite-er-ir",
+      "g:questions",
       "l:encender",
       "l:horno",
-      "l:mañana",
-      "p:por-la-manana",
-      "p:telling-time"
+      "l:quién",
+      "l:temprano",
+      "p:question-word-order"
     ],
     "targets": [
       "l:encender"
@@ -20952,8 +20902,8 @@
   },
   {
     "id": "u35-0814",
-    "es": "Antes el café de olla estaba de moda en Bogotá.",
-    "en": "Black coffee used to be fashionable in Bogotá.",
+    "es": "Antes los cafés con música en vivo estaban de moda en Bogotá.",
+    "en": "Cafés with live music used to be in fashion in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20964,7 +20914,9 @@
       "l:café",
       "l:estar",
       "l:moda",
-      "l:olla"
+      "l:música",
+      "l:vivo",
+      "p:con-sin"
     ],
     "targets": [
       "l:moda"
@@ -23341,23 +23293,21 @@
   },
   {
     "id": "u35-0914",
-    "es": "Cuando trasnoche, tómese un vaso de agua.",
-    "en": "When you stay up late, drink a glass of water. (polite)",
+    "es": "Después de trasnochar, no maneje, por favor.",
+    "en": "After staying up late, don't drive, please. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
-      "g:gender-articles",
-      "g:se-impersonal",
-      "g:subj-cuando-future",
-      "g:subj-wanting",
-      "l:agua",
-      "l:tomar",
+      "c:por-favor",
+      "g:negative-commands",
+      "g:prep-infinitive",
+      "l:después",
+      "l:favor",
+      "l:manejar",
       "l:trasnochar",
-      "l:vaso",
-      "p:container-de",
-      "p:madrugar-trasnochar"
+      "p:madrugar-trasnochar",
+      "p:request-ladder",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "p:madrugar-trasnochar"
@@ -24414,22 +24364,20 @@
   },
   {
     "id": "u35-0956",
-    "es": "Más cinta, más altura: el techo del café es bajo.",
-    "en": "More tape, more height: the café ceiling is low.",
+    "es": "Pegue el aviso en la puerta con cinta.",
+    "en": "Stick the notice on the door with tape. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:commands-usted",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:altura",
-      "l:café",
+      "l:aviso",
       "l:cinta",
-      "l:ser",
-      "l:techo",
-      "p:es-tiene-lleva"
+      "l:pegar",
+      "l:puerta",
+      "p:con-sin"
     ],
     "targets": [
-      "l:altura",
       "l:cinta"
     ],
     "kind": "statement",
@@ -24543,7 +24491,7 @@
   {
     "id": "u35-0961",
     "es": "Un síntoma raro: me hormiguea la mano izquierda.",
-    "en": "A strange symptom: my hand tingles.",
+    "en": "A strange symptom: my left hand tingles.",
     "accept": [],
     "acceptEn": [],
     "requires": [

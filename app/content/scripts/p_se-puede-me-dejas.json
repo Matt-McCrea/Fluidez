@@ -26,17 +26,17 @@
     { "es": "¿Me dejas salir temprano hoy?", "options": ["Is leaving early allowed today?", "Will you let us leave early today?", "Will you let me leave early today?"], "answer": 2 }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right form and type the whole sentence (asking what the rule is: can you pay by card?): ¿___ pagar con tarjeta? (*Se puede* / *Me dejas*)", "answer": "¿Se puede pagar con tarjeta?", "accept": ["¿Se puede pagar con tarjeta?"], "why": "You are asking about the rule, not one person, so *se puede*." },
-    { "prompt": "Choose the right form and type the whole sentence (asking a friend to let you use their phone): ¿___ usar tu celular? (*Se puede* / *Me dejas*)", "answer": "¿Me dejas usar tu celular?", "accept": ["¿Me dejas usar tu celular?"], "why": "A friend decides here, so you ask *me dejas*." },
+    { "prompt": "Choose the right form and type the whole sentence (asking what the rule is: can you pay by card?): ¿___ pagar con tarjeta? (*Se puede* / *Me dejas*)", "answer": "¿Se puede pagar con tarjeta?", "accept": [], "why": "You are asking about the rule, not one person, so *se puede*." },
+    { "prompt": "Choose the right form and type the whole sentence (asking a friend to let you use their phone): ¿___ usar tu celular? (*Se puede* / *Me dejas*)", "answer": "¿Me dejas usar tu celular?", "accept": [], "why": "A friend decides here, so you ask *me dejas*." },
     { "prompt": "Type in Spanish: Can you smoke here?", "answer": "¿Aquí se puede fumar?", "accept": ["¿Se puede fumar aquí?"], "why": "A question about the rule is *se puede* plus the infinitive." },
     { "prompt": "Type in Spanish (to someone you address as *usted*): Would you let me through, please?", "answer": "¿Me deja pasar, por favor?", "accept": ["Por favor, ¿me deja pasar?", "¿Por favor me deja pasar?"], "why": "*Usted* takes *deja*, and the infinitive *pasar* follows directly." },
     { "prompt": "Type in Spanish (asking your boss politely): Could I leave a little early?", "answer": "¿Podría salir un poco antes?", "accept": ["¿Podría salir antes?"], "why": "*Podría* is the polite way to ask one person for permission." },
-    { "prompt": "Make it about *us* (to a friend): ¿Me dejas usar tu celular?", "answer": "¿Nos dejas usar tu celular?", "accept": ["¿Nos dejas usar tu celular?"], "why": "*Nos* replaces *me* when the permission is for us." },
+    { "prompt": "Make it about *us* (to a friend): ¿Me dejas usar tu celular?", "answer": "¿Nos dejas usar tu celular?", "accept": [], "why": "*Nos* replaces *me* when the permission is for us." },
     { "prompt": "Answer no: someone asks ¿Se puede fumar aquí? You say: No, you can't smoke here.", "answer": "No, aquí no se puede fumar.", "accept": ["No, no se puede fumar aquí."], "why": "*No se puede* keeps the same shape, with *no* in front." }
   ],
   "pitfalls": [
     { "wrong": "¿Se puede usar tu celular?", "right": "¿Me dejas usar tu celular?", "why": "Almost. *Se puede* asks about a rule; when one person decides, ask *me dejas*." },
-    { "wrong": "¿Me dejas fumar aquí?", "right": "¿Aquí se puede fumar?", "why": "Nobody in particular is letting you, it is a rule, so *se puede*." },
+    { "wrong": "¿Se puede fumo aquí?", "right": "¿Se puede fumar aquí?", "why": "After *se puede* the verb stays in the infinitive: *fumar*." },
     { "wrong": "¿Me dejas a salir antes?", "right": "¿Me dejas salir antes?", "why": "After *dejar* the infinitive comes straight away, with no *a*." }
   ],
   "personal": "Think of a place you go often. Ask what the rule is with *¿Se puede…?*, then ask a friend to let you do something with *¿Me dejas…?*"

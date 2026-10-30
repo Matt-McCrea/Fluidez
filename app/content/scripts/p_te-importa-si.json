@@ -2,8 +2,8 @@
   "node": "p:te-importa-si",
   "hook": {
     "line": "Hernando's chair is the best one in the café, and a stranger wants to sit in it. Asking politely if someone minds is one of the most useful things you can say, and the answer is a little backwards for English speakers.",
-    "es": "¿Te importa si me siento aquí?",
-    "en": "Do you mind if I sit here? (to a friend)"
+    "es": "¿Le importa si me siento aquí?",
+    "en": "Do you mind if I sit here? (formal)"
   },
   "examples": [
     { "es": "¿Le importa si abro la ventana?", "en": "Do you mind if I open the window? (formal)" },

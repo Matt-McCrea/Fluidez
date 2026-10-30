@@ -13,7 +13,7 @@
     { "es": "No se le vaya a olvidar la receta.", "en": "Mind you don't forget the prescription. (to someone you address formally)" },
     { "es": "No vayas a la farmacia sin la receta.", "en": "Don't go to the pharmacy without the prescription. (to a friend)" }
   ],
-  "rule": "*No vayas a* + infinitive warns about something that might happen by accident. It is softer than a ban: \"mind you don't\".\n\nFor a friend: *No vayas a perder…*\nFor yourself or a mishap that happens to you, add *te*: *No te vayas a caer.*\nFor *usted*: *No se vaya a caer.*\n\nWatch the little *a*. *No vayas a la farmacia* (the pharmacy) really means \"don't go\". *No vayas a perder* (a verb) means \"mind you don't\".",
+  "rule": "*No vayas a* + infinitive warns about something that might happen by accident. It is softer than a ban: \"mind you don't\".\n\nFor a friend: *No vayas a perder…*\nWhen the mishap happens to the person, like a fall or getting sick, add *te*: *No te vayas a caer.*\nFor *usted*: *No se vaya a caer.*\n\nWatch the little *a*. *No vayas a la farmacia* (the pharmacy) really means \"don't go\". *No vayas a perder* (a verb) means \"mind you don't\".",
   "smallPrint": "Teachers call *vayas* the present subjunctive of *ir*; for now treat *no vayas a* as one block.",
   "readAndPick": [
     { "es": "No vayas a perder las llaves.", "options": ["Mind you don't lose the keys.", "Don't go and look for the keys.", "You won't lose the keys."], "answer": 0 },
