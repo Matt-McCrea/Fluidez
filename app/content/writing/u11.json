@@ -489,5 +489,88 @@
       "l:foto",
       "p:possessives-basic"
     ]
+  },
+  {
+    "id": "w-u11-13",
+    "unit": "u11",
+    "prompt": "Vale asks why you were late to the café this morning. Text her two short sentences, as a friend: you looked for your keys and then arrived at the café.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "buscar",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "say you looked for them (busqué)"
+      },
+      {
+        "type": "verbForm",
+        "inf": "llegar",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "say you arrived (llegué)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Busqué mis llaves en toda la casa. Llegué al café a las nueve.",
+    "focus": "g:preterite-spelling-stem",
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-spelling-stem",
+      "l:buscar",
+      "l:café",
+      "l:casa",
+      "l:llave",
+      "l:llegar",
+      "p:possessives-basic",
+      "p:telling-time"
+    ]
+  },
+  {
+    "id": "w-u11-14",
+    "unit": "u11",
+    "prompt": "A friend asks what you did yesterday. Write two short sentences: one thing you started and one thing you read.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "empezar",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "say what you started (empecé)"
+      },
+      {
+        "type": "verbForm",
+        "inf": "leer",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "say what you read (leí)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Ayer empecé un libro nuevo. Lo leí en el café con un tinto.",
+    "focus": "g:preterite-spelling-stem",
+    "requires": [
+      "c:ayer-anoche",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:preterite-spelling-stem",
+      "l:ayer",
+      "l:café",
+      "l:empezar",
+      "l:leer",
+      "l:libro",
+      "l:nuevo",
+      "l:tinto"
+    ]
   }
 ]
