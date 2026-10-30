@@ -1,0 +1,43 @@
+{
+  "node": "p:te-importa-si",
+  "hook": {
+    "line": "Hernando's chair is the best one in the café, and a stranger wants to sit in it. Asking politely if someone minds is one of the most useful things you can say, and the answer is a little backwards for English speakers.",
+    "es": "¿Te importa si me siento aquí?",
+    "en": "Do you mind if I sit here? (to a friend)"
+  },
+  "examples": [
+    { "es": "¿Le importa si abro la ventana?", "en": "Do you mind if I open the window? (formal)" },
+    { "es": "¿Te importa si me siento aquí?\nNo, para nada.", "en": "Do you mind if I sit here?\nNo, not at all." },
+    { "es": "¿Te importa si Vale se sienta con nosotros?", "en": "Do you mind if Vale sits with us? (to a friend)" },
+    { "es": "¿Les importa si como aquí?", "en": "Do you all mind if I eat here?" },
+    { "es": "¿Le importa si hablo con el doctor?", "en": "Do you mind if I talk to the doctor? (formal)" }
+  ],
+  "rule": "To ask permission politely, use *¿Te importa si…?* (to a friend) or *¿Le importa si…?* (to someone you call *usted*). After *si*, use the normal present: *¿Te importa si abro la ventana?*\n\nThe answer feels backwards. The question is \"does it bother you?\", so:\n*No, para nada*: no, not at all (you can go ahead).\n*Tranquilo*: relax, it's fine.\n*Sí me importa* means yes, I do mind.\n\nA plain *sí* is risky: it can sound like \"yes, it bothers me\". Say *claro que no* instead.",
+  "smallPrint": "Teachers call this a request framed as a yes-or-no question: grammatically it asks, but it works as a polite request.",
+  "readAndPick": [
+    { "es": "¿Le importa si abro la ventana?", "options": ["Do you mind if I open the window? (formal)", "Do you mind if you open the window? (formal)", "Did I open the window? (formal)"], "answer": 0 },
+    { "es": "¿Te importa si me siento aquí?", "options": ["Do you mind if I sit here? (to a friend)", "Do you mind if he sits here? (to a friend)", "Do you want me to sit here? (to a friend)"], "answer": 0 },
+    { "es": "No, para nada.", "options": ["Yes, it bothers me.", "No, it doesn't bother me at all.", "I don't know."], "answer": 1 },
+    { "es": "Sí me importa.", "options": ["Yes, I do mind.", "No, go ahead.", "I don't mind."], "answer": 0 },
+    { "es": "¿Les importa si como aquí?", "options": ["Do you all mind if I eat here?", "Do you all mind if she eats here?", "Do you all mind if we eat here?"], "answer": 0 },
+    { "es": "¿Te importa si Vale se sienta con nosotros?", "options": ["Do you mind if I sit with Vale? (to a friend)", "Do you mind if Vale sits with us? (to a friend)", "Does Vale mind if we sit? (to a friend)"], "answer": 1 },
+    { "es": "Tranquilo, no me importa.", "options": ["Relax, it doesn't bother me.", "Relax, it bothers me a lot.", "Relax, I don't have it."], "answer": 0 },
+    { "es": "¿Le importa si hablo con el doctor?", "options": ["Do you mind if I talk to the doctor? (formal)", "Does the doctor mind if I talk? (formal)", "Do you mind if he talks to the doctor? (formal)"], "answer": 0 },
+    { "es": "No me importa.", "options": ["It bothers me.", "I'm not important.", "It doesn't bother me."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right word and type the whole sentence: *¿___ importa si abro la ventana?* (*Te* or *Le*) Do you mind if I open the window? (to a friend)", "answer": "¿Te importa si abro la ventana?", "accept": [], "why": "A friend is *te*; *le* is for someone you call *usted*." },
+    { "prompt": "Choose the right word and type the whole sentence: *¿Le importa si ___ aquí?* (*me siento* or *te sientas*) Do you mind if I sit here? (formal)", "answer": "¿Le importa si me siento aquí?", "accept": [], "why": "You are the one sitting, so *me siento*." },
+    { "prompt": "Ask your friend if he or she minds if you eat here.", "answer": "¿Te importa si como aquí?", "accept": [], "why": "*Te importa si* plus the normal *yo* form, *como*." },
+    { "prompt": "Ask an older stranger, politely, if he minds if you talk to the doctor.", "answer": "¿Le importa si hablo con el doctor?", "accept": [], "why": "For someone you call *usted*, use *le importa*." },
+    { "prompt": "Ask a group of friends if they mind if Vale sits with you.", "answer": "¿Les importa si Vale se sienta con nosotros?", "accept": ["¿Les importa si Vale se sienta con nosotras?"], "why": "A group takes *les*, and *si* is followed by the normal present." },
+    { "prompt": "Answer it: a friend asks *¿Te importa si me siento aquí?* You don't mind at all.", "answer": "No, para nada.", "accept": ["Para nada.", "Claro que no.", "No, claro que no.", "No, tranquilo."], "why": "The question is whether it bothers you, so a friendly answer starts with *no*." },
+    { "prompt": "Make it formal: *¿Te importa si abro la ventana?*", "answer": "¿Le importa si abro la ventana?", "accept": [], "why": "*Te* becomes *le* for *usted*, and the rest stays." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Te importa si abra la ventana?", "right": "¿Te importa si abro la ventana?", "why": "Almost. After *si* use the plain present, not a subjunctive." },
+    { "wrong": "¿Importa si abro la ventana?", "right": "¿Te importa si abro la ventana?", "why": "Say who it might bother: add *te* or *le*." },
+    { "wrong": "¿Te importo si abro la ventana?", "right": "¿Te importa si abro la ventana?", "why": "The thing that bothers is the situation, not you, so the verb is *importa*." }
+  ],
+  "personal": "Imagine you are in a crowded café. Ask the person next to you if they mind if you sit there, using *¿le importa si…?* or *¿te importa si…?*."
+}

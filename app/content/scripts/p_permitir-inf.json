@@ -1,0 +1,44 @@
+{
+  "node": "p:permitir-inf",
+  "hook": {
+    "line": "At the clinic, everyone seems to be telling Hernando what he may and may not do. Doctors, nurses and signs on the wall all use the same short frame: a verb of advice or permission, then a plain infinitive.",
+    "es": "Le recomiendo descansar.",
+    "en": "I recommend that you rest. (formal)"
+  },
+  "examples": [
+    { "es": "Le recomiendo descansar.", "en": "I recommend that you rest. (formal)" },
+    { "es": "No te permitieron entrar.", "en": "They didn't let you in. (to a friend)" },
+    { "es": "El médico me prohibió fumar.", "en": "The doctor banned me from smoking." },
+    { "es": "Te aconsejo esperar un poco.", "en": "I advise you to wait a little. (to a friend)" },
+    { "es": "La doctora nos recomienda comer menos sal.", "en": "The doctor recommends that we eat less salt." },
+    { "es": "No les permiten fumar aquí.", "en": "They don't let you all smoke here." }
+  ],
+  "rule": "To tell someone what to do, or what they may do, use a verb of advice or permission, a little word for the person, and an infinitive.\n\n*recomendar*, *aconsejar*: advise. *Le recomiendo descansar*.\n*permitir*: allow. *No me permitieron entrar* (\"they didn't let me in\").\n*prohibir*: ban. *El médico me prohibió fumar*.\n\nThe little word (*me*, *te*, *le*, *nos*, *les*) says who is allowed, advised or banned. That same person is the one who does the infinitive: *Le recomiendo descansar* means you rest.\n\nEnglish needs \"that you\" or \"to\": \"I recommend that you rest\". Spanish just uses the infinitive.",
+  "smallPrint": "Teachers call the little word the indirect object, and the infinitive a complement of verbs of influence.",
+  "readAndPick": [
+    { "es": "Le recomiendo descansar.", "options": ["I recommend that you rest. (formal)", "I recommend that I rest.", "I recommend that he rests."], "answer": 0 },
+    { "es": "No te permitieron entrar.", "options": ["They didn't let me in.", "They didn't let you in. (to a friend)", "I didn't let them in."], "answer": 1 },
+    { "es": "El médico me prohibió fumar.", "options": ["The doctor lets me smoke.", "The doctor banned me from smoking.", "The doctor advised me to smoke."], "answer": 1 },
+    { "es": "Te aconsejo esperar un poco.", "options": ["He advises me to wait a little.", "I advise you to wait a little.", "You advise me to wait a little."], "answer": 1 },
+    { "es": "No les permiten fumar aquí.", "options": ["They don't let us smoke here.", "We don't let them smoke here.", "They don't let them smoke here."], "answer": 2 },
+    { "es": "La doctora nos recomienda comer menos sal.", "options": ["We recommend that the doctor eat less salt.", "The doctor recommends that we eat less salt.", "The doctor recommends that I eat less salt."], "answer": 1 },
+    { "es": "Le aconsejo tomar la pastilla.", "options": ["I advise you to take the pill. (formal)", "I advise you to take the pills, friend.", "He advises me to take the pill."], "answer": 0 },
+    { "es": "Les prohíben entrar con comida.", "options": ["They ban us from coming in with food.", "They ban you all from coming in with food.", "You all ban them from coming in with food."], "answer": 1 },
+    { "es": "No te permiten salir hoy.", "options": ["They don't let you leave today. (to a friend)", "They don't let me leave today.", "You don't let them leave today."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right word and type the whole sentence: *Le ___ descansar.* (*recomiendo* or *prohibió*) I recommend that you rest. (formal)", "answer": "Le recomiendo descansar.", "accept": [], "why": "You are giving advice, so *recomiendo*." },
+    { "prompt": "Choose the right word and type the whole sentence: *El médico me ___ fumar.* (*prohibió* or *aconsejó*) The doctor banned me from smoking.", "answer": "El médico me prohibió fumar.", "accept": [], "why": "A ban is *prohibir*." },
+    { "prompt": "Type in Spanish: They didn't let you in. (to a friend)", "answer": "No te permitieron entrar.", "accept": [], "why": "*Te* is your friend, and *entrar* stays as an infinitive." },
+    { "prompt": "Type in Spanish: I advise you to wait a little. (to a friend)", "answer": "Te aconsejo esperar un poco.", "accept": ["Te aconsejo esperar un rato."], "why": "*Te* is your friend, and *esperar* is the infinitive." },
+    { "prompt": "Make it about us: *El médico me prohibió fumar.*", "answer": "El médico nos prohibió fumar.", "accept": [], "why": "Only the little word changes: *nos* for \"us\"." },
+    { "prompt": "Make it polite, for someone you call *usted*: *Te recomiendo descansar.*", "answer": "Le recomiendo descansar.", "accept": [], "why": "*Usted* takes *le*, where a friend takes *te*." },
+    { "prompt": "Make it negative: *Les permiten fumar aquí.*", "answer": "No les permiten fumar aquí.", "accept": [], "why": "*No* goes before the little word." }
+  ],
+  "pitfalls": [
+    { "wrong": "Le recomiendo a descansar.", "right": "Le recomiendo descansar.", "why": "Almost. Spanish puts the infinitive right after the verb, with no *a* in between." },
+    { "wrong": "Recomiendo usted descansar.", "right": "Le recomiendo descansar.", "why": "The person goes in the little word before the verb: *le*." },
+    { "wrong": "No permitieron entrar.", "right": "No te permitieron entrar.", "why": "Without a little word like *te* we don't know who was refused; add it." }
+  ],
+  "personal": "Tell us one thing someone *te recomienda* or *te prohíbe* doing, with the little word *te* or *me*."
+}

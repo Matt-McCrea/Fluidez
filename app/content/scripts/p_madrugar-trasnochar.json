@@ -1,0 +1,44 @@
+{
+  "node": "p:madrugar-trasnochar",
+  "hook": {
+    "line": "Running a café in La Candelaria means Tomás is up before the sun and sometimes closing after midnight. Colombians have one word for each of those, plus a tiny phrase for whose turn it is.",
+    "es": "Mañana me toca madrugar.",
+    "en": "I have to get up really early tomorrow."
+  },
+  "examples": [
+    { "es": "Mañana me toca madrugar.", "en": "I have to get up really early tomorrow." },
+    { "es": "No es bueno trasnochar tanto.", "en": "It's not good to stay up late so much." },
+    { "es": "Vale madruga para hacer el pan.", "en": "Vale gets up very early to make the bread." },
+    { "es": "¿Te toca abrir el café mañana?", "en": "Is it your turn to open the café tomorrow? (to a friend)" },
+    { "es": "Anoche trasnoché. Hoy estoy cansado.", "en": "Last night I stayed up late. Today I'm tired. (a man speaking)" },
+    { "es": "A Tomás le toca cerrar el domingo.", "en": "It's Tomás's turn to close on Sunday." }
+  ],
+  "rule": "*Madrugar* means getting up very early, in the dark. It is not just \"being early\" (that is *llegar temprano*). *Trasnochar* is the opposite: staying up late, or missing a night's sleep.\n\n*Me toca* + infinitive means \"it's my turn\" or \"I'm the one who has to\". The person goes in the little word: *me toca*, *te toca*, *le toca*, *nos toca*, *les toca*. The verb after it stays in the infinitive: *Me toca madrugar*.\n\nIt works like *me gusta*: the thing that happens comes after, and the person is the little word before.",
+  "smallPrint": "Teachers call *tocar* here an impersonal verb of obligation, used with an indirect object, like *gustar*.",
+  "readAndPick": [
+    { "es": "Mañana me toca madrugar.", "options": ["Tomorrow I have to get up very early.", "Tomorrow I have to stay up late.", "Tomorrow I'll be early to work."], "answer": 0 },
+    { "es": "Anoche trasnoché.", "options": ["Last night I got up very early.", "Last night I stayed up late.", "Last night I slept well."], "answer": 1 },
+    { "es": "¿Te toca cerrar hoy?", "options": ["Do you have to close today? (to a friend)", "Do I have to close today?", "Does she have to close today?"], "answer": 0 },
+    { "es": "A Vale le toca cerrar.", "options": ["I have to close.", "Vale has to close.", "Vale and I have to close."], "answer": 1 },
+    { "es": "Nos toca trabajar el domingo.", "options": ["They have to work on Sunday.", "You have to work on Sunday.", "We have to work on Sunday."], "answer": 2 },
+    { "es": "No es bueno trasnochar tanto.", "options": ["It's not good to get up so early.", "It's not good to stay up so late.", "It's not good to sleep so much."], "answer": 1 },
+    { "es": "Vale madruga para hacer el pan.", "options": ["Vale gets up very early to make the bread.", "Vale stays up late to make the bread.", "Vale is late to make the bread."], "answer": 0 },
+    { "es": "Les toca abrir el café.", "options": ["It's my turn to open the café.", "It's their turn to open the café.", "It's his turn to open the café."], "answer": 1 },
+    { "es": "Hoy no me toca trasnochar.", "options": ["Today I don't have to stay up late.", "Today I don't have to get up early.", "Today I can't sleep."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right word and type the whole sentence: *Mañana me toca ___.* (*madrugar* or *trasnochar*) Tomorrow I have to get up really early.", "answer": "Mañana me toca madrugar.", "accept": ["Me toca madrugar mañana."], "why": "Getting up early in the dark is *madrugar*." },
+    { "prompt": "Choose the right word and type the whole sentence: *Anoche ___. Hoy estoy cansado.* (*trasnoché* or *madrugué*) Last night I stayed up late. Today I'm tired. (a man speaking)", "answer": "Anoche trasnoché. Hoy estoy cansado.", "accept": [], "why": "Staying up late is *trasnochar*." },
+    { "prompt": "Type in Spanish: It's Tomás's turn to open the café.", "answer": "A Tomás le toca abrir el café.", "accept": ["A Tomás le toca abrir."], "why": "The person goes in *le*, and *a Tomás* says who." },
+    { "prompt": "Ask a friend if it's his or her turn to close today.", "answer": "¿Te toca cerrar hoy?", "accept": ["¿Hoy te toca cerrar?"], "why": "*Te* is your friend, and the verb stays as *tocar* plus an infinitive." },
+    { "prompt": "Make it about us: *Me toca cerrar mañana.*", "answer": "Nos toca cerrar mañana.", "accept": ["Mañana nos toca cerrar."], "why": "Only the little word changes: *nos* for \"we\"." },
+    { "prompt": "Make it negative: *Hoy me toca trasnochar.*", "answer": "Hoy no me toca trasnochar.", "accept": [], "why": "*No* goes right before *me toca*." },
+    { "prompt": "Type in Spanish: It's not good to stay up late so much.", "answer": "No es bueno trasnochar tanto.", "accept": [], "why": "After *es bueno*, *trasnochar* stays in the infinitive." }
+  ],
+  "pitfalls": [
+    { "wrong": "Yo toco madrugar mañana.", "right": "Mañana me toca madrugar.", "why": "Almost. The person goes in the little word *me*, and the verb is *toca*." },
+    { "wrong": "Llegué madrugar al café.", "right": "Madrugué para llegar al café.", "why": "*Madrugar* is getting up early, not arriving early. For arriving early use *llegar temprano*." },
+    { "wrong": "Me toca a madrugar.", "right": "Me toca madrugar.", "why": "No little word goes between *toca* and the infinitive." }
+  ],
+  "personal": "Tell us one day when *te toca madrugar*, or a night when you *trasnochaste*."
+}

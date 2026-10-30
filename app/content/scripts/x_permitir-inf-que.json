@@ -1,0 +1,44 @@
+{
+  "node": "x:permitir-inf-que",
+  "hook": {
+    "line": "Vale wants Hernando to rest, and she says so two different ways in the same morning. Both are right, and a Colombian ear hears no difference. You just need to be able to build either one.",
+    "es": "Le recomiendo que descanse.",
+    "en": "I recommend that you rest. (formal)"
+  },
+  "examples": [
+    { "es": "Le recomiendo descansar.", "en": "I recommend that you rest. (formal)" },
+    { "es": "Le recomiendo que descanse.", "en": "I recommend that you rest. (formal)" },
+    { "es": "Te aconsejo esperar un poco.", "en": "I advise you to wait a little. (to a friend)" },
+    { "es": "Te aconsejo que esperes un poco.", "en": "I advise you to wait a little. (to a friend)" },
+    { "es": "Les aconsejo que esperen aquí.", "en": "I advise you all to wait here." },
+    { "es": "La doctora le recomienda a Hernando que tome la pastilla.", "en": "The doctor recommends that Hernando take the pill." }
+  ],
+  "rule": "After *recomendar*, *aconsejar*, *permitir* and *prohibir* you have two choices.\n\n1. The infinitive: *Le recomiendo descansar*. Shorter. The little word (*le*) says who rests.\n2. *que* + a changed verb: *Le recomiendo que descanse*. Same meaning. The verb changes ending, like the *que* sentences you know from *quiero que*.\n\nUse the infinitive when the person is just the little word. Use *que* when you name the person, or when it is easier to build the whole clause: *Le recomiendo a Hernando que descanse*.\n\nOne trap: *Quiero descansar* means I rest. *Quiero que descanses* means you rest.",
+  "smallPrint": "Teachers call the first the infinitive construction and the second the subjunctive construction; both are correct after verbs of influence.",
+  "readAndPick": [
+    { "es": "Le recomiendo que descanse.", "options": ["I recommend that you rest. (formal)", "I recommend that I rest.", "I recommend that you rested."], "answer": 0 },
+    { "es": "Te aconsejo que esperes un poco.", "options": ["I advise myself to wait a little.", "I advise you to wait a little. (to a friend)", "He advises me to wait a little."], "answer": 1 },
+    { "es": "Quiero descansar.", "options": ["I want you to rest.", "I want to rest.", "I want her to rest."], "answer": 1 },
+    { "es": "Quiero que descanses.", "options": ["I want to rest.", "I want you to rest. (to a friend)", "You want to rest."], "answer": 1 },
+    { "es": "Les aconsejo esperar aquí.", "options": ["I advise you all to wait here.", "I advise myself to wait here.", "They advise me to wait here."], "answer": 0 },
+    { "es": "Le permito que vaya.", "options": ["I let him go.", "I let myself go.", "He lets me go."], "answer": 0 },
+    { "es": "La doctora le recomienda a Hernando que tome la pastilla.", "options": ["The doctor takes the pill for Hernando.", "Hernando recommends that the doctor take the pill.", "The doctor recommends that Hernando take the pill."], "answer": 2 },
+    { "es": "Te recomiendo comer menos sal.", "options": ["I recommend that you eat less salt. (to a friend)", "I recommend that I eat less salt.", "You recommend that he eat less salt."], "answer": 0 },
+    { "es": "Me recomienda que duerma ocho horas.", "options": ["He recommends that I sleep eight hours.", "I recommend that he sleep eight hours.", "He recommends that he sleep eight hours."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence: *Le recomiendo ___.* (*descansar* or *que descanse*) I recommend that you rest. (formal)", "answer": "Le recomiendo descansar.", "accept": ["Le recomiendo que descanse."], "why": "Both work: the infinitive alone, or *que* with the changed verb." },
+    { "prompt": "Choose the right form and type the whole sentence: *Quiero que ___.* (*descansar* or *descanses*) I want you to rest. (to a friend)", "answer": "Quiero que descanses.", "accept": [], "why": "After *que* the verb changes ending, so *descanses*, not the infinitive." },
+    { "prompt": "Say it the longer way with *que*: *Te aconsejo esperar un poco.*", "answer": "Te aconsejo que esperes un poco.", "accept": [], "why": "With *que*, *esperar* becomes *esperes* for a friend." },
+    { "prompt": "Say it the shorter way with an infinitive: *Te recomiendo que comas menos sal.*", "answer": "Te recomiendo comer menos sal.", "accept": [], "why": "Drop *que* and use the infinitive: *comer*." },
+    { "prompt": "Type in Spanish: I advise you all to wait here.", "answer": "Les aconsejo esperar aquí.", "accept": ["Les aconsejo que esperen aquí."], "why": "*Les* is \"you all\", and either way of building it works." },
+    { "prompt": "Type in Spanish: The doctor recommends that Hernando take the pill.", "answer": "La doctora le recomienda a Hernando que tome la pastilla.", "accept": ["La doctora le recomienda tomar la pastilla a Hernando.", "La doctora le recomienda a Hernando tomar la pastilla."], "why": "When you name the person, *que* is the easy way to build it." },
+    { "prompt": "Type in Spanish: I want to rest.", "answer": "Quiero descansar.", "accept": [], "why": "When you are the one who rests, there is no *que*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Le recomiendo que descansar.", "right": "Le recomiendo que descanse.", "why": "Almost. After *que* the verb changes ending; it does not stay as the infinitive." },
+    { "wrong": "Quiero que descansar.", "right": "Quiero que descanses.", "why": "With *que*, the verb has to show who rests: *descanses* for \"you\"." },
+    { "wrong": "Quiero que descanso.", "right": "Quiero descansar.", "why": "If you are the one resting, just use the infinitive: *quiero descansar*." }
+  ],
+  "personal": "Tell us one thing you advise a friend to do, building it with *te aconsejo* once with an infinitive and once with *que*."
+}

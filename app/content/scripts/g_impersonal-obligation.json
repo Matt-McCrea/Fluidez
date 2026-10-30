@@ -1,0 +1,44 @@
+{
+  "node": "g:impersonal-obligation",
+  "hook": {
+    "line": "Everything the doctor tells Hernando is also true for everyone else: drink water, skip the salt, no smoking in the waiting room. When advice is for anybody, Spanish has a few short ways to say it without naming a person.",
+    "es": "Hay que tomar mucha agua.",
+    "en": "You need to drink lots of water."
+  },
+  "examples": [
+    { "es": "Hay que tomar mucha agua.", "en": "You need to drink lots of water." },
+    { "es": "No se debe fumar aquí.", "en": "Smoking isn't allowed here." },
+    { "es": "Uno nunca sabe.", "en": "You never know." },
+    { "es": "Se debe descansar un poco.", "en": "You should rest a little." },
+    { "es": "No hay que tener miedo.", "en": "There's no need to be afraid." },
+    { "es": "Uno tiene que comer bien.", "en": "You have to eat well." }
+  ],
+  "rule": "When a rule or piece of advice is for anybody, you don't name a person. Three ways to start, and a fourth coming soon:\n\n*Hay que* + infinitive: you need to, one must. *Hay que tomar agua*.\n*Se debe* + infinitive: it should be done. *No se debe fumar aquí*.\n*Uno tiene que* + infinitive: you have to, as people do. *Uno tiene que comer bien*.\n*Conviene* + infinitive: it's a good idea. You will see it soon, and it works the same way.\n\nWatch the *no*. *No se debe fumar* says you must not. *No hay que fumar* says you don't need to. Spanish uses *uno* for the general \"you\", where English also says \"one\" or \"you\".",
+  "smallPrint": "Teachers call these impersonal constructions of obligation: no subject is named, so the rule applies to everyone.",
+  "readAndPick": [
+    { "es": "Hay que tomar mucha agua.", "options": ["I drink a lot of water.", "You need to drink a lot of water.", "They drink a lot of water."], "answer": 1 },
+    { "es": "No se debe fumar aquí.", "options": ["Smoking isn't allowed here.", "You don't have to smoke here.", "Nobody smokes here."], "answer": 0 },
+    { "es": "No hay que fumar aquí.", "options": ["You mustn't smoke here.", "There's no need to smoke here.", "Smoking isn't allowed here."], "answer": 1 },
+    { "es": "Uno nunca sabe.", "options": ["Nobody knows me.", "One has never known.", "You never know."], "answer": 2 },
+    { "es": "Se debe descansar un poco.", "options": ["You should rest a little.", "I rest a little.", "He rests a little."], "answer": 0 },
+    { "es": "Uno tiene que comer bien.", "options": ["I have to eat well.", "You have to eat well, as anyone does.", "He has to eat well."], "answer": 1 },
+    { "es": "No se debe comer tanta sal.", "options": ["You shouldn't eat so much salt.", "You don't need to eat so much salt.", "Nobody eats so much salt."], "answer": 0 },
+    { "es": "Hay que comer menos sal.", "options": ["Salt is eaten less.", "One needs to eat less salt.", "I eat less salt."], "answer": 1 },
+    { "es": "No hay que tener miedo.", "options": ["You mustn't be afraid.", "There's no need to be afraid.", "Nobody is afraid."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence: *___ tomar mucha agua.* (*Hay que* or *Uno nunca*) You need to drink lots of water.", "answer": "Hay que tomar mucha agua.", "accept": [], "why": "A need that applies to anyone is *hay que* plus an infinitive." },
+    { "prompt": "Choose the right form and type the whole sentence: *No ___ fumar aquí.* (*se debe* or *hay que*) Smoking isn't allowed here.", "answer": "No se debe fumar aquí.", "accept": [], "why": "A ban is *no se debe*; *no hay que* would mean you don't need to." },
+    { "prompt": "Type in Spanish: You never know.", "answer": "Uno nunca sabe.", "accept": [], "why": "*Uno* is the general \"you\"." },
+    { "prompt": "Type in Spanish: You should rest a little.", "answer": "Se debe descansar un poco.", "accept": ["Hay que descansar un poco."], "why": "*Se debe* plus an infinitive says what should be done." },
+    { "prompt": "Make it a ban: *Hay que fumar aquí.* Say that smoking isn't allowed here.", "answer": "No se debe fumar aquí.", "accept": [], "why": "*No se debe* is the way to say something isn't allowed." },
+    { "prompt": "Say there's no need: *Hay que tener miedo.*", "answer": "No hay que tener miedo.", "accept": [], "why": "*No hay que* means there's no need to." },
+    { "prompt": "Type in Spanish: You have to eat well. (as anyone does)", "answer": "Uno tiene que comer bien.", "accept": [], "why": "*Uno tiene que* gives a rule for people in general." }
+  ],
+  "pitfalls": [
+    { "wrong": "Hay tomar mucha agua.", "right": "Hay que tomar mucha agua.", "why": "Almost. *Hay* needs *que* before the infinitive." },
+    { "wrong": "No hay que fumar aquí.", "right": "No se debe fumar aquí.", "why": "*No hay que* means you don't need to, so for a ban say *no se debe*." },
+    { "wrong": "Se debe a tomar agua.", "right": "Se debe tomar agua.", "why": "Nothing goes between *se debe* and the infinitive." }
+  ],
+  "personal": "Tell us one rule that is true for everybody, using *hay que*, *uno tiene que* or *no se debe*."
+}
