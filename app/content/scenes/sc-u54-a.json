@@ -1,0 +1,254 @@
+{
+  "id": "sc-u54-a",
+  "unit": "u54",
+  "title": "Música hasta las tres",
+  "spare": false,
+  "brief": "You're Tomás, closing up the café with Vale, who is your age and quick and dry, so use tú. The hotel next door has a rooftop bar, and last night it was loud. Be sarcastic about it, admit what you don't know, and promise a little revenge.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Anoche la música de la azotea no paró hasta las tres.",
+      "npcEn": "Vale: Last night the music on the rooftop didn't stop until three.",
+      "intent": "React with ironic praise: how thoughtful of them to play music so late (use: ¡Qué detalle...!).",
+      "accept": [
+        "¡Qué detalle tocar música hasta las tres!",
+        "¡Qué detalle, Vale! Así nadie se duerme en el barrio.",
+        "¡Qué detalle de los vecinos, ponernos música gratis toda la noche!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bqué detalle\\b",
+          "flags": "iu",
+          "label": "use: ¡Qué detalle...!"
+        }
+      ],
+      "focus": "p:ironic-praise",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: ¿Y sabes cuándo van a abrir el bar de verdad?",
+      "npcEn": "Vale: And do you know when they're going to open the bar for real?",
+      "intent": "Say you haven't the faintest idea (use: la menor idea).",
+      "accept": [
+        "No tengo la menor idea.",
+        "Ni idea, Vale. No tengo la menor idea de cuándo abren.",
+        "No tengo la menor idea, pero seguro que es de noche."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bla menor idea\\b",
+          "flags": "iu",
+          "label": "use: la menor idea"
+        }
+      ],
+      "focus": "p:la-menor-idea",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Dicen que los huéspedes van a bajar a desayunar aquí.",
+      "npcEn": "Vale: They say the hotel guests are going to come down to have breakfast here.",
+      "intent": "Answer with irony: yes, as if they came all the time (use: Sí, como...).",
+      "accept": [
+        "Sí, como vienen tanto.",
+        "Sí, claro, como siempre bajan a vernos.",
+        "Sí, como todos los días nos visita alguien del hotel."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomo\\b",
+          "flags": "iu",
+          "label": "start the sarcasm with: como..."
+        }
+      ],
+      "focus": "p:como-viene-tanto",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Hoy subí a la azotea a mirar y ni siquiera me saludaron.",
+      "npcEn": "Vale: Today I went up to the rooftop to look and they didn't even say hello to me.",
+      "intent": "Say you wouldn't even have gone up (use: ni...).",
+      "accept": [
+        "Yo ni siquiera subo.",
+        "Ni pensarlo, yo no subo a esa azotea.",
+        "Ni subiendo me saludaron, Vale."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bni\\b",
+          "flags": "iu",
+          "label": "use: ni"
+        }
+      ],
+      "focus": "p:ni-emphatic",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Entonces, ¿el hotel te molesta o no?",
+      "npcEn": "Vale: So, does the hotel bother you or not?",
+      "intent": "Say it bothers you, then correct yourself: it worries you (use: mejor dicho, o sea or es decir).",
+      "accept": [
+        "Me molesta; mejor dicho, me preocupa.",
+        "Sí, o sea, me preocupa un poco.",
+        "Me molesta, es decir, me quita el sueño."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "mejor dicho",
+            "o sea",
+            "es decir"
+          ],
+          "label": "correct yourself: mejor dicho, o sea or es decir"
+        }
+      ],
+      "focus": "g:reformulation",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Vale: Bueno, ya cierro. Mañana madrugamos.",
+      "npcEn": "Vale: Well, I'm closing up. Tomorrow we get up early.",
+      "intent": "Warn her: if you find out they're playing music again, you'll complain (use: Como me entere de que...).",
+      "accept": [
+        "Como me entere de que tocan otra vez, subo a quejarme.",
+        "Como me entere de que hay música otra vez, llamo a la policía.",
+        "Hasta mañana, Vale. Como me entere de que tocan otra vez, no duermo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomo me entere de que\\b",
+          "flags": "iu",
+          "label": "use: Como me entere de que..."
+        }
+      ],
+      "focus": "p:como-me-entere",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:ni-idea",
+    "c:o-sea",
+    "c:tengo",
+    "g:conditional-advanced",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:reformulation",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:anoche",
+    "l:aquí",
+    "l:azotea",
+    "l:bajar",
+    "l:bar",
+    "l:barrio",
+    "l:bueno",
+    "l:cerrar",
+    "l:claro",
+    "l:cuándo",
+    "l:decir",
+    "l:desayunar",
+    "l:detalle",
+    "l:dormir",
+    "l:dormirse",
+    "l:día",
+    "l:enterarse",
+    "l:gratis",
+    "l:hotel",
+    "l:hoy",
+    "l:huésped",
+    "l:idea",
+    "l:ir",
+    "l:llamar",
+    "l:madrugar",
+    "l:mañana",
+    "l:mejor",
+    "l:menor",
+    "l:mirar",
+    "l:molestar",
+    "l:música",
+    "l:noche",
+    "l:parar",
+    "l:pensar",
+    "l:policía",
+    "l:poner",
+    "l:preocupar",
+    "l:quejarse",
+    "l:quitar",
+    "l:qué",
+    "l:saber",
+    "l:saludar",
+    "l:seguro",
+    "l:ser",
+    "l:siempre",
+    "l:siquiera",
+    "l:subir",
+    "l:sueño",
+    "l:tener",
+    "l:tocar",
+    "l:vecino",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:visitar",
+    "p:aqui-ahi-alla",
+    "p:como-me-entere",
+    "p:como-viene-tanto",
+    "p:enterarse-de",
+    "p:es-de-noche-tarde",
+    "p:estar-seguro-de-que",
+    "p:exclamations-basic",
+    "p:frequency-scale",
+    "p:hay-varios-tipos",
+    "p:indefinites-basic",
+    "p:ironic-praise",
+    "p:la-menor-idea",
+    "p:madrugar-trasnochar",
+    "p:me-contaron-que",
+    "p:me-te-nos-objects",
+    "p:ni-emphatic",
+    "p:no-hasta",
+    "p:o-sea-que",
+    "p:otro-no-article",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ]
+}

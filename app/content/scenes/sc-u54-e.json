@@ -1,0 +1,229 @@
+{
+  "id": "sc-u54-e",
+  "unit": "u54",
+  "title": "El gerente de al lado",
+  "spare": true,
+  "brief": "You're yourself, behind the counter. The manager of the hotel next door has come to complain, and he's a stranger, so use usted. Stay polite on the surface, let the irony do the work, and turn down his offer.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Gerente: Buenas tardes. Soy el gerente del hotel de al lado. ¿Podemos hablar de la pizarra?",
+      "npcEn": "Manager: Good afternoon. I'm the manager of the hotel next door. Can we talk about the chalkboard?",
+      "intent": "Welcome him, remarking that at last a neighbour has come to say hello (use: para variar).",
+      "accept": [
+        "Buenas tardes. Qué bien, para variar un vecino que viene a saludar.",
+        "Para variar, una visita del hotel. Buenas tardes, pase.",
+        "Buenas tardes. Para variar, es usted quien viene a vernos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpara variar\\b",
+          "flags": "iu",
+          "label": "use: para variar"
+        }
+      ],
+      "focus": "c:para-variar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Gerente: Los chistes de su pizarra afectan la imagen de nuestro hotel.",
+      "npcEn": "Manager: The jokes on your chalkboard affect our hotel's image.",
+      "intent": "Ask how it is that a big hotel worries about a café with four customers (use: ¿Cómo es que...? and cuatro gatos).",
+      "accept": [
+        "¿Cómo es que un hotel tan grande se preocupa por un café con cuatro gatos?",
+        "¿Cómo es que le molestan cuatro gatos y una pizarra?",
+        "¿Cómo es que usted se fija en un café con cuatro gatos?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "¿cómo es que\\b",
+          "flags": "iu",
+          "label": "use: ¿Cómo es que...?"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bcuatro gatos\\b",
+          "flags": "iu",
+          "label": "use: cuatro gatos"
+        }
+      ],
+      "focus": "p:como-es-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Gerente: Nuestros huéspedes pagan mucho por una noche tranquila.",
+      "npcEn": "Manager: Our guests pay a lot for a quiet night.",
+      "intent": "Answer with irony: yes, last night was very quiet (say tranquila).",
+      "accept": [
+        "Sí, y anoche fue una noche muy tranquila: música hasta las tres.",
+        "Claro, anoche la azotea estuvo muy tranquila, ¿verdad?",
+        "Qué bien, porque anoche fue una noche muy tranquila para todos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btranquil",
+          "flags": "iu",
+          "label": "include: tranquila"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:ironic-praise",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Gerente: Le propongo un trato: ustedes quitan los chistes y yo les regalo una cena.",
+      "npcEn": "Manager: I propose a deal: you take down the jokes and I give you a dinner.",
+      "intent": "Refuse flatly (use: Ni pensarlo).",
+      "accept": [
+        "Ni pensarlo, señor. Los chistes se quedan.",
+        "Ni pensarlo. Los chistes se quedan donde están.",
+        "Señor, ni pensarlo: no voy a quitar los chistes."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bni pensarlo\\b",
+          "flags": "iu",
+          "label": "use: Ni pensarlo"
+        }
+      ],
+      "focus": "p:ni-emphatic",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Gerente: Veo que no cambia de opinión. Al menos regáleme un tinto.",
+      "npcEn": "Manager: I see you won't change your mind. At least give me a black coffee.",
+      "intent": "Relent warmly: the coffee is on the house, but he must read today's joke first.",
+      "accept": [
+        "Con gusto, el tinto va por la casa. Pero primero lea el chiste de hoy.",
+        "Claro, señor. El tinto va por la casa, y mire el chiste de hoy.",
+        "Siéntese, le preparo un tinto, pero lea el chiste primero."
+      ],
+      "require": [],
+      "focus": "g:emphatic-structures",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:como-es",
+    "c:con-mucho-gusto",
+    "c:cuatro-gatos",
+    "c:es-que",
+    "c:estuvo",
+    "c:hola-buenos-dias",
+    "c:no-cierto",
+    "c:para-variar",
+    "c:porque",
+    "c:que-bien",
+    "c:siga-siga",
+    "c:tranquilo",
+    "c:voy-a",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:possessives",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:afectar",
+    "l:anoche",
+    "l:azotea",
+    "l:bien",
+    "l:buena",
+    "l:café",
+    "l:cambiar",
+    "l:casa",
+    "l:cena",
+    "l:chiste",
+    "l:claro",
+    "l:cómo",
+    "l:estar",
+    "l:fijarse",
+    "l:gato",
+    "l:gerente",
+    "l:grande",
+    "l:gusto",
+    "l:hablar",
+    "l:hotel",
+    "l:hoy",
+    "l:huésped",
+    "l:imagen",
+    "l:ir",
+    "l:lado",
+    "l:le",
+    "l:leer",
+    "l:mirar",
+    "l:molestar",
+    "l:música",
+    "l:noche",
+    "l:opinión",
+    "l:pagar",
+    "l:pasar",
+    "l:pensar",
+    "l:pizarra",
+    "l:poder",
+    "l:preocuparse",
+    "l:preparar",
+    "l:proponer",
+    "l:quedarse",
+    "l:quitar",
+    "l:qué",
+    "l:regalar",
+    "l:saludar",
+    "l:sentarse",
+    "l:ser",
+    "l:señor",
+    "l:tarde",
+    "l:tinto",
+    "l:tranquilo",
+    "l:trato",
+    "l:variar",
+    "l:vecino",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "l:visita",
+    "p:cambiar-de-por",
+    "p:como-es-que",
+    "p:costar-pagar",
+    "p:fijarse-reparar-en",
+    "p:me-preocupa-que",
+    "p:me-te-nos-objects",
+    "p:ni-emphatic",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic"
+  ]
+}

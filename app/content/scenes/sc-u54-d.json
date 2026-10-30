@@ -1,0 +1,182 @@
+{
+  "id": "sc-u54-d",
+  "unit": "u54",
+  "title": "Cien mil me gusta",
+  "spare": true,
+  "brief": "You're yourself, with Vale, who is your age, so use tú. A photo of the chalkboard has gone viral, and she keeps showing you her phone. Answer with the wishes and exclamations Spanish uses for surprise, hope and regret.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Tomás, mira el celular: la foto de la pizarra ya tiene cien mil me gusta.",
+      "npcEn": "Vale: Tomás, look at the phone: the photo of the chalkboard already has a hundred thousand likes.",
+      "intent": "Say who would have thought it (use: ¡Quién lo hubiera dicho!).",
+      "accept": [
+        "¡Quién lo hubiera dicho!",
+        "¡Cien mil! ¡Quién lo hubiera dicho!",
+        "¡Quién lo hubiera dicho, Vale!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bquién lo hubiera dicho\\b",
+          "flags": "iu",
+          "label": "use: ¡Quién lo hubiera dicho!"
+        }
+      ],
+      "focus": "g:wish-exclamatives",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Y el hotel ni contesta.",
+      "npcEn": "Vale: And the hotel doesn't even answer.",
+      "intent": "Wish they would at least reply (use: ¡Si al menos...! with the past subjunctive).",
+      "accept": [
+        "¡Si al menos contestaran!",
+        "¡Si al menos nos escribieran un mensaje!",
+        "¡Si al menos pidieran perdón por la música!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi al menos\\b",
+          "flags": "iu",
+          "label": "use: ¡Si al menos...!"
+        }
+      ],
+      "focus": "g:wish-exclamatives",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: ¿Sabías que esto iba a pasar?",
+      "npcEn": "Vale: Did you know this was going to happen?",
+      "intent": "Insist that of course: you already told her (use: ¡Si ya te lo dije!).",
+      "accept": [
+        "¡Si ya te lo dije!",
+        "¡Pero si ya te lo dije, Vale!",
+        "¡Si te lo dije el lunes!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi (ya )?te lo dije\\b",
+          "flags": "iu",
+          "label": "use: ¡Si ya te lo dije!"
+        }
+      ],
+      "focus": "g:emphatic-structures",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Hernando quiere que escribas tú el chiste de mañana.",
+      "npcEn": "Vale: Hernando wants you to write tomorrow's joke.",
+      "intent": "Voice a regret: you wish you had never said yes (use: ¡Ojalá nunca...!).",
+      "accept": [
+        "¡Ojalá nunca le hubiera dicho que sí!",
+        "¡Ojalá nunca hubiera aceptado!",
+        "¡Ojalá no hubiera abierto la boca!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bojalá (nunca |no )?(le )?hubiera\\b",
+          "flags": "iu",
+          "label": "use: ¡Ojalá nunca hubiera...!"
+        }
+      ],
+      "focus": "g:wish-exclamatives",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Bueno, famoso. ¿Pan o buñuelo para celebrar?",
+      "npcEn": "Vale: Well, famous man. Bread or a fritter to celebrate?",
+      "intent": "Choose one and say you'll pay for the coffee.",
+      "accept": [
+        "Pan, y el café lo pago yo.",
+        "Buñuelo, por favor, y hoy invito yo.",
+        "Un pan, gracias. El café va por mi cuenta."
+      ],
+      "require": [],
+      "focus": "g:emphatic-structures",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:me-gusta",
+    "c:ojala",
+    "c:oye-mira",
+    "c:por-favor",
+    "c:tienes",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:imperfect-habitual",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:preterite-irregular-strong",
+    "g:si-hypothetical",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:wish-exclamatives",
+    "l:abrir",
+    "l:aceptar",
+    "l:boca",
+    "l:bueno",
+    "l:buñuelo",
+    "l:café",
+    "l:celebrar",
+    "l:celular",
+    "l:chiste",
+    "l:contestar",
+    "l:cuenta",
+    "l:decir",
+    "l:escribir",
+    "l:famoso",
+    "l:favor",
+    "l:foto",
+    "l:gustar",
+    "l:hotel",
+    "l:hoy",
+    "l:invitar",
+    "l:ir",
+    "l:lunes",
+    "l:mañana",
+    "l:mensaje",
+    "l:mirar",
+    "l:música",
+    "l:pagar",
+    "l:pan",
+    "l:pasar",
+    "l:pedir",
+    "l:perdón",
+    "l:pizarra",
+    "l:querer",
+    "l:quién",
+    "l:saber",
+    "l:tener",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:frequency-scale",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:ojala-hubiera",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pedir-disculpas-por",
+    "p:possessives-basic",
+    "p:saber-conocer",
+    "p:siento-llegar-tarde"
+  ]
+}

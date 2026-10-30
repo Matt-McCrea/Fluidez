@@ -1,0 +1,238 @@
+{
+  "id": "sc-u54-b",
+  "unit": "u54",
+  "title": "La pizarra de Hernando",
+  "spare": false,
+  "brief": "You're Tomás, in the café before opening. Don Hernando is much older than you, so use usted. He has started writing jokes on the chalkboard aimed at the hotel guests. React with surprise, tease him warmly and stand up for the jokes.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Buenos días, Tomás. Anoche escribí mi primer chiste, pero el viento dejó la pizarra hecha un desastre.",
+      "npcEn": "Hernando: Good morning, Tomás. Last night I wrote my first joke, but the wind left the chalkboard a total mess.",
+      "intent": "Agree that the chalkboard is a mess (use: hecha un desastre).",
+      "accept": [
+        "Sí, don Hernando, la pizarra está hecha un desastre.",
+        "Buenos días. Es verdad, quedó hecha un desastre.",
+        "Buenos días, don Hernando. Mire, la pizarra está hecha un desastre."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhech[oa] un desastre\\b",
+          "flags": "iu",
+          "label": "use: hecha un desastre"
+        }
+      ],
+      "focus": "p:estar-hecho-un-desastre",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: No importa. Mañana escribo otro y todos los huéspedes lo van a leer.",
+      "npcEn": "Hernando: Never mind. Tomorrow I'll write another and all the guests are going to read it.",
+      "intent": "Show disbelief: what do you mean all of them will read it? (use: ¿Cómo que...?).",
+      "accept": [
+        "¿Cómo que todos lo van a leer?",
+        "¿Cómo que todos, don Hernando? Si ni pasan por aquí.",
+        "¿Cómo que los huéspedes? Si no bajan del hotel."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "¿cómo que\\b",
+          "flags": "iu",
+          "label": "start with: ¿Cómo que...?"
+        }
+      ],
+      "focus": "p:como-que-echo",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Admita que escribir chistes tiene su gracia.",
+      "npcEn": "Hernando: Admit that writing jokes has its charm.",
+      "intent": "Agree: it has its own art (use: tiene su + noun).",
+      "accept": [
+        "Sí, don Hernando, escribir chistes tiene su ciencia.",
+        "El chiste tiene su gracia, pero los huéspedes no lo van a entender.",
+        "Tiene su gracia, sí, y tiene su truco también."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btiene su\\b",
+          "flags": "iu",
+          "label": "use: tiene su + noun"
+        }
+      ],
+      "focus": "p:tener-su-gracia",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Vale dice que mis chistes son pesados.",
+      "npcEn": "Hernando: Vale says my jokes are heavy-handed.",
+      "intent": "Tease him: you really do love to argue (use: ¡Mira que...!).",
+      "accept": [
+        "¡Mira que le gusta discutir, don Hernando!",
+        "¡Mira que es usted bromista!",
+        "¡Mira que le gusta llevar la contraria, don Hernando!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "^\\W*mira que\\b",
+          "flags": "iu",
+          "label": "start with: ¡Mira que...!"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "eres"
+          ],
+          "label": "use usted (es), not tú (eres)"
+        }
+      ],
+      "focus": "p:mira-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: ¿Y a usted le importa de verdad lo que piense el hotel?",
+      "npcEn": "Hernando: And do you really care what the hotel thinks?",
+      "intent": "Answer your own question with emphasis: do you care? Of course you care (use: ¿Que si...?).",
+      "accept": [
+        "¿Que si me importa? ¡Pues claro que me importa!",
+        "¿Que si me importa, don Hernando? ¡Me importa mucho!",
+        "Don Hernando, ¿que si me importa? ¡Claro que sí!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "¿que si\\b",
+          "flags": "iu",
+          "label": "use: ¿Que si...?"
+        }
+      ],
+      "focus": "g:emphatic-structures",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Hernando: Entonces mañana escribo otro. Venga temprano y le invito un tinto.",
+      "npcEn": "Hernando: Then tomorrow I'll write another. Come early and I'll treat you to a black coffee.",
+      "intent": "Thank him and say you'll be there early.",
+      "accept": [
+        "Gracias, don Hernando. Aquí estaré temprano.",
+        "Con gusto, don Hernando. Mañana vengo temprano.",
+        "Muchas gracias, el tinto lo tomo con mucho gusto."
+      ],
+      "require": [],
+      "focus": "g:emphatic-structures",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hola-buenos-dias",
+    "c:me-importa-un-comino",
+    "c:mucho-gusto",
+    "c:oye-mira",
+    "c:pues",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-free-relatives",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:admitir",
+    "l:anoche",
+    "l:aquí",
+    "l:bajar",
+    "l:bromisto",
+    "l:bueno",
+    "l:chiste",
+    "l:ciencia",
+    "l:claro",
+    "l:contrario",
+    "l:cómo",
+    "l:decir",
+    "l:dejar",
+    "l:desastre",
+    "l:discutir",
+    "l:día",
+    "l:entender",
+    "l:escribir",
+    "l:estar",
+    "l:gracia",
+    "l:gustar",
+    "l:gusto",
+    "l:hacer",
+    "l:hotel",
+    "l:huésped",
+    "l:importar",
+    "l:invitar",
+    "l:ir",
+    "l:leer",
+    "l:llevar",
+    "l:mañana",
+    "l:mirar",
+    "l:pasar",
+    "l:pensar",
+    "l:pesado",
+    "l:pizarra",
+    "l:quedar",
+    "l:ser",
+    "l:temprano",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:truco",
+    "l:venir",
+    "l:verdad",
+    "l:viento",
+    "p:aqui-ahi-alla",
+    "p:como-que-echo",
+    "p:don-dona-nombre",
+    "p:encontrar-participle",
+    "p:estar-hecho-un-desastre",
+    "p:mira-que",
+    "p:negar-confesar",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:possessives-basic",
+    "p:pues-claro-que",
+    "p:quantifiers-basic",
+    "p:quedar-participio",
+    "p:reporting-verbs-stance",
+    "p:senor-don-article",
+    "p:tener-su-gracia"
+  ]
+}

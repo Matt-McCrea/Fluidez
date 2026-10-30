@@ -1,0 +1,213 @@
+{
+  "id": "sc-u54-c",
+  "unit": "u54",
+  "title": "Una entrevista sin filtro",
+  "spare": true,
+  "brief": "You're yourself, being interviewed by Mariana, a journalist and friend, so use tú. The chalkboard jokes have gone round the city, and she wants a quote. Play down your part, understate the hotel's reaction, and finish with a sharp line.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Tomás, la gente dice que las bromas de la pizarra son tuyas. ¿Es verdad?",
+      "npcEn": "Mariana: Tomás, people say the chalkboard jokes are yours. Is that true?",
+      "intent": "Say that technically they're Hernando's (use: técnicamente).",
+      "accept": [
+        "Técnicamente no, son de Hernando. Yo solo las copio.",
+        "Técnicamente son de don Hernando; yo solo las escribo.",
+        "No, técnicamente son de Hernando. Yo solo lo ayudo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btécnicamente\\b",
+          "flags": "iu",
+          "label": "use: técnicamente"
+        }
+      ],
+      "focus": "p:personalmente-tecnicamente",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: ¿Y cómo reaccionó el hotel?",
+      "npcEn": "Mariana: And how did the hotel react?",
+      "intent": "Understate it: say they weren't exactly happy (use a negative).",
+      "accept": [
+        "No estaban precisamente felices.",
+        "Digamos que no les hizo mucha gracia.",
+        "No lo tomaron muy bien, la verdad."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "understate with a negative: no..."
+        }
+      ],
+      "focus": "g:hedging-distance",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: Dicen que el gerente llamó a la alcaldía.",
+      "npcEn": "Mariana: They say the manager called city hall.",
+      "intent": "Say that personally you couldn't care less (use: personalmente and importar un comino).",
+      "accept": [
+        "Personalmente, me importa un comino.",
+        "A mí personalmente me importa un pito.",
+        "Me importa un comino, personalmente."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpersonalmente\\b",
+          "flags": "iu",
+          "label": "use: personalmente"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bimporta un (comino|pepino|pito)\\b",
+          "flags": "iu",
+          "label": "use: me importa un comino"
+        }
+      ],
+      "focus": "p:importar-un-comino",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: Última pregunta: ¿qué mensaje le mandas al hotel?",
+      "npcEn": "Mariana: Last question: what message do you send the hotel?",
+      "intent": "Send an ironic message of thanks (use: ¡Qué detalle...! or Gracias por...).",
+      "accept": [
+        "¡Qué detalle ponernos música gratis hasta las tres!",
+        "Gracias por la música, así nadie se durmió en el café.",
+        "Gracias por la vista, ahora todos nos saludan desde arriba."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bqué detalle\\b|\\bgracias por\\b",
+          "flags": "iu",
+          "label": "use: ¡Qué detalle...! or Gracias por..."
+        }
+      ],
+      "focus": "p:ironic-praise",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Perfecto, eso sale mañana. ¿Te invito un tinto?",
+      "npcEn": "Mariana: Perfect, that comes out tomorrow. Shall I treat you to a black coffee?",
+      "intent": "Accept, and ask her to quote Hernando, not you.",
+      "accept": [
+        "Acepto, pero cita a Hernando, no a mí.",
+        "Sí, gracias. Y por favor, cita a Hernando.",
+        "Con mucho gusto, Mariana. Pon a Hernando primero, no a mí."
+      ],
+      "require": [],
+      "focus": "g:hedging-distance",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:con-mucho-gusto",
+    "c:gracias-de-nada",
+    "c:la-verdad",
+    "c:me-importa-un-comino",
+    "c:mucho-gusto",
+    "c:por-favor",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:commands-tu",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "l:aceptar",
+    "l:ahora",
+    "l:alcaldía",
+    "l:arriba",
+    "l:ayudar",
+    "l:bien",
+    "l:broma",
+    "l:café",
+    "l:citar",
+    "l:comino",
+    "l:copiar",
+    "l:cómo",
+    "l:decir",
+    "l:detalle",
+    "l:dormirse",
+    "l:escribir",
+    "l:estar",
+    "l:favor",
+    "l:feliz",
+    "l:gente",
+    "l:gerente",
+    "l:gracia",
+    "l:gratis",
+    "l:gusto",
+    "l:hacer",
+    "l:hotel",
+    "l:importar",
+    "l:invitar",
+    "l:llamar",
+    "l:mandar",
+    "l:mañana",
+    "l:mensaje",
+    "l:música",
+    "l:perfecto",
+    "l:personalmente",
+    "l:pito",
+    "l:pizarra",
+    "l:poner",
+    "l:precisamente",
+    "l:pregunta",
+    "l:qué",
+    "l:reaccionar",
+    "l:salir",
+    "l:saludar",
+    "l:ser",
+    "l:tinto",
+    "l:tomar",
+    "l:técnicamente",
+    "l:verdad",
+    "l:vista",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:focus-adverbs",
+    "p:gracias-por",
+    "p:importar-un-comino",
+    "p:ironic-praise",
+    "p:la-gente-singular",
+    "p:me-contaron-que",
+    "p:me-te-nos-objects",
+    "p:personal-a",
+    "p:personalmente-tecnicamente",
+    "p:precisamente-concretamente",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:time-sequence-basic"
+  ]
+}
