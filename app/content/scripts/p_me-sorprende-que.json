@@ -1,0 +1,178 @@
+{
+  "node": "p:me-sorprende-que",
+  "hook": {
+    "line": "Don Hernando has opened the café door every morning for twenty years, so the day he doesn't show up, you say so. Being surprised is how you react to what people do or don't do.",
+    "es": "Me extraña que Hernando no venga hoy.",
+    "en": "It seems odd to me that Hernando isn't coming today."
+  },
+  "examples": [
+    {
+      "es": "Me sorprende que no sepas nada.",
+      "en": "I'm surprised you don't know anything."
+    },
+    {
+      "es": "Me sorprende su actitud.",
+      "en": "His attitude surprises me."
+    },
+    {
+      "es": "Es raro que llueva en enero.",
+      "en": "It's odd for it to rain in January."
+    },
+    {
+      "es": "Me extraña que Hernando no venga hoy.",
+      "en": "It seems odd to me that Hernando isn't coming today."
+    },
+    {
+      "es": "Me sorprende que Vale no esté aquí.",
+      "en": "I'm surprised Vale isn't here."
+    },
+    {
+      "es": "No me sorprende que Tomás tenga miedo.",
+      "en": "It doesn't surprise me that Tomás is afraid."
+    }
+  ],
+  "rule": "To react with surprise, the feeling goes first and the thing that surprised you follows.\n\n*Me sorprende su actitud.* After a noun, it works like *gustar*: *me*, *te*, *le* plus *sorprende*.\n\n*Me sorprende que Vale no esté aquí.* After a whole sentence, add *que* and the subjunctive (*sepas*, *esté*, *venga*), as you do after other feelings.\n\n*Me extraña que* and *es raro que* do the same job.\n\nA trap: *me extraña* here means it strikes me as odd. Missing someone is *extraño a…*, where you do the missing.",
+  "smallPrint": "Teachers call these verbs of emotion and valuation. They take the subjunctive when the surprising thing has a different subject.",
+  "readAndPick": [
+    {
+      "es": "Me sorprende que no sepas nada.",
+      "options": [
+        "I'm surprised you don't know anything.",
+        "I'm surprised he doesn't know anything."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me extraña que Hernando no venga hoy.",
+      "options": [
+        "I miss Hernando, who isn't coming today.",
+        "It seems odd to me that Hernando isn't coming today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me sorprende su actitud.",
+      "options": [
+        "I'm surprised by my attitude.",
+        "His attitude surprises me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es raro que llueva en enero.",
+      "options": [
+        "It's odd for it to rain in January.",
+        "It rains a lot in January."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No me sorprende que Tomás tenga miedo.",
+      "options": [
+        "It surprises me that Tomás is afraid.",
+        "It doesn't surprise me that Tomás is afraid."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me extraña que digas eso.",
+      "options": [
+        "I miss you saying that.",
+        "It seems odd to me that you say that."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me sorprende que Vale no esté aquí.",
+      "options": [
+        "I'm surprised Vale isn't here.",
+        "I'm surprised Vale wasn't here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les sorprende que Tomás hable español.",
+      "options": [
+        "We're surprised that Tomás speaks Spanish.",
+        "They're surprised that Tomás speaks Spanish."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos extraña que Vale no llame.",
+      "options": [
+        "It seems odd to us that Vale doesn't call.",
+        "Vale misses us and doesn't call."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Me sorprende que Vale no ___ aquí.* (*esté* or *está*) I'm surprised Vale isn't here.",
+      "answer": "Me sorprende que Vale no esté aquí.",
+      "accept": [],
+      "why": "After a feeling about someone else's action, use the subjunctive *esté*."
+    },
+    {
+      "prompt": "Say to a friend: I'm surprised you don't know anything.",
+      "answer": "Me sorprende que no sepas nada.",
+      "accept": [],
+      "why": "*Sepas* is the subjunctive for *tú*."
+    },
+    {
+      "prompt": "Say: His attitude surprises me.",
+      "answer": "Me sorprende su actitud.",
+      "accept": [
+        "Su actitud me sorprende."
+      ],
+      "why": "Before a noun it works like *gustar*, with no *que*."
+    },
+    {
+      "prompt": "Say: It's odd for it to rain in January.",
+      "answer": "Es raro que llueva en enero.",
+      "accept": [
+        "Es extraño que llueva en enero."
+      ],
+      "why": "*Es raro que* is followed by the subjunctive *llueva*."
+    },
+    {
+      "prompt": "Say: It seems odd to me that Hernando isn't coming today.",
+      "answer": "Me extraña que Hernando no venga hoy.",
+      "accept": [],
+      "why": "*Me extraña que* plus the subjunctive *venga*."
+    },
+    {
+      "prompt": "Make it negative: *Me sorprende que Tomás tenga miedo.*",
+      "answer": "No me sorprende que Tomás tenga miedo.",
+      "accept": [],
+      "why": "*No* goes before *me*."
+    },
+    {
+      "prompt": "Say it with *es raro que*: *Me extraña que Simón no cante.*",
+      "answer": "Es raro que Simón no cante.",
+      "accept": [
+        "Es extraño que Simón no cante."
+      ],
+      "why": "Same idea, new opener, and *cante* stays in the subjunctive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me extraña que no llamas.",
+      "right": "Me extraña que no llames.",
+      "why": "After a feeling about someone's action, the verb goes into the subjunctive."
+    },
+    {
+      "wrong": "Extraño que Vale no llame.",
+      "right": "Me extraña que Vale no llame.",
+      "why": "Almost. Without *me*, *extraño* means *I miss*; the surprised meaning needs *me extraña*."
+    },
+    {
+      "wrong": "Yo sorprendo su actitud.",
+      "right": "Me sorprende su actitud.",
+      "why": "The attitude does the surprising, and you are the one surprised, so *me sorprende*."
+    }
+  ],
+  "personal": "Say what surprises you about your own city or neighborhood: *Me sorprende que…* or *Es raro que…*"
+}

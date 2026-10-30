@@ -1,0 +1,170 @@
+{
+  "node": "p:extranar",
+  "hook": {
+    "line": "Tomás has been in Bogotá for weeks, and some nights what he misses is not a person but a Saturday in Toronto. Missing someone or something is the first thing that goes into a letter home.",
+    "es": "Extraño a mis amigos de Toronto.",
+    "en": "I miss my friends in Toronto."
+  },
+  "examples": [
+    {
+      "es": "Extraño a mi familia.",
+      "en": "I miss my family."
+    },
+    {
+      "es": "Extraño la comida de mi mamá.",
+      "en": "I miss my mom's cooking."
+    },
+    {
+      "es": "Te extraño mucho.",
+      "en": "I miss you a lot."
+    },
+    {
+      "es": "Tomás extraña a su abuela.",
+      "en": "Tomás misses his grandmother."
+    },
+    {
+      "es": "No extraño el frío.",
+      "en": "I don't miss the cold."
+    },
+    {
+      "es": "Mis amigos me extrañan.",
+      "en": "My friends miss me."
+    }
+  ],
+  "rule": "*Extrañar* means to miss. The person doing the missing is the subject, and what they miss comes straight after, with nothing like English *for* or *about* in between.\n\n*Extraño la comida de mi mamá.* I miss my mom's cooking.\n*Extraño vivir allá.* I miss living there.\n\nFor a person, add the little *a*: *Extraño a mi abuela.*\n\nTo say who misses whom, put *me*, *te* or *lo* in front: *Te extraño* (I miss you), *Me extrañan* (they miss me). Spanish from Spain also says *echar de menos*; in Latin America *extrañar* is the everyday word.",
+  "smallPrint": "The little *a* before a person who receives the action is called the personal *a*. You met it with *ver* and *conocer*.",
+  "readAndPick": [
+    {
+      "es": "Te extraño mucho.",
+      "options": [
+        "I miss you a lot.",
+        "You miss me a lot."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me extrañas.",
+      "options": [
+        "I miss you.",
+        "You miss me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Extraño a mi abuela.",
+      "options": [
+        "My grandmother misses me.",
+        "I miss my grandmother."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mis amigos me extrañan.",
+      "options": [
+        "I miss my friends.",
+        "My friends miss me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Extrañamos a Rosa.",
+      "options": [
+        "We miss Rosa.",
+        "Rosa misses us.",
+        "I miss Rosa."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás extraña a su abuela.",
+      "options": [
+        "I miss Tomás's grandmother.",
+        "Tomás misses his grandmother.",
+        "Tomás's grandmother misses him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Extraño vivir en Toronto.",
+      "options": [
+        "I miss Toronto.",
+        "I miss living in Toronto."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No extraño el frío.",
+      "options": [
+        "I miss the cold.",
+        "I don't miss the cold."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ a mi abuela.* (*Extraño* or *Extrañas*) I miss my grandmother.",
+      "answer": "Extraño a mi abuela.",
+      "accept": [],
+      "why": "You are the one missing her, so the verb ends in *-o*."
+    },
+    {
+      "prompt": "Say to a friend: I miss you a lot.",
+      "answer": "Te extraño mucho.",
+      "accept": [
+        "Te extraño un montón."
+      ],
+      "why": "*Te* is the person you miss."
+    },
+    {
+      "prompt": "Say: I miss my mom's cooking.",
+      "answer": "Extraño la comida de mi mamá.",
+      "accept": [],
+      "why": "Food is a thing, so there is no little *a*."
+    },
+    {
+      "prompt": "Say: Tomás misses his grandmother.",
+      "answer": "Tomás extraña a su abuela.",
+      "accept": [],
+      "why": "A person being missed gets the little *a*, and *Tomás* takes the *-a* ending."
+    },
+    {
+      "prompt": "Say: My friends miss me.",
+      "answer": "Mis amigos me extrañan.",
+      "accept": [
+        "Me extrañan mis amigos."
+      ],
+      "why": "*Me* is the person missed, and the verb agrees with *mis amigos*."
+    },
+    {
+      "prompt": "Make it negative: *Extraño el frío.*",
+      "answer": "No extraño el frío.",
+      "accept": [],
+      "why": "*No* goes right before the verb."
+    },
+    {
+      "prompt": "Say it about *we*: *Extraño a Rosa.* We miss Rosa.",
+      "answer": "Extrañamos a Rosa.",
+      "accept": [],
+      "why": "*We* takes *-amos*, and the *a* before Rosa stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Extraño mi abuela.",
+      "right": "Extraño a mi abuela.",
+      "why": "A person who is missed needs the little *a*."
+    },
+    {
+      "wrong": "Me extrañas mucho.",
+      "right": "Te extraño mucho.",
+      "why": "Almost. The pronoun is the person being missed, so to say *I miss you* you need *te extraño*."
+    },
+    {
+      "wrong": "Extraño a la comida de mi mamá.",
+      "right": "Extraño la comida de mi mamá.",
+      "why": "The little *a* is only for people, not for food or places."
+    }
+  ],
+  "personal": "Write two true lines: someone you miss (*Extraño a…*) and something you miss from a place you have lived (*Extraño…*)."
+}

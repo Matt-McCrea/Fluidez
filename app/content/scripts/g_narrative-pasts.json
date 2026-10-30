@@ -1,0 +1,185 @@
+{
+  "node": "g:narrative-pasts",
+  "hook": {
+    "line": "Telling a story is a juggling act: what happened, what the scene looked like, and what had already happened before. Don Hernando always does it in that order.",
+    "es": "Era domingo. Tomás abrió la caja que había encontrado y vio una carta.",
+    "en": "It was Sunday. Tomás opened the box he had found and saw a letter."
+  },
+  "examples": [
+    {
+      "es": "Era domingo y llovía.",
+      "en": "It was Sunday and it was raining."
+    },
+    {
+      "es": "Tomás abrió la caja que había encontrado y vio una carta.",
+      "en": "Tomás opened the box he had found and saw a letter."
+    },
+    {
+      "es": "Hacía frío y llovía cuando salimos del café.",
+      "en": "It was cold and raining when we left the café."
+    },
+    {
+      "es": "Cuando llegué, Vale ya había salido.",
+      "en": "When I arrived, Vale had already left."
+    },
+    {
+      "es": "Tomás estaba leyendo cuando sonó el celular.",
+      "en": "Tomás was reading when the cell phone rang."
+    },
+    {
+      "es": "Entró Hernando, se sentó y pidió un tinto.",
+      "en": "Hernando came in, sat down and ordered a black coffee."
+    }
+  ],
+  "rule": "A story uses three pasts, each with a job.\n\nThe simple past (*abrió*, *vio*, *entró*) is the events, one after another. The story moves.\n\nThe imperfect (*era*, *llovía*, *hacía frío*, *estaba leyendo*) is the background: time, weather, what was going on. The story waits.\n\n*Había* plus the *-ado* or *-ido* form (*había encontrado*, *había salido*) steps back to something that happened before the story's own starting point.\n\nWhen an event breaks into the background, it gets the simple past: *Estaba leyendo cuando sonó el celular.*\n\nFor each verb, ask: is it moving the story, painting the scene, or stepping back?",
+  "smallPrint": "Teachers call the events the foreground and the scene the background. The three tenses are the preterite, the imperfect and the pluperfect.",
+  "readAndPick": [
+    {
+      "es": "Tomás estaba leyendo cuando sonó el celular.",
+      "options": [
+        "Tomás was reading when the cell phone rang.",
+        "Tomás read the letter when the cell phone rang.",
+        "Tomás had read when the cell phone rang."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuando llegué, Vale ya había salido.",
+      "options": [
+        "When I arrived, Vale left.",
+        "When I arrived, Vale was leaving.",
+        "When I arrived, Vale had already left."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Era domingo y llovía.",
+      "options": [
+        "It was Sunday and it was raining.",
+        "It became Sunday and it started raining."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Entró Hernando, se sentó y pidió un tinto.",
+      "options": [
+        "Hernando used to sit down and order a black coffee.",
+        "Hernando came in, sat down and ordered a black coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Rosa había escrito la carta años antes.",
+      "options": [
+        "Rosa wrote the letter years earlier.",
+        "Rosa was writing the letter years earlier.",
+        "Rosa had written the letter years earlier."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mientras Tomás leía, Simón cantaba.",
+      "options": [
+        "While Tomás was reading, Simón was singing.",
+        "Tomás read, then Simón sang."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuando abrí la caja, vi las cartas.",
+      "options": [
+        "When I opened the box, I saw the letters.",
+        "When I was opening the box, I had seen the letters."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás nunca había visto esa foto.",
+      "options": [
+        "Tomás never saw that photo.",
+        "Tomás had never seen that photo."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Joaquín ya se había ido cuando Rosa llegó.",
+      "options": [
+        "Joaquín left when Rosa arrived.",
+        "Joaquín was leaving when Rosa arrived.",
+        "Joaquín had already left when Rosa arrived."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Cuando llegué, Vale ya ___.* (*salió* or *había salido*) When I arrived, Vale had already left.",
+      "answer": "Cuando llegué, Vale ya había salido.",
+      "accept": [],
+      "why": "He left before you arrived, so step back with *había*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Tomás ___ leyendo cuando sonó el celular.* (*estaba* or *estuvo*) Tomás was reading when the cell phone rang.",
+      "answer": "Tomás estaba leyendo cuando sonó el celular.",
+      "accept": [],
+      "why": "Reading is the background, so it takes the imperfect."
+    },
+    {
+      "prompt": "Say: It was Sunday and it was raining.",
+      "answer": "Era domingo y llovía.",
+      "accept": [],
+      "why": "Day and weather set the scene, so both are in the imperfect."
+    },
+    {
+      "prompt": "Say: Hernando came in, sat down and ordered a black coffee.",
+      "answer": "Entró Hernando, se sentó y pidió un tinto.",
+      "accept": [
+        "Hernando entró, se sentó y pidió un tinto."
+      ],
+      "why": "Three events in a row are all in the simple past."
+    },
+    {
+      "prompt": "Say: Tomás had never seen that photo.",
+      "answer": "Tomás nunca había visto esa foto.",
+      "accept": [],
+      "why": "Before the story's starting point, so *había* plus *visto*."
+    },
+    {
+      "prompt": "Say: It was cold and raining when we left the café.",
+      "answer": "Hacía frío y llovía cuando salimos del café.",
+      "accept": [],
+      "why": "The weather is the background; leaving is the event."
+    },
+    {
+      "prompt": "Say: Joaquín had already left when Rosa arrived.",
+      "answer": "Joaquín ya se había ido cuando Rosa llegó.",
+      "accept": [
+        "Cuando Rosa llegó, Joaquín ya se había ido."
+      ],
+      "why": "Leaving came first, so *se había ido*; arriving is the event."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Era domingo y llovió.",
+      "right": "Era domingo y llovía.",
+      "why": "Almost. Weather that sets the scene is background, so it takes the imperfect."
+    },
+    {
+      "wrong": "Cuando llegué, Vale ya salió.",
+      "right": "Cuando llegué, Vale ya había salido.",
+      "why": "When one thing happened before the other, step back with *había*."
+    },
+    {
+      "wrong": "Estuve leyendo cuando sonó el celular.",
+      "right": "Estaba leyendo cuando sonó el celular.",
+      "why": "The action that gets interrupted is background, so use the imperfect."
+    },
+    {
+      "wrong": "Tomás abrió la caja que encontró y vio una carta.",
+      "right": "Tomás abrió la caja que había encontrado y vio una carta.",
+      "why": "He found the box before he opened it, so the earlier event takes *había*."
+    }
+  ],
+  "personal": "Tell a short story from last weekend in three sentences: one that sets the scene (*Era…* or *Hacía…*), one event, and one thing that had already happened (*Ya había…*)."
+}

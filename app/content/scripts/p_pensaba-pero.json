@@ -1,0 +1,170 @@
+{
+  "node": "p:pensaba-pero",
+  "hook": {
+    "line": "Everyone has an excuse ready: the call you meant to make, the weekend plan that got rained out. Spanish packs the whole excuse into one verb for the plan and one for what got in the way.",
+    "es": "Iba a llamarte, pero no tuve tiempo.",
+    "en": "I was going to call you, but I didn't have time."
+  },
+  "examples": [
+    {
+      "es": "Pensaba quedarme en casa, pero me llamó Vale y salimos.",
+      "en": "I was planning to stay at home, but Vale called me and we went out."
+    },
+    {
+      "es": "Iba a llamarte, pero no tuve tiempo.",
+      "en": "I was going to call you, but I didn't have time."
+    },
+    {
+      "es": "Íbamos a ir a la playa, pero llovió todo el fin de semana.",
+      "en": "We were going to go to the beach, but it rained all weekend."
+    },
+    {
+      "es": "Iba a abrir el café, pero no encontré las llaves.",
+      "en": "I was going to open the café, but I couldn't find the keys."
+    },
+    {
+      "es": "Pensábamos viajar a Cartagena, pero no tuvimos plata.",
+      "en": "We were planning to travel to Cartagena, but we didn't have money."
+    },
+    {
+      "es": "Vale pensaba hacer pan, pero se fue la luz.",
+      "en": "Vale was planning to make bread, but the power went out."
+    }
+  ],
+  "rule": "To say what you meant to do and didn't, use two verbs.\n\nFirst, the plan: *pensaba* or *iba a*, in the imperfect, plus a plain verb. Then *pero*, and what actually happened in the simple past.\n\n*Pensaba quedarme, pero salí.*\n*Iba a llamarte, pero no tuve tiempo.*\n\nThe imperfect leaves the plan hanging, never finished. The simple past is the event that took over. Keep both in the past: *voy a llamarte* would be a plan for now.\n\nIt is also the polite way to excuse yourself.",
+  "smallPrint": "Teachers call this the imperfect of intention, a plan that was interrupted before it was carried out.",
+  "readAndPick": [
+    {
+      "es": "Iba a llamarte, pero no tuve tiempo.",
+      "options": [
+        "I called you, but I didn't have time.",
+        "I'm going to call you, but I don't have time.",
+        "I was going to call you, but I didn't have time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Pensaba quedarme en casa.",
+      "options": [
+        "I was planning to stay at home.",
+        "I stayed at home."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Íbamos a ir a la playa, pero llovió todo el fin de semana.",
+      "options": [
+        "We went to the beach, but it rained all weekend.",
+        "We were going to go to the beach, but it rained all weekend."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Iba a abrir el café, pero no encontré las llaves.",
+      "options": [
+        "I opened the café with the keys.",
+        "I was going to open the café, but I couldn't find the keys."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pensábamos viajar a Cartagena, pero no tuvimos plata.",
+      "options": [
+        "We were planning to travel to Cartagena, but we didn't have money.",
+        "I was planning to travel to Cartagena, but I didn't have money.",
+        "We traveled to Cartagena without money."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale pensaba hacer pan, pero se fue la luz.",
+      "options": [
+        "Vale made bread when the power went out.",
+        "Vale was planning to make bread, but the power went out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Iba a llegar temprano, pero había mucho tráfico.",
+      "options": [
+        "I arrived early, but there was a lot of traffic.",
+        "I was going to arrive early, but there was a lot of traffic."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás iba a leer la carta, pero sonó el celular.",
+      "options": [
+        "Tomás was going to read the letter, but the cell phone rang.",
+        "Tomás read the letter when the cell phone rang."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ llamarte, pero no tuve tiempo.* (*Iba a* or *Voy a*) I was going to call you, but I didn't have time.",
+      "answer": "Iba a llamarte, pero no tuve tiempo.",
+      "accept": [],
+      "why": "The plan is in the past, so *iba a*."
+    },
+    {
+      "prompt": "Say: I was planning to stay at home, but Vale called me and we went out.",
+      "answer": "Pensaba quedarme en casa, pero me llamó Vale y salimos.",
+      "accept": [
+        "Pensaba quedarme en casa, pero Vale me llamó y salimos."
+      ],
+      "why": "*Pensaba* for the plan, simple past for what happened."
+    },
+    {
+      "prompt": "Say: We were going to go to the beach, but it rained all weekend.",
+      "answer": "Íbamos a ir a la playa, pero llovió todo el fin de semana.",
+      "accept": [],
+      "why": "*Íbamos a* is the *we* form of *iba a*."
+    },
+    {
+      "prompt": "Say: I was going to open the café, but I couldn't find the keys.",
+      "answer": "Iba a abrir el café, pero no encontré las llaves.",
+      "accept": [],
+      "why": "The plan is *iba a*; not finding the keys is the event."
+    },
+    {
+      "prompt": "Say: Vale was planning to make bread, but the power went out.",
+      "answer": "Vale pensaba hacer pan, pero se fue la luz.",
+      "accept": [],
+      "why": "*Pensaba* for the plan, *se fue la luz* for what interrupted it."
+    },
+    {
+      "prompt": "Say: I was going to call my mom, but I fell asleep.",
+      "answer": "Pensaba llamar a mi mamá, pero me dormí.",
+      "accept": [
+        "Iba a llamar a mi mamá, pero me dormí."
+      ],
+      "why": "Plan in the imperfect, then the simple past for what happened."
+    },
+    {
+      "prompt": "Make it about *we*: *Pensaba viajar a Cartagena, pero no tuve plata.*",
+      "answer": "Pensábamos viajar a Cartagena, pero no tuvimos plata.",
+      "accept": [],
+      "why": "Both verbs change to *we*: *pensábamos* and *tuvimos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Pensé quedarme en casa, pero salí.",
+      "right": "Pensaba quedarme en casa, pero salí.",
+      "why": "Almost. The simple past sounds like a decision you made and carried out; a plan that stayed unfinished uses the imperfect."
+    },
+    {
+      "wrong": "Voy a llamarte, pero no tuve tiempo.",
+      "right": "Iba a llamarte, pero no tuve tiempo.",
+      "why": "The plan happened in the past too, so *ir* goes in the imperfect."
+    },
+    {
+      "wrong": "Iba llamarte, pero no tuve tiempo.",
+      "right": "Iba a llamarte, pero no tuve tiempo.",
+      "why": "*Ir* needs its *a* before the next verb."
+    }
+  ],
+  "personal": "Think of something you were going to do this week and didn't. Write it with *Iba a…* or *Pensaba…*, then *pero* and what happened."
+}

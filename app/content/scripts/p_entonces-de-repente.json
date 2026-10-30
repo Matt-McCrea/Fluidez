@@ -1,0 +1,180 @@
+{
+  "node": "p:entonces-de-repente",
+  "hook": {
+    "line": "Every good story has a moment when the plan goes sideways. Spanish keeps one set of words for the next step and another for the surprise, and Don Hernando uses both in every story he tells.",
+    "es": "De repente se fue la luz.",
+    "en": "Suddenly the power went out."
+  },
+  "examples": [
+    {
+      "es": "Entonces vimos humo.",
+      "en": "Then we saw smoke."
+    },
+    {
+      "es": "De repente se fue la luz.",
+      "en": "Suddenly the power went out."
+    },
+    {
+      "es": "Luego fuimos a comer.",
+      "en": "Then we went to eat."
+    },
+    {
+      "es": "De pronto empezó a llover.",
+      "en": "Suddenly it started to rain."
+    },
+    {
+      "es": "Entonces llamé a Vale.",
+      "en": "Then I called Vale."
+    },
+    {
+      "es": "De repente entró Hernando.",
+      "en": "Suddenly Hernando came in."
+    }
+  ],
+  "rule": "English has one *then*. Spanish splits the story into two kinds of next thing.\n\n*Entonces* and *luego* move the story to the next step, as expected: *Luego fuimos a comer.*\n\n*De repente* and *de pronto* break it with something nobody saw coming: *De repente se fue la luz.*\n\nPut them first in the sentence, like English *suddenly*, and follow them with the simple past: *vimos*, *llamé*, *entró*. *Se fue la luz* is how Latin Americans say the power went out.",
+  "smallPrint": "Teachers call these narrative connectors. The first pair marks sequence, the second marks a sudden event.",
+  "readAndPick": [
+    {
+      "es": "De repente entró Hernando.",
+      "options": [
+        "Next, Hernando came in.",
+        "Out of nowhere, Hernando came in."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Luego fuimos a comer.",
+      "options": [
+        "Next we went to eat.",
+        "Suddenly we went to eat."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "De pronto empezó a llover.",
+      "options": [
+        "Suddenly it started to rain.",
+        "Next, it started to rain."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Entonces llamé a Vale.",
+      "options": [
+        "Out of the blue, I called Vale.",
+        "Then I called Vale."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "De repente se fue la luz.",
+      "options": [
+        "Next, the power went out.",
+        "Suddenly the power went out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Entonces vimos humo.",
+      "options": [
+        "Then we saw smoke.",
+        "Suddenly we saw smoke."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Después comimos.",
+      "options": [
+        "Suddenly we ate.",
+        "Afterwards we ate."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "De repente alguien llamó a la puerta.",
+      "options": [
+        "Suddenly someone knocked on the door.",
+        "Then someone knocked on the door."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ llamé a Vale.* (*Entonces* or *De repente*) Then I called Vale, as the next step.",
+      "answer": "Entonces llamé a Vale.",
+      "accept": [
+        "Luego llamé a Vale."
+      ],
+      "why": "A planned next step is *entonces* or *luego*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ se fue la luz.* (*Luego* or *De repente*) Suddenly the power went out.",
+      "answer": "De repente se fue la luz.",
+      "accept": [
+        "De pronto se fue la luz."
+      ],
+      "why": "Something unexpected needs *de repente* or *de pronto*."
+    },
+    {
+      "prompt": "Say: Then we went to eat. (the next step)",
+      "answer": "Luego fuimos a comer.",
+      "accept": [
+        "Entonces fuimos a comer."
+      ],
+      "why": "Next step, so *luego* or *entonces*."
+    },
+    {
+      "prompt": "Say: Suddenly Hernando came in.",
+      "answer": "De repente entró Hernando.",
+      "accept": [
+        "De pronto entró Hernando.",
+        "De repente Hernando entró.",
+        "De pronto Hernando entró."
+      ],
+      "why": "An unexpected arrival gets *de repente*, then the simple past."
+    },
+    {
+      "prompt": "Say: Suddenly the cell phone rang.",
+      "answer": "De repente sonó el celular.",
+      "accept": [
+        "De pronto sonó el celular."
+      ],
+      "why": "A sudden sound is a surprise, so *de repente*."
+    },
+    {
+      "prompt": "Turn the next step into a surprise: *Entonces llegó Mariana.*",
+      "answer": "De repente llegó Mariana.",
+      "accept": [
+        "De pronto llegó Mariana."
+      ],
+      "why": "Swap *entonces* for *de repente* when nobody expected her."
+    },
+    {
+      "prompt": "Turn the surprise into the next step: *De repente entró Hernando.*",
+      "answer": "Luego entró Hernando.",
+      "accept": [
+        "Entonces entró Hernando."
+      ],
+      "why": "If it is just the next thing in the plan, use *luego* or *entonces*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Entonces se fue la luz, sin avisar.",
+      "right": "De repente se fue la luz.",
+      "why": "Almost. *Entonces* is only the next step; for something unexpected Spanish uses *de repente*."
+    },
+    {
+      "wrong": "De repente fuimos a comer.",
+      "right": "Luego fuimos a comer.",
+      "why": "Going to eat was the plan, not a surprise, so use *luego*."
+    },
+    {
+      "wrong": "Entonces vemos humo.",
+      "right": "Entonces vimos humo.",
+      "why": "The events of a story use the simple past, not the present."
+    }
+  ],
+  "personal": "Write two lines about something that happened to you this week: one step with *luego* or *entonces*, and one surprise with *de repente*."
+}

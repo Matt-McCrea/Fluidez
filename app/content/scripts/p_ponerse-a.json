@@ -1,0 +1,168 @@
+{
+  "node": "p:ponerse-a",
+  "hook": {
+    "line": "In a story, things don't just start: a child bursts into tears, the rain hammers down, someone grabs a book and gets going. Spanish has a verb for that kind of start.",
+    "es": "Simón se puso a cantar.",
+    "en": "Simón started singing."
+  },
+  "examples": [
+    {
+      "es": "De repente se puso a llover.",
+      "en": "Suddenly it started raining."
+    },
+    {
+      "es": "El niño se puso a llorar sin motivo.",
+      "en": "The child started crying for no reason."
+    },
+    {
+      "es": "Me puse a estudiar a las ocho.",
+      "en": "I started studying at eight."
+    },
+    {
+      "es": "Simón se puso a cantar.",
+      "en": "Simón started singing."
+    },
+    {
+      "es": "Tomás se puso a leer las cartas.",
+      "en": "Tomás got down to reading the letters."
+    },
+    {
+      "es": "Nos pusimos a hablar de Rosa.",
+      "en": "We got talking about Rosa."
+    }
+  ],
+  "rule": "*Ponerse a* plus a plain verb means to start doing something, with a push. It kicks in out of nowhere, or you sit down and get to it.\n\n*Se puso a llover.* It started raining.\n*Me puse a estudiar.* I got down to studying.\n\n*Ponerse* changes with the person (*me puse*, *se puso*, *nos pusimos*), and the second verb stays plain. Don't drop the *a*.\n\n*Empezar a* is the neutral version; *ponerse a* is more vivid. Compare *ponerse* plus an adjective: *se puso triste* is how someone feels, with no *a* and no second verb.",
+  "smallPrint": "Teachers call this an inchoative construction, a verb phrase that marks the start of an action.",
+  "readAndPick": [
+    {
+      "es": "Simón se puso a cantar.",
+      "options": [
+        "Simón started singing.",
+        "Simón wanted to sing.",
+        "Simón stopped singing."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me puse a estudiar a las ocho.",
+      "options": [
+        "I put on my study clothes at eight.",
+        "I started studying at eight."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se puso triste.",
+      "options": [
+        "He started crying.",
+        "He got sad."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se puso a llorar.",
+      "options": [
+        "He got sad.",
+        "He started crying."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos pusimos a hablar.",
+      "options": [
+        "They started talking.",
+        "We started talking."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se pusieron a bailar en la calle.",
+      "options": [
+        "They started dancing in the street.",
+        "She started dancing in the street."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Por qué te pusiste a llorar?",
+      "options": [
+        "Why did he start crying?",
+        "Why did you start crying?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No me puse a leer hasta las diez.",
+      "options": [
+        "I didn't start reading until ten.",
+        "I didn't want to read until ten.",
+        "I didn't read at ten."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Me ___ a estudiar a las ocho.* (*puse* or *puso*) I started studying at eight.",
+      "answer": "Me puse a estudiar a las ocho.",
+      "accept": [],
+      "why": "*Me* goes with *yo*, so the past is *puse*."
+    },
+    {
+      "prompt": "Say: Simón started singing.",
+      "answer": "Simón se puso a cantar.",
+      "accept": [],
+      "why": "*Se puso a* plus the plain verb *cantar*."
+    },
+    {
+      "prompt": "Say: Suddenly it started raining.",
+      "answer": "De repente se puso a llover.",
+      "accept": [
+        "De pronto se puso a llover."
+      ],
+      "why": "A sudden start is exactly what *ponerse a* is for."
+    },
+    {
+      "prompt": "Say: Tomás got down to reading the letters.",
+      "answer": "Tomás se puso a leer las cartas.",
+      "accept": [],
+      "why": "Keep the *a* before the second verb."
+    },
+    {
+      "prompt": "Say to a friend: Why did you start crying?",
+      "answer": "¿Por qué te pusiste a llorar?",
+      "accept": [],
+      "why": "*Te pusiste* because you are talking to a friend."
+    },
+    {
+      "prompt": "Make it about *we*: *Me puse a hablar de Rosa.*",
+      "answer": "Nos pusimos a hablar de Rosa.",
+      "accept": [],
+      "why": "*Nos pusimos* is the *we* form."
+    },
+    {
+      "prompt": "Make it about *they*: *Se puso a bailar en la calle.*",
+      "answer": "Se pusieron a bailar en la calle.",
+      "accept": [],
+      "why": "*They* takes *se pusieron*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me puse estudiar.",
+      "right": "Me puse a estudiar.",
+      "why": "You need the *a* before the second verb."
+    },
+    {
+      "wrong": "Me puse a triste.",
+      "right": "Me puse triste.",
+      "why": "Almost. With a feeling there is no *a*: *ponerse triste* is a change of mood."
+    },
+    {
+      "wrong": "Simón puso a cantar.",
+      "right": "Simón se puso a cantar.",
+      "why": "Without *se*, *poner* means to place something somewhere; the starting meaning needs *se*."
+    }
+  ],
+  "personal": "Say what you got down to as soon as you got home yesterday: *Cuando llegué a casa, me puse a…*"
+}
