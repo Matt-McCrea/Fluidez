@@ -1,0 +1,90 @@
+{
+  "node": "x:medir-caber",
+  "hook": {
+    "line": "Tomás has measured the sofa, and the door, and the kitchen. Now he needs to say two different things: how big something is, and whether it goes in. English says it is big and it won't fit. Spanish uses two separate verbs, and mixing them up sends the sofa to the wrong place.",
+    "es": "El sofá mide dos metros, pero no cabe por la puerta.",
+    "en": "The sofa is two metres long, but it doesn't fit through the door."
+  },
+  "examples": [
+    { "es": "La mesa mide dos metros.", "en": "The table is two metres long." },
+    { "es": "La mesa no cabe en la cocina.", "en": "The table doesn't fit in the kitchen." },
+    { "es": "¿Cuánto mide el sofá?", "en": "How big is the sofa?" },
+    { "es": "¿Cabe en el carro?", "en": "Does it fit in the car?" },
+    { "es": "La puerta mide un metro de ancho.", "en": "The door is one metre wide." },
+    { "es": "La mesa mide un metro, así que cabe.", "en": "The table is one metre long, so it fits." }
+  ],
+  "rule": "Two different questions:\n*¿Cuánto mide?* How big is it? A fact about the thing, with a number: *mide dos metros*.\n*¿Cabe?* Does it go in? A fact about the thing and one particular space: *cabe en el carro*.\n\nSo *medir* needs a number, and *caber* needs a place (*en* or *por*).\n\nThe same sofa can measure the same and still not fit: its size never changes, but the door does. That's why Spanish keeps two verbs.\n\nUse both together: *mide un metro, así que cabe*.",
+  "smallPrint": "Teachers call this a contrast between a measurement verb and a verb of capacity.",
+  "readAndPick": [
+    { "es": "¿Cuánto mide el sofá?", "options": ["Does the sofa fit?", "How big is the sofa?"], "answer": 1 },
+    { "es": "¿Cabe el sofá en el salón?", "options": ["Does the sofa fit in the living room?", "How big is the sofa?"], "answer": 0 },
+    { "es": "La mesa mide dos metros.", "options": ["The table is two metres long.", "The table fits in two metres."], "answer": 0 },
+    { "es": "La mesa no cabe en la cocina.", "options": ["The kitchen is too small to measure.", "The table doesn't fit in the kitchen."], "answer": 1 },
+    { "es": "La puerta mide un metro de ancho.", "options": ["The door is one metre wide.", "One metre fits through the door."], "answer": 0 },
+    { "es": "Caben cinco personas en el carro.", "options": ["The car is five metres long.", "Five people fit in the car."], "answer": 1 },
+    { "es": "Mido uno ochenta y no quepo en la cama.", "options": ["I'm 1.80 m tall and I don't fit in the bed.", "I'm 1.80 m tall and the bed is too wide."], "answer": 0 },
+    { "es": "La caja mide un metro y no cabe en el carro.", "options": ["The box is a metre long and doesn't fit in the car.", "The box fits in the car because it is a metre."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *mide* or *cabe* and type the whole sentence: ¿Cuánto ___ el sofá?",
+      "answer": "¿Cuánto mide el sofá?",
+      "accept": [],
+      "why": "How big something is, is *medir*."
+    },
+    {
+      "prompt": "Choose *mide* or *cabe* and type the whole sentence: La mesa no ___ en la cocina.",
+      "answer": "La mesa no cabe en la cocina.",
+      "accept": [],
+      "why": "There's a place (*en la cocina*), so the question is whether it fits: *caber*."
+    },
+    {
+      "prompt": "Say: The table is two metres long.",
+      "answer": "La mesa mide dos metros de largo.",
+      "accept": ["La mesa mide dos metros."],
+      "why": "A size with a number is *medir*."
+    },
+    {
+      "prompt": "Ask: Does it fit in the car?",
+      "answer": "¿Cabe en el carro?",
+      "accept": [],
+      "why": "Whether it goes into one space is *caber*, with *en*."
+    },
+    {
+      "prompt": "Say: The door is one metre wide.",
+      "answer": "La puerta mide un metro de ancho.",
+      "accept": [],
+      "why": "The width is a measurement, so *mide*, then *de ancho*."
+    },
+    {
+      "prompt": "Say: The sofa is two metres long, but it doesn't fit through the door.",
+      "answer": "El sofá mide dos metros, pero no cabe por la puerta.",
+      "accept": [],
+      "why": "The size is *mide*; going through the opening is *no cabe por*."
+    },
+    {
+      "prompt": "Turn the fact into a question about the car: La mesa mide dos metros.",
+      "answer": "¿Cabe la mesa en el carro?",
+      "accept": ["¿La mesa cabe en el carro?"],
+      "why": "Asking whether it goes in a space is *caber*, with *en*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El sofá cabe dos metros.",
+      "right": "El sofá mide dos metros.",
+      "why": "Almost. A number of metres is a measurement, so *medir*."
+    },
+    {
+      "wrong": "La mesa mide en la cocina.",
+      "right": "La mesa cabe en la cocina.",
+      "why": "A place after *en* asks whether it fits, so *caber*, not *medir*."
+    },
+    {
+      "wrong": "¿Cuánto cabe el sofá?",
+      "right": "¿Cuánto mide el sofá?",
+      "why": "To ask how big something is, you need *medir*."
+    }
+  ],
+  "personal": "Think of one thing at home: how big is it, and does it fit where you'd like to put it? Say it with *mide* and *cabe*."
+}

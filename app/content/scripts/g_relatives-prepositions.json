@@ -1,0 +1,92 @@
+{
+  "node": "g:relatives-prepositions",
+  "hook": {
+    "line": "Tomás is telling Mariana about the people and places that matter in his new life: the building, the friends, the man he talked to yesterday. English lets you finish with a little word, like the building I was born in. Spanish won't. It moves that word to the front.",
+    "es": "Este es el edificio en el que nació mi abuela.",
+    "en": "This is the building my grandmother was born in."
+  },
+  "examples": [
+    { "es": "Es el edificio en el que nació mi abuela.", "en": "It's the building my grandmother was born in." },
+    { "es": "La persona a quien le escribí no contestó.", "en": "The person I wrote to didn't answer." },
+    { "es": "Los amigos con los que vivo son de Cali.", "en": "The friends I live with are from Cali." },
+    { "es": "El hombre con quien hablé es el dueño.", "en": "The man I spoke with is the owner." },
+    { "es": "Es el parque del que te hablé.", "en": "It's the park I told you about." },
+    { "es": "Esta es la calle por la que pasa el bus.", "en": "This is the street the bus goes along." },
+    { "es": "El café en el que trabajo es de Rosa.", "en": "The café I work in is Rosa's." }
+  ],
+  "rule": "In English the little word can hang at the end: the friends I live *with*. In Spanish it always comes first, in front of the thing you're describing: *los amigos con los que vivo*.\n\nThe pattern is little word + *el / la / los / las* + *que*. The article matches the thing you're describing:\n*la casa en la que vivo*\n*los amigos con los que vivo*\n\nFor people you can use *quien* instead, which doesn't change for gender: *el hombre con quien hablé*, *la persona a quien escribí*.\n\n*A* plus *el* is *al*, *de* plus *el* is *del*: *el lugar al que voy*, *el parque del que te hablé*.\n\nFor a place, *donde* still works.",
+  "smallPrint": "Teachers call this a relative clause with a preposition. Spanish never leaves the preposition stranded at the end.",
+  "readAndPick": [
+    { "es": "La casa en la que vivo es vieja.", "options": ["The house I live in is old.", "The houses I live in are old."], "answer": 0 },
+    { "es": "Los amigos con los que vivo son de Cali.", "options": ["The friend I live with is from Cali.", "The friends I live with are from Cali."], "answer": 1 },
+    { "es": "La persona a quien le escribí no contestó.", "options": ["The person who wrote to me didn't answer.", "The person I wrote to didn't answer."], "answer": 1 },
+    { "es": "El parque del que te hablé es grande.", "options": ["The park I told you about is big.", "The park that told you is big.", "The park I'm from is big."], "answer": 0 },
+    { "es": "El lugar al que voy es muy bonito.", "options": ["The place I'm coming from is very pretty.", "The place I'm going to is very pretty."], "answer": 1 },
+    { "es": "Las chicas con las que juego son de Cali.", "options": ["The girls I play with are from Cali.", "The girl I play with is from Cali."], "answer": 0 },
+    { "es": "Esta es la calle por la que pasa el bus.", "options": ["This is the bus I take along the street.", "This is the street the bus goes along."], "answer": 1 },
+    { "es": "La persona para quien trabajo es la dueña.", "options": ["The person I work with is the owner.", "The person I work for is the owner."], "answer": 1 },
+    { "es": "El hombre con quien hablé es el dueño.", "options": ["The man I spoke with is the owner.", "The man who spoke to me is the owner."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *en el que* or *en la que* and type the whole sentence: Es la casa ___ vivo.",
+      "answer": "Es la casa en la que vivo.",
+      "accept": ["Es la casa donde vivo."],
+      "why": "*Casa* is feminine, so the article is *la*: *en la que*."
+    },
+    {
+      "prompt": "Choose *con quien* or *quien con* and type the whole sentence: El hombre ___ hablé es el dueño.",
+      "answer": "El hombre con quien hablé es el dueño.",
+      "accept": ["El hombre con el que hablé es el dueño."],
+      "why": "The little word goes first: *con quien*, never at the end."
+    },
+    {
+      "prompt": "Say: The person I wrote to didn't answer.",
+      "answer": "La persona a quien le escribí no contestó.",
+      "accept": ["La persona a la que le escribí no contestó."],
+      "why": "*A* comes first, then *quien* or *la que*."
+    },
+    {
+      "prompt": "Say: It's the building my grandmother was born in.",
+      "answer": "Es el edificio en el que nació mi abuela.",
+      "accept": ["Es el edificio donde nació mi abuela."],
+      "why": "*En* goes in front of *el que*, matching the masculine *edificio*."
+    },
+    {
+      "prompt": "Say: The friends I live with are from Cali.",
+      "answer": "Los amigos con los que vivo son de Cali.",
+      "accept": ["Los amigos con quienes vivo son de Cali."],
+      "why": "Friends is plural, so *con los que*, or *con quienes*."
+    },
+    {
+      "prompt": "Say to a friend: It's the park I told you about.",
+      "answer": "Es el parque del que te hablé.",
+      "accept": [],
+      "why": "*De* plus *el* becomes *del*, then *que*."
+    },
+    {
+      "prompt": "Make it plural: La casa en la que vivo es vieja.",
+      "answer": "Las casas en las que vivo son viejas.",
+      "accept": [],
+      "why": "The articles and the adjective all follow the plural houses, and *es* becomes *son*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La persona que hablé con es el dueño.",
+      "right": "La persona con quien hablé es el dueño.",
+      "why": "Almost. Spanish can't end on *con*: put it first, then *quien* or *la que*."
+    },
+    {
+      "wrong": "La casa en el que vivo es vieja.",
+      "right": "La casa en la que vivo es vieja.",
+      "why": "The article follows the thing you're describing, and *casa* is feminine."
+    },
+    {
+      "wrong": "El hombre con que hablé es el dueño.",
+      "right": "El hombre con quien hablé es el dueño.",
+      "why": "After a preposition you need an article or *quien*, not a bare *que*."
+    }
+  ],
+  "personal": "Tell me about someone you work or study with, or a place you spend time in. Use *con quien* or *en el que* (or *la que*)."
+}

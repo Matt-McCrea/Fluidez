@@ -1,0 +1,174 @@
+{
+  "node": "p:posicion-precisa",
+  "hook": {
+    "line": "When a landlord shows you a place, he never says it's just somewhere. He says what is at the end of the hall and what is in the middle. You will want to follow him, and to ask where things are exactly.",
+    "es": "La cocina está al fondo del pasillo.",
+    "en": "The kitchen is at the end of the corridor."
+  },
+  "examples": [
+    {
+      "es": "La cocina está al fondo del pasillo.",
+      "en": "The kitchen is at the end of the corridor."
+    },
+    {
+      "es": "Hay un parque frente al edificio.",
+      "en": "There's a park opposite the building."
+    },
+    {
+      "es": "La mesa está en medio de la sala.",
+      "en": "The table is in the middle of the living room."
+    },
+    {
+      "es": "Pon la planta junto a la ventana.",
+      "en": "Put the plant next to the window. (to a friend)"
+    },
+    {
+      "es": "Hay árboles alrededor de la casa.",
+      "en": "There are trees around the house."
+    },
+    {
+      "es": "El baño está al fondo.",
+      "en": "The bathroom is at the back."
+    }
+  ],
+  "rule": "Five phrases place something exactly:\n*al fondo de*: at the end of\n*en medio de*: in the middle of\n*junto a*: right next to\n*frente a*: opposite\n*alrededor de*: around\n\nThey all keep the little *de* or *a* before the place: *al fondo del pasillo*, *junto a la ventana*.\n\n*De* plus *el* becomes *del*, and *a* plus *el* becomes *al*: *frente al parque*.\n\nIf you drop the place, drop the *de* too: *El baño está al fondo.*",
+  "smallPrint": "Teachers call these prepositional phrases of location.",
+  "readAndPick": [
+    {
+      "es": "La mesa está en medio de la sala.",
+      "options": [
+        "The table is in the middle of the living room.",
+        "The table is at the end of the living room."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El baño está al fondo.",
+      "options": [
+        "The bathroom is at the front.",
+        "The bathroom is at the back."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hay un parque frente al edificio.",
+      "options": [
+        "There's a park behind the building.",
+        "There's a park opposite the building.",
+        "There's a park inside the building."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pon la planta junto a la ventana.",
+      "options": [
+        "Put the plant next to the window.",
+        "Put the plant on top of the window."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hay árboles alrededor de la casa.",
+      "options": [
+        "There are trees in front of the house.",
+        "There are trees around the house."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La cocina está al fondo del pasillo.",
+      "options": [
+        "The kitchen is in the middle of the corridor.",
+        "The kitchen is next to the corridor.",
+        "The kitchen is at the end of the corridor."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hay una mesa junto a la puerta.",
+      "options": [
+        "There's a table next to the door.",
+        "There's a table through the door."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Simón está en medio del salón.",
+      "options": [
+        "Simón is around the living room.",
+        "Simón is in the middle of the living room."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El café queda frente al parque.",
+      "options": [
+        "The café is opposite the park.",
+        "The café is next to the park."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *al fondo* or *en medio* and type the whole sentence: El baño está ___ del pasillo.",
+      "answer": "El baño está al fondo del pasillo.",
+      "accept": [],
+      "why": "The end of the corridor is *al fondo del pasillo*."
+    },
+    {
+      "prompt": "Choose *junto a* or *alrededor de* and type the whole sentence: Hay una mesa ___ la puerta.",
+      "answer": "Hay una mesa junto a la puerta.",
+      "accept": [],
+      "why": "A table next to one door is *junto a*; *alrededor de* would be all around it."
+    },
+    {
+      "prompt": "Say: The table is in the middle of the living room.",
+      "answer": "La mesa está en medio de la sala.",
+      "accept": [],
+      "why": "In the middle is *en medio de*, with *de* before the place."
+    },
+    {
+      "prompt": "Say: There's a park opposite the building.",
+      "answer": "Hay un parque frente al edificio.",
+      "accept": [],
+      "why": "*Frente a* plus *el* becomes *frente al*."
+    },
+    {
+      "prompt": "Tell a friend: Put the plant next to the window.",
+      "answer": "Pon la planta junto a la ventana.",
+      "accept": [],
+      "why": "*Pon* is the friendly command, and *junto a* means next to."
+    },
+    {
+      "prompt": "Say: There are trees around the house.",
+      "answer": "Hay árboles alrededor de la casa.",
+      "accept": [],
+      "why": "Around is *alrededor de*, and *hay* says they exist there."
+    },
+    {
+      "prompt": "Move the table to the middle of the living room: La mesa está junto a la ventana.",
+      "answer": "La mesa está en medio de la sala.",
+      "accept": [],
+      "why": "In the middle is *en medio de*, with *de* before the place."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La cocina está al fondo el pasillo.",
+      "right": "La cocina está al fondo del pasillo.",
+      "why": "Almost. Keep the *de*, and with *el* it becomes *del*."
+    },
+    {
+      "wrong": "Hay un parque frente el edificio.",
+      "right": "Hay un parque frente al edificio.",
+      "why": "*Frente* needs *a* before the place, and *a* plus *el* becomes *al*."
+    },
+    {
+      "wrong": "La mesa está en el medio la sala.",
+      "right": "La mesa está en medio de la sala.",
+      "why": "The phrase is fixed: *en medio de*, with no *el*."
+    }
+  ],
+  "personal": "Describe your room or your kitchen: what is at the back, what is in the middle, what is next to the window? Use two of the new phrases."
+}

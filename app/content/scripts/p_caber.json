@@ -1,0 +1,180 @@
+{
+  "node": "p:caber",
+  "hook": {
+    "line": "Tomás has bought a big old sofa for the café, and it is not going through the door. That is the moment you need one small verb.",
+    "es": "El sofá no cabe por la puerta.",
+    "en": "The sofa doesn't fit through the door."
+  },
+  "examples": [
+    {
+      "es": "El sofá no cabe por la puerta.",
+      "en": "The sofa doesn't fit through the door."
+    },
+    {
+      "es": "¿Cabemos todos en el carro?",
+      "en": "Do we all fit in the car?"
+    },
+    {
+      "es": "La mesa no cabe en la cocina.",
+      "en": "The table doesn't fit in the kitchen."
+    },
+    {
+      "es": "En este carro caben cinco personas.",
+      "en": "Five people fit in this car."
+    },
+    {
+      "es": "Yo quepo, pero Tomás no.",
+      "en": "I fit, but Tomás doesn't."
+    },
+    {
+      "es": "¿Cabe la mesa por la puerta?",
+      "en": "Does the table fit through the door?"
+    }
+  ],
+  "rule": "*Caber* means something fits inside a space.\n\nThe thing that has to fit is the subject: *la mesa no cabe*. The space comes after *en* (inside it) or *por* (through an opening).\n\nIt's irregular in *yo* only: *quepo*. The rest is regular: *cabes, cabe, cabemos, caben*.\n\nIt can also count what a place holds: *caben cinco personas*.\n\nFor clothes, *me queda grande* says how they look on you. *Caber* only says they won't go on at all.",
+  "smallPrint": "Teachers call *quepo* an irregular first-person form. *Cupo* and *quepa* follow the same stem.",
+  "readAndPick": [
+    {
+      "es": "La mesa cabe aquí.",
+      "options": [
+        "The table fits here.",
+        "The table doesn't fit here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La mesa no cabe aquí.",
+      "options": [
+        "The table fits here.",
+        "The table doesn't fit here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Yo quepo.",
+      "options": [
+        "He fits.",
+        "I fit.",
+        "We fit."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cabemos todos.",
+      "options": [
+        "We all fit.",
+        "They all fit."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Caben cinco personas.",
+      "options": [
+        "One person fits.",
+        "Five people fit."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El sofá no cabe por la puerta.",
+      "options": [
+        "The sofa doesn't fit through the door.",
+        "The sofa doesn't fit in the door frame.",
+        "The sofa is behind the door."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cabe en el carro?",
+      "options": [
+        "Does it fit in the car?",
+        "Do you fit in the car?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Quepo ahí?",
+      "options": [
+        "Does he fit there?",
+        "Do I fit there?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No cabemos todos.",
+      "options": [
+        "We can't all fit.",
+        "They can't all fit."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *cabe* or *caben* and type the whole sentence: En este carro ___ cinco personas.",
+      "answer": "En este carro caben cinco personas.",
+      "accept": [],
+      "why": "Five people is plural, so *caben*."
+    },
+    {
+      "prompt": "Choose *quepo* or *cabo* and type the whole sentence: Yo ___ en el carro.",
+      "answer": "Yo quepo en el carro.",
+      "accept": [
+        "Quepo en el carro."
+      ],
+      "why": "*Caber* is irregular in *yo*: it's *quepo*."
+    },
+    {
+      "prompt": "Say: The sofa doesn't fit through the door.",
+      "answer": "El sofá no cabe por la puerta.",
+      "accept": [],
+      "why": "Through an opening is *por*, and the sofa is the subject: *cabe*."
+    },
+    {
+      "prompt": "Ask: Do we all fit in the car?",
+      "answer": "¿Cabemos todos en el carro?",
+      "accept": [],
+      "why": "We is *cabemos*, and inside the car is *en el carro*."
+    },
+    {
+      "prompt": "Say: The table doesn't fit in the kitchen.",
+      "answer": "La mesa no cabe en la cocina.",
+      "accept": [],
+      "why": "Inside a room is *en*, and the table is the thing that must fit."
+    },
+    {
+      "prompt": "Make it negative: Yo quepo.",
+      "answer": "Yo no quepo.",
+      "accept": [
+        "No quepo."
+      ],
+      "why": "*No* goes right in front of the verb."
+    },
+    {
+      "prompt": "Make it about the table: ¿Cabes en el carro? (does the table fit in the car?)",
+      "answer": "¿Cabe la mesa en el carro?",
+      "accept": [
+        "¿La mesa cabe en el carro?"
+      ],
+      "why": "The table is now the subject, so *cabe*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo cabo en el carro.",
+      "right": "Yo quepo en el carro.",
+      "why": "Almost. The *yo* form is irregular: *quepo*, not *cabo*."
+    },
+    {
+      "wrong": "La mesa no cabe la cocina.",
+      "right": "La mesa no cabe en la cocina.",
+      "why": "Don't drop the little word: the space needs *en* (or *por* for an opening)."
+    },
+    {
+      "wrong": "Yo no cabe en el carro.",
+      "right": "Yo no quepo en el carro.",
+      "why": "The verb has to match who is fitting: for *yo* it's *quepo*, not *cabe*."
+    }
+  ],
+  "personal": "What is the biggest thing in your home that would never fit through a normal door? Say it with *no cabe*."
+}

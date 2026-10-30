@@ -1,0 +1,92 @@
+{
+  "node": "p:quedar-faltar-sobrar",
+  "hook": {
+    "line": "It's the night before the café reopens and Tomás is counting chairs. Some are missing, some are extra, some are still left. Spanish has a verb for each, and you will use all three the moment you start counting anything.",
+    "es": "Nos faltan diez sillas.",
+    "en": "We're ten chairs short."
+  },
+  "examples": [
+    { "es": "Quedan solo dos apartamentos.", "en": "There are only two flats left." },
+    { "es": "Nos faltan diez sillas.", "en": "We're ten chairs short." },
+    { "es": "Sobró mucha comida.", "en": "There was a lot of food left over." },
+    { "es": "Faltan veinte kilómetros para llegar.", "en": "There are twenty kilometres to go." },
+    { "es": "¿Cuántas sillas nos faltan?", "en": "How many chairs are we missing?" },
+    { "es": "Me falta plata.", "en": "I'm short of money." },
+    { "es": "Ya no queda pan.", "en": "There's no bread left." }
+  ],
+  "rule": "Three verbs, three ideas:\n*quedar*: what is still left. *Quedan dos.*\n*faltar*: what is missing. *Faltan sillas.*\n*sobrar*: what is extra. *Sobra comida.*\n\nThey work like *gustar*. The thing is the subject, so the verb agrees with it: *queda* one, *quedan* two. The person is a small word in front: *me falta*, *nos faltan*.\n\nDon't mix up the last two: *faltar* is too few, *sobrar* is too many.\n\n*Faltar* also counts down time and distance: *Faltan cinco minutos para las tres.*",
+  "smallPrint": "Teachers call these verbs of availability. *Faltar* and *sobrar* take an indirect object, just like *gustar*.",
+  "readAndPick": [
+    { "es": "Quedan dos mesas.", "options": ["There are two tables left.", "There is one table left."], "answer": 0 },
+    { "es": "Nos faltan sillas.", "options": ["We have chairs left over.", "We're short of chairs."], "answer": 1 },
+    { "es": "Nos sobran sillas.", "options": ["We're short of chairs.", "We have chairs left over."], "answer": 1 },
+    { "es": "Queda una mesa.", "options": ["There are two tables left.", "There is one table left."], "answer": 1 },
+    { "es": "Me falta plata.", "options": ["I have money left over.", "You're short of money.", "I'm short of money."], "answer": 2 },
+    { "es": "Sobró mucha comida.", "options": ["There was a lot of food left over.", "There is a lot of food left over."], "answer": 0 },
+    { "es": "Faltan cinco minutos para las tres.", "options": ["It's five past three.", "It's five minutes to three."], "answer": 1 },
+    { "es": "Te sobran dos sillas.", "options": ["You're two chairs short. (to a friend)", "You have two chairs too many. (to a friend)", "We have two chairs too many."], "answer": 1 },
+    { "es": "Falta una silla.", "options": ["We're missing three chairs.", "We're missing one chair."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *queda* or *quedan* and type the whole sentence: ___ dos mesas.",
+      "answer": "Quedan dos mesas.",
+      "accept": [],
+      "why": "Two tables is plural, so the verb is plural too: *quedan*."
+    },
+    {
+      "prompt": "Choose *faltan* or *sobran* and type the whole sentence (we have too many chairs): Nos ___ sillas.",
+      "answer": "Nos sobran sillas.",
+      "accept": [],
+      "why": "Too many is *sobrar*; *faltar* would mean too few."
+    },
+    {
+      "prompt": "Say: There are only two flats left.",
+      "answer": "Quedan solo dos apartamentos.",
+      "accept": [],
+      "why": "The flats are plural, so *quedan*, with *solo* before the number."
+    },
+    {
+      "prompt": "Say: We're ten chairs short.",
+      "answer": "Nos faltan diez sillas.",
+      "accept": [],
+      "why": "*Nos* says who is short, and *faltan* agrees with the ten chairs."
+    },
+    {
+      "prompt": "Say: I'm short of money.",
+      "answer": "Me falta plata.",
+      "accept": [],
+      "why": "*Plata* is singular and it's what is missing, so *falta*, with *me* for you."
+    },
+    {
+      "prompt": "Put it in the past: Sobra mucha comida.",
+      "answer": "Sobró mucha comida.",
+      "accept": [],
+      "why": "A regular *-ar* verb in the past: *sobró*, agreeing with the singular food."
+    },
+    {
+      "prompt": "Change it to one table: Quedan dos mesas.",
+      "answer": "Queda una mesa.",
+      "accept": [],
+      "why": "One table is singular, so *queda*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Nos falta diez sillas.",
+      "right": "Nos faltan diez sillas.",
+      "why": "Almost. The verb agrees with the thing that's missing, and ten chairs is plural."
+    },
+    {
+      "wrong": "Yo falto diez sillas.",
+      "right": "Nos faltan diez sillas.",
+      "why": "In English you are the one who's short. In Spanish the chairs are missing, and you only get a small word in front: *me*, *nos*."
+    },
+    {
+      "wrong": "Nos sobran sillas, necesitamos más.",
+      "right": "Nos faltan sillas, necesitamos más.",
+      "why": "*Sobrar* means too many. If you need more, the verb is *faltar*."
+    }
+  ],
+  "personal": "Look around you: what is there plenty of, and what are you short of? Say one with *sobra* or *sobran* and one with *falta* or *faltan*."
+}
