@@ -470,5 +470,312 @@
       "p:possessives-basic",
       "p:tener-anos"
     ]
+  },
+  {
+    "id": "w-u05-13",
+    "unit": "u05",
+    "prompt": "Vale texts you on Sunday morning: she wants to know what you did yesterday. Answer in two short sentences, both about you.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ir",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "say where you went (fui)"
+      },
+      {
+        "type": "verbForm",
+        "inf": "hacer",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "say what you did or made (hice)"
+      }
+    ],
+    "model": "Ayer fui a la panadería con mi amigo. Hice pan con Vale.",
+    "focus": "g:preterite-ser-ir-hacer",
+    "requires": [
+      "c:ayer-anoche",
+      "c:fui",
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:amigo",
+      "l:ayer",
+      "l:hacer",
+      "l:ir",
+      "l:pan",
+      "l:panadería",
+      "p:ir-a-venir-de-place",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u05-14",
+    "unit": "u05",
+    "prompt": "An older stranger at the bus stop asks where you were a student and who you went to school with. Answer politely in two short sentences.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "say what you were (fui)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Sí, fui estudiante en Toronto. Fui al colegio con mi amigo Tom.",
+    "focus": "g:preterite-ser-ir-hacer",
+    "requires": [
+      "c:fui",
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:amigo",
+      "l:colegio",
+      "l:estudiante",
+      "l:ir",
+      "l:ser",
+      "p:ir-a-venir-de-place",
+      "p:possessives-basic",
+      "p:ser-profession-no-article"
+    ]
+  },
+  {
+    "id": "w-u05-15",
+    "unit": "u05",
+    "prompt": "You are introducing your boyfriend or girlfriend to Don Hernando by text before he visits. Say their name and describe their hair and eyes in two sentences.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(su|sus)\\b",
+        "label": "use su or sus for their hair or eyes"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(mi|mis)\\b",
+        "label": "use mi or mis for your own person"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Mi novia se llama Ana. Su pelo es rubio y sus ojos son verdes.",
+    "focus": "g:possessives",
+    "requires": [
+      "c:se-llama",
+      "g:adjective-agreement",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "l:llamarse",
+      "l:novia",
+      "l:ojo",
+      "l:pelo",
+      "l:rubio",
+      "l:ser",
+      "l:verde",
+      "p:es-tiene-lleva",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u05-16",
+    "unit": "u05",
+    "prompt": "A new neighbour, someone your age, asks about your friends and what they do. Reply in two short sentences with mi, mis, tu or tus.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(mi|mis)\\b",
+        "label": "use mi or mis"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(nuestro|nuestra|nuestros|nuestras|su|sus)\\b",
+        "label": "use another possessive (su, sus, nuestro...)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Mis amigos son de Cali. Su casa es grande.",
+    "focus": "g:possessives",
+    "requires": [
+      "g:ser-identity",
+      "l:amigo",
+      "l:casa",
+      "l:grande",
+      "l:ser",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u05-17",
+    "unit": "u05",
+    "prompt": "Mariana asks you to describe two of your friends for her article: one woman and one man. Write two sentences, one for each.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b\\w+(a|as)\\b",
+        "label": "a feminine adjective for the woman"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "amiga es simpático",
+          "amiga es divertido",
+          "amiga es serio",
+          "amiga es inteligente alto"
+        ],
+        "label": "match the adjective to the person"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Mi amiga es simpática y muy inteligente. Mi amigo es serio, pero simpático.",
+    "focus": "g:adjective-agreement",
+    "requires": [
+      "g:adjective-agreement",
+      "g:ser-identity",
+      "l:amiga",
+      "l:amigo",
+      "l:inteligente",
+      "l:ser",
+      "l:serio",
+      "l:simpático",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u05-18",
+    "unit": "u05",
+    "prompt": "You are writing to Vale about your new boyfriend or girlfriend, and what they are like. Use two adjectives that end like the person: -a for a woman, -o for a man.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(simpátic|divertid|seri|inteligent|alt|baj|delgad|gord|jove)\\w*",
+        "label": "use at least one adjective from the unit"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "novia es alto",
+          "novia es simpático",
+          "novia es divertido",
+          "novia es delgado",
+          "novia es serio",
+          "novio es alta",
+          "novio es simpática",
+          "novio es divertida",
+          "novio es delgada",
+          "novio es seria"
+        ],
+        "label": "match the adjective to the person"
+      }
+    ],
+    "model": "Mi novia es alta y delgada. Es muy simpática.",
+    "focus": "g:adjective-agreement",
+    "requires": [
+      "g:adjective-agreement",
+      "g:ser-identity",
+      "l:alto",
+      "l:delgado",
+      "l:novia",
+      "l:ser",
+      "l:simpático",
+      "p:es-tiene-lleva",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u05-19",
+    "unit": "u05",
+    "prompt": "Don Hernando (an older man, you call him usted) offers you coffee and a pastry, but you have already eaten. Politely turn him down in two sentences.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "nada",
+          "nadie"
+        ],
+        "label": "use nada or nadie"
+      },
+      {
+        "type": "negation"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "No quiero nada, gracias. Hoy ya comí con Vale.",
+    "focus": "g:negation-words",
+    "requires": [
+      "c:comi",
+      "c:gracias-de-nada",
+      "c:quiero",
+      "g:negation-words",
+      "g:preterite-er-ir",
+      "g:stem-boot",
+      "l:comer",
+      "l:hoy",
+      "l:querer"
+    ]
+  },
+  {
+    "id": "w-u05-20",
+    "unit": "u05",
+    "prompt": "Your cousin invites you to her birthday party and asks if you know the other guests. You know nobody there, and you have not met her boyfriend either. Answer in two sentences.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "nadie",
+          "nada",
+          "tampoco"
+        ],
+        "label": "use nadie, nada or tampoco"
+      },
+      {
+        "type": "negation"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "No conozco a nadie. Y tampoco conozco a tu novio.",
+    "focus": "g:negation-words",
+    "requires": [
+      "g:negation-words",
+      "g:yo-irregular",
+      "l:conocer",
+      "l:novio",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
+    ]
   }
 ]
