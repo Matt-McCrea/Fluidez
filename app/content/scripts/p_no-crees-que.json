@@ -1,0 +1,189 @@
+{
+  "node": "p:no-crees-que",
+  "hook": {
+    "line": "Sometimes a question is really a nudge. You don't want information, you want your friend to say \"yeah, you're right\". Spanish has a standard way to do it politely.",
+    "es": "¿No crees que es un poco tarde?",
+    "en": "Don't you think it's a bit late?"
+  },
+  "examples": [
+    {
+      "es": "¿No crees que es un poco tarde?",
+      "en": "Don't you think it's a bit late?"
+    },
+    {
+      "es": "¿No te parece que deberíamos avisarle?",
+      "en": "Don't you think we should let him know?"
+    },
+    {
+      "es": "¿No crees que el precio es muy alto?",
+      "en": "Don't you think the price is too high?"
+    },
+    {
+      "es": "¿No les parece que la noticia es falsa?",
+      "en": "Don't you all think the news is false?"
+    },
+    {
+      "es": "¿No cree que es mejor esperar?",
+      "en": "Don't you think it's better to wait? (to a stranger, formal)"
+    },
+    {
+      "es": "¿No crees que Tomás debería hablar con Mariana?",
+      "en": "Don't you think Tomás should talk to Mariana?"
+    }
+  ],
+  "rule": "*¿No crees que…?* works like English \"Don't you think…?\": you already believe it, and you are inviting the other person to agree. The usual answer is *sí* plus a reason.\n\nThe verb after *que* stays in the indicative (*es*, *deberíamos*), because you are stating what you believe. Compare *no creo que sea tarde*, a statement of doubt with the subjunctive, and *¿no crees que es tarde?*, a question with the indicative.\n\nTwo versions: *¿No crees…?* and *¿No te parece…?*. Use *¿No cree…?* with *usted* and *¿No les parece…?* with *ustedes*.",
+  "smallPrint": "Teachers call this a leading question. The negative only softens the push; nothing is being doubted.",
+  "readAndPick": [
+    {
+      "es": "¿No crees que es tarde?",
+      "options": [
+        "Don't you think it's late?",
+        "I don't think it's late.",
+        "You don't think it's late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No creo que sea tarde.",
+      "options": [
+        "Don't you think it's late?",
+        "I don't think it's late.",
+        "I think it's late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿No te parece que es muy caro?",
+      "options": [
+        "It doesn't seem expensive to me.",
+        "Don't you think it's too expensive?",
+        "Does it seem expensive to you?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No me parece que sea caro.",
+      "options": [
+        "It doesn't seem expensive to me.",
+        "Don't you think it's expensive?",
+        "It seems expensive to me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿No les parece que la noticia es falsa?",
+      "options": [
+        "Don't you think the news is false?",
+        "Don't you all think the news is false?",
+        "I don't think the news is false."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿No cree que es mejor esperar?",
+      "options": [
+        "Don't you think it's better to wait? (formal)",
+        "Don't you think it's better to wait? (to a friend)",
+        "I don't think it's better to wait."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿No crees que deberíamos avisarle?",
+      "options": [
+        "Don't you think we should let him know?",
+        "Do you think I should let him know?",
+        "I don't think we should let him know."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No creo que Tomás venga hoy.",
+      "options": [
+        "Don't you think Tomás is coming today?",
+        "I think Tomás is coming today.",
+        "I don't think Tomás is coming today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿No crees que Vale tiene razón?",
+      "options": [
+        "Don't you think Vale is right?",
+        "I don't think Vale is right.",
+        "Vale doesn't think you are right."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence (to a friend): *¿No crees que (es / sea) un poco tarde?*",
+      "answer": "¿No crees que es un poco tarde?",
+      "accept": [],
+      "why": "You are stating what you believe, so the indicative *es* follows the question."
+    },
+    {
+      "prompt": "Pick the right form and type the whole sentence: *No creo que (es / sea) un poco tarde.*",
+      "answer": "No creo que sea un poco tarde.",
+      "accept": [],
+      "why": "A plain statement of doubt takes the subjunctive *sea*."
+    },
+    {
+      "prompt": "Type it in Spanish (to a friend): Don't you think the price is too high?",
+      "answer": "¿No crees que el precio es muy alto?",
+      "accept": [
+        "¿No te parece que el precio es muy alto?"
+      ],
+      "why": "*Crees* or *te parece* both work, with the indicative *es* after *que*."
+    },
+    {
+      "prompt": "Type it in Spanish (to a friend): Don't you think we should let him know?",
+      "answer": "¿No crees que deberíamos avisarle?",
+      "accept": [
+        "¿No te parece que deberíamos avisarle?"
+      ],
+      "why": "*Deberíamos* is the ordinary indicative form."
+    },
+    {
+      "prompt": "Type it in Spanish (to a stranger, formal): Don't you think it's better to wait?",
+      "answer": "¿No cree que es mejor esperar?",
+      "accept": [
+        "¿No le parece que es mejor esperar?"
+      ],
+      "why": "*Usted* takes *cree*, or *le parece*."
+    },
+    {
+      "prompt": "Make it a leading question to a friend: *Es un poco tarde.*",
+      "answer": "¿No crees que es un poco tarde?",
+      "accept": [
+        "¿No te parece que es un poco tarde?"
+      ],
+      "why": "Put *¿No crees que* in front and leave the rest alone."
+    },
+    {
+      "prompt": "Make it a leading question to a group (*ustedes*): *La noticia es falsa.*",
+      "answer": "¿No les parece que la noticia es falsa?",
+      "accept": [],
+      "why": "*Ustedes* takes *les parece*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿No crees que sea muy caro?",
+      "right": "¿No crees que es muy caro?",
+      "why": "Almost. In this question you believe it is expensive, so the verb stays in the indicative."
+    },
+    {
+      "wrong": "No creo que es muy caro.",
+      "right": "No creo que sea muy caro.",
+      "why": "A plain *no creo que* is doubt, and doubt takes the subjunctive."
+    },
+    {
+      "wrong": "¿No cree que es tarde?",
+      "right": "¿No crees que es tarde?",
+      "why": "With a friend you say *crees*; *cree* is for *usted*."
+    }
+  ],
+  "personal": "Nudge a friend toward agreeing with you about something small, starting with *¿No crees que…?*."
+}

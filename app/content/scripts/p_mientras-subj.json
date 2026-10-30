@@ -1,0 +1,189 @@
+{
+  "node": "p:mientras-subj",
+  "hook": {
+    "line": "Promises usually come with a condition. \"You can stay, as long as you pay your share.\" To make the condition, Spanish turns *mientras* into \"as long as\" with a small change in the verb.",
+    "es": "Mientras haya trabajo, me quedo.",
+    "en": "As long as there's work, I'm staying."
+  },
+  "examples": [
+    {
+      "es": "Mientras haya trabajo, me quedo.",
+      "en": "As long as there's work, I'm staying."
+    },
+    {
+      "es": "Puedes usar el carro mientras lo cuides.",
+      "en": "You can use the car as long as you look after it."
+    },
+    {
+      "es": "Mientras no llueva, jugamos.",
+      "en": "As long as it doesn't rain, we'll play."
+    },
+    {
+      "es": "Mientras Tomás quiera, el café sigue abierto.",
+      "en": "As long as Tomás wants to, the café stays open."
+    },
+    {
+      "es": "Mientras la fuente no hable, Mariana no puede publicar.",
+      "en": "As long as the source doesn't talk, Mariana can't publish."
+    },
+    {
+      "es": "Mientras Vale cocina, Tomás atiende.",
+      "en": "While Vale cooks, Tomás serves the customers."
+    }
+  ],
+  "rule": "*Mientras* with the ordinary indicative means \"while\": two things happening together, *mientras Vale cocina, Tomás atiende*.\n\n*Mientras* with the present subjunctive means \"as long as\": a condition for now or the future. *Mientras haya trabajo, me quedo*. The *-ar* verbs take *-e* (*cuides*), the *-er* and *-ir* verbs take *-a* (*haya*, *quiera*).\n\nNever put a future after it: Spanish says *mientras haya*, not *mientras habrá*. The main clause can be present or future, as you like.",
+  "smallPrint": "Teachers file this with the conditional connectors like *siempre que* and *con tal de que*. The subjunctive marks a condition, not a fact.",
+  "readAndPick": [
+    {
+      "es": "Mientras trabajas, yo estudio.",
+      "options": [
+        "While you work, I study.",
+        "As long as you work, I study.",
+        "If you work, I study."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mientras trabajes, yo estudio.",
+      "options": [
+        "While you work, I study.",
+        "As long as you work, I'll study.",
+        "You worked while I studied."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mientras Vale cocina, Tomás atiende.",
+      "options": [
+        "As long as Vale cooks, Tomás serves.",
+        "While Vale cooks, Tomás serves.",
+        "Vale cooked while Tomás served."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mientras no llueva, jugamos.",
+      "options": [
+        "While it isn't raining, we're playing.",
+        "It didn't rain, so we played.",
+        "As long as it doesn't rain, we'll play."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mientras haya trabajo, me quedo.",
+      "options": [
+        "As long as there is work, I'm staying.",
+        "While there is work, I stayed.",
+        "There was work, so I stayed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Puedes usar el carro mientras lo cuides.",
+      "options": [
+        "You can use the car while you look after it.",
+        "You can use the car as long as you look after it.",
+        "You used the car and looked after it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mientras yo hablo, ella escucha.",
+      "options": [
+        "As long as I talk, she'll listen.",
+        "While I talk, she listens.",
+        "I talked while she listened."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mientras Tomás quiera, el café sigue abierto.",
+      "options": [
+        "As long as Tomás wants to, the café stays open.",
+        "While Tomás wants, the café opened.",
+        "Tomás wants the café to open."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mientras no hables, nadie sabe nada.",
+      "options": [
+        "While you aren't talking, nobody knows anything.",
+        "As long as you don't talk, nobody will know anything.",
+        "You didn't talk, so nobody knew."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right verb and type the whole sentence (as long as): *Mientras (hay / haya) trabajo, me quedo.*",
+      "answer": "Mientras haya trabajo, me quedo.",
+      "accept": [],
+      "why": "\"As long as\" is a condition, so the verb goes in the subjunctive: *haya*."
+    },
+    {
+      "prompt": "Pick the right verb and type the whole sentence (while, at the same time): *Mientras Vale (cocina / cocine), Tomás atiende.*",
+      "answer": "Mientras Vale cocina, Tomás atiende.",
+      "accept": [],
+      "why": "Two things happening together are facts, so the indicative *cocina* fits."
+    },
+    {
+      "prompt": "Type it in Spanish: As long as it doesn't rain, we'll play.",
+      "answer": "Mientras no llueva, jugamos.",
+      "accept": [
+        "Jugamos mientras no llueva."
+      ],
+      "why": "*No* goes before the subjunctive: *no llueva*."
+    },
+    {
+      "prompt": "Type it in Spanish (to a friend): You can use the car as long as you look after it.",
+      "answer": "Puedes usar el carro mientras lo cuides.",
+      "accept": [
+        "Puedes usar el carro mientras lo cuides."
+      ],
+      "why": "*Cuidar* is an *-ar* verb, so *tú* takes *cuides*."
+    },
+    {
+      "prompt": "Type it in Spanish: As long as Tomás wants to, the café stays open.",
+      "answer": "Mientras Tomás quiera, el café sigue abierto.",
+      "accept": [
+        "El café sigue abierto mientras Tomás quiera."
+      ],
+      "why": "*Querer* in the subjunctive for *él* is *quiera*."
+    },
+    {
+      "prompt": "Type it in Spanish: As long as the source doesn't talk, Mariana can't publish.",
+      "answer": "Mientras la fuente no hable, Mariana no puede publicar.",
+      "accept": [
+        "Mariana no puede publicar mientras la fuente no hable."
+      ],
+      "why": "*Hablar* is an *-ar* verb, so the subjunctive ends in *-e*: *hable*."
+    },
+    {
+      "prompt": "Change from while to as long as: *Mientras trabajas, yo estudio.* (you work)",
+      "answer": "Mientras trabajes, yo estudio.",
+      "accept": [],
+      "why": "Only the verb changes: *trabajas* becomes the subjunctive *trabajes*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Mientras habrá trabajo, me quedo.",
+      "right": "Mientras haya trabajo, me quedo.",
+      "why": "Almost. After *mientras* meaning \"as long as\", Spanish uses the present subjunctive, never the future."
+    },
+    {
+      "wrong": "Mientras hay trabajo, me quedo.",
+      "right": "Mientras haya trabajo, me quedo.",
+      "why": "With the indicative it would just mean \"while there is work\"; to set a condition you need *haya*."
+    },
+    {
+      "wrong": "Mientras llueve, no jugamos.",
+      "right": "Mientras no llueva, jugamos.",
+      "why": "To say \"as long as it doesn't rain\", use *no llueva*. The indicative *llueve* would mean \"while it is raining\"."
+    }
+  ],
+  "personal": "Make a promise to someone, with a condition, using *mientras* and the subjunctive: *Mientras…, yo…*."
+}

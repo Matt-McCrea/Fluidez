@@ -1,0 +1,185 @@
+{
+  "node": "p:solo-que",
+  "hook": {
+    "line": "You like the plan. You just have one small problem with it. *Pero* can sound like a flat no, so Bogotanos soften it.",
+    "es": "Me encantaría ir, solo que no tengo plata.",
+    "en": "I'd love to go, only I've got no money."
+  },
+  "examples": [
+    {
+      "es": "El plan es bueno, solo que es un poco caro.",
+      "en": "The plan's good, it's just a bit expensive."
+    },
+    {
+      "es": "Me encantaría ir, solo que no tengo plata.",
+      "en": "I'd love to go, only I've got no money."
+    },
+    {
+      "es": "Tenía buena intención, solo que no me expliqué bien.",
+      "en": "I meant well, I just didn't explain myself properly."
+    },
+    {
+      "es": "La casa es linda, solo que queda muy lejos.",
+      "en": "The house is lovely, it's just very far away."
+    },
+    {
+      "es": "Quiero ayudarte, solo que hoy no puedo.",
+      "en": "I want to help you, it's just that I can't today."
+    },
+    {
+      "es": "El café de Rosa es el mejor, solo que casi nadie lo conoce.",
+      "en": "Rosa's café is the best, it's just that hardly anyone knows it."
+    }
+  ],
+  "rule": "*Solo que* means \"it's just that\" or \"only\". It keeps what you said first true and adds one small limitation, often with a hint of apology.\n\n*Pero* contradicts. *Solo que* qualifies. After a comma, *solo que* introduces a new full sentence: *me encantaría ir, solo que no tengo plata*.\n\nDon't stack them: it is *solo que*, not *pero solo que*. And *solo* before a verb or noun is a different word: *solo quiero un tinto* means \"I only want a coffee\".",
+  "smallPrint": "Teachers call *solo que* a conjunctive adverb, the softer cousin of *pero*.",
+  "readAndPick": [
+    {
+      "es": "Vale quiere venir, solo que está ocupada.",
+      "options": [
+        "Vale wants to come, it's just that she's busy.",
+        "Vale wants to come because she's busy.",
+        "Vale only wants to come when she's busy."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Solo quiero un tinto.",
+      "options": [
+        "I want a coffee, it's just that…",
+        "I only want a coffee.",
+        "I want a coffee for myself."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El hotel es lindo, solo que queda lejos.",
+      "options": [
+        "The hotel is lovely, it's just far away.",
+        "The hotel is lovely, so it's far away.",
+        "The hotel is far away because it's lovely."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quiero ir, solo que no puedo.",
+      "options": [
+        "I want to go, so I can't.",
+        "I want to go, I just can't.",
+        "I can only go when I want."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás solo llegó a las ocho.",
+      "options": [
+        "Tomás arrived at eight, it's just that…",
+        "Tomás arrived at eight, so…",
+        "Tomás only arrived at eight."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La idea es buena, solo que necesita tiempo.",
+      "options": [
+        "The idea is good, it's just that it needs time.",
+        "The idea is good because it needs time.",
+        "The idea is good, so it needs time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me gusta la casa, solo que es pequeña.",
+      "options": [
+        "I like the house because it's small.",
+        "I like the house, it's just small.",
+        "I only like the house when it's small."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No es caro, solo que no tengo plata.",
+      "options": [
+        "It's not expensive, it's just that I have no money.",
+        "It's not expensive, so I have no money.",
+        "It's expensive, only I have money."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando solo toma tinto.",
+      "options": [
+        "Hernando only drinks black coffee.",
+        "Hernando drinks coffee, it's just that…",
+        "Hernando drinks coffee, so…"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right words and type the whole sentence: *La casa es linda, (solo que / porque) queda muy lejos.*",
+      "answer": "La casa es linda, solo que queda muy lejos.",
+      "accept": [],
+      "why": "You are adding a small limitation to something good, which is what *solo que* does."
+    },
+    {
+      "prompt": "Pick the right word and type the whole sentence: *El plan es bueno, (solo que / por eso) es un poco caro.*",
+      "answer": "El plan es bueno, solo que es un poco caro.",
+      "accept": [],
+      "why": "*Por eso* gives a result; *solo que* adds a snag."
+    },
+    {
+      "prompt": "Type it in Spanish: I'd love to go, it's just that I have no money.",
+      "answer": "Me encantaría ir, solo que no tengo plata.",
+      "accept": [
+        "Me encantaría ir, solo que no tengo dinero."
+      ],
+      "why": "*Solo que* sits after a comma and starts a new sentence."
+    },
+    {
+      "prompt": "Type it in Spanish: Rosa's café is the best, it's just that hardly anyone knows it.",
+      "answer": "El café de Rosa es el mejor, solo que casi nadie lo conoce.",
+      "accept": [],
+      "why": "The first half stays true; *solo que* adds the limit."
+    },
+    {
+      "prompt": "Type it in Spanish: I want to help you, it's just that I can't today.",
+      "answer": "Quiero ayudarte, solo que hoy no puedo.",
+      "accept": [
+        "Quiero ayudarte, solo que no puedo hoy."
+      ],
+      "why": "Either word order for *hoy* works."
+    },
+    {
+      "prompt": "Join the two sentences with *solo que*: *Quiero ir. No tengo tiempo.*",
+      "answer": "Quiero ir, solo que no tengo tiempo.",
+      "accept": [],
+      "why": "A comma and *solo que* replace the full stop."
+    },
+    {
+      "prompt": "Soften it with *solo que* instead of *pero*: *La idea es buena, pero necesita tiempo.*",
+      "answer": "La idea es buena, solo que necesita tiempo.",
+      "accept": [],
+      "why": "*Solo que* swaps in for *pero* and sounds gentler."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El plan es bueno, pero solo que es caro.",
+      "right": "El plan es bueno, solo que es caro.",
+      "why": "Almost. *Solo que* already does the job of *pero*, so you don't need both."
+    },
+    {
+      "wrong": "El plan es bueno solo que es caro.",
+      "right": "El plan es bueno, solo que es caro.",
+      "why": "Spanish puts a comma before *solo que*, like the pause in English."
+    },
+    {
+      "wrong": "Solo que quiero ir, solo que no puedo.",
+      "right": "Quiero ir, solo que no puedo.",
+      "why": "*Solo que* comes second, after the thing that is true. It doesn't open the sentence."
+    }
+  ],
+  "personal": "Tell us about something you like, with one small catch, using *solo que*."
+}

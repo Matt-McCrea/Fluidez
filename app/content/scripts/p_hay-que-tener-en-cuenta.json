@@ -1,0 +1,181 @@
+{
+  "node": "p:hay-que-tener-en-cuenta",
+  "hook": {
+    "line": "Every plan has one thing somebody forgot: the budget, the traffic, the neighbour who complains. When you want to put that thing on the table, this is the phrase.",
+    "es": "Hay que tener en cuenta que el presupuesto es limitado.",
+    "en": "We have to bear in mind that the budget is limited."
+  },
+  "examples": [
+    {
+      "es": "Hay que tener en cuenta que el presupuesto es limitado.",
+      "en": "We have to bear in mind that the budget is limited."
+    },
+    {
+      "es": "Hay que tener en cuenta el tráfico.",
+      "en": "You have to take the traffic into account."
+    },
+    {
+      "es": "Hay que tener en cuenta que Vale no trabaja los lunes.",
+      "en": "We have to bear in mind that Vale doesn't work on Mondays."
+    },
+    {
+      "es": "Hay que tener en cuenta que la fuente es anónima.",
+      "en": "We have to bear in mind that the source is anonymous."
+    },
+    {
+      "es": "No hay que tener en cuenta los rumores.",
+      "en": "We shouldn't take the rumours into account."
+    },
+    {
+      "es": "¿Qué hay que tener en cuenta?",
+      "en": "What do we have to bear in mind?"
+    }
+  ],
+  "rule": "*Hay que tener en cuenta* flags something that must weigh on the decision. It is not an aside: it is a real limit on the conclusion.\n\nAfter it comes either a thing or a full sentence with *que*: *hay que tener en cuenta el tráfico*, *hay que tener en cuenta que el presupuesto es limitado*. The verb after *que* is in the ordinary indicative.\n\n*Hay que* has no subject, like English \"one has to\". Add *no* in front and it means \"there's no need to\": *no hay que tener en cuenta los rumores*.",
+  "smallPrint": "Teachers call *hay que* an impersonal obligation. The frame is neutral to formal, so it suits reports and meetings.",
+  "readAndPick": [
+    {
+      "es": "Hay que tener en cuenta el tráfico.",
+      "options": [
+        "We have to take the traffic into account.",
+        "We took the traffic into account.",
+        "We don't have to think about traffic."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No hay que tener en cuenta los rumores.",
+      "options": [
+        "We have to take the rumours into account.",
+        "We shouldn't take the rumours into account.",
+        "We took the rumours into account."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hay que tener en cuenta que la fuente es anónima.",
+      "options": [
+        "We have to bear in mind that the source is anonymous.",
+        "We have to find an anonymous source.",
+        "We forgot that the source is anonymous."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tuvimos en cuenta el tráfico.",
+      "options": [
+        "We have to consider traffic.",
+        "We will consider traffic.",
+        "We took traffic into account."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tengo que tener en cuenta la hora.",
+      "options": [
+        "One has to consider the time.",
+        "I have to consider the time.",
+        "We have to consider the time."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué hay que tener en cuenta?",
+      "options": [
+        "What did we consider?",
+        "What do we have to bear in mind?",
+        "Who has to bear it in mind?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Habrá que tener en cuenta la lluvia.",
+      "options": [
+        "We will have to take the rain into account.",
+        "We had to take the rain into account.",
+        "We don't need to think about rain."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hubo que tener en cuenta que era tarde.",
+      "options": [
+        "We have to remember it is late.",
+        "We had to bear in mind that it was late.",
+        "We will have to remember it is late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tuvieron en cuenta el precio.",
+      "options": [
+        "They didn't take the price into account.",
+        "They don't have to consider the price.",
+        "We didn't take the price into account."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right word and type the whole sentence: *Hay que tener (en cuenta / a cuenta) el tráfico.*",
+      "answer": "Hay que tener en cuenta el tráfico.",
+      "accept": [],
+      "why": "The fixed phrase is *tener en cuenta*, \"to take into account\"."
+    },
+    {
+      "prompt": "Pick the right word and type the whole sentence: *Hay que tener en cuenta (el / que el) presupuesto es limitado.*",
+      "answer": "Hay que tener en cuenta que el presupuesto es limitado.",
+      "accept": [],
+      "why": "A full sentence needs *que* in front of it; a plain thing does not."
+    },
+    {
+      "prompt": "Type it in Spanish: We have to bear in mind that Vale doesn't work on Mondays.",
+      "answer": "Hay que tener en cuenta que Vale no trabaja los lunes.",
+      "accept": [],
+      "why": "*Hay que tener en cuenta que* plus an ordinary sentence in the indicative."
+    },
+    {
+      "prompt": "Type it in Spanish: You have to take the traffic into account.",
+      "answer": "Hay que tener en cuenta el tráfico.",
+      "accept": [],
+      "why": "A thing follows directly, with no *que*."
+    },
+    {
+      "prompt": "Type it in Spanish: What do we have to bear in mind?",
+      "answer": "¿Qué hay que tener en cuenta?",
+      "accept": [],
+      "why": "The question word goes first and the phrase stays the same."
+    },
+    {
+      "prompt": "Make it negative: *Hay que tener en cuenta los rumores.*",
+      "answer": "No hay que tener en cuenta los rumores.",
+      "accept": [],
+      "why": "*No* goes right before *hay*."
+    },
+    {
+      "prompt": "Make it about the past (we had to): *Hay que tener en cuenta la hora.*",
+      "answer": "Hubo que tener en cuenta la hora.",
+      "accept": [],
+      "why": "*Hay que* moves to *hubo que* for a single moment in the past."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Hay que tener en cuenta que el tráfico.",
+      "right": "Hay que tener en cuenta el tráfico.",
+      "why": "Almost. *Que* introduces a full sentence with its own verb; for just a noun, leave it out."
+    },
+    {
+      "wrong": "Hay que tener en cuenta de que el presupuesto es limitado.",
+      "right": "Hay que tener en cuenta que el presupuesto es limitado.",
+      "why": "Spanish says *tener en cuenta que*, with no *de* in the middle."
+    },
+    {
+      "wrong": "Hay que tener cuenta el tráfico.",
+      "right": "Hay que tener en cuenta el tráfico.",
+      "why": "The fixed phrase needs the *en*: *tener en cuenta*."
+    }
+  ],
+  "personal": "Say one true thing someone has to bear in mind about you or your week, starting with *Hay que tener en cuenta que…*."
+}

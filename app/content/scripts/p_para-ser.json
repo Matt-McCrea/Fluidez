@@ -1,0 +1,189 @@
+{
+  "node": "p:para-ser",
+  "hook": {
+    "line": "A compliment with a built-in expectation: \"for a beginner, that's good\". Spanish does it with *para*, but not the *para* you know from \"in order to\".",
+    "es": "No está mal para ser la primera vez.",
+    "en": "Not bad for a first time."
+  },
+  "examples": [
+    {
+      "es": "No está mal para ser la primera vez.",
+      "en": "Not bad for a first time."
+    },
+    {
+      "es": "Para ser tan joven, sabe mucho.",
+      "en": "For someone so young, she knows a lot."
+    },
+    {
+      "es": "Habla muy bien para llevar solo un año aquí.",
+      "en": "He speaks very well considering he's only been here a year."
+    },
+    {
+      "es": "Para ser apenas las ocho, ya hay mucho tráfico.",
+      "en": "For only eight o'clock, there's already a lot of traffic."
+    },
+    {
+      "es": "Para ser un martes, hay mucha gente en el café.",
+      "en": "For a Tuesday, there are a lot of people in the café."
+    },
+    {
+      "es": "La torta quedó muy buena para ser la primera vez.",
+      "en": "The cake came out very good for a first time."
+    }
+  ],
+  "rule": "Here *para* doesn't mean purpose. It means \"considering\" or \"for\": you measure something against what you would normally expect. *Para ser tan joven, sabe mucho.*\n\nThe pattern is *para ser* plus a noun or description, or *para llevar* plus a length of time: *habla bien para llevar un año aquí*. It can come first or last in the sentence.\n\nDon't swap in *por*. *Por ser tan joven* gives a cause (\"because he's so young\"). *Para ser tan joven* gives a surprise (\"for someone so young\").",
+  "smallPrint": "Teachers call this *para* of comparison or concession. The set phrase *para ser sincero* (\"to be honest\") is different.",
+  "readAndPick": [
+    {
+      "es": "Para ser tan joven, sabe mucho.",
+      "options": [
+        "For someone so young, she knows a lot.",
+        "Because she is so young, she knows a lot.",
+        "She is young in order to know a lot."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por ser tan joven, no la contrataron.",
+      "options": [
+        "For someone so young, they didn't hire her.",
+        "Because she is so young, they didn't hire her.",
+        "They didn't hire her to be young."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No está mal para ser la primera vez.",
+      "options": [
+        "Not bad for a first time.",
+        "It's bad because it's the first time.",
+        "It isn't the first time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estudia para ser médico.",
+      "options": [
+        "He's quite good for a doctor.",
+        "He studies in order to be a doctor.",
+        "He studies because he is a doctor."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Habla muy bien para llevar solo un año aquí.",
+      "options": [
+        "He speaks well in order to stay a year.",
+        "He speaks very well, considering he's only been here a year.",
+        "He has been here a year because he speaks well."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Para ser un martes, hay mucha gente.",
+      "options": [
+        "For a Tuesday, there are a lot of people.",
+        "It is Tuesday in order to have people.",
+        "There are people because it's Tuesday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por ser un martes, hay poca gente.",
+      "options": [
+        "For a Tuesday, there are few people.",
+        "Because it's a Tuesday, there are few people.",
+        "There are few people to be a Tuesday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La torta quedó muy buena para ser la primera vez.",
+      "options": [
+        "The cake was very good because it was the first time.",
+        "The cake was very good for a first time.",
+        "The cake was made for the first time."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Trabajo para ser mejor.",
+      "options": [
+        "I work to be better.",
+        "I'm good for someone who works.",
+        "I work because I'm better."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right word and type the whole sentence: *(Para / Por) ser tan joven, sabe mucho.* (a surprise)",
+      "answer": "Para ser tan joven, sabe mucho.",
+      "accept": [],
+      "why": "A surprise measured against what you would expect takes *para*."
+    },
+    {
+      "prompt": "Pick the right word and type the whole sentence: *(Para / Por) ser tan joven, no la contrataron.* (a cause)",
+      "answer": "Por ser tan joven, no la contrataron.",
+      "accept": [],
+      "why": "A cause, \"because\", takes *por*."
+    },
+    {
+      "prompt": "Type it in Spanish: Not bad for a first time.",
+      "answer": "No está mal para ser la primera vez.",
+      "accept": [],
+      "why": "*No está mal* plus *para ser* and the thing you are comparing with."
+    },
+    {
+      "prompt": "Type it in Spanish: For a Tuesday, there are a lot of people in the café.",
+      "answer": "Para ser un martes, hay mucha gente en el café.",
+      "accept": [
+        "Hay mucha gente en el café para ser un martes."
+      ],
+      "why": "*Para ser* plus the noun, and it can sit at either end."
+    },
+    {
+      "prompt": "Type it in Spanish: He speaks very well considering he's only been here a year.",
+      "answer": "Habla muy bien para llevar solo un año aquí.",
+      "accept": [
+        "Para llevar solo un año aquí, habla muy bien."
+      ],
+      "why": "With a length of time, use *para llevar*."
+    },
+    {
+      "prompt": "Type it in Spanish: For only eight o'clock, there's already a lot of traffic.",
+      "answer": "Para ser apenas las ocho, ya hay mucho tráfico.",
+      "accept": [
+        "Ya hay mucho tráfico para ser apenas las ocho."
+      ],
+      "why": "*Para ser apenas* plus the time."
+    },
+    {
+      "prompt": "Say it as a compliment to a friend: the cake came out good, and it was your first time.",
+      "answer": "La torta quedó muy buena para ser la primera vez.",
+      "accept": [
+        "La torta quedó buena para ser la primera vez."
+      ],
+      "why": "*Para ser la primera vez* is the standard \"for a first time\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Por ser tan joven, sabe mucho.",
+      "right": "Para ser tan joven, sabe mucho.",
+      "why": "Almost. *Por* would mean \"because he's young\", which makes no sense here; \"for someone so young\" takes *para*."
+    },
+    {
+      "wrong": "Habla muy bien para tener un año aquí.",
+      "right": "Habla muy bien para llevar un año aquí.",
+      "why": "For a length of time, Spanish says *llevar*: *llevar un año aquí*."
+    },
+    {
+      "wrong": "No está mal por la primera vez.",
+      "right": "No está mal para ser la primera vez.",
+      "why": "Say *para ser* here, not *por*."
+    }
+  ],
+  "personal": "Give yourself a compliment that comes with an excuse, using *para ser* or *para llevar*."
+}

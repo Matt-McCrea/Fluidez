@@ -1,0 +1,197 @@
+{
+  "node": "p:provocar-ocasionar",
+  "hook": {
+    "line": "News stories are mostly about cause and effect: the rain, the delay, the quote that started a fight. Spanish has a small set of verbs for \"caused\", and journalists use them all day.",
+    "es": "El retraso ocasionó muchas quejas.",
+    "en": "The delay caused a lot of complaints."
+  },
+  "examples": [
+    {
+      "es": "El retraso ocasionó muchas quejas.",
+      "en": "The delay caused a lot of complaints."
+    },
+    {
+      "es": "Sus declaraciones provocaron una gran polémica.",
+      "en": "His statements sparked a huge controversy."
+    },
+    {
+      "es": "La lluvia causó inundaciones.",
+      "en": "The rain caused flooding."
+    },
+    {
+      "es": "La noticia generó mucha confusión.",
+      "en": "The news created a lot of confusion."
+    },
+    {
+      "es": "El accidente provocó un trancón enorme.",
+      "en": "The accident caused a huge traffic jam."
+    },
+    {
+      "es": "El incendio fue provocado por un cigarrillo.",
+      "en": "The fire was caused by a cigarette."
+    }
+  ],
+  "rule": "To say that one thing caused another, make the cause the subject: *la lluvia causó inundaciones*. The verbs are *causar*, *ocasionar*, *provocar* and *generar*.\n\n*Causar* is neutral. *Ocasionar* is a little more formal. *Provocar* often suggests something stirred up, like a controversy. *Generar* is very common in Latin American news.\n\nThe verb agrees with the cause: *sus declaraciones provocaron*. To put the effect first, use the participle: *fue provocado por un cigarrillo*. English \"by\" is *por*.",
+  "smallPrint": "Teachers call these causative verbs. Another one to keep for later: *surgir*, \"to arise\", as in *surgió un problema*.",
+  "readAndPick": [
+    {
+      "es": "La lluvia causó inundaciones.",
+      "options": [
+        "The rain caused flooding.",
+        "The flooding caused rain.",
+        "Rain was caused by flooding."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La polémica provocó un escándalo.",
+      "options": [
+        "The scandal caused the controversy.",
+        "The controversy caused a scandal.",
+        "The controversy was caused by a scandal."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El incendio fue provocado por un cigarrillo.",
+      "options": [
+        "The fire caused a cigarette.",
+        "The fire was caused by a cigarette.",
+        "The cigarette was caused by a fire."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Sus declaraciones provocaron una gran polémica.",
+      "options": [
+        "His statement sparked a huge controversy.",
+        "His statements sparked a huge controversy.",
+        "He sparked a huge controversy with a statement."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La declaración provocó una gran polémica.",
+      "options": [
+        "His statements sparked a huge controversy.",
+        "The statement sparked a huge controversy.",
+        "The controversy sparked a statement."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El retraso ocasionó muchas quejas.",
+      "options": [
+        "Many complaints caused the delay.",
+        "The delay caused a lot of complaints.",
+        "The delay was caused by complaints."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las quejas fueron ocasionadas por el retraso.",
+      "options": [
+        "The complaints were caused by the delay.",
+        "The complaints caused the delay.",
+        "The delay was caused by the complaints."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La noticia generó mucha confusión.",
+      "options": [
+        "The confusion generated the news.",
+        "The news created a lot of confusion.",
+        "The news was created by confusion."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El accidente provocó un trancón enorme.",
+      "options": [
+        "A huge traffic jam caused the accident.",
+        "The accident caused a huge traffic jam.",
+        "The accident was caused by a traffic jam."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Sus declaraciones (provocó / provocaron) una gran polémica.*",
+      "answer": "Sus declaraciones provocaron una gran polémica.",
+      "accept": [],
+      "why": "The verb matches the cause, and *declaraciones* is plural."
+    },
+    {
+      "prompt": "Pick the right word and type the whole sentence: *El incendio fue provocado (por / de) un cigarrillo.*",
+      "answer": "El incendio fue provocado por un cigarrillo.",
+      "accept": [],
+      "why": "\"Caused by\" takes *por*."
+    },
+    {
+      "prompt": "Type it in Spanish: The rain caused flooding.",
+      "answer": "La lluvia causó inundaciones.",
+      "accept": [
+        "La lluvia ocasionó inundaciones.",
+        "La lluvia provocó inundaciones.",
+        "La lluvia generó inundaciones."
+      ],
+      "why": "The cause is the subject, followed by the verb and the effect."
+    },
+    {
+      "prompt": "Type it in Spanish: The delay caused a lot of complaints.",
+      "answer": "El retraso ocasionó muchas quejas.",
+      "accept": [
+        "El retraso causó muchas quejas.",
+        "El retraso provocó muchas quejas.",
+        "El retraso generó muchas quejas."
+      ],
+      "why": "Any of the four verbs works; the verb is singular because *retraso* is."
+    },
+    {
+      "prompt": "Type it in Spanish: The accident caused a huge traffic jam.",
+      "answer": "El accidente provocó un trancón enorme.",
+      "accept": [
+        "El accidente causó un trancón enorme.",
+        "El accidente ocasionó un trancón enorme.",
+        "El accidente generó un trancón enorme."
+      ],
+      "why": "One accident, so *provocó*; the traffic jam is what results."
+    },
+    {
+      "prompt": "Type it in Spanish: The news created a lot of confusion.",
+      "answer": "La noticia generó mucha confusión.",
+      "accept": [
+        "La noticia causó mucha confusión.",
+        "La noticia provocó mucha confusión.",
+        "La noticia ocasionó mucha confusión."
+      ],
+      "why": "*Generó* is the usual verb in news, but the others also fit."
+    },
+    {
+      "prompt": "Flip it so the effect comes first (passive): *Un cigarrillo provocó el incendio.*",
+      "answer": "El incendio fue provocado por un cigarrillo.",
+      "accept": [],
+      "why": "The effect becomes the subject and the cause follows *por*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Sus declaraciones provocó una polémica.",
+      "right": "Sus declaraciones provocaron una polémica.",
+      "why": "Almost. The verb agrees with the cause, and *declaraciones* is plural."
+    },
+    {
+      "wrong": "El incendio fue provocado de un cigarrillo.",
+      "right": "El incendio fue provocado por un cigarrillo.",
+      "why": "\"Caused by\" is *provocado por*."
+    },
+    {
+      "wrong": "Hubo inundaciones porque la lluvia.",
+      "right": "La lluvia causó inundaciones.",
+      "why": "*Porque* needs a whole clause. With just a noun for the cause, use a verb like *causar*."
+    }
+  ],
+  "personal": "Say what caused something that happened in your week, such as a delay or a surprise, using *causó*, *provocó* or *generó*."
+}
