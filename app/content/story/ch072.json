@@ -1,0 +1,275 @@
+{
+  "id": "ch072",
+  "unit": "u24",
+  "title": "La servilleta",
+  "text": "Cenaron a las nueve, solos, en la mesa de la ventana. Simón dormía en la planta, con un oído abierto.\nTomás tomó una servilleta y el lapicero de Rosa.\nTomás: A la izquierda, las ventajas de Chapinero. A la derecha, las desventajas.\nVale: Primero las ventajas. Allá hay tanta luz como en Medellín.\nTomás: Y no hay tanto ruido como aquí.\nVale: Y son dos años sin arriendo. Eso es mucha plata.\nLa lista de la izquierda avanzaba rápido.\nTomás: Ahora las desventajas.\nVale: El problema es que no es nuestro. Es de Altamira.\nTomás: Y allá no conocemos a nadie. Hace cuarenta años que Hernando viene aquí todos los días.\nTomás: ¿Y tu mamá?\nVale: Mi mamá quiere a Medellín tanto como yo quiero esta esquina. Aunque Medellín es bonito, mi casa es esta.\nTomás escribió una sola palabra en el lado derecho: «alma».\nTomás: Chapinero tiene paredes nuevas. Este café tiene alma.\nVale tomó el lapicero y escribió abajo, en grande: «NO». Los dos firmaron.\nVale: ¿Y Simón? ¿Qué dice Simón?\nSimón: ¡Qué va! ¡Qué va!\nAl otro día, Altamira llegó a las ocho. Tomás le dio la servilleta.\nAltamira: ¿Una servilleta? ¿Esa es su respuesta?\nTomás: No es una servilleta, sino un contrato. Lo firmamos los dos.\nAltamira leyó la servilleta despacio, y sonrió.\nAltamira: Es una pena, señor Herrera. Una verdadera pena.\nNo pidió tinto, y se fue.\nA las once llamó la mamá de Vale.\nBeatriz: Mija, vengan a la Feria de las Flores, los dos. Hay algo de Rosa que les tengo que contar.",
+  "gloss": [
+    {
+      "es": "servilleta",
+      "en": "napkin"
+    },
+    {
+      "es": "con un oído abierto",
+      "en": "with one ear open"
+    },
+    {
+      "es": "el lapicero de Rosa",
+      "en": "Rosa's pen"
+    },
+    {
+      "es": "tanta luz como en Medellín",
+      "en": "as much light as in Medellín"
+    },
+    {
+      "es": "no hay tanto ruido como aquí",
+      "en": "there isn't as much noise as here"
+    },
+    {
+      "es": "La lista de la izquierda avanzaba rápido.",
+      "en": "The list on the left grew fast."
+    },
+    {
+      "es": "Hace cuarenta años que Hernando viene aquí todos los días.",
+      "en": "Hernando has come here every day for forty years."
+    },
+    {
+      "es": "Mi mamá quiere a Medellín tanto como yo quiero esta esquina.",
+      "en": "My mum loves Medellín as much as I love this corner."
+    },
+    {
+      "es": "Aunque Medellín es bonito, mi casa es esta.",
+      "en": "Even though Medellín is lovely, this is my home."
+    },
+    {
+      "es": "en el lado derecho",
+      "en": "on the right-hand side"
+    },
+    {
+      "es": "en grande",
+      "en": "in big letters"
+    },
+    {
+      "es": "Es una pena, señor Herrera.",
+      "en": "It's a pity, Mr Herrera."
+    },
+    {
+      "es": "Una verdadera pena.",
+      "en": "A real pity."
+    },
+    {
+      "es": "la Feria de las Flores",
+      "en": "the Flower Fair (Medellín's big festival in August)"
+    },
+    {
+      "es": "Hay algo de Rosa que les tengo que contar.",
+      "en": "There's something about Rosa I have to tell you both."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What goes on the left-hand side of the napkin?",
+      "options": [
+        "The reasons against Chapinero",
+        "The reasons for Chapinero: light, less noise, two years without rent",
+        "The café's accounts",
+        "Joaquín's address"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Tomás write on the right-hand side?",
+      "options": [
+        "A long list of problems",
+        "Rosa's name",
+        "Only one word: soul",
+        "The price of the flat"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Qué escribe Vale abajo, en grande?",
+      "options": [
+        "NO",
+        "SÍ",
+        "Alma",
+        "Chapinero"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Altamira react to the answer?",
+      "options": [
+        "He shouts and throws the napkin",
+        "He smiles and says it's a pity",
+        "He orders a tinto and stays",
+        "He offers more money"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Vale's mother call?",
+      "options": [
+        "She is ill",
+        "She wants them both at the Flower Fair, to tell them something about Rosa",
+        "She has sold Vale's room",
+        "She wants a cake"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Vale's mother wants them both in Medellín for the Flower Fair, with something about Rosa she has kept to herself for years. And Hernando has already decided he is coming too.",
+  "rereadQuestions": [
+    {
+      "q": "Where is Simón during dinner?",
+      "options": [
+        "In the kitchen",
+        "On Hernando's shoulder",
+        "Asleep in the plant, with one ear open",
+        "At Gloria's house"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Altamira not do this time?",
+      "options": [
+        "He doesn't order a tinto",
+        "He doesn't read the napkin",
+        "He doesn't smile",
+        "He doesn't come in"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who has come to the café every day for forty years?",
+      "options": [
+        "Gloria",
+        "Hernando",
+        "Jhon Fredy",
+        "Beatriz"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:es-que",
+    "c:hay",
+    "c:que-va",
+    "c:quiero",
+    "c:sera-otro-dia",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:aunque-indicative",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:pero-sino",
+    "g:possessives",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:tanto-como",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:indefinites-basic",
+    "p:ir-venir",
+    "p:los-garcia",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ],
+  "lexemes": [
+    "l:abajo",
+    "l:abrir",
+    "l:ahora",
+    "l:allá",
+    "l:alma",
+    "l:aquí",
+    "l:arriendo",
+    "l:avanzar",
+    "l:año",
+    "l:bonito",
+    "l:café",
+    "l:casa",
+    "l:cenar",
+    "l:conocer",
+    "l:contar",
+    "l:contrato",
+    "l:dar",
+    "l:decir",
+    "l:derecha",
+    "l:derecho",
+    "l:despacio",
+    "l:desventaja",
+    "l:dormir",
+    "l:día",
+    "l:escribir",
+    "l:esquina",
+    "l:firmar",
+    "l:grande",
+    "l:hacer",
+    "l:ir",
+    "l:irse",
+    "l:izquierda",
+    "l:lado",
+    "l:leer",
+    "l:listo",
+    "l:llamar",
+    "l:llegar",
+    "l:luz",
+    "l:mamá",
+    "l:mesa",
+    "l:mija",
+    "l:nuevo",
+    "l:oído",
+    "l:palabra",
+    "l:pared",
+    "l:pedir",
+    "l:pena",
+    "l:planta",
+    "l:plata",
+    "l:problema",
+    "l:querer",
+    "l:qué",
+    "l:respuesta",
+    "l:ruido",
+    "l:rápido",
+    "l:ser",
+    "l:servilleta",
+    "l:señor",
+    "l:sonreír",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:venir",
+    "l:ventaja",
+    "l:ventana",
+    "l:verdadero"
+  ]
+}

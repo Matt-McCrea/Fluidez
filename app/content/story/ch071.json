@@ -1,0 +1,255 @@
+{
+  "id": "ch071",
+  "unit": "u24",
+  "title": "Estrato cuatro",
+  "text": "A las seis, doña Gloria tenía el desayuno listo, y al lado del pan estaba su celular, con un apartamento en arriendo.\nGloria: Mijo, usted ya es dueño de un café. Tiene que mudarse a un apartamento de verdad.\nTomás: ¿Usted me está echando?\nGloria: ¡Qué va! Lea.\n«Apartamento amplio y luminoso en Chapinero. Conjunto cerrado con portero. Estrato cuatro. Administración barata. Cerca del transporte».\nTomás: ¿Estrato cuatro? ¿Y esta casa?\nGloria: Estrato dos, mijo. Y muy contenta.\nEn el café, Vale tenía una postal de su mamá, desde Medellín.\n«Mija: su cuarto está listo. Si quiere mudarse, yo pago el trasteo. Medellín no es peligroso, y Bogotá sí. Mamá».\nVale: Mi mamá no escribe postales. Mi mamá da órdenes.\nPor la tarde, fueron a Chapinero. El apartamento era amplio y luminoso, con una ventana enorme.\nTomás: Lo bueno es que no hay ruido. En La Candelaria hay ruido todo el día.\nSeñora de la administración: El conjunto es nuevo, y el transporte es excelente. Lo hizo el Grupo Altamira. Al frente va a abrir un café muy moderno.\nTomás: ¿Un café al frente?\nTomás: Vamos a comparar. Ventajas y desventajas.\nVale: Yo ya las comparé. Chapinero es moderno y tranquilo. La Candelaria es vieja, ruidosa y peligrosa. Y es la única que quiero.\nTomás: Esa es una desventaja muy grande.\nVale: No te rías. Mi mamá quiere un trasteo, Altamira quiere otro, y yo no quiero escoger.\nTomás: Yo tampoco. Esta noche escogemos juntos.\nSimón los esperaba en la puerta del café.\nSimón: ¡Qué ruidoso! ¡Qué ruidoso!",
+  "gloss": [
+    {
+      "es": "¿Estrato cuatro?",
+      "en": "Band four? (Bogotá rates every area from one to six.)"
+    },
+    {
+      "es": "¿Usted me está echando?",
+      "en": "Are you throwing me out?"
+    },
+    {
+      "es": "un apartamento de verdad",
+      "en": "a proper flat"
+    },
+    {
+      "es": "Conjunto cerrado con portero.",
+      "en": "Gated complex with a doorman."
+    },
+    {
+      "es": "Administración barata.",
+      "en": "Low building fees."
+    },
+    {
+      "es": "Estrato dos, mijo. Y muy contenta.",
+      "en": "Band two, son. And very happy with it."
+    },
+    {
+      "es": "Mi mamá da órdenes.",
+      "en": "My mum gives orders."
+    },
+    {
+      "es": "Lo hizo el Grupo Altamira.",
+      "en": "Grupo Altamira built it."
+    },
+    {
+      "es": "Al frente va a abrir un café muy moderno.",
+      "en": "A very modern café is going to open opposite."
+    },
+    {
+      "es": "Yo ya las comparé.",
+      "en": "I've already compared them."
+    },
+    {
+      "es": "Y es la única que quiero.",
+      "en": "And it's the only one I want."
+    },
+    {
+      "es": "No te rías.",
+      "en": "Don't laugh."
+    },
+    {
+      "es": "Estrato cuatro.",
+      "en": "Band four."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Gloria show Tomás the flat?",
+      "options": [
+        "She wants his room for her cat",
+        "She thinks the owner of a café should move into a proper flat",
+        "Altamira asked her to",
+        "The shower in her house is broken"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Vale's mother's postcard say?",
+      "options": [
+        "That she is coming to Bogotá",
+        "That Vale's room is ready, she'll pay for the move, and Bogotá is dangerous",
+        "That Rosa was her best friend",
+        "That Vale must sell the café"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What do Tomás and Vale find out in Chapinero?",
+      "options": [
+        "The flat is very noisy",
+        "The flat is in estrato two",
+        "Grupo Altamira built the complex, and a modern café will open opposite",
+        "Hernando lives in the same building"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Cómo es el apartamento de Chapinero?",
+      "options": [
+        "Amplio y luminoso.",
+        "Viejo y ruidoso.",
+        "Pequeño y oscuro.",
+        "Peligroso."
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tonight, after closing, Tomás and Vale sit down to weigh it all up, reason by reason. In the morning Altamira comes back for his answer.",
+  "rereadQuestions": [
+    {
+      "q": "What estrato is Gloria's house?",
+      "options": [
+        "Six",
+        "Four",
+        "Two",
+        "One"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "How does Vale describe La Candelaria?",
+      "options": [
+        "Modern and quiet",
+        "Old, noisy and dangerous, and the only place she wants",
+        "Expensive and far away",
+        "Bright and spacious"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who is waiting at the café door?",
+      "options": [
+        "Altamira",
+        "Gloria",
+        "Vale's mother",
+        "Simón"
+      ],
+      "answer": 3
+    }
+  ],
+  "requires": [
+    "c:en-serio",
+    "c:era",
+    "c:es-que",
+    "c:hay",
+    "c:lo-bueno-es",
+    "c:que-va",
+    "c:quiero",
+    "c:tienes",
+    "c:tranquilo",
+    "c:vamos-a",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:negative-commands",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:cerca-de",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:ser-profession-no-article",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:administración",
+    "l:amplio",
+    "l:apartamento",
+    "l:arriendo",
+    "l:barato",
+    "l:bueno",
+    "l:café",
+    "l:casa",
+    "l:celular",
+    "l:cerca",
+    "l:cerrar",
+    "l:comparar",
+    "l:conjunto",
+    "l:contento",
+    "l:dar",
+    "l:desayuno",
+    "l:desventaja",
+    "l:dueño",
+    "l:día",
+    "l:echar",
+    "l:enorme",
+    "l:escoger",
+    "l:escribir",
+    "l:esperar",
+    "l:estar",
+    "l:estrato",
+    "l:excelente",
+    "l:frente",
+    "l:grande",
+    "l:hacer",
+    "l:ir",
+    "l:juntos",
+    "l:lado",
+    "l:leer",
+    "l:listo",
+    "l:luminoso",
+    "l:mamá",
+    "l:mija",
+    "l:mijo",
+    "l:moderno",
+    "l:mudarse",
+    "l:noche",
+    "l:nuevo",
+    "l:orden",
+    "l:pagar",
+    "l:pan",
+    "l:peligroso",
+    "l:portero",
+    "l:postal",
+    "l:puerta",
+    "l:querer",
+    "l:qué",
+    "l:reír",
+    "l:ruido",
+    "l:ruidoso",
+    "l:ser",
+    "l:señora",
+    "l:tarde",
+    "l:tener",
+    "l:tranquilo",
+    "l:transporte",
+    "l:trasteo",
+    "l:ventaja",
+    "l:ventana",
+    "l:verdad",
+    "l:viejo",
+    "l:único"
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "id": "ch070",
+  "unit": "u24",
+  "title": "Dos años sin arriendo",
+  "text": "Esta vez, Ricardo Altamira no mandó una carta. Entró solo, sin sus hombres de traje, y pidió un tinto.\nAltamira: Señor Herrera, ya sé que Joaquín tiene la mitad. Yo también lo estoy buscando. Y tengo más abogados que usted.\nAltamira puso tres fotos en la mesa: un espacio enorme y moderno, con una cocina nueva y una vista maravillosa de la ciudad.\nAltamira: Es en Chapinero, y es mucho más grande que este café. Dos años sin arriendo, y yo cubro la mudanza.\nVale miró la foto de la cocina un rato largo.\nVale: ¿Y a cambio de qué?\nAltamira: A cambio, ustedes dejan la esquina, y usted me vende su mitad.\nTomás: Por un lado, es un regalo. Por otro lado, usted no regala nada.\nAltamira: No es un regalo, sino un negocio. Lo bueno es que no tienen que decidir hoy.\nHernando: Este café no es un negocio, sino un hogar. Rosa trabajó en esta esquina toda la vida.\nAltamira: Lo siento, Hernando, pero Rosa ya no está.\nPor un momento, nadie habló. Altamira pagó el tinto, y no esperó el cambio.\nEn la puerta, miró a Simón.\nAltamira: En Chapinero también hay espacio para el loro.\nSimón: ¡No me convence!\nHernando se rió tanto que tuvo que sentarse.\nEsa noche, Tomás no se durmió. A las tres de la mañana, Vale recibió un mensaje de Tomás: «¿Duermes?».\nVale: «No. Yo tampoco me duermo. La oferta no me convence, pero la cocina de las fotos es maravillosa».\nTomás miró la pared hasta las cinco.",
+  "gloss": [
+    {
+      "es": "sin sus hombres de traje",
+      "en": "without his men in suits"
+    },
+    {
+      "es": "ya sé que Joaquín tiene la mitad",
+      "en": "I already know Joaquín owns half"
+    },
+    {
+      "es": "Y tengo más abogados que usted.",
+      "en": "And I have more lawyers than you."
+    },
+    {
+      "es": "una vista maravillosa de la ciudad",
+      "en": "a wonderful view of the city"
+    },
+    {
+      "es": "mudanza",
+      "en": "move (taking everything to a new place)"
+    },
+    {
+      "es": "yo cubro la mudanza",
+      "en": "I'll cover the move"
+    },
+    {
+      "es": "¿Y a cambio de qué?",
+      "en": "And in exchange for what?"
+    },
+    {
+      "es": "usted me vende su mitad",
+      "en": "you sell me your half"
+    },
+    {
+      "es": "No es un regalo, sino un negocio.",
+      "en": "It isn't a gift, it's a business deal."
+    },
+    {
+      "es": "un hogar",
+      "en": "a home"
+    },
+    {
+      "es": "Rosa ya no está.",
+      "en": "Rosa is gone."
+    },
+    {
+      "es": "no esperó el cambio",
+      "en": "didn't wait for his change"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "se rió tanto que tuvo que sentarse",
+      "en": "laughed so hard he had to sit down"
+    },
+    {
+      "es": "no se durmió",
+      "en": "didn't get to sleep"
+    },
+    {
+      "es": "¿Duermes?",
+      "en": "Are you asleep?"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Altamira offer the café?",
+      "options": [
+        "A bigger, modern space in Chapinero, two years without rent, and he pays for the move",
+        "A job as director of a hotel in the west",
+        "A loan to pay the inspector's fine",
+        "Joaquín's address on the coast"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does he want in exchange?",
+      "options": [
+        "Simón",
+        "Rosa's recipes",
+        "For them to leave the corner and for Tomás to sell him his half",
+        "A coffee every morning for free"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Qué dice Hernando del café?",
+      "options": [
+        "Es un negocio.",
+        "Es un hogar.",
+        "Es un regalo.",
+        "Es una oferta."
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why can't Vale sleep?",
+      "options": [
+        "Simón is too noisy",
+        "The offer doesn't convince her, but she loved the kitchen in the photos",
+        "She is angry with Tomás",
+        "She has to bake a cake at three"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "In the morning, Doña Gloria has a flat in Chapinero waiting for Tomás, and a postcard from Medellín has arrived for Vale. Suddenly everybody has an opinion about where they should live.",
+  "rereadQuestions": [
+    {
+      "q": "What does Altamira say about Joaquín?",
+      "options": [
+        "That Joaquín is dead",
+        "That he is looking for him too, with more lawyers than Tomás",
+        "That Joaquín already sold him his half",
+        "That he has never heard of him"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How does Altamira pay for his tinto?",
+      "options": [
+        "He doesn't pay",
+        "With a card",
+        "With a big note, and he doesn't wait for his change",
+        "Hernando pays for him"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Who sends the message at three in the morning?",
+      "options": [
+        "Vale",
+        "Altamira",
+        "Hernando",
+        "Tomás"
+      ],
+      "answer": 3
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:es-que",
+    "c:hay",
+    "c:lo-bueno-es",
+    "c:no-me-convence",
+    "c:no-se",
+    "c:por-un-lado",
+    "c:tengo",
+    "c:tienes",
+    "c:trabajo-en",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:negation-words",
+    "g:pero-sino",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:con-sin",
+    "p:demonstratives-basic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:todos-los-dias"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:arriendo",
+    "l:año",
+    "l:bueno",
+    "l:buscar",
+    "l:café",
+    "l:cambio",
+    "l:carta",
+    "l:ciudad",
+    "l:cocina",
+    "l:convencer",
+    "l:cubrir",
+    "l:decidir",
+    "l:dejar",
+    "l:dormir",
+    "l:dormirse",
+    "l:enorme",
+    "l:entrar",
+    "l:espacio",
+    "l:esperar",
+    "l:esquina",
+    "l:estar",
+    "l:foto",
+    "l:grande",
+    "l:hablar",
+    "l:hogar",
+    "l:hombre",
+    "l:hoy",
+    "l:lado",
+    "l:largo",
+    "l:loro",
+    "l:mandar",
+    "l:maravilloso",
+    "l:mañana",
+    "l:mensaje",
+    "l:mesa",
+    "l:mirar",
+    "l:mitad",
+    "l:moderno",
+    "l:momento",
+    "l:mudanza",
+    "l:negocio",
+    "l:noche",
+    "l:nuevo",
+    "l:oferta",
+    "l:pagar",
+    "l:pared",
+    "l:pedir",
+    "l:poner",
+    "l:puerta",
+    "l:qué",
+    "l:rato",
+    "l:recibir",
+    "l:regalar",
+    "l:regalo",
+    "l:reír",
+    "l:saber",
+    "l:sentarse",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:traje",
+    "l:vender",
+    "l:vez",
+    "l:vida",
+    "l:vista"
+  ]
+}
