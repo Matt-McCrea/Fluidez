@@ -2,7 +2,7 @@
   {
     "id": "w-u29-01",
     "unit": "u29",
-    "prompt": "Vale wants to accept Altamira's offer, and you are not convinced. Write her a text (someone your age) saying what you doubt (use dudo que), and ask to talk it over tomorrow.",
+    "prompt": "Vale wants to accept Altamira's offer, and you are not convinced. Write her a text (she's a friend, so use tú) saying what you doubt (use dudo que), and ask to talk it over tomorrow.",
     "minWords": 60,
     "maxWords": 120,
     "constraints": [
@@ -119,7 +119,7 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Señor Hernando, le cuento de la semana. Lo bueno es que vinieron muchos clientes y Vale hizo un pan nuevo. Lo peor fue la lluvia del martes, porque nadie salió de la casa. Lo importante es que seguimos abiertos y que Tomás sigue aquí. Un tinto lo espera en el café esta semana, y hablamos de todo un poco, como siempre.",
+    "model": "Hernando, le cuento de la semana. Lo bueno es que vinieron muchos clientes y Vale hizo un pan nuevo. Lo peor fue la lluvia del martes, porque nadie salió de la casa. Lo importante es que seguimos abiertos y que Vale sigue aquí. Un tinto lo espera en el café esta semana, y hablamos de todo un poco, como siempre.",
     "focus": "g:lo-adjective",
     "requires": [
       "c:es-que",
@@ -160,7 +160,6 @@
       "l:seguir",
       "l:semana",
       "l:ser",
-      "l:señor",
       "l:siempre",
       "l:tinto",
       "l:venir",
@@ -168,8 +167,7 @@
       "p:demonstratives-basic",
       "p:frequency-scale",
       "p:poco-un-poco",
-      "p:quantifiers-basic",
-      "p:senor-don-article"
+      "p:quantifiers-basic"
     ]
   },
   {
@@ -276,8 +274,7 @@
       {
         "type": "avoidsAny",
         "words": [
-          "no me importa",
-          "no me gusta"
+          "no me importa"
         ],
         "label": "use me da igual, not no me importa"
       }
@@ -430,7 +427,7 @@
   {
     "id": "w-u29-06",
     "unit": "u29",
-    "prompt": "Don Hernando did not come to the café today, and that is unusual. Write Tomás (a friend) a message guessing why: his age, what he was doing, where he was.",
+    "prompt": "Don Hernando did not come to the café today, and that is unusual. Write Tomás (a friend) a message guessing why: what he was doing, where he was, what happened.",
     "minWords": 60,
     "maxWords": 120,
     "constraints": [
@@ -440,22 +437,26 @@
       },
       {
         "type": "regex",
-        "pattern": "\\b(ser[ií]an|tendr[ií]a|estar[ií]a|ser[ií]a|ir[ií]a|har[ií]a|querr[ií]a|podr[ií]a)\\b",
+        "pattern": "\\b(ser[ií]an|tendr[ií]a|estar[ií]a|ser[ií]a|ir[ií]a|har[ií]a|querr[ií]a|podr[ií]a|habr[ií]a|sabr[ií]a)\\b",
         "label": "guess about the past with the conditional: tendría, estaría, sería"
       },
       {
         "type": "question"
       }
     ],
-    "model": "Tomás, Don Hernando no vino hoy y es muy raro. ¿Estaría enfermo? Tendría una cita con el médico, o iría a visitar a su nieta. Serían las ocho cuando pasé por su calle y no vi su taxi. ¿Tú sabes algo de él? Mañana lo llamo, y tú pregunta a los vecinos. Seguro que no es nada grave. Mañana por la tarde paso por su casa con pan, y lo saludo de tu parte.",
+    "model": "Tomás, Don Hernando no vino hoy y es muy raro. ¿Estaría enfermo? Tendría una cita con el médico, o iría a visitar a su nieta. Serían las ocho cuando pasé por su calle y no vi luz en su ventana. ¿Tú sabes algo de él? Yo lo llamo esta noche, y tú pregúntales a los vecinos. Seguro que no es nada grave. Mañana por la tarde paso por su casa con pan, y lo saludo de tu parte.",
     "focus": "g:conditional-past-guess",
     "requires": [
       "c:bien-y-tu",
+      "g:commands-tu",
+      "g:commands-with-pronouns",
       "g:conditional",
       "g:direct-objects",
       "g:estar-location-states",
       "g:gender-articles",
+      "g:indirect-objects",
       "g:ir-a-plans",
+      "g:le-doubling",
       "g:negation-words",
       "g:por-para-1",
       "g:prep-pronouns",
@@ -475,9 +476,11 @@
       "l:hoy",
       "l:ir",
       "l:llamar",
+      "l:luz",
       "l:mañana",
       "l:médico",
       "l:nieta",
+      "l:noche",
       "l:pan",
       "l:parte",
       "l:pasar",
@@ -488,14 +491,15 @@
       "l:seguro",
       "l:ser",
       "l:tarde",
-      "l:taxi",
       "l:tener",
       "l:vecino",
       "l:venir",
+      "l:ventana",
       "l:ver",
       "l:visitar",
       "p:con-sin",
       "p:cuando-basic",
+      "p:demonstratives-basic",
       "p:estar-seguro-de-que",
       "p:hedge-knowledge",
       "p:indefinites-basic",
@@ -513,7 +517,7 @@
   {
     "id": "w-u29-07",
     "unit": "u29",
-    "prompt": "A neighbour you hardly know, an older woman, asks if Altamira will really buy the whole block. Reply politely (use usted) saying what is probable.",
+    "prompt": "A neighbour you hardly know, an older woman, asks if Altamira will really buy the whole block. Reply politely (use usted): say what is probable, and add one casual maybe with igual or de pronto.",
     "minWords": 60,
     "maxWords": 120,
     "constraints": [
@@ -622,18 +626,18 @@
         "n": 3
       }
     ],
-    "model": "Estoy de acuerdo con Mariana en ayudar al barrio, porque necesita ayuda. Pero no estoy de acuerdo con la idea de vender todo. Los edificios nuevos cuestan mucho y la gente de aquí no puede pagar. Estamos de acuerdo en hablar más, pero la decisión no debe ser solo de la alcaldía. Los vecinos también tenemos algo que decir sobre nuestra calle.",
+    "model": "Estoy de acuerdo con los vecinos: el barrio necesita cambios. Pero no estoy de acuerdo con el proyecto de Altamira, porque un hotel tan grande no es para nosotros. Los edificios nuevos cuestan mucho y la gente de aquí no puede pagar. Estoy de acuerdo en hablar más, pero la decisión no debe ser solo de la alcaldía. Los vecinos también tenemos algo que decir sobre nuestra calle.",
     "focus": "p:estar-de-acuerdo-con-en",
     "requires": [
       "c:estoy-de-acuerdo",
-      "c:le-ayudo",
       "c:porque",
       "c:tienes",
       "g:adjective-agreement",
       "g:cause-result",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:possessives",
+      "g:prep-pronouns",
+      "g:present-ar",
       "g:present-er-ir",
       "g:relative-que",
       "g:ser-identity",
@@ -643,10 +647,9 @@
       "l:acuerdo",
       "l:alcaldía",
       "l:aquí",
-      "l:ayuda",
-      "l:ayudar",
       "l:barrio",
       "l:calle",
+      "l:cambio",
       "l:costar",
       "l:deber",
       "l:decir",
@@ -654,21 +657,21 @@
       "l:edificio",
       "l:estar",
       "l:gente",
+      "l:grande",
       "l:hablar",
-      "l:idea",
+      "l:hotel",
       "l:necesitar",
       "l:nuevo",
       "l:pagar",
       "l:poder",
+      "l:proyecto",
       "l:ser",
       "l:tener",
       "l:vecino",
-      "l:vender",
       "p:aqui-ahi-alla",
-      "p:estar-de-acuerdo-con-en",
       "p:indefinites-basic",
       "p:la-gente-singular",
-      "p:personal-a",
+      "p:para-inf",
       "p:quantifiers-basic"
     ]
   },

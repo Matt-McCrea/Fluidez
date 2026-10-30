@@ -139,7 +139,7 @@
       "why": "For we, *nos dimos*; *no* goes in front of the whole phrase."
     },
     {
-      "prompt": "Make it about Mariana: *Me di cuenta del problema.* Say: Mariana realised the problem.",
+      "prompt": "Make it about Mariana: *Me di cuenta del problema.* Say: Mariana noticed the problem.",
       "answer": "Mariana se dio cuenta del problema.",
       "accept": [],
       "why": "Mariana is a she, so *se dio*."
@@ -153,9 +153,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Me realicé de mi error.",
+      "wrong": "Realicé mi error.",
       "right": "Me di cuenta de mi error.",
-      "why": "Almost. *Realizar* means to carry out; to realise is *darse cuenta*."
+      "why": "Almost. *Realizar* means to carry something out. To realise is *darse cuenta de*."
     },
     {
       "wrong": "Me di cuenta que era tarde.",

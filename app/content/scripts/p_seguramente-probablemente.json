@@ -91,7 +91,7 @@
     {
       "es": "Posiblemente Altamira cambie de idea.",
       "options": [
-        "Altamira possibly changes his mind.",
+        "Altamira might change his mind.",
         "Altamira changed his mind.",
         "Altamira will never change his mind."
       ],
@@ -131,7 +131,9 @@
     {
       "prompt": "Type in Spanish: Hernando will probably come today. Use *probablemente* and the wish form.",
       "answer": "Probablemente Hernando venga hoy.",
-      "accept": [],
+      "accept": [
+        "Hernando probablemente venga hoy."
+      ],
       "why": "The wish form of *venir* is *venga*, and it sounds less sure."
     },
     {
@@ -155,9 +157,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Seguramente Hernando está aquí, lo vi.",
-      "right": "Hernando está aquí, lo vi.",
-      "why": "Almost. If you saw it yourself, you know, so drop the guess word: *seguramente* leaves room to be wrong."
+      "wrong": "Es probablemente que Hernando venga hoy.",
+      "right": "Probablemente Hernando venga hoy.",
+      "why": "Almost. *Probablemente* works on its own, like *maybe*: no *es* and no *que* in front of it."
     },
     {
       "wrong": "Seguramente Hernando está aquí, lo sé.",

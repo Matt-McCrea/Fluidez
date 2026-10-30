@@ -31,7 +31,7 @@
       "en": "Yes, yes, I'm coming."
     }
   ],
-  "rule": "Say a word twice and you turn up the volume without changing the meaning. *Claro, claro* is a warm, hearty yes. *No, no* is a firm no. With commands, *Pasa, pasa* is a welcome and *Corre, corre* is urgency. The situation tells you which.\n\nEnglish does it too (\"sure, sure\", \"no, no, no\"). In Spanish, put a comma between the two and stop at two. Repeat the exact same word: *siéntate, siéntate*, never a mix.",
+  "rule": "Say a word twice and you turn up the volume without changing the meaning. *Claro, claro* is a warm, hearty yes. *No, no* is a firm no. With commands, *Pasa, pasa* is a welcome and *Corre, corre* is urgency. The situation tells you which.\n\nEnglish does it too (\"sure, sure\", \"no, no, no\"). In Spanish, put a comma between them. Two is the usual number; a third is for a really big *no, no, no*. Repeat the exact same word: *siéntate, siéntate*, never a mix.",
   "smallPrint": "Teachers call this repetition for emphasis. The doubled word keeps its meaning and just gains force.",
   "readAndPick": [
     {
@@ -175,9 +175,9 @@
       "why": "Almost. Repeat the same word, don't change it the second time."
     },
     {
-      "wrong": "Es claro, claro.",
+      "wrong": "Claro, sí claro.",
       "right": "Claro, claro.",
-      "why": "Almost. The doubled word stands alone; you don't need a verb in front."
+      "why": "Almost. The trick is the exact same word twice. Mixing in another word breaks the echo."
     }
   ],
   "personal": "Think of a friend who asks you for a small favour. Answer them out loud with *Claro, claro.*"

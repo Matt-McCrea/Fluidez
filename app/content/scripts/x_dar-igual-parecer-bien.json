@@ -81,7 +81,7 @@
       "es": "¿Te da igual si invito a Vale?",
       "options": [
         "Is it OK with you if I invite Vale?",
-        "Do you not mind whether I invite Vale?"
+        "Is it all the same to you whether I invite Vale?"
       ],
       "answer": 1
     },
@@ -169,7 +169,7 @@
       "why": "*No* goes right before *me*."
     },
     {
-      "prompt": "Make it about we: *Me da igual el plan.*",
+      "prompt": "Make it about us: *Me da igual el plan.*",
       "answer": "Nos da igual el plan.",
       "accept": [
         "Nos da lo mismo el plan."
@@ -184,9 +184,9 @@
       "why": "To say yes to a plan, approve it. *Me da igual* sounds like you don't care."
     },
     {
-      "wrong": "Yo doy igual.",
-      "right": "Me da igual.",
-      "why": "It works like *gustar*: the thing does the giving, and you are *me*."
+      "wrong": "Me da bien el sábado.",
+      "right": "Me parece bien el sábado.",
+      "why": "Almost. *Da* goes with *igual*. To say a plan works for you, the verb is *parece*: *me parece bien*."
     },
     {
       "wrong": "A Hernando me da igual el precio.",

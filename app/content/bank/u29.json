@@ -802,7 +802,7 @@
   {
     "id": "u29-0033",
     "es": "Es posible que el tinto esté frío.",
-    "en": "It's possible the black coffee is cold.",
+    "en": "It's possible the coffee is cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1210,8 +1210,8 @@
   },
   {
     "id": "u29-0050",
-    "es": "Dudo que el celular tenga plata.",
-    "en": "I doubt the phone has any credit.",
+    "es": "Dudo que el celular tenga señal aquí.",
+    "en": "I doubt the phone has signal here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1220,10 +1220,12 @@
       "g:present-ar",
       "g:subj-doubt",
       "g:that-clauses",
+      "l:aquí",
       "l:celular",
       "l:dudar",
-      "l:plata",
-      "l:tener"
+      "l:señal",
+      "l:tener",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:subj-doubt"
@@ -1357,7 +1359,7 @@
   {
     "id": "u29-0056",
     "es": "Dudo que tú estés tan cansado.",
-    "en": "I doubt you're that tired.",
+    "en": "I doubt you're that tired. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1529,7 +1531,7 @@
   {
     "id": "u29-0063",
     "es": "Es posible que tengas razón en eso.",
-    "en": "It's possible you're right about that.",
+    "en": "It's possible you're right about that. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1603,19 +1605,22 @@
   },
   {
     "id": "u29-0066",
-    "es": "No es verdad que yo diga eso.",
-    "en": "It isn't true that I say that.",
+    "es": "No es verdad que el café cierre los lunes.",
+    "en": "It isn't true that the café closes on Mondays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
       "g:subj-doubt",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:decir",
+      "l:café",
+      "l:cerrar",
+      "l:lunes",
       "l:ser",
       "l:verdad",
-      "p:demonstratives-basic"
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:subj-doubt"
@@ -2548,7 +2553,7 @@
   {
     "id": "u29-0103",
     "es": "Igual hacemos una excursión a Zipaquirá.",
-    "en": "We might do a trip to Zipaquirá.",
+    "en": "We might take a trip to Zipaquirá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3776,7 +3781,7 @@
   {
     "id": "u29-0153",
     "es": "Posiblemente venga Mariana más tarde.",
-    "en": "Mariana will possibly come later.",
+    "en": "Mariana might come later.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4025,7 +4030,7 @@
   {
     "id": "u29-0163",
     "es": "Posiblemente Altamira quiera hablar con nosotros.",
-    "en": "Altamira possibly wants to talk to us.",
+    "en": "Altamira might want to talk to us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4130,7 +4135,7 @@
   {
     "id": "u29-0167",
     "es": "Posiblemente el periodista publique algo mañana.",
-    "en": "The journalist will possibly publish something tomorrow.",
+    "en": "The journalist might publish something tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4186,7 +4191,7 @@
   {
     "id": "u29-0169",
     "es": "Seguramente ella tiene hambre.",
-    "en": "She probably is hungry.",
+    "en": "She's probably hungry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4236,7 +4241,7 @@
   {
     "id": "u29-0171",
     "es": "Posiblemente el jugador firme un nuevo contrato.",
-    "en": "The player will possibly sign a new contract.",
+    "en": "The player might sign a new contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4407,7 +4412,7 @@
   {
     "id": "u29-0177",
     "es": "Posiblemente haya otra forma de ganar.",
-    "en": "There is possibly another way to win.",
+    "en": "There might be another way to win.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4486,7 +4491,7 @@
   {
     "id": "u29-0180",
     "es": "Seguramente el tinto está listo.",
-    "en": "The black coffee is probably ready.",
+    "en": "The coffee is probably ready.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4510,19 +4515,20 @@
   },
   {
     "id": "u29-0181",
-    "es": "Serían las diez cuando llegó Hernando.",
-    "en": "It must have been about ten when Hernando arrived.",
+    "es": "Hernando no contestó; estaría en el médico toda la mañana.",
+    "en": "Hernando didn't answer; he must have been at the doctor's all morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:preterite-ar",
-      "g:ser-identity",
-      "l:llegar",
-      "l:ser",
-      "p:cuando-basic",
-      "p:telling-time"
+      "l:contestar",
+      "l:estar",
+      "l:mañana",
+      "l:médico",
+      "p:todos-los-dias"
     ],
     "targets": [],
     "kind": "statement",
@@ -4574,20 +4580,16 @@
   },
   {
     "id": "u29-0184",
-    "es": "Serían las seis de la tarde cuando salimos.",
-    "en": "It must have been about six in the evening when we left.",
+    "es": "Saldríamos del café a las seis, más o menos.",
+    "en": "We must have left the café at about six.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:mas-o-menos",
       "g:conditional",
       "g:gender-articles",
-      "g:present-er-ir",
-      "g:ser-identity",
+      "l:café",
       "l:salir",
-      "l:ser",
-      "l:tarde",
-      "p:cuando-basic",
-      "p:por-la-manana",
       "p:telling-time"
     ],
     "targets": [],
@@ -4616,19 +4618,24 @@
   },
   {
     "id": "u29-0186",
-    "es": "Rosa tendría ochenta años cuando murió.",
-    "en": "Rosa must have been eighty when she died.",
+    "es": "Don Hernando tendría unos cuarenta años cuando conoció a Rosa.",
+    "en": "Don Hernando must have been about forty when he met Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:preterite-spelling-stem",
+      "g:gender-articles",
+      "g:preterite-er-ir",
       "l:año",
-      "l:morir",
+      "l:conocer",
       "l:tener",
+      "p:aproximar-cifras",
       "p:cuando-basic",
-      "p:naci-en",
-      "p:tener-anos"
+      "p:personal-a",
+      "p:saber-conocer",
+      "p:senor-don-article",
+      "p:tener-anos",
+      "p:unos-approx"
     ],
     "targets": [],
     "kind": "statement",
@@ -4814,19 +4821,20 @@
   },
   {
     "id": "u29-0195",
-    "es": "Serían las cinco cuando llamó Mariana.",
-    "en": "It must have been about five when Mariana called.",
+    "es": "Mariana llamó tarde porque tendría mucho trabajo.",
+    "en": "Mariana called late because she must have had a lot of work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:porque",
+      "g:cause-result",
       "g:conditional",
-      "g:gender-articles",
       "g:preterite-ar",
-      "g:ser-identity",
       "l:llamar",
-      "l:ser",
-      "p:cuando-basic",
-      "p:telling-time"
+      "l:tarde",
+      "l:tener",
+      "l:trabajo",
+      "p:quantifiers-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -4971,7 +4979,7 @@
   {
     "id": "u29-0202",
     "es": "¿Por qué lo haría Altamira?",
-    "en": "Why would Altamira have done it?",
+    "en": "I wonder why Altamira did it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4990,7 +4998,7 @@
   {
     "id": "u29-0203",
     "es": "¿Dónde estaría Hernando anoche?",
-    "en": "Where could Hernando have been last night?",
+    "en": "I wonder where Hernando was last night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5031,7 +5039,7 @@
   {
     "id": "u29-0205",
     "es": "¿Cuánto costaría la casa en esa época?",
-    "en": "How much could the house have cost back then?",
+    "en": "I wonder how much the house cost back then.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5055,7 +5063,7 @@
   {
     "id": "u29-0206",
     "es": "¿Qué pensaría Tomás cuando leyó la carta?",
-    "en": "What could Tomás have thought when he read the letter?",
+    "en": "I wonder what Tomás thought when he read the letter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5078,7 +5086,7 @@
   {
     "id": "u29-0207",
     "es": "¿Quién llamaría a esa hora?",
-    "en": "Who could have been calling at that hour?",
+    "en": "I wonder who was calling at that hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5099,7 +5107,7 @@
   {
     "id": "u29-0208",
     "es": "¿Por qué no vendría Vale?",
-    "en": "Why might Vale not have come?",
+    "en": "I wonder why Vale didn't come.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5118,7 +5126,7 @@
   {
     "id": "u29-0209",
     "es": "¿Dónde dejaría Rosa los papeles?",
-    "en": "Where could Rosa have left the papers?",
+    "en": "I wonder where Rosa left the papers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5139,7 +5147,7 @@
   {
     "id": "u29-0210",
     "es": "¿Cuántos años tendría el edificio?",
-    "en": "How old could the building have been?",
+    "en": "I wonder how old the building was.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5161,7 +5169,7 @@
   {
     "id": "u29-0211",
     "es": "¿Quién sería el dueño anterior?",
-    "en": "Who might the previous owner have been?",
+    "en": "I wonder who the previous owner was.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5183,8 +5191,8 @@
   },
   {
     "id": "u29-0212",
-    "es": "¿Qué haría Tomás con tanta plata?",
-    "en": "What would Tomás have done with so much money?",
+    "es": "¿Qué haría Rosa con tanta plata?",
+    "en": "I wonder what Rosa did with so much money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5203,7 +5211,7 @@
   {
     "id": "u29-0213",
     "es": "¿Por qué estaría tan callada Vale?",
-    "en": "Why might Vale have been so quiet?",
+    "en": "I wonder why Vale was so quiet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5224,7 +5232,7 @@
   {
     "id": "u29-0214",
     "es": "¿Qué sabría Hernando del contrato?",
-    "en": "What might Hernando have known about the contract?",
+    "en": "I wonder what Hernando knew about the contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5245,7 +5253,7 @@
   {
     "id": "u29-0215",
     "es": "¿De dónde sacaría Altamira tanta plata?",
-    "en": "Where could Altamira have got so much money?",
+    "en": "I wonder where Altamira got so much money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5265,7 +5273,7 @@
   {
     "id": "u29-0216",
     "es": "¿Cómo sabría Mariana del rumor?",
-    "en": "How might Mariana have known about the rumour?",
+    "en": "I wonder how Mariana knew about the rumour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5289,7 +5297,7 @@
   {
     "id": "u29-0217",
     "es": "¿Quién escribiría esa declaración?",
-    "en": "Who might have written that statement?",
+    "en": "I wonder who wrote that statement.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5312,7 +5320,7 @@
   {
     "id": "u29-0218",
     "es": "¿Cuánto cobraría el abogado por eso?",
-    "en": "How much might the lawyer have charged for that?",
+    "en": "I wonder how much the lawyer charged for that.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5337,7 +5345,7 @@
   {
     "id": "u29-0219",
     "es": "¿Con quién hablaría Altamira en el consejo?",
-    "en": "Who might Altamira have talked to on the council?",
+    "en": "I wonder who Altamira talked to on the council.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5358,7 +5366,7 @@
   {
     "id": "u29-0220",
     "es": "¿Qué querría decir esa nota?",
-    "en": "What could that note have meant?",
+    "en": "I wonder what that note meant.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5647,15 +5655,18 @@
   },
   {
     "id": "u29-0232",
-    "es": "Tomás tendría nervios de hablar con Altamira.",
-    "en": "Tomás must have been nervous about talking to Altamira.",
+    "es": "Tomás estaría nervioso antes de hablar con Altamira.",
+    "en": "Tomás must have been nervous before talking to Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:estar-location-states",
+      "g:prep-infinitive",
+      "l:antes",
+      "l:estar",
       "l:hablar",
-      "l:nervio",
-      "l:tener"
+      "l:nervioso"
     ],
     "targets": [],
     "kind": "statement",
@@ -5886,7 +5897,7 @@
   {
     "id": "u29-0243",
     "es": "Tú estarías muy contento ese día.",
-    "en": "You must have been very happy that day.",
+    "en": "You must have been very happy that day. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5973,18 +5984,21 @@
   },
   {
     "id": "u29-0247",
-    "es": "El jugador estaría nervioso en la declaración.",
-    "en": "The player must have been nervous during the statement.",
+    "es": "El jugador estaría nervioso cuando dio la declaración.",
+    "en": "The player must have been nervous when he gave the statement.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:estar-location-states",
       "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "l:dar",
       "l:declaración",
       "l:estar",
       "l:jugador",
-      "l:nervioso"
+      "l:nervioso",
+      "p:cuando-basic"
     ],
     "targets": [
       "l:declaración",
@@ -5998,7 +6012,7 @@
   {
     "id": "u29-0248",
     "es": "Yo estaría dormida cuando llamaste.",
-    "en": "I must have been asleep when you called.",
+    "en": "I must have been asleep when you called. (a woman speaking, to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6207,7 +6221,7 @@
   },
   {
     "id": "u29-0258",
-    "es": "El edificio estaría cerrado por años.",
+    "es": "El edificio estaría cerrado durante años.",
     "en": "The building must have been closed for years.",
     "accept": [],
     "acceptEn": [],
@@ -6215,11 +6229,11 @@
       "g:conditional",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:por-para-1",
       "l:año",
       "l:cerrar",
       "l:edificio",
-      "l:estar"
+      "l:estar",
+      "p:durar-durante"
     ],
     "targets": [],
     "kind": "statement",
@@ -6229,20 +6243,18 @@
   },
   {
     "id": "u29-0259",
-    "es": "La velocidad sería muy alta.",
-    "en": "The speed must have been very high.",
+    "es": "¿Qué velocidad llevaría el carro?",
+    "en": "I wonder how fast the car was going.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:conditional",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:alto",
-      "l:ser",
-      "l:velocidad",
-      "p:es-tiene-lleva",
-      "p:quantifiers-basic"
+      "g:questions",
+      "l:carro",
+      "l:llevar",
+      "l:qué",
+      "l:velocidad"
     ],
     "targets": [
       "l:velocidad"
@@ -6320,17 +6332,23 @@
   },
   {
     "id": "u29-0263",
-    "es": "El cerebro de Simón no sería tan pequeño.",
-    "en": "Simón's brain must not have been that small.",
+    "es": "Simón abrió la caja solo; su cerebro no sería tan pequeño, después de todo.",
+    "en": "Simón opened the box by himself; his brain can't have been that small after all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:gender-articles",
+      "g:preterite-er-ir",
       "g:ser-identity",
+      "l:abrir",
+      "l:caja",
       "l:cerebro",
+      "l:después",
       "l:pequeño",
-      "l:ser"
+      "l:ser",
+      "p:possessives-basic",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "l:cerebro"
@@ -6366,8 +6384,8 @@
   },
   {
     "id": "u29-0265",
-    "es": "El carro iría con mucha velocidad por esa vía.",
-    "en": "The car must have been going at great speed on that road.",
+    "es": "El carro iría a mucha velocidad por esa vía.",
+    "en": "The car must have been going very fast on that road.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6379,6 +6397,7 @@
       "l:ir",
       "l:velocidad",
       "l:vía",
+      "p:ir-a-venir-de-place",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -6566,7 +6585,7 @@
   {
     "id": "u29-0274",
     "es": "El plato estaría precioso.",
-    "en": "The dish must have looked beautiful.",
+    "en": "The dish must have been beautiful.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6649,13 +6668,15 @@
   },
   {
     "id": "u29-0278",
-    "es": "Vale no está de acuerdo con vender.",
-    "en": "Vale doesn't agree with selling.",
+    "es": "Vale no está de acuerdo en vender el carro.",
+    "en": "Vale doesn't agree to selling the car.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
+      "g:gender-articles",
       "l:acuerdo",
+      "l:carro",
       "l:estar",
       "l:vender",
       "p:estar-de-acuerdo-con-en"
@@ -6899,7 +6920,7 @@
   {
     "id": "u29-0289",
     "es": "¿Estás de acuerdo en cerrar el lunes?",
-    "en": "Do you agree on closing on Monday? (to a friend)",
+    "en": "Do you agree to closing on Monday? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7084,17 +7105,19 @@
   },
   {
     "id": "u29-0297",
-    "es": "Ustedes no están de acuerdo, pero los dos tienen un argumento.",
-    "en": "You all don't agree, but both of you have an argument.",
+    "es": "Ustedes no están de acuerdo, pero los dos tienen buenos argumentos.",
+    "en": "You two don't agree, but you both have good arguments.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
       "g:stem-boot",
       "l:acuerdo",
       "l:argumento",
+      "l:bueno",
       "l:estar",
       "l:tener",
       "p:estar-de-acuerdo-con-en",
@@ -7112,16 +7135,19 @@
   },
   {
     "id": "u29-0298",
-    "es": "Estoy de acuerdo contigo, pero con una duda.",
-    "en": "I agree with you, but I have one doubt.",
+    "es": "Estoy de acuerdo contigo, pero tengo una duda.",
+    "en": "I agree with you, but I have one question. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:estoy-de-acuerdo",
+      "c:tengo",
       "g:gender-articles",
+      "g:yo-irregular",
       "l:acuerdo",
       "l:duda",
-      "l:estar"
+      "l:estar",
+      "l:tener"
     ],
     "targets": [
       "l:duda"
@@ -7444,7 +7470,7 @@
   {
     "id": "u29-0312",
     "es": "El abogado está de acuerdo con nosotros en el fondo.",
-    "en": "The lawyer agrees with us on the substance.",
+    "en": "Deep down, the lawyer agrees with us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8797,7 +8823,7 @@
   {
     "id": "u29-0366",
     "es": "Estoy equivocado, lo reconozco.",
-    "en": "I'm wrong, I admit it.",
+    "en": "I'm wrong, I admit it. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8993,18 +9019,19 @@
   },
   {
     "id": "u29-0374",
-    "es": "Aquí vive Mariana.\nSe equivocó, vive al lado.",
-    "en": "Mariana lives here.\nYou're mistaken, she lives next door. (polite)",
+    "es": "Aquí vive Mariana.\nSe equivoca, señor, ella vive al lado.",
+    "en": "Mariana lives here.\nYou're mistaken, sir, she lives next door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-ar",
       "g:present-er-ir",
-      "g:preterite-ar",
       "g:reflexive-routine",
       "l:aquí",
       "l:equivocarse",
       "l:lado",
+      "l:señor",
       "l:vivir",
       "p:aqui-ahi-alla",
       "p:equivocarse"
@@ -9234,7 +9261,7 @@
   {
     "id": "u29-0383",
     "es": "Se equivocó con el edificio y subió hasta el cuarto piso.",
-    "en": "He mixed up the building and went up to the fourth floor.",
+    "en": "He got the building wrong and went up to the fourth floor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9261,7 +9288,7 @@
   {
     "id": "u29-0384",
     "es": "Mi hermana se equivocó con el bus y terminó en el norte.",
-    "en": "My sister mixed up the bus and ended up in the north.",
+    "en": "My sister got the bus wrong and ended up in the north.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9381,17 +9408,19 @@
   },
   {
     "id": "u29-0389",
-    "es": "Seguro que Vale ya está en la cocina.",
-    "en": "I bet Vale is already in the kitchen.",
+    "es": "Estoy segura de que Vale ya está en la cocina.",
+    "en": "I'm sure Vale is already in the kitchen. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
       "g:that-clauses",
       "l:cocina",
       "l:estar",
       "l:seguro",
+      "p:estar-convencido-de",
       "p:estar-seguro-de-que"
     ],
     "targets": [
@@ -9552,17 +9581,20 @@
   },
   {
     "id": "u29-0397",
-    "es": "Seguro que Tomás tiene miedo.",
-    "en": "I bet Tomás is scared.",
+    "es": "¿Estás seguro de que Tomás tiene miedo?",
+    "en": "Are you sure Tomás is scared? (to a man)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:estar-location-states",
       "g:stem-boot",
       "g:that-clauses",
+      "l:estar",
       "l:miedo",
       "l:seguro",
       "l:tener",
+      "p:estar-convencido-de",
       "p:estar-seguro-de-que",
       "p:tener-hambre"
     ],
@@ -9712,17 +9744,20 @@
   },
   {
     "id": "u29-0404",
-    "es": "Seguro que mi abuela tenía razón.",
-    "en": "I bet my grandmother was right.",
+    "es": "Estoy seguro de que mi abuela tenía razón.",
+    "en": "I'm sure my grandmother was right. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:imperfect-states",
       "g:that-clauses",
       "l:abuela",
+      "l:estar",
       "l:razón",
       "l:seguro",
       "l:tener",
+      "p:estar-convencido-de",
       "p:estar-seguro-de-que",
       "p:possessives-basic",
       "p:tener-razon"
@@ -9738,7 +9773,7 @@
   {
     "id": "u29-0405",
     "es": "Seguro que ya sabes la respuesta.",
-    "en": "I bet you already know the answer.",
+    "en": "I bet you already know the answer. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9785,17 +9820,21 @@
   },
   {
     "id": "u29-0407",
-    "es": "Seguro que Altamira ya tiene otro plan.",
-    "en": "I bet Altamira already has another plan.",
+    "es": "Estoy segura de que Altamira tiene otro plan.",
+    "en": "I'm sure Altamira has another plan. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:adjective-agreement",
+      "g:estar-location-states",
       "g:stem-boot",
       "g:that-clauses",
+      "l:estar",
       "l:plan",
       "l:seguro",
       "l:tener",
+      "p:estar-convencido-de",
       "p:estar-seguro-de-que",
       "p:otro-no-article"
     ],
@@ -9856,7 +9895,7 @@
   {
     "id": "u29-0410",
     "es": "Seguro que el tinto está frío.",
-    "en": "I bet the black coffee is cold.",
+    "en": "I bet the coffee is cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9879,17 +9918,21 @@
   },
   {
     "id": "u29-0411",
-    "es": "Seguro que Simón abrió la puerta.",
-    "en": "I bet Simón opened the door.",
+    "es": "Mariana está segura de que Simón abrió la puerta.",
+    "en": "Mariana is sure Simón opened the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:preterite-er-ir",
       "g:that-clauses",
       "l:abrir",
+      "l:estar",
       "l:puerta",
       "l:seguro",
+      "p:estar-convencido-de",
       "p:estar-seguro-de-que"
     ],
     "targets": [
@@ -9923,18 +9966,18 @@
   },
   {
     "id": "u29-0413",
-    "es": "No sé, pero estoy seguro.",
-    "en": "I don't know, but I'm sure. (a man speaking)",
+    "es": "Nadie me cree, pero estoy seguro.",
+    "en": "Nobody believes me, but I'm sure. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
       "g:estar-location-states",
-      "g:yo-irregular",
+      "g:present-er-ir",
+      "l:creer",
       "l:estar",
-      "l:saber",
       "l:seguro",
-      "p:estar-seguro-de-que"
+      "p:estar-seguro-de-que",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "p:estar-seguro-de-que"
@@ -10043,18 +10086,21 @@
   },
   {
     "id": "u29-0418",
-    "es": "Seguro que los vecinos ya lo saben.",
-    "en": "I bet the neighbours already know.",
+    "es": "Hernando está seguro de que los vecinos ya lo saben.",
+    "en": "Hernando is sure the neighbours already know.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:present-er-ir",
       "g:that-clauses",
+      "l:estar",
       "l:saber",
       "l:seguro",
       "l:vecino",
+      "p:estar-convencido-de",
       "p:estar-seguro-de-que",
       "p:saber-conocer"
     ],
@@ -10068,20 +10114,29 @@
   },
   {
     "id": "u29-0419",
-    "es": "Es seguro que el edificio es viejo.",
-    "en": "It's certain the building is old.",
+    "es": "Estoy segura de que el edificio tiene más de cien años.",
+    "en": "I'm sure the building is more than a hundred years old. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
+      "g:adjective-agreement",
+      "g:comparatives-advanced",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
       "g:that-clauses",
+      "l:año",
       "l:edificio",
+      "l:estar",
       "l:seguro",
-      "l:ser",
-      "l:viejo",
+      "l:tener",
+      "p:estar-convencido-de",
       "p:estar-seguro-de-que",
-      "p:viejo-antiguo-mayor"
+      "p:lugar-tiene",
+      "p:mas-de-number",
+      "p:numbers-un-una",
+      "p:tener-anos"
     ],
     "targets": [
       "p:estar-seguro-de-que"
@@ -10093,19 +10148,23 @@
   },
   {
     "id": "u29-0420",
-    "es": "Seguro que esa foto no es de aquí.",
-    "en": "I bet that photo isn't from here.",
+    "es": "¿Estás segura de que esa foto no es de aquí?",
+    "en": "Are you sure that photo isn't from here? (to a woman)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:demonstratives",
+      "g:estar-location-states",
       "g:ser-identity",
       "g:that-clauses",
       "l:aquí",
+      "l:estar",
       "l:foto",
       "l:seguro",
       "l:ser",
       "p:aqui-ahi-alla",
+      "p:estar-convencido-de",
       "p:estar-seguro-de-que"
     ],
     "targets": [
@@ -10119,7 +10178,7 @@
   {
     "id": "u29-0421",
     "es": "Seguro que Hernando ya pidió su tinto.",
-    "en": "I bet Hernando has already ordered his black coffee.",
+    "en": "I bet Hernando has already ordered his coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10190,19 +10249,21 @@
   },
   {
     "id": "u29-0424",
-    "es": "Seguro que mi hermano llama esta noche.",
-    "en": "I bet my brother calls tonight.",
+    "es": "Seguro que mi hermano se olvidó de mi cumpleaños otra vez.",
+    "en": "I bet my brother forgot my birthday again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:preterite-ar",
+      "g:se-impersonal",
       "g:that-clauses",
+      "l:cumpleaños",
       "l:hermano",
-      "l:llamar",
-      "l:noche",
+      "l:olvidar",
       "l:seguro",
-      "p:demonstratives-basic",
+      "l:vez",
       "p:estar-seguro-de-que",
+      "p:otro-no-article",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10215,19 +10276,23 @@
   },
   {
     "id": "u29-0425",
-    "es": "Seguro que Tomás no duerme bien.",
-    "en": "I bet Tomás isn't sleeping well.",
+    "es": "Vale está segura de que Tomás no duerme bien.",
+    "en": "Vale is sure Tomás isn't sleeping well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "g:adjective-agreement",
+      "g:estar-location-states",
       "g:stem-boot",
       "g:that-clauses",
       "l:bien",
       "l:dormir",
+      "l:estar",
       "l:seguro",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
+      "p:estar-convencido-de",
       "p:estar-seguro-de-que"
     ],
     "targets": [
@@ -10348,21 +10413,22 @@
   },
   {
     "id": "u29-0430",
-    "es": "Es evidente que alguien nos ayuda desde dentro.",
-    "en": "It's obvious that someone is helping them from inside.",
+    "es": "Es evidente que alguien lo ayuda desde la alcaldía.",
+    "en": "It's obvious that someone at city hall is helping him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
       "g:that-clauses",
+      "l:alcaldía",
       "l:ayudar",
-      "l:dentro",
       "l:evidente",
       "l:ser",
       "p:esta-claro-que",
-      "p:indefinites-basic",
-      "p:me-te-nos-objects"
+      "p:indefinites-basic"
     ],
     "targets": [
       "p:esta-claro-que"
@@ -10839,19 +10905,20 @@
   },
   {
     "id": "u29-0448",
-    "es": "¿Gana el caso?\nNo está claro.",
-    "en": "Will he win the case?\nIt isn't clear.",
+    "es": "¿Va a ganar el caso?\nNo está claro.",
+    "en": "Is he going to win the case?\nIt isn't clear.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:present-ar",
+      "g:ir-a-plans",
       "l:caso",
       "l:claro",
       "l:estar",
-      "l:ganar"
+      "l:ganar",
+      "l:ir"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11952,15 +12019,17 @@
   },
   {
     "id": "u29-0493",
-    "es": "Sí, sí, Hernando, ya te entendí.",
-    "en": "Yes, yes, Hernando, I understood you.",
+    "es": "Sí, sí, don Hernando, ya le entendí.",
+    "en": "Yes, yes, Don Hernando, I understood you.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:indirect-objects",
       "g:preterite-er-ir",
       "l:entender",
-      "p:me-te-nos-objects",
-      "p:repeticion-claro-claro"
+      "p:don-dona-nombre",
+      "p:repeticion-claro-claro",
+      "p:senor-don-article"
     ],
     "targets": [
       "p:repeticion-claro-claro"
@@ -13125,20 +13194,21 @@
   },
   {
     "id": "u29-0540",
-    "es": "No te des cuenta de que te miro.",
-    "en": "Don't notice that I'm looking at you. (to a friend)",
+    "es": "Ojalá Altamira no se dé cuenta de nada.",
+    "en": "I hope Altamira doesn't notice anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negative-commands",
-      "g:present-ar",
+      "c:gracias-de-nada",
+      "c:no-se",
+      "c:ojala",
+      "g:negation-words",
       "g:reflexive-routine",
-      "g:that-clauses",
+      "g:subj-wanting",
+      "g:subj-wishes",
       "l:cuenta",
       "l:darse",
-      "l:mirar",
-      "p:darse-cuenta-de",
-      "p:me-te-nos-objects"
+      "p:darse-cuenta-de"
     ],
     "targets": [
       "p:darse-cuenta-de"
@@ -13206,7 +13276,7 @@
   {
     "id": "u29-0543",
     "es": "Si te das cuenta, algo no cuadra.",
-    "en": "If you notice, something doesn't add up.",
+    "en": "If you look closely, something doesn't add up. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13230,7 +13300,7 @@
   {
     "id": "u29-0544",
     "es": "Te vas a dar cuenta de que tengo razón.",
-    "en": "You'll realise that I'm right.",
+    "en": "You'll realise that I'm right. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13258,7 +13328,7 @@
   {
     "id": "u29-0545",
     "es": "Me daba cuenta de que algo cambiaba en el barrio.",
-    "en": "I was realising that something was changing in the neighbourhood.",
+    "en": "I could tell that something was changing in the neighbourhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13524,7 +13594,7 @@
   {
     "id": "u29-0555",
     "es": "No te equivoques, Altamira sabe lo que hace.",
-    "en": "Don't be mistaken, Altamira knows what he's doing. (to a friend)",
+    "en": "Make no mistake, Altamira knows what he's doing. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13920,20 +13990,24 @@
   },
   {
     "id": "u29-0571",
-    "es": "Seguro que el abogado ya sabe la respuesta.",
-    "en": "I bet the lawyer already knows the answer.",
+    "es": "Estoy totalmente seguro de que el abogado miente.",
+    "en": "I'm completely sure the lawyer is lying. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adverbs-mente",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:stem-boot",
       "g:that-clauses",
       "l:abogado",
-      "l:respuesta",
-      "l:saber",
+      "l:estar",
+      "l:mentir",
       "l:seguro",
+      "l:totalmente",
+      "p:estar-convencido-de",
       "p:estar-seguro-de-que",
-      "p:saber-conocer"
+      "p:intensificadores"
     ],
     "targets": [
       "p:estar-seguro-de-que"
@@ -13967,15 +14041,19 @@
   },
   {
     "id": "u29-0573",
-    "es": "Seguro que Mariana encuentra algo.",
-    "en": "I bet Mariana finds something.",
+    "es": "Estoy seguro de que Mariana va a encontrar algo.",
+    "en": "I'm sure Mariana is going to find something. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:stem-boot",
+      "g:estar-location-states",
+      "g:ir-a-plans",
       "g:that-clauses",
       "l:encontrar",
+      "l:estar",
+      "l:ir",
       "l:seguro",
+      "p:estar-convencido-de",
       "p:estar-seguro-de-que",
       "p:indefinites-basic"
     ],
@@ -14354,7 +14432,7 @@
   {
     "id": "u29-0589",
     "es": "Es imposible que vendamos por ese precio.",
-    "en": "It's impossible that we sell for that price.",
+    "en": "It's impossible for us to sell for that price.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14610,22 +14688,20 @@
   },
   {
     "id": "u29-0599",
-    "es": "Puede que mi abuela deje una carta para nosotros.",
-    "en": "My grandmother may leave a letter for us.",
+    "es": "Puede que haya más cartas de mi abuela en esa caja.",
+    "en": "There may be more letters from my grandmother in that box.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:prep-pronouns",
+      "g:demonstratives",
       "g:stem-boot",
       "g:subj-doubt",
-      "g:subj-wanting",
+      "g:subj-irregulars",
       "g:that-clauses",
       "l:abuela",
+      "l:caja",
       "l:carta",
-      "l:dejar",
       "l:poder",
-      "p:para-inf",
       "p:possessives-basic"
     ],
     "targets": [
@@ -15185,21 +15261,18 @@
   },
   {
     "id": "u29-0621",
-    "es": "No es verdad que Vale quiera irse.",
-    "en": "It isn't true that Vale wants to leave.",
+    "es": "No es cierto que Vale ya no hable con Tomás.",
+    "en": "It isn't true that Vale isn't talking to Tomás any more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:reflexive-routine",
+      "c:compre-trabaje",
+      "c:ya-no",
       "g:ser-identity",
       "g:subj-doubt",
-      "g:subj-wanting",
       "g:that-clauses",
-      "g:verb-infinitive",
-      "l:irse",
-      "l:querer",
-      "l:ser",
-      "l:verdad"
+      "l:hablar",
+      "l:ser"
     ],
     "targets": [
       "g:subj-doubt"
@@ -15963,8 +16036,8 @@
   },
   {
     "id": "u29-0651",
-    "es": "Es posible que la certeza llegue el lunes.",
-    "en": "It's possible certainty will arrive on Monday.",
+    "es": "Es posible que el lunes tengamos más certeza.",
+    "en": "It's possible we'll have more certainty on Monday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15974,10 +16047,10 @@
       "g:subj-wanting",
       "g:that-clauses",
       "l:certeza",
-      "l:llegar",
       "l:lunes",
       "l:posible",
       "l:ser",
+      "l:tener",
       "p:days-el-lunes"
     ],
     "targets": [
@@ -16253,7 +16326,7 @@
   {
     "id": "u29-0662",
     "es": "No es verdad que el tinto sea malo para ti.",
-    "en": "It isn't true that black coffee is bad for you.",
+    "en": "It isn't true that coffee is bad for you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16594,8 +16667,8 @@
   },
   {
     "id": "u29-0675",
-    "es": "Dudo que el jugador acepte el cambio.",
-    "en": "I doubt the player will accept the move.",
+    "es": "Dudo que el jugador acepte jugar en otro equipo.",
+    "en": "I doubt the player will agree to play for another team.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16605,9 +16678,11 @@
       "g:subj-wanting",
       "g:that-clauses",
       "l:aceptar",
-      "l:cambio",
       "l:dudar",
-      "l:jugador"
+      "l:equipo",
+      "l:jugador",
+      "l:jugar",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:subj-doubt",
@@ -16863,7 +16938,7 @@
   {
     "id": "u29-0686",
     "es": "Igual no hay tinto, pregunta primero.",
-    "en": "There might not be black coffee, ask first.",
+    "en": "There might not be any coffee, ask first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17029,16 +17104,17 @@
   },
   {
     "id": "u29-0693",
-    "es": "De pronto me da tiempo hoy.",
+    "es": "De pronto tengo tiempo hoy.",
     "en": "Maybe I'll have time today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:de-pronto",
-      "c:me-regala",
-      "l:dar",
+      "c:tengo",
+      "g:yo-irregular",
       "l:hoy",
       "l:pronto",
+      "l:tener",
       "l:tiempo",
       "p:de-pronto-igual"
     ],
@@ -17153,7 +17229,7 @@
   {
     "id": "u29-0698",
     "es": "Igual tienes razón, no sé.",
-    "en": "You might be right, I don't know.",
+    "en": "You might be right, I don't know. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17250,11 +17326,12 @@
   },
   {
     "id": "u29-0702",
-    "es": "¿Y si llueve?\nIgual vamos, con paraguas.",
-    "en": "And if it rains?\nWe might go anyway, with an umbrella.",
+    "es": "¿Y si llueve?\nDe pronto vamos igual, con paraguas.",
+    "en": "And if it rains?\nMaybe we'll go anyway, with an umbrella.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:de-pronto",
       "c:igual",
       "g:ir-a-plans",
       "g:si-present",
@@ -17263,6 +17340,7 @@
       "l:ir",
       "l:llover",
       "l:paraguas",
+      "l:pronto",
       "p:de-pronto-igual",
       "p:que-tal-si"
     ],
@@ -17323,7 +17401,7 @@
   {
     "id": "u29-0705",
     "es": "De pronto Altamira cambia de idea.",
-    "en": "Maybe Altamira changes his mind.",
+    "en": "Maybe Altamira will change his mind.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17410,7 +17488,7 @@
   {
     "id": "u29-0709",
     "es": "De pronto Hernando trae el periódico.",
-    "en": "Maybe Hernando brings the newspaper.",
+    "en": "Maybe Hernando will bring the newspaper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17456,7 +17534,7 @@
   {
     "id": "u29-0711",
     "es": "De pronto Simón repite lo que oyó.",
-    "en": "Maybe Simón repeats what he heard.",
+    "en": "Maybe Simón will repeat what he heard.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17554,7 +17632,7 @@
   {
     "id": "u29-0715",
     "es": "De pronto no puedo ir el sábado.",
-    "en": "Maybe I can't go on Saturday.",
+    "en": "Maybe I won't be able to go on Saturday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17623,19 +17701,19 @@
   },
   {
     "id": "u29-0718",
-    "es": "Igual hacemos la excursión sin ellos.",
-    "en": "We might do the trip without them.",
+    "es": "Igual llevamos a Simón a la excursión.",
+    "en": "We might take Simón on the trip.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:igual",
       "g:gender-articles",
-      "g:prep-pronouns",
-      "g:present-er-ir",
+      "g:present-ar",
       "l:excursión",
-      "l:hacer",
       "l:igual",
-      "p:de-pronto-igual"
+      "l:llevar",
+      "p:de-pronto-igual",
+      "p:personal-a"
     ],
     "targets": [
       "l:excursión",
@@ -17769,7 +17847,7 @@
   {
     "id": "u29-0724",
     "es": "Tal vez ganemos si tenemos el contrato.",
-    "en": "Maybe we win if we have the contract.",
+    "en": "Maybe we'll win if we have the contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17859,17 +17937,15 @@
   },
   {
     "id": "u29-0728",
-    "es": "Tal vez estemos viendo la mitad.",
-    "en": "Maybe we're only seeing half.",
+    "es": "Tal vez no estemos viendo todo.",
+    "en": "Maybe we're not seeing everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-gerund",
-      "g:gender-articles",
       "g:quizas-a-lo-mejor",
       "g:subj-wanting",
       "l:estar",
-      "l:mitad",
       "l:ver",
       "l:vez"
     ],
@@ -18262,15 +18338,16 @@
   },
   {
     "id": "u29-0745",
-    "es": "¿Gana Altamira?\nTal vez no gane esta vez.",
-    "en": "Will Altamira win?\nMaybe he won't win this time.",
+    "es": "¿Va a ganar Altamira?\nTal vez no gane esta vez.",
+    "en": "Is Altamira going to win?\nMaybe he won't win this time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:ir-a-plans",
       "g:quizas-a-lo-mejor",
       "g:subj-wanting",
       "l:ganar",
+      "l:ir",
       "l:vez",
       "p:demonstratives-basic"
     ],
@@ -18348,7 +18425,7 @@
   {
     "id": "u29-0749",
     "es": "Quizás nos vamos antes de la lluvia.",
-    "en": "Maybe we leave before the rain.",
+    "en": "Maybe we'll leave before the rain.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18459,7 +18536,7 @@
   {
     "id": "u29-0754",
     "es": "Tal vez no entiendas todo todavía.",
-    "en": "Maybe you don't understand everything yet.",
+    "en": "Maybe you don't understand everything yet. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18596,7 +18673,7 @@
   {
     "id": "u29-0760",
     "es": "Tal vez Hernando quiera otro tinto.",
-    "en": "Maybe Hernando wants another black coffee.",
+    "en": "Maybe Hernando wants another coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18691,7 +18768,7 @@
   {
     "id": "u29-0764",
     "es": "A lo mejor mañana mejora el tiempo.",
-    "en": "Maybe the weather improves tomorrow.",
+    "en": "Maybe the weather will improve tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18785,7 +18862,7 @@
   {
     "id": "u29-0768",
     "es": "A lo mejor Tomás vuelve a Toronto.",
-    "en": "Maybe Tomás goes back to Toronto.",
+    "en": "Maybe Tomás will go back to Toronto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18882,7 +18959,7 @@
   {
     "id": "u29-0772",
     "es": "A lo mejor mi hermana se casa el año que viene.",
-    "en": "Maybe my sister gets married next year.",
+    "en": "Maybe my sister will get married next year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19139,7 +19216,7 @@
   {
     "id": "u29-0782",
     "es": "A lo mejor tienes razón, pero igual me preocupa.",
-    "en": "Maybe you're right, but it still worries me.",
+    "en": "Maybe you're right, but it still worries me. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19242,7 +19319,7 @@
   {
     "id": "u29-0786",
     "es": "A lo mejor Vale se queda callada.",
-    "en": "Maybe Vale goes quiet.",
+    "en": "Maybe Vale will keep quiet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19364,16 +19441,20 @@
   },
   {
     "id": "u29-0791",
-    "es": "A Hernando le da lo mismo el color del tinto.",
-    "en": "Hernando doesn't care about the colour of the black coffee.",
+    "es": "A Hernando le da lo mismo la taza; lo importante es el tinto.",
+    "en": "The cup doesn't matter to Hernando; what matters is the coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:es-lo-mismo",
       "g:gender-articles",
       "g:indirect-objects",
-      "l:color",
+      "g:lo-adjective",
+      "g:ser-identity",
       "l:dar",
+      "l:importante",
+      "l:ser",
+      "l:taza",
       "l:tinto",
       "p:dar-igual"
     ],
@@ -19578,7 +19659,7 @@
   {
     "id": "u29-0800",
     "es": "¿A ti te da igual si Vale se va?",
-    "en": "Do you not mind if Vale leaves? (to a friend)",
+    "en": "Don't you care if Vale leaves? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19801,7 +19882,7 @@
   {
     "id": "u29-0809",
     "es": "Te va a dar lo mismo dentro de una semana.",
-    "en": "It'll all be the same to you in a week. (to a friend)",
+    "en": "In a week it won't matter to you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19874,8 +19955,8 @@
   },
   {
     "id": "u29-0812",
-    "es": "A mi nieta le da lo mismo el postre que el helado.",
-    "en": "My granddaughter doesn't mind whether it's the dessert or the ice cream.",
+    "es": "A mi nieta le da lo mismo el helado que la torta.",
+    "en": "My granddaughter doesn't mind whether it's ice cream or cake.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19885,7 +19966,7 @@
       "l:dar",
       "l:helado",
       "l:nieta",
-      "l:postre",
+      "l:torta",
       "p:dar-igual",
       "p:possessives-basic"
     ],
@@ -20026,7 +20107,7 @@
   {
     "id": "u29-0818",
     "es": "¿Te da igual si Simón habla mucho?",
-    "en": "Do you not mind if Simón talks a lot? (to a friend)",
+    "en": "Are you OK with Simón talking a lot? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20072,21 +20153,23 @@
   },
   {
     "id": "u29-0820",
-    "es": "Ya te dará igual dentro de una semana.",
-    "en": "You won't care in a week.",
+    "es": "A Simón le dio igual la lluvia, y cantó toda la tarde.",
+    "en": "Simón didn't care about the rain, and he sang all afternoon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
       "c:igual",
-      "g:future-promises",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "l:cantar",
       "l:dar",
-      "l:dentro",
       "l:igual",
-      "l:semana",
+      "l:lluvia",
+      "l:tarde",
       "p:dar-igual",
-      "p:dentro-de-vs-despues",
-      "p:me-te-nos-objects"
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:dar-igual"
@@ -20146,7 +20229,7 @@
   {
     "id": "u29-0823",
     "es": "Te da igual, pero a mí no.",
-    "en": "You don't care, but I do.",
+    "en": "You don't care, but I do. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20216,7 +20299,7 @@
   {
     "id": "u29-0826",
     "es": "A todos nos da lo mismo, menos a Vale.",
-    "en": "We all don't mind, except Vale.",
+    "en": "None of us minds, except Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20286,7 +20369,7 @@
   {
     "id": "u29-0829",
     "es": "No te da igual, se nota en tu cara.",
-    "en": "You do care, it shows on your face.",
+    "en": "You do care, it shows on your face. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20606,16 +20689,17 @@
   },
   {
     "id": "u29-0843",
-    "es": "Ni hablar de cerrar el café.",
-    "en": "There's no question of closing the café.",
+    "es": "De cerrar los domingos, ni hablar.",
+    "en": "Closing on Sundays is out of the question.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ni-hablar",
       "g:gender-articles",
-      "l:café",
       "l:cerrar",
-      "l:hablar"
+      "l:domingo",
+      "l:hablar",
+      "p:days-el-lunes"
     ],
     "targets": [
       "c:ni-hablar"
@@ -20704,20 +20788,23 @@
   },
   {
     "id": "u29-0847",
-    "es": "¿Tú crees que Altamira miente?\n¿Tú crees que dice la verdad?",
-    "en": "Do you think Altamira is lying?\nDo you think he's telling the truth?",
+    "es": "Altamira dice que no conoce a nadie en el consejo.\n¿Tú crees?",
+    "en": "Altamira says he doesn't know anyone on the council.\nYou think so?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-verdad",
       "c:tu-crees",
-      "g:stem-boot",
+      "g:gender-articles",
+      "g:negation-words",
+      "g:present-er-ir",
       "g:stem-e-i",
       "g:that-clauses",
+      "l:conocer",
+      "l:consejo",
       "l:creer",
       "l:decir",
-      "l:mentir",
-      "l:verdad"
+      "p:personal-a",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:tu-crees"
@@ -21057,8 +21144,8 @@
   },
   {
     "id": "u29-0861",
-    "es": "Vale va a perdonarlo.\n¿Tú crees? Lo conozco poco.",
-    "en": "Vale is going to forgive him.\nYou think so? I hardly know him.",
+    "es": "Vale va a perdonarlo.\n¿Tú crees? No la conoces.",
+    "en": "Vale is going to forgive him.\nYou think so? You don't know her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21066,13 +21153,11 @@
       "g:direct-objects",
       "g:ir-a-plans",
       "g:object-pronoun-position",
-      "g:yo-irregular",
+      "g:present-er-ir",
       "l:conocer",
       "l:creer",
       "l:ir",
       "l:perdonar",
-      "p:poco-un-poco",
-      "p:quantifiers-basic",
       "p:saber-conocer"
     ],
     "targets": [
@@ -22139,7 +22224,7 @@
   {
     "id": "u29-0905",
     "es": "Lo grande no siempre es lo mejor.",
-    "en": "The big isn't always the best.",
+    "en": "What's big isn't always what's best.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22359,20 +22444,22 @@
   },
   {
     "id": "u29-0914",
-    "es": "Quiero besar a mi mamá esta noche.",
-    "en": "I want to kiss my mom tonight.",
+    "es": "Mi papá besa a mi mamá cada mañana antes de salir.",
+    "en": "My dad kisses my mom every morning before he leaves.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
-      "g:stem-boot",
-      "g:verb-infinitive",
+      "g:cada-cualquier",
+      "g:prep-infinitive",
+      "g:present-ar",
+      "l:antes",
       "l:besar",
       "l:mamá",
-      "l:noche",
-      "l:querer",
-      "p:demonstratives-basic",
-      "p:possessives-basic"
+      "l:mañana",
+      "l:papá",
+      "l:salir",
+      "p:possessives-basic",
+      "p:veces-al"
     ],
     "targets": [
       "l:besar"
@@ -22810,7 +22897,7 @@
   {
     "id": "u29-0933",
     "es": "Mi cerebro no funciona antes del primer tinto.",
-    "en": "My brain doesn't work before the first black coffee.",
+    "en": "My brain doesn't work before the first coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22859,22 +22946,21 @@
   },
   {
     "id": "u29-0935",
-    "es": "Tengo tanto en el cerebro que no puedo dormir.",
-    "en": "I have so much on my mind that I can't sleep.",
+    "es": "Mi cerebro no para de pensar y no puedo dormir.",
+    "en": "My brain won't stop thinking and I can't sleep.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:puedo",
-      "c:tengo",
-      "g:gender-articles",
-      "g:relative-que",
+      "g:present-ar",
       "g:stem-boot",
       "g:verb-infinitive",
-      "g:yo-irregular",
       "l:cerebro",
       "l:dormir",
+      "l:parar",
+      "l:pensar",
       "l:poder",
-      "l:tener"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:cerebro"
@@ -23044,20 +23130,18 @@
   },
   {
     "id": "u29-0943",
-    "es": "Hoy tenemos que cobrar la cuenta de la mesa cinco.",
-    "en": "Today we have to charge the bill for table five.",
+    "es": "Todavía no le cobramos a la mesa cinco.",
+    "en": "We still haven't charged table five.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-cuenta",
-      "c:tienes",
+      "c:todavia-no",
       "g:gender-articles",
-      "g:verb-infinitive",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:present-ar",
       "l:cobrar",
-      "l:cuenta",
-      "l:hoy",
-      "l:mesa",
-      "l:tener"
+      "l:mesa"
     ],
     "targets": [
       "l:cobrar"
@@ -23349,7 +23433,7 @@
   {
     "id": "u29-0956",
     "es": "Una discusión no es un problema.",
-    "en": "A discussion is not a problem.",
+    "en": "An argument isn't a problem.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23893,7 +23977,7 @@
   {
     "id": "u29-0980",
     "es": "Tengo una duda sobre el contrato.",
-    "en": "I have a doubt about the contract.",
+    "en": "I have a question about the contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23938,8 +24022,8 @@
   },
   {
     "id": "u29-0982",
-    "es": "No tengo ninguna duda de ti.",
-    "en": "I have no doubt about you.",
+    "es": "De ti no tengo ninguna duda.",
+    "en": "I have no doubts about you.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24053,8 +24137,8 @@
   },
   {
     "id": "u29-0987",
-    "es": "Tengo la certeza de que alguien nos ayuda a ganar.",
-    "en": "I'm certain that someone helps us win.",
+    "es": "Tengo la certeza de que alguien ayuda a Altamira desde el consejo.",
+    "en": "I'm certain that someone on the council is helping Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24065,10 +24149,10 @@
       "g:yo-irregular",
       "l:ayudar",
       "l:certeza",
-      "l:ganar",
+      "l:consejo",
       "l:tener",
       "p:indefinites-basic",
-      "p:me-te-nos-objects"
+      "p:personal-a"
     ],
     "targets": [
       "l:certeza"
@@ -24125,13 +24209,13 @@
   },
   {
     "id": "u29-0990",
-    "es": "Con certeza, sé que Rosa quería esto.",
+    "es": "Sé con certeza que Rosa quería esto.",
     "en": "I know for certain that Rosa wanted this.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
-      "g:that-clauses",
+      "g:relative-que",
       "g:yo-irregular",
       "l:certeza",
       "l:querer",
@@ -24174,7 +24258,7 @@
   {
     "id": "u29-0992",
     "es": "No tengo la certeza, pero creo que sí.",
-    "en": "I don't have certainty, but I think so.",
+    "en": "I'm not certain, but I think so.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24197,19 +24281,18 @@
   },
   {
     "id": "u29-0993",
-    "es": "El rumor dice que Altamira ya compró dos casas.",
-    "en": "The rumour says Altamira has already bought two houses.",
+    "es": "Según el rumor, Altamira ya compró dos casas.",
+    "en": "According to the rumour, Altamira has already bought two houses.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:segun",
       "g:gender-articles",
       "g:preterite-ar",
-      "g:stem-e-i",
-      "g:that-clauses",
       "l:casa",
       "l:comprar",
-      "l:decir",
-      "l:rumor"
+      "l:rumor",
+      "p:un-estudio-muestra-que"
     ],
     "targets": [
       "l:rumor"
@@ -24428,7 +24511,7 @@
   {
     "id": "u29-1003",
     "es": "Hay una mosca en mi tinto.",
-    "en": "There's a fly in my black coffee.",
+    "en": "There's a fly in my coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24449,17 +24532,16 @@
   },
   {
     "id": "u29-1004",
-    "es": "Una mosca entró y Simón la mira.",
-    "en": "A fly came in and Simón is watching it.",
+    "es": "Simón sigue a la mosca con los ojos.",
+    "en": "Simón follows the fly with his eyes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:oye-mira",
       "g:gender-articles",
-      "g:preterite-ar",
-      "l:entrar",
-      "l:mira",
-      "l:mosca"
+      "g:stem-e-i",
+      "l:mosca",
+      "l:ojo",
+      "l:seguir"
     ],
     "targets": [
       "l:mosca"
@@ -24514,18 +24596,19 @@
   },
   {
     "id": "u29-1007",
-    "es": "Con este calor hay moscas en la cocina.",
-    "en": "With this heat there are flies in the kitchen.",
+    "es": "Con este calor, las moscas no nos dejan en paz.",
+    "en": "With this heat, the flies won't leave us alone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:gender-articles",
-      "g:hay-vs-esta",
+      "g:present-ar",
       "l:calor",
-      "l:cocina",
+      "l:dejar",
       "l:mosca",
-      "p:demonstratives-basic"
+      "l:paz",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:mosca"
@@ -24634,19 +24717,22 @@
   },
   {
     "id": "u29-1012",
-    "es": "Es falso que Rosa venda algo.",
-    "en": "It's false that Rosa is selling anything.",
+    "es": "Es falso que el café esté en venta.",
+    "en": "It's false that the café is for sale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
       "g:ser-identity",
       "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:café",
+      "l:estar",
       "l:falso",
       "l:ser",
-      "l:vender",
-      "p:indefinites-basic"
+      "l:venta"
     ],
     "targets": [
       "l:falso"
@@ -25410,19 +25496,23 @@
   },
   {
     "id": "u29-1045",
-    "es": "Un vaso lleno de jugo de mango.",
-    "en": "A glass full of mango juice.",
+    "es": "Hernando trae una bolsa llena de pan.",
+    "en": "Hernando is bringing a bag full of bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-ar",
-      "l:jugo",
-      "l:llenar",
-      "l:mango",
-      "l:vaso"
+      "g:present-er-ir",
+      "l:bolsa",
+      "l:lleno",
+      "l:pan",
+      "l:traer",
+      "p:llevar-traer"
     ],
-    "targets": [],
+    "targets": [
+      "l:lleno"
+    ],
     "kind": "statement",
     "unit": "u29",
     "theme": "lexemes: full, gas, warn, thought, road, approve, speed, beautiful",
@@ -25606,7 +25696,7 @@
   },
   {
     "id": "u29-1054",
-    "es": "Sentimos gas en el pasillo y salimos rápido.",
+    "es": "Sentimos olor a gas en el pasillo y salimos rápido.",
     "en": "We smelled gas in the hallway and left quickly.",
     "accept": [],
     "acceptEn": [],
@@ -25614,6 +25704,7 @@
       "g:gender-articles",
       "g:present-er-ir",
       "l:gas",
+      "l:olor",
       "l:pasillo",
       "l:rápido",
       "l:salir",
@@ -25784,7 +25875,7 @@
   {
     "id": "u29-1062",
     "es": "Ese pensamiento me quita el sueño.",
-    "en": "That thought takes away my sleep.",
+    "en": "That thought keeps me awake.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25853,8 +25944,8 @@
   },
   {
     "id": "u29-1065",
-    "es": "El pensamiento de perder el café me da frío.",
-    "en": "The thought of losing the café chills me.",
+    "es": "El pensamiento de perder el café me da miedo.",
+    "en": "The thought of losing the café frightens me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25862,9 +25953,11 @@
       "g:gender-articles",
       "l:café",
       "l:dar",
-      "l:frío",
+      "l:miedo",
       "l:pensamiento",
-      "l:perder"
+      "l:perder",
+      "p:me-da-miedo",
+      "p:me-da-miedo-que"
     ],
     "targets": [
       "l:pensamiento"
@@ -26021,17 +26114,17 @@
   },
   {
     "id": "u29-1072",
-    "es": "Mi hermana aprobó el examen de carro.",
-    "en": "My sister passed her car test.",
+    "es": "Mi hermana aprobó el examen de manejo.",
+    "en": "My sister passed her driving test.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:aprobar",
-      "l:carro",
       "l:examen",
       "l:hermana",
+      "l:manejo",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26110,7 +26203,7 @@
   {
     "id": "u29-1076",
     "es": "La velocidad en esa vía es de sesenta.",
-    "en": "The speed on that road is sixty.",
+    "en": "The speed limit on that road is sixty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26415,7 +26508,7 @@
   {
     "id": "u29-1089",
     "es": "Seguramente Hernando llega antes de las nueve.",
-    "en": "Hernando probably arrives before nine.",
+    "en": "Hernando will probably get here before nine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26439,7 +26532,7 @@
   {
     "id": "u29-1090",
     "es": "Posiblemente la excursión sea el sábado.",
-    "en": "The trip is possibly on Saturday.",
+    "en": "The trip might be on Saturday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26516,7 +26609,7 @@
   {
     "id": "u29-1093",
     "es": "Seguramente nadie leyó el contrato completo.",
-    "en": "Nobody probably read the whole contract.",
+    "en": "Probably nobody read the whole contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26593,15 +26686,19 @@
   },
   {
     "id": "u29-1096",
-    "es": "¿Ganamos?\nPosiblemente.",
-    "en": "Do we win?\nPossibly.",
+    "es": "¿Nos alcanza la plata?\nPosiblemente.",
+    "en": "Will we have enough money?\nPossibly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
+      "g:gender-articles",
       "g:present-ar",
-      "l:ganar",
+      "l:alcanzar",
+      "l:plata",
       "l:posiblemente",
+      "p:me-te-nos-objects",
+      "p:me-trae",
       "p:seguramente-probablemente"
     ],
     "targets": [
@@ -26667,16 +26764,17 @@
   },
   {
     "id": "u29-1099",
-    "es": "Seguramente Simón piensa en Rosa.",
-    "en": "Simón probably thinks about Rosa.",
+    "es": "Seguramente Simón extraña a Rosa.",
+    "en": "Simón probably misses Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
-      "g:stem-boot",
-      "l:pensar",
+      "g:present-ar",
+      "l:extrañar",
       "l:seguramente",
-      "p:pensar-en",
+      "p:extranar",
+      "p:personal-a",
       "p:seguramente-probablemente"
     ],
     "targets": [
@@ -26691,7 +26789,7 @@
   {
     "id": "u29-1100",
     "es": "Posiblemente Altamira nos llame esta semana.",
-    "en": "Altamira will possibly call us this week.",
+    "en": "Altamira might call us this week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26868,7 +26966,7 @@
   {
     "id": "u29-1107",
     "es": "Posiblemente Mariana ya sabe la respuesta.",
-    "en": "Mariana possibly already knows the answer.",
+    "en": "Mariana might already know the answer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26918,7 +27016,7 @@
   {
     "id": "u29-1109",
     "es": "Seguramente mis primos vienen el viernes.",
-    "en": "My cousins probably come on Friday.",
+    "en": "My cousins are probably coming on Friday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27242,7 +27340,7 @@
   {
     "id": "u29-1122",
     "es": "Quizás me equivoque, pero algo no me gusta.",
-    "en": "Maybe I'm wrong, but I don't like something.",
+    "en": "Maybe I'm wrong, but there's something I don't like.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27390,18 +27488,20 @@
   },
   {
     "id": "u29-1128",
-    "es": "Supongo que Altamira gana.\nYo dudo que gane.",
-    "en": "I suppose Altamira wins.\nI doubt he'll win.",
+    "es": "Supongo que Altamira va a ganar.\nYo dudo que gane.",
+    "en": "I suppose Altamira is going to win.\nI doubt he'll win.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:supongo-que",
+      "g:ir-a-plans",
       "g:present-ar",
       "g:subj-doubt",
       "g:subj-wanting",
       "g:that-clauses",
       "l:dudar",
       "l:ganar",
+      "l:ir",
       "l:suponer"
     ],
     "targets": [
@@ -27616,17 +27716,19 @@
   },
   {
     "id": "u29-1138",
-    "es": "Creo que sí, pero no estoy seguro.",
-    "en": "I think so, but I'm not sure. (a man speaking)",
+    "es": "Creo que Vale viene, pero no estoy seguro.",
+    "en": "I think Vale is coming, but I'm not sure. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
       "g:estar-location-states",
+      "g:stem-boot",
       "g:that-clauses",
       "l:creer",
       "l:estar",
       "l:seguro",
+      "l:venir",
       "p:estar-seguro-de-que"
     ],
     "targets": [
@@ -27640,7 +27742,7 @@
   {
     "id": "u29-1139",
     "es": "Me parece bien esperar un poco.",
-    "en": "It seems fine to me to wait a bit.",
+    "en": "Waiting a bit seems fine to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27706,7 +27808,7 @@
   {
     "id": "u29-1142",
     "es": "Vale está a favor de vender, pero Tomás está en contra.",
-    "en": "Vale is in favour of selling, but Tomás is against.",
+    "en": "Vale is in favour of selling, but Tomás is against it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27725,7 +27827,7 @@
   {
     "id": "u29-1143",
     "es": "¿Estás a favor de la oferta?\nNo, estoy en contra.",
-    "en": "Are you in favour of the offer?\nNo, I'm against.",
+    "en": "Are you in favour of the offer? (to a friend)\nNo, I'm against it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27790,7 +27892,7 @@
   {
     "id": "u29-1146",
     "es": "¿Te parece bien el plan?\nSí, me parece bien.",
-    "en": "Do you like the plan?\nYes, it seems fine to me.",
+    "en": "Is the plan OK with you? (to a friend)\nYes, it's fine by me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27889,8 +27991,8 @@
   },
   {
     "id": "u29-1150",
-    "es": "Estoy de acuerdo, pero no estoy a favor.",
-    "en": "I agree, but I'm not in favour.",
+    "es": "Estoy de acuerdo contigo, pero no estoy a favor de vender.",
+    "en": "I agree with you, but I'm not in favour of selling. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27899,11 +28001,11 @@
       "l:acuerdo",
       "l:estar",
       "l:favor",
-      "p:estar-a-favor-de",
-      "p:tener-razon-pero"
+      "l:vender",
+      "p:estar-a-favor-de"
     ],
     "targets": [
-      "p:tener-razon-pero"
+      "c:estoy-de-acuerdo"
     ],
     "kind": "statement",
     "unit": "u29",
@@ -28159,20 +28261,24 @@
   },
   {
     "id": "u29-1161",
-    "es": "Mi pensamiento favorito es que mañana será mejor.",
-    "en": "My favourite thought is that tomorrow will be better.",
+    "es": "Hay un pensamiento que me ayuda: mañana será otro día.",
+    "en": "There's one thought that helps me: tomorrow is another day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:es-que",
+      "c:hay",
+      "c:sera-otro-dia",
       "g:future-promises",
-      "g:ser-identity",
-      "l:favorito",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:present-ar",
+      "g:relative-que",
+      "l:ayudar",
+      "l:día",
       "l:mañana",
-      "l:mejor",
       "l:pensamiento",
       "l:ser",
-      "p:possessives-basic"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:pensamiento"
@@ -28208,21 +28314,22 @@
   },
   {
     "id": "u29-1163",
-    "es": "¿En qué piensas?\nEs un pensamiento largo.",
-    "en": "What are you thinking about?\nIt's a long thought.",
+    "es": "¿En qué piensas?\nEn nada. Es un pensamiento viejo.",
+    "en": "What are you thinking about?\nNothing. It's an old thought.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "g:stem-boot",
-      "l:largo",
       "l:pensamiento",
       "l:pensar",
       "l:qué",
       "l:ser",
+      "l:viejo",
       "p:pensar-en",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:pensamiento"
@@ -28230,6 +28337,215 @@
     "kind": "dialogue",
     "unit": "u29",
     "theme": "last fills",
+    "source": "gen"
+  },
+  {
+    "id": "u29-1164",
+    "es": "Hay que tener en cuenta el costo del abogado.",
+    "en": "You have to take the lawyer's cost into account.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "c:hay-que",
+      "g:gender-articles",
+      "g:verb-infinitive",
+      "l:abogado",
+      "l:costo",
+      "l:cuenta",
+      "l:tener",
+      "p:hay-que-tener-en-cuenta",
+      "p:tener-en-cuenta"
+    ],
+    "targets": [
+      "p:tener-en-cuenta"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "taking things into account before deciding",
+    "source": "gen"
+  },
+  {
+    "id": "u29-1165",
+    "es": "¿Tuviste en cuenta lo que dijo Vale?",
+    "en": "Did you take into account what Vale said? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-irregular-strong",
+      "g:relatives-donde-lo-que",
+      "l:cuenta",
+      "l:decir",
+      "l:tener",
+      "p:hay-que-tener-en-cuenta",
+      "p:tener-en-cuenta"
+    ],
+    "targets": [
+      "p:tener-en-cuenta"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "taking things into account before deciding",
+    "source": "gen"
+  },
+  {
+    "id": "u29-1166",
+    "es": "Ten en cuenta que Hernando no come después de las seis.",
+    "en": "Bear in mind that Hernando doesn't eat after six. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-tu",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:relative-que",
+      "l:comer",
+      "l:cuenta",
+      "l:después",
+      "l:tener",
+      "p:hay-que-tener-en-cuenta",
+      "p:tener-en-cuenta",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "p:tener-en-cuenta"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "taking things into account before deciding",
+    "source": "gen"
+  },
+  {
+    "id": "u29-1167",
+    "es": "Altamira nunca tuvo en cuenta a los vecinos.",
+    "en": "Altamira never took the neighbours into account.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "l:cuenta",
+      "l:tener",
+      "l:vecino",
+      "p:frequency-scale",
+      "p:hay-que-tener-en-cuenta",
+      "p:tener-en-cuenta"
+    ],
+    "targets": [
+      "p:tener-en-cuenta"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "taking things into account before deciding",
+    "source": "gen"
+  },
+  {
+    "id": "u29-1168",
+    "es": "Mariana tiene en cuenta todos los detalles antes de publicar.",
+    "en": "Mariana takes all the details into account before publishing.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:gender-articles",
+      "g:prep-infinitive",
+      "g:stem-boot",
+      "l:antes",
+      "l:cuenta",
+      "l:detalle",
+      "l:publicar",
+      "l:tener",
+      "p:hay-que-tener-en-cuenta",
+      "p:tener-en-cuenta"
+    ],
+    "targets": [
+      "p:tener-en-cuenta"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "taking things into account before deciding",
+    "source": "gen"
+  },
+  {
+    "id": "u29-1169",
+    "es": "No tuvimos en cuenta el tráfico y perdimos el bus.",
+    "en": "We didn't allow for the traffic and missed the bus.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
+      "l:bus",
+      "l:cuenta",
+      "l:perder",
+      "l:tener",
+      "l:tráfico",
+      "p:hay-que-tener-en-cuenta",
+      "p:tener-en-cuenta"
+    ],
+    "targets": [
+      "p:tener-en-cuenta"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "taking things into account before deciding",
+    "source": "gen"
+  },
+  {
+    "id": "u29-1170",
+    "es": "¿Vas a vender?\nTodavía no. Tengo que tener en cuenta a Vale.",
+    "en": "Are you going to sell?\nNot yet. I have to take Vale into account.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tengo",
+      "c:tengo-que",
+      "c:todavia-no",
+      "c:voy-vas",
+      "g:ir-a-plans",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:cuenta",
+      "l:ir",
+      "l:tener",
+      "l:vender",
+      "p:hay-que-tener-en-cuenta",
+      "p:tener-en-cuenta"
+    ],
+    "targets": [
+      "p:tener-en-cuenta"
+    ],
+    "kind": "dialogue",
+    "unit": "u29",
+    "theme": "taking things into account before deciding",
+    "source": "gen"
+  },
+  {
+    "id": "u29-1171",
+    "es": "Tengan en cuenta que el puente está cerrado.",
+    "en": "Bear in mind that the bridge is closed. (you all)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:abierto-cerrado",
+      "g:commands-usted",
+      "g:gender-articles",
+      "g:relative-que",
+      "l:cerrar",
+      "l:cuenta",
+      "l:estar",
+      "l:puente",
+      "l:tener",
+      "p:hay-que-tener-en-cuenta",
+      "p:tener-en-cuenta"
+    ],
+    "targets": [
+      "p:tener-en-cuenta"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "taking things into account before deciding",
     "source": "gen"
   }
 ]

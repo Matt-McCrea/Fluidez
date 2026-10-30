@@ -87,11 +87,11 @@
       "answer": 0
     },
     {
-      "es": "¿Estás de acuerdo?",
+      "es": "Estoy en contra del plan.",
       "options": [
-        "Do I agree?",
-        "Do you agree? (to a friend)",
-        "Does she agree?"
+        "I'm in favour of the plan.",
+        "I'm against the plan.",
+        "I don't agree with the plan's author."
       ],
       "answer": 1
     },

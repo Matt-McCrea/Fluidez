@@ -37,10 +37,10 @@
       "id": "t2",
       "npc": "Alguien firmó todo en un solo día. ¿Quién sería?",
       "npcEn": "Someone signed everything in a single day. Who could it have been?",
-      "intent": "Guess who it was: say it would be a friend of Altamira.",
+      "intent": "Guess who it was: say it was probably a friend of Altamira.",
       "accept": [
         "Sería un amigo de Altamira.",
-        "Sería alguien de la oficina, amigo de él.",
+        "Sería alguien de la alcaldía, un amigo de Altamira.",
         "Yo creo que sería algún amigo suyo."
       ],
       "require": [
@@ -103,7 +103,7 @@
     {
       "id": "t5",
       "npc": "Entonces fue un error. Gracias, Tomás. ¿Nos vemos mañana en el café?",
-      "npcEn": "Then it was a misunderstanding. Thanks, Tomás. Shall we meet tomorrow at the café?",
+      "npcEn": "Then it was a mistake. Thanks, Tomás. Shall we meet tomorrow at the café?",
       "intent": "Say that's fine by you and tell her to come at ten for a coffee.",
       "accept": [
         "Me parece bien. Ven a las diez y te regalo un tinto.",
@@ -144,7 +144,6 @@
     "g:indefinites",
     "g:lo-adjective",
     "g:possessives-stressed",
-    "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
@@ -164,6 +163,7 @@
     "g:verb-infinitive",
     "g:yo-irregular",
     "l:acuerdo",
+    "l:alcaldía",
     "l:amigo",
     "l:bien",
     "l:café",
@@ -182,7 +182,6 @@
     "l:mañana",
     "l:mejor",
     "l:noticia",
-    "l:oficina",
     "l:papel",
     "l:parecer",
     "l:pensar",
@@ -203,7 +202,6 @@
     "l:verdad",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
-    "p:de-owner",
     "p:equivocarse",
     "p:indefinites-basic",
     "p:me-te-nos-objects",

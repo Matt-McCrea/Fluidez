@@ -11,7 +11,7 @@
       "npcEn": "Tomás, how are you? You and Vale argued today, didn't you?",
       "intent": "Say yes, you argued, and that you doubt Vale is right.",
       "accept": [
-        "Sí, señor. Dudo que Vale tenga razón.",
+        "Sí, don Hernando. Dudo que Vale tenga razón.",
         "Sí, es cierto. Discutimos, y dudo que ella tenga razón.",
         "Sí, discutimos sobre Altamira. Yo dudo que ella tenga razón."
       ],
@@ -49,12 +49,12 @@
     },
     {
       "id": "t3",
-      "npc": "Dudo que ustedes dos almuercen cuando discuten. ¿Ya almorzó usted hoy?",
-      "npcEn": "I doubt you two eat lunch when you argue. Have you had lunch today?",
-      "intent": "Say you haven't had lunch, and guess that Vale would be in the kitchen.",
+      "npc": "Dudo que ustedes dos almuercen cuando discuten. ¿Ya almorzó usted? ¿Y adónde se fue Vale después?",
+      "npcEn": "I doubt you two have lunch when you argue. Have you had lunch? And where did Vale go afterwards?",
+      "intent": "Say you haven't had lunch, and guess that afterwards Vale was probably in the kitchen.",
       "accept": [
         "No, no almorcé. Vale estaría en la cocina, creo.",
-        "No almorcé. Y Vale tampoco, estaría en la cocina con sus postres.",
+        "No almorcé. Y Vale estaría en la cocina con sus postres.",
         "Todavía no almorcé. Vale estaría en la cocina, supongo."
       ],
       "require": [
@@ -113,15 +113,29 @@
     },
     {
       "id": "t5",
-      "npc": "Perfecto. Yo invito el primer tinto.",
-      "npcEn": "Perfect. I'll treat you to the first coffee.",
-      "intent": "Thank him warmly, using usted.",
+      "npc": "Perfecto. Yo invito el primer tinto. ¿Cree que Vale va a venir a comer?",
+      "npcEn": "Perfect. The first coffee is on me. Do you think Vale will come and eat?",
+      "intent": "Thank him, and say you suppose she'll come (use supongo que), using usted.",
       "accept": [
-        "Gracias, señor. Es usted muy amable.",
-        "Muy amable, señor. Gracias por el tinto.",
-        "Muchas gracias. Usted siempre tiene razón."
+        "Gracias, don Hernando. Supongo que viene, tiene hambre.",
+        "Muy amable, señor. Supongo que va a venir.",
+        "Muchas gracias. Supongo que sí viene, pero no estoy seguro."
       ],
       "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "supongo que"
+          ],
+          "label": "say what you guess with supongo que"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "venga"
+          ],
+          "label": "a guess keeps the plain verb: supongo que viene"
+        },
         {
           "type": "avoidsAny",
           "words": [
@@ -148,6 +162,7 @@
     "c:me-regala",
     "c:muy-amable",
     "c:no-cierto",
+    "c:que-va",
     "c:supongo-que",
     "c:tengo",
     "c:tienes",
@@ -155,11 +170,13 @@
     "g:conditional",
     "g:estar-location-states",
     "g:gender-articles",
+    "g:ir-a-plans",
     "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
     "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
     "g:preterite-spelling-stem",
     "g:questions",
     "g:ser-identity",
@@ -170,6 +187,7 @@
     "g:yo-irregular",
     "l:abuela",
     "l:acuerdo",
+    "l:adónde",
     "l:allá",
     "l:almorzar",
     "l:amable",
@@ -185,34 +203,40 @@
     "l:dudar",
     "l:estar",
     "l:hablar",
+    "l:hambre",
     "l:hoy",
     "l:idea",
     "l:igual",
     "l:invitar",
+    "l:ir",
+    "l:irse",
     "l:lugar",
     "l:perfecto",
     "l:posible",
     "l:postre",
     "l:qué",
     "l:razón",
+    "l:seguro",
     "l:ser",
     "l:señor",
-    "l:siempre",
     "l:suponer",
     "l:tener",
     "l:tinto",
+    "l:venir",
     "l:ver",
     "l:verdad",
     "p:aqui-ahi-alla",
     "p:cuando-basic",
     "p:dar-igual",
+    "p:don-dona-nombre",
     "p:estar-de-acuerdo-con-en",
-    "p:frequency-scale",
-    "p:gracias-por",
+    "p:estar-seguro-de-que",
     "p:no-es-x-es-y",
     "p:ordinal-floor",
     "p:ordinals-primer-tercer",
     "p:possessives-basic",
+    "p:senor-don-article",
+    "p:tener-hambre",
     "p:tener-razon",
     "p:time-sequence-basic"
   ]

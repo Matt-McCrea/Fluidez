@@ -12,7 +12,7 @@
     },
     {
       "es": "Tendría unos veinte años.",
-      "en": "She'd have been about twenty."
+      "en": "She must have been about twenty."
     },
     {
       "es": "¿Por qué lo haría?",
@@ -52,7 +52,7 @@
       "options": [
         "She must be about twenty.",
         "She will be twenty.",
-        "She'd have been about twenty."
+        "She must have been about twenty."
       ],
       "answer": 2
     },
@@ -125,8 +125,8 @@
       "why": "It's a guess about a past moment, so the *-ían* ending."
     },
     {
-      "prompt": "Pick *tendrá* or *tendría* and type the whole sentence: *Rosa ___ unos ochenta años cuando abrió el café.*",
-      "answer": "Rosa tendría unos ochenta años cuando abrió el café.",
+      "prompt": "Pick *tendrá* or *tendría* and type the whole sentence: *Rosa ___ unos treinta años cuando abrió el café.*",
+      "answer": "Rosa tendría unos treinta años cuando abrió el café.",
       "accept": [],
       "why": "The café opened in the past, so the guess takes *-ía*."
     },

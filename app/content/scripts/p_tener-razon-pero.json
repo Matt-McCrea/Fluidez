@@ -172,9 +172,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Estás razón, pero no tenemos plata.",
+      "wrong": "Eres correcto, pero no tenemos plata.",
       "right": "Tienes razón, pero no tenemos plata.",
-      "why": "Spanish says you *have* reason: *tener razón*."
+      "why": "Almost. English says you *are* right, but Spanish says you *have* reason: *tienes razón*."
     },
     {
       "wrong": "Tienes muy razón, pero Altamira no va a esperar.",

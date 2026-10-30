@@ -16,11 +16,11 @@
     },
     {
       "es": "Tal vez tienes razón.",
-      "en": "Maybe you're right. (to a friend)"
+      "en": "Maybe you're right, I think you are. (to a friend)"
     },
     {
       "es": "Tal vez tengas razón.",
-      "en": "Maybe you're right. (to a friend)"
+      "en": "Maybe you're right, who knows. (to a friend)"
     },
     {
       "es": "A lo mejor Hernando tiene hambre.",
@@ -146,7 +146,8 @@
       "prompt": "Type in Spanish: Maybe Vale will come tomorrow. Use *quizás* and the wish form.",
       "answer": "Quizás Vale venga mañana.",
       "accept": [
-        "Quizás venga Vale mañana."
+        "Quizás venga Vale mañana.",
+        "Quizá Vale venga mañana."
       ],
       "why": "*Quizás* lets you choose, and the wish form of *venir* is *venga*."
     },

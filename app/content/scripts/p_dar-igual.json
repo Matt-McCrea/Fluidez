@@ -112,7 +112,8 @@
       "prompt": "Type in Spanish: I don't mind.",
       "answer": "Me da igual.",
       "accept": [
-        "Me da lo mismo."
+        "Me da lo mismo.",
+        "A mí me da igual."
       ],
       "why": "The person is *me*, and *da* stays the same."
     },
@@ -151,7 +152,8 @@
       "answer": "Les da igual.",
       "accept": [
         "A ellos les da igual.",
-        "Les da lo mismo."
+        "Les da lo mismo.",
+        "A ellos les da lo mismo."
       ],
       "why": "More than one other person takes *les*."
     },

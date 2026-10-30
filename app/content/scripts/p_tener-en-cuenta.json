@@ -46,7 +46,7 @@
     {
       "es": "Ten en cuenta que cierran temprano.",
       "options": [
-        "Bear in mind they close early.",
+        "Bear in mind they close early. (to a friend)",
         "They kept in mind that it's early.",
         "Bear in mind I close early."
       ],
@@ -117,7 +117,9 @@
     {
       "prompt": "Say: You have to take the rent into account.",
       "answer": "Hay que tener en cuenta el arriendo.",
-      "accept": [],
+      "accept": [
+        "Hay que tomar en cuenta el arriendo."
+      ],
       "why": "*Hay que* plus the infinitive says what has to be done, and a thing follows directly."
     },
     {
@@ -130,7 +132,8 @@
       "prompt": "Say: We have to take the neighbours into account.",
       "answer": "Tenemos que tener en cuenta a los vecinos.",
       "accept": [
-        "Hay que tener en cuenta a los vecinos."
+        "Hay que tener en cuenta a los vecinos.",
+        "Tenemos que tomar en cuenta a los vecinos."
       ],
       "why": "People after the phrase take *a*."
     },

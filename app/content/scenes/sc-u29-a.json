@@ -13,7 +13,7 @@
       "accept": [
         "Dudo que podamos ganar, Vale.",
         "Sinceramente, dudo que ganemos contra ellos.",
-        "Yo dudo que ganemos contra Altamira."
+        "Yo dudo que le ganemos a Altamira."
       ],
       "require": [
         {
@@ -30,7 +30,7 @@
       "id": "t2",
       "npc": "¿Tú crees? Yo creo que todavía tenemos una oportunidad.",
       "npcEn": "You think so? I think we still have a chance.",
-      "intent": "Say perhaps she's right (use quizás), but you want to hear the offer.",
+      "intent": "Say that perhaps she's right, though you're not sure (use quizás with the wish form), but that you want to hear the offer.",
       "accept": [
         "Quizás tengas razón, pero quiero escuchar la oferta.",
         "Pues quizás tengas razón, Vale, pero la oferta me interesa.",
@@ -51,7 +51,7 @@
       "id": "t3",
       "npc": "Qué raro. El abogado no contestó ayer. ¿Dónde estaría?",
       "npcEn": "How strange. The lawyer didn't answer yesterday. Where could he have been?",
-      "intent": "Guess where the lawyer was yesterday: say he would be in another meeting.",
+      "intent": "Guess where the lawyer was yesterday: say he was probably in another meeting.",
       "accept": [
         "Estaría en otra reunión.",
         "Estaría en su oficina con otro cliente.",
@@ -72,11 +72,11 @@
       "id": "t4",
       "npc": "Lo peor es que el abogado cobra mucho y casi no tenemos pruebas. Yo creo que debemos vender.",
       "npcEn": "The worst part is that the lawyer charges a lot and we have almost no proof. I say we sell.",
-      "intent": "Concede that she's right the lawyer costs a lot, but say you don't agree with selling.",
+      "intent": "Concede that she's right and the lawyer costs a lot, but say you don't agree on selling.",
       "accept": [
-        "Tienes razón, el abogado cobra mucho, pero no estoy de acuerdo con vender.",
-        "Tienes razón, el abogado cuesta mucho. Pero no estoy de acuerdo con vender el café.",
-        "Sí, tienes razón, pero no estoy de acuerdo con vender."
+        "Tienes razón, el abogado cobra mucho, pero no estoy de acuerdo en vender.",
+        "Tienes razón, el abogado cuesta mucho. Pero no estoy de acuerdo en vender el café.",
+        "Sí, es cierto, pero no estoy de acuerdo en vender."
       ],
       "require": [
         {
@@ -144,6 +144,8 @@
     "g:estar-location-states",
     "g:gender-articles",
     "g:gustar-full",
+    "g:indirect-objects",
+    "g:le-doubling",
     "g:lo-adjective",
     "g:prep-pronouns",
     "g:present-ar",
