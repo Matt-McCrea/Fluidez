@@ -1,0 +1,179 @@
+{
+ "node": "p:depender-de",
+ "hook": {
+  "line": "Almost every plan in Bogotá comes with a quiet condition. Instead of promising, you say it depends, and there is one small word you must not forget.",
+  "es": "Depende del clima.",
+  "en": "It depends on the weather."
+ },
+ "examples": [
+  {
+   "es": "Depende del clima.",
+   "en": "It depends on the weather."
+  },
+  {
+   "es": "¿Vienes mañana?\nDepende.",
+   "en": "Are you coming tomorrow?\nIt depends."
+  },
+  {
+   "es": "Depende de si me dan el préstamo.",
+   "en": "It depends on whether they give me the loan."
+  },
+  {
+   "es": "Todo depende de ti.",
+   "en": "It all depends on you."
+  },
+  {
+   "es": "El precio depende del tamaño.",
+   "en": "The price depends on the size."
+  },
+  {
+   "es": "Los precios dependen del tamaño.",
+   "en": "Prices depend on the size."
+  }
+ ],
+ "rule": "*Depender* always takes *de*: *depende de* plus the thing. *De* and *el* squeeze into *del*: *depende del clima*. Before a *si* clause, it is *depende de si* (whether).\n\n*Depende* on its own is a full answer, like English \"it depends\".\n\nThe verb agrees with what depends: *El precio depende*, *los precios dependen*, *dependemos de ti*.\n\nEnglish never lets you drop \"on\", and Spanish never lets you drop *de*.",
+ "smallPrint": "Teachers call this a verb with a fixed preposition: *depender* is always followed by *de*.",
+ "readAndPick": [
+  {
+   "es": "Depende del clima.",
+   "options": [
+    "It depended on the weather.",
+    "It depends on the weather.",
+    "It will depend on the weather."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Todo depende de mí.",
+   "options": [
+    "It all depends on you.",
+    "It all depends on him.",
+    "It all depends on me."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Los precios dependen del tamaño.",
+   "options": [
+    "The price depends on the size.",
+    "Prices depend on the size.",
+    "Prices don't depend on the size."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Dependemos de la lluvia.",
+   "options": [
+    "They depend on the rain.",
+    "I depend on the rain.",
+    "We depend on the rain."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Depende de si me dan el préstamo.",
+   "options": [
+    "It depends on whether they give me the loan.",
+    "It depends on whether I give them the loan.",
+    "It depends on whether they give you the loan."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "¿Vienes mañana?\nDepende.",
+   "options": [
+    "Are you coming tomorrow?\nIt depends.",
+    "Are you coming tomorrow?\nNo.",
+    "Is she coming tomorrow?\nIt depends."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Mi decisión depende del precio.",
+   "options": [
+    "The price depends on my decision.",
+    "My decision is the price.",
+    "My decision depends on the price."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Ellos dependen de nosotros.",
+   "options": [
+    "They depend on us.",
+    "We depend on them.",
+    "They depend on you."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick and type the whole sentence: *La respuesta ___ clima.* (*depende del* or *depende de el*) The answer depends on the weather.",
+   "answer": "La respuesta depende del clima.",
+   "accept": [],
+   "why": "*De* and *el* always squeeze into *del*."
+  },
+  {
+   "prompt": "Pick and type the whole sentence: *El precio ___ del tamaño.* (*depende* or *dependen*) The price depends on the size.",
+   "answer": "El precio depende del tamaño.",
+   "accept": [],
+   "why": "One price, so the singular *depende*."
+  },
+  {
+   "prompt": "Say: It depends on the weather.",
+   "answer": "Depende del clima.",
+   "accept": [
+    "Eso depende del clima.",
+    "Todo depende del clima."
+   ],
+   "why": "*Depende* plus *de* plus *el* gives *depende del*."
+  },
+  {
+   "prompt": "Say to a friend: It all depends on you.",
+   "answer": "Todo depende de ti.",
+   "accept": [
+    "Esto depende de ti."
+   ],
+   "why": "*De ti* is the *you* that follows *de*."
+  },
+  {
+   "prompt": "Your friend asks if you are coming tomorrow. Answer with one word: It depends.",
+   "answer": "Depende.",
+   "accept": [],
+   "why": "*Depende* alone is a complete answer."
+  },
+  {
+   "prompt": "Make it about prices (plural): *El precio depende del tamaño.*",
+   "answer": "Los precios dependen del tamaño.",
+   "accept": [
+    "Los precios dependen del tamaño."
+   ],
+   "why": "Plural prices need the plural verb *dependen*."
+  },
+  {
+   "prompt": "Say: It depends on whether they give me the loan.",
+   "answer": "Depende de si me dan el préstamo.",
+   "accept": [],
+   "why": "Before *si* (whether) you still need *de*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Depende el clima.",
+   "right": "Depende del clima.",
+   "why": "Almost. *Depender* always needs *de*, and *de* plus *el* becomes *del*."
+  },
+  {
+   "wrong": "Depende en el clima.",
+   "right": "Depende del clima.",
+   "why": "English says depends *on*, but Spanish uses *de*, never *en*."
+  },
+  {
+   "wrong": "Depende si me dan el préstamo.",
+   "right": "Depende de si me dan el préstamo.",
+   "why": "Before *si* (whether) keep the *de*: *depende de si*."
+  }
+ ],
+ "personal": "Think of a plan you have this week and give it a condition: *Voy al cine, pero depende del…* or *Depende de si…*."
+}

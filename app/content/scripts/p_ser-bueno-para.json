@@ -1,0 +1,180 @@
+{
+ "node": "p:ser-bueno-para",
+ "hook": {
+  "line": "Sooner or later someone asks what you are good at, in a job interview, at a party, or when Hernando wonders who should do the café's accounts. Spanish has one easy frame for it.",
+  "es": "Soy malo para recordar nombres.",
+  "en": "I'm bad at remembering names."
+ },
+ "examples": [
+  {
+   "es": "Vale es muy buena para los postres.",
+   "en": "Vale is very good at desserts."
+  },
+  {
+   "es": "Soy malo para recordar nombres.",
+   "en": "I'm bad at remembering names."
+  },
+  {
+   "es": "Tomás es bueno en matemáticas.",
+   "en": "Tomás is good at maths."
+  },
+  {
+   "es": "¿Eres buena para los idiomas?",
+   "en": "Are you good at languages? (to a woman, informal)"
+  },
+  {
+   "es": "Hernando es bueno para manejar.",
+   "en": "Hernando is good at driving."
+  },
+  {
+   "es": "Somos malos para cocinar.",
+   "en": "We're bad at cooking."
+  }
+ ],
+ "rule": "Say *ser*, then *bueno* or *malo*, then *para* and the thing: a noun (*los postres*) or a verb ending in *-r* (*manejar*). English switches between good *at* and good *with*; Spanish just uses *para*. With a subject you can also use *en*: *bueno en matemáticas*.\n\n*Bueno* and *malo* match the person: *buena*, *malos*, *malas*. Add *muy* to turn it up.\n\nThe verb after *para* never changes: *buenos para cocinar*, *buena para cocinar*.",
+ "smallPrint": "Teachers call this an adjective followed by a preposition: *bueno para* names the area the quality applies to.",
+ "readAndPick": [
+  {
+   "es": "Es muy buena para los idiomas.",
+   "options": [
+    "He's very good at languages.",
+    "She's very good at languages.",
+    "She's very bad at languages."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Soy malo para recordar nombres.",
+   "options": [
+    "I'm good at remembering names.",
+    "He's bad at remembering names.",
+    "I'm bad at remembering names."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Somos buenos para cocinar.",
+   "options": [
+    "They're good at cooking.",
+    "We're good at cooking.",
+    "We're bad at cooking."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Mis hijas son malas para bailar.",
+   "options": [
+    "My daughters are bad at dancing.",
+    "My sons are bad at dancing.",
+    "My daughters are good at dancing."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Eres bueno en matemáticas, ¿verdad?",
+   "options": [
+    "He's good at maths, right?",
+    "You're bad at maths, right?",
+    "You're good at maths, right?"
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Tomás es malo para los números.",
+   "options": [
+    "Tomás is good with numbers.",
+    "Tomás is bad with numbers.",
+    "Tomás and Vale are bad with numbers."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Ellos son buenos para manejar.",
+   "options": [
+    "She is good at driving.",
+    "They are bad at driving.",
+    "They are good at driving."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Ella no es buena para guardar secretos.",
+   "options": [
+    "She isn't good at keeping secrets.",
+    "He isn't good at keeping secrets.",
+    "She is good at keeping secrets."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick and type the whole sentence: *Vale es buena ___ los postres.* (*para* or *a*) Vale is good at desserts.",
+   "answer": "Vale es buena para los postres.",
+   "accept": [],
+   "why": "Spanish says *buena para*, not *a*, for what you are good at."
+  },
+  {
+   "prompt": "Pick and type the whole sentence: *Mis hermanos son ___ para cocinar.* (*buenos* or *buena*) My brothers are good at cooking.",
+   "answer": "Mis hermanos son buenos para cocinar.",
+   "accept": [],
+   "why": "*Hermanos* is plural and masculine, so the adjective is *buenos*."
+  },
+  {
+   "prompt": "Say (a man speaking): I'm bad at remembering names.",
+   "answer": "Soy malo para recordar nombres.",
+   "accept": [
+    "Yo soy malo para recordar nombres."
+   ],
+   "why": "*Malo* for a man, then *para* and the verb ending in *-r*."
+  },
+  {
+   "prompt": "Ask a friend (a woman): Are you good at languages?",
+   "answer": "¿Eres buena para los idiomas?",
+   "accept": [
+    "¿Tú eres buena para los idiomas?"
+   ],
+   "why": "She is a woman, so *buena*, then *para* and the thing."
+  },
+  {
+   "prompt": "Say: Hernando is good at driving.",
+   "answer": "Hernando es bueno para manejar.",
+   "accept": [],
+   "why": "*Bueno* for a man, and the verb after *para* stays as it is."
+  },
+  {
+   "prompt": "Make it negative: *Soy bueno para cantar.*",
+   "answer": "No soy bueno para cantar.",
+   "accept": [
+    "Yo no soy bueno para cantar."
+   ],
+   "why": "*No* goes in front of the verb *soy*."
+  },
+  {
+   "prompt": "Make it about *we* (men and women): *Soy malo para bailar.*",
+   "answer": "Somos malos para bailar.",
+   "accept": [
+    "Nosotros somos malos para bailar."
+   ],
+   "why": "*Somos* is the *we* form, and *malos* is plural."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Soy bueno a cocinar.",
+   "right": "Soy bueno para cocinar.",
+   "why": "Almost. English says good *at*, but Spanish reaches for *para*."
+  },
+  {
+   "wrong": "Mi hermana es bueno para los idiomas.",
+   "right": "Mi hermana es buena para los idiomas.",
+   "why": "*Bueno* matches the person, so for a woman it is *buena*."
+  },
+  {
+   "wrong": "Soy bien para bailar.",
+   "right": "Soy bueno para bailar.",
+   "why": "*Bien* says how you do something. To describe a person, use *bueno*."
+  }
+ ],
+ "personal": "Tell us one thing you are good at and one you are bad at: *Soy bueno para…* (or *buena*) and *Soy malo para…* (or *mala*)."
+}

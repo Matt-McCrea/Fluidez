@@ -1,0 +1,175 @@
+{
+ "node": "p:adelantar-aplazar",
+ "hook": {
+  "line": "Plans move all the time, and in Bogotá probably more than most. When Mariana has to shift a meeting, three or four verbs do the work.",
+  "es": "Adelantamos la reunión para el lunes.",
+  "en": "We brought the meeting forward to Monday."
+ },
+ "examples": [
+  {
+   "es": "Adelantamos la reunión para el lunes.",
+   "en": "We brought the meeting forward to Monday."
+  },
+  {
+   "es": "Tenemos que aplazar el viaje.",
+   "en": "We have to postpone the trip."
+  },
+  {
+   "es": "¿Podemos correr la cita para las cuatro?",
+   "en": "Can we move the appointment to four o'clock?"
+  },
+  {
+   "es": "Aplazaron la fiesta para la próxima semana.",
+   "en": "They postponed the party until next week."
+  },
+  {
+   "es": "Vale adelantó el pedido para el viernes.",
+   "en": "Vale brought the order forward to Friday."
+  },
+  {
+   "es": "Quiero posponer la clase para mañana.",
+   "en": "I want to postpone the class until tomorrow."
+  }
+ ],
+ "rule": "The direction is inside the verb. *Adelantar* moves something earlier. *Aplazar* and *posponer* move it later. *Correr* is the everyday Colombian way to say \"move\" either way: *correr la cita*.\n\nThe thing you move is the object: *la reunión*, *el viaje*. The new date comes after *para*: *para el lunes*.\n\nEnglish needs \"bring forward\", \"push back\", \"put off\". Spanish just picks one verb.",
+ "smallPrint": "Teachers call *para* here a preposition of deadline: it marks the date something is set for.",
+ "readAndPick": [
+  {
+   "es": "Adelantamos la reunión para el lunes.",
+   "options": [
+    "We postponed the meeting to Monday.",
+    "We brought the meeting forward to Monday.",
+    "We cancelled the meeting on Monday."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Aplazaron el viaje para diciembre.",
+   "options": [
+    "They brought the trip forward to December.",
+    "They planned the trip for December.",
+    "They postponed the trip until December."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "¿Podemos correr la cita para las cuatro?",
+   "options": [
+    "Can we move the appointment to four o'clock?",
+    "Can we cancel the appointment at four?",
+    "Did we miss the appointment at four?"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Voy a posponer la clase.",
+   "options": [
+    "I'm going to bring the class forward.",
+    "I'm going to postpone the class.",
+    "I'm going to teach the class."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Tenemos que aplazar la visita.",
+   "options": [
+    "We have to bring the visit forward.",
+    "We have to make the visit.",
+    "We have to postpone the visit."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Adelantaron el vuelo para el martes.",
+   "options": [
+    "They brought the flight forward to Tuesday.",
+    "They postponed the flight until Tuesday.",
+    "They took the flight on Tuesday."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Posponemos la fiesta para el sábado.",
+   "options": [
+    "We're bringing the party forward to Saturday.",
+    "We held the party on Saturday.",
+    "We're postponing the party until Saturday."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Quiero adelantar la cita.",
+   "options": [
+    "I want to postpone the appointment.",
+    "I want to bring the appointment forward.",
+    "I want to forget the appointment."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick and type the whole sentence: *___ la reunión para el lunes.* (*Adelantamos* or *Aplazamos*) We brought the meeting forward to Monday.",
+   "answer": "Adelantamos la reunión para el lunes.",
+   "accept": [],
+   "why": "*Adelantar* means earlier, and Monday comes sooner."
+  },
+  {
+   "prompt": "Pick and type the whole sentence: *Aplazaron el viaje ___ diciembre.* (*para* or *a*) They postponed the trip until December.",
+   "answer": "Aplazaron el viaje para diciembre.",
+   "accept": [],
+   "why": "The new date comes after *para*."
+  },
+  {
+   "prompt": "Say: We postponed the trip.",
+   "answer": "Aplazamos el viaje.",
+   "accept": [],
+   "why": "*Aplazar* moves it later, and the trip is the object."
+  },
+  {
+   "prompt": "Ask a colleague: Can we move the appointment to four o'clock?",
+   "answer": "¿Podemos correr la cita para las cuatro?",
+   "accept": [
+    "¿Podemos adelantar la cita para las cuatro?",
+    "¿Podemos aplazar la cita para las cuatro?"
+   ],
+   "why": "*Correr la cita* means move it, and the new time follows *para*."
+  },
+  {
+   "prompt": "Say: Vale brought the order forward to Friday.",
+   "answer": "Vale adelantó el pedido para el viernes.",
+   "accept": [],
+   "why": "*Adelantó* is the *she* form, and the new date follows *para*."
+  },
+  {
+   "prompt": "Turn it around so it is later: *Adelantamos la reunión.*",
+   "answer": "Aplazamos la reunión.",
+   "accept": [],
+   "why": "*Aplazar* is the opposite of *adelantar*."
+  },
+  {
+   "prompt": "Make it about *they*: *Adelantamos el vuelo para el martes.*",
+   "answer": "Adelantaron el vuelo para el martes.",
+   "accept": [],
+   "why": "*They* in the past ends in *-aron*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Adelantamos la reunión para más tarde.",
+   "right": "Aplazamos la reunión para más tarde.",
+   "why": "*Adelantar* always means earlier. For later, use *aplazar* or *posponer*."
+  },
+  {
+   "wrong": "Aplazamos la reunión en el lunes.",
+   "right": "Aplazamos la reunión para el lunes.",
+   "why": "The new date after these verbs comes with *para*, not *en*."
+  },
+  {
+   "wrong": "Posponemos para el viaje.",
+   "right": "Posponemos el viaje.",
+   "why": "The thing you move is the object, with no *para*. Use *para* only for the new date."
+  }
+ ],
+ "personal": "Think of something you keep putting off and say it: *Quiero aplazar…* or *Voy a posponer…*, and when you will do it with *para*."
+}
