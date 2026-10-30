@@ -1,0 +1,198 @@
+{
+  "node": "g:se-accidental",
+  "hook": {
+    "line": "In a café, things slip, break and run out all day. Spanish has a neat way to say it happened to you without saying you did it, which is exactly what you want when a cup lands on the floor.",
+    "es": "Se me cayó tu taza. No fue mi intención.",
+    "en": "I dropped your cup.\nI didn't mean to."
+  },
+  "examples": [
+    {
+      "es": "Se me olvidaron las llaves.",
+      "en": "I forgot my keys."
+    },
+    {
+      "es": "Se me cayó el celular.",
+      "en": "I dropped my phone."
+    },
+    {
+      "es": "¿Se te cayó algo?",
+      "en": "Did you drop something? (to a friend)"
+    },
+    {
+      "es": "A Vale se le cayó la bandeja.",
+      "en": "Vale dropped the tray."
+    },
+    {
+      "es": "Se nos acabó el café.",
+      "en": "We ran out of coffee."
+    },
+    {
+      "es": "Se les olvidó la reunión.",
+      "en": "They forgot about the meeting."
+    },
+    {
+      "es": "Se me cayó la botella. No tiene importancia.",
+      "en": "I dropped the bottle.\nIt doesn't matter."
+    }
+  ],
+  "rule": "English says *I dropped my phone*, as if you did something. Spanish often says the phone fell, and it happened to you.\n\n*Se me cayó el celular.*\n\nThe thing is the subject, so the verb matches the thing:\n*Se me cayó la botella.* (one)\n*Se me cayeron las llaves.* (more than one)\n\nThe little word after *se* says who it happened to:\n*me*, *te*, *le*, *nos*, *les*\n\nThe verb never changes for that person. To name them, put *a* in front: *A Vale se le cayó la bandeja.*\n\nUse it for slips and accidents: dropping, forgetting, breaking, running out. If you did it on purpose, use the normal verb: *Tiré el vaso.*",
+  "smallPrint": "Teachers call this the accidental or unplanned *se*. Colombians use it constantly.",
+  "readAndPick": [
+    {
+      "es": "Se me cayó el celular.",
+      "options": [
+        "I dropped my phone.",
+        "You dropped your phone. (to a friend)",
+        "We dropped our phone."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se te olvidaron las llaves.",
+      "options": [
+        "I forgot my keys.",
+        "You forgot your key. (to a friend)",
+        "You forgot your keys. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se nos acabó el café.",
+      "options": [
+        "They ran out of coffee.",
+        "We ran out of coffee.",
+        "I ran out of coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se le cayeron los vasos.",
+      "options": [
+        "He dropped a glass.",
+        "She dropped some glasses.",
+        "We dropped some glasses."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se les olvidó la reunión.",
+      "options": [
+        "They forgot about the meeting.",
+        "We forgot about the meeting.",
+        "She forgot about the meeting."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se me olvidó llamarte.",
+      "options": [
+        "You forgot to call me. (to a friend)",
+        "She forgot to call you. (to a friend)",
+        "I forgot to call you. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se me cayeron las botellas.",
+      "options": [
+        "I dropped a bottle.",
+        "I dropped some bottles.",
+        "You dropped some bottles. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Tomás se le rompió el vaso.",
+      "options": [
+        "Tomás broke his glass.",
+        "I broke Tomás's glass.",
+        "Tomás broke some glasses."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se te acabó el tiempo.",
+      "options": [
+        "Your time ran out. (to a friend)",
+        "My time ran out.",
+        "Our time ran out."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Se me ___ el celular. (cayó / cayeron) I dropped my phone.",
+      "answer": "Se me cayó el celular.",
+      "accept": [],
+      "why": "One phone, so the verb is the singular *cayó*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: Se me ___ las llaves. (olvidó / olvidaron) I forgot my keys.",
+      "answer": "Se me olvidaron las llaves.",
+      "accept": [],
+      "why": "The keys are the subject and there is more than one, so *olvidaron*."
+    },
+    {
+      "prompt": "We ran out of coffee.",
+      "answer": "Se nos acabó el café.",
+      "accept": [],
+      "why": "*Nos* is for us, and the verb matches the one thing, *el café*."
+    },
+    {
+      "prompt": "Vale dropped the tray. (by accident)",
+      "answer": "A Vale se le cayó la bandeja.",
+      "accept": [
+        "Se le cayó la bandeja a Vale."
+      ],
+      "why": "*Le* says it happened to her, and *a Vale* tells us who."
+    },
+    {
+      "prompt": "Say to a friend: Did you drop something?",
+      "answer": "¿Se te cayó algo?",
+      "accept": [],
+      "why": "*Te* is for the person you are talking to."
+    },
+    {
+      "prompt": "Make it about a friend (tú): Se me cayó el vaso.",
+      "answer": "Se te cayó el vaso.",
+      "accept": [],
+      "why": "Only the small word changes, from *me* to *te*. The verb stays."
+    },
+    {
+      "prompt": "Make the thing plural: Se me cayó la botella.",
+      "answer": "Se me cayeron las botellas.",
+      "accept": [],
+      "why": "Two or more bottles, so the verb is *cayeron*."
+    },
+    {
+      "prompt": "Make it negative: Se me olvidó la llave.",
+      "answer": "No se me olvidó la llave.",
+      "accept": [],
+      "why": "*No* goes right before *se*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me caí el celular.",
+      "right": "Se me cayó el celular.",
+      "why": "Almost. *Me caí* means *I fell*. When you drop something, the thing falls and it happens to you."
+    },
+    {
+      "wrong": "Se me cayeron el celular.",
+      "right": "Se me cayó el celular.",
+      "why": "The verb matches the thing, not you. One phone, one *cayó*."
+    },
+    {
+      "wrong": "Se me olvidó las llaves.",
+      "right": "Se me olvidaron las llaves.",
+      "why": "Close. The keys are the subject, and there is more than one, so *olvidaron*."
+    },
+    {
+      "wrong": "Se me olvidé la llave.",
+      "right": "Se me olvidó la llave.",
+      "why": "The verb never agrees with *me*. It agrees with *la llave*."
+    }
+  ],
+  "personal": "Think of the last thing that slipped, broke or ran out on you. Write two lines with *se me*, *se nos* or *se le*, like *Se me acabó la leche.*"
+}

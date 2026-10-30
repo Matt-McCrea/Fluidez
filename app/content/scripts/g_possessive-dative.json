@@ -1,0 +1,190 @@
+{
+  "node": "g:possessive-dative",
+  "hook": {
+    "line": "Someone steals your wallet on the bus, or you cut your finger slicing guava. In English, everything is \"my\". Spanish already knows whose it is.",
+    "es": "Me robaron la billetera en el bus.",
+    "en": "They stole my wallet on the bus."
+  },
+  "examples": [
+    {
+      "es": "Me corté el dedo.",
+      "en": "I cut my finger."
+    },
+    {
+      "es": "Le robaron la billetera.",
+      "en": "They stole his wallet."
+    },
+    {
+      "es": "Me lavo el pelo.",
+      "en": "I wash my hair."
+    },
+    {
+      "es": "¿Te duele la cabeza?",
+      "en": "Does your head hurt? (to a friend)"
+    },
+    {
+      "es": "Nos robaron el carro.",
+      "en": "They stole our car."
+    },
+    {
+      "es": "Se lavó las manos.",
+      "en": "She washed her hands."
+    },
+    {
+      "es": "Me robaron el celular en el bus.",
+      "en": "They stole my phone on the bus."
+    }
+  ],
+  "rule": "English says *my finger*, *his wallet*. Spanish uses *el*, *la*, *los* or *las*, and the small word *me*, *te*, *le*, *nos* or *les* says whose it is:\n\n*Me corté el dedo.* (I cut my finger)\n*Le robaron la billetera.* (his wallet)\n\nYou already know the idea from *se me cayó*. The person is the one things happen to.\n\nUse it for body parts, clothes and things you carry:\n*Me duele la espalda.*\n*Se lavó las manos.*\n\nBe careful: if you say *mi dedo*, it sounds like the finger belongs to you but you are not the one affected. For your own body, use the small word.",
+  "smallPrint": "Teachers call this the possessive dative. The indirect object stands in for *my*, *your* and *his*.",
+  "readAndPick": [
+    {
+      "es": "Me corté el dedo.",
+      "options": [
+        "I cut my finger.",
+        "He cut his finger.",
+        "I cut his finger."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le robaron la billetera.",
+      "options": [
+        "They stole my wallet.",
+        "They stole his wallet.",
+        "They stole our wallet."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos robaron el carro.",
+      "options": [
+        "They stole our car.",
+        "They stole my car.",
+        "They stole her car."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te duele la cabeza?",
+      "options": [
+        "Does my head hurt?",
+        "Does his head hurt?",
+        "Does your head hurt? (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se lavó las manos.",
+      "options": [
+        "She washed her hands.",
+        "I washed my hands.",
+        "She washed her hand."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me robaron el celular.",
+      "options": [
+        "They stole her phone.",
+        "They stole my phone.",
+        "They stole your phone. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Les robaron los carros.",
+      "options": [
+        "They stole our cars.",
+        "They stole their cars.",
+        "They stole his car."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me lavo el pelo.",
+      "options": [
+        "He washes his hair.",
+        "I wash my hair.",
+        "I wash your hair. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te quitaron el bolso.",
+      "options": [
+        "They took your bag. (to a friend)",
+        "They took my bag.",
+        "They took her bag."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Me corté ___ dedo. (el / mi) I cut my finger.",
+      "answer": "Me corté el dedo.",
+      "accept": [],
+      "why": "The small word *me* already says whose, so you use *el*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: Le robaron ___ billetera. (la / su) They stole his wallet.",
+      "answer": "Le robaron la billetera.",
+      "accept": [],
+      "why": "*Le* says whose it is, so you use *la*."
+    },
+    {
+      "prompt": "I wash my hair.",
+      "answer": "Me lavo el pelo.",
+      "accept": [],
+      "why": "*Me* is whose, and *el pelo* is the thing."
+    },
+    {
+      "prompt": "Ask a friend: Does your head hurt?",
+      "answer": "¿Te duele la cabeza?",
+      "accept": [],
+      "why": "*Te* is for your friend."
+    },
+    {
+      "prompt": "They stole our car.",
+      "answer": "Nos robaron el carro.",
+      "accept": [],
+      "why": "*Nos* says whose it is."
+    },
+    {
+      "prompt": "Make it about her: Me lavo las manos.",
+      "answer": "Se lava las manos.",
+      "accept": [],
+      "why": "For her, the small word is *se*."
+    },
+    {
+      "prompt": "Make it about us: Me robaron el celular.",
+      "answer": "Nos robaron el celular.",
+      "accept": [],
+      "why": "Only the small word changes, to *nos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me corté mi dedo.",
+      "right": "Me corté el dedo.",
+      "why": "Almost. *Me* already says whose finger it is, so you do not repeat it with *mi*."
+    },
+    {
+      "wrong": "Lavo mi pelo.",
+      "right": "Me lavo el pelo.",
+      "why": "The hair is yours and you are doing it to yourself, so Spanish uses *me* plus *el*."
+    },
+    {
+      "wrong": "Le duele su cabeza.",
+      "right": "Le duele la cabeza.",
+      "why": "*Le* says whose head it is. Use *la*, not *su*."
+    },
+    {
+      "wrong": "Robaron mi billetera.",
+      "right": "Me robaron la billetera.",
+      "why": "Better with the small word: *me* shows it happened to you, and *la* takes the place of *mi*."
+    }
+  ],
+  "personal": "Tell us about something that happened to you or your things: a cut, a bump, something taken or lost. Write two lines with *me* and *el*, *la*, *los* or *las*."
+}

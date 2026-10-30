@@ -1,0 +1,172 @@
+{
+  "node": "p:sentir-lo-de",
+  "hook": {
+    "line": "Sooner or later you are late, or a friend is going through something hard. *Siento* is warmer than a bare \"sorry\" and fits both.",
+    "es": "Siento llegar tarde. Siento mucho lo de tu papá.",
+    "en": "I'm sorry I'm late.\nI'm so sorry about your dad."
+  },
+  "examples": [
+    {
+      "es": "Siento llegar tarde.",
+      "en": "I'm sorry I'm late."
+    },
+    {
+      "es": "Siento mucho lo de tu papá.",
+      "en": "I'm so sorry about your dad."
+    },
+    {
+      "es": "Siento que tengas que irte tan pronto.",
+      "en": "I'm sorry you have to leave so soon."
+    },
+    {
+      "es": "Siento molestarte.",
+      "en": "I'm sorry to bother you. (to a friend)"
+    },
+    {
+      "es": "Siento mucho lo del accidente.",
+      "en": "I'm so sorry about the accident."
+    },
+    {
+      "es": "Siento no poder ir.",
+      "en": "I'm sorry I can't go."
+    }
+  ],
+  "rule": "*Siento* says you are sorry. Three ways to finish it:\n\n*Siento* + infinitive, when you did it:\n*Siento llegar tarde.*\n\n*Siento que* + a different person, with the verb in the form you learned for feelings:\n*Siento que tengas que irte.*\n\n*Siento mucho lo de* + noun, for bad news:\n*Siento mucho lo de tu papá.*\n\n*Lo de* means \"what happened with\". Add *mucho* to make it warmer.",
+  "smallPrint": "*Lo de* plus a noun is a handy way to refer to a situation without naming it.",
+  "readAndPick": [
+    {
+      "es": "Siento llegar tarde.",
+      "options": [
+        "I'm sorry I'm late.",
+        "I feel like arriving late.",
+        "I'm sorry you are late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siento mucho lo de tu papá.",
+      "options": [
+        "I miss your dad.",
+        "I'm so sorry about your dad.",
+        "I'm sorry your dad is late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento que tengas que irte tan pronto.",
+      "options": [
+        "I'm sorry you have to leave so soon.",
+        "I'm sorry I have to leave so soon.",
+        "I feel you will leave soon."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siento molestarte.",
+      "options": [
+        "I'm sorry to bother you. (to a friend)",
+        "I'm sorry you bother me.",
+        "I feel bothered."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siento mucho lo del accidente.",
+      "options": [
+        "I'm sorry I caused the accident.",
+        "I'm so sorry about the accident.",
+        "I'm so sorry about my car."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento no poder ir.",
+      "options": [
+        "I'm sorry you can't go.",
+        "I'm sorry I can't go.",
+        "I feel like going."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento mucho lo de tu abuela.",
+      "options": [
+        "I'm so sorry about your grandmother.",
+        "I miss your grandmother.",
+        "Your grandmother is sorry."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siento que no puedas venir.",
+      "options": [
+        "I'm sorry I can't come.",
+        "I'm sorry you can't come.",
+        "I feel I can't come."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Siento ___ tarde. (llegar / llegas) I'm sorry I'm late.",
+      "answer": "Siento llegar tarde.",
+      "accept": [],
+      "why": "When you are the one who did it, *siento* goes with the infinitive."
+    },
+    {
+      "prompt": "I'm so sorry about your dad. (to a friend)",
+      "answer": "Siento mucho lo de tu papá.",
+      "accept": [],
+      "why": "*Lo de* plus the noun, with *mucho* for warmth."
+    },
+    {
+      "prompt": "I'm sorry to bother you. (to a friend)",
+      "answer": "Siento molestarte.",
+      "accept": [],
+      "why": "The infinitive with *te* attached, because you did it."
+    },
+    {
+      "prompt": "I'm sorry I can't go.",
+      "answer": "Siento no poder ir.",
+      "accept": [],
+      "why": "*No* goes before the infinitive."
+    },
+    {
+      "prompt": "I'm so sorry about the accident.",
+      "answer": "Siento mucho lo del accidente.",
+      "accept": [],
+      "why": "*De* plus *el* becomes *del*."
+    },
+    {
+      "prompt": "I'm sorry you can't come. (to a friend)",
+      "answer": "Siento que no puedas venir.",
+      "accept": [],
+      "why": "A different person is involved, so *que* and the feeling form *puedas*."
+    },
+    {
+      "prompt": "Make it warmer: Siento llegar tarde.",
+      "answer": "Siento mucho llegar tarde.",
+      "accept": [],
+      "why": "Add *mucho* after *siento*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Siento llegando tarde.",
+      "right": "Siento llegar tarde.",
+      "why": "Almost. After *siento*, use the plain infinitive."
+    },
+    {
+      "wrong": "Siento de tu papá.",
+      "right": "Siento mucho lo de tu papá.",
+      "why": "You need *lo de*. It is the bridge to the news."
+    },
+    {
+      "wrong": "Siento que tienes que irte.",
+      "right": "Siento que tengas que irte.",
+      "why": "Feelings about someone else call for the *tengas* form, not *tienes*."
+    }
+  ],
+  "personal": "Think of someone you owe an apology or some kind words. Write one line with *siento* and one with *siento mucho lo de…*"
+}

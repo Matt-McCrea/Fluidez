@@ -1,0 +1,174 @@
+{
+  "node": "p:cargar-descargar",
+  "hook": {
+    "line": "Every traveller ends up asking where to plug in, and every phone dies at the worst moment. One verb family covers it.",
+    "es": "Se me descargó el celular. ¿Dónde puedo cargarlo?",
+    "en": "My phone died.\nWhere can I charge it?"
+  },
+  "examples": [
+    {
+      "es": "Se me descargó el celular.",
+      "en": "My phone died."
+    },
+    {
+      "es": "¿Dónde puedo cargar el celular?",
+      "en": "Where can I charge my phone?"
+    },
+    {
+      "es": "Descargué la aplicación.",
+      "en": "I downloaded the app."
+    },
+    {
+      "es": "Descargaron el camión.",
+      "en": "They unloaded the truck."
+    },
+    {
+      "es": "Cargué las cajas en el carro.",
+      "en": "I loaded the boxes into the car."
+    },
+    {
+      "es": "Cargo el celular en la noche.",
+      "en": "I charge my phone at night."
+    }
+  ],
+  "rule": "*Cargar* means to load or to charge. *Descargar* is the opposite: to unload, to drain, to download.\n\n*Cargar el celular*: charge your phone.\n*Cargar las cajas*: load the boxes.\n*Descargar la aplicación*: download the app.\n*Descargar el camión*: unload the truck.\n\nWhen a battery dies on you, use the accidental *se*: *Se me descargó el celular.* The phone is the subject and you are who it happened to.",
+  "smallPrint": "*La carga* is the load, or the charge. One word family does the work of several English verbs.",
+  "readAndPick": [
+    {
+      "es": "Se me descargó el celular.",
+      "options": [
+        "I charged my phone.",
+        "My phone died.",
+        "I downloaded the phone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde puedo cargar el celular?",
+      "options": [
+        "Where can I charge my phone?",
+        "Where did my phone die?",
+        "Where can I download my phone?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Descargué la aplicación.",
+      "options": [
+        "I opened the app.",
+        "I deleted the app.",
+        "I downloaded the app."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Descargaron el camión.",
+      "options": [
+        "They loaded the truck.",
+        "They unloaded the truck.",
+        "They bought the truck."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cargaron el camión.",
+      "options": [
+        "They unloaded the truck.",
+        "They loaded the truck.",
+        "They drove the truck."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se les descargó el celular.",
+      "options": [
+        "Their phone died.",
+        "They charged their phone.",
+        "Their phone fell."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cargo el celular en la noche.",
+      "options": [
+        "My phone dies at night.",
+        "I download my phone at night.",
+        "I charge my phone at night."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se nos descargaron los celulares.",
+      "options": [
+        "We charged the phones.",
+        "Our phones died.",
+        "Our phone died."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Se me ___ el celular. (descargó / cargó) My phone died.",
+      "answer": "Se me descargó el celular.",
+      "accept": [],
+      "why": "Dying is the opposite of charging, so *descargó*."
+    },
+    {
+      "prompt": "Where can I charge my phone?",
+      "answer": "¿Dónde puedo cargar el celular?",
+      "accept": [
+        "¿Dónde puedo cargar mi celular?"
+      ],
+      "why": "Putting power in is *cargar*."
+    },
+    {
+      "prompt": "I downloaded the app.",
+      "answer": "Descargué la aplicación.",
+      "accept": [],
+      "why": "Getting a file onto your phone is *descargar*."
+    },
+    {
+      "prompt": "They unloaded the truck.",
+      "answer": "Descargaron el camión.",
+      "accept": [],
+      "why": "Taking the load off is *descargar*."
+    },
+    {
+      "prompt": "Your phone died. (to a friend)",
+      "answer": "Se te descargó el celular.",
+      "accept": [],
+      "why": "*Te* says it happened to the person you are talking to."
+    },
+    {
+      "prompt": "Make it about us: Se me descargó el celular.",
+      "answer": "Se nos descargó el celular.",
+      "accept": [],
+      "why": "Only *me* changes, to *nos*."
+    },
+    {
+      "prompt": "Make the thing plural: Se me descargó el celular.",
+      "answer": "Se me descargaron los celulares.",
+      "accept": [],
+      "why": "More than one phone, so the verb is *descargaron*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Mi celular descargó.",
+      "right": "Se me descargó el celular.",
+      "why": "Almost. A battery dying is something that happens to you, so Spanish uses the accidental *se*."
+    },
+    {
+      "wrong": "Cargué la aplicación.",
+      "right": "Descargué la aplicación.",
+      "why": "*Cargar* puts something in. Getting an app onto your phone is *descargar*."
+    },
+    {
+      "wrong": "Se me descargaron el celular.",
+      "right": "Se me descargó el celular.",
+      "why": "The verb matches the phone, and there is only one."
+    }
+  ],
+  "personal": "Say what usually dies on you, and when. Try *Se me descarga el celular en la tarde*, or change the thing."
+}
