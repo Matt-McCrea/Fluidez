@@ -1,0 +1,174 @@
+{
+  "node": "p:imperfecto-cortesia-venia",
+  "hook": {
+    "line": "Hernando needs a favor from a city office, and a blunt *Vengo a exigir* is a poor way to start. In Spanish, politeness often lives in the tense: you ask in the imperfect.",
+    "es": "Venía a ver si me podían atender.",
+    "en": "I was wondering if someone could see me."
+  },
+  "examples": [
+    {
+      "es": "Venía a ver si me podían atender.",
+      "en": "I was wondering if someone could see me."
+    },
+    {
+      "es": "Le escribía para preguntar por mi solicitud.",
+      "en": "I was writing to ask about my application. (formal)"
+    },
+    {
+      "es": "Venía a pedirle un favor, don Hernando.",
+      "en": "I was hoping to ask you a favor, Don Hernando. (formal)"
+    },
+    {
+      "es": "Te llamaba para saber si puedes venir mañana.",
+      "en": "I was calling to find out if you can come tomorrow. (to a friend)"
+    },
+    {
+      "es": "Veníamos a preguntar por el precio del local.",
+      "en": "We were hoping to ask about the price of the premises."
+    },
+    {
+      "es": "Le llamaba para saber si ya llegó mi paquete.",
+      "en": "I was calling to find out whether my package has arrived. (formal)"
+    }
+  ],
+  "rule": "When you walk up to someone and ask for something, the present tense (*Vengo a pedirle…*) can sound like a demand. The imperfect steps back a little: *Venía a…*, *Le escribía para…*, *Te llamaba para…*.\n\nIt still means now. Nothing happened in the past; the tense just makes you sound modest. English does it with *I was wondering if…*\n\nThe frame is *venía a* or *llamaba para* plus an infinitive, often followed by *ver si* and a second imperfect: *me podían atender*.\n\nUse it to ask, never to announce. A firm statement in the imperfect sounds unsure.",
+  "smallPrint": "Teachers call this the imperfect of courtesy: the imperfect used for a request in the present, to soften it.",
+  "readAndPick": [
+    {
+      "es": "Venía a ver si me podían atender.",
+      "options": [
+        "I was wondering if someone could see me.",
+        "I'm here and I demand to be seen.",
+        "I came and someone saw me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vengo a pedirle un favor.",
+      "options": [
+        "I was hoping to ask you a favor.",
+        "I'm here to ask you a favor.",
+        "I came to ask you a favor yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le escribía para pedir una cita.",
+      "options": [
+        "I am writing, plainly, to ask for an appointment.",
+        "I wrote to ask for an appointment, and it is done.",
+        "I was writing to ask for an appointment, if I may."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Veníamos a preguntar por el precio.",
+      "options": [
+        "I was hoping to ask about the price.",
+        "They were hoping to ask about the price.",
+        "We were hoping to ask about the price."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Te llamaba para saber si puedes venir mañana.",
+      "options": [
+        "I was calling you (a friend) to find out if you can come tomorrow.",
+        "I was calling you (formal) to find out if you can come tomorrow.",
+        "I was calling him to find out if he can come tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le llamaba para saber si ya llegó mi paquete.",
+      "options": [
+        "I was calling you (a friend) to find out whether my package has arrived.",
+        "I called you (formal) to say my package arrived.",
+        "I was calling you (formal) to find out whether my package has arrived."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Venía a hablar con la dueña del café.",
+      "options": [
+        "I'm here to speak with the owner of the café.",
+        "I was hoping to speak with the owner of the café.",
+        "I came and spoke with the owner of the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Venía a ver si todavía tenían mesa.",
+      "options": [
+        "I was wondering if you still had a table.",
+        "I'm coming to see if you still have a table.",
+        "I came to see if they still had a table, and they did."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *Vengo* or *Venía* to ask softly: ___ a ver si me podían atender. Type the whole sentence.",
+      "answer": "Venía a ver si me podían atender.",
+      "accept": [],
+      "why": "Asking softly takes the imperfect: it steps back from the request."
+    },
+    {
+      "prompt": "Choose *escribo* or *escribía* to open a polite letter: Le ___ para preguntar por mi solicitud. Type the whole sentence.",
+      "answer": "Le escribía para preguntar por mi solicitud.",
+      "accept": [],
+      "why": "*Escribía* is the modest version of the same request."
+    },
+    {
+      "prompt": "I was hoping to ask you a favor, Don Hernando. (formal)",
+      "answer": "Venía a pedirle un favor, don Hernando.",
+      "accept": [],
+      "why": "*Venía a* plus an infinitive is the polite way to say what you came for."
+    },
+    {
+      "prompt": "I was calling to find out if you can come tomorrow. (to a friend)",
+      "answer": "Te llamaba para saber si puedes venir mañana.",
+      "accept": [],
+      "why": "A friend is *te*, and *llamaba para* is the soft opening."
+    },
+    {
+      "prompt": "We were hoping to ask about the price of the premises.",
+      "answer": "Veníamos a preguntar por el precio del local.",
+      "accept": [],
+      "why": "*Veníamos* is the *we* form, and *preguntar por* asks about something."
+    },
+    {
+      "prompt": "Make it polite with the imperfect: *Vengo a ver si hay mesa.*",
+      "answer": "Venía a ver si había mesa.",
+      "accept": [
+        "Venía a ver si había una mesa."
+      ],
+      "why": "Both verbs step back: *venía* and *había*."
+    },
+    {
+      "prompt": "Now say it to a friend: *Le llamaba para saber si ya llegó mi paquete.*",
+      "answer": "Te llamaba para saber si ya llegó mi paquete.",
+      "accept": [],
+      "why": "*Le* is for a formal *you*; a friend gets *te*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Vine a ver si me podían atender.",
+      "right": "Venía a ver si me podían atender.",
+      "why": "Almost. *Vine* says you came and that is over; the polite ask needs *venía*, which keeps the request open."
+    },
+    {
+      "wrong": "Venía a decirle que no voy a vender.",
+      "right": "Vengo a decirle que no voy a vender.",
+      "why": "When you are being firm, use the present. The imperfect would make you sound unsure."
+    },
+    {
+      "wrong": "Le escribía a preguntar por mi solicitud.",
+      "right": "Le escribía para preguntar por mi solicitud.",
+      "why": "*Escribir* takes *para* before the purpose; *venir* is the one that takes *a*."
+    }
+  ],
+  "personal": "Think of something you would have to ask a stranger politely, like a table, an appointment or a price. Say it with *Venía a…* or *Te llamaba para…*."
+}

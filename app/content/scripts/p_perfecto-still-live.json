@@ -1,0 +1,179 @@
+{
+  "node": "p:perfecto-still-live",
+  "hook": {
+    "line": "Hernando is dictating his memoir, and Tomás keeps asking what he thinks about one old decision. A view he has held ever since needs a different tense from the day it happened.",
+    "es": "Siempre he pensado que fue un error.",
+    "en": "I've always thought it was a mistake."
+  },
+  "examples": [
+    {
+      "es": "Siempre he pensado que fue un error.",
+      "en": "I've always thought it was a mistake."
+    },
+    {
+      "es": "Este año no he podido descansar.",
+      "en": "I haven't been able to rest this year."
+    },
+    {
+      "es": "Nunca he entendido por qué renunció.",
+      "en": "I've never understood why she resigned."
+    },
+    {
+      "es": "Siempre he creído que Rosa tenía razón.",
+      "en": "I've always believed that Rosa was right."
+    },
+    {
+      "es": "Esta semana no he podido llamar a mi mamá.",
+      "en": "I haven't been able to call my mom this week."
+    },
+    {
+      "es": "Hernando nunca ha aceptado la oferta.",
+      "en": "Hernando has never accepted the offer."
+    }
+  ],
+  "rule": "In Latin America, the simple past is the everyday tense for events that are over: *Ayer no pude descansar*.\n\nThe *he* + participle form is for what is still open: a view you still hold (*siempre he pensado*, *nunca he entendido*) or a stretch of time you are still in (*este año*, *esta semana*).\n\nLook at the first example. *Siempre he pensado* is the view, still alive. *Que fue un error* is the closed event, so it stays in the simple past.\n\nDon't use *he* for a finished yesterday.",
+  "smallPrint": "Teachers call *he pensado* the present perfect. Here it marks something that began earlier and is still true now.",
+  "readAndPick": [
+    {
+      "es": "Siempre he pensado que fue un error.",
+      "options": [
+        "I always thought it was a mistake, but not any more.",
+        "I've always thought it was a mistake.",
+        "I'll always think it's a mistake."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ayer no pude descansar.",
+      "options": [
+        "I haven't been able to rest this year.",
+        "I won't be able to rest tomorrow.",
+        "I couldn't rest yesterday."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Este año no he podido descansar.",
+      "options": [
+        "I haven't been able to rest this year.",
+        "I couldn't rest last year.",
+        "I couldn't rest yesterday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nunca he entendido por qué renunció.",
+      "options": [
+        "She has never understood why I resigned.",
+        "I never resign without understanding why.",
+        "I've never understood why she resigned."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hernando nunca ha aceptado la oferta.",
+      "options": [
+        "Hernando has never accepted the offer.",
+        "Hernando never accepted the offer that day.",
+        "I have never accepted the offer."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esta semana no hemos vendido casi nada.",
+      "options": [
+        "I haven't sold much this week.",
+        "We didn't sell much last week.",
+        "We haven't sold much this week."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El año pasado no pude viajar.",
+      "options": [
+        "I haven't been able to travel this year.",
+        "I couldn't travel last year.",
+        "I couldn't travel this year."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siempre he sentido que el café me esperaba.",
+      "options": [
+        "The café has always waited for me.",
+        "I felt the café was waiting for me that day.",
+        "I've always felt that the café was waiting for me."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *pensé* or *he pensado*: Siempre ___ que fue un error. Type the whole sentence.",
+      "answer": "Siempre he pensado que fue un error.",
+      "accept": [],
+      "why": "The view is still alive today, so it takes *he pensado*."
+    },
+    {
+      "prompt": "Choose *no pude* or *no he podido*: Este año ___ descansar. Type the whole sentence.",
+      "answer": "Este año no he podido descansar.",
+      "accept": [],
+      "why": "This year isn't over yet, so the perfect fits."
+    },
+    {
+      "prompt": "Choose *no pude* or *no he podido*: Ayer ___ descansar. Type the whole sentence.",
+      "answer": "Ayer no pude descansar.",
+      "accept": [],
+      "why": "Yesterday is closed, so the simple past."
+    },
+    {
+      "prompt": "I've never understood why she resigned.",
+      "answer": "Nunca he entendido por qué renunció.",
+      "accept": [],
+      "why": "*Nunca he entendido* is the view that still stands; *renunció* is the closed event."
+    },
+    {
+      "prompt": "I haven't been able to call my mom this week.",
+      "answer": "Esta semana no he podido llamar a mi mamá.",
+      "accept": [
+        "No he podido llamar a mi mamá esta semana."
+      ],
+      "why": "The week is still running, so *no he podido*."
+    },
+    {
+      "prompt": "Make it about Hernando: *Nunca he aceptado la oferta.*",
+      "answer": "Hernando nunca ha aceptado la oferta.",
+      "accept": [
+        "Nunca ha aceptado la oferta.",
+        "Él nunca ha aceptado la oferta."
+      ],
+      "why": "Only the helper changes: *he* becomes *ha* for *he* or *she*."
+    },
+    {
+      "prompt": "Make it about we: *Siempre he creído que Rosa tenía razón.*",
+      "answer": "Siempre hemos creído que Rosa tenía razón.",
+      "accept": [
+        "Nosotros siempre hemos creído que Rosa tenía razón."
+      ],
+      "why": "*Hemos* is the *we* helper; *tenía* stays the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ayer no he podido descansar.",
+      "right": "Ayer no pude descansar.",
+      "why": "Almost. Yesterday is finished, and in Latin America a finished day takes the simple past."
+    },
+    {
+      "wrong": "Siempre he pensado que ha sido un error.",
+      "right": "Siempre he pensado que fue un error.",
+      "why": "Only the view is still alive. The mistake itself is a closed event, so it takes *fue*."
+    },
+    {
+      "wrong": "Nunca he entendido por qué ha renunciado.",
+      "right": "Nunca he entendido por qué renunció.",
+      "why": "The resignation happened once and is over, so keep it in the simple past."
+    }
+  ],
+  "personal": "Tell me one thing you have always thought about a decision, yours or someone else's. Start with *Siempre he pensado que…* and put the decision itself in the simple past."
+}

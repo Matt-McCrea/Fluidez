@@ -1,0 +1,183 @@
+{
+  "node": "x:acabar-por-llegar-a",
+  "hook": {
+    "line": "Hernando's memoir is full of people who changed in the end: a father who gave in, a friend who went too far. Two small phrases tell those stories, and they are easy to swap.",
+    "es": "Acabó por aceptarlo.",
+    "en": "He ended up accepting it."
+  },
+  "examples": [
+    {
+      "es": "Acabó por aceptarlo.",
+      "en": "He ended up accepting it."
+    },
+    {
+      "es": "Llegó a odiarlo.",
+      "en": "He even came to hate it."
+    },
+    {
+      "es": "Hernando acabó por contarle todo a Tomás.",
+      "en": "Hernando ended up telling Tomás everything."
+    },
+    {
+      "es": "Llegó a vender el carro para pagar la deuda.",
+      "en": "He even sold the car to pay off the debt."
+    },
+    {
+      "es": "Después de tres años, Rosa acabó por perdonarlo.",
+      "en": "After three years, Rosa ended up forgiving him."
+    },
+    {
+      "es": "No llegó a decírmelo.",
+      "en": "He never got as far as telling me."
+    },
+    {
+      "es": "Llegué a pensar que no volvías.",
+      "en": "I even started to think you weren't coming back. (to a friend)"
+    }
+  ],
+  "rule": "Both phrases say where things ended up, but they look at different things.\n\n*Acabar por* + infinitive is the end of a process, often after doubt or resistance. It is what was left in the end: *Acabó por aceptarlo*. 'He ended up accepting it.' Everyday cousins: *acabó aceptándolo*, *terminó aceptándolo*.\n\n*Llegar a* + infinitive is how far things went, often a surprising extreme: *Llegó a odiarlo*. 'He even came to hate it.' With *no*, it means he never got that far: *No llegó a decírmelo*.\n\nTwo tests. Did it finally end that way? *Acabar por*. Did it go as far as that? *Llegar a*. And remember the little words: *acabar por*, *llegar a*.",
+  "smallPrint": "Teachers call both of these aspectual periphrases of an end point: *acabar por* marks the outcome, *llegar a* marks the limit reached.",
+  "readAndPick": [
+    {
+      "es": "Acabó por aceptarlo.",
+      "options": [
+        "He ended up accepting it.",
+        "He even went so far as to accept it.",
+        "He never got around to accepting it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Llegó a vender el carro para pagar la deuda.",
+      "options": [
+        "After holding out, he finally sold the car.",
+        "He went as far as selling the car to pay the debt.",
+        "He never sold the car to pay the debt."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No llegó a decírmelo.",
+      "options": [
+        "He ended up telling me.",
+        "He didn't want to tell me.",
+        "He never got as far as telling me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hernando acabó por contarle todo a Tomás.",
+      "options": [
+        "Hernando went as far as telling Tomás everything.",
+        "Hernando finally told Tomás everything, after holding back.",
+        "Hernando never told Tomás anything."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llegué a pensar que no volvías.",
+      "options": [
+        "I ended up thinking you weren't coming back.",
+        "I never thought you would stay away.",
+        "I even started to think you weren't coming back."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Después de tres años, Rosa acabó por perdonarlo.",
+      "options": [
+        "After three years, Rosa finally forgave him.",
+        "After three years, Rosa even went so far as to forgive him.",
+        "After three years, Rosa still hadn't forgiven him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Llegó a odiarlo.",
+      "options": [
+        "He finally got around to hating him.",
+        "He never got as far as hating him.",
+        "He even came to hate him."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No llegó a conocer a su nieto.",
+      "options": [
+        "He even met his grandson.",
+        "He never got to meet his grandson.",
+        "He ended up meeting his grandson."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *acabó por* or *llegó a*: after holding out, Hernando finally signed. Hernando ___ firmar el papel. Type the whole sentence.",
+      "answer": "Hernando acabó por firmar el papel.",
+      "accept": [],
+      "why": "He finally gave in at the end, so *acabó por*."
+    },
+    {
+      "prompt": "Choose *acabó por* or *llegó a*: he went as far as selling his car. Hernando ___ vender el carro. Type the whole sentence.",
+      "answer": "Hernando llegó a vender el carro.",
+      "accept": [],
+      "why": "Selling the car is an extreme he reached, so *llegó a*."
+    },
+    {
+      "prompt": "He never got as far as telling me.",
+      "answer": "No llegó a decírmelo.",
+      "accept": [],
+      "why": "*No llegó a* says he never reached that point."
+    },
+    {
+      "prompt": "After three years, Rosa ended up forgiving him.",
+      "answer": "Después de tres años, Rosa acabó por perdonarlo.",
+      "accept": [
+        "Rosa acabó por perdonarlo después de tres años.",
+        "Después de tres años, Rosa acabó perdonándolo."
+      ],
+      "why": "Three years of resistance, then the outcome: *acabó por*."
+    },
+    {
+      "prompt": "I even started to think you weren't coming back. (to a friend)",
+      "answer": "Llegué a pensar que no volvías.",
+      "accept": [
+        "Llegué a pensar que no ibas a volver."
+      ],
+      "why": "It marks how far your worry went, so *llegué a*."
+    },
+    {
+      "prompt": "Make it about we: *Acabó por aceptarlo.*",
+      "answer": "Acabamos por aceptarlo.",
+      "accept": [
+        "Acabamos aceptándolo."
+      ],
+      "why": "Only the verb changes: *acabamos* for *we*."
+    },
+    {
+      "prompt": "Make it about I: *Llegó a quererlo.*",
+      "answer": "Llegué a quererlo.",
+      "accept": [],
+      "why": "*Llegué* is the *I* form, and *a quererlo* stays the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Llegó a aceptarlo, después de dudar mucho.",
+      "right": "Acabó por aceptarlo, después de dudar mucho.",
+      "why": "Almost. A long struggle that ends with giving in is the job of *acabar por*."
+    },
+    {
+      "wrong": "Acabé a firmar el papel.",
+      "right": "Acabé por firmar el papel.",
+      "why": "*Acabar* takes *por* before the infinitive; *llegar* is the one with *a*."
+    },
+    {
+      "wrong": "Llegó a no decírmelo.",
+      "right": "No llegó a decírmelo.",
+      "why": "To say he never got that far, put *no* before *llegó*."
+    }
+  ],
+  "personal": "Finish one sentence about yourself: *Con los años, llegué a…* for something that went further than you expected, or *Al final, acabé por…* for something you gave in to."
+}

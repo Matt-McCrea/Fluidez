@@ -1,0 +1,200 @@
+{
+  "node": "g:mood-choice-fine",
+  "hook": {
+    "line": "Hernando is dictating a chapter about his father, and nearly every sentence makes him choose: is this a fact, or something still open? Spanish makes you pick a mood, and the pick changes the meaning.",
+    "es": "El hecho de que no llamara me preocupa.",
+    "en": "The fact that he didn't call worries me."
+  },
+  "examples": [
+    {
+      "es": "El hecho de que no llamara me preocupa.",
+      "en": "The fact that he didn't call worries me."
+    },
+    {
+      "es": "Haz lo que te digan.",
+      "en": "Do whatever they tell you. (to a friend)"
+    },
+    {
+      "es": "Haz lo que te dice Vale.",
+      "en": "Do what Vale tells you. (to a friend)"
+    },
+    {
+      "es": "Pide lo que quieras, yo invito.",
+      "en": "Order whatever you want, my treat. (to a friend)"
+    },
+    {
+      "es": "Hernando hace lo que quiere.",
+      "en": "Hernando does what he wants."
+    },
+    {
+      "es": "Como no vino, me fui.",
+      "en": "Since he didn't come, I left."
+    },
+    {
+      "es": "El hecho de que Rosa no dijera nada me dolió.",
+      "en": "The fact that Rosa said nothing hurt me."
+    }
+  ],
+  "rule": "English picks a mood without noticing. Spanish makes you choose.\n\n*Lo que* + something you can't point to yet takes the subjunctive: *Haz lo que te digan* (nothing said so far). Something you can point to takes the indicative: *Haz lo que te dice Vale*.\n\n*El hecho de que* turns a fact into a topic you react to. The fact isn't in doubt; you are commenting on it, so it usually takes the subjunctive: *El hecho de que no llamara me preocupa*.\n\n*Como* has two jobs. Meaning *since*, it gives a reason, with the indicative: *Como no vino, me fui*. With a subjunctive, it is a warning: *Como no vengas, me enojo* means *if you don't come, I'll get angry*.\n\nAsk yourself: pointed at, or still open?",
+  "smallPrint": "Teachers call choosing between indicative and subjunctive after a relative like *lo que* the mood of the relative clause; *como* + subjunctive is a conditional use.",
+  "readAndPick": [
+    {
+      "es": "Haz lo que te digan.",
+      "options": [
+        "Do what Vale is telling you right now.",
+        "Do what they told you.",
+        "Do whatever they tell you."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Haz lo que te dice Vale.",
+      "options": [
+        "Do whatever Vale ends up saying.",
+        "Do what Vale tells you.",
+        "Don't do what Vale says."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pide lo que quieras, yo invito.",
+      "options": [
+        "Order whatever you want, my treat.",
+        "I ordered what I wanted, my treat.",
+        "Order what you always order, my treat."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando hace lo que quiere.",
+      "options": [
+        "Hernando should do whatever he wants.",
+        "Hernando wants me to do it.",
+        "Hernando does what he wants."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Como Hernando ya lo sabía, no dijo nada.",
+      "options": [
+        "If Hernando already knew, he would say nothing.",
+        "Since Hernando already knew, he said nothing.",
+        "Although Hernando knew, he said nothing."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Como no vino, me fui.",
+      "options": [
+        "Since he didn't come, I left.",
+        "If he doesn't come, I'll leave.",
+        "He didn't come, so he left."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hizo lo que le pidieron.",
+      "options": [
+        "He'll do what they ask.",
+        "He did whatever they might ask him.",
+        "He did what they asked him."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Dime lo que pase.",
+      "options": [
+        "Tell me what happened.",
+        "Tell me whatever happens.",
+        "Tell me what you hear."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El hecho de que no llames me molesta.",
+      "options": [
+        "The fact that you didn't call bothered me.",
+        "If you don't call, I'll be bothered.",
+        "The fact that you don't call bothers me."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *digan* or *dicen*: Do whatever they tell you (nothing has been said yet). Haz lo que te ___. Type the whole sentence.",
+      "answer": "Haz lo que te digan.",
+      "accept": [],
+      "why": "Nothing has been said yet, so it stays open: subjunctive."
+    },
+    {
+      "prompt": "Choose *dice* or *diga*: Do what Vale tells you (she is telling you right now). Haz lo que te ___ Vale. Type the whole sentence.",
+      "answer": "Haz lo que te dice Vale.",
+      "accept": [],
+      "why": "You can point to what she says, so it takes the indicative."
+    },
+    {
+      "prompt": "Choose *quieras* or *quieres*: Order whatever you want, my treat. Pide lo que ___, yo invito. Type the whole sentence.",
+      "answer": "Pide lo que quieras, yo invito.",
+      "accept": [],
+      "why": "*Whatever* means no particular thing yet, so the subjunctive."
+    },
+    {
+      "prompt": "The fact that he didn't call worries me.",
+      "answer": "El hecho de que no llamara me preocupa.",
+      "accept": [
+        "El hecho de que no llamó me preocupa."
+      ],
+      "why": "You are reacting to the fact, and the subjunctive *llamara* marks it as a topic."
+    },
+    {
+      "prompt": "Since he didn't come, I left.",
+      "answer": "Como no vino, me fui.",
+      "accept": [],
+      "why": "*Como* meaning *since* gives a reason, so it takes the indicative."
+    },
+    {
+      "prompt": "Say it as a fact in the past: *Haz lo que puedas.* Now: I did what I could.",
+      "answer": "Hice lo que pude.",
+      "accept": [],
+      "why": "It already happened, so you can point to it: indicative."
+    },
+    {
+      "prompt": "Make it a real habit: *Pide lo que quieras.* Now: Hernando does what he wants.",
+      "answer": "Hernando hace lo que quiere.",
+      "accept": [
+        "Hernando hace lo que él quiere."
+      ],
+      "why": "A known habit is something you can point to: indicative."
+    },
+    {
+      "prompt": "Do whatever you can. (to a friend)",
+      "answer": "Haz lo que puedas.",
+      "accept": [],
+      "why": "No particular thing is fixed yet, so the subjunctive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Haz lo que te dicen.",
+      "right": "Haz lo que te digan.",
+      "why": "Almost. If nobody has said it yet, you can't point to it, so it needs the subjunctive."
+    },
+    {
+      "wrong": "Hice lo que puedo.",
+      "right": "Hice lo que pude.",
+      "why": "A finished action is a fact you can point to, so it takes the past indicative."
+    },
+    {
+      "wrong": "El hecho de que no llamo me preocupa.",
+      "right": "El hecho de que no llame me preocupa.",
+      "why": "After *el hecho de que* you are reacting to a fact, so the subjunctive is the usual choice."
+    },
+    {
+      "wrong": "Como no viene, me fui.",
+      "right": "Como no vino, me fui.",
+      "why": "The reason is in the past, so the verb after *como* matches it."
+    }
+  ],
+  "personal": "Give a friend one piece of advice that starts with *Haz lo que…* and leaves the choice open. Then say what Hernando or Vale actually does with *hace lo que…*."
+}
