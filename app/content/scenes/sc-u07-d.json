@@ -1,0 +1,205 @@
+{
+  "id": "sc-u07-d",
+  "unit": "u07",
+  "title": "Rent day",
+  "brief": "You're Tomás. It's the first of the month, so you knock on Doña Gloria's door with the rent. Pay her, tell her what your room is missing, and answer her questions about you and the neighbourhood. She's older than you and your landlady, so use usted.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Ah, Tomás, buenos días. ¿Qué necesita?",
+      "npcEn": "Ah, Tomás, good morning. What do you need?",
+      "intent": "Say good morning back, and say here's the rent.",
+      "accept": [
+        "Buenos días, señora. Aquí está el arriendo.",
+        "Buenos días. Acá está la plata del arriendo.",
+        "Aquí está el arriendo, señora."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "aquí",
+            "acá"
+          ],
+          "label": "here (right by you): aquí or acá"
+        }
+      ],
+      "focus": "p:aqui-ahi-alla",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Gracias, mijo. ¿Y el cuarto? ¿Hay problemas?",
+      "npcEn": "Thanks, son. And the room? Are there any problems?",
+      "intent": "Say yes: there's no lamp in your room.",
+      "accept": [
+        "Sí, señora. En mi cuarto no hay lámpara.",
+        "No hay lámpara en mi cuarto.",
+        "Sí. No hay lámpara en el cuarto."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "hay",
+          "label": "there is no lamp at all: no hay"
+        },
+        {
+          "type": "negation"
+        }
+      ],
+      "focus": "g:hay-vs-esta",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿No hay lámpara? ¡Qué pena! Hay una en la sala, cerca de la ventana.",
+      "npcEn": "There's no lamp? How embarrassing! There's one in the living room, near the window.",
+      "intent": "Point at the lamp over by the window and ask if it's that one.",
+      "accept": [
+        "¿Esa lámpara de allá?",
+        "¿Es esa lámpara?",
+        "¿Esa, cerca de la ventana?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "esa",
+          "label": "that lamp (near her): esa, because lámpara is feminine"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "g:demonstratives",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Sí, esa. Es la lámpara de Pacho, pero bueno, él tiene el sofá. ¿Y hace cuánto llegó usted a Bogotá?",
+      "npcEn": "Yes, that one. It's Pacho's lamp, but oh well, he has the sofa. And how long ago did you arrive in Bogotá?",
+      "intent": "Say about three weeks ago.",
+      "accept": [
+        "Hace más o menos tres semanas.",
+        "Hace tres semanas, más o menos, señora.",
+        "Salí de Toronto hace más o menos tres semanas."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "hace",
+          "label": "three weeks ago: hace tres semanas"
+        }
+      ],
+      "focus": "g:hace-ago",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Y le gusta el barrio?",
+      "npcEn": "And do you like the neighbourhood?",
+      "intent": "Say yes, a lot: there are lots of shops and everything is close.",
+      "accept": [
+        "Sí, mucho. Hay muchas tiendas y todo queda cerca.",
+        "Me gusta mucho. Hay muchas tiendas y todo está cerca.",
+        "Sí, señora. Hay muchas tiendas y todo queda cerca."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "muchas",
+          "label": "lots of shops: muchas tiendas (it agrees with tiendas)"
+        }
+      ],
+      "focus": "g:quantifiers",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Sí, es un barrio muy bueno. ¿Un tinto, mijo? Está en su casa.",
+      "npcEn": "Yes, it's a very good neighbourhood. A coffee, son? Make yourself at home.",
+      "intent": "Say yes, thank you: she's very kind.",
+      "accept": [
+        "Sí, gracias. Usted es muy amable.",
+        "Gracias, señora. Es usted muy amable.",
+        "Sí, por favor. Muchas gracias, es muy amable."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "muy",
+          "label": "very kind, before an adjective: muy (never mucho)"
+        }
+      ],
+      "focus": "x:muy-mucho",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:esta-en-su-casa",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:mas-o-menos",
+    "c:me-gusta",
+    "c:muy-amable",
+    "c:por-favor",
+    "c:que-pena",
+    "c:tienes",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:hace-ago",
+    "g:hay-vs-esta",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "l:acá",
+    "l:allá",
+    "l:amable",
+    "l:aquí",
+    "l:arriendo",
+    "l:barrio",
+    "l:bueno",
+    "l:casa",
+    "l:cerca",
+    "l:cuánto",
+    "l:día",
+    "l:estar",
+    "l:favor",
+    "l:gustar",
+    "l:hacer",
+    "l:llegar",
+    "l:lámpara",
+    "l:mijo",
+    "l:necesitar",
+    "l:pena",
+    "l:plata",
+    "l:problema",
+    "l:quedar",
+    "l:qué",
+    "l:sala",
+    "l:salir",
+    "l:semana",
+    "l:ser",
+    "l:señora",
+    "l:sofá",
+    "l:tener",
+    "l:tienda",
+    "l:tinto",
+    "l:ventana",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:unos-approx"
+  ]
+}
