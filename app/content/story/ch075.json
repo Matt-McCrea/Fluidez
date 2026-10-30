@@ -1,0 +1,310 @@
+{
+  "id": "ch075",
+  "unit": "u25",
+  "title": "El muchacho de los ojos tristes",
+  "text": "La lluvia retrasó el desfile dos horas, y Tomás esperó con su silleta.\nLa avenida era ancha, y todos los habitantes de la ciudad estaban allí, entre música y humo de parrillas.\nBeatriz: Según la gente de aquí, es el desfile más bonito del planeta.\nVale: Mamá, para ti Medellín es el centro del planeta.\nHernando: ¿Por qué el silletero no tiene novia? Porque ya lleva sesenta kilos de flores.\nLa reacción fue terrible: nadie se rio. La reacción de Simón fue peor.\nSimón: ¡Qué oso!\nTomás caminó con los silleteros. La silleta pequeña era casi tan ancha como él, y una señora de la camisa amarilla le dio un beso.\nTomás: En Toronto hay más habitantes y más bosques, pero menos besos.\nPor la noche, había humo de arepas en toda la casa.\nAbuela: Yo me enamoré en esta feria, en 1962, del muchacho de la camisa blanca. ¿Y usted, Hernando? ¿Usted se enamoró alguna vez?\nHernando: Nunca.\nAbuela: ¡Mentira! Esa es una mentira de taxista.\nHernando salió al pasillo.\nVale: Hernando está muy callado últimamente.\nTomás: Últimamente, todos estamos callados.\nEn el pasillo, Hernando miraba una foto vieja: dos hombres en un bosque, el papá de Beatriz y un muchacho de los ojos tristes.\nBeatriz: Es Joaquín, en 1978. Trabajaba con mi papá en esa región. Era del interior, como ustedes, pero quería conocer otra región: el mar, el desierto.\nHernando: Decía que el interior era muy frío. Que en el desierto, por lo menos, no hay que llevar chaqueta.\nBeatriz: Siéntense. Ya no retraso más el diario.",
+  "gloss": [
+    {
+      "es": "La lluvia retrasó el desfile dos horas",
+      "en": "The rain held the parade up two hours"
+    },
+    {
+      "es": "silleta",
+      "en": "silleta (a big wooden frame of flowers carried on the back)"
+    },
+    {
+      "es": "silleteros",
+      "en": "the silleteros (flower growers who carry silletas)"
+    },
+    {
+      "es": "humo de parrillas",
+      "en": "smoke from the grills"
+    },
+    {
+      "es": "humo de arepas",
+      "en": "smoke from the arepas"
+    },
+    {
+      "es": "Según la gente de aquí, es el desfile más bonito del planeta.",
+      "en": "According to the people here, it's the most beautiful parade on the planet."
+    },
+    {
+      "es": "para ti Medellín es el centro del planeta",
+      "en": "for you, Medellín is the centre of the planet"
+    },
+    {
+      "es": "Porque ya lleva sesenta kilos de flores.",
+      "en": "Because he's already carrying sixty kilos of flowers."
+    },
+    {
+      "es": "La reacción de Simón fue peor.",
+      "en": "Simón's reaction was worse."
+    },
+    {
+      "es": "La silleta pequeña era casi tan ancha como él",
+      "en": "The small silleta was almost as wide as he was"
+    },
+    {
+      "es": "una señora de la camisa amarilla",
+      "en": "a lady in a yellow shirt"
+    },
+    {
+      "es": "Yo me enamoré en esta feria",
+      "en": "I fell in love at this fair"
+    },
+    {
+      "es": "del muchacho de la camisa blanca",
+      "en": "with the boy in the white shirt"
+    },
+    {
+      "es": "¿Usted se enamoró alguna vez?",
+      "en": "Have you ever fallen in love?"
+    },
+    {
+      "es": "¡Mentira!",
+      "en": "Rubbish."
+    },
+    {
+      "es": "Esa es una mentira de taxista.",
+      "en": "That's a taxi driver's lie."
+    },
+    {
+      "es": "Últimamente, todos estamos callados.",
+      "en": "Lately we've all been quiet."
+    },
+    {
+      "es": "un muchacho de los ojos tristes",
+      "en": "a young man with sad eyes"
+    },
+    {
+      "es": "Trabajaba con mi papá en esa región.",
+      "en": "He worked with my dad in that region."
+    },
+    {
+      "es": "Era del interior, como ustedes",
+      "en": "He was from the interior (the Andean highlands), like you"
+    },
+    {
+      "es": "no hay que llevar chaqueta",
+      "en": "you don't have to wear a jacket"
+    },
+    {
+      "es": "Ya no retraso más el diario.",
+      "en": "I won't put off the diary any longer."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does the parade start late?",
+      "options": [
+        "Tomás is lost",
+        "The rain holds it up two hours",
+        "The silleteros are tired",
+        "Altamira stops it"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How does the family react to Hernando's joke?",
+      "options": [
+        "They all laugh",
+        "Nobody laughs, and Simón says how embarrassing",
+        "They ask for another",
+        "Beatriz cries"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does the grandmother think of Hernando's answer?",
+      "options": [
+        "She believes him",
+        "She thinks it is a lie",
+        "She doesn't hear it",
+        "She agrees with him"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Quién está en la foto del pasillo?",
+      "options": [
+        "El papá de Beatriz y Joaquín",
+        "Rosa y Hernando",
+        "Vale y su abuela",
+        "Efraín y sus nietos"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why did Joaquín want to go to the coast?",
+      "options": [
+        "For work at a hotel",
+        "He wanted to see the sea and the desert, and the interior was too cold for him",
+        "To find Rosa",
+        "To buy a building"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Tonight, at last, Beatriz reads from the diary. What Rosa told her in 1990 will change how everybody sees Rosa, and one person in that kitchen will hear something about herself.",
+  "rereadQuestions": [
+    {
+      "q": "Who gives Tomás a kiss during the parade?",
+      "options": [
+        "Vale",
+        "A lady in a yellow shirt",
+        "The grandmother",
+        "Beatriz"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "When did the grandmother fall in love?",
+      "options": [
+        "At the 1962 fair",
+        "In Bogotá in 1978",
+        "Last year",
+        "At Vale's party"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who is looking at the old photo when Tomás finds it?",
+      "options": [
+        "Vale",
+        "Hernando",
+        "Beatriz",
+        "Simón"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:era",
+    "c:hay",
+    "c:hay-que",
+    "c:porque",
+    "c:segun",
+    "c:tienes",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:container-de",
+    "p:dates-years",
+    "p:de-los-ojos-azules",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:frequency-scale",
+    "p:la-gente-singular",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:allí",
+    "l:amarillo",
+    "l:ancho",
+    "l:aquí",
+    "l:arepa",
+    "l:avenida",
+    "l:beso",
+    "l:blanco",
+    "l:bonito",
+    "l:bosque",
+    "l:callado",
+    "l:caminar",
+    "l:camisa",
+    "l:casa",
+    "l:centro",
+    "l:chaqueta",
+    "l:ciudad",
+    "l:conocer",
+    "l:dar",
+    "l:decir",
+    "l:desfile",
+    "l:desierto",
+    "l:diario",
+    "l:enamorarse",
+    "l:esperar",
+    "l:estar",
+    "l:feria",
+    "l:flor",
+    "l:foto",
+    "l:frío",
+    "l:gente",
+    "l:habitante",
+    "l:hombre",
+    "l:hora",
+    "l:humo",
+    "l:interior",
+    "l:kilo",
+    "l:llevar",
+    "l:lluvia",
+    "l:mar",
+    "l:mentira",
+    "l:mirar",
+    "l:muchacho",
+    "l:música",
+    "l:noche",
+    "l:novia",
+    "l:ojo",
+    "l:oso",
+    "l:papá",
+    "l:parrillas",
+    "l:pasillo",
+    "l:peor",
+    "l:pequeño",
+    "l:planeta",
+    "l:querer",
+    "l:qué",
+    "l:reacción",
+    "l:región",
+    "l:retrasar",
+    "l:reír",
+    "l:salir",
+    "l:sentarse",
+    "l:ser",
+    "l:señora",
+    "l:taxista",
+    "l:tener",
+    "l:terrible",
+    "l:trabajar",
+    "l:triste",
+    "l:vez",
+    "l:viejo",
+    "l:últimamente"
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "id": "ch073",
+  "unit": "u25",
+  "title": "Nueve horas de boleros",
+  "text": "Hernando no quería volar.\nHernando: Un avión no tiene alma, mijo. La Burra sí.\nLa Burra salió de La Candelaria a las cuatro de la mañana, con Simón atrás.\nTomás: Según el celular, en avión es una hora. En carro son nueve.\nHernando: Según el celular, en Bogotá no llueve nunca.\nVale le dio un dulce a Hernando, y otro dulce a Simón.\nEn la primera montaña, Tomás y Vale se pelearon por la música. Él quería salsa, y ella quería rock.\nHernando: En este taxi el líder soy yo. Y el líder pone boleros.\nA las diez llamó Mariana.\nMariana: El juicio de la multa es el lunes. El inspector no tiene todos los papeles.\nTomás: ¿Y Altamira?\nMariana: Altamira sí los tiene.\nTomás le pasó el celular a Vale. Vale le pasó un dulce a Tomás.\nEn Medellín había flores en todas las calles y música en todas las esquinas, y las montañas subían hasta el cielo.\nBeatriz los esperaba en la puerta. Le dio un abrazo a Vale, y otro a Hernando.\nBeatriz: ¡Hernando! Por teléfono usted es un pan de Dios. ¿Y en persona?\nSimón: ¡Pan de Dios! ¡Pan de Dios!\nLa abuela miró a Tomás.\nAbuela: ¿Y usted es el marido de Vale?\nVale: ¡No, abuela! Es mi socio.\nAbuela: Ah. Todavía.\nEsa noche, Beatriz puso un cuaderno viejo en la mesa.\nBeatriz: Es mi diario de 1990. Ahí escribí lo que me dijo Rosa.\nVale: ¿Y qué te dijo?\nBeatriz: Mañana. Hoy están muy cansados.\nHernando miró el diario y no dijo nada.",
+  "gloss": [
+    {
+      "es": "Un avión no tiene alma, mijo.",
+      "en": "A plane has no soul, son."
+    },
+    {
+      "es": "La Burra sí.",
+      "en": "The Burra does."
+    },
+    {
+      "es": "con Simón atrás",
+      "en": "with Simón in the back"
+    },
+    {
+      "es": "Según el celular, en avión es una hora.",
+      "en": "According to the phone, it's an hour by plane."
+    },
+    {
+      "es": "Según el celular, en Bogotá no llueve nunca.",
+      "en": "According to the phone, it never rains in Bogotá."
+    },
+    {
+      "es": "dulce",
+      "en": "sweet (a piece of candy)"
+    },
+    {
+      "es": "se pelearon por la música",
+      "en": "fought over the music"
+    },
+    {
+      "es": "rock",
+      "en": "rock (music)"
+    },
+    {
+      "es": "líder",
+      "en": "leader"
+    },
+    {
+      "es": "boleros",
+      "en": "boleros (old romantic songs)"
+    },
+    {
+      "es": "juicio",
+      "en": "hearing, trial"
+    },
+    {
+      "es": "multa",
+      "en": "fine (a penalty)"
+    },
+    {
+      "es": "Le dio un abrazo a Vale, y otro a Hernando.",
+      "en": "She gave Vale a hug, and another one to Hernando."
+    },
+    {
+      "es": "Por teléfono usted es un pan de Dios.",
+      "en": "On the phone you're a real sweetheart."
+    },
+    {
+      "es": "¿Y en persona?",
+      "en": "And in person?"
+    },
+    {
+      "es": "marido",
+      "en": "husband"
+    },
+    {
+      "es": "diario",
+      "en": "diary"
+    },
+    {
+      "es": "lo que me dijo Rosa",
+      "en": "what Rosa told me"
+    },
+    {
+      "es": "Hoy están muy cansados.",
+      "en": "Today you're all very tired."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Hernando drive them to Medellín instead of flying?",
+      "options": [
+        "The plane tickets are too expensive",
+        "He says a plane has no soul, and the Burra does",
+        "Simón can't fly",
+        "Vale is afraid of planes"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why do Tomás and Vale fight in the car?",
+      "options": [
+        "Over the music",
+        "Over Altamira",
+        "Over the sweets",
+        "Over the map"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Mariana's news about the fine?",
+      "options": [
+        "It has been cancelled",
+        "The hearing is on Monday, and Altamira has the papers the inspector doesn't",
+        "Vale has to pay it today",
+        "The inspector has resigned"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué le pregunta la abuela a Tomás?",
+      "options": [
+        "Si es el marido de Vale",
+        "Si quiere bailar",
+        "Si es de Medellín",
+        "Si tiene hambre"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Beatriz put on the kitchen table?",
+      "options": [
+        "Rosa's letter",
+        "Her diary from 1990, where she wrote what Rosa told her",
+        "A photo of Joaquín",
+        "A map of the coast"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Tomorrow they ride the cable car up to the flower farms of Santa Elena, and Tomás is offered a job no man from Toronto should accept. Beatriz's diary will have to wait one more day.",
+  "rereadQuestions": [
+    {
+      "q": "Who gets a sweet from Vale at the start?",
+      "options": [
+        "Hernando and Simón",
+        "Only Tomás",
+        "Beatriz",
+        "Mariana"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the grandmother say after Vale says Tomás is her partner?",
+      "options": [
+        "Ah. For now.",
+        "Welcome to the family.",
+        "Nothing at all.",
+        "That's a pity."
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando do when he sees the diary?",
+      "options": [
+        "He reads it aloud",
+        "He looks at it and says nothing",
+        "He leaves the house",
+        "He laughs"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:pan-de-dios",
+    "c:segun",
+    "c:si-soy-yo",
+    "c:tienes",
+    "c:un-abrazo",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:se-reciproco",
+    "p:telling-time",
+    "p:transport-en",
+    "p:viejo-antiguo-mayor",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abrazo",
+    "l:abuela",
+    "l:ahí",
+    "l:alma",
+    "l:atrás",
+    "l:avión",
+    "l:bolero",
+    "l:calle",
+    "l:cansado",
+    "l:carro",
+    "l:celular",
+    "l:cielo",
+    "l:cuaderno",
+    "l:dar",
+    "l:decir",
+    "l:diario",
+    "l:dulce",
+    "l:escribir",
+    "l:esperar",
+    "l:esquina",
+    "l:estar",
+    "l:flor",
+    "l:hora",
+    "l:hoy",
+    "l:inspector",
+    "l:juicio",
+    "l:llamar",
+    "l:llover",
+    "l:lunes",
+    "l:líder",
+    "l:marido",
+    "l:mañana",
+    "l:mesa",
+    "l:mijo",
+    "l:mirar",
+    "l:montaña",
+    "l:multa",
+    "l:música",
+    "l:noche",
+    "l:pan",
+    "l:papel",
+    "l:pasar",
+    "l:pelearse",
+    "l:persona",
+    "l:poner",
+    "l:puerta",
+    "l:querer",
+    "l:qué",
+    "l:rock",
+    "l:salir",
+    "l:salsa",
+    "l:ser",
+    "l:socio",
+    "l:subir",
+    "l:taxi",
+    "l:teléfono",
+    "l:tener",
+    "l:viejo",
+    "l:volar"
+  ]
+}

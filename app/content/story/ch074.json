@@ -1,0 +1,271 @@
+{
+  "id": "ch074",
+  "unit": "u25",
+  "title": "¡Qué oso!",
+  "text": "El cable subía despacio por encima de la ciudad. Abajo estaba el valle, con todas sus luces.\nHernando cerró los ojos.\nHernando: Cuarenta años en la calle, y nunca subí a un cable.\nBeatriz: Los paisas somos orgullosos, Hernando. Mire: aquí hasta el metro vuela.\nArriba, en el cerro, todo era naturaleza: colinas verdes, vacas, un lago pequeño y cultivos de flores.\nEn una colina vivía don Efraín, un silletero de ochenta años.\nEfraín: Esta es una tradición de mi familia. Mi abuelo bajaba flores a la ciudad, mi papá también, y ahora mis nietos.\nEfraín le puso a Tomás una silleta de sesenta kilos en la espalda.\nTomás caminó un metro y se cayó encima de las flores.\nVale: ¡Tomás! ¿Llamo una ambulancia?\nTomás: No necesito una ambulancia. Necesito otra espalda.\nEfraín: ¡Qué oso, mijo!\nSimón: ¡Qué oso!\nUna vaca miró a Tomás. Hernando se rio hasta llorar.\nEfraín: Pero tiene carácter, el muchacho. Se cayó y sonrió. Ese es el carácter paisa.\nDesde el cerro, Tomás miró todo el valle. Al lado del lago, Efraín les mostró su cultivo.\nEfraín: Una empresa de Bogotá quiere comprar esta colina. Dizque para un hotel con vista al lago.\nTomás: ¿Cuál empresa?\nSimón: ¡Altamira no! ¡Altamira no!\nHernando: Aquí compran la naturaleza, y en Bogotá, las esquinas.\nEfraín: En mi familia hay una costumbre: nadie vende la tierra. Es una tradición más vieja que yo.\nHernando: Rosa tenía la misma costumbre, señor.\nEfraín: Mañana usted baja con nosotros al desfile, mijo. Con una silleta pequeña. Usted también es orgulloso, ¿no?",
+  "gloss": [
+    {
+      "es": "cable",
+      "en": "cable car (Medellín's Metrocable)"
+    },
+    {
+      "es": "Abajo estaba el valle, con todas sus luces.",
+      "en": "Below lay the valley, with all its lights."
+    },
+    {
+      "es": "nunca subí a un cable",
+      "en": "I've never been up in a cable car"
+    },
+    {
+      "es": "Los paisas somos orgullosos, Hernando.",
+      "en": "We paisas are proud people, Hernando."
+    },
+    {
+      "es": "Mire: aquí hasta el metro vuela.",
+      "en": "Look: here even the metro flies."
+    },
+    {
+      "es": "silletero",
+      "en": "silletero (a flower grower who carries flowers on his back in the parade)"
+    },
+    {
+      "es": "silleta",
+      "en": "silleta (a big wooden frame of flowers carried on the back)"
+    },
+    {
+      "es": "bajaba flores a la ciudad",
+      "en": "used to carry flowers down to the city"
+    },
+    {
+      "es": "Necesito otra espalda.",
+      "en": "I need another back."
+    },
+    {
+      "es": "¡Qué oso, mijo!",
+      "en": "How embarrassing, son."
+    },
+    {
+      "es": "¡Qué oso!",
+      "en": "How embarrassing."
+    },
+    {
+      "es": "se rio hasta llorar",
+      "en": "laughed until he cried"
+    },
+    {
+      "es": "Pero tiene carácter, el muchacho.",
+      "en": "But the lad has character."
+    },
+    {
+      "es": "Dizque para un hotel con vista al lago.",
+      "en": "Supposedly for a hotel with a view of the lake."
+    },
+    {
+      "es": "nadie vende la tierra",
+      "en": "nobody sells the land"
+    },
+    {
+      "es": "Es una tradición más vieja que yo.",
+      "en": "It's a tradition older than me."
+    },
+    {
+      "es": "Mañana usted baja con nosotros al desfile, mijo.",
+      "en": "Tomorrow you come down with us to the parade, son."
+    },
+    {
+      "es": "Usted también es orgulloso, ¿no?",
+      "en": "You're proud too, aren't you?"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Hernando close his eyes in the cable car?",
+      "options": [
+        "He is tired",
+        "He has never been in a cable car before",
+        "The sun is in his eyes",
+        "He is praying for Rosa"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What happens when Tomás tries to carry the silleta?",
+      "options": [
+        "He carries it all the way down",
+        "He walks a metre and falls onto the flowers",
+        "He drops it in the lake",
+        "A cow eats the flowers"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who wants to buy Efraín's hill?",
+      "options": [
+        "Beatriz",
+        "A company from Bogotá, supposedly for a hotel",
+        "His grandchildren",
+        "The city of Medellín"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué costumbre tiene la familia de Efraín?",
+      "options": [
+        "Nadie vende la tierra",
+        "Todos viven en Bogotá",
+        "Nadie sube al cable",
+        "Todos toman tinto"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomorrow Tomás carries a small silleta down the city's widest avenue in front of half of Medellín. And tomorrow night, Beatriz finally opens the diary.",
+  "rereadQuestions": [
+    {
+      "q": "What does Tomás say he needs instead of an ambulance?",
+      "options": [
+        "A tinto",
+        "Another back",
+        "A doctor",
+        "A smaller silleta"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who carried flowers down to the city before Efraín's grandchildren?",
+      "options": [
+        "His abuelo and his papá",
+        "Beatriz",
+        "Hernando",
+        "Rosa"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "According to Beatriz, what does even the metro do in Medellín?",
+      "options": [
+        "It sings",
+        "It flies",
+        "It sleeps",
+        "It dances"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:dizque",
+    "c:era",
+    "c:hay",
+    "c:no-cierto",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:masculine-plural-mixed",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:senor-don-article",
+    "p:tambien-tampoco",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abajo",
+    "l:abuelo",
+    "l:ahora",
+    "l:ambulancia",
+    "l:aquí",
+    "l:arriba",
+    "l:año",
+    "l:bajar",
+    "l:cable",
+    "l:caerse",
+    "l:calle",
+    "l:caminar",
+    "l:carácter",
+    "l:cerrar",
+    "l:cerro",
+    "l:ciudad",
+    "l:colina",
+    "l:comprar",
+    "l:costumbre",
+    "l:cultivo",
+    "l:cuál",
+    "l:desfile",
+    "l:despacio",
+    "l:empresa",
+    "l:encima",
+    "l:espalda",
+    "l:esquina",
+    "l:estar",
+    "l:familia",
+    "l:flor",
+    "l:hotel",
+    "l:kilo",
+    "l:lado",
+    "l:lago",
+    "l:llamar",
+    "l:llorar",
+    "l:luz",
+    "l:mañana",
+    "l:metro",
+    "l:mijo",
+    "l:mirar",
+    "l:mostrar",
+    "l:muchacho",
+    "l:naturaleza",
+    "l:necesitar",
+    "l:nieto",
+    "l:ojo",
+    "l:orgulloso",
+    "l:oso",
+    "l:paisa",
+    "l:papá",
+    "l:pequeño",
+    "l:poner",
+    "l:querer",
+    "l:qué",
+    "l:reír",
+    "l:ser",
+    "l:señor",
+    "l:sonreír",
+    "l:subir",
+    "l:tener",
+    "l:tierra",
+    "l:tradición",
+    "l:vaca",
+    "l:valle",
+    "l:vender",
+    "l:verde",
+    "l:viejo",
+    "l:vista",
+    "l:vivir",
+    "l:volar"
+  ]
+}

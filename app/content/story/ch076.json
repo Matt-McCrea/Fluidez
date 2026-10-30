@@ -1,0 +1,291 @@
+{
+  "id": "ch076",
+  "unit": "u25",
+  "title": "Ni un bolero",
+  "text": "Beatriz abrió el diario en agosto de 1990.\nBeatriz: Rosa me dijo que tenía un hermano menor, Joaquín. Me contó que en 1978 se pelearon muy feo. Ella le gritó cosas horribles, y él golpeó la mesa y se fue. Me dijo que Joaquín se fue para Santa Marta, y que nunca volvió.\nTomás: ¿Santa Marta? ¿Ese era el pueblo?\nBeatriz: Sí. Lo escribí aquí, y lo olvidé treinta y seis años.\nTomás: ¿Y por qué se pelearon?\nBeatriz: Eso no me lo contó. Me dijo que la culpa era de ella, y que nunca se perdonó.\nBeatriz: Rosa llegó a Medellín en 1990 con un solo propósito: la búsqueda de su hermano. Mi papá le dijo que en esos años la costa era un peligro. Y Rosa lloró aquí, en esta cocina.\nVale le tomó la mano a su mamá.\nBeatriz: Otra cosa, mija. Yo te mandé al café de Rosa.\nVale: ¿Tú? ¿Y por qué no me dijiste nada?\nBeatriz: Hace cinco años, Rosa me pidió algo: «Un día va a llegar mi nieto. No lo deje solo».\nVale: ¿Y tú lo sabías, Tomás?\nTomás: No. Bueno, sí. Desde la fiesta.\nSimón: ¡Mentira! ¡Mentira!\nVale no se rio, pero tampoco se fue.\nVale: Todos lo sabían menos yo. Eso me duele.\nEl domingo volvieron a Bogotá. Hernando manejó nueve horas, sin hablar, y no puso ni un bolero.\nA las diez, Hernando paró delante del café, pero no se bajó.\nHernando: Rosa no tenía toda la culpa. Mañana les hago una comida, y les hablo de Rosa.",
+  "gloss": [
+    {
+      "es": "Beatriz abrió el diario en agosto de 1990.",
+      "en": "Beatriz opened the diary at August 1990."
+    },
+    {
+      "es": "un hermano menor",
+      "en": "a younger brother"
+    },
+    {
+      "es": "se pelearon muy feo",
+      "en": "they had a terrible fight"
+    },
+    {
+      "es": "Ella le gritó cosas horribles, y él golpeó la mesa y se fue.",
+      "en": "She shouted horrible things at him, and he banged the table and left."
+    },
+    {
+      "es": "Me dijo que Joaquín se fue para Santa Marta, y que nunca volvió.",
+      "en": "She told me Joaquín went off to Santa Marta and never came back."
+    },
+    {
+      "es": "lo olvidé treinta y seis años",
+      "en": "I forgot it for thirty-six years"
+    },
+    {
+      "es": "Me dijo que la culpa era de ella, y que nunca se perdonó.",
+      "en": "She told me it was her fault, and that she never forgave herself."
+    },
+    {
+      "es": "con un solo propósito: la búsqueda de su hermano",
+      "en": "with one single purpose: the search for her brother"
+    },
+    {
+      "es": "en esos años la costa era un peligro",
+      "en": "in those years the coast was dangerous"
+    },
+    {
+      "es": "Yo te mandé al café de Rosa.",
+      "en": "I sent you to Rosa's café."
+    },
+    {
+      "es": "Un día va a llegar mi nieto. No lo deje solo",
+      "en": "One day my grandson is going to arrive. Don't leave him alone"
+    },
+    {
+      "es": "Bueno, sí.",
+      "en": "Well, yes."
+    },
+    {
+      "es": "Todos lo sabían menos yo. Eso me duele.",
+      "en": "Everyone knew except me. That hurts."
+    },
+    {
+      "es": "no puso ni un bolero",
+      "en": "didn't put on a single bolero"
+    },
+    {
+      "es": "bolero",
+      "en": "bolero (an old romantic song)"
+    },
+    {
+      "es": "sin hablar",
+      "en": "without speaking"
+    },
+    {
+      "es": "pero no se bajó",
+      "en": "but didn't get out"
+    },
+    {
+      "es": "Rosa no tenía toda la culpa.",
+      "en": "It wasn't all Rosa's fault."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What did Rosa tell Beatriz in 1990?",
+      "options": [
+        "That Joaquín had died",
+        "That she and her younger brother had a terrible fight in 1978, and he went to Santa Marta and never came back",
+        "That she wanted to sell the café",
+        "That Joaquín lived in Medellín"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How did Rosa feel about the fight?",
+      "options": [
+        "She said it was Joaquín's fault",
+        "She said it was her fault and she never forgave herself",
+        "She didn't remember it",
+        "She laughed about it"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why did Beatriz send Vale to Rosa's café?",
+      "options": [
+        "Five years ago Rosa asked her not to leave her grandson alone when he came",
+        "Vale needed money",
+        "Altamira asked her to",
+        "Hernando called her"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cómo está Hernando en el viaje a Bogotá?",
+      "options": [
+        "Muy callado",
+        "Muy contento",
+        "Muy cansado de cantar",
+        "Dormido"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando's last line suggest?",
+      "options": [
+        "He wants to sell the Burra",
+        "He knows something about the fight that Rosa didn't tell Beatriz",
+        "He is angry with Vale",
+        "He is moving to Medellín"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Hernando has kept something about that night in 1978 to himself for forty-eight years. Tomorrow he cooks a long dinner for everyone, and the stories about Rosa finally come out.",
+  "rereadQuestions": [
+    {
+      "q": "What did Joaquín do before he left?",
+      "options": [
+        "He signed the deed",
+        "He banged the table",
+        "He wrote a letter",
+        "He cried"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "When did Rosa ask Beatriz not to leave her grandson alone?",
+      "options": [
+        "In 1978",
+        "In 1990",
+        "Five years ago",
+        "Last week"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What doesn't Hernando do on the drive home?",
+      "options": [
+        "He doesn't stop for petrol",
+        "He doesn't put on a single bolero",
+        "He doesn't drive",
+        "He doesn't talk to Simón"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hago-salgo-vengo",
+    "c:no-se",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:reported-past-basic",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:doler",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:mayor-menor",
+    "p:me-duele",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:por-que-no",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:se-reciproco",
+    "p:subirse-bajarse",
+    "p:telling-time"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:agosto",
+    "l:aquí",
+    "l:año",
+    "l:bajarse",
+    "l:bolero",
+    "l:bueno",
+    "l:búsqueda",
+    "l:café",
+    "l:cocina",
+    "l:comida",
+    "l:contar",
+    "l:cosa",
+    "l:costa",
+    "l:culpa",
+    "l:decir",
+    "l:dejar",
+    "l:delante",
+    "l:diario",
+    "l:doler",
+    "l:domingo",
+    "l:día",
+    "l:escribir",
+    "l:feo",
+    "l:fiesta",
+    "l:golpear",
+    "l:gritar",
+    "l:hablar",
+    "l:hacer",
+    "l:hermano",
+    "l:hora",
+    "l:horrible",
+    "l:ir",
+    "l:irse",
+    "l:llegar",
+    "l:llorar",
+    "l:mamá",
+    "l:mandar",
+    "l:manejar",
+    "l:mano",
+    "l:mañana",
+    "l:menor",
+    "l:mentira",
+    "l:mesa",
+    "l:mija",
+    "l:nieto",
+    "l:olvidar",
+    "l:papá",
+    "l:parar",
+    "l:pedir",
+    "l:pelearse",
+    "l:peligro",
+    "l:perdonar",
+    "l:poner",
+    "l:propósito",
+    "l:pueblo",
+    "l:qué",
+    "l:reír",
+    "l:saber",
+    "l:ser",
+    "l:tener",
+    "l:tomar",
+    "l:volver"
+  ]
+}
