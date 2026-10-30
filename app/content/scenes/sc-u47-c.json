@@ -1,0 +1,253 @@
+{
+  "id": "sc-u47-c",
+  "unit": "u47",
+  "title": "Una llamada de la radio",
+  "spare": true,
+  "brief": "You're Tomás, taking a call from a radio producer you've never met. Use usted with him. He wants you live on air, and you have to say what matters to you and what day works.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Camilo: Buenas tardes, habla Camilo, de Radio Capital. ¿Hablo con el dueño del café?",
+      "npcEn": "Camilo: Good afternoon, this is Camilo from Radio Capital. Am I speaking with the owner of the café?",
+      "intent": "Say yes, it's you, and ask politely why he's calling (usted).",
+      "accept": [
+        "Sí, con él habla. ¿Cuál es el motivo de su llamada?",
+        "Sí, soy yo. ¿Para qué me llama?",
+        "Con él habla. ¿En qué puedo ayudarle?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bmotivo\\b|\\bme llama\\b|\\bayudarle\\b",
+          "flags": "iu",
+          "label": "ask why he's calling"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "me llamas",
+            "puedo ayudarte"
+          ],
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:cleft-focus",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Camilo: Queremos entrevistarlo en vivo. Lo que más nos interesa es la historia del loro.",
+      "npcEn": "Camilo: We'd like to interview you live. What interests us most is the story of the parrot.",
+      "intent": "Say that what you want to talk about is Rosa, not only the parrot (Lo que ... es ...).",
+      "accept": [
+        "Lo que quiero contar es la historia de mi abuela, no solo la del loro.",
+        "Lo que más me importa es hablar de Rosa y del barrio.",
+        "Lo que quiero es hablar de Rosa y del barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo que\\b.*\\bes\\b",
+          "flags": "iu",
+          "label": "use lo que ... es ..."
+        }
+      ],
+      "focus": "g:cleft-focus",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Camilo: Entendido. Anoche el pódcast llegó al número uno. ¿Le sorprende?",
+      "npcEn": "Camilo: Understood. Last night the podcast reached number one. Does that surprise you?",
+      "intent": "Say you hadn't realised it, or hadn't thought so many people would listen (No noté / No pensé que ...).",
+      "accept": [
+        "No noté que el episodio estuviera tan arriba.",
+        "No pensé que tanta gente lo escuchara.",
+        "No creí que llegáramos al número uno."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno (noté|pensé|creí|imaginé) que\\b",
+          "flags": "iu",
+          "label": "start with no noté / no pensé que"
+        },
+        {
+          "type": "regex",
+          "pattern": "(uviera|ara|iera|áramos|iéramos)\\b",
+          "flags": "iu",
+          "label": "use the past subjunctive after it"
+        }
+      ],
+      "focus": "g:subj-perception-negated",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Camilo: Perfecto. ¿Podría venir el viernes a las siete? Es en directo.",
+      "npcEn": "Camilo: Perfect. Could you come on Friday at seven? It's live.",
+      "intent": "Say Friday isn't possible but Saturday is (put the day first).",
+      "accept": [
+        "El viernes no puedo, pero el sábado sí.",
+        "El sábado puedo, el viernes no.",
+        "El viernes lo tengo ocupado, pero el sábado no tengo problema."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say what is not possible"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bsábado\\b",
+          "flags": "iu",
+          "label": "name Saturday"
+        }
+      ],
+      "focus": "g:topic-fronting",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Camilo: Quedamos el sábado, entonces. Gracias, y felicitaciones.",
+      "npcEn": "Camilo: Saturday it is, then. Thank you, and congratulations.",
+      "intent": "Thank him and say you'll bring Simón (use an intensifier to describe him).",
+      "accept": [
+        "Muchas gracias, hasta el sábado. Llevo a Simón, pero está súper nervioso.",
+        "Gracias a usted. Simón irá conmigo y es realmente bueno hablando.",
+        "Gracias, Camilo. Llevaré a Simón, que es muy simpático."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsimón\\b",
+          "flags": "iu",
+          "label": "mention Simón"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b(súper|super|totalmente|realmente|demasiado|muy|tan)\\b",
+          "flags": "iu",
+          "label": "add an intensifier"
+        }
+      ],
+      "focus": "p:intensificadores",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:con-el-ella",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-importa-un-comino",
+    "c:puedo",
+    "c:que-mas",
+    "c:quiero",
+    "c:si-soy-yo",
+    "c:tengo",
+    "g:adverbs-mente",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-full",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-past-triggers",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:anoche",
+    "l:arriba",
+    "l:ayudar",
+    "l:barrio",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:camilo",
+    "l:contar",
+    "l:creer",
+    "l:cuál",
+    "l:directo",
+    "l:dueño",
+    "l:entender",
+    "l:episodio",
+    "l:escuchar",
+    "l:estar",
+    "l:estuviera",
+    "l:felicitaciones",
+    "l:gente",
+    "l:hablar",
+    "l:historia",
+    "l:importar",
+    "l:interesar",
+    "l:ir",
+    "l:llamada",
+    "l:llamar",
+    "l:llegar",
+    "l:llevar",
+    "l:loro",
+    "l:motivo",
+    "l:nervioso",
+    "l:notar",
+    "l:número",
+    "l:ocupado",
+    "l:pensar",
+    "l:perfecto",
+    "l:poder",
+    "l:problema",
+    "l:pódcast",
+    "l:quedar",
+    "l:querer",
+    "l:qué",
+    "l:realmente",
+    "l:ser",
+    "l:simpático",
+    "l:sorprender",
+    "l:sábado",
+    "l:súper",
+    "l:tarde",
+    "l:tener",
+    "l:venir",
+    "l:viernes",
+    "l:vivo",
+    "p:days-el-lunes",
+    "p:gracias-a-por-culpa-de",
+    "p:intensificadores",
+    "p:la-gente-singular",
+    "p:lo-que-mas-me-gusta",
+    "p:me-sorprende-que",
+    "p:me-te-nos-objects",
+    "p:nos-vemos-a-las",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:por-culpa-de",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:request-ladder",
+    "p:sobre-todo-solo",
+    "p:te-importaria",
+    "p:telling-time",
+    "p:turning-it-up"
+  ]
+}

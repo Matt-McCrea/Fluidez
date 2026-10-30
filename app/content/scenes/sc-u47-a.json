@@ -1,0 +1,206 @@
+{
+  "id": "sc-u47-a",
+  "unit": "u47",
+  "title": "Quién mantuvo viva la esquina",
+  "spare": false,
+  "brief": "You're Tomás, sitting in front of Mariana's microphone in the empty café. She is a friend, so use tú. Put the weight of each answer exactly where you want it: on Rosa, on the neighbours, on what you prefer.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Estamos grabando. Para empezar: ¿quién mantuvo viva esta esquina todos estos años?",
+      "npcEn": "Mariana: We're recording. To start: who kept this corner alive all these years?",
+      "intent": "Say that it was your grandmother Rosa who kept it alive (fue ... quien ...).",
+      "accept": [
+        "Fue mi abuela Rosa quien mantuvo viva la esquina.",
+        "Quien la mantuvo viva fue Rosa, mi abuela.",
+        "Fue Rosa, mi abuela, quien mantuvo viva esta esquina."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bfue\\b.*\\bquien\\b|\\bquien\\b.*\\bfue\\b",
+          "flags": "iu",
+          "label": "put the weight on Rosa with fue ... quien"
+        }
+      ],
+      "focus": "g:cleft-focus",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: ¿Y hoy? ¿Quiénes están peleando por ella?",
+      "npcEn": "Mariana: And today? Who is fighting for it?",
+      "intent": "Say that it is the neighbours who are fighting for it (son ... quienes ...).",
+      "accept": [
+        "Son los vecinos quienes pelean por ella.",
+        "Los que pelean por ella son los vecinos del barrio.",
+        "Son los vecinos quienes la defienden, nadie más."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(son|es)\\b.*\\b(quienes|quien|los que)\\b|\\b(quienes|los que)\\b.*\\bson\\b",
+          "flags": "iu",
+          "label": "put the weight on the neighbours"
+        }
+      ],
+      "focus": "g:cleft-focus",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: Hablemos del contrato con Altamira. ¿Lo firmaste tú?",
+      "npcEn": "Mariana: Let's talk about the contract with Altamira. Did you sign it?",
+      "intent": "Say you didn't: start the sentence with the contract and say Rosa signed it (El contrato lo firmó ...).",
+      "accept": [
+        "El contrato lo firmó mi abuela, yo no firmé nada.",
+        "El contrato lo firmó Rosa, no yo.",
+        "El contrato, lo firmó Rosa hace años."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(^|[.!?]\\s*)el contrato,? lo\\b",
+          "flags": "iu",
+          "label": "start with the contract, then lo"
+        }
+      ],
+      "focus": "g:topic-fronting",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: Veo que el tema de Altamira te aburre. ¿Qué prefieres que digan los oyentes?",
+      "npcEn": "Mariana: I can see the Altamira subject bores you. What would you rather the listeners say?",
+      "intent": "Say you would rather they talk about the café than about Altamira (prefiero que ... a que ...).",
+      "accept": [
+        "Prefiero que hablen del café a que hablen de Altamira.",
+        "Prefiero que la gente venga a tomar tinto a que se queje del precio.",
+        "Prefiero que me pregunten por Rosa a que me pregunten por el dinero."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bprefiero que\\b.*\\ba que\\b",
+          "flags": "iu",
+          "label": "use prefiero que ... a que ..."
+        }
+      ],
+      "focus": "p:prefiero-que-a-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Perfecto, ya tenemos el episodio. Gracias por tu tiempo, Tomás.",
+      "npcEn": "Mariana: Perfect, we have the episode. Thanks for your time, Tomás.",
+      "intent": "Thank her and say it bores you that everybody only talks about money (me aburre que ...).",
+      "accept": [
+        "Gracias a ti. Y me aburre que todos hablen solo de plata.",
+        "Gracias, Mariana. Me aburre que siempre hablen del dinero y no de la gente.",
+        "A ti, por venir. Me aburre que el tema sea siempre Altamira."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme aburre que\\b",
+          "flags": "iu",
+          "label": "use me aburre que"
+        }
+      ],
+      "focus": "p:me-aburre-que",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:gracias-de-nada",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-emotion",
+    "g:subj-influence",
+    "g:subj-irregulars",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:aburrir",
+    "l:año",
+    "l:barrio",
+    "l:café",
+    "l:contrato",
+    "l:decir",
+    "l:defender",
+    "l:dinero",
+    "l:empezar",
+    "l:episodio",
+    "l:esquina",
+    "l:estar",
+    "l:firmar",
+    "l:gente",
+    "l:grabar",
+    "l:hablar",
+    "l:hacer",
+    "l:hoy",
+    "l:mantener",
+    "l:oyente",
+    "l:pelear",
+    "l:pelearse",
+    "l:perfecto",
+    "l:plata",
+    "l:precio",
+    "l:preferir",
+    "l:preguntar",
+    "l:quejarse",
+    "l:quién",
+    "l:qué",
+    "l:ser",
+    "l:siempre",
+    "l:tema",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:tomar",
+    "l:vecino",
+    "l:venir",
+    "l:ver",
+    "l:vivo",
+    "p:aburrir-aburrirse",
+    "p:demonstratives-basic",
+    "p:el-que-la-que",
+    "p:frequency-scale",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:la-gente-singular",
+    "p:me-aburre",
+    "p:me-aburre-que",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-culpa-de",
+    "p:possessives-basic",
+    "p:preferir-a",
+    "p:prefiero-que-a-que",
+    "p:preguntar-pedir",
+    "p:question-word-order"
+  ]
+}

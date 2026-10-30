@@ -1,0 +1,244 @@
+{
+  "id": "sc-u47-b",
+  "unit": "u47",
+  "title": "El loro más famoso",
+  "spare": false,
+  "brief": "You're Tomás. Don Hernando, the retired taxi driver, has just heard the podcast and comes in for his coffee. He's much older than you, so address him as usted (he calls you tú). Talk about how the parrot became famous.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Buenos días, Tomás. Anoche escuché el pódcast completo.",
+      "npcEn": "Hernando: Good morning, Tomás. Last night I listened to the whole podcast.",
+      "intent": "Greet him respectfully (usted) and ask whether he liked it.",
+      "accept": [
+        "Buenos días, don Hernando. ¿Le gustó el pódcast?",
+        "Don Hernando, buenos días. ¿Qué le pareció el episodio?",
+        "Buenas, don Hernando. ¿Lo escuchó entero? ¿Le gustó?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ble (gustó|pareció)",
+          "flags": "iu",
+          "label": "ask if he liked it, with usted"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "te gustó",
+            "te pareció"
+          ],
+          "label": "use usted (le), not tú (te)"
+        }
+      ],
+      "focus": "g:cleft-focus",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Me gustó muchísimo. Rosa estaría orgullosa de ti.",
+      "npcEn": "Hernando: I liked it enormously. Rosa would be proud of you.",
+      "intent": "Say he doesn't know how happy that makes you (No sabe lo ... que ...).",
+      "accept": [
+        "No sabe lo contento que estoy de oírlo.",
+        "Gracias, don Hernando. No sabe lo feliz que me hace eso.",
+        "No sabe lo importante que es para mí su opinión."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo (?!que\\b)[a-záéíóúñ]+ que\\b",
+          "flags": "iu",
+          "label": "use lo + adjective + que"
+        }
+      ],
+      "focus": "g:lo-que-intensity",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Y el loro, ¿qué? Hasta los taxistas me preguntan por Simón.",
+      "npcEn": "Hernando: And the parrot? Even the taxi drivers ask me about Simón.",
+      "intent": "Say everybody knows Simón now: put Simón first (A Simón lo ...).",
+      "accept": [
+        "A Simón lo conocen ya en todo el país.",
+        "Al loro lo reconocen hasta en la calle.",
+        "A Simón lo saludan los clientes como a una estrella."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(simón|(al |el )loro)\\s+(lo|los|le|les)\\b",
+          "flags": "iu",
+          "label": "start with Simón, then lo"
+        }
+      ],
+      "focus": "g:topic-fronting",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: ¿Y él? ¿Sabe que es famoso?",
+      "npcEn": "Hernando: And him? Does he know he's famous?",
+      "intent": "Joke that he has no idea and is just as calm as always (use an intensifier like súper, totalmente, realmente).",
+      "accept": [
+        "No tiene ni idea. Está súper tranquilo, come y duerme como siempre.",
+        "Simón no sabe nada, y está totalmente igual que antes.",
+        "Qué va, está realmente feliz con su fruta de todos los días."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(súper|super|totalmente|realmente|demasiado|muy)\\b",
+          "flags": "iu",
+          "label": "add an intensifier"
+        }
+      ],
+      "focus": "p:intensificadores",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Bueno, joven, voy a tomarme un tinto antes de que esto se llene.",
+      "npcEn": "Hernando: Well, young man, I'm going to have a black coffee before this place fills up.",
+      "intent": "Say of course, and that today the house is paying (la casa invita).",
+      "accept": [
+        "Claro que sí, don Hernando. Hoy la casa invita.",
+        "Con mucho gusto. Hoy invita la casa, y el tinto está recién hecho.",
+        "Por supuesto. Hoy el tinto lo invita la casa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\binvita\\b",
+          "flags": "iu",
+          "label": "say the house is paying"
+        }
+      ],
+      "focus": "g:topic-fronting",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-cuantas-cuotas",
+    "c:alo",
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:igual",
+    "c:me-hace-una-rebajita",
+    "c:mucho-gusto",
+    "c:ni-idea",
+    "c:que-va",
+    "c:tienes",
+    "c:tranquilo",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:lo-que-intensity",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-purpose-full",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:tanto-como",
+    "g:that-clauses",
+    "l:anoche",
+    "l:antes",
+    "l:buena",
+    "l:bueno",
+    "l:calle",
+    "l:casa",
+    "l:claro",
+    "l:cliente",
+    "l:comer",
+    "l:completar",
+    "l:conocer",
+    "l:contento",
+    "l:dormir",
+    "l:día",
+    "l:entero",
+    "l:episodio",
+    "l:escuchar",
+    "l:estar",
+    "l:estrella",
+    "l:famoso",
+    "l:feliz",
+    "l:fruta",
+    "l:gustar",
+    "l:gusto",
+    "l:hacer",
+    "l:hoy",
+    "l:idea",
+    "l:igual",
+    "l:importante",
+    "l:invitar",
+    "l:ir",
+    "l:joven",
+    "l:llenar",
+    "l:loro",
+    "l:opinión",
+    "l:orgulloso",
+    "l:oír",
+    "l:parecer",
+    "l:país",
+    "l:preguntar",
+    "l:pódcast",
+    "l:qué",
+    "l:realmente",
+    "l:recién",
+    "l:reconocer",
+    "l:saber",
+    "l:saludar",
+    "l:ser",
+    "l:siempre",
+    "l:suponer",
+    "l:súper",
+    "l:taxista",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:totalmente",
+    "l:tranquilo",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:estar-orgulloso-de",
+    "p:frequency-scale",
+    "p:intensificadores",
+    "p:me-te-nos-objects",
+    "p:no-tener-ni-idea-de",
+    "p:orgulloso-admiracion",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:recien-participio",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:te-parece-bien-que",
+    "p:todos-los-dias",
+    "p:turning-it-up",
+    "p:veces-al"
+  ]
+}
