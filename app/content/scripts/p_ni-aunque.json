@@ -1,0 +1,43 @@
+{
+  "node": "p:ni-aunque",
+  "hook": {
+    "line": "Sometimes \"no\" is not enough and you need to close the door and lock it. *Ni aunque* takes the best offer anyone could make and refuses that too.",
+    "es": "No vuelvo ni aunque me paguen.",
+    "en": "I'm not going back, not even if they pay me."
+  },
+  "examples": [
+    { "es": "No vuelvo ni aunque me paguen.", "en": "I'm not going back, not even if they pay me." },
+    { "es": "Ni aunque me lo pidiera de rodillas lo perdonaría.", "en": "I wouldn't forgive him even if he begged me on his knees." },
+    { "es": "Ni siquiera si me pagaran el doble volvería.", "en": "I wouldn't go back even if they paid me double." },
+    { "es": "No firmo ni aunque me lo pidan de rodillas.", "en": "I'm not signing, not even if they beg me on their knees." },
+    { "es": "Ni aunque me regalaran el carro lo manejaría.", "en": "I wouldn't drive that car even if they gave it to me." },
+    { "es": "No me voy ni aunque me echen.", "en": "I'm not leaving, not even if they throw me out." }
+  ],
+  "rule": "*Ni aunque* means \"not even if\". You name the best offer and still say no.\n\nTwo moods, as in *si* sentences you already know:\n\nA real possibility: present subjunctive. *No vuelvo ni aunque me paguen.* The refusal is in the present.\n\nAn imaginary one: imperfect subjunctive, then the conditional. *Ni aunque me pagaran el doble volvería.* Here the reply is *volvería*, not *vuelvo*.\n\n*Ni siquiera si* does the same job: *ni siquiera si me pagaran el doble*.\n\nThe *ni* can start the sentence or sit in the middle. Either way it makes the refusal absolute.",
+  "smallPrint": "Teachers call this an emphatic concessive clause: *ni aunque* is a negative *aunque* with a subjunctive.",
+  "readAndPick": [
+    { "es": "No vuelvo ni aunque me paguen.", "options": ["I'm not going back, not even if they pay me.", "I'm not going back because they pay me.", "I'm not going back unless they pay me."], "answer": 0 },
+    { "es": "Ni aunque me lo pidiera de rodillas lo perdonaría.", "options": ["I forgave him when he begged me on his knees.", "I wouldn't forgive him even if he begged me on his knees.", "I would forgive him if he begged me on his knees."], "answer": 1 },
+    { "es": "No firmo ni aunque me lo pidan de rodillas.", "options": ["I'll sign if they beg me on their knees.", "I signed because they begged me on their knees.", "I'm not signing, not even if they beg me on their knees."], "answer": 2 },
+    { "es": "Ni siquiera si me pagaran el doble volvería.", "options": ["I wouldn't go back even if they paid me double.", "I would go back if they paid me double.", "I didn't go back, though they paid me double."], "answer": 0 },
+    { "es": "No me voy ni aunque me echen.", "options": ["I'm leaving, since they are throwing me out.", "I'm not leaving, not even if they throw me out.", "I'll leave if they throw me out."], "answer": 1 },
+    { "es": "Ni aunque me regalaran el carro lo manejaría.", "options": ["They gave me the car and I drive it.", "I would drive the car if they gave it to me.", "I wouldn't drive that car even if they gave it to me."], "answer": 2 },
+    { "es": "Ni aunque llueva me quedo en casa.", "options": ["I'm not staying home, not even if it rains.", "I'm staying home because it is raining.", "I'll stay home if it rains."], "answer": 0 },
+    { "es": "Ni aunque me pidiera perdón lo perdonaría.", "options": ["He asked me to forgive him and I did.", "I wouldn't forgive him even if he apologised.", "I'll forgive him as soon as he apologises."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *paguen* or *pagan* and type the whole sentence: *No vuelvo ni aunque me ___.*", "answer": "No vuelvo ni aunque me paguen.", "accept": [], "why": "After *ni aunque*, a real possibility takes the subjunctive: *paguen*." },
+    { "prompt": "Type in Spanish: I'm not leaving, not even if they throw me out.", "answer": "No me voy ni aunque me echen.", "accept": ["Ni aunque me echen me voy."], "why": "*Ni aunque* plus the subjunctive *echen*." },
+    { "prompt": "Type in Spanish: I'm not signing, not even if they beg me on their knees.", "answer": "No firmo ni aunque me lo pidan de rodillas.", "accept": ["Ni aunque me lo pidan de rodillas firmo."], "why": "The offer goes in the subjunctive: *pidan*." },
+    { "prompt": "Type in Spanish: I'm not staying home, not even if it rains.", "answer": "Ni aunque llueva me quedo en casa.", "accept": ["No me quedo en casa ni aunque llueva."], "why": "*Llueva* is the subjunctive after *ni aunque*." },
+    { "prompt": "Make it imaginary: *No vuelvo ni aunque me paguen.* Say: I wouldn't go back even if they paid me double.", "answer": "Ni aunque me pagaran el doble volvería.", "accept": ["No volvería ni aunque me pagaran el doble."], "why": "Imaginary means imperfect subjunctive, then the conditional *volvería*." },
+    { "prompt": "Type in Spanish: I wouldn't drive that car even if they gave it to me.", "answer": "Ni aunque me regalaran el carro lo manejaría.", "accept": ["No manejaría el carro ni aunque me lo regalaran."], "why": "*Regalaran* for the imaginary offer, *manejaría* for the refusal." },
+    { "prompt": "Type in Spanish: I wouldn't forgive him even if he apologised.", "answer": "Ni aunque me pidiera perdón lo perdonaría.", "accept": ["No lo perdonaría ni aunque me pidiera perdón."], "why": "Imperfect subjunctive *pidiera*, then the conditional *perdonaría*." }
+  ],
+  "pitfalls": [
+    { "wrong": "No vuelvo ni aunque me pagan.", "right": "No vuelvo ni aunque me paguen.", "why": "Almost. A possible offer after *ni aunque* takes the subjunctive." },
+    { "wrong": "Ni aunque me pagaran el doble vuelvo.", "right": "Ni aunque me pagaran el doble volvería.", "why": "Almost. After an imaginary offer, the refusal is in the conditional." },
+    { "wrong": "Ni aunque me pagar vuelvo.", "right": "Ni aunque me paguen vuelvo.", "why": "Almost. *Aunque* needs a conjugated verb, not the infinitive." }
+  ],
+  "personal": "Think of one thing you refuse to do, whatever the reward, and say it with *ni aunque*."
+}

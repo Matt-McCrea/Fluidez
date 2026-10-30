@@ -1,0 +1,43 @@
+{
+  "node": "p:se-me-involuntary",
+  "hook": {
+    "line": "Some things your body does without asking you: your eyes close in a long meeting, your mouth waters at the smell of bread. Spanish says these happen to you, not that you do them.",
+    "es": "Se me cierran los ojos.",
+    "en": "My eyes are closing."
+  },
+  "examples": [
+    { "es": "Se me cierran los ojos.", "en": "My eyes are closing." },
+    { "es": "Se me puso la piel de gallina.", "en": "I got goosebumps." },
+    { "es": "A Tomás se le quebró la voz.", "en": "Tomás's voice cracked." },
+    { "es": "Se le llenaron los ojos de lágrimas.", "en": "Her eyes filled with tears." },
+    { "es": "¿Se te puso la cara roja?", "en": "Did your face go red?" },
+    { "es": "Se nos cerraron los ojos.", "en": "Our eyes closed on us." }
+  ],
+  "rule": "You already know *se me cayó* (it fell on me, not my fault). The same pattern covers the body:\n\n*se* + *me / te / le / nos / les* + verb + the body part\n\nThe *me* says whose body it is. So you do not add *mi*: *se me cierran los ojos*, not *se me cierran mis ojos*.\n\nThe verb agrees with the body part, not with the person: *los ojos* means *cierran*, *la voz* means *quebró*.\n\nThe order never changes: *se me*, never *me se*.\n\nIt keeps you out of the blame. *Cierro los ojos* means you shut them on purpose. *Se me cierran los ojos* means you cannot help it.",
+  "smallPrint": "Teachers call this an involuntary or accidental *se*, with an indirect object that marks the person affected.",
+  "readAndPick": [
+    { "es": "Se me cierran los ojos.", "options": ["I am closing my eyes on purpose.", "My eyes are closing on me.", "I am closing his eyes."], "answer": 1 },
+    { "es": "Se me puso la piel de gallina.", "options": ["I got goosebumps.", "I put a chicken on my skin.", "I bought chicken skin."], "answer": 0 },
+    { "es": "A Tomás se le quebró la voz.", "options": ["Tomás broke the voice of a friend.", "Tomás lost his voice on purpose.", "Tomás's voice cracked."], "answer": 2 },
+    { "es": "Se le llenaron los ojos de lágrimas.", "options": ["Her eyes filled with tears.", "I filled her eyes with tears.", "She filled the eyes of a doll."], "answer": 0 },
+    { "es": "¿Se te puso la cara roja?", "options": ["Did I make his face red?", "Did your face go red?", "Did you paint a red face?"], "answer": 1 },
+    { "es": "Se nos cerraron los ojos.", "options": ["Their eyes closed on them.", "Our eyes closed on us.", "We closed their eyes."], "answer": 1 },
+    { "es": "Se me durmieron los pies.", "options": ["I put my feet to sleep on purpose.", "My feet are asleep, I put them to bed.", "My feet fell asleep on me."], "answer": 2 },
+    { "es": "Se les cerraban los ojos.", "options": ["Their eyes were closing on them.", "Her eyes were closing on her.", "Our eyes were closing on us."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *cierra* or *cierran* and type the whole sentence: *Se me ___ los ojos.*", "answer": "Se me cierran los ojos.", "accept": [], "why": "*Los ojos* is plural, so the verb is *cierran*." },
+    { "prompt": "Type in Spanish: I got goosebumps.", "answer": "Se me puso la piel de gallina.", "accept": [], "why": "*Se me* plus the verb, and no *mi* before the body part." },
+    { "prompt": "Type in Spanish: Tomás's voice cracked.", "answer": "A Tomás se le quebró la voz.", "accept": ["Se le quebró la voz a Tomás."], "why": "*Le* stands for Tomás, and *quebró* agrees with the single *voz*." },
+    { "prompt": "Type in Spanish, asking a friend (tú): Did your face go red?", "answer": "¿Se te puso la cara roja?", "accept": [], "why": "*Te* is you, the friend whose face it is." },
+    { "prompt": "Type in Spanish: My feet fell asleep.", "answer": "Se me durmieron los pies.", "accept": [], "why": "*Los pies* is plural, so *durmieron*." },
+    { "prompt": "Make it about *her*: *Se me llenaron los ojos de lágrimas.* Say: Her eyes filled with tears.", "answer": "Se le llenaron los ojos de lágrimas.", "accept": [], "why": "Only *me* changes, to *le*, for her." },
+    { "prompt": "Make it about *us*: *Se me cerraron los ojos.* Say: Our eyes closed on us.", "answer": "Se nos cerraron los ojos.", "accept": [], "why": "*Nos* replaces *me*, and the verb still follows *los ojos*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Se me cierran mis ojos.", "right": "Se me cierran los ojos.", "why": "Almost. *Me* already says whose eyes they are, so use *los*, not *mis*." },
+    { "wrong": "Se me cierra los ojos.", "right": "Se me cierran los ojos.", "why": "Almost. The verb agrees with the body part, and *los ojos* is plural." },
+    { "wrong": "Me se cierran los ojos.", "right": "Se me cierran los ojos.", "why": "Almost. *Se* always comes first, then *me*, *te* or *le*." }
+  ],
+  "personal": "Think of the last time your body gave you away, and say it with *se me…*: tired eyes, a cracked voice, a watering mouth."
+}

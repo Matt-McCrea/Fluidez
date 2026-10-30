@@ -1,0 +1,43 @@
+{
+  "node": "p:al-alcance-de",
+  "hook": {
+    "line": "Medicine on a high shelf, a goal that finally feels possible, a price you can afford: all of these are about whether you can reach something. Spanish uses *alcance* for the literal and the figurative.",
+    "es": "La solución está al alcance de la mano.",
+    "en": "The solution is within reach."
+  },
+  "examples": [
+    { "es": "Mantener fuera del alcance de los niños.", "en": "Keep out of the reach of children." },
+    { "es": "La solución está al alcance de la mano.", "en": "The solution is within reach." },
+    { "es": "Estos precios están al alcance de cualquiera.", "en": "These prices are within anyone's reach." },
+    { "es": "El celular está a mi alcance.", "en": "The phone is within my reach." },
+    { "es": "Ese apartamento está fuera de mi alcance.", "en": "That apartment is out of my reach." },
+    { "es": "Las medicinas deben estar fuera del alcance de los niños.", "en": "The medicines must be kept out of the reach of children." }
+  ],
+  "rule": "*Alcance* is \"reach\", and a few fixed frames cover it:\n\n*al alcance de la mano*: within arm's reach, or within easy grasp.\n\n*al alcance de todos / de cualquiera*: affordable or available to everyone.\n\n*a mi / tu / su alcance*: within my / your / his reach.\n\n*fuera de mi alcance* or *fuera del alcance de…*: out of reach.\n\nIt works for real distance (*el celular está a mi alcance*) and for money or goals (*un carro está fuera de mi alcance*).\n\nWhen the person is a noun, *de* joins the pieces: *fuera del alcance de los niños*. Remember *de* + *el* becomes *del*.",
+  "smallPrint": "Teachers call these prepositional locutions. They are fixed frames, so learn each one whole.",
+  "readAndPick": [
+    { "es": "La solución está al alcance de la mano.", "options": ["The solution is within reach.", "The solution is out of reach.", "The solution is in my hand."], "answer": 0 },
+    { "es": "Ese apartamento está fuera de mi alcance.", "options": ["That apartment is within my reach.", "That apartment is out of my reach.", "That apartment is far from the street."], "answer": 1 },
+    { "es": "Estos precios están al alcance de cualquiera.", "options": ["These prices are out of anyone's reach.", "These prices are known to everyone.", "These prices are within anyone's reach."], "answer": 2 },
+    { "es": "El celular está a mi alcance.", "options": ["The phone is within my reach.", "The phone is out of my reach.", "The phone is mine."], "answer": 0 },
+    { "es": "Mantener fuera del alcance de los niños.", "options": ["Keep near the children.", "Keep out of the reach of children.", "Keep in the hands of children."], "answer": 1 },
+    { "es": "La victoria está al alcance de la mano.", "options": ["The victory is out of reach.", "The victory was a long time ago.", "The victory is within reach."], "answer": 2 },
+    { "es": "El estante está fuera de mi alcance.", "options": ["The shelf is out of my reach.", "The shelf is within my reach.", "The shelf is far from here."], "answer": 0 },
+    { "es": "Todo está a tu alcance.", "options": ["Everything is out of your reach.", "Everything is within your reach.", "Everything is in your pocket."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *a* or *fuera de* and type the sentence: *El celular está ___ mi alcance.* (it is within reach)", "answer": "El celular está a mi alcance.", "accept": [], "why": "Within reach is *a mi alcance*; *fuera de* would mean out of reach." },
+    { "prompt": "Type in Spanish: That apartment is out of my reach.", "answer": "Ese apartamento está fuera de mi alcance.", "accept": [], "why": "Out of reach is *fuera de mi alcance*." },
+    { "prompt": "Type in Spanish: The solution is within reach.", "answer": "La solución está al alcance de la mano.", "accept": [], "why": "*Al alcance de la mano* is the fixed frame for easy reach." },
+    { "prompt": "Type in Spanish: These prices are within anyone's reach.", "answer": "Estos precios están al alcance de cualquiera.", "accept": [], "why": "*Al alcance de cualquiera* means affordable to all." },
+    { "prompt": "Type in Spanish: Keep out of the reach of children.", "answer": "Mantener fuera del alcance de los niños.", "accept": [], "why": "Out of reach of someone is *fuera del alcance de* plus the people." },
+    { "prompt": "Make it about *you* (tú): *Todo está a mi alcance.* Say: Everything is within your reach.", "answer": "Todo está a tu alcance.", "accept": [], "why": "Only *mi* changes, to *tu*." },
+    { "prompt": "Turn it around: *El estante está a mi alcance.* Say: The shelf is out of my reach.", "answer": "El estante está fuera de mi alcance.", "accept": [], "why": "Swap *a* for *fuera de*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Está fuera de el alcance de los niños.", "right": "Está fuera del alcance de los niños.", "why": "Almost. *De* and *el* always join into *del*." },
+    { "wrong": "El celular está en mi alcance.", "right": "El celular está a mi alcance.", "why": "Almost. English \"in my reach\" tempts *en*, but Spanish uses *a*." },
+    { "wrong": "Estos precios están al alcance para todos.", "right": "Estos precios están al alcance de todos.", "why": "Almost. After *alcance* the link is *de*, not *para*." }
+  ],
+  "personal": "Think of one goal that feels within reach for you, and one thing that is out of reach for now. Say both with *alcance*."
+}

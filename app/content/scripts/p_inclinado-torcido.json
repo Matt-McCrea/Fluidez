@@ -1,0 +1,43 @@
+{
+  "node": "p:inclinado-torcido",
+  "hook": {
+    "line": "English uses \"crooked\", \"tilted\", \"leaning\" and \"steep\" for things that are not straight. Spanish sorts them into three words, and the choice tells people what is wrong.",
+    "es": "El cuadro está torcido.",
+    "en": "The picture is crooked."
+  },
+  "examples": [
+    { "es": "El cuadro está torcido.", "en": "The picture is crooked." },
+    { "es": "La torre está un poco inclinada.", "en": "The tower is leaning a little." },
+    { "es": "La calle es muy empinada.", "en": "The street is very steep." },
+    { "es": "Tienes la corbata torcida.", "en": "Your tie is crooked." },
+    { "es": "Endereza el cuadro, por favor.", "en": "Straighten the picture, please." },
+    { "es": "La casa vieja está inclinada hacia la izquierda.", "en": "The old house is leaning to the left." }
+  ],
+  "rule": "Three words, three pictures:\n\n*torcido*: not where or how it should be. Crooked, bent, badly placed. A tie, a picture, a nail.\n\n*inclinado*: at an angle, tilted. A tower, a table, a wall. Nothing need be broken.\n\n*empinado*: a slope that climbs steeply. Only for streets, hills and stairs.\n\nUse *estar* for what has happened to a thing (*está torcido*) and *ser* for a street that is always steep (*la calle es empinada*).\n\nThe adjective agrees: *torcida, torcidos, inclinadas*.\n\nTo fix something crooked, *enderezar*: *Endereza el cuadro*.",
+  "smallPrint": "Teachers call *torcido* and *inclinado* participial adjectives of position, used with *estar*.",
+  "readAndPick": [
+    { "es": "El cuadro está torcido.", "options": ["The picture is crooked.", "The picture is steep.", "The picture is lovely."], "answer": 0 },
+    { "es": "La calle es muy empinada.", "options": ["The street is very crooked.", "The street is very steep.", "The street is very long."], "answer": 1 },
+    { "es": "La torre está un poco inclinada.", "options": ["The tower is a little steep.", "The tower is a little crooked.", "The tower is leaning a little."], "answer": 2 },
+    { "es": "Endereza el cuadro, por favor.", "options": ["Straighten the picture, please.", "Hang up the picture, please.", "Look at the picture, please."], "answer": 0 },
+    { "es": "Tienes la corbata torcida.", "options": ["Your tie is leaning.", "Your tie is crooked.", "Your tie is steep."], "answer": 1 },
+    { "es": "La casa vieja está inclinada hacia la izquierda.", "options": ["The old house is crooked on the left.", "The old house is on a steep hill.", "The old house is leaning to the left."], "answer": 2 },
+    { "es": "El camino hacia el café es muy empinado.", "options": ["The road to the café is very steep.", "The road to the café is very crooked.", "The road to the café is leaning."], "answer": 0 },
+    { "es": "La silla quedó torcida.", "options": ["The chair stayed steep.", "The chair ended up crooked.", "The chair is leaning forward."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *torcido* or *empinado* and type the sentence: *El cuadro está ___.*", "answer": "El cuadro está torcido.", "accept": [], "why": "A picture out of place is *torcido*; *empinado* is only for slopes." },
+    { "prompt": "Type in Spanish: The street is very steep.", "answer": "La calle es muy empinada.", "accept": [], "why": "*Empinada* is for slopes, and it agrees with *calle*." },
+    { "prompt": "Type in Spanish: The tower is leaning a little.", "answer": "La torre está un poco inclinada.", "accept": [], "why": "A tilt with no damage is *inclinada*." },
+    { "prompt": "Type in Spanish, to a friend (tú): Your tie is crooked.", "answer": "Tienes la corbata torcida.", "accept": [], "why": "Something badly placed is *torcida*, in the feminine to match *corbata*." },
+    { "prompt": "Type in Spanish, to a friend (tú): Straighten the picture, please.", "answer": "Endereza el cuadro, por favor.", "accept": [], "why": "*Enderezar* in the *tú* command is *endereza*." },
+    { "prompt": "Make it plural: *El cuadro está torcido.* Say: The pictures are crooked.", "answer": "Los cuadros están torcidos.", "accept": [], "why": "Article, noun, verb and adjective all go plural." },
+    { "prompt": "Make it about a chair: *La mesa está inclinada.* Say: The chair is leaning.", "answer": "La silla está inclinada.", "accept": [], "why": "*Silla* is feminine, so *inclinada*." }
+  ],
+  "pitfalls": [
+    { "wrong": "La calle es muy inclinada.", "right": "La calle es muy empinada.", "why": "Almost. A street that climbs steeply is *empinada*." },
+    { "wrong": "El cuadro está empinado.", "right": "El cuadro está torcido.", "why": "Almost. *Empinado* is only for slopes; a crooked picture is *torcido*." },
+    { "wrong": "La corbata está torcido.", "right": "La corbata está torcida.", "why": "Almost. The adjective agrees with *corbata*, which is feminine." }
+  ],
+  "personal": "Look around the room. Is anything crooked or leaning? Say what with *torcido* or *inclinado*."
+}

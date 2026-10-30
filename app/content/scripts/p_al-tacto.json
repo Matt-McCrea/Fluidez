@@ -1,0 +1,43 @@
+{
+  "node": "p:al-tacto",
+  "hook": {
+    "line": "When you shop for fabric, soap or a wooden table, how it looks is half the story. Spanish has a short tag that says you are judging by touch.",
+    "es": "La tela es sedosa al tacto.",
+    "en": "The fabric is silky to the touch."
+  },
+  "examples": [
+    { "es": "La tela es sedosa al tacto.", "en": "The fabric is silky to the touch." },
+    { "es": "La corteza es rugosa al tacto.", "en": "The bark is coarse to the touch." },
+    { "es": "Este jabón deja la piel suave al tacto.", "en": "This soap leaves your skin soft to the touch." },
+    { "es": "La masa es pegajosa al tacto.", "en": "The dough is sticky to the touch." },
+    { "es": "La taza está tibia al tacto.", "en": "The cup is lukewarm to the touch." },
+    { "es": "La piedra es fría al tacto.", "en": "The stone is cold to the touch." }
+  ],
+  "rule": "The tag is *al tacto*, \"to the touch\". Put it right after the adjective: *suave al tacto*, *áspera al tacto*.\n\nIt says where your impression comes from. *La tela es bonita* is about looks. *La tela es suave al tacto* is about how it feels in your hand.\n\nThe adjective still agrees with the noun: *la madera es áspera*, *el papel es áspero*. *Al tacto* never changes.\n\nUseful texture words: *suave, áspero, rugoso, liso, sedoso, pegajoso, frío, tibio*.\n\nThe pair *a simple vista* (at first sight) and *al tacto* (by touch) are both about how you perceive something.",
+  "smallPrint": "Teachers call this an adverbial of perception: it names the sense that gives you the judgement.",
+  "readAndPick": [
+    { "es": "La tela es sedosa al tacto.", "options": ["The fabric is silky to the touch.", "The fabric looks silky from far away.", "The fabric is silky because of the weather."], "answer": 0 },
+    { "es": "La corteza es rugosa al tacto.", "options": ["The bark smells rough.", "The bark is coarse to the touch.", "The bark looks rough in a photo."], "answer": 1 },
+    { "es": "La masa es pegajosa al tacto.", "options": ["The dough looks sticky.", "The dough is not sticky once baked.", "The dough is sticky to the touch."], "answer": 2 },
+    { "es": "La madera es áspera al tacto.", "options": ["The wood is rough to the touch.", "The wood is rough to the taste.", "The wood is old to the touch."], "answer": 0 },
+    { "es": "Este jabón deja la piel suave al tacto.", "options": ["This soap makes the skin smell soft.", "This soap leaves your skin soft to the touch.", "This soap is soft in the bottle."], "answer": 1 },
+    { "es": "La taza está tibia al tacto.", "options": ["The cup is hot and you can't hold it.", "The cup looks warm in the photo.", "The cup is lukewarm to the touch."], "answer": 2 },
+    { "es": "La piedra es fría al tacto.", "options": ["The stone is cold to the touch.", "The stone is cold because it is winter.", "The stone sounds cold."], "answer": 0 },
+    { "es": "Las hojas son lisas al tacto.", "options": ["The leaves are shiny to the sight.", "The leaves are smooth to the touch.", "The leaves are rough to the touch."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *áspera* or *áspero* and type the sentence: *La madera es ___ al tacto.*", "answer": "La madera es áspera al tacto.", "accept": [], "why": "*Madera* is feminine, so the adjective ends in *-a*." },
+    { "prompt": "Type in Spanish: The fabric is silky to the touch.", "answer": "La tela es sedosa al tacto.", "accept": [], "why": "Adjective first, then the tag *al tacto*." },
+    { "prompt": "Type in Spanish: The bark is coarse to the touch.", "answer": "La corteza es rugosa al tacto.", "accept": [], "why": "*Rugosa* agrees with *corteza*." },
+    { "prompt": "Type in Spanish: The dough is sticky to the touch.", "answer": "La masa es pegajosa al tacto.", "accept": [], "why": "*Pegajosa* agrees with *masa*, and *al tacto* never changes." },
+    { "prompt": "Type in Spanish: The stone is cold to the touch.", "answer": "La piedra es fría al tacto.", "accept": [], "why": "*Fría* agrees with *piedra*." },
+    { "prompt": "Make it plural: *La hoja es lisa al tacto.* Say: The leaves are smooth to the touch.", "answer": "Las hojas son lisas al tacto.", "accept": [], "why": "Article, noun, verb and adjective go plural, but *al tacto* stays." },
+    { "prompt": "Type in Spanish: This soap leaves your skin soft to the touch.", "answer": "Este jabón deja la piel suave al tacto.", "accept": [], "why": "*Suave* sits after *la piel*, then comes *al tacto*." }
+  ],
+  "pitfalls": [
+    { "wrong": "La madera es áspero al tacto.", "right": "La madera es áspera al tacto.", "why": "Almost. The adjective agrees with *madera*, which is feminine." },
+    { "wrong": "La tela es suave a tacto.", "right": "La tela es suave al tacto.", "why": "Almost. The fixed phrase is *al tacto*, with *al* for \"to the\"." },
+    { "wrong": "La tela es suave por el tacto.", "right": "La tela es suave al tacto.", "why": "Almost. English \"by touch\" tempts *por*, but Spanish uses *al tacto*." }
+  ],
+  "personal": "Pick something near you, a table, a sweater, a cup, and describe how it feels with *al tacto*."
+}
