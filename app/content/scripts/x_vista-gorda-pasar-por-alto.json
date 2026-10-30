@@ -1,0 +1,178 @@
+{
+  "node": "x:vista-gorda-pasar-por-alto",
+  "hook": {
+    "line": "Both phrases are about not reacting, but one is innocent and one is not. Mix them up in an essay and you accuse someone of wrongdoing, or let them off.",
+    "es": "Hizo la vista gorda.",
+    "en": "He turned a blind eye."
+  },
+  "examples": [
+    {
+      "es": "Hizo la vista gorda.",
+      "en": "He turned a blind eye."
+    },
+    {
+      "es": "Pasó por alto el dato.",
+      "en": "He overlooked the figure."
+    },
+    {
+      "es": "Don Hernando vio el error y hizo la vista gorda.",
+      "en": "Don Hernando saw the mistake and turned a blind eye."
+    },
+    {
+      "es": "Tomás no vio el error: lo pasó por alto.",
+      "en": "Tomás didn't see the mistake: he overlooked it."
+    },
+    {
+      "es": "Hice la vista gorda porque era mi amigo.",
+      "en": "I turned a blind eye because he was my friend."
+    },
+    {
+      "es": "Mariana pasó por alto la fecha.",
+      "en": "Mariana overlooked the date."
+    },
+    {
+      "es": "La policía pasó por alto una pista.",
+      "en": "The police overlooked a clue."
+    }
+  ],
+  "rule": "Ask one question: did the person see it?\n\n*Hacer la vista gorda* means yes: they saw something wrong and pretended not to. It is a choice, and it carries blame: *Don Hernando vio el error y hizo la vista gorda*.\n\n*Pasar por alto* is neutral. It can mean they missed it by accident, or that they skipped it as unimportant. No blame: *Mariana pasó por alto la fecha*.\n\nEnglish \"overlook\" covers both, which is why this is easy to mix up. Spanish splits it.",
+  "smallPrint": "Teachers call this a near-synonym contrast: two expressions that overlap in English but differ in intent.",
+  "readAndPick": [
+    {
+      "es": "Don Hernando vio el error y hizo la vista gorda.",
+      "options": [
+        "Don Hernando overlooked the mistake by accident.",
+        "Don Hernando saw the mistake and turned a blind eye.",
+        "Don Hernando fixed the mistake."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás no vio el error: lo pasó por alto.",
+      "options": [
+        "Tomás overlooked the mistake without seeing it.",
+        "Tomás turned a blind eye to the mistake.",
+        "Tomás corrected the mistake."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hice la vista gorda porque era mi amigo.",
+      "options": [
+        "I overlooked it by accident because he was my friend.",
+        "I turned a blind eye because he was my friend.",
+        "I told on him because he was my friend."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana pasó por alto la fecha.",
+      "options": [
+        "Mariana overlooked the date.",
+        "Mariana turned a blind eye to the date.",
+        "Mariana remembered the date."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hizo la vista gorda.",
+      "options": [
+        "He overlooked it.",
+        "He turned a blind eye.",
+        "He saw nothing."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La policía pasó por alto una pista.",
+      "options": [
+        "The police turned a blind eye to a clue.",
+        "The police found a clue.",
+        "The police overlooked a clue."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale hizo la vista gorda con el cliente.",
+      "options": [
+        "Vale turned a blind eye with the client.",
+        "Vale missed the client.",
+        "Vale overlooked the client."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Pasó por alto el dato.",
+      "options": [
+        "He overlooked the figure.",
+        "He turned a blind eye to the figure.",
+        "He gave the figure."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Tomás no vio el error: lo ___.* (*pasó por alto* or *hizo la vista gorda*) Tomás didn't see the mistake: he overlooked it.",
+      "answer": "Tomás no vio el error: lo pasó por alto.",
+      "accept": [],
+      "why": "He did not see it, so there is nothing to pretend about."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Don Hernando vio el error y ___.* (*pasó por alto* or *hizo la vista gorda*) Don Hernando saw the mistake and turned a blind eye.",
+      "answer": "Don Hernando vio el error y hizo la vista gorda.",
+      "accept": [],
+      "why": "He saw it and chose to say nothing, which is a blind eye."
+    },
+    {
+      "prompt": "Say: Mariana overlooked the date.",
+      "answer": "Mariana pasó por alto la fecha.",
+      "accept": [],
+      "why": "A simple miss, with no blame: *pasar por alto*."
+    },
+    {
+      "prompt": "Say: I turned a blind eye because he was my friend.",
+      "answer": "Hice la vista gorda porque era mi amigo.",
+      "accept": [],
+      "why": "A choice made knowingly: *hacer la vista gorda*."
+    },
+    {
+      "prompt": "Say: The police overlooked a clue.",
+      "answer": "La policía pasó por alto una pista.",
+      "accept": [],
+      "why": "They did not notice or value it, so *pasar por alto*."
+    },
+    {
+      "prompt": "Say about Vale: She turned a blind eye with the client.",
+      "answer": "Vale hizo la vista gorda con el cliente.",
+      "accept": [
+        "Vale hizo la vista gorda con la cliente."
+      ],
+      "why": "*Con* says who she let off."
+    },
+    {
+      "prompt": "Make it a mistake with no blame: *Hizo la vista gorda ante el precio.* (use *pasó por alto*)",
+      "answer": "Pasó por alto el precio.",
+      "accept": [],
+      "why": "Without blame, *pasar por alto* takes the noun directly."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Don Hernando pasó por alto el error y no dijo nada, porque quería protegerlo.",
+      "right": "Don Hernando hizo la vista gorda ante el error.",
+      "why": "Almost. If he saw it and kept quiet on purpose, Spanish uses *hacer la vista gorda*."
+    },
+    {
+      "wrong": "Hizo la vista gorda el dato.",
+      "right": "Pasó por alto el dato.",
+      "why": "Almost. *Hacer la vista gorda* is about wrongdoing; a missed figure is *pasar por alto*."
+    },
+    {
+      "wrong": "Pasó por alto ante el error.",
+      "right": "Pasó por alto el error.",
+      "why": "Almost. *Ante* belongs to *hacer la vista gorda*; *pasar por alto* takes the noun directly."
+    }
+  ],
+  "personal": "Think of a time you missed something, and a time you chose not to react. Say each with the right phrase."
+}

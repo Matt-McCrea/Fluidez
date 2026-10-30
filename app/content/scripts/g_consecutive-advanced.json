@@ -1,0 +1,178 @@
+{
+  "node": "g:consecutive-advanced",
+  "hook": {
+    "line": "When one thing leads to another, spoken Spanish says *por eso*. In an essay or a formal email you need something with more weight, and the choice of connector decides the mood of the verb that follows.",
+    "es": "No hubo acuerdo; de ahí que la reunión se aplazara.",
+    "en": "There was no agreement; hence the meeting was postponed."
+  },
+  "examples": [
+    {
+      "es": "No hubo acuerdo; de ahí que la reunión se aplazara.",
+      "en": "There was no agreement; hence the meeting was postponed."
+    },
+    {
+      "es": "Así pues, la decisión es nuestra.",
+      "en": "Thus, the decision is ours."
+    },
+    {
+      "es": "Llegó tarde, de manera que perdió el vuelo.",
+      "en": "He arrived late, so he missed the flight."
+    },
+    {
+      "es": "Por consiguiente, se suspende la obra.",
+      "en": "Consequently, the works are suspended."
+    },
+    {
+      "es": "Hubo mucho ruido; de ahí que no se oyera la pregunta.",
+      "en": "There was a lot of noise; hence the question could not be heard."
+    },
+    {
+      "es": "No tengo la contraseña; de ahí que no pueda entrar.",
+      "en": "I don't have the password; hence I can't get in."
+    },
+    {
+      "es": "Salió temprano, de manera que llegó a tiempo.",
+      "en": "She left early, so she arrived on time."
+    }
+  ],
+  "rule": "Spanish has four formal ways to say \"so\" or \"hence\":\n*Así pues* and *por consiguiente* start a sentence and are followed by a normal verb: *así pues, la decisión es nuestra*.\n*De manera que* also takes a normal verb when you simply report what happened: *llegó tarde, de manera que perdió el vuelo*.\n*De ahí que* is the one to watch. It always takes the subjunctive, because you are not announcing the result as news, you are presenting it as the known consequence: *de ahí que la reunión se aplazara*, *de ahí que no pueda entrar*.\n\nIf the main sentence is in the past, the verb after *de ahí que* is the past subjunctive (*se aplazara*, *oyera*). If it is in the present, it is the present subjunctive (*pueda*).",
+  "smallPrint": "Teachers call these consecutive connectors, because they introduce a consequence. *De ahí que* is the only one here that forces the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "No hubo acuerdo; de ahí que la reunión se aplazara.",
+      "options": [
+        "There was no agreement; hence the meeting was postponed.",
+        "There was no agreement; hence the meeting will be postponed.",
+        "There was agreement; hence the meeting was postponed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Llegó tarde, de manera que perdió el vuelo.",
+      "options": [
+        "He arrived late, so he missed the flight.",
+        "He arrives late, so he misses the flight.",
+        "He arrived late, so he will miss the flight."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No tengo la contraseña; de ahí que no pueda entrar.",
+      "options": [
+        "I don't have the password; hence I could not get in.",
+        "I don't have the password; hence I can't get in.",
+        "I had the password; hence I can't get in."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Así pues, la decisión es nuestra.",
+      "options": [
+        "Thus, the decision is ours.",
+        "Thus, the decision was theirs.",
+        "Thus, the decision will be ours."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hubo mucho ruido; de ahí que no se oyera la pregunta.",
+      "options": [
+        "There was a lot of noise; hence the question is not heard.",
+        "There was a lot of noise; hence the question could not be heard.",
+        "There will be a lot of noise; hence the question could not be heard."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por consiguiente, se suspende la obra.",
+      "options": [
+        "Consequently, the works were suspended.",
+        "Consequently, the works are suspended.",
+        "Consequently, the works were not suspended."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Salió temprano, de manera que llegó a tiempo.",
+      "options": [
+        "She left early, so she arrives on time.",
+        "She left early, so she arrived late.",
+        "She left early, so she arrived on time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El plazo terminó; de ahí que el trámite se cancelara.",
+      "options": [
+        "The deadline ended; hence the procedure was cancelled.",
+        "The deadline ends; hence the procedure is cancelled.",
+        "The deadline ended; hence the procedure will be cancelled."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Hubo mucho ruido; de ahí que no se ___ la pregunta.* (*oyó* or *oyera*) There was a lot of noise; hence the question could not be heard.",
+      "answer": "Hubo mucho ruido; de ahí que no se oyera la pregunta.",
+      "accept": [],
+      "why": "*De ahí que* takes the subjunctive, and the past needs *oyera*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Salió temprano, de manera que ___ a tiempo.* (*llegó* or *llegara*) She left early, so she arrived on time.",
+      "answer": "Salió temprano, de manera que llegó a tiempo.",
+      "accept": [],
+      "why": "Here you report a fact, so *de manera que* takes the normal past, *llegó*."
+    },
+    {
+      "prompt": "Say: Consequently, the works are suspended.",
+      "answer": "Por consiguiente, se suspende la obra.",
+      "accept": [],
+      "why": "*Por consiguiente* starts the sentence and takes a normal verb."
+    },
+    {
+      "prompt": "Say: I don't have the password; hence I can't get in.",
+      "answer": "No tengo la contraseña; de ahí que no pueda entrar.",
+      "accept": [],
+      "why": "The main verb is in the present, so *de ahí que* needs the present subjunctive *pueda*."
+    },
+    {
+      "prompt": "Say: He arrived late, so he missed the flight.",
+      "answer": "Llegó tarde, de manera que perdió el vuelo.",
+      "accept": [],
+      "why": "A plain result after *de manera que* uses the normal past."
+    },
+    {
+      "prompt": "Join with *de ahí que*, in the past: *La obra no tenía permiso. El barrio protestó.*",
+      "answer": "La obra no tenía permiso; de ahí que el barrio protestara.",
+      "accept": [
+        "La obra no tenía permiso, de ahí que el barrio protestara."
+      ],
+      "why": "Past main verb, so the past subjunctive *protestara* follows *de ahí que*."
+    },
+    {
+      "prompt": "Start with *así pues*: *La decisión es nuestra.*",
+      "answer": "Así pues, la decisión es nuestra.",
+      "accept": [],
+      "why": "*Así pues* sits at the front and the verb stays normal."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No hubo acuerdo; de ahí que la reunión se aplazó.",
+      "right": "No hubo acuerdo; de ahí que la reunión se aplazara.",
+      "why": "Almost. *De ahí que* always needs the subjunctive, even for something that really happened."
+    },
+    {
+      "wrong": "No tengo la contraseña; de ahí que no puedo entrar.",
+      "right": "No tengo la contraseña; de ahí que no pueda entrar.",
+      "why": "Almost. After *de ahí que* the present needs *pueda*, not *puedo*."
+    },
+    {
+      "wrong": "Hubo mucho ruido; de ahí no se oyera la pregunta.",
+      "right": "Hubo mucho ruido; de ahí que no se oyera la pregunta.",
+      "why": "Almost. The *que* is part of the connector: *de ahí que*."
+    }
+  ],
+  "personal": "Think of something that happened to you this week and what followed from it. Say it with *de ahí que* or *de manera que*."
+}

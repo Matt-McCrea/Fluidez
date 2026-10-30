@@ -1,0 +1,176 @@
+{
+  "node": "p:dar-lugar-a",
+  "hook": {
+    "line": "When you write about causes, you need a verb for \"this started that\" that is not just *causar*. *Dar lugar a* is the quiet, serious one you will see in every newspaper.",
+    "es": "La crisis dio lugar a una ola de protestas.",
+    "en": "The crisis gave rise to a wave of protests."
+  },
+  "examples": [
+    {
+      "es": "La crisis dio lugar a una ola de protestas.",
+      "en": "The crisis gave rise to a wave of protests."
+    },
+    {
+      "es": "Esto puede dar lugar a malentendidos.",
+      "en": "This can lead to misunderstandings."
+    },
+    {
+      "es": "La venta del edificio dio lugar a una protesta.",
+      "en": "The sale of the building gave rise to a protest."
+    },
+    {
+      "es": "Esa pregunta dio lugar a un largo debate.",
+      "en": "That question gave rise to a long debate."
+    },
+    {
+      "es": "¿Qué dio lugar a esta pelea?",
+      "en": "What gave rise to this fight?"
+    },
+    {
+      "es": "No quiero dar lugar a dudas.",
+      "en": "I don't want to leave room for doubt."
+    }
+  ],
+  "rule": "*Dar lugar a* means to give rise to, or to lead to. The cause is the subject and the result comes after *a*: *la crisis dio lugar a una ola de protestas*.\n\nOnly *dar* changes: *dio lugar*, *dieron lugar*, *puede dar lugar*.\n\nAfter *a* comes a noun, never a clause. English can say \"led to people protesting\", but Spanish needs the noun: *dio lugar a protestas*. With *el*, *a* joins it: *dio lugar al conflicto*.",
+  "smallPrint": "Teachers call this a support-verb phrase: *dar* carries little meaning on its own, and the noun *lugar* does the work.",
+  "readAndPick": [
+    {
+      "es": "La crisis dio lugar a una ola de protestas.",
+      "options": [
+        "The crisis gave rise to a wave of protests.",
+        "The crisis put an end to a wave of protests.",
+        "The crisis took the place of a wave of protests."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esto puede dar lugar a malentendidos.",
+      "options": [
+        "This was a misunderstanding.",
+        "This can lead to misunderstandings.",
+        "This avoids misunderstandings."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las dudas dieron lugar a un divorcio.",
+      "options": [
+        "The doubt gave rise to a divorce.",
+        "The doubts gave rise to a divorce.",
+        "The doubts gave rise to some divorces."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El error dio lugar a la crisis.",
+      "options": [
+        "The error gave rise to the crisis.",
+        "The errors gave rise to the crisis.",
+        "The error will give rise to the crisis."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué dio lugar a esta pelea?",
+      "options": [
+        "What will give rise to this fight?",
+        "What gave rise to this fight?",
+        "What gives rise to this fight?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esa idea no dará lugar a nada bueno.",
+      "options": [
+        "That idea didn't lead to anything good.",
+        "That idea doesn't lead to anything good.",
+        "That idea won't lead to anything good."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los cambios dieron lugar a un nuevo barrio.",
+      "options": [
+        "The changes gave rise to a new neighbourhood.",
+        "The change gave rise to a new neighbourhood.",
+        "The changes will give rise to a new neighbourhood."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Una palabra mal dicha puede dar lugar a un problema.",
+      "options": [
+        "A badly said word led to a problem.",
+        "A badly said word can lead to a problem.",
+        "A badly said word is a problem."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *La crisis dio ___ a una ola de protestas.* (*lugar* or *sitio*) The crisis gave rise to a wave of protests.",
+      "answer": "La crisis dio lugar a una ola de protestas.",
+      "accept": [],
+      "why": "The fixed phrase is *dar lugar a*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Esa pregunta ___ lugar a un largo debate.* (*dio* or *dieron*) That question gave rise to a long debate.",
+      "answer": "Esa pregunta dio lugar a un largo debate.",
+      "accept": [],
+      "why": "One question, so *dio*."
+    },
+    {
+      "prompt": "Say: This can lead to misunderstandings.",
+      "answer": "Esto puede dar lugar a malentendidos.",
+      "accept": [],
+      "why": "After *puede*, *dar* stays as it is."
+    },
+    {
+      "prompt": "Say: What gave rise to this fight?",
+      "answer": "¿Qué dio lugar a esta pelea?",
+      "accept": [],
+      "why": "*Qué* is the cause, so it is the subject of *dio*."
+    },
+    {
+      "prompt": "Say: The error gave rise to the crisis.",
+      "answer": "El error dio lugar a la crisis.",
+      "accept": [
+        "El error dio lugar a la crisis."
+      ],
+      "why": "*A* and *la* stay apart: *a la*."
+    },
+    {
+      "prompt": "Make it plural: *El cambio dio lugar a un conflicto.* (use *los cambios*)",
+      "answer": "Los cambios dieron lugar a un conflicto.",
+      "accept": [],
+      "why": "Plural cause, so *dieron*."
+    },
+    {
+      "prompt": "Make it about the future: *La venta dio lugar a una protesta.*",
+      "answer": "La venta dará lugar a una protesta.",
+      "accept": [
+        "La venta va a dar lugar a una protesta."
+      ],
+      "why": "*Dará* is the future of *dar*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La crisis dio lugar a que hubiera protestas.",
+      "right": "La crisis dio lugar a una ola de protestas.",
+      "why": "Almost. In this pattern a noun follows *a*; a whole clause sounds off."
+    },
+    {
+      "wrong": "La crisis dio lugar protestas.",
+      "right": "La crisis dio lugar a protestas.",
+      "why": "Almost. English says \"gave rise\" with no little word, but Spanish needs the *a*."
+    },
+    {
+      "wrong": "La crisis dio un lugar a una ola de protestas.",
+      "right": "La crisis dio lugar a una ola de protestas.",
+      "why": "Almost. The phrase is fixed: *dar lugar*, with no *un* in between."
+    }
+  ],
+  "personal": "Think of something that started a chain of events in your life or city. Say it: *… dio lugar a…*."
+}

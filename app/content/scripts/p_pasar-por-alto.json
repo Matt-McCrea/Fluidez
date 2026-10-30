@@ -1,0 +1,172 @@
+{
+  "node": "p:pasar-por-alto",
+  "hook": {
+    "line": "In an essay you often have to say that someone missed a detail, or waved it away as small. *Pasar por alto* and *restar importancia* do both jobs, and they sound serious without being stiff.",
+    "es": "No podemos pasar por alto este dato.",
+    "en": "We can't overlook this figure."
+  },
+  "examples": [
+    {
+      "es": "No podemos pasar por alto este dato.",
+      "en": "We can't overlook this figure."
+    },
+    {
+      "es": "Le restó importancia al asunto.",
+      "en": "He played down the matter."
+    },
+    {
+      "es": "Tomás pasó por alto el error en la cuenta.",
+      "en": "Tomás overlooked the mistake in the bill."
+    },
+    {
+      "es": "¿Por qué pasaste por alto el precio?",
+      "en": "Why did you overlook the price? (to a friend)"
+    },
+    {
+      "es": "Don Hernando le resta importancia a todo.",
+      "en": "Don Hernando plays everything down."
+    },
+    {
+      "es": "No le restes importancia al riesgo.",
+      "en": "Don't play down the risk. (to a friend)"
+    }
+  ],
+  "rule": "*Pasar por alto* means to overlook: you miss something, or you decide to leave it aside. Only *pasar* changes: *pasó por alto*, *pasaste por alto*, *no podemos pasar por alto*. *Por alto* never changes.\n\n*Restar importancia* means to play something down. Put *le* before the verb and *a* before the thing played down: *le restó importancia al asunto*. The *le* stays even when the thing is named.\n\nBoth take a plain noun after them: *pasó por alto el error*, no extra word needed.",
+  "smallPrint": "Teachers call these verb phrases (or collocations): the verb and the rest are always found together, so you learn them as a pair.",
+  "readAndPick": [
+    {
+      "es": "Tomás pasó por alto el error en la cuenta.",
+      "options": [
+        "Tomás overlooked the mistake in the bill.",
+        "Tomás found the mistake in the bill.",
+        "Tomás will overlook the mistake in the bill."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le restó importancia al asunto.",
+      "options": [
+        "He made the matter more important.",
+        "He played down the matter.",
+        "He ignored the matter."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Por qué pasaste por alto el precio?",
+      "options": [
+        "Why did you overlook the price?",
+        "Why did she overlook the price?",
+        "Why will you overlook the price?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Don Hernando le resta importancia a todo.",
+      "options": [
+        "Don Hernando plays everything down.",
+        "Don Hernando played everything down.",
+        "Don Hernando will play everything down."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No podemos pasar por alto este dato.",
+      "options": [
+        "We didn't overlook this figure.",
+        "We can't overlook this figure.",
+        "They can't overlook this figure."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No le restes importancia al riesgo.",
+      "options": [
+        "Don't play down the risk.",
+        "You play down the risk.",
+        "He doesn't play down the risk."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los alumnos pasaron por alto la última pregunta.",
+      "options": [
+        "The students overlook the last question.",
+        "The student overlooked the last question.",
+        "The students overlooked the last question."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Le restamos importancia a la crítica.",
+      "options": [
+        "We play down the criticism.",
+        "We played down the criticism.",
+        "They play down the criticism."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Tomás pasó por ___ el error.* (*alto* or *alta*) Tomás overlooked the mistake.",
+      "answer": "Tomás pasó por alto el error.",
+      "accept": [],
+      "why": "*Por alto* is fixed and never changes."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Le ___ importancia al asunto.* (*restó* or *pasó*) He played down the matter.",
+      "answer": "Le restó importancia al asunto.",
+      "accept": [],
+      "why": "To play something down is *restar importancia*."
+    },
+    {
+      "prompt": "Say: We can't overlook this figure.",
+      "answer": "No podemos pasar por alto este dato.",
+      "accept": [],
+      "why": "After *podemos*, *pasar* stays as it is."
+    },
+    {
+      "prompt": "Say to a friend: Why did you overlook the price?",
+      "answer": "¿Por qué pasaste por alto el precio?",
+      "accept": [],
+      "why": "*Pasaste* is the *tú* form of the past."
+    },
+    {
+      "prompt": "Say: Don Hernando plays everything down.",
+      "answer": "Don Hernando le resta importancia a todo.",
+      "accept": [],
+      "why": "*Le* goes before *resta*, and *a* introduces what is played down."
+    },
+    {
+      "prompt": "Make it about the past: *Vale le resta importancia a la crítica.*",
+      "answer": "Vale le restó importancia a la crítica.",
+      "accept": [],
+      "why": "*Restó* is the past of *resta*."
+    },
+    {
+      "prompt": "Make it negative, to a friend: *Le restas importancia al riesgo.*",
+      "answer": "No le restes importancia al riesgo.",
+      "accept": [],
+      "why": "A negative order to a friend changes *restas* to *restes*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Pasó por el alto el error.",
+      "right": "Pasó por alto el error.",
+      "why": "Almost. The phrase is fixed: *por alto*, with no *el* in the middle."
+    },
+    {
+      "wrong": "Restó importancia el asunto.",
+      "right": "Le restó importancia al asunto.",
+      "why": "Almost. Spanish needs *le* in front and *a* before the thing played down."
+    },
+    {
+      "wrong": "Pasamos por alto de la pregunta.",
+      "right": "Pasamos por alto la pregunta.",
+      "why": "Almost. English sometimes adds \"of\", but here the noun follows directly."
+    }
+  ],
+  "personal": "Think of something you tend to overlook, or to play down. Say it: *Suelo pasar por alto…* or *Le resto importancia a…*."
+}
