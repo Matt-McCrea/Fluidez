@@ -2,7 +2,7 @@
   "id": "ch030",
   "unit": "u12",
   "title": "Se fue la luz",
-  "text": "Llovía mucho en La Candelaria, y era el cumpleaños de don Hernando.\nHernando: Setenta y dos años, mija. ¿Y mi regalo?\nVale: Su regalo es una torta de chocolate. Y hoy no paga el tinto.\nHernando: Pero yo nunca pago el tinto.\nTomás puso en la mesa una foto del álbum de Rosa. En la foto, Rosa y Hernando eran jóvenes y bailaban tango.\nVale: ¿Y usted no bailaba tango, don Hernando?\nHernando miró la foto un largo rato y no dijo nada.\nA las nueve, Tomás cerraba la puerta y Vale contaba la plata del día. De repente, se fue la luz.\nTomás: ¿Cortaron la luz?\nHernando: Con este clima, siempre la cortan. Entonces, un cuento de cumpleaños.\nHernando: Una noche de lluvia, yo esperaba en mi taxi. De repente, subió una señora.\nVale: ¿Y qué pasó?\nHernando: La señora no habló en todo el viaje. Me pagó con un billete de 1950 y se fue.\nTomás: ¿En serio?\nHernando: En serio, mijo. Todavía tengo el billete.\nSimón: ¡A la orden! ¡A la orden, señor!\nVale: Simón, el café está cerrado.\nEntonces oyeron un ruido en el mostrador: un ladrillo, y otro ladrillo.\nTomás: Vale... el cuaderno de Rosa estaba en ese mostrador.\nSimón: ¡A la orden!",
+  "text": "Llovía mucho en La Candelaria, y era el cumpleaños de don Hernando.\nHernando: Setenta y dos años, mija. ¿Y mi regalo?\nVale: Su regalo es una torta de chocolate. Y hoy no paga el tinto.\nHernando: Pero yo nunca pago el tinto.\nTomás puso en la mesa una foto del álbum de Rosa. En la foto, Rosa y Hernando eran jóvenes y bailaban tango.\nHernando miró la foto un largo rato y no dijo nada.\nA las nueve, Tomás cerraba la puerta y Vale contaba la plata del día. De repente, se fue la luz.\nHernando: Con este clima, siempre la cortan. Bueno, un cuento de cumpleaños. Una noche de lluvia, yo esperaba en mi taxi. De repente, subió una señora.\nVale: ¿Y qué pasó?\nHernando: La señora no habló en todo el viaje. Me pagó con un billete de 1950 y se fue.\nTomás: ¿En serio?\nHernando: Todavía tengo el billete, mijo.\nSimón: ¡A la orden, señor!\nEntonces oyeron un ruido en el mostrador: un ladrillo, y otro ladrillo.\nTomás: Vale... el cuaderno de Rosa estaba en ese mostrador.",
   "gloss": [
     {
       "es": "mija",
@@ -29,10 +29,6 @@
       "en": "the power went out"
     },
     {
-      "es": "¿Cortaron la luz?",
-      "en": "Did they cut the power?"
-    },
-    {
       "es": "siempre la cortan",
       "en": "they always cut it"
     },
@@ -55,6 +51,10 @@
     {
       "es": "un ladrillo",
       "en": "a brick"
+    },
+    {
+      "es": "un cuento de cumpleaños",
+      "en": "a birthday story"
     }
   ],
   "questions": [
@@ -132,7 +132,7 @@
       "answer": 2
     },
     {
-      "q": "What does Simón keep shouting in the dark?",
+      "q": "What does Simón shout in the dark?",
       "options": [
         "¡A la orden!",
         "¡Feliz cumpleaños!",
@@ -144,8 +144,6 @@
   ],
   "requires": [
     "c:a-la-orden",
-    "c:abierto-cerrado",
-    "c:bien-y-tu",
     "c:de-repente",
     "c:en-serio",
     "c:entonces-bueno",
@@ -183,7 +181,7 @@
     "l:año",
     "l:bailar",
     "l:billete",
-    "l:café",
+    "l:bueno",
     "l:cerrar",
     "l:chocolate",
     "l:clima",
