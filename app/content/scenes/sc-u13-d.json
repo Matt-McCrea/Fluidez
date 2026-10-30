@@ -1,0 +1,234 @@
+{
+  "id": "sc-u13-d",
+  "unit": "u13",
+  "title": "Strawberries from the wrong market",
+  "brief": "You're Tomás. Vale needs strawberries by eleven, so you get on a buseta to the market at Paloquemao. Talk to the driver, a stranger, with usted; when Vale phones halfway there, switch to tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, joven. Suba, suba.",
+      "npcEn": "Good morning, young man. Get on, get on.",
+      "intent": "Greet him and ask if this buseta goes to Paloquemao.",
+      "accept": [
+        "Buenos días, señor. ¿Esta buseta va a Paloquemao?",
+        "Buenos días. ¿Va a Paloquemao, señor?",
+        "Señor, ¿la buseta va a Paloquemao?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question: ¿…?"
+        },
+        {
+          "type": "verbForm",
+          "inf": "ir",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "does it go: va"
+        }
+      ],
+      "focus": "p:ir-venir",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Sí, joven. Pero con este trancón, se demora una hora.",
+      "npcEn": "Yes, young man. But with this traffic jam, it takes an hour.",
+      "intent": "Say OK, and ask him to drop you at Calle 19, please.",
+      "accept": [
+        "Bueno. ¿Me deja en la calle 19, por favor?",
+        "Gracias, señor. ¿Me deja en la calle 19, por favor?",
+        "Está bien. Señor, ¿me deja en la 19, por favor?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "me deja",
+          "label": "will you drop me: ¿me deja…?"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b19\\b|diecinueve",
+          "flags": "i",
+          "label": "at Calle 19: en la calle 19"
+        }
+      ],
+      "focus": "c:me-deja-en",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Tomás, ¿dónde estás? Necesito las fresas a las once.",
+      "npcEn": "Vale: Tomás, where are you? I need the strawberries at eleven.",
+      "intent": "Vale is a friend: tell her to wait, you're going by buseta and it takes an hour.",
+      "accept": [
+        "Espera, Vale. Voy en buseta y se demora una hora.",
+        "Espera. Voy en buseta, y se demora una hora.",
+        "Vale, espera. Voy en buseta. Se demora una hora."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "esperar",
+          "tense": "imperativo",
+          "person": "tú",
+          "label": "wait (tú): espera"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "espere"
+          ],
+          "label": "Vale is a friend: espera, not espere"
+        }
+      ],
+      "focus": "g:commands-tu",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: ¿Paloquemao? ¡No, Tomás! Yo te dije la Perseverancia. Queda en la Séptima, cerca del café.",
+      "npcEn": "Vale: Paloquemao? No, Tomás! I told you la Perseverancia. It's on Séptima, near the café.",
+      "intent": "Say sorry, and that you'll tell him (the driver) right now.",
+      "accept": [
+        "Ay, perdón, Vale. Ya le digo.",
+        "Perdón. Ahora le digo.",
+        "Perdón, Vale. Le digo ahora mismo."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "le digo",
+          "label": "I'll tell him: le digo"
+        }
+      ],
+      "focus": "g:indirect-objects",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Conductor: ¿Joven? ¿Ya no se baja en la 19?",
+      "npcEn": "Driver: Young man? You're not getting off at 19 now?",
+      "intent": "Back to the driver, so usted again: tell him to wait, you're getting off here.",
+      "accept": [
+        "Espere, señor. Me bajo aquí.",
+        "Señor, espere, por favor. Me bajo aquí.",
+        "No, señor. Espere, me bajo aquí."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "esperar",
+          "tense": "imperativo",
+          "person": "usted",
+          "label": "wait (usted): espere"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "espera"
+          ],
+          "label": "the driver gets usted: espere, not espera"
+        }
+      ],
+      "focus": "x:commands-tu-usted",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Conductor: Bueno, joven. Aquí no hay parada, pero baje rápido. ¡Ojo! Hay muchos carros.",
+      "npcEn": "Driver: All right, young man. There's no stop here, but get off quickly. Careful! There are lots of cars.",
+      "intent": "Thank him, and say excuse me as you squeeze past the people at the door.",
+      "accept": [
+        "Gracias, señor. Con permiso.",
+        "Con permiso. Muchas gracias, señor.",
+        "Muchas gracias. Con permiso, con permiso."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "con permiso",
+          "label": "excuse me (getting past): con permiso"
+        }
+      ],
+      "focus": "c:con-permiso",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-deja-en",
+    "c:no-se",
+    "c:ojo",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:voy-vas",
+    "c:ya-no",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:aquí",
+    "l:bajar",
+    "l:bajarse",
+    "l:bien",
+    "l:bueno",
+    "l:buseta",
+    "l:café",
+    "l:calle",
+    "l:carro",
+    "l:cerca",
+    "l:conductor",
+    "l:decir",
+    "l:dejar",
+    "l:demora",
+    "l:día",
+    "l:dónde",
+    "l:esperar",
+    "l:estar",
+    "l:favor",
+    "l:fresa",
+    "l:hora",
+    "l:ir",
+    "l:joven",
+    "l:necesitar",
+    "l:ojo",
+    "l:parada",
+    "l:perdón",
+    "l:permiso",
+    "l:quedar",
+    "l:rápido",
+    "l:señor",
+    "l:subir",
+    "l:trancón",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:demonstratives-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:position-de",
+    "p:quantifiers-basic",
+    "p:quedar-cerca",
+    "p:request-ladder",
+    "p:street-names",
+    "p:subirse-bajarse",
+    "p:tardar-en",
+    "p:telling-time",
+    "p:transport-en"
+  ]
+}
