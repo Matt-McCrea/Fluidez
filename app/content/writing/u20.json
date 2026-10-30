@@ -827,5 +827,339 @@
       "p:senor-don-article",
       "p:tendrias-que"
     ]
+  },
+  {
+    "id": "w-u20-16",
+    "unit": "u20",
+    "prompt": "Your friend Camila was meant to meet you for lunch, but she is not answering her phone. Text your mutual friend Andrea: say Camila is late, guess why, and ask if she knows anything.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "haber",
+        "tense": "futuro",
+        "person": "él/ella",
+        "label": "guess with the future: habrá"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(supongo que|puede ser)\\b",
+        "label": "use supongo que or puede ser"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "Hola, Andrea. Camila no contesta el celular y ya es tarde para el almuerzo. Habrá mucho tráfico en la calle. Puede ser un problema con el carro. ¿Tú sabes algo?",
+    "focus": "g:future-conjecture",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:puede-ser",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "l:almuerzo",
+      "l:calle",
+      "l:carro",
+      "l:celular",
+      "l:contestar",
+      "l:poder",
+      "l:problema",
+      "l:saber",
+      "l:ser",
+      "l:tarde",
+      "l:tráfico",
+      "p:es-de-noche-tarde",
+      "p:indefinites-basic",
+      "p:para-inf",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
+    ]
+  },
+  {
+    "id": "w-u20-17",
+    "unit": "u20",
+    "prompt": "You and a friend see a big crowd outside the bank on your street. Text her your guesses: how many people there are, what is going on, and ask what she thinks.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "haber",
+        "tense": "futuro",
+        "person": "él/ella",
+        "label": "guess with the future: habrá"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(supongo que|puede ser)\\b",
+        "label": "use supongo que or puede ser"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "Oye, hay mucha gente en la calle de mi casa. Habrá un problema con el agua, o puede ser una fiesta de barrio. Supongo que es algo importante. ¿Qué piensas tú?",
+    "focus": "g:future-conjecture",
+    "requires": [
+      "c:hay",
+      "c:oiga-oye",
+      "c:puede-ser",
+      "c:supongo-que",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:imperfect-states",
+      "g:questions",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:agua",
+      "l:barrio",
+      "l:calle",
+      "l:casa",
+      "l:fiesta",
+      "l:gente",
+      "l:importante",
+      "l:oír",
+      "l:pensar",
+      "l:poder",
+      "l:problema",
+      "l:qué",
+      "l:ser",
+      "l:suponer",
+      "p:el-agua-fria",
+      "p:indefinites-basic",
+      "p:la-gente-singular",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u20-18",
+    "unit": "u20",
+    "prompt": "A new pen pal in Mexico asks about you. Write back: say what you do for work (no article after soy), one thing you like in general, and what you do on Sundays.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "avoidsAny",
+        "words": [
+          "soy un ",
+          "soy una ",
+          "es un ",
+          "es una "
+        ],
+        "label": "no un or una before the job"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(soy|trabajo como) (profesor|profesora|ingeniero|ingeniera|estudiante|cocinero|cocinera|médico|médica|cantante|periodista)\\b",
+        "label": "say your job with ser and no article"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bme (gusta|gustan) (el|la|los|las) \\w+",
+        "label": "use el, la, los or las after me gusta"
+      }
+    ],
+    "model": "Hola, Paula. Soy estudiante y trabajo en una cafetería. Me gusta el café con leche y no me gusta el frío. Los domingos juego al fútbol con mis amigos.",
+    "focus": "g:article-uses",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:me-gusta",
+      "c:trabajo-en",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:amigo",
+      "l:cafetería",
+      "l:café",
+      "l:domingo",
+      "l:estudiante",
+      "l:frío",
+      "l:fútbol",
+      "l:gustar",
+      "l:jugar",
+      "l:leche",
+      "l:ser",
+      "l:trabajar",
+      "p:con-sin",
+      "p:days-el-lunes",
+      "p:jugar-a",
+      "p:possessives-basic",
+      "p:ser-profession-no-article"
+    ]
+  },
+  {
+    "id": "w-u20-19",
+    "unit": "u20",
+    "prompt": "A coworker asks what your Mondays are like. Text a reply: when you get up, what you like about the morning, and what you do after work.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\blos lunes\\b",
+        "label": "say los lunes"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bme (gusta|gustan) (el|la|los|las) \\w+",
+        "label": "use el, la, los or las after me gusta"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bjuego al\\b",
+        "label": "play a sport with juego al"
+      }
+    ],
+    "model": "Los lunes me levanto a las seis. Es muy temprano, pero me gusta la mañana. Trabajo hasta las cinco y después juego al fútbol con unos amigos.",
+    "focus": "g:article-uses",
+    "requires": [
+      "c:me-gusta",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:amigo",
+      "l:después",
+      "l:fútbol",
+      "l:gustar",
+      "l:jugar",
+      "l:levantarse",
+      "l:lunes",
+      "l:mañana",
+      "l:ser",
+      "l:temprano",
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:es-de-noche-tarde",
+      "p:jugar-a",
+      "p:quantifiers-basic",
+      "p:telling-time",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u20-20",
+    "unit": "u20",
+    "prompt": "Your cousin wants to buy an old motorcycle that costs too much. Text him advice with yo que tú, saying what you would do instead, and why.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\byo que tú",
+        "label": "start your advice with yo que tú"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "condicional",
+        "label": "use a would form, like compraría"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tienes que",
+          "debes"
+        ],
+        "label": "yo que tú, not tienes que"
+      }
+    ],
+    "model": "Yo que tú, no compraría esa moto. Es muy cara y tiene muchos años. Esperaría un mes y buscaría otra más barata. Además, tú no la necesitas tanto.",
+    "focus": "g:conditional",
+    "requires": [
+      "c:ademas",
+      "c:tienes",
+      "c:yo-que-tu",
+      "g:adjective-agreement",
+      "g:conditional",
+      "g:demonstratives",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:además",
+      "l:año",
+      "l:barato",
+      "l:buscar",
+      "l:cara",
+      "l:comprar",
+      "l:esperar",
+      "l:mes",
+      "l:moto",
+      "l:necesitar",
+      "l:ser",
+      "l:tener",
+      "p:otro-no-article",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u20-21",
+    "unit": "u20",
+    "prompt": "Ask your boss, Señora Ruiz (you call her usted), for a day off on Friday because your brother arrives from Toronto. Offer to work Saturday instead, politely, starting with me gustaría.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "gustar",
+        "tense": "condicional",
+        "person": "él/ella",
+        "label": "say me gustaría"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tú",
+          "puedes",
+          "tienes",
+          "eres"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenos días, señora Ruiz. Me gustaría tener libre el viernes, porque mi hermano llega de Toronto. ¿Es posible trabajar el sábado en lugar del viernes? Muchas gracias.",
+    "focus": "g:conditional",
+    "requires": [
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "c:me-gustaria",
+      "c:porque",
+      "g:cause-result",
+      "g:conditional",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:bueno",
+      "l:día",
+      "l:gustar",
+      "l:hermano",
+      "l:libre",
+      "l:llegar",
+      "l:lugar",
+      "l:posible",
+      "l:ser",
+      "l:señora",
+      "l:sábado",
+      "l:tener",
+      "l:trabajar",
+      "l:viernes",
+      "p:days-el-lunes",
+      "p:es-adj-inf",
+      "p:possessives-basic",
+      "p:senor-don-article"
+    ]
   }
 ]
