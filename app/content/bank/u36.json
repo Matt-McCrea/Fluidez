@@ -124,8 +124,8 @@
   },
   {
     "id": "u36-0006",
-    "es": "¿Se buscan meseros con experiencia para el sábado?",
-    "en": "Are waiters with experience wanted for Saturday?",
+    "es": "¿Todavía se buscan meseros para el sábado?",
+    "en": "Are waiters still wanted for Saturday?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -133,12 +133,11 @@
       "g:passive-se",
       "g:present-ar",
       "l:buscar",
-      "l:experiencia",
       "l:mesero",
       "l:sábado",
-      "p:con-sin",
       "p:days-el-lunes",
-      "p:para-inf"
+      "p:para-inf",
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "g:passive-se"
@@ -150,24 +149,23 @@
   },
   {
     "id": "u36-0007",
-    "es": "¿Qué piden en el anuncio?\nSe necesita un representante para el sábado.",
-    "en": "What does the ad ask for?\nA representative is needed for Saturday.",
+    "es": "¿Qué dice el anuncio?\nSe busca un representante de ventas con experiencia.",
+    "en": "What does the ad say?\nA sales representative with experience is wanted.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:se-busca",
       "g:gender-articles",
-      "g:present-ar",
       "g:questions",
-      "g:se-impersonal",
       "g:stem-e-i",
       "l:anuncio",
-      "l:necesitar",
-      "l:pedir",
+      "l:buscar",
+      "l:decir",
+      "l:experiencia",
       "l:qué",
       "l:representante",
-      "l:sábado",
-      "p:days-el-lunes",
-      "p:para-inf"
+      "l:venta",
+      "p:con-sin"
     ],
     "targets": [
       "l:representante"
@@ -227,7 +225,7 @@
   {
     "id": "u36-0010",
     "es": "En esta mesa se sirvió el primer tinto de Rosa.",
-    "en": "The first black coffee of Rosa's was served at this table.",
+    "en": "Rosa's first black coffee was served at this table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -252,7 +250,7 @@
   {
     "id": "u36-0011",
     "es": "Los postres de Vale se preparan cada madrugada.",
-    "en": "Vale's desserts are made every early morning.",
+    "en": "Vale's desserts are made every morning before dawn.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1421,18 +1419,19 @@
   },
   {
     "id": "u36-0060",
-    "es": "¿De verdad se descansa los lunes en la cocina?",
-    "en": "Is it really true that the kitchen rests on Mondays?",
+    "es": "¿De verdad no se trabaja los lunes en la cocina?",
+    "en": "Is it true that nobody works in the kitchen on Mondays?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:en-serio",
+      "c:no-se",
       "g:gender-articles",
       "g:present-ar",
       "g:se-impersonal",
       "l:cocina",
-      "l:descansar",
       "l:lunes",
+      "l:trabajar",
       "l:verdad",
       "p:days-el-lunes"
     ],
@@ -1660,7 +1659,7 @@
   {
     "id": "u36-0070",
     "es": "Aquí no se fuma, pero afuera sí.",
-    "en": "There is no smoking here, but outside there is.",
+    "en": "You can't smoke in here, but you can outside.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1706,19 +1705,19 @@
   },
   {
     "id": "u36-0072",
-    "es": "Se cesaron las ventas del producto viejo.",
-    "en": "Sales of the old product were stopped.",
+    "es": "Cuando se cerraron las ventanas, cesó el ruido.",
+    "en": "When the windows were closed, the noise stopped.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:passive-se",
       "g:preterite-ar",
+      "l:cerrar",
       "l:cesar",
-      "l:producto",
-      "l:venta",
-      "l:viejo",
-      "p:viejo-antiguo-mayor"
+      "l:ruido",
+      "l:ventana",
+      "p:cuando-basic"
     ],
     "targets": [
       "g:passive-se",
@@ -1731,21 +1730,22 @@
   },
   {
     "id": "u36-0073",
-    "es": "¿Por qué pararon las obras?\nSe cesaron por orden del juez.",
-    "en": "Why did the works stop?\nThey were stopped by order of the judge.",
+    "es": "¿Por qué pararon las obras?\nSe recibió una carta del juez y las obras cesaron.",
+    "en": "Why did the works stop?\nA letter was received from the judge and the works stopped.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:passive-se",
-      "g:por-para-1",
       "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:carta",
       "l:cesar",
       "l:juez",
       "l:obra",
-      "l:orden",
       "l:parar",
       "l:qué",
+      "l:recibir",
       "p:prep-questions-basic"
     ],
     "targets": [
@@ -1803,20 +1803,19 @@
   },
   {
     "id": "u36-0076",
-    "es": "Tomás se hizo daño en la mano durante la mudanza.",
-    "en": "Tomás hurt his hand during the move.",
+    "es": "Tomás se cortó la mano durante la mudanza.",
+    "en": "Tomás cut his hand during the move.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:verbs-of-change",
-      "l:daño",
-      "l:hacerse",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:cortarse",
       "l:mano",
       "l:mudanza",
-      "p:caerse-lastimarse",
-      "p:durar-durante"
+      "p:durar-durante",
+      "p:lavarse-las-manos"
     ],
     "targets": [],
     "kind": "statement",
@@ -2322,18 +2321,19 @@
   },
   {
     "id": "u36-0098",
-    "es": "Se conserva el anillo de Rosa en una caja azul.",
-    "en": "Rosa's ring is kept in a blue box.",
+    "es": "Se conserva el anillo de Rosa en una caja roja.",
+    "en": "Rosa's ring is kept in a red box.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:present-ar",
       "g:reflexive-routine",
       "l:anillo",
-      "l:azul",
       "l:caja",
-      "l:conservarse"
+      "l:conservarse",
+      "l:rojo"
     ],
     "targets": [
       "l:anillo"
@@ -2487,19 +2487,23 @@
   },
   {
     "id": "u36-0105",
-    "es": "Se poseen muy pocos documentos del café.",
-    "en": "Very few documents of the café are held.",
+    "es": "Se descubrieron unos papeles nuevos: Rosa poseía también el terreno de atrás.",
+    "en": "Some new papers were discovered: Rosa also owned the plot at the back.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
+      "g:imperfect-habitual",
       "g:passive-se",
-      "g:present-er-ir",
-      "l:café",
-      "l:documento",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "l:atrás",
+      "l:descubrir",
+      "l:nuevo",
+      "l:papel",
       "l:poseer",
-      "p:poco-un-poco",
-      "p:quantifiers-basic"
+      "l:terreno"
     ],
     "targets": [
       "g:passive-se",
@@ -2680,8 +2684,10 @@
   {
     "id": "u36-0113",
     "es": "¿A cuánto está el kilo de papa hoy?",
-    "en": "What is a kilo of potatoes today?",
-    "accept": [],
+    "en": "What's a kilo of potatoes going for today?",
+    "accept": [
+      "¿A cómo está el kilo de papa hoy?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -2710,7 +2716,9 @@
     "id": "u36-0114",
     "es": "¿A cómo está el aguacate en la plaza?",
     "en": "How much are avocados at the market?",
-    "accept": [],
+    "accept": [
+      "¿A cuánto está el aguacate en la plaza?"
+    ],
     "acceptEn": [],
     "requires": [
       "c:a-como-esta",
@@ -2791,7 +2799,9 @@
     "id": "u36-0117",
     "es": "¿A cómo están las naranjas hoy?",
     "en": "How much are the oranges today?",
-    "accept": [],
+    "accept": [
+      "¿A cuánto están las naranjas hoy?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
@@ -2925,22 +2935,22 @@
   },
   {
     "id": "u36-0122",
-    "es": "¿A cuánto está el huevo?\nCada huevo está a quinientos pesos.",
-    "en": "How much is an egg?\nEach egg is five hundred pesos.",
+    "es": "¿A cuánto está la carne de res?\nEstá a veinte mil pesos el kilo.",
+    "en": "How much is beef?\nIt is twenty thousand pesos a kilo.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:cada-cualquier",
       "g:estar-location-states",
       "g:gender-articles",
+      "l:carne",
       "l:cuánto",
       "l:estar",
-      "l:huevo",
+      "l:kilo",
       "l:peso",
+      "l:r",
       "p:a-cuanto-esta",
       "p:estar-a",
       "p:estar-a-price",
-      "p:numbers-un-una",
       "p:prep-questions-basic"
     ],
     "targets": [
@@ -3222,8 +3232,8 @@
   },
   {
     "id": "u36-0133",
-    "es": "¿Cómo estaba el dólar ayer?\nEstaba a cuatro mil cien pesos.",
-    "en": "What was the dollar at yesterday?\nIt was four thousand one hundred pesos.",
+    "es": "¿A cómo estaba el dólar ayer?\nEstaba a cuatro mil cien pesos.",
+    "en": "What was the dollar at yesterday?\nIt was at four thousand one hundred pesos.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3231,7 +3241,6 @@
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
-      "g:questions",
       "l:ayer",
       "l:cómo",
       "l:dólar",
@@ -3241,7 +3250,7 @@
       "p:estar-a",
       "p:estar-a-price",
       "p:numbers-un-una",
-      "p:question-word-order"
+      "p:prep-questions-basic"
     ],
     "targets": [
       "p:a-cuanto-esta",
@@ -3927,7 +3936,7 @@
   },
   {
     "id": "u36-0160",
-    "es": "Tienen un diez por ciento de descuento los clientes de siempre.",
+    "es": "Los clientes de siempre tienen un diez por ciento de descuento.",
     "en": "Regular customers get ten percent off.",
     "accept": [],
     "acceptEn": [],
@@ -3978,17 +3987,21 @@
   },
   {
     "id": "u36-0162",
-    "es": "Con este cheque tiene cinco por ciento de descuento.",
-    "en": "With this cheque you get five percent off.",
+    "es": "Si paga en efectivo, tiene un cinco por ciento de descuento; con cheque, no.",
+    "en": "If you pay cash, you get five percent off; with a cheque, you don't.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:si-present",
       "g:stem-boot",
       "l:cheque",
       "l:descuento",
+      "l:efectivo",
+      "l:pagar",
       "l:tener",
-      "p:demonstratives-basic",
       "p:en-oferta",
       "p:por-ciento"
     ],
@@ -4249,8 +4262,8 @@
   },
   {
     "id": "u36-0173",
-    "es": "Se agotó la paciencia de los vecinos con el banco.",
-    "en": "The neighbours ran out of patience with the bank.",
+    "es": "Se agotó la paciencia de los vecinos con Altamira.",
+    "en": "The neighbours ran out of patience with Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4258,7 +4271,6 @@
       "g:preterite-ar",
       "g:reflexive-routine",
       "l:agotarse",
-      "l:banco",
       "l:paciencia",
       "l:vecino",
       "p:agotarse"
@@ -4401,18 +4413,19 @@
   },
   {
     "id": "u36-0179",
-    "es": "Se agotaron las ganas de discutir.",
-    "en": "The will to argue ran out.",
+    "es": "Se me agotaron las ganas de discutir.",
+    "en": "I ran out of the will to argue.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "g:reflexive-routine",
+      "g:se-accidental",
       "l:agotarse",
       "l:discutir",
       "l:ganas",
-      "p:agotarse"
+      "p:agotarse",
+      "p:pasar-hambre-frio"
     ],
     "targets": [
       "p:agotarse"
@@ -4424,19 +4437,19 @@
   },
   {
     "id": "u36-0180",
-    "es": "Se agotó el crédito en mi celular.",
-    "en": "The credit on my phone ran out.",
+    "es": "Se me agotaron los datos del celular.",
+    "en": "I ran out of data on my phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "g:reflexive-routine",
+      "g:se-accidental",
       "l:agotarse",
       "l:celular",
-      "l:crédito",
+      "l:dato",
       "p:agotarse",
-      "p:possessives-basic"
+      "p:pasar-hambre-frio"
     ],
     "targets": [
       "p:agotarse"
@@ -4448,7 +4461,7 @@
   },
   {
     "id": "u36-0181",
-    "es": "Está agotado el pan de queso hoy.",
+    "es": "Hoy el pan de queso está agotado.",
     "en": "The cheese bread is sold out today.",
     "accept": [],
     "acceptEn": [],
@@ -4844,19 +4857,17 @@
   },
   {
     "id": "u36-0197",
-    "es": "Hubo una subida de los precios después de la lluvia.",
-    "en": "There was a rise in prices after the rain.",
+    "es": "Hubo una subida de los precios en enero.",
+    "en": "There was a rise in prices in January.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-states",
-      "l:después",
-      "l:lluvia",
+      "l:enero",
       "l:precio",
       "l:subir",
-      "p:subir-subida",
-      "p:time-sequence-basic"
+      "p:subir-subida"
     ],
     "targets": [
       "p:subir-subida"
@@ -5552,15 +5563,19 @@
   },
   {
     "id": "u36-0226",
-    "es": "La industria crece en La Candelaria.",
-    "en": "Industry is growing in La Candelaria.",
+    "es": "La industria del café crece otra vez en el país.",
+    "en": "The coffee industry is growing again in the country.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
+      "l:café",
       "l:crecer",
-      "l:industria"
+      "l:industria",
+      "l:país",
+      "l:vez",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:industria"
@@ -5596,8 +5611,8 @@
   },
   {
     "id": "u36-0228",
-    "es": "Mi ahorro del mes alcanza para una mesa nueva.",
-    "en": "My savings for the month are enough for a new table.",
+    "es": "El ahorro del mes alcanza para una mesa nueva.",
+    "en": "This month's savings are enough for a new table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5609,8 +5624,7 @@
       "l:mes",
       "l:mesa",
       "l:nuevo",
-      "p:para-inf",
-      "p:possessives-basic"
+      "p:para-inf"
     ],
     "targets": [
       "l:ahorro"
@@ -6230,19 +6244,19 @@
   },
   {
     "id": "u36-0250",
-    "es": "Se pagaron más de tres cuotas, de modo que la cuenta quedó en cero.",
-    "en": "More than three instalments were paid, so the account was left at zero.",
+    "es": "Se pagaron más de diez cuotas, de modo que la deuda quedó en cero.",
+    "en": "More than ten instalments were paid, so the debt came down to zero.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-cuenta",
       "g:comparatives-advanced",
       "g:consequence-connectors",
+      "g:gender-articles",
       "g:passive-se",
       "g:preterite-ar",
       "l:cero",
-      "l:cuenta",
       "l:cuota",
+      "l:deuda",
       "l:modo",
       "l:pagar",
       "l:quedar",
@@ -6477,8 +6491,8 @@
   },
   {
     "id": "u36-0258",
-    "es": "El arriendo subió en un veinte por ciento, de manera que hubo que subir el menú.",
-    "en": "The rent went up by twenty percent, so the menu had to go up.",
+    "es": "El arriendo subió en un veinte por ciento, de manera que hubo que subir los precios del menú.",
+    "en": "The rent went up by twenty percent, so the menu prices had to go up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6490,6 +6504,7 @@
       "l:arriendo",
       "l:manera",
       "l:menú",
+      "l:precio",
       "l:subir",
       "p:por-ciento",
       "p:subir-subida"
@@ -7013,27 +7028,24 @@
   },
   {
     "id": "u36-0276",
-    "es": "No tengo cambio; por lo tanto, le voy a pedir que pague con tarjeta.",
-    "en": "I have no change; therefore, I am going to ask you to pay by card.",
+    "es": "No tengo cambio; por lo tanto, prefiero que pague con tarjeta.",
+    "en": "I don't have change; therefore, I'd rather you pay by card.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tarjeta-o-efectivo",
       "c:tengo",
-      "c:voy-a",
       "g:consequence-connectors",
-      "g:indirect-objects",
-      "g:ir-a-plans",
-      "g:subj-influence",
+      "g:stem-boot",
       "g:subj-wanting",
       "g:that-clauses",
       "g:yo-irregular",
       "l:cambio",
-      "l:ir",
       "l:pagar",
-      "l:pedir",
+      "l:preferir",
       "l:tarjeta",
-      "l:tener"
+      "l:tener",
+      "p:preferir-a"
     ],
     "targets": [
       "g:consequence-connectors"
@@ -7159,26 +7171,24 @@
   },
   {
     "id": "u36-0281",
-    "es": "No cuentes conmigo el sábado, de modo que busca a otra persona.",
-    "en": "Don't count on me on Saturday, so look for someone else. (to a friend)",
+    "es": "No puedo el sábado, de modo que no cuentes conmigo.",
+    "en": "I can't on Saturday, so don't count on me. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:puedo",
       "g:consequence-connectors",
       "g:gender-articles",
-      "g:negative-commands",
+      "g:para-que",
       "g:prep-pronouns",
-      "g:present-ar",
-      "l:buscar",
+      "g:stem-boot",
+      "g:subj-wanting",
       "l:contar",
       "l:modo",
-      "l:persona",
+      "l:poder",
       "l:sábado",
       "p:contar-con",
-      "p:contar-dos-sentidos",
-      "p:days-el-lunes",
-      "p:otro-no-article",
-      "p:personal-a"
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:consequence-connectors",
@@ -7281,25 +7291,27 @@
   },
   {
     "id": "u36-0285",
-    "es": "¿Qué pasó con el premio?\nEl campeón se negó a firmar, por lo tanto el partido se cerró sin premio.",
-    "en": "What happened with the prize?\nThe champion refused to sign, so the match ended with no prize.",
+    "es": "¿Qué pasó con el premio?\nEl campeón se negó a recibirlo, de modo que se quedó en la mesa.",
+    "en": "What happened with the prize?\nThe champion refused to accept it, so it stayed on the table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:consequence-connectors",
+      "g:direct-objects",
       "g:gender-articles",
+      "g:object-pronoun-position",
       "g:preterite-ar",
       "g:questions",
       "g:reflexive-routine",
-      "g:se-impersonal",
       "l:campeón",
-      "l:cerrar",
-      "l:firmar",
+      "l:mesa",
+      "l:modo",
       "l:negarse",
-      "l:partido",
       "l:pasar",
       "l:premio",
-      "l:qué"
+      "l:quedarse",
+      "l:qué",
+      "l:recibir"
     ],
     "targets": [
       "g:consequence-connectors",
@@ -7401,22 +7413,21 @@
   },
   {
     "id": "u36-0289",
-    "es": "Perdí la letra de la canción, de manera que canté con la boca cerrada.",
-    "en": "I lost the lyrics of the song, so I sang with my mouth closed.",
+    "es": "Olvidé la letra de la canción, de manera que canté con la boca cerrada.",
+    "en": "I forgot the lyrics of the song, so I sang with my mouth closed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:consequence-connectors",
       "g:gender-articles",
       "g:preterite-ar",
-      "g:preterite-er-ir",
       "l:boca",
       "l:canción",
       "l:cantar",
       "l:cerrar",
       "l:letra",
       "l:manera",
-      "l:perder"
+      "l:olvidar"
     ],
     "targets": [
       "g:consequence-connectors",
@@ -7657,17 +7668,15 @@
   },
   {
     "id": "u36-0298",
-    "es": "Hay que aguantar la presión, de modo que el café sigue abierto.",
-    "en": "We have to put up with the pressure, so the café is still open.",
+    "es": "El café aguantó la presión, de modo que sigue abierto.",
+    "en": "The café held out against the pressure, so it is still open.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "c:hay-que",
       "g:consequence-connectors",
       "g:gender-articles",
+      "g:preterite-ar",
       "g:stem-e-i",
-      "g:verb-infinitive",
       "l:abrir",
       "l:aguantar",
       "l:café",
@@ -7687,25 +7696,25 @@
   },
   {
     "id": "u36-0299",
-    "es": "Hay que aguantar el ruido de las obras, de manera que cierren las ventanas.",
-    "en": "You have to put up with the noise of the works, so close the windows. (you all)",
+    "es": "Ya no aguantamos el ruido de las obras, de manera que cerramos las ventanas.",
+    "en": "We can't stand the noise from the works any more, so we closed the windows.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "c:hay-que",
+      "c:ya-no",
       "g:consequence-connectors",
       "g:gender-articles",
-      "g:para-que",
-      "g:subj-wanting",
-      "g:verb-infinitive",
+      "g:present-ar",
       "l:aguantar",
       "l:cerrar",
       "l:manera",
       "l:obra",
       "l:ruido",
       "l:ventana",
-      "p:aguantar-conservar-la-calma"
+      "p:aguantar-conservar-la-calma",
+      "p:no-soportar-que",
+      "p:no-soporto-que",
+      "p:sobrevivir-a"
     ],
     "targets": [
       "g:consequence-connectors",
@@ -7718,19 +7727,22 @@
   },
   {
     "id": "u36-0300",
-    "es": "Hubo mucha paciencia en la fila, por lo tanto nadie se quejó.",
-    "en": "There was a lot of patience in the queue, so nobody complained.",
+    "es": "La gente tuvo mucha paciencia en la fila, por lo tanto nadie se quejó.",
+    "en": "People were very patient in the queue, so nobody complained.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:consequence-connectors",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "g:reflexive-routine",
       "l:fila",
+      "l:gente",
       "l:paciencia",
       "l:quejarse",
+      "l:tener",
+      "p:la-gente-singular",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -7779,8 +7791,8 @@
   },
   {
     "id": "u36-0302",
-    "es": "¿Cómo pagaron al abogado?\nVendimos el anillo, de manera que pagamos la primera cuota.",
-    "en": "How did you pay the lawyer?\nWe sold the ring, so we paid the first instalment.",
+    "es": "¿Vendieron el anillo?\nNo, es de Rosa, de manera que se quedó en su caja.",
+    "en": "Did you sell the ring?\nNo, it's Rosa's, so it stayed in its box.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7788,17 +7800,15 @@
       "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-er-ir",
-      "g:questions",
-      "l:abogado",
+      "g:reflexive-routine",
+      "g:ser-identity",
       "l:anillo",
-      "l:cuota",
-      "l:cómo",
+      "l:caja",
       "l:manera",
-      "l:pagar",
+      "l:quedarse",
+      "l:ser",
       "l:vender",
-      "p:ordinal-floor",
-      "p:ordinals-primer-tercer",
-      "p:question-word-order"
+      "p:possessives-basic"
     ],
     "targets": [
       "g:consequence-connectors",
@@ -8015,19 +8025,19 @@
   },
   {
     "id": "u36-0310",
-    "es": "Compramos por kilos, de modo que se pagó menos.",
-    "en": "We bought by the kilo, so less was paid.",
+    "es": "Compramos la harina por saco, de modo que pagamos menos.",
+    "en": "We bought the flour by the sack, so we paid less.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:consequence-connectors",
+      "g:gender-articles",
       "g:present-ar",
-      "g:preterite-ar",
-      "g:se-impersonal",
       "l:comprar",
-      "l:kilo",
+      "l:harina",
       "l:modo",
       "l:pagar",
+      "l:saco",
       "p:costar-pagar"
     ],
     "targets": [
@@ -8186,8 +8196,8 @@
   },
   {
     "id": "u36-0316",
-    "es": "La inflación fue más alta de lo que esperábamos, de modo que hubo que subir la comida.",
-    "en": "Inflation was higher than we expected, so food had to go up.",
+    "es": "La inflación fue más alta de lo que esperábamos, de modo que hubo que subir los precios de la comida.",
+    "en": "Inflation was higher than we expected, so food prices had to go up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8207,9 +8217,11 @@
       "l:esperar",
       "l:inflación",
       "l:modo",
+      "l:precio",
       "l:ser",
       "l:subir",
-      "p:es-tiene-lleva"
+      "p:es-tiene-lleva",
+      "p:subir-subida"
     ],
     "targets": [
       "g:consequence-connectors",
@@ -8335,19 +8347,22 @@
   },
   {
     "id": "u36-0321",
-    "es": "La industria creció, de modo que subieron los hoteles.",
-    "en": "Industry grew, so hotels went up.",
+    "es": "La industria de los hoteles creció mucho, de modo que el barrio cambió.",
+    "en": "The hotel industry grew a lot, so the neighbourhood changed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:consequence-connectors",
       "g:gender-articles",
+      "g:preterite-ar",
       "g:preterite-er-ir",
+      "l:barrio",
+      "l:cambiar",
       "l:crecer",
       "l:hotel",
       "l:industria",
       "l:modo",
-      "l:subir"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:consequence-connectors",
@@ -8360,8 +8375,8 @@
   },
   {
     "id": "u36-0322",
-    "es": "Está hecho el trato, de modo que ya podemos irnos.",
-    "en": "The deal is done, so we can go now.",
+    "es": "El trato ya está hecho, de modo que podemos irnos.",
+    "en": "The deal is done now, so we can go.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8387,8 +8402,8 @@
   },
   {
     "id": "u36-0323",
-    "es": "Está hecho el trato, por lo tanto brindamos.",
-    "en": "The deal is done, so we raise a glass.",
+    "es": "El trato está hecho; por lo tanto, esta noche brindamos.",
+    "en": "The deal is done; therefore, tonight we're having a toast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8399,7 +8414,9 @@
       "l:brindar",
       "l:estar",
       "l:hacer",
-      "l:trato"
+      "l:noche",
+      "l:trato",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:consequence-connectors"
@@ -8411,13 +8428,11 @@
   },
   {
     "id": "u36-0324",
-    "es": "¿Por qué cerraron temprano?\nPorque se agotó todo, de modo que no había nada que vender.",
-    "en": "Why did they close early?\nBecause everything sold out, so there was nothing to sell.",
+    "es": "¿Por qué cerraron temprano?\nSe agotó todo, de modo que no había nada que vender.",
+    "en": "Why did they close early?\nEverything sold out, so there was nothing to sell.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:porque",
-      "g:cause-result",
       "g:consequence-connectors",
       "g:imperfect-states",
       "g:negation-words",
@@ -9163,7 +9178,7 @@
   {
     "id": "u36-0351",
     "es": "La deuda crece cada vez más.",
-    "en": "The debt keeps growing.",
+    "en": "The debt grows more and more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9185,20 +9200,19 @@
   },
   {
     "id": "u36-0352",
-    "es": "La economía del barrio es cada vez más pequeña.",
-    "en": "The neighbourhood economy is getting smaller and smaller.",
+    "es": "La economía del barrio depende cada vez más de los turistas.",
+    "en": "The neighbourhood's economy depends more and more on tourists.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
+      "c:depende",
       "g:cada-cualquier",
       "g:comparatives-advanced",
       "g:gender-articles",
-      "g:ser-identity",
       "l:barrio",
+      "l:depender",
       "l:economía",
-      "l:pequeño",
-      "l:ser",
+      "l:turista",
       "l:vez"
     ],
     "targets": [
@@ -9362,7 +9376,7 @@
   {
     "id": "u36-0359",
     "es": "El café está cada vez más lleno.",
-    "en": "The café is fuller and fuller.",
+    "en": "The café gets fuller and fuller.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10474,20 +10488,22 @@
   },
   {
     "id": "u36-0404",
-    "es": "Se necesitan más de dos manos para esta mudanza.",
-    "en": "More than two hands are needed for this move.",
+    "es": "Se necesitan más de dos personas para subir esta nevera.",
+    "en": "More than two people are needed to carry this fridge upstairs.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives-advanced",
       "g:passive-se",
       "g:present-ar",
-      "l:mano",
-      "l:mudanza",
       "l:necesitar",
+      "l:nevera",
+      "l:persona",
+      "l:subir",
       "p:demonstratives-basic",
       "p:mas-de-number",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "g:comparatives-advanced",
@@ -10601,20 +10617,17 @@
   },
   {
     "id": "u36-0409",
-    "es": "¿Cuánto cuesta el arriendo?\nMás de dos millones.",
-    "en": "How much is the rent?\nMore than two million.",
+    "es": "¿Encontraste apartamento?\nNo, nada por menos de dos millones.",
+    "en": "Did you find an apartment?\nNo, nothing for less than two million.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:cuanto-cuesta",
       "g:comparatives-advanced",
-      "g:gender-articles",
-      "g:questions",
-      "l:arriendo",
-      "l:costar",
-      "l:cuánto",
-      "p:mas-de-number",
-      "p:question-word-order"
+      "g:por-para-1",
+      "g:preterite-ar",
+      "l:apartamento",
+      "l:encontrar",
+      "p:mas-de-number"
     ],
     "targets": [
       "g:comparatives-advanced"
@@ -10698,18 +10711,25 @@
   },
   {
     "id": "u36-0413",
-    "es": "¿Cuántas personas firmaron?\nMás de mil doscientas.",
-    "en": "How many people signed?\nMore than one thousand two hundred.",
+    "es": "¿Cuánto pesa el saco de harina?\nMás de cincuenta kilos.",
+    "en": "How much does the sack of flour weigh?\nMore than fifty kilos.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives-advanced",
-      "g:preterite-ar",
+      "g:gender-articles",
+      "g:present-ar",
       "g:questions",
       "l:cuánto",
-      "l:firmar",
-      "l:persona",
-      "p:mas-de-number"
+      "l:harina",
+      "l:kilo",
+      "l:pesar",
+      "l:saco",
+      "p:mas-de-number",
+      "p:medir-pesar",
+      "p:medir-pesar-caber",
+      "p:pesar-pesarse",
+      "p:question-word-order"
     ],
     "targets": [
       "g:comparatives-advanced"
@@ -10817,8 +10837,8 @@
   },
   {
     "id": "u36-0418",
-    "es": "¿Cuántos postres vendiste? ¿Más de cien?",
-    "en": "How many desserts did you sell? More than a hundred?",
+    "es": "¿Cuántas horas dormiste? ¿Menos de cinco?",
+    "en": "How many hours did you sleep? Fewer than five?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10826,10 +10846,9 @@
       "g:preterite-er-ir",
       "g:questions",
       "l:cuánto",
-      "l:postre",
-      "l:vender",
-      "p:mas-de-number",
-      "p:numbers-un-una"
+      "l:dormir",
+      "l:hora",
+      "p:mas-de-number"
     ],
     "targets": [
       "g:comparatives-advanced"
@@ -10892,7 +10911,7 @@
   {
     "id": "u36-0421",
     "es": "¿De verdad hay más de mil donaciones?",
-    "en": "Really, are there more than a thousand donations?",
+    "en": "Are there really more than a thousand donations?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10958,17 +10977,19 @@
   },
   {
     "id": "u36-0424",
-    "es": "¿Ganó más de tres mil votos el campeón?",
-    "en": "Did the champion win more than three thousand votes?",
+    "es": "¿Ganó el campeón más de diez partidos este año?",
+    "en": "Did the champion win more than ten matches this year?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives-advanced",
       "g:gender-articles",
       "g:preterite-ar",
+      "l:año",
       "l:campeón",
       "l:ganar",
-      "l:voto",
+      "l:partido",
+      "p:demonstratives-basic",
       "p:mas-de-number"
     ],
     "targets": [
@@ -11071,18 +11092,20 @@
   },
   {
     "id": "u36-0429",
-    "es": "El arriendo es tan caro como en un hotel.",
-    "en": "The rent is as expensive as in a hotel.",
+    "es": "El arriendo aquí es tan caro como en el norte.",
+    "en": "The rent here is as expensive as in the north.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
       "g:gender-articles",
       "g:ser-identity",
+      "l:aquí",
       "l:arriendo",
       "l:caro",
-      "l:hotel",
-      "l:ser"
+      "l:norte",
+      "l:ser",
+      "p:aqui-ahi-alla"
     ],
     "targets": [],
     "kind": "statement",
@@ -11183,22 +11206,17 @@
   },
   {
     "id": "u36-0434",
-    "es": "Las ventas de hoy son peores que ayer.",
-    "en": "Today's sales are worse than yesterday's.",
+    "es": "Hoy vendimos menos que ayer.",
+    "en": "Today we sold less than yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
-      "g:adjective-agreement",
       "g:comparatives",
-      "g:gender-articles",
-      "g:ser-identity",
-      "g:that-clauses",
+      "g:preterite-er-ir",
       "l:ayer",
       "l:hoy",
-      "l:peor",
-      "l:ser",
-      "l:venta"
+      "l:vender"
     ],
     "targets": [],
     "kind": "statement",
@@ -11258,16 +11276,17 @@
   },
   {
     "id": "u36-0437",
-    "es": "Cuesta mucho más caro vivir en el centro.",
-    "en": "It is much more expensive to live downtown.",
+    "es": "Vivir en el centro sale mucho más caro.",
+    "en": "Living downtown works out much more expensive.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:stem-boot",
+      "g:present-er-ir",
+      "g:verb-infinitive",
       "l:caro",
       "l:centro",
-      "l:costar",
+      "l:salir",
       "l:vivir",
       "p:quantifiers-basic"
     ],
@@ -11279,18 +11298,15 @@
   },
   {
     "id": "u36-0438",
-    "es": "Mi sueldo es mucho menor que el sueldo de mi hermano.",
-    "en": "My salary is much lower than my brother's salary.",
+    "es": "Gano mucho menos que mi hermano.",
+    "en": "I earn much less than my brother.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
-      "g:gender-articles",
-      "g:ser-identity",
+      "g:present-ar",
+      "l:ganar",
       "l:hermano",
-      "l:menor",
-      "l:ser",
-      "l:sueldo",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -11372,20 +11388,19 @@
   },
   {
     "id": "u36-0442",
-    "es": "Esta ruta es más corta que la ruta de ayer.",
-    "en": "This route is shorter than yesterday's route.",
+    "es": "Por esta ruta llegamos más rápido que ayer.",
+    "en": "By this route we get there faster than yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
-      "g:adjective-agreement",
       "g:comparatives",
-      "g:gender-articles",
-      "g:ser-identity",
+      "g:por-para-1",
+      "g:preterite-ar",
       "l:ayer",
-      "l:corto",
+      "l:llegar",
       "l:ruta",
-      "l:ser",
+      "l:rápido",
       "p:demonstratives-basic"
     ],
     "targets": [],
@@ -11396,18 +11411,18 @@
   },
   {
     "id": "u36-0443",
-    "es": "El pan de Vale es más dulce que el pan de la competencia.",
-    "en": "Vale's bread is sweeter than the competition's bread.",
+    "es": "Nadie en el barrio hace un pan más dulce que Vale.",
+    "en": "Nobody in the neighbourhood makes sweeter bread than Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:competencia",
+      "g:present-er-ir",
+      "l:barrio",
       "l:dulce",
-      "l:pan",
-      "l:ser"
+      "l:hacer",
+      "l:pan"
     ],
     "targets": [],
     "kind": "statement",
@@ -11417,8 +11432,8 @@
   },
   {
     "id": "u36-0444",
-    "es": "La compra de hoy costó menos que la compra de ayer.",
-    "en": "Today's shopping cost less than yesterday's.",
+    "es": "Hoy la compra costó menos que ayer.",
+    "en": "Today the shopping cost less than yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11561,19 +11576,19 @@
   },
   {
     "id": "u36-0450",
-    "es": "La mitad de la gente paga menos que ayer.",
-    "en": "Half the people pay less than yesterday.",
+    "es": "Hoy la mitad de la gente pagó con tarjeta.",
+    "en": "Today half the people paid by card.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
-      "g:comparatives",
+      "c:tarjeta-o-efectivo",
       "g:gender-articles",
-      "g:present-ar",
-      "l:ayer",
+      "g:preterite-ar",
       "l:gente",
+      "l:hoy",
       "l:mitad",
       "l:pagar",
+      "l:tarjeta",
       "p:fracciones-de",
       "p:la-gente-singular"
     ],
@@ -11587,22 +11602,17 @@
   },
   {
     "id": "u36-0451",
-    "es": "Nuestras ventas son cada vez más grandes que las ventas de la competencia.",
-    "en": "Our sales are bigger and bigger than the competition's sales.",
+    "es": "Vendemos cada vez más, y la competencia cada vez menos.",
+    "en": "We're selling more and more, and the competition less and less.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:cada-cualquier",
-      "g:comparatives",
       "g:comparatives-advanced",
       "g:gender-articles",
-      "g:possessives",
-      "g:ser-identity",
+      "g:present-er-ir",
       "l:competencia",
-      "l:grande",
-      "l:ser",
-      "l:venta",
+      "l:vender",
       "l:vez"
     ],
     "targets": [
@@ -11640,16 +11650,18 @@
   },
   {
     "id": "u36-0453",
-    "es": "Cada vez más tiendas aceptan cheques.",
-    "en": "More and more shops accept cheques.",
+    "es": "Cada vez más tiendas dicen que no a los cheques.",
+    "en": "More and more shops say no to cheques.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
+      "g:comparatives",
       "g:comparatives-advanced",
-      "g:present-ar",
-      "l:aceptar",
+      "g:gender-articles",
+      "g:stem-e-i",
       "l:cheque",
+      "l:decir",
       "l:tienda",
       "l:vez"
     ],
@@ -11718,17 +11730,22 @@
   },
   {
     "id": "u36-0456",
-    "es": "Con cada vez más ventas, Tomás cuenta contigo para el segundo turno.",
-    "en": "With more and more sales, Tomás is counting on you for the second shift.",
+    "es": "Hay cada vez más ventas, de modo que Tomás cuenta contigo para el segundo turno.",
+    "en": "There are more and more sales, so Tomás is counting on you for the second shift.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:cada-cualquier",
+      "g:comparatives",
       "g:comparatives-advanced",
+      "g:consequence-connectors",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:prep-pronouns",
       "g:stem-boot",
       "l:contar",
+      "l:modo",
       "l:turno",
       "l:venta",
       "l:vez",
@@ -12007,8 +12024,8 @@
   },
   {
     "id": "u36-0467",
-    "es": "¿Vuelve la gran mayoría de los clientes a la semana siguiente?",
-    "en": "Does the great majority of customers come back the following week?",
+    "es": "¿La gran mayoría de los clientes vuelve?",
+    "en": "Do the great majority of customers come back?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12017,10 +12034,7 @@
       "l:cliente",
       "l:gran",
       "l:mayoría",
-      "l:semana",
-      "l:siguiente",
       "l:volver",
-      "p:dentro-de-vs-despues",
       "p:la-mayoria-de"
     ],
     "targets": [
@@ -12033,14 +12047,13 @@
   },
   {
     "id": "u36-0468",
-    "es": "La gran mayoría de la plata viene de las ventas de la mañana.",
-    "en": "The great majority of the money comes from morning sales.",
+    "es": "La mayoría de la plata viene de las ventas de la mañana.",
+    "en": "Most of the money comes from morning sales.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:gran",
       "l:mayoría",
       "l:mañana",
       "l:plata",
@@ -12515,21 +12528,21 @@
   },
   {
     "id": "u36-0486",
-    "es": "La mayoría de los carros tiene el tanque lleno.",
-    "en": "Most of the cars have a full tank.",
-    "accept": [],
+    "es": "La mayoría de los turistas pregunta por Simón.",
+    "en": "Most of the tourists ask about Simón.",
+    "accept": [
+      "La mayoría de los turistas preguntan por Simón."
+    ],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:carro",
-      "l:lleno",
+      "g:por-para-1",
+      "g:present-ar",
       "l:mayoría",
-      "l:tanque",
-      "l:tener",
+      "l:preguntar",
+      "l:turista",
       "p:la-mayoria-de",
-      "p:lleno-libre"
+      "p:preguntar-pedir"
     ],
     "targets": [
       "p:la-mayoria-de"
@@ -12803,8 +12816,8 @@
   },
   {
     "id": "u36-0498",
-    "es": "Una mitad del café es cocina y la otra es salón.",
-    "en": "One half of the café is kitchen and the other is dining room.",
+    "es": "La mitad del café es cocina y la otra mitad es salón.",
+    "en": "Half the café is kitchen and the other half is dining room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12852,8 +12865,8 @@
   },
   {
     "id": "u36-0500",
-    "es": "Vale probó la mitad del postre antes de abrir.",
-    "en": "Vale tasted half the dessert before opening.",
+    "es": "Tomás probó la mitad del postre antes de abrir.",
+    "en": "Tomás tasted half the dessert before opening.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12929,17 +12942,18 @@
   },
   {
     "id": "u36-0503",
-    "es": "Un cuarto de la plata es de postres.",
-    "en": "A quarter of the money is from desserts.",
+    "es": "Un cuarto de la plata viene de los postres.",
+    "en": "A quarter of the money comes from desserts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
       "l:plata",
       "l:postre",
-      "l:ser",
+      "l:venir",
       "p:fracciones-de",
+      "p:ir-a-venir-de-place",
       "p:por-ciento"
     ],
     "targets": [
@@ -13049,16 +13063,17 @@
   },
   {
     "id": "u36-0508",
-    "es": "Una cuarta parte del café es de Vale.",
-    "en": "A quarter of the café is Vale's.",
+    "es": "Una cuarta parte de las mesas está en la terraza.",
+    "en": "A quarter of the tables are on the terrace.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:café",
+      "l:estar",
+      "l:mesa",
       "l:parte",
-      "l:ser",
+      "l:terraza",
       "p:fracciones-de",
       "p:ordinal-floor",
       "p:ordinals-primer-tercer"
@@ -13073,21 +13088,22 @@
   },
   {
     "id": "u36-0509",
-    "es": "La cuarta parte del ahorro se perdió en el cheque.",
-    "en": "A quarter of the savings was lost on the cheque.",
+    "es": "La cuarta parte del ahorro se fue en un cheque para el abogado.",
+    "en": "A quarter of the savings went on a cheque for the lawyer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
-      "g:reflexive-routine",
+      "g:preterite-ser-ir-hacer",
+      "l:abogado",
       "l:ahorro",
       "l:cheque",
+      "l:irse",
       "l:parte",
-      "l:perderse",
       "p:fracciones-de",
       "p:ordinal-floor",
-      "p:ordinals-primer-tercer"
+      "p:ordinals-primer-tercer",
+      "p:para-inf"
     ],
     "targets": [
       "l:ahorro",
@@ -13257,8 +13273,8 @@
   },
   {
     "id": "u36-0516",
-    "es": "¿Cuánto costó la nevera?\nCuesta más de lo que pensábamos.",
-    "en": "How much was the fridge?\nIt costs more than we thought.",
+    "es": "¿Cuánto costó la nevera?\nCostó más de lo que pensábamos.",
+    "en": "How much was the fridge?\nIt cost more than we thought.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13269,7 +13285,6 @@
       "g:preterite-ar",
       "g:questions",
       "g:relatives-donde-lo-que",
-      "g:stem-boot",
       "l:costar",
       "l:cuánto",
       "l:nevera",
@@ -13387,17 +13402,19 @@
   },
   {
     "id": "u36-0521",
-    "es": "Debemos más de lo que tenemos.",
-    "en": "We owe more than we have.",
+    "es": "Pagamos más intereses de los que pensábamos.",
+    "en": "We pay more interest than we thought.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:comparatives",
-      "g:present-er-ir",
-      "g:relatives-donde-lo-que",
-      "l:deber",
-      "l:tener",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:present-ar",
+      "g:relatives-prepositions",
+      "l:interés",
+      "l:pagar",
+      "l:pensar",
       "p:mas-de-lo-que"
     ],
     "targets": [
@@ -13637,19 +13654,18 @@
   },
   {
     "id": "u36-0531",
-    "es": "¿Sube el arriendo más de lo que ganamos?",
-    "en": "Does the rent rise more than we earn?",
+    "es": "¿El arriendo sube más de lo que suben las ventas?",
+    "en": "Is the rent going up more than sales are?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
       "g:gender-articles",
-      "g:present-ar",
       "g:present-er-ir",
       "g:relatives-donde-lo-que",
       "l:arriendo",
-      "l:ganar",
       "l:subir",
+      "l:venta",
       "p:mas-de-lo-que",
       "p:subir-subida"
     ],
@@ -13694,7 +13710,7 @@
   {
     "id": "u36-0533",
     "es": "El ahorro creció más de lo que creía.",
-    "en": "Savings grew more than I believed.",
+    "en": "Savings grew more than I thought.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13936,23 +13952,29 @@
   },
   {
     "id": "u36-0542",
-    "es": "¿Cómo se vendió hoy?\nSe vendió menos de lo que se esperaba.",
-    "en": "How did sales go today?\nLess was sold than was expected.",
+    "es": "¿Cómo estuvieron las ventas hoy?\nSe vendió menos de lo que se esperaba.",
+    "en": "How were sales today?\nLess was sold than was expected.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
+      "g:estar-location-states",
+      "g:gender-articles",
       "g:imperfect-habitual",
       "g:pret-vs-imperfect",
       "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
       "g:questions",
       "g:relatives-donde-lo-que",
       "g:se-impersonal",
       "l:cómo",
       "l:esperar",
+      "l:estar",
       "l:hoy",
       "l:vender",
-      "p:mas-de-lo-que"
+      "l:venta",
+      "p:mas-de-lo-que",
+      "p:question-word-order"
     ],
     "targets": [
       "p:mas-de-lo-que"
@@ -14121,23 +14143,27 @@
   },
   {
     "id": "u36-0549",
-    "es": "¿Está bien de plata el café?\nMenos de lo que parece.",
-    "en": "Is the café doing OK for money?\nLess than it looks.",
+    "es": "¿Cómo está el café de plata?\nTiene menos de lo que parece.",
+    "en": "How is the café doing for money?\nIt has less than it looks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
+      "c:como-estas",
+      "c:tienes",
       "g:comparatives",
       "g:estar-location-states",
       "g:gender-articles",
       "g:present-er-ir",
       "g:relatives-donde-lo-que",
-      "l:bien",
+      "g:stem-boot",
       "l:café",
+      "l:cómo",
       "l:estar",
       "l:parecer",
       "l:plata",
-      "p:mas-de-lo-que"
+      "l:tener",
+      "p:mas-de-lo-que",
+      "p:question-word-order"
     ],
     "targets": [
       "p:mas-de-lo-que"
@@ -14252,8 +14278,8 @@
   },
   {
     "id": "u36-0554",
-    "es": "Cuento contigo para el sábado de la cena.",
-    "en": "I'm counting on you for the Saturday of the dinner.",
+    "es": "Cuento contigo el sábado para la cena.",
+    "en": "I'm counting on you on Saturday for the dinner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14338,21 +14364,24 @@
   },
   {
     "id": "u36-0558",
-    "es": "¿Quién paga el arriendo?\nCuento contigo para pagar el arriendo.",
-    "en": "Who pays the rent?\nI'm counting on you to pay the rent.",
+    "es": "¿Quién paga el arriendo este mes?\nCuento con las propinas.",
+    "en": "Who's paying the rent this month?\nI'm counting on the tips.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:cuenta-conmigo",
       "g:gender-articles",
       "g:present-ar",
       "g:questions",
+      "g:stem-boot",
       "l:arriendo",
       "l:contar",
+      "l:mes",
       "l:pagar",
+      "l:propina",
       "l:quién",
-      "p:para-inf",
-      "p:para-inf-purpose",
+      "p:contar-con",
+      "p:demonstratives-basic",
+      "p:disponer-de",
       "p:question-word-order"
     ],
     "targets": [],
@@ -14363,15 +14392,17 @@
   },
   {
     "id": "u36-0559",
-    "es": "¿Me ayudan?\nCuentas conmigo y con Simón.",
-    "en": "Will you help me?\nYou can count on me and on Simón. (to a friend)",
+    "es": "¿Me ayudas?\nClaro, cuentas conmigo y con Simón.",
+    "en": "Will you help me?\nOf course, you can count on me and on Simón.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
       "g:prep-pronouns",
       "g:present-ar",
       "g:stem-boot",
       "l:ayudar",
+      "l:claro",
       "l:contar",
       "p:contar-con",
       "p:me-te-nos-objects"
@@ -14579,23 +14610,22 @@
   },
   {
     "id": "u36-0568",
-    "es": "¿Contó conmigo para todo y le fallé?",
-    "en": "Did he count on me for everything and I let him down?",
+    "es": "Rosa contó con Hernando hasta el final.",
+    "en": "Rosa counted on Hernando until the end.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:indirect-objects",
-      "g:prep-pronouns",
+      "g:gender-articles",
       "g:preterite-ar",
       "l:contar",
-      "l:fallar",
+      "l:final",
       "p:contar-con",
-      "p:para-inf"
+      "p:disponer-de"
     ],
     "targets": [
       "p:contar-con"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
     "source": "gen"
@@ -14627,20 +14657,21 @@
   },
   {
     "id": "u36-0570",
-    "es": "Voy a contar contigo para la mudanza.",
-    "en": "I am going to count on you for the move.",
+    "es": "Este mes voy a contar con el ahorro de Rosa.",
+    "en": "This month I'm going to rely on Rosa's savings.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:voy-a",
       "g:gender-articles",
       "g:ir-a-plans",
-      "g:prep-pronouns",
+      "l:ahorro",
       "l:contar",
       "l:ir",
-      "l:mudanza",
+      "l:mes",
       "p:contar-con",
-      "p:para-inf"
+      "p:demonstratives-basic",
+      "p:disponer-de"
     ],
     "targets": [
       "p:contar-con"
@@ -14679,20 +14710,20 @@
   },
   {
     "id": "u36-0572",
-    "es": "Quiero contar contigo en la cocina.",
-    "en": "I want to count on you in the kitchen.",
+    "es": "El café cuenta con una terraza pequeña.",
+    "en": "The café has a small terrace.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:prep-pronouns",
       "g:stem-boot",
-      "g:verb-infinitive",
-      "l:cocina",
+      "l:café",
       "l:contar",
-      "l:querer",
-      "p:contar-con"
+      "l:pequeño",
+      "l:terraza",
+      "p:contar-con",
+      "p:disponer-de"
     ],
     "targets": [
       "p:contar-con"
@@ -14704,23 +14735,19 @@
   },
   {
     "id": "u36-0573",
-    "es": "Tengo que contar contigo para el sábado.",
-    "en": "I have to count on you for Saturday.",
+    "es": "No podemos contar con el banco.",
+    "en": "We can't count on the bank.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
-      "c:tengo-que",
       "g:gender-articles",
-      "g:prep-pronouns",
+      "g:present-er-ir",
       "g:verb-infinitive",
-      "g:yo-irregular",
+      "l:banco",
       "l:contar",
-      "l:sábado",
-      "l:tener",
+      "l:poder",
       "p:contar-con",
-      "p:days-el-lunes",
-      "p:para-inf"
+      "p:disponer-de"
     ],
     "targets": [
       "p:contar-con"
@@ -14732,30 +14759,27 @@
   },
   {
     "id": "u36-0574",
-    "es": "¿No es bueno poder contar contigo cuando hay problemas?",
-    "en": "Isn't it good to be able to count on you when there are problems?",
+    "es": "¡Qué bueno poder contar contigo cuando hay problemas!",
+    "en": "It's so good to be able to count on you when there are problems!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
+      "c:que-bien",
       "g:hay-vs-esta",
       "g:prep-pronouns",
-      "g:ser-identity",
       "g:verb-infinitive",
       "l:bueno",
       "l:contar",
       "l:poder",
       "l:problema",
-      "l:ser",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
-      "p:contar-con",
-      "p:es-adj-inf"
+      "l:qué",
+      "p:contar-con"
     ],
     "targets": [
       "p:contar-con"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
     "source": "gen"
@@ -14904,16 +14928,19 @@
   },
   {
     "id": "u36-0581",
-    "es": "¿Cuento contigo para el domingo?",
-    "en": "Can I count on you for Sunday?",
+    "es": "¿Contamos con la plata de la campaña para el abogado?",
+    "en": "Are we counting on the campaign money for the lawyer?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:cuenta-conmigo",
       "g:gender-articles",
+      "g:present-ar",
+      "l:abogado",
+      "l:campaña",
       "l:contar",
-      "l:domingo",
-      "p:days-el-lunes",
+      "l:plata",
+      "p:contar-con",
+      "p:disponer-de",
       "p:para-inf"
     ],
     "targets": [],
@@ -14924,17 +14951,18 @@
   },
   {
     "id": "u36-0582",
-    "es": "¿Cuentan conmigo para la mudanza?",
-    "en": "Are they counting on me for the move?",
+    "es": "¿La terraza cuenta con mesas para todos?",
+    "en": "Does the terrace have tables for everyone?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:prep-pronouns",
       "g:stem-boot",
       "l:contar",
-      "l:mudanza",
+      "l:mesa",
+      "l:terraza",
       "p:contar-con",
+      "p:disponer-de",
       "p:para-inf"
     ],
     "targets": [
@@ -14971,20 +14999,24 @@
   },
   {
     "id": "u36-0584",
-    "es": "¿Puedo contar contigo?\nClaro que sí.",
-    "en": "Can I count on you?\nOf course.",
+    "es": "¿Puedo contar con ustedes el viernes?\nClaro, con todos.",
+    "en": "Can I count on you all on Friday?\nOf course, all of us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
       "c:puedo",
+      "g:gender-articles",
       "g:prep-pronouns",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:claro",
       "l:contar",
       "l:poder",
-      "p:contar-con"
+      "l:viernes",
+      "p:contar-con",
+      "p:days-el-lunes",
+      "p:disponer-de"
     ],
     "targets": [
       "p:contar-con"
@@ -15549,18 +15581,21 @@
   },
   {
     "id": "u36-0605",
-    "es": "¿A cuánto está el pan del día?",
-    "en": "How much is the bread of the day?",
-    "accept": [],
+    "es": "¿A cuánto está la mora esta semana?",
+    "en": "What are blackberries going for this week?",
+    "accept": [
+      "¿A cómo está la mora esta semana?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
       "l:cuánto",
-      "l:día",
       "l:estar",
-      "l:pan",
+      "l:mora",
+      "l:semana",
       "p:a-cuanto-esta",
+      "p:demonstratives-basic",
       "p:estar-a",
       "p:estar-a-price",
       "p:prep-questions-basic"
@@ -16068,21 +16103,22 @@
   },
   {
     "id": "u36-0626",
-    "es": "¿Esta nevera está en oferta o tiene descuento?",
-    "en": "Is this fridge on sale or does it have a discount?",
+    "es": "¿Esta nevera está rebajada o así cuesta siempre?",
+    "en": "Is this fridge reduced, or does it always cost this?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:estar-location-states",
+      "g:estar-participle",
       "g:stem-boot",
-      "l:descuento",
+      "l:costar",
       "l:estar",
       "l:nevera",
-      "l:oferta",
-      "l:tener",
+      "l:rebajar",
+      "l:siempre",
       "p:demonstratives-basic",
-      "p:en-oferta"
+      "p:en-oferta",
+      "p:frequency-scale"
     ],
     "targets": [
       "p:en-oferta"
@@ -16426,8 +16462,8 @@
   },
   {
     "id": "u36-0640",
-    "es": "Todas las mesas de la terraza se agotaron para el sábado.",
-    "en": "All the terrace tables are booked up for Saturday.",
+    "es": "Se agotaron las sillas para la cena del barrio.",
+    "en": "The chairs for the neighbourhood dinner ran out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16435,11 +16471,10 @@
       "g:preterite-ar",
       "g:reflexive-routine",
       "l:agotarse",
-      "l:mesa",
-      "l:sábado",
-      "l:terraza",
+      "l:barrio",
+      "l:cena",
+      "l:silla",
       "p:agotarse",
-      "p:days-el-lunes",
       "p:para-inf"
     ],
     "targets": [
@@ -16528,19 +16563,23 @@
   },
   {
     "id": "u36-0644",
-    "es": "Se agotó el último saco de azúcar del carro de Hernando.",
-    "en": "The last sack of sugar in Hernando's car ran out.",
+    "es": "Se agotó el azúcar y Hernando tuvo que ir a la tienda.",
+    "en": "The sugar ran out and Hernando had to go to the shop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "g:reflexive-routine",
+      "g:verb-infinitive",
       "l:agotarse",
       "l:azúcar",
-      "l:carro",
-      "l:saco",
-      "p:agotarse"
+      "l:ir",
+      "l:tener",
+      "l:tienda",
+      "p:agotarse",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "p:agotarse"
@@ -16866,19 +16905,25 @@
   },
   {
     "id": "u36-0657",
-    "es": "Se abrieron más de veinte cuentas para ayudar al café.",
-    "en": "More than twenty accounts were opened to help the café.",
+    "es": "¿Cuántas cuentas se abrieron para ayudar al café?\nUna sola, pero llegaron más de mil donaciones.",
+    "en": "How many accounts were opened to help the café?\nJust one, but more than a thousand donations arrived.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:comparatives-advanced",
       "g:gender-articles",
       "g:passive-se",
+      "g:preterite-ar",
       "g:preterite-er-ir",
+      "g:questions",
       "l:abrir",
       "l:ayudar",
       "l:café",
       "l:cuenta",
+      "l:cuánto",
+      "l:donación",
+      "l:llegar",
       "p:mas-de-number",
       "p:para-inf",
       "p:para-inf-purpose",
@@ -16888,7 +16933,7 @@
       "g:comparatives-advanced",
       "g:passive-se"
     ],
-    "kind": "statement",
+    "kind": "dialogue",
     "unit": "u36",
     "theme": "the crowdfunding week",
     "source": "gen"
@@ -16922,18 +16967,20 @@
   },
   {
     "id": "u36-0659",
-    "es": "Se pagaron más de ocho millones en multas y cuotas.",
-    "en": "More than eight million were paid in fines and instalments.",
+    "es": "Entre multas y cuotas, este año se pagaron más de ocho millones.",
+    "en": "Between fines and instalments, more than eight million were paid this year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives-advanced",
       "g:passive-se",
       "g:preterite-ar",
+      "l:año",
       "l:cuota",
       "l:multa",
       "l:pagar",
       "p:costar-pagar",
+      "p:demonstratives-basic",
       "p:mas-de-number"
     ],
     "targets": [
@@ -16947,8 +16994,8 @@
   },
   {
     "id": "u36-0660",
-    "es": "Se compraron más de mil tintos para el barrio.",
-    "en": "More than a thousand black coffees were bought for the neighbourhood.",
+    "es": "En la cena del barrio se regalaron más de cien tintos.",
+    "en": "More than a hundred black coffees were given away at the neighbourhood dinner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16957,10 +17004,11 @@
       "g:passive-se",
       "g:preterite-ar",
       "l:barrio",
-      "l:comprar",
+      "l:cena",
+      "l:regalar",
       "l:tinto",
       "p:mas-de-number",
-      "p:para-inf"
+      "p:numbers-un-una"
     ],
     "targets": [
       "g:comparatives-advanced",
@@ -16973,21 +17021,27 @@
   },
   {
     "id": "u36-0661",
-    "es": "Se firmaron más de trescientos papeles en la notaría.",
-    "en": "More than three hundred papers were signed at the notary's.",
+    "es": "En la notaría se firmaron más de treinta papeles, y a Tomás le dolió la mano.",
+    "en": "More than thirty papers were signed at the notary's, and Tomás's hand hurt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives-advanced",
       "g:conditional",
       "g:direct-objects",
+      "g:gender-articles",
+      "g:gustar-full",
       "g:passive-se",
       "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:doler",
       "l:firmar",
+      "l:mano",
       "l:notar",
       "l:papel",
+      "p:doler",
       "p:mas-de-number",
-      "p:numbers-un-una"
+      "p:me-duele"
     ],
     "targets": [
       "g:comparatives-advanced",
@@ -17025,8 +17079,8 @@
   },
   {
     "id": "u36-0663",
-    "es": "Se ganaron más de cuatro mil pesos con las propinas.",
-    "en": "More than four thousand pesos were earned in tips.",
+    "es": "Con las propinas del sábado se pagaron más de doscientos mil pesos del arriendo.",
+    "en": "More than two hundred thousand pesos of the rent were paid with Saturday's tips.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17034,9 +17088,12 @@
       "g:gender-articles",
       "g:passive-se",
       "g:preterite-ar",
-      "l:ganar",
+      "l:arriendo",
+      "l:pagar",
       "l:peso",
       "l:propina",
+      "l:sábado",
+      "p:costar-pagar",
       "p:mas-de-number"
     ],
     "targets": [
@@ -17075,19 +17132,19 @@
   },
   {
     "id": "u36-0665",
-    "es": "Se ofrecieron más de veinte mesas para la cena del barrio.",
-    "en": "More than twenty tables were offered for the neighbourhood dinner.",
+    "es": "Para la cena del barrio se prestaron más de veinte mesas.",
+    "en": "More than twenty tables were lent for the neighbourhood dinner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives-advanced",
       "g:gender-articles",
       "g:passive-se",
-      "g:preterite-er-ir",
+      "g:preterite-ar",
       "l:barrio",
       "l:cena",
       "l:mesa",
-      "l:ofrecer",
+      "l:prestar",
       "p:mas-de-number",
       "p:para-inf"
     ],
@@ -17130,19 +17187,24 @@
   },
   {
     "id": "u36-0667",
-    "es": "Se anunciaron más de cinco campañas distintas.",
-    "en": "More than five different campaigns were announced.",
+    "es": "Se anunció la campaña un lunes y el martes ya había más de cien donaciones.",
+    "en": "The campaign was announced on a Monday and by Tuesday there were already more than a hundred donations.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:comparatives-advanced",
+      "g:gender-articles",
+      "g:imperfect-states",
       "g:passive-se",
       "g:preterite-ar",
       "l:anunciar",
       "l:campaña",
-      "l:distinto",
-      "p:mas-de-number"
+      "l:donación",
+      "l:lunes",
+      "l:martes",
+      "p:days-el-lunes",
+      "p:mas-de-number",
+      "p:numbers-un-una"
     ],
     "targets": [
       "g:comparatives-advanced",
@@ -17155,8 +17217,8 @@
   },
   {
     "id": "u36-0668",
-    "es": "¿Cuánto falta para la meta?\nSe necesitan menos de tres mil pesos.",
-    "en": "How much is needed to reach the goal?\nLess than three thousand pesos are needed.",
+    "es": "¿Cuánto falta para la meta?\nSe necesitan menos de trescientos mil pesos.",
+    "en": "How much is left to reach the goal?\nLess than three hundred thousand pesos are needed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17324,8 +17386,8 @@
   },
   {
     "id": "u36-0674",
-    "es": "Se ofrecen cada vez más descuentos a los vecinos.",
-    "en": "More and more discounts are offered to the neighbours.",
+    "es": "Se venden cada vez más casas en la cuadra.",
+    "en": "More and more houses are being sold on the block.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17334,9 +17396,9 @@
       "g:gender-articles",
       "g:passive-se",
       "g:present-er-ir",
-      "l:descuento",
-      "l:ofrecer",
-      "l:vecino",
+      "l:casa",
+      "l:cuadra",
+      "l:vender",
       "l:vez"
     ],
     "targets": [
@@ -17410,8 +17472,8 @@
   },
   {
     "id": "u36-0677",
-    "es": "¿Necesitan ayuda en la cocina?\nSe necesitan cada vez más manos.",
-    "en": "Do you need help in the kitchen?\nMore and more hands are needed.",
+    "es": "¿Necesitan ayuda en la cocina?\nSí, se necesitan cada vez más meseros.",
+    "en": "Do you need help in the kitchen?\nYes, more and more waiters are needed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17422,7 +17484,7 @@
       "g:present-ar",
       "l:ayuda",
       "l:cocina",
-      "l:mano",
+      "l:mesero",
       "l:necesitar",
       "l:vez"
     ],
@@ -17576,23 +17638,24 @@
   },
   {
     "id": "u36-0683",
-    "es": "Se necesitan más sillas, de modo que se pidieron las del hotel.",
-    "en": "More chairs are needed, so the hotel's were asked for.",
+    "es": "Faltaban sillas, de modo que se pidieron diez al hotel.",
+    "en": "There weren't enough chairs, so ten were requested from the hotel.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:comparatives",
       "g:consequence-connectors",
       "g:gender-articles",
+      "g:imperfect-habitual",
       "g:passive-se",
-      "g:present-ar",
+      "g:pret-vs-imperfect",
       "g:preterite-spelling-stem",
+      "l:faltar",
       "l:hotel",
       "l:modo",
-      "l:necesitar",
       "l:pedir",
       "l:silla",
-      "p:preguntar-pedir"
+      "p:preguntar-pedir",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "g:consequence-connectors",
@@ -17692,8 +17755,8 @@
   },
   {
     "id": "u36-0687",
-    "es": "Se cerraron las cuentas del mes; por lo tanto, se supo la cifra final.",
-    "en": "The month's accounts were closed; therefore, the final figure was known.",
+    "es": "Se cerraron las cuentas del mes, de modo que por fin se supo la cifra final.",
+    "en": "The month's accounts were closed, so the final figure was finally known.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17705,8 +17768,10 @@
       "l:cerrar",
       "l:cifra",
       "l:cuenta",
+      "l:fin",
       "l:final",
       "l:mes",
+      "l:modo",
       "l:saber",
       "p:saber-conocer"
     ],
@@ -17832,15 +17897,14 @@
   },
   {
     "id": "u36-0692",
-    "es": "Se cobraron las propinas y se pagó la mitad de la cuota.",
-    "en": "The tips were collected and half the instalment was paid.",
+    "es": "Con las propinas se pagó la mitad de la cuota.",
+    "en": "Half the instalment was paid with the tips.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:passive-se",
       "g:preterite-ar",
-      "l:cobrar",
       "l:cuota",
       "l:mitad",
       "l:pagar",
@@ -17885,8 +17949,8 @@
   },
   {
     "id": "u36-0694",
-    "es": "Se agotaron las entradas, y se vendió la mitad del menú.",
-    "en": "The tickets sold out, and half the menu was sold.",
+    "es": "Se agotaron las entradas y se vendió la mitad del menú en una hora.",
+    "en": "The tickets sold out and half the menu was sold in an hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17897,6 +17961,7 @@
       "g:reflexive-routine",
       "l:agotarse",
       "l:entrada",
+      "l:hora",
       "l:menú",
       "l:mitad",
       "l:vender",
@@ -17968,8 +18033,7 @@
     "es": "Se necesita un mes más de paciencia; por lo tanto, no se debe gastar plata.",
     "en": "One more month of patience is needed; therefore, no money should be spent.",
     "accept": [
-      "Hace falta un mes más de paciencia",
-      "por lo tanto, no se debe gastar plata."
+      "Hace falta un mes más de paciencia; por lo tanto, no se debe gastar plata."
     ],
     "acceptEn": [],
     "requires": [
@@ -18134,8 +18198,8 @@
   },
   {
     "id": "u36-0703",
-    "es": "Se debe pedir la ayuda de los vecinos.",
-    "en": "The neighbours' help should be asked for.",
+    "es": "Se debe pedir ayuda a los vecinos.",
+    "en": "Help should be asked of the neighbours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18181,8 +18245,8 @@
   },
   {
     "id": "u36-0705",
-    "es": "Debes descansar, Tomás, llevas más de diez horas aquí.\nTienes razón.",
-    "en": "You must rest, Tomás, you have been here more than ten hours.\nYou are right.",
+    "es": "Debes descansar, Tomás. Llevas más de diez horas aquí.\nTienes razón.",
+    "en": "You must rest, Tomás. You've been here more than ten hours.\nYou're right.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18282,8 +18346,8 @@
   },
   {
     "id": "u36-0709",
-    "es": "¿Viste el cheque de Altamira?\nDebe de ser un cheque muy grande.",
-    "en": "Did you see Altamira's cheque?\nIt must be a very big cheque.",
+    "es": "¿Viste el cheque de Altamira?\nNo, pero debe de ser muy grande.",
+    "en": "Did you see Altamira's cheque?\nNo, but it must be very big.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18556,16 +18620,23 @@
   },
   {
     "id": "u36-0720",
-    "es": "¡Buen trabajo, equipo!\nGracias, jefe.",
-    "en": "Good job, team!\nThanks, boss.",
+    "es": "¿Qué tal quedó la torta?\n¡Bien hecha! Parece de panadería.",
+    "en": "How did the cake turn out?\nWell made! It looks like it came from a bakery.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:gracias-de-nada",
-      "l:buen",
-      "l:equipo",
-      "l:jefe",
-      "l:trabajo"
+      "c:bien-y-tu",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:preterite-ar",
+      "g:questions",
+      "l:bien",
+      "l:hacer",
+      "l:panadería",
+      "l:parecer",
+      "l:quedar",
+      "l:qué",
+      "l:torta"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -18617,19 +18688,19 @@
   },
   {
     "id": "u36-0723",
-    "es": "¡Bien hecho, Hernando! Nadie vende mejor tus historias.",
-    "en": "Well done, Hernando! Nobody sells your stories better.",
+    "es": "¡Bien hecho, Hernando! Nadie cuenta las historias como usted.",
+    "en": "Well done, Hernando! Nobody tells stories like you.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "g:present-er-ir",
+      "g:gender-articles",
+      "g:stem-boot",
       "l:bien",
+      "l:contar",
       "l:hacer",
       "l:historia",
-      "l:mejor",
-      "l:vender",
-      "p:possessives-basic"
+      "p:contar-dos-sentidos"
     ],
     "targets": [],
     "kind": "statement",
@@ -18662,18 +18733,19 @@
   },
   {
     "id": "u36-0725",
-    "es": "¡Buen trabajo, equipo! Superamos la cifra.",
-    "en": "Good job, team! We beat the figure.",
+    "es": "Mariana superó la cifra que pidió en tres días.",
+    "en": "Mariana went past the figure she asked for in three days.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "l:buen",
+      "g:preterite-ar",
+      "g:preterite-spelling-stem",
+      "g:relative-que",
       "l:cifra",
-      "l:equipo",
-      "l:superar",
-      "l:trabajo"
+      "l:día",
+      "l:pedir",
+      "l:superar"
     ],
     "targets": [
       "l:cifra"
@@ -18762,18 +18834,21 @@
   },
   {
     "id": "u36-0729",
-    "es": "Mi entrenador cuenta contigo, campeón.",
-    "en": "My coach is counting on you, champ.",
+    "es": "El entrenador cuenta contigo para el partido del domingo, campeón.",
+    "en": "The coach is counting on you for Sunday's match, champ.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:prep-pronouns",
       "g:stem-boot",
       "l:campeón",
       "l:contar",
+      "l:domingo",
       "l:entrenador",
+      "l:partido",
       "p:contar-con",
-      "p:possessives-basic"
+      "p:para-inf"
     ],
     "targets": [
       "l:campeón",
@@ -18833,20 +18908,20 @@
   },
   {
     "id": "u36-0732",
-    "es": "¿Puedo contar contigo?\nPuedes contar conmigo, pero necesito paciencia.",
-    "en": "Can I count on you?\nYou can count on me, but I need patience.",
+    "es": "¿Puedo contar contigo?\nPuedes contar conmigo, pero ten paciencia.",
+    "en": "Can I count on you?\nYou can count on me, but be patient.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:puedo",
+      "g:commands-tu",
       "g:prep-pronouns",
-      "g:present-ar",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:contar",
-      "l:necesitar",
       "l:paciencia",
       "l:poder",
+      "l:tener",
       "p:contar-con",
       "p:request-ladder"
     ],
@@ -19213,20 +19288,27 @@
   },
   {
     "id": "u36-0746",
-    "es": "Los domingos paseamos y gastamos menos de lo que ganamos.",
-    "en": "On Sundays we stroll and spend less than we earn.",
+    "es": "Pasear por el centro cuesta más de lo que parece: siempre compramos algo.",
+    "en": "Walking around downtown costs more than it seems: we always buy something.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
       "g:gender-articles",
+      "g:por-para-1",
       "g:present-ar",
+      "g:present-er-ir",
       "g:relatives-donde-lo-que",
-      "l:domingo",
-      "l:ganar",
-      "l:gastar",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:centro",
+      "l:comprar",
+      "l:costar",
+      "l:parecer",
       "l:pasear",
-      "p:days-el-lunes",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:indefinites-basic",
       "p:mas-de-lo-que"
     ],
     "targets": [
@@ -19574,7 +19656,7 @@
   {
     "id": "u36-0760",
     "es": "¿Cruzamos la frontera con más de diez cajas de café?",
-    "en": "Did we cross the border with more than ten boxes of coffee?",
+    "en": "Shall we cross the border with more than ten boxes of coffee?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20157,7 +20239,7 @@
   {
     "id": "u36-0782",
     "es": "¿Pedimos un crédito con un interés tan alto?",
-    "en": "Did we ask for a loan with such a high interest?",
+    "en": "Shall we take out a loan with such high interest?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20209,7 +20291,7 @@
   {
     "id": "u36-0784",
     "es": "Los intereses del banco aumentaron mucho.",
-    "en": "The bank's interest rose a lot.",
+    "en": "The bank's interest rates rose a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21141,8 +21223,8 @@
   },
   {
     "id": "u36-0821",
-    "es": "Rosa nunca vendió su anillo, aunque necesitaba la plata.",
-    "en": "Rosa never sold her ring, though she needed the money.",
+    "es": "Hernando nunca vendió el anillo, aunque necesitaba la plata.",
+    "en": "Hernando never sold the ring, even though he needed the money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21155,8 +21237,7 @@
       "l:necesitar",
       "l:plata",
       "l:vender",
-      "p:frequency-scale",
-      "p:possessives-basic"
+      "p:frequency-scale"
     ],
     "targets": [
       "l:anillo"
@@ -21190,12 +21271,12 @@
   },
   {
     "id": "u36-0823",
-    "es": "¿Hernando todavía fuma?\nNo, dejó de fumar hace diez años.",
-    "en": "Does Hernando still smoke?\nNo, he quit smoking ten years ago.",
+    "es": "¿Hernando todavía fuma?\nNo, dejó de fumar hace más de treinta años.",
+    "en": "Does Hernando still smoke?\nNo, he quit smoking more than thirty years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:hace-ago",
+      "g:comparatives-advanced",
       "g:present-ar",
       "g:present-er-ir",
       "g:preterite-ar",
@@ -21204,6 +21285,7 @@
       "l:fumar",
       "l:hacer",
       "p:dejar-de-inf",
+      "p:mas-de-number",
       "p:ya-todavia-basic"
     ],
     "targets": [
@@ -21391,22 +21473,20 @@
   },
   {
     "id": "u36-0831",
-    "es": "Se cesó la tarifa vieja y se empezó con la nueva.",
-    "en": "The old fee stopped and the new one began.",
+    "es": "Se cambió el número del café y por fin cesaron las llamadas de Altamira.",
+    "en": "The café's number was changed and Altamira's calls finally stopped.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:passive-se",
       "g:preterite-ar",
-      "g:se-impersonal",
+      "l:café",
+      "l:cambiar",
       "l:cesar",
-      "l:empezar",
-      "l:nuevo",
-      "l:tarifa",
-      "l:viejo",
-      "p:viejo-antiguo-mayor"
+      "l:fin",
+      "l:llamada",
+      "l:número"
     ],
     "targets": [
       "g:passive-se",
@@ -22137,8 +22217,8 @@
   },
   {
     "id": "u36-0861",
-    "es": "¿Las compras de Navidad subieron las ventas?",
-    "en": "Did Christmas shopping raise sales?",
+    "es": "¿Con las compras de Navidad subieron las ventas?",
+    "en": "Did sales go up with the Christmas shopping?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22365,20 +22445,24 @@
   },
   {
     "id": "u36-0870",
-    "es": "La mayoría de los carros del barrio cuesta menos de lo que cuesta el arriendo.",
-    "en": "Most of the cars in the neighbourhood cost less than the rent does.",
-    "accept": [],
+    "es": "La mayoría de los vecinos gana menos de lo que cuesta un arriendo en el centro.",
+    "en": "Most of the neighbours earn less than a rent downtown costs.",
+    "accept": [
+      "La mayoría de los vecinos ganan menos de lo que cuesta un arriendo en el centro."
+    ],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
       "g:gender-articles",
+      "g:present-ar",
       "g:relatives-donde-lo-que",
       "g:stem-boot",
       "l:arriendo",
-      "l:barrio",
-      "l:carro",
+      "l:centro",
       "l:costar",
+      "l:ganar",
       "l:mayoría",
+      "l:vecino",
       "p:la-mayoria-de",
       "p:mas-de-lo-que"
     ],
@@ -22612,7 +22696,7 @@
   },
   {
     "id": "u36-0880",
-    "es": "Las camisas del escaparate están rebajadas a la mitad.",
+    "es": "Las camisas de la vitrina están rebajadas a la mitad.",
     "en": "The shirts in the window are reduced by half.",
     "accept": [],
     "acceptEn": [],
@@ -22621,10 +22705,10 @@
       "g:estar-participle",
       "g:gender-articles",
       "l:camisa",
-      "l:escaparate",
       "l:estar",
       "l:mitad",
       "l:rebajar",
+      "l:vitrina",
       "p:en-oferta"
     ],
     "targets": [
@@ -22637,14 +22721,18 @@
   },
   {
     "id": "u36-0881",
-    "es": "Los zapatos de Vale están en oferta en la tienda de al lado.",
-    "en": "Vale's shoes are on sale at the shop next door.",
+    "es": "Los zapatos que le gustan a Vale están en oferta en la tienda de al lado.",
+    "en": "The shoes Vale likes are on sale at the shop next door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:relative-que",
       "l:estar",
+      "l:gustar",
       "l:lado",
       "l:oferta",
       "l:tienda",
@@ -22910,20 +22998,20 @@
   },
   {
     "id": "u36-0892",
-    "es": "Se firmaron las donaciones más grandes esta mañana.",
-    "en": "The biggest donations were signed this morning.",
+    "es": "Se recibieron las donaciones más grandes esta mañana.",
+    "en": "The biggest donations were received this morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
       "g:passive-se",
-      "g:preterite-ar",
+      "g:preterite-er-ir",
       "g:superlatives",
       "l:donación",
-      "l:firmar",
       "l:grande",
       "l:mañana",
+      "l:recibir",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -23069,24 +23157,27 @@
   },
   {
     "id": "u36-0899",
-    "es": "Si cuentas conmigo, voy a estar allí a las ocho.",
-    "en": "If you count on me, I'll be there at eight. (to a friend)",
+    "es": "Si me necesitas, puedes contar conmigo: a las ocho estoy allí.",
+    "en": "If you need me, you can count on me: I'll be there at eight. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:ir-a-plans",
       "g:prep-pronouns",
+      "g:present-ar",
       "g:si-present",
       "g:stem-boot",
+      "g:verb-infinitive",
       "l:allí",
       "l:contar",
       "l:estar",
-      "l:ir",
+      "l:necesitar",
+      "l:poder",
       "p:aqui-ahi-alla",
       "p:contar-con",
+      "p:me-te-nos-objects",
+      "p:request-ladder",
       "p:telling-time"
     ],
     "targets": [
@@ -23235,26 +23326,27 @@
   },
   {
     "id": "u36-0905",
-    "es": "¿Quién se llevó la plata de la cena del barrio?\nLa cuarta parte fue para Hernando.",
-    "en": "Who took the money from the neighbourhood dinner?\nA quarter went to Hernando.",
+    "es": "¿A dónde fue la plata de la cena del barrio?\nLa cuarta parte fue para el abogado.",
+    "en": "Where did the money from the neighbourhood dinner go?\nA quarter went to the lawyer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
       "g:preterite-ser-ir-hacer",
-      "g:questions",
-      "g:reflexive-routine",
+      "g:ser-identity",
+      "l:abogado",
       "l:barrio",
       "l:cena",
+      "l:dónde",
       "l:ir",
-      "l:llevarse",
       "l:parte",
       "l:plata",
-      "l:quién",
+      "l:ser",
       "p:ordinal-floor",
       "p:ordinals-primer-tercer",
-      "p:para-inf"
+      "p:para-inf",
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -23449,20 +23541,20 @@
   },
   {
     "id": "u36-0913",
-    "es": "¿Hay algo rebajado?\nTodo el pan del sábado está rebajado.",
-    "en": "Is anything reduced?\nAll Saturday's bread is reduced.",
+    "es": "¿Hay algo rebajado?\nLos postres de ayer, a mitad de precio.",
+    "en": "Is anything reduced?\nYesterday's desserts, at half price.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:hay",
-      "g:estar-location-states",
-      "g:estar-participle",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "l:estar",
-      "l:pan",
+      "l:ayer",
+      "l:mitad",
+      "l:postre",
+      "l:precio",
       "l:rebajar",
-      "l:sábado",
       "p:en-oferta",
       "p:indefinites-basic"
     ],

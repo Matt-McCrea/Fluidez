@@ -98,11 +98,11 @@
       "answer": 2
     },
     {
-      "es": "La mayoría de los carros ya no está.",
+      "es": "La mayoría de los turistas habla inglés.",
       "options": [
-        "Most of the cars are already gone.",
-        "None of the cars is gone.",
-        "The cars are almost all here."
+        "Most of the tourists speak English.",
+        "None of the tourists speak English.",
+        "All the tourists speak English."
       ],
       "answer": 0
     }
@@ -117,13 +117,13 @@
       "why": "After *la mayoría* Spanish always adds *de*, even where English says nothing."
     },
     {
-      "prompt": "Most people pay cash.",
+      "prompt": "Type in Spanish: Most people pay cash.",
       "answer": "La mayoría de la gente paga en efectivo.",
       "accept": [],
       "why": "*La mayoría de* + the group: *la gente*."
     },
     {
-      "prompt": "Most of my friends live in Bogotá.",
+      "prompt": "Type in Spanish: Most of my friends live in Bogotá.",
       "answer": "La mayoría de mis amigos vive en Bogotá.",
       "accept": [
         "La mayoría de mis amigos viven en Bogotá."
@@ -131,7 +131,7 @@
       "why": "The group comes after *de*, with its own little word: *mis amigos*."
     },
     {
-      "prompt": "Most of the neighbours helped.",
+      "prompt": "Type in Spanish: Most of the neighbours helped.",
       "answer": "La mayoría de los vecinos ayudó.",
       "accept": [
         "La mayoría de los vecinos ayudaron."
@@ -139,7 +139,7 @@
       "why": "*La mayoría* is singular, so *ayudó* is the usual verb."
     },
     {
-      "prompt": "Most people want to pay less.",
+      "prompt": "Type in Spanish: Most people want to pay less.",
       "answer": "La mayoría de las personas quiere pagar menos.",
       "accept": [
         "La mayoría de las personas quieren pagar menos."
@@ -153,12 +153,12 @@
       "why": "*Casi todos* has no *de* and takes a plural verb."
     },
     {
-      "prompt": "Most of the cars are already gone.",
-      "answer": "La mayoría de los carros ya no está.",
+      "prompt": "Type in Spanish: Most of the tourists speak English.",
+      "answer": "La mayoría de los turistas habla inglés.",
       "accept": [
-        "La mayoría de los carros ya no están."
+        "La mayoría de los turistas hablan inglés."
       ],
-      "why": "Same frame again: *la mayoría de* + *los carros*."
+      "why": "*La mayoría de* plus the group, here *los turistas*."
     }
   ],
   "pitfalls": [

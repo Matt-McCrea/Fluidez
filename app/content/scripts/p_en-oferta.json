@@ -1,7 +1,7 @@
 {
   "node": "p:en-oferta",
   "hook": {
-    "line": "Vale wants cheaper flour, and every shop on the street has a sign in the window. Tomás has to know which signs mean a real deal.",
+    "line": "Vale is shopping for the café, and every shop on the street has a sign in the window. Tomás has to tell a real deal from a trick.",
     "es": "El jugo está en oferta.",
     "en": "The juice is on sale."
   },
@@ -121,27 +121,34 @@
       "why": "*Las camisas* is feminine and plural, so *rebajadas*."
     },
     {
-      "prompt": "The juice is on sale.",
+      "prompt": "Type in Spanish: The juice is on sale.",
       "answer": "El jugo está en oferta.",
-      "accept": [],
+      "accept": [
+        "El jugo está en promoción."
+      ],
       "why": "*Estar en oferta* with no article."
     },
     {
-      "prompt": "It's 20% off.",
+      "prompt": "Type in Spanish: It's 20% off.",
       "answer": "Tiene un 20 % de descuento.",
       "accept": [
-        "Tiene un 20% de descuento."
+        "Tiene un 20% de descuento.",
+        "Tiene 20 % de descuento.",
+        "Tiene 20% de descuento.",
+        "Tiene el 20 % de descuento."
       ],
       "why": "The discount is something it *has*: *tiene un 20 % de descuento*."
     },
     {
-      "prompt": "Is it on sale?",
+      "prompt": "Type in Spanish: Is it on sale?",
       "answer": "¿Está en oferta?",
-      "accept": [],
+      "accept": [
+        "¿Está en promoción?"
+      ],
       "why": "Same *en oferta*, now as a question."
     },
     {
-      "prompt": "It worked out cheaper.",
+      "prompt": "Type in Spanish: It worked out cheaper.",
       "answer": "Salió más barato.",
       "accept": [],
       "why": "*Salió* tells how it worked out, then *más barato*."
@@ -167,7 +174,7 @@
     {
       "wrong": "Tiene 20 % descuento.",
       "right": "Tiene un 20 % de descuento.",
-      "why": "Almost. You need *un* before the figure and *de* before *descuento*."
+      "why": "Almost. *Descuento* needs *de* in front of it: *un 20 % de descuento*."
     }
   ],
   "personal": "Tell us about something you bought or want to buy, using *Está en oferta* or *Salió más barato*."

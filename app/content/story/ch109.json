@@ -2,7 +2,7 @@
   "id": "ch109",
   "unit": "u36",
   "title": "Gracias, vecino",
-  "text": "El lunes, el cerdo de Rosa ya no cerraba. Hernando contó las monedas en su mesa: ciento ochenta mil pesos.\nHernando: Rosa nunca tuvo un cerdo tan gordo.\nEl martes llegó el entrenador del equipo de fútbol del barrio, con once niños y una caja llena de monedas.\nEntrenador: Los muchachos ahorraban para ir a la piscina en diciembre. Este año el café es más importante que la piscina.\nVale se fue a la cocina, y volvió con los ojos rojos y una bandeja de almojábanas.\nHernando: Muchachos, en diciembre yo los llevo a la piscina en la Burra. Gratis, pero de cuatro en cuatro.\nEl miércoles, cada vez entraba más gente que nadie conocía. Una pareja de alemanes que paseaba por La Candelaria pidió dos tintos y dejó cien dólares.\nSimón: ¡Gracias, vecino! ¡Gracias, vecino!\nSimón lo decía a todo el mundo: a los clientes, al cartero y a la escoba.\nEl jueves llegó una donación de un peso, de Inversiones RA: «Suerte con los trámites».\nSimón: ¡Gracias, vecino!\nHernando: Ese no es vecino. Es el enemigo.\nVale: Ese peso no lo gastamos. Va a la pared, al lado de la foto de Rosa.\nEl viernes, la deuda ya había disminuido a la mitad. Llegó también un mensaje de Medellín: «Para mi hija y para el muchacho de Toronto. Mamá».\nVale: Mi mamá tiene menos plata que todos nosotros, y dio más que nadie.\nEl domingo se cerró la página. Habían pedido doce millones, y juntaron veinticuatro millones y medio.\nMariana: Juntamos más de lo que pedimos. Hay más plata que deuda.\nTomás: De hecho, ahora le debemos algo a todo el barrio.\nHernando: Eso no es una deuda, mijo. Eso se llama tener vecinos.\nTomás: ¿Y la otra parte de la plata?\nMariana: Para encontrar a Joaquín.\nVale: Y para el viaje a la costa.\nEntonces Hernando recibió un audio de Santa Marta, del cuñado del Chato.\n«Pacheco, ¿me oye? El primo de un amigo conoce a un señor que trabaja en el mar, en Taganga. El abuelo de ese señor se llamaba Herrera».",
+  "text": "El lunes, al cerdo de Rosa ya no le cabía ni una moneda. Hernando contó las monedas en su mesa: ciento ochenta mil pesos.\nHernando: Rosa nunca tuvo un cerdo tan gordo.\nEl martes llegó el entrenador del equipo de fútbol del barrio, con once niños y una caja llena de monedas.\nEntrenador: Los muchachos ahorraban para ir a la piscina en diciembre. Este año el café es más importante que la piscina.\nVale se fue a la cocina, y volvió con los ojos rojos y una bandeja de almojábanas.\nHernando: Muchachos, en diciembre yo los llevo a la piscina en la Burra. Gratis, pero de cuatro en cuatro.\nEl miércoles, cada vez entraba más gente que nadie conocía. Una pareja de alemanes que paseaba por La Candelaria pidió dos tintos y dejó cien dólares.\nSimón: ¡Gracias, vecino! ¡Gracias, vecino!\nSimón lo decía a todo el mundo: a los clientes, al cartero y a la escoba.\nEl jueves llegó una donación de un peso, de Inversiones RA: «Suerte con los trámites».\nSimón: ¡Gracias, vecino!\nHernando: Ese no es vecino. Es el enemigo.\nVale: Ese peso no lo gastamos. Va a la pared, al lado de la foto de Rosa.\nEl viernes, la deuda ya había disminuido a la mitad. Llegó también un mensaje de Medellín: «Para mi hija y para el muchacho de Toronto. Mamá».\nVale: Mi mamá tiene menos plata que todos nosotros, y dio más que nadie.\nEl domingo se cerró la página. Habían pedido doce millones, y juntaron veinticuatro millones y medio.\nMariana: Juntamos más de lo que pedimos. Hay más plata que deuda.\nTomás: De hecho, ahora le debemos algo a todo el barrio.\nHernando: Eso no es una deuda, mijo. Eso se llama tener vecinos.\nTomás: ¿Y la otra mitad de la plata?\nMariana: Para encontrar a Joaquín.\nVale: Y para el viaje a la costa.\nEntonces Hernando recibió un audio de Santa Marta, del cuñado del Chato.\n«Pacheco, ¿me oye? El primo de un amigo conoce a un señor que trabaja en el mar, en Taganga. El abuelo de ese señor se llamaba Herrera».",
   "gloss": [
     {
       "es": "cartero",
@@ -17,8 +17,8 @@
       "en": "brother-in-law"
     },
     {
-      "es": "el cerdo de Rosa ya no cerraba",
-      "en": "Rosa's piggy bank wouldn't close any more"
+      "es": "al cerdo de Rosa ya no le cabía ni una moneda",
+      "en": "Rosa's piggy bank couldn't fit another coin"
     },
     {
       "es": "Rosa nunca tuvo un cerdo tan gordo.",
@@ -178,6 +178,7 @@
     "g:stem-boot",
     "g:that-clauses",
     "p:actualmente",
+    "p:caber",
     "p:cerca-de",
     "p:container-de",
     "p:contar-dos-sentidos",
@@ -189,6 +190,7 @@
     "p:la-gente-singular",
     "p:mas-de-lo-que",
     "p:me-te-nos-objects",
+    "p:medir-pesar-caber",
     "p:numbers-un-una",
     "p:otro-no-article",
     "p:para-inf",
@@ -211,6 +213,7 @@
     "l:año",
     "l:bandeja",
     "l:barrio",
+    "l:caber",
     "l:café",
     "l:caja",
     "l:cartero",
@@ -274,7 +277,6 @@
     "l:oír",
     "l:pared",
     "l:pareja",
-    "l:parte",
     "l:pasear",
     "l:pedir",
     "l:peso",

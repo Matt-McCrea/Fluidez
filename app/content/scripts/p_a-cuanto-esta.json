@@ -31,7 +31,7 @@
       "en": "What is coffee going for today?"
     }
   ],
-  "rule": "For prices that move from day to day (the market, the dollar, petrol), Spanish uses *estar a*.\n\nAsk: *¿A cuánto está…?* (one thing) or *¿A cuánto están…?* (several).\nAnswer: *Está a…* or *Están a…* + the price.\n\nTo say \"per\", just use *el* or *la*: *a cinco mil el kilo*, *a tres mil la libra*.\n\nFor a fixed price, use *¿Cuánto cuesta?* or *¿Cuánto vale?* instead.",
+  "rule": "For prices that move from day to day (the market, the dollar, fuel), Spanish uses *estar a*.\n\nAsk: *¿A cuánto está…?* (one thing) or *¿A cuánto están…?* (several).\nAnswer: *Está a…* or *Están a…* + the price.\n\nTo say \"per\", just use *el* or *la*: *a cinco mil el kilo*, *a tres mil la libra*.\n\nFor a fixed price, use *¿Cuánto cuesta?* or *¿Cuánto vale?* instead.",
   "smallPrint": "This is the same *estar a* you use for distance and temperature. It gives a reading at this moment.",
   "readAndPick": [
     {
@@ -121,22 +121,25 @@
       "why": "*Los tomates* is plural, so *están*."
     },
     {
-      "prompt": "What's the dollar at today?",
+      "prompt": "Type in Spanish: What's the dollar at today?",
       "answer": "¿A cuánto está el dólar hoy?",
-      "accept": [],
+      "accept": [
+        "¿A cómo está el dólar hoy?"
+      ],
       "why": "*¿A cuánto está…?* asks for a price that moves."
     },
     {
-      "prompt": "The dollar is at four thousand pesos.",
+      "prompt": "Type in Spanish: The dollar is at four thousand pesos.",
       "answer": "El dólar está a cuatro mil pesos.",
       "accept": [],
       "why": "*Está a* + the price."
     },
     {
-      "prompt": "Avocados are five thousand a kilo.",
+      "prompt": "Type in Spanish: Avocados are five thousand a kilo.",
       "answer": "El aguacate está a cinco mil el kilo.",
       "accept": [
-        "Los aguacates están a cinco mil el kilo."
+        "Los aguacates están a cinco mil el kilo.",
+        "El kilo de aguacate está a cinco mil."
       ],
       "why": "*El kilo* says \"per kilo\", with no extra word."
     },
@@ -147,7 +150,7 @@
       "why": "Several things means *están* and *los aguacates*."
     },
     {
-      "prompt": "The tomatoes are three thousand a pound.",
+      "prompt": "Type in Spanish: The tomatoes are three thousand a pound.",
       "answer": "Los tomates están a tres mil la libra.",
       "accept": [],
       "why": "Plural tomatoes, so *están*, and *la libra* for \"a pound\"."

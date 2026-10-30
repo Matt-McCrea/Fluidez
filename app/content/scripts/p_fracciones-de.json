@@ -31,7 +31,7 @@
       "en": "Almost half of the customers pay cash."
     }
   ],
-  "rule": "A fraction is a noun, so *de* follows it, just like *la mayoría de*.\n\n*la mitad de* (half)\n*un cuarto de* (a quarter)\n*un tercio de*, *dos tercios de* (a third, two thirds)\n*la quinta parte de* (a fifth)\n\nFor most other fractions use a number and *parte*: *la décima parte*.\n\n*De* + *el* becomes *del*: *la mitad del dinero*.\n\nCareful: *medio kilo* uses an adjective (half a kilo). *La mitad* is the noun, so it takes *de*.",
+  "rule": "A fraction is a noun, so *de* follows it, just like *la mayoría de*.\n\n*la mitad de* (half)\n*un cuarto de* (a quarter)\n*un tercio de*, *dos tercios de* (a third, two thirds)\n*la quinta parte de* (a fifth)\n\nFor most other fractions, Spanish says \"the tenth part\": *la décima parte*.\n\n*De* + *el* becomes *del*: *la mitad del dinero*.\n\nCareful: *medio kilo* uses an adjective (half a kilo). *La mitad* is the noun, so it takes *de*.",
   "smallPrint": "The ordinal number plus *parte* (*quinta parte*, *décima parte*) is how Spanish builds any fraction beyond the common ones.",
   "readAndPick": [
     {
@@ -115,7 +115,7 @@
       "why": "*De* + *el* always merges into *del*."
     },
     {
-      "prompt": "Half of the neighbours want to sell.",
+      "prompt": "Type in Spanish: Half of the neighbours want to sell.",
       "answer": "La mitad de los vecinos quiere vender.",
       "accept": [
         "La mitad de los vecinos quieren vender."
@@ -123,7 +123,7 @@
       "why": "*La mitad de* + the group."
     },
     {
-      "prompt": "A quarter of the customers live far away.",
+      "prompt": "Type in Spanish: A quarter of the customers live far away.",
       "answer": "Un cuarto de los clientes vive lejos.",
       "accept": [
         "Un cuarto de los clientes viven lejos."
@@ -131,15 +131,17 @@
       "why": "*Un cuarto de* + the group."
     },
     {
-      "prompt": "A fifth of the budget goes on rent.",
+      "prompt": "Type in Spanish: A fifth of the budget goes on rent.",
       "answer": "La quinta parte del presupuesto se va en arriendo.",
       "accept": [],
       "why": "For a fifth, Spanish says \"the fifth part\": *la quinta parte del*."
     },
     {
-      "prompt": "Half of the money is Vale's.",
+      "prompt": "Type in Spanish: Half of the money is Vale's.",
       "answer": "La mitad del dinero es de Vale.",
-      "accept": [],
+      "accept": [
+        "La mitad de la plata es de Vale."
+      ],
       "why": "*De* + *el dinero* becomes *del dinero*."
     },
     {
@@ -151,7 +153,7 @@
       "why": "Swap *la mitad* for *un cuarto* and keep the rest."
     },
     {
-      "prompt": "Two thirds of the people support the idea.",
+      "prompt": "Type in Spanish: Two thirds of the people support the idea.",
       "answer": "Dos tercios de la gente apoya la idea.",
       "accept": [
         "Dos tercios de la gente apoyan la idea."
@@ -171,9 +173,9 @@
       "why": "Almost. *De el* always becomes *del*."
     },
     {
-      "wrong": "Un quinto parte del presupuesto se va en arriendo.",
-      "right": "La quinta parte del presupuesto se va en arriendo.",
-      "why": "Almost. *Parte* is feminine, so it's *la quinta parte*."
+      "wrong": "Medio de los vecinos quiere vender.",
+      "right": "La mitad de los vecinos quiere vender.",
+      "why": "Almost. English \"half\" covers both, but before *de* and a group Spanish needs the noun *la mitad*."
     }
   ],
   "personal": "Say what fraction of something in your life is true, for example *La mitad de mis amigos…* or *Un cuarto de mi plata se va en…*."

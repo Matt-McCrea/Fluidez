@@ -9,7 +9,7 @@
       "id": "t1",
       "npc": "Buenos días. Soy la señora Ortiz, del área de crédito. ¿En qué puedo ayudarle?",
       "npcEn": "Good morning. I'm Mrs. Ortiz from the credit department. How can I help you?",
-      "intent": "Say you have a café and need a loan for legal costs (use usted).",
+      "intent": "Say you have a café and need a loan for legal costs.",
       "accept": [
         "Buenos días. Tengo un café y necesito un préstamo para los gastos legales.",
         "Buenos días, señora. Necesito un crédito para pagar a un abogado.",
@@ -22,7 +22,7 @@
             "tienes",
             "necesitas"
           ],
-          "label": "use the yo form, not tú forms"
+          "label": "talk about yourself: tengo, necesito"
         }
       ],
       "next": "t2"
@@ -43,9 +43,11 @@
           "words": [
             "por lo tanto",
             "de modo que",
+            "de manera que",
             "así que",
-            "tan",
-            "por eso"
+            "por eso",
+            "tanto",
+            "tanta"
           ],
           "label": "link the result with así que, por eso or por lo tanto"
         }
@@ -76,13 +78,13 @@
     },
     {
       "id": "t4",
-      "npc": "Ya veo. El interés es del doce por ciento. ¿Le parece alta?",
-      "npcEn": "I see. The interest is twelve percent. Does it seem high to you?",
+      "npc": "Ya veo. El interés es del veinticuatro por ciento. ¿Le parece alto?",
+      "npcEn": "I see. The interest is twenty-four percent. Does it seem high to you?",
       "intent": "Say it seems higher than at the other bank, and ask what the monthly payment would be.",
       "accept": [
-        "Me parece más alta que en el otro banco. ¿Cuánto sería la cuota mensual?",
-        "Es más alta que la del otro banco. ¿De cuánto es la cuota al mes?",
-        "Sí, es más alta que en el otro banco. ¿Cuánto pagaría cada mes?"
+        "Me parece más alto que en el otro banco. ¿Cuánto sería la cuota mensual?",
+        "Es más alto que en el otro banco. ¿De cuánto es la cuota al mes?",
+        "Sí, es más alto que en el otro banco. ¿Cuánto pagaría cada mes?"
       ],
       "require": [
         {
@@ -91,9 +93,9 @@
         },
         {
           "type": "regex",
-          "pattern": "más alta que",
+          "pattern": "más alt[oa] que",
           "flags": "i",
-          "label": "higher than: más alta que"
+          "label": "higher than: más alto que"
         }
       ],
       "focus": "g:comparatives-advanced",

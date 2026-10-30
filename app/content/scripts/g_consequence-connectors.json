@@ -1,7 +1,7 @@
 {
   "node": "g:consequence-connectors",
   "hook": {
-    "line": "Sales are down, and Tomás has to explain to Vale what that means for the café. Saying what happened is easy; saying what follows from it is where you sound like an adult.",
+    "line": "Tomás has to explain a decision to the staff. Saying what happened is easy; saying what follows from it is where you start to sound like an adult.",
     "es": "Las ventas bajaron; por lo tanto, cerramos los lunes.",
     "en": "Sales fell; therefore, we close on Mondays."
   },
@@ -31,7 +31,7 @@
       "en": "Hernando talks so fast that nobody understands him."
     }
   ],
-  "rule": "Three ways to say what follows from something.\n\n*Por lo tanto* means \"therefore\". It is the formal one: it comes after a semicolon or a full stop, with a comma after it.\n\n*De modo que* means \"so\". It is the everyday one, after a comma: *Llovió, de modo que nos quedamos.*\n\nFor \"so much that\", Spanish builds a pair: *tan* + adjective or adverb + *que*, or *tanto* + noun + *que*. *Tanto* matches its noun: *tanto ruido*, *tanta gente*.\n\nEnglish often drops \"that\": \"so tired he slept\". Spanish never drops *que*.",
+  "rule": "Three ways to say what follows from something.\n\n*Por lo tanto* means \"therefore\". It is the formal one: it comes after a semicolon or a full stop, with a comma after it.\n\n*De modo que* means \"so\". It is lighter, after a comma: *Llovió, de modo que nos quedamos.* In chat you will hear *así que* even more.\n\nFor \"so much that\", Spanish builds a pair: *tan* + adjective or adverb + *que*, or *tanto* + noun + *que*. *Tanto* matches its noun: *tanto ruido*, *tanta gente*.\n\nEnglish often drops \"that\": \"so tired he slept\". Spanish never drops *que*.",
   "smallPrint": "Teachers call these consecutive connectors, because they introduce the consequence.",
   "readAndPick": [
     {
@@ -119,7 +119,7 @@
       "prompt": "There are lots of people, so there's no table. Pick the right link: de modo que or tan.",
       "answer": "Hay mucha gente, de modo que no hay mesa.",
       "accept": [],
-      "why": "*De modo que* is the everyday \"so\", and it follows a comma."
+      "why": "*De modo que* is a \"so\" that follows a comma; *tan* needs a describing word after it."
     },
     {
       "prompt": "I'm so tired (a woman speaking) that I don't want to cook. Pick the right word: tan or tanto.",

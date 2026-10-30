@@ -1,7 +1,7 @@
 {
   "id": "sc-u36-c",
   "unit": "u36",
-  "title": "Mil firmas y una torta",
+  "title": "Más de lo que pedimos",
   "spare": false,
   "brief": "You're Tomás, in the café with Mariana, who has an idea for raising money online. She's your friend, so use tú. Report what was raised, say what was sold, and compare the results with the goal.",
   "turns": [
@@ -12,7 +12,7 @@
       "intent": "Say that a lot of money has been raised in three days (use se).",
       "accept": [
         "Se consiguió muchísimo dinero en tres días.",
-        "Qué locura, se ha juntado mucho dinero en tres días.",
+        "Qué locura, se juntó muchísima plata en tres días.",
         "Se juntó mucha plata en tres días."
       ],
       "require": [
@@ -31,13 +31,13 @@
       "intent": "Say that you didn't expect so much help, and that it is more than you hoped.",
       "accept": [
         "No esperaba tanta ayuda. Es más de lo que esperaba.",
-        "Es más ayuda de lo que yo pensaba, de verdad.",
+        "Es más ayuda de la que yo pensaba, de verdad.",
         "Recibimos más de lo que esperábamos."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "más (\\w+ )?de lo que",
+          "pattern": "más (\\w+ )?(de l[oa]s? que|del que)",
           "flags": "i",
           "label": "more than you hoped: más de lo que"
         }
@@ -53,7 +53,7 @@
       "accept": [
         "Se agotaron más rápido de lo que ella pensaba.",
         "Se agotaron más rápido de lo que pensábamos.",
-        "Qué bien, se acabaron más rápido de lo que creíamos."
+        "Qué bien, se acabaron antes de lo que creíamos."
       ],
       "require": [
         {
@@ -61,9 +61,9 @@
           "words": [
             "más rápido",
             "más pronto",
-            "más rápido de lo que"
+            "antes de lo que"
           ],
-          "label": "faster than: más rápido de lo que"
+          "label": "faster than: más rápido de lo que, antes de lo que"
         },
         {
           "type": "regex",
@@ -77,8 +77,8 @@
     },
     {
       "id": "t4",
-      "npc": "Mariana: La meta era diez millones y ya vamos por veinte. Es mucho más.",
-      "npcEn": "Mariana: The goal was ten million and we're already at twenty. That's much more.",
+      "npc": "Mariana: La meta era doce millones y ya vamos por veinte. Es mucho más.",
+      "npcEn": "Mariana: The goal was twelve million and we're already at twenty. That's much more.",
       "intent": "Say that you have enough now, so you can pay the lawyer.",
       "accept": [
         "Entonces ya tenemos suficiente, de modo que podemos pagar al abogado.",
@@ -91,9 +91,11 @@
           "words": [
             "por lo tanto",
             "de modo que",
+            "de manera que",
             "así que",
-            "tan",
-            "por eso"
+            "por eso",
+            "tanto",
+            "tanta"
           ],
           "label": "link the result with así que, de modo que or por lo tanto"
         }
@@ -150,7 +152,6 @@
     "g:le-doubling",
     "g:para-que",
     "g:passive-se",
-    "g:perfecto-experience",
     "g:por-para-1",
     "g:prep-pronouns",
     "g:present-ar",
@@ -163,6 +164,7 @@
     "g:reflexive-routine",
     "g:relative-que",
     "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
     "g:se-impersonal",
     "g:ser-identity",
     "g:stem-boot",
@@ -173,6 +175,7 @@
     "l:acabar",
     "l:agotarse",
     "l:alcanzar",
+    "l:antes",
     "l:ayuda",
     "l:ayudar",
     "l:bien",

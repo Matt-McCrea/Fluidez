@@ -32,9 +32,9 @@
       "npcEn": "It's twenty thousand a kilo. But the price rise isn't mine, it's the suppliers'.",
       "intent": "Say the price went up a lot and is higher than last month.",
       "accept": [
-        "Subió mucho. Está más cara que el mes pasado.",
+        "Subió mucho. Está más caro que el mes pasado.",
         "El precio subió, es más alto que el mes pasado.",
-        "Subió bastante, está más cara que antes."
+        "Subió bastante, está más caro que antes."
       ],
       "require": [
         {
@@ -42,11 +42,12 @@
           "words": [
             "subió",
             "aumentó",
+            "más caro",
             "más cara",
             "más alto",
             "más alta"
           ],
-          "label": "say it went up: subió, más cara"
+          "label": "say it went up: subió, más caro"
         }
       ],
       "focus": "p:subir-subida",
@@ -79,11 +80,11 @@
       "id": "t4",
       "npc": "Diez kilos... ¿y los huevos? Se agotaron esta mañana, ¡se vendieron todos!",
       "npcEn": "Ten kilos... and the eggs? They sold out this morning, they all sold!",
-      "intent": "Ask when more eggs are sold here (use se).",
+      "intent": "Ask when there will be eggs for sale again (use se).",
       "accept": [
-        "¿Cuándo se venden más huevos aquí?",
-        "¿A qué hora se venden los huevos nuevos?",
-        "¿Cuándo se vuelven a vender huevos?"
+        "¿Cuándo se vuelven a vender huevos?",
+        "¿Cuándo se venden huevos otra vez?",
+        "¿Mañana a qué hora se venden los huevos?"
       ],
       "require": [
         {
@@ -127,7 +128,6 @@
     "c:pues",
     "c:siga-siga",
     "c:tienes",
-    "g:adjective-agreement",
     "g:cause-result",
     "g:comparatives",
     "g:direct-objects",
@@ -154,7 +154,7 @@
     "l:antes",
     "l:aquí",
     "l:buena",
-    "l:cara",
+    "l:caro",
     "l:cerdo",
     "l:cuándo",
     "l:cuánto",
@@ -175,7 +175,6 @@
     "l:mayoría",
     "l:mañana",
     "l:mes",
-    "l:nuevo",
     "l:oferta",
     "l:ofrecer",
     "l:pasado",
@@ -193,6 +192,7 @@
     "l:tener",
     "l:usar",
     "l:vender",
+    "l:vez",
     "l:volverse",
     "p:a-cuanto-esta",
     "p:agotarse",
@@ -207,6 +207,7 @@
     "p:la-mayoria-de",
     "p:llegar-a-tiempo",
     "p:no-es-x-es-y",
+    "p:otro-no-article",
     "p:por-ciento",
     "p:possessives-basic",
     "p:prep-questions-basic",

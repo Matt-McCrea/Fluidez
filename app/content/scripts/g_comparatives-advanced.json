@@ -6,39 +6,171 @@
     "en": "There are more and more tourists."
   },
   "examples": [
-    { "es": "Cada vez hay más turistas.", "en": "There are more and more tourists." },
-    { "es": "Mientras más trabajo, menos duermo.", "en": "The more I work, the less I sleep." },
-    { "es": "Cada vez llueve menos.", "en": "It rains less and less." },
-    { "es": "Mientras más gana, más gasta.", "en": "The more he earns, the more he spends." },
-    { "es": "Hernando viene cada vez menos.", "en": "Hernando comes less and less." },
-    { "es": "Mientras más temprano llegas, mejor.", "en": "The earlier you arrive, the better. (to a friend)" },
-    { "es": "Cada vez es más caro.", "en": "It's more and more expensive." }
+    {
+      "es": "Cada vez hay más turistas.",
+      "en": "There are more and more tourists."
+    },
+    {
+      "es": "Mientras más trabajo, menos duermo.",
+      "en": "The more I work, the less I sleep."
+    },
+    {
+      "es": "Cada vez llueve menos.",
+      "en": "It rains less and less."
+    },
+    {
+      "es": "Mientras más gana, más gasta.",
+      "en": "The more he earns, the more he spends."
+    },
+    {
+      "es": "Hernando viene cada vez menos.",
+      "en": "Hernando comes less and less."
+    },
+    {
+      "es": "Mientras más temprano llegas, mejor.",
+      "en": "The earlier you arrive, the better. (to a friend)"
+    },
+    {
+      "es": "Cada vez es más caro.",
+      "en": "It's more and more expensive."
+    }
   ],
   "rule": "Two tools for talking about change.\n\n*Cada vez más / menos*: more and more, less and less. English repeats the word; Spanish adds *cada vez*. It also sits in front of an adjective: *Cada vez es más caro.*\n\n*Mientras más..., más...*: the more..., the more... *Mientras más trabajo, menos duermo.* Both halves start with *más* or *menos*, with a comma in the middle. It can end with just *mejor* or *peor*: *Mientras más temprano llegas, mejor.*\n\nSpanish never adds \"the\" in these. In books and formal speech you will also see *cuanto más...* for the same idea.",
-  "smallPrint": "Teachers call *mientras más..., más...* a proportional comparison, and *cada vez más* a progressive one.",
+  "smallPrint": "Teachers call *mientras más..., más...* a proportional comparison, and *cada vez más* a progressive one. In Colombia you will also hear *entre más...*: *Entre más trabajo, menos duermo.*",
   "readAndPick": [
-    { "es": "Cada vez hay más turistas.", "options": ["There are fewer and fewer tourists.", "There are more and more tourists."], "answer": 1 },
-    { "es": "Cada vez llueve menos.", "options": ["It rains less and less.", "It rains more and more."], "answer": 0 },
-    { "es": "Mientras más trabajo, menos duermo.", "options": ["The more I work, the more I sleep.", "The more I work, the less I sleep."], "answer": 1 },
-    { "es": "Mientras más gana, más gasta.", "options": ["The more he earns, the more he spends.", "The more he earns, the less he spends."], "answer": 0 },
-    { "es": "Hernando viene cada vez menos.", "options": ["Hernando comes more and more.", "Hernando comes less and less."], "answer": 1 },
-    { "es": "Cada vez es más caro.", "options": ["It's more and more expensive.", "It's less and less expensive."], "answer": 0 },
-    { "es": "Mientras más lees, mejor hablas.", "options": ["The more you read, the worse you speak.", "The more you read, the better you speak."], "answer": 1 },
-    { "es": "Cada vez estoy más cansado.", "options": ["I'm more and more tired. (a man speaking)", "I'm less and less tired. (a man speaking)"], "answer": 0 }
+    {
+      "es": "Cada vez hay más turistas.",
+      "options": [
+        "There are fewer and fewer tourists.",
+        "There are more and more tourists."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cada vez llueve menos.",
+      "options": [
+        "It rains less and less.",
+        "It rains more and more."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mientras más trabajo, menos duermo.",
+      "options": [
+        "The more I work, the more I sleep.",
+        "The more I work, the less I sleep."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mientras más gana, más gasta.",
+      "options": [
+        "The more he earns, the more he spends.",
+        "The more he earns, the less he spends."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando viene cada vez menos.",
+      "options": [
+        "Hernando comes more and more.",
+        "Hernando comes less and less."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cada vez es más caro.",
+      "options": [
+        "It's more and more expensive.",
+        "It's less and less expensive."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mientras más lees, mejor hablas.",
+      "options": [
+        "The more you read, the worse you speak.",
+        "The more you read, the better you speak."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cada vez estoy más cansado.",
+      "options": [
+        "I'm more and more tired. (a man speaking)",
+        "I'm less and less tired. (a man speaking)"
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right form and type the whole sentence (There are more and more tourists): ___ hay más turistas. (Cada vez / Mientras)", "answer": "Cada vez hay más turistas.", "accept": [], "why": "\"More and more\" is *cada vez más*." },
-    { "prompt": "Type in Spanish: It rains less and less.", "answer": "Cada vez llueve menos.", "accept": ["Llueve cada vez menos."], "why": "*Cada vez* plus *menos* gives \"less and less\"." },
-    { "prompt": "Type in Spanish: The more I work, the less I sleep.", "answer": "Mientras más trabajo, menos duermo.", "accept": [], "why": "*Mientras más* opens the first half and *menos* opens the second." },
-    { "prompt": "Type in Spanish: The more he earns, the more he spends.", "answer": "Mientras más gana, más gasta.", "accept": [], "why": "Both halves start with *más*, with a comma between." },
-    { "prompt": "Type in Spanish: The earlier you arrive, the better. (to a friend)", "answer": "Mientras más temprano llegas, mejor.", "accept": [], "why": "The second half can be just *mejor*." },
-    { "prompt": "Type in Spanish: Hernando comes less and less.", "answer": "Hernando viene cada vez menos.", "accept": ["Cada vez Hernando viene menos."], "why": "*Cada vez menos* after the verb says \"less and less\"." },
-    { "prompt": "Make it \"more and more\": Cada vez es menos caro.", "answer": "Cada vez es más caro.", "accept": [], "why": "Swap *menos* for *más* and the meaning flips." }
+    {
+      "prompt": "Choose the right form and type the whole sentence (There are more and more tourists): ___ hay más turistas. (Cada vez / Mientras)",
+      "answer": "Cada vez hay más turistas.",
+      "accept": [],
+      "why": "\"More and more\" is *cada vez más*."
+    },
+    {
+      "prompt": "Type in Spanish: It rains less and less.",
+      "answer": "Cada vez llueve menos.",
+      "accept": [
+        "Llueve cada vez menos."
+      ],
+      "why": "*Cada vez* plus *menos* gives \"less and less\"."
+    },
+    {
+      "prompt": "Type in Spanish: The more I work, the less I sleep.",
+      "answer": "Mientras más trabajo, menos duermo.",
+      "accept": [
+        "Entre más trabajo, menos duermo."
+      ],
+      "why": "*Mientras más* opens the first half and *menos* opens the second."
+    },
+    {
+      "prompt": "Type in Spanish: The more he earns, the more he spends.",
+      "answer": "Mientras más gana, más gasta.",
+      "accept": [
+        "Entre más gana, más gasta."
+      ],
+      "why": "Both halves start with *más*, with a comma between."
+    },
+    {
+      "prompt": "Type in Spanish: The earlier you arrive, the better. (to a friend)",
+      "answer": "Mientras más temprano llegas, mejor.",
+      "accept": [
+        "Entre más temprano llegas, mejor."
+      ],
+      "why": "The second half can be just *mejor*."
+    },
+    {
+      "prompt": "Type in Spanish: Hernando comes less and less.",
+      "answer": "Hernando viene cada vez menos.",
+      "accept": [],
+      "why": "*Cada vez menos* after the verb says \"less and less\"."
+    },
+    {
+      "prompt": "Make it \"more and more\": Cada vez es menos caro.",
+      "answer": "Cada vez es más caro.",
+      "accept": [],
+      "why": "Swap *menos* for *más* and the meaning flips."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Más y más turistas vienen.", "right": "Cada vez hay más turistas.", "why": "Almost. English repeats \"more and more\", but Spanish uses *cada vez más*." },
-    { "wrong": "Mientras más trabajo, el menos duermo.", "right": "Mientras más trabajo, menos duermo.", "why": "Spanish doesn't add \"the\"; the second half just starts with *menos*." },
-    { "wrong": "Mientras trabajo más, duermo menos.", "right": "Mientras más trabajo, menos duermo.", "why": "In this pattern *más* comes right after *mientras*, before the verb." }
+    {
+      "wrong": "Más y más turistas vienen.",
+      "right": "Cada vez hay más turistas.",
+      "why": "Almost. English repeats \"more and more\", but Spanish uses *cada vez más*."
+    },
+    {
+      "wrong": "Mientras más trabajo, el menos duermo.",
+      "right": "Mientras más trabajo, menos duermo.",
+      "why": "Spanish doesn't add \"the\"; the second half just starts with *menos*."
+    },
+    {
+      "wrong": "Mientras trabajo más, duermo menos.",
+      "right": "Mientras más trabajo, menos duermo.",
+      "why": "In this pattern *más* comes right after *mientras*, before the verb."
+    }
   ],
   "personal": "Say something that is changing in your life with *cada vez más* or *cada vez menos*, or a *mientras más..., más...* sentence."
 }

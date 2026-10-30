@@ -6,37 +6,159 @@
     "en": "He earns more than he says."
   },
   "examples": [
-    { "es": "Gana más que yo.", "en": "He earns more than me." },
-    { "es": "Gana más de lo que dice.", "en": "He earns more than he says." },
-    { "es": "Trabajas más que Vale.", "en": "You work more than Vale. (to a friend)" },
-    { "es": "Trabajas más de lo que crees.", "en": "You work more than you think. (to a friend)" },
-    { "es": "Es más caro que el otro.", "en": "It's more expensive than the other one." },
-    { "es": "Es más caro de lo que pensaba.", "en": "It's more expensive than I thought." }
+    {
+      "es": "Gana más que yo.",
+      "en": "He earns more than me."
+    },
+    {
+      "es": "Gana más de lo que dice.",
+      "en": "He earns more than he says."
+    },
+    {
+      "es": "Trabajas más que Vale.",
+      "en": "You work more than Vale. (to a friend)"
+    },
+    {
+      "es": "Trabajas más de lo que crees.",
+      "en": "You work more than you think. (to a friend)"
+    },
+    {
+      "es": "Es más caro que el otro.",
+      "en": "It's more expensive than the other one."
+    },
+    {
+      "es": "Es más caro de lo que pensaba.",
+      "en": "It's more expensive than I thought."
+    }
   ],
   "rule": "Ask what comes after \"than\".\n\nA person, thing or number: *más que*.\n*Gana más que yo.* *Es más caro que el otro.*\n\nA verb with its own subject (a whole thought): *más de lo que*.\n*Gana más de lo que dice.* *Es más caro de lo que pensaba.*\n\nA quick test: can you add a verb in English? \"Than me\" is just a person, so *que yo*. \"Than he says\" has a verb, so *de lo que*.\n\nSame with *menos*.",
   "smallPrint": "Teachers call the first a comparison of nouns and the second a comparison with a clause.",
   "readAndPick": [
-    { "es": "Gana más que yo.", "options": ["He earns more than me.", "He earns more than I thought."], "answer": 0 },
-    { "es": "Gana más de lo que dice.", "options": ["He earns more than me.", "He earns more than he says."], "answer": 1 },
-    { "es": "Es más caro que el otro.", "options": ["It's more expensive than the other one.", "It's more expensive than I thought."], "answer": 0 },
-    { "es": "Es más caro de lo que pensaba.", "options": ["It's more expensive than the other one.", "It's more expensive than I thought."], "answer": 1 },
-    { "es": "Trabajas más de lo que crees.", "options": ["You work more than Vale.", "You work more than you think."], "answer": 1 },
-    { "es": "Trabajas más que Vale.", "options": ["You work more than Vale.", "You work more than you think."], "answer": 0 },
-    { "es": "Cuesta menos de lo que piensas.", "options": ["It costs less than the other one.", "It costs less than you think."], "answer": 1 },
-    { "es": "Tengo menos plata que Vale.", "options": ["I have less money than Vale.", "I have less money than I thought."], "answer": 0 }
+    {
+      "es": "Gana más que yo.",
+      "options": [
+        "He earns more than me.",
+        "He earns more than I thought."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Gana más de lo que dice.",
+      "options": [
+        "He earns more than me.",
+        "He earns more than he says."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es más caro que el otro.",
+      "options": [
+        "It's more expensive than the other one.",
+        "It's more expensive than I thought."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es más caro de lo que pensaba.",
+      "options": [
+        "It's more expensive than the other one.",
+        "It's more expensive than I thought."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Trabajas más de lo que crees.",
+      "options": [
+        "You work more than Vale.",
+        "You work more than you think."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Trabajas más que Vale.",
+      "options": [
+        "You work more than Vale.",
+        "You work more than you think."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuesta menos de lo que piensas.",
+      "options": [
+        "It costs less than the other one.",
+        "It costs less than you think."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo menos plata que Vale.",
+      "options": [
+        "I have less money than Vale.",
+        "I have less money than I thought."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right form and type the whole sentence (He earns more than me): Gana más ___ yo. (que / de lo que)", "answer": "Gana más que yo.", "accept": [], "why": "\"Me\" is just a person, so *que*." },
-    { "prompt": "Choose the right form and type the whole sentence (He earns more than he says): Gana más ___ dice. (que / de lo que)", "answer": "Gana más de lo que dice.", "accept": [], "why": "*Dice* is a verb, so *de lo que*." },
-    { "prompt": "Type in Spanish (to a friend): You work more than Vale.", "answer": "Trabajas más que Vale.", "accept": ["Tú trabajas más que Vale."], "why": "Vale is a person: *que Vale*." },
-    { "prompt": "Type in Spanish (to a friend): You work more than you think.", "answer": "Trabajas más de lo que crees.", "accept": ["Trabajas más de lo que piensas."], "why": "\"You think\" has a verb: *de lo que*." },
-    { "prompt": "Type in Spanish: It's more expensive than I thought.", "answer": "Es más caro de lo que pensaba.", "accept": [], "why": "\"I thought\" has a verb: *de lo que*." },
-    { "prompt": "Type in Spanish: I have less money than Vale.", "answer": "Tengo menos plata que Vale.", "accept": [], "why": "Vale is a name, so *que*." }
+    {
+      "prompt": "Choose the right form and type the whole sentence (He earns more than me): Gana más ___ yo. (que / de lo que)",
+      "answer": "Gana más que yo.",
+      "accept": [],
+      "why": "\"Me\" is just a person, so *que*."
+    },
+    {
+      "prompt": "Choose the right form and type the whole sentence (He earns more than he says): Gana más ___ dice. (que / de lo que)",
+      "answer": "Gana más de lo que dice.",
+      "accept": [],
+      "why": "*Dice* is a verb, so *de lo que*."
+    },
+    {
+      "prompt": "Type in Spanish (to a friend): You work more than Vale.",
+      "answer": "Trabajas más que Vale.",
+      "accept": [
+        "Tú trabajas más que Vale."
+      ],
+      "why": "Vale is a person: *que Vale*."
+    },
+    {
+      "prompt": "Type in Spanish (to a friend): You work more than you think.",
+      "answer": "Trabajas más de lo que crees.",
+      "accept": [
+        "Trabajas más de lo que piensas."
+      ],
+      "why": "\"You think\" has a verb: *de lo que*."
+    },
+    {
+      "prompt": "Type in Spanish: It's more expensive than I thought.",
+      "answer": "Es más caro de lo que pensaba.",
+      "accept": [
+        "Es más caro de lo que creía."
+      ],
+      "why": "\"I thought\" has a verb: *de lo que*."
+    },
+    {
+      "prompt": "Type in Spanish: I have less money than Vale.",
+      "answer": "Tengo menos plata que Vale.",
+      "accept": [],
+      "why": "Vale is a name, so *que*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Gana más que dice.", "right": "Gana más de lo que dice.", "why": "Almost. Before a verb, Spanish adds *de lo*." },
-    { "wrong": "Gana más de lo que yo.", "right": "Gana más que yo.", "why": "A bare person after \"than\" only needs *que*." },
-    { "wrong": "Es más caro de lo el otro.", "right": "Es más caro que el otro.", "why": "*El otro* is a thing, not a clause, so just *que*." }
+    {
+      "wrong": "Gana más que dice.",
+      "right": "Gana más de lo que dice.",
+      "why": "Almost. Before a verb, Spanish adds *de lo*."
+    },
+    {
+      "wrong": "Gana más de lo que yo.",
+      "right": "Gana más que yo.",
+      "why": "A bare person after \"than\" only needs *que*."
+    },
+    {
+      "wrong": "Es más caro que lo que pensaba.",
+      "right": "Es más caro de lo que pensaba.",
+      "why": "Before a whole thought, Spanish says *de lo que*, not *que lo que*."
+    }
   ],
   "personal": "Compare yourself with a friend using *más que*, then say something about yourself with *más de lo que* (for example, how much you sleep or work)."
 }

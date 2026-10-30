@@ -180,7 +180,7 @@
         "label": "say something he should not do"
       }
     ],
-    "model": "Don Hernando, creo que usted debe revisar su cuenta del banco esta semana. Los intereses subieron mucho y debería hablar con el gerente esta semana. No debe firmar nada sin leerlo bien, porque el empleado siempre tiene prisa. Si quiere, yo lo acompaño el martes por la tarde. Usted debe cuidar sus ahorros, porque la inflación está muy alta este año. Cuente conmigo para lo que necesite, de verdad.",
+    "model": "Don Hernando, creo que usted debe revisar su cuenta del banco esta semana. Los intereses subieron mucho y debería hablar con el gerente. No debe firmar nada sin leerlo bien, porque el empleado siempre tiene prisa. Si quiere, yo lo acompaño el martes por la tarde. Usted debe cuidar sus ahorros, porque la inflación está muy alta este año. Cuente conmigo para lo que necesite, de verdad.",
     "focus": "g:deber-modal",
     "requires": [
       "c:bien-y-tu",
@@ -275,7 +275,7 @@
         "n": 4
       }
     ],
-    "model": "Mariana, necesitamos tu ayuda con la campaña para pagar al abogado. Cuento contigo para escribir el mensaje, porque tú escribes mucho mejor que yo. Contamos con que lo publiques el viernes. Vale cuenta con varios vecinos del barrio y con los clientes de siempre. ¿Puedes mandarme el texto antes del jueves? Si necesitas las cifras, te las paso hoy. Gracias, de verdad.",
+    "model": "Mariana, necesitamos tu ayuda con la campaña para pagar al abogado. Cuento contigo para escribir el mensaje, porque tú escribes mucho mejor que yo. Contamos contigo para publicarlo el viernes. Vale cuenta con varios vecinos del barrio y con los clientes de siempre. ¿Puedes mandarme el texto antes del jueves? Si necesitas las cifras, te las paso hoy. Gracias, de verdad.",
     "focus": "p:contar-con",
     "requires": [
       "c:cuenta-conmigo",
@@ -287,13 +287,11 @@
       "g:direct-objects",
       "g:gender-articles",
       "g:object-pronoun-position",
+      "g:prep-pronouns",
       "g:present-ar",
       "g:present-er-ir",
       "g:si-present",
       "g:stem-boot",
-      "g:subj-influence",
-      "g:subj-wanting",
-      "g:that-clauses",
       "g:verb-infinitive",
       "l:abogado",
       "l:antes",
@@ -359,14 +357,13 @@
         "n": 4
       }
     ],
-    "model": "Vale, miré las cifras y la verdad es que vendimos más de lo que esperaba. El pan y los postres dieron más de lo que pensábamos, casi la mitad del dinero. Pero pagamos más de lo que teníamos para los gastos. El abogado cuesta más de lo que dijo al principio, y tengo menos paciencia de lo que tenía. Hablamos mañana, porque no es tan grave como parece.",
+    "model": "Vale, miré las cifras y la verdad es que vendimos más de lo que esperaba. El pan y los postres dieron más de lo que pensábamos, casi la mitad del dinero. Pero los gastos fueron más altos de lo que creíamos. El abogado cuesta más de lo que dijo al principio, y tengo menos paciencia de la que tenía. Hablamos mañana con calma. No es tan grave como parece.",
     "focus": "p:mas-de-lo-que",
     "requires": [
       "c:es-que",
       "c:la-verdad",
-      "c:porque",
       "c:tengo",
-      "g:cause-result",
+      "g:adjective-agreement",
       "g:comparatives",
       "g:gender-articles",
       "g:imperfect-habitual",
@@ -376,13 +373,18 @@
       "g:preterite-ar",
       "g:preterite-er-ir",
       "g:preterite-irregular-strong",
+      "g:preterite-ser-ir-hacer",
       "g:relatives-donde-lo-que",
+      "g:relatives-prepositions",
       "g:ser-identity",
       "g:stem-boot",
       "g:yo-irregular",
       "l:abogado",
+      "l:alto",
+      "l:calma",
       "l:cifra",
       "l:costar",
+      "l:creer",
       "l:dar",
       "l:decir",
       "l:dinero",
@@ -394,7 +396,6 @@
       "l:mirar",
       "l:mitad",
       "l:paciencia",
-      "l:pagar",
       "l:pan",
       "l:parece",
       "l:pensar",
@@ -404,9 +405,9 @@
       "l:tener",
       "l:vender",
       "l:verdad",
+      "p:es-tiene-lleva",
       "p:fracciones-de",
-      "p:mas-de-lo-que",
-      "p:para-inf"
+      "p:mas-de-lo-que"
     ]
   },
   {
@@ -499,13 +500,13 @@
     "constraints": [
       {
         "type": "regex",
-        "pattern": "tanto como|la mitad|el triple|tanto como",
-        "label": "compare: dos veces más que, la mitad de, tanto como..."
+        "pattern": "tanto como|la mitad|el doble|el triple|dos veces",
+        "label": "compare: el doble, la mitad, tanto como..."
       },
       {
         "type": "regex",
-        "pattern": "cada vez (más|menos)|cuanto (más|menos)",
-        "label": "show a trend: cada vez más, cuanto más..."
+        "pattern": "cada vez (más|menos)|(mientras|entre|cuanto) (más|menos)",
+        "label": "show a trend: cada vez más, mientras más..."
       },
       {
         "type": "minSentences",
@@ -591,7 +592,7 @@
         "n": 4
       }
     ],
-    "model": "Hola, Dani. Todo es muy raro aquí. Vendemos cada vez más, pero debemos cada vez más, porque cada factura del abogado sube. Trabajo tanto que casi no duermo, y Vale está tan cansada como yo. Pero hay buenas noticias: la gente nos ayuda cada vez más, y cada día llegan mensajes nuevos. ¡Te cuento todo cuando nos veamos, y tú me cuentas de Toronto!",
+    "model": "Hola, Dani. Todo es muy raro aquí. Mientras más vendemos, más debemos, porque cada factura del abogado es más alta. Trabajo tanto que casi no duermo, y Vale está tan cansada como yo. Pero hay buenas noticias: la gente nos ayuda cada vez más, y cada día llegan mensajes nuevos. ¡Te cuento todo cuando nos veamos, y tú me cuentas de Toronto!",
     "focus": "g:comparatives-advanced",
     "requires": [
       "c:bien-y-tu",
@@ -614,6 +615,7 @@
       "g:subj-wanting",
       "g:that-clauses",
       "l:abogado",
+      "l:alto",
       "l:aquí",
       "l:ayudar",
       "l:buena",
@@ -631,12 +633,12 @@
       "l:nuevo",
       "l:raro",
       "l:ser",
-      "l:subir",
       "l:trabajar",
       "l:vender",
       "l:ver",
       "l:vez",
       "p:aqui-ahi-alla",
+      "p:es-tiene-lleva",
       "p:la-gente-singular",
       "p:me-te-nos-objects",
       "p:quantifiers-basic",
@@ -646,7 +648,7 @@
   {
     "id": "w-u36-09",
     "unit": "u36",
-    "prompt": "Write an email to the café's landlord, someone formal. Explain that the fines have been costly, and say what follows from that.",
+    "prompt": "Write a formal email to the city office that keeps fining the café. Explain what the fines have cost you, and say what follows from that.",
     "minWords": 60,
     "maxWords": 120,
     "constraints": [
@@ -670,19 +672,22 @@
         "n": 4
       }
     ],
-    "model": "Estimado señor Pardo: Los gastos de este año fueron muy altos. Por lo tanto, no podemos pagar el arriendo completo este mes. Además, el abogado cobra mucho, de modo que casi no queda dinero en la caja. Le pido paciencia. Podemos pagar la mitad ahora y la otra mitad el mes próximo. Quedo atento a su respuesta, y le doy las gracias por su tiempo. Atentamente, Tomás.",
+    "model": "Buenos días: Este año el café pagó cuatro veces por problemas pequeños con los papeles. Por lo tanto, los gastos fueron más altos que las ventas. Además, el abogado cobra mucho, de modo que casi no queda dinero en la caja. Les pido una reunión para hablar de esto. Podemos ir cualquier día de la próxima semana. Quedo atento a su respuesta, y les doy las gracias por su tiempo. Atentamente, Tomás.",
     "focus": "g:consequence-connectors",
     "requires": [
       "c:ademas",
       "c:atentamente",
-      "c:cordial-saludo",
+      "c:hola-buenos-dias",
       "c:quedo-atento",
       "g:adjective-agreement",
+      "g:cada-cualquier",
+      "g:comparatives",
       "g:consequence-connectors",
       "g:gender-articles",
       "g:indirect-objects",
       "g:present-ar",
       "g:present-er-ir",
+      "g:preterite-ar",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "g:stem-e-i",
@@ -690,39 +695,47 @@
       "g:yo-irregular",
       "l:abogado",
       "l:además",
-      "l:ahora",
       "l:alto",
-      "l:arriendo",
       "l:atentamente",
       "l:atento",
       "l:año",
+      "l:bueno",
+      "l:café",
       "l:caja",
       "l:cobrar",
-      "l:completar",
       "l:dar",
       "l:dinero",
-      "l:estimado",
+      "l:día",
       "l:gasto",
-      "l:mes",
-      "l:mitad",
+      "l:hablar",
+      "l:ir",
       "l:modo",
-      "l:paciencia",
       "l:pagar",
+      "l:papel",
       "l:pedir",
+      "l:pequeño",
       "l:poder",
+      "l:problema",
       "l:próximo",
       "l:quedar",
       "l:respuesta",
+      "l:reunión",
+      "l:semana",
       "l:ser",
-      "l:señor",
       "l:tiempo",
+      "l:venta",
+      "l:vez",
+      "p:costar-pagar",
       "p:demonstratives-basic",
       "p:es-tiene-lleva",
       "p:gracias-por",
-      "p:otro-no-article",
+      "p:para-inf",
+      "p:para-inf-purpose",
       "p:possessives-basic",
       "p:preguntar-pedir",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:time-pasado-que-viene",
+      "p:veces-al"
     ]
   },
   {
@@ -734,8 +747,8 @@
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\btan \\w+ que\\b|\\btanto \\w+ que\\b",
-        "label": "use tan + adjective + que"
+        "pattern": "\\btan \\w+ que\\b|\\bt(anto|anta|antos|antas)( \\w+)? que\\b",
+        "label": "use tan ... que or tanto ... que"
       },
       {
         "type": "regex",
@@ -1056,7 +1069,7 @@
   {
     "id": "w-u36-14",
     "unit": "u36",
-    "prompt": "Reply to a customer you do not know, who wrote asking whether the guava cake is still available. It sold out. Use usted and apologise.",
+    "prompt": "Reply to a customer you do not know, who wrote asking whether the chocolate cake is still available. It sold out. Use usted and apologise.",
     "minWords": 60,
     "maxWords": 120,
     "constraints": [

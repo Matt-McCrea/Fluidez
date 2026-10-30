@@ -6,38 +6,180 @@
     "en": "How much is a kilo of potatoes?"
   },
   "examples": [
-    { "es": "¿A cómo está el kilo de papa?", "en": "How much is a kilo of potatoes?" },
-    { "es": "El aguacate está a diez mil pesos el kilo.", "en": "Avocados are ten thousand pesos a kilo." },
-    { "es": "Hoy estamos a quince grados.", "en": "Today it's fifteen degrees." },
-    { "es": "Queda a dos cuadras.", "en": "It's two blocks away." },
-    { "es": "Estamos a cinco minutos de aquí.", "en": "We're five minutes from here." },
-    { "es": "¿A cómo está el dólar hoy?", "en": "What's the dollar at today?" }
+    {
+      "es": "¿A cómo está el kilo de papa?",
+      "en": "How much is a kilo of potatoes?"
+    },
+    {
+      "es": "El aguacate está a diez mil pesos el kilo.",
+      "en": "Avocados are ten thousand pesos a kilo."
+    },
+    {
+      "es": "Hoy estamos a quince grados.",
+      "en": "Today it's fifteen degrees."
+    },
+    {
+      "es": "Queda a dos cuadras.",
+      "en": "It's two blocks away."
+    },
+    {
+      "es": "Estamos a cinco minutos de aquí.",
+      "en": "We're five minutes from here."
+    },
+    {
+      "es": "¿A cómo está el dólar hoy?",
+      "en": "What's the dollar at today?"
+    }
   ],
   "rule": "*Estar a* plus a number tells you where a changing figure sits right now: today's price, the temperature, the distance.\n\n*¿A cómo está el kilo?* *Está a diez mil.*\n*Estamos a quince grados.*\n*Queda a dos cuadras* (*quedar* works for distances).\n\nFor a fixed price, use *¿Cuánto cuesta?*. For a price that moves day to day, like produce or the dollar, use *¿A cómo está?*",
   "smallPrint": "Teachers call this *estar* plus *a* a construction of measure: it places something on a scale.",
   "readAndPick": [
-    { "es": "Hoy estamos a quince grados.", "options": ["It's fifteen degrees today.", "It's fifteen minutes away.", "It costs fifteen thousand today."], "answer": 0 },
-    { "es": "Queda a dos cuadras.", "options": ["It costs two thousand.", "It's two blocks away.", "It's two degrees."], "answer": 1 },
-    { "es": "El aguacate está a diez mil pesos el kilo.", "options": ["The avocado is ten thousand pesos a kilo.", "The avocado is ten blocks away.", "The avocado weighs ten kilos."], "answer": 0 },
-    { "es": "Estamos a cinco minutos de aquí.", "options": ["We're five degrees from here.", "We're five blocks from here.", "We're five minutes from here."], "answer": 2 },
-    { "es": "¿A cómo está el dólar hoy?", "options": ["How far is the dollar today?", "What's the dollar at today?"], "answer": 1 },
-    { "es": "El café queda a tres cuadras de la plaza.", "options": ["The café is three blocks from the plaza.", "The café is three degrees from the plaza.", "The café is three thousand from the plaza."], "answer": 0 },
-    { "es": "Hoy están a tres mil pesos el kilo.", "options": ["Today they are three kilometers away.", "Today they are three thousand pesos a kilo.", "Today they are three degrees."], "answer": 1 },
-    { "es": "Queda a unos veinte minutos.", "options": ["It's about twenty minutes away.", "It's about twenty blocks away.", "It costs about twenty thousand."], "answer": 0 }
+    {
+      "es": "Hoy estamos a quince grados.",
+      "options": [
+        "It's fifteen degrees today.",
+        "It's fifteen minutes away.",
+        "It costs fifteen thousand today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Queda a dos cuadras.",
+      "options": [
+        "It costs two thousand.",
+        "It's two blocks away.",
+        "It's two degrees."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El aguacate está a diez mil pesos el kilo.",
+      "options": [
+        "The avocado is ten thousand pesos a kilo.",
+        "The avocado is ten blocks away.",
+        "The avocado weighs ten kilos."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estamos a cinco minutos de aquí.",
+      "options": [
+        "We're five degrees from here.",
+        "We're five blocks from here.",
+        "We're five minutes from here."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿A cómo está el dólar hoy?",
+      "options": [
+        "How far is the dollar today?",
+        "What's the dollar at today?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El café queda a tres cuadras de la plaza.",
+      "options": [
+        "The café is three blocks from the plaza.",
+        "The café is three degrees from the plaza.",
+        "The café is three thousand from the plaza."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hoy están a tres mil pesos el kilo.",
+      "options": [
+        "Today they are three kilometers away.",
+        "Today they are three thousand pesos a kilo.",
+        "Today they are three degrees."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Queda a unos veinte minutos.",
+      "options": [
+        "It's about twenty minutes away.",
+        "It's about twenty blocks away.",
+        "It costs about twenty thousand."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right form and type the whole sentence (The dollar is at four thousand pesos): El dólar ___ a cuatro mil pesos. (está / es)", "answer": "El dólar está a cuatro mil pesos.", "accept": [], "why": "A price that moves takes *está a*." },
-    { "prompt": "Ask a vendor: How much is the black coffee today?", "answer": "¿A cuánto está el tinto?", "accept": ["¿A cómo está el tinto?", "¿A cuánto está el tinto hoy?", "¿A cómo está el tinto hoy?"], "why": "*¿A cuánto está?* asks for a price right now." },
-    { "prompt": "Type in Spanish: Today it's fifteen degrees.", "answer": "Hoy estamos a quince grados.", "accept": ["Estamos a quince grados hoy.", "Hoy estamos a 15 grados."], "why": "Temperature takes *estamos a*." },
-    { "prompt": "Type in Spanish: The café is three blocks from the plaza.", "answer": "El café queda a tres cuadras de la plaza.", "accept": ["El café está a tres cuadras de la plaza."], "why": "Distance takes *a*, plus the number and the unit." },
-    { "prompt": "Type in Spanish: We're five minutes from here.", "answer": "Estamos a cinco minutos de aquí.", "accept": [], "why": "*Estamos a* plus the time gives distance." },
-    { "prompt": "Answer a customer: Today the potatoes are at three thousand pesos a kilo.", "answer": "Hoy están a tres mil pesos el kilo.", "accept": ["Hoy las papas están a tres mil pesos el kilo."], "why": "Plural potatoes, so *están a*." },
-    { "prompt": "Type in Spanish: What's the dollar at today?", "answer": "¿A cómo está el dólar hoy?", "accept": ["¿A cuánto está el dólar hoy?"], "why": "A price that changes daily takes *¿A cómo está?*" }
+    {
+      "prompt": "Choose the right form and type the whole sentence (The dollar is at four thousand pesos): El dólar ___ a cuatro mil pesos. (está / es)",
+      "answer": "El dólar está a cuatro mil pesos.",
+      "accept": [],
+      "why": "A price that moves takes *está a*."
+    },
+    {
+      "prompt": "Ask a vendor: How much is a kilo of potatoes today?",
+      "answer": "¿A cómo está el kilo de papa hoy?",
+      "accept": [
+        "¿A cuánto está el kilo de papa hoy?",
+        "¿A cómo está el kilo de papa?",
+        "¿A cuánto está el kilo de papa?"
+      ],
+      "why": "The price of potatoes moves, so you ask *¿a cómo está?*"
+    },
+    {
+      "prompt": "Type in Spanish: Today it's fifteen degrees.",
+      "answer": "Hoy estamos a quince grados.",
+      "accept": [
+        "Estamos a quince grados hoy.",
+        "Hoy estamos a 15 grados."
+      ],
+      "why": "Temperature takes *estamos a*."
+    },
+    {
+      "prompt": "Type in Spanish: The café is three blocks from the plaza.",
+      "answer": "El café queda a tres cuadras de la plaza.",
+      "accept": [
+        "El café está a tres cuadras de la plaza."
+      ],
+      "why": "Distance takes *a*, plus the number and the unit."
+    },
+    {
+      "prompt": "Type in Spanish: We're five minutes from here.",
+      "answer": "Estamos a cinco minutos de aquí.",
+      "accept": [],
+      "why": "*Estamos a* plus a time says how far away you are."
+    },
+    {
+      "prompt": "Answer a customer: Today the potatoes are at three thousand pesos a kilo.",
+      "answer": "Hoy las papas están a tres mil pesos el kilo.",
+      "accept": [
+        "Hoy están a tres mil pesos el kilo.",
+        "Las papas están hoy a tres mil pesos el kilo."
+      ],
+      "why": "Plural potatoes, so *están a*."
+    },
+    {
+      "prompt": "Type in Spanish: What's the dollar at today?",
+      "answer": "¿A cómo está el dólar hoy?",
+      "accept": [
+        "¿A cuánto está el dólar hoy?"
+      ],
+      "why": "A price that changes daily takes *¿A cómo está?*"
+    }
   ],
   "pitfalls": [
-    { "wrong": "Estamos en quince grados.", "right": "Estamos a quince grados.", "why": "Almost. Spanish uses *a* for a figure on a scale, not *en*." },
-    { "wrong": "Queda en dos cuadras.", "right": "Queda a dos cuadras.", "why": "Distance always takes *a*." },
-    { "wrong": "El dólar es a cuatro mil pesos.", "right": "El dólar está a cuatro mil pesos.", "why": "The price changes, so *está*, not *es*." }
+    {
+      "wrong": "Estamos en quince grados.",
+      "right": "Estamos a quince grados.",
+      "why": "Almost. Spanish uses *a* for a figure on a scale, not *en*."
+    },
+    {
+      "wrong": "Está dos cuadras de aquí.",
+      "right": "Está a dos cuadras de aquí.",
+      "why": "English says \"two blocks from here\" with nothing in front; Spanish needs *a* before the distance."
+    },
+    {
+      "wrong": "El dólar es a cuatro mil pesos.",
+      "right": "El dólar está a cuatro mil pesos.",
+      "why": "The price changes, so *está*, not *es*."
+    }
   ],
   "personal": "Tell us the temperature where you are, or how far your home is from here, with *estar a* or *quedar a*."
 }

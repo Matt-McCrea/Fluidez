@@ -1,7 +1,7 @@
 {
   "node": "p:agotarse",
   "hook": {
-    "line": "Mariana gets to the box office ten minutes late, and the clerk gives her the news in the way every Bogotano does: the tickets simply ran out, and nobody is to blame.",
+    "line": "Mariana gets to the box office ten minutes late, and the clerk gives her the news the Spanish way: the tickets simply ran out, and nobody is to blame.",
     "es": "Se agotaron las boletas en dos horas.",
     "en": "The tickets sold out in two hours."
   },
@@ -149,10 +149,12 @@
       "why": "*Nos* is \"on us\", and *plata* is singular, so *agotó*."
     },
     {
-      "prompt": "Make it negative: Se agotó el café.",
-      "answer": "No se agotó el café.",
-      "accept": [],
-      "why": "*No* goes right before *se*."
+      "prompt": "Make it about the tickets: Se agotó el café.",
+      "answer": "Se agotaron las boletas.",
+      "accept": [
+        "Las boletas se agotaron."
+      ],
+      "why": "*Boletas* is plural, so the verb becomes *agotaron*."
     },
     {
       "prompt": "Ask a friend (informal): Did you run out of patience?",
@@ -173,9 +175,9 @@
       "why": "The verb matches the thing that ran out, so plural *boletas* needs *agotaron*."
     },
     {
-      "wrong": "Las boletas se agotan ahora.",
-      "right": "Las boletas ya están agotadas.",
-      "why": "When the tickets are gone and you are describing how things are, Spanish uses *estar agotado*."
+      "wrong": "Se agotaron de boletas.",
+      "right": "Se agotaron las boletas.",
+      "why": "English says \"sold out of tickets\", but in Spanish the tickets themselves run out, with no *de*."
     }
   ],
   "personal": "Say one true thing about something that ran out on you this week, using *se me agotó* or *se nos agotó*, like *se me agotó la paciencia*."

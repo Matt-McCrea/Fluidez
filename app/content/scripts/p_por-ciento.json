@@ -1,7 +1,7 @@
 {
   "node": "p:por-ciento",
   "hook": {
-    "line": "Since the blogger's review, Vale has been checking the till every night. Numbers need a percentage, and Spanish puts a small word in front of it.",
+    "line": "Since the blogger's review, Vale checks the till every night, and now she talks in percentages. Spanish usually puts a small word in front of the figure.",
     "es": "Las ventas subieron un 20 %.",
     "en": "Sales went up by 20%."
   },
@@ -35,7 +35,7 @@
       "en": "In total, it comes to forty thousand pesos."
     }
   ],
-  "rule": "You say the percent sign as *por ciento*, and you write it with a space: *5 %*.\n\nThe big difference from English: the figure gets a small word in front.\n\n*un 5 %* after a verb of change: *subieron un 5 %* (went up by 5%).\n*el 30 % de…* for a share of a group: *el 30 % de los clientes*.\n\nColombian decimals use a comma: *1,6 %*.\n\nFor the grand sum, say *en total*.",
+  "rule": "You say the percent sign as *por ciento*, and you write it with a space: *5 %*.\n\nThe big difference from English: the figure usually gets a small word in front.\n\n*un 5 %* after a verb of change: *subieron un 5 %* (went up by 5%).\n*el 30 % de…* for a share of a group: *el 30 % de los clientes*.\n\nColombian decimals use a comma: *1,6 %*.\n\nFor the grand sum, say *en total*.",
   "smallPrint": "The *un* here is not \"a\": it marks the amount of change, and the *el* marks the share. Both are articles in front of a number.",
   "readAndPick": [
     {
@@ -116,30 +116,34 @@
       "prompt": "Choose *un* or *por*: Los precios subieron ___ 5 %. Type the whole sentence.",
       "answer": "Los precios subieron un 5 %.",
       "accept": [
-        "Los precios subieron un 5%."
+        "Los precios subieron un 5%.",
+        "Los precios subieron en un 5 %."
       ],
       "why": "For how much something changed, Spanish puts *un* before the figure."
     },
     {
-      "prompt": "Sales rose by 10%.",
+      "prompt": "Type in Spanish: Sales rose by 10%.",
       "answer": "Las ventas aumentaron un 10 %.",
       "accept": [
         "Las ventas subieron un 10 %.",
         "Las ventas aumentaron un 10%.",
-        "Las ventas subieron un 10%."
+        "Las ventas subieron un 10%.",
+        "Las ventas aumentaron en un 10 %.",
+        "Las ventas subieron en un 10 %."
       ],
       "why": "*Un* goes in front of the figure after the verb of change."
     },
     {
-      "prompt": "Prices dropped by 3%.",
+      "prompt": "Type in Spanish: Prices dropped by 3%.",
       "answer": "Los precios bajaron un 3 %.",
       "accept": [
-        "Los precios bajaron un 3%."
+        "Los precios bajaron un 3%.",
+        "Los precios bajaron en un 3 %."
       ],
       "why": "*Bajaron* for the fall, *un* before the amount."
     },
     {
-      "prompt": "30% of the customers buy online.",
+      "prompt": "Type in Spanish: 30% of the customers buy online.",
       "answer": "El 30 % de los clientes compra por internet.",
       "accept": [
         "Un 30 % de los clientes compra por internet.",
@@ -153,7 +157,7 @@
       "why": "A share of a group starts with *el* (or *un*) and continues with *de*."
     },
     {
-      "prompt": "How much is it in total? (to a friend)",
+      "prompt": "Type in Spanish: How much is it in total?",
       "answer": "¿Cuánto es en total?",
       "accept": [],
       "why": "*En total* says the grand sum."
@@ -167,7 +171,7 @@
       "why": "Swap the verb and keep *un 10 %*."
     },
     {
-      "prompt": "20% of the customers pay by card.",
+      "prompt": "Type in Spanish: 20% of the customers pay by card.",
       "answer": "El 20 % de los clientes paga con tarjeta.",
       "accept": [
         "Un 20 % de los clientes paga con tarjeta.",
@@ -183,9 +187,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Los precios subieron 5 %.",
-      "right": "Los precios subieron un 5 %.",
-      "why": "Almost. Spanish wants a small word before the figure: *un 5 %*."
+      "wrong": "La inflación fue de 1.6 %.",
+      "right": "La inflación fue de 1,6 %.",
+      "why": "Almost. Colombia writes decimals with a comma, not a point."
     },
     {
       "wrong": "Los precios subieron por 5 %.",

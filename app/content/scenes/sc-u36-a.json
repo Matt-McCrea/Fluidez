@@ -72,20 +72,20 @@
     },
     {
       "id": "t4",
-      "npc": "Vale: Los abogados cuestan una fortuna. ¿Qué hacemos?",
-      "npcEn": "Vale: The lawyers cost a fortune. What do we do?",
-      "intent": "Say that the expenses are bigger than the profit.",
+      "npc": "Vale: Y los abogados cuestan una fortuna. Vendemos más, pero no alcanza.",
+      "npcEn": "Vale: And the lawyers cost a fortune. We're selling more, but it's not enough.",
+      "intent": "Say that the more you sell, the more you owe.",
       "accept": [
-        "Los gastos son más grandes que la ganancia.",
-        "Es increíble: los gastos son más grandes que lo que ganamos.",
-        "Los gastos son mayores que la ganancia."
+        "Mientras más vendemos, más debemos.",
+        "Es increíble: mientras más vendemos, más debemos.",
+        "Entre más vendemos, más debemos."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "(más \\w+ que|mayor)",
+          "pattern": "(mientras|entre|cuanto) más",
           "flags": "i",
-          "label": "bigger than: más grandes que, mayores que"
+          "label": "the more..., the more...: mientras más..., más..."
         }
       ],
       "focus": "g:comparatives-advanced",
@@ -151,6 +151,7 @@
     "g:that-clauses",
     "g:verb-infinitive",
     "l:abogado",
+    "l:alcanzar",
     "l:alto",
     "l:año",
     "l:caja",
@@ -160,6 +161,7 @@
     "l:cosa",
     "l:costar",
     "l:creer",
+    "l:deber",
     "l:dinero",
     "l:entrar",
     "l:esperar",
@@ -169,8 +171,6 @@
     "l:ganar",
     "l:gastar",
     "l:gasto",
-    "l:grande",
-    "l:hacer",
     "l:increíble",
     "l:mayor",
     "l:mes",
