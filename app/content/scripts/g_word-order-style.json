@@ -1,0 +1,177 @@
+{
+ "node": "g:word-order-style",
+ "hook": {
+  "line": "Spanish word order is flexible, and good writers use that to put the weight where they want it. A critic who opens with the key word sounds like a writer, not like a textbook.",
+  "es": "Mucho ha cambiado el barrio desde entonces.",
+  "en": "The neighbourhood has changed a lot since then."
+ },
+ "examples": [
+  {
+   "es": "Mucho ha cambiado el barrio desde entonces.",
+   "en": "The neighbourhood has changed a lot since then."
+  },
+  {
+   "es": "Difícil es decirlo.",
+   "en": "It's hard to say."
+  },
+  {
+   "es": "Poco importa ya.",
+   "en": "It hardly matters now."
+  },
+  {
+   "es": "Poco queda del café de Rosa.",
+   "en": "Little is left of Rosa's café."
+  },
+  {
+   "es": "Mucho he aprendido aquí.",
+   "en": "I've learned a lot here."
+  },
+  {
+   "es": "Raras veces cierra Vale temprano.",
+   "en": "Vale rarely closes early."
+  }
+ ],
+ "rule": "Normal order puts the subject first: *El barrio ha cambiado mucho.* For effect, move the key word to the front: *Mucho ha cambiado el barrio.*\n\nWhen you do, the subject usually drops behind the verb: *Poco queda del café*, not *Poco el café queda*. Keep the verb right after the front word.\n\nThe meaning stays the same; the feeling is stronger. It works best with words of amount or judgement: *mucho*, *poco*, *difícil*, *raras veces*.\n\nEnglish does this rarely (\"Much has changed\"). Use it in writing, speeches and reviews. In casual talk, normal order is fine.",
+ "smallPrint": "Teachers call this fronting for emphasis (a marked word order): the element placed first becomes the focus.",
+ "readAndPick": [
+  {
+   "es": "Mucho ha cambiado el barrio desde entonces.",
+   "options": [
+    "The neighbourhood has changed a lot since then.",
+    "The neighbourhood has hardly changed since then.",
+    "The neighbourhood will change a lot."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Poco importa ya.",
+   "options": [
+    "It matters a lot now.",
+    "It hardly matters now.",
+    "It never mattered."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Difícil es decirlo.",
+   "options": [
+    "It was hard to say.",
+    "It's easy to say.",
+    "It's hard to say."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Poco queda del café de Rosa.",
+   "options": [
+    "Little is left of Rosa's café.",
+    "A lot is left of Rosa's café.",
+    "Rosa's café is nearly open."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Mucho he aprendido aquí.",
+   "options": [
+    "You've learned a lot here. (to a friend)",
+    "I've learned little here.",
+    "I've learned a lot here."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Raras veces cierra Vale temprano.",
+   "options": [
+    "Vale often closes early.",
+    "Vale rarely closes early.",
+    "Vale closes early again."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Mucho ha cambiado Tomás.",
+   "options": [
+    "Tomás has changed a lot.",
+    "Tomás hasn't changed much.",
+    "Tomás will change a lot."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Difícil es decir que no.",
+   "options": [
+    "It's hard to say yes.",
+    "It's easy to say no.",
+    "It's hard to say no."
+   ],
+   "answer": 2
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "The neighbourhood has changed a lot since then. Pick *Mucho* or *Poco* and type the whole sentence: *___ ha cambiado el barrio desde entonces.*",
+   "answer": "Mucho ha cambiado el barrio desde entonces.",
+   "accept": [],
+   "why": "*Mucho* at the front stresses \"a lot\"."
+  },
+  {
+   "prompt": "Type in Spanish: It's hard to say.",
+   "answer": "Difícil es decirlo.",
+   "accept": [],
+   "why": "The key word *difícil* goes first, then *es*."
+  },
+  {
+   "prompt": "Type in Spanish: It hardly matters now.",
+   "answer": "Poco importa ya.",
+   "accept": [],
+   "why": "*Poco* up front already carries the feeling of \"hardly\"."
+  },
+  {
+   "prompt": "Put the key word first: *El barrio ha cambiado mucho desde entonces.* Say: The neighbourhood has changed a lot since then.",
+   "answer": "Mucho ha cambiado el barrio desde entonces.",
+   "accept": [],
+   "why": "Move *mucho* to the front, and the subject follows the verb."
+  },
+  {
+   "prompt": "Type in Spanish: Little is left of Rosa's café.",
+   "answer": "Poco queda del café de Rosa.",
+   "accept": [],
+   "why": "*Poco* leads and the thing left comes after the verb."
+  },
+  {
+   "prompt": "Type in Spanish: I've learned a lot here.",
+   "answer": "Mucho he aprendido aquí.",
+   "accept": [],
+   "why": "Even with *he aprendido*, the front word comes first."
+  },
+  {
+   "prompt": "Put the key word first: *Vale cierra temprano raras veces.* Say: Vale rarely closes early.",
+   "answer": "Raras veces cierra Vale temprano.",
+   "accept": [],
+   "why": "*Raras veces* leads and *Vale* follows the verb."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Mucho el barrio ha cambiado desde entonces.",
+   "right": "Mucho ha cambiado el barrio desde entonces.",
+   "why": "Almost. After the front word, the verb comes next and the subject follows it."
+  },
+  {
+   "wrong": "Poco no importa ya.",
+   "right": "Poco importa ya.",
+   "why": "Almost. *Poco* at the front already carries the \"hardly\", so skip the extra *no*."
+  },
+  {
+   "wrong": "Muy ha cambiado el barrio desde entonces.",
+   "right": "Mucho ha cambiado el barrio desde entonces.",
+   "why": "Almost. *Muy* cannot stand alone; use *mucho* when it replaces \"a lot\"."
+  },
+  {
+   "wrong": "Difícil decirlo es.",
+   "right": "Difícil es decirlo.",
+   "why": "Almost. The verb goes right after the front word."
+  }
+ ],
+ "personal": "Write one sentence about your own street or town that starts with *Mucho* or *Poco*, such as *Poco ha cambiado…*."
+}

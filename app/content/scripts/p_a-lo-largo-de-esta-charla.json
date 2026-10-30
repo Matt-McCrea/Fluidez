@@ -1,0 +1,180 @@
+{
+ "node": "p:a-lo-largo-de-esta-charla",
+ "hook": {
+  "line": "Tomás has been asked to say a few words at the neighbourhood tertulia. A good talk tells the room where it is going, and a few stock phrases do that for you.",
+  "es": "A lo largo de esta charla veremos cómo cambió la Candelaria.",
+  "en": "Over the course of this talk we'll see how La Candelaria changed."
+ },
+ "examples": [
+  {
+   "es": "Antes que nada, quisiera agradecerles la invitación.",
+   "en": "First of all, I'd like to thank you all for the invitation."
+  },
+  {
+   "es": "A lo largo de esta charla veremos tres casos.",
+   "en": "Over the course of this talk we'll look at three cases."
+  },
+  {
+   "es": "Comenzaremos por el contexto, lo que nos llevará a los resultados.",
+   "en": "We'll start with the background, which will lead us on to the results."
+  },
+  {
+   "es": "Empezaremos por el barrio, lo que nos llevará al café.",
+   "en": "We'll start with the neighbourhood, which will lead us on to the café."
+  },
+  {
+   "es": "A lo largo de esta charla veremos cómo cambió la Candelaria.",
+   "en": "Over the course of this talk we'll see how La Candelaria changed."
+  },
+  {
+   "es": "Para ir cerrando, quisiera dejarles una pregunta.",
+   "en": "To wrap up, I'd like to leave you all with a question."
+  }
+ ],
+ "rule": "A talk has four stock moves.\n\n*Antes que nada, quisiera…*: \"First of all, I'd like to…\" (thanks and welcome).\n\n*A lo largo de esta charla veremos…*: \"over the course of this talk we'll see…\" (your map). Use the future.\n\n*Comenzaremos por…, lo que nos llevará a…*: \"we'll start with…, which will lead us on to…\". *Lo que* points back at the whole idea.\n\n*Para ir cerrando, quisiera…*: \"to wrap up, I'd like to…\".\n\n*Quisiera* is a polite \"I'd like\". The phrases are fixed, so learn them whole.",
+ "smallPrint": "Teachers call these discourse markers: small phrases that organise a talk rather than add content.",
+ "readAndPick": [
+  {
+   "es": "A lo largo de esta charla veremos tres casos.",
+   "options": [
+    "At the end of this talk we saw three cases.",
+    "Over the course of this talk we'll look at three cases.",
+    "Before this talk we'll look at three cases."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Antes que nada, quisiera agradecerles la invitación.",
+   "options": [
+    "First of all, I'd like to thank you all for the invitation.",
+    "Finally, I'd like to thank you all for the invitation.",
+    "After all, I'd like to thank you all for the invitation."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Para ir cerrando, quiero hablar del futuro.",
+   "options": [
+    "To start, I want to talk about the future.",
+    "To wrap up, I wanted to talk about the future.",
+    "To wrap up, I want to talk about the future."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Comenzaremos por el contexto, lo que nos llevará a los resultados.",
+   "options": [
+    "We began with the background, which led us to the results.",
+    "We'll start with the background, which will lead us on to the results.",
+    "We'll end with the background, which will lead us to the results."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Empezaremos por el barrio, lo que nos llevará al café.",
+   "options": [
+    "We'll start with the neighbourhood, which will lead us on to the café.",
+    "We'll start with the café, which will lead us on to the neighbourhood.",
+    "We started with the neighbourhood, which led us to the café."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "A lo largo de esta charla veremos cómo cambió la Candelaria.",
+   "options": [
+    "Over the course of this talk we'll see how La Candelaria will change.",
+    "Over the course of this talk we saw how La Candelaria changed.",
+    "Over the course of this talk we'll see how La Candelaria changed."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Para ir cerrando, quisiera dejarles una pregunta.",
+   "options": [
+    "To wrap up, I'd like to leave you all with a question.",
+    "To open, I'd like to ask you all a question.",
+    "To wrap up, I left you all with a question."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "A lo largo de esta charla veremos el decorado y el vestuario.",
+   "options": [
+    "Over the course of this talk we'll see the set and the costumes.",
+    "At the end of this talk we'll see the set and the costumes.",
+    "Over the course of this talk we saw the set and the costumes."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Opening a talk. Pick *Antes que nada* or *Para ir cerrando* and type the whole sentence: ___, quisiera agradecerles la invitación. (First of all, I'd like to thank you all for the invitation.)",
+   "answer": "Antes que nada, quisiera agradecerles la invitación.",
+   "accept": [
+    "Antes que nada quisiera agradecerles la invitación."
+   ],
+   "why": "*Antes que nada* is \"first of all\"; *para ir cerrando* belongs at the end."
+  },
+  {
+   "prompt": "Type in Spanish: Over the course of this talk we'll look at three cases.",
+   "answer": "A lo largo de esta charla veremos tres casos.",
+   "accept": [],
+   "why": "*A lo largo de esta charla* plus a future verb gives your map."
+  },
+  {
+   "prompt": "Type in Spanish: To wrap up, I'd like to leave you all with a question.",
+   "answer": "Para ir cerrando, quisiera dejarles una pregunta.",
+   "accept": [
+    "Para ir cerrando quisiera dejarles una pregunta."
+   ],
+   "why": "*Quisiera* is the polite \"I'd like\"."
+  },
+  {
+   "prompt": "Type in Spanish: We'll start with the neighbourhood, which will lead us on to the café.",
+   "answer": "Empezaremos por el barrio, lo que nos llevará al café.",
+   "accept": [
+    "Comenzaremos por el barrio, lo que nos llevará al café."
+   ],
+   "why": "*Lo que* means \"which\", pointing back at the whole first idea."
+  },
+  {
+   "prompt": "Type in Spanish: Over the course of this talk we'll see how La Candelaria changed.",
+   "answer": "A lo largo de esta charla veremos cómo cambió la Candelaria.",
+   "accept": [],
+   "why": "*Veremos* is the future; *cambió* is the past of what changed."
+  },
+  {
+   "prompt": "Swap the topic: *A lo largo de esta charla veremos tres casos.* Say: Over the course of this talk we'll see the set and the costumes.",
+   "answer": "A lo largo de esta charla veremos el decorado y el vestuario.",
+   "accept": [],
+   "why": "Only what you will see changes; the frame stays."
+  },
+  {
+   "prompt": "Type in Spanish: To wrap up, I want to talk about the future.",
+   "answer": "Para ir cerrando, quiero hablar del futuro.",
+   "accept": [
+    "Para ir cerrando quiero hablar del futuro."
+   ],
+   "why": "*Para ir cerrando* opens the last move of a talk."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "A lo largo esta charla veremos tres casos.",
+   "right": "A lo largo de esta charla veremos tres casos.",
+   "why": "Almost. The phrase ends in *de*: *a lo largo de*."
+  },
+  {
+   "wrong": "Para cerrando, quisiera dejarles una pregunta.",
+   "right": "Para ir cerrando, quisiera dejarles una pregunta.",
+   "why": "Almost. The fixed phrase needs *ir*: *para ir cerrando*."
+  },
+  {
+   "wrong": "Antes de todo, quisiera agradecerles la invitación.",
+   "right": "Antes que nada, quisiera agradecerles la invitación.",
+   "why": "Almost. The set phrase for \"first of all\" is *antes que nada*."
+  }
+ ],
+ "personal": "Imagine you are giving a short talk about your town. Say your opening line with *A lo largo de esta charla veremos…*."
+}

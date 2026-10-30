@@ -1,0 +1,179 @@
+{
+ "node": "p:haces-bien-en",
+ "hook": {
+  "line": "Sooner or later a friend asks, \"Should I do it?\" A flat yes feels cold. Telling them they are right (or wrong) to do it gives your opinion and shows you are on their side.",
+  "es": "Haces bien en no firmar nada hoy.",
+  "en": "You're right not to sign anything today."
+ },
+ "examples": [
+  {
+   "es": "Haces bien en esperar a Vale.",
+   "en": "You're right to wait for Vale. (to a friend)"
+  },
+  {
+   "es": "Hace mal en negarse a admitirlo.",
+   "en": "He's wrong to refuse to admit it."
+  },
+  {
+   "es": "Hacen bien en cerrar temprano.",
+   "en": "They're right to close early."
+  },
+  {
+   "es": "Hiciste bien en decir la verdad.",
+   "en": "You were right to tell the truth. (to a friend)"
+  },
+  {
+   "es": "Hacemos mal en discutir con Hernando.",
+   "en": "We're wrong to argue with Hernando."
+  },
+  {
+   "es": "Haces bien en no firmar nada hoy.",
+   "en": "You're right not to sign anything today. (to a friend)"
+  }
+ ],
+ "rule": "To say someone is right to do something, use *haces bien en* plus an infinitive. To say they are wrong, use *haces mal en*.\n\nThe verb is *hacer* (to do), so it changes with the person: *haces* (you), *hace* (he or she), *hacemos* (we), *hacen* (they). For the past, *hiciste bien en* means \"you were right to\".\n\nAlways *en*, never *de* or *a*. To say someone is right *not* to do it, put *no* before the infinitive: *Haces bien en no firmar nada.*\n\nEnglish says \"you are right\". Spanish says \"you do well\".",
+ "smallPrint": "Teachers call this a verb phrase: *hacer* plus *bien* or *mal*, then *en* and an infinitive. English has a close cousin in \"you do well to wait\".",
+ "readAndPick": [
+  {
+   "es": "Haces bien en esperar a Vale.",
+   "options": [
+    "You're wrong to wait for Vale. (to a friend)",
+    "You're right to wait for Vale. (to a friend)",
+    "He's right to wait for Vale."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Hacen mal en cerrar temprano.",
+   "options": [
+    "They're right to close early.",
+    "We're wrong to close early.",
+    "They're wrong to close early."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Hiciste bien en decir la verdad.",
+   "options": [
+    "You were right to tell the truth. (to a friend)",
+    "You were wrong to tell the truth. (to a friend)",
+    "You are right to tell the truth. (to a friend)"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "¿Hago mal en quedarme?",
+   "options": [
+    "Are you wrong to stay? (to a friend)",
+    "Am I right to stay?",
+    "Am I wrong to stay?"
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Haces bien en no firmar nada hoy.",
+   "options": [
+    "You're right to sign something today. (to a friend)",
+    "You're wrong not to sign anything today. (to a friend)",
+    "You're right not to sign anything today. (to a friend)"
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Hace bien en no vender el café.",
+   "options": [
+    "He's right not to sell the café.",
+    "He's wrong not to sell the café.",
+    "He's right to sell the café."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Hacemos mal en discutir con Hernando.",
+   "options": [
+    "They're wrong to argue with Hernando.",
+    "We're right to argue with Hernando.",
+    "We're wrong to argue with Hernando."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Haces mal en no llamar a Mariana.",
+   "options": [
+    "You're right not to call Mariana. (to a friend)",
+    "You're wrong not to call Mariana. (to a friend)",
+    "You're wrong to call Mariana. (to a friend)"
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "You're right to wait for Vale (to a friend). Pick *bien* or *mal* and type the whole sentence: *Haces ___ en esperar a Vale.*",
+   "answer": "Haces bien en esperar a Vale.",
+   "accept": [],
+   "why": "*Bien* says the person is right to do it."
+  },
+  {
+   "prompt": "Type in Spanish: You're wrong to argue with Hernando. (to a friend)",
+   "answer": "Haces mal en discutir con Hernando.",
+   "accept": [],
+   "why": "*Mal* says they are wrong, and *en* comes before the infinitive."
+  },
+  {
+   "prompt": "Type in Spanish: They're right to close early.",
+   "answer": "Hacen bien en cerrar temprano.",
+   "accept": [],
+   "why": "*Hacen* is the form for *they*."
+  },
+  {
+   "prompt": "Type in Spanish: He's right not to sell the café.",
+   "answer": "Hace bien en no vender el café.",
+   "accept": [
+    "Él hace bien en no vender el café."
+   ],
+   "why": "*No* goes right before the infinitive."
+  },
+  {
+   "prompt": "Make it about *we*: *Haces bien en esperar a Vale.* Say: We're right to wait for Vale.",
+   "answer": "Hacemos bien en esperar a Vale.",
+   "accept": [],
+   "why": "Only *hacer* changes with the person; the infinitive stays the same."
+  },
+  {
+   "prompt": "Make it \"right not to\": *Haces bien en llamar a Mariana.* Say: You're right not to call Mariana. (to a friend)",
+   "answer": "Haces bien en no llamar a Mariana.",
+   "accept": [],
+   "why": "Put *no* in front of the infinitive."
+  },
+  {
+   "prompt": "Type in Spanish: You were right to tell the truth. (to a friend)",
+   "answer": "Hiciste bien en decir la verdad.",
+   "accept": [],
+   "why": "*Hiciste* is the past of *haces*: \"you did well\"."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Haces bien de esperar a Vale.",
+   "right": "Haces bien en esperar a Vale.",
+   "why": "Almost. With *haces bien* the link word is *en*, not *de*."
+  },
+  {
+   "wrong": "Eres bien en esperar a Vale.",
+   "right": "Haces bien en esperar a Vale.",
+   "why": "Almost. English says \"you are right\", but Spanish says \"you do well\", so the verb is *hacer*."
+  },
+  {
+   "wrong": "Haces bien en esperando a Vale.",
+   "right": "Haces bien en esperar a Vale.",
+   "why": "Almost. After *en* use the plain infinitive, not an *-ing* form."
+  },
+  {
+   "wrong": "Haces bien no esperar a Vale.",
+   "right": "Haces bien en no esperar a Vale.",
+   "why": "Almost. Keep *en* even when *no* follows."
+  }
+ ],
+ "personal": "Tell a friend about something they did well or badly, starting with *Hiciste bien en* or *Haces mal en*."
+}

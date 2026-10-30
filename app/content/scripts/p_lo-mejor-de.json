@@ -1,0 +1,177 @@
+{
+ "node": "p:lo-mejor-de",
+ "hook": {
+  "line": "When someone asks \"Was it good?\", yes or no is not much help. One line that names the best part, and another for the weak spot, is already a review.",
+  "es": "Lo mejor de la obra es el vestuario.",
+  "en": "The best thing about the play is the costumes."
+ },
+ "examples": [
+  {
+   "es": "Lo mejor de la película es la fotografía.",
+   "en": "The best thing about the film is the cinematography."
+  },
+  {
+   "es": "Lo peor del hotel es el ruido.",
+   "en": "The worst thing about the hotel is the noise."
+  },
+  {
+   "es": "Lo mejor del café es el olor.",
+   "en": "The best thing about the café is the smell."
+  },
+  {
+   "es": "Lo peor de la obra es el final.",
+   "en": "The worst thing about the play is the ending."
+  },
+  {
+   "es": "Lo mejor de la noche fue la música.",
+   "en": "The best thing about the evening was the music."
+  },
+  {
+   "es": "Donde falla la película es en el final.",
+   "en": "Where the film falls down is the ending."
+  }
+ ],
+ "rule": "Spanish has no word for \"thing\" here. *Lo mejor de* means \"the best thing about\", and *lo peor de* means \"the worst thing about\". Then add the place or work, then *es*, then the answer: *Lo mejor del café es el olor.*\n\n*De* plus *el* becomes *del*. For something that already happened, use *fue*.\n\nFor the weak spot, use *Donde falla… es en…*: \"where it falls down is…\". Back every verdict with a real example.",
+ "smallPrint": "Teachers call *lo mejor* a neuter *lo* with an adjective, and the whole sentence a cleft: the verdict comes first, the answer after *es*.",
+ "readAndPick": [
+  {
+   "es": "Lo mejor del café es el olor.",
+   "options": [
+    "The worst thing about the café is the smell.",
+    "The best thing about the café is the smell.",
+    "The best café is the smell."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Lo peor de la obra es el final.",
+   "options": [
+    "The worst thing about the play is the ending.",
+    "The best thing about the play is the ending.",
+    "The play is the worst ending."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Lo mejor de la noche fue la música.",
+   "options": [
+    "The best thing about the evening is the music.",
+    "The worst thing about the evening was the music.",
+    "The best thing about the evening was the music."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Donde falla la película es en el final.",
+   "options": [
+    "The film's strongest part is the ending.",
+    "Where the film falls down is the ending.",
+    "The film ends where it fails."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Lo peor del hotel es el ruido.",
+   "options": [
+    "The worst thing about the hotel is the noise.",
+    "The best thing about the hotel is the noise.",
+    "The worst hotel is the noisy one."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Lo mejor de la obra es el vestuario.",
+   "options": [
+    "The worst thing about the play is the costumes.",
+    "The best thing about the play was the costumes.",
+    "The best thing about the play is the costumes."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Lo peor del cuadro es el color.",
+   "options": [
+    "The best thing about the painting is the colour.",
+    "The worst thing about the painting is the colour.",
+    "The worst thing about the painting was the colour."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Lo peor de la cena fue la sopa.",
+   "options": [
+    "The worst thing about the dinner was the soup.",
+    "The worst thing about the dinner is the soup.",
+    "The best thing about the dinner was the soup."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "The worst thing about the hotel is the noise. Pick *mejor* or *peor* and type the whole sentence: *Lo ___ del hotel es el ruido.*",
+   "answer": "Lo peor del hotel es el ruido.",
+   "accept": [],
+   "why": "*Peor* is \"worst\", and *de* plus *el* joins into *del*."
+  },
+  {
+   "prompt": "Type in Spanish: The best thing about the café is the smell.",
+   "answer": "Lo mejor del café es el olor.",
+   "accept": [],
+   "why": "*Lo mejor de* is \"the best thing about\"."
+  },
+  {
+   "prompt": "Type in Spanish: The best thing about the film is the cinematography.",
+   "answer": "Lo mejor de la película es la fotografía.",
+   "accept": [],
+   "why": "With *la película* the *de* stays separate: *de la*."
+  },
+  {
+   "prompt": "Type in Spanish: The worst thing about the play is the ending.",
+   "answer": "Lo peor de la obra es el final.",
+   "accept": [],
+   "why": "Same frame, with *peor* for the weak spot."
+  },
+  {
+   "prompt": "Make it past: *Lo mejor de la noche es la música.* Say: The best thing about the evening was the music.",
+   "answer": "Lo mejor de la noche fue la música.",
+   "accept": [],
+   "why": "Swap *es* for *fue* to talk about something over."
+  },
+  {
+   "prompt": "Type in Spanish: Where the film falls down is the ending.",
+   "answer": "Donde falla la película es en el final.",
+   "accept": [],
+   "why": "*Donde falla… es en…* names the weak spot."
+  },
+  {
+   "prompt": "Flip it: *Lo mejor del cuadro es el color.* Say: The worst thing about the painting is the colour.",
+   "answer": "Lo peor del cuadro es el color.",
+   "accept": [],
+   "why": "Only *mejor* and *peor* change."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Lo mejor la película es la fotografía.",
+   "right": "Lo mejor de la película es la fotografía.",
+   "why": "Almost. You need *de* to say \"about the film\"."
+  },
+  {
+   "wrong": "El mejor de la película es la fotografía.",
+   "right": "Lo mejor de la película es la fotografía.",
+   "why": "Almost. \"The best thing\" has no noun, so Spanish uses *lo*, not *el*."
+  },
+  {
+   "wrong": "Lo mejor de el café es el olor.",
+   "right": "Lo mejor del café es el olor.",
+   "why": "Almost. *De* plus *el* always joins into *del*."
+  },
+  {
+   "wrong": "Lo mejor de la película está la fotografía.",
+   "right": "Lo mejor de la película es la fotografía.",
+   "why": "Almost. Naming what something is takes *es*."
+  }
+ ],
+ "personal": "Write one line about your last meal out or film: *Lo mejor de… fue…*, then *Lo peor de… fue…*."
+}

@@ -1,0 +1,179 @@
+{
+ "node": "p:un-x-cualquiera",
+ "hook": {
+  "line": "In a review, the difference between \"just any café\" and \"not just any café\" is the difference between a shrug and a compliment. One small word after the noun does it.",
+  "es": "No es un café cualquiera.",
+  "en": "It's not just any café."
+ },
+ "examples": [
+  {
+   "es": "Era un martes cualquiera.",
+   "en": "It was just an ordinary Tuesday."
+  },
+  {
+   "es": "No es una película cualquiera.",
+   "en": "It isn't just any film."
+  },
+  {
+   "es": "Era una tarde cualquiera en el café.",
+   "en": "It was just an ordinary afternoon at the café."
+  },
+  {
+   "es": "Pásame un libro cualquiera.",
+   "en": "Pass me any book. (to a friend)"
+  },
+  {
+   "es": "Una noche cualquiera apareció Hernando.",
+   "en": "One ordinary night, Hernando turned up."
+  },
+  {
+   "es": "Cualquier día de estos te llamo.",
+   "en": "I'll call you one of these days. (to a friend)"
+  }
+ ],
+ "rule": "After the noun, *cualquiera* means \"ordinary\", \"just any old\": *un martes cualquiera*. Add *no* and you make it special: *No es una película cualquiera.* = it isn't just any film.\n\nBefore the noun, it shrinks to *cualquier* and means \"any, whichever\": *cualquier día de estos*.\n\nSo position changes the meaning. After the noun it keeps the full form, *cualquiera*, for masculine and feminine alike.\n\nNever put the long form before a noun: not *cualquiera persona*.",
+ "smallPrint": "Teachers call *cualquier* before a noun an indefinite adjective that drops its ending; the full form after the noun is a different, more descriptive use.",
+ "readAndPick": [
+  {
+   "es": "Era un martes cualquiera.",
+   "options": [
+    "It was any Tuesday you like.",
+    "It was a special Tuesday.",
+    "It was just an ordinary Tuesday."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "No es una película cualquiera.",
+   "options": [
+    "It isn't just any film.",
+    "It's just an ordinary film.",
+    "It's any film at all."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Cualquier día de estos te llamo.",
+   "options": [
+    "I called you on an ordinary day. (to a friend)",
+    "I'll call you one of these days. (to a friend)",
+    "I'll call you on an ordinary day. (to a friend)"
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Era una tarde cualquiera en el café.",
+   "options": [
+    "It was a special afternoon at the café.",
+    "It was any afternoon you like at the café.",
+    "It was just an ordinary afternoon at the café."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Pásame un libro cualquiera.",
+   "options": [
+    "Pass me any book. (to a friend)",
+    "Pass me the special book. (to a friend)",
+    "Pass me an ordinary book, not a good one. (to a friend)"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "No es un café cualquiera.",
+   "options": [
+    "It's not an ordinary café, it's special.",
+    "It's just an ordinary café.",
+    "It isn't a café."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Una noche cualquiera apareció Hernando.",
+   "options": [
+    "One special night, Hernando turned up.",
+    "One ordinary night, Hernando turned up.",
+    "Hernando turned up on any night he liked."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "No es un día cualquiera.",
+   "options": [
+    "It's an ordinary day.",
+    "It's any day you like.",
+    "It's not an ordinary day."
+   ],
+   "answer": 2
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "It was just an ordinary Tuesday. Pick *cualquier* or *cualquiera* and type the whole sentence: *Era un martes ___.*",
+   "answer": "Era un martes cualquiera.",
+   "accept": [],
+   "why": "After the noun, the full form *cualquiera* means \"ordinary\"."
+  },
+  {
+   "prompt": "Type in Spanish: It isn't just any film.",
+   "answer": "No es una película cualquiera.",
+   "accept": [],
+   "why": "*No* plus *cualquiera* after the noun says it is special."
+  },
+  {
+   "prompt": "Type in Spanish: It was just an ordinary afternoon at the café.",
+   "answer": "Era una tarde cualquiera en el café.",
+   "accept": [],
+   "why": "*Cualquiera* stays the same for *una tarde*."
+  },
+  {
+   "prompt": "Type in Spanish: Pass me any book. (to a friend)",
+   "answer": "Pásame un libro cualquiera.",
+   "accept": [],
+   "why": "*Un libro cualquiera* means \"any book, I don't mind which\"."
+  },
+  {
+   "prompt": "Type in Spanish: One ordinary night, Hernando turned up.",
+   "answer": "Una noche cualquiera apareció Hernando.",
+   "accept": [
+    "Una noche cualquiera Hernando apareció."
+   ],
+   "why": "*Una noche cualquiera* sets an ordinary scene."
+  },
+  {
+   "prompt": "Make it special: *Es un café cualquiera.* Say: It's not just any café.",
+   "answer": "No es un café cualquiera.",
+   "accept": [],
+   "why": "Adding *no* turns \"ordinary\" into \"not just ordinary\"."
+  },
+  {
+   "prompt": "Type in Spanish: I'll call you one of these days. (to a friend)",
+   "answer": "Cualquier día de estos te llamo.",
+   "accept": [],
+   "why": "Before the noun, the short form *cualquier* means \"any\"."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Era un cualquier martes.",
+   "right": "Era un martes cualquiera.",
+   "why": "Almost. For \"ordinary\", *cualquiera* goes after the noun."
+  },
+  {
+   "wrong": "Era una tarde cualquier en el café.",
+   "right": "Era una tarde cualquiera en el café.",
+   "why": "Almost. After the noun you need the full form, *cualquiera*."
+  },
+  {
+   "wrong": "No es una cualquiera película.",
+   "right": "No es una película cualquiera.",
+   "why": "Almost. *Cualquiera* goes after the noun."
+  },
+  {
+   "wrong": "Cualquiera persona puede venir.",
+   "right": "Cualquier persona puede venir.",
+   "why": "Almost. Before a noun, *cualquiera* shortens to *cualquier*."
+  }
+ ],
+ "personal": "Describe a day or a place that looked ordinary but wasn't, with *un… cualquiera* or *no es un… cualquiera*."
+}

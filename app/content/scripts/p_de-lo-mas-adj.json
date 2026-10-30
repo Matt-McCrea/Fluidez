@@ -1,0 +1,174 @@
+{
+ "node": "p:de-lo-mas-adj",
+ "hook": {
+  "line": "Reviewers love a word that says \"very\" without sounding like a beginner. *De lo más* does that job, and it sounds like someone who reads.",
+  "es": "Fue una noche de lo más divertida.",
+  "en": "It was a really fun night."
+ },
+ "examples": [
+  {
+   "es": "Fue una noche de lo más divertida.",
+   "en": "It was a really fun night."
+  },
+  {
+   "es": "Es un libro de lo más original.",
+   "en": "It's a really original book."
+  },
+  {
+   "es": "La reunión estuvo de lo más tensa.",
+   "en": "The meeting was extremely tense."
+  },
+  {
+   "es": "La obra fue de lo más interesante.",
+   "en": "The play was really interesting."
+  },
+  {
+   "es": "Los actores estuvieron de lo más serios.",
+   "en": "The actors were extremely serious."
+  },
+  {
+   "es": "Es una exposición de lo más creativa.",
+   "en": "It's an extremely creative exhibition."
+  }
+ ],
+ "rule": "*De lo más* plus an adjective means \"really\" or \"extremely\". It does not mean \"the most\".\n\n*Fue una noche de lo más divertida.* = it was a really fun night.\n\n*De lo más* never changes. The adjective after it agrees with the thing you describe: *noche … divertida*, *libro … original*, *actores … serios*.\n\nIt works with *ser* and *estar*: *Es un libro de lo más original.* *La reunión estuvo de lo más tensa.*\n\nIt belongs to spoken and written opinion, so it suits reviews.",
+ "smallPrint": "Teachers call this an intensifier built on the neuter *lo más*. People sometimes leave the adjective unchanged, but the agreeing form is the careful one.",
+ "readAndPick": [
+  {
+   "es": "Fue una noche de lo más divertida.",
+   "options": [
+    "It was the most fun night of all.",
+    "It was a really fun night.",
+    "It was not a fun night."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "La reunión estuvo de lo más tensa.",
+   "options": [
+    "The meeting was extremely tense.",
+    "The meeting was a bit tense.",
+    "The meeting was not tense."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Es un libro de lo más original.",
+   "options": [
+    "It's a not very original book.",
+    "It's the most original book ever written.",
+    "It's a really original book."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Los actores estuvieron de lo más serios.",
+   "options": [
+    "The actor was extremely serious.",
+    "The actors were extremely serious.",
+    "The actors were not serious."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Es una exposición de lo más creativa.",
+   "options": [
+    "It's an extremely creative exhibition.",
+    "The exhibitions are extremely creative.",
+    "It's a bit creative as exhibitions go."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "La obra fue de lo más interesante.",
+   "options": [
+    "The play was the most interesting one.",
+    "The play was not interesting.",
+    "The play was really interesting."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Los pasteles estaban de lo más ricos.",
+   "options": [
+    "The pastry was really delicious.",
+    "The pastries were really delicious.",
+    "The pastries were not delicious."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "La cena estuvo de lo más tranquila.",
+   "options": [
+    "The dinner was extremely calm.",
+    "The dinners were extremely calm.",
+    "The dinner was the calmest of all."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "It was a really fun night. Pick *divertido* or *divertida* and type the whole sentence: *Fue una noche de lo más ___.*",
+   "answer": "Fue una noche de lo más divertida.",
+   "accept": [],
+   "why": "*Noche* is feminine, so the adjective ends in *-a*."
+  },
+  {
+   "prompt": "Type in Spanish: It's a really original book.",
+   "answer": "Es un libro de lo más original.",
+   "accept": [],
+   "why": "*Original* has one form for both genders."
+  },
+  {
+   "prompt": "Type in Spanish: The meeting was extremely tense.",
+   "answer": "La reunión estuvo de lo más tensa.",
+   "accept": [],
+   "why": "*Reunión* is feminine, so *tensa*."
+  },
+  {
+   "prompt": "Type in Spanish: The actors were extremely serious.",
+   "answer": "Los actores estuvieron de lo más serios.",
+   "accept": [],
+   "why": "*Actores* is plural, so the adjective is plural: *serios*."
+  },
+  {
+   "prompt": "Type in Spanish: The pastries were really delicious.",
+   "answer": "Los pasteles estaban de lo más ricos.",
+   "accept": [
+    "Los pasteles estuvieron de lo más ricos."
+   ],
+   "why": "*Pasteles* is plural and masculine: *ricos*."
+  },
+  {
+   "prompt": "Make it plural: *Es un libro de lo más original.* Say: They are really original books.",
+   "answer": "Son libros de lo más originales.",
+   "accept": [],
+   "why": "*De lo más* stays the same; the noun, verb and adjective go plural."
+  },
+  {
+   "prompt": "Change the noun: *Es un libro de lo más original.* Say: It's a really original film.",
+   "answer": "Es una película de lo más original.",
+   "accept": [],
+   "why": "*Original* does not change for a feminine noun."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Fue una noche de lo más divertido.",
+   "right": "Fue una noche de lo más divertida.",
+   "why": "Almost. The adjective describes the night, so it takes the feminine ending."
+  },
+  {
+   "wrong": "Fue una noche de la más divertida.",
+   "right": "Fue una noche de lo más divertida.",
+   "why": "Almost. The frame is fixed: it is always *de lo más*."
+  },
+  {
+   "wrong": "Fue una noche de lo muy divertida.",
+   "right": "Fue una noche de lo más divertida.",
+   "why": "Almost. You need *más* in this frame, not *muy*."
+  }
+ ],
+ "personal": "Describe an evening, a book or a meeting you had recently with *de lo más* plus an adjective."
+}
