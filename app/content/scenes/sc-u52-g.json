@@ -1,0 +1,236 @@
+{
+  "id": "sc-u52-g",
+  "unit": "u52",
+  "title": "Una llamada a Medellín",
+  "spare": true,
+  "brief": "You're Tomás, on the phone with Vale, who is away in Medellín. You're close friends, so use tú. She is quick and dry. Reassure her, hand her the decisions, and pick your moods on purpose.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Quiero ver el patio hoy mismo. ¿Me pasas una foto?",
+      "npcEn": "Vale: I want to see the patio today. Can you send me a photo?",
+      "intent": "Calm her down and say you'll send the photo right now (present tense).",
+      "accept": [
+        "Tranquila, te la paso ahora mismo.",
+        "Ahora mismo te la paso. Tú tranquila.",
+        "Ya te la paso, no te preocupes."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "pasar",
+          "tense": "presente",
+          "person": "yo",
+          "label": "say you'll send it: te la paso"
+        }
+      ],
+      "focus": "g:tense-modal-uses",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Gracias. Y si no puedo volver el viernes, ¿qué hago con el pedido de panes?",
+      "npcEn": "Vale: Thanks. And if I can't come back on Friday, what do I do with the bread order?",
+      "intent": "Tell her to do what she thinks is best (haz lo que + subjunctive).",
+      "accept": [
+        "Haz lo que te parezca mejor.",
+        "Haz lo que prefieras, yo me encargo aquí.",
+        "Haz lo que puedas y yo me encargo aquí."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhaz lo que\\b",
+          "flags": "iu",
+          "label": "use: haz lo que + subjunctive"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "lo que",
+          "label": "after haz lo que, use the subjunctive"
+        }
+      ],
+      "focus": "g:mood-choice-fine",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Oye, el hecho de que Altamira lleve una semana callado me preocupa.",
+      "npcEn": "Vale: Listen, the fact that Altamira has been quiet for a week worries me.",
+      "intent": "Say you agree and that the fact that he's quiet doesn't mean he has forgotten about the café (el hecho de que + subjunctive).",
+      "accept": [
+        "Yo pienso igual. El hecho de que esté callado no significa que haya cambiado de idea.",
+        "Tienes razón. El hecho de que no llame no quiere decir que se olvide del café.",
+        "Sí, y el hecho de que esté callado no significa que se haya olvidado de nosotros."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bel hecho de que\\b",
+          "flags": "iu",
+          "label": "use el hecho de que"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "el hecho de que",
+          "label": "after el hecho de que, use the subjunctive"
+        }
+      ],
+      "focus": "g:mood-choice-fine",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Mañana te llamo otra vez. ¿Quieres que te traiga algo de Medellín?",
+      "npcEn": "Vale: I'll call you again tomorrow. Do you want me to bring you something from Medellín?",
+      "intent": "Tell her to bring whatever she likes, as long as it's sweet.",
+      "accept": [
+        "Tráeme lo que quieras, pero que sea dulce.",
+        "Lo que tú elijas estará bien, mientras sea dulce.",
+        "Tráeme lo que más te guste, pero algo dulce."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo que\\b",
+          "flags": "iu",
+          "label": "use lo que + subjunctive"
+        }
+      ],
+      "focus": "g:mood-choice-fine",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Trato hecho. Vuelvo pronto. Que no se les queme nada.",
+      "npcEn": "Vale: Deal. I'll be back soon. Don't let anything burn.",
+      "intent": "Reassure her and say Simón is waiting for her too.",
+      "accept": [
+        "Tranquila. Aquí te esperamos, y Simón también.",
+        "Aquí estaremos. Simón ya pregunta por ti.",
+        "Tranquila, el café está en buenas manos. Simón te espera."
+      ],
+      "require": [],
+      "focus": "g:tense-modal-uses",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:igual",
+    "c:me-da-igual",
+    "c:no-se",
+    "c:no-te-preocupes",
+    "c:oiga-oye",
+    "c:puedo",
+    "c:que-mas",
+    "c:quiero",
+    "c:te-lo-prometo",
+    "c:tienes",
+    "c:tranquilo",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:mood-choice-fine",
+    "g:negation-words",
+    "g:parecer-quedar",
+    "g:passive-se",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:reported-requests",
+    "g:se-accidental",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-free-relatives",
+    "g:subj-irregulars",
+    "g:subj-perfect",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:aquí",
+    "l:bien",
+    "l:buena",
+    "l:café",
+    "l:callado",
+    "l:cambiar",
+    "l:decir",
+    "l:dulce",
+    "l:elegir",
+    "l:encargar",
+    "l:esperar",
+    "l:estar",
+    "l:foto",
+    "l:gustar",
+    "l:hacer",
+    "l:hoy",
+    "l:idea",
+    "l:igual",
+    "l:llamar",
+    "l:llevar",
+    "l:mano",
+    "l:mañana",
+    "l:mejor",
+    "l:olvidar",
+    "l:oír",
+    "l:pan",
+    "l:parecer",
+    "l:pasar",
+    "l:paso",
+    "l:patio",
+    "l:pedido",
+    "l:pensar",
+    "l:poder",
+    "l:preferir",
+    "l:preguntar",
+    "l:preocupar",
+    "l:preocuparse",
+    "l:pronto",
+    "l:quemar",
+    "l:querer",
+    "l:qué",
+    "l:razón",
+    "l:semana",
+    "l:ser",
+    "l:significar",
+    "l:tener",
+    "l:traer",
+    "l:tranquilo",
+    "l:tratar",
+    "l:ver",
+    "l:vez",
+    "l:viernes",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cambiar-de-por",
+    "p:days-el-lunes",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:lo-que-mas-me-gusta",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:mientras-subj",
+    "p:otro-no-article",
+    "p:pase-lo-que-pase",
+    "p:prefieres-x-o-y",
+    "p:preguntar-pedir",
+    "p:quieres-decir-que",
+    "p:tener-razon"
+  ]
+}

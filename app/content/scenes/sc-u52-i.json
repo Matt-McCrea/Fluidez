@@ -1,0 +1,217 @@
+{
+  "id": "sc-u52-i",
+  "unit": "u52",
+  "title": "Perpetua",
+  "spare": true,
+  "brief": "You're Tomás, talking with Gloria, a neighbour who isn't happy about being in Hernando's memoir. You don't know her well, so use usted. Listen, reassure her and settle on a solution.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Gloria: Tomás, me enteré de que Hernando habla de mí en su libro. Quería hablar con usted antes.",
+      "npcEn": "Gloria: Tomás, I found out that Hernando writes about me in his book. I wanted to talk to you first.",
+      "intent": "Invite her to speak and ask what worries her (use usted).",
+      "accept": [
+        "Claro, dígame. ¿Qué le preocupa?",
+        "Con gusto. ¿Qué es lo que no le gusta?",
+        "Cuénteme, ¿qué le molesta del libro?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "regex",
+          "pattern": "^(?!.*(?<![\\p{L}])(tú|tu|tienes|quieres|te)(?![\\p{L}]))",
+          "flags": "isu",
+          "label": "you are on usted terms with her"
+        }
+      ],
+      "focus": "g:tense-modal-uses",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Gloria: Dice que en 1990 casi me choca un taxi. Eso fue por un pelo, pero no quiero que lo cuente con pelos y señales.",
+      "npcEn": "Gloria: He says that in 1990 a taxi almost hit me. That was by a hair, but I don't want him to tell it with every detail.",
+      "intent": "Say you understand: it was by a hair, and there's no need to tell it with every detail.",
+      "accept": [
+        "Entiendo. Fue por un pelo, y no es necesario contarlo con pelos y señales.",
+        "Lo entiendo. Fue por un pelo, pero no necesita todos los detalles.",
+        "Claro. Fue por un pelo, y no hay que contarlo con pelos y señales."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "por un pelo|con pelos y señales",
+          "flags": "iu",
+          "label": "use: por un pelo or con pelos y señales"
+        }
+      ],
+      "focus": "c:por-un-pelo",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Gloria: Y además lo cuenta como si yo hubiera gritado. Yo nunca grito.",
+      "npcEn": "Gloria: And besides, he tells it as if I had shouted. I never shout.",
+      "intent": "Offer to write whatever she says it was like (lo que + subjunctive).",
+      "accept": [
+        "Entonces escribiremos lo que usted diga.",
+        "Dígame cómo fue y pondremos lo que usted prefiera.",
+        "Le prometo que quedará lo que usted quiera."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo que (usted )?(quiera|diga|prefiera|pida|decida)\\b",
+          "flags": "iu",
+          "label": "whatever she says: lo que usted diga"
+        }
+      ],
+      "focus": "g:mood-choice-fine",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Gloria: Está bien. Pero que Hernando no use mi nombre.",
+      "npcEn": "Gloria: All right. But let Hernando not use my name.",
+      "intent": "Agree and ask what name she wants you to use for her in the book (¿... quiere que ...?).",
+      "accept": [
+        "Hecho. ¿Qué nombre quiere que le pongamos?",
+        "De acuerdo. ¿Cómo quiere que la llamemos en el libro?",
+        "Cuente con eso. ¿Con qué nombre quiere que aparezca?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bquiere que\\b",
+          "flags": "iu",
+          "label": "ask with: quiere que + subjunctive"
+        }
+      ],
+      "focus": "g:mood-choice-fine",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Gloria: Pónganme Perpetua. Siempre quise llamarme así.",
+      "npcEn": "Gloria: Call me Perpetua. I always wanted to be called that.",
+      "intent": "Accept the name and thank her for her patience.",
+      "accept": [
+        "Será Perpetua, entonces. Gracias por su paciencia.",
+        "Gracias por entender. En el libro será Perpetua.",
+        "Entonces la llamaremos Perpetua. Se lo agradezco."
+      ],
+      "require": [],
+      "focus": "g:tense-modal-uses",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ademas",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:con-pelos-y-senales",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:hay-que",
+    "c:por-un-pelo",
+    "c:quiero",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:como-si",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:object-pronoun-position",
+    "g:pluperfect-subj",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-free-relatives",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acuerdo",
+    "l:además",
+    "l:agradecer",
+    "l:antes",
+    "l:aparecer",
+    "l:bien",
+    "l:choca",
+    "l:claro",
+    "l:contar",
+    "l:cómo",
+    "l:decir",
+    "l:detalle",
+    "l:entender",
+    "l:enterarse",
+    "l:escribir",
+    "l:estar",
+    "l:gritar",
+    "l:gustar",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:libro",
+    "l:llamar",
+    "l:molestar",
+    "l:necesario",
+    "l:necesitar",
+    "l:nombre",
+    "l:paciencia",
+    "l:pelo",
+    "l:poner",
+    "l:preferir",
+    "l:preocupar",
+    "l:prometer",
+    "l:quedar",
+    "l:querer",
+    "l:qué",
+    "l:ser",
+    "l:señal",
+    "l:siempre",
+    "l:taxi",
+    "l:usar",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:contar-con",
+    "p:contar-dos-sentidos",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:disponer-de",
+    "p:enterarse-de",
+    "p:es-adj-inf",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:me-te-nos-objects",
+    "p:podria-hablar-con",
+    "p:possessives-basic",
+    "p:prefieres-x-o-y",
+    "p:prep-questions-basic",
+    "p:queria-cortesia",
+    "p:te-lo-agradezco"
+  ]
+}

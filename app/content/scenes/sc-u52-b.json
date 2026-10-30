@@ -1,0 +1,250 @@
+{
+  "id": "sc-u52-b",
+  "unit": "u52",
+  "title": "Venía a pedirle un favor",
+  "spare": false,
+  "brief": "You're Tomás, visiting Marta, an editor at a small press, to ask about publishing Hernando's memoir. You don't know her, so use usted. Soften your requests, say what you've always believed and keep a few of your plans in the present.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Marta: Buenas tardes. Dígame, ¿en qué le puedo ayudar?",
+      "npcEn": "Marta: Good afternoon. Tell me, how can I help you?",
+      "intent": "Say you came to ask whether they publish memoirs, softening it with the imperfect (venía a, quería, pasaba a).",
+      "accept": [
+        "Buenas tardes. Venía a preguntarle si publican memorias.",
+        "Quería saber si ustedes publican memorias.",
+        "Pasaba a ver si publican memorias de gente mayor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(venía|quería|pasaba|llamaba|escribía)\\b",
+          "flags": "iu",
+          "label": "soften it with the imperfect: venía a, quería, pasaba a"
+        }
+      ],
+      "focus": "p:imperfecto-cortesia-venia",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Marta: Publicamos muy pocas al año. ¿De quién es la memoria?",
+      "npcEn": "Marta: We publish very few a year. Whose memoir is it?",
+      "intent": "Say it's Hernando's, a retired taxi driver, and that you've always believed his life makes a book (siempre he creído que).",
+      "accept": [
+        "Es de Hernando, un taxista retirado. Siempre he creído que su vida da para un libro.",
+        "De un taxista retirado, Hernando. Siempre he pensado que su historia merece un libro.",
+        "De un amigo del café. Siempre he pensado que cuenta su vida mejor que cualquier escritor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhe (creído|pensado|dicho|sabido|querido)\\b",
+          "flags": "iu",
+          "label": "an opinion that still holds: siempre he creído que"
+        }
+      ],
+      "focus": "p:perfecto-still-live",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Marta: Me interesa. ¿Cuándo podría traerme un capítulo?",
+      "npcEn": "Marta: I'm interested. When could you bring me a chapter?",
+      "intent": "Say you'll bring it on Monday, using the present tense for a near plan (se lo traigo).",
+      "accept": [
+        "El lunes se lo traigo.",
+        "Se lo traigo el lunes, a primera hora.",
+        "Mañana lo reviso y el lunes se lo traigo."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "traer",
+          "tense": "presente",
+          "person": "yo",
+          "label": "present for a near plan: se lo traigo"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "traeré"
+          ],
+          "label": "here the present does the job of the future"
+        }
+      ],
+      "focus": "g:tense-modal-uses",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Marta: Será muy querido en su barrio, pero el público no lo conoce. ¿Por qué lo leerían?",
+      "npcEn": "Marta: He may be very loved in his neighbourhood, but the public doesn't know him. Why would they read him?",
+      "intent": "Concede that he may be unknown, but he has seen the city change for fifty years (será ... pero ...).",
+      "accept": [
+        "Será un desconocido, pero conoce cada calle de la ciudad.",
+        "Será desconocido, pero tiene cincuenta años de historias.",
+        "Será un taxista retirado, pero ha visto Bogotá cambiar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])ser[áa](?![\\p{L}])",
+          "flags": "iu",
+          "label": "guess with the future: será ..."
+        },
+        {
+          "type": "containsWord",
+          "word": "pero",
+          "label": "add the but: pero ..."
+        }
+      ],
+      "focus": "g:tense-modal-uses",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Marta: Está bien. Tráigame el capítulo y lo leo con tiempo.",
+      "npcEn": "Marta: All right. Bring me the chapter and I'll read it when I have time.",
+      "intent": "Thank her for her time and say Hernando will be very happy.",
+      "accept": [
+        "Muchas gracias por su tiempo. Hernando va a estar muy contento.",
+        "Gracias por escucharme. Hernando se va a alegrar mucho.",
+        "Se lo agradezco mucho. Hernando va a estar feliz."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "^(?!.*(?<![\\p{L}])(tu|tus|te)(?![\\p{L}]))",
+          "flags": "isu",
+          "label": "you are on usted terms: su, not tu"
+        }
+      ],
+      "focus": "g:tense-modal-uses",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:bien-y-tu",
+    "c:en-que-le-puedo-servir",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:puedo",
+    "c:tienes",
+    "g:cada-cualquier",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:perfecto-experience",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:agradecer",
+    "l:alegrarse",
+    "l:amigo",
+    "l:ayudar",
+    "l:año",
+    "l:barrio",
+    "l:bien",
+    "l:buena",
+    "l:café",
+    "l:calle",
+    "l:cambiar",
+    "l:capítulo",
+    "l:ciudad",
+    "l:conocer",
+    "l:contar",
+    "l:contento",
+    "l:creer",
+    "l:cuándo",
+    "l:dar",
+    "l:decir",
+    "l:desconocido",
+    "l:escritor",
+    "l:escuchar",
+    "l:estar",
+    "l:feliz",
+    "l:gente",
+    "l:historia",
+    "l:hora",
+    "l:interesar",
+    "l:ir",
+    "l:irse",
+    "l:leer",
+    "l:libro",
+    "l:lunes",
+    "l:mayor",
+    "l:mañana",
+    "l:mejor",
+    "l:memoria",
+    "l:merecer",
+    "l:pasar",
+    "l:pensar",
+    "l:poder",
+    "l:preguntar",
+    "l:publicar",
+    "l:público",
+    "l:querer",
+    "l:querido",
+    "l:quién",
+    "l:qué",
+    "l:retirar",
+    "l:revisar",
+    "l:saber",
+    "l:ser",
+    "l:siempre",
+    "l:tarde",
+    "l:taxista",
+    "l:tener",
+    "l:tiempo",
+    "l:traer",
+    "l:venir",
+    "l:ver",
+    "l:vida",
+    "p:a-ultima-hora",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:days-el-lunes",
+    "p:de-owner",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:la-gente-singular",
+    "p:llevar-traer",
+    "p:mayor-menor",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:perfecto-still-live",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:queria-cortesia",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:ser-profession-no-article",
+    "p:te-lo-agradezco",
+    "p:tener-anos",
+    "p:viejo-antiguo-mayor"
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "id": "sc-u52-e",
+  "unit": "u52",
+  "title": "Llamada desde Valencia",
+  "spare": true,
+  "brief": "You're Tomás, on a video call with Inés, a festival producer in Valencia. She talks the way people do in Spain, and you're on friendly terms, so use tú. Answer in your own Colombian way: simple past for what's done, the perfect only for experience and not yet.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Inés: Hola, Tomás. Esta mañana he leído tu mensaje y me ha encantado la idea.",
+      "npcEn": "Inés: Hi, Tomás. This morning I have read your message and I have loved the idea.",
+      "intent": "Say you're glad, and that you sent it this morning before your coffee (simple past).",
+      "accept": [
+        "Qué bueno. Esta mañana lo envié antes del café.",
+        "Me da mucho gusto. Lo escribí temprano y lo envié antes de desayunar.",
+        "Qué alegría. Lo escribí anoche y lo envié esta mañana."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "preterito",
+          "label": "for this morning, the simple past: lo envié"
+        },
+        {
+          "type": "regex",
+          "pattern": "^(?!.*(?<![\\p{L}])(he|ha|hemos)(?![\\p{L}]))",
+          "flags": "isu",
+          "label": "here we say lo envié, not lo he enviado"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Inés: ¿Has estado en Valencia alguna vez?",
+      "npcEn": "Inés: Have you ever been to Valencia?",
+      "intent": "Say no, you've never been, but you went to Madrid years ago.",
+      "accept": [
+        "No, nunca he estado. Pero fui a Madrid hace años.",
+        "Nunca he estado en Valencia. Estuve en Madrid hace años.",
+        "No, nunca. Fui a Madrid hace años, pero a Valencia no."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "preterito",
+          "label": "a trip with a date takes the simple past: fui, estuve"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Inés: Pues este año hemos tenido más de cien lecturas en el festival. ¿Y a ti qué tal te ha ido el año?",
+      "npcEn": "Inés: Well, this year we have had more than a hundred readings at the festival. And how has your year gone?",
+      "intent": "Tell her your year went well: you inherited a café and started writing a book (simple past).",
+      "accept": [
+        "Me fue bien: heredé un café y empecé a escribir un libro.",
+        "Fue un año intenso. Heredé el café de mi abuela y empecé a escribir.",
+        "Me fue muy bien. Llegué a Bogotá, heredé un café y conocí a Hernando."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "preterito",
+          "label": "a year you are telling as a story: heredé, empecé"
+        },
+        {
+          "type": "regex",
+          "pattern": "^(?!.*(?<![\\p{L}])(he|ha|hemos)(?![\\p{L}]))",
+          "flags": "isu",
+          "label": "say me fue bien, not me ha ido bien"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Inés: Mañana mismo te mando el programa. ¿Y el libro? ¿Ya lo tienes listo?",
+      "npcEn": "Inés: I'll send you the programme tomorrow. And the book? Do you have it ready yet?",
+      "intent": "Say the book isn't finished yet (todavía no he terminado), but you can send three chapters.",
+      "accept": [
+        "Todavía no he terminado, pero te puedo mandar tres capítulos.",
+        "Todavía no lo he terminado. Te mando tres capítulos esta semana.",
+        "Todavía no he terminado el libro, pero ya tengo tres capítulos para ti."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btodavía no (lo )?he\\b",
+          "flags": "iu",
+          "label": "not yet takes the perfect: todavía no he terminado"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Inés: Perfecto. Te escribo la semana que viene. ¡Un abrazo desde Valencia!",
+      "npcEn": "Inés: Perfect. I'll write to you next week. A hug from Valencia!",
+      "intent": "Send a hug back and thank her for the call.",
+      "accept": [
+        "Un abrazo para ti también. Gracias por la llamada.",
+        "Otro abrazo desde Bogotá. Gracias por llamar.",
+        "Un abrazo, Inés. Gracias por todo."
+      ],
+      "require": [],
+      "focus": "g:spain-pasts",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-mi-tambien",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:como-te-fue",
+    "c:fui",
+    "c:has-estado",
+    "c:hola-buenos-dias",
+    "c:me-regala",
+    "c:mucho-gusto",
+    "c:puedo",
+    "c:pues",
+    "c:que-bien",
+    "c:tengo",
+    "c:tienes",
+    "c:todavia-no",
+    "c:un-abrazo",
+    "g:comparatives-advanced",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:indefinites",
+    "g:perfecto-experience",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrazo",
+    "l:abuela",
+    "l:alegría",
+    "l:anoche",
+    "l:antes",
+    "l:año",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:capítulo",
+    "l:conocer",
+    "l:dar",
+    "l:desayunar",
+    "l:empezar",
+    "l:encantar",
+    "l:enviar",
+    "l:escribir",
+    "l:estar",
+    "l:festival",
+    "l:gusto",
+    "l:hacer",
+    "l:heredar",
+    "l:idea",
+    "l:intenso",
+    "l:inés",
+    "l:ir",
+    "l:lectura",
+    "l:leer",
+    "l:libro",
+    "l:listo",
+    "l:llamada",
+    "l:llamar",
+    "l:llegar",
+    "l:mandar",
+    "l:mañana",
+    "l:mensaje",
+    "l:perfecto",
+    "l:poder",
+    "l:programa",
+    "l:qué",
+    "l:semana",
+    "l:ser",
+    "l:temprano",
+    "l:tener",
+    "l:terminar",
+    "l:venir",
+    "l:vez",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:empezar-terminar",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:mas-de-number",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:saber-conocer",
+    "p:salirle-bien",
+    "p:saludos-de-mi-parte",
+    "p:time-pasado-que-viene"
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "id": "sc-u52-h",
+  "unit": "u52",
+  "title": "En el aire",
+  "spare": true,
+  "brief": "You're Tomás, a guest on Camila's radio show to talk about the memoir. Radio is informal, so use tú with Camila. Use the phrases from the week: de la noche a la mañana, toda una odisea, nunca en mi vida, no te imaginas lo que.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Camila: Bienvenido al programa, Tomás. ¿Cómo empezó este proyecto?",
+      "npcEn": "Camila: Welcome to the show, Tomás. How did this project start?",
+      "intent": "Say it all began overnight (de la noche a la mañana), when Hernando asked for your help.",
+      "accept": [
+        "De la noche a la mañana, Hernando me pidió que lo ayudara con su libro.",
+        "Fue de la noche a la mañana: un día Hernando llegó con su historia.",
+        "Todo empezó de la noche a la mañana, cuando Hernando me habló de su libro."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "de la noche a la mañana",
+          "flags": "iu",
+          "label": "use: de la noche a la mañana"
+        }
+      ],
+      "focus": "c:de-la-noche-a-la-manana",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Camila: ¿Y cómo es trabajar con alguien que lleva cincuenta años manejando un taxi?",
+      "npcEn": "Camila: And what is it like working with someone who has been driving a taxi for fifty years?",
+      "intent": "Say it's quite an ordeal, but you love it (toda una odisea).",
+      "accept": [
+        "Es toda una odisea, pero me encanta.",
+        "Toda una odisea, pero nunca me canso.",
+        "A veces es toda una odisea, pero cada historia lleva a otra."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "toda una odisea",
+          "flags": "iu",
+          "label": "use: toda una odisea"
+        }
+      ],
+      "focus": "c:toda-una-odisea",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Camila: Dame un secreto del libro.",
+      "npcEn": "Camila: Give me a secret from the book.",
+      "intent": "Hook the audience: tell Camila she can't imagine how much (no te imaginas lo mucho que).",
+      "accept": [
+        "No te imaginas lo mucho que me reí anoche con sus historias.",
+        "Uf, no te imaginas lo mucho que sufrió con su primer cliente.",
+        "No te imaginas lo mucho que cambió la ciudad desde que él manejaba."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno te imaginas lo (mucho )?que\\b",
+          "flags": "iu",
+          "label": "use: no te imaginas lo mucho que"
+        }
+      ],
+      "focus": "p:no-te-imaginas-lo-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Camila: ¿Crees que la gente querrá leer a un taxista?",
+      "npcEn": "Camila: Do you think people will want to read a taxi driver?",
+      "intent": "Say you've never in your life read anything like it (nunca en mi vida).",
+      "accept": [
+        "Nunca en mi vida he leído algo así.",
+        "Sí. Nunca en mi vida me reí tanto con un libro.",
+        "Claro. Nunca en mi vida había leído una historia tan viva."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "nunca en mi vida",
+          "flags": "iu",
+          "label": "use: nunca en mi vida"
+        }
+      ],
+      "focus": "c:nunca-en-mi-vida",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Camila: Gracias por venir. ¿Algo más para los oyentes?",
+      "npcEn": "Camila: Thanks for coming. Anything else for the listeners?",
+      "intent": "Invite listeners to come to the café and tell their own stories (que + subjunctive).",
+      "accept": [
+        "Que vengan al café y que nos cuenten sus propias historias.",
+        "Que vengan al café, que aquí hay tinto y mucho que contar.",
+        "Que pasen por el café y que traigan sus historias."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bque (vengan|pasen|visiten|cuenten)\\b",
+          "flags": "iu",
+          "label": "invite them with que + subjunctive: que vengan"
+        }
+      ],
+      "focus": "g:mood-choice-fine",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:algo-mas",
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:como-es",
+    "c:de-la-noche-a-la-manana",
+    "c:hay",
+    "c:me-encanta",
+    "c:nunca-en-mi-vida",
+    "c:toda-una-odisea",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-subj",
+    "g:perfecto-experience",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:subj-past-triggers",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:anoche",
+    "l:aquí",
+    "l:ayudar",
+    "l:año",
+    "l:bienvenido",
+    "l:café",
+    "l:cambiar",
+    "l:cansarse",
+    "l:ciudad",
+    "l:claro",
+    "l:cliente",
+    "l:contar",
+    "l:creer",
+    "l:cómo",
+    "l:dar",
+    "l:día",
+    "l:empezar",
+    "l:encantar",
+    "l:gente",
+    "l:hablar",
+    "l:historia",
+    "l:imaginarse",
+    "l:leer",
+    "l:libro",
+    "l:llegar",
+    "l:llevar",
+    "l:manejar",
+    "l:mañana",
+    "l:noche",
+    "l:odisea",
+    "l:oyente",
+    "l:pasar",
+    "l:pedir",
+    "l:programa",
+    "l:propio",
+    "l:proyecto",
+    "l:querer",
+    "l:reír",
+    "l:secreto",
+    "l:ser",
+    "l:sufrir",
+    "l:taxi",
+    "l:taxista",
+    "l:tinto",
+    "l:trabajar",
+    "l:traer",
+    "l:venir",
+    "l:vez",
+    "l:vida",
+    "l:vivo",
+    "p:aqui-ahi-alla",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:llevar-tiempo-gerundio",
+    "p:llevar-traer",
+    "p:me-aburre",
+    "p:me-te-nos-objects",
+    "p:no-te-imaginas-lo-que",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:question-word-order"
+  ]
+}

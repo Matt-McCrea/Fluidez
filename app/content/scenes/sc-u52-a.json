@@ -1,0 +1,231 @@
+{
+  "id": "sc-u52-a",
+  "unit": "u52",
+  "title": "Dos formas de contar el hoy",
+  "spare": false,
+  "brief": "You're Tomás, working on the memoir at the corner table with Hernando. He is much older, so use usted. He plays with the way his cousin in Madrid writes, and you answer the way people talk in Colombia.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Mi primo Paco me escribe desde Madrid: Esta mañana he ido al mercado. Aquí no lo diríamos así. ¿Cómo lo diría usted?",
+      "npcEn": "Hernando: My cousin Paco writes to me from Madrid: This morning I have gone to the market. We wouldn't say it like that here. How would you say it?",
+      "intent": "Say it the Colombian way: this morning you went to the market.",
+      "accept": [
+        "Esta mañana fui al mercado.",
+        "Fui al mercado esta mañana.",
+        "Yo diría: esta mañana fui al mercado."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ir",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "say it with the simple past: fui"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "he ido"
+          ],
+          "label": "he ido is the Madrid way; here it is fui"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Eso. También escribe mi primo: Hoy me he levantado a las seis. Cuénteme usted qué hizo hoy antes de venir al café.",
+      "npcEn": "Hernando: Exactly. My cousin also writes: Today I have got up at six. Tell me what you did today before coming to the café.",
+      "intent": "Tell him two things you did today before coming, in the simple past.",
+      "accept": [
+        "Hoy me levanté a las siete y desayuné en casa.",
+        "Hoy desayuné, leí un poco y salí para el café.",
+        "Esta mañana me bañé, preparé café y vine caminando."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "preterito",
+          "label": "use the simple past: me levanté, desayuné"
+        },
+        {
+          "type": "regex",
+          "pattern": "^(?!.*(?<![\\p{L}])(he|hemos)(?![\\p{L}]))",
+          "flags": "isu",
+          "label": "simple past, not he levantado"
+        }
+      ],
+      "focus": "g:spain-pasts",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Ahora una frase de mi libro: Si hubiese hablado con Rosa a tiempo, todo habría sido distinto. ¿Qué habría pasado, según usted?",
+      "npcEn": "Hernando: Now a sentence from my book: If I had spoken to Rosa in time, everything would have been different. What would have happened, in your opinion?",
+      "intent": "Answer with your own form (hubiera): if he had talked to her, she would have known.",
+      "accept": [
+        "Si usted hubiera hablado con ella, mi abuela lo habría sabido.",
+        "Si hubiera hablado con Rosa, ella habría sabido lo que usted sentía.",
+        "Habría sido distinto, sí. Si usted hubiera hablado, ella lo habría sabido."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhubiera\\b",
+          "flags": "iu",
+          "label": "say it with hubiera (the -ra form)"
+        }
+      ],
+      "focus": "g:se-form-recognition",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Mi primo, en cambio, escribiría: Si fuese joven, volvería a manejar el taxi. ¿Cómo lo diría usted, con la otra forma?",
+      "npcEn": "Hernando: My cousin, on the other hand, would write: If he were young, he would go back to driving the taxi. How would you say it, with the other form?",
+      "intent": "Say Paco's sentence with the -ra form: if he were young, he would drive the taxi again.",
+      "accept": [
+        "Si fuera joven, volvería a manejar el taxi.",
+        "Volvería a manejar el taxi si fuera joven.",
+        "Si él fuera joven, volvería a manejar el taxi."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bfuera\\b",
+          "flags": "iu",
+          "label": "use fuera, the -ra form of ser"
+        }
+      ],
+      "focus": "g:se-form-recognition",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Perfecto. Mañana seguimos con el capítulo del taxi. ¿Le sirvo otro tinto?",
+      "npcEn": "Hernando: Perfect. Tomorrow we continue with the taxi chapter. Shall I pour you another black coffee?",
+      "intent": "Accept the coffee politely and say you'll be back tomorrow.",
+      "accept": [
+        "Sí, gracias. Mañana vuelvo temprano.",
+        "Con gusto, gracias. Aquí estaré mañana.",
+        "Sí, por favor. Mañana vengo con mis notas."
+      ],
+      "require": [],
+      "focus": "g:spain-pasts",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:con-el-ella",
+    "c:con-mucho-gusto",
+    "c:en-cambio",
+    "c:fui",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:por-favor",
+    "c:segun",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:conditional-perfect",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:perfecto-experience",
+    "g:pluperfect-subj",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:se-form-recognition",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:ahora",
+    "l:antes",
+    "l:aquí",
+    "l:bañarse",
+    "l:café",
+    "l:cambio",
+    "l:caminar",
+    "l:capítulo",
+    "l:casa",
+    "l:contar",
+    "l:cómo",
+    "l:decir",
+    "l:desayunar",
+    "l:distinto",
+    "l:escribir",
+    "l:estar",
+    "l:favor",
+    "l:formar",
+    "l:frase",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:hoy",
+    "l:ir",
+    "l:joven",
+    "l:leer",
+    "l:levantarse",
+    "l:libro",
+    "l:manejar",
+    "l:mañana",
+    "l:mercado",
+    "l:nota",
+    "l:pasado",
+    "l:perfecto",
+    "l:preparar",
+    "l:primo",
+    "l:qué",
+    "l:saber",
+    "l:salir",
+    "l:seguir",
+    "l:sentir",
+    "l:ser",
+    "l:servir",
+    "l:taxi",
+    "l:temprano",
+    "l:tiempo",
+    "l:tinto",
+    "l:venir",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:contar-dos-sentidos",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:hedge-knowledge",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:volver-a-inf",
+    "p:yo-diria-que"
+  ]
+}

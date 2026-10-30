@@ -1,0 +1,206 @@
+{
+  "id": "sc-u52-f",
+  "unit": "u52",
+  "title": "Lo que no pasó",
+  "spare": true,
+  "brief": "You're Tomás, playing a game Hernando invented for the memoir: write the chapters of what didn't happen. He is much older, so use usted. Answer his what-ifs with hubiera or hubiese and habría.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Juguemos a lo que no pasó. Si yo hubiese comprado el edificio en 1975, ¿qué habría pasado con el café?",
+      "npcEn": "Hernando: Let's play at what didn't happen. If I had bought the building in 1975, what would have happened to the café?",
+      "intent": "Say that if he had bought the building, the café would be his.",
+      "accept": [
+        "Si usted hubiera comprado el edificio, el café sería suyo.",
+        "Si usted lo hubiera comprado, el café habría sido suyo.",
+        "El café habría sido suyo si usted hubiera comprado el edificio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhubiera\\b",
+          "flags": "iu",
+          "label": "start the if-clause with hubiera"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b(habría|sería|estaría|tendría)\\b",
+          "flags": "iu",
+          "label": "finish with the would: habría, sería"
+        }
+      ],
+      "focus": "g:se-form-recognition",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: ¿Y si Rosa hubiese dicho que sí? Mi suerte habría sido otra.",
+      "npcEn": "Hernando: And if Rosa had said yes? My luck would have been different.",
+      "intent": "Point out the funny consequence for you, using hubiese: you wouldn't have been born.",
+      "accept": [
+        "Si ella hubiese dicho que sí, yo no habría nacido.",
+        "Y yo no estaría aquí, si ella hubiese dicho que sí.",
+        "Si mi abuela hubiese aceptado, yo no habría nacido."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhubiese\\b",
+          "flags": "iu",
+          "label": "use hubiese, the other if-form"
+        }
+      ],
+      "focus": "g:se-form-recognition",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Usted es cruel. Bueno, otra: si hubiera sabido desde el principio lo difícil que era el café, ¿lo habría aceptado?",
+      "npcEn": "Hernando: You are cruel. Well, another one: if you had known from the start how hard the café was, would you have accepted it?",
+      "intent": "Answer honestly with habría: yes, you would have accepted it anyway.",
+      "accept": [
+        "Sí, lo habría aceptado igual, aunque con más miedo.",
+        "Lo habría aceptado, pero habría dormido menos.",
+        "No sé. Tal vez me habría quedado en Toronto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhabría\\b",
+          "flags": "iu",
+          "label": "answer with habría: lo habría aceptado"
+        }
+      ],
+      "focus": "g:tense-modal-uses",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Escribiré ese capítulo. Se llamará Lo que habría podido ser. ¿Le gusta?",
+      "npcEn": "Hernando: I'll write that chapter. It will be called What Could Have Been. Do you like it?",
+      "intent": "Tell him you love the title and that what didn't happen counts too.",
+      "accept": [
+        "Me encanta el título. Lo que no fue también cuenta.",
+        "Sí, mucho. Lo que no pasó también es parte de la historia.",
+        "Me gusta. Lo que no sucedió también cuenta."
+      ],
+      "require": [],
+      "focus": "g:se-form-recognition",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Entonces a trabajar. Pero primero, el tinto.",
+      "npcEn": "Hernando: Then to work. But first, the black coffee.",
+      "intent": "Offer to go get it and ask whether he wants it with sugar.",
+      "accept": [
+        "Yo voy por él. ¿Lo quiere con azúcar?",
+        "Ya se lo traigo. ¿Lo prefiere sin azúcar?",
+        "Voy yo. ¿Se lo traigo con azúcar?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "g:tense-modal-uses",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:entonces-bueno",
+    "c:era",
+    "c:igual",
+    "c:me-encanta",
+    "c:me-gusta",
+    "c:no-se",
+    "c:voy-vas",
+    "g:conditional",
+    "g:conditional-perfect",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:lo-que-intensity",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:aceptar",
+    "l:aquí",
+    "l:azúcar",
+    "l:bueno",
+    "l:café",
+    "l:capítulo",
+    "l:comprar",
+    "l:contar",
+    "l:cruel",
+    "l:decir",
+    "l:difícil",
+    "l:dormir",
+    "l:edificio",
+    "l:encantar",
+    "l:escribir",
+    "l:estar",
+    "l:gustar",
+    "l:historia",
+    "l:igual",
+    "l:ir",
+    "l:jugar",
+    "l:llamarse",
+    "l:miedo",
+    "l:nacer",
+    "l:parte",
+    "l:pasado",
+    "l:pasar",
+    "l:poder",
+    "l:preferir",
+    "l:principio",
+    "l:quedar",
+    "l:querer",
+    "l:qué",
+    "l:saber",
+    "l:ser",
+    "l:suceder",
+    "l:suerte",
+    "l:tinto",
+    "l:trabajar",
+    "l:traer",
+    "l:título",
+    "l:vez",
+    "p:aqui-ahi-alla",
+    "p:dates-years",
+    "p:de-owner",
+    "p:estaria-bien-que",
+    "p:jugar-a",
+    "p:llevar-traer",
+    "p:otro-no-article",
+    "p:possessives-basic",
+    "p:prefieres-x-o-y",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:time-sequence-basic"
+  ]
+}
