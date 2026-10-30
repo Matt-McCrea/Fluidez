@@ -1,0 +1,184 @@
+{
+  "node": "p:formar-parte-de",
+  "hook": {
+    "line": "Whether it is a team, a family or a neighbourhood, you will often say what you belong to. Spanish does it with \"form part of\".",
+    "es": "Formo parte del equipo de ventas.",
+    "en": "I'm part of the sales team."
+  },
+  "examples": [
+    {
+      "es": "Vale forma parte del equipo del café.",
+      "en": "Vale is part of the café's team."
+    },
+    {
+      "es": "Formamos parte de un grupo de estudio.",
+      "en": "We're part of a study group."
+    },
+    {
+      "es": "¿Usted forma parte del grupo?",
+      "en": "Are you (formal) part of the group?"
+    },
+    {
+      "es": "Mariana pertenece a un grupo de lectura.",
+      "en": "Mariana belongs to a reading group."
+    },
+    {
+      "es": "Ellos no forman parte de la familia.",
+      "en": "They aren't part of the family."
+    },
+    {
+      "es": "La Candelaria pertenece al centro de Bogotá.",
+      "en": "La Candelaria is part of downtown Bogotá."
+    }
+  ],
+  "rule": "To say you are part of a group, use *formar parte de* or *pertenecer a*. The verb changes with who is in:\n\n*formo parte, formas parte, forma parte, formamos parte, forman parte*\n*pertenezco, perteneces, pertenece, pertenecemos, pertenecen*\n\n*De* and *a* join the article: *del equipo*, *al grupo*.\n\nEnglish says \"am part of\" or \"belong to\". Spanish uses a regular verb, and each one has its own little word: *parte de*, *pertenecer a*.",
+  "smallPrint": "Teachers call *formar parte de* and *pertenecer a* verbs of membership: they say which group something belongs to.",
+  "readAndPick": [
+    {
+      "es": "Formo parte del equipo de ventas.",
+      "options": [
+        "You are part of the sales team.",
+        "He is part of the sales team.",
+        "I'm part of the sales team."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Formamos parte de un grupo de estudio.",
+      "options": [
+        "We're part of a study group.",
+        "They're part of a study group.",
+        "I'm part of a study group."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Usted forma parte del grupo?",
+      "options": [
+        "Am I part of the group?",
+        "Are you (informal) part of the group?",
+        "Are you (formal) part of the group?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Formas parte del grupo?",
+      "options": [
+        "Is he part of the group?",
+        "Are you (informal) part of the group?",
+        "Are you (formal) part of the group?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ellos no forman parte de la familia.",
+      "options": [
+        "We aren't part of the family.",
+        "He isn't part of the family.",
+        "They aren't part of the family."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana pertenece a un grupo de lectura.",
+      "options": [
+        "Mariana wants a reading group.",
+        "Mariana belongs to a reading group.",
+        "Mariana reads to a group."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pertenezco a un grupo de lectura.",
+      "options": [
+        "I belong to a reading group.",
+        "You belong to a reading group.",
+        "She belongs to a reading group."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La Candelaria pertenece al centro de Bogotá.",
+      "options": [
+        "La Candelaria is next to downtown Bogotá.",
+        "La Candelaria is far from downtown Bogotá.",
+        "La Candelaria is part of downtown Bogotá."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Mariana ___ a un grupo de lectura.* (*pertenece* or *forma*) Mariana belongs to a reading group.",
+      "answer": "Mariana pertenece a un grupo de lectura.",
+      "accept": [],
+      "why": "*Pertenecer* goes with *a*; *formar* needs *parte de*."
+    },
+    {
+      "prompt": "Say: I'm part of the sales team.",
+      "answer": "Formo parte del equipo de ventas.",
+      "accept": [
+        "Pertenezco al equipo de ventas."
+      ],
+      "why": "*Formo* is *I*, and *de* plus *el* makes *del*."
+    },
+    {
+      "prompt": "Say: We're part of a study group.",
+      "answer": "Formamos parte de un grupo de estudio.",
+      "accept": [
+        "Pertenecemos a un grupo de estudio."
+      ],
+      "why": "*Formamos* is *we*."
+    },
+    {
+      "prompt": "Say, to someone you address formally: Are you part of the group?",
+      "answer": "¿Usted forma parte del grupo?",
+      "accept": [
+        "¿Forma parte del grupo?",
+        "¿Usted pertenece al grupo?",
+        "¿Pertenece al grupo?"
+      ],
+      "why": "*Usted* takes the same ending as *he* and *she*."
+    },
+    {
+      "prompt": "Say: Vale is part of the café's team.",
+      "answer": "Vale forma parte del equipo del café.",
+      "accept": [
+        "Vale pertenece al equipo del café."
+      ],
+      "why": "One person, so *forma*."
+    },
+    {
+      "prompt": "Make it negative: *Ellos forman parte de la familia.*",
+      "answer": "Ellos no forman parte de la familia.",
+      "accept": [
+        "No forman parte de la familia."
+      ],
+      "why": "*No* goes right before the verb."
+    },
+    {
+      "prompt": "Say it with *pertenecer*: *Formo parte de un grupo de lectura.*",
+      "answer": "Pertenezco a un grupo de lectura.",
+      "accept": [],
+      "why": "*Pertenecer* swaps *de* for *a*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo formo parte al equipo.",
+      "right": "Formo parte del equipo.",
+      "why": "*Formar parte* takes *de*, not *a*."
+    },
+    {
+      "wrong": "Pertenezco del equipo.",
+      "right": "Pertenezco al equipo.",
+      "why": "*Pertenecer* goes with *a*."
+    },
+    {
+      "wrong": "Formo parte de el equipo de ventas.",
+      "right": "Formo parte del equipo de ventas.",
+      "why": "*De* and *el* always join into *del*."
+    }
+  ],
+  "personal": "Name a group you belong to: a team, a class, a family, a club. Say it twice, once with *Formo parte de…* and once with *Pertenezco a…*"
+}

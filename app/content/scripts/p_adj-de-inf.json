@@ -1,0 +1,172 @@
+{
+  "node": "p:adj-de-inf",
+  "hook": {
+    "line": "You have just read something tricky, and you want to say it is hard to follow. English says \"hard to follow\"; Spanish adds a small *de*.",
+    "es": "Es un tema difícil de explicar.",
+    "en": "It's a hard topic to explain."
+  },
+  "examples": [
+    {
+      "es": "Es fácil de entender.",
+      "en": "It's easy to understand."
+    },
+    {
+      "es": "Es un tema difícil de explicar.",
+      "en": "It's a hard topic to explain."
+    },
+    {
+      "es": "Su discurso fue complicado de seguir.",
+      "en": "His speech was difficult to follow."
+    },
+    {
+      "es": "Este ensayo es difícil de resumir.",
+      "en": "This essay is hard to summarise."
+    },
+    {
+      "es": "La receta es sencilla de preparar.",
+      "en": "The recipe is simple to prepare."
+    },
+    {
+      "es": "Esa regla es imposible de olvidar.",
+      "en": "That rule is impossible to forget."
+    }
+  ],
+  "rule": "Adjective + *de* + infinitive says how a thing is to deal with: *fácil de entender*, *difícil de explicar*. The thing comes first and is the subject: *Este tema es difícil de explicar.*\n\nEnglish says \"to explain\" with no extra word. Spanish needs *de*.\n\nWatch the other order. *Es difícil explicar este tema* has no *de*, because the infinitive itself is the subject.\n\nCommon adjectives: *fácil*, *difícil*, *imposible*, *sencillo*, *complicado*.",
+  "smallPrint": "Teachers call the infinitive here a complement of the adjective: it completes the adjective's meaning.",
+  "readAndPick": [
+    {
+      "es": "Es fácil de entender.",
+      "options": [
+        "It's hard to understand.",
+        "It's easy to understand.",
+        "It's easy to explain."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Este ensayo es difícil de resumir.",
+      "options": [
+        "This essay is hard to summarise.",
+        "This essay is easy to summarise.",
+        "This essay summarises hard things."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esa regla es imposible de olvidar.",
+      "options": [
+        "That rule is easy to forget.",
+        "That rule is impossible to learn.",
+        "That rule is impossible to forget."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Las instrucciones son fáciles de seguir.",
+      "options": [
+        "The instructions are easy to follow.",
+        "The instructions are hard to follow.",
+        "The instructions follow easily."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Su discurso fue complicado de seguir.",
+      "options": [
+        "His speech followed a complicated plan.",
+        "His speech was complicated to write.",
+        "His speech was hard to follow."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La calle es incómoda de caminar.",
+      "options": [
+        "The street is easy to walk along.",
+        "The street is uncomfortable to walk along.",
+        "The street is far to walk."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La receta es sencilla de preparar.",
+      "options": [
+        "The recipe is hard to prepare.",
+        "The recipe is simple to read.",
+        "The recipe is simple to prepare."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es un tema difícil de explicar.",
+      "options": [
+        "It's an easy topic to explain.",
+        "It's a topic I can't explain.",
+        "It's a hard topic to explain."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Es un tema difícil ___ explicar.* (*de* or *a*) It's a hard topic to explain.",
+      "answer": "Es un tema difícil de explicar.",
+      "accept": [],
+      "why": "After the adjective, the infinitive needs *de*."
+    },
+    {
+      "prompt": "Say: It's easy to understand.",
+      "answer": "Es fácil de entender.",
+      "accept": [],
+      "why": "Adjective + *de* + infinitive."
+    },
+    {
+      "prompt": "Say: This essay is hard to summarise.",
+      "answer": "Este ensayo es difícil de resumir.",
+      "accept": [],
+      "why": "The essay is the subject, so it comes first."
+    },
+    {
+      "prompt": "Say: The recipe is simple to prepare.",
+      "answer": "La receta es sencilla de preparar.",
+      "accept": [],
+      "why": "*Sencilla* agrees with the feminine *receta*, then *de* and the infinitive."
+    },
+    {
+      "prompt": "Say: The instructions are easy to follow.",
+      "answer": "Las instrucciones son fáciles de seguir.",
+      "accept": [],
+      "why": "Plural subject, plural adjective, then *de* and the infinitive."
+    },
+    {
+      "prompt": "Put the topic first: *Es difícil explicar este tema.*",
+      "answer": "Este tema es difícil de explicar.",
+      "accept": [],
+      "why": "When the thing is the subject, the adjective needs *de* before the infinitive."
+    },
+    {
+      "prompt": "Say the opposite: *Es fácil de entender.* Say: It's hard to understand.",
+      "answer": "Es difícil de entender.",
+      "accept": [],
+      "why": "Only the adjective changes; *de* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es un tema difícil explicar.",
+      "right": "Es un tema difícil de explicar.",
+      "why": "Almost. After a noun, the adjective needs *de* before the infinitive."
+    },
+    {
+      "wrong": "Este tema es difícil de explicarlo.",
+      "right": "Este tema es difícil de explicar.",
+      "why": "The topic is already the subject, so the infinitive stands alone, with no *lo*."
+    },
+    {
+      "wrong": "Es difícil de explicar este tema.",
+      "right": "Es difícil explicar este tema.",
+      "why": "When the infinitive comes first with its own object, there is no *de*; *de* belongs to the order where the thing comes first."
+    }
+  ],
+  "personal": "Think of something in your life that is hard to do or easy to do: a recipe, a song, a rule. Say it with *es fácil de…* or *es difícil de…*"
+}
