@@ -19942,5 +19942,154 @@
     "unit": "u21",
     "theme": "last fixes",
     "source": "gen"
+  },
+  {
+    "id": "u21-0838",
+    "es": "¿Me haces un favor? No toques eso.",
+    "en": "Will you do me a favor? Don't touch that. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-haces-un-favor",
+      "g:negative-commands",
+      "l:favor",
+      "l:hacer",
+      "l:tocar",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "c:me-haces-un-favor",
+      "g:negative-commands"
+    ],
+    "kind": "question",
+    "unit": "u21",
+    "theme": "favors and warnings",
+    "source": "gen"
+  },
+  {
+    "id": "u21-0839",
+    "es": "¿Quieres que te ayude? No te preocupes, yo lo hago.",
+    "en": "Do you want me to help you? Don't worry, I'll do it. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hago-salgo-vengo",
+      "c:no-te-preocupes",
+      "c:quieres-que-te-ayude",
+      "g:direct-objects",
+      "g:subj-wanting",
+      "g:yo-irregular",
+      "l:ayudar",
+      "l:hacer",
+      "l:preocuparse",
+      "l:querer"
+    ],
+    "targets": [
+      "c:no-te-preocupes",
+      "g:subj-wanting"
+    ],
+    "kind": "question",
+    "unit": "u21",
+    "theme": "favors and warnings",
+    "source": "gen"
+  },
+  {
+    "id": "u21-0840",
+    "es": "¿Me haces un favor? No abras esa puerta.",
+    "en": "Will you do me a favor? Don't open that door. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-haces-un-favor",
+      "g:demonstratives",
+      "g:negative-commands",
+      "l:abrir",
+      "l:favor",
+      "l:hacer",
+      "l:puerta"
+    ],
+    "targets": [
+      "c:me-haces-un-favor",
+      "g:negative-commands"
+    ],
+    "kind": "question",
+    "unit": "u21",
+    "theme": "favors and warnings",
+    "source": "gen"
+  },
+  {
+    "id": "u21-0841",
+    "es": "¿Me haces un favor? No me llames tan tarde.",
+    "en": "Will you do me a favor? Don't call me so late. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-haces-un-favor",
+      "g:negative-commands",
+      "l:favor",
+      "l:hacer",
+      "l:llamar",
+      "l:tarde",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "c:me-haces-un-favor",
+      "g:negative-commands"
+    ],
+    "kind": "question",
+    "unit": "u21",
+    "theme": "favors and warnings",
+    "source": "gen"
+  },
+  {
+    "id": "u21-0842",
+    "es": "¿Quieres que te ayude? No cierres todavía.",
+    "en": "Do you want me to help you? Don't close yet. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:quieres-que-te-ayude",
+      "g:negative-commands",
+      "g:subj-wanting",
+      "l:ayudar",
+      "l:cerrar",
+      "l:querer",
+      "p:ya-todavia-basic"
+    ],
+    "targets": [
+      "g:negative-commands",
+      "g:subj-wanting"
+    ],
+    "kind": "question",
+    "unit": "u21",
+    "theme": "favors and warnings",
+    "source": "gen"
+  },
+  {
+    "id": "u21-0843",
+    "es": "¿Puedo ayudarle? No se preocupe, señor.",
+    "en": "Can I help you? Don't worry, sir. (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:no-se",
+      "c:no-te-preocupes",
+      "c:puedo",
+      "g:indirect-objects",
+      "g:object-pronoun-position",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:poder",
+      "l:preocuparse",
+      "l:señor"
+    ],
+    "targets": [
+      "c:no-te-preocupes"
+    ],
+    "kind": "question",
+    "unit": "u21",
+    "theme": "favors and warnings",
+    "source": "gen"
   }
 ]
