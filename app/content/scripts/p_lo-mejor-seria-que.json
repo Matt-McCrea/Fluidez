@@ -1,0 +1,176 @@
+{
+  "node": "p:lo-mejor-seria-que",
+  "hook": {
+    "line": "Telling someone what to do rarely goes well, especially in the middle of an argument. Spanish has a softer way in: \"it would be best if\". Vale uses it when Tomás is about to sign something in a hurry.",
+    "es": "Lo mejor sería que esperáramos un poco.",
+    "en": "It would be best if we waited a little."
+  },
+  "examples": [
+    {
+      "es": "Lo mejor sería que fueras al médico.",
+      "en": "It would be best if you went to the doctor. (to a friend)"
+    },
+    {
+      "es": "Si yo fuera tú, hablaría con Hernando.",
+      "en": "If I were you, I'd talk to Hernando. (to a friend)"
+    },
+    {
+      "es": "Te recomendaría que hablaras con ella.",
+      "en": "I'd recommend that you talk to her. (to a friend)"
+    },
+    {
+      "es": "Lo mejor sería que esperáramos un poco.",
+      "en": "It would be best if we waited a little."
+    },
+    {
+      "es": "Si yo fuera usted, no firmaría.",
+      "en": "If I were you, I wouldn't sign. (formal)"
+    },
+    {
+      "es": "Les recomendaría que lo pensaran.",
+      "en": "I'd recommend that you all think it over."
+    }
+  ],
+  "rule": "Three soft ways to give advice:\n\n*Lo mejor sería que* + the \"imagined\" verb: *fueras*, *esperáramos*.\n*Si yo fuera tú,* + a *would* verb: *hablaría*, *firmaría*.\n*Te recomendaría que* + the same imagined verb: *hablaras*.\n\nEnglish does it with \"went\", \"waited\", \"were\". Spanish too: the verb after *que* looks past-tense, but it is only polite distance. For *tú* it ends in *-ras* (*fueras*, *hablaras*); for *we* in *-ramos* (*esperáramos*); for *ustedes* in *-ran* (*pensaran*).\n\nUse *usted* when you must be formal: *Si yo fuera usted*.",
+  "smallPrint": "Teachers call the *fueras* form the imperfect subjunctive, and the *would* verb the conditional.",
+  "readAndPick": [
+    {
+      "es": "Lo mejor sería que fueras al médico.",
+      "options": [
+        "It would be best if you went to the doctor.",
+        "It would be best if we went to the doctor.",
+        "It was best that you went to the doctor."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo mejor sería que esperáramos un poco.",
+      "options": [
+        "It would be best if you waited a little.",
+        "It would be best if we waited a little.",
+        "It would be best if they waited a little."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si yo fuera tú, no firmaría eso.",
+      "options": [
+        "If I am you, I won't sign that.",
+        "When I was you, I didn't sign that.",
+        "If I were you, I wouldn't sign that."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Te recomendaría que hablaras con ella.",
+      "options": [
+        "I'd recommend that you talk to her.",
+        "I recommended that she talk to you.",
+        "I recommend that you talk to her."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les recomendaría que lo pensaran.",
+      "options": [
+        "I'd recommend that you think it over. (one person)",
+        "I'd recommend that you all think it over.",
+        "I'd recommend that we think it over."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo mejor sería que me dijeras la verdad.",
+      "options": [
+        "It would be best if I told you the truth.",
+        "It would be best if she told me the truth.",
+        "It would be best if you told me the truth."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Si yo fuera tú, le pediría perdón.",
+      "options": [
+        "If I were you, I'd apologise to him.",
+        "If I were you, I asked him for a favour.",
+        "If I am you, I apologise to him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si yo fuera usted, no firmaría.",
+      "options": [
+        "If I were you, I wouldn't sign. (to a friend)",
+        "If I were you, I wouldn't sign. (formal)",
+        "If he were me, he wouldn't sign."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *fueras* or *vas*. To a friend: Lo mejor sería que ___ al médico. Type the whole sentence.",
+      "answer": "Lo mejor sería que fueras al médico.",
+      "accept": [],
+      "why": "After *lo mejor sería que* the verb takes the imagined form: *fueras*."
+    },
+    {
+      "prompt": "Choose *hablaría* or *hablo*. To a friend: Si yo fuera tú, ___ con Hernando. Type the whole sentence.",
+      "answer": "Si yo fuera tú, hablaría con Hernando.",
+      "accept": [],
+      "why": "After *si yo fuera tú* comes the *would* verb: *hablaría*."
+    },
+    {
+      "prompt": "If I were you, I wouldn't sign that. (to a friend)",
+      "answer": "Si yo fuera tú, no firmaría eso.",
+      "accept": [
+        "Si fuera tú, no firmaría eso."
+      ],
+      "why": "*Si yo fuera tú* plus *no firmaría*: advice, not an order."
+    },
+    {
+      "prompt": "It would be best if you told me the truth. (to a friend)",
+      "answer": "Lo mejor sería que me dijeras la verdad.",
+      "accept": [],
+      "why": "*Dijeras* is the *tú* form of the imagined verb."
+    },
+    {
+      "prompt": "Make it formal: Si yo fuera tú, no firmaría. Say it to someone you call *usted*.",
+      "answer": "Si yo fuera usted, no firmaría.",
+      "accept": [
+        "Si fuera usted, no firmaría."
+      ],
+      "why": "Only *tú* becomes *usted*; the verbs stay the same."
+    },
+    {
+      "prompt": "Make it about we: It would be best if we waited a little.",
+      "answer": "Lo mejor sería que esperáramos un poco.",
+      "accept": [],
+      "why": "*We* gives the ending *-ramos*, with the accent on the vowel before it: *esperáramos*."
+    },
+    {
+      "prompt": "I'd recommend that you all think it over.",
+      "answer": "Les recomendaría que lo pensaran.",
+      "accept": [],
+      "why": "*Ustedes* takes *les* and the ending *-ran*: *pensaran*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Lo mejor sería que vas al médico.",
+      "right": "Lo mejor sería que fueras al médico.",
+      "why": "Almost. After *lo mejor sería que* Spanish wants the imagined verb, not the plain *vas*."
+    },
+    {
+      "wrong": "Si yo sería tú, hablaría con ella.",
+      "right": "Si yo fuera tú, hablaría con ella.",
+      "why": "Only the second half takes the *would* verb; after *si* use *fuera*."
+    },
+    {
+      "wrong": "Te recomendaría que hablas con ella.",
+      "right": "Te recomendaría que hablaras con ella.",
+      "why": "The verb after *que* takes the imagined form, *hablaras*, not *hablas*."
+    }
+  ],
+  "personal": "Think of a friend with a problem and give one piece of advice: *Si yo fuera tú,…* or *Lo mejor sería que…*"
+}

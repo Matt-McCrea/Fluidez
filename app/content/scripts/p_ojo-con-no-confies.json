@@ -1,0 +1,176 @@
+{
+  "node": "p:ojo-con-no-confies",
+  "hook": {
+    "line": "Altamira's people are friendly, a little too friendly. When Don Hernando wants to warn Tomás without sounding dramatic, he reaches for the little word every Colombian uses to say \"careful\".",
+    "es": "¡Ojo con el piso mojado!",
+    "en": "Careful with the wet floor!"
+  },
+  "examples": [
+    {
+      "es": "¡Ojo con el piso mojado!",
+      "en": "Careful with the wet floor!"
+    },
+    {
+      "es": "No confíes en él.",
+      "en": "Don't trust him. (to a friend)"
+    },
+    {
+      "es": "No te fíes de ella.",
+      "en": "Don't trust her. (to a friend)"
+    },
+    {
+      "es": "Te advierto que no me voy a quedar callado.",
+      "en": "I'm warning you, I'm not going to keep quiet. (to a friend)"
+    },
+    {
+      "es": "Si no pagas el arriendo, te saco.",
+      "en": "If you don't pay the rent, I'll throw you out. (to a friend)"
+    },
+    {
+      "es": "Si no lo terminas mañana, estás despedido.",
+      "en": "If you don't finish it tomorrow, you're fired. (to one person)"
+    }
+  ],
+  "rule": "Four ways to warn, from friendly to harsh:\n\n*¡Ojo con…!* Short and everyday: \"watch out for\" a thing, right now.\n*No confíes en…* or *No te fíes de…*: \"don't trust\" someone, from now on. Note the little words *en* and *de*.\n*Te advierto que…* followed by a plain fact: \"I'm warning you that\".\n*Si no…, …* a threat. The verbs stay plain, with no \"imagined\" form, because you are sure of what will happen.\n\nTo a group, *No confíen en él*. To someone you call *usted*, *No confíe en él*.",
+  "smallPrint": "Teachers call *no confíes* a negative command: *no* plus the *tú* form that ends in *-es*.",
+  "readAndPick": [
+    {
+      "es": "¡Ojo con el piso mojado!",
+      "options": [
+        "Careful with the wet floor!",
+        "I want the wet floor.",
+        "The floor was wet."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No confíes en él.",
+      "options": [
+        "He trusts you.",
+        "Trust him.",
+        "Don't trust him."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No te fíes de ella.",
+      "options": [
+        "She doesn't trust you.",
+        "Don't trust her.",
+        "Trust her."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te advierto que no me voy a quedar callado.",
+      "options": [
+        "I'm warning you, I'm not going to keep quiet.",
+        "He warned you that you won't keep quiet.",
+        "I'm asking you to keep quiet."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si no pagas el arriendo, te saco.",
+      "options": [
+        "If I don't pay the rent, you'll throw me out.",
+        "If you pay the rent, I'll throw you out.",
+        "If you don't pay the rent, I'll throw you out."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Si no lo terminas mañana, estás despedido.",
+      "options": [
+        "If you don't finish it tomorrow, you're fired.",
+        "If I don't finish it tomorrow, I'm fired.",
+        "If he finishes it tomorrow, he's fired."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No confíen en él.",
+      "options": [
+        "Don't trust him. (to a friend)",
+        "Don't trust him. (to you all)",
+        "They don't trust him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Ojo con la taza caliente!",
+      "options": [
+        "I'd like a hot cup.",
+        "The cup is cold.",
+        "Careful with the hot cup!"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *confíes* or *confías*. To a friend: No ___ en él. Type the whole sentence.",
+      "answer": "No confíes en él.",
+      "accept": [],
+      "why": "After *no*, an order to *tú* ends in *-es*: *confíes*."
+    },
+    {
+      "prompt": "Choose *confíe* or *confíen*. To a group of friends: No ___ en él. Type the whole sentence.",
+      "answer": "No confíen en él.",
+      "accept": [],
+      "why": "A group (*ustedes*) takes *-en*."
+    },
+    {
+      "prompt": "Careful with the wet floor!",
+      "answer": "¡Ojo con el piso mojado!",
+      "accept": [
+        "Ojo con el piso mojado."
+      ],
+      "why": "*Ojo con* plus the thing you want them to watch."
+    },
+    {
+      "prompt": "I'm warning you, I'm not going to keep quiet. (to a friend)",
+      "answer": "Te advierto que no me voy a quedar callado.",
+      "accept": [
+        "Te advierto que no voy a quedarme callado."
+      ],
+      "why": "*Te advierto que* plus a plain, sure fact."
+    },
+    {
+      "prompt": "If you don't pay the rent, I'll throw you out. (to a friend)",
+      "answer": "Si no pagas el arriendo, te saco.",
+      "accept": [],
+      "why": "*Si no* plus plain verbs: you are sure of the consequence."
+    },
+    {
+      "prompt": "Make it formal: No confíes en él. Say it to someone you call *usted*.",
+      "answer": "No confíe en él.",
+      "accept": [],
+      "why": "For *usted* the ending flips to *-e*: *confíe*."
+    },
+    {
+      "prompt": "Make it about you all: Si no lo terminas mañana, estás despedido. Say: If you all don't finish it tomorrow, you're fired.",
+      "answer": "Si no lo terminan mañana, están despedidos.",
+      "accept": [],
+      "why": "*Ustedes* gives *terminan* and *están despedidos*, plural."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ojo de el piso mojado.",
+      "right": "¡Ojo con el piso mojado!",
+      "why": "Almost. The warning word is always followed by *con*."
+    },
+    {
+      "wrong": "No confías en él.",
+      "right": "No confíes en él.",
+      "why": "As an order to a friend, the verb takes *-es*; *confías* would only state a fact."
+    },
+    {
+      "wrong": "No te fíes en ella.",
+      "right": "No te fíes de ella.",
+      "why": "*Confiar* goes with *en*, but *fiarse* goes with *de*."
+    }
+  ],
+  "personal": "Think of a real warning you'd give a friend, then say it: *Ojo con…* or *No confíes en…*"
+}

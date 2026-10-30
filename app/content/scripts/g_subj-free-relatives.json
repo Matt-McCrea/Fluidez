@@ -1,0 +1,189 @@
+{
+  "node": "g:subj-free-relatives",
+  "hook": {
+    "line": "Tomás has called a meeting at the café about Altamira, and he has no idea who will turn up. Spanish has a neat way to talk about \"whoever\" and \"wherever\" before you know the answer.",
+    "es": "El que quiera venir, que venga.",
+    "en": "Whoever wants to come can come."
+  },
+  "examples": [
+    {
+      "es": "El que quiera venir, que venga.",
+      "en": "Whoever wants to come can come."
+    },
+    {
+      "es": "Haré lo que sea necesario.",
+      "en": "I'll do whatever is necessary."
+    },
+    {
+      "es": "Quien quiera hablar conmigo sabe dónde estoy.",
+      "en": "Whoever wants to talk to me knows where I am."
+    },
+    {
+      "es": "Voy donde tú digas.",
+      "en": "I'll go wherever you say."
+    },
+    {
+      "es": "Come lo que quieras.",
+      "en": "Eat whatever you like. (to a friend)"
+    },
+    {
+      "es": "Hablaré con quien tú quieras.",
+      "en": "I'll talk to whoever you want."
+    }
+  ],
+  "rule": "When you don't know yet who, what or where, Spanish puts the verb after *el que*, *quien*, *lo que* or *donde* in a different form, the one that says \"whoever it may be\".\n\n*quiera* (not *quiere*), *digas* (not *dices*), *sea* (not *es*).\n\nWith *tú* the verb ends in *-as*: *quieras*, *digas*. With *él*, *ella* or *usted* it ends in *-a*: *quiera*, *diga*.\n\nIf the answer is already known, the normal form comes back: *Hago lo que puedo.* (I do what I can, a real, known thing.)\n\nEnglish just adds \"-ever\" to the word and keeps the verb. Spanish keeps the word and changes the verb.",
+  "smallPrint": "Teachers call these *relativas libres* with the subjunctive: a relative clause with no fixed person or thing behind it.",
+  "readAndPick": [
+    {
+      "es": "Come lo que quieras.",
+      "options": [
+        "Eat whatever you like.",
+        "Eat whatever he likes.",
+        "I eat what I like."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Voy donde tú digas.",
+      "options": [
+        "I'm going where I said.",
+        "I'll go wherever you say.",
+        "Where do you say you're going?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Haré lo que sea necesario.",
+      "options": [
+        "I did what was necessary.",
+        "I do what is necessary.",
+        "I'll do whatever is necessary."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Quien quiera hablar conmigo sabe dónde estoy.",
+      "options": [
+        "Whoever wants to talk to me knows where I am.",
+        "The one who talked to me knows where I was.",
+        "Nobody wants to talk to me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hago lo que puedo.",
+      "options": [
+        "I'll do whatever I can.",
+        "I do what I can.",
+        "I did what I could."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hablaré con quien tú quieras.",
+      "options": [
+        "I talked to the one you wanted.",
+        "I talk to the one you want.",
+        "I'll talk to whoever you want."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los que quieran quedarse pueden quedarse.",
+      "options": [
+        "Whoever wants to stay can stay.",
+        "Those who stayed can stay.",
+        "They want to stay."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Iré donde diga Vale.",
+      "options": [
+        "I went where Vale said.",
+        "I'll go wherever Vale says.",
+        "I go where Vale is."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *quieras* or *quieres*. You don't know yet which dish your friend will pick: Come lo que ___. Type the whole sentence.",
+      "answer": "Come lo que quieras.",
+      "accept": [],
+      "why": "You can't name the dish yet, so the verb takes the *whoever it may be* form: *quieras*."
+    },
+    {
+      "prompt": "Choose *sea* or *es*. Whatever it takes, I'll do it: Haré lo que ___ necesario. Type the whole sentence.",
+      "answer": "Haré lo que sea necesario.",
+      "accept": [],
+      "why": "\"Whatever is necessary\" is not fixed yet, so *sea*."
+    },
+    {
+      "prompt": "I'll go wherever you say. (to a friend)",
+      "answer": "Voy donde tú digas.",
+      "accept": [
+        "Iré donde tú digas.",
+        "Voy donde digas.",
+        "Iré donde digas."
+      ],
+      "why": "*Donde* plus *digas*: the place isn't decided yet."
+    },
+    {
+      "prompt": "Whoever wants to come can come.",
+      "answer": "El que quiera venir, que venga.",
+      "accept": [
+        "Quien quiera venir, que venga."
+      ],
+      "why": "*El que* or *quien* plus *quiera*: anyone, nobody in particular."
+    },
+    {
+      "prompt": "Make it about Vale instead of you: Voy donde tú digas. Say: I'll go wherever Vale says.",
+      "answer": "Voy donde diga Vale.",
+      "accept": [
+        "Iré donde diga Vale.",
+        "Voy donde Vale diga.",
+        "Iré donde Vale diga."
+      ],
+      "why": "Vale is *ella*, so the ending is *-a*: *diga*."
+    },
+    {
+      "prompt": "Make it about we: Hablaré con quien tú quieras. Say: We'll talk to whoever you want. (to a friend)",
+      "answer": "Hablaremos con quien tú quieras.",
+      "accept": [
+        "Hablaremos con quien quieras."
+      ],
+      "why": "Only the first verb changes to *we*; the *whoever* verb still follows *tú*."
+    },
+    {
+      "prompt": "I do what I can. (a real, known thing)",
+      "answer": "Hago lo que puedo.",
+      "accept": [],
+      "why": "The thing is known, so there is no *whoever* form: the normal *puedo*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Haré lo que es necesario.",
+      "right": "Haré lo que sea necesario.",
+      "why": "Almost. When the thing isn't fixed yet, *es* becomes *sea*."
+    },
+    {
+      "wrong": "Come lo que quieres.",
+      "right": "Come lo que quieras.",
+      "why": "*Quieres* says you already know which dish; for \"whatever you like\" use *quieras*."
+    },
+    {
+      "wrong": "El que quiere venir, que venga.",
+      "right": "El que quiera venir, que venga.",
+      "why": "Anyone at all may come, so the first verb takes the *whoever* form too."
+    },
+    {
+      "wrong": "Hablaré con quien tú quieres.",
+      "right": "Hablaré con quien tú quieras.",
+      "why": "English only needs \"-ever\"; in Spanish the verb after *quien* is what changes."
+    }
+  ],
+  "personal": "Finish the thought about yourself: *Haré lo que sea necesario por…* or *Voy donde tú digas, pero…*"
+}

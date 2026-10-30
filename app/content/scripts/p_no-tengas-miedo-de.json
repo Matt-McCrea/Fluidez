@@ -1,0 +1,174 @@
+{
+  "node": "p:no-tengas-miedo-de",
+  "hook": {
+    "line": "Tomás freezes whenever he has to speak Spanish to someone who matters. A friend who just says \"you can do it\" doesn't help much. Naming the fear is kinder, and Vale knows exactly how to do it.",
+    "es": "No tengas miedo de equivocarte.",
+    "en": "Don't be afraid of making mistakes."
+  },
+  "examples": [
+    {
+      "es": "No tengas miedo de equivocarte.",
+      "en": "Don't be afraid of making mistakes. (to a friend)"
+    },
+    {
+      "es": "¡Atrévete a intentarlo!",
+      "en": "Dare to give it a try! (to a friend)"
+    },
+    {
+      "es": "No te rindas.",
+      "en": "Don't give up. (to a friend)"
+    },
+    {
+      "es": "No tengas miedo de decirle la verdad.",
+      "en": "Don't be afraid to tell him the truth. (to a friend)"
+    },
+    {
+      "es": "No tengan miedo de pedir ayuda.",
+      "en": "Don't be afraid to ask for help. (to you all)"
+    },
+    {
+      "es": "Atrévete a hablar con ella.",
+      "en": "Dare to talk to her. (to a friend)"
+    }
+  ],
+  "rule": "Three ways to cheer someone on:\n\n*No tengas miedo de* + infinitive: \"don't be afraid of\". English says \"be\", Spanish says *tener* (have) fear, and the ending is *-as*, not *-es*: *tengas*.\n*¡Atrévete a…!* plus an infinitive: \"dare to\", take the risk.\n*No te rindas.* \"Don't give up\": keep going.\n\nTo a group, *No tengan miedo de…*. To someone you call *usted*, *No tenga miedo de…* and *No se rinda*.\n\nSaying what the fear is (*de equivocarte*) feels warmer than a bare \"you can do it\".",
+  "smallPrint": "Teachers call these negative commands. *Atrévete* is a *tú* command with *te* stuck to the end.",
+  "readAndPick": [
+    {
+      "es": "No tengas miedo de equivocarte.",
+      "options": [
+        "You aren't afraid of making mistakes.",
+        "Don't be afraid of making mistakes.",
+        "I'm afraid of making mistakes."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tienes miedo de equivocarte.",
+      "options": [
+        "Don't be afraid of making mistakes.",
+        "You aren't afraid of making mistakes.",
+        "He isn't afraid of making mistakes."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Atrévete a intentarlo!",
+      "options": [
+        "Dare to give it a try!",
+        "He dared to try it.",
+        "I tried it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No te rindas.",
+      "options": [
+        "I'm not giving up.",
+        "You gave up.",
+        "Don't give up."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No tengan miedo de pedir ayuda.",
+      "options": [
+        "Don't be afraid to ask for help. (to a friend)",
+        "Don't be afraid to ask for help. (to you all)",
+        "They aren't afraid to ask for help."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tenga miedo de preguntar.",
+      "options": [
+        "Don't be afraid to ask. (formal)",
+        "I'm not afraid to ask.",
+        "Don't be afraid to ask. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Atrévete a hablar con ella.",
+      "options": [
+        "Don't dare talk to her.",
+        "Dare to talk to her.",
+        "She dares to talk to you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tengas miedo de decirle la verdad.",
+      "options": [
+        "Don't be afraid to tell him the truth.",
+        "I'm not afraid to tell him the truth.",
+        "He told you the truth."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *tengas* or *tienes*. Cheering on a friend: No ___ miedo de equivocarte. Type the whole sentence.",
+      "answer": "No tengas miedo de equivocarte.",
+      "accept": [],
+      "why": "To tell someone \"don't\", the verb takes *-as*: *tengas*."
+    },
+    {
+      "prompt": "Choose *tengan* or *tengas*. Cheering on two friends: No ___ miedo de pedir ayuda. Type the whole sentence.",
+      "answer": "No tengan miedo de pedir ayuda.",
+      "accept": [],
+      "why": "Two people, so the group ending *-an*: *tengan*."
+    },
+    {
+      "prompt": "Don't give up. (to a friend)",
+      "answer": "No te rindas.",
+      "accept": [],
+      "why": "*No te rindas*: the little *te* stays in front after *no*."
+    },
+    {
+      "prompt": "Dare to give it a try! (to a friend)",
+      "answer": "¡Atrévete a intentarlo!",
+      "accept": [
+        "Atrévete a intentarlo."
+      ],
+      "why": "*Atrévete a* plus the infinitive, with *lo* glued onto the end."
+    },
+    {
+      "prompt": "Don't be afraid to tell her the truth. (to a friend)",
+      "answer": "No tengas miedo de decirle la verdad.",
+      "accept": [],
+      "why": "*No tengas miedo de* plus the infinitive, and *le* glued on."
+    },
+    {
+      "prompt": "Make it formal: No tengas miedo de preguntar. Say it to someone you call *usted*.",
+      "answer": "No tenga miedo de preguntar.",
+      "accept": [],
+      "why": "For *usted* the ending is *-a*: *tenga*."
+    },
+    {
+      "prompt": "Make it formal: No te rindas. Say it to someone you call *usted*.",
+      "answer": "No se rinda.",
+      "accept": [],
+      "why": "*Te* becomes *se* and the verb ends in *-a*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No tienes miedo de equivocarte.",
+      "right": "No tengas miedo de equivocarte.",
+      "why": "Almost. *Tienes* only states a fact; to encourage someone, use *tengas*."
+    },
+    {
+      "wrong": "No tengas miedo a equivocarte.",
+      "right": "No tengas miedo de equivocarte.",
+      "why": "Before the thing you fear, Spanish uses *de*, not *a*."
+    },
+    {
+      "wrong": "Atrévete intentarlo.",
+      "right": "Atrévete a intentarlo.",
+      "why": "*Atreverse* always needs *a* before the next verb."
+    }
+  ],
+  "personal": "Think of someone who is nervous about something, and encourage them: *No tengas miedo de…* or *Atrévete a…*"
+}

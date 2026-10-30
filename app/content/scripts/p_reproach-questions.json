@@ -1,0 +1,172 @@
+{
+  "node": "p:reproach-questions",
+  "hook": {
+    "line": "Sometimes a friend is dragging their feet over something that matters, and a plain \"you should\" doesn't land. Bogotanos use a question that is really a nudge, and Tomás is about to need it.",
+    "es": "¿A qué esperas para llamarla?",
+    "en": "What are you waiting for? Call her."
+  },
+  "examples": [
+    {
+      "es": "¿A qué esperas para darle las gracias?",
+      "en": "What are you waiting for? Go and thank him. (to a friend)"
+    },
+    {
+      "es": "¿A qué esperas para llamarla?",
+      "en": "What are you waiting for? Call her. (to a friend)"
+    },
+    {
+      "es": "¿A qué esperan para pedir perdón?",
+      "en": "What are you waiting for? Say sorry. (to two friends)"
+    },
+    {
+      "es": "No entiendo cómo pudiste hacerle eso a tu hermano.",
+      "en": "I don't understand how you could do that to your brother. (to a friend)"
+    },
+    {
+      "es": "No entiendo cómo pudo decir eso.",
+      "en": "I don't understand how he could say that."
+    },
+    {
+      "es": "Me cayó muy mal que no me invitaras.",
+      "en": "It really upset me that you didn't invite me. (to a friend)"
+    }
+  ],
+  "rule": "Three ways to say \"that wasn't right\" without shouting:\n\n*¿A qué esperas para + infinitive?* It sounds like a question, but it is a push: \"what are you waiting for?\" Nobody expects an answer.\n\n*No entiendo cómo pudiste + infinitive.* \"I don't understand how you could.\" Change *pudiste* for *pudo*, *pudieron*, *pudimos* to change who did it.\n\n*Me cayó muy mal que no me invitaras.* \"It really upset me that you didn't.\" Just copy the ending *-aras* for *tú* verbs: *invitaras*, *llamaras*.\n\nThey are blunt, so use them with people you are close to.",
+  "smallPrint": "Teachers call these *reproches*: criticism wearing the clothes of a question or a feeling.",
+  "readAndPick": [
+    {
+      "es": "¿A qué esperas para llamarla?",
+      "options": [
+        "Who are you waiting for?",
+        "What are you waiting for? Call her.",
+        "What time are you calling her?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No entiendo cómo pudiste hacerle eso a tu hermano.",
+      "options": [
+        "I don't understand how to do that to your brother.",
+        "I don't understand how I did that to your brother.",
+        "I don't understand how you could do that to your brother."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿A qué esperan para pedir perdón?",
+      "options": [
+        "What are you all waiting for? Say sorry.",
+        "What is she waiting for to say sorry?",
+        "What are you waiting for? Say sorry. (one person)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No entiendo cómo pudo decir eso.",
+      "options": [
+        "I don't understand how you could say that.",
+        "I don't understand how he could say that.",
+        "I don't understand how we could say that."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No entiendo cómo pudieron vender la casa.",
+      "options": [
+        "I don't understand how they could sell the house.",
+        "I don't understand how we could sell the house.",
+        "I don't understand how she could sell the house."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿A qué esperas para ayudarme?",
+      "options": [
+        "What are you waiting for? Help me.",
+        "How do you wait to help me?",
+        "Who is waiting to help me?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No entiendo cómo pudimos perder tanto tiempo.",
+      "options": [
+        "I don't understand how they lost so much time.",
+        "I don't understand how we could waste so much time.",
+        "I don't understand how you wasted so much time."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me cayó muy mal que no me invitaras.",
+      "options": [
+        "It really upset me that I didn't invite you.",
+        "It upset me that he didn't invite me.",
+        "It really upset me that you didn't invite me."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *esperas* or *esperan*. You are nudging two friends together: ¿A qué ___ para pedir perdón? Type the whole sentence.",
+      "answer": "¿A qué esperan para pedir perdón?",
+      "accept": [],
+      "why": "Two people, so *esperan*."
+    },
+    {
+      "prompt": "Choose *pudiste* or *pudo*. About your friend's brother: No entiendo cómo ___ decir eso. Type the whole sentence.",
+      "answer": "No entiendo cómo pudo decir eso.",
+      "accept": [],
+      "why": "The brother did it, so *pudo*, not *pudiste*."
+    },
+    {
+      "prompt": "What are you waiting for? Call her. (to a friend)",
+      "answer": "¿A qué esperas para llamarla?",
+      "accept": [],
+      "why": "*A qué esperas para* plus the infinitive is the nudge."
+    },
+    {
+      "prompt": "What are you waiting for? Help me. (to a friend)",
+      "answer": "¿A qué esperas para ayudarme?",
+      "accept": [],
+      "why": "The little word *me* sticks to the end of the infinitive."
+    },
+    {
+      "prompt": "I don't understand how you could say that. (to a friend)",
+      "answer": "No entiendo cómo pudiste decir eso.",
+      "accept": [],
+      "why": "*Pudiste* is \"you could\", and *cómo* carries the accent."
+    },
+    {
+      "prompt": "Make it about him: No entiendo cómo pudiste olvidarlo. Say: I don't understand how he could forget it.",
+      "answer": "No entiendo cómo pudo olvidarlo.",
+      "accept": [],
+      "why": "Only the verb changes: *pudiste* becomes *pudo*."
+    },
+    {
+      "prompt": "Make it about we: I don't understand how we could waste so much time.",
+      "answer": "No entiendo cómo pudimos perder tanto tiempo.",
+      "accept": [],
+      "why": "*We* gives *pudimos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Qué esperas para llamarla?",
+      "right": "¿A qué esperas para llamarla?",
+      "why": "Almost. Without *a* it asks what you are waiting for; with *a* it pushes you to act."
+    },
+    {
+      "wrong": "¿A qué esperas llamarla?",
+      "right": "¿A qué esperas para llamarla?",
+      "why": "Spanish needs *para* before the thing you should be doing."
+    },
+    {
+      "wrong": "No entiendo como pudiste hablarme así.",
+      "right": "No entiendo cómo pudiste hablarme así.",
+      "why": "Here *cómo* means \"how\", so it keeps its accent."
+    }
+  ],
+  "personal": "Think of something a friend keeps putting off, and nudge them: *¿A qué esperas para…?*"
+}

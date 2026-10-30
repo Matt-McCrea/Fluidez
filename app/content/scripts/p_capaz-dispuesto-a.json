@@ -1,0 +1,178 @@
+{
+  "node": "p:capaz-dispuesto-a",
+  "hook": {
+    "line": "In a hard conversation, \"I can't\" and \"I won't\" are very different things, and people hear the difference. Spanish gives you two small tools to say exactly which one you mean. Tomás needs both when Altamira's offer arrives.",
+    "es": "Estoy dispuesto a negociar.",
+    "en": "I'm willing to negotiate."
+  },
+  "examples": [
+    {
+      "es": "No soy capaz de decirle que no.",
+      "en": "I can't bring myself to say no to him."
+    },
+    {
+      "es": "Estoy dispuesto a negociar.",
+      "en": "I'm willing to negotiate. (a man speaking)"
+    },
+    {
+      "es": "Estoy dispuesta a ceder.",
+      "en": "I'm willing to give in. (a woman speaking)"
+    },
+    {
+      "es": "¿Estás dispuesto a escuchar?",
+      "en": "Are you willing to listen? (to a man)"
+    },
+    {
+      "es": "¿Estaría dispuesto a que lo revisemos juntos?",
+      "en": "Would you be willing for us to go over it together? (formal, to a man)"
+    },
+    {
+      "es": "Somos capaces de arreglar esto.",
+      "en": "We are capable of fixing this."
+    }
+  ],
+  "rule": "Two pairs, each with its own little word:\n\n*ser capaz de* + infinitive: you have what it takes, or you can't bring yourself to. Use *soy*, *eres*, *somos*, and *capaz* becomes *capaces* for several people.\n\n*estar dispuesto a* + infinitive: you are willing, a state of mind. Use *estoy*, *estás*, and *dispuesto* becomes *dispuesta* for a woman, *dispuestos* for several.\n\nDon't swap the little words: *de* with *capaz*, *a* with *dispuesto*.\n\nTo ask someone to agree to a plan, add *que* and \"imagined\" verb: *dispuesto a que lo revisemos*.",
+  "smallPrint": "Teachers call both of these adjective plus preposition constructions. In some parts of Latin America, *capaz que llueva* also means \"maybe it will rain\", a colloquial use you only need to recognise.",
+  "readAndPick": [
+    {
+      "es": "No soy capaz de decirle que no.",
+      "options": [
+        "I'm not willing to tell him no.",
+        "I can't bring myself to say no to him.",
+        "He can't say no to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy dispuesto a negociar.",
+      "options": [
+        "I'm willing to negotiate.",
+        "I negotiated.",
+        "I'm able to negotiate."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estoy dispuesto a ceder.",
+      "options": [
+        "I can't give in.",
+        "I didn't give in.",
+        "I'm not willing to give in."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Estás dispuesto a escuchar?",
+      "options": [
+        "Are you able to listen?",
+        "Are you willing to listen?",
+        "Am I willing to listen?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Somos capaces de arreglar esto.",
+      "options": [
+        "We are capable of fixing this.",
+        "We are willing to fix this.",
+        "We fixed this."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy dispuesta a escuchar.",
+      "options": [
+        "I'm willing to listen. (a man speaking)",
+        "She is willing to listen.",
+        "I'm willing to listen. (a woman speaking)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Estaría dispuesto a que lo revisemos juntos?",
+      "options": [
+        "Would you be willing for us to go over it together? (formal)",
+        "Would you be able to go over it alone? (formal)",
+        "Were you willing to go over it together? (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ellos no están dispuestos a negociar.",
+      "options": [
+        "They can't negotiate.",
+        "They didn't negotiate.",
+        "They aren't willing to negotiate."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *soy* or *estoy*: No ___ capaz de decirle que no. Type the whole sentence.",
+      "answer": "No soy capaz de decirle que no.",
+      "accept": [],
+      "why": "*Capaz* goes with *ser*: it is about what you can bring yourself to do."
+    },
+    {
+      "prompt": "Choose *de* or *a*: Estoy dispuesto ___ negociar. Type the whole sentence.",
+      "answer": "Estoy dispuesto a negociar.",
+      "accept": [],
+      "why": "*Dispuesto* always takes *a* before the verb."
+    },
+    {
+      "prompt": "I'm willing to negotiate. (a man speaking)",
+      "answer": "Estoy dispuesto a negociar.",
+      "accept": [],
+      "why": "*Estar dispuesto a* says what you are willing to do now."
+    },
+    {
+      "prompt": "I can't bring myself to ask him for forgiveness.",
+      "answer": "No soy capaz de pedirle perdón.",
+      "accept": [],
+      "why": "*No soy capaz de* plus the infinitive, with *le* glued on."
+    },
+    {
+      "prompt": "Are you willing to listen? (to a man you call *tú*)",
+      "answer": "¿Estás dispuesto a escuchar?",
+      "accept": [],
+      "why": "*Estás* for *tú*, and *dispuesto* because he is a man."
+    },
+    {
+      "prompt": "Make it a woman speaking: Estoy dispuesto a ceder.",
+      "answer": "Estoy dispuesta a ceder.",
+      "accept": [],
+      "why": "The adjective follows the speaker: a woman says *dispuesta*."
+    },
+    {
+      "prompt": "Make it negative: Estoy dispuesto a ceder. Say: I'm not willing to give in. (a man speaking)",
+      "answer": "No estoy dispuesto a ceder.",
+      "accept": [],
+      "why": "*No* goes straight in front of the verb."
+    },
+    {
+      "prompt": "Make it about we: We are capable of fixing this.",
+      "answer": "Somos capaces de arreglar esto.",
+      "accept": [],
+      "why": "*We* gives *somos*, and *capaz* becomes *capaces*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No estoy capaz de decirle que no.",
+      "right": "No soy capaz de decirle que no.",
+      "why": "Almost. *Capaz* is used with *ser*, while *dispuesto* is used with *estar*."
+    },
+    {
+      "wrong": "Estoy dispuesto de negociar.",
+      "right": "Estoy dispuesto a negociar.",
+      "why": "*Dispuesto* takes *a*; *de* is for *capaz*."
+    },
+    {
+      "wrong": "Soy dispuesto a negociar.",
+      "right": "Estoy dispuesto a negociar.",
+      "why": "Being willing is a state of mind right now, so it takes *estar*."
+    }
+  ],
+  "personal": "Say one thing you are willing to do and one you can't bring yourself to do: *Estoy dispuesto a…* or *Estoy dispuesta a…*, and *No soy capaz de…*"
+}
