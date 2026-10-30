@@ -1,0 +1,182 @@
+{
+  "node": "p:tener-en-cuenta",
+  "hook": {
+    "line": "Before an argument turns into a fight, someone has to say: wait, we're forgetting something. This phrase is how you say it.",
+    "es": "Hay que tener en cuenta el costo.",
+    "en": "You have to bear the cost in mind."
+  },
+  "examples": [
+    {
+      "es": "Hay que tener en cuenta el costo.",
+      "en": "You have to bear the cost in mind."
+    },
+    {
+      "es": "Ten en cuenta que cierran temprano.",
+      "en": "Bear in mind they close early. (to a friend)"
+    },
+    {
+      "es": "Tenemos que tener en cuenta a los vecinos.",
+      "en": "We have to take the neighbours into account."
+    },
+    {
+      "es": "¿Tuviste en cuenta el arriendo?",
+      "en": "Did you take the rent into account? (to a friend)"
+    },
+    {
+      "es": "No tuvieron en cuenta lo que dijo Hernando.",
+      "en": "They didn't take into account what Hernando said."
+    },
+    {
+      "es": "Tengo en cuenta tu opinión.",
+      "en": "I take your opinion into account."
+    }
+  ],
+  "rule": "*Tener en cuenta* means to take something into account when you decide. Only *tener* changes: *tengo, tuviste, tuvieron*. The *en cuenta* part stays put.\n\nWhat follows depends:\n\na thing, straight on: *el costo*\na person, with *a*: *a los vecinos*\na whole idea, with *que*: *Ten en cuenta que cierran temprano.*\n\n*Ten* is the *tú* command of *tener*. *Hay que* is the all-purpose \"you have to\".",
+  "smallPrint": "It is a set phrase: *tener en cuenta* always travels as one piece, and only *tener* takes the endings.",
+  "readAndPick": [
+    {
+      "es": "Hay que tener en cuenta el costo.",
+      "options": [
+        "I took the cost into account.",
+        "You have to take the cost into account.",
+        "The cost doesn't matter."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ten en cuenta que cierran temprano.",
+      "options": [
+        "Bear in mind they close early.",
+        "They kept in mind that it's early.",
+        "Bear in mind I close early."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Tuviste en cuenta el arriendo?",
+      "options": [
+        "Do you have to take the rent into account?",
+        "Did he take the rent into account?",
+        "Did you take the rent into account?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No tuvieron en cuenta lo que dijo Hernando.",
+      "options": [
+        "He didn't take into account what they said.",
+        "They didn't take into account what Hernando said.",
+        "They didn't pay Hernando."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tenemos que tener en cuenta a los vecinos.",
+      "options": [
+        "The neighbours have to take us into account.",
+        "We have neighbours.",
+        "We have to take the neighbours into account."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tengo en cuenta tu opinión.",
+      "options": [
+        "I ignore your opinion.",
+        "I take your opinion into account.",
+        "You take my opinion into account."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tuvimos en cuenta el costo.",
+      "options": [
+        "We have to take the cost into account.",
+        "You took the cost into account.",
+        "We took the cost into account."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No hay que tener en cuenta el rumor.",
+      "options": [
+        "You have to take the rumour into account.",
+        "You don't have to take the rumour into account.",
+        "I don't take the rumour into account."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Hay que tener ___ cuenta el costo.* (*en* or *con*)",
+      "answer": "Hay que tener en cuenta el costo.",
+      "accept": [],
+      "why": "The set phrase is *tener en cuenta*, with *en*."
+    },
+    {
+      "prompt": "Say: You have to take the rent into account.",
+      "answer": "Hay que tener en cuenta el arriendo.",
+      "accept": [],
+      "why": "*Hay que* plus the infinitive says what has to be done, and a thing follows directly."
+    },
+    {
+      "prompt": "Say to a friend: Bear in mind they close early.",
+      "answer": "Ten en cuenta que cierran temprano.",
+      "accept": [],
+      "why": "*Ten* is the command to *tú*, and a whole idea needs *que*."
+    },
+    {
+      "prompt": "Say: We have to take the neighbours into account.",
+      "answer": "Tenemos que tener en cuenta a los vecinos.",
+      "accept": [
+        "Hay que tener en cuenta a los vecinos."
+      ],
+      "why": "People after the phrase take *a*."
+    },
+    {
+      "prompt": "Ask a friend: Did you take the rent into account?",
+      "answer": "¿Tuviste en cuenta el arriendo?",
+      "accept": [],
+      "why": "Only *tener* changes: *tuviste* for *tú* in the past."
+    },
+    {
+      "prompt": "Make it a command to a friend: *Tienes en cuenta el costo.*",
+      "answer": "Ten en cuenta el costo.",
+      "accept": [],
+      "why": "The *tú* command of *tener* is *ten*."
+    },
+    {
+      "prompt": "Make it past: *Tengo en cuenta tu opinión.*",
+      "answer": "Tuve en cuenta tu opinión.",
+      "accept": [],
+      "why": "*Tengo* becomes *tuve*, and *en cuenta* stays."
+    },
+    {
+      "prompt": "Say we must take Hernando into account. He is a person, so add the little word.",
+      "answer": "Hay que tener en cuenta a Hernando.",
+      "accept": [
+        "Tenemos que tener en cuenta a Hernando."
+      ],
+      "why": "A person needs *a* in front."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Hay que tener cuenta el costo.",
+      "right": "Hay que tener en cuenta el costo.",
+      "why": "The *en* is part of the set phrase, so it can't be dropped."
+    },
+    {
+      "wrong": "Hay que tener en cuenta Hernando.",
+      "right": "Hay que tener en cuenta a Hernando.",
+      "why": "When what you take into account is a person, it needs *a*."
+    },
+    {
+      "wrong": "Ten en cuenta de que cierran temprano.",
+      "right": "Ten en cuenta que cierran temprano.",
+      "why": "A whole idea follows with just *que*, with no *de*."
+    }
+  ],
+  "personal": "Think of a decision you are making. Write one line with *hay que tener en cuenta* and one thing you would be wrong to forget, like the cost, the time or a person."
+}

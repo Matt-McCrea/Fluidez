@@ -1,0 +1,187 @@
+{
+  "node": "p:estar-de-acuerdo-con-en",
+  "hook": {
+    "line": "In any argument you will keep saying who you agree with and what about. Spanish uses one little word for the person and a different one for the thing you agree on.",
+    "es": "Estoy de acuerdo contigo en que es caro.",
+    "en": "I agree with you that it's expensive. (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "Estoy de acuerdo contigo en que es caro.",
+      "en": "I agree with you that it's expensive. (to a friend)"
+    },
+    {
+      "es": "No estoy de acuerdo con la decisión.",
+      "en": "I don't agree with the decision."
+    },
+    {
+      "es": "Estamos de acuerdo en cambiar la fecha.",
+      "en": "We agree on changing the date."
+    },
+    {
+      "es": "Hernando está de acuerdo con Vale.",
+      "en": "Hernando agrees with Vale."
+    },
+    {
+      "es": "¿Estás de acuerdo con ellos?",
+      "en": "Do you agree with them? (to a friend)"
+    },
+    {
+      "es": "Vale no está de acuerdo en vender el café.",
+      "en": "Vale doesn't agree on selling the café."
+    }
+  ],
+  "rule": "*Estar de acuerdo* is to agree. The next little word depends on what comes after.\n\n*con*: a person or a thing. *Estoy de acuerdo con Vale. No estoy de acuerdo con la decisión.* With *tú* it becomes *contigo*, with *yo* it becomes *conmigo*.\n\n*en*: an action or a whole statement. *Estamos de acuerdo en cambiar la fecha. Estoy de acuerdo contigo en que es caro.*\n\nSaying no changes nothing else: *no* goes in front of *estoy*. And it is always *estar*, never *ser*.",
+  "smallPrint": "Teachers call this a verb phrase with a fixed preposition: *con* before a person or noun, *en* before an infinitive or a clause.",
+  "readAndPick": [
+    {
+      "es": "Estoy de acuerdo con Vale.",
+      "options": [
+        "I agree with Vale.",
+        "I agree on selling to Vale.",
+        "I don't agree with Vale."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estamos de acuerdo en cambiar la fecha.",
+      "options": [
+        "We agree with the date.",
+        "I agree on changing the date.",
+        "We agree on changing the date."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No estoy de acuerdo con la decisión.",
+      "options": [
+        "I agree with the decision.",
+        "I don't agree with the decision."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy de acuerdo contigo.",
+      "options": [
+        "You agree with me.",
+        "I agree with you.",
+        "I agree with him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Estás de acuerdo conmigo?",
+      "options": [
+        "Do I agree with you?",
+        "Do you agree with me?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale no está de acuerdo en vender el café.",
+      "options": [
+        "Vale agrees on selling the café.",
+        "Vale doesn't agree with the café.",
+        "Vale doesn't agree on selling the café."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estoy de acuerdo contigo en que es caro.",
+      "options": [
+        "You agree with me that it's expensive.",
+        "I agree with you that it's expensive.",
+        "I agree it's expensive for you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando está de acuerdo con ellos.",
+      "options": [
+        "They agree with Hernando.",
+        "Hernando agrees with them.",
+        "Hernando agrees with her."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estamos de acuerdo con ustedes.",
+      "options": [
+        "We agree with them.",
+        "We agree with you all.",
+        "You all agree with us."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Estoy de acuerdo ___ Vale.* (*con* or *en*)",
+      "answer": "Estoy de acuerdo con Vale.",
+      "accept": [],
+      "why": "Vale is a person, so the little word is *con*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Estamos de acuerdo ___ esperar un día.* (*con* or *en*)",
+      "answer": "Estamos de acuerdo en esperar un día.",
+      "accept": [],
+      "why": "Before an action like *esperar*, use *en*."
+    },
+    {
+      "prompt": "Say to a friend: I agree with you.",
+      "answer": "Estoy de acuerdo contigo.",
+      "accept": [],
+      "why": "After *con*, *tú* turns into *contigo*."
+    },
+    {
+      "prompt": "Say: I don't agree with the decision.",
+      "answer": "No estoy de acuerdo con la decisión.",
+      "accept": [],
+      "why": "*No* goes in front of *estoy*, and a thing takes *con*."
+    },
+    {
+      "prompt": "Say: Vale doesn't agree on selling the café.",
+      "answer": "Vale no está de acuerdo en vender el café.",
+      "accept": [],
+      "why": "Selling is an action, so *en vender*."
+    },
+    {
+      "prompt": "Ask a friend: Do you agree with Hernando?",
+      "answer": "¿Estás de acuerdo con Hernando?",
+      "accept": [
+        "¿Estás de acuerdo con él?"
+      ],
+      "why": "A person after the verb phrase means *con*."
+    },
+    {
+      "prompt": "Make it about we, speaking to you all: *Estoy de acuerdo con ustedes.*",
+      "answer": "Estamos de acuerdo con ustedes.",
+      "accept": [],
+      "why": "Only *estoy* becomes *estamos*; the rest stays."
+    },
+    {
+      "prompt": "Make it negative: *Hernando está de acuerdo con Vale.*",
+      "answer": "Hernando no está de acuerdo con Vale.",
+      "accept": [],
+      "why": "*No* goes right before *está*, and *con* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Soy de acuerdo con Vale.",
+      "right": "Estoy de acuerdo con Vale.",
+      "why": "Agreeing is a state of mind, so it takes *estar*, not *ser*."
+    },
+    {
+      "wrong": "Estoy de acuerdo con tú.",
+      "right": "Estoy de acuerdo contigo.",
+      "why": "After *con*, *tú* becomes *contigo* and *yo* becomes *conmigo*."
+    },
+    {
+      "wrong": "Estamos de acuerdo con cambiar la fecha.",
+      "right": "Estamos de acuerdo en cambiar la fecha.",
+      "why": "Before an action, the little word is *en*, not *con*."
+    }
+  ],
+  "personal": "Write two lines about something you and a friend or relative see eye to eye on: one with *estoy de acuerdo con* plus a person, one with *estamos de acuerdo en* plus an action."
+}

@@ -1,0 +1,191 @@
+{
+  "node": "p:tener-razon-pero",
+  "hook": {
+    "line": "The gentlest way to disagree is to give a little first. Spanish speakers almost always say you're right before they say but.",
+    "es": "Tienes razón, pero no tenemos plata.",
+    "en": "You're right, but we have no money. (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "Tienes razón, pero no tenemos plata.",
+      "en": "You're right, but we have no money. (to a friend)"
+    },
+    {
+      "es": "Tienes razón en que es lejos, pero el arriendo es más barato.",
+      "en": "You're right that it's far, but the rent is cheaper. (to a friend)"
+    },
+    {
+      "es": "Sí, es cierto, pero no tenemos tiempo.",
+      "en": "Yes, that's true, but we have no time."
+    },
+    {
+      "es": "Sí, pero también es verdad que el barrio es tranquilo.",
+      "en": "Yes, but it's also true that the neighbourhood is quiet."
+    },
+    {
+      "es": "Tiene razón, pero hay otra opción.",
+      "en": "You're right, but there's another option. (to Don Hernando)"
+    },
+    {
+      "es": "Tienes toda la razón, pero Altamira no va a esperar.",
+      "en": "You're completely right, but Altamira isn't going to wait. (to a friend)"
+    }
+  ],
+  "rule": "To push back politely, concede first, then *pero*.\n\nIn Spanish you *have* reason: *tienes razón* (*tiene razón* for *usted*). To be generous, *tienes toda la razón*.\n\nTo say what they are right about, add *en que*: *Tienes razón en que es lejos, pero…*\n\nOther ways in: *Es cierto, pero…* and *Sí, pero también es verdad que…*\n\nWithout the concession, a bare *pero* sounds like a flat no.",
+  "smallPrint": "Teachers call this a concession: you grant the other person's point before you answer it.",
+  "readAndPick": [
+    {
+      "es": "Tienes razón, pero no tenemos plata.",
+      "options": [
+        "I'm right, but we have no money.",
+        "You're right, but we have no money.",
+        "You're right, and we have no money."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo razón, pero no quiero pelear.",
+      "options": [
+        "You're right, but I don't want to fight.",
+        "I'm right, but I don't want to fight.",
+        "He's right, but I don't want to fight."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tiene razón, pero hay otra opción.",
+      "options": [
+        "I'm right, but there's another option.",
+        "He's right, but there's another option.",
+        "He's wrong, but there's another option."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tienes toda la razón, pero Altamira no va a esperar.",
+      "options": [
+        "You're a little right, but Altamira won't wait.",
+        "You're right, so Altamira will wait.",
+        "You're completely right, but Altamira won't wait."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Sí, es cierto, pero no tenemos tiempo.",
+      "options": [
+        "Yes, that's true, but we have no time.",
+        "Yes, that's true, so we have time.",
+        "No, that's not true, but we have no time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Sí, pero también es verdad que el barrio es tranquilo.",
+      "options": [
+        "Yes, so it's true that the neighbourhood is quiet.",
+        "No, but it's also true that the neighbourhood is quiet.",
+        "Yes, but it's also true that the neighbourhood is quiet."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tienes razón en que es lejos, pero el arriendo es más barato.",
+      "options": [
+        "I'm right that it's far, but the rent is cheaper.",
+        "You're right that it's far, but the rent is cheaper.",
+        "You're right that it's cheap, but the rent is far."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando tiene razón, pero no quiere pelear.",
+      "options": [
+        "I'm right, but I don't want to fight.",
+        "Hernando is right, but he doesn't want to fight.",
+        "You're right, but Hernando doesn't want to fight."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tenemos razón, pero Altamira tiene más plata.",
+      "options": [
+        "You're right, but Altamira has more money.",
+        "We're right, but Altamira has more money.",
+        "We're right, and Altamira has no money."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "A friend says the café is too far. Concede, then push back. Pick and type the whole sentence: *___ razón, pero el arriendo es más barato.* (*Tienes* or *Eres*)",
+      "answer": "Tienes razón, pero el arriendo es más barato.",
+      "accept": [
+        "Tienes razón pero el arriendo es más barato."
+      ],
+      "why": "You *have* reason in Spanish: *tienes razón*, never *eres razón*."
+    },
+    {
+      "prompt": "Say to a friend: You're right, but we have no money.",
+      "answer": "Tienes razón, pero no tenemos plata.",
+      "accept": [
+        "Tienes razón pero no tenemos plata."
+      ],
+      "why": "Concede with *tienes razón* first, then add *pero*."
+    },
+    {
+      "prompt": "Say: Yes, that's true, but we have no time.",
+      "answer": "Sí, es cierto, pero no tenemos tiempo.",
+      "accept": [
+        "Sí, es verdad, pero no tenemos tiempo."
+      ],
+      "why": "*Es cierto* grants the point before the *pero*."
+    },
+    {
+      "prompt": "Say to Don Hernando: You're right, but there's another option.",
+      "answer": "Tiene razón, pero hay otra opción.",
+      "accept": [
+        "Tiene razón pero hay otra opción."
+      ],
+      "why": "To an older man you don't know well, *usted* takes *tiene*."
+    },
+    {
+      "prompt": "Say: Yes, but it's also true that the neighbourhood is quiet.",
+      "answer": "Sí, pero también es verdad que el barrio es tranquilo.",
+      "accept": [
+        "Sí, pero también es cierto que el barrio es tranquilo."
+      ],
+      "why": "*También es verdad que* adds a second side without attacking the first."
+    },
+    {
+      "prompt": "Make it more generous: *Tienes razón, pero Altamira no va a esperar.*",
+      "answer": "Tienes toda la razón, pero Altamira no va a esperar.",
+      "accept": [],
+      "why": "*Toda la* turns up the agreement: completely right."
+    },
+    {
+      "prompt": "Say what they are right about, with *en que*: *Tienes razón, es lejos, pero el arriendo es más barato.*",
+      "answer": "Tienes razón en que es lejos, pero el arriendo es más barato.",
+      "accept": [],
+      "why": "*En que* says what the person is right about."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estás razón, pero no tenemos plata.",
+      "right": "Tienes razón, pero no tenemos plata.",
+      "why": "Spanish says you *have* reason: *tener razón*."
+    },
+    {
+      "wrong": "Tienes muy razón, pero Altamira no va a esperar.",
+      "right": "Tienes toda la razón, pero Altamira no va a esperar.",
+      "why": "To stress it, use *toda la razón*, not *muy*."
+    },
+    {
+      "wrong": "Pero no tenemos plata.",
+      "right": "Tienes razón, pero no tenemos plata.",
+      "why": "A bare *pero* sounds like a flat no. Concede first, then push back."
+    }
+  ],
+  "personal": "Think of an argument you had recently. Write the line you could have said: first give the other person a point with *tienes razón* or *es cierto*, then your *pero*."
+}

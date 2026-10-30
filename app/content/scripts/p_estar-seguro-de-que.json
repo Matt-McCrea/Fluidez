@@ -1,0 +1,189 @@
+{
+  "node": "p:estar-seguro-de-que",
+  "hook": {
+    "line": "Sooner or later someone asks if you're sure. Spanish gives you a casual \"I bet\" and a firm \"I'm certain\", and they are built differently.",
+    "es": "Estoy segura de que Vale tiene razón.",
+    "en": "I'm sure Vale is right. (a woman speaking)"
+  },
+  "examples": [
+    {
+      "es": "Seguro que llega a las ocho.",
+      "en": "I bet he arrives at eight."
+    },
+    {
+      "es": "Estoy totalmente seguro de que tiene razón.",
+      "en": "I'm completely sure she's right. (a man speaking)"
+    },
+    {
+      "es": "¿Estás seguro de que Altamira quiere comprar?",
+      "en": "Are you sure Altamira wants to buy? (to a man)"
+    },
+    {
+      "es": "Estoy segura de que es un rumor.",
+      "en": "I'm sure it's a rumour. (a woman speaking)"
+    },
+    {
+      "es": "Seguro que Hernando tiene hambre.",
+      "en": "I bet Hernando is hungry."
+    },
+    {
+      "es": "No estoy seguro.",
+      "en": "I'm not sure. (a man speaking)"
+    }
+  ],
+  "rule": "Two ways to say you're sure.\n\n*Estoy seguro de que* plus a fact is firm: *Estoy seguro de que tiene razón.* Add *totalmente* or *muy* to turn it up. The ending matches the speaker: *segura* for a woman.\n\n*Seguro que* on its own is casual, like \"I bet\": *Seguro que Hernando tiene hambre.* No *estoy*, no *de*. Don't blend the two.\n\nWhen you are sure, the verb after is normal. When you are not, it takes the doubt form you know: *No estoy seguro de que sea posible*, just like *dudo que*.",
+  "smallPrint": "Teachers call this the language of certainty: sure takes the normal verb form, and not sure takes the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Estoy seguro de que tiene razón.",
+      "options": [
+        "She's sure I'm right.",
+        "I'm not sure she's right.",
+        "I'm sure she's right. (a man speaking)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Seguro que Hernando tiene hambre.",
+      "options": [
+        "I bet Hernando is hungry.",
+        "I'm not sure Hernando is hungry.",
+        "Hernando is sure he is hungry."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy segura de que es un rumor.",
+      "options": [
+        "I'm sure it's a rumour. (a man speaking)",
+        "She's sure it's a rumour.",
+        "I'm sure it's a rumour. (a woman speaking)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Estás seguro de que Altamira quiere comprar?",
+      "options": [
+        "Is Altamira sure you want to buy?",
+        "Are you sure Altamira wants to buy?",
+        "Am I sure Altamira wants to buy?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estoy seguro.",
+      "options": [
+        "I'm sure.",
+        "I'm not sure. (a man speaking)",
+        "I'm not sure. (a woman speaking)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy totalmente seguro de que Vale llega mañana.",
+      "options": [
+        "I doubt Vale arrives tomorrow.",
+        "I'm a bit sure Vale arrives tomorrow.",
+        "I'm completely sure Vale arrives tomorrow. (a man speaking)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Seguro que llega a las ocho.",
+      "options": [
+        "He's not sure he arrives at eight.",
+        "I bet he arrives at eight.",
+        "I'm sure he arrives at nine."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy muy seguro de que tienen razón.",
+      "options": [
+        "I'm not very sure they're right.",
+        "They're very sure I'm right.",
+        "I'm very sure they're right. (a man speaking)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Estás segura de que está cerrado?",
+      "options": [
+        "Are you sure it's closed? (to a man)",
+        "Am I sure it's closed?",
+        "Are you sure it's closed? (to a woman)"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "A man speaking. Pick and type the whole sentence: *Estoy seguro ___ que Vale tiene razón.* (*de* or *en*)",
+      "answer": "Estoy seguro de que Vale tiene razón.",
+      "accept": [],
+      "why": "After *estoy seguro*, the little word is *de*."
+    },
+    {
+      "prompt": "A woman speaking. Pick and type the whole sentence: *Estoy ___ de que es un rumor.* (*segura* or *seguro*)",
+      "answer": "Estoy segura de que es un rumor.",
+      "accept": [],
+      "why": "The ending matches the speaker, so a woman says *segura*."
+    },
+    {
+      "prompt": "Say: I bet Hernando is hungry.",
+      "answer": "Seguro que Hernando tiene hambre.",
+      "accept": [],
+      "why": "The casual \"I bet\" is just *seguro que*, with no *estoy* and no *de*."
+    },
+    {
+      "prompt": "Ask a man you know well: Are you sure Altamira wants to buy?",
+      "answer": "¿Estás seguro de que Altamira quiere comprar?",
+      "accept": [],
+      "why": "*Estás* for *tú*, and *seguro* because you're asking a man."
+    },
+    {
+      "prompt": "A man speaking: I'm completely sure she's right.",
+      "answer": "Estoy totalmente seguro de que tiene razón.",
+      "accept": [
+        "Estoy completamente seguro de que tiene razón."
+      ],
+      "why": "*Totalmente* goes between *estoy* and *seguro*."
+    },
+    {
+      "prompt": "A man speaking: I'm not sure.",
+      "answer": "No estoy seguro.",
+      "accept": [],
+      "why": "*No* goes in front of *estoy*."
+    },
+    {
+      "prompt": "Make it casual: *Estoy segura de que llega a las ocho.*",
+      "answer": "Seguro que llega a las ocho.",
+      "accept": [],
+      "why": "Drop *estoy* and *de*: the casual version is just *seguro que*."
+    },
+    {
+      "prompt": "Turn it up with *totalmente*: *Estoy seguro de que Vale llega mañana.*",
+      "answer": "Estoy totalmente seguro de que Vale llega mañana.",
+      "accept": [],
+      "why": "*Totalmente* makes the certainty stronger."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Soy seguro de que tiene razón.",
+      "right": "Estoy seguro de que tiene razón.",
+      "why": "Being sure is a state of mind, so it takes *estar*."
+    },
+    {
+      "wrong": "Seguro de que Hernando tiene hambre.",
+      "right": "Seguro que Hernando tiene hambre.",
+      "why": "Without *estoy*, drop the *de*: the casual version is just *seguro que*."
+    },
+    {
+      "wrong": "Estoy seguro de que tenga razón.",
+      "right": "Estoy seguro de que tiene razón.",
+      "why": "When you are sure, state it as a fact with the normal verb form. The doubt form is for when you are not sure."
+    }
+  ],
+  "personal": "Write two lines about something that will happen this week: one you are firmly sure about with *estoy seguro de que* (or *segura*), and one casual guess with *seguro que*."
+}

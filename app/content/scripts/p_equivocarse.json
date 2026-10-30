@@ -1,0 +1,192 @@
+{
+  "node": "p:equivocarse",
+  "hook": {
+    "line": "Everyone is wrong sometimes: you, the bus driver, Altamira. Spanish has one verb for it, and it comes with a blunt way to say it and a gentler one.",
+    "es": "Perdón, me equivoqué.",
+    "en": "Sorry, I made a mistake."
+  },
+  "examples": [
+    {
+      "es": "Creo que te equivocas.",
+      "en": "I think you're wrong. (to a friend)"
+    },
+    {
+      "es": "Perdón, me equivoqué.",
+      "en": "Sorry, I made a mistake."
+    },
+    {
+      "es": "¿Me equivoco?",
+      "en": "Am I wrong?"
+    },
+    {
+      "es": "Tomás se equivocó.",
+      "en": "Tomás made a mistake."
+    },
+    {
+      "es": "Estoy equivocado.",
+      "en": "I'm wrong. (a man speaking)"
+    },
+    {
+      "es": "Todos nos equivocamos.",
+      "en": "We all make mistakes."
+    }
+  ],
+  "rule": "*Equivocarse* is to be wrong or make a mistake. It always carries a little word that points back at the person: *me equivoco, te equivocas, se equivoca, nos equivocamos, se equivocan*. In the past: *me equivoqué*, *se equivocó*.\n\nThere is also *estar equivocado*, and its ending matches the person: *equivocado* for a man, *equivocada* for a woman.\n\nBe careful: *te equivocas* is blunt. To soften it: *Creo que te equivocas*, *¿Me equivoco?* or *Yo lo veo distinto*.",
+  "smallPrint": "Teachers call *equivocarse* a reflexive verb: the extra *me*, *te* or *se* points back at the person doing it.",
+  "readAndPick": [
+    {
+      "es": "Creo que te equivocas.",
+      "options": [
+        "I think I'm wrong.",
+        "I think you're wrong.",
+        "I think he's wrong."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Perdón, me equivoqué.",
+      "options": [
+        "Sorry, you made a mistake.",
+        "Sorry, I'm making a mistake.",
+        "Sorry, I made a mistake."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás se equivocó.",
+      "options": [
+        "Tomás made a mistake.",
+        "Tomás is making a mistake.",
+        "Tomás makes mistakes."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Me equivoco?",
+      "options": [
+        "Are you wrong?",
+        "Am I wrong?",
+        "Was I wrong?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Todos nos equivocamos.",
+      "options": [
+        "They all make mistakes.",
+        "I make mistakes.",
+        "We all make mistakes."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estoy equivocada.",
+      "options": [
+        "I'm wrong. (a man speaking)",
+        "I'm wrong. (a woman speaking)",
+        "She's wrong."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ustedes se equivocan.",
+      "options": [
+        "You all are wrong.",
+        "They are wrong.",
+        "We are wrong."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Creo que me equivoco.",
+      "options": [
+        "I think you're wrong.",
+        "I think I was wrong.",
+        "I think I'm wrong."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estoy equivocado.",
+      "options": [
+        "I'm wrong. (a man speaking)",
+        "I'm wrong. (a woman speaking)",
+        "You're wrong."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say to a friend that you think they're wrong. Pick and type the whole sentence: *Creo que te ___.* (*equivocas* or *equivoco*)",
+      "answer": "Creo que te equivocas.",
+      "accept": [],
+      "why": "You are talking about *tú*, so *te* goes with *equivocas*."
+    },
+    {
+      "prompt": "Say sorry, you made a mistake. Pick and type the whole sentence: *Perdón, me ___.* (*equivoqué* or *equivoco*)",
+      "answer": "Perdón, me equivoqué.",
+      "accept": [],
+      "why": "It already happened, so the past form is *equivoqué*."
+    },
+    {
+      "prompt": "Say: Tomás made a mistake.",
+      "answer": "Tomás se equivocó.",
+      "accept": [],
+      "why": "*Se* goes with Tomás, and the past form is *equivocó*."
+    },
+    {
+      "prompt": "Ask gently, without being blunt: Am I wrong?",
+      "answer": "¿Me equivoco?",
+      "accept": [],
+      "why": "Asking about yourself is softer than telling someone *te equivocas*."
+    },
+    {
+      "prompt": "A woman speaking: I'm wrong.",
+      "answer": "Estoy equivocada.",
+      "accept": [],
+      "why": "The ending matches the speaker, so a woman says *equivocada*."
+    },
+    {
+      "prompt": "Make it about you all: *Creo que te equivocas.*",
+      "answer": "Creo que se equivocan.",
+      "accept": [
+        "Creo que ustedes se equivocan.",
+        "Creo que se equivocan ustedes."
+      ],
+      "why": "For *ustedes*, *te equivocas* turns into *se equivocan*."
+    },
+    {
+      "prompt": "Make it past: *Tomás se equivoca.*",
+      "answer": "Tomás se equivocó.",
+      "accept": [],
+      "why": "Past is *equivocó*, and *se* stays."
+    },
+    {
+      "prompt": "Say: We all make mistakes.",
+      "answer": "Todos nos equivocamos.",
+      "accept": [
+        "Nos equivocamos todos."
+      ],
+      "why": "*Nos* is the little word for we."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo equivoco.",
+      "right": "Me equivoco.",
+      "why": "The verb always needs its little word: *me*, *te* or *se*."
+    },
+    {
+      "wrong": "Soy equivocado.",
+      "right": "Estoy equivocado.",
+      "why": "Being wrong is a state, so it takes *estar*."
+    },
+    {
+      "wrong": "Estoy equivocado.",
+      "right": "Estoy equivocada.",
+      "why": "A woman speaking changes the ending to *equivocada*."
+    }
+  ],
+  "personal": "Write two lines about a small mistake you made recently. Use *me equivoqué* for what happened and *¿Me equivoco?* to ask a friend what they think."
+}

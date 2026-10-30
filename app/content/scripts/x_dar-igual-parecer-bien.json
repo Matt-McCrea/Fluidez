@@ -1,0 +1,198 @@
+{
+  "node": "x:dar-igual-parecer-bien",
+  "hook": {
+    "line": "Vale asks if Saturday works for the tasting. If you answer *me da igual*, she hears that you couldn't care less. If you answer *me parece bien*, she hears a yes. The two sound close in English and very different in Spanish.",
+    "es": "Me parece bien el sábado. A mí me da igual la hora.",
+    "en": "Saturday is fine by me. I don't mind the time."
+  },
+  "examples": [
+    {
+      "es": "¿Vamos al cine o a cenar?\nMe da igual.",
+      "en": "Shall we go to the cinema or out for dinner?\nI don't mind."
+    },
+    {
+      "es": "¿Te parece bien si invito a Vale?\nSí, me parece bien.",
+      "en": "Is it OK with you if I invite Vale?\nYes, that's fine by me."
+    },
+    {
+      "es": "Me da igual la hora.",
+      "en": "I don't mind the time."
+    },
+    {
+      "es": "Me parece bien el sábado.",
+      "en": "Saturday is fine by me."
+    },
+    {
+      "es": "A Hernando le da igual el precio.",
+      "en": "Hernando doesn't mind the price."
+    },
+    {
+      "es": "No me parece bien.",
+      "en": "That doesn't seem right to me."
+    }
+  ],
+  "rule": "Two answers, two jobs.\n\n*Me da igual* means you have no preference. This one or that one, either is fine. It answers \"this or that?\"\n\n*Me parece bien* means you approve. It answers \"is this OK with you?\"\n\nThe trap: when someone proposes a plan and you say *me da igual*, it can sound like you don't care about the plan or the person. To say yes, use *me parece bien*. *Me da lo mismo* means the same as *me da igual*.\n\nBoth work like *gustar*: *me*, *te*, *le*, *nos*, *les* say who, and the thing comes after: *Me da igual la hora.* To name the person, put *a* first: *A Hernando le da igual.*",
+  "smallPrint": "Teachers call *dar igual* and *parecer* verbs like *gustar*: the thing is the subject and the person is an indirect object.",
+  "readAndPick": [
+    {
+      "es": "Me da igual.",
+      "options": [
+        "I don't mind.",
+        "That's fine by me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me parece bien.",
+      "options": [
+        "I don't mind.",
+        "That's fine by me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me parece bien el sábado.",
+      "options": [
+        "I don't mind about Saturday.",
+        "Saturday is fine by me.",
+        "Saturday doesn't seem right to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Hernando le da igual el precio.",
+      "options": [
+        "I don't mind the price.",
+        "Hernando likes the price.",
+        "Hernando doesn't mind the price."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No me parece bien.",
+      "options": [
+        "I don't mind.",
+        "That doesn't seem right to me.",
+        "I'm not sure."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te da igual si invito a Vale?",
+      "options": [
+        "Is it OK with you if I invite Vale?",
+        "Do you not mind whether I invite Vale?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos da igual el plan.",
+      "options": [
+        "The plan seems fine to us.",
+        "They don't mind the plan.",
+        "We don't mind the plan."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Les parece bien el plan.",
+      "options": [
+        "They don't mind the plan.",
+        "The plan seems fine to them.",
+        "The plan seems fine to us."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A mí me da igual, escoge tú.",
+      "options": [
+        "I like it, you choose.",
+        "I don't mind, you choose.",
+        "I'll choose, you don't mind."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "A friend asks if you want tea or coffee, and you truly have no preference. Pick and type the whole sentence: *Me ___.* (*da igual* or *parece bien*)",
+      "answer": "Me da igual.",
+      "accept": [],
+      "why": "You're not choosing between the two, so it's *me da igual*."
+    },
+    {
+      "prompt": "Vale suggests Saturday and you like the idea. Pick and type the whole sentence: *Me ___ el sábado.* (*da igual* or *parece bien*)",
+      "answer": "Me parece bien el sábado.",
+      "accept": [
+        "El sábado me parece bien."
+      ],
+      "why": "You approve of the plan, so it's *me parece bien*."
+    },
+    {
+      "prompt": "Say: Hernando doesn't mind the price.",
+      "answer": "A Hernando le da igual el precio.",
+      "accept": [
+        "A Hernando le da lo mismo el precio.",
+        "Le da igual el precio a Hernando."
+      ],
+      "why": "The person goes first with *a*, and *le* stands for him."
+    },
+    {
+      "prompt": "A friend asks if it's OK with you to close early, and you agree. Say: Yes, that's fine by me.",
+      "answer": "Sí, me parece bien.",
+      "accept": [
+        "Me parece bien."
+      ],
+      "why": "You're saying yes to a plan, so use *me parece bien*."
+    },
+    {
+      "prompt": "Say: I don't mind the time.",
+      "answer": "Me da igual la hora.",
+      "accept": [
+        "Me da lo mismo la hora."
+      ],
+      "why": "No preference about the time is *me da igual*."
+    },
+    {
+      "prompt": "Make it about Vale: *Me parece bien el plan.*",
+      "answer": "A Vale le parece bien el plan.",
+      "accept": [
+        "Le parece bien el plan a Vale.",
+        "Le parece bien el plan."
+      ],
+      "why": "Swap *me* for *le* and name her with *a*."
+    },
+    {
+      "prompt": "Make it negative: *Me parece bien.*",
+      "answer": "No me parece bien.",
+      "accept": [],
+      "why": "*No* goes right before *me*."
+    },
+    {
+      "prompt": "Make it about we: *Me da igual el plan.*",
+      "answer": "Nos da igual el plan.",
+      "accept": [
+        "Nos da lo mismo el plan."
+      ],
+      "why": "*Nos* replaces *me* when it is we who don't mind."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Sí, me da igual.",
+      "right": "Sí, me parece bien.",
+      "why": "To say yes to a plan, approve it. *Me da igual* sounds like you don't care."
+    },
+    {
+      "wrong": "Yo doy igual.",
+      "right": "Me da igual.",
+      "why": "It works like *gustar*: the thing does the giving, and you are *me*."
+    },
+    {
+      "wrong": "A Hernando me da igual el precio.",
+      "right": "A Hernando le da igual el precio.",
+      "why": "When you name Hernando with *a*, the little word has to be *le*, not *me*."
+    }
+  ],
+  "personal": "Think of a plan someone suggested to you this week. Write one line approving it with *me parece bien*, and one line about something you honestly don't mind with *me da igual*."
+}
