@@ -1,274 +1,255 @@
 {
- "id": "ch053",
- "unit": "u19",
- "title": "Una rueda de bicicleta",
- "text": "Mariana puso la oferta de empleo en internet, y en dos horas llegaron veinte mensajes.\n«Oferta de empleo. Cargo: mesero. Turno de seis a dos. Contrato de seis meses. Sueldo justo y pan todos los días. Se busca persona con capacidad para trabajar rápido».\nLas entrevistas fueron en la mesa de Hernando.\nPrimero llegó Germán, un piloto.\nGermán: Ahora no tengo vuelos. ¿Cuál es el cargo? ¿Mesero? Perfecto.\nVale: ¿Y por qué un piloto quiere un empleo en un café?\nGermán: Lo que quiero ahora es un trabajo con los pies en la tierra.\nSimón: ¡Atención, pasajeros!\nA las diez llegó una mujer con tres cursos de inglés y un título en computación.\nMujer: Lo que necesito es una mesa donde trabajar con mi computadora. ¿Aquí se paga el internet?\nVale: Señora, el cargo es de mesera.\nMujer: ¿De mesera? ¿Con mi título?\nA las once entró un joven con una rueda de bicicleta en la mano.\nJoven: ¡Qué pena con ustedes! Soy Jhon Fredy, tengo diecinueve años, estudio ingeniería, hago un curso de computación, trabajo rápido, hablo rápido, y esa máquina de café tiene un problema con el agua.\nTomás: ¿Puede trabajar en el turno de la mañana?\nJhon Fredy: Tengo clases a las tres. ¿El sueldo es por mes? ¿Y cuál es la capacidad de la máquina? ¿Cuántos tintos por hora?\nHernando: Este muchacho está loco.\nSimón: ¡Loco! ¡Loco!\nVale: ¿Lo contratamos?\nTomás: Es lo más probable.\nHernando: ¿Probable? Mijo, ya está contratado.\nFue una entrevista de cuatro minutos. Jhon Fredy firmó el contrato a las doce. A las doce y diez, la máquina funcionaba. Vale le dio dos almojábanas, y por fin Jhon Fredy se quedó callado.\nEntonces entró Ricardo Altamira y miró el letrero de la ventana.\nAltamira: Un empleado nuevo. Muy bien. ¿Y ya tienen todos los permisos de la ciudad? Los cafés viejos siempre tienen problemas con los papeles.",
- "gloss": [
-  {
-   "es": "Sueldo justo y pan todos los días.",
-   "en": "A fair wage and bread every day."
-  },
-  {
-   "es": "Se busca persona con capacidad para trabajar rápido",
-   "en": "Wanted: someone able to work fast"
-  },
-  {
-   "es": "un trabajo con los pies en la tierra",
-   "en": "a job with my feet on the ground"
-  },
-  {
-   "es": "¡Atención, pasajeros!",
-   "en": "Attention, passengers!"
-  },
-  {
-   "es": "una mesa donde trabajar con mi computadora",
-   "en": "a table where I can work on my laptop"
-  },
-  {
-   "es": "¿Aquí se paga el internet?",
-   "en": "Do you have to pay for the internet here?"
-  },
-  {
-   "es": "¡Qué pena con ustedes!",
-   "en": "I'm so sorry!"
-  },
-  {
-   "es": "Es lo más probable.",
-   "en": "Most likely."
-  },
-  {
-   "es": "ya está contratado",
-   "en": "he's already hired"
-  },
-  {
-   "es": "se quedó callado",
-   "en": "went quiet"
-  },
-  {
-   "es": "¿Y ya tienen todos los permisos de la ciudad?",
-   "en": "And do you already have all your permits from the city?"
-  }
- ],
- "questions": [
-  {
-   "q": "Why does the pilot want to work in a café?",
-   "options": [
-    "He wants a job with his feet on the ground",
-    "He loves coffee more than flying",
-    "He needs money for a flight",
-    "He is Vale's cousin"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "Why doesn't the woman with the computing degree get the job?",
-   "options": [
-    "She wants a table to work on her laptop, not a job as a waitress",
-    "She doesn't speak Spanish",
-    "She asks for too much money",
-    "Simón bites her"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "¿Qué hace Jhon Fredy con la máquina de café?",
-   "options": [
-    "La arregla en diez minutos",
-    "La vende",
-    "La tira a la calle",
-    "La lleva a su casa"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "Why is Altamira's question worrying?",
-   "options": [
-    "He hints that an old café like this one may not have its city permits in order",
-    "He wants to hire Jhon Fredy for his hotel",
-    "He offers to buy the coffee machine",
-    "He says the bread is bad"
-   ],
-   "answer": 0
-  }
- ],
- "hook": "Altamira knows about the new waiter, and he is suddenly very interested in the café's papers. Two days later, a man from the city walks in with an armful of them.",
- "rereadQuestions": [
-  {
-   "q": "What shift does the job ad offer?",
-   "options": [
-    "Six to two",
-    "Two to ten",
-    "Nights only",
-    "Weekends only"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "What is Jhon Fredy carrying when he arrives?",
-   "options": [
-    "A bicycle wheel",
-    "A laptop",
-    "A suitcase",
-    "A box of almojábanas"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "What does Vale do once Jhon Fredy is hired?",
-   "options": [
-    "She gives him two almojábanas, and at last he goes quiet",
-    "She shows him the flour room",
-    "She tells him to cut his hair",
-    "She asks him to sign a second contract"
-   ],
-   "answer": 0
-  }
- ],
- "requires": [
-  "c:bien-y-tu",
-  "c:entonces-bueno",
-  "c:hago-salgo-vengo",
-  "c:que-pena",
-  "c:quiero",
-  "c:se-busca",
-  "c:tengo",
-  "c:tienes",
-  "g:adjective-agreement",
-  "g:demonstratives",
-  "g:direct-objects",
-  "g:estar-location-states",
-  "g:estar-participle",
-  "g:gender-articles",
-  "g:imperfect-habitual",
-  "g:indirect-objects",
-  "g:prep-pronouns",
-  "g:present-ar",
-  "g:preterite-ar",
-  "g:preterite-irregular-strong",
-  "g:preterite-ser-ir-hacer",
-  "g:questions",
-  "g:reflexive-routine",
-  "g:relatives-donde-lo-que",
-  "g:se-impersonal",
-  "g:ser-identity",
-  "g:stem-boot",
-  "g:superlatives",
-  "g:verb-infinitive",
-  "g:yo-irregular",
-  "p:aqui-ahi-alla",
-  "p:con-sin",
-  "p:costar-pagar",
-  "p:demonstratives-basic",
-  "p:desde-hasta",
-  "p:el-agua-fria",
-  "p:event-ser-en",
-  "p:frequency-scale",
-  "p:para-inf",
-  "p:para-inf-purpose",
-  "p:por-la-manana",
-  "p:possessives-basic",
-  "p:question-word-order",
-  "p:request-ladder",
-  "p:telling-time",
-  "p:tener-anos",
-  "p:time-sequence-basic",
-  "p:todos-los-dias",
-  "p:veces-al",
-  "p:viejo-antiguo-mayor"
- ],
- "lexemes": [
-  "l:agua",
-  "l:ahora",
-  "l:almojábana",
-  "l:aquí",
-  "l:atención",
-  "l:año",
-  "l:bicicleta",
-  "l:bien",
-  "l:buscar",
-  "l:café",
-  "l:callado",
-  "l:capacidad",
-  "l:cargar",
-  "l:cargo",
-  "l:ciudad",
-  "l:clase",
-  "l:computación",
-  "l:computadora",
-  "l:contratar",
-  "l:contrato",
-  "l:curso",
-  "l:cuál",
-  "l:cuánto",
-  "l:dar",
-  "l:día",
-  "l:empleado",
-  "l:empleo",
-  "l:entrar",
-  "l:entrevista",
-  "l:estar",
-  "l:estudiar",
-  "l:fin",
-  "l:firmar",
-  "l:funcionar",
-  "l:hablar",
-  "l:hacer",
-  "l:hora",
-  "l:ingeniería",
-  "l:inglés",
-  "l:internet",
-  "l:joven",
-  "l:justo",
-  "l:letrero",
-  "l:llegar",
-  "l:loco",
-  "l:mano",
-  "l:mañana",
-  "l:mensaje",
-  "l:mes",
-  "l:mesa",
-  "l:mesero",
-  "l:mijo",
-  "l:minuto",
-  "l:mirar",
-  "l:muchacho",
-  "l:mujer",
-  "l:máquina",
-  "l:necesitar",
-  "l:nuevo",
-  "l:oferta",
-  "l:pagar",
-  "l:pan",
-  "l:papel",
-  "l:pasajero",
-  "l:pena",
-  "l:perfecto",
-  "l:permiso",
-  "l:persona",
-  "l:pie",
-  "l:piloto",
-  "l:poder",
-  "l:poner",
-  "l:probable",
-  "l:problema",
-  "l:quedarse",
-  "l:querer",
-  "l:qué",
-  "l:rueda",
-  "l:rápido",
-  "l:ser",
-  "l:señora",
-  "l:siempre",
-  "l:sueldo",
-  "l:tener",
-  "l:tierra",
-  "l:tinto",
-  "l:trabajar",
-  "l:trabajo",
-  "l:turno",
-  "l:título",
-  "l:ventana",
-  "l:viejo",
-  "l:vuelo"
- ]
+  "id": "ch053",
+  "unit": "u19",
+  "title": "Una rueda de bicicleta",
+  "text": "Mariana puso la oferta de empleo en internet, y en dos horas llegaron veinte mensajes.\n«Oferta de empleo. Cargo: mesero. Turno de seis a dos. Contrato de seis meses. Sueldo justo y pan todos los días. Se busca persona con capacidad para trabajar rápido».\nLas entrevistas fueron en la mesa de Hernando.\nPrimero llegó Germán, un piloto.\nGermán: Ahora no tengo vuelos. ¿Cuál es el cargo? ¿Mesero? Perfecto.\nVale: ¿Y por qué un piloto quiere un empleo en un café?\nGermán: Lo que quiero ahora es un trabajo con los pies en la tierra.\nSimón: ¡Atención, pasajeros!\nA las once entró un joven con una rueda de bicicleta en la mano.\nJoven: ¡Qué pena con ustedes! Soy Jhon Fredy, tengo diecinueve años, estudio ingeniería, hago un curso de computación, trabajo rápido, hablo rápido, y esa máquina de café tiene un problema con el agua.\nTomás: ¿Puede trabajar en el turno de la mañana?\nJhon Fredy: Sí, señor. Tengo clases a las tres. ¿Y cuál es la capacidad de la máquina? ¿Cuántos tintos por hora?\nHernando: Este muchacho está loco.\nSimón: ¡Loco! ¡Loco!\nVale: ¿Lo contratamos?\nTomás: Es lo más probable.\nHernando: ¿Probable? Mijo, ya está contratado.\nJhon Fredy firmó el contrato a las doce. A las doce y diez, la máquina funcionaba. Vale le dio dos almojábanas, y por fin Jhon Fredy se quedó callado.\nEntonces entró Ricardo Altamira y miró el letrero de la ventana.\nAltamira: Un empleado nuevo. Muy bien. ¿Y ya tienen todos los permisos de la ciudad? Los cafés viejos siempre tienen problemas con los papeles.",
+  "gloss": [
+    {
+      "es": "Sueldo justo y pan todos los días.",
+      "en": "A fair wage and bread every day."
+    },
+    {
+      "es": "Se busca persona con capacidad para trabajar rápido",
+      "en": "Wanted: someone able to work fast"
+    },
+    {
+      "es": "un trabajo con los pies en la tierra",
+      "en": "a job with my feet on the ground"
+    },
+    {
+      "es": "¡Atención, pasajeros!",
+      "en": "Attention, passengers!"
+    },
+    {
+      "es": "¡Qué pena con ustedes!",
+      "en": "I'm so sorry!"
+    },
+    {
+      "es": "Es lo más probable.",
+      "en": "Most likely."
+    },
+    {
+      "es": "ya está contratado",
+      "en": "he's already hired"
+    },
+    {
+      "es": "se quedó callado",
+      "en": "went quiet"
+    },
+    {
+      "es": "¿Y ya tienen todos los permisos de la ciudad?",
+      "en": "And do you already have all your permits from the city?"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does the pilot want to work in a café?",
+      "options": [
+        "He wants a job with his feet on the ground",
+        "He loves coffee more than flying",
+        "He needs money for a flight",
+        "He is Vale's cousin"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Jhon Fredy notice as soon as he walks in?",
+      "options": [
+        "The coffee machine has a problem with the water",
+        "Simón needs a bath",
+        "The sign in the window is wrong",
+        "The tables are dirty"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hace Jhon Fredy con la máquina de café?",
+      "options": [
+        "La arregla en diez minutos",
+        "La vende",
+        "La tira a la calle",
+        "La lleva a su casa"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Altamira's question worrying?",
+      "options": [
+        "He hints that an old café like this one may not have its city permits in order",
+        "He wants to hire Jhon Fredy for his hotel",
+        "He offers to buy the coffee machine",
+        "He says the bread is bad"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Altamira knows about the new waiter, and he is suddenly very interested in the café's papers. Two days later, a man from the city walks in with an armful of them.",
+  "rereadQuestions": [
+    {
+      "q": "What shift does the job ad offer?",
+      "options": [
+        "Six to two",
+        "Two to ten",
+        "Nights only",
+        "Weekends only"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Jhon Fredy carrying when he arrives?",
+      "options": [
+        "A bicycle wheel",
+        "A laptop",
+        "A suitcase",
+        "A box of almojábanas"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale do once Jhon Fredy is hired?",
+      "options": [
+        "She gives him two almojábanas, and at last he goes quiet",
+        "She shows him the flour room",
+        "She tells him to cut his hair",
+        "She asks him to sign a second contract"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:hago-salgo-vengo",
+    "c:que-pena",
+    "c:quiero",
+    "c:se-busca",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:superlatives",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:con-sin",
+    "p:costar-pagar",
+    "p:demonstratives-basic",
+    "p:desde-hasta",
+    "p:el-agua-fria",
+    "p:event-ser-en",
+    "p:frequency-scale",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-la-manana",
+    "p:question-word-order",
+    "p:request-ladder",
+    "p:telling-time",
+    "p:tener-anos",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:agua",
+    "l:ahora",
+    "l:almojábana",
+    "l:atención",
+    "l:año",
+    "l:bicicleta",
+    "l:bien",
+    "l:buscar",
+    "l:café",
+    "l:callado",
+    "l:capacidad",
+    "l:cargar",
+    "l:cargo",
+    "l:ciudad",
+    "l:clase",
+    "l:computación",
+    "l:contratar",
+    "l:contrato",
+    "l:curso",
+    "l:cuál",
+    "l:cuánto",
+    "l:dar",
+    "l:día",
+    "l:empleado",
+    "l:empleo",
+    "l:entrar",
+    "l:entrevista",
+    "l:estar",
+    "l:estudiar",
+    "l:fin",
+    "l:firmar",
+    "l:funcionar",
+    "l:hablar",
+    "l:hacer",
+    "l:hora",
+    "l:ingeniería",
+    "l:internet",
+    "l:joven",
+    "l:justo",
+    "l:letrero",
+    "l:llegar",
+    "l:loco",
+    "l:mano",
+    "l:mañana",
+    "l:mensaje",
+    "l:mes",
+    "l:mesa",
+    "l:mesero",
+    "l:mijo",
+    "l:mirar",
+    "l:muchacho",
+    "l:máquina",
+    "l:nuevo",
+    "l:oferta",
+    "l:pan",
+    "l:papel",
+    "l:pasajero",
+    "l:pena",
+    "l:perfecto",
+    "l:permiso",
+    "l:persona",
+    "l:pie",
+    "l:piloto",
+    "l:poder",
+    "l:poner",
+    "l:probable",
+    "l:problema",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:rueda",
+    "l:rápido",
+    "l:ser",
+    "l:señor",
+    "l:siempre",
+    "l:sueldo",
+    "l:tener",
+    "l:tierra",
+    "l:tinto",
+    "l:trabajar",
+    "l:trabajo",
+    "l:turno",
+    "l:ventana",
+    "l:viejo",
+    "l:vuelo"
+  ]
 }
