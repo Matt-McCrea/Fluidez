@@ -1,0 +1,183 @@
+{
+  "node": "p:ser-un-noun",
+  "hook": {
+    "line": "Vale's mother wants to know what the new accountant is like. Nobody in Bogotá answers with a list of skills: they hand down a verdict in one noun.",
+    "es": "Es una fiera para los números.",
+    "en": "She's a whiz with numbers."
+  },
+  "examples": [
+    {
+      "es": "Es una fiera para los números.",
+      "en": "She's a whiz with numbers."
+    },
+    {
+      "es": "Ese man es un lince.",
+      "en": "That guy's razor-sharp."
+    },
+    {
+      "es": "Es un gallina, no se atreve.",
+      "en": "He's a chicken, he doesn't dare."
+    },
+    {
+      "es": "Vale es una máquina en la cocina.",
+      "en": "Vale is a machine in the kitchen."
+    },
+    {
+      "es": "Hernando es un genio para manejar.",
+      "en": "Hernando is a genius at driving."
+    },
+    {
+      "es": "Eres un ángel, gracias.",
+      "en": "You're an angel, thanks."
+    }
+  ],
+  "rule": "English judges a person with an adjective: *she's good with numbers*. Spanish often gives the verdict as a noun after *ser*: *es una fiera* (a wild animal), *es un lince* (a lynx), *es una máquina*. The little word *un* or *una* stays, and it follows the person, not the noun: *un gallina* for a man, *una gallina* for a woman. To say what at, add *para*: *una fiera para los números*. It is warm and informal, and some verdicts sting: *es un gallina* is not a compliment.",
+  "smallPrint": "Teachers call these evaluative nouns. They describe a person the way an adjective would.",
+  "readAndPick": [
+    {
+      "es": "Es un gallina, no se atreve.",
+      "options": [
+        "He's a chicken, he doesn't dare.",
+        "She's a chicken, she doesn't dare.",
+        "They're chickens, they don't dare."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es una gallina, no se atreve.",
+      "options": [
+        "He's a chicken, he doesn't dare.",
+        "She's a chicken, she doesn't dare."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Son unos genios para manejar.",
+      "options": [
+        "He is a genius at driving.",
+        "They are geniuses at driving."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Soy una máquina en la cocina.",
+      "options": [
+        "A man says: I'm a machine in the kitchen.",
+        "A woman says: I'm a machine in the kitchen."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Soy un lince para los precios.",
+      "options": [
+        "A woman says: I'm razor-sharp with prices.",
+        "A man says: I'm razor-sharp with prices."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ese man es un lince.",
+      "options": [
+        "That woman is razor-sharp.",
+        "Those guys are razor-sharp.",
+        "That guy is razor-sharp."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ustedes son unas fieras.",
+      "options": [
+        "You all (all women) are whizzes.",
+        "You all (all men) are whizzes.",
+        "She is a whiz."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es una fiera para los números.",
+      "options": [
+        "She's a whiz with numbers.",
+        "He's a whiz with numbers."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *un* or *una*: Mi tía es ___ fiera para los números. Type the whole sentence.",
+      "answer": "Mi tía es una fiera para los números.",
+      "accept": [],
+      "why": "*Una* matches the person, and your aunt is a woman."
+    },
+    {
+      "prompt": "Choose *un* or *una*: Hernando es ___ genio para manejar. Type the whole sentence.",
+      "answer": "Hernando es un genio para manejar.",
+      "accept": [],
+      "why": "Hernando is a man, so *un*."
+    },
+    {
+      "prompt": "Vale is a machine in the kitchen.",
+      "answer": "Vale es una máquina en la cocina.",
+      "accept": [
+        "Vale es una fiera en la cocina."
+      ],
+      "why": "The verdict is a noun after *es*, and *una* because Vale is a woman."
+    },
+    {
+      "prompt": "She's a chicken, she doesn't dare. (about a woman)",
+      "answer": "Es una gallina, no se atreve.",
+      "accept": [
+        "Ella es una gallina, no se atreve."
+      ],
+      "why": "For a woman it's *una gallina*."
+    },
+    {
+      "prompt": "That guy's razor-sharp.",
+      "answer": "Ese man es un lince.",
+      "accept": [
+        "Ese hombre es un lince."
+      ],
+      "why": "A man, so *un lince*, with no *muy* needed: the noun already says it."
+    },
+    {
+      "prompt": "Make it about a woman: *Es un gallina, no se atreve.*",
+      "answer": "Es una gallina, no se atreve.",
+      "accept": [
+        "Ella es una gallina, no se atreve."
+      ],
+      "why": "Only the little word changes, because it follows the person."
+    },
+    {
+      "prompt": "Make it about two men: *Mi primo es un genio para manejar.*",
+      "answer": "Mis primos son unos genios para manejar.",
+      "accept": [],
+      "why": "Everything goes plural: *mis primos son unos genios*."
+    },
+    {
+      "prompt": "You're an angel, thanks. (to a friend)",
+      "answer": "Eres un ángel, gracias.",
+      "accept": [
+        "Tú eres un ángel, gracias."
+      ],
+      "why": "*Ángel* is the verdict, with *un* in front."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Mi papá es una gallina, no se atreve.",
+      "right": "Mi papá es un gallina, no se atreve.",
+      "why": "Almost. The little word follows the person, not the noun, so a man gets *un* even with *gallina*."
+    },
+    {
+      "wrong": "Ella es fiera para los números.",
+      "right": "Ella es una fiera para los números.",
+      "why": "Keep the little word: the noun is the verdict, so it needs *una* in front."
+    },
+    {
+      "wrong": "Hernando es un genio de manejar.",
+      "right": "Hernando es un genio para manejar.",
+      "why": "To say what someone is brilliant at, Spanish uses *para*."
+    }
+  ],
+  "personal": "Think of someone you know well. Judge them in one noun: *Mi amigo es un genio para...*, or *Mi hermana es una máquina para...*"
+}

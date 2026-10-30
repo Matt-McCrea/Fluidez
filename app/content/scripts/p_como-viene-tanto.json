@@ -1,0 +1,180 @@
+{
+  "node": "p:como-viene-tanto",
+  "hook": {
+    "line": "Hernando tells Tomás to ask Altamira for help. Tomás does not believe in miracles, and he does not need a full sentence to say so.",
+    "es": "Pídele ayuda a Altamira.\nSí, como ayuda tanto.",
+    "en": "Ask Altamira for help.\nYeah, because Altamira helps SO much."
+  },
+  "examples": [
+    {
+      "es": "Pídele ayuda a Altamira.\nSí, como ayuda tanto.",
+      "en": "Ask Altamira for help.\nYeah, because Altamira helps SO much."
+    },
+    {
+      "es": "Vale dice que llega en cinco minutos.\nSí, claro, como siempre llega a tiempo.",
+      "en": "Vale says she'll be here in five minutes.\nYeah, right, because she's always on time."
+    },
+    {
+      "es": "El hotel dice que no va a hacer ruido.\nSí, claro, como les importa tanto.",
+      "en": "The hotel says it won't make any noise.\nYeah, right, because they care SO much."
+    },
+    {
+      "es": "Mañana madrugo y te ayudo con el café.\nSí, claro, como madrugas tanto.",
+      "en": "Tomorrow I'll get up early and help you with the café.\nYeah, right, because you get up early SO often."
+    },
+    {
+      "es": "Hernando nunca se queja de nada.\nSí, como nunca se queja.",
+      "en": "Hernando never complains about anything.\nYeah, because he never complains."
+    },
+    {
+      "es": "Como llueve, no salimos.",
+      "en": "Since it's raining, we're not going out."
+    }
+  ],
+  "rule": "Start with *Sí*, add *como*, then state something you both know is false: *Sí, como ayuda tanto*. You never finish the thought. The unsaid half is *as if*. English does it with *yeah, because...* and an eye roll. Your voice drops away; in writing, three dots do it. *Claro* before *como* makes it a bit sharper. Plain *como* with no *sí* just means *since*: *Como llueve, no salimos*. The giveaways are the *sí* and a claim that clashes with what you both know.",
+  "smallPrint": "Teachers call this an ironic echo: you repeat the other person's premise as if you believed it.",
+  "readAndPick": [
+    {
+      "es": "Como llueve, no salimos.",
+      "options": [
+        "Since it's raining, we're not going out.",
+        "Yeah, right, because it rains SO much."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aquí hace mucho sol.\nSí, claro, como aquí nunca llueve.",
+      "options": [
+        "The speaker agrees it never rains.",
+        "The speaker is joking, because it rains a lot."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pídele ayuda a Altamira.\nSí, como ayuda tanto.",
+      "options": [
+        "He is sure Altamira will help.",
+        "He is sure Altamira would not lift a finger.",
+        "He wants Altamira to help him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Como Vale cocina tan bien, todos piden su pan.",
+      "options": [
+        "Yeah, right, as if Vale cooked well.",
+        "Since Vale cooks so well, everyone asks for her bread."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mañana madrugo y te ayudo.\nSí, claro, como madrugas tanto.",
+      "options": [
+        "He thinks the other person will get up early.",
+        "He does not believe the other person will get up early."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale dice que llega en cinco minutos.\nSí, claro, como siempre llega a tiempo.",
+      "options": [
+        "He doubts Vale will be on time.",
+        "He is sure Vale will be on time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Como hace frío, me quedo en casa.",
+      "options": [
+        "Yeah, right, as if it were cold.",
+        "Since it's cold, I'm staying home."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando nunca habla.\nSí, claro, como Hernando nunca habla.",
+      "options": [
+        "Hernando is very quiet.",
+        "Hernando talks a lot.",
+        "Hernando is shy."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *Sí* or *No*: ___, como siempre llega a tiempo. (You doubt it.) Type the whole sentence.",
+      "answer": "Sí, como siempre llega a tiempo.",
+      "accept": [
+        "Sí, claro, como siempre llega a tiempo."
+      ],
+      "why": "The ironic echo starts with *sí*, even though you mean *no*."
+    },
+    {
+      "prompt": "Vale says she'll be here in five minutes. Answer ironically: Yeah, right, because she's always on time.",
+      "answer": "Sí, claro, como siempre llega a tiempo.",
+      "accept": [
+        "Sí, como siempre llega a tiempo."
+      ],
+      "why": "*Sí, claro, como* plus a claim you both know is false."
+    },
+    {
+      "prompt": "Someone says: Ask Altamira for help. Answer ironically: Yeah, because Altamira helps SO much.",
+      "answer": "Sí, como Altamira ayuda tanto.",
+      "accept": [
+        "Sí, como ayuda tanto."
+      ],
+      "why": "*Tanto* is the over the top word that gives it away."
+    },
+    {
+      "prompt": "Someone says the hotel won't make any noise. Answer ironically: Yeah, right, because they never make noise.",
+      "answer": "Sí, claro, como nunca hacen ruido.",
+      "accept": [
+        "Sí, como nunca hacen ruido."
+      ],
+      "why": "The claim is obviously false, and you leave the thought unfinished."
+    },
+    {
+      "prompt": "Say it about yourself (I): *Sí, claro, como siempre llega a tiempo.*",
+      "answer": "Sí, claro, como siempre llego a tiempo.",
+      "accept": [
+        "Sí, como siempre llego a tiempo."
+      ],
+      "why": "Only the verb changes: *llego* for I."
+    },
+    {
+      "prompt": "Since it's raining, we're not going out. (a real reason)",
+      "answer": "Como llueve, no salimos.",
+      "accept": [
+        "Como está lloviendo, no salimos."
+      ],
+      "why": "No *sí* and a true claim, so *como* simply means since."
+    },
+    {
+      "prompt": "Your friend says: Tomorrow I'll get up early and help. Answer ironically (to a friend): Yeah, right, because you get up early SO often.",
+      "answer": "Sí, claro, como madrugas tanto.",
+      "accept": [
+        "Sí, como madrugas tanto."
+      ],
+      "why": "*Tanto* again: you praise the habit they do not have."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Sí, porque ayuda tanto.",
+      "right": "Sí, como ayuda tanto.",
+      "why": "Almost. *Porque* gives a real reason; the ironic echo needs *como*."
+    },
+    {
+      "wrong": "Sí, cómo ayuda tanto.",
+      "right": "Sí, como ayuda tanto.",
+      "why": "No accent here: this is *como* meaning because, not *cómo* meaning how."
+    },
+    {
+      "wrong": "Si, como ayuda tanto.",
+      "right": "Sí, como ayuda tanto.",
+      "why": "Keep the accent: *sí* with a mark is yes, while *si* alone is if."
+    }
+  ],
+  "personal": "Think of something a friend always promises and never does. Write your ironic answer: *Sí, claro, como...*"
+}

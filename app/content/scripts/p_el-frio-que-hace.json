@@ -1,0 +1,171 @@
+{
+  "node": "p:el-frio-que-hace",
+  "hook": {
+    "line": "Mariana comes in from the street rubbing her hands. Anyone arriving at the café wants you to feel what they just felt.",
+    "es": "No sabes el frío que hace afuera.",
+    "en": "You have no idea how cold it is out there."
+  },
+  "examples": [
+    {
+      "es": "No sabes el frío que hace afuera.",
+      "en": "You have no idea how cold it is out there."
+    },
+    {
+      "es": "¡La cara que puso cuando se lo dijiste!",
+      "en": "The face he pulled when you told him!"
+    },
+    {
+      "es": "¡La cantidad de gente que había!",
+      "en": "The number of people there were!"
+    },
+    {
+      "es": "No sabes el hambre que tengo.",
+      "en": "You have no idea how hungry I am."
+    },
+    {
+      "es": "¡El ruido que hacían en el hotel anoche!",
+      "en": "The noise they made at the hotel last night!"
+    },
+    {
+      "es": "No sabes el trancón que hay hoy.",
+      "en": "You have no idea how bad the traffic is today."
+    }
+  ],
+  "rule": "To say *how cold* or *how many*, English uses *how* or *what a*. Spanish names the thing first, with its article, then adds *que* and a verb: *el frío que hace*. It works for feelings and amounts too: *el hambre que tengo*, *la cantidad de gente que había*. Open with *No sabes* for a friendly warning, or start straight with the article for an outburst: *¡La cara que puso!* The noun is the star. You already know the adjective version, *lo difícil que es*; this is the noun one.",
+  "smallPrint": "Teachers call this an exclamative relative clause: an article and a noun, then *que*.",
+  "readAndPick": [
+    {
+      "es": "No sabes el hambre que tengo.",
+      "options": [
+        "You have no idea how hungry I am.",
+        "You have no idea how hungry you are.",
+        "I have no idea how hungry you are."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No sabes el frío que hacía.",
+      "options": [
+        "You have no idea how cold it is.",
+        "You have no idea how cold it was."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡La cantidad de gente que había!",
+      "options": [
+        "The number of people there will be!",
+        "The number of people I know!",
+        "The number of people there were!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¡La cara que puse!",
+      "options": [
+        "The face I pulled!",
+        "The face he pulled!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡El ruido que hacían en el hotel!",
+      "options": [
+        "The noise he made at the hotel!",
+        "The noise they were making at the hotel!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No sabes el trancón que hay hoy.",
+      "options": [
+        "You have no idea how bad the traffic is today.",
+        "You have no idea how bad the traffic was yesterday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No saben el frío que hace afuera.",
+      "options": [
+        "You have no idea how cold it is out there. (to one friend)",
+        "You all have no idea how cold it is out there.",
+        "They have no idea how cold it was out there."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Los nervios que tengo!",
+      "options": [
+        "The nerves he had!",
+        "The nerves I have!"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *el* or *la*: No sabes ___ frío que hace afuera. Type the whole sentence.",
+      "answer": "No sabes el frío que hace afuera.",
+      "accept": [],
+      "why": "*Frío* is masculine, so *el*."
+    },
+    {
+      "prompt": "Choose *la* or *el*: ¡___ cantidad de gente que había! Type the whole sentence.",
+      "answer": "¡La cantidad de gente que había!",
+      "accept": [
+        "La cantidad de gente que había"
+      ],
+      "why": "*Cantidad* is feminine, so *la*."
+    },
+    {
+      "prompt": "You have no idea how hungry I am. (to a friend)",
+      "answer": "No sabes el hambre que tengo.",
+      "accept": [],
+      "why": "Name the thing, *el hambre*, then *que* and the verb."
+    },
+    {
+      "prompt": "You have no idea how bad the traffic is today. (to a friend)",
+      "answer": "No sabes el trancón que hay hoy.",
+      "accept": [],
+      "why": "Same frame with *trancón* and *hay*."
+    },
+    {
+      "prompt": "The face he pulled when you told him!",
+      "answer": "¡La cara que puso cuando se lo dijiste!",
+      "accept": [
+        "La cara que puso cuando se lo dijiste"
+      ],
+      "why": "You start with the article and the noun, and the verb comes last."
+    },
+    {
+      "prompt": "Put it in the past: *No sabes el frío que hace afuera.*",
+      "answer": "No sabes el frío que hacía afuera.",
+      "accept": [],
+      "why": "Only the verb after *que* changes: *hacía*."
+    },
+    {
+      "prompt": "Say it to your friends (you all): *No sabes el hambre que tengo.*",
+      "answer": "No saben el hambre que tengo.",
+      "accept": [],
+      "why": "*Saben* is the *ustedes* form; the rest stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No sabes cómo frío hace afuera.",
+      "right": "No sabes el frío que hace afuera.",
+      "why": "Almost. English *how cold* does not become *cómo frío*: Spanish names *el frío* and adds *que*."
+    },
+    {
+      "wrong": "¡La cantidad de gente había!",
+      "right": "¡La cantidad de gente que había!",
+      "why": "Don't drop the *que*; it joins the noun to the verb."
+    },
+    {
+      "wrong": "No sabes la hambre que tengo.",
+      "right": "No sabes el hambre que tengo.",
+      "why": "*Hambre* is feminine but takes *el* in the singular, like *el agua*."
+    }
+  ],
+  "personal": "Imagine coming in from the street. Tell someone what you went through, with *No sabes el...* or *No sabes la... que...*: the cold, the traffic, the hunger."
+}

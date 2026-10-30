@@ -1,0 +1,165 @@
+{
+  "node": "p:como-me-entere",
+  "hook": {
+    "line": "Don Hernando lent Tomás some money and wants it back. He does not shout: he starts a sentence and lets the silence finish it.",
+    "es": "Como no me devuelvas la plata esta semana, se acabó.",
+    "en": "If you don't pay me back this week, that's it."
+  },
+  "examples": [
+    {
+      "es": "Como me entere de que no fuiste a clase, te quedas sin salir.",
+      "en": "If I find out you didn't go to class, you're grounded."
+    },
+    {
+      "es": "Como no me devuelvas la plata esta semana, se acabó.",
+      "en": "If you don't pay me back this week, that's it."
+    },
+    {
+      "es": "Como se haya olvidado de las llaves, no entramos.",
+      "en": "If she has forgotten the keys, we can't get in."
+    },
+    {
+      "es": "Como llegues tarde otra vez, ya verás.",
+      "en": "If you're late again, you'll see."
+    },
+    {
+      "es": "Como nos vuelvan a cortar el agua, se van a acordar de mí.",
+      "en": "If they cut our water off again, they'll remember me."
+    },
+    {
+      "es": "Como no me devolviste la plata, no te presto más.",
+      "en": "Since you didn't pay me back, I'm not lending you any more."
+    }
+  ],
+  "rule": "A threat often starts with *como* and the 'not yet, but if' verb form: *Como me entere...*, *Como llegues tarde...* It means *if*, only sharper: if that happens, watch out. What follows may be vague, or missing; the silence is the threat (*ya verás*). Compare *como* with a plain verb, which only gives a reason: *Como no me devolviste la plata*, since you didn't. Spot the difference by the verb: *entere*, *devuelvas*, *llegues* look ahead.",
+  "smallPrint": "Teachers call this conditional *como* with the subjunctive. It always takes the subjunctive; with the indicative, *como* means since.",
+  "readAndPick": [
+    {
+      "es": "Como llegues tarde otra vez, ya verás.",
+      "options": [
+        "If you're late again, you'll see.",
+        "Since you were late again, you'll see."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Como llegaste tarde otra vez, no te dejo entrar.",
+      "options": [
+        "If you're late again, I won't let you in.",
+        "Since you were late again, I won't let you in."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Como me entere de que mentiste, se acabó.",
+      "options": [
+        "Since I found out you lied, it's over.",
+        "If I find out you lied, it's over."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Como no me devuelvas la plata, se acabó.",
+      "options": [
+        "Since you didn't pay me back, that's it.",
+        "If you don't pay me back, that's it.",
+        "Because you don't pay me back, that's it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Como no me devolviste la plata, se acabó.",
+      "options": [
+        "If you don't pay me back, that's it.",
+        "Since you didn't pay me back, that's it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Como se haya olvidado de las llaves, no entramos.",
+      "options": [
+        "Since she forgot the keys, we're not going in.",
+        "If she has forgotten the keys, we can't get in."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Como nos vuelvan a cortar el agua, se van a acordar de mí.",
+      "options": [
+        "If they cut our water off again, they'll remember me.",
+        "Since they cut our water off again, they'll remember me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Como llueve, no salimos.",
+      "options": [
+        "If it rains, we won't go out.",
+        "Since it's raining, we're not going out."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *llegues* or *llegaste*: Como ___ tarde otra vez, ya verás. (a warning). Type the whole sentence.",
+      "answer": "Como llegues tarde otra vez, ya verás.",
+      "accept": [],
+      "why": "A threat looks ahead, so the 'if it happens' form *llegues*."
+    },
+    {
+      "prompt": "Choose *devuelvas* or *devolviste*: Como no me ___ la plata esta semana, se acabó. (a warning to a friend). Type the whole sentence.",
+      "answer": "Como no me devuelvas la plata esta semana, se acabó.",
+      "accept": [],
+      "why": "It hasn't happened yet, so *devuelvas*."
+    },
+    {
+      "prompt": "If I find out you didn't go to class, you're grounded. (to a friend)",
+      "answer": "Como me entere de que no fuiste a clase, te quedas sin salir.",
+      "accept": [],
+      "why": "*Como me entere* is the threat, and the result follows after the comma."
+    },
+    {
+      "prompt": "If she has forgotten the keys, we can't get in.",
+      "answer": "Como se haya olvidado de las llaves, no entramos.",
+      "accept": [],
+      "why": "*Se haya olvidado* is the looking ahead form of has forgotten."
+    },
+    {
+      "prompt": "Since you didn't pay me back, I'm not lending you any more. (a reason, not a threat; to a friend)",
+      "answer": "Como no me devolviste la plata, no te presto más.",
+      "accept": [],
+      "why": "A real past fact, so the plain past verb and *como* means since."
+    },
+    {
+      "prompt": "Make it a warning to two friends (you all): *Como llegues tarde otra vez, ya verás.*",
+      "answer": "Como lleguen tarde otra vez, ya verán.",
+      "accept": [],
+      "why": "Both the threat verb and *verán* move to the *ustedes* form."
+    },
+    {
+      "prompt": "If you don't call me tonight, that's it. (to a friend)",
+      "answer": "Como no me llames esta noche, se acabó.",
+      "accept": [],
+      "why": "Same frame: *como no* plus the looking ahead form, *llames*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Como me enteré de que mentiste, se acabó.",
+      "right": "Como me entere de que mentiste, se acabó.",
+      "why": "Almost. *Enteré* says it already happened, so it only means since; the threat needs *entere*."
+    },
+    {
+      "wrong": "Como no me devuelves la plata, se acabó.",
+      "right": "Como no me devuelvas la plata, se acabó.",
+      "why": "A threat points ahead, so *devuelvas* rather than *devuelves*."
+    },
+    {
+      "wrong": "Si llegues tarde otra vez, ya verás.",
+      "right": "Como llegues tarde otra vez, ya verás.",
+      "why": "With *si* it would be *si llegas*. The sharper threat is *como* plus *llegues*."
+    }
+  ],
+  "personal": "Think of a small rule where you live. Write a threat with *Como...* and a looking ahead verb, then stop at the comma or add *ya verás*."
+}

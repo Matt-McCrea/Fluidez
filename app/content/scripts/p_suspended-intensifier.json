@@ -1,0 +1,184 @@
+{
+  "node": "p:suspended-intensifier",
+  "hook": {
+    "line": "Tomás bursts into the café soaked and shivering. He does not need to finish the sentence: the silence tells the story better than the next clause would.",
+    "es": "¡Hacía un frío!",
+    "en": "It was SO cold!"
+  },
+  "examples": [
+    {
+      "es": "¡Llovía tanto aquella tarde!",
+      "en": "It was raining SO hard that afternoon!"
+    },
+    {
+      "es": "¡Hacía un frío!",
+      "en": "It was SO cold!"
+    },
+    {
+      "es": "¡Tengo un hambre!",
+      "en": "I'm SO hungry!"
+    },
+    {
+      "es": "¡Tenía unos nervios!",
+      "en": "I was SO nervous!"
+    },
+    {
+      "es": "¡Tengo unos nervios que ni te imaginas!",
+      "en": "I'm so nervous you can't imagine!"
+    },
+    {
+      "es": "¡Hacía un calor!",
+      "en": "It was SO hot!"
+    }
+  ],
+  "rule": "English finishes the job: *so cold I couldn't feel my fingers!* Spanish often stops at the big word and lets your face finish it. Three ways: *tanto* (*¡Llovía tanto!*); *un* or *una* before a feeling or weather noun (*¡Hacía un frío!*, *¡Tengo un hambre!*); *unos* or *unas* plus a noun (*¡Tenía unos nervios!*). Add *que ni te imaginas* to hand it over to the listener. Say it with a pause where the result would go.",
+  "smallPrint": "Teachers call this a suspended intensifier: the consequence is cut off on purpose.",
+  "readAndPick": [
+    {
+      "es": "¡Hacía un frío!",
+      "options": [
+        "It was SO cold!",
+        "It is SO cold!",
+        "It will be SO cold!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Hace un frío!",
+      "options": [
+        "It was SO cold!",
+        "It's SO cold!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Llovía tanto aquella tarde!",
+      "options": [
+        "It rains SO much every afternoon!",
+        "It was raining SO hard that afternoon!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Tenemos un hambre!",
+      "options": [
+        "I'm SO hungry!",
+        "You're SO hungry!",
+        "We're SO hungry!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¡Tiene unos nervios!",
+      "options": [
+        "I'm SO nervous!",
+        "She's SO nervous!",
+        "We were SO nervous!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Tenía unos nervios!",
+      "options": [
+        "I was SO nervous!",
+        "I'm SO nervous!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Tengo unos nervios que ni te imaginas!",
+      "options": [
+        "You're so nervous I can't imagine!",
+        "I'm so nervous you can't imagine!",
+        "I'm so nervous I can't imagine!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Hacía un calor!",
+      "options": [
+        "It was SO cold!",
+        "It was SO hot!"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *Hacía* or *Hace*: ¡___ un frío! (about yesterday). Type the whole sentence.",
+      "answer": "¡Hacía un frío!",
+      "accept": [
+        "Hacía un frío"
+      ],
+      "why": "Yesterday is over, so the past form *hacía*."
+    },
+    {
+      "prompt": "I'm SO hungry!",
+      "answer": "¡Tengo un hambre!",
+      "accept": [
+        "Tengo un hambre"
+      ],
+      "why": "*Tengo un hambre* and then a pause: the result is unsaid."
+    },
+    {
+      "prompt": "It was raining SO hard that afternoon!",
+      "answer": "¡Llovía tanto aquella tarde!",
+      "accept": [
+        "Llovía tanto aquella tarde"
+      ],
+      "why": "*Tanto* does the intensifying, and you stop there."
+    },
+    {
+      "prompt": "She was SO nervous! (about her)",
+      "answer": "¡Tenía unos nervios!",
+      "accept": [
+        "Tenía unos nervios",
+        "¡Ella tenía unos nervios!"
+      ],
+      "why": "*Unos* plus *nervios* is the frame for nerves."
+    },
+    {
+      "prompt": "Make it about we: *¡Tengo un hambre!*",
+      "answer": "¡Tenemos un hambre!",
+      "accept": [
+        "Tenemos un hambre",
+        "¡Nosotros tenemos un hambre!"
+      ],
+      "why": "Only the verb changes: *tenemos* for we."
+    },
+    {
+      "prompt": "Put it in the past: *¡Hace un calor!*",
+      "answer": "¡Hacía un calor!",
+      "accept": [
+        "Hacía un calor"
+      ],
+      "why": "For how the weather was, *hacía*."
+    },
+    {
+      "prompt": "I'm so nervous you can't imagine! (to a friend)",
+      "answer": "¡Tengo unos nervios que ni te imaginas!",
+      "accept": [
+        "Tengo unos nervios que ni te imaginas"
+      ],
+      "why": "*Que ni te imaginas* hands the rest to your friend."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Hace un frío!",
+      "right": "¡Hacía un frío!",
+      "why": "Almost. For a story about yesterday, use the past form *hacía*."
+    },
+    {
+      "wrong": "¡Tengo una hambre!",
+      "right": "¡Tengo un hambre!",
+      "why": "*Hambre* is feminine but takes *un* in the singular, like *el agua*."
+    },
+    {
+      "wrong": "¡Tenía unos nervio!",
+      "right": "¡Tenía unos nervios!",
+      "why": "Here *nervios* is plural, so it matches *unos*."
+    }
+  ],
+  "personal": "Think of the last time you were very cold, hungry or nervous. Write it as one hanging line, *¡Tenía un...!* or *¡Hacía un...!*, and stop there."
+}

@@ -1,0 +1,180 @@
+{
+  "node": "p:ironic-praise",
+  "hook": {
+    "line": "Altamira sends Hernando a note the night before the building work starts under his window. He is not grateful, and he says so in the politest words he knows.",
+    "es": "¡Qué detalle avisarme con tanta anticipación!",
+    "en": "How thoughtful of you to warn me so far in advance!"
+  },
+  "examples": [
+    {
+      "es": "Te aviso hoy que mañana empiezan las obras.\n¡Qué detalle avisarme con tanta anticipación!",
+      "en": "I'm telling you today that the building work starts tomorrow.\nHow thoughtful of you to warn me so far in advance!"
+    },
+    {
+      "es": "Rompí dos tazas mientras ayudaba.\nGracias por tu ayuda, no sé qué habría hecho sin ti.",
+      "en": "I broke two cups while helping.\nThanks for your help, I don't know what I'd have done without you."
+    },
+    {
+      "es": "Nos cortaron el agua el día de la inauguración.\n¡Qué detalle!",
+      "en": "They cut off our water on opening day.\nHow thoughtful!"
+    },
+    {
+      "es": "Me trajiste un tinto cuando llegué.\n¡Qué detalle! Gracias.",
+      "en": "You brought me a coffee when I arrived.\nHow thoughtful! Thanks."
+    },
+    {
+      "es": "Llegaste una hora tarde.\nGracias por tanta puntualidad.",
+      "en": "You arrived an hour late.\nThanks for being so punctual."
+    },
+    {
+      "es": "Pagué cuatro millones por el carro y no arranca.\n¡Tremendo negocio!",
+      "en": "I paid four million for the car and it won't start.\nWhat a deal!"
+    }
+  ],
+  "rule": "Sometimes the words are warm and the facts say otherwise. *¡Qué detalle!* means how thoughtful, but after bad news it means the opposite. Nothing marks it on the page: if every word makes sense and the sentence clashes with what just happened, assume irony. Among friends it is affectionate teasing; with a boss it has teeth. After a real kindness the same words are sincere (the tinto), so always check what came before. English does it too (*thanks a lot*), and Spanish loves doing it with very polite phrases.",
+  "smallPrint": "Teachers call this verbal irony: saying the opposite of what you mean.",
+  "readAndPick": [
+    {
+      "es": "Nos cortaron el agua el día de la inauguración.\n¡Qué detalle!",
+      "options": [
+        "The speaker is genuinely touched.",
+        "The speaker is being sarcastic."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me trajiste un tinto cuando llegué.\n¡Qué detalle!",
+      "options": [
+        "The speaker is genuinely touched.",
+        "The speaker is being sarcastic."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Llegaste una hora tarde.\nGracias por tanta puntualidad.",
+      "options": [
+        "The speaker is annoyed and being sarcastic.",
+        "The speaker is praising someone who was on time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Rompí dos tazas mientras ayudaba.\nGracias por tu ayuda, no sé qué habría hecho sin ti.",
+      "options": [
+        "The speaker is thankful for the help.",
+        "The speaker is not thankful at all.",
+        "The speaker is asking for more help."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pagué cuatro millones por el carro y no arranca.\n¡Tremendo negocio!",
+      "options": [
+        "The speaker got a great deal.",
+        "The speaker is joking about a bad deal."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos regalaste el pan de hoy.\nGracias por tu ayuda, no sé qué habría hecho sin ti.",
+      "options": [
+        "The speaker is being sarcastic.",
+        "The speaker is sincerely grateful.",
+        "The speaker is angry."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te aviso hoy que mañana empiezan las obras.\n¡Qué detalle avisarme con tanta anticipación!",
+      "options": [
+        "How thoughtful of you to warn me so far in advance!",
+        "I'm very happy that you warned me early.",
+        "You warned me far too late, thanks a lot."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me ayudaste a abrir el café a las seis.\n¡Qué detalle! Gracias.",
+      "options": [
+        "The speaker is genuinely touched.",
+        "The speaker is being sarcastic."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Your friend brought you a tinto when you arrived, and you mean it. Choose *¡Qué detalle!* or *¡Qué desastre!* and type the sincere reaction.",
+      "answer": "¡Qué detalle!",
+      "accept": [
+        "Qué detalle",
+        "¡Qué detalle! Gracias."
+      ],
+      "why": "*¡Qué detalle!* is how thoughtful, and here nothing clashes."
+    },
+    {
+      "prompt": "A friend warned you the night before the building work started. Say it ironically: How thoughtful of you to warn me so far in advance!",
+      "answer": "¡Qué detalle avisarme con tanta anticipación!",
+      "accept": [
+        "Qué detalle avisarme con tanta anticipación"
+      ],
+      "why": "The warm words clash with the bad timing, and that is the irony."
+    },
+    {
+      "prompt": "You broke two cups while helping. Your friend says ironically: Thanks for your help, I don't know what I'd have done without you.",
+      "answer": "Gracias por tu ayuda, no sé qué habría hecho sin ti.",
+      "accept": [
+        "Gracias por tu ayuda. No sé qué habría hecho sin ti."
+      ],
+      "why": "Over the top gratitude after a disaster signals sarcasm."
+    },
+    {
+      "prompt": "Your friend arrived an hour late. Say ironically (to a friend): Thanks for being so punctual.",
+      "answer": "Gracias por tanta puntualidad.",
+      "accept": [],
+      "why": "Praising the opposite of what happened is the whole trick."
+    },
+    {
+      "prompt": "Make it polite (to one person, *usted*): *Gracias por tu ayuda, no sé qué habría hecho sin ti.*",
+      "answer": "Gracias por su ayuda, no sé qué habría hecho sin usted.",
+      "accept": [
+        "Gracias por su ayuda. No sé qué habría hecho sin usted."
+      ],
+      "why": "*Tu* becomes *su* and *ti* becomes *usted*."
+    },
+    {
+      "prompt": "Your car won't start after you paid four million for it. Say ironically: What a deal!",
+      "answer": "¡Tremendo negocio!",
+      "accept": [
+        "Tremendo negocio"
+      ],
+      "why": "*Tremendo* is a big word for a bad deal, which makes it ironic."
+    },
+    {
+      "prompt": "Make it about two friends (you all): *Gracias por tu ayuda, no sé qué habría hecho sin ti.*",
+      "answer": "Gracias por su ayuda, no sé qué habría hecho sin ustedes.",
+      "accept": [
+        "Gracias por su ayuda. No sé qué habría hecho sin ustedes."
+      ],
+      "why": "For several people, *su* and *ustedes*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Qué un detalle!",
+      "right": "¡Qué detalle!",
+      "why": "Almost. After *qué* in an exclamation, the noun comes without *un*."
+    },
+    {
+      "wrong": "Gracias para tu ayuda.",
+      "right": "Gracias por tu ayuda.",
+      "why": "Thanks for something is *gracias por*."
+    },
+    {
+      "wrong": "No sé qué hice sin ti.",
+      "right": "No sé qué habría hecho sin ti.",
+      "why": "What I would have done is *habría hecho*, the would have form."
+    }
+  ],
+  "personal": "Think of a small disaster this week. Write the ironic thanks you would give the person responsible, with *¡Qué detalle...!* or *Gracias por...*"
+}
