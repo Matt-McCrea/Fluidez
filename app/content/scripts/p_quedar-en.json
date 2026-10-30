@@ -1,0 +1,174 @@
+{
+  "node": "p:quedar-en",
+  "hook": {
+    "line": "The lawyer arrives tomorrow and Tomás and Vale are still working out who does what. Plans like this need one small phrase: the one that says we settled it.",
+    "es": "Quedamos en vernos a las ocho en el café.",
+    "en": "We agreed to meet at eight at the café."
+  },
+  "examples": [
+    {
+      "es": "Quedamos en vernos a las ocho en el café.",
+      "en": "We agreed to meet at eight at the café."
+    },
+    {
+      "es": "Quedamos en que tú traías la torta.",
+      "en": "We agreed that you'd bring the cake. (to a friend)"
+    },
+    {
+      "es": "¿En qué quedamos?",
+      "en": "So what did we decide?"
+    },
+    {
+      "es": "Quedaron en llamar a la abogada mañana.",
+      "en": "They agreed to call the lawyer tomorrow."
+    },
+    {
+      "es": "Quedamos en que yo cocino y tú lavas los platos.",
+      "en": "We agreed that I cook and you wash the dishes. (to a friend)"
+    },
+    {
+      "es": "No quedamos en ninguna hora.",
+      "en": "We didn't agree on any time."
+    }
+  ],
+  "rule": "*Quedar en* is how two people say they settled a plan. After it comes either the dictionary form (*quedamos en vernos*) or *que* plus a full sentence (*quedamos en que yo cocino*).\n\nEnglish says *agreed to* or *agreed on*. Spanish says *en* every time. It is nearly always *we* or *they*, because it takes two people to agree.\n\n*¿En qué quedamos?* is what you say when things have got fuzzy: so what did we decide?\n\nDon't mix it up with *quedarse*, which means to stay.",
+  "smallPrint": "Teachers call this a fixed verb plus preposition. *Quedar* alone means to be left or to arrange, so the *en* is what points to the agreement.",
+  "readAndPick": [
+    {
+      "es": "Quedamos en vernos a las ocho.",
+      "options": [
+        "We agreed to meet at eight.",
+        "We stayed to see each other at eight.",
+        "We saw each other at eight."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quedaron en llamar a la abogada.",
+      "options": [
+        "We agreed to call the lawyer.",
+        "They stayed to call the lawyer.",
+        "They agreed to call the lawyer."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿En qué quedamos?",
+      "options": [
+        "What are we staying in?",
+        "So what did we decide?",
+        "Where are we meeting?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quedamos en que tú traías la torta.",
+      "options": [
+        "We agreed that you'd bring the cake.",
+        "We agreed that I'd bring the cake.",
+        "You stayed to bring the cake."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quedamos en que yo traía la torta.",
+      "options": [
+        "We agreed that you'd bring the cake.",
+        "We agreed that I'd bring the cake."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No quedamos en ninguna hora.",
+      "options": [
+        "We stayed no hours.",
+        "We didn't stay for an hour.",
+        "We didn't agree on any time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Quedamos en ir juntos?",
+      "options": [
+        "Shall we agree to go together?",
+        "Did we stay together?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quedamos en hablar después.",
+      "options": [
+        "We talked later.",
+        "We agreed to talk later.",
+        "We stayed to talk later."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *en* or *a* and type the whole sentence: Quedamos ___ vernos a las ocho en el café. (We agreed to meet at eight at the café.)",
+      "answer": "Quedamos en vernos a las ocho en el café.",
+      "accept": [],
+      "why": "Agreeing on a plan takes *en*, not *a* or *de*."
+    },
+    {
+      "prompt": "Say: We agreed to talk later.",
+      "answer": "Quedamos en hablar después.",
+      "accept": [],
+      "why": "*Quedamos en* plus the dictionary form says what you settled on."
+    },
+    {
+      "prompt": "Say: They agreed to call the lawyer tomorrow.",
+      "answer": "Quedaron en llamar a la abogada mañana.",
+      "accept": [
+        "Quedaron en llamar mañana a la abogada."
+      ],
+      "why": "*They* is *quedaron*. The verb after *en* stays in its dictionary form."
+    },
+    {
+      "prompt": "Ask a friend: So what did we decide?",
+      "answer": "¿En qué quedamos?",
+      "accept": [],
+      "why": "The question word *qué* comes right after *en*."
+    },
+    {
+      "prompt": "Say to a friend: We agreed that I cook and you wash the dishes.",
+      "answer": "Quedamos en que yo cocino y tú lavas los platos.",
+      "accept": [
+        "Quedamos en que cocino yo y lavas tú los platos."
+      ],
+      "why": "With a full sentence after the plan, use *en que* and keep both verbs in the plain present."
+    },
+    {
+      "prompt": "Make it negative: *Quedamos en hablar después.* (We didn't agree to talk later.)",
+      "answer": "No quedamos en hablar después.",
+      "accept": [],
+      "why": "Put *no* in front of *quedamos*. Everything else stays."
+    },
+    {
+      "prompt": "Turn it into a question for a friend: *Quedamos en ir juntos.* (Shall we agree to go together?)",
+      "answer": "¿Quedamos en ir juntos?",
+      "accept": [],
+      "why": "The words stay the same. Only the question marks and your voice change."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Quedamos a vernos a las ocho.",
+      "right": "Quedamos en vernos a las ocho.",
+      "why": "Almost. English says agreed to, but here Spanish uses *en*."
+    },
+    {
+      "wrong": "Nos quedamos en vernos a las ocho.",
+      "right": "Quedamos en vernos a las ocho.",
+      "why": "*Quedarse* means to stay. To agree on a plan, use plain *quedar*, with no *nos* in front."
+    },
+    {
+      "wrong": "Quedamos que tú traías la torta.",
+      "right": "Quedamos en que tú traías la torta.",
+      "why": "The *en* stays in front of *que*, even though English drops it."
+    }
+  ],
+  "personal": "Think of a plan you agreed with someone this week and say it with *quedamos en*."
+}

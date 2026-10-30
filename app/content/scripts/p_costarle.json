@@ -1,0 +1,173 @@
+{
+  "node": "p:costarle",
+  "hook": {
+    "line": "Tomás wakes up before the sun to open the café, and nothing about it is easy. Spanish has a neat way to say what is hard for you, and it works like *gustar*.",
+    "es": "Me cuesta levantarme temprano.",
+    "en": "I find it hard to get up early."
+  },
+  "examples": [
+    {
+      "es": "Me cuesta levantarme temprano.",
+      "en": "I find it hard to get up early."
+    },
+    {
+      "es": "A Tomás le cuesta hablar español rápido.",
+      "en": "Tomás finds it hard to speak Spanish fast."
+    },
+    {
+      "es": "No me cuesta nada hablar con Vale.",
+      "en": "It's no effort at all for me to talk to Vale."
+    },
+    {
+      "es": "¿Te cuesta mucho vivir aquí?",
+      "en": "Do you find it very hard to live here? (to a friend)"
+    },
+    {
+      "es": "Me costó mucho entender a Rosa.",
+      "en": "I found it really hard to understand Rosa."
+    },
+    {
+      "es": "Nos cuesta decir que no.",
+      "en": "We find it hard to say no."
+    }
+  ],
+  "rule": "To say something is hard for you, use *costar* the way you use *gustar*: the thing that is hard is the subject, and the person comes first as *me*, *te*, *le*, *nos*, *les*.\n\n*Me cuesta* + infinitive: it's hard for me to.\n*Me cuesta mucho*: really hard.\n*No me cuesta nada*: no effort at all.\n\nTo name the person, add *a*: *A Tomás le cuesta*. For something that was hard once, use *costó*: *Me costó mucho*.\n\nDon't say *yo cuesto*. And this is effort, not money: for prices, *El tinto cuesta dos mil pesos*.",
+  "smallPrint": "Teachers call *costar* here an impersonal-style verb like *gustar*: the thing that is hard is the grammatical subject.",
+  "readAndPick": [
+    {
+      "es": "Me cuesta pedir ayuda.",
+      "options": [
+        "I find it hard to ask for help.",
+        "Asking for help costs money.",
+        "He finds it hard to ask for help."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A Hernando le cuesta mucho dormir.",
+      "options": [
+        "I find it hard to sleep.",
+        "Hernando finds it very hard to sleep.",
+        "Hernando sleeps a lot."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No me cuesta nada.",
+      "options": [
+        "It costs me nothing to ask.",
+        "It's very hard for me.",
+        "It's no effort at all for me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Te cuesta mucho usar el celular?",
+      "options": [
+        "Do you find it very hard to use the phone?",
+        "Does he find it very hard to use the phone?",
+        "Do we find it very hard to use the phone?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me costó mucho entender a Rosa.",
+      "options": [
+        "I find it hard to understand Rosa.",
+        "I found it very hard to understand Rosa."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos cuesta decir que no.",
+      "options": [
+        "They find it hard to say no.",
+        "We find it hard to say no.",
+        "You find it hard to say no."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El tinto cuesta dos mil pesos.",
+      "options": [
+        "The black coffee costs two thousand pesos.",
+        "The black coffee is hard for me.",
+        "I find the black coffee hard to make."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A Vale no le cuesta nada trabajar de noche.",
+      "options": [
+        "Vale finds it very hard to work at night.",
+        "Vale finds working at night no effort at all.",
+        "I find working at night no effort at all."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Me ___ levantarme temprano.* (*cuesta* or *cuesto*) I find it hard to get up early.",
+      "answer": "Me cuesta levantarme temprano.",
+      "accept": [],
+      "why": "The hard thing is the subject, so the verb is *cuesta*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *A Tomás ___ cuesta hablar rápido.* (*le* or *me*) Tomás finds it hard to speak fast.",
+      "answer": "A Tomás le cuesta hablar rápido.",
+      "accept": [],
+      "why": "For one other person, the word before the verb is *le*."
+    },
+    {
+      "prompt": "Say: I find it hard to ask for help.",
+      "answer": "Me cuesta pedir ayuda.",
+      "accept": [],
+      "why": "*Me cuesta* plus an infinitive says it's hard for me."
+    },
+    {
+      "prompt": "Say to a friend: Do you find it very hard to live here?",
+      "answer": "¿Te cuesta mucho vivir aquí?",
+      "accept": [
+        "¿Te cuesta vivir aquí?"
+      ],
+      "why": "To a friend, the person word is *te*."
+    },
+    {
+      "prompt": "Say: We find it hard to say no.",
+      "answer": "Nos cuesta decir que no.",
+      "accept": [],
+      "why": "For we, the person word is *nos*."
+    },
+    {
+      "prompt": "Make it easy: *Me cuesta hablar con Vale.* Say it's no effort at all.",
+      "answer": "No me cuesta nada hablar con Vale.",
+      "accept": [],
+      "why": "*No me cuesta nada* says it takes no effort at all."
+    },
+    {
+      "prompt": "Make it past: *Me cuesta mucho entender a Rosa.* It was hard once.",
+      "answer": "Me costó mucho entender a Rosa.",
+      "accept": [],
+      "why": "A single moment of difficulty takes *costó*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo cuesto levantarme temprano.",
+      "right": "Me cuesta levantarme temprano.",
+      "why": "Almost. Like *gustar*, the hard thing is the subject and you come in as *me*."
+    },
+    {
+      "wrong": "Tomás cuesta hablar rápido.",
+      "right": "A Tomás le cuesta hablar rápido.",
+      "why": "Close. To name the person, add *a* and keep *le* before the verb."
+    },
+    {
+      "wrong": "Me cuestan hablar español.",
+      "right": "Me cuesta hablar español.",
+      "why": "An infinitive counts as one thing, so the verb stays *cuesta*."
+    }
+  ],
+  "personal": "Say one thing that is hard for you and one that is no effort at all: *Me cuesta…* and *No me cuesta nada…*."
+}

@@ -1,0 +1,182 @@
+{
+  "node": "x:relative-ind-subj",
+  "hook": {
+    "line": "Two sentences that differ by one vowel can mean two different searches: one for a place you've seen, one for a place that may not exist. Vale and Tomás keep swapping them, and the landlords keep answering the wrong question.",
+    "es": "Busco un local que tenga cocina.",
+    "en": "I'm looking for a place that has a kitchen."
+  },
+  "examples": [
+    {
+      "es": "Busco el local que tiene cocina.",
+      "en": "I'm looking for the place that has a kitchen."
+    },
+    {
+      "es": "Busco un local que tenga cocina.",
+      "en": "I'm looking for a place that has a kitchen."
+    },
+    {
+      "es": "Hay un café que abre a las seis.",
+      "en": "There's a café that opens at six."
+    },
+    {
+      "es": "¿Hay un café que abra a las cuatro?",
+      "en": "Is there a café that opens at four?"
+    },
+    {
+      "es": "Hernando conoce a un señor que vive en Santa Marta.",
+      "en": "Hernando knows a man who lives in Santa Marta."
+    },
+    {
+      "es": "¿Conoces a alguien que viva en Santa Marta?",
+      "en": "Do you know anyone who lives in Santa Marta? (to a friend)"
+    },
+    {
+      "es": "No conozco a nadie que viva allá.",
+      "en": "I don't know anyone who lives there."
+    }
+  ],
+  "rule": "The two sentences share every word except the verb ending, so the ending does the work.\n\n*Busco el local que tiene cocina.* The place is real and you know it.\n*Busco un local que tenga cocina.* Any place like that, if one exists.\n\nA quick test: can you point at it? Yes, ordinary ending (*tiene*, *abre*, *vive*). No, or you're not sure, or you're asking whether it exists, or the answer is *nadie* or *ningún*: wish ending (*tenga*, *abra*, *viva*).\n\nThe article helps (*el* leans real, *un* leans open) but it doesn't decide. The verb does.\n\nEnglish has no switch here. *A place that has a kitchen* covers both. In Spanish you must choose, and a question like *¿Hay alguien que…?* almost always takes the wish ending.",
+  "smallPrint": "Teachers call this the indicative versus subjunctive contrast in relative clauses: indicative for a known antecedent, subjunctive for an unknown or non-existent one.",
+  "readAndPick": [
+    {
+      "es": "Busco el local que tiene cocina.",
+      "options": [
+        "I'm looking for the place that has a kitchen (I know the one).",
+        "I'm looking for a place that has a kitchen (any one, if it exists)."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Busco un local que tenga cocina.",
+      "options": [
+        "I'm looking for the place that has a kitchen (I know the one).",
+        "I'm looking for a place that has a kitchen (any one, if it exists)."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hay un café que abre a las seis.",
+      "options": [
+        "There's a café that opens at six.",
+        "Is there a café that opens at six?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Hay un café que abra a las cuatro?",
+      "options": [
+        "There's a café that opens at four.",
+        "Is there a café that opens at four?",
+        "There's no café that opens at four."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando conoce a un señor que vive en Santa Marta.",
+      "options": [
+        "Hernando knows a man who lives in Santa Marta.",
+        "Hernando wants to know a man who lives in Santa Marta."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Conoces a alguien que viva en Santa Marta?",
+      "options": [
+        "Do you know someone who lives in Santa Marta? (to a friend, I'm not sure anyone does)",
+        "Do you know the man who lives in Santa Marta? (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No conozco a nadie que viva allá.",
+      "options": [
+        "I don't know anyone who lives there.",
+        "I know someone who lives there."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quiero el apartamento que tiene balcón.",
+      "options": [
+        "I want the apartment that has a balcony (I know the one).",
+        "I want an apartment that has a balcony (any one)."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quiero un apartamento que tenga balcón.",
+      "options": [
+        "I want the apartment that has a balcony (I know the one).",
+        "I want an apartment that has a balcony (any one)."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *tiene* or *tenga* and type the whole sentence: *Busco el local que ___ cocina.* (I'm looking for the place that has a kitchen, the one I saw yesterday.)",
+      "answer": "Busco el local que tiene cocina.",
+      "accept": [],
+      "why": "You saw it, so it is real and the verb is ordinary: *tiene*."
+    },
+    {
+      "prompt": "Pick *abre* or *abra* and type the whole sentence: *¿Hay un café que ___ a las cuatro?* (Is there a café that opens at four?)",
+      "answer": "¿Hay un café que abra a las cuatro?",
+      "accept": [],
+      "why": "You're asking whether one exists, so the wish ending: *abra*."
+    },
+    {
+      "prompt": "Say: There's a café that opens at six.",
+      "answer": "Hay un café que abre a las seis.",
+      "accept": [],
+      "why": "You're stating that it exists, so the ordinary ending: *abre*."
+    },
+    {
+      "prompt": "Say: Do you know anyone who lives in Santa Marta? (to a friend)",
+      "answer": "¿Conoces a alguien que viva en Santa Marta?",
+      "accept": [],
+      "why": "You don't know if such a person exists, so *viva*."
+    },
+    {
+      "prompt": "Say: I want an apartment that has a balcony. (any one)",
+      "answer": "Quiero un apartamento que tenga balcón.",
+      "accept": [],
+      "why": "Any apartment that fits will do, so *tenga*."
+    },
+    {
+      "prompt": "Switch from the known place to any place: *Busco el local que tiene cocina.*",
+      "answer": "Busco un local que tenga cocina.",
+      "accept": [],
+      "why": "Changing *el* to *un* and *tiene* to *tenga* turns a known place into any place."
+    },
+    {
+      "prompt": "Make it negative: *Hernando conoce a un señor que vive en Santa Marta.* Say: Hernando doesn't know anyone who lives in Santa Marta.",
+      "answer": "Hernando no conoce a nadie que viva en Santa Marta.",
+      "accept": [],
+      "why": "With *nadie* there is no real person, so *viva*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Conoces a alguien que vive allá?",
+      "right": "¿Conoces a alguien que viva allá?",
+      "why": "Almost. You're asking whether anyone does, so the wish ending: *viva*."
+    },
+    {
+      "wrong": "Hernando conoce a un señor que viva en Santa Marta.",
+      "right": "Hernando conoce a un señor que vive en Santa Marta.",
+      "why": "Almost. The man exists and Hernando knows him, so the ordinary ending: *vive*."
+    },
+    {
+      "wrong": "Busco el local que tenga cocina.",
+      "right": "Busco el local que tiene cocina.",
+      "why": "Almost. If you mean one particular place you know, use the ordinary ending: *tiene*."
+    },
+    {
+      "wrong": "Hay un café que abra a las seis.",
+      "right": "Hay un café que abre a las seis.",
+      "why": "Almost. You're saying it exists, so *abre*. Save *abra* for asking if it exists."
+    }
+  ],
+  "personal": "Write two lines about a place you know and a place you'd like. Start the first with *Conozco un lugar que…* and the second with *Quiero un lugar que…*."
+}

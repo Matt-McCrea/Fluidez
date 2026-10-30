@@ -1,0 +1,178 @@
+{
+ "node": "p:llegar-a-tiempo",
+ "hook": {
+  "line": "Buses, fog and traffic jams: running late is part of life in Bogotá. You will want to say whether you arrived on time, early or late, and whether the schedule slipped.",
+  "es": "Por suerte llegamos a tiempo.",
+  "en": "Luckily we arrived on time."
+ },
+ "examples": [
+  {
+   "es": "Por suerte llegamos a tiempo.",
+   "en": "Luckily we arrived on time."
+  },
+  {
+   "es": "Llegué tarde a la reunión.",
+   "en": "I arrived late for the meeting."
+  },
+  {
+   "es": "El vuelo salió con retraso por la niebla.",
+   "en": "The flight left late because of the fog."
+  },
+  {
+   "es": "¿Llegaste temprano?",
+   "en": "Did you arrive early? (informal)"
+  },
+  {
+   "es": "El bus llegó retrasado.",
+   "en": "The bus arrived late."
+  },
+  {
+   "es": "Hernando siempre llega puntual.",
+   "en": "Hernando always arrives on time."
+  }
+ ],
+ "rule": "With *llegar*: *a tiempo* is on time, *temprano* is early, *tarde* is late. English \"in time\" becomes *a tiempo*.\n\n*Temprano* and *tarde* never change for a man or a woman.\n\nWhen the schedule slips, say *con retraso* or *retrasado*: *el vuelo salió con retraso*. A person who is always on time is *puntual*.\n\nRushing is a different idea: for that, Colombians say *estoy de afán*.",
+ "smallPrint": "Teachers call *temprano* and *tarde* adverbs of time, so they do not agree with the person.",
+ "readAndPick": [
+  {
+   "es": "Llegamos a tiempo.",
+   "options": [
+    "We arrived late.",
+    "We arrived on time.",
+    "We arrived early."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Llegué tarde a la reunión.",
+   "options": [
+    "I arrived early for the meeting.",
+    "I arrived on time for the meeting.",
+    "I arrived late for the meeting."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Ella llegó temprano.",
+   "options": [
+    "She arrived early.",
+    "She arrived late.",
+    "She will arrive early."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "El vuelo salió con retraso.",
+   "options": [
+    "The flight left on time.",
+    "The flight left late.",
+    "The flight was cancelled."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "El bus llegó retrasado.",
+   "options": [
+    "The bus arrived early.",
+    "The bus didn't arrive.",
+    "The bus arrived late."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "¿Llegaste a tiempo?",
+   "options": [
+    "Did you arrive on time?",
+    "Did you arrive late?",
+    "Did he arrive on time?"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Hernando siempre llega puntual.",
+   "options": [
+    "Hernando never arrives on time.",
+    "Hernando always arrives on time.",
+    "Hernando always arrives late."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Salimos temprano para llegar a tiempo.",
+   "options": [
+    "We left late to arrive on time.",
+    "We left on time to arrive early.",
+    "We left early to arrive on time."
+   ],
+   "answer": 2
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick and type the whole sentence: *Por suerte llegamos ___.* (*a tiempo* or *de tiempo*) Luckily we arrived on time.",
+   "answer": "Por suerte llegamos a tiempo.",
+   "accept": [],
+   "why": "On time is *a tiempo*."
+  },
+  {
+   "prompt": "Pick and type the whole sentence: *El vuelo salió ___ retraso.* (*con* or *en*) The flight left late.",
+   "answer": "El vuelo salió con retraso.",
+   "accept": [],
+   "why": "A late schedule is *con retraso*."
+  },
+  {
+   "prompt": "Say: I arrived late for the meeting.",
+   "answer": "Llegué tarde a la reunión.",
+   "accept": [
+    "Yo llegué tarde a la reunión."
+   ],
+   "why": "*Llegué* is the *I* form and *tarde* means late."
+  },
+  {
+   "prompt": "Ask a friend: Did you arrive early?",
+   "answer": "¿Llegaste temprano?",
+   "accept": [
+    "¿Tú llegaste temprano?"
+   ],
+   "why": "*Llegaste* is the informal *you* in the past, and *temprano* means early."
+  },
+  {
+   "prompt": "Say: The bus arrived late.",
+   "answer": "El bus llegó retrasado.",
+   "accept": [
+    "El bus llegó con retraso."
+   ],
+   "why": "A bus runs on a schedule, so *retrasado* or *con retraso* fits."
+  },
+  {
+   "prompt": "Turn it to early: *Llegué tarde a la reunión.*",
+   "answer": "Llegué temprano a la reunión.",
+   "accept": [],
+   "why": "Swap *tarde* for *temprano* and nothing else changes."
+  },
+  {
+   "prompt": "Make it negative: *Llegamos a tiempo.*",
+   "answer": "No llegamos a tiempo.",
+   "accept": [],
+   "why": "*No* goes in front of the verb."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Llegué en tiempo.",
+   "right": "Llegué a tiempo.",
+   "why": "English says \"in time\", but Spanish says *a tiempo*."
+  },
+  {
+   "wrong": "Llegué tardo a la reunión.",
+   "right": "Llegué tarde a la reunión.",
+   "why": "*Tarde* says how you arrived and never changes: no *-o*, no *-a*."
+  },
+  {
+   "wrong": "Ella llegó temprana.",
+   "right": "Ella llegó temprano.",
+   "why": "*Temprano* here is an adverb, so it stays the same for a woman."
+  }
+ ],
+ "personal": "Say whether you usually arrive on time, early or late: *Siempre llego…* or *Casi nunca llego…*."
+}

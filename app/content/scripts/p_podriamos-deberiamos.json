@@ -1,0 +1,44 @@
+{
+  "node": "p:podriamos-deberiamos",
+  "hook": {
+    "line": "When you plan something with other people, how hard you push matters. \"We could\" offers, \"we should\" nudges, and \"we have to\" leaves no room.",
+    "es": "Podríamos ir a la montaña.",
+    "en": "We could go to the mountains."
+  },
+  "examples": [
+    { "es": "Podríamos ir a la montaña.", "en": "We could go to the mountains." },
+    { "es": "Podríamos abrir más temprano.", "en": "We could open earlier." },
+    { "es": "Deberíamos hablar con él.", "en": "We should talk to him." },
+    { "es": "Deberíamos escribir un plan.", "en": "We should write a plan." },
+    { "es": "Tenemos que salir ya.", "en": "We have to leave now." },
+    { "es": "No deberíamos firmar hoy.", "en": "We shouldn't sign today." }
+  ],
+  "rule": "Three verbs, three strengths. All of them are followed by a plain infinitive.\n\n*Podríamos* + infinitive: \"we could\". It puts an option on the table and leaves the choice open.\n\n*Deberíamos* + infinitive: \"we should\". It is advice with a nudge.\n\n*Tenemos que* + infinitive: \"we have to\". It is close to an order.\n\nThe softer ones end in *-íamos*, the ending that says \"we would\". They are not interchangeable: offering *podríamos* and pushing *deberíamos* send different messages, so pick the one that matches how sure you are.",
+  "smallPrint": "Teachers call *podríamos* and *deberíamos* the conditional of *poder* and *deber*.",
+  "readAndPick": [
+    { "es": "Podríamos ir a la montaña.", "options": ["We could go to the mountains.", "We should go to the mountains.", "We have to go to the mountains."], "answer": 0 },
+    { "es": "Deberíamos hablar con él.", "options": ["We could talk to him.", "We have to talk to him.", "We should talk to him."], "answer": 2 },
+    { "es": "Tenemos que salir ya.", "options": ["We should leave now.", "We have to leave now.", "We could leave now."], "answer": 1 },
+    { "es": "Podríamos abrir más temprano.", "options": ["We have to open earlier.", "We should open earlier.", "We could open earlier."], "answer": 2 },
+    { "es": "No deberíamos firmar hoy.", "options": ["We shouldn't sign today.", "We don't have to sign today.", "We can't sign today."], "answer": 0 },
+    { "es": "Deberíamos escribir un plan.", "options": ["We could write a plan.", "We should write a plan.", "We wrote a plan."], "answer": 1 },
+    { "es": "¿Qué podríamos hacer?", "options": ["What did we do?", "What should we do?", "What could we do?"], "answer": 2 },
+    { "es": "Tenemos que encontrar a Joaquín.", "options": ["We have to find Joaquín.", "We could find Joaquín.", "We should find Joaquín."], "answer": 0 },
+    { "es": "Podríamos buscar otro lugar.", "options": ["We should look for another place.", "We could look for another place.", "We have to look for another place."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *Podríamos* or *Tenemos que* and type the whole sentence, as a gentle option: *___ ir a la montaña.*", "answer": "Podríamos ir a la montaña.", "accept": [], "why": "*Podríamos* offers an option; *tenemos que* would be an order." },
+    { "prompt": "Type in Spanish: We should talk to him.", "answer": "Deberíamos hablar con él.", "accept": [], "why": "*Deberíamos* is the \"should\" of advice." },
+    { "prompt": "Type in Spanish: We have to leave now.", "answer": "Tenemos que salir ya.", "accept": ["Tenemos que salir ahora."], "why": "*Tenemos que* is the firmest of the three." },
+    { "prompt": "Type in Spanish: We could open earlier.", "answer": "Podríamos abrir más temprano.", "accept": [], "why": "*Podríamos* plus the infinitive *abrir*." },
+    { "prompt": "Make it negative: *Deberíamos firmar hoy.* Say: We shouldn't sign today.", "answer": "No deberíamos firmar hoy.", "accept": ["Hoy no deberíamos firmar."], "why": "Put *no* in front of *deberíamos*." },
+    { "prompt": "Type in Spanish: What could we do?", "answer": "¿Qué podríamos hacer?", "accept": [], "why": "*Podríamos* works in a question just as in English." },
+    { "prompt": "Type in Spanish: We should write a plan.", "answer": "Deberíamos escribir un plan.", "accept": [], "why": "*Deberíamos* plus the infinitive *escribir*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Podríamos a ir a la montaña.", "right": "Podríamos ir a la montaña.", "why": "Almost. These verbs go straight into the infinitive, with no *a* and no *que*." },
+    { "wrong": "Deberíamos que hablar con él.", "right": "Deberíamos hablar con él.", "why": "Almost. Only *tenemos que* has *que*; *deberíamos* does not." },
+    { "wrong": "Tenemos hablar con él.", "right": "Tenemos que hablar con él.", "why": "Almost. \"We have to\" needs *que* before the infinitive." }
+  ],
+  "personal": "Suggest something to do this weekend with a friend, choosing *podríamos* to offer it or *deberíamos* to push it."
+}

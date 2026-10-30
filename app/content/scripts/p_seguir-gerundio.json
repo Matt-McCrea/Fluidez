@@ -1,0 +1,43 @@
+{
+  "node": "p:seguir-gerundio",
+  "hook": {
+    "line": "Sooner or later someone in Bogotá asks if you are *still* doing something: still living here, still waiting, still studying. English says *still* and moves on. Spanish has a small verb for it.",
+    "es": "Sigo trabajando en el café.",
+    "en": "I'm still working at the café."
+  },
+  "examples": [
+    { "es": "Sigo trabajando en el café.", "en": "I'm still working at the café." },
+    { "es": "¿Sigues viviendo en Chapinero?", "en": "Do you still live in Chapinero? (to a friend)" },
+    { "es": "Sigue lloviendo en Bogotá.", "en": "It's still raining in Bogotá." },
+    { "es": "Seguimos esperando la respuesta.", "en": "We're still waiting for the answer." },
+    { "es": "Hernando sigue contando la misma historia.", "en": "Hernando still tells the same story." },
+    { "es": "Sigo sin entender el contrato.", "en": "I still don't understand the contract." }
+  ],
+  "rule": "To say you *keep on* or are *still* doing something, use *seguir* plus the *-ndo* form: *sigo trabajando*, *sigues viviendo*, *seguimos esperando*. English puts *still* in front of an ordinary verb; Spanish changes the verb to *seguir* and the action goes into *-ndo*.\n\nNever use the plain infinitive after it: not *sigo trabajar*.\n\n*Seguir* changes its stem: *sigo, sigues, sigue, seguimos, siguen*.\n\nTo say you still *don't* do something, use *sigo sin* plus the infinitive: *sigo sin entender*.",
+  "smallPrint": "Teachers call this a verbal periphrasis of continuation: *seguir* plus a gerund. *Continuar* works the same way, a little more formally.",
+  "readAndPick": [
+    { "es": "Sigo trabajando en el café.", "options": ["I'm still working at the café.", "I'm going to work at the café.", "I stopped working at the café."], "answer": 0 },
+    { "es": "¿Sigues viviendo en Chapinero?", "options": ["Did you live in Chapinero?", "Do you still live in Chapinero?", "Will you live in Chapinero?"], "answer": 1 },
+    { "es": "Seguimos esperando la respuesta.", "options": ["We waited for the answer.", "We will wait for the answer.", "We're still waiting for the answer."], "answer": 2 },
+    { "es": "Sigue lloviendo en Bogotá.", "options": ["It's still raining in Bogotá.", "It rained in Bogotá.", "It's about to rain in Bogotá."], "answer": 0 },
+    { "es": "Sigo sin entender el contrato.", "options": ["I understood the contract.", "I still don't understand the contract.", "I'm about to understand the contract."], "answer": 1 },
+    { "es": "Los vecinos siguen hablando de Altamira.", "options": ["The neighbours talked about Altamira.", "The neighbours want to talk about Altamira.", "The neighbours are still talking about Altamira."], "answer": 2 },
+    { "es": "Simón sigue gritando.", "options": ["Simón is still screaming.", "Simón screamed once.", "Simón stopped screaming."], "answer": 0 },
+    { "es": "Tomás sigue sin dormir bien.", "options": ["Tomás is sleeping well now.", "Tomás still isn't sleeping well.", "Tomás slept well last night."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Sigo ___ en el café.* (*trabajar* or *trabajando*) I still work at the café.", "answer": "Sigo trabajando en el café.", "accept": ["Yo sigo trabajando en el café."], "why": "After *seguir* the action goes into *-ndo*, never the infinitive." },
+    { "prompt": "Pick and type the whole sentence: *¿Sigues ___ en Chapinero?* (*vivir* or *viviendo*) Do you still live in Chapinero? (to a friend)", "answer": "¿Sigues viviendo en Chapinero?", "accept": ["¿Tú sigues viviendo en Chapinero?"], "why": "*Seguir* plus *-ndo* is the whole \"still\" idea." },
+    { "prompt": "Say: It's still raining in Bogotá.", "answer": "Sigue lloviendo en Bogotá.", "accept": [], "why": "Weather has no subject, so *seguir* takes its *he, she, it* form: *sigue*." },
+    { "prompt": "Say: We're still waiting for the answer.", "answer": "Seguimos esperando la respuesta.", "accept": ["Nosotros seguimos esperando la respuesta."], "why": "*Seguimos* is the *we* form, and *esperando* is the *-ndo* form of *esperar*." },
+    { "prompt": "Say: Hernando still tells the same story.", "answer": "Hernando sigue contando la misma historia.", "accept": [], "why": "One person, so *sigue*, then the *-ndo* form of *contar*." },
+    { "prompt": "Turn it into \"I still don't\": *No entiendo el contrato.* Say you still don't understand the contract.", "answer": "Sigo sin entender el contrato.", "accept": ["Yo sigo sin entender el contrato."], "why": "For \"still not\", Spanish uses *sigo sin* plus the infinitive." },
+    { "prompt": "Make it about Simón: *Sigo gritando.* Say Simón is still screaming.", "answer": "Simón sigue gritando.", "accept": [], "why": "A new person means a new *seguir* form: *sigue*. The *-ndo* part never changes." }
+  ],
+  "pitfalls": [
+    { "wrong": "Sigo trabajar en el café.", "right": "Sigo trabajando en el café.", "why": "Almost. After *seguir* Spanish wants the *-ndo* form, not the infinitive." },
+    { "wrong": "Sigo no entendiendo el contrato.", "right": "Sigo sin entender el contrato.", "why": "For \"still not\", swap *no* for *sin* and use the infinitive." },
+    { "wrong": "Sigo a trabajar en el café.", "right": "Sigo trabajando en el café.", "why": "No *a* is needed. The *-ndo* form carries the whole idea." }
+  ],
+  "personal": "Write two true lines about what you are still doing: one that says what you are still doing in your life, like *Sigo estudiando español*, and one with *sigo sin* for something you still haven't managed."
+}

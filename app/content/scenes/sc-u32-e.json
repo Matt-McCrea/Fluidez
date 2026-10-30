@@ -1,0 +1,227 @@
+{
+  "id": "sc-u32-e",
+  "unit": "u32",
+  "title": "A loan for the café",
+  "spare": true,
+  "brief": "You're Tomás at the bank, asking about a loan for the café. The loan officer is a stranger, so use usted. Explain what you need the money for, ask for clarification and say what you'll do next.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días. Dígame, ¿en qué le puedo ayudar?",
+      "npcEn": "Good morning. Tell me, how can I help you?",
+      "intent": "Greet her and say you want to ask for a loan for the café.",
+      "accept": [
+        "Buenos días. Quiero pedir un préstamo para el café.",
+        "Buenos días, señora. Vengo a pedir un préstamo.",
+        "Hola. Necesito un préstamo para mi café."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "préstamo",
+          "label": "say préstamo (loan)"
+        }
+      ],
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Con gusto. ¿Para qué lo va a usar?",
+      "npcEn": "Gladly. And what will you use it for?",
+      "intent": "Say you need it so that the café can stay open this winter.",
+      "accept": [
+        "Lo necesito para que el café siga abierto este invierno.",
+        "Es para que el café siga abierto durante la temporada de lluvias.",
+        "Lo necesito para que mi café siga abierto."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "para que",
+          "label": "after para que (so that), the verb changes: siga"
+        }
+      ],
+      "focus": "g:subj-purpose-full",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Entiendo. Le recomiendo que presente un presupuesto. Otra persona tiene que firmar con usted.",
+      "npcEn": "I see. I recommend that you present a budget. Another person has to sign with you.",
+      "intent": "Politely ask whether she'd mind explaining why you need another person.",
+      "accept": [
+        "¿Le importaría explicarme por qué necesito a otra persona?",
+        "Perdone, ¿le importaría explicarme por qué tiene que firmar otra persona?",
+        "¿Le importaría explicarlo más despacio? Quiero entenderlo bien."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "le importar[ií]a",
+          "flags": "i",
+          "label": "ask politely: ¿le importaría + infinitive?"
+        }
+      ],
+      "focus": "p:te-importaria-inf",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Es para que el banco pueda cobrar si algo sale mal. ¿Tiene a alguien?",
+      "npcEn": "It's so that the bank can collect if something goes wrong. Do you have someone?",
+      "intent": "Say you have nobody right now, but you plan to talk to a friend.",
+      "accept": [
+        "No tengo a nadie, pero pienso hablar con un amigo.",
+        "Ahora no tengo a nadie. Pienso pedirle ayuda a Hernando.",
+        "No tengo familia aquí, pero pienso hablar con mi socia."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "verbFormAny",
+          "inf": "pensar",
+          "tense": "presente",
+          "label": "use pensar + infinitive: pienso pedir"
+        }
+      ],
+      "focus": "p:pensar-inf",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Muy bien. Cuando encuentre a esa persona, traiga los papeles y le damos una respuesta en una semana.",
+      "npcEn": "Very good. When you find that person, bring the papers and we'll give you an answer in a week.",
+      "intent": "Thank her and say you'll come back when you find that person.",
+      "accept": [
+        "Muchas gracias. Vuelvo cuando encuentre a esa persona.",
+        "Gracias, señora. Cuando tenga todos los papeles, vuelvo.",
+        "Perfecto. Muchas gracias. Vuelvo cuando tenga todo listo."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "cuando",
+          "label": "after cuando, talking about the future, the verb changes: tenga"
+        }
+      ],
+      "focus": "g:subj-cuando-future",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:con-mucho-gusto",
+    "c:en-que-le-puedo-servir",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hola-buenos-dias",
+    "c:mas-despacio",
+    "c:puedo",
+    "c:quiero",
+    "c:siga",
+    "c:tengo",
+    "c:tienes",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:para-que",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-influence",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:ahora",
+    "l:amigo",
+    "l:aquí",
+    "l:ayuda",
+    "l:ayudar",
+    "l:banco",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:cobrar",
+    "l:dar",
+    "l:decir",
+    "l:despacio",
+    "l:día",
+    "l:encontrar",
+    "l:entender",
+    "l:explicar",
+    "l:familia",
+    "l:firmar",
+    "l:gusto",
+    "l:hablar",
+    "l:importar",
+    "l:invierno",
+    "l:ir",
+    "l:listo",
+    "l:lluvia",
+    "l:mal",
+    "l:necesitar",
+    "l:papel",
+    "l:pedir",
+    "l:pensar",
+    "l:perdonar",
+    "l:perfecto",
+    "l:persona",
+    "l:poder",
+    "l:presentar",
+    "l:presupuesto",
+    "l:préstamo",
+    "l:querer",
+    "l:qué",
+    "l:recomendar",
+    "l:respuesta",
+    "l:salir",
+    "l:seguir",
+    "l:semana",
+    "l:ser",
+    "l:señora",
+    "l:socio",
+    "l:temporada",
+    "l:tener",
+    "l:traer",
+    "l:usar",
+    "l:venir",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:durar-durante",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pensar-en",
+    "p:pensar-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:te-importaria",
+    "p:te-importaria-inf"
+  ]
+}

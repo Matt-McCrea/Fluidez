@@ -1,0 +1,166 @@
+{
+  "node": "p:recien-participio",
+  "hook": {
+    "line": "Every real-estate ad in Bogotá says the same thing: recién pintado, recién remodelado. The word *recién* tells you how fresh something is, and it's also how Latin Americans say they just arrived.",
+    "es": "El apartamento está recién pintado.",
+    "en": "The apartment has just been painted."
+  },
+  "examples": [
+    {
+      "es": "El apartamento está recién pintado.",
+      "en": "The apartment has just been painted."
+    },
+    {
+      "es": "Las paredes están recién pintadas.",
+      "en": "The walls have just been painted."
+    },
+    {
+      "es": "El pan está recién hecho.",
+      "en": "The bread is freshly made."
+    },
+    {
+      "es": "Los recién casados se fueron a Cartagena.",
+      "en": "The newlyweds went to Cartagena."
+    },
+    {
+      "es": "Es un recién nacido.",
+      "en": "He's a newborn baby."
+    },
+    {
+      "es": "Recién llegué.",
+      "en": "I've only just arrived."
+    }
+  ],
+  "rule": "*Recién* means just now. Put it before a participle and you get a fresh result: *recién pintado*, *recién hecho*, *recién llegado*.\n\nThe participle still agrees with what it describes: *el apartamento está recién pintado*, *las paredes están recién pintadas*.\n\nBefore a noun it can name people: *los recién casados* (the newlyweds), *un recién nacido* (a newborn).\n\nLatin Americans also put *recién* before an ordinary past verb: *Recién llegué.* I just arrived. The preterite is the usual tense there.",
+  "smallPrint": "Teachers call *recién* here an adverb of recent time; in Spain it appears only before participles.",
+  "readAndPick": [
+    {
+      "es": "El apartamento está recién pintado.",
+      "options": [
+        "The apartment has just been painted.",
+        "The apartment needs painting."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las paredes están recién pintadas.",
+      "options": [
+        "The wall has just been painted.",
+        "The walls have just been painted."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El pan está recién hecho.",
+      "options": [
+        "The bread was made a week ago.",
+        "The bread is freshly made.",
+        "The bread is almost done."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Recién llegué.",
+      "options": [
+        "I arrived a long time ago.",
+        "I've only just arrived.",
+        "I'm about to arrive."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Recién llegamos a Bogotá.",
+      "options": [
+        "We've only just arrived in Bogotá.",
+        "I've only just arrived in Bogotá."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los recién casados se fueron a Cartagena.",
+      "options": [
+        "The newlyweds went to Cartagena.",
+        "The old friends went to Cartagena."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El café está recién hecho.",
+      "options": [
+        "The coffee is freshly made.",
+        "The coffee is cold."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es un recién nacido.",
+      "options": [
+        "He's a newborn baby.",
+        "He's a grown man."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *pintado* or *pintada* and type the whole sentence: *La cocina está recién ___.* (The kitchen has just been painted.)",
+      "answer": "La cocina está recién pintada.",
+      "accept": [],
+      "why": "*Cocina* is feminine, so the participle ends in *-a*."
+    },
+    {
+      "prompt": "Pick *hecho* or *hecha* and type the whole sentence: *El pan está recién ___.* (The bread is freshly made.)",
+      "answer": "El pan está recién hecho.",
+      "accept": [],
+      "why": "*Pan* is masculine, so *hecho*."
+    },
+    {
+      "prompt": "Say: The walls have just been painted.",
+      "answer": "Las paredes están recién pintadas.",
+      "accept": [],
+      "why": "*Paredes* is plural and feminine, so *pintadas*."
+    },
+    {
+      "prompt": "Say: I've only just arrived.",
+      "answer": "Recién llegué.",
+      "accept": [],
+      "why": "With an ordinary verb, *recién* goes before the preterite."
+    },
+    {
+      "prompt": "Say: We've only just arrived in Bogotá.",
+      "answer": "Recién llegamos a Bogotá.",
+      "accept": [],
+      "why": "Same pattern, now with *we*: *llegamos*."
+    },
+    {
+      "prompt": "Say: The coffee is freshly made.",
+      "answer": "El café está recién hecho.",
+      "accept": [],
+      "why": "*Recién* plus the participle, matching *café*, which is masculine."
+    },
+    {
+      "prompt": "Make it plural: *El apartamento está recién pintado.* Say: The apartments have just been painted.",
+      "answer": "Los apartamentos están recién pintados.",
+      "accept": [],
+      "why": "Everything agrees: *los*, *apartamentos*, *están*, *pintados*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La cocina está recién pintado.",
+      "right": "La cocina está recién pintada.",
+      "why": "Almost. The participle matches the noun: *cocina* is feminine, so *pintada*."
+    },
+    {
+      "wrong": "Recién llego.",
+      "right": "Recién llegué.",
+      "why": "Almost. To say you just arrived, use the past: *recién llegué*."
+    },
+    {
+      "wrong": "Las paredes están recién pintados.",
+      "right": "Las paredes están recién pintadas.",
+      "why": "Almost. *Paredes* is feminine plural, so *pintadas*."
+    }
+  ],
+  "personal": "Say one thing you did just now or very recently, starting with *Recién…* (for example *Recién llegué* or *Recién comí*)."
+}

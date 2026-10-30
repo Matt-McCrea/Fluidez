@@ -248,6 +248,29 @@ export function markFailed(id: string, msg: string, opts: { dir?: string; now?: 
 }
 
 /** Give leases back without counting an attempt (usage limits, aborted runs). */
+/**
+ * Carry `done` marks from another jobs.jsonl (the local side of a conflicted merge) onto the current queue.
+ * Only pending/running jobs are promoted; failed jobs and unknown ids are left alone.
+ */
+export function mergeDone(file: string, opts: { dir?: string } = {}): string[] {
+  const theirs = new Map<string, Job>();
+  for (const line of readFileSync(file, 'utf8').split('\n')) {
+    if (!line.trim()) continue;
+    const r = Job.safeParse(JSON.parse(line));
+    if (r.success && r.data.status === 'done') theirs.set(r.data.id, r.data);
+  }
+  return mutate(opts.dir ?? queueDir(), (jobs) => {
+    const out: string[] = [];
+    for (const j of jobs) {
+      const t = theirs.get(j.id);
+      if (!t || j.status === 'done' || j.status === 'failed') continue;
+      j.status = 'done'; delete j.lease; delete j.lastError; j.updatedAt = t.updatedAt;
+      out.push(j.id);
+    }
+    return out;
+  });
+}
+
 export function release(sel: { ids?: string[]; by?: string }, opts: { dir?: string; now?: number } = {}): string[] {
   return mutate(opts.dir ?? queueDir(), (jobs) => {
     const out: string[] = [];
@@ -427,6 +450,10 @@ export function main(argv: string[]): number {
       if (!rest[0]) throw new Error('usage: done <id>');
       for (const id of rest) out(`done ${markDone(id, { dir }).id}`);
       return 0;
+    case 'merge-done':
+      if (!rest[0]) throw new Error('usage: merge-done <other-jobs.jsonl>');
+      out(`merged done: ${mergeDone(rest[0], { dir }).join(' ') || '(none)'}`);
+      return 0;
     case 'fail': {
       const file = flag(rest, 'msg-file');
       const [id, ...msg] = rest;
@@ -475,7 +502,7 @@ export function main(argv: string[]): number {
       return r.ok ? 0 : 3;
     }
     default:
-      out('usage: queue.ts status|next --n N|done <id>|fail <id> <msg>|release <id...>|requeue-stale|add <json>|retry <id>|show <id>|burn-lock <action>');
+      out('usage: queue.ts status|merge-done <file>|next --n N|done <id>|fail <id> <msg>|release <id...>|requeue-stale|add <json>|retry <id>|show <id>|burn-lock <action>');
       return cmd ? 1 : 0;
   }
 }

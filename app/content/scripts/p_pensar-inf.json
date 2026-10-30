@@ -1,0 +1,173 @@
+{
+  "node": "p:pensar-inf",
+  "hook": {
+    "line": "Everyone keeps asking Tomás what he is going to do with the café. He has to answer without sounding like he has already decided, or like he has no idea. Spanish has a few steps between those two.",
+    "es": "No pienso vender el café.",
+    "en": "I have no intention of selling the café."
+  },
+  "examples": [
+    {
+      "es": "Pienso abrir el café a las siete.",
+      "en": "I plan to open the café at seven."
+    },
+    {
+      "es": "¿Piensas ir a la reunión?",
+      "en": "Are you planning to go to the meeting? (to a friend)"
+    },
+    {
+      "es": "Estoy pensando en cambiar el menú.",
+      "en": "I'm thinking about changing the menu."
+    },
+    {
+      "es": "No pienso firmar nada.",
+      "en": "I have no intention of signing anything."
+    },
+    {
+      "es": "Tengo la intención de hablar con la abogada.",
+      "en": "I intend to talk to the lawyer."
+    },
+    {
+      "es": "¿Estás pensando en vender el café?",
+      "en": "Are you thinking about selling the café? (to a friend)"
+    }
+  ],
+  "rule": "Every version is followed by the dictionary form of the verb.\n*Pienso abrir*: a firm plan.\n*Estoy pensando en abrir*: still weighing it up. Here you need *en*.\n*No pienso abrir*: a flat refusal, so use it with care.\n*Tengo la intención de abrir*: the formal way to say *I intend to*.\n\nEnglish says *thinking of opening* with an -ing word. Spanish never uses *-ando* or *-iendo* here, and puts nothing between *pienso* and the verb: no *a*, no *de*.\n\nCareful: *¿En qué piensas?* asks what is on your mind, not what you plan.",
+  "smallPrint": "Teachers call this a verb of intention followed by an infinitive. *Pensar* here is not about opinions: for those, *pienso que* comes later.",
+  "readAndPick": [
+    {
+      "es": "Pienso abrir a las siete.",
+      "options": [
+        "I plan to open at seven.",
+        "I'm thinking about opening at seven.",
+        "I think they open at seven."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy pensando en abrir a las siete.",
+      "options": [
+        "I plan to open at seven.",
+        "I'm thinking about opening at seven.",
+        "I opened at seven."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No pienso firmar nada.",
+      "options": [
+        "I'm not sure I'll sign anything.",
+        "I don't think I signed anything.",
+        "I have no intention of signing anything."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Piensas ir a la reunión?",
+      "options": [
+        "Are you planning to go to the meeting?",
+        "Did you think about the meeting?",
+        "Are you thinking about the meeting?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Estás pensando en vender el café?",
+      "options": [
+        "Have you decided to sell the café?",
+        "Are you thinking about selling the café?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo la intención de hablar con la abogada.",
+      "options": [
+        "I have to talk to the lawyer.",
+        "I talked to the lawyer on purpose.",
+        "I intend to talk to the lawyer."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hernando no piensa irse.",
+      "options": [
+        "I have no intention of leaving.",
+        "Hernando has no intention of leaving.",
+        "Hernando doesn't think he left."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Piensas viajar en diciembre.",
+      "options": [
+        "You plan to travel in December.",
+        "I plan to travel in December.",
+        "You traveled in December."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *pienso* or *pensando* and type the whole sentence: ___ abrir el café a las siete. (I plan to open the café at seven.)",
+      "answer": "Pienso abrir el café a las siete.",
+      "accept": [],
+      "why": "A firm plan is *pienso* plus the dictionary form, nothing in between."
+    },
+    {
+      "prompt": "Choose *en* or *a* and type the whole sentence: Estoy pensando ___ cambiar el menú. (I'm thinking about changing the menu.)",
+      "answer": "Estoy pensando en cambiar el menú.",
+      "accept": [],
+      "why": "Weighing something up takes *en* after *pensando*."
+    },
+    {
+      "prompt": "Ask a friend: Are you planning to go to the meeting?",
+      "answer": "¿Piensas ir a la reunión?",
+      "accept": [
+        "¿Tú piensas ir a la reunión?"
+      ],
+      "why": "The *-s* ending is you, and the verb that follows stays in its dictionary form."
+    },
+    {
+      "prompt": "Say you have no intention of signing anything.",
+      "answer": "No pienso firmar nada.",
+      "accept": [],
+      "why": "*No* in front of *pienso* turns a plan into a flat refusal."
+    },
+    {
+      "prompt": "Ask a friend: Are you thinking about selling the café?",
+      "answer": "¿Estás pensando en vender el café?",
+      "accept": [],
+      "why": "Still deciding is *estás pensando en* plus the dictionary form."
+    },
+    {
+      "prompt": "Make it a refusal: *Pienso vender el café.*",
+      "answer": "No pienso vender el café.",
+      "accept": [],
+      "why": "Just put *no* in front. The verb after it does not change."
+    },
+    {
+      "prompt": "Say it the formal way, with the longer phrase: *Pienso hablar con la abogada.* (I intend to talk to the lawyer.)",
+      "answer": "Tengo la intención de hablar con la abogada.",
+      "accept": [],
+      "why": "*Tengo la intención de* means the same as *pienso*, but sounds more formal."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Pienso a viajar en diciembre.",
+      "right": "Pienso viajar en diciembre.",
+      "why": "Almost. *Pienso* goes straight to the verb, with no *a* or *de* in between."
+    },
+    {
+      "wrong": "Estoy pensando de viajar en diciembre.",
+      "right": "Estoy pensando en viajar en diciembre.",
+      "why": "English says thinking of, but Spanish says *pensando en*."
+    },
+    {
+      "wrong": "Pienso yendo a la reunión.",
+      "right": "Pienso ir a la reunión.",
+      "why": "After *pienso*, English could use -ing, but Spanish wants the dictionary form: *ir*."
+    }
+  ],
+  "personal": "Tell someone one real plan with *pienso* and one thing you are still *pensando en*."
+}

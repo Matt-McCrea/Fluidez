@@ -1,0 +1,181 @@
+{
+  "node": "p:encontrar-participle",
+  "hook": {
+    "line": "After an accident or a break-in, the first thing you tell anyone is what you found. Spanish lets you describe the state right after the thing.",
+    "es": "Encontré la puerta abierta y el café frío.",
+    "en": "I found the door open and the coffee cold."
+  },
+  "examples": [
+    {
+      "es": "Encontré la puerta abierta.",
+      "en": "I found the door open."
+    },
+    {
+      "es": "Encontré las ventanas rotas.",
+      "en": "I found the windows broken."
+    },
+    {
+      "es": "Dejé la ventana abierta.",
+      "en": "I left the window open."
+    },
+    {
+      "es": "Encontramos el café frío.",
+      "en": "We found the coffee cold."
+    },
+    {
+      "es": "Llegó cansada.",
+      "en": "She arrived tired."
+    },
+    {
+      "es": "Llegamos cansados.",
+      "en": "We arrived tired. (all men, or a mixed group)"
+    },
+    {
+      "es": "Dejaron las luces prendidas.",
+      "en": "They left the lights on."
+    }
+  ],
+  "rule": "To say what state something was in when you found it or left it, put the describing word right after the thing:\n\n*Encontré la puerta abierta.*\n*Dejé la ventana abierta.*\n\nNo *estaba* needed. The describing word matches the thing, like any adjective:\n*la puerta abierta*\n*las ventanas rotas*\n*el café frío*\n\nIt works with *llegar* too, but then it matches the person who arrived:\n*Llegó cansada.* (a woman)\n*Llegamos cansados.* (a mixed group)\n\nEnglish does the same job with a word like *open* or *tired*. The difference is that Spanish makes it agree.",
+  "smallPrint": "Teachers call this a predicative adjective or participle. It describes the object after the verb.",
+  "readAndPick": [
+    {
+      "es": "Encontré la puerta abierta.",
+      "options": [
+        "I found the door open.",
+        "I found the doors open.",
+        "I opened the door."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Encontré las ventanas rotas.",
+      "options": [
+        "I found the window broken.",
+        "I broke the windows.",
+        "I found the windows broken."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Dejé la ventana abierta.",
+      "options": [
+        "I left the windows open.",
+        "I left the window open.",
+        "I left the window closed."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llegó cansada.",
+      "options": [
+        "He arrived tired.",
+        "She arrived tired.",
+        "They arrived tired."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llegamos cansados.",
+      "options": [
+        "We arrived tired.",
+        "I arrived tired.",
+        "They arrived tired."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Dejaron las luces prendidas.",
+      "options": [
+        "They left the light on.",
+        "They turned the lights off.",
+        "They left the lights on."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Encontramos el café frío.",
+      "options": [
+        "We found the coffee cold.",
+        "I found the coffee cold.",
+        "We found the coffees cold."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Encontré la puerta cerrada.",
+      "options": [
+        "I closed the door.",
+        "I found the door closed.",
+        "I found the doors closed."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Encontré la puerta ___. (abierta / abierto) I found the door open.",
+      "answer": "Encontré la puerta abierta.",
+      "accept": [],
+      "why": "*Puerta* is feminine, so the describing word ends in *a*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: Encontré las ventanas ___. (rota / rotas) I found the windows broken.",
+      "answer": "Encontré las ventanas rotas.",
+      "accept": [],
+      "why": "More than one window, so *rotas* with an *s*."
+    },
+    {
+      "prompt": "I left the window open.",
+      "answer": "Dejé la ventana abierta.",
+      "accept": [],
+      "why": "*Dejar* plus the thing plus its state."
+    },
+    {
+      "prompt": "We found the coffee cold.",
+      "answer": "Encontramos el café frío.",
+      "accept": [],
+      "why": "*Café* is masculine, so *frío*."
+    },
+    {
+      "prompt": "A woman says: I arrived tired.",
+      "answer": "Llegué cansada.",
+      "accept": [],
+      "why": "With *llegar*, the word matches the person, and she is a woman."
+    },
+    {
+      "prompt": "Make it plural: Encontré la puerta abierta.",
+      "answer": "Encontré las puertas abiertas.",
+      "accept": [],
+      "why": "Both the thing and its state turn plural."
+    },
+    {
+      "prompt": "Make it about them: Llegó cansada.",
+      "answer": "Llegaron cansadas.",
+      "accept": [],
+      "why": "More than one woman, so *cansadas*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Encontré la puerta abierto.",
+      "right": "Encontré la puerta abierta.",
+      "why": "Almost. The state describes the door, so it matches it: *puerta*, *abierta*."
+    },
+    {
+      "wrong": "Encontré la puerta estaba abierta.",
+      "right": "Encontré la puerta abierta.",
+      "why": "No *estaba* here. The state sits right after the thing."
+    },
+    {
+      "wrong": "Llegamos cansado.",
+      "right": "Llegamos cansados.",
+      "why": "Close. *Llegamos* is more than one person, so *cansados* takes the *s*."
+    },
+    {
+      "wrong": "Dejé las ventanas abierta.",
+      "right": "Dejé las ventanas abiertas.",
+      "why": "More than one window, so the state is plural too."
+    }
+  ],
+  "personal": "Describe your own place after a long day. What did you find, or what did you leave? Try *Dejé la ventana abierta* or *Encontré la cocina limpia.*"
+}

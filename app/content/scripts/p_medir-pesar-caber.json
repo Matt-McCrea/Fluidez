@@ -1,0 +1,44 @@
+{
+  "node": "p:medir-pesar-caber",
+  "hook": {
+    "line": "Sooner or later someone asks if the sofa will go through the café door, and then how heavy it is. Spanish has a short verb for each of those questions.",
+    "es": "¿Cuánto mide la puerta?\nMide un metro de ancho.",
+    "en": "How wide is the door?\nIt's one metre wide."
+  },
+  "examples": [
+    { "es": "La mesa mide dos metros.", "en": "The table is two metres long." },
+    { "es": "La maleta pesa veinte kilos.", "en": "The suitcase weighs twenty kilos." },
+    { "es": "El sofá no cabe por la puerta.", "en": "The sofa doesn't fit through the door." },
+    { "es": "¿Cuánto mides?", "en": "How tall are you? (to a friend)" },
+    { "es": "¿Cabemos todos en el carro?", "en": "Do we all fit in the car?" },
+    { "es": "Mi hermano pesa más de ochenta kilos.", "en": "My brother weighs more than eighty kilos." }
+  ],
+  "rule": "Spanish has no *ser* for size or weight. It uses a verb for each question:\n*medir*: how big or tall (*mide*, *mido*)\n*pesar*: how heavy (*pesa*)\n*caber*: does it fit (*cabe*, *quepo*)\n\nAfter *medir* and *pesar* comes the amount: *mide dos metros*, *pesa veinte kilos*. Add *casi*, *más de* or *menos de* for 'almost', 'more than', 'less than'.\n\n*Caber* needs a place: *en el carro*, *por la puerta*. 'I fit' is *quepo*.",
+  "smallPrint": "*Medir* changes its vowel (*mido*, *mides*, *mide*), and *caber* has an odd *yo* form (*quepo*).",
+  "readAndPick": [
+    { "es": "Mido casi dos metros.", "options": ["I'm almost two metres tall.", "He's almost two metres tall.", "You're almost two metres tall."], "answer": 0 },
+    { "es": "La maleta pesa veinte kilos.", "options": ["The suitcases weigh twenty kilos.", "The suitcase weighs twenty kilos."], "answer": 1 },
+    { "es": "Las cajas pesan diez kilos.", "options": ["The box weighs ten kilos.", "The boxes weigh ten kilos."], "answer": 1 },
+    { "es": "¿Cuánto mides?", "options": ["How tall is he?", "How tall are you? (to a friend)", "How much do you weigh? (to a friend)"], "answer": 1 },
+    { "es": "No quepo en el carro.", "options": ["I don't fit in the car.", "It doesn't fit in the car.", "We don't fit in the car."], "answer": 0 },
+    { "es": "¿Cabemos todos en el carro?", "options": ["Do they all fit in the car?", "Do we all fit in the car?"], "answer": 1 },
+    { "es": "La maleta no cabe en el carro.", "options": ["I don't fit in the car.", "The suitcase doesn't fit in the car."], "answer": 1 },
+    { "es": "¿Cuánto pesan las maletas?", "options": ["How much does the suitcase weigh?", "How much do the suitcases weigh?"], "answer": 1 },
+    { "es": "Pesa unos diez kilos.", "options": ["It weighs about ten kilos.", "It's about ten metres long."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *La puerta ___ un metro de ancho.* (*mide* or *es*)", "answer": "La puerta mide un metro de ancho.", "accept": [], "why": "Size is not said with *ser*: the verb is *medir*, so *mide*." },
+    { "prompt": "Pick and type: *La maleta no ___ en el carro.* (*cabe* or *quepo*)", "answer": "La maleta no cabe en el carro.", "accept": [], "why": "The suitcase is one thing, so *cabe*. *Quepo* only goes with *yo*." },
+    { "prompt": "Say: The suitcase weighs twenty kilos.", "answer": "La maleta pesa veinte kilos.", "accept": [], "why": "Weight is *pesar*, followed by the amount." },
+    { "prompt": "Ask a friend how tall he is.", "answer": "¿Cuánto mides?", "accept": [], "why": "You are talking to one friend, so *mides*." },
+    { "prompt": "Say: I don't fit in the car.", "answer": "No quepo en el carro.", "accept": [], "why": "'I fit' is *quepo*, and *no* goes in front." },
+    { "prompt": "Make it negative: *El sofá cabe por la puerta.*", "answer": "El sofá no cabe por la puerta.", "accept": [], "why": "*No* goes straight before the verb." },
+    { "prompt": "Make it plural: *La caja pesa tres kilos.*", "answer": "Las cajas pesan tres kilos.", "accept": [], "why": "More than one box, so *las cajas* and *pesan*." }
+  ],
+  "pitfalls": [
+    { "wrong": "La mesa es dos metros.", "right": "La mesa mide dos metros.", "why": "Almost. Size isn't said with *ser*; Spanish uses *medir*." },
+    { "wrong": "Yo no cabo en el carro.", "right": "No quepo en el carro.", "why": "*Caber* has its own *yo* form: *quepo*." },
+    { "wrong": "El sofá no cabe la puerta.", "right": "El sofá no cabe por la puerta.", "why": "*Caber* needs a small word before the place: *por* for passing through, *en* for being inside." }
+  ],
+  "personal": "Say how tall you are with *mido*, and then say what something near you weighs with *pesa*."
+}

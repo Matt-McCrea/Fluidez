@@ -1,0 +1,180 @@
+{
+ "node": "p:intentar-conseguir",
+ "hook": {
+  "line": "Trying and managing are two different things, and Spanish keeps them apart. First you say you tried, then you say whether it worked.",
+  "es": "Intenté llamarte, pero no lo logré.",
+  "en": "I tried to call you, but I didn't manage to."
+ },
+ "examples": [
+  {
+   "es": "Intenté llamarte, pero no lo logré.",
+   "en": "I tried to call you, but I didn't manage to."
+  },
+  {
+   "es": "Por fin consiguió trabajo.",
+   "en": "She finally got a job."
+  },
+  {
+   "es": "Logramos terminar a tiempo.",
+   "en": "We managed to finish on time."
+  },
+  {
+   "es": "Intentamos entrar, pero no lo conseguimos.",
+   "en": "We tried to get in, but we didn't manage to."
+  },
+  {
+   "es": "¿Lograste hablar con Mariana?",
+   "en": "Did you manage to talk to Mariana? (informal)"
+  },
+  {
+   "es": "Hernando consiguió el número.",
+   "en": "Hernando got the number."
+  }
+ ],
+ "rule": "*Intentar* plus a verb ending in *-r* means to try. It says nothing about the result: *intenté llamarte*.\n\n*Lograr* and *conseguir* mean you pulled it off. They also take a verb in *-r* (*logré llamarte*), and *conseguir* takes a thing too (*consiguió trabajo*).\n\nTo say it failed: *no lo logré*, *no lo conseguí*.\n\n*Tratar de* means the same as *intentar*. English \"I tried\" often hints it failed; *intenté* does not, so say *logré* when it worked.",
+ "smallPrint": "Teachers call *lograr* and *conseguir* verbs of achievement, against *intentar* as a verb of attempt.",
+ "readAndPick": [
+  {
+   "es": "Intenté llamarte.",
+   "options": [
+    "I managed to call you.",
+    "I tried to call you.",
+    "I called you."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Logré llamarte.",
+   "options": [
+    "I tried to call you.",
+    "I'll try to call you.",
+    "I managed to call you."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Por fin consiguió trabajo.",
+   "options": [
+    "She finally got a job.",
+    "She finally quit her job.",
+    "She finally looked for a job."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "No lo logré.",
+   "options": [
+    "I didn't try.",
+    "I didn't manage to.",
+    "I didn't want to."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Intentamos entrar, pero no lo conseguimos.",
+   "options": [
+    "We got in, but we didn't try.",
+    "We didn't try to get in.",
+    "We tried to get in, but we didn't manage to."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Logramos terminar a tiempo.",
+   "options": [
+    "We managed to finish on time.",
+    "We tried to finish on time.",
+    "We didn't finish on time."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "¿Lograste hablar con Mariana?",
+   "options": [
+    "Did you try to speak with Mariana?",
+    "Did you manage to speak with Mariana?",
+    "Did you want to speak with Mariana?"
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Hernando intentó abrir la puerta.",
+   "options": [
+    "Hernando opened the door.",
+    "Hernando managed to open the door.",
+    "Hernando tried to open the door."
+   ],
+   "answer": 2
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick and type the whole sentence: *___ llamarte, pero no lo logré.* (*Intenté* or *Logré*) I tried to call you, but I didn't manage to.",
+   "answer": "Intenté llamarte, pero no lo logré.",
+   "accept": [],
+   "why": "You did not manage it, so you only *tried*: *intenté*."
+  },
+  {
+   "prompt": "Pick and type the whole sentence: *Por fin ___ trabajo.* (*intentó* or *consiguió*) She finally got a job.",
+   "answer": "Por fin consiguió trabajo.",
+   "accept": [],
+   "why": "Getting the job is a result, so *consiguió*."
+  },
+  {
+   "prompt": "Say: We managed to finish on time.",
+   "answer": "Logramos terminar a tiempo.",
+   "accept": [
+    "Conseguimos terminar a tiempo."
+   ],
+   "why": "*Lograr* means you pulled it off, followed by the verb in *-r*."
+  },
+  {
+   "prompt": "Say: I tried to call Mariana, but I didn't manage to.",
+   "answer": "Intenté llamar a Mariana, pero no lo logré.",
+   "accept": [
+    "Intenté llamar a Mariana, pero no lo conseguí."
+   ],
+   "why": "*Intenté* for the attempt, *no lo logré* for the failure."
+  },
+  {
+   "prompt": "Ask a friend: Did you manage to talk to Mariana?",
+   "answer": "¿Lograste hablar con Mariana?",
+   "accept": [
+    "¿Conseguiste hablar con Mariana?"
+   ],
+   "why": "*Lograste* is the informal *you* in the past."
+  },
+  {
+   "prompt": "Make it negative: *Logramos terminar a tiempo.*",
+   "answer": "No logramos terminar a tiempo.",
+   "accept": [
+    "No conseguimos terminar a tiempo."
+   ],
+   "why": "*No* goes in front of the verb."
+  },
+  {
+   "prompt": "Say only that you tried: *Logré abrir la puerta.*",
+   "answer": "Intenté abrir la puerta.",
+   "accept": [],
+   "why": "*Intentar* only says you tried."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Intenté trabajo.",
+   "right": "Conseguí trabajo.",
+   "why": "Almost. To end up with a thing, use *conseguir*; *intentar* needs a verb after it."
+  },
+  {
+   "wrong": "Logré a llamarte.",
+   "right": "Logré llamarte.",
+   "why": "No *a* after *lograr*: it goes straight into the verb."
+  },
+  {
+   "wrong": "Intenté de llamarte.",
+   "right": "Intenté llamarte.",
+   "why": "*Intentar* takes no *de*. Only *tratar* does: *traté de llamarte*."
+  }
+ ],
+ "personal": "Tell us something you tried and something you managed: *Intenté…, pero no lo logré* or *Por fin logré…*."
+}

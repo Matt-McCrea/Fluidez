@@ -1,0 +1,187 @@
+{
+  "node": "x:cuando-ind-subj",
+  "hook": {
+    "line": "Tomás says *cuando llego* and *cuando llegue* a dozen times a day, and they are not the same sentence. One is about every day, the other about one day that hasn't come yet.",
+    "es": "Cuando llego, Vale ya está aquí.",
+    "en": "Whenever I arrive, Vale is already here."
+  },
+  "examples": [
+    {
+      "es": "Cuando llego, Vale ya está aquí.",
+      "en": "Whenever I arrive, Vale is already here."
+    },
+    {
+      "es": "Cuando llegue, hablamos.",
+      "en": "When I get there, we'll talk."
+    },
+    {
+      "es": "Cuando cierro, limpio las mesas.",
+      "en": "Whenever I close up, I clean the tables."
+    },
+    {
+      "es": "Cuando cierre, limpio las mesas.",
+      "en": "When I close up tonight, I'll clean the tables."
+    },
+    {
+      "es": "Cuando llegó la abogada, empezamos.",
+      "en": "When the lawyer arrived, we started."
+    },
+    {
+      "es": "¿Qué haces cuando llegas al café?",
+      "en": "What do you do when you get to the café? (to a friend)"
+    },
+    {
+      "es": "¿Qué vas a hacer cuando llegues?",
+      "en": "What are you going to do when you get there? (to a friend)"
+    }
+  ],
+  "rule": "One question decides it: is *cuando* about something that always happens or already happened, or about something still to come?\n\nA habit or a fact: the normal verb. *Cuando llego, Vale ya está aquí.* *Cuando llegó la abogada, empezamos.*\n\nSomething still to come: the other vowel. *Cuando llegue, hablamos.*\n\nEnglish doesn't help, because both can be *when I arrive*. Try adding *every time*: if it fits, use the normal verb. Try adding *one day* or *tomorrow*: if that fits, use the other vowel. The rest of the sentence often gives it away too. A future, a command or *voy a* points to the other vowel.",
+  "smallPrint": "Teachers call this indicative versus subjunctive in time clauses. Only the verb after *cuando* changes: the rest of the sentence stays put.",
+  "readAndPick": [
+    {
+      "es": "Cuando llego, Vale ya está aquí.",
+      "options": [
+        "Whenever I arrive, Vale is already here.",
+        "When I arrive tomorrow, Vale will already be here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuando llegue, hablamos.",
+      "options": [
+        "Whenever I get there, we talk.",
+        "When I get there, we'll talk."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cuando cierro, limpio las mesas.",
+      "options": [
+        "Whenever I close up, I clean the tables.",
+        "Tonight, when I close up, I'll clean the tables."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuando cierre, limpio las mesas.",
+      "options": [
+        "Whenever I close up, I clean the tables.",
+        "Tonight, when I close up, I'll clean the tables."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cuando llegó la abogada, empezamos.",
+      "options": [
+        "When the lawyer arrives, we'll start.",
+        "Whenever the lawyer arrives, we start.",
+        "When the lawyer arrived, we started."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Qué haces cuando llegas al café?",
+      "options": [
+        "What do you do whenever you get to the café?",
+        "What are you going to do when you get to the café?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué vas a hacer cuando llegues?",
+      "options": [
+        "What do you do whenever you get there?",
+        "What are you going to do when you get there?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cuando Tomás hable con la abogada, voy a estar ahí.",
+      "options": [
+        "Whenever Tomás talks to the lawyer, I'm there.",
+        "When Tomás talks to the lawyer, I'm going to be there."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cuando Tomás habla, Hernando escucha.",
+      "options": [
+        "Whenever Tomás talks, Hernando listens.",
+        "When Tomás talks, Hernando will listen."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *tengo* or *tenga* and type the whole sentence: Cuando ___ tiempo, ayudo a Hernando. (This is about a day still to come: When I have time, I'll help Hernando.)",
+      "answer": "Cuando tenga tiempo, ayudo a Hernando.",
+      "accept": [],
+      "why": "It is still to come, so it takes the other vowel: *tenga*."
+    },
+    {
+      "prompt": "Choose *salgo* or *salga* and type the whole sentence: Cuando ___ de la reunión, te llamo. (Every time I come out of a meeting, I call you.)",
+      "answer": "Cuando salgo de la reunión, te llamo.",
+      "accept": [],
+      "why": "Every time means a habit, and a habit takes the normal verb: *salgo*."
+    },
+    {
+      "prompt": "Say: Whenever Vale cooks, the café smells great.",
+      "answer": "Cuando Vale cocina, el café huele rico.",
+      "accept": [
+        "El café huele rico cuando Vale cocina."
+      ],
+      "why": "A repeated thing takes the normal verb: *cocina*."
+    },
+    {
+      "prompt": "Say: When Vale cooks (later), the café will smell great.",
+      "answer": "Cuando Vale cocine, el café va a oler rico.",
+      "accept": [
+        "El café va a oler rico cuando Vale cocine."
+      ],
+      "why": "A single time still to come takes the other vowel: *cocine*."
+    },
+    {
+      "prompt": "Ask a friend, about a day still to come: What are you going to do when you finish?",
+      "answer": "¿Qué vas a hacer cuando termines?",
+      "accept": [],
+      "why": "Still ahead, so *termines*."
+    },
+    {
+      "prompt": "Ask a friend, about a habit: What do you do when you get to the café?",
+      "answer": "¿Qué haces cuando llegas al café?",
+      "accept": [],
+      "why": "A habit takes the normal verb: *llegas*."
+    },
+    {
+      "prompt": "Change it from a habit to tonight only: *Cuando cierro, limpio las mesas.*",
+      "answer": "Cuando cierre, limpio las mesas.",
+      "accept": [],
+      "why": "Only the verb after *cuando* changes: *cierro* becomes *cierre*."
+    },
+    {
+      "prompt": "Say: When I finished, I called Vale.",
+      "answer": "Cuando terminé, llamé a Vale.",
+      "accept": [],
+      "why": "It already happened, so *cuando* takes the ordinary past, not the other vowel."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Cuando llego mañana, hablamos.",
+      "right": "Cuando llegue mañana, hablamos.",
+      "why": "Almost. *Mañana* is still to come, so you need *llegue*."
+    },
+    {
+      "wrong": "Cuando llegue ayer, Vale ya estaba aquí.",
+      "right": "Cuando llegué ayer, Vale ya estaba aquí.",
+      "why": "Yesterday already happened, so use the ordinary past. The accent makes *llegué* (I arrived) different from *llegue*."
+    },
+    {
+      "wrong": "Cuando cierre, limpio las mesas todos los días.",
+      "right": "Cuando cierro, limpio las mesas todos los días.",
+      "why": "*Todos los días* means a habit, and a habit takes the normal verb: *cierro*."
+    }
+  ],
+  "personal": "Say one thing you do every time something happens, and one thing you will do when something happens soon."
+}

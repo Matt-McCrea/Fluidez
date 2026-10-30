@@ -1,0 +1,172 @@
+{
+  "node": "p:mancharse",
+  "hook": {
+    "line": "Café life means coffee on your shirt. There is one tidy way to say it.",
+    "es": "Me manché la camisa de café.",
+    "en": "I got coffee on my shirt."
+  },
+  "examples": [
+    {
+      "es": "Me manché la camisa de café.",
+      "en": "I got coffee on my shirt."
+    },
+    {
+      "es": "Tomás se manchó la camisa de café.",
+      "en": "Tomás got coffee on his shirt."
+    },
+    {
+      "es": "Manché la mesa con vino.",
+      "en": "I stained the table with wine."
+    },
+    {
+      "es": "Me manché la chaqueta de salsa.",
+      "en": "I got sauce on my jacket."
+    },
+    {
+      "es": "Hay una mancha de café en tu camisa.",
+      "en": "There is a coffee stain on your shirt. (to a friend)"
+    },
+    {
+      "es": "Manché la camisa de Tomás con café.",
+      "en": "I stained Tomás's shirt with coffee."
+    }
+  ],
+  "rule": "When the stain lands on you or your own things, use *manchar* with *me*, and no *mi*:\n\n*Me manché la camisa de café.*\n\nThe pattern: *me manché* + the item + *de* + the stuff.\n\nFor someone else's thing, or when you stain something on purpose, use plain *manchar*:\n*Manché la mesa con vino.*\n\nThe stain itself is *una mancha*:\n*una mancha de café*",
+  "smallPrint": "This is the possessive dative again, with a reflexive verb.",
+  "readAndPick": [
+    {
+      "es": "Me manché la camisa de café.",
+      "options": [
+        "I got coffee on my shirt.",
+        "I got coffee on his shirt.",
+        "He got coffee on his shirt."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás se manchó la camisa.",
+      "options": [
+        "Tomás got his shirt stained.",
+        "I stained Tomás's shirt.",
+        "I got my shirt stained."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Manché la mesa con vino.",
+      "options": [
+        "I got my table dirty.",
+        "I stained the table with wine.",
+        "The table stained me with wine."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me manché la chaqueta de salsa.",
+      "options": [
+        "I got sauce on my jacket.",
+        "I got sauce on my pants.",
+        "They got sauce on their jacket."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hay una mancha de café.",
+      "options": [
+        "There is a coffee stain.",
+        "There is coffee in the cup.",
+        "I have a stain."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Manché la camisa de Tomás con café.",
+      "options": [
+        "Tomás stained my shirt.",
+        "I stained my shirt.",
+        "I stained Tomás's shirt."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale se manchó la camisa de chocolate.",
+      "options": [
+        "Vale got chocolate on her shirt.",
+        "I stained Vale's shirt.",
+        "Vale got chocolate on my shirt."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te manchaste la camisa de café?",
+      "options": [
+        "Did I stain your shirt?",
+        "Did you get coffee on your shirt? (to a friend)",
+        "Did he get coffee on his shirt?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Me manché ___ camisa de café. (la / mi) I got coffee on my shirt.",
+      "answer": "Me manché la camisa de café.",
+      "accept": [],
+      "why": "*Me* already says whose shirt, so you use *la*."
+    },
+    {
+      "prompt": "I got sauce on my jacket.",
+      "answer": "Me manché la chaqueta de salsa.",
+      "accept": [],
+      "why": "*Me manché* + the item + *de* + the stuff."
+    },
+    {
+      "prompt": "Tomás got coffee on his shirt.",
+      "answer": "Tomás se manchó la camisa de café.",
+      "accept": [],
+      "why": "For someone else, the small word is *se*."
+    },
+    {
+      "prompt": "I stained the table with wine.",
+      "answer": "Manché la mesa con vino.",
+      "accept": [],
+      "why": "The table is not yours to wear, so plain *manché* with an object."
+    },
+    {
+      "prompt": "Ask a friend: Did you get coffee on your shirt?",
+      "answer": "¿Te manchaste la camisa de café?",
+      "accept": [],
+      "why": "*Te manchaste* for your friend, again with *la*, not *tu*."
+    },
+    {
+      "prompt": "Make it about Vale: Me manché la camisa de chocolate.",
+      "answer": "Vale se manchó la camisa de chocolate.",
+      "accept": [],
+      "why": "For a third person the small word becomes *se*."
+    },
+    {
+      "prompt": "Say: There is a coffee stain on the table.",
+      "answer": "Hay una mancha de café en la mesa.",
+      "accept": [],
+      "why": "*Una mancha de café* is a coffee stain."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Manché mi camisa de café.",
+      "right": "Me manché la camisa de café.",
+      "why": "Close. When it lands on you, use *me* and *la*, not *mi*."
+    },
+    {
+      "wrong": "Me manché el café.",
+      "right": "Me manché la camisa de café.",
+      "why": "Almost. The thing that gets dirty comes after the verb, and the stuff comes after *de*."
+    },
+    {
+      "wrong": "Me manché la camisa con café.",
+      "right": "Me manché la camisa de café.",
+      "why": "*Con* sounds like you stained it on purpose. For accidents, use *de*."
+    }
+  ],
+  "personal": "Say what you got on your clothes this week, real or invented. Try *Me manché la camisa de…*"
+}

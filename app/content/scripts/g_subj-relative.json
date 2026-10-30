@@ -1,0 +1,185 @@
+{
+  "node": "g:subj-relative",
+  "hook": {
+    "line": "Vale needs a new space for the café, and all she can do is describe it: a proper kitchen, a rent she can pay. She can't point at it yet, and Spanish has a way of saying so.",
+    "es": "Buscamos un lugar que tenga cocina.",
+    "en": "We're looking for a place that has a kitchen."
+  },
+  "examples": [
+    {
+      "es": "Busco un apartamento que tenga dos cuartos.",
+      "en": "I'm looking for an apartment that has two bedrooms."
+    },
+    {
+      "es": "Busco el apartamento que tiene dos cuartos.",
+      "en": "I'm looking for the apartment that has two bedrooms."
+    },
+    {
+      "es": "¿Conoces a alguien que sepa de leyes?",
+      "en": "Do you know anyone who knows about law? (to a friend)"
+    },
+    {
+      "es": "No conozco a nadie que sepa de leyes.",
+      "en": "I don't know anyone who knows about law."
+    },
+    {
+      "es": "Tengo un amigo que sabe de leyes.",
+      "en": "I have a friend who knows about law."
+    },
+    {
+      "es": "Vale quiere una cocina que sea grande.",
+      "en": "Vale wants a kitchen that is big."
+    },
+    {
+      "es": "Necesito un cuarto que tenga ventana.",
+      "en": "I need a room that has a window."
+    }
+  ],
+  "rule": "Ask one question: do I know this thing exists?\n\nYes, I can point at it: the ordinary ending.\n*Tengo un amigo que sabe de leyes.* He exists.\n*Busco el apartamento que tiene balcón.* I know which one.\n\nNo, I'm only describing what I want, or there may be none: the wish ending, the same one you know from *quiero que*.\n*Busco un apartamento que tenga balcón.* Any one that fits.\n*No conozco a nadie que sepa.* Nobody, so no real person to point at.\n\nEnglish uses the same verb both times (that has, who knows). Spanish changes the ending: *tiene* becomes *tenga*, *sabe* becomes *sepa*, *es* becomes *sea*.\n\nThe verb after *que* tells your listener whether the thing is real or only wished for.",
+  "smallPrint": "Teachers call this a relative clause with an unspecified or non-existent antecedent: the subjunctive goes in the clause that describes it.",
+  "readAndPick": [
+    {
+      "es": "Busco una casa que tenga jardín.",
+      "options": [
+        "I'm looking for a house that has a garden (any one, if it exists).",
+        "I'm looking for the house that has a garden (I know the one)."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Busco la casa que tiene jardín.",
+      "options": [
+        "I'm looking for a house that has a garden (any one, if it exists).",
+        "I'm looking for the house that has a garden (I know the one)."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo un amigo que sabe de leyes.",
+      "options": [
+        "I have a friend who knows about law.",
+        "I need a friend who knows about law."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Necesito un amigo que sepa de leyes.",
+      "options": [
+        "I have a friend who knows about law.",
+        "I need a friend who knows about law.",
+        "I know a friend who knows about law."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No conozco a nadie que sepa de leyes.",
+      "options": [
+        "I don't know anyone who knows about law.",
+        "I know someone who knows about law."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Conoces a alguien que hable inglés?",
+      "options": [
+        "Do you know anyone who speaks English? (to a friend)",
+        "Do you know the person who speaks English? (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando conoce a un señor que vive en Santa Marta.",
+      "options": [
+        "Hernando knows a man who lives in Santa Marta.",
+        "Hernando wants to meet a man who lives in Santa Marta.",
+        "Hernando is looking for a man who lives in Santa Marta."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale quiere una cocina que sea grande.",
+      "options": [
+        "Vale has a kitchen that is big.",
+        "Vale wants a kitchen that is big."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Necesitamos una persona que pueda trabajar los sábados.",
+      "options": [
+        "We need someone who can work on Saturdays.",
+        "We have someone who can work on Saturdays."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *tiene* or *tenga* and type the whole sentence: *Busco una casa que ___ jardín.* (I'm looking for a house that has a garden, any one, I don't know if one exists.)",
+      "answer": "Busco una casa que tenga jardín.",
+      "accept": [],
+      "why": "You don't know that such a house exists, so the verb takes the wish ending: *tenga*."
+    },
+    {
+      "prompt": "Pick *sabe* or *sepa* and type the whole sentence: *Tengo un amigo que ___ de leyes.* (I have a friend who knows about law.)",
+      "answer": "Tengo un amigo que sabe de leyes.",
+      "accept": [],
+      "why": "You have this friend, so he is real and the verb keeps the ordinary ending: *sabe*."
+    },
+    {
+      "prompt": "Say: We're looking for a kitchen that is big.",
+      "answer": "Buscamos una cocina que sea grande.",
+      "accept": [
+        "Estamos buscando una cocina que sea grande."
+      ],
+      "why": "You're describing what you want, not a kitchen you've seen, so *que sea*."
+    },
+    {
+      "prompt": "Say: Do you know anyone who speaks English? (to a friend)",
+      "answer": "¿Conoces a alguien que hable inglés?",
+      "accept": [],
+      "why": "You're asking whether such a person exists, so *hable*, not *habla*."
+    },
+    {
+      "prompt": "Say: I need a room that has a window.",
+      "answer": "Necesito un cuarto que tenga ventana.",
+      "accept": [],
+      "why": "Any room with a window will do, so *tenga*."
+    },
+    {
+      "prompt": "Make it negative, there is nobody: *Conozco a alguien que sabe de leyes.*",
+      "answer": "No conozco a nadie que sepa de leyes.",
+      "accept": [],
+      "why": "With *nadie* there is nobody to point at, so the verb takes *sepa*."
+    },
+    {
+      "prompt": "Now you have a specific apartment in mind: *Busco un apartamento que tenga balcón.* Say: I'm looking for the apartment that has a balcony.",
+      "answer": "Busco el apartamento que tiene balcón.",
+      "accept": [],
+      "why": "You know which apartment, so *el apartamento* and the ordinary *tiene*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Busco un apartamento que tiene dos cuartos.",
+      "right": "Busco un apartamento que tenga dos cuartos.",
+      "why": "Almost. You haven't found it yet, so the verb after *que* takes the wish ending: *tenga*."
+    },
+    {
+      "wrong": "No conozco a nadie que sabe de leyes.",
+      "right": "No conozco a nadie que sepa de leyes.",
+      "why": "Almost. *Nadie* means there is nobody real to point at, so *sepa*."
+    },
+    {
+      "wrong": "Tengo un amigo que sepa de leyes.",
+      "right": "Tengo un amigo que sabe de leyes.",
+      "why": "Almost. You do have this friend, so he is real and the verb stays ordinary: *sabe*."
+    },
+    {
+      "wrong": "Busco el apartamento que tenga balcón.",
+      "right": "Busco el apartamento que tiene balcón.",
+      "why": "Almost. *El apartamento* is one you already know about, so the verb is ordinary: *tiene*."
+    }
+  ],
+  "personal": "Say what you'd look for in a new place to live, real or not: start with *Busco un lugar que…* and finish with something that matters to you, like *tenga* a kitchen or *sea* quiet."
+}

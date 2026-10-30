@@ -1,0 +1,46 @@
+{
+  "node": "x:seguir-dejar-de",
+  "hook": {
+    "line": "Mariana is writing about the old regulars of La Candelaria, and her first question to each of them is the same: do you still do what you used to do, or did you quit? Spanish answers with two verbs that pull in opposite directions.",
+    "es": "¿Sigues trabajando en el café?",
+    "en": "Are you still working at the café? (to a friend)"
+  },
+  "examples": [
+    { "es": "Sigo yendo al gimnasio.", "en": "I still go to the gym." },
+    { "es": "Dejé de ir al gimnasio.", "en": "I stopped going to the gym." },
+    { "es": "¿Sigues trabajando en el café?", "en": "Are you still working at the café? (to a friend)" },
+    { "es": "Dejé de fumar hace un año.", "en": "I stopped smoking a year ago." },
+    { "es": "Hernando sigue manejando su taxi.", "en": "Hernando is still driving his taxi." },
+    { "es": "Hernando dejó de manejar el taxi.", "en": "Hernando stopped driving the taxi." },
+    { "es": "Simón no deja de hablar.", "en": "Simón keeps on talking." }
+  ],
+  "rule": "Same activity, two ends.\n\n*Seguir* plus the *-ando* or *-iendo* form: it is still going.\n*Sigo yendo al gimnasio.*\n\n*Dejar de* plus the plain verb: it has stopped.\n*Dejé de ir al gimnasio.*\n\nThe glue is different. *Seguir* takes the *-ing* form straight away; *dejar* needs *de* and then *ir*, *fumar*, *manejar*.\n\n*Seguir* changes its stem: *sigo, sigues, sigue, seguimos*. *Dejar* is regular.\n\nWith *no*, *dejar de* flips: *Simón no deja de hablar* means he never stops.",
+  "smallPrint": "Teachers call these aspectual verbs: they say whether an action continues or stops, rather than what the action is.",
+  "readAndPick": [
+    { "es": "Sigo yendo al gimnasio.", "options": ["I still go to the gym.", "I stopped going to the gym.", "I'm going to go to the gym."], "answer": 0 },
+    { "es": "Dejé de ir al gimnasio.", "options": ["I still go to the gym.", "I stopped going to the gym.", "I'm going to go to the gym."], "answer": 1 },
+    { "es": "¿Sigues trabajando en el café?", "options": ["Did you stop working at the café? (to a friend)", "Will you work at the café? (to a friend)", "Are you still working at the café? (to a friend)"], "answer": 2 },
+    { "es": "Dejé de fumar hace un año.", "options": ["I've been smoking for a year.", "I stopped smoking a year ago.", "I started smoking a year ago."], "answer": 1 },
+    { "es": "Hernando sigue manejando su taxi.", "options": ["Hernando is still driving his taxi.", "Hernando stopped driving his taxi.", "Hernando will drive his taxi."], "answer": 0 },
+    { "es": "Hernando dejó de manejar el taxi.", "options": ["Hernando keeps driving the taxi.", "Hernando is going to drive the taxi.", "Hernando stopped driving the taxi."], "answer": 2 },
+    { "es": "Simón no deja de hablar.", "options": ["Simón stopped talking.", "Simón keeps on talking.", "Simón is not talking."], "answer": 1 },
+    { "es": "¿Dejaste de estudiar español?", "options": ["Are you still studying Spanish? (to a friend)", "Did you stop studying Spanish? (to a friend)"], "answer": 1 },
+    { "es": "Seguimos esperando al abogado.", "options": ["We stopped waiting for the lawyer.", "They are still waiting for the lawyer.", "We are still waiting for the lawyer."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *sigo* or *dejé de* and type the whole sentence: *___ viviendo en La Candelaria.* (I still live in La Candelaria.)", "answer": "Sigo viviendo en La Candelaria.", "accept": [], "why": "\"Still\" is *seguir*, and it goes with the *-iendo* form." },
+    { "prompt": "Pick *vivir* or *viviendo* and type the whole sentence: *Dejé de ___ en Medellín hace tres años.* (I stopped living in Medellín three years ago.)", "answer": "Dejé de vivir en Medellín hace tres años.", "accept": [], "why": "After *dejar de*, the verb stays plain." },
+    { "prompt": "Type in Spanish, to a friend: Are you still studying Spanish?", "answer": "¿Sigues estudiando español?", "accept": [], "why": "*Sigues* is the *tú* form, then the *-ando* form." },
+    { "prompt": "Type in Spanish: I stopped drinking black coffee at night.", "answer": "Dejé de tomar tinto por la noche.", "accept": [], "why": "*Dejé de* plus the plain verb *tomar*." },
+    { "prompt": "Type in Spanish: Hernando stopped driving the taxi.", "answer": "Hernando dejó de manejar el taxi.", "accept": ["Hernando dejó de manejar su taxi."], "why": "*Dejó de* plus *manejar*; no *-ando* form here." },
+    { "prompt": "Flip it: *Dejé de ir al gimnasio.* Say: I still go to the gym.", "answer": "Sigo yendo al gimnasio.", "accept": [], "why": "\"Still\" is *seguir* with the *-yendo* form of *ir*." },
+    { "prompt": "Make it about *we*: *Sigo esperando al abogado.* Say: We are still waiting for the lawyer.", "answer": "Seguimos esperando al abogado.", "accept": [], "why": "*Seguimos* is the *we* form, and the rest stays the same." }
+  ],
+  "pitfalls": [
+    { "wrong": "Dejé de yendo al gimnasio.", "right": "Dejé de ir al gimnasio.", "why": "Almost. After *dejar de*, the verb stays plain; the *-yendo* form belongs to *seguir*." },
+    { "wrong": "Sigo ir al gimnasio.", "right": "Sigo yendo al gimnasio.", "why": "Almost. *Seguir* needs the *-ing* form, here *yendo*." },
+    { "wrong": "Dejé fumar hace un año.", "right": "Dejé de fumar hace un año.", "why": "Almost. English says \"stopped smoking\", but Spanish needs the *de*: *dejar de*." },
+    { "wrong": "Seguo viviendo en La Candelaria.", "right": "Sigo viviendo en La Candelaria.", "why": "Almost. *Seguir* changes its stem: *sigo*, *sigues*, *sigue*." }
+  ],
+  "personal": "Tell us one thing you still do and one thing you stopped doing, with *sigo* and *dejé de*."
+}

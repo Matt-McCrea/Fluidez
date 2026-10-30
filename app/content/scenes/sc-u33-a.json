@@ -1,0 +1,213 @@
+{
+  "id": "sc-u33-a",
+  "unit": "u33",
+  "title": "Una cocina de verdad",
+  "spare": false,
+  "brief": "You're Tomás, calling a real-estate agency for Vale's new bakery space. The agent is a stranger, so use usted. Describe what you need, even if you don't know whether it exists.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Inmobiliaria Plaza, buenas tardes. ¿En qué le puedo ayudar?",
+      "npcEn": "Plaza Real Estate, good afternoon. How can I help you?",
+      "intent": "Say you're looking for premises that have a proper kitchen.",
+      "accept": [
+        "Busco un local que tenga una cocina de verdad.",
+        "Buenas tardes. Estamos buscando un local que tenga cocina.",
+        "Necesito un local que tenga una buena cocina."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "within": 3,
+          "label": "premises that have a kitchen: un local que tenga"
+        }
+      ],
+      "focus": "g:subj-relative",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Tenemos varios. ¿Qué más necesita?",
+      "npcEn": "We have several. What else do you need?",
+      "intent": "Say you want something that is near La Candelaria.",
+      "accept": [
+        "Queremos algo que quede cerca de La Candelaria.",
+        "Algo que quede cerca de La Candelaria, por favor.",
+        "Busco un local que quede cerca de La Candelaria."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "within": 3,
+          "label": "something near: algo que quede"
+        }
+      ],
+      "focus": "g:subj-relative",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hay uno recién pintado, pero el arriendo es alto. ¿Cuánto pueden pagar?",
+      "npcEn": "There's one that's just been painted, but the rent is high. How much can you pay?",
+      "intent": "Say that any rent under three million is fine for you.",
+      "accept": [
+        "Cualquier arriendo menor de tres millones nos sirve.",
+        "Puedo pagar cualquier arriendo menor de tres millones.",
+        "Cualquier local menor de tres millones está bien."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcualquier\\b",
+          "flags": "i",
+          "label": "say any at all: cualquier arriendo"
+        }
+      ],
+      "focus": "g:cada-cualquier",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Un detalle: ese edificio es de la empresa Altamira. ¿La conoce?",
+      "npcEn": "One detail: that building belongs to the company Altamira. Do you know it?",
+      "intent": "Say yes, it's the company that wants to buy the block where your café is.",
+      "accept": [
+        "Sí, es la empresa que quiere comprar la cuadra en la que está mi café.",
+        "Claro, es la empresa que quiere comprar la cuadra en la que tengo el café.",
+        "Sí, Altamira es la empresa que quiere comprar la cuadra en la que está nuestro café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(en|con|de|a|para) (el|la|los|las) (que|cual)\\b",
+          "flags": "i",
+          "label": "after a preposition: la cuadra en la que"
+        }
+      ],
+      "focus": "g:relatives-prepositions",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Entiendo. Le mando otros locales por correo, ¿le parece?",
+      "npcEn": "I see. I'll email you other premises, is that all right?",
+      "intent": "Thank her, and say you'll talk to Vale, who is the one who needs the kitchen.",
+      "accept": [
+        "Gracias, señora. Voy a hablar con Vale, que es la que necesita la cocina.",
+        "Perfecto, muchas gracias. Se lo digo a Vale, la que necesita la cocina.",
+        "Sí, gracias. Vale es la que necesita la cocina, y ella decide."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bla que\\b",
+          "flags": "i",
+          "label": "the one who: la que necesita"
+        }
+      ],
+      "focus": "p:el-que-la-que",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:en-que-le-puedo-servir",
+    "c:en-serio",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:por-favor",
+    "c:puedo",
+    "c:que-mas",
+    "c:tengo",
+    "c:tienes",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:parecer-quedar",
+    "g:possessives",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:relatives-prepositions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:alto",
+    "l:arriendo",
+    "l:ayudar",
+    "l:bien",
+    "l:buena",
+    "l:buscar",
+    "l:café",
+    "l:cerca",
+    "l:claro",
+    "l:cocina",
+    "l:comprar",
+    "l:conocer",
+    "l:correo",
+    "l:cuadra",
+    "l:cuánto",
+    "l:decidir",
+    "l:decir",
+    "l:detalle",
+    "l:edificio",
+    "l:empresa",
+    "l:entender",
+    "l:estar",
+    "l:favor",
+    "l:hablar",
+    "l:inmobiliaria",
+    "l:ir",
+    "l:local",
+    "l:mandar",
+    "l:menor",
+    "l:necesitar",
+    "l:pagar",
+    "l:parecer",
+    "l:perfecto",
+    "l:pintar",
+    "l:poder",
+    "l:quedar",
+    "l:querer",
+    "l:qué",
+    "l:recién",
+    "l:ser",
+    "l:servir",
+    "l:señora",
+    "l:tarde",
+    "l:tener",
+    "l:verdad",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:el-que-la-que",
+    "p:es-tiene-lleva",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:recien-participio",
+    "p:saber-conocer"
+  ]
+}

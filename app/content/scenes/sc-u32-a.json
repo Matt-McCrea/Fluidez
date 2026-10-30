@@ -1,0 +1,210 @@
+{
+  "id": "sc-u32-a",
+  "unit": "u32",
+  "title": "Before the trial",
+  "spare": false,
+  "brief": "You're Tomás, visiting the lawyer Dra. Beatriz Uribe about the building. She is a professional you've just met, so use usted. Get her advice, promise what you will do and when, and don't sign anything yet.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, señor Herrera. Cuénteme, ¿qué necesita?",
+      "npcEn": "Good morning, Mr. Herrera. Tell me, what do you need?",
+      "intent": "Greet her and ask what she recommends that you do before the trial.",
+      "accept": [
+        "¿Qué me recomienda que haga antes del juicio?",
+        "Buenos días, doctora. ¿Qué me aconseja que haga antes del juicio?",
+        "Buenos días. Necesito ayuda: ¿qué me recomienda que haga antes del juicio?"
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "label": "after recomienda que / aconseja que, the verb changes: haga"
+        }
+      ],
+      "focus": "g:subj-influence",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Le recomiendo que busque a Joaquín o a sus herederos esta semana. Si los encuentra, la familia puede quedarse con el edificio.",
+      "npcEn": "I recommend that you look for Joaquín or his heirs this week. If you find them, the family can keep the building.",
+      "intent": "Promise to call her when you find Joaquín.",
+      "accept": [
+        "Cuando encuentre a Joaquín, la llamo.",
+        "La llamo cuando lo encuentre.",
+        "Sí, doctora. Cuando encuentre a sus herederos, la llamo hoy mismo."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "cuando",
+          "label": "after cuando, talking about the future, the verb changes: encuentre"
+        }
+      ],
+      "focus": "g:subj-cuando-future",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Muy bien. Y necesito leer todos los papeles de Rosa antes del juicio.",
+      "npcEn": "Very good. And I need to read all of Rosa's papers before the trial.",
+      "intent": "Tell her you will bring the papers tomorrow so that she can read them in good time.",
+      "accept": [
+        "Los traigo mañana para que usted los lea con tiempo.",
+        "Sí, doctora. Los traigo mañana para que los lea con tiempo.",
+        "Mañana mismo traigo todo para que usted pueda leerlo."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "para que",
+          "label": "after para que (so that), the verb changes: lea"
+        }
+      ],
+      "focus": "g:subj-purpose-full",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Una cosa más. Altamira ofrece comprar su parte del edificio. Ahora quieren una respuesta pronto.",
+      "npcEn": "One more thing. Altamira is offering to buy your share of the building. Now they want an answer soon.",
+      "intent": "Say you will not sell until the trial is over.",
+      "accept": [
+        "No voy a vender hasta que termine el juicio.",
+        "No, doctora. No firmo nada hasta que usted me diga que es seguro.",
+        "No vendo hasta que encontremos a Joaquín."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "hasta que",
+          "label": "after no... hasta que, the verb changes: termine"
+        }
+      ],
+      "focus": "p:no-hasta",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Perfecto. Confío en que todo salga bien, pero hay que moverse rápido.",
+      "npcEn": "Perfect. I'm confident everything will go well, but we have to move fast.",
+      "intent": "Say you are confident too, and thank her.",
+      "accept": [
+        "Yo también confío en que todo salga bien. Muchas gracias, doctora.",
+        "Gracias, doctora. Confío en que salga bien.",
+        "Muchas gracias por todo. Confío en que podamos ganar."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "confío en que",
+          "label": "after confío en que, the verb changes: salga"
+        }
+      ],
+      "focus": "p:confiar-en-que",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:hola-buenos-dias",
+    "c:que-me-recomienda",
+    "c:voy-a",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:para-que",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-influence",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:aconsejar",
+    "l:ahora",
+    "l:antes",
+    "l:ayuda",
+    "l:bien",
+    "l:bueno",
+    "l:buscar",
+    "l:comprar",
+    "l:confiar",
+    "l:contar",
+    "l:cosa",
+    "l:decir",
+    "l:doctor",
+    "l:día",
+    "l:edificio",
+    "l:encontrar",
+    "l:familia",
+    "l:firmar",
+    "l:ganar",
+    "l:hacer",
+    "l:heredero",
+    "l:hoy",
+    "l:ir",
+    "l:juicio",
+    "l:le",
+    "l:leer",
+    "l:llamar",
+    "l:mañana",
+    "l:mover",
+    "l:necesitar",
+    "l:ofrecer",
+    "l:papel",
+    "l:parte",
+    "l:perfecto",
+    "l:poder",
+    "l:pronto",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:recomendar",
+    "l:respuesta",
+    "l:rápido",
+    "l:salir",
+    "l:seguro",
+    "l:semana",
+    "l:ser",
+    "l:señor",
+    "l:terminar",
+    "l:tiempo",
+    "l:traer",
+    "l:vender",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:con-sin",
+    "p:confiar-en-que",
+    "p:contar-dos-sentidos",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:no-hasta",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:senor-don-article",
+    "p:tambien-tampoco"
+  ]
+}

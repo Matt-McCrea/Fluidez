@@ -1,0 +1,91 @@
+{
+  "node": "p:medir",
+  "hook": {
+    "line": "The first thing a Bogotá landlord tells you about a flat is how many square metres it has. You'll want to ask, and you'll want to be able to say how tall you are without saying you are two metres.",
+    "es": "El apartamento mide setenta metros cuadrados.",
+    "en": "The flat is seventy square metres."
+  },
+  "examples": [
+    { "es": "Mido 1,70.", "en": "I'm 1.70 m tall." },
+    { "es": "La mesa mide dos metros de largo.", "en": "The table is two metres long." },
+    { "es": "El apartamento mide 70 metros cuadrados.", "en": "The flat is 70 square metres." },
+    { "es": "¿Cuánto mides?", "en": "How tall are you? (to a friend)" },
+    { "es": "La cocina mide cinco metros de largo.", "en": "The kitchen is five metres long." },
+    { "es": "La ventana mide dos metros de alto.", "en": "The window is two metres high." }
+  ],
+  "rule": "English says the table *is* two metres. Spanish says the table *measures* two metres: *mide dos metros*. Never *es dos metros*.\n\n*Medir* changes its vowel like *pedir*: *mido, mides, mide, medimos, miden*.\n\nAfter the number, say which side with *de largo* (long), *de ancho* (wide) or *de alto* (high).\n\nFor floor space, always *metros cuadrados*: *mide 70 metros cuadrados*.\n\nFor people: *Mido 1,70* or *Mido uno setenta*. To ask: *¿Cuánto mides?*",
+  "smallPrint": "Teachers call this a stem-changing verb (*e* to *i*), used here to give measurements.",
+  "readAndPick": [
+    { "es": "Mido 1,70.", "options": ["I'm 1.70 m tall.", "He's 1.70 m tall."], "answer": 0 },
+    { "es": "La mesa mide dos metros de ancho.", "options": ["The table is two metres long.", "The table is two metres high.", "The table is two metres wide."], "answer": 2 },
+    { "es": "La mesa mide dos metros de largo.", "options": ["The table is two metres long.", "The table is two metres wide."], "answer": 0 },
+    { "es": "¿Cuánto mides?", "options": ["How tall is he?", "How tall are you? (to a friend)"], "answer": 1 },
+    { "es": "El apartamento mide setenta metros cuadrados.", "options": ["The flat is seventy metres long.", "The flat is seventy square metres."], "answer": 1 },
+    { "es": "La ventana mide dos metros de alto.", "options": ["The window is two metres wide.", "The window is two metres high."], "answer": 1 },
+    { "es": "Tomás mide un metro ochenta.", "options": ["Tomás is 1.80 m tall.", "I'm 1.80 m tall.", "Tomás is 1.08 m tall."], "answer": 0 },
+    { "es": "Miden tres metros.", "options": ["It measures three metres.", "They measure three metres."], "answer": 1 },
+    { "es": "Medimos casi lo mismo.", "options": ["We're almost the same height.", "You're almost the same height as me."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *mido* or *mide* and type the whole sentence (about me): ___ 1,70.",
+      "answer": "Mido 1,70.",
+      "accept": ["Mido uno setenta."],
+      "why": "You're talking about yourself, so *mido*."
+    },
+    {
+      "prompt": "Choose *es* or *mide* and type the whole sentence: La mesa ___ dos metros de largo.",
+      "answer": "La mesa mide dos metros de largo.",
+      "accept": [],
+      "why": "Spanish measures a size with *medir*, not *ser*."
+    },
+    {
+      "prompt": "Say: The flat is 70 square metres.",
+      "answer": "El apartamento mide 70 metros cuadrados.",
+      "accept": ["El apartamento mide setenta metros cuadrados."],
+      "why": "Floor space is always *metros cuadrados*, never just *metros*."
+    },
+    {
+      "prompt": "Ask a friend: How tall are you?",
+      "answer": "¿Cuánto mides?",
+      "accept": [],
+      "why": "You're asking your friend, so the *tú* form: *mides*."
+    },
+    {
+      "prompt": "Say: The kitchen is five metres long.",
+      "answer": "La cocina mide cinco metros de largo.",
+      "accept": [],
+      "why": "The kitchen is the thing being measured, so *mide*, then *de largo* for the side."
+    },
+    {
+      "prompt": "Make it about *we*: Mido 1,70.",
+      "answer": "Medimos 1,70.",
+      "accept": [],
+      "why": "*Medimos* has no vowel change: only *mido, mides, mide, miden* do."
+    },
+    {
+      "prompt": "Make it about the window: La mesa mide dos metros de largo. (the window is two metres high)",
+      "answer": "La ventana mide dos metros de alto.",
+      "accept": [],
+      "why": "A window is measured upward, so *de alto*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La mesa es dos metros.",
+      "right": "La mesa mide dos metros.",
+      "why": "Almost. Spanish doesn't use *ser* for size: the table measures two metres."
+    },
+    {
+      "wrong": "El apartamento mide 70 metros.",
+      "right": "El apartamento mide 70 metros cuadrados.",
+      "why": "Seventy metres on its own is a length. For area, say *cuadrados*."
+    },
+    {
+      "wrong": "Medo 1,70.",
+      "right": "Mido 1,70.",
+      "why": "The vowel changes in *mido*, *mides*, *mide* and *miden*, like *pido*."
+    }
+  ],
+  "personal": "How tall are you, and how big is the room you're in? Say both with *mido* and *mide*."
+}

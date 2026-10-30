@@ -1,0 +1,235 @@
+{
+  "id": "sc-u33-c",
+  "unit": "u33",
+  "title": "Medidas y fiador",
+  "spare": true,
+  "brief": "You're Tomás, visiting an empty space with Don Hernando. He's older than you, so use usted with him. Talk about the size, where things fit, and what the owner wants.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, Tomás. Vengo a ver el local de Vale. Es grande, ¿verdad?",
+      "npcEn": "Good morning, Tomás. I've come to see Vale's space. It's big, isn't it?",
+      "intent": "Say yes, it measures about eighty square metres.",
+      "accept": [
+        "Sí, don Hernando. El local mide ochenta metros cuadrados.",
+        "Sí, mide unos ochenta metros cuadrados.",
+        "Es grande: mide ochenta metros cuadrados, más o menos."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "medir",
+          "tense": "presente",
+          "label": "size with medir: mide"
+        }
+      ],
+      "focus": "p:medir",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Y dónde van a poner el horno? Vale dice que es enorme.",
+      "npcEn": "And where will you put the oven? Vale says it's huge.",
+      "intent": "Say the oven fits at the back, next to the window.",
+      "accept": [
+        "El horno cabe al fondo, junto a la ventana.",
+        "Creo que cabe al fondo del local, junto a la ventana.",
+        "Cabe sin problema al fondo, junto a la ventana."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "caber",
+          "tense": "presente",
+          "label": "fits: cabe"
+        }
+      ],
+      "focus": "p:caber",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Ojo: el propietario pide un fiador, alguien que tenga casa propia en Bogotá.",
+      "npcEn": "Careful: the owner asks for a guarantor, someone who owns a house in Bogotá.",
+      "intent": "Say you don't know anyone who owns a house, and ask if he does.",
+      "accept": [
+        "No conozco a nadie que tenga casa propia. ¿Usted tiene una?",
+        "No conozco a nadie que tenga casa en Bogotá. ¿Usted tiene casa propia, don Hernando?",
+        "No conozco a nadie que tenga casa propia. ¿Y usted?"
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "nadie que",
+          "within": 2,
+          "label": "nobody who owns: a nadie que tenga"
+        },
+        {
+          "type": "question",
+          "label": "ask him a question"
+        }
+      ],
+      "focus": "g:subj-relative",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Yo vivo en una pieza alquilada, hijo. Pero hablaré con el propietario. ¿Cuánta plata les queda al mes después del arriendo?",
+      "npcEn": "I live in a rented room, son. But I'll talk to the owner. How much money do you have left each month after the rent?",
+      "intent": "Say you only have two hundred thousand pesos left each month.",
+      "accept": [
+        "Después del arriendo nos quedan solo doscientos mil pesos al mes.",
+        "Cada mes nos quedan doscientos mil pesos, nada más.",
+        "Nos quedan solo doscientos mil pesos cada mes."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "quedar",
+          "tense": "presente",
+          "person": "ellos",
+          "label": "what is left: nos quedan"
+        }
+      ],
+      "focus": "p:quedar-faltar-sobrar",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Está bien. Mañana lo llamo. ¿Y ahora un tinto para celebrar?",
+      "npcEn": "Fine. I'll call him tomorrow. And now a coffee to celebrate?",
+      "intent": "Thank him, and say the café is full today but there's always a free table for him.",
+      "accept": [
+        "Muchas gracias, don Hernando. Hoy el café está lleno, pero siempre hay una mesa libre para usted.",
+        "Mil gracias. El café está lleno hoy, pero hay una mesa libre para usted.",
+        "Muchas gracias por todo. Está lleno el café, pero siempre hay una mesa libre para usted."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "libre",
+          "label": "a free table: una mesa libre"
+        }
+      ],
+      "focus": "p:lleno-libre",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:creo-que",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:mas-o-menos",
+    "c:no-cierto",
+    "c:ojo",
+    "c:sin-problema",
+    "c:tienes",
+    "c:vivo-en",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:parecer-quedar",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-relative",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:alquilar",
+    "l:arriendo",
+    "l:bien",
+    "l:bueno",
+    "l:caber",
+    "l:café",
+    "l:casa",
+    "l:celebrar",
+    "l:conocer",
+    "l:creer",
+    "l:cuadrado",
+    "l:cuánto",
+    "l:decir",
+    "l:después",
+    "l:día",
+    "l:dónde",
+    "l:enorme",
+    "l:estar",
+    "l:fiador",
+    "l:fondo",
+    "l:grande",
+    "l:hablar",
+    "l:hijo",
+    "l:horno",
+    "l:hoy",
+    "l:ir",
+    "l:juntar",
+    "l:libre",
+    "l:llamar",
+    "l:lleno",
+    "l:local",
+    "l:mañana",
+    "l:medir",
+    "l:mes",
+    "l:mesa",
+    "l:metro",
+    "l:mide",
+    "l:ojo",
+    "l:pedir",
+    "l:peso",
+    "l:pieza",
+    "l:plata",
+    "l:poner",
+    "l:problema",
+    "l:propietario",
+    "l:propio",
+    "l:quedar",
+    "l:ser",
+    "l:siempre",
+    "l:tener",
+    "l:tinto",
+    "l:venir",
+    "l:ventana",
+    "l:ver",
+    "l:verdad",
+    "l:vivir",
+    "p:aproximar-cifras",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:caber",
+    "p:don-dona-nombre",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:lleno-libre",
+    "p:medir",
+    "p:medir-pesar",
+    "p:medir-pesar-caber",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:posicion-precisa",
+    "p:quedar-faltar-sobrar",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:time-sequence-basic",
+    "p:unos-approx",
+    "p:veces-al"
+  ]
+}

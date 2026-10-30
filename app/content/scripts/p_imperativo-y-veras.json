@@ -1,0 +1,178 @@
+{
+ "node": "p:imperativo-y-veras",
+ "hook": {
+  "line": "A friend doubts something and you say: just try it. Spanish does this with a command, then *y verás*.",
+  "es": "Pruébalo y verás.",
+  "en": "Try it and you'll see."
+ },
+ "examples": [
+  {
+   "es": "Pruébalo y verás.",
+   "en": "Try it and you'll see."
+  },
+  {
+   "es": "Llámala y vas a ver que no está brava.",
+   "en": "Call her and you'll see she isn't angry."
+  },
+  {
+   "es": "Dile eso a Hernando y te mata.",
+   "en": "Tell Hernando that and he'll kill you."
+  },
+  {
+   "es": "Ven mañana y verás.",
+   "en": "Come tomorrow and you'll see."
+  },
+  {
+   "es": "Pregúntale a Vale y verás que sí sabe.",
+   "en": "Ask Vale and you'll see that she does know."
+  },
+  {
+   "es": "Abre la puerta y verás.",
+   "en": "Open the door and you'll see."
+  }
+ ],
+ "rule": "A command plus *y* plus a result works like \"if you do this, this happens\". The command is not an order, it is the \"if\": *pruébalo y verás* means if you try it, you'll see.\n\nThe result is usually *verás* or *vas a ver que…*, but it can be any present or future: *dile eso y te mata*. That one is a warning, not a real command to say it.\n\nOnly *y* works. Spanish does not need *si* here.",
+ "smallPrint": "Teachers call this an imperative used as a conditional: the command stands in for the *if* clause.",
+ "readAndPick": [
+  {
+   "es": "Pruébalo y verás.",
+   "options": [
+    "I'll try it and see.",
+    "You tried it and you saw.",
+    "Try it and you'll see."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Llámala y vas a ver que no está brava.",
+   "options": [
+    "Call her and you'll see she isn't angry.",
+    "Call her because she is angry.",
+    "She'll call and see that you aren't angry."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Dile eso y te mata.",
+   "options": [
+    "He told you that and killed you.",
+    "Tell him that and he'll kill you.",
+    "I told him that and he killed you."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Ven mañana y verás.",
+   "options": [
+    "I'm coming tomorrow and I'll see.",
+    "Come tomorrow, you saw.",
+    "Come tomorrow and you'll see."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Abre la puerta y verás.",
+   "options": [
+    "Open the door and you'll see.",
+    "You opened the door and saw.",
+    "I'll open the door and see."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Pregúntale a Vale y verás que sí sabe.",
+   "options": [
+    "Vale asked you and saw that she knows.",
+    "Ask Vale and you'll see that she does know.",
+    "Ask Vale, since she doesn't know."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Dile la verdad y verás.",
+   "options": [
+    "She told you the truth and saw.",
+    "Tell her the truth or you'll see.",
+    "Tell her the truth and you'll see."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Espera un momento y verás.",
+   "options": [
+    "Wait a moment and you'll see.",
+    "I waited a moment and saw.",
+    "Wait a moment so you see."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick and type the whole sentence: *Pruébalo ___ verás.* (*y* or *pero*) Try it and you'll see.",
+   "answer": "Pruébalo y verás.",
+   "accept": [],
+   "why": "It is \"and\": the command is the *if*, and *y* leads to the result."
+  },
+  {
+   "prompt": "Pick and type the whole sentence: *Abre la puerta y ___.* (*verás* or *viste*) Open the door and you'll see.",
+   "answer": "Abre la puerta y verás.",
+   "accept": [],
+   "why": "The result looks ahead, so *verás*, not the past."
+  },
+  {
+   "prompt": "Say to a friend: Try it and you'll see.",
+   "answer": "Pruébalo y verás.",
+   "accept": [],
+   "why": "A command, then *y*, then *verás*."
+  },
+  {
+   "prompt": "Say to a friend: Come tomorrow and you'll see.",
+   "answer": "Ven mañana y verás.",
+   "accept": [
+    "Ven mañana y vas a ver."
+   ],
+   "why": "*Ven* is the informal command for *venir*."
+  },
+  {
+   "prompt": "Say to a friend: Call her and you'll see she isn't angry.",
+   "answer": "Llámala y vas a ver que no está brava.",
+   "accept": [
+    "Llámala y verás que no está brava."
+   ],
+   "why": "*Llámala* is the command with *her* attached, and *vas a ver que* introduces the result."
+  },
+  {
+   "prompt": "Say to a friend: Tell Hernando that and he'll kill you.",
+   "answer": "Dile eso a Hernando y te mata.",
+   "accept": [
+    "Dile eso a Hernando y te va a matar."
+   ],
+   "why": "The command is the *if*, and *te mata* is the consequence."
+  },
+  {
+   "prompt": "Use the *going to* version: *Ven mañana y verás.*",
+   "answer": "Ven mañana y vas a ver.",
+   "accept": [],
+   "why": "*Vas a ver* is the same promise as *verás*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Si pruébalo, verás.",
+   "right": "Pruébalo y verás.",
+   "why": "No *si* here: the command itself plays the part of \"if\"."
+  },
+  {
+   "wrong": "Pruébalo, pero verás.",
+   "right": "Pruébalo y verás.",
+   "why": "The join is \"and\", not \"but\"."
+  },
+  {
+   "wrong": "Pruebas y verás.",
+   "right": "Pruébalo y verás.",
+   "why": "Start with a real command (*pruébalo*), not the plain *tú* form."
+  }
+ ],
+ "personal": "Dare a friend to try something with this pattern: *Pruébalo y verás*, or *Pregúntale a… y verás*."
+}

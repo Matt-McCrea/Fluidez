@@ -1,0 +1,192 @@
+{
+  "node": "p:te-propongo-que",
+  "hook": {
+    "line": "When you have a plan and need people to agree, a proposal sounds more serious than \"what if we...\". It is the voice of someone chairing a meeting.",
+    "es": "Les propongo que nos reunamos el lunes.",
+    "en": "I suggest that we meet on Monday. (to a group)"
+  },
+  "examples": [
+    {
+      "es": "Les propongo que nos reunamos el lunes.",
+      "en": "I suggest that we meet on Monday. (to a group)"
+    },
+    {
+      "es": "Te propongo ir al cine el sábado.",
+      "en": "I suggest going to the cinema on Saturday. (to a friend)"
+    },
+    {
+      "es": "Te propongo que cocinemos juntos.",
+      "en": "I suggest that we cook together. (to a friend)"
+    },
+    {
+      "es": "Le propongo que lea el contrato primero.",
+      "en": "I suggest that you read the contract first. (formal)"
+    },
+    {
+      "es": "Vale propone que abramos más temprano.",
+      "en": "Vale suggests that we open earlier."
+    },
+    {
+      "es": "¿Qué nos propones que hagamos?",
+      "en": "What do you suggest that we do? (to a friend)"
+    }
+  ],
+  "rule": "*Proponer* is \"to propose\". Put the person first (*te*, *le*, *les*), then *propongo*.\n\nThere are two ways to finish:\n\n*Te propongo ir al cine.* Use the plain infinitive when the plan is just you and them.\n\n*Te propongo que vayamos al cine.* Use *que* plus the \"asking\" ending when you want to name who does it. *Vamos* becomes *vayamos*, *nos reunimos* becomes *nos reunamos*.\n\nA proposal tries to move people, so it works like *te recomiendo que*. The casual *¿qué tal si vamos?* is lighter and uses the normal verb.",
+  "smallPrint": "Teachers call this the subjunctive after a verb of influence, the same family as *recomendar* and *pedir*.",
+  "readAndPick": [
+    {
+      "es": "Les propongo que nos reunamos el lunes.",
+      "options": [
+        "I suggest that we meet on Monday.",
+        "They suggest that I meet on Monday.",
+        "We met on Monday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Te propongo ir al cine el sábado.",
+      "options": [
+        "I suggest going to the cinema on Saturday.",
+        "You suggest going to the cinema on Saturday.",
+        "I went to the cinema on Saturday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le propongo que lea el contrato primero.",
+      "options": [
+        "I suggest that I read the contract first.",
+        "I suggest that you read the contract first. (formal)",
+        "He suggests that you read the contract first."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale propone que abramos más temprano.",
+      "options": [
+        "Vale suggests that we open earlier.",
+        "Vale suggests that I open earlier.",
+        "Vale opens earlier."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Te propongo que cocinemos juntos.",
+      "options": [
+        "I suggest that you cook alone.",
+        "You suggest that I cook together.",
+        "I suggest that we cook together."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Qué nos propones que hagamos?",
+      "options": [
+        "What do you suggest that we do?",
+        "What did we suggest that you do?",
+        "What do I suggest that you do?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos proponen que firmemos hoy.",
+      "options": [
+        "We suggest that they sign today.",
+        "They suggest that we sign today.",
+        "They signed today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Les propongo trabajar juntos.",
+      "options": [
+        "I suggest working together. (to a group)",
+        "They suggest that I work together.",
+        "I worked with them."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando propone que salgamos temprano.",
+      "options": [
+        "Hernando leaves early.",
+        "Hernando suggests that we leave early.",
+        "Hernando suggests that he leaves early."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *vamos* or *vayamos* and type the whole sentence: *Te propongo que ___ al cine el sábado.*",
+      "answer": "Te propongo que vayamos al cine el sábado.",
+      "accept": [],
+      "why": "After *te propongo que*, the verb takes the \"asking\" form: *vayamos*."
+    },
+    {
+      "prompt": "Type in Spanish, to a group: I suggest that we meet on Monday.",
+      "answer": "Les propongo que nos reunamos el lunes.",
+      "accept": [
+        "Yo les propongo que nos reunamos el lunes."
+      ],
+      "why": "*Les* is the group, and *nos reunamos* is the changed form of *nos reunimos*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I suggest going to the cinema on Saturday.",
+      "answer": "Te propongo ir al cine el sábado.",
+      "accept": [
+        "Yo te propongo ir al cine el sábado."
+      ],
+      "why": "When the plan is shared, the plain infinitive is enough."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I suggest that we cook together.",
+      "answer": "Te propongo que cocinemos juntos.",
+      "accept": [
+        "Yo te propongo que cocinemos juntos."
+      ],
+      "why": "*Cocinamos* becomes *cocinemos*: an *-ar* verb takes *-e-* after *que*."
+    },
+    {
+      "prompt": "Type in Spanish, formal: I suggest that you read the contract first.",
+      "answer": "Le propongo que lea el contrato primero.",
+      "accept": [
+        "Le propongo que primero lea el contrato.",
+        "Yo le propongo que lea el contrato primero."
+      ],
+      "why": "*Le* is the formal *usted*, and *lea* is the changed form of *lee*."
+    },
+    {
+      "prompt": "Type in Spanish: Vale suggests that we open earlier.",
+      "answer": "Vale propone que abramos más temprano.",
+      "accept": [],
+      "why": "*Propone* for Vale, then *que* and *abramos*, the changed form of *abrimos*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: What do you suggest that we do?",
+      "answer": "¿Qué nos propones que hagamos?",
+      "accept": [
+        "¿Qué propones que hagamos?"
+      ],
+      "why": "*Hacemos* becomes *hagamos* after *que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Te propongo que vamos al cine.",
+      "right": "Te propongo que vayamos al cine.",
+      "why": "Almost. A proposal tries to move people, so the verb after *que* takes the \"asking\" ending."
+    },
+    {
+      "wrong": "Te propongo a ir al cine.",
+      "right": "Te propongo ir al cine.",
+      "why": "Almost. *Proponer* takes the infinitive directly, with no *a*."
+    },
+    {
+      "wrong": "Propongo que nos reunamos.",
+      "right": "Les propongo que nos reunamos el lunes.",
+      "why": "Almost. Name who you are proposing to with *te*, *le* or *les*."
+    }
+  ],
+  "personal": "Propose a plan to a friend for this weekend, starting with *Te propongo que* or *Te propongo*."
+}

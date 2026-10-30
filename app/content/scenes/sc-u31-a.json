@@ -1,0 +1,222 @@
+{
+  "id": "sc-u31-a",
+  "unit": "u31",
+  "title": "Before 1978",
+  "spare": false,
+  "brief": "You're Tomás. Mariana, the journalist, has come by the café to hear what happened between Rosa and Joaquín. Tell her the story in order, starting from before the fight, and finish with what you understood in the end. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Tomás, ya leíste las cartas. ¿Cómo estaban las cosas en 1978?",
+      "npcEn": "Mariana: Tomás, you've read the letters. How were things in 1978?",
+      "intent": "Say that by 1978 Rosa and Joaquín had already bought the building.",
+      "accept": [
+        "En 1978 Rosa y Joaquín ya habían comprado el edificio.",
+        "Para 1978, ya habían comprado el edificio juntos.",
+        "Ya habían comprado el edificio cuando todo pasó."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "plusc",
+          "label": "before 1978: había comprado / habían comprado"
+        }
+      ],
+      "focus": "g:pluperfect",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: ¿Y cómo lo pagaron?",
+      "npcEn": "Mariana: And how did they pay for it?",
+      "intent": "Say they paid with their parents' money, but Joaquín had borrowed money and couldn't pay it back.",
+      "accept": [
+        "Con el dinero de sus padres, pero Joaquín había pedido plata prestada y no podía pagarla.",
+        "Usaron el dinero de sus padres. Pero Joaquín había pedido plata y no podía devolverla.",
+        "Con la plata de sus padres. Joaquín había pedido más plata y no podía pagarla."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "plusc",
+          "label": "the loan came first: había pedido"
+        }
+      ],
+      "focus": "g:pluperfect",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: ¿Y qué pasó esa noche?",
+      "npcEn": "Mariana: And what happened that night?",
+      "intent": "Tell what happened in order: he wanted to sell, Rosa refused, they fought, and he left. Use entonces, luego or de repente.",
+      "accept": [
+        "Joaquín quiso vender. Rosa no aceptó, entonces se pelearon y él se fue esa noche.",
+        "Primero Joaquín quiso vender el edificio. Rosa no quiso y luego se pelearon. Esa misma noche él se fue.",
+        "Joaquín quería vender, pero Rosa no aceptó. De repente empezaron a gritar y él se fue."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "entonces",
+            "luego",
+            "de repente"
+          ],
+          "label": "link the events: entonces, luego or de repente"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "preterito",
+          "label": "the events themselves use the preterite"
+        }
+      ],
+      "focus": "p:entonces-de-repente",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: Y tú, ¿qué sentiste al terminar la última carta?",
+      "npcEn": "Mariana: And you, how did you feel when you finished the last letter?",
+      "intent": "Say that in the end you understood that Rosa never stopped missing her brother. Open with al final.",
+      "accept": [
+        "Al final entendí que Rosa nunca dejó de extrañar a su hermano.",
+        "Al final, entendí que ella extrañaba a su hermano todos los días.",
+        "Al final entendí que Rosa extrañaba mucho a Joaquín."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "al final"
+          ],
+          "label": "close the story with al final"
+        }
+      ],
+      "focus": "p:al-final-en-resumen",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Gracias por contármelo. Ya es tarde.",
+      "npcEn": "Mariana: Thanks for telling me. It is late now.",
+      "intent": "Say you've been talking for two hours and ask her to come and have a coffee.",
+      "accept": [
+        "Llevo dos horas hablando. ¿Me acompañas a tomar un tinto?",
+        "Llevo toda la tarde hablando, ¿quieres un tinto?",
+        "Ya llevo dos horas hablando. ¿Tomamos un café?"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "llevar",
+          "tense": "presente",
+          "person": "yo",
+          "label": "how long you have been at it: llevo"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "p:llevar-tiempo-gerundio",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:bien-y-tu",
+    "c:de-repente",
+    "c:entonces-bueno",
+    "c:y-que-paso",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-que-desde",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:object-pronoun-position",
+    "g:pluperfect",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:aceptar",
+    "l:acompañar",
+    "l:café",
+    "l:carta",
+    "l:comprar",
+    "l:contar",
+    "l:cosa",
+    "l:cómo",
+    "l:dejar",
+    "l:devolver",
+    "l:dinero",
+    "l:día",
+    "l:edificio",
+    "l:empezar",
+    "l:entender",
+    "l:estar",
+    "l:extrañar",
+    "l:final",
+    "l:gritar",
+    "l:hablar",
+    "l:hermano",
+    "l:hora",
+    "l:irse",
+    "l:juntos",
+    "l:leer",
+    "l:llevar",
+    "l:noche",
+    "l:padres",
+    "l:pagar",
+    "l:pasar",
+    "l:pedir",
+    "l:pelearse",
+    "l:plata",
+    "l:poder",
+    "l:prestar",
+    "l:querer",
+    "l:qué",
+    "l:repente",
+    "l:sentir",
+    "l:ser",
+    "l:tarde",
+    "l:terminar",
+    "l:tinto",
+    "l:tomar",
+    "l:usar",
+    "l:vender",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:dejar-de-inf",
+    "p:empezar-terminar",
+    "p:entiendo-que-subj",
+    "p:es-de-noche-tarde",
+    "p:extranar",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:llevar-tiempo-gerundio",
+    "p:masculine-plural-mixed",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:se-reciproco",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ]
+}
