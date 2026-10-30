@@ -1,0 +1,202 @@
+{
+  "id": "sc-u06-d",
+  "unit": "u06",
+  "title": "The baker's son",
+  "brief": "You're Tomás. A man in a suit from Altamira walks into the café and looks around at the old walls. Answer his questions about the café and the block, and find out what he remembers. He's a stranger, so use usted.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días. Soy Ricardo Pardo, de Altamira. Este edificio es muy viejo. ¿Es el café de su familia?",
+      "npcEn": "Good morning. I'm Ricardo Pardo, from Altamira. This building is very old. Is it your family's café?",
+      "intent": "Say yes, it was your grandmother's café.",
+      "accept": [
+        "Sí, era el café de mi abuela.",
+        "Sí, señor. Era de mi abuela.",
+        "Era el café de mi abuela Rosa."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "mi",
+          "label": "my grandmother: mi abuela"
+        },
+        {
+          "type": "verbForm",
+          "inf": "ser",
+          "tense": "imperfecto",
+          "person": "él/ella",
+          "label": "it was (describing the past): era"
+        }
+      ],
+      "focus": "g:possessives",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿De su abuela? Pero usted no es de Bogotá, ¿no? ¿Cuándo vino?",
+      "npcEn": "Your grandmother's? But you're not from Bogotá, are you? When did you come?",
+      "intent": "Say you came from Toronto not long ago.",
+      "accept": [
+        "Vine de Toronto hace poco.",
+        "Hace poco. Vine de Toronto.",
+        "Yo vine de Toronto hace poco, señor."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "venir",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I came: vine"
+        }
+      ],
+      "focus": "g:preterite-irregular-strong",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Altamira quiere comprar la cuadra. ¿Desde cuándo está el café en la cuadra?",
+      "npcEn": "Altamira wants to buy the block. How long has the café been on the block?",
+      "intent": "Say Rosa opened the café forty-seven years ago.",
+      "accept": [
+        "Rosa abrió el café hace cuarenta y siete años.",
+        "Desde 1979. Mi abuela abrió el café hace cuarenta y siete años.",
+        "Hace cuarenta y siete años. Rosa abrió el café en 1979."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "hace",
+          "label": "ago: hace cuarenta y siete años"
+        }
+      ],
+      "focus": "g:hace-ago",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "En 1979 la cuadra no era así, ¿no? ¿Cómo era?",
+      "npcEn": "In 1979 the block wasn't like this, was it? What was it like?",
+      "intent": "Say there was a bakery on the corner.",
+      "accept": [
+        "Había una panadería en la esquina.",
+        "En esa época había una panadería en la esquina.",
+        "No, señor. Había una panadería en la esquina."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "había",
+          "label": "there was (describing the past): había"
+        }
+      ],
+      "focus": "g:imperfect-states",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡La panadería de la esquina! Era de mi papá.",
+      "npcEn": "The bakery on the corner! It was my dad's.",
+      "intent": "Ask him if he was born on the block.",
+      "accept": [
+        "¿Usted nació en la cuadra?",
+        "¿Nació usted en la cuadra?",
+        "¿Y usted también nació en la cuadra?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "it's a question: ¿…?"
+        },
+        {
+          "type": "verbForm",
+          "inf": "nacer",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "were you born (usted): nació"
+        }
+      ],
+      "focus": "p:naci-en",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Sí, nací en la cuadra en 1975. Mi papá vendió la panadería en 1990. ¡Ay, el pan de mi papá!",
+      "npcEn": "Yes, I was born on the block in 1975. My dad sold the bakery in 1990. Oh, my dad's bread!",
+      "intent": "Say Vale still makes Rosa's bread, and offer him a tinto.",
+      "accept": [
+        "Vale todavía hace el pan de Rosa. ¿Quiere un tinto?",
+        "Vale todavía hace pan como Rosa. ¿Un tinto, señor?",
+        "¿Quiere un tinto? Vale todavía hace el pan de Rosa."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "todavía",
+          "label": "still: todavía"
+        }
+      ],
+      "focus": "p:ya-todavia-basic",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:como-era",
+    "c:en-esa-epoca",
+    "c:era",
+    "c:hace-rato",
+    "c:hola-buenos-dias",
+    "c:no-cierto",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:imperfect-states",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "l:abrir",
+    "l:abuela",
+    "l:año",
+    "l:bueno",
+    "l:café",
+    "l:comprar",
+    "l:cuadra",
+    "l:cuándo",
+    "l:cómo",
+    "l:día",
+    "l:edificio",
+    "l:esquina",
+    "l:estar",
+    "l:familia",
+    "l:hacer",
+    "l:nacer",
+    "l:pan",
+    "l:panadería",
+    "l:papá",
+    "l:querer",
+    "l:ser",
+    "l:señor",
+    "l:tinto",
+    "l:vender",
+    "l:venir",
+    "l:viejo",
+    "l:época",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:ir-a-venir-de-place",
+    "p:naci-en",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:tambien-tampoco",
+    "p:viejo-antiguo-mayor",
+    "p:ya-todavia-basic"
+  ]
+}
