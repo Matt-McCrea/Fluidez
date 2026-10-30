@@ -2,15 +2,27 @@
   "id": "ch017",
   "unit": "u07",
   "title": "Ocho metros",
-  "text": "Hombre: La casa de doña Gloria: doce metros.\nOtro hombre: Y el café de la esquina: ocho metros.\nEn la calle, dos hombres cuentan metros. En las camisas hay un nombre: Grupo Altamira.\nTomás: Buenos días. ¿Qué hacen acá?\nHombre: Trabajamos, señor. El señor Altamira quiere toda la cuadra.\nTomás está nervioso. Abre la boca, y sale el español de ayer.\nTomás: ¡Siga, siga! Está en su casa.\nVale: ¡Tomás! No es su casa. Es la casa de Rosa.\nHernando mira el nombre de Altamira y escupe en la calle.\nSimón: ¡Altamira no, Altamira no, Altamira no!\nLos hombres de Altamira se van.\nHernando: En este barrio hay mucha gente amable, Tomás, y muchas casas viejas.\nVale: Hay bastantes tiendas, una droguería y pocos bancos. Todo queda cerquita.\nTomás: Y hay demasiados hombres de Altamira.\nHernando mira la calle un momento.\nHernando: En esta calle, Joaquín y yo jugamos fútbol muchas noches.\nTomás: ¿Joaquín era su amigo?\nHernando: Sí, mi amigo. Era el amigo de todo el mundo.\nTomás: ¿Y dónde está ahora?\nHernando: Un momento, Tomás. Hoy no puedo.\nVale: Tomás, quedan veinte días, y necesitamos mucha plata.\nTomás mira el café. Ocho metros. Cuarenta y siete años.",
+  "text": "Tomás, Vale y Hernando bajan rápido. Delante del café hay dos hombres con chalecos azules: Grupo Altamira.\nLos hombres cuentan metros: la calle, la casa de al lado, la puerta del café.\nHombre: El café de la esquina: ocho metros.\nOtro hombre: Y la casa de al lado: doce.\nTomás: Buenos días. ¿Qué hacen acá?\nHombre: Trabajamos, señor. Somos de Altamira. La empresa quiere toda la cuadra.\nTomás trata de decir algo serio. Abre la boca, y sale el español de ayer.\nTomás: ¡Siga, siga! Está en su casa.\nVale: ¡Tomás! No es su casa. ¡Es la casa de Rosa!\nHernando mira el nombre de Altamira y escupe en la calle.\nSimón: ¡Altamira no! ¡Altamira no!\nHernando: Mira esta cuadra, Tomás. Aquí hay casas muy viejas y mucha gente buena.\nVale: Y todo queda cerquita: la panadería, la droguería, la tienda de la esquina.\nTomás: Y demasiados hombres de Altamira.\nHernando mira la calle un momento.\nHernando: En esta calle, Joaquín y yo jugamos fútbol muchas noches.\nTomás: ¿Joaquín era su amigo?\nHernando: Sí, mijo. Era el amigo de todo el mundo.\nTomás: ¿Y dónde está ahora?\nHernando no contesta. Entra al café, solo.\nVale: Tomás, quedan veintiún días, y necesitamos mucha plata.\nTomás mira el café. Ocho metros. Cuarenta y siete años.",
   "gloss": [
     {
-      "es": "doce metros",
-      "en": "twelve metres"
+      "es": "bajan rápido",
+      "en": "hurry down"
     },
     {
-      "es": "dos hombres cuentan metros",
-      "en": "two men are counting out metres"
+      "es": "Delante del café",
+      "en": "In front of the café"
+    },
+    {
+      "es": "chalecos azules",
+      "en": "blue vests"
+    },
+    {
+      "es": "la casa de al lado",
+      "en": "the house next door"
+    },
+    {
+      "es": "trata de decir algo serio",
+      "en": "tries to say something serious"
     },
     {
       "es": "sale el español de ayer",
@@ -21,23 +33,23 @@
       "en": "spits in the street"
     },
     {
-      "es": "Los hombres de Altamira se van.",
-      "en": "The Altamira men leave."
-    },
-    {
       "es": "Todo queda cerquita.",
       "en": "Everything is really close by."
     },
     {
       "es": "Era el amigo de todo el mundo.",
       "en": "He was everybody's friend."
+    },
+    {
+      "es": "cuentan metros",
+      "en": "are counting out metres"
     }
   ],
   "questions": [
     {
       "q": "What are the two men doing in the street?",
       "options": [
-        "Measuring the houses and the café for Grupo Altamira",
+        "Measuring the street, the house next door and the café for Grupo Altamira",
         "Selling bread",
         "Looking for Tomás's room",
         "Fixing the shower"
@@ -65,16 +77,26 @@
       "answer": 0
     },
     {
-      "q": "¿Qué hay en el barrio, según Vale?",
+      "q": "¿Qué queda cerquita, según Vale?",
       "options": [
-        "Bastantes tiendas, una droguería y pocos bancos",
+        "La panadería, la droguería y la tienda de la esquina",
         "Muchos hoteles",
-        "Demasiados bancos"
+        "El aeropuerto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando do when Tomás asks where Joaquín is now?",
+      "options": [
+        "He doesn't answer: he goes in and orders a tinto",
+        "He says Joaquín is in Medellín",
+        "He calls Joaquín",
+        "He shows Tomás a letter"
       ],
       "answer": 0
     }
   ],
-  "hook": "Someone at Grupo Altamira already has the café's measurements, and Hernando has finally said Joaquín's name out loud. Soon the man who sent the measuring tape comes in for a coffee.",
+  "hook": "Grupo Altamira already has the café's measurements, and Hernando has finally said Joaquín's name out loud. Soon somebody from Altamira comes in for a coffee.",
   "rereadQuestions": [
     {
       "q": "How wide is the café, according to the men?",
@@ -87,7 +109,7 @@
       "answer": 0
     },
     {
-      "q": "What is written on the men's shirts?",
+      "q": "What is written on the men's vests?",
       "options": [
         "Grupo Altamira",
         "La Esquina de Rosa",
@@ -99,8 +121,8 @@
     {
       "q": "How many days are left in the bet?",
       "options": [
-        "Twenty",
         "Twenty-one",
+        "Nineteen",
         "Thirty",
         "Forty-seven"
       ],
@@ -114,7 +136,6 @@
     "c:esta-en-su-casa",
     "c:hay",
     "c:hola-buenos-dias",
-    "c:puedo",
     "c:queda-cerquita",
     "c:siga",
     "g:adjective-agreement",
@@ -122,7 +143,6 @@
     "g:gender-articles",
     "g:hay-vs-esta",
     "g:imperfect-states",
-    "g:ir-a-plans",
     "g:present-ar",
     "g:present-er-ir",
     "g:quantifiers",
@@ -130,34 +150,42 @@
     "g:ser-identity",
     "g:stem-boot",
     "p:aqui-ahi-alla",
+    "p:cerca-de",
     "p:demonstratives-basic",
-    "p:lugar-tiene",
+    "p:indefinites-basic",
+    "p:numbers-un-una",
+    "p:position-de",
     "p:possessives-basic",
     "p:quantifiers-basic",
-    "p:senor-don-article",
     "p:viejo-antiguo-mayor"
   ],
   "lexemes": [
     "l:abrir",
     "l:acá",
     "l:ahora",
-    "l:amable",
     "l:amigo",
+    "l:aquí",
     "l:ayer",
+    "l:azul",
     "l:año",
-    "l:banco",
-    "l:barrio",
+    "l:bajar",
     "l:boca",
+    "l:buena",
     "l:bueno",
     "l:café",
     "l:calle",
-    "l:camisa",
     "l:casa",
+    "l:chaleco",
     "l:contar",
+    "l:contestar",
     "l:cuadra",
+    "l:decir",
+    "l:delante",
     "l:droguería",
     "l:día",
     "l:dónde",
+    "l:empresa",
+    "l:entrar",
     "l:escupir",
     "l:español",
     "l:esquina",
@@ -166,28 +194,31 @@
     "l:gente",
     "l:hacer",
     "l:hombre",
-    "l:hoy",
-    "l:irse",
     "l:jugar",
+    "l:lado",
     "l:metro",
+    "l:mijo",
     "l:mirar",
     "l:momento",
     "l:mundo",
     "l:necesitar",
-    "l:nervioso",
     "l:noche",
     "l:nombre",
+    "l:panadería",
     "l:plata",
-    "l:poder",
+    "l:puerta",
     "l:quedar",
     "l:querer",
     "l:qué",
+    "l:rápido",
     "l:salir",
     "l:seguir",
     "l:ser",
+    "l:serio",
     "l:señor",
     "l:tienda",
     "l:trabajar",
+    "l:tratar",
     "l:viejo"
   ]
 }

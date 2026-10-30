@@ -2,15 +2,23 @@
   "id": "ch018",
   "unit": "u08",
   "title": "El traje de domingo",
-  "text": "Entra un hombre con traje negro, y Tomás sale del mostrador.\nTomás: ¡Hoy no, señor Altamira!\nHernando: Tomás, soy yo. Es mi traje de domingo. Mi esposa compró el traje en 1985.\nHernando: Hoy es un día importante. Tomás, ¿tú has subido a Monserrate?\nTomás: Nunca he subido.\nVale: ¿Nunca? ¿Y has comido ajiaco?\nTomás: No.\nHernando: ¿Has jugado tejo?\nTomás: ¿Tejo? Ni idea.\nVale y Hernando miran a Tomás. Están blancos.\nVale: ¡El ajiaco de Rosa está en su cuaderno! Y tú nunca has comido ajiaco.\nTomás: Pero he montado en avión cuarenta veces. Conozco todos los aeropuertos de Canadá.\nHernando: Yo nunca he montado en avión. Nunca he salido de Colombia. Pero he montado a caballo.\nVale: ¿Y el contrato de arriendo del café? ¿Has leído el contrato?\nSimón: ¡Ni idea! ¡No tengo ni idea!\nTomás: Gracias, Simón. Está en el armario, con la carta de Rosa.\nVale: Quedan diecinueve días, Tomás.\nHernando: Hoy, ajiaco. Mañana, tejo. Y el domingo, Monserrate.\nOtro hombre entra. Tiene un traje muy bonito y muy caro.\nHombre: Buenos días. Un capuchino, por favor.\nSimón no habla. Es la primera vez.",
+  "text": "Un hombre con traje negro entra al café. Tomás sale rápido del mostrador.\nTomás: Buenos días, señor. No vendemos el café. ¡Hoy no!\nHernando: Tomás, soy yo. Es mi traje de domingo. Mi esposa compró este traje en 1985.\nTomás: ¿Y por qué el traje, don Hernando?\nHernando: Porque hoy conoces Bogotá. A ver, ¿has subido a Monserrate?\nTomás: No, nunca he subido.\nVale: ¿Nunca? ¿Y has comido ajiaco?\nTomás: Tampoco.\nHernando: ¿Has jugado tejo?\nTomás: ¿Tejo? Ni idea.\nVale: ¡El ajiaco de Rosa está en su cuaderno, y tú nunca has comido ajiaco!\nTomás: Pero he montado en avión cuarenta veces. Conozco todos los aeropuertos de Canadá.\nHernando: ¡Qué envidia! Yo nunca he montado en avión. Pero he montado a caballo, mijo.\nSimón: ¡Ni idea! ¡Ni idea!\nVale: Y otra cosa. El local del café es arrendado. ¿Has leído el contrato de arriendo?\nTomás: Todavía no. Está en mi armario, con la carta de Rosa.\nVale: Quedan diecinueve días, Tomás, y Altamira ya tiene los metros del café.\nHernando: Entonces hoy, ajiaco. Mañana, tejo. Y el domingo, Monserrate.\nEntra otro hombre. Tiene un traje muy bonito y muy caro.\nHombre: Buenos días. Un capuchino, por favor.\nSimón mira al hombre y no habla. Es la primera vez.",
   "gloss": [
     {
       "es": "el mostrador",
       "en": "the counter"
     },
     {
-      "es": "Mi esposa compró el traje en 1985.",
-      "en": "My wife bought the suit in 1985."
+      "es": "No vendemos el café.",
+      "en": "We are not selling the café."
+    },
+    {
+      "es": "Mi esposa compró este traje en 1985.",
+      "en": "My wife bought this suit in 1985."
+    },
+    {
+      "es": "hoy conoces Bogotá",
+      "en": "today you get to know Bogotá"
     },
     {
       "es": "Monserrate",
@@ -21,12 +29,16 @@
       "en": "tejo (a Colombian game: you throw a metal disc at gunpowder targets)"
     },
     {
-      "es": "Están blancos.",
-      "en": "They have gone pale."
-    },
-    {
       "es": "Conozco todos los aeropuertos de Canadá.",
       "en": "I know every airport in Canada."
+    },
+    {
+      "es": "he montado a caballo",
+      "en": "I have ridden a horse"
+    },
+    {
+      "es": "El local del café es arrendado.",
+      "en": "The café's premises are rented."
     },
     {
       "es": "el contrato de arriendo",
@@ -43,9 +55,9 @@
   ],
   "questions": [
     {
-      "q": "Why does Tomás shout «¡Hoy no, señor Altamira!»?",
+      "q": "Why does Tomás rush out and say «No vendemos el café»?",
       "options": [
-        "He thinks the man in the black suit is Altamira, but it is Hernando",
+        "He thinks the man in the black suit has come from Altamira, but it is Hernando",
         "Altamira has phoned the café",
         "He is talking to Simón",
         "He wants Hernando to leave"
@@ -127,25 +139,27 @@
   ],
   "requires": [
     "c:bien-y-tu",
-    "c:gracias-de-nada",
+    "c:entonces-bueno",
     "c:hola-buenos-dias",
     "c:ni-idea",
     "c:por-favor",
+    "c:porque",
+    "c:que-envidia",
     "c:si-soy-yo",
-    "c:tengo",
     "c:tienes",
-    "g:adjective-agreement",
     "g:estar-location-states",
     "g:gender-articles",
     "g:perfecto-experience",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
+    "g:questions",
     "g:ser-identity",
     "g:stem-boot",
     "g:yo-irregular",
     "p:dates-years",
     "p:days-el-lunes",
+    "p:demonstratives-basic",
     "p:ordinal-floor",
     "p:ordinals-primer-tercer",
     "p:possessives-basic",
@@ -158,7 +172,6 @@
     "l:armario",
     "l:arriendo",
     "l:avión",
-    "l:blanco",
     "l:bonito",
     "l:bueno",
     "l:caballo",
@@ -169,10 +182,12 @@
     "l:comprar",
     "l:conocer",
     "l:contrato",
+    "l:cosa",
     "l:cuaderno",
     "l:domingo",
     "l:día",
     "l:entrar",
+    "l:envidia",
     "l:esposa",
     "l:estar",
     "l:favor",
@@ -180,21 +195,27 @@
     "l:hombre",
     "l:hoy",
     "l:idea",
-    "l:importante",
     "l:jugar",
     "l:leer",
+    "l:local",
     "l:mañana",
+    "l:metro",
+    "l:mijo",
     "l:mirar",
     "l:montar",
     "l:mostrador",
     "l:negro",
     "l:quedar",
+    "l:qué",
+    "l:rápido",
     "l:salir",
     "l:ser",
     "l:señor",
     "l:subir",
     "l:tener",
     "l:traje",
+    "l:vender",
+    "l:ver",
     "l:vez"
   ]
 }

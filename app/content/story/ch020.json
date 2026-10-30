@@ -2,35 +2,43 @@
   "id": "ch020",
   "unit": "u08",
   "title": "Día treinta",
-  "text": "Tomás saca la maleta del armario. Mira la maleta un rato. Después la pone debajo de la cama.\nDía treinta, diez de la noche. Vale cuenta el dinero del mes, y Hernando y Simón la miran.\nHernando: ¿Y? ¿Cuánto es, mija?\nVale escribe el total en la pizarra: $2.130.000.\nVale: Dos millones ciento treinta mil pesos.\nHernando: ¡Ganamos! ¡Tomás perdió!\nVale: Tomás, perdiste. Ahora son trescientos sesenta y cinco días en el café, con Simón.\nTomás: Lo sé.\nVale: ¿Y estás contento?\nTomás: Sí. Estoy contento. ¿Es normal?\nHernando: Normal no es, Tomás.\nHernando: ¿Y el contrato de arriendo? ¿Lo leíste?\nTomás: Lo leí anoche. Es largo y aburrido.\nHernando: ¿Y el ajiaco?\nTomás: Lo comí el domingo, después de Monserrate. Y en el tejo... perdí con un niño de diez años.\nHernando está cantando, y Vale está bailando con Simón.\nSimón tiene la tarjeta de Altamira en la boca.\nVale: Simón, ¿cómo se llama el señor de la tarjeta?\nSimón: ¡Capuchino! ¡Capuchino!\nHernando: Rosa tenía un dicho: «El café es la casa de todos». Yo lo recuerdo bien.\nTomás mira la foto de Rosa en la vitrina. Después mira a Vale.\nTomás: Mañana a las cinco, ¿no?\nVale: A las cinco, Tomás. Día uno de trescientos sesenta y cinco.",
+  "text": "Esa noche, Tomás saca la maleta del armario. La mira un rato. Después la pone debajo de la cama.\nPasan los días. Día treinta, diez de la noche. Vale cuenta el dinero del mes, y Hernando y Simón la miran.\nHernando: ¿Y? ¿Cuánto es, mija?\nVale escribe el total en la pizarra: $2.130.000. Dos millones ciento treinta mil pesos.\nHernando: ¡Ganamos! ¡Tomás perdió!\nVale: Perdiste, Tomás. Ahora son trescientos sesenta y cinco días en el café. Con Simón.\nTomás: Lo sé.\nVale: ¿Y por qué estás contento?\nTomás: No sé. ¿Es normal?\nSimón: ¡Normal! ¡Normal!\nHernando: Normal no es, mijo. Pero es bonito.\nVale: En treinta días subiste a Monserrate, comiste ajiaco y jugaste tejo.\nTomás: Y perdí en el tejo con un niño de diez años.\nHernando: De nueve, mijo. De nueve.\nHernando canta, y Vale baila con Simón.\nSimón tiene la tarjeta de Altamira en el pico.\nVale: Simón, ¿cómo se llama el señor de la tarjeta?\nSimón: ¡Capuchino! ¡Capuchino!\nHernando: Rosa tenía un dicho. ¿Lo recuerdas, Vale?\nVale: Claro. «El café es la casa de todos».\nTomás mira la foto de Rosa en la vitrina. Después mira a Vale.\nTomás: Mañana a las cinco, ¿no?\nVale: A las cinco, Tomás. Día uno de trescientos sesenta y cinco.",
   "gloss": [
+    {
+      "es": "La mira un rato. Después la pone debajo de la cama.",
+      "en": "He looks at it for a while. Then he puts it under the bed."
+    },
+    {
+      "es": "Pasan los días.",
+      "en": "The days go by."
+    },
     {
       "es": "la pizarra",
       "en": "the board"
     },
     {
       "es": "mija",
-      "en": "my dear"
+      "en": "dear"
     },
     {
-      "es": "Mira la maleta un rato. Después la pone debajo de la cama.",
-      "en": "He looks at the suitcase for a while. Then he puts it under the bed."
+      "es": "Normal no es, mijo. Pero es bonito.",
+      "en": "Normal it isn't, son. But it's nice."
     },
     {
-      "es": "Normal no es, Tomás.",
-      "en": "Normal it isn't, Tomás."
+      "es": "perdí en el tejo con un niño de diez años",
+      "en": "I lost at tejo to a ten year old boy"
     },
     {
-      "es": "perdí con un niño de diez años",
-      "en": "I lost to a ten year old boy"
+      "es": "en el pico",
+      "en": "in his beak"
     },
     {
       "es": "Rosa tenía un dicho",
       "en": "Rosa had a saying"
     },
     {
-      "es": "Yo lo recuerdo bien.",
-      "en": "I remember it well."
+      "es": "¿Lo recuerdas?",
+      "en": "Do you remember it?"
     },
     {
       "es": "Día uno de trescientos sesenta y cinco.",
@@ -61,7 +69,7 @@
     {
       "q": "Why is it strange that Tomás is happy?",
       "options": [
-        "He has lost the bet, so now he has to work in the café for a year",
+        "He has lost the bet, so now he has to keep the café open for a year",
         "He has sold the café",
         "Vale is leaving",
         "He has won a trip to the coast"
@@ -71,7 +79,7 @@
     {
       "q": "¿Dónde está la tarjeta de Altamira?",
       "options": [
-        "En la boca de Simón",
+        "En el pico de Simón",
         "En la maleta",
         "En la vitrina"
       ],
@@ -81,20 +89,20 @@
   "hook": "Tomás has lost the bet, and he is staying in Bogotá for three hundred and sixty five days. Tomorrow at five in the morning the first one begins.",
   "rereadQuestions": [
     {
-      "q": "What does Tomás think of the lease?",
+      "q": "What did Tomás do in the thirty days?",
       "options": [
-        "It is long and boring",
-        "It is short and clear",
-        "He has not read it",
-        "It is in English"
+        "He climbed Monserrate, ate ajiaco and played tejo",
+        "He went to the coast",
+        "He read Rosa's letter to Joaquín",
+        "He flew to Toronto"
       ],
       "answer": 0
     },
     {
-      "q": "Who beat Tomás at tejo?",
+      "q": "Who beat Tomás at tejo, according to Hernando?",
       "options": [
+        "A nine year old boy",
         "A ten year old boy",
-        "Hernando",
         "Vale",
         "Altamira"
       ],
@@ -112,85 +120,82 @@
     }
   ],
   "requires": [
-    "c:ayer-anoche",
-    "c:bien-y-tu",
-    "c:comi",
+    "c:claro-listo",
     "c:cuanto-cuesta",
     "c:no-cierto",
+    "c:no-se",
     "c:se-llama",
     "c:tienes",
+    "g:demonstratives",
     "g:direct-objects",
-    "g:estar-gerund",
     "g:estar-location-states",
     "g:gender-articles",
     "g:imperfect-states",
     "g:present-ar",
     "g:present-er-ir",
+    "g:preterite-ar",
     "g:preterite-er-ir",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
     "g:yo-irregular",
-    "p:bien-bueno",
-    "p:bien-mal-vs-bueno-malo",
     "p:cerca-de",
-    "p:days-el-lunes",
     "p:numbers-un-una",
     "p:position-de",
     "p:time-sequence-basic"
   ],
   "lexemes": [
-    "l:aburrido",
     "l:ahora",
     "l:ajiaco",
-    "l:anoche",
     "l:armario",
-    "l:arriendo",
     "l:año",
     "l:bailar",
-    "l:bien",
-    "l:boca",
+    "l:bonito",
     "l:café",
     "l:cama",
     "l:cantar",
     "l:casa",
+    "l:claro",
     "l:comer",
     "l:contar",
     "l:contento",
-    "l:contrato",
     "l:cuánto",
     "l:cómo",
     "l:debajo",
     "l:después",
     "l:dicho",
     "l:dinero",
-    "l:domingo",
     "l:día",
     "l:escribir",
     "l:estar",
     "l:foto",
     "l:ganar",
-    "l:largo",
-    "l:leer",
+    "l:jugar",
     "l:llamarse",
     "l:maleta",
     "l:mañana",
     "l:mes",
     "l:mija",
+    "l:mijo",
+    "l:mira",
     "l:mirar",
     "l:niño",
     "l:noche",
     "l:normal",
+    "l:pasar",
     "l:perder",
     "l:peso",
+    "l:pico",
     "l:pizarra",
     "l:poner",
+    "l:qué",
     "l:rato",
     "l:recordar",
     "l:saber",
     "l:sacar",
     "l:ser",
     "l:señor",
+    "l:subir",
     "l:tarjeta",
     "l:tener",
     "l:total",

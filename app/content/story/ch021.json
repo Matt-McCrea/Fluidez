@@ -2,7 +2,7 @@
   "id": "ch021",
   "unit": "u09",
   "title": "Agua fría",
-  "text": "Tomás: ¡Aaay!\nGloria: ¡Hoy sí hay agua, Tomás!\nTomás: ¡Pero está fría! ¿Y el jabón? ¿Y la toalla?\nGloria: El jabón y la toalla están en el armario.\nTomás mira el reloj: son las cinco y veinte. Es el día uno.\nTomás: ¡Uy, se me hizo tarde!\nGloria: ¡Tomás! ¡El pan del café!\nTomás: ¡Ya voy, ya voy!\nTomás baja la escalera con la toalla en la cabeza.\nSon las seis menos cinco. Vale mira el reloj de la pared.\nVale: Llegas temprano, Tomás. Muy temprano.\nTomás: Mañana llego a las cinco.\nSimón: ¡Qué pereza! ¡Qué pereza!\nHernando: ¿Y esa cara, Tomás?\nTomás: Agua fría, don Hernando.\nA las cuatro, Tomás hace las cuentas en la computadora. A las cinco juega parqués con Hernando, y pierde.\nVale saca un reloj viejo de la vitrina.\nVale: Es el reloj de Rosa. Rosa nunca llegó tarde. Ni un día en cuarenta años.\nVale: Ahora es tu reloj, Tomás.\nEn su cuarto, Tomás tiene dos correos. Uno es de Altamira, y Tomás no lo abre. El otro es de Toronto: «Entrevista de trabajo. Jueves, ocho de la noche».\nTomás mira el reloj de Rosa. Después escribe una palabra: «Sí».\nY se va a la cama.",
+  "text": "Día uno. Cinco y veinte de la mañana.\nTomás: ¡Aaay!\nGloria: ¡Hoy sí hay agua, Tomás!\nTomás: ¡Sí, pero está fría! ¿Y el jabón? ¿Y la toalla?\nGloria: ¡En el armario del baño!\nTomás sale del baño y mira el reloj: ya son las cinco y media.\nTomás: ¡Uy, se me hizo tarde!\nGloria: ¡Tomás! ¡El pan para el café ya está listo!\nTomás baja la escalera con la toalla en la cabeza y el pan en las manos.\nA las seis menos cinco entra al café. Vale mira el reloj de la pared.\nVale: Llegas temprano, Tomás. Muy temprano.\nTomás: Mañana llego a las cinco. De verdad.\nSimón: ¡Qué pereza! ¡Qué pereza!\nA las siete llega Hernando.\nHernando: ¿Y esa cara, mijo?\nTomás: Agua fría, don Hernando.\nA las cuatro, Tomás hace las cuentas en la computadora. A las cinco juega ajedrez con Hernando, y pierde.\nAntes de cerrar, Vale saca un reloj viejo de la vitrina.\nVale: Es el reloj de Rosa. Rosa nunca llegó tarde, ni un día en cuarenta años. Ahora es tuyo, Tomás.\nEsa noche, Tomás tiene dos correos. Uno es de Altamira, y no lo abre. El otro es de una empresa de Toronto: «Entrevista de trabajo. Jueves, ocho de la noche».\nTomás toca el reloj de Rosa. Después escribe una palabra: «Sí».",
   "gloss": [
     {
       "es": "¡Aaay!",
@@ -13,24 +13,36 @@
       "en": "Oh no, I'm running late!"
     },
     {
-      "es": "parqués",
-      "en": "parqués, a Colombian board game like ludo"
-    },
-    {
       "es": "Llegas temprano, Tomás. Muy temprano.",
       "en": "You're early, Tomás. Very early. (she doesn't mean it)"
     },
     {
-      "es": "¿Y esa cara, Tomás?",
-      "en": "What's with that face, Tomás?"
+      "es": "¿Y esa cara?",
+      "en": "What's with that face?"
     },
     {
-      "es": "Ni un día en cuarenta años.",
-      "en": "Not one day in forty years."
+      "es": "Antes de cerrar",
+      "en": "Before closing"
     },
     {
-      "es": "Y se va a la cama.",
-      "en": "And he goes to bed."
+      "es": "ni un día en cuarenta años",
+      "en": "not one day in forty years"
+    },
+    {
+      "es": "Ahora es tuyo.",
+      "en": "Now it's yours."
+    },
+    {
+      "es": "Entrevista de trabajo",
+      "en": "Job interview"
+    },
+    {
+      "es": "toca",
+      "en": "touches"
+    },
+    {
+      "es": "el armario del baño",
+      "en": "the bathroom cupboard"
     }
   ],
   "questions": [
@@ -47,7 +59,7 @@
     {
       "q": "Why is Vale's \"you're early\" funny?",
       "options": [
-        "Tomás arrives at five to six, and Vale has been there for ages",
+        "Tomás arrives at five to six after promising five, and Vale has been there for ages",
         "Tomás arrives at four in the morning",
         "Vale arrives after Tomás",
         "The café is closed today"
@@ -76,9 +88,9 @@
     {
       "q": "What has Tomás just agreed to?",
       "options": [
-        "A job interview from Toronto, on Thursday at eight in the evening",
+        "A video job interview with a company in Toronto, on Thursday at eight in the evening",
         "Selling the café to Altamira",
-        "A game of parqués with Hernando on Thursday",
+        "A game of chess with Hernando on Thursday",
         "Arriving at the café at five every day"
       ],
       "answer": 0
@@ -89,7 +101,7 @@
     {
       "q": "Where are the soap and the towel?",
       "options": [
-        "In the wardrobe",
+        "In the bathroom cupboard",
         "In the window",
         "In the café",
         "In the kitchen"
@@ -99,10 +111,10 @@
     {
       "q": "How does Tomás go down the stairs?",
       "options": [
-        "With the towel on his head",
-        "With the bread in his hand",
+        "With the towel on his head and the bread in his hands",
         "With Simón on his shoulder",
-        "With the letter in his pocket"
+        "With the letter in his pocket",
+        "With Gloria"
       ],
       "answer": 0
     },
@@ -118,25 +130,23 @@
     }
   ],
   "requires": [
+    "c:claro-listo",
     "c:hay",
     "c:que-pereza",
     "c:se-me-hizo-tarde",
     "c:tienes",
-    "c:voy-vas",
-    "c:ya-voy",
     "g:demonstratives",
     "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
-    "g:ir-a-plans",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
     "g:ser-identity",
     "g:stem-boot",
-    "p:ir-a-venir-de-place",
-    "p:possessives-basic",
+    "p:de-owner",
+    "p:para-inf",
     "p:quantifiers-basic",
     "p:senor-don-article",
     "p:time-sequence-basic",
@@ -146,18 +156,23 @@
     "l:abrir",
     "l:agua",
     "l:ahora",
+    "l:ajedrez",
+    "l:antes",
     "l:armario",
     "l:año",
     "l:bajar",
+    "l:baño",
     "l:cabeza",
     "l:café",
-    "l:cama",
     "l:cara",
+    "l:cerrar",
     "l:computadora",
     "l:correo",
     "l:cuenta",
     "l:después",
     "l:día",
+    "l:empresa",
+    "l:entrar",
     "l:entrevista",
     "l:escalera",
     "l:escribir",
@@ -166,29 +181,32 @@
     "l:hacer",
     "l:hacerse",
     "l:hoy",
-    "l:ir",
-    "l:irse",
     "l:jabón",
     "l:jueves",
     "l:jugar",
+    "l:listo",
     "l:llegar",
+    "l:mano",
     "l:mañana",
+    "l:mijo",
     "l:mirar",
     "l:noche",
     "l:palabra",
     "l:pan",
     "l:pared",
-    "l:parque",
     "l:perder",
     "l:qué",
     "l:reloj",
     "l:sacar",
+    "l:salir",
     "l:ser",
     "l:tarde",
     "l:temprano",
     "l:tener",
     "l:toalla",
+    "l:tocar",
     "l:trabajo",
+    "l:verdad",
     "l:viejo",
     "l:vitrina"
   ]

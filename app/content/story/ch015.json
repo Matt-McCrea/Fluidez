@@ -2,19 +2,31 @@
   "id": "ch015",
   "unit": "u07",
   "title": "Joaquín, mi hermano",
-  "text": "«Joaquín, mi hermano:». Tomás lee la frase otra vez.\nTomás: ¿Hermano? ¿Rosa tenía un hermano?\nVale: Rosa nunca habló de un hermano.\nHernando: Es el chico de la foto, Tomás. Tiene tu nariz.\nTomás pone la carta en el cuaderno.\nTomás: Hoy no puedo.\nVale: Tomás, ¿dónde duermes? Tienes cara de perro triste.\nTomás: En el hostel. Doce camas, doce hombres, y yo estoy en la cama doce.\nHernando: Doña Gloria arrienda un cuarto. Su casa está a dos cuadras, arriba de la panadería.\nEn la puerta está doña Gloria, con harina en las manos.\nGloria: ¡Siga, siga! Está en su casa.\nTomás: Gracias, señora. ¿Hay ducha?\nGloria: Hay ducha, hay una cama, hay una lámpara y hay un balcón. El patio está allá.\nTomás: ¿Y el arriendo?\nGloria: Seiscientos mil pesos al mes.\nTomás sale al balcón. Allá está la catedral. Y allá, en la esquina, está el café de Rosa.\nTomás: Vale, ¿yo puedo vivir acá?\nVale: Tú eres de acá, Tomás.\nMás tarde, en el café:\nSimón: ¡Siga, siga! ¡Está en su casa!\nTomás: Quedan tres semanas, Simón, y ya tengo casa.\nHernando: ¿Y la ducha?\nTomás: Funciona un día, y dos días no.",
+  "text": "«Joaquín, mi hermano:». Tomás lee la primera frase otra vez.\nTomás: ¿Hermano? ¿Rosa tenía un hermano?\nVale: Rosa nunca habló de un hermano. Nunca.\nHernando: Es el muchacho de la foto, mijo.\nTomás guarda la carta en el cuaderno.\nTomás: Hoy no puedo leer más.\nVale: Tomás, tienes cara de perro triste. ¿Dormiste bien?\nTomás: ¿En el hostel? Somos doce en un cuarto, y uno ronca toda la noche.\nHernando: Doña Gloria arrienda un cuarto, arriba de la panadería. Queda a dos cuadras.\nEsa tarde, Tomás y Vale tocan la puerta de doña Gloria. Ella abre con harina en las manos.\nGloria: ¡Siga, siga! Está en su casa. El cuarto es por acá.\nEl cuarto es pequeño. Hay una cama, una mesa, una lámpara y un balcón.\nGloria: El baño está al lado. La ducha funciona un día sí y dos días no. Y el patio es de todos.\nTomás: ¿Y cuánto es el arriendo?\nGloria: Seiscientos mil pesos al mes.\nTomás sale al balcón. Allá está la catedral. Y allá, en la esquina, está el café de Rosa.\nVale: Claro. Tú eres de acá, Tomás.\nTomás: Listo, doña Gloria. Lo tomo.\nMás tarde, en el café:\nSimón: ¡Siga, siga! ¡Está en su casa!\nHernando: ¿Y la ducha, mijo?\nTomás: Un día sí y dos días no. Pero tengo balcón.",
   "gloss": [
     {
       "es": "«Joaquín, mi hermano:»",
       "en": "\"Joaquín, my brother:\""
     },
     {
+      "es": "guarda",
+      "en": "puts away"
+    },
+    {
       "es": "Tienes cara de perro triste",
       "en": "You look like a sad dog"
     },
     {
-      "es": "un hostel",
-      "en": "a hostel"
+      "es": "¿Dormiste bien?",
+      "en": "Did you sleep well?"
+    },
+    {
+      "es": "el hostel",
+      "en": "the hostel"
+    },
+    {
+      "es": "ronca",
+      "en": "snores"
     },
     {
       "es": "arriba de la panadería",
@@ -33,12 +45,20 @@
       "en": "the cathedral"
     },
     {
+      "es": "un día sí y dos días no",
+      "en": "one day yes, two days no"
+    },
+    {
       "es": "Tú eres de acá",
       "en": "You're from here"
     },
     {
-      "es": "Funciona un día, y dos días no.",
-      "en": "It works one day, and the next two days it doesn't."
+      "es": "Lo tomo.",
+      "en": "I'll take it."
+    },
+    {
+      "es": "tocan la puerta",
+      "en": "knock on the door"
     }
   ],
   "questions": [
@@ -53,29 +73,29 @@
       "answer": 0
     },
     {
-      "q": "Why does Hernando think the young man in the photo is Joaquín?",
+      "q": "Who does Hernando say Joaquín is?",
       "options": [
-        "He has Tomás's nose",
-        "He is holding the letter",
-        "His name is on the photo",
-        "He looks like Hernando"
+        "The young man in the photo",
+        "Tomás's grandfather",
+        "A taxi driver",
+        "The man from Altamira"
       ],
       "answer": 0
     },
     {
-      "q": "Why does Tomás leave the hostel?",
+      "q": "Why does Tomás look so tired?",
       "options": [
-        "He shares one room with eleven other men and can't sleep",
-        "The hostel is closing",
-        "Vale asks him to live with her",
-        "The hostel is too far from Toronto"
+        "He shares a room with eleven men, and one of them snores all night",
+        "He worked all night in the café",
+        "He read the letter all night",
+        "Simón woke him up"
       ],
       "answer": 0
     },
     {
       "q": "¿Qué hay en el cuarto de doña Gloria?",
       "options": [
-        "Una cama, una lámpara y un balcón",
+        "Una cama, una mesa, una lámpara y un balcón",
         "Un sofá y una televisión",
         "Doce camas"
       ],
@@ -125,9 +145,12 @@
     }
   ],
   "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:cuanto-cuesta",
     "c:esta-en-su-casa",
-    "c:gracias-de-nada",
     "c:hay",
+    "c:por-aca",
     "c:puedo",
     "c:siga",
     "c:tengo",
@@ -139,65 +162,77 @@
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
+    "g:preterite-er-ir",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
     "g:verb-infinitive",
     "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
     "p:possessives-basic",
-    "p:senor-don-article"
+    "p:senor-don-article",
+    "p:somos-cuatro"
   ],
   "lexemes": [
+    "l:abrir",
     "l:acá",
     "l:allá",
     "l:arriba",
     "l:arriendo",
     "l:balcón",
+    "l:baño",
+    "l:bien",
     "l:café",
     "l:cama",
     "l:cara",
     "l:carta",
     "l:casa",
     "l:catedral",
-    "l:chico",
+    "l:claro",
     "l:cuaderno",
     "l:cuadra",
+    "l:cuánto",
     "l:dormir",
     "l:ducha",
     "l:día",
-    "l:dónde",
     "l:esquina",
     "l:estar",
     "l:foto",
     "l:frase",
     "l:funcionar",
+    "l:guardar",
     "l:hablar",
     "l:harina",
     "l:hermano",
-    "l:hombre",
     "l:hoy",
+    "l:lado",
     "l:leer",
+    "l:listo",
     "l:lámpara",
     "l:mano",
     "l:mes",
-    "l:nariz",
+    "l:mesa",
+    "l:mijo",
+    "l:muchacho",
+    "l:noche",
     "l:panadería",
     "l:patio",
+    "l:pequeño",
     "l:perro",
     "l:peso",
     "l:poder",
-    "l:poner",
     "l:puerta",
     "l:quedar",
+    "l:ronca",
     "l:salir",
     "l:seguir",
-    "l:semana",
     "l:ser",
-    "l:señora",
     "l:tarde",
     "l:tener",
+    "l:tocar",
+    "l:tomar",
     "l:triste",
-    "l:vez",
-    "l:vivir"
+    "l:vez"
   ]
 }

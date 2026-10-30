@@ -2,31 +2,59 @@
   "id": "ch019",
   "unit": "u08",
   "title": "Hoteles con paisaje",
-  "text": "Tomás hace el primer capuchino de su vida.\nHombre: ¿Usted es turista?\nTomás: Soy el nieto de Rosa.\nHombre: Yo viajo mucho. Este año he visitado catorce pueblos.\nEn su celular hay fotos de la costa: una playa, una isla, el mar.\nHombre: ¿Ha estado en la costa?\nTomás: Todavía no.\nHombre: Y mire este paisaje: la montaña, el río, una finca con cafetal. Allá los turistas toman tinto del cafetal.\nVale: ¿Qué está haciendo Tomás? ¿Está mirando fotos de vacaciones?\nHernando: Está trabajando, mija.\nHernando: Mi esposa y yo visitamos el mar una vez. Fue el único viaje de mi vida.\nHombre: ¿Y usted, señor Herrera? ¿Ha tenido vacaciones?\nTomás: Nunca en la vida.\nHombre: Una maleta, un viaje, una isla. Usted puede viajar. ¿Ha pensado en vender el café?\nTomás: ¿Cómo sabe mi apellido?\nEl hombre deja cincuenta mil pesos de propina. El capuchino cuesta cinco mil.\nSimón: ¡Qué envidia! ¡Qué envidia!\nEn la mesa hay una tarjeta: «Ricardo Altamira. Hoteles con paisaje: en la playa, en el río, en una finca de montaña, en un pueblo».\nEsa noche, Tomás mira su maleta.",
+  "text": "La cafetera todavía no funciona, y Tomás hace el capuchino en el chocolatero de Rosa. Es el primer capuchino de su vida.\nHombre: Muy rico. ¿Usted es el dueño?\nTomás: Sí. Bueno... más o menos.\nHombre: Yo viajo mucho. Este año visité catorce pueblos.\nEl hombre muestra fotos en su celular: una playa, una isla, el mar.\nHombre: ¿Ha estado en la costa?\nTomás: Todavía no.\nHombre: Y mire este paisaje: la montaña, el río, una finca con cafetal. Allá los turistas toman el café del cafetal.\nVale: ¿Qué está haciendo Tomás? ¿Está mirando fotos de vacaciones?\nHernando: Está trabajando, mija.\nHernando: Inés y yo visitamos la costa una vez. Fue el único viaje de nuestra vida.\nHombre: ¿Y usted, señor Herrera? ¿Cuándo tuvo vacaciones?\nTomás: Hace años.\nHombre: Con la plata del café, usted puede viajar. Una maleta, un buen viaje, una isla. ¿Ha pensado en vender el café?\nTomás: Un momento. ¿Cómo sabe mi apellido?\nEl hombre no contesta. Deja cincuenta mil pesos de propina y sale. El capuchino cuesta cinco mil.\nSimón: ¡Qué envidia! ¡Qué envidia!\nEn la mesa hay una tarjeta: «Ricardo Altamira. Grupo Altamira. Hoteles con paisaje para turistas: en la playa, en el río, en una finca de montaña, en un pueblo».\nVale: ¿Ricardo Altamira tomó capuchino en el café de Rosa?\nEsa noche, en su cuarto, Tomás mira su maleta un rato largo.",
   "gloss": [
     {
-      "es": "un capuchino",
-      "en": "a cappuccino"
+      "es": "el chocolatero",
+      "en": "the chocolate pot"
     },
     {
       "es": "el primer capuchino de su vida",
       "en": "the first cappuccino of his life"
     },
     {
-      "es": "catorce pueblos",
-      "en": "fourteen towns"
+      "es": "catorce",
+      "en": "fourteen"
     },
     {
       "es": "Está trabajando, mija.",
-      "en": "He is working, my dear."
+      "en": "He's working, dear."
+    },
+    {
+      "es": "el único viaje de nuestra vida",
+      "en": "the only trip of our lives"
+    },
+    {
+      "es": "¿Cuándo tuvo vacaciones?",
+      "en": "When did you last have a holiday?"
     },
     {
       "es": "¿Ha pensado en vender el café?",
       "en": "Have you thought about selling the café?"
     },
     {
+      "es": "su apellido",
+      "en": "his surname"
+    },
+    {
       "es": "cincuenta mil pesos de propina",
       "en": "a fifty thousand peso tip"
+    },
+    {
+      "es": "una tarjeta",
+      "en": "a business card"
+    },
+    {
+      "es": "un rato largo",
+      "en": "for a long while"
+    },
+    {
+      "es": "el dueño",
+      "en": "the owner"
+    },
+    {
+      "es": "más o menos",
+      "en": "more or less"
     }
   ],
   "questions": [
@@ -80,12 +108,12 @@
       "answer": 0
     }
   ],
-  "hook": "Ricardo Altamira has been in the café, drunk a cappuccino and asked Tomás to sell. That night Tomás is looking at his suitcase.",
+  "hook": "Ricardo Altamira himself has been in the café, drunk a cappuccino and asked Tomás to sell. That night Tomás is looking at his suitcase.",
   "rereadQuestions": [
     {
       "q": "What was the only trip of Hernando's life?",
       "options": [
-        "A trip to the sea with his wife",
+        "A trip to the coast with his wife Inés",
         "A trip to Canada",
         "A trip to Monserrate",
         "A trip to a coffee farm with Rosa"
@@ -105,7 +133,7 @@
     {
       "q": "¿Qué hacen los turistas en la finca, según el hombre?",
       "options": [
-        "Toman tinto del cafetal",
+        "Toman el café del cafetal",
         "Compran maletas",
         "Visitan el mar"
       ],
@@ -114,8 +142,9 @@
   ],
   "requires": [
     "c:bien-y-tu",
+    "c:entonces-bueno",
     "c:hay",
-    "c:nunca-en-la-vida",
+    "c:mas-o-menos",
     "c:que-envidia",
     "c:todavia-no",
     "c:una-vez",
@@ -125,16 +154,22 @@
     "g:gender-articles",
     "g:hay-vs-esta",
     "g:perfecto-experience",
+    "g:possessives",
     "g:present-ar",
     "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
     "g:verb-infinitive",
     "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
     "p:costar-pagar",
     "p:demonstratives-basic",
+    "p:para-inf",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:question-word-order",
@@ -144,45 +179,57 @@
     "l:allá",
     "l:apellido",
     "l:año",
+    "l:buen",
+    "l:bueno",
     "l:cafetal",
+    "l:cafetera",
     "l:café",
     "l:celular",
+    "l:contestar",
     "l:costa",
     "l:costar",
+    "l:cuándo",
     "l:cómo",
     "l:dejar",
+    "l:dueño",
     "l:envidia",
-    "l:esposa",
     "l:estar",
     "l:finca",
     "l:foto",
+    "l:funcionar",
     "l:hacer",
     "l:hombre",
     "l:hotel",
+    "l:inés",
     "l:isla",
+    "l:largo",
     "l:maleta",
     "l:mar",
     "l:mesa",
     "l:mija",
     "l:mirar",
+    "l:momento",
     "l:montaña",
-    "l:nieto",
+    "l:mostrar",
     "l:noche",
     "l:paisaje",
     "l:pensar",
     "l:peso",
+    "l:plata",
     "l:playa",
     "l:poder",
     "l:propina",
     "l:pueblo",
     "l:qué",
+    "l:rato",
+    "l:rico",
     "l:río",
     "l:saber",
+    "l:salir",
     "l:ser",
     "l:señor",
     "l:tarjeta",
     "l:tener",
-    "l:tinto",
     "l:tomar",
     "l:trabajar",
     "l:turista",

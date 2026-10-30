@@ -2,31 +2,39 @@
   "id": "ch016",
   "unit": "u07",
   "title": "La nevera de Gloria",
-  "text": "Cinco de la mañana. En el baño, Tomás abre la ducha: no hay agua.\nTomás: ¡Doña Gloria! ¡No hay agua!\nGloria: Hoy no, Tomás. Pasado mañana, sí. Y solo un rato.\nGloria muestra la casa.\nGloria: En el primer piso está la panadería. En el segundo piso hay una sala, un comedor y una cocina.\nGloria: En la cocina hay una estufa y una nevera. La nevera es de Gloria. La estufa es de todos.\nGloria: Y el sofá de la sala es de Pacho.\nTomás: ¿Quién es Pacho?\nEn el sofá hay un gato gordo. Pacho mira a Tomás.\nGloria: Usted come en el comedor, no en el cuarto.\nTomás sube la escalera. El tercer piso está arriba, arriba, arriba.\nGloria: Acá está su cuarto: la cama, el armario y la ventana. El baño está en la otra puerta.\nTomás pone la carta de Rosa en el armario. Está un rato en la ventana. Allá está la catedral.\nVale está en la puerta, con pan.\nVale: ¿Y tu apartamento de Toronto?\nTomás: Mi apartamento de Toronto tiene sala, cocina y cuarto... en un cuarto.\nVale pone el pan en la cama.\nVale: Es un cuarto bonito, Tomás.\nHernando sube la escalera con Simón. Simón mira a Pacho.\nSimón: ¿Y él? ¿Es mesero? ¿Es mesero?\nHernando: Tomás, en la calle hay dos hombres de Altamira.",
+  "text": "Cinco de la mañana, primer día en la casa de doña Gloria. Tomás entra al baño y abre la ducha. No hay agua.\nTomás: ¡Doña Gloria! ¡No hay agua!\nGloria: Hoy no, Tomás. Pasado mañana sí, pero solo un rato.\nTomás baja la escalera a la cocina.\nGloria: Bueno, Tomás, esta casa tiene reglas. En el primer piso está la panadería. En el segundo piso están la sala, el comedor y la cocina. Su cuarto y el baño están en el tercer piso.\nGloria: En la cocina hay una nevera y una estufa. La nevera es mía. La estufa es de todos.\nGloria: Usted come en el comedor, no en el cuarto. Y el sofá de la sala es de Pacho.\nTomás: ¿Quién es Pacho?\nEn el sofá hay un gato gordo. Pacho mira a Tomás un rato. Después cierra los ojos.\nTomás pone la carta de Rosa en el armario de su cuarto.\nPor la tarde, Vale toca la puerta. Trae pan, y Hernando trae a Simón.\nVale pone el pan en la cama y mira el cuarto.\nVale: Es pequeño, ¿no? ¿Cómo es tu apartamento de Toronto?\nTomás: Mi apartamento tiene sala, cocina y cuarto... en un cuarto.\nVale: Pues es bonito, Tomás. Y tiene ventana a la catedral.\nEn la escalera, Simón ve a Pacho.\nSimón: ¡Mucho gusto! ¡Mucho gusto!\nPacho no contesta.\nHernando: Tomás, en la calle hay dos hombres de Altamira.",
   "gloss": [
     {
       "es": "Pasado mañana",
       "en": "The day after tomorrow"
     },
     {
-      "es": "Gloria muestra la casa.",
-      "en": "Gloria shows him the house."
+      "es": "esta casa tiene reglas",
+      "en": "this house has rules"
     },
     {
-      "es": "La nevera es de Gloria.",
-      "en": "The fridge belongs to Gloria."
+      "es": "La nevera es mía.",
+      "en": "The fridge is mine."
     },
     {
-      "es": "El tercer piso está arriba, arriba, arriba.",
-      "en": "The third floor is up, up, up."
+      "es": "un gato gordo",
+      "en": "a fat cat"
     },
     {
-      "es": "la catedral",
-      "en": "the cathedral"
+      "es": "cierra los ojos",
+      "en": "closes his eyes"
+    },
+    {
+      "es": "toca la puerta",
+      "en": "knocks on the door"
     },
     {
       "es": "tiene sala, cocina y cuarto... en un cuarto",
       "en": "has a living room, a kitchen and a bedroom... in one room"
+    },
+    {
+      "es": "ventana a la catedral",
+      "en": "a window onto the cathedral"
     }
   ],
   "questions": [
@@ -68,9 +76,19 @@
         "It has no kitchen"
       ],
       "answer": 0
+    },
+    {
+      "q": "Where does Tomás have to eat?",
+      "options": [
+        "In the dining room, not in his room",
+        "In the bakery",
+        "In his room",
+        "On the sofa"
+      ],
+      "answer": 0
     }
   ],
-  "hook": "Two men from Altamira are out in the street, and Tomás hasn't even had a shower. Tomorrow he finds out what they are doing to the block.",
+  "hook": "Two men from Altamira are standing in the street below, and Tomás still hasn't had a shower. He is going down to find out what they are doing to the block.",
   "rereadQuestions": [
     {
       "q": "Where does Tomás keep Rosa's letter now?",
@@ -104,8 +122,13 @@
     }
   ],
   "requires": [
+    "c:como-es",
+    "c:entonces-bueno",
     "c:hay",
+    "c:mucho-gusto",
+    "c:no-cierto",
     "c:tienes",
+    "g:adjective-agreement",
     "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
@@ -114,57 +137,70 @@
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
+    "p:de-owner",
+    "p:demonstratives-basic",
     "p:ordinals-primer-tercer",
+    "p:personal-a",
     "p:possessives-basic",
     "p:question-word-order",
     "p:senor-don-article",
-    "p:ser-profession-no-article"
+    "p:time-sequence-basic"
   ],
   "lexemes": [
     "l:abrir",
-    "l:acá",
     "l:agua",
-    "l:allá",
     "l:apartamento",
     "l:armario",
-    "l:arriba",
+    "l:bajo",
     "l:baño",
     "l:bonito",
+    "l:bueno",
     "l:calle",
     "l:cama",
     "l:carta",
     "l:casa",
     "l:catedral",
+    "l:cerrar",
     "l:cocina",
     "l:cocinar",
     "l:comedor",
     "l:comer",
+    "l:contestar",
+    "l:cómo",
+    "l:después",
     "l:ducha",
+    "l:día",
+    "l:entrar",
     "l:escalera",
     "l:estar",
     "l:estufa",
     "l:gato",
     "l:gordo",
+    "l:gusto",
     "l:hombre",
     "l:hoy",
     "l:mañana",
-    "l:mesero",
     "l:mirar",
-    "l:mostrar",
     "l:nevera",
+    "l:ojo",
     "l:pan",
     "l:panadería",
     "l:pasado",
+    "l:pequeño",
     "l:piso",
     "l:poner",
     "l:puerta",
     "l:quién",
     "l:rato",
+    "l:regla",
     "l:sala",
     "l:ser",
     "l:sofá",
-    "l:subir",
+    "l:tarde",
     "l:tener",
-    "l:ventana"
+    "l:tocar",
+    "l:traer",
+    "l:ventana",
+    "l:ver"
   ]
 }
