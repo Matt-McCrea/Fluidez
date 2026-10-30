@@ -1,0 +1,195 @@
+{
+  "node": "x:aunque-ind-subj",
+  "hook": {
+    "line": "Vale and Tomás can say almost the same sentence about the rain, and a Bogotano hears two different things: one says it is raining, the other says it might. The one-vowel difference tells the listener what you know.",
+    "es": "Aunque llueva, abrimos el café.",
+    "en": "Even if it rains, we're opening the café."
+  },
+  "examples": [
+    {
+      "es": "Aunque llueve, salgo.",
+      "en": "Even though it's raining, I'm going out."
+    },
+    {
+      "es": "Aunque llueva, saldré.",
+      "en": "Even if it rains, I'll go out."
+    },
+    {
+      "es": "Aunque Altamira paga bien, no vendemos.",
+      "en": "Even though Altamira pays well, we're not selling."
+    },
+    {
+      "es": "Aunque Altamira pague bien, no vamos a vender.",
+      "en": "Even if Altamira pays well, we're not going to sell."
+    },
+    {
+      "es": "Aunque tienes razón, no firmo.",
+      "en": "Even though you're right, I'm not signing."
+    },
+    {
+      "es": "Aunque tengas razón, no firmo.",
+      "en": "Even if you're right, I'm not signing."
+    }
+  ],
+  "rule": "Ask yourself one question: do I treat this as a fact?\n\nYes: use the plain verb. *Aunque llueve, salgo.* It is raining, and I'm going out anyway.\n\nNo, it's only possible, or it doesn't matter whether it's true: use the subjunctive. *Aunque llueva, saldré.* Rain may or may not come, and I'm going out regardless.\n\nThe verb tells the listener what you know. *Aunque tienes razón* means I accept you're right. *Aunque tengas razón* means maybe you are, maybe not, my answer is the same.\n\nThe main verb doesn't change either way. Only the verb right after *aunque* does.",
+  "smallPrint": "Teachers call this the choice between the indicative and the subjunctive after a concessive conjunction. The indicative states a fact; the subjunctive leaves it open.",
+  "readAndPick": [
+    {
+      "es": "Aunque llueve, salgo.",
+      "options": [
+        "Even if it rains, I'll go out.",
+        "Even though it's raining, I'm going out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Aunque llueva, saldré.",
+      "options": [
+        "Even if it rains, I'll go out.",
+        "Even though it's raining, I'm going out."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aunque Altamira paga bien, no vendemos.",
+      "options": [
+        "Altamira may pay well, but we're not selling.",
+        "Altamira does pay well, and we're still not selling."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Aunque Altamira pague bien, no vamos a vender.",
+      "options": [
+        "Altamira definitely pays well, and we're still not selling.",
+        "Even if Altamira pays well, we're not going to sell."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Aunque tienes razón, no firmo.",
+      "options": [
+        "You're right, and I'm still not signing.",
+        "You might be right, and I won't sign."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aunque tengas razón, no firmo.",
+      "options": [
+        "You might be right, and I won't sign.",
+        "You're right, and I'm still not signing."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aunque hace frío, abrimos la ventana.",
+      "options": [
+        "It's cold now, and we open the window anyway.",
+        "It may get cold, and we'll open the window anyway."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aunque haga frío, abriremos la ventana.",
+      "options": [
+        "It's cold now, and we open the window anyway.",
+        "It may get cold, and we'll open the window anyway."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Aunque no me gusta, lo hago.",
+      "options": [
+        "I don't like it, and I do it anyway.",
+        "I may not like it, but I'll do it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aunque no me guste, lo voy a hacer.",
+      "options": [
+        "I don't like it, and I do it anyway.",
+        "I may not like it, but I'm going to do it."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *hace* or *haga* and type the whole sentence: *Aunque ___ frío, abrimos la ventana.* (It's cold right now, and we open the window anyway: even though it's cold.)",
+      "answer": "Aunque hace frío, abrimos la ventana.",
+      "accept": [
+        "Abrimos la ventana aunque hace frío."
+      ],
+      "why": "The cold is a fact right now, so the plain verb *hace*."
+    },
+    {
+      "prompt": "Choose *llueve* or *llueva* and type the whole sentence: *Aunque ___, saldré mañana.* (Even if it rains tomorrow, I'll go out.)",
+      "answer": "Aunque llueva, saldré mañana.",
+      "accept": [
+        "Saldré mañana aunque llueva."
+      ],
+      "why": "Tomorrow's rain is not a fact yet, so *llueva*."
+    },
+    {
+      "prompt": "Choose *tienes* or *tengas* and type the whole sentence: *Aunque ___ razón, no firmo.* (I admit it, you are right, but I'm still not signing.)",
+      "answer": "Aunque tienes razón, no firmo.",
+      "accept": [
+        "No firmo aunque tienes razón."
+      ],
+      "why": "You've accepted that she or he is right, so it's a fact: *tienes*."
+    },
+    {
+      "prompt": "Say: Even though Altamira pays well, we're not selling.",
+      "answer": "Aunque Altamira paga bien, no vendemos.",
+      "accept": [
+        "No vendemos aunque Altamira paga bien."
+      ],
+      "why": "Altamira does pay well, so the plain verb *paga*."
+    },
+    {
+      "prompt": "Say: Even if Altamira pays well, we're not selling.",
+      "answer": "Aunque Altamira pague bien, no vendemos.",
+      "accept": [
+        "No vendemos aunque Altamira pague bien.",
+        "Aunque Altamira pague bien, no vamos a vender."
+      ],
+      "why": "Whether Altamira pays well is left open, so *pague*."
+    },
+    {
+      "prompt": "Rewrite so that it's raining right now: *Aunque llueva, salgo.*",
+      "answer": "Aunque llueve, salgo.",
+      "accept": [
+        "Salgo aunque llueve."
+      ],
+      "why": "A fact in front of you takes the plain verb."
+    },
+    {
+      "prompt": "Rewrite so that it is only a possibility: *Aunque es caro, lo compro.* (Even if it's expensive, I'll buy it.)",
+      "answer": "Aunque sea caro, lo compro.",
+      "accept": [
+        "Lo compro aunque sea caro."
+      ],
+      "why": "If you don't know or don't care, *es* becomes *sea*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Aunque lloverá, saldré.",
+      "right": "Aunque llueva, saldré.",
+      "why": "Almost. English says even if it will rain, but after *aunque* a possible event takes the present subjunctive, not a future."
+    },
+    {
+      "wrong": "Aunque llueva ahora mismo, salgo.",
+      "right": "Aunque llueve ahora mismo, salgo.",
+      "why": "Rain you can see right now is a fact, so Spanish keeps the plain verb."
+    },
+    {
+      "wrong": "Aunque estudie mucho, no pasé el examen.",
+      "right": "Aunque estudié mucho, no pasé el examen.",
+      "why": "It already happened, so it's a fact: the plain past verb, never the subjunctive."
+    }
+  ],
+  "personal": "Pick something you do even though it's hard. Write it twice: once as a fact with *Aunque* and the plain verb, and once as a possibility with *Aunque* and the subjunctive."
+}

@@ -1,0 +1,171 @@
+{
+  "node": "p:que-subj-me-parece",
+  "hook": {
+    "line": "Sometimes the news itself is the thing you want to react to, so you put it first and give your verdict after. It sounds a little more thought through than a quick comment.",
+    "es": "Que Altamira compre toda la cuadra nos parece injusto.",
+    "en": "The fact that Altamira is buying the whole block seems unfair to us."
+  },
+  "examples": [
+    {
+      "es": "Que lo hayan despedido me parece injusto.",
+      "en": "The fact that they've fired him seems unfair to me."
+    },
+    {
+      "es": "Que no te hayan avisado me parece increíble.",
+      "en": "The fact that they didn't tell you seems incredible to me."
+    },
+    {
+      "es": "Que nadie haya dicho nada me parece raro.",
+      "en": "The fact that nobody has said anything seems strange to me."
+    },
+    {
+      "es": "Que cierren el café me parece triste.",
+      "en": "The fact that they're closing the café seems sad to me."
+    },
+    {
+      "es": "Que Altamira compre toda la cuadra nos parece injusto.",
+      "en": "The fact that Altamira is buying the whole block seems unfair to us."
+    },
+    {
+      "es": "Que la empresa haya crecido tan rápido nos resulta sospechoso.",
+      "en": "The fact that the company has grown so fast strikes us as suspicious."
+    }
+  ],
+  "rule": "English starts with the fact that. Spanish starts with *que* and a subjunctive: *Que lo hayan despedido…* Then comes your verdict: *me parece injusto*.\n\nThe pieces:\n*Que* + subjunctive (the news)\n*me parece* / *nos parece* / *nos resulta* (who it seems to)\nan adjective that stays masculine singular: *injusto*, *raro*, *triste*\n\nThe whole news item counts as one thing, so the verb is always *parece*, never *parecen*.",
+  "smallPrint": "Teachers call this a subject clause: the *que* part is the subject of *parece*.",
+  "readAndPick": [
+    {
+      "es": "Que no te hayan avisado me parece increíble.",
+      "options": [
+        "It seems incredible to you that they didn't tell me.",
+        "It seems incredible to me that they didn't tell you.",
+        "I think they didn't tell you because it's incredible."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Que Altamira compre toda la cuadra nos parece injusto.",
+      "options": [
+        "The fact that Altamira is buying the whole block seems unfair to me.",
+        "The fact that Altamira is buying the whole block seems unfair to us."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Que nadie haya dicho nada me parece raro.",
+      "options": [
+        "Nobody says anything strange to me.",
+        "The fact that nobody has said anything seems strange to me.",
+        "I think someone said something strange."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Que cierren el café me parece triste.",
+      "options": [
+        "The fact that they're closing the café seems sad to me.",
+        "The fact that the café closed seems sad to me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Que vengas a la audiencia me parece importante.",
+      "options": [
+        "It seems important to me that I come to the hearing.",
+        "It seems important to me that you come to the hearing."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Que Vale haya llegado tarde me parece raro.",
+      "options": [
+        "It seems strange to me that Vale arrived late.",
+        "It seems strange to Vale that I arrived late.",
+        "Vale arrives late because it's strange."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Que la empresa haya crecido tan rápido nos resulta sospechoso.",
+      "options": [
+        "The fact that the company has grown so fast strikes me as suspicious.",
+        "The fact that the company has grown so fast strikes us as suspicious."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Que no hayas venido me parece mal.",
+      "options": [
+        "It seems wrong to me that I didn't come.",
+        "It seems wrong to me that you didn't come."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *me parece* or *me parecen* and type the whole sentence: *Que lo hayan despedido ___ injusto.* (The fact that they've fired him seems unfair to me.)",
+      "answer": "Que lo hayan despedido me parece injusto.",
+      "accept": [],
+      "why": "The whole *que* part is one thing, so the verb is singular."
+    },
+    {
+      "prompt": "Choose *me parece* or *nos parece* and type the whole sentence: *Que Altamira compre toda la cuadra ___ injusto.* (It seems unfair to us.)",
+      "answer": "Que Altamira compre toda la cuadra nos parece injusto.",
+      "accept": [
+        "Que Altamira compre toda la cuadra nos resulta injusto."
+      ],
+      "why": "It seems that way to us, so *nos parece*."
+    },
+    {
+      "prompt": "Say: The fact that they didn't tell you seems incredible to me.",
+      "answer": "Que no te hayan avisado me parece increíble.",
+      "accept": [],
+      "why": "A past event you're reacting to takes *hayan* plus the participle."
+    },
+    {
+      "prompt": "Say: The fact that nobody has said anything seems strange to me.",
+      "answer": "Que nadie haya dicho nada me parece raro.",
+      "accept": [],
+      "why": "*Nadie* is singular, so *haya dicho*."
+    },
+    {
+      "prompt": "Say: The fact that they're closing the café seems sad to me.",
+      "answer": "Que cierren el café me parece triste.",
+      "accept": [],
+      "why": "The news goes first, in the subjunctive, then your verdict."
+    },
+    {
+      "prompt": "Say, to a friend: It seems important to me that you come to the hearing.",
+      "answer": "Que vengas a la audiencia me parece importante.",
+      "accept": [],
+      "why": "*Venir* gives *vengas* for you."
+    },
+    {
+      "prompt": "Change to *us*: *Que Vale haya llegado tarde me parece raro.*",
+      "answer": "Que Vale haya llegado tarde nos parece raro.",
+      "accept": [
+        "Que Vale haya llegado tarde nos resulta raro."
+      ],
+      "why": "Only the *me* changes, to *nos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Que lo han despedido me parece injusto.",
+      "right": "Que lo hayan despedido me parece injusto.",
+      "why": "Almost. You're judging the news, not just reporting it, so the verb after *que* is subjunctive."
+    },
+    {
+      "wrong": "Que cierren el café me parece tristemente.",
+      "right": "Que cierren el café me parece triste.",
+      "why": "After *parece* Spanish uses an adjective, like English seems sad, not an adverb."
+    },
+    {
+      "wrong": "Lo hayan despedido me parece injusto.",
+      "right": "Que lo hayan despedido me parece injusto.",
+      "why": "The *que* is what opens the fact, like the fact that in English, so it has to stay."
+    }
+  ],
+  "personal": "Think of a piece of news that bothers you or pleases you. Write it as *Que… me parece…* with a subjunctive and an adjective."
+}

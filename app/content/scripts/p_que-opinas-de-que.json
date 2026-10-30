@@ -1,0 +1,182 @@
+{
+  "node": "p:que-opinas-de-que",
+  "hook": {
+    "line": "The block is changing fast, and everybody in the café has a view. To ask someone how they feel about something that is happening, Spanish has one handy frame.",
+    "es": "¿Qué opinas de que Altamira compre toda la cuadra?",
+    "en": "What do you think about Altamira buying the whole block?"
+  },
+  "examples": [
+    {
+      "es": "¿Qué opinas de que hayan cerrado la biblioteca?",
+      "en": "What do you think about them closing the library?"
+    },
+    {
+      "es": "¿Qué opinas de que suban los precios del transporte?",
+      "en": "What do you think about them raising public transport fares?"
+    },
+    {
+      "es": "¿Qué opinas de que Altamira compre toda la cuadra?",
+      "en": "What do you think about Altamira buying the whole block?"
+    },
+    {
+      "es": "¿Qué opina usted de que cierren la calle?",
+      "en": "What do you think about them closing the street? (to someone formal)"
+    },
+    {
+      "es": "¿Qué te parecería que nos fuéramos a vivir a Medellín?",
+      "en": "How would you feel about us moving to Medellín?"
+    }
+  ],
+  "rule": "English says what do you think about plus an *-ing* word. Spanish uses *¿Qué opinas de que…?* and a whole clause with the subjunctive: *¿Qué opinas de que suban los precios?*\n\nAsk about something that has happened or is happening with *de que* plus the subjunctive. To float an idea, use *¿Qué te parecería que…?* with the *-ra* form: *¿Qué te parecería que nos fuéramos?*\n\nWith a plain noun there is no *que*: *¿Qué opinas del horario?*\n\nTo someone formal: *¿Qué opina usted de que…?*",
+  "smallPrint": "Teachers call the *-ra* form the imperfect subjunctive. Here it makes a proposal sound gentle.",
+  "readAndPick": [
+    {
+      "es": "¿Qué opinas de que hayan cerrado la biblioteca?",
+      "options": [
+        "What do they think about you closing the library?",
+        "What do you think about them closing the library?",
+        "I think they closed the library."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué te parecería que nos fuéramos a vivir a Medellín?",
+      "options": [
+        "How would you feel about us moving to Medellín?",
+        "How did you like living in Medellín?",
+        "How would they feel about moving to Medellín?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué opinas del horario?",
+      "options": [
+        "What do you think of the schedule?",
+        "What do you think about them changing the schedule?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué opina usted de que cierren la calle?",
+      "options": [
+        "What do you think about them closing the street? (to someone informal)",
+        "What do you think about them closing the street? (to someone formal)",
+        "What does he think about the street closing?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué opinas de que Altamira compre toda la cuadra?",
+      "options": [
+        "What does Altamira think about buying the whole block?",
+        "Do you think Altamira will buy the whole block?",
+        "What do you think about Altamira buying the whole block?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Qué te parecería que vendiéramos el café?",
+      "options": [
+        "How did you feel about them selling the café?",
+        "How would you feel about us selling the café?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué piensas de que Tomás venda el café?",
+      "options": [
+        "What does Tomás think about selling the café?",
+        "What do you think about Tomás selling the café?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué opinas de que Hernando no quiera vender?",
+      "options": [
+        "What do you think about Hernando not wanting to sell?",
+        "What does Hernando think about not selling?",
+        "Why doesn't Hernando want to sell?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *del* or *de que* and type the whole sentence: *¿Qué opinas ___ horario?* (What do you think of the schedule? To a friend.)",
+      "answer": "¿Qué opinas del horario?",
+      "accept": [
+        "¿Qué piensas del horario?"
+      ],
+      "why": "A noun needs no *que*, and *de* plus *el* joins into *del*."
+    },
+    {
+      "prompt": "Choose *suban* or *suben* and type the whole sentence: *¿Qué opinas de que ___ los precios?* (What do you think about them raising prices? To a friend.)",
+      "answer": "¿Qué opinas de que suban los precios?",
+      "accept": [
+        "¿Qué piensas de que suban los precios?"
+      ],
+      "why": "After *de que* you react to a fact, and reacting takes the subjunctive."
+    },
+    {
+      "prompt": "Say, to a friend: What do you think about them closing the library?",
+      "answer": "¿Qué opinas de que hayan cerrado la biblioteca?",
+      "accept": [
+        "¿Qué piensas de que hayan cerrado la biblioteca?",
+        "¿Qué opinas de que cierren la biblioteca?"
+      ],
+      "why": "The library is already closed, so *hayan cerrado*."
+    },
+    {
+      "prompt": "Say, to a friend: What do you think about Altamira buying the whole block?",
+      "answer": "¿Qué opinas de que Altamira compre toda la cuadra?",
+      "accept": [
+        "¿Qué piensas de que Altamira compre toda la cuadra?"
+      ],
+      "why": "*De que* plus the subjunctive *compre*."
+    },
+    {
+      "prompt": "Say, to Don Hernando (formal): What do you think about Tomás selling the café?",
+      "answer": "¿Qué opina usted de que Tomás venda el café?",
+      "accept": [
+        "¿Qué piensa usted de que Tomás venda el café?",
+        "¿Qué opina de que Tomás venda el café?"
+      ],
+      "why": "For *usted* the verb is *opina*, and the *que* part stays the same."
+    },
+    {
+      "prompt": "Say, to a friend: How would you feel about us selling the café?",
+      "answer": "¿Qué te parecería que vendiéramos el café?",
+      "accept": [
+        "¿Qué opinarías de que vendiéramos el café?"
+      ],
+      "why": "A proposal uses *¿Qué te parecería que…?* with the *-ra* form."
+    },
+    {
+      "prompt": "Change to the formal form: *¿Qué opinas de que Hernando no quiera vender?*",
+      "answer": "¿Qué opina usted de que Hernando no quiera vender?",
+      "accept": [
+        "¿Qué piensa usted de que Hernando no quiera vender?",
+        "¿Qué opina de que Hernando no quiera vender?"
+      ],
+      "why": "Talking to someone formal, *opinas* becomes *opina usted*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Qué opinas de que cierran la biblioteca?",
+      "right": "¿Qué opinas de que cierren la biblioteca?",
+      "why": "Almost. You are reacting to the event, not reporting it, so the verb after *de que* flips to the subjunctive."
+    },
+    {
+      "wrong": "¿Qué opinas que hayan cerrado la biblioteca?",
+      "right": "¿Qué opinas de que hayan cerrado la biblioteca?",
+      "why": "*Opinar* needs its *de* before *que*."
+    },
+    {
+      "wrong": "¿Qué opinas de el horario?",
+      "right": "¿Qué opinas del horario?",
+      "why": "Almost. *De* and *el* always join into *del*."
+    }
+  ],
+  "personal": "Something is changing in your town or workplace. Ask a friend about it with *¿Qué opinas de que…?* and a subjunctive."
+}

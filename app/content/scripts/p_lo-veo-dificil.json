@@ -1,0 +1,181 @@
+{
+  "node": "p:lo-veo-dificil",
+  "hook": {
+    "line": "In the café someone is always asking if the plan will work. A short, honest answer is better than a speech: you just say how it looks to you.",
+    "es": "¿Terminamos hoy?\nLo veo difícil.",
+    "en": "Are we finishing today?\nI don't see that happening."
+  },
+  "examples": [
+    {
+      "es": "¿Terminamos hoy?\nLo veo difícil.",
+      "en": "Are we finishing today?\nI don't see that happening."
+    },
+    {
+      "es": "¿Cómo lo ves?",
+      "en": "How do you see it?"
+    },
+    {
+      "es": "Lo encuentro muy caro.",
+      "en": "I find it very expensive."
+    },
+    {
+      "es": "Lo veo complicado.",
+      "en": "It looks complicated to me."
+    },
+    {
+      "es": "¿Vamos a salvar el café?\nLo veo imposible.",
+      "en": "Are we going to save the café?\nI think it's impossible."
+    },
+    {
+      "es": "¿Y la audiencia?\nLa veo difícil.",
+      "en": "And the hearing?\nI think it's going to be hard."
+    }
+  ],
+  "rule": "English says *it looks difficult* or *I find it expensive*. Spanish puts *lo* in front, for the thing someone just mentioned: *Lo veo difícil. Lo encuentro caro.*\n\n*Lo* needs something to point at, so it only works after the topic has come up. For a feminine thing, use *la*: *La veo difícil.*\n\nTo ask for a view: *¿Cómo lo ves?*\n\nThe adjective after it describes the thing, so it matches: *Lo veo complicado*, *La veo complicada*.",
+  "smallPrint": "Teachers call this an object complement: *lo* is the direct object, and the adjective says how you see it.",
+  "readAndPick": [
+    {
+      "es": "¿Terminamos hoy?\nLo veo difícil.",
+      "options": [
+        "Are we finishing today?\nI think it's unlikely.",
+        "Are we finishing today?\nI can see it easily."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cómo lo ves?",
+      "options": [
+        "Where do you see it?",
+        "How do you see it?",
+        "How do you feel?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo encuentro muy caro.",
+      "options": [
+        "I find it very cheap.",
+        "I find it very expensive.",
+        "I found it very expensive."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo veo imposible.",
+      "options": [
+        "I think it's impossible.",
+        "I think it's possible.",
+        "I see him often."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo veo bastante probable.",
+      "options": [
+        "I think it's quite unlikely.",
+        "I think it's quite likely."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Y la audiencia?\nLa veo difícil.",
+      "options": [
+        "And the hearing?\nI think it's going to be hard.",
+        "And the hearing?\nI think it's going to be easy."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo encuentro interesante.",
+      "options": [
+        "I find it boring.",
+        "I find it interesting."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cómo lo ves tú?",
+      "options": [
+        "How do I see it?",
+        "How do they see it?",
+        "How do you see it?"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *lo* or *la* and type the whole sentence: *___ veo difícil.* (You mean la audiencia, the hearing.)",
+      "answer": "La veo difícil.",
+      "accept": [],
+      "why": "*Audiencia* is feminine, so the pointer is *la*."
+    },
+    {
+      "prompt": "Say: It looks complicated to me.",
+      "answer": "Lo veo complicado.",
+      "accept": [
+        "Lo encuentro complicado."
+      ],
+      "why": "*Lo* for the thing, *veo* for how it looks, then the adjective."
+    },
+    {
+      "prompt": "Say: I find it very expensive.",
+      "answer": "Lo encuentro muy caro.",
+      "accept": [
+        "Lo veo muy caro."
+      ],
+      "why": "*Lo encuentro* is the I find it version, with *muy* in front of the adjective."
+    },
+    {
+      "prompt": "Say, to a friend: How do you see it?",
+      "answer": "¿Cómo lo ves?",
+      "accept": [
+        "¿Cómo lo ves tú?"
+      ],
+      "why": "The question keeps *lo* in front of the verb."
+    },
+    {
+      "prompt": "Someone asks *¿Salvamos el café?* Answer: I think it's impossible.",
+      "answer": "Lo veo imposible.",
+      "accept": [
+        "Lo encuentro imposible."
+      ],
+      "why": "Your answer points back to what they asked with *lo*."
+    },
+    {
+      "prompt": "Say: I think it's quite likely.",
+      "answer": "Lo veo bastante probable.",
+      "accept": [
+        "Lo veo muy probable.",
+        "Lo encuentro bastante probable."
+      ],
+      "why": "*Bastante* means quite, and it goes right before the adjective."
+    },
+    {
+      "prompt": "Someone asks about the schedule, *el horario*. Answer: I find it interesting.",
+      "answer": "Lo encuentro interesante.",
+      "accept": [
+        "Lo veo interesante."
+      ],
+      "why": "*Horario* is masculine, so *lo*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Veo difícil.",
+      "right": "Lo veo difícil.",
+      "why": "Almost. English can drop the it, but Spanish needs the *lo* to point at the thing."
+    },
+    {
+      "wrong": "Veo lo difícil.",
+      "right": "Lo veo difícil.",
+      "why": "The *lo* goes in front of the verb. *Veo lo difícil* means I see the hard part."
+    },
+    {
+      "wrong": "Lo veo difícil.",
+      "right": "La veo difícil.",
+      "why": "When the thing is feminine, like *la audiencia*, the pointer is *la*."
+    }
+  ],
+  "personal": "Think of a plan you're not sure about. Write what you'd say if a friend asked about it, using *Lo veo…* or *Lo encuentro…*."
+}

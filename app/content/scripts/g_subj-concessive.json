@@ -1,0 +1,203 @@
+{
+  "node": "g:subj-concessive",
+  "hook": {
+    "line": "Altamira's lawyer keeps raising his offer, and Tomás hasn't even looked at the number. When you want to say that nothing a person might do will change your mind, Spanish gives *aunque* a different verb form.",
+    "es": "Aunque Altamira me ofrezca más, no vendo el café.",
+    "en": "Even if Altamira offers me more, I'm not selling the café."
+  },
+  "examples": [
+    {
+      "es": "Aunque llueva, saldré.",
+      "en": "Even if it rains, I'll go out."
+    },
+    {
+      "es": "Aunque me ofrezcan un millón, no vendo.",
+      "en": "Even if they offer me a million, I'm not selling."
+    },
+    {
+      "es": "Aunque Altamira pague bien, no nos vamos.",
+      "en": "Even if Altamira pays well, we're not leaving."
+    },
+    {
+      "es": "Aunque sea caro, lo compro.",
+      "en": "Even if it's expensive, I'll buy it."
+    },
+    {
+      "es": "Aunque tengas razón, no voy a firmar.",
+      "en": "Even if you're right, I'm not going to sign."
+    },
+    {
+      "es": "Por más que Altamira insista, no voy a firmar.",
+      "en": "However much Altamira insists, I'm not going to sign."
+    },
+    {
+      "es": "¿Vas a ir aunque llueva?",
+      "en": "Are you going to go even if it rains?"
+    }
+  ],
+  "rule": "Until now, *aunque* meant even though and took a plain verb, because you were stating a fact: *Aunque llueve, salgo.*\n\nWhen the thing is only possible, or you don't care whether it's true, the verb changes ending: *Aunque llueva, saldré.* In English that is even if.\n\nThe switch is the vowel flip you already know from the subjunctive:\n*-ar* verbs take *-e*: *llueva*, *pague*, *insista*.\n*-er* and *-ir* verbs take *-a*: *tenga*, *haga*, *ofrezca* (it is *-ca* here).\nIrregulars stay irregular: *sea*, *esté*, *vaya*, *sepa*.\n\n*Por más que* and *por mucho que* work the same way and mean however much.\n\nThe main verb stays normal: *no vendo*, *saldré*, *no voy a firmar*.",
+  "smallPrint": "Teachers call this the concessive subjunctive: *aunque* with the subjunctive for a case that is possible or beside the point. In the next lesson you'll set it side by side with *aunque* plus the plain verb.",
+  "readAndPick": [
+    {
+      "es": "Aunque llueva, salimos.",
+      "options": [
+        "Even though it's raining, we go out.",
+        "Even if it rains, we go out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Aunque Altamira pague bien, no vendemos.",
+      "options": [
+        "Even if Altamira pays well, we're not selling.",
+        "Altamira pays well, so we're selling.",
+        "Even though Altamira pays well, we're not selling."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aunque sea tarde, abrimos.",
+      "options": [
+        "Even if it's late, we open.",
+        "Even though it was late, we opened.",
+        "Because it's late, we open."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por más que Altamira insista, no voy a firmar.",
+      "options": [
+        "Altamira insisted, so I'm going to sign.",
+        "However much Altamira insists, I'm not going to sign.",
+        "Because Altamira insists, I'm not going to sign."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Aunque tengas razón, no voy a firmar.",
+      "options": [
+        "Even though you're right, I signed.",
+        "Because you're right, I'm not going to sign.",
+        "Even if you're right, I'm not going to sign."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Aunque me ofrezcan un millón, no vendo.",
+      "options": [
+        "Even if they offer me a million, I'm not selling.",
+        "They offered me a million, but I'm not selling.",
+        "They offered me a million, so I'm selling."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aunque no me guste, lo voy a hacer.",
+      "options": [
+        "I don't like it, so I'm not going to do it.",
+        "Even if I don't like it, I'm going to do it.",
+        "I liked it, so I'm going to do it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Aunque esté cansado, voy al trabajo.",
+      "options": [
+        "Even if I'm tired, I'm going to work.",
+        "I'm not tired, so I'm going to work.",
+        "Because I'm tired, I'm not going to work."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Vas a ir aunque llueva?",
+      "options": [
+        "Did you go even though it rained?",
+        "Are you going to go even if it rains?",
+        "Are you going because it rains?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *llueve* or *llueva* and type the whole sentence: *Aunque ___, saldré.* (Even if it rains, I'll go out.)",
+      "answer": "Aunque llueva, saldré.",
+      "accept": [],
+      "why": "Rain is only possible, not a fact yet, so the verb takes the *-a* ending of *llover*."
+    },
+    {
+      "prompt": "Choose *sea* or *es* and type the whole sentence: *Aunque ___ caro, lo compro.* (Even if it's expensive, I'll buy it.)",
+      "answer": "Aunque sea caro, lo compro.",
+      "accept": [
+        "Lo compro aunque sea caro."
+      ],
+      "why": "You don't know the price or you don't care, so *ser* flips to *sea*."
+    },
+    {
+      "prompt": "Say: Even if Altamira offers me more, I'm not selling.",
+      "answer": "Aunque Altamira me ofrezca más, no vendo.",
+      "accept": [
+        "No vendo aunque Altamira me ofrezca más.",
+        "Aunque Altamira me ofrezca más, no voy a vender."
+      ],
+      "why": "*Ofrecer* is an *-er* verb, so the flip to *-a* gives *ofrezca*, and the main verb stays normal."
+    },
+    {
+      "prompt": "Say, to a friend: Even if you're right, I'm not going to sign.",
+      "answer": "Aunque tengas razón, no voy a firmar.",
+      "accept": [
+        "No voy a firmar aunque tengas razón."
+      ],
+      "why": "*Tener* is an *-er* verb, so *tienes* becomes *tengas*."
+    },
+    {
+      "prompt": "Say: However much Altamira insists, I'm not going to sign.",
+      "answer": "Por más que Altamira insista, no voy a firmar.",
+      "accept": [
+        "Por mucho que Altamira insista, no voy a firmar."
+      ],
+      "why": "*Por más que* works like *aunque*: *insistir* is an *-ir* verb, so it takes *-a*."
+    },
+    {
+      "prompt": "Change to a possibility: *Aunque Hernando dice que no, yo voy.* (Even if Hernando says no, I'm going.)",
+      "answer": "Aunque Hernando diga que no, yo voy.",
+      "accept": [
+        "Yo voy aunque Hernando diga que no."
+      ],
+      "why": "*Decir* has a *g* in the subjunctive: *diga*."
+    },
+    {
+      "prompt": "Say, to a male friend: Even if you're tired, you have to come.",
+      "answer": "Aunque estés cansado, tienes que venir.",
+      "accept": [
+        "Aunque estés cansado, tienes que venir.",
+        "Tienes que venir aunque estés cansado."
+      ],
+      "why": "*Estar* keeps its accent in the subjunctive: *estés*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Aunque llueve, saldré mañana.",
+      "right": "Aunque llueva, saldré mañana.",
+      "why": "Almost. Tomorrow's rain is not a fact yet, and the plain verb states a fact, so Spanish switches to *llueva*."
+    },
+    {
+      "wrong": "Aunque si llueva, saldré.",
+      "right": "Aunque llueva, saldré.",
+      "why": "Almost. English needs even if, but Spanish is just *aunque* plus the subjunctive, with no *si*."
+    },
+    {
+      "wrong": "Aunque llueva, pero saldré.",
+      "right": "Aunque llueva, saldré.",
+      "why": "One connector is enough: *aunque* already carries the but."
+    },
+    {
+      "wrong": "Aunque tenga razón, no voy a firmar.",
+      "right": "Aunque tengas razón, no voy a firmar.",
+      "why": "Almost. The ending must match who you're talking to: *tengas* for you, *tenga* for him or her."
+    }
+  ],
+  "personal": "What would you do even if it were hard or got expensive? Write two true sentences that start with *Aunque* plus a subjunctive, like *Aunque sea difícil, voy a seguir.*"
+}

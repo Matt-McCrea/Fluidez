@@ -1,0 +1,169 @@
+{
+  "node": "p:habria-que",
+  "hook": {
+    "line": "In the café, plenty of things need doing and nobody wants to point a finger. Spanish has a way to say what ought to happen without saying who should do it.",
+    "es": "Habría que hablar con el dueño antes de firmar.",
+    "en": "Someone should talk to the owner before signing."
+  },
+  "examples": [
+    {
+      "es": "Habría que llamarla y contarle.",
+      "en": "Someone ought to call her and tell her."
+    },
+    {
+      "es": "Habría que hablar con el dueño antes de firmar.",
+      "en": "Someone should talk to the owner before signing."
+    },
+    {
+      "es": "Habría que ir a la audiencia.",
+      "en": "Someone ought to go to the hearing."
+    },
+    {
+      "es": "Habría que abrir más temprano.",
+      "en": "We'd need to open earlier."
+    },
+    {
+      "es": "No habría que firmar nada todavía.",
+      "en": "We shouldn't sign anything yet."
+    },
+    {
+      "es": "¿Habría que llamar a Mariana?",
+      "en": "Should someone call Mariana?"
+    }
+  ],
+  "rule": "*Habría que* plus an infinitive says what ought to be done, and it never says who. It is softer than *hay que* (it has to be done): it's a suggestion, not an order.\n\n*Habría que llamarla.*\n*No habría que firmar nada.*\n*¿Habría que llamar a Mariana?*\n\nIt never changes: always *habría*, always *que*, and the next verb is an infinitive. It sounds natural when you want to suggest something without blaming or pointing at anyone.",
+  "smallPrint": "Teachers call *habría* the conditional of *haber*. Here it works as a polite suggestion.",
+  "readAndPick": [
+    {
+      "es": "Habría que hablar con el dueño antes de firmar.",
+      "options": [
+        "Someone talked to the owner before signing.",
+        "Someone should talk to the owner before signing.",
+        "Someone will talk to the owner after signing."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hay que firmar hoy.",
+      "options": [
+        "Someone ought to sign today.",
+        "It has to be signed today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Habría que llamarla y contarle.",
+      "options": [
+        "Someone ought to call her and tell her.",
+        "Someone called her and told her.",
+        "She is going to call and tell someone."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No habría que firmar nada todavía.",
+      "options": [
+        "We have signed nothing yet.",
+        "We shouldn't sign anything yet.",
+        "Someone ought to sign something now."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Habría que llamar a Mariana?",
+      "options": [
+        "Did someone call Mariana?",
+        "Should someone call Mariana?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Habría que abrir más temprano.",
+      "options": [
+        "We'd need to open earlier.",
+        "We opened earlier.",
+        "We'd need to close earlier."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Habría que pensarlo bien.",
+      "options": [
+        "I thought about it well.",
+        "We should think it over carefully."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Habría que ir a la audiencia.",
+      "options": [
+        "Someone went to the hearing.",
+        "The hearing is far away.",
+        "Someone ought to go to the hearing."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *hablar* or *hablamos* and type the whole sentence: *Habría que ___ con el dueño.* (Someone should talk to the owner.)",
+      "answer": "Habría que hablar con el dueño.",
+      "accept": [],
+      "why": "After *habría que* the next verb is always the infinitive."
+    },
+    {
+      "prompt": "Choose *Hay que* or *Habría que* and type the whole sentence: *___ ir a la audiencia.* (A gentle suggestion: someone ought to go to the hearing.)",
+      "answer": "Habría que ir a la audiencia.",
+      "accept": [],
+      "why": "*Habría que* is the softer one, a suggestion."
+    },
+    {
+      "prompt": "Say: Someone ought to call her and tell her.",
+      "answer": "Habría que llamarla y contarle.",
+      "accept": [],
+      "why": "The *la* joins the end of the infinitive: *llamarla*."
+    },
+    {
+      "prompt": "Say: We'd need to open earlier.",
+      "answer": "Habría que abrir más temprano.",
+      "accept": [],
+      "why": "*Habría que* plus the infinitive, and nobody is named."
+    },
+    {
+      "prompt": "Say: Someone should talk to the owner before signing.",
+      "answer": "Habría que hablar con el dueño antes de firmar.",
+      "accept": [],
+      "why": "Both verbs after *que* and *antes de* stay in the infinitive."
+    },
+    {
+      "prompt": "Make it negative: *Habría que firmar hoy.* (We shouldn't sign today.)",
+      "answer": "No habría que firmar hoy.",
+      "accept": [],
+      "why": "*No* goes in front of *habría*."
+    },
+    {
+      "prompt": "Make it a question: *Habría que llamar a Mariana.* (Should someone call Mariana?)",
+      "answer": "¿Habría que llamar a Mariana?",
+      "accept": [],
+      "why": "Same words, with question marks."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Habría que llamas a Mariana.",
+      "right": "Habría que llamar a Mariana.",
+      "why": "Almost. After *habría que* the verb stays in the infinitive, not tied to a person."
+    },
+    {
+      "wrong": "Habría llamarla y contarle.",
+      "right": "Habría que llamarla y contarle.",
+      "why": "The *que* is part of the phrase, like ought to in English, so keep it."
+    },
+    {
+      "wrong": "Habrías que llamarla.",
+      "right": "Habría que llamarla.",
+      "why": "The phrase never changes for a person: it is always *habría que*."
+    }
+  ],
+  "personal": "Look around your home or your street. Write two things that ought to be done, starting with *Habría que…*."
+}
