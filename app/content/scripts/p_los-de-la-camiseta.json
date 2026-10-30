@@ -1,0 +1,181 @@
+{
+  "node": "p:los-de-la-camiseta",
+  "hook": {
+    "line": "Don Hernando watches the match and cannot remember a single name. He says who he means by what they are wearing, and never repeats the word for the players.",
+    "es": "Los de la camiseta roja juegan mejor.",
+    "en": "The ones in the red shirts play better."
+  },
+  "examples": [
+    {
+      "es": "Los de la camiseta roja juegan mejor.",
+      "en": "The ones in the red shirts play better."
+    },
+    {
+      "es": "Me gusta más la de la izquierda.",
+      "en": "I like the one on the left better."
+    },
+    {
+      "es": "¿Cuál es tu carro?\nEl de la esquina.",
+      "en": "Which is your car?\nThe one on the corner."
+    },
+    {
+      "es": "Los del café abren a las siete.",
+      "en": "The ones from the café open at seven."
+    },
+    {
+      "es": "¿Las llaves de la casa?\nNo, las del carro.",
+      "en": "The house keys?\nNo, the car ones."
+    },
+    {
+      "es": "Tres de los invitados no vinieron.",
+      "en": "Three of the guests didn't come."
+    }
+  ],
+  "rule": "English says \"the one\" or \"the ones\". Spanish simply drops the noun and keeps the article: *el*, *la*, *los*, *las* plus *de* plus a detail that tells you which: *los de la camiseta roja*.\n\nThe article matches the noun you left out: *la de la izquierda* (a feminine thing), *los de* (masculine plural). *De* plus *el* joins as *del*: *el del café*.\n\nWith a number: *tres de los invitados*, *dos de mis amigos*. Drop the noun only when the listener can tell what it is.",
+  "smallPrint": "Teachers call this a noun left out (ellipsis): the article is doing the job of a pronoun.",
+  "readAndPick": [
+    {
+      "es": "Me gusta más la de la izquierda.",
+      "options": [
+        "I like the ones on the left better.",
+        "I like the one on the left better.",
+        "I like the left better."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los de la camiseta roja juegan mejor.",
+      "options": [
+        "The one in the red shirt plays better.",
+        "The red shirt plays better.",
+        "The ones in the red shirts play better."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Dos de mis amigos viven en Medellín.",
+      "options": [
+        "Two of my friends live in Medellín.",
+        "My two friends live in Medellín.",
+        "Two friends live in Medellín."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las de ladrillo son más caras.",
+      "options": [
+        "The brick one is more expensive.",
+        "The brick ones are more expensive.",
+        "The brick ones are cheaper."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El de ayer estaba mejor.",
+      "options": [
+        "The ones from yesterday were better.",
+        "Yesterday was better.",
+        "The one from yesterday was better."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los del café abren a las siete.",
+      "options": [
+        "The one from the café opens at seven.",
+        "The ones from the café open at seven.",
+        "The café opens at seven."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué cartel te gusta?\nEl de los colores.",
+      "options": [
+        "The one with the colours.",
+        "The ones with the colours.",
+        "The colours are nice."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cinco de los vecinos firmaron.",
+      "options": [
+        "The five neighbours signed.",
+        "Five neighbours signed.",
+        "Five of the neighbours signed."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La de Vale es más dulce.",
+      "options": [
+        "Vale's is sweeter. (a feminine thing)",
+        "Vale's are sweeter. (feminine things)",
+        "Vale is sweeter."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *el* or *la* and type the whole sentence: *Me gusta más ___ de la izquierda.* (I like the one on the left better. You mean a house, *la casa*.)",
+      "answer": "Me gusta más la de la izquierda.",
+      "accept": [],
+      "why": "*La* matches the missing *casa*, which is feminine."
+    },
+    {
+      "prompt": "Type in Spanish: The ones in the red shirts play better.",
+      "answer": "Los de la camiseta roja juegan mejor.",
+      "accept": [],
+      "why": "*Los* stands for the players, so you never repeat the noun."
+    },
+    {
+      "prompt": "Type in Spanish: I prefer the one by the window. (a masculine thing)",
+      "answer": "Prefiero el de la ventana.",
+      "accept": [],
+      "why": "*El* plus *de* plus the place tells you which one."
+    },
+    {
+      "prompt": "Type in Spanish: Two of my friends live in Medellín.",
+      "answer": "Dos de mis amigos viven en Medellín.",
+      "accept": [],
+      "why": "A number plus *de* plus the whole group says how many of them."
+    },
+    {
+      "prompt": "Type in Spanish: Vale's is sweeter. (a feminine thing)",
+      "answer": "La de Vale es más dulce.",
+      "accept": [],
+      "why": "*La* agrees with the missing feminine noun."
+    },
+    {
+      "prompt": "Make it about the café: *Los de la casa abren a las siete.* Say: The ones from the café open at seven.",
+      "answer": "Los del café abren a las siete.",
+      "accept": [],
+      "why": "*De* plus *el* always joins as *del*."
+    },
+    {
+      "prompt": "Type in Spanish: Five of the neighbours signed.",
+      "answer": "Cinco de los vecinos firmaron.",
+      "accept": [],
+      "why": "*De los* names the group the five come from."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me gusta más la una de la izquierda.",
+      "right": "Me gusta más la de la izquierda.",
+      "why": "Almost. English needs \"one\"; Spanish needs nothing, just the article and *de*."
+    },
+    {
+      "wrong": "Los de el café abren a las siete.",
+      "right": "Los del café abren a las siete.",
+      "why": "Almost. *De* and *el* always join into *del*."
+    },
+    {
+      "wrong": "Tres de amigos vinieron.",
+      "right": "Tres de mis amigos vinieron.",
+      "why": "Almost. After a number and *de*, you need the whole group: *mis*, *los*."
+    }
+  ],
+  "personal": "Point out something around you without naming it: use *el de*, *la de*, *los de* or *las de* plus a detail, for example *la de la ventana*."
+}

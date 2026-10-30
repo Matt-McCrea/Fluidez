@@ -1,0 +1,180 @@
+{
+  "node": "p:same-subject-haber",
+  "hook": {
+    "line": "Someone says Tomás signed a paper, and he honestly cannot remember it. To talk about your own memory, doubt or certainty, Spanish skips the extra clause and goes straight to *haber*.",
+    "es": "No recuerdo haber firmado eso.",
+    "en": "I don't remember signing that."
+  },
+  "examples": [
+    {
+      "es": "No recuerdo haber firmado eso.",
+      "en": "I don't remember signing that."
+    },
+    {
+      "es": "Estoy segura de haber cerrado la puerta.",
+      "en": "I'm sure I closed the door. (a woman speaking)"
+    },
+    {
+      "es": "Me suena haber leído algo.",
+      "en": "I seem to remember reading something."
+    },
+    {
+      "es": "Creo haber visto a Vale en la calle.",
+      "en": "I think I saw Vale in the street."
+    },
+    {
+      "es": "Estoy seguro de no haber dejado el celular aquí.",
+      "en": "I'm sure I didn't leave my phone here. (a man speaking)"
+    },
+    {
+      "es": "Hernando asegura haber manejado un taxi cuarenta años.",
+      "en": "Hernando claims to have driven a taxi for forty years."
+    }
+  ],
+  "rule": "When the person who remembers, doubts or feels sure is the same person who did the thing, Spanish skips the clause with *que*. It uses *haber* plus the *-do* form: *No recuerdo haber firmado eso*, not *no recuerdo que yo firmé*.\n\nIt works with *recordar*, *creer*, *asegurar* and *me suena*. After adjectives like *seguro* you need *de*: *estoy segura de haber cerrado*.\n\nDifferent person? Back to *que*: *Recuerdo que Vale cerró la puerta*.",
+  "smallPrint": "Teachers call this a same-subject infinitive clause: when both verbs share a subject, the second becomes an infinitive.",
+  "readAndPick": [
+    {
+      "es": "No recuerdo haber firmado eso.",
+      "options": [
+        "I don't remember if I'll sign that.",
+        "I won't sign that.",
+        "I don't remember signing that."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estoy segura de haber cerrado la puerta.",
+      "options": [
+        "I'm sure I closed the door.",
+        "I'm sure I will close the door.",
+        "I'm sure she closed the door."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me suena haber leído algo.",
+      "options": [
+        "It sounds like I will read something.",
+        "I seem to remember reading something.",
+        "I seem to remember writing something."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Creo haber visto a Vale en la calle.",
+      "options": [
+        "I think I'll see Vale in the street.",
+        "I think Vale saw me in the street.",
+        "I think I saw Vale in the street."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hernando asegura haber manejado un taxi cuarenta años.",
+      "options": [
+        "Hernando claims to have driven a taxi for forty years.",
+        "Hernando claims he will drive a taxi for forty years.",
+        "Hernando claims I drove a taxi for forty years."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy seguro de no haber dejado el celular aquí.",
+      "options": [
+        "I'm sure I left my phone here.",
+        "I'm sure I didn't leave my phone here.",
+        "I'm not sure I left my phone here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No recuerdo haber llamado a Mariana.",
+      "options": [
+        "I remember calling Mariana.",
+        "I don't remember Mariana calling.",
+        "I don't remember calling Mariana."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Recuerdo haber visto ese cartel.",
+      "options": [
+        "I remember seeing that poster.",
+        "I don't remember seeing that poster."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Juro haber cerrado el café.",
+      "options": [
+        "I swear I'll close the café.",
+        "I swear I closed the café.",
+        "I swear I didn't close the café."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *haber* or *que* and type the whole sentence: *No recuerdo ___ firmado eso.* (I don't remember signing that.)",
+      "answer": "No recuerdo haber firmado eso.",
+      "accept": [],
+      "why": "Same person remembers and signed, so no clause: *haber* plus *-do*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm sure I closed the door. (a woman speaking)",
+      "answer": "Estoy segura de haber cerrado la puerta.",
+      "accept": [],
+      "why": "*Segura* needs *de* before *haber*."
+    },
+    {
+      "prompt": "Type in Spanish: I think I saw Vale in the street.",
+      "answer": "Creo haber visto a Vale en la calle.",
+      "accept": [],
+      "why": "*Creo* goes straight to *haber visto*, with no *que*."
+    },
+    {
+      "prompt": "Type in Spanish: I seem to remember reading something.",
+      "answer": "Me suena haber leído algo.",
+      "accept": [],
+      "why": "*Me suena* is followed by *haber* plus the *-do* form."
+    },
+    {
+      "prompt": "Make it negative: *Recuerdo haber visto ese cartel.* Say: I don't remember seeing that poster.",
+      "answer": "No recuerdo haber visto ese cartel.",
+      "accept": [],
+      "why": "Put *no* before *recuerdo*; *haber visto* stays the same."
+    },
+    {
+      "prompt": "Type in Spanish: I'm sure I didn't leave my phone here. (a man speaking)",
+      "answer": "Estoy seguro de no haber dejado el celular aquí.",
+      "accept": [],
+      "why": "*No* goes right before *haber*."
+    },
+    {
+      "prompt": "Type in Spanish: I don't remember calling Mariana.",
+      "answer": "No recuerdo haber llamado a Mariana.",
+      "accept": [],
+      "why": "Same frame: *no recuerdo haber* plus the *-do* form."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No recuerdo que yo firmé eso.",
+      "right": "No recuerdo haber firmado eso.",
+      "why": "Almost. When the same person did it, Spanish skips the *que* clause and uses *haber*."
+    },
+    {
+      "wrong": "Estoy segura haber cerrado la puerta.",
+      "right": "Estoy segura de haber cerrado la puerta.",
+      "why": "Almost. *Segura* needs *de* before *haber*."
+    },
+    {
+      "wrong": "No recuerdo haber firmo eso.",
+      "right": "No recuerdo haber firmado eso.",
+      "why": "Almost. After *haber*, the verb takes its *-do* ending: *firmado*."
+    }
+  ],
+  "personal": "Say one thing you are sure you did, or don't remember doing, with *Estoy seguro de haber* or *No recuerdo haber*."
+}

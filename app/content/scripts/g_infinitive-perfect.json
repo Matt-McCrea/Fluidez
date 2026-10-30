@@ -1,0 +1,184 @@
+{
+  "node": "g:infinitive-perfect",
+  "hook": {
+    "line": "Sooner or later you need to say what happened before something else: thank someone for coming, apologise for not calling, explain a regret. Spanish has a compact way to look back.",
+    "es": "Gracias por haber venido.",
+    "en": "Thank you for having come."
+  },
+  "examples": [
+    {
+      "es": "Después de haber firmado, se arrepintió.",
+      "en": "After having signed, he regretted it."
+    },
+    {
+      "es": "Gracias por haber venido.",
+      "en": "Thank you for having come."
+    },
+    {
+      "es": "Perdón por no haber llamado.",
+      "en": "Sorry for not having called."
+    },
+    {
+      "es": "Después de haber hablado con Vale, Tomás se sintió mejor.",
+      "en": "After having spoken with Vale, Tomás felt better."
+    },
+    {
+      "es": "Se fue sin haber terminado el café.",
+      "en": "He left without having finished the coffee."
+    },
+    {
+      "es": "Por no haber estudiado, no pasó el examen.",
+      "en": "For not having studied, he didn't pass the exam."
+    }
+  ],
+  "rule": "You already know *he firmado* (\"I have signed\"). To look back from inside a phrase, put *haber* in its base form and add the *-do* form: *haber firmado*, *haber venido*, *haber comido*.\n\nUse it after words that take the base form of a verb: *después de haber firmado*, *por haber venido*, *sin haber terminado*. For \"not\", *no* goes before *haber*: *por no haber llamado*.\n\nIt says the action was finished before the main verb. English often shortens this to \"after signing\", and Spanish can too (*después de firmar*), but *haber* makes \"already done\" explicit.",
+  "smallPrint": "Teachers call *haber firmado* the perfect infinitive: the base form of the *he firmado* tense.",
+  "readAndPick": [
+    {
+      "es": "Después de haber firmado, se arrepintió.",
+      "options": [
+        "Before signing, he regretted it.",
+        "After having signed, he regretted it.",
+        "After signing, he will regret it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Gracias por haber venido.",
+      "options": [
+        "Thanks for not having come.",
+        "Thanks, I'm coming.",
+        "Thanks for having come."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Perdón por no haber llamado.",
+      "options": [
+        "Sorry for not having called.",
+        "Sorry for having called.",
+        "Sorry, I'll call."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se fue sin haber terminado el café.",
+      "options": [
+        "He left after having finished the coffee.",
+        "He left without having finished the coffee.",
+        "He left to finish the coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por no haber estudiado, no pasó el examen.",
+      "options": [
+        "After studying, he passed the exam.",
+        "Because he studied, he didn't pass the exam.",
+        "For not having studied, he didn't pass the exam."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Después de haber hablado con Vale, Tomás se sintió mejor.",
+      "options": [
+        "After having spoken with Vale, Tomás felt better.",
+        "Before speaking with Vale, Tomás felt better.",
+        "Because he didn't speak with Vale, Tomás felt better."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Después de haber comido, salimos a caminar.",
+      "options": [
+        "Before eating, we went out for a walk.",
+        "After having eaten, we went out for a walk.",
+        "After having eaten, they went out for a walk."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me alegro de haber conocido a Rosa.",
+      "options": [
+        "I'm glad to meet Rosa.",
+        "I'm glad I didn't meet Rosa.",
+        "I'm glad to have met Rosa."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Perdón por haber llegado tarde.",
+      "options": [
+        "Sorry for having arrived late.",
+        "Sorry for not having arrived late."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *haber* or *he* and type the whole sentence: *Gracias por ___ venido.* (Thank you for having come.)",
+      "answer": "Gracias por haber venido.",
+      "accept": [],
+      "why": "After *por* the verb stays in its base form, so *haber*, not *he*."
+    },
+    {
+      "prompt": "Type in Spanish: Sorry for not having called.",
+      "answer": "Perdón por no haber llamado.",
+      "accept": [],
+      "why": "*No* goes before *haber*."
+    },
+    {
+      "prompt": "Type in Spanish: After having eaten, we went out for a walk.",
+      "answer": "Después de haber comido, salimos a caminar.",
+      "accept": [],
+      "why": "*Después de* plus *haber* plus the *-do* form says what was done first."
+    },
+    {
+      "prompt": "Type in Spanish: He left without having finished the coffee. (a man)",
+      "answer": "Se fue sin haber terminado el café.",
+      "accept": [
+        "Él se fue sin haber terminado el café."
+      ],
+      "why": "*Sin* is followed by the base form, so *sin haber terminado*."
+    },
+    {
+      "prompt": "Type in Spanish: For not having studied, he didn't pass the exam.",
+      "answer": "Por no haber estudiado, no pasó el examen.",
+      "accept": [
+        "Por no haber estudiado, él no pasó el examen."
+      ],
+      "why": "*Por no haber estudiado* gives the reason, one step back in time."
+    },
+    {
+      "prompt": "Make it about Vale: *Después de haber comido, salimos a caminar.* Say: After having spoken with Vale, Tomás felt better.",
+      "answer": "Después de haber hablado con Vale, Tomás se sintió mejor.",
+      "accept": [],
+      "why": "Same frame, new verb: *hablado* is the *-do* form of *hablar*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm glad to have met Rosa.",
+      "answer": "Me alegro de haber conocido a Rosa.",
+      "accept": [],
+      "why": "*Me alegro de* is followed by the base form, so *de haber conocido*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Después de haber firmar, se arrepintió.",
+      "right": "Después de haber firmado, se arrepintió.",
+      "why": "Almost. After *haber*, the verb takes its *-do* ending: *firmado*."
+    },
+    {
+      "wrong": "Gracias por he venido.",
+      "right": "Gracias por haber venido.",
+      "why": "Almost. After *por* the verb stays in its base form: *haber*, not *he*."
+    },
+    {
+      "wrong": "Perdón por haber no llamado.",
+      "right": "Perdón por no haber llamado.",
+      "why": "Almost. *No* goes before *haber*, not after it."
+    }
+  ],
+  "personal": "Thank someone or say sorry for something real, starting with *Gracias por haber* or *Perdón por no haber*."
+}

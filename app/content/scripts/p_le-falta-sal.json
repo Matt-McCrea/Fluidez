@@ -1,0 +1,183 @@
+{
+  "node": "p:le-falta-sal",
+  "hook": {
+    "line": "Tomás tastes a spoonful of Vale's soup and wants to say what is wrong without just saying \"it's bad\". A precise word for the taste is kinder and far more useful.",
+    "es": "A la sopa le falta sal.",
+    "en": "The soup is missing salt."
+  },
+  "examples": [
+    {
+      "es": "La sopa está desabrida, le falta sal.",
+      "en": "The soup is bland, it needs salt."
+    },
+    {
+      "es": "Tiene un toque agridulce.",
+      "en": "It has a sweet and sour touch."
+    },
+    {
+      "es": "Esta salsa está muy picante.",
+      "en": "This sauce is very spicy."
+    },
+    {
+      "es": "Huele a quemado.",
+      "en": "It smells burnt."
+    },
+    {
+      "es": "Al jugo le falta azúcar.",
+      "en": "The juice is missing sugar."
+    },
+    {
+      "es": "El tinto está un poco amargo.",
+      "en": "The black coffee is a little bitter."
+    }
+  ],
+  "rule": "To say what a dish lacks, use *faltar*: *A la sopa le falta sal*. The dish comes first with *a*, and *le* repeats it. English says \"it needs salt\"; Spanish says \"salt is missing to it\". If what is missing is plural, the verb follows it: *le faltan*.\n\nFor how something tastes right now, use *estar*: *está salado*, *está picante*, *está amargo*. Colombians say *desabrido* for bland.\n\nFor a hint of something, *tiene un toque de limón*. For smell, *huele a* plus the thing: *huele a pan*.",
+  "smallPrint": "Teachers say *faltar* works like *gustar*: the thing that is missing is the subject, and *le* is the person or thing that lacks it.",
+  "readAndPick": [
+    {
+      "es": "Al jugo le falta azúcar.",
+      "options": [
+        "The juice is too sweet.",
+        "The juice is missing sugar.",
+        "The juice smells of sugar."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esta salsa está muy picante.",
+      "options": [
+        "This sauce is very spicy.",
+        "This sauce is not spicy at all.",
+        "This sauce needs spice."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Huele a quemado.",
+      "options": [
+        "It tastes burnt.",
+        "It smells good.",
+        "It smells burnt."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tiene un toque de limón.",
+      "options": [
+        "It needs lemon.",
+        "It has a touch of lemon.",
+        "It smells of lemon."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A la sopa le falta sal.",
+      "options": [
+        "The soup is too salty.",
+        "The soup is missing salt.",
+        "The soup has salt."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Está demasiado salado.",
+      "options": [
+        "It is too salty.",
+        "It is a little salty.",
+        "It needs salt."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El tinto está un poco amargo.",
+      "options": [
+        "The black coffee is very bitter.",
+        "The black coffee is not bitter.",
+        "The black coffee is a little bitter."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La cocina huele a pan.",
+      "options": [
+        "The kitchen tastes of bread.",
+        "The kitchen smells of bread.",
+        "The kitchen needs bread."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A mi sopa no le falta sal.",
+      "options": [
+        "My soup is missing salt.",
+        "My soup is not missing salt.",
+        "My soup is too salty."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *le falta* or *está* and type the whole sentence: *A la salsa ___ limón.* (The sauce is missing lemon.)",
+      "answer": "A la salsa le falta limón.",
+      "accept": [],
+      "why": "*Le falta* says what is missing, and the missing thing comes after it."
+    },
+    {
+      "prompt": "Type in Spanish: The juice is missing sugar.",
+      "answer": "Al jugo le falta azúcar.",
+      "accept": [
+        "Le falta azúcar al jugo."
+      ],
+      "why": "The juice comes first with *a*, and *a* plus *el* joins as *al*."
+    },
+    {
+      "prompt": "Type in Spanish: This sauce is very spicy.",
+      "answer": "Esta salsa está muy picante.",
+      "accept": [],
+      "why": "How something tastes right now takes *está*."
+    },
+    {
+      "prompt": "Type in Spanish: It smells burnt.",
+      "answer": "Huele a quemado.",
+      "accept": [],
+      "why": "After *oler*, the thing you smell comes with *a*."
+    },
+    {
+      "prompt": "Type in Spanish: The black coffee is a little bitter.",
+      "answer": "El tinto está un poco amargo.",
+      "accept": [],
+      "why": "*Un poco* softens the taste word, as in English."
+    },
+    {
+      "prompt": "Make it negative: *A la sopa le falta sal.* Say: My soup is not missing salt.",
+      "answer": "A mi sopa no le falta sal.",
+      "accept": [],
+      "why": "Put *no* right before *le falta*."
+    },
+    {
+      "prompt": "Type in Spanish: It has a touch of lemon.",
+      "answer": "Tiene un toque de limón.",
+      "accept": [],
+      "why": "*Tiene un toque de* plus the flavour gives a hint of it."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Esta salsa es muy picante.",
+      "right": "Esta salsa está muy picante.",
+      "why": "Almost. Here you are describing what you taste right now, so *está*."
+    },
+    {
+      "wrong": "La sopa le falta sal.",
+      "right": "A la sopa le falta sal.",
+      "why": "Almost. The thing that lacks something needs *a* in front: *a la sopa*."
+    },
+    {
+      "wrong": "Huele quemado.",
+      "right": "Huele a quemado.",
+      "why": "Almost. After *oler*, Spanish needs *a* before what you smell."
+    }
+  ],
+  "personal": "Think of a dish you ate recently. Say what it was missing or how it tasted, with *Le falta* or *Está*."
+}

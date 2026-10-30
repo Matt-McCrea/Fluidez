@@ -1,0 +1,185 @@
+{
+  "node": "p:detenerse-estar-parado",
+  "hook": {
+    "line": "Don Hernando watches a bus at the corner. Did it just stop, or has it been standing there all morning? English says \"stopped\" for both, but Spanish makes you pick.",
+    "es": "El bus se paró en la esquina.",
+    "en": "The bus stopped at the corner."
+  },
+  "examples": [
+    {
+      "es": "La máquina se detuvo de repente.",
+      "en": "The machine suddenly stopped."
+    },
+    {
+      "es": "El bus se paró en la esquina.",
+      "en": "The bus stopped at the corner."
+    },
+    {
+      "es": "El carro estaba parado en el semáforo.",
+      "en": "The car was stopped at the lights."
+    },
+    {
+      "es": "Los obreros estaban parados frente al edificio.",
+      "en": "The workers were standing in front of the building."
+    },
+    {
+      "es": "Quédate quieto.",
+      "en": "Keep still. (to a friend)"
+    },
+    {
+      "es": "Don Hernando se detuvo frente a la puerta.",
+      "en": "Don Hernando stopped in front of the door."
+    }
+  ],
+  "rule": "Two different things.\n\nThe moment of stopping: *se detuvo*, *se paró*. *Detenerse* is a little more formal; *pararse* is everyday.\n\nThe state afterwards: *estaba parado*, *estaba quieto*. This word agrees with what is stopped: *los carros estaban parados*, *ella estaba parada*. In Latin America *estar parado* also means standing up.\n\nTo ask someone to hold still: *quédate quieto* (friend), *quédese quieto* (usted).",
+  "smallPrint": "Teachers call *se detuvo* an event and *estaba parado* a resulting state: *estar* plus a participle, as in *está cerrado*.",
+  "readAndPick": [
+    {
+      "es": "La máquina se detuvo de repente.",
+      "options": [
+        "The machine was stopped all morning.",
+        "The machine suddenly stopped.",
+        "The machine started suddenly."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El carro estaba parado en el semáforo.",
+      "options": [
+        "The car stopped at the lights.",
+        "The car was going through the lights.",
+        "The car was stopped at the lights."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El bus se paró en la esquina.",
+      "options": [
+        "The bus stopped at the corner.",
+        "The bus was stopped at the corner.",
+        "The bus was leaving the corner."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quédate quieto.",
+      "options": [
+        "Come here. (to a friend)",
+        "Keep still. (to a friend)",
+        "Keep still. (to a stranger)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los carros estaban parados en la calle.",
+      "options": [
+        "The car was stopped in the street.",
+        "The cars stopped in the street.",
+        "The cars were stopped in the street."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ella estaba parada junto a la puerta.",
+      "options": [
+        "She was standing by the door.",
+        "He was standing by the door.",
+        "She stopped by the door."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana se detuvo a mirar el cartel.",
+      "options": [
+        "Mariana was looking at the poster.",
+        "Mariana was stopped looking at the poster.",
+        "Mariana stopped to look at the poster."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La música se detuvo.",
+      "options": [
+        "The music was stopped.",
+        "The music stopped.",
+        "The music was loud."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quédese quieto, por favor.",
+      "options": [
+        "Keep still, please. (to a stranger)",
+        "Keep still, please. (to a friend)",
+        "Please stay home. (to a stranger)"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *se paró* or *estaba parado* and type the whole sentence: *El bus ___ en la esquina.* (The bus stopped at the corner.)",
+      "answer": "El bus se paró en la esquina.",
+      "accept": [],
+      "why": "A single moment of stopping is an event: *se paró*."
+    },
+    {
+      "prompt": "Type in Spanish: The car was stopped at the lights.",
+      "answer": "El carro estaba parado en el semáforo.",
+      "accept": [],
+      "why": "Being stopped is a state, so *estaba parado*, with no *se*."
+    },
+    {
+      "prompt": "Type in Spanish: The machine suddenly stopped.",
+      "answer": "La máquina se detuvo de repente.",
+      "accept": [],
+      "why": "The moment it stopped is an event: *se detuvo*."
+    },
+    {
+      "prompt": "Type in Spanish: The cars were stopped in the street.",
+      "answer": "Los carros estaban parados en la calle.",
+      "accept": [],
+      "why": "*Parados* agrees with *los carros*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Keep still.",
+      "answer": "Quédate quieto.",
+      "accept": [
+        "Quédate quieta."
+      ],
+      "why": "*Quédate quieto* is how you ask a friend to hold still."
+    },
+    {
+      "prompt": "Say it politely to a stranger (usted): Keep still, please.",
+      "answer": "Quédese quieto, por favor.",
+      "accept": [
+        "Quédese quieta, por favor."
+      ],
+      "why": "*Usted* takes *quédese* instead of *quédate*."
+    },
+    {
+      "prompt": "Type in Spanish: Don Hernando stopped in front of the door.",
+      "answer": "Don Hernando se detuvo frente a la puerta.",
+      "accept": [],
+      "why": "He stopped at one moment, so *se detuvo*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El carro se estaba parado en el semáforo.",
+      "right": "El carro estaba parado en el semáforo.",
+      "why": "Almost. Being stopped is a state, so drop *se* and keep *estaba parado*."
+    },
+    {
+      "wrong": "Los carros estaban parado en la calle.",
+      "right": "Los carros estaban parados en la calle.",
+      "why": "Almost. *Parado* agrees with the cars, so it takes the plural ending."
+    },
+    {
+      "wrong": "La máquina estaba detuvo de repente.",
+      "right": "La máquina se detuvo de repente.",
+      "why": "Almost. Stopping at one moment is *se detuvo*, with no *estaba*."
+    }
+  ],
+  "personal": "Say something true about a place you know: what stopped there, or what is stopped there right now."
+}

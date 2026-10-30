@@ -1,0 +1,186 @@
+{
+  "node": "p:caracterizarse-por",
+  "hook": {
+    "line": "Mariana is writing about the café and the block. A good report does not say \"it's nice\"; it says what makes a thing stand out and what it is made up of.",
+    "es": "El edificio se caracteriza por su fachada de ladrillo.",
+    "en": "The building is characterised by its brick façade."
+  },
+  "examples": [
+    {
+      "es": "El edificio se caracteriza por su fachada de ladrillo.",
+      "en": "The building is characterised by its brick façade."
+    },
+    {
+      "es": "El comité se compone de cinco miembros.",
+      "en": "The committee is made up of five members."
+    },
+    {
+      "es": "El jurado está compuesto por tres jueces.",
+      "en": "The jury is made up of three judges."
+    },
+    {
+      "es": "El proyecto consiste en tres fases.",
+      "en": "The project consists of three phases."
+    },
+    {
+      "es": "Don Hernando se caracteriza por llegar tarde.",
+      "en": "Don Hernando is known for arriving late."
+    },
+    {
+      "es": "¿De qué se compone el informe?",
+      "en": "What is the report made up of?"
+    }
+  ],
+  "rule": "Three frames for describing a thing precisely in writing.\n\n*Se caracteriza por* plus a trait: what makes it stand out.\n*Se compone de* or *está compuesto por* plus the parts: what it is made up of.\n*Consiste en* plus a plan or content: what it involves.\n\nThe verb agrees with the thing described: *los informes se componen de*. After *por* and *en* you can use a noun or an infinitive: *consiste en medir*. Watch the small word: *por*, *de* and *en* are not interchangeable.",
+  "smallPrint": "Teachers call *se caracteriza por* and *se compone de* reflexive verbs used in a passive sense: the thing is described, not doing anything.",
+  "readAndPick": [
+    {
+      "es": "El edificio se caracteriza por su fachada de ladrillo.",
+      "options": [
+        "The building is made up of a brick façade.",
+        "The building is known for its brick façade.",
+        "The building was sold with a brick façade."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El jurado está compuesto por tres jueces.",
+      "options": [
+        "The jury is made up of three judges.",
+        "The jury is known for three judges.",
+        "The jury is waiting for three judges."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El proyecto consiste en tres fases.",
+      "options": [
+        "The project is characterised by three phases.",
+        "The project is in its third phase.",
+        "The project consists of three phases."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Don Hernando se caracteriza por llegar tarde.",
+      "options": [
+        "Don Hernando is late today.",
+        "Don Hernando is known for arriving late.",
+        "Don Hernando consists of arriving late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿De qué se compone el informe?",
+      "options": [
+        "Who wrote the report?",
+        "What is the report about?",
+        "What is the report made up of?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El plan consiste en vender el edificio.",
+      "options": [
+        "The plan involves selling the building.",
+        "The plan is to buy the building.",
+        "The plan is known for selling the building."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El informe se compone de tres partes.",
+      "options": [
+        "The report is the third part.",
+        "The report is made up of three parts.",
+        "The report is characterised by three parts."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Este café se caracteriza por su sabor suave.",
+      "options": [
+        "This coffee is known for its smooth flavour.",
+        "This coffee is made up of its smooth flavour."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mi equipo está compuesto por cuatro personas.",
+      "options": [
+        "My team is known for four people.",
+        "My team consists of four plans.",
+        "My team is made up of four people."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *se caracteriza* or *se compone* and type the whole sentence: *El edificio ___ por su fachada de ladrillo.*",
+      "answer": "El edificio se caracteriza por su fachada de ladrillo.",
+      "accept": [],
+      "why": "A trait that makes it stand out takes *se caracteriza por*."
+    },
+    {
+      "prompt": "Type in Spanish: The committee is made up of five members.",
+      "answer": "El comité se compone de cinco miembros.",
+      "accept": [
+        "El comité está compuesto por cinco miembros."
+      ],
+      "why": "Parts after *se compone* come with *de*."
+    },
+    {
+      "prompt": "Type in Spanish: The project consists of three phases.",
+      "answer": "El proyecto consiste en tres fases.",
+      "accept": [],
+      "why": "*Consiste* takes *en*, not *de*."
+    },
+    {
+      "prompt": "Type in Spanish: Don Hernando is known for arriving late.",
+      "answer": "Don Hernando se caracteriza por llegar tarde.",
+      "accept": [
+        "Hernando se caracteriza por llegar tarde."
+      ],
+      "why": "After *por*, the trait can be an infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: What is the report made up of?",
+      "answer": "¿De qué se compone el informe?",
+      "accept": [
+        "¿De qué está compuesto el informe?"
+      ],
+      "why": "*De qué* opens the question because *se compone* takes *de*."
+    },
+    {
+      "prompt": "Make it plural: *El informe se compone de tres partes.* Say: The reports are made up of three parts.",
+      "answer": "Los informes se componen de tres partes.",
+      "accept": [],
+      "why": "The verb follows the plural thing: *componen*."
+    },
+    {
+      "prompt": "Type in Spanish: The plan involves selling the building.",
+      "answer": "El plan consiste en vender el edificio.",
+      "accept": [],
+      "why": "*Consiste en* plus an infinitive says what the plan involves."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El proyecto consiste de tres fases.",
+      "right": "El proyecto consiste en tres fases.",
+      "why": "Almost. English \"consists of\" tempts you into *de*, but this verb takes *en*."
+    },
+    {
+      "wrong": "El comité se compone por cinco miembros.",
+      "right": "El comité se compone de cinco miembros.",
+      "why": "Almost. *Se compone* takes *de*; *por* belongs with *está compuesto* and *se caracteriza*."
+    },
+    {
+      "wrong": "El edificio se caracteriza de su fachada.",
+      "right": "El edificio se caracteriza por su fachada de ladrillo.",
+      "why": "Almost. The trait that makes it stand out follows *por*."
+    }
+  ],
+  "personal": "Describe your own building, street or team in one sentence with *se caracteriza por*, *se compone de* or *consiste en*."
+}
