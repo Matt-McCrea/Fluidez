@@ -1,0 +1,43 @@
+{
+  "node": "g:softening",
+  "hook": {
+    "line": "In Bogotá, a request or a hard truth rarely goes out bare. You wrap it first, the way you would wrap a gift for someone you do not know well.",
+    "es": "Quería preguntarle algo.",
+    "en": "I wanted to ask you something. (formal)"
+  },
+  "examples": [
+    { "es": "Quería preguntarle algo.", "en": "I wanted to ask you something. (formal)" },
+    { "es": "Quería pedirte un favor.", "en": "I wanted to ask you a favour. (to a friend)" },
+    { "es": "¿Será que me puede ayudar?", "en": "Could you possibly help me? (formal)" },
+    { "es": "¿Será que podemos pagar mañana?", "en": "Could we possibly pay tomorrow?" },
+    { "es": "¿Me puedes ayudar un poquito?", "en": "Could you help me a little? (to a friend)" },
+    { "es": "Me imagino que está ocupado.", "en": "I imagine you're busy. (formal, to a man)" }
+  ],
+  "rule": "English softens with \"I was wondering…\", \"could you possibly…\" and \"I imagine…\". Spanish has four matching moves.\n\n*Quería* (\"I wanted\") instead of *quiero*: the past tense steps back from the demand. *Quería pedirte un favor.*\n\n*¿Será que…?* (\"could it be that…?\") before a plain question: *¿Será que me puede ayudar?* The verb after it stays ordinary. Very Colombian.\n\n*Un poquito* shrinks the request: *ayudar un poquito*.\n\n*Me imagino que* turns a claim into a guess, so nobody can say you accused them.",
+  "smallPrint": "Teachers call *quería* the imperfect of politeness and *será* the future of probability. In these sentences neither is about time.",
+  "readAndPick": [
+    { "es": "Quería preguntarle algo.", "options": ["Bluntly: I want to ask you something.", "Softly: I wanted to ask you something.", "Softly: I will ask you something."], "answer": 1 },
+    { "es": "¿Será que me puede ayudar?", "options": ["Will I be able to help you?", "Did he help me?", "Could you possibly help me?"], "answer": 2 },
+    { "es": "Me imagino que está ocupado.", "options": ["I imagine he's busy.", "I order him to be busy.", "He imagines I'm busy."], "answer": 0 },
+    { "es": "¿Me puedes ayudar un poquito?", "options": ["Could you help me a lot? (to a friend)", "Could you help him a little? (to a friend)", "Could you help me a little? (to a friend)"], "answer": 2 },
+    { "es": "Quería pedirte un favor.", "options": ["I wanted to ask you a favour. (formal)", "I wanted to ask you a favour. (to a friend)", "I asked you a favour. (to a friend)"], "answer": 1 },
+    { "es": "¿Será que podemos pagar mañana?", "options": ["Will we pay tomorrow?", "Did we pay tomorrow?", "Could we possibly pay tomorrow?"], "answer": 2 },
+    { "es": "Me imagino que ya comió.", "options": ["I imagine she already ate.", "I imagine they already ate.", "I imagine I already ate."], "answer": 0 },
+    { "es": "Quería saber si hay mesa para cuatro.", "options": ["I wanted to know if there's a table for four.", "I want to know if there's a table for four.", "I knew there was a table for four."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *quiero* or *quería* to sound gentle, then type the whole sentence: *___ preguntarle algo.*", "answer": "Quería preguntarle algo.", "accept": [], "why": "*Quería* is the gentle \"I wanted to\"; *quiero* sounds like a demand." },
+    { "prompt": "Type in Spanish, to someone you call *usted*: Could you possibly help me?", "answer": "¿Será que me puede ayudar?", "accept": ["¿Será que puede ayudarme?", "¿Será que usted me puede ayudar?"], "why": "*¿Será que…?* opens the question; the verb after it stays plain." },
+    { "prompt": "Type in Spanish, guessing about a man you call *usted*: I imagine you're busy.", "answer": "Me imagino que está ocupado.", "accept": ["Me imagino que usted está ocupado."], "why": "*Me imagino que* turns the claim into a guess." },
+    { "prompt": "Type in Spanish, to a friend: Could you help me a little?", "answer": "¿Me puedes ayudar un poquito?", "accept": ["¿Me puedes ayudar un poco?", "¿Puedes ayudarme un poquito?"], "why": "*Un poquito* makes the favour sound small." },
+    { "prompt": "Make it gentle. *Quiero pedirte un favor.* Say, to a friend: I wanted to ask you a favour.", "answer": "Quería pedirte un favor.", "accept": [], "why": "Only the verb changes: *quiero* becomes *quería*." },
+    { "prompt": "Make it a guess. *Hoy hay mucha gente.* Start with *Me imagino que* and say: I imagine there are a lot of people today.", "answer": "Me imagino que hoy hay mucha gente.", "accept": ["Me imagino que hay mucha gente hoy."], "why": "After *me imagino que*, the sentence keeps its plain verb." },
+    { "prompt": "Type in Spanish: Could we possibly pay tomorrow?", "answer": "¿Será que podemos pagar mañana?", "accept": ["¿Será que pagamos mañana?"], "why": "*¿Será que…?* works with any person; here it is *we*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Quiero preguntarle algo.", "right": "Quería preguntarle algo.", "why": "Not wrong, but blunt. Like \"I want to ask you something\" in English, it needs the gentler *quería*." },
+    { "wrong": "¿Será que me pueda ayudar?", "right": "¿Será que me puede ayudar?", "why": "Almost. After *¿será que…?* the verb stays ordinary: *puede*." },
+    { "wrong": "Imagino que está ocupado.", "right": "Me imagino que está ocupado.", "why": "Almost. The set phrase is *me imagino que*, with *me*." }
+  ],
+  "personal": "Think of something you would like to ask a neighbour or a shop owner. Say it gently, starting with *Quería…* or *¿Será que…?*."
+}

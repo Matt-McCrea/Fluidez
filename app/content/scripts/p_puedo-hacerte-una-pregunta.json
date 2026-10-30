@@ -1,0 +1,43 @@
+{
+  "node": "p:puedo-hacerte-una-pregunta",
+  "hook": {
+    "line": "Before you ask about money, family or a mistake, Colombians often ask permission to ask. Nobody says no. It is a courtesy pause, a breath before the hard part.",
+    "es": "¿Puedo hacerte una pregunta?",
+    "en": "Can I ask you a question? (to a friend)"
+  },
+  "examples": [
+    { "es": "¿Puedo hacerte una pregunta?", "en": "Can I ask you a question? (to a friend)" },
+    { "es": "¿Puedo hacerte una pregunta un poco personal?", "en": "Can I ask you a slightly personal question? (to a friend)" },
+    { "es": "¿Te puedo decir una cosa?", "en": "Can I tell you something? (to a friend)" },
+    { "es": "¿Me permite un comentario?", "en": "May I make a comment? (formal)" },
+    { "es": "¿Podría preguntarle por qué cambió de opinión?", "en": "Could I ask you why you changed your mind? (formal)" },
+    { "es": "¿Me aceptas un consejo?", "en": "Would you accept some advice from me? (to a friend)" }
+  ],
+  "rule": "Before something delicate, ask for the right to ask. With friends: *¿Puedo hacerte una pregunta?* or *¿Te puedo decir una cosa?* The *te* goes before *puedo* or on the end of the infinitive.\n\nWith someone you call *usted*, step up: *¿Me permite un comentario?* or *¿Podría preguntarle…?*\n\nAdd *un poco personal* as a warning, or *¿Me aceptas un consejo?* before advice. Then ask.",
+  "smallPrint": "Teachers call this a pre-sequence: a short question that prepares the real one.",
+  "readAndPick": [
+    { "es": "¿Puedo hacerte una pregunta?", "options": ["Can you ask me a question? (to a friend)", "Can I ask him a question?", "Can I ask you a question? (to a friend)"], "answer": 2 },
+    { "es": "¿Me permite un comentario?", "options": ["May I make a comment? (formal)", "Can I make a comment? (to a friend)", "Will you make a comment? (formal)"], "answer": 0 },
+    { "es": "¿Te puedo decir una cosa?", "options": ["Can you tell me something? (to a friend)", "Can I tell him something?", "Can I tell you something? (to a friend)"], "answer": 2 },
+    { "es": "¿Podría preguntarle por qué cambió de opinión?", "options": ["Could you ask me why you changed your mind?", "Could I ask you why you changed your mind? (formal)", "Could I ask you why I changed my mind?"], "answer": 1 },
+    { "es": "¿Puedo hacerte una pregunta un poco personal?", "options": ["Can I ask you a slightly personal question? (to a friend)", "Can I ask you a very personal question? (to a friend)", "Can you ask me a slightly personal question? (to a friend)"], "answer": 0 },
+    { "es": "¿Me aceptas un consejo?", "options": ["Can I take your advice?", "Will you give me some advice?", "Would you accept some advice from me? (to a friend)"], "answer": 2 },
+    { "es": "¿Puedo hacerles una pregunta?", "options": ["Can I ask you a question? (one friend)", "Can I ask you all a question?", "Can I ask them a question?"], "answer": 1 },
+    { "es": "¿Podría preguntarte algo?", "options": ["Could you ask me something? (to a friend)", "Could I ask you something? (formal)", "Could I ask you something? (to a friend)"], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *hacerte* or *hacerme*, then type the whole sentence to a friend: Can I ask you a question? *¿Puedo ___ una pregunta?*", "answer": "¿Puedo hacerte una pregunta?", "accept": ["¿Te puedo hacer una pregunta?"], "why": "*Te* means you, and it sticks to the end of the infinitive." },
+    { "prompt": "Type in Spanish, to a friend: Can I tell you something?", "answer": "¿Te puedo decir una cosa?", "accept": ["¿Puedo decirte una cosa?"], "why": "*Te* can go before *puedo* or on the end of *decir*." },
+    { "prompt": "Type in Spanish, to someone you call *usted*: May I make a comment?", "answer": "¿Me permite un comentario?", "accept": [], "why": "*Permite* is the polite, *usted* way to ask for the floor." },
+    { "prompt": "Type in Spanish, to a friend: Can I ask you a slightly personal question?", "answer": "¿Puedo hacerte una pregunta un poco personal?", "accept": ["¿Te puedo hacer una pregunta un poco personal?"], "why": "*Un poco personal* warns the other person before you ask." },
+    { "prompt": "Make it formal. *¿Puedo preguntarte por qué cambiaste de opinión?* Say, to someone you call *usted*: Could I ask you why you changed your mind?", "answer": "¿Podría preguntarle por qué cambió de opinión?", "accept": [], "why": "For *usted*, use *podría* and *le*, and the *usted* verb *cambió*." },
+    { "prompt": "Make it plural. *¿Puedo hacerte una pregunta?* Say: Can I ask you all a question?", "answer": "¿Puedo hacerles una pregunta?", "accept": ["¿Les puedo hacer una pregunta?"], "why": "*Les* is the *you all* word, in place of *te*." },
+    { "prompt": "Type in Spanish, to a friend: Would you accept some advice from me?", "answer": "¿Me aceptas un consejo?", "accept": [], "why": "Ask before you advise: the friend can then say yes or brace themselves." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Puedo hacer te una pregunta?", "right": "¿Puedo hacerte una pregunta?", "why": "Almost. *Te* attaches to the end of the infinitive as one word: *hacerte*." },
+    { "wrong": "¿Puedo preguntarte una pregunta?", "right": "¿Puedo hacerte una pregunta?", "why": "Almost. In Spanish you *hacer* a question, and *preguntar* is for the thing you want to know." },
+    { "wrong": "¿Puedo hacerte una pregunta?", "right": "¿Podría preguntarle algo?", "why": "Fine for a friend, but with someone you call *usted* switch to *le* and the softer *podría*." }
+  ],
+  "personal": "Think of someone you want to ask something delicate. Write the opening line you would use, starting with *¿Puedo hacerte una pregunta…?*."
+}

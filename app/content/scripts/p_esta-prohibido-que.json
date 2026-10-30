@@ -1,0 +1,43 @@
+{
+  "node": "p:esta-prohibido-que",
+  "hook": {
+    "line": "Signs say what is forbidden, and so do cross parents. Spanish has a calm way for rules that belong to nobody and a sharp way for when you personally put your foot down.",
+    "es": "Está prohibido fumar en el café.",
+    "en": "Smoking is forbidden in the café."
+  },
+  "examples": [
+    { "es": "Está prohibido fumar en el café.", "en": "Smoking is forbidden in the café." },
+    { "es": "Está prohibido entrar con perros.", "en": "Going in with dogs is forbidden." },
+    { "es": "Está prohibido que los menores entren solos.", "en": "It is forbidden for minors to go in alone." },
+    { "es": "Está prohibido que Simón hable con los clientes.", "en": "It is forbidden for Simón to talk to the customers." },
+    { "es": "Te prohíbo que me hables así.", "en": "I forbid you to speak to me like that. (to a friend)" },
+    { "es": "Te prohíbo que salgas esta noche.", "en": "I forbid you to go out tonight. (to a friend)" }
+  ],
+  "rule": "English says \"it's forbidden to…\" or \"I forbid you to…\" with the same plain *to* verb. Spanish splits it in two.\n\nFor a rule that belongs to nobody, use *está prohibido*. For the bare activity, add an infinitive: *Está prohibido fumar*.\n\nTo say who is stopped, add *que* and the changed verb ending: *Está prohibido que los menores entren*. The verb after *que* has its own person and its own ending: *entren*, not *entran*.\n\nWhen a person forbids another person, use *prohibir* with *te*: *Te prohíbo que me hables así*. It is sharp, a parent or a boss in a bad mood.",
+  "smallPrint": "Teachers call the changed ending after *que* the present subjunctive. It appears because the sentence is about stopping someone.",
+  "readAndPick": [
+    { "es": "Está prohibido fumar en el café.", "options": ["Smoking is allowed in the café.", "Smoking is forbidden in the café.", "You forbid smoking in the café."], "answer": 1 },
+    { "es": "Te prohíbo que salgas esta noche.", "options": ["I forbid you to go out tonight.", "You forbid me to go out tonight.", "It is forbidden to go out tonight."], "answer": 0 },
+    { "es": "Está prohibido que los menores entren solos.", "options": ["Minors forbid anyone to go in alone.", "Minors do not need to go in alone.", "It is forbidden for minors to go in alone."], "answer": 2 },
+    { "es": "Te prohíbo que me hables así.", "options": ["You forbid me to speak like that.", "I forbid you to speak to me like that.", "I forbid myself to speak like that."], "answer": 1 },
+    { "es": "Está prohibido entrar con perros.", "options": ["Dogs are forbidden to go in alone.", "You forbid dogs from coming in.", "Going in with dogs is forbidden."], "answer": 2 },
+    { "es": "Te prohíbo que le des café a Simón.", "options": ["I forbid you to give Simón coffee.", "I forbid Simón to give you coffee.", "You forbid me to give Simón coffee."], "answer": 0 },
+    { "es": "Vale me prohíbe que entre a la cocina.", "options": ["I forbid Vale to go into the kitchen.", "Vale forbids me to go into the kitchen.", "Vale forbids you to go into the kitchen."], "answer": 1 },
+    { "es": "Está prohibido que Simón hable con los clientes.", "options": ["It is forbidden to talk to Simón.", "Simón forbids the customers from talking.", "It is forbidden for Simón to talk to the customers."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *fumar* or *fumas*, then type the whole sentence: *Está prohibido ___ en el café.*", "answer": "Está prohibido fumar en el café.", "accept": [], "why": "A rule about the bare activity takes the infinitive after *está prohibido*." },
+    { "prompt": "Type in Spanish: Going in with dogs is forbidden.", "answer": "Está prohibido entrar con perros.", "accept": ["Está prohibido entrar con los perros."], "why": "No *que* is needed when you only name the activity: *entrar*." },
+    { "prompt": "Pick *entran* or *entren*, then type the whole sentence: *Está prohibido que los menores ___ solos.*", "answer": "Está prohibido que los menores entren solos.", "accept": [], "why": "After *que* the verb takes the changed ending, so *entren*." },
+    { "prompt": "Type in Spanish: It is forbidden for Simón to talk to the customers.", "answer": "Está prohibido que Simón hable con los clientes.", "accept": [], "why": "Naming who is stopped means *que* plus the changed ending: *hable*." },
+    { "prompt": "Type in Spanish, to a friend: I forbid you to go out tonight.", "answer": "Te prohíbo que salgas esta noche.", "accept": ["Esta noche te prohíbo que salgas."], "why": "A person forbidding a person uses *te prohíbo que* and the *tú* ending *salgas*." },
+    { "prompt": "Make it personal. *Está prohibido que me hables así.* Say, to a friend: I forbid you to speak to me like that.", "answer": "Te prohíbo que me hables así.", "accept": [], "why": "Swap the rule for *te prohíbo*: now it is you doing the forbidding." },
+    { "prompt": "Type in Spanish, to a friend: I forbid you to give Simón coffee.", "answer": "Te prohíbo que le des café a Simón.", "accept": [], "why": "*Te prohíbo que* is followed by the changed ending, here *des*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Está prohibido que fumar en el café.", "right": "Está prohibido fumar en el café.", "why": "Almost. *Que* needs a verb with its own person; for the bare activity, drop *que* and keep the infinitive." },
+    { "wrong": "Te prohíbo que me hablas así.", "right": "Te prohíbo que me hables así.", "why": "Almost. After *que* the verb takes the changed ending: *hables*, not *hablas*." },
+    { "wrong": "Es prohibido fumar aquí.", "right": "Está prohibido fumar aquí.", "why": "Almost. A rule that holds here and now is a state, like *está cerrado*, so it takes *está*." }
+  ],
+  "personal": "Write one house rule you would enforce and one you would never. Start with *Está prohibido…* for the rule, and *Te prohíbo que…* for the order."
+}

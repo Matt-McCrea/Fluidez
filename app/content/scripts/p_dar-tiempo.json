@@ -1,0 +1,43 @@
+{
+  "node": "p:dar-tiempo",
+  "hook": {
+    "line": "Saying \"I can't, I'm too busy\" can sound like a brush-off. Blaming the clock is gentler: the time ran short, not your interest.",
+    "es": "No me alcanza el tiempo para terminar hoy.",
+    "en": "I don't have enough time to finish today."
+  },
+  "examples": [
+    { "es": "No me alcanza el tiempo para terminar hoy.", "en": "I don't have enough time to finish today." },
+    { "es": "¿Te da tiempo de pasar por la tienda?", "en": "Do you have time to stop by the shop? (to a friend)" },
+    { "es": "No me dio tiempo de desayunar.", "en": "I didn't have time to have breakfast." },
+    { "es": "¿Les alcanza el tiempo para ir al banco?", "en": "Do you all have enough time to go to the bank?" },
+    { "es": "A Vale no le dio tiempo de cerrar la caja.", "en": "Vale didn't have time to close the register." },
+    { "es": "Si salimos ya, nos da tiempo de llegar.", "en": "If we leave now, we'll have time to arrive." }
+  ],
+  "rule": "In Spanish the time does the acting and you receive it, like *gustar*. The time \"reaches\" you or \"gives itself\" to you.\n\n*No me alcanza el tiempo para* + infinitive is the everyday Latin American way to decline.\n\n*Me da tiempo de* + infinitive asks or says that there is time: *¿Te da tiempo de pasar?* In the past, *no me dio tiempo de desayunar* means it did not happen.\n\nThe little word shows who: *me, te, le, nos, les*. Never *yo doy tiempo*.",
+  "smallPrint": "Teachers call these *gustar*-type verbs: the thing is the subject and the person is an indirect object.",
+  "readAndPick": [
+    { "es": "No me alcanza el tiempo para terminar hoy.", "options": ["He doesn't have enough time to finish today.", "I don't have enough time to finish today.", "We don't have enough time to finish today."], "answer": 1 },
+    { "es": "¿Te da tiempo de pasar por la tienda?", "options": ["Do I have time to stop by the shop?", "Does he have time to stop by the shop?", "Do you have time to stop by the shop? (to a friend)"], "answer": 2 },
+    { "es": "No me dio tiempo de desayunar.", "options": ["I don't have time for breakfast.", "I didn't have time to have breakfast.", "I won't have time to have breakfast."], "answer": 1 },
+    { "es": "¿Les alcanza el tiempo para ir al banco?", "options": ["Do you all have enough time to go to the bank?", "Do you have enough time to go to the bank? (one friend)", "Do we have enough time to go to the bank?"], "answer": 0 },
+    { "es": "A Vale no le dio tiempo de cerrar la caja.", "options": ["I didn't have time to close the register.", "Vale gave me time to close the register.", "Vale didn't have time to close the register."], "answer": 2 },
+    { "es": "Si salimos ya, nos da tiempo de llegar.", "options": ["If we leave now, we'll have time to arrive.", "If they leave now, they'll have time to arrive.", "If I leave now, I'll have time to arrive."], "answer": 0 },
+    { "es": "No nos alcanza el tiempo para cocinar.", "options": ["They don't have enough time to cook.", "I don't have enough time to cook.", "We don't have enough time to cook."], "answer": 2 },
+    { "es": "Sí, me dio tiempo de hablar con Vale.", "options": ["Yes, Vale had time to talk to me.", "Yes, I had time to talk to Vale.", "Yes, Vale gave me time to talk."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *me alcanza* or *yo alcanzo*, then type the whole sentence: *No ___ el tiempo para terminar hoy.*", "answer": "No me alcanza el tiempo para terminar hoy.", "accept": [], "why": "The time is what \"reaches\", and *me* says it reaches you." },
+    { "prompt": "Type in Spanish, to a friend: Do you have time to stop by the shop?", "answer": "¿Te da tiempo de pasar por la tienda?", "accept": ["¿Te alcanza el tiempo para pasar por la tienda?"], "why": "*Te* is you; *da tiempo de* plus an infinitive asks about time." },
+    { "prompt": "Type in Spanish: I didn't have time to have breakfast.", "answer": "No me dio tiempo de desayunar.", "accept": ["No me alcanzó el tiempo para desayunar."], "why": "The past, *dio*, says it did not happen." },
+    { "prompt": "Type in Spanish: Vale didn't have time to close the register.", "answer": "A Vale no le dio tiempo de cerrar la caja.", "accept": ["No le dio tiempo a Vale de cerrar la caja."], "why": "For another person, *a Vale* plus *le* replaces *me*." },
+    { "prompt": "Make it about us. *No me alcanza el tiempo para cocinar.* Say: We don't have enough time to cook.", "answer": "No nos alcanza el tiempo para cocinar.", "accept": [], "why": "Swap *me* for *nos*; the verb stays *alcanza*." },
+    { "prompt": "Make it a question to several people: Do you all have enough time to go to the bank?", "answer": "¿Les alcanza el tiempo para ir al banco?", "accept": [], "why": "*Les* is the *you all* word." },
+    { "prompt": "A friend invites you out. Decline kindly: Today I don't have enough time.", "answer": "Hoy no me alcanza el tiempo.", "accept": ["No me alcanza el tiempo hoy."], "why": "Blaming the clock is the gentle way to say no." }
+  ],
+  "pitfalls": [
+    { "wrong": "Yo no doy tiempo de desayunar.", "right": "No me dio tiempo de desayunar.", "why": "Almost. In Spanish the time does the giving and you receive it: *me dio*." },
+    { "wrong": "No me alcanzo el tiempo.", "right": "No me alcanza el tiempo.", "why": "Almost. The verb agrees with *el tiempo*, not with you." },
+    { "wrong": "No me dio tiempo desayunar.", "right": "No me dio tiempo de desayunar.", "why": "Almost. A little *de* (or *para*) links the time to the thing you wanted to do." }
+  ],
+  "personal": "Tell someone, truthfully and politely, one thing you don't have time for this week. Start with *Esta semana no me alcanza el tiempo para…*."
+}

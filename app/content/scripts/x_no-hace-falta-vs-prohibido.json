@@ -1,0 +1,43 @@
+{
+  "node": "x:no-hace-falta-vs-prohibido",
+  "hook": {
+    "line": "\"You don't have to\" and \"you can't\" are worlds apart, but both lean on the same frame in Spanish. Say the wrong one to a guest and you either lock the door or leave it wide open.",
+    "es": "No hace falta que vengas.",
+    "en": "You don't need to come. (to a friend)"
+  },
+  "examples": [
+    { "es": "No hace falta que vengas.", "en": "You don't need to come. (to a friend)" },
+    { "es": "Está prohibido que entres.", "en": "It is forbidden for you to go in. (to a friend)" },
+    { "es": "No hace falta que traigas nada.", "en": "You don't need to bring anything. (to a friend)" },
+    { "es": "Está prohibido que traigas comida.", "en": "It is forbidden for you to bring food. (to a friend)" },
+    { "es": "No hace falta que pague hoy.", "en": "You don't need to pay today. (formal)" },
+    { "es": "Está prohibido que los niños pasen a la cocina.", "en": "It is forbidden for children to go into the kitchen." }
+  ],
+  "rule": "Both start with a short phrase, then *que*, then the changed verb ending: *vengas*, *entres*, *traigas*. Only the opening phrase decides the meaning.\n\n*No hace falta que…* means it is not needed. The door is open: do it if you like.\n\n*Está prohibido que…* means it is not allowed. The door is shut.\n\nWatch the English trap. \"You don't have to\" is *no hace falta*. \"You mustn't\" is *está prohibido*. Quick test: if the person does it anyway, is that fine? Yes means *no hace falta*, no means *está prohibido*.",
+  "smallPrint": "Teachers call this the difference between absence of obligation and prohibition. Both take the present subjunctive after *que*.",
+  "readAndPick": [
+    { "es": "No hace falta que vengas.", "options": ["You don't need to come.", "You're not allowed to come.", "You must come."], "answer": 0 },
+    { "es": "Está prohibido que entres.", "options": ["You don't need to go in.", "You must go in.", "You're not allowed to go in."], "answer": 2 },
+    { "es": "No hace falta que traigas nada.", "options": ["You mustn't bring anything.", "You don't need to bring anything.", "You must bring something."], "answer": 1 },
+    { "es": "Está prohibido que traigas comida.", "options": ["You must bring food.", "You don't need to bring food.", "You are not allowed to bring food."], "answer": 2 },
+    { "es": "No hace falta que pague hoy.", "options": ["You aren't allowed to pay today. (formal)", "You don't need to pay today. (formal)", "You must pay today. (formal)"], "answer": 1 },
+    { "es": "Está prohibido que los niños pasen a la cocina.", "options": ["Children don't need to go into the kitchen.", "Children must go into the kitchen.", "It is forbidden for children to go into the kitchen."], "answer": 2 },
+    { "es": "No hace falta que lleves postre.", "options": ["You can't bring dessert.", "You don't need to bring dessert.", "You must bring dessert."], "answer": 1 },
+    { "es": "Está prohibido que pasen sin pagar.", "options": ["They don't need to pay to get through.", "It is forbidden for them to get through without paying.", "They must pay to get through."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "A friend is welcome but not obliged. Pick *No hace falta* or *Está prohibido*, then type the whole sentence: *___ que vengas.*", "answer": "No hace falta que vengas.", "accept": [], "why": "Nothing is banned, so the door is open: *no hace falta*." },
+    { "prompt": "A sign on the staff door. Pick *No hace falta* or *Está prohibido*, then type the whole sentence: *___ que entres.*", "answer": "Está prohibido que entres.", "accept": [], "why": "It is a ban, so the door is shut: *está prohibido*." },
+    { "prompt": "Type in Spanish, to a friend: You don't need to bring anything.", "answer": "No hace falta que traigas nada.", "accept": [], "why": "A host being kind says *no hace falta que* plus the changed ending *traigas*." },
+    { "prompt": "Type in Spanish, to a friend: It is forbidden for you to bring food.", "answer": "Está prohibido que traigas comida.", "accept": [], "why": "A ban on a person uses *está prohibido que* and the same changed ending." },
+    { "prompt": "Switch it to a ban. *No hace falta que pagues hoy.* Say, to a friend: It is forbidden for you to pay today.", "answer": "Está prohibido que pagues hoy.", "accept": [], "why": "Swap only the opening phrase; *que pagues* stays." },
+    { "prompt": "Switch it to not needed. *Está prohibido que los niños pasen a la cocina.* Say: Children don't need to go into the kitchen.", "answer": "No hace falta que los niños pasen a la cocina.", "accept": [], "why": "Swap only the opening phrase; *que los niños pasen* stays." },
+    { "prompt": "Type in Spanish, to someone you call *usted*: You don't need to pay today.", "answer": "No hace falta que pague hoy.", "accept": ["No hace falta que usted pague hoy."], "why": "For *usted*, the changed ending is *pague*." }
+  ],
+  "pitfalls": [
+    { "wrong": "No hace falta que vienes.", "right": "No hace falta que vengas.", "why": "Almost. After *que* the verb takes the changed ending: *vengas*, not *vienes*." },
+    { "wrong": "No hace falta que fumes aquí.", "right": "Está prohibido que fumes aquí.", "why": "Almost. \"You mustn't\" is not \"you needn't\": for a ban, use *está prohibido*." },
+    { "wrong": "Está prohibido que traigas nada.", "right": "No hace falta que traigas nada.", "why": "Almost. A kind host is not banning anything, so \"you don't need to\" is *no hace falta*." }
+  ],
+  "personal": "Imagine a friend coming to your place this weekend. Tell them one thing they don't need to do (*No hace falta que…*) and one thing that is not allowed (*Está prohibido que…*)."
+}
