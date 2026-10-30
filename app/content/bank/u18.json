@@ -22175,5 +22175,148 @@
     "unit": "u18",
     "theme": "cuando, mientras y pasado",
     "source": "gen"
+  },
+  {
+    "id": "u18-0961",
+    "es": "¿Por dónde sale el bus?",
+    "en": "Where does the bus leave from?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:por-para-1",
+      "g:present-er-ir",
+      "l:bus",
+      "l:dónde",
+      "l:salir",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:por-para-1"
+    ],
+    "kind": "question",
+    "unit": "u18",
+    "theme": "terminal de buses",
+    "source": "gen"
+  },
+  {
+    "id": "u18-0962",
+    "es": "¿Por cuánto tiempo viajas?",
+    "en": "How long are you traveling for? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cuanto-tiempo",
+      "g:por-para-1",
+      "g:present-ar",
+      "l:cuánto",
+      "l:tiempo",
+      "l:viajar",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:por-para-1"
+    ],
+    "kind": "question",
+    "unit": "u18",
+    "theme": "terminal de buses",
+    "source": "gen"
+  },
+  {
+    "id": "u18-0963",
+    "es": "¿Pasas por el café hoy?",
+    "en": "Are you stopping by the café today? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:por-para-1",
+      "g:present-ar",
+      "l:café",
+      "l:hoy",
+      "l:pasar"
+    ],
+    "targets": [
+      "g:por-para-1"
+    ],
+    "kind": "question",
+    "unit": "u18",
+    "theme": "café",
+    "source": "gen"
+  },
+  {
+    "id": "u18-0964",
+    "es": "Dígame, ¿qué necesita?",
+    "en": "Tell me, what do you need? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-usted",
+      "g:commands-with-pronouns",
+      "g:present-ar",
+      "g:questions",
+      "l:decir",
+      "l:necesitar",
+      "l:qué",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:commands-with-pronouns"
+    ],
+    "kind": "question",
+    "unit": "u18",
+    "theme": "café",
+    "source": "gen"
+  },
+  {
+    "id": "u18-0965",
+    "es": "Dígame, ¿cómo se llama el hotel?",
+    "en": "Tell me, what is the hotel called? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:commands-usted",
+      "g:commands-with-pronouns",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "l:cómo",
+      "l:decir",
+      "l:hotel",
+      "l:llamarse",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:commands-with-pronouns"
+    ],
+    "kind": "question",
+    "unit": "u18",
+    "theme": "terminal de buses",
+    "source": "gen"
+  },
+  {
+    "id": "u18-0966",
+    "es": "Dígame, ¿dónde está Vale?",
+    "en": "Tell me, where is Vale? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:donde-esta",
+      "g:commands-usted",
+      "g:commands-with-pronouns",
+      "g:estar-location-states",
+      "l:decir",
+      "l:dónde",
+      "l:estar",
+      "p:me-te-nos-objects",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:commands-with-pronouns"
+    ],
+    "kind": "question",
+    "unit": "u18",
+    "theme": "café",
+    "source": "gen"
   }
 ]
