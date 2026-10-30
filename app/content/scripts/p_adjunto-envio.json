@@ -1,0 +1,182 @@
+{
+  "node": "p:adjunto-envio",
+  "hook": {
+    "line": "Every formal letter or email carries something with it: a CV, an invoice, a signed contract. Spanish has a short, tidy way to say it is in the envelope.",
+    "es": "Adjunto les envío mi hoja de vida y dos cartas de referencia.",
+    "en": "I attach my CV and two letters of reference."
+  },
+  "examples": [
+    {
+      "es": "Adjunto les envío mi hoja de vida y dos cartas de referencia.",
+      "en": "I attach my CV and two letters of reference, for you all."
+    },
+    {
+      "es": "Adjunto le envío el contrato firmado.",
+      "en": "I attach the signed contract, for you (formal, one person)."
+    },
+    {
+      "es": "Encontrará adjunto el informe.",
+      "en": "You (formal) will find the report attached."
+    },
+    {
+      "es": "Encontrará adjuntas las dos cartas de referencia.",
+      "en": "You (formal) will find the two letters of reference attached."
+    },
+    {
+      "es": "Adjunto les envío la factura.",
+      "en": "I attach the invoice, for you all."
+    },
+    {
+      "es": "Va adjunta mi solicitud.",
+      "en": "My application is attached."
+    }
+  ],
+  "rule": "To send a document with a formal message, put *adjunto* (attached) before the verb: *Adjunto les envío…* is \"I attach and send you…\".\n\n*Le* is one person you address as *usted*. *Les* is several people, or a company.\n\nTo point to the document, say *Encontrará adjunto…* (\"You will find… attached\"). Here *adjunto* behaves like an adjective, so it agrees: *adjunto, adjunta, adjuntos, adjuntas*.\n\nIn Colombia a CV is *la hoja de vida*.",
+  "smallPrint": "In *Adjunto les envío*, *adjunto* is a verb form: \"I attach\". After *encontrará* and *va*, it is an adjective, and agrees with what is attached.",
+  "readAndPick": [
+    {
+      "es": "Adjunto les envío mi hoja de vida.",
+      "options": [
+        "I attach my CV, for you all.",
+        "You all attach my CV.",
+        "He attached my CV for you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Encontrará adjunto el informe.",
+      "options": [
+        "I found the report attached.",
+        "They will find the report attached.",
+        "You (formal) will find the report attached."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Adjunto le envío la factura.",
+      "options": [
+        "I attach the invoice, for you (formal, one person).",
+        "I attach the invoice, for you all.",
+        "He attaches the invoice for me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Adjunto les envío el contrato firmado.",
+      "options": [
+        "I attach the signed contract, for you (formal, one person).",
+        "I attach the signed contract, for you all.",
+        "You all attach the signed contract."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Encontrará adjuntas las dos cartas de referencia.",
+      "options": [
+        "You (formal) will find the two letters attached.",
+        "You (formal) will find the letter attached.",
+        "You (formal) will find the two reports attached."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Va adjunta mi solicitud.",
+      "options": [
+        "I am applying for the job.",
+        "My application is going away.",
+        "My application is attached."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Encontrará adjuntos los dos contratos.",
+      "options": [
+        "You (formal) will find the contract attached.",
+        "You (formal) will find the two contracts attached.",
+        "You (formal) will find the two invoices attached."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Adjunto le envío una foto del daño.",
+      "options": [
+        "I attach a photo of the damage, for you (formal, one person).",
+        "I attach a photo of the damage, for you all.",
+        "I attach a photo of the damage, for myself."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *le* or *les*. You write to one manager, *usted*: Adjunto ___ envío mi hoja de vida. Type the whole sentence.",
+      "answer": "Adjunto le envío mi hoja de vida.",
+      "accept": [],
+      "why": "One person you call *usted* is *le*."
+    },
+    {
+      "prompt": "Choose *adjunto* or *adjuntos*: Encontrará ___ los documentos. Type the whole sentence.",
+      "answer": "Encontrará adjuntos los documentos.",
+      "accept": [
+        "Encontrará los documentos adjuntos."
+      ],
+      "why": "*Los documentos* is plural, so *adjuntos*."
+    },
+    {
+      "prompt": "I attach my CV and two letters of reference. (You write to a company, so *you all*.)",
+      "answer": "Adjunto les envío mi hoja de vida y dos cartas de referencia.",
+      "accept": [
+        "Adjunto les mando mi hoja de vida y dos cartas de referencia."
+      ],
+      "why": "A company is several people, so *les*."
+    },
+    {
+      "prompt": "You (formal) will find the report attached.",
+      "answer": "Encontrará adjunto el informe.",
+      "accept": [
+        "Encontrará el informe adjunto."
+      ],
+      "why": "*Encontrará adjunto* points to the document, and *adjunto* matches *el informe*."
+    },
+    {
+      "prompt": "I attach the signed contract, for you (formal, one person).",
+      "answer": "Adjunto le envío el contrato firmado.",
+      "accept": [],
+      "why": "One person, so *le*, and *firmado* matches *el contrato*."
+    },
+    {
+      "prompt": "Make it plural: Encontrará adjunto el informe.",
+      "answer": "Encontrará adjuntos los informes.",
+      "accept": [
+        "Encontrará los informes adjuntos."
+      ],
+      "why": "Plural reports need *adjuntos*."
+    },
+    {
+      "prompt": "Now write to several people: Adjunto le envío la factura.",
+      "answer": "Adjunto les envío la factura.",
+      "accept": [
+        "Adjunto les mando la factura."
+      ],
+      "why": "Several people, so *le* becomes *les*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Encontrará adjunto las dos cartas de referencia.",
+      "right": "Encontrará adjuntas las dos cartas de referencia.",
+      "why": "Almost. In this frame *adjunto* is an adjective, so it matches *las cartas*."
+    },
+    {
+      "wrong": "Adjunto le envío mi hoja de vida. (to a whole company)",
+      "right": "Adjunto les envío mi hoja de vida.",
+      "why": "Almost. A company is several people, so the Spanish says *les*."
+    },
+    {
+      "wrong": "Adjunto les envío mi currículum.",
+      "right": "Adjunto les envío mi hoja de vida.",
+      "why": "Almost. It is understood, but in Colombia a CV is a *hoja de vida*."
+    }
+  ],
+  "personal": "Imagine you are applying for a job. Write one line sending your CV and one other document: *Adjunto les envío…*."
+}

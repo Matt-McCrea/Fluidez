@@ -1,0 +1,181 @@
+{
+  "node": "g:verbs-prepositions",
+  "hook": {
+    "line": "Formal Spanish is full of verbs that always come with the same small word. Get the pair right and a letter sounds written by someone who knows the language.",
+    "es": "Contamos con su apoyo.",
+    "en": "We count on your support."
+  },
+  "examples": [
+    {
+      "es": "Contamos con su apoyo.",
+      "en": "We count on your support."
+    },
+    {
+      "es": "Depende de ti.",
+      "en": "It depends on you."
+    },
+    {
+      "es": "Se trata de un error.",
+      "en": "It is about a mistake."
+    },
+    {
+      "es": "Consiste en tres partes.",
+      "en": "It consists of three parts."
+    },
+    {
+      "es": "Sueño con mi casa en Medellín.",
+      "en": "I dream about my house in Medellín."
+    },
+    {
+      "es": "Me acuerdo de mi abuela Rosa.",
+      "en": "I remember my grandmother Rosa."
+    },
+    {
+      "es": "Confío en Vale.",
+      "en": "I trust Vale."
+    }
+  ],
+  "rule": "Some verbs come with a small word that belongs to them. You learn the pair, not the verb alone:\n\n*contar con* (count on): *Contamos con su apoyo.*\n*depender de* (depend on): *Depende de ti.*\n*tratarse de* (be about): *Se trata de un error.*\n*consistir en* (consist of): *Consiste en tres partes.*\n*soñar con*, *acordarse de* and *confiar en* work the same way.\n\nDo not copy the English small word. English says *depend on*, *consist of*, *dream about*; Spanish says *de*, *en*, *con*, and they often do not match.\n\nThe small word stays when a pronoun follows: *Depende de ti*, *Cuento contigo* (*con* + *ti*).",
+  "smallPrint": "Teachers call these verbs with a prepositional complement (*régimen preposicional*). *Tratarse de* is only used as *se trata de*.",
+  "readAndPick": [
+    {
+      "es": "Depende de ti.",
+      "options": [
+        "It depends on you.",
+        "It depends on me.",
+        "It comes from you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Contamos con su apoyo.",
+      "options": [
+        "We support you.",
+        "We count on your support.",
+        "We counted your support."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se trata de un error.",
+      "options": [
+        "He treats the mistake.",
+        "It was a mistake.",
+        "It is about a mistake."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Consiste en tres partes.",
+      "options": [
+        "He insists on three parts.",
+        "It consists of three parts.",
+        "It is consistent with three parts."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Sueño con mi casa en Medellín.",
+      "options": [
+        "I dream about my house in Medellín.",
+        "I sleep in my house in Medellín.",
+        "I dream of leaving my house in Medellín."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuento contigo para el sábado.",
+      "options": [
+        "I am telling you about Saturday.",
+        "I am counting on you for Saturday.",
+        "I am counting you on Saturday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Confío en Vale.",
+      "options": [
+        "I depend on Vale.",
+        "I count Vale.",
+        "I trust Vale."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me acuerdo de mi abuela Rosa.",
+      "options": [
+        "I remember my grandmother Rosa.",
+        "I agree with my grandmother Rosa.",
+        "I forgot my grandmother Rosa."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de* or *en*: Depende ___ ti. Type the whole sentence.",
+      "answer": "Depende de ti.",
+      "accept": [],
+      "why": "*Depender* always takes *de*."
+    },
+    {
+      "prompt": "Choose *con* or *a*: Contamos ___ su apoyo. Type the whole sentence.",
+      "answer": "Contamos con su apoyo.",
+      "accept": [],
+      "why": "*Contar* in this meaning takes *con*."
+    },
+    {
+      "prompt": "It consists of three parts.",
+      "answer": "Consiste en tres partes.",
+      "accept": [],
+      "why": "*Consistir* takes *en*, not *of*."
+    },
+    {
+      "prompt": "It is about a mistake.",
+      "answer": "Se trata de un error.",
+      "accept": [],
+      "why": "*Se trata de* says what something is about."
+    },
+    {
+      "prompt": "I trust Vale.",
+      "answer": "Confío en Vale.",
+      "accept": [],
+      "why": "*Confiar* takes *en*."
+    },
+    {
+      "prompt": "Replace *Vale* with *you*, to a friend: Cuento con Vale.",
+      "answer": "Cuento contigo.",
+      "accept": [],
+      "why": "*Con* + *ti* becomes *contigo*."
+    },
+    {
+      "prompt": "Make it *we*: Confío en Vale.",
+      "answer": "Confiamos en Vale.",
+      "accept": [],
+      "why": "The verb changes for *we* but *en* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Depende en ti.",
+      "right": "Depende de ti.",
+      "why": "Almost. English says \"on\", but Spanish pairs *depender* with *de*."
+    },
+    {
+      "wrong": "Consiste de tres partes.",
+      "right": "Consiste en tres partes.",
+      "why": "Almost. English says \"of\", but Spanish pairs *consistir* with *en*."
+    },
+    {
+      "wrong": "Se trata sobre un error.",
+      "right": "Se trata de un error.",
+      "why": "Almost. *Tratarse* takes *de*, not *sobre*."
+    },
+    {
+      "wrong": "Cuento a su apoyo.",
+      "right": "Cuento con su apoyo.",
+      "why": "Almost. To count on someone, Spanish uses *con*."
+    }
+  ],
+  "personal": "Say something true about what you count on or what your day depends on: *Cuento con…* or *Mi día depende de…*."
+}

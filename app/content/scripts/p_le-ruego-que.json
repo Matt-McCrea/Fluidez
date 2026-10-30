@@ -1,0 +1,172 @@
+{
+  "node": "p:le-ruego-que",
+  "hook": {
+    "line": "Some requests have to be perfect: to a bank manager, a judge, a landlord who is angry. Spanish keeps its most polite rung for those moments.",
+    "es": "Les ruego que me disculpen por la demora.",
+    "en": "I ask you all to forgive me for the delay."
+  },
+  "examples": [
+    {
+      "es": "Les ruego que me disculpen por la demora.",
+      "en": "I ask you all to forgive me for the delay."
+    },
+    {
+      "es": "Le ruego que me envíe la factura.",
+      "en": "I kindly ask you (formal) to send me the invoice."
+    },
+    {
+      "es": "Les rogaría que llegaran puntuales.",
+      "en": "I would ask you all to arrive on time."
+    },
+    {
+      "es": "Le ruego que me responda lo antes posible.",
+      "en": "I ask you (formal) to answer me as soon as possible."
+    },
+    {
+      "es": "Le rogaría que me enviara el contrato.",
+      "en": "I would ask you (formal) to send me the contract."
+    },
+    {
+      "es": "Les ruego que revisen el cobro.",
+      "en": "I ask you all to review the charge."
+    }
+  ],
+  "rule": "*Le ruego que…* (\"I ask you to…\") is the top rung of politeness, for strangers, officials and letters that must be perfect.\n\n*Le* is one person (*usted*). *Les* is several.\n\nAfter *que* the verb is in the subjunctive: *me envíe*, *revisen*, *me disculpen*.\n\nFor an even softer \"I would ask you\", use *rogaría que* and the past subjunctive: *Le rogaría que me enviara…*.\n\nWith friends you would say *¿me puedes…?* instead.",
+  "smallPrint": "Teachers call *rogaría que* + imperfect subjunctive the conditional of courtesy. It softens the request by making it less direct.",
+  "readAndPick": [
+    {
+      "es": "Les ruego que me disculpen por la demora.",
+      "options": [
+        "I ask you all to forgive me for the delay.",
+        "I ask you (formal) to forgive me for the delay.",
+        "They ask me to forgive the delay."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le ruego que me envíe la factura.",
+      "options": [
+        "I ask you all to send me the invoice.",
+        "I ask you (formal) to send me the invoice.",
+        "He asks me to send the invoice."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Les rogaría que llegaran puntuales.",
+      "options": [
+        "I asked you all to arrive on time.",
+        "I ask you all to arrive on time.",
+        "I would ask you all to arrive on time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Le ruego que me responda lo antes posible.",
+      "options": [
+        "You ask me to answer as soon as possible.",
+        "I ask you (formal) to answer me as soon as possible.",
+        "I would ask you all to answer me as soon as possible."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le rogaría que me enviara el contrato.",
+      "options": [
+        "I would ask you (formal) to send me the contract.",
+        "I ask you (formal) to send me the contract.",
+        "I asked you (formal) to send me the contract."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les ruego que revisen el cobro.",
+      "options": [
+        "I ask you (formal) to review the charge.",
+        "I ask them to review the charge.",
+        "I ask you all to review the charge."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Le ruego que no me llame más.",
+      "options": [
+        "I ask you (formal) not to call me any more.",
+        "I ask you (formal) to call me more.",
+        "I ask you all not to call me any more."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les rogaría que me dieran una respuesta.",
+      "options": [
+        "I ask you all to give me an answer.",
+        "I would ask you all to give me an answer.",
+        "I would ask him to give me an answer."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *le* or *les*. You write to one manager, *usted*: ___ ruego que me responda lo antes posible. Type the whole sentence.",
+      "answer": "Le ruego que me responda lo antes posible.",
+      "accept": [],
+      "why": "One person you call *usted* is *le*."
+    },
+    {
+      "prompt": "Choose *envíe* or *envía*: Le ruego que me ___ la factura. Type the whole sentence.",
+      "answer": "Le ruego que me envíe la factura.",
+      "accept": [],
+      "why": "After *ruego que* the verb is in the subjunctive."
+    },
+    {
+      "prompt": "I ask you all to forgive me for the delay.",
+      "answer": "Les ruego que me disculpen por la demora.",
+      "accept": [],
+      "why": "Several people, so *les*, and *disculpen* is the subjunctive."
+    },
+    {
+      "prompt": "I kindly ask you (formal) to confirm the date.",
+      "answer": "Le ruego que me confirme la fecha.",
+      "accept": [],
+      "why": "*Le ruego que* plus the subjunctive *confirme*."
+    },
+    {
+      "prompt": "Make it softer, \"I would ask you\": Le ruego que me envíe el contrato.",
+      "answer": "Le rogaría que me enviara el contrato.",
+      "accept": [],
+      "why": "*Rogaría que* goes with the past subjunctive, *enviara*."
+    },
+    {
+      "prompt": "Now write to several people: Le ruego que revise mi caso.",
+      "answer": "Les ruego que revisen mi caso.",
+      "accept": [],
+      "why": "Several people means *les* and *revisen*."
+    },
+    {
+      "prompt": "I ask you all to arrive on time.",
+      "answer": "Les ruego que lleguen puntuales.",
+      "accept": [],
+      "why": "*Les ruego que* plus the subjunctive *lleguen*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Le ruego que me envía la factura.",
+      "right": "Le ruego que me envíe la factura.",
+      "why": "Almost. After *ruego que* the verb needs the subjunctive, *envíe*."
+    },
+    {
+      "wrong": "Le ruego para que me envíe la factura.",
+      "right": "Le ruego que me envíe la factura.",
+      "why": "Almost. Spanish says *ruego que* with no *para*."
+    },
+    {
+      "wrong": "Los ruego que me disculpen.",
+      "right": "Les ruego que me disculpen.",
+      "why": "Almost. You ask *to* them, so the small word is *les*, not *los*."
+    }
+  ],
+  "personal": "Think of someone you would have to write to very formally. Write one request to them: *Le ruego que…*."
+}

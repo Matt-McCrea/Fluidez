@@ -1,0 +1,176 @@
+{
+  "node": "p:por-todo-lo-anterior-solicito",
+  "hook": {
+    "line": "A complaint letter that only complains gets filed and forgotten. The last line has to ask for something specific, and Spanish has a standard way in.",
+    "es": "Por todo lo anterior, solicito la devolución del dinero en un plazo de quince días.",
+    "en": "For all the above reasons, I request a refund within fifteen days."
+  },
+  "examples": [
+    {
+      "es": "Por todo lo anterior, solicito la devolución del dinero en un plazo de quince días.",
+      "en": "For all the above reasons, I request a refund within fifteen days."
+    },
+    {
+      "es": "Por todo lo anterior, solicito que se revise mi caso.",
+      "en": "For all the above reasons, I request that my case be reviewed."
+    },
+    {
+      "es": "Por todo lo anterior, solicito que me devuelvan el dinero.",
+      "en": "For all the above reasons, I request that they return my money."
+    },
+    {
+      "es": "Por todo lo anterior, solicito el reembolso del pago en un plazo de diez días.",
+      "en": "For all the above reasons, I request a refund of the payment within ten days."
+    },
+    {
+      "es": "Por todo lo anterior, solicito que me envíen un técnico.",
+      "en": "For all the above reasons, I request that they send me a technician."
+    },
+    {
+      "es": "Por todo lo anterior, solicito una respuesta por escrito.",
+      "en": "For all the above reasons, I request a written reply."
+    }
+  ],
+  "rule": "Close a complaint with *Por todo lo anterior,* (\"for all the above\") and then *solicito* (\"I request\").\n\nAfter *solicito*, name the thing: *solicito el reembolso del pago*.\nOr ask someone to act, with *que* and the subjunctive: *solicito que me devuelvan el dinero*.\n\nAdd a deadline so it cannot be ignored: *en un plazo de quince días*.\n\nThe phrase never changes: not *todos los anteriores*.",
+  "smallPrint": "Teachers call *Por todo lo anterior* a closing connector: it sums up the argument before the demand.",
+  "readAndPick": [
+    {
+      "es": "Por todo lo anterior, solicitamos que se cancele el cobro.",
+      "options": [
+        "For all the above reasons, we request that the charge be cancelled.",
+        "For all the above reasons, I request that the charge be cancelled.",
+        "For all the above reasons, they request that I cancel the charge."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por todo lo anterior, solicito el reembolso del pago.",
+      "options": [
+        "For all the above reasons, he requests a refund of the payment.",
+        "For all the above reasons, I request a refund of the payment.",
+        "For all the above reasons, we request a refund of the payment."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por todo lo anterior, solicito el reembolso del pago en un plazo de diez días.",
+      "options": [
+        "For all the above reasons, I requested a refund ten days ago.",
+        "For all the above reasons, I request a refund for ten days.",
+        "For all the above reasons, I request a refund of the payment within ten days."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Por todo lo anterior, solicito que me devuelvan el dinero.",
+      "options": [
+        "For all the above reasons, I request that they return my money.",
+        "For all the above reasons, I request that I return the money.",
+        "For all the above reasons, I request that she returns the money."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por todo lo anterior, solicito que se revise mi caso.",
+      "options": [
+        "For all the above reasons, I review my case.",
+        "For all the above reasons, I request that my case be reviewed.",
+        "For all the above reasons, I request that you review the case yourself."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por todo lo anterior, solicito una respuesta por escrito.",
+      "options": [
+        "For all the above reasons, I request a written reply.",
+        "For all the above reasons, I answer in writing.",
+        "For all the above reasons, I request a reply in person."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por todo lo anterior, solicito que me envíen un técnico.",
+      "options": [
+        "For all the above reasons, I request that I send a technician.",
+        "For all the above reasons, I request that they send me a technician.",
+        "For all the above reasons, I send a technician."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por todo lo anterior, solicito el cambio del producto.",
+      "options": [
+        "For all the above reasons, I request a refund of the product.",
+        "For all the above reasons, I request the repair of the product.",
+        "For all the above reasons, I request the replacement of the product."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *solicito* or *solicitamos*. You write for yourself: Por todo lo anterior, ___ el reembolso del pago. Type the whole sentence.",
+      "answer": "Por todo lo anterior, solicito el reembolso del pago.",
+      "accept": [],
+      "why": "You are one person, so *solicito*."
+    },
+    {
+      "prompt": "Choose *se revise* or *revisar*: Por todo lo anterior, solicito que ___ mi caso. Type the whole sentence.",
+      "answer": "Por todo lo anterior, solicito que se revise mi caso.",
+      "accept": [],
+      "why": "After *que* the verb needs the subjunctive, *se revise*."
+    },
+    {
+      "prompt": "For all the above reasons, I request that they return my money.",
+      "answer": "Por todo lo anterior, solicito que me devuelvan el dinero.",
+      "accept": [
+        "Por todo lo anterior, solicito que me devuelvan mi dinero."
+      ],
+      "why": "*Que* and the subjunctive ask someone to act."
+    },
+    {
+      "prompt": "For all the above reasons, I request a refund of the payment within ten days.",
+      "answer": "Por todo lo anterior, solicito el reembolso del pago en un plazo de diez días.",
+      "accept": [
+        "Por todo lo anterior, solicito el reembolso del pago en diez días."
+      ],
+      "why": "*En un plazo de* gives the deadline."
+    },
+    {
+      "prompt": "For all the above reasons, I request a written reply.",
+      "answer": "Por todo lo anterior, solicito una respuesta por escrito.",
+      "accept": [],
+      "why": "After *solicito*, just name what you want."
+    },
+    {
+      "prompt": "Two people write together, so *we*: Por todo lo anterior, solicito el cambio del producto.",
+      "answer": "Por todo lo anterior, solicitamos el cambio del producto.",
+      "accept": [],
+      "why": "*We* is *solicitamos*."
+    },
+    {
+      "prompt": "Ask for a technician instead: Por todo lo anterior, solicito el cambio del producto.",
+      "answer": "Por todo lo anterior, solicito que me envíen un técnico.",
+      "accept": [],
+      "why": "To ask for an action, use *que* and the subjunctive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Por todo lo anterior, solicito devolver el dinero.",
+      "right": "Por todo lo anterior, solicito que me devuelvan el dinero.",
+      "why": "Almost. You want someone else to act, so use *que* and the subjunctive."
+    },
+    {
+      "wrong": "Por todos los anteriores, solicito el reembolso del pago.",
+      "right": "Por todo lo anterior, solicito el reembolso del pago.",
+      "why": "Almost. *Por todo lo anterior* is a fixed phrase and never changes."
+    },
+    {
+      "wrong": "Por todo lo anterior, quiero mi dinero.",
+      "right": "Por todo lo anterior, solicito la devolución del dinero en un plazo de quince días.",
+      "why": "Almost. *Quiero* sounds blunt in a formal letter, and a deadline makes the demand stronger."
+    }
+  ],
+  "personal": "Think of something that went wrong and that you would complain about. Write your closing line: *Por todo lo anterior, solicito…*."
+}

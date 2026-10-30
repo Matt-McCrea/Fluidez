@@ -1,0 +1,172 @@
+{
+  "node": "p:solicitamos-su-colaboracion",
+  "hook": {
+    "line": "When a bank, a university or a building manager needs something from you, they do not say \"can you help?\". They have a standard line, and you will see it on every notice.",
+    "es": "Solicitamos su colaboración para llenar la encuesta.",
+    "en": "We ask for your help in filling in the survey."
+  },
+  "examples": [
+    {
+      "es": "Solicitamos su colaboración para llenar la encuesta.",
+      "en": "We ask for your help in filling in the survey."
+    },
+    {
+      "es": "Solicito su colaboración para difundir esta información.",
+      "en": "I ask for your help in sharing this information."
+    },
+    {
+      "es": "Solicitamos su colaboración para llenar el formulario.",
+      "en": "We ask for your help in filling in the form."
+    },
+    {
+      "es": "Solicitamos su colaboración para enviar los documentos a tiempo.",
+      "en": "We ask for your help in sending the documents on time."
+    },
+    {
+      "es": "Solicitamos su colaboración para reducir el gasto de energía.",
+      "en": "We ask for your help in reducing energy use."
+    },
+    {
+      "es": "Solicitamos su colaboración para no hacer ruido después de las diez.",
+      "en": "We ask for your help in not making noise after ten."
+    }
+  ],
+  "rule": "*Solicitamos su colaboración para…* is how an organisation asks for help: a bank, a school, a building manager.\n\n*Solicitamos* is \"we\" (the organisation). *Solicito* is \"I\", one person writing.\n*Su* means \"your\", formal.\n\nThen *para* and an infinitive says what you need: *para llenar el formulario*.\n\nIt is the official cousin of *¿me echas una mano?*, which is for friends.",
+  "smallPrint": "Teachers call this an institutional register formula. *Colaboración* here just means \"help\", not \"collaboration\".",
+  "readAndPick": [
+    {
+      "es": "Solicitamos su colaboración para llenar el formulario.",
+      "options": [
+        "We ask for your help in filling in the form.",
+        "I ask for your help in filling in the form.",
+        "They ask for our help in filling in the form."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Solicito su colaboración para firmar el contrato.",
+      "options": [
+        "We ask for your help in signing the contract.",
+        "I ask for your help in signing the contract.",
+        "You ask for my help in signing the contract."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Solicitamos su colaboración para enviar los documentos a tiempo.",
+      "options": [
+        "They ask for our help in sending the documents on time.",
+        "I ask for your help in sending the documents on time.",
+        "We ask for your help in sending the documents on time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Solicitamos su colaboración para no hacer ruido después de las diez.",
+      "options": [
+        "We ask for your help in not making noise after ten.",
+        "We ask for your help in making noise after ten.",
+        "We thank you for not making noise after ten."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Solicitamos su colaboración para reducir el gasto de energía.",
+      "options": [
+        "We ask for your help in saving money on gas.",
+        "We ask for your help in reducing energy use.",
+        "We ask for your help in producing energy."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Solicito su colaboración para difundir esta información.",
+      "options": [
+        "I ask for your help in sharing this information.",
+        "I ask for your help in hiding this information.",
+        "I ask for your help in reading this information."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Me echas una mano con la encuesta?",
+      "options": [
+        "We ask for your help with the survey.",
+        "I ask for your help with the survey, as an official.",
+        "Can you give me a hand with the survey? (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Solicitamos su colaboración para mover las mesas.",
+      "options": [
+        "We ask for your help in moving the tables.",
+        "We ask for your help in cleaning the tables.",
+        "We ask for your help in buying the tables."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *solicitamos* or *solicito*. A bank writes to its clients: ___ su colaboración para llenar el formulario. Type the whole sentence.",
+      "answer": "Solicitamos su colaboración para llenar el formulario.",
+      "accept": [],
+      "why": "A bank is an organisation, so *we*: *solicitamos*."
+    },
+    {
+      "prompt": "Choose *su* or *nuestra*. You write to a client, formal: Solicito ___ colaboración para firmar el contrato. Type the whole sentence.",
+      "answer": "Solicito su colaboración para firmar el contrato.",
+      "accept": [],
+      "why": "The help comes from the person you write to, so *su*."
+    },
+    {
+      "prompt": "We ask for your help in sending the documents on time.",
+      "answer": "Solicitamos su colaboración para enviar los documentos a tiempo.",
+      "accept": [],
+      "why": "*Para* and the infinitive say what is needed."
+    },
+    {
+      "prompt": "I ask for your help in sharing this information.",
+      "answer": "Solicito su colaboración para difundir esta información.",
+      "accept": [],
+      "why": "One person writing, so *solicito*."
+    },
+    {
+      "prompt": "We ask for your help in reducing energy use.",
+      "answer": "Solicitamos su colaboración para reducir el gasto de energía.",
+      "accept": [],
+      "why": "*Para reducir*: after *para*, the infinitive."
+    },
+    {
+      "prompt": "You write as one person, not a company: Solicitamos su colaboración para firmar el contrato.",
+      "answer": "Solicito su colaboración para firmar el contrato.",
+      "accept": [],
+      "why": "*I* is *solicito*."
+    },
+    {
+      "prompt": "We ask for your help in not making noise after ten.",
+      "answer": "Solicitamos su colaboración para no hacer ruido después de las diez.",
+      "accept": [],
+      "why": "Put *no* before the infinitive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Solicitamos su colaboración a llenar el formulario.",
+      "right": "Solicitamos su colaboración para llenar el formulario.",
+      "why": "Almost. What the help is for is introduced by *para*."
+    },
+    {
+      "wrong": "Solicitamos su colaboración para llenando el formulario.",
+      "right": "Solicitamos su colaboración para llenar el formulario.",
+      "why": "Almost. English says \"in filling\", but after *para* Spanish uses the infinitive."
+    },
+    {
+      "wrong": "Vale, solicito su colaboración para mover la mesa.",
+      "right": "Vale, ¿me echas una mano con la mesa?",
+      "why": "Almost. That formula is stiff for a friend; use *¿me echas una mano?*."
+    }
+  ],
+  "personal": "Imagine you run a building or a club and need people's help with one thing. Write the notice: *Solicitamos su colaboración para…*."
+}

@@ -1,0 +1,176 @@
+{
+  "node": "p:disponer-de",
+  "hook": {
+    "line": "Hotels, flats and companies do not just \"have\" things in a brochure. They have them in a more polished way, and you will meet these verbs on every listing.",
+    "es": "El apartamento dispone de parqueadero.",
+    "en": "The flat has a parking space."
+  },
+  "examples": [
+    {
+      "es": "Contamos con el apoyo de todo el equipo.",
+      "en": "We have the support of the whole team."
+    },
+    {
+      "es": "El apartamento dispone de parqueadero.",
+      "en": "The flat has a parking space."
+    },
+    {
+      "es": "No dispongo de tiempo.",
+      "en": "I don't have the time."
+    },
+    {
+      "es": "Todos los estudiantes tienen acceso a la biblioteca.",
+      "en": "All students have access to the library."
+    },
+    {
+      "es": "El hotel cuenta con piscina.",
+      "en": "The hotel has a pool."
+    },
+    {
+      "es": "Disponemos de tres salas.",
+      "en": "We have three rooms available."
+    }
+  ],
+  "rule": "In formal Spanish, *tener* gets three polished replacements:\n\n*contar con*: *El hotel cuenta con piscina.*\n*disponer de*: *El apartamento dispone de parqueadero.* *No dispongo de tiempo.*\n*tener acceso a*: *Tienen acceso a la biblioteca.*\n\nEach keeps its small word: *con*, *de*, *a*. *Contar con* here means \"have\", not \"count\".\n\n*Disponer* is irregular like *poner*: *dispongo, dispone, disponemos*.\n\nFor casual talk, *tener* is still right: *El café tiene wifi.*",
+  "smallPrint": "Teachers call these formal equivalents of *tener*. *Disponer de* often implies something available for use.",
+  "readAndPick": [
+    {
+      "es": "El apartamento dispone de parqueadero.",
+      "options": [
+        "The flat has a parking space.",
+        "The flat is next to a parking lot.",
+        "The flat has no parking."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No dispongo de tiempo.",
+      "options": [
+        "He doesn't have the time.",
+        "They don't have the time.",
+        "I don't have the time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El hotel cuenta con piscina.",
+      "options": [
+        "The hotel counts the pool.",
+        "The hotel has a pool.",
+        "The hotel is waiting for a pool."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Todos los estudiantes tienen acceso a la biblioteca.",
+      "options": [
+        "All students go to the library.",
+        "All students work in the library.",
+        "All students have access to the library."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Disponemos de tres salas.",
+      "options": [
+        "I have three rooms available.",
+        "We have three rooms available.",
+        "They have three rooms available."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No cuento con ese dinero.",
+      "options": [
+        "I didn't count that money.",
+        "He doesn't have that money.",
+        "I don't have that money."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Dispone usted de tiempo mañana?",
+      "options": [
+        "Do you (formal) have time tomorrow?",
+        "Do you (informal) have time tomorrow?",
+        "Do I have time tomorrow?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ustedes disponen de una semana.",
+      "options": [
+        "You (formal) have a week.",
+        "We have a week.",
+        "You all have a week."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de* or *con*: El apartamento dispone ___ parqueadero. Type the whole sentence.",
+      "answer": "El apartamento dispone de parqueadero.",
+      "accept": [],
+      "why": "*Disponer* always takes *de*."
+    },
+    {
+      "prompt": "Choose *con* or *de*: El hotel cuenta ___ piscina. Type the whole sentence.",
+      "answer": "El hotel cuenta con piscina.",
+      "accept": [],
+      "why": "*Contar* in the sense of \"have\" takes *con*."
+    },
+    {
+      "prompt": "I don't have the time.",
+      "answer": "No dispongo de tiempo.",
+      "accept": [
+        "No cuento con tiempo."
+      ],
+      "why": "*Disponer de* with *no* says you lack something."
+    },
+    {
+      "prompt": "All students have access to the library.",
+      "answer": "Todos los estudiantes tienen acceso a la biblioteca.",
+      "accept": [],
+      "why": "*Tener acceso a* keeps *a* before *la biblioteca*."
+    },
+    {
+      "prompt": "We have the support of the whole team.",
+      "answer": "Contamos con el apoyo de todo el equipo.",
+      "accept": [],
+      "why": "*Contamos con* is the formal \"we have\"."
+    },
+    {
+      "prompt": "Make it *we*: No dispongo de tiempo.",
+      "answer": "No disponemos de tiempo.",
+      "accept": [],
+      "why": "*We* is *disponemos*; *de* stays."
+    },
+    {
+      "prompt": "Make it formal, to one person: ¿Tienes tiempo mañana?",
+      "answer": "¿Dispone usted de tiempo mañana?",
+      "accept": [
+        "¿Dispone de tiempo mañana?"
+      ],
+      "why": "*Usted* takes *dispone*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No dispongo tiempo.",
+      "right": "No dispongo de tiempo.",
+      "why": "Almost. *Disponer* always needs *de* before what you have."
+    },
+    {
+      "wrong": "El hotel cuenta una piscina.",
+      "right": "El hotel cuenta con piscina.",
+      "why": "Almost. In this sense *contar* needs *con*, otherwise it means \"count\"."
+    },
+    {
+      "wrong": "Tienen acceso la biblioteca.",
+      "right": "Tienen acceso a la biblioteca.",
+      "why": "Almost. *Acceso* needs *a* before the place."
+    }
+  ],
+  "personal": "Tell us one thing your home or workplace has, in formal style: *Mi apartamento cuenta con…* or *Dispongo de…*."
+}
