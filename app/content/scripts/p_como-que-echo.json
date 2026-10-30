@@ -1,0 +1,170 @@
+{
+  "node": "p:como-que-echo",
+  "hook": {
+    "line": "Tomás hears something so wrong that he can only repeat it back, offended. Spanish repeats the words after *cómo que* and then fires back with *si*.",
+    "es": "¡¿Cómo que no vienes?! ¡Si lo prometiste!",
+    "en": "What do you mean you're not coming?! But you promised!"
+  },
+  "examples": [
+    {
+      "es": "¡¿Cómo que no vienes?! ¡Si lo prometiste!",
+      "en": "What do you mean you're not coming?! But you promised!"
+    },
+    {
+      "es": "Se acabó el café.\n¿Cómo que se acabó? ¡Si compré dos kilos ayer!",
+      "en": "The coffee's gone.\nWhat do you mean it's gone? But I bought two kilos yesterday!"
+    },
+    {
+      "es": "Mejor que te vayas.\n¿Cómo que me vaya?",
+      "en": "You'd better leave.\nWhat do you mean, I should leave?"
+    },
+    {
+      "es": "¿Que si me gusta? ¡Me encanta!",
+      "en": "Do I like it? I love it!"
+    },
+    {
+      "es": "¿Que si Hernando viene mañana? Claro que viene.",
+      "en": "Is Hernando coming tomorrow? Of course he's coming."
+    },
+    {
+      "es": "¿Cómo que no te acuerdas? ¡Si estuviste ahí!",
+      "en": "What do you mean you don't remember? But you were there!"
+    }
+  ],
+  "rule": "To push back on what someone just said, repeat their words after *cómo que*: *¿Cómo que no vienes?* Then give the reason with *si*: *¡Si lo prometiste!* Here *si* means \"but\", not \"if\".\n\nAfter an order, the echo takes the wish form: *te vayas* becomes *¿Cómo que me vaya?*\n\n*¿Que si…?* echoes a question you were just asked, to launch an emphatic yes: *¿Que si me gusta? ¡Me encanta!*\n\nIt is loud and personal, so keep it for people you know.",
+  "smallPrint": "Teachers call this an echo (*eco recapitulativo*): you repeat the other person's words to question or correct them.",
+  "readAndPick": [
+    {
+      "es": "¿Cómo vienes?",
+      "options": [
+        "How are you getting here?",
+        "What do you mean you're coming?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cómo que vienes?",
+      "options": [
+        "How are you getting here?",
+        "What do you mean you're coming?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡¿Cómo que no vienes?! ¡Si lo prometiste!",
+      "options": [
+        "If you promised, you're not coming.",
+        "What do you mean you're not coming?! But you promised!",
+        "Why are you coming? You promised!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Que si me gusta? ¡Me encanta!",
+      "options": [
+        "If I like it, I love it!",
+        "Do you like it? I love it!",
+        "Do I like it? I love it!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mejor que te vayas.\n¿Cómo que me vaya?",
+      "options": [
+        "You'd better leave.\nWhat do you mean, I should leave?",
+        "You'd better leave.\nHow do I leave?",
+        "I'd better leave.\nWhat do you mean, you should leave?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cómo que no viene?",
+      "options": [
+        "What do you mean you're not coming?",
+        "What do you mean he's not coming?",
+        "How is he not coming?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Que si Hernando viene mañana? Claro que viene.",
+      "options": [
+        "Is Hernando coming tomorrow? Of course he's coming.",
+        "If Hernando comes tomorrow, of course I'll come.",
+        "Hernando is not coming tomorrow, of course."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cómo que no te acuerdas? ¡Si estuviste ahí!",
+      "options": [
+        "How do you remember? You were there!",
+        "What do you mean you don't remember? But you were there!",
+        "What do you mean I don't remember? But I was there!"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *¿Cómo que no ___?* (*vienes* or *vengas*) A friend said \"I'm not coming\". What do you mean you're not coming?",
+      "answer": "¿Cómo que no vienes?",
+      "accept": [],
+      "why": "You are repeating a statement, so the verb stays as it was said: *vienes*."
+    },
+    {
+      "prompt": "Someone asks you if you like the new menu. Echo it, then answer: Do I like it? I love it!",
+      "answer": "¿Que si me gusta? ¡Me encanta!",
+      "accept": [],
+      "why": "*¿Que si…?* repeats the question before you answer it."
+    },
+    {
+      "prompt": "A friend says *Se acabó el café.* Echo it and fire back: What do you mean it's gone? But I bought two kilos yesterday!",
+      "answer": "¿Cómo que se acabó? ¡Si compré dos kilos ayer!",
+      "accept": [],
+      "why": "Repeat *se acabó* after *cómo que*, then *si* gives your reason."
+    },
+    {
+      "prompt": "Someone asks you if Hernando is coming tomorrow. Echo it, then answer: Is Hernando coming tomorrow? Of course he's coming.",
+      "answer": "¿Que si Hernando viene mañana? Claro que viene.",
+      "accept": [],
+      "why": "*Que si* hands the question back, and *claro que* gives the strong yes."
+    },
+    {
+      "prompt": "A friend says *Mejor que te vayas.* Echo it: What do you mean, I should leave?",
+      "answer": "¿Cómo que me vaya?",
+      "accept": [],
+      "why": "After an order the echo takes the wish form, and *te* becomes *me* because the speaker is now you."
+    },
+    {
+      "prompt": "Make it about her: *¿Cómo que no vienes?* becomes What do you mean she's not coming?",
+      "answer": "¿Cómo que no viene?",
+      "accept": [],
+      "why": "Only the verb changes to follow the person: *viene*."
+    },
+    {
+      "prompt": "Echo a friend and correct them: What do you mean you don't remember? But you were there!",
+      "answer": "¿Cómo que no te acuerdas? ¡Si estuviste ahí!",
+      "accept": [],
+      "why": "Repeat their words after *cómo que*, then give the proof with *si*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Cómo no vienes? ¡Si lo prometiste!",
+      "right": "¿Cómo que no vienes? ¡Si lo prometiste!",
+      "why": "Almost. Without *que* you are asking how, not repeating their words in disbelief."
+    },
+    {
+      "wrong": "¿Cómo que no vienes? ¡Sí lo prometiste!",
+      "right": "¿Cómo que no vienes? ¡Si lo prometiste!",
+      "why": "Almost. Here *si* means \"but\" and has no accent; *sí* with an accent means \"yes\"."
+    },
+    {
+      "wrong": "¿Que si me gusta? ¡Gusto!",
+      "right": "¿Que si me gusta? ¡Me encanta!",
+      "why": "Almost. Give a strong answer: *me encanta* says more than a plain yes."
+    }
+  ],
+  "personal": "Think of something a friend might say that would annoy you. Write it, then answer with *¿Cómo que…?* and a *¡Si…!*"
+}

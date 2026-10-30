@@ -1,0 +1,183 @@
+{
+  "node": "g:wish-exclamatives",
+  "hook": {
+    "line": "Tomás looks at the contract he signed and can only say what everyone says too late. Spanish has short exclamations for wishes and regrets, and they sound like they are bursting out of you.",
+    "es": "¡Ojalá nunca lo hubiera firmado!",
+    "en": "I wish I'd never signed it!"
+  },
+  "examples": [
+    {
+      "es": "¡Quién lo hubiera dicho!",
+      "en": "Who would have thought it!"
+    },
+    {
+      "es": "¡Si lo hubiera sabido!",
+      "en": "If only I'd known!"
+    },
+    {
+      "es": "¡Si al menos llamara!",
+      "en": "If only he'd call!"
+    },
+    {
+      "es": "¡Ojalá nunca lo hubiera firmado!",
+      "en": "I wish I'd never signed it!"
+    },
+    {
+      "es": "¡Si hubiéramos llegado antes!",
+      "en": "If only we'd arrived earlier!"
+    },
+    {
+      "es": "¡Si al menos Rosa estuviera aquí!",
+      "en": "If only Rosa were here!"
+    },
+    {
+      "es": "¡Quién hubiera estado ahí!",
+      "en": "I wish I'd been there!"
+    }
+  ],
+  "rule": "Spanish can drop the \"I wish\" and just exclaim the wish itself.\n\nFor the past, which can no longer change, use *hubiera* + the past participle after *si*, *ojalá* or *quién*: *¡Si lo hubiera sabido!*, *¡Quién hubiera estado ahí!*\n\nFor something you want now, use the plain wish form: *¡Si al menos llamara!* Adding *al menos* gives the sense \"at least\".\n\n*¡Quién lo hubiera dicho!* is a fixed way to say \"who would have thought it\", and it is about surprise, not regret.\n\nNo sentence follows. These exclamations stand alone, and the feeling carries the rest.",
+  "smallPrint": "Teachers call these exclamative wishes: the pluperfect subjunctive (*hubiera* + participle) for unreal past, the imperfect subjunctive (*llamara*) for unreal present.",
+  "readAndPick": [
+    {
+      "es": "¡Si lo hubiera sabido!",
+      "options": [
+        "If only I'd known!",
+        "If only I knew!",
+        "If only I'll know!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Si al menos llamara!",
+      "options": [
+        "At least he called!",
+        "If only he'd call!",
+        "If only he'd called!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Si hubiéramos llegado antes!",
+      "options": [
+        "If only they'd arrived earlier!",
+        "If only I'd arrived earlier!",
+        "If only we'd arrived earlier!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¡Quién lo hubiera dicho!",
+      "options": [
+        "Who said it?",
+        "Who would have thought it!",
+        "Who will say it?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Si al menos Rosa estuviera aquí!",
+      "options": [
+        "If only Rosa were here!",
+        "If only Rosa had been here!",
+        "Rosa is here at least!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Si al menos hubiera llamado!",
+      "options": [
+        "If only he'd call!",
+        "If only he'd called!",
+        "He will call at least!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Ojalá nunca lo hubiera firmado!",
+      "options": [
+        "I hope I never sign it!",
+        "I wish I never signed it now!",
+        "I wish I'd never signed it!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¡Quién hubiera estado ahí!",
+      "options": [
+        "I wish I'd been there!",
+        "Who is there?",
+        "I wish I were there now!"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *¡Si lo ___ sabido!* (*hubiera* or *habría*) If only I'd known!",
+      "answer": "¡Si lo hubiera sabido!",
+      "accept": [],
+      "why": "After *si*, Spanish uses *hubiera* + participle for a past wish, not *habría*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *¡Si al menos ___!* (*llamara* or *hubiera llamado*) Right now you want him to call: If only he'd call!",
+      "answer": "¡Si al menos llamara!",
+      "accept": [],
+      "why": "The wish is about now, so you need the plain wish form: *llamara*."
+    },
+    {
+      "prompt": "Say: Who would have thought it!",
+      "answer": "¡Quién lo hubiera dicho!",
+      "accept": [],
+      "why": "*Quién* + *lo hubiera dicho* is the fixed way to show surprise."
+    },
+    {
+      "prompt": "Say: I wish I'd never signed it!",
+      "answer": "¡Ojalá nunca lo hubiera firmado!",
+      "accept": [
+        "Ojalá nunca lo hubiera firmado."
+      ],
+      "why": "*Nunca* goes right before *lo hubiera firmado*."
+    },
+    {
+      "prompt": "Say, about us: If only we'd arrived earlier!",
+      "answer": "¡Si hubiéramos llegado antes!",
+      "accept": [],
+      "why": "*Hubiéramos* is the form for *we*, then the participle *llegado*."
+    },
+    {
+      "prompt": "Move it to the past: *¡Si al menos llamara!* becomes If only he'd called!",
+      "answer": "¡Si al menos hubiera llamado!",
+      "accept": [],
+      "why": "For something already over, *llamara* becomes *hubiera llamado*."
+    },
+    {
+      "prompt": "Make it about you: *¡Si hubiéramos llegado antes!* becomes If only I'd arrived earlier!",
+      "answer": "¡Si hubiera llegado antes!",
+      "accept": [],
+      "why": "For *I*, the form is *hubiera*, with the same participle."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Si lo habría sabido!",
+      "right": "¡Si lo hubiera sabido!",
+      "why": "Almost. After *si* use *hubiera*; *habría* belongs to the other half of the sentence."
+    },
+    {
+      "wrong": "¡Si al menos llamaría!",
+      "right": "¡Si al menos llamara!",
+      "why": "Almost. After *si* the wish uses the form ending in *-ara*, not the *-ía* one."
+    },
+    {
+      "wrong": "¡Si lo hubiera saber!",
+      "right": "¡Si lo hubiera sabido!",
+      "why": "After *hubiera* you need the participle, *sabido*, not the infinitive."
+    },
+    {
+      "wrong": "¡Quién lo dijo!",
+      "right": "¡Quién lo hubiera dicho!",
+      "why": "Almost. *¿Quién lo dijo?* asks who said it; the exclamation needs *hubiera dicho*."
+    }
+  ],
+  "personal": "Think of one thing you regret and one thing you wish for right now. Say them with *¡Si hubiera…!* and *¡Si al menos…!*"
+}
