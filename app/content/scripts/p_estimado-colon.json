@@ -1,0 +1,174 @@
+{
+ "node": "p:estimado-colon",
+ "hook": {
+  "line": "A formal letter begins before the first sentence, with a greeting and a colon. Tomás's first draft opened with \"Hola, alcalde\" and Vale winced.",
+  "es": "Estimado señor alcalde:",
+  "en": "Dear Mr Mayor,"
+ },
+ "examples": [
+  {
+   "es": "Estimada señora Rodríguez:",
+   "en": "Dear Mrs Rodríguez,"
+  },
+  {
+   "es": "Señores:",
+   "en": "Dear Sirs,"
+  },
+  {
+   "es": "Estimado señor Pardo:",
+   "en": "Dear Mr Pardo,"
+  },
+  {
+   "es": "Estimados señores:",
+   "en": "Dear Sirs,"
+  },
+  {
+   "es": "Me dirijo a ustedes para presentar una reclamación.",
+   "en": "I am writing to you all to make a complaint."
+  },
+  {
+   "es": "Les escribo en relación con el artículo publicado el 3 de mayo.",
+   "en": "I am writing to you all regarding the article published on 3 May."
+  }
+ ],
+ "rule": "A formal letter opens with *Estimado* (to a man) or *Estimada* (to a woman), a title and a surname, then a colon, never a comma: *Estimada señora Rodríguez:*. To a company or a group, just *Señores:*.\n\nThe next line says why you are writing: *Me dirijo a ustedes para* + verb, or *Les escribo en relación con* + the subject. Use *le* for one person and *les* for several.\n\nThe first word after the colon starts a new line with a capital letter. English \"Dear\" plus a comma becomes *Estimado* plus a colon.",
+ "smallPrint": "Teachers call the opening line the salutation, *el saludo*, and the sentence that follows the statement of purpose.",
+ "readAndPick": [
+  {
+   "es": "Estimada señora Rodríguez:",
+   "options": [
+    "Dear Mrs Rodríguez,",
+    "Dear Mr Rodríguez,",
+    "Dear Sirs,"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Estimado señor Pardo:",
+   "options": [
+    "Dear Mrs Pardo,",
+    "Dear Sirs,",
+    "Dear Mr Pardo,"
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Señores:",
+   "options": [
+    "Dear Madam,",
+    "Dear Sirs,",
+    "Dear friend,"
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Estimados señores:",
+   "options": [
+    "Dear Sir,",
+    "Dear Madam,",
+    "Dear Sirs,"
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Les escribo en relación con mi solicitud.",
+   "options": [
+    "You all are writing to me about my application.",
+    "I am writing to you all regarding my application.",
+    "I am writing to him about his application."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Me dirijo a ustedes para presentar una reclamación.",
+   "options": [
+    "I am writing to you all to make a complaint.",
+    "You all are writing to me to make a complaint.",
+    "We are writing to them to make a complaint."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Estimadas señoras:",
+   "options": [
+    "Dear Sirs,",
+    "Dear Mr Pardo,",
+    "Dear Ladies,"
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Le escribo en relación con el artículo publicado el 3 de mayo.",
+   "options": [
+    "I am writing to you all regarding the article published on 3 May.",
+    "I am writing to you (formal) regarding the article published on 3 May.",
+    "You are writing to me regarding the article published on 3 May."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick and type the whole opening: *Estimada señora Rodríguez___* (*:* or *,*) Dear Mrs Rodríguez,",
+   "answer": "Estimada señora Rodríguez:",
+   "accept": [],
+   "why": "A formal opening takes a colon, not a comma."
+  },
+  {
+   "prompt": "Pick and type the whole opening: *___ señor Pardo:* (*Estimado* or *Estimada*) Dear Mr Pardo,",
+   "answer": "Estimado señor Pardo:",
+   "accept": [],
+   "why": "*Señor* is a man, so *Estimado* ends in *-o*."
+  },
+  {
+   "prompt": "Open a letter to a company: Dear Sirs,",
+   "answer": "Señores:",
+   "accept": [],
+   "why": "For a company or a group, *Señores:* is enough."
+  },
+  {
+   "prompt": "Open a letter to a woman, Mrs Gómez: Dear Mrs Gómez,",
+   "answer": "Estimada señora Gómez:",
+   "accept": [],
+   "why": "A woman, so *Estimada*, then a colon."
+  },
+  {
+   "prompt": "Say: I am writing to you all to make a complaint.",
+   "answer": "Me dirijo a ustedes para presentar una reclamación.",
+   "accept": [
+    "Me dirijo a ustedes para presentar una queja."
+   ],
+   "why": "*Me dirijo a ustedes para* + verb is the standard opener."
+  },
+  {
+   "prompt": "Say: I am writing to you (formal, one person) regarding my application.",
+   "answer": "Le escribo en relación con mi solicitud.",
+   "accept": [],
+   "why": "*Le* is for one person you address as *usted*."
+  },
+  {
+   "prompt": "Make it for several people: *Le escribo en relación con mi solicitud.*",
+   "answer": "Les escribo en relación con mi solicitud.",
+   "accept": [],
+   "why": "For several people, *le* becomes *les*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Estimada señora Rodríguez,",
+   "right": "Estimada señora Rodríguez:",
+   "why": "The comma is English. A Spanish formal opening takes a colon."
+  },
+  {
+   "wrong": "Estimado señora Rodríguez:",
+   "right": "Estimada señora Rodríguez:",
+   "why": "*Estimado* agrees with who you write to: a woman is *Estimada*."
+  },
+  {
+   "wrong": "Querida señora Rodríguez:",
+   "right": "Estimada señora Rodríguez:",
+   "why": "*Querida* is for people close to you. A formal letter uses *Estimada*."
+  }
+ ],
+ "personal": "Imagine a letter to someone you have never met, with a title and a surname, and write the opening: *Estimado… :* then *Me dirijo a usted para…*"
+}

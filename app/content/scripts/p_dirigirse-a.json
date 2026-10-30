@@ -1,0 +1,174 @@
+{
+ "node": "p:dirigirse-a",
+ "hook": {
+  "line": "A formal letter starts by saying who you are writing to. Tomás is about to write to the mayor's office about the demolition, and the first line is a set move.",
+  "es": "Me dirijo a ustedes para presentar una queja.",
+  "en": "I am writing to you all to make a complaint."
+ },
+ "examples": [
+  {
+   "es": "Me dirijo a ustedes para solicitar información.",
+   "en": "I am writing to you all to request information."
+  },
+  {
+   "es": "Se dirigió a la salida.",
+   "en": "He headed for the exit."
+  },
+  {
+   "es": "Se dirigió a mí en tono formal.",
+   "en": "She addressed me in a formal tone."
+  },
+  {
+   "es": "Nos dirigimos a usted para pedir una cita.",
+   "en": "We are writing to you (formal) to ask for an appointment."
+  },
+  {
+   "es": "Los clientes se dirigieron al mostrador.",
+   "en": "The customers headed for the counter."
+  },
+  {
+   "es": "Hernando se dirige a la plaza todas las mañanas.",
+   "en": "Hernando heads for the plaza every morning."
+  }
+ ],
+ "rule": "*Dirigirse a* does two jobs, and the context tells you which. With a place it means to head for: *Se dirigió a la salida*. With a person it means to address, or to write to: *Me dirijo a usted*.\n\nIn letters, *Me dirijo a ustedes para* + verb is the standard opener: *para solicitar*, *para presentar*.\n\nThe *a* never disappears, and *me* changes with the person: *me dirijo*, *se dirigió*, *nos dirigimos*. Watch the spelling: *dirijo* has a *j*, *dirigió* has a *g*.",
+ "smallPrint": "Teachers call this a reflexive verb of direction: the *se* or *me* just shows that the movement or the address comes from the subject.",
+ "readAndPick": [
+  {
+   "es": "Me dirijo a ustedes para solicitar información.",
+   "options": [
+    "I am writing to you all to request information.",
+    "I am looking for information from you all.",
+    "You all are writing to me to request information."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Se dirigió a la salida.",
+   "options": [
+    "He closed the exit.",
+    "He found the exit.",
+    "He headed for the exit."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Se dirigió a mí en tono formal.",
+   "options": [
+    "I addressed her in a formal tone.",
+    "She addressed me in a formal tone.",
+    "She headed for me quickly."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Nos dirigimos a usted para pedir una cita.",
+   "options": [
+    "I am writing to you (formal) to ask for an appointment.",
+    "We are writing to you (formal) to ask for an appointment.",
+    "They are writing to you (formal) to ask for an appointment."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Los clientes se dirigieron al mostrador.",
+   "options": [
+    "The customers will head for the counter.",
+    "The customers are heading for the counter.",
+    "The customers headed for the counter."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Me dirijo a la alcaldía.",
+   "options": [
+    "I am heading to the mayor's office.",
+    "He is heading to the mayor's office.",
+    "I headed to the mayor's office."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Los vecinos se dirigen a ustedes para presentar una queja.",
+   "options": [
+    "The neighbours are heading for you all to make a complaint.",
+    "The neighbours are writing to you all to make a complaint.",
+    "I am writing to the neighbours to make a complaint."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Me dirigí a la oficina del alcalde.",
+   "options": [
+    "I am heading to the mayor's office.",
+    "He headed to the mayor's office.",
+    "I headed to the mayor's office."
+   ],
+   "answer": 2
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick and type the whole sentence: *Me ___ a ustedes para presentar una queja.* (*dirijo* or *dirigo*) I am writing to you all to make a complaint.",
+   "answer": "Me dirijo a ustedes para presentar una queja.",
+   "accept": [],
+   "why": "Before *o*, the *g* of *dirigir* turns into *j*: *dirijo*."
+  },
+  {
+   "prompt": "Pick and type the whole sentence: *Se dirigió ___ la salida.* (*a* or *en*) He headed for the exit.",
+   "answer": "Se dirigió a la salida.",
+   "accept": [],
+   "why": "*Dirigirse* always takes *a* before the place."
+  },
+  {
+   "prompt": "Say, in a letter to a company: I am writing to you all to request information.",
+   "answer": "Me dirijo a ustedes para solicitar información.",
+   "accept": [
+    "Me dirijo a ustedes para pedir información."
+   ],
+   "why": "*Me dirijo a ustedes para* + verb is the opening move."
+  },
+  {
+   "prompt": "Say: We are writing to you (formal, one person) to ask for an appointment.",
+   "answer": "Nos dirigimos a usted para pedir una cita.",
+   "accept": [],
+   "why": "*We* is *nos dirigimos*, and the person you write to follows *a*."
+  },
+  {
+   "prompt": "Say: The customers headed for the counter.",
+   "answer": "Los clientes se dirigieron al mostrador.",
+   "accept": [],
+   "why": "*Se dirigieron* is the *they* form in the past, and *a + el* becomes *al*."
+  },
+  {
+   "prompt": "Make it about *we*: *Me dirijo a ustedes para presentar una queja.*",
+   "answer": "Nos dirigimos a ustedes para presentar una queja.",
+   "accept": [],
+   "why": "*We* uses *nos dirigimos*."
+  },
+  {
+   "prompt": "Make it past, about *he*: *Se dirige a la salida.*",
+   "answer": "Se dirigió a la salida.",
+   "accept": [],
+   "why": "*He* in the past ends in *-ió*, and the *g* is back: *dirigió*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Me dirijo ustedes para solicitar información.",
+   "right": "Me dirijo a ustedes para solicitar información.",
+   "why": "Keep the *a*: *dirigirse a* never drops it."
+  },
+  {
+   "wrong": "Me dirigo a ustedes para solicitar información.",
+   "right": "Me dirijo a ustedes para solicitar información.",
+   "why": "Almost. Before *o*, *g* is spelled *j*, so *dirijo*."
+  },
+  {
+   "wrong": "Me dirijo a ustedes por solicitar información.",
+   "right": "Me dirijo a ustedes para solicitar información.",
+   "why": "The purpose before a verb is *para*, so *para solicitar*."
+  }
+ ],
+ "personal": "Write the opening line of a letter to someone you would like an answer from: *Me dirijo a… para…*"
+}

@@ -1,0 +1,172 @@
+{
+ "node": "p:fuera-de-servicio",
+ "hook": {
+  "line": "A complaint letter lives on one fact: something that should work does not. The oven at the café dies the day before Vale's big order, and Tomás needs the exact phrase.",
+  "es": "El horno está fuera de servicio desde ayer.",
+  "en": "The oven has been out of service since yesterday."
+ },
+ "examples": [
+  {
+   "es": "El ascensor está fuera de servicio desde el lunes.",
+   "en": "The elevator has been out of service since Monday."
+  },
+  {
+   "es": "El cajero está dañado.",
+   "en": "The ATM is broken."
+  },
+  {
+   "es": "Este baño está fuera de uso.",
+   "en": "This restroom is out of use."
+  },
+  {
+   "es": "La máquina de café está fuera de servicio.",
+   "en": "The coffee machine is out of order."
+  },
+  {
+   "es": "El horno se dañó ayer.",
+   "en": "The oven broke down yesterday."
+  },
+  {
+   "es": "El teléfono estaba fuera de servicio todo el día.",
+   "en": "The phone was out of service all day."
+  }
+ ],
+ "rule": "*Está fuera de servicio* says something is out of order. It suggests it used to work and should work again. Close cousins: *fuera de uso* (not to be used) and *fuera de funcionamiento* (not working).\n\nIn everyday Colombian Spanish, *dañado* is the word for broken: *El cajero está dañado*. To say it broke, use *se dañó*: *El horno se dañó ayer*.\n\nSince a date is *desde*: *desde el lunes*. English says \"has been out of order since\". Spanish uses the plain present: *está… desde el lunes*.",
+ "smallPrint": "Teachers call the *se* in *se dañó* an accidental *se*: the thing broke by itself and nobody is blamed.",
+ "readAndPick": [
+  {
+   "es": "El cajero está dañado.",
+   "options": [
+    "The ATM is new.",
+    "The ATM broke yesterday.",
+    "The ATM is broken."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "El horno se dañó ayer.",
+   "options": [
+    "The oven is broken.",
+    "The oven broke down yesterday.",
+    "The oven was repaired yesterday."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "El ascensor está fuera de servicio desde el lunes.",
+   "options": [
+    "The elevator was out of service on Monday.",
+    "The elevator has been out of service since Monday.",
+    "The elevator will be out of service on Monday."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Este baño está fuera de uso.",
+   "options": [
+    "This restroom is out of use.",
+    "This restroom is not clean.",
+    "This restroom is for customers."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Estas máquinas están dañadas.",
+   "options": [
+    "This machine is broken.",
+    "This machine broke.",
+    "These machines are broken."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "El teléfono estaba fuera de servicio todo el día.",
+   "options": [
+    "The phone is out of service all day.",
+    "The phone will be out of service all day.",
+    "The phone was out of service all day."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Los cajeros están fuera de servicio hoy.",
+   "options": [
+    "The ATMs are out of service today.",
+    "The ATM is out of service today.",
+    "The ATMs were out of service today."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "El ascensor no está fuera de servicio.",
+   "options": [
+    "The elevator is out of service.",
+    "The elevator is not working.",
+    "The elevator is not out of service."
+   ],
+   "answer": 2
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick and type the whole sentence: *El ascensor ___ fuera de servicio desde el lunes.* (*está* or *es*) The elevator has been out of service since Monday.",
+   "answer": "El ascensor está fuera de servicio desde el lunes.",
+   "accept": [],
+   "why": "Being out of order is a condition, so it takes *está*."
+  },
+  {
+   "prompt": "Pick and type the whole sentence: *El horno ___ ayer.* (*está dañado* or *se dañó*) The oven broke down yesterday.",
+   "answer": "El horno se dañó ayer.",
+   "accept": [],
+   "why": "*Ayer* points to the moment it broke, so *se dañó*."
+  },
+  {
+   "prompt": "Say: This restroom is out of use.",
+   "answer": "Este baño está fuera de uso.",
+   "accept": [],
+   "why": "*Fuera de uso* says nobody should use it."
+  },
+  {
+   "prompt": "Say: The coffee machine is out of order.",
+   "answer": "La máquina de café está fuera de servicio.",
+   "accept": [],
+   "why": "*Está fuera de servicio* is the standard phrase for out of order."
+  },
+  {
+   "prompt": "Say: The ATM is broken.",
+   "answer": "El cajero está dañado.",
+   "accept": [],
+   "why": "*Dañado* is the everyday word for broken."
+  },
+  {
+   "prompt": "Make it plural: *El cajero está dañado.*",
+   "answer": "Los cajeros están dañados.",
+   "accept": [],
+   "why": "The article, the noun, the verb and *dañado* all go plural."
+  },
+  {
+   "prompt": "Make it negative: *El ascensor está fuera de servicio.*",
+   "answer": "El ascensor no está fuera de servicio.",
+   "accept": [],
+   "why": "*No* goes right before the verb."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "El ascensor es fuera de servicio.",
+   "right": "El ascensor está fuera de servicio.",
+   "why": "Out of order is a state that can change, so *está*."
+  },
+  {
+   "wrong": "El ascensor está fuera de servicio por el lunes.",
+   "right": "El ascensor está fuera de servicio desde el lunes.",
+   "why": "Since a date is *desde*, not *por*."
+  },
+  {
+   "wrong": "El horno dañó ayer.",
+   "right": "El horno se dañó ayer.",
+   "why": "Without *se* it sounds like the oven damaged something else."
+  }
+ ],
+ "personal": "Think of something broken near you right now and say it: *… está fuera de servicio* or *… está dañado*."
+}
