@@ -1,0 +1,250 @@
+{
+  "id": "sc-u27-a",
+  "unit": "u27",
+  "title": "One star",
+  "spare": false,
+  "brief": "You're Tomás. A customer, Patricia Gómez, gave the café one star online, and now she has written to the café's page. Answer her in writing: say why you're writing, react to her complaint and get her to come back. She's a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes. Soy Patricia Gómez, y ayer le puse una estrella a su café en internet. ¿Usted es el dueño?",
+      "npcEn": "Good afternoon. I'm Patricia Gómez, and yesterday I gave your café one star online. Are you the owner?",
+      "intent": "Open politely, say yes, you're Tomás, the owner, and say you're writing to answer her review.",
+      "accept": [
+        "Cordial saludo. Sí, soy Tomás, el dueño. Le escribo para contestar su reseña.",
+        "Buenas tardes, señora Gómez. Sí, soy el dueño, Tomás Herrera. Le escribo para responder a su reseña.",
+        "Sí, soy Tomás, el dueño del café. Le escribo para hablar de su reseña."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "le escribo para",
+          "flags": "i",
+          "label": "say why you're writing, with usted: le escribo para..."
+        }
+      ],
+      "focus": "p:le-escribo-para",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Pues sí. El tinto llegó frío y esperé media hora. No me gustó nada.",
+      "npcEn": "Well, yes. The coffee arrived cold and I waited half an hour. I didn't like it at all.",
+      "intent": "Say you're very sorry, and that you're glad she is writing to you.",
+      "accept": [
+        "Lo siento mucho. Me alegra que usted nos escriba.",
+        "Qué pena con usted. Me alegra que usted me escriba.",
+        "Lo siento mucho, señora Gómez. Pero me alegra que usted nos escriba."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "alegra que",
+          "within": 3,
+          "label": "after me alegra que, the verb changes: escriba"
+        }
+      ],
+      "focus": "g:subj-emotion-intro",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Bueno. ¿Y qué va a hacer usted?",
+      "npcEn": "OK. And what are you going to do?",
+      "intent": "Invite her back so that she can try the coffee again, for free.",
+      "accept": [
+        "La invito a volver para que pruebe el tinto otra vez. Es gratis.",
+        "Vuelva el sábado para que pruebe un tinto caliente. Es gratis.",
+        "Quiero invitarla a un tinto gratis para que nos dé otra oportunidad."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "para que",
+          "within": 3,
+          "label": "so that she tries it: para que pruebe"
+        }
+      ],
+      "focus": "g:para-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Gracias. Pero hay otra cosa: su pájaro me dijo que soy fea.",
+      "npcEn": "Thank you. But there's something else: your bird told me I'm ugly.",
+      "intent": "Apologise, and explain that Simón says that to everyone, you included.",
+      "accept": [
+        "¡Ay, qué pena! Simón les dice eso a todos. A mí también.",
+        "Qué pena con usted. Simón les dice eso a todos, también a mí.",
+        "Perdón, señora Gómez. Simón les dice eso a todos los clientes, y a mí también."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "todos",
+            "todo el mundo"
+          ],
+          "label": "to everyone: a todos"
+        }
+      ],
+      "focus": "g:le-doubling",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Jajaja. Está bien, el sábado voy. Pero lejos del pájaro, por favor.",
+      "npcEn": "Hahaha. All right, I'll come on Saturday. But far from the bird, please.",
+      "intent": "Say how great that she's coming, and close the message formally.",
+      "accept": [
+        "¡Qué bueno que viene el sábado! Quedo atento. Atentamente, Tomás.",
+        "Qué bueno que viene. Simón va a estar en la cocina. Atentamente, Tomás Herrera.",
+        "¡Qué bueno que viene! Gracias de antemano. Un cordial saludo, Tomás."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "qu[eé] bueno que",
+          "flags": "i",
+          "label": "react to her news: qué bueno que..."
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "atentamente",
+            "atento",
+            "cordial saludo",
+            "saludos"
+          ],
+          "label": "sign off formally: atentamente, quedo atento"
+        }
+      ],
+      "focus": "c:que-bueno-que",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-mi-tambien",
+    "c:atentamente",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:cordial-saludo",
+    "c:entonces-bueno",
+    "c:gracias-de-antemano",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:pues",
+    "c:que-bien",
+    "c:que-bueno-que",
+    "c:que-pena",
+    "c:que-va",
+    "c:quedo-atento",
+    "c:quiero",
+    "c:sentido-pesame",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:para-que",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-emotion-intro",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:alegrar",
+    "l:antemano",
+    "l:atentamente",
+    "l:atento",
+    "l:ayer",
+    "l:bien",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:caliente",
+    "l:cliente",
+    "l:cocina",
+    "l:contestar",
+    "l:cordial",
+    "l:cosa",
+    "l:dar",
+    "l:decir",
+    "l:dueño",
+    "l:escribir",
+    "l:escribirse",
+    "l:esperar",
+    "l:estar",
+    "l:estrella",
+    "l:favor",
+    "l:feo",
+    "l:frío",
+    "l:gratis",
+    "l:gustar",
+    "l:hablar",
+    "l:hacer",
+    "l:hora",
+    "l:internet",
+    "l:invitar",
+    "l:ir",
+    "l:lejos",
+    "l:llegar",
+    "l:oportunidad",
+    "l:pena",
+    "l:perdón",
+    "l:poner",
+    "l:probar",
+    "l:pájaro",
+    "l:quedar",
+    "l:querer",
+    "l:qué",
+    "l:reseña",
+    "l:responder",
+    "l:saludar",
+    "l:saludo",
+    "l:sentir",
+    "l:ser",
+    "l:señora",
+    "l:sábado",
+    "l:tarde",
+    "l:tinto",
+    "l:venir",
+    "l:vez",
+    "l:volver",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:estimado-colon",
+    "p:le-escribo-para",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:senor-don-article",
+    "p:te-invito-a"
+  ]
+}

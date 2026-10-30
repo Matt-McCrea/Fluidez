@@ -1,0 +1,199 @@
+{
+  "id": "sc-u27-b",
+  "unit": "u27",
+  "title": "Mariana's draft",
+  "spare": true,
+  "brief": "You're Tomás. Mariana sent you the draft of her article about Altamira's purchases on the block, and she's messaging to hear what you think. Tell her what you liked and what bothers you, and help her finish it. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Hola, Tomás! ¿Ya leíste mi artículo? Te lo mandé anoche.",
+      "npcEn": "Hi, Tomás! Have you read my article yet? I sent it to you last night.",
+      "intent": "Say yes, you've just finished it, and you liked it a lot.",
+      "accept": [
+        "Sí, acabo de terminarlo. Me gustó mucho.",
+        "¡Hola! Sí, acabo de leerlo. Me gustó mucho.",
+        "Sí, ya lo leí. Acabo de terminarlo y me gustó mucho."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "acabo de",
+          "flags": "i",
+          "label": "I've just: acabo de + infinitive"
+        }
+      ],
+      "focus": "g:acabar-de-ya-todavia",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿De verdad? ¿Qué te gustó?",
+      "npcEn": "Really? What did you like?",
+      "intent": "Say you're glad the article talks about the people of the block, not only about Altamira.",
+      "accept": [
+        "Me alegra que el artículo hable de la gente de la cuadra, no solo de Altamira.",
+        "Me alegra que tu artículo hable de la gente de la cuadra y no solo de Altamira.",
+        "Qué bueno que el artículo hable de la gente de la cuadra, no solo de Altamira."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "within": 6,
+          "label": "after me alegra que, the verb changes: hable"
+        }
+      ],
+      "focus": "g:subj-emotion-intro",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Gracias. ¿Y algo que no te gustó?",
+      "npcEn": "Thanks. And something you didn't like?",
+      "intent": "Say it bothers you that the article says you're going to sell the café.",
+      "accept": [
+        "Me molesta que el artículo diga que voy a vender el café.",
+        "Sí. Me molesta que el artículo diga que voy a vender el café.",
+        "Me molesta un poco que el artículo diga que voy a vender el café. ¡No es verdad!"
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "within": 6,
+          "label": "after me molesta que, the verb changes: diga"
+        }
+      ],
+      "focus": "g:subj-emotion-intro",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Uy, qué pena! Un vecino me dijo eso. Hoy lo cambio. ¿Algo más?",
+      "npcEn": "Oops, how embarrassing! A neighbour told me that. I'll change it today. Anything else?",
+      "intent": "Say you're sending her a photo of Rosa so that she can put it in the article.",
+      "accept": [
+        "Te mando una foto de Rosa para que la pongas en el artículo.",
+        "Sí, te mando una foto de Rosa para que la uses en el artículo.",
+        "Ahora te mando una foto de Rosa para que la pongas en el artículo."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "para que",
+          "within": 3,
+          "label": "so that she puts it in: para que la pongas"
+        }
+      ],
+      "focus": "g:para-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Qué bello! Gracias, Tomás. Esta noche hay una fiesta en la revista, y tengo que ir.",
+      "npcEn": "How lovely! Thanks, Tomás. Tonight there's a party at the magazine, and I have to go.",
+      "intent": "Wish her a good time at the party.",
+      "accept": [
+        "¡Que te diviertas!",
+        "¡Que la pases bien en la fiesta!",
+        "Bueno, ¡que te diviertas en la fiesta!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "que (te diviertas|la pases)|diviértete",
+          "flags": "i",
+          "label": "wish someone a good time: que te diviertas"
+        }
+      ],
+      "focus": "p:que-subj-deseo",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:algo-mas",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:que-bien",
+    "c:que-bueno-que",
+    "c:que-la-pases-bien",
+    "c:que-pena",
+    "c:que-te-diviertas",
+    "c:tengo",
+    "c:tengo-que",
+    "c:voy-a",
+    "g:acabar-de-ya-todavia",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:para-que",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:subj-emotion-intro",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acabar",
+    "l:ahora",
+    "l:alegrar",
+    "l:anoche",
+    "l:artículo",
+    "l:bello",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:cambiar",
+    "l:cuadra",
+    "l:decir",
+    "l:divertirse",
+    "l:fiesta",
+    "l:foto",
+    "l:gente",
+    "l:gustar",
+    "l:hablar",
+    "l:hoy",
+    "l:ir",
+    "l:leer",
+    "l:mandar",
+    "l:molestar",
+    "l:noche",
+    "l:pasar",
+    "l:pena",
+    "l:poner",
+    "l:qué",
+    "l:revista",
+    "l:ser",
+    "l:tener",
+    "l:terminar",
+    "l:usar",
+    "l:vecino",
+    "l:vender",
+    "l:verdad",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:me-te-nos-objects",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:quantifiers-basic"
+  ]
+}

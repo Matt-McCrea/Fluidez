@@ -1,0 +1,239 @@
+{
+  "id": "sc-u27-c",
+  "unit": "u27",
+  "title": "The first newsletter",
+  "spare": true,
+  "brief": "You're Tomás. It's closing time, and Vale is writing the café's first newsletter, an email for the neighbours, plus a notice for the bathroom. Help her word them, and say why the newsletter matters. She's your partner and friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Antes del correo para los vecinos, necesito un aviso para el baño. Hay gente que fuma ahí. ¿Qué escribo?",
+      "npcEn": "Before the email for the neighbours, I need a notice for the bathroom. There are people who smoke in there. What do I write?",
+      "intent": "Tell her what the sign should say: No smoking.",
+      "accept": [
+        "Escribe: No fumar.",
+        "No fumar.",
+        "Pon: No fumar en el baño."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "no fumar",
+          "flags": "i",
+          "label": "a sign uses the plain verb: No fumar"
+        }
+      ],
+      "focus": "p:infinitive-instructions",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Perfecto. En el correo va mi receta de arroz con leche. El primer paso es la leche con el azúcar. ¿Cómo lo escribo?",
+      "npcEn": "Perfect. My rice pudding recipe goes in the email. The first step is the milk with the sugar. How do I write it?",
+      "intent": "Write the first step the way a recipe does: Heat the milk with the sugar.",
+      "accept": [
+        "Calentar la leche con el azúcar.",
+        "Escribe: Calentar la leche con el azúcar.",
+        "Primero, calentar la leche con el azúcar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcalentar\\b",
+          "flags": "i",
+          "label": "a recipe step uses the plain verb: calentar, not calienta"
+        }
+      ],
+      "focus": "p:infinitive-instructions",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Pero una receta en un correo? ¿Eso para qué?",
+      "npcEn": "But a recipe in an email? What's that for?",
+      "intent": "Say it's so that the neighbours make it at home and then come to the café.",
+      "accept": [
+        "Para que los vecinos la preparen en la casa y después vengan al café.",
+        "Es para que la gente la haga en casa y venga al café.",
+        "La ponemos para que los vecinos la preparen en casa y luego vengan al café."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "para que",
+          "within": 4,
+          "label": "so that they make it: para que la preparen"
+        }
+      ],
+      "focus": "g:para-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Oye, alguien acaba de dejar una carta debajo de la puerta. Es de los abogados de Altamira.",
+      "npcEn": "Hey, someone has just left a letter under the door. It's from Altamira's lawyers.",
+      "intent": "Ask her what it says.",
+      "accept": [
+        "¿Qué dice la carta?",
+        "¿Y qué dice?",
+        "Ay, no. ¿Qué dice?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "g:questions",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Dice que el contrato termina en seis meses y que los dueños quieren el espacio. Pero no da los nombres de los dueños.",
+      "npcEn": "It says the lease ends in six months and that the owners want the space. But it doesn't give the owners' names.",
+      "intent": "Say it bothers you that the letter doesn't give the owners' names.",
+      "accept": [
+        "Me molesta que la carta no diga los nombres de los dueños.",
+        "¡Qué raro! Me molesta que la carta no dé los nombres.",
+        "A mí me molesta que la carta no tenga los nombres de los dueños."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "molesta que",
+          "within": 5,
+          "label": "after me molesta que, the verb changes: no diga"
+        },
+        {
+          "type": "negation"
+        }
+      ],
+      "focus": "g:subj-emotion-intro",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "A mí también. Mañana le escribimos a Mariana. Ahora vete a la casa, que es tarde.",
+      "npcEn": "Me too. Tomorrow we'll write to Mariana. Now go home, it's late.",
+      "intent": "Thank her and wish her a good night's rest.",
+      "accept": [
+        "Gracias, Vale. ¡Que descanses!",
+        "Bueno, gracias por todo. Que descanses.",
+        "Gracias por todo, Vale. Descansa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "que descanses|descansa",
+          "flags": "i",
+          "label": "wish her a good rest: que descanses"
+        }
+      ],
+      "focus": "c:que-descanses",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-mi-tambien",
+    "c:aqui-tiene",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:oiga-oye",
+    "c:que-descanses",
+    "g:acabar-de-ya-todavia",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:para-que",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-emotion-intro",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "l:abogado",
+    "l:acabar",
+    "l:ahora",
+    "l:ahí",
+    "l:antes",
+    "l:arroz",
+    "l:aviso",
+    "l:azúcar",
+    "l:baño",
+    "l:bueno",
+    "l:café",
+    "l:calentar",
+    "l:carta",
+    "l:casa",
+    "l:contrato",
+    "l:correo",
+    "l:cómo",
+    "l:dar",
+    "l:debajo",
+    "l:decir",
+    "l:dejar",
+    "l:descansar",
+    "l:después",
+    "l:dueño",
+    "l:escribir",
+    "l:espacio",
+    "l:fumar",
+    "l:gente",
+    "l:hacer",
+    "l:ir",
+    "l:irse",
+    "l:leche",
+    "l:mañana",
+    "l:mes",
+    "l:molestar",
+    "l:necesitar",
+    "l:nombre",
+    "l:oír",
+    "l:paso",
+    "l:perfecto",
+    "l:poner",
+    "l:preparar",
+    "l:puerta",
+    "l:querer",
+    "l:qué",
+    "l:raro",
+    "l:receta",
+    "l:ser",
+    "l:tarde",
+    "l:tener",
+    "l:terminar",
+    "l:vecino",
+    "l:venir",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:demonstratives-basic",
+    "p:es-de-noche-tarde",
+    "p:esta-prohibido",
+    "p:exclamations-basic",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:infinitive-instructions",
+    "p:ir-a-venir-de-place",
+    "p:la-gente-singular",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:que-subj-deseo",
+    "p:time-sequence-basic"
+  ]
+}
