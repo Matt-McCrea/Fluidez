@@ -1,0 +1,45 @@
+{
+  "node": "x:pluperfect-preterite",
+  "hook": {
+    "line": "Hernando tells a story and it matters whether Rosa left before he arrived or just as he came in. One small change of verb decides who was there.",
+    "es": "Cuando llegué, ya se había ido.",
+    "en": "When I arrived, he had already left."
+  },
+  "examples": [
+    { "es": "Cuando llegué, se fue.", "en": "When I arrived, he left." },
+    { "es": "Cuando llegué, ya se había ido.", "en": "When I arrived, he had already left." },
+    { "es": "Cuando Tomás abrió el café, Vale salió.", "en": "When Tomás opened the café, Vale went out." },
+    { "es": "Cuando Tomás abrió el café, Vale ya había salido.", "en": "When Tomás opened the café, Vale had already gone out." },
+    { "es": "Cuando llamé, Hernando salió.", "en": "When I called, Hernando went out." },
+    { "es": "Cuando llamé, Hernando todavía no había salido.", "en": "When I called, Hernando still hadn't gone out." },
+    { "es": "Hernando me contó lo que había pasado.", "en": "Hernando told me what had happened." }
+  ],
+  "rule": "Ask one question: which happened first?\n\nStory in order, one thing after another: use the plain past for both. *Cuando llegué, se fue*: I arrived, then he left.\n\nOne thing was already done before the other: put that one in *había* plus the ending. *Cuando llegué, ya se había ido*: he left first.\n\nA clue: *ya* and *todavía no* often travel with the earlier event.\n\nAnd *había* needs another past moment to look back from. On its own, *ayer fui al mercado* is just the plain past.\n\nSo the plain past moves the story forward, and *había* steps back.",
+  "smallPrint": "Teachers call this choosing between the preterite and the pluperfect. The preterite moves the narrative on; the pluperfect marks an event earlier than the one being narrated.",
+  "readAndPick": [
+    { "es": "Cuando llegué, se fue.", "options": ["When I arrived, he had already left.", "When I arrived, he left.", "When I arrive, he leaves."], "answer": 1 },
+    { "es": "Cuando llegué, ya se había ido.", "options": ["When I arrived, he left.", "When I arrived, he had already left.", "When I arrived, he was leaving."], "answer": 1 },
+    { "es": "Cuando Tomás abrió el café, Vale ya había salido.", "options": ["Vale went out as Tomás opened the café.", "Vale had gone out before Tomás opened the café.", "Vale went out after Tomás opened the café."], "answer": 1 },
+    { "es": "Cuando llamé, Hernando salió.", "options": ["Hernando went out when I called.", "Hernando had gone out before I called.", "Hernando was out when I called."], "answer": 0 },
+    { "es": "Cuando llamé, Hernando todavía no había salido.", "options": ["Hernando went out when I called.", "Hernando hadn't gone out yet when I called.", "Hernando didn't go out when I called."], "answer": 1 },
+    { "es": "Cuando salí, empezó a llover.", "options": ["When I went out, it had already started to rain.", "When I went out, it started to rain.", "When I went out, it was raining."], "answer": 1 },
+    { "es": "Cuando salí, ya había empezado a llover.", "options": ["When I went out, it had already started to rain.", "When I went out, it started to rain.", "When I went out, it will start to rain."], "answer": 0 },
+    { "es": "Hernando me contó lo que había pasado.", "options": ["Hernando told me what happens.", "Hernando told me what had happened.", "Hernando told me what was happening."], "answer": 1 },
+    { "es": "Cuando Vale llegó, Tomás preparó el tinto.", "options": ["When Vale arrived, Tomás had already made the coffee.", "When Vale arrived, Tomás made the coffee.", "When Vale arrives, Tomás will make the coffee."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "He was already gone when you got there. Pick and type the whole sentence: *Cuando llegué, ya se ___.* (*fue* or *había ido*) When I arrived, he had already left.", "answer": "Cuando llegué, ya se había ido.", "accept": [], "why": "He left before you arrived, so the earlier event takes *había* plus the ending." },
+    { "prompt": "He left just as you arrived. Pick and type the whole sentence: *Cuando llegué, se ___.* (*fue* or *había ido*) When I arrived, he left.", "answer": "Cuando llegué, se fue.", "accept": [], "why": "One thing after the other, in order, so both verbs use the plain past." },
+    { "prompt": "Say: When Tomás opened the café, Vale had already gone out.", "answer": "Cuando Tomás abrió el café, Vale ya había salido.", "accept": ["Cuando Tomás abrió el café, ya había salido Vale."], "why": "Vale went out first, so *había salido*; opening the café is the plain past." },
+    { "prompt": "Say: When I called, Hernando went out.", "answer": "Cuando llamé, Hernando salió.", "accept": [], "why": "Calling and going out happened in order, so both use the plain past." },
+    { "prompt": "Say: When I called, Hernando still hadn't gone out.", "answer": "Cuando llamé, Hernando todavía no había salido.", "accept": ["Cuando llamé, Hernando no había salido todavía."], "why": "Going out had not happened before the call, so *todavía no había salido*." },
+    { "prompt": "Say: Hernando told me what had happened.", "answer": "Hernando me contó lo que había pasado.", "accept": ["Hernando me contó lo que había ocurrido."], "why": "The telling is the plain past; what had happened came before it." },
+    { "prompt": "Move the second event earlier, with *ya*: *Cuando Vale llegó, Tomás preparó el tinto.*", "answer": "Cuando Vale llegó, Tomás ya había preparado el tinto.", "accept": ["Cuando Vale llegó, ya había preparado Tomás el tinto."], "why": "Now the coffee was ready before Vale arrived, so *ya había preparado*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Cuando llegué, Vale ya se fue.", "right": "Cuando llegué, Vale ya se había ido.", "why": "Almost. *Ya* hints it was done earlier, and that earlier event takes *había* plus the ending." },
+    { "wrong": "Ayer había ido al mercado.", "right": "Ayer fui al mercado.", "why": "*Había* needs another past moment to look back from; on its own it's just the plain past." },
+    { "wrong": "Primero había comido y después había salido.", "right": "Primero comí y después salí.", "why": "Two steps told in order are both plain past; *había* is for the step already done before." }
+  ],
+  "personal": "Think of a time you arrived somewhere and someone had already left. Write one sentence starting with *Cuando llegué…* and finish it with what had already happened."
+}

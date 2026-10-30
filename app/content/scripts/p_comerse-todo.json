@@ -1,0 +1,44 @@
+{
+  "node": "p:comerse-todo",
+  "hook": {
+    "line": "Vale made a whole cake and somebody ate the lot. Spanish has a small extra word for exactly that: not just eating, but finishing it off.",
+    "es": "Me comí toda la torta.",
+    "en": "I ate the whole cake."
+  },
+  "examples": [
+    { "es": "Me comí toda la torta.", "en": "I ate the whole cake." },
+    { "es": "Vale se comió toda la torta.", "en": "Vale ate the whole cake." },
+    { "es": "Nos comimos todo el pan.", "en": "We ate all the bread." },
+    { "es": "Hernando se tomó todo el tinto.", "en": "Hernando drank all the coffee." },
+    { "es": "Me leí todas las cartas.", "en": "I read all the letters." },
+    { "es": "Comí arepas.", "en": "I ate arepas." }
+  ],
+  "rule": "Add *me*, *te*, *se* or *nos* to *comer*, *tomar* or *leer*, and it means you finished the lot. English does it with *whole*, *all*, or *up*.\n\n*Comí torta*: I ate cake.\n*Me comí toda la torta*: I ate the whole cake.\n\nThe extra word needs something with a clear limit: *toda la torta*, *todo el pan*, *todas las cartas*. A bare *me comí torta* sounds wrong.\n\nThe *me* matches who: *me comí*, *te comiste*, *se comió*, *nos comimos*.",
+  "smallPrint": "Teachers call this the aspectual dative, or reflexive of completion: the extra pronoun adds the idea that the action was finished, with a clear limit.",
+  "readAndPick": [
+    { "es": "Me comí toda la torta.", "options": ["I ate some cake.", "I ate the whole cake.", "I'm eating the whole cake."], "answer": 1 },
+    { "es": "Comí arepas.", "options": ["I ate arepas.", "I ate up all the arepas.", "I'll eat arepas."], "answer": 0 },
+    { "es": "Vale se comió toda la torta.", "options": ["Vale ate the whole cake.", "Vale baked the whole cake.", "Vale ate some of the cake."], "answer": 0 },
+    { "es": "Nos comimos todo el pan.", "options": ["I ate all the bread.", "They ate all the bread.", "We ate all the bread."], "answer": 2 },
+    { "es": "Hernando se tomó todo el tinto.", "options": ["Hernando drank all the coffee.", "Hernando drank some coffee.", "Hernando makes the coffee."], "answer": 0 },
+    { "es": "Tomé tinto.", "options": ["I drank up all the coffee.", "I drank coffee.", "I'll drink coffee."], "answer": 1 },
+    { "es": "Me leí todas las cartas.", "options": ["I read a few letters.", "I read all the letters.", "I'll read all the letters."], "answer": 1 },
+    { "es": "Leí cartas.", "options": ["I read letters.", "I read all the letters.", "I wrote letters."], "answer": 0 },
+    { "es": "¿Te comiste toda la torta?", "options": ["Did you eat all the cake?", "Did he eat all the cake?", "Did you bake the whole cake?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *___ toda la torta.* (*Comí* or *Me comí*) I ate the whole cake.", "answer": "Me comí toda la torta.", "accept": [], "why": "You finished the whole thing, so add *me*." },
+    { "prompt": "Pick and type the whole sentence: *Comí ___.* (*arepas* or *todas las arepas*) I ate arepas.", "answer": "Comí arepas.", "accept": [], "why": "Without the little word *me*, there's no need for a clear limit." },
+    { "prompt": "Say: Vale ate the whole cake.", "answer": "Vale se comió toda la torta.", "accept": [], "why": "Vale is one person, so *se comió*." },
+    { "prompt": "Say: We ate all the bread.", "answer": "Nos comimos todo el pan.", "accept": [], "why": "*Nos* matches *we*, and the object has a clear limit: *todo el pan*." },
+    { "prompt": "Say: Hernando drank all the coffee.", "answer": "Hernando se tomó todo el tinto.", "accept": [], "why": "*Tomar* works too: *se tomó* means he finished it." },
+    { "prompt": "Ask a friend: Did you eat all the cake?", "answer": "¿Te comiste toda la torta?", "accept": [], "why": "A friend is *tú*, so *te comiste*." },
+    { "prompt": "Make it about reading all of it: *Leí cartas.*", "answer": "Me leí todas las cartas.", "accept": ["Me las leí todas."], "why": "Add *me* and a clear limit: *todas las cartas*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me comí torta.", "right": "Me comí toda la torta.", "why": "Almost. The extra *me* needs something with a clear limit, like *toda la torta*." },
+    { "wrong": "Se comió todo el tinto.", "right": "Se tomó todo el tinto.", "why": "*Comer* is for food; coffee and other drinks use *tomar*." },
+    { "wrong": "Comí me toda la torta.", "right": "Me comí toda la torta.", "why": "The little word *me* goes in front of the verb." }
+  ],
+  "personal": "Think of something you finished off this week. Write one sentence with *Me comí…* or *Me tomé…* and a clear limit, like *todo el…* or *toda la…*."
+}

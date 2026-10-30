@@ -1,0 +1,44 @@
+{
+  "node": "p:al-final-en-resumen",
+  "hook": {
+    "line": "Every story needs an ending, and Spanish has different ways to close it: one for how things turned out, one for the point of the whole thing, and one for a shrug.",
+    "es": "Al final todo salió bien.",
+    "en": "In the end it all worked out."
+  },
+  "examples": [
+    { "es": "Al final todo salió bien.", "en": "In the end it all worked out." },
+    { "es": "En resumen, fue un día muy largo.", "en": "In short, it was a very long day." },
+    { "es": "Total, que no fuimos.", "en": "So anyway, we didn't go." },
+    { "es": "Al final Hernando vendió el taxi.", "en": "In the end Hernando sold the taxi." },
+    { "es": "En resumen, el café necesita clientes.", "en": "In short, the café needs customers." },
+    { "es": "Al final de la calle está el café.", "en": "The café is at the end of the street." }
+  ],
+  "rule": "Three ways to wrap up a story:\n\n*Al final*: how it turned out, usually with a plain past verb. *Al final todo salió bien.*\n*En resumen*: the point, the short version. *En resumen, fue un día muy largo.*\n*Total, que*: so anyway, a casual shrug. *Total, que no fuimos.*\n\nWatch the *de*. *Al final de la calle* means at the end of the street. Without *de*, *al final* means in the end.",
+  "smallPrint": "Teachers call these discourse markers: small words that signal where a story is going, like *in the end* or *to sum up*.",
+  "readAndPick": [
+    { "es": "Al final todo salió bien.", "options": ["At the end of everything, it was fine.", "In the end it all worked out.", "In short, everything is fine."], "answer": 1 },
+    { "es": "En resumen, fue un día muy largo.", "options": ["In short, it was a very long day.", "In the end it was a long day.", "At the end of the day, it was long."], "answer": 0 },
+    { "es": "Al final de la calle está el café.", "options": ["In the end the café is on the street.", "The café is at the end of the street.", "In short, the café is on the street."], "answer": 1 },
+    { "es": "Total, que no fuimos.", "options": ["In total, we didn't go.", "In short, we went.", "So anyway, we didn't go."], "answer": 2 },
+    { "es": "Al final Hernando vendió el taxi.", "options": ["At the end of the taxi, Hernando sold it.", "In the end Hernando sold the taxi.", "In short, Hernando sells the taxi."], "answer": 1 },
+    { "es": "En resumen, el café necesita clientes.", "options": ["In short, the café needs customers.", "In the end the café needs customers.", "So anyway, the café has customers."], "answer": 0 },
+    { "es": "Al final del día estaba cansado.", "options": ["At the end of the week I was tired.", "In short, I was tired.", "At the end of the day I was tired."], "answer": 2 },
+    { "es": "Al final no pasó nada.", "options": ["In the end nothing happened.", "In short, nothing happens.", "Nothing happened at the end."], "answer": 0 },
+    { "es": "Total, que tuvimos que volver a casa.", "options": ["In the end we had to go home.", "So anyway, we had to go home.", "In total, we have to go home."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *___ todo salió bien.* (*Al final* or *En resumen*) In the end it all worked out.", "answer": "Al final todo salió bien.", "accept": ["Al final, todo salió bien."], "why": "You're saying how it turned out, so *al final*." },
+    { "prompt": "Pick and type the whole sentence: *___, fue un día muy largo.* (*Total, que* or *En resumen*) In short, it was a very long day.", "answer": "En resumen, fue un día muy largo.", "accept": [], "why": "You're giving the short version, so *en resumen*." },
+    { "prompt": "Say: So anyway, we didn't go.", "answer": "Total, que no fuimos.", "accept": [], "why": "*Total, que* is the casual shrug at the end of a story." },
+    { "prompt": "Say: In the end Hernando sold the taxi.", "answer": "Al final Hernando vendió el taxi.", "accept": ["Al final, Hernando vendió el taxi.", "Hernando vendió el taxi al final."], "why": "How it turned out is *al final* plus the plain past." },
+    { "prompt": "Say: The café is at the end of the street.", "answer": "El café está al final de la calle.", "accept": ["Al final de la calle está el café."], "why": "With *de* and a place, *al final* means the end of that place." },
+    { "prompt": "Say: In short, the café needs customers.", "answer": "En resumen, el café necesita clientes.", "accept": ["En resumen el café necesita clientes."], "why": "The point of the story is *en resumen*." },
+    { "prompt": "Change the ending to how it turned out: *En resumen, no pasó nada.*", "answer": "Al final no pasó nada.", "accept": ["Al final, no pasó nada."], "why": "*Al final* tells what happened in the end, not the summary." }
+  ],
+  "pitfalls": [
+    { "wrong": "En el final todo salió bien.", "right": "Al final todo salió bien.", "why": "Almost. English says *in the end*, but Spanish uses *al final*." },
+    { "wrong": "Al final de la calle, todo salió bien.", "right": "Al final todo salió bien.", "why": "*Al final de* plus a place means the end of that place; for the outcome, leave *de* out." },
+    { "wrong": "Total, fue un día muy largo.", "right": "En resumen, fue un día muy largo.", "why": "For the short version, use *en resumen*; *total, que* is a casual shrug that leads into what happened." }
+  ],
+  "personal": "Think of the last story you told a friend. Close it two ways: one sentence with *Al final…* for how it turned out, and one with *En resumen…* for the point."
+}

@@ -1,0 +1,44 @@
+{
+  "node": "p:llevar-tiempo-gerundio",
+  "hook": {
+    "line": "Everyone in Bogotá will ask how long you've been here, and how long you've been learning Spanish. English needs a whole perfect tense for that; Spanish just counts.",
+    "es": "Llevo un año estudiando español.",
+    "en": "I've been studying Spanish for a year."
+  },
+  "examples": [
+    { "es": "Llevo un año trabajando en el café.", "en": "I've been working at the café for a year." },
+    { "es": "¿Cuánto tiempo llevas viviendo en Bogotá?", "en": "How long have you been living in Bogotá?" },
+    { "es": "Llevamos dos horas esperando.", "en": "We've been waiting for two hours." },
+    { "es": "Hernando lleva cuarenta años tomando tinto aquí.", "en": "Hernando has been drinking coffee here for forty years." },
+    { "es": "Mariana lleva una semana escribiendo sobre el barrio.", "en": "Mariana has been writing about the neighborhood for a week." },
+    { "es": "Llevo una hora aquí.", "en": "I've been here for an hour." }
+  ],
+  "rule": "To say how long something has been going on, use *llevar*, the time, and the *-ando* or *-iendo* form:\n\n*Llevo un año trabajando aquí.*\n*¿Cuánto tiempo llevas viviendo en Bogotá?*\n\n*Llevar* matches who: *llevo*, *llevas*, *lleva*, *llevamos*, *llevan*. It's still going on now.\n\nWith a place and no action, the gerund can go: *Llevo una hora aquí.*\n\nCompare *Trabajé un año aquí*: that's over.",
+  "smallPrint": "Teachers call this a durative construction: *llevar* plus a time expression plus a gerund, for an action that started in the past and continues now.",
+  "readAndPick": [
+    { "es": "Llevo un año trabajando en el café.", "options": ["I worked at the café for a year.", "I've been working at the café for a year.", "I'll work at the café for a year."], "answer": 1 },
+    { "es": "Trabajé un año en el café.", "options": ["I worked at the café for a year.", "I've been working at the café for a year.", "I'm going to work at the café for a year."], "answer": 0 },
+    { "es": "¿Cuánto tiempo llevas viviendo en Bogotá?", "options": ["How long did you live in Bogotá?", "How long have you been living in Bogotá?", "How long will you live in Bogotá?"], "answer": 1 },
+    { "es": "Llevamos dos horas esperando.", "options": ["They've been waiting for two hours.", "We've been waiting for two hours.", "We waited for two hours."], "answer": 1 },
+    { "es": "Hernando lleva cuarenta años tomando tinto aquí.", "options": ["Hernando drank coffee here for forty years.", "Hernando has been drinking coffee here for forty years.", "I have been drinking coffee here for forty years."], "answer": 1 },
+    { "es": "Llevo una hora aquí.", "options": ["I've been here for an hour.", "I was here for an hour.", "I'll be here in an hour."], "answer": 0 },
+    { "es": "Llevaba dos horas esperando cuando llegaste.", "options": ["I've been waiting for two hours.", "I had been waiting for two hours when you arrived.", "I waited two hours when you arrived."], "answer": 1 },
+    { "es": "Mariana lleva una semana escribiendo sobre el barrio.", "options": ["Mariana wrote about the neighborhood for a week.", "Mariana has been writing about the neighborhood for a week.", "Mariana will write about the neighborhood for a week."], "answer": 1 },
+    { "es": "¿Cuánto llevan ustedes esperando?", "options": ["How long have you all been waiting?", "How long did you all wait?", "How long has he been waiting?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *___ un año trabajando en el café.* (*Llevo* or *Llevas*) I've been working at the café for a year.", "answer": "Llevo un año trabajando en el café.", "accept": [], "why": "You're talking about yourself, so *llevo*." },
+    { "prompt": "Pick and type the whole sentence: *Hernando ___ cuarenta años tomando tinto aquí.* (*lleva* or *llevan*) Hernando has been drinking coffee here for forty years.", "answer": "Hernando lleva cuarenta años tomando tinto aquí.", "accept": [], "why": "Hernando is one person, so *lleva*." },
+    { "prompt": "Ask a friend: How long have you been living in Bogotá?", "answer": "¿Cuánto tiempo llevas viviendo en Bogotá?", "accept": ["¿Cuánto llevas viviendo en Bogotá?"], "why": "A friend is *tú*, so *llevas*, and the action ends in *-iendo*." },
+    { "prompt": "Say: We've been waiting for two hours.", "answer": "Llevamos dos horas esperando.", "accept": [], "why": "*Llevamos* is *we*, and *esperar* gives *esperando*." },
+    { "prompt": "Say: Mariana has been writing about the neighborhood for a week.", "answer": "Mariana lleva una semana escribiendo sobre el barrio.", "accept": [], "why": "One person, so *lleva*; *escribir* gives *escribiendo*." },
+    { "prompt": "Say: I've been here for an hour.", "answer": "Llevo una hora aquí.", "accept": ["Llevo una hora acá."], "why": "With a place and no action, you can skip the gerund." },
+    { "prompt": "Change it to something finished: *Llevo un año trabajando aquí.* (I worked here for a year.)", "answer": "Trabajé un año aquí.", "accept": ["Trabajé aquí un año."], "why": "When it's over, Spanish uses the plain past, not *llevar*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Estoy trabajando aquí por un año.", "right": "Llevo un año trabajando aquí.", "why": "Almost. To say how long it's been going on, Spanish uses *llevar* plus the time." },
+    { "wrong": "Llevo trabajando un año aquí.", "right": "Llevo un año trabajando aquí.", "why": "The time goes right after *llevar*, and the gerund comes after it." },
+    { "wrong": "Llevo trabajar aquí un año.", "right": "Llevo un año trabajando aquí.", "why": "After the time, the action takes the *-ando* or *-iendo* form, not the infinitive." }
+  ],
+  "personal": "Say how long you've been doing three things: *Llevo… años estudiando español*, *Llevo… viviendo aquí*, and one more of your own."
+}
