@@ -23557,5 +23557,394 @@
     "unit": "u09",
     "theme": "more before and after",
     "source": "gen"
+  },
+  {
+    "id": "u09-1005",
+    "es": "¿Cómo se llama el hijo de Hernando?",
+    "en": "What is Hernando's son called?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "l:cómo",
+      "l:hijo",
+      "l:llamarse"
+    ],
+    "targets": [
+      "g:reflexive-routine"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1006",
+    "es": "¿Cómo se llama la mesera de hoy?",
+    "en": "What is today's waitress called?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "l:cómo",
+      "l:hoy",
+      "l:llamarse",
+      "l:mesero"
+    ],
+    "targets": [
+      "g:reflexive-routine"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1007",
+    "es": "¿Cómo se llama tu amigo de Cali?",
+    "en": "What is your friend from Cali called? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:reflexive-routine",
+      "l:amigo",
+      "l:cómo",
+      "l:llamarse",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reflexive-routine"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1008",
+    "es": "¿Cómo se llaman sus amigos?",
+    "en": "What are your friends called? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:questions",
+      "g:reflexive-routine",
+      "l:amigo",
+      "l:cómo",
+      "l:llamarse",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reflexive-routine"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1009",
+    "es": "¿Cómo se llama esa tienda de la calle?",
+    "en": "What is that store on the street called?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "l:calle",
+      "l:cómo",
+      "l:llamarse",
+      "l:tienda"
+    ],
+    "targets": [
+      "g:reflexive-routine",
+      "l:calle"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1010",
+    "es": "¿Se llama Tomás el hombre del café?",
+    "en": "Is the man from the café called Tomás?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "l:café",
+      "l:hombre",
+      "l:llamarse"
+    ],
+    "targets": [
+      "g:reflexive-routine"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1011",
+    "es": "Ella se llama Mariana y trabaja aquí.",
+    "en": "Her name is Mariana and she works here.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:aquí",
+      "l:llamarse",
+      "l:trabajar",
+      "p:aqui-ahi-alla"
+    ],
+    "targets": [
+      "g:reflexive-routine"
+    ],
+    "kind": "statement",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1012",
+    "es": "Ellos se llaman Ana y Luis.",
+    "en": "Their names are Ana and Luis.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:reflexive-routine",
+      "l:llamarse"
+    ],
+    "targets": [
+      "g:reflexive-routine"
+    ],
+    "kind": "statement",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1013",
+    "es": "Mi hijo se llama Simón, como mi hermano.",
+    "en": "My son is called Simón, like my brother.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:reflexive-routine",
+      "l:hermano",
+      "l:hijo",
+      "l:llamarse",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reflexive-routine"
+    ],
+    "kind": "dialogue",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1014",
+    "es": "Mi mamá se llama Rosa.",
+    "en": "My mother's name is Rosa.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:reflexive-routine",
+      "l:llamarse",
+      "l:mamá",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reflexive-routine"
+    ],
+    "kind": "statement",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1015",
+    "es": "Nos llamamos igual, Vale y yo.",
+    "en": "Vale and I have the same name.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:igual",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:igual",
+      "l:llamarse"
+    ],
+    "targets": [
+      "g:reflexive-routine"
+    ],
+    "kind": "statement",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1016",
+    "es": "La calle se llama Bolívar.",
+    "en": "The street is called Bolívar.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:se-llama",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "l:calle",
+      "l:llamarse"
+    ],
+    "targets": [
+      "g:reflexive-routine",
+      "l:calle"
+    ],
+    "kind": "dialogue",
+    "unit": "u09",
+    "theme": "names and calling",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1017",
+    "es": "¿Abres el café desde las seis hasta las diez?",
+    "en": "Do you open the café from six until ten? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:abrir",
+      "l:café",
+      "p:desde-hasta"
+    ],
+    "targets": [
+      "p:desde-hasta"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "desde hasta",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1018",
+    "es": "¿Estudias desde las nueve hasta las doce?",
+    "en": "Do you study from nine until twelve? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:estudiar",
+      "p:desde-hasta"
+    ],
+    "targets": [
+      "p:desde-hasta"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "desde hasta",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1019",
+    "es": "¿Estás aquí desde las ocho hasta las cinco?",
+    "en": "Are you here from eight until five? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:aquí",
+      "l:estar",
+      "p:aqui-ahi-alla",
+      "p:desde-hasta"
+    ],
+    "targets": [
+      "p:desde-hasta"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "desde hasta",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1020",
+    "es": "¿Cierra la tienda desde las seis hasta las siete?",
+    "en": "Is the store closed from six until seven?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:cerrar",
+      "l:tienda",
+      "p:desde-hasta"
+    ],
+    "targets": [
+      "p:desde-hasta"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "desde hasta",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1021",
+    "es": "¿Trabaja usted desde las siete hasta las tres?",
+    "en": "Do you work from seven until three? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:trabajar",
+      "p:desde-hasta"
+    ],
+    "targets": [
+      "p:desde-hasta"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "desde hasta",
+    "source": "gen"
+  },
+  {
+    "id": "u09-1022",
+    "es": "¿Vale trabaja desde las ocho hasta las cinco?",
+    "en": "Does Vale work from eight until five?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:trabajar",
+      "p:desde-hasta"
+    ],
+    "targets": [
+      "p:desde-hasta"
+    ],
+    "kind": "question",
+    "unit": "u09",
+    "theme": "desde hasta",
+    "source": "gen"
   }
 ]
