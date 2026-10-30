@@ -1,0 +1,196 @@
+{
+  "node": "g:reported-commands-past",
+  "hook": {
+    "line": "Tomás spends the whole morning being told what to do, and then has to pass it all on. Every time you repeat what someone told you to do, you need this.",
+    "es": "Vale me pidió que llegara temprano.",
+    "en": "Vale asked me to arrive early."
+  },
+  "examples": [
+    {
+      "es": "Me dijo que fuera a la reunión.",
+      "en": "He told me to go to the meeting."
+    },
+    {
+      "es": "Les pidió que esperaran afuera.",
+      "en": "She asked them to wait outside."
+    },
+    {
+      "es": "Vale me pidió que llegara temprano.",
+      "en": "Vale asked me to arrive early."
+    },
+    {
+      "es": "Mariana me pidió que la llamara.",
+      "en": "Mariana asked me to call her."
+    },
+    {
+      "es": "Te dije que no abrieras la puerta.",
+      "en": "I told you not to open the door. (to a friend)"
+    },
+    {
+      "es": "Nos pidieron que firmáramos el papel.",
+      "en": "They asked us to sign the paper."
+    },
+    {
+      "es": "Le dije que viniera mañana.",
+      "en": "I told her to come tomorrow."
+    }
+  ],
+  "rule": "English reports an order with an infinitive: \"told me *to go*\". Spanish uses *que* and a full verb, in the past form you already know: *me dijo que fuera*.\n\nThe pieces: who spoke + *dijo / pidió* (or *dije / pedí*) with *me, te, le, nos, les* + *que* + the *-ra* verb for the person who must act: *que llegara* (I), *que esperaran* (they), *que firmáramos* (we).\n\nCompare a plain fact: *Me dijo que venía*, he said he was coming. *Me dijo que viniera*, he told me to come.",
+  "smallPrint": "Teachers call this reported (indirect) commands: the order moves into the past, so the past subjunctive follows *dijo* or *pidió*.",
+  "readAndPick": [
+    {
+      "es": "Me dijo que fuera a la reunión.",
+      "options": [
+        "He told me to go to the meeting.",
+        "He said he was going to the meeting.",
+        "He said I went to the meeting."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale me dijo que venía a las ocho.",
+      "options": [
+        "Vale told me to come at eight.",
+        "Vale said she was coming at eight.",
+        "Vale asked me to come at eight."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Les pidió que esperaran afuera.",
+      "options": [
+        "She asked me to wait outside.",
+        "She asked us to wait outside.",
+        "She asked them to wait outside."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Te dije que no abrieras la puerta.",
+      "options": [
+        "I told you that you did not open the door.",
+        "I told you not to open the door.",
+        "I told you to open the door."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos pidieron que firmáramos el papel.",
+      "options": [
+        "They asked us to sign the paper.",
+        "We asked them to sign the paper.",
+        "They asked me to sign the paper."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le pedí que me ayudara.",
+      "options": [
+        "He asked me to help him.",
+        "I asked them to help me.",
+        "I asked him to help me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mi mamá me dijo que comiera más.",
+      "options": [
+        "My mom said she ate more.",
+        "My mom told me to eat more.",
+        "My mom said I ate more."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana me pidió que la llamara.",
+      "options": [
+        "Mariana asked me to call her.",
+        "Mariana asked her to call me.",
+        "Mariana called me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me dijo que tuviera cuidado.",
+      "options": [
+        "He said he was careful.",
+        "He said I would be careful.",
+        "He told me to be careful."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *fuera* or *iba*, for \"he told me to go\": Me dijo que ___ a la reunión. Type the whole sentence.",
+      "answer": "Me dijo que fuera a la reunión.",
+      "accept": [],
+      "why": "An order needs the *-ra* form; *iba* only reports what he was doing."
+    },
+    {
+      "prompt": "Choose *esperaran* or *esperan*, for \"she asked them to wait\": Les pidió que ___ afuera. Type the whole sentence.",
+      "answer": "Les pidió que esperaran afuera.",
+      "accept": [],
+      "why": "After a past *pidió*, the person who acts gets the *-ra* form."
+    },
+    {
+      "prompt": "Type in Spanish: Vale asked me to arrive early.",
+      "answer": "Vale me pidió que llegara temprano.",
+      "accept": [],
+      "why": "*Me* is the one asked, and *llegara* is what I must do."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I told you not to open the door.",
+      "answer": "Te dije que no abrieras la puerta.",
+      "accept": [],
+      "why": "*No* goes before the *-ra* verb, and *abrieras* matches you."
+    },
+    {
+      "prompt": "Type in Spanish: They asked us to sign the paper.",
+      "answer": "Nos pidieron que firmáramos el papel.",
+      "accept": [],
+      "why": "We are the ones who sign, so the verb is *firmáramos*."
+    },
+    {
+      "prompt": "Type in Spanish: My mom told me to eat more.",
+      "answer": "Mi mamá me dijo que comiera más.",
+      "accept": [],
+      "why": "*Comiera* is what I must do, so the *-ra* form."
+    },
+    {
+      "prompt": "Say it about us: *Me pidió que esperara.*",
+      "answer": "Nos pidió que esperáramos.",
+      "accept": [],
+      "why": "*Nos* and *esperáramos* both say that we are the ones asked."
+    },
+    {
+      "prompt": "Report it: Rosa's request to Tomás was *Cuida el café*. Start with *Rosa le pidió a Tomás*.",
+      "answer": "Rosa le pidió a Tomás que cuidara el café.",
+      "accept": [],
+      "why": "The command becomes *que* plus the *-ra* verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me dijo que iba a la reunión.",
+      "right": "Me dijo que fuera a la reunión.",
+      "why": "*Iba* says what he was doing; *fuera* says what he wanted me to do."
+    },
+    {
+      "wrong": "Le pedí que me ayudo.",
+      "right": "Le pedí que me ayudara.",
+      "why": "The request is in the past, so the verb after *que* takes the *-ra* form."
+    },
+    {
+      "wrong": "Nos pidieron que firmaran el papel.",
+      "right": "Nos pidieron que firmáramos el papel.",
+      "why": "The verb matches who has to act, and here that is us."
+    },
+    {
+      "wrong": "Me dijo ir a la reunión.",
+      "right": "Me dijo que fuera a la reunión.",
+      "why": "English uses an infinitive here, but Spanish needs *que* and a full verb."
+    }
+  ],
+  "personal": "Think of something someone asked you to do this week and say it: *Mi mamá me pidió que…*"
+}

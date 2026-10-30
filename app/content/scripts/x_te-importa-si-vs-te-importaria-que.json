@@ -1,0 +1,178 @@
+{
+  "node": "x:te-importa-si-vs-te-importaria-que",
+  "hook": {
+    "line": "The café is full and Tomás needs a seat. Ask a friend and you can be quick. Ask a stranger and you want to sound careful.",
+    "es": "¿Le importaría que me sentara aquí?",
+    "en": "Would you mind if I sat here? (formal)"
+  },
+  "examples": [
+    {
+      "es": "¿Te importa si abro la ventana?",
+      "en": "Do you mind if I open the window?"
+    },
+    {
+      "es": "¿Te importaría que abriera la ventana?",
+      "en": "Would you mind if I opened the window?"
+    },
+    {
+      "es": "¿Le importa si me siento aquí?",
+      "en": "Do you mind if I sit here? (formal)"
+    },
+    {
+      "es": "¿Le importaría que me sentara aquí?",
+      "en": "Would you mind if I sat here? (formal)"
+    },
+    {
+      "es": "¿Te importa si te llamo más tarde?",
+      "en": "Do you mind if I call you later?"
+    },
+    {
+      "es": "¿Te importaría que te llamara más tarde?",
+      "en": "Would you mind if I called you later?"
+    }
+  ],
+  "rule": "Both ask permission. The difference is how gently.\n\n*¿Te importa si abro…?* uses *si* and an ordinary present verb. It is easy and quick: friends, small favours.\n\n*¿Te importaría que abriera…?* uses *importaría*, *que* and the *-ra* verb. It is softer: strangers, bigger asks, or when you are not sure of the answer.\n\nUse *le* for *usted* and *les* for *ustedes*.\n\nTo say go ahead, answer *No, para nada* or *Claro que no*: \"no\" means you do not mind.",
+  "smallPrint": "Teachers call *importaría* the conditional, the same softening that \"would\" gives in English. After it, *que* takes the past subjunctive.",
+  "readAndPick": [
+    {
+      "es": "¿Te importa si abro la ventana?",
+      "options": [
+        "Do you mind if I open the window?",
+        "Would you mind if I opened the window?",
+        "Do you mind opening the window?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te importaría que abriera la ventana?",
+      "options": [
+        "Do you mind if I open the window?",
+        "Would you mind if I opened the window?",
+        "Would you mind opening the window?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Le importa si me siento aquí?",
+      "options": [
+        "Would you mind if I sat here? (formal)",
+        "Do you mind if I sit here? (to a friend)",
+        "Do you mind if I sit here? (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Le importaría que cerrara la puerta?",
+      "options": [
+        "Do you mind if I close the door? (formal)",
+        "Would you mind if I closed the door? (formal)",
+        "Would you mind if I closed the door? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Les importaría que llegara un poco tarde?",
+      "options": [
+        "Would you all mind if I arrived a little late?",
+        "Do you all mind if I arrive a little late?",
+        "Would you mind if I arrived a little late? (to one friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te importa si te llamo más tarde?",
+      "options": [
+        "Would you mind if I called you later?",
+        "Do you mind if I call you later?",
+        "Do you mind calling me later?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te importaría que usara tu celular un momento?",
+      "options": [
+        "Do you mind if I use your phone for a moment?",
+        "Would you mind using your phone for a moment?",
+        "Would you mind if I used your phone for a moment?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Les importa si llego un poco tarde?",
+      "options": [
+        "Do you all mind if I arrive a little late?",
+        "Would you all mind if I arrived a little late?",
+        "Do you mind if I arrive a little late? (to one friend)"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *abro* or *abriera*, for the quick, friendly version: ¿Te importa si ___ la ventana? Type the whole sentence.",
+      "answer": "¿Te importa si abro la ventana?",
+      "accept": [],
+      "why": "*Importa* with *si* takes an ordinary present verb."
+    },
+    {
+      "prompt": "Choose *abro* or *abriera*, for the softer version: ¿Te importaría que ___ la ventana? Type the whole sentence.",
+      "answer": "¿Te importaría que abriera la ventana?",
+      "accept": [],
+      "why": "*Importaría* with *que* takes the *-ra* form."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Do you mind if I sit here?",
+      "answer": "¿Te importa si me siento aquí?",
+      "accept": [],
+      "why": "A friend and a quick ask: *importa si* plus the present."
+    },
+    {
+      "prompt": "Type in Spanish, to a stranger: Would you mind if I closed the door?",
+      "answer": "¿Le importaría que cerrara la puerta?",
+      "accept": [],
+      "why": "A stranger and a careful ask: *le importaría que* plus the *-ra* form."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Do you mind if I call you later?",
+      "answer": "¿Te importa si te llamo más tarde?",
+      "accept": [],
+      "why": "*Si* is followed by the plain present, *llamo*."
+    },
+    {
+      "prompt": "Make it softer: *¿Te importa si traigo a Vale?*",
+      "answer": "¿Te importaría que trajera a Vale?",
+      "accept": [],
+      "why": "Swap *importa si* for *importaría que* and use the *-ra* form."
+    },
+    {
+      "prompt": "Make it formal: *¿Te importa si uso tu celular?*",
+      "answer": "¿Le importa si uso su celular?",
+      "accept": [],
+      "why": "*Usted* takes *le* and *su*."
+    },
+    {
+      "prompt": "Make it quick and friendly: *¿Te importaría que me quedara un rato?*",
+      "answer": "¿Te importa si me quedo un rato?",
+      "accept": [],
+      "why": "The everyday version is *importa si* plus the present."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Te importa si abriera la ventana?",
+      "right": "¿Te importa si abro la ventana?",
+      "why": "After *importa si*, the verb is an ordinary present, *abro*."
+    },
+    {
+      "wrong": "¿Te importaría que abro la ventana?",
+      "right": "¿Te importaría que abriera la ventana?",
+      "why": "After *importaría que*, the verb takes the *-ra* form."
+    },
+    {
+      "wrong": "Sí, claro.",
+      "right": "No, para nada.",
+      "why": "You are answering \"do you mind?\", so \"no\" is how you say go ahead."
+    }
+  ],
+  "personal": "Write two questions asking permission for something small: one to a friend with *¿Te importa si…?* and one to a stranger with *¿Le importaría que…?*"
+}

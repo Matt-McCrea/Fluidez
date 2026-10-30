@@ -1,0 +1,189 @@
+{
+  "node": "p:estrenar",
+  "hook": {
+    "line": "In Colombia many people wear something new for the first time at Christmas or on New Year's Eve, for luck. English has no single verb for that, but Spanish does.",
+    "es": "¿Qué vas a estrenar en Navidad?",
+    "en": "What are you going to wear for the first time at Christmas?"
+  },
+  "examples": [
+    {
+      "es": "Estrenó vestido en la boda.",
+      "en": "She wore a new dress for the first time at the wedding."
+    },
+    {
+      "es": "Estrené el celular ayer.",
+      "en": "I used my new phone for the first time yesterday."
+    },
+    {
+      "es": "Vale estrenó la cocina nueva.",
+      "en": "Vale used her new kitchen for the first time."
+    },
+    {
+      "es": "¿Vas a estrenar ropa el treinta y uno?",
+      "en": "Are you going to wear something new on the thirty-first? (to a friend)"
+    },
+    {
+      "es": "Estrenamos el carro nuevo el domingo.",
+      "en": "We took the new car out for the first time on Sunday."
+    },
+    {
+      "es": "La película se estrena el viernes.",
+      "en": "The film premieres on Friday."
+    }
+  ],
+  "rule": "*Estrenar* means to wear or use something for the first time: clothes, a phone, a car, a kitchen. Put the thing straight after the verb, with no preposition: *estrené el celular*, *estrenó vestido*.\n\nIt already means \"for the first time\", so you do not add that. For a film or a play opening, use *se estrena*: *la película se estrena el viernes*.\n\nAt Christmas, *¿qué vas a estrenar?* is a normal question.",
+  "smallPrint": "Teachers call this a verb with no one-word English equivalent. *Estrenarse* with *se* is the form for premieres and for starting a new role.",
+  "readAndPick": [
+    {
+      "es": "Estrené el celular ayer.",
+      "options": [
+        "I used my new phone for the first time yesterday.",
+        "She used her new phone for the first time yesterday.",
+        "You used your new phone for the first time yesterday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estrenó vestido en la boda.",
+      "options": [
+        "I wore a new dress for the first time at the wedding.",
+        "She wore a new dress for the first time at the wedding.",
+        "We wore a new dress for the first time at the wedding."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estrenamos el carro nuevo el domingo.",
+      "options": [
+        "They took the new car out for the first time on Sunday.",
+        "I took the new car out for the first time on Sunday.",
+        "We took the new car out for the first time on Sunday."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Estrenaste la camisa?",
+      "options": [
+        "Did she wear the shirt for the first time?",
+        "Did you wear the shirt for the first time?",
+        "Did you buy the shirt?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La película se estrena el viernes.",
+      "options": [
+        "The film premieres on Friday.",
+        "The film ends on Friday.",
+        "The film premiered on Friday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La obra se estrena mañana en el teatro.",
+      "options": [
+        "The play closed yesterday at the theatre.",
+        "The play closes tomorrow at the theatre.",
+        "The play opens tomorrow at the theatre."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Qué vas a estrenar en Navidad?",
+      "options": [
+        "What did you wear for the first time at Christmas?",
+        "What are you going to wear for the first time at Christmas?",
+        "What are you going to buy at Christmas?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estrené nada este año.",
+      "options": [
+        "I did not wear anything new this year.",
+        "I did not buy anything this year.",
+        "I did not wear anything this year."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En diciembre todo el mundo estrena.",
+      "options": [
+        "In December everyone buys presents.",
+        "In December everyone goes to the cinema.",
+        "In December everyone wears something new."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *estrené* or *estrenó*, for I: ___ el celular ayer. Type the whole sentence.",
+      "answer": "Estrené el celular ayer.",
+      "accept": [
+        "Yo estrené el celular ayer."
+      ],
+      "why": "*Estrené* is the *I* form; *estrenó* is he or she."
+    },
+    {
+      "prompt": "Choose *estrena* or *se estrena*: La película ___ el viernes. Type the whole sentence.",
+      "answer": "La película se estrena el viernes.",
+      "accept": [],
+      "why": "A film does not wear anything; it opens, so it takes *se*."
+    },
+    {
+      "prompt": "Type in Spanish: Vale used her new kitchen for the first time.",
+      "answer": "Vale estrenó la cocina nueva.",
+      "accept": [],
+      "why": "The thing follows *estrenó* directly."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Are you going to wear something new on the thirty-first?",
+      "answer": "¿Vas a estrenar ropa el treinta y uno?",
+      "accept": [
+        "¿Vas a estrenar algo el treinta y uno?"
+      ],
+      "why": "*Ir a* plus *estrenar* gives the plan; *ropa* is the new thing."
+    },
+    {
+      "prompt": "Type in Spanish: We took the new car out for the first time on Sunday.",
+      "answer": "Estrenamos el carro nuevo el domingo.",
+      "accept": [],
+      "why": "*Estrenamos* is the *we* form, and the car follows it directly."
+    },
+    {
+      "prompt": "Say it about yourself: *Estrenó vestido en la boda.*",
+      "answer": "Estrené vestido en la boda.",
+      "accept": [
+        "Yo estrené vestido en la boda."
+      ],
+      "why": "The *I* form in the past is *estrené*."
+    },
+    {
+      "prompt": "Make it negative: *Estrené el celular ayer.*",
+      "answer": "No estrené el celular ayer.",
+      "accept": [
+        "Yo no estrené el celular ayer."
+      ],
+      "why": "*No* goes right before the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La película estrena el viernes.",
+      "right": "La película se estrena el viernes.",
+      "why": "The film is the thing being opened, so Spanish adds *se*."
+    },
+    {
+      "wrong": "Estrené el celular por primera vez ayer.",
+      "right": "Estrené el celular ayer.",
+      "why": "*Estrenar* already means for the first time, so you do not say it twice."
+    },
+    {
+      "wrong": "Estrenamos en el carro nuevo el domingo.",
+      "right": "Estrenamos el carro nuevo el domingo.",
+      "why": "The new thing comes straight after the verb, with no *en*."
+    }
+  ],
+  "personal": "Tell us something you want to wear or use for the first time soon: *Voy a estrenar…*"
+}

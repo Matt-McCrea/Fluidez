@@ -1,0 +1,185 @@
+{
+  "node": "p:cumplirse-un-sueno",
+  "hook": {
+    "line": "The café is open, and Tomás and Vale are raising a glass. In Spanish a dream does not get achieved: it comes true, and it happens to you.",
+    "es": "Se nos cumplió el sueño de abrir el café.",
+    "en": "Our dream of opening the café came true."
+  },
+  "examples": [
+    {
+      "es": "A Rosa se le cumplió el sueño de tener un café.",
+      "en": "Rosa's dream of having a café came true."
+    },
+    {
+      "es": "Se me cumplió el sueño de vivir en Bogotá.",
+      "en": "My dream of living in Bogotá came true."
+    },
+    {
+      "es": "Ojalá se te cumplan todos tus deseos.",
+      "en": "I hope all your wishes come true. (to a friend)"
+    },
+    {
+      "es": "A Tomás no se le cumplió el sueño de ser músico.",
+      "en": "Tomás's dream of being a musician did not come true."
+    },
+    {
+      "es": "Hernando cumplió su promesa.",
+      "en": "Hernando kept his promise."
+    },
+    {
+      "es": "Cumplí mi palabra.",
+      "en": "I kept my word."
+    }
+  ],
+  "rule": "Dreams and wishes are not things you do; they *come true*. So the dream is the subject: *el sueño se cumplió*. The person it happens to goes in front with *se* + *me / te / le / nos / les*: *se me cumplió el sueño*, my dream came true. The verb agrees with the dream: *se cumplieron mis sueños*.\n\nPromises and your word are different: a person keeps them, so there is no *se*: *cumplió su promesa*, *cumplí mi palabra*.",
+  "smallPrint": "Teachers call the *se le cumplió* kind of sentence an unplanned *se*: the event happens to the person rather than being done by them.",
+  "readAndPick": [
+    {
+      "es": "Se me cumplió el sueño de vivir en Bogotá.",
+      "options": [
+        "Her dream of living in Bogotá came true.",
+        "Your dream of living in Bogotá came true.",
+        "My dream of living in Bogotá came true."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Se te cumplió algún sueño?",
+      "options": [
+        "Did one of my dreams come true?",
+        "Did one of your dreams come true? (to a friend)",
+        "Did one of our dreams come true?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se nos cumplió el sueño de abrir el café.",
+      "options": [
+        "Their dream of opening the café came true.",
+        "Our dream of opening the café came true.",
+        "My dream of opening the café came true."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se cumplieron todos mis sueños.",
+      "options": [
+        "One of my dreams came true.",
+        "I kept all my promises.",
+        "All my dreams came true."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hernando cumplió su promesa.",
+      "options": [
+        "Hernando made a promise.",
+        "Hernando kept his promise.",
+        "Hernando broke his promise."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No cumplió su promesa.",
+      "options": [
+        "He did not keep his promise.",
+        "He kept his promise.",
+        "He did not make a promise."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ojalá se te cumpla el sueño de viajar.",
+      "options": [
+        "I hope my dream of travelling comes true.",
+        "I hope your dream of travelling comes true. (to a friend)",
+        "I wish your dream of travelling had come true."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá se les cumpla el sueño de tener una casa.",
+      "options": [
+        "I hope our dream of having a house comes true.",
+        "I hope my dream of having a house comes true.",
+        "I hope their dream of having a house comes true."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Cumplí mi palabra.",
+      "options": [
+        "I kept my word.",
+        "He kept his word.",
+        "You kept your word."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *me* or *le*, for my own dream: Se ___ cumplió el sueño de vivir en Bogotá. Type the whole sentence.",
+      "answer": "Se me cumplió el sueño de vivir en Bogotá.",
+      "accept": [],
+      "why": "The dream belongs to me, so *me* goes after *se*."
+    },
+    {
+      "prompt": "Choose *cumplió* or *cumplieron*: Se ___ todos mis sueños. Type the whole sentence.",
+      "answer": "Se cumplieron todos mis sueños.",
+      "accept": [],
+      "why": "The verb agrees with the dreams, and there are many, so *cumplieron*."
+    },
+    {
+      "prompt": "Type in Spanish: Hernando kept his promise.",
+      "answer": "Hernando cumplió su promesa.",
+      "accept": [],
+      "why": "A person keeps a promise with plain *cumplió*, no *se*."
+    },
+    {
+      "prompt": "Type in Spanish: Our dream of opening the café came true.",
+      "answer": "Se nos cumplió el sueño de abrir el café.",
+      "accept": [
+        "El sueño de abrir el café se nos cumplió."
+      ],
+      "why": "*Nos* says who it happened to, and *cumplió* agrees with one dream."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I hope all your wishes come true.",
+      "answer": "Ojalá se te cumplan todos tus deseos.",
+      "accept": [],
+      "why": "*Te* is you, and *cumplan* is plural because the wishes are plural."
+    },
+    {
+      "prompt": "Make it negative: *A Tomás se le cumplió el sueño de ser músico.*",
+      "answer": "A Tomás no se le cumplió el sueño de ser músico.",
+      "accept": [],
+      "why": "*No* goes right before *se*."
+    },
+    {
+      "prompt": "Say it about yourself: *Hernando cumplió su promesa.*",
+      "answer": "Cumplí mi promesa.",
+      "accept": [
+        "Yo cumplí mi promesa."
+      ],
+      "why": "Now you are the one who keeps it, so *cumplí* and *mi*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Mi sueño cumplió.",
+      "right": "Mi sueño se cumplió.",
+      "why": "A dream does not do anything; it comes true by itself, and *se* says so."
+    },
+    {
+      "wrong": "Rosa se cumplió el sueño de tener un café.",
+      "right": "A Rosa se le cumplió el sueño de tener un café.",
+      "why": "Rosa is the person it happens to, so she comes in with *a* and *le*, not as the subject."
+    },
+    {
+      "wrong": "Se cumplió mis sueños.",
+      "right": "Se cumplieron mis sueños.",
+      "why": "The verb agrees with the dreams, so many dreams need *cumplieron*."
+    }
+  ],
+  "personal": "Tell us a dream you would love to see come true: *Ojalá se me cumpla el sueño de…*"
+}
