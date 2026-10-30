@@ -1,0 +1,218 @@
+{
+  "id": "sc-u53-c",
+  "unit": "u53",
+  "title": "El pasaje que no existe",
+  "spare": true,
+  "brief": "You're Tomás, at the pastry counter with Vale. She is quick and dry, and a friend, so use tú. A rumour says you're going back to Canada. Deny it, trace where it came from, and answer without making a fight of it.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: A ver, Tomás. Me soltó la señora de la panadería que te vas a Canadá en diciembre.",
+      "npcEn": "Vale: Right, Tomás. The lady from the bakery blurted out to me that you're going to Canada in December.",
+      "intent": "Say it isn't true and you're not going anywhere.",
+      "accept": [
+        "Eso no es verdad. No me voy a ninguna parte.",
+        "No, nada de eso. Yo no me voy.",
+        "No es cierto, no me voy a Canadá."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say no: it isn't true"
+        }
+      ],
+      "focus": "g:hedging-distance",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: ¿Y de dónde sacó eso?",
+      "npcEn": "Vale: And where did she get that from?",
+      "intent": "Explain that your mother blurted out she wanted to see you at Christmas (use a verb like soltó or aclaró + que).",
+      "accept": [
+        "Mi mamá me soltó que quería verme en Navidad.",
+        "Mi mamá me aclaró que quería verme en diciembre, y alguien lo exageró.",
+        "Mi mamá me soltó que me extrañaba mucho."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(soltó|aclaró|reprochó|recalcó) que\\b",
+          "flags": "iu",
+          "label": "use: soltó / aclaró / reprochó + que"
+        }
+      ],
+      "focus": "p:verbo-que-interpreta",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Ya. Seguro que el chismoso de mi primo también lo repitió.",
+      "npcEn": "Vale: Right. I bet that gossip of a cousin of mine repeated it too.",
+      "intent": "Say that cousin of hers always exaggerates (use: el + adjective + de + person, like el bobo de tu primo).",
+      "accept": [
+        "El chismoso de tu primo siempre cuenta de más.",
+        "El pobre de tu primo no sabe quedarse callado.",
+        "Claro, el cuentero de tu primo exagera todo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(el|la)\\s+\\p{L}+\\s+de\\s+(tu|mi|su)\\b",
+          "flags": "iu",
+          "label": "use: el + adjective + de + tu primo"
+        }
+      ],
+      "focus": "p:el-x-de-y",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Cambiando de tema, la máquina de espresso suena rara. ¿Se dañó?",
+      "npcEn": "Vale: Changing the subject, the espresso machine sounds odd. Did it break?",
+      "intent": "Say the technician fixed it yesterday (use: reparó or arregló).",
+      "accept": [
+        "Ayer la reparó el técnico, pero suena raro.",
+        "El técnico la arregló ayer.",
+        "Ayer vino el técnico y la reparó."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(reparó|repararon|arregló|arreglaron)(?!\\p{L})",
+          "flags": "iu",
+          "label": "say it was fixed: reparó / arregló"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "preterito",
+          "label": "use the past: yesterday it was fixed"
+        }
+      ],
+      "focus": "p:rectificar-reparar",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Qué alivio. ¿Te quedas a probar el pan nuevo?",
+      "npcEn": "Vale: What a relief. Will you stay and try the new bread?",
+      "intent": "Say yes, and add, by the way, that you're staying here (use: dicho sea de paso).",
+      "accept": [
+        "Claro. Y dicho sea de paso, aquí me quedo.",
+        "Sí, y dicho sea de paso, no pienso irme a ninguna parte.",
+        "Dicho sea de paso, me quedo. Y el pan huele delicioso."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdicho sea de paso\\b",
+          "flags": "iu",
+          "label": "use: dicho sea de paso"
+        }
+      ],
+      "focus": "c:dicho-sea-de-paso",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:dicho-sea-de-paso",
+    "c:que-alivio",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:indefinites",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:aclarar",
+    "l:alivio",
+    "l:aquí",
+    "l:arreglar",
+    "l:ayer",
+    "l:callado",
+    "l:cambiar",
+    "l:claro",
+    "l:contar",
+    "l:decir",
+    "l:delicioso",
+    "l:diciembre",
+    "l:dónde",
+    "l:extrañar",
+    "l:irse",
+    "l:mamá",
+    "l:máquina",
+    "l:nuevo",
+    "l:oler",
+    "l:pan",
+    "l:panadería",
+    "l:parte",
+    "l:paso",
+    "l:pensar",
+    "l:pobre",
+    "l:primo",
+    "l:probarse",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:raro",
+    "l:reparar",
+    "l:repetir",
+    "l:saber",
+    "l:sacar",
+    "l:seguro",
+    "l:ser",
+    "l:señora",
+    "l:siempre",
+    "l:soltar",
+    "l:sonar",
+    "l:tema",
+    "l:técnico",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "p:aqui-ahi-alla",
+    "p:cambiar-de-por",
+    "p:demonstratives-basic",
+    "p:el-x-de-y",
+    "p:encarecer-abaratar",
+    "p:estar-seguro-de-que",
+    "p:extranar",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:oler-a-saber-a",
+    "p:pensar-en",
+    "p:pensar-inf",
+    "p:por-cierto-hablando-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:rectificar-reparar",
+    "p:reporting-verbs-stance",
+    "p:saber-conocer",
+    "p:tienes-toda-la-razon",
+    "p:verbo-que-interpreta"
+  ]
+}

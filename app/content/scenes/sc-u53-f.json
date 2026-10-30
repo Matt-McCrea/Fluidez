@@ -1,0 +1,242 @@
+{
+  "id": "sc-u53-f",
+  "unit": "u53",
+  "title": "Después del aeropuerto",
+  "spare": true,
+  "brief": "You're Tomás, with Doña Beatriz, who runs the shop next door and has just heard the news from Miami. She is older than you, so use usted. Say what you know, what you only felt, and what you refuse to take for granted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Beatriz: ¿Ya se enteró, Tomás? Detuvieron al funcionario en el aeropuerto de Miami.",
+      "npcEn": "Beatriz: Have you heard yet, Tomás? They arrested the official at the Miami airport.",
+      "intent": "Say you're already up to date, you read it this morning (use: estoy al tanto).",
+      "accept": [
+        "Sí, ya estoy al tanto. Lo leí esta mañana.",
+        "Sí, doña Beatriz, estoy al tanto. Lo vi en el periódico.",
+        "Ya estoy al tanto, me lo contó Mariana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bal (tanto|corriente|día)\\b",
+          "flags": "iu",
+          "label": "say you're up to date: estoy al tanto"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:ponerse-al-tanto",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Beatriz: Yo no lo habría imaginado. En apariencia era un hombre muy serio.",
+      "npcEn": "Beatriz: I'd never have imagined it. On the surface he was a very serious man.",
+      "intent": "Say you had the feeling something was off (use: Tenía la sensación de que).",
+      "accept": [
+        "Yo tenía la sensación de que algo no andaba bien.",
+        "Tenía la sensación de que escondía algo.",
+        "Pues yo tenía la sensación de que algo raro pasaba."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bla sensación de que\\b",
+          "flags": "iu",
+          "label": "use: tenía la sensación de que"
+        }
+      ],
+      "focus": "p:tener-la-sensacion",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Beatriz: Y el juez, ¿qué pasa con el juez?",
+      "npcEn": "Beatriz: And the judge, what about the judge?",
+      "intent": "Say there is a chance more will come to light (use: Cabe la posibilidad de que + subjunctive).",
+      "accept": [
+        "Cabe la posibilidad de que salgan más cosas a la luz.",
+        "Cabe la posibilidad de que todo salga a la luz.",
+        "Cabe la posibilidad de que haya más detenidos."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "cabe la posibilidad de que",
+          "label": "after cabe la posibilidad de que, use the subjunctive"
+        }
+      ],
+      "focus": "p:cabe-la-posibilidad",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Beatriz: Dicen que medio barrio hacía la vista gorda.",
+      "npcEn": "Beatriz: They say half the barrio turned a blind eye.",
+      "intent": "Warn her not to take it for granted that everyone knew (use: dar por sentado).",
+      "accept": [
+        "No hay que dar por sentado que todos lo sabían.",
+        "No demos por sentado que todos lo sabían.",
+        "No hay que dar por sentado que la gente miraba para otro lado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpor sentado\\b",
+          "flags": "iu",
+          "label": "use: dar por sentado"
+        }
+      ],
+      "focus": "p:dar-por-sentado",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Beatriz: Tiene razón. Mejor no sembrar dudas sin pruebas. ¿Me regala un tinto?",
+      "npcEn": "Beatriz: You're right. Better not to sow doubts without proof. Will you give me a tinto?",
+      "intent": "Say gladly, invite her to sit, and say you'll bring it right away (formal).",
+      "accept": [
+        "Con gusto, siéntese. Ya se lo traigo.",
+        "Claro que sí, doña Beatriz. Siéntese, que enseguida se lo llevo.",
+        "Cómo no. Siéntese, por favor, ya le sirvo el tinto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "siéntese|tome asiento",
+          "flags": "iu",
+          "label": "invite her to sit: siéntese"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:era",
+    "c:hay",
+    "c:hay-que",
+    "c:me-regala",
+    "c:por-favor",
+    "c:pues",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional-perfect",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-perfect",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:aeropuerto",
+    "l:andar",
+    "l:apariencia",
+    "l:barrio",
+    "l:bien",
+    "l:caber",
+    "l:claro",
+    "l:contar",
+    "l:cosa",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:detener",
+    "l:dudar",
+    "l:enseguida",
+    "l:enterarse",
+    "l:esconder",
+    "l:estar",
+    "l:favor",
+    "l:funcionario",
+    "l:gente",
+    "l:gordo",
+    "l:gusto",
+    "l:hacer",
+    "l:hombre",
+    "l:imaginar",
+    "l:juez",
+    "l:lado",
+    "l:leer",
+    "l:llevar",
+    "l:luz",
+    "l:mañana",
+    "l:mejor",
+    "l:mirar",
+    "l:pasar",
+    "l:periódico",
+    "l:posibilidad",
+    "l:prueba",
+    "l:qué",
+    "l:raro",
+    "l:razón",
+    "l:regalar",
+    "l:saber",
+    "l:salir",
+    "l:sembrar",
+    "l:sensación",
+    "l:sentar",
+    "l:sentarse",
+    "l:ser",
+    "l:serio",
+    "l:servir",
+    "l:tener",
+    "l:tinto",
+    "l:traer",
+    "l:ver",
+    "l:vista",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cabe-la-posibilidad",
+    "p:caber",
+    "p:dar-por-sentado",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:en-apariencia",
+    "p:enterarse-de",
+    "p:estar-al-tanto-de",
+    "p:hacer-la-vista-gorda",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:llevar-traer",
+    "p:me-contaron-que",
+    "p:me-te-nos-objects",
+    "p:medir-pesar-caber",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:ponerse-al-tanto",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:saber-conocer",
+    "p:salir-a-la-luz",
+    "p:sembrar-la-duda",
+    "p:senor-don-article",
+    "p:tener-la-sensacion",
+    "p:tener-razon",
+    "p:tengo-la-impresion-de-que"
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "id": "sc-u53-e",
+  "unit": "u53",
+  "title": "Ventanilla de transparencia",
+  "spare": true,
+  "brief": "You're Tomás, at the transparency office, asking about a permit. The official is a stranger and formal, so use usted. You only know the permit from hearsay, so say it as hearsay, check what she tells you, and correct yourself cleanly.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Funcionaria: Pase, pase. ¿Qué se le ofrece?",
+      "npcEn": "Official: Come in, come in. What can I do for you?",
+      "intent": "Say you're here about the permit for the building next door, and that apparently it was approved without public notice (use: al parecer or supuestamente).",
+      "accept": [
+        "Vengo por el permiso del edificio vecino. Al parecer, se aprobó sin aviso público.",
+        "Buenas tardes. Supuestamente el permiso del edificio de al lado salió sin aviso al público.",
+        "Vengo por un permiso. Al parecer, nadie avisó al barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(al parecer|supuestamente)\\b",
+          "flags": "iu",
+          "label": "hedge it: al parecer / supuestamente"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:hedging-distance",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Funcionaria: Ese expediente es de una entidad estatal. No está en nuestra oficina.",
+      "npcEn": "Official: That file belongs to a state entity. It isn't in our office.",
+      "intent": "Check you understood: so (o sea que) she can't give you the file.",
+      "accept": [
+        "O sea que no puede darme el expediente.",
+        "¿O sea que tengo que ir a otra oficina?",
+        "O sea que el expediente no está aquí."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bo sea que\\b",
+          "flags": "iu",
+          "label": "check with: o sea que"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:o-sea-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Funcionaria: Correcto. Y las solicitudes de acceso a la información tardan.",
+      "npcEn": "Official: Correct. And requests for access to information take a while.",
+      "intent": "Say that supposedly the law gives them fifteen days (use: supuestamente or al parecer).",
+      "accept": [
+        "Supuestamente la ley les da quince días.",
+        "Al parecer, la ley da quince días para responder.",
+        "Supuestamente tienen quince días, ¿verdad?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(supuestamente|al parecer)\\b",
+          "flags": "iu",
+          "label": "hedge it: supuestamente / al parecer"
+        }
+      ],
+      "focus": "g:hedging-distance",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Funcionaria: Quince días hábiles, es decir, tres semanas.",
+      "npcEn": "Official: Fifteen working days, that is, three weeks.",
+      "intent": "Say when you'll come back, then correct yourself: next week, or rather in three weeks (use: mejor dicho or es decir).",
+      "accept": [
+        "Vuelvo la próxima semana; mejor dicho, en tres semanas.",
+        "Regreso el lunes. Mejor dicho, dentro de tres semanas.",
+        "Vengo mañana. Es decir, no, vengo en tres semanas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(mejor dicho|es decir)\\b",
+          "flags": "iu",
+          "label": "correct yourself: mejor dicho / es decir"
+        }
+      ],
+      "focus": "g:reformulation",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Funcionaria: Déjeme su nombre y su celular, y le avisamos cuando haya respuesta.",
+      "npcEn": "Official: Leave me your name and your phone number, and we'll let you know when there is an answer.",
+      "intent": "Say that in any case you'll come back to check, and thank her (use: en cualquier caso).",
+      "accept": [
+        "En cualquier caso, volveré a preguntar. Muchas gracias.",
+        "Gracias. En cualquier caso, pasaré la próxima semana.",
+        "En cualquier caso, yo vuelvo a revisar. Muchas gracias por su ayuda."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(en cualquier caso|en todo caso|de todos modos)\\b",
+          "flags": "iu",
+          "label": "use: en cualquier caso"
+        }
+      ],
+      "focus": "p:en-cualquier-caso",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hola-buenos-dias",
+    "c:no-cierto",
+    "c:o-sea",
+    "c:siga-siga",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:cada-cualquier",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:hedging-distance",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:possessives",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reformulation",
+    "g:se-accidental",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-irregulars",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acceso",
+    "l:aprobar",
+    "l:aquí",
+    "l:avisar",
+    "l:aviso",
+    "l:ayuda",
+    "l:barrio",
+    "l:buena",
+    "l:casar",
+    "l:celular",
+    "l:correcto",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:dentro",
+    "l:día",
+    "l:edificio",
+    "l:entidad",
+    "l:estar",
+    "l:estatal",
+    "l:expediente",
+    "l:funcionario",
+    "l:hábil",
+    "l:información",
+    "l:ir",
+    "l:lado",
+    "l:ley",
+    "l:lunes",
+    "l:mañana",
+    "l:mejor",
+    "l:nombre",
+    "l:oficina",
+    "l:ofrecer",
+    "l:parecer",
+    "l:pasar",
+    "l:permiso",
+    "l:poder",
+    "l:preguntar",
+    "l:próximo",
+    "l:público",
+    "l:qué",
+    "l:regresar",
+    "l:responder",
+    "l:respuesta",
+    "l:revisar",
+    "l:salir",
+    "l:semana",
+    "l:ser",
+    "l:solicitud",
+    "l:supuestamente",
+    "l:tardar",
+    "l:tarde",
+    "l:tener",
+    "l:vecino",
+    "l:venir",
+    "l:verdad",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:days-el-lunes",
+    "p:dentro-de-vs-despues",
+    "p:en-cualquier-caso",
+    "p:entonces-quedamos",
+    "p:gracias-por",
+    "p:hay-varios-tipos",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:o-sea-que",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:presuntamente-al-parecer",
+    "p:quieres-decir-que",
+    "p:time-pasado-que-viene",
+    "p:volver-a-inf"
+  ]
+}

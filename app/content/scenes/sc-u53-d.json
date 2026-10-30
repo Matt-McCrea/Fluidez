@@ -1,0 +1,221 @@
+{
+  "id": "sc-u53-d",
+  "unit": "u53",
+  "title": "Titular de portada",
+  "spare": true,
+  "brief": "You're Tomás, reading the morning paper with Don Hernando. He is older than you, so use usted. A council official has vanished, and every theory sounds like a fact. React to the news without repeating more than the paper says.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Mire esto, Tomás: el funcionario del concejo se encuentra en paradero desconocido.",
+      "npcEn": "Hernando: Look at this, Tomás: the council official's whereabouts are unknown.",
+      "intent": "Say it's unprecedented in the barrio (use: sin precedentes).",
+      "accept": [
+        "Es algo sin precedentes en el barrio.",
+        "Don Hernando, esto es sin precedentes aquí.",
+        "Un caso sin precedentes en la Candelaria."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsin precedentes\\b",
+          "flags": "iu",
+          "label": "use: sin precedentes"
+        }
+      ],
+      "focus": "c:sin-precedentes",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Así es. Dicen que lo vieron en el aeropuerto con dos maletas.",
+      "npcEn": "Hernando: That's right. They say he was seen at the airport with two suitcases.",
+      "intent": "Say that if so, he wasn't going on a holiday (use: De ser así).",
+      "accept": [
+        "De ser así, no se fue de vacaciones.",
+        "De ser así, no se iba de paseo.",
+        "De ser así, don Hernando, se iba para no volver."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bde ser así(?!\\p{L})",
+          "flags": "iu",
+          "label": "use: de ser así"
+        }
+      ],
+      "focus": "c:de-ser-asi",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: No sé si creerlo. ¿Usted qué haría?",
+      "npcEn": "Hernando: I don't know whether to believe it. What would you do?",
+      "intent": "Say, with no offence, that you'd wait for the official version (use: No es por nada, pero).",
+      "accept": [
+        "No es por nada, pero esperaría la versión oficial.",
+        "No es por nada, pero yo esperaría a que lo confirmen.",
+        "No es por nada, pero por ahora no repetiría nada."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno es por nada,? pero\\b",
+          "flags": "iu",
+          "label": "use: no es por nada, pero"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "c:no-es-por-nada-pero",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Tiene razón. El abogado de Altamira, ¿cómo se llamaba? Se me fue el nombre.",
+      "npcEn": "Hernando: You're right. Altamira's lawyer, what was he called? The name has slipped my mind.",
+      "intent": "Say you have it on the tip of your tongue too, and it starts with an R (use: en la punta de la lengua).",
+      "accept": [
+        "Yo también lo tengo en la punta de la lengua. Empieza con R.",
+        "Lo tengo en la punta de la lengua, don Hernando. Creo que empieza con R.",
+        "Ahora mismo lo tengo en la punta de la lengua, empieza con R."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ben la punta de la lengua\\b",
+          "flags": "iu",
+          "label": "use: en la punta de la lengua"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "c:punta-de-la-lengua",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Cuando lo recuerde, se lo cuento. Ahora, un tinto, por favor.",
+      "npcEn": "Hernando: When I remember, I'll tell you. Now, a tinto, please.",
+      "intent": "Say right away, and ask whether he wants sugar (formal).",
+      "accept": [
+        "Enseguida, don Hernando. ¿Lo quiere con azúcar?",
+        "Ya mismo. ¿Se lo sirvo con azúcar?",
+        "Con gusto. ¿Con azúcar o sin azúcar?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:asi-es",
+    "c:con-mucho-gusto",
+    "c:creo-que",
+    "c:de-ser-asi",
+    "c:en-paradero-desconocido",
+    "c:no-es-por-nada-pero",
+    "c:no-se",
+    "c:por-favor",
+    "c:punta-de-la-lengua",
+    "c:sin-precedentes",
+    "c:tengo",
+    "c:tienes",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:indirect-questions",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abogado",
+    "l:aeropuerto",
+    "l:ahora",
+    "l:aquí",
+    "l:azúcar",
+    "l:barrio",
+    "l:caso",
+    "l:concejo",
+    "l:confirmar",
+    "l:contar",
+    "l:creer",
+    "l:cómo",
+    "l:decir",
+    "l:desconocido",
+    "l:empezar",
+    "l:encontrarse",
+    "l:enseguida",
+    "l:esperar",
+    "l:favor",
+    "l:funcionario",
+    "l:gusto",
+    "l:hacer",
+    "l:irse",
+    "l:lengua",
+    "l:llamarse",
+    "l:maleta",
+    "l:mirar",
+    "l:nombre",
+    "l:oficial",
+    "l:paradero",
+    "l:paseo",
+    "l:precedente",
+    "l:punta",
+    "l:querer",
+    "l:qué",
+    "l:razón",
+    "l:recordar",
+    "l:repetir",
+    "l:saber",
+    "l:ser",
+    "l:servir",
+    "l:tener",
+    "l:tinto",
+    "l:vacación",
+    "l:ver",
+    "l:versión",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:encontrarse-hallarse",
+    "p:indefinites-basic",
+    "p:me-contaron-que",
+    "p:no-se-que-hacer",
+    "p:para-inf",
+    "p:recordar-acordarse",
+    "p:senor-don-article",
+    "p:tambien-tampoco",
+    "p:tener-razon"
+  ]
+}

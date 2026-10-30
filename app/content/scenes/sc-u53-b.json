@@ -1,0 +1,279 @@
+{
+  "id": "sc-u53-b",
+  "unit": "u53",
+  "title": "La nota de Mariana",
+  "spare": false,
+  "brief": "You're Tomás, on the phone with Mariana. She is a friend and a journalist closing her story on Altamira, so use tú. She needs what is known, what is only claimed, and what is only rumour, and you must keep the three apart.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Estoy cerrando mi nota sobre Altamira. ¿Qué se sabe, hasta hoy, del concejal?",
+      "npcEn": "Mariana: I'm finishing my piece on Altamira. What is known, up to today, about the councilman?",
+      "intent": "Say that so far nothing has been proved (use: Hasta la fecha or hasta el momento).",
+      "accept": [
+        "Hasta la fecha no hay ninguna prueba.",
+        "Hasta el momento no se ha probado nada.",
+        "Mira, hasta la fecha solo hay rumores."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhasta (la fecha|el momento)\\b",
+          "flags": "iu",
+          "label": "use: hasta la fecha"
+        }
+      ],
+      "focus": "p:hasta-la-fecha",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: Altamira dice que compró el edificio de al lado de forma legal.",
+      "npcEn": "Mariana: Altamira says it bought the building next door legally.",
+      "intent": "Say that the company maintains it was legal, but you can't confirm it (use: sostiene que).",
+      "accept": [
+        "Sostiene que fue legal, pero yo no lo puedo confirmar.",
+        "La empresa sostiene que todo fue legal, pero no tengo cómo confirmarlo.",
+        "Sostiene que lo compró legalmente, pero eso no me consta."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsostiene que\\b",
+          "flags": "iu",
+          "label": "use: sostiene que"
+        }
+      ],
+      "focus": "p:sostener-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: ¿Y el rumor de que el juez recibió dinero?",
+      "npcEn": "Mariana: And the rumour that the judge received money?",
+      "intent": "Say you're not so sure it's true (use: No tengo tan claro que + subjunctive).",
+      "accept": [
+        "No tengo tan claro que sea verdad.",
+        "Sinceramente, no tengo tan claro que el juez haya recibido nada.",
+        "No tengo tan claro que eso sea cierto."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "no tengo tan claro que",
+          "label": "after no tengo tan claro que, use the subjunctive"
+        }
+      ],
+      "focus": "p:no-tengo-tan-claro",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: Me dijeron que el concejal salía hoy para Miami, pero no estoy segura.",
+      "npcEn": "Mariana: They told me the councilman was leaving for Miami today, but I'm not sure.",
+      "intent": "Check what you heard: so he was leaving today, right? (use the imperfect: salía).",
+      "accept": [
+        "¿O sea que el concejal salía hoy, no?",
+        "Entonces el concejal salía hoy para Miami, ¿no?",
+        "¿Salía hoy? ¿Quién te lo dijo?"
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "imperfecto",
+          "label": "use the imperfect: salía"
+        },
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        }
+      ],
+      "focus": "p:imperfecto-citativo",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Cada uno cuenta una versión distinta. ¿Tú qué crees?",
+      "npcEn": "Mariana: Everyone tells a different version. What do you think?",
+      "intent": "Give your opinion: if you ask yourself, everyone says what suits them (use: Para mí que and cada quien).",
+      "accept": [
+        "Para mí que cada quien cuenta lo que le conviene.",
+        "Para mí que cada quien tiene su versión, y ninguna es la verdad completa.",
+        "Pues, para mí que cada quien dice lo que le conviene."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpara mí que\\b",
+          "flags": "iu",
+          "label": "use: para mí que"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bcada quien\\b",
+          "flags": "iu",
+          "label": "use: cada quien"
+        }
+      ],
+      "focus": "p:para-mi-que",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Mariana: Gracias, Tomás. Te llamo cuando salga la nota.",
+      "npcEn": "Mariana: Thanks, Tomás. I'll call you when the piece comes out.",
+      "intent": "Thank her and invite her to the café for a tinto.",
+      "accept": [
+        "Gracias a ti. Cuando vengas, el tinto va por la casa.",
+        "Gracias, Mariana. Pásate por el café y te invito un tinto.",
+        "Gracias a ti. Ven cuando quieras, que hay tinto."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "tinto",
+            "café"
+          ],
+          "label": "mention the café or a tinto"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:cuando-quieras",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:la-verdad",
+    "c:no-cierto",
+    "c:no-se",
+    "c:o-sea",
+    "c:oye-mira",
+    "c:puedo",
+    "c:pues",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:cada-cualquier",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:impersonal-obligation",
+    "g:indefinites",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:reformulation",
+    "g:relatives-donde-lo-que",
+    "g:reported-past-basic",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-irregulars",
+    "g:subj-perfect",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:café",
+    "l:casa",
+    "l:cerrar",
+    "l:claro",
+    "l:completar",
+    "l:comprar",
+    "l:concejal",
+    "l:confirmar",
+    "l:constar",
+    "l:contar",
+    "l:convenir",
+    "l:creer",
+    "l:cuenta",
+    "l:cómo",
+    "l:decir",
+    "l:dinero",
+    "l:distinto",
+    "l:edificio",
+    "l:empresa",
+    "l:estar",
+    "l:fecha",
+    "l:forma",
+    "l:hoy",
+    "l:invitar",
+    "l:ir",
+    "l:juez",
+    "l:lado",
+    "l:legal",
+    "l:legalmente",
+    "l:llamar",
+    "l:mirar",
+    "l:momento",
+    "l:nota",
+    "l:pasarse",
+    "l:poder",
+    "l:probarse",
+    "l:prueba",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:recibir",
+    "l:rumor",
+    "l:saber",
+    "l:salir",
+    "l:seguro",
+    "l:ser",
+    "l:sinceramente",
+    "l:sostener",
+    "l:tener",
+    "l:tinto",
+    "l:venir",
+    "l:verdad",
+    "l:versión",
+    "p:cada-quien",
+    "p:cerca-de",
+    "p:demonstratives-basic",
+    "p:entonces-quedamos",
+    "p:estar-seguro-de-que",
+    "p:gracias-a-por-culpa-de",
+    "p:hasta-la-fecha",
+    "p:me-te-nos-objects",
+    "p:no-tengo-tan-claro",
+    "p:o-sea-que",
+    "p:para-inf",
+    "p:para-mi-que",
+    "p:por-culpa-de",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:que-opinas-de",
+    "p:quieres-decir-que",
+    "p:reporting-verbs-stance",
+    "p:saber-conocer",
+    "p:sobre-todo-solo",
+    "p:sostener-que"
+  ]
+}

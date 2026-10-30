@@ -1,0 +1,270 @@
+{
+  "id": "sc-u53-a",
+  "unit": "u53",
+  "title": "Lo que dicen en la barra",
+  "spare": false,
+  "brief": "You're Tomás, behind the counter. Don Hernando is older than you, so use usted. He has heard rumours about the café, and you want to answer them without repeating them as facts: say what you understand, what you don't claim, and what you'd swear to.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Buenos días, Tomás. Dicen por ahí que el café cierra en diciembre.",
+      "npcEn": "Hernando: Good morning, Tomás. They say around here that the café closes in December.",
+      "intent": "Say what you understand: Altamira only made an offer (use: Tengo entendido que).",
+      "accept": [
+        "Tengo entendido que Altamira solo hizo una oferta.",
+        "Buenos días, don Hernando. Tengo entendido que solo hubo una oferta.",
+        "Tengo entendido que nadie ha firmado nada."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btengo entendido que\\b",
+          "flags": "iu",
+          "label": "use: tengo entendido que"
+        }
+      ],
+      "focus": "p:tengo-entendido-que",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: También dicen que usted ya compró el pasaje a Toronto.",
+      "npcEn": "Hernando: They also say you've already bought your ticket to Toronto.",
+      "intent": "Say you're not claiming people are lying, but you aren't leaving (use: No digo que + subjunctive, pero).",
+      "accept": [
+        "No digo que la gente mienta, pero yo no me voy.",
+        "No digo que sea mentira, pero no he comprado ningún pasaje.",
+        "No digo que nadie lo piense, pero yo me quedo aquí."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "no digo que",
+          "label": "after no digo que, use the subjunctive"
+        }
+      ],
+      "focus": "p:no-digo-que-pero",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Hay quien jura que el concejal tiene al juez en el bolsillo.",
+      "npcEn": "Hernando: Some people swear the councilman has the judge in his pocket.",
+      "intent": "Politely say you have no wish to offend him, but nobody has proved it (use: Sin ánimo de + infinitive).",
+      "accept": [
+        "Sin ánimo de ofenderlo, nadie lo ha probado.",
+        "Sin ánimo de discutir, hasta ahora no hay ninguna prueba.",
+        "Don Hernando, sin ánimo de molestarlo, eso nadie lo ha demostrado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsin ánimo de\\b",
+          "flags": "iu",
+          "label": "use: sin ánimo de"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:sin-animo-de",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Yo mismo vi al concejal en la plaza el martes, mirando nuestro local.",
+      "npcEn": "Hernando: I myself saw the councilman in the square on Tuesday, looking at our building.",
+      "intent": "Say you would swear he came into the café on Tuesday too (use: Juraría que + past).",
+      "accept": [
+        "Juraría que el martes también entró al café.",
+        "Juraría que ese mismo martes estuvo aquí dentro.",
+        "Yo juraría que lo vi pidiendo un tinto el martes."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bjuraría que\\b",
+          "flags": "iu",
+          "label": "use: juraría que"
+        }
+      ],
+      "focus": "p:juraria-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Entonces, ¿qué piensa usted que va a pasar con el café?",
+      "npcEn": "Hernando: So, what do you think is going to happen to the café?",
+      "intent": "Say you have no doubt the neighbourhood will support you (use: No me cabe duda de que).",
+      "accept": [
+        "No me cabe duda de que el barrio nos va a apoyar.",
+        "No me cabe ninguna duda de que el barrio va a estar con nosotros.",
+        "Con todo respeto, no me cabe duda de que seguimos abiertos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno me cabe (ninguna )?duda de que\\b",
+          "flags": "iu",
+          "label": "use: no me cabe duda de que"
+        }
+      ],
+      "focus": "p:no-me-cabe-duda",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Hernando: Así me gusta. Y ahora dígame, ¿me sirve un tinto?",
+      "npcEn": "Hernando: That's what I like to hear. Now tell me, will you pour me a coffee?",
+      "intent": "Offer him the coffee on the house, politely.",
+      "accept": [
+        "Claro que sí, don Hernando. Este tinto va por la casa.",
+        "Con mucho gusto. ¿Se lo sirvo con azúcar?",
+        "Ya se lo sirvo, don Hernando. Hoy invita la casa."
+      ],
+      "require": [
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:animo",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:estuvo",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-gusta",
+    "c:mucho-gusto",
+    "c:que-va",
+    "c:tengo",
+    "c:tienes",
+    "c:voy-vas",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-basic",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:possessives",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:reported-requests",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:ahora",
+    "l:ahí",
+    "l:apoyar",
+    "l:aquí",
+    "l:azúcar",
+    "l:barrio",
+    "l:bolsillo",
+    "l:bueno",
+    "l:caber",
+    "l:café",
+    "l:casa",
+    "l:cerrar",
+    "l:claro",
+    "l:comprar",
+    "l:concejal",
+    "l:decir",
+    "l:demostrar",
+    "l:dentro",
+    "l:diciembre",
+    "l:discutir",
+    "l:duda",
+    "l:día",
+    "l:entender",
+    "l:entrar",
+    "l:estar",
+    "l:firmar",
+    "l:gente",
+    "l:gustar",
+    "l:gusto",
+    "l:hacer",
+    "l:hoy",
+    "l:invitar",
+    "l:ir",
+    "l:irse",
+    "l:juez",
+    "l:jurar",
+    "l:local",
+    "l:martes",
+    "l:mentir",
+    "l:mentira",
+    "l:mirar",
+    "l:molestar",
+    "l:oferta",
+    "l:pasaje",
+    "l:pasar",
+    "l:pedir",
+    "l:pensar",
+    "l:plaza",
+    "l:probarse",
+    "l:prueba",
+    "l:quedarse",
+    "l:qué",
+    "l:respetar",
+    "l:seguir",
+    "l:ser",
+    "l:servir",
+    "l:tener",
+    "l:tinto",
+    "l:ver",
+    "l:ánimo",
+    "p:aqui-ahi-alla",
+    "p:caber",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:entiendo-que-subj",
+    "p:event-ser-en",
+    "p:juraria-que",
+    "p:la-gente-singular",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:medir-pesar-caber",
+    "p:no-digo-que-pero",
+    "p:no-me-cabe-duda",
+    "p:personal-a",
+    "p:pues-claro-que",
+    "p:senor-don-article",
+    "p:sin-animo-de",
+    "p:sobre-todo-solo",
+    "p:tengo-entendido-que"
+  ]
+}
