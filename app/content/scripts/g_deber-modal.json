@@ -1,0 +1,44 @@
+{
+  "node": "g:deber-modal",
+  "hook": {
+    "line": "Hernando has been coughing at the corner table for a week and says it is nothing. Tomás wants to push, but gently. One small change to the verb is the difference between giving an order and giving a friend some advice.",
+    "es": "Deberías ir al médico.",
+    "en": "You should see a doctor. (to a friend)"
+  },
+  "examples": [
+    { "es": "Debes descansar.", "en": "You must rest. (to a friend)" },
+    { "es": "Deberías ir al médico.", "en": "You should see a doctor. (to a friend)" },
+    { "es": "No deberías tomar tanto café.", "en": "You shouldn't drink so much coffee. (to a friend)" },
+    { "es": "¿Debería llamar al doctor?", "en": "Should I call the doctor?" },
+    { "es": "Debe de estar cansada.", "en": "She must be tired." },
+    { "es": "Tomás debe de estar nervioso.", "en": "Tomás must be nervous." }
+  ],
+  "rule": "*Deber* plus a verb in its basic form does three jobs, and the ending tells you which.\n\n*Debes descansar*: you must rest. Strong, close to an order.\n*Deberías descansar*: you should rest. Softer, the form for advice. It is the \"would\" form you already know, so use it when in doubt.\n*Debe de estar cansada*: she must be tired. This is a guess, not an obligation. Add *de*, and the verb after it is nearly always *estar*, *ser* or *tener*.\n\nFor \"shouldn't\", put *no* before *deber*: *No deberías tomar café*.\n\nEnglish uses different words for each job. Spanish keeps one verb and changes the ending.\n\nIn fast speech people often drop the *de* from a guess, so listen to the meaning.",
+  "smallPrint": "Teachers call *deberías* the conditional of *deber*, and *deber de* plus a verb the way to express probability.",
+  "readAndPick": [
+    { "es": "Deberías ir al médico.", "options": ["You must go to the doctor.", "You should go to the doctor."], "answer": 1 },
+    { "es": "Debes ir al médico.", "options": ["You must go to the doctor.", "You should go to the doctor."], "answer": 0 },
+    { "es": "Debe de estar cansada.", "options": ["She has to rest.", "She should rest.", "She must be tired."], "answer": 2 },
+    { "es": "Debería descansar.", "options": ["He must be resting.", "He should rest."], "answer": 1 },
+    { "es": "No deberías tomar tanto café.", "options": ["You probably don't drink much coffee.", "You don't have to drink coffee.", "You shouldn't drink so much coffee."], "answer": 2 },
+    { "es": "Debe de tener fiebre.", "options": ["He must see a doctor.", "He must have a fever."], "answer": 1 },
+    { "es": "Deberíamos pedir una cita.", "options": ["They should make an appointment.", "We should make an appointment.", "I should make an appointment."], "answer": 1 },
+    { "es": "¿Qué deberíamos hacer?", "options": ["What did we do?", "What do we do?", "What should we do?"], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *deberías* or *debe de*. A guess about Vale, who isn't answering her phone: Vale ___ estar en la cocina.", "answer": "Vale debe de estar en la cocina.", "accept": ["Vale debe estar en la cocina."], "why": "You don't know, you are guessing, so it is *debe de*." },
+    { "prompt": "Say to a friend, as gentle advice: You should drink more water.", "answer": "Deberías tomar más agua.", "accept": [], "why": "Advice takes the softer form, *deberías*." },
+    { "prompt": "Say to a friend, firmly: You must take the pill with water.", "answer": "Debes tomar la pastilla con agua.", "accept": [], "why": "A firm \"must\" is *debes*, with no *de* and no extra word." },
+    { "prompt": "Guess: Tomás must be nervous.", "answer": "Tomás debe de estar nervioso.", "accept": ["Tomás debe estar nervioso."], "why": "A guess is *debe de* plus *estar*." },
+    { "prompt": "Make it negative, as advice to a friend: Deberías tomar café.", "answer": "No deberías tomar café.", "accept": [], "why": "Put *no* in front of *deberías*." },
+    { "prompt": "Change it to be about *we*: Deberías descansar.", "answer": "Deberíamos descansar.", "accept": [], "why": "For *we* the ending becomes *-íamos*." },
+    { "prompt": "Ask: Should I call the doctor?", "answer": "¿Debería llamar al doctor?", "accept": [], "why": "Asking for advice about yourself also uses *debería*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Deberías de ir al médico.", "right": "Deberías ir al médico.", "why": "Almost. The *de* belongs only to guesses, never to advice." },
+    { "wrong": "Debe de descansar.", "right": "Debería descansar.", "why": "*Debe de* is a guess: he probably rests. For \"he should rest\", use *debería*." },
+    { "wrong": "Debes no tomar tanto café.", "right": "No debes tomar tanto café.", "why": "*No* goes before *deber*, not before the second verb." },
+    { "wrong": "Deberías a ir al médico.", "right": "Deberías ir al médico.", "why": "*Deber* goes straight into the next verb, with no word like *a* in between." }
+  ],
+  "personal": "Give yourself one piece of advice with *debería*, and make one guess about someone you know with *debe de*."
+}

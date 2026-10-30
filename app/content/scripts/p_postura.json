@@ -1,0 +1,43 @@
+{
+  "node": "p:postura",
+  "hook": {
+    "line": "At the clinic, nobody says \"lie on your back\". The doctor tells you which way your face points. You will hear this one the first time someone needs to look at your back or your knee.",
+    "es": "Acuéstese boca arriba, por favor.",
+    "en": "Lie down face up, please. (formal)"
+  },
+  "examples": [
+    { "es": "Acuéstese boca arriba, por favor.", "en": "Lie down face up, please. (formal)" },
+    { "es": "Duerme boca abajo.", "en": "She sleeps face down." },
+    { "es": "Se puso de rodillas.", "en": "He knelt down." },
+    { "es": "Estuve de pie todo el día.", "en": "I was on my feet all day." },
+    { "es": "Mi abuela dormía boca arriba.", "en": "My grandmother used to sleep face up." },
+    { "es": "¿Duermes boca arriba o de lado?", "en": "Do you sleep face up or on your side? (to a friend)" }
+  ],
+  "rule": "Spanish names a body position with a short fixed phrase, and there is no article and no \"on your\" in it:\n\n*boca arriba*: face up, on your back\n*boca abajo*: face down, on your stomach\n*de rodillas*: kneeling\n*de pie*: standing, on your feet\n*de lado*: on your side\n\nThey follow verbs like *estar*, *dormir*, *acostarse* and *ponerse*. With *ponerse* they say how someone got into the position: *se puso de pie*, he stood up.\n\nEnglish talks about the back or the stomach. Spanish talks about the face: *arriba* is up, *abajo* is down.",
+  "smallPrint": "Teachers call these adverbial phrases of position. Learn each one as a single block.",
+  "readAndPick": [
+    { "es": "Acuéstese boca arriba, por favor.", "options": ["Lie on your stomach, please. (formal)", "Lie on your back, please. (formal)"], "answer": 1 },
+    { "es": "Acuéstese boca abajo, por favor.", "options": ["Lie on your stomach, please. (formal)", "Lie on your back, please. (formal)"], "answer": 0 },
+    { "es": "Estuve de pie todo el día.", "options": ["I was sitting all day.", "I was lying down all day.", "I was on my feet all day."], "answer": 2 },
+    { "es": "Se puso de rodillas.", "options": ["He knelt down.", "He stood up.", "He sat down."], "answer": 0 },
+    { "es": "Vale duerme boca abajo.", "options": ["Vale sleeps on her back.", "Vale sleeps on her stomach.", "Vale sleeps on her side."], "answer": 1 },
+    { "es": "Hernando se puso de pie.", "options": ["Hernando knelt down.", "Hernando lay down.", "Hernando stood up."], "answer": 2 },
+    { "es": "No puedo dormir boca abajo.", "options": ["I can't sleep on my back.", "I can't sleep on my stomach."], "answer": 1 },
+    { "es": "Mi abuela dormía boca arriba.", "options": ["My grandmother used to sleep on her back.", "My grandmother used to sleep on her stomach.", "My grandmother used to sleep on her side."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *arriba* or *abajo*. The doctor wants a patient on their back (formal): Acuéstese boca ___, por favor.", "answer": "Acuéstese boca arriba, por favor.", "accept": [], "why": "Face up, on your back, is *boca arriba*." },
+    { "prompt": "Say: I was on my feet all day.", "answer": "Estuve de pie todo el día.", "accept": ["Todo el día estuve de pie."], "why": "Standing is *de pie*, with no article." },
+    { "prompt": "Say about Vale: She sleeps face down.", "answer": "Vale duerme boca abajo.", "accept": ["Duerme boca abajo."], "why": "Face down is *boca abajo*, and *abajo* means down." },
+    { "prompt": "Say: He knelt down.", "answer": "Se puso de rodillas.", "accept": [], "why": "*Ponerse de rodillas* says how he got into the position." },
+    { "prompt": "Make it formal. The doctor says to an older patient: Acuéstate boca arriba.", "answer": "Acuéstese boca arriba.", "accept": ["Acuéstese boca arriba, por favor."], "why": "To someone you address as *usted*, the command ends in *-ese*." },
+    { "prompt": "Say you sleep on your stomach, not on your back: Duermo boca arriba.", "answer": "Duermo boca abajo.", "accept": [], "why": "Swap *arriba* for *abajo* to flip the position." },
+    { "prompt": "Ask a friend: Do you sleep face up or on your side?", "answer": "¿Duermes boca arriba o de lado?", "accept": [], "why": "*De lado* is the third common position, and the question uses *tú*, so *duermes*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Estuve en los pies todo el día.", "right": "Estuve de pie todo el día.", "why": "Almost. Spanish uses the fixed phrase *de pie* for standing, not a phrase about feet." },
+    { "wrong": "Duerme en la espalda.", "right": "Duerme boca arriba.", "why": "Spanish says which way the face points: *boca arriba*, not \"on the back\"." },
+    { "wrong": "Se puso en rodillas.", "right": "Se puso de rodillas.", "why": "The phrase starts with *de*, as in *de pie* and *de lado*." }
+  ],
+  "personal": "Say how you usually sleep, with *duermo* and *boca arriba*, *boca abajo* or *de lado*."
+}

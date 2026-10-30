@@ -1,0 +1,43 @@
+{
+  "node": "x:tener-que-deber",
+  "hook": {
+    "line": "Vale hears the doctor say something to Tomás and is not sure whether it was an order, a duty or a hint. Spanish has three ways to say \"have to\", and the choice changes how heavy the sentence sounds.",
+    "es": "Tengo que pagar.",
+    "en": "I have to pay."
+  },
+  "examples": [
+    { "es": "Tengo que pagar.", "en": "I have to pay." },
+    { "es": "Debo pagar.", "en": "I must pay." },
+    { "es": "Deberías pagar.", "en": "You should pay. (to a friend)" },
+    { "es": "No tienes que pagar.", "en": "You don't have to pay. (to a friend)" },
+    { "es": "No debes pagar.", "en": "You must not pay. (to a friend)" },
+    { "es": "Tengo que ir al médico mañana.", "en": "I have to go to the doctor tomorrow." }
+  ],
+  "rule": "Three ways to say it, from heavy to light:\n\n*Tengo que pagar*: I have to pay. The situation leaves no choice. This is the everyday one.\n*Debo pagar*: I must pay. A duty or what is right, a bit more formal.\n*Deberías pagar*: you should pay. Advice. You can say no.\n\nThe negatives are different jobs:\n*No tienes que pagar*: you don't have to. It is not needed.\n*No debes pagar*: you must not. It is wrong or forbidden.\n\nSo \"don't have to\" is not \"must not\". English \"don't have to\" and \"must not\" differ the same way. Ask yourself: is it unnecessary, or not allowed?",
+  "smallPrint": "Teachers call *tener que* obligation from outside, and *deber* obligation from inside, such as duty or moral sense.",
+  "readAndPick": [
+    { "es": "No tienes que venir.", "options": ["You must not come.", "You don't have to come."], "answer": 1 },
+    { "es": "No debes venir.", "options": ["You must not come.", "You don't have to come."], "answer": 0 },
+    { "es": "Deberías ir a urgencias.", "options": ["You have to go to the emergency room.", "You should go to the emergency room.", "You must not go to the emergency room."], "answer": 1 },
+    { "es": "Tienes que descansar.", "options": ["You should rest.", "You must not rest.", "You have to rest."], "answer": 2 },
+    { "es": "Tiene que ir a urgencias.", "options": ["He should go to the emergency room.", "He has to go to the emergency room."], "answer": 1 },
+    { "es": "No deberías pagar.", "options": ["You don't have to pay.", "You shouldn't pay.", "You must pay."], "answer": 1 },
+    { "es": "Tenemos que pagar.", "options": ["We should pay.", "They have to pay.", "We have to pay."], "answer": 2 },
+    { "es": "No tienes que comer eso.", "options": ["You must not eat that.", "You shouldn't eat that.", "You don't have to eat that."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *tengo que* or *debería*. My appointment is tomorrow and there is no choice: ___ ir al médico mañana.", "answer": "Tengo que ir al médico mañana.", "accept": [], "why": "The situation decides, with no room to say no: *tengo que*." },
+    { "prompt": "Say to a friend, as advice: You should call your mom.", "answer": "Deberías llamar a tu mamá.", "accept": [], "why": "Advice you can ignore takes *deberías*." },
+    { "prompt": "Say to a friend: You don't have to pay.", "answer": "No tienes que pagar.", "accept": [], "why": "\"Not needed\" is *no tienes que*." },
+    { "prompt": "Say to a friend, firmly: You must not eat that.", "answer": "No debes comer eso.", "accept": [], "why": "\"Not allowed\" or \"bad idea\" is *no debes*, not *no tienes que*." },
+    { "prompt": "Make it softer, as advice to a friend: Tienes que descansar.", "answer": "Deberías descansar.", "accept": [], "why": "Swapping *tienes que* for *deberías* turns a demand into advice." },
+    { "prompt": "Say you don't need to: Tengo que ir hoy.", "answer": "No tengo que ir hoy.", "accept": [], "why": "*No tengo que* means it isn't necessary." },
+    { "prompt": "Change it to be about *we*: Tengo que pagar.", "answer": "Tenemos que pagar.", "accept": [], "why": "For *we*, *tener* becomes *tenemos*, and *que* stays." }
+  ],
+  "pitfalls": [
+    { "wrong": "No tienes que comer eso.", "right": "No debes comer eso.", "why": "Almost. *No tienes que* only says it is not necessary. To say it is not allowed, use *no debes*." },
+    { "wrong": "No debes pagar.", "right": "No tienes que pagar.", "why": "If you mean \"you don't have to\", *no debes* sounds like \"you must not\"." },
+    { "wrong": "Debes que ir al médico.", "right": "Tienes que ir al médico.", "why": "*Que* belongs to *tener*, while *deber* goes straight into the next verb." }
+  ],
+  "personal": "Say one thing you have to do this week with *tengo que*, and one thing you should do with *debería*."
+}
