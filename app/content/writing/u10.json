@@ -477,5 +477,328 @@
       "l:recomendar",
       "l:sopa"
     ]
+  },
+  {
+    "id": "w-u10-13",
+    "unit": "u10",
+    "prompt": "Your friend Camilo asks what you want to eat tonight. Text him back, someone your age: say one dish you like and ask if he likes another.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (gusta|gustan|encanta|encantan)\\b",
+        "label": "say what you like with me gusta or me gustan"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "yo gusto",
+          "gusto el",
+          "gusto la"
+        ],
+        "label": "gustar works like \"is pleasing to me\": me gusta, not yo gusto"
+      }
+    ],
+    "model": "Me gusta el ajiaco. ¿Y te gustan las arepas?",
+    "focus": "g:gustar-full",
+    "requires": [
+      "c:me-gusta",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "l:ajiaco",
+      "l:arepa",
+      "l:gustar"
+    ]
+  },
+  {
+    "id": "w-u10-14",
+    "unit": "u10",
+    "prompt": "Mariana asks if you and Vale like the same desserts. Text her two short sentences: what Vale likes and what Tomás likes.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\ba vale le (gusta|gustan)\\b",
+        "label": "say what Vale likes with a Vale le gusta"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\ba tomás le (gusta|gustan)\\b",
+        "label": "say what Tomás likes with a Tomás le gusta"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "vale gusta",
+          "tomás gusta",
+          "tomás gustan"
+        ],
+        "label": "keep the pronoun: a Vale le gusta"
+      }
+    ],
+    "model": "A Vale le gusta la torta. A Tomás le gustan las frutas.",
+    "focus": "g:gustar-full",
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:gustar-full",
+      "g:present-ar",
+      "l:fruta",
+      "l:gustar",
+      "l:torta"
+    ]
+  },
+  {
+    "id": "w-u10-15",
+    "unit": "u10",
+    "prompt": "You cannot meet Mariana for lunch today. Text her, as a friend, one sentence saying what you have to do, and one asking about tomorrow.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\btengo que \\w+(ar|er|ir)\\b",
+        "label": "use tengo que plus an infinitive"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tengo trabajar",
+          "tengo de"
+        ],
+        "label": "tener que needs que before the verb"
+      }
+    ],
+    "model": "Hoy tengo que trabajar en el café. ¿Comemos mañana?",
+    "focus": "g:tener-que-hay-que",
+    "requires": [
+      "c:tengo",
+      "c:tengo-que",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:café",
+      "l:comer",
+      "l:hoy",
+      "l:mañana",
+      "l:tener",
+      "l:trabajar"
+    ]
+  },
+  {
+    "id": "w-u10-16",
+    "unit": "u10",
+    "prompt": "You are leaving a note for a new waiter at Rosa's café. In two short sentences, tell him one thing that must be done at every table (a general rule, not about him).",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bhay que \\w+(ar|er|ir)\\b",
+        "label": "use hay que plus an infinitive for a general rule"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "hay que de",
+          "hay de"
+        ],
+        "label": "hay que goes straight before the infinitive"
+      }
+    ],
+    "model": "Hay que llevar la carta a la mesa. Y hay que traer agua.",
+    "focus": "g:tener-que-hay-que",
+    "requires": [
+      "c:hay",
+      "c:hay-que",
+      "g:gender-articles",
+      "g:verb-infinitive",
+      "l:agua",
+      "l:carta",
+      "l:llevar",
+      "l:mesa",
+      "l:traer",
+      "p:llevar-traer"
+    ]
+  },
+  {
+    "id": "w-u10-17",
+    "unit": "u10",
+    "prompt": "Describe to Mariana what you and a friend order at Rosa's café: your friend orders a cake and you order a coffee. Write one sentence, as a friend.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "pedir",
+        "tense": "presente",
+        "person": "él/ella",
+        "label": "use pide for your friend"
+      },
+      {
+        "type": "verbForm",
+        "inf": "pedir",
+        "tense": "presente",
+        "person": "yo",
+        "label": "use pido for yourself"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "pedo",
+          "pedes",
+          "pedimos"
+        ],
+        "label": "pedir changes e to i: pide, pido"
+      }
+    ],
+    "model": "Mi amigo pide una torta y yo pido un café.",
+    "focus": "g:stem-e-i",
+    "requires": [
+      "g:gender-articles",
+      "g:stem-e-i",
+      "l:amigo",
+      "l:café",
+      "l:pedir",
+      "l:torta",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u10-18",
+    "unit": "u10",
+    "prompt": "A new friend your age is about to try Colombian restaurants. Text two short sentences: ask what he orders, and say what you always order.",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "pedir",
+        "tense": "presente",
+        "person": "tú",
+        "label": "use pides when asking him"
+      },
+      {
+        "type": "verbForm",
+        "inf": "pedir",
+        "tense": "presente",
+        "person": "yo",
+        "label": "use pido for yourself"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "¿Qué pides tú en un restaurante? Yo siempre pido sopa.",
+    "focus": "g:stem-e-i",
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:stem-e-i",
+      "l:pedir",
+      "l:qué",
+      "l:restaurante",
+      "l:siempre",
+      "l:sopa",
+      "p:frequency-scale"
+    ]
+  },
+  {
+    "id": "w-u10-19",
+    "unit": "u10",
+    "prompt": "You are at Rosa's café and Vale asks who the cake is for. Reply in two short sentences: it is for her, and you want to eat it with her.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bpara ti\\b",
+        "label": "use para ti after para"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bcontigo\\b",
+        "label": "use contigo, not con ti"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "con ti",
+          "para tú"
+        ],
+        "label": "after con say contigo; after para say ti"
+      }
+    ],
+    "model": "La torta es para ti. Quiero comer contigo.",
+    "focus": "g:prep-pronouns",
+    "requires": [
+      "c:quiero",
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:comer",
+      "l:querer",
+      "l:ser",
+      "l:torta",
+      "p:para-inf"
+    ]
+  },
+  {
+    "id": "w-u10-20",
+    "unit": "u10",
+    "prompt": "Mariana texts to ask about tonight's table at the café. Reply in two short sentences: the table is for you and Vale, and you are going with Vale (use a pronoun for her).",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bpara nosotros\\b",
+        "label": "use para nosotros for the two of you"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bcon ella\\b",
+        "label": "use con ella, not con Vale"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "con ti",
+          "con tú",
+          "para tú"
+        ],
+        "label": "after con or para use pronouns like ella, nosotros, ti, not tú"
+      }
+    ],
+    "model": "La mesa es para nosotros. Voy con ella.",
+    "focus": "g:prep-pronouns",
+    "requires": [
+      "c:con-el-ella",
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "l:ir",
+      "l:mesa",
+      "l:ser",
+      "p:para-inf"
+    ]
   }
 ]
