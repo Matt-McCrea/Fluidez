@@ -1,0 +1,216 @@
+{
+  "id": "sc-u38-b",
+  "unit": "u38",
+  "title": "El tinto de don Hernando",
+  "spare": false,
+  "brief": "You're Tomás. Don Hernando comes in with the newspaper. He's older than you, so use usted with him, though he says tú to you. Talk about how you found out, what you hadn't noticed, where tomorrow's march is and who deserves thanks.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, Tomás. Todo el barrio habla del artículo. ¿Te enteraste de que suspendieron al empleado de la alcaldía?",
+      "npcEn": "Good morning, Tomás. The whole neighbourhood is talking about the article. Did you find out they suspended the city hall employee?",
+      "intent": "Say yes, you found out from Mariana this morning.",
+      "accept": [
+        "Sí, me enteré por Mariana esta mañana.",
+        "Sí, me enteré esta mañana, por Mariana.",
+        "Sí, Mariana me lo contó esta mañana y me enteré."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "enteré"
+          ],
+          "label": "found out: me enteré"
+        }
+      ],
+      "focus": "x:darse-cuenta-enterarse",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Yo no me di cuenta de nada. Esas casas estuvieron ahí toda la vida. ¿Y usted?",
+      "npcEn": "I didn't notice a thing. Those houses were there all my life. And you?",
+      "intent": "Say you didn't notice anything either until the article came out.",
+      "accept": [
+        "Yo tampoco me di cuenta de nada hasta que salió el artículo.",
+        "Yo no me di cuenta de nada hasta que Mariana publicó el artículo.",
+        "Tampoco me di cuenta de nada hasta el artículo."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "cuenta"
+          ],
+          "label": "noticing: me di cuenta"
+        }
+      ],
+      "focus": "x:darse-cuenta-enterarse",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mañana hay una manifestación frente al Palacio. ¿Sabe dónde es?",
+      "npcEn": "Tomorrow there's a protest in front of the Palace. Do you know where it is?",
+      "intent": "Say it is in the Plaza de Bolívar, at ten in the morning.",
+      "accept": [
+        "Es en la Plaza de Bolívar, a las diez de la mañana.",
+        "La manifestación es en la Plaza de Bolívar, a las diez.",
+        "Creo que es en la Plaza de Bolívar, a las diez."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bes en\\b",
+          "flags": "i",
+          "label": "an event: es en, not está en"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "está en"
+          ],
+          "label": "an event takes es en, not está en"
+        }
+      ],
+      "focus": "x:es-en-esta-en",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Altamira intentó callar la historia, pero ahora todo el país la conoce.",
+      "npcEn": "Altamira tried to silence the story, but now the whole country knows it.",
+      "intent": "Say that thanks to Mariana, the whole neighbourhood knows the truth.",
+      "accept": [
+        "Gracias a Mariana, todo el barrio sabe la verdad.",
+        "Sí, y gracias a ella sabemos la verdad.",
+        "Todo el barrio sabe la verdad gracias a Mariana."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "gracias a"
+          ],
+          "label": "thanks to: gracias a"
+        }
+      ],
+      "focus": "x:gracias-a-debido-a",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bueno, me siento junto a la ventana. Un tinto, por favor.",
+      "npcEn": "Well, I'll sit by the window. A black coffee, please.",
+      "intent": "Say of course, you'll bring it right away, and that the coffee is on the house today.",
+      "accept": [
+        "Claro, ya se lo traigo. Hoy lo invita la casa.",
+        "Enseguida se lo llevo. Hoy el tinto es de la casa.",
+        "Claro que sí. Ya se lo llevo, y hoy no le cobro."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "te lo",
+            "tienes"
+          ],
+          "label": "use usted with Don Hernando"
+        }
+      ],
+      "focus": "g:passive-ser",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:la-verdad",
+    "c:por-favor",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:ahí",
+    "l:alcaldía",
+    "l:artículo",
+    "l:barrio",
+    "l:bueno",
+    "l:callar",
+    "l:casa",
+    "l:claro",
+    "l:cobrar",
+    "l:conocer",
+    "l:contar",
+    "l:creer",
+    "l:cuenta",
+    "l:darse",
+    "l:día",
+    "l:dónde",
+    "l:empleado",
+    "l:enseguida",
+    "l:enterarse",
+    "l:estar",
+    "l:favor",
+    "l:frente",
+    "l:hablar",
+    "l:historia",
+    "l:hoy",
+    "l:intentar",
+    "l:invitar",
+    "l:junto",
+    "l:llevar",
+    "l:manifestación",
+    "l:mañana",
+    "l:país",
+    "l:publicar",
+    "l:saber",
+    "l:salir",
+    "l:sentirse",
+    "l:ser",
+    "l:suspender",
+    "l:tinto",
+    "l:traer",
+    "l:ventana",
+    "l:verdad",
+    "l:vida",
+    "p:aqui-ahi-alla",
+    "p:darse-cuenta-de",
+    "p:demonstratives-basic",
+    "p:enterarse-de",
+    "p:gracias-a-por-culpa-de",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:por-culpa-de",
+    "p:por-la-manana",
+    "p:posicion-precisa",
+    "p:saber-conocer",
+    "p:sentirse-mal",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:todos-los-dias"
+  ]
+}

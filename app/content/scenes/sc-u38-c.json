@@ -1,0 +1,197 @@
+{
+  "id": "sc-u38-c",
+  "unit": "u38",
+  "title": "Doce periodistas",
+  "spare": true,
+  "brief": "You're Tomás, talking to Vale, who is in the kitchen while reporters crowd the door. She is a friend, so use tú. Decide what to tell the press, correct a detail, explain why the story matters and find out what she told Altamira.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, hay doce periodistas en la puerta y una cámara en el mostrador. ¿Qué les digo?",
+      "npcEn": "Tomás, there are twelve reporters at the door and a camera on the counter. What do I tell them?",
+      "intent": "Tell her to say the café is staying open, despite everything.",
+      "accept": [
+        "Diles que el café sigue abierto a pesar de todo.",
+        "Dile que el café abre, a pesar de todo.",
+        "Diles que seguimos abiertos, a pesar de todo."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "a pesar de",
+            "sin embargo",
+            "aun así"
+          ],
+          "label": "despite: a pesar de"
+        }
+      ],
+      "focus": "g:concession-despite",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Uno pregunta si es verdad que las casas fueron demolidas aquí al lado.",
+      "npcEn": "One asks whether it's true that the houses were demolished right next door.",
+      "intent": "Say no, they were demolished far from here.",
+      "accept": [
+        "No, fueron demolidas lejos de aquí.",
+        "No, las casas fueron demolidas lejos de aquí.",
+        "No, fueron demolidas bastante lejos de aquí."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bfueron\\s+demolidas\\b",
+          "flags": "i",
+          "label": "were demolished: fueron demolidas"
+        },
+        {
+          "type": "negation"
+        }
+      ],
+      "focus": "g:passive-ser",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Otro quiere saber por qué este artículo es tan importante para el barrio.",
+      "npcEn": "Another wants to know why this article is so important for the neighbourhood.",
+      "intent": "Say it matters because those houses are part of the neighbourhood's history (give the cause with ya que, puesto que, debido a or a causa de).",
+      "accept": [
+        "Es importante ya que esas casas son parte de la historia del barrio.",
+        "Es importante puesto que son parte de la historia del barrio.",
+        "Para el barrio es importante, ya que esas casas son su historia."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "debido a",
+            "a causa de",
+            "ya que",
+            "puesto que"
+          ],
+          "label": "give the cause: ya que, puesto que, debido a, a causa de"
+        }
+      ],
+      "focus": "g:causal-advanced",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ah, y Altamira acaba de llamar. Dice que todo es ficción. ¡Ficción! Pero yo ya les contesté.",
+      "npcEn": "Oh, and Altamira just called. It says it's all fiction. Fiction! But I already answered them.",
+      "intent": "Ask her what she told them.",
+      "accept": [
+        "¿Y qué les respondiste?",
+        "¿Qué les contestaste tú?",
+        "¿Qué les respondiste a ellos?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "x:lo-le",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Les respondí que, si esto es ficción,, mis croissants también. Bueno, bajo con una bandeja de pan para los periodistas.",
+      "npcEn": "I told them that, if this is fiction, so are my croissants. Anyway, I'm coming down with a tray of bread for the reporters.",
+      "intent": "Say good idea, thank her, and say you'll make the coffee.",
+      "accept": [
+        "Buena idea, gracias. Yo preparo el café.",
+        "Gracias, Vale. Yo hago el café.",
+        "Me parece muy bien. Gracias, yo preparo el café."
+      ],
+      "require": [],
+      "focus": "g:passive-ser",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "g:acabar-de-ya-todavia",
+    "g:causal-advanced",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:concession-despite",
+    "g:demonstratives",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:parecer-quedar",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:quantifiers",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:acabar",
+    "l:aquí",
+    "l:artículo",
+    "l:bandeja",
+    "l:barrio",
+    "l:bien",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:casa",
+    "l:contestar",
+    "l:cámara",
+    "l:decir",
+    "l:ficción",
+    "l:hacer",
+    "l:historia",
+    "l:idea",
+    "l:importante",
+    "l:lado",
+    "l:lejos",
+    "l:llamar",
+    "l:mostrador",
+    "l:pan",
+    "l:parecer",
+    "l:parte",
+    "l:periodista",
+    "l:pesar",
+    "l:poner",
+    "l:pregunta",
+    "l:preparar",
+    "l:puerta",
+    "l:querer",
+    "l:qué",
+    "l:responder",
+    "l:saber",
+    "l:seguir",
+    "l:ser",
+    "l:verdad",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:container-de",
+    "p:demonstratives-basic",
+    "p:me-parece-bien-que",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:saber-conocer"
+  ]
+}

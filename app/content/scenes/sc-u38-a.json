@@ -1,0 +1,216 @@
+{
+  "id": "sc-u38-a",
+  "unit": "u38",
+  "title": "Micrófono en el mostrador",
+  "spare": false,
+  "brief": "You're Tomás. A TV reporter has come into the café with a camera. She doesn't know you, so use usted. Say when you found out, what happened to the houses, why the official was suspended, and what you think of Altamira's reaction.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes, soy Lucía Peña, del Canal 7. ¿Cuándo se enteró usted de la noticia?",
+      "npcEn": "Good afternoon, I'm Lucía Peña, from Channel 7. When did you find out about the news?",
+      "intent": "Say you found out this morning, when Mariana called you.",
+      "accept": [
+        "Me enteré esta mañana, cuando Mariana me llamó.",
+        "Esta mañana. Mariana me llamó y me enteré.",
+        "Me enteré hoy por la mañana, porque Mariana me llamó."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "enteré"
+          ],
+          "label": "found out: me enteré"
+        }
+      ],
+      "focus": "p:enterarse-de",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Dos casas antiguas desaparecieron en una sola noche. ¿Qué pasó exactamente?",
+      "npcEn": "Two old houses disappeared in a single night. What exactly happened?",
+      "intent": "Say the two houses were demolished at night (use ser + participle).",
+      "accept": [
+        "Las dos casas fueron demolidas de noche.",
+        "Fueron demolidas durante la noche, sin avisar a nadie.",
+        "El artículo dice que las casas fueron demolidas de noche."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bfueron\\s+demolidas\\b",
+          "flags": "i",
+          "label": "were demolished: fueron demolidas"
+        }
+      ],
+      "focus": "g:passive-ser",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "El empleado de la alcaldía fue suspendido ayer. ¿Por qué lo suspendieron?",
+      "npcEn": "The city hall employee was suspended yesterday. Why was he suspended?",
+      "intent": "Say he was suspended because of the permits he signed (give the cause with debido a, a causa de, ya que or puesto que).",
+      "accept": [
+        "Fue suspendido debido a los permisos que firmó.",
+        "Lo suspendieron a causa de los permisos de los seis edificios.",
+        "Fue suspendido ya que firmó todos los permisos."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "debido a",
+            "a causa de",
+            "ya que",
+            "puesto que"
+          ],
+          "label": "give the cause: debido a, a causa de, ya que, puesto que"
+        }
+      ],
+      "focus": "g:causal-advanced",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Altamira dice que el artículo es pura ficción. ¿Qué opina usted?",
+      "npcEn": "Altamira says the article is pure fiction. What do you think?",
+      "intent": "Say that, despite what Altamira says, the documents are real.",
+      "accept": [
+        "A pesar de lo que dice Altamira, los documentos son reales.",
+        "Altamira dice eso; sin embargo, los documentos son reales.",
+        "Los documentos son reales. Aun así, ellos dicen que es ficción."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "a pesar de",
+            "sin embargo",
+            "aun así"
+          ],
+          "label": "despite: a pesar de, sin embargo, aun así"
+        }
+      ],
+      "focus": "g:concession-despite",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Muchas gracias por su tiempo. Ya apagamos la cámara.",
+      "npcEn": "Thank you very much for your time. We've switched the camera off.",
+      "intent": "Thank her, and invite her to sit down for a coffee, on the house.",
+      "accept": [
+        "Gracias a usted. Siéntese, el tinto lo invita la casa.",
+        "Gracias. Siéntese, por favor, que el café va por la casa.",
+        "A usted. Siéntese y tome un café, es una invitación de la casa."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tienes",
+            "quieres",
+            "siéntate"
+          ],
+          "label": "use usted with a stranger"
+        }
+      ],
+      "focus": "g:passive-ser",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-llamo",
+    "c:por-favor",
+    "c:porque",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:causal-advanced",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:concession-despite",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:passive-ser",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "l:alcaldía",
+    "l:antiguo",
+    "l:apagar",
+    "l:artículo",
+    "l:avisar",
+    "l:ayer",
+    "l:buena",
+    "l:café",
+    "l:casa",
+    "l:causa",
+    "l:cuándo",
+    "l:cámara",
+    "l:deber",
+    "l:decir",
+    "l:desaparecer",
+    "l:documento",
+    "l:edificio",
+    "l:embargo",
+    "l:empleado",
+    "l:enterarse",
+    "l:exactamente",
+    "l:favor",
+    "l:ficción",
+    "l:firmar",
+    "l:hoy",
+    "l:invitación",
+    "l:invitar",
+    "l:ir",
+    "l:llamar",
+    "l:mañana",
+    "l:noche",
+    "l:noticia",
+    "l:opinar",
+    "l:pasar",
+    "l:permiso",
+    "l:pesar",
+    "l:puro",
+    "l:qué",
+    "l:real",
+    "l:sentarse",
+    "l:ser",
+    "l:suspender",
+    "l:tarde",
+    "l:tiempo",
+    "l:tinto",
+    "l:tomar",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:durar-durante",
+    "p:enterarse-de",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:por-culpa-de",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:que-opinas-de",
+    "p:request-ladder",
+    "p:viejo-antiguo-mayor"
+  ]
+}
