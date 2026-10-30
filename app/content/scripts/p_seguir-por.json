@@ -1,0 +1,44 @@
+{
+  "node": "p:seguir-por",
+  "hook": {
+    "line": "A shaken tourist on the Séptima asks Tomás how to get to the police station, and Tomás wants to answer with more than a wave of the hand. Naming the road you travel along takes one small word.",
+    "es": "Siga por la Séptima hasta la calle 72.",
+    "en": "Carry on along Seventh Avenue to 72nd Street. (formal)"
+  },
+  "examples": [
+    { "es": "Siga por la Séptima hasta la calle 72.", "en": "Carry on along Seventh Avenue to 72nd Street. (formal)" },
+    { "es": "Sigue por la Caracas hasta la calle 26.", "en": "Carry on along Caracas Avenue to 26th Street. (to a friend)" },
+    { "es": "Suba por esta calle hasta el parque.", "en": "Go up this street to the park. (formal)" },
+    { "es": "Iba por la Caracas cuando pasó.", "en": "I was going along Caracas Avenue when it happened." },
+    { "es": "Vale caminaba por la calle cuando se cayó.", "en": "Vale was walking along the street when she fell." },
+    { "es": "En Colombia se maneja por la derecha.", "en": "In Colombia people drive on the right." }
+  ],
+  "rule": "English names a road with *along*, *down*, *up* or *on*. Spanish uses one small word for all of them: *por*.\n\nThe verb gives the direction, and *por* names the road:\n*seguir por*: carry on along\n*subir por*: go up\n*bajar por*: go down\n*caminar por*, *manejar por*, *ir por*: walk, drive, go along\n\nDon't drop *por*. *Siga la Séptima* sounds like following a person named Séptima. *Por* also picks the side: *por la derecha*.\n\nFor a fixed spot, not a route, use *en*: *Estoy en la Séptima.*",
+  "smallPrint": "Teachers call this *por* of route, or *por* of path: it marks the space you move through, not where you end up (that's *a* or *hasta*).",
+  "readAndPick": [
+    { "es": "Suba por esta calle hasta el parque.", "options": ["Go up this street to the park. (formal)", "Go down this street to the park. (formal)", "Cross this street to the park. (formal)"], "answer": 0 },
+    { "es": "Baje por la Caracas.", "options": ["Go up Caracas Avenue. (formal)", "Stay on Caracas Avenue. (formal)", "Go down Caracas Avenue. (formal)"], "answer": 2 },
+    { "es": "Sigue por la Séptima hasta la calle 72.", "options": ["Carry on along Seventh Avenue to 72nd Street. (to a friend)", "Carry on along Seventh Avenue to 72nd Street. (formal)"], "answer": 0 },
+    { "es": "Siga por la Séptima hasta la calle 72.", "options": ["Carry on along Seventh Avenue to 72nd Street. (to a friend)", "Carry on along Seventh Avenue to 72nd Street. (formal)"], "answer": 1 },
+    { "es": "Iba por la Caracas cuando pasó.", "options": ["I'm going along Caracas Avenue when it happens.", "I was going along Caracas Avenue when it happened.", "I went home along Caracas Avenue after it happened."], "answer": 1 },
+    { "es": "En Colombia se maneja por la derecha.", "options": ["In Colombia people drive on the left.", "In Colombia people drive on the right.", "In Colombia people drive anywhere."], "answer": 1 },
+    { "es": "Camine por la avenida hasta el puente.", "options": ["Walk along the avenue to the bridge. (formal)", "Walk across the bridge to the avenue. (formal)"], "answer": 0 },
+    { "es": "Vale caminaba por la calle cuando se cayó.", "options": ["Vale was walking along the street when she fell.", "Vale was standing in the street when she fell.", "Vale walks along the street and she falls."], "answer": 0 },
+    { "es": "Fuimos por el centro.", "options": ["I went through the centre.", "They went through the centre.", "We went through the centre."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *por* or *en* and type the whole sentence: *Siga ___ la Séptima hasta la calle 72.* (formal)", "answer": "Siga por la Séptima hasta la calle 72.", "accept": [], "why": "You are moving along the road, so *por* names the route." },
+    { "prompt": "Choose *por* or *en* and type the whole sentence: *Camine ___ la avenida hasta el puente.* (formal)", "answer": "Camine por la avenida hasta el puente.", "accept": [], "why": "Walking along the avenue is a route, so *por*." },
+    { "prompt": "Say: Carry on along Caracas Avenue to 26th Street. (to a friend)", "answer": "Sigue por la Caracas hasta la calle 26.", "accept": [], "why": "A friend gets *sigue*, and *por* names the road." },
+    { "prompt": "Say: Go up this street to the park. (formal)", "answer": "Suba por esta calle hasta el parque.", "accept": [], "why": "*Subir* gives the direction (up) and *por* names the street." },
+    { "prompt": "Say: I was going along Seventh Avenue when it happened.", "answer": "Iba por la Séptima cuando pasó.", "accept": [], "why": "*Iba* sets the scene, and *por la Séptima* names the road." },
+    { "prompt": "Change to a formal command: *Sigue por la Séptima hasta la calle 72.*", "answer": "Siga por la Séptima hasta la calle 72.", "accept": [], "why": "Formal commands use *siga*, and *por* stays the same." },
+    { "prompt": "Say: In Colombia people drive on the right.", "answer": "En Colombia se maneja por la derecha.", "accept": ["Se maneja por la derecha en Colombia."], "why": "*Por* picks the side of the road, just as it names the road itself." }
+  ],
+  "pitfalls": [
+    { "wrong": "Siga la Séptima hasta la calle 72.", "right": "Siga por la Séptima hasta la calle 72.", "why": "Almost. English drops the little word (*carry on Seventh*), but Spanish needs *por* to name the road." },
+    { "wrong": "Iba en la Caracas cuando pasó.", "right": "Iba por la Caracas cuando pasó.", "why": "Almost. *En* is for a fixed spot; when you are moving along a road, Spanish uses *por*." },
+    { "wrong": "En Colombia se maneja en la derecha.", "right": "En Colombia se maneja por la derecha.", "why": "Almost. English says *on the right*, but the side you travel on takes *por* in Spanish." }
+  ],
+  "personal": "Think of your usual walk or drive to work, school or the shop. Say it in two or three short sentences with *por* (*Camino por…*, *Subo por…*)."
+}

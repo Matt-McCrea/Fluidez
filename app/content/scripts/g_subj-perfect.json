@@ -1,0 +1,46 @@
+{
+  "node": "g:subj-perfect",
+  "hook": {
+    "line": "Everything has gone wrong this week, and Tomás keeps checking on people after the fact: did you get home, did the parrot get out, did anyone read the note? Hoping or doubting that something has already happened is a very human thing to say.",
+    "es": "Espero que Simón no se haya perdido.",
+    "en": "I hope Simón hasn't got lost."
+  },
+  "examples": [
+    { "es": "Espero que hayas llegado bien.", "en": "I hope you got there safely. (to a friend)" },
+    { "es": "Espero que Simón no se haya perdido.", "en": "I hope Simón hasn't got lost." },
+    { "es": "No creo que lo hayan leído.", "en": "I don't think they've read it." },
+    { "es": "Me alegra que hayas venido.", "en": "I'm glad you came. (to a friend)" },
+    { "es": "Dudo que Vale haya terminado todavía.", "en": "I doubt Vale has finished yet." },
+    { "es": "Espero que hayamos llegado a tiempo.", "en": "I hope we got there in time." }
+  ],
+  "rule": "English hides this in a plain past: *I hope you got there*, *I'm glad you came*. Spanish builds it with a helper plus a past form, after the same hope, doubt and feeling phrases you already know.\n\nThe helper:\n*haya*: I, he, she, you (formal)\n*hayas*: you (friend)\n*hayamos*: we\n*hayan*: they, you all\n\nThen the past form that never changes: *llegado*, *venido*, *leído*, *terminado*, *hecho*.\n\nIt looks back at something that already happened. Compare *Espero que llegue bien* (I hope you arrive) with *Espero que hayas llegado bien* (I hope you have arrived).\n\nDon't use *has* or *ha* here: after these triggers the helper switches to *haya*.",
+  "smallPrint": "Teachers call this the present perfect subjunctive: *haber* in the subjunctive plus a past participle. In Latin America it often covers a recent finished action too, where English says simply *you came*.",
+  "soundTip": "The *h* is silent, so *haya* sounds like *AH-ya*, with the *y* of *yes*. *Hayan* is *AH-yan*.",
+  "readAndPick": [
+    { "es": "Espero que hayas llegado bien.", "options": ["I hope she got there safely.", "I hope you got there safely. (to a friend)", "I hope they got there safely."], "answer": 1 },
+    { "es": "No creo que lo hayan leído.", "options": ["I don't think you've read it. (to a friend)", "I don't think he has read it.", "I don't think they've read it."], "answer": 2 },
+    { "es": "Espero que haya llegado bien.", "options": ["I hope she got there safely.", "I hope you got there safely. (to a friend)", "I hope we got there safely."], "answer": 0 },
+    { "es": "Dudo que Vale haya terminado.", "options": ["I hope Vale has finished.", "I know Vale has finished.", "I doubt Vale has finished."], "answer": 2 },
+    { "es": "Espero que llegue bien.", "options": ["I hope she got there safely.", "I hope she gets there safely."], "answer": 1 },
+    { "es": "Dudo que hayamos llegado a tiempo.", "options": ["I doubt they got there in time.", "I doubt I got there in time.", "I doubt we got there in time."], "answer": 2 },
+    { "es": "Espero que Simón no se haya perdido.", "options": ["I hope Simón doesn't get lost.", "I hope Simón hasn't got lost.", "I hope Simón got lost."], "answer": 1 },
+    { "es": "Me alegra que hayas venido.", "options": ["I'm glad she came.", "I'm glad you will come. (to a friend)", "I'm glad you came. (to a friend)"], "answer": 2 },
+    { "es": "Qué bueno que ustedes hayan venido.", "options": ["I'm glad you all came.", "I'm glad I came.", "I'm glad you will all come."], "answer": 0 },
+    { "es": "No creo que hayan abierto todavía.", "options": ["I think they've already opened.", "I don't think they've opened yet.", "I don't think they will open."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *has* or *hayas* and type the whole sentence: *Espero que ___ llegado bien.* (to a friend)", "answer": "Espero que hayas llegado bien.", "accept": [], "why": "After *espero que* the helper switches to *hayas*; *has* is for plain statements." },
+    { "prompt": "Choose *haya* or *hayan* and type the whole sentence: *No creo que lo ___ leído.* (they)", "answer": "No creo que lo hayan leído.", "accept": [], "why": "*They* needs *hayan*; *haya* is for one person." },
+    { "prompt": "Say: I hope Simón hasn't got lost.", "answer": "Espero que Simón no se haya perdido.", "accept": ["Espero que no se haya perdido Simón."], "why": "Hope + *que* + *haya* + *perdido*, with *no se* before the helper." },
+    { "prompt": "Say: I'm glad you came. (to a friend)", "answer": "Me alegra que hayas venido.", "accept": ["Qué bueno que hayas venido."], "why": "A feeling about something done takes *hayas* + *venido*." },
+    { "prompt": "Say: I doubt Vale has finished yet.", "answer": "Dudo que Vale haya terminado todavía.", "accept": [], "why": "*Dudo que* needs the subjunctive helper *haya*, then *terminado*." },
+    { "prompt": "Change *you* to *we*: *Espero que hayas llegado a tiempo.*", "answer": "Espero que hayamos llegado a tiempo.", "accept": [], "why": "*We* uses *hayamos*; the past form *llegado* stays the same." },
+    { "prompt": "Change the hope into doubt, starting with *No creo que*: *Espero que lo hayan leído.*", "answer": "No creo que lo hayan leído.", "accept": ["Dudo que lo hayan leído."], "why": "Doubt is another trigger, so *hayan leído* stays as it was." }
+  ],
+  "pitfalls": [
+    { "wrong": "Espero que has llegado bien.", "right": "Espero que hayas llegado bien.", "why": "Almost. After *espero que* Spanish needs the subjunctive helper *hayas*, not *has*." },
+    { "wrong": "Espero que hayas llegaste bien.", "right": "Espero que hayas llegado bien.", "why": "Almost. After the helper comes the unchanging *-ado* form, *llegado*, not a finished-past verb." },
+    { "wrong": "Me alegra que viniste.", "right": "Me alegra que hayas venido.", "why": "Almost. After a feeling like *me alegra que*, Spanish uses *hayas venido* for something that has happened." }
+  ],
+  "personal": "Think of someone who travelled, had an exam or started something new lately. Write one hope with *Espero que…* and one feeling with *Me alegra que…*, each with *haya* and a past form."
+}
