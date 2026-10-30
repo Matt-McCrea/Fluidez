@@ -1,0 +1,139 @@
+{
+  "node": "g:si-hypothetical",
+  "hook": {
+    "line": "Sooner or later in Taganga someone says what they would do if life were different. It is how people daydream, complain and give advice, and you now have both halves of the sentence.",
+    "es": "Si tuviera plata, compraría un barco.",
+    "en": "If I had money, I'd buy a boat."
+  },
+  "examples": [
+    { "es": "Si tuviera plata, viajaría más.", "en": "If I had money, I'd travel more." },
+    { "es": "Si yo fuera tú, hablaría con ella.", "en": "If I were you, I'd talk to her. (to a friend)" },
+    { "es": "Si no lloviera, abriríamos la terraza.", "en": "If it weren't raining, we'd open the terrace." },
+    { "es": "Si Vale estuviera aquí, nos ayudaría.", "en": "If Vale were here, she'd help us." },
+    { "es": "¿Qué harías si ganaras la lotería?", "en": "What would you do if you won the lottery? (to a friend)" },
+    { "es": "Si pudiera, me quedaría en Santa Marta.", "en": "If I could, I'd stay in Santa Marta." },
+    { "es": "Me quedaría si pudiera.", "en": "I'd stay if I could." }
+  ],
+  "rule": "An imaginary *if* has two halves, and each one has its own form:\n\n*si* + the *ra* form (from last lesson), then the *would* form you already know (*viajaría*, *hablaría*, *nos ayudaría*).\n\n*Si tuviera plata* (the *if* half), *viajaría más* (the *would* half).\n\nEnglish does the same thing: *if I had*, *I would*. The one trap is that English sometimes slips *would* into the *if* half (*if I would have*), and Spanish never does. After *si* it is always the *ra* form.\n\nThe halves can swap places, with no change: *Me quedaría si pudiera.* Use a comma when *si* comes first.\n\nIf the *if* is real and possible (*Si tengo plata, viajo*), you keep the ordinary present, as you learned before.",
+  "smallPrint": "Teachers call this the second conditional, or an *unreal conditional* (*condicional irreal*): *si* + imperfect subjunctive, then the conditional.",
+  "readAndPick": [
+    {
+      "es": "Si tuviera plata, compraría un barco.",
+      "options": ["If I had money, I'd buy a boat.", "If I have money, I'll buy a boat.", "I had money and I bought a boat."],
+      "answer": 0
+    },
+    {
+      "es": "Si tengo plata, compraré una casa.",
+      "options": ["If I had money, I'd buy a house.", "If I have money, I'll buy a house."],
+      "answer": 1
+    },
+    {
+      "es": "Si no lloviera, abriríamos la terraza.",
+      "options": ["If it doesn't rain, we'll open the terrace.", "If it weren't raining, we'd open the terrace.", "We opened the terrace because it didn't rain."],
+      "answer": 1
+    },
+    {
+      "es": "Abriríamos la terraza si no lloviera.",
+      "options": ["We'd open the terrace if it weren't raining.", "We open the terrace if it doesn't rain.", "We opened the terrace when it didn't rain."],
+      "answer": 0
+    },
+    {
+      "es": "Si yo fuera tú, hablaría con ella.",
+      "options": ["If I were you, I'd talk to her. (to a friend)", "If you were me, you'd talk to her.", "If she were you, she'd talk to me."],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué harías si ganaras la lotería?",
+      "options": ["What will you do if you win the lottery?", "What did you do when you won the lottery?", "What would you do if you won the lottery? (to a friend)"],
+      "answer": 2
+    },
+    {
+      "es": "Si viviéramos en la playa, nadaríamos todos los días.",
+      "options": ["If they lived on the beach, they'd swim every day.", "If we lived on the beach, we'd swim every day.", "If we live on the beach, we'll swim every day."],
+      "answer": 1
+    },
+    {
+      "es": "Si Vale estuviera aquí, nos ayudaría.",
+      "options": ["If Vale is here, she'll help us.", "Vale was here and helped us.", "If Vale were here, she'd help us."],
+      "answer": 2
+    },
+    {
+      "es": "Si pudiera, me quedaría en Santa Marta.",
+      "options": ["If I could, I'd stay in Santa Marta.", "If I can, I'll stay in Santa Marta.", "I could stay in Santa Marta."],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *tengo* or *tuviera* and type the whole sentence: *Si ___ plata, compraría un barco.* (If I had money, I'd buy a boat.)",
+      "answer": "Si tuviera plata, compraría un barco.",
+      "accept": [],
+      "why": "The *would* half is there, so the *if* half has to be the *ra* form."
+    },
+    {
+      "prompt": "Pick *viajaría* or *viajo* and type the whole sentence: *Si tuviera plata, ___ más.* (I'd travel more.)",
+      "answer": "Si tuviera plata, viajaría más.",
+      "accept": [],
+      "why": "An imaginary *if* needs the *would* form in the other half."
+    },
+    {
+      "prompt": "Type in Spanish: If Vale were here, she'd help us.",
+      "answer": "Si Vale estuviera aquí, nos ayudaría.",
+      "accept": ["Vale nos ayudaría si estuviera aquí.", "Nos ayudaría si Vale estuviera aquí."],
+      "why": "*Si* + *estuviera*, then *ayudaría*; either half can come first."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: What would you do if you won the lottery?",
+      "answer": "¿Qué harías si ganaras la lotería?",
+      "accept": [],
+      "why": "*Harías* is the *would* half for *tú*, and *ganaras* is the *if* half."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: If I were you, I'd talk to her.",
+      "answer": "Si yo fuera tú, hablaría con ella.",
+      "accept": ["Yo que tú, hablaría con ella."],
+      "why": "*Fuera* is the *ra* form of *ser*, and *hablaría* is the *would* half."
+    },
+    {
+      "prompt": "Make it imaginary: *Si tengo tiempo, voy.* (If I had time, I'd go.)",
+      "answer": "Si tuviera tiempo, iría.",
+      "accept": [],
+      "why": "Both halves change: *tengo* becomes *tuviera*, and *voy* becomes *iría*."
+    },
+    {
+      "prompt": "Flip the order: *Si pudiera, me quedaría.*",
+      "answer": "Me quedaría si pudiera.",
+      "accept": [],
+      "why": "The halves can swap places; the forms stay the same."
+    },
+    {
+      "prompt": "Say it about *we*: *Si tuviera plata, viajaría más.*",
+      "answer": "Si tuviéramos plata, viajaríamos más.",
+      "accept": [],
+      "why": "Both verbs change to *nosotros*: *tuviéramos* with the accent, and *viajaríamos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Si tendría plata, compraría un barco.",
+      "right": "Si tuviera plata, compraría un barco.",
+      "why": "Almost. Never use the *would* form after *si*; that spot always takes the *ra* form."
+    },
+    {
+      "wrong": "Si tuviera plata, compro un barco.",
+      "right": "Si tuviera plata, compraría un barco.",
+      "why": "An imaginary *if* needs an imaginary result, so the main half takes the *would* form."
+    },
+    {
+      "wrong": "Si tengo plata, compraría un barco.",
+      "right": "Si tuviera plata, compraría un barco.",
+      "why": "Don't mix the real *if* with a *would* result: if it is imaginary, both halves are."
+    },
+    {
+      "wrong": "Si estaría aquí, ayudaría.",
+      "right": "Si estuviera aquí, ayudaría.",
+      "why": "The *if* half takes the *ra* form built from *estuvieron*, not the *would* form."
+    }
+  ],
+  "personal": "Finish this about yourself: *Si pudiera…, …ía*. For example, what would you do if you had a free week on the coast? Something true about you."
+}

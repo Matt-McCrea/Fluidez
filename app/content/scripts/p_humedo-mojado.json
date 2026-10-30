@@ -1,0 +1,122 @@
+{
+  "node": "p:humedo-mojado",
+  "hook": {
+    "line": "On the coast the air itself is damp, and your shirt is always a little wet. English says *humid* for the air and *wet* for the shirt, and Spanish splits it just the same way, with a bonus word for *soaked*.",
+    "es": "Aquí el clima es muy húmedo.",
+    "en": "The climate here is very humid."
+  },
+  "examples": [
+    { "es": "El clima en Barranquilla es muy húmedo.", "en": "The climate in Barranquilla is very humid." },
+    { "es": "Hay mucha humedad en Santa Marta.", "en": "There is a lot of humidity in Santa Marta." },
+    { "es": "La ropa todavía está mojada.", "en": "The clothes are still wet." },
+    { "es": "La arena está mojada.", "en": "The sand is wet." },
+    { "es": "Llegué empapado porque salí sin paraguas.", "en": "I arrived soaked because I went out without an umbrella. (a man speaking)" },
+    { "es": "Las paredes están húmedas.", "en": "The walls are damp." }
+  ],
+  "rule": "Three words, from least to most:\n\n*húmedo*: damp, humid. A lasting condition: a climate, a wall, a cellar. *El clima es húmedo.*\n*mojado*: wet right now, from water or rain. *La ropa está mojada.*\n*empapado*: soaked through.\n\nIf it is the place, the air or the wall, think *húmedo*. If it just got water on it, think *mojado*.\n\nThey are adjectives, so they agree: *húmeda*, *mojados*, *empapada*. And watch the verb: a climate *es* húmedo (it is what it is), but clothes *están* mojadas (for now).",
+  "smallPrint": "The noun for humidity is *la humedad*. Drought is *la sequía*.",
+  "readAndPick": [
+    {
+      "es": "El clima en Barranquilla es muy húmedo.",
+      "options": ["The climate in Barranquilla is very humid.", "The climate in Barranquilla is very wet today.", "Barranquilla's clothes are wet."],
+      "answer": 0
+    },
+    {
+      "es": "La ropa todavía está mojada.",
+      "options": ["The climate is humid.", "The clothes are still wet.", "The clothes are always wet."],
+      "answer": 1
+    },
+    {
+      "es": "Llegué empapado porque salí sin paraguas.",
+      "options": ["I arrived a little damp because I went out.", "I arrived soaked because I went out without an umbrella.", "I arrived happy because I had an umbrella."],
+      "answer": 1
+    },
+    {
+      "es": "Las paredes están húmedas.",
+      "options": ["The walls are damp.", "The wall is damp.", "The walls are soaked."],
+      "answer": 0
+    },
+    {
+      "es": "La arena está mojada.",
+      "options": ["The sand is humid.", "The sand is wet.", "The sand is hot."],
+      "answer": 1
+    },
+    {
+      "es": "Hay mucha humedad en Santa Marta.",
+      "options": ["There is a lot of humidity in Santa Marta.", "There are a lot of people in Santa Marta."],
+      "answer": 0
+    },
+    {
+      "es": "Esta casa es muy húmeda.",
+      "options": ["This house got wet.", "This house is very damp.", "This house is very big."],
+      "answer": 1
+    },
+    {
+      "es": "Estoy empapada.",
+      "options": ["I'm soaked. (a woman speaking)", "I'm a little damp. (a woman speaking)", "I'm tired. (a woman speaking)"],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *húmedo* or *mojado* and type the whole sentence: *El clima en Barranquilla es muy ___.* (The climate is very humid.)",
+      "answer": "El clima en Barranquilla es muy húmedo.",
+      "accept": [],
+      "why": "A climate is a lasting condition, so *húmedo*."
+    },
+    {
+      "prompt": "Pick *húmeda* or *mojada* and type the whole sentence: *La ropa todavía está ___.* (The clothes are still wet.)",
+      "answer": "La ropa todavía está mojada.",
+      "accept": [],
+      "why": "The clothes have just got water on them, so *mojada*."
+    },
+    {
+      "prompt": "Type in Spanish: The sand is wet.",
+      "answer": "La arena está mojada.",
+      "accept": [],
+      "why": "Wet right now, so *mojada*, and *arena* is feminine."
+    },
+    {
+      "prompt": "Type in Spanish: There is a lot of humidity in Santa Marta.",
+      "answer": "Hay mucha humedad en Santa Marta.",
+      "accept": [],
+      "why": "*Humedad* is the noun, and it is feminine, so *mucha*."
+    },
+    {
+      "prompt": "Type in Spanish: The walls are damp.",
+      "answer": "Las paredes están húmedas.",
+      "accept": [],
+      "why": "A wall that is damp is a lasting condition, and the adjective agrees: *húmedas*."
+    },
+    {
+      "prompt": "Make it about a woman: *Estoy empapado.* (I'm soaked. A woman speaking.)",
+      "answer": "Estoy empapada.",
+      "accept": [],
+      "why": "Adjectives match the speaker, so *empapada*."
+    },
+    {
+      "prompt": "Make it plural: *La toalla está mojada.* (The towels are wet.)",
+      "answer": "Las toallas están mojadas.",
+      "accept": [],
+      "why": "Everything matches: *las*, *toallas*, *están*, *mojadas*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La ropa está húmeda.",
+      "right": "La ropa está mojada.",
+      "why": "Almost. *Húmeda* means only slightly damp, so wet clothes are *mojada*."
+    },
+    {
+      "wrong": "Barranquilla es muy mojada.",
+      "right": "Barranquilla es muy húmeda.",
+      "why": "For a climate or a place, use *húmedo*; *mojado* is for things that just got wet."
+    },
+    {
+      "wrong": "Estoy húmedo.",
+      "right": "Estoy empapado.",
+      "why": "If you are soaked after the rain, say *empapado*; *húmedo* is much too mild."
+    }
+  ],
+  "personal": "Describe the climate where you live, or the last time you got caught in the rain: *Aquí el clima es…* or *Estaba…*."
+}

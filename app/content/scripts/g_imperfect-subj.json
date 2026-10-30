@@ -1,0 +1,134 @@
+{
+  "node": "g:imperfect-subj",
+  "hook": {
+    "line": "On the Caribbean coast everyone has an *if only*: if only it were cooler, if only we could stay another week. English handles that with a plain past tense (*I wish I had*). Spanish has its own set of forms for it, and you already know where to find them.",
+    "es": "Ojalá pudiera quedarme aquí.",
+    "en": "I wish I could stay here."
+  },
+  "examples": [
+    { "es": "Ojalá tuviera más tiempo.", "en": "I wish I had more time." },
+    { "es": "Ojalá pudiera ayudarte.", "en": "I wish I could help you. (to a friend)" },
+    { "es": "Ojalá fuera más fácil.", "en": "I wish it were easier." },
+    { "es": "Ojalá Vale estuviera aquí.", "en": "I wish Vale were here." },
+    { "es": "Ojalá hiciera menos calor.", "en": "I wish it were less hot." },
+    { "es": "Ojalá hubiera más mesas.", "en": "I wish there were more tables." },
+    { "es": "Ojalá pudiéramos quedarnos.", "en": "I wish we could stay." },
+    { "es": "Ojalá supiera hablar mejor.", "en": "I wish I knew how to speak better." }
+  ],
+  "rule": "You already use *ojalá* with the wish forms for something that could still happen: *Ojalá no llueva* (I hope it doesn't rain). When you wish for something that isn't true right now, or probably won't happen, you switch to a second set of forms.\n\nTo build it, start from the *ellos* form of the past: *tuvieron*, *pudieron*, *fueron*, *estuvieron*. Drop *ron* and add:\n*ra*, *ras*, *ra*, *ramos*, *ran*\n\n*tuvieron* becomes *tuviera*, *tuvieras*, *tuviera*, *tuviéramos*, *tuvieran*.\n\nThe *nosotros* form gets an accent on the vowel before *ramos*: *pudiéramos*, *estuviéramos*.\n\nSo *Ojalá tengas tiempo* is a hope (maybe you will), and *Ojalá tuvieras tiempo* is a wish (you don't). English only changes the tense; Spanish changes the form, and it works for every verb.",
+  "smallPrint": "Teachers call this the imperfect subjunctive (*imperfecto de subjuntivo*). You will also see an *se* version, *tuviese*, *pudiese*, in books. It means the same.",
+  "readAndPick": [
+    {
+      "es": "Ojalá tuviera más tiempo.",
+      "options": ["I hope I have more time.", "I wish I had more time.", "I had more time."],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá tengas tiempo.",
+      "options": ["I wish you had time. (to a friend)", "I hope you have time. (to a friend)"],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá pudiéramos quedarnos.",
+      "options": ["I wish I could stay.", "I wish they could stay.", "I wish we could stay."],
+      "answer": 2
+    },
+    {
+      "es": "Ojalá fueras mi vecino.",
+      "options": ["I wish I were your neighbour.", "I wish you were my neighbour. (to a friend)", "I wish he were my neighbour."],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá Vale estuviera aquí.",
+      "options": ["I hope Vale is here.", "Vale was here.", "I wish Vale were here."],
+      "answer": 2
+    },
+    {
+      "es": "Ojalá hubiera más mesas.",
+      "options": ["I hope there are more tables.", "I wish there were more tables.", "There were more tables."],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá tuvieran un carro.",
+      "options": ["I wish they had a car.", "I wish I had a car.", "I wish you had a car. (to a friend)"],
+      "answer": 0
+    },
+    {
+      "es": "Ojalá pudiera ayudarte.",
+      "options": ["I hope I can help you.", "I wish I could help you.", "I wish you could help me."],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá haga menos calor.",
+      "options": ["I hope it's less hot.", "I wish it were less hot."],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *tenga* or *tuviera* and type the whole sentence: *Ojalá ___ más tiempo.* (I wish I had more time, but I don't.)",
+      "answer": "Ojalá tuviera más tiempo.",
+      "accept": [],
+      "why": "You are wishing for something that isn't true, so you need the second set of forms: *tuviera*."
+    },
+    {
+      "prompt": "Pick *pueda* or *pudiera* and type the whole sentence: *Ojalá ___ ayudarte.* (I wish I could help you, but I can't. To a friend.)",
+      "answer": "Ojalá pudiera ayudarte.",
+      "accept": [],
+      "why": "*Pudiera* comes from *pudieron*, and it is the form for a wish that isn't true."
+    },
+    {
+      "prompt": "Type in Spanish: I wish it were easier.",
+      "answer": "Ojalá fuera más fácil.",
+      "accept": [],
+      "why": "*Fueron* loses *ron* and becomes *fuera*."
+    },
+    {
+      "prompt": "Type in Spanish: I wish Vale were here.",
+      "answer": "Ojalá Vale estuviera aquí.",
+      "accept": ["Ojalá estuviera Vale aquí."],
+      "why": "*Estuvieron* becomes *estuviera*; it is the same ending for *yo* and for *ella*."
+    },
+    {
+      "prompt": "Type in Spanish: I wish we could stay.",
+      "answer": "Ojalá pudiéramos quedarnos.",
+      "accept": ["Ojalá nos pudiéramos quedar."],
+      "why": "For *nosotros* it is *pudiéramos*, with the accent on the vowel before *ramos*."
+    },
+    {
+      "prompt": "Turn the hope into a wish. It is a very hot day and there is no hope: *Ojalá haga menos calor.*",
+      "answer": "Ojalá hiciera menos calor.",
+      "accept": [],
+      "why": "*Hicieron* gives *hiciera*; the wish form changes to the second set."
+    },
+    {
+      "prompt": "Say it about *tú* instead (to a friend): *Ojalá tuviera un carro.* (I wish you had a car.)",
+      "answer": "Ojalá tuvieras un carro.",
+      "accept": [],
+      "why": "For *tú* the ending gets an *s*: *tuvieras*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ojalá tuve más tiempo.",
+      "right": "Ojalá tuviera más tiempo.",
+      "why": "Almost. *Tuve* just reports something that happened; a wish needs the *ra* form."
+    },
+    {
+      "wrong": "Ojalá tenía más tiempo.",
+      "right": "Ojalá tuviera más tiempo.",
+      "why": "English copies its past tense here (*I wish I had*), but Spanish needs the special form, not the ordinary past."
+    },
+    {
+      "wrong": "Ojalá teniera más tiempo.",
+      "right": "Ojalá tuviera más tiempo.",
+      "why": "Start from *tuvieron*, not from the infinitive: the irregular stem carries over."
+    },
+    {
+      "wrong": "Ojalá tuvieramos más tiempo.",
+      "right": "Ojalá tuviéramos más tiempo.",
+      "why": "For *nosotros* the stress moves, so the accent goes on the vowel before *ramos*."
+    }
+  ],
+  "personal": "Say one thing you wish were different, starting with *Ojalá*: *Ojalá pudiera…*, *Ojalá tuviera…*, *Ojalá fuera…*. Something true about you, right now."
+}
