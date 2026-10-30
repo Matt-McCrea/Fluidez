@@ -1,0 +1,43 @@
+{
+  "node": "p:los-celos-los-restos",
+  "hook": {
+    "line": "Some Spanish words only exist in the plural, or change meaning when they go plural. If you say \"un celo\" for one jealousy, nobody knows what you mean.",
+    "es": "Tiene celos de su hermano.",
+    "en": "He's jealous of his brother."
+  },
+  "examples": [
+    { "es": "Tiene celos de su hermano.", "en": "He's jealous of his brother." },
+    { "es": "Encontraron restos arqueológicos.", "en": "They found archaeological remains." },
+    { "es": "Le pusieron las esposas.", "en": "They put the handcuffs on him." },
+    { "es": "Tengo celos de tu café.", "en": "I'm jealous of your coffee." },
+    { "es": "Los restos del edificio estaban en la calle.", "en": "The remains of the building were in the street." },
+    { "es": "El resto de la gente se fue.", "en": "The rest of the people left." }
+  ],
+  "rule": "Three words change when they go plural.\n\n*los celos* = jealousy. It only works in the plural, and you *have* it: *tener celos de*. English says \"be jealous of\", Spanish says \"have jealousies of\".\n\n*el resto* = the rest. *Los restos* = what is left after something is destroyed or someone dies: remains.\n\n*la esposa* = wife, but *las esposas* also means handcuffs. Context tells you which: *le pusieron las esposas*.\n\nIn short, do not translate these word for word. Learn them as a plural unit.",
+  "smallPrint": "Teachers call these nouns with a plural of special meaning, or *pluralia tantum* when no singular exists, as with *celos*.",
+  "readAndPick": [
+    { "es": "Tiene celos de su hermano.", "options": ["He has a lot of brothers.", "He's jealous of his brother.", "He misses his brother."], "answer": 1 },
+    { "es": "Encontraron restos arqueológicos.", "options": ["They found archaeological remains.", "They rested in the museum.", "They found the rest of the group."], "answer": 0 },
+    { "es": "Le pusieron las esposas.", "options": ["They put the wives on him.", "They gave him a wife.", "They put the handcuffs on him."], "answer": 2 },
+    { "es": "Tengo celos de tu café.", "options": ["I'm jealous of your coffee.", "I love your coffee.", "I need your coffee."], "answer": 0 },
+    { "es": "Los restos del edificio estaban en la calle.", "options": ["The rest of the building was inside.", "The remains of the building were in the street.", "The building rested in the street."], "answer": 1 },
+    { "es": "El resto de la gente se fue.", "options": ["The rest of the people left.", "The remains of the people left.", "The people rested."], "answer": 0 },
+    { "es": "Mi esposa tiene celos de mi socio.", "options": ["My wife is jealous of my partner.", "My wife is the partner's friend.", "My wife has handcuffs."], "answer": 0 },
+    { "es": "La policía llegó con las esposas.", "options": ["The police arrived with their wives.", "The police arrived with the handcuffs."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the right word and type the whole sentence: *Tiene ___ de su hermano.* (celos or celo)", "answer": "Tiene celos de su hermano.", "accept": [], "why": "*Celos* only works in the plural." },
+    { "prompt": "Type in Spanish: They found archaeological remains.", "answer": "Encontraron restos arqueológicos.", "accept": [], "why": "*Restos* in the plural means what is left of something." },
+    { "prompt": "Type in Spanish: They put the handcuffs on him.", "answer": "Le pusieron las esposas.", "accept": [], "why": "*Las esposas* in this context means handcuffs." },
+    { "prompt": "Type in Spanish: I'm jealous of your coffee. (to a friend)", "answer": "Tengo celos de tu café.", "accept": [], "why": "Spanish uses *tener celos*, \"to have jealousy\"." },
+    { "prompt": "Type in Spanish: The rest of the people left.", "answer": "El resto de la gente se fue.", "accept": [], "why": "*El resto*, singular, is just \"the rest\"." },
+    { "prompt": "Make it about the building: *Encontraron restos arqueológicos.* Say: The remains of the building were in the street.", "answer": "Los restos del edificio estaban en la calle.", "accept": [], "why": "*Los restos* with *del* tells you whose remains." },
+    { "prompt": "Type in Spanish: My wife is jealous of my partner.", "answer": "Mi esposa tiene celos de mi socio.", "accept": [], "why": "Wife is singular *esposa*; the jealousy is *tiene celos*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Estoy celoso de mi hermano.", "right": "Tengo celos de mi hermano.", "why": "Almost. *Estar celoso* exists too, but the everyday way is *tener celos*." },
+    { "wrong": "Tiene un celo de su hermano.", "right": "Tiene celos de su hermano.", "why": "Almost. In this meaning, *celos* never goes singular." },
+    { "wrong": "El resto del edificio estaban en la calle.", "right": "Los restos del edificio estaban en la calle.", "why": "Almost. *El resto* is just \"the rest\"; the leftover pieces are *los restos*." }
+  ],
+  "personal": "Tell me about a time you had *celos*, or who you would put *las esposas* on in a story."
+}

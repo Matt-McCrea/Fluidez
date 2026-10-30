@@ -1,0 +1,43 @@
+{
+  "node": "p:que-x-este",
+  "hook": {
+    "line": "Sometimes you shake your head and smile at someone, or sigh over the good old days. Spanish has a short exclamation for both, with the demonstrative at the end.",
+    "es": "¡Qué tiempos aquellos!",
+    "en": "Those were the days!"
+  },
+  "examples": [
+    { "es": "¡Qué tiempos aquellos!", "en": "Those were the days!" },
+    { "es": "¡Qué mujer esta!", "en": "What a woman she is!" },
+    { "es": "¡Este muchacho! No aprende.", "en": "This boy! He never learns." },
+    { "es": "¡Qué días aquellos!", "en": "Those were the days!" },
+    { "es": "¡Qué hombre este!", "en": "What a man he is!" },
+    { "es": "¡Esta muchacha! Siempre llega tarde.", "en": "This girl! She's always late." }
+  ],
+  "rule": "Normally *este* and *aquel* come before the noun: *aquellos tiempos*. In an exclamation they jump to the end.\n\n*¡Qué* + noun + *este/esta/aquel/aquella...*\n\nWith *aquellos*, you look back with warmth: *¡Qué tiempos aquellos!* With *este* or *esta*, you comment on someone in front of you, and it can be admiration: *¡Qué mujer esta!*\n\nThe second shape drops the *qué*: *¡Este muchacho!* Then you trail off, shake your head, and add a line. It sounds like fond exasperation.\n\nThe tone does the work, so say it as you would in English: *This boy!*",
+  "smallPrint": "Teachers call this a postposed demonstrative: the demonstrative placed after the noun, which Spanish only allows in exclamations like these.",
+  "readAndPick": [
+    { "es": "¡Qué tiempos aquellos!", "options": ["What a time this is!", "Those were the days!", "What time is it?"], "answer": 1 },
+    { "es": "¡Qué mujer esta!", "options": ["What a woman she is!", "What woman is this?", "This woman left."], "answer": 0 },
+    { "es": "¡Este muchacho! No aprende.", "options": ["This boy! He's learning.", "This boy! He never learns.", "That boy! He never learns."], "answer": 1 },
+    { "es": "¡Qué días aquellos!", "options": ["Those were the days!", "What a day today!", "Which days are those?"], "answer": 0 },
+    { "es": "¡Qué hombre este!", "options": ["What man is this?", "This man arrived.", "What a man he is!"], "answer": 2 },
+    { "es": "¡Esta muchacha! Siempre llega tarde.", "options": ["This girl! She's always late.", "This girl! She's always early."], "answer": 0 },
+    { "es": "¡Qué épocas aquellas!", "options": ["What new seasons these are!", "What times those were!", "Which period is that?"], "answer": 1 },
+    { "es": "¡Este niño! Nunca hace caso.", "options": ["This child! He listens well.", "This child! He never listens."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the demonstrative and type the whole sentence: *¡Qué tiempos ___!* (aquellos or ahora)", "answer": "¡Qué tiempos aquellos!", "accept": [], "why": "*Aquellos* looks back at the good old days." },
+    { "prompt": "Type in Spanish: What a woman she is!", "answer": "¡Qué mujer esta!", "accept": [], "why": "*Esta* goes at the end and agrees with *mujer*." },
+    { "prompt": "Type in Spanish: This boy! He never learns.", "answer": "¡Este muchacho! No aprende.", "accept": [], "why": "A trailing *este muchacho* is fond exasperation." },
+    { "prompt": "Type in Spanish: What a man he is!", "answer": "¡Qué hombre este!", "accept": [], "why": "*Este* agrees with masculine *hombre*." },
+    { "prompt": "Type in Spanish: This girl! She's always late.", "answer": "¡Esta muchacha! Siempre llega tarde.", "accept": [], "why": "Feminine *muchacha* takes *esta*." },
+    { "prompt": "Make it about the past: *¡Qué tiempos aquellos!* Say: Those were the days!, with días.", "answer": "¡Qué días aquellos!", "accept": [], "why": "Swap the noun, keep the shape." },
+    { "prompt": "Type in Spanish: This child! He never listens.", "answer": "¡Este niño! Nunca hace caso.", "accept": [], "why": "Same fond sigh, new complaint." }
+  ],
+  "pitfalls": [
+    { "wrong": "¡Qué aquellos tiempos!", "right": "¡Qué tiempos aquellos!", "why": "Almost. In this exclamation the demonstrative goes after the noun." },
+    { "wrong": "¡Qué mujer este!", "right": "¡Qué mujer esta!", "why": "Almost. The demonstrative must match the noun: *mujer* is feminine, so *esta*." },
+    { "wrong": "¡Qué un hombre este!", "right": "¡Qué hombre este!", "why": "Almost. After *qué* there is no *un*." }
+  ],
+  "personal": "Think of someone you love who drives you a little mad, and say it with *¡Este...!* or *¡Esta...!*."
+}

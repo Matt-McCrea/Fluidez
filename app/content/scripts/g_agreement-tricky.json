@@ -1,0 +1,182 @@
+{
+  "node": "g:agreement-tricky",
+  "hook": {
+    "line": "Most of the neighbours voted, a group of tourists arrived, half of them left. In English you pick a verb by feel. In Spanish, a few words like these leave you a real choice, and native speakers use both.",
+    "es": "La mayoría de los vecinos votó en contra.",
+    "en": "Most of the neighbours voted against."
+  },
+  "examples": [
+    {
+      "es": "La mayoría de los vecinos votó en contra.",
+      "en": "Most of the neighbours voted against."
+    },
+    {
+      "es": "La mayoría de los vecinos votaron en contra.",
+      "en": "Most of the neighbours voted against."
+    },
+    {
+      "es": "Un grupo de turistas llegó.",
+      "en": "A group of tourists arrived."
+    },
+    {
+      "es": "Un grupo de turistas llegaron.",
+      "en": "A group of tourists arrived."
+    },
+    {
+      "es": "La gente quiere café.",
+      "en": "People want coffee."
+    },
+    {
+      "es": "La mitad de los vecinos se fue temprano.",
+      "en": "Half of the neighbours left early."
+    }
+  ],
+  "rule": "Some nouns look singular but stand for many people: *la mayoría*, *un grupo*, *la gente*, *la mitad*. Which verb do you use?\n\nWith *la mayoría de* or *un grupo de* plus a plural noun, you have a choice. Strict grammar says the verb agrees with the singular head: *la mayoría votó*. But because the meaning is plural, *votaron* is common too, and both are correct.\n\nThe choice is stylistic: the singular is more formal, the plural more natural when you picture the people one by one.\n\n*La gente* is always singular in Spanish: *la gente quiere*, not *quieren*. English \"people\" is plural, so watch this one.\n\n*La mitad* (half) behaves like *la mayoría*: *la mitad se fue* or *se fueron*.",
+  "smallPrint": "Teachers call this agreement *ad sensum*, agreement by meaning: the verb follows the sense rather than the strict grammar.",
+  "readAndPick": [
+    {
+      "es": "La mayoría de los vecinos votó en contra.",
+      "options": [
+        "Most of the neighbours voted against.",
+        "A few neighbours voted against.",
+        "No neighbour voted against."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Un grupo de turistas llegó.",
+      "options": [
+        "Some tourists left.",
+        "A group of tourists arrived.",
+        "A tourist arrived."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La gente quiere café.",
+      "options": [
+        "The people wanted tea.",
+        "People want coffee.",
+        "I want coffee for the people."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La mitad de los vecinos se fue temprano.",
+      "options": [
+        "Half of the neighbours left early.",
+        "The rest arrived late.",
+        "He rested early."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La mayoría de los clientes pidió tinto.",
+      "options": [
+        "Most of the customers asked for black coffee.",
+        "None of the customers asked for black coffee.",
+        "The customer asked for black coffee."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Un grupo de niños jugaban afuera.",
+      "options": [
+        "A child was playing outside.",
+        "A group of children were playing outside.",
+        "The children will play outside."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La gente habla mucho en este barrio.",
+      "options": [
+        "The people spoke a lot in that neighbourhood.",
+        "I talk a lot in this neighbourhood.",
+        "People talk a lot in this neighbourhood."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La mitad de los vecinos no vino.",
+      "options": [
+        "Half of the neighbours didn't come.",
+        "The neighbours rested and didn't come.",
+        "The rest of the neighbours came."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the verb and type the whole sentence: *La mayoría de los vecinos ___ en contra.* (votó or votaron)",
+      "answer": "La mayoría de los vecinos votó en contra.",
+      "accept": [
+        "La mayoría de los vecinos votaron en contra."
+      ],
+      "why": "Both work: singular follows the grammar, plural follows the meaning."
+    },
+    {
+      "prompt": "Type in Spanish: A group of tourists arrived.",
+      "answer": "Un grupo de turistas llegó.",
+      "accept": [
+        "Un grupo de turistas llegaron."
+      ],
+      "why": "*Un grupo* lets you choose *llegó* or *llegaron*."
+    },
+    {
+      "prompt": "Type in Spanish: People want coffee.",
+      "answer": "La gente quiere café.",
+      "accept": [],
+      "why": "*La gente* is always singular in Spanish, so the verb is *quiere*."
+    },
+    {
+      "prompt": "Type in Spanish: Half of the neighbours left early.",
+      "answer": "La mitad de los vecinos se fue temprano.",
+      "accept": [
+        "La mitad de los vecinos se fueron temprano."
+      ],
+      "why": "*La mitad* works like *la mayoría*: *se fue* is the strict form, *se fueron* is common."
+    },
+    {
+      "prompt": "Type in Spanish: Most of the customers asked for black coffee.",
+      "answer": "La mayoría de los clientes pidió tinto.",
+      "accept": [
+        "La mayoría de los clientes pidieron tinto."
+      ],
+      "why": "With *la mayoría de*, singular and plural are both correct."
+    },
+    {
+      "prompt": "Make it about the past: *La gente habla mucho en este barrio.* Say: People talked a lot in this neighbourhood.",
+      "answer": "La gente habló mucho en este barrio.",
+      "accept": [],
+      "why": "*La gente* stays singular, so the past is *habló*."
+    },
+    {
+      "prompt": "Type in Spanish: Half of the neighbours didn't come.",
+      "answer": "La mitad de los vecinos no vino.",
+      "accept": [
+        "La mitad de los vecinos no vinieron."
+      ],
+      "why": "The singular head *la mitad* allows *vino*, and *vinieron* would be fine too."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La gente quieren café.",
+      "right": "La gente quiere café.",
+      "why": "Almost. English \"people\" is plural, but *la gente* is singular in Spanish."
+    },
+    {
+      "wrong": "Los mayoría de los vecinos votó en contra.",
+      "right": "La mayoría de los vecinos votó en contra.",
+      "why": "Almost. *Mayoría* is a feminine noun, so it takes *la*."
+    },
+    {
+      "wrong": "Un grupo de turistas llegó y estaban cansados.",
+      "right": "Un grupo de turistas llegó y estaba cansado.",
+      "why": "Almost. If you pick the singular verb, keep it singular all the way through the sentence."
+    }
+  ],
+  "personal": "Tell me what most of your friends or neighbours do, starting with *La mayoría de* and picking a singular or plural verb."
+}

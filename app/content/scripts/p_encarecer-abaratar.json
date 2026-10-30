@@ -1,0 +1,43 @@
+{
+  "node": "p:encarecer-abaratar",
+  "hook": {
+    "line": "News stories and neighbourhood complaints are full of things that get dearer, darker or stronger. Spanish has one verb for each, built from the adjective, so you can say it in a single word.",
+    "es": "La subida del combustible encareció el transporte.",
+    "en": "The rise in fuel prices made transport more expensive."
+  },
+  "examples": [
+    { "es": "La subida del combustible encareció el transporte.", "en": "The rise in fuel prices made transport more expensive." },
+    { "es": "La oferta abarató los pasajes.", "en": "The deal made the fares cheaper." },
+    { "es": "Las nubes oscurecieron el cielo.", "en": "The clouds darkened the sky." },
+    { "es": "El ejercicio fortalece los músculos.", "en": "Exercise strengthens the muscles." },
+    { "es": "La obra encareció el café del barrio.", "en": "The building work made the neighbourhood's coffee more expensive." },
+    { "es": "Esa oferta abarató el almuerzo.", "en": "That deal made lunch cheaper." }
+  ],
+  "rule": "English says \"made it more expensive\" or \"made it darker\": a helper verb plus an adjective. Spanish often squeezes that into one verb built from the adjective.\n\n*caro* gives *encarecer*, *barato* gives *abaratar*, *oscuro* gives *oscurecer*, *fuerte* gives *fortalecer*.\n\nThe frame is simple: something happens, and as a result something else becomes that adjective. The thing that changes is the object: *encareció el transporte*.\n\nThe verbs follow normal patterns. The *-ecer* ones (*encarecer*, *oscurecer*, *fortalecer*) change like any other *-er* verb in the past: *encareció*, *oscurecieron*. The *-ar* one (*abaratar*) is regular: *abarató*.\n\nWhen you meet a new verb that starts with *en-* or *a-*, look for the adjective inside it.",
+  "smallPrint": "Teachers call these deadjectival verbs. The *a-* and *en-* prefixes (with *-ar* or *-ecer*) turn an adjective into \"make it that way\".",
+  "readAndPick": [
+    { "es": "La subida del combustible encareció el transporte.", "options": ["Transport became cheaper.", "Transport became more expensive.", "Transport stopped."], "answer": 1 },
+    { "es": "La oferta abarató los pasajes.", "options": ["The deal made the fares cheaper.", "The deals made the fares more expensive.", "The deals cancelled the fares."], "answer": 0 },
+    { "es": "Las nubes oscurecieron el cielo.", "options": ["The clouds cleared the sky.", "The clouds crossed the sky.", "The clouds darkened the sky."], "answer": 2 },
+    { "es": "El ejercicio fortalece los músculos.", "options": ["Exercise weakens the muscles.", "Exercise strengthens the muscles.", "Exercise tires the muscles."], "answer": 1 },
+    { "es": "Esa oferta abarató el almuerzo.", "options": ["That deal made lunch more expensive.", "That deal made lunch cheaper."], "answer": 1 },
+    { "es": "La obra encareció el café del barrio.", "options": ["The building work made the coffee more expensive.", "The building work made the coffee cheaper.", "The building work made the coffee darker."], "answer": 0 },
+    { "es": "La tormenta oscureció la tarde.", "options": ["The storm lit up the afternoon.", "The storm ended the afternoon.", "The storm darkened the afternoon."], "answer": 2 },
+    { "es": "Esa oferta abarató la comida.", "options": ["That deal made the food more expensive.", "That deal made the food cheaper.", "That deal made the food stronger."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the right verb and type the whole sentence: *La subida del combustible ___ el transporte.* (encareció or abarató)", "answer": "La subida del combustible encareció el transporte.", "accept": [], "why": "The fuel rise made transport dearer, so the verb comes from *caro*: *encareció*." },
+    { "prompt": "Type in Spanish: The deal made the fares cheaper.", "answer": "La oferta abarató los pasajes.", "accept": [], "why": "*Barato* gives *abaratar*, and one deal doing it gives *abarató*." },
+    { "prompt": "Type in Spanish: The clouds darkened the sky.", "answer": "Las nubes oscurecieron el cielo.", "accept": [], "why": "*Oscuro* gives *oscurecer*; in the past it becomes *oscurecieron*." },
+    { "prompt": "Type in Spanish: Exercise strengthens the muscles.", "answer": "El ejercicio fortalece los músculos.", "accept": [], "why": "*Fuerte* gives *fortalecer*, and it is *fortalece* for one thing doing it." },
+    { "prompt": "Type in Spanish: The building work made the neighbourhood's coffee more expensive.", "answer": "La obra encareció el café del barrio.", "accept": [], "why": "The thing that gets dearer, *el café*, is the object of *encareció*." },
+    { "prompt": "Make it about one deal: *La oferta abarató los pasajes.* Say: That deal made lunch cheaper.", "answer": "Esa oferta abarató el almuerzo.", "accept": [], "why": "One deal doing it takes *abarató*." },
+    { "prompt": "Type in Spanish: The storm darkened the afternoon.", "answer": "La tormenta oscureció la tarde.", "accept": [], "why": "One storm takes *oscureció*." }
+  ],
+  "pitfalls": [
+    { "wrong": "La subida hizo el transporte caro.", "right": "La subida encareció el transporte.", "why": "Understandable, but Spanish prefers the one-word verb built from the adjective." },
+    { "wrong": "La oferta abaratió los pasajes.", "right": "La oferta abarató los pasajes.", "why": "Almost. *Abaratar* is an *-ar* verb, so the past ends in *-ó*, not *-ió*." },
+    { "wrong": "Las nubes oscuraron el cielo.", "right": "Las nubes oscurecieron el cielo.", "why": "Almost. The verb is *oscurecer*, with the *-ec-* in the middle." }
+  ],
+  "personal": "Say what has made something more expensive or cheaper where you live, using *encareció* or *abarató*."
+}
