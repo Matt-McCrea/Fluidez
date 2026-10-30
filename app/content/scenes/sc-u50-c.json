@@ -1,0 +1,205 @@
+{
+  "id": "sc-u50-c",
+  "unit": "u50",
+  "title": "Una oferta sobre la mesa",
+  "spare": true,
+  "brief": "You're Tomás, meeting Altamira's advisor, Señor Ruiz, at the café. He's a stranger and you are on formal terms, so use usted. You want different things, so stay polite, set a limit and aim for a deal.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Ruiz: Buenos días. Altamira quiere cerrar esto hoy. ¿Qué necesita usted?",
+      "npcEn": "Ruiz: Good morning. Altamira wants to close this today. What do you need?",
+      "intent": "Say you need more time and that you won't decide today (use usted or no form).",
+      "accept": [
+        "Necesito más tiempo. Hoy no voy a decidir nada.",
+        "Más tiempo. No puedo decidir hoy.",
+        "Buenos días. Necesito más tiempo y no decidiré hoy."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say what you won't do today"
+        }
+      ],
+      "focus": "g:subj-future-in-past",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Ruiz: Le prometo que el precio será justo para quien acepte hoy.",
+      "npcEn": "Ruiz: I promise you the price will be fair for whoever accepts today.",
+      "intent": "Say that you'll sell to whoever respects the café (use: quien + subjunctive).",
+      "accept": [
+        "Le venderé a quien respete el café.",
+        "No vendo a quien no respete el café.",
+        "Venderé a quien respete la historia del café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(quien|el que|los que)\\s+(no\\s+)?\\w+(e|en|an|a)\\b",
+          "flags": "iu",
+          "label": "use a free relative: a quien respete"
+        }
+      ],
+      "focus": "g:subj-free-relatives",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Ruiz: Con respeto, estoy harto de que todos hablen de historia y nadie quiera negociar.",
+      "npcEn": "Ruiz: With respect, I'm fed up with everyone talking about history and nobody wanting to negotiate.",
+      "intent": "Say you understand him perfectly, but it makes you angry when they treat the café like a number (use: Me da rabia que).",
+      "accept": [
+        "Lo entiendo perfectamente, pero me da rabia que traten el café como un número.",
+        "Le entiendo, pero me da rabia que lo traten como un número.",
+        "Me da rabia que traten mi café como un número, aunque lo entiendo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme da rabia que\\b",
+          "flags": "iu",
+          "label": "use me da rabia que + subjunctive"
+        }
+      ],
+      "focus": "p:me-da-rabia-me-indigna",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ruiz: Tiene razón. Entonces dígame, ¿qué haría falta para llegar a un acuerdo?",
+      "npcEn": "Ruiz: You're right. So tell me, what would it take to reach an agreement?",
+      "intent": "Say it would be best if he gave you thirty days (use: Lo mejor sería que + imperfect subjunctive).",
+      "accept": [
+        "Lo mejor sería que usted me diera treinta días.",
+        "Lo mejor sería que me dieran treinta días más.",
+        "Lo mejor sería que esperáramos treinta días."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo mejor sería que\\b",
+          "flags": "iu",
+          "label": "use: lo mejor sería que + imperfect subjunctive"
+        }
+      ],
+      "focus": "p:lo-mejor-seria-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Ruiz: Treinta días. Lo hablaré con mi jefe. ¿Tomamos un tinto mientras tanto?",
+      "npcEn": "Ruiz: Thirty days. I'll talk to my boss. Shall we have a black coffee in the meantime?",
+      "intent": "Thank him and say the coffee is on the house.",
+      "accept": [
+        "Gracias. El tinto va por la casa.",
+        "Muchas gracias. El tinto lo invito yo.",
+        "Con gusto, y gracias. El tinto es de la casa."
+      ],
+      "require": [],
+      "focus": "g:subj-free-relatives",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-regala",
+    "c:puedo",
+    "c:tienes",
+    "c:voy-a",
+    "g:adverbs-mente",
+    "g:aunque-indicative",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-prepositions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-emotion",
+    "g:subj-free-relatives",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:aceptar",
+    "l:acuerdo",
+    "l:bueno",
+    "l:café",
+    "l:casa",
+    "l:cerrar",
+    "l:dar",
+    "l:darse",
+    "l:decidir",
+    "l:decir",
+    "l:día",
+    "l:entender",
+    "l:esperar",
+    "l:estar",
+    "l:falta",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:harto",
+    "l:historia",
+    "l:hoy",
+    "l:invitar",
+    "l:ir",
+    "l:jefe",
+    "l:justo",
+    "l:llegar",
+    "l:mejor",
+    "l:necesitar",
+    "l:negociar",
+    "l:número",
+    "l:perfectamente",
+    "l:poder",
+    "l:precio",
+    "l:prometer",
+    "l:querer",
+    "l:qué",
+    "l:rabia",
+    "l:razón",
+    "l:respetar",
+    "l:respeto",
+    "l:ruiz",
+    "l:ser",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:tomar",
+    "l:tratar",
+    "l:vender",
+    "p:a-la-vez",
+    "p:demonstratives-basic",
+    "p:estar-harto-de",
+    "p:estar-harto-de-que",
+    "p:lo-mejor-seria-que",
+    "p:me-da-miedo",
+    "p:me-da-rabia-me-indigna",
+    "p:me-da-rabia-que",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:possessives-basic",
+    "p:tener-razon"
+  ]
+}

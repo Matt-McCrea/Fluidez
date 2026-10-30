@@ -1,0 +1,200 @@
+{
+  "id": "sc-u50-a",
+  "unit": "u50",
+  "title": "La oferta de Medellín",
+  "spare": false,
+  "brief": "You're Tomás. Vale has just told you an investor will finance her own bakery in Medellín, and you want her to stay. You're close, so use tú. Say what scares you, own your bad reaction, and leave the decision with her.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Un inversionista de Medellín quiere financiar mi propia pastelería. Dime qué piensas.",
+      "npcEn": "Vale: An investor from Medellín wants to finance my own bakery. Tell me what you think.",
+      "intent": "Tell her you're afraid she won't come back (use: Tengo miedo de que + subjunctive).",
+      "accept": [
+        "Tengo miedo de que no vuelvas.",
+        "La verdad, tengo miedo de que te vayas y no vuelvas.",
+        "Tengo miedo de que ya no quieras volver al café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bmiedo de que\\b",
+          "flags": "iu",
+          "label": "say it with: tengo miedo de que + subjunctive"
+        }
+      ],
+      "focus": "p:tengo-miedo-de-que",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Siempre piensas en lo que tú necesitas. ¿Y yo qué?",
+      "npcEn": "Vale: You always think about what you need. What about me?",
+      "intent": "Admit you're embarrassed about how you reacted (use: Me da vergüenza + infinitive).",
+      "accept": [
+        "Tienes razón. Me da vergüenza hablar así.",
+        "Me da vergüenza pensar solo en mí.",
+        "Me da vergüenza haber hablado así."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme da vergüenza\\b",
+          "flags": "iu",
+          "label": "use: me da vergüenza"
+        }
+      ],
+      "focus": "p:me-da-verguenza",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Ayer dijiste que me apoyarías pasara lo que pasara.",
+      "npcEn": "Vale: Yesterday you said you would support me whatever happened.",
+      "intent": "Say that you told her you would support her (use: Te dije que + conditional).",
+      "accept": [
+        "Te dije que te apoyaría, y es verdad.",
+        "Es cierto. Te dije que te apoyaría.",
+        "Sí, te dije que te apoyaría y lo voy a hacer."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "condicional",
+          "label": "say what you would do: te apoyaría"
+        }
+      ],
+      "focus": "g:subj-future-in-past",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Entonces, ¿qué quieres que haga?",
+      "npcEn": "Vale: So what do you want me to do?",
+      "intent": "Tell her to do whatever she wants (use: lo que + subjunctive).",
+      "accept": [
+        "Haz lo que quieras.",
+        "Lo que tú decidas estará bien.",
+        "Haz lo que sea mejor para ti."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(lo que|el que|quien|donde)\\s+(tú\\s+|usted\\s+)?(no\\s+)?\\w+(e|es|a|as|en|an)\\b",
+          "flags": "iu",
+          "label": "use a free relative: lo que quieras, lo que decidas"
+        }
+      ],
+      "focus": "g:subj-free-relatives",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Gracias por decirlo así. Voy a pensarlo con calma.",
+      "npcEn": "Vale: Thanks for putting it that way. I'm going to think it over calmly.",
+      "intent": "Say you'll be here and that she can take her time.",
+      "accept": [
+        "Aquí estaré. Tómate el tiempo que necesites.",
+        "Aquí estaré cuando decidas.",
+        "Tómate el tiempo que quieras. Aquí estaré."
+      ],
+      "require": [],
+      "focus": "g:subj-free-relatives",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:la-verdad",
+    "c:me-da-igual",
+    "c:me-regala",
+    "c:tengo",
+    "c:tienes",
+    "c:voy-a",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:imperfect-subj",
+    "g:indirect-questions",
+    "g:infinitive-perfect",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:reported-backshift",
+    "g:reported-commands-past",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-emotion",
+    "g:subj-free-relatives",
+    "g:subj-irregulars",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:apoyar",
+    "l:aquí",
+    "l:ayer",
+    "l:bien",
+    "l:café",
+    "l:calma",
+    "l:dar",
+    "l:decidir",
+    "l:decir",
+    "l:estar",
+    "l:financiar",
+    "l:haber",
+    "l:hablar",
+    "l:hacer",
+    "l:ir",
+    "l:irse",
+    "l:mejor",
+    "l:miedo",
+    "l:necesitar",
+    "l:pasar",
+    "l:pensar",
+    "l:propio",
+    "l:querer",
+    "l:qué",
+    "l:razón",
+    "l:ser",
+    "l:siempre",
+    "l:tener",
+    "l:tiempo",
+    "l:tomar",
+    "l:verdad",
+    "l:vergüenza",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:me-da-miedo",
+    "p:me-da-miedo-que",
+    "p:me-da-verguenza",
+    "p:me-te-nos-objects",
+    "p:miedo-a",
+    "p:para-inf",
+    "p:pase-lo-que-pase",
+    "p:pensar-en",
+    "p:possessives-basic",
+    "p:tener-hambre",
+    "p:tener-razon",
+    "p:tengo-miedo-de-que"
+  ]
+}

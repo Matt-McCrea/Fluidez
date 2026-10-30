@@ -1,0 +1,204 @@
+{
+  "id": "sc-u50-b",
+  "unit": "u50",
+  "title": "Mudarse con Clara",
+  "spare": false,
+  "brief": "You're Don Hernando, on the phone with your daughter Clara, who wants you to move into her apartment. She calls you tú, and you answer her as her father. Stay firm, but don't let it end in shouting.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Clara: Papá, ya está decidido. Te vienes a vivir conmigo.",
+      "npcEn": "Clara: Dad, it's decided. You're coming to live with me.",
+      "intent": "Tell her that nobody has decided anything and that nobody should speak for you (use: Que + subjunctive).",
+      "accept": [
+        "Que nadie decida por mí.",
+        "Que no decidan por mí, Clara.",
+        "No está decidido nada. Que nadie hable por mí."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bque\\s+(nadie|no)\\b",
+          "flags": "iu",
+          "label": "use que + subjunctive: que nadie decida por mí"
+        }
+      ],
+      "focus": "g:que-wishes-commands",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Clara: ¡Papá, no puedes seguir solo! ¡Me da miedo que te pase algo!",
+      "npcEn": "Clara: Dad, you can't go on alone! I'm scared something will happen to you!",
+      "intent": "Tell her to stop shouting (use: Que + subjunctive, the repeated order).",
+      "accept": [
+        "¡Que no me grites, Clara!",
+        "Que me hables sin gritos, por favor.",
+        "¡Que bajes la voz!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bque\\b",
+          "flags": "iu",
+          "label": "repeat the order with que: ¡que no grites!"
+        }
+      ],
+      "focus": "p:que-subj-repeated-order",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Clara: Perdón. Es que los vecinos me dijeron que ayer hablabas a gritos con el televisor.",
+      "npcEn": "Clara: Sorry. It's just that the neighbours told me you were shouting at the television yesterday.",
+      "intent": "Say you're sorry you made her worry (use: Siento + haber + past participle).",
+      "accept": [
+        "Siento haberte preocupado.",
+        "Siento haberte asustado, Clara.",
+        "Siento mucho haberte preocupado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsiento (mucho )?haber\\w*",
+          "flags": "iu",
+          "label": "use siento + haber + participle for something you did"
+        }
+      ],
+      "focus": "x:siento-que-vs-siento-no-haber",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Clara: ¿Entonces vienes a vivir conmigo?",
+      "npcEn": "Clara: So are you coming to live with me?",
+      "intent": "Say you're sorry that she feels alone, but you won't leave your home (use: Siento que + subjunctive).",
+      "accept": [
+        "Siento que te sientas sola, pero no me voy de mi casa.",
+        "Siento que estés preocupada, pero me quedo aquí.",
+        "Siento que no lo entiendas, pero no me voy."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsiento que\\b",
+          "flags": "iu",
+          "label": "use siento que + subjunctive for her feeling"
+        }
+      ],
+      "focus": "x:siento-que-vs-siento-no-haber",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Clara: Está bien. Pero el domingo vienes a almorzar a mi casa.",
+      "npcEn": "Clara: Fine. But on Sunday you're coming to lunch at my place.",
+      "intent": "Agree, and say you'll bring her something sweet from the café.",
+      "accept": [
+        "Está bien. Te llevaré algo dulce del café.",
+        "De acuerdo, iré el domingo y te llevaré un postre.",
+        "Voy con gusto. Te llevo algo dulce."
+      ],
+      "require": [],
+      "focus": "g:que-wishes-commands",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:me-regala",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-irregular-strong",
+    "g:reflexive-routine",
+    "g:reported-past-basic",
+    "g:stem-boot",
+    "g:subj-emotion",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:acuerdo",
+    "l:almorzar",
+    "l:aquí",
+    "l:asustado",
+    "l:ayer",
+    "l:bajar",
+    "l:bien",
+    "l:café",
+    "l:casa",
+    "l:clara",
+    "l:dar",
+    "l:decidir",
+    "l:decir",
+    "l:domingo",
+    "l:dulce",
+    "l:entender",
+    "l:estar",
+    "l:favor",
+    "l:gritar",
+    "l:grito",
+    "l:gusto",
+    "l:haber",
+    "l:hablar",
+    "l:ir",
+    "l:irse",
+    "l:llevar",
+    "l:miedo",
+    "l:papá",
+    "l:pasar",
+    "l:perdón",
+    "l:poder",
+    "l:postre",
+    "l:preocupado",
+    "l:quedarse",
+    "l:seguir",
+    "l:sentir",
+    "l:sentirse",
+    "l:ser",
+    "l:televisor",
+    "l:vecino",
+    "l:venir",
+    "l:vivir",
+    "l:voz",
+    "p:a-gritos",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:days-el-lunes",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:me-da-miedo",
+    "p:me-da-miedo-que",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:que-subj-repeated-order",
+    "p:sentir-lo-de",
+    "p:sentirse-mal",
+    "p:siento-llegar-tarde",
+    "p:siento-mucho-que",
+    "p:tengo-miedo-de-que"
+  ]
+}
