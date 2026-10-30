@@ -2,7 +2,7 @@
   "id": "ch059",
   "unit": "u21",
   "title": "Cincuenta y cincuenta",
-  "text": "En el fondo del café, detrás de la máquina, Tomás practicaba con Simón.\nTomás: Vale, quiero que trabajes conmigo. Como socia. Cincuenta y cincuenta.\nSimón: ¡Socia! ¡Socia!\nTomás: Shh. Más bajo, por favor.\nA las seis llegó Vale. Tomás le dio un tinto y un papel doblado.\nVale: ¿Qué es esto?\nTomás: ¿Me haces un favor? Léelo.\nVale lo leyó una vez, y después otra vez. «La Esquina de Rosa. Tomás: cincuenta. Vale: cincuenta».\nVale: ¿Socia? ¿Yo?\nTomás: Rosa tenía una regla principal: el café es de la familia. Y tú eres familia.\nVale no dijo nada. Sus ojos fueron a la foto de Rosa, encima de la caja.\nJhon Fredy restó con los dedos.\nJhon Fredy: Cien menos cincuenta, cincuenta. Y si restamos los tintos de don Hernando, el café pierde plata.\nHernando: Joven, en este café el cliente es el rey.\nJhon Fredy: Un rey que nunca paga.\nVale dejó el tinto en la mesa.\nVale: Tomás, tu promesa es de trescientos sesenta y cinco días. ¿Y después? ¿Vuelves a Toronto?\nSimón: ¡Sin problema!\nVale: Nadie te preguntó, Simón.\nTomás: No te preocupes. Yo no me voy.\nVale: Eso lo dice tu voz. Quiero que lo diga un papel. Quiero que lo escribas, en un contrato de verdad.\nTomás: Sin problema. Hoy mismo lo escribo.\nVale: Y quiero que me prometas otra cosa. Pero primero lo pienso.\nA las diez llegó el cartero con un sobre blanco y grande. «Grupo Altamira. Para el señor Tomás Herrera».\nVale miró el sobre, y después miró a Tomás.\nVale: Esa es la otra cosa. Quiero que no firmes nada de ese señor. Nada.\nTomás puso el sobre en la mesa, sin abrirlo. Simón lo miró, con la cabeza de lado.",
+  "text": "En el fondo del café, detrás de la máquina, Tomás practicaba con Simón.\nTomás: Vale, quiero que trabajes conmigo. Como socia. Cincuenta y cincuenta.\nSimón: ¡Socia! ¡Socia!\nTomás: Shh. Más bajo, por favor.\nA las seis llegó Vale. Tomás le dio un tinto y un papel doblado.\nVale: ¿Qué es esto?\nTomás: Es para ti. Léelo, por favor.\nVale lo leyó una vez, y después otra vez. «La Esquina de Rosa. Tomás: cincuenta. Vale: cincuenta».\nVale: ¿Socia? ¿Yo?\nTomás: Rosa tenía una regla principal: el café es de la familia. Y tú eres familia.\nVale no dijo nada. Sus ojos fueron a la foto de Rosa, encima de la caja.\nVale dejó el tinto en la mesa.\nVale: Tomás, tu promesa es de trescientos sesenta y cinco días. ¿Y después? ¿Vuelves a Toronto?\nSimón: ¡Sin problema!\nVale: Nadie te preguntó, Simón.\nTomás: No te preocupes. Yo no me voy.\nVale: Eso lo dice tu voz. Quiero que lo diga un papel. Quiero que lo escribas, en un contrato de verdad.\nTomás: Sin problema. Hoy mismo lo escribo.\nVale: Y quiero que me prometas otra cosa. Pero primero lo pienso.\nA las diez llegó el cartero con un sobre blanco y grande. «Grupo Altamira. Para el señor Tomás Herrera».\nVale miró el sobre, y después miró a Tomás.\nVale: Esa es la otra cosa. Quiero que no firmes nada de ese señor. Nada.\nTomás puso el sobre en la mesa, sin abrirlo. Simón lo miró, con la cabeza de lado.",
   "gloss": [
     {
       "es": "En el fondo del café",
@@ -15,18 +15,6 @@
     {
       "es": "un papel doblado",
       "en": "a folded piece of paper"
-    },
-    {
-      "es": "Jhon Fredy restó con los dedos.",
-      "en": "Jhon Fredy did a subtraction on his fingers."
-    },
-    {
-      "es": "Y si restamos los tintos de don Hernando, el café pierde plata.",
-      "en": "And if we take away Don Hernando's coffees, the café loses money."
-    },
-    {
-      "es": "en este café el cliente es el rey",
-      "en": "in this café the customer is king"
     },
     {
       "es": "Nadie te preguntó, Simón.",
@@ -118,12 +106,12 @@
       "answer": 0
     },
     {
-      "q": "What does Jhon Fredy say about Hernando, the 'king'?",
+      "q": "Where did Vale look when Tomás said she was family?",
       "options": [
-        "He never pays",
-        "He is always late",
-        "He talks too much",
-        "He eats all the bread"
+        "At the photo of Rosa, above the till",
+        "At the window",
+        "At Simón",
+        "At the envelope"
       ],
       "answer": 0
     },
@@ -141,7 +129,6 @@
   "requires": [
     "c:bien-y-tu",
     "c:en-serio",
-    "c:me-haces-un-favor",
     "c:no-te-preocupes",
     "c:por-favor",
     "c:que-es-esto",
@@ -162,31 +149,26 @@
     "g:object-pronoun-position",
     "g:prep-infinitive",
     "g:prep-pronouns",
-    "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
     "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
     "g:preterite-spelling-stem",
-    "g:relative-que",
     "g:ser-identity",
-    "g:si-present",
     "g:stem-boot",
     "g:stem-e-i",
     "g:subj-wanting",
     "g:that-clauses",
     "p:cerca-de",
     "p:demonstratives-basic",
-    "p:frequency-scale",
     "p:ir-a-venir-de-place",
     "p:me-te-nos-objects",
-    "p:numbers-un-una",
     "p:otro-no-article",
     "p:para-inf",
     "p:position-de",
     "p:possessives-basic",
     "p:preguntar-pedir",
-    "p:que-tal-si",
+    "p:request-ladder",
     "p:senor-don-article",
     "p:telling-time",
     "p:time-sequence-basic"
@@ -198,12 +180,10 @@
     "l:café",
     "l:caja",
     "l:cartero",
-    "l:cliente",
     "l:contrato",
     "l:cosa",
     "l:dar",
     "l:decir",
-    "l:dedo",
     "l:dejar",
     "l:después",
     "l:detrás",
@@ -217,11 +197,9 @@
     "l:fondo",
     "l:foto",
     "l:grande",
-    "l:hacer",
     "l:hoy",
     "l:ir",
     "l:irse",
-    "l:joven",
     "l:lado",
     "l:leer",
     "l:llegar",
@@ -229,11 +207,8 @@
     "l:mirar",
     "l:máquina",
     "l:ojo",
-    "l:pagar",
     "l:papel",
     "l:pensar",
-    "l:perder",
-    "l:plata",
     "l:poner",
     "l:practicar",
     "l:preguntar",
@@ -245,8 +220,6 @@
     "l:querer",
     "l:qué",
     "l:regla",
-    "l:restar",
-    "l:rey",
     "l:ser",
     "l:señor",
     "l:sobre",
