@@ -1,0 +1,197 @@
+{
+  "id": "sc-u03-d",
+  "unit": "u03",
+  "title": "The Saturday menu",
+  "brief": "You're Tomás. The café reopens on Saturday and Vale wants a menu tonight. Tell her what food you want, ask about drinks, and say what you're going to do on Sunday. She's a friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, el sábado abrimos. ¿Qué tipo de comida quieres en el café?",
+      "npcEn": "Tomás, we open on Saturday. What kind of food do you want in the café?",
+      "intent": "Say you want bread and fruit.",
+      "accept": [
+        "Quiero pan y fruta.",
+        "Yo quiero pan y fruta.",
+        "Quiero pan y fruta, Vale."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "querer",
+          "tense": "presente",
+          "person": "yo",
+          "label": "say what you want: quiero"
+        }
+      ],
+      "focus": "g:stem-boot",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Pan y fruta. Listo. ¿Y las bebidas?",
+      "npcEn": "Bread and fruit. Done. And the drinks?",
+      "intent": "Ask her whether she wants black coffee (tinto) or hot chocolate.",
+      "accept": [
+        "¿Quieres tinto o chocolate?",
+        "Vale, ¿tú quieres tinto o chocolate?",
+        "¿Quieres un tinto o un chocolate?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "verbForm",
+          "inf": "querer",
+          "tense": "presente",
+          "person": "tú",
+          "label": "ask her: quieres"
+        }
+      ],
+      "focus": "g:questions",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡El chocolate! ¿Y tú? ¿Te gusta la cerveza?",
+      "npcEn": "Hot chocolate! And you? Do you like beer?",
+      "intent": "Say no, you don't like beer.",
+      "accept": [
+        "No me gusta la cerveza.",
+        "No, la cerveza no me gusta.",
+        "No. No me gusta la cerveza."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "me gusta",
+          "label": "use me gusta"
+        },
+        {
+          "type": "negation"
+        }
+      ],
+      "focus": "g:gustar-basic",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Yo tampoco. Y Hernando viene el domingo con sus amigos. Quieren ver el partido en el café.",
+      "npcEn": "Me neither. And Hernando is coming on Sunday with his friends. They want to watch the match in the café.",
+      "intent": "Protest: they can't watch the match in the café.",
+      "accept": [
+        "¡No! No pueden ver el partido en el café.",
+        "¿El partido? ¡No pueden ver el partido en el café!",
+        "No, en el café no pueden ver el partido."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "poder",
+          "tense": "presente",
+          "person": "ellos",
+          "label": "they can't: no pueden"
+        },
+        {
+          "type": "infinitiveUsed",
+          "inf": "ver"
+        }
+      ],
+      "focus": "g:verb-infinitive",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bueno, Tomás. ¿Y tú qué vas a hacer el domingo?",
+      "npcEn": "OK, Tomás. And what are you going to do on Sunday?",
+      "intent": "Say you're going to walk in the park and cook.",
+      "accept": [
+        "Voy a caminar en el parque y cocinar.",
+        "El domingo voy a caminar en el parque y voy a cocinar.",
+        "Voy a caminar en el parque. Y voy a cocinar."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ir",
+          "tense": "presente",
+          "person": "yo",
+          "label": "your plan: voy a"
+        },
+        {
+          "type": "infinitiveUsed",
+          "inf": "caminar"
+        }
+      ],
+      "focus": "g:ir-a-plans",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¿En el parque? No, Tomás. El domingo también abrimos. ¿Quieres un chocolate?",
+      "npcEn": "In the park? No, Tomás. We're open on Sunday too. Do you want a hot chocolate?",
+      "intent": "Give in, accept the hot chocolate and thank her.",
+      "accept": [
+        "Bueno. Sí, gracias.",
+        "Bueno, de una. Gracias.",
+        "Sí, gracias, Vale."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "gracias"
+        }
+      ],
+      "focus": "c:de-una",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:me-gusta",
+    "c:quiero",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:ir-a-plans",
+    "g:present-er-ir",
+    "g:questions",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "l:abrir",
+    "l:amigo",
+    "l:bebida",
+    "l:bueno",
+    "l:café",
+    "l:caminar",
+    "l:cerveza",
+    "l:chocolate",
+    "l:cocinar",
+    "l:comida",
+    "l:domingo",
+    "l:fruta",
+    "l:gustar",
+    "l:hacer",
+    "l:ir",
+    "l:listo",
+    "l:pan",
+    "l:parque",
+    "l:partido",
+    "l:poder",
+    "l:querer",
+    "l:qué",
+    "l:sábado",
+    "l:tinto",
+    "l:tipo",
+    "l:venir",
+    "l:ver",
+    "p:days-el-lunes",
+    "p:possessives-basic",
+    "p:que-tipo-de",
+    "p:tambien-tampoco"
+  ]
+}
