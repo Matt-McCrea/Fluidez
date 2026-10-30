@@ -1,0 +1,168 @@
+{
+  "node": "p:echo-question",
+  "hook": {
+    "line": "Tomás hears something so surprising that he only wants to hear it again. Spanish repeats the sentence and swaps the surprising bit for a question word.",
+    "es": "¿Te vas a vivir adónde?",
+    "en": "You're going to live where?"
+  },
+  "examples": [
+    {
+      "es": "Me voy a vivir a Leticia.\n¿Te vas a vivir adónde?",
+      "en": "I'm going to live in Leticia.\nYou're going to live where?"
+    },
+    {
+      "es": "¿Que le dijiste qué?",
+      "en": "You told him what?"
+    },
+    {
+      "es": "¿Llegaron cuándo?",
+      "en": "They got here when?"
+    },
+    {
+      "es": "Vale compró cien kilos de harina.\n¿Compró cuántos?",
+      "en": "Vale bought a hundred kilos of flour.\nShe bought how many?"
+    },
+    {
+      "es": "Hernando vive en Bosa.\n¿Vive dónde?",
+      "en": "Hernando lives in Bosa.\nHe lives where?"
+    },
+    {
+      "es": "Me llamó Mariana.\n¿Te llamó quién?",
+      "en": "Mariana called me.\nWho called you?"
+    }
+  ],
+  "rule": "When you're surprised, English repeats the sentence with a rising *what?* Spanish does too.\n\nA normal question puts the question word first: *¿Dónde vive Hernando?* An echo keeps the statement as is and puts the question word last, right where the surprise was: *¿Vive dónde?*\n\nYou can also start with *que* to say *so you're telling me that*: *¿Que le dijiste qué?*\n\nIt's casual, a little dramatic, and best with friends. Use it when you heard, but can't believe it. If you didn't hear, ask a plain question.",
+  "smallPrint": "Teachers call this an echo question: it repeats what was said and replaces the surprising part.",
+  "readAndPick": [
+    {
+      "es": "Me voy a vivir a Leticia.\n¿Te vas a vivir adónde?",
+      "options": [
+        "You're going to live where?",
+        "You're going to live with whom?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Llegaron cuándo?",
+      "options": [
+        "They got here when?",
+        "They got here how?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Que le dijiste qué?",
+      "options": [
+        "You told him what?",
+        "You told him when?",
+        "You told her what?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale compró cien kilos de harina.\n¿Compró cuántos?",
+      "options": [
+        "She bought how many?",
+        "She bought what?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando vive en Bosa.\n¿Vive dónde?",
+      "options": [
+        "He lives where?",
+        "He lives with whom?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me llamó Mariana.\n¿Te llamó quién?",
+      "options": [
+        "Who called you?",
+        "When did she call you?",
+        "Why did she call you?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quiero cien tintos.\n¿Quieres cuántos?",
+      "options": [
+        "You want how many?",
+        "You want what?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás llegó ayer.\n¿Llegó cuándo?",
+      "options": [
+        "He arrived when?",
+        "He arrived where?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say, surprised, to a friend who said Me voy a vivir a Leticia: You're going to live where?",
+      "answer": "¿Te vas a vivir adónde?",
+      "accept": [],
+      "why": "Repeat the statement, then *adónde* where the surprise was."
+    },
+    {
+      "prompt": "A friend says Llegaron ayer. Echo it: They got here when?",
+      "answer": "¿Llegaron cuándo?",
+      "accept": [],
+      "why": "The question word goes last: *cuándo*."
+    },
+    {
+      "prompt": "A friend says Vale compró cien kilos de harina. Echo it: She bought how many?",
+      "answer": "¿Compró cuántos?",
+      "accept": [],
+      "why": "*Cuántos* matches the plural *kilos*."
+    },
+    {
+      "prompt": "A friend says Hernando vive en Bosa. Echo it: He lives where?",
+      "answer": "¿Vive dónde?",
+      "accept": [],
+      "why": "Same statement, with *dónde* last."
+    },
+    {
+      "prompt": "A friend says Le dije la verdad. Echo it: You told him what?",
+      "answer": "¿Que le dijiste qué?",
+      "accept": [
+        "¿Le dijiste qué?"
+      ],
+      "why": "*Que* at the start says you're repeating; *qué* is the surprise."
+    },
+    {
+      "prompt": "A friend says Me llamó Mariana. Echo it: Who called you?",
+      "answer": "¿Te llamó quién?",
+      "accept": [],
+      "why": "Repeat, with *quién* where the name was."
+    },
+    {
+      "prompt": "Make it about he: *¿Llegaron cuándo?* (He got here when?)",
+      "answer": "¿Llegó cuándo?",
+      "accept": [],
+      "why": "Only the verb changes: *llegó*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Te vas a vivir dónde?",
+      "right": "¿Te vas a vivir adónde?",
+      "why": "Going somewhere takes *adónde*; *dónde* is for where something is."
+    },
+    {
+      "wrong": "¿Llegaron cuando?",
+      "right": "¿Llegaron cuándo?",
+      "why": "Question words keep their accent, even at the end."
+    },
+    {
+      "wrong": "¿Compró cuánto?",
+      "right": "¿Compró cuántos?",
+      "why": "Almost. *Cuántos* has to agree with the *kilos*: plural."
+    }
+  ],
+  "personal": "Think of the most surprising thing a friend could tell you. Write the statement, then the echo question underneath."
+}

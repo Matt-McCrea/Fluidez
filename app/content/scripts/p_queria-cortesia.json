@@ -1,0 +1,172 @@
+{
+  "node": "p:queria-cortesia",
+  "hook": {
+    "line": "A stranger at the café door will not say *I want*. Spanish speakers soften a request by stepping back into the past, and Tomás needs that to ask anyone for anything.",
+    "es": "Quería pedirle un favor.",
+    "en": "I wanted to ask you a favour. (formal)"
+  },
+  "examples": [
+    {
+      "es": "Quería pedirle un favor.",
+      "en": "I wanted to ask you a favour. (formal)"
+    },
+    {
+      "es": "Venía por lo del anuncio.",
+      "en": "I've come about the ad."
+    },
+    {
+      "es": "¿Qué necesitaba?",
+      "en": "What did you need? (formal)"
+    },
+    {
+      "es": "Queríamos reservar una mesa.",
+      "en": "We wanted to book a table."
+    },
+    {
+      "es": "Quería preguntar por el precio.",
+      "en": "I wanted to ask about the price."
+    },
+    {
+      "es": "Venía a recoger un paquete.",
+      "en": "I've come to pick up a package."
+    }
+  ],
+  "rule": "Look at what these lines do. *Quería pedirle un favor* sounds past, but the favour is being asked right now. Nothing already happened.\n\nSpanish uses the imperfect (*quería*, *venía*, *necesitaba*) as a polite step back, the way English says *I was wondering if*. It makes a request softer and less pushy than *quiero*.\n\nThree handy frames:\n*Quería* + something to ask: *Quería preguntar…*\n*Venía por* / *venía a*: why you've come.\n*¿Qué necesitaba?*: what a clerk asks you. It means *What can I do for you?*\n\nFor several people, *queríamos*. Don't translate it as a real past: the English is usually *I wanted / I'd like*.",
+  "smallPrint": "Teachers call this the imperfect of courtesy (or of attenuation): a past form used to soften a present request.",
+  "readAndPick": [
+    {
+      "es": "Quería pedirle un favor.",
+      "options": [
+        "I wanted to ask you a favour. (formal)",
+        "We wanted to ask you a favour. (formal)",
+        "He wanted to ask you a favour."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Queríamos reservar una mesa.",
+      "options": [
+        "I wanted to book a table.",
+        "We wanted to book a table.",
+        "They wanted to book a table."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué necesitaba?",
+      "options": [
+        "What do you all need?",
+        "What did you need? (formal)",
+        "What do I need?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Venía por lo del anuncio.",
+      "options": [
+        "I've come about the ad.",
+        "We've come about the ad.",
+        "You've come about the ad."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quería preguntar por el precio.",
+      "options": [
+        "We wanted to ask about the price.",
+        "I wanted to ask about the price."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Venía a recoger un paquete.",
+      "options": [
+        "I've come to pick up a package.",
+        "I'm picking up the package for you.",
+        "We've come to pick up a package."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué necesitaban?",
+      "options": [
+        "What did you need? (formal)",
+        "What did you all need?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Queríamos preguntar por el menú.",
+      "options": [
+        "I wanted to ask about the menu.",
+        "We wanted to ask about the menu.",
+        "You wanted to ask about the menu."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *Quería* or *Quiero*: ___ pedirle un favor. Type the whole sentence, as a polite request.",
+      "answer": "Quería pedirle un favor.",
+      "accept": [],
+      "why": "The past form softens the request, so it sounds polite rather than pushy."
+    },
+    {
+      "prompt": "Choose *Venía* or *Vengo*: ___ por lo del anuncio. Type the whole sentence, as you'd say it at a door.",
+      "answer": "Venía por lo del anuncio.",
+      "accept": [],
+      "why": "Politely stating why you've come: the imperfect, even though you're there now."
+    },
+    {
+      "prompt": "A customer walks in. Ask her what she needed (formal).",
+      "answer": "¿Qué necesitaba?",
+      "accept": [
+        "¿Qué necesita?"
+      ],
+      "why": "Clerks soften the question with the imperfect: *necesitaba*."
+    },
+    {
+      "prompt": "Say: I wanted to ask about the price. (you, to a clerk)",
+      "answer": "Quería preguntar por el precio.",
+      "accept": [],
+      "why": "*Quería* + infinitive is the polite way to open a question or request."
+    },
+    {
+      "prompt": "Make it about we: *Quería reservar una mesa.*",
+      "answer": "Queríamos reservar una mesa.",
+      "accept": [],
+      "why": "*We* takes *queríamos*."
+    },
+    {
+      "prompt": "Say: I've come to pick up a package.",
+      "answer": "Venía a recoger un paquete.",
+      "accept": [],
+      "why": "*Venía a* + infinitive says what you've come to do."
+    },
+    {
+      "prompt": "Say to a friend's mother, polite: I wanted to ask you a favour.",
+      "answer": "Quería pedirle un favor.",
+      "accept": [],
+      "why": "With a polite *you*, the favour is asked of *le*: *pedirle*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Quiero pedirle un favor.",
+      "right": "Quería pedirle un favor.",
+      "why": "*Quiero* is correct but blunt. With a stranger, *quería* is the polite step back."
+    },
+    {
+      "wrong": "Quería pedirle un favor ayer.",
+      "right": "Quería pedirle un favor.",
+      "why": "Careful: this courtesy form isn't about yesterday. It asks now, so no time word."
+    },
+    {
+      "wrong": "Venía por el anuncio de ayer, pero ahora estoy aquí.",
+      "right": "Venía por lo del anuncio.",
+      "why": "Almost. *Lo del* is the natural way to say about the ad, and it needs no past story."
+    }
+  ],
+  "personal": "Think of a favour you'd ask a neighbour or a boss. Write it starting with *Quería*."
+}

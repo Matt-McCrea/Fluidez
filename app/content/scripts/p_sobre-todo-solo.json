@@ -1,0 +1,175 @@
+{
+  "node": "p:sobre-todo-solo",
+  "hook": {
+    "line": "Vale is describing what sells at the café. Two small words sound alike in English, but one keeps everything and the other drops everything.",
+    "es": "Me gusta el café, sobre todo el tinto.",
+    "en": "I like coffee, especially tinto."
+  },
+  "examples": [
+    {
+      "es": "Me gusta el deporte, sobre todo el fútbol.",
+      "en": "I like sport, especially football."
+    },
+    {
+      "es": "Solo voy yo.",
+      "en": "I'm the only one going."
+    },
+    {
+      "es": "Solo tomo café por la mañana.",
+      "en": "I only drink coffee in the morning."
+    },
+    {
+      "es": "Me gustan las arepas, sobre todo con queso.",
+      "en": "I like arepas, especially with cheese."
+    },
+    {
+      "es": "Solo quiero un tinto.",
+      "en": "I only want a tinto."
+    },
+    {
+      "es": "Hernando viene todos los días, sobre todo los domingos.",
+      "en": "Hernando comes every day, especially on Sundays."
+    }
+  ],
+  "rule": "Both words point at one thing, but they treat the rest differently.\n\n*Sobre todo* means *especially*. It picks out a favourite and keeps the others: *Me gustan las arepas, sobre todo con queso*. I like all arepas.\n\n*Solo* means *only*. It cuts the others out: *Solo quiero un tinto*. Nothing else.\n\nSo: *sobre todo* adds emphasis, *solo* takes away.\n\nOne way to remember: if the English can swap in *above all*, use *sobre todo*. If it can swap in *just* or *nothing but*, use *solo*.",
+  "smallPrint": "Teachers call *sobre todo* a focusing marker (it highlights) and *solo* a restrictive adverb (it limits).",
+  "readAndPick": [
+    {
+      "es": "Me gusta el deporte, sobre todo el fútbol.",
+      "options": [
+        "I like sport, but only football.",
+        "I like sport, especially football."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Solo tomo café por la mañana.",
+      "options": [
+        "I only drink coffee in the morning.",
+        "I drink coffee, especially in the morning."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me gustan las arepas, sobre todo con queso.",
+      "options": [
+        "I only like arepas with cheese.",
+        "I like arepas, especially with cheese."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Solo voy yo.",
+      "options": [
+        "I'm the only one going.",
+        "I'm going, especially me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando viene todos los días, sobre todo los domingos.",
+      "options": [
+        "Hernando only comes on Sundays.",
+        "Hernando comes every day, especially on Sundays.",
+        "Hernando never comes on Sundays."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Solo quiero un tinto.",
+      "options": [
+        "I want a tinto, especially.",
+        "I only want a tinto."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Trabajo mucho, sobre todo los lunes.",
+      "options": [
+        "I work a lot, especially on Mondays.",
+        "I only work on Mondays."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Solo trabajo los lunes.",
+      "options": [
+        "I work a lot, especially on Mondays.",
+        "I only work on Mondays.",
+        "I work on Mondays, if at all."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *sobre todo* or *solo*: Me gusta el deporte, ___ el fútbol. Type the whole sentence.",
+      "answer": "Me gusta el deporte, sobre todo el fútbol.",
+      "accept": [],
+      "why": "You like all sport, and football most: *sobre todo*."
+    },
+    {
+      "prompt": "Choose *sobre todo* or *solo*: ___ tomo café por la mañana. Type the whole sentence.",
+      "answer": "Solo tomo café por la mañana.",
+      "accept": [
+        "Sólo tomo café por la mañana."
+      ],
+      "why": "Coffee only in the morning, never otherwise: *solo*."
+    },
+    {
+      "prompt": "Say: I only want a tinto.",
+      "answer": "Solo quiero un tinto.",
+      "accept": [
+        "Sólo quiero un tinto."
+      ],
+      "why": "*Solo* before the verb cuts everything else out."
+    },
+    {
+      "prompt": "Say: I like arepas, especially with cheese.",
+      "answer": "Me gustan las arepas, sobre todo con queso.",
+      "accept": [],
+      "why": "Arepas in general stay; the cheese ones get the spotlight: *sobre todo*."
+    },
+    {
+      "prompt": "Say: Hernando comes every day, especially on Sundays.",
+      "answer": "Hernando viene todos los días, sobre todo los domingos.",
+      "accept": [],
+      "why": "He comes every day; Sundays stand out: *sobre todo*."
+    },
+    {
+      "prompt": "Say: I'm the only one going.",
+      "answer": "Solo voy yo.",
+      "accept": [
+        "Sólo voy yo."
+      ],
+      "why": "Nobody else goes: *solo*."
+    },
+    {
+      "prompt": "Make it about we: *Solo voy yo.*",
+      "answer": "Solo vamos nosotros.",
+      "accept": [
+        "Sólo vamos nosotros.",
+        "Solo nosotros vamos."
+      ],
+      "why": "Change the verb to *vamos*; *solo* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me gusta el deporte, solo el fútbol, pero también el tenis.",
+      "right": "Me gusta el deporte, sobre todo el fútbol.",
+      "why": "*Solo* would cancel the others. To keep them and single one out, use *sobre todo*."
+    },
+    {
+      "wrong": "Sobre todo tomo café por la mañana, nunca más tarde.",
+      "right": "Solo tomo café por la mañana.",
+      "why": "If it never happens at other times, that's *only*: *solo*."
+    },
+    {
+      "wrong": "Me gustan sobre todo las arepas de Vale, ninguna otra.",
+      "right": "Solo me gustan las arepas de Vale.",
+      "why": "*Sobre todo* never excludes, so it can't go with *no others*. Use *solo*."
+    }
+  ],
+  "personal": "Write one thing you do every day, and the moment you do it most, using *sobre todo*. Then write one thing you do only once a week, using *solo*."
+}
