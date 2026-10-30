@@ -1,0 +1,160 @@
+{
+ "node": "p:de-los-ojos-azules",
+ "hook": {
+  "line": "The Feria de las Flores is one big crowd, and Vale is trying to point her mother out to Tomás. To pick one person out of many, Spanish uses *de*, not with.",
+  "es": "Mi mamá es la señora del vestido blanco.",
+  "en": "My mom is the lady in the white dress."
+ },
+ "examples": [
+  {
+   "es": "¿Conoces a la chica de los ojos azules?",
+   "en": "Do you know the girl with blue eyes? (to a friend)"
+  },
+  {
+   "es": "La chica del pelo largo es mi prima.",
+   "en": "The girl with long hair is my cousin."
+  },
+  {
+   "es": "El señor de la barba blanca es el papá de Vale.",
+   "en": "The man with the white beard is Vale's dad."
+  },
+  {
+   "es": "¿Quién es el de la gorra roja?",
+   "en": "Who's the one in the red cap?"
+  },
+  {
+   "es": "¿La de la falda roja? Es la hermana de Vale.",
+   "en": "The one in the red skirt? She's Vale's sister."
+  }
+ ],
+ "rule": "To pick someone out by how they look or what they're wearing, say the person, then *de*, then the feature with *el*, *la*, *los* or *las*:\n*la chica de los ojos azules*: the girl with blue eyes\n*el señor de la camisa roja*: the man in the red shirt\n\n*De* + *el* joins up as *del*: *la chica del pelo largo*.\n\nEnglish says with or in; Spanish says *de* for both. The describing word is needed: *la chica de los ojos* alone says nothing.\n\nDrop the person and keep *el de* or *la de*: the one with.",
+ "readAndPick": [
+  {
+   "es": "La chica de los ojos azules.",
+   "options": [
+    "The girl's blue eyes.",
+    "The girl with blue eyes."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Los ojos azules de la chica.",
+   "options": [
+    "The girl's blue eyes.",
+    "The girl with blue eyes."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "El señor de la camisa roja.",
+   "options": [
+    "The man in the red shirt.",
+    "The man's red shirt."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "La camisa roja del señor es nueva.",
+   "options": [
+    "The man in the red shirt is new.",
+    "The man's red shirt is new."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "La del pelo largo es mi prima.",
+   "options": [
+    "The one with long hair is my cousin. (a woman)",
+    "The one with long hair is my cousin. (a man)"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "El del pelo largo es mi primo.",
+   "options": [
+    "The one with long hair is my cousin. (a woman)",
+    "The one with long hair is my cousin. (a man)"
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Los de las camisas rojas son músicos.",
+   "options": [
+    "The one in the red shirt is a musician.",
+    "Their red shirts are for musicians.",
+    "The ones in the red shirts are musicians."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "El pelo largo de la chica es muy bonito.",
+   "options": [
+    "The girl with long hair is very pretty.",
+    "The girl's long hair is very pretty."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *de* or *con* and type the whole sentence: ¿Conoces a la chica ___ los ojos azules?",
+   "answer": "¿Conoces a la chica de los ojos azules?",
+   "accept": [],
+   "why": "To pick one person out, Spanish uses *de*."
+  },
+  {
+   "prompt": "Choose *de la* or *del* and type the whole sentence: La chica ___ pelo largo es mi prima.",
+   "answer": "La chica del pelo largo es mi prima.",
+   "accept": [],
+   "why": "*Pelo* takes *el*, and *de* + *el* becomes *del*."
+  },
+  {
+   "prompt": "Type in Spanish: The man in the red shirt is Vale's dad.",
+   "answer": "El señor de la camisa roja es el papá de Vale.",
+   "accept": [],
+   "why": "In a red shirt is *de la camisa roja*; *roja* matches *camisa*."
+  },
+  {
+   "prompt": "Type in Spanish: My mom is the lady with white hair.",
+   "answer": "Mi mamá es la señora del pelo blanco.",
+   "accept": [],
+   "why": "*Del pelo blanco* picks her out of the crowd."
+  },
+  {
+   "prompt": "Ask: Who's the one in the red cap? (a man)",
+   "answer": "¿Quién es el de la gorra roja?",
+   "accept": [],
+   "why": "*El de* is the one with, when it's a man."
+  },
+  {
+   "prompt": "Make it shorter, without *la chica*: *La chica de la falda roja es la hermana de Vale.*",
+   "answer": "La de la falda roja es la hermana de Vale.",
+   "accept": [],
+   "why": "Drop the noun and keep *la*: *la de* means the one with."
+  },
+  {
+   "prompt": "Make it plural (the men in the red shirts): *El de la camisa roja es músico.*",
+   "answer": "Los de las camisas rojas son músicos.",
+   "accept": [],
+   "why": "Everything goes plural together: *los de las camisas rojas son músicos*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "La chica con los ojos azules es mi prima.",
+   "right": "La chica de los ojos azules es mi prima.",
+   "why": "Close. To say which girl, Spanish uses *de*, not *con*."
+  },
+  {
+   "wrong": "La chica de los ojos es mi prima.",
+   "right": "La chica de los ojos azules es mi prima.",
+   "why": "Everyone has eyes. The describing word, *azules*, is what picks her out, so it has to be there."
+  },
+  {
+   "wrong": "La chica de el pelo largo es mi prima.",
+   "right": "La chica del pelo largo es mi prima.",
+   "why": "*De* and *el* always join up as *del*."
+  }
+ ],
+ "personal": "Picture a photo of your family or friends. Point out two people: *Mi hermano es el de…*, *La del… es…*."
+}

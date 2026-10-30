@@ -1,0 +1,197 @@
+{
+ "node": "g:le-doubling",
+ "hook": {
+  "line": "Tomás and Vale are off to Medellín again, and Vale's mother is expecting them. In Spanish you name the person you told twice: once with *le*, once with their name. It sounds like too much, and it's exactly how people talk.",
+  "es": "¿Le dijiste a tu mamá que llegamos el sábado?",
+  "en": "Did you tell your mom we're arriving on Saturday?"
+ },
+ "examples": [
+  {
+   "es": "Le di la llave a Vale.",
+   "en": "I gave the key to Vale."
+  },
+  {
+   "es": "¿Le escribiste a don Hernando?",
+   "en": "Did you write to don Hernando? (to a friend)"
+  },
+  {
+   "es": "Les compré dulces a los niños.",
+   "en": "I bought candy for the kids."
+  },
+  {
+   "es": "No le dije nada a Mariana.",
+   "en": "I didn't tell Mariana anything."
+  },
+  {
+   "es": "A ella le encanta Medellín.",
+   "en": "She loves Medellín."
+  },
+  {
+   "es": "¿A usted le gusta el tinto?",
+   "en": "Do you like black coffee? (formal)"
+  },
+  {
+   "es": "A mí me gusta, pero a él no.",
+   "en": "I like it, but he doesn't."
+  }
+ ],
+ "rule": "You already say *le di la llave* (I gave him the key, I gave her the key). Now look: *Le di la llave a Vale*. Vale is named, and *le* stays anyway.\n\nThat's the normal Spanish sentence. When you name the person who receives something, keep the small word too:\n*Le escribí a Hernando.*\n*Les compré dulces a los niños.*\n\nEnglish would say the person once. Spanish says it twice, and dropping *le* sounds stiff or foreign.\n\nThe extra *a* + person is also how you make *le* clear, because *le* can be him, her or *usted*: *a ella le encanta*, *a usted le gusta*. With *a mí*, *a ti*, *a nosotros* it adds weight or a contrast: *A mí me gusta, pero a él no.* You can add the *a* part, but the small word never goes away.",
+ "smallPrint": "Teachers call this clitic doubling: the indirect object appears as a pronoun (*le*, *les*) and as a full phrase with *a*.",
+ "readAndPick": [
+  {
+   "es": "Le di la llave a Vale.",
+   "options": [
+    "Vale gave me the key.",
+    "I gave the key to Vale."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Les compré dulces a los niños.",
+   "options": [
+    "I bought candy for the kid.",
+    "The kids bought me candy.",
+    "I bought candy for the kids."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "A ella le encanta Medellín.",
+   "options": [
+    "She loves Medellín.",
+    "He loves Medellín.",
+    "I love Medellín."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "¿A usted le gusta el tinto?",
+   "options": [
+    "Does he like black coffee?",
+    "Do you like black coffee? (formal)",
+    "Does she like black coffee?"
+   ],
+   "answer": 1
+  },
+  {
+   "es": "A él le gusta el café.",
+   "options": [
+    "He likes coffee.",
+    "She likes coffee.",
+    "You like coffee. (formal)"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Les escribí a mis papás.",
+   "options": [
+    "My parents wrote to me.",
+    "I wrote to my dad.",
+    "I wrote to my parents."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "A mí me parece bien.",
+   "options": [
+    "She thinks it's fine.",
+    "I think it's fine."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "¿Le diste el dinero al taxista?",
+   "options": [
+    "Did you give the money to the taxi driver?",
+    "Did the taxi driver give you the money?"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "A Hernando le duele la rodilla.",
+   "options": [
+    "My knee hurts, Hernando.",
+    "Hernando's knee hurts.",
+    "Hernando hurt my knee."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *le* or *les* and type the whole sentence: ___ di la llave a Vale.",
+   "answer": "Le di la llave a Vale.",
+   "accept": [],
+   "why": "One person receives it, so *le*, even though Vale is named."
+  },
+  {
+   "prompt": "Choose *le* or *les* and type the whole sentence: ___ compré dulces a los niños.",
+   "answer": "Les compré dulces a los niños.",
+   "accept": [],
+   "why": "The kids are more than one, so *les*."
+  },
+  {
+   "prompt": "Type in Spanish, to a friend: Did you write to don Hernando?",
+   "answer": "¿Le escribiste a don Hernando?",
+   "accept": [],
+   "why": "Name him with *a don Hernando*, and keep *le* before the verb."
+  },
+  {
+   "prompt": "Type in Spanish: I told Vale the truth.",
+   "answer": "Le dije la verdad a Vale.",
+   "accept": [
+    "Le dije a Vale la verdad."
+   ],
+   "why": "*Le* goes before *dije*; *a Vale* can sit before or after *la verdad*."
+  },
+  {
+   "prompt": "Make it clear it's about her: *Le encanta Medellín.*",
+   "answer": "A ella le encanta Medellín.",
+   "accept": [],
+   "why": "*Le* alone could be him, her or *usted*; *a ella* settles it."
+  },
+  {
+   "prompt": "Name the person: *Le pregunté.* (I asked Hernando.)",
+   "answer": "Le pregunté a Hernando.",
+   "accept": [],
+   "why": "Add *a Hernando* and keep *le*: Spanish says him twice."
+  },
+  {
+   "prompt": "Make it about your parents: *Le escribí a mi mamá.*",
+   "answer": "Les escribí a mis papás.",
+   "accept": [],
+   "why": "Two people now, so *le* becomes *les* and *mi* becomes *mis*."
+  },
+  {
+   "prompt": "Make it negative: *Le dije a Mariana.*",
+   "answer": "No le dije a Mariana.",
+   "accept": [
+    "A Mariana no le dije."
+   ],
+   "why": "*No* goes right before *le*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Di la llave a Vale.",
+   "right": "Le di la llave a Vale.",
+   "why": "Almost. It isn't wrong grammar, but it sounds like a form; people keep *le* even when they name Vale."
+  },
+  {
+   "wrong": "A mí gusta el tinto.",
+   "right": "A mí me gusta el tinto.",
+   "why": "*A mí* adds weight, but it never replaces *me*. Both stay."
+  },
+  {
+   "wrong": "Les di la llave a Vale.",
+   "right": "Le di la llave a Vale.",
+   "why": "Vale is one person, so *le*. Save *les* for two or more: *les di la llave a los vecinos*."
+  },
+  {
+   "wrong": "Le di a ella la llave a Vale.",
+   "right": "Le di la llave a Vale.",
+   "why": "Name the person once with *a*: either *a ella* or *a Vale*, not both."
+  }
+ ],
+ "personal": "Who did you last give something to, or write to? Say it with the person's name and *le*: *Le escribí a…*, *Le di… a…*."
+}

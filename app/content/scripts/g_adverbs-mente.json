@@ -1,0 +1,208 @@
+{
+ "node": "g:adverbs-mente",
+ "hook": {
+  "line": "Medellín is full of people who talk fast, and Tomás keeps needing to say how something happened, not just what. English adds *-ly*. Spanish adds *-mente*.",
+  "es": "Sinceramente, Medellín me encanta.",
+  "en": "Honestly, I love Medellín."
+ },
+ "examples": [
+  {
+   "es": "Realmente no sé qué decir.",
+   "en": "I really don't know what to say."
+  },
+  {
+   "es": "Normalmente desayuno en casa.",
+   "en": "I usually have breakfast at home."
+  },
+  {
+   "es": "Hernando maneja tranquilamente.",
+   "en": "Hernando drives calmly."
+  },
+  {
+   "es": "La mamá de Vale habla rápidamente.",
+   "en": "Vale's mom speaks quickly."
+  },
+  {
+   "es": "Fuimos directamente al hotel.",
+   "en": "We went straight to the hotel."
+  },
+  {
+   "es": "Es totalmente cierto.",
+   "en": "It's totally true."
+  },
+  {
+   "es": "Vale habla muy rápido.",
+   "en": "Vale talks really fast."
+  },
+  {
+   "es": "Lo hizo rápido y bien.",
+   "en": "He did it quickly and well."
+  }
+ ],
+ "rule": "To say how something is done, take an adjective, put it in its feminine form and add *-mente*. It works like English *-ly*.\n*tranquilo* → *tranquila* → *tranquilamente* (calmly)\n*rápido* → *rápida* → *rápidamente* (quickly)\n*real* → *realmente*, *total* → *totalmente* (no feminine change needed)\n\nThe accent stays where it was: *rápidamente*, never *rapidamente*.\n\nTwo everyday shortcuts. Good and bad don't take *-mente*: the words are *bien* and *mal*. And in Colombia people often just use the plain adjective after the verb: *habla rápido*, *fuimos directo*. Both are fine; *-mente* is a bit more careful.\n\nThe *-mente* word describes the action, so it never changes for *ella* or *ellos*. The adjective is for describing people and things: *Hernando es tranquilo*, *maneja tranquilamente*.",
+ "smallPrint": "Teachers call these adverbs of manner. With two in a row, only the last one takes *-mente*: *tranquila y amablemente*.",
+ "soundTip": "A *-mente* word keeps two stresses: the adjective's own (*RÁ-pida*) and a second on *MEN*. Say *rápida* first, then add *mente* as if it were a separate word.",
+ "readAndPick": [
+  {
+   "es": "Hernando es tranquilo.",
+   "options": [
+    "Hernando drives calmly.",
+    "Hernando is calm."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Hernando maneja tranquilamente.",
+   "options": [
+    "Hernando drives calmly.",
+    "Hernando is calm."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Vale es rápida.",
+   "options": [
+    "Vale works quickly.",
+    "Vale is fast."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Vale trabaja rápidamente.",
+   "options": [
+    "Vale works quickly.",
+    "Vale is fast."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Normalmente desayuno en casa.",
+   "options": [
+    "I have a normal breakfast at home.",
+    "I usually have breakfast at home."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Es un problema real.",
+   "options": [
+    "It's a real problem.",
+    "It really is a problem."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Realmente es un problema.",
+   "options": [
+    "It's a real problem.",
+    "It really is a problem."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Vale cocina bien.",
+   "options": [
+    "Vale is a good cook.",
+    "Vale cooks well.",
+    "Vale cooks a good meal."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Mariana es una persona tranquila.",
+   "options": [
+    "Mariana talks calmly.",
+    "Mariana is a calm person."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Mariana habla tranquilamente.",
+   "options": [
+    "Mariana talks calmly.",
+    "Mariana is a calm person."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *tranquilo* or *tranquilamente* and type the whole sentence: Hernando es ___.",
+   "answer": "Hernando es tranquilo.",
+   "accept": [],
+   "why": "After *es* you're describing Hernando himself, so the adjective."
+  },
+  {
+   "prompt": "Choose *Normal* or *Normalmente* and type the whole sentence: ___ desayuno en casa.",
+   "answer": "Normalmente desayuno en casa.",
+   "accept": [],
+   "why": "It says how often you do it, so the *-mente* word."
+  },
+  {
+   "prompt": "Type in Spanish: I really don't know.",
+   "answer": "Realmente no sé.",
+   "accept": [
+    "Realmente no lo sé."
+   ],
+   "why": "*Real* plus *-mente* gives really; it goes before *no*."
+  },
+  {
+   "prompt": "Type in Spanish: We went straight to the hotel.",
+   "answer": "Fuimos directamente al hotel.",
+   "accept": [
+    "Fuimos directo al hotel."
+   ],
+   "why": "*Directo* becomes *directa*, then *directamente*. Plain *directo* is fine too."
+  },
+  {
+   "prompt": "Turn *rápido* into a *-mente* word and type the whole sentence: Vale trabaja ___.",
+   "answer": "Vale trabaja rápidamente.",
+   "accept": [],
+   "why": "Feminine *rápida* plus *-mente*, and the accent stays on *rá*."
+  },
+  {
+   "prompt": "Turn *total* into a *-mente* word and type the whole sentence: Es ___ cierto.",
+   "answer": "Es totalmente cierto.",
+   "accept": [],
+   "why": "*Total* has no feminine form, so just add *-mente*."
+  },
+  {
+   "prompt": "Say it the everyday Colombian way, with the plain adjective: *Vale habla rápidamente.*",
+   "answer": "Vale habla rápido.",
+   "accept": [],
+   "why": "In speech, *rápido* after the verb does the same job as *rápidamente*."
+  },
+  {
+   "prompt": "Type in Spanish: Honestly, I love Medellín.",
+   "answer": "Sinceramente, Medellín me encanta.",
+   "accept": [
+    "Sinceramente, me encanta Medellín.",
+    "Sinceramente Medellín me encanta."
+   ],
+   "why": "*Sinceramente* opens the sentence just like honestly does in English."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Hernando maneja tranquilomente.",
+   "right": "Hernando maneja tranquilamente.",
+   "why": "Almost. Build it on the feminine form: *tranquila*, then *-mente*."
+  },
+  {
+   "wrong": "Vale trabaja rapidamente.",
+   "right": "Vale trabaja rápidamente.",
+   "why": "The accent from *rápido* stays in the long word."
+  },
+  {
+   "wrong": "Vale cocina buenamente.",
+   "right": "Vale cocina bien.",
+   "why": "Well is *bien*, and badly is *mal*; good and bad don't take *-mente*."
+  },
+  {
+   "wrong": "Hernando es tranquilamente.",
+   "right": "Hernando es tranquilo.",
+   "why": "To describe a person, use the adjective; *-mente* is for how someone does something."
+  }
+ ],
+ "personal": "How do you do things? Write two lines: something you normally do (*Normalmente…*) and how you do something (*Hablo…*, *Manejo…*, *Trabajo…*)."
+}

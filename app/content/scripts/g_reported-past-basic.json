@@ -1,0 +1,190 @@
+{
+ "node": "g:reported-past-basic",
+ "hook": {
+  "line": "Vale's mother finally tells Tomás something Rosa said to her years ago. Passing on what someone told you is one of the most human things you'll do in Spanish, and it needs one small shift in the verb.",
+  "es": "Rosa me dijo que tenía un hermano menor.",
+  "en": "Rosa told me she had a younger brother."
+ },
+ "examples": [
+  {
+   "es": "Me dijo que estaba cansado.",
+   "en": "He told me he was tired."
+  },
+  {
+   "es": "Hernando dijo que no tenía hambre.",
+   "en": "Hernando said he wasn't hungry."
+  },
+  {
+   "es": "Mariana me dijo que iba a llamar.",
+   "en": "Mariana told me she was going to call."
+  },
+  {
+   "es": "Me dijiste que no tenías hambre.",
+   "en": "You told me you weren't hungry. (to a friend)"
+  },
+  {
+   "es": "Dijo que su hermano se llamaba Joaquín.",
+   "en": "She said her brother was called Joaquín."
+  },
+  {
+   "es": "Vale dice que su mamá vive en Envigado.",
+   "en": "Vale says her mom lives in Envigado."
+  },
+  {
+   "es": "¿Qué te dijo?",
+   "en": "What did she tell you? (to a friend)"
+  }
+ ],
+ "rule": "You already pass on what someone says right now: *Vale dice que está cansada*. The verb stays as it was.\n\nWhen the saying happened in the past (*dijo que*), the verb after *que* shifts back, just like English is → was:\n*Estoy cansado.* → *Dijo que estaba cansado.*\n*No tengo hambre.* → *Dijo que no tenía hambre.*\n*Voy a llamar.* → *Dijo que iba a llamar.*\n\nSo the present becomes the form you use for describing the past (*estaba*, *tenía*, *vivía*), and *voy a* becomes *iba a*. Something already in the past stays put: *Joaquín se fue* → *Dijo que Joaquín se fue*.\n\nTwo rules from English to unlearn: *que* is never dropped, and the person told goes before the verb: *me dijo*, *le dije*, *nos dijo*.\n\nFor questions, *si* does the job of if: *Le pregunté si quería venir*.",
+ "smallPrint": "Teachers call this reported (or indirect) speech, and the shift of tense is the backshift.",
+ "readAndPick": [
+  {
+   "es": "Dice que está cansado.",
+   "options": [
+    "He said he was tired.",
+    "He says he's tired."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Dijo que estaba cansado.",
+   "options": [
+    "He said he was tired.",
+    "He says he's tired."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Mariana dijo que iba a llamar.",
+   "options": [
+    "Mariana said she called.",
+    "Mariana says she's going to call.",
+    "Mariana said she was going to call."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Me dijo que llamó.",
+   "options": [
+    "She told me she called.",
+    "She told me she was going to call."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Le dije que estaba ocupado.",
+   "options": [
+    "He told me he was busy.",
+    "I told him I was busy."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Me dijo que estaba ocupado.",
+   "options": [
+    "He told me he was busy.",
+    "I told him I was busy."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Me dijiste que no tenías hambre.",
+   "options": [
+    "I told you I wasn't hungry.",
+    "You told me you weren't hungry.",
+    "You told me I wasn't hungry."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Nos dijo que tenía hambre.",
+   "options": [
+    "She told them she was hungry.",
+    "We told her we were hungry.",
+    "She told us she was hungry."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Dice que el café está cerrado.",
+   "options": [
+    "She says the café is closed.",
+    "She said the café was closed."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *está* or *estaba* and type the whole sentence: Hernando dijo que ___ cansado.",
+   "answer": "Hernando dijo que estaba cansado.",
+   "accept": [],
+   "why": "*Dijo* is in the past, so the verb after *que* shifts back to *estaba*."
+  },
+  {
+   "prompt": "Choose *vive* or *vivía* and type the whole sentence (Vale says her mom lives in Envigado): Vale dice que su mamá ___ en Envigado.",
+   "answer": "Vale dice que su mamá vive en Envigado.",
+   "accept": [],
+   "why": "*Dice* is happening now, so nothing shifts."
+  },
+  {
+   "prompt": "Type in Spanish: He told me he was tired.",
+   "answer": "Me dijo que estaba cansado.",
+   "accept": [],
+   "why": "Told me is *me dijo*, then *que*, then the shifted *estaba*."
+  },
+  {
+   "prompt": "Type in Spanish, to a friend: You told me you weren't hungry.",
+   "answer": "Me dijiste que no tenías hambre.",
+   "accept": [],
+   "why": "You told me is *me dijiste*; *tienes* shifts to *tenías*."
+  },
+  {
+   "prompt": "Pass it on. Hernando said: *No tengo hambre.* Start with *Hernando dijo que…*",
+   "answer": "Hernando dijo que no tenía hambre.",
+   "accept": [],
+   "why": "*Tengo* becomes *tenía*: he said it in the past."
+  },
+  {
+   "prompt": "Pass it on. Mariana said: *Voy a llamar.* Start with *Mariana dijo que…*",
+   "answer": "Mariana dijo que iba a llamar.",
+   "accept": [],
+   "why": "*Voy a* shifts to *iba a*, just like going to becomes was going to."
+  },
+  {
+   "prompt": "Pass it on. Vale said: *Estoy feliz.* Start with *Vale dijo que…*",
+   "answer": "Vale dijo que estaba feliz.",
+   "accept": [],
+   "why": "*Estoy* becomes *estaba*, and it now talks about her."
+  },
+  {
+   "prompt": "Type in Spanish: Vale's mom told us Rosa had a younger brother.",
+   "answer": "La mamá de Vale nos dijo que Rosa tenía un hermano menor.",
+   "accept": [],
+   "why": "Told us is *nos dijo*, and had is *tenía*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Me dijo estaba cansado.",
+   "right": "Me dijo que estaba cansado.",
+   "why": "Almost. English can drop that; Spanish always keeps *que*."
+  },
+  {
+   "wrong": "Mariana dijo que va a llamar.",
+   "right": "Mariana dijo que iba a llamar.",
+   "why": "After *dijo que*, going to becomes *iba a*, the same shift English makes."
+  },
+  {
+   "wrong": "Dijo me que estaba cansado.",
+   "right": "Me dijo que estaba cansado.",
+   "why": "The person told goes before the verb: *me dijo*."
+  },
+  {
+   "wrong": "Hernando dijo que no tuvo hambre.",
+   "right": "Hernando dijo que no tenía hambre.",
+   "why": "Being hungry is a state, so it shifts to *tenía*, the describing past."
+  }
+ ],
+ "personal": "Think of the last interesting thing someone told you. Pass it on: *Mi amigo me dijo que…*, using *estaba*, *tenía* or *iba a*."
+}
