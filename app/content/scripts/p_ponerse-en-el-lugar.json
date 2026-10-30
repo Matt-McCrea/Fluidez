@@ -1,0 +1,43 @@
+{
+  "node": "p:ponerse-en-el-lugar",
+  "hook": {
+    "line": "Sooner or later you need someone to see your side of things, or you need to offer to see theirs. Spanish does it with a tiny picture: swapping places. Tomás says it to Vale when he has to explain the offer.",
+    "es": "Ponte en mi lugar.",
+    "en": "Put yourself in my shoes. (to a friend)"
+  },
+  "examples": [
+    { "es": "Ponte en mi lugar.", "en": "Put yourself in my shoes. (to a friend)" },
+    { "es": "Póngase en mi lugar.", "en": "Put yourself in my shoes. (to a stranger)" },
+    { "es": "Si me pongo en su lugar, lo entiendo.", "en": "If I put myself in her shoes, I understand." },
+    { "es": "Yo en tu lugar, lo llamaría.", "en": "If I were you, I'd call him." },
+    { "es": "Yo en tu lugar no diría nada.", "en": "If I were you, I wouldn't say anything." },
+    { "es": "Me puse en el lugar de Rosa.", "en": "I put myself in Rosa's shoes." }
+  ],
+  "rule": "English says *shoes*. Spanish says *lugar*, place.\n\n*Ponte en mi lugar*: put yourself in my place. *Póngase* is the formal version.\n*Me pongo en tu lugar*: I put myself in your place.\n*Me puse en el lugar de Rosa*: with a name, add *el lugar de*.\n\nFor advice, drop the verb: *Yo en tu lugar* plus a *would* verb, as in *Yo en tu lugar, esperaría*.",
+  "smallPrint": "Teachers call this a fixed expression: *ponerse* with *en el lugar de* works as one unit.",
+  "readAndPick": [
+    { "es": "Ponte en mi lugar.", "options": ["Put yourself in my shoes.", "Put me in your shoes."], "answer": 0 },
+    { "es": "Ponte en el lugar de Vale.", "options": ["Put Vale in your shoes.", "Put yourself in Vale's shoes."], "answer": 1 },
+    { "es": "Me pongo en tu lugar.", "options": ["I put myself in your shoes.", "You put yourself in my shoes."], "answer": 0 },
+    { "es": "Te pones en mi lugar.", "options": ["I put myself in your shoes.", "You put yourself in my shoes."], "answer": 1 },
+    { "es": "Yo en tu lugar, esperaría.", "options": ["If I were you, I'd wait.", "If you were me, you'd wait."], "answer": 0 },
+    { "es": "Tú en mi lugar, esperarías.", "options": ["If I were you, I'd wait.", "If you were me, you'd wait."], "answer": 1 },
+    { "es": "Me puse en el lugar de Rosa.", "options": ["Rosa put herself in my shoes.", "I put myself in Rosa's shoes."], "answer": 1 },
+    { "es": "Rosa se puso en mi lugar.", "options": ["Rosa put herself in my shoes.", "I put myself in Rosa's shoes."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (Put yourself in my shoes, to a friend): ___ en mi lugar. (Ponte / Pones)", "answer": "Ponte en mi lugar.", "accept": [], "why": "Telling a friend what to do uses the command *ponte*." },
+    { "prompt": "Type in Spanish (to a stranger, formal): Put yourself in my shoes.", "answer": "Póngase en mi lugar.", "accept": [], "why": "Formal commands end in *-e* with *se*: *póngase*." },
+    { "prompt": "Type in Spanish (to a friend): If I were you, I'd wait.", "answer": "Yo en tu lugar, esperaría.", "accept": ["Yo en tu lugar esperaría."], "why": "Advice is *yo en tu lugar* plus a *would* verb." },
+    { "prompt": "Type in Spanish (to a friend): I put myself in your shoes.", "answer": "Me pongo en tu lugar.", "accept": [], "why": "*Me pongo* is me, and *tu lugar* is your place." },
+    { "prompt": "Make it about Vale, past: Me pongo en tu lugar.", "answer": "Me puse en el lugar de Vale.", "accept": [], "why": "With a name, use *el lugar de* before it." },
+    { "prompt": "Ask a friend if she put herself in Vale's shoes.", "answer": "¿Te pusiste en el lugar de Vale?", "accept": [], "why": "*Te pusiste* asks about her, and *el lugar de Vale* names the place." },
+    { "prompt": "Type in Spanish (to a friend): If I were you, I wouldn't say anything.", "answer": "Yo en tu lugar no diría nada.", "accept": ["Yo en tu lugar, no diría nada."], "why": "The *would* verb comes after the place, and *no* goes before it." }
+  ],
+  "pitfalls": [
+    { "wrong": "Pon en mi lugar.", "right": "Ponte en mi lugar.", "why": "Almost. Without *te* you are asking someone to put something there; you want them to put themselves." },
+    { "wrong": "Ponte en mis zapatos.", "right": "Ponte en mi lugar.", "why": "Spanish uses place, not shoes; *zapatos* would only mean footwear." },
+    { "wrong": "Me puse en el lugar a Vale.", "right": "Me puse en el lugar de Vale.", "why": "The place belongs to Vale, so the link is *de*, not *a*." }
+  ],
+  "personal": "Think of someone you disagreed with this week. Write one line that begins *Si me pongo en su lugar*."
+}

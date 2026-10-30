@@ -1,0 +1,43 @@
+{
+  "node": "p:animarse-a",
+  "hook": {
+    "line": "There is a moment before you do something a little scary: sing, call her, say yes. Spanish has one verb for plucking up the nerve, and one for giving someone that push. Vale uses both on Tomás.",
+    "es": "¡Anímate a venir!",
+    "en": "Go on, come along! (to a friend)"
+  },
+  "examples": [
+    { "es": "¡Anímate a venir!", "en": "Go on, come along! (to a friend)" },
+    { "es": "Por fin me animé a hablarle.", "en": "I finally plucked up the courage to talk to her." },
+    { "es": "¿Te animas a venir con nosotros?", "en": "Are you up for coming with us? (to a friend)" },
+    { "es": "Tomás no se anima a vender el café.", "en": "Tomás can't bring himself to sell the café." },
+    { "es": "Vale me animó a probar la receta.", "en": "Vale encouraged me to try the recipe." },
+    { "es": "Me animaron a presentarme.", "en": "They encouraged me to apply." }
+  ],
+  "rule": "*Animarse a* means to go for it: *me animé a hablarle*, I finally dared to talk to her. After *a*, always use the infinitive.\n\n*Animar a alguien a* is the push from outside: *Vale me animó a probar*, Vale encouraged me to try.\n\nThe small word makes the difference: with *me animé*, you did the daring; with *me animó*, someone else cheered you on. It is never \"animated\" as in English. And *¡Ánimo!* by itself is a cheer.",
+  "smallPrint": "Teachers call *animarse* a pronominal verb: the *se* version means you motivate yourself.",
+  "readAndPick": [
+    { "es": "Me animé a hablarle.", "options": ["I plucked up the courage to talk to her.", "They encouraged me to talk to her."], "answer": 0 },
+    { "es": "Me animaron a hablarle.", "options": ["I plucked up the courage to talk to her.", "They encouraged me to talk to her."], "answer": 1 },
+    { "es": "Vale me animó a probar.", "options": ["I encouraged Vale to try it.", "Vale encouraged me to try it."], "answer": 1 },
+    { "es": "Animé a Vale a probar.", "options": ["I encouraged Vale to try it.", "Vale encouraged me to try it."], "answer": 0 },
+    { "es": "¿Te animas a venir?", "options": ["Are you up for coming? (to a friend)", "Is he up for coming?"], "answer": 0 },
+    { "es": "Tomás no se anima a vender el café.", "options": ["Tomás can't bring himself to sell the café.", "Tomás doesn't encourage anyone to sell the café."], "answer": 0 },
+    { "es": "Anímese a probar el postre.", "options": ["Go on, try the dessert. (to a friend)", "Go on, try the dessert. (to a stranger)"], "answer": 1 },
+    { "es": "Nos animamos a viajar.", "options": ["We encouraged them to travel.", "We finally decided to travel."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (Go on, come along, to a friend): ¡___ a venir! (Anímate / Animas)", "answer": "¡Anímate a venir!", "accept": ["Anímate a venir."], "why": "Urging a friend is the command *anímate*, with *te* on the end." },
+    { "prompt": "Type in Spanish: I finally plucked up the courage to call him.", "answer": "Por fin me animé a llamarlo.", "accept": ["Al fin me animé a llamarlo.", "Por fin me animé a llamarle."], "why": "You did the daring yourself, so *me animé a* and the infinitive." },
+    { "prompt": "Type in Spanish (to a friend): Are you up for coming with us?", "answer": "¿Te animas a venir con nosotros?", "accept": [], "why": "*Te animas a* asks if your friend is ready to go for it." },
+    { "prompt": "Make it about Tomás: Me animé a hablarle.", "answer": "Tomás se animó a hablarle.", "accept": [], "why": "Himself, so *se animó*." },
+    { "prompt": "Type in Spanish: Vale encouraged me to try the dessert.", "answer": "Vale me animó a probar el postre.", "accept": [], "why": "Someone else gives the push, so *me animó a*." },
+    { "prompt": "Make it negative: Tomás se anima a vender el café.", "answer": "Tomás no se anima a vender el café.", "accept": [], "why": "*No* goes right before *se anima*." },
+    { "prompt": "Type in Spanish (to a stranger, formal): Go on, try it.", "answer": "Anímese a probarlo.", "accept": [], "why": "A formal command ends in *-e*, with *se* on the end." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me animé venir.", "right": "Me animé a venir.", "why": "Almost. After *animarse* the verb needs *a* before the infinitive." },
+    { "wrong": "Me animó a hablarle.", "right": "Me animé a hablarle.", "why": "*Me animó* says someone else encouraged you; for your own courage, use *me animé*." },
+    { "wrong": "Me animo de venir.", "right": "Me animo a venir.", "why": "The link word is *a*, not *de*." }
+  ],
+  "personal": "Say one thing you finally dared to do. Use *Por fin me animé a*."
+}

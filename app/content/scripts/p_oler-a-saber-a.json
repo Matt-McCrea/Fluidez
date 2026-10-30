@@ -1,0 +1,43 @@
+{
+  "node": "p:oler-a-saber-a",
+  "hook": {
+    "line": "A café lives on smell and taste, and so does every kitchen conversation. Tomás walks in from the street and the first thing he notices is the air. You need one tiny word to say what it smells or tastes of.",
+    "es": "Huele a café en la cocina.",
+    "en": "It smells of coffee in the kitchen."
+  },
+  "examples": [
+    { "es": "Huele a gas en la cocina.", "en": "It smells of gas in the kitchen." },
+    { "es": "Esta salsa sabe a ajo.", "en": "This sauce tastes of garlic." },
+    { "es": "Huele a quemado.", "en": "It smells burnt." },
+    { "es": "Este jugo tiene sabor a mango.", "en": "This juice tastes of mango." },
+    { "es": "Huele rico en tu cocina.", "en": "It smells good in your kitchen." },
+    { "es": "Hueles a café.", "en": "You smell of coffee. (to a friend)" }
+  ],
+  "rule": "To say what something smells or tastes of, put *a* after the verb.\n\n*Huele a café*: it smells of coffee.\n*Sabe a café*: it tastes of coffee.\n\nWithout *a*, *huele* and *sabe* are followed by a verdict instead: *huele rico*, *sabe rico*, *huele feo*. Do not use an article for a substance: *sabe a ajo*, not *sabe al ajo*.\n\n*Oler* changes its stem: *huelo, hueles, huele, olemos, huelen*. And *tiene sabor a* is another way to say *sabe a*.",
+  "smallPrint": "Teachers call this a verb of perception: *oler* and *saber* describe the sense, and *a* introduces what you perceive.",
+  "readAndPick": [
+    { "es": "Huele a café.", "options": ["It smells of coffee.", "It tastes of coffee."], "answer": 0 },
+    { "es": "Sabe a café.", "options": ["It smells of coffee.", "It tastes of coffee."], "answer": 1 },
+    { "es": "Huelo a café.", "options": ["You smell of coffee.", "I smell of coffee."], "answer": 1 },
+    { "es": "Hueles a café.", "options": ["I smell of coffee.", "You smell of coffee. (to a friend)"], "answer": 1 },
+    { "es": "Huele rico.", "options": ["It tastes good.", "It smells good."], "answer": 1 },
+    { "es": "Sabe rico.", "options": ["It tastes good.", "It smells good."], "answer": 0 },
+    { "es": "Sabe a quemado.", "options": ["It smells burnt.", "It tastes burnt."], "answer": 1 },
+    { "es": "Estos jugos saben a mango.", "options": ["This juice tastes of mango.", "These juices taste of mango."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (It smells of gas in the kitchen): ___ a gas en la cocina. (Huele / Sabe)", "answer": "Huele a gas en la cocina.", "accept": [], "why": "Smell is *huele*, and *a* introduces what it smells of." },
+    { "prompt": "Type in Spanish: This sauce tastes of garlic.", "answer": "Esta salsa sabe a ajo.", "accept": [], "why": "Taste is *sabe a*, and no article before *ajo*." },
+    { "prompt": "Type in Spanish: It smells of coffee in the café.", "answer": "Huele a café en el café.", "accept": [], "why": "*Huele a* then the thing it smells of." },
+    { "prompt": "Make it plural: Este jugo sabe a mango.", "answer": "Estos jugos saben a mango.", "accept": [], "why": "More than one juice, so *estos jugos saben*." },
+    { "prompt": "Type in Spanish (to a friend): You smell of coffee.", "answer": "Hueles a café.", "accept": [], "why": "*Hueles* is you, with the stem change *o* to *ue*." },
+    { "prompt": "Type in Spanish: It smells good in your kitchen. (to a friend)", "answer": "Huele rico en tu cocina.", "accept": ["Huele bien en tu cocina."], "why": "A verdict needs no *a*: *huele rico*." },
+    { "prompt": "Type in Spanish: It tastes burnt.", "answer": "Sabe a quemado.", "accept": [], "why": "What it tastes of comes after *sabe a*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Huele quemado.", "right": "Huele a quemado.", "why": "Almost. To say what it smells of, Spanish needs the small word *a*." },
+    { "wrong": "Esta salsa sabe al ajo.", "right": "Esta salsa sabe a ajo.", "why": "A substance takes no article, so just *a ajo*." },
+    { "wrong": "Oleo a café.", "right": "Huelo a café.", "why": "*Oler* changes its stem: *huelo*, not *oleo*." }
+  ],
+  "personal": "Tell us what your kitchen smells of right now, or what your favourite food tastes of. Use *huele a* or *sabe a*."
+}

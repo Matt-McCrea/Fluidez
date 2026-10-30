@@ -1,0 +1,43 @@
+{
+  "node": "p:enamorarse-de",
+  "hook": {
+    "line": "Everyone has a story about how they met someone, and another about how things stand now. Spanish splits the two: the moment you fell, and the state of being in love. Hernando loves to tell the first one.",
+    "es": "Me enamoré de ella apenas la vi.",
+    "en": "I fell in love with her as soon as I saw her."
+  },
+  "examples": [
+    { "es": "Me enamoré de ella apenas la vi.", "en": "I fell in love with her as soon as I saw her." },
+    { "es": "Está enamorado de su vecina.", "en": "He's in love with his neighbour." },
+    { "es": "Nos enamoramos en la universidad.", "en": "We fell in love at university." },
+    { "es": "¿Estás enamorada de él?", "en": "Are you in love with him? (to a woman)" },
+    { "es": "Rosa se enamoró de un vecino.", "en": "Rosa fell in love with a neighbour." },
+    { "es": "Hernando está enamorado de su viejo taxi.", "en": "Hernando is in love with his old taxi." }
+  ],
+  "rule": "Spanish keeps the moment and the state apart.\n\n*Me enamoré de ella*: I fell in love with her (the moment).\n*Estoy enamorado de ella*: I'm in love with her (the state).\n\nBoth take *de*, never *con*. In the state version, *enamorado* is an adjective and matches who is in love: *enamorada* for a woman, *enamorados* for a group.\n\nCompare *casarse* and *estar casado*: you get married once, and you stay married.",
+  "smallPrint": "Teachers call this a pronominal verb of change: *enamorarse* is the event, *estar enamorado* is the resulting state.",
+  "readAndPick": [
+    { "es": "Me enamoré de Vale.", "options": ["I fell in love with Vale.", "I am in love with Vale."], "answer": 0 },
+    { "es": "Estoy enamorado de Vale.", "options": ["I fell in love with Vale.", "I am in love with Vale."], "answer": 1 },
+    { "es": "Nos enamoramos en Cali.", "options": ["We are in love in Cali.", "We fell in love in Cali."], "answer": 1 },
+    { "es": "Está enamorada de Tomás.", "options": ["She is in love with Tomás.", "He is in love with Tomás."], "answer": 0 },
+    { "es": "Está enamorado de Mariana.", "options": ["She is in love with Mariana.", "He is in love with Mariana."], "answer": 1 },
+    { "es": "Se enamoraron en la universidad.", "options": ["They are in love at university.", "They fell in love at university."], "answer": 1 },
+    { "es": "¿Estás enamorada de él?", "options": ["Are you in love with him? (to a woman)", "Did you fall in love with him?"], "answer": 0 },
+    { "es": "Rosa se enamoró de un vecino.", "options": ["Rosa is in love with a neighbour.", "Rosa fell in love with a neighbour."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (I fell in love with her as soon as I saw her): ___ de ella apenas la vi. (Me enamoré / Estoy enamorado)", "answer": "Me enamoré de ella apenas la vi.", "accept": [], "why": "A moment in the past, so the event *me enamoré*." },
+    { "prompt": "Type in Spanish: He's in love with his neighbour (a woman).", "answer": "Está enamorado de su vecina.", "accept": [], "why": "How things stand now is *está enamorado*, then *de*." },
+    { "prompt": "Type in Spanish: We fell in love at university.", "answer": "Nos enamoramos en la universidad.", "accept": [], "why": "A moment again, so *nos enamoramos*." },
+    { "prompt": "Make it a woman speaking: Estoy enamorado de Tomás.", "answer": "Estoy enamorada de Tomás.", "accept": [], "why": "The adjective matches who is in love, so *enamorada*." },
+    { "prompt": "Ask a man you know if he is in love with Vale.", "answer": "¿Estás enamorado de Vale?", "accept": [], "why": "*Estás* is you, *enamorado* matches a man, and *de* is the link." },
+    { "prompt": "Make it about Rosa: Me enamoré de un vecino.", "answer": "Rosa se enamoró de un vecino.", "accept": [], "why": "For Rosa, *me* becomes *se*, and the verb ends in *-ó*." },
+    { "prompt": "Make it plural, two women: Está enamorada de Tomás.", "answer": "Están enamoradas de Tomás.", "accept": [], "why": "More than one means *están* and *enamoradas*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me enamoré con ella.", "right": "Me enamoré de ella.", "why": "Almost. English says *with*, but Spanish always links the person with *de*." },
+    { "wrong": "Soy enamorado de ella.", "right": "Estoy enamorado de ella.", "why": "Being in love is a state you are in, so *estoy*." },
+    { "wrong": "Ella está enamorado de Tomás.", "right": "Ella está enamorada de Tomás.", "why": "The adjective agrees with her, so it ends in *-a*." }
+  ],
+  "personal": "Tell us about something you fell for, a person, a city or a food. Use *Me enamoré de*."
+}
