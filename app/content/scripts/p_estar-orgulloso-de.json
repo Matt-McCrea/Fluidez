@@ -1,0 +1,90 @@
+{
+  "node": "p:estar-orgulloso-de",
+  "hook": {
+    "line": "Tomás has opened the café at six every morning for a month. Don Hernando has noticed, and for a man who says very little, he finds the words.",
+    "es": "Estoy muy orgulloso de ti.",
+    "en": "I'm very proud of you. (a man speaking, to a friend)"
+  },
+  "examples": [
+    { "es": "Estoy muy orgullosa de ti.", "en": "I'm very proud of you. (a woman speaking, to a friend)" },
+    { "es": "Don Hernando está orgulloso de Tomás.", "en": "Don Hernando is proud of Tomás." },
+    { "es": "Estoy orgulloso de ser colombiano.", "en": "I'm proud to be Colombian. (a man speaking)" },
+    { "es": "Estamos orgullosos de nuestro barrio.", "en": "We're proud of our neighbourhood. (all men, or a mixed group)" },
+    { "es": "Estamos orgullosos de que trabajes aquí.", "en": "We're proud that you work here. (to a friend)" },
+    { "es": "No estoy orgullosa de eso.", "en": "I'm not proud of that. (a woman speaking)" }
+  ],
+  "rule": "English says proud *of* someone. Spanish keeps the same little word, *de*, in every version:\n*orgulloso de* + a person or thing: *de ti*, *de mi familia*.\n*orgulloso de* + an action you did yourself: *de ser colombiano*.\n*orgulloso de que* + someone else's action, with the *-es/-e* verb form you met with feelings: *de que trabajes aquí*.\n*Orgulloso* is an adjective: *orgullosa*, *orgullosos*. After *de*, you is *ti* and me is *mí*.\nUse *estar* for pride in someone. *Ser orgulloso* means being a proud, stuck-up person.",
+  "smallPrint": "Teachers call the verb form after *de que* the subjunctive: it appears when you react to what someone else does.",
+  "readAndPick": [
+    { "es": "Estoy muy orgullosa de ti.", "options": ["I'm very proud of you. (a man speaking)", "You're very proud of me.", "I'm very proud of you. (a woman speaking)"], "answer": 2 },
+    { "es": "Estoy orgulloso de ser colombiano.", "options": ["I'm proud to be Colombian.", "I'm proud that he's Colombian.", "I'm proud of the Colombians."], "answer": 0 },
+    { "es": "Mi mamá está orgullosa de mí.", "options": ["I'm proud of my mom.", "My mom is proud of you.", "My mom is proud of me."], "answer": 2 },
+    { "es": "Estamos orgullosos de que trabajes aquí.", "options": ["We're proud to work here.", "We're proud that you work here.", "We're proud that she works here."], "answer": 1 },
+    { "es": "No estoy orgullosa de eso.", "options": ["I'm not proud of that. (a woman speaking)", "I'm proud of that. (a woman speaking)", "She's not proud of that."], "answer": 0 },
+    { "es": "Estoy orgulloso de que Tomás se quede.", "options": ["Tomás is proud to stay.", "I'm proud to stay.", "I'm proud that Tomás is staying."], "answer": 2 },
+    { "es": "Estamos muy orgullosos de ustedes.", "options": ["We're very proud of you all.", "You all are very proud of us.", "We're very proud of them."], "answer": 0 },
+    { "es": "Rosa estaba orgullosa de su café.", "options": ["Rosa is proud of her café.", "Rosa was proud of her café.", "Rosa was proud of our café."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de* or *con* and type the whole sentence: *Estoy muy orgullosa ___ ti.*",
+      "answer": "Estoy muy orgullosa de ti.",
+      "accept": [],
+      "why": "Proud of someone is *orgulloso de*, as in English."
+    },
+    {
+      "prompt": "Say to a friend (a man speaking): I'm proud of you.",
+      "answer": "Estoy orgulloso de ti.",
+      "accept": [],
+      "why": "After *de*, you (informal) is *ti*, with no accent."
+    },
+    {
+      "prompt": "Say (a man speaking): I'm proud to live in Bogotá.",
+      "answer": "Estoy orgulloso de vivir en Bogotá.",
+      "accept": [],
+      "why": "An action you do yourself is *de* plus the infinitive."
+    },
+    {
+      "prompt": "Say: Don Hernando is proud of Tomás.",
+      "answer": "Don Hernando está orgulloso de Tomás.",
+      "accept": ["Hernando está orgulloso de Tomás."],
+      "why": "A feeling right now uses *está*, and *de* comes before the person."
+    },
+    {
+      "prompt": "Say (we are all women): We're very proud of our neighbourhood.",
+      "answer": "Estamos muy orgullosas de nuestro barrio.",
+      "accept": [],
+      "why": "We are all women, so the adjective is plural feminine: *orgullosas*."
+    },
+    {
+      "prompt": "Make it about a woman speaking: *Estoy orgulloso de mi familia.*",
+      "answer": "Estoy orgullosa de mi familia.",
+      "accept": [],
+      "why": "The ending follows who feels the pride: *-a* for a woman."
+    },
+    {
+      "prompt": "Start with *Estoy orgulloso de que…* (a man speaking) and say: I'm proud that Tomás is staying.",
+      "answer": "Estoy orgulloso de que Tomás se quede.",
+      "accept": [],
+      "why": "Someone else's action after *de que* takes the *-e* form: *se quede*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Soy orgulloso de ti.",
+      "right": "Estoy orgulloso de ti.",
+      "why": "Almost. *Soy orgulloso* describes a proud, stuck-up person; for pride in someone, use *estoy*."
+    },
+    {
+      "wrong": "Estoy orgulloso que trabajes aquí.",
+      "right": "Estoy orgulloso de que trabajes aquí.",
+      "why": "The *de* stays in front of *que*, just as it stays in front of *ti*."
+    },
+    {
+      "wrong": "Ella está orgulloso de ti.",
+      "right": "Ella está orgullosa de ti.",
+      "why": "The adjective matches the person who feels proud, and *ella* is a woman."
+    }
+  ],
+  "personal": "Say one thing you are proud of doing, with *estoy orgulloso de* (or *orgullosa de*) plus an infinitive. Then name one person you are proud of."
+}

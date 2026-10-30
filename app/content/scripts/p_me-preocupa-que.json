@@ -1,0 +1,90 @@
+{
+  "node": "p:me-preocupa-que",
+  "hook": {
+    "line": "Don Hernando hasn't come in for his tinto in three days, and Tomás keeps looking at the door. Worry in Spanish starts with the thing that worries you.",
+    "es": "Me preocupa que Hernando no venga.",
+    "en": "It worries me that Hernando isn't coming."
+  },
+  "examples": [
+    { "es": "Me preocupa que no conteste.", "en": "It worries me that he doesn't answer." },
+    { "es": "Me preocupan los precios.", "en": "Prices worry me." },
+    { "es": "A Tomás le preocupa que el café cierre.", "en": "Tomás is worried that the café will close." },
+    { "es": "¿Te preocupa que Altamira compre la cuadra?", "en": "Does it worry you that Altamira is buying the block? (to a friend)" },
+    { "es": "Estoy preocupada por mi mamá.", "en": "I'm worried about my mom. (a woman speaking)" },
+    { "es": "No te preocupes por eso.", "en": "Don't worry about that. (to a friend)" }
+  ],
+  "rule": "*Me preocupa* works like *me gusta*: the thing worries you. *Me preocupa el precio*; with a plural thing, *me preocupan los precios*.\nFor someone's action, add *que* and the *-e/-es* verb form: *Me preocupa que no conteste.*\nTo say you are worried, use *estoy preocupado POR*. English says about; Spanish says *por*, never *de*.\n*Preocupadísimo* already means extremely worried, so don't add *muy*.\nTo calm someone: *No te preocupes* (friend), *No se preocupe* (usted).",
+  "smallPrint": "Teachers call the verb form after *que* the subjunctive: it shows up when you react to something someone else does.",
+  "readAndPick": [
+    { "es": "Me preocupa que no conteste.", "options": ["It worries him that I don't answer.", "It worries me that he doesn't answer.", "I'm worried about not answering."], "answer": 1 },
+    { "es": "Estoy preocupada por mi mamá.", "options": ["I'm worried about my mom. (a woman speaking)", "I'm worried about my mom. (a man speaking)", "My mom is worried about me."], "answer": 0 },
+    { "es": "Me preocupan los precios.", "options": ["The price worries me.", "Prices worry you.", "Prices worry me."], "answer": 2 },
+    { "es": "¿Te preocupa que Altamira compre la cuadra?", "options": ["Does it worry Altamira that you're buying the block?", "Am I worried that Altamira is buying the block?", "Does it worry you that Altamira is buying the block? (to a friend)"], "answer": 2 },
+    { "es": "No te preocupes por eso.", "options": ["Don't worry about that. (to a friend)", "I don't worry about that.", "He doesn't worry about that."], "answer": 0 },
+    { "es": "No se preocupe por eso.", "options": ["Don't worry about that. (to a friend)", "He isn't worried about that.", "Don't worry about that. (formal)"], "answer": 2 },
+    { "es": "Está preocupadísimo por el examen.", "options": ["He's slightly worried about the exam.", "He's extremely worried about the exam.", "She's extremely worried about the exam."], "answer": 1 },
+    { "es": "A Tomás le preocupa que el café cierre.", "options": ["Tomás is worried that the café will close.", "Tomás is worried about closing the café.", "I'm worried that Tomás will close the café."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *por* or *de* and type the whole sentence (a woman speaking): *Estoy preocupada ___ mi mamá.*",
+      "answer": "Estoy preocupada por mi mamá.",
+      "accept": [],
+      "why": "Worried about is *preocupado por*."
+    },
+    {
+      "prompt": "Choose *preocupa* or *preocupan* and type the whole sentence: *Me ___ los precios.*",
+      "answer": "Me preocupan los precios.",
+      "accept": [],
+      "why": "The prices are plural, and the verb agrees with the thing that worries you."
+    },
+    {
+      "prompt": "Tell a friend: Don't worry about that.",
+      "answer": "No te preocupes por eso.",
+      "accept": [],
+      "why": "Telling a friend not to do something uses the *-es* form: *preocupes*."
+    },
+    {
+      "prompt": "Tell someone you address as *usted*: Don't worry about that.",
+      "answer": "No se preocupe por eso.",
+      "accept": [],
+      "why": "For *usted*, the pronoun is *se* and the verb ends in *-e*."
+    },
+    {
+      "prompt": "Say: It worries me that he doesn't answer.",
+      "answer": "Me preocupa que no conteste.",
+      "accept": [],
+      "why": "*No* goes before the verb, and his action takes the *-e* form: *conteste*."
+    },
+    {
+      "prompt": "Ask a friend: Does it worry you that Altamira is buying the block?",
+      "answer": "¿Te preocupa que Altamira compre la cuadra?",
+      "accept": [],
+      "why": "*Te* is you (informal), and Altamira's action takes *compre*."
+    },
+    {
+      "prompt": "Make it about Tomás: *Me preocupa que el café cierre.*",
+      "answer": "A Tomás le preocupa que el café cierre.",
+      "accept": [],
+      "why": "For him, *me* becomes *le*, and you name Tomás first with *a*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy preocupado de mi mamá.",
+      "right": "Estoy preocupado por mi mamá.",
+      "why": "Almost. The little word after *preocupado* is *por*, never *de*."
+    },
+    {
+      "wrong": "Estoy muy preocupadísimo.",
+      "right": "Estoy preocupadísimo.",
+      "why": "The ending *-ísimo* already means extremely, so *muy* is one too many."
+    },
+    {
+      "wrong": "Yo preocupo que no conteste.",
+      "right": "Me preocupa que no conteste.",
+      "why": "The news worries you, so *me* comes first and the verb stays *preocupa*."
+    }
+  ],
+  "personal": "Name something that worries you at the moment. Say one with a thing (*me preocupa* plus a noun) and one with *que* and someone else's action."
+}

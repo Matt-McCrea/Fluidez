@@ -1,0 +1,90 @@
+{
+  "node": "p:es-increible-como",
+  "hook": {
+    "line": "Mariana tastes the first tray Vale has baked for the café and cannot stop talking. The praise isn't about the food. It is about how Vale does it.",
+    "es": "¡Es increíble cómo cocina Vale!",
+    "en": "It's amazing how Vale cooks!"
+  },
+  "examples": [
+    { "es": "¡Es increíble cómo toca la guitarra!", "en": "It's amazing how she plays the guitar!" },
+    { "es": "¡Es increíble cómo cocina Vale!", "en": "It's amazing how Vale cooks!" },
+    { "es": "¡Es impresionante cómo baila Mariana!", "en": "It's impressive how Mariana dances!" },
+    { "es": "¡Es impresionante cuánto sabe!", "en": "It's impressive how much he knows!" },
+    { "es": "¡Es impresionante lo que has aprendido!", "en": "It's impressive what you've learned! (to a friend)" },
+    { "es": "¡Es increíble cómo mejora tu español!", "en": "It's amazing how your Spanish is improving! (to a friend)" }
+  ],
+  "rule": "English admires the way someone does something: *It's amazing how she cooks!* Spanish builds it the same way, with *cómo*:\n*¡Es increíble cómo cocina!*\nKeep the accent on *cómo*, even though nobody is asking a question. *Es impresionante* works too.\nFor an amount, use *cuánto*: *¡Es impresionante cuánto sabe!* For the thing itself, use *lo que*: *lo que has aprendido*.\nAfter *cómo* comes an ordinary verb, not the *-es/-e* form, and the person usually goes after it: *cómo cocina Vale*.",
+  "smallPrint": "Teachers call this an exclamation with an embedded question word. It admires the manner, not just the fact.",
+  "readAndPick": [
+    { "es": "¡Es increíble cómo cocina Vale!", "options": ["It's amazing how much Vale cooks!", "It's amazing what Vale cooks!", "It's amazing how Vale cooks!"], "answer": 2 },
+    { "es": "¡Es impresionante cuánto sabe!", "options": ["It's impressive how she does it!", "It's impressive how much she knows!", "It's impressive what she knows!"], "answer": 1 },
+    { "es": "¡Es impresionante lo que has aprendido!", "options": ["It's impressive what you've learned!", "It's impressive how you've learned!", "It's impressive how much I've learned!"], "answer": 0 },
+    { "es": "¡Es increíble cómo trabajas!", "options": ["It's amazing how he works!", "It's amazing how I work!", "It's amazing how you work!"], "answer": 2 },
+    { "es": "¡Es increíble cómo trabaja Hernando!", "options": ["It's amazing how Hernando works!", "It's amazing that Hernando works!", "It's amazing how well Hernando works!"], "answer": 0 },
+    { "es": "¡Es increíble cómo mejora tu español!", "options": ["It's amazing how good your Spanish is!", "It's amazing how you improve my Spanish!", "It's amazing how your Spanish is improving!"], "answer": 2 },
+    { "es": "¡Es increíble cómo hablas español!", "options": ["It's amazing how he speaks Spanish!", "It's amazing how you speak Spanish!", "It's amazing how I speak Spanish!"], "answer": 1 },
+    { "es": "¡Es impresionante cómo baila Mariana!", "options": ["It's impressive how Mariana dances!", "It's impressive that Mariana dances!", "It's impressive how much Mariana dances!"], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *cómo* or *cuánto* and type the whole sentence: *¡Es increíble ___ cocina Vale!* (how she cooks)",
+      "answer": "¡Es increíble cómo cocina Vale!",
+      "accept": [],
+      "why": "Admiring the way she does it takes *cómo*."
+    },
+    {
+      "prompt": "Choose *cómo* or *cuánto* and type the whole sentence: *¡Es impresionante ___ sabe!* (how much she knows)",
+      "answer": "¡Es impresionante cuánto sabe!",
+      "accept": [],
+      "why": "An amount takes *cuánto*."
+    },
+    {
+      "prompt": "Say: It's amazing how Mariana dances!",
+      "answer": "¡Es increíble cómo baila Mariana!",
+      "accept": ["¡Es impresionante cómo baila Mariana!"],
+      "why": "*Es increíble cómo* plus a normal verb, then the person."
+    },
+    {
+      "prompt": "Say to a friend: It's amazing how you cook!",
+      "answer": "¡Es increíble cómo cocinas!",
+      "accept": ["¡Es impresionante cómo cocinas!"],
+      "why": "You (informal) is the *-s* ending: *cocinas*."
+    },
+    {
+      "prompt": "Say to a friend: It's impressive what you've learned!",
+      "answer": "¡Es impresionante lo que has aprendido!",
+      "accept": ["¡Es increíble lo que has aprendido!"],
+      "why": "For the thing itself, *lo que* replaces *cómo*."
+    },
+    {
+      "prompt": "Change the verb. Use *manejar* to say: It's amazing how Hernando drives!",
+      "answer": "¡Es increíble cómo maneja Hernando!",
+      "accept": ["¡Es impresionante cómo maneja Hernando!"],
+      "why": "Same frame, new verb: *maneja* for he."
+    },
+    {
+      "prompt": "Say: It's amazing how much Vale works!",
+      "answer": "¡Es increíble cuánto trabaja Vale!",
+      "accept": ["¡Es impresionante cuánto trabaja Vale!"],
+      "why": "How much is *cuánto*, and the verb stays ordinary: *trabaja*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Es increíble como toca la guitarra!",
+      "right": "¡Es increíble cómo toca la guitarra!",
+      "why": "Almost. Keep the accent: it is still the *how* word, not *as*."
+    },
+    {
+      "wrong": "¡Es increíble que toca la guitarra!",
+      "right": "¡Es increíble cómo toca la guitarra!",
+      "why": "Admiring the way someone does it needs *cómo*; *que* means that and brings a different verb form."
+    },
+    {
+      "wrong": "¡Es increíble cómo cocinar!",
+      "right": "¡Es increíble cómo cocina!",
+      "why": "English says how to cook, but here someone actually cooks, so use a conjugated verb."
+    }
+  ],
+  "personal": "Think of someone you admire. Say what impresses you about them with *Es increíble cómo…* or *Es impresionante cuánto…*."
+}

@@ -1,0 +1,90 @@
+{
+  "node": "p:me-da-miedo-que",
+  "hook": {
+    "line": "Tomás hears that Altamira has been measuring the block at night. He doesn't want to sound dramatic, but he is scared, and the frame needs two parts: what scares him, and who does it.",
+    "es": "Me da miedo que Altamira compre la cuadra.",
+    "en": "It scares me that Altamira will buy the block."
+  },
+  "examples": [
+    { "es": "Me da miedo que manejes tan rápido.", "en": "It scares me that you drive so fast. (to a friend)" },
+    { "es": "Me dan miedo las alturas.", "en": "Heights scare me." },
+    { "es": "Tengo miedo de perder el trabajo.", "en": "I'm afraid of losing my job." },
+    { "es": "Tengo miedo de que no vuelvas.", "en": "I'm afraid you won't come back. (to a friend)" },
+    { "es": "A Vale le da miedo que cierren el café.", "en": "It scares Vale that they might close the café." },
+    { "es": "¿Te da miedo manejar de noche?", "en": "Does driving at night scare you? (to a friend)" }
+  ],
+  "rule": "Two ways to say it:\n*Tengo miedo de*: you own the fear. *Tengo miedo de perder el trabajo.*\n*Me da miedo*: the thing causes it, like *me gusta*. With a plural thing the verb agrees: *Me dan miedo las alturas.*\nFor someone else's action, add *que* and the *-es/-e* verb form: *Me da miedo que manejes tan rápido.* *Tengo miedo de que* works the same way, and the *de* stays.\nSwap *me* for *te, le, nos, les* to change who is scared. Say *manejar* for driving.",
+  "smallPrint": "Teachers call the verb form after *que* the subjunctive: it shows up when you react to something someone else does.",
+  "readAndPick": [
+    { "es": "Me dan miedo las alturas.", "options": ["Heights scare you.", "Heights scare me.", "Heights scared me."], "answer": 1 },
+    { "es": "Me da miedo que manejes tan rápido.", "options": ["I'm scared of driving so fast.", "It scares me that you drive so fast.", "It scares you that I drive so fast."], "answer": 1 },
+    { "es": "Tengo miedo de perder el trabajo.", "options": ["I'm afraid of losing my job.", "I'm afraid you'll lose your job.", "He's afraid of losing his job."], "answer": 0 },
+    { "es": "Tengo miedo de que no vuelvas.", "options": ["I'm afraid of not coming back.", "You're afraid I won't come back.", "I'm afraid you won't come back."], "answer": 2 },
+    { "es": "A Vale le da miedo que cierren el café.", "options": ["Vale is scared they might close the café.", "Vale is scared of closing the café.", "I'm scared Vale will close the café."], "answer": 0 },
+    { "es": "No me da miedo nada.", "options": ["Everything scares me.", "Nothing scares me.", "Nothing scares you."], "answer": 1 },
+    { "es": "¿Te da miedo manejar de noche?", "options": ["Does driving at night scare him?", "Am I afraid of driving at night?", "Does driving at night scare you? (to a friend)"], "answer": 2 },
+    { "es": "Nos da miedo que Tomás se vaya.", "options": ["It scares us that Tomás is leaving.", "It scares Tomás that we're leaving.", "It scares me that Tomás is leaving."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *da* or *dan* and type the whole sentence: *Me ___ miedo las alturas.*",
+      "answer": "Me dan miedo las alturas.",
+      "accept": [],
+      "why": "The heights are plural, and the verb agrees with the thing that scares you."
+    },
+    {
+      "prompt": "Say: I'm afraid of losing my job.",
+      "answer": "Tengo miedo de perder el trabajo.",
+      "accept": ["Me da miedo perder el trabajo."],
+      "why": "You own the fear, so *tengo miedo de* plus an infinitive."
+    },
+    {
+      "prompt": "Say to a friend: It scares me that you drive so fast.",
+      "answer": "Me da miedo que manejes tan rápido.",
+      "accept": [],
+      "why": "Your friend's action after *que* takes the *-es* form: *manejes*."
+    },
+    {
+      "prompt": "Start with *Tengo miedo de que…* and say to a friend: I'm afraid you won't come back.",
+      "answer": "Tengo miedo de que no vuelvas.",
+      "accept": ["Me da miedo que no vuelvas."],
+      "why": "*No* goes before the verb, and *de* stays in front of *que*."
+    },
+    {
+      "prompt": "Ask a friend: Does driving at night scare you?",
+      "answer": "¿Te da miedo manejar de noche?",
+      "accept": [],
+      "why": "*Te* is you (informal), and the infinitive follows directly."
+    },
+    {
+      "prompt": "Make it about Vale: *Me da miedo que cierren el café.*",
+      "answer": "A Vale le da miedo que cierren el café.",
+      "accept": [],
+      "why": "For her, *me* becomes *le*, and you name Vale first with *a*."
+    },
+    {
+      "prompt": "Make it about *we*: *Me da miedo que Tomás se vaya.*",
+      "answer": "Nos da miedo que Tomás se vaya.",
+      "accept": [],
+      "why": "Scared as a group is *nos*, and the verb stays *da*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tengo miedo que no vuelvas.",
+      "right": "Tengo miedo de que no vuelvas.",
+      "why": "Almost. Spanish keeps the *de* before *que*, where English drops *of*."
+    },
+    {
+      "wrong": "Me da miedo las alturas.",
+      "right": "Me dan miedo las alturas.",
+      "why": "The verb agrees with the thing that scares you, and heights are plural."
+    },
+    {
+      "wrong": "Me da miedo que manejas tan rápido.",
+      "right": "Me da miedo que manejes tan rápido.",
+      "why": "After *que*, a feeling about someone else's action wants the *-es* form."
+    }
+  ],
+  "personal": "Say what scares you most about a big change in your life. Use *me da(n) miedo* once and *tengo miedo de* once."
+}

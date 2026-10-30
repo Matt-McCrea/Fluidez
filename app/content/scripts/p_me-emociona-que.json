@@ -1,0 +1,90 @@
+{
+  "node": "p:me-emociona-que",
+  "hook": {
+    "line": "Tomás's cousin from Toronto is flying in for the weekend, and he wants her to know exactly how he feels. In Spanish, the news does the exciting.",
+    "es": "Me emociona que vengas a Bogotá.",
+    "en": "I'm excited that you're coming to Bogotá. (to a friend)"
+  },
+  "examples": [
+    { "es": "Me emociona que vengas a Bogotá.", "en": "I'm excited that you're coming to Bogotá. (to a friend)" },
+    { "es": "Me emociona viajar.", "en": "I'm excited to travel." },
+    { "es": "Estoy emocionada con el viaje.", "en": "I'm excited about the trip. (a woman speaking)" },
+    { "es": "¿Te emociona que Tomás se quede?", "en": "Are you excited that Tomás is staying? (to a friend)" },
+    { "es": "A Hernando le emociona que Tomás abra el café.", "en": "Hernando is excited that Tomás is opening the café." },
+    { "es": "No me emociona la oferta.", "en": "I'm not excited about the offer." }
+  ],
+  "rule": "*Me emociona* works like *me gusta*: the news excites you, so you are not the subject.\n*Me emociona* + a thing: *Me emociona el viaje.*\n*Me emociona* + an infinitive: *Me emociona viajar.*\n*Me emociona que* + someone else's action, with the *-e/-es* verb form: *que vengas*.\nSwap *me* for who feels it: *te, le, nos, les*. With *le* or *les*, name them first: *A Hernando le emociona…*\nTo say you are excited, use *estoy emocionado con* a thing. *Emocionado* means excited, not just emotional.",
+  "smallPrint": "Teachers call *emocionar* and *gustar* verbs of reaction. After *que*, the *-e/-es* verb form is the subjunctive.",
+  "readAndPick": [
+    { "es": "Me emociona que vengas a Bogotá.", "options": ["I'm excited to come to Bogotá.", "I'm excited that you're coming to Bogotá.", "You're excited that I'm coming to Bogotá."], "answer": 1 },
+    { "es": "Me emociona viajar.", "options": ["I'm excited that she's travelling.", "I'm excited to travel.", "She's excited to travel."], "answer": 1 },
+    { "es": "Te emociona el viaje.", "options": ["The trip excites you. (a friend)", "The trip excites me.", "The trip excites him."], "answer": 0 },
+    { "es": "A Hernando le emociona que Tomás abra el café.", "options": ["Tomás is excited that Hernando is opening the café.", "Hernando is excited to open the café.", "Hernando is excited that Tomás is opening the café."], "answer": 2 },
+    { "es": "Nos emociona que vengan ustedes.", "options": ["We're excited that you all are coming.", "You all are excited that we're coming.", "I'm excited that you all are coming."], "answer": 0 },
+    { "es": "Estoy emocionada con el viaje.", "options": ["He is excited about the trip.", "I'm excited about the trip. (a man speaking)", "I'm excited about the trip. (a woman speaking)"], "answer": 2 },
+    { "es": "No me emociona la oferta.", "options": ["I'm not excited about the offer.", "He's not excited about the offer.", "The offer doesn't excite you."], "answer": 0 },
+    { "es": "¿Te emociona que Tomás se quede?", "options": ["Is Tomás excited to stay?", "Am I excited that Tomás is staying?", "Are you excited that Tomás is staying? (to a friend)"], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *me* or *te* and type the whole sentence: *___ emociona el viaje.* (the trip excites me)",
+      "answer": "Me emociona el viaje.",
+      "accept": [],
+      "why": "The trip excites you, the speaker, so *me*."
+    },
+    {
+      "prompt": "Say: I'm excited to travel.",
+      "answer": "Me emociona viajar.",
+      "accept": [],
+      "why": "An action goes straight after *emociona* as an infinitive."
+    },
+    {
+      "prompt": "Say to a friend: I'm excited that you're coming to Bogotá.",
+      "answer": "Me emociona que vengas a Bogotá.",
+      "accept": ["Me emociona que vengas."],
+      "why": "Someone else's action after *que* takes the *-es* form: *vengas*."
+    },
+    {
+      "prompt": "Say (a woman speaking): I'm excited about the trip.",
+      "answer": "Estoy emocionada con el viaje.",
+      "accept": ["Estoy emocionada por el viaje."],
+      "why": "To describe yourself as excited, use *estoy emocionada*, with *-a* for a woman."
+    },
+    {
+      "prompt": "Ask a friend: Are you excited that Tomás is staying?",
+      "answer": "¿Te emociona que Tomás se quede?",
+      "accept": [],
+      "why": "*Te* is you (informal), and *se quede* is Tomás's action."
+    },
+    {
+      "prompt": "Make it about Hernando: *Me emociona que Tomás abra el café.*",
+      "answer": "A Hernando le emociona que Tomás abra el café.",
+      "accept": [],
+      "why": "For him, *me* becomes *le*, and you name Hernando first with *a*."
+    },
+    {
+      "prompt": "Make it about *we*: *Me emociona que vengas.*",
+      "answer": "Nos emociona que vengas.",
+      "accept": [],
+      "why": "Excited as a group is *nos*, and the verb stays *emociona*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo emociono que vengas.",
+      "right": "Me emociona que vengas.",
+      "why": "Almost. The news excites you, so *me* comes first and the verb stays *emociona*."
+    },
+    {
+      "wrong": "Me emociona que vienes.",
+      "right": "Me emociona que vengas.",
+      "why": "A feeling about someone else's action wants the *-es* form: *vengas*."
+    },
+    {
+      "wrong": "Me emociona a viajar.",
+      "right": "Me emociona viajar.",
+      "why": "No little word is needed before the infinitive."
+    }
+  ],
+  "personal": "Tell a friend one thing coming up that excites you. Use *Me emociona…* plus a thing, an infinitive, or *que* and someone else's action."
+}
