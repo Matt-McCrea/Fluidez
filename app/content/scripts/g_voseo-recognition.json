@@ -1,0 +1,188 @@
+{
+  "node": "g:voseo-recognition",
+  "hook": {
+    "line": "Sooner or later someone from Medellín says \"vos\" to you, and it sounds like a different language. It is the same language with a different second person. You only need to recognise it, never to say it. Vale does it all the time when she is happy or angry.",
+    "es": "¿Vos qué querés?",
+    "en": "What do you want? (to a friend, paisa)"
+  },
+  "examples": [
+    {
+      "es": "¿Vos qué querés?",
+      "en": "What do you want? (to a friend, paisa)"
+    },
+    {
+      "es": "Vení, sentate.",
+      "en": "Come, sit down. (to a friend, paisa)"
+    },
+    {
+      "es": "¿Sabés qué?",
+      "en": "You know what? (to a friend, paisa)"
+    },
+    {
+      "es": "Vos tenés razón.",
+      "en": "You're right. (to a friend, paisa)"
+    },
+    {
+      "es": "¿Vos de dónde sos?",
+      "en": "Where are you from? (to a friend, paisa)"
+    },
+    {
+      "es": "¿Qué hacés?",
+      "en": "What are you doing? (to a friend, paisa)"
+    }
+  ],
+  "rule": "In Medellín and some other places, friends say *vos* instead of *tú*. It means exactly the same: \"you\", one friend.\n\n*Vos tenés* = *tú tienes*\n*Vos querés* = *tú quieres*\n*Vos sabés* = *tú sabes*\n*Vos sos* = *tú eres*\n\nThe verb ends in *-ás*, *-és* or *-ís* with the stress on the last vowel, and *e* in the middle goes away. Commands lose the *d*: *vení* (*ven*), *sentate* (*siéntate*). Some families also use *usted* with each other.\n\nYou will hear it all through Vale's story. Understand it, answer in *tú*, and nobody minds.",
+  "smallPrint": "Teachers call this *voseo*.",
+  "readAndPick": [
+    {
+      "es": "¿Vos qué querés?",
+      "options": [
+        "What do you all want?",
+        "What do you want? (one friend)",
+        "What do I want?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vení, sentate.",
+      "options": [
+        "Come, sit down. (to a friend)",
+        "I'm coming, I'm sitting down.",
+        "He came and sat down."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vos tenés razón.",
+      "options": [
+        "I'm right.",
+        "They are right.",
+        "You're right. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Vos de dónde sos?",
+      "options": [
+        "Where are you from? (to a friend)",
+        "Where am I from?",
+        "Where is he from?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué hacés?",
+      "options": [
+        "What do I do?",
+        "What are you doing? (to a friend)",
+        "What did you do?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Sabés qué?",
+      "options": [
+        "You know what? (to a friend)",
+        "Do I know what?",
+        "Do they know what?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Vos querés un tinto?",
+      "options": [
+        "Do you all want a black coffee?",
+        "Do I want a black coffee?",
+        "Do you want a black coffee? (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vos sabés mucho.",
+      "options": [
+        "I know a lot.",
+        "You know a lot. (to a friend)",
+        "She knows a lot."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say it in *tú*: Vos tenés razón. You're right. (to a friend)",
+      "answer": "Tú tienes razón.",
+      "accept": [
+        "Tienes razón."
+      ],
+      "why": "*Vos tenés* and *tú tienes* mean the same thing."
+    },
+    {
+      "prompt": "Say it in *tú*: ¿Vos qué querés? What do you want? (to a friend)",
+      "answer": "¿Tú qué quieres?",
+      "accept": [
+        "¿Qué quieres?",
+        "¿Qué quieres tú?"
+      ],
+      "why": "*Querés* becomes *quieres*, and *vos* becomes *tú*."
+    },
+    {
+      "prompt": "Say it in *tú*: ¿Vos de dónde sos? Where are you from? (to a friend)",
+      "answer": "¿Tú de dónde eres?",
+      "accept": [
+        "¿De dónde eres?",
+        "¿De dónde eres tú?"
+      ],
+      "why": "*Sos* is the *vos* form of *ser*, and *eres* is the *tú* form."
+    },
+    {
+      "prompt": "Say it in *tú*: ¿Sabés qué? You know what? (to a friend)",
+      "answer": "¿Sabes qué?",
+      "accept": [
+        "¿Tú sabes qué?"
+      ],
+      "why": "*Sabés* loses its accent mark in *tú*: *sabes*."
+    },
+    {
+      "prompt": "Say it in *tú*: Vení, sentate. Come, sit down. (to a friend)",
+      "answer": "Ven, siéntate.",
+      "accept": [
+        "Ven y siéntate."
+      ],
+      "why": "The *tú* commands are *ven* and *siéntate*: the *d* disappears from *vení*."
+    },
+    {
+      "prompt": "Say it in *tú*: ¿Qué hacés? What are you doing? (to a friend)",
+      "answer": "¿Qué haces?",
+      "accept": [
+        "¿Qué estás haciendo?"
+      ],
+      "why": "*Hacés* is *haces* in *tú*."
+    },
+    {
+      "prompt": "Say it in *tú*: Vos sabés mucho. You know a lot. (to a friend)",
+      "answer": "Tú sabes mucho.",
+      "accept": [
+        "Sabes mucho."
+      ],
+      "why": "Same meaning: *vos sabés* becomes *tú sabes*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Vos tienes razón.",
+      "right": "Tú tienes razón.",
+      "why": "Don't mix them. *Vos* goes with *tenés*, and *tú* goes with *tienes*."
+    },
+    {
+      "wrong": "Tú tenés razón.",
+      "right": "Tú tienes razón.",
+      "why": "In your own Spanish stay with *tú* and its forms, and save *tenés* for listening."
+    },
+    {
+      "wrong": "¿Vos sois de Medellín?",
+      "right": "¿Tú eres de Medellín?",
+      "why": "*Sois* belongs to Spain's *vosotros* and you will not hear it in Colombia."
+    }
+  ],
+  "personal": "Think of a friend you would talk to in *tú*. Say one thing to them that a paisa would say with *vos*, in your own *tú*: *Tú sabes…* or *Tú tienes…*"
+}

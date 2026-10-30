@@ -1,0 +1,185 @@
+{
+  "node": "p:me-hubieras-dicho",
+  "hook": {
+    "line": "Everyone has found out too late that a friend was struggling alone. The everyday Colombian reproach is short and a little theatrical: \"you should have told me, and I'd have helped\". Vale says it to Tomás when she learns about the Altamira offer.",
+    "es": "¡Me hubieras dicho y te ayudaba!",
+    "en": "You should have told me and I'd have helped! (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "¡Me hubieras dicho y te ayudaba!",
+      "en": "You should have told me and I'd have helped! (to a friend)"
+    },
+    {
+      "es": "Podrías haberme avisado.",
+      "en": "You could have let me know. (to a friend)"
+    },
+    {
+      "es": "¡Me hubieran avisado!",
+      "en": "You all should have let me know!"
+    },
+    {
+      "es": "Si no hubieras cerrado la puerta, habríamos oído los gritos.",
+      "en": "If you hadn't shut the door, we'd have heard the shouting."
+    },
+    {
+      "es": "¡Hubieras preguntado y te decía!",
+      "en": "You should have asked and I'd have told you! (to a friend)"
+    },
+    {
+      "es": "Podrían haberme dicho que cerraban hoy.",
+      "en": "You all could have told me you were closing today."
+    }
+  ],
+  "rule": "To tell someone off for what they did not do:\n\n*¡Me hubieras dicho!* \"You should have told me!\"\n*¡Me hubieras dicho y te ayudaba!* \"…and I'd have helped!\"\n*Podrías haberme avisado.* \"You could have let me know.\"\n\n*Hubieras* + the *-ado* or *-ido* word (*dicho*, *avisado*, *preguntado*) is \"you had\" with the \"if only\" feel. For *ustedes* it is *hubieran*. In everyday speech the second half is often a plain past, *te ayudaba*, not the longer *te habría ayudado*.\n\nThe full *si no hubieras…, habríamos…* is also a reproach, not a neutral \"what if\".",
+  "smallPrint": "Teachers call *hubieras dicho* the pluperfect subjunctive.",
+  "readAndPick": [
+    {
+      "es": "¡Me hubieras dicho y te ayudaba!",
+      "options": [
+        "You should have told me and I'd have helped!",
+        "You told me and I helped you!",
+        "I should have told you and you'd have helped!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Me hubieran avisado!",
+      "options": [
+        "You should have let me know! (to one friend)",
+        "I should have let you know!",
+        "You all should have let me know!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Podrías haberme avisado.",
+      "options": [
+        "You could have let me know.",
+        "I could have let you know.",
+        "You can let me know."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si no hubieras cerrado la puerta, habríamos oído los gritos.",
+      "options": [
+        "If you shut the door, we'll hear the shouting.",
+        "If you hadn't shut the door, we'd have heard the shouting.",
+        "If you didn't shut the door, we'd hear the shouting."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Hubieras preguntado y te decía!",
+      "options": [
+        "I should have asked and you'd have told me!",
+        "You asked and I told you!",
+        "You should have asked and I'd have told you!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Podrían haberme dicho que cerraban hoy.",
+      "options": [
+        "You all could have told me you were closing today.",
+        "You all can tell me you close today.",
+        "They could have told me I was closing today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Me hubieras llamado!",
+      "options": [
+        "You called me!",
+        "You should have called me!",
+        "I should have called you!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si me hubieras dicho, habría venido.",
+      "options": [
+        "If you had told me, I'd have come.",
+        "If you tell me, I'll come.",
+        "If I had told you, you'd have come."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *hubieras* or *hubiste*. You should have told me and I'd have helped! (to a friend) Me ___ dicho y te ayudaba. Type the whole sentence with the exclamation marks.",
+      "answer": "¡Me hubieras dicho y te ayudaba!",
+      "accept": [
+        "Me hubieras dicho y te ayudaba."
+      ],
+      "why": "The \"you should have\" reproach uses *hubieras*, not *hubiste*."
+    },
+    {
+      "prompt": "You could have let me know. (to a friend)",
+      "answer": "Podrías haberme avisado.",
+      "accept": [
+        "Me podrías haber avisado."
+      ],
+      "why": "*Podrías haber* + the *-ado* word says \"you could have\"."
+    },
+    {
+      "prompt": "You should have called me! (to a friend)",
+      "answer": "¡Me hubieras llamado!",
+      "accept": [
+        "Me hubieras llamado."
+      ],
+      "why": "*Me hubieras* + *llamado*: \"you should have called me\"."
+    },
+    {
+      "prompt": "Make it about you all: ¡Me hubieras avisado!",
+      "answer": "¡Me hubieran avisado!",
+      "accept": [
+        "Me hubieran avisado."
+      ],
+      "why": "For *ustedes* the ending is *-an*: *hubieran*."
+    },
+    {
+      "prompt": "You should have asked and I'd have told you! (to a friend)",
+      "answer": "¡Hubieras preguntado y te decía!",
+      "accept": [
+        "Hubieras preguntado y te decía.",
+        "¡Hubieras preguntado y te habría dicho!"
+      ],
+      "why": "Everyday Spanish often uses a plain past, *te decía*, for the second half."
+    },
+    {
+      "prompt": "If you had told me, I'd have come. (to a friend)",
+      "answer": "Si me hubieras dicho, habría venido.",
+      "accept": [],
+      "why": "*Si* + *hubieras dicho* sets the missed chance, and *habría venido* is the result."
+    },
+    {
+      "prompt": "You all could have told me you were closing today.",
+      "answer": "Podrían haberme dicho que cerraban hoy.",
+      "accept": [
+        "Me podrían haber dicho que cerraban hoy."
+      ],
+      "why": "For *ustedes*, *podrían haber* + *dicho*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Me dijiste y te ayudaba!",
+      "right": "¡Me hubieras dicho y te ayudaba!",
+      "why": "Almost. A reproach about what did not happen needs *hubieras* + *dicho*."
+    },
+    {
+      "wrong": "¡Me has dicho y te ayudaba!",
+      "right": "¡Me hubieras dicho y te ayudaba!",
+      "why": "*Has dicho* says that you did tell me. The reproach is that you did not."
+    },
+    {
+      "wrong": "Podrías haber avisado me.",
+      "right": "Podrías haberme avisado.",
+      "why": "*Me* attaches to the end of *haber*: *haberme*."
+    }
+  ],
+  "personal": "Think of something a friend kept to themselves. Say your reproach with warmth: *¡Me hubieras dicho!* or *Podrías haberme avisado.*"
+}

@@ -1,0 +1,180 @@
+{
+  "node": "p:lo-de-noun",
+  "hook": {
+    "line": "In Colombia, nobody says \"did you hear about the thing with Pedro's café?\" in full. They say *lo de Pedro* and everybody knows. It is also how you ask about someone's life without sounding nosy. Tomás hears it from Don Hernando the second he walks in.",
+    "es": "¿Supiste lo de Pedro?",
+    "en": "Did you hear about Pedro? (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "¿Supiste lo de Pedro?",
+      "en": "Did you hear about Pedro? (to a friend)"
+    },
+    {
+      "es": "¿Te enteraste de lo de Altamira?",
+      "en": "Did you hear about the Altamira business? (to a friend)"
+    },
+    {
+      "es": "Bien, ¿y lo tuyo del trabajo, qué tal?",
+      "en": "Fine, and how's your work thing going? (to a friend)"
+    },
+    {
+      "es": "Coincido contigo en lo de no ir.",
+      "en": "I agree with you about not going."
+    },
+    {
+      "es": "Lo de ayer fue un error.",
+      "en": "What happened yesterday was a mistake."
+    },
+    {
+      "es": "Gracias por lo de ayer.",
+      "en": "Thanks for yesterday."
+    }
+  ],
+  "rule": "*Lo de* + a person, a thing or an action means \"the business about…\", the story everyone knows:\n\n*lo de Pedro* the Pedro situation\n*lo de ayer* what happened yesterday\n*lo de no ir* the idea of not going\n\nFor the other person's side, use *lo tuyo* (your thing), *lo mío* (my thing), *lo suyo* (his, her or your formal thing): *¿Y lo tuyo del trabajo, qué tal?*\n\nEnglish needs \"the news about\" or \"the thing with\". Spanish squeezes it into two little words. Asking back about *lo tuyo* is also how you close a greeting politely.",
+  "smallPrint": "Teachers call *lo* here the neuter article.",
+  "readAndPick": [
+    {
+      "es": "¿Supiste lo de Pedro?",
+      "options": [
+        "Did you hear about Pedro?",
+        "Do you know Pedro?",
+        "Did Pedro hear about you?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo de ayer fue un error.",
+      "options": [
+        "Yesterday is a mistake.",
+        "What happened yesterday was a mistake.",
+        "He made a mistake yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Bien, ¿y lo tuyo del trabajo, qué tal?",
+      "options": [
+        "Fine, and how's my work thing going?",
+        "Fine, and how's his work thing going?",
+        "Fine, and how's your work thing going?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Coincido contigo en lo de no ir.",
+      "options": [
+        "I agree with you about not going.",
+        "I agree with you that you went.",
+        "I disagree with you about going."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Gracias por lo de ayer.",
+      "options": [
+        "Thanks for tomorrow.",
+        "Thanks for yesterday.",
+        "Thanks, you were there yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te enteraste de lo de Altamira?",
+      "options": [
+        "Did you hear about the Altamira business?",
+        "Do you work for Altamira?",
+        "Did Altamira hear about you?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo mío es el café, no la política.",
+      "options": [
+        "Coffee is your thing, not politics.",
+        "Coffee is my thing, not politics.",
+        "Coffee is his thing, not politics."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo de Hernando me preocupa.",
+      "options": [
+        "Hernando worries me.",
+        "I worry Hernando.",
+        "The Hernando business worries me."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *lo de* or *la de*. Did you hear about Pedro? (to a friend) ¿Supiste ___ Pedro? Type the whole sentence.",
+      "answer": "¿Supiste lo de Pedro?",
+      "accept": [
+        "¿Te enteraste de lo de Pedro?"
+      ],
+      "why": "For \"the business about\" Spanish always uses *lo de*, whoever the person is."
+    },
+    {
+      "prompt": "Did you hear about the Altamira business? (to a friend)",
+      "answer": "¿Te enteraste de lo de Altamira?",
+      "accept": [
+        "¿Supiste lo de Altamira?"
+      ],
+      "why": "*Te enteraste de* needs the *de*, and then *lo de* follows."
+    },
+    {
+      "prompt": "What happened yesterday was a mistake.",
+      "answer": "Lo de ayer fue un error.",
+      "accept": [],
+      "why": "*Lo de ayer* is the whole story of yesterday."
+    },
+    {
+      "prompt": "Fine, and how's your work thing going? (to a friend)",
+      "answer": "Bien, ¿y lo tuyo del trabajo, qué tal?",
+      "accept": [
+        "Bien, ¿y lo tuyo del trabajo qué tal?"
+      ],
+      "why": "*Lo tuyo* is \"your side of things\", used to hand the question back."
+    },
+    {
+      "prompt": "Coffee is my thing, not politics.",
+      "answer": "Lo mío es el café, no la política.",
+      "accept": [],
+      "why": "*Lo mío* is \"my thing\", with the speaker as the owner."
+    },
+    {
+      "prompt": "Thanks for yesterday.",
+      "answer": "Gracias por lo de ayer.",
+      "accept": [],
+      "why": "*Por lo de ayer* thanks someone for what happened, without spelling it out."
+    },
+    {
+      "prompt": "I agree with you about not going. (to a friend)",
+      "answer": "Coincido contigo en lo de no ir.",
+      "accept": [
+        "Estoy de acuerdo contigo en lo de no ir."
+      ],
+      "why": "*Lo de* can also be followed by an action: *lo de no ir*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Supiste la de Pedro?",
+      "right": "¿Supiste lo de Pedro?",
+      "why": "Almost. The \"business about\" is always *lo de*, never *la de*."
+    },
+    {
+      "wrong": "¿Y el tuyo del trabajo, qué tal?",
+      "right": "¿Y lo tuyo del trabajo, qué tal?",
+      "why": "For \"your thing\" in general, Spanish uses *lo tuyo*, not *el tuyo*."
+    },
+    {
+      "wrong": "Gracias por lo ayer.",
+      "right": "Gracias por lo de ayer.",
+      "why": "You still need the *de*: *lo de ayer*."
+    }
+  ],
+  "personal": "Think of something that happened to a friend this week. Ask someone else about it: *¿Supiste lo de…?* or *¿Y lo tuyo qué tal?*"
+}

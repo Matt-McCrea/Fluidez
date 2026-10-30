@@ -1,0 +1,177 @@
+{
+  "node": "p:si-pero-que",
+  "hook": {
+    "line": "Saying yes is easy. Saying yes with a catch is what Colombians do all day: a parent, a boss, a landlord, a friend with a car. Tomás needs a way to agree and set the condition in the same breath.",
+    "es": "Sí, pero que no se entere tu papá.",
+    "en": "Yes, but don't let your dad find out."
+  },
+  "examples": [
+    {
+      "es": "Sí, pero que no se entere tu papá.",
+      "en": "Yes, but don't let your dad find out."
+    },
+    {
+      "es": "Listo, siempre que estés de vuelta antes de medianoche.",
+      "en": "OK, as long as you're back before midnight. (to a friend)"
+    },
+    {
+      "es": "Sí, pero que nadie toque la jaula de Simón.",
+      "en": "Yes, but nobody is to touch Simón's cage."
+    },
+    {
+      "es": "Claro, siempre que lo laves después.",
+      "en": "Sure, as long as you wash it afterwards. (to a friend)"
+    },
+    {
+      "es": "Listo, mientras no me lleves al sitio de siempre.",
+      "en": "OK, as long as you don't take me to the usual place. (to a friend)"
+    },
+    {
+      "es": "Sí, pero que me avises cuando llegues.",
+      "en": "Yes, but let me know when you arrive. (to a friend)"
+    }
+  ],
+  "rule": "To say yes with a condition, put the condition right after:\n\n*Sí, pero que* + what must (or must not) happen.\n*Listo, siempre que* + the condition.\n*Listo, mientras no* + what you don't want.\n\nEnglish says \"as long as\" or \"but make sure\". Spanish uses *que* and then a verb in its \"wish\" form: *se entere*, *estés*, *lleves*, *avises*. *-ar* verbs switch to *-e* endings, *-er* and *-ir* verbs to *-a*.\n\nA plain *es* or *estás* after *siempre que* would sound like a fact, not a condition.",
+  "smallPrint": "Teachers call this the present subjunctive after a condition.",
+  "readAndPick": [
+    {
+      "es": "Sí, pero que no se entere tu papá.",
+      "options": [
+        "Yes, but your dad already found out.",
+        "Yes, but don't let your dad find out.",
+        "Yes, but you must tell your dad."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Listo, siempre que estés de vuelta antes de medianoche.",
+      "options": [
+        "OK, as long as you're back before midnight.",
+        "OK, because you were back before midnight.",
+        "OK, but I'll be back before midnight."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Sí, pero que nadie toque la jaula de Simón.",
+      "options": [
+        "Yes, but nobody touched Simón's cage.",
+        "Yes, but I'll touch Simón's cage.",
+        "Yes, but nobody is to touch Simón's cage."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Claro, siempre que lo laves después.",
+      "options": [
+        "Sure, as long as I wash it afterwards.",
+        "Sure, as long as you wash it afterwards.",
+        "Sure, because you washed it afterwards."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Listo, mientras no me lleves al sitio de siempre.",
+      "options": [
+        "OK, since you didn't take me to the usual place.",
+        "OK, while you take me to the usual place.",
+        "OK, as long as you don't take me to the usual place."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Sí, pero que me avises cuando llegues.",
+      "options": [
+        "Yes, but let me know when you arrive.",
+        "Yes, but he lets me know when I arrive.",
+        "Yes, but I'll let you know when you arrive."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Está bien, siempre y cuando paguemos nosotros.",
+      "options": [
+        "Fine, as long as they pay.",
+        "Fine, because we paid.",
+        "Fine, as long as we pay."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Sí, pero que no llegue tarde.",
+      "options": [
+        "Yes, but he never arrives late.",
+        "Yes, but make sure he doesn't arrive late.",
+        "Yes, but he arrived late."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *se entere* or *se entera*. Yes, but don't let your dad find out. Sí, pero que no ___ tu papá. Type the whole sentence.",
+      "answer": "Sí, pero que no se entere tu papá.",
+      "accept": [],
+      "why": "After *sí, pero que* the verb takes its \"wish\" ending: *se entere*."
+    },
+    {
+      "prompt": "Choose *estés* or *estás*. OK, as long as you're back before midnight (to a friend). Listo, siempre que ___ de vuelta antes de medianoche. Type the whole sentence.",
+      "answer": "Listo, siempre que estés de vuelta antes de medianoche.",
+      "accept": [],
+      "why": "A condition after *siempre que* takes the wish ending: *estés*, not *estás*."
+    },
+    {
+      "prompt": "Yes, but nobody is to touch Simón's cage.",
+      "answer": "Sí, pero que nadie toque la jaula de Simón.",
+      "accept": [],
+      "why": "*Toque* is the wish form of *tocar*: the *-ar* verb ends in *-e*."
+    },
+    {
+      "prompt": "Sure, as long as you wash it afterwards. (to a friend)",
+      "answer": "Claro, siempre que lo laves después.",
+      "accept": [
+        "Claro, siempre y cuando lo laves después."
+      ],
+      "why": "*Laves* is *lavar* with the *tú* wish ending *-es*."
+    },
+    {
+      "prompt": "OK, as long as you don't take me to the usual place. (to a friend)",
+      "answer": "Listo, mientras no me lleves al sitio de siempre.",
+      "accept": [],
+      "why": "*Mientras no* also sets a condition, and the verb after it takes the wish ending: *lleves*."
+    },
+    {
+      "prompt": "Make it about we: Fine, as long as we pay.",
+      "answer": "Está bien, siempre que paguemos nosotros.",
+      "accept": [
+        "Está bien, siempre y cuando paguemos nosotros.",
+        "Está bien, siempre que nosotros paguemos."
+      ],
+      "why": "For *we* the wish ending is *-emos*: *paguemos*."
+    },
+    {
+      "prompt": "Yes, but let me know when you arrive. (to a friend)",
+      "answer": "Sí, pero que me avises cuando llegues.",
+      "accept": [],
+      "why": "Both *avises* and *llegues* take the *tú* wish ending."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Sí, pero que no se entera tu papá.",
+      "right": "Sí, pero que no se entere tu papá.",
+      "why": "Almost. After *sí, pero que* Spanish wants the wish ending (*entere*), not the plain *entera*."
+    },
+    {
+      "wrong": "Listo, siempre que estás de vuelta antes de medianoche.",
+      "right": "Listo, siempre que estés de vuelta antes de medianoche.",
+      "why": "A condition is not a fact yet, so the verb after *siempre que* takes *estés*."
+    },
+    {
+      "wrong": "Sí, pero no que se entere tu papá.",
+      "right": "Sí, pero que no se entere tu papá.",
+      "why": "The *que* comes first and *no* goes right before the verb."
+    }
+  ],
+  "personal": "Think of someone who asks you for a favour. Say yes with one condition: *Sí, pero que…* or *Listo, siempre que…*"
+}

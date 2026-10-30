@@ -1,0 +1,178 @@
+{
+  "node": "p:lo-mas-recomendable",
+  "hook": {
+    "line": "When a friend is in trouble, \"you should\" can land like a slap. Spanish has a way to advise from a little distance, the way a doctor or a good friend would. Vale uses it when Tomás is about to sign something he has not read.",
+    "es": "Lo más recomendable es que lo pienses bien.",
+    "en": "The best thing would be for you to think it over carefully. (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "Lo más recomendable es que consultes a un especialista.",
+      "en": "The best thing would be for you to see a specialist. (to a friend)"
+    },
+    {
+      "es": "Lo único que puedo aconsejarte es que tengas paciencia.",
+      "en": "The only advice I can give you is to be patient. (to a friend)"
+    },
+    {
+      "es": "Siempre puedes decirle la verdad.",
+      "en": "You can always tell him the truth. (to a friend)"
+    },
+    {
+      "es": "¿Me permites darte un consejo?",
+      "en": "May I give you some advice? (to a friend)"
+    },
+    {
+      "es": "Lo más prudente es que esperes unos días.",
+      "en": "The wisest thing is for you to wait a few days. (to a friend)"
+    },
+    {
+      "es": "¿Me aceptas un consejo?",
+      "en": "Will you take a piece of advice from me? (to a friend)"
+    }
+  ],
+  "rule": "Four gentle ways to advise:\n\n*Lo más recomendable es que* + the \"wish\" verb: *consultes*, *esperes*.\n*Lo único que puedo aconsejarte es que* + the same verb.\n*Siempre puedes* + an infinitive: *decirle*, *pedir*.\n*¿Me permites darte un consejo?* to ask first.\n\nEnglish says \"the best thing would be\", and Spanish does too, but the verb after *que* ends in *-es* for *tú* (*-ar* verbs) or *-as* (*-er* and *-ir* verbs): *tengas*, *consultes*. For *we* it is *consultemos*, for *ustedes* *consulten*.\n\nAsking first, with *¿Me permites…?*, makes the advice easier to hear.",
+  "smallPrint": "Teachers call the verb after *que* the present subjunctive, used here after an opinion.",
+  "readAndPick": [
+    {
+      "es": "Lo más recomendable es que consultes a un especialista.",
+      "options": [
+        "The best thing would be for you to see a specialist.",
+        "The best thing was that I saw a specialist.",
+        "The best thing would be for them to see a specialist."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo más recomendable es que consultemos a un abogado.",
+      "options": [
+        "The best thing would be for you to see a lawyer.",
+        "The best thing would be for them to see a lawyer.",
+        "The best thing would be for us to see a lawyer."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo más recomendable es que ustedes consulten a un especialista.",
+      "options": [
+        "The best thing would be for one of you to see a specialist.",
+        "The best thing would be for you all to see a specialist.",
+        "The best thing would be for us to see a specialist."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo único que puedo aconsejarte es que tengas paciencia.",
+      "options": [
+        "The only advice I can give you is to be patient.",
+        "The only advice you can give me is to be patient.",
+        "The only thing I did was be patient."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siempre puedes pedir ayuda.",
+      "options": [
+        "You always asked for help.",
+        "You can always ask for help.",
+        "I can always ask you for help."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Me permites darte un consejo?",
+      "options": [
+        "Did you give me some advice?",
+        "Will you give me some advice?",
+        "May I give you some advice?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo más prudente es que esperes unos días.",
+      "options": [
+        "The wisest thing is for you to wait a few days.",
+        "The wisest thing is that we wait a few days.",
+        "The wisest thing was to wait a few days."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo único que puedo decirte es que no firmes todavía.",
+      "options": [
+        "The only thing I can tell you is that you haven't signed yet.",
+        "The only thing I can tell you is don't sign yet.",
+        "The only thing you told me is not to sign yet."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *consultes* or *consultas*. To a friend: Lo más recomendable es que ___ a un especialista. Type the whole sentence.",
+      "answer": "Lo más recomendable es que consultes a un especialista.",
+      "accept": [],
+      "why": "After *lo más recomendable es que* the verb takes its \"wish\" ending: *consultes*."
+    },
+    {
+      "prompt": "Choose *esperes* or *esperas*. To a friend: Lo más prudente es que ___ unos días. Type the whole sentence.",
+      "answer": "Lo más prudente es que esperes unos días.",
+      "accept": [],
+      "why": "Advice about what to do uses the wish ending, so *esperes*, not *esperas*."
+    },
+    {
+      "prompt": "The only advice I can give you is to be patient. (to a friend)",
+      "answer": "Lo único que puedo aconsejarte es que tengas paciencia.",
+      "accept": [
+        "Lo único que te puedo aconsejar es que tengas paciencia."
+      ],
+      "why": "*Tengas* is *tener* in its *tú* wish form: the ending changes to *-as*."
+    },
+    {
+      "prompt": "You can always ask for help. (to a friend)",
+      "answer": "Siempre puedes pedir ayuda.",
+      "accept": [],
+      "why": "*Siempre puedes* takes a plain infinitive, no *que* needed."
+    },
+    {
+      "prompt": "May I give you some advice? (to a friend)",
+      "answer": "¿Me permites darte un consejo?",
+      "accept": [
+        "¿Me aceptas un consejo?"
+      ],
+      "why": "Asking first with *¿Me permites…?* cushions the advice."
+    },
+    {
+      "prompt": "Make it about we: The best thing would be for us to see a lawyer.",
+      "answer": "Lo más recomendable es que consultemos a un abogado.",
+      "accept": [],
+      "why": "For *we* the wish ending is *-emos*: *consultemos*."
+    },
+    {
+      "prompt": "The best thing would be for you all to see a specialist.",
+      "answer": "Lo más recomendable es que ustedes consulten a un especialista.",
+      "accept": [
+        "Lo más recomendable es que consulten a un especialista."
+      ],
+      "why": "For *ustedes* the wish ending is *-en*: *consulten*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Lo más recomendable es que consultas a un especialista.",
+      "right": "Lo más recomendable es que consultes a un especialista.",
+      "why": "Almost. After *lo más recomendable es que* the verb needs its wish ending, *consultes*."
+    },
+    {
+      "wrong": "Lo más recomendable es consultes a un especialista.",
+      "right": "Lo más recomendable es que consultes a un especialista.",
+      "why": "English can drop \"that\", but Spanish needs the *que* here."
+    },
+    {
+      "wrong": "Siempre puedes que decirle la verdad.",
+      "right": "Siempre puedes decirle la verdad.",
+      "why": "After *siempre puedes* the verb is a plain infinitive, with no *que*."
+    }
+  ],
+  "personal": "Think of a friend who is stressed. Give one gentle piece of advice: *Lo más recomendable es que…* or *Siempre puedes…*"
+}
