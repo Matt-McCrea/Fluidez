@@ -2,7 +2,7 @@
   "id": "ch013",
   "unit": "u06",
   "title": "Enero, febrero, marzo",
-  "text": "Vale: Tomás, tú eres ingeniero de software, no de mostradores.\nPero Tomás ya está en el piso, con un martillo. Saca un ladrillo del mostrador. Detrás hay un hueco, y en el hueco, un cuaderno viejo.\nVale lee la primera página: «Las recetas de Rosa. 2 de enero de 1979».\nVale: Son recetas del año, mes a mes. Enero: pandeyucas. Febrero: arepas. Marzo: pan de mazorca. Abril: chocolate. Mayo: jugo de fresa. Junio: jugo de mango.\nTomás: ¿Mango? ¿Rosa también compró cuarenta libras?\nVale: Julio: ajiaco. Agosto: pan de naranja. Septiembre: arepas con aguacate. Octubre: pan de banano. Noviembre: tinto con canela. Diciembre: natilla para los Gómez.\nSimón: ¡Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre!\nHernando: Es un cuaderno del siglo pasado.\nVale: Y hay recetas de cuatro décadas, Tomás. ¡Cuatro décadas!\nTomás: ¡Claro! Rosa nunca arregló el mostrador... ¡porque aquí estaba el cuaderno!\nVale: Mis recetas son modernas. Pero las recetas de Rosa son mejores.\nTomás: Como la cafetera. También es moderna, y no funciona.\nHernando: Y yo soy del siglo pasado, y todavía funciono.\nEntre las páginas hay una foto: Rosa joven y contenta, detrás de la vitrina del café.\nVale mira la foto mucho tiempo. No habla. Después cierra el cuaderno.\nVale: Con estas recetas, Tomás, ganamos el trato.\nPero del cuaderno cae un sobre viejo, cerrado, sin estampilla. Tiene un nombre de hombre.",
+  "text": "Vale: Tomás, tú eres ingeniero de software, no de mostradores.\nPero Tomás ya está en el piso, con un martillo. Saca un ladrillo del mostrador. Detrás hay un hueco con un cuaderno viejo.\nVale lee la primera página: «Las recetas de Rosa. 2 de enero de 1979».\nVale: Son recetas del año, mes a mes. Enero: pandeyucas. Febrero: arepas. Marzo: pan de mazorca. Junio: jugo de mango.\nTomás: ¿Mango? ¿Rosa también compró cuarenta libras?\nVale: No, Tomás. Y en diciembre, natilla para los Gómez.\nTomás: ¡Claro! Rosa nunca arregló el mostrador... ¡porque aquí estaba el cuaderno!\nVale: Mis recetas son modernas, pero las de Rosa son mejores.\nTomás: Como la cafetera. También es moderna, y no funciona.\nHernando: Y yo soy del siglo pasado, y todavía funciono.\nEntre las páginas hay una foto: Rosa joven y contenta, detrás de la vitrina del café.\nVale mira la foto mucho tiempo. No habla. Después cierra el cuaderno.\nVale: Con estas recetas, Tomás, ganamos el trato.\nPero del cuaderno cae un sobre viejo, cerrado, sin estampilla. Tiene un nombre de hombre.",
   "gloss": [
     {
       "es": "ingeniero de software, no de mostradores",
@@ -21,24 +21,12 @@
       "en": "He pulls out a brick"
     },
     {
-      "es": "Detrás hay un hueco",
-      "en": "Behind it there's a hole"
-    },
-    {
       "es": "la primera página",
       "en": "the first page"
     },
     {
       "es": "pandeyucas",
       "en": "pandeyucas (cheese breads)"
-    },
-    {
-      "es": "ajiaco",
-      "en": "ajiaco (Bogotá's chicken and potato soup)"
-    },
-    {
-      "es": "canela",
-      "en": "cinnamon"
     },
     {
       "es": "natilla para los Gómez",
@@ -67,6 +55,14 @@
     {
       "es": "cae un sobre viejo, cerrado, sin estampilla",
       "en": "an old envelope falls out, sealed, with no stamp"
+    },
+    {
+      "es": "Detrás hay un hueco con un cuaderno viejo",
+      "en": "Behind it there's a hole with an old notebook in it"
+    },
+    {
+      "es": "las de Rosa",
+      "en": "Rosa's (recipes)"
     }
   ],
   "questions": [
@@ -177,21 +173,14 @@
     "p:ya-todavia-basic"
   ],
   "lexemes": [
-    "l:abril",
-    "l:agosto",
-    "l:aguacate",
-    "l:ajiaco",
     "l:aquí",
     "l:arepa",
     "l:arreglar",
     "l:año",
-    "l:banano",
     "l:caer",
     "l:cafetera",
     "l:café",
-    "l:canela",
     "l:cerrar",
-    "l:chocolate",
     "l:claro",
     "l:comer",
     "l:comprar",
@@ -200,12 +189,10 @@
     "l:después",
     "l:detrás",
     "l:diciembre",
-    "l:década",
     "l:enero",
     "l:estar",
     "l:febrero",
     "l:foto",
-    "l:fresa",
     "l:funcionar",
     "l:ganar",
     "l:hablar",
@@ -214,7 +201,6 @@
     "l:ingeniero",
     "l:joven",
     "l:jugo",
-    "l:julio",
     "l:junio",
     "l:ladrillo",
     "l:leer",
@@ -222,31 +208,25 @@
     "l:mango",
     "l:martillo",
     "l:marzo",
-    "l:mayo",
     "l:mazorca",
     "l:mejor",
     "l:mes",
     "l:mirar",
     "l:moderno",
     "l:mostrador",
-    "l:naranja",
     "l:natilla",
     "l:nombre",
-    "l:noviembre",
-    "l:octubre",
     "l:pan",
     "l:pasado",
     "l:piso",
     "l:página",
     "l:receta",
     "l:sacar",
-    "l:septiembre",
     "l:ser",
     "l:siglo",
     "l:sobre",
     "l:tener",
     "l:tiempo",
-    "l:tinto",
     "l:trato",
     "l:viejo",
     "l:vitrina"
