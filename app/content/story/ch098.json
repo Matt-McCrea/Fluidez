@@ -1,0 +1,349 @@
+{
+  "id": "ch098",
+  "unit": "u33",
+  "title": "Nosotros también",
+  "text": "Mariana no durmió. A las seis llegó con el cabello sin peinar y el celular en la mano.\nMariana: Doscientos catorce comentarios, y ninguno sirve.\n«Mi abuelo se llamaba Joaquín, tenía el cabello blanco y la lengua muy larga. Pero era de Cali».\n«Yo tuve un perro que se llamaba Joaquín. ¿Les sirve?»\nTomás: No buscamos perros. Buscamos a alguien que lo conozca de verdad.\nMariana: Este no me gusta nada.\n«¿Quién busca a Joaquín Herrera, y por qué? Manden sus nombres».\nLa cuenta no tenía foto ni amigos. Seguía una sola página: Hoteles Altamira.\nHernando: Esa gente nos persigue hasta en Facebook.\nMariana: Alerta, todos. Aquí no hay nadie que escriba nombres en internet.\nSimón: ¡Joaquín Herrera! ¡Joaquín Herrera!\nVale le tiró un pan al loro.\nVale: Simón, tú tienes la lengua más larga de La Candelaria.\nHernando sacó un cuaderno viejo con los teléfonos de sus colegas. La mitad ya no contestaba.\nHernando: ¿Aló? ¿Chato? Habla Pacheco. ¡PACHECO! No, hombre, no estoy muerto.\nHernando: El Chato no sabe nada. Pero tiene un cuñado que manejaba taxi en Santa Marta.\nVale miraba anuncios en la computadora.\n«Local en La Candelaria. Sin cocina».\n«Local con cocina. Ocho millones al mes».\nVale: Busco un local que tenga una cocina de verdad y un arriendo que podamos pagar. Es un plan B, nada más.\nTomás: ¿Ya no crees que lo encontremos?\nVale: Sí lo creo. Pero si perdemos el edificio, no quiero perder el pan también.\nNingún anuncio tenía ventana exterior, ninguno tenía horno, y todos costaban una fortuna.\nTomás: No hay ningún local en Bogotá que tenga todo eso.\nVale: Tampoco hay un hermano de tu abuela que conteste en Facebook. Y aquí estamos.\nTomás: Entonces buscamos los dos. Tú, un local que no existe. Yo, un señor que tal vez no existe.\nVale se rio y le puso la cabeza en el hombro. Fue un segundo, pero Tomás no se movió.\nVale: Mañana vamos a ver tres locales, y tú haces las cuentas.\nPor la noche, la cuenta sin foto contestó: «Nosotros también lo estamos buscando».",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "cuñado",
+      "en": "brother-in-law"
+    },
+    {
+      "es": "local",
+      "en": "commercial premises, a shop space"
+    },
+    {
+      "es": "con el cabello sin peinar",
+      "en": "with her hair uncombed"
+    },
+    {
+      "es": "Doscientos catorce comentarios, y ninguno sirve.",
+      "en": "Two hundred and fourteen comments, and not one of them is any use."
+    },
+    {
+      "es": "tenía el cabello blanco y la lengua muy larga",
+      "en": "he had white hair and a very loose tongue"
+    },
+    {
+      "es": "Buscamos a alguien que lo conozca de verdad.",
+      "en": "We're looking for someone who really knows him."
+    },
+    {
+      "es": "Esa gente nos persigue hasta en Facebook.",
+      "en": "Those people are chasing us even on Facebook."
+    },
+    {
+      "es": "Aquí no hay nadie que escriba nombres en internet.",
+      "en": "Nobody here writes names on the internet."
+    },
+    {
+      "es": "Vale le tiró un pan al loro.",
+      "en": "Vale threw a bread roll at the parrot."
+    },
+    {
+      "es": "La mitad ya no contestaba.",
+      "en": "Half of them no longer answered."
+    },
+    {
+      "es": "Habla Pacheco.",
+      "en": "Pacheco speaking."
+    },
+    {
+      "es": "¿No conoce a nadie que sepa algo?",
+      "en": "Don't you know anyone who knows something?"
+    },
+    {
+      "es": "manejaba taxi",
+      "en": "drove a taxi"
+    },
+    {
+      "es": "Busco un local que tenga una cocina de verdad y un arriendo que podamos pagar.",
+      "en": "I'm looking for a place that has a real kitchen and a rent we can pay."
+    },
+    {
+      "es": "Es un plan B, nada más.",
+      "en": "It's just a plan B, nothing more."
+    },
+    {
+      "es": "¿Ya no crees que lo encontremos?",
+      "en": "Don't you think we'll find him anymore?"
+    },
+    {
+      "es": "ventana exterior",
+      "en": "a window onto the street"
+    },
+    {
+      "es": "todos costaban una fortuna",
+      "en": "they all cost a fortune"
+    },
+    {
+      "es": "Tampoco hay un hermano de tu abuela que conteste en Facebook.",
+      "en": "There isn't a brother of your grandmother who answers on Facebook either."
+    },
+    {
+      "es": "Fue un segundo, pero Tomás no se movió.",
+      "en": "It was only a second, but Tomás didn't move."
+    },
+    {
+      "es": "y tú haces las cuentas",
+      "en": "and you do the sums"
+    },
+    {
+      "es": "Nosotros también lo estamos buscando.",
+      "en": "We are looking for him too."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why is none of the 214 comments useful?",
+      "options": [
+        "They are all in English",
+        "They are about the wrong Joaquín, or a dog",
+        "Mariana deleted them",
+        "They all come from Altamira"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What worries Mariana about the account with no photo?",
+      "options": [
+        "It asks for their names, and it only follows Hoteles Altamira",
+        "It is selling the café",
+        "It belongs to Hernando's cousin",
+        "It says Joaquín is dead"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Vale looking at ads for premises?",
+      "options": [
+        "She wants to leave Tomás",
+        "She has found a cheaper café to buy",
+        "If they lose the building, she doesn't want to lose the bakery too",
+        "Altamira offered her a job"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Qué busca Vale?",
+      "options": [
+        "Un local que tenga una cocina de verdad",
+        "Un perro que se llame Joaquín",
+        "Un taxi para ir a Santa Marta",
+        "Un apartamento con dos baños"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the account with no photo write at night?",
+      "options": [
+        "That Joaquín is in Cali",
+        "That they are looking for him too",
+        "That the café is for sale",
+        "That Mariana should call"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Someone who only follows Hoteles Altamira is looking for Joaquín too. Tomorrow Vale goes to see three spaces for rent, and Tomás has to do the maths.",
+  "rereadQuestions": [
+    {
+      "q": "Where was the Joaquín with white hair from?",
+      "options": [
+        "Santa Marta",
+        "Cali",
+        "Bogotá",
+        "Medellín"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who might help Hernando's friend el Chato?",
+      "options": [
+        "His brother-in-law, who drove a taxi in Santa Marta",
+        "His son, a journalist",
+        "A psychic",
+        "Rosa's old neighbour"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando have to tell el Chato on the phone?",
+      "options": [
+        "That he is not dead",
+        "That Rosa is dead",
+        "That he sold the Burra",
+        "That he is in Santa Marta"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:alo",
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:la-cuenta",
+    "c:me-gusta",
+    "c:no-hay-nada",
+    "c:no-me-gusta-nada",
+    "c:no-se",
+    "c:quiero",
+    "c:tienes",
+    "c:vamos-a",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-opinion-negated",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:lavarse-las-manos",
+    "p:me-te-nos-objects",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:abuelo",
+    "l:alerta",
+    "l:amigo",
+    "l:anuncio",
+    "l:aquí",
+    "l:arriendo",
+    "l:blanco",
+    "l:buscar",
+    "l:cabello",
+    "l:cabeza",
+    "l:celular",
+    "l:cocina",
+    "l:colega",
+    "l:comentario",
+    "l:computadora",
+    "l:conocer",
+    "l:contestar",
+    "l:costar",
+    "l:creer",
+    "l:cuaderno",
+    "l:cuenta",
+    "l:cuñado",
+    "l:dormir",
+    "l:edificio",
+    "l:encontrar",
+    "l:escribir",
+    "l:estar",
+    "l:existir",
+    "l:exterior",
+    "l:fortuna",
+    "l:foto",
+    "l:gente",
+    "l:gustar",
+    "l:hablar",
+    "l:hacer",
+    "l:hermano",
+    "l:hombre",
+    "l:hombro",
+    "l:horno",
+    "l:hotel",
+    "l:internet",
+    "l:ir",
+    "l:largo",
+    "l:lengua",
+    "l:llamarse",
+    "l:llegar",
+    "l:local",
+    "l:loro",
+    "l:mandar",
+    "l:manejar",
+    "l:mano",
+    "l:mañana",
+    "l:mes",
+    "l:mirar",
+    "l:mitad",
+    "l:morir",
+    "l:mover",
+    "l:noche",
+    "l:nombre",
+    "l:pagar",
+    "l:pan",
+    "l:peinarse",
+    "l:perder",
+    "l:perro",
+    "l:perseguir",
+    "l:plan",
+    "l:podar",
+    "l:poner",
+    "l:página",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:reír",
+    "l:saber",
+    "l:sacar",
+    "l:seguir",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:taxi",
+    "l:teléfono",
+    "l:tener",
+    "l:tirar",
+    "l:ventana",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:viejo"
+  ]
+}

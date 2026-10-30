@@ -1,0 +1,369 @@
+{
+  "id": "ch099",
+  "unit": "u33",
+  "title": "Inversiones RA",
+  "text": "La inmobiliaria Techo Feliz mandó a Jenny, una muchacha con una sonrisa que no se movía.\nJenny: El primer local queda a cinco cuadras de su café. Está recién pintado y muy bien iluminado.\nEra bonito, pero la cocina era un armario con una estufa.\nVale: ¿Y la instalación de gas?\nJenny: No tiene instalación de gas, pero la ubicación es excelente.\nHernando: En esa cocina no entra ni el loro.\nEl segundo estaba lleno de cajas, y no tenía techo. Jenny dejó de sonreír.\nHernando: Pero está bien iluminado.\nEl tercero estaba ubicado en la Séptima, frente a un parque. Medía ochenta metros cuadrados, tenía un techo alto y una cocina con horno. Vale se quedó sentada en el piso de la cocina, feliz.\nVale: Este es el que quiero.\nJenny: Perfecto. Los requisitos son sencillos: un depósito de tres meses y un fiador.\nHernando: Yo soy el fiador.\nJenny: ¿Usted es propietario, señor?\nHernando: Tengo la Burra.\nJenny: ¿Es una finca?\nHernando: Es un taxi. Pero es de la familia.\nJenny: Qué pena con usted, pero sin casa no hay fiador. Es el segundo requisito.\nTomás hizo las matemáticas: ocho millones al mes, más veinticuatro de depósito.\nTomás: Según mis matemáticas, nos faltan treinta y un millones.\nVale seguía sentada en el piso. No quería levantarse.\nJenny: Les leo las condiciones del propietario. Es una empresa muy seria: Inversiones RA.\nHernando miró el contrato.\nHernando: RA. Ricardo Altamira.\nVale se levantó despacio.\nVale: Gracias, Jenny. Con esas condiciones, prefiero vender empanadas en la calle.\nJenny: Es la mejor ubicación de la inmobiliaria.\nVale: Y el peor propietario de Bogotá.\nEn la Burra nadie hablaba. Ochenta metros cuadrados, ubicados en la Séptima, y eran de Altamira.\nSimón los recibió con una canción nueva.\nSimón: ¡Bienvenidos! ¡Bienvenidos a Hoteles Altamira!\nJhon Fredy: Eso se lo enseñó el señor del camión blanco.\nSonó el celular de Tomás. Era Mariana.\nMariana: Una señora de Santa Marta me escribió. Su papá tenía un hotel pequeño. En el libro de clientes de 1978 hay un Joaquín Herrera, de Bogotá. Mañana me manda una foto.",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "muchacha",
+      "en": "young woman"
+    },
+    {
+      "es": "local",
+      "en": "commercial premises, a shop space"
+    },
+    {
+      "es": "Techo Feliz",
+      "en": "Happy Roof (the agency's name)"
+    },
+    {
+      "es": "una sonrisa que no se movía",
+      "en": "a smile that never moved"
+    },
+    {
+      "es": "queda a cinco cuadras de su café",
+      "en": "is five blocks from your café"
+    },
+    {
+      "es": "Está recién pintado y muy bien iluminado.",
+      "en": "It has just been painted and it gets lots of light."
+    },
+    {
+      "es": "la cocina era un armario con una estufa",
+      "en": "the kitchen was a cupboard with a stove"
+    },
+    {
+      "es": "la instalación de gas",
+      "en": "the gas connection"
+    },
+    {
+      "es": "la ubicación es excelente",
+      "en": "the location is excellent"
+    },
+    {
+      "es": "En esa cocina no entra ni el loro.",
+      "en": "Not even the parrot would fit in that kitchen."
+    },
+    {
+      "es": "Jenny dejó de sonreír.",
+      "en": "Jenny stopped smiling."
+    },
+    {
+      "es": "estaba ubicado en la Séptima, frente a un parque",
+      "en": "was on Séptima, opposite a park"
+    },
+    {
+      "es": "Medía ochenta metros cuadrados",
+      "en": "It measured eighty square metres"
+    },
+    {
+      "es": "Vale se quedó sentada en el piso de la cocina, feliz.",
+      "en": "Vale stayed sitting on the kitchen floor, happy."
+    },
+    {
+      "es": "Este es el que quiero.",
+      "en": "This is the one I want."
+    },
+    {
+      "es": "Los requisitos son sencillos: un depósito de tres meses y un fiador.",
+      "en": "The requirements are simple: a three month deposit and a guarantor."
+    },
+    {
+      "es": "¿Usted es propietario, señor?",
+      "en": "Do you own property, sir?"
+    },
+    {
+      "es": "¿Es una finca?",
+      "en": "Is it a farm?"
+    },
+    {
+      "es": "sin casa no hay fiador",
+      "en": "no house, no guarantor"
+    },
+    {
+      "es": "Tomás hizo las matemáticas",
+      "en": "Tomás did the maths"
+    },
+    {
+      "es": "más veinticuatro de depósito",
+      "en": "plus twenty-four as a deposit"
+    },
+    {
+      "es": "nos faltan treinta y un millones",
+      "en": "we're thirty-one million short"
+    },
+    {
+      "es": "Les leo las condiciones del propietario.",
+      "en": "I'll read you the owner's conditions."
+    },
+    {
+      "es": "Inversiones RA",
+      "en": "RA Investments"
+    },
+    {
+      "es": "prefiero vender empanadas en la calle",
+      "en": "I'd rather sell empanadas in the street"
+    },
+    {
+      "es": "Es la mejor ubicación de la inmobiliaria.",
+      "en": "It's the agency's best location."
+    },
+    {
+      "es": "¡Bienvenidos a Hoteles Altamira!",
+      "en": "Welcome to Hoteles Altamira."
+    },
+    {
+      "es": "Eso se lo enseñó el señor del camión blanco.",
+      "en": "The man from the white truck taught him that."
+    },
+    {
+      "es": "En el libro de clientes de 1978",
+      "en": "In the 1978 guest book"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What is wrong with the first space?",
+      "options": [
+        "It is too far away",
+        "The kitchen is a cupboard with a stove and no gas",
+        "It has no windows",
+        "It is full of boxes"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why can't Hernando be the guarantor?",
+      "options": [
+        "He is too old",
+        "He doesn't own a house, only his taxi",
+        "He owes money to the bank",
+        "Jenny doesn't like him"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Vale say no to the third space?",
+      "options": [
+        "It is too small",
+        "It has no oven",
+        "The owner is Ricardo Altamira's company",
+        "It is too far from the café"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Cuánto dinero les falta?",
+      "options": [
+        "Treinta y un millones",
+        "Ocho millones",
+        "Tres meses",
+        "Ochenta metros"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What will Mariana's contact in Santa Marta send tomorrow?",
+      "options": [
+        "A photo of her father's guest book",
+        "Joaquín's phone number",
+        "A letter from Joaquín",
+        "Money for the deposit"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "A hotel guest book from 1978 has Joaquín Herrera's name in it. Tomorrow the photo arrives, and with it, his signature.",
+  "rereadQuestions": [
+    {
+      "q": "What is good about the second space, according to Hernando?",
+      "options": [
+        "It is close to the café",
+        "It gets plenty of light, because it has no roof",
+        "It has a big kitchen",
+        "It is cheap"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who taught Simón to welcome people to Hoteles Altamira?",
+      "options": [
+        "Jenny",
+        "The man from the white truck",
+        "Jhon Fredy",
+        "Mariana"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Where does Vale sit when she sees the kitchen of the third space?",
+      "options": [
+        "On the kitchen floor",
+        "At Hernando's table",
+        "In the Burra",
+        "On the counter"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:no-se",
+    "c:que-pena",
+    "c:quiero",
+    "c:segun",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:parecer-quedar",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:superlatives",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:con-sin",
+    "p:dejar-de-inf",
+    "p:demonstratives-basic",
+    "p:directions-cuadras",
+    "p:el-que-la-que",
+    "p:lleno-libre",
+    "p:me-te-nos-objects",
+    "p:medir",
+    "p:medir-pesar",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:possessives-basic",
+    "p:prefieres-x-o-y",
+    "p:quantifiers-basic",
+    "p:quedar-a-distancia",
+    "p:quedar-faltar-sobrar",
+    "p:recien-participio"
+  ],
+  "lexemes": [
+    "l:alto",
+    "l:armario",
+    "l:bien",
+    "l:bienvenido",
+    "l:blanco",
+    "l:bonito",
+    "l:café",
+    "l:caja",
+    "l:calle",
+    "l:camión",
+    "l:canción",
+    "l:casa",
+    "l:celular",
+    "l:cliente",
+    "l:cocina",
+    "l:condición",
+    "l:contrato",
+    "l:cuadra",
+    "l:cuadrado",
+    "l:dejar",
+    "l:depósito",
+    "l:despacio",
+    "l:empanada",
+    "l:empresa",
+    "l:enseñar",
+    "l:entrar",
+    "l:escribir",
+    "l:estar",
+    "l:estufa",
+    "l:excelente",
+    "l:faltar",
+    "l:familia",
+    "l:feliz",
+    "l:fiador",
+    "l:finca",
+    "l:foto",
+    "l:frente",
+    "l:gas",
+    "l:hablar",
+    "l:hacer",
+    "l:horno",
+    "l:hotel",
+    "l:iluminar",
+    "l:inmobiliaria",
+    "l:instalación",
+    "l:inversión",
+    "l:leer",
+    "l:levantarse",
+    "l:libro",
+    "l:lleno",
+    "l:local",
+    "l:loro",
+    "l:mandar",
+    "l:matemáticas",
+    "l:mañana",
+    "l:medir",
+    "l:mejor",
+    "l:mes",
+    "l:metro",
+    "l:mirar",
+    "l:mover",
+    "l:muchacha",
+    "l:nuevo",
+    "l:papá",
+    "l:parque",
+    "l:pena",
+    "l:peor",
+    "l:pequeño",
+    "l:perfecto",
+    "l:pintar",
+    "l:piso",
+    "l:preferir",
+    "l:propietario",
+    "l:quedar",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:ra",
+    "l:recibir",
+    "l:recién",
+    "l:requisito",
+    "l:seguir",
+    "l:sencillo",
+    "l:sentar",
+    "l:ser",
+    "l:serio",
+    "l:señor",
+    "l:señora",
+    "l:sonar",
+    "l:sonreír",
+    "l:sonrisa",
+    "l:taxi",
+    "l:techo",
+    "l:tener",
+    "l:ubicación",
+    "l:ubicado",
+    "l:vender"
+  ]
+}

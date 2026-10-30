@@ -1,0 +1,348 @@
+{
+  "id": "ch100",
+  "unit": "u33",
+  "title": "La J de Joaquín",
+  "text": "La foto llegó a las seis y cuarto. Mariana la puso en medio de la mesa, junto al azúcar.\nEra una hoja amarilla de un libro de clientes: «Hotel Las Gaviotas. Abril de 1978. Joaquín Herrera, de Bogotá. Habitación siete». Al lado había una firma.\nMariana: La señora se llama Ludys. Dice que el hotel en el que vivía Joaquín ahora es un parqueadero. Su papá era la única persona con quien Joaquín hablaba, y murió hace diez años.\nTomás puso la foto junto al contrato de Altamira. Las dos firmas decían «Joaquín Herrera». Pero en la hoja la J era enorme, y en el contrato era pequeña y nerviosa.\nVale: No es la misma mano.\nHernando: Esa J enorme la conozco. Joaquín firmaba así en el bar de la Séptima, en las cuentas que nunca pagaba.\nLa doctora Uribe contestó en cinco minutos:\n«Esto no soluciona todo, pero es la primera prueba de que el contrato es falso. Llévenla a la comisaría».\nSimón: ¡El cuatro es la comisaría, parce!\nHernando: Ese loro aprende todo lo que no sirve.\nVale midió el mostrador de madera de Rosa: tres metros y medio.\nVale: No cabe por la puerta de ningún local de mi lista.\nTomás: Podemos comprar otro mostrador.\nVale: ¿Y la mesa de Hernando? ¿Y la planta en la que duerme Simón? ¿Y la ventana junto a la que Rosa escribía sus cartas? Eso no cabe en ningún local.\nVale rompió la lista y la tiró a la basura.\nTomás: ¿Y el plan B?\nVale: El plan B es el plan A, con más ganas.\nHernando se sentó en su mesa, al fondo del salón, y tocó la madera del mostrador.\nHernando: Rosa decía que este salón cura todo: la tristeza, el frío y los lunes.\nTomás: ¿Y el amor?\nHernando: Eso no lo cura nadie, mijo. Pregúntele a Vale.\nVale se puso roja y se fue a la cocina.\nEsa noche, Ludys escribió otra vez.\n«Hoy un señor de Bogotá me llamó. Me ofreció dos millones por la hoja. Le dije que no. ¿Hice bien?»",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "mostrador",
+      "en": "counter"
+    },
+    {
+      "es": "local",
+      "en": "commercial premises, a shop space"
+    },
+    {
+      "es": "Mariana la puso en medio de la mesa, junto al azúcar.",
+      "en": "Mariana put it in the middle of the table, next to the sugar."
+    },
+    {
+      "es": "Era una hoja amarilla de un libro de clientes",
+      "en": "It was a yellow page from a guest book"
+    },
+    {
+      "es": "Habitación siete",
+      "en": "Room seven"
+    },
+    {
+      "es": "el hotel en el que vivía Joaquín ahora es un parqueadero",
+      "en": "the hotel where Joaquín lived is a car park now"
+    },
+    {
+      "es": "Su papá era la única persona con quien Joaquín hablaba",
+      "en": "Her dad was the only person Joaquín talked to"
+    },
+    {
+      "es": "en la hoja la J era enorme, y en el contrato era pequeña y nerviosa",
+      "en": "on the page the J was huge, and on the lease it was small and shaky"
+    },
+    {
+      "es": "No es la misma mano.",
+      "en": "It's not the same hand."
+    },
+    {
+      "es": "en las cuentas que nunca pagaba",
+      "en": "on the bills he never paid"
+    },
+    {
+      "es": "Esto no soluciona todo",
+      "en": "This doesn't solve everything"
+    },
+    {
+      "es": "la primera prueba de que el contrato es falso",
+      "en": "the first proof that the lease is fake"
+    },
+    {
+      "es": "Llévenla a la comisaría.",
+      "en": "Take it to the police station."
+    },
+    {
+      "es": "¡El cuatro es la comisaría, parce!",
+      "en": "Number four is the police station, mate."
+    },
+    {
+      "es": "Ese loro aprende todo lo que no sirve.",
+      "en": "That parrot learns everything that's useless."
+    },
+    {
+      "es": "tres metros y medio",
+      "en": "three and a half metres"
+    },
+    {
+      "es": "No cabe por la puerta de ningún local de mi lista.",
+      "en": "It doesn't fit through the door of any place on my list."
+    },
+    {
+      "es": "¿Y la planta en la que duerme Simón?",
+      "en": "And the plant Simón sleeps in?"
+    },
+    {
+      "es": "¿Y la ventana junto a la que Rosa escribía sus cartas?",
+      "en": "And the window Rosa used to write her letters next to?"
+    },
+    {
+      "es": "Vale rompió la lista y la tiró a la basura.",
+      "en": "Vale tore up the list and threw it in the bin."
+    },
+    {
+      "es": "con más ganas",
+      "en": "trying even harder"
+    },
+    {
+      "es": "al fondo del salón",
+      "en": "at the back of the room"
+    },
+    {
+      "es": "este salón cura todo",
+      "en": "this room cures everything"
+    },
+    {
+      "es": "Eso no lo cura nadie, mijo. Pregúntele a Vale.",
+      "en": "Nobody can cure that, son. Ask Vale."
+    },
+    {
+      "es": "Me ofreció dos millones por la hoja.",
+      "en": "He offered me two million for the page."
+    },
+    {
+      "es": "¿Hice bien?",
+      "en": "Did I do the right thing?"
+    }
+  ],
+  "questions": [
+    {
+      "q": "How do they know the signature on Altamira's lease is fake?",
+      "options": [
+        "Dra. Uribe recognises the pen",
+        "The J on the 1978 page is huge, and the J on the lease is small and shaky",
+        "The lease has no date",
+        "Ludys says so"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Vale throw away her list of spaces?",
+      "options": [
+        "Rosa's counter, Hernando's table and Rosa's window won't fit anywhere else",
+        "The spaces were all sold",
+        "Tomás told her to",
+        "Altamira owns all of them"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Dónde vivía Joaquín en Santa Marta?",
+      "options": [
+        "En un hotel que ahora es un parqueadero",
+        "En la casa de Ludys",
+        "En un barco",
+        "En el bar de la Séptima"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Vale go red and leave for the kitchen?",
+      "options": [
+        "She burned the bread",
+        "Hernando hints that she knows about love",
+        "Simón insults her",
+        "She is angry with Mariana"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Someone from Bogotá has offered Ludys two million pesos for the page with Joaquín's signature. Tomorrow Tomás takes the bus to the police station with both signatures on his phone.",
+  "rereadQuestions": [
+    {
+      "q": "Where did Joaquín sign with that big J, according to Hernando?",
+      "options": [
+        "On the bills he never paid at the bar on Séptima",
+        "On Rosa's letters",
+        "On the café's menu",
+        "At the bank"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Rosa's room cure, according to Hernando?",
+      "options": [
+        "Sadness, cold and Mondays",
+        "Love",
+        "Debts",
+        "Hernando's heart"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How long is Rosa's counter?",
+      "options": [
+        "Three and a half metres",
+        "Eighty metres",
+        "Seven metres",
+        "One metre"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:era",
+    "c:me-llamo",
+    "c:no-sirve",
+    "c:se-llama",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:caber",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:ir-a-venir-de-place",
+    "p:los-garcia",
+    "p:me-te-nos-objects",
+    "p:naci-en",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:personal-a",
+    "p:posicion-precisa",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:saber-conocer",
+    "p:telling-time"
+  ],
+  "lexemes": [
+    "l:abril",
+    "l:ahora",
+    "l:amarillo",
+    "l:amor",
+    "l:aprender",
+    "l:azúcar",
+    "l:año",
+    "l:bar",
+    "l:basura",
+    "l:bien",
+    "l:caber",
+    "l:carta",
+    "l:cliente",
+    "l:cocina",
+    "l:comisaría",
+    "l:comprar",
+    "l:conocer",
+    "l:contestar",
+    "l:contrato",
+    "l:cuenta",
+    "l:curar",
+    "l:decir",
+    "l:doctor",
+    "l:dormir",
+    "l:enorme",
+    "l:escribir",
+    "l:falso",
+    "l:firma",
+    "l:firmar",
+    "l:fondo",
+    "l:foto",
+    "l:frío",
+    "l:ganar",
+    "l:habitación",
+    "l:hablar",
+    "l:hacer",
+    "l:hoja",
+    "l:hotel",
+    "l:hoy",
+    "l:irse",
+    "l:juntar",
+    "l:junto",
+    "l:lado",
+    "l:libro",
+    "l:listo",
+    "l:llamar",
+    "l:llamarse",
+    "l:llegar",
+    "l:llevar",
+    "l:local",
+    "l:loro",
+    "l:lunes",
+    "l:madera",
+    "l:mano",
+    "l:mediar",
+    "l:medir",
+    "l:mesa",
+    "l:metro",
+    "l:mijo",
+    "l:minuto",
+    "l:morir",
+    "l:mostrador",
+    "l:nervioso",
+    "l:noche",
+    "l:ofrecer",
+    "l:pagar",
+    "l:papá",
+    "l:parce",
+    "l:parqueadero",
+    "l:pequeño",
+    "l:persona",
+    "l:plan",
+    "l:planta",
+    "l:poder",
+    "l:poner",
+    "l:ponerse",
+    "l:preguntar",
+    "l:prueba",
+    "l:puerta",
+    "l:rojo",
+    "l:romper",
+    "l:salón",
+    "l:sentarse",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:señora",
+    "l:solucionar",
+    "l:tirar",
+    "l:tocar",
+    "l:tristeza",
+    "l:ventana",
+    "l:vez",
+    "l:vivir",
+    "l:único"
+  ]
+}
