@@ -1,0 +1,179 @@
+{
+  "node": "p:quedar-a-distancia",
+  "hook": {
+    "line": "Ask a Bogotano how far something is and you'll get blocks, minutes or a shrug. Tomás keeps walking past the café because nobody told him how far it was.",
+    "es": "Mi casa queda a dos cuadras del café.",
+    "en": "My house is two blocks from the café."
+  },
+  "examples": [
+    {
+      "es": "El café queda a diez minutos caminando.",
+      "en": "The café is ten minutes away on foot."
+    },
+    {
+      "es": "Mi casa queda a dos cuadras del café.",
+      "en": "My house is two blocks from the café."
+    },
+    {
+      "es": "La universidad queda a veinte minutos en bus.",
+      "en": "The university is twenty minutes away by bus."
+    },
+    {
+      "es": "Medellín queda a nueve horas de Bogotá.",
+      "en": "Medellín is nine hours from Bogotá."
+    },
+    {
+      "es": "¿A cuánto queda el banco?",
+      "en": "How far is the bank?"
+    },
+    {
+      "es": "¿A cuántas cuadras queda el parque?",
+      "en": "How many blocks away is the park?"
+    }
+  ],
+  "rule": "For how far away something is, use *queda a* (or *está a*) plus the distance, then *de* plus the place.\n*El parque queda a cinco cuadras de aquí.*\n*Queda a diez minutos caminando.*\n\nThe distance can be blocks (*cuadras*), minutes, hours or kilometers. Add how you travel at the end: *caminando*, *en carro*, *en bus*.\n\nTo ask: *¿A cuánto queda…?* or *¿A cuántas cuadras queda…?*\n\nEnglish says is five blocks from. Spanish says *queda a* five blocks *de*. Don't use *en* for distance.",
+  "smallPrint": "In Latin America *quedar* is the everyday verb for where a fixed place is: *¿Dónde queda el banco?*",
+  "readAndPick": [
+    {
+      "es": "Queda a cinco cuadras.",
+      "options": [
+        "It's five blocks away.",
+        "It's five minutes away.",
+        "It's five hours away."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Queda a cinco minutos caminando.",
+      "options": [
+        "It's five blocks away.",
+        "It's five minutes away on foot.",
+        "It's five minutes away by car."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La universidad queda a veinte minutos en bus.",
+      "options": [
+        "The university is twenty minutes away by bus.",
+        "The university is twenty minutes away on foot."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Medellín queda a nueve horas de Bogotá.",
+      "options": [
+        "Medellín is nine blocks from Bogotá.",
+        "Medellín is nine hours from Bogotá."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿A cuánto queda el banco?",
+      "options": [
+        "How much is the bank?",
+        "How far is the bank?",
+        "Where is the bank?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi casa queda a dos cuadras del café.",
+      "options": [
+        "My house is two blocks from the café.",
+        "My house is two blocks from the park."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El aeropuerto queda a cuarenta minutos del centro.",
+      "options": [
+        "The airport is forty minutes from downtown.",
+        "The airport is forty blocks from downtown."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El café queda a media cuadra.",
+      "options": [
+        "The café is half an hour away.",
+        "The café is half a block away."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *a* or *en* and type the whole sentence: *El parque queda ___ cinco cuadras.* (The park is five blocks away.)",
+      "answer": "El parque queda a cinco cuadras.",
+      "accept": [],
+      "why": "Distance uses *a*, never *en*."
+    },
+    {
+      "prompt": "Pick *del* or *de el* and type the whole sentence: *Mi casa queda a dos cuadras ___ café.* (My house is two blocks from the café.)",
+      "answer": "Mi casa queda a dos cuadras del café.",
+      "accept": [
+        "Mi casa está a dos cuadras del café."
+      ],
+      "why": "*De* plus *el* always squeezes into *del*."
+    },
+    {
+      "prompt": "Say: The café is ten minutes away on foot.",
+      "answer": "El café queda a diez minutos caminando.",
+      "accept": [
+        "El café está a diez minutos caminando."
+      ],
+      "why": "Distance with *a*, then how you travel: *caminando*."
+    },
+    {
+      "prompt": "Say: Medellín is nine hours from Bogotá.",
+      "answer": "Medellín queda a nueve horas de Bogotá.",
+      "accept": [
+        "Medellín está a nueve horas de Bogotá."
+      ],
+      "why": "Distance with *a*, then *de* plus the place."
+    },
+    {
+      "prompt": "Ask: How far is the bank?",
+      "answer": "¿A cuánto queda el banco?",
+      "accept": [
+        "¿A cuánto está el banco?"
+      ],
+      "why": "*¿A cuánto queda…?* asks how far."
+    },
+    {
+      "prompt": "Say: The university is twenty minutes away by bus.",
+      "answer": "La universidad queda a veinte minutos en bus.",
+      "accept": [
+        "La universidad está a veinte minutos en bus."
+      ],
+      "why": "Add the way you travel at the end: *en bus*."
+    },
+    {
+      "prompt": "Make it a question about blocks: *El parque queda a cinco cuadras.* Ask: How many blocks away is the park?",
+      "answer": "¿A cuántas cuadras queda el parque?",
+      "accept": [
+        "¿A cuántas cuadras está el parque?"
+      ],
+      "why": "Put the number you want to know into the question: *cuántas cuadras*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El parque queda en cinco cuadras.",
+      "right": "El parque queda a cinco cuadras.",
+      "why": "Almost. For distance Spanish uses *a*, not *en*."
+    },
+    {
+      "wrong": "Mi casa queda a dos cuadras el café.",
+      "right": "Mi casa queda a dos cuadras del café.",
+      "why": "Almost. After the distance you need *de*, and *de* plus *el* becomes *del*."
+    },
+    {
+      "wrong": "¿Cuánto queda el banco?",
+      "right": "¿A cuánto queda el banco?",
+      "why": "Almost. To ask how far, keep the *a*: *¿A cuánto queda…?*"
+    }
+  ],
+  "personal": "Tell us how far your home is from somewhere you go often, using *queda a* and a distance."
+}

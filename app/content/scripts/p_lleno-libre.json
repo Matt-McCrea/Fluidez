@@ -1,0 +1,174 @@
+{
+  "node": "p:lleno-libre",
+  "hook": {
+    "line": "In a packed Transmilenio bus, Tomás asks if a seat is free, and a stranger answers a different question. Spanish has two pairs of words here, and a bus can be full and still have a free seat.",
+    "es": "El bus está lleno, pero hay un puesto libre.",
+    "en": "The bus is full, but there's a free seat."
+  },
+  "examples": [
+    {
+      "es": "El bus está lleno, pero hay un puesto libre.",
+      "en": "The bus is full, but there's a free seat."
+    },
+    {
+      "es": "¿Está ocupado este puesto?",
+      "en": "Is this seat taken?"
+    },
+    {
+      "es": "La nevera está vacía.",
+      "en": "The fridge is empty."
+    },
+    {
+      "es": "El café está lleno de gente.",
+      "en": "The café is full of people."
+    },
+    {
+      "es": "El apartamento está libre desde el lunes.",
+      "en": "The apartment is free from Monday."
+    },
+    {
+      "es": "Hernando está ocupado hoy.",
+      "en": "Hernando is busy today."
+    }
+  ],
+  "rule": "Two pairs, two questions.\n\n*Lleno* and *vacío*: how much is inside? *La nevera está vacía.* *El café está lleno de gente.*\n\n*Libre* and *ocupado*: can I use it? *El puesto está libre.* *¿Está ocupado este puesto?*\n\nThey can both be true: a full bus with a free seat. To ask if a seat is taken, say *ocupado*, never *lleno*.\n\n*Lleno* and *vacío* change with the noun (*lleno, llena*), and so does *ocupado*. *Libre* stays the same. All of them use *estar*.",
+  "smallPrint": "Teachers call these state adjectives: they describe a condition, which is why they take *estar*.",
+  "readAndPick": [
+    {
+      "es": "La nevera está vacía.",
+      "options": [
+        "The fridge is full.",
+        "The fridge is empty."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El café está lleno de gente.",
+      "options": [
+        "The café is full of people.",
+        "The café is free of people."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Está ocupado este puesto?",
+      "options": [
+        "Is this seat taken?",
+        "Is this seat full?",
+        "Is this seat free?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El puesto está libre.",
+      "options": [
+        "The seat is taken.",
+        "The seat is free."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El apartamento está vacío.",
+      "options": [
+        "The apartment is empty.",
+        "The apartment is busy."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La mesa está ocupada.",
+      "options": [
+        "The table is full of food.",
+        "The table is taken."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El bus está lleno, pero hay un puesto libre.",
+      "options": [
+        "The bus is empty, but there's a free seat.",
+        "The bus is full, but there's a free seat.",
+        "The bus is full, so there's no seat."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando está ocupado hoy.",
+      "options": [
+        "Hernando is busy today.",
+        "Hernando is free today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Está libre esta mesa?",
+      "options": [
+        "Is this table free?",
+        "Is this table full?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *vacía* or *libre* and type the whole sentence: *La nevera está ___.* (The fridge is empty.)",
+      "answer": "La nevera está vacía.",
+      "accept": [],
+      "why": "Nothing is inside it, so *vacía*, which matches *nevera*."
+    },
+    {
+      "prompt": "Pick *lleno* or *llena* and type the whole sentence: *La botella está ___.* (The bottle is full.)",
+      "answer": "La botella está llena.",
+      "accept": [],
+      "why": "*Botella* is feminine, so *llena*."
+    },
+    {
+      "prompt": "Pick *ocupado* or *lleno* and type the whole sentence: *¿Está ___ este puesto?* (Is this seat taken?)",
+      "answer": "¿Está ocupado este puesto?",
+      "accept": [],
+      "why": "To ask if you can sit there, use *ocupado*."
+    },
+    {
+      "prompt": "Say: The apartment is free from Monday.",
+      "answer": "El apartamento está libre desde el lunes.",
+      "accept": [],
+      "why": "Available to use, so *libre*."
+    },
+    {
+      "prompt": "Say: The café is full of people.",
+      "answer": "El café está lleno de gente.",
+      "accept": [],
+      "why": "*Lleno de* plus what fills it."
+    },
+    {
+      "prompt": "Say: Is this table free?",
+      "answer": "¿Está libre esta mesa?",
+      "accept": [],
+      "why": "Asking if you can use it, so *libre*."
+    },
+    {
+      "prompt": "Make it the opposite: *El apartamento está vacío.* Say: The apartment is full of boxes.",
+      "answer": "El apartamento está lleno de cajas.",
+      "accept": [],
+      "why": "Opposite of *vacío* is *lleno*, then *de* plus what fills it."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Está lleno este puesto?",
+      "right": "¿Está ocupado este puesto?",
+      "why": "Almost. For is this seat taken, Spanish says *ocupado*."
+    },
+    {
+      "wrong": "La nevera está lleno.",
+      "right": "La nevera está llena.",
+      "why": "Almost. *Nevera* is feminine, so *llena*."
+    },
+    {
+      "wrong": "La mesa es ocupada.",
+      "right": "La mesa está ocupada.",
+      "why": "Almost. Whether something is taken right now is a state, so *está*."
+    }
+  ],
+  "personal": "Look around you and say one true thing with each pair: something that is *lleno* or *vacío*, and something that is *libre* or *ocupado*."
+}

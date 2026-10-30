@@ -1,0 +1,166 @@
+{
+  "node": "p:el-que-la-que",
+  "hook": {
+    "line": "When two houses are on the same street, you point: the one with the red roof. Spanish lets you drop the noun and keep only the little word and a describing bit.",
+    "es": "Quiero la que tiene balcón.",
+    "en": "I want the one that has a balcony."
+  },
+  "examples": [
+    {
+      "es": "¿Cuál es tu casa?\nLa que tiene el techo rojo.",
+      "en": "Which one is your house?\nThe one with the red roof."
+    },
+    {
+      "es": "Mi hermana es la que está hablando con Pablo.",
+      "en": "My sister is the one who's talking to Pablo."
+    },
+    {
+      "es": "Vale es la que hace el pan.",
+      "en": "Vale is the one who makes the bread."
+    },
+    {
+      "es": "Prefiero el que tiene ventana.",
+      "en": "I prefer the one that has a window."
+    },
+    {
+      "es": "Los que viven aquí conocen a Hernando.",
+      "en": "The ones who live here know Hernando."
+    },
+    {
+      "es": "Los que quieran venir, avísenme.",
+      "en": "Those who want to come, let me know. (to you all)"
+    }
+  ],
+  "rule": "To say the one that…, don't repeat the noun. Keep the article and add *que*:\n*el que*, *la que*, *los que*, *las que*.\n\n*La casa que tiene balcón* becomes *la que tiene balcón*.\n\nThe article must match the noun you dropped: *la casa*, so *la que*; *los carros*, so *los que*. Never drop the article: *que tiene balcón* alone doesn't work.\n\nIt's useful for answering *¿cuál?* and for naming a person by what they do: *Vale es la que hace el pan.*",
+  "smallPrint": "Teachers call this a relative pronoun with an article, replacing a noun that was already understood.",
+  "readAndPick": [
+    {
+      "es": "La que tiene el techo rojo.",
+      "options": [
+        "The one with the red roof (a house or a place).",
+        "The ones with the red roof."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Prefiero el que tiene ventana.",
+      "options": [
+        "I prefer the one that has a window (a room or a place).",
+        "I prefer the ones that have a window."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los que viven aquí conocen a Hernando.",
+      "options": [
+        "The one who lives here knows Hernando.",
+        "The ones who live here know Hernando."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale es la que hace el pan.",
+      "options": [
+        "Vale is the one who makes the bread.",
+        "Vale is the one who sells the bread."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quiero la que tiene balcón.",
+      "options": [
+        "I want the one that has a balcony.",
+        "I want the ones that have a balcony."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las que están en la mesa son mis llaves.",
+      "options": [
+        "The ones on the table are my keys.",
+        "The one on the table is my key."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Simón es el que habla mucho.",
+      "options": [
+        "Simón is the one who talks a lot.",
+        "Simón is the one who talks little."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuál es Mariana?\nLa que escribe en el periódico.",
+      "options": [
+        "Which one is Mariana?\nThe one who writes for the newspaper.",
+        "Who is Mariana?\nThe one who reads the newspaper."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *el que* or *la que* and type the whole sentence: *Quiero ___ tiene balcón.* (I want the one that has a balcony; talking about a house, *la casa*.)",
+      "answer": "Quiero la que tiene balcón.",
+      "accept": [],
+      "why": "*Casa* is feminine, so *la que*."
+    },
+    {
+      "prompt": "Pick *el que* or *los que* and type the whole sentence: *___ viven aquí conocen a Hernando.* (The ones who live here know Hernando.)",
+      "answer": "Los que viven aquí conocen a Hernando.",
+      "accept": [],
+      "why": "More than one person, so *los que*."
+    },
+    {
+      "prompt": "Say: Vale is the one who makes the bread.",
+      "answer": "Vale es la que hace el pan.",
+      "accept": [],
+      "why": "Vale is a woman, so *la que*."
+    },
+    {
+      "prompt": "Say: I prefer the one that has a window.",
+      "answer": "Prefiero el que tiene ventana.",
+      "accept": [],
+      "why": "Dropped noun is masculine, like *cuarto*, so *el que*."
+    },
+    {
+      "prompt": "Say: Simón is the one who talks a lot.",
+      "answer": "Simón es el que habla mucho.",
+      "accept": [],
+      "why": "Simón is masculine, so *el que*."
+    },
+    {
+      "prompt": "Answer, giving the house with the red roof: *¿Cuál es tu casa?*",
+      "answer": "La que tiene el techo rojo.",
+      "accept": [
+        "Es la que tiene el techo rojo."
+      ],
+      "why": "You drop *casa* but keep *la*, then *que* and what describes it."
+    },
+    {
+      "prompt": "Shorten it by dropping the noun: *Quiero la casa que tiene balcón.*",
+      "answer": "Quiero la que tiene balcón.",
+      "accept": [],
+      "why": "Cut the noun, keep the article and *que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Quiero que tiene balcón.",
+      "right": "Quiero la que tiene balcón.",
+      "why": "Almost. Don't drop the article: *la que*."
+    },
+    {
+      "wrong": "Prefiero la que tiene ventana, el cuarto.",
+      "right": "Prefiero el que tiene ventana.",
+      "why": "Almost. The article matches the dropped noun: *cuarto* is masculine, so *el que*."
+    },
+    {
+      "wrong": "Vale es que hace el pan.",
+      "right": "Vale es la que hace el pan.",
+      "why": "Almost. After *es* you still need the article: *la que*."
+    }
+  ],
+  "personal": "Describe someone you know without their name: *Mi amigo es el que…* or *Mi hermana es la que…*."
+}
