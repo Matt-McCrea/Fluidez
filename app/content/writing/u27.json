@@ -1,0 +1,694 @@
+[
+  {
+    "id": "w-u27-01",
+    "unit": "u27",
+    "prompt": "Answer a customer's online review of the café. She is an older stranger called Patricia Gómez, so use usted. Open with a formal greeting, thank her for her comment and end by saying you look forward to her reply.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "^\\s*(estimada|buenas|buenos|cordial)",
+        "label": "open with a formal greeting: Estimada señora Gómez:"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "quedo atento",
+          "quedo atenta",
+          "quedamos atentos"
+        ],
+        "label": "close with quedo atento/atenta a su respuesta"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "gracias por tu",
+          "te escribo",
+          "tu comentario",
+          "querida"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenos días, señora Gómez:\nMuchas gracias por su comentario. Lo siento mucho, y la esperamos otra vez en el café. Esperamos que su próxima visita sea mejor. Cordial saludo.\nQuedo atento a su respuesta.",
+    "focus": "g:written-register-a2",
+    "requires": [
+      "c:cordial-saludo",
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "c:quedo-atento",
+      "c:sentido-pesame",
+      "g:adjective-agreement",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:subj-irregulars",
+      "g:subj-wishes",
+      "g:that-clauses",
+      "l:atento",
+      "l:bueno",
+      "l:café",
+      "l:comentario",
+      "l:cordial",
+      "l:día",
+      "l:esperar",
+      "l:mejor",
+      "l:próximo",
+      "l:quedar",
+      "l:respuesta",
+      "l:saludar",
+      "l:sentir",
+      "l:ser",
+      "l:señora",
+      "l:vez",
+      "l:visita",
+      "p:gracias-por",
+      "p:otro-no-article",
+      "p:possessives-basic",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u27-02",
+    "unit": "u27",
+    "prompt": "Write to Señora Ruiz, who runs a language school and whom you have never met. Say you are writing to ask her for information about the evening courses. Use usted all the way through.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\ble escribo para\\b",
+        "label": "say why you're writing: le escribo para..."
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "pedirle",
+          "preguntarle"
+        ],
+        "label": "ask with pedirle or preguntarle"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "te escribo",
+          "pedirte",
+          "tu ",
+          "tienes",
+          "puedes"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenas tardes, señora Ruiz:\nLe escribo para pedirle información sobre los cursos de la noche. Quiero saber el precio y los días de clase, y también si hay un curso para principiantes. Gracias de antemano.\nQuedo atento a su respuesta.",
+    "focus": "p:le-escribo-para",
+    "requires": [
+      "c:gracias-de-antemano",
+      "c:hay",
+      "c:hola-buenos-dias",
+      "c:quedo-atento",
+      "c:quiero",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:indirect-objects",
+      "g:object-pronoun-position",
+      "g:present-er-ir",
+      "g:si-present",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:antemano",
+      "l:atento",
+      "l:buena",
+      "l:clase",
+      "l:curso",
+      "l:día",
+      "l:escribir",
+      "l:información",
+      "l:noche",
+      "l:pedir",
+      "l:precio",
+      "l:quedar",
+      "l:querer",
+      "l:respuesta",
+      "l:saber",
+      "l:señora",
+      "l:tarde",
+      "p:estimado-colon",
+      "p:le-escribo-para",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:por-la-manana",
+      "p:saber-conocer",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u27-03",
+    "unit": "u27",
+    "prompt": "Text your friend Mariana, someone your age. Say you are writing to tell her some news: you have a new job in a café. Ask her to call you tonight.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bte escribo para\\b",
+        "label": "say why you're writing: te escribo para..."
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "le escribo",
+          "su ",
+          "usted"
+        ],
+        "label": "tú, she is a friend"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mariana, te escribo para decirte algo importante. Ya tengo trabajo nuevo en un café, cerca de la plaza. ¿Me puedes llamar esta noche? Quiero hablar contigo.",
+    "focus": "p:le-escribo-para",
+    "requires": [
+      "c:me-puede-ayudar",
+      "c:quiero",
+      "c:tengo",
+      "g:gender-articles",
+      "g:object-pronoun-position",
+      "g:prep-pronouns",
+      "g:present-er-ir",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:café",
+      "l:cerca",
+      "l:decir",
+      "l:escribir",
+      "l:hablar",
+      "l:importante",
+      "l:llamar",
+      "l:noche",
+      "l:nuevo",
+      "l:plaza",
+      "l:poder",
+      "l:querer",
+      "l:tener",
+      "l:trabajo",
+      "p:cerca-de",
+      "p:demonstratives-basic",
+      "p:indefinites-basic",
+      "p:le-escribo-para",
+      "p:me-te-nos-objects",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:position-de",
+      "p:request-ladder"
+    ]
+  },
+  {
+    "id": "w-u27-04",
+    "unit": "u27",
+    "prompt": "Message Vale, your friend, before the weekend. Ask her to come to the café early on Saturday so that she can help you with the new cakes.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "subjunctiveAfter",
+        "trigger": "para que",
+        "within": 3,
+        "label": "use para que + a changed verb: para que me ayudes"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bpara que\\b",
+        "label": "use para que"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, ven temprano el sábado para que me ayudes con los postres nuevos. Llega a las siete para que empecemos pronto. Te espero en el café.",
+    "focus": "g:para-que",
+    "requires": [
+      "g:adjective-agreement",
+      "g:commands-tu",
+      "g:gender-articles",
+      "g:para-que",
+      "g:present-ar",
+      "g:subj-wanting",
+      "l:ayudar",
+      "l:café",
+      "l:empezar",
+      "l:esperar",
+      "l:llegar",
+      "l:nuevo",
+      "l:postre",
+      "l:pronto",
+      "l:sábado",
+      "l:temprano",
+      "l:venir",
+      "p:days-el-lunes",
+      "p:me-te-nos-objects",
+      "p:telling-time"
+    ]
+  },
+  {
+    "id": "w-u27-05",
+    "unit": "u27",
+    "prompt": "Reply to Don Hernando's text. He says he will come to the café every morning from now on. Address him as usted. Tell him you are glad he is there again and that it is great that he sits by the window.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "subjunctiveAfter",
+        "trigger": "me alegra que",
+        "within": 3,
+        "label": "after me alegra que, the verb changes: vengas"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(me alegra|qué bueno|me encanta|me gusta) que\\b",
+        "label": "react with me alegra que or qué bueno que"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Don Hernando, me alegra que usted esté aquí otra vez. Qué bueno que se siente cerca de la ventana. Lo espero mañana con un tinto caliente, como siempre.",
+    "focus": "g:subj-emotion-intro",
+    "requires": [
+      "c:que-bien",
+      "c:que-bueno-que",
+      "g:direct-objects",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:subj-emotion-intro",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:alegrar",
+      "l:aquí",
+      "l:bueno",
+      "l:caliente",
+      "l:cerca",
+      "l:esperar",
+      "l:estar",
+      "l:mañana",
+      "l:qué",
+      "l:sentarse",
+      "l:siempre",
+      "l:tinto",
+      "l:ventana",
+      "l:vez",
+      "p:aqui-ahi-alla",
+      "p:cerca-de",
+      "p:don-dona-nombre",
+      "p:frequency-scale",
+      "p:otro-no-article",
+      "p:position-de",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u27-06",
+    "unit": "u27",
+    "prompt": "End a text to your friend Vale, who is leaving on holiday tomorrow. Wish her a good time and good rest, using que plus a verb.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bque (te diviertas|descanses|la pases bien|te vaya bien)\\b",
+        "label": "wish her well: Que te diviertas / Que descanses"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, mañana sales de viaje. Que descanses mucho y que la pases bien. Que te diviertas con tu familia, y mándame una foto del mar.",
+    "focus": "p:que-subj-deseo",
+    "requires": [
+      "c:bien-y-tu",
+      "c:que-descanses",
+      "c:que-la-pases-bien",
+      "c:que-te-diviertas",
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:subj-wishes",
+      "l:bien",
+      "l:descansar",
+      "l:divertirse",
+      "l:familia",
+      "l:foto",
+      "l:mandar",
+      "l:mar",
+      "l:mañana",
+      "l:pasar",
+      "l:salir",
+      "l:viaje",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u27-07",
+    "unit": "u27",
+    "prompt": "Write a sign for the café door to tell customers what to do. Use infinitives for the instructions, like a notice: no smoking, close the door, wait to be seated.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "^\\s*no (fumar|entrar|pasar)\\b|\\n\\s*no (fumar|entrar|pasar)\\b|\\b(esperar|cerrar|mantener|pedir|pagar)\\b",
+        "label": "use infinitives as instructions: no fumar, cerrar, esperar"
+      },
+      {
+        "type": "negation",
+        "label": "include a no: No fumar"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Aviso para los clientes.\nNo fumar dentro del café. Cerrar la puerta al salir. Esperar en la entrada para pedir una mesa. No dejar bolsas en el piso.",
+    "focus": "p:infinitive-instructions",
+    "requires": [
+      "g:gender-articles",
+      "g:prep-infinitive",
+      "g:present-ar",
+      "l:avisar",
+      "l:bolsa",
+      "l:café",
+      "l:cerrar",
+      "l:cliente",
+      "l:dejar",
+      "l:dentro",
+      "l:entrada",
+      "l:esperar",
+      "l:fumar",
+      "l:mesa",
+      "l:pedir",
+      "l:piso",
+      "l:puerta",
+      "l:salir",
+      "p:cerca-de",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:position-de"
+    ]
+  },
+  {
+    "id": "w-u27-08",
+    "unit": "u27",
+    "prompt": "Write a short online review of a restaurant you liked, for strangers to read. Say the food was good, say you recommend it, and say it is worth it.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "lo recomiendo",
+          "la recomiendo",
+          "vale la pena",
+          "lo recomiendo totalmente"
+        ],
+        "label": "recommend it: lo recomiendo / vale la pena"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Fuimos con mi familia el domingo. La comida estuvo muy buena y el servicio fue amable. Lo recomiendo totalmente, y no es caro. Vamos a volver pronto con mis amigos.",
+    "focus": "c:lo-recomiendo",
+    "requires": [
+      "c:estuvo",
+      "c:lo-recomiendo",
+      "c:vamos-a",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:preterite-irregular-strong",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:amable",
+      "l:amigo",
+      "l:buena",
+      "l:caro",
+      "l:comida",
+      "l:domingo",
+      "l:estar",
+      "l:familia",
+      "l:ir",
+      "l:pronto",
+      "l:recomendar",
+      "l:ser",
+      "l:servicio",
+      "l:totalmente",
+      "l:volver",
+      "p:days-el-lunes",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u27-09",
+    "unit": "u27",
+    "prompt": "Send an email to Señor Pérez, a stranger who runs an agency, with your CV attached. Say what you attach, thank him in advance and sign off formally. Use usted.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(adjunto|adjunta)\\b",
+        "label": "say you attach the file: adjunto"
+      },
+      {
+        "type": "containsWord",
+        "word": "antemano",
+        "label": "thank him: gracias de antemano"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "te envío",
+          "tu ",
+          "gracias a ti"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenos días, señor Pérez:\nLe adjunto mi currículum y una carta. Quiero trabajar con ustedes y estoy libre todas las tardes de la semana. Gracias de antemano por su atención y por su tiempo.\nAtentamente,\nTomás",
+    "focus": "c:adjunto",
+    "requires": [
+      "c:adjunto",
+      "c:atentamente",
+      "c:gracias-de-antemano",
+      "c:hola-buenos-dias",
+      "c:quiero",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:por-para-1",
+      "g:prep-pronouns",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:adjuntar",
+      "l:antemano",
+      "l:atención",
+      "l:atentamente",
+      "l:bueno",
+      "l:carta",
+      "l:currículum",
+      "l:día",
+      "l:estar",
+      "l:libre",
+      "l:querer",
+      "l:semana",
+      "l:señor",
+      "l:tarde",
+      "l:tiempo",
+      "l:trabajar",
+      "p:possessives-basic",
+      "p:senor-don-article",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ]
+  },
+  {
+    "id": "w-u27-10",
+    "unit": "u27",
+    "prompt": "Leave a note for Vale on the kitchen table. Tell her you came early to help, and that you came so that she can rest for a while.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bpara (ayudar|ayudarte|ayudarla)\\b",
+        "label": "say you came to help: vine para ayudar"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bpara que\\b",
+        "label": "say so that she can rest: para que descanses"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, vine temprano para ayudar. También vine para que descanses un rato, porque ayer trabajaste mucho. El pan ya está en el horno y el café está listo para abrir.",
+    "focus": "x:para-inf-que",
+    "requires": [
+      "c:ayer-anoche",
+      "c:porque",
+      "c:que-descanses",
+      "g:cause-result",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:para-que",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "l:abrir",
+      "l:ayer",
+      "l:ayudar",
+      "l:café",
+      "l:descansar",
+      "l:estar",
+      "l:horno",
+      "l:listo",
+      "l:pan",
+      "l:rato",
+      "l:temprano",
+      "l:trabajar",
+      "l:venir",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u27-11",
+    "unit": "u27",
+    "prompt": "Text Mariana about the draft article she asked you to read. Say you just finished reading it and that you have not sent your comments yet.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bacabo de\\b",
+        "label": "say you just finished: acabo de..."
+      },
+      {
+        "type": "regex",
+        "pattern": "\\btodavía no\\b",
+        "label": "say not yet: todavía no..."
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mariana, acabo de leer tu artículo. Me gustó mucho. Todavía no te envío mis comentarios, pero te escribo mañana. Ya tengo algunas ideas buenas para el final.",
+    "focus": "g:acabar-de-ya-todavia",
+    "requires": [
+      "c:tengo",
+      "c:todavia-no",
+      "g:acabar-de-ya-todavia",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:indefinites",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:preterite-ar",
+      "g:yo-irregular",
+      "l:acabar",
+      "l:artículo",
+      "l:buena",
+      "l:comentario",
+      "l:enviar",
+      "l:escribir",
+      "l:final",
+      "l:gustar",
+      "l:idea",
+      "l:leer",
+      "l:mañana",
+      "l:tener",
+      "p:me-te-nos-objects",
+      "p:para-inf",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u27-12",
+    "unit": "u27",
+    "prompt": "Write the first lines of the café's newsletter for your regular customers. Greet them, say how glad you are that they come every week, and say you hope with a bit of luck to open a second floor.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "subjunctiveAfter",
+        "trigger": "qué bueno que",
+        "within": 3,
+        "label": "after qué bueno que, the verb changes: vengan"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "con un poco de suerte"
+        ],
+        "label": "use con un poco de suerte"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Queridos clientes:\nQué bueno que vengan al café cada semana. Gracias por su comentario. Con un poco de suerte, abrimos un segundo piso este año. Los esperamos a todos. Un abrazo,\nTomás",
+    "focus": "g:subj-emotion-intro",
+    "requires": [
+      "c:con-un-poco-de-suerte",
+      "c:que-bien",
+      "c:que-bueno-que",
+      "c:un-abrazo",
+      "g:cada-cualquier",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:subj-wanting",
+      "l:abrazo",
+      "l:abrir",
+      "l:año",
+      "l:bueno",
+      "l:café",
+      "l:cliente",
+      "l:comentario",
+      "l:esperar",
+      "l:piso",
+      "l:querer",
+      "l:qué",
+      "l:semana",
+      "l:suerte",
+      "l:venir",
+      "p:demonstratives-basic",
+      "p:gracias-por",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:possessives-basic",
+      "p:veces-al"
+    ]
+  }
+]
