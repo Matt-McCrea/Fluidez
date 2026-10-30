@@ -2,7 +2,7 @@
   "id": "ch034",
   "unit": "u13",
   "title": "Dos rutas",
-  "text": "Tomás: Sí, señor. Muy perdido. Voy a la calle 100 con carrera Séptima.\nVendedor: Tranquilo, joven. Primero, un tinto. Es gratis.\nEra el primer tinto del día, y era excelente.\nVendedor: Mire. Cruce la avenida en el semáforo. En el otro andén está la estación. Tome el TransMilenio de la ruta B, al norte, y baje en la Cien.\nTomás: ¿Y después?\nVendedor: Después, otro tinto.\nUna señora con un perro: ¡Qué va, joven! Usted necesita la buseta. Primero regrese al centro en la buseta de la parada de la izquierda. En el centro, tome un taxi. Y en la Séptima, una moto.\nVendedor: Señora, ¿una moto?\nSeñora: Mi hijo tiene moto y carro. Él lo lleva.\nVendedor: Señora, el joven no necesita a su hijo. Necesita una ruta.\nTomás llamó al café.\nTomás: Vale, ¿derecha o izquierda? ¿Bus o buseta?\nSimón: ¡Izquierda! ¡Derecha! ¡Izquierda!\nVale: El vendedor tiene razón, Tomás. La buseta es muy lenta. Toma el TransMilenio. Y esta vez, ¡mira bien el letrero!\nTomás no quería regresar al centro. Miró la parada de la buseta, miró la estación y tocó la llave de Joaquín en su chaqueta. Después cruzó la avenida en el semáforo, entre carros, motos y busetas, y entró a la estación.\nA las once y media bajó del bus en la Cien. Pero la oficina del notario estaba en la Séptima, todavía lejos.\nEn el andén, un taxi amarillo, muy viejo, pitó dos veces.\nHernando: ¡Tomás! ¡Aquí, mijo!",
+  "text": "Tomás: Sí, señor. Muy perdido. Voy a la calle 100 con carrera Séptima.\nVendedor: Tranquilo, joven. Primero, un tinto. Es gratis. Ahora, mire: cruce la avenida en el semáforo. En el otro andén está la estación. Tome el TransMilenio de la ruta B, al norte, y baje en la Cien.\nUna señora con un perro: ¡Qué va, joven! Usted necesita la buseta. Regrese al centro en la buseta de la parada de la izquierda. En el centro, tome un taxi. Y en la Séptima, una moto. Mi hijo tiene moto. Él lo lleva.\nTomás llamó al café.\nTomás: Vale, ¿derecha o izquierda?\nSimón: ¡Izquierda! ¡Derecha! ¡Izquierda!\nVale: El vendedor tiene razón. La buseta es lenta. Toma el TransMilenio. Y esta vez, ¡mira bien el letrero!\nTomás no quería regresar al centro. Cruzó la avenida entre carros y motos, y entró a la estación.\nA las once y media bajó del bus en la Cien. Pero la oficina del notario estaba en la Séptima, todavía lejos.\nEn el andén, un taxi amarillo, muy viejo, pitó dos veces.\nHernando: ¡Tomás! ¡Aquí, mijo!",
   "gloss": [
     {
       "es": "carrera Séptima",
@@ -33,12 +33,8 @@
       "en": "small bus"
     },
     {
-      "es": "Él lo lleva.",
-      "en": "He'll take you."
-    },
-    {
-      "es": "La buseta es muy lenta.",
-      "en": "The small bus is very slow."
+      "es": "La buseta es lenta.",
+      "en": "The small bus is slow."
     },
     {
       "es": "¡mira bien el letrero!",
@@ -51,6 +47,10 @@
     {
       "es": "mijo",
       "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "Él lo lleva.",
+      "en": "He'll take you."
     }
   ],
   "questions": [
@@ -130,7 +130,6 @@
   "hook": "Tomás has finally reached Calle 100, but the notary is on Carrera 7, still a long way off, and it is half past eleven. The old yellow taxi honking at him belongs to Hernando, and it has a name.",
   "requires": [
     "c:bien-y-tu",
-    "c:era",
     "c:oye-mira",
     "c:tienes",
     "c:voy-a",
@@ -153,8 +152,6 @@
     "p:demonstratives-basic",
     "p:ir-a-venir-de-place",
     "p:numbers-un-una",
-    "p:ordinal-floor",
-    "p:ordinals-primer-tercer",
     "p:otro-no-article",
     "p:personal-a",
     "p:possessives-basic",
@@ -167,6 +164,7 @@
     "p:ya-todavia-basic"
   ],
   "lexemes": [
+    "l:ahora",
     "l:amarillo",
     "l:andén",
     "l:aquí",
@@ -180,15 +178,11 @@
     "l:carrera",
     "l:carro",
     "l:centro",
-    "l:chaqueta",
     "l:cruzar",
     "l:derecha",
-    "l:después",
-    "l:día",
     "l:entrar",
     "l:estación",
     "l:estar",
-    "l:excelente",
     "l:gratis",
     "l:hijo",
     "l:ir",
@@ -198,7 +192,6 @@
     "l:lento",
     "l:letrero",
     "l:llamar",
-    "l:llave",
     "l:llevar",
     "l:mijo",
     "l:mirar",
@@ -221,7 +214,6 @@
     "l:taxi",
     "l:tener",
     "l:tinto",
-    "l:tocar",
     "l:tomar",
     "l:tranquilo",
     "l:vendedor",
