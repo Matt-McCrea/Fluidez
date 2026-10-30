@@ -90,8 +90,9 @@
     {
       "es": "¿Quedamos en ir juntos?",
       "options": [
-        "Shall we agree to go together?",
-        "Did we stay together?"
+        "Did we agree to go together?",
+        "Did we stay together?",
+        "We went together."
       ],
       "answer": 0
     },
@@ -147,7 +148,7 @@
       "why": "Put *no* in front of *quedamos*. Everything else stays."
     },
     {
-      "prompt": "Turn it into a question for a friend: *Quedamos en ir juntos.* (Shall we agree to go together?)",
+      "prompt": "Turn it into a question for a friend: *Quedamos en ir juntos.* (Did we agree to go together?)",
       "answer": "¿Quedamos en ir juntos?",
       "accept": [],
       "why": "The words stay the same. Only the question marks and your voice change."

@@ -3,7 +3,7 @@
   "unit": "u32",
   "title": "Before the trial",
   "spare": false,
-  "brief": "You're Tomás, visiting the lawyer Dra. Beatriz Uribe about the building. She is a professional you've just met, so use usted. Get her advice, promise what you will do and when, and don't sign anything yet.",
+  "brief": "You're Tomás, visiting the lawyer Dra. Beatriz Uribe about the building. You only met her this week, so use usted. Get her advice, promise what you will do and when, and don't sign anything yet.",
   "turns": [
     {
       "id": "t1",
@@ -67,8 +67,8 @@
     },
     {
       "id": "t4",
-      "npc": "Una cosa más. Altamira ofrece comprar su parte del edificio. Ahora quieren una respuesta pronto.",
-      "npcEn": "One more thing. Altamira is offering to buy your share of the building. Now they want an answer soon.",
+      "npc": "Una cosa más. Altamira ofrece comprar su parte del edificio, y quiere una respuesta pronto.",
+      "npcEn": "One more thing. Altamira is offering to buy your share of the building, and it wants an answer soon.",
       "intent": "Say you will not sell until the trial is over.",
       "accept": [
         "No voy a vender hasta que termine el juicio.",
@@ -142,7 +142,6 @@
     "g:verb-infinitive",
     "g:yo-irregular",
     "l:aconsejar",
-    "l:ahora",
     "l:antes",
     "l:ayuda",
     "l:bien",

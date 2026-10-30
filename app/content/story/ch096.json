@@ -2,7 +2,7 @@
   "id": "ch096",
   "unit": "u32",
   "title": "Pagos en tintos",
-  "text": "El plan de Vale tenía once páginas, tres colores y una foto del horno.\nVale: El presupuesto. Cuando el edificio sea nuestro, no pagamos arriendo. Pero los gastos siguen: leche, harina, luz y los impuestos.\nTomás: Me temo que hay un problema. Con este presupuesto y estos impuestos, el café tiene pérdidas seis meses al año.\nVale: Y ganancias en diciembre.\nTomás: Una ganancia en diciembre no paga seis meses de pérdidas.\nVale: Entonces te propongo que cambiemos de proveedor de leche. Cobra demasiado.\nHernando: Ese proveedor es mi primo.\nVale: Con razón.\nTomás: Y el horno tiene cuarenta años.\nVale: ¿Con qué plata? Ya tenemos demasiados gastos.\nTomás: Por eso necesitamos una inversión. Podríamos sacar un préstamo.\nVale: ¿Otro préstamo? Rosa pagó la deuda de Joaquín durante diez años. En esta familia, las deudas duran más que los hornos.\nTomás: Sin crédito no hay horno.\nHernando no dijo nada durante un minuto. Era un récord. Puso un sobre encima del plan.\nHernando: Treinta años de taxi. Quiero invertir en esta esquina.\nVale: Hernando, no. Usted no es rico.\nHernando: Pobre es la gente sin amigos, mija. Yo quiero emprender.\nTomás: ¿Emprender? ¿A los setenta y un años?\nHernando: Rosa abrió su negocio a los veinte, con un hermano que no ayudaba. Yo puedo emprender a los setenta y uno, con dos socios que sí.\nSimón: ¡Bueno, si insistes!\nVale: Ese loro no sabe callar. Y usted, Hernando, tendría que pensarlo bien. Deberíamos hablar con la doctora Uribe. Un préstamo entre amigos también es una deuda.\nHernando: Entonces no es un préstamo. Es mi inversión, y quiero mi parte de las ganancias en tintos.\nTomás: Todo este plan funciona si encontramos a Joaquín. Si sus herederos quieren vender, nadie va a invertir en un café sin edificio.\nVale: Me temo que sí. Altamira tiene crédito en todos los bancos.\nHernando: Entonces hay que callar al loro y empezar a buscar.\nTomás: Esta noche hago una lista. Todo lo que hay que hacer antes del fin del contrato.\nVale: Tú y tus listas. Pobre Joaquín. No sabe lo que viene.",
+  "text": "El plan de Vale tenía once páginas y una foto del horno.\nVale: El presupuesto. Cuando el edificio sea nuestro, no pagamos arriendo. Pero los gastos siguen: leche, harina, luz y los impuestos.\nTomás: Me temo que hay un problema. Con este presupuesto y estos impuestos, el café tiene pérdidas seis meses al año.\nVale: Y ganancias en diciembre.\nTomás: Una ganancia en diciembre no paga seis meses de pérdidas.\nVale: Entonces te propongo que cambiemos de proveedor de leche. Cobra demasiado.\nHernando: Ese proveedor es mi primo.\nVale: Con razón.\nTomás: Y el horno tiene cuarenta años.\nVale: ¿Un horno nuevo? ¿Con qué plata? Ya tenemos demasiados gastos.\nTomás: Por eso necesitamos una inversión. Podríamos sacar un préstamo.\nVale: ¿Otro préstamo? Rosa pagó la deuda de Joaquín durante diez años. En esta familia, las deudas duran más que los hornos.\nTomás: Sin crédito no hay horno.\nHernando no dijo nada durante un minuto. Era un récord. Puso un sobre encima del plan.\nHernando: Treinta años de taxi. Quiero invertir en esta esquina.\nVale: Hernando, usted no es rico.\nHernando: Pobre es la gente sin amigos, mija. Yo quiero emprender.\nTomás: ¿Emprender? ¿A los setenta y un años?\nHernando: Rosa abrió su negocio a los veinte, con un hermano que no ayudaba. Yo puedo emprender a los setenta y uno, con dos socios que sí.\nSimón: ¡Bueno, si insistes!\nVale: Ese loro no sabe callar. Y usted, Hernando, tendría que pensarlo bien. Deberíamos hablar con la doctora Uribe. Un préstamo entre amigos también es una deuda.\nHernando: Entonces no es un préstamo. Es mi inversión, y quiero mi parte de las ganancias en tintos.\nTomás: Todo este plan funciona si encontramos a Joaquín. Si sus herederos quieren vender, nadie va a invertir en un café sin edificio.\nVale: Me temo que no. Altamira tiene crédito en todos los bancos.\nHernando: Entonces hay que callar al loro y empezar a buscar.\nTomás: Esta noche hago una lista. Todo lo que hay que hacer antes del fin del contrato.\nVale: Tú y tus listas. Pobre Joaquín. No sabe lo que viene.",
   "gloss": [
     {
       "es": "loro",
@@ -234,7 +234,6 @@
     "l:callar",
     "l:cambiar",
     "l:cobrar",
-    "l:color",
     "l:contrato",
     "l:crédito",
     "l:deber",
@@ -277,6 +276,7 @@
     "l:necesitar",
     "l:negocio",
     "l:noche",
+    "l:nuevo",
     "l:pagar",
     "l:parte",
     "l:pensar",

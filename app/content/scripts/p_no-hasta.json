@@ -31,7 +31,7 @@
       "en": "They are open until ten."
     }
   ],
-  "rule": "*Hasta* means until, but the *no* decides the meaning.\n\n*No abren hasta las diez*: they open at ten, not before.\n*Abren hasta las diez*: they are open until ten, then they close.\n\nWith a verb for a single moment (arrive, open, leave), keep the *no* when you mean not until.\n\n*Desde* works the same way for since: *No he hablado con Vale desde ayer.*\n\nFor a whole clause, use *hasta que* and the other vowel, because it hasn't happened yet: *No me voy hasta que llegues.*",
+  "rule": "*Hasta* means until, but the *no* decides the meaning.\n\n*No abren hasta las diez*: they open at ten, not before.\n*Abren hasta las diez*: they are open until ten, then they close.\n\nWith a verb for a single moment (arrive, open, leave), keep the *no* when you mean not until.\n\n*Desde* (since) pairs with *no* for a gap that is still going on: *No he hablado con Vale desde ayer.*\n\nFor a whole clause, use *hasta que* and the other vowel, because it hasn't happened yet: *No me voy hasta que llegues.*",
   "smallPrint": "Teachers call this negation with *hasta*. In parts of Mexico, *llega hasta las seis* alone can mean not until six. In Colombia, keep the *no*.",
   "readAndPick": [
     {
@@ -129,7 +129,7 @@
       "prompt": "Say: I haven't spoken to Vale since yesterday.",
       "answer": "No he hablado con Vale desde ayer.",
       "accept": [],
-      "why": "*Desde* with a *no* works like *hasta*: since a point in time."
+      "why": "*Desde* marks where the gap starts: no contact since yesterday."
     },
     {
       "prompt": "Turn it into not until: *Hernando viene mañana.* (Hernando doesn't come until tomorrow.)",

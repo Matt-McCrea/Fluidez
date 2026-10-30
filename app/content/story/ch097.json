@@ -2,7 +2,7 @@
   "id": "ch097",
   "unit": "u32",
   "title": "El número siete",
-  "text": "Cuando Jhon Fredy abrió el café, el menú de la pared ya no tenía precios.\n«Antes de diciembre. Uno: buscar a Joaquín Herrera, o a su familia, en Santa Marta. Dos: Hernando llama a los taxistas de la costa. Tres: Mariana, grupos de Facebook. Cuatro: ir a la comisaría con la firma falsa. Cinco: hablar con el banco del horno. Seis: no hablar con Altamira».\nAl final había una línea más, casi invisible: «Siete: decirle a Vale que».\nA las siete entró un adolescente con el celular en la mano. Leyó la pared.\nAdolescente: Me regala un número cuatro, por favor.\nJhon Fredy: El cuatro es la comisaría, parce.\nEl adolescente se fue sin tinto.\nA las ocho llegaron todos.\nHernando: Pienso llamar hoy mismo a todos mis colegas de la costa.\nMariana: Y yo pienso escribir en los grupos de Santa Marta. Sin nombres, sin Altamira.\nTomás: Cuando terminemos la lista, hablamos con la doctora Uribe otra vez. Quedamos en vernos aquí el viernes.\nVale: ¿Y el número siete?\nTomás se puso rojo.\nTomás: Ese no es para hoy.\nVale: ¿Cuándo, entonces?\nTomás: Cuando encontremos a Joaquín.\nVale no contestó, pero su mirada dijo mucho.\nHernando: Ustedes dos me tienen cansado.\nA las once, un camión blanco paró delante del café. Dos señores con un metro bajaron y midieron la puerta, la ventana y la esquina.\nHernando: Conozco ese camión. Es de Altamira.\nTomás: Perdón, ¿qué miden?\nSeñor: El lobby, señor. Cuando ustedes se vayan, aquí va el piano.\nTomás no dijo nada. Le echó una mirada larga al camión, y volvió a entrar.\nMariana: Mi amigo del canal de televisión puede venir con una cámara.\nTomás: Todavía no. La doctora Uribe quedó en llamarnos el lunes.\nTomás tomó la tiza y escribió un número más, en grande: «Ocho: rápido».\nSimón: ¡Apúrate! ¡Apúrate!\nHernando: Por primera vez, el loro tiene razón.\nEsa noche, Mariana publicó su mensaje en doce grupos de Santa Marta.\n«¿Alguien conoció a Joaquín Herrera, un bogotano que llegó a Santa Marta en 1978? Es un asunto de familia».",
+  "text": "Cuando Jhon Fredy abrió el café, el menú de la pared ya no tenía precios.\n«Antes de diciembre. Uno: buscar a Joaquín Herrera, o a su familia, en Santa Marta. Dos: Hernando llama a los taxistas de la costa. Tres: Mariana, grupos de Facebook. Cuatro: ir a la comisaría con la firma falsa. Cinco: hablar con el banco del horno. Seis: no hablar con Altamira».\nAl final había una línea más, casi invisible: «Siete: decirle a Vale que».\nA las siete entró un adolescente con el celular en la mano. Leyó la pared.\nAdolescente: Me regala un número cuatro, por favor.\nJhon Fredy: El cuatro es la comisaría, parce.\nEl adolescente se fue sin tinto.\nA las ocho llegaron todos.\nHernando: Pienso llamar hoy mismo a todos mis colegas de la costa.\nMariana: Y yo pienso escribir en los grupos de Santa Marta. Nada del edificio, nada de Altamira.\nTomás: Cuando terminemos la lista, hablamos con la doctora Uribe otra vez. Y nosotros quedamos en vernos aquí el viernes.\nVale: ¿Y el número siete?\nTomás se puso rojo.\nTomás: Ese no es para hoy.\nVale: ¿Cuándo, entonces?\nTomás: Cuando encontremos a Joaquín.\nVale no contestó, pero su mirada dijo mucho.\nHernando: Ustedes dos me tienen cansado.\nA las once, un camión blanco paró delante del café. Dos señores con un metro bajaron y midieron la puerta, la ventana y la esquina.\nHernando: Conozco ese camión. Es de Altamira.\nTomás: Perdón, ¿qué miden?\nSeñor: El lobby, señor. Cuando ustedes se vayan, aquí va el piano.\nTomás no dijo nada. Le echó una mirada larga al camión, y volvió a entrar.\nMariana: Mi amigo del canal de televisión puede venir con una cámara.\nTomás: Todavía no. La doctora Uribe quedó en llamarnos el lunes.\nTomás tomó la tiza y escribió un número más, en grande: «Ocho: rápido».\nSimón: ¡Apúrate! ¡Apúrate!\nHernando: Por primera vez, el loro tiene razón.\nEsa noche, Mariana publicó su mensaje en doce grupos de Santa Marta.\n«¿Alguien conoció a Joaquín Herrera, un bogotano que llegó a Santa Marta en 1978? Es un asunto de familia».",
   "gloss": [
     {
       "es": "loro",
@@ -45,8 +45,8 @@
       "en": "I'm planning to call all my old colleagues on the coast this very day."
     },
     {
-      "es": "Quedamos en vernos aquí el viernes.",
-      "en": "We agreed to meet here on Friday."
+      "es": "Y nosotros quedamos en vernos aquí el viernes.",
+      "en": "And we agreed to meet here on Friday."
     },
     {
       "es": "su mirada dijo mucho",
@@ -71,6 +71,10 @@
     {
       "es": "tiza",
       "en": "chalk"
+    },
+    {
+      "es": "Nada del edificio, nada de Altamira.",
+      "en": "Nothing about the building, nothing about Altamira."
     }
   ],
   "questions": [
@@ -250,6 +254,7 @@
     "l:diciembre",
     "l:doctor",
     "l:echar",
+    "l:edificio",
     "l:encontrar",
     "l:entrar",
     "l:escribir",
@@ -282,7 +287,6 @@
     "l:metro",
     "l:mirada",
     "l:noche",
-    "l:nombre",
     "l:número",
     "l:parar",
     "l:parce",

@@ -65,8 +65,8 @@
     },
     {
       "id": "t4",
-      "npc": "Tengo un problema. El proveedor no trae la harina hasta el lunes, y la prueba es mañana.",
-      "npcEn": "I have a problem. The supplier doesn't bring the flour until Monday, and the test is tomorrow.",
+      "npc": "Tengo un problema. El proveedor no trae el queso hasta el lunes, y la prueba es mañana.",
+      "npcEn": "I have a problem. The supplier doesn't bring the cheese until Monday, and the test is tomorrow.",
       "intent": "Suggest that she call another supplier today.",
       "accept": [
         "Te propongo que llames a otro proveedor hoy.",
@@ -85,20 +85,20 @@
     },
     {
       "id": "t5",
-      "npc": "Qué buena idea. ¿Y sigues cerrando a las seis?",
-      "npcEn": "Good idea. And do you still close at six?",
-      "intent": "Say yes, you still close at six.",
+      "npc": "Qué buena idea. ¿Y sigues haciendo las cuentas todas las noches?",
+      "npcEn": "Good idea. And are you still doing the accounts every night?",
+      "intent": "Say yes, you're still doing them every night.",
       "accept": [
-        "Sí, sigo cerrando a las seis.",
-        "Sí, seguimos cerrando a las seis por ahora.",
-        "Sí, sigo cerrando a las seis, pero no por mucho tiempo."
+        "Sí, sigo haciendo las cuentas todas las noches.",
+        "Sí, las sigo haciendo todas las noches.",
+        "Sí, sigo haciendo las cuentas, pero ya casi termino."
       ],
       "require": [
         {
           "type": "verbFormAny",
           "inf": "seguir",
           "tense": "presente",
-          "label": "use seguir + a gerund: sigo cerrando"
+          "label": "use seguir + a gerund: sigo haciendo"
         }
       ],
       "focus": "p:seguir-gerundio",
@@ -106,8 +106,8 @@
     },
     {
       "id": "t6",
-      "npc": "Qué bueno. Quédate a tomar un tinto, que lo pago yo.",
-      "npcEn": "Great. Stay and have a coffee, it's on me.",
+      "npc": "Qué bueno. Quédate a tomar un tinto conmigo, que yo lo preparo.",
+      "npcEn": "Great. Stay and have a coffee with me, I'll make it.",
       "intent": "Accept the coffee with a friendly 'if you insist'.",
       "accept": [
         "Bueno, si insistes.",
@@ -149,7 +149,7 @@
     "g:gerund-ways",
     "g:gustar-basic",
     "g:para-que",
-    "g:por-para-1",
+    "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:questions",
@@ -170,10 +170,10 @@
     "l:buscar",
     "l:caliente",
     "l:cambiar",
-    "l:cerrar",
     "l:chocolate",
     "l:claro",
     "l:cliente",
+    "l:cuenta",
     "l:cuál",
     "l:cuándo",
     "l:decir",
@@ -183,7 +183,6 @@
     "l:gustar",
     "l:habitual",
     "l:hacer",
-    "l:harina",
     "l:hoy",
     "l:idea",
     "l:insistir",
@@ -195,10 +194,11 @@
     "l:menú",
     "l:minuto",
     "l:necesitar",
-    "l:pagar",
+    "l:noche",
     "l:pan",
     "l:parecer",
     "l:plaza",
+    "l:preparar",
     "l:probar",
     "l:problema",
     "l:proponer",
@@ -214,7 +214,7 @@
     "l:sonar",
     "l:temporada",
     "l:tener",
-    "l:tiempo",
+    "l:terminar",
     "l:tinto",
     "l:tomar",
     "l:traer",
@@ -230,12 +230,11 @@
     "p:para-inf",
     "p:personal-a",
     "p:prep-questions-basic",
-    "p:quantifiers-basic",
     "p:question-word-order",
     "p:seguir-gerundio",
     "p:te-propongo-que",
-    "p:telling-time",
     "p:time-sequence-basic",
-    "p:todos-los-dias"
+    "p:todos-los-dias",
+    "p:veces-al"
   ]
 }

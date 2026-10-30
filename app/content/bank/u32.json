@@ -634,23 +634,19 @@
   },
   {
     "id": "u32-0027",
-    "es": "Mi mamá nunca me deja que cierre tarde el café.",
-    "en": "My mom never lets me close the café late.",
+    "es": "Vale no deja que nadie toque su horno.",
+    "en": "Vale doesn't let anyone touch her oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:negation-words",
       "g:present-ar",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:café",
-      "l:cerrar",
       "l:dejar",
-      "l:mamá",
-      "l:tarde",
-      "p:frequency-scale",
-      "p:me-te-nos-objects",
+      "l:horno",
+      "l:tocar",
       "p:possessives-basic"
     ],
     "targets": [
@@ -689,7 +685,7 @@
   {
     "id": "u32-0029",
     "es": "Insisto en que me dejen pagar la cuenta.",
-    "en": "I insist that you let me pay the bill.",
+    "en": "I insist that you all let me pay the bill.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1165,7 +1161,7 @@
   {
     "id": "u32-0048",
     "es": "Lo siento, pero no puedo. Es que tengo turno.",
-    "en": "Sorry, I can't. I'm on shift.",
+    "en": "Sorry, but I can't. I'm on shift.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1287,7 +1283,7 @@
   {
     "id": "u32-0052",
     "es": "Tengo que pedirte un favor: ¿podrías cuidar a Simón este fin de semana?",
-    "en": "I need to ask you a favour: could you look after Simón this weekend?",
+    "en": "I need to ask you a favour: could you look after Simón this weekend? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1322,7 +1318,7 @@
   {
     "id": "u32-0053",
     "es": "Tengo que pedirte un favor: ¿me prestas tu carro mañana?",
-    "en": "I need to ask you a favour: could you lend me your car tomorrow?",
+    "en": "I need to ask you a favour: can you lend me your car tomorrow? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1351,7 +1347,7 @@
   {
     "id": "u32-0054",
     "es": "Tengo que pedirte un favor: ¿puedes acompañarme a la comisaría?",
-    "en": "I need to ask you a favour: can you come with me to the police station?",
+    "en": "I need to ask you a favour: can you come with me to the police station? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1385,7 +1381,7 @@
   {
     "id": "u32-0055",
     "es": "Tengo que pedirte un favor: ¿me llevas al banco el lunes?",
-    "en": "I need to ask you a favour: can you take me to the bank on Monday?",
+    "en": "I need to ask you a favour: can you take me to the bank on Monday? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1416,7 +1412,7 @@
   {
     "id": "u32-0056",
     "es": "Tengo que pedirte un favor: necesito que me firmes este papel.",
-    "en": "I need to ask you a favour: I need you to sign this paper for me.",
+    "en": "I need to ask you a favour: I need you to sign this paper for me. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1447,7 +1443,7 @@
   {
     "id": "u32-0057",
     "es": "¿Me echas una mano con las cajas?",
-    "en": "Can you give me a hand with the boxes?",
+    "en": "Can you give me a hand with the boxes? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1468,7 +1464,7 @@
   {
     "id": "u32-0058",
     "es": "¿Me echas una mano con la cuenta de la luz?",
-    "en": "Can you give me a hand with the electricity bill?",
+    "en": "Can you give me a hand with the electricity bill? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1491,7 +1487,7 @@
   {
     "id": "u32-0059",
     "es": "¿Me echas una mano con el plan de negocios?",
-    "en": "Can you give me a hand with the business plan?",
+    "en": "Can you give me a hand with the business plan? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1512,15 +1508,17 @@
   },
   {
     "id": "u32-0060",
-    "es": "¿Me echas una mano a cerrar?",
-    "en": "Can you give me a hand closing up?",
+    "es": "¿Me echas una mano para cerrar?",
+    "en": "Can you give me a hand closing up? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-echas-una-mano",
       "l:cerrar",
       "l:echar",
-      "l:mano"
+      "l:mano",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "c:me-echas-una-mano"
@@ -1600,7 +1598,7 @@
   {
     "id": "u32-0064",
     "es": "¿Nos echas una mano con la mesa?",
-    "en": "Can you give us a hand with the table?",
+    "en": "Can you give us a hand with the table? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2292,7 +2290,7 @@
   },
   {
     "id": "u32-0092",
-    "es": "Cuando dejes de llover, salimos.",
+    "es": "Cuando deje de llover, salimos.",
     "en": "When it stops raining, we'll go out.",
     "accept": [],
     "acceptEn": [],
@@ -2647,7 +2645,7 @@
   {
     "id": "u32-0106",
     "es": "Después de que se vaya el último cliente, apagamos las luces.",
-    "en": "After the last customer leaves, we turn off the lights.",
+    "en": "After the last customer leaves, we'll turn off the lights.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3028,7 +3026,7 @@
   {
     "id": "u32-0121",
     "es": "Llegamos antes de que empiece la lluvia.",
-    "en": "We got there before the rain starts.",
+    "en": "We'll get there before the rain starts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4017,19 +4015,20 @@
   },
   {
     "id": "u32-0162",
-    "es": "Trabajamos para que el café siga abierto.",
-    "en": "We work so that the café stays open.",
+    "es": "Abrimos también los domingos para que las cuentas salgan.",
+    "en": "We also open on Sundays so that the numbers work out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:siga",
       "g:gender-articles",
       "g:para-que",
-      "g:present-ar",
+      "g:present-er-ir",
+      "g:subj-wanting",
       "l:abrir",
-      "l:café",
-      "l:seguir",
-      "l:trabajar"
+      "l:cuenta",
+      "l:domingo",
+      "l:salir",
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "statement",
@@ -4446,7 +4445,7 @@
   {
     "id": "u32-0180",
     "es": "Entra sin que nadie lo vea.",
-    "en": "She comes in without anyone seeing her.",
+    "en": "He comes in without anyone seeing him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4569,16 +4568,19 @@
   },
   {
     "id": "u32-0185",
-    "es": "No empezamos sin que llegue Beatriz.",
-    "en": "We don't start without Beatriz arriving.",
+    "es": "No empezamos sin que Beatriz esté aquí.",
+    "en": "We won't start without Beatriz being here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:present-ar",
       "g:subj-purpose-full",
       "g:subj-wanting",
+      "l:aquí",
       "l:empezar",
-      "l:llegar"
+      "l:estar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -4872,8 +4874,8 @@
   },
   {
     "id": "u32-0197",
-    "es": "Vamos a cambiar la puerta para que no entre el frío.",
-    "en": "We're going to change the door so that the cold doesn't come in.",
+    "es": "Vamos a arreglar la ventana para que el frío se quede afuera.",
+    "en": "We're going to fix the window so that the cold stays outside.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4881,12 +4883,14 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "g:para-que",
+      "g:reflexive-routine",
       "g:subj-wanting",
-      "l:cambiar",
-      "l:entrar",
+      "l:afuera",
+      "l:arreglar",
       "l:frío",
       "l:ir",
-      "l:puerta"
+      "l:quedarse",
+      "l:ventana"
     ],
     "targets": [],
     "kind": "statement",
@@ -5093,7 +5097,7 @@
   {
     "id": "u32-0205",
     "es": "Te lo digo para que lo sepas.",
-    "en": "I'm telling you so that you know.",
+    "en": "I'm telling you so that you know. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5506,19 +5510,22 @@
   },
   {
     "id": "u32-0222",
-    "es": "Vale dijo que no tenía tiempo.",
-    "en": "Vale said she didn't have time.",
+    "es": "Vale me dijo que no podía almorzar con nosotros.",
+    "en": "Vale told me she couldn't have lunch with us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:imperfect-habitual",
+      "g:prep-pronouns",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:reported-past-basic",
       "g:that-clauses",
+      "g:verb-infinitive",
+      "l:almorzar",
       "l:decir",
-      "l:tener",
-      "l:tiempo"
+      "l:poder",
+      "p:me-te-nos-objects"
     ],
     "targets": [],
     "kind": "statement",
@@ -5553,8 +5560,8 @@
   },
   {
     "id": "u32-0224",
-    "es": "Hernando contó que había sido taxista por cuarenta años.",
-    "en": "Hernando said he had been a taxi driver for forty years.",
+    "es": "Hernando contó que había sido taxista por treinta años.",
+    "en": "Hernando said he had been a taxi driver for thirty years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6128,8 +6135,8 @@
   },
   {
     "id": "u32-0248",
-    "es": "En la carta decía que la llave estaba en el loro.",
-    "en": "The letter said that the key was in the parrot.",
+    "es": "En la carta decía que la llave estaba detrás de la foto.",
+    "en": "The letter said that the key was behind the photo.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6140,9 +6147,12 @@
       "g:that-clauses",
       "l:carta",
       "l:decir",
+      "l:detrás",
       "l:estar",
+      "l:foto",
       "l:llave",
-      "l:loro"
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -6644,11 +6654,13 @@
   },
   {
     "id": "u32-0269",
-    "es": "Confío en que mañana haga buen tiempo.",
-    "en": "I trust that the weather will be good tomorrow.",
+    "es": "Mañana hay mercado, y todos confían en que haga buen tiempo.",
+    "en": "There's a market tomorrow, and everyone is confident the weather will be good.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "g:hay-vs-esta",
       "g:present-ar",
       "g:subj-influence",
       "g:subj-wanting",
@@ -6657,6 +6669,7 @@
       "l:confiar",
       "l:hacer",
       "l:mañana",
+      "l:mercado",
       "l:tiempo",
       "p:confiar-en-que",
       "p:hace-frio"
@@ -6698,7 +6711,7 @@
   {
     "id": "u32-0271",
     "es": "¿Confías en que Joaquín esté vivo?",
-    "en": "Do you trust that Joaquín is alive? (to a friend)",
+    "en": "Are you confident Joaquín is alive? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6824,15 +6837,15 @@
   },
   {
     "id": "u32-0276",
-    "es": "¿Confías en Beatriz?\nSí, confío en que sabe lo que hace.",
-    "en": "Do you trust Beatriz?\nYes, I trust that she knows what she's doing.",
+    "es": "¿Confías en Beatriz?\nSí, confío en ella. Sabe lo que hace.",
+    "en": "Do you trust Beatriz? (to a friend)\nYes, I trust her. She knows what she's doing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:prep-pronouns",
       "g:present-ar",
       "g:present-er-ir",
       "g:relatives-donde-lo-que",
-      "g:that-clauses",
       "l:confiar",
       "l:hacer",
       "l:saber",
@@ -7219,7 +7232,7 @@
   },
   {
     "id": "u32-0292",
-    "es": "Deberíamos invertir en un mejor horno.",
+    "es": "Deberíamos invertir en un horno mejor.",
     "en": "We should invest in a better oven.",
     "accept": [],
     "acceptEn": [],
@@ -8048,17 +8061,21 @@
   },
   {
     "id": "u32-0327",
-    "es": "Yo en tu lugar, hablaría con la abogada.",
-    "en": "In your place, I'd talk to the lawyer.",
+    "es": "Yo en tu lugar, le pediría ayuda a la abogada.",
+    "en": "If I were you, I'd ask the lawyer for help.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:yo-que-tu",
       "g:conditional",
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "l:abogado",
-      "l:hablar",
-      "l:lugar"
+      "l:ayuda",
+      "l:lugar",
+      "l:pedir",
+      "p:preguntar-pedir"
     ],
     "targets": [],
     "kind": "statement",
@@ -8069,7 +8086,7 @@
   {
     "id": "u32-0328",
     "es": "Yo en tu lugar, iría al médico.",
-    "en": "In your place, I'd go to the doctor.",
+    "en": "If I were you, I'd go to the doctor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8090,7 +8107,7 @@
   {
     "id": "u32-0329",
     "es": "Yo en tu lugar, no firmaría hoy.",
-    "en": "In your place, I wouldn't sign today.",
+    "en": "If I were you, I wouldn't sign today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8109,7 +8126,7 @@
   {
     "id": "u32-0330",
     "es": "Yo en tu lugar, esperaría un poco.",
-    "en": "In your place, I'd wait a little.",
+    "en": "If I were you, I'd wait a little.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8130,7 +8147,7 @@
   {
     "id": "u32-0331",
     "es": "Yo en tu lugar, le diría la verdad a Vale.",
-    "en": "In your place, I'd tell Vale the truth.",
+    "en": "If I were you, I'd tell Vale the truth.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8269,19 +8286,19 @@
   },
   {
     "id": "u32-0338",
-    "es": "¿Qué harías tú en mi lugar?\nHablaría con ella.",
-    "en": "What would you do in my place?\nI'd talk to her.",
+    "es": "¿Y tú qué harías?\nYo hablaría con ella primero.",
+    "en": "And what would you do?\nI'd talk to her first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "c:con-el-ella",
       "g:conditional",
       "g:questions",
       "l:hablar",
       "l:hacer",
-      "l:lugar",
       "l:qué",
-      "p:possessives-basic"
+      "p:time-sequence-basic"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -8848,8 +8865,8 @@
   },
   {
     "id": "u32-0363",
-    "es": "Pienso abrir el café a las siete mañana.",
-    "en": "I plan to open the café at seven tomorrow.",
+    "es": "Mañana pienso abrir el café a las siete.",
+    "en": "Tomorrow I plan to open the café at seven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10546,7 +10563,7 @@
   {
     "id": "u32-0434",
     "es": "¿Quedamos en vernos a las seis?",
-    "en": "Shall we agree to meet at six?",
+    "en": "Did we agree to meet at six?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10588,7 +10605,7 @@
   {
     "id": "u32-0436",
     "es": "Quedamos en que me llamas tú, ¿no?",
-    "en": "We agreed that you'd call me, right?",
+    "en": "We agreed that you'd call me, right? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11002,7 +11019,7 @@
   {
     "id": "u32-0454",
     "es": "¿Siguen abiertos?",
-    "en": "Are you still open?",
+    "en": "Are you still open? (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11246,7 +11263,7 @@
   {
     "id": "u32-0465",
     "es": "Continúa lloviendo en la costa.",
-    "en": "It continues to rain on the coast.",
+    "en": "It's still raining on the coast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11560,15 +11577,15 @@
   },
   {
     "id": "u32-0479",
-    "es": "En los noventa, Rosa abrió el café.",
-    "en": "In the nineties, Rosa opened the café.",
+    "es": "En los noventa, Rosa viajó sola a Medellín.",
+    "en": "In the nineties, Rosa travelled to Medellín alone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:preterite-er-ir",
-      "l:abrir",
-      "l:café",
+      "g:preterite-ar",
+      "l:viajar",
       "p:decadas-siglos"
     ],
     "targets": [
@@ -11697,8 +11714,8 @@
   },
   {
     "id": "u32-0485",
-    "es": "A principios del siglo XX, este barrio era muy elegante.",
-    "en": "At the beginning of the twentieth century, this neighbourhood was very elegant.",
+    "es": "En el siglo XIX, este barrio era muy elegante.",
+    "en": "In the nineteenth century, this neighbourhood was very elegant.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11708,7 +11725,6 @@
       "g:ser-identity",
       "l:barrio",
       "l:elegante",
-      "l:principio",
       "l:ser",
       "l:siglo",
       "p:decadas-siglos",
@@ -11725,8 +11741,8 @@
   },
   {
     "id": "u32-0486",
-    "es": "La casa de Rosa es del siglo XIX.",
-    "en": "Rosa's house is from the nineteenth century.",
+    "es": "La casa de Hernando es del siglo XIX.",
+    "en": "Hernando's house is from the nineteenth century.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11975,8 +11991,8 @@
   },
   {
     "id": "u32-0497",
-    "es": "La carta de Joaquín es de finales de los cincuenta.",
-    "en": "Joaquín's letter is from the late fifties.",
+    "es": "La carta de Rosa es de finales de los setenta.",
+    "en": "Rosa's letter is from the late seventies.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12018,15 +12034,16 @@
   },
   {
     "id": "u32-0499",
-    "es": "Joaquín desapareció en los años sesenta.",
-    "en": "Joaquín disappeared in the sixties.",
+    "es": "Joaquín se fue de Bogotá a finales de los setenta.",
+    "en": "Joaquín left Bogotá in the late seventies.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
-      "l:año",
-      "l:desaparecer",
+      "g:preterite-ser-ir-hacer",
+      "l:final",
+      "l:irse",
+      "p:a-eso-de",
       "p:decadas-siglos"
     ],
     "targets": [
@@ -13253,18 +13270,16 @@
   },
   {
     "id": "u32-0549",
-    "es": "Hernando cumple setenta y dos años el viernes.",
-    "en": "Hernando turns seventy-two on Friday.",
+    "es": "En marzo, Hernando cumple setenta y dos años.",
+    "en": "In March, Hernando turns seventy-two.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-er-ir",
       "l:año",
       "l:cumplir",
-      "l:viernes",
-      "p:cumplir-anos",
-      "p:days-el-lunes"
+      "l:marzo",
+      "p:cumplir-anos"
     ],
     "targets": [
       "p:cumplir-anos"
@@ -13276,8 +13291,8 @@
   },
   {
     "id": "u32-0550",
-    "es": "Vale cumple veintiocho años en abril.",
-    "en": "Vale turns twenty-eight in April.",
+    "es": "Vale cumple veintinueve años en abril.",
+    "en": "Vale turns twenty-nine in April.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13436,8 +13451,8 @@
   },
   {
     "id": "u32-0557",
-    "es": "El café cumple cincuenta años este año.",
-    "en": "The café turns fifty this year.",
+    "es": "El café cumple sesenta años este año.",
+    "en": "The café turns sixty this year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13573,8 +13588,8 @@
   },
   {
     "id": "u32-0563",
-    "es": "Ayer Hernando cumplió setenta y un años.",
-    "en": "Yesterday Hernando turned seventy-one.",
+    "es": "Ayer mi vecino cumplió setenta y un años.",
+    "en": "Yesterday my neighbour turned seventy-one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13584,8 +13599,10 @@
       "l:ayer",
       "l:año",
       "l:cumplir",
+      "l:vecino",
       "p:cumplir-anos",
-      "p:numbers-un-una"
+      "p:numbers-un-una",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:cumplir-anos"
@@ -13722,7 +13739,7 @@
   {
     "id": "u32-0569",
     "es": "¿Cuántos años cumple el café?",
-    "en": "How many years is the café turning?",
+    "en": "How old is the café turning?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13885,19 +13902,22 @@
   },
   {
     "id": "u32-0576",
-    "es": "Mi abuela cumple cien años en mayo.",
-    "en": "My grandmother turns one hundred in May.",
+    "es": "La señora del tercer piso cumple cien años en mayo.",
+    "en": "The lady on the third floor turns a hundred in May.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-er-ir",
-      "l:abuela",
       "l:año",
       "l:cumplir",
       "l:mayo",
+      "l:piso",
+      "l:señora",
       "p:cumplir-anos",
       "p:numbers-un-una",
-      "p:possessives-basic"
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "p:cumplir-anos"
@@ -14255,7 +14275,7 @@
   {
     "id": "u32-0592",
     "es": "¿Qué te parece si esperamos?",
-    "en": "What do you think if we wait? (to a friend)",
+    "en": "What do you say we wait? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14785,7 +14805,7 @@
   {
     "id": "u32-0614",
     "es": "Te cuento un secreto, pero no lo repitas.",
-    "en": "I'll tell you a secret, but don't repeat it.",
+    "en": "I'll tell you a secret, but don't repeat it. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14916,19 +14936,17 @@
   },
   {
     "id": "u32-0620",
-    "es": "Cuento los días para que termine el mes.",
-    "en": "I'm counting the days until the month ends.",
+    "es": "Cuento los días hasta el fin de mes.",
+    "en": "I'm counting the days until the end of the month.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:para-que",
       "g:stem-boot",
-      "g:subj-wanting",
       "l:contar",
       "l:día",
-      "l:mes",
-      "l:terminar"
+      "l:fin",
+      "l:mes"
     ],
     "targets": [],
     "kind": "statement",
@@ -15048,19 +15066,22 @@
   },
   {
     "id": "u32-0626",
-    "es": "¿Quieres que te cuente lo que pasó?",
-    "en": "Do you want me to tell you what happened? (to a friend)",
+    "es": "¿Quieres que te cuente cómo terminó la reunión?",
+    "en": "Do you want me to tell you how the meeting ended? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:preterite-ar",
-      "g:relatives-donde-lo-que",
+      "g:questions",
       "g:stem-boot",
       "g:subj-wanting",
       "g:that-clauses",
       "l:contar",
-      "l:pasar",
+      "l:cómo",
       "l:querer",
+      "l:reunión",
+      "l:terminar",
       "p:me-te-nos-objects"
     ],
     "targets": [],
@@ -15340,8 +15361,8 @@
   },
   {
     "id": "u32-0637",
-    "es": "Te propongo que compremos el pan a otro proveedor.",
-    "en": "I suggest we buy bread from another supplier. (to a friend)",
+    "es": "Te propongo que compremos la leche a otro proveedor.",
+    "en": "I suggest we buy milk from another supplier. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15351,7 +15372,7 @@
       "g:that-clauses",
       "g:yo-irregular",
       "l:comprar",
-      "l:pan",
+      "l:leche",
       "l:proponer",
       "l:proveedor",
       "p:me-te-nos-objects",
@@ -15849,8 +15870,8 @@
   },
   {
     "id": "u32-0656",
-    "es": "Beatriz propone que busquemos al hermano de Joaquín.",
-    "en": "Beatriz suggests that we look for Joaquín's brother.",
+    "es": "Beatriz propone que busquemos a los hijos de Joaquín.",
+    "en": "Beatriz suggests that we look for Joaquín's children.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15860,8 +15881,9 @@
       "g:subj-wanting",
       "g:that-clauses",
       "l:buscar",
-      "l:hermano",
+      "l:hijos",
       "l:proponer",
+      "p:masculine-plural-mixed",
       "p:personal-a",
       "p:te-propongo-que"
     ],
@@ -16308,8 +16330,8 @@
   },
   {
     "id": "u32-0674",
-    "es": "Te sugiero que pidas una cita con el juez.",
-    "en": "I suggest that you ask for an appointment with the judge. (to a friend)",
+    "es": "Te sugiero que pidas una cita con la abogada.",
+    "en": "I suggest that you ask for an appointment with the lawyer. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16318,8 +16340,8 @@
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:abogado",
       "l:cita",
-      "l:juez",
       "l:pedir",
       "l:sugerir",
       "p:me-te-nos-objects"
@@ -17378,21 +17400,21 @@
   },
   {
     "id": "u32-0716",
-    "es": "Pide lo que quieras, invito yo.\nBueno, si insistes.",
-    "en": "Order whatever you want, it's on me.\nWell, if you insist.",
+    "es": "Esta vez pago yo, no discutas.\nBueno, si insistes.",
+    "en": "This time I'm paying, don't argue. (to a friend)\nWell, if you insist.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bueno-si-insistes",
       "c:entonces-bueno",
-      "c:me-da-igual",
+      "g:negative-commands",
       "g:present-ar",
-      "g:stem-e-i",
       "l:bueno",
+      "l:discutir",
       "l:insistir",
-      "l:invitar",
-      "l:pedir",
-      "l:querer"
+      "l:pagar",
+      "l:vez",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "c:bueno-si-insistes"
@@ -17404,8 +17426,8 @@
   },
   {
     "id": "u32-0717",
-    "es": "¿Vienes a la fiesta? Hoy no puedo. Otra vez será.",
-    "en": "Are you coming to the party? I can't today. Another time.",
+    "es": "¿Vienes a la fiesta?\nHoy no puedo. Otra vez será.",
+    "en": "Are you coming to the party? (to a friend)\nI can't today. Another time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17457,8 +17479,8 @@
   },
   {
     "id": "u32-0719",
-    "es": "¿Salimos a cenar? Hoy no. Otra vez será.",
-    "en": "Shall we go out for dinner? Not today. Another time.",
+    "es": "¿Salimos a cenar?\nHoy no. Otra vez será.",
+    "en": "Shall we go out for dinner?\nNot today. Another time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18387,19 +18409,18 @@
   },
   {
     "id": "u32-0758",
-    "es": "No sé nada hasta que llame Mariana.",
-    "en": "I don't know anything until Mariana calls.",
+    "es": "No duermo tranquilo hasta que llame Mariana.",
+    "en": "I won't sleep easy until Mariana calls.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-hay-nada",
-      "c:no-se",
-      "g:negation-words",
+      "c:tranquilo",
+      "g:stem-boot",
       "g:subj-cuando-future",
       "g:subj-wanting",
-      "g:yo-irregular",
+      "l:dormir",
       "l:llamar",
-      "l:saber",
+      "l:tranquilo",
       "p:no-hasta"
     ],
     "targets": [
@@ -18667,18 +18688,19 @@
   },
   {
     "id": "u32-0770",
-    "es": "No vi a Joaquín hasta que cumplí veinte años.",
-    "en": "I didn't see Joaquín until I turned twenty.",
+    "es": "No vi el mar hasta que cumplí veinte años.",
+    "en": "I didn't see the sea until I turned twenty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:preterite-er-ir",
       "l:año",
       "l:cumplir",
+      "l:mar",
       "l:ver",
       "p:cumplir-anos",
-      "p:no-hasta",
-      "p:personal-a"
+      "p:no-hasta"
     ],
     "targets": [
       "p:cumplir-anos",
@@ -18802,17 +18824,21 @@
   },
   {
     "id": "u32-0776",
-    "es": "¿Cuándo abren?\nNo abren hasta las diez.",
-    "en": "When do they open?\nThey don't open until ten.",
+    "es": "¿Ya podemos entrar?\nNo, no abren la puerta hasta las diez y media.",
+    "en": "Can we go in yet?\nNo, they don't open the door until half past ten.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "g:questions",
+      "g:verb-infinitive",
       "l:abrir",
-      "l:cuándo",
-      "p:no-hasta"
+      "l:entrar",
+      "l:poder",
+      "l:puerta",
+      "p:no-es-x-es-y",
+      "p:no-hasta",
+      "p:telling-time"
     ],
     "targets": [
       "p:no-hasta"
@@ -18846,14 +18872,14 @@
   },
   {
     "id": "u32-0778",
-    "es": "¿Puedo pasar?\nNo, espere hasta que le llamen.",
+    "es": "¿Puedo pasar?\nNo, espere hasta que lo llamen.",
     "en": "Can I come in?\nNo, wait until they call you.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:puedo",
       "g:commands-usted",
-      "g:indirect-objects",
+      "g:direct-objects",
       "g:stem-boot",
       "g:subj-cuando-future",
       "g:subj-wanting",
@@ -20046,7 +20072,7 @@
   {
     "id": "u32-0827",
     "es": "¿Debería firmar?\nYo en tu lugar, esperaría.",
-    "en": "Should I sign?\nIn your place, I'd wait.",
+    "en": "Should I sign?\nIf I were you, I'd wait.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20116,15 +20142,14 @@
   },
   {
     "id": "u32-0830",
-    "es": "Antes de que cierren el banco, tengo que pasar por mi dinero.",
-    "en": "Before they close the bank, I have to go get my money.",
+    "es": "Tengo que sacar plata antes de que cierren el banco.",
+    "en": "I have to take out money before they close the bank.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
       "c:tengo-que",
       "g:gender-articles",
-      "g:por-para-1",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "g:verb-infinitive",
@@ -20132,10 +20157,9 @@
       "l:antes",
       "l:banco",
       "l:cerrar",
-      "l:dinero",
-      "l:pasar",
-      "l:tener",
-      "p:possessives-basic"
+      "l:plata",
+      "l:sacar",
+      "l:tener"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -20602,7 +20626,7 @@
   {
     "id": "u32-0848",
     "es": "Llegamos antes de que empiece el partido.",
-    "en": "We got there before the match starts.",
+    "en": "We'll get there before the match starts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20625,19 +20649,20 @@
   },
   {
     "id": "u32-0849",
-    "es": "Llámame antes de que salgas de casa.",
-    "en": "Call me before you leave the house. (to a friend)",
+    "es": "Escríbeme antes de que subas al bus.",
+    "en": "Text me before you get on the bus. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
       "g:commands-with-pronouns",
+      "g:gender-articles",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
-      "l:casa",
-      "l:llamar",
-      "l:salir",
+      "l:bus",
+      "l:escribir",
+      "l:subir",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -20650,8 +20675,8 @@
   },
   {
     "id": "u32-0850",
-    "es": "Come algo antes de que empiece la reunión.",
-    "en": "Eat something before the meeting starts. (to a friend)",
+    "es": "Come algo antes de que Vale cierre la cocina.",
+    "en": "Eat something before Vale closes the kitchen. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20660,9 +20685,9 @@
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
+      "l:cerrar",
+      "l:cocina",
       "l:comer",
-      "l:empezar",
-      "l:reunión",
       "p:indefinites-basic"
     ],
     "targets": [
@@ -20970,7 +20995,7 @@
   {
     "id": "u32-0862",
     "es": "Les pido que se vayan antes de que llegue la policía.",
-    "en": "I ask you to leave before the police arrive.",
+    "en": "I'm asking you all to leave before the police arrive.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21077,19 +21102,21 @@
   },
   {
     "id": "u32-0866",
-    "es": "Vale hace el pan sin que nadie la ayude.",
-    "en": "Vale makes the bread without anyone helping her.",
+    "es": "Vale saca cien panes al día sin que nadie la ayude.",
+    "en": "Vale turns out a hundred rolls a day without anyone helping her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:present-ar",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:ayudar",
-      "l:hacer",
-      "l:pan"
+      "l:día",
+      "l:pan",
+      "l:sacar",
+      "p:numbers-un-una"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -21251,20 +21278,20 @@
   },
   {
     "id": "u32-0873",
-    "es": "No pasa un domingo sin que Vale haga pan nuevo.",
-    "en": "Not a Sunday goes by without Vale making new bread.",
+    "es": "Vale no cambia una receta sin que Hernando la pruebe primero.",
+    "en": "Vale doesn't change a recipe without Hernando trying it first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
       "g:subj-purpose-full",
       "g:subj-wanting",
-      "l:domingo",
-      "l:hacer",
-      "l:nuevo",
-      "l:pan",
-      "l:pasar"
+      "l:cambiar",
+      "l:probar",
+      "l:receta",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -21276,20 +21303,27 @@
   },
   {
     "id": "u32-0874",
-    "es": "No pasa una hora sin que Simón diga algo gracioso.",
-    "en": "Not an hour goes by without Simón saying something funny.",
+    "es": "Tomás no puede salir del café sin que Hernando le pregunte adónde va.",
+    "en": "Tomás can't leave the café without Hernando asking him where he's going.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:indirect-objects",
+      "g:indirect-questions",
+      "g:ir-a-plans",
+      "g:stem-boot",
       "g:subj-purpose-full",
       "g:subj-wanting",
-      "l:decir",
-      "l:gracioso",
-      "l:hora",
-      "l:pasar",
-      "p:indefinites-basic"
+      "g:verb-infinitive",
+      "l:adónde",
+      "l:café",
+      "l:ir",
+      "l:poder",
+      "l:preguntar",
+      "l:salir",
+      "p:ir-a-venir-de-place",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -21348,19 +21382,22 @@
   },
   {
     "id": "u32-0877",
-    "es": "No abras la caja sin que esté Tomás.",
-    "en": "Don't open the cash box without Tomás there. (to a friend)",
+    "es": "La caja no se abre sin que Tomás esté presente.",
+    "en": "The cash box doesn't get opened without Tomás being there.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-se",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:negative-commands",
+      "g:present-er-ir",
+      "g:se-impersonal",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:abrir",
       "l:caja",
-      "l:estar"
+      "l:estar",
+      "l:presentar"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -21372,17 +21409,21 @@
   },
   {
     "id": "u32-0878",
-    "es": "No cierres sin que te avise.",
-    "en": "Don't close without me letting you know. (to a friend)",
+    "es": "Te pido que no cierres sin que yo te avise.",
+    "en": "I'm asking you not to close without me letting you know. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negative-commands",
+      "g:stem-e-i",
+      "g:subj-influence",
       "g:subj-purpose-full",
       "g:subj-wanting",
+      "g:that-clauses",
       "l:avisar",
       "l:cerrar",
-      "p:me-te-nos-objects"
+      "l:pedir",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -21515,20 +21556,22 @@
   },
   {
     "id": "u32-0884",
-    "es": "Es imposible vender sin que alguien compre.",
-    "en": "It's impossible to sell without someone buying.",
+    "es": "Es imposible hablar por teléfono aquí sin que Simón grite.",
+    "en": "It's impossible to talk on the phone here without Simón screaming.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:compre-trabaje",
       "g:ser-identity",
       "g:subj-purpose-full",
-      "l:comprar",
+      "g:subj-wanting",
+      "l:aquí",
+      "l:gritar",
+      "l:hablar",
       "l:imposible",
       "l:ser",
-      "l:vender",
-      "p:es-adj-inf",
-      "p:indefinites-basic"
+      "l:teléfono",
+      "p:aqui-ahi-alla",
+      "p:es-adj-inf"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -21695,11 +21738,12 @@
   },
   {
     "id": "u32-0891",
-    "es": "Piensa en lo que vas a decir antes de que hables.",
-    "en": "Think about what you're going to say before you speak. (to a friend)",
+    "es": "Piensa bien lo que vas a decir antes de que Beatriz te pregunte.",
+    "en": "Think carefully about what you're going to say before Beatriz asks you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "c:voy-vas",
       "g:ir-a-plans",
       "g:relatives-donde-lo-que",
@@ -21707,11 +21751,15 @@
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
+      "l:bien",
       "l:decir",
-      "l:hablar",
       "l:ir",
       "l:pensar",
-      "p:pensar-en"
+      "l:preguntar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -21857,20 +21905,23 @@
   },
   {
     "id": "u32-0897",
-    "es": "Sigue lloviendo sin que nadie traiga paraguas.",
-    "en": "It keeps raining without anyone bringing an umbrella.",
+    "es": "Sigue lloviendo. Toma mi paraguas antes de que te vayas.",
+    "en": "It's still raining. Take my umbrella before you go. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gerund-ways",
+      "g:present-ar",
       "g:stem-e-i",
+      "g:subj-irregulars",
       "g:subj-purpose-full",
-      "g:subj-wanting",
+      "l:antes",
+      "l:irse",
       "l:llover",
       "l:paraguas",
       "l:seguir",
-      "l:traer",
-      "p:llevar-traer",
+      "l:tomar",
+      "p:possessives-basic",
       "p:seguir-gerundio"
     ],
     "targets": [
@@ -21884,21 +21935,21 @@
   },
   {
     "id": "u32-0898",
-    "es": "Actualmente el café funciona sin que nadie lo dirija.",
-    "en": "Currently the café runs without anyone managing it.",
+    "es": "Actualmente nada sale de la cocina sin que Vale lo pruebe.",
+    "en": "At the moment nothing leaves the kitchen without Vale tasting it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
       "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
+      "g:present-er-ir",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:actualmente",
-      "l:café",
-      "l:dirigir",
-      "l:funcionar",
+      "l:cocina",
+      "l:probar",
+      "l:salir",
       "p:actualmente"
     ],
     "targets": [
@@ -22067,20 +22118,20 @@
   },
   {
     "id": "u32-0905",
-    "es": "Llegamos antes de que cierre, qué suerte.",
-    "en": "We got there before it closes, what luck.",
+    "es": "Si salimos ya, llegamos antes de que cierre.",
+    "en": "If we leave now, we'll get there before it closes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-envidia",
       "g:present-ar",
+      "g:present-er-ir",
+      "g:si-present",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
       "l:cerrar",
       "l:llegar",
-      "l:qué",
-      "l:suerte"
+      "l:salir"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -22423,7 +22474,7 @@
   {
     "id": "u32-0920",
     "es": "Tengo la tarde disponible si quieres hablar.",
-    "en": "I have the afternoon free if you want to talk.",
+    "en": "I have the afternoon free if you want to talk. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22495,14 +22546,15 @@
   },
   {
     "id": "u32-0923",
-    "es": "El asistente de Beatriz llamó para confirmar la cita.",
-    "en": "Beatriz's assistant called to confirm the appointment.",
+    "es": "El asistente del banco llamó para confirmar la cita.",
+    "en": "The bank's assistant called to confirm the appointment.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:asistente",
+      "l:banco",
       "l:cita",
       "l:confirmar",
       "l:llamar",
@@ -22567,13 +22619,13 @@
   },
   {
     "id": "u32-0926",
-    "es": "Vale pidió que contratemos a un asistente.",
-    "en": "Vale asked that we hire an assistant.",
+    "es": "Vale pide que contratemos a un asistente.",
+    "en": "Vale is asking that we hire an assistant.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-spelling-stem",
+      "g:stem-e-i",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
@@ -22739,18 +22791,18 @@
   },
   {
     "id": "u32-0933",
-    "es": "En temporada alta, la fila llega hasta la esquina.",
-    "en": "In high season, the line reaches the corner.",
+    "es": "En temporada alta, hay fila hasta la esquina desde las siete.",
+    "en": "In high season, there's a line to the corner from seven o'clock.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-ar",
+      "g:hay-vs-esta",
       "l:alto",
       "l:esquina",
       "l:fila",
-      "l:llegar",
       "l:temporada"
     ],
     "targets": [
@@ -23248,17 +23300,20 @@
   },
   {
     "id": "u32-0954",
-    "es": "El café no da ganancias todavía.",
-    "en": "The café isn't making a profit yet.",
+    "es": "Las ganancias todavía no alcanzan para pagar el arriendo.",
+    "en": "The profits still aren't enough to pay the rent.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:todavia-no",
       "g:gender-articles",
       "g:present-ar",
-      "l:café",
-      "l:dar",
+      "l:alcanzar",
+      "l:arriendo",
       "l:ganancia",
-      "p:ya-todavia-basic"
+      "l:pagar",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:ganancia"
@@ -24072,7 +24127,7 @@
   {
     "id": "u32-0990",
     "es": "Pedimos un crédito para comprar la máquina.",
-    "en": "We asked for a credit to buy the machine.",
+    "en": "We applied for credit to buy the machine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24955,18 +25010,15 @@
   },
   {
     "id": "u32-1028",
-    "es": "Siendo adolescente, Vale ya hacía pan.",
+    "es": "De adolescente, Vale ya hacía pan.",
     "en": "As a teenager, Vale was already making bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gerund-ways",
       "g:imperfect-habitual",
-      "g:ser-identity",
       "l:adolescente",
       "l:hacer",
-      "l:pan",
-      "l:ser"
+      "l:pan"
     ],
     "targets": [
       "l:adolescente"
@@ -25188,15 +25240,18 @@
   },
   {
     "id": "u32-1038",
-    "es": "Joaquín sigue vivo, según Hernando.",
-    "en": "Joaquín is still alive, according to Hernando.",
+    "es": "¿Joaquín sigue vivo? Nadie lo sabe.",
+    "en": "Is Joaquín still alive? Nobody knows.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:segun",
+      "g:direct-objects",
+      "g:present-er-ir",
       "g:stem-e-i",
+      "l:saber",
       "l:seguir",
-      "l:vivo"
+      "l:vivo",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:vivo"
@@ -25208,20 +25263,17 @@
   },
   {
     "id": "u32-1039",
-    "es": "Espero que Joaquín todavía esté vivo.",
-    "en": "I hope Joaquín is still alive.",
+    "es": "Tomás quiere encontrar a Joaquín vivo.",
+    "en": "Tomás wants to find Joaquín alive.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:present-ar",
-      "g:subj-wanting",
-      "g:subj-wishes",
-      "g:that-clauses",
-      "l:esperar",
-      "l:estar",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:encontrar",
+      "l:querer",
       "l:vivo",
-      "p:ya-todavia-basic"
+      "p:personal-a"
     ],
     "targets": [
       "l:vivo"
@@ -25357,8 +25409,8 @@
   },
   {
     "id": "u32-1045",
-    "es": "Atrapa el pan antes de que caiga.",
-    "en": "Catch the bread before it falls. (to a friend)",
+    "es": "Atrapa el pan antes de que caiga al piso.",
+    "en": "Catch the bread before it falls on the floor. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25367,7 +25419,8 @@
       "g:subj-wanting",
       "l:antes",
       "l:caer",
-      "l:pan"
+      "l:pan",
+      "l:piso"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -25738,7 +25791,7 @@
   {
     "id": "u32-1061",
     "es": "Cuando salga el último cliente, apago todo.",
-    "en": "When the last customer leaves, I turn everything off.",
+    "en": "When the last customer leaves, I'll turn everything off.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27070,20 +27123,20 @@
   },
   {
     "id": "u32-1114",
-    "es": "Prometiste que no se lo dirías a nadie.",
-    "en": "You promised you wouldn't tell anyone. (to a friend)",
+    "es": "Me prometiste que guardarías el secreto.",
+    "en": "You promised me you would keep the secret. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
       "g:conditional",
-      "g:double-pronouns",
-      "g:negation-words",
+      "g:gender-articles",
       "g:preterite-er-ir",
       "g:reported-backshift",
       "g:that-clauses",
-      "l:decir",
-      "l:prometer"
+      "l:guardar",
+      "l:prometer",
+      "l:secreto",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:reported-backshift"
@@ -27144,8 +27197,8 @@
   },
   {
     "id": "u32-1117",
-    "es": "Dijeron que habían visto a Joaquín en Cali.",
-    "en": "They said they had seen Joaquín in Cali.",
+    "es": "Dijeron que habían visto a Joaquín en Santa Marta.",
+    "en": "They said they had seen Joaquín in Santa Marta.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27516,22 +27569,20 @@
   },
   {
     "id": "u32-1131",
-    "es": "Hernando contó que cumpliría setenta y dos años el viernes.",
-    "en": "Hernando said he would turn seventy-two on Friday.",
+    "es": "Hernando contó que cumpliría setenta y dos años en marzo.",
+    "en": "Hernando said he would turn seventy-two in March.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:gender-articles",
       "g:preterite-ar",
       "g:reported-backshift",
       "g:that-clauses",
       "l:año",
       "l:contar",
       "l:cumplir",
-      "l:viernes",
-      "p:cumplir-anos",
-      "p:days-el-lunes"
+      "l:marzo",
+      "p:cumplir-anos"
     ],
     "targets": [
       "g:reported-backshift",
@@ -27544,8 +27595,8 @@
   },
   {
     "id": "u32-1132",
-    "es": "Vale dijo que cumpliría treinta años en abril.",
-    "en": "Vale said she would turn thirty in April.",
+    "es": "Vale dijo que cumpliría veintinueve años en abril.",
+    "en": "Vale said she would turn twenty-nine in April.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27598,8 +27649,8 @@
   },
   {
     "id": "u32-1134",
-    "es": "Rosa contó que en los años sesenta había conocido a Joaquín.",
-    "en": "Rosa said that in the sixties she had met Joaquín.",
+    "es": "Rosa contó que en los años sesenta había abierto el café.",
+    "en": "Rosa said that in the sixties she had opened the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27608,12 +27659,11 @@
       "g:preterite-ar",
       "g:reported-backshift",
       "g:that-clauses",
+      "l:abrir",
       "l:año",
-      "l:conocer",
+      "l:café",
       "l:contar",
-      "p:decadas-siglos",
-      "p:personal-a",
-      "p:saber-conocer"
+      "p:decadas-siglos"
     ],
     "targets": [
       "g:reported-backshift",
@@ -28058,7 +28108,7 @@
   {
     "id": "u32-1151",
     "es": "Tengo que pedirte un favor: ¿puedes abrir tú mañana?",
-    "en": "I need to ask you a favour: can you open tomorrow?",
+    "en": "I need to ask you a favour: can you open tomorrow? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28087,7 +28137,7 @@
   {
     "id": "u32-1152",
     "es": "Tengo que pedirte un favor: ¿me prestas cien mil pesos?",
-    "en": "I need to ask you a favour: can you lend me a hundred thousand pesos?",
+    "en": "I need to ask you a favour: can you lend me a hundred thousand pesos? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28115,7 +28165,7 @@
   {
     "id": "u32-1153",
     "es": "Tengo que pedirte un favor: ¿te importaría cuidar a mi hijo un rato?",
-    "en": "I need to ask you a favour: would you mind looking after my son for a while?",
+    "en": "I need to ask you a favour: would you mind looking after my son for a while? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28150,7 +28200,7 @@
   {
     "id": "u32-1154",
     "es": "Tengo que pedirte un favor, y no es fácil.",
-    "en": "I need to ask you a favour, and it's not easy.",
+    "en": "I need to ask you a favour, and it's not easy. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28176,7 +28226,7 @@
   {
     "id": "u32-1155",
     "es": "Tengo que pedirte un favor: ¿me acompañas a ver a la abogada?",
-    "en": "I need to ask you a favour: will you come with me to see the lawyer?",
+    "en": "I need to ask you a favour: will you come with me to see the lawyer? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28207,7 +28257,7 @@
   {
     "id": "u32-1156",
     "es": "Tengo que pedirte un favor: ¿puedes guardar estas cartas en tu casa?",
-    "en": "I need to ask you a favour: can you keep these letters at your house?",
+    "en": "I need to ask you a favour: can you keep these letters at your house? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28239,7 +28289,7 @@
   {
     "id": "u32-1157",
     "es": "Tengo que pedirte un favor: no le digas nada a Vale.",
-    "en": "I need to ask you a favour: don't say anything to Vale.",
+    "en": "I need to ask you a favour: don't say anything to Vale. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28267,7 +28317,7 @@
   {
     "id": "u32-1158",
     "es": "¿Me echas una mano con el inventario?",
-    "en": "Can you give me a hand with the inventory?",
+    "en": "Can you give me a hand with the inventory? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28288,7 +28338,7 @@
   {
     "id": "u32-1159",
     "es": "¿Me echas una mano con estas sillas?",
-    "en": "Can you give me a hand with these chairs?",
+    "en": "Can you give me a hand with these chairs? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28309,7 +28359,7 @@
   {
     "id": "u32-1160",
     "es": "¿Me echas una mano con los papeles del banco?",
-    "en": "Can you give me a hand with the bank papers?",
+    "en": "Can you give me a hand with the bank papers? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28331,7 +28381,7 @@
   {
     "id": "u32-1161",
     "es": "¿Me echas una mano con la puerta de atrás?",
-    "en": "Can you give me a hand with the back door?",
+    "en": "Can you give me a hand with the back door? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28353,7 +28403,7 @@
   {
     "id": "u32-1162",
     "es": "¿Me echas una mano con la carta para el juez?",
-    "en": "Can you give me a hand with the letter for the judge?",
+    "en": "Can you give me a hand with the letter for the judge? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28376,7 +28426,7 @@
   {
     "id": "u32-1163",
     "es": "¿Me echas una mano con el menú de la temporada?",
-    "en": "Can you give me a hand with the season's menu?",
+    "en": "Can you give me a hand with the season's menu? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28399,7 +28449,7 @@
   {
     "id": "u32-1164",
     "es": "¿Me echas una mano con el pedido del proveedor?",
-    "en": "Can you give me a hand with the supplier's order?",
+    "en": "Can you give me a hand with the supplier's order? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28841,19 +28891,26 @@
   },
   {
     "id": "u32-1180",
-    "es": "Ojalá la próxima vez.\nOtra vez será.",
-    "en": "I hope next time.\nAnother time.",
+    "es": "No pude ir a tu fiesta, qué pena.\nTranquila, otra vez será.",
+    "en": "I couldn't come to your party, I'm sorry.\nDon't worry, another time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ojala",
       "c:otra-vez-sera",
-      "g:adjective-agreement",
-      "g:gender-articles",
-      "l:próximo",
+      "c:que-pena",
+      "c:tranquilo",
+      "g:preterite-irregular-strong",
+      "g:verb-infinitive",
+      "l:fiesta",
+      "l:ir",
+      "l:pena",
+      "l:poder",
+      "l:qué",
       "l:ser",
+      "l:tranquilo",
       "l:vez",
-      "p:time-pasado-que-viene"
+      "p:ir-a-venir-de-place",
+      "p:possessives-basic"
     ],
     "targets": [
       "c:otra-vez-sera"
@@ -28942,7 +28999,7 @@
   {
     "id": "u32-1184",
     "es": "¿Te importaría ayudarme con el inventario?",
-    "en": "Would you mind helping me with the inventory?",
+    "en": "Would you mind helping me with the inventory? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28968,7 +29025,7 @@
   {
     "id": "u32-1185",
     "es": "¿Te importaría esperar a que llegue Beatriz?",
-    "en": "Would you mind waiting for Beatriz to arrive?",
+    "en": "Would you mind waiting for Beatriz to arrive? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28994,7 +29051,7 @@
   {
     "id": "u32-1186",
     "es": "¿Te importaría contarme qué pasó?",
-    "en": "Would you mind telling me what happened?",
+    "en": "Would you mind telling me what happened? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29022,7 +29079,7 @@
   {
     "id": "u32-1187",
     "es": "¿Te importaría prestarme tu celular?",
-    "en": "Would you mind lending me your phone?",
+    "en": "Would you mind lending me your phone? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29048,7 +29105,7 @@
   {
     "id": "u32-1188",
     "es": "¿Te importaría cerrar con llave al salir?",
-    "en": "Would you mind locking up when you leave?",
+    "en": "Would you mind locking up when you leave? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29074,7 +29131,7 @@
   {
     "id": "u32-1189",
     "es": "¿Te importaría guardar esto en la caja?",
-    "en": "Would you mind putting this in the cash box?",
+    "en": "Would you mind putting this in the cash box? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29099,7 +29156,7 @@
   {
     "id": "u32-1190",
     "es": "¿Te importaría mover tu carro?",
-    "en": "Would you mind moving your car?",
+    "en": "Would you mind moving your car? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29123,7 +29180,7 @@
   {
     "id": "u32-1191",
     "es": "¿Te importaría quedarte un rato más?",
-    "en": "Would you mind staying a little longer?",
+    "en": "Would you mind staying a little longer? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29149,7 +29206,7 @@
   {
     "id": "u32-1192",
     "es": "¿Te importaría revisar este contrato?",
-    "en": "Would you mind reviewing this contract?",
+    "en": "Would you mind reviewing this contract? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29173,7 +29230,7 @@
   {
     "id": "u32-1193",
     "es": "¿Te importaría dejarme pasar?",
-    "en": "Would you mind letting me through?",
+    "en": "Would you mind letting me through? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29198,7 +29255,7 @@
   {
     "id": "u32-1194",
     "es": "¿Te importaría llevar a Hernando a su casa?",
-    "en": "Would you mind taking Hernando home?",
+    "en": "Would you mind taking Hernando home? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29223,7 +29280,7 @@
   {
     "id": "u32-1195",
     "es": "¿Te importaría decirle la verdad a Vale?",
-    "en": "Would you mind telling Vale the truth?",
+    "en": "Would you mind telling Vale the truth? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29250,7 +29307,7 @@
   {
     "id": "u32-1196",
     "es": "¿Te importaría preparar otro tinto?",
-    "en": "Would you mind making another black coffee?",
+    "en": "Would you mind making another black coffee? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29274,7 +29331,7 @@
   {
     "id": "u32-1197",
     "es": "¿Te importaría salir un momento?",
-    "en": "Would you mind stepping out a moment?",
+    "en": "Would you mind stepping out a moment? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29592,19 +29649,23 @@
   },
   {
     "id": "u32-1210",
-    "es": "Confío en que el juez vea la verdad.",
-    "en": "I trust that the judge will see the truth.",
+    "es": "Si el juez lee las cartas, confío en que vea la verdad.",
+    "en": "If the judge reads the letters, I trust he'll see the truth.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:la-verdad",
       "g:gender-articles",
       "g:present-ar",
+      "g:present-er-ir",
+      "g:si-present",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:carta",
       "l:confiar",
       "l:juez",
+      "l:leer",
       "l:ver",
       "l:verdad",
       "p:confiar-en-que"
@@ -29620,8 +29681,8 @@
   },
   {
     "id": "u32-1211",
-    "es": "Confío en que Joaquín tenga hijos.",
-    "en": "I trust that Joaquín has children.",
+    "es": "Tomás confía en que Joaquín tenga hijos.",
+    "en": "Tomás is confident Joaquín has children.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29672,8 +29733,8 @@
   },
   {
     "id": "u32-1213",
-    "es": "Confío en que el barrio nos apoye.",
-    "en": "I trust that the neighbourhood will support us.",
+    "es": "Con el artículo de Mariana, confío en que el barrio nos apoye.",
+    "en": "With Mariana's article, I'm confident the neighbourhood will back us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29683,6 +29744,7 @@
       "g:subj-wanting",
       "g:that-clauses",
       "l:apoyar",
+      "l:artículo",
       "l:barrio",
       "l:confiar",
       "p:confiar-en-que",
@@ -29726,21 +29788,24 @@
   },
   {
     "id": "u32-1215",
-    "es": "Confiamos en que el banco espere un mes más.",
-    "en": "We trust that the bank will wait one more month.",
+    "es": "El banco nos dio un mes. ¿Confías en que espere más?",
+    "en": "The bank gave us a month. Are you confident it will wait longer? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "g:preterite-irregular-strong",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
       "l:banco",
       "l:confiar",
+      "l:dar",
       "l:esperar",
       "l:mes",
-      "p:confiar-en-que"
+      "p:confiar-en-que",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:subj-influence",
@@ -29753,17 +29818,21 @@
   },
   {
     "id": "u32-1216",
-    "es": "Confiamos en que Altamira no gane.",
-    "en": "We trust that Altamira won't win.",
+    "es": "Nadie en el barrio confía en que Altamira diga la verdad.",
+    "en": "Nobody in the neighbourhood is confident Altamira will tell the truth.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:la-verdad",
+      "g:gender-articles",
       "g:present-ar",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:barrio",
       "l:confiar",
-      "l:ganar",
+      "l:decir",
+      "l:verdad",
       "p:confiar-en-que"
     ],
     "targets": [
@@ -29830,13 +29899,14 @@
   },
   {
     "id": "u32-1219",
-    "es": "Confiamos en que el nuevo asistente aprenda rápido.",
-    "en": "We trust that the new assistant will learn fast.",
+    "es": "El nuevo asistente no sabe mucho, pero confiamos en que aprenda rápido.",
+    "en": "The new assistant doesn't know much, but we're confident he'll learn fast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "g:present-er-ir",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
@@ -29845,7 +29915,10 @@
       "l:confiar",
       "l:nuevo",
       "l:rápido",
-      "p:confiar-en-que"
+      "l:saber",
+      "p:confiar-en-que",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:subj-influence",
@@ -29886,23 +29959,23 @@
   },
   {
     "id": "u32-1221",
-    "es": "Vale confía en que el pan salga bien.",
-    "en": "Vale trusts that the bread will turn out well.",
+    "es": "Vale cambió la receta y confía en que el pan salga mejor.",
+    "en": "Vale changed the recipe and is confident the bread will turn out better.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "g:gender-articles",
       "g:present-ar",
+      "g:preterite-ar",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:bien",
+      "l:cambiar",
       "l:confiar",
+      "l:mejor",
       "l:pan",
+      "l:receta",
       "l:salir",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
       "p:confiar-en-que"
     ],
     "targets": [
@@ -30477,16 +30550,16 @@
   },
   {
     "id": "u32-1245",
-    "es": "Los herederos quedaron en venir el martes.",
-    "en": "The heirs agreed to come on Tuesday.",
+    "es": "Los vecinos quedaron en venir el martes.",
+    "en": "The neighbours agreed to come on Tuesday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "l:heredero",
       "l:martes",
       "l:quedar",
+      "l:vecino",
       "l:venir",
       "p:days-el-lunes",
       "p:quedar-en"
@@ -30811,7 +30884,7 @@
   {
     "id": "u32-1259",
     "es": "En la década de los cincuenta, el edificio era una escuela.",
-    "en": "In the decade of the fifties, the building was a school.",
+    "en": "In the fifties, the building was a school.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31003,8 +31076,8 @@
   },
   {
     "id": "u32-1267",
-    "es": "Rosa abrió el café en los años setenta.",
-    "en": "Rosa opened the café in the seventies.",
+    "es": "Rosa abrió el café en los años sesenta.",
+    "en": "Rosa opened the café in the sixties.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31126,8 +31199,8 @@
   },
   {
     "id": "u32-1272",
-    "es": "Hernando cumple setenta y tres años en abril.",
-    "en": "Hernando turns seventy-three in April.",
+    "es": "Mi vecina cumple setenta y tres años en abril.",
+    "en": "My neighbour turns seventy-three in April.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31135,7 +31208,9 @@
       "l:abril",
       "l:año",
       "l:cumplir",
-      "p:cumplir-anos"
+      "l:vecino",
+      "p:cumplir-anos",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:cumplir-anos"
@@ -31147,8 +31222,8 @@
   },
   {
     "id": "u32-1273",
-    "es": "Beatriz cumple cuarenta años la semana que viene.",
-    "en": "Beatriz turns forty next week.",
+    "es": "Beatriz cumple cincuenta años la semana que viene.",
+    "en": "Beatriz turns fifty next week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31310,7 +31385,7 @@
   {
     "id": "u32-1280",
     "es": "El juez parece una persona justa.",
-    "en": "The judge seems a fair person.",
+    "en": "The judge seems like a fair person.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31544,7 +31619,7 @@
   {
     "id": "u32-1290",
     "es": "Tomás y su abuela se parecen en la mirada.",
-    "en": "Tomás and his grandmother look alike in their gaze.",
+    "en": "Tomás and his grandmother look alike around the eyes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31902,8 +31977,8 @@
   },
   {
     "id": "u32-1305",
-    "es": "Cuéntenos algo del barrio, señor Hernando.",
-    "en": "Tell us something about the neighbourhood, Mr Hernando. (polite)",
+    "es": "Cuéntenos algo del barrio, don Hernando.",
+    "en": "Tell us something about the neighbourhood, Don Hernando. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31912,8 +31987,8 @@
       "g:gender-articles",
       "l:barrio",
       "l:contar",
-      "l:señor",
       "p:contar-dos-sentidos",
+      "p:don-dona-nombre",
       "p:indefinites-basic",
       "p:me-te-nos-objects",
       "p:senor-don-article"
@@ -32313,20 +32388,19 @@
   },
   {
     "id": "u32-1323",
-    "es": "Mariana escribió que habían encontrado al hijo de Joaquín.",
-    "en": "Mariana wrote that they had found Joaquín's son.",
+    "es": "Mariana escribió que habían recibido muchos mensajes.",
+    "en": "Mariana wrote that they had received lots of messages.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:pluperfect",
       "g:preterite-er-ir",
       "g:reported-backshift",
       "g:that-clauses",
-      "l:encontrar",
       "l:escribir",
-      "l:hijo",
-      "p:personal-a"
+      "l:mensaje",
+      "l:recibir",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:reported-backshift"
@@ -32488,8 +32562,8 @@
   },
   {
     "id": "u32-1330",
-    "es": "La abogada contó que había hablado con la hija de Joaquín.",
-    "en": "The lawyer said she had spoken with Joaquín's daughter.",
+    "es": "La abogada contó que había leído todas las cartas de Rosa.",
+    "en": "The lawyer said she had read all of Rosa's letters.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32499,9 +32573,9 @@
       "g:reported-backshift",
       "g:that-clauses",
       "l:abogado",
+      "l:carta",
       "l:contar",
-      "l:hablar",
-      "l:hija"
+      "l:leer"
     ],
     "targets": [
       "g:reported-backshift"
@@ -33383,20 +33457,21 @@
   },
   {
     "id": "u32-1367",
-    "es": "Vale quiere atrapar a Simón antes de que cruce la calle.",
-    "en": "Vale wants to catch Simón before he crosses the street.",
+    "es": "Tomás intenta atrapar la taza antes de que llegue al piso.",
+    "en": "Tomás tries to catch the cup before it hits the floor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:stem-boot",
+      "g:present-ar",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
       "l:atrapar",
-      "l:calle",
-      "l:cruzar",
-      "l:querer"
+      "l:intentar",
+      "l:llegar",
+      "l:piso",
+      "l:taza"
     ],
     "targets": [
       "g:subj-purpose-full",
@@ -33463,13 +33538,14 @@
   },
   {
     "id": "u32-1370",
-    "es": "Mariana intentó atrapar a Joaquín con una pregunta.",
-    "en": "Mariana tried to catch Joaquín out with a question.",
+    "es": "Mariana intentó atrapar al abogado de Altamira con una pregunta.",
+    "en": "Mariana tried to catch Altamira's lawyer out with a question.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "l:abogado",
       "l:atrapar",
       "l:intentar",
       "l:pregunta"
@@ -33505,17 +33581,19 @@
   },
   {
     "id": "u32-1372",
-    "es": "Hernando quiso atrapar un taxi bajo la lluvia.",
-    "en": "Hernando tried to catch a taxi in the rain.",
+    "es": "Nadie puede atrapar a Simón cuando sale de la cocina.",
+    "en": "Nobody can catch Simón when he gets out of the kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-irregular-strong",
+      "g:present-er-ir",
+      "g:stem-boot",
       "l:atrapar",
-      "l:lluvia",
-      "l:querer",
-      "l:taxi"
+      "l:cocina",
+      "l:poder",
+      "l:salir",
+      "p:cuando-basic"
     ],
     "targets": [
       "l:atrapar"
@@ -33555,8 +33633,8 @@
   },
   {
     "id": "u32-1374",
-    "es": "Cuéntame una cosa: ¿tú crees en Joaquín?",
-    "en": "Tell me one thing: do you believe in Joaquín? (to a friend)",
+    "es": "Cuéntame una cosa: ¿tú crees que Joaquín sigue vivo?",
+    "en": "Tell me something: do you think Joaquín is still alive? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33564,9 +33642,13 @@
       "g:commands-tu",
       "g:commands-with-pronouns",
       "g:gender-articles",
+      "g:stem-e-i",
+      "g:that-clauses",
       "l:contar",
       "l:cosa",
       "l:creer",
+      "l:seguir",
+      "l:vivo",
       "p:contar-dos-sentidos",
       "p:me-te-nos-objects"
     ],
@@ -33753,8 +33835,8 @@
   },
   {
     "id": "u32-1382",
-    "es": "Mariana dijo que hablaría con la hija de Joaquín.",
-    "en": "Mariana said she would talk to Joaquín's daughter.",
+    "es": "Mariana dijo que hablaría con los taxistas de Santa Marta.",
+    "en": "Mariana said she would talk to the taxi drivers in Santa Marta.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33765,7 +33847,7 @@
       "g:that-clauses",
       "l:decir",
       "l:hablar",
-      "l:hija"
+      "l:taxista"
     ],
     "targets": [
       "g:reported-backshift"
@@ -34033,8 +34115,8 @@
   },
   {
     "id": "u32-1393",
-    "es": "Deberíamos buscar a la hija de Joaquín.",
-    "en": "We should look for Joaquín's daughter.",
+    "es": "Deberíamos buscar a la familia de Joaquín en Santa Marta.",
+    "en": "We should look for Joaquín's family in Santa Marta.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -34043,7 +34125,7 @@
       "g:tener-que-hay-que",
       "l:buscar",
       "l:deber",
-      "l:hija",
+      "l:familia",
       "p:personal-a",
       "p:podriamos-deberiamos"
     ],
@@ -34479,20 +34561,18 @@
   },
   {
     "id": "u32-1411",
-    "es": "El hijo de Joaquín se parece a su papá.",
-    "en": "Joaquín's son looks like his dad.",
+    "es": "En la foto, Joaquín se parece a Rosa.",
+    "en": "In the photo, Joaquín looks like Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
       "g:reflexive-routine",
-      "l:hijo",
-      "l:papá",
+      "l:foto",
       "l:parecerse",
       "p:parecer-vs-parecerse",
-      "p:parecerse-a",
-      "p:possessives-basic"
+      "p:parecerse-a"
     ],
     "targets": [
       "p:parecer-vs-parecerse"
@@ -34611,8 +34691,8 @@
   },
   {
     "id": "u32-1416",
-    "es": "Deberíamos hablar con la hija de Joaquín esta semana.",
-    "en": "We should talk to Joaquín's daughter this week.",
+    "es": "Deberíamos llamar a los periódicos de Santa Marta esta semana.",
+    "en": "We should call the Santa Marta newspapers this week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -34620,10 +34700,11 @@
       "g:gender-articles",
       "g:tener-que-hay-que",
       "l:deber",
-      "l:hablar",
-      "l:hija",
+      "l:llamar",
+      "l:periódico",
       "l:semana",
       "p:demonstratives-basic",
+      "p:personal-a",
       "p:podriamos-deberiamos"
     ],
     "targets": [
@@ -34661,19 +34742,20 @@
   },
   {
     "id": "u32-1418",
-    "es": "Antes de que se vaya el sol, tenemos que cerrar el trato.",
+    "es": "Antes de que se ponga el sol, tenemos que cerrar el trato.",
     "en": "Before the sun goes down, we have to close the deal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
-      "g:subj-irregulars",
       "g:subj-purpose-full",
+      "g:subj-wanting",
       "g:verb-infinitive",
+      "g:verbs-of-change",
       "l:antes",
       "l:cerrar",
-      "l:irse",
+      "l:ponerse",
       "l:sol",
       "l:tener",
       "l:trato"

@@ -3,42 +3,184 @@
   "hook": {
     "line": "A friend tells you their problem and wants your opinion. You can nudge gently or push hard, and Spanish has a different verb for each strength.",
     "es": "Tendrías que hablar con ella.",
-    "en": "You'd need to talk to her. (to a friend)"
+    "en": "You'd have to talk to her. (to a friend)"
   },
   "examples": [
-    { "es": "Podrías preguntarle a tu jefe.", "en": "You could ask your boss. (to a friend)" },
-    { "es": "Tendrías que hablar con ella.", "en": "You'd need to talk to her. (to a friend)" },
-    { "es": "Deberías descansar más.", "en": "You should rest more. (to a friend)" },
-    { "es": "Tendrías que escribir un plan.", "en": "You'd need to write a plan. (to a friend)" },
-    { "es": "Yo en tu lugar, iría al médico.", "en": "If I were you, I'd go to the doctor." },
-    { "es": "Yo que tú, no le diría nada.", "en": "If I were you, I wouldn't tell him anything." }
+    {
+      "es": "Podrías preguntarle a tu jefe.",
+      "en": "You could ask your boss. (to a friend)"
+    },
+    {
+      "es": "Tendrías que hablar con ella.",
+      "en": "You'd have to talk to her. (to a friend)"
+    },
+    {
+      "es": "Deberías descansar más.",
+      "en": "You should rest more. (to a friend)"
+    },
+    {
+      "es": "Tendrías que escribir un plan.",
+      "en": "You'd have to write a plan. (to a friend)"
+    },
+    {
+      "es": "Yo en tu lugar, iría al médico.",
+      "en": "If I were you, I'd go to the doctor."
+    },
+    {
+      "es": "Yo que tú, no le diría nada.",
+      "en": "If I were you, I wouldn't tell him anything."
+    }
   ],
-  "rule": "Advice comes at three strengths, all with the *tú* form and an infinitive:\n\n*Podrías* + infinitive: \"you could\". Gentle, an option.\n\n*Tendrías que* + infinitive: \"you'd need to\". Firmer.\n\n*Deberías* + infinitive: \"you should\". The strongest, and with people you don't know well it can sound like a telling-off.\n\nTo say what you would do in their place, start with *Yo en tu lugar* or *Yo que tú*, then use the \"would\" form of the verb: *iría*, *hablaría*. Do not use *voy* here.",
+  "rule": "Advice comes at three strengths, all with the *tú* form and an infinitive:\n\n*Podrías* + infinitive: \"you could\". Gentle, an option.\n\n*Deberías* + infinitive: \"you should\". Clear advice.\n\n*Tendrías que* + infinitive: \"you'd have to\". The firmest: it sounds like there is no real choice.\n\nTo say what you would do in their place, start with *Yo en tu lugar* or *Yo que tú*, then use the \"would\" form of the verb: *iría*, *hablaría*. Do not use *voy* here.",
   "smallPrint": "Teachers call these verbs the conditional. Here they soften advice instead of describing a condition.",
   "readAndPick": [
-    { "es": "Podrías preguntarle a tu jefe.", "options": ["You could ask your boss.", "You should ask your boss.", "You'd need to ask your boss."], "answer": 0 },
-    { "es": "Tendrías que hablar con ella.", "options": ["You could talk to her.", "You'd need to talk to her.", "You talked to her."], "answer": 1 },
-    { "es": "Deberías descansar más.", "options": ["You could rest more.", "You'd need to rest more.", "You should rest more."], "answer": 2 },
-    { "es": "Yo en tu lugar, iría al médico.", "options": ["If I were you, I'd go to the doctor.", "I go to the doctor in your place.", "You would go to the doctor in my place."], "answer": 0 },
-    { "es": "Yo que tú, no le diría nada.", "options": ["If I were you, I'd tell him everything.", "If I were you, I wouldn't tell him anything.", "I didn't tell you anything."], "answer": 1 },
-    { "es": "Tendrías que escribir un plan.", "options": ["You'd need to write a plan.", "You could write a plan.", "You should write a plan."], "answer": 0 },
-    { "es": "No deberías vender el café.", "options": ["You shouldn't sell the café.", "You don't have to sell the café.", "You could sell the café."], "answer": 0 },
-    { "es": "Podrías llamar a Mariana.", "options": ["You should call Mariana.", "You could call Mariana.", "You called Mariana."], "answer": 1 },
-    { "es": "Yo que tú, hablaría con Hernando.", "options": ["If I were you, I'd talk to Hernando.", "If I were you, I'd listen to Hernando.", "Hernando would talk to you."], "answer": 0 }
+    {
+      "es": "Podrías preguntarle a tu jefe.",
+      "options": [
+        "You could ask your boss.",
+        "You should ask your boss.",
+        "You'd have to ask your boss."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tendrías que hablar con ella.",
+      "options": [
+        "You could talk to her.",
+        "You'd have to talk to her.",
+        "You talked to her."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Deberías descansar más.",
+      "options": [
+        "You could rest more.",
+        "You'd have to rest more.",
+        "You should rest more."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Yo en tu lugar, iría al médico.",
+      "options": [
+        "If I were you, I'd go to the doctor.",
+        "I go to the doctor in your place.",
+        "You would go to the doctor in my place."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Yo que tú, no le diría nada.",
+      "options": [
+        "If I were you, I'd tell him everything.",
+        "If I were you, I wouldn't tell him anything.",
+        "I didn't tell you anything."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tendrías que escribir un plan.",
+      "options": [
+        "You'd have to write a plan.",
+        "You could write a plan.",
+        "You should write a plan."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No deberías vender el café.",
+      "options": [
+        "You shouldn't sell the café.",
+        "You don't have to sell the café.",
+        "You could sell the café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Podrías llamar a Mariana.",
+      "options": [
+        "You should call Mariana.",
+        "You could call Mariana.",
+        "You called Mariana."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Yo que tú, hablaría con Hernando.",
+      "options": [
+        "If I were you, I'd talk to Hernando.",
+        "If I were you, I'd listen to Hernando.",
+        "Hernando would talk to you."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *Podrías* or *Deberías* and type the whole sentence, as a gentle option: *___ preguntarle a tu jefe.*", "answer": "Podrías preguntarle a tu jefe.", "accept": [], "why": "*Podrías* offers an option; *deberías* pushes." },
-    { "prompt": "Type in Spanish, to a friend: You'd need to talk to her.", "answer": "Tendrías que hablar con ella.", "accept": [], "why": "*Tendrías que* is the middle strength, and *que* stays before the infinitive." },
-    { "prompt": "Type in Spanish, to a friend: You should rest more.", "answer": "Deberías descansar más.", "accept": [], "why": "*Deberías* plus the infinitive, with no *que*." },
-    { "prompt": "Type in Spanish, to a friend: You could call Mariana.", "answer": "Podrías llamar a Mariana.", "accept": [], "why": "*Podrías* plus *llamar*, and *a* before a person." },
-    { "prompt": "Make it negative: *Deberías vender el café.* Say: You shouldn't sell the café. (to a friend)", "answer": "No deberías vender el café.", "accept": [], "why": "Put *no* in front of *deberías*." },
-    { "prompt": "Type in Spanish: If I were you, I'd go to the doctor.", "answer": "Yo en tu lugar, iría al médico.", "accept": ["Yo que tú, iría al médico.", "En tu lugar, iría al médico."], "why": "After *yo en tu lugar*, use the \"would\" form *iría*." },
-    { "prompt": "Type in Spanish: If I were you, I wouldn't tell him anything.", "answer": "Yo que tú, no le diría nada.", "accept": ["Yo en tu lugar, no le diría nada."], "why": "*Diría* is the \"would say\" form, with *no* before *le*." }
+    {
+      "prompt": "Pick *Podrías* or *Deberías* and type the whole sentence, as a gentle option: *___ preguntarle a tu jefe.*",
+      "answer": "Podrías preguntarle a tu jefe.",
+      "accept": [],
+      "why": "*Podrías* offers an option; *deberías* gives clear advice."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You'd have to talk to her.",
+      "answer": "Tendrías que hablar con ella.",
+      "accept": [],
+      "why": "*Tendrías que* is the firmest of the three, and *que* stays before the infinitive."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You should rest more.",
+      "answer": "Deberías descansar más.",
+      "accept": [],
+      "why": "*Deberías* plus the infinitive, with no *que*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You could call Mariana.",
+      "answer": "Podrías llamar a Mariana.",
+      "accept": [],
+      "why": "*Podrías* plus *llamar*, and *a* before a person."
+    },
+    {
+      "prompt": "Make it negative: *Deberías vender el café.* Say: You shouldn't sell the café. (to a friend)",
+      "answer": "No deberías vender el café.",
+      "accept": [],
+      "why": "Put *no* in front of *deberías*."
+    },
+    {
+      "prompt": "Type in Spanish: If I were you, I'd go to the doctor.",
+      "answer": "Yo en tu lugar, iría al médico.",
+      "accept": [
+        "Yo que tú, iría al médico.",
+        "En tu lugar, iría al médico."
+      ],
+      "why": "After *yo en tu lugar*, use the \"would\" form *iría*."
+    },
+    {
+      "prompt": "Type in Spanish: If I were you, I wouldn't tell him anything.",
+      "answer": "Yo que tú, no le diría nada.",
+      "accept": [
+        "Yo en tu lugar, no le diría nada."
+      ],
+      "why": "*Diría* is the \"would say\" form, with *no* before *le*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Tendrías hablar con ella.", "right": "Tendrías que hablar con ella.", "why": "Almost. \"You'd need to\" needs *que* before the infinitive." },
-    { "wrong": "Deberías que descansar más.", "right": "Deberías descansar más.", "why": "Almost. *Deberías* goes straight into the infinitive, with no *que*." },
-    { "wrong": "Yo que tú, voy al médico.", "right": "Yo que tú, iría al médico.", "why": "Almost. After *yo que tú*, use the \"would\" form: *iría*, not *voy*." }
+    {
+      "wrong": "Tendrías hablar con ella.",
+      "right": "Tendrías que hablar con ella.",
+      "why": "Almost. \"You'd have to\" needs *que* before the infinitive."
+    },
+    {
+      "wrong": "Deberías que descansar más.",
+      "right": "Deberías descansar más.",
+      "why": "Almost. *Deberías* goes straight into the infinitive, with no *que*."
+    },
+    {
+      "wrong": "Yo que tú, voy al médico.",
+      "right": "Yo que tú, iría al médico.",
+      "why": "Almost. After *yo que tú*, use the \"would\" form: *iría*, not *voy*."
+    }
   ],
   "personal": "Give a friend one piece of advice about their week, starting with *Podrías*, *Tendrías que* or *Deberías*."
 }

@@ -11,8 +11,8 @@
       "npcEn": "Young Tomás, I saw there was a light on. Are you still working at this hour?",
       "intent": "Say yes, you're still working on the list, and ask him with usted to give you a hand.",
       "accept": [
-        "Sí, señor Hernando. Sigo con la lista. ¿Me echa una mano?",
-        "Sí, estoy terminando la lista. ¿Me echa una mano, señor Hernando?",
+        "Sí, don Hernando. Sigo con la lista. ¿Me echa una mano?",
+        "Sí, estoy terminando la lista. ¿Me echa una mano, don Hernando?",
         "Sí. Hay mucho que hacer. ¿Me echa una mano con la lista?"
       ],
       "require": [
@@ -48,13 +48,13 @@
     },
     {
       "id": "t3",
-      "npc": "Ya lo hice esta tarde. Un colega me dijo que Joaquín vivía en Tunja. Veré a su hija el viernes.",
-      "npcEn": "I already did it this afternoon. A colleague told me that Joaquín lived in Tunja. I'm seeing his daughter on Friday.",
-      "intent": "Ask if he can give her your number when he sees her on Friday.",
+      "npc": "Ya lo hice esta tarde. Un colega conoció a un Joaquín en Santa Marta. Lo veo el viernes.",
+      "npcEn": "I already did it this afternoon. A colleague knew a Joaquín in Santa Marta. I'm seeing him on Friday.",
+      "intent": "Ask if he can give his colleague your number when he sees him on Friday.",
       "accept": [
-        "Cuando la vea el viernes, ¿le da mi número?",
-        "¿Le puede dar mi número cuando la vea el viernes?",
-        "¿Le da mi número cuando la vea? Es importante."
+        "Cuando lo vea el viernes, ¿le da mi número?",
+        "¿Le puede dar mi número cuando lo vea el viernes?",
+        "¿Le da mi número cuando lo vea? Es importante."
       ],
       "require": [
         {
@@ -76,7 +76,7 @@
       "intent": "Say no, it ends in November, and you must find Joaquín before it ends.",
       "accept": [
         "No, termina en noviembre. Tenemos que encontrar a Joaquín antes de que termine.",
-        "No, señor Hernando. Hay que encontrarlo antes de que termine el contrato.",
+        "No, don Hernando. Hay que encontrarlo antes de que termine el contrato.",
         "No, es en noviembre. Debemos hablar con su familia antes de que termine."
       ],
       "require": [
@@ -98,9 +98,9 @@
       "npcEn": "That's what we're here for, young man. And now, would you give me a coffee?",
       "intent": "Say of course, thank him, and tell him the coffee is for him, using usted.",
       "accept": [
-        "Claro, señor Hernando. Gracias por todo. El tinto es para usted.",
-        "Por supuesto. Muchas gracias, señor Hernando.",
-        "Claro que sí. Gracias por su ayuda, señor Hernando."
+        "Claro, don Hernando. Gracias por todo. El tinto es para usted.",
+        "Por supuesto. Muchas gracias, don Hernando.",
+        "Claro que sí. Gracias por su ayuda, don Hernando."
       ],
       "require": [
         {
@@ -133,10 +133,8 @@
     "g:direct-objects",
     "g:estar-gerund",
     "g:estar-location-states",
-    "g:future-promises",
     "g:gender-articles",
     "g:hay-vs-esta",
-    "g:imperfect-habitual",
     "g:imperfect-states",
     "g:indirect-objects",
     "g:le-doubling",
@@ -145,12 +143,9 @@
     "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
-    "g:pret-vs-imperfect",
     "g:preterite-er-ir",
-    "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
     "g:questions",
-    "g:reported-past-basic",
     "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
@@ -172,7 +167,6 @@
     "l:contrato",
     "l:dar",
     "l:deber",
-    "l:decir",
     "l:echar",
     "l:encontrar",
     "l:estar",
@@ -180,7 +174,6 @@
     "l:gusto",
     "l:hablar",
     "l:hacer",
-    "l:hija",
     "l:hora",
     "l:importante",
     "l:joven",
@@ -199,7 +192,6 @@
     "l:regalar",
     "l:seguir",
     "l:ser",
-    "l:señor",
     "l:suponer",
     "l:tarde",
     "l:taxi",
@@ -210,9 +202,9 @@
     "l:trabajar",
     "l:ver",
     "l:viernes",
-    "l:vivir",
     "p:days-el-lunes",
     "p:demonstratives-basic",
+    "p:don-dona-nombre",
     "p:gracias-por",
     "p:indefinites-basic",
     "p:me-te-nos-objects",

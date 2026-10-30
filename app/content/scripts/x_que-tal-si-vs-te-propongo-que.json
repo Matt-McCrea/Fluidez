@@ -1,9 +1,9 @@
 {
   "node": "x:que-tal-si-vs-te-propongo-que",
   "hook": {
-    "line": "Tomás has one idea and two audiences. To Vale, over coffee, it is a casual question. To Dra. Uribe, it is a proper proposal. Spanish gives each its own verb.",
-    "es": "Te propongo que cerremos temprano hoy.",
-    "en": "I suggest we close early today. (to a friend)"
+    "line": "Tomás has one idea and two audiences. To Vale, over coffee, it is a casual question. To Dra. Uribe, it is a proper proposal. Spanish gives each a different verb form.",
+    "es": "Le propongo que nos reunamos el lunes.",
+    "en": "I suggest we meet on Monday. (formal)"
   },
   "examples": [
     {
@@ -31,7 +31,7 @@
       "en": "I suggest you call Vale. (to a friend)"
     }
   ],
-  "rule": "Both open a suggestion, but they sound different and take different verbs.\n\n*¿Qué tal si...?* and *¿Y si...?* are casual questions. The verb stays in the plain present: *¿Qué tal si cerramos?*\n\n*Te propongo que...* is a proper proposal, closer to a meeting. The verb takes the other vowel: *cerremos*, *llames*. Use *le propongo* for *usted* and *les propongo* for a group.\n\n*Si* never takes the other vowel. *Que* here always does. You can also skip *que* and use the dictionary form: *Te propongo hablar con la abogada.*",
+  "rule": "Both open a suggestion, but they sound different and take different verbs.\n\n*¿Qué tal si...?* and *¿Y si...?* are casual questions. The verb stays in the plain present: *¿Qué tal si cerramos?*\n\n*Te propongo que...* is a proper proposal, closer to a meeting. The verb takes the other vowel: *cerremos*, *llames*. Use *le propongo* for *usted* and *les propongo* for a group.\n\nAfter *si*, the present never takes the other vowel. After *te propongo que*, it always does. You can also skip *que* and use the dictionary form: *Te propongo hablar con la abogada.*",
   "smallPrint": "Teachers say *si* takes the indicative, while proposing is an influence verb and takes the subjunctive. *Proponer* works like *recomendar* from earlier this week.",
   "readAndPick": [
     {

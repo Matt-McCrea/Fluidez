@@ -6,39 +6,180 @@
     "en": "I'm afraid it won't be possible this month."
   },
   "examples": [
-    { "es": "Me temo que no va a poder ser este mes.", "en": "I'm afraid it won't be possible this month." },
-    { "es": "Me temo que va a ser difícil.", "en": "I'm afraid it's going to be difficult." },
-    { "es": "Me temo que el abogado ya salió.", "en": "I'm afraid the lawyer has already left." },
-    { "es": "Me temo que no tenemos mesa.", "en": "I'm afraid we don't have a table." },
-    { "es": "Me temo que va a ser imposible.", "en": "I'm afraid it's going to be impossible." },
-    { "es": "Me temo que Vale no va a poder venir.", "en": "I'm afraid Vale won't be able to come." }
+    {
+      "es": "Me temo que no va a poder ser este mes.",
+      "en": "I'm afraid it won't be possible this month."
+    },
+    {
+      "es": "Me temo que va a ser difícil.",
+      "en": "I'm afraid it's going to be difficult."
+    },
+    {
+      "es": "Me temo que la abogada ya salió.",
+      "en": "I'm afraid the lawyer has already left."
+    },
+    {
+      "es": "Me temo que no tenemos mesa.",
+      "en": "I'm afraid we don't have a table."
+    },
+    {
+      "es": "Me temo que va a ser imposible.",
+      "en": "I'm afraid it's going to be impossible."
+    },
+    {
+      "es": "Me temo que Vale no va a poder venir.",
+      "en": "I'm afraid Vale won't be able to come."
+    }
   ],
   "rule": "*Me temo que* means \"I'm afraid that...\" in the polite sense of \"sorry to say\". It is not about being scared.\n\nAfter *que*, say the bad news with an ordinary verb: *no tenemos mesa*, *ya salió*. No special ending is needed here.\n\nSpanish also likes to soften with *va a ser* (\"it's going to be\"): *va a ser difícil* sounds kinder than *es imposible*. And *no va a poder ser* is a gentle, standard way of saying no.",
   "smallPrint": "Teachers call this a mitigating phrase: it lowers the force of what comes next. *Temerse* here is about regret, not fear.",
   "readAndPick": [
-    { "es": "Me temo que va a ser difícil.", "options": ["I'm afraid it's going to be difficult.", "I'm scared of the difficult one.", "It was difficult."], "answer": 0 },
-    { "es": "Me temo que no va a poder ser este mes.", "options": ["I'm afraid it won't be possible this month.", "I'm afraid it wasn't possible last month.", "I hope it will be possible this month."], "answer": 0 },
-    { "es": "Me temo que el abogado ya salió.", "options": ["I'm afraid the lawyer is about to leave.", "I'm afraid the lawyer has already left.", "I hope the lawyer has left."], "answer": 1 },
-    { "es": "Me temo que no tenemos mesa.", "options": ["I'm afraid we have a table.", "I'm afraid we don't have a table.", "We are afraid of the table."], "answer": 1 },
-    { "es": "Me temo que va a ser imposible.", "options": ["I'm afraid it's going to be impossible.", "I'm afraid it was impossible.", "I think it's possible."], "answer": 0 },
-    { "es": "Me temo que Vale no va a poder venir.", "options": ["I'm afraid Vale will come.", "I'm afraid Vale won't be able to come.", "Vale is afraid I can't come."], "answer": 1 },
-    { "es": "Me temo que Hernando no está.", "options": ["I'm afraid Hernando isn't here.", "Hernando is afraid I'm not here.", "I'm afraid Hernando is here."], "answer": 0 },
-    { "es": "Me temo que ya cerramos.", "options": ["I'm afraid we will close soon.", "I'm afraid we're already closed.", "I hope we closed."], "answer": 1 },
-    { "es": "Me temo que no tengo tiempo hoy.", "options": ["I'm afraid I don't have time today.", "I'm afraid you don't have time today.", "I'm afraid I had time today."], "answer": 0 }
+    {
+      "es": "Me temo que va a ser difícil.",
+      "options": [
+        "I'm afraid it's going to be difficult.",
+        "I'm scared of the difficult one.",
+        "It was difficult."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me temo que no va a poder ser este mes.",
+      "options": [
+        "I'm afraid it won't be possible this month.",
+        "I'm afraid it wasn't possible last month.",
+        "I hope it will be possible this month."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me temo que la abogada ya salió.",
+      "options": [
+        "I'm afraid the lawyer is about to leave.",
+        "I'm afraid the lawyer has already left.",
+        "I hope the lawyer has left."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me temo que no tenemos mesa.",
+      "options": [
+        "I'm afraid we have a table.",
+        "I'm afraid we don't have a table.",
+        "We are afraid of the table."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me temo que va a ser imposible.",
+      "options": [
+        "I'm afraid it's going to be impossible.",
+        "I'm afraid it was impossible.",
+        "I think it's possible."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me temo que Vale no va a poder venir.",
+      "options": [
+        "I'm afraid Vale will come.",
+        "I'm afraid Vale won't be able to come.",
+        "Vale is afraid I can't come."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me temo que Hernando no está.",
+      "options": [
+        "I'm afraid Hernando isn't here.",
+        "Hernando is afraid I'm not here.",
+        "I'm afraid Hernando is here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me temo que ya cerramos.",
+      "options": [
+        "I'm afraid we will close soon.",
+        "I'm afraid we're already closed.",
+        "I hope we closed."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me temo que no tengo tiempo hoy.",
+      "options": [
+        "I'm afraid I don't have time today.",
+        "I'm afraid you don't have time today.",
+        "I'm afraid I had time today."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *es* or *va a ser* and type the softer sentence: *Me temo que ___ difícil.*", "answer": "Me temo que va a ser difícil.", "accept": [], "why": "*Va a ser* softens the news." },
-    { "prompt": "Type in Spanish: I'm afraid it won't be possible this month.", "answer": "Me temo que no va a poder ser este mes.", "accept": ["Me temo que este mes no va a poder ser."], "why": "*No va a poder ser* is the gentle way to say no." },
-    { "prompt": "Type in Spanish: I'm afraid we don't have a table.", "answer": "Me temo que no tenemos mesa.", "accept": [], "why": "After *me temo que*, the bad news uses an ordinary verb: *tenemos*." },
-    { "prompt": "Type in Spanish: I'm afraid the lawyer has already left.", "answer": "Me temo que el abogado ya salió.", "accept": [], "why": "*Salió* is the ordinary past, with no special ending." },
-    { "prompt": "Type in Spanish: I'm afraid Vale won't be able to come.", "answer": "Me temo que Vale no va a poder venir.", "accept": [], "why": "*No va a poder* plus the infinitive *venir*." },
-    { "prompt": "Type in Spanish: I'm afraid it's going to be impossible.", "answer": "Me temo que va a ser imposible.", "accept": [], "why": "*Va a ser* softens *imposible*." },
-    { "prompt": "Type in Spanish: I'm afraid I don't have time today.", "answer": "Me temo que no tengo tiempo hoy.", "accept": ["Me temo que hoy no tengo tiempo."], "why": "Same frame, new news: *no tengo tiempo hoy*." }
+    {
+      "prompt": "Pick *es* or *va a ser* and type the softer sentence: *Me temo que ___ difícil.*",
+      "answer": "Me temo que va a ser difícil.",
+      "accept": [],
+      "why": "*Va a ser* softens the news."
+    },
+    {
+      "prompt": "Type in Spanish: I'm afraid it won't be possible this month.",
+      "answer": "Me temo que no va a poder ser este mes.",
+      "accept": [
+        "Me temo que este mes no va a poder ser."
+      ],
+      "why": "*No va a poder ser* is the gentle way to say no."
+    },
+    {
+      "prompt": "Type in Spanish: I'm afraid we don't have a table.",
+      "answer": "Me temo que no tenemos mesa.",
+      "accept": [],
+      "why": "After *me temo que*, the bad news uses an ordinary verb: *tenemos*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm afraid the lawyer has already left.",
+      "answer": "Me temo que la abogada ya salió.",
+      "accept": [],
+      "why": "*Salió* is the ordinary past, with no special ending."
+    },
+    {
+      "prompt": "Type in Spanish: I'm afraid Vale won't be able to come.",
+      "answer": "Me temo que Vale no va a poder venir.",
+      "accept": [],
+      "why": "*No va a poder* plus the infinitive *venir*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm afraid it's going to be impossible.",
+      "answer": "Me temo que va a ser imposible.",
+      "accept": [],
+      "why": "*Va a ser* softens *imposible*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm afraid I don't have time today.",
+      "answer": "Me temo que no tengo tiempo hoy.",
+      "accept": [
+        "Me temo que hoy no tengo tiempo."
+      ],
+      "why": "Same frame, new news: *no tengo tiempo hoy*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Tengo miedo que no va a poder ser.", "right": "Me temo que no va a poder ser este mes.", "why": "Almost. For \"I'm afraid\" in the polite sense, Spanish uses *me temo que*." },
-    { "wrong": "Me temo que no tengamos mesa.", "right": "Me temo que no tenemos mesa.", "why": "Almost. Here *temerse* reports bad news as a fact, so the verb stays ordinary." },
-    { "wrong": "Me temo no va a poder ser.", "right": "Me temo que no va a poder ser este mes.", "why": "Almost. The bad news after \"I'm afraid\" always needs *que*." }
+    {
+      "wrong": "Tengo miedo que no va a poder ser.",
+      "right": "Me temo que no va a poder ser este mes.",
+      "why": "Almost. For \"I'm afraid\" in the polite sense, Spanish uses *me temo que*."
+    },
+    {
+      "wrong": "Me temo que no tengamos mesa.",
+      "right": "Me temo que no tenemos mesa.",
+      "why": "Almost. Here *temerse* reports bad news as a fact, so the verb stays ordinary."
+    },
+    {
+      "wrong": "Me temo no va a poder ser.",
+      "right": "Me temo que no va a poder ser este mes.",
+      "why": "Almost. The bad news after \"I'm afraid\" always needs *que*."
+    }
   ],
   "personal": "Give a friend some mild bad news about your schedule, starting with *Me temo que*."
 }

@@ -6,41 +6,195 @@
     "en": "I'll leave it here so you can see it. (to a friend)"
   },
   "examples": [
-    { "es": "Lo dejo aquí para que lo veas.", "en": "I'll leave it here so you can see it. (to a friend)" },
-    { "es": "Abro temprano para que Vale encuentre todo listo.", "en": "I open early so that Vale finds everything ready." },
-    { "es": "Hernando entra sin que nadie lo note.", "en": "Hernando walks in without anyone noticing him." },
-    { "es": "Llámame antes de que salgas.", "en": "Call me before you leave. (to a friend)" },
-    { "es": "Te doy la llave para que abras tú.", "en": "I'm giving you the key so that you can open up. (to a friend)" },
-    { "es": "Nadie firma nada sin que lo lea Tomás.", "en": "Nobody signs anything without Tomás reading it." },
-    { "es": "Tomás se va antes de que llegue el abogado.", "en": "Tomás leaves before the lawyer arrives." }
+    {
+      "es": "Lo dejo aquí para que lo veas.",
+      "en": "I'll leave it here so you can see it. (to a friend)"
+    },
+    {
+      "es": "Abro temprano para que Vale encuentre todo listo.",
+      "en": "I open early so that Vale finds everything ready."
+    },
+    {
+      "es": "Hernando entra sin que nadie lo note.",
+      "en": "Hernando walks in without anyone noticing him."
+    },
+    {
+      "es": "Llámame antes de que salgas.",
+      "en": "Call me before you leave. (to a friend)"
+    },
+    {
+      "es": "Te doy la llave para que abras tú.",
+      "en": "I'm giving you the key so that you can open up. (to a friend)"
+    },
+    {
+      "es": "Nadie firma nada sin que lo lea Tomás.",
+      "en": "Nobody signs anything without Tomás reading it."
+    },
+    {
+      "es": "Tomás se va antes de que llegue la abogada.",
+      "en": "Tomás leaves before the lawyer arrives."
+    }
   ],
   "rule": "Three small phrases link what one person does to what another person does:\n*para que* so that\n*sin que* without\n*antes de que* before\n\nThe second action belongs to someone else, so its verb takes the wish form: *veas*, *note*, *salgas*, *llegue*. You met it with *cuando*. Look at the endings: *-ar* verbs switch to *-e*, the others to *-a*.\n\nWhen the same person does both things, drop *que* and use the plain verb: *Abro temprano para encontrar todo listo.* *Llámame antes de salir.*",
   "smallPrint": "Teachers call this the subjunctive after purpose and time conjunctions. It is the same wish form, now used for plans that involve someone else.",
   "readAndPick": [
-    { "es": "Lo dejo aquí para que lo veas.", "options": ["I'll leave it here so you can see it.", "I'll leave it here without you seeing it.", "I'll leave it here before you see it."], "answer": 0 },
-    { "es": "Hernando entra sin que nadie lo note.", "options": ["Hernando walks in so nobody notices him.", "Hernando walks in before anyone notices him.", "Hernando walks in without anyone noticing him."], "answer": 2 },
-    { "es": "Llámame antes de que salgas.", "options": ["Call me without you leaving.", "Call me before you leave.", "Call me so that you leave."], "answer": 1 },
-    { "es": "Tomás se va antes de que llegue el abogado.", "options": ["Tomás leaves so that the lawyer arrives.", "Tomás leaves without the lawyer arriving.", "Tomás leaves before the lawyer arrives."], "answer": 2 },
-    { "es": "Abro temprano para que Vale encuentre todo listo.", "options": ["I open early so that Vale finds everything ready.", "I open early to find everything ready.", "I open early without Vale finding everything ready."], "answer": 0 },
-    { "es": "Te doy la llave para que abras tú.", "options": ["I'm giving you the key without you opening up.", "I'm giving you the key so that I can open up.", "I'm giving you the key so that you can open up."], "answer": 2 },
-    { "es": "Nadie firma nada sin que lo lea Tomás.", "options": ["Nobody signs anything before Tomás reads it.", "Nobody signs anything without Tomás reading it.", "Nobody signs anything so that Tomás reads it."], "answer": 1 },
-    { "es": "Hablo con Vale antes de que se vaya.", "options": ["I talk to Vale before I leave.", "I talk to Vale so that she leaves.", "I talk to Vale before she leaves."], "answer": 2 },
-    { "es": "Lo hago sin que me lo pidas.", "options": ["I do it without you asking me for it.", "I do it so that you ask me for it.", "I do it before you ask me for it."], "answer": 0 }
+    {
+      "es": "Lo dejo aquí para que lo veas.",
+      "options": [
+        "I'll leave it here so you can see it.",
+        "I'll leave it here without you seeing it.",
+        "I'll leave it here before you see it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando entra sin que nadie lo note.",
+      "options": [
+        "Hernando walks in so nobody notices him.",
+        "Hernando walks in before anyone notices him.",
+        "Hernando walks in without anyone noticing him."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Llámame antes de que salgas.",
+      "options": [
+        "Call me without you leaving.",
+        "Call me before you leave.",
+        "Call me so that you leave."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás se va antes de que llegue la abogada.",
+      "options": [
+        "Tomás leaves so that the lawyer arrives.",
+        "Tomás leaves without the lawyer arriving.",
+        "Tomás leaves before the lawyer arrives."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Abro temprano para que Vale encuentre todo listo.",
+      "options": [
+        "I open early so that Vale finds everything ready.",
+        "I open early to find everything ready.",
+        "I open early without Vale finding everything ready."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Te doy la llave para que abras tú.",
+      "options": [
+        "I'm giving you the key without you opening up.",
+        "I'm giving you the key so that I can open up.",
+        "I'm giving you the key so that you can open up."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Nadie firma nada sin que lo lea Tomás.",
+      "options": [
+        "Nobody signs anything before Tomás reads it.",
+        "Nobody signs anything without Tomás reading it.",
+        "Nobody signs anything so that Tomás reads it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hablo con Vale antes de que se vaya.",
+      "options": [
+        "I talk to Vale before I leave.",
+        "I talk to Vale so that she leaves.",
+        "I talk to Vale before she leaves."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo hago sin que me lo pidas.",
+      "options": [
+        "I do it without you asking me for it.",
+        "I do it so that you ask me for it.",
+        "I do it before you ask me for it."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *para* or *sin* and type the whole sentence: *Lo dejo aquí ___ que lo veas.* (I'll leave it here so you can see it, to a friend.)", "answer": "Lo dejo aquí para que lo veas.", "accept": [], "why": "You leave it so that the other person sees it, so *para que*." },
-    { "prompt": "Pick *para* or *sin* and type the whole sentence: *Hernando entra ___ que nadie lo note.* (Hernando walks in without anyone noticing him.)", "answer": "Hernando entra sin que nadie lo note.", "accept": [], "why": "\"Without\" is *sin que*, followed by the wish form *note*." },
-    { "prompt": "Type in Spanish, to a friend: Call me before you leave.", "answer": "Llámame antes de que salgas.", "accept": ["Llámame antes de que te vayas."], "why": "*Antes de que* needs the *de*, then the wish form *salgas*." },
-    { "prompt": "Type in Spanish: I open early so that Vale finds everything ready.", "answer": "Abro temprano para que Vale encuentre todo listo.", "accept": ["Yo abro temprano para que Vale encuentre todo listo."], "why": "Vale is the one finding, so *para que* and *encuentre*." },
-    { "prompt": "Type in Spanish: Tomás leaves before the lawyer arrives.", "answer": "Tomás se va antes de que llegue el abogado.", "accept": ["Tomás se va antes de que el abogado llegue."], "why": "The lawyer arrives, so *antes de que* and *llegue*." },
-    { "prompt": "Make it about one person only: *Abro temprano para que Vale encuentre todo listo.* Say: I open early to find everything ready.", "answer": "Abro temprano para encontrar todo listo.", "accept": ["Yo abro temprano para encontrar todo listo."], "why": "When the same person does both things, *que* disappears and the verb stays plain." },
-    { "prompt": "Type in Spanish: Nobody signs anything without Tomás reading it.", "answer": "Nadie firma nada sin que lo lea Tomás.", "accept": ["Nadie firma nada sin que Tomás lo lea."], "why": "*Sin que* plus the wish form *lea*, because Tomás is the one reading." }
+    {
+      "prompt": "Pick *para* or *sin* and type the whole sentence: *Lo dejo aquí ___ que lo veas.* (I'll leave it here so you can see it, to a friend.)",
+      "answer": "Lo dejo aquí para que lo veas.",
+      "accept": [],
+      "why": "You leave it so that the other person sees it, so *para que*."
+    },
+    {
+      "prompt": "Pick *para* or *sin* and type the whole sentence: *Hernando entra ___ que nadie lo note.* (Hernando walks in without anyone noticing him.)",
+      "answer": "Hernando entra sin que nadie lo note.",
+      "accept": [],
+      "why": "\"Without\" is *sin que*, followed by the wish form *note*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Call me before you leave.",
+      "answer": "Llámame antes de que salgas.",
+      "accept": [
+        "Llámame antes de que te vayas."
+      ],
+      "why": "*Antes de que* needs the *de*, then the wish form *salgas*."
+    },
+    {
+      "prompt": "Type in Spanish: I open early so that Vale finds everything ready.",
+      "answer": "Abro temprano para que Vale encuentre todo listo.",
+      "accept": [
+        "Yo abro temprano para que Vale encuentre todo listo."
+      ],
+      "why": "Vale is the one finding, so *para que* and *encuentre*."
+    },
+    {
+      "prompt": "Type in Spanish: Tomás leaves before the lawyer arrives.",
+      "answer": "Tomás se va antes de que llegue la abogada.",
+      "accept": [
+        "Tomás se va antes de que la abogada llegue."
+      ],
+      "why": "The lawyer arrives, so *antes de que* and *llegue*."
+    },
+    {
+      "prompt": "Make it about one person only: *Abro temprano para que Vale encuentre todo listo.* Say: I open early to find everything ready.",
+      "answer": "Abro temprano para encontrar todo listo.",
+      "accept": [
+        "Yo abro temprano para encontrar todo listo."
+      ],
+      "why": "When the same person does both things, *que* disappears and the verb stays plain."
+    },
+    {
+      "prompt": "Type in Spanish: Nobody signs anything without Tomás reading it.",
+      "answer": "Nadie firma nada sin que lo lea Tomás.",
+      "accept": [
+        "Nadie firma nada sin que Tomás lo lea."
+      ],
+      "why": "*Sin que* plus the wish form *lea*, because Tomás is the one reading."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Lo dejo aquí para que lo ves.", "right": "Lo dejo aquí para que lo veas.", "why": "Almost. After *para que* the verb takes its wish form: *veas*, not *ves*." },
-    { "wrong": "Llámame antes que salgas.", "right": "Llámame antes de que salgas.", "why": "Almost. The phrase is *antes de que*, with the *de*." },
-    { "wrong": "Hernando entra sin nadie lo note.", "right": "Hernando entra sin que nadie lo note.", "why": "Almost. When someone else does the second action, *sin* needs *que*." },
-    { "wrong": "Abro temprano para que encuentre todo listo.", "right": "Abro temprano para encontrar todo listo.", "why": "Almost. If you do both things yourself, skip *que* and use the plain verb." }
+    {
+      "wrong": "Lo dejo aquí para que lo ves.",
+      "right": "Lo dejo aquí para que lo veas.",
+      "why": "Almost. After *para que* the verb takes its wish form: *veas*, not *ves*."
+    },
+    {
+      "wrong": "Llámame antes que salgas.",
+      "right": "Llámame antes de que salgas.",
+      "why": "Almost. The phrase is *antes de que*, with the *de*."
+    },
+    {
+      "wrong": "Hernando entra sin nadie lo note.",
+      "right": "Hernando entra sin que nadie lo note.",
+      "why": "Almost. When someone else does the second action, *sin* needs *que*."
+    },
+    {
+      "wrong": "Abro temprano para que yo encuentre todo listo.",
+      "right": "Abro temprano para encontrar todo listo.",
+      "why": "Almost. If you do both things yourself, skip *que* and use the plain verb."
+    }
   ],
   "personal": "Say one thing you do so that someone else can do something, or without someone noticing, using *para que* or *sin que*."
 }

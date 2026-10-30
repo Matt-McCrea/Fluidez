@@ -2,7 +2,7 @@
   "id": "ch095",
   "unit": "u32",
   "title": "Un tinto sin azúcar",
-  "text": "La doctora Beatriz Uribe no quiso tinto.\nUribe: Gracias, pero no tomo café después de las nueve.\nHernando: ¿Y entonces para qué vino a un café?\nUribe leyó la carta de Rosa y las escrituras del edificio. Nadie habló.\nUribe: La parte de Rosa ahora es suya, señor Herrera. La parte de Joaquín sigue a nombre de Joaquín. Pero hace dos años, un señor firmó un contrato de arriendo con Altamira en nombre de Joaquín. Todo el edificio, por treinta años.\nTomás: ¿Cuál señor?\nUribe: Un señor con un papel muy viejo y una firma muy rara. Les recomiendo que busquen a Joaquín, o a sus herederos. Si la familia de Joaquín aparece y pide su parte, ese contrato no vale nada.\nHernando: ¿Nada?\nUribe: Cero pesos. Les aconsejo que no pierdan tiempo. En diciembre hay una audiencia en la alcaldía.\nMariana: Beatriz, tengo que pedirte un favor. ¿Me echas una mano con este caso?\nUribe: Lo siento, pero no puedo. Estoy sola, sin asistente, y no estoy disponible antes de enero.\nSimón: ¿Me echas una mano? ¿Una mano?\nUribe miró al loro, y después la foto de Rosa detrás de la caja.\nUribe: ¿Rosa Herrera? En 1998 yo estudiaba derecho aquí cerca. En la temporada de exámenes, Rosa me daba un tinto todas las noches, y nunca me cobró.\nVale: Decía que los estudiantes mejoran el ambiente del café.\nUribe: Mi intención era decir que no. Pero le debo cinco años de tintos a Rosa.\nTomás: ¿Y cuánto cobra usted?\nUribe: Un tinto sin azúcar.\nHernando: Rosa decía que un tinto regalado vuelve. Tardó veintiocho años, pero volvió.\nUribe: Les pido una cosa: que no hablen con nadie de Joaquín. Si encuentran a Joaquín antes que ustedes, le van a ofrecer plata para vender.\nHernando: ¿Y el loro?\nUribe: Les sugiero que el loro duerma en la cocina.\nSimón: ¡Cero pesos! ¡Cero!\nEsa noche, Vale abrió un cuaderno nuevo encima de la mesa de Hernando.\nVale: Si este edificio va a ser nuestro, el café necesita un plan de verdad. Tú me echas una mano con los números.",
+  "text": "La doctora Beatriz Uribe no quiso tinto.\nUribe: Gracias, pero hoy ya me tomé tres.\nHernando: ¿Y entonces para qué vino a un café?\nUribe leyó la carta de Rosa y las escrituras del edificio. Nadie habló.\nUribe: La parte de Rosa ahora es suya, señor Herrera. La parte de Joaquín sigue a nombre de Joaquín. Pero hace dos años, un señor firmó un contrato de arriendo con Altamira en nombre de Joaquín. Todo el edificio, por treinta años.\nTomás: ¿Cuál señor?\nUribe: Un señor con un papel muy viejo y una firma muy rara. Les recomiendo que busquen a Joaquín, o a sus herederos. Si la familia de Joaquín aparece y pide su parte, ese contrato no vale nada.\nHernando: ¿Nada?\nUribe: Cero pesos. Les aconsejo que no pierdan tiempo. En diciembre hay una audiencia en la alcaldía.\nMariana: Beatriz, tengo que pedirte un favor. ¿Me echas una mano con este caso?\nUribe: Lo siento, pero no puedo. Estoy sola, sin asistente, y no estoy disponible antes de enero.\nSimón: ¿Me echas una mano? ¿Una mano?\nUribe miró al loro, y después la foto de Rosa detrás de la caja.\nUribe: ¿Rosa Herrera? En 1998 yo estudiaba derecho aquí cerca. En la temporada de exámenes, Rosa me daba un tinto todas las noches, y nunca me cobró.\nVale: Decía que los estudiantes mejoran el ambiente del café.\nUribe: Mi intención era decir que no. Pero le debo cinco años de tintos a Rosa.\nTomás: ¿Y cuánto cobra usted?\nUribe: Un tinto sin azúcar.\nHernando: Rosa decía que un tinto regalado vuelve. Tardó veintiocho años, pero volvió.\nUribe: Les pido una cosa: que no hablen con nadie de Joaquín. Si Altamira encuentra a Joaquín antes que ustedes, le van a ofrecer plata para vender.\nHernando: ¿Y el loro?\nUribe: Les sugiero que el loro duerma en la cocina.\nSimón: ¡Cero pesos! ¡Cero!\nEsa noche, Vale abrió un cuaderno nuevo encima de la mesa de Hernando.\nVale: Si este edificio va a ser nuestro, el café necesita un plan de verdad. Tú me echas una mano con los números.",
   "gloss": [
     {
       "es": "loro",
@@ -63,6 +63,14 @@
     {
       "es": "Decía que los estudiantes mejoran el ambiente del café.",
       "en": "She used to say students make the café's atmosphere better."
+    },
+    {
+      "es": "hoy ya me tomé tres",
+      "en": "I've already had three today"
+    },
+    {
+      "es": "Si Altamira encuentra a Joaquín antes que ustedes",
+      "en": "If Altamira finds Joaquín before you do"
     }
   ],
   "questions": [
@@ -199,6 +207,7 @@
     "g:yo-irregular",
     "p:aqui-ahi-alla",
     "p:cerca-de",
+    "p:comerse-todo",
     "p:con-sin",
     "p:dates-years",
     "p:de-owner",
@@ -275,6 +284,7 @@
     "l:hablar",
     "l:hacer",
     "l:heredero",
+    "l:hoy",
     "l:intención",
     "l:ir",
     "l:leer",

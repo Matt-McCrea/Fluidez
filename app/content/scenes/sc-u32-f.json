@@ -76,9 +76,9 @@
       "npcEn": "The thing is, I won't be coming through La Candelaria again until Monday.",
       "intent": "Ask him politely to call you when he arrives on Monday.",
       "accept": [
-        "¿Me hace usted el favor de llamarme cuando llegue el lunes?",
-        "Entonces, ¿me hace usted el favor de avisarme cuando llegue?",
-        "Está bien. ¿Me hace usted el favor de llamarme cuando llegue el lunes?"
+        "¿Me hace el favor de llamarme cuando llegue el lunes?",
+        "Entonces, ¿me hace el favor de avisarme cuando llegue?",
+        "Está bien. ¿Me hace el favor y me llama cuando llegue el lunes?"
       ],
       "require": [
         {
@@ -94,7 +94,7 @@
       "id": "t5",
       "npc": "Así quedamos. Oiga, hace mucho calor. ¿Me regala un vaso de agua?",
       "npcEn": "That's settled, then. Listen, it's very hot. Would you give me a glass of water?",
-      "intent": "Say of course, and invite him to have a coffee before he leaves.",
+      "intent": "Say of course, and offer him a coffee too before he goes.",
       "accept": [
         "Claro. Tome un tinto antes de que se vaya.",
         "Claro que sí. Y tome un tinto antes de que se vaya.",
@@ -208,10 +208,13 @@
     "p:demonstratives-basic",
     "p:hace-frio",
     "p:llevar-traer",
+    "p:me-hace-el-favor",
+    "p:me-haces-el-favor-de",
     "p:me-te-nos-objects",
     "p:me-trae",
     "p:otro-no-article",
     "p:quantifiers-basic",
+    "p:request-ladder",
     "p:te-propongo-que",
     "p:volver-a-inf"
   ]

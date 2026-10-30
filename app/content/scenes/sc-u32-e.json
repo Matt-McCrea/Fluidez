@@ -27,7 +27,7 @@
     {
       "id": "t2",
       "npc": "Con gusto. ¿Para qué lo va a usar?",
-      "npcEn": "Gladly. And what will you use it for?",
+      "npcEn": "Gladly. What will you use it for?",
       "intent": "Say you need it so that the café can stay open this winter.",
       "accept": [
         "Lo necesito para que el café siga abierto este invierno.",

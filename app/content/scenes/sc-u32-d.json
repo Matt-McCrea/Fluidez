@@ -91,17 +91,18 @@
       "id": "t5",
       "npc": "Me encanta. Una cosa: ¿te importaría salir en una foto con Simón?",
       "npcEn": "I love it. One thing: would you mind being in a photo with Simón?",
-      "intent": "Agree, and say that Simón has to be in the photo too.",
+      "intent": "Say you don't mind at all and you're happy to (careful: after te importaría, a yes starts with no).",
       "accept": [
-        "Claro, con gusto. Pero Simón tiene que salir en la foto.",
-        "Sí, con gusto. Pero Simón sale en la foto también.",
-        "No hay problema. Simón también sale, ¿verdad?"
+        "No, para nada. Con gusto.",
+        "No, para nada. Pero Simón va a querer hablar.",
+        "No, no me importa. Con gusto."
       ],
       "require": [
         {
-          "type": "containsWord",
-          "word": "Simón",
-          "label": "mention Simón"
+          "type": "regex",
+          "pattern": "^\\s*no\\b",
+          "flags": "i",
+          "label": "after te importaría, agree with no: No, para nada"
         }
       ],
       "focus": "p:te-importaria-inf",
@@ -112,12 +113,11 @@
     "c:claro-listo",
     "c:con-mucho-gusto",
     "c:entonces-bueno",
-    "c:hay",
     "c:hola-buenos-dias",
     "c:me-encanta",
-    "c:no-cierto",
-    "c:no-te-preocupes",
+    "c:me-importa-un-comino",
     "c:oye-mira",
+    "c:para-nada",
     "c:puedo",
     "c:quiero",
     "c:tengo",
@@ -130,7 +130,6 @@
     "g:direct-objects",
     "g:gender-articles",
     "g:gustar-full",
-    "g:hay-vs-esta",
     "g:ir-a-plans",
     "g:negation-words",
     "g:para-que",
@@ -186,7 +185,6 @@
     "l:plan",
     "l:poder",
     "l:preferir",
-    "l:problema",
     "l:publicar",
     "l:querer",
     "l:qué",
@@ -197,7 +195,6 @@
     "l:ser",
     "l:tener",
     "l:terminar",
-    "l:verdad",
     "l:viernes",
     "p:days-el-lunes",
     "p:indefinites-basic",
