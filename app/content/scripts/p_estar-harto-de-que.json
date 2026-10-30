@@ -1,0 +1,174 @@
+{
+  "node": "p:estar-harto-de-que",
+  "hook": {
+    "line": "Everyone reaches a point where asking nicely has stopped working. Spanish has a few ways to say you've reached it, and they get stronger as you go.",
+    "es": "Estoy harto de esperar.",
+    "en": "I'm sick of waiting."
+  },
+  "examples": [
+    {
+      "es": "Estoy harta de que siempre llegues tarde.",
+      "en": "I'm fed up with you always being late. (a woman speaking, to a friend)"
+    },
+    {
+      "es": "Estoy harto de esperar.",
+      "en": "I'm sick of waiting. (a man speaking)"
+    },
+    {
+      "es": "Ya me cansé de repetirlo.",
+      "en": "I'm tired of saying it over and over."
+    },
+    {
+      "es": "¡Ya basta!",
+      "en": "That's enough!"
+    },
+    {
+      "es": "¡Ya basta de excusas!",
+      "en": "Enough excuses!"
+    },
+    {
+      "es": "Estoy harto de que no me escuchen.",
+      "en": "I'm fed up with them not listening to me. (a man speaking)"
+    }
+  ],
+  "rule": "Two frames after *estoy harto de*.\n\nSame person feels and does: an infinitive. *Estoy harto de esperar.*\n\nSomeone else does it: *que* plus the wish form. *Estoy harta de que llegues tarde.*\n\n*Harto* is for a man speaking, *harta* for a woman. English says \"fed up with you being late\"; Spanish needs *que*.\n\nMilder: *Ya me cansé de…*. To cut it off: *¡Ya basta!* or *¡Ya basta de* plus the thing.",
+  "smallPrint": "Teachers call this an expression of emotion: the feeling triggers the subjunctive after *que*.",
+  "readAndPick": [
+    {
+      "es": "Estoy harta de que siempre llegues tarde.",
+      "options": [
+        "I'm fed up with always being late.",
+        "I'm fed up with you always being late.",
+        "I'm fed up that I always arrive late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy harto de esperar.",
+      "options": [
+        "I'm sick of you waiting.",
+        "I'm sick of him waiting.",
+        "I'm sick of waiting."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ya me cansé de repetirlo.",
+      "options": [
+        "I'm tired of saying it over and over.",
+        "You're tired of repeating it.",
+        "I'll get tired of repeating it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Ya basta de excusas!",
+      "options": [
+        "Make your excuses.",
+        "Enough excuses!",
+        "I accept your excuses."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy harto de que no me escuchen.",
+      "options": [
+        "I'm fed up with listening to them.",
+        "I'm fed up with not listening to them.",
+        "I'm fed up with them not listening to me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¡Ya basta!",
+      "options": [
+        "That's enough!",
+        "Not yet!",
+        "Hurry up!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy harta de repetir lo mismo.",
+      "options": [
+        "A man says he's sick of repeating the same thing.",
+        "A woman says she's sick of repeating the same thing.",
+        "A woman says she's sick of him repeating the same thing."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy harto de que mi hermano no conteste.",
+      "options": [
+        "I'm fed up with my brother not answering.",
+        "I'm fed up with not answering my brother.",
+        "I'm fed up with answering my brother."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Estoy harta de que siempre ___ tarde.* (*llegues* or *llegar*)",
+      "answer": "Estoy harta de que siempre llegues tarde.",
+      "accept": [],
+      "why": "Someone else does it, so after *que* comes the wish form."
+    },
+    {
+      "prompt": "Type in Spanish (a man speaking): I'm sick of waiting.",
+      "answer": "Estoy harto de esperar.",
+      "accept": [],
+      "why": "You do and feel it, so *de* plus an infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: I'm tired of saying it over and over.",
+      "answer": "Ya me cansé de repetirlo.",
+      "accept": [],
+      "why": "*Ya me cansé de* plus an infinitive says \"I've had it with\"."
+    },
+    {
+      "prompt": "Type in Spanish (a woman speaking): I'm fed up with them not listening to me.",
+      "answer": "Estoy harta de que no me escuchen.",
+      "accept": [],
+      "why": "A woman says *harta*, and *no me escuchen* is the wish form after *que*."
+    },
+    {
+      "prompt": "Type in Spanish: Enough excuses!",
+      "answer": "¡Ya basta de excusas!",
+      "accept": [
+        "Basta ya de excusas."
+      ],
+      "why": "*Ya basta de* plus the thing you want stopped."
+    },
+    {
+      "prompt": "Make it a woman speaking: *Estoy harto de esperar.*",
+      "answer": "Estoy harta de esperar.",
+      "accept": [],
+      "why": "*Harta* ends in *a* for a woman speaking."
+    },
+    {
+      "prompt": "Say it about someone else: *Estoy harto de llegar tarde.* Say (a man speaking): I'm fed up with my brother being late.",
+      "answer": "Estoy harto de que mi hermano llegue tarde.",
+      "accept": [],
+      "why": "A new doer needs *que* plus the wish form: *llegue*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy harta de que llegas tarde.",
+      "right": "Estoy harta de que llegues tarde.",
+      "why": "Almost. After *de que* the verb takes the wish form: *llegues*."
+    },
+    {
+      "wrong": "Estoy harto de esperando.",
+      "right": "Estoy harto de esperar.",
+      "why": "Almost. English likes \"-ing\" here, but Spanish uses the infinitive after *de*."
+    },
+    {
+      "wrong": "Soy harto de esperar.",
+      "right": "Estoy harto de esperar.",
+      "why": "Almost. A feeling you are in right now takes *estar*."
+    }
+  ],
+  "personal": "Tell us one small thing you're fed up with. Start with *Estoy harto de…* or *Estoy harta de…*"
+}

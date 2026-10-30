@@ -1,0 +1,176 @@
+{
+  "node": "p:me-pone-nervioso-que",
+  "hook": {
+    "line": "Some things get under your skin before you can name them: a message left on read, a wait that drags on. Spanish puts the cause first and you are the one it lands on.",
+    "es": "Me pone nerviosa que no contestes los mensajes.",
+    "en": "It makes me nervous when you don't answer my messages. (a woman speaking, to a friend)"
+  },
+  "examples": [
+    {
+      "es": "Me pone nerviosa que no contestes los mensajes.",
+      "en": "It makes me nervous when you don't answer my messages. (a woman speaking, to a friend)"
+    },
+    {
+      "es": "Me desespera la lentitud de este trámite.",
+      "en": "The slowness of this process drives me crazy."
+    },
+    {
+      "es": "Al final perdí la paciencia.",
+      "en": "In the end I lost my patience."
+    },
+    {
+      "es": "Me pone muy nervioso que Vale no diga nada.",
+      "en": "It makes me very nervous that Vale says nothing. (a man speaking)"
+    },
+    {
+      "es": "Me pone nerviosa la espera.",
+      "en": "The wait makes me nervous. (a woman speaking)"
+    },
+    {
+      "es": "No me pone nervioso hablar en público.",
+      "en": "Speaking in public doesn't make me nervous. (a man speaking)"
+    }
+  ],
+  "rule": "The cause is the subject, and you are the *me* it lands on: *me pone nervioso* is \"it makes me nervous\".\n\nSay *nervioso* or *nerviosa* for who is speaking. Add *muy* to turn it up.\n\nAfter it comes a noun (*la espera*), an infinitive (*hablar en público*) or *que* plus the wish form (*que no contestes*).\n\n*Me desespera* is stronger: it drives me crazy. For the breaking point, *perder la paciencia*: *perdí la paciencia*.",
+  "smallPrint": "Teachers call *poner* plus an adjective a verb of change: it says what state something puts you in.",
+  "readAndPick": [
+    {
+      "es": "Me pone nerviosa que no contestes los mensajes.",
+      "options": [
+        "I'm nervous when I don't answer messages.",
+        "It makes you nervous when I don't answer.",
+        "It makes me nervous when you don't answer my messages."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me desespera la lentitud de este trámite.",
+      "options": [
+        "The slowness of this process drives me crazy.",
+        "I drive this process crazy.",
+        "This process makes you crazy."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Al final perdí la paciencia.",
+      "options": [
+        "In the end I'm losing my patience.",
+        "In the end I lost my patience.",
+        "In the end I found my patience."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me pone muy nervioso que Vale no diga nada.",
+      "options": [
+        "I make Vale very nervous by saying nothing.",
+        "Vale is very nervous that I say nothing.",
+        "It makes me very nervous that Vale says nothing."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me pone nerviosa la espera.",
+      "options": [
+        "A woman says the wait makes her nervous.",
+        "A man says the wait makes him nervous.",
+        "A woman says she's waiting nervously."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No me pone nervioso hablar en público.",
+      "options": [
+        "Speaking in public makes me nervous.",
+        "I don't make people nervous in public.",
+        "Speaking in public doesn't make me nervous."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estoy perdiendo la paciencia.",
+      "options": [
+        "I lost my patience.",
+        "I'm losing my patience.",
+        "I'll lose my patience."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me pone nerviosa que siempre lleguen tarde.",
+      "options": [
+        "It makes me nervous that they're always late.",
+        "It makes them nervous that I'm always late.",
+        "I'm nervous about always being late."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence (a woman speaking): *Me pone ___ que no contestes.* (*nerviosa* or *nervioso*)",
+      "answer": "Me pone nerviosa que no contestes.",
+      "accept": [],
+      "why": "A woman speaking takes *nerviosa*."
+    },
+    {
+      "prompt": "Type in Spanish (a man speaking): It makes me nervous that Vale says nothing.",
+      "answer": "Me pone nervioso que Vale no diga nada.",
+      "accept": [],
+      "why": "The cause is the subject, then *que* and the wish form: *diga*."
+    },
+    {
+      "prompt": "Type in Spanish: The slowness of this process drives me crazy.",
+      "answer": "Me desespera la lentitud de este trámite.",
+      "accept": [],
+      "why": "*Me desespera* is followed directly by the thing that does it."
+    },
+    {
+      "prompt": "Type in Spanish: In the end I lost my patience.",
+      "answer": "Al final perdí la paciencia.",
+      "accept": [
+        "Perdí la paciencia al final."
+      ],
+      "why": "It happened once, so *perdí*, with *la paciencia*."
+    },
+    {
+      "prompt": "Type in Spanish: It makes me nervous that they're always late. (a woman speaking)",
+      "answer": "Me pone nerviosa que siempre lleguen tarde.",
+      "accept": [
+        "Me pone nerviosa que lleguen siempre tarde."
+      ],
+      "why": "The late ones are *they*, so the wish form is *lleguen*."
+    },
+    {
+      "prompt": "Turn it up: *Me pone nervioso que Vale no diga nada.* Say \"very\".",
+      "answer": "Me pone muy nervioso que Vale no diga nada.",
+      "accept": [],
+      "why": "*Muy* goes right before *nervioso*."
+    },
+    {
+      "prompt": "Make it negative: *Me pone nervioso hablar en público.*",
+      "answer": "No me pone nervioso hablar en público.",
+      "accept": [],
+      "why": "Put *no* in front of *me*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me pone nerviosa que no contestas los mensajes.",
+      "right": "Me pone nerviosa que no contestes los mensajes.",
+      "why": "Almost. After a feeling plus *que*, the verb takes the wish form: *contestes*."
+    },
+    {
+      "wrong": "Yo desespero la lentitud de este trámite.",
+      "right": "Me desespera la lentitud de este trámite.",
+      "why": "Almost. The slowness is what does the driving crazy, and you are the *me*."
+    },
+    {
+      "wrong": "Perdí mi paciencia.",
+      "right": "Perdí la paciencia.",
+      "why": "Almost. Spanish says *la paciencia* here, not *mi paciencia*."
+    }
+  ],
+  "personal": "Say one thing that makes you nervous, or drives you crazy. Start with *Me pone nervioso…*, *Me pone nerviosa…* or *Me desespera…*"
+}

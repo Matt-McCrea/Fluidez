@@ -1,0 +1,174 @@
+{
+  "node": "p:me-da-rabia-me-indigna",
+  "hook": {
+    "line": "Anger comes in sizes, and picking the wrong one makes a fight bigger. Spanish has a ladder: *me da rabia* is personal, *me indigna* is about what's unfair, *no aguanto que* is a line you won't cross.",
+    "es": "Me da rabia que no me hayas avisado.",
+    "en": "It makes me angry that you didn't tell me. (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "Me da rabia que no me hayas avisado.",
+      "en": "It makes me angry that you didn't tell me. (to a friend)"
+    },
+    {
+      "es": "Me indigna que hayan despedido a tanta gente sin explicación.",
+      "en": "It outrages me that they've fired so many people without explanation."
+    },
+    {
+      "es": "No aguanto que me interrumpan.",
+      "en": "I can't stand being interrupted."
+    },
+    {
+      "es": "Me da mucha rabia que Altamira compre toda la cuadra.",
+      "en": "It makes me really angry that Altamira is buying the whole block."
+    },
+    {
+      "es": "Me indigna que le hablen así a Hernando.",
+      "en": "It outrages me that they talk to Hernando like that."
+    },
+    {
+      "es": "No aguanto que me hablen así.",
+      "en": "I won't put up with being spoken to like that."
+    }
+  ],
+  "rule": "Three steps up. *Me da rabia que…* is personal: it hurts me. *Me indigna que…* is moral: it's unfair. *No aguanto que…* is a limit: I won't take it.\n\nThey work like *me pone nervioso*: the cause comes first, then *que* and the wish form: *que me interrumpan*.\n\nFor something already done, use *hayas* or *hayan* plus the *-ado* form: *que no me hayas avisado*.\n\nAdd *mucha* to *rabia* to push it. Save *indignar* for injustice, not a late bus.",
+  "smallPrint": "Teachers call *hayas avisado* the perfect subjunctive: the wish form of *haber* plus the *-ado* form.",
+  "readAndPick": [
+    {
+      "es": "Me da rabia que no me hayas avisado.",
+      "options": [
+        "It makes me angry that you won't tell me.",
+        "It makes me angry that you didn't tell me.",
+        "It makes me angry that I didn't tell you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No aguanto que me interrumpan.",
+      "options": [
+        "I can't stand interrupting them.",
+        "They can't stand being interrupted.",
+        "I can't stand being interrupted."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me indigna que hayan despedido a tanta gente sin explicación.",
+      "options": [
+        "It outrages me that they've fired so many people without explanation.",
+        "It outrages me that they're going to fire many people.",
+        "I'm outraged at having fired so many people."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me da mucha rabia que Altamira compre toda la cuadra.",
+      "options": [
+        "It makes me really angry that Altamira bought the whole block.",
+        "It makes me really angry that Altamira is buying the whole block.",
+        "Altamira is really angry that I'm buying the whole block."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da rabia que hayas dicho eso.",
+      "options": [
+        "It makes me angry that you say that.",
+        "It makes you angry that I said that.",
+        "It makes me angry that you said that."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No aguanto que me hablen así.",
+      "options": [
+        "I won't put up with being spoken to like that.",
+        "I don't like speaking like this.",
+        "I can't speak like that."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me indigna que le hablen así a Hernando.",
+      "options": [
+        "Hernando is outraged that they talk to me like that.",
+        "It outrages me that they talk to Hernando like that.",
+        "It outrages Hernando that I talk like that."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da mucha rabia no poder ayudar.",
+      "options": [
+        "It makes you really angry not to help.",
+        "It makes me really angry that you can't help.",
+        "It makes me really angry not to be able to help."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Me indigna que ___ despedido a tanta gente.* (*hayan* or *han*)",
+      "answer": "Me indigna que hayan despedido a tanta gente.",
+      "accept": [],
+      "why": "After *me indigna que* the verb takes the wish form, and for something done that is *hayan*."
+    },
+    {
+      "prompt": "Type in Spanish: I can't stand being interrupted.",
+      "answer": "No aguanto que me interrumpan.",
+      "accept": [],
+      "why": "*No aguanto que* plus the wish form: *interrumpan*."
+    },
+    {
+      "prompt": "Type in Spanish: It makes me really angry that Altamira is buying the whole block.",
+      "answer": "Me da mucha rabia que Altamira compre toda la cuadra.",
+      "accept": [],
+      "why": "*Mucha* sits before *rabia*, then *que* and *compre*."
+    },
+    {
+      "prompt": "Type in Spanish: It outrages me that they talk to Hernando like that.",
+      "answer": "Me indigna que le hablen así a Hernando.",
+      "accept": [
+        "Me indigna que le hablen a Hernando así."
+      ],
+      "why": "Injustice is *me indigna que*, with *hablen* as the wish form."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: It makes me angry that you didn't tell me.",
+      "answer": "Me da rabia que no me hayas avisado.",
+      "accept": [],
+      "why": "It's already done, so *hayas* plus *avisado*."
+    },
+    {
+      "prompt": "Take it up a step: *Me da rabia que no me hayas avisado.* Say it with *indignar*.",
+      "answer": "Me indigna que no me hayas avisado.",
+      "accept": [],
+      "why": "*Me indigna* is the moral level: it feels unfair."
+    },
+    {
+      "prompt": "Type in Spanish: I won't put up with being spoken to like that.",
+      "answer": "No aguanto que me hablen así.",
+      "accept": [],
+      "why": "The limit is *no aguanto que* plus *hablen*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me da rabia de que no me hayas avisado.",
+      "right": "Me da rabia que no me hayas avisado.",
+      "why": "Almost. Spanish has no *de* before *que* here."
+    },
+    {
+      "wrong": "No aguanto que me interrumpen.",
+      "right": "No aguanto que me interrumpan.",
+      "why": "Almost. After *no aguanto que* the verb takes the wish form: *interrumpan*."
+    },
+    {
+      "wrong": "Me da rabia que no me avisaste.",
+      "right": "Me da rabia que no me hayas avisado.",
+      "why": "Almost. For something already done, use *hayas* plus the *-ado* form."
+    }
+  ],
+  "personal": "Say one thing that makes you angry, in the right size. Start with *Me da rabia…*, *Me indigna…* or *No aguanto que…*"
+}

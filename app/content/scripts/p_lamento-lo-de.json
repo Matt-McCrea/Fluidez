@@ -1,0 +1,184 @@
+{
+  "node": "p:lamento-lo-de",
+  "hook": {
+    "line": "Sometimes the kindest apology doesn't retell the fight. *Lo de* points at the thing you both already know about, so nobody has to say it out loud.",
+    "es": "Lamento lo del otro día, de verdad.",
+    "en": "I'm really sorry about the other day."
+  },
+  "examples": [
+    {
+      "es": "Lamento lo del otro día, de verdad.",
+      "en": "I'm really sorry about the other day."
+    },
+    {
+      "es": "Siento lo de tu papá.",
+      "en": "I'm sorry about your dad."
+    },
+    {
+      "es": "Lamento lo de ayer.",
+      "en": "I'm sorry about yesterday."
+    },
+    {
+      "es": "Siento mucho lo de la pelea.",
+      "en": "I'm very sorry about the fight."
+    },
+    {
+      "es": "Lamento lo del malentendido.",
+      "en": "I'm sorry about the misunderstanding."
+    },
+    {
+      "es": "Lamento lo de su carro, señora.",
+      "en": "I'm sorry about your car, ma'am."
+    }
+  ],
+  "rule": "*Lo de* plus a noun means \"that business about\". You name the matter without telling it again.\n\nSay *siento lo de* or *lamento lo de*, then the thing with its article or *tu*: *lo de ayer*, *lo de tu papá*. *De* plus *el* joins into *del*: *lo del otro día*.\n\nIt works for your own mistake and for someone else's bad news. Use *siento no haber* when you want to name what you did.",
+  "smallPrint": "Teachers call *lo de* a neuter article with *de*: it stands for a whole situation.",
+  "readAndPick": [
+    {
+      "es": "Siento lo de tu papá.",
+      "options": [
+        "I'm sorry about your dad.",
+        "I'm sorry I hurt your dad.",
+        "I'm sorry your dad is late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lamento lo de ayer.",
+      "options": [
+        "I'm sorry I came yesterday.",
+        "I'm sorry about yesterday.",
+        "I'm sorry you missed yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento mucho lo de la pelea.",
+      "options": [
+        "I'm very sorry I didn't fight.",
+        "I'm very sorry for starting a fight.",
+        "I'm very sorry about the fight."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lamento lo del malentendido.",
+      "options": [
+        "I'm sorry about the misunderstanding.",
+        "I'm sorry for not understanding you.",
+        "I'm sorry you misunderstood me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lamento lo del otro día, de verdad.",
+      "options": [
+        "I really don't regret the other day.",
+        "I'm really sorry about the other day.",
+        "I'm really sorry about tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento no haberte avisado.",
+      "options": [
+        "I'm sorry about the notice.",
+        "I'm sorry you didn't let me know.",
+        "I'm sorry I didn't let you know."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lamento lo de su carro, señora.",
+      "options": [
+        "I'm sorry about your car, ma'am.",
+        "I'm sorry about my car, ma'am.",
+        "I'm sorry I took your car, ma'am."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siento lo del jueves.",
+      "options": [
+        "I'm sorry I'm late on Thursday.",
+        "I'm sorry about Thursday.",
+        "I'm sorry about the weekend."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Lamento ___ otro día.* (*lo del* or *lo de el*)",
+      "answer": "Lamento lo del otro día.",
+      "accept": [],
+      "why": "*De* and *el* always join into *del*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I'm sorry about your dad.",
+      "answer": "Siento lo de tu papá.",
+      "accept": [
+        "Lamento lo de tu papá."
+      ],
+      "why": "*Lo de* plus *tu papá* names the matter."
+    },
+    {
+      "prompt": "Type in Spanish: I'm sorry about yesterday.",
+      "answer": "Lamento lo de ayer.",
+      "accept": [
+        "Siento lo de ayer."
+      ],
+      "why": "Days like *ayer* take no article after *lo de*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm very sorry about the fight.",
+      "answer": "Siento mucho lo de la pelea.",
+      "accept": [
+        "Lamento mucho lo de la pelea."
+      ],
+      "why": "*Mucho* goes right after *siento*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm sorry about the misunderstanding.",
+      "answer": "Lamento lo del malentendido.",
+      "accept": [
+        "Siento lo del malentendido."
+      ],
+      "why": "*De* plus *el malentendido* becomes *del*."
+    },
+    {
+      "prompt": "Say it to a woman you don't know well: I'm sorry about your car, ma'am.",
+      "answer": "Lamento lo de su carro, señora.",
+      "accept": [
+        "Siento lo de su carro, señora."
+      ],
+      "why": "With *señora* you use *su*, the formal \"your\"."
+    },
+    {
+      "prompt": "Make it about Thursday: *Siento lo de ayer.* Say: I'm sorry about Thursday.",
+      "answer": "Siento lo del jueves.",
+      "accept": [
+        "Lamento lo del jueves."
+      ],
+      "why": "Weekdays take *el*, so *de* plus *el* is *del*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Lamento lo de el otro día.",
+      "right": "Lamento lo del otro día.",
+      "why": "Almost. *De* and *el* always join into *del*."
+    },
+    {
+      "wrong": "Siento de tu papá.",
+      "right": "Siento lo de tu papá.",
+      "why": "Almost. You need *lo* in front of *de*: it is what means \"that matter\"."
+    },
+    {
+      "wrong": "Lamento lo tu papá.",
+      "right": "Lamento lo de tu papá.",
+      "why": "Almost. Keep *de* between *lo* and the thing."
+    }
+  ],
+  "personal": "Is there a day or an event you'd say *Lamento lo de…* about? Write it."
+}

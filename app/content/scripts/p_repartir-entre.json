@@ -1,0 +1,174 @@
+{
+  "node": "p:repartir-entre",
+  "hook": {
+    "line": "Money and work always end up on the table, and someone has to say who gets what. Spanish keeps two ideas apart: cutting something into parts, and sharing it out among people.",
+    "es": "¿Partimos la cuenta por la mitad?",
+    "en": "Shall we split the bill in half?"
+  },
+  "examples": [
+    {
+      "es": "Partimos la cuenta por la mitad.",
+      "en": "We split the bill in half."
+    },
+    {
+      "es": "Repartieron la herencia entre los hijos.",
+      "en": "They shared out the inheritance among the children."
+    },
+    {
+      "es": "Dividimos el grupo en tres equipos.",
+      "en": "We divided the group into three teams."
+    },
+    {
+      "es": "Vale repartió los pasteles entre los clientes.",
+      "en": "Vale shared out the pastries among the customers."
+    },
+    {
+      "es": "¿Pagamos a medias?",
+      "en": "Shall we go halves?"
+    },
+    {
+      "es": "Tomás partió el pan por la mitad.",
+      "en": "Tomás split the bread in half."
+    }
+  ],
+  "rule": "English says \"split\" for everything. Spanish asks what you are doing.\n\nCutting into parts: *partir* or *dividir*, then *por la mitad* or *en* plus the number: *Dividimos el grupo en tres equipos*.\n\nHanding out to people: *repartir* plus *entre* and the people: *Repartieron la herencia entre los hijos*.\n\nFor paying, *a medias* means half each.",
+  "smallPrint": "Teachers call *entre* here a preposition of distribution: the recipients sit after it.",
+  "readAndPick": [
+    {
+      "es": "Partimos la cuenta por la mitad.",
+      "options": [
+        "We paid the whole bill.",
+        "We split the bill in half.",
+        "We split the bill in three."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dividimos el grupo en tres equipos.",
+      "options": [
+        "We divided the group into three teams.",
+        "We divided the group into two teams.",
+        "We joined three teams."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Repartieron la herencia entre los hijos.",
+      "options": [
+        "They cut the inheritance in half.",
+        "They left the inheritance to one child.",
+        "They shared out the inheritance among the children."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Pagamos a medias?",
+      "options": [
+        "Shall I pay it all?",
+        "Shall we pay later?",
+        "Shall we go halves?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale repartió los pasteles entre los clientes.",
+      "options": [
+        "Vale handed out the pastries among the customers.",
+        "Vale cut the pastries in half.",
+        "Vale ate the pastries with the customers."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás partió el pan por la mitad.",
+      "options": [
+        "Tomás shared the bread out among the customers.",
+        "Tomás split the bread in half.",
+        "Tomás split the bread in three."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Repartimos el trabajo entre los tres.",
+      "options": [
+        "We did the work in three days.",
+        "We gave all the work to the third one.",
+        "We shared the work out among the three of us."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Dividieron la cuenta en cuatro.",
+      "options": [
+        "They split the bill four ways.",
+        "They split the bill in half.",
+        "They paid the bill for four."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right word and type the whole sentence: *Partimos la cuenta ___ la mitad.* (*por* or *entre*)",
+      "answer": "Partimos la cuenta por la mitad.",
+      "accept": [],
+      "why": "*Por la mitad* is the set phrase for cutting something in two."
+    },
+    {
+      "prompt": "Type in Spanish: They shared out the inheritance among the children.",
+      "answer": "Repartieron la herencia entre los hijos.",
+      "accept": [],
+      "why": "Handing out to people is *repartir* plus *entre* and the people."
+    },
+    {
+      "prompt": "Pick the right word and type the whole sentence: *Dividimos el grupo ___ tres equipos.* (*en* or *entre*)",
+      "answer": "Dividimos el grupo en tres equipos.",
+      "accept": [],
+      "why": "Cutting into a number of parts takes *en* plus the number."
+    },
+    {
+      "prompt": "Type in Spanish: Vale shared out the pastries among the customers.",
+      "answer": "Vale repartió los pasteles entre los clientes.",
+      "accept": [],
+      "why": "The pastries go to people, so *repartió* and *entre*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Shall we go halves?",
+      "answer": "¿Pagamos a medias?",
+      "accept": [],
+      "why": "*A medias* is the everyday way to share a bill fifty-fifty."
+    },
+    {
+      "prompt": "Put it about Tomás: *Partimos el pan por la mitad.* Say: Tomás split the bread in half.",
+      "answer": "Tomás partió el pan por la mitad.",
+      "accept": [
+        "Partió el pan por la mitad."
+      ],
+      "why": "One person did it in the past, so *partió*."
+    },
+    {
+      "prompt": "Make it negative: *Repartimos el trabajo entre los tres.* Say: We didn't share out the work among the three of us.",
+      "answer": "No repartimos el trabajo entre los tres.",
+      "accept": [],
+      "why": "Put *no* in front of the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Repartieron la herencia en los hijos.",
+      "right": "Repartieron la herencia entre los hijos.",
+      "why": "Almost. When the people who receive are named, Spanish uses *entre*, not *en*."
+    },
+    {
+      "wrong": "Partimos la cuenta en la mitad.",
+      "right": "Partimos la cuenta por la mitad.",
+      "why": "Almost. English says \"in half\", but Spanish says *por la mitad*."
+    },
+    {
+      "wrong": "Dividimos el grupo por tres equipos.",
+      "right": "Dividimos el grupo en tres equipos.",
+      "why": "Almost. The parts you end up with follow *en*."
+    }
+  ],
+  "personal": "Think of the last time you split something with someone. Say it with *partimos…* or *repartimos…*"
+}
