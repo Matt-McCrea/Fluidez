@@ -111,10 +111,10 @@
       "why": "*Culpa* is feminine, so the long word is *mía*."
     },
     {
-      "prompt": "Pick and type the whole sentence: *Llegamos tarde ___ el tráfico.* (*por culpa de* or *gracias a*) We were late because of the traffic.",
+      "prompt": "Pick and type the whole sentence: *Llegamos tarde ___ tráfico.* (*por culpa del* or *gracias al*) We were late because of the traffic.",
       "answer": "Llegamos tarde por culpa del tráfico.",
       "accept": [],
-      "why": "Being late is bad news, so blame: *por culpa de*."
+      "why": "Being late is bad news, so blame: *por culpa del*."
     },
     {
       "prompt": "Pick and type the whole sentence: *___ Hernando, llegamos a tiempo.* (*Por culpa de* or *Gracias a*) Thanks to Hernando, we arrived on time.",

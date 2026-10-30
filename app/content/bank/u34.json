@@ -654,8 +654,8 @@
   },
   {
     "id": "u34-0029",
-    "es": "Se me quedó una idea en la cabeza todo el día.",
-    "en": "An idea stayed in my head all day.",
+    "es": "Se me quedó la canción en la cabeza todo el día.",
+    "en": "The song got stuck in my head all day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -663,8 +663,8 @@
       "g:preterite-ar",
       "g:se-accidental",
       "l:cabeza",
+      "l:canción",
       "l:día",
-      "l:idea",
       "l:quedarse",
       "p:todos-los-dias"
     ],
@@ -925,7 +925,7 @@
   },
   {
     "id": "u34-0040",
-    "es": "Se te cayó algo, señora.",
+    "es": "Se le cayó algo, señora.",
     "en": "You dropped something, ma'am.",
     "accept": [],
     "acceptEn": [],
@@ -1106,7 +1106,7 @@
   {
     "id": "u34-0048",
     "es": "Se nos rompió la ventana con el golpe.",
-    "en": "Our window broke with the knock.",
+    "en": "Our window broke with the impact.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1610,7 +1610,7 @@
   },
   {
     "id": "u34-0070",
-    "es": "Se me acabó la gripa por fin.",
+    "es": "Por fin se me quitó la gripa.",
     "en": "My cold finally went away.",
     "accept": [],
     "acceptEn": [],
@@ -1618,9 +1618,9 @@
       "g:gender-articles",
       "g:preterite-ar",
       "g:se-accidental",
-      "l:acabar",
       "l:fin",
-      "l:gripa"
+      "l:gripa",
+      "l:quitarse"
     ],
     "targets": [
       "g:se-accidental"
@@ -1676,17 +1676,17 @@
   },
   {
     "id": "u34-0073",
-    "es": "Se me perdió un zapato en el barrio.",
-    "en": "I lost a shoe in the neighbourhood.",
+    "es": "Se me perdió la gorra en el partido.",
+    "en": "I lost my cap at the match.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
       "g:se-accidental",
-      "l:barrio",
-      "l:perderse",
-      "l:zapato"
+      "l:gorra",
+      "l:partido",
+      "l:perderse"
     ],
     "targets": [
       "g:se-accidental"
@@ -1884,7 +1884,7 @@
   {
     "id": "u34-0082",
     "es": "Se me cayó la tarjeta del banco.",
-    "en": "My bank card fell out.",
+    "en": "I dropped my bank card.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2473,7 +2473,7 @@
   {
     "id": "u34-0109",
     "es": "Le rompieron la puerta a Hernando en el trancón.",
-    "en": "They broke Hernando's door in the traffic jam.",
+    "en": "They smashed Hernando's car door in the traffic jam.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2768,8 +2768,8 @@
   },
   {
     "id": "u34-0122",
-    "es": "Mi hermana se rompió una pierna esquiando.",
-    "en": "My sister broke a leg skiing.",
+    "es": "Mi hermana se rompió una pierna montando en bicicleta.",
+    "en": "My sister broke her leg riding a bike.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2777,11 +2777,13 @@
       "g:gerund-ways",
       "g:preterite-er-ir",
       "g:reflexive-routine",
-      "l:esquiar",
+      "l:bicicleta",
       "l:hermana",
+      "l:montar",
       "l:pierna",
       "l:romperse",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:transport-en"
     ],
     "targets": [],
     "kind": "statement",
@@ -2934,21 +2936,23 @@
   },
   {
     "id": "u34-0129",
-    "es": "En la clínica me revisaron el pulmón con calma.",
-    "en": "At the clinic they checked my lung carefully.",
+    "es": "Los médicos dicen que tengo los pulmones de un niño.",
+    "en": "The doctors say I have the lungs of a child.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tengo",
       "g:gender-articles",
-      "g:preterite-ar",
-      "l:calma",
-      "l:clínica",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "g:yo-irregular",
+      "l:decir",
+      "l:médico",
+      "l:niño",
       "l:pulmón",
-      "l:revisar",
-      "p:me-te-nos-objects"
+      "l:tener"
     ],
     "targets": [
-      "l:clínica",
       "l:pulmón"
     ],
     "kind": "statement",
@@ -3166,8 +3170,8 @@
   },
   {
     "id": "u34-0139",
-    "es": "Se peinó el pelo antes de salir.",
-    "en": "She combed her hair before going out.",
+    "es": "Se secó el pelo antes de salir.",
+    "en": "She dried her hair before going out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3176,9 +3180,9 @@
       "g:preterite-ar",
       "g:reflexive-routine",
       "l:antes",
-      "l:peinarse",
       "l:pelo",
       "l:salir",
+      "l:secarse",
       "p:lavarse-las-manos"
     ],
     "targets": [],
@@ -3190,7 +3194,7 @@
   {
     "id": "u34-0140",
     "es": "Me sacaron una muela esta mañana.",
-    "en": "They pulled out a tooth of mine this morning.",
+    "en": "I had a tooth pulled this morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3384,17 +3388,19 @@
   },
   {
     "id": "u34-0148",
-    "es": "Un perro me atacó en la pierna.",
-    "en": "A dog attacked me on the leg.",
+    "es": "Me duele la pierna desde el partido.",
+    "en": "My leg has hurt since the match.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
-      "l:atacar",
-      "l:perro",
+      "g:gustar-full",
+      "g:stem-boot",
+      "l:doler",
+      "l:partido",
       "l:pierna",
-      "p:me-te-nos-objects"
+      "p:doler",
+      "p:me-duele"
     ],
     "targets": [],
     "kind": "statement",
@@ -3404,15 +3410,15 @@
   },
   {
     "id": "u34-0149",
-    "es": "Me quedé callado para no decir nada.",
-    "en": "I stayed quiet so as not to say anything. (a man speaking)",
+    "es": "Me quedé callado para no pelear.",
+    "en": "I kept quiet so as not to fight. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:preterite-ar",
       "g:reflexive-routine",
       "l:callado",
-      "l:decir",
+      "l:pelearse",
       "l:quedarse",
       "p:para-inf"
     ],
@@ -3424,8 +3430,8 @@
   },
   {
     "id": "u34-0150",
-    "es": "Me pegué un dedo con la puerta.",
-    "en": "I banged my finger in the door.",
+    "es": "Me pegué en el dedo con la puerta.",
+    "en": "I banged my finger on the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3555,7 +3561,7 @@
   {
     "id": "u34-0156",
     "es": "¿Hubo heridos en el choque?",
-    "en": "Were there any injured in the crash?",
+    "en": "Was anyone hurt in the crash?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4100,21 +4106,18 @@
   },
   {
     "id": "u34-0180",
-    "es": "Le pasó algo en la cartera, parece rota.",
-    "en": "Something happened to her purse, it looks torn.",
+    "es": "Se le rompió la cartera y se le cayó todo.",
+    "en": "Her handbag ripped and everything fell out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:indirect-objects",
-      "g:present-er-ir",
-      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:preterite-spelling-stem",
+      "g:se-accidental",
+      "l:caerse",
       "l:cartera",
-      "l:parecer",
-      "l:pasar",
-      "l:romper",
-      "p:indefinites-basic",
-      "p:parecer-vs-parecerse"
+      "l:romperse"
     ],
     "targets": [
       "l:cartera"
@@ -4680,18 +4683,19 @@
   },
   {
     "id": "u34-0203",
-    "es": "Espero que se haya ido ya el trancón.",
-    "en": "I hope the traffic jam has already cleared.",
+    "es": "Espero que ya se haya acabado el trancón.",
+    "en": "I hope the traffic jam is over by now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "g:se-impersonal",
       "g:subj-perfect",
       "g:subj-wishes",
       "g:that-clauses",
+      "l:acabar",
       "l:esperar",
-      "l:ir",
       "l:trancón"
     ],
     "targets": [
@@ -4800,19 +4804,19 @@
   },
   {
     "id": "u34-0208",
-    "es": "No pienso que se haya roto solo.",
-    "en": "I don't think it broke by itself.",
+    "es": "No creo que el vidrio se haya roto solo.",
+    "en": "I don't think the glass broke by itself.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:creo-que",
+      "g:gender-articles",
       "g:reflexive-routine",
-      "g:stem-boot",
-      "g:subj-influence",
       "g:subj-perfect",
       "g:that-clauses",
-      "l:pensar",
+      "l:creer",
       "l:romper",
-      "p:pensar-en"
+      "l:vidrio"
     ],
     "targets": [
       "g:subj-perfect"
@@ -5144,7 +5148,7 @@
   {
     "id": "u34-0222",
     "es": "No es posible que se haya perdido tan rápido.",
-    "en": "It can't be that it got lost so quickly.",
+    "en": "It can't have got lost so quickly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5286,19 +5290,19 @@
   },
   {
     "id": "u34-0228",
-    "es": "No creo que me haya llegado el mensaje.",
-    "en": "I don't think the message reached me.",
+    "es": "No creo que le haya llegado el mensaje.",
+    "en": "I don't think the message has reached her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
       "g:gender-articles",
+      "g:indirect-objects",
       "g:subj-perfect",
       "g:that-clauses",
       "l:creer",
       "l:llegar",
-      "l:mensaje",
-      "p:me-te-nos-objects"
+      "l:mensaje"
     ],
     "targets": [
       "g:subj-perfect"
@@ -5430,7 +5434,7 @@
   {
     "id": "u34-0234",
     "es": "Qué bueno que hayas llamado a tiempo.",
-    "en": "How good that you called in time.",
+    "en": "Good thing you called in time. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5480,18 +5484,20 @@
   },
   {
     "id": "u34-0236",
-    "es": "No creo que hayas tenido un día tan malo.",
-    "en": "I don't think you've had such a bad day.",
+    "es": "No creo que hayas tenido un día peor que el mío.",
+    "en": "I don't think you've had a worse day than mine. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
+      "g:comparatives",
       "g:gender-articles",
+      "g:possessives-stressed",
       "g:subj-perfect",
       "g:that-clauses",
       "l:creer",
       "l:día",
-      "l:malo",
+      "l:peor",
       "l:tener"
     ],
     "targets": [
@@ -5559,7 +5565,7 @@
   {
     "id": "u34-0239",
     "es": "Me molesta que nadie haya avisado.",
-    "en": "It annoys me that nobody warned us.",
+    "en": "It annoys me that nobody gave any warning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5606,20 +5612,20 @@
   },
   {
     "id": "u34-0241",
-    "es": "Qué suerte que no haya pasado algo peor.",
+    "es": "Qué suerte que no haya pasado nada peor.",
     "en": "What luck that nothing worse happened.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-envidia",
+      "g:negation-words",
       "g:subj-irregulars",
       "g:subj-value",
       "g:that-clauses",
       "l:pasado",
       "l:peor",
       "l:qué",
-      "l:suerte",
-      "p:indefinites-basic"
+      "l:suerte"
     ],
     "targets": [],
     "kind": "statement",
@@ -5757,21 +5763,19 @@
   },
   {
     "id": "u34-0247",
-    "es": "Qué mal que todos hayan hecho un chiste del problema.",
-    "en": "How bad that everyone made a joke of the problem.",
+    "es": "Qué rabia que nadie nos haya ayudado.",
+    "en": "It's so annoying that nobody helped us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-bien",
-      "g:gender-articles",
+      "c:que-susto",
       "g:subj-perfect",
       "g:subj-value",
       "g:that-clauses",
-      "l:chiste",
-      "l:hacer",
-      "l:mal",
-      "l:problema",
-      "l:qué"
+      "l:ayudar",
+      "l:qué",
+      "l:rabia",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:subj-perfect"
@@ -5784,7 +5788,7 @@
   {
     "id": "u34-0248",
     "es": "Qué bueno que todos hayan venido.",
-    "en": "How good that everyone has come.",
+    "en": "How nice that everyone came.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6300,20 +6304,21 @@
   },
   {
     "id": "u34-0269",
-    "es": "Cuando se haya roto algo, avísame.",
-    "en": "When something has broken, let me know.",
+    "es": "No firmes nada hasta que lo haya leído la abogada.",
+    "en": "Don't sign anything until the lawyer has read it. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-tu",
-      "g:commands-with-pronouns",
-      "g:reflexive-routine",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:negation-words",
+      "g:negative-commands",
       "g:subj-cuando-future",
       "g:subj-perfect",
-      "l:avisar",
-      "l:romper",
-      "p:indefinites-basic",
-      "p:me-te-nos-objects"
+      "l:abogado",
+      "l:firmar",
+      "l:leer",
+      "p:no-hasta"
     ],
     "targets": [
       "g:subj-perfect"
@@ -6813,17 +6818,17 @@
   },
   {
     "id": "u34-0289",
-    "es": "Cargaron el carro con cajas de tinto.",
+    "es": "Cargaron el carro con cajas de café.",
     "en": "They loaded the car with boxes of coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "l:café",
       "l:caja",
       "l:cargar",
       "l:carro",
-      "l:tinto",
       "p:cargar-descargar",
       "p:con-sin",
       "p:container-de"
@@ -6911,8 +6916,8 @@
   },
   {
     "id": "u34-0293",
-    "es": "¿Se te acabó la carga?\nNo, pero puedo cargar el celular en la cocina.",
-    "en": "Is your phone out of charge?\nNo, but I can charge my phone in the kitchen.",
+    "es": "¿Se te acabó la carga?\nSí. ¿Puedo cargar el celular en la cocina?",
+    "en": "Are you out of charge?\nYes. Can I charge my phone in the kitchen?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7100,7 +7105,7 @@
   {
     "id": "u34-0300",
     "es": "Siempre llevo el celular cargado.",
-    "en": "I always carry my phone charged.",
+    "en": "I always keep my phone charged.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7254,23 +7259,23 @@
   },
   {
     "id": "u34-0306",
-    "es": "Descargaron mi tarjeta sin avisarme.",
-    "en": "They charged my card without telling me.",
+    "es": "Me cargaron a la tarjeta algo que no compré.",
+    "en": "They charged something I didn't buy to my card.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:object-pronoun-position",
-      "g:prep-infinitive",
+      "c:compre-trabaje",
+      "g:gender-articles",
       "g:preterite-ar",
-      "l:avisar",
-      "l:descargar",
+      "g:relative-que",
+      "l:cargar",
+      "l:comprar",
       "l:tarjeta",
       "p:cargar-descargar",
-      "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:indefinites-basic",
+      "p:me-te-nos-objects"
     ],
     "targets": [
-      "l:descargar",
       "p:cargar-descargar"
     ],
     "kind": "statement",
@@ -7306,21 +7311,23 @@
   },
   {
     "id": "u34-0308",
-    "es": "Cargué mi celular en el aeropuerto y se me quedó.",
-    "en": "I charged my phone at the airport and left it behind.",
+    "es": "Puse a cargar el celular en el aeropuerto y se me quedó allá.",
+    "en": "I put my phone on charge at the airport and left it there.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "g:preterite-spelling-stem",
+      "g:preterite-irregular-strong",
       "g:se-accidental",
       "l:aeropuerto",
+      "l:allá",
       "l:cargar",
       "l:celular",
+      "l:poner",
       "l:quedarse",
-      "p:cargar-descargar",
-      "p:possessives-basic"
+      "p:aqui-ahi-alla",
+      "p:cargar-descargar"
     ],
     "targets": [
       "g:se-accidental",
@@ -7381,7 +7388,7 @@
   },
   {
     "id": "u34-0311",
-    "es": "Dejé el carro mal estacionado frente a la tienda.",
+    "es": "Dejé el carro mal parqueado frente a la tienda.",
     "en": "I left the car badly parked in front of the shop.",
     "accept": [],
     "acceptEn": [],
@@ -7390,10 +7397,10 @@
       "g:preterite-ar",
       "l:carro",
       "l:dejar",
-      "l:estacionado",
       "l:frente",
       "l:mal",
       "l:tienda",
+      "p:encontrar-participle",
       "p:posicion-precisa"
     ],
     "targets": [],
@@ -7473,19 +7480,19 @@
   },
   {
     "id": "u34-0315",
-    "es": "Vale encontró el horno abierto toda la noche.",
-    "en": "Vale found the oven open all night.",
+    "es": "Vale encontró el horno prendido esta mañana.",
+    "en": "Vale found the oven on this morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "l:abrir",
       "l:encontrar",
       "l:horno",
-      "l:noche",
-      "p:encontrar-participle",
-      "p:todos-los-dias"
+      "l:mañana",
+      "l:prender",
+      "p:demonstratives-basic",
+      "p:encontrar-participle"
     ],
     "targets": [
       "p:encontrar-participle"
@@ -7686,17 +7693,20 @@
   },
   {
     "id": "u34-0324",
-    "es": "Encontré a Simón asustado en su casa.",
-    "en": "I found Simón scared in his house.",
+    "es": "Encontré a Simón asustado debajo de la mesa.",
+    "en": "I found Simón scared under the table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:preterite-ar",
       "l:asustado",
-      "l:casa",
+      "l:debajo",
       "l:encontrar",
+      "l:mesa",
+      "p:cerca-de",
       "p:personal-a",
-      "p:possessives-basic"
+      "p:position-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -7838,7 +7848,7 @@
   {
     "id": "u34-0331",
     "es": "Encontró los papeles tirados en el piso.",
-    "en": "He found the papers thrown on the floor.",
+    "en": "He found the papers scattered on the floor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7929,16 +7939,14 @@
   },
   {
     "id": "u34-0335",
-    "es": "Encontré el cuarto con las puertas abiertas.",
-    "en": "I found the room with the doors open.",
+    "es": "Encontré el cuarto desordenado.",
+    "en": "I found the room in a mess.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "l:abrir",
-      "l:encontrar",
-      "l:puerta"
+      "l:encontrar"
     ],
     "targets": [],
     "kind": "statement",
@@ -7995,8 +8003,8 @@
   },
   {
     "id": "u34-0338",
-    "es": "Llegó dormido a la reunión y nadie dijo nada.",
-    "en": "He arrived asleep at the meeting and nobody said anything.",
+    "es": "Llegó medio dormido a la reunión y nadie dijo nada.",
+    "en": "He arrived half asleep at the meeting and nobody said anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8006,8 +8014,7 @@
       "l:decir",
       "l:dormir",
       "l:llegar",
-      "l:reunión",
-      "p:encontrar-participle"
+      "l:reunión"
     ],
     "targets": [
       "p:encontrar-participle"
@@ -8069,17 +8076,18 @@
   },
   {
     "id": "u34-0341",
-    "es": "Encontraron perdida la maleta en otra ciudad.",
-    "en": "They found the suitcase lost in another city.",
+    "es": "Encontraron la maleta abierta en otra ciudad.",
+    "en": "They found the suitcase open in another city.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "l:abrir",
       "l:ciudad",
       "l:encontrar",
       "l:maleta",
-      "l:perder",
+      "p:encontrar-participle",
       "p:otro-no-article"
     ],
     "targets": [],
@@ -8824,19 +8832,17 @@
   },
   {
     "id": "u34-0372",
-    "es": "Si te manchas, lávate con agua fría.",
-    "en": "If you get stained, wash with cold water. (to a friend)",
+    "es": "Si te manchas, lava la mancha con agua fría.",
+    "en": "If you get a stain on you, wash it with cold water. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-tu",
-      "g:commands-with-pronouns",
+      "g:direct-objects",
       "g:present-ar",
-      "g:reflexive-routine",
       "g:si-present",
       "l:agua",
       "l:frío",
-      "l:lavarse",
+      "l:lavar",
       "l:manchar",
       "p:mancharse",
       "p:me-te-nos-objects"
@@ -8927,8 +8933,8 @@
   },
   {
     "id": "u34-0376",
-    "es": "Hubo una mancha en el piso y alguien se cayó.",
-    "en": "There was a stain on the floor and somebody fell.",
+    "es": "Había una mancha de jugo en el piso y un cliente se cayó.",
+    "en": "There was a juice stain on the floor and a customer fell.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8938,10 +8944,11 @@
       "g:preterite-spelling-stem",
       "g:reflexive-routine",
       "l:caerse",
+      "l:cliente",
+      "l:jugo",
       "l:manchar",
       "l:piso",
       "p:caerse-lastimarse",
-      "p:indefinites-basic",
       "p:mancharse"
     ],
     "targets": [
@@ -9764,18 +9771,19 @@
   },
   {
     "id": "u34-0408",
-    "es": "La importancia de una denuncia es enorme.",
-    "en": "The importance of a police report is enormous.",
+    "es": "Para la policía, la denuncia no tenía importancia.",
+    "en": "To the police, the report wasn't important.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:imperfect-states",
       "l:denuncia",
-      "l:enorme",
       "l:importancia",
-      "l:ser"
+      "l:policía",
+      "l:tener",
+      "p:darle-importancia",
+      "p:para-inf"
     ],
     "targets": [
       "l:denuncia",
@@ -9788,17 +9796,21 @@
   },
   {
     "id": "u34-0409",
-    "es": "Dale importancia a los papeles del seguro.",
-    "en": "Give importance to the insurance papers. (to a friend)",
+    "es": "Un vaso roto no tiene ninguna importancia.",
+    "en": "A broken glass doesn't matter at all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:dale",
+      "c:tienes",
       "g:gender-articles",
-      "l:dale",
+      "g:indefinites",
+      "g:negation-words",
+      "g:stem-boot",
       "l:importancia",
-      "l:papel",
-      "l:seguro"
+      "l:romper",
+      "l:tener",
+      "l:vaso",
+      "p:darle-importancia"
     ],
     "targets": [
       "l:importancia"
@@ -10066,17 +10078,21 @@
   },
   {
     "id": "u34-0420",
-    "es": "Pide disculpas por llegar tarde.",
-    "en": "He apologises for arriving late.",
+    "es": "Siempre pide disculpas por llegar tarde, pero nunca cambia.",
+    "en": "He always apologises for arriving late, but he never changes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:por-para-1",
+      "g:present-ar",
       "g:stem-e-i",
+      "l:cambiar",
       "l:disculpa",
       "l:llegar",
       "l:pedir",
+      "l:siempre",
       "l:tarde",
+      "p:frequency-scale",
       "p:llegar-a-tiempo",
       "p:pedir-disculpas-por"
     ],
@@ -10514,8 +10530,8 @@
   },
   {
     "id": "u34-0437",
-    "es": "Le pido perdón por el desorden en mi cuarto.",
-    "en": "I apologise to you for the mess in my room. (formal)",
+    "es": "Le pido perdón por el desorden, señora.",
+    "en": "I apologise for the mess, ma'am.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10526,8 +10542,8 @@
       "l:desorden",
       "l:pedir",
       "l:perdón",
+      "l:señora",
       "p:pedir-disculpas-por",
-      "p:possessives-basic",
       "p:preguntar-pedir",
       "p:siento-llegar-tarde"
     ],
@@ -10621,8 +10637,8 @@
   },
   {
     "id": "u34-0441",
-    "es": "Siento llegar tan tarde, de verdad.",
-    "en": "I'm really sorry I'm arriving so late.",
+    "es": "De verdad, siento llegar tan tarde.",
+    "en": "Honestly, I'm sorry I'm so late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10670,17 +10686,22 @@
   },
   {
     "id": "u34-0443",
-    "es": "Siento no poder llamar antes.",
-    "en": "I'm sorry I can't call earlier.",
+    "es": "Siento no contestarte, es que estaba manejando.",
+    "en": "Sorry for not answering, I was driving. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:es-que",
+      "g:imperfect-progressive",
+      "g:imperfect-states",
+      "g:object-pronoun-position",
       "g:stem-boot",
-      "g:verb-infinitive",
-      "l:antes",
-      "l:llamar",
-      "l:poder",
+      "l:contestar",
+      "l:estar",
+      "l:manejar",
       "l:sentir",
+      "l:ser",
+      "p:me-te-nos-objects",
       "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
@@ -10694,21 +10715,21 @@
   },
   {
     "id": "u34-0444",
-    "es": "Siento hacerte esperar en la calle.",
-    "en": "I'm sorry to make you wait in the street. (to a friend)",
+    "es": "Siento mucho lo de tu carro, Mariana.",
+    "en": "I'm so sorry about your car, Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:object-pronoun-position",
       "g:stem-boot",
-      "l:calle",
-      "l:esperar",
-      "l:hacer",
+      "l:carro",
       "l:sentir",
-      "p:me-te-nos-objects",
-      "p:sentir-lo-de",
-      "p:siento-llegar-tarde"
+      "p:lamento-lo-de",
+      "p:lo-de",
+      "p:lo-de-noun",
+      "p:lo-de-topic",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:sentir-lo-de"
     ],
     "targets": [
       "p:sentir-lo-de"
@@ -10748,18 +10769,18 @@
   },
   {
     "id": "u34-0446",
-    "es": "Siento no decirte la verdad ahora.",
-    "en": "I'm sorry I can't tell you the truth now. (to a friend)",
+    "es": "Siento no poder decirte más por ahora.",
+    "en": "I'm sorry I can't tell you more for now. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-verdad",
       "g:object-pronoun-position",
       "g:stem-boot",
+      "g:verb-infinitive",
       "l:ahora",
       "l:decir",
+      "l:poder",
       "l:sentir",
-      "l:verdad",
       "p:me-te-nos-objects",
       "p:sentir-lo-de",
       "p:siento-llegar-tarde"
@@ -10774,19 +10795,28 @@
   },
   {
     "id": "u34-0447",
-    "es": "Siento hacerte esperar tanto.",
-    "en": "I'm sorry to keep you waiting so long. (to a friend)",
+    "es": "Siento mucho lo de tu abuelo, Mariana. Era un gran señor.",
+    "en": "I'm so sorry about your grandfather, Mariana. He was a great man.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:object-pronoun-position",
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:ser-identity",
       "g:stem-boot",
-      "l:esperar",
-      "l:hacer",
+      "l:abuelo",
+      "l:gran",
       "l:sentir",
-      "p:me-te-nos-objects",
-      "p:sentir-lo-de",
-      "p:siento-llegar-tarde"
+      "l:ser",
+      "l:señor",
+      "p:lamento-lo-de",
+      "p:lo-de",
+      "p:lo-de-noun",
+      "p:lo-de-topic",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:sentir-lo-de"
     ],
     "targets": [
       "p:sentir-lo-de"
@@ -10798,18 +10828,28 @@
   },
   {
     "id": "u34-0448",
-    "es": "Siento perder tanto tiempo con esto.",
-    "en": "I'm sorry to waste so much time on this.",
+    "es": "Siento mucho lo del robo, avísame si necesitas algo.",
+    "en": "I'm so sorry about the robbery, let me know if you need anything. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:si-present",
       "g:stem-boot",
-      "l:perder",
+      "l:avisar",
+      "l:necesitar",
+      "l:robo",
       "l:sentir",
-      "l:tiempo",
-      "p:demonstratives-basic",
-      "p:sentir-lo-de",
-      "p:siento-llegar-tarde"
+      "p:indefinites-basic",
+      "p:lamento-lo-de",
+      "p:lo-de",
+      "p:lo-de-topic",
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic",
+      "p:sentir-lo-de"
     ],
     "targets": [
       "p:sentir-lo-de"
@@ -10848,8 +10888,8 @@
   },
   {
     "id": "u34-0450",
-    "es": "Siento molestarte tan tarde, Vale.",
-    "en": "I'm sorry to bother you so late, Vale.",
+    "es": "Vale, siento molestarte tan tarde.",
+    "en": "Vale, I'm sorry to bother you so late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10872,22 +10912,23 @@
   },
   {
     "id": "u34-0451",
-    "es": "Siento mucho no poder ayudarte hoy.",
-    "en": "I'm very sorry I can't help you today. (to a friend)",
+    "es": "Siento lo del celular, Tomás. Qué mala suerte.",
+    "en": "I'm sorry about the phone, Tomás. What bad luck.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:object-pronoun-position",
+      "c:que-de-malas",
+      "g:gender-articles",
       "g:stem-boot",
-      "g:verb-infinitive",
-      "l:ayudar",
-      "l:hoy",
-      "l:poder",
+      "l:celular",
+      "l:mala",
+      "l:qué",
       "l:sentir",
-      "p:me-te-nos-objects",
-      "p:quantifiers-basic",
-      "p:sentir-lo-de",
-      "p:siento-llegar-tarde"
+      "l:suerte",
+      "p:lamento-lo-de",
+      "p:lo-de",
+      "p:lo-de-topic",
+      "p:sentir-lo-de"
     ],
     "targets": [
       "p:sentir-lo-de"
@@ -10952,18 +10993,17 @@
   },
   {
     "id": "u34-0454",
-    "es": "Siento no tener cambio para el bus.",
-    "en": "I'm sorry I don't have change for the bus.",
+    "es": "Perdone, siento no tener cambio.",
+    "en": "Sorry, I'm afraid I don't have change. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:commands-usted",
       "g:stem-boot",
-      "l:bus",
       "l:cambio",
+      "l:perdonar",
       "l:sentir",
       "l:tener",
-      "p:para-inf",
       "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
@@ -11007,25 +11047,22 @@
   },
   {
     "id": "u34-0456",
-    "es": "Siento pedirte esto otra vez, pero necesito la llave.",
-    "en": "I'm sorry to ask you this again, but I need the key. (to a friend)",
+    "es": "Siento mucho lo de la ventana del café.",
+    "en": "I'm so sorry about the café window.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:object-pronoun-position",
-      "g:present-ar",
       "g:stem-boot",
-      "l:llave",
-      "l:necesitar",
-      "l:pedir",
+      "l:café",
       "l:sentir",
-      "l:vez",
-      "p:demonstratives-basic",
-      "p:me-te-nos-objects",
-      "p:otro-no-article",
-      "p:sentir-lo-de",
-      "p:siento-llegar-tarde"
+      "l:ventana",
+      "p:lamento-lo-de",
+      "p:lo-de",
+      "p:lo-de-noun",
+      "p:lo-de-topic",
+      "p:quantifiers-basic",
+      "p:sentir-lo-de"
     ],
     "targets": [
       "p:sentir-lo-de"
@@ -11176,20 +11213,21 @@
   },
   {
     "id": "u34-0462",
-    "es": "Siento ponerte en esta situación.",
-    "en": "I'm sorry to put you in this situation. (to a friend)",
+    "es": "Hernando, siento mucho lo de su carro.",
+    "en": "Hernando, I'm so sorry about your car. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:object-pronoun-position",
       "g:stem-boot",
-      "l:poner",
+      "l:carro",
       "l:sentir",
-      "l:situación",
-      "p:demonstratives-basic",
-      "p:me-te-nos-objects",
-      "p:sentir-lo-de",
-      "p:siento-llegar-tarde"
+      "p:lamento-lo-de",
+      "p:lo-de",
+      "p:lo-de-noun",
+      "p:lo-de-topic",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:sentir-lo-de"
     ],
     "targets": [
       "p:sentir-lo-de"
@@ -11281,16 +11319,16 @@
   },
   {
     "id": "u34-0466",
-    "es": "Siento llegar sin nada para ustedes.",
-    "en": "I'm sorry to arrive with nothing for you all.",
+    "es": "Siento llegar sin un regalo.",
+    "en": "I'm sorry to turn up without a present.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:prep-pronouns",
+      "g:gender-articles",
       "g:stem-boot",
       "l:llegar",
+      "l:regalo",
       "l:sentir",
-      "p:para-inf",
       "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
@@ -11304,21 +11342,23 @@
   },
   {
     "id": "u34-0467",
-    "es": "Siento quitarte tanto tiempo, de verdad.",
-    "en": "I'm sorry to take up so much of your time, really. (to a friend)",
+    "es": "Siento lo de ayer, no fue mi intención.",
+    "en": "I'm sorry about yesterday, I didn't mean it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:en-serio",
-      "g:object-pronoun-position",
+      "c:ayer-anoche",
+      "c:no-fue-mi-intencion",
       "g:stem-boot",
-      "l:quitar",
+      "l:ayer",
+      "l:intención",
       "l:sentir",
-      "l:tiempo",
-      "l:verdad",
-      "p:me-te-nos-objects",
-      "p:sentir-lo-de",
-      "p:siento-llegar-tarde"
+      "l:ser",
+      "p:lamento-lo-de",
+      "p:lo-de",
+      "p:lo-de-noun",
+      "p:lo-de-topic",
+      "p:sentir-lo-de"
     ],
     "targets": [
       "p:sentir-lo-de"
@@ -11382,22 +11422,22 @@
   },
   {
     "id": "u34-0470",
-    "es": "Siento mucho tener que despertarte tan temprano.",
-    "en": "I'm so sorry to have to wake you so early. (to a friend)",
+    "es": "Siento mucho lo de su mamá, señora.",
+    "en": "I'm so sorry about your mother, ma'am.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:object-pronoun-position",
       "g:stem-boot",
-      "g:verb-infinitive",
-      "l:despertarse",
+      "l:mamá",
       "l:sentir",
-      "l:temprano",
-      "l:tener",
-      "p:me-te-nos-objects",
+      "l:señora",
+      "p:lamento-lo-de",
+      "p:lo-de",
+      "p:lo-de-noun",
+      "p:lo-de-topic",
+      "p:possessives-basic",
       "p:quantifiers-basic",
-      "p:sentir-lo-de",
-      "p:siento-llegar-tarde"
+      "p:sentir-lo-de"
     ],
     "targets": [
       "p:sentir-lo-de"
@@ -11435,17 +11475,20 @@
   },
   {
     "id": "u34-0472",
-    "es": "Siento hacerlos esperar tanto, clientes.",
-    "en": "I'm sorry to keep you waiting so long, customers.",
+    "es": "Siento hacerlos esperar tanto, la máquina no funciona.",
+    "en": "I'm sorry to keep you all waiting so long, the machine isn't working.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
+      "g:gender-articles",
       "g:object-pronoun-position",
+      "g:present-ar",
       "g:stem-boot",
-      "l:cliente",
       "l:esperar",
+      "l:funcionar",
       "l:hacer",
+      "l:máquina",
       "l:sentir",
       "p:sentir-lo-de",
       "p:siento-llegar-tarde"
@@ -11563,7 +11606,7 @@
   {
     "id": "u34-0477",
     "es": "¿De quién fue la culpa?\nFue culpa de los dos.",
-    "en": "Whose fault was it?\nIt was both their faults.",
+    "en": "Whose fault was it?\nBoth of them were to blame.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11588,24 +11631,21 @@
   },
   {
     "id": "u34-0478",
-    "es": "No es culpa de nadie, fue un accidente.",
-    "en": "It's nobody's fault, it was an accident.",
+    "es": "Nadie tuvo la culpa: fue un accidente y ya.",
+    "en": "Nobody was to blame: it was just an accident.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:negation-words",
+      "g:preterite-irregular-strong",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:accidente",
       "l:culpa",
       "l:ser",
-      "p:no-es-x-es-y",
-      "p:por-culpa-de"
+      "l:tener"
     ],
-    "targets": [
-      "p:por-culpa-de"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u34",
     "theme": "culpa y responsabilidad",
@@ -11664,17 +11704,19 @@
   },
   {
     "id": "u34-0481",
-    "es": "Fue culpa del tráfico y de nadie más.",
-    "en": "It was the traffic's fault and nobody else's.",
+    "es": "Perdimos el vuelo por culpa del trancón.",
+    "en": "We missed the flight because of the traffic jam.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
+      "g:por-para-1",
+      "g:preterite-er-ir",
       "l:culpa",
-      "l:ser",
-      "l:tráfico",
+      "l:perder",
+      "l:trancón",
+      "l:vuelo",
+      "p:gracias-a-por-culpa-de",
       "p:por-culpa-de"
     ],
     "targets": [
@@ -11868,19 +11910,23 @@
   },
   {
     "id": "u34-0489",
-    "es": "Fue culpa del calor, no de la cocina.",
-    "en": "It was the heat's fault, not the kitchen's.",
+    "es": "Se me quemó el pan por culpa del horno viejo.",
+    "en": "My bread burned because of the old oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
-      "l:calor",
-      "l:cocina",
+      "g:por-para-1",
+      "g:preterite-ar",
+      "g:se-accidental",
       "l:culpa",
-      "l:ser",
-      "p:por-culpa-de"
+      "l:horno",
+      "l:pan",
+      "l:quemarse",
+      "l:viejo",
+      "p:gracias-a-por-culpa-de",
+      "p:por-culpa-de",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "p:por-culpa-de"
@@ -11917,20 +11963,25 @@
   },
   {
     "id": "u34-0491",
-    "es": "Fue culpa de un mensaje que no llegó.",
-    "en": "It was the fault of a message that never arrived.",
+    "es": "No fui por culpa de un mensaje que nunca me llegó.",
+    "en": "I didn't go because of a message that never reached me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:fui",
       "g:gender-articles",
+      "g:negation-words",
+      "g:por-para-1",
       "g:preterite-ar",
       "g:preterite-ser-ir-hacer",
       "g:relative-que",
-      "g:ser-identity",
       "l:culpa",
       "l:llegar",
       "l:mensaje",
       "l:ser",
+      "p:frequency-scale",
+      "p:gracias-a-por-culpa-de",
+      "p:me-te-nos-objects",
       "p:por-culpa-de"
     ],
     "targets": [
@@ -11997,21 +12048,19 @@
   },
   {
     "id": "u34-0494",
-    "es": "Fue culpa del jefe, que no avisó a nadie.",
-    "en": "It was the boss's fault, he didn't tell anybody.",
+    "es": "Gracias a una vecina, encontramos al perro.",
+    "en": "Thanks to a neighbour, we found the dog.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-cuantas-cuotas",
       "g:gender-articles",
-      "g:negation-words",
-      "g:preterite-ar",
-      "g:preterite-ser-ir-hacer",
-      "g:relative-que",
-      "g:ser-identity",
-      "l:avisar",
-      "l:culpa",
-      "l:jefe",
-      "l:ser",
+      "g:present-ar",
+      "l:encontrar",
+      "l:perro",
+      "l:vecino",
+      "p:gracias-a-por-culpa-de",
+      "p:personal-a",
       "p:por-culpa-de"
     ],
     "targets": [
@@ -12046,18 +12095,19 @@
   },
   {
     "id": "u34-0496",
-    "es": "Fue culpa de la prisa y del cansancio.",
-    "en": "It was the fault of the rush and the tiredness.",
+    "es": "Me corté por culpa del cansancio.",
+    "en": "I cut myself because I was so tired.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
+      "g:por-para-1",
+      "g:preterite-ar",
+      "g:reflexive-routine",
       "l:cansancio",
+      "l:cortarse",
       "l:culpa",
-      "l:prisa",
-      "l:ser",
+      "p:gracias-a-por-culpa-de",
       "p:por-culpa-de"
     ],
     "targets": [
@@ -12122,22 +12172,21 @@
   },
   {
     "id": "u34-0499",
-    "es": "Fue culpa del otro carro, que paró de repente.",
-    "en": "It was the other car's fault, it stopped suddenly.",
+    "es": "Choqué por culpa del otro carro, que paró de repente.",
+    "en": "I crashed because of the other car, which stopped suddenly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:de-repente",
       "g:gender-articles",
+      "g:por-para-1",
       "g:preterite-ar",
-      "g:preterite-ser-ir-hacer",
       "g:relative-que",
-      "g:ser-identity",
       "l:carro",
       "l:culpa",
       "l:parar",
       "l:repente",
-      "l:ser",
+      "p:gracias-a-por-culpa-de",
       "p:otro-no-article",
       "p:por-culpa-de"
     ],
@@ -12151,22 +12200,20 @@
   },
   {
     "id": "u34-0500",
-    "es": "Fue culpa de los vecinos, hacen mucho ruido.",
-    "en": "It was the neighbours' fault, they make a lot of noise.",
+    "es": "No dormí nada por culpa de los vecinos.",
+    "en": "I didn't sleep a wink because of the neighbours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-er-ir",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
+      "g:negation-words",
+      "g:por-para-1",
+      "g:preterite-er-ir",
       "l:culpa",
-      "l:hacer",
-      "l:ruido",
-      "l:ser",
+      "l:dormir",
       "l:vecino",
-      "p:por-culpa-de",
-      "p:quantifiers-basic"
+      "p:gracias-a-por-culpa-de",
+      "p:por-culpa-de"
     ],
     "targets": [
       "p:por-culpa-de"
@@ -12252,21 +12299,24 @@
   },
   {
     "id": "u34-0504",
-    "es": "Hernando dice que es culpa de la nueva avenida.",
-    "en": "Hernando says it's the new avenue's fault.",
+    "es": "Hernando dice que hay trancón por culpa de la nueva avenida.",
+    "en": "Hernando says there are traffic jams because of the new avenue.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:hay-vs-esta",
+      "g:por-para-1",
       "g:stem-e-i",
       "g:that-clauses",
       "l:avenida",
       "l:culpa",
       "l:decir",
       "l:nuevo",
-      "l:ser",
+      "l:trancón",
+      "p:gracias-a-por-culpa-de",
       "p:por-culpa-de"
     ],
     "targets": [
@@ -12279,8 +12329,8 @@
   },
   {
     "id": "u34-0505",
-    "es": "Fue culpa suya, no de la ventana.",
-    "en": "It was his fault, not the window's.",
+    "es": "Fue culpa suya, señor, no del semáforo.",
+    "en": "It was your fault, sir, not the traffic light's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12289,8 +12339,9 @@
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:culpa",
+      "l:semáforo",
       "l:ser",
-      "l:ventana",
+      "l:señor",
       "p:por-culpa-de"
     ],
     "targets": [
@@ -12328,24 +12379,21 @@
   },
   {
     "id": "u34-0507",
-    "es": "Fue culpa de la policía, que llegó muy tarde.",
-    "en": "It was the police's fault, they arrived very late.",
+    "es": "Se nos fue el ladrón por culpa del trancón.",
+    "en": "The thief got away from us because of the traffic jam.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:por-para-1",
       "g:preterite-ser-ir-hacer",
-      "g:relative-que",
-      "g:ser-identity",
+      "g:se-accidental",
       "l:culpa",
-      "l:llegar",
-      "l:policía",
-      "l:ser",
-      "l:tarde",
-      "p:llegar-a-tiempo",
-      "p:por-culpa-de",
-      "p:quantifiers-basic"
+      "l:irse",
+      "l:ladrón",
+      "l:trancón",
+      "p:gracias-a-por-culpa-de",
+      "p:por-culpa-de"
     ],
     "targets": [
       "p:por-culpa-de"
@@ -12357,23 +12405,17 @@
   },
   {
     "id": "u34-0508",
-    "es": "No fue culpa nuestra, el banco estaba cerrado.",
-    "en": "It wasn't our fault, the bank was closed.",
+    "es": "Gracias a Mariana, la policía nos creyó.",
+    "en": "Thanks to Mariana, the police believed us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
-      "g:imperfect-states",
-      "g:possessives",
-      "g:pret-vs-imperfect",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
-      "l:banco",
-      "l:cerrar",
-      "l:culpa",
-      "l:estar",
-      "l:ser",
+      "g:preterite-spelling-stem",
+      "l:creer",
+      "l:policía",
+      "p:gracias-a-por-culpa-de",
+      "p:me-te-nos-objects",
       "p:por-culpa-de"
     ],
     "targets": [
@@ -12417,7 +12459,7 @@
   {
     "id": "u34-0510",
     "es": "Fue culpa del trabajo, estaba muy cansado.",
-    "en": "It was work's fault, I was very tired. (a man speaking)",
+    "en": "It was because of work, I was very tired. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12479,22 +12521,19 @@
   },
   {
     "id": "u34-0512",
-    "es": "Dice que fue culpa de la computadora, como siempre.",
-    "en": "He says it was the computer's fault, as usual.",
+    "es": "Perdí todo el trabajo por culpa de la computadora.",
+    "en": "I lost all my work because of the computer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
-      "g:stem-e-i",
-      "g:that-clauses",
+      "g:por-para-1",
+      "g:preterite-er-ir",
       "l:computadora",
       "l:culpa",
-      "l:decir",
-      "l:ser",
-      "l:siempre",
-      "p:frequency-scale",
+      "l:perder",
+      "l:trabajo",
+      "p:gracias-a-por-culpa-de",
       "p:por-culpa-de"
     ],
     "targets": [
@@ -12579,21 +12618,20 @@
   },
   {
     "id": "u34-0516",
-    "es": "¿Lloraste por la culpa?\nSí, me sentía culpable.",
-    "en": "Did you cry out of guilt?\nYes, I felt guilty.",
+    "es": "¿Por qué lloraste?\nMe sentía culpable.",
+    "en": "Why did you cry?\nI felt guilty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:imperfect-habitual",
-      "g:por-para-1",
       "g:pret-vs-imperfect",
       "g:preterite-ar",
       "g:reflexive-routine",
-      "l:culpa",
       "l:culpable",
       "l:llorar",
-      "l:sentirse"
+      "l:qué",
+      "l:sentirse",
+      "p:prep-questions-basic"
     ],
     "targets": [
       "l:culpable"
@@ -12824,7 +12862,7 @@
   {
     "id": "u34-0526",
     "es": "¿Dónde está el celular?\nNo está por ningún lado.",
-    "en": "Where is the phone?\nIt's nowhere.",
+    "en": "Where is the phone?\nIt isn't anywhere.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12876,7 +12914,7 @@
   {
     "id": "u34-0528",
     "es": "Busqué mi billetera por todo el café y nada.",
-    "en": "I looked for my wallet all over the café and nothing.",
+    "en": "I looked for my wallet all over the café and no luck.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12925,7 +12963,7 @@
   {
     "id": "u34-0530",
     "es": "Había papeles por todas partes después del golpe.",
-    "en": "There were papers everywhere after the blow.",
+    "en": "There were papers everywhere after the impact.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13047,8 +13085,8 @@
   },
   {
     "id": "u34-0535",
-    "es": "No encontramos taxis por ningún lado.",
-    "en": "We couldn't find taxis anywhere.",
+    "es": "No encontramos parqueadero por ningún lado.",
+    "en": "We couldn't find a parking space anywhere.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13058,7 +13096,7 @@
       "g:present-ar",
       "l:encontrar",
       "l:lado",
-      "l:taxi",
+      "l:parqueadero",
       "p:ninguna-parte"
     ],
     "targets": [
@@ -13097,21 +13135,21 @@
   },
   {
     "id": "u34-0537",
-    "es": "No hay nada de eso por ninguna parte de la casa.",
-    "en": "There's nothing like that anywhere in the house.",
+    "es": "Ya busqué en toda la casa y no está por ningún lado.",
+    "en": "I've already looked all over the house and it isn't anywhere.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "c:no-hay-nada",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:hay-vs-esta",
       "g:indefinites",
       "g:negation-words",
       "g:por-para-1",
+      "g:preterite-spelling-stem",
+      "l:buscar",
       "l:casa",
-      "l:parte",
-      "p:demonstratives-basic",
+      "l:estar",
+      "l:lado",
       "p:ninguna-parte"
     ],
     "targets": [
@@ -13226,22 +13264,22 @@
   },
   {
     "id": "u34-0542",
-    "es": "No te voy a encontrar por ninguna parte con este trancón.",
-    "en": "I'm not going to find you anywhere with this jam.",
+    "es": "Con esta lluvia no hay taxis libres por ninguna parte.",
+    "en": "With this rain there are no free taxis anywhere.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
+      "c:hay",
+      "g:adjective-agreement",
+      "g:hay-vs-esta",
       "g:indefinites",
-      "g:ir-a-plans",
       "g:negation-words",
       "g:por-para-1",
-      "l:encontrar",
-      "l:ir",
+      "l:libre",
+      "l:lluvia",
       "l:parte",
-      "l:trancón",
+      "l:taxi",
       "p:demonstratives-basic",
-      "p:me-te-nos-objects",
       "p:ninguna-parte"
     ],
     "targets": [
@@ -13325,16 +13363,20 @@
   },
   {
     "id": "u34-0546",
-    "es": "No dejaron nada en ningún lado.",
-    "en": "They left nothing anywhere.",
+    "es": "No había ni un vaso limpio por ningún lado.",
+    "en": "There wasn't a clean glass anywhere.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:imperfect-states",
       "g:indefinites",
       "g:negation-words",
-      "g:preterite-ar",
-      "l:dejar",
+      "g:por-para-1",
+      "g:present-ar",
       "l:lado",
+      "l:limpiar",
+      "l:vaso",
       "p:ninguna-parte"
     ],
     "targets": [
@@ -13417,7 +13459,7 @@
   },
   {
     "id": "u34-0550",
-    "es": "No lo hallamos por ninguna parte del hospital.",
+    "es": "No lo encontramos en ninguna parte del hospital.",
     "en": "We didn't find him anywhere in the hospital.",
     "accept": [],
     "acceptEn": [],
@@ -13426,11 +13468,11 @@
       "g:gender-articles",
       "g:indefinites",
       "g:negation-words",
-      "g:por-para-1",
       "g:present-ar",
-      "l:hallar",
+      "l:encontrar",
       "l:hospital",
       "l:parte",
+      "p:en-modo-alguno",
       "p:ninguna-parte"
     ],
     "targets": [
@@ -13783,16 +13825,23 @@
   },
   {
     "id": "u34-0565",
-    "es": "Sube por la escalera, no por la calle.",
-    "en": "Go up the stairs, not along the street. (to a friend)",
+    "es": "Sube por la escalera de atrás, que la puerta de adelante está cerrada.",
+    "en": "Go up the back stairs, the front door is closed. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:abierto-cerrado",
+      "g:estar-participle",
       "g:gender-articles",
       "g:por-para-1",
       "g:present-er-ir",
-      "l:calle",
+      "g:relative-que",
+      "l:adelante",
+      "l:atrás",
+      "l:cerrar",
       "l:escalera",
+      "l:estar",
+      "l:puerta",
       "l:subir"
     ],
     "targets": [],
@@ -13880,20 +13929,21 @@
   },
   {
     "id": "u34-0569",
-    "es": "Vamos por la derecha, que es más rápido.",
-    "en": "Let's keep to the right, it's quicker.",
+    "es": "Vamos por la Circunvalar, que a esta hora no hay trancón.",
+    "en": "Let's take the Circunvalar, there's no traffic at this time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:ir-a-plans",
       "g:por-para-1",
       "g:relative-que",
-      "g:ser-identity",
-      "l:derecha",
+      "l:hora",
       "l:ir",
-      "l:rápido",
-      "l:ser",
+      "l:trancón",
+      "p:demonstratives-basic",
       "p:seguir-por"
     ],
     "targets": [
@@ -14227,22 +14277,19 @@
   },
   {
     "id": "u34-0583",
-    "es": "El carro iba a cien por hora por la ciudad.",
-    "en": "The car was doing a hundred an hour through the city.",
+    "es": "El carro pasó a toda velocidad y no paró.",
+    "en": "The car went past at full speed and didn't stop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:por-para-1",
+      "g:preterite-ar",
       "l:carro",
-      "l:ciudad",
-      "l:hora",
-      "l:ir",
-      "p:costar-pagar",
-      "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place",
-      "p:numbers-un-una"
+      "l:parar",
+      "l:pasar",
+      "l:velocidad",
+      "p:agarrar-velocidad",
+      "p:ir-a-velocidad"
     ],
     "targets": [
       "p:ir-a-velocidad"
@@ -14306,21 +14353,20 @@
   },
   {
     "id": "u34-0586",
-    "es": "La moto iba a ciento diez kilómetros por hora.",
-    "en": "The motorbike was doing a hundred and ten kilometres an hour.",
+    "es": "La moto iba a toda velocidad entre los carros.",
+    "en": "The motorbike was going at full speed between the cars.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
-      "l:hora",
+      "l:carro",
       "l:ir",
-      "l:kilómetro",
       "l:moto",
-      "p:costar-pagar",
+      "l:velocidad",
+      "p:agarrar-velocidad",
       "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place",
-      "p:numbers-un-una"
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "p:ir-a-velocidad"
@@ -14361,18 +14407,19 @@
   },
   {
     "id": "u34-0588",
-    "es": "Hernando nunca pasaba de cincuenta kilómetros por hora.",
-    "en": "Hernando never went over fifty kilometres an hour.",
+    "es": "Hernando maneja despacio, pero nunca llega tarde.",
+    "en": "Hernando drives slowly, but he's never late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-habitual",
-      "l:hora",
-      "l:kilómetro",
-      "l:pasar",
-      "p:costar-pagar",
+      "g:present-ar",
+      "l:despacio",
+      "l:llegar",
+      "l:manejar",
+      "l:tarde",
       "p:frequency-scale",
-      "p:ir-a-velocidad"
+      "p:ir-a-velocidad",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "p:ir-a-velocidad"
@@ -14510,22 +14557,20 @@
   },
   {
     "id": "u34-0594",
-    "es": "Cuando paré iba a veinte kilómetros por hora.",
-    "en": "When I stopped I was doing twenty kilometres an hour.",
+    "es": "Quise parar, pero iba demasiado rápido.",
+    "en": "I tried to stop, but I was going too fast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
       "g:pret-vs-imperfect",
-      "g:preterite-ar",
-      "l:hora",
+      "g:preterite-irregular-strong",
+      "g:quantifiers",
+      "g:verb-infinitive",
       "l:ir",
-      "l:kilómetro",
       "l:parar",
-      "p:costar-pagar",
-      "p:cuando-basic",
-      "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place"
+      "l:querer",
+      "l:rápido"
     ],
     "targets": [
       "p:ir-a-velocidad"
@@ -14564,24 +14609,23 @@
   },
   {
     "id": "u34-0596",
-    "es": "En esta calle vamos a treinta por hora, nada más.",
-    "en": "On this street we go thirty an hour, no more.",
+    "es": "Más despacio, por favor, que me da miedo.",
+    "en": "Slower, please, it scares me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:vamos-a",
-      "g:ir-a-plans",
-      "l:calle",
-      "l:hora",
-      "l:ir",
-      "p:costar-pagar",
-      "p:demonstratives-basic",
-      "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place"
+      "c:mas-despacio",
+      "c:me-regala",
+      "c:por-favor",
+      "g:relative-que",
+      "l:dar",
+      "l:despacio",
+      "l:favor",
+      "l:miedo",
+      "p:me-da-miedo",
+      "p:me-da-miedo-que"
     ],
-    "targets": [
-      "p:ir-a-velocidad"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u34",
     "theme": "a qué velocidad iba",
@@ -14589,19 +14633,19 @@
   },
   {
     "id": "u34-0597",
-    "es": "La ambulancia iba a ciento veinte por hora.",
-    "en": "The ambulance was doing a hundred and twenty an hour.",
+    "es": "La ambulancia pasó a toda velocidad por la Séptima.",
+    "en": "The ambulance went along Seventh Avenue at full speed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-habitual",
+      "g:por-para-1",
+      "g:preterite-ar",
       "l:ambulancia",
-      "l:hora",
-      "l:ir",
-      "p:costar-pagar",
-      "p:ir-a-venir-de-place",
-      "p:numbers-un-una"
+      "l:pasar",
+      "l:velocidad",
+      "p:agarrar-velocidad",
+      "p:ir-a-velocidad"
     ],
     "targets": [],
     "kind": "statement",
@@ -14640,19 +14684,21 @@
   },
   {
     "id": "u34-0599",
-    "es": "Mariana iba a sesenta por hora por la Caracas.",
-    "en": "Mariana was doing sixty an hour along Caracas Avenue.",
+    "es": "Mariana iba tan rápido que no vio el semáforo.",
+    "en": "Mariana was going so fast that she didn't see the traffic light.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:por-para-1",
-      "l:hora",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "g:that-clauses",
       "l:ir",
-      "p:costar-pagar",
-      "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place"
+      "l:rápido",
+      "l:semáforo",
+      "l:ver",
+      "p:ir-a-velocidad"
     ],
     "targets": [
       "p:ir-a-velocidad"
@@ -14693,8 +14739,8 @@
   },
   {
     "id": "u34-0601",
-    "es": "El conductor del bus iba a setenta kilómetros por hora.",
-    "en": "The bus driver was doing seventy kilometres an hour.",
+    "es": "El conductor del bus manejaba muy rápido y todos íbamos parados.",
+    "en": "The bus driver was driving very fast and we were all standing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14702,12 +14748,12 @@
       "g:imperfect-habitual",
       "l:bus",
       "l:conductor",
-      "l:hora",
       "l:ir",
-      "l:kilómetro",
-      "p:costar-pagar",
+      "l:manejar",
+      "l:parar",
+      "l:rápido",
       "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:ir-a-velocidad"
@@ -14774,8 +14820,8 @@
   },
   {
     "id": "u34-0604",
-    "es": "Tomás iba a treinta por hora cuando abrieron la puerta del bus.",
-    "en": "Tomás was doing thirty an hour when they opened the bus door.",
+    "es": "El bus iba a treinta por hora cuando abrieron la puerta.",
+    "en": "The bus was doing thirty an hour when they opened the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14803,19 +14849,20 @@
   },
   {
     "id": "u34-0605",
-    "es": "A esa hora se va a veinte kilómetros por hora.",
-    "en": "At that time of day you go twenty kilometres an hour.",
+    "es": "A esa hora el tráfico va muy despacio.",
+    "en": "At that time of day the traffic moves very slowly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
+      "g:gender-articles",
       "g:ir-a-plans",
+      "l:despacio",
       "l:hora",
-      "l:irse",
-      "l:kilómetro",
-      "p:costar-pagar",
+      "l:ir",
+      "l:tráfico",
       "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:ir-a-velocidad"
@@ -14827,20 +14874,21 @@
   },
   {
     "id": "u34-0606",
-    "es": "La bicicleta iba a veinticinco kilómetros por hora.",
-    "en": "The bicycle was doing twenty-five kilometres an hour.",
+    "es": "La bicicleta bajó por la calle a toda velocidad.",
+    "en": "The bicycle went down the street at full speed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-habitual",
+      "g:por-para-1",
+      "g:preterite-ar",
+      "l:bajar",
       "l:bicicleta",
-      "l:hora",
-      "l:ir",
-      "l:kilómetro",
-      "p:costar-pagar",
+      "l:calle",
+      "l:velocidad",
+      "p:agarrar-velocidad",
       "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place"
+      "p:seguir-por"
     ],
     "targets": [
       "p:ir-a-velocidad"
@@ -14852,21 +14900,20 @@
   },
   {
     "id": "u34-0607",
-    "es": "Ese conductor siempre va a ciento diez por hora.",
-    "en": "That driver always goes a hundred and ten an hour.",
+    "es": "Ese taxista siempre maneja rápido, pero nunca choca.",
+    "en": "That taxi driver always drives fast, but he never crashes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
-      "g:ir-a-plans",
-      "l:conductor",
-      "l:hora",
-      "l:ir",
+      "g:present-ar",
+      "l:choca",
+      "l:manejar",
+      "l:rápido",
       "l:siempre",
-      "p:costar-pagar",
+      "l:taxista",
       "p:frequency-scale",
-      "p:ir-a-venir-de-place",
-      "p:numbers-un-una"
+      "p:ir-a-velocidad"
     ],
     "targets": [],
     "kind": "statement",
@@ -14950,25 +14997,19 @@
   },
   {
     "id": "u34-0611",
-    "es": "El señor dijo que iba a treinta kilómetros por hora.",
-    "en": "The man said he was doing thirty kilometres an hour.",
+    "es": "Yo iba despacio, señor, se lo juro.",
+    "en": "I was going slowly, sir, I swear. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:double-pronouns",
       "g:imperfect-habitual",
-      "g:pret-vs-imperfect",
-      "g:preterite-irregular-strong",
-      "g:reported-past-basic",
-      "g:that-clauses",
-      "l:decir",
-      "l:hora",
+      "g:present-ar",
+      "l:despacio",
       "l:ir",
-      "l:kilómetro",
+      "l:jurar",
       "l:señor",
-      "p:costar-pagar",
-      "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place"
+      "p:ir-a-velocidad"
     ],
     "targets": [
       "p:ir-a-velocidad"
@@ -15122,20 +15163,21 @@
   },
   {
     "id": "u34-0618",
-    "es": "Aléjate de la ventana, que hay piedras.",
-    "en": "Move away from the window, there are stones. (to a friend)",
+    "es": "Aléjate de la ventana, que está rota.",
+    "en": "Move away from the window, it's broken. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:commands-tu",
       "g:commands-with-pronouns",
+      "g:estar-location-states",
+      "g:estar-participle",
       "g:gender-articles",
-      "g:hay-vs-esta",
       "g:reflexive-routine",
       "g:relative-que",
       "l:alejarse",
-      "l:piedra",
+      "l:estar",
+      "l:romper",
       "l:ventana",
       "p:acercarse-alejarse"
     ],
@@ -15503,19 +15545,20 @@
   },
   {
     "id": "u34-0633",
-    "es": "Alejémonos de aquí antes de que llegue la policía.",
-    "en": "Let's get away from here before the police arrive.",
+    "es": "Alejémonos de aquí antes de que empiece a llover.",
+    "en": "Let's get away from here before it starts to rain.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:subj-purpose-full",
       "g:subj-wanting",
+      "g:verb-infinitive",
       "l:antes",
       "l:aquí",
-      "l:llegar",
-      "l:policía",
-      "p:aqui-ahi-alla"
+      "l:empezar",
+      "l:llover",
+      "p:aqui-ahi-alla",
+      "p:empezar-terminar"
     ],
     "targets": [],
     "kind": "statement",
@@ -15706,8 +15749,8 @@
   },
   {
     "id": "u34-0641",
-    "es": "Ya nos alejamos de Altamira, no queremos problemas.",
-    "en": "We've already stayed away from Altamira, we don't want trouble.",
+    "es": "Mejor nos alejamos de Altamira, no queremos problemas.",
+    "en": "We'd better keep away from Altamira, we don't want trouble.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15715,6 +15758,7 @@
       "g:present-er-ir",
       "g:reflexive-routine",
       "l:alejarse",
+      "l:mejor",
       "l:problema",
       "l:querer",
       "p:acercarse-alejarse"
@@ -15943,8 +15987,8 @@
   },
   {
     "id": "u34-0650",
-    "es": "Se acerca el invierno y no hay chaquetas.",
-    "en": "Winter is coming and there are no jackets.",
+    "es": "Se acerca la Navidad y no hay plata.",
+    "en": "Christmas is coming and there's no money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15954,8 +15998,7 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:acercarse",
-      "l:chaqueta",
-      "l:invierno",
+      "l:plata",
       "p:acercarse-alejarse"
     ],
     "targets": [
@@ -16117,20 +16160,16 @@
   },
   {
     "id": "u34-0657",
-    "es": "Me caí en la calle y me hice daño en la mano.",
+    "es": "Me caí en la calle y me lastimé la mano.",
     "en": "I fell in the street and hurt my hand.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
-      "g:preterite-ser-ir-hacer",
       "g:reflexive-routine",
-      "g:verbs-of-change",
       "l:caerse",
       "l:calle",
-      "l:daño",
-      "l:hacerse",
       "l:mano",
       "p:caerse-lastimarse"
     ],
@@ -16337,18 +16376,14 @@
   },
   {
     "id": "u34-0666",
-    "es": "Me hice daño en el pie jugando fútbol.",
+    "es": "Me lastimé el pie jugando fútbol.",
     "en": "I hurt my foot playing football.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:gerund-ways",
-      "g:preterite-ser-ir-hacer",
-      "g:verbs-of-change",
-      "l:daño",
       "l:fútbol",
-      "l:hacerse",
       "l:jugar",
       "l:pie",
       "p:caerse-lastimarse"
@@ -16415,20 +16450,19 @@
   },
   {
     "id": "u34-0669",
-    "es": "El niño se cayó y se hizo daño en la cabeza.",
-    "en": "The boy fell and hurt his head.",
+    "es": "El niño se cayó y se golpeó la cabeza.",
+    "en": "The boy fell and hit his head.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
+      "g:passive-se",
+      "g:preterite-ar",
       "g:preterite-spelling-stem",
       "g:reflexive-routine",
-      "g:verbs-of-change",
       "l:cabeza",
       "l:caerse",
-      "l:daño",
-      "l:hacerse",
+      "l:golpear",
       "l:niño",
       "p:caerse-lastimarse"
     ],
@@ -16461,20 +16495,16 @@
   },
   {
     "id": "u34-0671",
-    "es": "Mariana se hizo daño en la espalda al caerse.",
+    "es": "Mariana se lastimó la espalda al caerse.",
     "en": "Mariana hurt her back when she fell.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:prep-infinitive",
-      "g:preterite-ser-ir-hacer",
       "g:reflexive-routine",
-      "g:verbs-of-change",
       "l:caerse",
-      "l:daño",
       "l:espalda",
-      "l:hacerse",
       "p:caerse-lastimarse"
     ],
     "targets": [
@@ -16612,20 +16642,19 @@
   },
   {
     "id": "u34-0677",
-    "es": "Cuando se cayó, se hizo daño en un hueso.",
-    "en": "When she fell, she hurt a bone.",
+    "es": "Cuando se cayó, se rompió un hueso de la mano.",
+    "en": "When she fell, she broke a bone in her hand.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
+      "g:preterite-er-ir",
       "g:preterite-spelling-stem",
       "g:reflexive-routine",
-      "g:verbs-of-change",
       "l:caerse",
-      "l:daño",
-      "l:hacerse",
       "l:hueso",
+      "l:mano",
+      "l:romperse",
       "p:caerse-lastimarse",
       "p:cuando-basic"
     ],
@@ -16665,15 +16694,15 @@
   },
   {
     "id": "u34-0679",
-    "es": "Cayó una piedra por la ventana.",
-    "en": "A stone fell through the window.",
+    "es": "Entró una piedra por la ventana.",
+    "en": "A stone came in through the window.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
-      "g:preterite-spelling-stem",
-      "l:caer",
+      "g:preterite-ar",
+      "l:entrar",
       "l:piedra",
       "l:ventana"
     ],
@@ -16805,7 +16834,7 @@
   {
     "id": "u34-0685",
     "es": "No se golpeó fuerte, pero lo llevaron al hospital.",
-    "en": "He didn't hit himself hard, but they took him to the hospital.",
+    "en": "He didn't hit himself badly, but they took him to the hospital.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16881,19 +16910,15 @@
   },
   {
     "id": "u34-0688",
-    "es": "Se hizo daño en la mano y no puede escribir.",
+    "es": "Se lastimó la mano y no puede escribir.",
     "en": "She hurt her hand and can't write.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
       "g:stem-boot",
       "g:verb-infinitive",
-      "g:verbs-of-change",
-      "l:daño",
       "l:escribir",
-      "l:hacerse",
       "l:mano",
       "l:poder",
       "p:caerse-lastimarse"
@@ -16908,8 +16933,8 @@
   },
   {
     "id": "u34-0689",
-    "es": "Al caerme, me golpeé el pulmón y me costó respirar.",
-    "en": "When I fell, I hit my lung and found it hard to breathe.",
+    "es": "Al caerme, me golpeé el pecho y me costó respirar.",
+    "en": "When I fell, I hit my chest and found it hard to breathe.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16922,14 +16947,13 @@
       "l:caer",
       "l:costar",
       "l:golpear",
-      "l:pulmón",
+      "l:pecho",
       "l:respirar",
       "p:caerse-lastimarse",
       "p:costarle",
       "p:me-te-nos-objects"
     ],
     "targets": [
-      "l:pulmón",
       "p:caerse-lastimarse"
     ],
     "kind": "statement",
@@ -16939,23 +16963,19 @@
   },
   {
     "id": "u34-0690",
-    "es": "Vale se hizo daño en la cabeza con la puerta.",
-    "en": "Vale hurt her head on the door.",
+    "es": "Vale se quemó el brazo con el horno.",
+    "en": "Vale burned her arm on the oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:verbs-of-change",
-      "l:cabeza",
-      "l:daño",
-      "l:hacerse",
-      "l:puerta",
-      "p:caerse-lastimarse"
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:brazo",
+      "l:horno",
+      "l:quemarse"
     ],
-    "targets": [
-      "p:caerse-lastimarse"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u34",
     "theme": "caídas y golpes",
@@ -16963,19 +16983,20 @@
   },
   {
     "id": "u34-0691",
-    "es": "Nos hicimos daño al saltar de la ventana.",
-    "en": "We hurt ourselves jumping from the window.",
+    "es": "Los niños se hicieron daño jugando en el parque.",
+    "en": "The children hurt themselves playing in the park.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:prep-infinitive",
+      "g:gerund-ways",
       "g:preterite-ser-ir-hacer",
       "g:verbs-of-change",
       "l:daño",
       "l:hacerse",
-      "l:saltar",
-      "l:ventana",
+      "l:jugar",
+      "l:niño",
+      "l:parque",
       "p:caerse-lastimarse"
     ],
     "targets": [
@@ -16988,25 +17009,26 @@
   },
   {
     "id": "u34-0692",
-    "es": "Si te caes de la bicicleta, usa el casco.",
-    "en": "If you fall off the bike, wear the helmet. (to a friend)",
+    "es": "Ponte el casco, te puedes caer de la bicicleta.",
+    "en": "Put your helmet on, you could fall off the bike. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:commands-tu",
+      "g:commands-with-pronouns",
       "g:gender-articles",
-      "g:present-ar",
-      "g:present-er-ir",
-      "g:reflexive-routine",
-      "g:si-present",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "g:verbs-of-change",
       "l:bicicleta",
-      "l:caerse",
+      "l:caer",
       "l:casco",
-      "l:usar",
-      "p:caerse-lastimarse"
+      "l:poder",
+      "l:ponerse",
+      "p:me-te-nos-objects"
     ],
     "targets": [
-      "l:casco",
-      "p:caerse-lastimarse"
+      "l:casco"
     ],
     "kind": "statement",
     "unit": "u34",
@@ -17534,18 +17556,22 @@
   },
   {
     "id": "u34-0714",
-    "es": "Siga por el centro y no por el norte.",
-    "en": "Go through the centre and not the north. (formal)",
+    "es": "Váyase por el centro, que por el norte hay trancón.",
+    "en": "Go through the centre, there's traffic in the north. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:siga",
+      "c:hay",
       "g:commands-usted",
+      "g:commands-with-pronouns",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:por-para-1",
+      "g:relative-que",
       "l:centro",
+      "l:irse",
       "l:norte",
-      "l:seguir",
+      "l:trancón",
       "p:seguir-por"
     ],
     "targets": [
@@ -17637,25 +17663,22 @@
   },
   {
     "id": "u34-0718",
-    "es": "Cada vez que llueve, se me cae algo del techo.",
-    "en": "Every time it rains, something falls from the ceiling on me.",
+    "es": "Cada vez que llueve, se nos daña algo en la cocina.",
+    "en": "Every time it rains, something in our kitchen breaks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:present-er-ir",
-      "g:se-accidental",
       "g:stem-boot",
-      "l:caerse",
+      "l:cocina",
+      "l:daño",
       "l:llover",
-      "l:techo",
       "l:vez",
       "p:indefinites-basic"
     ],
     "targets": [
-      "g:cada-cualquier",
-      "g:se-accidental"
+      "g:cada-cualquier"
     ],
     "kind": "statement",
     "unit": "u34",
@@ -17981,23 +18004,22 @@
   },
   {
     "id": "u34-0732",
-    "es": "Cada cliente guarda su cédula en la billetera.",
-    "en": "Each customer keeps their ID in their wallet.",
+    "es": "Cada cliente dejó su paraguas en la puerta.",
+    "en": "Each customer left their umbrella at the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:present-ar",
-      "l:billetera",
+      "g:preterite-ar",
       "l:cliente",
-      "l:cédula",
-      "l:guardar",
+      "l:dejar",
+      "l:paraguas",
+      "l:puerta",
       "p:possessives-basic"
     ],
     "targets": [
-      "g:cada-cualquier",
-      "l:billetera"
+      "g:cada-cualquier"
     ],
     "kind": "statement",
     "unit": "u34",
@@ -18059,18 +18081,19 @@
   },
   {
     "id": "u34-0735",
-    "es": "Cualquier tinto está bien, sin azúcar.",
-    "en": "Any black coffee is fine, without sugar.",
+    "es": "Cualquier cosa caliente está bien, gracias.",
+    "en": "Anything hot is fine, thanks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "c:gracias-de-nada",
       "g:cada-cualquier",
       "g:estar-location-states",
-      "l:azúcar",
       "l:bien",
+      "l:caliente",
+      "l:cosa",
       "l:estar",
-      "l:tinto",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo"
     ],
@@ -18343,24 +18366,23 @@
   },
   {
     "id": "u34-0746",
-    "es": "Cada botella se rompió en una caja distinta.",
-    "en": "Each bottle broke in a different box.",
+    "es": "Cada vaso que se rompe sale de mi sueldo.",
+    "en": "Every glass that breaks comes out of my wages.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:cada-cualquier",
-      "g:gender-articles",
-      "g:preterite-er-ir",
+      "g:present-er-ir",
       "g:reflexive-routine",
-      "l:botella",
-      "l:caja",
-      "l:distinto",
-      "l:romperse"
+      "g:relative-que",
+      "l:romperse",
+      "l:salir",
+      "l:sueldo",
+      "l:vaso",
+      "p:possessives-basic"
     ],
     "targets": [
-      "g:cada-cualquier",
-      "l:botella"
+      "g:cada-cualquier"
     ],
     "kind": "statement",
     "unit": "u34",
@@ -18558,18 +18580,21 @@
   },
   {
     "id": "u34-0754",
-    "es": "Cada herida necesita su propio cuidado.",
-    "en": "Each wound needs its own care.",
+    "es": "Cada herida es distinta, dice la enfermera.",
+    "en": "Every wound is different, the nurse says.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:cada-cualquier",
-      "g:present-ar",
-      "l:cuidar",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:stem-e-i",
+      "l:decir",
+      "l:distinto",
+      "l:enfermera",
       "l:herida",
-      "l:necesitar",
-      "l:propio",
-      "p:possessives-basic"
+      "l:ser"
     ],
     "targets": [
       "g:cada-cualquier"
@@ -18684,28 +18709,25 @@
   },
   {
     "id": "u34-0759",
-    "es": "Cada vez que le duele el pulmón, Hernando llama al médico.",
-    "en": "Every time his lung hurts, Hernando calls the doctor.",
+    "es": "Cada vez que sube la escalera, Hernando tiene que parar.",
+    "en": "Every time he climbs the stairs, Hernando has to stop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:gustar-full",
-      "g:present-ar",
+      "g:present-er-ir",
       "g:stem-boot",
-      "l:doler",
-      "l:llamar",
-      "l:médico",
-      "l:pulmón",
-      "l:vez",
-      "p:doler",
-      "p:me-duele",
-      "p:personal-a"
+      "g:verb-infinitive",
+      "l:escalera",
+      "l:parar",
+      "l:subir",
+      "l:tener",
+      "l:vez"
     ],
     "targets": [
-      "g:cada-cualquier",
-      "l:pulmón"
+      "g:cada-cualquier"
     ],
     "kind": "statement",
     "unit": "u34",
@@ -20031,24 +20053,20 @@
   },
   {
     "id": "u34-0811",
-    "es": "Cada cosa que se perdió estaba en una caja distinta.",
-    "en": "Each thing that got lost was in a different box.",
+    "es": "Cada cosa que se me pierde aparece en la mesa de Hernando.",
+    "en": "Everything I lose turns up on Hernando's table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:cada-cualquier",
-      "g:estar-location-states",
       "g:gender-articles",
-      "g:imperfect-states",
-      "g:pret-vs-imperfect",
-      "g:preterite-er-ir",
-      "g:reflexive-routine",
+      "g:present-er-ir",
       "g:relative-que",
-      "l:caja",
+      "g:se-accidental",
+      "g:stem-boot",
+      "l:aparecer",
       "l:cosa",
-      "l:distinto",
-      "l:estar",
+      "l:mesa",
       "l:perderse"
     ],
     "targets": [
@@ -20137,19 +20155,20 @@
   },
   {
     "id": "u34-0815",
-    "es": "Cada hueso del cuerpo tiene un nombre.",
-    "en": "Each bone in the body has a name.",
+    "es": "Me duele cada hueso del cuerpo.",
+    "en": "Every bone in my body hurts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:cada-cualquier",
       "g:gender-articles",
+      "g:gustar-full",
       "g:stem-boot",
       "l:cuerpo",
+      "l:doler",
       "l:hueso",
-      "l:nombre",
-      "l:tener"
+      "p:doler",
+      "p:me-duele"
     ],
     "targets": [
       "g:cada-cualquier",
@@ -20211,20 +20230,22 @@
   },
   {
     "id": "u34-0818",
-    "es": "Cada vez que veo la cámara de la calle, respiro.",
-    "en": "Every time I see the camera in the street, I breathe.",
+    "es": "Cada vez que suena el teléfono, pienso que es Altamira.",
+    "en": "Every time the phone rings, I think it's Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:present-ar",
-      "g:yo-irregular",
-      "l:calle",
-      "l:cámara",
-      "l:respirar",
-      "l:ver",
-      "l:vez"
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:pensar",
+      "l:ser",
+      "l:sonar",
+      "l:teléfono",
+      "l:vez",
+      "p:pensar-en"
     ],
     "targets": [
       "g:cada-cualquier"
@@ -20285,22 +20306,23 @@
   },
   {
     "id": "u34-0821",
-    "es": "Cualquiera sabe que el bolso no se deja solo.",
-    "en": "Anyone knows the bag isn't left alone.",
+    "es": "Cualquiera te puede robar el bolso si lo dejas solo.",
+    "en": "Anyone can steal your bag if you leave it alone. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
       "g:cada-cualquier",
+      "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
-      "g:present-er-ir",
-      "g:reflexive-routine",
-      "g:that-clauses",
+      "g:si-present",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:bolso",
-      "l:dejarse",
-      "l:saber",
-      "p:saber-conocer"
+      "l:dejar",
+      "l:poder",
+      "l:robar",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:cada-cualquier"
@@ -20504,23 +20526,22 @@
   },
   {
     "id": "u34-0829",
-    "es": "Cada una de las botellas llegó rota.",
-    "en": "Each one of the bottles arrived broken.",
+    "es": "Cada una de las tazas de Rosa es de un color distinto.",
+    "en": "Each of Rosa's cups is a different colour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:preterite-ar",
-      "l:botella",
-      "l:llegar",
-      "l:romper",
-      "p:encontrar-participle"
+      "g:ser-identity",
+      "l:color",
+      "l:distinto",
+      "l:ser",
+      "l:taza",
+      "p:container-de"
     ],
     "targets": [
-      "g:cada-cualquier",
-      "l:botella",
-      "p:encontrar-participle"
+      "g:cada-cualquier"
     ],
     "kind": "statement",
     "unit": "u34",
@@ -20821,22 +20842,20 @@
   },
   {
     "id": "u34-0842",
-    "es": "Perdí el celular.\n¡Qué suerte que tenías la clave anotada!",
-    "en": "I lost my phone.\nWhat luck that you had written down the password!",
+    "es": "Perdí el celular.\nPor suerte tenías la clave anotada.",
+    "en": "I lost my phone.\nLuckily you had the password written down.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-envidia",
+      "c:por-suerte",
       "g:gender-articles",
       "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-er-ir",
-      "g:that-clauses",
       "l:anotar",
       "l:celular",
       "l:clave",
       "l:perder",
-      "l:qué",
       "l:suerte",
       "l:tener"
     ],
@@ -21088,17 +21107,20 @@
   },
   {
     "id": "u34-0853",
-    "es": "Que no se te olvide apagar la estufa.",
-    "en": "Don't forget to turn off the stove.",
+    "es": "Antes de salir, que no se te olvide apagar la estufa.",
+    "en": "Before you go out, don't forget to turn off the stove.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
       "c:que-no-se-te-olvide",
       "g:gender-articles",
+      "g:prep-infinitive",
+      "l:antes",
       "l:apagar",
       "l:estufa",
-      "l:olvidar"
+      "l:olvidar",
+      "l:salir"
     ],
     "targets": [
       "c:que-no-se-te-olvide"
@@ -21110,8 +21132,8 @@
   },
   {
     "id": "u34-0854",
-    "es": "Que no se te olvide la llave de atrás.",
-    "en": "Don't forget the back key.",
+    "es": "Que no se te olvide la llave de la puerta de atrás.",
+    "en": "Don't forget the key to the back door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21120,7 +21142,8 @@
       "g:gender-articles",
       "l:atrás",
       "l:llave",
-      "l:olvidar"
+      "l:olvidar",
+      "l:puerta"
     ],
     "targets": [
       "c:que-no-se-te-olvide"
@@ -21132,18 +21155,20 @@
   },
   {
     "id": "u34-0855",
-    "es": "Que no se te olvide traer la factura.",
-    "en": "Don't forget to bring the receipt.",
+    "es": "Cuando pagues, que no se te olvide pedir la factura.",
+    "en": "When you pay, don't forget to ask for the receipt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
       "c:que-no-se-te-olvide",
       "g:gender-articles",
+      "g:subj-cuando-future",
+      "g:subj-wanting",
       "l:factura",
       "l:olvidar",
-      "l:traer",
-      "p:llevar-traer"
+      "l:pagar",
+      "l:pedir"
     ],
     "targets": [
       "c:que-no-se-te-olvide"
@@ -21203,18 +21228,19 @@
   },
   {
     "id": "u34-0858",
-    "es": "Que no se te olvide llevar la plata del cambio.",
-    "en": "Don't forget to take the money for change.",
+    "es": "Mañana es el cumpleaños de Vale, que no se te olvide.",
+    "en": "Tomorrow is Vale's birthday, don't forget.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
       "c:que-no-se-te-olvide",
       "g:gender-articles",
-      "l:cambio",
-      "l:llevar",
+      "g:ser-identity",
+      "l:cumpleaños",
+      "l:mañana",
       "l:olvidar",
-      "l:plata"
+      "l:ser"
     ],
     "targets": [
       "c:que-no-se-te-olvide"
@@ -21470,16 +21496,20 @@
   },
   {
     "id": "u34-0869",
-    "es": "Tomás guardó la botella en la cocina.",
-    "en": "Tomás put the bottle away in the kitchen.",
+    "es": "Tomás escondió la botella de aguardiente detrás del mostrador.",
+    "en": "Tomás hid the bottle of aguardiente behind the counter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:preterite-er-ir",
       "l:botella",
-      "l:cocina",
-      "l:guardar"
+      "l:detrás",
+      "l:esconder",
+      "l:mostrador",
+      "p:cerca-de",
+      "p:container-de",
+      "p:position-de"
     ],
     "targets": [
       "l:botella"
@@ -21517,7 +21547,7 @@
   {
     "id": "u34-0871",
     "es": "Fue una broma de Vale, no te preocupes.",
-    "en": "It was a joke by Vale, don't worry. (to a friend)",
+    "en": "It was one of Vale's jokes, don't worry. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21540,7 +21570,7 @@
   {
     "id": "u34-0872",
     "es": "¿Es en serio?\nNo, es una broma.",
-    "en": "Is it serious?\nNo, it's a joke.",
+    "en": "Seriously?\nNo, it's a joke.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21838,20 +21868,20 @@
   },
   {
     "id": "u34-0885",
-    "es": "La bienvenida del café fue muy linda.",
-    "en": "The café's welcome was very nice.",
+    "es": "Simón le da la bienvenida a cada cliente que entra.",
+    "en": "Simón welcomes every customer who comes in.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
+      "g:cada-cualquier",
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
+      "g:indirect-objects",
+      "g:present-ar",
+      "g:relative-que",
       "l:bienvenida",
-      "l:café",
-      "l:lindo",
-      "l:ser",
-      "p:quantifiers-basic"
+      "l:cliente",
+      "l:dar",
+      "l:entrar"
     ],
     "targets": [
       "l:bienvenida"
@@ -21863,18 +21893,19 @@
   },
   {
     "id": "u34-0886",
-    "es": "Tuvimos una bienvenida con tinto y almojábanas.",
-    "en": "We had a welcome with black coffee and almojábanas.",
+    "es": "Le hicimos una bienvenida a Mariana con tinto y almojábanas.",
+    "en": "We gave Mariana a welcome with black coffee and almojábanas.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-irregular-strong",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:preterite-ser-ir-hacer",
       "l:almojábana",
       "l:bienvenida",
-      "l:tener",
-      "l:tinto",
-      "p:con-sin"
+      "l:hacer",
+      "l:tinto"
     ],
     "targets": [
       "l:bienvenida"
@@ -22122,18 +22153,17 @@
   },
   {
     "id": "u34-0897",
-    "es": "La policía no pudo vencer el miedo de los testigos.",
-    "en": "The police couldn't overcome the witnesses' fear.",
+    "es": "Vale venció el miedo y habló con la policía.",
+    "en": "Vale overcame her fear and talked to the police.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-irregular-strong",
-      "g:verb-infinitive",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:hablar",
       "l:miedo",
-      "l:poder",
       "l:policía",
-      "l:testigo",
       "l:vencer"
     ],
     "targets": [
@@ -22218,16 +22248,14 @@
   },
   {
     "id": "u34-0901",
-    "es": "No hay que vencer a nadie, hay que hablar.",
-    "en": "There's nobody to beat, you just have to talk.",
+    "es": "Entre todos vencemos cualquier problema.",
+    "en": "Together we can beat any problem.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "c:hay-que",
-      "g:negation-words",
-      "g:verb-infinitive",
-      "l:hablar",
+      "g:cada-cualquier",
+      "g:present-er-ir",
+      "l:problema",
       "l:vencer"
     ],
     "targets": [
@@ -22240,8 +22268,8 @@
   },
   {
     "id": "u34-0902",
-    "es": "¿Ya venciste el nerviosismo?\nCasi, falta poco.",
-    "en": "Have you beaten your nerves yet?\nAlmost, not much left.",
+    "es": "¿Ya venciste los nervios?\nCasi, falta poco.",
+    "en": "Have you got over your nerves yet?\nAlmost, nearly there.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22249,7 +22277,7 @@
       "g:present-ar",
       "g:preterite-er-ir",
       "l:faltar",
-      "l:nerviosismo",
+      "l:nervio",
       "l:vencer",
       "p:poco-un-poco",
       "p:quantifiers-basic",
@@ -22897,16 +22925,16 @@
   },
   {
     "id": "u34-0930",
-    "es": "Un río rodea la finca de Hernando.",
-    "en": "A river surrounds Hernando's farm.",
+    "es": "Los cerros rodean la ciudad.",
+    "en": "The hills surround the city.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:finca",
-      "l:rodear",
-      "l:río"
+      "l:cerro",
+      "l:ciudad",
+      "l:rodear"
     ],
     "targets": [
       "l:rodear"
@@ -22943,25 +22971,28 @@
   },
   {
     "id": "u34-0932",
-    "es": "¿Dónde está la mina?\nLa rodea un río.",
-    "en": "Where is the mine?\nA river surrounds it.",
+    "es": "¿Cómo es la finca?\nLa rodea un río y hay muchos árboles.",
+    "en": "What's the farm like?\nA river surrounds it and there are lots of trees.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:donde-esta",
+      "c:como-es",
+      "c:hay",
       "g:direct-objects",
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:present-ar",
-      "l:dónde",
-      "l:estar",
-      "l:mina",
+      "g:ser-identity",
+      "l:cómo",
+      "l:finca",
       "l:rodear",
       "l:río",
+      "l:ser",
+      "l:árbol",
+      "p:quantifiers-basic",
       "p:question-word-order"
     ],
     "targets": [
-      "l:mina",
       "l:rodear"
     ],
     "kind": "dialogue",
@@ -23069,7 +23100,7 @@
   },
   {
     "id": "u34-0937",
-    "es": "Un carro mal estacionado impide el paso.",
+    "es": "Un carro mal parqueado impide el paso.",
     "en": "A badly parked car blocks the way.",
     "accept": [],
     "acceptEn": [],
@@ -23077,7 +23108,6 @@
       "g:gender-articles",
       "g:stem-e-i",
       "l:carro",
-      "l:estacionado",
       "l:impedir",
       "l:mal",
       "l:paso"
@@ -23387,17 +23417,21 @@
   },
   {
     "id": "u34-0950",
-    "es": "Mariana habló de una mujer y su amante.",
-    "en": "Mariana talked about a woman and her lover.",
+    "es": "Rosa y su amante se escribían cartas que nunca mandaban.",
+    "en": "Rosa and her lover wrote each other letters they never sent.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
-      "g:preterite-ar",
+      "g:imperfect-habitual",
+      "g:reflexive-routine",
+      "g:relative-que",
       "l:amante",
-      "l:hablar",
-      "l:mujer",
-      "p:possessives-basic"
+      "l:carta",
+      "l:escribirse",
+      "l:mandar",
+      "p:frequency-scale",
+      "p:possessives-basic",
+      "p:se-reciproco"
     ],
     "targets": [
       "l:amante"
@@ -23530,18 +23564,18 @@
   },
   {
     "id": "u34-0956",
-    "es": "Una mina de oro queda en el norte.",
-    "en": "A gold mine is in the north.",
+    "es": "Mi tío buscó oro en una mina del Chocó.",
+    "en": "My uncle looked for gold in a mine in Chocó.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:preterite-ar",
+      "l:buscar",
       "l:mina",
-      "l:norte",
       "l:oro",
-      "l:quedar",
-      "p:quedar-cerca"
+      "l:tío",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:mina"
@@ -23627,17 +23661,18 @@
   },
   {
     "id": "u34-0960",
-    "es": "Visitamos la mina y compramos una piedra.",
-    "en": "We visited the mine and bought a stone.",
+    "es": "En la mina nos dieron un casco a cada uno.",
+    "en": "At the mine they gave each of us a helmet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:cada-cualquier",
       "g:gender-articles",
-      "g:present-ar",
-      "l:comprar",
+      "g:preterite-irregular-strong",
+      "l:casco",
+      "l:dar",
       "l:mina",
-      "l:piedra",
-      "l:visitar"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:mina"
@@ -23768,21 +23803,24 @@
   },
   {
     "id": "u34-0966",
-    "es": "Hay que denunciar el choque antes de las ocho.",
-    "en": "You have to report the crash before eight.",
+    "es": "Hay que denunciar el robo antes de llamar al seguro.",
+    "en": "You have to report the theft before calling the insurance.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "c:hay-que",
       "g:gender-articles",
+      "g:prep-infinitive",
       "g:verb-infinitive",
       "l:antes",
-      "l:choque",
-      "l:denunciar"
+      "l:denunciar",
+      "l:llamar",
+      "l:robo",
+      "l:seguro",
+      "p:personal-a"
     ],
     "targets": [
-      "l:choque",
       "l:denunciar"
     ],
     "kind": "statement",
@@ -23864,20 +23902,24 @@
   },
   {
     "id": "u34-0970",
-    "es": "Voy a chocar si no me ayudas.",
-    "en": "I'm going to crash if you don't help me.",
+    "es": "Si sigues mirando el celular, vas a chocar.",
+    "en": "If you keep looking at your phone, you're going to crash. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:gerund-ways",
       "g:ir-a-plans",
-      "g:present-ar",
       "g:si-present",
-      "l:ayudar",
+      "g:stem-e-i",
+      "l:celular",
       "l:chocar",
       "l:ir",
+      "l:mirar",
+      "l:seguir",
       "p:ir-a-venir-de-place",
-      "p:me-te-nos-objects"
+      "p:seguir-gerundio"
     ],
     "targets": [
       "l:chocar"
@@ -23915,22 +23957,16 @@
   },
   {
     "id": "u34-0972",
-    "es": "Casi vamos a chocar con una moto.",
-    "en": "We were nearly going to hit a motorbike.",
+    "es": "Casi chocamos con una moto.",
+    "en": "We nearly hit a motorbike.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:vamos-a",
       "g:gender-articles",
-      "g:ir-a-plans",
-      "l:chocar",
-      "l:ir",
-      "l:moto",
-      "p:ir-a-venir-de-place"
+      "l:chocamos",
+      "l:moto"
     ],
-    "targets": [
-      "l:chocar"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u34",
     "theme": "lexemas de la mala semana",
@@ -23938,24 +23974,15 @@
   },
   {
     "id": "u34-0973",
-    "es": "Sin querer, puedo chocar con cualquier persona.",
-    "en": "Without meaning to, I can bump into anybody.",
+    "es": "En el TransMilenio todos chocamos con todos.",
+    "en": "On the TransMilenio everybody bumps into everybody.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:puedo",
-      "g:cada-cualquier",
-      "g:prep-infinitive",
-      "g:stem-boot",
-      "l:chocar",
-      "l:persona",
-      "l:poder",
-      "l:querer"
+      "g:gender-articles",
+      "l:chocamos"
     ],
-    "targets": [
-      "g:cada-cualquier",
-      "l:chocar"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u34",
     "theme": "lexemas de la mala semana",
@@ -23991,8 +24018,8 @@
   },
   {
     "id": "u34-0975",
-    "es": "Me miraron el hueso en la clínica y no tenía nada.",
-    "en": "They looked at the bone at the clinic and there was nothing wrong.",
+    "es": "En la clínica me revisaron el brazo y no tenía nada roto.",
+    "en": "At the clinic they checked my arm and nothing was broken.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24001,15 +24028,15 @@
       "g:negation-words",
       "g:pret-vs-imperfect",
       "g:preterite-ar",
+      "l:brazo",
       "l:clínica",
-      "l:hueso",
-      "l:mirar",
+      "l:revisar",
+      "l:romper",
       "l:tener",
       "p:me-te-nos-objects"
     ],
     "targets": [
-      "l:clínica",
-      "l:hueso"
+      "l:clínica"
     ],
     "kind": "statement",
     "unit": "u34",
@@ -24043,23 +24070,22 @@
   },
   {
     "id": "u34-0977",
-    "es": "Respiro mal desde que me duele el pulmón.",
-    "en": "I've breathed badly since my lung started to hurt.",
+    "es": "Hernando dice que tiene un pulmón de atleta y otro de taxista.",
+    "en": "Hernando says he has one athlete's lung and one taxi driver's lung.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:gustar-full",
-      "g:present-ar",
       "g:stem-boot",
-      "l:doler",
-      "l:mal",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:atleta",
+      "l:decir",
       "l:pulmón",
-      "l:respirar",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
-      "p:doler",
-      "p:me-duele"
+      "l:taxista",
+      "l:tener",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:pulmón"
@@ -24099,7 +24125,7 @@
   {
     "id": "u34-0979",
     "es": "El médico dijo que el músculo estaba muy duro.",
-    "en": "The doctor said the muscle was very hard.",
+    "en": "The doctor said the muscle was very tight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24280,18 +24306,17 @@
   },
   {
     "id": "u34-0987",
-    "es": "Mi mamá condena a todos los que hablan mal de Rosa.",
-    "en": "My mum condemns everyone who speaks ill of Rosa.",
+    "es": "Mi abuela condena cualquier mentira.",
+    "en": "My grandmother condemns any lie.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:cada-cualquier",
       "g:present-ar",
-      "g:relatives-prepositions",
+      "l:abuela",
       "l:condenar",
-      "l:hablar",
-      "l:mal",
-      "l:mamá",
+      "l:mentira",
+      "p:condenar",
       "p:possessives-basic"
     ],
     "targets": [
@@ -24625,8 +24650,8 @@
   },
   {
     "id": "u34-1001",
-    "es": "Espero que me haya llegado el correo de la aseguradora.",
-    "en": "I hope the email from the insurance company has reached me.",
+    "es": "Espero que te haya llegado el correo de la aseguradora.",
+    "en": "I hope the insurance company's email has reached you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24881,22 +24906,20 @@
   },
   {
     "id": "u34-1011",
-    "es": "No pienso que Rosa haya querido esto para el café.",
+    "es": "No creo que Rosa haya querido esto para el café.",
     "en": "I don't think Rosa wanted this for the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:creo-que",
       "g:gender-articles",
-      "g:stem-boot",
-      "g:subj-influence",
       "g:subj-perfect",
       "g:that-clauses",
       "l:café",
-      "l:pensar",
+      "l:creer",
       "l:querer",
       "p:demonstratives-basic",
-      "p:para-inf",
-      "p:pensar-en"
+      "p:para-inf"
     ],
     "targets": [
       "g:subj-perfect"
@@ -25007,7 +25030,7 @@
   {
     "id": "u34-1016",
     "es": "Es posible que el celular se haya quedado en el bus.",
-    "en": "It's possible the phone stayed on the bus.",
+    "en": "It's possible the phone was left on the bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25266,7 +25289,7 @@
   {
     "id": "u34-1026",
     "es": "Qué bueno que hayas denunciado el robo de inmediato.",
-    "en": "How good that you reported the theft right away.",
+    "en": "Good thing you reported the theft right away. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25859,18 +25882,19 @@
   },
   {
     "id": "u34-1050",
-    "es": "Los técnicos encontraron las luces apagadas.",
-    "en": "The technicians found the lights off.",
+    "es": "Los técnicos encontraron la máquina llena de agua.",
+    "en": "The technicians found the machine full of water.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:preterite-ar",
-      "l:apagar",
+      "l:agua",
       "l:encontrar",
-      "l:luz",
-      "l:técnico",
-      "p:encontrar-participle"
+      "l:lleno",
+      "l:máquina",
+      "l:técnico"
     ],
     "targets": [
       "p:encontrar-participle"
@@ -25973,22 +25997,24 @@
   },
   {
     "id": "u34-1055",
-    "es": "Dejé mi celular cargando y lo encontré lleno.",
-    "en": "I left my phone charging and found it full.",
+    "es": "Dejé el celular cargando toda la noche y lo encontré descargado.",
+    "en": "I left my phone charging all night and found it dead.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
+      "g:gender-articles",
       "g:gerund-ways",
       "g:preterite-ar",
       "l:cargar",
       "l:celular",
       "l:dejar",
+      "l:descargar",
       "l:encontrar",
-      "l:lleno",
+      "l:noche",
       "p:cargar-descargar",
       "p:encontrar-ver-adj",
-      "p:possessives-basic"
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:cargar-descargar"
@@ -26092,18 +26118,20 @@
   },
   {
     "id": "u34-1060",
-    "es": "Dejó la maleta cerrada en el taxi.",
-    "en": "She left the suitcase closed in the taxi.",
+    "es": "Dejó la ventana del carro abierta y le robaron la maleta.",
+    "en": "She left the car window open and her suitcase was stolen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
       "g:preterite-ar",
-      "l:cerrar",
+      "l:abrir",
+      "l:carro",
       "l:dejar",
       "l:maleta",
-      "l:taxi",
-      "p:encontrar-participle"
+      "l:robar",
+      "l:ventana"
     ],
     "targets": [
       "p:encontrar-participle"
@@ -26247,16 +26275,18 @@
   },
   {
     "id": "u34-1067",
-    "es": "Dejaron las botellas en la mesa.",
-    "en": "They left the bottles on the table.",
+    "es": "Dejaron las botellas abiertas en la mesa.",
+    "en": "They left the bottles open on the table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "l:abrir",
       "l:botella",
       "l:dejar",
-      "l:mesa"
+      "l:mesa",
+      "p:encontrar-participle"
     ],
     "targets": [
       "l:botella"
@@ -26268,18 +26298,18 @@
   },
   {
     "id": "u34-1068",
-    "es": "Encontré mi mensaje sin leer en el celular.",
-    "en": "I found my message unread on the phone.",
+    "es": "Dejé tu mensaje sin contestar, perdón.",
+    "en": "I left your message unanswered, sorry. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:perdon-disculpe",
       "g:prep-infinitive",
       "g:preterite-ar",
-      "l:celular",
-      "l:encontrar",
-      "l:leer",
+      "l:contestar",
+      "l:dejar",
       "l:mensaje",
+      "l:perdón",
       "p:possessives-basic"
     ],
     "targets": [],
@@ -26879,8 +26909,8 @@
   },
   {
     "id": "u34-1091",
-    "es": "Le pido disculpas al vecino por la piedra.",
-    "en": "I apologise to the neighbour for the stone.",
+    "es": "Le pedí disculpas a la vecina por la ventana rota.",
+    "en": "I apologised to the neighbour for the broken window.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26888,11 +26918,12 @@
       "g:indirect-objects",
       "g:le-doubling",
       "g:por-para-1",
-      "g:stem-e-i",
+      "g:preterite-er-ir",
       "l:disculpa",
       "l:pedir",
-      "l:piedra",
+      "l:romper",
       "l:vecino",
+      "l:ventana",
       "p:pedir-disculpas-por",
       "p:preguntar-pedir"
     ],
@@ -26907,15 +26938,15 @@
   },
   {
     "id": "u34-1092",
-    "es": "Había cristales por todas partes en el piso del café.",
-    "en": "There was broken glass everywhere on the café floor.",
+    "es": "Había agua por todas partes en el piso del café.",
+    "en": "There was water everywhere on the café floor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-states",
+      "l:agua",
       "l:café",
-      "l:cristal",
       "l:parte",
       "l:piso",
       "p:ninguna-parte"
@@ -26956,7 +26987,7 @@
   {
     "id": "u34-1094",
     "es": "Busqué la llave por todos lados, pero nada.",
-    "en": "I looked for the key everywhere, but nothing.",
+    "en": "I looked for the key everywhere, but no luck.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27029,8 +27060,8 @@
   },
   {
     "id": "u34-1097",
-    "es": "Hay mensajes de Altamira por todos lados.",
-    "en": "There are messages from Altamira everywhere.",
+    "es": "Hay letreros de Altamira por todos lados.",
+    "en": "There are Altamira signs everywhere.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27038,7 +27069,7 @@
       "g:hay-vs-esta",
       "g:por-para-1",
       "l:lado",
-      "l:mensaje",
+      "l:letrero",
       "p:ninguna-parte"
     ],
     "targets": [
@@ -27101,21 +27132,18 @@
   },
   {
     "id": "u34-1100",
-    "es": "No me gusta el ruido de las obras por ningún lado.",
-    "en": "I don't like the noise from the building work anywhere.",
+    "es": "Hay obras por todas partes en el centro.",
+    "en": "There's building work everywhere downtown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
+      "c:hay",
       "g:gender-articles",
-      "g:gustar-basic",
-      "g:indefinites",
-      "g:negation-words",
-      "g:por-para-1",
-      "l:gustar",
-      "l:lado",
+      "g:hay-vs-esta",
+      "g:present-er-ir",
+      "l:centro",
       "l:obra",
-      "l:ruido",
+      "l:partir",
       "p:ninguna-parte"
     ],
     "targets": [
@@ -27358,8 +27386,8 @@
   },
   {
     "id": "u34-1110",
-    "es": "Tomás se manchó la camisa con la salsa del ajiaco.",
-    "en": "Tomás got ajiaco sauce on his shirt.",
+    "es": "Tomás se manchó la camisa de ajiaco.",
+    "en": "Tomás got ajiaco on his shirt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27369,7 +27397,6 @@
       "l:ajiaco",
       "l:camisa",
       "l:manchar",
-      "l:salsa",
       "p:mancharse"
     ],
     "targets": [
@@ -27438,22 +27465,19 @@
   },
   {
     "id": "u34-1113",
-    "es": "Iba a setenta kilómetros por hora cuando vi la piedra.",
-    "en": "I was doing seventy kilometres an hour when I saw the stone.",
+    "es": "El taxi iba a toda velocidad y casi choca con un camión.",
+    "en": "The taxi was going at full speed and nearly hit a lorry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:pret-vs-imperfect",
-      "g:preterite-er-ir",
-      "l:hora",
+      "l:camión",
+      "l:choca",
       "l:ir",
-      "l:kilómetro",
-      "l:piedra",
-      "l:ver",
-      "p:costar-pagar",
-      "p:cuando-basic",
+      "l:taxi",
+      "l:velocidad",
+      "p:agarrar-velocidad",
       "p:ir-a-velocidad",
       "p:ir-a-venir-de-place"
     ],
@@ -27565,7 +27589,7 @@
   {
     "id": "u34-1118",
     "es": "Me divierte mucho la forma en que habla Hernando.",
-    "en": "I enjoy the way Hernando talks a lot.",
+    "en": "I really enjoy the way Hernando talks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27677,21 +27701,19 @@
   },
   {
     "id": "u34-1123",
-    "es": "Esa película divierte a mi hija.",
-    "en": "That film amuses my daughter.",
+    "es": "Mi hija se divierte mucho con Simón.",
+    "en": "My daughter has a great time with Simón.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
+      "g:reflexive-routine",
       "g:stem-boot",
-      "l:divertir",
+      "l:divertirse",
       "l:hija",
-      "l:película",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
-    "targets": [
-      "l:divertir"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u34",
     "theme": "últimos ajustes",
@@ -27699,27 +27721,23 @@
   },
   {
     "id": "u34-1124",
-    "es": "Mi taxi iba a cuarenta kilómetros por hora por el centro.",
-    "en": "My taxi was doing forty kilometres an hour through the centre.",
+    "es": "Mi taxista manejaba con una mano y hablaba por celular con la otra.",
+    "en": "My taxi driver was driving with one hand and talking on the phone with the other.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:por-para-1",
-      "l:centro",
-      "l:hora",
-      "l:ir",
-      "l:kilómetro",
-      "l:taxi",
-      "p:costar-pagar",
-      "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place",
+      "l:celular",
+      "l:hablar",
+      "l:manejar",
+      "l:mano",
+      "l:taxista",
+      "p:otro-no-article",
       "p:possessives-basic"
     ],
-    "targets": [
-      "p:ir-a-velocidad"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u34",
     "theme": "últimos ajustes",
@@ -27727,27 +27745,23 @@
   },
   {
     "id": "u34-1125",
-    "es": "El bus iba a sesenta por hora cuando paró.",
-    "en": "The bus was doing sixty an hour when it stopped.",
+    "es": "El bus paró de repente y todos nos caímos.",
+    "en": "The bus stopped suddenly and we all fell over.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:de-repente",
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:pret-vs-imperfect",
       "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
       "l:bus",
-      "l:hora",
-      "l:ir",
+      "l:caerse",
       "l:parar",
-      "p:costar-pagar",
-      "p:cuando-basic",
-      "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place"
+      "l:repente",
+      "p:caerse-lastimarse"
     ],
-    "targets": [
-      "p:ir-a-velocidad"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u34",
     "theme": "últimos ajustes",
@@ -27933,8 +27947,8 @@
   },
   {
     "id": "u34-1133",
-    "es": "Cualquier mañana de lunes, el café está lleno de gente.",
-    "en": "Any Monday morning, the café is full of people.",
+    "es": "Cualquier lunes en la mañana, el café está lleno de gente.",
+    "en": "On any Monday morning, the café is full of people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27948,7 +27962,8 @@
       "l:lunes",
       "l:mañana",
       "p:la-gente-singular",
-      "p:lleno-libre"
+      "p:lleno-libre",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:cada-cualquier"
@@ -28088,18 +28103,23 @@
   },
   {
     "id": "u34-1139",
-    "es": "Siento no tener tu número, Vale.",
-    "en": "I'm sorry I don't have your number, Vale.",
+    "es": "Siento lo de la máquina, Vale. Mañana viene el técnico.",
+    "en": "I'm sorry about the machine, Vale. The technician is coming tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:stem-boot",
-      "l:número",
+      "l:mañana",
+      "l:máquina",
       "l:sentir",
-      "l:tener",
-      "p:possessives-basic",
-      "p:sentir-lo-de",
-      "p:siento-llegar-tarde"
+      "l:técnico",
+      "l:venir",
+      "p:lamento-lo-de",
+      "p:lo-de",
+      "p:lo-de-noun",
+      "p:lo-de-topic",
+      "p:sentir-lo-de"
     ],
     "targets": [
       "p:sentir-lo-de"
@@ -28309,20 +28329,21 @@
   },
   {
     "id": "u34-1148",
-    "es": "Siento verte con la mano así, Vale.",
-    "en": "I'm sorry to see you with your hand like that, Vale.",
+    "es": "Siento mucho lo de tu dedo, Vale.",
+    "en": "I'm so sorry about your finger, Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:object-pronoun-position",
       "g:stem-boot",
-      "l:mano",
+      "l:dedo",
       "l:sentir",
-      "l:ver",
-      "p:me-te-nos-objects",
-      "p:sentir-lo-de",
-      "p:siento-llegar-tarde"
+      "p:lamento-lo-de",
+      "p:lo-de",
+      "p:lo-de-noun",
+      "p:lo-de-topic",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:sentir-lo-de"
     ],
     "targets": [
       "p:sentir-lo-de"
@@ -28334,16 +28355,18 @@
   },
   {
     "id": "u34-1149",
-    "es": "Siento no ir contigo al hospital.",
-    "en": "I'm sorry I'm not going to the hospital with you. (to a friend)",
+    "es": "Siento no poder ir contigo a la clínica.",
+    "en": "I'm sorry I can't go to the clinic with you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:prep-pronouns",
       "g:stem-boot",
-      "l:hospital",
+      "g:verb-infinitive",
+      "l:clínica",
       "l:ir",
+      "l:poder",
       "l:sentir",
       "p:sentir-lo-de",
       "p:siento-llegar-tarde"
@@ -28674,16 +28697,17 @@
   },
   {
     "id": "u34-1163",
-    "es": "¿Se te rompió la ventana del cuarto?",
-    "en": "Did your bedroom window break? (to a friend)",
+    "es": "¿Se te rompió la pantalla del celular?",
+    "en": "Did your phone screen break? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
       "g:se-accidental",
-      "l:romperse",
-      "l:ventana"
+      "l:celular",
+      "l:pantalla",
+      "l:romperse"
     ],
     "targets": [
       "g:se-accidental"
@@ -29009,14 +29033,17 @@
   },
   {
     "id": "u34-1178",
-    "es": "¿Hubo heridos en la avenida?",
-    "en": "Were there any injured on the avenue?",
+    "es": "¿Cuántos heridos hubo en el choque de la avenida?",
+    "en": "How many people were hurt in the crash on the avenue?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-states",
+      "g:questions",
       "l:avenida",
+      "l:choque",
+      "l:cuánto",
       "l:herir"
     ],
     "targets": [],
@@ -29135,23 +29162,20 @@
   },
   {
     "id": "u34-1184",
-    "es": "¿Cuál es la clínica más cerca de aquí?",
-    "en": "Which is the closest clinic to here?",
+    "es": "¿Cuál es la clínica más cercana?",
+    "en": "Which is the nearest clinic?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:questions",
       "g:ser-identity",
       "g:superlatives",
-      "l:aquí",
-      "l:cerca",
+      "l:cercano",
       "l:clínica",
       "l:cuál",
       "l:ser",
-      "p:aqui-ahi-alla",
-      "p:cerca-de",
-      "p:position-de",
       "p:question-word-order"
     ],
     "targets": [
@@ -29851,16 +29875,22 @@
   },
   {
     "id": "u34-1214",
-    "es": "¿Siente mucho llegar tan tarde?",
-    "en": "Is he very sorry to be so late?",
+    "es": "¿De verdad sientes llegar tarde, o es otra excusa?",
+    "en": "Are you really sorry you're late, or is it another excuse? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:en-serio",
+      "g:ser-identity",
       "g:stem-boot",
+      "l:excusa",
       "l:llegar",
       "l:sentir",
+      "l:ser",
       "l:tarde",
-      "p:quantifiers-basic",
+      "l:verdad",
+      "p:llegar-a-tiempo",
+      "p:otro-no-article",
       "p:sentir-lo-de",
       "p:siento-llegar-tarde"
     ],
@@ -29925,17 +29955,17 @@
   },
   {
     "id": "u34-1217",
-    "es": "¿Esperas que el técnico haya llegado ya?",
-    "en": "Do you hope the technician has already arrived? (to a friend)",
+    "es": "¿Crees que el técnico ya haya llegado?",
+    "en": "Do you think the technician has arrived already? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:present-er-ir",
+      "g:subj-opinion-negated",
       "g:subj-perfect",
-      "g:subj-wishes",
       "g:that-clauses",
-      "l:esperar",
+      "l:creer",
       "l:llegar",
       "l:técnico"
     ],
@@ -30004,18 +30034,19 @@
   },
   {
     "id": "u34-1220",
-    "es": "¿Cuál mesa prefieres? Cualquiera me sirve.",
+    "es": "¿Qué mesa prefieres? A mí cualquiera me sirve.",
     "en": "Which table do you prefer? Any one will do for me. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
+      "g:prep-pronouns",
       "g:questions",
       "g:stem-boot",
       "g:stem-e-i",
-      "l:cuál",
       "l:mesa",
       "l:preferir",
+      "l:qué",
       "l:servir",
       "p:me-te-nos-objects",
       "p:prefieres-x-o-y"
@@ -30079,22 +30110,20 @@
   },
   {
     "id": "u34-1223",
-    "es": "¿Quién tiene cada llave del café?",
-    "en": "Who has each key to the café?",
+    "es": "¿Cada empleado tiene su propia llave?",
+    "en": "Does each employee have their own key?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:adjective-agreement",
       "g:cada-cualquier",
-      "g:gender-articles",
-      "g:questions",
       "g:stem-boot",
-      "l:café",
+      "l:empleado",
       "l:llave",
-      "l:quién",
+      "l:propio",
       "l:tener",
-      "p:la-cara-que-puso",
-      "p:question-word-order"
+      "p:possessives-basic"
     ],
     "targets": [
       "g:cada-cualquier"
@@ -30149,16 +30178,19 @@
   },
   {
     "id": "u34-1226",
-    "es": "¿Te atreves con la nota?",
-    "en": "Do you dare take on the note? (to a friend)",
+    "es": "¿Quién se atreve con la máquina de café?",
+    "en": "Who dares take on the coffee machine?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
+      "g:questions",
       "g:reflexive-routine",
       "l:atreverse",
-      "l:nota"
+      "l:café",
+      "l:máquina",
+      "l:quién"
     ],
     "targets": [
       "l:atreverse"
@@ -30241,7 +30273,7 @@
   {
     "id": "u34-1230",
     "es": "¿Es una broma o es en serio?",
-    "en": "Is it a joke or is it serious?",
+    "en": "Is it a joke or are you serious?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30501,25 +30533,25 @@
   },
   {
     "id": "u34-1241",
-    "es": "¿Qué pasó con la ventana?\nSe nos rompió con una piedra.",
-    "en": "What happened with the window?\nIt got broken on us by a stone.",
+    "es": "¿Qué pasó con la ventana?\nNos la rompieron con una piedra.",
+    "en": "What happened to the window?\nSomeone broke it with a stone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
+      "g:double-pronouns",
       "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-er-ir",
       "g:questions",
-      "g:se-accidental",
       "l:pasar",
       "l:piedra",
       "l:qué",
-      "l:romperse",
-      "l:ventana"
+      "l:romper",
+      "l:ventana",
+      "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:se-accidental"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u34",
     "theme": "preguntas después del susto",
@@ -30527,8 +30559,8 @@
   },
   {
     "id": "u34-1242",
-    "es": "¿Estás bien?\nSí, no tiene importancia.",
-    "en": "Are you OK?\nYes, it doesn't matter.",
+    "es": "¿Estás bien?\nSí, tranquilo, no tiene importancia.",
+    "en": "Are you OK?\nYes, don't worry, it doesn't matter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30536,11 +30568,13 @@
       "c:no-tiene-importancia",
       "c:te-pasa-algo",
       "c:tienes",
+      "c:tranquilo",
       "g:stem-boot",
       "l:bien",
       "l:estar",
       "l:importancia",
-      "l:tener"
+      "l:tener",
+      "l:tranquilo"
     ],
     "targets": [
       "c:no-tiene-importancia",

@@ -2,7 +2,7 @@
   "id": "ch103",
   "unit": "u34",
   "title": "Una sola palabra",
-  "text": "La mesa de la ventana estaba llena de cristales, y en medio de los cristales había una piedra grande. Simón se escondió debajo de la caja.\nVale: ¿Estás bien, Simón?\nSimón: ¡Son cosas que pasan! ¡Cosas!\nHernando: Hasta el loro está más tranquilo que yo.\nVale empezó a quitar los cristales de la mesa de Rosa, uno por uno. Tomás le tomó las manos.\nTomás: Tú tienes tres puntos en el dedo. Yo lo hago.\nTomás guardó la piedra en una bolsa, como en las series de televisión.\nA las ocho, Tomás, Vale, Hernando y Mariana llegaron a la comisaría. En la puerta había un letrero de bienvenida, y adentro, una fila de veinte personas.\nA una señora le robaron la cartera. A un señor le robaron las gallinas.\nHernando: Esta fila es un espectáculo.\nA las once, un policía los llamó. Escribía en la computadora con dos dedos.\nPolicía: ¿Qué les pasó?\nTomás: Ayer me robaron el celular en un bus de la Séptima. Nos rompieron la ventana del café. Y alguien firmó un contrato con el nombre de mi tío abuelo.\nPolicía: Uno por uno, señor. Su cédula, por favor.\nPolicía: Esta cédula se le venció en 2014.\nTomás: Vivía en Toronto.\nPolicía: En Toronto el tiempo también pasa, señor.\nMariana: ¿Podemos hablar de la ventana, por favor?\nPolicía: ¿El café tiene problemas financieros? ¿Le debe plata a alguien?\nVale: Problemas financieros tiene todo el mundo. Nosotros tenemos un hotel que quiere nuestro edificio.\nHernando: ¿Y quién alimenta a Simón hoy?\nVale: Jhon Fredy, con almojábanas.\nPolicía: ¿Y la piedra?\nTomás sacó la piedra de la bolsa. Con la luz de la oficina, vio lo que nadie vio en la noche: un papel pegado debajo, con una sola palabra en rojo.\n«Vendan».\nEl policía dejó de escribir.\nPolicía: Esto ya no es un robo. Es una amenaza.\nMariana le tomó una foto al papel. Vale le tomó la mano a Tomás, y esta vez no se la soltó.\nHernando se sentó despacio, con la mano en el pecho.\nHernando: No es nada, mija. Es la fila.",
+  "text": "La mesa de la ventana estaba llena de vidrios, y en medio de los vidrios había una piedra grande. Simón se escondió debajo de la caja.\nSimón: ¡Son cosas que pasan! ¡Cosas!\nHernando: Hasta el loro está más tranquilo que yo.\nVale empezó a quitar los vidrios de la mesa de Rosa, uno por uno. Tomás le tomó las manos.\nTomás: Tú tienes tres puntos en el dedo. Yo lo hago.\nTomás guardó la piedra en una bolsa, como en las series de televisión.\nA las ocho, Tomás, Vale, Hernando y Mariana llegaron a la comisaría. En la puerta había un letrero de bienvenida, y adentro, una fila de veinte personas.\nA una señora le robaron la cartera. A un señor le robaron las gallinas.\nHernando: Esta fila es un espectáculo. A mí no me vence la edad, pero esta fila sí.\nA las once, un policía los llamó. Escribía en la computadora con dos dedos.\nPolicía: ¿Qué les pasó?\nTomás: Ayer me robaron el celular en un bus de la Séptima. Nos rompieron la ventana del café. Y alguien firmó un contrato con el nombre de mi tío abuelo.\nPolicía: Uno por uno, señor. Su cédula, por favor.\nPolicía: Esta cédula es de las viejas. No sirve desde 2010.\nTomás: Vivía en Toronto.\nPolicía: En Toronto el tiempo también pasa, señor.\nPolicía: ¿El café tiene problemas financieros? ¿Le debe plata a alguien?\nVale: Problemas financieros tiene todo el mundo. Nosotros tenemos un hotel que quiere nuestro edificio.\nHernando: ¿Y quién alimenta a Simón hoy?\nVale: Jhon Fredy, con almojábanas.\nPolicía: ¿Y la piedra?\nTomás sacó la piedra de la bolsa. Con la luz de la oficina, vio lo que nadie vio en la noche: un papel pegado debajo, con una sola palabra en rojo.\n«Vendan».\nEl policía dejó de escribir.\nPolicía: Esto ya no es un robo. Es una amenaza.\nMariana le tomó una foto al papel. Vale le tomó la mano a Tomás, y esta vez no se la soltó.\nHernando se sentó despacio, con la mano en el pecho.\nHernando: No es nada, mija. Es la fila.",
   "gloss": [
     {
       "es": "loro",
@@ -13,7 +13,7 @@
       "en": "Sell"
     },
     {
-      "es": "La mesa de la ventana estaba llena de cristales",
+      "es": "La mesa de la ventana estaba llena de vidrios",
       "en": "The window table was covered in broken glass"
     },
     {
@@ -61,8 +61,8 @@
       "en": "One at a time"
     },
     {
-      "es": "Esta cédula se le venció en 2014.",
-      "en": "Your ID card expired in 2014."
+      "es": "Esta cédula es de las viejas. No sirve desde 2010.",
+      "en": "This ID card is one of the old ones. It hasn't been valid since 2010."
     },
     {
       "es": "En Toronto el tiempo también pasa, señor.",
@@ -91,6 +91,14 @@
     {
       "es": "No es nada, mija. Es la fila.",
       "en": "It's nothing, dear. It's the queue."
+    },
+    {
+      "es": "A mí no me vence la edad, pero esta fila sí.",
+      "en": "Age can't beat me, but this queue can."
+    },
+    {
+      "es": "quitar los vidrios",
+      "en": "clear away the broken glass"
     }
   ],
   "questions": [
@@ -108,7 +116,7 @@
       "q": "What is the problem with Tomás's ID card?",
       "options": [
         "It is from Canada",
-        "It expired in 2014",
+        "It is an old one that stopped being valid in 2010",
         "It has the wrong name",
         "Vale has it"
       ],
@@ -180,13 +188,13 @@
   ],
   "requires": [
     "c:a-cuantas-cuotas",
+    "c:a-mi-tambien",
     "c:ayer-anoche",
-    "c:bien-y-tu",
     "c:hago-salgo-vengo",
     "c:no-se",
+    "c:no-sirve",
     "c:por-favor",
     "c:son-cosas-que-pasan",
-    "c:te-pasa-algo",
     "c:tienes",
     "c:tranquilo",
     "c:ya-no",
@@ -203,6 +211,7 @@
     "g:negation-words",
     "g:por-para-1",
     "g:possessives",
+    "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
@@ -211,25 +220,25 @@
     "g:reflexive-routine",
     "g:relative-que",
     "g:relatives-donde-lo-que",
-    "g:se-accidental",
     "g:ser-identity",
     "g:stem-boot",
     "g:verb-infinitive",
     "g:yo-irregular",
     "p:cerca-de",
-    "p:dates-years",
     "p:dejar-de-inf",
     "p:demonstratives-basic",
     "p:empezar-terminar",
     "p:indefinites-basic",
     "p:lleno-libre",
     "p:me-te-nos-objects",
+    "p:no-hasta",
     "p:por-la-manana",
     "p:posicion-precisa",
     "p:position-de",
     "p:possessives-basic",
     "p:telling-time",
-    "p:todos-los-dias"
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor"
   ],
   "lexemes": [
     "l:abuelo",
@@ -238,7 +247,6 @@
     "l:almojábana",
     "l:amenazar",
     "l:ayer",
-    "l:bien",
     "l:bienvenida",
     "l:bolsa",
     "l:bus",
@@ -250,13 +258,13 @@
     "l:computadora",
     "l:contrato",
     "l:cosa",
-    "l:cristal",
     "l:cédula",
     "l:debajo",
     "l:deber",
     "l:dedo",
     "l:dejar",
     "l:despacio",
+    "l:edad",
     "l:edificio",
     "l:empezar",
     "l:esconder",
@@ -271,7 +279,6 @@
     "l:gallina",
     "l:grande",
     "l:guardar",
-    "l:hablar",
     "l:hacer",
     "l:hotel",
     "l:hoy",
@@ -296,7 +303,6 @@
     "l:persona",
     "l:piedra",
     "l:plata",
-    "l:poder",
     "l:policía",
     "l:problema",
     "l:puerta",
@@ -313,6 +319,7 @@
     "l:sentarse",
     "l:ser",
     "l:serie",
+    "l:servir",
     "l:señor",
     "l:señora",
     "l:soltar",
@@ -327,6 +334,8 @@
     "l:ventana",
     "l:ver",
     "l:vez",
+    "l:vidrio",
+    "l:viejo",
     "l:vivir"
   ]
 }

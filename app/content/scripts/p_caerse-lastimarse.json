@@ -115,7 +115,9 @@
     {
       "prompt": "Say: I fell down the stairs.",
       "answer": "Me caí por la escalera.",
-      "accept": [],
+      "accept": [
+        "Me caí por las escaleras."
+      ],
       "why": "Falling is *caerse*, so *me caí*, with *por* for down."
     },
     {

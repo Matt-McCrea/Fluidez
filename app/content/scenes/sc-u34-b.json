@@ -3,7 +3,7 @@
   "unit": "u34",
   "title": "Guayaba y cuchillo",
   "spare": false,
-  "brief": "You're Tomás in the café kitchen. Vale, your friend, has just cut her finger slicing guava, so use tú. Check on her, ask about the finger, and stay calm when the espresso machine dies too.",
+  "brief": "You're Tomás in the café kitchen. Vale, your friend, has just cut her finger slicing mangoes, so use tú. Check on her, ask about the finger, and stay calm when the espresso machine dies too.",
   "turns": [
     {
       "id": "t1",
@@ -29,7 +29,7 @@
     {
       "id": "t2",
       "npc": "Poco, pero sangra. Y se me cayó la fruta.",
-      "npcEn": "A little, but it's bleeding. And the fruit fell.",
+      "npcEn": "A little, but it's bleeding. And I dropped the fruit.",
       "intent": "Ask if she has already washed her finger.",
       "accept": [
         "¿Ya te lavaste el dedo?",
@@ -96,13 +96,20 @@
       "id": "t5",
       "npc": "Gracias, Tomás. Mientras llamo al técnico, ¿me regalas un tinto?",
       "npcEn": "Thanks, Tomás. While I call the technician, can you give me a black coffee?",
-      "intent": "Say you'll make her a tinto and she should sit down.",
+      "intent": "Offer to make her a tinto, then realise the café has run out of coffee.",
       "accept": [
-        "Claro, te hago un tinto. Siéntate.",
-        "Yo te preparo un tinto, siéntate.",
-        "Te hago un tinto ya. Descansa un poco."
+        "Claro. Ay, no, se nos acabó el café.",
+        "Te hago un tinto. Uy, se nos acabó el café.",
+        "Claro, pero se nos terminó el café."
       ],
-      "require": [],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse nos (acabó|terminó)(?![a-zñáéíóú])",
+          "flags": "i",
+          "label": "running out by accident: se nos acabó"
+        }
+      ],
       "focus": "g:se-accidental",
       "next": null
     }
@@ -112,6 +119,7 @@
     "c:creo-que",
     "c:gracias-de-nada",
     "c:hago-salgo-vengo",
+    "c:no-se",
     "c:no-tiene-importancia",
     "c:oye-mira",
     "c:perdon-disculpe",
@@ -119,8 +127,6 @@
     "c:tienes",
     "c:tranquilo",
     "g:adjective-agreement",
-    "g:commands-tu",
-    "g:commands-with-pronouns",
     "g:gender-articles",
     "g:possessives-stressed",
     "g:present-ar",
@@ -140,8 +146,10 @@
     "g:that-clauses",
     "g:verbs-of-change",
     "g:yo-irregular",
+    "l:acabar",
     "l:agua",
     "l:caerse",
+    "l:café",
     "l:claro",
     "l:cortar",
     "l:cortarse",
@@ -153,7 +161,6 @@
     "l:daño",
     "l:dedo",
     "l:desastre",
-    "l:descansar",
     "l:dudar",
     "l:esperar",
     "l:fruta",
@@ -167,13 +174,12 @@
     "l:máquina",
     "l:pasar",
     "l:perdón",
-    "l:preparar",
     "l:qué",
     "l:raro",
     "l:regalar",
-    "l:sentarse",
     "l:ser",
     "l:tener",
+    "l:terminar",
     "l:tinto",
     "l:tranquilo",
     "l:técnico",
@@ -185,9 +191,7 @@
     "p:me-trae",
     "p:otro-no-article",
     "p:personal-a",
-    "p:poco-un-poco",
     "p:por-culpa-de",
-    "p:quantifiers-basic",
-    "p:que-subj-deseo"
+    "p:quantifiers-basic"
   ]
 }

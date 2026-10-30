@@ -31,7 +31,7 @@
       "en": "I stained Tomás's shirt with coffee."
     }
   ],
-  "rule": "When the stain lands on you or your own things, use *manchar* with *me*, and no *mi*:\n\n*Me manché la camisa de café.*\n\nThe pattern: *me manché* + the item + *de* + the stuff.\n\nFor someone else's thing, or when you stain something on purpose, use plain *manchar*:\n*Manché la mesa con vino.*\n\nThe stain itself is *una mancha*:\n*una mancha de café*",
+  "rule": "When the stain lands on you or your own things, use *manchar* with *me*, and no *mi*:\n\n*Me manché la camisa de café.*\n\nThe pattern: *me manché* + the item + *de* + the stuff. (*Con* works too: *me manché la camisa con café*.)\n\nFor something you are not wearing, like a table or someone else's shirt, use plain *manchar*:\n*Manché la mesa con vino.*\n\nThe stain itself is *una mancha*:\n*una mancha de café*",
   "smallPrint": "This is the possessive dative again, with a reflexive verb.",
   "readAndPick": [
     {
@@ -117,31 +117,41 @@
     {
       "prompt": "I got sauce on my jacket.",
       "answer": "Me manché la chaqueta de salsa.",
-      "accept": [],
+      "accept": [
+        "Me manché la chaqueta con salsa."
+      ],
       "why": "*Me manché* + the item + *de* + the stuff."
     },
     {
       "prompt": "Tomás got coffee on his shirt.",
       "answer": "Tomás se manchó la camisa de café.",
-      "accept": [],
+      "accept": [
+        "Tomás se manchó la camisa con café."
+      ],
       "why": "For someone else, the small word is *se*."
     },
     {
       "prompt": "I stained the table with wine.",
       "answer": "Manché la mesa con vino.",
-      "accept": [],
-      "why": "The table is not yours to wear, so plain *manché* with an object."
+      "accept": [
+        "Manché la mesa de vino."
+      ],
+      "why": "You are not wearing the table, so plain *manché* with the thing you stained."
     },
     {
       "prompt": "Ask a friend: Did you get coffee on your shirt?",
       "answer": "¿Te manchaste la camisa de café?",
-      "accept": [],
+      "accept": [
+        "¿Te manchaste la camisa con café?"
+      ],
       "why": "*Te manchaste* for your friend, again with *la*, not *tu*."
     },
     {
       "prompt": "Make it about Vale: Me manché la camisa de chocolate.",
       "answer": "Vale se manchó la camisa de chocolate.",
-      "accept": [],
+      "accept": [
+        "Vale se manchó la camisa con chocolate."
+      ],
       "why": "For a third person the small word becomes *se*."
     },
     {
@@ -163,9 +173,9 @@
       "why": "Almost. The thing that gets dirty comes after the verb, and the stuff comes after *de*."
     },
     {
-      "wrong": "Me manché la camisa con café.",
+      "wrong": "Manché la camisa de café.",
       "right": "Me manché la camisa de café.",
-      "why": "*Con* sounds like you stained it on purpose. For accidents, use *de*."
+      "why": "Without *me*, it sounds like you stained some shirt, not the one you had on."
     }
   ],
   "personal": "Say what you got on your clothes this week, real or invented. Try *Me manché la camisa de…*"

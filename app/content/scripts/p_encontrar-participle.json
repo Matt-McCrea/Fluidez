@@ -149,10 +149,10 @@
       "why": "Both the thing and its state turn plural."
     },
     {
-      "prompt": "Make it about them: Llegó cansada.",
+      "prompt": "Make it about several women: Llegó cansada.",
       "answer": "Llegaron cansadas.",
       "accept": [],
-      "why": "More than one woman, so *cansadas*."
+      "why": "More than one woman, so *llegaron* and *cansadas*."
     }
   ],
   "pitfalls": [

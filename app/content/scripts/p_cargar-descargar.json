@@ -3,7 +3,7 @@
   "hook": {
     "line": "Every traveller ends up asking where to plug in, and every phone dies at the worst moment. One verb family covers it.",
     "es": "Se me descargó el celular. ¿Dónde puedo cargarlo?",
-    "en": "My phone died.\nWhere can I charge it?"
+    "en": "My phone died. Where can I charge it?"
   },
   "examples": [
     {
@@ -80,11 +80,11 @@
       "answer": 1
     },
     {
-      "es": "Se les descargó el celular.",
+      "es": "Se les descargaron los celulares.",
       "options": [
-        "Their phone died.",
-        "They charged their phone.",
-        "Their phone fell."
+        "Their phones died.",
+        "They charged their phones.",
+        "Their phones fell."
       ],
       "answer": 0
     },

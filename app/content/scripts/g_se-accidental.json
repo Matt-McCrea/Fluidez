@@ -3,7 +3,7 @@
   "hook": {
     "line": "In a café, things slip, break and run out all day. Spanish has a neat way to say it happened to you without saying you did it, which is exactly what you want when a cup lands on the floor.",
     "es": "Se me cayó tu taza. No fue mi intención.",
-    "en": "I dropped your cup.\nI didn't mean to."
+    "en": "I dropped your cup. I didn't mean to."
   },
   "examples": [
     {
@@ -32,7 +32,7 @@
     },
     {
       "es": "Se me cayó la botella. No tiene importancia.",
-      "en": "I dropped the bottle.\nIt doesn't matter."
+      "en": "I dropped the bottle. It doesn't matter."
     }
   ],
   "rule": "English says *I dropped my phone*, as if you did something. Spanish often says the phone fell, and it happened to you.\n\n*Se me cayó el celular.*\n\nThe thing is the subject, so the verb matches the thing:\n*Se me cayó la botella.* (one)\n*Se me cayeron las llaves.* (more than one)\n\nThe little word after *se* says who it happened to:\n*me*, *te*, *le*, *nos*, *les*\n\nThe verb never changes for that person. To name them, put *a* in front: *A Vale se le cayó la bandeja.*\n\nUse it for slips and accidents: dropping, forgetting, breaking, running out. If you did it on purpose, use the normal verb: *Tiré el vaso.*",
@@ -136,7 +136,9 @@
     {
       "prompt": "We ran out of coffee.",
       "answer": "Se nos acabó el café.",
-      "accept": [],
+      "accept": [
+        "Se nos terminó el café."
+      ],
       "why": "*Nos* is for us, and the verb matches the one thing, *el café*."
     },
     {

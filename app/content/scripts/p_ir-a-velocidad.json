@@ -31,7 +31,7 @@
       "en": "We were going 40 an hour."
     }
   ],
-  "rule": "To say how fast, *ir a* plus the number: *iba a 60 por hora*. English \"doing 60\" is \"going at 60\". *Por hora* means \"an hour\", and *kilómetros* is optional. \"At full speed\" is *a toda velocidad*.\nFor fast or slow, put *rápido* or *despacio* after *ir* or *manejar*: *ve despacio*, *maneja muy rápido*. They are adverbs here and never change.",
+  "rule": "To say how fast, *ir a* plus the number: *iba a 60 por hora*. Where English says \"doing 60\", Spanish says *ir a 60*. *Por hora* means \"an hour\", and *kilómetros* is optional. \"At full speed\" is *a toda velocidad*.\nFor fast or slow, put *rápido* or *despacio* after *ir* or *manejar*: *ve despacio*, *maneja muy rápido*. They never change.",
   "smallPrint": "The *a* before a number is the same one in *estamos a 20 grados*: it marks a measurement. *Despacio* and *rápido* are adverbs here, so they never take gender or number.",
   "readAndPick": [
     {
@@ -128,7 +128,8 @@
       "prompt": "Ask a friend: How fast were you going?",
       "answer": "¿A cuántos kilómetros por hora ibas?",
       "accept": [
-        "¿A cuánto ibas?"
+        "¿A cuánto ibas?",
+        "¿Qué tan rápido ibas?"
       ],
       "why": "A speed question starts with *a*, like the answer."
     },
@@ -149,7 +150,10 @@
     {
       "prompt": "Make it about them: *Íbamos a 40 por hora.*",
       "answer": "Iban a 40 por hora.",
-      "accept": [],
+      "accept": [
+        "Ellos iban a 40 por hora.",
+        "Iban a 40 kilómetros por hora."
+      ],
       "why": "They were going is *iban*."
     }
   ],

@@ -1,7 +1,7 @@
 {
   "node": "g:possessive-dative",
   "hook": {
-    "line": "Someone steals your wallet on the bus, or you cut your finger slicing guava. In English, everything is \"my\". Spanish already knows whose it is.",
+    "line": "Someone steals your wallet on the bus, or you cut your finger slicing mangoes. In English, everything is \"my\". Spanish already knows whose it is.",
     "es": "Me robaron la billetera en el bus.",
     "en": "They stole my wallet on the bus."
   },
@@ -35,7 +35,7 @@
       "en": "They stole my phone on the bus."
     }
   ],
-  "rule": "English says *my finger*, *his wallet*. Spanish uses *el*, *la*, *los* or *las*, and the small word *me*, *te*, *le*, *nos* or *les* says whose it is:\n\n*Me corté el dedo.* (I cut my finger)\n*Le robaron la billetera.* (his wallet)\n\nYou already know the idea from *se me cayó*. The person is the one things happen to.\n\nUse it for body parts, clothes and things you carry:\n*Me duele la espalda.*\n*Se lavó las manos.*\n\nBe careful: if you say *mi dedo*, it sounds like the finger belongs to you but you are not the one affected. For your own body, use the small word.",
+  "rule": "English says *my finger*, *his wallet*. Spanish uses *el*, *la*, *los* or *las*, and the small word *me*, *te*, *le*, *nos* or *les* says whose it is:\n\n*Me corté el dedo.* (I cut my finger)\n*Le robaron la billetera.* (his wallet)\n\nYou already know the idea from *se me cayó*. The person is the one things happen to.\n\nUse it for body parts, clothes and things you carry:\n*Me duele la espalda.*\n*Se lavó las manos.*\n\nDon't add *mi* on top. *Me corté mi dedo* sounds as if you had spare fingers to choose from: *me* has already said whose it is.",
   "smallPrint": "Teachers call this the possessive dative. The indirect object stands in for *my*, *your* and *his*.",
   "readAndPick": [
     {
