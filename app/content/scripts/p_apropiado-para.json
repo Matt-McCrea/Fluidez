@@ -1,0 +1,176 @@
+{
+  "node": "p:apropiado-para",
+  "hook": {
+    "line": "Tomás turns up to meet the Altamira people in a T-shirt, and Don Hernando raises an eyebrow. The question is not whether the clothes are good. It is whether they fit the moment.",
+    "es": "Una camiseta no es apropiada para la entrevista.",
+    "en": "A T-shirt isn't appropriate for the interview."
+  },
+  "examples": [
+    {
+      "es": "Tomás no llevaba ropa apropiada para la entrevista.",
+      "en": "Tomás wasn't wearing suitable clothes for the interview."
+    },
+    {
+      "es": "Ese comentario estuvo fuera de lugar.",
+      "en": "That comment was out of place."
+    },
+    {
+      "es": "Este lugar no es adecuado para niños.",
+      "en": "This place isn't suitable for children."
+    },
+    {
+      "es": "Llamar a las once de la noche no es apropiado.",
+      "en": "Calling at eleven at night isn't appropriate."
+    },
+    {
+      "es": "Una camiseta no es apropiada para la entrevista.",
+      "en": "A T-shirt isn't appropriate for the interview."
+    },
+    {
+      "es": "Ese tono no es apropiado para el jefe.",
+      "en": "That tone isn't appropriate for the boss."
+    }
+  ],
+  "rule": "*Apropiado* and *adecuado* judge whether something fits the situation, not whether it is good. A T-shirt is fine; it just isn't *apropiada para la entrevista*.\n\nThey agree with the thing described: *ropa apropiada*, *un lugar adecuado*. After *para* comes a noun or an infinitive.\n\nFor something that crossed a line, use *estar fuera de lugar*: *Ese comentario estuvo fuera de lugar*. Add *in-* to flip it: *inapropiado*.\n\n*Conveniente* means advisable, not \"convenient\".",
+  "smallPrint": "Teachers call this *adecuación*: how well something suits its context. *Fuera de lugar* is a set phrase with *estar*.",
+  "readAndPick": [
+    {
+      "es": "Una camiseta no es apropiada para la entrevista.",
+      "options": [
+        "A T-shirt is appropriate for the interview.",
+        "A T-shirt isn't appropriate for the interview.",
+        "A T-shirt isn't comfortable for the interview."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ese comentario estuvo fuera de lugar.",
+      "options": [
+        "That comment was very funny.",
+        "That comment was in the right place.",
+        "That comment was out of place."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Este lugar no es adecuado para niños.",
+      "options": [
+        "This place isn't suitable for children.",
+        "This place is great for children.",
+        "This place has no children."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Llamar a las once de la noche no es apropiado.",
+      "options": [
+        "Calling at eleven at night is appropriate.",
+        "I called at eleven at night.",
+        "Calling at eleven at night isn't appropriate."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esa ropa es apropiada para la reunión.",
+      "options": [
+        "That outfit is appropriate for the meeting.",
+        "That outfit isn't appropriate for the meeting.",
+        "That outfit is very comfortable for the meeting."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ese tono no es apropiado para el jefe.",
+      "options": [
+        "That tone is good for the boss.",
+        "That tone isn't appropriate for the boss.",
+        "The boss's tone isn't appropriate."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esa pregunta estuvo fuera de lugar.",
+      "options": [
+        "That question was very good.",
+        "That question was out of time.",
+        "That question was out of place."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Es adecuado para una reunión de trabajo?",
+      "options": [
+        "Is it suitable for a work meeting?",
+        "Is it comfortable for a work meeting?",
+        "It's suitable for a work meeting."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *apropiada* or *apropiado*: Una camiseta no es ___ para la entrevista. Type the whole sentence.",
+      "answer": "Una camiseta no es apropiada para la entrevista.",
+      "accept": [],
+      "why": "*Camiseta* is feminine, so the adjective is *apropiada*."
+    },
+    {
+      "prompt": "Choose *para* or *por*: Este lugar no es adecuado ___ niños. Type the whole sentence.",
+      "answer": "Este lugar no es adecuado para niños.",
+      "accept": [],
+      "why": "\"Suitable for\" a group or a purpose is *para*."
+    },
+    {
+      "prompt": "Type in Spanish: That comment was out of place.",
+      "answer": "Ese comentario estuvo fuera de lugar.",
+      "accept": [],
+      "why": "The set phrase is *estar fuera de lugar*, here in the past: *estuvo*."
+    },
+    {
+      "prompt": "Type in Spanish: Calling at eleven at night isn't appropriate.",
+      "answer": "Llamar a las once de la noche no es apropiado.",
+      "accept": [
+        "No es apropiado llamar a las once de la noche."
+      ],
+      "why": "An action as the subject takes the plain infinitive, and *apropiado* stays masculine."
+    },
+    {
+      "prompt": "Type in Spanish: That tone isn't appropriate for the boss.",
+      "answer": "Ese tono no es apropiado para el jefe.",
+      "accept": [
+        "Ese tono no es adecuado para el jefe."
+      ],
+      "why": "*Apropiado para* + the person or occasion it has to fit."
+    },
+    {
+      "prompt": "Make it positive: *Esa ropa no es apropiada para la reunión.*",
+      "answer": "Esa ropa es apropiada para la reunión.",
+      "accept": [],
+      "why": "Just drop *no*."
+    },
+    {
+      "prompt": "Say it with *adecuado* instead: *Este lugar no es apropiado para niños.*",
+      "answer": "Este lugar no es adecuado para niños.",
+      "accept": [],
+      "why": "*Adecuado* and *apropiado* mean the same here."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Esa camiseta no es buena para la entrevista.",
+      "right": "Esa camiseta no es apropiada para la entrevista.",
+      "why": "Almost. *Buena* says the quality is good; *apropiada* says it suits the moment."
+    },
+    {
+      "wrong": "Este lugar no es adecuado por niños.",
+      "right": "Este lugar no es adecuado para niños.",
+      "why": "Almost. \"Suitable for\" is *adecuado para*, not *por*."
+    },
+    {
+      "wrong": "Ese comentario estuvo fuera del lugar.",
+      "right": "Ese comentario estuvo fuera de lugar.",
+      "why": "Almost. The phrase is fixed: *fuera de lugar*, with no article."
+    }
+  ],
+  "personal": "Name something that is not appropriate for a job interview or a family dinner: *… no es apropiado para…*"
+}

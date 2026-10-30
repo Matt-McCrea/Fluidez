@@ -1,0 +1,180 @@
+{
+  "node": "p:me-comunica-con",
+  "hook": {
+    "line": "Tomás has to call the taller about the car, and a polite voice picks up. In Colombia you don't ask whether someone is there: you ask to be put through, and you use *usted*.",
+    "es": "¿Me comunica con la señora Gómez?",
+    "en": "Could you put me through to Mrs Gómez? (formal)"
+  },
+  "examples": [
+    {
+      "es": "¿Me comunica con la señora Gómez?\nCon gusto, ya la comunico.",
+      "en": "Could you put me through to Mrs Gómez?\nOf course, I'll put you through now."
+    },
+    {
+      "es": "En este momento no lo puede atender.",
+      "en": "She can't take your call right now. (to a man)"
+    },
+    {
+      "es": "¿Me comunica con el taller, por favor?",
+      "en": "Could you put me through to the garage, please? (formal)"
+    },
+    {
+      "es": "Buenos días, ¿me comunica con Vale?",
+      "en": "Good morning, could you put me through to Vale? (formal)"
+    },
+    {
+      "es": "Ya lo comunico con el doctor.",
+      "en": "I'll put you through to the doctor now. (to a man)"
+    },
+    {
+      "es": "¿Con quién lo comunico?",
+      "en": "Who shall I put you through to? (to a man)"
+    }
+  ],
+  "rule": "Spanish doesn't ask whether someone *is there*. It asks to be connected: *¿Me comunica con…?*, always with *usted*. The person goes after *con*.\n\nThe receptionist answers *Ya lo comunico* to a man or *Ya la comunico* to a woman. Here *lo* and *la* mean \"you\", never *le*.\n\nIf the person is busy: *En este momento no lo puede atender* (or *la*).\n\nSpain says *¿me pone con…?*. You will recognise it, but in Colombia use *comunicar*.",
+  "smallPrint": "Teachers call *lo* and *la* here direct object pronouns: they stand for the person being connected.",
+  "readAndPick": [
+    {
+      "es": "¿Me comunica con la señora Gómez?",
+      "options": [
+        "Could you put me through to Mrs Gómez?",
+        "Could you tell Mrs Gómez I called?",
+        "Is Mrs Gómez speaking?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ya lo comunico con el doctor.",
+      "options": [
+        "I'll put you through to the doctor now. (to a woman)",
+        "I'll put you through to the doctor now. (to a man)",
+        "I'll call the doctor myself."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ya la comunico con el taller.",
+      "options": [
+        "I'll put you through to the garage now. (to a man)",
+        "I'll put you through to the garage now. (to a group)",
+        "I'll put you through to the garage now. (to a woman)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "En este momento no lo puede atender.",
+      "options": [
+        "She can't take your call right now. (to a man)",
+        "She can't take your call right now. (to a woman)",
+        "I can't take your call right now."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Con gusto, ya la comunico.",
+      "options": [
+        "Of course, I'm calling her now.",
+        "Of course, I'll put you through now. (to a woman)",
+        "Of course, I'll put you through now. (to a man)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Me comunicas con Vale?",
+      "options": [
+        "Could you put me through to Vale? (formal)",
+        "Could you put me through to Vale? (to a group)",
+        "Could you put me through to Vale? (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Con quién lo comunico?",
+      "options": [
+        "Who shall I put you through to? (to a man)",
+        "Who is calling? (to a man)",
+        "Who put you through? (to a man)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Buenos días, ¿me comunica con el taller?",
+      "options": [
+        "Good morning, could you put me through to the garage? (to a friend)",
+        "Good morning, could you put me through to the garage? (formal)",
+        "Good morning, I'll put you through to the garage."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *comunica* or *comunico*: ¿Me ___ con la señora Gómez? Type the whole sentence.",
+      "answer": "¿Me comunica con la señora Gómez?",
+      "accept": [],
+      "why": "You are asking the other person, who is *usted*, so *comunica*."
+    },
+    {
+      "prompt": "You are the receptionist, talking to a woman. Choose *lo* or *la*: Ya ___ comunico con el taller. Type the whole sentence.",
+      "answer": "Ya la comunico con el taller.",
+      "accept": [],
+      "why": "*La* stands for the woman you are connecting."
+    },
+    {
+      "prompt": "Type in Spanish, formal: Could you put me through to Vale, please?",
+      "answer": "¿Me comunica con Vale, por favor?",
+      "accept": [
+        "Por favor, ¿me comunica con Vale?"
+      ],
+      "why": "*Comunicar con* is the frame, with *usted* and *me* for yourself."
+    },
+    {
+      "prompt": "You are the receptionist. Tell the man on the line you are putting him through now.",
+      "answer": "Ya lo comunico.",
+      "accept": [
+        "Ya lo comunico, un momento."
+      ],
+      "why": "*Lo* is the man you are connecting, and the present tense works for \"now\"."
+    },
+    {
+      "prompt": "Type in Spanish: She can't take your call right now. (to a man)",
+      "answer": "En este momento no lo puede atender.",
+      "accept": [
+        "Ahora no lo puede atender."
+      ],
+      "why": "*Lo* is the man calling, and *no puede atender* means she can't see to him."
+    },
+    {
+      "prompt": "Make it friendly (*tú*): *¿Me comunica con Vale?*",
+      "answer": "¿Me comunicas con Vale?",
+      "accept": [],
+      "why": "A friend is *tú*, so the verb ends in *-s*."
+    },
+    {
+      "prompt": "Ask, formal, to be put through to the garage.",
+      "answer": "¿Me comunica con el taller?",
+      "accept": [
+        "¿Me comunica con el taller, por favor?"
+      ],
+      "why": "The place or person goes after *con*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Me comunica a la señora Gómez?",
+      "right": "¿Me comunica con la señora Gómez?",
+      "why": "Almost. Connecting someone is always *comunicar con*, never *a*."
+    },
+    {
+      "wrong": "Ya le comunico con el doctor.",
+      "right": "Ya lo comunico con el doctor.",
+      "why": "Almost. Here *lo* (to a man) and *la* (to a woman) stand for the person you connect."
+    },
+    {
+      "wrong": "¿Me comunicas con el doctor?",
+      "right": "¿Me comunica con el doctor?",
+      "why": "Almost. On a call to people you don't know, use *usted*: *comunica*, not *comunicas*."
+    }
+  ],
+  "personal": "Imagine you are calling a clinic or an office. Ask to be put through to someone: *¿Me comunica con…?*"
+}

@@ -1,0 +1,178 @@
+{
+  "node": "p:darsele-bien",
+  "hook": {
+    "line": "Vale can make a perfect pastry blindfolded, while Tomás can barely follow a recipe in Spanish. Spanish doesn't say someone *is* good at something. It says the thing *gives itself well* to them.",
+    "es": "A Vale se le dan muy bien los pasteles.",
+    "en": "Vale is really good at pastries."
+  },
+  "examples": [
+    {
+      "es": "A Vale se le dan muy bien los pasteles.",
+      "en": "Vale is really good at pastries."
+    },
+    {
+      "es": "A mí se me dan mal los números.",
+      "en": "I'm bad with numbers."
+    },
+    {
+      "es": "Se me da bien cocinar.",
+      "en": "I'm good at cooking."
+    },
+    {
+      "es": "¿Se te da bien manejar?",
+      "en": "Are you good at driving? (to a friend)"
+    },
+    {
+      "es": "Mariana tiene facilidad para los idiomas.",
+      "en": "Mariana has a gift for languages."
+    },
+    {
+      "es": "A Tomás se le da mal esperar.",
+      "en": "Tomás is bad at waiting."
+    }
+  ],
+  "rule": "English says \"I'm good at it\". Spanish says \"it gives itself well to me\": *Se me da bien cocinar*.\n\nThe person is *me, te, le, nos, les*. Add *a Vale* or *a mí* to name or stress who.\n\nThe skill is what *se da*, so a plural skill makes the verb plural: *Se me dan mal los números*. A verb stays singular: *Se me da bien cocinar*.\n\nAnother way: *tener facilidad para* + noun: *Mariana tiene facilidad para los idiomas*.",
+  "smallPrint": "Teachers call this a *gustar*-type construction: the skill is the subject and the person is the indirect object.",
+  "readAndPick": [
+    {
+      "es": "Se me da bien cocinar.",
+      "options": [
+        "You're good at cooking.",
+        "I'm good at cooking.",
+        "She's good at cooking."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A mí se me dan mal los números.",
+      "options": [
+        "I'm bad with numbers.",
+        "I'm good with numbers.",
+        "Numbers are bad for her."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Se te da bien manejar?",
+      "options": [
+        "Is she good at driving?",
+        "Am I good at driving?",
+        "Are you good at driving? (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A Vale se le dan muy bien los pasteles.",
+      "options": [
+        "I'm really good at pastries.",
+        "Vale is really good at pastries.",
+        "Vale is really bad at pastries."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Tomás se le da mal esperar.",
+      "options": [
+        "Tomás is bad at waiting.",
+        "Tomás is good at waiting.",
+        "I am bad at waiting."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A nosotros se nos da bien el español.",
+      "options": [
+        "I'm good at Spanish.",
+        "They're good at Spanish.",
+        "We're good at Spanish."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana tiene facilidad para los idiomas.",
+      "options": [
+        "Mariana doesn't like languages.",
+        "Mariana has a gift for languages.",
+        "Mariana is learning languages."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A ellos se les da mal bailar.",
+      "options": [
+        "He's bad at dancing.",
+        "They love dancing.",
+        "They're bad at dancing."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Talking about yourself, choose *me* or *te*: Se ___ da bien cocinar. Type the whole sentence.",
+      "answer": "Se me da bien cocinar.",
+      "accept": [],
+      "why": "*Me* is the person it gives itself to: you."
+    },
+    {
+      "prompt": "Choose *da* or *dan*: A mí se me ___ mal los números. Type the whole sentence.",
+      "answer": "A mí se me dan mal los números.",
+      "accept": [],
+      "why": "*Números* is plural, so the verb is *dan*."
+    },
+    {
+      "prompt": "Choose *da* or *dan*: Se me ___ bien cocinar. Type the whole sentence.",
+      "answer": "Se me da bien cocinar.",
+      "accept": [],
+      "why": "A verb counts as one thing, so *da*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Are you good at driving?",
+      "answer": "¿Se te da bien manejar?",
+      "accept": [
+        "¿A ti se te da bien manejar?"
+      ],
+      "why": "*Te* is the friend, and *manejar* stays plain."
+    },
+    {
+      "prompt": "Type in Spanish: Vale is really good at pastries.",
+      "answer": "A Vale se le dan muy bien los pasteles.",
+      "accept": [],
+      "why": "*A Vale* names the person, *le* repeats it, and *pasteles* is plural, so *dan*."
+    },
+    {
+      "prompt": "Say it about Tomás: *Se me da mal esperar.*",
+      "answer": "A Tomás se le da mal esperar.",
+      "accept": [
+        "Se le da mal esperar a Tomás."
+      ],
+      "why": "*Me* becomes *le* for a third person."
+    },
+    {
+      "prompt": "Say it about us: *Se me da bien el español.*",
+      "answer": "Se nos da bien el español.",
+      "accept": [
+        "A nosotros se nos da bien el español."
+      ],
+      "why": "*Me* becomes *nos* for \"we\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo doy bien cocinar.",
+      "right": "Se me da bien cocinar.",
+      "why": "Almost. The skill is the thing doing the giving, and you are *me*."
+    },
+    {
+      "wrong": "Se me da mal los números.",
+      "right": "Se me dan mal los números.",
+      "why": "Almost. *Números* is plural, so the verb is *dan*."
+    },
+    {
+      "wrong": "A Vale se la da bien cocinar.",
+      "right": "A Vale se le da bien cocinar.",
+      "why": "Almost. The person is always *le* (to her), never *la*."
+    }
+  ],
+  "personal": "Say one thing that comes easily to you and one that doesn't: *Se me da bien…* and *Se me da mal…*"
+}

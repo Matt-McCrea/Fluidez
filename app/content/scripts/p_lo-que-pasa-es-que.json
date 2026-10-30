@@ -1,0 +1,172 @@
+{
+  "node": "p:lo-que-pasa-es-que",
+  "hook": {
+    "line": "Mariana is late to the café again, and she doesn't just announce it. She cushions the news with a small opener that says: let me explain what is really going on.",
+    "es": "Lo que pasa es que mi carro no prende.",
+    "en": "The thing is my car won't start."
+  },
+  "examples": [
+    {
+      "es": "Lo que pasa es que no me avisaron a tiempo.",
+      "en": "The thing is they didn't tell me in time."
+    },
+    {
+      "es": "Lo que pasa es que el jefe ya tomó la decisión.",
+      "en": "The thing is the boss has already made the decision."
+    },
+    {
+      "es": "Lo que pasa es que mi carro no prende.",
+      "en": "The thing is my car won't start."
+    },
+    {
+      "es": "Lo que pasa es que no tengo tiempo.",
+      "en": "The thing is I don't have time."
+    },
+    {
+      "es": "Lo que pasa es que Vale no está.",
+      "en": "The thing is Vale isn't here."
+    },
+    {
+      "es": "Sí quiero ir; lo que pasa es que estoy muy cansada.",
+      "en": "I do want to go; the thing is I'm really tired. (a woman speaking)"
+    }
+  ],
+  "rule": "*Lo que pasa es que* means \"the thing is…\". It cushions an excuse, an explanation or bad news. Without it, the next sentence can sound blunt.\n\nIt is one fixed block, then an ordinary full sentence in the tense you need: *Lo que pasa es que no tengo tiempo*; *Lo que pasa es que llegué tarde*.\n\nThe opener itself stays in the present, *pasa*.\n\nThe chattier, shorter cousin is *Es que…*",
+  "smallPrint": "Teachers call this a pseudo-cleft: *lo que* + verb + *ser* puts the explanation at the end, where it lands.",
+  "readAndPick": [
+    {
+      "es": "Lo que pasa es que no tengo tiempo.",
+      "options": [
+        "The thing is I don't have time.",
+        "What's happening? I don't have time.",
+        "I don't have time to explain what's happening."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo que pasa es que el taller está cerrado.",
+      "options": [
+        "The thing is the garage will open soon.",
+        "The thing is the garage is new.",
+        "The thing is the garage is closed."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo que pasa es que no entendí la pregunta.",
+      "options": [
+        "The thing is you didn't understand the question.",
+        "The thing is I didn't understand the question.",
+        "The thing is I'll ask the question."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo que pasa es que Vale no está.",
+      "options": [
+        "The thing is Vale wasn't there.",
+        "The thing is Vale isn't coming back.",
+        "The thing is Vale isn't here."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo que pasa es que el jefe ya tomó la decisión.",
+      "options": [
+        "The thing is the boss has already made the decision.",
+        "The thing is the boss will make the decision soon.",
+        "The thing is I made the decision."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo que pasa es que no me avisaron a tiempo.",
+      "options": [
+        "The thing is I didn't tell them in time.",
+        "The thing is they didn't tell me in time.",
+        "The thing is they told me too early."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo que pasa es que llegué tarde.",
+      "options": [
+        "The thing is you arrived late.",
+        "The thing is I'll arrive late.",
+        "The thing is I arrived late."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Sí quiero ir; lo que pasa es que estoy muy cansada.",
+      "options": [
+        "I do want to go; the thing is I'm really tired. (a woman speaking)",
+        "I do want to go; the thing is I'm really tired. (a man speaking)",
+        "I don't want to go; the thing is I'm really tired. (a woman speaking)"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *es que* or *es de*: Lo que pasa ___ el taller está cerrado. Type the whole sentence.",
+      "answer": "Lo que pasa es que el taller está cerrado.",
+      "accept": [],
+      "why": "After the block comes *que* and a full sentence."
+    },
+    {
+      "prompt": "Choose *pasa* or *pasó*: Lo que ___ es que no tengo tiempo. Type the whole sentence.",
+      "answer": "Lo que pasa es que no tengo tiempo.",
+      "accept": [],
+      "why": "The opener stays in the present: *pasa*."
+    },
+    {
+      "prompt": "Type in Spanish: The thing is my car won't start.",
+      "answer": "Lo que pasa es que mi carro no prende.",
+      "accept": [],
+      "why": "The opener, then the plain news."
+    },
+    {
+      "prompt": "Type in Spanish: The thing is they didn't tell me in time.",
+      "answer": "Lo que pasa es que no me avisaron a tiempo.",
+      "accept": [],
+      "why": "*Avisaron* is \"they told\", and *me* goes before it."
+    },
+    {
+      "prompt": "Type in Spanish: The thing is I arrived late.",
+      "answer": "Lo que pasa es que llegué tarde.",
+      "accept": [],
+      "why": "The news is in the past, so *llegué*; the opener stays in the present."
+    },
+    {
+      "prompt": "Soften it with *lo que pasa es que*: *Vale no está.*",
+      "answer": "Lo que pasa es que Vale no está.",
+      "accept": [],
+      "why": "Put the opener in front and keep the rest as it was."
+    },
+    {
+      "prompt": "Type in Spanish: The thing is the boss has already made the decision.",
+      "answer": "Lo que pasa es que el jefe ya tomó la decisión.",
+      "accept": [],
+      "why": "*Ya tomó* says it is already done."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Lo que pasa que no tengo tiempo.",
+      "right": "Lo que pasa es que no tengo tiempo.",
+      "why": "Almost. Don't drop the *es*: the block is *lo que pasa es que*."
+    },
+    {
+      "wrong": "Qué pasa es que el carro no prende.",
+      "right": "Lo que pasa es que el carro no prende.",
+      "why": "Almost. \"What\" here is *lo que*; *qué* alone asks a question."
+    },
+    {
+      "wrong": "Lo que pasa es que no tengas tiempo.",
+      "right": "Lo que pasa es que no tengo tiempo.",
+      "why": "Almost. You are stating a fact, so use the ordinary present: *tengo*."
+    }
+  ],
+  "personal": "Think of something you would have to explain to a friend, like why you are late or can't come. Start with *Lo que pasa es que…*"
+}

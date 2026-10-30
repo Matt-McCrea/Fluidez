@@ -1,0 +1,176 @@
+{
+  "node": "p:te-lo-agradezco",
+  "hook": {
+    "line": "Someone does you a real favour, and a bare *gracias* feels thin. Colombians reach for a warmer way to say it, and it shifts with who you are talking to.",
+    "es": "Te lo agradezco mucho.",
+    "en": "I really appreciate it. (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "Te lo agradezco mucho.",
+      "en": "I really appreciate it. (to a friend)"
+    },
+    {
+      "es": "Le agradezco mucho su paciencia.",
+      "en": "I'm very grateful for your patience. (formal)"
+    },
+    {
+      "es": "Gracias por venir.",
+      "en": "Thanks for coming."
+    },
+    {
+      "es": "Te agradezco la invitación.",
+      "en": "I appreciate the invitation. (to a friend)"
+    },
+    {
+      "es": "Le agradezco su ayuda, don Hernando.",
+      "en": "I'm grateful for your help, Don Hernando. (formal)"
+    },
+    {
+      "es": "Gracias por llamar.",
+      "en": "Thanks for calling."
+    }
+  ],
+  "rule": "*Agradecer* means \"to be grateful for\", so the thing follows it directly, with no *por*: *Le agradezco su ayuda*.\n\nThe person you thank goes in front: *te* for a friend, *le* for *usted*, *les* for several people.\n\nTo say \"I appreciate it\" without naming the thing, add *lo*: *Te lo agradezco mucho*.\n\nFor a quick thanks, *gracias por* + noun or infinitive still works: *Gracias por venir*.\n\nYou will hear *agradecer por*, but avoid it in writing.",
+  "smallPrint": "Teachers call *te* and *le* the indirect object (the person thanked) and *lo* the direct object (the thing).",
+  "readAndPick": [
+    {
+      "es": "Te lo agradezco mucho.",
+      "options": [
+        "I really appreciate it. (to a friend)",
+        "I really appreciate it. (formal)",
+        "They really appreciate it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le agradezco mucho su paciencia.",
+      "options": [
+        "I thank you for your patience. (to a friend)",
+        "I'm very grateful for your patience. (formal)",
+        "He is very grateful for my patience."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Gracias por venir.",
+      "options": [
+        "Thanks, he is coming.",
+        "Thanks, come.",
+        "Thanks for coming."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Les agradezco su ayuda.",
+      "options": [
+        "I'm grateful to you all for your help.",
+        "I'm grateful to him for his help.",
+        "They are grateful for my help."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Rosa le agradece su ayuda.",
+      "options": [
+        "I am grateful to Rosa for her help.",
+        "Rosa is grateful to him for his help.",
+        "Rosa, thank you for your help."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te agradezco la invitación.",
+      "options": [
+        "He appreciates the invitation.",
+        "I invited you, friend.",
+        "I appreciate the invitation. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Gracias por llamar.",
+      "options": [
+        "Thanks, call me.",
+        "Thanks for calling.",
+        "Thanks for the call tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le agradezco su tiempo.",
+      "options": [
+        "I appreciate your time. (formal)",
+        "I appreciate your time. (to a friend)",
+        "She appreciates my time."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Speaking to Don Hernando (formal), choose *te* or *le*: ___ agradezco su ayuda, don Hernando. Type the whole sentence.",
+      "answer": "Le agradezco su ayuda, don Hernando.",
+      "accept": [],
+      "why": "Don Hernando is *usted*, so the person thanked is *le*."
+    },
+    {
+      "prompt": "Choose *venir* or *vienes*: Gracias por ___. Type the whole sentence.",
+      "answer": "Gracias por venir.",
+      "accept": [],
+      "why": "After *por* the verb stays in its plain *-ir* form."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I really appreciate it.",
+      "answer": "Te lo agradezco mucho.",
+      "accept": [],
+      "why": "*Te* is the friend, *lo* is \"it\", and *agradezco* is \"I appreciate\"."
+    },
+    {
+      "prompt": "Type in Spanish, formal: I'm very grateful for your patience.",
+      "answer": "Le agradezco mucho su paciencia.",
+      "accept": [],
+      "why": "With *usted* the person thanked is *le*, and the thing follows with no *por*."
+    },
+    {
+      "prompt": "Type in Spanish: Thanks for calling.",
+      "answer": "Gracias por llamar.",
+      "accept": [],
+      "why": "*Gracias por* + infinitive says what you are thanking for."
+    },
+    {
+      "prompt": "Make it formal (*usted*): *Te agradezco la invitación.*",
+      "answer": "Le agradezco la invitación.",
+      "accept": [
+        "Le agradezco su invitación."
+      ],
+      "why": "Only *te* changes to *le*; everything else stays."
+    },
+    {
+      "prompt": "You are thanking several people (*ustedes*): *Le agradezco su ayuda.*",
+      "answer": "Les agradezco su ayuda.",
+      "accept": [
+        "Les agradezco la ayuda."
+      ],
+      "why": "For more than one person, *le* becomes *les*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Te agradezco por tu ayuda.",
+      "right": "Te agradezco tu ayuda.",
+      "why": "Almost. *Agradecer* already carries the meaning \"for\", so the thing follows with no *por*."
+    },
+    {
+      "wrong": "Gracias para venir.",
+      "right": "Gracias por venir.",
+      "why": "Almost. After thanks, the reason is introduced by *por*, never *para*."
+    },
+    {
+      "wrong": "Lo te agradezco mucho.",
+      "right": "Te lo agradezco mucho.",
+      "why": "Almost. The person comes first: *te lo*, never *lo te*."
+    }
+  ],
+  "personal": "Think of someone who helped you recently and thank them in one line: *Te agradezco…* or *Le agradezco…*"
+}

@@ -1,0 +1,174 @@
+{
+  "node": "p:lo-antes-posible",
+  "hook": {
+    "line": "Don Hernando's carro won't start and he needs the mechanic today. \"Soon\" won't do: he wants it as soon as possible, and he says so politely.",
+    "es": "Llámeme lo antes posible.",
+    "en": "Call me as soon as possible. (formal)"
+  },
+  "examples": [
+    {
+      "es": "Llámeme lo antes posible.",
+      "en": "Call me as soon as possible. (formal)"
+    },
+    {
+      "es": "Vine lo más rápido que pude.",
+      "en": "I came as fast as I could."
+    },
+    {
+      "es": "Hágalo lo mejor que pueda.",
+      "en": "Do it as well as you can. (formal)"
+    },
+    {
+      "es": "Te llamo lo antes posible.",
+      "en": "I'll call you as soon as possible. (to a friend)"
+    },
+    {
+      "es": "Corrí lo más rápido que pude.",
+      "en": "I ran as fast as I could."
+    },
+    {
+      "es": "Necesito el carro lo antes posible.",
+      "en": "I need the car as soon as possible."
+    }
+  ],
+  "rule": "*Lo antes posible* is a fixed block meaning \"as soon as possible\". It never changes: *Llámeme lo antes posible*.\n\nFor \"as fast or as well as you can\", use *lo más* or *lo mejor* + *que* + *poder*:\n*Vine lo más rápido que pude.*\n*Hágalo lo mejor que pueda.*\n\n*Poder* follows the time. *Pude* is for something that already happened, *pueda* or *puedo* for what is still ahead. There is no *tan* and no *como*.",
+  "smallPrint": "Teachers call this the neuter *lo* with a comparative: *lo más rápido*, *lo mejor*.",
+  "readAndPick": [
+    {
+      "es": "Llámeme lo antes posible.",
+      "options": [
+        "Call me as soon as possible. (to a friend)",
+        "Call me as soon as possible. (formal)",
+        "Call him as soon as possible. (formal)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vine lo más rápido que pude.",
+      "options": [
+        "I came as fast as I could.",
+        "I'll come as fast as I can.",
+        "I came as fast as you can."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vengo lo más rápido que pueda.",
+      "options": [
+        "I came as fast as I could.",
+        "I always come as fast as I want.",
+        "I'll come as fast as I can."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hágalo lo mejor que pueda.",
+      "options": [
+        "I did it as well as I could.",
+        "Do it as well as you can. (formal)",
+        "Do it as well as you can. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Corrí lo más rápido que pude.",
+      "options": [
+        "I ran as fast as I could.",
+        "I'll run as fast as I can.",
+        "Run as fast as you can."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Te llamo lo antes posible.",
+      "options": [
+        "You called me as soon as possible.",
+        "Call me as soon as possible.",
+        "I'll call you as soon as possible."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Necesito el carro lo antes posible.",
+      "options": [
+        "I needed the car as soon as possible.",
+        "I need the car as soon as possible.",
+        "I need the car for a while."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo hice lo mejor que pude.",
+      "options": [
+        "I'll do it as well as I can.",
+        "Do it as well as you can.",
+        "I did it as well as I could."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *pude* or *pueda*: Vine lo más rápido que ___. Type the whole sentence.",
+      "answer": "Vine lo más rápido que pude.",
+      "accept": [],
+      "why": "The coming already happened, so *poder* goes into the past: *pude*."
+    },
+    {
+      "prompt": "Choose *pude* or *pueda*: Hágalo lo mejor que ___. Type the whole sentence.",
+      "answer": "Hágalo lo mejor que pueda.",
+      "accept": [],
+      "why": "The job is still ahead, so *pueda*."
+    },
+    {
+      "prompt": "Type in Spanish, formal: Call me as soon as possible.",
+      "answer": "Llámeme lo antes posible.",
+      "accept": [],
+      "why": "The command is *llámeme*, then the fixed block *lo antes posible*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I'll call you as soon as possible.",
+      "answer": "Te llamo lo antes posible.",
+      "accept": [
+        "Yo te llamo lo antes posible."
+      ],
+      "why": "*Te llamo* is \"I call you\", and the block does not change."
+    },
+    {
+      "prompt": "Type in Spanish: I ran as fast as I could.",
+      "answer": "Corrí lo más rápido que pude.",
+      "accept": [],
+      "why": "A finished run, so *corrí* and *pude*."
+    },
+    {
+      "prompt": "Make it friendly (*tú*): *Llámeme lo antes posible.*",
+      "answer": "Llámame lo antes posible.",
+      "accept": [],
+      "why": "Only the command changes: *llámame* for a friend."
+    },
+    {
+      "prompt": "Type in Spanish: I did it as well as I could.",
+      "answer": "Lo hice lo mejor que pude.",
+      "accept": [],
+      "why": "*Lo hice* is \"I did it\", then *lo mejor que pude*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Llámeme tan pronto posible.",
+      "right": "Llámeme lo antes posible.",
+      "why": "Almost. English \"as soon as possible\" is the fixed Spanish block *lo antes posible*."
+    },
+    {
+      "wrong": "Vine lo más rápido que puedo.",
+      "right": "Vine lo más rápido que pude.",
+      "why": "Almost. For something that already happened, *poder* goes into the past: *pude*."
+    },
+    {
+      "wrong": "Hágalo lo mejor como pueda.",
+      "right": "Hágalo lo mejor que pueda.",
+      "why": "Almost. After *lo mejor* comes *que*, not *como*."
+    }
+  ],
+  "personal": "Say when you need something done, or what you do as well as you can: *Necesito… lo antes posible* or *Lo hago lo mejor que puedo.*"
+}
