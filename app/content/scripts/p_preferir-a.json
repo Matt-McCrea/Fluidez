@@ -1,0 +1,90 @@
+{
+  "node": "p:preferir-a",
+  "hook": {
+    "line": "On the napkin, after all the pros and cons, Tomás writes one line that settles it. To say you like one thing more than another, Spanish uses a surprisingly small word: *a*.",
+    "es": "Prefiero el ruido de La Candelaria a un espacio nuevo en Chapinero.",
+    "en": "I prefer the noise of La Candelaria to a new space in Chapinero."
+  },
+  "examples": [
+    { "es": "Prefiero el tinto al café con leche.", "en": "I prefer black coffee to coffee with milk." },
+    { "es": "Vale prefiere Bogotá a Medellín.", "en": "Vale prefers Bogotá to Medellín." },
+    { "es": "Hernando prefiere el bus al metro.", "en": "Hernando prefers the bus to the metro." },
+    { "es": "Prefiero caminar a manejar.", "en": "I'd rather walk than drive." },
+    { "es": "Prefiero que decidas tú.", "en": "I'd rather you decided." },
+    { "es": "¿Prefieres la montaña al mar?", "en": "Do you prefer the mountains to the sea?" }
+  ],
+  "rule": "To compare two things with *preferir*, the second one comes after *a*, just like English to: *Prefiero el tinto al café.* Not *que*: that's for *más que*.\n\nRemember *a* + *el* = *al*.\n\nIt works with actions too: *Prefiero caminar a manejar*, where English says rather than.\n\nWhen you'd rather someone else did something, use *que* and the wishing form you already know: *Prefiero que decidas tú.*",
+  "smallPrint": "*Preferir* is a boot verb: *prefiero*, *prefieres*, *prefiere*, *preferimos*, *prefieren*.",
+  "readAndPick": [
+    { "es": "Prefiero el tinto al jugo.", "options": ["I like black coffee more.", "I like juice more."], "answer": 0 },
+    { "es": "Prefiero el jugo al tinto.", "options": ["I like black coffee more.", "I like juice more."], "answer": 1 },
+    { "es": "Hernando prefiere el bus al metro.", "options": ["Hernando takes the metro.", "Hernando would rather take the bus.", "Hernando takes the bus to the metro."], "answer": 1 },
+    { "es": "Prefiero que vengas tú.", "options": ["I'd rather come myself.", "I'd rather you came."], "answer": 1 },
+    { "es": "Prefiero ir yo.", "options": ["I'd rather go myself.", "I'd rather you went."], "answer": 0 },
+    { "es": "Preferimos la luz al espacio.", "options": ["We'd choose space over light.", "We'd choose light over space.", "We want light and space."], "answer": 1 },
+    { "es": "Prefieren el campo a la ciudad.", "options": ["They prefer the city to the country.", "We prefer the country to the city.", "They prefer the country to the city."], "answer": 2 },
+    { "es": "Prefiero un barrio tranquilo a uno ruidoso.", "options": ["I prefer a quiet neighbourhood to a noisy one.", "I prefer a noisy neighbourhood to a quiet one."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *a* or *que* and type the whole sentence: *Prefiero la montaña ___ el mar.* Remember *a* + *el*.",
+      "answer": "Prefiero la montaña al mar.",
+      "accept": [],
+      "why": "*Preferir* compares with *a*, and *a el* becomes *al*."
+    },
+    {
+      "prompt": "Say: I prefer black coffee to juice. Use *tinto*.",
+      "answer": "Prefiero el tinto al jugo.",
+      "accept": [],
+      "why": "The thing you like more comes first, the other after *al*."
+    },
+    {
+      "prompt": "Say: Vale prefers Bogotá to Medellín.",
+      "answer": "Vale prefiere Bogotá a Medellín.",
+      "accept": [],
+      "why": "City names have no *el*, so plain *a*."
+    },
+    {
+      "prompt": "Say: I'd rather walk than drive.",
+      "answer": "Prefiero caminar a manejar.",
+      "accept": [],
+      "why": "Actions work the same way: rather than is still *a*."
+    },
+    {
+      "prompt": "Say: We prefer a quiet neighbourhood to a noisy one.",
+      "answer": "Preferimos un barrio tranquilo a uno ruidoso.",
+      "accept": [],
+      "why": "*Preferimos* keeps the plain *e*, and a noisy one is *uno ruidoso*."
+    },
+    {
+      "prompt": "Tell a friend: I'd rather you decided.",
+      "answer": "Prefiero que decidas tú.",
+      "accept": ["Prefiero que tú decidas."],
+      "why": "Someone else's action: *que* and the wishing form, *decidas*."
+    },
+    {
+      "prompt": "Make it about a friend doing it instead of you: *Prefiero ir yo.* (I'd rather you came.)",
+      "answer": "Prefiero que vengas tú.",
+      "accept": ["Prefiero que tú vengas."],
+      "why": "Once it's another person's action, you need *que* plus *vengas*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Prefiero el té que el café.",
+      "right": "Prefiero el té al café.",
+      "why": "Almost. *Preferir* compares with *a*, like English to; *que* belongs to *más que*."
+    },
+    {
+      "wrong": "Prefiero el té a el café.",
+      "right": "Prefiero el té al café.",
+      "why": "*A* and *el* always join up as *al*."
+    },
+    {
+      "wrong": "Prefiero que tú decides.",
+      "right": "Prefiero que decidas tú.",
+      "why": "When you'd rather someone else did it, the verb takes the wishing form: *decidas*."
+    }
+  ],
+  "personal": "Think about where you live. Write two true sentences with *prefiero… a…*: one about places, one about how you get around."
+}

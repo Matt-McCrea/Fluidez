@@ -1,0 +1,89 @@
+{
+  "node": "p:depende-de",
+  "hook": {
+    "line": "Doña Gloria asks Tomás straight out if he's moving. The honest answer to most big questions is a shrug and two words.",
+    "es": "¿Te vas a mudar a Chapinero?\nDepende de la oferta.",
+    "en": "Are you going to move to Chapinero?\nIt depends on the offer."
+  },
+  "examples": [
+    { "es": "Depende del precio.", "en": "It depends on the price." },
+    { "es": "¿Vienes el sábado?\nDepende de si trabajo.", "en": "Are you coming on Saturday?\nIt depends on whether I'm working." },
+    { "es": "El precio depende del estrato.", "en": "The price depends on the estrato." },
+    { "es": "No depende de mí.", "en": "It's not up to me." },
+    { "es": "Los precios dependen del barrio.", "en": "Prices depend on the neighbourhood." }
+  ],
+  "rule": "English says depends on. Spanish says *depende de*: on becomes *de*, never *en*.\n\nThree shapes:\n*Depende.* on its own, a full answer.\n*depende de* + a thing or person: *depende del precio*, *depende de ti*.\n*depende de si* + a sentence, for whether: *depende de si llueve*.\n\nRemember *de* + *el* = *del*. And there's no it in front: *Depende* already means it depends. When the thing that depends is plural, so is the verb: *dependen*.",
+  "smallPrint": "*Depender de* is one of many verbs that come with a fixed little word attached. You'll collect more of them at B1.",
+  "readAndPick": [
+    { "es": "Depende de ti.", "options": ["It's up to you. (a friend)", "It's up to me.", "It's up to him."], "answer": 0 },
+    { "es": "No depende de mí.", "options": ["It's up to me.", "It's not up to you.", "It's not up to me."], "answer": 2 },
+    { "es": "Depende de usted.", "options": ["It's up to you. (formal)", "It's up to us."], "answer": 0 },
+    { "es": "Depende del precio.", "options": ["It depends on the price.", "It's the price.", "It depends on whether it's expensive."], "answer": 0 },
+    { "es": "Depende de si llueve.", "options": ["It depends on the rain forecast.", "It depends on whether it rains."], "answer": 1 },
+    { "es": "Los precios dependen del barrio.", "options": ["The price depends on the neighbourhood.", "Prices depend on the neighbourhood."], "answer": 1 },
+    { "es": "¿Vas a ir?\nDepende.", "options": ["Are you going?\nYes.", "Are you going?\nIt depends.", "Are you going?\nNo."], "answer": 1 },
+    { "es": "Todo depende de Vale.", "options": ["Vale depends on everything.", "Everything depends on Vale."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "A friend asks if you're coming. Answer in one word: it depends.",
+      "answer": "Depende.",
+      "accept": [],
+      "why": "*Depende* already includes the it."
+    },
+    {
+      "prompt": "Choose *de* or *en* and type the whole sentence: *Depende ___ la oferta.*",
+      "answer": "Depende de la oferta.",
+      "accept": [],
+      "why": "Depends on is always *depende de* in Spanish."
+    },
+    {
+      "prompt": "Say: It depends on the price.",
+      "answer": "Depende del precio.",
+      "accept": [],
+      "why": "*de* + *el* squeeze into *del*."
+    },
+    {
+      "prompt": "Say: It depends on whether it rains.",
+      "answer": "Depende de si llueve.",
+      "accept": [],
+      "why": "Whether is *si*, and it still needs *de* in front."
+    },
+    {
+      "prompt": "Tell a friend: It's up to you.",
+      "answer": "Depende de ti.",
+      "accept": [],
+      "why": "After *de*, a friend is *ti*."
+    },
+    {
+      "prompt": "Say: It's not up to me.",
+      "answer": "No depende de mí.",
+      "accept": [],
+      "why": "*No* goes before the verb, and after *de* I becomes *mí*, with an accent."
+    },
+    {
+      "prompt": "Make it plural: *El precio depende del barrio.* (Prices depend on the neighbourhood.)",
+      "answer": "Los precios dependen del barrio.",
+      "accept": [],
+      "why": "Two or more prices, so the verb becomes *dependen*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Depende en el precio.",
+      "right": "Depende del precio.",
+      "why": "Almost. On is *de* here, and *de el* becomes *del*."
+    },
+    {
+      "wrong": "Es depende.",
+      "right": "Depende.",
+      "why": "There's no it to translate; *depende* stands alone."
+    },
+    {
+      "wrong": "Depende si llueve.",
+      "right": "Depende de si llueve.",
+      "why": "Keep the *de* before *si*, just as you keep on in depends on whether."
+    }
+  ],
+  "personal": "Where would you like to live in five years? Answer honestly with two *depende de* sentences: one with a thing, one with *si*."
+}

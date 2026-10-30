@@ -1,0 +1,92 @@
+{
+  "node": "g:aunque-indicative",
+  "hook": {
+    "line": "Altamira's offer is generous, and everybody knows it. Tomás still wants to say no. To admit a fact and carry on anyway, Spanish reaches for *aunque*.",
+    "es": "Aunque Altamira paga bien, no nos vamos.",
+    "en": "Even though Altamira pays well, we're not leaving."
+  },
+  "examples": [
+    { "es": "Aunque es tarde, hay mucha gente en el café.", "en": "Even though it's late, there are lots of people in the café." },
+    { "es": "Aunque no me gusta, lo hago.", "en": "Even though I don't like it, I do it." },
+    { "es": "Vamos a caminar aunque llueve.", "en": "We're going to walk even though it's raining." },
+    { "es": "Aunque el apartamento es pequeño, tiene una vista maravillosa.", "en": "Even though the flat is small, it has a wonderful view." },
+    { "es": "Hernando camina mucho, aunque tiene setenta años.", "en": "Hernando walks a lot, even though he's seventy." },
+    { "es": "Aunque estudié mucho, no pasé el examen.", "en": "Although I studied a lot, I didn't pass the exam." },
+    { "es": "¿Trabajas hoy aunque es domingo?", "en": "Are you working today even though it's Sunday?" }
+  ],
+  "rule": "*Aunque* means even though or although. It brings in a fact that should have stopped something, and then that something happens anyway.\n\nIt rains, and we walk anyway: *Vamos a caminar aunque llueve.*\n\nThe verb after *aunque* is the normal one you already know: *es*, *llueve*, *tengo*, *estudié*. You're stating a real fact.\n\n*Aunque* can open the sentence (put a comma after the first part) or sit in the middle, just like English.\n\nCompare it with *porque*: *porque* gives the reason something happens, *aunque* gives the reason it shouldn't have. And *Aunque es caro, lo compro* says the same as *Es caro, pero lo compro*. Use one or the other, never both.",
+  "smallPrint": "Teachers call this a concessive clause. Later you'll meet *aunque* with a different verb form for even if, about things that aren't settled yet.",
+  "readAndPick": [
+    { "es": "Salimos aunque llueve.", "options": ["We go out because it's raining.", "We go out even though it's raining.", "We don't go out because it's raining."], "answer": 1 },
+    { "es": "No salimos porque llueve.", "options": ["We don't go out because it's raining.", "We go out even though it's raining."], "answer": 0 },
+    { "es": "Lo compro porque es barato.", "options": ["I'm buying it even though it's cheap.", "I'm buying it because it's cheap."], "answer": 1 },
+    { "es": "Aunque es caro, lo compro.", "options": ["It's expensive, so I'm not buying it.", "I'm buying it because it's expensive.", "It's expensive, but I'm buying it."], "answer": 2 },
+    { "es": "Aunque tengo hambre, no quiero comer.", "options": ["I'm hungry, but I don't want to eat.", "I'm not hungry, so I don't want to eat."], "answer": 0 },
+    { "es": "Trabajamos aunque es domingo.", "options": ["We work because it's Sunday.", "We don't work on Sundays.", "We work even though it's Sunday."], "answer": 2 },
+    { "es": "Aunque Rosa ya no está, el café sigue abierto.", "options": ["Rosa is gone, so the café is closed.", "Rosa is gone, but the café is still open."], "answer": 1 },
+    { "es": "Aunque no hablo bien, entiendo mucho.", "options": ["I don't speak well, but I understand a lot.", "I speak well, so I understand a lot.", "I don't understand much because I don't speak well."], "answer": 0 },
+    { "es": "Aunque hace frío, Tomás abre la ventana.", "options": ["Tomás opens the window because it's cold.", "Tomás opens the window even though it's cold."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *aunque* or *porque* and type the whole sentence: *Vamos a caminar ___ llueve.* (We're going to walk even though it's raining.)",
+      "answer": "Vamos a caminar aunque llueve.",
+      "accept": [],
+      "why": "The rain should stop the walk and doesn't: *aunque*."
+    },
+    {
+      "prompt": "Choose *aunque* or *porque* and type the whole sentence: *Lo compro ___ es barato.* (I'm buying it because it's cheap.)",
+      "answer": "Lo compro porque es barato.",
+      "accept": [],
+      "why": "Cheap is the reason you buy it, so *porque*."
+    },
+    {
+      "prompt": "Say: Even though it's Sunday, we're working.",
+      "answer": "Aunque es domingo, trabajamos.",
+      "accept": ["Trabajamos aunque es domingo.", "Aunque es domingo, estamos trabajando."],
+      "why": "*Aunque* plus a plain fact, then what happens anyway."
+    },
+    {
+      "prompt": "Say: Even though I'm tired, I'm going to work. (going to your job)",
+      "answer": "Aunque estoy cansado, voy al trabajo.",
+      "accept": ["Aunque estoy cansada, voy al trabajo.", "Voy al trabajo aunque estoy cansado.", "Voy al trabajo aunque estoy cansada."],
+      "why": "Being tired is the fact you admit; it doesn't stop you."
+    },
+    {
+      "prompt": "Say: Hernando walks a lot, even though he's seventy.",
+      "answer": "Hernando camina mucho, aunque tiene setenta años.",
+      "accept": ["Aunque tiene setenta años, Hernando camina mucho."],
+      "why": "Age in Spanish is *tener*, and *aunque* can sit in the middle like even though."
+    },
+    {
+      "prompt": "Rewrite with *aunque* instead of *pero*: *Es caro, pero lo compro.*",
+      "answer": "Aunque es caro, lo compro.",
+      "accept": ["Lo compro aunque es caro."],
+      "why": "*Aunque* moves to the fact you admit, and *pero* disappears."
+    },
+    {
+      "prompt": "Rewrite with *aunque*: *No tengo mucha plata, pero voy a hacer el viaje.*",
+      "answer": "Aunque no tengo mucha plata, voy a hacer el viaje.",
+      "accept": ["Voy a hacer el viaje aunque no tengo mucha plata.", "Aunque no tengo mucho dinero, voy a hacer el viaje."],
+      "why": "Same meaning, one connector: *aunque* in front of the obstacle."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Aunque es caro, pero lo compro.",
+      "right": "Aunque es caro, lo compro.",
+      "why": "Almost. In English you'd never say although it's expensive, but I buy it; Spanish doesn't either. One connector is enough."
+    },
+    {
+      "wrong": "Vamos a caminar porque llueve.",
+      "right": "Vamos a caminar aunque llueve.",
+      "why": "Rain isn't why you walk; it's what you walk in spite of, so *aunque*."
+    },
+    {
+      "wrong": "Aunque está domingo, trabajamos.",
+      "right": "Aunque es domingo, trabajamos.",
+      "why": "The day of the week takes *es*, with or without *aunque* in front."
+    }
+  ],
+  "personal": "What do you do even though it isn't easy? Write two true sentences with *aunque*: one starting with it, and one with it in the middle."
+}

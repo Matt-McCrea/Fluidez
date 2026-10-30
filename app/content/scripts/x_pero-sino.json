@@ -1,0 +1,92 @@
+{
+  "node": "x:pero-sino",
+  "hook": {
+    "line": "On the napkin, Tomás and Vale write down what's wrong with the flat in Chapinero. Two sentences start the same way and end up meaning very different things. The small word after the comma decides.",
+    "es": "No es caro, pero es frío.\nNo es caro, sino barato.",
+    "en": "It isn't expensive, but it's cold.\nIt isn't expensive, it's cheap."
+  },
+  "examples": [
+    { "es": "No es caro, pero es malo.", "en": "It isn't expensive, but it's bad." },
+    { "es": "No es caro, sino barato.", "en": "It isn't expensive, it's cheap." },
+    { "es": "No vivo en Chapinero, pero trabajo allá.", "en": "I don't live in Chapinero, but I work there." },
+    { "es": "No vivo en Chapinero, sino en Usaquén.", "en": "I don't live in Chapinero, I live in Usaquén." },
+    { "es": "Hernando no es mesero, pero ayuda mucho en el café.", "en": "Hernando isn't a waiter, but he helps a lot in the café." },
+    { "es": "Hernando no es mesero, sino taxista.", "en": "Hernando isn't a waiter, he's a taxi driver." },
+    { "es": "El problema no es la plata, sino el tiempo.", "en": "The problem isn't the money, it's the time." }
+  ],
+  "rule": "Both pairs above start with *no*, so the *no* alone can't tell you which word to use. Ask what the second half does.\n\nDoes it replace the thing you just denied? Then *sino*. Not expensive: cheap, instead. Not Chapinero: Usaquén, instead. The second half is usually short and matches the first: *caro* and *barato*, *Chapinero* and *Usaquén*.\n\nDoes it add a new fact, with the first one still true? Then *pero*. I don't live in Chapinero (true), but I work there (also true). The second half usually brings its own verb: *trabajo*, *ayuda*, *es*.\n\nIn English, try saying instead or it's actually. If it fits, *sino*. If but still or but also fits, *pero*.\n\nAnd with no *no* at all, it's always *pero*.",
+  "smallPrint": "Grammar books call *pero* an adversative conjunction and *sino* a corrective one: the first limits, the second replaces.",
+  "readAndPick": [
+    { "es": "No es caro, sino barato.", "options": ["It isn't expensive, it's cheap.", "It isn't expensive, but it's bad."], "answer": 0 },
+    { "es": "No es caro, pero es malo.", "options": ["It isn't expensive, it's cheap.", "It isn't expensive, but it's bad."], "answer": 1 },
+    { "es": "No vivo en Chapinero, pero trabajo allá.", "options": ["I live in Chapinero.", "I work in Chapinero.", "I live and work in Chapinero."], "answer": 1 },
+    { "es": "No vivo en Chapinero, sino en Usaquén.", "options": ["I live in Chapinero.", "I work in Usaquén.", "I live in Usaquén."], "answer": 2 },
+    { "es": "No compré pan, sino arepas.", "options": ["I bought bread and arepas.", "I bought arepas instead of bread."], "answer": 1 },
+    { "es": "No compré pan, pero compré arepas.", "options": ["I bought arepas, but no bread.", "I bought bread, not arepas."], "answer": 0 },
+    { "es": "Vale no es mi hermana, pero es como una hermana.", "options": ["Vale is my sister.", "Vale isn't my sister, but she's like one.", "Vale isn't my sister, she's my friend."], "answer": 1 },
+    { "es": "Vale no es mi hermana, sino mi amiga.", "options": ["Vale is my friend.", "Vale is my sister and my friend."], "answer": 0 },
+    { "es": "No queremos más plata, sino más tiempo.", "options": ["We want more money, but also time.", "We want more time, not more money."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *pero* or *sino* and type the whole sentence: *No es caro, ___ barato.*",
+      "answer": "No es caro, sino barato.",
+      "accept": [],
+      "why": "Cheap replaces expensive: *sino*."
+    },
+    {
+      "prompt": "Choose *pero* or *sino* and type the whole sentence: *No es caro, ___ es malo.*",
+      "answer": "No es caro, pero es malo.",
+      "accept": [],
+      "why": "Bad doesn't replace expensive; it's a second fact, with its own *es*. That's *pero*."
+    },
+    {
+      "prompt": "Choose *pero* or *sino* and type the whole sentence: *No tenemos carro, ___ tenemos bicicleta.*",
+      "answer": "No tenemos carro, pero tenemos bicicleta.",
+      "accept": [],
+      "why": "Both facts stand: no car, and a bike. The new verb is the clue for *pero*."
+    },
+    {
+      "prompt": "Say: The problem isn't the money, it's the time.",
+      "answer": "El problema no es la plata, sino el tiempo.",
+      "accept": ["El problema no es el dinero, sino el tiempo."],
+      "why": "Time takes the place of money as the real problem: *sino*."
+    },
+    {
+      "prompt": "Say: I don't live in Chapinero, but I work there.",
+      "answer": "No vivo en Chapinero, pero trabajo allá.",
+      "accept": ["No vivo en Chapinero, pero trabajo allí.", "No vivo en Chapinero, pero trabajo ahí."],
+      "why": "You still don't live there; working there is extra news. That's *pero*."
+    },
+    {
+      "prompt": "Change the ending so it corrects instead of adds (he's a taxi driver): *Hernando no es mesero, pero ayuda mucho en el café.*",
+      "answer": "Hernando no es mesero, sino taxista.",
+      "accept": [],
+      "why": "To give the right job in place of the wrong one, swap in *sino* and just name it."
+    },
+    {
+      "prompt": "Now the other way. Keep the refusal and add a polite fact (but thanks for the offer): *No vamos a vender, sino a esperar.*",
+      "answer": "No vamos a vender, pero gracias por la oferta.",
+      "accept": [],
+      "why": "The thank you doesn't replace the refusal; it sits next to it, so *pero*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No es caro, pero barato.",
+      "right": "No es caro, sino barato.",
+      "why": "Almost. Cheap replaces expensive, and a replacement takes *sino*."
+    },
+    {
+      "wrong": "No vivo en Chapinero, sino trabajo allá.",
+      "right": "No vivo en Chapinero, pero trabajo allá.",
+      "why": "Working there doesn't replace living there; it's an extra fact, so *pero*."
+    },
+    {
+      "wrong": "El problema no es la plata, pero el tiempo.",
+      "right": "El problema no es la plata, sino el tiempo.",
+      "why": "You're naming the real problem in place of the wrong one: *sino*."
+    }
+  ],
+  "personal": "Think of a place you lived or worked. Write one sentence with *sino* that corrects a guess about it, and one with *pero* that adds a fact (*No es grande, pero…*)."
+}

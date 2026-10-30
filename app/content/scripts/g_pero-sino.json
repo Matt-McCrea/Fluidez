@@ -1,0 +1,97 @@
+{
+  "node": "g:pero-sino",
+  "hook": {
+    "line": "Altamira's man keeps calling the café a business. Tomás wants to correct him, not just add a comment, and Spanish has a special word for exactly that: *sino*.",
+    "es": "Para mí, el café no es un negocio, sino un hogar.",
+    "en": "For me, the café isn't a business, it's a home."
+  },
+  "examples": [
+    { "es": "No soy de Bogotá, sino de Toronto.", "en": "I'm not from Bogotá, I'm from Toronto." },
+    { "es": "Hernando no es mesero, sino taxista.", "en": "Hernando isn't a waiter, he's a taxi driver." },
+    { "es": "No quiero tinto, sino jugo.", "en": "I don't want black coffee, I want juice." },
+    { "es": "Es caro, pero vale la pena.", "en": "It's expensive, but it's worth it." },
+    { "es": "El apartamento es pequeño, pero es bonito.", "en": "The flat is small, but it's nice." },
+    { "es": "No es caro, pero no me convence.", "en": "It isn't expensive, but I'm not convinced." },
+    { "es": "La reunión no es hoy, sino mañana.", "en": "The meeting isn't today, it's tomorrow." }
+  ],
+  "rule": "English uses one word, but, for two different jobs. Spanish splits them.\n\n*pero* adds something. Both halves are true: it's expensive, and it's worth it. *Es caro, pero vale la pena.*\n\n*sino* swaps something. The first half says no, and the second half gives the right answer instead. *No soy de Bogotá, sino de Toronto.* Not Bogotá: Toronto.\n\nSo *sino* only ever comes after a *no*. After *sino*, just name the replacement; you don't repeat the verb.\n\nA quick test: if you could say instead, or it's actually, use *sino*. If you could say but still, or but also, use *pero*.\n\nWatch the middle example with *no*: *No es caro, pero no me convence* keeps both facts (cheap enough, still not convinced), so it's *pero*.",
+  "smallPrint": "Teachers call *sino* a corrective conjunction. When the replacement is a whole new action with its own verb, Spanish says *sino que*; that comes later.",
+  "readAndPick": [
+    { "es": "No quiero té, sino café.", "options": ["I want coffee instead of tea.", "I want tea and coffee.", "I don't want anything."], "answer": 0 },
+    { "es": "No es caro, sino barato.", "options": ["It isn't expensive, but it's bad.", "It isn't expensive, it's cheap."], "answer": 1 },
+    { "es": "No es caro, pero no me gusta.", "options": ["It's cheap, and I like it.", "It isn't expensive, it's cheap.", "It isn't expensive, but I don't like it."], "answer": 2 },
+    { "es": "Tomás no es de Bogotá, sino de Toronto.", "options": ["Tomás is from Bogotá.", "Tomás is from Toronto.", "Tomás is from both."], "answer": 1 },
+    { "es": "Es pequeño, pero es bonito.", "options": ["It's small and nice.", "It isn't small, it's nice."], "answer": 0 },
+    { "es": "No trabajo los lunes, sino los martes.", "options": ["I work on Tuesdays.", "I work on Mondays and Tuesdays.", "I don't work on Tuesdays."], "answer": 0 },
+    { "es": "No vamos en carro, sino en bus.", "options": ["We're going by car.", "We're going by car and bus.", "We're going by bus."], "answer": 2 },
+    { "es": "Vale no es de Cali, sino de Medellín.", "options": ["Vale is from Medellín.", "Vale is from Cali, but she lives in Medellín."], "answer": 0 },
+    { "es": "No necesitamos más espacio, sino más tiempo.", "options": ["We need more space and more time.", "We need more time, not more space.", "We need more space, not more time."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *pero* or *sino* and type the whole sentence: *No es colombiano, ___ canadiense.* (He isn't Colombian, he's Canadian.)",
+      "answer": "No es colombiano, sino canadiense.",
+      "accept": [],
+      "why": "Canadian replaces Colombian, so *sino*."
+    },
+    {
+      "prompt": "Choose *pero* or *sino* and type the whole sentence: *Es caro, ___ vale la pena.*",
+      "answer": "Es caro, pero vale la pena.",
+      "accept": [],
+      "why": "There's no *no* to correct; you're adding a second fact, so *pero*."
+    },
+    {
+      "prompt": "Choose *pero* or *sino* and type the whole sentence: *No es caro, ___ no me convence.*",
+      "answer": "No es caro, pero no me convence.",
+      "accept": [],
+      "why": "Both halves stay true: not expensive, and still not convinced. That's *pero*."
+    },
+    {
+      "prompt": "Say: I don't live in Chapinero, I live in La Candelaria.",
+      "answer": "No vivo en Chapinero, sino en La Candelaria.",
+      "accept": ["No vivo en Chapinero, vivo en La Candelaria."],
+      "why": "La Candelaria replaces Chapinero, so *sino*, and no need to repeat *vivo*."
+    },
+    {
+      "prompt": "Say: I don't want tea, I want coffee.",
+      "answer": "No quiero té, sino café.",
+      "accept": ["No quiero té, quiero café."],
+      "why": "Coffee is the swap for tea: *sino café*."
+    },
+    {
+      "prompt": "Join the two sentences with *sino*: *Hernando no es mesero. Es taxista.*",
+      "answer": "Hernando no es mesero, sino taxista.",
+      "accept": [],
+      "why": "The *no* sets up the swap, and *sino* brings in the right word."
+    },
+    {
+      "prompt": "A friend says *Vale es de Cali.* Correct them: she's from Medellín.",
+      "answer": "No, Vale no es de Cali, sino de Medellín.",
+      "accept": ["No, no es de Cali, sino de Medellín.", "Vale no es de Cali, sino de Medellín.", "No es de Cali, sino de Medellín."],
+      "why": "Say what's wrong with *no*, then give the right answer with *sino*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No es caro, pero barato.",
+      "right": "No es caro, sino barato.",
+      "why": "Almost. Cheap replaces expensive, so it's *sino*, not *pero*."
+    },
+    {
+      "wrong": "Es caro, sino vale la pena.",
+      "right": "Es caro, pero vale la pena.",
+      "why": "*Sino* needs a *no* in front of it to correct; here you're adding, so *pero*."
+    },
+    {
+      "wrong": "No soy de Bogotá, pero de Toronto.",
+      "right": "No soy de Bogotá, sino de Toronto.",
+      "why": "Toronto is the right answer in place of Bogotá: that swap is *sino*."
+    },
+    {
+      "wrong": "No quiero té, sino quiero café.",
+      "right": "No quiero té, sino café.",
+      "why": "After *sino*, just name the replacement; the verb is already understood."
+    }
+  ],
+  "personal": "What do people often get wrong about you? Write two corrections with *sino* (*No soy…, sino…*) and one sentence with *pero* that admits a downside of something you love."
+}

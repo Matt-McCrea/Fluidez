@@ -1,0 +1,89 @@
+{
+  "node": "p:tiene-mucha-luz",
+  "hook": {
+    "line": "Bogotá is grey half the year, so the first thing anyone asks about a flat is the light. Doña Gloria has found Tomás one, and she's selling it hard.",
+    "es": "El apartamento tiene mucha luz y vista a los cerros.",
+    "en": "The flat gets lots of light and has a view of the hills."
+  },
+  "examples": [
+    { "es": "La sala tiene poca luz.", "en": "The living room doesn't get much light." },
+    { "es": "Mi cuarto tiene vista a la calle.", "en": "My room looks out onto the street." },
+    { "es": "La habitación es oscura, pero amplia.", "en": "The room is dark, but spacious." },
+    { "es": "La cocina es muy luminosa.", "en": "The kitchen is very bright." },
+    { "es": "¿El apartamento tiene vista?", "en": "Does the flat have a view?" }
+  ],
+  "rule": "English says a flat gets light or is bright. Spanish says it has light: *tiene mucha luz*, *tiene poca luz*. Keep *luz* singular; *luces* are lamps.\n\nA view works the same way: *tiene vista a* + the place. *Tiene vista a los cerros* (the hills east of Bogotá), *tiene vista al parque*.\n\nOr describe the room with *es*: *es oscuro*, *es amplio*, *es luminoso*, *es iluminado*. These words match the room: *la cocina es oscura*, *los cuartos son amplios*.",
+  "smallPrint": "In Spain you'll read *con vistas al mar*, in the plural. In Colombia people say *tiene vista a…*.",
+  "readAndPick": [
+    { "es": "El apartamento tiene mucha luz.", "options": ["The flat gets lots of light.", "The flat has lots of lamps."], "answer": 0 },
+    { "es": "El apartamento tiene muchas luces.", "options": ["The flat gets lots of light.", "The flat has lots of lamps."], "answer": 1 },
+    { "es": "La sala tiene poca luz.", "options": ["The living room is very bright.", "The living room has a small lamp.", "The living room doesn't get much light."], "answer": 2 },
+    { "es": "Tiene vista a los cerros.", "options": ["It's near the hills.", "It has a view of the hills.", "You can visit the hills from there."], "answer": 1 },
+    { "es": "Las habitaciones son amplias.", "options": ["The rooms are spacious.", "The room is spacious.", "The rooms are dark."], "answer": 0 },
+    { "es": "La cocina es pequeña y oscura.", "options": ["The kitchen is small but bright.", "The kitchen is small and dark."], "answer": 1 },
+    { "es": "¿Tiene mucha luz?", "options": ["Does it have a lot of lamps?", "Does it get lots of light?", "Is the light on?"], "answer": 1 },
+    { "es": "Mi cuarto tiene vista a la calle.", "options": ["My room looks out onto the street.", "My room is on the street.", "I can see my room from the street."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *luz* or *luces* and type the whole sentence: *El apartamento tiene mucha ___.* (The flat gets lots of light.)",
+      "answer": "El apartamento tiene mucha luz.",
+      "accept": [],
+      "why": "Daylight is *luz*, singular; *luces* would be lamps."
+    },
+    {
+      "prompt": "Choose *oscuro* or *oscura* and type the whole sentence: *La cocina es ___.*",
+      "answer": "La cocina es oscura.",
+      "accept": [],
+      "why": "*Cocina* is a *la* word, so the describing word ends in *a*."
+    },
+    {
+      "prompt": "Say: The flat has a view of the hills.",
+      "answer": "El apartamento tiene vista a los cerros.",
+      "accept": ["El apartamento tiene una vista a los cerros."],
+      "why": "A view is something the flat has: *tiene vista a*."
+    },
+    {
+      "prompt": "Say: The living room doesn't get much light.",
+      "answer": "La sala tiene poca luz.",
+      "accept": ["La sala no tiene mucha luz."],
+      "why": "Little light is *poca luz*; *poca* matches *luz*."
+    },
+    {
+      "prompt": "Ask about a flat: Does it get lots of light?",
+      "answer": "¿Tiene mucha luz?",
+      "accept": ["¿El apartamento tiene mucha luz?"],
+      "why": "Same words as the statement; the question marks do the asking."
+    },
+    {
+      "prompt": "Say: The room is dark, but spacious.",
+      "answer": "La habitación es oscura, pero amplia.",
+      "accept": ["La habitación es oscura pero amplia.", "El cuarto es oscuro, pero amplio.", "El cuarto es oscuro pero amplio."],
+      "why": "Both words describe the room, so they match it: *oscura*, *amplia*."
+    },
+    {
+      "prompt": "Make it about all the rooms: *El cuarto es amplio y luminoso.*",
+      "answer": "Los cuartos son amplios y luminosos.",
+      "accept": [],
+      "why": "Plural rooms take *son*, and both describing words add *s*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El apartamento tiene muchas luces.",
+      "right": "El apartamento tiene mucha luz.",
+      "why": "Almost. *Muchas luces* is lots of lamps; daylight is *mucha luz*."
+    },
+    {
+      "wrong": "El apartamento es mucha luz.",
+      "right": "El apartamento tiene mucha luz.",
+      "why": "Light is something the flat has, so *tiene*."
+    },
+    {
+      "wrong": "La cocina es muy oscuro.",
+      "right": "La cocina es muy oscura.",
+      "why": "The describing word matches *la cocina*: *oscura*."
+    }
+  ],
+  "personal": "Describe the room you're in now: does it get much light, what does it look out onto, and is it spacious or small?"
+}
