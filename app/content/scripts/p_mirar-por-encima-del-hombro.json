@@ -1,0 +1,176 @@
+{
+  "node": "p:mirar-por-encima-del-hombro",
+  "hook": {
+    "line": "The man from Altamira walks into the café and sizes everyone up. Spanish has a vivid way to say that someone treats you as beneath them.",
+    "es": "El señor de Altamira miró a Tomás por encima del hombro.",
+    "en": "The man from Altamira looked down on Tomás."
+  },
+  "examples": [
+    {
+      "es": "El señor de Altamira miró a Tomás por encima del hombro.",
+      "en": "The man from Altamira looked down on Tomás."
+    },
+    {
+      "es": "Le molesta que la miren por encima del hombro.",
+      "en": "It bothers her when people look down on her."
+    },
+    {
+      "es": "Hernando nunca mira a nadie por encima del hombro.",
+      "en": "Hernando never looks down on anyone."
+    },
+    {
+      "es": "Me miró de arriba abajo y no dijo nada.",
+      "en": "He looked me up and down and said nothing."
+    },
+    {
+      "es": "¿Por qué me miras por encima del hombro?",
+      "en": "Why are you looking down on me? (to a friend)"
+    },
+    {
+      "es": "Los vecinos nos miran por encima del hombro.",
+      "en": "The neighbours look down on us."
+    }
+  ],
+  "rule": "*Mirar por encima del hombro* is \"to look over the shoulder\" at someone, as if they were beneath you: to look down on them. English looks *down*; Spanish looks *over the shoulder*.\nThe person looked down on comes before the verb as a small word (*me miró*, *la miran*, *nos miran*) or after *a* (*miró a Tomás*).\n*Mirar de arriba abajo* is to look someone up and down, sizing them up, often with judgement.\nWith nobody on the receiving end, it is just a glance behind you: *Miré por encima del hombro.*",
+  "smallPrint": "Teachers call this an idiom: the words together mean something other than their parts.",
+  "readAndPick": [
+    {
+      "es": "Me miró por encima del hombro cuando le pregunté el precio.",
+      "options": [
+        "I looked down on him when I asked him the price.",
+        "He looked down on me when I asked him the price."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le molesta que la miren por encima del hombro.",
+      "options": [
+        "It bothers her when she looks down on people.",
+        "It bothers her when people look down on her."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos miraron por encima del hombro en el restaurante.",
+      "options": [
+        "They looked down on us at the restaurant.",
+        "We looked down on them at the restaurant."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me miró de arriba abajo y no dijo nada.",
+      "options": [
+        "He looked at me and said nothing.",
+        "He looked me up and down and said nothing."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando nunca mira a nadie por encima del hombro.",
+      "options": [
+        "Hernando always looks down on everyone.",
+        "Hernando never looks at anyone.",
+        "Hernando never looks down on anyone."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Por qué me miras por encima del hombro?",
+      "options": [
+        "Why do I look down on you?",
+        "Why do you look down on me? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los vecinos nos miran por encima del hombro.",
+      "options": [
+        "We look down on the neighbours.",
+        "The neighbours look down on us."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Miré por encima del hombro y no había nadie.",
+      "options": [
+        "I looked down on everyone and there was nobody there.",
+        "I glanced over my shoulder and there was nobody there."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *me* or *lo*, then type the whole sentence: ___ miró por encima del hombro. (He looked down on me.)",
+      "answer": "Me miró por encima del hombro.",
+      "accept": [
+        "Él me miró por encima del hombro."
+      ],
+      "why": "The person looked down on is *me*."
+    },
+    {
+      "prompt": "Choose *la* or *le*, then type the whole sentence: Le molesta que ___ miren por encima del hombro. (It bothers her when people look down on her.)",
+      "answer": "Le molesta que la miren por encima del hombro.",
+      "accept": [],
+      "why": "She is the one being looked at, so the small word is *la*."
+    },
+    {
+      "prompt": "Type it in Spanish: Hernando never looks down on anyone.",
+      "answer": "Hernando nunca mira a nadie por encima del hombro.",
+      "accept": [
+        "Hernando no mira a nadie por encima del hombro."
+      ],
+      "why": "*A nadie* names the person looked at, so it needs *a*."
+    },
+    {
+      "prompt": "Type it in Spanish: The neighbours look down on us.",
+      "answer": "Los vecinos nos miran por encima del hombro.",
+      "accept": [
+        "Nos miran por encima del hombro los vecinos."
+      ],
+      "why": "*Us* is *nos*, before the verb."
+    },
+    {
+      "prompt": "Type it in Spanish: She looked me up and down. (a woman did it)",
+      "answer": "Me miró de arriba abajo.",
+      "accept": [
+        "Ella me miró de arriba abajo."
+      ],
+      "why": "*De arriba abajo* is the up and down look."
+    },
+    {
+      "prompt": "Make it a question to a friend: *Me miras por encima del hombro.* becomes: Why are you looking down on me? (to a friend)",
+      "answer": "¿Por qué me miras por encima del hombro?",
+      "accept": [],
+      "why": "*Por qué* opens the question and the rest stays the same."
+    },
+    {
+      "prompt": "Make it about her: *Me miran por encima del hombro.* becomes: They look down on her.",
+      "answer": "La miran por encima del hombro.",
+      "accept": [
+        "Ellos la miran por encima del hombro.",
+        "A ella la miran por encima del hombro."
+      ],
+      "why": "Swap *me* for *la* to move the look onto her."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Miró a mí por encima del hombro.",
+      "right": "Me miró por encima del hombro.",
+      "why": "Almost. The person looked down on is a small word before the verb: *me*, *la*, *nos*."
+    },
+    {
+      "wrong": "Me miró abajo.",
+      "right": "Me miró de arriba abajo.",
+      "why": "Almost. The look goes both ways: *de arriba abajo*."
+    },
+    {
+      "wrong": "Me miró sobre el hombro.",
+      "right": "Me miró por encima del hombro.",
+      "why": "Almost. The fixed phrase is *por encima del hombro*, with no swaps."
+    }
+  ],
+  "personal": "Tell me about a place where people look down on others, or a time it happened to you. Use *me miró…* or *nos miran…*."
+}

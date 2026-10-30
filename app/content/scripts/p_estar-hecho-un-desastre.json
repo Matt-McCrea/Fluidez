@@ -1,0 +1,171 @@
+{
+  "node": "p:estar-hecho-un-desastre",
+  "hook": {
+    "line": "After the party, the café looks like a storm went through it. Spanish says it in a way that is both exaggerated and very common.",
+    "es": "El café está hecho un desastre.",
+    "en": "The café is a total mess."
+  },
+  "examples": [
+    {
+      "es": "Su cuarto está hecho un desastre.",
+      "en": "His room is a total mess."
+    },
+    {
+      "es": "La cocina quedó hecha un desastre.",
+      "en": "The kitchen was left a total mess."
+    },
+    {
+      "es": "Después de la fiesta, el café estaba hecho un desastre.",
+      "en": "After the party, the café was a total mess."
+    },
+    {
+      "es": "¿Por qué está tu cuarto hecho un desastre?",
+      "en": "Why is your room such a mess? (to a friend)"
+    },
+    {
+      "es": "Tomás está hecho un desastre porque no durmió.",
+      "en": "Tomás is a wreck because he didn't sleep."
+    },
+    {
+      "es": "Estoy hecha un desastre hoy.",
+      "en": "I'm a total wreck today. (a woman speaking)"
+    }
+  ],
+  "rule": "*Hecho un desastre* means a complete mess. It describes a place or a person who looks wrecked. Literally it is \"made into a disaster\".\n*Hecho* is an adjective, so it changes with what you describe: *el cuarto está hecho*, *la cocina está hecha*, and a woman says *estoy hecha un desastre*. *Un desastre* does not change.\nUse *estar* for a state, or *quedar* for how something ends up: *quedó hecha un desastre*.\nThe same frame takes other nouns: *hecho un lío*, *hecha un chiquero* (a pigsty, colloquial).",
+  "smallPrint": "Teachers call *hecho* here a past participle used as an adjective, so it agrees in gender and number.",
+  "readAndPick": [
+    {
+      "es": "Su cuarto está hecho un desastre.",
+      "options": [
+        "His room is a total mess.",
+        "His room is spotless."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy hecha un desastre hoy.",
+      "options": [
+        "A man says he's a wreck today.",
+        "A woman says she's a wreck today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La cocina quedó hecha un desastre.",
+      "options": [
+        "The kitchen was left spotless.",
+        "The kitchen is going to be a mess.",
+        "The kitchen was left a total mess."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estoy hecho un desastre hoy.",
+      "options": [
+        "A man says he's a wreck today.",
+        "A woman says she's a wreck today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Por qué está tu cuarto hecho un desastre?",
+      "options": [
+        "Why is your room so clean? (to a friend)",
+        "Why is your room such a mess? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi cuarto no está hecho un desastre.",
+      "options": [
+        "My room is not a total mess.",
+        "My room is a total mess."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Después de la fiesta, el café estaba hecho un desastre.",
+      "options": [
+        "Before the party, the café was a mess.",
+        "After the party, the café was a total mess."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ella está hecha un desastre porque no durmió.",
+      "options": [
+        "He's a wreck because he didn't sleep.",
+        "She's a wreck because she didn't sleep."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *hecho* or *hecha*, then type the whole sentence: La cocina está ___ un desastre. (The kitchen is a total mess.)",
+      "answer": "La cocina está hecha un desastre.",
+      "accept": [],
+      "why": "*Cocina* is feminine, so *hecha*."
+    },
+    {
+      "prompt": "Choose *hecho* or *hecha*, then type the whole sentence: El cuarto de Tomás está ___ un desastre. (Tomás's room is a total mess.)",
+      "answer": "El cuarto de Tomás está hecho un desastre.",
+      "accept": [],
+      "why": "*Cuarto* is masculine, so *hecho*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm a total wreck today. (a woman speaking)",
+      "answer": "Estoy hecha un desastre hoy.",
+      "accept": [
+        "Hoy estoy hecha un desastre."
+      ],
+      "why": "A woman speaking uses *hecha*."
+    },
+    {
+      "prompt": "Type it in Spanish: Why is your room such a mess? (to a friend)",
+      "answer": "¿Por qué está tu cuarto hecho un desastre?",
+      "accept": [
+        "¿Por qué tu cuarto está hecho un desastre?"
+      ],
+      "why": "*Cuarto* is masculine, so *hecho*."
+    },
+    {
+      "prompt": "Type it in Spanish: After the party, the café was a total mess.",
+      "answer": "Después de la fiesta, el café estaba hecho un desastre.",
+      "accept": [
+        "El café estaba hecho un desastre después de la fiesta."
+      ],
+      "why": "*Estaba* describes how the café looked."
+    },
+    {
+      "prompt": "Make it negative: *Mi cuarto está hecho un desastre.* becomes: My room is not a total mess.",
+      "answer": "Mi cuarto no está hecho un desastre.",
+      "accept": [],
+      "why": "*No* goes before *está*."
+    },
+    {
+      "prompt": "Make it about Mariana: *Tomás está hecho un desastre.* becomes: Mariana is a total wreck.",
+      "answer": "Mariana está hecha un desastre.",
+      "accept": [],
+      "why": "Mariana is a woman, so *hecha*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Mi cocina está hecho un desastre.",
+      "right": "Mi cocina está hecha un desastre.",
+      "why": "Almost. *Hecha* has to agree with *cocina*."
+    },
+    {
+      "wrong": "Mi cuarto está hecho desastre.",
+      "right": "Mi cuarto está hecho un desastre.",
+      "why": "Almost. Keep *un*: it is \"made into a disaster\"."
+    },
+    {
+      "wrong": "Mi cuarto es hecho un desastre.",
+      "right": "Mi cuarto está hecho un desastre.",
+      "why": "Almost. A mess is a state, so *estar*, not *ser*."
+    }
+  ],
+  "personal": "Describe a place in your life that is *hecho un desastre* right now."
+}

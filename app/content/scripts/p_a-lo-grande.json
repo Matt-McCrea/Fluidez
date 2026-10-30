@@ -1,0 +1,179 @@
+{
+  "node": "p:a-lo-grande",
+  "hook": {
+    "line": "Tomás wants the café's reopening to be a night people talk about. Spanish has two short phrases for doing something big, with no expense spared.",
+    "es": "Si vamos a abrir el café, lo hacemos a lo grande.",
+    "en": "If we're going to open the café, we're doing it big."
+  },
+  "examples": [
+    {
+      "es": "Celebraron el grado por todo lo alto.",
+      "en": "They celebrated the graduation in style."
+    },
+    {
+      "es": "Mariana vive a lo grande aunque gana poco.",
+      "en": "Mariana lives it up even though she earns little."
+    },
+    {
+      "es": "Quiero celebrar mi cumpleaños a lo grande.",
+      "en": "I want to celebrate my birthday in a big way."
+    },
+    {
+      "es": "Rosa celebraba la Navidad a lo grande.",
+      "en": "Rosa used to celebrate Christmas in a big way."
+    },
+    {
+      "es": "Si vamos a abrir el café, lo hacemos a lo grande.",
+      "en": "If we're going to open the café, we're doing it big."
+    },
+    {
+      "es": "¿Vamos a celebrar a lo grande?",
+      "en": "Are we going to celebrate in a big way?"
+    },
+    {
+      "es": "Lo celebramos por todo lo alto.",
+      "en": "We celebrated it in style."
+    }
+  ],
+  "rule": "*A lo grande* and *por todo lo alto* both mean \"in a big way, in style, no expense spared\". They go after the verb: *celebrar*, *vivir*, *hacer*, *viajar*.\nThey describe how you do it, so they work like English \"in style\" or \"go big\".\nThe little words are fixed: *a lo grande*, never *en lo grande*, and *por todo lo alto* keeps its *lo*. Beware *alto*: here it has nothing to do with loud.\n*Por todo lo alto* is a touch more elegant. Related: *echar la casa por la ventana*, to splurge.",
+  "smallPrint": "Teachers call these adverbial phrases: fixed groups that describe how something is done.",
+  "readAndPick": [
+    {
+      "es": "Celebraron el grado por todo lo alto.",
+      "options": [
+        "They celebrated the graduation in style.",
+        "They celebrated the graduation quietly."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vive a lo grande.",
+      "options": [
+        "He lives modestly.",
+        "He lives the high life."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hicieron la boda a lo grande.",
+      "options": [
+        "They skipped the wedding.",
+        "They had a huge wedding.",
+        "They had a tiny wedding."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana vive a lo grande aunque gana poco.",
+      "options": [
+        "Mariana lives simply because she earns little.",
+        "Mariana lives it up even though she earns little."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si vamos a abrir el café, lo hacemos a lo grande.",
+      "options": [
+        "If we open the café, we'll do it big.",
+        "If we open the café, we'll do it small."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Rosa celebraba la Navidad a lo grande.",
+      "options": [
+        "Rosa never celebrated Christmas.",
+        "Rosa is going to celebrate Christmas in a big way.",
+        "Rosa used to celebrate Christmas in a big way."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo celebramos por todo lo alto.",
+      "options": [
+        "We said it in a loud voice.",
+        "We celebrated it in style."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No vivo a lo grande, pero vivo bien.",
+      "options": [
+        "I don't live extravagantly, but I live well.",
+        "I live extravagantly, but I don't live well."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *a lo grande* or *en lo grande*, then type the whole sentence: Vive ___. (He lives the high life.)",
+      "answer": "Vive a lo grande.",
+      "accept": [],
+      "why": "The fixed phrase is *a lo grande*."
+    },
+    {
+      "prompt": "Choose *por todo lo alto* or *por todo alto*, then type the whole sentence: Celebraron el grado ___. (They celebrated the graduation in style.)",
+      "answer": "Celebraron el grado por todo lo alto.",
+      "accept": [],
+      "why": "The *lo* stays in *por todo lo alto*."
+    },
+    {
+      "prompt": "Type it in Spanish: I want to celebrate my birthday in a big way.",
+      "answer": "Quiero celebrar mi cumpleaños a lo grande.",
+      "accept": [
+        "Quiero celebrar mi cumpleaños por todo lo alto."
+      ],
+      "why": "The phrase goes after what you are celebrating."
+    },
+    {
+      "prompt": "Type it in Spanish: If we're going to open the café, we're doing it big.",
+      "answer": "Si vamos a abrir el café, lo hacemos a lo grande.",
+      "accept": [
+        "Si vamos a abrir el café, lo hacemos por todo lo alto."
+      ],
+      "why": "*Lo hacemos* is \"we do it\", and the phrase says how."
+    },
+    {
+      "prompt": "Type it in Spanish: Rosa used to celebrate Christmas in a big way.",
+      "answer": "Rosa celebraba la Navidad a lo grande.",
+      "accept": [
+        "Rosa celebraba la Navidad por todo lo alto.",
+        "Rosa celebraba Navidad a lo grande."
+      ],
+      "why": "*Celebraba* is the habit in the past."
+    },
+    {
+      "prompt": "Make it negative: *Vivo a lo grande.* becomes: I don't live extravagantly.",
+      "answer": "No vivo a lo grande.",
+      "accept": [],
+      "why": "*No* goes before the verb."
+    },
+    {
+      "prompt": "Make it a question: *Vamos a celebrar a lo grande.* becomes: Are we going to celebrate in a big way?",
+      "answer": "¿Vamos a celebrar a lo grande?",
+      "accept": [
+        "¿Vamos a celebrar por todo lo alto?"
+      ],
+      "why": "Spanish adds the question marks; the words stay the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Vive en lo grande.",
+      "right": "Vive a lo grande.",
+      "why": "Almost. The fixed phrase uses *a*, not *en*."
+    },
+    {
+      "wrong": "Celebraron el grado por todo alto.",
+      "right": "Celebraron el grado por todo lo alto.",
+      "why": "Almost. *Lo* is part of the fixed phrase."
+    },
+    {
+      "wrong": "Vive grandemente.",
+      "right": "Vive a lo grande.",
+      "why": "Almost. Spanish doesn't turn *grande* into an adverb here, it uses the fixed phrase."
+    }
+  ],
+  "personal": "Tell me one thing you would do *a lo grande* if you could."
+}

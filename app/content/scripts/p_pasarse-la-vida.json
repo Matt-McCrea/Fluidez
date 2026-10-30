@@ -1,0 +1,173 @@
+{
+  "node": "p:pasarse-la-vida",
+  "hook": {
+    "line": "Everyone in the café knows somebody who complains about everything. Spanish has a short way to say how someone spends their time, and it is usually a gentle complaint.",
+    "es": "Hernando se pasa la vida quejándose.",
+    "en": "Hernando spends his whole life complaining."
+  },
+  "examples": [
+    {
+      "es": "Hernando se pasa la vida quejándose.",
+      "en": "Hernando spends his whole life complaining."
+    },
+    {
+      "es": "Me pasé el día durmiendo.",
+      "en": "I spent the day sleeping."
+    },
+    {
+      "es": "Mariana se pasa la vida viajando.",
+      "en": "Mariana spends her whole life travelling."
+    },
+    {
+      "es": "Nos pasamos la noche hablando.",
+      "en": "We spent the night talking."
+    },
+    {
+      "es": "¿Te pasas la vida mirando el celular?",
+      "en": "Do you spend your whole life looking at your phone? (to a friend)"
+    },
+    {
+      "es": "Vale se pasó la mañana haciendo pan.",
+      "en": "Vale spent the morning making bread."
+    }
+  ],
+  "rule": "To say how someone fills their time, use *pasarse* plus a stretch of time plus the *-ando* / *-iendo* form: *me paso*, *te pasas*, *se pasa*, *nos pasamos*.\n*La vida* means \"all the time\" and is exaggeration. Smaller stretches: *el día*, *la tarde*, *la noche*, *la semana*.\nPresent is a habit or a complaint. The past (*me pasé*) is one stretch that is over.\nThe activity is the *-ando* / *-iendo* form: no *a*, no *en*, no infinitive.",
+  "smallPrint": "Teachers call *quejándose* and *durmiendo* gerunds. Here they say what fills the time.",
+  "readAndPick": [
+    {
+      "es": "Se pasa la vida quejándose.",
+      "options": [
+        "He spends his whole life complaining.",
+        "He spent the whole day complaining.",
+        "He is going to complain all his life."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me pasé el día durmiendo.",
+      "options": [
+        "I spend every day sleeping.",
+        "I spent the day sleeping."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos pasamos la noche hablando.",
+      "options": [
+        "They spent the night talking.",
+        "We spend every night talking.",
+        "We spent the night talking."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Te pasas la vida mirando el celular?",
+      "options": [
+        "Do you spend your whole life looking at your phone? (to a friend)",
+        "Does he spend his whole life looking at his phone?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana se pasa la vida viajando.",
+      "options": [
+        "Mariana spent last week travelling.",
+        "Mariana spends her whole life travelling."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale se pasó la mañana haciendo pan.",
+      "options": [
+        "Vale spends every morning making bread.",
+        "Vale spent the morning making bread."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me paso la vida esperando el bus.",
+      "options": [
+        "I spend my whole life waiting for the bus.",
+        "I spent the whole day waiting for the bus."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se pasaron la semana preparando la fiesta.",
+      "options": [
+        "He spent the week preparing the party.",
+        "They spend every week preparing the party.",
+        "They spent the week preparing the party."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *quejándose* or *quejarse*, then type the whole sentence: Hernando se pasa la vida ___. (Hernando spends his whole life complaining.)",
+      "answer": "Hernando se pasa la vida quejándose.",
+      "accept": [
+        "Se pasa la vida quejándose."
+      ],
+      "why": "The activity after the time is the *-ando* / *-iendo* form."
+    },
+    {
+      "prompt": "Choose *durmiendo* or *dormir*, then type the whole sentence: Me pasé el día ___. (I spent the day sleeping.)",
+      "answer": "Me pasé el día durmiendo.",
+      "accept": [],
+      "why": "Again the *-iendo* form, not the infinitive."
+    },
+    {
+      "prompt": "Type it in Spanish: We spent the night talking.",
+      "answer": "Nos pasamos la noche hablando.",
+      "accept": [
+        "Pasamos la noche hablando."
+      ],
+      "why": "*We* gives *nos pasamos*."
+    },
+    {
+      "prompt": "Type it in Spanish: Mariana spends her whole life travelling.",
+      "answer": "Mariana se pasa la vida viajando.",
+      "accept": [],
+      "why": "*Pasarse la vida* plus *viajando*."
+    },
+    {
+      "prompt": "Type it in Spanish: Do you spend your whole life looking at your phone? (to a friend)",
+      "answer": "¿Te pasas la vida mirando el celular?",
+      "accept": [],
+      "why": "A friend is *tú*, so *te pasas*."
+    },
+    {
+      "prompt": "Make it about Vale: *Me paso la mañana haciendo pan.* becomes: Vale spends the morning making bread.",
+      "answer": "Vale se pasa la mañana haciendo pan.",
+      "accept": [],
+      "why": "Vale is *he* or *she*, so *se pasa*."
+    },
+    {
+      "prompt": "Make it past: *Se pasa la tarde leyendo.* becomes: He spent the afternoon reading.",
+      "answer": "Se pasó la tarde leyendo.",
+      "accept": [
+        "Pasó la tarde leyendo."
+      ],
+      "why": "One finished afternoon is the past: *pasó*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Se pasa la vida a quejarse.",
+      "right": "Se pasa la vida quejándose.",
+      "why": "Almost. After *pasarse* the activity is the *-ando* / *-iendo* form: no *a*, no infinitive."
+    },
+    {
+      "wrong": "Me paso el día durmiendo ayer.",
+      "right": "Ayer me pasé el día durmiendo.",
+      "why": "Almost. Yesterday is over, so *pasé*, not *paso*."
+    },
+    {
+      "wrong": "Nos pasa la noche hablando.",
+      "right": "Nos pasamos la noche hablando.",
+      "why": "Almost. It is *we* doing it, so the verb is *pasamos*."
+    }
+  ],
+  "personal": "Tell me what you spend your weekends doing. Use *me paso el fin de semana…* plus an *-ando* or *-iendo* verb."
+}

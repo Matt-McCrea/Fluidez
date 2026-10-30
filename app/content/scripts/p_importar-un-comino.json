@@ -1,0 +1,178 @@
+{
+  "node": "p:importar-un-comino",
+  "hook": {
+    "line": "Altamira keeps sending letters, and Tomás has had enough. Sometimes the most useful thing you can say is that something doesn't matter to you at all.",
+    "es": "Me importa un comino lo que diga Altamira.",
+    "en": "I couldn't care less what Altamira says."
+  },
+  "examples": [
+    {
+      "es": "Me importa un comino lo que diga Altamira.",
+      "en": "I couldn't care less what Altamira says."
+    },
+    {
+      "es": "A Hernando le importa un comino el fútbol.",
+      "en": "Hernando couldn't care less about soccer."
+    },
+    {
+      "es": "¿Te importa un comino lo que piensen?",
+      "en": "Do you not care one bit what they think? (to a friend)"
+    },
+    {
+      "es": "No me importa un comino.",
+      "en": "I don't care one bit."
+    },
+    {
+      "es": "A ellos les importa un pito el ruido.",
+      "en": "They couldn't care less about the noise."
+    },
+    {
+      "es": "Me importa un comino que Vale llegue tarde.",
+      "en": "I couldn't care less that Vale is late."
+    }
+  ],
+  "rule": "*Importar* works like *gustar*: the thing matters *to* someone, so you say *me importa*, *le importa*, *les importa*, and the thing comes after.\nAdd *un comino* (a cumin seed, something worthless) and it means \"I couldn't care less\". The meaning is already negative, so you don't need *no*: *Me importa un comino.* You can also say *un pepino* or, very Colombian, *un pito*.\nIt is for friends and gossip, not for formal letters. *Me importa mucho* says the opposite: it matters a lot.",
+  "smallPrint": "Teachers call this a negative-polarity idiom: a tiny, worthless thing stands in for \"not at all\".",
+  "readAndPick": [
+    {
+      "es": "Me importa un comino lo que diga Altamira.",
+      "options": [
+        "Altamira's opinion matters a lot to me.",
+        "I couldn't care less what Altamira says."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me importa mucho lo que piensas.",
+      "options": [
+        "It matters a lot to me what you think.",
+        "I couldn't care less what you think."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A Hernando le importa un comino el fútbol.",
+      "options": [
+        "Hernando loves soccer.",
+        "I couldn't care less about Hernando's soccer.",
+        "Hernando couldn't care less about soccer."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No me importa un comino.",
+      "options": [
+        "I don't care one bit.",
+        "It matters to me.",
+        "I'm not sure it matters to me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos importa un comino la plata.",
+      "options": [
+        "Money matters a lot to us.",
+        "Money doesn't matter to us at all.",
+        "Money doesn't matter to me at all."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te importa un comino lo que piensen?",
+      "options": [
+        "Do they not care one bit what you think? (to a friend)",
+        "Do you not care one bit what they think? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A mi hermana le importa un comino la moda.",
+      "options": [
+        "My sister couldn't care less about fashion.",
+        "My sister loves fashion."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A ellos les importa un pito el ruido.",
+      "options": [
+        "The noise doesn't bother me.",
+        "They are bothered by the noise.",
+        "They couldn't care less about the noise."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *me* or *le*, then type the whole sentence: ___ importa un comino lo que diga Altamira. (I couldn't care less what Altamira says.)",
+      "answer": "Me importa un comino lo que diga Altamira.",
+      "accept": [],
+      "why": "The person who doesn't care is *me* here, so *me importa*."
+    },
+    {
+      "prompt": "Choose *le* or *les*, then type the whole sentence: A Hernando ___ importa un comino el fútbol. (Hernando couldn't care less about soccer.)",
+      "answer": "A Hernando le importa un comino el fútbol.",
+      "accept": [
+        "Le importa un comino el fútbol a Hernando."
+      ],
+      "why": "Hernando is one person, so *le*."
+    },
+    {
+      "prompt": "Type it in Spanish: I couldn't care less.",
+      "answer": "Me importa un comino.",
+      "accept": [
+        "No me importa un comino."
+      ],
+      "why": "*Importar* plus *un comino* is the whole idiom."
+    },
+    {
+      "prompt": "Type it in Spanish: We couldn't care less about the noise.",
+      "answer": "Nos importa un comino el ruido.",
+      "accept": [
+        "Nos importa un pito el ruido.",
+        "Nos importa un pepino el ruido."
+      ],
+      "why": "*We* is *nos*, so *nos importa*."
+    },
+    {
+      "prompt": "Type it in Spanish: They couldn't care less what Altamira says.",
+      "answer": "Les importa un comino lo que diga Altamira.",
+      "accept": [
+        "A ellos les importa un comino lo que diga Altamira.",
+        "Les importa un pito lo que diga Altamira."
+      ],
+      "why": "*They* is *les*, and *lo que diga* follows the thing they don't care about."
+    },
+    {
+      "prompt": "Make it the opposite: *Me importa un comino la política.* becomes: Politics matters a lot to me.",
+      "answer": "Me importa mucho la política.",
+      "accept": [],
+      "why": "*Mucho* replaces *un comino* when something does matter."
+    },
+    {
+      "prompt": "Make it a question to a friend: *Me importa un comino el ruido.* becomes: Do you not care one bit about the noise? (to a friend)",
+      "answer": "¿Te importa un comino el ruido?",
+      "accept": [],
+      "why": "Asking a friend about themselves, the small word is *te*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo importo un comino lo que dice.",
+      "right": "Me importa un comino lo que diga.",
+      "why": "Almost. *Importar* works like *gustar*: the thing matters *to* you, so the small word is *me*."
+    },
+    {
+      "wrong": "A Hernando me importa un comino el fútbol.",
+      "right": "A Hernando le importa un comino el fútbol.",
+      "why": "Almost. The small word has to match the person who doesn't care: Hernando is *le*."
+    },
+    {
+      "wrong": "Me importa una comino la plata.",
+      "right": "Me importa un comino la plata.",
+      "why": "Almost. *Comino* is masculine, so it is *un comino*."
+    }
+  ],
+  "personal": "Tell me one thing you couldn't care less about. Say it with *me importa un comino*."
+}

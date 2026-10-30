@@ -1,0 +1,173 @@
+{
+  "node": "p:morirse-de",
+  "hook": {
+    "line": "Bogotá is cold, the day is long and Tomás has not eaten. Spanish speakers exaggerate how they feel all the time, and they mostly do it by dying.",
+    "es": "Me muero de hambre.",
+    "en": "I'm starving."
+  },
+  "examples": [
+    {
+      "es": "Me muero de hambre.",
+      "en": "I'm starving."
+    },
+    {
+      "es": "Nos morimos de la risa.",
+      "en": "We nearly died laughing."
+    },
+    {
+      "es": "Me moría de sueño en esa reunión.",
+      "en": "I was dead tired in that meeting."
+    },
+    {
+      "es": "Me muero de ganas de verte.",
+      "en": "I'm dying to see you. (to a friend)"
+    },
+    {
+      "es": "Tomás se muere de frío en Bogotá.",
+      "en": "Tomás is freezing to death in Bogotá."
+    },
+    {
+      "es": "Mariana se murió de la vergüenza cuando Simón habló.",
+      "en": "Mariana died of embarrassment when Simón spoke."
+    }
+  ],
+  "rule": "*Morirse de* plus a feeling means \"dying of\", and it just says \"very much\": *hambre*, *frío*, *calor*, *sueño*, *miedo*, *vergüenza*.\nIt is reflexive, so the small word changes with the person: *me muero*, *te mueres*, *se muere*, *nos morimos*.\nWith *risa* and *vergüenza* people often add *la*: *de la risa*.\nFor \"dying to do something\", use *de ganas de* plus the infinitive: *Me muero de ganas de verte.*\nNobody is in danger. It is exaggeration.",
+  "smallPrint": "Teachers call this hyperbole: a deliberate exaggeration that nobody takes literally.",
+  "readAndPick": [
+    {
+      "es": "Me muero de hambre.",
+      "options": [
+        "I'm starving.",
+        "I'm freezing.",
+        "I'm dying to see you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos morimos de la risa.",
+      "options": [
+        "I nearly died laughing.",
+        "We nearly died laughing.",
+        "We were freezing."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás se muere de frío en Bogotá.",
+      "options": [
+        "Tomás is dying of heat in Bogotá.",
+        "Tomás is freezing in Bogotá."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te mueres de sueño?",
+      "options": [
+        "Are you dead tired? (to a friend)",
+        "Is he dead tired?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me muero de ganas de verte.",
+      "options": [
+        "I'm afraid to see you.",
+        "I'm dying to see you. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se morían de la risa con Simón.",
+      "options": [
+        "They were dying of fear because of Simón.",
+        "They were dying of laughter at Simón."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mis amigos se mueren de calor en Cartagena.",
+      "options": [
+        "My friends are sweltering in Cartagena.",
+        "My friends are freezing in Cartagena."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana se moría de curiosidad.",
+      "options": [
+        "Mariana is dying of curiosity.",
+        "Mariana was dying of fear.",
+        "Mariana was dying of curiosity."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de* or *por*, then type the whole sentence: Me muero ___ hambre. (I'm starving.)",
+      "answer": "Me muero de hambre.",
+      "accept": [],
+      "why": "The feeling comes after *de*."
+    },
+    {
+      "prompt": "Choose *me* or *se*, then type the whole sentence: Tomás ___ muere de frío en Bogotá. (Tomás is freezing to death in Bogotá.)",
+      "answer": "Tomás se muere de frío en Bogotá.",
+      "accept": [],
+      "why": "Tomás is *he*, so *se muere*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm dying of heat.",
+      "answer": "Me muero de calor.",
+      "accept": [
+        "Me estoy muriendo de calor."
+      ],
+      "why": "*Me muero de* plus the feeling."
+    },
+    {
+      "prompt": "Type it in Spanish: We nearly died laughing.",
+      "answer": "Nos morimos de la risa.",
+      "accept": [
+        "Nos morimos de risa."
+      ],
+      "why": "*We* is *nos morimos*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm dying to see you. (to a friend)",
+      "answer": "Me muero de ganas de verte.",
+      "accept": [],
+      "why": "*Ganas de* plus an infinitive is \"dying to\"."
+    },
+    {
+      "prompt": "Make it about you all: *Me muero de frío.* becomes: You all are freezing. (to a group)",
+      "answer": "Ustedes se mueren de frío.",
+      "accept": [
+        "Se mueren de frío."
+      ],
+      "why": "*Ustedes* takes *se mueren*."
+    },
+    {
+      "prompt": "Make it a question to a friend: *Tienes hambre.* becomes: Are you starving? (to a friend)",
+      "answer": "¿Te mueres de hambre?",
+      "accept": [],
+      "why": "*Te mueres de* asks it in exaggerated form."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy muriendo de hambre.",
+      "right": "Me muero de hambre.",
+      "why": "Almost. Spanish says it with the small word: *me muero*, or *me estoy muriendo*."
+    },
+    {
+      "wrong": "Me muero por hambre.",
+      "right": "Me muero de hambre.",
+      "why": "Almost. The feeling you die of comes after *de*, not *por*."
+    },
+    {
+      "wrong": "Me muero de querer verte.",
+      "right": "Me muero de ganas de verte.",
+      "why": "Almost. \"Dying to\" needs *ganas*: *de ganas de* plus an infinitive."
+    }
+  ],
+  "personal": "Tell me what you're dying of right now. Use *me muero de…*."
+}
