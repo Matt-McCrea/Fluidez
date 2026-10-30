@@ -1,0 +1,172 @@
+{
+  "node": "p:coincidir-con-en",
+  "hook": {
+    "line": "When you agree with someone at a meeting, you want to say exactly what you agree on. *Coincidir* does that, and it is also how Spanish says two things happen at the same time.",
+    "es": "Coincido contigo en que el problema es el transporte.",
+    "en": "I agree with you that the problem is transport."
+  },
+  "examples": [
+    {
+      "es": "Coincido contigo en que el problema es el transporte.",
+      "en": "I agree with you that the problem is transport."
+    },
+    {
+      "es": "Coincidimos en casi todo.",
+      "en": "We agree on almost everything."
+    },
+    {
+      "es": "Nuestros horarios coinciden los martes.",
+      "en": "Our schedules coincide on Tuesdays."
+    },
+    {
+      "es": "Vale coincide con Tomás en que el café es importante.",
+      "en": "Vale agrees with Tomás that the café is important."
+    },
+    {
+      "es": "Coincido con usted en lo principal.",
+      "en": "I agree with you on the main point."
+    },
+    {
+      "es": "Ayer coincidí con Mariana en el banco.",
+      "en": "Yesterday I ran into Mariana at the bank."
+    }
+  ],
+  "rule": "*Coincidir con* + person + *en* + what you agree on: *Coincido contigo en…*. For a whole idea use *en que*: *en que el problema es el transporte*.\n\nWatch the pieces: *con* + person (*contigo*, *conmigo*, *con usted*), then *en*. Never *de*.\nWith *nosotros*, drop the person: *Coincidimos en casi todo*.\nThings can coincide too: *Nuestros horarios coinciden*.\nAnd meeting someone by chance is *coincidir* as well.",
+  "smallPrint": "Teachers call this a verb with a fixed preposition: *coincidir* always travels with *con* for the person and *en* for the point.",
+  "readAndPick": [
+    {
+      "es": "Coincido contigo en que el problema es el transporte.",
+      "options": [
+        "I agree with you that the problem is transport.",
+        "You agree with me that the problem is transport.",
+        "We agree that the problem is transport."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Coincides conmigo en que el problema es el transporte.",
+      "options": [
+        "I agree with you that the problem is transport.",
+        "You agree with me that the problem is transport.",
+        "She agrees with me that the problem is transport."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Coincidimos en casi todo.",
+      "options": [
+        "They agree on almost everything.",
+        "I agree on almost everything.",
+        "We agree on almost everything."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale coincide con Tomás en que el café es importante.",
+      "options": [
+        "Vale agrees with Tomás that the café is important.",
+        "Vale and I agree that the café is important.",
+        "Tomás agrees with Vale that the café is important."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nuestros horarios coinciden los martes.",
+      "options": [
+        "Our schedules are different on Tuesdays.",
+        "Our schedules coincide on Tuesdays.",
+        "I coincide with my schedule on Tuesdays."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Coincido con usted en lo principal.",
+      "options": [
+        "You agree with me on the main point.",
+        "She agrees with them on the main point.",
+        "I agree with you on the main point."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ayer coincidí con Mariana en el banco.",
+      "options": [
+        "Yesterday I ran into Mariana at the bank.",
+        "Yesterday I agreed with Mariana about the bank.",
+        "Mariana and I will agree at the bank."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mis amigos coinciden con Hernando en que hace falta un parque.",
+      "options": [
+        "I agree with Hernando that a park is needed.",
+        "My friends agree with Hernando that a park is needed.",
+        "Hernando agrees with my friends that a park is needed."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Coincido ___ en que el problema es el transporte.* (*contigo* or *con ti*) I agree with you (a friend) that the problem is transport.",
+      "answer": "Coincido contigo en que el problema es el transporte.",
+      "accept": [],
+      "why": "With *con*, *tú* becomes *contigo*, one word."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Coincidimos ___ casi todo.* (*en* or *de*) We agree on almost everything.",
+      "answer": "Coincidimos en casi todo.",
+      "accept": [],
+      "why": "What you agree on always follows *en*."
+    },
+    {
+      "prompt": "Say: I agree with you (a friend) that the problem is transport.",
+      "answer": "Coincido contigo en que el problema es el transporte.",
+      "accept": [],
+      "why": "*Contigo* plus *en que* and the idea."
+    },
+    {
+      "prompt": "Say: Vale agrees with Tomás that the café is important.",
+      "answer": "Vale coincide con Tomás en que el café es importante.",
+      "accept": [],
+      "why": "The person comes after *con*, the idea after *en que*."
+    },
+    {
+      "prompt": "Say: I agree with you (formal) on the main point.",
+      "answer": "Coincido con usted en lo principal.",
+      "accept": [],
+      "why": "*Usted* needs the full *con usted*, since *contigo* is only for *tú*."
+    },
+    {
+      "prompt": "Say: Yesterday I ran into Mariana at the bank.",
+      "answer": "Ayer coincidí con Mariana en el banco.",
+      "accept": [],
+      "why": "A chance meeting uses *coincidir con* plus the place with *en*."
+    },
+    {
+      "prompt": "Change to *we*: *Coincido contigo en casi todo.*",
+      "answer": "Coincidimos en casi todo.",
+      "accept": [],
+      "why": "With *nosotros* the other person is already included, so *contigo* goes."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Coincido con ti en que el problema es el transporte.",
+      "right": "Coincido contigo en que el problema es el transporte.",
+      "why": "Almost. After *con*, *ti* turns into one word: *contigo*."
+    },
+    {
+      "wrong": "Coincido contigo que el problema es el transporte.",
+      "right": "Coincido contigo en que el problema es el transporte.",
+      "why": "Almost. English drops the preposition, but Spanish needs *en* before *que*."
+    },
+    {
+      "wrong": "Coincido de acuerdo contigo.",
+      "right": "Coincido contigo.",
+      "why": "Almost. *Coincidir* already means \"agree\", so *de acuerdo* is not added."
+    }
+  ],
+  "personal": "Think of a friend and something you both feel strongly about. Say it: *Coincido con… en que…*."
+}

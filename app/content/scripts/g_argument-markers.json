@@ -1,0 +1,181 @@
+{
+  "node": "g:argument-markers",
+  "hook": {
+    "line": "A good argument admits what is true before it pushes back. That is what makes people trust you, and Spanish has small words for each step.",
+    "es": "Es cierto que necesitamos dinero, pero no a cualquier precio.",
+    "en": "It's true that we need money, but not at any price."
+  },
+  "examples": [
+    {
+      "es": "Es cierto que necesitamos dinero, pero no a cualquier precio.",
+      "en": "It's true that we need money, but not at any price."
+    },
+    {
+      "es": "De hecho, las ventas suben.",
+      "en": "In fact, sales are going up."
+    },
+    {
+      "es": "No solo es barato, sino también práctico.",
+      "en": "It's not only cheap but also practical."
+    },
+    {
+      "es": "Ellos quieren vender; nosotros, en cambio, queremos quedarnos.",
+      "en": "They want to sell; we, on the other hand, want to stay."
+    },
+    {
+      "es": "Es verdad que el edificio es viejo, pero tiene historia.",
+      "en": "It's true that the building is old, but it has history."
+    },
+    {
+      "es": "No solo vienen turistas, sino también vecinos.",
+      "en": "Not only tourists come, but also neighbors."
+    }
+  ],
+  "rule": "Four small tools:\n\n*Es cierto que…, pero…*: admit a point, then push back. The fact after *que* is plain and in the indicative.\n*De hecho*: \"in fact\", backing up what you just said with something real.\n*No solo… sino también…*: not only this but also that. After a *no solo*, English \"but\" becomes *sino*.\n*En cambio*: \"on the other hand\", setting two people or things side by side.\n\nEnglish \"actually\" is not *actualmente* here; use *de hecho*.",
+  "smallPrint": "Teachers call these discourse markers, or connectors: they show how one idea relates to the next.",
+  "readAndPick": [
+    {
+      "es": "Es cierto que necesitamos dinero, pero no a cualquier precio.",
+      "options": [
+        "It's true we need money, but not at any price.",
+        "We need money, and at any price.",
+        "It's not true that we need money."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No solo es barato, sino también práctico.",
+      "options": [
+        "It's cheap, not practical.",
+        "It's not only cheap but also practical.",
+        "It isn't cheap but it is practical."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ellos quieren vender; nosotros, en cambio, queremos quedarnos.",
+      "options": [
+        "They want to sell, so we want to stay.",
+        "They and we both want to change.",
+        "They want to sell; we, on the other hand, want to stay."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "De hecho, las ventas suben.",
+      "options": [
+        "In fact, sales are going up.",
+        "Of course, sales are going down.",
+        "Sales went up, but now they are down."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No solo vienen turistas, sino también vecinos.",
+      "options": [
+        "Tourists come, but neighbors don't.",
+        "Not only tourists come, but also neighbors.",
+        "Neither tourists nor neighbors come."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es verdad que el edificio es viejo, pero tiene historia.",
+      "options": [
+        "The building is old because it has history.",
+        "The building is old, so it has no history.",
+        "It's true the building is old, but it has history."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás quiere abrir; Vale, en cambio, quiere esperar.",
+      "options": [
+        "Tomás wants to open; Vale, on the other hand, wants to wait.",
+        "Tomás wants to open because Vale wants to wait.",
+        "Tomás and Vale both want to wait."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "De hecho, mucha gente ya lo sabe.",
+      "options": [
+        "Of course, many people don't know it yet.",
+        "In fact, many people already know it.",
+        "Many people know it, but only in part."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ necesitamos dinero, pero no a cualquier precio.* (*Es cierto que* or *De hecho*) It's true that we need money, but not at any price.",
+      "answer": "Es cierto que necesitamos dinero, pero no a cualquier precio.",
+      "accept": [],
+      "why": "You admit the point first, so *es cierto que*, then *pero* turns it."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *No solo es barato, ___ también práctico.* (*sino* or *pero*) It's not only cheap but also practical.",
+      "answer": "No solo es barato, sino también práctico.",
+      "accept": [],
+      "why": "After *no solo*, the matching word is *sino*."
+    },
+    {
+      "prompt": "Say: In fact, sales are going up.",
+      "answer": "De hecho, las ventas suben.",
+      "accept": [
+        "De hecho las ventas suben."
+      ],
+      "why": "*De hecho* adds a real fact that backs up your point."
+    },
+    {
+      "prompt": "Say: They want to sell; we, on the other hand, want to stay.",
+      "answer": "Ellos quieren vender; nosotros, en cambio, queremos quedarnos.",
+      "accept": [],
+      "why": "*En cambio* sets the two sides against each other."
+    },
+    {
+      "prompt": "Say: It's true that the building is old, but it has history.",
+      "answer": "Es verdad que el edificio es viejo, pero tiene historia.",
+      "accept": [
+        "Es cierto que el edificio es viejo, pero tiene historia."
+      ],
+      "why": "You admit one point, then *pero* brings the other."
+    },
+    {
+      "prompt": "Add a concession: *El plan es caro, pero es justo.* Start with *Es cierto que*.",
+      "answer": "Es cierto que el plan es caro, pero es justo.",
+      "accept": [],
+      "why": "*Es cierto que* admits the first half before the *pero*."
+    },
+    {
+      "prompt": "Say not only one thing: *Vienen turistas y vecinos.* Use *no solo… sino también*.",
+      "answer": "No solo vienen turistas, sino también vecinos.",
+      "accept": [],
+      "why": "*No solo* opens the first part and *sino también* adds the second."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No solo es barato, pero también práctico.",
+      "right": "No solo es barato, sino también práctico.",
+      "why": "Almost. After *no solo*, the \"but also\" half uses *sino*, not *pero*."
+    },
+    {
+      "wrong": "Es cierto que el plan es caro y es justo.",
+      "right": "Es cierto que el plan es caro, pero es justo.",
+      "why": "Almost. A concession needs *pero* to turn the argument."
+    },
+    {
+      "wrong": "Es cierto que el plan sea caro, pero es justo.",
+      "right": "Es cierto que el plan es caro, pero es justo.",
+      "why": "Almost. You are admitting a fact, so use the indicative, not the subjunctive."
+    },
+    {
+      "wrong": "En el cambio, nosotros queremos quedarnos.",
+      "right": "Nosotros, en cambio, queremos quedarnos.",
+      "why": "Almost. *En cambio* has no article, and it sits right after the thing you contrast."
+    }
+  ],
+  "personal": "Think of a place you know well. Make one honest concession and push back: *Es cierto que… pero…*."
+}

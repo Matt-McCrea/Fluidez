@@ -1,0 +1,176 @@
+{
+  "node": "p:un-estudio-muestra-que",
+  "hook": {
+    "line": "Saying \"I think\" is easy to ignore. Naming a study or a source makes people at a public hearing listen, and it is how Bogotá's newspapers back up a claim.",
+    "es": "Un estudio muestra que la mayoría de los vecinos quiere el parque.",
+    "en": "A study shows that most of the neighbors want the park."
+  },
+  "examples": [
+    {
+      "es": "Un estudio muestra que la mayoría de los vecinos quiere el parque.",
+      "en": "A study shows that most of the neighbors want the park."
+    },
+    {
+      "es": "Según el periódico, el proyecto cuesta demasiado.",
+      "en": "According to the newspaper, the project costs too much."
+    },
+    {
+      "es": "Un informe indica que el edificio es muy viejo.",
+      "en": "A report indicates that the building is very old."
+    },
+    {
+      "es": "Los datos apuntan en esa dirección.",
+      "en": "The data point in that direction."
+    },
+    {
+      "es": "Según Mariana, la audiencia es el jueves.",
+      "en": "According to Mariana, the hearing is on Thursday."
+    },
+    {
+      "es": "Una encuesta revela que mucha gente no confía en el concejo.",
+      "en": "A survey reveals that many people don't trust the council."
+    }
+  ],
+  "rule": "To back up a claim, name your source first.\n\nSource + verb + *que* + the fact: *Un estudio muestra que…*, *Un informe indica que…*, *Una encuesta revela que…*.\nThe fact after *que* is a plain statement in the present, no subjunctive.\n*Según* + source + comma gives someone's view: *Según Mariana, …*. It already means \"says\", so no verb and no *que* follow it.\n*Los datos apuntan en esa dirección* closes an argument.",
+  "smallPrint": "Teachers call this citing a source, or attribution: you attach a claim to someone other than yourself.",
+  "readAndPick": [
+    {
+      "es": "Un estudio muestra que la mayoría de los vecinos quiere el parque.",
+      "options": [
+        "A study shows that most of the neighbors want the park.",
+        "Most of the neighbors want to study the park.",
+        "I think the neighbors want the park."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Según el periódico, el proyecto cuesta demasiado.",
+      "options": [
+        "The newspaper costs too much for the project.",
+        "According to the newspaper, the project costs too much.",
+        "I believe the project costs too much."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Según Mariana, la audiencia es el jueves.",
+      "options": [
+        "I think the hearing is on Thursday.",
+        "Mariana tells me the hearing was on Thursday.",
+        "According to Mariana, the hearing is on Thursday."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Un informe indica que el edificio es muy viejo.",
+      "options": [
+        "The building shows that the report is old.",
+        "A report indicates that the building is very old.",
+        "I report that the building is very old."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los datos apuntan en esa dirección.",
+      "options": [
+        "I point the data in that direction.",
+        "The dates are in that direction.",
+        "The data point in that direction."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Una encuesta revela que mucha gente no confía en el concejo.",
+      "options": [
+        "A survey reveals that many people don't trust the council.",
+        "Many people reveal a survey about the council.",
+        "A survey says the council doesn't trust people."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Según los vecinos, el ruido empieza a las diez.",
+      "options": [
+        "The neighbors start the noise at ten.",
+        "The neighbors think the noise is ten.",
+        "According to the neighbors, the noise starts at ten."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Un estudio de la universidad demuestra que el barrio es seguro.",
+      "options": [
+        "The university shows that a study is safe.",
+        "A university study shows that the neighborhood is safe.",
+        "I show the university that the neighborhood is safe."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ muestra que el barrio es seguro.* (*Un estudio* or *Según un estudio*) A study shows that the neighborhood is safe.",
+      "answer": "Un estudio muestra que el barrio es seguro.",
+      "accept": [],
+      "why": "*Muestra* is the verb, so the study is the subject; *según* would replace the verb."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ Mariana, la audiencia es el jueves.* (*Según* or *Un estudio*) According to Mariana, the hearing is on Thursday.",
+      "answer": "Según Mariana, la audiencia es el jueves.",
+      "accept": [
+        "Según Mariana la audiencia es el jueves."
+      ],
+      "why": "A person's name has no verb of its own here, so *según* attributes the view."
+    },
+    {
+      "prompt": "Say: A report indicates that the building is very old.",
+      "answer": "Un informe indica que el edificio es muy viejo.",
+      "accept": [],
+      "why": "Source, then verb, then *que* and the fact."
+    },
+    {
+      "prompt": "Say: A survey reveals that many people don't trust the council.",
+      "answer": "Una encuesta revela que mucha gente no confía en el concejo.",
+      "accept": [],
+      "why": "*Una encuesta revela que…* is the frame; the fact stays a plain statement."
+    },
+    {
+      "prompt": "Say: The data point in that direction.",
+      "answer": "Los datos apuntan en esa dirección.",
+      "accept": [],
+      "why": "This fixed line closes an argument, and *apuntan* agrees with *los datos*."
+    },
+    {
+      "prompt": "Change the source: *Un estudio muestra que el parque es caro.* Start with *Según el periódico*.",
+      "answer": "Según el periódico, el parque es caro.",
+      "accept": [
+        "Según el periódico el parque es caro."
+      ],
+      "why": "*Según* replaces the verb and *que*."
+    },
+    {
+      "prompt": "Change the source: *Un estudio muestra que la mayoría quiere el parque.* Use *una encuesta* and *revela*.",
+      "answer": "Una encuesta revela que la mayoría quiere el parque.",
+      "accept": [],
+      "why": "Swap the source and its verb; the fact stays the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Según el periódico dice que el proyecto es caro.",
+      "right": "Según el periódico, el proyecto es caro.",
+      "why": "Almost. *Según* already means \"says\", so drop the extra verb and *que*."
+    },
+    {
+      "wrong": "Un estudio muestra que la mayoría quiera el parque.",
+      "right": "Un estudio muestra que la mayoría quiere el parque.",
+      "why": "Almost. A fact you cite is stated plainly, so no subjunctive."
+    },
+    {
+      "wrong": "Un estudio muestra de que el barrio es seguro.",
+      "right": "Un estudio muestra que el barrio es seguro.",
+      "why": "Almost. No *de* before *que* here; the verb takes *que* directly."
+    }
+  ],
+  "personal": "Name a source you trust (a friend, a paper, a study) and report one true thing it says. Start with *Según…* or *Un estudio muestra que…*."
+}

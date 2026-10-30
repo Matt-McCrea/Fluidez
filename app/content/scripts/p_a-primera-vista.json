@@ -1,0 +1,180 @@
+{
+  "node": "p:a-primera-vista",
+  "hook": {
+    "line": "Some things look great until you read the fine print. *A primera vista* is how you say so politely, and it always warns that a *pero* is coming.",
+    "es": "A primera vista parece una buena idea, pero tiene problemas.",
+    "en": "At first sight it looks like a good idea, but it has problems."
+  },
+  "examples": [
+    {
+      "es": "A primera vista parece una buena idea, pero tiene problemas.",
+      "en": "At first sight it looks like a good idea, but it has problems."
+    },
+    {
+      "es": "A simple vista no se nota.",
+      "en": "You can't see it with the naked eye."
+    },
+    {
+      "es": "A primera vista el edificio parece nuevo, pero es muy viejo.",
+      "en": "At first sight the building looks new, but it's very old."
+    },
+    {
+      "es": "A primera vista el plan parece justo, pero no lo es.",
+      "en": "At first sight the plan seems fair, but it isn't."
+    },
+    {
+      "es": "A simple vista el café parece vacío, pero hay gente atrás.",
+      "en": "With the naked eye the café looks empty, but there are people in the back."
+    },
+    {
+      "es": "A primera vista Tomás parece tranquilo, pero está nervioso.",
+      "en": "At first sight Tomás looks calm, but he's nervous."
+    }
+  ],
+  "rule": "*A primera vista* means \"at first sight\": an impression you have not checked yet. It sets up a *pero* that corrects it: *A primera vista parece…, pero…*.\n\nUse *parece* (looks like), not *es*, because you are describing an impression.\n*A simple vista* means \"with the naked eye\": *A simple vista no se nota*.\nNo article and no *en*: never *en la primera vista*.",
+  "smallPrint": "Teachers call this a fixed adverbial phrase: it works as one block, and you cannot change its small words.",
+  "readAndPick": [
+    {
+      "es": "A primera vista parece una buena idea, pero tiene problemas.",
+      "options": [
+        "At first sight it looks like a good idea, but it has problems.",
+        "It is a good idea, and it has problems.",
+        "It looked like a bad idea, but it was fine."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A primera vista el edificio parece nuevo, pero es muy viejo.",
+      "options": [
+        "The building is new at first sight, but it seems very old.",
+        "At first sight the building looks new, but it's very old.",
+        "At first sight the building is very old, but it seems new."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A simple vista no se nota.",
+      "options": [
+        "It is noticeable at first sight.",
+        "Nobody sees it when they look closely.",
+        "You can't see it with the naked eye."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A primera vista el plan parece justo, pero no lo es.",
+      "options": [
+        "At first sight the plan seems fair, but it isn't.",
+        "The plan is fair, but it looks unfair at first.",
+        "At first sight the plan is unfair, but it seems fair."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A simple vista el café parece vacío, pero hay gente atrás.",
+      "options": [
+        "The café is empty, but people think there is someone.",
+        "With the naked eye the café looks empty, but there are people in the back.",
+        "At first sight the café is full, but it looks empty."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A primera vista Tomás parece tranquilo, pero está nervioso.",
+      "options": [
+        "Tomás is calm, but he seems nervous at first.",
+        "Tomás is nervous, but he is calm at first sight.",
+        "At first sight Tomás looks calm, but he's nervous."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A primera vista parece caro, pero es barato.",
+      "options": [
+        "At first sight it looks expensive, but it's cheap.",
+        "It is expensive, but it looks cheap.",
+        "At first sight it looks cheap, but it's expensive."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A primera vista no parece un problema, pero lo es.",
+      "options": [
+        "It is not a problem, but it seems like one.",
+        "At first sight it doesn't look like a problem, but it is one.",
+        "At first sight it looks like a problem, but it isn't one."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *A primera vista ___ una buena idea, pero tiene problemas.* (*parece* or *es*) At first sight it looks like a good idea, but it has problems.",
+      "answer": "A primera vista parece una buena idea, pero tiene problemas.",
+      "accept": [],
+      "why": "It is an impression, so *parece* (looks), not *es*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *A ___ vista no se nota.* (*simple* or *primera*) You can't see it with the naked eye.",
+      "answer": "A simple vista no se nota.",
+      "accept": [],
+      "why": "The naked eye is *a simple vista*."
+    },
+    {
+      "prompt": "Say: At first sight the building looks new, but it's very old.",
+      "answer": "A primera vista el edificio parece nuevo, pero es muy viejo.",
+      "accept": [
+        "A primera vista, el edificio parece nuevo, pero es muy viejo."
+      ],
+      "why": "First the impression with *parece*, then *pero* gives the truth."
+    },
+    {
+      "prompt": "Say: At first sight the plan seems fair, but it isn't.",
+      "answer": "A primera vista el plan parece justo, pero no lo es.",
+      "accept": [
+        "A primera vista, el plan parece justo, pero no lo es."
+      ],
+      "why": "*No lo es* answers the impression without repeating the word."
+    },
+    {
+      "prompt": "Say: At first sight Tomás looks calm, but he's nervous.",
+      "answer": "A primera vista Tomás parece tranquilo, pero está nervioso.",
+      "accept": [
+        "A primera vista, Tomás parece tranquilo, pero está nervioso."
+      ],
+      "why": "The true state of mind uses *está*."
+    },
+    {
+      "prompt": "Say about a café: At first sight it looks empty, but there are people in the back.",
+      "answer": "A primera vista parece vacío, pero hay gente atrás.",
+      "accept": [
+        "A primera vista el café parece vacío, pero hay gente atrás."
+      ],
+      "why": "The *pero* part gives what you find when you look again."
+    },
+    {
+      "prompt": "Change it to the naked eye: *A primera vista no se nota.*",
+      "answer": "A simple vista no se nota.",
+      "accept": [],
+      "why": "Only the opening changes: *simple* means the naked eye."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "En primera vista parece una buena idea.",
+      "right": "A primera vista parece una buena idea.",
+      "why": "Almost. English says \"at first sight\", and Spanish keeps that *a*, not *en*."
+    },
+    {
+      "wrong": "A la primera vista parece una buena idea.",
+      "right": "A primera vista parece una buena idea.",
+      "why": "Almost. This set phrase has no article."
+    },
+    {
+      "wrong": "A primera vista parece una buena idea, y tiene problemas.",
+      "right": "A primera vista parece una buena idea, pero tiene problemas.",
+      "why": "Almost. The impression needs a *pero* to turn it around."
+    }
+  ],
+  "personal": "Think of a place or person that first seemed one way and turned out another. Say it: *A primera vista parecía… pero…*."
+}

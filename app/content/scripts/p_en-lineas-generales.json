@@ -1,0 +1,186 @@
+{
+  "node": "p:en-lineas-generales",
+  "hook": {
+    "line": "Most opinions are not all or nothing. *En líneas generales* lets you say you mostly agree and still save your doubts for the *pero*.",
+    "es": "En líneas generales estoy de acuerdo con la propuesta, pero tengo dudas sobre el plazo.",
+    "en": "Broadly speaking I agree with the proposal, but I have doubts about the deadline."
+  },
+  "examples": [
+    {
+      "es": "En líneas generales estoy de acuerdo con la propuesta, pero tengo dudas sobre el plazo.",
+      "en": "Broadly speaking I agree with the proposal, but I have doubts about the deadline."
+    },
+    {
+      "es": "En líneas generales, el viaje salió bien.",
+      "en": "On the whole, the trip went well."
+    },
+    {
+      "es": "En líneas generales, me gusta el plan, pero es caro.",
+      "en": "On the whole, I like the plan, but it's expensive."
+    },
+    {
+      "es": "En líneas generales, Vale está de acuerdo, pero quiere cambiar el precio.",
+      "en": "On the whole, Vale agrees, but she wants to change the price."
+    },
+    {
+      "es": "En líneas generales, la audiencia fue bien, pero fue muy larga.",
+      "en": "On the whole, the hearing went well, but it was very long."
+    },
+    {
+      "es": "En líneas generales, el proyecto es bueno.",
+      "en": "On the whole, the project is good."
+    }
+  ],
+  "rule": "*En líneas generales* means \"broadly speaking\" or \"on the whole\". It marks a general view without the details.\n\nIt almost always sets up a *pero*: you agree overall, then name your doubt. Leave the *pero* out and it sounds unfinished.\nThe phrase is fixed: plural *líneas*, no article. Put it first, with or without a comma.",
+  "smallPrint": "Teachers call this partial agreement: you accept the overall idea and keep the right to object to the details.",
+  "readAndPick": [
+    {
+      "es": "En líneas generales estoy de acuerdo con la propuesta, pero tengo dudas sobre el plazo.",
+      "options": [
+        "Broadly speaking I agree with the proposal, but I have doubts about the deadline.",
+        "Broadly speaking I disagree with the proposal, but I have no doubts.",
+        "I agree with the proposal, and I have no doubts about the deadline."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En líneas generales, el viaje salió bien.",
+      "options": [
+        "The trip went badly overall.",
+        "On the whole, the trip went well.",
+        "On the whole, the trip will go well."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En líneas generales, me gusta el plan, pero es caro.",
+      "options": [
+        "I don't like the plan, but it's cheap.",
+        "I like the plan, and it's expensive.",
+        "On the whole, I like the plan, but it's expensive."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "En líneas generales, Vale está de acuerdo, pero quiere cambiar el precio.",
+      "options": [
+        "On the whole, Vale agrees, but she wants to change the price.",
+        "Vale disagrees overall, but she wants the same price.",
+        "Vale agrees about the price, and she wants to change it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En líneas generales, no estoy de acuerdo, pero entiendo la idea.",
+      "options": [
+        "On the whole, I agree, but I don't understand the idea.",
+        "On the whole, I disagree, but I understand the idea.",
+        "I disagree with the lines, but I understand them."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En líneas generales, la audiencia fue bien, pero fue muy larga.",
+      "options": [
+        "The hearing was very long, and it went well.",
+        "The hearing went badly, but it was long.",
+        "On the whole, the hearing went well, but it was very long."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "En líneas generales, el proyecto es bueno.",
+      "options": [
+        "On the whole, the project is good.",
+        "On the whole, the project is bad.",
+        "The project is good for all lines."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En líneas generales, el plan me parece justo, pero tengo dudas.",
+      "options": [
+        "The plan seems unfair to me, and I have no doubts.",
+        "On the whole, the plan seems fair to me, but I have doubts.",
+        "The plan seems fair to me because I have doubts."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___, el viaje salió bien.* (*En líneas generales* or *De hecho*) On the whole, the trip went well.",
+      "answer": "En líneas generales, el viaje salió bien.",
+      "accept": [
+        "En líneas generales el viaje salió bien."
+      ],
+      "why": "You are giving the overall picture, so *en líneas generales*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *En líneas generales, me gusta el plan, ___ es caro.* (*pero* or *sino*) On the whole, I like the plan, but it's expensive.",
+      "answer": "En líneas generales, me gusta el plan, pero es caro.",
+      "accept": [
+        "En líneas generales me gusta el plan, pero es caro."
+      ],
+      "why": "The doubt arrives after *pero*; *sino* only follows a negative."
+    },
+    {
+      "prompt": "Say: On the whole, the project is good.",
+      "answer": "En líneas generales, el proyecto es bueno.",
+      "accept": [
+        "En líneas generales el proyecto es bueno."
+      ],
+      "why": "The phrase comes first, then your general view."
+    },
+    {
+      "prompt": "Say: On the whole, Vale agrees, but she wants to change the price.",
+      "answer": "En líneas generales, Vale está de acuerdo, pero quiere cambiar el precio.",
+      "accept": [
+        "En líneas generales Vale está de acuerdo, pero quiere cambiar el precio."
+      ],
+      "why": "Agree overall, then name the doubt after *pero*."
+    },
+    {
+      "prompt": "Say: On the whole, the hearing went well, but it was very long.",
+      "answer": "En líneas generales, la audiencia fue bien, pero fue muy larga.",
+      "accept": [
+        "En líneas generales la audiencia fue bien, pero fue muy larga."
+      ],
+      "why": "Overall view first, then the complaint."
+    },
+    {
+      "prompt": "Say: Broadly speaking I agree with the proposal, but I have doubts about the deadline.",
+      "answer": "En líneas generales estoy de acuerdo con la propuesta, pero tengo dudas sobre el plazo.",
+      "accept": [
+        "En líneas generales, estoy de acuerdo con la propuesta, pero tengo dudas sobre el plazo."
+      ],
+      "why": "This is the model line for partial agreement."
+    },
+    {
+      "prompt": "Add a doubt: *En líneas generales, el plan me parece justo.* Finish with *pero es caro*.",
+      "answer": "En líneas generales, el plan me parece justo, pero es caro.",
+      "accept": [
+        "En líneas generales el plan me parece justo, pero es caro."
+      ],
+      "why": "The *pero* part carries the doubt."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "En línea general, estoy de acuerdo, pero tengo dudas.",
+      "right": "En líneas generales, estoy de acuerdo, pero tengo dudas.",
+      "why": "Almost. The phrase is always plural: *líneas generales*."
+    },
+    {
+      "wrong": "En las líneas generales, estoy de acuerdo, pero tengo dudas.",
+      "right": "En líneas generales, estoy de acuerdo, pero tengo dudas.",
+      "why": "Almost. This set phrase has no article."
+    },
+    {
+      "wrong": "En líneas generales estoy de acuerdo con la propuesta.",
+      "right": "En líneas generales estoy de acuerdo con la propuesta, pero tengo dudas.",
+      "why": "Almost. The phrase sounds unfinished without a *pero* that names your doubt."
+    }
+  ],
+  "personal": "Think of a plan or a proposal in your life right now. Say whether you agree overall, then add your doubt: *En líneas generales…, pero…*."
+}

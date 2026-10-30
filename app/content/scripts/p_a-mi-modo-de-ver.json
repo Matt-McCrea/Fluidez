@@ -1,0 +1,178 @@
+{
+  "node": "p:a-mi-modo-de-ver",
+  "hook": {
+    "line": "At a hearing, your opinion needs a proper opening. Spanish has a polished few, and they sound much better than starting every sentence with *yo pienso*.",
+    "es": "A mi modo de ver, la solución es evidente.",
+    "en": "The way I see it, the solution is obvious."
+  },
+  "examples": [
+    {
+      "es": "A mi modo de ver, la solución es evidente.",
+      "en": "The way I see it, the solution is obvious."
+    },
+    {
+      "es": "Desde mi punto de vista, el proyecto es demasiado caro.",
+      "en": "From my point of view, the project is too expensive."
+    },
+    {
+      "es": "Considero que la propuesta es justa.",
+      "en": "I consider the proposal fair."
+    },
+    {
+      "es": "Consideramos que el barrio necesita ayuda.",
+      "en": "We believe that the neighborhood needs help."
+    },
+    {
+      "es": "A mi modo de ver, vale la pena salvar el edificio.",
+      "en": "The way I see it, it's worth saving the building."
+    },
+    {
+      "es": "A nuestro modo de ver, el plan es injusto.",
+      "en": "The way we see it, the plan is unfair."
+    }
+  ],
+  "rule": "Open with your view, then a comma, then your statement.\n\n*A mi modo de ver, …* and *Desde mi punto de vista, …* are neutral.\n*Considero que…* and *Consideramos que…* sound more formal.\nChange *mi* to *nuestro* or *su* to give someone else's view: *A su modo de ver…*.\nAfter *considero que* the statement is plain: *Considero que es justa*. When you doubt, *no considero que* takes the subjunctive: *No considero que sea justa*.",
+  "smallPrint": "Teachers call these opinion markers: set phrases that signal \"this is my view, not a fact\".",
+  "readAndPick": [
+    {
+      "es": "Considero que la propuesta es justa.",
+      "options": [
+        "I consider the proposal fair.",
+        "We consider the proposal fair.",
+        "She considers the proposal fair."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Consideramos que el proyecto es caro.",
+      "options": [
+        "I believe the project is expensive.",
+        "We believe the project is expensive.",
+        "They believe the project is expensive."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Desde tu punto de vista, el proyecto es demasiado caro.",
+      "options": [
+        "From my point of view, the project is too expensive.",
+        "From his point of view, the project is too expensive.",
+        "From your point of view, the project is too expensive."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A mi modo de ver, la solución es evidente.",
+      "options": [
+        "The way I see it, the solution is obvious.",
+        "The way we see it, the solution is obvious.",
+        "The way you see it, the solution is obvious."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A nuestro modo de ver, el plan es injusto.",
+      "options": [
+        "The way I see it, the plan is unfair.",
+        "The way we see it, the plan is unfair.",
+        "The way they see it, the plan is unfair."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Considera que el plan es justo.",
+      "options": [
+        "I consider the plan fair.",
+        "We consider the plan fair.",
+        "She considers the plan fair."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A su modo de ver, el edificio vale la pena.",
+      "options": [
+        "The way I see it, the building is worth it.",
+        "The way she sees it, the building is worth it.",
+        "The way we see it, the building is worth it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Considero que no es justo.",
+      "options": [
+        "I consider it unfair.",
+        "They consider it unfair.",
+        "We consider it unfair."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___, la solución es evidente.* (*A mi modo de ver* or *Según un estudio*) The way I see it, the solution is obvious.",
+      "answer": "A mi modo de ver, la solución es evidente.",
+      "accept": [
+        "A mi modo de ver la solución es evidente."
+      ],
+      "why": "It is your own view, so *a mi modo de ver*; *según* is for someone else's."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ que la propuesta es justa.* (*Considero* or *Consideramos*) I consider the proposal fair.",
+      "answer": "Considero que la propuesta es justa.",
+      "accept": [],
+      "why": "The *-o* ending means just *I*."
+    },
+    {
+      "prompt": "Say: From my point of view, the project is too expensive.",
+      "answer": "Desde mi punto de vista, el proyecto es demasiado caro.",
+      "accept": [
+        "Desde mi punto de vista el proyecto es demasiado caro."
+      ],
+      "why": "The set phrase is *desde mi punto de vista*."
+    },
+    {
+      "prompt": "Say: We believe that the neighborhood needs help.",
+      "answer": "Consideramos que el barrio necesita ayuda.",
+      "accept": [],
+      "why": "*Consideramos* is the *we* form, followed by *que*."
+    },
+    {
+      "prompt": "Say it formally: *A mi modo de ver, el plan es justo.* Use *considero que*.",
+      "answer": "Considero que el plan es justo.",
+      "accept": [],
+      "why": "*Considero que* replaces the opening phrase and keeps the statement."
+    },
+    {
+      "prompt": "Change to *we*: *Considero que el plan es justo.*",
+      "answer": "Consideramos que el plan es justo.",
+      "accept": [],
+      "why": "The *we* ending is *-amos*."
+    },
+    {
+      "prompt": "Say: The way I see it, it's worth saving the building.",
+      "answer": "A mi modo de ver, vale la pena salvar el edificio.",
+      "accept": [
+        "A mi modo de ver vale la pena salvar el edificio."
+      ],
+      "why": "Open with the phrase, then the statement."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "En mi punto de vista, el proyecto es caro.",
+      "right": "Desde mi punto de vista, el proyecto es caro.",
+      "why": "Almost. English says \"in my point of view\", but Spanish uses *desde*."
+    },
+    {
+      "wrong": "Considero el plan es justo.",
+      "right": "Considero que el plan es justo.",
+      "why": "Almost. *Considero* needs *que* before the statement."
+    },
+    {
+      "wrong": "Según mi modo de ver, el plan es justo.",
+      "right": "A mi modo de ver, el plan es justo.",
+      "why": "Almost. The set phrase starts with *a*; *según* is for quoting someone else."
+    }
+  ],
+  "personal": "Pick something in your town you have a view on, such as a park or a new building. Say your view with *A mi modo de ver…* and then once more with *Considero que…*."
+}
