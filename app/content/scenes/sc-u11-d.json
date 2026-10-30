@@ -1,0 +1,201 @@
+{
+  "id": "sc-u11-d",
+  "unit": "u11",
+  "title": "On the record",
+  "brief": "You're Tomás. Mariana is writing an article about the old houses on the block and Grupo Altamira, and she wants to interview you about the café, then and now. Answer her questions about the old Sundays, the rent and your life in Toronto. You knew each other as kids, so use tú.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Bueno, Tomás, empezamos. ¿Quién abría el café los domingos?",
+      "npcEn": "Right, Tomás, let's start. Who used to open the café on Sundays?",
+      "intent": "Say Rosa used to open it at seven.",
+      "accept": [
+        "Rosa lo abría a las siete.",
+        "Mi abuela lo abría a las siete.",
+        "Lo abría Rosa, a las siete."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo abría\\b",
+          "flags": "i",
+          "label": "she used to open it: lo abría (lo for el café, before the verb)"
+        }
+      ],
+      "focus": "g:direct-objects",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Y tú, ¿qué hacías los domingos?",
+      "npcEn": "And you, what did you use to do on Sundays?",
+      "intent": "Say you used to eat almojábanas and sing with Rosa.",
+      "accept": [
+        "Comía almojábanas y cantaba con Rosa.",
+        "Cantaba con mi abuela y comía almojábanas.",
+        "Yo comía almojábanas y cantaba con Rosa."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "comer",
+          "tense": "imperfecto",
+          "person": "yo",
+          "label": "I used to eat: comía"
+        }
+      ],
+      "focus": "g:imperfect-habitual",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hoy la cuadra es casi toda de Altamira. ¿Cómo era antes?",
+      "npcEn": "Today the block belongs almost entirely to Altamira. What was it like before?",
+      "intent": "Say there used to be more families than now.",
+      "accept": [
+        "Antes había más familias que ahora.",
+        "Había más familias que ahora.",
+        "Antes había muchas más familias que ahora."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bmás familias que\\b",
+          "flags": "i",
+          "label": "more families than: más familias que"
+        }
+      ],
+      "focus": "g:comparatives",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ahora, el arriendo. Altamira busca problemas. ¿Pagaste el arriendo de este mes?",
+      "npcEn": "Now, the rent. Altamira is looking for problems. Did you pay this month's rent?",
+      "intent": "Say yes, you paid it on Monday.",
+      "accept": [
+        "Sí, lo pagué el lunes.",
+        "Claro, pagué el arriendo el lunes.",
+        "Sí, el lunes lo pagué."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "pagar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I paid: pagué (with gu)"
+        }
+      ],
+      "focus": "g:preterite-spelling-stem",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Y tu vida en Toronto, ¿cómo era?",
+      "npcEn": "And your life in Toronto, what was it like?",
+      "intent": "Say in Toronto you used to work a lot; now, on the other hand, you're happier.",
+      "accept": [
+        "En Toronto trabajaba mucho. En cambio, ahora estoy más contento.",
+        "Trabajaba mucho en Toronto. En cambio, ahora estoy más contento.",
+        "En Toronto trabajaba mucho. Ahora, en cambio, estoy más contento."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "en cambio",
+          "label": "on the other hand: en cambio"
+        },
+        {
+          "type": "containsWord",
+          "word": "más contento",
+          "label": "happier: más contento"
+        }
+      ],
+      "focus": "c:en-cambio",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Bueno, ya terminamos. ¿Y la última almojábana? ¿Es para ti o para mí?",
+      "npcEn": "Okay, we're done. And the last almojábana? Is it for you or for me?",
+      "intent": "Say it's for her: you two used to fight over it, but not today.",
+      "accept": [
+        "Es para ti. Antes peleábamos, pero hoy no.",
+        "Es para ti, Mariana. Antes peleábamos, pero hoy no.",
+        "¡Es para ti! Antes peleábamos, pero hoy no."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpeleábamos\\b",
+          "flags": "i",
+          "label": "we used to fight: peleábamos"
+        }
+      ],
+      "focus": "g:imperfect-habitual",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:como-era",
+    "c:en-cambio",
+    "c:entonces-bueno",
+    "c:era",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:ser-identity",
+    "l:abrir",
+    "l:abuela",
+    "l:ahora",
+    "l:almojábana",
+    "l:antes",
+    "l:arriendo",
+    "l:bueno",
+    "l:buscar",
+    "l:café",
+    "l:cambio",
+    "l:cantar",
+    "l:claro",
+    "l:comer",
+    "l:contento",
+    "l:cuadra",
+    "l:cómo",
+    "l:domingo",
+    "l:empezar",
+    "l:estar",
+    "l:familia",
+    "l:hacia",
+    "l:hoy",
+    "l:lunes",
+    "l:mes",
+    "l:pagar",
+    "l:pelear",
+    "l:problema",
+    "l:quién",
+    "l:qué",
+    "l:ser",
+    "l:terminar",
+    "l:trabajar",
+    "l:vida",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:telling-time"
+  ]
+}
