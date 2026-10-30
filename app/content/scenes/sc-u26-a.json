@@ -1,0 +1,237 @@
+{
+  "id": "sc-u26-a",
+  "unit": "u26",
+  "title": "El senador de 1983",
+  "spare": false,
+  "brief": "You're Tomás. It's the morning after Hernando's long dinner, and Jhon Fredy, who wasn't there, wants to hear everything while you open the café. Tell him Hernando's best story in a clear order. He's young and works for you, so use tú; he calls you jefe and uses usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Buenos días, jefe! ¿Cómo estuvo la comida de anoche en la casa de Hernando?",
+      "npcEn": "Good morning, boss! How was last night's dinner at Hernando's house?",
+      "intent": "Say you all had a fantastic time, and that Hernando talked for hours and hours.",
+      "accept": [
+        "La pasamos buenísimo. Hernando habló horas y horas.",
+        "¡La pasamos buenísimo! Hernando nos habló horas y horas.",
+        "La pasamos buenísimo, y Hernando habló horas y horas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "la pas(é|amos)",
+          "flags": "i",
+          "label": "we had a fantastic time: la pasamos buenísimo"
+        },
+        {
+          "type": "regex",
+          "pattern": "horas y horas",
+          "flags": "i",
+          "label": "for hours and hours: horas y horas"
+        }
+      ],
+      "focus": "p:pasarla-bien",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Ah, sí? ¿Y cuál fue la mejor historia?",
+      "npcEn": "Oh yeah? And what was the best story?",
+      "intent": "Say it turns out that in 1983 Rosa threw water over a senator.",
+      "accept": [
+        "Resulta que en 1983 Rosa le tiró agua a un senador.",
+        "Resulta que Rosa le tiró agua a un senador en 1983.",
+        "La mejor fue esta: resulta que en 1983 Rosa le tiró agua a un senador."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "resulta que",
+          "flags": "i",
+          "label": "open the story: resulta que..."
+        }
+      ],
+      "focus": "c:resulta-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡No me digas! ¿A un senador? ¿Y por qué?",
+      "npcEn": "No way! A senator? And why?",
+      "intent": "Explain in order: first the senator ate and drank, and then he didn't want to pay.",
+      "accept": [
+        "Primero el senador comió y tomó, y luego no quiso pagar.",
+        "El senador primero comió mucho, y después no quiso pagar la cuenta.",
+        "Primero comió y tomó, y luego no quiso pagar la cuenta."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "primero",
+          "label": "start the order: primero..."
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "luego",
+            "después"
+          ],
+          "label": "then: luego, después"
+        }
+      ],
+      "focus": "g:time-sequence",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Y Rosa qué hizo? ¿Llamó a la policía?",
+      "npcEn": "And what did Rosa do? Did she call the police?",
+      "intent": "Say no: she came running out of the kitchen and threw the water at him.",
+      "accept": [
+        "No. Salió corriendo de la cocina y le tiró el agua.",
+        "No, salió de la cocina corriendo, y le tiró toda el agua encima.",
+        "No. Rosa salió corriendo de la cocina y le tiró el agua."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "[a-záéíóúñ]+(ando|iendo|yendo)\\b",
+          "flags": "i",
+          "label": "say how she came out: salió corriendo"
+        }
+      ],
+      "focus": "g:gerund-ways",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Imagínese! Pero el senador nunca volvió al café, ¿cierto?",
+      "npcEn": "Just imagine! But the senator never came back to the café, right?",
+      "intent": "Say yes, he did: two days later he came back and paid for everything.",
+      "accept": [
+        "Sí volvió. Dos días después volvió y pagó todo.",
+        "Sí. Dos días después, volvió al café y pagó todo.",
+        "Sí, volvió dos días después, y pagó todo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "dos días después",
+          "flags": "i",
+          "label": "two days later, in a story: dos días después"
+        }
+      ],
+      "focus": "p:dentro-de-vs-despues",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Qué mujer, esa Rosa. Oiga, jefe, ¿y ya llamó al señor del horno?",
+      "npcEn": "What a woman, that Rosa. Listen, boss, and have you called the oven man yet?",
+      "intent": "Say not yet: you've just opened the café.",
+      "accept": [
+        "Todavía no. Acabo de abrir el café.",
+        "No, todavía no. Acabo de abrir el café.",
+        "Todavía no, Jhon Fredy. Acabo de abrir el café."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "todavía",
+          "label": "not yet: todavía no"
+        },
+        {
+          "type": "regex",
+          "pattern": "acabo de",
+          "flags": "i",
+          "label": "I've just: acabo de + infinitive"
+        }
+      ],
+      "focus": "g:acabar-de-ya-todavia",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:estuvo",
+    "c:hola-buenos-dias",
+    "c:imaginate",
+    "c:la-cuenta",
+    "c:no-cierto",
+    "c:no-me-digas",
+    "c:oiga-oye",
+    "c:resulta-que",
+    "c:todavia-no",
+    "g:acabar-de-ya-todavia",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:superlatives",
+    "g:verb-infinitive",
+    "l:abrir",
+    "l:acabar",
+    "l:agua",
+    "l:anoche",
+    "l:bueno",
+    "l:café",
+    "l:casa",
+    "l:cocina",
+    "l:comer",
+    "l:comida",
+    "l:correr",
+    "l:cuenta",
+    "l:cuál",
+    "l:cómo",
+    "l:decir",
+    "l:después",
+    "l:día",
+    "l:encima",
+    "l:estar",
+    "l:hablar",
+    "l:hacer",
+    "l:historia",
+    "l:hora",
+    "l:horno",
+    "l:imaginarse",
+    "l:jefe",
+    "l:llamar",
+    "l:mejor",
+    "l:mujer",
+    "l:oír",
+    "l:pagar",
+    "l:pasar",
+    "l:policía",
+    "l:querer",
+    "l:qué",
+    "l:resultar",
+    "l:salir",
+    "l:senador",
+    "l:ser",
+    "l:señor",
+    "l:tirar",
+    "l:tomar",
+    "l:volver",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:dentro-de-vs-despues",
+    "p:el-agua-fria",
+    "p:frequency-scale",
+    "p:horas-y-horas",
+    "p:me-te-nos-objects",
+    "p:pasarla-bien",
+    "p:personal-a",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:time-sequence-basic"
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "id": "sc-u26-c",
+  "unit": "u26",
+  "title": "Sopa de las once",
+  "spare": true,
+  "brief": "You're Tomás. You come home late from Hernando's dinner, and Doña Gloria has waited up with a story of her own about Rosa. Tell her about your night and react to her story. She's your landlady and older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mijo, ¿dónde estaba? Ya son las once.",
+      "npcEn": "Son, where were you? It's already eleven.",
+      "intent": "Say you've just got back from Hernando's dinner, and that you had a fantastic time.",
+      "accept": [
+        "Acabo de llegar de la comida de Hernando. La pasé buenísimo.",
+        "Acabo de volver de la casa de Hernando. La pasé buenísimo.",
+        "Vengo de la comida de Hernando. Acabo de llegar, y la pasé buenísimo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "acabo de",
+          "flags": "i",
+          "label": "I've just: acabo de + infinitive"
+        }
+      ],
+      "focus": "g:acabar-de-ya-todavia",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Hernando cocinó? ¡Imagínese! Ese señor no cocina nunca. ¿Y de qué hablaron?",
+      "npcEn": "Hernando cooked? Just imagine! That man never cooks. And what did you talk about?",
+      "intent": "Say you all talked about Rosa for hours and hours.",
+      "accept": [
+        "Hablamos de Rosa horas y horas.",
+        "Hablamos horas y horas de Rosa.",
+        "De Rosa. Hablamos de ella horas y horas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "horas y horas",
+          "flags": "i",
+          "label": "for hours and hours: horas y horas"
+        }
+      ],
+      "focus": "p:horas-y-horas",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Ay, Rosa. ¿Le cuento una cosa de ella? Un día, en 1984, entró un hombre al café con un cuchillo y le pidió toda la plata.",
+      "npcEn": "Oh, Rosa. Shall I tell you something about her? One day, in 1984, a man came into the café with a knife and asked her for all the money.",
+      "intent": "React with surprise, and ask what happened next.",
+      "accept": [
+        "¡No me digas! ¿Y qué pasó después?",
+        "¡No puede ser! ¿Y después qué pasó?",
+        "¡No me digas! ¿Y qué pasó?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "no me digas|no puede ser|mentiras",
+          "flags": "i",
+          "label": "react: ¡no me digas!"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "c:no-me-digas",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Rosa no le dio nada. Empezó a gritar, y el hombre salió corriendo. Total, que no necesitó a la policía. ¿Y usted, mijo? ¿Cómo aprendió a cocinar? ¿Con Vale?",
+      "npcEn": "Rosa gave him nothing. She started shouting, and the man ran off. So anyway, she didn't need the police. And you, son? How did you learn to cook? With Vale?",
+      "intent": "Say yes: you learned by watching Vale in the kitchen.",
+      "accept": [
+        "Sí. Aprendí viendo a Vale en la cocina.",
+        "Sí, aprendí mirando a Vale en la cocina.",
+        "Con Vale, sí. Aprendí viendo a Vale en la cocina."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "[a-záéíóúñ]+(ando|iendo|yendo)\\b",
+          "flags": "i",
+          "label": "by doing: aprendí viendo..."
+        }
+      ],
+      "focus": "g:gerund-ways",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Ay, mijo. Bueno, ya es tarde. ¿Ya comió algo? Le guardé sopa.",
+      "npcEn": "Oh, son. Well, it's late now. Have you eaten anything yet? I saved you some soup.",
+      "intent": "Say you've already eaten a lot, thank her, and say see you tomorrow.",
+      "accept": [
+        "Ya comí mucho, gracias. Hasta mañana.",
+        "Gracias, pero ya comí mucho. Hasta mañana.",
+        "Sí, ya comí mucho. Muchas gracias, y hasta mañana."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ya",
+          "label": "already: ya comí"
+        }
+      ],
+      "focus": "g:acabar-de-ya-todavia",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:comi",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:imaginate",
+    "c:no-me-digas",
+    "c:puede-ser",
+    "c:total-que",
+    "c:y-que-paso",
+    "g:acabar-de-ya-todavia",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:superlatives",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acabar",
+    "l:aprender",
+    "l:bueno",
+    "l:café",
+    "l:casa",
+    "l:cocina",
+    "l:cocinar",
+    "l:comer",
+    "l:comida",
+    "l:contar",
+    "l:correr",
+    "l:cosa",
+    "l:cuchillo",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:después",
+    "l:día",
+    "l:dónde",
+    "l:empezar",
+    "l:entrar",
+    "l:estar",
+    "l:gritar",
+    "l:guardar",
+    "l:hablar",
+    "l:hombre",
+    "l:hora",
+    "l:imaginarse",
+    "l:llegar",
+    "l:mañana",
+    "l:mijo",
+    "l:mirar",
+    "l:necesitar",
+    "l:pasar",
+    "l:pedir",
+    "l:plata",
+    "l:poder",
+    "l:policía",
+    "l:qué",
+    "l:salir",
+    "l:ser",
+    "l:señor",
+    "l:sopa",
+    "l:tarde",
+    "l:total",
+    "l:venir",
+    "l:ver",
+    "l:volver",
+    "p:dates-years",
+    "p:de-owner",
+    "p:empezar-terminar",
+    "p:es-de-noche-tarde",
+    "p:frequency-scale",
+    "p:horas-y-horas",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:pasarla-bien",
+    "p:personal-a",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ]
+}

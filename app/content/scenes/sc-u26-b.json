@@ -1,0 +1,242 @@
+{
+  "id": "sc-u26-b",
+  "unit": "u26",
+  "title": "Cuadras y cuadras",
+  "spare": true,
+  "brief": "You're Tomás. You've just walked into the café soaked and late, and Vale is already there. Tell her what happened to you this morning, step by step, and survive the ending. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, ¡son las ocho y media! ¿Dónde estabas? Tienes el pelo lleno de agua.",
+      "npcEn": "Tomás, it's half past eight! Where were you? Your hair is full of water.",
+      "intent": "Ask her if she knows what happened to you this morning.",
+      "accept": [
+        "¿Sabes qué me pasó esta mañana?",
+        "Ay, Vale. ¿Sabes qué me pasó esta mañana?",
+        "¿Sabes qué me pasó hoy por la mañana?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "regex",
+          "pattern": "qué me pasó",
+          "flags": "i",
+          "label": "guess what happened to me: ¿sabes qué me pasó?"
+        }
+      ],
+      "focus": "c:sabes-que-me-paso",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "No. ¿Qué te pasó?",
+      "npcEn": "No. What happened to you?",
+      "intent": "Say that first you missed the bus, and then it rained a lot.",
+      "accept": [
+        "Primero perdí el bus, y luego llovió muchísimo.",
+        "Primero perdí el bus, y después llovió mucho.",
+        "Perdí el bus primero, y luego llovió muchísimo."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "primero",
+          "label": "start the order: primero..."
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "luego",
+            "después"
+          ],
+          "label": "then: luego, después"
+        }
+      ],
+      "focus": "g:time-sequence",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Qué de malas! ¿Y qué hiciste?",
+      "npcEn": "How unlucky! And what did you do?",
+      "intent": "Say you walked for blocks and blocks in the rain.",
+      "accept": [
+        "Caminé cuadras y cuadras bajo la lluvia.",
+        "Vine caminando cuadras y cuadras bajo la lluvia.",
+        "Caminé cuadras y cuadras bajo la lluvia, y llegué así."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cuadras y cuadras",
+          "flags": "i",
+          "label": "pile it up: cuadras y cuadras"
+        }
+      ],
+      "focus": "p:horas-y-horas",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Y por qué no tomaste un taxi?",
+      "npcEn": "And why didn't you take a taxi?",
+      "intent": "Say it turns out you left your money at home.",
+      "accept": [
+        "Resulta que dejé la plata en la casa.",
+        "Porque resulta que dejé la plata en la casa.",
+        "Resulta que dejé toda la plata en la casa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "resulta que",
+          "flags": "i",
+          "label": "the twist: resulta que..."
+        }
+      ],
+      "focus": "c:resulta-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Tomás, hoy es domingo. El café no abre los domingos.",
+      "npcEn": "Tomás, today is Sunday. The café doesn't open on Sundays.",
+      "intent": "Say how embarrassing! So anyway, you came for nothing.",
+      "accept": [
+        "¡Qué oso! Total, que vine por nada.",
+        "¡Qué oso! Total, que vine al café por nada.",
+        "¡No me digas! ¡Qué oso! Total, que vine por nada."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "qué oso",
+          "flags": "i",
+          "label": "how embarrassing: ¡qué oso!"
+        },
+        {
+          "type": "regex",
+          "pattern": "total,? que",
+          "flags": "i",
+          "label": "so anyway: total, que..."
+        }
+      ],
+      "focus": "c:total-que",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Tranquilo. Yo vine a hacer pan para mañana, y acabo de hacer tinto. ¿Quieres uno?",
+      "npcEn": "Don't worry. I came to make bread for tomorrow, and I've just made coffee. Do you want one?",
+      "intent": "Say yes, please: you haven't had breakfast yet.",
+      "accept": [
+        "Sí, por favor. Todavía no he desayunado.",
+        "Sí, gracias. Todavía no desayuné.",
+        "Claro que sí. Todavía no he desayunado nada."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "todavía no",
+          "flags": "i",
+          "label": "not yet: todavía no"
+        }
+      ],
+      "focus": "g:acabar-de-ya-todavia",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:gracias-de-nada",
+    "c:no-me-digas",
+    "c:por-favor",
+    "c:porque",
+    "c:que-de-malas",
+    "c:que-hiciste",
+    "c:que-oso",
+    "c:resulta-que",
+    "c:sabes-que-me-paso",
+    "c:tienes",
+    "c:todavia-no",
+    "c:total-que",
+    "c:tranquilo",
+    "c:y-que-paso",
+    "g:acabar-de-ya-todavia",
+    "g:cause-result",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:imperfect-states",
+    "g:negation-words",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:superlatives",
+    "l:abrir",
+    "l:acabar",
+    "l:agua",
+    "l:bus",
+    "l:café",
+    "l:caminar",
+    "l:casa",
+    "l:claro",
+    "l:cuadra",
+    "l:decir",
+    "l:dejar",
+    "l:desayunar",
+    "l:después",
+    "l:domingo",
+    "l:dónde",
+    "l:estar",
+    "l:favor",
+    "l:hacer",
+    "l:hoy",
+    "l:llegar",
+    "l:lleno",
+    "l:llover",
+    "l:lluvia",
+    "l:mala",
+    "l:mañana",
+    "l:oso",
+    "l:pan",
+    "l:pasar",
+    "l:pelo",
+    "l:perder",
+    "l:plata",
+    "l:querer",
+    "l:qué",
+    "l:resultar",
+    "l:saber",
+    "l:ser",
+    "l:taxi",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:total",
+    "l:tranquilo",
+    "l:venir",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:horas-y-horas",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:por-la-manana",
+    "p:por-que-no",
+    "p:quantifiers-basic",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ]
+}
