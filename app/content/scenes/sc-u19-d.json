@@ -1,0 +1,226 @@
+{
+  "id": "sc-u19-d",
+  "unit": "u19",
+  "title": "Half past five, first shift",
+  "brief": "You're Tomás. It's Jhon Fredy's first morning at the café, before the doors open, and he has a question about everything. Show him how things work here. He's nineteen and works for you, so use tú with him; he'll call you usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Buenos días, jefe! Son las cinco y media y ya estoy aquí. ¿Qué hago primero?",
+      "npcEn": "Good morning, boss! It's half past five and I'm already here. What do I do first?",
+      "intent": "Say good morning, and that here the machine gets cleaned first.",
+      "accept": [
+        "Buenos días. Aquí primero se limpia la máquina.",
+        "Primero se limpia la máquina.",
+        "Buenos días, Jhon Fredy. Aquí se limpia la máquina primero."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse limpia\\b",
+          "flags": "i",
+          "label": "the machine gets cleaned (by whoever): se limpia la máquina"
+        }
+      ],
+      "focus": "g:se-impersonal",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Listo. Vale dejó dos tazas de tinto en la mesa. ¿Cuál es la mía?",
+      "npcEn": "OK. Vale left two cups of black coffee on the table. Which one is mine?",
+      "intent": "Say the big one is his and the small one is yours.",
+      "accept": [
+        "La grande es tuya. La pequeña es mía.",
+        "La tuya es la grande. La pequeña es mía.",
+        "La grande es la tuya, y la pequeña es la mía."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btuya\\b",
+          "flags": "i",
+          "label": "his (talking to him): tuya, to match la taza"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bm[ií]a\\b",
+          "flags": "i",
+          "label": "yours (you speaking): mía, to match la taza"
+        }
+      ],
+      "focus": "g:possessives-stressed",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Gracias, jefe. ¿Y mi bicicleta? ¿Dónde la dejo?",
+      "npcEn": "Thanks, boss. And my bike? Where do I leave it?",
+      "intent": "Say at the back, where Vale's bike is.",
+      "accept": [
+        "Atrás, donde está la bicicleta de Vale.",
+        "La puedes dejar atrás, donde está la bicicleta de Vale.",
+        "Déjala atrás, donde está la bicicleta de Vale."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdonde\\b",
+          "flags": "i",
+          "label": "the place where: donde, with no accent when it isn't a question"
+        }
+      ],
+      "focus": "g:relatives-donde-lo-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Listo. Oiga, ¿y qué toman los clientes en la mañana?",
+      "npcEn": "OK. Hey, and what do the customers drink in the morning?",
+      "intent": "Say people here like black coffee (tinto) a lot.",
+      "accept": [
+        "A la gente le gusta mucho el tinto.",
+        "Aquí a la gente le gusta mucho el tinto.",
+        "A los clientes les gusta mucho el tinto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "gustan? (mucho )?el tinto",
+          "flags": "i",
+          "label": "liking something in general: le gusta el tinto, with el"
+        }
+      ],
+      "focus": "g:article-uses",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Oiga, encontré este cuaderno en la cocina. ¿Es suyo?",
+      "npcEn": "Hey, I found this notebook in the kitchen. Is it yours?",
+      "intent": "Say no, it isn't yours: it was your grandmother's.",
+      "accept": [
+        "No, no es mío. Era de mi abuela.",
+        "No es mío. Era de mi abuela Rosa.",
+        "No, no es mío, era de Rosa, mi abuela."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bm[ií]o\\b",
+          "flags": "i",
+          "label": "mine (on its own): mío, not mi"
+        },
+        {
+          "type": "negation",
+          "label": "say no: no es mío"
+        }
+      ],
+      "focus": "g:possessives-stressed",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Uy, es muy viejo. Bueno, ya hay gente en la puerta. ¿Abro?",
+      "npcEn": "Wow, it's very old. Well, there are already people at the door. Shall I open?",
+      "intent": "Say yes: what people want now is their tinto.",
+      "accept": [
+        "Sí. Lo que quieren ahora es su tinto.",
+        "Claro. Lo que quiere la gente ahora es su tinto.",
+        "Sí. Lo que quieren los clientes es su tinto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo que quier",
+          "flags": "i",
+          "label": "what they want: lo que quieren, not qué"
+        }
+      ],
+      "focus": "g:relatives-donde-lo-que",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:oiga-oye",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:possessives-stressed",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:abuela",
+    "l:ahora",
+    "l:aquí",
+    "l:atrás",
+    "l:bicicleta",
+    "l:bueno",
+    "l:claro",
+    "l:cliente",
+    "l:cocina",
+    "l:cuaderno",
+    "l:cuál",
+    "l:dejar",
+    "l:día",
+    "l:dónde",
+    "l:encontrar",
+    "l:estar",
+    "l:gente",
+    "l:grande",
+    "l:gustar",
+    "l:hacer",
+    "l:jefe",
+    "l:limpiar",
+    "l:listo",
+    "l:mañana",
+    "l:mesa",
+    "l:máquina",
+    "l:oír",
+    "l:pequeño",
+    "l:poder",
+    "l:puerta",
+    "l:querer",
+    "l:qué",
+    "l:ser",
+    "l:taza",
+    "l:tinto",
+    "l:tomar",
+    "l:viejo",
+    "p:aqui-ahi-alla",
+    "p:container-de",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:la-gente-singular",
+    "p:no-es-x-es-y",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:viejo-antiguo-mayor"
+  ]
+}
