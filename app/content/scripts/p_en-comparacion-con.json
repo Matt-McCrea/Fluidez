@@ -1,0 +1,167 @@
+{
+  "node": "p:en-comparacion-con",
+  "hook": {
+    "line": "Tomás has to explain to a visitor why the café is different from the new shops. Setting two things side by side is the quickest way to describe either one.",
+    "es": "A diferencia del tinto, el café con leche es muy suave.",
+    "en": "Unlike tinto, café con leche is very mild."
+  },
+  "examples": [
+    {
+      "es": "A diferencia del apartamento, la finca es muy luminosa.",
+      "en": "Unlike the apartment, the farmhouse is very bright."
+    },
+    {
+      "es": "En comparación con el año pasado, vendimos mucho más.",
+      "en": "Compared to last year, we sold much more."
+    },
+    {
+      "es": "A diferencia de Bogotá, Cartagena es muy caliente.",
+      "en": "Unlike Bogotá, Cartagena is very hot."
+    },
+    {
+      "es": "En comparación con ayer, hoy hay menos gente.",
+      "en": "Compared to yesterday, there are fewer people today."
+    },
+    {
+      "es": "A diferencia de Vale, Tomás cocina mal.",
+      "en": "Unlike Vale, Tomás cooks badly."
+    },
+    {
+      "es": "En comparación con el centro, aquí hay más ruido.",
+      "en": "Compared to the centre, there is more noise here."
+    }
+  ],
+  "rule": "Two openers for setting one thing against another. Put one at the start, add a comma, then say your main point.\n\n*A diferencia de…*: unlike. *A diferencia del apartamento*, *a diferencia de Vale*.\n*En comparación con…*: compared to. *En comparación con ayer*.\n\nUse *a diferencia de* when the two things are opposites, and *en comparación con* when you are measuring more or less. Watch the small words: *de* + *el* becomes *del*, and *comparación* takes *con*.",
+  "smallPrint": "Teachers call these contrastive and comparative discourse markers.",
+  "readAndPick": [
+    {
+      "es": "A diferencia del apartamento, la finca es muy luminosa.",
+      "options": [
+        "Unlike the apartment, the farmhouse is very bright.",
+        "Like the apartment, the farmhouse is very bright."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En comparación con el año pasado, vendimos mucho más.",
+      "options": [
+        "Compared to last year, we sold much less.",
+        "Compared to last year, we sold much more."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En comparación con ayer, hoy hay menos gente.",
+      "options": [
+        "Compared to yesterday, there are fewer people today.",
+        "Compared to yesterday, there are more people today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A diferencia de Bogotá, Cartagena es muy caliente.",
+      "options": [
+        "Unlike Bogotá, Cartagena is very hot.",
+        "Unlike Cartagena, Bogotá is very hot."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A diferencia de Vale, Tomás cocina mal.",
+      "options": [
+        "Unlike Tomás, Vale cooks badly.",
+        "Unlike Vale, Tomás cooks badly."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En comparación con el centro, aquí hay más ruido.",
+      "options": [
+        "Compared to the centre, there is more noise here.",
+        "Compared to here, there is more noise in the centre.",
+        "Compared to the centre, there is less noise here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A diferencia del tinto, el café con leche es muy suave.",
+      "options": [
+        "Unlike tinto, café con leche is very mild.",
+        "Unlike café con leche, tinto is very mild."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En comparación con Medellín, Bogotá es más fría.",
+      "options": [
+        "Compared to Medellín, Bogotá is colder.",
+        "Compared to Bogotá, Medellín is colder."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose the right word and type the whole sentence: A diferencia ___ apartamento, la finca es muy luminosa. (de / del)",
+      "answer": "A diferencia del apartamento, la finca es muy luminosa.",
+      "accept": [],
+      "why": "*De* + *el* always becomes *del*."
+    },
+    {
+      "prompt": "Type in Spanish: Compared to last year, we sold much more.",
+      "answer": "En comparación con el año pasado, vendimos mucho más.",
+      "accept": [],
+      "why": "*En comparación con*, a comma, then the main point."
+    },
+    {
+      "prompt": "Type in Spanish: Unlike Vale, Tomás cooks badly.",
+      "answer": "A diferencia de Vale, Tomás cocina mal.",
+      "accept": [],
+      "why": "The person you compare against goes after *de*."
+    },
+    {
+      "prompt": "Type in Spanish: Compared to yesterday, there are fewer people today.",
+      "answer": "En comparación con ayer, hoy hay menos gente.",
+      "accept": [
+        "Hoy hay menos gente en comparación con ayer."
+      ],
+      "why": "*Ayer* needs no article after *con*."
+    },
+    {
+      "prompt": "Type in Spanish: Unlike tinto, café con leche is very mild.",
+      "answer": "A diferencia del tinto, el café con leche es muy suave.",
+      "accept": [],
+      "why": "Both nouns keep their *el*, and *de el* becomes *del*."
+    },
+    {
+      "prompt": "Start with *En comparación con* instead: Aquí hay más ruido que en el centro.",
+      "answer": "En comparación con el centro, aquí hay más ruido.",
+      "accept": [],
+      "why": "The thing you compare to moves to the front, after *con*."
+    },
+    {
+      "prompt": "Type in Spanish: Compared to Medellín, Bogotá is colder.",
+      "answer": "En comparación con Medellín, Bogotá es más fría.",
+      "accept": [],
+      "why": "A city has no article here, so *con Medellín*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "A diferencia de el apartamento, la finca es muy luminosa.",
+      "right": "A diferencia del apartamento, la finca es muy luminosa.",
+      "why": "*De* and *el* join into *del*."
+    },
+    {
+      "wrong": "En comparación de ayer, hoy hay menos gente.",
+      "right": "En comparación con ayer, hoy hay menos gente.",
+      "why": "Almost. \"Compared to\" is *en comparación con*."
+    },
+    {
+      "wrong": "A diferencia que Vale, Tomás cocina mal.",
+      "right": "A diferencia de Vale, Tomás cocina mal.",
+      "why": "After *a diferencia* the little word is *de*, not *que*."
+    }
+  ],
+  "personal": "Compare two places you know, or this year with last year, starting with *A diferencia de…* or *En comparación con…*"
+}

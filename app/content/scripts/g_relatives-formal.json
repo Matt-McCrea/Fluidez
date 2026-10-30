@@ -1,0 +1,46 @@
+{
+  "node": "g:relatives-formal",
+  "hook": {
+    "line": "Mariana is writing about the café for her newspaper, and *que* alone sounds too chatty for print. She needs the more careful \"who\" and \"which\" that writers use to add a detail about someone.",
+    "es": "Rosa, quien abrió el café, era la abuela de Tomás.",
+    "en": "Rosa, who opened the café, was Tomás's grandmother."
+  },
+  "examples": [
+    { "es": "Rosa, quien abrió el café, era la abuela de Tomás.", "en": "Rosa, who opened the café, was Tomás's grandmother." },
+    { "es": "Los vecinos, quienes llevan años aquí, no quieren vender.", "en": "The neighbours, who have been here for years, don't want to sell." },
+    { "es": "Mariana, a quien conocí en el café, escribe para un periódico.", "en": "Mariana, whom I met at the café, writes for a newspaper." },
+    { "es": "Vale, de quien hablamos ayer, hace los mejores postres.", "en": "Vale, whom we talked about yesterday, makes the best desserts." },
+    { "es": "La puerta, la cual es muy vieja, no cierra bien.", "en": "The door, which is very old, doesn't close well." },
+    { "es": "Las mesas, las cuales compró Rosa, son de madera.", "en": "The tables, which Rosa bought, are made of wood." },
+    { "es": "La calle, en la cual vivimos, es muy tranquila.", "en": "The street, which we live on, is very quiet." }
+  ],
+  "rule": "When you add a side detail about someone or something, between commas, careful Spanish has two upgrades for *que*.\n\nFor people: *quien* (one person) and *quienes* (several). After a preposition they stay put: *con quien*, *de quien*, *a quien*.\n\n*Rosa, quien abrió el café…*\n*Los vecinos, quienes llevan años aquí…*\n\nFor things (and people too): *el cual, la cual, los cuales, las cuales*. They copy the gender and number of the noun they point back to.\n\n*La puerta, la cual es muy vieja…*\n*Las mesas, las cuales compró Rosa…*\n\nThe commas matter. With commas it is extra information: *Mi vecino, quien es doctor, trabaja mucho* (I have one neighbour). With no commas, plain *que* picks out which one. Tomorrow you will meet *lo cual*, for commenting on a whole situation.",
+  "smallPrint": "Teachers call these non-restrictive (or explanatory) relative clauses, and *el cual* and *quien* are the formal relative pronouns.",
+  "readAndPick": [
+    { "es": "Los vecinos, quienes llevan años aquí, no quieren vender.", "options": ["The neighbours, who have been here for years, don't want to sell.", "The neighbour, who has been here for years, doesn't want to sell."], "answer": 0 },
+    { "es": "Las mesas, las cuales compró Rosa, son de madera.", "options": ["The table, which Rosa bought, is made of wood.", "The tables, which Rosa bought, are made of wood."], "answer": 1 },
+    { "es": "Mariana, a quien conocí en el café, escribe para un periódico.", "options": ["Mariana, who met me at the café, writes for a newspaper.", "Mariana, whom I met at the café, writes for a newspaper.", "Mariana, whom we met at the café, writes for a newspaper."], "answer": 1 },
+    { "es": "La puerta, la cual es muy vieja, no cierra bien.", "options": ["The doors, which are very old, don't close well.", "The door, which is very old, doesn't close well."], "answer": 1 },
+    { "es": "Mis vecinos, quienes son doctores, trabajan mucho.", "options": ["My neighbour, who is a doctor, works a lot.", "My neighbours, who are doctors, work a lot."], "answer": 1 },
+    { "es": "El proyecto, el cual presentó Altamira, no nos gustó.", "options": ["The projects, which Altamira presented, didn't please us.", "The project, which Altamira presented, didn't please us."], "answer": 1 },
+    { "es": "Vale, de quien hablamos ayer, hace los mejores postres.", "options": ["Vale, who talked about us yesterday, makes the best desserts.", "Vale, whom we talked about yesterday, makes the best desserts."], "answer": 1 },
+    { "es": "Los proyectos, los cuales presentó Altamira, no nos gustaron.", "options": ["The project, which Altamira presented, didn't please us.", "The projects, which Altamira presented, didn't please us."], "answer": 1 },
+    { "es": "La calle, en la cual vivimos, es muy tranquila.", "options": ["The street, which we live on, is very quiet.", "The street, which they live on, is very quiet.", "The street, which I live on, is very quiet."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (Hernando is one man): Hernando, ___ trabajó muchos años como taxista, ya no maneja. (quien / quienes)", "answer": "Hernando, quien trabajó muchos años como taxista, ya no maneja.", "accept": [], "why": "One person, so *quien*; for several people you would need *quienes*." },
+    { "prompt": "Type in Spanish: Mariana, whom I met at the café, writes for a newspaper.", "answer": "Mariana, a quien conocí en el café, escribe para un periódico.", "accept": [], "why": "You meet a person, so *a quien* goes right after the comma." },
+    { "prompt": "Type in Spanish: The doors, which are very old, don't close well. Use *cual*.", "answer": "Las puertas, las cuales son muy viejas, no cierran bien.", "accept": [], "why": "*Puertas* is feminine and plural, so *las cuales*." },
+    { "prompt": "Make it plural: Mi vecino, quien es doctor, trabaja mucho.", "answer": "Mis vecinos, quienes son doctores, trabajan mucho.", "accept": [], "why": "Everything follows the plural: *mis*, *vecinos*, *quienes*, *son*, *trabajan*." },
+    { "prompt": "Type in Spanish: The street, which we live on, is very quiet. Use *cual*.", "answer": "La calle, en la cual vivimos, es muy tranquila.", "accept": [], "why": "The preposition *en* comes before *la cual*, matching feminine *calle*." },
+    { "prompt": "Type in Spanish: Rosa, who opened the café, was Tomás's grandmother.", "answer": "Rosa, quien abrió el café, era la abuela de Tomás.", "accept": [], "why": "A detail about a person in commas: *quien*." },
+    { "prompt": "Make it singular: Los proyectos, los cuales presentó Altamira, no nos gustaron.", "answer": "El proyecto, el cual presentó Altamira, no nos gustó.", "accept": [], "why": "*Los cuales* shrinks to *el cual*, and the verb *gustó* follows." }
+  ],
+  "pitfalls": [
+    { "wrong": "Los vecinos, quien llevan años aquí, no quieren vender.", "right": "Los vecinos, quienes llevan años aquí, no quieren vender.", "why": "Almost. *Quien* has a plural, *quienes*, for more than one person." },
+    { "wrong": "Mariana, quien conocí en el café, escribe para un periódico.", "right": "Mariana, a quien conocí en el café, escribe para un periódico.", "why": "English drops \"whom\", but Spanish keeps the preposition: *a quien*." },
+    { "wrong": "Las puertas, los cuales son muy viejas, no cierran bien.", "right": "Las puertas, las cuales son muy viejas, no cierran bien.", "why": "*El cual* copies the noun: feminine plural *puertas* needs *las cuales*." },
+    { "wrong": "Vale, quien de hablamos ayer, hace los mejores postres.", "right": "Vale, de quien hablamos ayer, hace los mejores postres.", "why": "The preposition goes in front of *quien*; Spanish never leaves it at the end." }
+  ],
+  "personal": "Tell us about someone in your life with a detail between commas: *Mi hermana, quien…* or *Mis amigos, con quienes…*"
+}

@@ -1,0 +1,166 @@
+{
+  "node": "p:synonym-hypernym",
+  "hook": {
+    "line": "Mariana's editor circles every repeated word in red. In a news story or an essay, Spanish avoids saying the same noun twice, and has two easy ways out.",
+    "es": "Tomás compró un carro viejo, pero el vehículo no arrancó.",
+    "en": "Tomás bought an old car, but the vehicle wouldn't start."
+  },
+  "examples": [
+    {
+      "es": "Juan llevó a su perro al veterinario: el animal tenía una pata rota.",
+      "en": "Juan took his dog to the vet: the animal had a broken leg."
+    },
+    {
+      "es": "Tomás compró un carro viejo, pero el vehículo no arrancó.",
+      "en": "Tomás bought an old car, but the vehicle wouldn't start."
+    },
+    {
+      "es": "Mariana escribió un artículo sobre Altamira, y el texto salió el domingo.",
+      "en": "Mariana wrote an article about Altamira, and the text came out on Sunday."
+    },
+    {
+      "es": "Vale hizo una torta de chocolate, y el postre se acabó rápido.",
+      "en": "Vale made a chocolate cake, and the dessert ran out quickly."
+    },
+    {
+      "es": "Tomás heredó el café, pero el negocio no iba bien.",
+      "en": "Tomás inherited the café, but the business wasn't doing well."
+    },
+    {
+      "es": "Hernando nos contó todo; no lo esperábamos de un hombre tan discreto.",
+      "en": "Hernando told us everything; we didn't expect it from such a discreet man."
+    }
+  ],
+  "rule": "In writing, don't say a noun twice. Next time, name it again with a different word:\n\n*carro* then *el vehículo*\n*perro* then *el animal*\n*torta* then *el postre*\n\nPick a synonym or a broader word, and put *el* or *la* in front, since it points back to something already mentioned.\n\nYou can also sum up a person with a small comment: *un hombre tan discreto*, *una mujer tan discreta*. Here *un hombre* only works with a describing word such as *tan discreto*, and the ending matches the person.",
+  "smallPrint": "Teachers call this anaphora by synonym (or by hypernym, when the new word is the broader one).",
+  "readAndPick": [
+    {
+      "es": "Juan llevó a su perro al veterinario: el animal tenía una pata rota.",
+      "options": [
+        "The dog had a broken leg.",
+        "The vet had a broken leg."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás compró un carro viejo, pero el vehículo no arrancó.",
+      "options": [
+        "The car wouldn't start.",
+        "The café wouldn't open."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana escribió un artículo sobre Altamira, y el texto salió el domingo.",
+      "options": [
+        "Altamira came out on Sunday.",
+        "The article came out on Sunday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale hizo una torta de chocolate, y el postre se acabó rápido.",
+      "options": [
+        "The cake ran out quickly.",
+        "The chocolate ran out quickly.",
+        "Vale ran out quickly."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás heredó el café, pero el negocio no iba bien.",
+      "options": [
+        "Tomás wasn't doing well.",
+        "The business wasn't doing well."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando nos contó todo; no lo esperábamos de un hombre tan discreto.",
+      "options": [
+        "We didn't expect it from such a discreet man.",
+        "We didn't expect it from such a discreet woman."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Rosa nos contó todo; no lo esperábamos de una mujer tan discreta.",
+      "options": [
+        "We didn't expect it from such a discreet man.",
+        "We didn't expect it from such a discreet woman."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando tiene un perro muy viejo; el animal duerme todo el día.",
+      "options": [
+        "The dog sleeps all day.",
+        "Hernando sleeps all day.",
+        "The dog is all day."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose the right word and type the whole sentence: Tomás compró un carro viejo, pero el ___ no arrancó. (vehículo / animal)",
+      "answer": "Tomás compró un carro viejo, pero el vehículo no arrancó.",
+      "accept": [],
+      "why": "*Vehículo* is a broader word for *carro*; *animal* would make no sense."
+    },
+    {
+      "prompt": "Type in Spanish: Juan took his dog to the vet: the animal had a broken leg.",
+      "answer": "Juan llevó a su perro al veterinario: el animal tenía una pata rota.",
+      "accept": [],
+      "why": "*El animal* names the dog again without repeating *perro*."
+    },
+    {
+      "prompt": "Type in Spanish: Vale made a chocolate cake, and the dessert ran out quickly.",
+      "answer": "Vale hizo una torta de chocolate, y el postre se acabó rápido.",
+      "accept": [],
+      "why": "*Postre* is the broader word for *torta*."
+    },
+    {
+      "prompt": "Type in Spanish: Mariana wrote an article about Altamira, and the text came out on Sunday.",
+      "answer": "Mariana escribió un artículo sobre Altamira, y el texto salió el domingo.",
+      "accept": [],
+      "why": "*El texto* stands in for *el artículo*."
+    },
+    {
+      "prompt": "Avoid the repeated word, using *negocio*: Tomás heredó el café, pero el café no iba bien.",
+      "answer": "Tomás heredó el café, pero el negocio no iba bien.",
+      "accept": [],
+      "why": "*El negocio* names the café again as a business."
+    },
+    {
+      "prompt": "Type in Spanish: Rosa told us everything; we didn't expect it from such a discreet woman.",
+      "answer": "Rosa nos contó todo; no lo esperábamos de una mujer tan discreta.",
+      "accept": [],
+      "why": "A woman, so *una mujer* and *discreta*."
+    },
+    {
+      "prompt": "Avoid the repeated word, using *animal*: Hernando tiene un perro muy viejo; el perro duerme todo el día.",
+      "answer": "Hernando tiene un perro muy viejo; el animal duerme todo el día.",
+      "accept": [],
+      "why": "*El animal* is the broader word for *perro*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tomás compró un carro viejo, pero el carro no arrancó.",
+      "right": "Tomás compró un carro viejo, pero el vehículo no arrancó.",
+      "why": "Correct, but clumsy in writing: use a synonym or a broader word instead of repeating."
+    },
+    {
+      "wrong": "Rosa nos contó todo; no lo esperábamos de una mujer tan discreto.",
+      "right": "Rosa nos contó todo; no lo esperábamos de una mujer tan discreta.",
+      "why": "The describing word follows the person: a woman needs *discreta*."
+    },
+    {
+      "wrong": "Vale hizo una torta, y la postre se acabó rápido.",
+      "right": "Vale hizo una torta, y el postre se acabó rápido.",
+      "why": "Almost. *Postre* is masculine, even though *torta* is feminine."
+    }
+  ],
+  "personal": "Write two short sentences about something you own or did today, and use a different word the second time, with *el* or *la*: *Tengo un carro… el vehículo…*"
+}

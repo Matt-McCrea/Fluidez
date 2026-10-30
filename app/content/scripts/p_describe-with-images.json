@@ -1,0 +1,164 @@
+{
+  "node": "p:describe-with-images",
+  "hook": {
+    "line": "Hernando never says \"strong\" when he can say something more vivid. Spanish speakers love a picture: it makes a description stick, and it is easier than finding the exact adjective.",
+    "es": "Mi abuelo es fuerte como un toro.",
+    "en": "My grandad is as strong as an ox."
+  },
+  "examples": [
+    {
+      "es": "Mi abuelo es fuerte como un toro.",
+      "en": "My grandad is as strong as an ox."
+    },
+    {
+      "es": "Mi hermano es lento como una tortuga.",
+      "en": "My brother is as slow as a turtle."
+    },
+    {
+      "es": "Tomás está rojo como un tomate.",
+      "en": "Tomás is as red as a tomato."
+    },
+    {
+      "es": "Esa bolsa pesa como un ladrillo.",
+      "en": "That bag weighs as much as a brick."
+    },
+    {
+      "es": "El apartamento parece una caja.",
+      "en": "The apartment looks like a box."
+    },
+    {
+      "es": "Es como tener un vigilante en la casa.",
+      "en": "It's like having a security guard at home."
+    }
+  ],
+  "rule": "Three easy frames for a picture instead of a plain adjective.\n\n*Adjective + como + un/una + thing*: *fuerte como un toro*, *lento como una tortuga*. Same as English \"as strong as an ox\", without the first \"as\".\n\n*Parece + un/una + thing*: *parece una caja*.\n\n*Es como + verb*: *Es como tener un vigilante*.\n\nKeep the *un* or *una*: *como tortuga* sounds wrong. Many comparisons are fixed, so don't swap the animal: strong is *toro*, slow is *tortuga*.",
+  "smallPrint": "Teachers call these *símiles* (similes), and *parecer* here is a verb of appearance.",
+  "readAndPick": [
+    {
+      "es": "Mi abuelo es fuerte como un toro.",
+      "options": [
+        "My grandad is as strong as an ox.",
+        "My grandad is as slow as an ox."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mi hermano es lento como una tortuga.",
+      "options": [
+        "My brother is as fast as a turtle.",
+        "My brother is as slow as a turtle."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esa bolsa pesa como un ladrillo.",
+      "options": [
+        "That bag is made of brick.",
+        "That bag weighs as much as a brick."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El apartamento parece una caja.",
+      "options": [
+        "The apartment looks like a box.",
+        "The apartment is inside a box."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es como tener un vigilante en la casa.",
+      "options": [
+        "It's like having a security guard at home.",
+        "It's a security guard at home."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás está rojo como un tomate.",
+      "options": [
+        "Tomás is as red as a tomato.",
+        "Tomás is eating a red tomato."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mi abuela es fuerte como un toro.",
+      "options": [
+        "My grandad is as strong as an ox.",
+        "My grandma is as strong as an ox."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vivir aquí es como vivir en una caja.",
+      "options": [
+        "Living here is like living in a box.",
+        "Living here is a box."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose the right word and type the whole sentence: Mi hermano es lento ___ una tortuga. (como / parece)",
+      "answer": "Mi hermano es lento como una tortuga.",
+      "accept": [],
+      "why": "With an adjective in front, the link word is *como*."
+    },
+    {
+      "prompt": "Type in Spanish: My grandad is as strong as an ox.",
+      "answer": "Mi abuelo es fuerte como un toro.",
+      "accept": [],
+      "why": "Adjective, *como*, then *un* and the animal."
+    },
+    {
+      "prompt": "Type in Spanish: That bag weighs as much as a brick.",
+      "answer": "Esa bolsa pesa como un ladrillo.",
+      "accept": [],
+      "why": "With *pesar*, *como un ladrillo* works the same way."
+    },
+    {
+      "prompt": "Type in Spanish: The apartment looks like a box.",
+      "answer": "El apartamento parece una caja.",
+      "accept": [],
+      "why": "*Parece* is followed directly by *un* or *una*, no *como*."
+    },
+    {
+      "prompt": "Type in Spanish: Tomás is as red as a tomato.",
+      "answer": "Tomás está rojo como un tomate.",
+      "accept": [],
+      "why": "*Está* because it is how he looks right now."
+    },
+    {
+      "prompt": "Say it about your grandma: Mi abuelo es fuerte como un toro.",
+      "answer": "Mi abuela es fuerte como un toro.",
+      "accept": [],
+      "why": "Only *abuela* changes; the fixed comparison stays *un toro*."
+    },
+    {
+      "prompt": "Type in Spanish: It's like having a security guard at home.",
+      "answer": "Es como tener un vigilante en la casa.",
+      "accept": [],
+      "why": "*Es como* plus an infinitive describes an experience."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Mi hermano es lento como tortuga.",
+      "right": "Mi hermano es lento como una tortuga.",
+      "why": "Almost. Spanish keeps *un* or *una* in these comparisons."
+    },
+    {
+      "wrong": "Mi hermano es lento como un perro.",
+      "right": "Mi hermano es lento como una tortuga.",
+      "why": "These comparisons are fixed: for slow, Spanish always picks the turtle."
+    },
+    {
+      "wrong": "Tomás está rojo como una tomate.",
+      "right": "Tomás está rojo como un tomate.",
+      "why": "The article matches the thing: *tomate* is masculine, so *un tomate*."
+    }
+  ],
+  "personal": "Describe someone you know with a picture: *Mi amigo es… como un…* or *Mi casa parece un…*"
+}

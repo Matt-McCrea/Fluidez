@@ -1,0 +1,173 @@
+{
+  "node": "p:se-divide-en",
+  "hook": {
+    "line": "A visitor asks Tomás how the café works, and Mariana's article needs a tidy description. Spanish has set phrases for saying what something is made of and what it is called.",
+    "es": "El menú se divide en desayunos, almuerzos y postres.",
+    "en": "The menu is divided into breakfasts, lunches and desserts."
+  },
+  "examples": [
+    {
+      "es": "El libro se divide en tres partes.",
+      "en": "The book is divided into three parts."
+    },
+    {
+      "es": "El edificio se compone de cuatro pisos.",
+      "en": "The building is made up of four floors."
+    },
+    {
+      "es": "El equipo está formado por seis personas.",
+      "en": "The team is made up of six people."
+    },
+    {
+      "es": "El menú se divide en desayunos, almuerzos y postres.",
+      "en": "The menu is divided into breakfasts, lunches and desserts."
+    },
+    {
+      "es": "Se le llama tinto al café negro que se toma en Colombia.",
+      "en": "The black coffee people drink in Colombia is called tinto."
+    },
+    {
+      "es": "Esta parte de Bogotá se conoce como La Candelaria.",
+      "en": "This part of Bogotá is known as La Candelaria."
+    }
+  ],
+  "rule": "Four phrases for describing and classifying, all neutral-to-formal.\n\n*Se divide en…*: the parts it is split into.\n*Se compone de…* or *está formado por…*: what it is made of.\n*Se conoce como…*: what it is known as.\n*Se le llama… a…*: the name comes first, then *a* and the thing named: *Se le llama tinto al café negro.*\n\nThe small words are fixed: *dividir en*, *componerse de*, *formado por*. English \"into\" and \"of\" don't always match.",
+  "smallPrint": "Teachers call *se divide* and *se compone* the pasiva refleja, the *se* passive for descriptions.",
+  "readAndPick": [
+    {
+      "es": "El libro se divide en tres partes.",
+      "options": [
+        "The book is divided into three parts.",
+        "The book is made up of three people."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El edificio se compone de cuatro pisos.",
+      "options": [
+        "The building is divided into four owners.",
+        "The building is made up of four floors."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El equipo está formado por seis personas.",
+      "options": [
+        "The team is made up of six people.",
+        "The team is known as six people."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se le llama tinto al café negro que se toma en Colombia.",
+      "options": [
+        "Tinto is called black coffee.",
+        "Black coffee is called tinto."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esta parte de Bogotá se conoce como La Candelaria.",
+      "options": [
+        "This part of Bogotá is known as La Candelaria.",
+        "This part of Bogotá is made up of La Candelaria.",
+        "This part of Bogotá is divided into La Candelaria."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El menú se divide en desayunos, almuerzos y postres.",
+      "options": [
+        "The menu is made up of three cafés.",
+        "The menu is divided into breakfasts, lunches and desserts."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La clase se divide en dos grupos.",
+      "options": [
+        "The class is divided into two groups.",
+        "The class is known as two groups."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El grupo está formado por cuatro amigos.",
+      "options": [
+        "The group is divided into four friends.",
+        "The group is made up of four friends."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose the right form and type the whole sentence: El libro ___ en tres partes. (se divide / se conoce)",
+      "answer": "El libro se divide en tres partes.",
+      "accept": [],
+      "why": "For splitting into parts you need *se divide en*."
+    },
+    {
+      "prompt": "Type in Spanish: The menu is divided into breakfasts, lunches and desserts.",
+      "answer": "El menú se divide en desayunos, almuerzos y postres.",
+      "accept": [],
+      "why": "*Se divide en* followed by the parts."
+    },
+    {
+      "prompt": "Type in Spanish: The building is made up of four floors.",
+      "answer": "El edificio se compone de cuatro pisos.",
+      "accept": [
+        "El edificio está formado por cuatro pisos."
+      ],
+      "why": "*Se compone de* says what it is made of."
+    },
+    {
+      "prompt": "Type in Spanish: The team is made up of six people.",
+      "answer": "El equipo está formado por seis personas.",
+      "accept": [
+        "El equipo se compone de seis personas."
+      ],
+      "why": "*Formado por* is the other way to say what a group is made of."
+    },
+    {
+      "prompt": "Type in Spanish: This part of Bogotá is known as La Candelaria.",
+      "answer": "Esta parte de Bogotá se conoce como La Candelaria.",
+      "accept": [
+        "A esta parte de Bogotá se le llama La Candelaria."
+      ],
+      "why": "*Se conoce como* gives the usual name."
+    },
+    {
+      "prompt": "Type in Spanish: Black coffee is called tinto in Colombia.",
+      "answer": "Se le llama tinto al café negro en Colombia.",
+      "accept": [
+        "Al café negro se le llama tinto en Colombia."
+      ],
+      "why": "The name comes first, then *al* and the thing it names."
+    },
+    {
+      "prompt": "Type in Spanish: The class is divided into two groups.",
+      "answer": "La clase se divide en dos grupos.",
+      "accept": [],
+      "why": "*Se divide en* works with any whole and its parts."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El libro se divide a tres partes.",
+      "right": "El libro se divide en tres partes.",
+      "why": "Almost. English \"into\" is *en* after *dividir*."
+    },
+    {
+      "wrong": "El edificio se compone en cuatro pisos.",
+      "right": "El edificio se compone de cuatro pisos.",
+      "why": "*Componerse* goes with *de*, like \"made up of\"."
+    },
+    {
+      "wrong": "Se le llama el café negro tinto.",
+      "right": "Se le llama tinto al café negro.",
+      "why": "Spanish puts the name first, then *a* plus the thing named."
+    }
+  ],
+  "personal": "Describe a place you know, such as your home or your town, with *se compone de…*, *se divide en…* or *se conoce como…*"
+}

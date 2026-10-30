@@ -1,0 +1,182 @@
+{
+  "node": "p:lo-que-cosa-que",
+  "hook": {
+    "line": "Altamira keeps buying buildings on the block, and Tomás wants to say more than the fact: how he feels about the whole thing. Spanish has a neat tag for that.",
+    "es": "Altamira compró otra casa, lo que preocupó a todos.",
+    "en": "Altamira bought another house, which worried everyone."
+  },
+  "examples": [
+    {
+      "es": "No llamó, lo que me molestó bastante.",
+      "en": "He didn't call, which annoyed me quite a bit."
+    },
+    {
+      "es": "Altamira compró otra casa, lo que preocupó a todos.",
+      "en": "Altamira bought another house, which worried everyone."
+    },
+    {
+      "es": "Llovió toda la semana, lo que arruinó nuestros planes.",
+      "en": "It rained all week, which ruined our plans."
+    },
+    {
+      "es": "Hernando llegó tarde, lo que no es raro.",
+      "en": "Hernando arrived late, which isn't unusual."
+    },
+    {
+      "es": "Se quejó de todo, cosa que nos cansó.",
+      "en": "She complained about everything, which wore us out."
+    },
+    {
+      "es": "Tomás habló con el dueño, lo cual ayudó mucho.",
+      "en": "Tomás talked to the owner, which helped a lot."
+    }
+  ],
+  "rule": "To comment on a whole situation, finish the sentence, add a comma, then *lo que* and a verb. English just says \"which\".\n\n*Llovió toda la semana, lo que arruinó nuestros planes.*\n\nThe *lo* means \"the whole thing I just said\", not one noun in it. Two other tags do the same job:\n\n*lo cual*: more formal, mostly written.\n*cosa que*: casual, spoken.\n\nNever use *que* alone or *el que* here. Without the comma the meaning changes: *No llamó lo que me molestó* would mean he didn't call the thing that annoyed me.",
+  "smallPrint": "Teachers call this a relative clause that refers back to a whole sentence (an *oración relativa* with a neuter antecedent).",
+  "readAndPick": [
+    {
+      "es": "No llamó, lo que me molestó bastante.",
+      "options": [
+        "He didn't call, which annoyed me quite a bit.",
+        "He didn't call the person who annoyed me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Altamira compró otra casa, lo que preocupó a todos.",
+      "options": [
+        "Altamira bought a house that worried everyone, the house itself.",
+        "Altamira bought another house, and that fact worried everyone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Altamira compró otra casa que preocupó a todos.",
+      "options": [
+        "Altamira bought a house that worried everyone, the house itself.",
+        "Altamira bought another house, and that fact worried everyone."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando llegó tarde, lo que no es raro.",
+      "options": [
+        "Hernando arrived late, which is unusual.",
+        "Hernando arrived late, which isn't unusual."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se quejó de todo, cosa que nos cansó.",
+      "options": [
+        "She complained about everything, which wore us out.",
+        "She complained about everything, which wore her out."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Llovió toda la semana, lo que arruinó nuestros planes.",
+      "options": [
+        "It rained all week, which ruined their plans.",
+        "It rained all week, which ruined our plans."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás habló con el dueño, lo cual ayudó mucho.",
+      "options": [
+        "Tomás talked to the owner, which didn't help.",
+        "Tomás talked to the owner, which helped a lot."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando no vino hoy, lo que nos preocupó.",
+      "options": [
+        "Hernando didn't come today, which worried us.",
+        "Hernando didn't come today, which worried him."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose the right form and type the whole sentence (It rained all week, which ruined our plans): Llovió toda la semana, ___ arruinó nuestros planes. (lo que / que)",
+      "answer": "Llovió toda la semana, lo que arruinó nuestros planes.",
+      "accept": [
+        "Llovió toda la semana, lo cual arruinó nuestros planes.",
+        "Llovió toda la semana, cosa que arruinó nuestros planes."
+      ],
+      "why": "A comment on the whole situation starts with *lo que*, not plain *que*."
+    },
+    {
+      "prompt": "Type in Spanish: He didn't call, which annoyed me quite a bit.",
+      "answer": "No llamó, lo que me molestó bastante.",
+      "accept": [
+        "No llamó, lo cual me molestó bastante.",
+        "No llamó, cosa que me molestó bastante."
+      ],
+      "why": "Comma, then *lo que*, then the verb."
+    },
+    {
+      "prompt": "Type in Spanish: Altamira bought another house, which worried everyone.",
+      "answer": "Altamira compró otra casa, lo que preocupó a todos.",
+      "accept": [
+        "Altamira compró otra casa, lo cual preocupó a todos.",
+        "Altamira compró otra casa, cosa que preocupó a todos."
+      ],
+      "why": "*Lo que* covers the whole buying, not just the house."
+    },
+    {
+      "prompt": "Type in Spanish: Hernando arrived late, which isn't unusual.",
+      "answer": "Hernando llegó tarde, lo que no es raro.",
+      "accept": [
+        "Hernando llegó tarde, lo cual no es raro.",
+        "Hernando llegó tarde, cosa que no es raro."
+      ],
+      "why": "The comment can be negative too: *lo que no es raro*."
+    },
+    {
+      "prompt": "Join the two sentences with a casual *cosa que*: Se quejó de todo. Eso nos cansó.",
+      "answer": "Se quejó de todo, cosa que nos cansó.",
+      "accept": [],
+      "why": "*Cosa que* replaces the full stop plus *eso*, and the comma joins them."
+    },
+    {
+      "prompt": "Type in Spanish: Tomás talked to the owner, which helped a lot.",
+      "answer": "Tomás habló con el dueño, lo que ayudó mucho.",
+      "accept": [
+        "Tomás habló con el dueño, lo cual ayudó mucho.",
+        "Tomás habló con el dueño, cosa que ayudó mucho."
+      ],
+      "why": "One comma and *lo que* turn the second idea into a comment."
+    },
+    {
+      "prompt": "Type in Spanish: Hernando didn't come today, which worried us.",
+      "answer": "Hernando no vino hoy, lo que nos preocupó.",
+      "accept": [
+        "Hernando no vino hoy, lo cual nos preocupó.",
+        "Hernando no vino hoy, cosa que nos preocupó."
+      ],
+      "why": "The *lo* points at the whole fact that he didn't come."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No llamó, que me molestó bastante.",
+      "right": "No llamó, lo que me molestó bastante.",
+      "why": "Almost. English \"which\" becomes *lo que* when it comments on the whole sentence."
+    },
+    {
+      "wrong": "No llamó, el que me molestó bastante.",
+      "right": "No llamó, lo que me molestó bastante.",
+      "why": "*El que* points at one masculine noun; for the whole situation you need *lo*."
+    },
+    {
+      "wrong": "Llovió toda la semana lo que arruinó nuestros planes.",
+      "right": "Llovió toda la semana, lo que arruinó nuestros planes.",
+      "why": "The comma is what makes it a comment; without it the meaning changes."
+    }
+  ],
+  "personal": "Tell us about something that happened this week and how it went, ending with *…, lo que…* or *…, cosa que…*"
+}
