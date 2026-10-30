@@ -1,0 +1,43 @@
+{
+  "node": "p:pasar-hambre-frio",
+  "hook": {
+    "line": "Don Hernando talks about his childhood, and the hard parts come out in one small verb. Spanish has a way to say you went through hunger or cold, not just felt it for a moment.",
+    "es": "De niño pasó hambre.",
+    "en": "As a child he went hungry."
+  },
+  "examples": [
+    { "es": "Esa noche pasamos muchísimo frío en el páramo.", "en": "That night we were terribly cold up on the páramo." },
+    { "es": "De niño pasó hambre.", "en": "As a child he went hungry." },
+    { "es": "Tengo un hambre horrible.", "en": "I'm absolutely starving." },
+    { "es": "Estos entrenamientos me agotan.", "en": "These training sessions wear me out." },
+    { "es": "Rosa pasó mucha hambre de niña.", "en": "As a girl Rosa went very hungry." },
+    { "es": "Hoy tengo un frío horrible.", "en": "I'm freezing today." }
+  ],
+  "rule": "*Pasar* + *hambre*, *frío*, *calor*, *sueño* means you went through it over a stretch of time: a night, a childhood. *Pasamos muchísimo frío.*\n\n*Tener* is for right now: *Tengo hambre.* To make it huge: *tengo un hambre horrible*.\n\nTo say something wears you out, use *agotar* like *gustar*: the cause is the subject. *Estos entrenamientos me agotan.* Plural cause, plural verb.",
+  "smallPrint": "Teachers call *pasar hambre* a light-verb expression: *pasar* with a noun of sensation.",
+  "readAndPick": [
+    { "es": "Esa noche pasamos muchísimo frío en el páramo.", "options": ["That night I was terribly cold on the páramo.", "That night we were terribly cold on the páramo.", "Tonight we are terribly cold on the páramo."], "answer": 1 },
+    { "es": "De niño pasó hambre.", "options": ["As a child I went hungry.", "Today he is hungry.", "As a child he went hungry."], "answer": 2 },
+    { "es": "Tengo un hambre horrible.", "options": ["I'm absolutely starving.", "I was starving as a child.", "He's absolutely starving."], "answer": 0 },
+    { "es": "Estos entrenamientos me agotan.", "options": ["This training session wears me out.", "These training sessions wear me out.", "These training sessions wore me out."], "answer": 1 },
+    { "es": "Rosa pasó mucha hambre de niña.", "options": ["As a girl I went very hungry.", "Rosa is very hungry now.", "As a girl Rosa went very hungry."], "answer": 2 },
+    { "es": "Hoy tengo un frío horrible.", "options": ["I'm freezing today.", "I was freezing yesterday.", "We are freezing today."], "answer": 0 },
+    { "es": "Pasé mucho calor en el bus.", "options": ["We were very hot on the bus.", "I was very hot on the bus.", "It is very hot on the bus."], "answer": 1 },
+    { "es": "Ese trabajo me agota.", "options": ["Those jobs wear me out.", "That job wore me out.", "That job wears me out."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "The cold lasted the whole night. Choose *pasamos* or *tenemos* and type the whole sentence: *Esa noche ___ muchísimo frío.* (That night we were terribly cold.)", "answer": "Esa noche pasamos muchísimo frío.", "accept": [], "why": "A whole night is a stretch of time, so *pasar*." },
+    { "prompt": "You feel it right now. Choose *tengo* or *pasé* and type the whole sentence: *___ un hambre horrible.* (I'm absolutely starving.)", "answer": "Tengo un hambre horrible.", "accept": [], "why": "Hunger at this moment is *tener*." },
+    { "prompt": "Choose *agota* or *agotan* and type the whole sentence: *Los turnos largos me ___.* (Long shifts wear me out.)", "answer": "Los turnos largos me agotan.", "accept": [], "why": "The cause is plural (*los turnos largos*), so *agotan*." },
+    { "prompt": "Type in Spanish: As a child he went hungry.", "answer": "De niño pasó hambre.", "accept": [], "why": "*Pasó hambre* covers the hard stretch of his childhood." },
+    { "prompt": "Type in Spanish: I was very hot on the bus.", "answer": "Pasé mucho calor en el bus.", "accept": [], "why": "Being hot during the whole ride is *pasar calor*." },
+    { "prompt": "Say it about Rosa: *De niña pasé mucha hambre.* (As a girl Rosa went very hungry.)", "answer": "Rosa pasó mucha hambre de niña.", "accept": ["De niña, Rosa pasó mucha hambre."], "why": "For a third person, *pasé* becomes *pasó*." },
+    { "prompt": "Type in Spanish: That job wears me out.", "answer": "Ese trabajo me agota.", "accept": [], "why": "One cause, one verb: *agota*, with *me* for the person." }
+  ],
+  "pitfalls": [
+    { "wrong": "Hoy paso un hambre horrible.", "right": "Hoy tengo un hambre horrible.", "why": "Almost. For hunger you feel right now, Spanish uses *tener*." },
+    { "wrong": "Los turnos largos me agota.", "right": "Los turnos largos me agotan.", "why": "Almost. The tiring thing is the subject, and it is plural, so the verb is too." },
+    { "wrong": "Pasé mucho de calor en el bus.", "right": "Pasé mucho calor en el bus.", "why": "Almost. There is no *de* between the amount and the feeling." }
+  ],
+  "personal": "Think of a time you were really cold, hot or tired. Say it in one sentence with *pasé mucho...*, and then one thing that wears you out with *me agota*."
+}

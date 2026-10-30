@@ -1,0 +1,45 @@
+{
+  "node": "p:orgulloso-admiracion",
+  "hook": {
+    "line": "Don Hernando is not a man of speeches, but when Tomás reopens the café he finds the words. Spanish has two tools for this: one for the pride you feel, and one for the wow you say out loud.",
+    "es": "Estoy muy orgulloso de que hayas abierto el café.",
+    "en": "I'm very proud that you've opened the café."
+  },
+  "examples": [
+    { "es": "Estoy orgulloso de ti.", "en": "I'm proud of you." },
+    { "es": "Estoy muy orgullosa de que hayas terminado la carrera.", "en": "I'm very proud that you've finished your degree." },
+    { "es": "Don Hernando está muy orgulloso de que Tomás haya abierto el café.", "en": "Don Hernando is very proud that Tomás has opened the café." },
+    { "es": "¡Qué vista tan espectacular!", "en": "What a spectacular view!" },
+    { "es": "¡Qué ciudad tan linda!", "en": "What a beautiful city!" },
+    { "es": "Es admirable su paciencia.", "en": "Her patience is admirable." }
+  ],
+  "rule": "Pride: *estar orgulloso de* + a person or thing, or *de que* + a perfect subjunctive: *Estoy orgulloso de ti.* *Orgulloso* changes with the person who feels it: *orgullosa* for a woman, *orgullosos* for a group.\n\nAdmiration: *¡Qué* + noun + *tan* + adjective! *¡Qué vista tan espectacular!* English says \"What a\"; Spanish has no *una*.\n\nOr say what is admirable: *Es admirable su paciencia.*",
+  "smallPrint": "Teachers call *¡Qué... tan...!* an exclamative with an intensifier. Spain often says *más* instead of *tan*.",
+  "readAndPick": [
+    { "es": "Estoy orgulloso de ti.", "options": ["You're proud of me.", "I'm proud of you.", "He is proud of you."], "answer": 1 },
+    { "es": "Estoy muy orgullosa de que hayas terminado la carrera.", "options": ["A man says he's very proud that you've finished your degree.", "A woman says she's very proud she has finished her degree.", "A woman says she's very proud that you've finished your degree."], "answer": 2 },
+    { "es": "¡Qué vista tan espectacular!", "options": ["Which view is spectacular?", "What spectacular views!", "What a spectacular view!"], "answer": 2 },
+    { "es": "Don Hernando está muy orgulloso de que Tomás haya abierto el café.", "options": ["Tomás is very proud that Don Hernando has opened the café.", "Don Hernando is very proud that Tomás has opened the café.", "Don Hernando is very proud of opening the café."], "answer": 1 },
+    { "es": "Estamos muy orgullosos de ti.", "options": ["I am very proud of you.", "They are very proud of you.", "We are very proud of you."], "answer": 2 },
+    { "es": "¡Qué ciudad tan linda!", "options": ["What a beautiful city!", "Which city is beautiful?", "What beautiful cities!"], "answer": 0 },
+    { "es": "Estoy orgullosa de mi abuela.", "options": ["A man says he's proud of his grandmother.", "A woman says she's proud of her grandmother.", "A woman says her grandmother is proud of her."], "answer": 1 },
+    { "es": "Es admirable su paciencia.", "options": ["Her patience is limited.", "Patience is admirable.", "Her patience is admirable."], "answer": 2 },
+    { "es": "¿Estás orgullosa de tu hija?", "options": ["Is she proud of her daughter?", "Are you proud of your daughter? (to a woman)", "Am I proud of my daughter?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "A woman is speaking. Choose *orgulloso* or *orgullosa* and type the whole sentence: *Estoy ___ de ti.* (I'm proud of you.)", "answer": "Estoy orgullosa de ti.", "accept": [], "why": "She is a woman, so the ending is *-a*." },
+    { "prompt": "Choose *tan* or *muy* and type the whole sentence: *¡Qué calle ___ bonita!* (What a pretty street!)", "answer": "¡Qué calle tan bonita!", "accept": [], "why": "In \"What a...!\" frames, *tan* sits between the noun and the adjective." },
+    { "prompt": "Type in Spanish, a man speaking to a friend: I'm proud of you.", "answer": "Estoy orgulloso de ti.", "accept": [], "why": "A man says *orgulloso*, and \"of\" is *de*." },
+    { "prompt": "Type in Spanish: What a spectacular view!", "answer": "¡Qué vista tan espectacular!", "accept": [], "why": "*¡Qué* + noun + *tan* + adjective, with no *una*." },
+    { "prompt": "Type in Spanish: What a beautiful city!", "answer": "¡Qué ciudad tan linda!", "accept": ["¡Qué ciudad tan bonita!"], "why": "Same frame, new noun and adjective." },
+    { "prompt": "Make it about all of us: *Estoy orgulloso de ti.* (We are proud of you.)", "answer": "Estamos orgullosos de ti.", "accept": ["Estamos orgullosas de ti."], "why": "A group takes *estamos* and the plural ending *-os* (or *-as* for women only)." },
+    { "prompt": "Type in Spanish, a man speaking to a friend: I'm very proud that you've come.", "answer": "Estoy muy orgulloso de que hayas venido.", "accept": [], "why": "*De que* is followed by the perfect subjunctive: *hayas venido*." },
+    { "prompt": "Type in Spanish: Her patience is admirable.", "answer": "Es admirable su paciencia.", "accept": ["Su paciencia es admirable."], "why": "*Es admirable* names the quality, then what has it." }
+  ],
+  "pitfalls": [
+    { "wrong": "Estoy orgulloso en ti.", "right": "Estoy orgulloso de ti.", "why": "Almost. English says \"proud of\", and Spanish matches it with *de*." },
+    { "wrong": "¡Qué una vista tan espectacular!", "right": "¡Qué vista tan espectacular!", "why": "Almost. English says \"What a view\", but Spanish drops the *una*." },
+    { "wrong": "Estoy muy orgulloso de que has venido.", "right": "Estoy muy orgulloso de que hayas venido.", "why": "Almost. A feeling about a fact takes the subjunctive: *hayas venido*." }
+  ],
+  "personal": "Think of someone close to you and say you are proud of them, using *Estoy orgulloso de...* or *Estoy orgullosa de...*."
+}

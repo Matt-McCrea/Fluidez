@@ -1,0 +1,43 @@
+{
+  "node": "p:la-cara-que-puso",
+  "hook": {
+    "line": "Don Hernando does not tell a story, he performs it. At the best part he stops, shakes his head and lets one line do all the work.",
+    "es": "¡La cara que puso!",
+    "en": "You should have seen his face!"
+  },
+  "examples": [
+    { "es": "¡La cara que puso!", "en": "You should have seen his face!" },
+    { "es": "¡Las cosas que dices!", "en": "The things you say!" },
+    { "es": "¡Tienes cada idea!", "en": "The ideas you come up with!" },
+    { "es": "¡Con el frío que hace!", "en": "With how cold it is!" },
+    { "es": "¡El susto que me llevé!", "en": "What a fright I got!" },
+    { "es": "¡Hernando tiene cada historia!", "en": "The stories Hernando comes up with!" }
+  ],
+  "rule": "When you can hardly believe how much of something there was, name it with *el / la / los / las* + noun + *que* + verb: *¡La cara que puso!*\n\nThe article does not point at one particular face. It turns up the volume, and you leave the sentence hanging.\n\nFor what a person comes up with, use *tener cada* + a singular noun: *¡Tienes cada idea!*\n\nStart with *con* for \"with how...\": *¡Con el frío que hace!*",
+  "smallPrint": "Teachers call this an exclamative with an intensifying definite article.",
+  "readAndPick": [
+    { "es": "¡La cara que puso!", "options": ["You should have seen their faces!", "You should have seen his face!", "Which face did he make?"], "answer": 1 },
+    { "es": "¡Las cosas que dices!", "options": ["The things I say!", "The things you said!", "The things you say!"], "answer": 2 },
+    { "es": "¡Tienes cada idea!", "options": ["The ideas you come up with!", "The ideas he comes up with!", "You have every idea!"], "answer": 0 },
+    { "es": "¡Con el frío que hace!", "options": ["With how cold it was!", "With how cold it is!", "It is cold, so we stay in."], "answer": 1 },
+    { "es": "¡El susto que me llevé!", "options": ["What a fright he got!", "What a fright we got!", "What a fright I got!"], "answer": 2 },
+    { "es": "¡Hernando tiene cada historia!", "options": ["The stories Hernando comes up with!", "The stories I come up with!", "Hernando has only one story!"], "answer": 0 },
+    { "es": "¡La cara que pusieron!", "options": ["You should have seen his face!", "You should have seen their faces!", "You should have seen your face!"], "answer": 1 },
+    { "es": "¡Los chistes que cuenta Hernando!", "options": ["The jokes Hernando told!", "The joke Hernando tells!", "The jokes Hernando tells!"], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "To a friend. Choose *dices* or *dije* and type the whole sentence: *¡Las cosas que ___!* (The things you say!)", "answer": "¡Las cosas que dices!", "accept": [], "why": "You are talking about what your friend says, so *dices*." },
+    { "prompt": "Choose *el* or *un* and type the whole sentence: *¡Con ___ frío que hace!* (With how cold it is!)", "answer": "¡Con el frío que hace!", "accept": [], "why": "The article *el* is the signal; *un* would not make it an exclamation." },
+    { "prompt": "Type in Spanish: You should have seen his face!", "answer": "¡La cara que puso!", "accept": [], "why": "Article + noun + *que* + verb, and you stop there." },
+    { "prompt": "Type in Spanish: What a fright I got!", "answer": "¡El susto que me llevé!", "accept": [], "why": "The same frame works for any noun, with *me llevé* for \"I got\"." },
+    { "prompt": "Type in Spanish, to a friend: The ideas you come up with!", "answer": "¡Tienes cada idea!", "accept": [], "why": "*Tener cada* + a singular noun says \"the ideas you have\"." },
+    { "prompt": "Say it about Hernando: *¡Tienes cada historia!* (The stories Hernando comes up with!)", "answer": "¡Hernando tiene cada historia!", "accept": [], "why": "For a third person, *tienes* becomes *tiene*." },
+    { "prompt": "Type in Spanish: The jokes Hernando tells!", "answer": "¡Los chistes que cuenta Hernando!", "accept": [], "why": "A plural thing takes *los*, and the verb after *que* is his." }
+  ],
+  "pitfalls": [
+    { "wrong": "¡Cara que puso!", "right": "¡La cara que puso!", "why": "Almost. The article is what makes it an exclamation, so keep it." },
+    { "wrong": "¡Tienes cada ideas!", "right": "¡Tienes cada idea!", "why": "Almost. *Cada* always goes with a singular noun." },
+    { "wrong": "¡Con frío que hace!", "right": "¡Con el frío que hace!", "why": "Almost. Keep the article after *con*: *el frío que hace*." }
+  ],
+  "personal": "Think of someone who surprised you recently. React in one line, like Don Hernando, with *¡La cara que puso!* or *¡Tienes cada idea!*."
+}

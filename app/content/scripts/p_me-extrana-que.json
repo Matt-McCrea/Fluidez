@@ -1,0 +1,43 @@
+{
+  "node": "p:me-extrana-que",
+  "hook": {
+    "line": "Tomás has been waiting for Vale all morning and she has not called. In English you would say \"that's odd\". Spanish says it with a frame that always pulls the next verb into the subjunctive.",
+    "es": "Me extraña que Vale no haya llamado.",
+    "en": "It's odd that Vale hasn't called."
+  },
+  "examples": [
+    { "es": "Me extraña que no haya llamado.", "en": "It's odd that he hasn't called." },
+    { "es": "Me sorprende que estés aquí.", "en": "I'm surprised you're here." },
+    { "es": "¡Qué raro que no conteste!", "en": "How strange that she isn't answering!" },
+    { "es": "Me llama la atención que nadie diga nada.", "en": "I find it striking that nobody says anything." },
+    { "es": "Me extraña que Vale no haya venido.", "en": "It's odd that Vale hasn't come." },
+    { "es": "Me extraña que la tienda esté cerrada.", "en": "It's odd that the shop is closed." }
+  ],
+  "rule": "To react with surprise, use *me extraña que*, *me sorprende que*, *me llama la atención que* or *¡Qué raro que...!*\n\nThe next verb goes in the subjunctive, even though the fact is true:\n*estás* becomes *estés*, *contesta* becomes *conteste*, *ha llamado* becomes *haya llamado*.\n\nEnglish keeps the plain verb (\"I'm surprised you're here\"). Spanish changes it. The surprise works like *gustar*: the odd thing is what causes it and you are *me*.",
+  "smallPrint": "Teachers call this the subjunctive of emotional reaction. It is used even when the fact is not in doubt.",
+  "readAndPick": [
+    { "es": "Me extraña que no haya llamado.", "options": ["It's odd that he doesn't call.", "It's odd that he hasn't called.", "It's odd that he called."], "answer": 1 },
+    { "es": "Me sorprende que estés aquí.", "options": ["I'm surprised I'm here.", "I'm surprised you were here.", "I'm surprised you're here."], "answer": 2 },
+    { "es": "¡Qué raro que no conteste!", "options": ["How strange that she didn't answer!", "How strange that she isn't answering!", "How strange that I'm not answering!"], "answer": 1 },
+    { "es": "Me llama la atención que nadie diga nada.", "options": ["I find it striking that nobody said anything.", "I find it striking that somebody says something.", "I find it striking that nobody says anything."], "answer": 2 },
+    { "es": "Me extraña que Vale no haya venido.", "options": ["It's odd that Vale hasn't come.", "It's odd that Vale isn't coming.", "It's odd that Vale came."], "answer": 0 },
+    { "es": "Me sorprende que hayas vuelto.", "options": ["I'm surprised you're coming back.", "I'm surprised he's come back.", "I'm surprised you've come back."], "answer": 2 },
+    { "es": "Me extraña que la tienda esté cerrada.", "options": ["It's odd that the shop has closed.", "It's odd that the shop is closed.", "It's odd that the shop was closed."], "answer": 1 },
+    { "es": "¡Qué extraño que Simón no hable!", "options": ["How odd that Simón doesn't talk!", "How odd that Simón hasn't talked!", "How odd that Simón talks!"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *estás* or *estés* and type the whole sentence: *Me sorprende que ___ aquí.* (I'm surprised you're here.)", "answer": "Me sorprende que estés aquí.", "accept": [], "why": "After *me sorprende que*, the verb goes into the subjunctive: *estés*." },
+    { "prompt": "Choose *ha llamado* or *haya llamado* and type the whole sentence: *Me extraña que no ___.* (It's odd that he hasn't called.)", "answer": "Me extraña que no haya llamado.", "accept": [], "why": "*Haya* is the subjunctive helper for \"hasn't done\"." },
+    { "prompt": "Type in Spanish: How strange that she isn't answering!", "answer": "¡Qué raro que no conteste!", "accept": ["¡Qué extraño que no conteste!"], "why": "*¡Qué raro que...!* also takes the subjunctive: *conteste*." },
+    { "prompt": "Type in Spanish: I find it striking that nobody says anything.", "answer": "Me llama la atención que nadie diga nada.", "accept": [], "why": "*Me llama la atención que* is another surprise frame, so *diga*." },
+    { "prompt": "Type in Spanish: It's odd that Vale hasn't come.", "answer": "Me extraña que Vale no haya venido.", "accept": [], "why": "*Me extraña que* + the perfect subjunctive for something that has not happened." },
+    { "prompt": "Say it about Hernando: *Me extraña que Vale no haya venido.* (It's odd that Hernando hasn't come.)", "answer": "Me extraña que Hernando no haya venido.", "accept": [], "why": "Only the name changes; *haya* is the same for he, she and you (formal)." },
+    { "prompt": "Type in Spanish, to a friend: I'm surprised you've come back.", "answer": "Me sorprende que hayas vuelto.", "accept": [], "why": "For *tú*, *haya* becomes *hayas*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me extraña que no ha llamado.", "right": "Me extraña que no haya llamado.", "why": "Almost. A reaction to a fact still takes the subjunctive, so *ha* becomes *haya*." },
+    { "wrong": "Me sorprende que estás aquí.", "right": "Me sorprende que estés aquí.", "why": "Almost. English keeps \"you're\", but Spanish switches to *estés*." },
+    { "wrong": "Extraño que no haya llamado.", "right": "Me extraña que no haya llamado.", "why": "Almost. *Extraño* alone means \"I miss\"; to be surprised you need *me extraña*." }
+  ],
+  "personal": "Think of something that surprised you this week and say it with *Me extraña que...* or *Me sorprende que...*."
+}

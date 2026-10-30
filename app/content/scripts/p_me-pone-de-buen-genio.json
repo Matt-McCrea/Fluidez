@@ -1,0 +1,43 @@
+{
+  "node": "p:me-pone-de-buen-genio",
+  "hook": {
+    "line": "Ask a Bogotano why they are grumpy and the answer is usually the traffic. Spanish blames the cause: it does the putting, you just end up in the mood.",
+    "es": "El tráfico de Bogotá me pone de mal genio.",
+    "en": "Bogotá traffic puts me in a bad mood."
+  },
+  "examples": [
+    { "es": "La lluvia me pone de mal genio.", "en": "Rain puts me in a bad mood." },
+    { "es": "Esa canción me pone de buen humor.", "en": "That song puts me in a good mood." },
+    { "es": "Madrugar me pone de mal genio.", "en": "Getting up early puts me in a bad mood." },
+    { "es": "El olor del café me pone de buen genio.", "en": "The smell of coffee puts me in a good mood." },
+    { "es": "Los lunes me ponen de mal genio.", "en": "Mondays put me in a bad mood." },
+    { "es": "¿Qué te pone de buen humor?", "en": "What puts you in a good mood?" }
+  ],
+  "rule": "To say what sets your mood, use *poner* + *de* + *buen* or *mal* + *genio* (or *humor*).\n\nThe cause is the subject, and the person gets *me*, *te*, *nos*: *La lluvia me pone de mal genio.* The verb follows the cause: *Los lunes me ponen de mal genio.*\n\nEnglish says \"puts me in a bad mood\"; Spanish adds *de*. Before a masculine noun, *bueno* and *malo* shrink to *buen* and *mal*.\n\nThis is for something that keeps getting to you, not a one-off event.",
+  "smallPrint": "Teachers call this *poner* with a state complement. It works like *gustar*: the cause is the subject and the person is the object.",
+  "readAndPick": [
+    { "es": "La lluvia me pone de mal genio.", "options": ["Rain puts me in a good mood.", "Rain puts me in a bad mood.", "Rain puts me in a calm mood."], "answer": 1 },
+    { "es": "Esa canción me pone de buen humor.", "options": ["That song puts me in a bad mood.", "That song puts me in a good mood.", "That song puts you in a good mood."], "answer": 1 },
+    { "es": "Los lunes me ponen de mal genio.", "options": ["Mondays put me in a bad mood.", "A Monday puts me in a bad mood.", "Mondays put us in a bad mood."], "answer": 0 },
+    { "es": "El ruido nos pone de mal humor.", "options": ["The noise puts me in a bad mood.", "The noise puts them in a bad mood.", "The noise puts us in a bad mood."], "answer": 2 },
+    { "es": "¿Qué te pone de buen humor?", "options": ["What puts me in a good mood?", "What puts you in a good mood?", "What puts you in a bad mood?"], "answer": 1 },
+    { "es": "Madrugar me pone de mal genio.", "options": ["Getting up early puts me in a good mood.", "Getting up early puts me in a bad mood.", "Going to bed late puts me in a bad mood."], "answer": 1 },
+    { "es": "El olor del café me pone de buen genio.", "options": ["The smell of coffee puts me in a bad mood.", "The smell of coffee puts us in a good mood.", "The smell of coffee puts me in a good mood."], "answer": 2 },
+    { "es": "Esperar me pone de muy mal genio.", "options": ["Waiting puts me in a very bad mood.", "Waiting puts me in a bit of a bad mood.", "Waiting puts me in a very good mood."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *mal* or *malo* and type the whole sentence: *Madrugar me pone de ___ genio.* (Getting up early puts me in a bad mood.)", "answer": "Madrugar me pone de mal genio.", "accept": [], "why": "Before a masculine noun like *genio*, *malo* shrinks to *mal*." },
+    { "prompt": "Choose *pone* or *ponen* and type the whole sentence: *Los lunes me ___ de mal genio.* (Mondays put me in a bad mood.)", "answer": "Los lunes me ponen de mal genio.", "accept": [], "why": "The cause is plural (*los lunes*), so the verb is plural." },
+    { "prompt": "Type in Spanish: Rain puts me in a bad mood.", "answer": "La lluvia me pone de mal genio.", "accept": ["La lluvia me pone de mal humor."], "why": "The cause comes first, then *me pone de mal genio*." },
+    { "prompt": "Type in Spanish: That song puts me in a good mood.", "answer": "Esa canción me pone de buen humor.", "accept": ["Esa canción me pone de buen genio."], "why": "*Buen* is the short form of *bueno* before *humor* or *genio*." },
+    { "prompt": "Make it about all of us: *El ruido me pone de mal humor.* (The noise puts us in a bad mood.)", "answer": "El ruido nos pone de mal humor.", "accept": ["Nos pone de mal humor el ruido."], "why": "\"Us\" is *nos*, and it goes before the verb." },
+    { "prompt": "Type in Spanish, to a friend: What puts you in a good mood?", "answer": "¿Qué te pone de buen humor?", "accept": ["¿Qué te pone de buen genio?"], "why": "\"You\" in this frame is *te*." },
+    { "prompt": "Type in Spanish: Mondays put me in a bad mood.", "answer": "Los lunes me ponen de mal genio.", "accept": ["Los lunes me ponen de mal humor."], "why": "Plural cause, plural verb: *ponen*." }
+  ],
+  "pitfalls": [
+    { "wrong": "La lluvia me hace de mal genio.", "right": "La lluvia me pone de mal genio.", "why": "Almost. For \"puts me in a mood\" Spanish uses *poner*, not *hacer*." },
+    { "wrong": "La lluvia me pone en mal genio.", "right": "La lluvia me pone de mal genio.", "why": "Almost. English says \"in a mood\", but Spanish says *de* here." },
+    { "wrong": "Madrugar me pone de malo genio.", "right": "Madrugar me pone de mal genio.", "why": "Almost. *Malo* loses its *-o* in front of a masculine noun: *mal genio*." }
+  ],
+  "personal": "Say one thing that puts you in a good mood and one that puts you in a bad mood, using *me pone de buen humor* and *me pone de mal genio*."
+}
