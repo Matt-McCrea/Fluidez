@@ -1,0 +1,177 @@
+{
+  "node": "x:deberias-vs-deberias-haber",
+  "hook": {
+    "line": "Sometimes you tell a friend what to do next. Sometimes the thing is already done, and what you really mean is \"you should have\". Spanish marks that difference with one small extra word, and mixing it up changes your meaning completely.",
+    "es": "Deberías haberme avisado.",
+    "en": "You should have told me. (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "Deberías llamarla.",
+      "en": "You should call her. (to a friend)"
+    },
+    {
+      "es": "Deberías haberla llamado.",
+      "en": "You should have called her. (to a friend)"
+    },
+    {
+      "es": "Deberías haberme avisado.",
+      "en": "You should have told me. (to a friend)"
+    },
+    {
+      "es": "No deberías haberlo dicho.",
+      "en": "You shouldn't have said it. (to a friend)"
+    },
+    {
+      "es": "Debería haber ido.",
+      "en": "I should have gone."
+    },
+    {
+      "es": "Deberíamos haber salido antes.",
+      "en": "We should have left earlier."
+    }
+  ],
+  "rule": "*Deberías* + infinitive is advice about what to do from now on: *Deberías llamarla.*\n\n*Deberías* + *haber* + participle looks back. The moment has passed, and you are saying it should have gone differently: *Deberías haberla llamado.*\n\nEnglish does the same with \"should call\" and \"should have called\". The classic slip is to use the plain infinitive for something already done, which makes it sound like advice.\n\nOnly *deber* changes with the person: *debería*, *deberías*, *deberíamos*. *Haber* never changes, the participle ends in *-ado* or *-ido*, and pronouns attach to *haber*: *haberla llamado*.",
+  "smallPrint": "Teachers call *deberías haber* + participle the past conditional of *deber*, used for reproach.",
+  "readAndPick": [
+    {
+      "es": "Deberías llamarla.",
+      "options": [
+        "You should have called her.",
+        "You should call her.",
+        "You called her."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Deberías haberla llamado.",
+      "options": [
+        "You should have called her.",
+        "You should call her.",
+        "You will call her."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No deberías haberlo dicho.",
+      "options": [
+        "You shouldn't say it.",
+        "You didn't say it.",
+        "You shouldn't have said it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Debería haber ido.",
+      "options": [
+        "I should have gone.",
+        "I should go.",
+        "I went."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Deberíamos salir antes.",
+      "options": [
+        "We should have left earlier.",
+        "We should leave earlier.",
+        "We left earlier."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Deberíamos haber salido antes.",
+      "options": [
+        "We should leave earlier.",
+        "We left earlier.",
+        "We should have left earlier."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Deberías haberme avisado.",
+      "options": [
+        "You should tell me.",
+        "You should have told me.",
+        "You told me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No deberías comer tanto.",
+      "options": [
+        "You shouldn't eat so much.",
+        "You shouldn't have eaten so much.",
+        "You didn't eat so much."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose the form: *Deberías ___ ahora.* (*llamarla* or *haberla llamado*) Say, to a friend: You should call her.",
+      "answer": "Deberías llamarla.",
+      "accept": [],
+      "why": "It is still to be done, so use the plain infinitive."
+    },
+    {
+      "prompt": "Choose the form: *Deberías ___ ayer.* (*llamarla* or *haberla llamado*) Say, to a friend: You should have called her.",
+      "answer": "Deberías haberla llamado.",
+      "accept": [],
+      "why": "It is already past, so use *haber* + participle."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You should have told me.",
+      "answer": "Deberías haberme avisado.",
+      "accept": [],
+      "why": "The pronoun *me* attaches to *haber*."
+    },
+    {
+      "prompt": "Type in Spanish: I should have gone.",
+      "answer": "Debería haber ido.",
+      "accept": [],
+      "why": "*Debería* is the \"I\" form, then *haber ido*."
+    },
+    {
+      "prompt": "Type in Spanish: We should have left earlier.",
+      "answer": "Deberíamos haber salido antes.",
+      "accept": [],
+      "why": "*Deberíamos* is \"we\", and *haber salido* looks back."
+    },
+    {
+      "prompt": "Make it negative: *Deberías haberlo dicho.* Say, to a friend: You shouldn't have said it.",
+      "answer": "No deberías haberlo dicho.",
+      "accept": [],
+      "why": "Put *no* before *deberías*; the rest stays."
+    },
+    {
+      "prompt": "Look back: *Deberías llamarla.* Say, to a friend: You should have called her.",
+      "answer": "Deberías haberla llamado.",
+      "accept": [],
+      "why": "Add *haber* and turn the infinitive into the participle."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Deberías llamarla ayer.",
+      "right": "Deberías haberla llamado ayer.",
+      "why": "Almost. Something already done needs *haber* + participle; the plain infinitive sounds like advice."
+    },
+    {
+      "wrong": "Deberías haberla llamada.",
+      "right": "Deberías haberla llamado.",
+      "why": "Almost. The participle after *haber* never changes for gender."
+    },
+    {
+      "wrong": "Deberías haber llamarla.",
+      "right": "Deberías haberla llamado.",
+      "why": "Almost. After *haber*, use the participle *llamado*, and the pronoun goes on *haber*."
+    },
+    {
+      "wrong": "Debería haber ido, pero voy mañana.",
+      "right": "Debería haber ido.",
+      "why": "Almost. *Debería haber ido* is only about the past; a plan for tomorrow needs *debería ir*."
+    }
+  ],
+  "personal": "Think of something small you wish you had done differently. Say it with *Debería haber…*, then give a friend one piece of advice for tomorrow with *Deberías…*"
+}

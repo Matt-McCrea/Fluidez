@@ -1,0 +1,174 @@
+{
+  "node": "x:talento-capacidad",
+  "hook": {
+    "line": "At the café, somebody always asks who can do what: who is good with the oven, who can carry fifty chairs, who can say no to a regular. English uses \"good at\" and \"able to\" for all of it, but Spanish has a different phrase for a natural knack, a general skill and one particular act.",
+    "es": "A Vale se le dan muy bien los postres.",
+    "en": "Vale is very good at desserts."
+  },
+  "examples": [
+    {
+      "es": "Se me da bien cocinar.",
+      "en": "I'm good at cooking."
+    },
+    {
+      "es": "Soy bueno para las matemáticas.",
+      "en": "I'm good at maths."
+    },
+    {
+      "es": "Soy capaz de correr diez kilómetros.",
+      "en": "I'm able to run ten kilometres."
+    },
+    {
+      "es": "No fui capaz de decirle la verdad.",
+      "en": "I wasn't able to tell him the truth."
+    },
+    {
+      "es": "A Vale se le dan muy bien los postres.",
+      "en": "Vale is very good at desserts."
+    },
+    {
+      "es": "A Tomás no se le dan bien los números.",
+      "en": "Tomás isn't good with numbers."
+    }
+  ],
+  "rule": "Three ways to talk about ability.\n\n*Se me da bien* + infinitive or noun: a natural knack. The person is the one \"given\" the skill: *me*, *te*, *le*. With a plural noun, *da* becomes *dan*: *no se le dan bien los números*.\n\n*Soy bueno para* + noun or infinitive: a general skill you have built up. A woman says *buena*.\n\n*Ser capaz de* + infinitive: being able to do one particular, often hard, thing. In the past it can mean you managed it, or you could not bring yourself to: *No fui capaz de decírselo*.\n\nThe three are not interchangeable. A knack is not an achievement.",
+  "smallPrint": "Teachers call *se me da bien* a construction with an indirect object, like *me gusta*.",
+  "readAndPick": [
+    {
+      "es": "Se me da bien cocinar.",
+      "options": [
+        "I'm able to cook for ten people.",
+        "I'm good at cooking.",
+        "I cooked well yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Soy capaz de correr diez kilómetros.",
+      "options": [
+        "I'm able to run ten kilometres.",
+        "I'm good at running.",
+        "I like running ten kilometres."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No fui capaz de decirle la verdad.",
+      "options": [
+        "I wasn't good at telling him the truth.",
+        "I never lie to him.",
+        "I wasn't able to tell him the truth."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A Vale se le dan muy bien los postres.",
+      "options": [
+        "Vale is very good at desserts.",
+        "Vale made a dessert once.",
+        "Vale is very good for desserts."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Soy bueno para las matemáticas.",
+      "options": [
+        "I'm good at maths.",
+        "I'm able to do maths today.",
+        "Maths is good for me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A Tomás no se le dan bien los números.",
+      "options": [
+        "Tomás can't count today.",
+        "Tomás isn't good with numbers.",
+        "Tomás wasn't able to count."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana es capaz de escribir tres artículos en un día.",
+      "options": [
+        "Mariana is able to write three articles in one day.",
+        "Mariana is good at writing articles.",
+        "Mariana likes writing three articles."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A mí no se me da bien cantar.",
+      "options": [
+        "I wasn't able to sing.",
+        "I don't dare sing.",
+        "I'm not good at singing."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose the phrase: *___ cocinar.* (*Se me da bien* or *Soy capaz de*) Say: I'm good at cooking.",
+      "answer": "Se me da bien cocinar.",
+      "accept": [],
+      "why": "A natural knack takes *se me da bien*."
+    },
+    {
+      "prompt": "Choose the phrase: *___ correr diez kilómetros.* (*Se me da bien* or *Soy capaz de*) Say: I'm able to run ten kilometres.",
+      "answer": "Soy capaz de correr diez kilómetros.",
+      "accept": [],
+      "why": "One specific hard thing takes *ser capaz de*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm good at maths.",
+      "answer": "Soy bueno para las matemáticas.",
+      "accept": [
+        "Soy buena para las matemáticas."
+      ],
+      "why": "A general skill takes *ser bueno para*."
+    },
+    {
+      "prompt": "Type in Spanish: I wasn't able to tell him the truth.",
+      "answer": "No fui capaz de decirle la verdad.",
+      "accept": [],
+      "why": "One moment where you could not do it takes *no fui capaz de*."
+    },
+    {
+      "prompt": "Type in Spanish: Vale is very good at desserts.",
+      "answer": "A Vale se le dan muy bien los postres.",
+      "accept": [],
+      "why": "The person goes after *a*, and plural *postres* makes it *se le dan*."
+    },
+    {
+      "prompt": "Type in Spanish: Tomás isn't good with numbers.",
+      "answer": "A Tomás no se le dan bien los números.",
+      "accept": [],
+      "why": "The noun is plural, so *da* becomes *dan*."
+    },
+    {
+      "prompt": "Say it as a knack: *Soy bueno para cocinar.* Say: I'm good at cooking.",
+      "answer": "Se me da bien cocinar.",
+      "accept": [],
+      "why": "Swap *soy bueno para* for *se me da bien*; the infinitive stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Soy bien en cocinar.",
+      "right": "Se me da bien cocinar.",
+      "why": "Almost. Spanish does not say \"be good in\"; use *se me da bien* or *soy bueno para*."
+    },
+    {
+      "wrong": "Se me da bien las matemáticas.",
+      "right": "Se me dan bien las matemáticas.",
+      "why": "Almost. The thing you are good at is the subject, so a plural noun needs *dan*."
+    },
+    {
+      "wrong": "Soy capaz en correr diez kilómetros.",
+      "right": "Soy capaz de correr diez kilómetros.",
+      "why": "Almost. *Ser capaz* always joins the next verb with *de*."
+    }
+  ],
+  "personal": "Say one thing that comes naturally to you with *Se me da bien…*, and one hard thing you did once with *Fui capaz de…*"
+}

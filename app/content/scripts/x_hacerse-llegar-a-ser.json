@@ -1,0 +1,172 @@
+{
+  "node": "x:hacerse-llegar-a-ser",
+  "hook": {
+    "line": "People in the neighbourhood love a story about how somebody ended up where they are: the baker who got rich, the waiter who turned grumpy, the cousin who froze up at the wedding. Spanish picks a different verb for each kind of change, and the verb tells the story.",
+    "es": "Vale llegó a ser jefa de cocina.",
+    "en": "Vale eventually became head chef."
+  },
+  "examples": [
+    {
+      "es": "Se hizo rico.",
+      "en": "He got rich."
+    },
+    {
+      "es": "Llegó a ser rico.",
+      "en": "He eventually became rich."
+    },
+    {
+      "es": "Se volvió muy egoísta.",
+      "en": "He became very selfish."
+    },
+    {
+      "es": "Se puso triste.",
+      "en": "He got sad."
+    },
+    {
+      "es": "Mariana se hizo periodista.",
+      "en": "Mariana became a journalist."
+    },
+    {
+      "es": "Vale llegó a ser jefa de cocina.",
+      "en": "Vale eventually became head chef."
+    }
+  ],
+  "rule": "English says \"became\" or \"got\" for everything. Spanish chooses.\n\n*Hacerse*: a change you worked or chose for, such as a job or a belief. *Mariana se hizo periodista.*\n\n*Llegar a ser*: you got there in the end, slowly, often after effort. *Vale llegó a ser jefa de cocina.*\n\n*Volverse*: a deep change in character or situation, usually lasting. *Se volvió muy egoísta.*\n\n*Ponerse*: a temporary state, like a mood or colour. *Se puso triste.*\n\nAll but *llegar a ser* take *se*, which changes with the person: *me hice*, *te hiciste*, *se hizo*.",
+  "smallPrint": "Teachers call these verbs of change, or *verbos de cambio*. *Llegar a ser* is a periphrasis.",
+  "readAndPick": [
+    {
+      "es": "Se puso triste.",
+      "options": [
+        "He got sad (for a moment).",
+        "He became a sad person for good.",
+        "He eventually became sad."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se volvió muy egoísta.",
+      "options": [
+        "He got selfish for a moment.",
+        "His character changed: he became very selfish.",
+        "He worked to become selfish."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana se hizo periodista.",
+      "options": [
+        "Mariana got upset.",
+        "Mariana's character changed.",
+        "Mariana became a journalist."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale llegó a ser jefa de cocina.",
+      "options": [
+        "Vale eventually became head chef.",
+        "Vale got angry in the kitchen.",
+        "Vale was head chef by accident."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás se puso rojo.",
+      "options": [
+        "Tomás eventually became a red person.",
+        "Tomás went red (for a moment).",
+        "Tomás made himself red."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando se volvió callado con los años.",
+      "options": [
+        "Hernando went quiet for a moment.",
+        "Hernando became quiet over the years.",
+        "Hernando made himself quiet."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llegó a ser el mejor vendedor de la calle.",
+      "options": [
+        "He got sad in front of the street.",
+        "He made himself a seller.",
+        "He eventually became the best seller on the street."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mi primo se hizo rico en tres años.",
+      "options": [
+        "My cousin got rich in three years.",
+        "My cousin got nervous in three years.",
+        "My cousin was rich for three years."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose the verb: *___ triste.* (*Se hizo* or *Se puso*) Say: He got sad.",
+      "answer": "Se puso triste.",
+      "accept": [],
+      "why": "Sadness here is a passing state, so use *ponerse*."
+    },
+    {
+      "prompt": "Choose the verb: *Mariana ___ periodista.* (*se puso* or *se hizo*) Say: Mariana became a journalist.",
+      "answer": "Mariana se hizo periodista.",
+      "accept": [],
+      "why": "A job you work toward takes *hacerse*."
+    },
+    {
+      "prompt": "Type in Spanish: He got rich.",
+      "answer": "Se hizo rico.",
+      "accept": [],
+      "why": "Getting rich is something he worked for, so *hacerse*."
+    },
+    {
+      "prompt": "Type in Spanish: Vale eventually became head chef.",
+      "answer": "Vale llegó a ser jefa de cocina.",
+      "accept": [],
+      "why": "*Llegó a ser* says she got there in the end."
+    },
+    {
+      "prompt": "Type in Spanish: He became very selfish.",
+      "answer": "Se volvió muy egoísta.",
+      "accept": [],
+      "why": "A lasting change in character takes *volverse*."
+    },
+    {
+      "prompt": "Say it as a passing mood. Say: He got sad.",
+      "answer": "Se puso triste.",
+      "accept": [],
+      "why": "A passing mood takes *ponerse*, not *volverse*."
+    },
+    {
+      "prompt": "Make it the long road: *Se hizo rico.* Say: He eventually became rich.",
+      "answer": "Llegó a ser rico.",
+      "accept": [],
+      "why": "Swap *se hizo* for *llegó a ser*; there is no *se* with this one."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Se hizo triste.",
+      "right": "Se puso triste.",
+      "why": "Almost. Moods come and go, so Spanish uses *ponerse* for moods."
+    },
+    {
+      "wrong": "Se llegó a ser rico.",
+      "right": "Llegó a ser rico.",
+      "why": "Almost. *Llegar a ser* never takes *se*."
+    },
+    {
+      "wrong": "Se puso muy egoísta para siempre.",
+      "right": "Se volvió muy egoísta.",
+      "why": "Almost. A lasting change in character takes *volverse*, not *ponerse*."
+    }
+  ],
+  "personal": "Think of someone you know who changed. Say what happened with the right verb: *se hizo…*, *llegó a ser…*, *se volvió…* or *se puso…*"
+}

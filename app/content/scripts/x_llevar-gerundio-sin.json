@@ -1,0 +1,177 @@
+{
+  "node": "x:llevar-gerundio-sin",
+  "hook": {
+    "line": "Everyone in the café wants to know how long things have been going on: how long you have lived here, how long since you last slept properly. Spanish asks it with one verb, *llevar*, and a small twist decides whether you are doing something or going without it.",
+    "es": "Llevo tres semanas sin dormir bien.",
+    "en": "I haven't slept well for three weeks."
+  },
+  "examples": [
+    {
+      "es": "Llevo un año estudiando español.",
+      "en": "I've been studying Spanish for a year."
+    },
+    {
+      "es": "Llevo un año sin estudiar.",
+      "en": "I haven't studied for a year."
+    },
+    {
+      "es": "¿Cuánto tiempo llevas viviendo aquí?",
+      "en": "How long have you (to a friend) been living here?"
+    },
+    {
+      "es": "Tomás lleva tres semanas trabajando en el café.",
+      "en": "Tomás has been working at the café for three weeks."
+    },
+    {
+      "es": "Vale lleva dos horas sin descansar.",
+      "en": "Vale hasn't rested for two hours."
+    },
+    {
+      "es": "Llevamos una semana sin ver a Hernando.",
+      "en": "We haven't seen Hernando for a week."
+    }
+  ],
+  "rule": "*Llevar* + a stretch of time says how long something has been going on.\n\nTo say what you have been doing, add a gerund (the *-ando* / *-iendo* form): *Llevo un año estudiando.*\n\nTo say what you have NOT done, add *sin* + infinitive: *Llevo un año sin estudiar.*\n\nEnglish lets \"for a year\" hide the difference. Spanish never uses *no* + gerund here. The *sin* does the negative work for you.\n\n*Llevar* changes with the person: *llevo*, *llevas*, *lleva*, *llevamos*, *llevan*. The time phrase and the second verb never change for person.",
+  "smallPrint": "Teachers call *llevar* + time + gerund a durative periphrasis, and *llevar* + time + *sin* + infinitive its negative mirror.",
+  "readAndPick": [
+    {
+      "es": "Llevo un año sin estudiar.",
+      "options": [
+        "I've been studying for a year.",
+        "I haven't studied for a year.",
+        "I'll study for a year."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llevo un año estudiando.",
+      "options": [
+        "I haven't studied for a year.",
+        "I studied for a year.",
+        "I've been studying for a year."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Llevas una hora sin hablar.",
+      "options": [
+        "You (to a friend) have been talking for an hour.",
+        "You (to a friend) spoke for an hour.",
+        "You (to a friend) haven't spoken for an hour."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hernando lleva dos años viviendo en La Candelaria.",
+      "options": [
+        "Hernando has been living in La Candelaria for two years.",
+        "Hernando hasn't lived in La Candelaria for two years.",
+        "Hernando lived in La Candelaria for two years."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lleva una semana sin llover.",
+      "options": [
+        "It has been raining for a week.",
+        "It hasn't rained for a week.",
+        "It will rain for a week."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana lleva toda la mañana escribiendo.",
+      "options": [
+        "Mariana hasn't written all morning.",
+        "Mariana wrote all morning.",
+        "Mariana has been writing all morning."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Llevamos tres días sin vender nada.",
+      "options": [
+        "We haven't sold anything for three days.",
+        "We have been selling things for three days.",
+        "They haven't sold anything for three days."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuánto tiempo llevan sin hablar con Mariana?",
+      "options": [
+        "How long have you all been talking to Mariana?",
+        "How long have you all gone without talking to Mariana?",
+        "How long did you all talk to Mariana?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose the form: *Llevo un año ___ español.* (*estudiando* or *sin estudiar*) Say: I've been studying Spanish for a year.",
+      "answer": "Llevo un año estudiando español.",
+      "accept": [],
+      "why": "You are doing it, so the gerund *estudiando* goes after *llevo*."
+    },
+    {
+      "prompt": "Choose the form: *Llevo dos semanas ___.* (*fumando* or *sin fumar*) Say: I haven't smoked for two weeks.",
+      "answer": "Llevo dos semanas sin fumar.",
+      "accept": [],
+      "why": "You have gone without it, so use *sin* + infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: Tomás has been working at the café for three weeks.",
+      "answer": "Tomás lleva tres semanas trabajando en el café.",
+      "accept": [],
+      "why": "*Llevar* takes the third person *lleva*, then the time, then the gerund."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: How long have you been living here?",
+      "answer": "¿Cuánto tiempo llevas viviendo aquí?",
+      "accept": [],
+      "why": "*Llevas* is the *tú* form, followed by the gerund *viviendo*."
+    },
+    {
+      "prompt": "Type in Spanish: We haven't seen Hernando for a week.",
+      "answer": "Llevamos una semana sin ver a Hernando.",
+      "accept": [],
+      "why": "*Llevamos* is \"we\", and *sin ver* is \"without seeing\", so there is no *no*."
+    },
+    {
+      "prompt": "Make it about going without: *Llevo un año estudiando.* Say: I haven't studied for a year.",
+      "answer": "Llevo un año sin estudiar.",
+      "accept": [],
+      "why": "Swap the gerund for *sin* + infinitive."
+    },
+    {
+      "prompt": "Make it about going without: *Vale lleva dos horas descansando.* Say: Vale hasn't rested for two hours.",
+      "answer": "Vale lleva dos horas sin descansar.",
+      "accept": [],
+      "why": "Again *sin* + infinitive replaces the gerund; *lleva* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Llevo tres semanas no fumando.",
+      "right": "Llevo tres semanas sin fumar.",
+      "why": "Almost. To say you have gone without, Spanish uses *sin* + infinitive, not *no* + gerund."
+    },
+    {
+      "wrong": "Llevo un año estudiar español.",
+      "right": "Llevo un año estudiando español.",
+      "why": "Almost. After *llevo* + time, the action you have been doing needs the gerund *estudiando*."
+    },
+    {
+      "wrong": "Llevo dos semanas sin fumando.",
+      "right": "Llevo dos semanas sin fumar.",
+      "why": "Almost. *Sin* is always followed by the infinitive, never a gerund."
+    },
+    {
+      "wrong": "Tengo un año estudiando español.",
+      "right": "Llevo un año estudiando español.",
+      "why": "Almost. For how long you have been doing something, Spanish uses *llevar*, not *tener*."
+    }
+  ],
+  "personal": "Think of something you do a lot and something you have given up. Say two true sentences: one with *Llevo… + gerund* and one with *Llevo… sin…*"
+}
