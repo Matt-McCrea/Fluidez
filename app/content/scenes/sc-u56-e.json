@@ -1,0 +1,221 @@
+{
+  "id": "sc-u56-e",
+  "unit": "u56",
+  "title": "Mesa redonda",
+  "brief": "You're Tomás, at a radio round table. Across from you sits a manager from Altamira, polite and polished. You've never met, so use usted. Disagree with him respectfully and keep your points clear.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas noches. Para Altamira, el progreso se mide en viviendas nuevas y empleos. ¿Está usted de acuerdo?",
+      "npcEn": "Good evening. For Altamira, progress is measured in new homes and jobs. Do you agree?",
+      "intent": "Say you agree insofar as that progress does not erase the neighbourhood (use: en la medida en que).",
+      "accept": [
+        "Estoy de acuerdo en la medida en que ese progreso no borre el barrio.",
+        "Sí, en la medida en que no se pierda la memoria de la calle.",
+        "En la medida en que respete a los vecinos, estoy de acuerdo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:en la medida en que)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: en la medida en que"
+        }
+      ],
+      "focus": "p:en-la-medida-en-que",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Y qué propone usted en concreto para el barrio?",
+      "npcEn": "And what do you propose in concrete terms for the neighbourhood?",
+      "intent": "Say that, broadly speaking, the new building should keep the old façade (use: a grandes rasgos).",
+      "accept": [
+        "A grandes rasgos, el edificio nuevo debe conservar la fachada vieja.",
+        "Mi propuesta, a grandes rasgos, es que se conserve la fachada.",
+        "A grandes rasgos, propongo que la fachada antigua se conserve."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:a grandes rasgos)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: a grandes rasgos"
+        }
+      ],
+      "focus": "p:a-grandes-rasgos",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "El progreso depende de las inversiones. Eso es evidente.",
+      "npcEn": "Progress depends on investment. That is obvious.",
+      "intent": "Say that it also depends to a large extent on whether people trust the plans (use: en gran medida).",
+      "accept": [
+        "También depende, en gran medida, de que la gente confíe en los planes.",
+        "Depende en gran medida de la confianza de la gente en los planes.",
+        "En gran medida depende de que los vecinos confíen en el plan."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:en gran medida|en buena medida)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: en gran medida"
+        }
+      ],
+      "focus": "p:en-gran-medida",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Entonces, ¿qué queda por resolver, a su juicio?",
+      "npcEn": "So what remains to be settled, in your view?",
+      "intent": "Say it remains to be settled who decides what is kept (use: queda por resolver).",
+      "accept": [
+        "Queda por resolver quién decide qué se conserva.",
+        "Lo que queda por resolver es quién decide qué se guarda.",
+        "Queda por resolver quién tiene la última palabra sobre la calle."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:queda por resolver|quedan por resolver)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: queda por resolver"
+        }
+      ],
+      "focus": "p:queda-por-resolver",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Respetuoso desacuerdo, entonces. Le dejo mi tarjeta.",
+      "npcEn": "A respectful disagreement, then. I will leave you my card.",
+      "intent": "Take it politely and say you will call after the competition.",
+      "accept": [
+        "Gracias. Lo llamo cuando termine el concurso.",
+        "Muchas gracias; después del concurso lo llamaré.",
+        "Se lo agradezco. Lo llamaré en cuanto termine el concurso."
+      ],
+      "require": [
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:depende",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:estoy-de-acuerdo",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:no-se",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-influence",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:acuerdo",
+    "l:agradecer",
+    "l:antiguo",
+    "l:barrio",
+    "l:buena",
+    "l:calle",
+    "l:concreto",
+    "l:concurso",
+    "l:confianza",
+    "l:confiar",
+    "l:conservar",
+    "l:conservarse",
+    "l:cuanto",
+    "l:deber",
+    "l:decidir",
+    "l:dejar",
+    "l:depender",
+    "l:desacuerdo",
+    "l:después",
+    "l:edificio",
+    "l:empleo",
+    "l:estar",
+    "l:evidente",
+    "l:fachada",
+    "l:gente",
+    "l:gran",
+    "l:grande",
+    "l:guardar",
+    "l:inversión",
+    "l:juicio",
+    "l:llamar",
+    "l:medida",
+    "l:medir",
+    "l:memoria",
+    "l:noche",
+    "l:nuevo",
+    "l:palabra",
+    "l:perderse",
+    "l:plan",
+    "l:progreso",
+    "l:proponer",
+    "l:propuesta",
+    "l:quedar",
+    "l:quién",
+    "l:qué",
+    "l:rasgo",
+    "l:resolver",
+    "l:respetar",
+    "l:respetuoso",
+    "l:ser",
+    "l:tarjeta",
+    "l:tener",
+    "l:terminar",
+    "l:vecino",
+    "l:viejo",
+    "l:vivienda",
+    "p:a-grandes-rasgos",
+    "p:a-mi-juicio",
+    "p:concretar",
+    "p:confiar-en-que",
+    "p:demonstratives-basic",
+    "p:en-gran-medida",
+    "p:en-la-medida-en-que",
+    "p:la-gente-singular",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:precisamente-concretamente",
+    "p:queda-por-resolver",
+    "p:te-lo-agradezco",
+    "p:te-propongo-que",
+    "p:time-sequence-basic",
+    "p:viejo-antiguo-mayor"
+  ]
+}

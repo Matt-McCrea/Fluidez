@@ -1,0 +1,251 @@
+{
+  "id": "sc-u56-d",
+  "unit": "u56",
+  "title": "Entre dos hornadas",
+  "brief": "You're Tomás, on the phone with Vale, who has just read your draft between two batches of bread. She's quick and dry, and she's your friend, so use tú. Answer her questions about the draft.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Leí tu borrador entre dos hornadas. Dices que los arriendos del barrio suben. ¿Qué tanto?",
+      "npcEn": "Vale: I read your draft between two batches. You say the rents in the neighbourhood are going up. How much?",
+      "intent": "Say that the rents have been on the rise since Altamira arrived (use: ir en aumento).",
+      "accept": [
+        "Los arriendos van en aumento desde que llegó Altamira.",
+        "Desde que llegó Altamira, el precio de los arriendos va en aumento.",
+        "Van en aumento, Vale, y cada mes más."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:van en aumento|va en aumento|vamos en aumento|iban en aumento|iba en aumento)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: ir en aumento"
+        }
+      ],
+      "focus": "p:ir-en-aumento",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Y tu tesis sobre el progreso. ¿No suena a nostalgia disfrazada?",
+      "npcEn": "Vale: And your thesis about progress. Does it not sound like disguised nostalgia?",
+      "intent": "Say she has a point, but nostalgia is not your argument (use: no te falta razón).",
+      "accept": [
+        "No te falta razón, pero la nostalgia no es mi argumento.",
+        "No te falta razón, Vale; aun así, mi argumento es otro.",
+        "Algo de razón tienes, pero la nostalgia no es mi argumento."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:no te falta razón|algo de razón tienes)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: no te falta razón"
+        }
+      ],
+      "focus": "p:no-te-falta-razon",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: En mi cocina se prevé lo que va a pasar y se previene lo que sale mal. ¿Y en tu ensayo?",
+      "npcEn": "Vale: In my kitchen you foresee what is going to happen and you prevent what goes wrong. And in your essay?",
+      "intent": "Say that nobody foresaw the sale of the block, but the loss can still be prevented (use: prever and prevenir).",
+      "accept": [
+        "Nadie previó la venta de la cuadra, pero todavía se puede prevenir la pérdida.",
+        "Nadie previó la venta, pero aún podemos prevenir lo peor.",
+        "Nadie lo previó, pero hay que prevenir que se pierda todo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:previó|previeron|preví|previmos|prevé|prevén)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: prever (previó)"
+        },
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:prevenir|previene|previenen|prevenimos|prevengamos)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: prevenir"
+        }
+      ],
+      "focus": "p:prever-prevenir",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Oye, ¿y no te da miedo leerlo en voz alta delante de tanta gente?",
+      "npcEn": "Vale: Listen, are you not afraid of reading it aloud in front of so many people?",
+      "intent": "Say it scares you a little, and at the same time it excites you (use: al tiempo que or a la vez que).",
+      "accept": [
+        "Me da miedo, al tiempo que me emociona.",
+        "Un poco, sí. Tengo miedo a la vez que muchas ganas.",
+        "Me asusta un poco, al tiempo que me hace mucha ilusión."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:al tiempo que|a la vez que)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: al tiempo que or a la vez que"
+        }
+      ],
+      "focus": "p:al-tiempo-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Ven mañana temprano y te guardo una empanada. ¿Te animas?",
+      "npcEn": "Vale: Come early tomorrow and I'll save you an empanada. Are you in?",
+      "intent": "Say yes and thank her, as a friend.",
+      "accept": [
+        "Claro que me animo, gracias, Vale.",
+        "Sí, gracias. Llego a las siete.",
+        "Con mucho gusto. Gracias, Vale."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted",
+            "ustedes"
+          ],
+          "label": "use tú with a friend, not usted"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:animo",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:me-hace-una-rebajita",
+    "c:me-regala",
+    "c:mucho-gusto",
+    "c:oiga-oye",
+    "c:que-va",
+    "c:se-puede",
+    "c:te-animas",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:commands-tu",
+    "g:concession-despite",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:alto",
+    "l:animar",
+    "l:argumento",
+    "l:arriendo",
+    "l:asustar",
+    "l:aumento",
+    "l:barrio",
+    "l:borrador",
+    "l:claro",
+    "l:cocina",
+    "l:cuadra",
+    "l:dar",
+    "l:decir",
+    "l:delante",
+    "l:disfrazarse",
+    "l:emoción",
+    "l:empanada",
+    "l:ensayo",
+    "l:faltar",
+    "l:ganas",
+    "l:gente",
+    "l:guardar",
+    "l:gusto",
+    "l:hacer",
+    "l:ilusión",
+    "l:ir",
+    "l:leer",
+    "l:llegar",
+    "l:mal",
+    "l:mañana",
+    "l:mes",
+    "l:miedo",
+    "l:nostalgia",
+    "l:oír",
+    "l:pasar",
+    "l:peor",
+    "l:perderse",
+    "l:poder",
+    "l:precio",
+    "l:prevenir",
+    "l:prever",
+    "l:progreso",
+    "l:pérdida",
+    "l:qué",
+    "l:razón",
+    "l:salir",
+    "l:ser",
+    "l:sonar",
+    "l:subir",
+    "l:temprano",
+    "l:tener",
+    "l:tesis",
+    "l:tiempo",
+    "l:venir",
+    "l:venta",
+    "l:vez",
+    "l:voz",
+    "p:a-la-vez",
+    "p:al-tiempo-que",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:entusiasmar-fascinar",
+    "p:indefinites-basic",
+    "p:ir-en-aumento",
+    "p:la-gente-singular",
+    "p:me-da-miedo",
+    "p:me-da-miedo-que",
+    "p:me-te-nos-objects",
+    "p:miedo-a",
+    "p:no-te-falta-razon",
+    "p:otro-no-article",
+    "p:poco-un-poco",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:prever-prevenir",
+    "p:pues-claro-que",
+    "p:quantifiers-basic",
+    "p:quedar-faltar-sobrar",
+    "p:se-puede-me-dejas",
+    "p:telling-time",
+    "p:tener-hambre",
+    "p:veces-al",
+    "p:ver-oir-bien-mal",
+    "p:ya-todavia-basic"
+  ]
+}

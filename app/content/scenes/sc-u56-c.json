@@ -1,0 +1,218 @@
+{
+  "id": "sc-u56-c",
+  "unit": "u56",
+  "title": "Ante el jurado",
+  "brief": "You're Tomás, reading your essay in public at the newspaper's hall. A member of the jury asks the questions and speaks formally, so use usted. Defend your argument with concessions and consequences.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas noches y bienvenido. ¿Qué defiende su ensayo, en pocas palabras?",
+      "npcEn": "Good evening and welcome. What does your essay defend, in a few words?",
+      "intent": "Say that a city forgets quickly, so it repeats its mistakes (use: de ahí que, de manera que or por consiguiente).",
+      "accept": [
+        "Una ciudad olvida muy rápido, de manera que repite sus errores.",
+        "La ciudad olvida con rapidez; de ahí que repita sus errores.",
+        "Las ciudades olvidan pronto, por consiguiente repiten sus errores."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:de ahí que|de manera que|de modo que|por consiguiente|así pues)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: de ahí que, de manera que or por consiguiente"
+        }
+      ],
+      "focus": "g:consecutive-advanced",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Algunos dirán que usted es un nostálgico. ¿Qué responde?",
+      "npcEn": "Some will say you are a nostalgic. What do you answer?",
+      "intent": "Say that however nostalgic they call you, you defend the future of the neighbourhood (use: por muy ... que or por mucho que).",
+      "accept": [
+        "Por muy nostálgico que me llamen, defiendo el futuro del barrio.",
+        "Por mucho que me llamen nostálgico, lo que defiendo es el futuro del barrio.",
+        "Por muy nostálgico que parezca, defiendo el futuro de este barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:por muy \\p{L}+ que|por mucho que)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: por muy ... que or por mucho que"
+        }
+      ],
+      "focus": "g:concessive-advanced",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Los vecinos de la calle protestaron esta semana. ¿Por qué lo hicieron?",
+      "npcEn": "The neighbours on the street protested this week. Why did they do it?",
+      "intent": "Say nobody asked them, hence the protest (use: de ahí que + subjunctive).",
+      "accept": [
+        "Nadie les preguntó; de ahí que protesten.",
+        "Nadie preguntó a los vecinos, de ahí que hayan protestado.",
+        "No los escucharon, de ahí que protesten con tanta fuerza."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:de ahí que)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: de ahí que"
+        }
+      ],
+      "focus": "g:consecutive-advanced",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Su abuela dejó cartas sin enviar. ¿Las leyó antes de escribir el ensayo?",
+      "npcEn": "Your grandmother left unsent letters. Did you read them before writing the essay?",
+      "intent": "Say that even though it was hard, you read them all (use: si bien or aun cuando).",
+      "accept": [
+        "Si bien fue difícil, las leí todas.",
+        "Aun cuando me dolió, las leí todas antes de escribir.",
+        "Las leí todas, si bien me costó mucho."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:si bien|aun cuando|por mucho que)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: si bien or aun cuando"
+        }
+      ],
+      "focus": "g:concessive-advanced",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Gracias, el jurado decidirá ahora. ¿Quiere decir algo más?",
+      "npcEn": "Thank you, the jury will now decide. Do you want to say anything else?",
+      "intent": "Thank the jury politely and say you are glad to be here.",
+      "accept": [
+        "Solo darles las gracias. Me alegra mucho estar aquí.",
+        "Muchas gracias por escucharme. Estoy muy contento de estar aquí.",
+        "Gracias a todos ustedes. Para mí ha sido un honor."
+      ],
+      "require": [
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:algo-mas",
+    "c:bien-y-tu",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "g:concessive-advanced",
+    "g:consecutive-advanced",
+    "g:consequence-connectors",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-concessive",
+    "g:subj-perfect",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:abuela",
+    "l:ahora",
+    "l:ahí",
+    "l:alegrar",
+    "l:antes",
+    "l:aquí",
+    "l:barrio",
+    "l:bien",
+    "l:bienvenido",
+    "l:buena",
+    "l:calle",
+    "l:carta",
+    "l:ciudad",
+    "l:consiguiente",
+    "l:contento",
+    "l:costar",
+    "l:dar",
+    "l:decidir",
+    "l:decir",
+    "l:defender",
+    "l:dejar",
+    "l:difícil",
+    "l:doler",
+    "l:ensayo",
+    "l:enviar",
+    "l:error",
+    "l:escribir",
+    "l:escuchar",
+    "l:estar",
+    "l:fuerza",
+    "l:futuro",
+    "l:hacer",
+    "l:honor",
+    "l:jurado",
+    "l:leer",
+    "l:llamar",
+    "l:manera",
+    "l:noche",
+    "l:olvidar",
+    "l:palabra",
+    "l:parecer",
+    "l:preguntar",
+    "l:pronto",
+    "l:protestar",
+    "l:querer",
+    "l:qué",
+    "l:rapidez",
+    "l:repetir",
+    "l:responder",
+    "l:rápido",
+    "l:semana",
+    "l:ser",
+    "l:vecino",
+    "p:aqui-ahi-alla",
+    "p:contento-con-de",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:doler",
+    "p:gracias-por",
+    "p:lo-que-cosa-que",
+    "p:me-duele",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:sobre-todo-solo"
+  ]
+}

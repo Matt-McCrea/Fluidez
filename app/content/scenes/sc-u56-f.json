@@ -1,0 +1,231 @@
+{
+  "id": "sc-u56-f",
+  "unit": "u56",
+  "title": "Ventanilla de inscripción",
+  "brief": "You're Tomás, at the desk of the newspaper, registering your essay for the competition. The clerk is brisk and formal, so use usted. Give the details she asks for, one by one.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes. Para inscribir el ensayo necesito el título. ¿Cómo se llama?",
+      "npcEn": "Good afternoon. To register the essay I need the title. What is it called?",
+      "intent": "Say the essay is called \"La calle que recuerda\".",
+      "accept": [
+        "Se llama La calle que recuerda.",
+        "El título es La calle que recuerda.",
+        "La calle que recuerda, señora."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:la calle que recuerda)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "the title is: La calle que recuerda"
+        }
+      ],
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Muy bien. Ahora el resumen: empiécelo como se hace en un trabajo serio. ¿Cómo lo empieza?",
+      "npcEn": "Very good. Now the summary: begin it the way it is done in a serious paper. How do you begin it?",
+      "intent": "Begin the summary with \"El presente trabajo\" and say it focuses on memory in La Candelaria.",
+      "accept": [
+        "El presente trabajo se centra en la memoria de La Candelaria.",
+        "El presente trabajo trata de la memoria en La Candelaria.",
+        "El presente trabajo analiza la memoria del barrio de La Candelaria."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:el presente trabajo)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "begin with: El presente trabajo"
+        }
+      ],
+      "focus": "p:el-presente-trabajo",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Perfecto. El reglamento limita el texto a tres mil palabras. ¿Tiene alguna duda sobre eso?",
+      "npcEn": "Perfect. The rules limit the text to three thousand words. Do you have any doubt about that?",
+      "intent": "Ask whether the notes count in the word limit.",
+      "accept": [
+        "¿Las notas cuentan en el límite de palabras?",
+        "¿El límite incluye también las notas?",
+        "Sí, una duda: ¿se cuentan las notas dentro del límite?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:notas)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "ask about the notes"
+        }
+      ],
+      "focus": "g:questions",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Cuentan, sí. Y dígame, ¿qué planes tiene para el texto después del concurso?",
+      "npcEn": "They count, yes. And tell me, what plans do you have for the text after the competition?",
+      "intent": "Say that in the short term you want to read it aloud, but in the long run you want to publish it (use: a corto plazo and a largo plazo).",
+      "accept": [
+        "A corto plazo quiero leerlo en voz alta, y a largo plazo publicarlo.",
+        "A corto plazo, leerlo en público; a largo plazo, convertirlo en libro.",
+        "Quiero leerlo a corto plazo y, a largo plazo, publicarlo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:a corto plazo)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: a corto plazo"
+        },
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:a largo plazo|a la larga)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: a largo plazo"
+        }
+      ],
+      "focus": "p:plazos",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Aquí tiene su comprobante. Mucha suerte, joven.",
+      "npcEn": "Here is your receipt. Good luck, young man.",
+      "intent": "Thank her and say goodbye, politely.",
+      "accept": [
+        "Muchas gracias, señora. Que tenga buena tarde.",
+        "Gracias por su ayuda. Hasta luego.",
+        "Se lo agradezco mucho. Hasta pronto."
+      ],
+      "require": [
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-largo-plazo",
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:mucha-suerte",
+    "c:quiero",
+    "c:se-llama",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:indefinites",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-wishes",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "l:agradecer",
+    "l:ahora",
+    "l:alto",
+    "l:analizar",
+    "l:aquí",
+    "l:ayuda",
+    "l:barrio",
+    "l:bien",
+    "l:buena",
+    "l:calle",
+    "l:centrar",
+    "l:concurso",
+    "l:contar",
+    "l:convertir",
+    "l:corto",
+    "l:cómo",
+    "l:decir",
+    "l:dentro",
+    "l:después",
+    "l:duda",
+    "l:empezar",
+    "l:ensayo",
+    "l:hacerse",
+    "l:incluir",
+    "l:inscribirse",
+    "l:joven",
+    "l:largo",
+    "l:leer",
+    "l:libro",
+    "l:limitar",
+    "l:llamarse",
+    "l:límite",
+    "l:memoria",
+    "l:necesitar",
+    "l:nota",
+    "l:palabra",
+    "l:perfecto",
+    "l:plan",
+    "l:plazo",
+    "l:presente",
+    "l:pronto",
+    "l:publicar",
+    "l:público",
+    "l:querer",
+    "l:qué",
+    "l:recordar",
+    "l:reglamento",
+    "l:resumen",
+    "l:ser",
+    "l:serio",
+    "l:señora",
+    "l:suerte",
+    "l:tarde",
+    "l:tener",
+    "l:texto",
+    "l:trabajo",
+    "l:tratar",
+    "l:título",
+    "l:voz",
+    "p:cerca-de",
+    "p:demonstratives-basic",
+    "p:el-presente-trabajo",
+    "p:gracias-por",
+    "p:la-cara-que-puso",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:plazos",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:recordar-acordarse",
+    "p:se-trata-de",
+    "p:te-lo-agradezco",
+    "p:time-sequence-basic",
+    "p:tratar-de",
+    "p:ver-oir-bien-mal"
+  ]
+}

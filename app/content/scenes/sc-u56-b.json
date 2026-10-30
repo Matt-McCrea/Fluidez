@@ -1,0 +1,226 @@
+{
+  "id": "sc-u56-b",
+  "unit": "u56",
+  "title": "De quién es la calle",
+  "brief": "You're Tomás, at the café with Don Hernando, who loves a good argument and speaks courtly Spanish. He's much older, so use usted. Defend your idea that a street belongs to everyone and meet his objections.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Joven, usted escribe que la calle es de todos. ¿Qué se entiende por eso, exactamente?",
+      "npcEn": "Hernando: Young man, you write that the street belongs to everyone. What is understood by that, exactly?",
+      "intent": "Define it: a public street is understood to be a space nobody can close (use: se entiende por).",
+      "accept": [
+        "Se entiende por calle pública un espacio que nadie puede cerrar.",
+        "Se entiende por calle de todos un lugar que nadie puede cerrar, don Hernando.",
+        "Por calle pública se entiende un espacio que nadie puede cerrar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:se entiende por|por [^.]{1,30} se entiende)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: se entiende por"
+        }
+      ],
+      "focus": "p:se-entiende-por",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Pero los vecinos pagan impuestos, y eso les da derechos sobre la calle.",
+      "npcEn": "Hernando: But the neighbours pay taxes, and that gives them rights over the street.",
+      "intent": "Concede it, then answer: although they pay taxes, the street is not for sale (use: si bien, por mucho que or aun cuando).",
+      "accept": [
+        "Si bien los vecinos pagan impuestos, la calle no se vende.",
+        "Por mucho que paguen impuestos, nadie puede comprar la calle.",
+        "Aun cuando paguen impuestos, la calle sigue siendo de todos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:si bien|por mucho que|aun cuando|por muy \\p{L}+ que)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: si bien, por mucho que or aun cuando"
+        }
+      ],
+      "focus": "g:concessive-advanced",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Altamira dice que sus obras traen progreso. ¿Usted qué responde?",
+      "npcEn": "Hernando: Altamira says its works bring progress. What do you answer?",
+      "intent": "Say that we cannot overlook what is lost (use: pasar por alto).",
+      "accept": [
+        "No podemos pasar por alto lo que se pierde.",
+        "Nadie debería pasar por alto lo que se pierde con esas obras.",
+        "Si pasamos por alto lo que se pierde, el progreso sale muy caro."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:pasar por alto|pasamos por alto|pasan por alto|pasa por alto|pasó por alto|pasaron por alto)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: pasar por alto"
+        }
+      ],
+      "focus": "p:pasar-por-alto",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Entonces, ¿qué debe hacer el barrio con una empresa tan grande?",
+      "npcEn": "Hernando: So what should the neighbourhood do about such a big company?",
+      "intent": "Say the neighbourhood has to face the company together (use: hacer frente a).",
+      "accept": [
+        "El barrio tiene que hacerle frente unido.",
+        "Hay que hacer frente a Altamira entre todos los vecinos.",
+        "Los vecinos debemos hacer frente a la empresa juntos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:hacer frente|hacerle frente|hacerles frente|hacemos frente|hace frente|hacen frente|haremos frente)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: hacer frente a"
+        }
+      ],
+      "focus": "p:hacer-frente-a",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Me ha convencido a medias, pero hablaré bien de su ensayo en la mesa de dominó. ¿Le sirvo otro tinto?",
+      "npcEn": "Hernando: You've half convinced me, but I will speak well of your essay at the domino table. Shall I pour you another coffee?",
+      "intent": "Thank him and accept, politely.",
+      "accept": [
+        "Sí, gracias, don Hernando. Esta vez invito yo.",
+        "Con mucho gusto, y gracias por escucharme.",
+        "Claro que sí, muchas gracias."
+      ],
+      "require": [
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:mucho-gusto",
+    "c:no-se",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:cause-result",
+    "g:concessive-advanced",
+    "g:conditional",
+    "g:demonstratives",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-concessive",
+    "g:subj-cuando-future",
+    "g:subj-wanting",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:alto",
+    "l:barrio",
+    "l:bien",
+    "l:calle",
+    "l:caro",
+    "l:cerrar",
+    "l:claro",
+    "l:comprar",
+    "l:convencer",
+    "l:dar",
+    "l:deber",
+    "l:decir",
+    "l:derecho",
+    "l:dominó",
+    "l:empresa",
+    "l:ensayo",
+    "l:entender",
+    "l:escribir",
+    "l:escuchar",
+    "l:espacio",
+    "l:exactamente",
+    "l:frente",
+    "l:grande",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:impuesto",
+    "l:invitar",
+    "l:joven",
+    "l:juntos",
+    "l:lugar",
+    "l:media",
+    "l:mesa",
+    "l:obra",
+    "l:pagar",
+    "l:pasar",
+    "l:perderse",
+    "l:poder",
+    "l:progreso",
+    "l:público",
+    "l:qué",
+    "l:responder",
+    "l:salir",
+    "l:seguir",
+    "l:ser",
+    "l:servir",
+    "l:tener",
+    "l:tinto",
+    "l:traer",
+    "l:unir",
+    "l:vecino",
+    "l:vender",
+    "l:vez",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:en-oferta",
+    "p:gasto-inversion",
+    "p:gracias-por",
+    "p:hacer-frente-a",
+    "p:llevar-traer",
+    "p:lugar-tiene",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:pasar-por-alto",
+    "p:posicion-precisa",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:repartir-entre",
+    "p:se-entiende-por",
+    "p:seguir-gerundio",
+    "p:senor-don-article",
+    "p:tendrias-que"
+  ]
+}

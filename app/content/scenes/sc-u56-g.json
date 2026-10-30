@@ -1,0 +1,216 @@
+{
+  "id": "sc-u56-g",
+  "unit": "u56",
+  "title": "La caja del baúl",
+  "brief": "You're Tomás, in the attic of the café with your cousin Yesid, who has found a box of Rosa's letters, none of them posted. He's family, so use tú. Tell him what you think, and why it matters to your essay.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Yesid: Primo, encontré una caja con cartas de la abuela. Ninguna tiene sello. ¿Por qué crees que nunca las envió?",
+      "npcEn": "Yesid: Cousin, I found a box of Grandma's letters. None of them has a stamp. Why do you think she never sent them?",
+      "intent": "Say that her silence has its roots in fear (use: tener su raíz en).",
+      "accept": [
+        "Creo que ese silencio tiene su raíz en el miedo.",
+        "Su silencio tiene su raíz en el miedo a que la leyeran.",
+        "Para mí, todo tiene su raíz en el miedo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:tiene su raíz en|tienen su raíz en|tenía su raíz en)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: tener su raíz en"
+        }
+      ],
+      "focus": "p:tener-su-raiz-en",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Yesid: ¿Y tu ensayo? ¿De dónde salió la idea?",
+      "npcEn": "Yesid: And your essay? Where did the idea come from?",
+      "intent": "Say the essay came out of these letters (use: surgir de).",
+      "accept": [
+        "El ensayo surgió de estas cartas.",
+        "La idea surgió de las cartas que escribió la abuela.",
+        "Todo surgió de esta caja, primo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:surgió de|surgieron de|surge de|surgen de)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: surgir de"
+        }
+      ],
+      "focus": "p:surgir-de",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Yesid: Mira esta: dice que la calle es suya porque la recuerda. ¡Qué atrevida!",
+      "npcEn": "Yesid: Look at this one: it says the street is hers because she remembers it. How bold!",
+      "intent": "Say that is so typical of Grandma (use: propio de).",
+      "accept": [
+        "Eso es muy propio de la abuela.",
+        "Es muy propio de ella decir algo así.",
+        "Qué cosa tan propia de la abuela, ¿no?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:propio de|propia de)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: propio de"
+        }
+      ],
+      "focus": "p:propio-de",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Yesid: ¿Tú crees que a la abuela le habría gustado ganar un premio?",
+      "npcEn": "Yesid: Do you think Grandma would have liked to win a prize?",
+      "intent": "Say without a doubt she would have liked it (use: sin lugar a dudas).",
+      "accept": [
+        "Sin lugar a dudas, le habría gustado.",
+        "Sin lugar a dudas, se habría reído de orgullo.",
+        "Le habría gustado, sin lugar a dudas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:sin lugar a dudas)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: sin lugar a dudas"
+        }
+      ],
+      "focus": "c:sin-lugar-a-dudas",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Yesid: Entonces lee una de estas cartas en voz alta el día del concurso. ¿Trato?",
+      "npcEn": "Yesid: Then read one of these letters aloud on the day of the competition. Deal?",
+      "intent": "Agree to the deal, as a family member.",
+      "accept": [
+        "Trato hecho, primo.",
+        "Trato. La leo al final del ensayo.",
+        "Sí, trato hecho. Gracias, Yesid."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted",
+            "ustedes"
+          ],
+          "label": "use tú with a friend, not usted"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:no-cierto",
+    "c:oye-mira",
+    "c:porque",
+    "c:sin-lugar-a-dudas",
+    "c:tienes",
+    "c:tu-crees",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:conditional-perfect",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:imperfect-subj",
+    "g:indefinites",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:relatives-prepositions",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-relative",
+    "g:that-clauses",
+    "l:abuela",
+    "l:alto",
+    "l:atreverse",
+    "l:caja",
+    "l:calle",
+    "l:carta",
+    "l:concurso",
+    "l:cosa",
+    "l:creer",
+    "l:decir",
+    "l:duda",
+    "l:día",
+    "l:dónde",
+    "l:encontrar",
+    "l:ensayo",
+    "l:enviar",
+    "l:escribir",
+    "l:final",
+    "l:ganar",
+    "l:gustar",
+    "l:hacer",
+    "l:idea",
+    "l:leer",
+    "l:leo",
+    "l:lugar",
+    "l:miedo",
+    "l:mirar",
+    "l:orgullo",
+    "l:premio",
+    "l:primo",
+    "l:propio",
+    "l:qué",
+    "l:raíz",
+    "l:recordar",
+    "l:reír",
+    "l:salir",
+    "l:sello",
+    "l:ser",
+    "l:silenciar",
+    "l:silencio",
+    "l:surgir",
+    "l:tener",
+    "l:tratar",
+    "l:voz",
+    "p:con-sin",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:miedo-a",
+    "p:orgulloso-admiracion",
+    "p:para-inf",
+    "p:para-mi",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:propio-de",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:recordar-acordarse",
+    "p:surgir-de",
+    "p:te-habria-gustado-que",
+    "p:tener-su-raiz-en",
+    "p:ver-oir-bien-mal"
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "id": "sc-u56-i",
+  "unit": "u56",
+  "title": "En vivo desde la radio",
+  "brief": "You're Tomás, live on a morning radio show after winning second prize. The host is warm and informal, so use tú. Answer in clear spoken sentences and keep your answers short.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Estamos en vivo con Tomás, segundo premio del concurso. Tomás, ¿qué sentiste cuando te dieron la noticia?",
+      "npcEn": "We are live with Tomás, second prize in the competition. Tomás, what did you feel when they gave you the news?",
+      "intent": "Say that you did not expect it, in the past.",
+      "accept": [
+        "No lo esperaba. Casi no voy a la lectura.",
+        "No esperaba nada, de verdad. Me quedé sin palabras.",
+        "No me lo esperaba para nada, fue una sorpresa enorme."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say you did not expect it"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "imperfecto",
+          "label": "use the past: esperaba"
+        }
+      ],
+      "focus": "g:imperfect-forms",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Tu ensayo habla de progreso y olvido. Dime, ¿qué es una pesadilla urbana para ti?",
+      "npcEn": "Your essay talks about progress and forgetting. Tell me, what is an urban nightmare for you?",
+      "intent": "Say that an urban nightmare is a city where nobody remembers who lived there (use: pesadilla).",
+      "accept": [
+        "Una pesadilla urbana es una ciudad donde nadie recuerda quién vivió allí.",
+        "Para mí, la pesadilla es una ciudad sin memoria.",
+        "Mi pesadilla es una calle donde nadie sabe quién vivía allí."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:pesadilla)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: pesadilla"
+        }
+      ],
+      "focus": "l:pesadilla",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Un oyente dice que tu ensayo es demasiado pesimista. ¿Qué le contestas?",
+      "npcEn": "A listener says your essay is too pessimistic. What do you answer?",
+      "intent": "Answer him: although it is true that things are bad, we must not forget that there is hope (use: si bien es cierto que ... no olvidemos que).",
+      "accept": [
+        "Si bien es cierto que hay problemas, no olvidemos que el barrio también tiene esperanza.",
+        "Si bien es cierto que el panorama es difícil, no olvidemos que todavía hay tiempo.",
+        "Si bien es cierto que perdimos mucho, no olvidemos que aún podemos cuidar lo que queda."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:si bien es cierto que)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: si bien es cierto que"
+        },
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:no olvidemos que|no hay que olvidar que)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: no olvidemos que"
+        }
+      ],
+      "focus": "p:si-bien-no-olvidemos",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Última pregunta: ¿qué consejo le das a quien quiere escribir sobre su ciudad?",
+      "npcEn": "Last question: what advice do you give to someone who wants to write about their city?",
+      "intent": "Give your advice, starting with \"a mi juicio\" and saying to begin with one street.",
+      "accept": [
+        "A mi juicio, hay que empezar por una sola calle.",
+        "A mi juicio, lo mejor es empezar por una calle que uno conozca bien.",
+        "A mi juicio, se empieza con una calle y se termina con la ciudad."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:a mi juicio|a mi entender)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "start with: a mi juicio"
+        }
+      ],
+      "focus": "p:a-mi-juicio",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Gracias, Tomás, y felicidades. Saluda a Hernando de nuestra parte.",
+      "npcEn": "Thank you, Tomás, and congratulations. Say hello to Hernando on our behalf.",
+      "intent": "Thank her and promise to pass on the greeting, as a friend.",
+      "accept": [
+        "Gracias a ti. Le doy tu saludo a Hernando hoy mismo.",
+        "Muchas gracias. Lo saludo de su parte.",
+        "Gracias por invitarme, yo le paso el saludo."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted",
+            "ustedes"
+          ],
+          "label": "use tú with a friend, not usted"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:en-serio",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:lo-mejor-es",
+    "c:oye-mira",
+    "c:para-nada",
+    "c:tienes",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:concessive-advanced",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:possessives",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:quantifiers",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:allí",
+    "l:barrio",
+    "l:bien",
+    "l:calle",
+    "l:ciudad",
+    "l:concurso",
+    "l:conocer",
+    "l:consejo",
+    "l:contestar",
+    "l:cuidar",
+    "l:dar",
+    "l:decir",
+    "l:difícil",
+    "l:empezar",
+    "l:enorme",
+    "l:ensayo",
+    "l:escribir",
+    "l:esperanza",
+    "l:esperar",
+    "l:estar",
+    "l:felicidad",
+    "l:hablar",
+    "l:hoy",
+    "l:invitar",
+    "l:ir",
+    "l:juicio",
+    "l:lectura",
+    "l:mejor",
+    "l:memoria",
+    "l:noticia",
+    "l:olvidar",
+    "l:olvido",
+    "l:oyente",
+    "l:palabra",
+    "l:panorama",
+    "l:parte",
+    "l:pasar",
+    "l:perder",
+    "l:pesadilla",
+    "l:pesimista",
+    "l:poder",
+    "l:pregunta",
+    "l:premio",
+    "l:problema",
+    "l:progreso",
+    "l:quedar",
+    "l:quedarse",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:recordar",
+    "l:saber",
+    "l:saludar",
+    "l:saludo",
+    "l:sentir",
+    "l:ser",
+    "l:sorpresa",
+    "l:tener",
+    "l:terminar",
+    "l:tiempo",
+    "l:unir",
+    "l:urbano",
+    "l:verdad",
+    "l:vivir",
+    "l:vivo",
+    "p:a-mi-juicio",
+    "p:a-mi-modo-de-ver",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:con-sin",
+    "p:cuando-basic",
+    "p:en-mi-opinion",
+    "p:generic-tu-uno",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:no-es-nada-adj",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:para-mi",
+    "p:personal-a",
+    "p:por-culpa-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:recordar-acordarse",
+    "p:saber-conocer",
+    "p:si-bien-no-olvidemos",
+    "p:ya-todavia-basic"
+  ]
+}

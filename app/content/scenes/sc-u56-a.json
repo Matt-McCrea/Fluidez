@@ -1,0 +1,238 @@
+{
+  "id": "sc-u56-a",
+  "unit": "u56",
+  "title": "La primera frase",
+  "brief": "You're Tomás, in the newspaper office with Mariana, who is reading the opening of your essay for the competition. She's a friend your age, so use tú. Defend your thesis in short, clear sentences.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Leí tu primer párrafo. ¿Cuál es tu idea central, dicha en una sola frase?",
+      "npcEn": "Mariana: I read your first paragraph. What is your central idea, said in a single sentence?",
+      "intent": "State your thesis: a city that forgets pays for it (use: tarde o temprano).",
+      "accept": [
+        "Una ciudad que olvida su pasado lo paga tarde o temprano.",
+        "Tarde o temprano, la ciudad paga lo que olvida.",
+        "Mi idea es que, tarde o temprano, el olvido se paga."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:tarde o temprano)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: tarde o temprano"
+        }
+      ],
+      "focus": "c:tarde-o-temprano",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: Mucha gente cree que para avanzar hay que olvidar. ¿Qué piensas de eso?",
+      "npcEn": "Mariana: Many people think that to move forward you have to forget. What do you think about that?",
+      "intent": "Say you agree with them that the city has to grow, but not that it has to forget (use: coincidir en).",
+      "accept": [
+        "Coincido con ellos en que la ciudad tiene que crecer, pero no en que deba olvidar.",
+        "Coincido en que hay que construir, pero no en que haya que olvidar.",
+        "En que la ciudad debe crecer coincido con ellos, pero no en que deba olvidar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:coincido)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: coincido ... en"
+        }
+      ],
+      "focus": "p:coincidir-en",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: Bien. Ahora separa dos ideas: ¿es lo mismo conservar un edificio que recordar a quienes vivieron en él?",
+      "npcEn": "Mariana: Good. Now separate two ideas: is keeping a building the same as remembering the people who lived in it?",
+      "intent": "Say it is one thing to keep a building and quite another to remember its people (use: una cosa es ... y otra).",
+      "accept": [
+        "Una cosa es conservar un edificio y otra muy distinta recordar a su gente.",
+        "Una cosa es guardar las paredes y otra recordar a quienes vivieron en ellas.",
+        "No es lo mismo: una cosa es conservar un edificio y otra recordar a su gente."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:una cosa es)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: una cosa es ... y otra"
+        }
+      ],
+      "focus": "p:una-cosa-es-otra",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: Muy bien. ¿Qué pregunta debe quedarle al lector cuando termine tu ensayo?",
+      "npcEn": "Mariana: Very good. What question should the reader be left with when your essay ends?",
+      "intent": "Pose the question: can a city move forward without remembering? (use: cabe preguntarse si).",
+      "accept": [
+        "Cabe preguntarse si una ciudad puede avanzar sin recordar.",
+        "Cabe preguntarse si el progreso es posible sin memoria.",
+        "Al final, cabe preguntarse si una ciudad avanza sin recordar su pasado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:cabe preguntarse)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: cabe preguntarse si"
+        }
+      ],
+      "focus": "p:cabe-preguntarse",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Perfecto. Mientras leo tu ensayo, ¿te traigo un tinto?",
+      "npcEn": "Mariana: Perfect. While I read your essay, shall I bring you a coffee?",
+      "intent": "Accept and thank her, as a friend.",
+      "accept": [
+        "Sí, gracias, Mariana. Un tinto me viene muy bien.",
+        "Claro, gracias. Yo espero aquí.",
+        "Con mucho gusto, y gracias por la ayuda."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted",
+            "ustedes"
+          ],
+          "label": "use tú with a friend, not usted"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:es-lo-mismo",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:mucho-gusto",
+    "c:tarde-o-temprano",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:indirect-questions",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:aquí",
+    "l:avanzar",
+    "l:ayuda",
+    "l:bien",
+    "l:caber",
+    "l:central",
+    "l:ciudad",
+    "l:claro",
+    "l:coincidir",
+    "l:conservar",
+    "l:construir",
+    "l:cosa",
+    "l:crecer",
+    "l:creer",
+    "l:cuál",
+    "l:deber",
+    "l:decir",
+    "l:distinto",
+    "l:edificio",
+    "l:ensayo",
+    "l:esperar",
+    "l:final",
+    "l:frase",
+    "l:gente",
+    "l:guardar",
+    "l:gusto",
+    "l:idea",
+    "l:lector",
+    "l:leer",
+    "l:memoria",
+    "l:olvidar",
+    "l:olvido",
+    "l:pagar",
+    "l:pared",
+    "l:pasado",
+    "l:pensar",
+    "l:perfecto",
+    "l:poder",
+    "l:posible",
+    "l:pregunta",
+    "l:preguntar",
+    "l:progreso",
+    "l:párrafo",
+    "l:quedar",
+    "l:qué",
+    "l:recordar",
+    "l:separar",
+    "l:ser",
+    "l:tarde",
+    "l:temprano",
+    "l:tener",
+    "l:terminar",
+    "l:tinto",
+    "l:traer",
+    "l:venir",
+    "l:vivir",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cabe-preguntarse",
+    "p:caber",
+    "p:coincidir-con-en",
+    "p:coincidir-en",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:la-gente-singular",
+    "p:llevar-traer",
+    "p:lugar-tiene",
+    "p:me-te-nos-objects",
+    "p:medir-pesar-caber",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pensar-en",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:question-word-order",
+    "p:recordar-acordarse",
+    "p:una-cosa-es-otra"
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "id": "sc-u56-h",
+  "unit": "u56",
+  "title": "La placa de Lucía",
+  "brief": "You're Tomás, at the door of Doña Lucía's bakery. She is an older neighbour who wants a plaque for the street, and she speaks warmly but firmly. Use usted. Help her think through what the plaque would mean.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mijo, quiero una placa en la esquina que diga: «Aquí vivió la memoria del barrio». Pero me dicen que una placa no cambia nada. ¿Usted qué opina?",
+      "npcEn": "Dear, I want a plaque on the corner that says: \"The memory of the neighbourhood lived here\". But they tell me a plaque changes nothing. What do you think?",
+      "intent": "Say she has a point, but a plaque starts the conversation (use: no le falta razón).",
+      "accept": [
+        "No le falta razón, doña Lucía, pero una placa empieza la conversación.",
+        "No le falta razón; aun así, la placa abre la conversación.",
+        "Algo de razón tiene, pero una placa es un comienzo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:no le falta razón|algo de razón tiene)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: no le falta razón"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:no-te-falta-razon",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Una placa es solo un pedazo de metal. ¿Qué puede lograr?",
+      "npcEn": "A plaque is only a piece of metal. What can it achieve?",
+      "intent": "Say that a plaque can give rise to conversations (use: dar lugar a).",
+      "accept": [
+        "Puede dar lugar a muchas conversaciones entre los vecinos.",
+        "Una placa da lugar a preguntas, y las preguntas dan lugar a recuerdos.",
+        "Puede dar lugar a una buena discusión en el barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:dar lugar a|da lugar a|dan lugar a|dará lugar a|darán lugar a|daría lugar a)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: dar lugar a"
+        }
+      ],
+      "focus": "p:dar-lugar-a",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hecha la placa, ¿quién paga la instalación?",
+      "npcEn": "Once the plaque is made, who pays for the installation?",
+      "intent": "Say that once the budget is approved, the cooperative will pay (use: una vez + participle).",
+      "accept": [
+        "Una vez aprobado el presupuesto, la cooperativa la paga.",
+        "Una vez aprobado el gasto, pagará la cooperativa.",
+        "Aprobado el presupuesto, la cooperativa se encarga de pagarla."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:una vez \\p{L}+(?:ado|ada|ido|ida|to|ta|so|sa|cho|cha)|aprobad[oa]|terminad[oa])(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use a participle clause: una vez aprobado"
+        }
+      ],
+      "focus": "g:absolute-constructions",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Dicen que la gente valora tarde lo que tiene. ¿Es cierto?",
+      "npcEn": "They say people value late what they have. Is it true?",
+      "intent": "Say that, as a rule, people value what they have lost (use: por lo general).",
+      "accept": [
+        "Por lo general, la gente valora lo que ya ha perdido.",
+        "Por lo general sí, doña Lucía, solo valoramos lo que perdimos.",
+        "En general, valoramos las cosas cuando ya no están."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(?:por lo general|por regla general|en general)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: por lo general"
+        }
+      ],
+      "focus": "p:por-lo-general",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Pues pase mañana por la panadería. Le regalo un pan de yuca para el camino.",
+      "npcEn": "Well, drop by the bakery tomorrow. I will give you a cheese bread for the road.",
+      "intent": "Thank her warmly and say you will go, politely.",
+      "accept": [
+        "Muchas gracias, doña Lucía. Mañana paso sin falta.",
+        "Con mucho gusto, señora. Muchas gracias.",
+        "Qué amable. Mañana voy a verla."
+      ],
+      "require": [
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-cuantas-cuotas",
+    "c:con-mucho-gusto",
+    "c:gracias-de-nada",
+    "c:mucho-gusto",
+    "c:muy-amable",
+    "c:pues",
+    "c:quiero",
+    "c:tienes",
+    "c:una-vez",
+    "c:voy-a",
+    "c:ya-no",
+    "g:commands-usted",
+    "g:concession-despite",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:abrir",
+    "l:amable",
+    "l:aprobar",
+    "l:aquí",
+    "l:barrio",
+    "l:buena",
+    "l:cambiar",
+    "l:camino",
+    "l:comienzo",
+    "l:conversación",
+    "l:cooperativa",
+    "l:cosa",
+    "l:dar",
+    "l:decir",
+    "l:discusión",
+    "l:empezar",
+    "l:encargar",
+    "l:esquina",
+    "l:estar",
+    "l:falta",
+    "l:faltar",
+    "l:gasto",
+    "l:general",
+    "l:gente",
+    "l:gusto",
+    "l:hacer",
+    "l:instalación",
+    "l:ir",
+    "l:lograr",
+    "l:lugar",
+    "l:mañana",
+    "l:memoria",
+    "l:metal",
+    "l:mijo",
+    "l:opinar",
+    "l:pagar",
+    "l:pan",
+    "l:panadería",
+    "l:pasar",
+    "l:pedazo",
+    "l:perder",
+    "l:placa",
+    "l:poder",
+    "l:pregunta",
+    "l:presupuesto",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:razón",
+    "l:recuerdo",
+    "l:regalar",
+    "l:ser",
+    "l:señora",
+    "l:tarde",
+    "l:tener",
+    "l:valorar",
+    "l:vecino",
+    "l:ver",
+    "l:vez",
+    "l:vivir",
+    "l:yuca",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:container-de",
+    "p:cuando-basic",
+    "p:dar-lugar-a",
+    "p:don-dona-nombre",
+    "p:en-general",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:me-contaron-que",
+    "p:me-te-nos-objects",
+    "p:no-te-falta-razon",
+    "p:para-inf",
+    "p:por-lo-general",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:quedar-faltar-sobrar",
+    "p:question-word-order",
+    "p:request-ladder",
+    "p:senor-don-article",
+    "p:sobre-todo-solo"
+  ]
+}
