@@ -1,0 +1,194 @@
+{
+  "node": "g:tanto-como",
+  "hook": {
+    "line": "Altamira is offering a bigger place in Chapinero, and Tomás and Vale are weighing it up on a napkin. To say two things come out even, you need one word that bends to fit the thing you are counting.",
+    "es": "Pero en Chapinero no hay tanta gente como aquí.",
+    "en": "But in Chapinero there aren't as many people as here."
+  },
+  "examples": [
+    {
+      "es": "Trabajo tanto como tú.",
+      "en": "I work as much as you do."
+    },
+    {
+      "es": "No hay tantos clientes como antes.",
+      "en": "There aren't as many customers as before."
+    },
+    {
+      "es": "El apartamento nuevo tiene tanta luz como este.",
+      "en": "The new flat has as much light as this one."
+    },
+    {
+      "es": "¿Tienes tantas cosas como yo?",
+      "en": "Do you have as many things as I do?"
+    },
+    {
+      "es": "Vale no duerme tanto como Tomás.",
+      "en": "Vale doesn't sleep as much as Tomás."
+    },
+    {
+      "es": "En Chapinero hay tanto ruido como aquí.",
+      "en": "In Chapinero there's as much noise as here."
+    },
+    {
+      "es": "Los dos barrios son igual de tranquilos.",
+      "en": "The two neighbourhoods are just as quiet."
+    }
+  ],
+  "rule": "You already know *tan alto como*: as tall as. For as much and as many, Spanish uses *tanto*, and English's two words become one.\n\nBefore a thing, *tanto* matches that thing, just like *mucho*:\n*tanto ruido*, *tanta gente*, *tantos clientes*, *tantas cosas*.\nThen *como*, and the other side: *tanta luz como este*.\n\nAfter a verb, it's simply *tanto como*, and it never changes: *trabajo tanto como tú*.\n\nWhen there's nothing to compare against, *igual de* plus a describing word says just as: *es igual de caro*. Add *que* if you name the other side: *igual de ruidoso que el otro*.\n\nAs with *más que yo*, the other side uses *yo* and *tú*: *tanto como yo*.",
+  "smallPrint": "Teachers call these comparisons of equality. *Tanto* with a thing is the agreeing kind; *tanto* after a verb is the fixed kind.",
+  "readAndPick": [
+    {
+      "es": "Trabajo tanto como tú.",
+      "options": [
+        "I work more than you.",
+        "I work as much as you do.",
+        "You work as much as I do."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No hay tantos clientes como antes.",
+      "options": [
+        "There aren't as many customers as before.",
+        "There are more customers than before.",
+        "There aren't any customers now."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale no duerme tanto como Tomás.",
+      "options": [
+        "Vale sleeps more than Tomás.",
+        "Tomás doesn't sleep as much as Vale.",
+        "Vale doesn't sleep as much as Tomás."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Aquí hay tantas panaderías como en Medellín.",
+      "options": [
+        "There are as many bakeries here as in Medellín.",
+        "There are more bakeries here than in Medellín."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No tengo tanto tiempo como antes.",
+      "options": [
+        "I have more time than before.",
+        "I don't have as much time as before.",
+        "I have as much time as before."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Este barrio es igual de ruidoso que el otro.",
+      "options": [
+        "This neighbourhood is noisier than the other one.",
+        "This neighbourhood is less noisy than the other one.",
+        "This neighbourhood is just as noisy as the other one."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Simón habla tanto como Hernando.",
+      "options": [
+        "Simón talks as much as Hernando.",
+        "Simón talks more than Hernando."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No ganamos tanta plata como antes.",
+      "options": [
+        "We earn more money than before.",
+        "We don't earn as much money as before.",
+        "They don't earn as much money as before."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Tienes tantas cosas como yo?",
+      "options": [
+        "Do I have as many things as you?",
+        "Do you have more things than me?",
+        "Do you have as many things as I do?"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *No hay ___ gente como antes.* (*tanto* or *tanta*) There aren't as many people as before.",
+      "answer": "No hay tanta gente como antes.",
+      "accept": [],
+      "why": "*Gente* is feminine, so *tanta*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Vale trabaja ___ como tú.* (*tanto* or *tanta*) Vale works as much as you do.",
+      "answer": "Vale trabaja tanto como tú.",
+      "accept": [],
+      "why": "It follows a verb, so it's always *tanto*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Hay ___ carros como ayer.* (*tantos* or *tanto*) There are as many cars as yesterday.",
+      "answer": "Hay tantos carros como ayer.",
+      "accept": [],
+      "why": "*Carros* is masculine and more than one, so *tantos*."
+    },
+    {
+      "prompt": "Say: I don't have as much time as before.",
+      "answer": "No tengo tanto tiempo como antes.",
+      "accept": [],
+      "why": "*Tiempo* is masculine and singular, so *tanto*, then *como antes*."
+    },
+    {
+      "prompt": "Say: Don Hernando drinks as much coffee (*tinto*) as I do.",
+      "answer": "Don Hernando toma tanto tinto como yo.",
+      "accept": [],
+      "why": "*Tanto* matches *tinto*, and the other side is *yo*."
+    },
+    {
+      "prompt": "Say: Nobody cooks as much as Vale.",
+      "answer": "Nadie cocina tanto como Vale.",
+      "accept": [],
+      "why": "It comes after the verb *cocina*, so plain *tanto como*."
+    },
+    {
+      "prompt": "Make it equal: *En Chapinero hay más ruido que aquí.*",
+      "answer": "En Chapinero hay tanto ruido como aquí.",
+      "accept": [],
+      "why": "*Más … que* becomes *tanto … como*, and *tanto* matches *ruido*."
+    },
+    {
+      "prompt": "Say: The flat in Chapinero is just as big. (Don't name what it's compared with.)",
+      "answer": "El apartamento de Chapinero es igual de grande.",
+      "accept": [],
+      "why": "*Igual de* plus a describing word means just as, and it doesn't need a *como*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No hay tan gente como antes.",
+      "right": "No hay tanta gente como antes.",
+      "why": "Almost. *Gente* is a thing, so you need *tanta*; *tan* only goes with describing words."
+    },
+    {
+      "wrong": "No hay tanto clientes como antes.",
+      "right": "No hay tantos clientes como antes.",
+      "why": "Before a thing, *tanto* matches it: *clientes* is plural, so *tantos*."
+    },
+    {
+      "wrong": "Trabajo tanto que tú.",
+      "right": "Trabajo tanto como tú.",
+      "why": "Close. *Tanto* pairs with *como*; *que* goes with *más* and *menos*."
+    },
+    {
+      "wrong": "Trabajo tanta como tú.",
+      "right": "Trabajo tanto como tú.",
+      "why": "After a verb there's no thing to match, so it stays *tanto*."
+    }
+  ],
+  "personal": "Compare yourself with someone you know. Write one line with *tanto como* after a verb and one with *tanto*, *tanta*, *tantos* or *tantas* before a thing."
+}

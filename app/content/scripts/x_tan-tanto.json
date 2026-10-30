@@ -1,0 +1,97 @@
+{
+  "node": "x:tan-tanto",
+  "hook": {
+    "line": "Doña Gloria keeps telling Tomás the new flat is so much better. Spanish has two words for that so and that as, *tan* and *tanto*, and the word right after decides which one you need.",
+    "es": "El apartamento no es tan amplio como dicen.",
+    "en": "The flat isn't as roomy as they say."
+  },
+  "examples": [
+    { "es": "Es tan alto como tú.", "en": "He's as tall as you." },
+    { "es": "Tiene tanta paciencia como tú.", "en": "She has as much patience as you do." },
+    { "es": "Trabaja tanto como yo.", "en": "He works as much as I do." },
+    { "es": "Vale camina tan rápido como Mariana.", "en": "Vale walks as fast as Mariana." },
+    { "es": "No hay tanto ruido como en el centro.", "en": "There isn't as much noise as downtown." },
+    { "es": "¿Por qué hay tanta gente hoy?", "en": "Why are there so many people today?" },
+    { "es": "Estoy tan cansado.", "en": "I'm so tired." }
+  ],
+  "rule": "It's the same choice as *muy* or *mucho*. Look at the word right after it.\n\nA describing word or a how word (*alto*, *caro*, *rápido*, *bien*): *tan*, and it never changes. *Tan alta*, *tan caros*.\n\nA thing: *tanto*, matched to the thing. *Tanto ruido*, *tanta gente*, *tantos carros*, *tantas cosas*.\n\nNothing, because it follows a verb: *tanto*, never changing. *Trabaja tanto.*\n\nAdd *como* and you're comparing: as tall as, as much as, as many as. Leave *como* off and it means so or so much: *estoy tan cansado*, *¿por qué hay tanta gente?*\n\nThe trap: English says as much or as many, so it feels like two words. In Spanish it's one, *tanto*, and it does the matching for you.",
+  "smallPrint": "Grammar books say *tan* goes with adjectives and adverbs, while *tanto* goes with nouns and verbs. *Tan* is a shortened *tanto*, just as *muy* is a shortened *mucho*.",
+  "readAndPick": [
+    { "es": "Mariana escribe tan bien como habla.", "options": ["Mariana writes as well as she speaks.", "Mariana writes as much as she speaks."], "answer": 0 },
+    { "es": "Mariana escribe tanto como habla.", "options": ["Mariana writes as well as she speaks.", "Mariana writes as much as she speaks."], "answer": 1 },
+    { "es": "Ese barrio no es tan peligroso como piensas.", "options": ["That neighbourhood is more dangerous than you think.", "That neighbourhood isn't as dangerous as you think.", "That neighbourhood is so dangerous."], "answer": 1 },
+    { "es": "Tomás no cocina tanto como Vale.", "options": ["Tomás doesn't cook as well as Vale.", "Vale doesn't cook as much as Tomás.", "Tomás doesn't cook as much as Vale."], "answer": 2 },
+    { "es": "Hay tantas tiendas como antes.", "options": ["There are as many shops as before.", "The shops are as nice as before.", "There are more shops than before."], "answer": 0 },
+    { "es": "La sala es tan luminosa como la cocina.", "options": ["The living room has as many lights as the kitchen.", "The living room is as bright as the kitchen.", "The living room is brighter than the kitchen."], "answer": 1 },
+    { "es": "No tengo tanta hambre.", "options": ["I'm not that hungry.", "I'm very hungry.", "I'm not as hungry as you."], "answer": 0 },
+    { "es": "No duermo tanto como tú.", "options": ["I don't sleep as well as you.", "You don't sleep as much as I do.", "I don't sleep as much as you do."], "answer": 2 },
+    { "es": "La vista es tan bonita como en las fotos.", "options": ["The view is prettier than in the photos.", "The view is as pretty as in the photos."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *No es ___ caro como el otro.* (*tan* or *tanto*) It isn't as expensive as the other one.",
+      "answer": "No es tan caro como el otro.",
+      "accept": [],
+      "why": "*Caro* is a describing word, so *tan*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Hay ___ carros como en Chapinero.* (*tan* or *tantos*) There are as many cars as in Chapinero.",
+      "answer": "Hay tantos carros como en Chapinero.",
+      "accept": [],
+      "why": "*Carros* is a thing, so *tanto*, matched to it: *tantos*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Simón habla ___ como Hernando.* (*tan* or *tanto*) Simón talks as much as Hernando.",
+      "answer": "Simón habla tanto como Hernando.",
+      "accept": [],
+      "why": "It follows the verb *habla*, so *tanto*."
+    },
+    {
+      "prompt": "Say: Vale has as much patience as Tomás.",
+      "answer": "Vale tiene tanta paciencia como Tomás.",
+      "accept": [],
+      "why": "*Paciencia* is a feminine thing, so *tanta*."
+    },
+    {
+      "prompt": "Say: The neighbourhood is as quiet as always.",
+      "answer": "El barrio está tan tranquilo como siempre.",
+      "accept": [],
+      "why": "*Tranquilo* is a describing word, so *tan*, and it doesn't change."
+    },
+    {
+      "prompt": "Say: I don't sleep as much as you do (to a friend).",
+      "answer": "No duermo tanto como tú.",
+      "accept": [],
+      "why": "After a verb it's plain *tanto como*."
+    },
+    {
+      "prompt": "Switch the describing word for a thing: *La cocina es tan luminosa como la sala.* becomes The kitchen has as much light (*luz*) as the living room.",
+      "answer": "La cocina tiene tanta luz como la sala.",
+      "accept": [],
+      "why": "*Luminosa* takes *tan*, but *luz* is a feminine thing, so *tanta*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Hay tan gente como antes.",
+      "right": "Hay tanta gente como antes.",
+      "why": "Almost. *Gente* is a thing, so it needs *tanta*; *tan* only goes before describing words."
+    },
+    {
+      "wrong": "No es tanto caro como el otro.",
+      "right": "No es tan caro como el otro.",
+      "why": "*Caro* is a describing word, and before one of those you use *tan*."
+    },
+    {
+      "wrong": "Trabaja tan como yo.",
+      "right": "Trabaja tanto como yo.",
+      "why": "*Tan* always needs a describing word after it. After a verb, use *tanto*."
+    },
+    {
+      "wrong": "No hay tantas ruido como en el centro.",
+      "right": "No hay tanto ruido como en el centro.",
+      "why": "*Tanto* matches the thing, and *ruido* is masculine and singular."
+    }
+  ],
+  "personal": "Write three true lines about where you live: something that's *tan* something, something there's *tanto* or *tanta* of, and something you do *tanto como* someone else."
+}
