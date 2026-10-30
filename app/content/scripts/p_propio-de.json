@@ -1,0 +1,178 @@
+{
+  "node": "p:propio-de",
+  "hook": {
+    "line": "Sometimes the best way to say \"that's not like you\" or \"that's typical of this place\" is a single small adjective. It lets you comment on behaviour without accusing anyone.",
+    "es": "Esa actitud no es propia de un profesional.",
+    "en": "That attitude isn't what you'd expect from a professional."
+  },
+  "examples": [
+    {
+      "es": "Esa actitud no es propia de un profesional.",
+      "en": "That attitude isn't what you'd expect from a professional."
+    },
+    {
+      "es": "Es un plato propio de la costa.",
+      "en": "It's a dish typical of the coast."
+    },
+    {
+      "es": "No es propio de Vale llegar tarde.",
+      "en": "It isn't like Vale to arrive late."
+    },
+    {
+      "es": "Estas lluvias son propias de abril.",
+      "en": "These rains are typical of April."
+    },
+    {
+      "es": "Los tintos fuertes son propios de este barrio.",
+      "en": "Strong black coffees are typical of this neighbourhood."
+    },
+    {
+      "es": "¿Es propio de ti quejarte tanto?",
+      "en": "Is it like you to complain so much? (to a friend)"
+    }
+  ],
+  "rule": "*Ser propio de* means \"to be typical of\" or \"to be what you'd expect from\".\n\nIt works two ways: describing what belongs to a place or time (*un plato propio de la costa*), or what fits a person (*es propio de Vale*).\n\nWith *no*, it becomes a gentle criticism: this behaviour doesn't fit.\n\n*Propio* is an adjective, so it agrees with the thing described: *propio, propia, propios, propias*. It is followed by *de*, never *a* or *para*. (Don't mix it up with *mi propio carro*, \"my own car\".)",
+  "smallPrint": "Teachers call this *adjective plus preposition*: *propio* needs *de* to complete its meaning.",
+  "readAndPick": [
+    {
+      "es": "Esa actitud no es propia de un profesional.",
+      "options": [
+        "That attitude is typical of a professional.",
+        "That attitude isn't what you'd expect from a professional.",
+        "That professional has no attitude."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es un plato propio de la costa.",
+      "options": [
+        "It's a dish typical of the coast.",
+        "It's a dish from far away.",
+        "It's a dish nobody eats on the coast."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No es propio de Vale llegar tarde.",
+      "options": [
+        "Vale likes arriving late.",
+        "It isn't like Vale to arrive late.",
+        "Vale arrived late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estas lluvias son propias de abril.",
+      "options": [
+        "This rain is typical of April.",
+        "These rains are typical of April.",
+        "These rains came in April."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los tintos fuertes son propios de este barrio.",
+      "options": [
+        "Strong black coffees are typical of this neighbourhood.",
+        "The strong black coffee is typical of this neighbourhood.",
+        "Strong black coffees are not typical of this neighbourhood."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Es propio de ti quejarte tanto?",
+      "options": [
+        "Is it like you to complain so much? (to a friend)",
+        "Is it like him to complain so much?",
+        "Do you complain about yourself so much? (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esa risa es propia de Hernando.",
+      "options": [
+        "That laugh is typical of Hernando.",
+        "Hernando has his own laugh.",
+        "Hernando never laughs like that."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mentir no es propio de ella.",
+      "options": [
+        "She lies a lot.",
+        "Lying isn't like her.",
+        "She didn't lie."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *propio* or *propia* and type the whole sentence: *Esa actitud no es ___ de un profesional.*",
+      "answer": "Esa actitud no es propia de un profesional.",
+      "accept": [],
+      "why": "*Actitud* is feminine, so the adjective is *propia*."
+    },
+    {
+      "prompt": "Type in Spanish: It's a dish typical of the coast.",
+      "answer": "Es un plato propio de la costa.",
+      "accept": [
+        "Es un plato típico de la costa."
+      ],
+      "why": "*Plato* is masculine singular, so it takes *propio*."
+    },
+    {
+      "prompt": "Type in Spanish: These rains are typical of April.",
+      "answer": "Estas lluvias son propias de abril.",
+      "accept": [],
+      "why": "*Lluvias* is feminine plural, so *propias*."
+    },
+    {
+      "prompt": "Type in Spanish: It isn't like Vale to arrive late.",
+      "answer": "No es propio de Vale llegar tarde.",
+      "accept": [
+        "Llegar tarde no es propio de Vale."
+      ],
+      "why": "*No es propio de* plus a name says it doesn't fit that person."
+    },
+    {
+      "prompt": "Make it negative: *Mentir es propio de ella.* Say: Lying isn't like her.",
+      "answer": "Mentir no es propio de ella.",
+      "accept": [],
+      "why": "Put *no* before *es*; *propio* stays the same."
+    },
+    {
+      "prompt": "Make it plural: *El tinto fuerte es propio de este barrio.* Say: Strong black coffees are typical of this neighbourhood.",
+      "answer": "Los tintos fuertes son propios de este barrio.",
+      "accept": [],
+      "why": "Everything agrees in the plural: *los tintos fuertes son propios*."
+    },
+    {
+      "prompt": "Type in Spanish, asking a friend: Is it like you to complain so much?",
+      "answer": "¿Es propio de ti quejarte tanto?",
+      "accept": [
+        "¿Es propio de ti quejarte tanto?"
+      ],
+      "why": "*De ti* names the person, so you ask whether it fits them."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Esa actitud no es propio de un profesional.",
+      "right": "Esa actitud no es propia de un profesional.",
+      "why": "Almost. *Propio* agrees with what it describes, and *actitud* is feminine."
+    },
+    {
+      "wrong": "Estas lluvias son propias a abril.",
+      "right": "Estas lluvias son propias de abril.",
+      "why": "Almost. This adjective always takes *de*."
+    },
+    {
+      "wrong": "Es un plato propia de la costa.",
+      "right": "Es un plato propio de la costa.",
+      "why": "Almost. *Plato* is masculine, so you need *propio*."
+    }
+  ],
+  "personal": "Say one thing that is typical of your city, or of someone you know, using *propio de*."
+}

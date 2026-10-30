@@ -1,0 +1,184 @@
+{
+  "node": "p:plazos",
+  "hook": {
+    "line": "Plans, prices and arguments all depend on how far ahead you look. Spanish marks the distance with a few small phrases, and they make an essay sound planned rather than rushed.",
+    "es": "A corto plazo es caro, pero a la larga sale más barato.",
+    "en": "In the short term it's expensive, but in the long run it works out cheaper."
+  },
+  "examples": [
+    {
+      "es": "A corto plazo es caro, pero a la larga sale más barato.",
+      "en": "In the short term it's expensive, but in the long run it works out cheaper."
+    },
+    {
+      "es": "¿Qué planes tienes a mediano plazo?",
+      "en": "What are your plans for the medium term? (to a friend)"
+    },
+    {
+      "es": "Es una inversión a largo plazo.",
+      "en": "It's a long-term investment."
+    },
+    {
+      "es": "A la larga, la gente se acostumbra.",
+      "en": "In the long run, people get used to it."
+    },
+    {
+      "es": "A corto plazo, el café no puede cambiar nada.",
+      "en": "In the short term, the café can't change anything."
+    },
+    {
+      "es": "La reforma da resultados a largo plazo.",
+      "en": "The reform gives results in the long term."
+    }
+  ],
+  "rule": "*Plazo* means a period of time, a deadline. These phrases say how far ahead you are looking:\n\n*a corto plazo*: in the short term\n*a mediano plazo*: in the medium term\n*a largo plazo*: in the long term\n\nAll three use *a* and masculine *plazo*. In Latin America you will mostly hear *mediano*; Spain says *medio*.\n\n*A la larga* means \"in the long run\", \"eventually\". It is shorter, a bit more casual, and always has *la*.\n\nEnglish says \"in\" or \"over\"; Spanish uses *a*.",
+  "smallPrint": "Teachers call these *complementos temporales*: phrases that place something on the timeline.",
+  "readAndPick": [
+    {
+      "es": "A corto plazo es caro, pero a la larga sale más barato.",
+      "options": [
+        "It's expensive in the short term, but cheaper in the long run.",
+        "It's cheap in the short term, but expensive in the long run.",
+        "It's expensive both now and later."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué planes tienes a mediano plazo?",
+      "options": [
+        "What plans do you have for the long term? (to a friend)",
+        "What plans do you have for the medium term? (to a friend)",
+        "What plans did you have last term? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es una inversión a largo plazo.",
+      "options": [
+        "It's a short-term investment.",
+        "It's a medium-term investment.",
+        "It's a long-term investment."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A la larga, la gente se acostumbra.",
+      "options": [
+        "People get used to it at once.",
+        "In the long run, people get used to it.",
+        "In the long run, people never get used to it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A corto plazo, el café no puede cambiar nada.",
+      "options": [
+        "In the short term, the café can't change anything.",
+        "In the long term, the café can't change anything.",
+        "The café can't change anything in the medium term."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La reforma da resultados a largo plazo.",
+      "options": [
+        "The reform gives results immediately.",
+        "The reform gives results in the short term.",
+        "The reform gives results in the long term."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A mediano plazo, el barrio va a cambiar.",
+      "options": [
+        "In the medium term, the neighbourhood will change.",
+        "In the short term, the neighbourhood will change.",
+        "The neighbourhood changed in the medium term."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A la larga, Altamira siempre gana.",
+      "options": [
+        "Altamira wins at once.",
+        "In the long run, Altamira always wins.",
+        "Altamira wins only in the short term."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *corto* or *largo* and type the whole sentence, for \"long-term\": *Es una inversión a ___ plazo.*",
+      "answer": "Es una inversión a largo plazo.",
+      "accept": [],
+      "why": "*Largo plazo* is the long term; *corto plazo* would be the near future."
+    },
+    {
+      "prompt": "Type in Spanish: In the short term it's expensive, but in the long run it works out cheaper.",
+      "answer": "A corto plazo es caro, pero a la larga sale más barato.",
+      "accept": [
+        "A corto plazo es caro, pero a la larga sale más barato."
+      ],
+      "why": "*A corto plazo* and *a la larga* set the near and far view side by side."
+    },
+    {
+      "prompt": "Type in Spanish, asking a friend: What are your plans for the medium term?",
+      "answer": "¿Qué planes tienes a mediano plazo?",
+      "accept": [
+        "¿A mediano plazo, qué planes tienes?"
+      ],
+      "why": "*A mediano plazo* is the Latin American medium term, and *tienes* is for a friend."
+    },
+    {
+      "prompt": "Type in Spanish: In the long run, people get used to it.",
+      "answer": "A la larga, la gente se acostumbra.",
+      "accept": [
+        "La gente se acostumbra a la larga."
+      ],
+      "why": "*A la larga* always keeps the *la*."
+    },
+    {
+      "prompt": "Type in Spanish: The reform gives results in the long term.",
+      "answer": "La reforma da resultados a largo plazo.",
+      "accept": [
+        "A largo plazo, la reforma da resultados."
+      ],
+      "why": "*A largo plazo* can close the sentence, with *a* in front."
+    },
+    {
+      "prompt": "Change the distance: *A corto plazo, el café no puede cambiar nada.* Say: In the medium term, the café can't change anything.",
+      "answer": "A mediano plazo, el café no puede cambiar nada.",
+      "accept": [
+        "El café no puede cambiar nada a mediano plazo."
+      ],
+      "why": "Only the phrase changes: *corto* becomes *mediano*."
+    },
+    {
+      "prompt": "Type in Spanish: In the long run, Altamira always wins.",
+      "answer": "A la larga, Altamira siempre gana.",
+      "accept": [
+        "Altamira siempre gana a la larga."
+      ],
+      "why": "*A la larga* is the casual way to say \"eventually\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "En largo plazo es mejor.",
+      "right": "A largo plazo es mejor.",
+      "why": "Almost. Spanish marks these distances with *a*, not *en*."
+    },
+    {
+      "wrong": "A la largo es más barato.",
+      "right": "A la larga es más barato.",
+      "why": "Almost. After *la*, the word is *larga*, the feminine form."
+    },
+    {
+      "wrong": "A medio plazo vamos a cambiar.",
+      "right": "A mediano plazo vamos a cambiar.",
+      "why": "Almost. *Medio plazo* is the Spain version; in Latin America you will hear *mediano plazo*."
+    }
+  ],
+  "personal": "Say one thing that will be hard now but better *a la larga*."
+}

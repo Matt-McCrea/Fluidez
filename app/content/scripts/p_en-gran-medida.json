@@ -1,0 +1,185 @@
+{
+  "node": "p:en-gran-medida",
+  "hook": {
+    "line": "Few things are all or nothing. When you say how much a cause explains, or how far you agree, you need words for \"mostly\" and \"up to a point\".",
+    "es": "El éxito depende en gran medida de la financiación.",
+    "en": "Success depends to a large extent on funding."
+  },
+  "examples": [
+    {
+      "es": "El éxito depende en gran medida de la financiación.",
+      "en": "Success depends to a large extent on funding."
+    },
+    {
+      "es": "Tiene razón hasta cierto punto.",
+      "en": "He's right up to a point."
+    },
+    {
+      "es": "Lo haremos en la medida de lo posible.",
+      "en": "We'll do it as far as possible."
+    },
+    {
+      "es": "¿En qué medida afecta esto al presupuesto?",
+      "en": "To what extent does this affect the budget?"
+    },
+    {
+      "es": "El café vive en buena medida de los vecinos.",
+      "en": "The café lives to a good extent off the neighbours."
+    },
+    {
+      "es": "Estoy de acuerdo, pero solo hasta cierto punto.",
+      "en": "I agree, but only up to a point."
+    }
+  ],
+  "rule": "*Medida* means \"measure\", so these phrases measure how much.\n\n*En gran medida* and *en buena medida*: mostly, to a large extent.\n\n*Hasta cierto punto*: up to a point. There is no *un* in Spanish: not *hasta un cierto punto*.\n\n*En la medida de lo posible*: as far as possible. It limits a promise instead of making it.\n\n*¿En qué medida…?* asks \"to what extent?\"\n\nAll of them stand where English puts \"largely\" or \"somewhat\", and they sound more careful than *mucho* or *un poco*.",
+  "smallPrint": "Teachers call these *locuciones de grado*: phrases that say how far something is true.",
+  "readAndPick": [
+    {
+      "es": "El éxito depende en gran medida de la financiación.",
+      "options": [
+        "Success depends only a little on funding.",
+        "Success depends to a large extent on funding.",
+        "Success never depends on funding."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tiene razón hasta cierto punto.",
+      "options": [
+        "He's completely right.",
+        "He's wrong.",
+        "He's right up to a point."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo haremos en la medida de lo posible.",
+      "options": [
+        "We'll do it as far as possible.",
+        "We'll do it for sure.",
+        "We did it when it was possible."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿En qué medida afecta esto al presupuesto?",
+      "options": [
+        "Why does this affect the budget?",
+        "To what extent does this affect the budget?",
+        "Does this affect the budget tomorrow?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El café vive en buena medida de los vecinos.",
+      "options": [
+        "The café lives largely off the neighbours.",
+        "The café lives thanks to one neighbour.",
+        "The café lives far from the neighbours."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy de acuerdo, pero solo hasta cierto punto.",
+      "options": [
+        "I agree completely.",
+        "I agree, but only up to a point.",
+        "I don't agree with anything."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En gran medida, el problema es la falta de tiempo.",
+      "options": [
+        "The problem is partly a lack of time.",
+        "The problem is largely a lack of time.",
+        "The problem is not a lack of time."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ayudaré en la medida de mis posibilidades.",
+      "options": [
+        "I'll help as far as I'm able.",
+        "I'll help with everything.",
+        "I helped as much as I could."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *en gran medida* or *hasta cierto punto* and type the whole sentence, for \"largely\": *El éxito depende ___ de la financiación.*",
+      "answer": "El éxito depende en gran medida de la financiación.",
+      "accept": [],
+      "why": "*En gran medida* means \"largely\"; *hasta cierto punto* would mean only partly."
+    },
+    {
+      "prompt": "Type in Spanish: He's right up to a point.",
+      "answer": "Tiene razón hasta cierto punto.",
+      "accept": [
+        "Él tiene razón hasta cierto punto.",
+        "Hasta cierto punto tiene razón."
+      ],
+      "why": "*Hasta cierto punto* has no *un* before *cierto*."
+    },
+    {
+      "prompt": "Type in Spanish: We'll do it as far as possible.",
+      "answer": "Lo haremos en la medida de lo posible.",
+      "accept": [
+        "En la medida de lo posible, lo haremos."
+      ],
+      "why": "*En la medida de lo posible* limits the promise to what is possible."
+    },
+    {
+      "prompt": "Type in Spanish: To what extent does this affect the budget?",
+      "answer": "¿En qué medida afecta esto al presupuesto?",
+      "accept": [
+        "¿En qué medida esto afecta al presupuesto?"
+      ],
+      "why": "*¿En qué medida…?* is the question form of the same idea."
+    },
+    {
+      "prompt": "Type in Spanish: The café lives to a good extent off the neighbours.",
+      "answer": "El café vive en buena medida de los vecinos.",
+      "accept": [
+        "En buena medida, el café vive de los vecinos."
+      ],
+      "why": "*En buena medida* is a near twin of *en gran medida*."
+    },
+    {
+      "prompt": "Make it limited: *Estoy de acuerdo.* Say: I agree, but only up to a point.",
+      "answer": "Estoy de acuerdo, pero solo hasta cierto punto.",
+      "accept": [
+        "Estoy de acuerdo, pero solo hasta cierto punto."
+      ],
+      "why": "*Hasta cierto punto* turns a full agreement into a partial one."
+    },
+    {
+      "prompt": "Type in Spanish: I'll help as far as I'm able.",
+      "answer": "Ayudaré en la medida de mis posibilidades.",
+      "accept": [
+        "En la medida de mis posibilidades, ayudaré."
+      ],
+      "why": "*De mis posibilidades* swaps in your own limits."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Depende en grande medida de la financiación.",
+      "right": "Depende en gran medida de la financiación.",
+      "why": "Almost. *Grande* shortens to *gran* before a noun: *gran medida*."
+    },
+    {
+      "wrong": "Tiene razón hasta un cierto punto.",
+      "right": "Tiene razón hasta cierto punto.",
+      "why": "Almost. Spanish drops the article here, with no *un* before *cierto*."
+    },
+    {
+      "wrong": "Lo haremos en la medida de posible.",
+      "right": "Lo haremos en la medida de lo posible.",
+      "why": "Almost. You need *lo* before *posible*: *de lo posible*."
+    }
+  ],
+  "personal": "Say how far you agree with something you've heard lately, using *hasta cierto punto* or *en gran medida*."
+}

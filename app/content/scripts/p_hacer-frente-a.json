@@ -1,0 +1,184 @@
+{
+  "node": "p:hacer-frente-a",
+  "hook": {
+    "line": "Cafés have debts, bosses have crises and essays have problems that need an answer. Spanish has a calm, slightly formal way to say you are dealing with them head on.",
+    "es": "La cooperativa tuvo que hacer frente a una deuda enorme.",
+    "en": "The cooperative had to face a huge debt."
+  },
+  "examples": [
+    {
+      "es": "La cooperativa tuvo que hacer frente a una deuda enorme.",
+      "en": "The cooperative had to face a huge debt."
+    },
+    {
+      "es": "No sé cómo vamos a afrontar estos gastos.",
+      "en": "I don't know how we're going to cope with these expenses."
+    },
+    {
+      "es": "Tomás hizo frente a la crisis con calma.",
+      "en": "Tomás faced the crisis calmly."
+    },
+    {
+      "es": "¿Cómo hacen frente a los gastos del café?",
+      "en": "How do they meet the café's expenses? (you all)"
+    },
+    {
+      "es": "El barrio debe afrontar un cambio enorme.",
+      "en": "The neighbourhood has to face an enormous change."
+    },
+    {
+      "es": "Para hacer frente al problema, necesitamos más tiempo.",
+      "en": "To deal with the problem, we need more time."
+    }
+  ],
+  "rule": "*Hacer frente a* means to face a difficulty and deal with it: a debt, a crisis, expenses, a problem.\n\n*Hacer* changes like any verb (*hizo frente*, *hace frente*, *hará frente*), but *frente a* stays put. Before *el* it becomes *al*: *hacer frente al problema*.\n\n*Afrontar* means almost the same, but it takes no *a*: *afrontar los gastos*, *afrontar una crisis*.\n\nWith money, both mean \"to cover\" or \"to meet\" the costs. English \"face\" or \"cope with\" is the closest match, but Spanish only uses these for real difficulties, not for faces or people.",
+  "smallPrint": "Teachers call *hacer frente a* a *locución verbal*: a verb phrase that works as one unit.",
+  "readAndPick": [
+    {
+      "es": "La cooperativa tuvo que hacer frente a una deuda enorme.",
+      "options": [
+        "The cooperative had to face a huge debt.",
+        "The cooperative had a huge debt in front of it.",
+        "The cooperative made a huge debt."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No sé cómo vamos a afrontar estos gastos.",
+      "options": [
+        "I don't know how we avoided these expenses.",
+        "I don't know how we're going to cope with these expenses.",
+        "I don't know who is paying these expenses."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás hizo frente a la crisis con calma.",
+      "options": [
+        "Tomás ran away from the crisis.",
+        "Tomás will face the crisis calmly.",
+        "Tomás faced the crisis calmly."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Cómo hacen frente a los gastos del café?",
+      "options": [
+        "How do they meet the café's expenses? (you all)",
+        "How did they avoid the café's expenses?",
+        "Why do they have the café's expenses?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El barrio debe afrontar un cambio enorme.",
+      "options": [
+        "The neighbourhood must avoid an enormous change.",
+        "The neighbourhood must face an enormous change.",
+        "The neighbourhood caused an enormous change."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Para hacer frente al problema, necesitamos más tiempo.",
+      "options": [
+        "To deal with the problem, we need more time.",
+        "The problem needs more time to arrive.",
+        "We need more time to forget the problem."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando no puede hacer frente a tantas deudas.",
+      "options": [
+        "Hernando can't cope with so many debts.",
+        "Hernando doesn't owe anything.",
+        "Hernando can pay all his debts."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale afronta cada día con una sonrisa.",
+      "options": [
+        "Vale avoids each day with a smile.",
+        "Vale faces each day with a smile.",
+        "Vale smiled at each day yesterday."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *hacer frente a* or *hacer frente* and type the whole sentence: *La cooperativa tuvo que ___ una deuda enorme.*",
+      "answer": "La cooperativa tuvo que hacer frente a una deuda enorme.",
+      "accept": [],
+      "why": "The difficulty needs *a* after *frente*."
+    },
+    {
+      "prompt": "Type in Spanish: I don't know how we're going to cope with these expenses.",
+      "answer": "No sé cómo vamos a afrontar estos gastos.",
+      "accept": [
+        "No sé cómo vamos a hacer frente a estos gastos."
+      ],
+      "why": "*Afrontar* takes the expenses directly, with no *a*."
+    },
+    {
+      "prompt": "Type in Spanish: Tomás faced the crisis calmly.",
+      "answer": "Tomás hizo frente a la crisis con calma.",
+      "accept": [
+        "Tomás afrontó la crisis con calma."
+      ],
+      "why": "*Hizo* is the past of *hacer*, and *frente a* stays as it is."
+    },
+    {
+      "prompt": "Type in Spanish: To deal with the problem, we need more time.",
+      "answer": "Para hacer frente al problema, necesitamos más tiempo.",
+      "accept": [
+        "Necesitamos más tiempo para hacer frente al problema."
+      ],
+      "why": "*A* and *el* join into *al*: *frente al problema*."
+    },
+    {
+      "prompt": "Say the same with *afrontar*: *Tomás hizo frente a la crisis.* Say: Tomás faced the crisis.",
+      "answer": "Tomás afrontó la crisis.",
+      "accept": [],
+      "why": "*Afrontar* carries the idea itself, so it needs no *frente* and no *a*."
+    },
+    {
+      "prompt": "Type in Spanish: The neighbourhood has to face an enormous change.",
+      "answer": "El barrio debe afrontar un cambio enorme.",
+      "accept": [
+        "El barrio tiene que afrontar un cambio enorme.",
+        "El barrio debe hacer frente a un cambio enorme.",
+        "El barrio tiene que hacer frente a un cambio enorme."
+      ],
+      "why": "*Afrontar* takes the change directly after *debe*."
+    },
+    {
+      "prompt": "Type in Spanish: Hernando can't cope with so many debts.",
+      "answer": "Hernando no puede hacer frente a tantas deudas.",
+      "accept": [
+        "Hernando no puede afrontar tantas deudas."
+      ],
+      "why": "*No puede* comes first, then the phrase as usual."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Hizo frente la crisis con calma.",
+      "right": "Hizo frente a la crisis con calma.",
+      "why": "Almost. The difficulty needs *a* after *frente*."
+    },
+    {
+      "wrong": "No sé cómo vamos a afrontar a estos gastos.",
+      "right": "No sé cómo vamos a afrontar estos gastos.",
+      "why": "Almost. *Afrontar* takes its object directly, with no *a*."
+    },
+    {
+      "wrong": "Tuvo que hacer frente de una deuda.",
+      "right": "Tuvo que hacer frente a una deuda.",
+      "why": "Almost. The preposition is always *a*, never *de*."
+    }
+  ],
+  "personal": "Say one difficulty you've had to face lately, using *hacer frente a* or *afrontar*."
+}

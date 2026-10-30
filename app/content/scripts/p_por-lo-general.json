@@ -1,0 +1,187 @@
+{
+  "node": "p:por-lo-general",
+  "hook": {
+    "line": "When you describe how things usually are, an essay or a boss will pounce on one exception. Spanish has a few small phrases that make a generalisation safe, and honest.",
+    "es": "Por lo general, los clientes llegan temprano.",
+    "en": "Generally, the customers arrive early."
+  },
+  "examples": [
+    {
+      "es": "Por lo general, los clientes llegan temprano.",
+      "en": "Generally, the customers arrive early."
+    },
+    {
+      "es": "Por regla general, no aceptamos devoluciones.",
+      "en": "As a rule, we don't accept returns."
+    },
+    {
+      "es": "En general, la gente fue muy amable.",
+      "en": "On the whole, people were very kind."
+    },
+    {
+      "es": "Hernando pide un tinto, salvo excepciones.",
+      "en": "Hernando orders a black coffee, with some exceptions."
+    },
+    {
+      "es": "Por lo general, los barrios cambian despacio.",
+      "en": "Generally, neighbourhoods change slowly."
+    },
+    {
+      "es": "¿Qué hace usted por lo general los domingos?",
+      "en": "What do you usually do on Sundays? (formal)"
+    }
+  ],
+  "rule": "These phrases say \"this is true most of the time\" and leave the door open for exceptions.\n\n*Por lo general*, *por regla general* and *en general* all start a sentence, followed by a comma, or sit after the verb.\n\n*Salvo excepciones* means \"with some exceptions\". Add it at the end to show you know the rule has gaps.\n\nIt is not *siempre* (always) or *nunca* (never). Those claim there are no exceptions. English \"generally\" is the nearest word, but Spanish likes the longer phrase, especially in writing.",
+  "smallPrint": "Teachers call these *adverbial phrases of generalisation*. They hedge a claim rather than state it flatly.",
+  "readAndPick": [
+    {
+      "es": "Por lo general, Hernando pide un tinto.",
+      "options": [
+        "Generally, Hernando orders a black coffee.",
+        "Hernando always orders a black coffee.",
+        "Hernando is ordering a black coffee now."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los clientes pagan en efectivo, salvo excepciones.",
+      "options": [
+        "The customers never pay in cash.",
+        "The customers pay in cash, with some exceptions.",
+        "The customers pay in cash, without exception."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por regla general, no aceptamos devoluciones.",
+      "options": [
+        "We didn't accept returns.",
+        "We never accept returns.",
+        "As a rule, we don't accept returns."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "En general, la gente fue muy amable.",
+      "options": [
+        "On the whole, people were very kind.",
+        "A few people were very kind.",
+        "Everybody was very kind."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Todos llegan tarde, sin excepción.",
+      "options": [
+        "Generally, everyone arrives late.",
+        "Everyone arrives late, without exception.",
+        "Almost everyone arrives late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué hace usted por lo general los domingos?",
+      "options": [
+        "What did you do last Sunday? (formal)",
+        "What are you doing this Sunday? (formal)",
+        "What do you usually do on Sundays? (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Salvo excepciones, el café abre a las siete.",
+      "options": [
+        "With few exceptions, the café opens at seven.",
+        "The café always opens at seven.",
+        "The café never opens at seven."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por lo general, no salgo de noche.",
+      "options": [
+        "I never go out at night.",
+        "Generally, I don't go out at night.",
+        "I didn't go out last night."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *Por lo general* or *Siempre* and type the whole sentence, admitting that exceptions exist: *___, los clientes llegan temprano, salvo excepciones.*",
+      "answer": "Por lo general, los clientes llegan temprano, salvo excepciones.",
+      "accept": [],
+      "why": "*Siempre* claims there are no exceptions, so it clashes with *salvo excepciones*."
+    },
+    {
+      "prompt": "Type in Spanish: Generally, neighbourhoods change slowly.",
+      "answer": "Por lo general, los barrios cambian despacio.",
+      "accept": [
+        "Los barrios cambian despacio por lo general.",
+        "En general, los barrios cambian despacio."
+      ],
+      "why": "*Por lo general* opens the sentence and is followed by a comma."
+    },
+    {
+      "prompt": "Type in Spanish: As a rule, we don't accept returns.",
+      "answer": "Por regla general, no aceptamos devoluciones.",
+      "accept": [
+        "No aceptamos devoluciones por regla general."
+      ],
+      "why": "*Por regla general* says it is the rule, and *no* goes with the verb as usual."
+    },
+    {
+      "prompt": "Type in Spanish: On the whole, people were very kind.",
+      "answer": "En general, la gente fue muy amable.",
+      "accept": [
+        "La gente fue muy amable en general."
+      ],
+      "why": "*En general* is the short, everyday way to say \"on the whole\"."
+    },
+    {
+      "prompt": "Make it hedged: *Hernando pide un tinto.* Say: Hernando orders a black coffee, with some exceptions.",
+      "answer": "Hernando pide un tinto, salvo excepciones.",
+      "accept": [
+        "Salvo excepciones, Hernando pide un tinto."
+      ],
+      "why": "*Salvo excepciones* closes the sentence and admits the rule has gaps."
+    },
+    {
+      "prompt": "Type in Spanish, asking someone formally: What do you usually do on Sundays?",
+      "answer": "¿Qué hace usted por lo general los domingos?",
+      "accept": [
+        "¿Qué hace por lo general los domingos?",
+        "¿Por lo general, qué hace usted los domingos?"
+      ],
+      "why": "*Por lo general* can sit inside a question too, and *hace* is the *usted* form."
+    },
+    {
+      "prompt": "Type in Spanish: Generally, I don't go out at night.",
+      "answer": "Por lo general, no salgo de noche.",
+      "accept": [
+        "No salgo de noche por lo general.",
+        "En general, no salgo de noche."
+      ],
+      "why": "The phrase stands outside the sentence, so *no* stays in front of the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Por lo generales, los clientes llegan temprano.",
+      "right": "Por lo general, los clientes llegan temprano.",
+      "why": "Almost. The phrase is fixed: *general* never changes to a plural."
+    },
+    {
+      "wrong": "Por general, los clientes llegan temprano.",
+      "right": "Por lo general, los clientes llegan temprano.",
+      "why": "Almost. You need *lo* in the middle: *por lo general*."
+    },
+    {
+      "wrong": "Siempre, salvo excepciones, llegan temprano.",
+      "right": "Por lo general, llegan temprano, salvo excepciones.",
+      "why": "Almost. *Siempre* means no exceptions, so it fights with *salvo excepciones*."
+    }
+  ],
+  "personal": "Say something that is generally true about your week or your city, then add *salvo excepciones*."
+}

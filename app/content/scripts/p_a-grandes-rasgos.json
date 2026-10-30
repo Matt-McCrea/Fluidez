@@ -1,0 +1,184 @@
+{
+  "node": "p:a-grandes-rasgos",
+  "hook": {
+    "line": "A good explanation moves between the big picture and the fine print, and you need to tell your reader which one is coming. Spanish has set phrases for both.",
+    "es": "A grandes rasgos, la propuesta tiene tres partes.",
+    "en": "Broadly speaking, the proposal has three parts."
+  },
+  "examples": [
+    {
+      "es": "A grandes rasgos, la propuesta tiene tres partes.",
+      "en": "Broadly speaking, the proposal has three parts."
+    },
+    {
+      "es": "Ahora veámoslo en detalle.",
+      "en": "Now let's look at it in detail."
+    },
+    {
+      "es": "En líneas generales, el informe es positivo.",
+      "en": "In general terms, the report is positive."
+    },
+    {
+      "es": "¿Qué propone en concreto?",
+      "en": "What exactly are you proposing? (formal)"
+    },
+    {
+      "es": "Le explico el plan a grandes rasgos.",
+      "en": "I'll explain the plan to you broadly. (formal)"
+    },
+    {
+      "es": "Primero lo explico en líneas generales y después en detalle.",
+      "en": "First I explain it in general terms and then in detail."
+    }
+  ],
+  "rule": "Two sets of phrases, one for each distance.\n\nThe big picture: *a grandes rasgos* (literally \"in big strokes\") and *en líneas generales*. Use them to open an argument or a summary.\n\nThe close-up: *en detalle* and *en concreto*. *En detalle* means going through the parts; *en concreto* means being specific, as in \"what exactly?\"\n\nNotice the little words: *a* with *rasgos*, *en* with the other three. They are fixed, so learn each as a block. English \"broadly\" and \"specifically\" are single words; Spanish uses short phrases.",
+  "smallPrint": "Teachers call these *conectores de organización*: signposts that tell the reader how the text is arranged.",
+  "readAndPick": [
+    {
+      "es": "A grandes rasgos, la propuesta tiene tres partes.",
+      "options": [
+        "In detail, the proposal has three parts.",
+        "Broadly speaking, the proposal has three parts.",
+        "Exactly, the proposal has three parts."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ahora veámoslo en detalle.",
+      "options": [
+        "Now let's look at it in detail.",
+        "Now let's look at it briefly.",
+        "Now I'll look at it later."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En líneas generales, el informe es positivo.",
+      "options": [
+        "In detail, the report is positive.",
+        "In general terms, the report is positive.",
+        "The report is positive in one place."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué propone en concreto?",
+      "options": [
+        "What are you proposing, broadly? (formal)",
+        "What did you propose? (formal)",
+        "What exactly are you proposing? (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Le explico el plan a grandes rasgos.",
+      "options": [
+        "I'll explain the plan to you broadly. (formal)",
+        "I'll explain the plan to you in full detail. (formal)",
+        "I'll explain the plan to you tomorrow. (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Primero lo explico en líneas generales y después en detalle.",
+      "options": [
+        "First I explain it in detail and then in general terms.",
+        "First I explain it in general terms and then in detail.",
+        "I never explain it in detail."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No quiero ideas vagas, quiero saber qué hacen en concreto.",
+      "options": [
+        "I want to know what they do exactly.",
+        "I want to know what they did broadly.",
+        "I don't want to know what they do."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A grandes rasgos conozco el barrio, pero no en detalle.",
+      "options": [
+        "I know the neighbourhood in detail, but not broadly.",
+        "I know the neighbourhood broadly, but not in detail.",
+        "I don't know the neighbourhood at all."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *a grandes rasgos* or *en detalle* and type the whole sentence, giving the big picture: *___, la propuesta tiene tres partes.*",
+      "answer": "A grandes rasgos, la propuesta tiene tres partes.",
+      "accept": [],
+      "why": "*A grandes rasgos* is the big picture; *en detalle* would promise the fine print."
+    },
+    {
+      "prompt": "Type in Spanish: Now let's look at it in detail.",
+      "answer": "Ahora veámoslo en detalle.",
+      "accept": [
+        "Veámoslo en detalle ahora."
+      ],
+      "why": "*En detalle* signals the close-up, and *veámoslo* means \"let's see it\"."
+    },
+    {
+      "prompt": "Type in Spanish: In general terms, the report is positive.",
+      "answer": "En líneas generales, el informe es positivo.",
+      "accept": [
+        "El informe es positivo en líneas generales."
+      ],
+      "why": "*En líneas generales* is the other way to say \"broadly\"."
+    },
+    {
+      "prompt": "Type in Spanish, asking someone formally: What exactly are you proposing?",
+      "answer": "¿Qué propone en concreto?",
+      "accept": [
+        "¿Qué propone usted en concreto?"
+      ],
+      "why": "*En concreto* asks for something specific, and *propone* is the *usted* form."
+    },
+    {
+      "prompt": "Type in Spanish: I'll explain the plan to you broadly. (formal)",
+      "answer": "Le explico el plan a grandes rasgos.",
+      "accept": [
+        "Le explico a grandes rasgos el plan."
+      ],
+      "why": "*Le* is the formal \"to you\", and *a grandes rasgos* closes the sentence."
+    },
+    {
+      "prompt": "Make it a close-up: *Primero lo explico en líneas generales.* Add: and then in detail.",
+      "answer": "Primero lo explico en líneas generales y después en detalle.",
+      "accept": [
+        "Primero lo explico en líneas generales y luego en detalle."
+      ],
+      "why": "*Y después en detalle* moves from the big picture to the fine print."
+    },
+    {
+      "prompt": "Type in Spanish: I know the neighbourhood broadly, but not in detail.",
+      "answer": "A grandes rasgos conozco el barrio, pero no en detalle.",
+      "accept": [
+        "Conozco el barrio a grandes rasgos, pero no en detalle."
+      ],
+      "why": "*Pero no en detalle* puts the two distances side by side."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "En grandes rasgos, la propuesta tiene tres partes.",
+      "right": "A grandes rasgos, la propuesta tiene tres partes.",
+      "why": "Almost. This phrase takes *a*, not *en*; learn it as one block."
+    },
+    {
+      "wrong": "A líneas generales, el informe es positivo.",
+      "right": "En líneas generales, el informe es positivo.",
+      "why": "Almost. *Líneas generales* takes *en*, while *grandes rasgos* takes *a*."
+    },
+    {
+      "wrong": "¿Qué propone en concretamente?",
+      "right": "¿Qué propone en concreto?",
+      "why": "Almost. After *en* you need *concreto*, not the *-mente* adverb."
+    }
+  ],
+  "personal": "Describe your day to a friend, first broadly with *a grandes rasgos*, then one part *en detalle*."
+}
