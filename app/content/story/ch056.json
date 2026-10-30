@@ -2,7 +2,7 @@
   "id": "ch056",
   "unit": "u20",
   "title": "Antes de los truenos",
-  "text": "A las cinco de la mañana hacía mucho frío, el aire estaba húmedo, y Hernando manejaba la Burra con las ventanillas abiertas.\nHernando: Así Simón nos escucha. ¡Simón! ¡Tinto, tinto!\nTomás leyó el pronóstico en el celular.\nTomás: Hoy, nublado y con viento. Temperatura: doce grados. Mañana en la mañana, soleado. Y mañana en la tarde, truenos, rayos y granizo.\nHernando: ¿Granizo? Simón no conoce el granizo.\nTomás: ¿Y el verano? ¿Cuándo es el verano en Bogotá?\nHernando: En diciembre, mijo. Aquí el verano no es calor. Es el tiempo seco.\nJhon Fredy los llamó desde el café.\nJhon Fredy: Teoría número tres: Simón está en el páramo. Mi aplicación dice que allá hay muchos loros.\nHernando: En el páramo hace mucho frío, y es muy húmedo. De noche, la temperatura es de pocos grados. Simón no va al páramo.\nJhon Fredy: Mi aplicación predice todo: el pronóstico del tiempo, el tráfico, los goles de Santa Fe.\nHernando: Santa Fe no hizo un gol en todo marzo. Eso no lo predice nadie.\nEl viento movía los árboles del parque, pero no vieron loros verdes.\nHernando paró la Burra y miró el cielo nublado.\nHernando: Rosa decía que Simón predice la lluvia. Cuando grita de noche, al otro día llueve. El domingo gritó toda la noche.\nHernando: Lo voy a encontrar antes de la lluvia de mañana. Antes de los truenos y los rayos. Lo encontraré, Tomás. Te lo prometo.\nTomás: Es una promesa grande, Hernando.\nHernando: Las promesas pequeñas no sirven. Mañana en la mañana va a estar soleado. Mañana lo encontramos.\nEn el café, Vale hizo pan toda la mañana. No habló con nadie. El pan salió seco.\nA las once llegó Mariana.\nMariana: Tranquilos. Todo saldrá bien. Gloria vio algo el miércoles en la noche: un hombre con una caja grande, al lado de un carro negro.",
+  "text": "A las cinco de la mañana hacía mucho frío, el aire estaba húmedo, y Hernando manejaba la Burra con las ventanillas abiertas.\nHernando: Así Simón nos escucha. ¡Simón! ¡Tinto, tinto!\nTomás leyó el pronóstico en el celular.\nTomás: Hoy, nublado y con viento. Temperatura: doce grados. Mañana en la mañana, soleado. Y mañana en la tarde, truenos, rayos y granizo.\nHernando: ¿Granizo? Simón no conoce el granizo.\nJhon Fredy los llamó desde el café.\nJhon Fredy: Teoría número tres: Simón está en el páramo. Mi aplicación dice que allá hay muchos loros.\nHernando: En el páramo hace mucho frío, y es muy húmedo. Simón no va al páramo.\nJhon Fredy: Mi aplicación predice todo: el tiempo, el tráfico, los goles de Santa Fe.\nHernando: Santa Fe no hizo un gol en todo marzo. Eso no lo predice nadie.\nEl viento movía los árboles del parque, pero no vieron loros verdes. Hernando paró la Burra y miró el cielo nublado.\nHernando: Rosa decía que Simón predice la lluvia. Cuando grita de noche, al otro día llueve. Lo voy a encontrar antes de los truenos de mañana. Lo encontraré, Tomás, te lo prometo.\nTomás: Es una promesa grande, Hernando.\nHernando: Las promesas pequeñas no sirven.\nEn el café, Vale hizo pan toda la mañana. No habló con nadie. El pan salió seco.\nA las once llegó Mariana.\nMariana: Tranquilos. Todo saldrá bien. Gloria vio algo el miércoles en la noche: un hombre con una caja grande, al lado de un carro negro.",
   "gloss": [
     {
       "es": "loros",
@@ -11,14 +11,6 @@
     {
       "es": "Así Simón nos escucha.",
       "en": "That way Simón can hear us."
-    },
-    {
-      "es": "Aquí el verano no es calor. Es el tiempo seco.",
-      "en": "Here summer doesn't mean heat. It's the dry season."
-    },
-    {
-      "es": "De noche, la temperatura es de pocos grados.",
-      "en": "At night it's only a few degrees."
     },
     {
       "es": "Santa Fe no hizo un gol en todo marzo.",
@@ -65,7 +57,7 @@
     {
       "q": "What does Hernando promise?",
       "options": [
-        "To find Simón before tomorrow's rain, before the thunder",
+        "To find Simón before tomorrow's thunder",
         "To buy a new parrot",
         "To call the police",
         "To stop driving at night"
@@ -86,12 +78,12 @@
   "hook": "A man with a big box and a black car, late on Wednesday night, the night Simón vanished. Tomorrow Gloria tells the whole story, and her cat is the first suspect.",
   "rereadQuestions": [
     {
-      "q": "When is summer in Bogotá, according to Hernando?",
+      "q": "What does Hernando say about Santa Fe?",
       "options": [
-        "In December, the dry season",
-        "In July",
-        "There is no summer at all",
-        "In March"
+        "They didn't score a single goal in all of March",
+        "They won every game in March",
+        "They play in the páramo",
+        "Jhon Fredy's app predicted their goals"
       ],
       "answer": 0
     },
@@ -140,7 +132,6 @@
     "g:preterite-er-ir",
     "g:preterite-ser-ir-hacer",
     "g:preterite-spelling-stem",
-    "g:questions",
     "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
@@ -154,12 +145,10 @@
     "p:indefinites-basic",
     "p:ir-a-venir-de-place",
     "p:me-te-nos-objects",
-    "p:poco-un-poco",
     "p:por-la-manana",
     "p:position-de",
     "p:possessives-basic",
     "p:quantifiers-basic",
-    "p:question-word-order",
     "p:saber-conocer",
     "p:servir-para",
     "p:telling-time",
@@ -171,19 +160,14 @@
     "l:allá",
     "l:antes",
     "l:aplicación",
-    "l:aquí",
     "l:bien",
     "l:café",
     "l:caja",
-    "l:calor",
     "l:carro",
     "l:celular",
     "l:cielo",
     "l:conocer",
-    "l:cuándo",
     "l:decir",
-    "l:diciembre",
-    "l:domingo",
     "l:día",
     "l:encontrar",
     "l:escuchar",
@@ -211,7 +195,6 @@
     "l:manejar",
     "l:marzo",
     "l:mañana",
-    "l:mijo",
     "l:mirar",
     "l:miércoles",
     "l:mover",
@@ -244,7 +227,6 @@
     "l:tráfico",
     "l:ventanilla",
     "l:ver",
-    "l:verano",
     "l:verde",
     "l:viento",
     "l:árbol"
