@@ -1,0 +1,43 @@
+{
+  "node": "p:eso-de-que",
+  "hook": {
+    "line": "Bogotá runs on rumours, and sooner or later someone tells you something you have no plan to believe. *Eso de que* lets you hold it at arm's length.",
+    "es": "Eso de que el café va a cerrar no me lo creo.",
+    "en": "I don't believe all this about the café closing."
+  },
+  "examples": [
+    { "es": "Eso de que va a renunciar es puro chisme.", "en": "This story about him resigning is pure gossip." },
+    { "es": "¿Qué es eso de que no hay plata?", "en": "What's all this about there being no money?" },
+    { "es": "Eso de que el café va a cerrar no me lo creo.", "en": "I don't believe all this about the café closing." },
+    { "es": "Eso que dices no tiene sentido.", "en": "What you're saying makes no sense. (to a friend)" },
+    { "es": "Eso de que nadie vino es mentira.", "en": "This claim that nobody came is a lie." },
+    { "es": "¿Qué es eso de que no quieres hablar conmigo?", "en": "What's all this about you not wanting to talk to me? (to a friend)" }
+  ],
+  "rule": "*Eso de que* wraps up someone else's claim in a package and holds it away from you. You are not saying it is true. You point at it, then dismiss it (*es puro chisme*) or challenge it (*¿Qué es eso de que…?*).\n\nAfter *de que* comes an ordinary sentence with an ordinary verb: *va a renunciar*, *no hay plata*. You are quoting a claim, so there is nothing fancy.\n\n*Eso* is always this neuter form, never *esa*.\n\nCompare *eso que dices*: no *de*, and *que* simply means \"that which\". There you point at what a person said, not at a rumour.",
+  "smallPrint": "Teachers call *eso* a neuter demonstrative: it refers to an idea, not to a noun.",
+  "readAndPick": [
+    { "es": "Eso de que va a renunciar es puro chisme.", "options": ["He resigned because of gossip.", "He is going to resign, and that is sad.", "This story about him resigning is pure gossip."], "answer": 2 },
+    { "es": "¿Qué es eso de que no hay plata?", "options": ["What's all this about there being no money?", "What's all this about having a lot of money?", "Where is the money?"], "answer": 0 },
+    { "es": "Eso que dices no tiene sentido.", "options": ["What I'm saying makes no sense.", "What you're saying makes no sense. (to a friend)", "What he's saying makes no sense."], "answer": 1 },
+    { "es": "Eso de que el café va a cerrar no me lo creo.", "options": ["I believe the café is going to close.", "The café doesn't believe it.", "I don't believe all this about the café closing."], "answer": 2 },
+    { "es": "Eso que dijo Mariana me dio risa.", "options": ["What Mariana said made me laugh.", "What Mariana says makes me laugh.", "Mariana laughed at what I said."], "answer": 0 },
+    { "es": "¿Qué es eso de que no quieres hablar conmigo?", "options": ["What's all this about me not wanting to talk to you?", "What's all this about him not wanting to talk to me?", "What's all this about you not wanting to talk to me? (to a friend)"], "answer": 2 },
+    { "es": "Eso de que nadie vino es mentira.", "options": ["This claim that nobody came is a lie.", "This claim that everybody came is a lie.", "Nobody came, so it's a lie."], "answer": 0 },
+    { "es": "Eso de que llegas tarde por el tráfico no me convence.", "options": ["Arriving late because of traffic convinces me.", "This story that I arrive late because of traffic doesn't convince me.", "This story that you arrive late because of traffic doesn't convince me. (to a friend)"], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *eso que* or *eso de que* and type the whole sentence, to a friend: *___ dices no tiene sentido.*", "answer": "Eso que dices no tiene sentido.", "accept": [], "why": "There is no rumour here, just what your friend said, so no *de*." },
+    { "prompt": "Type in Spanish: What's all this about there being no money?", "answer": "¿Qué es eso de que no hay plata?", "accept": [], "why": "*¿Qué es eso de que…?* challenges a claim." },
+    { "prompt": "Type in Spanish: This story about him resigning is pure gossip.", "answer": "Eso de que va a renunciar es puro chisme.", "accept": [], "why": "*Eso de que* plus an ordinary clause, then your verdict." },
+    { "prompt": "Type in Spanish: I don't believe all this about the café closing.", "answer": "Eso de que el café va a cerrar no me lo creo.", "accept": [], "why": "The package comes first, then your reaction." },
+    { "prompt": "Turn this into a challenge to a friend: *Tú no quieres hablar conmigo.* Ask: What's all this about you not wanting to talk to me?", "answer": "¿Qué es eso de que no quieres hablar conmigo?", "accept": [], "why": "The claim keeps its plain verb: *quieres*." },
+    { "prompt": "Type in Spanish: This claim that nobody came is a lie.", "answer": "Eso de que nadie vino es mentira.", "accept": [], "why": "After *de que*, the plain past verb *vino*." },
+    { "prompt": "Make it about Mariana: *Eso que dices me dio risa.* Say: What Mariana said made me laugh.", "answer": "Eso que dijo Mariana me dio risa.", "accept": [], "why": "Swap the speaker and put *dijo* in the past." }
+  ],
+  "pitfalls": [
+    { "wrong": "Eso de que vaya a renunciar es puro chisme.", "right": "Eso de que va a renunciar es puro chisme.", "why": "Almost. You are quoting what people claim, so the verb stays plain: *va*." },
+    { "wrong": "Eso que va a renunciar es puro chisme.", "right": "Eso de que va a renunciar es puro chisme.", "why": "Almost. For a claim you hold at arm's length, you need *de que*." },
+    { "wrong": "Esa de que va a renunciar es puro chisme.", "right": "Eso de que va a renunciar es puro chisme.", "why": "Almost. It points at a whole idea, so it is always neuter *eso*." }
+  ],
+  "personal": "Think of a rumour you've heard lately and dismiss it: *Eso de que…* and your verdict."
+}

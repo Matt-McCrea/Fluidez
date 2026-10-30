@@ -1,0 +1,43 @@
+{
+  "node": "p:mira-que",
+  "hook": {
+    "line": "Nobody is being asked to look. When a Colombian says *mira que* in that tone, it is a sigh with a raised eyebrow: reproach, or admiration, or both.",
+    "es": "¡Mira que te lo dije!",
+    "en": "I did tell you!"
+  },
+  "examples": [
+    { "es": "¡Mira que eres lento!", "en": "You really are slow! (to a friend)" },
+    { "es": "¡Mira que te lo dije!", "en": "I did tell you!" },
+    { "es": "¡Mira que tienes suerte!", "en": "You really are lucky! (to a friend)" },
+    { "es": "¡Mira que llegar tarde otra vez!", "en": "Honestly, arriving late again!" },
+    { "es": "¡Mire que es generoso!", "en": "You really are generous! (formal)" },
+    { "es": "¡Mira cómo quedó!", "en": "Look how it turned out!" }
+  ],
+  "rule": "*Mira que* looks like a command but it is an exclamation. It adds force to what comes next: \"you really are…\", \"honestly…\", \"I did…\".\n\nAfter it comes an ordinary sentence with an ordinary verb: *eres lento*, *te lo dije*. You are stating a fact, so there is nothing fancy.\n\nYou can also follow it with an infinitive to react to an action: *¡Mira que llegar tarde!*\n\nTo someone you address as *usted*, say *mire que*. For several people, *miren que*.\n\n*¡Mira cómo…!* is closer to a real \"look\", but it still carries amazement.",
+  "smallPrint": "Teachers call this a non-literal use of the imperative: the speaker does not really ask anyone to look.",
+  "readAndPick": [
+    { "es": "¡Mira que te lo dije!", "options": ["I did tell you!", "You told me!", "Look what I told you!"], "answer": 0 },
+    { "es": "¡Mira que eres lento!", "options": ["He really is slow!", "You really are slow! (to a friend)", "You really are fast! (to a friend)"], "answer": 1 },
+    { "es": "¡Mire que es generoso!", "options": ["You really are generous! (to a friend)", "He is not generous!", "You really are generous! (formal)"], "answer": 2 },
+    { "es": "¡Mira cómo llueve!", "options": ["Look how it's raining!", "I told you it would rain!", "It never rains!"], "answer": 0 },
+    { "es": "¡Mira que llegar tarde otra vez!", "options": ["You arrived late again, look.", "Look, I'm arriving late again.", "Honestly, arriving late again!"], "answer": 2 },
+    { "es": "¡Mira que tienes suerte!", "options": ["I really am lucky!", "You really are lucky! (to a friend)", "You were lucky!"], "answer": 1 },
+    { "es": "¡Mira cómo quedó!", "options": ["Look how it will turn out!", "Look how it turned out!", "Look, how did it turn out?"], "answer": 1 },
+    { "es": "¡Mira que son lentos!", "options": ["They really are slow!", "You really are slow! (to a friend)", "We really are slow!"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *mira* or *mire* and type the whole sentence, to a friend: *¡___ que te lo dije!*", "answer": "¡Mira que te lo dije!", "accept": [], "why": "A friend gets *mira*; *mire* is for *usted*." },
+    { "prompt": "Type in Spanish, to a friend: You really are slow!", "answer": "¡Mira que eres lento!", "accept": [], "why": "After *mira que*, the verb is plain: *eres*." },
+    { "prompt": "Type in Spanish: Look how it turned out!", "answer": "¡Mira cómo quedó!", "accept": [], "why": "*Cómo* keeps its accent." },
+    { "prompt": "Type in Spanish: Honestly, arriving late again!", "answer": "¡Mira que llegar tarde otra vez!", "accept": [], "why": "*Mira que* can be followed by an infinitive to react to an action." },
+    { "prompt": "Say it to Don Hernando (formal): *¡Mira que eres generoso!* Say: You really are generous!", "answer": "¡Mire que es generoso!", "accept": ["¡Mire que es usted generoso!"], "why": "With *usted* both the opener and the verb change: *mire*, *es*." },
+    { "prompt": "Type in Spanish, to a friend: You really are lucky!", "answer": "¡Mira que tienes suerte!", "accept": [], "why": "A plain *tú* verb: *tienes*." },
+    { "prompt": "Type in Spanish: Look how it's raining!", "answer": "¡Mira cómo llueve!", "accept": [], "why": "*Mira cómo* plus a plain verb." }
+  ],
+  "pitfalls": [
+    { "wrong": "¡Mira que seas lento!", "right": "¡Mira que eres lento!", "why": "Almost. You are stating a fact, so the verb stays plain: *eres*." },
+    { "wrong": "¡Mira como quedó!", "right": "¡Mira cómo quedó!", "why": "Almost. In an exclamation about \"how\", *cómo* carries its accent." },
+    { "wrong": "¡Mire que eres generoso!", "right": "¡Mire que es generoso!", "why": "Almost. *Mire* speaks to *usted*, so the verb must be *es*." }
+  ],
+  "personal": "Tell a friend off, or praise them, with *¡Mira que…!* and something true."
+}

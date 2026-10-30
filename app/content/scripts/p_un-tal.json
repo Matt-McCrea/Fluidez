@@ -1,0 +1,43 @@
+{
+  "node": "p:un-tal",
+  "hook": {
+    "line": "Someone you have never heard of is asking about you. You want to say so, with just a hint of \"and who is he?\". Spanish has two small words for that.",
+    "es": "Te buscaba un tal Camilo.",
+    "en": "Some guy called Camilo was looking for you. (to a friend)"
+  },
+  "examples": [
+    { "es": "Llamó un tal Rodríguez.", "en": "A certain Rodríguez called." },
+    { "es": "Me lo dijo una tal Marcela.", "en": "A certain Marcela told me." },
+    { "es": "Te buscaba un tal Camilo.", "en": "Some guy called Camilo was looking for you. (to a friend)" },
+    { "es": "Vino una tal Lucía a preguntar por ti.", "en": "A certain Lucía came to ask about you. (to a friend)" },
+    { "es": "Compró el edificio un tal Ramírez.", "en": "A certain Ramírez bought the building." },
+    { "es": "Lo firmó un tal doctor Peña.", "en": "A certain Dr Peña signed it." }
+  ],
+  "rule": "*Un tal* or *una tal* plus a name means \"a certain\" or \"some guy called\". It says: I don't know this person, and I'm not sure you do either. It can sound a little dismissive.\n\nIt matches the person: *un tal Camilo* for a man, *una tal Lucía* for a woman.\n\nUse it for someone who has not been introduced. Once you know who it is, drop *tal* and just say the name: *Camilo*.\n\nA title can come after *tal*: *un tal doctor Peña*.",
+  "smallPrint": "Teachers call this the indefinite article with *tal* used as an adjective meaning \"called\".",
+  "readAndPick": [
+    { "es": "Llamó un tal Rodríguez.", "options": ["A certain Rodríguez called, a stranger to me.", "Rodríguez, our neighbour, called.", "I called Rodríguez."], "answer": 0 },
+    { "es": "Me lo dijo una tal Marcela.", "options": ["Marcela, my sister, told me.", "I told a certain Marcela.", "A certain Marcela told me."], "answer": 2 },
+    { "es": "Te buscaba un tal Camilo.", "options": ["Camilo, your friend, was looking for you.", "Some guy called Camilo was looking for you. (to a friend)", "I was looking for a certain Camilo."], "answer": 1 },
+    { "es": "Vino una tal Lucía a preguntar por ti.", "options": ["A certain Lucía came to ask about you. (to a friend)", "Lucía, your sister, came to ask about you.", "A certain Lucía asked about me."], "answer": 0 },
+    { "es": "Compró el edificio un tal Ramírez.", "options": ["Ramírez bought a certain building.", "The building bought a certain Ramírez.", "A certain Ramírez bought the building."], "answer": 2 },
+    { "es": "Lo firmó un tal doctor Peña.", "options": ["Dr Peña, our doctor, signed it.", "A certain Dr Peña signed it.", "I signed it for Dr Peña."], "answer": 1 },
+    { "es": "Ayer llamó una tal Paula del banco.", "options": ["Yesterday I called a certain Paula from the bank.", "Yesterday Paula from the bank called me, as always.", "Yesterday a certain Paula from the bank called."], "answer": 2 },
+    { "es": "Mariana dice que habló con una tal Diana.", "options": ["Mariana says she spoke with a certain Diana.", "Mariana says Diana spoke with her.", "Mariana says she spoke with her friend Diana."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *un tal* or *una tal* and type the whole sentence: *Te buscaba ___ Camilo.*", "answer": "Te buscaba un tal Camilo.", "accept": [], "why": "Camilo is a man, so *un tal*." },
+    { "prompt": "Type in Spanish: A certain Marcela told me.", "answer": "Me lo dijo una tal Marcela.", "accept": [], "why": "Marcela is a woman, so *una tal*." },
+    { "prompt": "Type in Spanish: A certain Ramírez bought the building.", "answer": "Compró el edificio un tal Ramírez.", "accept": ["Un tal Ramírez compró el edificio."], "why": "*Un tal* goes right before the name." },
+    { "prompt": "Type in Spanish: A certain Dr Peña signed it.", "answer": "Lo firmó un tal doctor Peña.", "accept": [], "why": "The title comes after *tal* and before the name." },
+    { "prompt": "Make it a woman: *Te buscaba un tal Camilo.* Say: A certain Lucía was looking for you.", "answer": "Te buscaba una tal Lucía.", "accept": [], "why": "Both little words change to feminine: *una tal*." },
+    { "prompt": "Type in Spanish: Yesterday a certain Paula from the bank called.", "answer": "Ayer llamó una tal Paula del banco.", "accept": ["Llamó ayer una tal Paula del banco."], "why": "The caller is a woman you don't know, so *una tal*." },
+    { "prompt": "Type in Spanish: Mariana says she spoke with a certain Diana.", "answer": "Mariana dice que habló con una tal Diana.", "accept": [], "why": "*Con una tal Diana* keeps the same frame after *con*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Llamó tal Rodríguez.", "right": "Llamó un tal Rodríguez.", "why": "Almost. Spanish needs *un* before *tal*, where English only needs \"a certain\"." },
+    { "wrong": "Te buscaba un tal Camila.", "right": "Te buscaba una tal Camila.", "why": "Almost. *Tal* matches the person, so a woman gets *una tal*." },
+    { "wrong": "Me lo dijo una tal Marcela, mi hermana.", "right": "Me lo dijo Marcela, mi hermana.", "why": "Almost. *Una tal* means a stranger, so for someone you know, just say the name." }
+  ],
+  "personal": "Imagine someone you don't know called the café today, and say who: *Llamó un tal…* or *una tal…*."
+}

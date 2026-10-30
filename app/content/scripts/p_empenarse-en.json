@@ -1,0 +1,44 @@
+{
+  "node": "p:empenarse-en",
+  "hook": {
+    "line": "Everyone has a friend who keeps doing things the hard way. Spanish has a question for that moment, and it is never really a question: it is a complaint with a question mark.",
+    "es": "¿Por qué te empeñas en pagar tú?",
+    "en": "Why do you insist on paying? (to a friend)"
+  },
+  "examples": [
+    { "es": "¿Por qué te empeñas en discutir con todos?", "en": "Why do you insist on arguing with everyone? (to a friend)" },
+    { "es": "¿Por qué se empeña Hernando en manejar de noche?", "en": "Why does Hernando insist on driving at night?" },
+    { "es": "¿Por qué te empeñas en pagar tú?", "en": "Why do you insist on paying? (to a friend)" },
+    { "es": "Tomás se empeña en hablar español con todos.", "en": "Tomás insists on speaking Spanish with everyone." },
+    { "es": "Fuiste duro con él. ¿Es que no te cae bien?", "en": "You were hard on him. Don't you like him? (to a friend)" },
+    { "es": "¿Es que no te gusta mi café?", "en": "Don't you like my coffee, then? (to a friend)" }
+  ],
+  "rule": "*Empeñarse en* means to dig in and insist on something, usually against good sense. It always comes with *me*, *te* or *se*, then the little word *en*, then a verb: *te empeñas en pagar*.\n\nAs a question it rarely asks for information. *¿Por qué te empeñas en…?* means \"why do you keep doing that?\", and the tone carries the complaint.\n\n*¿Es que no…?* works the same way: you offer a hidden reason (*¿Es que no te gusta?*) and doubt it in the same breath.\n\nOn paper both look neutral. Speed and a falling voice make them reproaches; with a smile, they tease.",
+  "smallPrint": "Teachers call *empeñarse* a pronominal verb that takes the preposition *en*. *¿Es que…?* is a phrase that introduces a supposed reason.",
+  "soundTip": "The *ñ* in *empeñas* sounds like the *ny* in *canyon*.",
+  "readAndPick": [
+    { "es": "¿Por qué te empeñas en pagar tú?", "options": ["Why do you insist on paying? (to a friend)", "Why does he insist on paying?", "Why do I insist on paying?"], "answer": 0 },
+    { "es": "¿Por qué se empeña Hernando en manejar de noche?", "options": ["Why do Hernando and I insist on driving at night?", "Why do you insist on driving at night, Hernando? (to a friend)", "Why does Hernando insist on driving at night?"], "answer": 2 },
+    { "es": "Me empeño en aprender español.", "options": ["She insists on learning Spanish.", "I insist on learning Spanish.", "You insist on learning Spanish. (to a friend)"], "answer": 1 },
+    { "es": "¿Es que no te gusta mi café?", "options": ["Don't you like my coffee, then? (to a friend)", "Doesn't he like my coffee, then?", "Why don't you like my coffee? (to a friend)"], "answer": 0 },
+    { "es": "¿Por qué se empeña usted en trabajar tanto?", "options": ["Why do you insist on working so much? (to a friend)", "Why do you insist on working so much? (formal)", "Why does Hernando insist on working so much?"], "answer": 1 },
+    { "es": "Tomás se empeña en hablar español con todos.", "options": ["Tomás insists on speaking Spanish with everyone.", "Tomás refuses to speak Spanish with anyone.", "Tomás insists that everyone speaks Spanish."], "answer": 0 },
+    { "es": "¿Por qué te empeñas en decir que no?", "options": ["Why do you insist on saying yes? (to a friend)", "Why does she insist on saying no?", "Why do you insist on saying no? (to a friend)"], "answer": 2 },
+    { "es": "Fuiste duro con él. ¿Es que no te cae bien?", "options": ["He was hard on you. Don't you like him?", "You were hard on him. Don't you like him? (to a friend)", "You were hard on him. Doesn't he like you?"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *empeñas* or *empeño* and type the whole sentence, to a friend: *¿Por qué te ___ en pagar tú?*", "answer": "¿Por qué te empeñas en pagar tú?", "accept": ["¿Por qué te empeñas en pagar?"], "why": "You are speaking to a friend, so the verb ends in *-as*, like *te*." },
+    { "prompt": "Type in Spanish, to a friend: Why do you insist on arguing with everyone?", "answer": "¿Por qué te empeñas en discutir con todos?", "accept": ["¿Por qué te empeñas en discutir con todo el mundo?"], "why": "*Te empeñas en* plus the plain verb *discutir*." },
+    { "prompt": "Type in Spanish: Why does Hernando insist on driving at night?", "answer": "¿Por qué se empeña Hernando en manejar de noche?", "accept": ["¿Por qué Hernando se empeña en manejar de noche?"], "why": "For someone else the little word is *se*, and the verb ends in *-a*." },
+    { "prompt": "Make it about Tomás: *¿Por qué te empeñas en hablar español con todos?* Say: Tomás insists on speaking Spanish with everyone.", "answer": "Tomás se empeña en hablar español con todos.", "accept": ["Se empeña en hablar español con todos."], "why": "A statement keeps the same frame: *se empeña en* plus a verb." },
+    { "prompt": "Type in Spanish, to a friend: Don't you like my coffee, then?", "answer": "¿Es que no te gusta mi café?", "accept": ["¿Es que no te gusta mi café?"], "why": "*¿Es que no…?* offers the hidden reason and doubts it." },
+    { "prompt": "Ask Don Hernando (formal): Why do you insist on working so much?", "answer": "¿Por qué se empeña usted en trabajar tanto?", "accept": ["¿Por qué usted se empeña en trabajar tanto?"], "why": "With *usted* the little word is *se*, not *te*." },
+    { "prompt": "Type in Spanish: I insist on learning Spanish.", "answer": "Me empeño en aprender español.", "accept": ["Yo me empeño en aprender español."], "why": "For *I* the little word is *me*." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Por qué te empeñas a pagar tú?", "right": "¿Por qué te empeñas en pagar tú?", "why": "Almost. *Empeñarse* always goes with *en*, never *a*." },
+    { "wrong": "¿Por qué empeñas en pagar tú?", "right": "¿Por qué te empeñas en pagar tú?", "why": "Almost. The verb needs its little word *te* (or *me*, *se*); without it the sentence has no one who insists." },
+    { "wrong": "¿Por qué te empeñas en pagando tú?", "right": "¿Por qué te empeñas en pagar tú?", "why": "Almost. English says \"insist on paying\", but after *en* Spanish uses the plain infinitive, *pagar*." }
+  ],
+  "personal": "Think of something you insist on doing your own way, and say it: *Me empeño en…* and a verb."
+}

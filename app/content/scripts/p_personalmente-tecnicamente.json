@@ -1,0 +1,43 @@
+{
+  "node": "p:personalmente-tecnicamente",
+  "hook": {
+    "line": "Before you say something risky, it helps to say from which angle you are saying it. These adverbs are the polite way to disagree, or to hint that the official story isn't the whole story.",
+    "es": "Personalmente, no estoy de acuerdo.",
+    "en": "Personally, I don't agree."
+  },
+  "examples": [
+    { "es": "Personalmente, no estoy de acuerdo.", "en": "Personally, I don't agree." },
+    { "es": "Técnicamente, el café está abierto.", "en": "Technically, the café is open." },
+    { "es": "Oficialmente no ha renunciado.", "en": "Officially, he hasn't resigned." },
+    { "es": "Legalmente, nadie puede cerrar el café.", "en": "Legally, nobody can close the café." },
+    { "es": "Personalmente, prefiero el tinto.", "en": "Personally, I prefer black coffee." },
+    { "es": "Técnicamente, tienes razón.", "en": "Technically, you're right. (to a friend)" }
+  ],
+  "rule": "Adverbs like *personalmente*, *técnicamente*, *oficialmente* and *legalmente* open a sentence and tell us the angle it is true from. Put a comma after them. The rest of the sentence is completely normal.\n\nThey often hint at \"but\". *Técnicamente* suggests that in practice it isn't quite so. *Oficialmente* suggests that unofficially, something else is going on. *Personalmente* says that is only my view.\n\nThey are made from the adjective plus *-mente*, and the accent of the adjective stays: *técnico*, so *técnicamente*.",
+  "smallPrint": "Teachers call these sentence adverbs, or viewpoint adverbs: they frame the whole sentence, not just the verb.",
+  "readAndPick": [
+    { "es": "Personalmente, no estoy de acuerdo.", "options": ["Personally, I don't agree.", "Officially, I don't agree.", "Technically, I don't agree."], "answer": 0 },
+    { "es": "Técnicamente, el café está abierto.", "options": ["Officially, the café is open.", "Technically, the café is open.", "Personally, the café is open."], "answer": 1 },
+    { "es": "Oficialmente no ha renunciado.", "options": ["Legally, he hasn't resigned.", "Technically, he hasn't resigned.", "Officially, he hasn't resigned."], "answer": 2 },
+    { "es": "Legalmente, nadie puede cerrar el café.", "options": ["Legally, nobody can close the café.", "Personally, nobody can close the café.", "Technically, nobody can close the café."], "answer": 0 },
+    { "es": "Personalmente, prefiero el tinto.", "options": ["Officially, I prefer black coffee.", "Technically, I prefer black coffee.", "Personally, I prefer black coffee."], "answer": 2 },
+    { "es": "Oficialmente, la reunión empieza a las ocho.", "options": ["Personally, the meeting starts at eight.", "Officially, the meeting starts at eight.", "Legally, the meeting starts at eight."], "answer": 1 },
+    { "es": "Técnicamente, tienes razón.", "options": ["Technically, you're right. (to a friend)", "Personally, you're right. (to a friend)", "Officially, you're right. (to a friend)"], "answer": 0 },
+    { "es": "Personalmente, no lo haría.", "options": ["Officially, I wouldn't do it.", "Personally, I wouldn't do it.", "Technically, I wouldn't do it."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *técnica* or *técnicamente* and type the whole sentence: *___, tienes razón.* (Technically, you're right, to a friend.)", "answer": "Técnicamente, tienes razón.", "accept": ["Técnicamente tienes razón."], "why": "The framing word is an adverb, so it ends in *-mente*." },
+    { "prompt": "Type in Spanish: Personally, I prefer black coffee.", "answer": "Personalmente, prefiero el tinto.", "accept": ["Personalmente prefiero el tinto."], "why": "The adverb comes first, then a comma, then a normal sentence." },
+    { "prompt": "Type in Spanish: Officially, he hasn't resigned.", "answer": "Oficialmente no ha renunciado.", "accept": ["Oficialmente, no ha renunciado."], "why": "*Oficialmente* frames the whole sentence, which keeps its normal word order." },
+    { "prompt": "Type in Spanish: Legally, nobody can close the café.", "answer": "Legalmente, nadie puede cerrar el café.", "accept": ["Legalmente nadie puede cerrar el café."], "why": "Same frame with a new angle: *legalmente*." },
+    { "prompt": "Swap the angle: *Personalmente, no estoy de acuerdo.* Say: Officially, I don't agree.", "answer": "Oficialmente, no estoy de acuerdo.", "accept": ["Oficialmente no estoy de acuerdo."], "why": "Only the framing word changes; the rest stays." },
+    { "prompt": "Type in Spanish: Technically, the café is open.", "answer": "Técnicamente, el café está abierto.", "accept": ["Técnicamente el café está abierto."], "why": "*Técnicamente* keeps the accent from *técnico*." },
+    { "prompt": "Type in Spanish: Officially, the meeting starts at eight.", "answer": "Oficialmente, la reunión empieza a las ocho.", "accept": ["Oficialmente la reunión empieza a las ocho."], "why": "The adverb, a comma, and a normal sentence." }
+  ],
+  "pitfalls": [
+    { "wrong": "Personal, no estoy de acuerdo.", "right": "Personalmente, no estoy de acuerdo.", "why": "Almost. *Personal* is an adjective; to frame a whole sentence you need the adverb with *-mente*." },
+    { "wrong": "Tecnicamente, tienes razón.", "right": "Técnicamente, tienes razón.", "why": "Almost. The adverb keeps the accent of *técnico*." },
+    { "wrong": "No estoy de acuerdo personalmente.", "right": "Personalmente, no estoy de acuerdo.", "why": "Almost. To frame the claim, put the adverb first, with a comma." }
+  ],
+  "personal": "Say something you think personally that isn't what most people think: *Personalmente,* and your opinion."
+}
