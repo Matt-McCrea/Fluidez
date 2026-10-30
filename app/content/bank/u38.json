@@ -928,8 +928,8 @@
   },
   {
     "id": "u38-0038",
-    "es": "Vale leyó el artículo dos veces antes de abrir la panadería.",
-    "en": "Vale read the article twice before opening the bakery.",
+    "es": "Vale leyó el artículo dos veces antes de abrir el café.",
+    "en": "Vale read the article twice before opening the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -939,8 +939,8 @@
       "l:abrir",
       "l:antes",
       "l:artículo",
+      "l:café",
       "l:leer",
-      "l:panadería",
       "l:vez"
     ],
     "targets": [
@@ -1048,22 +1048,23 @@
   },
   {
     "id": "u38-0043",
-    "es": "Simón repite la palabra artículo todo el día.",
-    "en": "Simón repeats the word article all day.",
+    "es": "Simón grita «¡locura!» cada vez que alguien abre el periódico.",
+    "en": "Simón shouts «¡locura!» every time someone opens the newspaper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:cada-cualquier",
       "g:gender-articles",
-      "g:stem-e-i",
-      "l:artículo",
-      "l:día",
-      "l:palabra",
-      "l:repetir",
-      "p:todos-los-dias"
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:abrir",
+      "l:gritar",
+      "l:locura",
+      "l:periódico",
+      "l:vez",
+      "p:indefinites-basic"
     ],
-    "targets": [
-      "l:artículo"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u38",
     "theme": "the investigation",
@@ -1071,19 +1072,17 @@
   },
   {
     "id": "u38-0044",
-    "es": "Aun así, Tomás sigue sin firmar la oferta de Altamira.",
-    "en": "Even so, Tomás still won't sign Altamira's offer.",
+    "es": "Altamira subió la oferta. Aun así, Tomás no la firma.",
+    "en": "Altamira raised the offer. Even so, Tomás won't sign it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
       "g:gender-articles",
-      "g:prep-infinitive",
-      "g:stem-e-i",
-      "l:firmar",
+      "g:preterite-er-ir",
+      "l:firma",
       "l:oferta",
-      "l:seguir",
-      "p:seguir-gerundio"
+      "l:subir"
     ],
     "targets": [
       "g:concession-despite"
@@ -1522,18 +1521,23 @@
   },
   {
     "id": "u38-0063",
-    "es": "Aun así, nadie cree que todo esto vaya a terminar pronto.",
-    "en": "Even so, nobody believes all this will be over soon.",
+    "es": "El alcalde prometió revisar todo. Aun así, nadie cree que esto vaya a terminar pronto.",
+    "en": "The mayor promised to review everything. Even so, nobody believes this will be over soon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
+      "g:gender-articles",
       "g:ir-a-plans",
       "g:present-er-ir",
+      "g:preterite-er-ir",
       "g:that-clauses",
+      "l:alcalde",
       "l:creer",
       "l:ir",
+      "l:prometer",
       "l:pronto",
+      "l:revisar",
       "l:terminar",
       "p:demonstratives-basic"
     ],
@@ -2394,23 +2398,19 @@
   },
   {
     "id": "u38-0098",
-    "es": "Las elecciones fueron ganadas por un hombre desconocido.",
-    "en": "The elections were won by an unknown man.",
+    "es": "Un hombre desconocido ganó las elecciones.",
+    "en": "An unknown man won the elections.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:passive-ser",
-      "g:por-para-1",
-      "g:preterite-ser-ir-hacer",
+      "g:preterite-ar",
       "l:desconocido",
       "l:elección",
       "l:ganar",
-      "l:hombre",
-      "l:ser"
+      "l:hombre"
     ],
     "targets": [
-      "g:passive-ser",
       "l:desconocido",
       "l:elección"
     ],
@@ -2471,28 +2471,24 @@
   },
   {
     "id": "u38-0101",
-    "es": "Todavía no sabemos, los votos siguen siendo contados.",
-    "en": "We still don't know, the votes are still being counted.",
+    "es": "Todavía no sabemos. Están contando los votos.",
+    "en": "We still don't know. They're counting the votes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:todavia-no",
+      "g:estar-gerund",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:gerund-ways",
-      "g:passive-ser",
       "g:present-er-ir",
-      "g:stem-e-i",
       "l:contar",
+      "l:estar",
       "l:saber",
-      "l:seguir",
-      "l:ser",
       "l:voto",
-      "p:saber-conocer",
-      "p:seguir-gerundio"
+      "p:contar-dos-sentidos",
+      "p:saber-conocer"
     ],
-    "targets": [
-      "g:passive-ser"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u38",
     "theme": "headlines and events",
@@ -2571,15 +2567,17 @@
   },
   {
     "id": "u38-0105",
-    "es": "La manifestación terminó sin problemas, a pesar de la hora.",
-    "en": "The protest ended without problems, despite the hour.",
+    "es": "La manifestación terminó sin problemas, a pesar de las amenazas.",
+    "en": "The protest ended without problems, despite the threats.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
+      "g:direct-objects",
       "g:gender-articles",
+      "g:present-ar",
       "g:preterite-ar",
-      "l:hora",
+      "l:amenazar",
       "l:manifestación",
       "l:pesar",
       "l:problema",
@@ -2596,20 +2594,24 @@
   },
   {
     "id": "u38-0106",
-    "es": "Aun así, tres personas fueron detenidas por la policía.",
-    "en": "Even so, three people were arrested by the police.",
+    "es": "La protesta fue tranquila. Aun así, tres personas fueron detenidas por la policía.",
+    "en": "The protest was peaceful. Even so, three people were arrested by the police.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tranquilo",
       "g:concession-despite",
       "g:gender-articles",
       "g:passive-ser",
       "g:por-para-1",
       "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
       "l:detener",
       "l:persona",
       "l:policía",
-      "l:ser"
+      "l:protesta",
+      "l:ser",
+      "l:tranquilo"
     ],
     "targets": [
       "g:concession-despite",
@@ -3407,13 +3409,14 @@
   },
   {
     "id": "u38-0140",
-    "es": "Los premios son en el teatro, no en el hotel.",
-    "en": "The awards are at the theatre, not at the hotel.",
+    "es": "La entrega de premios es en el teatro, no en el hotel.",
+    "en": "The awards ceremony is at the theatre, not at the hotel.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:entrega",
       "l:hotel",
       "l:premio",
       "l:ser",
@@ -3454,8 +3457,8 @@
   },
   {
     "id": "u38-0142",
-    "es": "El premio fue dado por el alcalde.",
-    "en": "The prize was given by the mayor.",
+    "es": "El ganador fue felicitado por el alcalde.",
+    "en": "The winner was congratulated by the mayor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3464,9 +3467,10 @@
       "g:por-para-1",
       "g:preterite-ser-ir-hacer",
       "l:alcalde",
-      "l:dar",
-      "l:premio",
-      "l:ser"
+      "l:felicitar",
+      "l:ganador",
+      "l:ser",
+      "p:felicitaciones-por"
     ],
     "targets": [
       "g:passive-ser"
@@ -3478,8 +3482,8 @@
   },
   {
     "id": "u38-0143",
-    "es": "Los nombres serán anunciados el viernes.",
-    "en": "The names will be announced on Friday.",
+    "es": "Los ganadores serán anunciados el viernes.",
+    "en": "The winners will be announced on Friday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3487,7 +3491,7 @@
       "g:gender-articles",
       "g:passive-ser",
       "l:anunciar",
-      "l:nombre",
+      "l:ganador",
       "l:ser",
       "l:viernes",
       "p:days-el-lunes"
@@ -3680,22 +3684,21 @@
   },
   {
     "id": "u38-0151",
-    "es": "La ciudad no siguió funcionando el viernes por la tormenta.",
-    "en": "The city didn't keep running on Friday because of the storm.",
+    "es": "El viernes nadie salió de la casa a causa de la tormenta.",
+    "en": "On Friday nobody left the house because of the storm.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:causal-advanced",
       "g:gender-articles",
-      "g:gerund-ways",
-      "g:por-para-1",
-      "g:preterite-irregular-strong",
-      "l:ciudad",
-      "l:funcionar",
-      "l:seguir",
+      "g:preterite-er-ir",
+      "l:casa",
+      "l:causa",
+      "l:salir",
       "l:tormenta",
       "l:viernes",
       "p:days-el-lunes",
-      "p:seguir-gerundio"
+      "p:gracias-a-por-culpa-de"
     ],
     "targets": [],
     "kind": "statement",
@@ -3771,8 +3774,8 @@
   },
   {
     "id": "u38-0155",
-    "es": "La entrevista fue hecha en su despacho.",
-    "en": "The interview was done in his office.",
+    "es": "La entrevista fue grabada en su despacho.",
+    "en": "The interview was recorded in his office.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3781,7 +3784,7 @@
       "g:preterite-ser-ir-hacer",
       "l:despacho",
       "l:entrevista",
-      "l:hacer",
+      "l:grabar",
       "l:ser",
       "p:possessives-basic"
     ],
@@ -4268,15 +4271,17 @@
   },
   {
     "id": "u38-0176",
-    "es": "Un ladrón resultó ser el hijo del dueño.",
-    "en": "One thief turned out to be the owner's son.",
+    "es": "Al final, el ladrón resultó ser el hijo del dueño.",
+    "en": "In the end, the thief turned out to be the owner's son.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:al-final",
       "g:gender-articles",
       "g:preterite-ar",
       "g:ser-identity",
       "l:dueño",
+      "l:final",
       "l:hijo",
       "l:ladrón",
       "l:resultar",
@@ -4363,22 +4368,21 @@
   },
   {
     "id": "u38-0180",
-    "es": "Ya que estás aquí, ayúdame con estas cajas.",
-    "en": "Since you're here, help me with these boxes. (to a friend)",
+    "es": "Ya que estás aquí, quédate a almorzar.",
+    "en": "Since you're here, stay for lunch. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
       "g:commands-tu",
       "g:commands-with-pronouns",
-      "g:demonstratives",
       "g:estar-location-states",
+      "g:reflexive-routine",
+      "l:almorzar",
       "l:aquí",
-      "l:ayudar",
-      "l:caja",
       "l:estar",
-      "p:aqui-ahi-alla",
-      "p:me-te-nos-objects"
+      "l:quedarse",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:causal-advanced"
@@ -4390,43 +4394,44 @@
   },
   {
     "id": "u38-0181",
-    "es": "Ya que vas al centro, compra pan por favor.",
-    "en": "Since you're going downtown, please buy some bread. (to a friend)",
+    "es": "Ya que sabes cocinar, ¿por qué no haces la cena?",
+    "en": "Since you know how to cook, why don't you make dinner? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:por-favor",
-      "c:voy-vas",
       "g:causal-advanced",
-      "g:commands-tu",
-      "g:ir-a-plans",
-      "l:centro",
-      "l:comprar",
-      "l:favor",
-      "l:ir",
-      "l:pan"
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:cena",
+      "l:cocinar",
+      "l:hacer",
+      "l:qué",
+      "l:saber",
+      "p:por-que-no",
+      "p:prep-questions-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:causal-advanced"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u38",
     "theme": "reasons and causes",
     "source": "gen"
   },
   {
     "id": "u38-0182",
-    "es": "Ya que nadie quiere hablar, hablo yo.",
-    "en": "Since nobody wants to talk, I'll talk.",
+    "es": "Ya que nadie lee el contrato, lo leo yo.",
+    "en": "Since nobody is reading the contract, I'll read it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
-      "g:present-ar",
-      "g:stem-boot",
-      "g:verb-infinitive",
-      "l:hablar",
-      "l:querer"
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:contrato",
+      "l:leer"
     ],
     "targets": [
       "g:causal-advanced"
@@ -4496,8 +4501,8 @@
   },
   {
     "id": "u38-0185",
-    "es": "Ya que es tan caro, mejor lo pensamos otra semana.",
-    "en": "Since it's so expensive, let's think about it another week.",
+    "es": "Mejor lo pensamos otra semana, ya que es tan caro.",
+    "en": "Let's think about it another week, since it's so expensive.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4522,18 +4527,18 @@
   },
   {
     "id": "u38-0186",
-    "es": "Ya que Vale no está, yo atiendo la panadería.",
-    "en": "Since Vale isn't here, I'll run the bakery.",
+    "es": "Ya que Vale no está, hoy no hay postres.",
+    "en": "Since Vale isn't here, there are no desserts today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:causal-advanced",
       "g:estar-location-states",
-      "g:gender-articles",
-      "g:stem-boot",
-      "l:atender",
+      "g:hay-vs-esta",
       "l:estar",
-      "l:panadería"
+      "l:hoy",
+      "l:postre"
     ],
     "targets": [
       "g:causal-advanced"
@@ -4545,8 +4550,8 @@
   },
   {
     "id": "u38-0187",
-    "es": "Ya que el café está lleno, nos sentamos afuera.",
-    "en": "Since the café is full, we'll sit outside.",
+    "es": "Nos sentamos afuera, ya que el café está lleno.",
+    "en": "We'll sit outside, since the café is full.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4676,8 +4681,8 @@
   },
   {
     "id": "u38-0192",
-    "es": "Puesto que Tomás es el dueño, él decide.",
-    "en": "Since Tomás is the owner, he decides.",
+    "es": "Tomás decide, puesto que es el dueño.",
+    "en": "Tomás decides, since he's the owner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4725,8 +4730,8 @@
   },
   {
     "id": "u38-0194",
-    "es": "Puesto que la lluvia no para, nos quedamos en casa.",
-    "en": "Since the rain won't stop, we're staying home.",
+    "es": "Nos quedamos en casa, puesto que la lluvia no para.",
+    "en": "We're staying home, since the rain won't stop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4734,10 +4739,12 @@
       "g:gender-articles",
       "g:present-ar",
       "g:reflexive-routine",
+      "g:subj-value",
+      "g:subj-wanting",
       "g:that-clauses",
       "l:casa",
       "l:lluvia",
-      "l:parar",
+      "l:parir",
       "l:poner",
       "l:quedarse"
     ],
@@ -4802,8 +4809,8 @@
   },
   {
     "id": "u38-0197",
-    "es": "Dado que nadie contestó, dejé un mensaje.",
-    "en": "Since nobody answered, I left a message.",
+    "es": "Dejé un mensaje, dado que nadie contestó.",
+    "en": "I left a message, since nobody answered.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4859,8 +4866,8 @@
   },
   {
     "id": "u38-0199",
-    "es": "Dado que vienes de lejos, te invito el almuerzo.",
-    "en": "Since you come from far away, lunch is on me. (to a friend)",
+    "es": "Dado que vienes de tan lejos, te invito el almuerzo.",
+    "en": "Since you've come from so far away, lunch is on me. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4887,19 +4894,21 @@
   },
   {
     "id": "u38-0200",
-    "es": "Dado que no tenemos más plata, firmamos el contrato.",
-    "en": "Since we have no more money, we sign the contract.",
+    "es": "Dado que no tenemos más plata, vamos a firmar el contrato.",
+    "en": "Since we have no more money, we're going to sign the contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "c:vamos-a",
       "g:causal-advanced",
       "g:gender-articles",
-      "g:present-ar",
+      "g:ir-a-plans",
       "g:that-clauses",
       "l:contrato",
       "l:dar",
       "l:firmar",
+      "l:ir",
       "l:plata",
       "l:tener"
     ],
@@ -4913,24 +4922,23 @@
   },
   {
     "id": "u38-0201",
-    "es": "Dado que el celular no tiene batería, no puedo llamar.",
-    "en": "Since the phone has no battery, I can't call.",
+    "es": "No puedo llamar, ya que se me descargó el celular.",
+    "en": "I can't call, since my phone died.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:puedo",
-      "c:tienes",
       "g:causal-advanced",
       "g:gender-articles",
+      "g:preterite-ar",
+      "g:se-accidental",
       "g:stem-boot",
-      "g:that-clauses",
       "g:verb-infinitive",
-      "l:batería",
       "l:celular",
-      "l:dar",
+      "l:descargarse",
       "l:llamar",
       "l:poder",
-      "l:tener"
+      "p:cargar-descargar"
     ],
     "targets": [
       "g:causal-advanced"
@@ -5017,8 +5025,8 @@
   },
   {
     "id": "u38-0205",
-    "es": "Debido a la hora, ya no hay mesas libres.",
-    "en": "Because of the time, there are no free tables left.",
+    "es": "Ya no hay mesas libres debido a la cantidad de periodistas.",
+    "en": "There are no free tables left because of the number of journalists.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5028,10 +5036,11 @@
       "g:causal-advanced",
       "g:gender-articles",
       "g:hay-vs-esta",
+      "l:cantidad",
       "l:deber",
-      "l:hora",
       "l:libre",
       "l:mesa",
+      "l:periodista",
       "p:gracias-a-por-culpa-de",
       "p:lleno-libre"
     ],
@@ -5073,8 +5082,8 @@
   },
   {
     "id": "u38-0207",
-    "es": "Debido a una enfermedad, Hernando no vino hoy.",
-    "en": "Because of an illness, Hernando didn't come today.",
+    "es": "Hernando no vino hoy debido a una enfermedad.",
+    "en": "Hernando didn't come today because of an illness.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5220,8 +5229,8 @@
   },
   {
     "id": "u38-0213",
-    "es": "A causa del frío, Simón no quiere salir del café.",
-    "en": "Because of the cold, Simón doesn't want to go out of the café.",
+    "es": "Simón no quiere salir del café a causa del frío.",
+    "en": "Simón doesn't want to go out of the café because of the cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5276,8 +5285,8 @@
   },
   {
     "id": "u38-0215",
-    "es": "A causa de un error, el pedido llegó dos veces.",
-    "en": "Because of a mistake, the order arrived twice.",
+    "es": "El pedido llegó dos veces a causa de un error.",
+    "en": "The order arrived twice because of a mistake.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5658,8 +5667,8 @@
   },
   {
     "id": "u38-0231",
-    "es": "Ya que Vale está enferma, hoy no abre.",
-    "en": "Since Vale is sick, it's not opening today.",
+    "es": "Ya que doña Gloria está enferma, hoy no abre.",
+    "en": "Since Doña Gloria is ill, it isn't opening today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5670,7 +5679,8 @@
       "l:abrir",
       "l:enfermo",
       "l:estar",
-      "l:hoy"
+      "l:hoy",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:causal-advanced"
@@ -5766,7 +5776,7 @@
   {
     "id": "u38-0236",
     "es": "El error se debe a que el dispositivo es muy viejo.",
-    "en": "The mistake is because the device is very old.",
+    "en": "The error is due to the device being very old.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5820,16 +5830,18 @@
   },
   {
     "id": "u38-0238",
-    "es": "Toca el botón rojo ya que la puerta no abre sola.",
-    "en": "Touch the red button, since the door doesn't open by itself. (to a friend)",
+    "es": "Toca el botón rojo, ya que la puerta no se abre sola.",
+    "en": "Press the red button, since the door doesn't open by itself. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-se",
       "g:adjective-agreement",
       "g:causal-advanced",
       "g:gender-articles",
       "g:present-ar",
       "g:present-er-ir",
+      "g:se-impersonal",
       "l:abrir",
       "l:botón",
       "l:puerta",
@@ -6173,12 +6185,11 @@
   },
   {
     "id": "u38-0251",
-    "es": "Dado que Hernando no tuvo hijos propios, crió a su sobrino con mucho cariño.",
-    "en": "Since Hernando had no children of his own, he raised his nephew with great love.",
+    "es": "Dado que mi tía no tuvo hijos, crió a su sobrino con mucho cariño.",
+    "en": "Since my aunt had no children, she raised her nephew with great love.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:causal-advanced",
       "g:preterite-ar",
       "g:preterite-irregular-strong",
@@ -6187,9 +6198,9 @@
       "l:criar",
       "l:dar",
       "l:hijos",
-      "l:propio",
       "l:sobrino",
       "l:tener",
+      "l:tía",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -6263,8 +6274,8 @@
   },
   {
     "id": "u38-0254",
-    "es": "No me critiques por la prisa, ya que salí a las seis.",
-    "en": "Don't criticise me for the rush, since I left at six. (to a friend)",
+    "es": "No me regañes por llegar tarde, ya que el trancón no fue culpa mía.",
+    "en": "Don't scold me for being late, since the traffic jam wasn't my fault. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6272,16 +6283,21 @@
       "g:gender-articles",
       "g:negative-commands",
       "g:por-para-1",
-      "g:preterite-er-ir",
-      "l:criticar",
-      "l:prisa",
-      "l:salir",
+      "g:possessives-stressed",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:culpa",
+      "l:llegar",
+      "l:regañar",
+      "l:ser",
+      "l:tarde",
+      "l:trancón",
+      "p:llegar-a-tiempo",
       "p:me-te-nos-objects",
-      "p:telling-time"
+      "p:por-culpa-de"
     ],
     "targets": [
-      "g:causal-advanced",
-      "l:prisa"
+      "g:causal-advanced"
     ],
     "kind": "statement",
     "unit": "u38",
@@ -6290,18 +6306,21 @@
   },
   {
     "id": "u38-0255",
-    "es": "Con las prisas del lunes, olvidé el abrigo en el bus.",
-    "en": "In the Monday rush, I forgot my coat on the bus.",
+    "es": "Por salir con prisa el lunes, olvidé el abrigo en el bus.",
+    "en": "Because I left in a hurry on Monday, I forgot my coat on the bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:preterite-ar",
       "l:abrigo",
       "l:bus",
       "l:lunes",
       "l:olvidar",
-      "l:prisa"
+      "l:prisa",
+      "l:salir",
+      "p:days-el-lunes"
     ],
     "targets": [
       "l:prisa"
@@ -6381,8 +6400,8 @@
   },
   {
     "id": "u38-0259",
-    "es": "Porque tengo prisa, el bus sale ya.",
-    "en": "Because I'm in a hurry, the bus leaves now.",
+    "es": "Porque tengo prisa: el bus ya va a salir.",
+    "en": "Because I'm in a hurry: the bus is about to leave.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6390,9 +6409,10 @@
       "c:tengo",
       "g:cause-result",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:ir-a-plans",
       "g:yo-irregular",
       "l:bus",
+      "l:ir",
       "l:prisa",
       "l:salir",
       "l:tener",
@@ -6437,7 +6457,7 @@
   {
     "id": "u38-0261",
     "es": "Sin prisa, pero sin pausa, terminamos el trabajo.",
-    "en": "No rush, but no pause, we finished the job.",
+    "en": "Slowly but surely, we finished the job.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6484,8 +6504,8 @@
   },
   {
     "id": "u38-0263",
-    "es": "Tomé el café muy rápido, ya que llegaba tarde.",
-    "en": "I drank the coffee very fast, since I was late.",
+    "es": "Tomé el café muy rápido, ya que iba tarde.",
+    "en": "I drank the coffee very fast, since I was running late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6495,11 +6515,10 @@
       "g:pret-vs-imperfect",
       "g:preterite-ar",
       "l:café",
-      "l:llegar",
+      "l:ir",
       "l:rápido",
       "l:tarde",
       "l:tomar",
-      "p:llegar-a-tiempo",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -6705,17 +6724,20 @@
   },
   {
     "id": "u38-0271",
-    "es": "Gracias a la conciencia de los vecinos, el parque está bonito.",
-    "en": "Thanks to the neighbours' awareness, the park looks nice.",
+    "es": "Gracias a que los vecinos tomaron conciencia, el parque está más bonito.",
+    "en": "Thanks to the neighbours becoming more aware, the park looks nicer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
+      "g:preterite-ar",
+      "g:that-clauses",
       "l:bonito",
       "l:conciencia",
       "l:estar",
       "l:parque",
+      "l:tomar",
       "l:vecino",
       "p:gracias-a-por-culpa-de",
       "p:por-culpa-de"
@@ -6891,18 +6913,17 @@
   },
   {
     "id": "u38-0278",
-    "es": "A pesar de la tarea, terminamos temprano.",
-    "en": "Despite the task, we finished early.",
+    "es": "A pesar de tanto trabajo, terminamos temprano.",
+    "en": "Despite so much work, we finished early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
-      "g:gender-articles",
       "g:present-ar",
       "l:pesar",
-      "l:tarea",
       "l:temprano",
-      "l:terminar"
+      "l:terminar",
+      "l:trabajo"
     ],
     "targets": [
       "g:concession-despite"
@@ -6914,21 +6935,20 @@
   },
   {
     "id": "u38-0279",
-    "es": "A pesar de su edad, Hernando camina todos los días.",
-    "en": "Despite his age, Hernando walks every day.",
+    "es": "A pesar de su edad, Hernando baila toda la noche.",
+    "en": "Despite his age, Hernando dances all night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
       "g:gender-articles",
       "g:present-ar",
-      "l:caminar",
-      "l:día",
+      "l:bailar",
       "l:edad",
+      "l:noche",
       "l:pesar",
       "p:possessives-basic",
-      "p:todos-los-dias",
-      "p:veces-al"
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:concession-despite"
@@ -6940,19 +6960,19 @@
   },
   {
     "id": "u38-0280",
-    "es": "A pesar de las dudas, Tomás decidió quedarse.",
-    "en": "Despite his doubts, Tomás decided to stay.",
+    "es": "Tomás decidió quedarse a pesar de sus dudas.",
+    "en": "Tomás decided to stay despite his doubts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
-      "g:gender-articles",
       "g:preterite-er-ir",
       "g:reflexive-routine",
       "l:decidir",
       "l:duda",
       "l:pesar",
-      "l:quedarse"
+      "l:quedarse",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:concession-despite"
@@ -6964,20 +6984,20 @@
   },
   {
     "id": "u38-0281",
-    "es": "A pesar de ese precio, compré el abrigo.",
-    "en": "Despite that price, I bought the coat.",
+    "es": "A pesar de su precio, compré el abrigo.",
+    "en": "Despite its price, I bought the coat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:compre-trabaje",
       "g:concession-despite",
-      "g:demonstratives",
       "g:gender-articles",
       "g:preterite-ar",
       "l:abrigo",
       "l:comprar",
       "l:pesar",
-      "l:precio"
+      "l:precio",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:concession-despite"
@@ -7038,18 +7058,21 @@
   },
   {
     "id": "u38-0284",
-    "es": "A pesar de este frío, Vale salió sin chaqueta.",
-    "en": "Despite this cold, Vale went out without a jacket.",
+    "es": "Vale salió sin chaqueta, a pesar de que hacía frío.",
+    "en": "Vale went out without a jacket, even though it was cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
       "g:preterite-er-ir",
       "l:chaqueta",
       "l:frío",
+      "l:hacer",
       "l:pesar",
       "l:salir",
-      "p:demonstratives-basic"
+      "p:hace-frio"
     ],
     "targets": [
       "g:concession-despite"
@@ -7061,8 +7084,8 @@
   },
   {
     "id": "u38-0285",
-    "es": "A pesar de la distancia, hablamos todas las noches.",
-    "en": "Despite the distance, we talk every night.",
+    "es": "Hablamos todas las noches a pesar de la distancia.",
+    "en": "We talk every night despite the distance.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7134,8 +7157,8 @@
   },
   {
     "id": "u38-0288",
-    "es": "A pesar de que lo sabía, no dijo nada.",
-    "en": "Even though he knew it, he said nothing.",
+    "es": "No dijo nada, a pesar de que lo sabía.",
+    "en": "He said nothing, even though he knew.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7185,8 +7208,8 @@
   },
   {
     "id": "u38-0290",
-    "es": "A pesar de que es tarde, voy a llamar a Mariana.",
-    "en": "Even though it's late, I'm going to call Mariana.",
+    "es": "Voy a llamar a Mariana, a pesar de que es tarde.",
+    "en": "I'm going to call Mariana, even though it's late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7237,13 +7260,13 @@
   },
   {
     "id": "u38-0292",
-    "es": "A pesar de que nadie lo pidió, Vale preparó postres para todos.",
-    "en": "Even though nobody asked for it, Vale made desserts for everyone.",
+    "es": "Vale preparó postres para todos, a pesar de que nadie se los pidió.",
+    "en": "Vale made desserts for everyone, even though nobody asked her to.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
-      "g:direct-objects",
+      "g:double-pronouns",
       "g:preterite-ar",
       "g:preterite-spelling-stem",
       "l:pedir",
@@ -7433,19 +7456,24 @@
   },
   {
     "id": "u38-0300",
-    "es": "Estudié mucho; sin embargo, no pasé el examen.",
-    "en": "I studied a lot; however, I didn't pass the exam.",
+    "es": "Llegué a tiempo; sin embargo, la oficina ya estaba cerrada.",
+    "en": "I arrived on time; however, the office was already closed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
+      "g:estar-participle",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-spelling-stem",
+      "l:cerrar",
       "l:embargo",
-      "l:estudiar",
-      "l:examen",
-      "l:pasar",
-      "p:quantifiers-basic"
+      "l:estar",
+      "l:llegar",
+      "l:oficina",
+      "l:tiempo",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "g:concession-despite"
@@ -7566,14 +7594,16 @@
   },
   {
     "id": "u38-0305",
-    "es": "Sin embargo, Hernando sigue creyendo que la ciudad puede cambiar.",
-    "en": "However, Hernando still believes the city can change.",
+    "es": "La ciudad no lo escucha. Sin embargo, Hernando sigue creyendo que puede cambiar.",
+    "en": "The city doesn't listen to him. However, Hernando still believes it can change.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
+      "g:direct-objects",
       "g:gender-articles",
       "g:gerund-ways",
+      "g:present-ar",
       "g:stem-boot",
       "g:stem-e-i",
       "g:that-clauses",
@@ -7582,6 +7612,7 @@
       "l:ciudad",
       "l:creer",
       "l:embargo",
+      "l:escuchar",
       "l:poder",
       "l:seguir",
       "p:seguir-gerundio"
@@ -7596,8 +7627,8 @@
   },
   {
     "id": "u38-0306",
-    "es": "Sin embargo, nadie le contestó el teléfono.",
-    "en": "However, nobody answered his phone.",
+    "es": "Mariana llamó tres veces a la alcaldía. Sin embargo, nadie le contestó.",
+    "en": "Mariana called the mayor's office three times. However, nobody answered her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7605,9 +7636,12 @@
       "g:gender-articles",
       "g:indirect-objects",
       "g:preterite-ar",
+      "l:alcaldía",
       "l:contestar",
       "l:embargo",
-      "l:teléfono"
+      "l:llamar",
+      "l:vez",
+      "p:veces-al"
     ],
     "targets": [
       "g:concession-despite"
@@ -7678,8 +7712,8 @@
   },
   {
     "id": "u38-0309",
-    "es": "Aun así, Vale se levantó a las cuatro para preparar el pan.",
-    "en": "Even so, Vale got up at four to prepare the bread.",
+    "es": "Vale se acostó a las dos. Aun así, se levantó a las cuatro para preparar el pan.",
+    "en": "Vale went to bed at two. Even so, she got up at four to make the bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7687,6 +7721,7 @@
       "g:gender-articles",
       "g:preterite-ar",
       "g:reflexive-routine",
+      "l:acostarse",
       "l:levantarse",
       "l:pan",
       "l:preparar",
@@ -7704,19 +7739,25 @@
   },
   {
     "id": "u38-0310",
-    "es": "Aun así, no pienso rendirme.",
-    "en": "Even so, I'm not planning to give up.",
+    "es": "Esta semana todo salió mal. Aun así, mañana lo intento otra vez.",
+    "en": "Everything went wrong this week. Even so, I'll try again tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
-      "g:object-pronoun-position",
-      "g:reflexive-routine",
-      "g:stem-boot",
-      "l:pensar",
-      "l:rendirse",
-      "p:pensar-en",
-      "p:pensar-inf"
+      "g:direct-objects",
+      "g:present-ar",
+      "g:preterite-er-ir",
+      "l:intentar",
+      "l:mal",
+      "l:mañana",
+      "l:salir",
+      "l:semana",
+      "l:vez",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:demonstratives-basic",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:concession-despite"
@@ -7728,19 +7769,23 @@
   },
   {
     "id": "u38-0311",
-    "es": "Aun así, la ciudad siguió su vida normal.",
-    "en": "Even so, the city went on with its normal life.",
+    "es": "Hubo protestas toda la mañana. Aun así, la ciudad siguió con su vida normal.",
+    "en": "There were protests all morning. Even so, the city carried on as normal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:preterite-irregular-strong",
       "l:ciudad",
+      "l:mañana",
       "l:normal",
+      "l:protesta",
       "l:seguir",
       "l:vida",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:concession-despite"
@@ -7752,18 +7797,24 @@
   },
   {
     "id": "u38-0312",
-    "es": "Aun así, me gusta vivir aquí.",
-    "en": "Even so, I like living here.",
+    "es": "Bogotá es fría y llueve mucho. Aun así, me gusta vivir aquí.",
+    "en": "Bogotá is cold and it rains a lot. Even so, I like living here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
       "g:concession-despite",
       "g:gustar-basic",
+      "g:ser-identity",
+      "g:stem-boot",
       "l:aquí",
+      "l:frío",
       "l:gustar",
+      "l:llover",
+      "l:ser",
       "l:vivir",
-      "p:aqui-ahi-alla"
+      "p:aqui-ahi-alla",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:concession-despite"
@@ -7775,8 +7826,8 @@
   },
   {
     "id": "u38-0313",
-    "es": "Aun así, no voy a firmar nada.",
-    "en": "Even so, I'm not going to sign anything.",
+    "es": "Altamira me ofreció más plata. Aun así, no voy a firmar nada.",
+    "en": "Altamira offered me more money. Even so, I'm not going to sign anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7784,8 +7835,12 @@
       "g:concession-despite",
       "g:ir-a-plans",
       "g:negation-words",
+      "g:preterite-er-ir",
       "l:firmar",
-      "l:ir"
+      "l:ir",
+      "l:ofrecer",
+      "l:plata",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:concession-despite"
@@ -8079,22 +8134,20 @@
   },
   {
     "id": "u38-0326",
-    "es": "Tomás recibió una buena oferta. Aun así, rechazó el dinero.",
-    "en": "Tomás received a good offer. Even so, he turned down the money.",
+    "es": "El médico le prohibió el tinto. Aun así, Hernando pidió uno.",
+    "en": "The doctor banned him from black coffee. Even so, Hernando ordered one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:indirect-objects",
       "g:preterite-er-ir",
-      "l:buena",
-      "l:dinero",
-      "l:oferta",
-      "l:rechazar",
-      "l:recibir",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "g:preterite-spelling-stem",
+      "l:médico",
+      "l:pedir",
+      "l:prohibir",
+      "l:tinto"
     ],
     "targets": [
       "g:concession-despite"
@@ -8308,17 +8361,22 @@
   },
   {
     "id": "u38-0334",
-    "es": "A pesar de eso, Rosa nunca perdió la sonrisa.",
-    "en": "Despite that, Rosa never lost her smile.",
+    "es": "La vida de Rosa no fue fácil. A pesar de eso, nunca perdió la sonrisa.",
+    "en": "Rosa's life wasn't easy. Despite that, she never lost her smile.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
       "g:gender-articles",
       "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:fácil",
       "l:perder",
       "l:pesar",
+      "l:ser",
       "l:sonrisa",
+      "l:vida",
       "p:demonstratives-basic",
       "p:frequency-scale"
     ],
@@ -8332,18 +8390,22 @@
   },
   {
     "id": "u38-0335",
-    "es": "A pesar de ello, seguimos trabajando.",
-    "en": "Despite that, we kept working.",
+    "es": "Nos cortaron la luz, pero seguimos trabajando a pesar de todo.",
+    "en": "They cut off our power, but we kept working despite everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
+      "g:gender-articles",
       "g:gerund-ways",
-      "g:present-er-ir",
-      "l:ello",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:cortar",
+      "l:luz",
       "l:pesar",
       "l:seguir",
       "l:trabajar",
+      "p:me-te-nos-objects",
       "p:seguir-gerundio"
     ],
     "targets": [
@@ -8356,8 +8418,8 @@
   },
   {
     "id": "u38-0336",
-    "es": "A pesar de lo que pasó, Tomás sigue sonriendo.",
-    "en": "Despite what happened, Tomás keeps smiling.",
+    "es": "Tomás sigue sonriendo a pesar de lo que pasó.",
+    "en": "Tomás keeps smiling despite what happened.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8382,8 +8444,8 @@
   },
   {
     "id": "u38-0337",
-    "es": "A pesar de los problemas, todo salió bien.",
-    "en": "Despite the problems, everything turned out well.",
+    "es": "Todo salió bien a pesar de los problemas.",
+    "en": "Everything turned out well despite the problems.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8665,8 +8727,8 @@
   },
   {
     "id": "u38-0347",
-    "es": "A pesar de su rodilla, Hernando llegó primero a la plaza.",
-    "en": "Despite his knee, Hernando was the first to reach the square.",
+    "es": "Hernando llegó primero a la plaza, a pesar de su rodilla.",
+    "en": "Hernando was the first to reach the square, despite his knee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8715,20 +8777,22 @@
   },
   {
     "id": "u38-0349",
-    "es": "A pesar de este polvo, los obreros trabajaron toda la tarde.",
-    "en": "Despite this dust, the workers worked all afternoon.",
+    "es": "Los obreros trabajaron toda la tarde, a pesar de que había polvo por todas partes.",
+    "en": "The workers worked all afternoon, even though there was dust everywhere.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:preterite-ar",
       "l:obrero",
+      "l:parte",
       "l:pesar",
       "l:polvo",
       "l:tarde",
       "l:trabajar",
-      "p:demonstratives-basic",
+      "p:ninguna-parte",
       "p:todos-los-dias"
     ],
     "targets": [
@@ -8773,8 +8837,8 @@
   },
   {
     "id": "u38-0351",
-    "es": "A pesar de ser conocido, el actor camina sin guardaespaldas.",
-    "en": "Despite being well known, the actor walks without bodyguards.",
+    "es": "A pesar de ser muy conocido, el actor toma el bus como todos.",
+    "en": "Despite being very well known, the actor takes the bus like everyone else.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8783,11 +8847,12 @@
       "g:present-ar",
       "g:ser-identity",
       "l:actor",
-      "l:caminar",
+      "l:bus",
       "l:conocer",
-      "l:guardaespaldas",
       "l:pesar",
       "l:ser",
+      "l:tomar",
+      "p:quantifiers-basic",
       "p:saber-conocer"
     ],
     "targets": [
@@ -8829,23 +8894,25 @@
   },
   {
     "id": "u38-0353",
-    "es": "Es una mujer muy conocida; aun así, atiende a todos sus amigos.",
-    "en": "She's a very well-known woman; even so, she attends to all her friends.",
+    "es": "Es una periodista muy conocida; aun así, saluda a todo el mundo en la calle.",
+    "en": "She's a very well-known journalist; even so, she says hello to everyone in the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
       "g:gender-articles",
+      "g:present-ar",
       "g:ser-identity",
-      "g:stem-boot",
-      "l:amigo",
-      "l:atender",
+      "l:calle",
       "l:conocer",
-      "l:mujer",
+      "l:mundo",
+      "l:periodista",
+      "l:saludar",
       "l:ser",
-      "p:possessives-basic",
+      "p:personal-a",
       "p:quantifiers-basic",
-      "p:saber-conocer"
+      "p:saber-conocer",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:concession-despite"
@@ -8883,24 +8950,21 @@
   },
   {
     "id": "u38-0355",
-    "es": "A pesar de su fama, el reino sigue siendo pequeño.",
-    "en": "Despite its fame, the kingdom remains small.",
+    "es": "A pesar de ser un reino, España tiene presidente.",
+    "en": "Despite being a kingdom, Spain has a president.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:concession-despite",
       "g:gender-articles",
-      "g:gerund-ways",
       "g:ser-identity",
-      "g:stem-e-i",
-      "l:fama",
-      "l:pequeño",
+      "g:stem-boot",
       "l:pesar",
+      "l:presidente",
       "l:reino",
-      "l:seguir",
       "l:ser",
-      "p:possessives-basic",
-      "p:seguir-gerundio"
+      "l:tener"
     ],
     "targets": [
       "g:concession-despite",
@@ -8943,16 +9007,18 @@
   },
   {
     "id": "u38-0357",
-    "es": "A pesar de que el dispositivo es nuevo, ya falla.",
-    "en": "Even though the device is new, it already fails.",
+    "es": "A pesar de que el dispositivo es nuevo, ya está fallando.",
+    "en": "Even though the device is new, it's already failing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
+      "g:estar-gerund",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:present-ar",
       "g:ser-identity",
       "l:dispositivo",
+      "l:estar",
       "l:fallar",
       "l:nuevo",
       "l:pesar",
@@ -9052,24 +9118,26 @@
   },
   {
     "id": "u38-0361",
-    "es": "Aun así, el artículo fue leído por el alcalde.",
-    "en": "Even so, the article was read by the mayor.",
+    "es": "El alcalde dijo que no lee periódicos. Aun así, leyó el artículo dos veces.",
+    "en": "The mayor said he doesn't read newspapers. Even so, he read the article twice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
       "g:gender-articles",
-      "g:passive-ser",
-      "g:por-para-1",
-      "g:preterite-ser-ir-hacer",
+      "g:present-er-ir",
+      "g:preterite-irregular-strong",
+      "g:preterite-spelling-stem",
+      "g:that-clauses",
       "l:alcalde",
       "l:artículo",
+      "l:decir",
       "l:leer",
-      "l:ser"
+      "l:periódico",
+      "l:vez"
     ],
     "targets": [
       "g:concession-despite",
-      "g:passive-ser",
       "l:artículo"
     ],
     "kind": "statement",
@@ -9260,7 +9328,7 @@
   },
   {
     "id": "u38-0369",
-    "es": "Se quedó callado, aun así, todos sabían lo que pensaba.",
+    "es": "Se quedó callado; aun así, todos sabían lo que pensaba.",
     "en": "He stayed quiet; even so, everybody knew what he thought.",
     "accept": [],
     "acceptEn": [],
@@ -9367,26 +9435,24 @@
   },
   {
     "id": "u38-0373",
-    "es": "Nadie sabe por qué fueron escogidas esas casas.",
-    "en": "Nobody knows why those houses were picked.",
+    "es": "Nadie sabe por qué las máquinas llegaron de noche.",
+    "en": "Nobody knows why the machines came at night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
+      "g:gender-articles",
       "g:indirect-questions",
-      "g:passive-ser",
       "g:present-er-ir",
-      "g:preterite-ser-ir-hacer",
-      "l:casa",
-      "l:escoger",
+      "g:preterite-ar",
+      "l:llegar",
+      "l:máquina",
+      "l:noche",
       "l:qué",
       "l:saber",
-      "l:ser",
       "p:saber-conocer"
     ],
     "targets": [
-      "g:indirect-questions",
-      "g:passive-ser"
+      "g:indirect-questions"
     ],
     "kind": "statement",
     "unit": "u38",
@@ -10013,17 +10079,18 @@
   },
   {
     "id": "u38-0397",
-    "es": "Un periodista preguntó por qué nadie había firmado antes.",
-    "en": "A journalist asked why nobody had signed before.",
+    "es": "Un periodista preguntó por qué la alcaldía no había dicho nada.",
+    "en": "A journalist asked why the mayor's office hadn't said anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indirect-questions",
+      "g:negation-words",
       "g:pluperfect",
       "g:preterite-ar",
-      "l:antes",
-      "l:firmar",
+      "l:alcaldía",
+      "l:decir",
       "l:periodista",
       "l:preguntar",
       "l:qué",
@@ -10091,20 +10158,20 @@
   },
   {
     "id": "u38-0400",
-    "es": "Depende de cuántas firmas hay en la lista.",
+    "es": "Depende de cuántas firmas haya en la lista.",
     "en": "It depends on how many signatures there are on the list.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:depende",
-      "c:hay",
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:hay-vs-esta",
       "g:indirect-questions",
+      "g:subj-irregulars",
       "l:cuánto",
       "l:depender",
       "l:firma",
+      "l:haya",
       "l:listo"
     ],
     "targets": [
@@ -10118,7 +10185,7 @@
   },
   {
     "id": "u38-0401",
-    "es": "Eso depende de quién es el nuevo alcalde.",
+    "es": "Eso depende de quién sea el nuevo alcalde.",
     "en": "That depends on who the new mayor is.",
     "accept": [],
     "acceptEn": [],
@@ -10126,13 +10193,11 @@
       "c:depende",
       "g:gender-articles",
       "g:indirect-questions",
-      "g:ser-identity",
       "l:alcalde",
       "l:depender",
       "l:nuevo",
       "l:quién",
-      "l:ser",
-      "p:de-owner",
+      "l:se",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -10145,26 +10210,22 @@
   },
   {
     "id": "u38-0402",
-    "es": "No importa cuántas veces lo repiten, no es verdad.",
-    "en": "It doesn't matter how many times they repeat it, it isn't true.",
+    "es": "Lo pueden repetir mil veces, pero no es verdad.",
+    "en": "They can repeat it a thousand times, but it isn't true.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:indirect-questions",
-      "g:present-ar",
       "g:ser-identity",
-      "g:stem-e-i",
-      "l:cuánto",
-      "l:importar",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:poder",
       "l:repetir",
       "l:ser",
       "l:verdad",
       "l:vez"
     ],
-    "targets": [
-      "g:indirect-questions"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u38",
     "theme": "indirect questions and what we don't know",
@@ -10666,22 +10727,17 @@
   },
   {
     "id": "u38-0421",
-    "es": "No sé, pregúntale al conductor.",
-    "en": "I don't know, ask the driver. (to a friend)",
+    "es": "No sé, pero hoy entraron como cuarenta.",
+    "en": "I don't know, but about forty came in today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
-      "g:commands-tu",
-      "g:commands-with-pronouns",
-      "g:gender-articles",
-      "g:indirect-objects",
-      "g:le-doubling",
+      "g:preterite-ar",
       "g:yo-irregular",
-      "l:conductor",
-      "l:preguntar",
-      "l:saber",
-      "p:preguntar-pedir"
+      "l:entrar",
+      "l:hoy",
+      "l:saber"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -10861,18 +10917,15 @@
   },
   {
     "id": "u38-0429",
-    "es": "Fue una paisa de Medellín, creo.",
-    "en": "It was a woman from Medellín, I think.",
+    "es": "Una señora de Cali, creo.",
+    "en": "A woman from Cali, I think.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
       "l:creer",
-      "l:paisa",
-      "l:ser"
+      "l:señora"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -10882,20 +10935,20 @@
   },
   {
     "id": "u38-0430",
-    "es": "¿Ya averiguaste cuánto cobran por la entrevista?",
-    "en": "Have you found out how much they charge for the interview yet? (to a friend)",
+    "es": "¿Ya averiguaste cuánto cuesta el arriendo del local?",
+    "en": "Have you found out yet how much the rent for the place is? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:cuanto-cuesta",
       "g:gender-articles",
-      "g:present-ar",
       "g:preterite-ar",
       "g:questions",
+      "l:arriendo",
       "l:averiguar",
-      "l:cobrar",
+      "l:costar",
       "l:cuánto",
-      "l:entrevista",
-      "p:costar-pagar"
+      "l:local"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11312,18 +11365,20 @@
   },
   {
     "id": "u38-0446",
-    "es": "Vale preguntó cómo se cocina el pan de queso.",
-    "en": "Vale asked how cheese bread is cooked.",
+    "es": "Tomás le preguntó a Vale cómo se hace el pan de queso.",
+    "en": "Tomás asked Vale how cheese bread is made.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
       "g:indirect-questions",
-      "g:present-ar",
+      "g:le-doubling",
+      "g:present-er-ir",
       "g:preterite-ar",
-      "g:se-impersonal",
-      "l:cocinar",
+      "g:verbs-of-change",
       "l:cómo",
+      "l:hacerse",
       "l:pan",
       "l:preguntar",
       "l:queso",
@@ -11888,23 +11943,30 @@
   },
   {
     "id": "u38-0467",
-    "es": "Aun así, quiero saber cómo termina la historia.",
-    "en": "Even so, I want to know how the story ends.",
+    "es": "El libro es malísimo. Aun así, quiero saber cómo termina.",
+    "en": "The book is terrible. Even so, I want to know how it ends.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quiero",
+      "g:adjective-agreement",
       "g:concession-despite",
       "g:gender-articles",
       "g:indirect-questions",
       "g:present-ar",
+      "g:ser-identity",
       "g:stem-boot",
+      "g:superlatives",
       "g:verb-infinitive",
       "l:cómo",
-      "l:historia",
+      "l:libro",
+      "l:malo",
       "l:querer",
       "l:saber",
+      "l:ser",
       "l:terminar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:saber-conocer"
     ],
     "targets": [
@@ -12134,8 +12196,8 @@
   },
   {
     "id": "u38-0477",
-    "es": "¿Has oído hablar de Mariana Rojas?",
-    "en": "Have you heard of Mariana Rojas? (to a friend)",
+    "es": "¿Has oído hablar de Mariana Cifuentes?",
+    "en": "Have you heard of Mariana Cifuentes? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12225,18 +12287,21 @@
   },
   {
     "id": "u38-0481",
-    "es": "No he oído hablar de eso, ¿qué hubo?",
-    "en": "I haven't heard of that, what's up?",
+    "es": "Nunca he oído hablar de esa señora. ¿Quién es?",
+    "en": "I've never heard of that woman. Who is she?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:demonstratives",
       "g:perfecto-experience",
       "g:questions",
+      "g:ser-identity",
       "l:hablar",
       "l:oír",
-      "l:qué",
-      "p:demonstratives-basic",
+      "l:quién",
+      "l:ser",
+      "l:señora",
+      "p:frequency-scale",
       "p:oir-hablar-de"
     ],
     "targets": [
@@ -12565,19 +12630,16 @@
   },
   {
     "id": "u38-0494",
-    "es": "No, ¡qué bueno! ¿Dónde lo vieron?",
-    "en": "No, how great! Where did they see it?",
+    "es": "No, ¡qué bueno! ¿En cuál?",
+    "en": "No, how great! Which one?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-bien",
-      "g:direct-objects",
-      "g:preterite-er-ir",
-      "g:questions",
       "l:bueno",
-      "l:dónde",
+      "l:cuál",
       "l:qué",
-      "l:ver"
+      "p:prep-questions-basic"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12683,8 +12745,8 @@
   },
   {
     "id": "u38-0499",
-    "es": "Me enteré por Vale de que vienen los periodistas.",
-    "en": "I found out from Vale that the journalists are coming.",
+    "es": "Gloria se enteró por Vale de que vienen los periodistas.",
+    "en": "Gloria found out from Vale that the journalists are coming.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12709,8 +12771,8 @@
   },
   {
     "id": "u38-0500",
-    "es": "Me enteré tarde de que el café cerraba temprano.",
-    "en": "I found out late that the café closed early.",
+    "es": "Los clientes se enteraron tarde de que el café cerraba temprano.",
+    "en": "The customers found out late that the café was closing early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12722,6 +12784,7 @@
       "g:that-clauses",
       "l:café",
       "l:cerrar",
+      "l:cliente",
       "l:enterarse",
       "l:tarde",
       "l:temprano",
@@ -12762,16 +12825,18 @@
   },
   {
     "id": "u38-0502",
-    "es": "Me enteré del accidente por un mensaje de mi hermana.",
-    "en": "I found out about the accident from a message from my sister.",
+    "es": "¿Cómo te enteraste del accidente?\nPor un mensaje de mi hermana.",
+    "en": "How did you find out about the accident?\nFrom a message from my sister. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
       "g:preterite-ar",
+      "g:questions",
       "g:reflexive-routine",
       "l:accidente",
+      "l:cómo",
       "l:enterarse",
       "l:hermana",
       "l:mensaje",
@@ -12781,7 +12846,7 @@
     "targets": [
       "p:enterarse-de"
     ],
-    "kind": "statement",
+    "kind": "dialogue",
     "unit": "u38",
     "theme": "hearing about things and finding out",
     "source": "gen"
@@ -13005,7 +13070,7 @@
   {
     "id": "u38-0511",
     "es": "¿Te enteraste de que Simón dijo su primera frase completa?",
-    "en": "Did you find out that Simón said his first full sentence? (to a friend)",
+    "en": "Did you hear that Simón said his first full sentence? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14301,7 +14366,7 @@
   {
     "id": "u38-0561",
     "es": "Gracias a que me enteré a tiempo, no firmé el contrato.",
-    "en": "Thanks to my finding out in time, I didn't sign the contract.",
+    "en": "Thanks to finding out in time, I didn't sign the contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14328,29 +14393,25 @@
   },
   {
     "id": "u38-0562",
-    "es": "Por culpa de un rumor, la gente se enteró mal.",
-    "en": "Because of a rumour, people got the wrong idea.",
+    "es": "Por culpa de un rumor, medio barrio cree que Tomás vendió.",
+    "en": "Because of a rumour, half the neighbourhood thinks Tomás sold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
-      "g:preterite-ar",
-      "g:reflexive-routine",
+      "g:present-er-ir",
+      "g:preterite-er-ir",
+      "g:that-clauses",
+      "l:barrio",
+      "l:creer",
       "l:culpa",
-      "l:enterarse",
-      "l:gente",
-      "l:mal",
       "l:rumor",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
-      "p:enterarse-de",
+      "l:vender",
       "p:gracias-a-por-culpa-de",
-      "p:la-gente-singular",
       "p:por-culpa-de"
     ],
     "targets": [
-      "p:enterarse-de",
       "p:gracias-a-por-culpa-de"
     ],
     "kind": "statement",
@@ -14393,17 +14454,20 @@
   },
   {
     "id": "u38-0564",
-    "es": "La reunión es en la sala 3.",
-    "en": "The meeting is in room 3.",
+    "es": "La reunión es en la sala de juntas del segundo piso.",
+    "en": "The meeting is in the boardroom on the second floor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:piso",
       "l:reunión",
       "l:sala",
       "l:ser",
       "p:event-ser-en",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
       "p:ser-event-location",
       "p:tener-lugar"
     ],
@@ -14807,17 +14871,20 @@
   },
   {
     "id": "u38-0581",
-    "es": "La reunión de vecinos es en la panadería de Vale.",
-    "en": "The neighbours' meeting is in Vale's bakery.",
+    "es": "La reunión de vecinos es en el café, después del cierre.",
+    "en": "The neighbours' meeting is at the café, after closing time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:panadería",
+      "l:café",
+      "l:cierre",
+      "l:después",
       "l:reunión",
       "l:ser",
-      "l:vecino"
+      "l:vecino",
+      "p:time-sequence-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -14964,15 +15031,23 @@
   },
   {
     "id": "u38-0588",
-    "es": "En la Calle 26, frente al hospital.",
-    "en": "On Calle 26, in front of the hospital.",
+    "es": "¿Dónde fue el accidente?\nEn la Calle 26, frente al hospital.",
+    "en": "Where was the accident?\nOn Calle 26, in front of the hospital.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "g:questions",
+      "g:ser-identity",
+      "l:accidente",
+      "l:dónde",
       "l:frente",
       "l:hospital",
+      "l:ser",
       "p:posicion-precisa",
+      "p:question-word-order",
+      "p:ser-event-location",
       "p:street-names"
     ],
     "targets": [],
@@ -15485,8 +15560,8 @@
   },
   {
     "id": "u38-0609",
-    "es": "La boda de Vale va a tener lugar en Medellín.",
-    "en": "Vale's wedding is going to take place in Medellín.",
+    "es": "La boda de la prima de Vale va a tener lugar en Medellín.",
+    "en": "Vale's cousin's wedding is going to take place in Medellín.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15495,6 +15570,7 @@
       "l:boda",
       "l:ir",
       "l:lugar",
+      "l:prima",
       "l:tener",
       "p:tener-lugar"
     ],
@@ -15785,12 +15861,13 @@
   },
   {
     "id": "u38-0621",
-    "es": "Pronto, ya avisaremos.",
-    "en": "Soon, we'll let you know.",
+    "es": "Pronto. Ya les avisamos.",
+    "en": "Soon. We'll let you know.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:indirect-objects",
+      "g:present-ar",
       "l:avisar",
       "l:pronto"
     ],
@@ -15957,7 +16034,7 @@
   },
   {
     "id": "u38-0628",
-    "es": "La manifestación se celebró en la plaza principal.",
+    "es": "La manifestación se realizó en la plaza principal.",
     "en": "The protest was held in the main square.",
     "accept": [],
     "acceptEn": [],
@@ -15965,10 +16042,10 @@
       "g:gender-articles",
       "g:preterite-ar",
       "g:se-impersonal",
-      "l:celebrar",
       "l:manifestación",
       "l:plaza",
       "l:principal",
+      "l:realizar",
       "p:tener-lugar"
     ],
     "targets": [
@@ -16104,8 +16181,8 @@
   },
   {
     "id": "u38-0634",
-    "es": "Gracias a Vale, la fiesta tuvo comida para todos.",
-    "en": "Thanks to Vale, the party had food for everyone.",
+    "es": "La fiesta tuvo comida para todos, gracias a Vale.",
+    "en": "The party had food for everyone, thanks to Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16152,8 +16229,8 @@
   },
   {
     "id": "u38-0636",
-    "es": "Gracias a la prensa, el caso es conocido en todo el país.",
-    "en": "Thanks to the press, the case is known across the whole country.",
+    "es": "El caso es conocido en todo el país, gracias a la prensa.",
+    "en": "The case is known across the whole country, thanks to the press.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16202,16 +16279,15 @@
   },
   {
     "id": "u38-0638",
-    "es": "Gracias a que llovió, no hubo incendio.",
+    "es": "Gracias a la lluvia, no hubo incendio.",
     "en": "Thanks to the rain, there was no fire.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:imperfect-states",
-      "g:preterite-er-ir",
-      "g:that-clauses",
       "l:incendio",
-      "l:llover",
+      "l:lluvia",
       "p:gracias-a-por-culpa-de",
       "p:por-culpa-de"
     ],
@@ -16226,8 +16302,8 @@
   },
   {
     "id": "u38-0639",
-    "es": "Gracias a que Mariana insistió, el caso no se cerró.",
-    "en": "Thanks to Mariana's insistence, the case wasn't closed.",
+    "es": "El caso no se cerró, gracias a que Mariana insistió.",
+    "en": "The case wasn't closed, thanks to Mariana insisting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16253,12 +16329,12 @@
   },
   {
     "id": "u38-0640",
-    "es": "Gracias a que vinimos temprano, conseguimos mesa.",
-    "en": "Thanks to us coming early, we got a table.",
+    "es": "Conseguimos mesa, gracias a que vinimos temprano.",
+    "en": "We got a table, thanks to coming early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-er-ir",
+      "g:present-er-ir",
       "g:preterite-irregular-strong",
       "g:that-clauses",
       "l:conseguir",
@@ -16356,25 +16432,24 @@
   },
   {
     "id": "u38-0644",
-    "es": "Gracias a su entrenamiento, el nene corrió sin parar.",
-    "en": "Thanks to his training, the little boy ran without stopping.",
+    "es": "Gracias a los entrenamientos de la mañana, el equipo del barrio ganó.",
+    "en": "Thanks to the morning training sessions, the neighbourhood team won.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:prep-infinitive",
-      "g:preterite-er-ir",
-      "l:correr",
+      "g:preterite-ar",
+      "l:barrio",
       "l:entrenamiento",
-      "l:nene",
-      "l:parar",
+      "l:equipo",
+      "l:ganar",
+      "l:mañana",
       "p:gracias-a-por-culpa-de",
       "p:por-culpa-de",
-      "p:possessives-basic"
+      "p:por-la-manana"
     ],
     "targets": [
       "l:entrenamiento",
-      "l:nene",
       "p:gracias-a-por-culpa-de"
     ],
     "kind": "statement",
@@ -16384,20 +16459,25 @@
   },
   {
     "id": "u38-0645",
-    "es": "Por culpa del trancón, perdimos el vuelo.",
-    "en": "Because of the traffic jam, we missed the flight.",
+    "es": "Por culpa del trancón, Vale llegó tarde a su propia fiesta.",
+    "en": "Because of the traffic jam, Vale was late for her own party.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:por-para-1",
-      "g:preterite-er-ir",
+      "g:preterite-ar",
       "l:culpa",
-      "l:perder",
+      "l:fiesta",
+      "l:llegar",
+      "l:propio",
+      "l:tarde",
       "l:trancón",
-      "l:vuelo",
       "p:gracias-a-por-culpa-de",
-      "p:por-culpa-de"
+      "p:llegar-a-tiempo",
+      "p:por-culpa-de",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:gracias-a-por-culpa-de"
@@ -16409,8 +16489,8 @@
   },
   {
     "id": "u38-0646",
-    "es": "Por culpa de la lluvia, el partido fue cancelado.",
-    "en": "Because of the rain, the match was cancelled.",
+    "es": "Por culpa de la lluvia, la feria del barrio fue cancelada.",
+    "en": "Because of the rain, the neighbourhood fair was cancelled.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16418,10 +16498,11 @@
       "g:passive-ser",
       "g:por-para-1",
       "g:preterite-ser-ir-hacer",
+      "l:barrio",
       "l:cancelar",
       "l:culpa",
+      "l:feria",
       "l:lluvia",
-      "l:partido",
       "l:ser",
       "p:gracias-a-por-culpa-de",
       "p:por-culpa-de"
@@ -16462,8 +16543,8 @@
   },
   {
     "id": "u38-0648",
-    "es": "Por culpa de mi celular, llegué tarde a la entrevista.",
-    "en": "Because of my phone, I got to the interview late.",
+    "es": "Llegué tarde a la entrevista por culpa de mi celular.",
+    "en": "I got to the interview late because of my phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16518,8 +16599,8 @@
   },
   {
     "id": "u38-0650",
-    "es": "Por culpa de un botón roto, el aparato no encendió.",
-    "en": "Because of a broken button, the device wouldn't turn on.",
+    "es": "El aparato no encendió por culpa de un botón roto.",
+    "en": "The device wouldn't turn on because of a broken button.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16569,8 +16650,8 @@
   },
   {
     "id": "u38-0652",
-    "es": "Por culpa de la prisa, cometí un error.",
-    "en": "Because of the rush, I made a mistake.",
+    "es": "Cometí un error por culpa de la prisa.",
+    "en": "I made a mistake because of the rush.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16622,21 +16703,21 @@
   },
   {
     "id": "u38-0654",
-    "es": "Por culpa de que llovió, se arruinó la fiesta.",
-    "en": "Because it rained, the party was ruined.",
+    "es": "El pan se quemó por culpa de que nadie miró el horno.",
+    "en": "The bread burned because nobody checked the oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
       "g:preterite-ar",
-      "g:preterite-er-ir",
       "g:reflexive-routine",
       "g:that-clauses",
-      "l:arruinarse",
       "l:culpa",
-      "l:fiesta",
-      "l:llover",
+      "l:horno",
+      "l:mirar",
+      "l:pan",
+      "l:quemarse",
       "p:gracias-a-por-culpa-de",
       "p:por-culpa-de"
     ],
@@ -16650,8 +16731,8 @@
   },
   {
     "id": "u38-0655",
-    "es": "Por culpa de un rumor, la gente dejó de venir al café.",
-    "en": "Because of a rumour, people stopped coming to the café.",
+    "es": "La gente dejó de venir al café por culpa de un rumor.",
+    "en": "People stopped coming to the café because of a rumour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16798,15 +16879,17 @@
   },
   {
     "id": "u38-0661",
-    "es": "No fue nada, gracias a todos.",
-    "en": "It was nothing, thanks to everyone.",
+    "es": "Esto no fue obra mía: fue gracias a todos.",
+    "en": "This wasn't my doing: it was thanks to everyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negation-words",
+      "g:possessives-stressed",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "l:ser"
+      "l:obra",
+      "l:ser",
+      "p:demonstratives-basic"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -16817,7 +16900,7 @@
   {
     "id": "u38-0662",
     "es": "La culpa fue del retraso y no del conductor.",
-    "en": "The blame was the delay's and not the driver's.",
+    "en": "It was the delay's fault, not the driver's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16860,7 +16943,7 @@
   {
     "id": "u38-0664",
     "es": "La fiesta fue en mi casa gracias a que mi mamá viajó.",
-    "en": "The party was at my house thanks to my mom travelling.",
+    "en": "The party was at my house thanks to my mom being away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16936,8 +17019,8 @@
   },
   {
     "id": "u38-0667",
-    "es": "Fue inevitable, nadie pudo hacer nada.",
-    "en": "It was inevitable, nobody could do anything.",
+    "es": "Fue inevitable: nadie pudo hacer nada.",
+    "en": "It was inevitable: nobody could do anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17105,8 +17188,8 @@
   },
   {
     "id": "u38-0673",
-    "es": "Era inevitable: el barrio iba a cambiar.",
-    "en": "It was inevitable: the neighbourhood was going to change.",
+    "es": "El barrio iba a cambiar; era inevitable.",
+    "en": "The neighbourhood was going to change; it was inevitable.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17133,21 +17216,19 @@
   },
   {
     "id": "u38-0674",
-    "es": "Era inevitable: los periodistas iban a llegar al café.",
-    "en": "It was inevitable: the journalists were going to arrive at the café.",
+    "es": "Con un loro tan famoso, la llegada de los periodistas era inevitable.",
+    "en": "With such a famous parrot, the arrival of the journalists was inevitable.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
       "g:gender-articles",
-      "g:imperfect-habitual",
       "g:imperfect-states",
-      "g:ir-a-plans",
       "g:ser-identity",
-      "l:café",
+      "l:famoso",
       "l:inevitable",
-      "l:ir",
-      "l:llegar",
+      "l:llegada",
+      "l:loro",
       "l:periodista",
       "l:ser",
       "p:inevitable"
@@ -17162,20 +17243,18 @@
   },
   {
     "id": "u38-0675",
-    "es": "Era inevitable: alguien iba a hablar con la prensa.",
-    "en": "It was inevitable: someone was going to talk to the press.",
+    "es": "Es inevitable que alguien hable con la prensa.",
+    "en": "It's inevitable that someone will talk to the press.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:imperfect-states",
-      "g:ir-a-plans",
       "g:ser-identity",
+      "g:subj-value",
+      "g:subj-wanting",
+      "g:that-clauses",
       "l:hablar",
       "l:inevitable",
-      "l:ir",
       "l:prensa",
       "l:ser",
       "p:indefinites-basic",
@@ -17301,8 +17380,8 @@
   },
   {
     "id": "u38-0680",
-    "es": "La salida de Rosa era inevitable, pero dolió igual.",
-    "en": "Rosa's passing was inevitable, but it hurt just the same.",
+    "es": "La subida del arriendo era inevitable, pero dolió igual.",
+    "en": "The rent increase was inevitable, but it hurt just the same.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17313,12 +17392,14 @@
       "g:pret-vs-imperfect",
       "g:preterite-er-ir",
       "g:ser-identity",
+      "l:arriendo",
       "l:doler",
       "l:igual",
       "l:inevitable",
-      "l:salida",
       "l:ser",
-      "p:inevitable"
+      "l:subir",
+      "p:inevitable",
+      "p:subir-subida"
     ],
     "targets": [
       "p:inevitable"
@@ -17439,8 +17520,8 @@
   },
   {
     "id": "u38-0685",
-    "es": "Tarde o temprano, todos tenemos que decidir.",
-    "en": "Sooner or later, we all have to decide.",
+    "es": "Todos tenemos que decidir tarde o temprano.",
+    "en": "We all have to decide sooner or later.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17460,8 +17541,8 @@
   },
   {
     "id": "u38-0686",
-    "es": "Tarde o temprano, Altamira tendrá que dar la cara.",
-    "en": "Sooner or later, Altamira will have to show its face.",
+    "es": "Altamira tendrá que dar la cara tarde o temprano.",
+    "en": "Altamira will have to face the public sooner or later.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17505,17 +17586,20 @@
   },
   {
     "id": "u38-0688",
-    "es": "La casa quedó destruida.",
-    "en": "The house ended up destroyed.",
+    "es": "El techo quedó destruido después de la tormenta.",
+    "en": "The roof ended up destroyed after the storm.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "l:casa",
+      "l:después",
       "l:destruir",
       "l:quedar",
-      "p:quedar-participio"
+      "l:techo",
+      "l:tormenta",
+      "p:quedar-participio",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "p:quedar-participio"
@@ -17550,8 +17634,8 @@
   },
   {
     "id": "u38-0690",
-    "es": "La casa quedó cerrada durante años.",
-    "en": "The house stayed closed for years.",
+    "es": "Después de la muerte de su dueño, la casa quedó cerrada durante años.",
+    "en": "After the death of its owner, the house stayed closed for years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17560,9 +17644,14 @@
       "l:año",
       "l:casa",
       "l:cerrar",
+      "l:después",
+      "l:dueño",
+      "l:muerte",
       "l:quedar",
       "p:durar-durante",
-      "p:quedar-participio"
+      "p:possessives-basic",
+      "p:quedar-participio",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "p:quedar-participio"
@@ -17598,19 +17687,18 @@
   },
   {
     "id": "u38-0692",
-    "es": "El contrato quedó firmado ayer por la tarde.",
-    "en": "The contract was signed yesterday afternoon.",
+    "es": "La venta quedó firmada un viernes por la tarde.",
+    "en": "The sale was signed on a Friday afternoon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
       "g:gender-articles",
       "g:preterite-ar",
-      "l:ayer",
-      "l:contrato",
       "l:firmar",
       "l:quedar",
       "l:tarde",
+      "l:venta",
+      "l:viernes",
       "p:por-la-manana",
       "p:quedar-participio"
     ],
@@ -17752,19 +17840,20 @@
   },
   {
     "id": "u38-0698",
-    "es": "La ciudad quedó separada en dos por la oferta.",
-    "en": "The city was split in two by the offer.",
+    "es": "La ciudad quedó dividida por la noticia.",
+    "en": "The city was left divided by the news.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:por-para-1",
       "g:preterite-ar",
       "l:ciudad",
-      "l:oferta",
+      "l:dividir",
+      "l:noticia",
       "l:quedar",
-      "l:separado"
+      "p:quedar-participio",
+      "p:repartir-entre"
     ],
     "targets": [],
     "kind": "statement",
@@ -17774,17 +17863,21 @@
   },
   {
     "id": "u38-0699",
-    "es": "El barrio quedó separado en dos grupos.",
-    "en": "The neighbourhood was split into two groups.",
+    "es": "El barrio quedó dividido: unos quieren vender y otros no.",
+    "en": "The neighbourhood was left divided: some want to sell and others don't.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:barrio",
-      "l:grupo",
+      "l:dividir",
       "l:quedar",
-      "l:separado"
+      "l:quieren",
+      "l:vender",
+      "p:otro-no-article",
+      "p:quedar-participio",
+      "p:repartir-entre"
     ],
     "targets": [],
     "kind": "statement",
@@ -17820,17 +17913,17 @@
   },
   {
     "id": "u38-0701",
-    "es": "Tomás quedó sorprendido al ver tantos periodistas.",
-    "en": "Tomás was left surprised on seeing so many journalists.",
+    "es": "Tomás quedó mudo al ver tantos periodistas.",
+    "en": "Tomás was left speechless at seeing so many journalists.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:prep-infinitive",
       "g:preterite-ar",
+      "l:mudo",
       "l:periodista",
       "l:quedar",
-      "l:sorprendido",
       "l:ver"
     ],
     "targets": [],
@@ -17841,17 +17934,17 @@
   },
   {
     "id": "u38-0702",
-    "es": "Vale quedó sorprendida con el reportaje de Mariana.",
-    "en": "Vale was left surprised by Mariana's report.",
+    "es": "Vale quedó impresionada con el reportaje de Mariana.",
+    "en": "Vale was impressed by Mariana's report.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:preterite-ar",
+      "l:impresionar",
       "l:quedar",
       "l:reportaje",
-      "l:sorprendido"
+      "p:quedar-participio"
     ],
     "targets": [
       "l:reportaje"
@@ -17863,8 +17956,8 @@
   },
   {
     "id": "u38-0703",
-    "es": "Hernando quedó callado después de leer el artículo.",
-    "en": "Hernando went quiet after reading the article.",
+    "es": "Hernando quedó pensativo después de leer el artículo.",
+    "en": "Hernando was left thoughtful after reading the article.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17872,9 +17965,9 @@
       "g:prep-infinitive",
       "g:preterite-ar",
       "l:artículo",
-      "l:callado",
       "l:después",
       "l:leer",
+      "l:pensativo",
       "l:quedar",
       "p:time-sequence-basic"
     ],
@@ -17931,16 +18024,17 @@
   },
   {
     "id": "u38-0706",
-    "es": "El nene quedó dormido en el sofá.",
+    "es": "El nene se quedó dormido en el sofá.",
     "en": "The little boy fell asleep on the sofa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "g:reflexive-routine",
       "l:dormir",
       "l:nene",
-      "l:quedar",
+      "l:quedarse",
       "l:sofá",
       "p:quedar-participio"
     ],
@@ -17955,14 +18049,15 @@
   },
   {
     "id": "u38-0707",
-    "es": "Simón quedó callado por primera vez en su vida.",
+    "es": "Simón se quedó callado por primera vez en su vida.",
     "en": "Simón fell silent for the first time in his life.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:preterite-ar",
+      "g:reflexive-routine",
       "l:callado",
-      "l:quedar",
+      "l:quedarse",
       "l:vez",
       "l:vida",
       "p:ordinal-floor",
@@ -17977,20 +18072,20 @@
   },
   {
     "id": "u38-0708",
-    "es": "El carro quedó frente a la alcaldía toda la noche.",
-    "en": "The car stayed in front of the mayor's office all night.",
+    "es": "El carro del alcalde quedó cerrado con las llaves adentro.",
+    "en": "The mayor's car was left locked with the keys inside.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "l:alcaldía",
+      "l:adentro",
+      "l:alcalde",
       "l:carro",
-      "l:frente",
-      "l:noche",
+      "l:cerrar",
+      "l:llave",
       "l:quedar",
-      "p:posicion-precisa",
-      "p:todos-los-dias"
+      "p:quedar-participio"
     ],
     "targets": [],
     "kind": "statement",
@@ -18026,7 +18121,7 @@
   {
     "id": "u38-0710",
     "es": "La carta quedó escrita antes de la medianoche.",
-    "en": "The letter was finished before midnight.",
+    "en": "The letter was written before midnight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18200,16 +18295,16 @@
   },
   {
     "id": "u38-0717",
-    "es": "La carretera quedó cerrada por la inundación.",
-    "en": "The road was left closed by the flood.",
+    "es": "El colegio quedó cerrado por la inundación.",
+    "en": "The school stayed closed because of the flood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
       "g:preterite-ar",
-      "l:carretera",
       "l:cerrar",
+      "l:colegio",
       "l:inundación",
       "l:quedar",
       "p:quedar-participio"
@@ -18339,8 +18434,8 @@
   },
   {
     "id": "u38-0723",
-    "es": "¿Y cómo quedó la casa de Hernando?",
-    "en": "And how was Hernando's house left?",
+    "es": "¿Y cómo quedó la casa de la esquina?",
+    "en": "And how was the house on the corner left?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18349,6 +18444,7 @@
       "g:questions",
       "l:casa",
       "l:cómo",
+      "l:esquina",
       "l:quedar"
     ],
     "targets": [],
@@ -18380,8 +18476,8 @@
   },
   {
     "id": "u38-0725",
-    "es": "La noticia resultó ser falsa.",
-    "en": "The news turned out to be false.",
+    "es": "La noticia del cierre resultó ser falsa.",
+    "en": "The news about the closure turned out to be false.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18389,6 +18485,7 @@
       "g:gender-articles",
       "g:preterite-ar",
       "g:ser-identity",
+      "l:cierre",
       "l:falso",
       "l:noticia",
       "l:resultar",
@@ -18509,19 +18606,19 @@
   },
   {
     "id": "u38-0730",
-    "es": "El ladrón resultó ser un vecino del barrio.",
-    "en": "The thief turned out to be a neighbour from the area.",
+    "es": "El ladrón del pan resultó ser un gato.",
+    "en": "The bread thief turned out to be a cat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "g:ser-identity",
-      "l:barrio",
+      "l:gato",
       "l:ladrón",
+      "l:pan",
       "l:resultar",
       "l:ser",
-      "l:vecino",
       "p:resultar-ser"
     ],
     "targets": [
@@ -18868,16 +18965,16 @@
   },
   {
     "id": "u38-0744",
-    "es": "Hernando resultó ser un gran amigo de Rosa.",
-    "en": "Hernando turned out to be a great friend of Rosa's.",
+    "es": "Hernando resultó ser un excelente actor.",
+    "en": "Hernando turned out to be an excellent actor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "g:ser-identity",
-      "l:amigo",
-      "l:gran",
+      "l:actor",
+      "l:excelente",
       "l:resultar",
       "l:ser",
       "p:resultar-ser"
@@ -18892,8 +18989,8 @@
   },
   {
     "id": "u38-0745",
-    "es": "Mariana resultó ser la hija de un viejo periodista.",
-    "en": "Mariana turned out to be the daughter of an old journalist.",
+    "es": "La señora del puesto resultó ser la hija de un viejo periodista.",
+    "en": "The woman at the stall turned out to be the daughter of an old journalist.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18902,8 +18999,10 @@
       "g:ser-identity",
       "l:hija",
       "l:periodista",
+      "l:puesto",
       "l:resultar",
       "l:ser",
+      "l:señora",
       "l:viejo",
       "p:resultar-ser",
       "p:viejo-antiguo-mayor"
@@ -18966,17 +19065,22 @@
   },
   {
     "id": "u38-0748",
-    "es": "Resulta que nadie sabía nada del permiso.",
-    "en": "It turns out nobody knew anything about the permit.",
+    "es": "Pregunté por el permiso, y resulta que nadie sabía nada.",
+    "en": "I asked about the permit, and it turns out nobody knew anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:resulta-que",
       "g:gender-articles",
       "g:imperfect-habitual",
+      "g:por-para-1",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
       "l:permiso",
+      "l:preguntar",
       "l:resultar",
       "l:saber",
+      "p:preguntar-pedir",
       "p:saber-conocer"
     ],
     "targets": [],
@@ -18987,18 +19091,24 @@
   },
   {
     "id": "u38-0749",
-    "es": "Resulta que la empresa no tenía licencia.",
-    "en": "It turns out the company had no licence.",
+    "es": "Fuimos a la oficina de la empresa, y resulta que estaba cerrada.",
+    "en": "We went to the company's office, and it turns out it was closed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:resulta-que",
+      "g:estar-participle",
       "g:gender-articles",
       "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ser-ir-hacer",
+      "l:cerrar",
       "l:empresa",
-      "l:licencia",
+      "l:estar",
+      "l:ir",
+      "l:oficina",
       "l:resultar",
-      "l:tener"
+      "p:ir-a-venir-de-place"
     ],
     "targets": [],
     "kind": "statement",
@@ -19008,14 +19118,15 @@
   },
   {
     "id": "u38-0750",
-    "es": "Resulta que el alcalde conocía a todos.",
-    "en": "It turns out the mayor knew everyone.",
+    "es": "Ahora resulta que el alcalde conocía a todos.",
+    "en": "So now it turns out the mayor knew everyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:resulta-que",
       "g:gender-articles",
       "g:imperfect-habitual",
+      "l:ahora",
       "l:alcalde",
       "l:conocer",
       "l:resultar",
@@ -19054,17 +19165,18 @@
   },
   {
     "id": "u38-0752",
-    "es": "Resulta que Vale y Mariana estudiaron en el mismo colegio.",
-    "en": "It turns out Vale and Mariana went to the same school.",
+    "es": "Resulta que Hernando y el papá de Mariana manejaban el mismo taxi.",
+    "en": "It turns out Hernando and Mariana's dad drove the same taxi.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:resulta-que",
       "g:gender-articles",
-      "g:preterite-ar",
-      "l:colegio",
-      "l:estudiar",
-      "l:resultar"
+      "g:imperfect-habitual",
+      "l:manejar",
+      "l:papá",
+      "l:resultar",
+      "l:taxi"
     ],
     "targets": [],
     "kind": "statement",
@@ -19074,20 +19186,21 @@
   },
   {
     "id": "u38-0753",
-    "es": "Resulta que mi vecino es el dueño de la editorial.",
-    "en": "It turns out my neighbour is the owner of the publisher.",
+    "es": "Mi vecino resultó ser el dueño de la editorial.",
+    "en": "My neighbour turned out to be the owner of the publishing house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:resulta-que",
       "g:gender-articles",
+      "g:preterite-ar",
       "g:ser-identity",
       "l:dueño",
       "l:editorial",
       "l:resultar",
       "l:ser",
       "l:vecino",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:resultar-ser"
     ],
     "targets": [
       "l:editorial"
@@ -19099,25 +19212,22 @@
   },
   {
     "id": "u38-0754",
-    "es": "Resulta que la firma era de una persona que ya murió.",
-    "en": "It turns out the signature was from a person who had already died.",
+    "es": "Resulta que la firma es de un señor que murió en 2010.",
+    "en": "It turns out the signature belongs to a man who died in 2010.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
-      "c:era",
       "c:resulta-que",
       "g:gender-articles",
-      "g:imperfect-states",
-      "g:pret-vs-imperfect",
       "g:preterite-spelling-stem",
       "g:relative-que",
       "g:ser-identity",
       "l:firma",
       "l:morir",
-      "l:persona",
       "l:resultar",
       "l:ser",
+      "l:señor",
+      "p:dates-years",
       "p:naci-en"
     ],
     "targets": [
@@ -19443,7 +19553,7 @@
   {
     "id": "u38-0767",
     "es": "Gracias a Mariana, supimos que el rumor resultó ser cierto.",
-    "en": "Thanks to Mariana, we knew the rumour turned out to be true.",
+    "en": "Thanks to Mariana, we found out the rumour turned out to be true.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19523,18 +19633,19 @@
   },
   {
     "id": "u38-0770",
-    "es": "Tomás es parecido a su abuela, en los ojos.",
-    "en": "Tomás looks like his grandmother, around the eyes.",
+    "es": "Tomás es muy parecido a Rosa cuando se ríe.",
+    "en": "Tomás looks a lot like Rosa when he laughs.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:se-impersonal",
       "g:ser-identity",
-      "l:abuela",
-      "l:ojo",
+      "g:stem-e-i",
       "l:parecido",
+      "l:reír",
       "l:ser",
-      "p:possessives-basic"
+      "p:cuando-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:parecido"
@@ -20572,16 +20683,18 @@
   },
   {
     "id": "u38-0812",
-    "es": "Tuvo que tragar sus penas delante de los periodistas.",
-    "en": "She had to swallow her sorrows in front of the journalists.",
+    "es": "Tomás tuvo que tragarse sus palabras delante de los periodistas.",
+    "en": "Tomás had to eat his words in front of the journalists.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:object-pronoun-position",
       "g:preterite-irregular-strong",
+      "g:se-impersonal",
       "g:verb-infinitive",
       "l:delante",
-      "l:pena",
+      "l:palabra",
       "l:periodista",
       "l:tener",
       "l:tragar",
@@ -20775,18 +20888,20 @@
   },
   {
     "id": "u38-0820",
-    "es": "La conciencia de todo el barrio cambió después de la protesta.",
-    "en": "The awareness of the whole neighbourhood changed after the protest.",
+    "es": "Después de la protesta, el barrio tomó conciencia de su historia.",
+    "en": "After the protest, the neighbourhood became aware of its history.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:barrio",
-      "l:cambiar",
       "l:conciencia",
       "l:después",
+      "l:historia",
       "l:protesta",
+      "l:tomar",
+      "p:possessives-basic",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -21330,21 +21445,24 @@
   },
   {
     "id": "u38-0842",
-    "es": "Es difícil tomar una elección cuando hay tantas opciones.",
-    "en": "It's hard to make a choice when there are so many options.",
+    "es": "Es difícil hacer una buena elección con tan poco tiempo.",
+    "en": "It's hard to make a good choice with so little time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:gender-articles",
-      "g:hay-vs-esta",
       "g:ser-identity",
+      "l:buena",
       "l:difícil",
       "l:elección",
-      "l:opción",
+      "l:hacer",
       "l:ser",
-      "l:tomar",
-      "p:es-adj-inf"
+      "l:tiempo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:es-adj-inf",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:elección"
@@ -21533,8 +21651,8 @@
   },
   {
     "id": "u38-0850",
-    "es": "Los estadounidenses que visitan el café siempre piden el tinto.",
-    "en": "The Americans who visit the café always order the black coffee.",
+    "es": "Los estadounidenses que visitan el café siempre piden tinto.",
+    "en": "The Americans who visit the café always order black coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21586,20 +21704,21 @@
   },
   {
     "id": "u38-0852",
-    "es": "El tráfico aéreo fue suspendido por la niebla.",
-    "en": "Air traffic was suspended because of the fog.",
+    "es": "El tráfico aéreo fue suspendido durante la visita del presidente.",
+    "en": "Air traffic was suspended during the president's visit.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:passive-ser",
-      "g:por-para-1",
       "g:preterite-ser-ir-hacer",
       "l:aéreo",
-      "l:niebla",
+      "l:presidente",
       "l:ser",
       "l:suspender",
-      "l:tráfico"
+      "l:tráfico",
+      "l:visita",
+      "p:durar-durante"
     ],
     "targets": [
       "g:passive-ser",
@@ -21692,19 +21811,18 @@
   },
   {
     "id": "u38-0856",
-    "es": "El nombre de la fuente es desconocido para todos, y para mí también.",
-    "en": "The source's name is unknown to everyone, and to me too.",
+    "es": "Ese número desconocido me llamó cinco veces hoy.",
+    "en": "That unknown number called me five times today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:prep-pronouns",
-      "g:ser-identity",
+      "c:me-llamo",
+      "g:demonstratives",
       "l:desconocido",
-      "l:fuente",
-      "l:nombre",
-      "l:ser",
-      "p:para-inf"
+      "l:hoy",
+      "l:llamar",
+      "l:número",
+      "l:vez"
     ],
     "targets": [
       "l:desconocido"
@@ -21887,8 +22005,8 @@
   },
   {
     "id": "u38-0864",
-    "es": "El dispositivo fue puesto por un técnico esta mañana.",
-    "en": "The device was fitted by a technician this morning.",
+    "es": "El dispositivo fue revisado por un técnico esta mañana.",
+    "en": "The device was checked by a technician this morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21898,7 +22016,7 @@
       "g:preterite-ser-ir-hacer",
       "l:dispositivo",
       "l:mañana",
-      "l:poner",
+      "l:revisar",
       "l:ser",
       "l:técnico",
       "p:demonstratives-basic"
@@ -21965,8 +22083,8 @@
   },
   {
     "id": "u38-0867",
-    "es": "El concurso fue ganado por una familia de Cali.",
-    "en": "The competition was won by a family from Cali.",
+    "es": "El concurso fue organizado por una familia de Cali.",
+    "en": "The competition was organised by a family from Cali.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21976,7 +22094,7 @@
       "g:preterite-ser-ir-hacer",
       "l:concurso",
       "l:familia",
-      "l:ganar",
+      "l:organizar",
       "l:ser"
     ],
     "targets": [
@@ -22477,20 +22595,21 @@
   },
   {
     "id": "u38-0887",
-    "es": "La llegada del alcalde fue inevitable después del video.",
-    "en": "The mayor's arrival was inevitable after the video.",
+    "es": "Después del video, la visita del alcalde era inevitable.",
+    "en": "After the video, a visit from the mayor was inevitable.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
+      "g:imperfect-states",
       "g:ser-identity",
       "l:alcalde",
       "l:después",
       "l:inevitable",
-      "l:llegada",
       "l:ser",
       "l:video",
+      "l:visita",
       "p:inevitable",
       "p:time-sequence-basic"
     ],
@@ -22566,19 +22685,29 @@
   },
   {
     "id": "u38-0890",
-    "es": "Aun así, nada de esto era inevitable.",
-    "en": "Even so, none of this was inevitable.",
+    "es": "Muchos dicen que el barrio iba a cambiar. Aun así, nada de esto era inevitable.",
+    "en": "Many people say the neighbourhood was going to change. Even so, none of this was inevitable.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
       "g:concession-despite",
+      "g:gender-articles",
+      "g:imperfect-habitual",
       "g:imperfect-states",
+      "g:ir-a-plans",
       "g:ser-identity",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:barrio",
+      "l:cambiar",
+      "l:decir",
       "l:inevitable",
+      "l:ir",
       "l:ser",
       "p:demonstratives-basic",
-      "p:inevitable"
+      "p:inevitable",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:concession-despite",
@@ -22591,26 +22720,23 @@
   },
   {
     "id": "u38-0891",
-    "es": "Los daños fueron inevitables a causa del fuego.",
-    "en": "The damage was inevitable because of the fire.",
+    "es": "Con un fuego tan grande, los daños eran inevitables.",
+    "en": "With such a big fire, the damage was inevitable.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
+      "g:imperfect-states",
       "g:ser-identity",
-      "l:causa",
       "l:daño",
       "l:fuego",
+      "l:grande",
       "l:inevitable",
       "l:ser",
-      "p:gracias-a-por-culpa-de",
       "p:inevitable"
     ],
     "targets": [
-      "l:causa",
-      "p:gracias-a-por-culpa-de",
       "p:inevitable"
     ],
     "kind": "statement",
@@ -22647,21 +22773,20 @@
   },
   {
     "id": "u38-0893",
-    "es": "Era inevitable: la noticia iba a llegar a la televisión.",
-    "en": "It was inevitable: the news was going to reach television.",
+    "es": "Con ochenta mil personas compartiendo el artículo, la televisión era inevitable.",
+    "en": "With eighty thousand people sharing the article, television was inevitable.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
       "g:gender-articles",
-      "g:imperfect-habitual",
+      "g:gerund-ways",
       "g:imperfect-states",
-      "g:ir-a-plans",
       "g:ser-identity",
+      "l:artículo",
+      "l:compartir",
       "l:inevitable",
-      "l:ir",
-      "l:llegar",
-      "l:noticia",
+      "l:persona",
       "l:ser",
       "l:televisión",
       "p:inevitable"
@@ -22859,7 +22984,7 @@
   {
     "id": "u38-0901",
     "es": "La carta quedó guardada en la caja de Rosa.",
-    "en": "The letter was left kept in Rosa's box.",
+    "en": "The letter stayed tucked away in Rosa's box.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22957,15 +23082,14 @@
   },
   {
     "id": "u38-0905",
-    "es": "Los vecinos quedaron informados por un mensaje de texto.",
-    "en": "The neighbours were informed by a text message.",
+    "es": "Con un mensaje de texto, todos los vecinos quedaron avisados.",
+    "en": "With one text message, all the neighbours were warned.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "g:preterite-ar",
-      "l:informar",
+      "l:avisar",
       "l:mensaje",
       "l:quedar",
       "l:texto",
@@ -22982,18 +23106,17 @@
   },
   {
     "id": "u38-0906",
-    "es": "Los periodistas quedaron sorprendidos con la respuesta de Tomás.",
-    "en": "The journalists were left surprised by Tomás's reply.",
+    "es": "Los periodistas quedaron sin palabras con la respuesta de Tomás.",
+    "en": "The journalists were left speechless by Tomás's reply.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:preterite-ar",
+      "l:palabra",
       "l:periodista",
       "l:quedar",
-      "l:respuesta",
-      "l:sorprendido"
+      "l:respuesta"
     ],
     "targets": [],
     "kind": "statement",
@@ -23125,25 +23248,21 @@
   },
   {
     "id": "u38-0912",
-    "es": "La entrada quedó cerrada a causa del polvo.",
-    "en": "The entrance was left closed because of the dust.",
+    "es": "La entrada quedó tapada por los ladrillos.",
+    "en": "The entrance was left blocked by the bricks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:preterite-ar",
-      "l:causa",
-      "l:cerrar",
       "l:entrada",
-      "l:polvo",
+      "l:ladrillo",
       "l:quedar",
-      "p:gracias-a-por-culpa-de",
+      "l:tapar",
       "p:quedar-participio"
     ],
     "targets": [
-      "l:causa",
-      "l:polvo",
-      "p:gracias-a-por-culpa-de",
       "p:quedar-participio"
     ],
     "kind": "statement",
@@ -23176,7 +23295,7 @@
   {
     "id": "u38-0914",
     "es": "Todo quedó escrito en el celular de Vale.",
-    "en": "Everything was left written on Vale's phone.",
+    "en": "Everything ended up written down on Vale's phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23244,20 +23363,19 @@
   },
   {
     "id": "u38-0917",
-    "es": "Las dos casas quedaron vacías después de la venta.",
-    "en": "The two houses were left empty after the sale.",
+    "es": "Desde esa noche, los dos lotes quedaron abandonados.",
+    "en": "Since that night, the two plots were left abandoned.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
+      "g:demonstratives",
       "g:gender-articles",
       "g:preterite-ar",
-      "l:casa",
-      "l:después",
+      "l:abandonar",
+      "l:lote",
+      "l:noche",
       "l:quedar",
-      "l:vacío",
-      "l:venta",
-      "p:time-sequence-basic"
+      "p:quedar-participio"
     ],
     "targets": [],
     "kind": "statement",
@@ -23342,7 +23460,7 @@
   {
     "id": "u38-0921",
     "es": "¿Quedó listo el reportaje?",
-    "en": "Did the report end up ready?",
+    "en": "Did the report get finished?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23364,8 +23482,8 @@
   },
   {
     "id": "u38-0922",
-    "es": "Quedó listo anoche, solo falta la foto.",
-    "en": "It was ready last night, only the photo is missing.",
+    "es": "Quedó listo anoche; solo falta la foto.",
+    "en": "It was finished last night; only the photo is missing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23393,7 +23511,7 @@
   {
     "id": "u38-0923",
     "es": "¿Quedaron firmados los permisos?",
-    "en": "Were the permits left signed?",
+    "en": "Did the permits get signed?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23587,24 +23705,24 @@
   },
   {
     "id": "u38-0932",
-    "es": "El premio será dado en el teatro, no aquí.",
-    "en": "The prize will be given at the theatre, not here.",
+    "es": "La ceremonia será en el teatro, no aquí.",
+    "en": "The ceremony will be at the theatre, not here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "g:gender-articles",
-      "g:passive-ser",
+      "g:ser-identity",
       "l:aquí",
-      "l:dar",
-      "l:premio",
+      "l:ceremonia",
       "l:ser",
       "l:teatro",
-      "p:aqui-ahi-alla"
+      "p:aqui-ahi-alla",
+      "p:event-ser-en",
+      "p:ser-event-location",
+      "p:tener-lugar"
     ],
-    "targets": [
-      "g:passive-ser"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u38",
     "theme": "talking about the news",
@@ -24480,17 +24598,20 @@
   },
   {
     "id": "u38-0966",
-    "es": "El vuelo fue retrasado debido a la niebla.",
-    "en": "The flight was delayed because of the fog.",
+    "es": "El vuelo fue retrasado debido a un pasajero que no apareció.",
+    "en": "The flight was delayed because of a passenger who didn't show up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
       "g:gender-articles",
       "g:passive-ser",
+      "g:preterite-er-ir",
       "g:preterite-ser-ir-hacer",
+      "g:relative-que",
+      "l:aparecer",
       "l:deber",
-      "l:niebla",
+      "l:pasajero",
       "l:retrasar",
       "l:ser",
       "l:vuelo",
@@ -24538,8 +24659,8 @@
   },
   {
     "id": "u38-0968",
-    "es": "La reunión fue cambiada ya que el alcalde estaba enfermo.",
-    "en": "The meeting was changed since the mayor was ill.",
+    "es": "La reunión fue aplazada ya que el alcalde estaba enfermo.",
+    "en": "The meeting was postponed since the mayor was ill.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24551,11 +24672,13 @@
       "g:pret-vs-imperfect",
       "g:preterite-ser-ir-hacer",
       "l:alcalde",
-      "l:cambiar",
+      "l:aplazar",
       "l:enfermo",
       "l:estar",
       "l:reunión",
-      "l:ser"
+      "l:ser",
+      "p:adelantar-aplazar",
+      "p:aplazar-posponer"
     ],
     "targets": [
       "g:causal-advanced",
@@ -24619,21 +24742,19 @@
   },
   {
     "id": "u38-0971",
-    "es": "Mariana fue felicitada por sus colegas gracias al reportaje.",
-    "en": "Mariana was congratulated by her colleagues thanks to the report.",
+    "es": "Gracias al reportaje, Mariana fue invitada a la radio.",
+    "en": "Thanks to the report, Mariana was invited onto the radio.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:passive-ser",
-      "g:por-para-1",
       "g:preterite-ser-ir-hacer",
-      "l:colega",
-      "l:felicitar",
+      "l:invitar",
+      "l:radio",
       "l:reportaje",
       "l:ser",
-      "p:felicitaciones-por",
-      "p:possessives-basic"
+      "p:personal-a"
     ],
     "targets": [
       "g:passive-ser",
@@ -24671,25 +24792,24 @@
   },
   {
     "id": "u38-0973",
-    "es": "El barrio fue cuidado por sus vecinos, a pesar de las amenazas.",
-    "en": "The neighbourhood was looked after by its neighbours, despite the threats.",
+    "es": "Las casas fueron vigiladas por los vecinos toda la noche, a pesar de la lluvia.",
+    "en": "The houses were watched over by the neighbours all night, despite the rain.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
-      "g:direct-objects",
       "g:gender-articles",
       "g:passive-ser",
       "g:por-para-1",
-      "g:present-ar",
       "g:preterite-ser-ir-hacer",
-      "l:amenazar",
-      "l:barrio",
-      "l:cuidar",
+      "l:casa",
+      "l:lluvia",
+      "l:noche",
       "l:pesar",
       "l:ser",
       "l:vecino",
-      "p:possessives-basic"
+      "l:vigilar",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:concession-despite",
@@ -24702,23 +24822,25 @@
   },
   {
     "id": "u38-0974",
-    "es": "Los permisos fueron aprobados rápidamente; aun así, nadie los vio.",
-    "en": "The permits were approved quickly; even so, nobody saw them.",
+    "es": "Los permisos fueron aprobados en un solo día; aun así, la alcaldía dice que todo fue normal.",
+    "en": "The permits were approved in a single day; even so, the mayor's office says everything was normal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adverbs-mente",
       "g:concession-despite",
-      "g:direct-objects",
       "g:gender-articles",
       "g:passive-ser",
-      "g:preterite-er-ir",
       "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:alcaldía",
       "l:aprobar",
+      "l:decir",
+      "l:día",
+      "l:normal",
       "l:permiso",
-      "l:rápidamente",
-      "l:ser",
-      "l:ver"
+      "l:ser"
     ],
     "targets": [
       "g:concession-despite",
@@ -24759,8 +24881,8 @@
   },
   {
     "id": "u38-0976",
-    "es": "La casa fue vendida por Rosa hace años; aun así, la deuda sigue.",
-    "en": "The house was sold by Rosa years ago; even so, the debt remains.",
+    "es": "La casa fue vendida hace años; aun así, la deuda sigue.",
+    "en": "The house was sold years ago; even so, the debt remains.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24776,8 +24898,7 @@
       "l:hacer",
       "l:seguir",
       "l:ser",
-      "l:vender",
-      "p:costar-pagar"
+      "l:vender"
     ],
     "targets": [
       "g:concession-despite",
@@ -24840,20 +24961,20 @@
   },
   {
     "id": "u38-0979",
-    "es": "El nombre del dueño será dicho el viernes.",
-    "en": "The owner's name will be given out on Friday.",
+    "es": "El nombre del nuevo dueño será anunciado en junio.",
+    "en": "The new owner's name will be announced in June.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "g:gender-articles",
       "g:passive-ser",
-      "l:decir",
+      "l:anunciar",
       "l:dueño",
+      "l:junio",
       "l:nombre",
-      "l:ser",
-      "l:viernes",
-      "p:days-el-lunes"
+      "l:nuevo",
+      "l:ser"
     ],
     "targets": [
       "g:passive-ser"
@@ -25285,8 +25406,8 @@
   },
   {
     "id": "u38-0997",
-    "es": "Fue elegida Vale, todos votaron por ella.",
-    "en": "Vale was chosen, everybody voted for her.",
+    "es": "Fue elegida Vale: todos votaron por ella.",
+    "en": "Vale was chosen: everybody voted for her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25397,14 +25518,14 @@
   },
   {
     "id": "u38-1001",
-    "es": "Dime cuántas casas fueron afectadas por esa noche.",
-    "en": "Tell me how many houses were affected by that night. (to a friend)",
+    "es": "Dime cuántas casas fueron afectadas por el incendio.",
+    "en": "Tell me how many houses were affected by the fire. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
       "g:commands-with-pronouns",
-      "g:demonstratives",
+      "g:gender-articles",
       "g:indirect-questions",
       "g:passive-ser",
       "g:por-para-1",
@@ -25413,7 +25534,7 @@
       "l:casa",
       "l:cuánto",
       "l:decir",
-      "l:noche",
+      "l:incendio",
       "l:ser",
       "p:me-te-nos-objects"
     ],
@@ -25666,23 +25787,23 @@
   },
   {
     "id": "u38-1010",
-    "es": "Aun así, no entiendo por qué me lo preguntas.",
-    "en": "Even so, I don't understand why you're asking me. (to a friend)",
+    "es": "Te creo. Aun así, no entiendo por qué no me avisaste.",
+    "en": "I believe you. Even so, I don't understand why you didn't tell me. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-entiendo",
       "g:concession-despite",
-      "g:direct-objects",
-      "g:double-pronouns",
       "g:indirect-questions",
-      "g:present-ar",
+      "g:present-er-ir",
+      "g:preterite-ar",
       "g:stem-boot",
+      "l:avisar",
+      "l:creer",
       "l:entender",
-      "l:preguntar",
       "l:qué",
       "p:me-te-nos-objects",
-      "p:preguntar-pedir"
+      "p:por-que-no"
     ],
     "targets": [
       "g:concession-despite",
@@ -25695,8 +25816,8 @@
   },
   {
     "id": "u38-1011",
-    "es": "Aun así, quiero saber qué opina Vale.",
-    "en": "Even so, I want to know what Vale thinks.",
+    "es": "Ya todos votaron. Aun así, quiero saber qué opina Vale.",
+    "en": "Everyone has already voted. Even so, I want to know what Vale thinks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25704,12 +25825,14 @@
       "g:concession-despite",
       "g:indirect-questions",
       "g:present-ar",
+      "g:preterite-ar",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:opinar",
       "l:querer",
       "l:qué",
       "l:saber",
+      "l:votar",
       "p:que-opinas-de",
       "p:saber-conocer"
     ],
@@ -25784,8 +25907,8 @@
   },
   {
     "id": "u38-1014",
-    "es": "Ya que no entiendo cómo funciona, no lo toco.",
-    "en": "Since I don't understand how it works, I'm not touching it.",
+    "es": "No lo toco, ya que no entiendo cómo funciona.",
+    "en": "I'm not touching it, since I don't understand how it works.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25811,20 +25934,24 @@
   },
   {
     "id": "u38-1015",
-    "es": "Puesto que no sabemos quién llamó, mejor no contestamos.",
-    "en": "Since we don't know who called, we'd better not answer.",
+    "es": "Puesto que no sabemos quién escribió la carta, mejor no la publicamos.",
+    "en": "Since we don't know who wrote the letter, we'd better not publish it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
+      "g:direct-objects",
+      "g:gender-articles",
       "g:indirect-questions",
       "g:present-er-ir",
       "g:preterite-ar",
+      "g:preterite-er-ir",
       "g:that-clauses",
-      "l:contestar",
-      "l:llamar",
+      "l:carta",
+      "l:escribir",
       "l:mejor",
       "l:poner",
+      "l:publicar",
       "l:quién",
       "l:saber",
       "p:saber-conocer"
@@ -25931,28 +26058,30 @@
   },
   {
     "id": "u38-1019",
-    "es": "Debido a que no sé dónde dejé las llaves, llegué tarde.",
-    "en": "Because I don't know where I left the keys, I arrived late.",
+    "es": "Debido a que no sabía dónde estaban las llaves, llegué tarde.",
+    "en": "Because I didn't know where the keys were, I was late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
       "g:causal-advanced",
+      "g:estar-location-states",
       "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:indirect-questions",
-      "g:preterite-ar",
+      "g:pret-vs-imperfect",
       "g:preterite-spelling-stem",
       "g:that-clauses",
-      "g:yo-irregular",
       "l:deber",
-      "l:dejar",
       "l:dónde",
+      "l:estar",
       "l:llave",
       "l:llegar",
       "l:saber",
       "l:tarde",
       "p:gracias-a-por-culpa-de",
-      "p:llegar-a-tiempo"
+      "p:llegar-a-tiempo",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:causal-advanced",
@@ -25966,23 +26095,26 @@
   },
   {
     "id": "u38-1020",
-    "es": "A causa de que nadie sabía cómo llegar, llegamos tarde.",
-    "en": "Because nobody knew how to get there, we arrived late.",
+    "es": "A causa de que nadie sabía cómo llegar, dimos vueltas una hora.",
+    "en": "Because nobody knew how to get there, we went round in circles for an hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
+      "g:gender-articles",
       "g:imperfect-habitual",
       "g:indirect-questions",
-      "g:present-ar",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
       "g:that-clauses",
       "l:causa",
       "l:cómo",
+      "l:dar",
+      "l:hora",
       "l:llegar",
       "l:saber",
-      "l:tarde",
+      "l:vuelta",
       "p:gracias-a-por-culpa-de",
-      "p:llegar-a-tiempo",
       "p:saber-conocer"
     ],
     "targets": [
@@ -26030,8 +26162,8 @@
   },
   {
     "id": "u38-1022",
-    "es": "Ya que el vuelo sale a las seis, hay que salir a las tres.",
-    "en": "Since the flight leaves at six, we have to leave at three.",
+    "es": "Hay que salir a las tres, ya que el vuelo sale a las seis.",
+    "en": "We have to leave at three, since the flight leaves at six.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26055,8 +26187,8 @@
   },
   {
     "id": "u38-1023",
-    "es": "Ya que la tienda cierra temprano, compro todo hoy.",
-    "en": "Since the shop closes early, I'll buy everything today.",
+    "es": "Compro todo hoy, ya que mañana la tienda cierra temprano.",
+    "en": "I'll buy everything today, since the shop closes early tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26067,6 +26199,7 @@
       "l:cerrar",
       "l:comprar",
       "l:hoy",
+      "l:mañana",
       "l:temprano",
       "l:tienda"
     ],
@@ -26080,8 +26213,8 @@
   },
   {
     "id": "u38-1024",
-    "es": "Ya que no hay clases mañana, nos quedamos a dormir.",
-    "en": "Since there are no classes tomorrow, we're staying over.",
+    "es": "Nos quedamos a dormir, ya que no hay clases mañana.",
+    "en": "We're staying over, since there are no classes tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26130,19 +26263,20 @@
   },
   {
     "id": "u38-1026",
-    "es": "Ya que Tomás habla mejor, él se encarga de la llamada.",
-    "en": "Since Tomás speaks better, he'll handle the call.",
+    "es": "Vale se encarga de la llamada, ya que habla más rápido que yo.",
+    "en": "Vale will handle the call, since she talks faster than me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
+      "g:comparatives",
       "g:gender-articles",
       "g:present-ar",
       "g:reflexive-routine",
       "l:encargar",
       "l:hablar",
       "l:llamada",
-      "l:mejor"
+      "l:rápido"
     ],
     "targets": [
       "g:causal-advanced"
@@ -26233,8 +26367,8 @@
   },
   {
     "id": "u38-1030",
-    "es": "Puesto que Vale prepara el pan, yo atiendo a los clientes.",
-    "en": "Since Vale makes the bread, I serve the customers.",
+    "es": "Yo atiendo a los clientes, puesto que Vale prepara el pan.",
+    "en": "I serve the customers, since Vale makes the bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26260,8 +26394,8 @@
   },
   {
     "id": "u38-1031",
-    "es": "Puesto que hay poca gente, empezamos la reunión.",
-    "en": "Since there are few people, we start the meeting.",
+    "es": "Puesto que hay poca gente, hacemos la reunión en el café.",
+    "en": "Since there are few people, we'll hold the meeting in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26269,10 +26403,11 @@
       "g:causal-advanced",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "g:present-ar",
+      "g:present-er-ir",
       "g:that-clauses",
-      "l:empezar",
+      "l:café",
       "l:gente",
+      "l:hacer",
       "l:poner",
       "l:reunión",
       "p:la-gente-singular",
@@ -26289,23 +26424,23 @@
   },
   {
     "id": "u38-1032",
-    "es": "Puesto que el café está lleno, esperamos afuera.",
-    "en": "Since the café is full, we wait outside.",
+    "es": "Esperamos afuera, puesto que adentro no cabe nadie más.",
+    "en": "We're waiting outside, since there's no room for anyone else inside.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
-      "g:estar-location-states",
-      "g:gender-articles",
+      "g:negation-words",
       "g:present-ar",
+      "g:present-er-ir",
       "g:that-clauses",
+      "l:adentro",
       "l:afuera",
-      "l:café",
+      "l:caber",
       "l:esperar",
-      "l:estar",
-      "l:lleno",
       "l:poner",
-      "p:lleno-libre"
+      "p:caber",
+      "p:medir-pesar-caber"
     ],
     "targets": [
       "g:causal-advanced"
@@ -26317,28 +26452,28 @@
   },
   {
     "id": "u38-1033",
-    "es": "Puesto que usted lo pide, le doy mi opinión.",
-    "en": "Since you ask, I'll give you my opinion. (polite)",
+    "es": "Puesto que usted es el abogado, ¿qué nos aconseja?",
+    "en": "Since you're the lawyer, what do you advise us? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
-      "g:direct-objects",
-      "g:indirect-objects",
-      "g:stem-e-i",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "g:ser-identity",
       "g:that-clauses",
-      "g:yo-irregular",
-      "l:dar",
-      "l:opinión",
-      "l:pedir",
+      "l:abogado",
+      "l:aconsejar",
       "l:poner",
-      "p:possessives-basic",
-      "p:preguntar-pedir"
+      "l:qué",
+      "l:ser",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:causal-advanced"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u38",
     "theme": "everyday talk with reasons",
     "source": "gen"
@@ -26373,24 +26508,22 @@
   },
   {
     "id": "u38-1035",
-    "es": "Dado que está lloviendo, mejor tomamos el bus.",
-    "en": "Since it's raining, we'd better take the bus.",
+    "es": "Dado que el carro no funciona, nos vamos en bus.",
+    "en": "Since the car isn't working, we're going by bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
-      "g:estar-gerund",
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:ir-a-plans",
       "g:present-ar",
       "g:that-clauses",
       "l:bus",
+      "l:carro",
       "l:dar",
-      "l:estar",
-      "l:llover",
-      "l:mejor",
-      "l:tomar",
-      "p:hace-frio"
+      "l:funcionar",
+      "l:irse",
+      "p:transport-en"
     ],
     "targets": [
       "g:causal-advanced"
@@ -26429,13 +26562,12 @@
   },
   {
     "id": "u38-1037",
-    "es": "Dado que el mensaje es urgente, lo envío ahora mismo.",
-    "en": "Since the message is urgent, I'm sending it right now.",
+    "es": "Envío el mensaje ahora mismo, dado que es urgente.",
+    "en": "I'm sending the message right now, since it's urgent.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
-      "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
@@ -26534,8 +26666,8 @@
   },
   {
     "id": "u38-1041",
-    "es": "Debido a las obras, el ruido empieza a las seis.",
-    "en": "Because of the works, the noise starts at six.",
+    "es": "El ruido empieza a las seis debido a las obras.",
+    "en": "The noise starts at six because of the works.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26560,8 +26692,8 @@
   },
   {
     "id": "u38-1042",
-    "es": "Debido a su edad, Hernando ya no maneja de noche.",
-    "en": "Because of his age, Hernando no longer drives at night.",
+    "es": "Hernando ya no maneja de noche debido a su edad.",
+    "en": "Hernando no longer drives at night because of his age.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26615,21 +26747,24 @@
   },
   {
     "id": "u38-1044",
-    "es": "Debido a que Vale no pudo venir, cerramos la panadería.",
-    "en": "Because Vale couldn't come, we closed the bakery.",
+    "es": "Debido a que Vale no pudo venir, Tomás hizo los postres, y fue un desastre.",
+    "en": "Because Vale couldn't come, Tomás made the desserts, and it was a disaster.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:estuvo",
       "g:causal-advanced",
       "g:gender-articles",
-      "g:preterite-ar",
       "g:preterite-irregular-strong",
+      "g:preterite-ser-ir-hacer",
       "g:that-clauses",
       "g:verb-infinitive",
-      "l:cerrar",
       "l:deber",
-      "l:panadería",
+      "l:desastre",
+      "l:hacer",
       "l:poder",
+      "l:postre",
+      "l:ser",
       "l:venir",
       "p:gracias-a-por-culpa-de"
     ],
@@ -26731,8 +26866,8 @@
   },
   {
     "id": "u38-1048",
-    "es": "A causa del humo, nadie podía respirar bien.",
-    "en": "Because of the smoke, nobody could breathe well.",
+    "es": "Nadie podía respirar bien a causa del humo.",
+    "en": "Nobody could breathe well because of the smoke.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26758,23 +26893,23 @@
   },
   {
     "id": "u38-1049",
-    "es": "A causa de la inundación, mucha gente perdió su trabajo.",
-    "en": "Because of the flood, many people lost their jobs.",
+    "es": "Muchos negocios cerraron a causa de la inundación del año pasado.",
+    "en": "Many businesses closed because of last year's flood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
       "g:gender-articles",
-      "g:preterite-er-ir",
+      "g:preterite-ar",
+      "l:año",
       "l:causa",
-      "l:gente",
+      "l:cerrar",
       "l:inundación",
-      "l:perder",
-      "l:trabajo",
+      "l:negocio",
+      "l:pasado",
       "p:gracias-a-por-culpa-de",
-      "p:la-gente-singular",
-      "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:causal-advanced",
@@ -26854,19 +26989,17 @@
   },
   {
     "id": "u38-1053",
-    "es": "Ya que es un número desconocido, prefiero no hacerlo.",
-    "en": "Since it's an unknown number, I prefer not to.",
+    "es": "Ya que es un número desconocido, prefiero no contestar.",
+    "en": "Since it's an unknown number, I'd rather not answer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:object-pronoun-position",
       "g:ser-identity",
       "g:stem-boot",
+      "l:contestar",
       "l:desconocido",
-      "l:hacer",
       "l:número",
       "l:preferir",
       "l:ser",
@@ -27073,22 +27206,14 @@
   },
   {
     "id": "u38-1062",
-    "es": "¿Has oído hablar de la señora colombiana que ganó el premio?",
-    "en": "Have you heard of the Colombian woman who won the award? (to a friend)",
+    "es": "¿Has oído hablar de Gabriel García Márquez?",
+    "en": "Have you heard of Gabriel García Márquez? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
-      "g:gender-articles",
       "g:perfecto-experience",
-      "g:preterite-ar",
-      "g:relative-que",
-      "l:colombiano",
-      "l:ganar",
       "l:hablar",
       "l:oír",
-      "l:premio",
-      "l:señora",
       "p:oir-hablar-de"
     ],
     "targets": [
@@ -27101,17 +27226,21 @@
   },
   {
     "id": "u38-1063",
-    "es": "No, nunca he oído hablar de ella.",
-    "en": "No, I've never heard of her.",
+    "es": "¡Claro! Todo el mundo ha oído hablar de él.",
+    "en": "Of course! Everybody has heard of him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
+      "g:gender-articles",
       "g:perfecto-experience",
       "g:prep-pronouns",
+      "l:claro",
       "l:hablar",
+      "l:mundo",
       "l:oír",
-      "p:frequency-scale",
-      "p:oir-hablar-de"
+      "p:oir-hablar-de",
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:oir-hablar-de"
@@ -27168,16 +27297,14 @@
   },
   {
     "id": "u38-1066",
-    "es": "¿Has oído hablar de Simón, el loro más famoso de Bogotá?",
-    "en": "Have you heard of Simón, the most famous parrot in Bogotá? (to a friend)",
+    "es": "¿Has oído hablar del Museo del Oro?",
+    "en": "Have you heard of the Gold Museum? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:perfecto-experience",
-      "l:famoso",
       "l:hablar",
-      "l:loro",
       "l:oír",
       "p:oir-hablar-de"
     ],
@@ -27218,16 +27345,20 @@
   },
   {
     "id": "u38-1068",
-    "es": "Mi abuela había oído hablar de Altamira antes que nadie.",
-    "en": "My grandmother had heard of Altamira before anyone else.",
+    "es": "Mi abuela había oído hablar de ese mercado en los años setenta.",
+    "en": "My grandmother had heard of that market back in the seventies.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:demonstratives",
+      "g:gender-articles",
       "g:pluperfect",
       "l:abuela",
-      "l:antes",
+      "l:año",
       "l:hablar",
+      "l:mercado",
       "l:oír",
+      "p:decadas-siglos",
       "p:oir-hablar-de",
       "p:possessives-basic"
     ],
@@ -27264,14 +27395,12 @@
   },
   {
     "id": "u38-1070",
-    "es": "Tomás nunca había oído hablar de las casas de La Candelaria.",
-    "en": "Tomás had never heard of the houses of La Candelaria.",
+    "es": "Tomás nunca había oído hablar de Villa de Leyva.",
+    "en": "Tomás had never heard of Villa de Leyva.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:pluperfect",
-      "l:casa",
       "l:hablar",
       "l:oír",
       "p:frequency-scale",
@@ -27396,15 +27525,14 @@
   },
   {
     "id": "u38-1075",
-    "es": "La fiesta de Vale fue en el barrio Chapinero, no en La Candelaria.",
-    "en": "Vale's party was in the Chapinero neighbourhood, not in La Candelaria.",
+    "es": "La fiesta de Vale fue en Chapinero, no en La Candelaria.",
+    "en": "Vale's party was in Chapinero, not in La Candelaria.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "l:barrio",
       "l:fiesta",
       "l:ser"
     ],
@@ -27444,21 +27572,22 @@
   },
   {
     "id": "u38-1077",
-    "es": "La carrera fue en una calle cubierta por la lluvia.",
-    "en": "The race was on a street covered by rain.",
+    "es": "La carrera fue en las calles del centro, un domingo muy temprano.",
+    "en": "The race was in the streets downtown, very early on a Sunday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:calle",
       "l:carrera",
-      "l:cubrir",
-      "l:lluvia",
+      "l:centro",
+      "l:domingo",
       "l:ser",
-      "p:event-ser-en"
+      "l:temprano",
+      "p:event-ser-en",
+      "p:quantifiers-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -27468,8 +27597,8 @@
   },
   {
     "id": "u38-1078",
-    "es": "La despedida de Mariana será en el café el jueves.",
-    "en": "Mariana's farewell will be at the café on Thursday.",
+    "es": "La despedida del profesor será en el café el jueves.",
+    "en": "The teacher's farewell will be at the café on Thursday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27479,6 +27608,7 @@
       "l:café",
       "l:despedida",
       "l:jueves",
+      "l:profesor",
       "l:ser",
       "p:days-el-lunes"
     ],
@@ -27582,8 +27712,8 @@
   },
   {
     "id": "u38-1083",
-    "es": "La clase de cocina es en la panadería, los sábados.",
-    "en": "The cooking class is at the bakery, on Saturdays.",
+    "es": "La clase de cocina es en la panadería de la esquina, los sábados.",
+    "en": "The cooking class is at the bakery on the corner, on Saturdays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27591,6 +27721,7 @@
       "g:ser-identity",
       "l:clase",
       "l:cocina",
+      "l:esquina",
       "l:panadería",
       "l:ser",
       "l:sábado",
@@ -27629,21 +27760,21 @@
   },
   {
     "id": "u38-1085",
-    "es": "A pesar de este tráfico, la cita fue puntual.",
-    "en": "Despite this traffic, the appointment was on time.",
+    "es": "Llegué puntual a la cita, a pesar de que había trancón.",
+    "en": "I got to the appointment on time, even though there was a traffic jam.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
+      "g:imperfect-states",
+      "g:preterite-spelling-stem",
       "l:cita",
+      "l:llegar",
       "l:pesar",
       "l:puntual",
-      "l:ser",
-      "l:tráfico",
-      "p:demonstratives-basic"
+      "l:trancón",
+      "p:llegar-a-tiempo"
     ],
     "targets": [
       "g:concession-despite"
@@ -27710,18 +27841,25 @@
   },
   {
     "id": "u38-1088",
-    "es": "Aun así, mi tío es conocido por ser puntual.",
-    "en": "Even so, my uncle is known for being punctual.",
+    "es": "Mi tío es conocido por llegar tarde. Aun así, nunca ha perdido un vuelo.",
+    "en": "My uncle is known for being late. Even so, he has never missed a flight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
+      "g:gender-articles",
+      "g:perfecto-experience",
       "g:por-para-1",
       "g:ser-identity",
       "l:conocer",
-      "l:puntual",
+      "l:llegar",
+      "l:perder",
       "l:ser",
+      "l:tarde",
       "l:tío",
+      "l:vuelo",
+      "p:frequency-scale",
+      "p:llegar-a-tiempo",
       "p:possessives-basic",
       "p:saber-conocer"
     ],
@@ -27735,17 +27873,22 @@
   },
   {
     "id": "u38-1089",
-    "es": "Aun así, el barrio sigue siendo conocido por su café.",
-    "en": "Even so, the neighbourhood is still known for its coffee.",
+    "es": "Ya no hay tantos cafés como antes. Aun así, el barrio sigue siendo conocido por su café.",
+    "en": "There aren't as many cafés as before. Even so, the neighbourhood is still known for its coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:ya-no",
       "g:concession-despite",
       "g:gender-articles",
       "g:gerund-ways",
+      "g:hay-vs-esta",
       "g:por-para-1",
       "g:ser-identity",
       "g:stem-e-i",
+      "g:tanto-como",
+      "l:antes",
       "l:barrio",
       "l:café",
       "l:conocer",
@@ -27834,8 +27977,8 @@
   },
   {
     "id": "u38-1093",
-    "es": "La noticia resultó ser parecida a la noticia del año pasado.",
-    "en": "The news turned out to be similar to last year's news.",
+    "es": "La noticia resultó ser muy parecida a la del año pasado.",
+    "en": "The story turned out to be very similar to last year's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27848,6 +27991,7 @@
       "l:pasado",
       "l:resultar",
       "l:ser",
+      "p:quantifiers-basic",
       "p:resultar-ser",
       "p:time-pasado-que-viene"
     ],
@@ -28510,17 +28654,18 @@
   },
   {
     "id": "u38-1119",
-    "es": "La venta de los cuadros de Rosa es en la plaza, el domingo.",
-    "en": "The sale of Rosa's paintings is in the square, on Sunday.",
+    "es": "La venta de libros usados es en la plaza, el domingo.",
+    "en": "The second-hand book sale is in the square, on Sunday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:cuadro",
       "l:domingo",
+      "l:libro",
       "l:plaza",
       "l:ser",
+      "l:usar",
       "l:venta",
       "p:days-el-lunes"
     ],
@@ -28556,20 +28701,19 @@
   },
   {
     "id": "u38-1121",
-    "es": "El almuerzo es en el teatro de la calle doce.",
-    "en": "The lunch is at the theatre on Twelfth Street.",
+    "es": "El almuerzo es en el restaurante del teatro.",
+    "en": "The lunch is at the theatre restaurant.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:almuerzo",
-      "l:calle",
+      "l:restaurante",
       "l:ser",
       "l:teatro",
       "p:event-ser-en",
-      "p:ser-event-location",
-      "p:street-names"
+      "p:ser-event-location"
     ],
     "targets": [
       "p:ser-event-location"
@@ -28668,19 +28812,20 @@
   },
   {
     "id": "u38-1126",
-    "es": "Ese actor es conocido por todos en el barrio.",
-    "en": "That actor is known by everybody in the neighbourhood.",
+    "es": "La señora de las empanadas es conocida por todos en el barrio.",
+    "en": "The empanada lady is known to everyone in the neighbourhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
       "g:gender-articles",
+      "g:passive-ser",
       "g:por-para-1",
       "g:ser-identity",
-      "l:actor",
       "l:barrio",
       "l:conocer",
+      "l:empanada",
       "l:ser",
+      "l:señora",
       "p:saber-conocer"
     ],
     "targets": [],
@@ -28855,8 +29000,8 @@
   },
   {
     "id": "u38-1134",
-    "es": "La celebración del premio fue en la panadería de Vale.",
-    "en": "The prize celebration was in Vale's bakery.",
+    "es": "La celebración del premio fue en la panadería de doña Gloria.",
+    "en": "The prize celebration was in Doña Gloria's bakery.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28866,7 +29011,8 @@
       "l:celebración",
       "l:panadería",
       "l:premio",
-      "l:ser"
+      "l:ser",
+      "p:senor-don-article"
     ],
     "targets": [],
     "kind": "statement",
@@ -28876,8 +29022,8 @@
   },
   {
     "id": "u38-1135",
-    "es": "La clase es en la iglesia, los jueves.",
-    "en": "The class is in the church, on Thursdays.",
+    "es": "La clase de inglés es en la iglesia, los jueves.",
+    "en": "The English class is at the church, on Thursdays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28885,15 +29031,12 @@
       "g:ser-identity",
       "l:clase",
       "l:iglesia",
+      "l:inglés",
       "l:jueves",
       "l:ser",
-      "p:days-el-lunes",
-      "p:event-ser-en",
-      "p:ser-event-location"
+      "p:days-el-lunes"
     ],
-    "targets": [
-      "p:ser-event-location"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u38",
     "theme": "questions behind the headlines",
@@ -29027,8 +29170,8 @@
   },
   {
     "id": "u38-1141",
-    "es": "Sé de quién es el celular, pero no sé a quién llamó.",
-    "en": "I know whose phone it is, but I don't know who it called.",
+    "es": "Sé de quién es el celular, pero no sé a quién llamó su dueño.",
+    "en": "I know whose phone it is, but I don't know who its owner called.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29039,12 +29182,14 @@
       "g:ser-identity",
       "g:yo-irregular",
       "l:celular",
+      "l:dueño",
       "l:llamar",
       "l:quién",
       "l:saber",
       "l:ser",
       "p:de-owner",
       "p:personal-a",
+      "p:possessives-basic",
       "p:saber-conocer"
     ],
     "targets": [
@@ -29057,8 +29202,8 @@
   },
   {
     "id": "u38-1142",
-    "es": "Dime a quién le contaste la oferta.",
-    "en": "Tell me who you told the offer to. (to a friend)",
+    "es": "Dime a quién le contaste lo de la oferta.",
+    "en": "Tell me who you told about the offer. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29072,6 +29217,9 @@
       "l:decir",
       "l:oferta",
       "l:quién",
+      "p:lo-de",
+      "p:lo-de-noun",
+      "p:lo-de-topic",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -29138,25 +29286,19 @@
   },
   {
     "id": "u38-1145",
-    "es": "Esa mujer es conocida por todos en la plaza.",
-    "en": "That woman is known to everyone in the square.",
+    "es": "Esa canción es conocida en toda Colombia.",
+    "en": "That song is known all over Colombia.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:demonstratives",
-      "g:gender-articles",
-      "g:passive-ser",
-      "g:por-para-1",
       "g:ser-identity",
-      "l:conocer",
-      "l:mujer",
-      "l:plaza",
-      "l:ser",
-      "p:saber-conocer"
+      "l:canción",
+      "l:conocido",
+      "l:ser"
     ],
-    "targets": [
-      "g:passive-ser"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u38",
     "theme": "questions behind the headlines",
@@ -29278,8 +29420,8 @@
   },
   {
     "id": "u38-1150",
-    "es": "La fiesta es en el café, ¿vienes?",
-    "en": "The party is at the café, are you coming? (to a friend)",
+    "es": "La fiesta del documental es en el café esta noche. ¿Vienes?",
+    "en": "The documentary party is at the café tonight. Are you coming? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29287,17 +29429,14 @@
       "g:ser-identity",
       "g:stem-boot",
       "l:café",
+      "l:documental",
       "l:fiesta",
+      "l:noche",
       "l:ser",
       "l:venir",
-      "p:event-ser-en",
-      "p:ser-event-location",
-      "p:tener-lugar"
+      "p:demonstratives-basic"
     ],
-    "targets": [
-      "p:ser-event-location",
-      "p:tener-lugar"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u38",
     "theme": "questions behind the headlines",
@@ -29461,17 +29600,20 @@
   },
   {
     "id": "u38-1157",
-    "es": "La reunión es en la sala 5, no en la sala 3.",
-    "en": "The meeting is in room 5, not in room 3.",
+    "es": "La reunión es en el segundo piso, no en el sótano.",
+    "en": "The meeting is on the second floor, not in the basement.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:piso",
       "l:reunión",
-      "l:sala",
       "l:ser",
+      "l:sótano",
       "p:event-ser-en",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
       "p:ser-event-location",
       "p:tener-lugar"
     ],
@@ -29566,20 +29708,22 @@
   },
   {
     "id": "u38-1161",
-    "es": "Ya que estás aquí, ¿me ayudas con las cajas?",
-    "en": "Since you're here, will you help me with the boxes? (to a friend)",
+    "es": "Ya que vas a la tienda, ¿me traes leche?",
+    "en": "Since you're going to the shop, will you bring me some milk? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:voy-vas",
       "g:causal-advanced",
-      "g:estar-location-states",
       "g:gender-articles",
-      "g:present-ar",
-      "l:aquí",
-      "l:ayudar",
-      "l:caja",
-      "l:estar",
-      "p:aqui-ahi-alla",
+      "g:ir-a-plans",
+      "g:present-er-ir",
+      "l:ir",
+      "l:leche",
+      "l:tienda",
+      "l:traer",
+      "p:ir-a-venir-de-place",
+      "p:llevar-traer",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -29687,20 +29831,23 @@
   },
   {
     "id": "u38-1166",
-    "es": "Ya que no sabes quién llamó, ¿no contestas?",
-    "en": "Since you don't know who called, you're not answering? (to a friend)",
+    "es": "Ya que no sabes cómo llegar, ¿te mando la ubicación?",
+    "en": "Since you don't know how to get there, shall I send you the location? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
+      "g:gender-articles",
       "g:indirect-questions",
       "g:present-ar",
       "g:present-er-ir",
-      "g:preterite-ar",
-      "l:contestar",
-      "l:llamar",
-      "l:quién",
+      "l:cómo",
+      "l:llegar",
+      "l:mandar",
       "l:saber",
+      "l:ubicación",
+      "p:me-te-nos-objects",
+      "p:no-se-que-hacer",
       "p:saber-conocer"
     ],
     "targets": [
@@ -29824,19 +29971,23 @@
   },
   {
     "id": "u38-1171",
-    "es": "¿Cancelaron el partido a causa de la tormenta?",
-    "en": "Did they cancel the match because of the storm?",
+    "es": "¿Fue a causa de la tormenta que cancelaron el partido?",
+    "en": "Was it because of the storm that they cancelled the match?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
       "g:gender-articles",
       "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:relative-que",
       "l:cancelar",
       "l:causa",
+      "l:ir",
       "l:partido",
       "l:tormenta",
-      "p:gracias-a-por-culpa-de"
+      "p:gracias-a-por-culpa-de",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "g:causal-advanced",
@@ -29850,18 +30001,21 @@
   },
   {
     "id": "u38-1172",
-    "es": "¿Llegaste tarde debido al tráfico?",
-    "en": "Did you arrive late because of the traffic? (to a friend)",
+    "es": "¿Llegaste tarde por culpa del tráfico?",
+    "en": "Were you late because of the traffic? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:preterite-ar",
-      "l:deber",
+      "l:culpa",
       "l:llegar",
       "l:tarde",
       "l:tráfico",
-      "p:llegar-a-tiempo"
+      "p:gracias-a-por-culpa-de",
+      "p:llegar-a-tiempo",
+      "p:por-culpa-de"
     ],
     "targets": [],
     "kind": "question",
@@ -29871,24 +30025,20 @@
   },
   {
     "id": "u38-1173",
-    "es": "¿Se fue Hernando temprano debido a su rodilla?",
-    "en": "Did Hernando leave early because of his knee?",
+    "es": "¿Hernando se fue temprano por la rodilla o por el sueño?",
+    "en": "Did Hernando leave early because of his knee or because he was sleepy?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:causal-advanced",
+      "g:gender-articles",
+      "g:por-para-1",
       "g:preterite-ser-ir-hacer",
-      "l:deber",
       "l:irse",
       "l:rodilla",
-      "l:temprano",
-      "p:gracias-a-por-culpa-de",
-      "p:possessives-basic"
+      "l:sueño",
+      "l:temprano"
     ],
-    "targets": [
-      "g:causal-advanced",
-      "p:gracias-a-por-culpa-de"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u38",
     "theme": "why questions",
@@ -29924,15 +30074,19 @@
   },
   {
     "id": "u38-1175",
-    "es": "¿Perdieron el vuelo a causa del trancón?",
-    "en": "Did they miss the flight because of the traffic jam?",
+    "es": "¿Perdieron el vuelo a causa del trancón? ¡Qué mala suerte!",
+    "en": "Did they miss the flight because of the traffic jam? What bad luck!",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:que-de-malas",
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:causa",
+      "l:mala",
       "l:perder",
+      "l:qué",
+      "l:suerte",
       "l:trancón",
       "l:vuelo",
       "p:gracias-a-por-culpa-de"
@@ -29948,18 +30102,22 @@
   },
   {
     "id": "u38-1176",
-    "es": "¿Estás cansado debido al trabajo o al viaje?",
-    "en": "Are you tired because of the work or the trip? (to a friend)",
+    "es": "¿Te sientes mal por la comida o por el viaje?",
+    "en": "Do you feel bad because of the food or because of the trip? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
-      "l:cansado",
-      "l:deber",
-      "l:estar",
-      "l:trabajo",
-      "l:viaje"
+      "g:por-para-1",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:comida",
+      "l:mal",
+      "l:sentirse",
+      "l:viaje",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:sentirse-mal"
     ],
     "targets": [],
     "kind": "question",

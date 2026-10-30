@@ -156,9 +156,7 @@
     {
       "prompt": "Make it about *we*: *Me enteré de que Vale se va.* (We found out Vale is leaving.)",
       "answer": "Nos enteramos de que Vale se va.",
-      "accept": [
-        "Nos enteramos de que Vale se va."
-      ],
+      "accept": [],
       "why": "*Me* becomes *nos*, and the verb ending changes too."
     },
     {

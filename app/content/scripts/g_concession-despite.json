@@ -156,7 +156,9 @@
       "answer": "A pesar de que Tomás está cansado, trabaja.",
       "accept": [
         "Tomás trabaja a pesar de que está cansado.",
-        "A pesar de que Tomás está cansado, está trabajando."
+        "A pesar de que Tomás está cansado, está trabajando.",
+        "A pesar de que está cansado, Tomás trabaja.",
+        "A pesar de que está cansado, Tomás está trabajando."
       ],
       "why": "Before a verb, *a pesar de* needs *que*."
     },

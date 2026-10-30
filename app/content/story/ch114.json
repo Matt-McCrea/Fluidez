@@ -2,7 +2,7 @@
   "id": "ch114",
   "unit": "u38",
   "title": "El titular del día",
-  "text": "Nadie veía la televisión del café desde el Mundial.\nPresentadora: Hoy en las noticias: una inundación en Mocoa, un incendio en Cali y tres semanas para las elecciones. Pero el titular del día es un reportaje que tiene a Bogotá hablando.\nHernando: Antes, el titular era una inundación o un incendio. Hoy es mi mesa.\nEn la pantalla salió Simón, en la ventana del café.\nSimón: ¡Qué locura! ¡Qué locura!\nA las diez, el loro tenía más visitas que el artículo.\nMariana: Seis meses de trabajo, y el país quiere ver al loro.\nVale: Ese loro trabaja gratis para su reportaje.\nTomás: En software, cada error tenía una causa y una consecuencia. La causa es fácil: un hombre firmó seis permisos. Las consecuencias no las sabemos.\nA mediodía, doña Gloria entró con una hoja llena de firmas.\nGloria: Cuatrocientas firmas. Y mañana, protesta en la plaza.\nVale: ¿Una protesta? ¿Usted?\nGloria: Mija, mi primera manifestación fue en 1977, y la policía me tenía miedo.\nHernando: Esa manifestación yo la vi. Usted gritaba más que el loro.\nPor la tarde, el periódico publicó un editorial: «La ciudad no se vende».\nMariana: Un editorial no es la opinión de una periodista. Es la opinión de todo el periódico.\nLuego, una estudiante pidió permiso para hacer un documental sobre el café.\nHernando se puso la gorra. El documental no tenía nombre, pero ya tenía estrella.\nMariana: Este es el acontecimiento del año. A tres semanas de las elecciones, nadie en la alcaldía quiere una foto con Altamira.\nTomás: ¿El acontecimiento del año? Es un café con un loro.\nVale: Una vez le dije a Hernando que usted tenía demasiados recuerdos de Tomás. Hoy usted me hace sentir orgullo, nada más.\nMariana le tomó la mano, y las dos se rieron de Hernando, que practicaba su mejor cara para la cámara.\nA las once llegó un audio de Taganga.\nYesid: Mi abuela vio a su loro en la televisión. Dice que los espera en Taganga.\nEn la pantalla: «Mañana a las nueve, la alcaldía habla del caso Rengifo. A las diez, Grupo Altamira responde».",
+  "text": "Nadie veía la televisión del café desde el Mundial.\nPresentadora: Hoy en las noticias: una inundación en Mocoa, un incendio en Cali y tres semanas para las elecciones. Pero el titular del día es un reportaje que tiene a Bogotá hablando.\nHernando: Antes, el titular era una inundación o un incendio. Hoy es mi mesa.\nEn la pantalla salió Simón, en la ventana del café.\nSimón: ¡Qué locura! ¡Qué locura!\nA las diez, el loro tenía más visitas que el artículo.\nMariana: Seis meses de trabajo en un artículo, y el país quiere ver al loro.\nVale: Ese loro trabaja gratis para su reportaje.\nTomás: En software, cada error tenía una causa y una consecuencia. La causa es fácil: un hombre firmó seis permisos. Las consecuencias no las sabemos.\nA mediodía, doña Gloria entró con una hoja llena de firmas.\nGloria: Cuatrocientas firmas. Y mañana, protesta en la plaza.\nVale: ¿Una protesta? ¿Usted?\nGloria: Mija, mi primera manifestación fue en 1977, y la policía me tenía miedo.\nHernando: Esa manifestación yo la vi. Usted gritaba más que el loro.\nPor la tarde, el periódico publicó un editorial: «La ciudad no se vende».\nMariana: Un editorial no es la opinión de una periodista. Es la opinión de todo el periódico.\nLuego, una estudiante pidió permiso para hacer un documental sobre el café.\nHernando se puso la gorra. El documental no tenía nombre, pero ya tenía estrella.\nMariana: Este es el acontecimiento del año. A tres semanas de las elecciones, nadie en la alcaldía quiere una foto con Altamira.\nTomás: ¿El acontecimiento del año? Es un café con un loro.\nVale: Mariana, el país mira al loro, pero el reportaje es tuyo. Estoy orgullosa de ti.\nMariana le tomó la mano, y las dos se rieron de Hernando, que practicaba su mejor cara para la cámara.\nA las once llegó un audio de Taganga.\nYesid: Mi abuela vio a su loro en la televisión. Dice que los espera en Taganga.\nEn la pantalla: «Mañana a las nueve, la alcaldía habla del caso Rengifo. A las diez, Grupo Altamira responde».",
   "gloss": [
     {
       "es": "loro",
@@ -45,16 +45,16 @@
       "en": "Three weeks before the elections"
     },
     {
-      "es": "Hoy usted me hace sentir orgullo, nada más.",
-      "en": "Today you just make me feel proud."
-    },
-    {
       "es": "su mejor cara para la cámara",
       "en": "his best face for the camera"
     },
     {
       "es": "el caso Rengifo",
       "en": "the Rengifo case"
+    },
+    {
+      "es": "Estoy orgullosa de ti.",
+      "en": "I'm proud of you."
     }
   ],
   "questions": [
@@ -141,26 +141,28 @@
       "answer": 0
     }
   ],
-  "hook": "At nine tomorrow the mayor's office speaks about Rengifo, and at ten Altamira gives his answer. By then the café will be full of reporters, and every one of them wants to hear from Tomás.",
+  "hook": "At nine tomorrow the mayor's office speaks about Rengifo, and at ten Grupo Altamira gives its answer. By then the café will be full of reporters, and every one of them wants to hear from Tomás.",
   "requires": [
     "c:claro-listo",
     "c:era",
-    "c:me-hace-una-rebajita",
     "c:no-se",
+    "c:oye-mira",
     "c:tienes",
-    "c:una-vez",
+    "c:trabajo-en",
     "g:adjective-agreement",
     "g:cada-cualquier",
     "g:comparatives",
     "g:demonstratives",
     "g:direct-objects",
+    "g:estar-location-states",
     "g:gender-articles",
     "g:gerund-ways",
     "g:imperfect-habitual",
     "g:imperfect-states",
     "g:indirect-objects",
-    "g:le-doubling",
     "g:passive-se",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:pret-vs-imperfect",
@@ -169,7 +171,6 @@
     "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
     "g:preterite-spelling-stem",
-    "g:quantifiers",
     "g:relative-que",
     "g:se-impersonal",
     "g:ser-identity",
@@ -179,7 +180,9 @@
     "g:verb-infinitive",
     "g:verbs-of-change",
     "p:dates-years",
+    "p:de-owner",
     "p:demonstratives-basic",
+    "p:estar-orgulloso-de",
     "p:exclamations-basic",
     "p:lavarse-las-manos",
     "p:me-te-nos-objects",
@@ -219,6 +222,7 @@
     "l:entrar",
     "l:error",
     "l:espera",
+    "l:estar",
     "l:estrella",
     "l:estudiante",
     "l:firma",
@@ -248,10 +252,11 @@
     "l:mesa",
     "l:miedo",
     "l:mija",
+    "l:mirar",
     "l:nombre",
     "l:noticias",
     "l:opinión",
-    "l:orgullo",
+    "l:orgulloso",
     "l:pantalla",
     "l:país",
     "l:pedir",
@@ -268,14 +273,12 @@
     "l:publicar",
     "l:querer",
     "l:qué",
-    "l:recuerdo",
     "l:reportaje",
     "l:responder",
     "l:reír",
     "l:saber",
     "l:salir",
     "l:semana",
-    "l:sentir",
     "l:ser",
     "l:tarde",
     "l:televisión",
@@ -287,7 +290,6 @@
     "l:vender",
     "l:ventana",
     "l:ver",
-    "l:vez",
     "l:visitar"
   ]
 }

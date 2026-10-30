@@ -12,7 +12,7 @@
     },
     {
       "es": "Gracias a que llovió, se salvó la cosecha.",
-      "en": "Thanks to the rain, the harvest was saved."
+      "en": "Thanks to the fact that it rained, the harvest was saved."
     },
     {
       "es": "Perdimos el vuelo por culpa del trancón.",
@@ -70,7 +70,7 @@
     {
       "es": "Gracias a que llovió, se salvó la cosecha.",
       "options": [
-        "Thanks to the rain, the harvest was saved.",
+        "Thanks to the fact that it rained, the harvest was saved.",
         "The harvest was lost because of the rain."
       ],
       "answer": 0
@@ -131,15 +131,19 @@
       "why": "*A + el* joins into *al*."
     },
     {
-      "prompt": "Thanks to the rain, the harvest was saved.",
+      "prompt": "Thanks to the fact that it rained, the harvest was saved. Use *que*.",
       "answer": "Gracias a que llovió, se salvó la cosecha.",
-      "accept": [],
+      "accept": [
+        "Gracias a que llovió, la cosecha se salvó."
+      ],
       "why": "A whole clause after *gracias a* needs *que*."
     },
     {
       "prompt": "Everything went wrong because of me.",
       "answer": "Todo salió mal por culpa mía.",
-      "accept": [],
+      "accept": [
+        "Todo salió mal por mi culpa."
+      ],
       "why": "With a person, *por culpa mía* is the natural form."
     },
     {

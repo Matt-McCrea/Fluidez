@@ -12,7 +12,7 @@
       "intent": "Say you found out this morning, when Mariana called you.",
       "accept": [
         "Me enteré esta mañana, cuando Mariana me llamó.",
-        "Esta mañana. Mariana me llamó y me enteré.",
+        "Me enteré esta mañana por Mariana.",
         "Me enteré hoy por la mañana, porque Mariana me llamó."
       ],
       "require": [
@@ -40,7 +40,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bfueron\\s+demolidas\\b",
+          "pattern": "\\bfueron\\s+(demolidas|destruidas|tumbadas)\\b",
           "flags": "i",
           "label": "were demolished: fueron demolidas"
         }
@@ -50,8 +50,8 @@
     },
     {
       "id": "t3",
-      "npc": "El empleado de la alcaldía fue suspendido ayer. ¿Por qué lo suspendieron?",
-      "npcEn": "The city hall employee was suspended yesterday. Why was he suspended?",
+      "npc": "El jefe de permisos de la alcaldía fue suspendido ayer. ¿Por qué lo suspendieron?",
+      "npcEn": "The head of permits at the mayor's office was suspended yesterday. Why was he suspended?",
       "intent": "Say he was suspended because of the permits he signed (give the cause with debido a, a causa de, ya que or puesto que).",
       "accept": [
         "Fue suspendido debido a los permisos que firmó.",
@@ -65,7 +65,9 @@
             "debido a",
             "a causa de",
             "ya que",
-            "puesto que"
+            "puesto que",
+            "dado que",
+            "por culpa de"
           ],
           "label": "give the cause: debido a, a causa de, ya que, puesto que"
         }
@@ -75,13 +77,13 @@
     },
     {
       "id": "t4",
-      "npc": "Altamira dice que el artículo es pura ficción. ¿Qué opina usted?",
-      "npcEn": "Altamira says the article is pure fiction. What do you think?",
+      "npc": "Altamira dice que el artículo es ficción. ¿Qué opina usted?",
+      "npcEn": "Altamira says the article is fiction. What do you think?",
       "intent": "Say that, despite what Altamira says, the documents are real.",
       "accept": [
         "A pesar de lo que dice Altamira, los documentos son reales.",
         "Altamira dice eso; sin embargo, los documentos son reales.",
-        "Los documentos son reales. Aun así, ellos dicen que es ficción."
+        "Los documentos son reales. Aun así, Altamira dice que es ficción."
       ],
       "require": [
         {
@@ -118,7 +120,6 @@
           "label": "use usted with a stranger"
         }
       ],
-      "focus": "g:passive-ser",
       "next": null
     }
   ],
@@ -171,7 +172,6 @@
     "l:documento",
     "l:edificio",
     "l:embargo",
-    "l:empleado",
     "l:enterarse",
     "l:exactamente",
     "l:favor",
@@ -181,6 +181,7 @@
     "l:invitación",
     "l:invitar",
     "l:ir",
+    "l:jefe",
     "l:llamar",
     "l:mañana",
     "l:noche",
@@ -189,7 +190,6 @@
     "l:pasar",
     "l:permiso",
     "l:pesar",
-    "l:puro",
     "l:qué",
     "l:real",
     "l:sentarse",

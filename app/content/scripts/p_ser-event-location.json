@@ -31,14 +31,14 @@
       "en": "The café is in La Candelaria."
     }
   ],
-  "rule": "In English, \"is\" does both jobs: \"the party is at my house\", \"the house is in Bogotá\". Spanish splits them.\n\nFor a thing or a place, use *estar*: *El café está en La Candelaria*.\n\nFor an event, something that happens, use *ser*: *La fiesta es en mi casa*, *El concierto fue en el parque*. The words usually mean *party*, *meeting*, *concert*, *wedding*, *class*, *accident*, *interview*.\n\nTo ask, say *¿Dónde es la fiesta?*, not *¿Dónde está la fiesta?*",
+  "rule": "In English, \"is\" does both jobs: \"the party is at my house\", \"the house is in Bogotá\". Spanish splits them.\n\nFor a thing or a place, use *estar*: *El café está en La Candelaria*.\n\nFor an event, something that happens, use *ser*: *La fiesta es en mi casa*, *El concierto fue en el parque*. That covers words like *fiesta*, *reunión*, *concierto*, *boda*, *clase*, *accidente* and *entrevista*.\n\nTo ask, say *¿Dónde es la fiesta?*, not *¿Dónde está la fiesta?*",
   "smallPrint": "Teachers call this the use of *ser* for the location of events.",
   "readAndPick": [
     {
       "es": "La reunión es en la sala 3.",
       "options": [
         "The meeting is in room 3.",
-        "The room 3 is a meeting."
+        "The meeting room is number 3."
       ],
       "answer": 0
     },

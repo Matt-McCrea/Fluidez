@@ -1,7 +1,7 @@
 {
   "node": "p:inevitable",
   "hook": {
-    "line": "Some news is not a surprise to anyone. Hernando has seen this happen to the block for years, and his favourite word for it is *inevitable*.",
+    "line": "Some news is a surprise to nobody. Hernando has watched the block change for years, and he always says the same thing: sooner or later, it all comes out.",
     "es": "Tarde o temprano se va a enterar.",
     "en": "Sooner or later he's going to find out."
   },
@@ -31,7 +31,7 @@
       "en": "Sooner or later everyone is going to know the truth."
     }
   ],
-  "rule": "For something that could not have been avoided, say *era inevitable* (it was) or *es inevitable* (it is). It never changes for the thing it describes when used alone.\n\nTo say what is inevitable, add *que* and the subjunctive: *Es inevitable que haya retrasos*. You met this with *es importante que*: the same family of opinion phrases.\n\nTwo more ways to say it. *Inevitablemente* works like an adverb: *Inevitablemente, los precios van a subir*. *Tarde o temprano* says it will happen in the end, whenever.",
+  "rule": "For something that could not have been avoided, say *era inevitable* (it was) or *es inevitable* (it is). *Inevitable* is the same for *el* and *la* words; only the plural adds *-s*: *cambios inevitables*.\n\nTo say what is inevitable, add *que* and the subjunctive: *Es inevitable que haya retrasos*. You met this with *es importante que*: the same family of opinion phrases.\n\nTwo more ways to say it. *Inevitablemente* works like an adverb: *Inevitablemente, los precios van a subir*. *Tarde o temprano* says it will happen in the end, whenever.",
   "smallPrint": "Teachers call these impersonal expressions. After them, a *que* clause takes the subjunctive.",
   "readAndPick": [
     {
@@ -162,9 +162,9 @@
       "why": "For \"inevitably\" you need the adverb ending in *-mente*."
     },
     {
-      "wrong": "Es inevitable de enterarse.",
-      "right": "Tarde o temprano se va a enterar.",
-      "why": "*Inevitable* doesn't connect to a verb with *de*. Use *tarde o temprano* or *que* plus the subjunctive."
+      "wrong": "Es inevitable para los precios subir.",
+      "right": "Es inevitable que los precios suban.",
+      "why": "English says *for prices to go up*; Spanish says *que* plus the subjunctive."
     }
   ],
   "personal": "Think of something small and boring that is inevitable in your life. Say it with *tarde o temprano* or *es inevitable que*."

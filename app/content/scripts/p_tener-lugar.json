@@ -31,8 +31,8 @@
       "en": "The concert was held in the park."
     }
   ],
-  "rule": "To say an event happened somewhere or at some time, use *tener lugar*: *tuvo lugar*, *tendrá lugar*. Only the verb changes, and it matches the event: *la protesta tuvo lugar*, *las protestas tuvieron lugar*. *Lugar* stays as it is.\n\nTwo more options for planned events: *se realizó* (was carried out) and *se celebró* (was held). They also agree with the event: *se celebraron las elecciones*.\n\nDon't use *hay* for this. *Hay* introduces something new, as in *hay una reunión*. For a known, scheduled event, say when and where it took place.",
-  "smallPrint": "Teachers call *se realizó* and *se celebró* the passive with *se*. *Tener lugar* is a fixed expression that works with one event at a time.",
+  "rule": "To say an event happened somewhere or at some time, use *tener lugar*: *tuvo lugar*, *tendrá lugar*. Only the verb changes, and it matches the event: *la protesta tuvo lugar*, *las protestas tuvieron lugar*. *Lugar* stays as it is.\n\nTwo more options for planned events: *se realizó* (was carried out) and *se celebró* (was held). They also agree with the event: *se celebraron las elecciones*.\n\nIn conversation people often just say *la reunión fue el martes*. *Tener lugar* is the version you read in the news and write in reports.",
+  "smallPrint": "Teachers call *se realizó* and *se celebró* the passive with *se*. *Tener lugar* is a fixed expression: only *tener* changes.",
   "readAndPick": [
     {
       "es": "La reunión tuvo lugar el martes.",
@@ -120,7 +120,10 @@
     {
       "prompt": "The meeting took place on Tuesday.",
       "answer": "La reunión tuvo lugar el martes.",
-      "accept": [],
+      "accept": [
+        "La reunión se realizó el martes.",
+        "La reunión se celebró el martes."
+      ],
       "why": "Event + *tuvo lugar* + when."
     },
     {
@@ -133,7 +136,8 @@
       "prompt": "The elections were held on Sunday.",
       "answer": "Las elecciones se celebraron el domingo.",
       "accept": [
-        "Las elecciones tuvieron lugar el domingo."
+        "Las elecciones tuvieron lugar el domingo.",
+        "Las elecciones se realizaron el domingo."
       ],
       "why": "*Se celebraron* is plural to match *las elecciones*."
     },
@@ -152,9 +156,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Hay la reunión el martes.",
+      "wrong": "La reunión tuvo un lugar el martes.",
       "right": "La reunión tuvo lugar el martes.",
-      "why": "Almost. *Hay* introduces something new; for a known event, say that it *tuvo lugar*."
+      "why": "Almost. No *un* in this expression: *lugar* stays bare."
     },
     {
       "wrong": "La reunión tomó lugar el martes.",

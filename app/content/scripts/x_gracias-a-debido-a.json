@@ -19,12 +19,12 @@
       "en": "Due to the rain, the flight is delayed."
     },
     {
-      "es": "Gracias a ti llegamos a tiempo.",
-      "en": "Thanks to you, we got there on time. (to a friend)"
+      "es": "Gracias a ti conseguí el trabajo.",
+      "en": "Thanks to you, I got the job. (to a friend)"
     },
     {
-      "es": "Por culpa del trancón, llegué tarde.",
-      "en": "Because of the traffic jam, I was late."
+      "es": "Por culpa del ruido, no dormí nada.",
+      "en": "Because of the noise, I didn't sleep at all."
     },
     {
       "es": "Debido a un incendio, la calle está cerrada.",
@@ -66,20 +66,20 @@
       "answer": 1
     },
     {
-      "es": "Gracias a ti llegamos a tiempo.",
+      "es": "Gracias a ti conseguí el trabajo.",
       "options": [
-        "It's your fault we arrived on time.",
-        "We arrived late because of you.",
-        "Thanks to you, we arrived on time."
+        "It's your fault I got the job.",
+        "I didn't get the job because of you.",
+        "Thanks to you, I got the job."
       ],
       "answer": 2
     },
     {
-      "es": "Por culpa del trancón, llegué tarde.",
+      "es": "Por culpa del ruido, no dormí nada.",
       "options": [
-        "Because of the traffic jam, I was late.",
-        "Thanks to the traffic jam, I was early.",
-        "Despite the traffic jam, I was on time."
+        "Because of the noise, I didn't sleep at all.",
+        "Thanks to the noise, I slept well.",
+        "Despite the noise, I slept all night."
       ],
       "answer": 0
     },
@@ -113,7 +113,7 @@
     {
       "es": "Debido a que hay una inundación, cerraron la escuela.",
       "options": [
-        "Due to the flood, they closed the school.",
+        "Because there's a flood, they closed the school.",
         "Thanks to a flood, the school is open.",
         "Because they closed the school, there is a flood."
       ],
@@ -128,10 +128,10 @@
       "why": "A full café is good news, so you thank Vale: *gracias a*."
     },
     {
-      "prompt": "Choose *gracias a* or *por culpa de*, and type the whole sentence: *___ trancón, llegué tarde.* (Because of the traffic jam, I was late.)",
-      "answer": "Por culpa del trancón, llegué tarde.",
+      "prompt": "Choose *gracias a* or *por culpa de*, and type the whole sentence: *___ ruido, no dormí nada.* (Because of the noise, I didn't sleep at all.)",
+      "answer": "Por culpa del ruido, no dormí nada.",
       "accept": [],
-      "why": "Being late is bad, so the traffic gets the blame, and *de* + *el* becomes *del*."
+      "why": "A bad night is bad news, so the noise gets the blame, and *de* + *el* becomes *del*."
     },
     {
       "prompt": "Say as in the news, neutrally: Due to a fire, the street is closed.",
@@ -142,10 +142,11 @@
       "why": "Just stating a cause, without thanks or blame: *debido a*."
     },
     {
-      "prompt": "Say to a friend: Thanks to you, we got there on time.",
-      "answer": "Gracias a ti llegamos a tiempo.",
+      "prompt": "Say to a friend: Thanks to you, I got the job.",
+      "answer": "Gracias a ti conseguí el trabajo.",
       "accept": [
-        "Gracias a ti, llegamos a tiempo."
+        "Gracias a ti, conseguí el trabajo.",
+        "Conseguí el trabajo gracias a ti."
       ],
       "why": "You are thanking someone: *gracias a*."
     },
@@ -189,8 +190,8 @@
       "why": "The phrase is *debido a*, with *a*."
     },
     {
-      "wrong": "Por culpa de el trancón, llegué tarde.",
-      "right": "Por culpa del trancón, llegué tarde.",
+      "wrong": "Por culpa de el ruido, no dormí nada.",
+      "right": "Por culpa del ruido, no dormí nada.",
       "why": "*De* and *el* always join into *del*."
     }
   ],

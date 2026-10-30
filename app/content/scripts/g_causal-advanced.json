@@ -1,48 +1,212 @@
 {
   "node": "g:causal-advanced",
   "hook": {
-    "line": "You already know *porque* for giving a reason. But the lines in a news story and a formal letter sound grander: reasons that come first, and reasons that are whole actions. Mariana's report on the café needs exactly that.",
+    "line": "*Porque* gets you far, but it can't open a sentence the way *since* does in English. Next time a friend drops by the café at the busiest moment, this is the line you want.",
     "es": "Ya que estás aquí, ayúdame con las mesas.",
     "en": "Since you're here, help me with the tables. (to a friend)"
   },
   "examples": [
-    { "es": "Ya que estás aquí, ayúdame con las mesas.", "en": "Since you're here, help me with the tables. (to a friend)" },
-    { "es": "Ya que llegó temprano, Vale empezó a cocinar.", "en": "Since she arrived early, Vale started cooking." },
-    { "es": "Puesto que nadie vino, cerramos el café.", "en": "Seeing that nobody came, we closed the café." },
-    { "es": "Puesto que la calle estaba cerrada, no pudimos pasar.", "en": "As the street was closed, we couldn't get through." },
-    { "es": "Lo despidieron por llegar tarde.", "en": "He was fired for arriving late." },
-    { "es": "La alcaldía cerró el café por no tener permiso.", "en": "The council closed the café for not having a permit." },
-    { "es": "Hernando llegó tarde por el tráfico.", "en": "Hernando arrived late because of the traffic." },
-    { "es": "¿Por qué cerraron la calle?", "en": "Why did they close the street?" }
+    {
+      "es": "Ya que estás aquí, ayúdame con las mesas.",
+      "en": "Since you're here, help me with the tables. (to a friend)"
+    },
+    {
+      "es": "Ya que llegó temprano, Vale empezó a cocinar.",
+      "en": "Since she arrived early, Vale started cooking."
+    },
+    {
+      "es": "Puesto que nadie vino, cerramos el café.",
+      "en": "Seeing that nobody came, we closed the café."
+    },
+    {
+      "es": "Puesto que la calle estaba cerrada, no pudimos pasar.",
+      "en": "As the street was closed, we couldn't get through."
+    },
+    {
+      "es": "Lo despidieron por llegar tarde.",
+      "en": "He was fired for arriving late."
+    },
+    {
+      "es": "La alcaldía cerró el café por no tener permiso.",
+      "en": "The council closed the café for not having a permit."
+    },
+    {
+      "es": "Hernando llegó tarde por el tráfico.",
+      "en": "Hernando arrived late because of the traffic."
+    },
+    {
+      "es": "Ya que tienes carro, ¿me llevas al centro?",
+      "en": "Since you have a car, will you take me downtown? (to a friend)"
+    }
   ],
-  "rule": "*Porque* is the everyday way to say why. When you write or report, you get more choices.\n\n1. *Ya que* + a full sentence: a reason you both know, put first. *Ya que llegó temprano, Vale empezó a cocinar.*\n2. *Puesto que* + a full sentence: the same, a little more formal.\n3. *Por* + a plain verb ending in *-r*: the reason is an action. *Lo despidieron por llegar tarde.* English says *for arriving*, and so does Spanish: no *porque*, no changing the verb.\n\nWith a noun, *por* works too: *por el tráfico*. For a formal cause, writers also use *debido a* and *a causa de* (*debido a la lluvia*). You will meet those a lot in news.",
+  "rule": "*Porque* is the everyday way to say why. When you write or report, you get more choices.\n\n1. *Ya que* + a full sentence: a reason you both know, put first. *Ya que llegó temprano, Vale empezó a cocinar.*\n2. *Puesto que* or *dado que* + a full sentence: the same, a little more formal.\n3. *Por* + a plain verb ending in *-r*: the reason is an action. *Lo despidieron por llegar tarde.* English says *for arriving*, and so does Spanish: no *porque*, no changing the verb.\n\nWith a noun, *por* works too: *por el tráfico*. For a formal cause, writers also use *debido a* and *a causa de* (*debido a la lluvia*). You will meet those a lot in news.",
   "smallPrint": "Teachers call these causal connectors: *ya que* and *puesto que* introduce a clause, *por* plus the infinitive gives the cause as an action.",
   "readAndPick": [
-    { "es": "Ya que llegó temprano, Vale empezó a cocinar.", "options": ["Vale started cooking because she arrived early.", "Vale arrived early to start cooking.", "Vale arrived early and then stopped cooking."], "answer": 0 },
-    { "es": "Lo despidieron por llegar tarde.", "options": ["He was fired in order to arrive late.", "He was fired for arriving late.", "They fired him before he arrived."], "answer": 1 },
-    { "es": "Puesto que nadie vino, cerramos el café.", "options": ["Nobody came because we closed the café.", "We closed the café because nobody came.", "We closed the café so that nobody came."], "answer": 1 },
-    { "es": "Hernando llegó tarde por el tráfico.", "options": ["Hernando arrived late because of the traffic.", "Hernando arrived late to see the traffic.", "Hernando arrived late, and the traffic was fine."], "answer": 0 },
-    { "es": "Ya que estás aquí, ayúdame con las mesas.", "options": ["Since you're here, help me with the tables.", "If you come here, help me with the tables.", "You were here to help with the tables."], "answer": 0 },
-    { "es": "La alcaldía cerró el café por no tener permiso.", "options": ["The council closed the café so it could get a permit.", "The council closed the café for not having a permit.", "The café closed the council's permit."], "answer": 1 },
-    { "es": "Puesto que la calle estaba cerrada, no pudimos pasar.", "options": ["We couldn't get through since the street was closed.", "We closed the street so we couldn't get through.", "We got through even though the street was closed."], "answer": 0 },
-    { "es": "Tomás no durmió por pensar en la carta.", "options": ["Tomás didn't sleep because he kept thinking about the letter.", "Tomás didn't sleep in order to think about the letter.", "Tomás slept after thinking about the letter."], "answer": 0 },
-    { "es": "¿Por qué cerraron la calle?", "options": ["Why did they close the street?", "For whom did they close the street?", "Did they close the street for you?"], "answer": 0 }
+    {
+      "es": "Ya que llegó temprano, Vale empezó a cocinar.",
+      "options": [
+        "Vale started cooking because she arrived early.",
+        "Vale arrived early to start cooking.",
+        "Vale arrived early and then stopped cooking."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo despidieron por llegar tarde.",
+      "options": [
+        "He was fired in order to arrive late.",
+        "He was fired for arriving late.",
+        "They fired him before he arrived."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Puesto que nadie vino, cerramos el café.",
+      "options": [
+        "Nobody came because we closed the café.",
+        "We closed the café because nobody came.",
+        "We closed the café so that nobody came."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando llegó tarde por el tráfico.",
+      "options": [
+        "Hernando arrived late because of the traffic.",
+        "Hernando arrived late to see the traffic.",
+        "Hernando arrived late, and the traffic was fine."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ya que estás aquí, ayúdame con las mesas.",
+      "options": [
+        "Since you're here, help me with the tables.",
+        "If you come here, help me with the tables.",
+        "You were here to help with the tables."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La alcaldía cerró el café por no tener permiso.",
+      "options": [
+        "The council closed the café so it could get a permit.",
+        "The council closed the café for not having a permit.",
+        "The café closed the council's permit."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Puesto que la calle estaba cerrada, no pudimos pasar.",
+      "options": [
+        "We couldn't get through since the street was closed.",
+        "We closed the street so we couldn't get through.",
+        "We got through even though the street was closed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás no durmió por pensar en la carta.",
+      "options": [
+        "Tomás didn't sleep because he kept thinking about the letter.",
+        "Tomás didn't sleep in order to think about the letter.",
+        "Tomás slept after thinking about the letter."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ya que tienes carro, ¿me llevas al centro?",
+      "options": [
+        "Since you have a car, will you take me downtown?",
+        "If you buy a car, will you take me downtown?",
+        "Now that you sold your car, shall I take you downtown?"
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *ya que* or *por*: Cerramos el café ___ nadie vino.", "answer": "Cerramos el café ya que nadie vino.", "accept": ["Cerramos el café puesto que nadie vino."], "why": "A whole sentence follows (*nadie vino*), so you need *ya que* or *puesto que*." },
-    { "prompt": "Choose *llegar* or *llegando*: Lo despidieron por ___ tarde.", "answer": "Lo despidieron por llegar tarde.", "accept": [], "why": "After *por*, the plain *-r* verb: *llegar*." },
-    { "prompt": "Say: Since you're here, help me. (to a friend)", "answer": "Ya que estás aquí, ayúdame.", "accept": ["Ya que estás aquí, ayúdame con esto."], "why": "*Ya que* + a sentence, then the command." },
-    { "prompt": "Say: We closed the café because nobody came. Start with *puesto que*.", "answer": "Puesto que nadie vino, cerramos el café.", "accept": ["Puesto que nadie vino cerramos el café."], "why": "The reason goes first, then what happened." },
-    { "prompt": "Say: He was fired for arriving late.", "answer": "Lo despidieron por llegar tarde.", "accept": [], "why": "*Por* + *llegar* gives the cause as an action." },
-    { "prompt": "Say: Hernando arrived late because of the traffic.", "answer": "Hernando llegó tarde por el tráfico.", "accept": [], "why": "With a noun, *por* alone is enough." },
-    { "prompt": "Rewrite with *por* + infinitive: Cerraron el café porque no tenía permiso.", "answer": "Cerraron el café por no tener permiso.", "accept": [], "why": "Drop *porque*, and turn the verb into its *-r* form." },
-    { "prompt": "Rewrite with *ya que*: Vale empezó a cocinar porque llegó temprano.", "answer": "Ya que llegó temprano, Vale empezó a cocinar.", "accept": ["Vale empezó a cocinar ya que llegó temprano."], "why": "*Ya que* can open the sentence or follow the main part." }
+    {
+      "prompt": "Choose *ya que* or *por*: Cerramos el café ___ nadie vino.",
+      "answer": "Cerramos el café ya que nadie vino.",
+      "accept": [
+        "Cerramos el café puesto que nadie vino."
+      ],
+      "why": "A whole sentence follows (*nadie vino*), so you need *ya que* or *puesto que*."
+    },
+    {
+      "prompt": "Choose *llegar* or *llegando*: Lo despidieron por ___ tarde.",
+      "answer": "Lo despidieron por llegar tarde.",
+      "accept": [],
+      "why": "After *por*, the plain *-r* verb: *llegar*."
+    },
+    {
+      "prompt": "Say: Since you're here, help me. (to a friend)",
+      "answer": "Ya que estás aquí, ayúdame.",
+      "accept": [
+        "Ya que estás aquí, ayúdame con esto.",
+        "Puesto que estás aquí, ayúdame.",
+        "Como estás aquí, ayúdame."
+      ],
+      "why": "*Ya que* + a sentence, then the command."
+    },
+    {
+      "prompt": "Say: We closed the café because nobody came. Start with *puesto que*.",
+      "answer": "Puesto que nadie vino, cerramos el café.",
+      "accept": [
+        "Puesto que nadie vino cerramos el café."
+      ],
+      "why": "The reason goes first, then what happened."
+    },
+    {
+      "prompt": "Say: He was fired for arriving late.",
+      "answer": "Lo despidieron por llegar tarde.",
+      "accept": [
+        "Lo echaron por llegar tarde."
+      ],
+      "why": "*Por* + *llegar* gives the cause as an action."
+    },
+    {
+      "prompt": "Say: Hernando arrived late because of the traffic.",
+      "answer": "Hernando llegó tarde por el tráfico.",
+      "accept": [],
+      "why": "With a noun, *por* alone is enough."
+    },
+    {
+      "prompt": "Rewrite with *por* + infinitive: Cerraron el café porque no tenía permiso.",
+      "answer": "Cerraron el café por no tener permiso.",
+      "accept": [],
+      "why": "Drop *porque*, and turn the verb into its *-r* form."
+    },
+    {
+      "prompt": "Rewrite with *ya que*: Vale empezó a cocinar porque llegó temprano.",
+      "answer": "Ya que llegó temprano, Vale empezó a cocinar.",
+      "accept": [
+        "Vale empezó a cocinar ya que llegó temprano."
+      ],
+      "why": "*Ya que* can open the sentence or follow the main part."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Lo despidieron por que llegó tarde.", "right": "Lo despidieron por llegar tarde.", "why": "Almost. Before a verb, *por* takes the plain *-r* form; *porque* is the one that takes a full sentence." },
-    { "wrong": "Lo despidieron por llegando tarde.", "right": "Lo despidieron por llegar tarde.", "why": "Unlike English *for arriving*, Spanish uses the infinitive after *por*, never the *-ando* form." },
-    { "wrong": "Puesto que nadie vino, cerramos porque el café.", "right": "Puesto que nadie vino, cerramos el café.", "why": "*Puesto que* already gives the reason, so you don't add a second *porque*." },
-    { "wrong": "Vine por ayudar.", "right": "Vine para ayudar.", "why": "*Por* looks back at a cause; for a goal you aim at, *para* comes next." }
+    {
+      "wrong": "Lo despidieron por que llegó tarde.",
+      "right": "Lo despidieron por llegar tarde.",
+      "why": "Almost. *Por* takes the plain *-r* verb: *por llegar*. With a full sentence you need *porque*, written as one word."
+    },
+    {
+      "wrong": "Lo despidieron por llegando tarde.",
+      "right": "Lo despidieron por llegar tarde.",
+      "why": "Unlike English *for arriving*, Spanish uses the infinitive after *por*, never the *-ando* form."
+    },
+    {
+      "wrong": "Cerramos el café por nadie vino.",
+      "right": "Cerramos el café porque nadie vino.",
+      "why": "*Por* takes a noun or an *-r* verb. With a full sentence, use *porque*, *ya que* or *puesto que*."
+    },
+    {
+      "wrong": "Vine por ayudar.",
+      "right": "Vine para ayudar.",
+      "why": "*Por* looks back at a cause; for a goal you aim at, *para* comes next."
+    }
   ],
   "personal": "Say why you are learning Spanish or why you were late once, using *por* with a verb: *Estudio español por...* or *Llegué tarde por...*."
 }

@@ -1,9 +1,9 @@
 {
   "node": "x:es-en-esta-en",
   "hook": {
-    "line": "Tomás is planning a party at the café, and everyone asks the same question: where? But \"where\" has two jobs. One is where something happens, the other is where something sits, and Spanish picks a different verb for each.",
-    "es": "La fiesta es en el salón.",
-    "en": "The party is in the hall."
+    "line": "Doña Gloria is organising a protest, and everyone asks her the same question: where? But *where* has two jobs. One is where something happens, the other is where something sits, and Spanish picks a different verb for each.",
+    "es": "La protesta es en la plaza.",
+    "en": "The protest is in the square."
   },
   "examples": [
     {
@@ -164,9 +164,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "La fiesta está en mi casa.",
-      "right": "La fiesta es en mi casa.",
-      "why": "Almost. A party is an event, and events say where they happen with *ser*."
+      "wrong": "El concierto está en el parque.",
+      "right": "El concierto es en el parque.",
+      "why": "Almost. A concert is an event, and events say where they happen with *ser*."
     },
     {
       "wrong": "El café es en la calle diez.",

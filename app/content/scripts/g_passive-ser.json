@@ -1,47 +1,202 @@
 {
   "node": "g:passive-ser",
   "hook": {
-    "line": "A reporter from Mariana's paper is asking about the block, and the news never says who did it: it says what happened to the building. Today you learn to read and say that news voice.",
+    "line": "Mariana's article comes out this week, and newspapers love one voice: not who did it, but what happened to the building. Today you learn to read and say that news voice.",
     "es": "El edificio fue vendido ayer.",
     "en": "The building was sold yesterday."
   },
   "examples": [
-    { "es": "El edificio fue construido en 1950.", "en": "The building was built in 1950." },
-    { "es": "La noticia fue publicada esta mañana.", "en": "The news was published this morning." },
-    { "es": "Las cartas fueron escritas por Rosa.", "en": "The letters were written by Rosa." },
-    { "es": "Mariana fue invitada a la reunión.", "en": "Mariana was invited to the meeting. (a woman)" },
-    { "es": "¿Fue vendido el edificio?", "en": "Was the building sold?" },
-    { "es": "La puerta no fue cerrada.", "en": "The door wasn't closed." },
-    { "es": "Esta calle será cerrada mañana.", "en": "This street will be closed tomorrow." }
+    {
+      "es": "El edificio fue construido en 1950.",
+      "en": "The building was built in 1950."
+    },
+    {
+      "es": "La noticia fue publicada esta mañana.",
+      "en": "The news was published this morning."
+    },
+    {
+      "es": "Las cartas fueron escritas por Rosa.",
+      "en": "The letters were written by Rosa."
+    },
+    {
+      "es": "Mariana fue invitada a la reunión.",
+      "en": "Mariana was invited to the meeting."
+    },
+    {
+      "es": "¿Fue vendido el edificio?",
+      "en": "Was the building sold?"
+    },
+    {
+      "es": "La puerta no fue cerrada.",
+      "en": "The door wasn't closed."
+    },
+    {
+      "es": "Esta calle será cerrada mañana.",
+      "en": "This street will be closed tomorrow."
+    }
   ],
   "rule": "English says *was built*, *was sold*, *will be closed*. Spanish builds it the same way: a form of *ser* plus the *-ado* / *-ido* word.\n\n*El edificio fue construido.*\n*Las cartas fueron escritas.*\n\nTwo things to watch:\n1. The *-do* word agrees with the thing that got the action: *invitado, invitada, invitados, invitadas*.\n2. If you want to say who did it, use *por*: *escritas por Rosa*.\n\n*Fue* and *fueron* are the past, *será* and *serán* the future. This is the voice of newspapers and announcements. In everyday talk people usually say *Vendieron el edificio* or *Se vendió el edificio*, so expect to read this more than to say it.",
   "smallPrint": "Teachers call this the passive voice: *ser* plus the participle, with the doer introduced by *por*.",
   "readAndPick": [
-    { "es": "El edificio fue vendido.", "options": ["The building was sold.", "The building is for sale.", "The building sold it."], "answer": 0 },
-    { "es": "Las cartas fueron escritas por Rosa.", "options": ["Rosa wrote a letter.", "The letters were written by Rosa.", "Rosa was written to."], "answer": 1 },
-    { "es": "Mariana fue invitada.", "options": ["Mariana was invited.", "Mariana will be invited.", "Mariana invited someone."], "answer": 0 },
-    { "es": "Los vecinos fueron informados.", "options": ["The neighbour was informed.", "The neighbours were informed.", "The neighbours informed us."], "answer": 1 },
-    { "es": "Esta calle será cerrada mañana.", "options": ["This street was closed yesterday.", "This street is closed.", "This street will be closed tomorrow."], "answer": 2 },
-    { "es": "¿Fue vendido el edificio?", "options": ["Is the building for sale?", "Was the building sold?", "Will the building be sold?"], "answer": 1 },
-    { "es": "La noticia fue publicada por Mariana.", "options": ["Mariana published the news.", "The news was published by Mariana.", "Mariana was published."], "answer": 1 },
-    { "es": "Los platos serán lavados hoy.", "options": ["The dishes were washed today.", "The dishes will be washed today.", "The dishes are washed."], "answer": 1 },
-    { "es": "La puerta no fue cerrada.", "options": ["The door wasn't closed.", "The door isn't closed.", "The door won't be closed."], "answer": 0 }
+    {
+      "es": "El edificio fue vendido.",
+      "options": [
+        "The building was sold.",
+        "The building is for sale.",
+        "The building sold it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las cartas fueron escritas por Rosa.",
+      "options": [
+        "Rosa wrote a letter.",
+        "The letters were written by Rosa.",
+        "Rosa was written to."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana fue invitada.",
+      "options": [
+        "Mariana was invited.",
+        "Mariana will be invited.",
+        "Mariana invited someone."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los vecinos fueron informados.",
+      "options": [
+        "The neighbour was informed.",
+        "The neighbours were informed.",
+        "The neighbours informed us."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esta calle será cerrada mañana.",
+      "options": [
+        "This street was closed yesterday.",
+        "This street is closed.",
+        "This street will be closed tomorrow."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Fue vendido el edificio?",
+      "options": [
+        "Is the building for sale?",
+        "Was the building sold?",
+        "Will the building be sold?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La noticia fue publicada por Mariana.",
+      "options": [
+        "Mariana published the news.",
+        "The news was published by Mariana.",
+        "Mariana was published."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los platos serán lavados hoy.",
+      "options": [
+        "The dishes were washed today.",
+        "The dishes will be washed today.",
+        "The dishes are washed."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La puerta no fue cerrada.",
+      "options": [
+        "The door wasn't closed.",
+        "The door isn't closed.",
+        "The door won't be closed."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *fue* or *fueron*: Las cartas ___ escritas por Rosa.", "answer": "Las cartas fueron escritas por Rosa.", "accept": [], "why": "*Las cartas* is more than one, so *fueron*." },
-    { "prompt": "Choose *invitado* or *invitada*: Mariana fue ___ a la reunión.", "answer": "Mariana fue invitada a la reunión.", "accept": [], "why": "Mariana is a woman, so the ending is *-ada*." },
-    { "prompt": "Say: The building was built in 1950.", "answer": "El edificio fue construido en 1950.", "accept": [], "why": "*Fue* plus *construido*, which agrees with *el edificio*." },
-    { "prompt": "Say: The news was published this morning.", "answer": "La noticia fue publicada esta mañana.", "accept": [], "why": "*Noticia* is a *la* word, so *publicada*." },
-    { "prompt": "Say: The letters were written by Rosa.", "answer": "Las cartas fueron escritas por Rosa.", "accept": ["Las cartas fueron escritas por mi abuela Rosa."], "why": "Plural *fueron*, plural *escritas*, and *por* for who did it." },
-    { "prompt": "Make it negative: El edificio fue vendido.", "answer": "El edificio no fue vendido.", "accept": [], "why": "*No* goes right before *fue*." },
-    { "prompt": "Make it a question: El edificio fue vendido.", "answer": "¿Fue vendido el edificio?", "accept": ["¿El edificio fue vendido?"], "why": "Questions can swap the order, with *¿…?* around them." },
-    { "prompt": "Make it about tomorrow: La calle fue cerrada.", "answer": "La calle será cerrada.", "accept": ["La calle será cerrada mañana."], "why": "Future is *será*; the *-ada* ending stays." }
+    {
+      "prompt": "Choose *fue* or *fueron*: Las cartas ___ escritas por Rosa.",
+      "answer": "Las cartas fueron escritas por Rosa.",
+      "accept": [],
+      "why": "*Las cartas* is more than one, so *fueron*."
+    },
+    {
+      "prompt": "Choose *invitado* or *invitada*: Mariana fue ___ a la reunión.",
+      "answer": "Mariana fue invitada a la reunión.",
+      "accept": [],
+      "why": "Mariana is a woman, so the ending is *-ada*."
+    },
+    {
+      "prompt": "Say: The building was built in 1950.",
+      "answer": "El edificio fue construido en 1950.",
+      "accept": [],
+      "why": "*Fue* plus *construido*, which agrees with *el edificio*."
+    },
+    {
+      "prompt": "Say: The news was published this morning.",
+      "answer": "La noticia fue publicada esta mañana.",
+      "accept": [],
+      "why": "*Noticia* is a *la* word, so *publicada*."
+    },
+    {
+      "prompt": "Say: The letters were written by Rosa.",
+      "answer": "Las cartas fueron escritas por Rosa.",
+      "accept": [
+        "Las cartas fueron escritas por mi abuela Rosa."
+      ],
+      "why": "Plural *fueron*, plural *escritas*, and *por* for who did it."
+    },
+    {
+      "prompt": "Make it negative: El edificio fue vendido.",
+      "answer": "El edificio no fue vendido.",
+      "accept": [],
+      "why": "*No* goes right before *fue*."
+    },
+    {
+      "prompt": "Make it a question: El edificio fue vendido.",
+      "answer": "¿Fue vendido el edificio?",
+      "accept": [
+        "¿El edificio fue vendido?"
+      ],
+      "why": "Questions can swap the order, with *¿…?* around them."
+    },
+    {
+      "prompt": "Make it about tomorrow: La calle fue cerrada.",
+      "answer": "La calle será cerrada.",
+      "accept": [
+        "La calle será cerrada mañana."
+      ],
+      "why": "Future is *será*; the *-ada* ending stays."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Las cartas fue escritas por Rosa.", "right": "Las cartas fueron escritas por Rosa.", "why": "Almost. *Ser* follows the things that got the action, so more than one means *fueron*." },
-    { "wrong": "Mariana fue invitado.", "right": "Mariana fue invitada.", "why": "The ending matches the person invited, and Mariana is a woman." },
-    { "wrong": "El libro fue escrito de Mariana.", "right": "El libro fue escrito por Mariana.", "why": "The doer takes *por*, the way English uses *by*." },
-    { "wrong": "El edificio fue construyendo en 1950.", "right": "El edificio fue construido en 1950.", "why": "You need the *-ido* word, not the *-ando* one: it describes what happened to the building." }
+    {
+      "wrong": "Las cartas fue escritas por Rosa.",
+      "right": "Las cartas fueron escritas por Rosa.",
+      "why": "Almost. *Ser* follows the things that got the action, so more than one means *fueron*."
+    },
+    {
+      "wrong": "Mariana fue invitado.",
+      "right": "Mariana fue invitada.",
+      "why": "The ending matches the person invited, and Mariana is a woman."
+    },
+    {
+      "wrong": "El libro fue escrito de Mariana.",
+      "right": "El libro fue escrito por Mariana.",
+      "why": "The doer takes *por*, the way English uses *by*."
+    },
+    {
+      "wrong": "El edificio era construido en 1950.",
+      "right": "El edificio fue construido en 1950.",
+      "why": "A finished event on a date takes *fue*. *Era construido* sounds like it kept being built, again and again."
+    }
   ],
   "personal": "Think of something that happened in your town or your family this year. Say it in the news voice with *fue* or *fueron*, for example *La tienda fue cerrada*."
 }

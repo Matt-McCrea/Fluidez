@@ -3,12 +3,12 @@
   "unit": "u38",
   "title": "El tinto de don Hernando",
   "spare": false,
-  "brief": "You're Tomás. Don Hernando comes in with the newspaper. He's older than you, so use usted with him, though he says tú to you. Talk about how you found out, what you hadn't noticed, where tomorrow's march is and who deserves thanks.",
+  "brief": "You're Tomás. Don Hernando comes in with the newspaper. You two always use usted with each other. Talk about how you found out, what you hadn't noticed, where tomorrow's march is and who deserves thanks.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Buenos días, Tomás. Todo el barrio habla del artículo. ¿Te enteraste de que suspendieron al empleado de la alcaldía?",
-      "npcEn": "Good morning, Tomás. The whole neighbourhood is talking about the article. Did you find out they suspended the city hall employee?",
+      "npc": "Buenos días, Tomás. Todo el barrio habla del artículo. ¿Se enteró de que suspendieron al jefe de permisos?",
+      "npcEn": "Good morning, Tomás. The whole neighbourhood is talking about the article. Did you hear they suspended the head of permits?",
       "intent": "Say yes, you found out from Mariana this morning.",
       "accept": [
         "Sí, me enteré por Mariana esta mañana.",
@@ -51,8 +51,8 @@
     },
     {
       "id": "t3",
-      "npc": "Mañana hay una manifestación frente al Palacio. ¿Sabe dónde es?",
-      "npcEn": "Tomorrow there's a protest in front of the Palace. Do you know where it is?",
+      "npc": "Mañana hay una manifestación. ¿Usted sabe dónde es?",
+      "npcEn": "Tomorrow there's a protest. Do you know where it is?",
       "intent": "Say it is in the Plaza de Bolívar, at ten in the morning.",
       "accept": [
         "Es en la Plaza de Bolívar, a las diez de la mañana.",
@@ -119,7 +119,6 @@
           "label": "use usted with Don Hernando"
         }
       ],
-      "focus": "g:passive-ser",
       "next": null
     }
   ],
@@ -155,7 +154,6 @@
     "g:yo-irregular",
     "l:ahora",
     "l:ahí",
-    "l:alcaldía",
     "l:artículo",
     "l:barrio",
     "l:bueno",
@@ -170,22 +168,22 @@
     "l:darse",
     "l:día",
     "l:dónde",
-    "l:empleado",
     "l:enseguida",
     "l:enterarse",
     "l:estar",
     "l:favor",
-    "l:frente",
     "l:hablar",
     "l:historia",
     "l:hoy",
     "l:intentar",
     "l:invitar",
+    "l:jefe",
     "l:junto",
     "l:llevar",
     "l:manifestación",
     "l:mañana",
     "l:país",
+    "l:permiso",
     "l:publicar",
     "l:saber",
     "l:salir",

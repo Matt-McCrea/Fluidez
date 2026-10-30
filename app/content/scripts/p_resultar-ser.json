@@ -39,7 +39,7 @@
       "options": [
         "The news turned out to be false.",
         "The news turned out to be true.",
-        "The news was false in the end."
+        "The news will turn out to be false."
       ],
       "answer": 0
     },
@@ -55,7 +55,8 @@
       "es": "Resulta que nadie sabía nada.",
       "options": [
         "It turns out nobody knew anything.",
-        "It turned out nobody knew anything."
+        "Nobody knew what the result was.",
+        "Nobody knew the result was anything."
       ],
       "answer": 0
     },
@@ -159,9 +160,9 @@
       "why": "The verb needs to be plural too."
     },
     {
-      "wrong": "La noticia terminó ser falsa.",
+      "wrong": "La noticia resultó a ser falsa.",
       "right": "La noticia resultó ser falsa.",
-      "why": "*Terminar* does not work this way. For a surprise ending, use *resultar ser*."
+      "why": "English says *turned out to be*, but Spanish puts *ser* straight after *resultó*, with no *a*."
     }
   ],
   "personal": "Think of something that turned out differently from what you expected, a trip, a person, a plan. Say it with *resultó ser* or *resulta que*."

@@ -12,7 +12,7 @@
       "intent": "Tell her to say the café is staying open, despite everything.",
       "accept": [
         "Diles que el café sigue abierto a pesar de todo.",
-        "Dile que el café abre, a pesar de todo.",
+        "Diles que el café abre, a pesar de todo.",
         "Diles que seguimos abiertos, a pesar de todo."
       ],
       "require": [
@@ -33,16 +33,16 @@
       "id": "t2",
       "npc": "Uno pregunta si es verdad que las casas fueron demolidas aquí al lado.",
       "npcEn": "One asks whether it's true that the houses were demolished right next door.",
-      "intent": "Say no, they were demolished far from here.",
+      "intent": "Say no, they were demolished on another street.",
       "accept": [
-        "No, fueron demolidas lejos de aquí.",
-        "No, las casas fueron demolidas lejos de aquí.",
-        "No, fueron demolidas bastante lejos de aquí."
+        "No, fueron demolidas en otra calle.",
+        "No, las casas fueron demolidas en otra calle.",
+        "No, aquí al lado no. Fueron demolidas en otra calle."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bfueron\\s+demolidas\\b",
+          "pattern": "\\bfueron\\s+(demolidas|destruidas|tumbadas)\\b",
           "flags": "i",
           "label": "were demolished: fueron demolidas"
         },
@@ -81,7 +81,7 @@
     {
       "id": "t4",
       "npc": "Ah, y Altamira acaba de llamar. Dice que todo es ficción. ¡Ficción! Pero yo ya les contesté.",
-      "npcEn": "Oh, and Altamira just called. It says it's all fiction. Fiction! But I already answered them.",
+      "npcEn": "Oh, and Altamira just called. They say it's all fiction. Fiction! But I already answered them.",
       "intent": "Ask her what she told them.",
       "accept": [
         "¿Y qué les respondiste?",
@@ -98,8 +98,8 @@
     },
     {
       "id": "t5",
-      "npc": "Les respondí que, si esto es ficción,, mis croissants también. Bueno, bajo con una bandeja de pan para los periodistas.",
-      "npcEn": "I told them that, if this is fiction, so are my croissants. Anyway, I'm coming down with a tray of bread for the reporters.",
+      "npc": "Les respondí que, si esto es ficción, mis croissants también. Bueno, ya salgo con una bandeja de pan para los periodistas.",
+      "npcEn": "I told them that, if this is fiction, so are my croissants. Anyway, I'm coming out with a tray of bread for the reporters.",
       "intent": "Say good idea, thank her, and say you'll make the coffee.",
       "accept": [
         "Buena idea, gracias. Yo preparo el café.",
@@ -107,7 +107,6 @@
         "Me parece muy bien. Gracias, yo preparo el café."
       ],
       "require": [],
-      "focus": "g:passive-ser",
       "next": null
     }
   ],
@@ -117,6 +116,7 @@
     "c:gracias-de-nada",
     "c:hago-salgo-vengo",
     "c:hay",
+    "c:ya-voy",
     "g:acabar-de-ya-todavia",
     "g:causal-advanced",
     "g:commands-tu",
@@ -133,7 +133,6 @@
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:preterite-ser-ir-hacer",
-    "g:quantifiers",
     "g:questions",
     "g:ser-identity",
     "g:si-present",
@@ -152,6 +151,7 @@
     "l:buena",
     "l:bueno",
     "l:café",
+    "l:calle",
     "l:casa",
     "l:contestar",
     "l:cámara",
@@ -162,7 +162,6 @@
     "l:idea",
     "l:importante",
     "l:lado",
-    "l:lejos",
     "l:llamar",
     "l:mostrador",
     "l:pan",
@@ -178,19 +177,18 @@
     "l:qué",
     "l:responder",
     "l:saber",
+    "l:salir",
     "l:seguir",
     "l:ser",
     "l:verdad",
     "p:aqui-ahi-alla",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
-    "p:cerca-de",
     "p:container-de",
     "p:demonstratives-basic",
     "p:me-parece-bien-que",
     "p:otro-no-article",
     "p:para-inf",
-    "p:position-de",
     "p:possessives-basic",
     "p:saber-conocer"
   ]
