@@ -1,0 +1,247 @@
+{
+  "id": "sc-u28-e",
+  "unit": "u28",
+  "title": "The baker's side",
+  "spare": true,
+  "brief": "You're Tomás. Don Arturo, the baker who is in favour of the hotel, walks into your café to talk. He is older than you, so use usted. Stay polite while you disagree, and look for something you can do together.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas. Soy Arturo, de la panadería de la esquina. Anoche usted habló muy bonito, pero no estoy de acuerdo con usted.",
+      "npcEn": "Hello. I'm Arturo, from the bakery on the corner. Last night you spoke very nicely, but I don't agree with you.",
+      "intent": "Say you're glad he came, and ask why he's in favour of the hotel.",
+      "accept": [
+        "Buenas, señor Arturo. Me alegra que quiera hablar conmigo. ¿Por qué está a favor del hotel?",
+        "Mucho gusto, señor Arturo. Me alegra que venga a hablar. ¿Por qué usted está a favor del hotel?",
+        "Buenas tardes. Me alegra que usted esté aquí. ¿Está a favor del hotel? ¿Por qué?"
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "me alegra que",
+          "within": 3,
+          "label": "after me alegra que, the verb changes: venga"
+        },
+        {
+          "type": "question",
+          "label": "ask why"
+        }
+      ],
+      "focus": "g:subj-emotion-intro",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Porque mi panadería casi no vende. Qué bueno que lleguen más personas al barrio.",
+      "npcEn": "Because my bakery hardly sells. It's great that more people are coming to the neighbourhood.",
+      "intent": "Say you understand, but you don't think the tourists will buy his bread.",
+      "accept": [
+        "Entiendo, pero no creo que los turistas compren su pan.",
+        "Lo entiendo, señor Arturo, pero no creo que el hotel traiga clientes a su panadería.",
+        "Entiendo. No creo que ellos compren pan aquí, porque el hotel tendrá restaurante."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno (creo|pienso|me parece) que",
+          "flags": "i",
+          "label": "say you don't think so: no creo que..."
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "within": 4,
+          "label": "after no creo que, the verb changes: compren"
+        }
+      ],
+      "focus": "g:subj-opinion-negated",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Cómo? ¿Usted dice que mi pan no es bueno?",
+      "npcEn": "What? Are you saying my bread isn't good?",
+      "intent": "Say no, you don't think that: his bread is the best in the barrio.",
+      "accept": [
+        "No, para nada. Su pan es el mejor del barrio.",
+        "No, señor Arturo. No creo que su pan sea malo, al contrario.",
+        "No, para nada. Su pan es lo mejor de La Candelaria."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "start by saying no"
+        }
+      ],
+      "focus": "g:subj-opinion-negated",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ah, bueno. Pero lo viejo no dura, joven. Lo importante es que el barrio cambie, ¿no?",
+      "npcEn": "Ah, good. But old things don't last, young man. What matters is that the neighbourhood changes, right?",
+      "intent": "Say what matters is that the change is good for everyone.",
+      "accept": [
+        "Lo importante es que el cambio ayude a todos.",
+        "Sí, pero lo importante es que todos ganen, no solo Altamira.",
+        "Lo importante es que el barrio cambie, pero para bien."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo importante\\b",
+          "flags": "i",
+          "label": "start with lo importante"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "es que",
+          "within": 4,
+          "label": "after lo importante es que, the verb changes: sea"
+        }
+      ],
+      "focus": "g:lo-adjective",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Entonces tenemos algo en común. ¿Quiere que vayamos juntos a la alcaldía con otra idea?",
+      "npcEn": "Then we have something in common. Do you want us to go to the alcaldía together with another idea?",
+      "intent": "Say it sounds good to you, and offer him a coffee.",
+      "accept": [
+        "Me parece muy bien. Estoy a favor de ir juntos. ¿Le sirvo un tinto?",
+        "Claro, me parece muy bien. ¿Quiere un tinto?",
+        "Sí, señor Arturo. Estoy a favor de proponer algo juntos. Le invito un tinto."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "me parece muy bien",
+            "a favor",
+            "de acuerdo"
+          ],
+          "label": "say it sounds good: me parece muy bien"
+        }
+      ],
+      "focus": "p:me-parece-bien-que",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:estoy-de-acuerdo",
+    "c:hola-buenos-dias",
+    "c:mucho-gusto",
+    "c:no-cierto",
+    "c:para-nada",
+    "c:porque",
+    "c:que-bien",
+    "c:que-bueno-que",
+    "c:tienes",
+    "g:cause-result",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:indirect-objects",
+    "g:lo-adjective",
+    "g:parecer-quedar",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-emotion-intro",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:acuerdo",
+    "l:alcaldía",
+    "l:alegrar",
+    "l:anoche",
+    "l:aquí",
+    "l:ayudar",
+    "l:barrio",
+    "l:bien",
+    "l:bonito",
+    "l:buena",
+    "l:bueno",
+    "l:cambiar",
+    "l:cambio",
+    "l:claro",
+    "l:cliente",
+    "l:comprar",
+    "l:común",
+    "l:contrario",
+    "l:creer",
+    "l:cómo",
+    "l:decir",
+    "l:durar",
+    "l:entender",
+    "l:esquina",
+    "l:estar",
+    "l:favor",
+    "l:ganar",
+    "l:gusto",
+    "l:hablar",
+    "l:hotel",
+    "l:idea",
+    "l:importante",
+    "l:invitar",
+    "l:ir",
+    "l:joven",
+    "l:juntos",
+    "l:llegar",
+    "l:malo",
+    "l:mejor",
+    "l:pan",
+    "l:panadería",
+    "l:parecer",
+    "l:persona",
+    "l:proponer",
+    "l:querer",
+    "l:qué",
+    "l:restaurante",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:tarde",
+    "l:tener",
+    "l:tinto",
+    "l:traer",
+    "l:turista",
+    "l:vender",
+    "l:venir",
+    "l:viejo",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:durar-durante",
+    "p:estar-a-favor-de",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:lugar-tiene",
+    "p:me-encanta-que",
+    "p:me-parece-bien-que",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:viejo-antiguo-mayor"
+  ]
+}

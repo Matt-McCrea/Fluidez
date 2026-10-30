@@ -1,0 +1,245 @@
+{
+  "id": "sc-u28-f",
+  "unit": "u28",
+  "title": "Window number twelve",
+  "spare": true,
+  "brief": "You're Tomás, at a counter in the alcaldía with a ticket in your hand. The clerk is a stranger and an official, so use usted. Explain your position and your idea, politely and clearly.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Siguiente, por favor. Dígame, ¿qué necesita?",
+      "npcEn": "Next, please. Tell me, what do you need?",
+      "intent": "Say you came to propose a solution, and that it's important that the alcaldía listens to the neighbours.",
+      "accept": [
+        "Buenas tardes. Vengo a proponer una solución. Es importante que la alcaldía escuche a los vecinos.",
+        "Buenas. Quiero proponer una solución para la esquina del café. Es importante que escuchen a los vecinos.",
+        "Buenas tardes, señora. Vengo a proponer algo. Es importante que ustedes escuchen a la comunidad."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "propon\\w+",
+          "flags": "i",
+          "label": "say you came to propose something"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "es importante que",
+          "within": 4,
+          "label": "after es importante que, the verb changes: escuche"
+        }
+      ],
+      "focus": "g:subj-value",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Muy bien. Necesito su posición por escrito. ¿Está a favor o en contra del hotel?",
+      "npcEn": "Very well. I need your position in writing. Are you for or against the hotel?",
+      "intent": "Say you're against it, and you don't think a hotel is best for that corner.",
+      "accept": [
+        "Estoy en contra. No creo que un hotel sea lo mejor para esa esquina.",
+        "Estoy en contra, señora. No creo que el hotel sea lo mejor para el barrio.",
+        "Estoy en contra del hotel, porque no me parece que sea lo mejor para esa esquina."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "en contra"
+          ],
+          "label": "say you're en contra"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bno (creo|pienso|me parece) que",
+          "flags": "i",
+          "label": "say you don't think so: no creo que..."
+        }
+      ],
+      "focus": "p:estar-a-favor-de",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Anotado. ¿Y qué propone usted? Una solución real, por favor.",
+      "npcEn": "Noted. And what do you propose? A real solution, please.",
+      "intent": "Say you've been thinking about a library for the community.",
+      "accept": [
+        "Pienso en una biblioteca para la comunidad.",
+        "He pensado en una biblioteca con un café para los vecinos.",
+        "Estoy pensando en una biblioteca para la comunidad."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(pienso|pensando|pensado|pensamos) en\\b",
+          "flags": "i",
+          "label": "say you're thinking of it: pienso en..."
+        },
+        {
+          "type": "containsWord",
+          "word": "biblioteca",
+          "label": "mention the library"
+        }
+      ],
+      "focus": "p:pensar-en",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Qué buena idea. Pero hay un problema: la ventanilla cierra a las cinco, y ya son las cinco y diez.",
+      "npcEn": "What a good idea. But there's a problem: the window closes at five, and it's already ten past.",
+      "intent": "Say it's a pity, and politely ask if she can take your idea anyway.",
+      "accept": [
+        "Es una pena que cierre tan temprano. ¿Podría recibir mi idea?",
+        "Qué pena. ¿Podría recibirla ahora, por favor?",
+        "Es una pena, señora. ¿Puede recibirla, por favor?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(una pena|qué pena|lástima)\\b",
+          "flags": "i",
+          "label": "say it's a pity: es una pena..."
+        },
+        {
+          "type": "question",
+          "label": "ask politely"
+        }
+      ],
+      "focus": "g:subj-value",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Está bien, por esta vez. Aquí tiene su número, el 214. Y no le digo más: aquí nadie opina.",
+      "npcEn": "All right, just this once. Here's your number, 214. And I won't say more: nobody here gives opinions.",
+      "intent": "Thank her, and ask what she herself thinks of your idea.",
+      "accept": [
+        "Muchas gracias. Y usted, ¿qué opina de mi idea?",
+        "Gracias, señora. ¿Qué piensa usted de la biblioteca?",
+        "Muchas gracias. Pero dígame, ¿qué opina usted de mi idea?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "qué (opina|piensa|cree)",
+          "flags": "i",
+          "label": "ask: ¿qué opina usted?"
+        }
+      ],
+      "focus": "p:que-opinas-de",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:creo-que",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:por-favor",
+    "c:porque",
+    "c:que-pena",
+    "c:quiero",
+    "c:tienes",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:lo-adjective",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-irregulars",
+    "g:subj-opinion-negated",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:alcaldía",
+    "l:anotar",
+    "l:aquí",
+    "l:barrio",
+    "l:biblioteca",
+    "l:bien",
+    "l:buena",
+    "l:café",
+    "l:cerrar",
+    "l:comunidad",
+    "l:creer",
+    "l:decir",
+    "l:escribir",
+    "l:escuchar",
+    "l:esquina",
+    "l:estar",
+    "l:favor",
+    "l:hotel",
+    "l:idea",
+    "l:importante",
+    "l:mejor",
+    "l:necesitar",
+    "l:número",
+    "l:opinar",
+    "l:parecer",
+    "l:pena",
+    "l:pensar",
+    "l:poder",
+    "l:posición",
+    "l:problema",
+    "l:proponer",
+    "l:querer",
+    "l:qué",
+    "l:real",
+    "l:recibir",
+    "l:ser",
+    "l:señora",
+    "l:siguiente",
+    "l:solución",
+    "l:tarde",
+    "l:temprano",
+    "l:tener",
+    "l:vecino",
+    "l:venir",
+    "l:ventanilla",
+    "l:vez",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:estar-a-favor-de",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:que-opinas-de",
+    "p:request-ladder",
+    "p:te-importaria",
+    "p:telling-time"
+  ]
+}

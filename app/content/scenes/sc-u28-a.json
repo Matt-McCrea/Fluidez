@@ -1,0 +1,225 @@
+{
+  "id": "sc-u28-a",
+  "unit": "u28",
+  "title": "The meeting",
+  "spare": false,
+  "brief": "You're Tomás, at the neighbourhood meeting about Altamira's hotel. Doña Gloria, a neighbour, is running things and you've just met her, so use usted. Say what you think, and say what you don't think.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas noches. Yo soy Gloria, vecina del barrio. ¿Usted es el dueño del café de la esquina?",
+      "npcEn": "Good evening. I'm Gloria, a neighbour. Are you the owner of the café on the corner?",
+      "intent": "Greet her, say yes, you're Tomás, and say it's important that the neighbours speak tonight.",
+      "accept": [
+        "Buenas noches, señora Gloria. Sí, soy Tomás. Es importante que hablemos esta noche.",
+        "Sí, soy Tomás, el dueño del café. Es importante que todos los vecinos hablen hoy.",
+        "Mucho gusto. Soy Tomás, sí. Es importante que los vecinos opinen esta noche."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "es importante que",
+          "within": 5,
+          "label": "after es importante que, the verb changes: hablemos"
+        }
+      ],
+      "focus": "g:subj-value",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Eso mismo digo yo. Altamira quiere comprar toda la cuadra para hacer un hotel. ¿Usted qué opina?",
+      "npcEn": "I say the same. Altamira wants to buy the whole block to make a hotel. What do you think?",
+      "intent": "Say you don't think it's fair for the neighbourhood.",
+      "accept": [
+        "No creo que sea justo para el barrio.",
+        "Yo no creo que ese hotel sea justo.",
+        "No me parece que sea justo. Esa esquina tiene cien años."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno (creo|pienso|me parece) que",
+          "flags": "i",
+          "label": "say you don't think so: no creo que..."
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "within": 3,
+          "label": "after no creo que, the verb changes: sea"
+        }
+      ],
+      "focus": "g:subj-opinion-negated",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Pues el dueño de la panadería cree que el hotel es una gran idea. Dice que habrá trabajo para todos.",
+      "npcEn": "Well, the owner of the bakery thinks the hotel is a great idea. He says there will be work for everyone.",
+      "intent": "Say the worst thing is that your café would close.",
+      "accept": [
+        "Lo peor es que mi café va a cerrar.",
+        "Lo peor es que van a cerrar el café.",
+        "Lo peor es que cerrarían el café y la panadería."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo peor\\b",
+          "flags": "i",
+          "label": "start with lo peor"
+        }
+      ],
+      "focus": "g:lo-adjective",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Entonces usted no quiere que el barrio mejore, ¿cierto?",
+      "npcEn": "So you don't want the neighbourhood to get better, right?",
+      "intent": "Say you do want the neighbourhood to improve, but you don't think a hotel is the answer.",
+      "accept": [
+        "Sí, señora, quiero que mejore. Pero no creo que un hotel sea la solución.",
+        "Para nada. Pero no creo que un hotel sea lo mejor para el barrio.",
+        "Sí, señora. Pero no creo que un hotel sea una buena idea."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno (creo|pienso|me parece) que",
+          "flags": "i",
+          "label": "say you don't think so: no creo que..."
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "within": 3,
+          "label": "after no creo que, the verb changes: sea"
+        }
+      ],
+      "focus": "g:subj-opinion-negated",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bien dicho. Ahora todos quieren oírlo. ¿Quiere decirles algo a los vecinos?",
+      "npcEn": "Well said. Now everyone wants to hear you. Do you want to say something to the neighbours?",
+      "intent": "Thank her, and say the good thing is that you're not alone.",
+      "accept": [
+        "Gracias, señora. Estoy nervioso, pero lo bueno es que no estoy solo.",
+        "Con gusto. Lo bueno es que todo el barrio está aquí.",
+        "Gracias. Lo mejor es que los vecinos quieren escuchar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo (bueno|mejor)\\b",
+          "flags": "i",
+          "label": "start with lo bueno"
+        }
+      ],
+      "focus": "g:lo-adjective",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:con-mucho-gusto",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:lo-bueno-es",
+    "c:lo-mejor-es",
+    "c:mucho-gusto",
+    "c:no-cierto",
+    "c:para-nada",
+    "c:pues",
+    "c:quiero",
+    "c:tienes",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-opinion-negated",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:aquí",
+    "l:año",
+    "l:barrio",
+    "l:bien",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:cerrar",
+    "l:comprar",
+    "l:creer",
+    "l:cuadra",
+    "l:decir",
+    "l:dueño",
+    "l:escuchar",
+    "l:esquina",
+    "l:estar",
+    "l:gran",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:hotel",
+    "l:hoy",
+    "l:idea",
+    "l:importante",
+    "l:ir",
+    "l:justo",
+    "l:mejor",
+    "l:mejorar",
+    "l:nervioso",
+    "l:noche",
+    "l:opinar",
+    "l:oír",
+    "l:panadería",
+    "l:parecer",
+    "l:peor",
+    "l:querer",
+    "l:qué",
+    "l:ser",
+    "l:señora",
+    "l:solución",
+    "l:tener",
+    "l:trabajo",
+    "l:vecino",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:indefinites-basic",
+    "p:numbers-un-una",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:possessives-basic",
+    "p:que-opinas-de",
+    "p:senor-don-article",
+    "p:tener-anos"
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "id": "sc-u28-b",
+  "unit": "u28",
+  "title": "Cold coffee, hot night",
+  "spare": false,
+  "brief": "You're Tomás, back at the café after the meeting. Vale missed it and wants the story. She's your friend, so use tú. Tell her the best and worst parts, and what you think.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Jefe, ¿cómo estuvo la reunión? Yo me quedé en la cocina toda la noche.",
+      "npcEn": "Boss, how was the meeting? I stayed in the kitchen all night.",
+      "intent": "Say the best thing was that the whole neighbourhood came.",
+      "accept": [
+        "Lo mejor fue que vino todo el barrio.",
+        "Lo bueno es que vino mucha gente.",
+        "Lo mejor fue que casi todos los vecinos hablaron."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo (mejor|bueno)\\b",
+          "flags": "i",
+          "label": "start with lo mejor or lo bueno"
+        }
+      ],
+      "focus": "g:lo-adjective",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Y lo peor?",
+      "npcEn": "And the worst part?",
+      "intent": "Say the worst thing was that nobody listened to anybody.",
+      "accept": [
+        "Lo peor fue que nadie escuchó a nadie.",
+        "Lo peor fue el ruido. Todos gritaban.",
+        "Lo malo es que nadie quería escuchar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo (peor|malo)\\b",
+          "flags": "i",
+          "label": "start with lo peor or lo malo"
+        }
+      ],
+      "focus": "g:lo-adjective",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "El dueño de la panadería dice que el hotel es una gran idea para el barrio. ¿Tú qué piensas de eso?",
+      "npcEn": "The owner of the bakery says the hotel is a great idea for the neighbourhood. What do you think of that?",
+      "intent": "Say you don't think so, and that it's a pity the old corner will disappear.",
+      "accept": [
+        "No creo. Es una pena que desaparezca la esquina.",
+        "No, no creo. Es una pena que cierren tantas tiendas viejas.",
+        "No, para nada. Es una pena que el barrio pierda su historia."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno\\b",
+          "flags": "i"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "una pena que",
+          "within": 4,
+          "label": "after es una pena que, the verb changes: desaparezca"
+        }
+      ],
+      "focus": "g:subj-value",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Pues yo llevé veinte empanadas a la reunión. ¿Sabes quién las comió? Arturo, el panadero.",
+      "npcEn": "Well, I took twenty empanadas to the meeting. Do you know who ate them? Arturo, the baker.",
+      "intent": "Say you don't think he's a bad person, but you find it funny.",
+      "accept": [
+        "No creo que Arturo sea malo, pero lo encuentro gracioso.",
+        "Lo encuentro muy gracioso. No creo que él sea tan malo.",
+        "No creo que sea malo, pero lo veo muy gracioso."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno (creo|pienso|me parece) que",
+          "flags": "i",
+          "label": "say you don't think so: no creo que..."
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "within": 3,
+          "label": "after no creo que, the verb changes: sea"
+        }
+      ],
+      "focus": "p:encontrar-ver-adj",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bueno, te guardé una empanada en la cocina. ¿Un tinto antes de cerrar?",
+      "npcEn": "Well, I saved you an empanada in the kitchen. A coffee before we close?",
+      "intent": "Thank her, say yes, and say what you like most about the end of the day.",
+      "accept": [
+        "Gracias, Vale. Sí, claro. Lo que más me gusta de la noche es un tinto contigo.",
+        "Sí, gracias. Lo que más me gusta es terminar el día con un tinto.",
+        "Claro. Lo que más me gusta de este café es la hora de cerrar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo que más me gusta",
+          "flags": "i",
+          "label": "start with lo que más me gusta"
+        }
+      ],
+      "focus": "p:lo-que-mas-me-gusta",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:estuvo",
+    "c:gracias-de-nada",
+    "c:lo-bueno-es",
+    "c:me-gusta",
+    "c:para-nada",
+    "c:pues",
+    "c:que-mas",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:imperfect-habitual",
+    "g:lo-adjective",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:antes",
+    "l:arturo",
+    "l:barrio",
+    "l:bueno",
+    "l:café",
+    "l:cerrar",
+    "l:claro",
+    "l:cocina",
+    "l:comer",
+    "l:creer",
+    "l:cómo",
+    "l:decir",
+    "l:desaparecer",
+    "l:dueño",
+    "l:día",
+    "l:empanada",
+    "l:encontrar",
+    "l:escuchar",
+    "l:esquina",
+    "l:estar",
+    "l:gente",
+    "l:gracioso",
+    "l:gran",
+    "l:gritar",
+    "l:guardar",
+    "l:gustar",
+    "l:hablar",
+    "l:historia",
+    "l:hora",
+    "l:hotel",
+    "l:idea",
+    "l:jefe",
+    "l:llevar",
+    "l:malo",
+    "l:mejor",
+    "l:noche",
+    "l:panadero",
+    "l:panadería",
+    "l:pena",
+    "l:pensar",
+    "l:peor",
+    "l:perder",
+    "l:quedarse",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:reunión",
+    "l:ruido",
+    "l:saber",
+    "l:ser",
+    "l:terminar",
+    "l:tienda",
+    "l:tinto",
+    "l:vecino",
+    "l:venir",
+    "l:ver",
+    "l:viejo",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:encontrar-ver-adj",
+    "p:la-gente-singular",
+    "p:lo-que-mas-me-gusta",
+    "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor"
+  ]
+}

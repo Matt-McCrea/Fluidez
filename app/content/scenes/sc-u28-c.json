@@ -1,0 +1,279 @@
+{
+  "id": "sc-u28-c",
+  "unit": "u28",
+  "title": "For the article",
+  "spare": false,
+  "brief": "You're Tomás. Mariana, the journalist, calls the morning after the meeting for a quote. She's a friend, so use tú. Give your opinion clearly, say what you don't think, and describe how it felt.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, soy Mariana. Escribo sobre la reunión de anoche para el periódico. ¿Tienes cinco minutos?",
+      "npcEn": "Tomás, it's Mariana. I'm writing about last night's meeting for the paper. Do you have five minutes?",
+      "intent": "Say yes, and say it's important that the article tells the truth.",
+      "accept": [
+        "Sí, claro. Es importante que el artículo diga la verdad.",
+        "Tengo cinco minutos. Es importante que escribas lo que pasó de verdad.",
+        "Claro, Mariana. Es importante que hablemos ahora, antes de abrir el café."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "within": 5,
+          "label": "after es importante que, the verb changes: diga"
+        }
+      ],
+      "focus": "g:subj-value",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Claro. Primero, ¿qué piensas del plan de Altamira? La gente del barrio opina cosas muy distintas.",
+      "npcEn": "Of course. First, what do you think of Altamira's plan? People in the neighbourhood have very different opinions.",
+      "intent": "Say that in general you think it's a bad idea, especially for the old businesses.",
+      "accept": [
+        "En general, me parece una mala idea, sobre todo para los negocios viejos.",
+        "En general, creo que es un error, sobre todo para el café.",
+        "En general no estoy a favor, sobre todo por los negocios pequeños."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "en general"
+          ],
+          "label": "say en general"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "sobre todo"
+          ],
+          "label": "add sobre todo"
+        }
+      ],
+      "focus": "p:sobre-todo",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Entiendo. Pero el dueño de la panadería dice que el hotel traerá trabajo y turistas. ¿Qué le respondes?",
+      "npcEn": "I see. But the owner of the bakery says the hotel will bring work and tourists. What do you say to him?",
+      "intent": "Say you don't think more tourists are the solution for the neighbourhood.",
+      "accept": [
+        "No creo que más turistas sean la solución para el barrio.",
+        "No creo que un hotel ayude con la inseguridad ni la basura.",
+        "No me parece que los turistas sean la solución."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno (creo|pienso|me parece) que",
+          "flags": "i",
+          "label": "say you don't think so: no creo que..."
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "within": 3,
+          "label": "after no creo que, the verb changes: sean"
+        }
+      ],
+      "focus": "g:subj-opinion-negated",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Interesante. Gloria me dijo que te levantaste y hablaste sin papeles, y que nadie lo esperaba. ¿Cómo fue?",
+      "npcEn": "Interesting. Gloria told me you stood up and spoke without notes, and that nobody expected it. How was it?",
+      "intent": "Say the hard part was speaking in front of everybody.",
+      "accept": [
+        "Lo difícil fue hablar delante de todos. Estaba muy nervioso.",
+        "Lo más difícil fue empezar. Todo lo demás fue fácil.",
+        "Lo difícil fue la primera frase, pero me escucharon."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo (más )?difícil\\b",
+          "flags": "i",
+          "label": "start with lo difícil"
+        }
+      ],
+      "focus": "g:lo-adjective",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Perfecto, esa es mi cita. El artículo sale el domingo. Oye, quiero pasar por el café para una foto. ¿Qué día es mejor?",
+      "npcEn": "Perfect, that's my quote. The article comes out on Sunday. Listen, I want to come by the café for a photo. Which day is best?",
+      "intent": "Say come by, and say you'd say Saturday is best because there are more people.",
+      "accept": [
+        "Claro. Yo diría que el sábado es mejor, porque hay más gente.",
+        "Sí, ven. Yo diría que el sábado, cuando hay más clientes.",
+        "Por supuesto. Yo diría que mejor el sábado por la mañana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\byo diría\\b",
+          "flags": "i",
+          "label": "start with yo diría"
+        }
+      ],
+      "focus": "p:yo-diria-que",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:creo-que",
+    "c:en-serio",
+    "c:hay",
+    "c:la-verdad",
+    "c:oiga-oye",
+    "c:porque",
+    "c:que-mas",
+    "c:quiero",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:lo-adjective",
+    "g:parecer-quedar",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-opinion-negated",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:ahora",
+    "l:anoche",
+    "l:antes",
+    "l:artículo",
+    "l:ayudar",
+    "l:barrio",
+    "l:basura",
+    "l:café",
+    "l:cita",
+    "l:claro",
+    "l:cliente",
+    "l:cosa",
+    "l:creer",
+    "l:cómo",
+    "l:decir",
+    "l:delante",
+    "l:demás",
+    "l:difícil",
+    "l:distinto",
+    "l:domingo",
+    "l:dueño",
+    "l:día",
+    "l:empezar",
+    "l:entender",
+    "l:error",
+    "l:escribir",
+    "l:escuchar",
+    "l:esperar",
+    "l:estar",
+    "l:favor",
+    "l:foto",
+    "l:frase",
+    "l:fácil",
+    "l:general",
+    "l:gente",
+    "l:hablar",
+    "l:hotel",
+    "l:idea",
+    "l:importante",
+    "l:inseguridad",
+    "l:interesante",
+    "l:levantarse",
+    "l:mala",
+    "l:mañana",
+    "l:mejor",
+    "l:minuto",
+    "l:negocio",
+    "l:nervioso",
+    "l:opinar",
+    "l:oír",
+    "l:panadería",
+    "l:papel",
+    "l:parecer",
+    "l:pasar",
+    "l:pensar",
+    "l:pequeño",
+    "l:perfecto",
+    "l:periódico",
+    "l:plan",
+    "l:querer",
+    "l:qué",
+    "l:responder",
+    "l:reunión",
+    "l:salir",
+    "l:ser",
+    "l:solución",
+    "l:suponer",
+    "l:sábado",
+    "l:tener",
+    "l:trabajo",
+    "l:traer",
+    "l:turista",
+    "l:ver",
+    "l:verdad",
+    "l:viejo",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:days-el-lunes",
+    "p:en-general",
+    "p:estar-a-favor-de",
+    "p:focus-adverbs",
+    "p:la-gente-singular",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:por-la-manana",
+    "p:por-lo-general",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:sobre-todo",
+    "p:sobre-todo-solo",
+    "p:time-sequence-basic",
+    "p:viejo-antiguo-mayor",
+    "p:yo-diria-que"
+  ]
+}
