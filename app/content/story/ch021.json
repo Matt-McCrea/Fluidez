@@ -2,7 +2,7 @@
   "id": "ch021",
   "unit": "u09",
   "title": "Agua fría",
-  "text": "Día uno. Cinco y veinte de la mañana.\nTomás: ¡Aaay!\nGloria: ¡Hoy sí hay agua, Tomás!\nTomás: ¡Sí, pero está fría! ¿Y el jabón? ¿Y la toalla?\nGloria: ¡En el armario del baño!\nTomás sale del baño y mira el reloj: ya son las cinco y media.\nTomás: ¡Uy, se me hizo tarde!\nGloria: ¡Tomás! ¡El pan para el café ya está listo!\nTomás baja la escalera con la toalla en la cabeza y el pan en las manos.\nA las seis menos cinco entra al café. Vale mira el reloj de la pared.\nVale: Llegas temprano, Tomás. Muy temprano.\nTomás: Mañana llego a las cinco. De verdad.\nSimón: ¡Qué pereza! ¡Qué pereza!\nA las siete llega Hernando.\nHernando: ¿Y esa cara, mijo?\nTomás: Agua fría, don Hernando.\nA las cuatro, Tomás hace las cuentas en la computadora. A las cinco juega ajedrez con Hernando, y pierde.\nAntes de cerrar, Vale saca un reloj viejo de la vitrina.\nVale: Es el reloj de Rosa. Rosa nunca llegó tarde, ni un día en cuarenta años. Ahora es tuyo, Tomás.\nEsa noche, Tomás tiene dos correos. Uno es de Altamira, y no lo abre. El otro es de una empresa de Toronto: «Entrevista de trabajo. Jueves, ocho de la noche».\nTomás toca el reloj de Rosa. Después escribe una palabra: «Sí».",
+  "text": "Día uno. Cinco y veinte de la mañana.\nTomás: ¡Aaay!\nGloria: ¡Hoy sí hay agua, Tomás!\nTomás: ¡Sí, pero está fría! ¿Y el jabón? ¿Y la toalla?\nGloria: ¡En el armario del baño!\nYa son las cinco y media.\nTomás: ¡Uy, se me hizo tarde!\nTomás baja la escalera con la toalla en la cabeza.\nA las seis menos cinco entra al café. Vale mira el reloj de la pared.\nVale: Llegas temprano, Tomás. Muy temprano.\nTomás: Mañana llego a las cinco. De verdad.\nSimón: ¡Qué pereza! ¡Qué pereza!\nA las cuatro, Tomás hace las cuentas. A las cinco juega ajedrez con Hernando, y pierde.\nAntes de cerrar, Vale saca un reloj viejo de la vitrina.\nVale: Es el reloj de Rosa. Rosa nunca llegó tarde, ni un día en cuarenta años. Ahora es tuyo, Tomás.\nEsa noche, Tomás tiene dos correos. Uno es de Altamira, y no lo abre. El otro es de una empresa de Toronto: «Entrevista de trabajo. Jueves, ocho de la noche».\nTomás toca el reloj de Rosa. Después escribe una palabra: «Sí».",
   "gloss": [
     {
       "es": "¡Aaay!",
@@ -15,10 +15,6 @@
     {
       "es": "Llegas temprano, Tomás. Muy temprano.",
       "en": "You're early, Tomás. Very early. (she doesn't mean it)"
-    },
-    {
-      "es": "¿Y esa cara?",
-      "en": "What's with that face?"
     },
     {
       "es": "Antes de cerrar",
@@ -111,7 +107,7 @@
     {
       "q": "How does Tomás go down the stairs?",
       "options": [
-        "With the towel on his head and the bread in his hands",
+        "With the towel still on his head",
         "With Simón on his shoulder",
         "With the letter in his pocket",
         "With Gloria"
@@ -146,9 +142,7 @@
     "g:ser-identity",
     "g:stem-boot",
     "p:de-owner",
-    "p:para-inf",
     "p:quantifiers-basic",
-    "p:senor-don-article",
     "p:time-sequence-basic",
     "p:viejo-antiguo-mayor"
   ],
@@ -164,9 +158,7 @@
     "l:baño",
     "l:cabeza",
     "l:café",
-    "l:cara",
     "l:cerrar",
-    "l:computadora",
     "l:correo",
     "l:cuenta",
     "l:después",
@@ -184,21 +176,16 @@
     "l:jabón",
     "l:jueves",
     "l:jugar",
-    "l:listo",
     "l:llegar",
-    "l:mano",
     "l:mañana",
-    "l:mijo",
     "l:mirar",
     "l:noche",
     "l:palabra",
-    "l:pan",
     "l:pared",
     "l:perder",
     "l:qué",
     "l:reloj",
     "l:sacar",
-    "l:salir",
     "l:ser",
     "l:tarde",
     "l:temprano",
