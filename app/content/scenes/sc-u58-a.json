@@ -1,0 +1,246 @@
+{
+  "id": "sc-u58-a",
+  "unit": "u58",
+  "title": "El fotógrafo perdido",
+  "brief": "You're Tomás. The photographer hired for the cooperative's newsletter is lost near the café and phones you. He's about your age, so use tú. Guide him in, then tell him how the restoration will go.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Fotógrafo: ¿Aló, Tomás? Estoy en la carrera séptima y no veo el café por ningún lado. ¿Dónde queda exactamente?",
+      "npcEn": "Photographer: Hello, Tomás? I'm on Seventh Avenue and I can't see the café anywhere. Where exactly is it?",
+      "intent": "Tell him you're two blocks from where he is, level with 12th Street (use: a ... cuadras de, a la altura de).",
+      "accept": [
+        "Estamos a dos cuadras de ti, a la altura de la calle 12.",
+        "Queda a tres cuadras de donde estás, a la altura de la calle 12.",
+        "Sigue derecho: el café está a la altura de la calle 12, a dos cuadras de la carrera séptima."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ba \\S+ cuadras\\b",
+          "flags": "iu",
+          "label": "use: a ... cuadras"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\ba la altura de\\b",
+          "flags": "iu",
+          "label": "use: a la altura de"
+        }
+      ],
+      "focus": "p:a-cuadras-de",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Fotógrafo: Ya lo veo. ¡Qué fachada! Oye, ¿qué es lo primero que van a hacer con la viga agrietada?",
+      "npcEn": "Photographer: I can see it now. What a facade! Tell me, what's the first thing you'll do about the cracked beam?",
+      "intent": "Say that the engineers will replace the beam as soon as they arrive (use: nada más llegar).",
+      "accept": [
+        "Nada más llegar los ingenieros, cambiarán la viga.",
+        "Los ingenieros van a cambiar la viga nada más llegar, el lunes.",
+        "La viga se cambia nada más llegar el equipo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bnada más\\b",
+          "flags": "iu",
+          "label": "use: nada más + infinitive"
+        }
+      ],
+      "focus": "g:temporal-advanced",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Fotógrafo: Perfecto. Y los vecinos, ¿qué opinan de tanta obra?",
+      "npcEn": "Photographer: Perfect. And the neighbours, what do they think of so much building work?",
+      "intent": "Say that most of the neighbours support the work (use: la mayoría de los vecinos).",
+      "accept": [
+        "La mayoría de los vecinos apoya la obra.",
+        "La mayoría de los vecinos está de acuerdo, aunque algunos dudan.",
+        "La mayoría de los vecinos nos apoyan, sobre todo los mayores."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bla mayoría de (los|las) \\S+",
+          "flags": "iu",
+          "label": "use: la mayoría de los vecinos"
+        }
+      ],
+      "focus": "g:agreement-tricky",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Fotógrafo: Me alegro. ¿Y cómo va a cambiar el café? Para la foto de portada necesito una idea.",
+      "npcEn": "Photographer: Glad to hear it. And how will the café change? I need an idea for the cover photo.",
+      "intent": "Say the café will look more like Rosa's as the work advances (use: a medida que).",
+      "accept": [
+        "A medida que avance la obra, el café se parecerá más al de Rosa.",
+        "El café recuperará su aspecto de antes a medida que avancen las obras.",
+        "Se irá pareciendo al café de Rosa a medida que quiten el polvo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ba medida que\\b",
+          "flags": "iu",
+          "label": "use: a medida que"
+        }
+      ],
+      "focus": "g:temporal-advanced",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Fotógrafo: Genial, ya tengo mi imagen. Muchas gracias por la ayuda con la dirección.",
+      "npcEn": "Photographer: Great, I've got my picture. Thank you for the help with the directions.",
+      "intent": "Say it was nothing and offer him a black coffee before he leaves (a question).",
+      "accept": [
+        "No hay de qué. ¿Quieres un tinto antes de irte?",
+        "Gracias a ti. ¿Te sirvo un tinto antes de que te vayas?",
+        "Con gusto. ¿Por qué no te quedas a tomar un tinto?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "g:temporal-advanced",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:con-mucho-gusto",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:me-alegro",
+    "c:oiga-oye",
+    "c:tengo",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:aunque-indicative",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:hay-vs-esta",
+    "g:indefinites",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-irregulars",
+    "g:subj-purpose-full",
+    "g:subj-wanting",
+    "g:temporal-advanced",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:acuerdo",
+    "l:alegrarse",
+    "l:altura",
+    "l:antes",
+    "l:apoyar",
+    "l:aspecto",
+    "l:avanzar",
+    "l:ayuda",
+    "l:café",
+    "l:calle",
+    "l:cambiar",
+    "l:carrera",
+    "l:cuadra",
+    "l:cómo",
+    "l:derecho",
+    "l:dirección",
+    "l:dudar",
+    "l:dónde",
+    "l:equipo",
+    "l:estar",
+    "l:exactamente",
+    "l:fachada",
+    "l:foto",
+    "l:fotógrafo",
+    "l:genial",
+    "l:gusto",
+    "l:hacer",
+    "l:idea",
+    "l:imagen",
+    "l:ingeniero",
+    "l:ir",
+    "l:irse",
+    "l:lado",
+    "l:llegar",
+    "l:lunes",
+    "l:mayor",
+    "l:mayoría",
+    "l:medida",
+    "l:necesitar",
+    "l:obra",
+    "l:opinar",
+    "l:oír",
+    "l:parecer",
+    "l:parecerse",
+    "l:perfecto",
+    "l:polvo",
+    "l:portada",
+    "l:quedar",
+    "l:quedarse",
+    "l:querer",
+    "l:quitar",
+    "l:qué",
+    "l:recuperar",
+    "l:seguir",
+    "l:ser",
+    "l:servir",
+    "l:séptimo",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:vecino",
+    "l:ver",
+    "l:viga",
+    "p:a-cuadras-de",
+    "p:a-la-altura-de",
+    "p:days-el-lunes",
+    "p:directions-cuadras",
+    "p:estar-a",
+    "p:estar-de-acuerdo-con-en",
+    "p:exclamations-basic",
+    "p:focus-adverbs",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:la-mayoria-de",
+    "p:mayor-menor",
+    "p:me-te-nos-objects",
+    "p:ninguna-parte",
+    "p:para-inf",
+    "p:por-culpa-de",
+    "p:por-que-no",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:que-opinas-de",
+    "p:quedar-a-distancia",
+    "p:quedar-cerca",
+    "p:sobre-todo",
+    "p:sobre-todo-solo",
+    "p:street-names",
+    "p:time-sequence-basic"
+  ]
+}

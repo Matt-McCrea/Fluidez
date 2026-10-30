@@ -1,0 +1,227 @@
+{
+  "id": "sc-u58-b",
+  "unit": "u58",
+  "title": "Una banca con placa",
+  "brief": "You're Tomás, talking with Don Hernando in front of the café. He's courtly and you're not close in age, so use usted throughout. Answer his questions about the new bench, the jukebox and the weather, then offer him a seat.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Buenos días, Tomás. Esa banca nueva me gusta mucho. ¿De qué material es?",
+      "npcEn": "Hernando: Good morning, Tomás. I like that new bench very much. What is it made of?",
+      "intent": "Say it is made of oak (use: es de).",
+      "accept": [
+        "Es de roble, don Hernando, y muy resistente.",
+        "La banca es de roble, fuerte como un roble.",
+        "Es de roble, y la placa es de bronce."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bes de\\b",
+          "flags": "iu",
+          "label": "use: es de + material"
+        }
+      ],
+      "focus": "g:ser-estar-c1",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Dicen que el muchacho que arregla la rockola ya no trabaja con ustedes. ¿Es cierto?",
+      "npcEn": "Hernando: They say the young man who fixes the jukebox no longer works with you. Is that true?",
+      "intent": "Say no: for now he's working as Vale's helper in the kitchen (use: está de).",
+      "accept": [
+        "No, don Hernando. Ahora está de ayudante de Vale en la cocina.",
+        "Todavía trabaja con nosotros: por ahora está de ayudante en la cocina.",
+        "No, sigue aquí. Esta semana está de ayudante de cocina."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bestá de\\b",
+          "flags": "iu",
+          "label": "use: está de + job"
+        }
+      ],
+      "focus": "g:ser-estar-c1",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Hum, el cielo se ve muy oscuro. ¿Usted cree que llueva?",
+      "npcEn": "Hernando: Hmm, the sky looks very dark. Do you think it will rain?",
+      "intent": "Say yes, it is about to rain (use: está para llover).",
+      "accept": [
+        "Creo que sí, don Hernando. Está para llover.",
+        "Sí, el cielo está para llover desde hace rato.",
+        "Está para llover, mejor entre y se sienta adentro."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpara llover\\b",
+          "flags": "iu",
+          "label": "use: está para llover"
+        }
+      ],
+      "focus": "g:ser-estar-c1",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: ¿Y Altamira? ¿Cree que nos dejará en paz?",
+      "npcEn": "Hernando: And Altamira? Do you think they'll leave us alone?",
+      "intent": "Say that remains to be seen (use: está por verse).",
+      "accept": [
+        "Eso está por verse, don Hernando.",
+        "Está por verse si nos dejan en paz.",
+        "Todavía está por verse, pero no vamos a ceder."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpor verse\\b",
+          "flags": "iu",
+          "label": "use: está por verse"
+        }
+      ],
+      "focus": "g:ser-estar-c1",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Bueno, hoy estoy un poco cansado. ¿Puedo sentarme un rato en mi banca?",
+      "npcEn": "Hernando: Well, today I'm a little tired. Can I sit on my bench for a while?",
+      "intent": "Tell him of course, the bench is his, and offer him a black coffee (a question, in usted).",
+      "accept": [
+        "Claro que sí, la banca es suya. ¿Le sirvo un tinto?",
+        "Por supuesto, don Hernando. ¿Quiere un tinto mientras tanto?",
+        "Siéntese, es su banca. ¿Le traigo un tinto?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "eres",
+            "tienes",
+            "quieres"
+          ],
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:ser-estar-c1",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:hace-rato",
+    "c:hola-buenos-dias",
+    "c:me-gusta",
+    "c:puedo",
+    "c:vamos-a",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-opinion-negated",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:adentro",
+    "l:ahora",
+    "l:aquí",
+    "l:arreglar",
+    "l:ayudante",
+    "l:banca",
+    "l:bronce",
+    "l:bueno",
+    "l:cansado",
+    "l:ceder",
+    "l:cielo",
+    "l:claro",
+    "l:cocina",
+    "l:creer",
+    "l:decir",
+    "l:dejar",
+    "l:día",
+    "l:estar",
+    "l:fuerte",
+    "l:gustar",
+    "l:hace",
+    "l:hoy",
+    "l:ir",
+    "l:llover",
+    "l:material",
+    "l:mejor",
+    "l:muchacho",
+    "l:nuevo",
+    "l:oscuro",
+    "l:paz",
+    "l:placa",
+    "l:poder",
+    "l:querer",
+    "l:qué",
+    "l:rato",
+    "l:resistente",
+    "l:roble",
+    "l:seguir",
+    "l:semana",
+    "l:sentar",
+    "l:sentarse",
+    "l:ser",
+    "l:servir",
+    "l:suponer",
+    "l:tinto",
+    "l:trabajar",
+    "l:traer",
+    "l:ver",
+    "p:a-la-vez",
+    "p:aqui-ahi-alla",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:describe-with-images",
+    "p:don-dona-nombre",
+    "p:estar-por",
+    "p:fuerte-como-un-roble",
+    "p:llevar-traer",
+    "p:me-contaron-que",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:ser-de-material",
+    "p:ya-todavia-basic"
+  ]
+}

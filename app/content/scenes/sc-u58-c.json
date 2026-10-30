@@ -1,0 +1,260 @@
+{
+  "id": "sc-u58-c",
+  "unit": "u58",
+  "title": "Detrás de la rockola",
+  "brief": "You're Tomás, with Vale in the kitchen the day before the newsletter goes out. She's quick and dry, and you're friends, so use tú. Describe the restoration for the newsletter, then deal with a surprise.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Oye, el informe sale el viernes. ¿Cómo describes el piso original?",
+      "npcEn": "Vale: Hey, the report goes out on Friday. How do you describe the original floor?",
+      "intent": "Say the tiles are smooth to the touch (use: al tacto).",
+      "accept": [
+        "Los azulejos son lisos al tacto, aunque se ven gastados.",
+        "Al tacto son fríos y un poco ásperos.",
+        "Son suaves al tacto y de un azul casi verde."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bal tacto\\b",
+          "flags": "iu",
+          "label": "use: al tacto"
+        }
+      ],
+      "focus": "p:al-tacto",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: ¿Y cuánto mide el salón? Dame un cálculo, no hace falta una cinta.",
+      "npcEn": "Vale: And how big is the room? Give me an estimate, no tape measure needed.",
+      "intent": "Say that by eye it's about ten metres long (use: al ojo).",
+      "accept": [
+        "Al ojo, mide unos diez metros de largo.",
+        "Medido al ojo, tendrá diez metros, más o menos.",
+        "Yo diría que al ojo son diez metros."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bal ojo\\b",
+          "flags": "iu",
+          "label": "use: al ojo"
+        }
+      ],
+      "focus": "p:a-ojo",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: ¿A qué hora empiezan los obreros mañana?",
+      "npcEn": "Vale: What time do the workers start tomorrow?",
+      "intent": "Say they arrive at about seven (use: a eso de).",
+      "accept": [
+        "Llegan a eso de las siete.",
+        "Empiezan a eso de las siete, antes del calor.",
+        "A eso de las siete, según el ingeniero."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ba eso de\\b",
+          "flags": "iu",
+          "label": "use: a eso de + hora"
+        }
+      ],
+      "focus": "p:a-eso-de",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: ¿Y la ventana de la cocina? ¿Da a la calle o al patio?",
+      "npcEn": "Vale: And the kitchen window? Does it look onto the street or the courtyard?",
+      "intent": "Say it looks onto the courtyard (use: da a / da al).",
+      "accept": [
+        "Da al patio interior.",
+        "La ventana de la cocina da al patio, no a la calle.",
+        "Da a un patio pequeño con un limonero."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bda (a|al)\\b",
+          "flags": "iu",
+          "label": "use: da a / da al"
+        }
+      ],
+      "focus": "p:dar-a",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: ¿Y los vecinos? ¿Qué dijeron de los planos?",
+      "npcEn": "Vale: And the neighbours? What did they say about the plans?",
+      "intent": "Say most of the neighbours signed as soon as they saw the plans (use: la mayoría de, nada más ver).",
+      "accept": [
+        "La mayoría de los vecinos firmó nada más ver los planos.",
+        "La mayoría de los vecinos dijo que sí; nada más verlos, firmaron.",
+        "La mayoría de los vecinos firmaron nada más ver los planos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bla mayoría de (los|las) \\S+",
+          "flags": "iu",
+          "label": "use: la mayoría de los vecinos"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bnada más\\b",
+          "flags": "iu",
+          "label": "use: nada más + infinitive"
+        }
+      ],
+      "focus": "g:agreement-tricky",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Vale: Mira lo que encontré detrás de la rockola: el cuaderno de recetas de Rosa. ¡Está lleno de notas!",
+      "npcEn": "Vale: Look what I found behind the jukebox: Rosa's recipe notebook. It's full of notes!",
+      "intent": "React: say her recipes are now within reach (use: al alcance de).",
+      "accept": [
+        "¡Qué noticia! Las recetas de Rosa están al alcance de la mano.",
+        "Ahora la cocina de Rosa está al alcance de todos.",
+        "Con ese cuaderno, el menú está al alcance de la mano."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bal alcance de\\b",
+          "flags": "iu",
+          "label": "use: al alcance de"
+        }
+      ],
+      "focus": "p:al-alcance-de",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-que-hora",
+    "c:mas-o-menos",
+    "c:oiga-oye",
+    "c:ojo",
+    "c:oye-mira",
+    "c:segun",
+    "g:adjective-agreement",
+    "g:aunque-indicative",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:temporal-advanced",
+    "g:that-clauses",
+    "l:ahora",
+    "l:alcance",
+    "l:antes",
+    "l:azul",
+    "l:azulejo",
+    "l:calle",
+    "l:calor",
+    "l:cinta",
+    "l:cocina",
+    "l:cuaderno",
+    "l:cuánto",
+    "l:cálculo",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:describir",
+    "l:detrás",
+    "l:empezar",
+    "l:encontrar",
+    "l:estar",
+    "l:falta",
+    "l:firmar",
+    "l:frío",
+    "l:gastar",
+    "l:hacer",
+    "l:hora",
+    "l:informe",
+    "l:ingeniero",
+    "l:interior",
+    "l:largo",
+    "l:liso",
+    "l:llegar",
+    "l:lleno",
+    "l:mano",
+    "l:mayoría",
+    "l:mañana",
+    "l:medir",
+    "l:menú",
+    "l:metro",
+    "l:mirar",
+    "l:nota",
+    "l:noticia",
+    "l:obrero",
+    "l:ojo",
+    "l:original",
+    "l:oír",
+    "l:patio",
+    "l:pequeño",
+    "l:piso",
+    "l:plano",
+    "l:qué",
+    "l:receta",
+    "l:salir",
+    "l:salón",
+    "l:ser",
+    "l:suave",
+    "l:tacto",
+    "l:tener",
+    "l:vecino",
+    "l:ventana",
+    "l:ver",
+    "l:verde",
+    "l:viernes",
+    "l:áspero",
+    "p:a-eso-de",
+    "p:a-ojo",
+    "p:al-alcance-de",
+    "p:al-tacto",
+    "p:aproximar-cifras",
+    "p:cerca-de",
+    "p:dar-a",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:hacia-las-nueve",
+    "p:la-mayoria-de",
+    "p:lleno-libre",
+    "p:me-te-nos-objects",
+    "p:medir",
+    "p:medir-pesar",
+    "p:medir-pesar-caber",
+    "p:no-hace-falta-que",
+    "p:poco-un-poco",
+    "p:position-de",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:unos-approx",
+    "p:yo-diria-que"
+  ]
+}
