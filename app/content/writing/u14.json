@@ -518,5 +518,112 @@
       "l:tener",
       "p:indefinites-basic"
     ]
+  },
+  {
+    "id": "w-u14-13",
+    "unit": "u14",
+    "prompt": "Write to Vale, who is covering the café tomorrow. Tell her you asked Don Hernando something and what he answered: use \"le\" for him (I asked him...). Start with a greeting and finish with a warm sign-off.",
+    "minWords": 10,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\ble\\s+(pregunt|dij|expliqu|mand|pedí|di)\\w*",
+        "label": "use le for Don Hernando (le pregunté, le dije)"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "lo pregunté",
+          "lo dije",
+          "lo expliqué",
+          "lo mandé"
+        ],
+        "label": "le, not lo, for the person you asked"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "Querida",
+          "Hola"
+        ],
+        "label": "start with a greeting"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "Un abrazo",
+          "Saludos",
+          "Besos"
+        ],
+        "label": "end with a sign-off"
+      }
+    ],
+    "model": "Querida Vale: Le pregunté a don Hernando y me dijo que viene mañana. Un abrazo.",
+    "focus": "g:indirect-objects",
+    "requires": [
+      "c:querido-querida",
+      "c:un-abrazo",
+      "g:indirect-objects",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:abrazo",
+      "l:decir",
+      "l:mañana",
+      "l:preguntar",
+      "l:querer",
+      "l:venir",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u14-14",
+    "unit": "u14",
+    "prompt": "Text your two cousins in a group chat. Tell them you sent them something (the photos, the key, the letter) and give them one piece of news. Use \"les\" for the two of them.",
+    "minWords": 10,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bles\\s+\\w+",
+        "label": "use les for your two cousins"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "los mandé",
+          "los cuento",
+          "los digo",
+          "los explico"
+        ],
+        "label": "les, not los, for the people you tell"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Les mandé las fotos de la fiesta. Además, les cuento que me quedo un año en Bogotá.",
+    "focus": "g:indirect-objects",
+    "requires": [
+      "c:ademas",
+      "c:te-cuento-que",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:present-ar",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:además",
+      "l:año",
+      "l:contar",
+      "l:fiesta",
+      "l:foto",
+      "l:mandar",
+      "l:quedarse"
+    ]
   }
 ]
