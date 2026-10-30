@@ -2,7 +2,7 @@
   "id": "ch032",
   "unit": "u12",
   "title": "La llave de Joaquín",
-  "text": "Detrás de los ladrillos había una bolsa de plástico, y dentro, una llave vieja y una tarjeta. Tomás leyó la tarjeta: «Ramón Prieto, notario. Calle 100, Bogotá. 1979».\nA la mañana siguiente hacía sol. A las siete, Mariana tocó la puerta del café, con dos tintos en la mano.\nMariana: Don Hernando me llamó. ¿Es verdad que anoche entró un hombre de Altamira?\nTomás: Es verdad. Don Hernando cree que buscaba el cuaderno de Rosa.\nMariana: ¿Un cuaderno de recetas? No creo. Un hotel no necesita recetas.\nTomás le mostró la tarjeta y la llave.\nMariana: En realidad, creo que buscaba esto. Un notario guarda los papeles de los edificios. Es posible: allá puede estar el nombre del dueño.\nVale: ¿Y Altamira sabe que esta tarjeta existe?\nMariana: Parece que sí. Altamira quiere convertir toda la cuadra en un hotel, pero sin el dueño del café, no puede.\nSimón volvió a gritar: ¡A la orden! ¡A la orden!\nMariana: ¿Y el loro? ¿Vio al hombre?\nVale: Lo vio, y le dijo «¡A la orden, señor!» toda la noche.\nMariana: Entonces tenemos un testigo.\nTomás: Un testigo con tres palabras.\nHernando no se rio. Tocó la llave con un dedo, y sus ojos estaban tristes.\nTomás: ¿Don Hernando? ¿Usted conoce esta llave?\nHernando: Era de Joaquín.\nTomás guardó la tarjeta y la llave en su chaqueta.\nTomás: Mañana voy a la calle 100.\nMariana: Te deseo suerte. Queda muy lejos, en el norte.",
+  "text": "Detrás de los ladrillos había una bolsa de plástico con una llave vieja y una tarjeta: «Ramón Prieto, notario. Calle 100, Bogotá. 1979».\nAl otro día, a las siete, Mariana llegó al café con dos tintos.\nMariana: Don Hernando me llamó. ¿Anoche entró un hombre de Altamira?\nTomás: Sí. Don Hernando cree que buscaba el cuaderno de Rosa.\nMariana: ¿Un cuaderno de recetas? No creo. Un hotel no necesita recetas.\nTomás le mostró la tarjeta y la llave.\nMariana: Creo que buscaba esto. Un notario guarda los papeles de los edificios. Allá puede estar el nombre del dueño del café. Y sin el dueño, no hay hotel.\nVale: Simón vio al hombre. Le dijo «¡A la orden, señor!» toda la noche.\nMariana: Entonces tenemos un testigo.\nTomás: Un testigo con tres palabras.\nHernando no se rio. Tocó la llave con un dedo, muy triste.\nTomás: Don Hernando, ¿usted conoce esta llave?\nHernando: Era de Joaquín.\nTomás guardó la tarjeta y la llave en su chaqueta.\nTomás: Mañana voy a la calle 100.\nMariana: Suerte. Eso queda lejos, en el norte.",
   "gloss": [
     {
       "es": "una bolsa de plástico",
@@ -13,24 +13,16 @@
       "en": "notary (the lawyer who keeps property papers)"
     },
     {
-      "es": "A la mañana siguiente",
-      "en": "The next morning"
+      "es": "Al otro día",
+      "en": "The next day"
     },
     {
-      "es": "Mariana tocó la puerta",
-      "en": "Mariana knocked on the door"
+      "es": "Mariana llegó al café",
+      "en": "Mariana arrived at the café"
     },
     {
       "es": "Un notario guarda los papeles de los edificios.",
       "en": "A notary keeps the papers for buildings."
-    },
-    {
-      "es": "allá puede estar el nombre del dueño",
-      "en": "the owner's name may be there"
-    },
-    {
-      "es": "convertir toda la cuadra en un hotel",
-      "en": "turn the whole block into a hotel"
     },
     {
       "es": "loro",
@@ -49,8 +41,16 @@
       "en": "He touched the key with one finger"
     },
     {
-      "es": "Te deseo suerte.",
-      "en": "Good luck."
+      "es": "Allá puede estar el nombre del dueño del café",
+      "en": "The café owner's name may be there"
+    },
+    {
+      "es": "Eso queda lejos",
+      "en": "That's far away"
+    },
+    {
+      "es": "Y sin el dueño, no hay hotel.",
+      "en": "And without the owner, there's no hotel."
     }
   ],
   "questions": [
@@ -134,24 +134,23 @@
     "c:creo-que",
     "c:entonces-bueno",
     "c:era",
+    "c:hay",
     "c:me-llamo",
     "c:no-se",
     "c:tienes",
     "c:voy-a",
     "g:adjective-agreement",
-    "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
+    "g:hay-vs-esta",
     "g:imperfect-habitual",
     "g:imperfect-states",
     "g:ir-a-plans",
     "g:present-ar",
     "g:present-er-ir",
-    "g:pret-vs-imperfect",
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
-    "g:preterite-spelling-stem",
     "g:reflexive-routine",
     "g:ser-identity",
     "g:stem-boot",
@@ -161,9 +160,7 @@
     "p:cerca-de",
     "p:container-de",
     "p:demonstratives-basic",
-    "p:hace-frio",
     "p:ir-a-venir-de-place",
-    "p:me-te-nos-objects",
     "p:personal-a",
     "p:position-de",
     "p:possessives-basic",
@@ -172,8 +169,7 @@
     "p:senor-don-article",
     "p:telling-time",
     "p:todos-los-dias",
-    "p:viejo-antiguo-mayor",
-    "p:volver-a-inf"
+    "p:viejo-antiguo-mayor"
   ],
   "lexemes": [
     "l:allá",
@@ -184,59 +180,42 @@
     "l:calle",
     "l:chaqueta",
     "l:conocer",
-    "l:convertir",
     "l:creer",
     "l:cuaderno",
-    "l:cuadra",
     "l:decir",
     "l:dedo",
-    "l:dentro",
-    "l:desear",
     "l:detrás",
     "l:dueño",
+    "l:día",
     "l:edificio",
     "l:entrar",
     "l:estar",
-    "l:existir",
-    "l:gritar",
     "l:guardar",
-    "l:hacer",
     "l:hombre",
     "l:hotel",
     "l:ir",
     "l:ladrillo",
-    "l:leer",
     "l:lejos",
     "l:llamar",
     "l:llave",
-    "l:loro",
-    "l:mano",
+    "l:llegar",
     "l:mañana",
     "l:mostrar",
     "l:necesitar",
     "l:noche",
     "l:nombre",
     "l:norte",
-    "l:ojo",
     "l:orden",
     "l:palabra",
     "l:papel",
-    "l:parecer",
     "l:plástico",
     "l:poder",
-    "l:posible",
-    "l:puerta",
     "l:quedar",
-    "l:querer",
     "l:ramón",
-    "l:realidad",
     "l:receta",
     "l:reír",
-    "l:saber",
     "l:ser",
     "l:señor",
-    "l:siguiente",
-    "l:sol",
     "l:suerte",
     "l:tarjeta",
     "l:tener",
@@ -245,8 +224,6 @@
     "l:tocar",
     "l:triste",
     "l:ver",
-    "l:verdad",
-    "l:viejo",
-    "l:volver"
+    "l:viejo"
   ]
 }
