@@ -1,0 +1,183 @@
+{
+  "node": "p:dar-igual",
+  "hook": {
+    "line": "When Vale asks Tomás whether to bake the empanadas or the buñuelos, sometimes the honest answer is that he has no preference. Spanish says this with a small phrase that runs on the same engine as *gustar*.",
+    "es": "Me da igual.",
+    "en": "I don't mind."
+  },
+  "examples": [
+    {
+      "es": "Me da igual.",
+      "en": "I don't mind."
+    },
+    {
+      "es": "Me da lo mismo.",
+      "en": "It's all the same to me."
+    },
+    {
+      "es": "Me da igual ir al cine o quedarnos en la casa.",
+      "en": "I don't mind if we go to the cinema or stay at home."
+    },
+    {
+      "es": "A Hernando le da igual el precio.",
+      "en": "The price doesn't matter to Hernando."
+    },
+    {
+      "es": "¿Te da igual si cerramos temprano?",
+      "en": "Do you mind if we close early? (to a friend)"
+    },
+    {
+      "es": "A mí me da igual el café o el jugo.",
+      "en": "Coffee or juice, it's all the same to me."
+    }
+  ],
+  "rule": "*Me da igual* and *me da lo mismo* both mean \"it makes no difference to me\". They work like *me gusta*: the thing you don't care about is the subject, and the person is *me, te, le, nos, les*.\n\nSo the person changes and *da* stays: *Me da igual*, *Te da igual*, *A Hernando le da igual*.\n\nAfter it, put the thing you don't mind: a noun (*el precio*), an infinitive (*ir*), or *si* + a clause (*si cerramos temprano*).\n\nOne warning: it means indifference, not approval. If someone suggests a plan and you like it, *Me parece bien* is warmer. *Me da igual* can sound as if you don't care at all.",
+  "smallPrint": "Teachers call this a *gustar*-type verb: the person is the indirect object and the thing is the subject.",
+  "readAndPick": [
+    {
+      "es": "A Hernando le da igual el precio.",
+      "options": [
+        "Hernando loves the price.",
+        "The price doesn't matter to Hernando.",
+        "The price doesn't matter to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da lo mismo.",
+      "options": [
+        "It's all the same to me.",
+        "I really want it.",
+        "I'll give it to you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te da igual si cerramos temprano?",
+      "options": [
+        "Do you mind if we close early? (to a friend)",
+        "Do you mind if they close early? (to a friend)",
+        "Do you want to close early? (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A mí me da igual el café o el jugo.",
+      "options": [
+        "I only want coffee.",
+        "Coffee or juice, it's all the same to me.",
+        "Hernando doesn't care about coffee or juice."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos da igual el precio.",
+      "options": [
+        "The price doesn't matter to me.",
+        "The price doesn't matter to us.",
+        "The price doesn't matter to them."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A ellos les da igual.",
+      "options": [
+        "It doesn't matter to them.",
+        "It doesn't matter to us.",
+        "It doesn't matter to her."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me da igual si llueve.",
+      "options": [
+        "I'm afraid it will rain.",
+        "I hope it rains.",
+        "I don't mind if it rains."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A Mariana no le da igual.",
+      "options": [
+        "It doesn't matter to Mariana.",
+        "It matters to Mariana.",
+        "It matters to me."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Type in Spanish: I don't mind.",
+      "answer": "Me da igual.",
+      "accept": [
+        "Me da lo mismo."
+      ],
+      "why": "The person is *me*, and *da* stays the same."
+    },
+    {
+      "prompt": "Pick *me* or *le* and type the whole sentence: *A Hernando ___ da igual el precio.*",
+      "answer": "A Hernando le da igual el precio.",
+      "accept": [],
+      "why": "A third person (one man) takes *le*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Do you mind if we close early?",
+      "answer": "¿Te da igual si cerramos temprano?",
+      "accept": [
+        "¿Te da lo mismo si cerramos temprano?"
+      ],
+      "why": "*Te* is the friend, and *si* introduces what you are asking about."
+    },
+    {
+      "prompt": "Type in Spanish: The price doesn't matter to us.",
+      "answer": "Nos da igual el precio.",
+      "accept": [
+        "Nos da lo mismo el precio."
+      ],
+      "why": "*Nos* means us, and *da* does not change."
+    },
+    {
+      "prompt": "Type in Spanish: I don't mind if it rains.",
+      "answer": "Me da igual si llueve.",
+      "accept": [
+        "Me da lo mismo si llueve."
+      ],
+      "why": "Put *si* and a clause after it for what you don't mind."
+    },
+    {
+      "prompt": "Make it about them: *Me da igual.* Say it doesn't matter to them.",
+      "answer": "Les da igual.",
+      "accept": [
+        "A ellos les da igual.",
+        "Les da lo mismo."
+      ],
+      "why": "More than one other person takes *les*."
+    },
+    {
+      "prompt": "Make it negative, about Mariana: *A Mariana le da igual.* Say it matters to her.",
+      "answer": "A Mariana no le da igual.",
+      "accept": [],
+      "why": "*No* goes before *le*, just as with *no me gusta*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo doy igual.",
+      "right": "Me da igual.",
+      "why": "Almost. The phrase works like *gustar*: the thing is the subject, so you need *me* and *da*."
+    },
+    {
+      "wrong": "Hernando da igual el precio.",
+      "right": "A Hernando le da igual el precio.",
+      "why": "Almost. The person who doesn't mind needs *a* and *le*, as in *a Hernando le gusta*."
+    },
+    {
+      "wrong": "Me da igual.",
+      "right": "Me parece bien.",
+      "why": "Almost, if you meant yes to a plan. *Me da igual* says you have no opinion, and it can sound cold. *Me parece bien* says you like the idea."
+    }
+  ],
+  "personal": "Think of a small choice you really don't care about, like coffee or juice. Say it with *Me da igual* and the two options."
+}

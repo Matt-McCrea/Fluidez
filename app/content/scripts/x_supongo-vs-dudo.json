@@ -1,0 +1,179 @@
+{
+  "node": "x:supongo-vs-dudo",
+  "hook": {
+    "line": "Vale and Tomás keep arguing about the café's future, and you can tell who is hopeful and who isn't by one tiny word. Guessing that something is true and doubting it sound like opposites, and in Spanish the verb after them is different too.",
+    "es": "Supongo que llega hoy.",
+    "en": "I suppose he's arriving today."
+  },
+  "examples": [
+    {
+      "es": "Supongo que llega hoy.",
+      "en": "I suppose he's arriving today."
+    },
+    {
+      "es": "Dudo que llegue hoy.",
+      "en": "I doubt he'll arrive today."
+    },
+    {
+      "es": "Supongo que Vale está en la cocina.",
+      "en": "I suppose Vale is in the kitchen."
+    },
+    {
+      "es": "Dudo que Vale esté en la cocina.",
+      "en": "I doubt Vale is in the kitchen."
+    },
+    {
+      "es": "Supongo que ellos quieren vender.",
+      "en": "I suppose they want to sell."
+    },
+    {
+      "es": "Dudo que ellos quieran vender.",
+      "en": "I doubt they want to sell."
+    }
+  ],
+  "rule": "Put the pairs side by side.\n\n*Supongo que llega*: you are guessing it is true. A guess still leans toward yes, so the verb stays plain: *llega*, *está*, *quieren*.\n\n*Dudo que llegue*: you lean toward no, so the verb takes the wish form: *llegue*, *esté*, *quieran*.\n\nSo the choice is not about how sure you are, it is about which way you lean. Leaning yes: plain verb. Leaning no: wish form.\n\nEnglish uses the same verb both times (I suppose he arrives, I doubt he arrives), so the only signal is the opening word. Read it first, then pick the verb.",
+  "smallPrint": "Teachers call this the contrast between the indicative after *suponer que* and the subjunctive after *dudar que*.",
+  "readAndPick": [
+    {
+      "es": "Supongo que Vale está en la cocina.",
+      "options": [
+        "I suppose Vale is in the kitchen.",
+        "I doubt Vale is in the kitchen."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Dudo que Vale esté en la cocina.",
+      "options": [
+        "I suppose Vale is in the kitchen.",
+        "I doubt Vale is in the kitchen."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dudo que ellos quieran vender.",
+      "options": [
+        "I suppose they want to sell.",
+        "I doubt they want to sell.",
+        "I doubt we want to sell."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Supongo que tienes razón.",
+      "options": [
+        "I doubt you're right. (to a friend)",
+        "I suppose you're right. (to a friend)",
+        "I hope you're right. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dudo que Hernando tenga hambre.",
+      "options": [
+        "I suppose Hernando is hungry.",
+        "I'm sure Hernando is hungry.",
+        "I doubt Hernando is hungry."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Supongo que podemos abrir hoy.",
+      "options": [
+        "I suppose we can open today.",
+        "I doubt we can open today.",
+        "I suppose they can open today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Dudo que sea verdad.",
+      "options": [
+        "I suppose it's true.",
+        "I doubt it's true."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Supongo que Altamira tiene un plan.",
+      "options": [
+        "I doubt Altamira has a plan.",
+        "I suppose Altamira has a plan.",
+        "I hope Altamira has a plan."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dudo que Mariana sepa la verdad.",
+      "options": [
+        "I doubt Mariana knows the truth.",
+        "I suppose Mariana knows the truth."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *llega* or *llegue* and type the whole sentence: *Supongo que ___ hoy.*",
+      "answer": "Supongo que llega hoy.",
+      "accept": [],
+      "why": "A guess leans toward yes, so the plain verb: *llega*."
+    },
+    {
+      "prompt": "Pick *llega* or *llegue* and type the whole sentence: *Dudo que ___ hoy.*",
+      "answer": "Dudo que llegue hoy.",
+      "accept": [],
+      "why": "A doubt leans toward no, so the wish form: *llegue*."
+    },
+    {
+      "prompt": "Type in Spanish: I suppose Vale is in the kitchen.",
+      "answer": "Supongo que Vale está en la cocina.",
+      "accept": [],
+      "why": "*Supongo que* keeps the plain verb: *está*."
+    },
+    {
+      "prompt": "Type in Spanish: I doubt Vale is in the kitchen.",
+      "answer": "Dudo que Vale esté en la cocina.",
+      "accept": [],
+      "why": "*Dudo que* switches *está* to *esté*."
+    },
+    {
+      "prompt": "Make it a guess: *Dudo que ellos quieran vender.* Start with *Supongo que*.",
+      "answer": "Supongo que ellos quieren vender.",
+      "accept": [
+        "Supongo que quieren vender."
+      ],
+      "why": "Once the opener is a guess, *quieran* goes back to *quieren*."
+    },
+    {
+      "prompt": "Make it a doubt: *Supongo que Hernando tiene hambre.* Start with *Dudo que*.",
+      "answer": "Dudo que Hernando tenga hambre.",
+      "accept": [],
+      "why": "After *dudo que*, *tiene* becomes *tenga*."
+    },
+    {
+      "prompt": "Type in Spanish: I suppose we can open today.",
+      "answer": "Supongo que podemos abrir hoy.",
+      "accept": [],
+      "why": "A guess, so the plain verb: *podemos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Supongo que llegue hoy.",
+      "right": "Supongo que llega hoy.",
+      "why": "Almost. A guess leans toward yes, so *supongo que* keeps the plain verb."
+    },
+    {
+      "wrong": "Dudo que llega hoy.",
+      "right": "Dudo que llegue hoy.",
+      "why": "Almost. English reuses the same verb after doubt, but Spanish switches to the wish form after *dudo que*."
+    },
+    {
+      "wrong": "Supongo que Vale esté en la cocina.",
+      "right": "Supongo que Vale está en la cocina.",
+      "why": "Almost. Do not let *que* trigger the wish form by itself: it is the doubt that does it, and a guess is not a doubt."
+    }
+  ],
+  "personal": "Think of a friend and where they probably are right now. Say one guess with *Supongo que* and one doubt with *Dudo que*."
+}

@@ -1,0 +1,174 @@
+{
+  "node": "p:seguramente-probablemente",
+  "hook": {
+    "line": "When Tomás asks where Hernando is, nobody knows for sure, but everyone has a good guess. *Seguramente* and *probablemente* are the words for a good guess, and one of them has a famous trap for English speakers.",
+    "es": "Seguramente está en la oficina.",
+    "en": "He's probably in the office."
+  },
+  "examples": [
+    {
+      "es": "Seguramente está en la oficina.",
+      "en": "He's probably in the office."
+    },
+    {
+      "es": "Probablemente Hernando venga hoy.",
+      "en": "Hernando will probably come today."
+    },
+    {
+      "es": "Seguramente Vale está en la cocina.",
+      "en": "Vale is probably in the kitchen."
+    },
+    {
+      "es": "Probablemente tienes razón.",
+      "en": "You're probably right. (to a friend)"
+    },
+    {
+      "es": "Seguramente no es verdad.",
+      "en": "It's probably not true."
+    },
+    {
+      "es": "¿Viene Hernando?\nPosiblemente.",
+      "en": "Is Hernando coming?\nPossibly."
+    }
+  ],
+  "rule": "*Seguramente* means \"most likely\", not \"surely\". It is a strong guess, not a promise. *Probablemente* means \"probably\", and *posiblemente* is \"possibly\", a weaker guess.\n\nAfter all three you can pick the verb:\nPlain verb (*está*, *tienes*): you are fairly confident.\nWish form (*venga*, *tengas*): you are less sure.\n\nThe plain verb is the safe default. Unlike *a lo mejor*, they allow both.\n\nThey go at the start of the sentence, or you can slide them after the subject: *Hernando seguramente viene*.\n\nTo say you are certain, drop the guess word and just state it.",
+  "smallPrint": "Teachers call these adverbs of probability. They are formed with *-mente*, and, like *quizás*, accept either mood.",
+  "readAndPick": [
+    {
+      "es": "Seguramente está en la oficina.",
+      "options": [
+        "He's definitely in the office, I checked.",
+        "He's probably in the office.",
+        "He was in the office."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Probablemente Hernando venga hoy.",
+      "options": [
+        "Hernando will probably come today.",
+        "Hernando came today.",
+        "Hernando can't come today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Probablemente tienes razón.",
+      "options": [
+        "You were right. (to a friend)",
+        "You're probably wrong. (to a friend)",
+        "You're probably right. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Seguramente no es verdad.",
+      "options": [
+        "It's probably not true.",
+        "It's definitely true.",
+        "It was true."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Viene Hernando?\nPosiblemente.",
+      "options": [
+        "Is Hernando coming?\nDefinitely.",
+        "Is Hernando coming?\nPossibly.",
+        "Is Hernando coming?\nNever."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Seguramente ellos quieren vender.",
+      "options": [
+        "They definitely don't want to sell.",
+        "We probably want to sell.",
+        "They probably want to sell."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Posiblemente Altamira cambie de idea.",
+      "options": [
+        "Altamira possibly changes his mind.",
+        "Altamira changed his mind.",
+        "Altamira will never change his mind."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Seguramente hay clientes mañana.",
+      "options": [
+        "There were customers yesterday.",
+        "There will probably be customers tomorrow.",
+        "There are no customers tomorrow."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Type in Spanish: He's probably in the office. Use *seguramente*.",
+      "answer": "Seguramente está en la oficina.",
+      "accept": [],
+      "why": "*Seguramente* plus the plain verb says you are fairly confident."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You're probably right. Use *probablemente*.",
+      "answer": "Probablemente tienes razón.",
+      "accept": [
+        "Seguramente tienes razón."
+      ],
+      "why": "A strong guess, so the plain verb: *tienes*."
+    },
+    {
+      "prompt": "Pick *está* or *esté* for a confident guess and type the whole sentence: *Seguramente Vale ___ en la cocina.*",
+      "answer": "Seguramente Vale está en la cocina.",
+      "accept": [],
+      "why": "The plain verb is the safe default after *seguramente*."
+    },
+    {
+      "prompt": "Type in Spanish: Hernando will probably come today. Use *probablemente* and the wish form.",
+      "answer": "Probablemente Hernando venga hoy.",
+      "accept": [],
+      "why": "The wish form of *venir* is *venga*, and it sounds less sure."
+    },
+    {
+      "prompt": "Type in Spanish: It's probably not true. Use *seguramente*.",
+      "answer": "Seguramente no es verdad.",
+      "accept": [],
+      "why": "The *no* goes before the verb."
+    },
+    {
+      "prompt": "Answer \"Is Hernando coming?\" with one word that means possibly.",
+      "answer": "Posiblemente.",
+      "accept": [],
+      "why": "*Posiblemente* is a weaker guess than *probablemente*."
+    },
+    {
+      "prompt": "Type in Spanish: There will probably be customers tomorrow. Use *seguramente*.",
+      "answer": "Seguramente hay clientes mañana.",
+      "accept": [],
+      "why": "*Hay* is the plain verb for \"there is\" and \"there are\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Seguramente Hernando está aquí, lo vi.",
+      "right": "Hernando está aquí, lo vi.",
+      "why": "Almost. If you saw it yourself, you know, so drop the guess word: *seguramente* leaves room to be wrong."
+    },
+    {
+      "wrong": "Seguramente Hernando está aquí, lo sé.",
+      "right": "Hernando está aquí, lo sé.",
+      "why": "Almost. English \"surely\" sounds certain, but *seguramente* only means most likely. If you know, say it without the guess word."
+    },
+    {
+      "wrong": "A lo mejor Hernando venga hoy.",
+      "right": "Probablemente Hernando venga hoy.",
+      "why": "Almost. The wish form is allowed after *probablemente*, but never after *a lo mejor*."
+    }
+  ],
+  "personal": "Think of someone you know and where they probably are right now. Say it with *Seguramente* or *Probablemente*."
+}

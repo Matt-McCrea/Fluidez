@@ -1,0 +1,178 @@
+{
+  "node": "g:quizas-a-lo-mejor",
+  "hook": {
+    "line": "Nobody at the café knows what Altamira will do next, so half of every conversation is *maybe*. Spanish has three ways to say it, and one of them is a trap: two take the wish form, one never does.",
+    "es": "A lo mejor Vale viene mañana.",
+    "en": "Maybe Vale is coming tomorrow."
+  },
+  "examples": [
+    {
+      "es": "A lo mejor Vale viene mañana.",
+      "en": "Maybe Vale is coming tomorrow."
+    },
+    {
+      "es": "Quizás Vale venga mañana.",
+      "en": "Maybe Vale will come tomorrow."
+    },
+    {
+      "es": "Tal vez tienes razón.",
+      "en": "Maybe you're right. (to a friend)"
+    },
+    {
+      "es": "Tal vez tengas razón.",
+      "en": "Maybe you're right. (to a friend)"
+    },
+    {
+      "es": "A lo mejor Hernando tiene hambre.",
+      "en": "Maybe Hernando is hungry."
+    },
+    {
+      "es": "Quizás Hernando tenga hambre.",
+      "en": "Maybe Hernando is hungry."
+    },
+    {
+      "es": "A lo mejor cierran temprano.",
+      "en": "Maybe they're closing early."
+    }
+  ],
+  "rule": "Three ways to say *maybe*:\n*A lo mejor* + plain verb, always: *A lo mejor viene*.\n*Quizás* + either verb.\n*Tal vez* + either verb.\n\nWith *quizás* and *tal vez* you choose. The plain verb (*tienes razón*) says you think it is fairly likely. The wish form (*tengas razón*) says you are less sure, more \"who knows\".\n\n*A lo mejor* has no choice: plain verb, every time. *A lo mejor tengas razón* is a classic mistake.\n\nSafe habit: if you are not sure which to use, say *a lo mejor* and the plain verb. It is the easiest one.\n\nEnglish just says \"maybe\" and keeps the verb. Spanish lets the verb carry how sure you are.",
+  "smallPrint": "Teachers call this the mood choice after adverbs of possibility: *quizás* and *tal vez* take the indicative or the subjunctive, while *a lo mejor* takes only the indicative.",
+  "readAndPick": [
+    {
+      "es": "A lo mejor Vale viene mañana.",
+      "options": [
+        "Vale definitely isn't coming tomorrow.",
+        "Maybe Vale is coming tomorrow.",
+        "Vale came yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tal vez tengas razón.",
+      "options": [
+        "Maybe you're right. (to a friend)",
+        "You're definitely right. (to a friend)",
+        "Maybe I'm right."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quizás Hernando tenga hambre.",
+      "options": [
+        "Maybe Hernando is hungry.",
+        "Hernando is hungry now.",
+        "Hernando was hungry."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A lo mejor cierran temprano.",
+      "options": [
+        "They closed early.",
+        "Maybe they're closing early.",
+        "They never close early."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tal vez tienes razón.",
+      "options": [
+        "I doubt you're right. (to a friend)",
+        "Maybe you're right, and I think it's fairly likely. (to a friend)",
+        "You were right. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quizás ellos tengan razón.",
+      "options": [
+        "Maybe I'm right.",
+        "They're definitely right.",
+        "Maybe they're right."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A lo mejor tenemos suerte.",
+      "options": [
+        "Maybe we're lucky.",
+        "Maybe they're lucky.",
+        "We aren't lucky."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A lo mejor llueve más tarde.",
+      "options": [
+        "It rained earlier.",
+        "It never rains here.",
+        "Maybe it'll rain later."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *viene* or *venga* and type the whole sentence: *A lo mejor Vale ___ mañana.*",
+      "answer": "A lo mejor Vale viene mañana.",
+      "accept": [],
+      "why": "*A lo mejor* never takes the wish form, so the plain verb: *viene*."
+    },
+    {
+      "prompt": "Type in Spanish: Maybe Hernando is hungry. Use *a lo mejor*.",
+      "answer": "A lo mejor Hernando tiene hambre.",
+      "accept": [],
+      "why": "*A lo mejor* plus the plain verb: *tiene*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Maybe you're right (fairly likely). Use *tal vez* and the plain verb.",
+      "answer": "Tal vez tienes razón.",
+      "accept": [],
+      "why": "The plain verb after *tal vez* says you think it is likely."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Maybe you're right (not sure). Use *tal vez* and the wish form.",
+      "answer": "Tal vez tengas razón.",
+      "accept": [],
+      "why": "The wish form after *tal vez* says you are less sure."
+    },
+    {
+      "prompt": "Type in Spanish: Maybe it'll rain later. Use *a lo mejor*.",
+      "answer": "A lo mejor llueve más tarde.",
+      "accept": [],
+      "why": "Plain verb after *a lo mejor*: *llueve*."
+    },
+    {
+      "prompt": "Type in Spanish: Maybe Vale will come tomorrow. Use *quizás* and the wish form.",
+      "answer": "Quizás Vale venga mañana.",
+      "accept": [
+        "Quizás venga Vale mañana."
+      ],
+      "why": "*Quizás* lets you choose, and the wish form of *venir* is *venga*."
+    },
+    {
+      "prompt": "Change *Quizás Hernando tenga hambre* so it starts with *A lo mejor*.",
+      "answer": "A lo mejor Hernando tiene hambre.",
+      "accept": [],
+      "why": "*A lo mejor* has no choice, so *tenga* goes back to *tiene*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "A lo mejor Vale venga mañana.",
+      "right": "A lo mejor Vale viene mañana.",
+      "why": "Almost. *A lo mejor* never takes the wish form: always the plain verb."
+    },
+    {
+      "wrong": "A lo mejor tengas razón.",
+      "right": "A lo mejor tienes razón.",
+      "why": "Almost. Same rule: with *a lo mejor* the plain verb is the only choice."
+    },
+    {
+      "wrong": "A lo mejor que Vale viene mañana.",
+      "right": "A lo mejor Vale viene mañana.",
+      "why": "Almost. English can say \"maybe that\", but *a lo mejor* is complete on its own: no *que* after it."
+    }
+  ],
+  "personal": "Think of one plan you might have this weekend but are not sure about. Say it with *A lo mejor*, then again with *quizás* and the wish form."
+}

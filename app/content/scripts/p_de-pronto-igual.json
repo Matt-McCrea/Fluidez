@@ -1,0 +1,172 @@
+{
+  "node": "p:de-pronto-igual",
+  "hook": {
+    "line": "Listen to people in Bogotá for an afternoon and you will hear *de pronto* and *igual* all the time, and neither means what the dictionary says. In everyday speech, both mean *maybe*.",
+    "es": "De pronto llueve más tarde.",
+    "en": "Maybe it'll rain later."
+  },
+  "examples": [
+    {
+      "es": "De pronto llueve más tarde.",
+      "en": "Maybe it'll rain later."
+    },
+    {
+      "es": "Igual no viene, no sé.",
+      "en": "He might not come, I don't know."
+    },
+    {
+      "es": "De pronto Vale viene mañana.",
+      "en": "Maybe Vale is coming tomorrow."
+    },
+    {
+      "es": "Igual Hernando tiene hambre.",
+      "en": "Maybe Hernando is hungry."
+    },
+    {
+      "es": "Igual no abrimos mañana.",
+      "en": "Maybe we won't open tomorrow."
+    },
+    {
+      "es": "De pronto tienes razón.",
+      "en": "Maybe you're right. (to a friend)"
+    }
+  ],
+  "rule": "In Colombia, *de pronto* at the start of a sentence means *maybe*, not only \"suddenly\". *Igual* at the start also means *maybe*, in casual talk.\n\nBoth work like *a lo mejor*: they are followed by the plain verb, no wish form. *De pronto llueve*, *Igual no viene*.\n\nWatch out for *igual* as \"the same\" (*Me da igual*, *Es igual*). When it opens a sentence and a verb follows, it is *maybe*.\n\nThey are casual. For a polite or written *maybe*, use *a lo mejor* or *quizás*. In another country, people will understand you but may not say it themselves.",
+  "smallPrint": "Teachers call these colloquial adverbs of possibility. Like *a lo mejor*, they take the indicative.",
+  "readAndPick": [
+    {
+      "es": "De pronto llueve más tarde.",
+      "options": [
+        "Suddenly it rains later.",
+        "It rained later.",
+        "Maybe it'll rain later."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Igual no viene, no sé.",
+      "options": [
+        "He might not come, I don't know.",
+        "He always comes, I know.",
+        "He came, I don't know."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Igual Hernando tiene hambre.",
+      "options": [
+        "Hernando is hungry too.",
+        "Hernando is never hungry.",
+        "Maybe Hernando is hungry."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "De pronto tienes razón.",
+      "options": [
+        "Maybe you're right. (to a friend)",
+        "You were right. (to a friend)",
+        "Suddenly you're right. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Igual no abrimos mañana.",
+      "options": [
+        "Maybe we won't open tomorrow.",
+        "Maybe they won't open tomorrow.",
+        "We always open tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "De pronto Altamira quiere hablar con nosotros.",
+      "options": [
+        "Altamira doesn't want to talk to us.",
+        "Maybe Altamira wants to talk to us.",
+        "Altamira wanted to talk to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Igual no hay clientes hoy.",
+      "options": [
+        "There are lots of customers today.",
+        "There were no customers today.",
+        "Maybe there won't be customers today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "De pronto Mariana sabe algo.",
+      "options": [
+        "Maybe Mariana knows something.",
+        "Mariana knows nothing.",
+        "Suddenly Mariana knows something."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Type in Spanish, using *de pronto*: Maybe it'll rain later.",
+      "answer": "De pronto llueve más tarde.",
+      "accept": [],
+      "why": "*De pronto* opens the sentence, and the plain verb follows."
+    },
+    {
+      "prompt": "Type in Spanish, using *igual*: Maybe Hernando is hungry.",
+      "answer": "Igual Hernando tiene hambre.",
+      "accept": [],
+      "why": "*Igual* at the start means maybe, and the verb stays plain: *tiene*."
+    },
+    {
+      "prompt": "Pick *viene* or *venga* and type the whole sentence: *De pronto Vale ___ mañana.*",
+      "answer": "De pronto Vale viene mañana.",
+      "accept": [],
+      "why": "Like *a lo mejor*, *de pronto* takes the plain verb."
+    },
+    {
+      "prompt": "Type in Spanish, using *igual*: Maybe we won't open tomorrow.",
+      "answer": "Igual no abrimos mañana.",
+      "accept": [],
+      "why": "The *no* goes right before the verb, after *igual*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend, using *de pronto*: Maybe you're right.",
+      "answer": "De pronto tienes razón.",
+      "accept": [],
+      "why": "*De pronto* plus the plain verb: *tienes*."
+    },
+    {
+      "prompt": "Type in Spanish, using *igual*: Maybe it isn't true.",
+      "answer": "Igual no es verdad.",
+      "accept": [],
+      "why": "*Igual* plus *no* plus the plain verb."
+    },
+    {
+      "prompt": "Say the same thing with *a lo mejor*: *De pronto Mariana sabe algo.*",
+      "answer": "A lo mejor Mariana sabe algo.",
+      "accept": [],
+      "why": "The three work alike: all take the plain verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "De pronto Vale venga mañana.",
+      "right": "De pronto Vale viene mañana.",
+      "why": "Almost. *De pronto* behaves like *a lo mejor*: no wish form."
+    },
+    {
+      "wrong": "Igual no venga.",
+      "right": "Igual no viene.",
+      "why": "Almost. *Igual* works like *a lo mejor*, so no wish form: the plain verb."
+    },
+    {
+      "wrong": "Llueve de pronto.",
+      "right": "De pronto llueve.",
+      "why": "Almost. Put *de pronto* first when you mean maybe; after the verb it reads as \"suddenly\"."
+    }
+  ],
+  "personal": "Think of something that might happen in your day that you are not sure about. Say it starting with *De pronto* or *Igual*."
+}

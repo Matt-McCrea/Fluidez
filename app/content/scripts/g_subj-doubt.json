@@ -1,0 +1,196 @@
+{
+  "node": "g:subj-doubt",
+  "hook": {
+    "line": "Everyone in La Candelaria has a theory about whether Altamira will really get the block, and Tomás is tired of being asked. Sometimes the honest answer is neither yes nor no: you doubt it, or it might happen. Spanish has a verb form for that.",
+    "es": "Dudo que Altamira cambie de idea.",
+    "en": "I doubt Altamira will change his mind."
+  },
+  "examples": [
+    {
+      "es": "Dudo que Altamira cambie de idea.",
+      "en": "I doubt Altamira will change his mind."
+    },
+    {
+      "es": "Es posible que llueva hoy.",
+      "en": "It might rain today."
+    },
+    {
+      "es": "Puede que tengas razón.",
+      "en": "You may be right. (to a friend)"
+    },
+    {
+      "es": "Dudo que Vale venga hoy.",
+      "en": "I doubt Vale is coming today."
+    },
+    {
+      "es": "Es posible que Mariana sepa algo.",
+      "en": "Mariana might know something."
+    },
+    {
+      "es": "No dudo que tienes razón.",
+      "en": "I don't doubt you're right. (to a friend)"
+    },
+    {
+      "es": "¿Dudas que ellos vengan?",
+      "en": "Do you doubt they'll come? (to a friend)"
+    }
+  ],
+  "rule": "Look at the verb after *que*: *cambie*, *llueva*, *tengas*, *venga*. It is the wish form you already know from *quiero que* and *no creo que*.\n\nThree frames lead to it:\n*Dudo que* + wish form\n*Es posible que* + wish form\n*Puede que* + wish form\n\nThe idea is simple. If you doubt something, or it is only possible, you are not putting it on the table as a fact, so the verb steps back.\n\nThe flip side: *No dudo que* means you are sure, so the plain verb comes back: *No dudo que tienes razón*.\n\nEnglish never changes the verb here (I doubt he comes, I doubt he's coming). In Spanish, spot the doubt word and switch.",
+  "smallPrint": "Teachers call this the subjunctive after expressions of doubt and possibility. *No dudo que* is certainty, so it takes the indicative.",
+  "readAndPick": [
+    {
+      "es": "Dudo que Vale venga hoy.",
+      "options": [
+        "I doubt Vale is coming today.",
+        "I know Vale is coming today.",
+        "I hope Vale comes today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es posible que llueva hoy.",
+      "options": [
+        "It rained today.",
+        "It's raining today for sure.",
+        "It might rain today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No dudo que tienes razón.",
+      "options": [
+        "I don't doubt you're right. (to a friend)",
+        "I doubt you're right. (to a friend)",
+        "I hope you're right. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Puede que Mariana sepa algo.",
+      "options": [
+        "Mariana knows something for sure.",
+        "Mariana might know something."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dudo que mi abuela lo sepa.",
+      "options": [
+        "I'm sure my grandmother knows it.",
+        "I think my grandmother knew it.",
+        "I doubt my grandmother knows it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No dudo que Altamira quiere comprar el barrio.",
+      "options": [
+        "I doubt Altamira wants to buy the neighbourhood.",
+        "I'm sure Altamira wants to buy the neighbourhood.",
+        "Altamira might want to buy the neighbourhood."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dudo que ellos quieran vender.",
+      "options": [
+        "I doubt they want to sell.",
+        "I doubt we want to sell.",
+        "I doubt you want to sell. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Puede que tengamos plata mañana.",
+      "options": [
+        "They might have money tomorrow.",
+        "We might have money tomorrow.",
+        "I have money tomorrow for sure."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es posible que el café esté abierto.",
+      "options": [
+        "The café is open for sure.",
+        "The café was open.",
+        "The café might be open."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *venga* or *viene* and type the whole sentence: *Dudo que Vale ___ hoy.*",
+      "answer": "Dudo que Vale venga hoy.",
+      "accept": [],
+      "why": "After *dudo que* the verb takes the wish form: *venga*."
+    },
+    {
+      "prompt": "Pick *tienes* or *tengas* and type the whole sentence, to a friend: *Puede que ___ razón.*",
+      "answer": "Puede que tengas razón.",
+      "accept": [],
+      "why": "*Puede que* means it is only possible, so the wish form: *tengas*."
+    },
+    {
+      "prompt": "Pick *tienes* or *tengas* and type the whole sentence, to a friend: *No dudo que ___ razón.*",
+      "answer": "No dudo que tienes razón.",
+      "accept": [],
+      "why": "*No dudo que* means you are sure, so the plain verb comes back: *tienes*."
+    },
+    {
+      "prompt": "Type in Spanish: I doubt Altamira will change his mind.",
+      "answer": "Dudo que Altamira cambie de idea.",
+      "accept": [],
+      "why": "*Dudo que* is followed by the wish form of *cambiar*: *cambie*."
+    },
+    {
+      "prompt": "Type in Spanish: It might rain today.",
+      "answer": "Es posible que llueva hoy.",
+      "accept": [
+        "Puede que llueva hoy."
+      ],
+      "why": "Both *es posible que* and *puede que* say it is possible, and both take *llueva*."
+    },
+    {
+      "prompt": "Type in Spanish: Mariana might know something.",
+      "answer": "Es posible que Mariana sepa algo.",
+      "accept": [
+        "Puede que Mariana sepa algo."
+      ],
+      "why": "A possibility, so the wish form of *saber*: *sepa*."
+    },
+    {
+      "prompt": "Make it a doubt: *Mi abuela lo sabe.* Start with *Dudo que*.",
+      "answer": "Dudo que mi abuela lo sepa.",
+      "accept": [],
+      "why": "Once you start with *dudo que*, *sabe* becomes *sepa*."
+    },
+    {
+      "prompt": "Type in Spanish: I doubt they want to sell.",
+      "answer": "Dudo que ellos quieran vender.",
+      "accept": [
+        "Dudo que quieran vender."
+      ],
+      "why": "*Quieren* becomes *quieran* after *dudo que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Dudo que Vale viene hoy.",
+      "right": "Dudo que Vale venga hoy.",
+      "why": "Almost. English keeps the same verb after doubt, but Spanish switches to the wish form after *dudo que*."
+    },
+    {
+      "wrong": "No dudo que tengas razón.",
+      "right": "No dudo que tienes razón.",
+      "why": "Almost. *No dudo que* means you are sure, so there is nothing to step back from: the plain verb stays."
+    },
+    {
+      "wrong": "Es posible que llueve hoy.",
+      "right": "Es posible que llueva hoy.",
+      "why": "Almost. *Es posible que* only says it might happen, so the verb takes the wish form."
+    }
+  ],
+  "personal": "Say one thing you doubt about this week, starting with *Dudo que*. Then say one thing that might happen, starting with *Es posible que* or *Puede que*."
+}
