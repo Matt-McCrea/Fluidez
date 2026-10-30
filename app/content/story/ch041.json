@@ -2,7 +2,7 @@
   "id": "ch041",
   "unit": "u15",
   "title": "Modo avión",
-  "text": "Era la chaqueta del esposo de Gloria, y era enorme.\nGloria: Es grande, mijo, pero hoy no sale sin chaqueta. No quiero otra gripa en esta casa.\nDespués de tres días en la cama, Tomás llegó al café a las seis. Vale estaba detrás del mostrador.\nVale: ¡Tomás! Con esa chaqueta, pareces turista.\nTomás: Me siento mucho mejor, gracias.\nVale: Me parece que todavía tienes la cara roja.\nGloria entró detrás de él con el pan.\nGloria: Doce llamadas en tres días, Vale. Yo las conté.\nVale: No estaba preocupada. Estaba informada. Es diferente.\nSimón: ¡Informada! ¡Informada!\nVale puso el celular en modo avión.\nMariana llegó con una noticia.\nMariana: Tengo que informarles algo. Con la casa de don Julio, Altamira ya tiene cinco casas de ocho. Quiere el control de toda la cuadra.\nTomás: ¿Y la nuestra?\nMariana: Sin la escritura de Rosa, no sé.\nVale: Entonces la buscamos hoy, todos.\nTomás: Estoy de acuerdo, y Simón también.\nHernando no habló de sus nietos. No pidió pan. Tomó su tinto y no dijo una palabra.\nVale: Hernando, ¿le pasa algo?\nHernando: Es personal, mija.\nVale no aceptó la respuesta. Miró a Tomás.\nVale: Tomás, ¿te parece que Hernando está bien?\nTomás: Me parece que sí. Está tranquilo.\nVale: Aprendiste mucho español, Tomás, pero todavía hablas mal cuando no dices la verdad.\nVale fue a la cocina. Hernando miró la puerta de la cocina.\nHernando: Mijo, el jueves a las ocho... ¿viene conmigo? No me gusta ir solo.\nTomás: Claro que sí.\nHernando: Usted me cae bien, mijo. Como Rosa.\nCuando Vale volvió, Tomás tenía un plan.\nTomás: Vale, el jueves por la mañana no estoy. Voy a San Victorino. Necesitamos sillas nuevas.\nVale: ¡Me encanta la idea! Voy contigo.\nSimón: ¡Voy contigo! ¡Voy contigo!",
+  "text": "Gloria: Hoy no sale sin chaqueta, mijo. No quiero otra gripa en esta casa.\nEra la chaqueta del esposo de Gloria, y era enorme.\nDespués de tres días en la cama, Tomás llegó al café a las seis. Vale estaba detrás del mostrador.\nVale: ¡Tomás! Con esa chaqueta pareces un niño con la ropa de su papá. ¿Cómo te sientes?\nTomás: Mucho mejor, gracias.\nVale: Pues me parece que todavía tienes la cara roja.\nGloria entró detrás de él con el pan.\nGloria: Doce llamadas en tres días, Vale. Yo las conté.\nVale: No estaba preocupada. Estaba informada. Es diferente.\nSimón: ¡Informada! ¡Informada!\nVale estaba roja. Sin decir nada, puso el celular en modo avión.\nA las ocho llegó Mariana.\nMariana: Tengo que informarles algo. Altamira ya no compra solo en esta cuadra. Ahora compra también en la cuadra de Gloria. Quiere el control de todo el barrio.\nTomás: ¿Y el café?\nMariana: Altamira tiene el contrato de arriendo. Pero el edificio, sin la escritura de Rosa, no sé.\nVale: Entonces hoy la buscamos todos.\nSimón: ¡De acuerdo! ¡De acuerdo!\nHernando no habló de sus nietos. No pidió pan. Tomó su tinto sin decir una palabra.\nVale: Don Hernando, ¿le pasa algo?\nHernando: Es personal, mija.\nVale no aceptó la respuesta. Miró a Tomás.\nVale: Tomás, ¿te parece que don Hernando está bien?\nTomás: Me parece que sí. Está tranquilo.\nVale: Aprendiste mucho español, Tomás. Pero cuando mientes, hablas como el primer día.\nVale fue a la cocina.\nHernando: Mijo, el jueves a las ocho... ¿vienes conmigo? No quiero ir solo.\nTomás: Claro. Yo voy con usted, don Hernando.\nCuando Vale volvió, Tomás ya tenía un plan.\nTomás: Vale, el jueves por la mañana no estoy. Voy a San Victorino. Necesitamos sillas nuevas.\nVale: ¡Me encanta la idea! Voy contigo.\nTomás: Bueno... nos vemos allá a las nueve.\nSimón: ¡Voy contigo! ¡Voy contigo!",
   "gloss": [
     {
       "es": "mijo",
@@ -17,6 +17,10 @@
       "en": "counter"
     },
     {
+      "es": "pareces un niño con la ropa de su papá",
+      "en": "you look like a little boy in his dad's clothes"
+    },
+    {
       "es": "Estaba informada. Es diferente.",
       "en": "I was keeping informed. It's different."
     },
@@ -25,20 +29,24 @@
       "en": "airplane mode"
     },
     {
-      "es": "Ahora tiene cinco casas de ocho.",
-      "en": "Now it has five houses out of eight."
+      "es": "Quiere el control de todo el barrio.",
+      "en": "It wants control of the whole neighbourhood."
     },
     {
-      "es": "pero todavía hablas mal cuando no dices la verdad",
-      "en": "but you still speak badly when you're not telling the truth"
+      "es": "cuando mientes",
+      "en": "when you lie"
     },
     {
-      "es": "Usted me cae bien, mijo.",
-      "en": "I like you, son."
+      "es": "como el primer día",
+      "en": "like on your first day"
     },
     {
       "es": "San Victorino",
       "en": "San Victorino (a huge, cheap shopping district in central Bogotá)"
+    },
+    {
+      "es": "Sin decir nada",
+      "en": "Without a word"
     }
   ],
   "questions": [
@@ -46,29 +54,29 @@
       "q": "Why does Vale put her phone in airplane mode?",
       "options": [
         "Gloria has just told everyone she called twelve times in three days",
-        "Mariana is calling",
-        "The internet isn't working",
-        "Simón is playing with it"
+        "The battery is low",
+        "Altamira keeps calling",
+        "She is going on a plane"
       ],
       "answer": 0
     },
     {
       "q": "What is Mariana's news?",
       "options": [
-        "Altamira now owns five of the eight houses and wants the whole block",
-        "Altamira has sold its houses",
-        "The notary found the deed",
-        "Don Julio is coming back"
+        "Altamira is now buying on Gloria's block too, and wants the whole neighbourhood",
+        "Altamira has sold the café",
+        "Altamira has found the deed",
+        "Altamira is leaving La Candelaria"
       ],
       "answer": 0
     },
     {
       "q": "¿Cómo sabe Vale que Tomás no dice la verdad?",
       "options": [
-        "Porque Tomás habla mal cuando no dice la verdad",
-        "Porque Simón le dice todo",
+        "Porque Tomás habla como el primer día",
+        "Porque Tomás está rojo",
         "Porque Hernando se lo dice",
-        "Porque Gloria contó las llamadas"
+        "Porque Simón lo repite"
       ],
       "answer": 0
     },
@@ -76,9 +84,9 @@
       "q": "Why does Tomás say he's going to San Victorino on Thursday?",
       "options": [
         "To hide that he's going with Hernando to the doctor",
-        "Because the café really needs a grinder",
-        "Because Vale asked him to",
-        "To see Mariana"
+        "To buy a new suitcase",
+        "To meet Mariana",
+        "To visit the notary"
       ],
       "answer": 0
     }
@@ -90,7 +98,7 @@
         "Gloria's husband's",
         "Hernando's",
         "Rosa's",
-        "Joaquín's"
+        "His father's"
       ],
       "answer": 0
     },
@@ -98,9 +106,9 @@
       "q": "What does Tomás tell Vale they need?",
       "options": [
         "New chairs",
-        "A new grinder",
+        "A new coffee machine",
         "New uniforms",
-        "A new phone"
+        "A new door"
       ],
       "answer": 0
     },
@@ -108,26 +116,24 @@
       "q": "What does Hernando not do this morning?",
       "options": [
         "Talk about his grandchildren or ask for bread",
-        "Drink his coffee",
-        "Say good morning to Simón",
-        "Sit down"
+        "Drink his tinto",
+        "Come to the café",
+        "Say hello to Simón"
       ],
       "answer": 0
     }
   ],
-  "hook": "Tomás has promised to go with Hernando to the heart doctor on Thursday at eight, and told Vale he is shopping for chairs in San Victorino. Vale loves the idea, and she is coming too.",
+  "hook": "Tomás has promised to go with Hernando to the heart doctor on Thursday at eight, and told Vale he is shopping for chairs in San Victorino. Vale loves the idea. She will be waiting for him there at nine.",
   "requires": [
     "c:bien-y-tu",
+    "c:chao-nos-vemos",
     "c:claro-listo",
     "c:entonces-bueno",
     "c:era",
-    "c:estoy-de-acuerdo",
     "c:gracias-de-nada",
-    "c:la-verdad",
     "c:me-encanta",
-    "c:me-gusta",
-    "c:me-siento-mal",
     "c:no-se",
+    "c:pues",
     "c:quiero",
     "c:tengo",
     "c:tengo-que",
@@ -135,20 +141,20 @@
     "c:tranquilo",
     "c:voy-a",
     "c:voy-vas",
+    "c:ya-no",
     "g:adjective-agreement",
     "g:demonstratives",
     "g:direct-objects",
     "g:estar-location-states",
     "g:estar-participle",
     "g:gender-articles",
-    "g:gustar-basic",
     "g:gustar-full",
     "g:imperfect-states",
     "g:indirect-objects",
     "g:ir-a-plans",
     "g:object-pronoun-position",
     "g:parecer-quedar",
-    "g:possessives",
+    "g:prep-infinitive",
     "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
@@ -158,12 +164,14 @@
     "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
     "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
     "g:ser-identity",
     "g:stem-boot",
-    "g:stem-e-i",
     "g:that-clauses",
     "g:verb-infinitive",
     "g:yo-irregular",
+    "p:aqui-ahi-alla",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
     "p:cerca-de",
@@ -176,6 +184,8 @@
     "p:ir-venir",
     "p:masculine-plural-mixed",
     "p:nos-vemos-a-las",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
     "p:otro-no-article",
     "p:por-la-manana",
     "p:position-de",
@@ -189,11 +199,15 @@
   "lexemes": [
     "l:aceptar",
     "l:acuerdo",
+    "l:ahora",
+    "l:allá",
     "l:aprender",
+    "l:arriendo",
     "l:avión",
+    "l:barrio",
     "l:bien",
+    "l:bueno",
     "l:buscar",
-    "l:caer",
     "l:café",
     "l:cama",
     "l:cara",
@@ -202,15 +216,18 @@
     "l:chaqueta",
     "l:claro",
     "l:cocina",
-    "l:comer",
+    "l:comprar",
     "l:contar",
+    "l:contrato",
     "l:control",
     "l:cuadra",
+    "l:cómo",
     "l:decir",
     "l:después",
     "l:detrás",
     "l:diferente",
     "l:día",
+    "l:edificio",
     "l:encantar",
     "l:enorme",
     "l:entrar",
@@ -218,9 +235,7 @@
     "l:español",
     "l:esposo",
     "l:estar",
-    "l:grande",
     "l:gripa",
-    "l:gustar",
     "l:hablar",
     "l:hoy",
     "l:idea",
@@ -229,9 +244,9 @@
     "l:jueves",
     "l:llamada",
     "l:llegar",
-    "l:mal",
     "l:mañana",
     "l:mejor",
+    "l:mentir",
     "l:mija",
     "l:mijo",
     "l:mirar",
@@ -239,10 +254,11 @@
     "l:mostrador",
     "l:necesitar",
     "l:nieto",
-    "l:noticia",
+    "l:niño",
     "l:nuevo",
     "l:palabra",
     "l:pan",
+    "l:papá",
     "l:parecer",
     "l:pasar",
     "l:pedir",
@@ -250,10 +266,10 @@
     "l:plan",
     "l:poner",
     "l:preocupado",
-    "l:puerta",
     "l:querer",
     "l:respuesta",
     "l:rojo",
+    "l:ropa",
     "l:saber",
     "l:salir",
     "l:sentirse",
@@ -263,9 +279,8 @@
     "l:tinto",
     "l:tomar",
     "l:tranquilo",
-    "l:turista",
     "l:venir",
-    "l:verdad",
+    "l:ver",
     "l:volver"
   ]
 }

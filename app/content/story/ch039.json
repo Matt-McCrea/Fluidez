@@ -2,23 +2,31 @@
   "id": "ch039",
   "unit": "u15",
   "title": "Treinta y nueve",
-  "text": "Gloria: ¡Tomás! ¿Qué le pasa, mijo? Son las cinco, y usted todavía está en la cama.\nTomás: Estoy bien, Gloria. Tengo que abrir el café. Vale llega a las seis.\nTomás se levantó, pero tenía mucha tos y la cara roja. Gloria le puso la mano en la cabeza.\nGloria: Mijo, usted tiene fiebre. Treinta y nueve.\nTomás: No es fiebre. Es cansancio.\nGloria: ¿Cansancio? Usted tiene gripa. Es la lluvia de anoche. Usted es fuerte, pero hoy está enfermo. ¡A la cama!\nA las seis y cinco sonó el celular.\nVale: ¿Aló? Tomás, estoy en el café. No hay tinto, y no hay Tomás. ¿Te pasa algo?\nTomás: Qué pena, Vale. Estoy enfermo. Tengo gripa.\nVale: ¿Gripa? Bueno. No estoy preocupada. Hoy no trabajas, hoy descansas, ¿de acuerdo?\nTomás: Depende. ¿Quién hace el tinto?\nSimón: ¡Depende! ¡Depende!\nDetrás de Vale, Hernando gritó: ¡Yo, mijo! ¡Y mi tinto es mejor que el tinto de Vale!\nVale: No estoy de acuerdo.\nA las nueve, Vale llamó otra vez. A las doce, otra vez. A las tres, otra vez.\nVale: No estoy preocupada, Tomás. Es una pregunta y ya. ¿Todavía tienes fiebre?\nGloria: Cuatro llamadas en un día. Esa niña no está preocupada, claro.\nGloria le subió una aguapanela y le habló del barrio. La señora de la tienda tiene novio. Y don Julio, el vecino de la casa azul, vendió su casa a Altamira.\nTomás: ¿Don Julio? ¿Ya vendió?\nGloria: Ya vendió, mijo. Ahora somos menos en la cuadra.\nLa aguapanela estaba rica.\nGloria: Cuando yo estaba enferma, Rosa me subía aguapanela todos los días. Ahora le subo aguapanela yo.\nGloria: Otra cosa. Don Hernando siempre es tranquilo, pero esta semana está nervioso. Tiene una cita con el médico el jueves, y no habla de eso con nadie.\nTomás: ¿Con nadie?\nGloria: Con nadie. Ni con Vale. Ni conmigo.",
+  "text": "Gloria: ¡Tomás! ¿Qué le pasa, mijo? Son las cinco, y usted todavía está en la cama.\nTomás: Estoy bien, doña Gloria. Tengo que abrir el café. Vale llega a las seis.\nTomás se levantó, pero tenía mucha tos y la cara roja. Gloria le trajo un termómetro.\nGloria: Treinta y nueve, mijo. Usted tiene fiebre.\nTomás: No es fiebre. Es cansancio.\nGloria: ¿Cansancio? Con esa tos y esa fiebre, usted tiene gripa. Es la lluvia de anoche. ¡A la cama!\nA las seis y cinco sonó el celular.\nVale: ¿Aló? Tomás, estoy en el café. No hay tinto, y no hay Tomás. ¿Te pasa algo?\nTomás: Qué pena, Vale. Tengo gripa.\nVale: Bueno. No estoy preocupada, ¿eh? Pero hoy no trabajas. Hoy descansas, ¿de acuerdo?\nTomás: Depende. ¿Quién le hace el tinto a don Hernando?\nSimón: ¡Depende! ¡Depende!\nA las siete, Vale llamó otra vez. Detrás de ella, Hernando gritó: ¡El tinto lo hago yo, mijo! ¡Y es mejor que el de Vale!\nVale: No estoy de acuerdo.\nA las doce, otra vez. A las tres, otra vez.\nVale: ¿Todavía tienes fiebre? No estoy preocupada. Es una pregunta y ya.\nGloria: Cuatro llamadas en un día. Esa niña no está preocupada, claro.\nGloria le subió una aguapanela caliente y le contó las noticias del barrio. Don Julio, el vecino de la casa azul, vendió su casa a Altamira.\nGloria: Ahora somos menos en la cuadra, mijo.\nGloria: Cuando yo estaba enferma, Rosa me subía aguapanela todos los días. Ahora me toca a mí.\nGloria: Otra cosa. Don Hernando siempre es muy tranquilo, pero esta semana está nervioso. Ayer lo vi en la droguería con una orden del médico. Tiene cita el jueves, y no le cuenta a nadie.\nTomás: ¿Y usted cómo sabe?\nGloria: Mijo, en este barrio yo lo sé todo.",
   "gloss": [
     {
       "es": "mijo",
       "en": "son (a fond way to talk to a younger man)"
     },
     {
-      "es": "Treinta y nueve.",
-      "en": "Thirty-nine (degrees)."
+      "es": "termómetro",
+      "en": "thermometer"
     },
     {
-      "es": "Es la lluvia de anoche.",
-      "en": "It's last night's rain."
+      "es": "Treinta y nueve",
+      "en": "Thirty-nine (degrees)"
     },
     {
       "es": "Qué pena, Vale.",
       "en": "Sorry, Vale."
+    },
+    {
+      "es": "¿Quién le hace el tinto a don Hernando?",
+      "en": "Who's going to make Don Hernando's coffee?"
+    },
+    {
+      "es": "El tinto lo hago yo",
+      "en": "I'll make the coffee"
     },
     {
       "es": "Es una pregunta y ya.",
@@ -37,12 +45,24 @@
       "en": "Rosa brought aguapanela up to me every day"
     },
     {
-      "es": "Ahora le subo aguapanela yo.",
-      "en": "Now I'm the one who brings you aguapanela."
+      "es": "Ahora me toca a mí.",
+      "en": "Now it's my turn."
     },
     {
-      "es": "Ni con Vale. Ni conmigo.",
-      "en": "Not even with Vale. Not even with me."
+      "es": "una orden del médico",
+      "en": "a doctor's referral"
+    },
+    {
+      "es": "no le cuenta a nadie",
+      "en": "he isn't telling anyone"
+    },
+    {
+      "es": "yo lo sé todo",
+      "en": "I know everything"
+    },
+    {
+      "es": "Es la lluvia de anoche.",
+      "en": "It's from last night's rain."
     }
   ],
   "questions": [
@@ -69,7 +89,7 @@
     {
       "q": "¿Qué noticia del barrio cuenta Gloria?",
       "options": [
-        "Don Julio vendió su casa a Altamira",
+        "Don Julio le vendió su casa a Altamira",
         "Altamira vendió la cuadra",
         "La tienda está cerrada",
         "Hernando vendió la Burra"
@@ -77,9 +97,9 @@
       "answer": 0
     },
     {
-      "q": "What is strange about Don Hernando this week?",
+      "q": "What has Gloria found out about Don Hernando?",
       "options": [
-        "He is nervous, and he won't talk about a doctor's appointment",
+        "He has a doctor's appointment on Thursday and is telling nobody",
         "He has stopped drinking coffee",
         "He wants to sell the café",
         "He is angry with Vale"
@@ -99,9 +119,9 @@
       "answer": 0
     },
     {
-      "q": "What does Hernando claim about his coffee?",
+      "q": "What does Hernando shout about the coffee?",
       "options": [
-        "It is better than Vale's",
+        "He'll make it, and his is better than Vale's",
         "It is the same as Rosa's",
         "It is too strong",
         "It is free today"
@@ -109,12 +129,12 @@
       "answer": 0
     },
     {
-      "q": "Who used to bring Gloria aguapanela when she was ill?",
+      "q": "How does Gloria know about Hernando's appointment?",
       "options": [
-        "Rosa",
-        "Vale",
-        "Hernando",
-        "Don Julio"
+        "She saw him at the pharmacy with a doctor's referral",
+        "Hernando told her",
+        "Vale told her",
+        "Rosa wrote it in her notebook"
       ],
       "answer": 0
     }
@@ -127,6 +147,7 @@
     "c:depende",
     "c:entonces-bueno",
     "c:estoy-de-acuerdo",
+    "c:hago-salgo-vengo",
     "c:hay",
     "c:que-pena",
     "c:te-pasa-algo",
@@ -136,6 +157,7 @@
     "g:adjective-agreement",
     "g:comparatives",
     "g:demonstratives",
+    "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
@@ -163,12 +185,11 @@
     "p:days-el-lunes",
     "p:demonstratives-basic",
     "p:frequency-scale",
-    "p:lavarse-las-manos",
     "p:otro-no-article",
     "p:position-de",
     "p:possessives-basic",
     "p:quantifiers-basic",
-    "p:question-word-order",
+    "p:saber-conocer",
     "p:senor-don-article",
     "p:telling-time",
     "p:todos-los-dias",
@@ -181,12 +202,13 @@
     "l:aguapanela",
     "l:ahora",
     "l:anoche",
+    "l:ayer",
     "l:azul",
     "l:barrio",
     "l:bien",
     "l:bueno",
-    "l:cabeza",
     "l:café",
+    "l:caliente",
     "l:cama",
     "l:cansancio",
     "l:cara",
@@ -194,19 +216,20 @@
     "l:celular",
     "l:cita",
     "l:claro",
+    "l:contar",
     "l:cosa",
     "l:cuadra",
+    "l:cómo",
     "l:depender",
     "l:descansar",
     "l:detrás",
+    "l:droguería",
     "l:día",
     "l:enfermo",
     "l:estar",
     "l:fiebre",
-    "l:fuerte",
     "l:gripa",
     "l:gritar",
-    "l:hablar",
     "l:hacer",
     "l:hoy",
     "l:jueves",
@@ -215,37 +238,38 @@
     "l:llamar",
     "l:llegar",
     "l:lluvia",
-    "l:mano",
     "l:mejor",
     "l:mijo",
     "l:médico",
     "l:nervioso",
     "l:niña",
-    "l:novio",
+    "l:noticias",
+    "l:orden",
     "l:pasar",
     "l:pena",
-    "l:poner",
     "l:pregunta",
     "l:preocupado",
     "l:quién",
     "l:qué",
-    "l:rico",
     "l:rojo",
+    "l:saber",
     "l:semana",
     "l:ser",
-    "l:señora",
     "l:siempre",
     "l:sonar",
     "l:subir",
     "l:subirse",
     "l:tener",
-    "l:tienda",
+    "l:termómetro",
     "l:tinto",
+    "l:tocar",
     "l:tos",
     "l:trabajar",
+    "l:traer",
     "l:tranquilo",
     "l:vecino",
     "l:vender",
+    "l:ver",
     "l:vez"
   ]
 }

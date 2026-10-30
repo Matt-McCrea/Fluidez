@@ -2,7 +2,7 @@
   "id": "ch045",
   "unit": "u17",
   "title": "Tres vueltas",
-  "text": "Mariana: ¿Doce sillones morados? ¿Para un hotel en la esquina de Rosa?\nEran las nueve de la noche, y Mariana escribía en su cuaderno, en la mesa del frente.\nTomás: Eso dijo el vendedor. Calle 11 con carrera 4.\nMariana: Si es real, Altamira ya compró la casa, o la va a comprar muy pronto.\nMariana: Mañana llamo al vendedor. Si el señor de Altamira le dio un nombre, yo lo voy a obtener.\nMariana cerró el cuaderno.\nMariana: Bueno. Ahora, la salsa. Noche de salsa, el viernes a las ocho. ¿Vienes?\nTomás: No sé bailar salsa. En Toronto bailaba en la cocina, con la radio.\nMariana: Entonces tienes una tarea. Si aprendes tres vueltas antes del viernes, vamos a la discoteca. Si no las aprendes, será otro día.\nTomás: ¿Tres vueltas en cuatro días?\nTomás lo consideró un rato.\nTomás: Me encantaría.\nSimón: ¡Me encantaría! ¡Me encantaría!\nVale salió de la cocina con el celular en la mano.\nVale: Tomás, mi hermana Daniela se va a casar.\nTomás: ¡Qué bueno!\nVale: El próximo mes hay una fiesta en Medellín, en la casa de mi mamá. Toda la familia quiere conocer al nieto de Rosa. Si quieres, vienes conmigo.\nTomás: Me parece perfecto.\nVale miró a Mariana, y después miró el cuaderno.\nVale: ¿Y el viernes? ¿Salsa?\nMariana: Si aprende tres vueltas, sí. Si no, baila con Simón.\nSimón: ¡Me encantaría, me encantaría!\nEn la puerta estaba Hernando, con tres papeles amarillos en la mano.\nHernando: El domingo, todos conmigo. Juegan Santa Fe y Millonarios. Si no van, no vuelvo al café.\nTomás: Me parece bien.\nVale: Tomás, ¿tú dices que sí a todo?\nTomás tenía cuatro días, tres planes y cero vueltas.",
+  "text": "Lunes, nueve de la noche. Mariana escribía en su cuaderno, en la mesa del frente.\nMariana: ¿Doce sillones morados? ¿Para un hotel en la esquina de Rosa?\nTomás: Eso dijo el vendedor. Calle 11 con carrera 4.\nMariana: Si es verdad, Altamira ya cree que el café es suyo. Mañana llamo al vendedor. Si el señor de Altamira le dio un nombre, lo consigo.\nMariana cerró el cuaderno.\nMariana: Bueno. Ahora, la salsa. El viernes a las ocho, en una discoteca de La Candelaria. ¿Vienes?\nTomás: No sé bailar salsa. En Toronto bailaba en la cocina, con la radio.\nMariana: Entonces tienes tarea. Si aprendes tres vueltas antes del viernes, vamos. Si no, otro día.\nTomás: ¿Tres vueltas en cuatro días?\nTomás lo pensó un momento.\nTomás: Bueno. Me encantaría.\nSimón: ¡Me encantaría! ¡Me encantaría!\nVale salió de la cocina con el celular en la mano.\nVale: Tomás, ¡mi hermana Camila se va a casar!\nTomás: ¡Qué bueno!\nVale: El próximo mes hay una fiesta en Medellín, en la casa de mi mamá. Y mi mamá quiere conocer al canadiense normal. Si quieres, vienes conmigo.\nTomás: Me parece perfecto.\nVale miró a Mariana, y después miró el cuaderno.\nVale: ¿Y el viernes? ¿Salsa?\nMariana: Si aprende tres vueltas, sí. Si no, baila con Simón.\nSimón: ¡Me encantaría! ¡Me encantaría!\nEn la puerta estaba don Hernando, con tres papeles amarillos en la mano.\nHernando: El domingo, todos conmigo. Juegan Santa Fe y Millonarios. Si no van, no vuelvo al café.\nTomás: Me parece bien.\nVale: Tomás, ¿tú dices que sí a todo?\nTomás tenía cuatro días, tres planes y cero vueltas.",
   "gloss": [
     {
       "es": "sillones",
@@ -13,24 +13,28 @@
       "en": "at the front table"
     },
     {
-      "es": "Si es real",
-      "en": "If it's true"
+      "es": "Altamira ya cree que el café es suyo",
+      "en": "Altamira already thinks the café is theirs"
     },
     {
-      "es": "yo lo voy a obtener",
-      "en": "I'm going to get it"
+      "es": "lo consigo",
+      "en": "I'll get it"
     },
     {
       "es": "vueltas",
       "en": "turns (in a dance)"
     },
     {
-      "es": "Tomás lo consideró un rato.",
-      "en": "Tomás thought about it for a while."
+      "es": "Tomás lo pensó un momento.",
+      "en": "Tomás thought about it for a moment."
     },
     {
       "es": "se va a casar",
       "en": "is going to get married"
+    },
+    {
+      "es": "el canadiense normal",
+      "en": "the 'normal' Canadian (what Vale called him to her mother)"
     },
     {
       "es": "Juegan Santa Fe y Millonarios.",
@@ -50,19 +54,19 @@
       "q": "What is Mariana's condition for the salsa night?",
       "options": [
         "Tomás has to learn three turns before Friday",
-        "Tomás has to pay for the drinks",
-        "Tomás has to bring Simón",
-        "Tomás has to find the name of the Altamira man"
+        "Tomás has to pay",
+        "Tomás has to bring Vale",
+        "Tomás has to wear the pink sweater"
       ],
       "answer": 0
     },
     {
       "q": "Why does Vale invite Tomás to Medellín?",
       "options": [
-        "Her sister is getting married and the family wants to meet Rosa's grandson",
-        "She needs help buying chairs",
-        "Her mother is ill",
-        "Hernando wants to see a football match there"
+        "Her sister Camila is getting married, and her mother wants to meet him",
+        "She needs help in her mother's café",
+        "Altamira has a hotel there",
+        "Hernando wants to go"
       ],
       "answer": 0
     },
@@ -70,9 +74,9 @@
       "q": "Why does Mariana want to call the seller?",
       "options": [
         "To get the name of the Altamira man who bought the armchairs",
-        "To buy the purple armchair",
-        "To book a table at the salsa bar",
-        "To ask about a coffee machine"
+        "To buy an armchair",
+        "To return the coffee machine",
+        "To invite him to the salsa night"
       ],
       "answer": 0
     },
@@ -81,8 +85,8 @@
       "options": [
         "Dice que sí a todo",
         "Dice que no a todo",
-        "Dice que sí a Vale y no a Mariana",
-        "Dice que no sabe"
+        "Dice que sí solo a Vale",
+        "No contesta"
       ],
       "answer": 0
     }
@@ -92,8 +96,8 @@
       "q": "Where did Tomás dance in Toronto?",
       "options": [
         "In the kitchen, with the radio",
-        "At a salsa bar",
-        "At a friend's party",
+        "In a club",
+        "At work",
         "He never danced"
       ],
       "answer": 0
@@ -103,8 +107,8 @@
       "options": [
         "Dance with Simón",
         "Stay at home",
-        "Watch from the bar",
-        "Go to the football instead"
+        "Dance with Hernando",
+        "Come another day with Vale"
       ],
       "answer": 0
     },
@@ -112,9 +116,9 @@
       "q": "What is Hernando holding at the door?",
       "options": [
         "Three yellow papers",
-        "A cup of tinto",
-        "Mariana's notebook",
-        "His phone"
+        "A new chair",
+        "A letter from Altamira",
+        "His Sunday suit"
       ],
       "answer": 0
     }
@@ -132,7 +136,6 @@
     "c:si-quieres",
     "c:tienes",
     "c:vamos-a",
-    "c:voy-a",
     "g:adjective-agreement",
     "g:direct-objects",
     "g:estar-location-states",
@@ -156,16 +159,16 @@
     "g:verb-infinitive",
     "g:yo-irregular",
     "p:days-el-lunes",
+    "p:de-owner",
     "p:demonstratives-basic",
-    "p:ir-a-venir-de-place",
     "p:ir-venir",
     "p:nos-vemos-a-las",
     "p:para-inf",
     "p:personal-a",
     "p:por-la-manana",
     "p:possessives-basic",
-    "p:quantifiers-basic",
     "p:saber-conocer",
+    "p:senor-don-article",
     "p:street-names",
     "p:telling-time",
     "p:time-pasado-que-viene",
@@ -181,6 +184,7 @@
     "l:bueno",
     "l:café",
     "l:calle",
+    "l:canadiense",
     "l:carrera",
     "l:casa",
     "l:casarse",
@@ -188,9 +192,9 @@
     "l:cero",
     "l:cerrar",
     "l:cocina",
-    "l:comprar",
     "l:conocer",
-    "l:considerar",
+    "l:conseguir",
+    "l:creer",
     "l:cuaderno",
     "l:dar",
     "l:decir",
@@ -202,7 +206,6 @@
     "l:escribir",
     "l:esquina",
     "l:estar",
-    "l:familia",
     "l:fiesta",
     "l:frente",
     "l:hermana",
@@ -211,29 +214,28 @@
     "l:irse",
     "l:jugar",
     "l:llamar",
+    "l:lunes",
     "l:mamá",
     "l:mano",
     "l:mañana",
     "l:mes",
     "l:mesa",
     "l:mirar",
+    "l:momento",
     "l:morado",
-    "l:nieto",
     "l:noche",
     "l:nombre",
-    "l:obtener",
+    "l:normal",
     "l:papel",
     "l:parecer",
+    "l:pensar",
     "l:perfecto",
     "l:plan",
-    "l:pronto",
     "l:próximo",
     "l:puerta",
     "l:querer",
     "l:qué",
     "l:radio",
-    "l:rato",
-    "l:real",
     "l:saber",
     "l:salir",
     "l:salsa",
@@ -244,6 +246,7 @@
     "l:tener",
     "l:vendedor",
     "l:venir",
+    "l:verdad",
     "l:viernes",
     "l:volver",
     "l:vuelta"

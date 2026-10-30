@@ -2,7 +2,7 @@
   "id": "ch043",
   "unit": "u16",
   "title": "Un color muy moderno",
-  "text": "Vale: Bueno, Tomás. La conversación. Es sobre tu ropa.\nTomás: ¿Mi ropa? ¿Nada más?\nVale: Tienes una sola camiseta gris, y la chaqueta es del esposo de Gloria. Tu zapato derecho está roto, y tus tenis son de 2010.\nTomás: Es un zapato con historia.\nVale: Hoy compramos uniformes y ropa.\nEn San Victorino, Vale fue a la tienda más barata de la calle. Hernando y Simón fueron también.\nVale: Necesito doce camisetas blancas, seis camisas negras y seis delantales. ¿Cuánto vale todo?\nVendedora: Para usted, cuatrocientos mil.\nVale: Trescientos, en efectivo.\nSimón: ¡Me lo llevo todo!\nVendedora: Bueno, el loro compra. Trescientos cincuenta.\nVale: Trescientos, o me voy.\nVendedora: Trescientos. Usted es la clienta más difícil de San Victorino.\nTomás: ¿Me lo puedo medir?\nTomás se probó un saco de lana, una chaqueta de cuero y unas botas negras.\nHernando: ¡Qué elegante, profesor!\nVale: La chaqueta te queda grande. Y las botas, pequeñas. El pantalón sí te queda bien.\nAl final, Tomás compró dos camisas, el pantalón gris, el saco de lana, unos tenis blancos, unas medias y un suéter rosado.\nHernando: ¿Un suéter rosado, mijo?\nTomás: Es un color muy moderno.\nHernando compró unas medias para él y una falda amarilla para su hija Lucía. Siempre le compra faldas, y ella nunca las usa. Vale miró un vestido verde y un bolso negro un rato, pero no compró nada.\nTomás: El vestido te va a quedar muy bien.\nVale: Es el vestido más caro de la calle. Y el bolso también. Hoy compramos para el café, no para mí.\nA las cuatro, dos hombres llegaron al café con el sillón morado. El sillón era más grande que la puerta. Lo intentaron tres veces.\nSimón: ¡Me lo llevo, me lo llevo!\nVale: Tomás, ¿de qué color es la puerta del café?\nTomás: Azul. ¿Por qué?\nVale: Qué pena, porque el morado y el azul son muy bonitos juntos. Pero el sillón no cabe. Se queda en la calle, con su color icónico. Mañana lo devuelves.\nSimón: ¡No cabe! ¡No cabe!",
+  "text": "Vale: Bueno, Tomás. Tenemos que hablar... de tu ropa.\nTomás: ¿De mi ropa? ¿Nada más?\nVale: Tienes una sola camiseta gris, y la chaqueta es del esposo de Gloria. Tu zapato derecho está roto, y tus tenis son de 2010.\nTomás: Es un zapato con historia.\nVale: Hoy volvemos a San Victorino, a comprar uniformes y ropa.\nEn San Victorino, Vale entró a la tienda más barata de la calle.\nVale: Necesito doce camisetas blancas, seis camisas negras y seis delantales. ¿Cuánto vale todo?\nVendedora: Para usted, cuatrocientos mil.\nVale: Trescientos, en efectivo.\nSimón: ¡Me lo llevo todo!\nVendedora: Bueno, el loro compra. Trescientos cincuenta.\nVale: Trescientos, o me voy.\nVendedora: Trescientos. Usted es la clienta más difícil de San Victorino.\nEn la pared había un saco de lana gris.\nTomás: Señora, ¿me lo puedo medir?\nTomás se probó el saco, un pantalón gris y unas botas negras.\nHernando: ¡Qué elegante, profesor!\nVale: Las botas te quedan pequeñas. Pero el saco y el pantalón te quedan muy bien.\nAl final, Tomás compró el saco, el pantalón, dos camisas, unos tenis blancos, unas medias y un suéter rosado.\nHernando: ¿Un suéter rosado, mijo?\nTomás: Es un color muy moderno.\nHernando compró una falda amarilla para su hija Lucía. Siempre le compra faldas, y ella nunca las usa. Vale miró un vestido verde un rato, pero no lo compró.\nTomás: Ese vestido te va a quedar muy bien.\nVale: Es el vestido más caro de la calle. Hoy compramos para el café, no para mí.\nA las cuatro, dos hombres llegaron al café con el sillón morado. Era más grande que la puerta. Lo intentaron tres veces.\nSimón: ¡Otra vez! ¡Otra vez!\nVale: Qué pena. El morado y el azul de la puerta quedan muy bonitos juntos. Pero el sillón no entra.\nSimón: ¡No entra! ¡No entra!\nVale: Esta noche se queda en la calle. Y mañana lo devuelves tú solo, en español.",
   "gloss": [
     {
       "es": "mijo",
@@ -21,42 +21,50 @@
       "en": "parrot"
     },
     {
-      "es": "icónico",
-      "en": "iconic"
-    },
-    {
       "es": "Es un zapato con historia.",
       "en": "It's a shoe with a history."
-    },
-    {
-      "es": "Bueno, el loro compra.",
-      "en": "All right, the parrot is buying."
-    },
-    {
-      "es": "Lo intentaron tres veces.",
-      "en": "They tried three times."
-    },
-    {
-      "es": "se queda en la calle",
-      "en": "stays out in the street"
     },
     {
       "es": "tus tenis son de 2010",
       "en": "your trainers are from 2010"
     },
     {
-      "es": "el sillón no cabe",
-      "en": "the armchair doesn't fit"
+      "es": "Bueno, el loro compra.",
+      "en": "All right, the parrot is buying."
+    },
+    {
+      "es": "¿me lo puedo medir?",
+      "en": "can I try it on?"
+    },
+    {
+      "es": "saco de lana",
+      "en": "wool jumper"
+    },
+    {
+      "es": "Lo intentaron tres veces.",
+      "en": "They tried three times."
+    },
+    {
+      "es": "¡Otra vez!",
+      "en": "Again!"
+    },
+    {
+      "es": "Qué pena.",
+      "en": "What a shame."
+    },
+    {
+      "es": "el sillón no entra",
+      "en": "the armchair won't go in"
     }
   ],
   "questions": [
     {
-      "q": "What is Vale's serious conversation really about?",
+      "q": "What is Vale's serious talk really about?",
       "options": [
         "Tomás's clothes",
-        "The doctor's appointment",
-        "Mariana's invitation",
-        "The money from the chairs"
+        "Hernando's doctor",
+        "Mariana",
+        "The deed"
       ],
       "answer": 0
     },
@@ -64,18 +72,18 @@
       "q": "How does Vale get the uniforms for three hundred thousand?",
       "options": [
         "She offers cash and says she'll leave",
-        "Simón pays for them",
-        "She buys fewer aprons",
-        "The seller knew Rosa"
+        "Simón buys them",
+        "She pays four hundred thousand",
+        "Hernando pays"
       ],
       "answer": 0
     },
     {
       "q": "¿Qué compra Hernando?",
       "options": [
-        "Una falda amarilla y unas medias",
-        "Un vestido verde",
+        "Una falda amarilla para su hija Lucía",
         "Un suéter rosado",
+        "Un vestido verde",
         "Unas botas negras"
       ],
       "answer": 0
@@ -83,20 +91,20 @@
     {
       "q": "Why doesn't Vale buy the green dress?",
       "options": [
-        "She says it's the most expensive dress on the street",
-        "It's too small for her",
-        "She doesn't like green",
-        "Tomás doesn't like it"
+        "It's the most expensive dress on the street, and today is for the café",
+        "It's too small",
+        "Tomás doesn't like it",
+        "She hates green"
       ],
       "answer": 0
     },
     {
       "q": "What happens to the armchair at the café?",
       "options": [
-        "It's bigger than the door and stays in the street",
-        "It goes next to the counter",
-        "Simón breaks it",
-        "Hernando takes it home"
+        "It's bigger than the door and has to stay in the street",
+        "It goes in the kitchen",
+        "Vale sits in it",
+        "The men take it back"
       ],
       "answer": 0
     }
@@ -108,17 +116,17 @@
         "It's broken",
         "It's too big",
         "It's pink",
-        "It's Hernando's"
+        "It's new"
       ],
       "answer": 0
     },
     {
-      "q": "What does Hernando call Tomás when he tries on the wool jacket?",
+      "q": "What does Hernando call Tomás when he tries things on?",
       "options": [
         "Professor",
-        "Tourist",
-        "Señor Altamira",
-        "Joaquín"
+        "Mr Mango",
+        "Son of Rosa",
+        "Canadian"
       ],
       "answer": 0
     },
@@ -127,8 +135,8 @@
       "options": [
         "Blue",
         "Purple",
-        "Black",
-        "Green"
+        "Green",
+        "Black"
       ],
       "answer": 0
     }
@@ -142,43 +150,40 @@
     "c:era",
     "c:me-lo-llevo",
     "c:me-lo-puedo-medir",
-    "c:porque",
     "c:puedo",
     "c:que-pena",
     "c:tienes",
     "c:voy-vas",
     "g:adjective-agreement",
-    "g:cause-result",
     "g:comparatives",
+    "g:demonstratives",
     "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
     "g:imperfect-states",
     "g:indirect-objects",
     "g:ir-a-plans",
-    "g:negation-words",
     "g:parecer-quedar",
     "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
-    "g:preterite-ser-ir-hacer",
     "g:questions",
     "g:reflexive-routine",
     "g:ser-identity",
     "g:stem-boot",
     "g:superlatives",
+    "g:verb-infinitive",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
-    "p:colour-claro-oscuro",
     "p:con-sin",
+    "p:demonstratives-basic",
     "p:exclamations-basic",
     "p:frequency-scale",
-    "p:ir-a-venir-de-place",
     "p:me-te-nos-objects",
+    "p:otro-no-article",
     "p:para-inf",
     "p:possessives-basic",
-    "p:prep-questions-basic",
     "p:quantifiers-basic",
     "p:question-word-order",
     "p:street-names",
@@ -191,11 +196,9 @@
     "l:barato",
     "l:bien",
     "l:blanco",
-    "l:bolso",
     "l:bonito",
     "l:bota",
     "l:bueno",
-    "l:caber",
     "l:café",
     "l:calle",
     "l:camisa",
@@ -205,8 +208,6 @@
     "l:cliente",
     "l:color",
     "l:comprar",
-    "l:conversación",
-    "l:cuero",
     "l:cuánto",
     "l:delantal",
     "l:derecho",
@@ -214,17 +215,19 @@
     "l:difícil",
     "l:efectivo",
     "l:elegante",
+    "l:entrar",
+    "l:español",
     "l:esposo",
     "l:estar",
     "l:falda",
     "l:final",
     "l:grande",
     "l:gris",
+    "l:hablar",
     "l:hija",
     "l:historia",
     "l:hombre",
     "l:hoy",
-    "l:icónico",
     "l:intentar",
     "l:ir",
     "l:irse",
@@ -242,8 +245,10 @@
     "l:morado",
     "l:necesitar",
     "l:negro",
+    "l:noche",
     "l:pantalón",
     "l:parar",
+    "l:pared",
     "l:pena",
     "l:pequeño",
     "l:poder",
@@ -259,9 +264,9 @@
     "l:rosado",
     "l:saco",
     "l:ser",
+    "l:señora",
     "l:siempre",
     "l:sillón",
-    "l:son",
     "l:suéter",
     "l:tener",
     "l:tenis",
@@ -273,6 +278,7 @@
     "l:verde",
     "l:vestido",
     "l:vez",
+    "l:volver",
     "l:zapato"
   ]
 }

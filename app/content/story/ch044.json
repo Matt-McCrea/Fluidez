@@ -2,7 +2,7 @@
   "id": "ch044",
   "unit": "u16",
   "title": "Nuestra esquina",
-  "text": "El sillón morado pasó la noche en la calle, y Hernando pasó la noche en el sillón.\nHernando: Dormí mejor que en mi cama, mijo.\nVale: Tu problema, tu español, Tomás. Yo me quedo en el café.\nHernando y Tomás lo subieron a la Burra, con Simón arriba.\nEn el almacén, el vendedor del jueves estaba en la caja.\nVendedor: ¡El señor de los setecientos mil! ¿Y hoy en qué le puedo servir?\nTomás: Buenos días. Me quiero devolver.\nVendedor: ¿Usted se devuelve? ¿A Toronto?\nTomás: No, señor. Quiero devolver el sillón morado. Es más grande que la puerta del café.\nVendedor: Aquí no devolvemos plata.\nTomás: ¿Y no lo tiene en otra talla?\nVendedor: ¿Talla? Es un sillón, no una camisa.\nSimón: ¡Me quiero devolver!\nTomás habló despacio, con todo su español.\nTomás: Señor, es muy bonito. Es el más bonito de San Victorino. Pero mi café es pequeño, y mi puerta es la más pequeña de La Candelaria.\nVendedor: Bueno. Plata no, pero cambios sí. ¿Qué necesita?\nTomás: Una máquina de café. La nuestra no funciona.\nVendedor: Tengo una máquina internacional. Es la mejor del almacén. Se la doy, y usted me deja el sillón.\nTomás: ¿Me hace un descuento?\nVendedor: ¿Descuento? Mejor todavía: hoy la máquina tiene rebaja. Usted me pagó setecientos, y con la rebaja la máquina vale seiscientos. Le devuelvo cien mil. Es justo.\nHernando: Es justo, mijo. Acepte.\nTomás: ¿Me los da en efectivo?\nVendedor: Se los doy en efectivo, claro.\nUna conversación difícil, toda en español, ¡y Tomás ganó!\nVendedor: Ya tengo un cliente. Un señor de Altamira quiere doce iguales para su hotel nuevo en La Candelaria.\nTomás: ¿Un hotel? ¿Dónde?\nVendedor: Calle 11 con carrera 4. En la esquina.\nHernando miró a Tomás.\nHernando: Mijo, esa es nuestra esquina.",
+  "text": "El sillón morado pasó la noche en la calle, y don Hernando pasó la noche en el sillón, para cuidarlo.\nHernando: Dormí mejor que en mi cama, mijo.\nVale: Tu sillón, tu problema, Tomás. Y tu español. Yo me quedo en el café.\nHernando y Tomás subieron el sillón al techo de la Burra. Simón viajó arriba, feliz.\nEn el almacén, el vendedor del jueves estaba en la caja.\nVendedor: ¡El señor de los setecientos mil! ¿Y hoy qué va a comprar?\nTomás: Buenos días. Me quiero devolver.\nVendedor: ¿Usted se devuelve? ¿Para su país, joven?\nTomás: No, no. Quiero devolver el sillón morado. No entra por la puerta del café.\nVendedor: Aquí no devolvemos plata.\nTomás: ¿Y no lo tiene en otra talla?\nVendedor: ¿Talla? Es un sillón, no una camisa.\nSimón: ¡Me quiero devolver! ¡Me quiero devolver!\nTomás habló despacio, con todo su español.\nTomás: Señor, el sillón es muy bonito. Es el más bonito de San Victorino. Pero mi café es pequeño, y mi puerta es la más pequeña de La Candelaria.\nVendedor: Bueno. Plata no, pero cambios sí. ¿Qué necesita?\nTomás: Una cafetera. La nuestra no funciona.\nVendedor: Tengo una cafetera italiana, la mejor del almacén. Se la doy, y usted me deja el sillón.\nTomás: ¿Me hace un descuento?\nVendedor: Mejor todavía: hoy la cafetera tiene rebaja. Vale seiscientos. Usted me pagó setecientos, entonces le devuelvo cien mil.\nHernando: Es justo, mijo. Acepta.\nTomás: ¿Me los da en efectivo?\nVendedor: Claro. Se los doy en efectivo.\nUna conversación difícil, toda en español, ¡y Tomás ganó!\nVendedor: Y el sillón ya tiene cliente. Un señor de Altamira quiere doce iguales para su hotel nuevo en La Candelaria.\nTomás: ¿Un hotel? ¿Dónde?\nVendedor: Calle 11 con carrera 4. En la esquina.\nHernando miró a Tomás.\nHernando: Mijo, esa es nuestra esquina.",
   "gloss": [
     {
       "es": "mijo",
@@ -13,16 +13,20 @@
       "en": "armchair"
     },
     {
+      "es": "para cuidarlo",
+      "en": "to keep an eye on it"
+    },
+    {
+      "es": "Tu sillón, tu problema, Tomás. Y tu español.",
+      "en": "Your armchair, your problem, Tomás. And your Spanish."
+    },
+    {
+      "es": "al techo de la Burra",
+      "en": "onto the roof of la Burra"
+    },
+    {
       "es": "Me quiero devolver.",
       "en": "I want to go back (in Colombia, devolverse means to go back somewhere)."
-    },
-    {
-      "es": "¿Usted se devuelve?",
-      "en": "You're going back?"
-    },
-    {
-      "es": "Tu problema, tu español, Tomás.",
-      "en": "Your problem, your Spanish, Tomás."
     },
     {
       "es": "Aquí no devolvemos plata.",
@@ -39,15 +43,27 @@
     {
       "es": "doce iguales",
       "en": "twelve the same"
+    },
+    {
+      "es": "¿Y hoy qué va a comprar?",
+      "en": "And what are you buying today?"
+    },
+    {
+      "es": "¿Usted se devuelve? ¿Para su país, joven?",
+      "en": "You're going back? To your country, young man?"
+    },
+    {
+      "es": "tiene rebaja",
+      "en": "is on sale"
     }
   ],
   "questions": [
     {
-      "q": "Why does the seller ask if Tomás is going back to Toronto?",
+      "q": "Why does the seller ask Tomás where he's going?",
       "options": [
-        "Tomás says «me quiero devolver», which means he wants to go back",
+        "Tomás says «me quiero devolver», which means he wants to go back somewhere",
         "Tomás has his suitcase",
-        "Tomás speaks English",
+        "Tomás says he's going to Toronto",
         "Hernando tells him"
       ],
       "answer": 0
@@ -57,8 +73,8 @@
       "options": [
         "He exchanges the armchair for a coffee machine and gets money back",
         "He gets all his money back",
-        "He sells the armchair to Altamira",
-        "Vale comes to help him"
+        "Hernando pays",
+        "Vale comes to help"
       ],
       "answer": 0
     },
@@ -77,8 +93,8 @@
       "options": [
         "Altamira is already furnishing a hotel at the café's own corner",
         "The coffee machine doesn't work",
-        "Hernando is ill again",
-        "The seller wants the armchair back"
+        "The armchair is coming back",
+        "Hernando is ill"
       ],
       "answer": 0
     }
@@ -88,9 +104,9 @@
       "q": "Where did Hernando sleep last night?",
       "options": [
         "In the armchair, in the street",
-        "In the Burra",
-        "At Gloria's house",
-        "In the café kitchen"
+        "At Gloria's",
+        "In the café",
+        "In la Burra"
       ],
       "answer": 0
     },
@@ -98,8 +114,8 @@
       "q": "How does Tomás describe his door to the seller?",
       "options": [
         "The smallest in La Candelaria",
-        "The oldest in Bogotá",
-        "Blue and pretty",
+        "The prettiest in Bogotá",
+        "Blue and old",
         "Bigger than the armchair"
       ],
       "answer": 0
@@ -108,28 +124,25 @@
       "q": "How does Tomás ask to be paid?",
       "options": [
         "In cash",
-        "By card",
-        "In instalments",
-        "In coffee"
+        "In dollars",
+        "With a coffee",
+        "With a card"
       ],
       "answer": 0
     }
   ],
-  "hook": "Altamira is buying armchairs for a hotel on the corner of La Esquina de Rosa, as if the sale were already done. Tonight Tomás tells Mariana, and Mariana wants an answer about the salsa night.",
+  "hook": "Altamira is buying armchairs for a hotel on the café's own corner, as if the sale were already done. On Monday night Tomás tells Mariana, and Mariana wants an answer about the salsa night.",
   "requires": [
     "c:bien-y-tu",
     "c:claro-listo",
-    "c:en-que-le-puedo-servir",
     "c:entonces-bueno",
     "c:hola-buenos-dias",
     "c:me-hace-una-rebajita",
-    "c:puedo",
     "c:quiero",
     "c:tengo",
     "c:tiene-otra-talla",
     "c:tienes",
     "g:adjective-agreement",
-    "g:commands-usted",
     "g:comparatives",
     "g:demonstratives",
     "g:direct-objects",
@@ -138,6 +151,8 @@
     "g:gender-articles",
     "g:imperfect-states",
     "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
     "g:possessives",
     "g:present-ar",
     "g:present-er-ir",
@@ -154,8 +169,10 @@
     "p:me-te-nos-objects",
     "p:numbers-un-una",
     "p:para-inf",
+    "p:para-inf-purpose",
     "p:possessives-basic",
     "p:quantifiers-basic",
+    "p:senor-don-article",
     "p:street-names",
     "p:talla-numero",
     "p:ya-todavia-basic"
@@ -167,6 +184,7 @@
     "l:arriba",
     "l:bonito",
     "l:bueno",
+    "l:cafetera",
     "l:café",
     "l:caja",
     "l:calle",
@@ -176,7 +194,9 @@
     "l:carrera",
     "l:claro",
     "l:cliente",
+    "l:comprar",
     "l:conversación",
+    "l:cuidar",
     "l:dar",
     "l:dejar",
     "l:descuento",
@@ -187,33 +207,35 @@
     "l:día",
     "l:dónde",
     "l:efectivo",
+    "l:entrar",
     "l:español",
     "l:esquina",
     "l:estar",
+    "l:feliz",
     "l:funcionar",
     "l:ganar",
-    "l:grande",
     "l:hablar",
     "l:hacer",
     "l:hotel",
     "l:hoy",
     "l:igual",
-    "l:internacional",
+    "l:ir",
+    "l:italiano",
+    "l:joven",
     "l:jueves",
     "l:justo",
     "l:mejor",
     "l:mijo",
     "l:mirar",
     "l:morado",
-    "l:máquina",
     "l:necesitar",
     "l:noche",
     "l:nuevo",
     "l:pagar",
     "l:pasar",
+    "l:país",
     "l:pequeño",
     "l:plata",
-    "l:poder",
     "l:problema",
     "l:puerta",
     "l:quedarse",
@@ -221,13 +243,13 @@
     "l:qué",
     "l:rebaja",
     "l:ser",
-    "l:servir",
     "l:señor",
     "l:sillón",
     "l:subir",
     "l:talla",
+    "l:techo",
     "l:tener",
-    "l:valer",
-    "l:vendedor"
+    "l:vendedor",
+    "l:viajar"
   ]
 }
