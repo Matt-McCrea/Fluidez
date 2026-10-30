@@ -1,0 +1,215 @@
+{
+  "id": "sc-u33-b",
+  "unit": "u33",
+  "title": "El mensaje",
+  "spare": false,
+  "brief": "You're Tomás, helping Mariana write the Facebook post that looks for anyone who knew Joaquín Herrera. She's your friend, so use tú. Say exactly who and what you're looking for.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Estoy escribiendo el mensaje para Facebook. Ayúdame: ¿a quién buscamos exactamente?",
+      "npcEn": "I'm writing the Facebook message. Help me: who exactly are we looking for?",
+      "intent": "Say you're looking for anyone who knows something about Joaquín Herrera.",
+      "accept": [
+        "Buscamos a cualquier persona que sepa algo de Joaquín Herrera.",
+        "Buscamos a alguien que conozca a Joaquín Herrera.",
+        "Queremos encontrar a alguien que sepa algo de Joaquín Herrera."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "que",
+          "within": 3,
+          "label": "someone who knows: alguien que sepa"
+        }
+      ],
+      "focus": "g:subj-relative",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Bien. Y hay que poner la ciudad. ¿Santa Marta?",
+      "npcEn": "Good. And we have to put the city. Santa Marta?",
+      "intent": "Say yes, Santa Marta, the city he arrived in around 1978.",
+      "accept": [
+        "Sí, Santa Marta. Es la ciudad a la que llegó más o menos en 1978.",
+        "Sí, Santa Marta, la ciudad a la que llegó Joaquín hacia 1978.",
+        "Sí. Santa Marta es la ciudad a la que llegó en 1978, creo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(en|con|de|a|para) (el|la|los|las) (que|cual)\\b",
+          "flags": "i",
+          "label": "after a preposition: la ciudad a la que llegó"
+        }
+      ],
+      "focus": "g:relatives-prepositions",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y qué les pedimos? ¿Fotos? ¿Cartas?",
+      "npcEn": "And what do we ask them for? Photos? Letters?",
+      "intent": "Tell her to ask for anything: any photo or letter will help.",
+      "accept": [
+        "Pídeles cualquier foto o carta, todo nos sirve.",
+        "Cualquier foto nos sirve, y cualquier carta también.",
+        "Que nos manden cualquier cosa: una foto, una carta, un nombre."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcualquier\\b",
+          "flags": "i",
+          "label": "anything at all: cualquier foto"
+        }
+      ],
+      "focus": "g:cada-cualquier",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mira, ya hay un comentario. Una señora dice que su abuelo trabajó con un Joaquín. ¿Qué le preguntamos?",
+      "npcEn": "Look, there's already a comment. A lady says her grandfather worked with a Joaquín. What do we ask her?",
+      "intent": "Say she should tell you every detail, because each one matters.",
+      "accept": [
+        "Que nos cuente cada detalle, porque cada uno importa.",
+        "Pídele cada detalle, porque cada uno importa.",
+        "Que nos escriba cada detalle, porque cada detalle importa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcada\\b",
+          "flags": "i",
+          "label": "each one: cada detalle"
+        }
+      ],
+      "focus": "g:cada-cualquier",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Listo, lo publico. Gracias por la ayuda. ¿Te invito un café?",
+      "npcEn": "Done, I'm posting it. Thanks for the help. Shall I buy you a coffee?",
+      "intent": "Say yes, and that you'll bring her a tinto to the table where she always sits.",
+      "accept": [
+        "Sí, claro. Yo te llevo un tinto a la mesa en la que siempre te sientas.",
+        "Con gusto. Te llevo un tinto a la mesa en la que siempre estás.",
+        "Sí, gracias. Te llevo un tinto a la mesa en la que siempre trabajas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(en|con|de|a|para) (el|la|los|las) (que|cual)\\b",
+          "flags": "i",
+          "label": "after a preposition: la mesa en la que"
+        }
+      ],
+      "focus": "g:relatives-prepositions",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:creo-que",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:mas-o-menos",
+    "c:oye-mira",
+    "c:porque",
+    "g:adverbs-mente",
+    "g:cada-cualquier",
+    "g:cause-result",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-prepositions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:abuelo",
+    "l:ayuda",
+    "l:ayudar",
+    "l:bien",
+    "l:buscar",
+    "l:café",
+    "l:carta",
+    "l:ciudad",
+    "l:claro",
+    "l:comentario",
+    "l:conocer",
+    "l:contar",
+    "l:cosa",
+    "l:creer",
+    "l:decir",
+    "l:detalle",
+    "l:encontrar",
+    "l:escribir",
+    "l:estar",
+    "l:exactamente",
+    "l:foto",
+    "l:gusto",
+    "l:importar",
+    "l:invitar",
+    "l:listo",
+    "l:llegar",
+    "l:llevar",
+    "l:mandar",
+    "l:mensaje",
+    "l:mesa",
+    "l:mirar",
+    "l:nombre",
+    "l:pedir",
+    "l:persona",
+    "l:poner",
+    "l:preguntar",
+    "l:publicar",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:saber",
+    "l:sentarse",
+    "l:ser",
+    "l:servir",
+    "l:señora",
+    "l:siempre",
+    "l:tinto",
+    "l:trabajar",
+    "p:dates-years",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:hedge-knowledge",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:que-subj-deseo",
+    "p:saber-conocer"
+  ]
+}
