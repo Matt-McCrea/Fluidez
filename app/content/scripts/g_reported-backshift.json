@@ -1,0 +1,202 @@
+{
+  "node": "g:reported-backshift",
+  "hook": {
+    "line": "Hernando is about to tell Tomás what Rosa said years ago about the letters she never sent. To report it, you need to look back from a past moment: what had already happened, and what was still to come.",
+    "es": "Rosa me dijo que había escrito muchas cartas.",
+    "en": "Rosa told me she had written a lot of letters."
+  },
+  "examples": [
+    {
+      "es": "Dijo que había llamado tres veces.",
+      "en": "She said she had called three times."
+    },
+    {
+      "es": "Prometió que vendría.",
+      "en": "He promised he would come."
+    },
+    {
+      "es": "Me explicó que no lo sabía.",
+      "en": "He explained to me that he didn't know."
+    },
+    {
+      "es": "Vale me dijo que ya había abierto el café.",
+      "en": "Vale told me she had already opened the café."
+    },
+    {
+      "es": "Mariana me prometió que me ayudaría.",
+      "en": "Mariana promised me she would help me."
+    },
+    {
+      "es": "Dijiste que ya habías terminado.",
+      "en": "You said you had already finished. (to a friend)"
+    },
+    {
+      "es": "Hernando dijo que Rosa nunca había vendido la casa.",
+      "en": "Hernando said Rosa had never sold the house."
+    }
+  ],
+  "rule": "You already know that after *dijo que* the verb steps back: *Estoy cansado* becomes *Dijo que estaba cansado*. Two more steps back work the same way.\n\nSomething that had happened before that moment: the *había* form.\n*Llamé tres veces.* → *Dijo que había llamado tres veces.*\n\nSomething that was going to happen after that moment: the form that means would, the same ending you use for *haría* and *vendría*.\n*Vendré.* → *Prometió que vendría.*\n*Te ayudaré.* → *Me prometió que me ayudaría.*\n\nEnglish does exactly the same (called → had called, will → would), so it should feel familiar. Keep *que*: English can drop that, Spanish can't. And the person told goes before the verb: *me dijo*, *nos prometió*.",
+  "smallPrint": "Teachers call this reported speech with backshift: the pluperfect stands in for the past and the conditional for the future, seen from a moment in the past.",
+  "readAndPick": [
+    {
+      "es": "Dijo que había llamado.",
+      "options": [
+        "She said she had called.",
+        "She said she would call.",
+        "She said she was calling."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Prometió que llamaría.",
+      "options": [
+        "He promised he had called.",
+        "He promised he would call.",
+        "He promised he was calling."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me dijo que no había comido.",
+      "options": [
+        "He told me he wouldn't eat.",
+        "He told me he wasn't eating.",
+        "He told me he hadn't eaten."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana dijo que vendría el lunes.",
+      "options": [
+        "Mariana said she would come on Monday.",
+        "Mariana said she had come on Monday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale me contó que había vivido en Cali.",
+      "options": [
+        "Vale told me she would live in Cali.",
+        "Vale told me she had lived in Cali.",
+        "Vale told me she was living in Cali."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dijeron que habían salido temprano.",
+      "options": [
+        "They said they had left early.",
+        "They said they would leave early."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me dijo que no tendría tiempo.",
+      "options": [
+        "He told me he didn't have time.",
+        "He told me he hadn't had time.",
+        "He told me he wouldn't have time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Dijiste que ya habías terminado.",
+      "options": [
+        "You said you would finish soon.",
+        "You said you were finishing.",
+        "You said you had already finished."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Dijo que lo haría después.",
+      "options": [
+        "She said she had done it afterwards.",
+        "She said she would do it later.",
+        "She said she did it later."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Dijo que ___ llamado tres veces.* (*había* or *habría*) She said she had called three times.",
+      "answer": "Dijo que había llamado tres veces.",
+      "accept": [],
+      "why": "Something that happened before is *había* plus the past form."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Prometió que ___.* (*vendría* or *había venido*) He promised he would come.",
+      "answer": "Prometió que vendría.",
+      "accept": [],
+      "why": "Something still to come, seen from the past, takes the would form."
+    },
+    {
+      "prompt": "Say: Vale told me she had already opened the café.",
+      "answer": "Vale me dijo que ya había abierto el café.",
+      "accept": [
+        "Vale me dijo que había abierto el café ya."
+      ],
+      "why": "*Abrir* gives *abierto*, and *había* goes before it."
+    },
+    {
+      "prompt": "Say: Mariana promised me she would help me.",
+      "answer": "Mariana me prometió que me ayudaría.",
+      "accept": [],
+      "why": "Would help is *ayudaría*, and *me* stays before the verb."
+    },
+    {
+      "prompt": "Say: Hernando said he hadn't seen Simón.",
+      "answer": "Hernando dijo que no había visto a Simón.",
+      "accept": [
+        "Hernando dijo que no había visto al loro."
+      ],
+      "why": "The *no* goes right before *había*, and *ver* gives *visto*."
+    },
+    {
+      "prompt": "Tell a friend what Vale said: \"I'll make the bread.\" Start with *Vale dijo que*.",
+      "answer": "Vale dijo que haría el pan.",
+      "accept": [
+        "Vale dijo que ella haría el pan."
+      ],
+      "why": "Reported from the past, *haré* turns into *haría*."
+    },
+    {
+      "prompt": "Make it reported: *Ya llamé.* Start with *Me dijo que*.",
+      "answer": "Me dijo que ya había llamado.",
+      "accept": [
+        "Me dijo que había llamado ya."
+      ],
+      "why": "A finished action before the saying becomes *había llamado*."
+    },
+    {
+      "prompt": "Make it reported: *Llegaré a las ocho.* Start with *Me dijo que*.",
+      "answer": "Me dijo que llegaría a las ocho.",
+      "accept": [],
+      "why": "The promise looks forward from the past, so *llegaré* becomes *llegaría*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Dijo que vendrá.",
+      "right": "Dijo que vendría.",
+      "why": "Almost. When the saying is in the past, the future shifts to the would form, like English will → would."
+    },
+    {
+      "wrong": "Me dijo que ha llamado tres veces.",
+      "right": "Me dijo que había llamado tres veces.",
+      "why": "Close. After a past *dijo*, the helper steps back too: *había*, not *ha*."
+    },
+    {
+      "wrong": "Prometió vendría.",
+      "right": "Prometió que vendría.",
+      "why": "English can drop *that*, but Spanish needs *que*."
+    },
+    {
+      "wrong": "Dijo que había llamó tres veces.",
+      "right": "Dijo que había llamado tres veces.",
+      "why": "After *había* comes the form ending in *-ado* or *-ido*, never the plain past."
+    }
+  ],
+  "personal": "Think of something someone promised you, and something they said they had already done. Write both: *Me prometió que…* and *Me dijo que ya había…*."
+}
