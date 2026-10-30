@@ -504,5 +504,294 @@
       "l:tomar",
       "p:possessives-basic"
     ]
+  },
+  {
+    "id": "w-u13-13",
+    "unit": "u13",
+    "prompt": "Your friend Vale is in the kitchen of the café and you have just found something funny on your phone. Write her two short sentences, as to a friend: tell her to come over and look at it.",
+    "minWords": 5,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperativo",
+        "label": "use friendly commands (tú)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "ven",
+          "mira",
+          "oye"
+        ],
+        "label": "use ven, mira or oye"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "siga",
+          "mire",
+          "doble",
+          "tome",
+          "venga",
+          "diga",
+          "espere",
+          "oiga",
+          "usted"
+        ],
+        "label": "tú commands, not usted"
+      }
+    ],
+    "model": "Oye, Vale, ven. Mira este mensaje.",
+    "focus": "g:commands-tu",
+    "requires": [
+      "c:oiga-oye",
+      "c:oye-mira",
+      "g:commands-tu",
+      "l:mensaje",
+      "l:mirar",
+      "l:oír",
+      "l:venir",
+      "p:demonstratives-basic"
+    ]
+  },
+  {
+    "id": "w-u13-14",
+    "unit": "u13",
+    "prompt": "Your cousin Camilo is going to meet you downtown and he is nervous about the bus. Text him two or three short sentences, as to family: tell him to take the bus and to wait at the stop.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperativo",
+        "label": "use friendly commands (tú)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "bus",
+          "buseta",
+          "TransMilenio",
+          "tarjeta",
+          "parada"
+        ],
+        "label": "mention the bus, the card or the stop"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "siga",
+          "mire",
+          "doble",
+          "tome",
+          "venga",
+          "diga",
+          "espere",
+          "oiga"
+        ],
+        "label": "tú commands, not usted"
+      }
+    ],
+    "model": "Toma el bus con tu tarjeta. Espera en la parada.",
+    "focus": "g:commands-tu",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:bus",
+      "l:esperar",
+      "l:parada",
+      "l:tarjeta",
+      "l:tomar",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u13-15",
+    "unit": "u13",
+    "prompt": "Mariana texts you: \"¿Llegas a tiempo?\" There is heavy traffic on your street. Answer her in two short sentences: say what you think about the traffic and what you will do.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(creo|pienso|sé|dice|dicen) que\\b",
+        "label": "use creo que, pienso que or sé que"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "trancón",
+          "tráfico"
+        ],
+        "label": "mention the traffic"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Creo que hay mucho trancón hoy. Mejor salgo ahora.",
+    "focus": "g:that-clauses",
+    "requires": [
+      "c:creo-que",
+      "c:hago-salgo-vengo",
+      "c:hay",
+      "g:hay-vs-esta",
+      "g:that-clauses",
+      "g:yo-irregular",
+      "l:ahora",
+      "l:creer",
+      "l:hoy",
+      "l:mejor",
+      "l:salir",
+      "l:trancón",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u13-16",
+    "unit": "u13",
+    "prompt": "Don Hernando, the old taxi driver, asks you if the new driver at the corner is any good. Reply to him in two short sentences with usted: say what you know or what he says about the driver.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(creo|pienso|sé|dice|dicen) que\\b",
+        "label": "use creo que, sé que or dice que"
+      },
+      {
+        "type": "containsWord",
+        "word": "conductor"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Don Hernando, creo que el conductor maneja muy bien. Él dice que conoce toda la ciudad.",
+    "focus": "g:that-clauses",
+    "requires": [
+      "c:bien-y-tu",
+      "c:creo-que",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:bien",
+      "l:ciudad",
+      "l:conductor",
+      "l:conocer",
+      "l:creer",
+      "l:decir",
+      "l:manejar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:don-dona-nombre",
+      "p:hedge-knowledge",
+      "p:saber-conocer",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u13-17",
+    "unit": "u13",
+    "prompt": "You are in a taxi with an older driver you call usted, and he keeps looking at his phone. Get his attention and tell him in two short sentences to look at the road, using commands.",
+    "minWords": 5,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperativo",
+        "label": "use polite commands (usted)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "mire",
+          "calle",
+          "oiga"
+        ],
+        "label": "use oiga, mire or calle"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "maneja",
+          "mira",
+          "sigue",
+          "toma",
+          "ve",
+          "dime",
+          "espera",
+          "oye",
+          "ven"
+        ],
+        "label": "usted commands, not tú"
+      }
+    ],
+    "model": "Oiga, señor, mire la calle. Maneje con cuidado.",
+    "focus": "g:commands-usted",
+    "requires": [
+      "c:oiga-oye",
+      "g:commands-usted",
+      "g:gender-articles",
+      "l:calle",
+      "l:cuidado",
+      "l:manejar",
+      "l:mirar",
+      "l:oír",
+      "l:señor"
+    ]
+  },
+  {
+    "id": "w-u13-18",
+    "unit": "u13",
+    "prompt": "An older woman on the street stops you and asks how to get to the station. You have a map on your phone. Write her two short sentences in usted: tell her to look at the map and to go on to the next street.",
+    "minWords": 6,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperativo",
+        "label": "use polite commands (usted)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "mapa",
+          "calle"
+        ],
+        "label": "mention the map or the street"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "sigue",
+          "mira",
+          "dobla",
+          "toma",
+          "ven",
+          "dime",
+          "espera",
+          "oye"
+        ],
+        "label": "usted commands, not tú"
+      }
+    ],
+    "model": "Mire el mapa, señora. Siga la calle.",
+    "focus": "g:commands-usted",
+    "requires": [
+      "c:siga",
+      "g:commands-usted",
+      "g:gender-articles",
+      "l:calle",
+      "l:mapa",
+      "l:mirar",
+      "l:seguir",
+      "l:señora"
+    ]
   }
 ]
