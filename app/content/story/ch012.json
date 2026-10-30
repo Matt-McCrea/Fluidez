@@ -2,7 +2,7 @@
   "id": "ch012",
   "unit": "u06",
   "title": "La máquina de discos",
-  "text": "Al otro día, Hernando vuelve al café con un disco viejo.\nSimón: ¡Cuánto tiempo! ¡Cuánto tiempo!\nHernando: ¿Cuánto tiempo? Salí ayer a las cuatro, Simón.\nHernando pone su tinto en el mostrador. ¡Crac!\nVale: Ese mostrador es un desastre. Siempre fue un desastre.\nHernando: Bueno, Tomás. Tú quieres una historia, ¿no? Yo entré a este café por primera vez en 1979. Era pequeño: había cuatro mesas y una máquina de discos, allá, en esa pared.\nTomás: ¿Una máquina de discos? ¿Y televisión?\nHernando: No había televisión. Había una radio, y la radio era de Rosa.\nVale: ¿Y Rosa cómo era? ¿Simpática?\nHernando: ¿Simpática? No, mija. Rosa tenía treinta años y era muy brava. Pero la calle tenía olor a pandeyuca. Toda la calle.\nSimón: ¡Muy brava! ¡Muy brava!\nHernando: Mi recuerdo favorito es ese: Rosa, la radio y su disco de tango.\nTomás: ¿Y el muchacho de la foto? ¿Estaba en el café?\nHernando mira la pared. Mira el disco. Mira a Tomás.\nHernando: En 1979 él ya no estaba. Rosa estaba sola. Y estaba triste.\nHernando pone el disco en las manos de Tomás.\nHernando: Este disco era de Rosa. Ahora es tuyo.\nTomás: Gracias, don Hernando. Quedan veinticuatro días... y mañana arreglo ese mostrador.\nHernando: Rosa nunca arregló ese mostrador. Nunca.",
+  "text": "Al otro día, Hernando vuelve al café con un disco viejo.\nSimón: ¡Cuánto tiempo! ¡Cuánto tiempo!\nHernando: ¿Cuánto tiempo? Salí ayer a las cuatro, Simón.\nHernando pone su tinto en el mostrador. ¡Crac!\nVale: Ese mostrador es un desastre.\nHernando: Bueno, Tomás. Tú quieres una historia, ¿no? Yo entré a este café por primera vez en 1979. Era pequeño: había cuatro mesas y una máquina de discos, allá, en esa pared.\nVale: ¿Y Rosa cómo era? ¿Simpática?\nHernando: ¿Simpática? No, mija. Rosa tenía treinta años y era muy brava.\nSimón: ¡Muy brava! ¡Muy brava!\nHernando: Y su disco favorito era un tango.\nTomás: ¿Y el muchacho de la foto? ¿Estaba en el café?\nHernando mira la pared. Mira el disco. Mira a Tomás.\nHernando: En 1979 él ya no estaba. Rosa estaba sola. Y estaba triste.\nHernando pone el disco en las manos de Tomás.\nHernando: Este disco era de Rosa. Ahora es tuyo.\nTomás: Gracias, don Hernando. Quedan veinticuatro días... y mañana arreglo ese mostrador.\nHernando: Rosa nunca arregló ese mostrador. Nunca.",
   "gloss": [
     {
       "es": "un disco viejo",
@@ -25,10 +25,6 @@
       "en": "Crack!"
     },
     {
-      "es": "Siempre fue un desastre",
-      "en": "It was always a disaster"
-    },
-    {
       "es": "por primera vez",
       "en": "for the first time"
     },
@@ -41,16 +37,8 @@
       "en": "had a real temper"
     },
     {
-      "es": "la calle tenía olor a pandeyuca",
-      "en": "the street smelled of pandeyuca (cheese bread)"
-    },
-    {
-      "es": "Mi recuerdo favorito",
-      "en": "My favourite memory"
-    },
-    {
-      "es": "su disco de tango",
-      "en": "her tango record"
+      "es": "su disco favorito era un tango",
+      "en": "her favourite record was a tango"
     },
     {
       "es": "él ya no estaba",
@@ -137,13 +125,13 @@
       "answer": 1
     },
     {
-      "q": "¿De quién era la radio del café?",
+      "q": "¿Qué música era el disco favorito de Rosa?",
       "options": [
-        "De Hernando",
-        "De Rosa",
-        "De Vale"
+        "Un tango",
+        "Una salsa",
+        "Un vallenato"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "q": "What happens when Hernando puts his coffee on the counter?",
@@ -161,7 +149,6 @@
     "c:cuanto-tiempo",
     "c:entonces-bueno",
     "c:era",
-    "c:estuvo",
     "c:gracias-de-nada",
     "c:no-cierto",
     "g:adjective-agreement",
@@ -190,7 +177,6 @@
     "l:bravo",
     "l:bueno",
     "l:café",
-    "l:calle",
     "l:cuánto",
     "l:cómo",
     "l:desastre",
@@ -209,20 +195,15 @@
     "l:mostrador",
     "l:muchacho",
     "l:máquina",
-    "l:olor",
     "l:pared",
     "l:pequeño",
     "l:poner",
     "l:quedar",
     "l:querer",
-    "l:radio",
-    "l:recuerdo",
     "l:salir",
     "l:ser",
-    "l:siempre",
     "l:simpático",
     "l:tango",
-    "l:televisión",
     "l:tener",
     "l:tiempo",
     "l:tinto",
