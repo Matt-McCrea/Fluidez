@@ -1,0 +1,47 @@
+{
+  "node": "x:hace-desde-hace",
+  "hook": {
+    "line": "Hernando likes to tell anyone new two numbers: when Rosa opened the café, and how long he's been coming. One is a moment that's over, the other is still going. In Spanish the only difference is a small word, *desde*.",
+    "es": "Rosa abrió el café hace cincuenta años, y yo vengo aquí desde hace cuarenta.",
+    "en": "Rosa opened the café fifty years ago, and I've been coming here for forty."
+  },
+  "examples": [
+    { "es": "Llegué a Bogotá hace dos años.", "en": "I arrived in Bogotá two years ago." },
+    { "es": "Vivo en Bogotá desde hace dos años.", "en": "I've been living in Bogotá for two years." },
+    { "es": "Hace dos años que vivo en Bogotá.", "en": "I've been living in Bogotá for two years." },
+    { "es": "El técnico vino hace una hora.", "en": "The technician came an hour ago." },
+    { "es": "El técnico está aquí desde hace una hora.", "en": "The technician has been here for an hour." },
+    { "es": "Compré este celular hace un año.", "en": "I bought this phone a year ago." },
+    { "es": "Tengo este celular desde hace un año.", "en": "I've had this phone for a year." }
+  ],
+  "rule": "Ask one question: is it over, or is it still going?\n\nOver, a moment you count back to: past verb + *hace* + time. That's ago. *Llegué hace dos años.*\n\nStill going: present verb + *desde hace* + time, or *hace* + time + *que* + present. That's for, have been. *Vivo aquí desde hace dos años.* *Hace dos años que vivo aquí.*\n\nSo the verb and the little word travel together. Past goes with plain *hace*. Present goes with *desde hace*, or with *hace… que*.\n\nA handy pair: you arrive at a moment (*llegué hace…*), then you've been somewhere since (*estoy aquí desde hace…*). Same with buying and having, meeting and knowing: *conocí a Vale hace un año*, *conozco a Vale desde hace un año*.",
+  "smallPrint": "Both come from the verb *hacer*. Grammar books describe the difference as pointing to a moment in the past against measuring a stretch that reaches up to now.",
+  "readAndPick": [
+    { "es": "Llegué hace dos años.", "options": ["I arrived two years ago.", "I've been here for two years."], "answer": 0 },
+    { "es": "Estoy aquí desde hace dos años.", "options": ["I arrived two years ago.", "I've been here for two years."], "answer": 1 },
+    { "es": "Hace una hora que el técnico está aquí.", "options": ["The technician came an hour ago.", "The technician has been here for an hour."], "answer": 1 },
+    { "es": "El técnico vino hace una hora.", "options": ["The technician came an hour ago.", "The technician has been here for an hour."], "answer": 0 },
+    { "es": "Compré este celular hace un año.", "options": ["I've had this phone for a year.", "I bought this phone a year ago."], "answer": 1 },
+    { "es": "Tengo este celular desde hace un año.", "options": ["I've had this phone for a year.", "I bought this phone a year ago."], "answer": 0 },
+    { "es": "Conocí a Vale hace un año.", "options": ["I've known Vale for a year.", "I'm meeting Vale in a year.", "I met Vale a year ago."], "answer": 2 },
+    { "es": "Conozco a Vale desde hace un año.", "options": ["I've known Vale for a year.", "I met Vale a year ago."], "answer": 0 },
+    { "es": "Hace un año que conozco a Vale.", "options": ["I met Vale a year ago.", "I've known Vale for a year.", "I knew Vale a year ago."], "answer": 1 },
+    { "es": "Hace un año conocí a Vale.", "options": ["I met Vale a year ago.", "I've known Vale for a year."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Llegué a Bogotá ___ tres meses.* (*hace* or *desde hace*) I arrived in Bogotá three months ago.", "answer": "Llegué a Bogotá hace tres meses.", "accept": ["Hace tres meses llegué a Bogotá."], "why": "Arriving is a moment that's over, and *llegué* is past: plain *hace*." },
+    { "prompt": "Pick and type the whole sentence: *Estoy en Bogotá ___ tres meses.* (*hace* or *desde hace*) I've been in Bogotá for three months.", "answer": "Estoy en Bogotá desde hace tres meses.", "accept": ["Hace tres meses que estoy en Bogotá."], "why": "You're still there, and *estoy* is present: *desde hace*." },
+    { "prompt": "I bought this phone a year ago.", "answer": "Compré este celular hace un año.", "accept": ["Hace un año compré este celular."], "why": "Buying happened once and it's over: past verb plus *hace*." },
+    { "prompt": "I've had this phone for a year.", "answer": "Tengo este celular desde hace un año.", "accept": ["Hace un año que tengo este celular."], "why": "You still have it, so present *tengo* plus *desde hace*." },
+    { "prompt": "The technician has been here for an hour.", "answer": "El técnico está aquí desde hace una hora.", "accept": ["Hace una hora que el técnico está aquí."], "why": "He's still here: present *está* with *desde hace*." },
+    { "prompt": "Change the moment into something still going (you've known her for a year): *Conocí a Vale hace un año.*", "answer": "Conozco a Vale desde hace un año.", "accept": ["Hace un año que conozco a Vale."], "why": "Met becomes know, in the present, and *hace* becomes *desde hace*." },
+    { "prompt": "Now the other way, back to the moment it started (you came here two years ago): *Hace dos años que vivo aquí.*", "answer": "Vine aquí hace dos años.", "accept": ["Hace dos años vine aquí.", "Llegué aquí hace dos años.", "Hace dos años llegué aquí."], "why": "Coming is a finished moment, so a past verb and plain *hace*, no *que*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Vivo en Bogotá hace dos años.", "right": "Vivo en Bogotá desde hace dos años.", "why": "Almost. A present verb is still going, so it needs *desde hace*. Plain *hace* means ago." },
+    { "wrong": "Llegué desde hace dos años.", "right": "Llegué hace dos años.", "why": "Arriving is a moment that's over: with a past verb, just *hace*." },
+    { "wrong": "Estuve aquí desde hace una hora.", "right": "Estoy aquí desde hace una hora.", "why": "*Desde hace* means you're still here, so the verb stays in the present." },
+    { "wrong": "Hacen dos años que vivo aquí.", "right": "Hace dos años que vivo aquí.", "why": "Nearly. *Hace* never turns plural, in either meaning." }
+  ],
+  "personal": "Write two true lines about one thing in your life: when it started, with *hace*, and how long it's been going on, with *desde hace*. For example, when you got your phone and how long you've had it."
+}

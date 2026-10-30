@@ -1,0 +1,48 @@
+{
+  "node": "g:hace-que-desde",
+  "hook": {
+    "line": "Tomás is on hold with the phone company that has charged Rosa's old line for twelve years. When someone finally answers, he needs to say how long things have been going on. English reaches for have been; Spanish just uses the present.",
+    "es": "Hace una hora que estoy esperando.",
+    "en": "I've been waiting for an hour."
+  },
+  "examples": [
+    { "es": "Hace tres meses que vivo en Bogotá.", "en": "I've lived in Bogotá for three months." },
+    { "es": "Trabajo aquí desde hace un año.", "en": "I've worked here for a year." },
+    { "es": "Hace doce años que pagamos esa línea.", "en": "We've been paying for that line for twelve years." },
+    { "es": "Hace un mes que el sistema no funciona.", "en": "The system hasn't worked for a month." },
+    { "es": "Vale vive en Bogotá desde hace dos años.", "en": "Vale has lived in Bogotá for two years." },
+    { "es": "¿Cuánto tiempo hace que conoces a Hernando?", "en": "How long have you known Hernando? (to a friend)" },
+    { "es": "¿Desde cuándo trabaja usted aquí?", "en": "How long have you worked here? (polite)" }
+  ],
+  "rule": "English says I have lived here for three months. Spanish notices that you still live here, so it uses the plain present: *vivo*.\n\nTwo ways to build it, same meaning:\n*Hace* + time + *que* + present: *Hace tres meses que vivo aquí.*\nPresent + *desde hace* + time: *Vivo aquí desde hace tres meses.*\n\nTo ask: *¿Cuánto tiempo hace que…?* or *¿Desde cuándo…?*, again with the present.\n\nFor something that hasn't happened in a while, put *no* before the verb: *Hace un mes que el sistema no funciona*, it hasn't worked for a month.\n\nWhat disappears is English's have and been. What stays is *hace*, which never turns plural. You'll meet a third way, *Llevo una hora esperando*, a bit later.",
+  "smallPrint": "Teachers file this under time expressions with *hacer*. The point is that Spanish uses the present tense where English uses the present perfect.",
+  "readAndPick": [
+    { "es": "Hace tres meses que vivo aquí.", "options": ["I lived here three months ago.", "I've lived here for three months.", "I'm moving here in three months."], "answer": 1 },
+    { "es": "Trabajamos aquí desde hace un año.", "options": ["We've worked here for a year.", "We worked here a year ago.", "They've worked here for a year."], "answer": 0 },
+    { "es": "Hace un mes que el sistema no funciona.", "options": ["The system has worked for a month.", "The system hasn't worked for a month.", "The system stopped a month ago and works now."], "answer": 1 },
+    { "es": "¿Cuánto tiempo hace que vives aquí?", "options": ["How long ago did you live here?", "How long are you going to live here?", "How long have you lived here?"], "answer": 2 },
+    { "es": "Vale vive en Bogotá desde hace dos años.", "options": ["Vale lived in Bogotá two years ago.", "Vale is moving to Bogotá in two years.", "Vale has lived in Bogotá for two years."], "answer": 2 },
+    { "es": "Hace mucho tiempo que no veo a Mariana.", "options": ["I haven't seen Mariana in a long time.", "I saw Mariana a long time ago.", "I've been seeing Mariana for a long time."], "answer": 0 },
+    { "es": "Conozco a Hernando desde hace un año.", "options": ["I knew Hernando a year ago.", "I've known Hernando for a year."], "answer": 1 },
+    { "es": "¿Desde cuándo trabaja usted aquí?", "options": ["How long have you worked here? (polite)", "When did you stop working here? (polite)", "How long did you work here? (polite)"], "answer": 0 },
+    { "es": "Hace doce años que pagamos esa línea.", "options": ["We paid for that line twelve years ago.", "They've been paying for that line for twelve years.", "We've been paying for that line for twelve years."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Hace tres meses que ___ en Bogotá.* (*vivo* or *viví*) I've lived in Bogotá for three months.", "answer": "Hace tres meses que vivo en Bogotá.", "accept": ["Vivo en Bogotá desde hace tres meses."], "why": "You still live there, so Spanish uses the present: *vivo*." },
+    { "prompt": "Pick and type the whole sentence: *Trabajo aquí ___ un año.* (*hace* or *desde hace*) I've worked here for a year.", "answer": "Trabajo aquí desde hace un año.", "accept": ["Hace un año que trabajo aquí."], "why": "With the verb first, the time takes *desde hace*." },
+    { "prompt": "The system hasn't worked for a month.", "answer": "Hace un mes que el sistema no funciona.", "accept": ["Hace un mes que el sistema no sirve."], "why": "*Hace un mes que*, then *no* and the present: it still isn't working." },
+    { "prompt": "Ask a friend: How long have you lived in Bogotá?", "answer": "¿Cuánto tiempo hace que vives en Bogotá?", "accept": ["¿Desde cuándo vives en Bogotá?", "¿Hace cuánto tiempo que vives en Bogotá?"], "why": "The question uses the present too: *vives*." },
+    { "prompt": "Vale has lived in Bogotá for two years.", "answer": "Vale vive en Bogotá desde hace dos años.", "accept": ["Hace dos años que Vale vive en Bogotá."], "why": "Have lived becomes the present *vive*, plus *desde hace dos años*." },
+    { "prompt": "Say it the other way, starting with *Hace*: *Conozco a Hernando desde hace un año.*", "answer": "Hace un año que conozco a Hernando.", "accept": [], "why": "Starting with *hace*, you add *que* before the verb." },
+    { "prompt": "Ask the clerk the same thing politely: *¿Desde cuándo trabajas aquí?*", "answer": "¿Desde cuándo trabaja usted aquí?", "accept": ["¿Desde cuándo trabaja aquí?"], "why": "Only the verb changes for *usted*: *trabaja*." },
+    { "prompt": "Make it about we: *Hace doce años que pago esa línea.*", "answer": "Hace doce años que pagamos esa línea.", "accept": [], "why": "*Hace doce años que* stays put; only *pago* becomes *pagamos*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Hace tres meses que he vivido aquí.", "right": "Hace tres meses que vivo aquí.", "why": "Almost. English says have lived, but Spanish uses the present, because you still live here." },
+    { "wrong": "Vivo en Bogotá por tres meses.", "right": "Vivo en Bogotá desde hace tres meses.", "why": "Close. For how long something has been going on, Spanish says *desde hace*, not *por*." },
+    { "wrong": "Trabajo aquí hace un año.", "right": "Trabajo aquí desde hace un año.", "why": "Without *desde*, *hace un año* means a year ago. Add *desde* for still going." },
+    { "wrong": "Hace un mes que el sistema no funcionó.", "right": "Hace un mes que el sistema no funciona.", "why": "It's still not working, so the verb stays in the present: *funciona*." },
+    { "wrong": "Hacen tres meses que vivo aquí.", "right": "Hace tres meses que vivo aquí.", "why": "Nearly. *Hace* never turns plural, whatever the time." }
+  ],
+  "personal": "Write two true lines: how long you've lived where you live now, and how long you've been learning Spanish. Use *hace… que* for one and *desde hace* for the other."
+}

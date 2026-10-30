@@ -1,0 +1,49 @@
+{
+  "node": "g:indefinites",
+  "hook": {
+    "line": "The bank clerk frowns at Rosa's old papers and goes quiet. You want to ask whether there's some problem, and you'll want to understand when she says there's no problem at all. Spanish has a some word and a no word that fit right in front of the noun.",
+    "es": "¿Hay algún problema?",
+    "en": "Is there a problem?"
+  },
+  "examples": [
+    { "es": "¿Hay algún problema?", "en": "Is there a problem?" },
+    { "es": "No, no hay ningún problema.", "en": "No, there's no problem at all." },
+    { "es": "¿Tiene usted alguna pregunta?", "en": "Do you have any questions? (polite)" },
+    { "es": "Algunos clientes pagan con tarjeta.", "en": "Some customers pay by card." },
+    { "es": "No tengo ningún documento.", "en": "I don't have a single document." },
+    { "es": "¿Conoces algún restaurante bueno por aquí?", "en": "Do you know a good restaurant around here? (to a friend)" },
+    { "es": "No conozco ninguno.", "en": "I don't know any." },
+    { "es": "Algún día voy a volver.", "en": "Some day I'm going to come back." }
+  ],
+  "rule": "You already have *algo*, *alguien*, *nada* and *nadie*: something, someone, nothing, nobody. Today's words sit in front of a noun and match it.\n\nSome, any:\n*algún problema*, *alguna pregunta*\n*algunos clientes*, *algunas sillas*\n\nNo, not a single:\n*ningún problema*, *ninguna pregunta*\n\n*Ningún* nearly always stays singular, even where English says any documents: *No tengo ningún documento*.\n\nBefore a masculine noun the word loses its *o*: *algún*, *ningún*. With no noun after it, the *o* comes back: *No conozco ninguno*.\n\nAfter the verb, *ningún* needs a *no* in front, just like *nada*: *No hay ningún problema*. At the very start of the sentence it works alone: *Ningún banco abre los domingos*.",
+  "smallPrint": "Teachers call these indefinites. The short forms *algún* and *ningún* carry an accent because they end in *n*.",
+  "readAndPick": [
+    { "es": "¿Hay algún problema?", "options": ["Is there a problem?", "There's no problem.", "Are there a lot of problems?"], "answer": 0 },
+    { "es": "No hay ningún problema.", "options": ["There's some problem.", "There's no problem at all.", "Is there a problem?"], "answer": 1 },
+    { "es": "Algunos clientes pagan con tarjeta.", "options": ["No customer pays by card.", "One customer pays by card.", "Some customers pay by card."], "answer": 2 },
+    { "es": "Ningún banco abre los domingos.", "options": ["No bank opens on Sundays.", "Some banks open on Sundays.", "Every bank opens on Sundays."], "answer": 0 },
+    { "es": "¿Tienes alguna pregunta?", "options": ["You don't have any questions.", "Do you have any questions?"], "answer": 1 },
+    { "es": "Conozco algunos.", "options": ["I know some.", "I don't know any."], "answer": 0 },
+    { "es": "No conozco ninguno.", "options": ["I know some.", "I don't know any."], "answer": 1 },
+    { "es": "No tengo ningún documento.", "options": ["I have some documents.", "I don't have the document.", "I don't have a single document."], "answer": 2 },
+    { "es": "Algún día voy a volver.", "options": ["Some day I'm going to come back.", "I'm never coming back.", "I came back one day."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *¿Hay ___ problema?* (*algún* or *alguno*) Is there a problem?", "answer": "¿Hay algún problema?", "accept": [], "why": "Before a masculine noun like *problema*, the *o* drops: *algún*." },
+    { "prompt": "Pick and type the whole sentence: *No tengo ___ pregunta.* (*ningún* or *ninguna*) I don't have any questions.", "answer": "No tengo ninguna pregunta.", "accept": [], "why": "*Pregunta* is feminine, so it's *ninguna*." },
+    { "prompt": "Talking about restaurants. Pick and type the whole sentence: *No conozco ___.* (*ningún* or *ninguno*) I don't know any.", "answer": "No conozco ninguno.", "accept": [], "why": "No noun comes after it, so the full *ninguno* comes back." },
+    { "prompt": "Ask the clerk (polite): Do you need any document?", "answer": "¿Necesita algún documento?", "accept": ["¿Necesita usted algún documento?"], "why": "*Documento* is masculine and singular: *algún documento*." },
+    { "prompt": "Some customers pay by card.", "answer": "Algunos clientes pagan con tarjeta.", "accept": [], "why": "Some with a plural masculine noun is *algunos*." },
+    { "prompt": "Make it negative: *Hay algún problema.*", "answer": "No hay ningún problema.", "accept": [], "why": "*Algún* turns into *ningún*, and the verb gets a *no* in front." },
+    { "prompt": "Make it negative: *Tengo algunas preguntas.*", "answer": "No tengo ninguna pregunta.", "accept": [], "why": "*Ninguna* is almost always singular, so *preguntas* becomes *pregunta*." },
+    { "prompt": "Drop the *no* and start with *Ningún*: *No viene ningún cliente hoy.*", "answer": "Ningún cliente viene hoy.", "accept": ["Hoy ningún cliente viene."], "why": "At the start of the sentence, *ningún* says no on its own." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Hay alguno problema?", "right": "¿Hay algún problema?", "why": "Almost. Right before a masculine noun, *alguno* shortens to *algún*." },
+    { "wrong": "Hay ningún problema.", "right": "No hay ningún problema.", "why": "After the verb, *ningún* needs a *no* in front, just like *nada*." },
+    { "wrong": "No tengo ningunos documentos.", "right": "No tengo ningún documento.", "why": "Close. English says any documents, but Spanish keeps *ningún* and the noun singular." },
+    { "wrong": "¿Tienes algún pregunta?", "right": "¿Tienes alguna pregunta?", "why": "*Pregunta* is feminine, so the word matches it: *alguna*." },
+    { "wrong": "No conozco ningún.", "right": "No conozco ninguno.", "why": "With no noun after it, the short form isn't enough: say *ninguno*." }
+  ],
+  "personal": "Say two true things: a problem you have this week with *algún* or *alguna*, and something you don't have at all with *No tengo ningún* or *ninguna*."
+}
