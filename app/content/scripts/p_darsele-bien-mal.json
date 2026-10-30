@@ -1,0 +1,172 @@
+{
+  "node": "p:darsele-bien-mal",
+  "hook": {
+    "line": "In a job interview, \"I'm good at\" and \"I'm bad at\" have a particular Spanish shape, and it is not \"I am\". Skills happen to you.",
+    "es": "Se me dan bien los números.",
+    "en": "I'm good with numbers."
+  },
+  "examples": [
+    {
+      "es": "Se me dan bien los números, pero soy negada para hablar en público.",
+      "en": "I'm good with numbers, but I'm hopeless at public speaking (a woman speaking)."
+    },
+    {
+      "es": "Se me da mal cocinar.",
+      "en": "I'm bad at cooking."
+    },
+    {
+      "es": "No se me da nada mal escribir.",
+      "en": "I'm not bad at writing at all."
+    },
+    {
+      "es": "Tengo facilidad para los idiomas.",
+      "en": "I have a knack for languages."
+    },
+    {
+      "es": "¿Se te da bien manejar?",
+      "en": "Are you (informal) good at driving?"
+    },
+    {
+      "es": "A Vale se le da bien la cocina.",
+      "en": "Vale is good at cooking."
+    }
+  ],
+  "rule": "To say what you are good or bad at, the skill is the subject and *se me da(n)* is the verb: *Se me da bien cocinar.* Literally, \"cooking gives itself well to me.\"\n\nThe verb agrees with the skill: *se me da bien cocinar* (one thing), *se me dan bien los números* (several). Change *me* for the person: *te*, *le*, *nos*, *les*. Swap *bien* for *mal* to say the opposite.\n\nTwo more ways: *tengo facilidad para…* (a knack for) and *soy negado/a para…* (hopeless at). *Negado* has nothing to do with \"denied\".",
+  "smallPrint": "Teachers call *darse bien* a verb of experience: the person who has the skill is an indirect object, not the subject.",
+  "readAndPick": [
+    {
+      "es": "Se me da bien cocinar.",
+      "options": [
+        "I'm good at cooking.",
+        "I'm bad at cooking.",
+        "I like cooking."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se me dan mal los números.",
+      "options": [
+        "I'm good with numbers.",
+        "I'm bad with numbers.",
+        "Numbers are given to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Se te da bien manejar?",
+      "options": [
+        "Am I good at driving?",
+        "Is he good at driving?",
+        "Are you good at driving?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A Vale se le da bien la cocina.",
+      "options": [
+        "Vale is good at cooking.",
+        "I am good at Vale's cooking.",
+        "Vale gives me the cooking."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No se me da nada mal escribir.",
+      "options": [
+        "I'm terrible at writing.",
+        "I'm not bad at writing at all.",
+        "I never write."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Soy negada para hablar en público.",
+      "options": [
+        "I'm good at public speaking.",
+        "I deny public speaking.",
+        "I'm hopeless at public speaking."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tengo facilidad para los idiomas.",
+      "options": [
+        "I have a knack for languages.",
+        "I find languages hard.",
+        "I speak many languages."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A Mariana se le dan bien las entrevistas.",
+      "options": [
+        "Mariana is good at interviews.",
+        "Mariana is bad at interviews.",
+        "Mariana gives interviews."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Se me ___ bien cocinar.* (*da* or *dan*) I'm good at cooking.",
+      "answer": "Se me da bien cocinar.",
+      "accept": [],
+      "why": "Cooking is one thing, so *da*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Se me ___ bien los números.* (*da* or *dan*) I'm good with numbers.",
+      "answer": "Se me dan bien los números.",
+      "accept": [],
+      "why": "Numbers are plural, so *dan*."
+    },
+    {
+      "prompt": "Say: I'm bad at cooking.",
+      "answer": "Se me da mal cocinar.",
+      "accept": [],
+      "why": "Swap *bien* for *mal*."
+    },
+    {
+      "prompt": "Say to a friend: Are you good at driving?",
+      "answer": "¿Se te da bien manejar?",
+      "accept": [],
+      "why": "*Te* points at the friend."
+    },
+    {
+      "prompt": "Say: Vale is good at cooking.",
+      "answer": "A Vale se le da bien la cocina.",
+      "accept": [],
+      "why": "*Le* points at Vale, and *la cocina* is one thing."
+    },
+    {
+      "prompt": "Say, a man speaking: I'm hopeless at public speaking.",
+      "answer": "Soy negado para hablar en público.",
+      "accept": [],
+      "why": "*Negado* ends in *-o* for a man."
+    },
+    {
+      "prompt": "Say: I have a knack for languages.",
+      "answer": "Tengo facilidad para los idiomas.",
+      "accept": [],
+      "why": "*Tengo facilidad para* works with a noun."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Se me dan bien cocinar.",
+      "right": "Se me da bien cocinar.",
+      "why": "Almost. An infinitive counts as one thing, so *da*."
+    },
+    {
+      "wrong": "Yo doy bien los números.",
+      "right": "Se me dan bien los números.",
+      "why": "Almost. The skill is the subject, so you need *se me dan*."
+    },
+    {
+      "wrong": "Se me da bien los números.",
+      "right": "Se me dan bien los números.",
+      "why": "Almost. *Los números* is plural, so the verb is *dan*."
+    }
+  ],
+  "personal": "Tell us one thing that is easy for you and one that is not, using *Se me da bien…* and *Se me da mal…*."
+}

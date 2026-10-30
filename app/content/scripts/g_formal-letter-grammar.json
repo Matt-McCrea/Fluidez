@@ -1,0 +1,183 @@
+{
+  "node": "g:formal-letter-grammar",
+  "hook": {
+    "line": "Your order from a supplier arrived broken, and a chatty message will not get your money back. Spanish letters run on a few fixed, polite phrases, and once you know them you can write to any company.",
+    "es": "Me dirijo a ustedes para presentar una queja.",
+    "en": "I am writing to you all to make a complaint."
+  },
+  "examples": [
+    {
+      "es": "Me dirijo a ustedes para presentar una queja.",
+      "en": "I am writing to you all to make a complaint."
+    },
+    {
+      "es": "Me dirijo a usted para solicitar información.",
+      "en": "I am writing to you (formal, one person) to request information."
+    },
+    {
+      "es": "Le agradecería que me respondiera antes del viernes.",
+      "en": "I would be grateful if you (formal) replied to me before Friday."
+    },
+    {
+      "es": "Le agradecería que me enviara una copia del contrato.",
+      "en": "I would be grateful if you (formal) sent me a copy of the contract."
+    },
+    {
+      "es": "Les agradeceríamos que arreglaran el error.",
+      "en": "We would be grateful if you all fixed the error."
+    },
+    {
+      "es": "Adjunto le envío mi hoja de vida.",
+      "en": "I enclose my résumé for you (formal)."
+    },
+    {
+      "es": "Quedo atenta a su respuesta.",
+      "en": "I look forward to your reply (a woman writing)."
+    }
+  ],
+  "rule": "A formal letter has three moves.\n\nOpen: *Me dirijo a usted(es) para* + infinitive. It says who you are writing to and why.\n\nAsk: *Le agradecería que* + a past form of the verb: *respondiera*, *enviara*, *arreglara*. English says \"I would be grateful if you replied\"; Spanish uses the same idea, with *agradecería* for \"would be grateful\" and the *-ra* form for \"replied\". Use *Les* when writing to several people.\n\nClose: *Adjunto le envío…* for attachments, and *Quedo atento/a a su respuesta* to wait politely.\n\nAlways *usted*, never *tú*. Pick a *tú* tone and the letter stops sounding formal.",
+  "smallPrint": "Teachers call this the imperfect subjunctive after a conditional: the softest way to make a request in writing.",
+  "readAndPick": [
+    {
+      "es": "Me dirijo a ustedes para presentar una queja.",
+      "options": [
+        "I am writing to you all to complain.",
+        "I am writing to him to complain.",
+        "They are writing to me to complain."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me dirijo a usted para solicitar información.",
+      "options": [
+        "I am writing to you all to request information.",
+        "I am writing to you (formal, one person) to request information.",
+        "He is writing to me to request information."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le agradecería que me respondiera antes del viernes.",
+      "options": [
+        "I thank you for replying before Friday.",
+        "You thanked me for replying before Friday.",
+        "I would be grateful if you replied before Friday."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Le agradezco su respuesta.",
+      "options": [
+        "I thank you for your reply.",
+        "I would be grateful for your reply.",
+        "He thanks me for my reply."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les agradeceríamos que arreglaran el error.",
+      "options": [
+        "I would be grateful if he fixed the error.",
+        "We would be grateful if you all fixed the error.",
+        "You all thanked us for correcting the error."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Adjunto le envío mi hoja de vida.",
+      "options": [
+        "You enclose your résumé.",
+        "He is sending me his résumé.",
+        "I enclose my résumé for you (formal)."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Quedo atenta a su respuesta.",
+      "options": [
+        "I look forward to your reply (a woman writing).",
+        "She is waiting for my reply.",
+        "I look forward to your reply (a man writing)."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le agradecería que me enviara una copia del contrato.",
+      "options": [
+        "I would be grateful if you sent me a copy of the contract.",
+        "I am sending you a copy of the contract.",
+        "You would be grateful if I sent you a copy of the contract."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Le agradecería que me ___ antes del viernes.* (*respondiera* or *responde*) I would be grateful if you (formal) replied to me before Friday.",
+      "answer": "Le agradecería que me respondiera antes del viernes.",
+      "accept": [],
+      "why": "After *le agradecería que*, the verb takes the past *-ra* form."
+    },
+    {
+      "prompt": "Say, writing to one person (formal): I am writing to you to request information.",
+      "answer": "Me dirijo a usted para solicitar información.",
+      "accept": [],
+      "why": "*Me dirijo a usted para* opens a letter to one person."
+    },
+    {
+      "prompt": "Say, writing to a company (you all): I am writing to you to make a complaint.",
+      "answer": "Me dirijo a ustedes para presentar una queja.",
+      "accept": [
+        "Me dirijo a ustedes para presentar una queja"
+      ],
+      "why": "A company is several people, so *ustedes*."
+    },
+    {
+      "prompt": "Say, writing to one person (formal): I would be grateful if you sent me a copy of the contract.",
+      "answer": "Le agradecería que me enviara una copia del contrato.",
+      "accept": [],
+      "why": "*Le agradecería que* plus *enviara* is the polite request."
+    },
+    {
+      "prompt": "Make it for a company (you all): *Le agradecería que me respondiera antes del viernes.*",
+      "answer": "Les agradecería que me respondieran antes del viernes.",
+      "accept": [],
+      "why": "With several readers, both *les* and the verb go plural."
+    },
+    {
+      "prompt": "Say, a man writing: I look forward to your reply.",
+      "answer": "Quedo atento a su respuesta.",
+      "accept": [],
+      "why": "*Atento* ends in *-o* for a man and *-a* for a woman."
+    },
+    {
+      "prompt": "Say, you enclose your résumé for one person (formal).",
+      "answer": "Adjunto le envío mi hoja de vida.",
+      "accept": [],
+      "why": "*Adjunto le envío* is the stock phrase for attachments."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Le agradecería que me responde antes del viernes.",
+      "right": "Le agradecería que me respondiera antes del viernes.",
+      "why": "Almost. A polite request in writing needs the past *-ra* form, not the present."
+    },
+    {
+      "wrong": "Me dirijo usted para solicitar información.",
+      "right": "Me dirijo a usted para solicitar información.",
+      "why": "Almost. *Dirigirse* needs *a* before the person you are writing to."
+    },
+    {
+      "wrong": "Te agradecería que me respondieras antes del viernes.",
+      "right": "Le agradecería que me respondiera antes del viernes.",
+      "why": "Almost. A formal letter uses *usted*, so *le* and *respondiera*."
+    },
+    {
+      "wrong": "Escribo a ustedes para presentar una queja.",
+      "right": "Me dirijo a ustedes para presentar una queja.",
+      "why": "Almost. *Escribo a* is correct but too plain; letters open with *me dirijo a*."
+    }
+  ],
+  "personal": "Write the opening of a letter you might send this week: who it is for, and what you are asking, using *Me dirijo a…* and *Le agradecería que…*."
+}

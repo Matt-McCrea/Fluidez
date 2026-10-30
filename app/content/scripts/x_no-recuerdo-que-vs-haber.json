@@ -1,0 +1,172 @@
+{
+  "node": "x:no-recuerdo-que-vs-haber",
+  "hook": {
+    "line": "At the café, Don Hernando insists you promised him a free tinto. You do not remember it, but who exactly is doing the forgetting? Spanish uses a different shape depending on whose action it was.",
+    "es": "No recuerdo haber dicho eso.",
+    "en": "I don't remember saying that."
+  },
+  "examples": [
+    {
+      "es": "No recuerdo haber dicho eso.",
+      "en": "I don't remember saying that."
+    },
+    {
+      "es": "No recuerdo que él dijera eso.",
+      "en": "I don't remember him saying that."
+    },
+    {
+      "es": "No recuerdo haber firmado ese contrato.",
+      "en": "I don't remember signing that contract."
+    },
+    {
+      "es": "No recuerdo que Vale firmara ese contrato.",
+      "en": "I don't remember Vale signing that contract."
+    },
+    {
+      "es": "¿Recuerdas haber llamado a Mariana?",
+      "en": "Do you (informal) remember calling Mariana?"
+    },
+    {
+      "es": "No recuerdo que nos dijeran nada.",
+      "en": "I don't remember them telling us anything."
+    }
+  ],
+  "rule": "Ask yourself one question: who did the thing I am trying to remember?\n\nIt was me: *No recuerdo haber dicho eso.* *Haber* + the *-do* form of the verb (*dicho*, *firmado*, *llamado*). English \"remember saying\" works the same way.\n\nIt was someone else: *No recuerdo que él dijera eso.* *Que* + the past *-ra* form (*dijera*, *firmara*, *dijeran*).\n\nEnglish uses \"him saying\" for the second and gives no clue about the verb change. In Spanish, the shape tells you whose action it was.",
+  "smallPrint": "Teachers call this same subject versus different subject: one subject gives an infinitive, two subjects give *que* plus the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "No recuerdo haber llegado tarde.",
+      "options": [
+        "I don't remember arriving late.",
+        "I don't remember him arriving late.",
+        "I don't remember you arriving late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No recuerdo que Vale llegara tarde.",
+      "options": [
+        "I don't remember arriving late.",
+        "I don't remember Vale arriving late.",
+        "Vale doesn't remember arriving late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No recuerdo haber firmado ese contrato.",
+      "options": [
+        "I don't remember them signing that contract.",
+        "I don't remember Vale signing that contract.",
+        "I don't remember signing that contract."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No recuerdo que ellos firmaran ese contrato.",
+      "options": [
+        "I don't remember them signing that contract.",
+        "I don't remember signing that contract.",
+        "They don't remember signing that contract."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Recuerdas haber llamado a Mariana?",
+      "options": [
+        "Do you remember Mariana calling?",
+        "Do you remember calling Mariana?",
+        "Does Mariana remember calling you?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No recuerdo que me dijeras eso.",
+      "options": [
+        "I don't remember saying that to you.",
+        "I don't remember you saying that to me.",
+        "You don't remember saying that to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No recuerdo haberlo dicho.",
+      "options": [
+        "I don't remember saying it.",
+        "I don't remember him saying it.",
+        "I don't remember you saying it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No recuerdo que nos dijeran nada.",
+      "options": [
+        "We don't remember telling them anything.",
+        "I don't remember telling us anything.",
+        "I don't remember them telling us anything."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *No recuerdo ___ ese contrato.* (*haber firmado* or *que firmara*) I don't remember signing that contract.",
+      "answer": "No recuerdo haber firmado ese contrato.",
+      "accept": [],
+      "why": "I did the signing, so there is one subject and the infinitive fits."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *No recuerdo ___ ese contrato.* (*haber firmado* or *que firmara*) I don't remember Vale signing that contract.",
+      "answer": "No recuerdo que Vale firmara ese contrato.",
+      "accept": [],
+      "why": "Vale did the signing, so a second subject needs *que* plus the past form."
+    },
+    {
+      "prompt": "Say: I don't remember saying that.",
+      "answer": "No recuerdo haber dicho eso.",
+      "accept": [],
+      "why": "Same person remembering and doing: *haber* plus *dicho*."
+    },
+    {
+      "prompt": "Say: I don't remember him saying that.",
+      "answer": "No recuerdo que él dijera eso.",
+      "accept": [],
+      "why": "A different person did it, so *que* plus *dijera*."
+    },
+    {
+      "prompt": "Say: Do you (informal) remember calling Mariana?",
+      "answer": "¿Recuerdas haber llamado a Mariana?",
+      "accept": [],
+      "why": "You are asking about the listener's own action, so the infinitive."
+    },
+    {
+      "prompt": "Make it about Tomás: *No recuerdo haber llegado tarde.* (I don't remember Tomás arriving late.)",
+      "answer": "No recuerdo que Tomás llegara tarde.",
+      "accept": [],
+      "why": "A new person arrives, so the sentence switches to *que* plus *llegara*."
+    },
+    {
+      "prompt": "Say: I don't remember them telling us anything.",
+      "answer": "No recuerdo que nos dijeran nada.",
+      "accept": [],
+      "why": "*Ellos* is the other subject, so *que* plus the plural *dijeran*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No recuerdo que dije eso.",
+      "right": "No recuerdo haber dicho eso.",
+      "why": "Almost. When you are the one who acted, Spanish wants *haber* plus *dicho*."
+    },
+    {
+      "wrong": "No recuerdo que él dijo eso.",
+      "right": "No recuerdo que él dijera eso.",
+      "why": "Almost. After a negative *no recuerdo que*, the next verb takes the past *-ra* form."
+    },
+    {
+      "wrong": "No recuerdo de haber dicho eso.",
+      "right": "No recuerdo haber dicho eso.",
+      "why": "Almost. *Recordar* takes its infinitive directly, with no *de*."
+    }
+  ],
+  "personal": "Think of something someone says you did. Say that you do not remember it with *No recuerdo haber…*, then say you do not remember a friend doing something with *No recuerdo que…*."
+}

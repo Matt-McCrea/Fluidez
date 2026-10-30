@@ -1,0 +1,171 @@
+{
+  "node": "p:entre-las-ventajas-destaca",
+  "hook": {
+    "line": "You are writing a short report on whether to keep the café open late. Reports weigh pros and cons in a few set phrases, and one of them has a verb that is easy to get wrong.",
+    "es": "Entre las ventajas del teletrabajo destaca el ahorro de tiempo.",
+    "en": "Among the advantages of remote working, the time saved stands out."
+  },
+  "examples": [
+    {
+      "es": "Entre las ventajas del teletrabajo destaca el ahorro de tiempo.",
+      "en": "Among the advantages of remote working, the time saved stands out."
+    },
+    {
+      "es": "Entre las desventajas destacan los costos iniciales.",
+      "en": "Among the disadvantages, the start-up costs stand out."
+    },
+    {
+      "es": "Entre las ventajas del local destaca la ubicación.",
+      "en": "Among the advantages of the premises, the location stands out."
+    },
+    {
+      "es": "Entre los riesgos destacan el precio y la competencia.",
+      "en": "Among the risks, the price and the competition stand out."
+    },
+    {
+      "es": "En contra, cabe señalar que la conexión no siempre es buena.",
+      "en": "On the downside, it is worth noting that the connection is not always good."
+    },
+    {
+      "es": "A favor, cabe señalar que el café tiene muchos clientes.",
+      "en": "On the plus side, it is worth noting that the café has many customers."
+    }
+  ],
+  "rule": "*Entre las ventajas destaca…* means \"among the advantages, X stands out.\" The list comes first, then the verb, then the winner.\n\nThe verb agrees with the thing that stands out, not with the list: *destaca el ahorro* (one thing), *destacan los costos* (several).\n\nTo sum up a side, use *A favor, cabe señalar que…* (on the plus side, it is worth noting) and *En contra, cabe señalar que…* (on the downside).",
+  "readAndPick": [
+    {
+      "es": "Entre las ventajas destaca el precio.",
+      "options": [
+        "The cost stands out among the drawbacks.",
+        "The price stands out among the advantages.",
+        "The prices stand out among the advantages."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Entre las desventajas destacan los costos.",
+      "options": [
+        "The cost stands out among the drawbacks.",
+        "The costs stand out among the advantages.",
+        "The costs stand out among the drawbacks."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Entre los riesgos destaca la competencia.",
+      "options": [
+        "The competition stands out among the risks.",
+        "The competitors stand out among the risks.",
+        "The risks stand out among the competition."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Entre las ventajas destacan la ubicación y el precio.",
+      "options": [
+        "The location stands out among the advantages.",
+        "The location and the price stand out among the advantages.",
+        "The advantages stand out among the location and the price."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En contra, cabe señalar que el local es pequeño.",
+      "options": [
+        "On the plus side, it is worth noting that the premises are small.",
+        "On the downside, it is worth noting that the premises are small.",
+        "The premises are small, so they are against it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A favor, cabe señalar que el barrio es seguro.",
+      "options": [
+        "On the plus side, it is worth noting that the neighbourhood is safe.",
+        "On the downside, it is worth noting that the neighbourhood is unsafe.",
+        "It is worth noting that I am in favour of the neighbourhood."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Entre las ventajas destaca el ahorro de tiempo.",
+      "options": [
+        "The time saved stands out among the advantages.",
+        "The time saved stands out among the drawbacks.",
+        "Savings stand out among the times."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Entre las desventajas destaca la distancia.",
+      "options": [
+        "The distance stands out among the advantages.",
+        "The distances stand out among the drawbacks.",
+        "The distance stands out among the drawbacks."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Entre las ventajas ___ el precio.* (*destaca* or *destacan*) Among the advantages, the price stands out.",
+      "answer": "Entre las ventajas destaca el precio.",
+      "accept": [],
+      "why": "One thing stands out, so the verb is singular."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Entre las desventajas ___ los costos.* (*destaca* or *destacan*) Among the disadvantages, the costs stand out.",
+      "answer": "Entre las desventajas destacan los costos.",
+      "accept": [],
+      "why": "Several costs stand out, so the verb is plural."
+    },
+    {
+      "prompt": "Say: Among the advantages of the premises, the location stands out.",
+      "answer": "Entre las ventajas del local destaca la ubicación.",
+      "accept": [],
+      "why": "The location is one thing, so *destaca*."
+    },
+    {
+      "prompt": "Say: Among the risks, the price and the competition stand out.",
+      "answer": "Entre los riesgos destacan el precio y la competencia.",
+      "accept": [],
+      "why": "Two things stand out, so the verb is plural."
+    },
+    {
+      "prompt": "Say: On the downside, it is worth noting that the connection is not always good.",
+      "answer": "En contra, cabe señalar que la conexión no siempre es buena.",
+      "accept": [],
+      "why": "*En contra, cabe señalar que* introduces the downside."
+    },
+    {
+      "prompt": "Say: On the plus side, it is worth noting that the café has many customers.",
+      "answer": "A favor, cabe señalar que el café tiene muchos clientes.",
+      "accept": [],
+      "why": "*A favor, cabe señalar que* introduces a plus."
+    },
+    {
+      "prompt": "Make it plural: *Entre las ventajas destaca la ubicación.* (the location and the price)",
+      "answer": "Entre las ventajas destacan la ubicación y el precio.",
+      "accept": [],
+      "why": "Two things stand out, so *destacan*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Entre las ventajas destacan el precio.",
+      "right": "Entre las ventajas destaca el precio.",
+      "why": "Almost. The verb follows the one thing that stands out, not the plural list."
+    },
+    {
+      "wrong": "Entre las desventajas destaca los costos.",
+      "right": "Entre las desventajas destacan los costos.",
+      "why": "Almost. *Los costos* is plural, so the verb is too."
+    },
+    {
+      "wrong": "En contra, cabe señalar la conexión no siempre es buena.",
+      "right": "En contra, cabe señalar que la conexión no siempre es buena.",
+      "why": "Almost. After *cabe señalar*, a whole clause needs *que*."
+    }
+  ],
+  "personal": "Think of a decision you are weighing. Write one advantage with *Entre las ventajas destaca…* and one drawback with *Entre las desventajas destaca…*."
+}

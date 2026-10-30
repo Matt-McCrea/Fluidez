@@ -1,0 +1,171 @@
+{
+  "node": "p:interesado-en",
+  "hook": {
+    "line": "Every application letter says you want the job, and the usual way is to say you are interested in it. The word changes with who you are, and the little word after it never does.",
+    "es": "Estoy interesada en el cargo.",
+    "en": "I'm interested in the position (a woman speaking)."
+  },
+  "examples": [
+    {
+      "es": "Estoy interesada en el cargo.",
+      "en": "I'm interested in the position (a woman speaking)."
+    },
+    {
+      "es": "Estamos interesados en invertir.",
+      "en": "We're interested in investing."
+    },
+    {
+      "es": "Están interesados en que participemos.",
+      "en": "They're interested in us taking part."
+    },
+    {
+      "es": "Estoy interesado en el puesto de gerente.",
+      "en": "I'm interested in the manager position (a man speaking)."
+    },
+    {
+      "es": "Me interesa el puesto.",
+      "en": "The position interests me."
+    },
+    {
+      "es": "Mariana está interesada en la propuesta.",
+      "en": "Mariana is interested in the proposal."
+    }
+  ],
+  "rule": "*Estar interesado/a en* + thing: *Estoy interesada en el cargo.* English \"interested in\" matches *interesado en* word for word.\n\nThe ending agrees with the person: *interesado* (a man), *interesada* (a woman), *interesados* (several).\n\nAfter *en* you can put a noun, an infinitive (*en invertir*) or *que* with a different person (*en que participemos*).\n\nFor the everyday version, *Me interesa el puesto* does the same job.",
+  "readAndPick": [
+    {
+      "es": "Estoy interesada en el cargo.",
+      "options": [
+        "I'm interested in the position (a woman speaking).",
+        "I'm interested in the position (a man speaking).",
+        "She's interested in the position."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy interesado en el puesto.",
+      "options": [
+        "I'm interested in the position (a woman speaking).",
+        "I'm interested in the position (a man speaking).",
+        "He's interested in the position."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estamos interesados en invertir.",
+      "options": [
+        "I'm interested in investing.",
+        "They're interested in investing.",
+        "We're interested in investing."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Están interesados en que participemos.",
+      "options": [
+        "They're interested in us taking part.",
+        "We're interested in them taking part.",
+        "They're interested in taking part."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana está interesada en la propuesta.",
+      "options": [
+        "Mariana proposes an interest.",
+        "Mariana is interested in the proposal.",
+        "I'm interested in Mariana's proposal."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me interesa el puesto.",
+      "options": [
+        "I'm interested in the position.",
+        "The position is interested in me.",
+        "I'm applying for a position."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy interesado en que vengas.",
+      "options": [
+        "I'm interested in you coming.",
+        "I'm interested in coming.",
+        "You're interested in my coming."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estamos interesadas en el contrato.",
+      "options": [
+        "We're interested in the contract (all women).",
+        "We're interested in the contract (a mixed group).",
+        "They're interested in the contract (all women)."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Estoy interesada ___ el cargo.* (*en* or *por*) I'm interested in the position (a woman speaking).",
+      "answer": "Estoy interesada en el cargo.",
+      "accept": [],
+      "why": "*Interesado* is followed by *en*."
+    },
+    {
+      "prompt": "Say, a man speaking: I'm interested in the manager position.",
+      "answer": "Estoy interesado en el puesto de gerente.",
+      "accept": [],
+      "why": "*Interesado* ends in *-o* for a man."
+    },
+    {
+      "prompt": "Say: We're interested in investing.",
+      "answer": "Estamos interesados en invertir.",
+      "accept": [],
+      "why": "After *en* an infinitive is fine, and *interesados* is plural."
+    },
+    {
+      "prompt": "Say: They're interested in us taking part.",
+      "answer": "Están interesados en que participemos.",
+      "accept": [],
+      "why": "A different person acts, so *que* plus *participemos*."
+    },
+    {
+      "prompt": "Say: Mariana is interested in the proposal.",
+      "answer": "Mariana está interesada en la propuesta.",
+      "accept": [],
+      "why": "*Mariana* is a woman, so *interesada*."
+    },
+    {
+      "prompt": "Say: The position interests me.",
+      "answer": "Me interesa el puesto.",
+      "accept": [],
+      "why": "The position is the subject, so *interesa* agrees with it."
+    },
+    {
+      "prompt": "Make it feminine: *Estoy interesado en el cargo.* (a woman speaking)",
+      "answer": "Estoy interesada en el cargo.",
+      "accept": [],
+      "why": "Only the ending changes."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy interesada por el cargo.",
+      "right": "Estoy interesada en el cargo.",
+      "why": "Almost. *Interesado* always takes *en* in this meaning."
+    },
+    {
+      "wrong": "Soy interesada en el cargo.",
+      "right": "Estoy interesada en el cargo.",
+      "why": "Almost. Being interested is a state, so *estar*."
+    },
+    {
+      "wrong": "Estamos interesados en que participamos.",
+      "right": "Estamos interesados en que participemos.",
+      "why": "Almost. After *interesados en que*, the next verb takes the subjunctive."
+    }
+  ],
+  "personal": "Name something you are interested in, using *Estoy interesado/a en…*, or something you would like to learn about."
+}

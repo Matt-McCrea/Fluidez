@@ -1,0 +1,175 @@
+{
+  "node": "p:renunciar-a",
+  "hook": {
+    "line": "Sooner or later someone at the café says they are done, and you will want to say it too. *Renunciar* covers both quitting a job and giving something up, with one small word in between.",
+    "es": "Renunció a su cargo.",
+    "en": "She resigned from her post."
+  },
+  "examples": [
+    {
+      "es": "Renunció a su cargo.",
+      "en": "She resigned from her post."
+    },
+    {
+      "es": "No pienso renunciar a mis vacaciones.",
+      "en": "I'm not giving up my holiday."
+    },
+    {
+      "es": "Presenté la renuncia ayer.",
+      "en": "I handed in my resignation yesterday."
+    },
+    {
+      "es": "Renuncié el viernes.",
+      "en": "I quit on Friday."
+    },
+    {
+      "es": "Vale renunció al proyecto.",
+      "en": "Vale gave up the project."
+    },
+    {
+      "es": "Ellos renunciaron a la oferta.",
+      "en": "They gave up the offer."
+    }
+  ],
+  "rule": "*Renunciar a* + thing means \"give up\" or \"resign from\": *renunciar a mi cargo*. English drops the little word; Spanish needs *a*. Before *el*, *a* joins into *al*: *renunciar al proyecto*.\n\nUsed alone, *renunciar* means \"to quit\": *Renuncié el viernes.*\n\nThe noun is *la renuncia*, a resignation: *presenté la renuncia*.",
+  "readAndPick": [
+    {
+      "es": "Renunció a su cargo.",
+      "options": [
+        "She resigned from her post.",
+        "She took her post.",
+        "She was fired."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No pienso renunciar a mis vacaciones.",
+      "options": [
+        "I plan to take my holiday.",
+        "I'm not giving up my holiday.",
+        "I'm quitting during my holiday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Presenté la renuncia ayer.",
+      "options": [
+        "I was fired yesterday.",
+        "I accepted the job yesterday.",
+        "I handed in my resignation yesterday."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Renuncié el viernes.",
+      "options": [
+        "I quit on Friday.",
+        "I got hired on Friday.",
+        "I gave you Friday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale renunció al proyecto.",
+      "options": [
+        "Vale led the project.",
+        "Vale gave up the project.",
+        "Vale finished the project."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ellos renunciaron a la oferta.",
+      "options": [
+        "They accepted the offer.",
+        "They made me an offer.",
+        "They gave up the offer."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Renunciamos a la idea.",
+      "options": [
+        "We gave up the idea.",
+        "We liked the idea.",
+        "We presented the idea."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás no renunció.",
+      "options": [
+        "Tomás was fired.",
+        "Tomás didn't quit.",
+        "Tomás didn't give me anything."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Renunció ___ su cargo.* (*a* or *de*) She resigned from her post.",
+      "answer": "Renunció a su cargo.",
+      "accept": [],
+      "why": "*Renunciar* always takes *a* before what you give up."
+    },
+    {
+      "prompt": "Say: I'm not giving up my holiday.",
+      "answer": "No pienso renunciar a mis vacaciones.",
+      "accept": [],
+      "why": "The infinitive *renunciar* follows *pienso*, then *a* plus the thing."
+    },
+    {
+      "prompt": "Say: I handed in my resignation yesterday.",
+      "answer": "Presenté la renuncia ayer.",
+      "accept": [
+        "Ayer presenté la renuncia."
+      ],
+      "why": "*La renuncia* is the noun for the resignation itself."
+    },
+    {
+      "prompt": "Say: I quit on Friday.",
+      "answer": "Renuncié el viernes.",
+      "accept": [],
+      "why": "With no thing given up, *renunciar* simply means to quit."
+    },
+    {
+      "prompt": "Say: Vale gave up the project.",
+      "answer": "Vale renunció al proyecto.",
+      "accept": [],
+      "why": "*A* plus *el* becomes *al*."
+    },
+    {
+      "prompt": "Say: They gave up the offer.",
+      "answer": "Ellos renunciaron a la oferta.",
+      "accept": [
+        "Renunciaron a la oferta."
+      ],
+      "why": "The plural *-aron* ending shows *they*."
+    },
+    {
+      "prompt": "Make it about Tomás: *Renunció a su cargo.* (Tomás resigned from his post.)",
+      "answer": "Tomás renunció a su cargo.",
+      "accept": [],
+      "why": "Name the person, keep the same verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Renunció su cargo.",
+      "right": "Renunció a su cargo.",
+      "why": "Almost. *Renunciar* needs *a* before what you give up."
+    },
+    {
+      "wrong": "Renunció a el proyecto.",
+      "right": "Renunció al proyecto.",
+      "why": "Almost. *A* plus *el* always joins into *al*."
+    },
+    {
+      "wrong": "Renunció de su cargo.",
+      "right": "Renunció a su cargo.",
+      "why": "Almost. English \"from\" tempts you, but Spanish uses *a*."
+    }
+  ],
+  "personal": "Is there something you would never give up? Say it with *No pienso renunciar a…*."
+}
